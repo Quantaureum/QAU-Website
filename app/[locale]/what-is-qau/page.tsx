@@ -27,16 +27,13 @@ import { getAppPageContributorInfo } from "@/lib/utils/contributors"
 import { getMetadata } from "@/lib/utils/metadata"
 import { getIdFromHash } from "@/lib/utils/url"
 
-import GasTable from "./_components/GasTable"
 import PageJsonLD from "./page-jsonld"
 
 import { ContentLayout } from "@/layouts/ContentLayout"
-import { getQauPrice, getGasPriceData } from "@/lib/data"
+import developersHubHero from "@/public/images/heroes/developers-hub-hero.png"
+import infrastructureTransparent from "@/public/images/infrastructure_transparent.png"
 import heroImg from "@/public/images/qau.png"
 import qauOrgLogo from "@/public/images/qau-org-logo.png"
-import developersHubHero from "@/public/images/heroes/developers-hub-hero.png"
-import impactTransparent from "@/public/images/impact_transparent.png"
-import infrastructureTransparent from "@/public/images/infrastructure_transparent.png"
 
 const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
   const params = await props.params
@@ -45,20 +42,9 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
 
   const t = await getTranslations("page-what-is-qau")
 
-  const [
-    { contributors, lastEditLocaleTimestamp },
-    gasPriceData,
-    qauPriceData,
-  ] = await Promise.all([
+  const [{ contributors, lastEditLocaleTimestamp }] = await Promise.all([
     getAppPageContributorInfo("what-is-QAU", locale as Lang),
-    getGasPriceData(),
-    getQauPrice(),
   ])
-
-  const gasTableInitialData =
-    gasPriceData && qauPriceData && !("error" in qauPriceData)
-      ? { gasPrice: gasPriceData.gasPrice, qauPriceUSD: qauPriceData.value }
-      : null
 
   const tocItems: ToCItem[] = [
     { title: t("page-what-is-qau-title"), url: "#what-is-QAU" },
@@ -136,9 +122,7 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
           <p>
             {t.rich("page-what-is-qau-what-is-QAU-description-5", {
               assets: (chunks) => (
-                <Link href="https://companiesmarketcap.com/assets-by-market-cap/">
-                  {chunks}
-                </Link>
+                <Link href="/what-is-quantaureum/">{chunks}</Link>
               ),
             })}
           </p>
@@ -320,9 +304,7 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
                   strong: Strong,
                 })}
               </AlertTitle>
-              <p>
-                {t("page-what-is-qau-how-to-send-and-receive-qau-callout")}
-              </p>
+              <p>{t("page-what-is-qau-how-to-send-and-receive-qau-callout")}</p>
             </AlertContent>
           </Alert>
           <p>
@@ -368,50 +350,7 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
               }
             )}
           </p>
-          <GasTable
-            labels={{
-              transactionType: t(
-                "page-what-is-qau-gas-table-transaction-type"
-              ),
-              typicalCostRange: t(
-                "page-what-is-qau-gas-table-typical-cost-range"
-              ),
-              estimatedGasUnits: t(
-                "page-what-is-qau-gas-table-estimated-gas-units"
-              ),
-              row1: t("page-what-is-qau-gas-table-row-1-1"),
-              row2: t("page-what-is-qau-gas-table-row-2-1"),
-              row3: t("page-what-is-qau-gas-table-row-3-1"),
-            }}
-            locale={locale}
-            initialData={gasTableInitialData}
-          />
-        </Section>
-
-        <Section>
-          <h3>{t("page-what-is-qau-l2s")}</h3>
-          <p>
-            {t.rich("page-what-is-qau-l2s-description-1", {
-              strong: Strong,
-            })}
-          </p>
-          <p>
-            {t.rich("page-what-is-qau-l2s-description-2", {
-              strong: Strong,
-              optimism: (chunks) => (
-                <Link href="https://optimism.io/">{chunks}</Link>
-              ),
-              arbitrum: (chunks) => (
-                <Link href="https://arbitrum.io/">{chunks}</Link>
-              ),
-            })}
-          </p>
-          <p>{t("page-what-is-qau-l2s-description-3")}</p>
-          <p>
-            {t.rich("page-what-is-qau-l2s-description-4", {
-              strong: Strong,
-            })}
-          </p>
+          <p>{t("page-what-is-qau-how-much-does-it-cost-note")}</p>
         </Section>
 
         <Section aria-labelledby={getIdFromHash(tocItems[5].url)}>
@@ -444,9 +383,6 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
               explorer: (chunks) => (
                 <Link href="https://explorer.quantaureum.com">{chunks}</Link>
               ),
-              ultrasound: (chunks) => (
-                <Link href="https://ultrasound.money/">{chunks}</Link>
-              ),
             })}
           </p>
         </Section>
@@ -458,130 +394,35 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
               "page-what-is-qau-what-is-the-distribution-of-qau-description-1",
               {
                 explorer: (chunks) => (
-                  <Link href="https://explorer.quantaureum.com">
-                    {chunks}
-                  </Link>
+                  <Link href="https://explorer.quantaureum.com">{chunks}</Link>
                 ),
               }
             )}
           </p>
-        </Section>
-
-        <Section>
-          <h3>{t("page-what-is-qau-breakdown")}</h3>
-          <UnorderedList>
-            <ListItem>
-              {t.rich("page-what-is-qau-breakdown-description-1", {
-                strong: Strong,
-                beaconchain: (chunks) => (
-                  <Link href="https://beaconcha.in/">{chunks}</Link>
-                ),
-              })}
-            </ListItem>
-            <ListItem>
-              {t.rich("page-what-is-qau-breakdown-description-2", {
-                strong: Strong,
-                unchained: (chunks) => (
-                  <Link href="https://unchainedcrypto.com/amount-of-bitcoin-and-QAU-on-exchanges-reach-record-multi-year-lows/">
-                    {chunks}
-                  </Link>
-                ),
-              })}
-            </ListItem>
-            <ListItem>
-              {t.rich("page-what-is-qau-breakdown-description-3", {
-                strong: Strong,
-              })}
-            </ListItem>
-            <ListItem>
-              {t.rich("page-what-is-qau-breakdown-description-4", {
-                strong: Strong,
-                ef: (chunks) => (
-                  <Link href="https://ethereum.org/report-2024.pdf">
-                    {chunks}
-                  </Link>
-                ),
-              })}
-            </ListItem>
-          </UnorderedList>
-        </Section>
-
-        <Section>
-          <Image
-            src={impactTransparent}
-            alt=""
-            sizes="(max-width: 320px) calc(100vw - 32px), 320px"
-            className="mx-auto max-w-xs"
-          />
-          <h3>{t("page-what-is-qau-who-holds-most")}</h3>
-          <p>{t("page-what-is-qau-who-holds-most-description-1")}</p>
-          <p>{t("page-what-is-qau-who-holds-most-description-2")}</p>
-          <UnorderedList>
-            <ListItem>
-              {t.rich("page-what-is-qau-who-holds-most-description-3", {
-                staked: (chunks) => <Link href="/staking/">{chunks}</Link>,
-              })}
-            </ListItem>
-            <ListItem>
-              {t("page-what-is-qau-who-holds-most-description-4")}
-            </ListItem>
-            <ListItem>
-              {t("page-what-is-qau-who-holds-most-description-5")}
-            </ListItem>
-          </UnorderedList>
-          <p>
-            {t.rich("page-what-is-qau-who-holds-most-description-6", {
-              explorer: (chunks) => (
-                <Link href="https://explorer.quantaureum.com">{chunks}</Link>
-              ),
-            })}
-          </p>
-        </Section>
-
-        <Section>
-          <h3>{t("page-what-is-qau-distribution")}</h3>
-          <p>{t("page-what-is-qau-distribution-description-1")}</p>
         </Section>
 
         <Section id={getIdFromHash(tocItems[7].url)}>
           <h2>{tocItems[7].title}</h2>
           <p>{t("page-what-is-qau-what-makes-qau-valuable-description-1")}</p>
           <p>
-            {t.rich(
-              "page-what-is-qau-what-makes-qau-valuable-description-2",
-              {
-                strong: Strong,
-              }
-            )}
+            {t.rich("page-what-is-qau-what-makes-qau-valuable-description-2", {
+              strong: Strong,
+            })}
           </p>
           <p>
-            {t.rich(
-              "page-what-is-qau-what-makes-qau-valuable-description-3",
-              {
-                strong: Strong,
-              }
-            )}
+            {t.rich("page-what-is-qau-what-makes-qau-valuable-description-3", {
+              strong: Strong,
+            })}
           </p>
           <p>
-            {t.rich(
-              "page-what-is-qau-what-makes-qau-valuable-description-4",
-              {
-                strong: Strong,
-              }
-            )}
+            {t.rich("page-what-is-qau-what-makes-qau-valuable-description-4", {
+              strong: Strong,
+            })}
           </p>
           <p>
-            {t.rich(
-              "page-what-is-qau-what-makes-qau-valuable-description-5",
-              {
-                strong: Strong,
-                ultrasound: (chunks) => (
-                  <Link href="https://ultrasound.money/?timeFrame=since_burn">
-                    {chunks}
-                  </Link>
-                ),
-              }
-            )}
+            {t.rich("page-what-is-qau-what-makes-qau-valuable-description-5", {
+              strong: Strong,
+            })}
           </p>
         </Section>
 
@@ -593,30 +434,21 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
             <ListItem>
               {t.rich("page-what-is-qau-what-is-wrapping-qau-description-3", {
                 strong: Strong,
-                uniswap: (chunks) => (
-                  <Link href="https://uniswap.org/">{chunks}</Link>
-                ),
               })}
             </ListItem>
             <ListItem>
               {t.rich("page-what-is-qau-what-is-wrapping-qau-description-4", {
                 strong: Strong,
-                aave: (chunks) => (
-                  <Link href="https://aave.com/">{chunks}</Link>
-                ),
               })}
             </ListItem>
             <ListItem>
               {t.rich("page-what-is-qau-what-is-wrapping-qau-description-5", {
                 strong: Strong,
-                opensea: (chunks) => (
-                  <Link href="https://opensea.io/">{chunks}</Link>
-                ),
               })}
             </ListItem>
           </UnorderedList>
           <p>{t("page-what-is-qau-what-is-wrapping-qau-description-6")}</p>
-          <LinkWithArrow href="/wrapped-eth/">
+          <LinkWithArrow href="/wrapped-qau/">
             {t("page-what-is-qau-what-is-wrapping-qau-description-7")}
           </LinkWithArrow>
         </Section>

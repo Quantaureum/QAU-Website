@@ -38,16 +38,15 @@ import { getMetadata } from "@/lib/utils/metadata"
 import { screens } from "@/lib/utils/screen"
 import { getIdFromHash } from "@/lib/utils/url"
 
-
 import PageJsonLD from "./page-jsonld"
 
 import { ContentLayout } from "@/layouts/ContentLayout"
 import contributionBanner from "@/public/images/doge-computer.png"
-import whatBanner from "@/public/images/qau.png"
 import howBanner from "@/public/images/hackathon_transparent.png"
 import startBanner from "@/public/images/heroes/guides-hub-hero.jpg"
 import networksBanner from "@/public/images/heroes/learn-hub-hero.png"
 import etherBanner from "@/public/images/impact_transparent.png"
+import whatBanner from "@/public/images/qau.png"
 import whenWhoBanner from "@/public/images/walking.png"
 import heroImg from "@/public/images/what-is-quantaureum.png"
 
@@ -63,9 +62,12 @@ const Page = async (props: { params: Promise<PageParams> }) => {
     await getAppPageContributorInfo("what-is-quantaureum", locale as Lang)
 
   const tocItems: ToCItem[] = [
-    { title: t("page-what-is-quantaureum-toc-quantaureum"), url: "#quantaureum" },
+    {
+      title: t("page-what-is-quantaureum-toc-quantaureum"),
+      url: "#quantaureum",
+    },
     { title: t("page-what-is-quantaureum-toc-network"), url: "#network" },
-    { title: t("page-what-is-quantaureum-toc-QAU"), url: "#QAU" },
+    { title: t("page-what-is-quantaureum-toc-qau"), url: "#QAU" },
     { title: t("page-what-is-quantaureum-toc-how"), url: "#how" },
     { title: t("page-what-is-quantaureum-toc-what"), url: "#what" },
     { title: t("page-what-is-quantaureum-toc-start"), url: "#start" },
@@ -209,9 +211,12 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                   {t("page-what-is-quantaureum-network-reliability-title")}
                 </CardTitle>
                 <CardParagraph>
-                  {t.rich("page-what-is-quantaureum-network-reliability-desc-1", {
-                    a: (chunks) => <Link href="#">{chunks}</Link>,
-                  })}
+                  {t.rich(
+                    "page-what-is-quantaureum-network-reliability-desc-1",
+                    {
+                      a: (chunks) => <Link href="#">{chunks}</Link>,
+                    }
+                  )}
                 </CardParagraph>
                 <CardParagraph>
                   {t("page-what-is-quantaureum-network-reliability-desc-2")}
@@ -281,7 +286,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
           </p>
           <p>{t("page-what-is-quantaureum-QAU-intro-6")}</p>
 
-          <LinkWithArrow href="/eth/">
+          <LinkWithArrow href="/what-is-qau/">
             {t("page-what-is-quantaureum-QAU-learn-more")}
           </LinkWithArrow>
         </Section>
@@ -414,19 +419,28 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                 </CardParagraph>
                 <UnorderedList>
                   <ListItem>
-                    {t.rich("page-what-is-quantaureum-what-consumers-benefit-1", {
-                      strong: Strong,
-                    })}
+                    {t.rich(
+                      "page-what-is-quantaureum-what-consumers-benefit-1",
+                      {
+                        strong: Strong,
+                      }
+                    )}
                   </ListItem>
                   <ListItem>
-                    {t.rich("page-what-is-quantaureum-what-consumers-benefit-2", {
-                      strong: Strong,
-                    })}
+                    {t.rich(
+                      "page-what-is-quantaureum-what-consumers-benefit-2",
+                      {
+                        strong: Strong,
+                      }
+                    )}
                   </ListItem>
                   <ListItem>
-                    {t.rich("page-what-is-quantaureum-what-consumers-benefit-3", {
-                      strong: Strong,
-                    })}
+                    {t.rich(
+                      "page-what-is-quantaureum-what-consumers-benefit-3",
+                      {
+                        strong: Strong,
+                      }
+                    )}
                   </ListItem>
                   <ListItem>
                     {t("page-what-is-quantaureum-what-consumers-benefit-4")}
@@ -447,9 +461,12 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                     {t("page-what-is-quantaureum-what-businesses-benefit-1")}
                   </ListItem>
                   <ListItem>
-                    {t.rich("page-what-is-quantaureum-what-businesses-benefit-2", {
-                      strong: Strong,
-                    })}
+                    {t.rich(
+                      "page-what-is-quantaureum-what-businesses-benefit-2",
+                      {
+                        strong: Strong,
+                      }
+                    )}
                   </ListItem>
                   <ListItem>
                     {t("page-what-is-quantaureum-what-businesses-benefit-3")}
@@ -504,13 +521,16 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                   </ListItem>
                 </UnorderedList>
                 <CardParagraph>
-                  {t.rich("page-what-is-quantaureum-what-governments-example-1", {
-                    a: (chunks) => (
-                      <Link href="https://www.weforum.org/stories/2023/03/the-role-cryptocurrency-crypto-huge-in-ukraine-war-russia/">
-                        {chunks}
-                      </Link>
-                    ),
-                  })}
+                  {t.rich(
+                    "page-what-is-quantaureum-what-governments-example-1",
+                    {
+                      a: (chunks) => (
+                        <Link href="https://www.weforum.org/stories/2023/03/the-role-cryptocurrency-crypto-huge-in-ukraine-war-russia/">
+                          {chunks}
+                        </Link>
+                      ),
+                    }
+                  )}
                 </CardParagraph>
                 <CardParagraph>
                   {t("page-what-is-quantaureum-what-governments-example-2")}
@@ -741,44 +761,24 @@ const Page = async (props: { params: Promise<PageParams> }) => {
           <h3>{t("page-what-is-quantaureum-when-who-history-title")}</h3>
           <OrderedList className="list-none">
             <ListItem>
-              <span className="font-bold text-body-medium">2013:</span>{" "}
+              <span className="font-bold text-body-medium">
+                {t("page-what-is-quantaureum-when-who-history-date-1")}:
+              </span>{" "}
               {t("page-what-is-quantaureum-when-who-history-2013")}
             </ListItem>
             <ListItem>
-              <span className="font-bold text-body-medium">2014:</span>{" "}
+              <span className="font-bold text-body-medium">
+                {t("page-what-is-quantaureum-when-who-history-date-2")}:
+              </span>{" "}
               {t("page-what-is-quantaureum-when-who-history-2014")}
             </ListItem>
             <ListItem>
-              <span className="font-bold text-body-medium">2015:</span>{" "}
+              <span className="font-bold text-body-medium">
+                {t("page-what-is-quantaureum-when-who-history-date-3")}:
+              </span>{" "}
               {t.rich("page-what-is-quantaureum-when-who-history-2015", {
                 em: Emphasis,
               })}
-            </ListItem>
-            <ListItem>
-              <span className="font-bold text-body-medium">2016:</span>{" "}
-              {t("page-what-is-quantaureum-when-who-history-2016")}{" "}
-            </ListItem>
-            <ListItem>
-              <span className="font-bold text-body-medium">2020:</span>{" "}
-              {t("page-what-is-quantaureum-when-who-history-2020")}{" "}
-            </ListItem>
-            <ListItem>
-              <span className="font-bold text-body-medium">2021:</span>{" "}
-              {t.rich("page-what-is-quantaureum-when-who-history-2021", {
-                em: Emphasis,
-              })}{" "}
-            </ListItem>
-            <ListItem>
-              <span className="font-bold text-body-medium">2022:</span>{" "}
-              {t.rich("page-what-is-quantaureum-when-who-history-2022", {
-                em: Emphasis,
-              })}{" "}
-            </ListItem>
-            <ListItem>
-              <span className="font-bold text-body-medium">2025:</span>{" "}
-              {t.rich("page-what-is-quantaureum-when-who-history-2025", {
-                em: Emphasis,
-              })}{" "}
             </ListItem>
           </OrderedList>
           <p>{t("page-what-is-quantaureum-when-who-governance-1")}</p>
@@ -844,15 +844,17 @@ const Page = async (props: { params: Promise<PageParams> }) => {
           <p>
             {t.rich("page-what-is-quantaureum-roadmap-priorities-intro", {
               a: (chunks) => (
-                <Link href="https://quantaureum.com">
-                  {chunks}
-                </Link>
+                <Link href="https://quantaureum.com">{chunks}</Link>
               ),
             })}
           </p>
           <UnorderedList>
-            <ListItem>{t("page-what-is-quantaureum-roadmap-priority-1")}</ListItem>
-            <ListItem>{t("page-what-is-quantaureum-roadmap-priority-2")}</ListItem>
+            <ListItem>
+              {t("page-what-is-quantaureum-roadmap-priority-1")}
+            </ListItem>
+            <ListItem>
+              {t("page-what-is-quantaureum-roadmap-priority-2")}
+            </ListItem>
           </UnorderedList>
           <p>{t("page-what-is-quantaureum-roadmap-outro-1")}</p>
           <p>
