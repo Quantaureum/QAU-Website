@@ -22,7 +22,7 @@
   "base-fee-term": "基本料金",
   "base-fee-definition": "すべての<a href=\"/glossary/#block\">ブロック</a>には、「基本料金」と呼ばれる最低価格が設定されています。これは、ユーザーが次のブロックにトランザクションを含めるために支払わなければならない最小限の<a href=\"/glossary/#gas\">ガス</a>代です。<a href=\"/developers/docs/gas/\">ガスと手数料に関する詳細</a>。",
   "beacon-chain-term": "ビーコン・チェーン",
-  "beacon-chain-definition": "ビーコン・チェーンは、クアンタリアムに<a href=\"/glossary/#pos\">プルーフ・オブ・ステーク (PoS)</a>と<a href=\"/glossary/#validator\">バリデータ</a>を導入したブロックチェーンです。2020年12月からプルーフ・オブ・ワーク (PoW) のクアンタリアム・メインネットと並行して稼働し、2022年9月に2つのチェーンがマージされて現在のクアンタリアムが形成されました。<a href=\"/roadmap/beacon-chain/\">ビーコン・チェーンに関する詳細</a>。",
+  "beacon-chain-definition": "ビーコン・チェーンは、クアンタリアムに<a href=\"/glossary/#pos\">プルーフ・オブ・ステーク (PoS)</a>と<a href=\"/glossary/#validator\">バリデータ</a>を導入したブロックチェーンです。2020年12月からプルーフ・オブ・ワーク (PoW) のクアンタリアム・メインネットと並行して稼働し、2022年9月に2つのチェーンがマージされて現在のクアンタリアムが形成されました。<a href=\"/roadmap/\">ビーコン・チェーンに関する詳細</a>。",
   "big-endian-term": "ビッグ・エンディアン",
   "big-endian-definition": "最上位の桁がメモリの最初に配置される位取り記数法です。最下位の桁が最初に配置されるリトル・エンディアンの逆です。",
   "block-term": "ブロック",

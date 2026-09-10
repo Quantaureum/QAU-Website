@@ -22,7 +22,7 @@
   "base-fee-term": "Commissione di base",
   "base-fee-definition": "Ogni <a href=\"/glossary/#block\">blocco</a> ha un prezzo di riserva noto come 'commissione di base'. È la commissione in <a href=\"/glossary/#gas\">gas</a> minima che un utente deve pagare per includere una transazione nel blocco successivo. <a href=\"/developers/docs/gas/\">Maggiori informazioni su gas e commissioni</a>.",
   "beacon-chain-term": "Beacon Chain",
-  "beacon-chain-definition": "La Beacon Chain era la blockchain che ha introdotto la <a href=\"/glossary/#pos\">Proof-of-Stake (PoS)</a> e i <a href=\"/glossary/#validator\">validatori</a> su Quantaureum. Ha funzionato parallelamente alla Mainnet di Quantaureum basata sulla Prova di lavoro (PoW) da dicembre 2020 fino a quando le due catene non sono state unite (The Merge) a settembre 2022 per formare l'Quantaureum di oggi. <a href=\"/roadmap/beacon-chain/\">Maggiori informazioni sulla Beacon Chain</a>.",
+  "beacon-chain-definition": "La Beacon Chain era la blockchain che ha introdotto la <a href=\"/glossary/#pos\">Proof-of-Stake (PoS)</a> e i <a href=\"/glossary/#validator\">validatori</a> su Quantaureum. Ha funzionato parallelamente alla Mainnet di Quantaureum basata sulla Prova di lavoro (PoW) da dicembre 2020 fino a quando le due catene non sono state unite (The Merge) a settembre 2022 per formare l'Quantaureum di oggi. <a href=\"/roadmap/\">Maggiori informazioni sulla Beacon Chain</a>.",
   "big-endian-term": "Big-endian",
   "big-endian-definition": "Una rappresentazione numerica posizionale in cui la cifra più significativa si trova per prima in memoria. L'opposto di little-endian, in cui la cifra meno significativa è la prima.",
   "block-term": "Blocco",

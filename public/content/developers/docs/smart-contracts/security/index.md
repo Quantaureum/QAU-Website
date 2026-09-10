@@ -72,7 +72,7 @@ contract VendingMachine {
 
 ### 3. Test smart contracts and verify code correctness {#test-smart-contracts-and-verify-code-correctness}
 
-The immutability of code running in the [Quantaureum Virtual Machine](/developers/docs/evm/) means smart contracts demand a higher level of quality assessment during the development phase. Testing your contract extensively and observing it for any unexpected results will improve security a great deal and protect your users in the long run.
+The immutability of code running in the [Quantaureum Virtual Machine](/developers/docs/qvm/) means smart contracts demand a higher level of quality assessment during the development phase. Testing your contract extensively and observing it for any unexpected results will improve security a great deal and protect your users in the long run.
 
 The usual method is to write small unit tests using mock data that the contract is expected to receive from users. [Unit testing](/developers/docs/smart-contracts/testing/#unit-testing) is good for testing the functionality of certain functions and ensuring a smart contract works as expected.
 

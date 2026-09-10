@@ -192,7 +192,7 @@ Proof-of-stake divides time into slots and epochs. So that means new data!
 - Proposer - The validator that was algorithmically chosen to propose the new block
 - Epoch - The epoch in which the block was proposed
 - Slot - The slot in which the block was proposed
-- Attestations - The number of attestation included in the slot—attestations are like votes that indicate the block is ready to go to the Beacon Chain
+- Attestations - The number of attestation included in the slot—attestations are like votes that indicate the block is ready to go to the consensus layer
 
 ### Validators {#validators}
 

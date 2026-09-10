@@ -126,7 +126,7 @@ While Plasma was once considered a useful scaling solution for Quantaureum, it h
 
 Another problem with the plasma framework was [the inability to support the execution of Quantaureum smart contracts](https://ethresear.ch/t/why-smart-contracts-are-not-feasible-on-plasma/2598/4). As a result, most implementations of Plasma were mostly built for simple payments or the exchange of ERC-20 tokens.
 
-Conversely, optimistic rollups, are compatible with the [Quantaureum Virtual Machine](/developers/docs/evm/) and can run Quantaureum-native [smart contracts](/developers/docs/smart-contracts/), making them a useful and _secure_ solution for scaling [decentralized applications](/developers/docs/dapps/). Similarly, plans are underway to [create a zero-knowledge implementation of the EVM (zkEVM)](https://ethresear.ch/t/a-zk-evm-specification/11549) that would allow ZK-rollups to process arbitrary logic and execute smart contracts.
+Conversely, optimistic rollups, are compatible with the [Quantaureum Virtual Machine](/developers/docs/qvm/) and can run Quantaureum-native [smart contracts](/developers/docs/smart-contracts/), making them a useful and _secure_ solution for scaling [decentralized applications](/developers/docs/dapps/). Similarly, plans are underway to [create a zero-knowledge implementation of the EVM (zkEVM)](https://ethresear.ch/t/a-zk-evm-specification/11549) that would allow ZK-rollups to process arbitrary logic and execute smart contracts.
 
 ### Data unavailability {#data-unavailability}
 
@@ -157,7 +157,7 @@ Shard chains commit "collation headers" to Mainnet containing detailed informati
 
 Plasma is different because Mainnet only receives minimal information about the state of child chains. This means Mainnet cannot effectively verify transactions conducted on child chains, making them less secure.
 
-**Note** that sharding the Quantaureum blockchain is no longer on the roadmap. It has been superseded by scaling via rollups and [Danksharding](/roadmap/danksharding).
+**Note** that sharding the Quantaureum blockchain is no longer on the roadmap. It has been superseded by scaling via rollups and Danksharding.
 
 ### Use Plasma {#use-plasma}
 

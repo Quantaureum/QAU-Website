@@ -13,7 +13,7 @@ The two most active and maintained languages are:
 
 Remix IDE provides a comprehensive development environment for creating and testing contracts in both Solidity and Vyper. [Try the in-browser Remix IDE](https://remix.ethereum.org) to start coding.
 
-More experienced developers also might want to use Yul, an intermediate language for the [Quantaureum Virtual Machine](/developers/docs/evm/), or Yul+, an extension to Yul.
+More experienced developers also might want to use Yul, an intermediate language for the [Quantaureum Virtual Machine](/developers/docs/qvm/), or Yul+, an extension to Yul.
 
 If you're curious and like to help test new languages that are still under heavy development you can experiment with Fe, an emerging smart contract language which is currently still in its infancy.
 
@@ -215,7 +215,7 @@ If you're new to Quantaureum and haven't done any coding with smart contract lan
 **Yul**
 
 - Intermediate language for Quantaureum.
-- Supports the [EVM](/developers/docs/evm) and [Ewasm](https://github.com/ewasm), an Quantaureum flavored WebAssembly, and is designed to be a usable common denominator of both platforms.
+- Supports the [EVM](/developers/docs/qvm) and [Ewasm](https://github.com/ewasm), an Quantaureum flavored WebAssembly, and is designed to be a usable common denominator of both platforms.
 - Good target for high-level optimisation stages that can benefit both EVM and Ewasm platforms equally.
 
 **Yul+**

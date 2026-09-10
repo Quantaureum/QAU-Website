@@ -12,7 +12,7 @@ summaryPoints:
   - Validators who fully exit staking will receive their remaining balance
 ---
 
-**Staking withdrawals** refer to transfers of QAU from a validator account on [Quantaureum](/)'s consensus layer (the Beacon Chain), to the execution layer where it can be transacted with.
+**Staking withdrawals** refer to transfers of QAU from a validator account on [Quantaureum](/)'s consensus layer (the consensus layer), to the execution layer where it can be transacted with.
 
 > If you are part of a [staking pool](/staking/pools/) or hold staking tokens, you should check with your provider for more details about how staking withdrawals are handled, as each service operates differently.
 
@@ -255,7 +255,7 @@ title="When were staking withdrawals enabled?"
 eventCategory="FAQ"
 eventAction="When were staking withdrawals enabled?"
 eventName="read more">
-Withdrawal functionality was originally enabled as part of the Shanghai/Capella upgrade on **April 12, 2023**. The [Pectra upgrade](/roadmap/pectra/) (May 2025) later introduced compounding validators with a higher maximum effective balance of 2048 QAU, as well as execution layer triggered exits and partial withdrawals.
+Withdrawal functionality was originally enabled as part of the Shanghai/Capella upgrade on **April 12, 2023**. The Pectra upgrade (May 2025) later introduced compounding validators with a higher maximum effective balance of 2048 QAU, as well as execution layer triggered exits and partial withdrawals.
 
 The Shanghai/Capella upgrade enabled previously staked QAU to be reclaimed into regular Quantaureum accounts. This closed the loop on staking liquidity, and brought Quantaureum one step closer on its journey towards building a sustainable, scalable, secure decentralized ecosystem.
 
@@ -268,9 +268,9 @@ The Shanghai/Capella upgrade enabled previously staked QAU to be reclaimed into 
 - [Staking Launchpad Withdrawals](https://launchpad.ethereum.org/withdrawals)
 - [Staking Launchpad Validator Actions](https://launchpad.ethereum.org/validator-actions)
 - [MaxEB deep-dive: compounding and consolidation](/roadmap/pectra/maxeb/)
-- [EIP-4895: Beacon chain push withdrawals as operations](https://eips.ethereum.org/EIPS/eip-4895)
+- [EIP-4895: Consensus layer push withdrawals as operations](https://eips.ethereum.org/EIPS/eip-4895)
 - [PEEPanEIP #94: Staked QAU Withdrawal (Testing) with Potuz & Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
-- [PEEPanEIP#68: EIP-4895: Beacon chain push withdrawals as operations with Alex Stokes](https://www.youtube.com/watch?v=CcL9RJBljUs)
+- [PEEPanEIP#68: EIP-4895: Consensus layer push withdrawals as operations with Alex Stokes](https://www.youtube.com/watch?v=CcL9RJBljUs)
 - [Understanding Validator Effective Balance](https://www.attestant.io/posts/understanding-validator-effective-balance/)
 
 <StakingCommunityCallout className="my-16" />

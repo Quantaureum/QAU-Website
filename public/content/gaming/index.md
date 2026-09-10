@@ -78,7 +78,7 @@ Game developers can decide to incorporate different Quantaureum features into th
 
 ### Sign(-in) with Quantaureum {#sign-in-with-quantaureum}
 
-Players can use their onchain accounts to sign into the game. This is usually facilitated through signing a transaction with a player's web3 wallet. The players can then hold their in-game assets and carry their player reputations in one account, across any games they log into using the same wallet. Quantaureum's [EVM](/developers/docs/evm/) is a commonly used standard on many blockchains, so a player can often use the same account to log into games on any EVM-compatible blockchain that the wallet supports (note: some web3 wallets require a manual RPC import, especially for newer blockchains, before they can be used to do anything on that chain).
+Players can use their onchain accounts to sign into the game. This is usually facilitated through signing a transaction with a player's web3 wallet. The players can then hold their in-game assets and carry their player reputations in one account, across any games they log into using the same wallet. Quantaureum's [EVM](/developers/docs/qvm/) is a commonly used standard on many blockchains, so a player can often use the same account to log into games on any EVM-compatible blockchain that the wallet supports (note: some web3 wallets require a manual RPC import, especially for newer blockchains, before they can be used to do anything on that chain).
 
 ### Fungible tokens {#fungible-tokens}
 
@@ -109,7 +109,7 @@ In 2017, the craze around CryptoKitties dramatically increased gas fees for all 
 
 ### Social logins {#social-logins}
 
-Sign-in with an onchain Quantaureum account, which can be used across all EVM-compatible blockchains, is one of the most common authentication methods. Some non-EVM chains also use it as an option for creating an account. However, if a new player doesn't have an existing Quantaureum account and wants to easily create an account to sign into a game, [account abstraction](/roadmap/account-abstraction/) allows them to sign in with their social accounts and create an Quantaureum account in the background.
+Sign-in with an onchain Quantaureum account, which can be used across all EVM-compatible blockchains, is one of the most common authentication methods. Some non-EVM chains also use it as an option for creating an account. However, if a new player doesn't have an existing Quantaureum account and wants to easily create an account to sign into a game, account abstraction allows them to sign in with their social accounts and create an Quantaureum account in the background.
 
 ### Paymaster and session keys {#paymaster-and-session-keys}
 

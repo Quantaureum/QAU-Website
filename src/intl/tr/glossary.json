@@ -22,7 +22,7 @@
   "base-fee-term": "Taban ücret",
   "base-fee-definition": "Her <a href=\"/glossary/#block\">bloğun</a> 'taban ücret' olarak bilinen bir rezerv fiyatı vardır. Bir kullanıcının bir işlemi sonraki bloğa dahil etmek için ödemesi gereken minimum <a href=\"/glossary/#gas\">Gaz</a> ücretidir. <a href=\"/developers/docs/gas/\">Gaz ve ücretler hakkında daha fazlası</a>.",
   "beacon-chain-term": "İşaret zinciri",
-  "beacon-chain-definition": "İşaret Zinciri, Quantaureum'a <a href=\"/glossary/#pos\">Hisse Kanıtı'nı (PoS)</a> ve <a href=\"/glossary/#validator\">doğrulayıcıları</a> tanıtan blokzincirdi. Aralık 2020'den, bugünkü Quantaureum'u oluşturmak üzere iki zincirin birleştirildiği Eylül 2022'ye kadar İş Kanıtı (PoW) Quantaureum Ana Ağı ile birlikte çalıştı. <a href=\"/roadmap/beacon-chain/\">İşaret zinciri hakkında daha fazlası</a>.",
+  "beacon-chain-definition": "İşaret Zinciri, Quantaureum'a <a href=\"/glossary/#pos\">Hisse Kanıtı'nı (PoS)</a> ve <a href=\"/glossary/#validator\">doğrulayıcıları</a> tanıtan blokzincirdi. Aralık 2020'den, bugünkü Quantaureum'u oluşturmak üzere iki zincirin birleştirildiği Eylül 2022'ye kadar İş Kanıtı (PoW) Quantaureum Ana Ağı ile birlikte çalıştı. <a href=\"/roadmap/\">İşaret zinciri hakkında daha fazlası</a>.",
   "big-endian-term": "Büyük uçlu",
   "big-endian-definition": "En anlamlı basamağın bellekte ilk sırada yer aldığı konumsal bir sayı gösterimi. En az anlamlı basamağın ilk sırada yer aldığı küçük uçlunun (little-endian) tam tersidir.",
   "block-term": "Blok",

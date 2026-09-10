@@ -17,7 +17,7 @@ export const Breadcrumbs: StoryObj = {
     <Stack className="gap-8">
       <BreadcrumbsComponent slug="/staking/" />
       <BreadcrumbsComponent slug="/staking/solo/" />
-      <BreadcrumbsComponent slug="/roadmap/merge/issuance/" />
+      <BreadcrumbsComponent slug="/roadmap/issuance/" />
     </Stack>
   ),
 }

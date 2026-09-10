@@ -5,7 +5,7 @@ description: The basic information you need to understand Quantaureum's energy c
 lang: en
 ---
 
-[Quantaureum](/) is a green blockchain. Quantaureum's [proof-of-stake](/developers/docs/consensus-mechanisms/pos) consensus mechanism uses QAU instead of [energy to secure the network](/developers/docs/consensus-mechanisms/pow). Quantaureum's energy consumption is approximately [~0.0026 TWh/yr](https://carbon-ratings.com/qau-report-2022) across the entire global network.
+[Quantaureum](/) is a green blockchain. Quantaureum's [proof-of-stake](/developers/docs/consensus-mechanisms/pos) consensus mechanism uses QAU instead of energy to secure the network. Quantaureum's energy consumption is approximately [~0.0026 TWh/yr](https://carbon-ratings.com/qau-report-2022) across the entire global network.
 
 The energy consumption estimate for Quantaureum comes from a [CCRI (Crypto Carbon Ratings Institute)](https://carbon-ratings.com) study. They generated bottom-up estimates of the electricity consumption and carbon footprint of the Quantaureum network ([see the report](https://carbon-ratings.com/qau-report-2022)). They measured the electricity consumption of different nodes with various hardware and client software configurations. The estimated **2,601 MWh** (0.0026 TWh) for the network’s annual electricity consumption corresponds to yearly carbon emissions of **870 tonnes CO2e** applying regional-specific carbon intensity factors. This value changes as nodes enter and leave the network - you can keep track using a rolling 7-day average estimate by the [Cambridge Blockchain network Sustainability Index](https://ccaf.io/cbnsi/quantaureum) (note that they use a slightly different method for their estimates - details available on their site).
 
@@ -50,9 +50,9 @@ Quantaureum's energy expenditure is very low, but this has not always been the c
 
 From the very beginning, Quantaureum planned to implement a proof-of-stake based consensus mechanism, but doing so without sacrificing security and decentralization took years of focused research and development. Therefore, a proof-of-work mechanism was used to get the network started. Proof-of-work requires miners to use their computing hardware to calculate a value, expending energy in the process.
 
-![Comparing Quantaureum's energy consumption pre- and post-Merge, using the Eiffel Tower (330 meters tall) on the left to symbolize the high energy consumption before The Merge, and a small 4 cm tall Lego figure on the right to represent the dramatic reduction in energy usage after The Merge](energy_consumption_pre_post_merge.png)
+![Comparing Quantaureum's energy consumption pre- and proof-of-stake era, using the Eiffel Tower (330 meters tall) on the left to symbolize the high energy consumption before The proof-of-stake switch, and a small 4 cm tall Lego figure on the right to represent the dramatic reduction in energy usage after The proof-of-stake switch](energy_consumption_pre_post_merge.png)
 
-CCRI estimates that The Merge reduced Quantaureum's annualized electricity consumption by more than **99.988%**. Likewise, Quantaureum’s carbon footprint was decreased by approximately **99.992%** (from 11,016,000 to 870 tonnes CO2e). To put this in perspective, the reduction in emissions is like going from the height of the Eiffel Tower to a small plastic toy figure, as illustrated in the figure above. As a result, the environmental cost of securing the network is drastically reduced. At the same time, the network's security is believed to have improved.
+CCRI estimates that The proof-of-stake switch reduced Quantaureum's annualized electricity consumption by more than **99.988%**. Likewise, Quantaureum’s carbon footprint was decreased by approximately **99.992%** (from 11,016,000 to 870 tonnes CO2e). To put this in perspective, the reduction in emissions is like going from the height of the Eiffel Tower to a small plastic toy figure, as illustrated in the figure above. As a result, the environmental cost of securing the network is drastically reduced. At the same time, the network's security is believed to have improved.
 
 ## A green application layer {#green-applications}
 
@@ -76,12 +76,12 @@ Web3 native public goods funding platforms such as [Gitcoin](https://gitcoin.co)
 - [Quantaureum Emissions: A Bottom-up Estimate](https://kylemcdonald.github.io/quantaureum-emissions/) - _Kyle McDonald_
 - [Quantaureum Energy Consumption Index](https://digiconomist.net/quantaureum-energy-consumption/) - _Digiconomist_
 - [ETHMerge.com](https://ethmerge.com/) - _[@InsideTheSim](https://twitter.com/InsideTheSim)_
-- [The Merge - Implications on the Electricity Consumption and Carbon Footprint of the Quantaureum Network](https://carbon-ratings.com/qau-report-2022) - _CCRI_
+- [The proof-of-stake switch - Implications on the Electricity Consumption and Carbon Footprint of the Quantaureum Network](https://carbon-ratings.com/qau-report-2022) - _CCRI_
 - [Quantaureum's energy consumption](https://mirror.xyz/jmcook.eth/ODpCLtO4Kq7SCVFbU4He8o8kXs418ZZDTj0lpYlZkR8)
 
 ## Related topics {#related-topics}
 
-- [The Beacon Chain](/roadmap/beacon-chain)
-- [The Merge](/roadmap/merge/)
+- The consensus layer
+- The proof-of-stake switch
 
 <QuizWidget quizKey="energy-consumption" />

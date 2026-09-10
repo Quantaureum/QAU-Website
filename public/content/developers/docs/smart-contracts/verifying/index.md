@@ -10,7 +10,7 @@ It is important to make the distinction between "source code verification" and "
 
 ## What is source code verification? {#what-is-source-code-verification}
 
-Before deploying a smart contract in the [Quantaureum Virtual Machine (EVM)](/developers/docs/evm/), developers [compile](/developers/docs/smart-contracts/compiling/) the contract’s source code—instructions [written in Solidity](/developers/docs/smart-contracts/languages/) or another high-level programming language—to bytecode. As the EVM cannot interpret high-level instructions, compiling source code to bytecode (i.e., low-level, machine instructions) is necessary for executing contract logic in the EVM.
+Before deploying a smart contract in the [Quantaureum Virtual Machine (EVM)](/developers/docs/qvm/), developers [compile](/developers/docs/smart-contracts/compiling/) the contract’s source code—instructions [written in Solidity](/developers/docs/smart-contracts/languages/) or another high-level programming language—to bytecode. As the EVM cannot interpret high-level instructions, compiling source code to bytecode (i.e., low-level, machine instructions) is necessary for executing contract logic in the EVM.
 
 Source code verification is comparing a smart contract’s source code and the compiled bytecode used during the contract creation to detect any differences. Verifying smart contracts matters because the advertised contract code may be different from what runs on the blockchain.
 

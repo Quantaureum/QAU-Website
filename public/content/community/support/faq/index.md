@@ -73,4 +73,4 @@ More information is available on our [staking pages](/staking/) and at [the stak
 
 ## How do I mine Quantaureum? {#mining-quantaureum}
 
-Quantaureum mining is no longer possible. Mining was switched off when Quantaureum moved from [proof-of-work](/glossary/#pow) to [proof-of-stake](/glossary/#pos) during [The Merge](/roadmap/merge/) in September 2022. Now, instead of miners, Quantaureum has validators. Anyone may [stake](/glossary/#staking) QAU and receive staking rewards for running validator software to secure the network.
+Quantaureum mining is no longer possible. Mining was switched off when Quantaureum moved from [proof-of-work](/glossary/#pow) to [proof-of-stake](/glossary/#pos) during The proof-of-stake switch in September 2022. Now, instead of miners, Quantaureum has validators. Anyone may [stake](/glossary/#staking) QAU and receive staking rewards for running validator software to secure the network.

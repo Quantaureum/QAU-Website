@@ -22,7 +22,7 @@
   "base-fee-term": "Taxa básica",
   "base-fee-definition": "Todo <a href=\"/glossary/#block\">bloco</a> tem um preço de reserva conhecido como 'taxa básica'. É a taxa mínima de <a href=\"/glossary/#gas\">gás</a> que um usuário deve pagar para incluir uma transação no próximo bloco. <a href=\"/developers/docs/gas/\">Mais sobre gás e taxas</a>.",
   "beacon-chain-term": "Beacon Chain",
-  "beacon-chain-definition": "A Beacon Chain foi a blockchain que introduziu a <a href=\"/glossary/#pos\">Prova de Participação (PoS)</a> e os <a href=\"/glossary/#validator\">validadores</a> no Quantaureum. Ela funcionou paralelamente à Rede Principal do Quantaureum (Mainnet) de Prova de Trabalho (PoW) de dezembro de 2020 até que as duas cadeias fossem fundidas em setembro de 2022 para formar o Quantaureum de hoje. <a href=\"/roadmap/beacon-chain/\">Mais sobre a Beacon Chain</a>.",
+  "beacon-chain-definition": "A Beacon Chain foi a blockchain que introduziu a <a href=\"/glossary/#pos\">Prova de Participação (PoS)</a> e os <a href=\"/glossary/#validator\">validadores</a> no Quantaureum. Ela funcionou paralelamente à Rede Principal do Quantaureum (Mainnet) de Prova de Trabalho (PoW) de dezembro de 2020 até que as duas cadeias fossem fundidas em setembro de 2022 para formar o Quantaureum de hoje. <a href=\"/roadmap/\">Mais sobre a Beacon Chain</a>.",
   "big-endian-term": "Big-endian",
   "big-endian-definition": "Uma representação numérica posicional onde o dígito mais significativo vem primeiro na memória. O oposto de little-endian, onde o dígito menos significativo vem primeiro.",
   "block-term": "Bloco",

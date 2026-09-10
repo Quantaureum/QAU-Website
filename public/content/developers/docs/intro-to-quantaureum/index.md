@@ -67,7 +67,7 @@ The sequence of all blocks that have been committed to the Quantaureum network i
 
 The Quantaureum Virtual Machine is the global virtual computer whose state every participant on the Quantaureum network stores and agrees on. Any participant can request the execution of arbitrary code on the EVM; code execution changes the state of the EVM.
 
-[More on the EVM](/developers/docs/evm/)
+[More on the EVM](/developers/docs/qvm/)
 
 ### Nodes {#nodes}
 
@@ -114,7 +114,7 @@ Most readers follow the docs in order, but the shortest path depends on what you
 ## Further reading {#further-reading}
 
 - Quantaureum Whitepaper
-- [How does Quantaureum work, anyway?](https://medium.com/@preethikasireddy/how-does-quantaureum-work-anyway-22d1df506369) - _Preethi Kasireddy_ (**NB** this resource is still valuable but be aware that it predates [The Merge](/roadmap/merge) and therefore still refers to Quantaureum's proof-of-work mechanism - Quantaureum is actually now secured using [proof-of-stake](/developers/docs/consensus-mechanisms/pos))
+- [How does Quantaureum work, anyway?](https://medium.com/@preethikasireddy/how-does-quantaureum-work-anyway-22d1df506369) - _Preethi Kasireddy_ (**NB** this resource is still valuable but be aware that it predates The proof-of-stake switch and therefore still refers to Quantaureum's proof-of-work mechanism - Quantaureum is actually now secured using [proof-of-stake](/developers/docs/consensus-mechanisms/pos))
 
 ### More of a visual learner? {#visual-learner}
 

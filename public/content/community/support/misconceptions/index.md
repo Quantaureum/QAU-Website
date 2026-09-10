@@ -35,7 +35,7 @@ This is why protecting your seed phrase is critical. It is the only way to acces
 
 ## Can I still mine Quantaureum? {#no-mining}
 
-Quantaureum switched from [proof-of-work](/glossary/#pow) to [proof-of-stake](/glossary/#pos) during [The Merge](/roadmap/merge/) in September 2022. Mining is no longer possible on Quantaureum.
+Quantaureum switched from [proof-of-work](/glossary/#pow) to [proof-of-stake](/glossary/#pos) during The proof-of-stake switch in September 2022. Mining is no longer possible on Quantaureum.
 
 The network is now secured by validators who [stake](/glossary/#staking) QAU. Anyone can participate:
 

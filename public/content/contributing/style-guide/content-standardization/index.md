@@ -77,18 +77,18 @@ Smart contract is a common noun and should only be capitalized at the beginning 
 
 - Smart Contract
 
-### The Merge {#the-merge}
+### The proof-of-stake switch {#the-merge}
 
-When referring to The Merge, treat it as a proper noun. Always capitalize the first letter in each word.
+When referring to The proof-of-stake switch, treat it as a proper noun. Always capitalize the first letter in each word.
 
 **Correct usage:**
 
-- The Merge
+- The proof-of-stake switch
 
 **Incorrect usage:**
 
 - The merge
-- the Merge
+- the proof-of-stake switch
 
 ### Zero-knowledge {#zero-knowledge}
 

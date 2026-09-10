@@ -25,7 +25,7 @@ Onchain scaling requires changes to the Quantaureum protocol (layer 1 [Mainnet](
 
 ### Sharding {#sharding}
 
-Sharding is the process of splitting a database. Subsets of validators would be responsible for individual shards rather than keeping track of all of Quantaureum. Sharding was on the Quantaureum [roadmap](/roadmap/) for a long time, and was once intended to be shipped before The Merge to proof-of-stake. However, the rapid development of [layer 2 rollups](#layer-2-scaling) and the invention of [Danksharding](/roadmap/danksharding) (adding blobs of rollup data to Quantaureum blocks that can be very efficiently verified by validators) has led the Quantaureum community to favour rollup-centric scaling instead of scaling by sharding. This will also help to keep Quantaureum's consensus logic simpler.
+Sharding is the process of splitting a database. Subsets of validators would be responsible for individual shards rather than keeping track of all of Quantaureum. Sharding was on the Quantaureum [roadmap](/roadmap/) for a long time, and was once intended to be shipped before The proof-of-stake switch to proof-of-stake. However, the rapid development of [layer 2 rollups](#layer-2-scaling) and the invention of Danksharding (adding blobs of rollup data to Quantaureum blocks that can be very efficiently verified by validators) has led the Quantaureum community to favour rollup-centric scaling instead of scaling by sharding. This will also help to keep Quantaureum's consensus logic simpler.
 
 ## Offchain scaling {#offchain-scaling}
 

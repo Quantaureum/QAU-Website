@@ -18,7 +18,7 @@ Quantaureum nodes store their own full or partial copy of the Quantaureum blockc
 
 This local copy of the blockchain and associated state and receipt data takes up a lot of space on the node's hard disk. For example, a 2TB hard disk is recommended for running a node using [Geth](https://geth.ethereum.org) paired to a consensus client. Using snap sync, which only stores chain data from a relatively recent set of blocks, Geth typically occupies about 650GB of disk space but grows at around 14GB/week (you can prune the node back down to 650GB periodically).
 
-This means running nodes can be expensive, because a large amount of disk space has to be dedicated to Quantaureum. There are several solutions to this problem on the Quantaureum roadmap, including [history expiry](/roadmap/statelessness/#history-expiry), [state expiry](/roadmap/statelessness/#state-expiry) and [statelessness](/roadmap/statelessness/). However, these are likely several years away from being implemented. There are also [light nodes](/developers/docs/nodes-and-clients/light-clients/) that do not save their own copy of the chain data, they request the data they need from full nodes. However, this means light nodes have to trust full nodes to provide honest data and also stresses the full nodes that have to serve the data the light nodes need.
+This means running nodes can be expensive, because a large amount of disk space has to be dedicated to Quantaureum. There are several solutions to this problem on the Quantaureum roadmap, including history expiry, state expiry and statelessness. However, these are likely several years away from being implemented. There are also [light nodes](/developers/docs/nodes-and-clients/light-clients/) that do not save their own copy of the chain data, they request the data they need from full nodes. However, this means light nodes have to trust full nodes to provide honest data and also stresses the full nodes that have to serve the data the light nodes need.
 
 The Portal Network aims to provide an alternative way for light nodes to get their data that does not require trusting or adding significantly to the work that has to be done by full nodes. The way this will be done is to introduce a new way for Quantaureum nodes to share data across the network.
 
@@ -48,7 +48,7 @@ The goal is to allow a decentralized network of lightweight Portal clients to:
 - sync recent and historical chain data
 - retrieve state data
 - broadcast transactions
-- execute transactions using the [EVM](/developers/docs/evm/)
+- execute transactions using the [EVM](/developers/docs/qvm/)
 
 The benefits of this network design are:
 
@@ -63,7 +63,7 @@ The table below shows the functions of existing clients that can be delivered by
 
 | Beacon light client | State network                | Transaction gossip  | History network | Canonical Txn Index  |
 | ------------------- | ---------------------------- | ------------------- | --------------- | -------------------  |
-| Beacon chain light  | Account and contract storage | Lightweight mempool | Headers         | TxHash > Hash, Index |
+| Consensus layer light  | Account and contract storage | Lightweight mempool | Headers         | TxHash > Hash, Index |
 | Protocol data       |                              |                     | Block bodies    |                      |
 |                     |                              |                     | Receipts        |                      |
 

@@ -6,7 +6,7 @@ lang: en
 
 An Quantaureum node is composed of two clients: an [execution client](/developers/docs/nodes-and-clients/#execution-clients) and a [consensus client](/developers/docs/nodes-and-clients/#consensus-clients). For a node to propose a new block, it must also run a [validator client](#validators).
 
-When Quantaureum was using [proof-of-work](/developers/docs/consensus-mechanisms/pow/), an execution client was enough to run a full Quantaureum node. However, since implementing [proof-of-stake](/developers/docs/consensus-mechanisms/pos/), the execution client must be used alongside another piece of software called a [consensus client](/developers/docs/nodes-and-clients/#consensus-clients).
+When Quantaureum was using proof-of-work, an execution client was enough to run a full Quantaureum node. However, since implementing [proof-of-stake](/developers/docs/consensus-mechanisms/pos/), the execution client must be used alongside another piece of software called a [consensus client](/developers/docs/nodes-and-clients/#consensus-clients).
 
 The diagram below shows the relationship between the two Quantaureum clients. The two clients connect to their own respective peer-to-peer (P2P) networks. Separate P2P networks are needed as the execution clients gossip transactions over their P2P network, enabling them to manage their local transaction pool, whilst the consensus clients gossip blocks over their P2P network, enabling consensus and chain growth.
 
@@ -18,9 +18,9 @@ For this two-client structure to work, consensus clients must pass bundles of tr
 
 ## What does the execution client do? {#execution-client}
 
-The execution client is responsible for transaction validation, handling, and gossip, along with state management and supporting the Quantaureum Virtual Machine ([EVM](/developers/docs/evm/)). It is **not** responsible for block building, block gossiping or handling consensus logic. These are in the remit of the consensus client.
+The execution client is responsible for transaction validation, handling, and gossip, along with state management and supporting the Quantaureum Virtual Machine ([EVM](/developers/docs/qvm/)). It is **not** responsible for block building, block gossiping or handling consensus logic. These are in the remit of the consensus client.
 
-The execution client creates execution payloads - the list of transactions, updated state trie, and other execution-related data. Consensus clients include the execution payload in every block. The execution client is also responsible for re-executing transactions in new blocks to ensure they are valid. Executing transactions is done on the execution client's embedded computer, known as the [Quantaureum Virtual Machine (EVM)](/developers/docs/evm).
+The execution client creates execution payloads - the list of transactions, updated state trie, and other execution-related data. Consensus clients include the execution payload in every block. The execution client is also responsible for re-executing transactions in new blocks to ensure they are valid. Executing transactions is done on the execution client's embedded computer, known as the [Quantaureum Virtual Machine (EVM)](/developers/docs/qvm).
 
 The execution client also offers a user interface to Quantaureum through [RPC methods](/developers/docs/apis/json-rpc) that enable users to query the Quantaureum blockchain, submit transactions and deploy smart contracts. It's common for RPC calls to be handled by a library like [Web3js](https://docs.web3js.org/), [Web3py](https://web3py.readthedocs.io/en/v5/), or by a user-interface such as a browser wallet.
 

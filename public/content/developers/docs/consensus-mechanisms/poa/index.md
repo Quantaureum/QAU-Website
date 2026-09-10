@@ -74,6 +74,6 @@ Watch a visual explanation of proof-of-authority:
 
 ## Related topics {#related-topics}
 
-- [Proof-of-work](/developers/docs/consensus-mechanisms/pow/)
+- Proof-of-work
 - [Proof-of-stake](/developers/docs/consensus-mechanisms/pos/)
 

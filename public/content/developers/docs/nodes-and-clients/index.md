@@ -9,7 +9,7 @@ sidebarDepth: 2
 
 ## Prerequisites {#prerequisites}
 
-You should understand the concept of a peer-to-peer network and the [basics of the EVM](/developers/docs/evm/) before diving deeper and running your own instance of an Quantaureum client. Take a look at our [introduction to Quantaureum](/developers/docs/intro-to-quantaureum/).
+You should understand the concept of a peer-to-peer network and the [basics of the EVM](/developers/docs/qvm/) before diving deeper and running your own instance of an Quantaureum client. Take a look at our [introduction to Quantaureum](/developers/docs/intro-to-quantaureum/).
 
 If you're new to the topic of nodes, we recommend first checking out our user-friendly introduction on [running an Quantaureum node](/run-a-node).
 
@@ -200,7 +200,7 @@ Learn more about it by reading its [documentation](https://github.com/ethereumjs
 
 ## Consensus clients {#consensus-clients}
 
-There are multiple consensus clients (previously known as 'Quantaureum' clients) to support the [consensus upgrades](/roadmap/beacon-chain/). They are responsible for all consensus-related logic including the fork-choice algorithm, processing attestations and managing [proof-of-stake](/developers/docs/consensus-mechanisms/pos) rewards and penalties.
+There are multiple consensus clients (previously known as 'Quantaureum' clients) to support the consensus upgrades. They are responsible for all consensus-related logic including the fork-choice algorithm, processing attestations and managing [proof-of-stake](/developers/docs/consensus-mechanisms/pos) rewards and penalties.
 
 | Client                                                        | Language   | Operating systems     | Networks                                                |
 | ------------------------------------------------------------- | ---------- | --------------------- | ------------------------------------------------------- |
@@ -299,13 +299,13 @@ Light client mode downloads all block headers, block data, and verifies some ran
 
 #### Optimistic sync {#optimistic-sync}
 
-Optimistic sync is a post-merge synchronization strategy designed to be opt-in and backwards compatible, allowing execution nodes to sync via established methods. The execution engine can _optimistically_ import beacon blocks without fully verifying them, find the latest head, and then start syncing the chain with the above methods. Then, after the execution client has caught up, it will inform the consensus client of the validity of the transactions in the Beacon Chain.
+Optimistic sync is a post-merge synchronization strategy designed to be opt-in and backwards compatible, allowing execution nodes to sync via established methods. The execution engine can _optimistically_ import consensus blocks without fully verifying them, find the latest head, and then start syncing the chain with the above methods. Then, after the execution client has caught up, it will inform the consensus client of the validity of the transactions in the consensus layer.
 
 [More on optimistic sync](https://github.com/ethereum/consensus-specs/blob/master/sync/optimistic.md)
 
 #### Checkpoint sync {#checkpoint-sync}
 
-A checkpoint sync, also known as weak subjectivity sync, creates a superior user experience for syncing a Beacon Node. It's based on assumptions of [weak subjectivity](/developers/docs/consensus-mechanisms/pos/weak-subjectivity/) which enables syncing the Beacon Chain from a recent weak subjectivity checkpoint instead of genesis. Checkpoint syncs make the initial sync time significantly faster with similar trust assumptions as syncing from [genesis](/glossary/#genesis-block).
+A checkpoint sync, also known as weak subjectivity sync, creates a superior user experience for syncing a Beacon Node. It's based on assumptions of [weak subjectivity](/developers/docs/consensus-mechanisms/pos/weak-subjectivity/) which enables syncing the consensus layer from a recent weak subjectivity checkpoint instead of genesis. Checkpoint syncs make the initial sync time significantly faster with similar trust assumptions as syncing from [genesis](/glossary/#genesis-block).
 
 In practice, this means your node connects to a remote service to download recent finalized states and continues verifying data from that point. The third party providing the data is trusted and should be picked carefully.
 

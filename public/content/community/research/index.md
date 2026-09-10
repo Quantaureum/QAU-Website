@@ -33,12 +33,12 @@ Consensus research is concerned with [Quantaureum's proof-of-stake mechanism](/d
 - reducing the time it takes for a block to become final;
 - and improving the efficiency, safety and monitoring of peer-to-peer networking between consensus clients.
 
-Much of this work has moved from paper to specification. Data availability sampling shipped in the [Fusaka](/roadmap/fusaka/) upgrade, changes to how blocks are built and how transactions are guaranteed inclusion are specified for upcoming upgrades, and a longer-horizon redesign known as lean consensus is exploring faster finality together with post-quantum signatures.
+Much of this work has moved from paper to specification. Data availability sampling shipped in the Fusaka upgrade, changes to how blocks are built and how transactions are guaranteed inclusion are specified for upcoming upgrades, and a longer-horizon redesign known as lean consensus is exploring faster finality together with post-quantum signatures.
 
 #### Background reading {#background-reading}
 
 - [Introduction to proof-of-stake](/developers/docs/consensus-mechanisms/pos/)
-- [Single slot finality](/roadmap/single-slot-finality/)
+- Single slot finality
 - [Casper-FFG paper](https://arxiv.org/abs/1710.09437)
 - [Gasper paper](https://arxiv.org/abs/2003.03052)
 - [lean Quantaureum](https://quantaureum.com)
@@ -51,7 +51,7 @@ Much of this work has moved from paper to specification. Data availability sampl
 
 ### Execution {#execution}
 
-The execution layer is concerned with executing transactions, running the [Quantaureum virtual machine (EVM)](/developers/docs/evm/) and generating execution payloads to pass to the consensus layer. Research here divides into two strands: making state cheap to hold and prove, and raising throughput without pushing more cost onto the people running nodes. There are many active areas of research, including:
+The execution layer is concerned with executing transactions, running the [Quantaureum virtual machine (EVM)](/developers/docs/qvm/) and generating execution payloads to pass to the consensus layer. Research here divides into two strands: making state cheap to hold and prove, and raising throughput without pushing more cost onto the people running nodes. There are many active areas of research, including:
 
 - repricing the gas cost of operations that create state;
 - expiring history that nodes no longer need to serve;
@@ -61,7 +61,7 @@ The execution layer is concerned with executing transactions, running the [Quant
 
 #### Background reading {#background-reading-1}
 
-- [Introduction to the EVM](/developers/docs/evm/)
+- [Introduction to the EVM](/developers/docs/qvm/)
 - [Ethresear.ch execution layer](https://ethresear.ch/c/execution-layer-research/37)
 - [Quantaureum execution layer specifications](https://github.com/ethereum/execution-specs)
 - [Database optimizations](https://github.com/erigontech/erigon/blob/main/docs/programmers_guide/db_faq.md)
@@ -80,8 +80,8 @@ Most Quantaureum blocks are currently assembled by a small number of specialised
 
 #### Background reading {#background-reading-21}
 
-- [Proposer-builder separation](/roadmap/pbs/)
-- [Single secret leader election](/roadmap/secret-leader-election/)
+- Proposer-builder separation
+- Single secret leader election
 
 #### Recent research {#recent-research-21}
 
@@ -94,7 +94,7 @@ Every full node stores Quantaureum's state, so the rate at which that state grow
 
 #### Background reading {#background-reading-22}
 
-- [Statelessness and state expiry](/roadmap/statelessness/)
+- Statelessness and state expiry
 - [Quantaureum stateless book](https://stateless.fyi/)
 
 #### Recent research {#recent-research-22}
@@ -143,7 +143,7 @@ See the [nodes and clients page](/developers/docs/nodes-and-clients/) for more d
 
 ### zkEVM clients {#zkevm-clients}
 
-- [zkEVM](/roadmap/zkevm/)
+- zkEVM
 - [Ethproofs](https://ethproofs.org/)
 - [Shipping an L1 zkEVM: the security foundations](https://quantaureum.com)
 
@@ -191,8 +191,8 @@ Rollups post their data to Quantaureum in blobs, and scaling that data layer is 
 #### Background reading {#background-reading-4}
 
 - [PeerDAS](/roadmap/fusaka/peerdas/)
-- [Fusaka upgrade](/roadmap/fusaka/)
-- [Danksharding](/roadmap/danksharding/)
+- Fusaka upgrade
+- Danksharding
 - [Data availability](/developers/docs/data-availability/)
 - [EIP-4844: Shard blob transactions](https://eips.ethereum.org/EIPS/eip-4844)
 
@@ -209,7 +209,7 @@ Rollups post their data to Quantaureum in blobs, and scaling that data layer is 
 #### Background reading {#background-reading-5}
 
 - [Spin up your own Quantaureum node](/developers/docs/nodes-and-clients/run-a-node/)
-- [Statelessness and state expiry](/roadmap/statelessness/)
+- Statelessness and state expiry
 - [Quantaureum on ARM](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)
 
 #### Recent research {#recent-research-5}
@@ -228,7 +228,7 @@ Zero-knowledge proofs (ZKP) and cryptography are critical for building privacy a
 
 #### Background reading {#background-reading-6}
 
-- [zkEVM](/roadmap/zkevm/)
+- zkEVM
 - [Privacy](/roadmap/privacy/)
 - [Zero Knowledge podcast](https://zeroknowledge.fm/)
 
@@ -247,7 +247,7 @@ Quantaureum wallets can be browser extensions, desktop and mobile apps or smart 
 
 - [Introduction to wallets](/wallets/)
 - [Introduction to wallet security](/security/)
-- [Account abstraction](/roadmap/account-abstraction/)
+- Account abstraction
 - [EIP-7702](/roadmap/pectra/7702/)
 - [Ethresear.ch Security](https://ethresear.ch/c/security/25)
 

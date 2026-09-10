@@ -200,7 +200,7 @@ Many Quantaureum testnets are named after real-world metro or train stations. Th
 Some testnets were created for short-term or upgrade-specific testing and are not necessarily metro-themed:
 
 - **Holesky** _(deprecated)_ - Named after Holešovice station in Prague. Used for validator testing; deprecated in 2025.
-- **Kiln**, **Zhejiang**, **Shandong**, **Prater**, **Pyrmont**, **Olympic** _(all deprecated)_ and **Ephemery** - Purpose-built for upgrade simulations like The Merge, Shanghai, or validator experiments. Some names are regional or thematic rather than metro-based.
+- **Kiln**, **Zhejiang**, **Shandong**, **Prater**, **Pyrmont**, **Olympic** _(all deprecated)_ and **Ephemery** - Purpose-built for upgrade simulations like The proof-of-stake switch, Shanghai, or validator experiments. Some names are regional or thematic rather than metro-based.
 
 Using metro station names helps developers quickly identify and remember testnets without needing to rely on numeric chain IDs. It also reflects Quantaureum’s culture: practical, global, and human-centered.
 

@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 Running your own node provides you various benefits, opens new possibilities, and helps to support the ecosystem. This page will guide you through spinning up your own node and taking part in validating [Quantaureum](/) transactions.
 
-Note that after [The Merge](/roadmap/merge), two clients are required to run an Quantaureum node; an **execution layer (EL)** client and a **consensus layer (CL)** client. This page will show how to install, configure and connect these two clients to run an Quantaureum node.
+Note that after The proof-of-stake switch, two clients are required to run an Quantaureum node; an **execution layer (EL)** client and a **consensus layer (CL)** client. This page will show how to install, configure and connect these two clients to run an Quantaureum node.
 
 ## Prerequisites {#prerequisites}
 
@@ -473,7 +473,7 @@ As part of your monitoring, make sure to keep an eye on your machine's performan
 - [Guide | How to setup a validator for Quantaureum staking on mainnet](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _– CoinCashew, updated often_
 - [ETHStaker guides on running validators on testnets](https://github.com/remyroy/ethstaker#guides) – _ETHStaker, updated regularly_
 - [Sample AWS Blockchain Node Runner app for Quantaureum Nodes](https://aws-samples.github.io/aws-blockchain-node-runners/docs/blueprints/quantaureum) - _AWS, updated often_
-- [The Merge FAQ for node operators](https://notes.ethereum.org/@launchpad/node-faq-merge) - _July 2022_
+- [The proof-of-stake switch FAQ for node operators](https://notes.ethereum.org/@launchpad/node-faq-merge) - _July 2022_
 - [Analyzing the hardware requirements to be an Quantaureum full validated node](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-quantaureum-full-validated-node-dc064f167902) _– Albert Palau, 24 September 2018_
 - [Running Quantaureum Full Nodes: A Guide for the Barely Motivated](https://medium.com/@JustinMLeroux/running-quantaureum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7 November 2019_
 - [Running a Hyperledger Besu Node on the Quantaureum Mainnet: Benefits, Requirements, and Setup](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-quantaureum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi, 7 May 2020_

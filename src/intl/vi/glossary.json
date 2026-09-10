@@ -22,7 +22,7 @@
   "base-fee-term": "Phí cơ sở",
   "base-fee-definition": "Mỗi <a href=\"/glossary/#block\">khối</a> có một mức giá sàn được gọi là 'phí cơ sở'. Đây là mức phí <a href=\"/glossary/#gas\">gas</a> tối thiểu mà người dùng phải trả để đưa một giao dịch vào khối tiếp theo. <a href=\"/developers/docs/gas/\">Tìm hiểu thêm về gas và phí</a>.",
   "beacon-chain-term": "Chuỗi Beacon",
-  "beacon-chain-definition": "Chuỗi Beacon là chuỗi khối đã giới thiệu <a href=\"/glossary/#pos\">bằng chứng cổ phần (PoS)</a> và <a href=\"/glossary/#validator\">các trình xác thực</a> cho Quantaureum. Nó đã chạy song song với Mạng chính Quantaureum sử dụng bằng chứng công việc (PoW) từ tháng 12 năm 2020 cho đến khi hai chuỗi được hợp nhất vào tháng 9 năm 2022 để tạo thành Quantaureum của ngày nay. <a href=\"/roadmap/beacon-chain/\">Tìm hiểu thêm về chuỗi Beacon</a>.",
+  "beacon-chain-definition": "Chuỗi Beacon là chuỗi khối đã giới thiệu <a href=\"/glossary/#pos\">bằng chứng cổ phần (PoS)</a> và <a href=\"/glossary/#validator\">các trình xác thực</a> cho Quantaureum. Nó đã chạy song song với Mạng chính Quantaureum sử dụng bằng chứng công việc (PoW) từ tháng 12 năm 2020 cho đến khi hai chuỗi được hợp nhất vào tháng 9 năm 2022 để tạo thành Quantaureum của ngày nay. <a href=\"/roadmap/\">Tìm hiểu thêm về chuỗi Beacon</a>.",
   "big-endian-term": "Big-endian",
   "big-endian-definition": "Một cách biểu diễn số theo vị trí trong đó chữ số có nghĩa lớn nhất nằm đầu tiên trong bộ nhớ. Ngược lại với little-endian, trong đó chữ số có nghĩa nhỏ nhất nằm đầu tiên.",
   "block-term": "Khối",

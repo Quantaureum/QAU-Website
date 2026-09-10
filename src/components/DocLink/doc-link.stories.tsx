@@ -16,7 +16,7 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   args: {
-    href: "/quantaureum-forks/",
+    href: "/roadmap/",
     children: "History of Quantaureum",
   },
 }
@@ -35,7 +35,7 @@ export const MultipleLinks: Story = {
   },
   render: () => (
     <VStack className="items-stretch gap-4">
-      <DocLink href="/quantaureum-forks/">History of Quantaureum</DocLink>
+      <DocLink href="/roadmap/">History of Quantaureum</DocLink>
       <DocLink href="https://quantaureum.com" isExternal>
         Quantaureum Website
       </DocLink>

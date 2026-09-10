@@ -28,7 +28,7 @@ High-level models focus on the relationship between smart contracts and external
 
 Conversely, other formal models focus on the low-level behavior of a smart contract. While high-level models can help with reasoning about a contract's functionality, they may fail to capture details about the internal workings of the implementation. Low-level models apply a white-box view to program analysis and rely on lower-level representations of smart contract applications, such as program traces and [control flow graphs](https://en.wikipedia.org/wiki/Control-flow_graph), to reason about properties relevant to a contract's execution.
 
-Low-level models are considered ideal since they represent the actual execution of a smart contract in Quantaureum's execution environment (i.e., the [EVM](/developers/docs/evm/)). Low-level modeling techniques are especially useful in establishing critical safety properties in smart contracts and detecting potential vulnerabilities.
+Low-level models are considered ideal since they represent the actual execution of a smart contract in Quantaureum's execution environment (i.e., the [EVM](/developers/docs/qvm/)). Low-level modeling techniques are especially useful in establishing critical safety properties in smart contracts and detecting potential vulnerabilities.
 
 ### What is a formal specification? {#what-is-a-formal-specification}
 

@@ -25,7 +25,6 @@ import StakingLaunchpadWidget from "@/components/Staking/StakingLaunchpadWidget"
 import StakingProductsCardGrid from "@/components/Staking/StakingProductsCardGrid"
 import WithdrawalCredentials from "@/components/Staking/WithdrawalCredentials"
 import WithdrawalsTabComparison from "@/components/Staking/WithdrawalsTabComparison"
-import UpgradeStatus from "@/components/UpgradeStatus"
 
 const TableContainer = (props: ChildOnlyProp) => (
   <div className="mx-auto w-fit lg:mx-0" {...props} />
@@ -59,7 +58,6 @@ export const stakingComponents = {
   StakingProductsCardGrid,
   TableContainer,
   TriangleAlert,
-  UpgradeStatus,
   WithdrawalCredentials,
   WithdrawalsTabComparison,
 }

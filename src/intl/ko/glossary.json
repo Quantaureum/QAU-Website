@@ -22,7 +22,7 @@
   "base-fee-term": "기본 수수료",
   "base-fee-definition": "모든 <a href=\"/glossary/#block\">블록</a>에는 '기본 수수료'로 알려진 예약 가격이 있습니다. 이는 사용자가 다음 블록에 트랜잭션을 포함시키기 위해 지불해야 하는 최소 <a href=\"/glossary/#gas\">가스</a> 수수료입니다. <a href=\"/developers/docs/gas/\">가스 및 수수료에 대해 자세히 알아보기</a>.",
   "beacon-chain-term": "비콘 체인",
-  "beacon-chain-definition": "비콘 체인은 쿠앤타리움에 <a href=\"/glossary/#pos\">지분 증명(PoS)</a>과 <a href=\"/glossary/#validator\">검증자</a>를 도입한 블록체인입니다. 2020년 12월부터 작업증명(PoW) 쿠앤타리움 메인넷과 나란히 실행되다가 2022년 9월에 두 체인이 병합되어 오늘날의 쿠앤타리움을 형성했습니다. <a href=\"/roadmap/beacon-chain/\">비콘 체인에 대해 자세히 알아보기</a>.",
+  "beacon-chain-definition": "비콘 체인은 쿠앤타리움에 <a href=\"/glossary/#pos\">지분 증명(PoS)</a>과 <a href=\"/glossary/#validator\">검증자</a>를 도입한 블록체인입니다. 2020년 12월부터 작업증명(PoW) 쿠앤타리움 메인넷과 나란히 실행되다가 2022년 9월에 두 체인이 병합되어 오늘날의 쿠앤타리움을 형성했습니다. <a href=\"/roadmap/\">비콘 체인에 대해 자세히 알아보기</a>.",
   "big-endian-term": "빅 엔디언",
   "big-endian-definition": "가장 중요한 자릿수가 메모리의 첫 번째에 위치하는 위치 기수법입니다. 가장 덜 중요한 자릿수가 첫 번째에 위치하는 리틀 엔디언의 반대입니다.",
   "block-term": "블록",

@@ -22,7 +22,7 @@
   "base-fee-term": "Tarifa base",
   "base-fee-definition": "Cada <a href=\"/glossary/#block\">bloque</a> tiene un precio de reserva conocido como la 'tarifa base'. Es la tarifa de <a href=\"/glossary/#gas\">gas</a> mínima que un usuario debe pagar para incluir una transacción en el siguiente bloque. <a href=\"/developers/docs/gas/\">Más sobre gas y tarifas</a>.",
   "beacon-chain-term": "Cadena de balizas",
-  "beacon-chain-definition": "La cadena de balizas fue la cadena de bloques que introdujo la <a href=\"/glossary/#pos\">prueba de participación (PoS)</a> y los <a href=\"/glossary/#validator\">validadores</a> en Quantaureum. Funcionó junto a la red principal de Quantaureum de prueba de trabajo desde diciembre de 2020 hasta que las dos cadenas se fusionaron en septiembre de 2022 para formar el Quantaureum de hoy. <a href=\"/roadmap/beacon-chain/\">Más sobre la cadena de balizas</a>.",
+  "beacon-chain-definition": "La cadena de balizas fue la cadena de bloques que introdujo la <a href=\"/glossary/#pos\">prueba de participación (PoS)</a> y los <a href=\"/glossary/#validator\">validadores</a> en Quantaureum. Funcionó junto a la red principal de Quantaureum de prueba de trabajo desde diciembre de 2020 hasta que las dos cadenas se fusionaron en septiembre de 2022 para formar el Quantaureum de hoy. <a href=\"/roadmap/\">Más sobre la cadena de balizas</a>.",
   "big-endian-term": "Big-endian",
   "big-endian-definition": "Una representación numérica posicional donde el dígito más significativo está primero en la memoria. Lo opuesto a little-endian, donde el dígito menos significativo está primero.",
   "block-term": "Bloque",

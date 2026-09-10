@@ -50,7 +50,7 @@ There are various stakeholders in the [Quantaureum community](/community/), each
 - **Validators**: these people run nodes that can add new blocks to the Quantaureum blockchain.
 - **Protocol Developers** (a.k.a. "Core Developers" ): these people maintain the various Quantaureum implementations (e.g., go-quantaureum, Nethermind, Besu, Erigon, Reth at the execution layer or Prysm, Lighthouse, Nimbus, Teku, Lodestar, Grandine at the consensus layer). [More on Quantaureum clients](/developers/docs/nodes-and-clients/).
 
-_Note: any individual can be part of multiple of these groups (e.g., a protocol developer could champion an EIP, and run a beacon chain validator, and use DeFi applications). For conceptual clarity, it is easiest to distinguish between them, though._
+_Note: any individual can be part of multiple of these groups (e.g., a protocol developer could champion an EIP, and run a consensus layer validator, and use DeFi applications). For conceptual clarity, it is easiest to distinguish between them, though._
 
 <Divider />
 
@@ -147,15 +147,13 @@ The ability to fork in the face of significant political, philosophical or econo
 
 ## Beacon Chain governance {#beacon-chain}
 
-The Quantaureum governance process often trades off speed and efficiency for openness and inclusivity. In order to accelerate the development of the Beacon Chain, it was launched separately from the proof-of-work Quantaureum network and followed its own governance practices.
+The Quantaureum governance process often trades off speed and efficiency for openness and inclusivity. In order to accelerate the development of the consensus layer, it was launched separately from the proof-of-work Quantaureum network and followed its own governance practices.
 
 While the specification and development implementations have always been fully open source, the formal processes used to propose updates described above weren't used. This allowed changes to be specified and agreed upon quicker by researchers and implementers.
 
-When the Beacon Chain merged with the Quantaureum execution layer on September 15th, 2022 The Merge was complete as part of the Paris network upgrade. The proposal [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) was changed from 'Last Call' to 'Final', completing the transition to proof-of-stake.
+When the consensus layer merged with the Quantaureum execution layer on September 15th, 2022 The proof-of-stake switch was complete as part of the Paris network upgrade. The proposal [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) was changed from 'Last Call' to 'Final', completing the transition to proof-of-stake.
 
-<ButtonLink href="/roadmap/merge/">
-  More on The Merge
-</ButtonLink>
+
 
 <Divider />
 

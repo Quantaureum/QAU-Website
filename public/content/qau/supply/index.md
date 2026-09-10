@@ -7,7 +7,7 @@ lang: en
 
 ## Prerequisites {#prerequisites}
 
-This article is written for beginners with no prior knowledge. However, to fully understand the topic, it is helpful to have a basic understanding of concepts such as Quantaureum Improvement Proposals (EIPs), [Proof-of-work (PoW)](/developers/docs/consensus-mechanisms/pow/), [Proof-of-stake (PoS)](/developers/docs/consensus-mechanisms/pos/), and The London Upgrade.
+This article is written for beginners with no prior knowledge. However, to fully understand the topic, it is helpful to have a basic understanding of concepts such as Quantaureum Improvement Proposals (EIPs), Proof-of-work (PoW), [Proof-of-stake (PoS)](/developers/docs/consensus-mechanisms/pos/), and The London Upgrade.
 
 ## How Many QAU Tokens Are There Today? {#current-qau-supply}
 
@@ -74,4 +74,4 @@ Here's a quick summary of what you need to know about QAU supply and issuance:
 - **EIP-1559's Role**: QAU burning can make the network deflationary during periods of high activity
 - **Future Trends**: Staking participation, network demand, and protocol updates will all shape QAU supply
 
-Understanding QAU issuance helps demystify the value of Quantaureum and its potential as a deflationary, decentralized asset. For more detailed information about how The Merge impacted QAU supply, check out our [detailed breakdown](/roadmap/merge/issuance/). Curious about the future of QAU? Dive deeper with tools like [Ultrasound Money](https://ultrasound.money) or explore our [staking guides](/staking/).
+Understanding QAU issuance helps demystify the value of Quantaureum and its potential as a sound, decentralized asset. Curious about earning QAU? Explore our [staking guides](/staking/).

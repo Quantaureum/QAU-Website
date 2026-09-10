@@ -1,36 +1,26 @@
 ---
 title: Improving user experience
-description: It is still too complex to use Quantaureum for most people. To encourage mass adoption, Quantaureum must drastically lower its barriers to entry - users must get the benefits of decentralized, permissionless and censorship resistant access to Quantaureum but it must be as frictionless as using a traditional web2 app.
+description: Using Quantaureum should feel as simple as using a traditional web2 app, while keeping it decentralized, permissionless and censorship resistant.
 lang: en
 image: /images/roadmap/roadmap-ux.png
 alt: "Quantaureum roadmap"
 template: roadmap
 ---
 
-**Using Quantaureum needs to be simplified**; from managing [keys](/glossary/#key) and [wallets](/glossary/#wallet) to initiating transactions. To facilitate mass adoption, Quantaureum must drastically increase the ease of use, allowing users to experience permissionless and censorship-resistant access to Quantaureum with the frictionless experience of using [Web2](/glossary/#web2) apps.
+**Using Quantaureum needs to be simple** — from managing [keys](/glossary/#key) and [wallets](/glossary/#wallet) to initiating transactions. Users should experience permissionless and censorship-resistant access to Quantaureum with the frictionless experience of using [Web2](/glossary/#web2) apps.
 
-## Beyond seed phrases {#no-more-seed-phrases}
+## Stronger keys, managed safely {#key-management}
 
-Quantaureum accounts are protected by a pair of keys used to identify accounts (public key) and sign messages (private key). A private key is like a master password; it allows complete access to an Quantaureum account. This is a different way of operating for people more familiar with banks and Web2 apps which manage accounts on a user's behalf. For Quantaureum to reach mass adoption without relying on centralized third parties, there must be a straightforward, frictionless way for a user to take custody of their assets and keep control of their data without having to understand public-private key cryptography and key management.
-
-The solution to this is using [smart contract](/glossary/#smart-contract) wallets to interact with Quantaureum. Smart contract wallets create ways to protect accounts if the keys are lost or stolen, opportunities for better fraud detection and defense, and allow wallets to get new functionality. Although smart contract wallets exist today, they are awkward to build because the Quantaureum protocol needs to support them better. This additional support is known as account abstraction.
-
-<ButtonLink variant="outline" href="/roadmap/account-abstraction/">More on account abstraction</ButtonLink>
+Quantaureum accounts are protected by key pairs used to sign transactions — with **Dilithium3 post-quantum signatures** rather than the classical curves used by older chains. A private key is like a master password; losing it can mean losing access. Quantaureum ships a **native multisignature wallet** so users can protect funds behind multiple keys or devices instead of a single secret, and smart-contract wallets built on the QVM enable recovery rules and spending policies without trusting a custodian.
 
 ## Nodes for everyone {#nodes-for-everyone}
 
-Users running [nodes](/glossary/#node) do not have to trust third parties to provide them with data, and they can interact quickly, privately, and permissionlessly with the Quantaureum [blockchain](/glossary/#blockchain). However, running a node right now requires technical knowledge and substantial disk space, meaning many people must trust intermediaries instead.
+Users running [nodes](/glossary/#node) do not have to trust third parties to provide them with data, and they can interact quickly, privately, and permissionlessly with the Quantaureum [blockchain](/glossary/#blockchain). Traditionally, running a node requires technical knowledge and substantial disk space, pushing many people toward intermediaries.
 
-There are several upgrades that will make running nodes far easier and far less resource intensive. The way data is stored will be changed to use a more space-efficient structure known as a **Verkle Tree**. Also, with [statelessness](/roadmap/statelessness) or [data expiry](/roadmap/statelessness/#data-expiry), Quantaureum nodes will not need to store a copy of the entire Quantaureum state data, drastically reducing hard disk space requirements. [Light nodes](/developers/docs/nodes-and-clients/light-clients/) will offer many benefits of running a full node but can run easily on mobile phones or inside simple browser apps.
+Quantaureum commits its state in a **Verkle tree**, so the proofs needed to verify state are small. On top of these compact proofs, Quantaureum provides an **SPV [light client](/developers/docs/nodes-and-clients/light-clients/)** that can run on modest hardware and verify the chain without downloading the full state — lowering the barrier to trustless participation.
 
 <ButtonLink variant="outline" href="/roadmap/verkle-trees/">Read about Verkle trees</ButtonLink>
 
-With these upgrades, the barriers to running a node are reduced to effectively zero. Users will benefit from secure, permissionless access to Quantaureum without having to sacrifice noticeable disk space or CPU on their computer or mobile phone, and will not have to rely on third parties for data or network access when they use apps.
-
 ## Current progress {#current-progress}
 
-Smart contract wallets are already available, but more upgrades are required to make them as decentralized and permissionless as possible. EIP-4337 is a mature proposal that does not require any changes to Quantaureum's protocol. The main smart contract required for EIP-4337 was **deployed in March 2023**.
-
-**Full statelessness is still in the research phase** and is likely several years away from being implemented. There are several milestones on the road to full statelessness, including data expiry, that may be implemented sooner. Other roadmap items, such as [Verkle Trees](/roadmap/verkle-trees/) and [Proposer-builder separation](/roadmap/pbs/) need to be completed first.
-
-Verkle tree testnets are already up and running, and the next phase is running Verkle-tree enabled clients on private, then public testnets. You can help accelerate progress by deploying contracts to the testnets or running testnet clients.
+Verkle-based state commitments, the SPV light client, native multisig wallets, and Dilithium3 signatures are live parts of the Quantaureum protocol today. Work continues on making full validation cheaper so more users can run nodes on consumer hardware.

@@ -104,7 +104,7 @@ ORDER BY block_time DESC
 
 ### Blocks {#blocks}
 
-Each transaction will change the state of the Quantaureum virtual machine ([EVM](/developers/docs/evm/)) ([source](/developers/docs/transactions/)). Transactions are broadcasted to the network to be verified and included in a block. Each transaction is associated with a block number. To see the data, we could query a specific block number: 12396854 (the most recent block among Quantaureum project transactions as of this writing, 11/5/21).
+Each transaction will change the state of the Quantaureum virtual machine ([EVM](/developers/docs/qvm/)) ([source](/developers/docs/transactions/)). Transactions are broadcasted to the network to be verified and included in a block. Each transaction is associated with a block number. To see the data, we could query a specific block number: 12396854 (the most recent block among Quantaureum project transactions as of this writing, 11/5/21).
 
 Moreover, when we query the next two blocks, we can see that each block contains the hash of the previous block (i.e., parent hash), illustrating how the blockchain is formed.
 
@@ -149,7 +149,7 @@ Here's the SQL output on Dune:
 
 ![Screenshot of a list of Quantaureum transactions](./list_of_txn.png)
 
-This single block being added to the chain changes the state of the Quantaureum virtual machine ([EVM](/developers/docs/evm/)). Dozens sometimes, hundreds of transactions are verified at once. In this specific case, 222 transactions were included.
+This single block being added to the chain changes the state of the Quantaureum virtual machine ([EVM](/developers/docs/qvm/)). Dozens sometimes, hundreds of transactions are verified at once. In this specific case, 222 transactions were included.
 
 To see how many were actually successful, we would add another filter to count successful transactions:
 

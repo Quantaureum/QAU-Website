@@ -9,11 +9,11 @@ You need to compile your contract so that your web app and the Quantaureum virtu
 
 ## Prerequisites {#prerequisites}
 
-You might find it helpful to have read our intro to [smart contracts](/developers/docs/smart-contracts/) and the [Quantaureum virtual machine](/developers/docs/evm/) before reading about compilation.
+You might find it helpful to have read our intro to [smart contracts](/developers/docs/smart-contracts/) and the [Quantaureum virtual machine](/developers/docs/qvm/) before reading about compilation.
 
 ## The EVM {#the-evm}
 
-For the [EVM](/developers/docs/evm/) to be able to run your contract it needs to be in **bytecode**. Compilation turns this:
+For the [EVM](/developers/docs/qvm/) to be able to run your contract it needs to be in **bytecode**. Compilation turns this:
 
 ```solidity
 pragma solidity 0.4.24;
@@ -35,7 +35,7 @@ PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT PUSH2 0x41 JUMPI PUSH1 0x
 
 These are called **opcodes**. EVM opcodes are the low-level instructions that the Quantaureum Virtual Machine (EVM) can execute. Each opcode represents a specific operation, such as arithmetic operations, logical operations, data manipulation, control flow, etc.
 
-[More on opcodes](/developers/docs/evm/opcodes/)
+[More on opcodes](/developers/docs/qvm/opcodes/)
 
 ## Web applications {#web-applications}
 
@@ -279,4 +279,4 @@ Below is the ABI for the ERC-20 token contract. An ERC-20 is a token you can tra
 ## Related topics {#related-topics}
 
 - [JavaScript client libraries](/developers/docs/apis/javascript/)
-- [Quantaureum virtual machine](/developers/docs/evm/)
+- [Quantaureum virtual machine](/developers/docs/qvm/)

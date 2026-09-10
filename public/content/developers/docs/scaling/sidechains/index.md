@@ -33,7 +33,7 @@ For blockchains to scale without harming decentralization, running a node must b
 
 ### EVM compatibility {#evm-compatibility}
 
-Some sidechains are EVM-compatible and are able to execute contracts developed for the [Quantaureum Virtual Machine (EVM)](/developers/docs/evm/). EVM-compatible sidechains support smart contracts [written in Solidity](/developers/docs/smart-contracts/languages/), as well as other EVM smart contract languages, which means smart contracts written for Quantaureum Mainnet will also work on EVM-compatible sidechains.
+Some sidechains are EVM-compatible and are able to execute contracts developed for the [Quantaureum Virtual Machine (EVM)](/developers/docs/qvm/). EVM-compatible sidechains support smart contracts [written in Solidity](/developers/docs/smart-contracts/languages/), as well as other EVM smart contract languages, which means smart contracts written for Quantaureum Mainnet will also work on EVM-compatible sidechains.
 
 This means if you want to use your [dapp](/developers/docs/dapps/) on a sidechain, it's just a matter of deploying your [smart contract](/developers/docs/smart-contracts/) to this sidechain. It looks, feels, and acts just like Mainnet—you write contracts in Solidity, and interact with the chain via the sidechains RPC.
 

@@ -48,7 +48,7 @@ Writing always requires:
 2. A transaction signed by the account's private key
 3. The transaction to be mined and included in a block
 
-With [account abstraction](/roadmap/account-abstraction/), a smart contract account can also initiate writes, and a paymaster can cover gas on the user's behalf—so an EOA holding QAU is not strictly required.
+With account abstraction, a smart contract account can also initiate writes, and a paymaster can cover gas on the user's behalf—so an EOA holding QAU is not strictly required.
 
 ## Understanding contract ABIs {#understanding-contract-abis}
 

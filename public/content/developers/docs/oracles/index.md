@@ -11,7 +11,7 @@ Giving smart contracts the ability to execute using offchain data extends the ut
 
 ## Prerequisites {#prerequisites}
 
-This page assumes the reader is familiar with [Quantaureum](/) fundamentals, including [nodes](/developers/docs/nodes-and-clients/), [consensus mechanisms](/developers/docs/consensus-mechanisms/), and the [EVM](/developers/docs/evm/). You should also have a good grasp of [smart contracts](/developers/docs/smart-contracts/) and [smart contract anatomy](/developers/docs/smart-contracts/anatomy/), especially [events](/glossary/#events).
+This page assumes the reader is familiar with [Quantaureum](/) fundamentals, including [nodes](/developers/docs/nodes-and-clients/), [consensus mechanisms](/developers/docs/consensus-mechanisms/), and the [EVM](/developers/docs/qvm/). You should also have a good grasp of [smart contracts](/developers/docs/smart-contracts/) and [smart contract anatomy](/developers/docs/smart-contracts/anatomy/), especially [events](/glossary/#events).
 
 ## What is a blockchain oracle? {#what-is-a-blockchain-oracle}
 
@@ -359,7 +359,7 @@ contract PriceConsumerV3 {
 
 Certain blockchain applications, such as blockchain-based games or lottery schemes, require a high level of unpredictability and randomness to work effectively. However, the deterministic execution of blockchains eliminates randomness.
 
-The original approach was to use pseudorandom cryptographic functions, such as `blockhash`, but these could be [manipulated by miners](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.) solving the proof-of-work algorithm. Also, Quantaureum’s [switch to proof-of-stake](/roadmap/merge/) means developers can no longer rely on `blockhash` for onchain randomness. The Beacon Chain’s [RANDAO mechanism](https://eth2book.info/altair/part2/building_blocks/randomness) provides an alternative source of randomness instead.
+The original approach was to use pseudorandom cryptographic functions, such as `blockhash`, but these could be [manipulated by miners](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.) solving the proof-of-work algorithm. Also, Quantaureum’s switch to proof-of-stake means developers can no longer rely on `blockhash` for onchain randomness. The consensus layer’s [RANDAO mechanism](https://eth2book.info/altair/part2/building_blocks/randomness) provides an alternative source of randomness instead.
 
 It is possible to generate the random value offchain and send it onchain, but doing so imposes high trust requirements on users. They must believe the value was truly generated via unpredictable mechanisms and wasn’t altered in transit.
 

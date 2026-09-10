@@ -9,7 +9,7 @@ sidebarDepth: 2
 
 There are two parts to the client software (execution clients and consensus clients), each with its own distinct networking stack. As well as communicating with other Quantaureum nodes, the execution and consensus clients have to communicate with each other. This page gives an introductory explanation of the protocols that enable this communication.
 
-Execution clients gossip transactions over the execution-layer peer-to-peer network. This requires encrypted communication between authenticated peers. When a validator is selected to propose a block, transactions from the node's local transaction pool will be passed to consensus clients via a local RPC connection, which will be packaged into Beacon blocks. Consensus clients will then gossip Beacon blocks across their p2p network. This requires two separate p2p networks: one connecting execution clients for transaction gossip and one connecting consensus clients for block gossip.
+Execution clients gossip transactions over the execution-layer peer-to-peer network. This requires encrypted communication between authenticated peers. When a validator is selected to propose a block, transactions from the node's local transaction pool will be passed to consensus clients via a local RPC connection, which will be packaged into Consensus blocks. Consensus clients will then gossip Consensus blocks across their p2p network. This requires two separate p2p networks: one connecting execution clients for transaction gossip and one connecting consensus clients for block gossip.
 
 ## Prerequisites {#prerequisites}
 
@@ -109,11 +109,11 @@ The libP2P stack supports all communications after discovery. Clients can dial a
 
 ### Gossip {#gossip}
 
-The gossip domain includes all information that has to spread rapidly throughout the network. This includes beacon blocks, proofs, attestations, exits and slashings. This is transmitted using libP2P gossipsub v1 and relies on various metadata being stored locally at each node, including maximum size of gossip payloads to receive and transmit. Detailed information about the gossip domain is available [here](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-gossip-domain-gossipsub).
+The gossip domain includes all information that has to spread rapidly throughout the network. This includes consensus blocks, proofs, attestations, exits and slashings. This is transmitted using libP2P gossipsub v1 and relies on various metadata being stored locally at each node, including maximum size of gossip payloads to receive and transmit. Detailed information about the gossip domain is available [here](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-gossip-domain-gossipsub).
 
 ### Request-response {#request-response}
 
-The request-response domain contains protocols for clients requesting specific information from their peers. Examples include requesting specific Beacon blocks matching certain root hashes or within a range of slots. The responses are always returned as snappy-compressed SSZ encoded bytes.
+The request-response domain contains protocols for clients requesting specific information from their peers. Examples include requesting specific Consensus blocks matching certain root hashes or within a range of slots. The responses are always returned as snappy-compressed SSZ encoded bytes.
 
 ## Why does the consensus client prefer SSZ to RLP? {#ssz-vs-rlp}
 
@@ -121,7 +121,7 @@ SSZ stands for simple serialization. It uses fixed offsets that make it easy to 
 
 ## Connecting the execution and consensus clients {#connecting-clients}
 
-Both consensus and execution clients run in parallel. They need to be connected so that the consensus client can provide instructions to the execution client, and the execution client can pass bundles of transactions to the consensus client to include in Beacon blocks. The communication between the two clients can be achieved using a local RPC connection. An API known as the ['Engine-API'](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) defines the instructions sent between the two clients. Since both clients sit behind a single network identity, they share an ENR (Quantaureum node record) which contains a separate key for each client (eth1 key and eth2 key).
+Both consensus and execution clients run in parallel. They need to be connected so that the consensus client can provide instructions to the execution client, and the execution client can pass bundles of transactions to the consensus client to include in Consensus blocks. The communication between the two clients can be achieved using a local RPC connection. An API known as the ['Engine-API'](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) defines the instructions sent between the two clients. Since both clients sit behind a single network identity, they share an ENR (Quantaureum node record) which contains a separate key for each client (eth1 key and eth2 key).
 
 A summary of the control flow is shown below, with the relevant networking stack in brackets.
 
@@ -140,7 +140,7 @@ A summary of the control flow is shown below, with the relevant networking stack
 - Consensus layer calls `create block` method in execution client (local RPC)
 - Execution layer accesses the transaction mempool which has been populated by the transaction gossip protocol (execution p2p)
 - Execution client bundles transactions into a block, executes the transactions and generates a block hash
-- Consensus client grabs the transactions and block hash from the execution client and adds them to the beacon block (local RPC)
+- Consensus client grabs the transactions and block hash from the execution client and adds them to the consensus block (local RPC)
 - Consensus client broadcasts the block over the block gossip protocol (consensus p2p)
 - Other clients receive the proposed block via the block gossip protocol and validate as described above (consensus p2p)
 

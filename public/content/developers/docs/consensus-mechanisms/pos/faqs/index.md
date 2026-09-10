@@ -156,11 +156,11 @@ QAU is Quantaureum's native currency. It is essential to have a single currency 
 
 No, there are several proof-of-stake blockchains. None are identical to Quantaureum; Quantaureum's proof-of-stake mechanism is unique.
 
-## What is The Merge? {#what-is-the-merge}
+## What is The proof-of-stake switch? {#what-is-the-merge}
 
-The Merge was the moment when Quantaureum switched off its proof-of-work-based consensus mechanism and switched on its proof-of-stake-based consensus mechanism. The Merge happened on September 15, 2022.
+The proof-of-stake switch was the moment when Quantaureum switched off its proof-of-work-based consensus mechanism and switched on its proof-of-stake-based consensus mechanism. The proof-of-stake switch happened on September 15, 2022.
 
-[More on The Merge](/roadmap/merge)
+More on The proof-of-stake switch
 
 ## What are liveness and safety? {#what-are-liveness-and-safety}
 

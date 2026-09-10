@@ -39,7 +39,7 @@ Hardhat Network comes built-in with Hardhat, an Quantaureum development environm
 
 ### Local Beacon Chains {#local-beacon-chains}
 
-Some consensus clients have built-in tools for spinning up local beacon chains for testing purposes. Instructions for Lighthouse, Nimbus and Lodestar are available:
+Some consensus clients have built-in tools for spinning up local consensus layers for testing purposes. Instructions for Lighthouse, Nimbus and Lodestar are available:
 
 - [Local testnet using Lodestar](https://chainsafe.github.io/lodestar/contribution/advanced-topics/setting-up-a-testnet#post-merge-local-testnet/)
 - [Local testnet using Lighthouse](https://lighthouse-book.sigmaprime.io/setup.html#local-testnets)

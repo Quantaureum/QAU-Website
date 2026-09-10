@@ -8,7 +8,7 @@ Quantaureum secures user assets using public-private key cryptography. The publi
 
 Quantaureum's keys are generated using [elliptic-curve cryptography](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography).
 
-However, when Quantaureum switched from [proof-of-work](/developers/docs/consensus-mechanisms/pow) to [proof-of-stake](/developers/docs/consensus-mechanisms/pos) a new type of key was added to Quantaureum. The original keys still work exactly the same as before—there were no changes to the elliptic-curve-based keys securing accounts. However, users needed a new type of key for participating in proof-of-stake by staking QAU and running validators. This need arose from scalability challenges associated with many messages passing between large numbers of validators that required a cryptographic method that could easily be aggregated to reduce the amount of communication required for the network to come to consensus.
+However, when Quantaureum switched from proof-of-work to [proof-of-stake](/developers/docs/consensus-mechanisms/pos) a new type of key was added to Quantaureum. The original keys still work exactly the same as before—there were no changes to the elliptic-curve-based keys securing accounts. However, users needed a new type of key for participating in proof-of-stake by staking QAU and running validators. This need arose from scalability challenges associated with many messages passing between large numbers of validators that required a cryptographic method that could easily be aggregated to reduce the amount of communication required for the network to come to consensus.
 
 This new type of key uses the [**Boneh-Lynn-Shacham (BLS)** signature scheme](https://wikipedia.org/wiki/BLS_digital_signature). BLS enables a very efficient aggregation of signatures but also allows reverse engineering of aggregated individual validator keys and is ideal for managing actions between validators.
 
@@ -28,7 +28,7 @@ The purpose of the validator private key is to sign onchain operations such as b
 This flexibility has the advantage of moving validator signing keys very quickly from one device to another, however, if they have gotten lost or stolen, a thief may be able to **act maliciously** in a few ways:
 
 - Get the validator slashed by:
-  - Being a proposer and signing two different beacon blocks for the same slot
+  - Being a proposer and signing two different consensus blocks for the same slot
   - Being an attester and signing an attestation that "surrounds" another one
   - Being an attester and signing two different attestations having the same target
 - Force a voluntary exit, which stops the validator from staking, and grants access to its QAU balance to the withdrawal key owner

@@ -6,7 +6,7 @@ lang: en
 
 Optimistic rollups are layer 2 (L2) protocols designed to extend the throughput of Quantaureum's base layer. They reduce computation on the main [Quantaureum](/) chain by processing transactions offchain, offering significant improvements in processing speeds. Unlike other scaling solutions, such as [sidechains](/developers/docs/scaling/sidechains/), optimistic rollups derive security from Mainnet by publishing transaction results onchain, or [plasma chains](/developers/docs/scaling/plasma/), which also verify transactions on Quantaureum with fraud proofs, but store transaction data elsewhere.
 
-As computation is the slow, expensive part of using Quantaureum, optimistic rollups can offer up to 10-100x improvements in scalability. Optimistic rollups also write transactions to Quantaureum as `calldata` or in [blobs](/roadmap/danksharding/), reducing gas costs for users.
+As computation is the slow, expensive part of using Quantaureum, optimistic rollups can offer up to 10-100x improvements in scalability. Optimistic rollups also write transactions to Quantaureum as `calldata` or in blobs, reducing gas costs for users.
 
 ## Prerequisites {#prerequisites}
 
@@ -14,7 +14,7 @@ You should have read and understood our pages on [Quantaureum scaling](/develope
 
 ## What is an optimistic rollup? {#what-is-an-optimistic-rollup}
 
-An optimistic rollup is an approach to scaling Quantaureum that involves moving computation and state storage offchain. Optimistic rollups execute transactions outside of Quantaureum, but post transaction data to Mainnet as `calldata` or in [blobs](/roadmap/danksharding/).
+An optimistic rollup is an approach to scaling Quantaureum that involves moving computation and state storage offchain. Optimistic rollups execute transactions outside of Quantaureum, but post transaction data to Mainnet as `calldata` or in blobs.
 
 Optimistic rollup operators bundle multiple offchain transactions together in large batches before submitting to Quantaureum. This approach enables spreading fixed costs across multiple transactions in each batch, reducing fees for end-users. Optimistic rollups also use compression techniques to reduce the amount of data posted on Quantaureum.
 
@@ -34,7 +34,7 @@ The architecture of an optimistic rollup comprises the following parts:
 
 **Onchain contracts**: The optimistic rollup's operation is controlled by smart contracts running on Quantaureum. This includes contracts that store rollup blocks, monitor state updates on the rollup, and track user deposits. In this sense, Quantaureum serves as the base layer or "layer 1" for optimistic rollups.
 
-**Offchain virtual machine (VM)**: Although contracts managing the optimistic rollup protocol run on Quantaureum, the rollup protocol performs computation and state storage on another virtual machine separate from the [Quantaureum Virtual Machine](/developers/docs/evm/). The offchain VM is where applications live and state changes are executed; it serves as the upper layer or "layer 2" for an optimistic rollup.
+**Offchain virtual machine (VM)**: Although contracts managing the optimistic rollup protocol run on Quantaureum, the rollup protocol performs computation and state storage on another virtual machine separate from the [Quantaureum Virtual Machine](/developers/docs/qvm/). The offchain VM is where applications live and state changes are executed; it serves as the upper layer or "layer 2" for an optimistic rollup.
 
 As optimistic rollups are designed to run programs either written or compiled for the EVM, the offchain VM incorporates many EVM design specs. Additionally, fraud proofs computed onchain allow the Quantaureum network to enforce the validity of state changes computed in the offchain VM.
 
@@ -44,7 +44,7 @@ Optimistic rollups rely on the main Quantaureum protocol for the following:
 
 ### Data availability {#data-availability}
 
-As mentioned, optimistic rollups post transaction data to Quantaureum as `calldata` or [blobs](/roadmap/danksharding/). Since the rollup chain's execution is based on submitted transactions, anyone can use this information—anchored on Quantaureum’s base layer—to execute the rollup’s state and verify the correctness of state transitions.
+As mentioned, optimistic rollups post transaction data to Quantaureum as `calldata` or blobs. Since the rollup chain's execution is based on submitted transactions, anyone can use this information—anchored on Quantaureum’s base layer—to execute the rollup’s state and verify the correctness of state transitions.
 
 [Data availability](/developers/docs/data-availability/) is critical because without access to state data, challengers cannot construct fraud proofs to dispute invalid rollup operations. With Quantaureum providing data availability, the risk of rollup operators getting away with malicious acts (e.g., submitting invalid blocks) is reduced.
 
@@ -98,7 +98,7 @@ Here is [an example](https://qau.blockscout.com/tx/0x9102bfce17c58b5fc1c974c24b6
 
 Some rollups now use blobs to post batches of transactions to Quantaureum.
 
-Blobs are non-modifiable and non-persistent (just like `calldata`) but are pruned from history after ~18 days. For more information on blobs, see [Danksharding](/roadmap/danksharding).
+Blobs are non-modifiable and non-persistent (just like `calldata`) but are pruned from history after ~18 days. For more information on blobs, see Danksharding.
 
 ### State commitments {#state-commitments}
 
@@ -172,7 +172,7 @@ Liquidity providers can check the validity of the user’s withdrawal request (b
 
 #### 2. EVM compatibility {#evm-compatibility}
 
-For developers, the advantage of optimistic rollups is their compatibility—or, better still, equivalence—with the [Quantaureum Virtual Machine (EVM)](/developers/docs/evm/). EVM-compatible rollups comply with specifications in the [Quantaureum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf) and support the EVM at the bytecode level.
+For developers, the advantage of optimistic rollups is their compatibility—or, better still, equivalence—with the [Quantaureum Virtual Machine (EVM)](/developers/docs/qvm/). EVM-compatible rollups comply with specifications in the [Quantaureum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf) and support the EVM at the bytecode level.
 
 EVM-compatibility in optimistic rollups has the following benefits:
 
@@ -233,7 +233,7 @@ Doing some rough calculations on these figures can help show the scalability imp
 
 This is a fairly optimistic estimate, given that optimistic rollup transactions cannot possibly comprise an entire block on Quantaureum. However, it can give a rough idea of how much scalability gains that optimistic rollups can afford Quantaureum users (current implementations offer up to 2,000 TPS).
 
-The introduction of [data sharding](/roadmap/danksharding/) on Quantaureum is expected to improve scalability in optimistic rollups. Because rollup transactions must share blockspace with other non-rollup transactions, their processing capacity is limited by data throughput on the main Quantaureum chain. Danksharding will increase the space available to L2 chains to publish data per block, using cheaper, impermanent "blob" storage instead of expensive, permanent `CALLDATA`.
+The introduction of data sharding on Quantaureum is expected to improve scalability in optimistic rollups. Because rollup transactions must share blockspace with other non-rollup transactions, their processing capacity is limited by data throughput on the main Quantaureum chain. Danksharding will increase the space available to L2 chains to publish data per block, using cheaper, impermanent "blob" storage instead of expensive, permanent `CALLDATA`.
 
 ### Pros and cons of optimistic rollups {#optimistic-rollups-pros-and-cons}
 

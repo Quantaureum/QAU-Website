@@ -649,7 +649,7 @@ Check out Solidity and Vyper's documentation for a more complete overview of sma
 ## Related topics {#related-topics}
 
 - [Smart contracts](/developers/docs/smart-contracts/)
-- [Quantaureum Virtual Machine](/developers/docs/evm/)
+- [Quantaureum Virtual Machine](/developers/docs/qvm/)
 
 ## Related tutorials {#related-tutorials}
 

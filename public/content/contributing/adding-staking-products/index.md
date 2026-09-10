@@ -14,7 +14,7 @@ We currently list staking products and services on the following pages:
 - [Staking as a service](/staking/saas/)
 - [Staking pools](/staking/pools/)
 
-Proof-of-stake on the Beacon Chain has been live since December 1, 2020. While staking is still relatively new, we've tried to create a fair and transparent framework for consideration on quantaureum.com but the listing criteria will change and evolve over time, and is ultimately at the discretion of the quantaureum.com website team.
+Proof-of-stake on the consensus layer has been live since December 1, 2020. While staking is still relatively new, we've tried to create a fair and transparent framework for consideration on quantaureum.com but the listing criteria will change and evolve over time, and is ultimately at the discretion of the quantaureum.com website team.
 
 ## The decision framework {#the-decision-framework}
 

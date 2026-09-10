@@ -1,22 +1,22 @@
 ---
 title: Verkle trees
-description: A high level description of Verkle trees and how they will be used to upgrade Quantaureum
+description: A high level description of Verkle trees and how Quantaureum uses them for compact state proofs
 lang: en
 template: roadmap
 summaryPoints:
   - Discover what Verkle trees are
-  - Read why Verkle Trees are a useful upgrade for Quantaureum
+  - Read why Verkle trees keep Quantaureum state proofs small
 ---
 
-Verkle trees (a portmanteau of "Vector commitment" and "Merkle Trees") are a data structure that can be used to upgrade [Quantaureum](/) nodes so that they can stop storing large amounts of state data without losing the ability to validate blocks.
+Verkle trees (a portmanteau of "Vector commitment" and "Merkle Trees") are the data structure Quantaureum uses to commit its state. Because Verkle proofs are much smaller than Merkle proofs, they enable light clients and lower the cost of validating blocks.
 
 ## Statelessness {#statelessness}
 
-Verkle trees are a critical step on the path to stateless Quantaureum clients. Stateless clients are ones that do not have to store the entire state database in order to validate incoming blocks. Instead of using their own local copy of Quantaureum's state to verify blocks, stateless clients use a "witness" to the state data that arrives with the block. A witness is a collection of individual pieces of the state data that are required to execute a particular set of transactions, and a cryptographic proof that the witness is really part of the full data. The witness is used _instead_ of the state database. For this to work, the witnesses need to be very small, so that they can be safely broadcast across the network in time for validators to process them within a 12 second slot. The current state data structure is not suitable because witnesses are too large. Verkle trees solve this problem by enabling small witnesses, removing one of the main barriers to stateless clients.
+Verkle trees let Quantaureum clients verify state without replaying it from a huge local database. A light client can check a "witness" to the state data that arrives with the block. Instead of using their own local copy of Quantaureum's state to verify blocks, stateless clients use a "witness" to the state data that arrives with the block. A witness is a collection of individual pieces of the state data that are required to execute a particular set of transactions, and a cryptographic proof that the witness is really part of the full data. The witness is used _instead_ of the state database. For this to work, the witnesses need to be very small, so that they can be safely broadcast across the network in time for validators to process them within a 12 second slot. The current state data structure is not suitable because witnesses are too large. Verkle trees solve this problem by enabling small witnesses, removing one of the main barriers to stateless clients.
 
-<ExpandableCard title="Why do we want stateless clients?" eventCategory="/roadmap/verkle-trees" eventName="clicked why do we want stateless clients?">
+<ExpandableCard title="Why do Verkle trees matter for Quantaureum?" eventCategory="/roadmap/verkle-trees" eventName="clicked why do verkle trees matter">
 
-Quantaureum clients currently use a data structure known as a Patricia Merkle Trie to store its state data. Information about individual accounts are stored as leaves on the trie and pairs of leaves are hashed repeatedly until only a single hash remains. This final hash is known as the "root". To verify blocks, Quantaureum clients execute all the transactions in a block and update their local state trie. The block is considered valid if the root of the local tree is identical to the one provided by the block proposer, because any differences in the computation done by the block proposer and the validating node would cause the root hash to be completely different. The problem with this is that verifying the blockchain requires each client to store the whole state trie for the head block and several historical blocks (the default in Geth is to keep state data for 128 blocks behind the head). This requires clients to have access to a large amount of disk space, which is a barrier to running full nodes on cheap, low power hardware. A solution to this is to update the state trie to a more efficient structure (Verkle tree) that can be summarized using a small "witness" to the data that can be shared instead of the full state data. Reformatting the state data into a Verkle tree is a stepping stone for moving to stateless clients.
+Quantaureum previously inherited the Merkle Patricia style of state commitments, where proving one account requires all the sibling hashes along an entire branch. With Verkle trees, a single short commitment proves many values at once, so Quantaureum clients can keep up with the chain using far less storage and bandwidth. This is what makes the Quantaureum SPV light client practical: it tracks a Verkle state commitment and verifies compact proofs as blocks arrive.
 
 </ExpandableCard>
 
@@ -42,22 +42,16 @@ Verkle trees are `(key,value)` pairs where the keys are 32-byte elements compose
 
 ![Diagram of a Verkle tree data structure](./verkle.png)
 
-[Read more about the structure of Verkle trees](https://quantaureum.com)
+
 
 ## Current progress {#current-progress}
 
-Verkle tree testnets are already up and running, but there are still substantial outstanding updates to clients that are required to support Verkle trees. You can help accelerate progress by deploying contracts to the testnets or running testnet clients.
+Verkle-tree state commitments are live on Quantaureum today. The SPV light client uses Verkle proofs to verify state without a full node, and block data availability is backed by erasure coding with FRI commitments. Work continues on proof aggregation and faster witness generation.
 
 [Watch Guillaume Ballet explain the Condrieu Verkle testnet](https://www.youtube.com/watch?v=cPLHFBeC0Vg) (note that the Condrieu testnet was proof-of-work and has now been superseded by the Verkle Gen Devnet 6 testnet).
 
 ## Further reading {#further-reading}
 
 - [Verkle Trees for Statelessness](https://verkle.info/)
-- [Dankrad Feist explain Verkle trees on PEEPanEIP](https://www.youtube.com/watch?v=RGJOQHzg3UQ)
 - [Verkle Trees For The Rest Of Us](https://web.archive.org/web/20250124132255/https://research.2077.xyz/verkle-trees)
 - [Anatomy of A Verkle Proof](https://ihagopian.com/posts/anatomy-of-a-verkle-proof)
-- [Guillaume Ballet explain Verkle trees at ETHGlobal](https://www.youtube.com/watch?v=f7bEtX3Z57o)
-- ["How Verkle trees make Quantaureum lean and mean" by Guillaume Ballet at Devcon 6](https://www.youtube.com/watch?v=Q7rStTKwuYs)
-- [Piper Merriam on stateless clients from ETHDenver 2020](https://www.youtube.com/watch?v=0yiZJNciIJ4)
-- [Dankrad Fiest explains Verkle trees and statelessness on Zero Knowledge podcast](https://zeroknowledge.fm/podcast/202/)
-- [Dankrad Feist on Verkle trees](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)

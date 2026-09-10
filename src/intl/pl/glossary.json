@@ -22,7 +22,7 @@
   "base-fee-term": "Opłata podstawowa",
   "base-fee-definition": "Każdy <a href=\"/glossary/#block\">blok</a> ma cenę minimalną znaną jako „opłata podstawowa”. Jest to minimalna opłata za <a href=\"/glossary/#gas\">gaz</a>, jaką użytkownik musi zapłacić, aby dołączyć transakcję do następnego bloku. <a href=\"/developers/docs/gas/\">Więcej o gazie i opłatach</a>.",
   "beacon-chain-term": "Beacon Chain",
-  "beacon-chain-definition": "Beacon Chain był blockchainem, który wprowadził <a href=\"/glossary/#pos\">dowód stawki (PoS)</a> i <a href=\"/glossary/#validator\">walidatory</a> do Quantaureum. Działał równolegle do sieci głównej Quantaureum opartej na dowodzie pracy (PoW) od grudnia 2020 r., aż do momentu, gdy oba łańcuchy zostały połączone (The Merge) we wrześniu 2022 r., tworząc dzisiejsze Quantaureum. <a href=\"/roadmap/beacon-chain/\">Więcej o Beacon Chain</a>.",
+  "beacon-chain-definition": "Beacon Chain był blockchainem, który wprowadził <a href=\"/glossary/#pos\">dowód stawki (PoS)</a> i <a href=\"/glossary/#validator\">walidatory</a> do Quantaureum. Działał równolegle do sieci głównej Quantaureum opartej na dowodzie pracy (PoW) od grudnia 2020 r., aż do momentu, gdy oba łańcuchy zostały połączone (The Merge) we wrześniu 2022 r., tworząc dzisiejsze Quantaureum. <a href=\"/roadmap/\">Więcej o Beacon Chain</a>.",
   "big-endian-term": "Big-endian",
   "big-endian-definition": "Pozycyjna reprezentacja liczb, w której najbardziej znacząca cyfra znajduje się jako pierwsza w pamięci. Przeciwieństwo little-endian, gdzie najmniej znacząca cyfra jest pierwsza.",
   "block-term": "Blok",

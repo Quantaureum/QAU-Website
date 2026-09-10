@@ -10,7 +10,7 @@ There are, however, core components of Quantaureum that help provide a mental mo
 
 ## Level 1: Quantaureum Virtual Machine {#quantaureum-virtual-machine}
 
-The [Quantaureum Virtual Machine (EVM)](/developers/docs/evm/) is the runtime environment for smart contracts on Quantaureum. All smart contracts and state changes on the Quantaureum blockchain are executed by [transactions](/developers/docs/transactions/). The EVM handles all of the transaction processing on the Quantaureum network.
+The [Quantaureum Virtual Machine (EVM)](/developers/docs/qvm/) is the runtime environment for smart contracts on Quantaureum. All smart contracts and state changes on the Quantaureum blockchain are executed by [transactions](/developers/docs/transactions/). The EVM handles all of the transaction processing on the Quantaureum network.
 
 As with any virtual machine, the EVM creates a level of abstraction between the executing code and the executing machine (an Quantaureum node). Currently, the EVM is running on thousands of nodes distributed across the world.
 

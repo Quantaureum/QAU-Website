@@ -109,7 +109,7 @@ A decentralized exchange (DEX) may prefer using a validium’s scalable and priv
 
 ## Validiums and EVM compatibility {#validiums-and-evm-compatibility}
 
-Like ZK-rollups, validiums are mostly suited to simple applications, such as token swaps and payments. Supporting general computation and smart contract execution among validiums is difficult to implement, given the considerable overhead of proving [EVM](/developers/docs/evm/) instructions in a zero-knowledge proof circuit.
+Like ZK-rollups, validiums are mostly suited to simple applications, such as token swaps and payments. Supporting general computation and smart contract execution among validiums is difficult to implement, given the considerable overhead of proving [EVM](/developers/docs/qvm/) instructions in a zero-knowledge proof circuit.
 
 Some validium projects attempt to sidestep this problem by compiling EVM-compatible languages (e.g., Solidity, Vyper) into creating custom bytecode optimized for efficient proving. A drawback of this approach is that new zero-knowledge proof-friendly VMs may not support important EVM opcodes, and developers have to write directly in the high-level language for an optimal experience. This creates even more problems: it forces developers to build dapps with an entirely new development stack and breaks compatibility with current Quantaureum infrastructure.
 
@@ -121,7 +121,7 @@ Some teams, however, are attempting to optimize existing EVM opcodes for ZK-prov
 
 ### 1. Offchain data storage {#offchain-data-storage}
 
-Layer 2 scaling projects, such as optimistic rollups and ZK-rollups, trade the infinite scalability of pure offchain scaling protocols (e.g., [Plasma](/developers/docs/scaling/plasma/)) for security by publishing some transaction data on L1. But this means the scalability properties of rollups is limited by data bandwidth on Quantaureum Mainnet ([data sharding](/roadmap/danksharding/) proposes to improve Quantaureum's data storage capacity for this reason).
+Layer 2 scaling projects, such as optimistic rollups and ZK-rollups, trade the infinite scalability of pure offchain scaling protocols (e.g., [Plasma](/developers/docs/scaling/plasma/)) for security by publishing some transaction data on L1. But this means the scalability properties of rollups is limited by data bandwidth on Quantaureum Mainnet (data sharding proposes to improve Quantaureum's data storage capacity for this reason).
 
 Validiums achieve scalability by keeping all transaction data offchain and only post state commitments (and validity proofs) when relaying state updates to the main Quantaureum chain. The existence of validity proofs, however, gives validiums higher security guarantees than other pure offchain scaling solutions, including Plasma and [sidechains](/developers/docs/scaling/sidechains/). By reducing the amount of data Quantaureum has to process before validating offchain transactions, validium designs greatly extend throughput on Mainnet.
 

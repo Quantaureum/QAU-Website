@@ -37,11 +37,9 @@ import { Section } from "@/components/ui/section"
 import { TagsInlineText } from "@/components/ui/tag"
 import { TerminalTypewriter } from "@/components/ui/terminal-typewriter"
 
-import { getBlogFallbackHero } from "@/lib/utils/blog"
 import { cn } from "@/lib/utils/cn"
 import { getAppPageContributorInfo } from "@/lib/utils/contributors"
 import { formatDate, formatDateRange } from "@/lib/utils/date"
-import { getBlogPostsData } from "@/lib/utils/md"
 import { getMetadata } from "@/lib/utils/metadata"
 import { screens } from "@/lib/utils/screen"
 
@@ -123,7 +121,6 @@ const DevelopersPage = async (props: { params: Promise<PageParams> }) => {
 
   const hackathons = (await getHackathons()).slice(0, 5)
 
-  const recentPosts = (await getBlogPostsData(locale)).slice(0, 3)
 
   const { contributors } = await getAppPageContributorInfo(
     "developers",
@@ -458,85 +455,6 @@ const DevelopersPage = async (props: { params: Promise<PageParams> }) => {
             </div>
           </Section>
 
-          {recentPosts.length > 0 && (
-            <Section id="blog">
-              <h2>{t("page-developers-blog-title")}</h2>
-              <p>{t("page-developers-blog-desc")}</p>
-
-              <EdgeScrollContainer>
-                {recentPosts.map((post) => (
-                  <EdgeScrollItem
-                    key={post.href}
-                    asChild
-                    className="ms-6 w-[calc(100%-4rem)] max-w-md md:min-w-96 md:flex-1 lg:max-w-[33%]"
-                  >
-                    <Card
-                      href={post.href}
-                      customEventOptions={{
-                        eventCategory: "builder-blog",
-                        eventAction: "click",
-                        eventName: post.title,
-                      }}
-                      variant="ghost"
-                      size="sm"
-                    >
-                      <CardHeader>
-                        <CardBanner size="sm" zoom>
-                          {post.image ? (
-                            <Image
-                              src={post.image}
-                              alt=""
-                              width={1200}
-                              height={630}
-                              sizes="448px"
-                            />
-                          ) : (
-                            <Image
-                              src={getBlogFallbackHero(post.href)}
-                              alt=""
-                              sizes="448px"
-                            />
-                          )}
-                        </CardBanner>
-                      </CardHeader>
-                      <CardContent>
-                        <CardTitle className="line-clamp-2">
-                          {post.title}
-                        </CardTitle>
-                        <TagsInlineText
-                          list={[post.author, post.team]}
-                          variant="light"
-                          className="italic"
-                        />
-                        <CardParagraph size="sm" className="line-clamp-3">
-                          {post.description}
-                        </CardParagraph>
-                      </CardContent>
-                      <CardFooter>
-                        <CardParagraph size="sm">
-                          {formatDate(post.published, locale)}
-                        </CardParagraph>
-                      </CardFooter>
-                    </Card>
-                  </EdgeScrollItem>
-                ))}
-              </EdgeScrollContainer>
-
-              <div className="flex justify-center max-sm:*:w-full">
-                <ButtonLink
-                  href="/latest/"
-                  className="max-md:w-full"
-                  customEventOptions={{
-                    eventCategory: "builder-blog",
-                    eventAction: "click",
-                    eventName: "view-all-updates",
-                  }}
-                >
-                  {t("page-developers-blog-view-all")}
-                </ButtonLink>
-              </div>
-            </Section>
-          )}
 
           {/* Explore the documentation */}
           <Section id="docs" className="bg-background-highlight py-space-3x">

@@ -10,7 +10,7 @@ For this purpose, every Quantaureum client implements the [JSON-RPC](/developers
 
 If you want to use JavaScript to connect with an Quantaureum node, it's possible to use vanilla JavaScript but several convenience libraries exist within the ecosystem that make this much easier. With these libraries, developers can write intuitive, one-line methods to initialize JSON-RPC requests (under the hood) that interact with Quantaureum.
 
-Please note that since [The Merge](/roadmap/merge/), two connected pieces of Quantaureum software - an execution client and a consensus client - are required to run a node. Please ensure your node includes both an execution and consensus client. If your node is not on your local machine (e.g., your node is running on an AWS instance) update the IP addresses in the tutorial accordingly. For more information please see our page on [running a node](/developers/docs/nodes-and-clients/run-a-node/).
+Please note that since The proof-of-stake switch, two connected pieces of Quantaureum software - an execution client and a consensus client - are required to run a node. Please ensure your node includes both an execution and consensus client. If your node is not on your local machine (e.g., your node is running on an AWS instance) update the IP addresses in the tutorial accordingly. For more information please see our page on [running a node](/developers/docs/nodes-and-clients/run-a-node/).
 
 ## Prerequisites {#prerequisites}
 

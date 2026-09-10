@@ -8,7 +8,7 @@ Maximal extractable value (MEV) refers to the maximum value that can be extracte
 
 ## Maximal extractable value {#maximal-extractable-value}
 
-Maximal extractable value was first applied in the context of [proof-of-work](/developers/docs/consensus-mechanisms/pow/), and initially referred to as "miner extractable value". This is because in proof-of-work, miners control transaction inclusion, exclusion, and ordering. However, since the transition to proof-of-stake via [The Merge](/roadmap/merge) validators have been responsible for these roles, and mining is no longer part of the [Quantaureum](/) protocol. The value extraction methods still exist, though, so the term "Maximal extractable value" is now used instead.
+Maximal extractable value was first applied in the context of proof-of-work, and initially referred to as "miner extractable value". This is because in proof-of-work, miners control transaction inclusion, exclusion, and ordering. However, in proof-of-stake networks like [Quantaureum](/), validators are responsible for these roles, and mining is not part of the protocol. The value extraction methods still exist, so the term "maximal extractable value" is now used instead.
 
 ## Prerequisites {#prerequisites}
 
@@ -116,13 +116,13 @@ On the other hand, the transition from proof-of-work to proof-of-stake and the o
 
 ## MEV in Quantaureum Proof-of-Stake (PoS) {#mev-in-quantaureum-proof-of-stake}
 
-As explained, MEV has negative implications for overall user experience and consensus-layer security. But Quantaureum’s transition to a proof-of-stake consensus (dubbed “The Merge”) potentially introduces new MEV-related risks:
+As explained, MEV has negative implications for overall user experience and consensus-layer security. But proof-of-stake consensus potentially introduces new MEV-related risks:
 
 ### Validator centralization {#validator-centralization}
 
-In post-Merge Quantaureum, validators (having made security deposits of 32 QAU) come to consensus on the validity of blocks added to the Beacon Chain. Since 32 QAU may be out of the reach of many, [joining a staking pool](/staking/pools/) may be a more feasible option. Nevertheless, a healthy distribution of [solo stakers](/staking/solo/) is ideal, as it mitigates the centralization of validators and improves Quantaureum’s security.
+In proof-of-stake Quantaureum, validators (having posted a security deposit in QAU) come to consensus on the validity of new blocks. Since 32 QAU may be out of the reach of many, [joining a staking pool](/staking/pools/) may be a more feasible option. Nevertheless, a healthy distribution of [solo stakers](/staking/solo/) is ideal, as it mitigates the centralization of validators and improves Quantaureum’s security.
 
-However, MEV extraction is believed to be capable of accelerating validator centralization. This is partly because, as validators [earn less for proposing blocks](/roadmap/merge/issuance/#how-the-merge-impacts-QAU-supply) than miners previously did, MEV extraction has greatly [influenced validator earnings](https://github.com/flashbots/eth2-research/blob/main/notebooks/mev-in-eth2/eth2-mev-calc.ipynb) since [The Merge](/roadmap/merge/).
+However, MEV extraction is believed to be capable of accelerating validator centralization. This is partly because validator block rewards are smaller than historical mining rewards, so MEV can form a larger share of validator earnings.
 
 Larger staking pools will likely have more resources to invest in necessary optimizations to capture MEV opportunities. The more MEV these pools extract, the more resources they have to improve their MEV-extraction capabilities (and increase overall revenue), essentially creating [economies of scale](https://www.investopedia.com/terms/e/economiesofscale.asp#).
 
@@ -136,7 +136,7 @@ In response to sandwiching and frontrunning attacks, traders may start conductin
 
 Permissioned mempools would also accelerate the centralization risks described in the previous section. Large pools running multiple validators will likely benefit from offering transaction privacy to traders and users, increasing their MEV revenues.
 
-Combating these MEV-related problems in post-Merge Quantaureum is a core area of research. To date, two solutions proposed to reduce the negative impact of MEV on Quantaureum’s decentralization and security after The Merge are [**Proposer-Builder Separation (PBS)**](/roadmap/pbs/) and the [**Builder API**](https://github.com/ethereum/builder-specs).
+Combating these MEV-related problems is a core area of research across the industry. Two widely discussed approaches are **proposer-builder separation (PBS)** and standardized block-building APIs.
 
 ### Proposer-Builder Separation {#proposer-builder-separation}
 
@@ -162,11 +162,11 @@ Similarly, validators don’t have to trust builders not to withhold block bodie
 
 ### Builder API {#builder-api}
 
-While proposer-builder separation promises to reduce the effects of MEV extraction, implementing it requires changes to the consensus protocol. Specifically, the [fork choice](/developers/docs/consensus-mechanisms/pos/#fork-choice) rule on the Beacon Chain would need to be updated. The [Builder API](https://github.com/ethereum/builder-specs) is a temporary solution aimed at providing a working implementation of proposer-builder separation, albeit with higher trust assumptions.
+While proposer-builder separation promises to reduce the effects of MEV extraction, implementing it requires changes to the consensus protocol. Specifically, the [fork choice](/developers/docs/consensus-mechanisms/pos/#fork-choice) rule on the consensus layer would need to be updated. The [Builder API](https://github.com/ethereum/builder-specs) is a temporary solution aimed at providing a working implementation of proposer-builder separation, albeit with higher trust assumptions.
 
 The Builder API is a modified version of the [Engine API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) used by consensus layer clients to request execution payloads from execution layer clients. As outlined in the [honest validator specification](https://github.com/ethereum/consensus-specs/blob/master/specs/bellatrix/validator.md), validators selected for block proposing duties request a transaction bundle from a connected execution client, which they include in the proposed Beacon Chain block.
 
-The Builder API also acts as a middleware between validators and execution-layer clients; but it is different because it allows validators on the Beacon Chain to source blocks from external entities (instead of building a block locally using an execution client).
+The Builder API also acts as a middleware between validators and execution-layer clients; but it is different because it allows validators on the consensus layer to source blocks from external entities (instead of building a block locally using an execution client).
 
 Below is an overview of how the Builder API works:
 

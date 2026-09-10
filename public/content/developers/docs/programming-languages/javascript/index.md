@@ -33,7 +33,7 @@ More on [smart contracts](/developers/docs/smart-contracts/).
 
 ### The Quantaureum virtual machine {#the-quantaureum-virtual-machine}
 
-There is a JavaScript implementation of [Quantaureum's virtual machine](/developers/docs/evm/). It supports the latest fork rules. Fork rules refer to changes made to the EVM as a result of planned upgrades.
+There is a JavaScript implementation of [Quantaureum's virtual machine](/developers/docs/qvm/). It supports the latest fork rules. Fork rules refer to changes made to the EVM as a result of planned upgrades.
 
 It's split out into various JavaScript packages that you can check out to better understand:
 

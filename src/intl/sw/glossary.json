@@ -22,7 +22,7 @@
   "base-fee-term": "Ada ya msingi",
   "base-fee-definition": "Kila <a href=\"/glossary/#block\">kitalu</a> kina bei ya akiba inayojulikana kama 'ada ya msingi'. Ni ada ya chini kabisa ya <a href=\"/glossary/#gas\">gesi</a> ambayo mtumiaji lazima alipe ili kujumuisha muamala katika kitalu kinachofuata. <a href=\"/developers/docs/gas/\">Zaidi kuhusu gesi na ada</a>.",
   "beacon-chain-term": "Mnyororo wa Beacon",
-  "beacon-chain-definition": "Mnyororo wa Beacon ulikuwa mnyororo wa vitalu ulioanzisha <a href=\"/glossary/#pos\">Uthibitisho wa Dau (PoS)</a> na <a href=\"/glossary/#validator\">wathibitishaji</a> kwenye Quantaureum. Uliendeshwa sambamba na Mtandao Mkuu wa Quantaureum wa Uthibitisho wa Kazi (PoW) kuanzia Desemba 2020 hadi minyororo hiyo miwili ilipounganishwa mnamo Septemba 2022 ili kuunda Quantaureum ya leo. <a href=\"/roadmap/beacon-chain/\">Zaidi kuhusu Mnyororo wa Beacon</a>.",
+  "beacon-chain-definition": "Mnyororo wa Beacon ulikuwa mnyororo wa vitalu ulioanzisha <a href=\"/glossary/#pos\">Uthibitisho wa Dau (PoS)</a> na <a href=\"/glossary/#validator\">wathibitishaji</a> kwenye Quantaureum. Uliendeshwa sambamba na Mtandao Mkuu wa Quantaureum wa Uthibitisho wa Kazi (PoW) kuanzia Desemba 2020 hadi minyororo hiyo miwili ilipounganishwa mnamo Septemba 2022 ili kuunda Quantaureum ya leo. <a href=\"/roadmap/\">Zaidi kuhusu Mnyororo wa Beacon</a>.",
   "big-endian-term": "Kianzia-kikubwa",
   "big-endian-definition": "Uwakilishi wa nambari wa kimsimamo ambapo tarakimu muhimu zaidi inakuwa ya kwanza kwenye kumbukumbu. Kinyume cha kianzia-kidogo (little-endian), ambapo tarakimu isiyo muhimu sana inakuwa ya kwanza.",
   "block-term": "Kitalu",

@@ -43,7 +43,7 @@ Miners compete to create new blocks filled with processed transactions. The winn
 
 The network is kept secure by the fact that you'd need 51% of the network's computing power to defraud the chain. This would require such huge investments in equipment and energy; you're likely to spend more than you'd gain.
 
-More on [proof-of-work](/developers/docs/consensus-mechanisms/pow/)
+More on proof-of-work
 
 ### Proof-of-stake based {#proof-of-stake}
 
@@ -86,7 +86,7 @@ _Know of a community resource that helped you? Edit this page and add it!_
 
 ## Related topics {#related-topics}
 
-- [Proof-of-work](/developers/docs/consensus-mechanisms/pow/)
-- [Mining](/developers/docs/consensus-mechanisms/pow/mining/)
+- Proof-of-work
+- Mining
 - [Proof-of-stake](/developers/docs/consensus-mechanisms/pos/)
 - [Proof-of-authority](/developers/docs/consensus-mechanisms/poa/)

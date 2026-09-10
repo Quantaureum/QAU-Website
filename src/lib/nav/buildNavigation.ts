@@ -433,11 +433,6 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
           description: t("nav-development-description"),
           items: [
             {
-              label: t("nav-ercs-label"),
-              description: t("nav-ercs-description"),
-              href: "https://github.com/quantaureum/ERCs",
-            },
-            {
               label: t("nav-bug-bounty-label"),
               description: t("nav-bug-bounty-description"),
               href: "/bug-bounty/",
@@ -457,7 +452,7 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
             {
               label: t("nav-technical-history-label"),
               description: t("nav-technical-history-description"),
-              href: "/quantaureum-forks/",
+              href: "/roadmap/",
             },
             {
               label: t("nav-open-research-label"),

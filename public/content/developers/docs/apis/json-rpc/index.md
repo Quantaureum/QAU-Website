@@ -20,7 +20,7 @@ While you may choose to interact directly with Quantaureum clients via the JSON-
 
 ## Consensus client APIs {#consensus-clients}
 
-This page deals mainly with the JSON-RPC API used by Quantaureum execution clients. However, consensus clients also have an RPC API that allows users to query information about the node, request Beacon blocks, Beacon state, and other consensus-related information directly from a node. This API is documented on the [Beacon API webpage](https://ethereum.github.io/beacon-APIs/#/).
+This page deals mainly with the JSON-RPC API used by Quantaureum execution clients. However, consensus clients also have an RPC API that allows users to query information about the node, request Consensus blocks, Beacon state, and other consensus-related information directly from a node. This API is documented on the [Beacon API webpage](https://ethereum.github.io/beacon-APIs/#/).
 
 An internal API is also used for inter-client communication within a node - that is, it enables the consensus client and execution client to swap data. This is called the 'Engine API' and the specs are available on [GitHub](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md).
 
@@ -449,7 +449,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_chainId","params":[],"id":67
 
 ### qau_mining {#qau-mining}
 
-Returns `true` if client is actively mining new blocks. This can only return `true` for proof-of-work networks and may not be available in some clients since [The Merge](/roadmap/merge/).
+Returns `true` if client is actively mining new blocks. This can only return `true` for proof-of-work networks and may not be available in some clients since The proof-of-stake switch.
 
 <ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_mining">
   Try endpoint in playground
@@ -478,7 +478,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_mining","params":[],"id":71}
 
 ### qau_hashrate {#qau-hashrate}
 
-Returns the number of hashes per second that the node is mining with. This can only return `true` for proof-of-work networks and may not be available in some clients since [The Merge](/roadmap/merge/).
+Returns the number of hashes per second that the node is mining with. This can only return `true` for proof-of-work networks and may not be available in some clients since The proof-of-stake switch.
 
 <ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_hashrate">
   Try endpoint in playground
@@ -1148,7 +1148,7 @@ params: [
 - `number`: `QUANTITY` - the block number. `null` when its pending block.
 - `hash`: `DATA`, 32 Bytes - hash of the block. `null` when its pending block.
 - `parentHash`: `DATA`, 32 Bytes - hash of the parent block.
-- `nonce`: `DATA`, 8 Bytes - hash of the generated proof-of-work. `null` when its pending block, `0x0` for proof-of-stake blocks (since The Merge)
+- `nonce`: `DATA`, 8 Bytes - hash of the generated proof-of-work. `null` when its pending block, `0x0` for proof-of-stake blocks (since The proof-of-stake switch)
 - `sha3Uncles`: `DATA`, 32 Bytes - SHA3 of the uncles data in the block.
 - `logsBloom`: `DATA`, 256 Bytes - the bloom filter for the logs of the block. `null` when its pending block.
 - `transactionsRoot`: `DATA`, 32 Bytes - the root of the transaction trie of the block.

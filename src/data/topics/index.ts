@@ -1,6 +1,5 @@
 import { roadmap } from "./roadmap"
 import { staking } from "./staking"
-import { upgrade } from "./upgrade"
 import { useCases } from "./use-cases"
 
 export type TopicDropdownItem = {
@@ -25,6 +24,5 @@ export type TopicConfig = {
 export const topics: Record<string, TopicConfig> = {
   roadmap,
   staking,
-  upgrade,
   "use-cases": useCases,
 }

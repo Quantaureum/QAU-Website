@@ -20,7 +20,6 @@ export const layoutMapping = {
   "use-cases": TopicLayout,
   staking: TopicLayout,
   roadmap: TopicLayout,
-  upgrade: TopicLayout,
   docs: DocsLayout,
   tutorial: TutorialLayout,
 }
@@ -30,7 +29,6 @@ export const componentsMapping: Record<Layout, MDXRemoteProps["components"]> = {
   "use-cases": topicComponents.useCasesComponents,
   staking: topicComponents.stakingComponents,
   roadmap: topicComponents.roadmapComponents,
-  upgrade: topicComponents.upgradeComponents,
   docs: docsComponents,
   tutorial: tutorialsComponents,
 }

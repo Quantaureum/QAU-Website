@@ -12,7 +12,7 @@ However, increased research into improving smart contracts has led to the introd
 
 ## Prerequisites {#prerequisites}
 
-You should have a good understanding of [smart contracts](/developers/docs/smart-contracts/), [smart contract anatomy](/developers/docs/smart-contracts/anatomy/), and the [Quantaureum Virtual Machine (EVM)](/developers/docs/evm/). This guide also assumes readers have a grasp of programming smart contracts.
+You should have a good understanding of [smart contracts](/developers/docs/smart-contracts/), [smart contract anatomy](/developers/docs/smart-contracts/anatomy/), and the [Quantaureum Virtual Machine (EVM)](/developers/docs/qvm/). This guide also assumes readers have a grasp of programming smart contracts.
 
 ## What is a smart contract upgrade? {#what-is-a-smart-contract-upgrade}
 

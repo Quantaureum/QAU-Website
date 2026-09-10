@@ -22,7 +22,7 @@
   "base-fee-term": "Grundgebühr",
   "base-fee-definition": "Jeder <a href=\"/glossary/#block\">Block</a> hat einen Mindestpreis, der als 'Grundgebühr' bekannt ist. Es ist die minimale <a href=\"/glossary/#gas\">Gas</a>-Gebühr, die ein Benutzer zahlen muss, um eine Transaktion in den nächsten Block aufzunehmen. <a href=\"/developers/docs/gas/\">Mehr zu Gas und Gebühren</a>.",
   "beacon-chain-term": "Beacon Chain",
-  "beacon-chain-definition": "Die Beacon Chain war die Blockchain, die <a href=\"/glossary/#pos\">Proof-of-Stake</a> und <a href=\"/glossary/#validator\">Validatoren</a> in Quantaureum einführte. Sie lief von Dezember 2020 parallel zum Proof-of-Work Quantaureum Mainnet, bis die beiden Chains im September 2022 zusammengeführt wurden (der Merge), um das heutige Quantaureum zu bilden. <a href=\"/roadmap/beacon-chain/\">Mehr zur Beacon Chain</a>.",
+  "beacon-chain-definition": "Die Beacon Chain war die Blockchain, die <a href=\"/glossary/#pos\">Proof-of-Stake</a> und <a href=\"/glossary/#validator\">Validatoren</a> in Quantaureum einführte. Sie lief von Dezember 2020 parallel zum Proof-of-Work Quantaureum Mainnet, bis die beiden Chains im September 2022 zusammengeführt wurden (der Merge), um das heutige Quantaureum zu bilden. <a href=\"/roadmap/\">Mehr zur Beacon Chain</a>.",
   "big-endian-term": "Big-Endian",
   "big-endian-definition": "Eine Stellenwertdarstellung von Zahlen, bei der die höchstwertige Ziffer zuerst im Speicher steht. Das Gegenteil von Little-Endian, bei dem die niederwertigste Ziffer zuerst steht.",
   "block-term": "Block",

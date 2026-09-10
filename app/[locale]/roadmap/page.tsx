@@ -12,15 +12,11 @@ import type { Lang, PageParams } from "@/lib/types"
 import ContentFeedback from "@/components/ContentFeedback"
 import ExpandableCard from "@/components/ExpandableCard"
 import { HubHero } from "@/components/Hero"
-import I18nProvider from "@/components/I18nProvider"
 import {
-  AccountAbstractionIcon,
   BetterUserExperienceIcon,
   CheaperTransactionsIcon,
-  DankshardingIcon,
   ExtraSecurityIcon,
   PrivacyIcon,
-  SingleSlotFinalityIcon,
   StatelessnessIcon,
 } from "@/components/icons/roadmap"
 import { Image } from "@/components/Image"
@@ -47,7 +43,6 @@ import { getMetadata } from "@/lib/utils/metadata"
 import { breakpointAsNumber } from "@/lib/utils/screen"
 import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
-import ReleaseCarousel from "./_components/ReleaseCarousel"
 import RoadmapPageJsonLD from "./page-jsonld"
 
 import qauBlocksImg from "@/public/images/developers-qau-blocks.png"
@@ -120,34 +115,34 @@ const Page = async (props: { params: Promise<PageParams> }) => {
       href: "/roadmap/security/quantum-resistance",
     },
     {
-      icon: <SingleSlotFinalityIcon className="size-7" />,
-      title: t("page-roadmap-single-slot-finality-title"),
-      description: t("page-roadmap-single-slot-finality-description"),
-      href: "/roadmap/single-slot-finality",
+      icon: <BetterUserExperienceIcon className="size-7" />,
+      title: t("page-roadmap-qvm-title"),
+      description: t("page-roadmap-qvm-description"),
+      href: "/developers/docs/qvm/",
     },
     {
       icon: <ExtraSecurityIcon className="size-7" />,
-      title: t("page-roadmap-zkevm-title"),
-      description: t("page-roadmap-zkevm-description"),
-      href: "/roadmap/zkevm",
+      title: t("page-roadmap-threshold-finality-title"),
+      description: t("page-roadmap-threshold-finality-description"),
+      href: "/roadmap/security",
     },
     {
       icon: <StatelessnessIcon className="size-7" />,
-      title: t("page-roadmap-statelessness-title"),
-      description: t("page-roadmap-statelessness-description"),
-      href: "/roadmap/statelessness",
+      title: t("page-roadmap-verkle-title"),
+      description: t("page-roadmap-verkle-description"),
+      href: "/roadmap/verkle-trees",
     },
     {
-      icon: <AccountAbstractionIcon className="size-7" />,
-      title: t("page-roadmap-account-abstraction-title"),
-      description: t("page-roadmap-account-abstraction-description"),
-      href: "/roadmap/account-abstraction",
+      icon: <CheaperTransactionsIcon className="size-7" />,
+      title: t("page-roadmap-scaling-item-title"),
+      description: t("page-roadmap-scaling-item-description"),
+      href: "/roadmap/scaling",
     },
     {
-      icon: <DankshardingIcon className="size-7" />,
-      title: t("page-roadmap-danksharding-title"),
-      description: t("page-roadmap-danksharding-description"),
-      href: "/roadmap/danksharding",
+      icon: <PrivacyIcon className="size-7" />,
+      title: t("page-roadmap-privacy-item-title"),
+      description: t("page-roadmap-privacy-item-description"),
+      href: "/roadmap/privacy",
     },
   ]
 
@@ -192,12 +187,6 @@ const Page = async (props: { params: Promise<PageParams> }) => {
 
       <main className="space-y-space-3x pb-page">
         <MainArticle className="flow **:data-[label=button-link]:max-md:w-full *:[section]:px-page">
-          <Section id="releases" className="mt-space-3x overflow-hidden">
-            <I18nProvider locale={locale} messages={messages}>
-              <ReleaseCarousel />
-            </I18nProvider>
-          </Section>
-
           {/* What's changing */}
           <Section id="changes-coming">
             <h2>{t("page-roadmap-changes-coming-title")}</h2>

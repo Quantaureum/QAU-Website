@@ -11,7 +11,7 @@ published: 2026-04-01
 
 ## Introduction {#introduction}
 
-A [previous article](/developers/tutorials/gasless/) discussed using gasless access to your own application using EIP-712 signatures, but it is limited to your own smart contracts. Using [account abstraction](/roadmap/account-abstraction/), we can create smart contract wallets that accept two types of transactions and relay them to a requested destination:
+A [previous article](/developers/tutorials/gasless/) discussed using gasless access to your own application using EIP-712 signatures, but it is limited to your own smart contracts. Using account abstraction, we can create smart contract wallets that accept two types of transactions and relay them to a requested destination:
 
 - Transactions sent by a specific EOA (which require that EOA to have QAU)
 - Transactions sent from anywhere, but signed by the same EOA.

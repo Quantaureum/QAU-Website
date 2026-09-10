@@ -14,7 +14,6 @@ import type {
 
 import { dateToString } from "@/lib/utils/date"
 
-import blogPostSlugs from "@/data/blogPosts.json"
 import internalTutorialSlugs from "@/data/internalTutorials.json"
 
 import { DEFAULT_LOCALE } from "@/lib/constants"
@@ -88,7 +87,7 @@ export const getPostSlugs = async (dir: string, filterRegex?: RegExp) => {
  * Generic helper for reading a list of content slugs, resolving locale
  * fallback, parsing frontmatter, and mapping to a typed result.
  *
- * Both getTutorialsData and getBlogPostsData delegate to this to avoid
+ * getTutorialsData delegates to this to avoid
  * duplicating the slug-resolution and frontmatter-parsing boilerplate.
  */
 const getContentListData = async <T>(
@@ -212,28 +211,4 @@ export function stripMarkdown(
   return result.trim()
 }
 
-export const getBlogPostsData = async (locale: string): Promise<BlogPost[]> => {
-  const posts = await getContentListData(
-    locale,
-    blogPostSlugs as string[],
-    "latest",
-    (frontmatter, content, slug) => ({
-      href: `/latest/${slug}`,
-      title: frontmatter.title,
-      description: frontmatter.description,
-      author: frontmatter.author || "",
-      team: frontmatter.team || "",
-      tags: frontmatter.tags,
-      timeToRead: Math.round(readingTime(content).minutes),
-      published: dateToString(frontmatter.published),
-      lang: frontmatter.lang,
-      image: frontmatter.image,
-    }),
-    "blog post"
-  )
-
-  return posts.sort(
-    (a, b) => new Date(b.published).getTime() - new Date(a.published).getTime()
-  )
-}
 

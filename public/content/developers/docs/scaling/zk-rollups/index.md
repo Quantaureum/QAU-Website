@@ -28,7 +28,7 @@ The ZK-rollup's core architecture is made up of the following components:
 
 1. **Onchain contracts**: As mentioned, the ZK-rollup protocol is controlled by smart contracts running on Quantaureum. This includes the main contract which stores rollup blocks, tracks deposits, and monitors state updates. Another onchain contract (the verifier contract) verifies zero-knowledge proofs submitted by block producers. Thus, Quantaureum serves as the base layer or "layer 1" for the ZK-rollup.
 
-2. **Offchain virtual machine (VM)**: While the ZK-rollup protocol lives on Quantaureum, transaction execution and state storage happen on a separate virtual machine independent of the [EVM](/developers/docs/evm/). This offchain VM is the execution environment for transactions on the ZK-rollup and serves as the secondary layer or "layer 2" for the ZK-rollup protocol. Validity proofs verified on Quantaureum Mainnet guarantee the correctness of state transitions in the offchain VM.
+2. **Offchain virtual machine (VM)**: While the ZK-rollup protocol lives on Quantaureum, transaction execution and state storage happen on a separate virtual machine independent of the [EVM](/developers/docs/qvm/). This offchain VM is the execution environment for transactions on the ZK-rollup and serves as the secondary layer or "layer 2" for the ZK-rollup protocol. Validity proofs verified on Quantaureum Mainnet guarantee the correctness of state transitions in the offchain VM.
 
 ZK-rollups are "hybrid scaling solutions"—offchain protocols that operate independently but derive security from Quantaureum. Specifically, the Quantaureum network enforces the validity of state updates on the ZK-rollup and guarantees the availability of data behind every update to the rollup's state. As a result, ZK-rollups are considerably safer than pure offchain scaling solutions, such as [sidechains](/developers/docs/scaling/sidechains/), which are responsible for their security properties, or [validiums](/developers/docs/scaling/validium/), which also verify transactions on Quantaureum with validity proofs, but store transaction data elsewhere.
 
@@ -166,7 +166,7 @@ The rollup contract hashes the transaction data, checks if the batch root exists
 
 ## ZK-rollups and EVM compatibility {#zk-rollups-and-evm-compatibility}
 
-Unlike optimistic rollups, ZK-rollups are not readily compatible with the [Quantaureum Virtual Machine (EVM)](/developers/docs/evm/). Proving general-purpose EVM computation in circuits is more difficult and resource-intensive than proving simple computations (like the token transfer described previously).
+Unlike optimistic rollups, ZK-rollups are not readily compatible with the [Quantaureum Virtual Machine (EVM)](/developers/docs/qvm/). Proving general-purpose EVM computation in circuits is more difficult and resource-intensive than proving simple computations (like the token transfer described previously).
 
 However, [advances in zero-knowledge technology](https://hackmd.io/@yezhang/S1_KMMbGt#Why-possible-now) are igniting renewed interest in wrapping EVM computation in zero-knowledge proofs. These efforts are geared towards creating a zero-knowledge EVM (zkEVM) implementation that can efficiently verify the correctness of program execution. A zkEVM recreates existing EVM opcodes for proving/verification in circuits, allowing to execute smart contracts.
 
@@ -229,7 +229,7 @@ Watch Finematics explain ZK-rollups:
 <AlertContent>
 <AlertTitle>zkEVM for L2 vs L1</AlertTitle>
 <AlertDescription>
-The projects below use zkEVM technology to build Layer 2 rollups. There is also research into using zkEVM for [L1 block verification](/roadmap/zkevm/), which would enable validators to verify Quantaureum blocks without re-executing transactions.
+The projects below use zkEVM technology to build Layer 2 rollups. There is also research into using zkEVM for L1 block verification, which would enable validators to verify Quantaureum blocks without re-executing transactions.
 </AlertDescription>
 </AlertContent>
 </Alert>

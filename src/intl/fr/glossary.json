@@ -22,7 +22,7 @@
   "base-fee-term": "Frais de base",
   "base-fee-definition": "Chaque <a href=\"/glossary/#block\">bloc</a> a un prix de réserve connu sous le nom de « frais de base ». Il s'agit des frais de <a href=\"/glossary/#gas\">gaz</a> minimums qu'un utilisateur doit payer pour inclure une transaction dans le bloc suivant. <a href=\"/developers/docs/gas/\">En savoir plus sur le gaz et les frais</a>.",
   "beacon-chain-term": "Chaîne balise",
-  "beacon-chain-definition": "La chaîne balise était la chaîne de blocs qui a introduit la <a href=\"/glossary/#pos\">preuve d'enjeu (PoS)</a> et les <a href=\"/glossary/#validator\">validateurs</a> sur Quantaureum. Elle a fonctionné en parallèle du réseau principal Quantaureum en preuve de travail (PoW) de décembre 2020 jusqu'à ce que les deux chaînes soient fusionnées en septembre 2022 pour former l'Quantaureum d'aujourd'hui. <a href=\"/roadmap/beacon-chain/\">En savoir plus sur la chaîne balise</a>.",
+  "beacon-chain-definition": "La chaîne balise était la chaîne de blocs qui a introduit la <a href=\"/glossary/#pos\">preuve d'enjeu (PoS)</a> et les <a href=\"/glossary/#validator\">validateurs</a> sur Quantaureum. Elle a fonctionné en parallèle du réseau principal Quantaureum en preuve de travail (PoW) de décembre 2020 jusqu'à ce que les deux chaînes soient fusionnées en septembre 2022 pour former l'Quantaureum d'aujourd'hui. <a href=\"/roadmap/\">En savoir plus sur la chaîne balise</a>.",
   "big-endian-term": "Grand-boutiste",
   "big-endian-definition": "Une représentation numérique positionnelle où le chiffre le plus significatif est le premier en mémoire. L'opposé de petit-boutiste (little-endian), où le chiffre le moins significatif est le premier.",
   "block-term": "Bloc",

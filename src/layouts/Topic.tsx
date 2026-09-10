@@ -9,13 +9,11 @@ import PageActions from "@/components/PageActions"
 import { Alert } from "@/components/ui/alert"
 import InlineLink from "@/components/ui/Link"
 import { List, ListItem } from "@/components/ui/list"
-import UpgradeSummary from "@/components/UpgradeSummary"
 
 import { getEditPath } from "@/lib/utils/editPath"
 import { buildTopicDropdown } from "@/lib/utils/topicDropdown"
 
 import type { TopicConfig } from "@/data/topics"
-import { upgrades } from "@/data/upgrades"
 
 import { ContentLayout } from "./ContentLayout"
 
@@ -52,11 +50,6 @@ export const TopicLayout = async ({
         `Add an entry to src/data/topics/ and route through topics[layout].`
     )
   }
-
-  // `slug` is locale-independent ("roadmap/glamsterdam"), so its last segment
-  // is a stable key into the upgrade data on every locale.
-  const upgradeKey = slug.split("/").filter(Boolean).pop()
-  const upgradeSlug = upgradeKey && upgrades[upgradeKey] ? upgradeKey : null
 
   const t = await getTranslations(config.translationNs)
 
@@ -109,10 +102,6 @@ export const TopicLayout = async ({
     </>
   )
 
-  // Rendered through ContentLayout's article-header slot so the upgrade card
-  // appears before contributors and page actions without changing other
-  // layouts.
-
   return (
     <ContentLayout
       dir={contentNotTranslated ? "ltr" : "unset"}
@@ -121,7 +110,6 @@ export const TopicLayout = async ({
       contributors={contributors}
       lastEditLocaleTimestamp={lastEditLocaleTimestamp}
       heroSection={heroSection}
-      articleHeader={upgradeSlug ? <UpgradeSummary slug={upgradeSlug} /> : null}
       showDropdown={frontmatter.showDropdown ?? true}
     >
       {/*

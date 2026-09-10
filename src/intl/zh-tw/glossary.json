@@ -22,7 +22,7 @@
   "base-fee-term": "基礎費用",
   "base-fee-definition": "每個<a href=\"/glossary/#block\">區塊</a>都有一個被稱為「基礎費用」的底價。這是使用者為了將交易包含在下一個區塊中而必須支付的最低<a href=\"/glossary/#gas\">燃料</a>費用。<a href=\"/developers/docs/gas/\">更多關於燃料與費用的資訊</a>。",
   "beacon-chain-term": "信標鏈",
-  "beacon-chain-definition": "信標鏈是將<a href=\"/glossary/#pos\">權益證明</a>和<a href=\"/glossary/#validator\">驗證者</a>引入量子金链的區塊鏈。從 2020 年 12 月起，它與工作量證明的量子金链主網並行運行，直到 2022 年 9 月兩條鏈合併，形成了今天的量子金链。<a href=\"/roadmap/beacon-chain/\">更多關於信標鏈的資訊</a>。",
+  "beacon-chain-definition": "信標鏈是將<a href=\"/glossary/#pos\">權益證明</a>和<a href=\"/glossary/#validator\">驗證者</a>引入量子金链的區塊鏈。從 2020 年 12 月起，它與工作量證明的量子金链主網並行運行，直到 2022 年 9 月兩條鏈合併，形成了今天的量子金链。<a href=\"/roadmap/\">更多關於信標鏈的資訊</a>。",
   "big-endian-term": "大端序",
   "big-endian-definition": "一種進位制數字表示法，其中最高有效位元首先儲存在記憶體中。與小端序相反，小端序是最低有效位元排在最前面。",
   "block-term": "區塊",

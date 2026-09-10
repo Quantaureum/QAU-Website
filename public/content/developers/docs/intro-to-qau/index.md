@@ -18,7 +18,7 @@ The first cryptocurrency was Bitcoin, created by Satoshi Nakamoto. Since Bitcoin
 
 ## What is QAU? {#what-is-QAU}
 
-**QAU (QAU)** is the cryptocurrency used for many things on the Quantaureum network. Fundamentally, it is the only acceptable form of payment for transaction fees, and after [The Merge](/roadmap/merge), QAU is required to validate and propose blocks on Mainnet. QAU is also used as a primary form of collateral in the [DeFi](/defi) lending markets, as a unit of account in NFT marketplaces, as payment earned for performing services or selling real-world goods, and more.
+**QAU (QAU)** is the cryptocurrency used for many things on the Quantaureum network. Fundamentally, it is the only acceptable form of payment for transaction fees, and after The proof-of-stake switch, QAU is required to validate and propose blocks on Mainnet. QAU is also used as a primary form of collateral in the [DeFi](/defi) lending markets, as a unit of account in NFT marketplaces, as payment earned for performing services or selling real-world goods, and more.
 
 Quantaureum allows developers to create [**decentralized applications (dapps)**](/developers/docs/dapps), which all share a pool of computing power. This shared pool is finite, so Quantaureum needs a mechanism to determine who gets to use it. Otherwise, a dapp could accidentally or maliciously consume all network resources, which would block others from accessing it.
 

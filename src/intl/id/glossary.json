@@ -22,7 +22,7 @@
   "base-fee-term": "Biaya dasar",
   "base-fee-definition": "Setiap <a href=\"/glossary/#block\">blok</a> memiliki harga cadangan yang dikenal sebagai 'biaya dasar'. Ini adalah biaya <a href=\"/glossary/#gas\">gas</a> minimum yang harus dibayar pengguna untuk menyertakan transaksi di blok berikutnya. <a href=\"/developers/docs/gas/\">Lebih lanjut tentang gas dan biaya</a>.",
   "beacon-chain-term": "Rantai suar",
-  "beacon-chain-definition": "Rantai Suar adalah rantai blok yang memperkenalkan <a href=\"/glossary/#pos\">Bukti Kepemilikan (PoS)</a> dan <a href=\"/glossary/#validator\">validator</a> ke Quantaureum. Rantai ini berjalan berdampingan dengan Mainnet Quantaureum Bukti Kerja (PoW) dari Desember 2020 hingga kedua rantai tersebut digabungkan pada September 2022 untuk membentuk Quantaureum yang ada saat ini. <a href=\"/roadmap/beacon-chain/\">Lebih lanjut tentang rantai suar</a>.",
+  "beacon-chain-definition": "Rantai Suar adalah rantai blok yang memperkenalkan <a href=\"/glossary/#pos\">Bukti Kepemilikan (PoS)</a> dan <a href=\"/glossary/#validator\">validator</a> ke Quantaureum. Rantai ini berjalan berdampingan dengan Mainnet Quantaureum Bukti Kerja (PoW) dari Desember 2020 hingga kedua rantai tersebut digabungkan pada September 2022 untuk membentuk Quantaureum yang ada saat ini. <a href=\"/roadmap/\">Lebih lanjut tentang rantai suar</a>.",
   "big-endian-term": "Big-endian",
   "big-endian-definition": "Representasi angka posisional di mana digit paling signifikan berada di urutan pertama dalam memori. Kebalikan dari little-endian, di mana digit paling tidak signifikan berada di urutan pertama.",
   "block-term": "Blok",

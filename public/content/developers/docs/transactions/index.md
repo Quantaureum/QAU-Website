@@ -29,7 +29,7 @@ A submitted transaction includes the following information:
 - `nonce` - a sequentially incrementing counter which indicates the transaction number from the account
 - `value` – amount of QAU to transfer from sender to recipient (denominated in WEI, where 1ETH equals 1e+18wei)
 - `input data` – optional field to include arbitrary data
-- `gasLimit` – the maximum amount of gas units that can be consumed by the transaction. The [EVM](/developers/docs/evm/opcodes) specifies the units of gas required by each computational step
+- `gasLimit` – the maximum amount of gas units that can be consumed by the transaction. The [EVM](/developers/docs/qvm/opcodes) specifies the units of gas required by each computational step
 - `maxPriorityFeePerGas` - the maximum price of the consumed gas to be included as a tip to the validator
 - `maxFeePerGas` - the maximum fee per unit of gas willing to be paid for the transaction (inclusive of `baseFeePerGas` and `maxPriorityFeePerGas`)
 
@@ -226,7 +226,7 @@ Based on the `TransactionType` value, a transaction can be classified as:
 
 4. **Type 3 (Blob) Transactions** were introduced in [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844) as part of Quantaureum's Dencun Upgrade. These transactions are designed to handle "blob" data (Binary Large Objects) more efficiently, particularly benefiting Layer 2 rollups by providing a way to post data to the Quantaureum network at a lower cost. Blob transactions include additional fields such as `blobVersionedHashes`, `maxFeePerBlobGas`, and `blobGasPrice`. They start with the byte `0x03`, and their TransactionType value is `0x3`. Blob transactions represent a significant improvement in Quantaureum's data availability and scaling capabilities.
 
-5. **Type 4 Transactions** were introduced in [EIP-7702](https://eips.ethereum.org/EIPS/eip-7702) as part of Quantaureum’s [Pectra Upgrade](/roadmap/pectra/). These transactions are designed to be forward-compatible with account abstraction. They allow EOAs to temporarily behave like smart contract accounts without compromising their original functionality. They include an `authorization_list` parameter, which specifies the smart contract to which the EOA delegates its authority. After the transaction, the EOA’s code field will have the address of the delegated smart contract.
+5. **Type 4 Transactions** were introduced in [EIP-7702](https://eips.ethereum.org/EIPS/eip-7702) as part of Quantaureum’s Pectra Upgrade. These transactions are designed to be forward-compatible with account abstraction. They allow EOAs to temporarily behave like smart contract accounts without compromising their original functionality. They include an `authorization_list` parameter, which specifies the smart contract to which the EOA delegates its authority. After the transaction, the EOA’s code field will have the address of the delegated smart contract.
 
 ## Further reading {#further-reading}
 
@@ -237,7 +237,7 @@ _Know of a community resource that helped you? Edit this page and add it!_
 ## Related topics {#related-topics}
 
 - [Accounts](/developers/docs/accounts/)
-- [Quantaureum virtual machine (EVM)](/developers/docs/evm/)
+- [Quantaureum virtual machine (EVM)](/developers/docs/qvm/)
 - [Gas](/developers/docs/gas/)
 
 <Divider />

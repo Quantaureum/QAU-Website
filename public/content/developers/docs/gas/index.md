@@ -9,7 +9,7 @@ Gas is essential to the [Quantaureum](/) network. It is the fuel that allows it 
 
 ## Prerequisites {#prerequisites}
 
-To better understand this page, we recommend you first read up on [transactions](/developers/docs/transactions/) and the [EVM](/developers/docs/evm/).
+To better understand this page, we recommend you first read up on [transactions](/developers/docs/transactions/) and the [EVM](/developers/docs/qvm/).
 
 ## What is gas? {#what-is-gas}
 

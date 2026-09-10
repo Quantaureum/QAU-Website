@@ -2,6 +2,8 @@
 
 /** @type { [string, string, boolean | undefined][] } */
 module.exports = [
+  ["/developers/docs/evm", "/developers/docs/qvm/"],
+  ["/developers/docs/evm/opcodes", "/developers/docs/qvm/opcodes/"],
   ["/discord", "https://discord.gg/MSctkBT5j"],
   ["/brand", "/assets/"],
   ["/what-is-ethereum", "/what-is-quantaureum/"],
