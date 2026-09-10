@@ -16,7 +16,6 @@ import type {
 
 import type { BreadcrumbsProps } from "@/components/Breadcrumbs"
 import type { CallToActionProps } from "@/components/Hero/CallToAction"
-import type { SimulatorNav } from "@/components/Simulator/interfaces"
 
 import chains from "@/data/chains"
 import { Rollup, Rollups } from "@/data/networks/networks"
@@ -527,8 +526,7 @@ export type StakingStatsData = {
 }
 
 export type ValueOrError<T> =
-  | { value: T; timestamp?: number }
-  | { error: string }
+  { value: T; timestamp?: number } | { error: string }
 
 export type EtherscanNodeResponse = {
   result: {
@@ -572,11 +570,7 @@ export type VideoData = {
 }
 
 export type VideoFormat =
-  | "presentation"
-  | "explainer"
-  | "interview"
-  | "tutorial"
-  | "panel"
+  "presentation" | "explainer" | "interview" | "tutorial" | "panel"
 /**
  * Flat, serializable video data for client components (e.g. VideoGalleryFilter).
  * thumbnailUrl is pre-resolved server-side from customThumbnailUrl or youtubeId.
@@ -667,14 +661,6 @@ export type AllEnterpriseActivityData = Record<
   MetricReturnData
 >
 
-export type SimulatorNavProps = {
-  nav: SimulatorNav
-}
-
-export type PhoneScreenProps = SimulatorNavProps & {
-  ctaLabel: string
-}
-
 // Events (Geode Labs Supabase API)
 export interface GeodeApiEventItem {
   title: string
@@ -693,12 +679,7 @@ export interface GeodeApiEventItem {
 }
 
 export type EventType =
-  | "conference"
-  | "hackathon"
-  | "meetup"
-  | "popup"
-  | "group"
-  | "other"
+  "conference" | "hackathon" | "meetup" | "popup" | "group" | "other"
 
 export interface EventItem extends GeodeApiEventItem {
   id: string // slugified title
@@ -1276,11 +1257,7 @@ export type PageWithContributorsProps = {
 export type BreakpointKey = keyof typeof screens
 
 export type MaturityLevel =
-  | "N/A"
-  | "robust"
-  | "maturing"
-  | "developing"
-  | "emerging"
+  "N/A" | "robust" | "maturing" | "developing" | "emerging"
 
 // Tutorials
 export enum Skill {

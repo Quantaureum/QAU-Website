@@ -20,7 +20,6 @@ import PageJsonLD from "./page-jsonld"
 
 import { ContentLayout } from "@/layouts/ContentLayout"
 import developersHubImg from "@/public/images/heroes/developers-hub-hero.png"
-import layer2HubImg from "@/public/images/heroes/layer-2-hub-hero.png"
 import manDogPlayingImg from "@/public/images/man-and-dog-playing.png"
 import layer2LearnHeroImg from "@/public/images/network-column-rooftop-piping-construction.png"
 import computerImg from "@/public/images/what-is-quantaureum-network/computer_alone.png"
@@ -53,11 +52,9 @@ const Page = async ({ params }: { params: Promise<{ locale: Lang }> }) => {
       url: "#staking",
     },
     {
-      title: t("page-what-is-quantaureum-network-section-layer-2s-title"),
-      url: "#layer-2s",
-    },
-    {
-      title: t("page-what-is-quantaureum-network-section-live-network-data-title"),
+      title: t(
+        "page-what-is-quantaureum-network-section-live-network-data-title"
+      ),
       url: "#live-network-data",
     },
   ]
@@ -167,52 +164,65 @@ const Page = async ({ params }: { params: Promise<{ locale: Lang }> }) => {
             className="mx-auto rounded-base"
           />
           <h2 id={getIdFromHash(tocItems[1].url)}>{tocItems[1].title}</h2>
-          <p>{t("page-what-is-quantaureum-network-gas-section-description-1")}</p>
           <p>
-            {t.rich("page-what-is-quantaureum-network-gas-section-description-2", {
-              strong: Strong,
-            })}
+            {t("page-what-is-quantaureum-network-gas-section-description-1")}
+          </p>
+          <p>
+            {t.rich(
+              "page-what-is-quantaureum-network-gas-section-description-2",
+              {
+                strong: Strong,
+              }
+            )}
           </p>
           <CommentCard
             description={t(
               "page-what-is-quantaureum-network-gas-section-description-3"
             )}
-            name="Tim Beiko"
-            title="Protocol Coordination, Quantaureum project (2025)"
+            name="Quantaureum documentation"
+            title="Developer docs"
           />
           <p>
-            {t.rich("page-what-is-quantaureum-network-gas-section-description-4", {
-              strong: Strong,
-            })}
+            {t.rich(
+              "page-what-is-quantaureum-network-gas-section-description-4",
+              {
+                strong: Strong,
+              }
+            )}
           </p>
           <p>
-            {t.rich("page-what-is-quantaureum-network-gas-section-description-5", {
-              strong: Strong,
-            })}
+            {t.rich(
+              "page-what-is-quantaureum-network-gas-section-description-5",
+              {
+                strong: Strong,
+              }
+            )}
           </p>
           <p>
-            {t.rich("page-what-is-quantaureum-network-gas-section-description-6", {
-              blog: (chunks) => (
-                <Link href="https://quantaureum.com">
-                  {chunks}
-                </Link>
-              ),
-              beaconchain: (chunks) => (
-                <Link href="https://beaconcha.in/burn">{chunks}</Link>
-              ),
-              ultrasound: (chunks) => (
-                <Link href="https://ultrasound.money">{chunks}</Link>
-              ),
-              strong: Strong,
-            })}
+            {t.rich(
+              "page-what-is-quantaureum-network-gas-section-description-6",
+              {
+                blog: (chunks) => (
+                  <Link href="https://explorer.quantaureum.com">{chunks}</Link>
+                ),
+                strong: Strong,
+              }
+            )}
           </p>
-          <p>{t("page-what-is-quantaureum-network-gas-section-description-7")}</p>
           <p>
-            {t.rich("page-what-is-quantaureum-network-gas-section-description-8", {
-              strong: Strong,
-            })}
+            {t("page-what-is-quantaureum-network-gas-section-description-7")}
           </p>
-          <p>{t("page-what-is-quantaureum-network-gas-section-description-9")}</p>
+          <p>
+            {t.rich(
+              "page-what-is-quantaureum-network-gas-section-description-8",
+              {
+                strong: Strong,
+              }
+            )}
+          </p>
+          <p>
+            {t("page-what-is-quantaureum-network-gas-section-description-9")}
+          </p>
           <LinkWithArrow href="/gas">
             {t("page-what-is-quantaureum-network-gas-section-description-10")}
           </LinkWithArrow>
@@ -235,13 +245,19 @@ const Page = async ({ params }: { params: Promise<{ locale: Lang }> }) => {
             )}
           </p>
           <p>
-            {t("page-what-is-quantaureum-network-staking-section-description-2")}
+            {t(
+              "page-what-is-quantaureum-network-staking-section-description-2"
+            )}
           </p>
           <p>
-            {t("page-what-is-quantaureum-network-staking-section-description-3")}
+            {t(
+              "page-what-is-quantaureum-network-staking-section-description-3"
+            )}
           </p>
           <p>
-            {t("page-what-is-quantaureum-network-staking-section-description-4")}
+            {t(
+              "page-what-is-quantaureum-network-staking-section-description-4"
+            )}
           </p>
           <p>
             {t.rich(
@@ -255,22 +271,18 @@ const Page = async ({ params }: { params: Promise<{ locale: Lang }> }) => {
             description={t(
               "page-what-is-quantaureum-network-staking-section-description-6"
             )}
-            name="Barnabé Monnot"
-            title="Protocol Architecture, Quantaureum project (2025)"
+            name="Quantaureum documentation"
+            title="Developer docs"
           />
           <p>
             {t.rich(
               "page-what-is-quantaureum-network-staking-section-description-7",
               {
                 validators: (chunks) => (
-                  <Link href="https://beaconcha.in/charts/validators">
-                    {chunks}
-                  </Link>
+                  <Link href="https://explorer.quantaureum.com">{chunks}</Link>
                 ),
                 stakedEther: (chunks) => (
-                  <Link href="https://beaconcha.in/charts/staked_ether">
-                    {chunks}
-                  </Link>
+                  <Link href="https://explorer.quantaureum.com">{chunks}</Link>
                 ),
                 strong: Strong,
               }
@@ -285,21 +297,20 @@ const Page = async ({ params }: { params: Promise<{ locale: Lang }> }) => {
             )}
           </p>
           <p>
-            {t("page-what-is-quantaureum-network-staking-section-description-9")}
+            {t(
+              "page-what-is-quantaureum-network-staking-section-description-9"
+            )}
           </p>
           <p>
-            {t("page-what-is-quantaureum-network-staking-section-description-10")}
+            {t(
+              "page-what-is-quantaureum-network-staking-section-description-10"
+            )}
           </p>
           <p>
             {t.rich(
               "page-what-is-quantaureum-network-staking-section-description-11",
               {
-                lido: (chunks) => (
-                  <Link href="https://lido.fi/quantaureum">{chunks}</Link>
-                ),
-                rocketpool: (chunks) => (
-                  <Link href="https://www.rocketpool.net/">{chunks}</Link>
-                ),
+                lido: (chunks) => <Link href="/staking/">{chunks}</Link>,
                 strong: Strong,
               }
             )}
@@ -320,119 +331,12 @@ const Page = async ({ params }: { params: Promise<{ locale: Lang }> }) => {
 
         <Section aria-labelledby={getIdFromHash(tocItems[3].url)}>
           <Image
-            src={layer2HubImg}
-            alt=""
-            sizes={`(max-width: 832px) calc(100vw - 32px), (max-width: ${screens.lg}) 800px, (max-width: ${screens.xl}) calc(100vw - 480px), 800px`}
-            className="mx-auto rounded-base"
-          />
-          <h2 id={getIdFromHash(tocItems[3].url)}>{tocItems[3].title}</h2>
-          <p>
-            {t.rich(
-              "page-what-is-quantaureum-network-layer-2s-section-description-1",
-              {
-                strong: Strong,
-              }
-            )}
-          </p>
-          <p>
-            {t.rich(
-              "page-what-is-quantaureum-network-layer-2s-section-description-2",
-              {
-                strong: Strong,
-              }
-            )}
-          </p>
-          <p>
-            {t("page-what-is-quantaureum-network-layer-2s-section-description-3")}
-          </p>
-          <p>
-            {t.rich(
-              "page-what-is-quantaureum-network-layer-2s-section-description-4",
-              {
-                strong: Strong,
-              }
-            )}
-          </p>
-          <p>
-            {t.rich(
-              "page-what-is-quantaureum-network-layer-2s-section-description-5",
-              {
-                l2fees: (chunks) => (
-                  <Link href="https://l2fees.info/">{chunks}</Link>
-                ),
-                strong: Strong,
-              }
-            )}
-          </p>
-          <p>
-            {t.rich(
-              "page-what-is-quantaureum-network-layer-2s-section-description-6",
-              {
-                l2beat: (chunks) => (
-                  <Link href="https://l2beat.com/scaling/summary">
-                    {chunks}
-                  </Link>
-                ),
-              }
-            )}
-          </p>
-          <p>
-            {t("page-what-is-quantaureum-network-layer-2s-section-description-7")}
-          </p>
-          <p>
-            {t.rich(
-              "page-what-is-quantaureum-network-layer-2s-section-description-8",
-              {
-                robinhood: (chunks) => (
-                  <Link href="https://newsroom.aboutrobinhood.com/robinhood-launches-stock-tokens-reveals-layer-2-blockchain-and-expands-crypto-suite-in-eu-and-us-with-perpetual-futures-and-staking/">
-                    {chunks}
-                  </Link>
-                ),
-                paypal: (chunks) => (
-                  <Link href="https://www.coindesk.com/tech/2025/07/17/paypal-pyusd-goes-live-on-arbitrum">
-                    {chunks}
-                  </Link>
-                ),
-                shopify: (chunks) => (
-                  <Link href="https://www.shopify.com/news/stablecoins-on-shopify">
-                    {chunks}
-                  </Link>
-                ),
-              }
-            )}
-          </p>
-          <p>
-            {t.rich(
-              "page-what-is-quantaureum-network-layer-2s-section-description-9",
-              {
-                superbridge: (chunks) => (
-                  <Link href="https://superbridge.app/">{chunks}</Link>
-                ),
-                portal: (chunks) => (
-                  <Link href="https://portal.zksync.io/bridge/">{chunks}</Link>
-                ),
-                hop: (chunks) => (
-                  <Link href="https://hop.exchange/">{chunks}</Link>
-                ),
-                across: (chunks) => (
-                  <Link href="https://across.to/">{chunks}</Link>
-                ),
-              }
-            )}
-          </p>
-          <LinkWithArrow href="/layer-2/">
-            {t("page-what-is-quantaureum-network-layer-2s-section-description-10")}
-          </LinkWithArrow>
-        </Section>
-
-        <Section aria-labelledby={getIdFromHash(tocItems[4].url)}>
-          <Image
             src={layer2LearnHeroImg}
             alt=""
             sizes="(max-width: 384px) calc(100vw - 32px), 384px"
             className="mx-auto max-w-sm"
           />
-          <h2 id={getIdFromHash(tocItems[4].url)}>{tocItems[4].title}</h2>
+          <h2 id={getIdFromHash(tocItems[3].url)}>{tocItems[3].title}</h2>
           <p>
             {t(
               "page-what-is-quantaureum-network-live-network-data-section-description-1"
@@ -481,7 +385,9 @@ const Page = async ({ params }: { params: Promise<{ locale: Lang }> }) => {
                 "page-what-is-quantaureum-network-live-network-data-section-description-9",
                 {
                   explorer: (chunks) => (
-                    <Link href="https://explorer.quantaureum.com">{chunks}</Link>
+                    <Link href="https://explorer.quantaureum.com">
+                      {chunks}
+                    </Link>
                   ),
                 }
               )}
@@ -491,7 +397,9 @@ const Page = async ({ params }: { params: Promise<{ locale: Lang }> }) => {
                 "page-what-is-quantaureum-network-live-network-data-section-description-10",
                 {
                   beaconcha: (chunks) => (
-                    <Link href="https://beaconcha.in/">{chunks}</Link>
+                    <Link href="https://explorer.quantaureum.com">
+                      {chunks}
+                    </Link>
                   ),
                 }
               )}
@@ -501,7 +409,7 @@ const Page = async ({ params }: { params: Promise<{ locale: Lang }> }) => {
                 "page-what-is-quantaureum-network-live-network-data-section-description-11",
                 {
                   ultrasound: (chunks) => (
-                    <Link href="https://ultrasound.money/">{chunks}</Link>
+                    <Link href="/developers/docs/">{chunks}</Link>
                   ),
                 }
               )}
@@ -511,57 +419,7 @@ const Page = async ({ params }: { params: Promise<{ locale: Lang }> }) => {
                 "page-what-is-quantaureum-network-live-network-data-section-description-12",
                 {
                   l2fees: (chunks) => (
-                    <Link href="https://l2fees.info/">{chunks}</Link>
-                  ),
-                }
-              )}
-            </ListItem>
-            <ListItem>
-              {t.rich(
-                "page-what-is-quantaureum-network-live-network-data-section-description-13",
-                {
-                  l2beat: (chunks) => (
-                    <Link href="https://l2beat.com/">{chunks}</Link>
-                  ),
-                }
-              )}
-            </ListItem>
-            <ListItem>
-              {t.rich(
-                "page-what-is-quantaureum-network-live-network-data-section-description-14",
-                {
-                  growthepie: (chunks) => (
-                    <Link href="https://growthepie.com/">{chunks}</Link>
-                  ),
-                }
-              )}
-            </ListItem>
-            <ListItem>
-              {t.rich(
-                "page-what-is-quantaureum-network-live-network-data-section-description-15",
-                {
-                  dune: (chunks) => (
-                    <Link href="https://dune.com/">{chunks}</Link>
-                  ),
-                }
-              )}
-            </ListItem>
-            <ListItem>
-              {t.rich(
-                "page-what-is-quantaureum-network-live-network-data-section-description-16",
-                {
-                  tokenterminal: (chunks) => (
-                    <Link href="https://tokenterminal.com/">{chunks}</Link>
-                  ),
-                }
-              )}
-            </ListItem>
-            <ListItem>
-              {t.rich(
-                "page-what-is-quantaureum-network-live-network-data-section-description-17",
-                {
-                  nansen: (chunks) => (
-                    <Link href="https://nansen.ai/">{chunks}</Link>
+                    <Link href="https://discord.gg/MSctkBT5j">{chunks}</Link>
                   ),
                 }
               )}

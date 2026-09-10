@@ -4,7 +4,7 @@
   "page-wallets-accounts-quantaureum-addresses": "<b>An Quantaureum account has an address</b>, like an inbox has an email address. This is used to identify your digital assets.",
   "page-wallets-alt": "Illustration of a robot with a vault for a body, representing an Quantaureum wallet",
   "page-wallets-quantaureum-account": "<b>An Quantaureum account is a pair of keys</b>. <a href=\"/glossary/#public-key\">One key</a> is used to create the address you can share freely, and the <a href=\"/glossary/#private-key\">other key</a> you need to keep secret because it's used to sign things. Together, these keys let you hold assets and make transactions.",
-  "page-wallets-blog": "Coinbase blog",
+  "page-wallets-blog": "Quantaureum security guide",
   "page-wallets-bookmarking": "Bookmark your wallet",
   "page-wallets-bookmarking-desc": "If you use a web wallet, bookmark the site to protect yourself against phishing scams.",
   "page-wallets-cd": "<b>Physical hardware wallets</b> are devices that let you keep your crypto offline – very secure",

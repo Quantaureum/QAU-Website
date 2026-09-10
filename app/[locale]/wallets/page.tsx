@@ -1,4 +1,3 @@
-import { Suspense } from "react"
 import { pick } from "lodash"
 import {
   getMessages,
@@ -18,7 +17,6 @@ import ListenToPlayer from "@/components/ListenToPlayer"
 import MainArticle from "@/components/MainArticle"
 import MarkdownCard from "@/components/MarkdownCard"
 import { StandaloneQuizWidget } from "@/components/Quiz/QuizWidget"
-import { SIMULATOR_ID } from "@/components/Simulator/constants"
 import Translation from "@/components/Translation"
 import { ButtonLink } from "@/components/ui/buttons/Button"
 import Callout from "@/components/ui/callout"
@@ -32,7 +30,6 @@ import { getMetadata } from "@/lib/utils/metadata"
 import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
 import WalletsPageJsonLD from "./page-jsonld"
-import { WalletSimulator } from "./WalletSimulator"
 
 import DappsImage from "@/public/images/doge-computer.png"
 import ETHImage from "@/public/images/qau-logo.png"
@@ -107,8 +104,8 @@ const Page = async (props: { params: Promise<PageParams> }) => {
   const articles = [
     {
       title: t("page-wallets-protecting-yourself"),
-      description: "MyCrypto",
-      link: "https://support.mycrypto.com/staying-safe/protecting-yourself-and-your-funds",
+      description: t("page-wallets-blog"),
+      link: "/security/",
       customEventOptions: {
         eventCategory: "Link",
         eventAction: "Clicked_external",
@@ -118,7 +115,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
     {
       title: t("page-wallets-keys-to-safety"),
       description: t("page-wallets-blog"),
-      link: "https://www.coinbase.com/learn/crypto-basics/how-to-secure-crypto",
+      link: "/guides/how-to-use-a-wallet/",
       customEventOptions: {
         eventCategory: "Link",
         eventAction: "Clicked_external",
@@ -172,7 +169,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
             },
           },
           {
-            href: `#${SIMULATOR_ID}`,
+            href: "/guides/how-to-use-a-wallet/",
             content: t("page-wallets-how-to-use-wallet"),
             matomo: {
               eventCategory: "Header buttons",
@@ -258,19 +255,6 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                 </div>
               </Grid>
             </Section>
-
-            <Suspense>
-              <WalletSimulator>
-                <div className="flex flex-col-reverse gap-space">
-                  <h2 className="text-h1">
-                    {t("page-wallets-how-to-use-wallet")}
-                  </h2>
-                  <p className="text-h4 text-body-medium italic">
-                    {t("page-wallets-interactive-tutorial")}
-                  </p>
-                </div>
-              </WalletSimulator>
-            </Suspense>
 
             <Section id="safety" className="py-16">
               <Grid balanced={2} className="gap-x-8 gap-y-8 lg:gap-x-16">

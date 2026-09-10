@@ -20,7 +20,6 @@ import CardList, {
   type CardProps as CardListCardProps,
 } from "@/components/CardList"
 import ContentFeedback from "@/components/ContentFeedback"
-import QauPriceCard from "@/components/QauPriceCard"
 import FileContributors from "@/components/FileContributors"
 import PageHero from "@/components/Hero/PageHero"
 import I18nProvider from "@/components/I18nProvider"
@@ -49,15 +48,10 @@ import { getMetadata } from "@/lib/utils/metadata"
 import { screens } from "@/lib/utils/screen"
 import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
-import { exchangesByCountryLastUpdated } from "@/data/exchangesByCountry"
-
-import CentralizedExchanges from "./_components/CentralizedExchangesLazy"
 import GetQauPageJsonLD from "./page-jsonld"
 
 import handEth from "@/public/images/developers-qau-blocks.png"
 import dapps from "@/public/images/doge-computer.png"
-import worldMapDark from "@/public/images/get-qau/world-map-dark.png"
-import worldMapLight from "@/public/images/get-qau/world-map-light.png"
 import qauCoins from "@/public/images/get-qau-coins.png"
 import wallet from "@/public/images/wallet.png"
 
@@ -83,7 +77,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
       title: t("page-get-qau-cex"),
       description: t("page-get-qau-cex-desc"),
       linkText: t("page-get-qau-cex-link-desc"),
-      href: "#country-picker",
+      href: "#ways-to-get",
     },
     {
       icon: HandCoins,
@@ -125,12 +119,12 @@ export default async function Page(props: { params: Promise<PageParams> }) {
   const safetyArticles: CardListCardProps[] = [
     {
       title: t("page-get-qau-article-protecting-yourself"),
-      link: "https://support.mycrypto.com/staying-safe/protecting-yourself-and-your-funds",
+      link: "/security/",
       description: t("page-get-qau-article-protecting-yourself-desc"),
     },
     {
       title: t("page-get-qau-article-keeping-crypto-safe"),
-      link: "https://blog.coinbase.com/the-keys-to-keeping-your-crypto-safe-96d497cce6cf",
+      link: "/guides/how-to-use-a-wallet/",
       description: t("page-get-qau-article-keeping-crypto-safe-desc"),
     },
   ]
@@ -163,7 +157,6 @@ export default async function Page(props: { params: Promise<PageParams> }) {
               sizes={`(max-width: ${screens.lg}) 100vw, 50vw`}
               className="h-auto w-full object-contain max-lg:max-h-64 max-lg:w-auto"
             />
-            <QauPriceCard className="absolute inset-x-0 top-1/2 mx-auto -translate-y-1/2" />
           </div>
         }
         title={t("page-get-qau-hero-title")}
@@ -171,7 +164,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
         buttons={[
           {
             content: t("page-get-qau-get-qau-btn"),
-            href: "#country-picker",
+            href: "#ways-to-get",
             matomo: {
               eventCategory: "Search by country button",
               eventAction: "click",
@@ -225,32 +218,17 @@ export default async function Page(props: { params: Promise<PageParams> }) {
                 title={t("page-get-qau-new-to-qau-title")}
                 description={t("page-get-qau-new-to-qau-desc")}
               >
-                <ButtonLink href="/eth/">
+                <ButtonLink href="/what-is-qau/">
                   {t("page-get-qau-whats-qau-link")}
                 </ButtonLink>
               </Callout>
             </Section>
 
             <Section
-              id="country-picker"
-              data-flow="skip"
-              className="relative flex min-h-[700px] flex-col items-center justify-center rounded-2xl bg-accent-a/5 px-page py-hero-3x dark:bg-accent-a/10"
+              id="ways-to-get"
+              className="rounded-2xl bg-accent-a/5 px-page py-hero-3x dark:bg-accent-a/10"
             >
-              <Image
-                src={worldMapLight}
-                alt=""
-                aria-hidden
-                sizes="(max-width: 896px) 100vw, 896px"
-                className="pointer-events-none absolute inset-x-0 top-0 mx-auto h-auto w-full max-w-4xl rounded-t-2xl select-none dark:hidden"
-              />
-              <Image
-                src={worldMapDark}
-                alt=""
-                aria-hidden
-                sizes="(max-width: 896px) 100vw, 896px"
-                className="pointer-events-none absolute inset-x-0 top-0 mx-auto hidden h-auto w-full max-w-4xl rounded-t-2xl select-none dark:block"
-              />
-              <div className="relative z-10 flex flex-col items-center gap-6">
+              <div className="flex flex-col items-center gap-6">
                 <Eyebrow>{t("page-get-qau-exchanges-eyebrow")}</Eyebrow>
                 <h2 className="text-center text-h1">
                   {t("page-get-qau-find-exchange-title")}
@@ -258,13 +236,14 @@ export default async function Page(props: { params: Promise<PageParams> }) {
                 <p className="max-w-2xl text-center text-lg text-body-medium">
                   {t("page-get-qau-find-exchange-desc")}
                 </p>
-              </div>
-
-              {/* CLIENT SIDE */}
-              <div className="relative z-10 mt-6 flex w-full flex-col items-center">
-                <CentralizedExchanges
-                  lastDataUpdateDate={exchangesByCountryLastUpdated}
-                />
+                <div className="flex flex-wrap justify-center gap-4">
+                  <ButtonLink href="https://discord.gg/MSctkBT5j">
+                    {t("page-get-qau-community-cta")}
+                  </ButtonLink>
+                  <ButtonLink href="https://x.com/ldf1570073" variant="outline">
+                    {t("page-get-qau-community-cta-x")}
+                  </ButtonLink>
+                </div>
               </div>
             </Section>
 

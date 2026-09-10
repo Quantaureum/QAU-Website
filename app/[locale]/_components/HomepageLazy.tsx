@@ -37,13 +37,3 @@ export const SavingsCarousel = dynamic(
     ),
   }
 )
-
-export const SimulatorSection = dynamic(
-  () => import("@/components/Homepage/SimulatorSection"),
-  {
-    ssr: false,
-    loading: () => (
-      <Skeleton heightClass="h-[900px] md:h-[1050px]" className="py-12" />
-    ),
-  }
-)

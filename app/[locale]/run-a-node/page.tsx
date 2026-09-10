@@ -348,11 +348,8 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                     </UnorderedList>
                   </CardContent>
                   <CardFooter buttons="full">
-                    <ButtonLink href="https://dappnode.com/collections/frontpage">
-                      {t("page-run-a-node-shop-dappnode")}
-                    </ButtonLink>
-                    <ButtonLink href="https://ava.do/">
-                      {t("page-run-a-node-shop-avado")}
+                    <ButtonLink href="/run-a-node/#build-your-own">
+                      {t("page-run-a-node-build-your-own-title")}
                     </ButtonLink>
                   </CardFooter>
                 </Card>
@@ -484,7 +481,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
               </div>
 
               <Grid balanced={2}>
-                <Card href="https://docs.dappnode.io">
+                <Card href="/developers/docs/">
                   <CardContent>
                     <CardTitle asChild>
                       <h4>
@@ -548,7 +545,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                 <p>{t("page-run-a-node-community-description-1")}</p>
                 <p>{t("page-run-a-node-community-description-2")}</p>
                 <div className="flex gap-4 text-center max-lg:flex-col">
-                  <ButtonLink href="https://discord.com/invite/dappnode">
+                  <ButtonLink href="https://discord.gg/MSctkBT5j">
                     <Discord />
                     &nbsp;
                     {t("page-run-a-node-community-link-1")}
@@ -574,18 +571,18 @@ const Page = async (props: { params: Promise<PageParams> }) => {
               <h2>{t("page-run-a-node-further-reading-title")}</h2>
               <UnorderedList>
                 <ListItem>
-                  <InlineLink href="https://github.com/ethereumbook/ethereumbook/blob/openedition/03clients.asciidoc#should-i-run-a-full-node">
+                  <InlineLink href="https://github.com/Quantaureum">
                     {t("page-run-a-node-further-reading-1-link")}
                   </InlineLink>{" "}
                   - <i>{t("page-run-a-node-further-reading-1-author")}</i>
                 </ListItem>
                 <ListItem>
-                  <InlineLink href="https://ethereum-on-arm-documentation.readthedocs.io/en/latest/">
+                  <InlineLink href="/developers/docs/">
                     {t("page-run-a-node-further-reading-2-link")}
                   </InlineLink>
                 </ListItem>
                 <ListItem>
-                  <InlineLink href="https://vitalik.qau.limo/general/2021/05/23/scaling.html">
+                  <InlineLink href="/community/online/">
                     {t("page-run-a-node-further-reading-3-link")}
                   </InlineLink>{" "}
                   - <i>{t("page-run-a-node-further-reading-3-author")}</i>
@@ -619,7 +616,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                     "page-run-a-node-staking-plans-ethstaker-link-description"
                   )}{" "}
                   -{" "}
-                  <InlineLink href="https://youtu.be/C2wwu1IlhDc">
+                  <InlineLink href="/developers/docs/">
                     {t("page-run-a-node-staking-plans-ethstaker-link-label")}
                   </InlineLink>
                 </p>
@@ -631,7 +628,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                 <p>{t("page-run-a-node-rasp-pi-description")}</p>
                 <UnorderedList>
                   <ListItem>
-                    <InlineLink href="https://ethereum-on-arm-documentation.readthedocs.io/en/latest">
+                    <InlineLink href="https://github.com/Quantaureum">
                       {t("page-run-a-node-rasp-pi-note-2-link")}
                     </InlineLink>{" "}
                     - <i>{t("page-run-a-node-rasp-pi-note-2-description")}</i>
