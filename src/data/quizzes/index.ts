@@ -56,10 +56,6 @@ const quizzes = {
     title: "layer-2",
     questions: ["rollups-1", "rollups-2", "rollups-3", "rollups-4"],
   },
-  merge: {
-    title: "learn-quizzes:page-assets-merge",
-    questions: ["merge-1", "merge-2", "merge-3", "merge-4", "merge-5"],
-  },
   gas: {
     title: "gas",
     questions: ["gas-1", "gas-2", "gas-3", "gas-4", "gas-5"],
@@ -298,7 +294,6 @@ const quizzesSectionsRaw: QuizzesHubSection[] = [
       { id: "bridges", level: "beginner" },
       { id: "layer-2", level: "intermediate" },
       { id: "run-a-node", level: "intermediate" },
-      { id: "merge", level: "intermediate" },
       { id: "proof-of-stake", level: "intermediate" },
       { id: "staking-solo", level: "advanced" },
       { id: "scaling", level: "advanced" },

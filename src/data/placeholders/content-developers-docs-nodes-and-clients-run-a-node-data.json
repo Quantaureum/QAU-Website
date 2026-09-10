@@ -30,5 +30,13 @@
   "\\content\\translations\\fr\\developers\\docs\\nodes-and-clients\\run-a-node\\diagram.png": {
     "hash": "7e3c66e0",
     "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAYAAAA7KqwyAAAACXBIWXMAAAsTAAALEwEAmpwYAAABWElEQVR4nG1Qq67CQBBdwU/wL/wA31BBgiDhA0gQOERFRcUmNU0qEEhERcUKREUFoqICUVFRtUHUkKxYkj03ZwIk9+ZOcrIzZx57ZpRzzgPwXdd5Y4wvy9JXVSU+QZ8c/bquBeTatvX7/d4rvK1tW/R9D+ccns+ncIwPhwN2ux2yLMM0Td/84/GAMQYqSRKkaSpBXdcoyxKr1Qrb7RaXy0VyRVEgz3N5l8sl4jhG0zRSr6IoAsHk+XwW8vNrVVXybjYbaK1xOp0wm82E4wBRgLexkZKHYcD9fv8FKmHudruJIsbku66Der1e3xuM4yjgEDZ8QI55rkd1VMJm3oEKAtE0TZimSfz/0Pd90FoHpVSIoigMwxDGcQzfFTiRF/5r/IWgCqrhMbkKa6/XK5RzzgKwxhh7PB5tkiSCOI5tlmV2Pp9bpZRdr9dWa23zPLdpmtqiKOxisbA/E4zKlib/CsIAAAAASUVORK5CYII="
+  },
+  "\\content\\translations\\de\\developers\\docs\\nodes-and-clients\\run-a-node\\diagram.png": {
+    "hash": "a1ffccb5",
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAYAAAA7KqwyAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNElEQVR4nGWRIavCcBTF/1/Ar7OPMBgYTIY185pBWDAMDAbBuLBmMAg2y8JgwbCwYBgYFhYWDAaDwbBw5HfB9x6+wWH33t177j1nbhgG8VyvVxVFoTzP7X0+n1WWpU6nk+WgqioD8eVy0XK5lLNpyQpt2+r5fBogbprGmpIk0Waz0ePx0Ov1MhCzzKVpag1/ty4WC8VxbPFutzNwCbUoijSfz3U8HlXXtRzMDBwOB+33e8N6vdZqtRLkfOcKBsjp3W63RsgC95HAdiT0fW9+AHKIIaGZWpZldi0xst3HRBKGQdd1NgyI7/e7+cESCNBOfrvdfi/AXYyB8Bufv4S0IAhM0j8CLsDd7wdSwGXoxgdMpcZFPxIwyfd9TSYTjcdj2zSdTuWcM3iepzAMDdRns5lGo5HeVvrJ4bLMzEEAAAAASUVORK5CYII="
+  },
+  "\\content\\translations\\es\\developers\\docs\\nodes-and-clients\\run-a-node\\diagram.png": {
+    "hash": "563703bd",
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAIAAAC0SDtlAAAACXBIWXMAAAsTAAALEwEAmpwYAAABQklEQVR4nFXQIavDMBAH8H6BfZrZ6UFhYqpiMDE3mKsoRFQEJiYKE5OBioqJQl1MxEFExImKiEJERURFRETFREVFH6TvMd5PHX+4O+6ieZ6XZTHGAIAQAgCklADAOYcAEZVSAKC1zvM8WgKtdd/3n8/Hez/Pc9u2hBBK6ePxWJNpmsZxFEJEnPO6rmWAiEWAiGVZVlUlhKCUXi6X2+3GOW/bNkrTdLfbVVX1fr8ZY/f7vSiK5/P5er3yPG+aJsuyNE0JIWVZKqUia61zDgD6vnfOdYG1tq7rLMvWnDEGAMYYrfX3hiGw1vbBMAze+67rlFKMMSGEMcY599uAiOM4zv8ty9J1HaU0jmNCiJTSe//dME3TWq/Wjw3DUP0xxiBitE5qmma/3x+Px8PhEMdxkiRRsN1uz+fz6XRKkuR6vW42mx9zhTgBxkIKKgAAAABJRU5ErkJggg=="
   }
 }
