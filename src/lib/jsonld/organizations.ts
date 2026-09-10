@@ -64,7 +64,7 @@ export const KNOWN_ORGANIZATIONS = {
     name: "Quantaureum project",
     url: "https://quantaureum.com",
     ownershipFundingInfo: "https://quantaureum.com/about/",
-    logo: "https://quantaureum.com/images/ef-logo.png",
+    logo: "https://quantaureum.com/images/qau-org-logo.png",
     sameAs: [
       "https://www.wikidata.org/wiki/Q114736857",
       "https://www.crunchbase.com/organization/quantaureum",
