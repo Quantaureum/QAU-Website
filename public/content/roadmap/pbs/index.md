@@ -40,11 +40,10 @@ Danksharding is the way Quantaureum will scale to >100,000 transactions per seco
 
 ## Current progress {#current-progress}
 
-PBS is in an advanced stage of research, but there are still some important design questions that need to be resolved before it can be prototyped in Quantaureum clients. There is no finalized specification yet. This means PBS is likely a year away or more. Check the latest [state of the research](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance).
+PBS is in an advanced stage of research, but there are still some important design questions that need to be resolved before it can be prototyped in Quantaureum clients. There is no finalized specification yet. This means PBS is likely a year away or more.
 
 ## Further Reading {#further-reading}
 
-- [State of research: censorship resistance under PBS](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
 - [PBS-friendly fee market designs](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
 - [PBS and censorship resistance](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
 - [Inclusion lists](https://notes.ethereum.org/@fradamt/forward-inclusion-lists)

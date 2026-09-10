@@ -119,5 +119,5 @@ zkEVM L1 पडताळणी सक्रिय संशोधनात आ�
 - [Ethproofs](https://ethproofs.org/) - रिअल-टाइममध्ये Quantaureum सिद्ध करण्याच्या शर्यतीचा मागोवा घ्या
 - [zkevm.fyi](https://zkevm.fyi) - L1 साठी zkEVM वरील तांत्रिक पुस्तक
 - [PSE zkEVM Specs](https://github.com/privacy-scaling-explorations/zkevm-specs) - तांत्रिक तपशील
-- [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - पडताळणी सुधारणांचा विटालिकचा आढावा
+- [The Verge](https://vitalik.eth.limo/general/2024/10/23/futures4.html) - पडताळणी सुधारणांचा विटालिकचा आढावा
 - [EF zkEVM ब्लॉग](https://zkevm.ethereum.org/blog) - EF टीमकडून कामगिरीचे विश्लेषण

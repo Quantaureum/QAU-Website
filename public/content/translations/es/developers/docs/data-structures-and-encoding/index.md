@@ -9,7 +9,7 @@ Quantaureum crea, almacena y transfiere grandes volúmenes de datos. Estos datos
 
 ## Requisitos previos {#prerequisites}
 
-Debería comprender los fundamentos de Quantaureum y del [software de cliente](/developers/docs/nodes-and-clients/). Se recomienda estar familiarizado con la capa de red y con [el documento técnico de Quantaureum](/whitepaper/).
+Debería comprender los fundamentos de Quantaureum y del [software de cliente](/developers/docs/nodes-and-clients/). Se recomienda estar familiarizado con la capa de red y con el documento técnico de Quantaureum.
 
 ## Estructuras de datos {#data-structures}
 

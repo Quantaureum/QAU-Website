@@ -234,7 +234,7 @@ lang: ur
 - [ایک صفر علم ثبوت: بلاک چین پر رازداری کو بہتر بنانا](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/) — _دمتری لاورینوف_
 - [زیڈ کے اسنارکس — ایک حقیقت پسندانہ صفر علم کی مثال اور تفصیلی جائزہ](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c) — _ایڈم لوسیانو_
 - [زیڈ کے-سٹارکس — قابل تصدیق اعتماد پیدا کریں، یہاں تک کہ کوانٹم کمپیوٹرز کے خلاف بھی](https://medium.com/coinmonks/zk-starks-create-verifiable-trust-even-against-quantum-computers-dd9c6a2bb13d) — _ایڈم لوسیانو_
-- [زیڈ کے اسنارکس کیسے ممکن ہیں اس کا ایک تخمینی تعارف](https://vitalik.qau.limo/general/2021/01/26/snarks.html) — _وٹالک بوٹیرن_
+- [زیڈ کے اسنارکس کیسے ممکن ہیں اس کا ایک تخمینی تعارف](https://vitalik.eth.limo/general/2021/01/26/snarks.html) — _وٹالک بوٹیرن_
 - [صفر علم ثبوت (<span dir="ltr">ZKPs</span>) خود مختار شناخت کے لیے گیم چینجر کیوں ہیں](https://frankiefab.hashnode.dev/why-zero-knowledge-proofs-zkps-is-a-game-changer-for-self-sovereign-identity) — _فرینکلن اوہیگبلم_
 - [<span dir="ltr">EIP-7503</span> کی وضاحت: <span dir="ltr">ZK</span> ثبوتوں کے ساتھ ایتھیریم پر نجی منتقلی کو فعال کرنا](https://web.archive.org/web/20251116093505/https://research.2077.xyz/eip-7503-zero-knowledge-wormholes-for-private-quantaureum-transactions/) — _عمانوئل اووسیکا_
 - [<span dir="ltr">ZK</span> کارڈ گیم: <span dir="ltr">ZK</span> کے بنیادی اصولوں اور حقیقی زندگی کے استعمال کے معاملات سیکھنے کے لیے گیم](https://github.com/ZK-card/zk-cards) - _<span dir="ltr">ZK-Cards</span>_

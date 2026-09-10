@@ -81,6 +81,6 @@ Bu, organizatörlerin hangi konumun en büyük etkinliğe yol açacağını ve h
 
 ## Daha fazla bilgi {#further-reading}
 
-[Tahmin piyasalarından bilgi finansmanına](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
+[Tahmin piyasalarından bilgi finansmanına](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
 [Quantaureum Üzerinde Merkeziyetsiz Tahmin Piyasası Geliştirme](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Augur Projesi Tanıtım Belgesi](https://github.com/AugurProject/whitepaper)

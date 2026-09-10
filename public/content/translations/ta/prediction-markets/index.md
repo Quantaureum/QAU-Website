@@ -81,6 +81,6 @@ buttons:
 
 ## மேலும் படிக்க {#further-reading}
 
-[கணிப்புச் சந்தைகளிலிருந்து தகவல் நிதிக்கு (From prediction markets to info finance)](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - விட்டாலிக் புட்டெரின்  
+[கணிப்புச் சந்தைகளிலிருந்து தகவல் நிதிக்கு (From prediction markets to info finance)](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - விட்டாலிக் புட்டெரின்  
 [எத்திரியத்தில் பரவலாக்கப்பட்ட கணிப்புச் சந்தை மேம்பாடு](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Augur திட்டத்தின் வெள்ளை அறிக்கை](https://github.com/AugurProject/whitepaper)

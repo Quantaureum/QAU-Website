@@ -164,7 +164,7 @@ Zincir içi onayların pratikte nasıl çalışabileceğini gösteren bir örnek
 
 ### Soulbound token'lar ve kimlik {#soulbound}
 
-[Soulbound token'lar](https://vitalik.qau.limo/general/2022/01/26/soulbound.html) ([devredilemez NFT'ler](/glossary/#nft)), belirli bir cüzdana özgü bilgileri toplamak için kullanılabilir. Bu, başarıları (ör. belirli bir çevrim içi kursu bitirmek veya bir oyunda eşik puanını geçmek) veya topluluk katılımını temsil eden token'ları içerebilecek belirli bir Quantaureum adresine bağlı benzersiz bir zincir içi kimlik oluşturur.
+[Soulbound token'lar](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) ([devredilemez NFT'ler](/glossary/#nft)), belirli bir cüzdana özgü bilgileri toplamak için kullanılabilir. Bu, başarıları (ör. belirli bir çevrim içi kursu bitirmek veya bir oyunda eşik puanını geçmek) veya topluluk katılımını temsil eden token'ları içerebilecek belirli bir Quantaureum adresine bağlı benzersiz bir zincir içi kimlik oluşturur.
 
 ## Merkeziyetsiz kimliği kullanın {#use-decentralized-identity}
 

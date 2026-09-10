@@ -84,10 +84,10 @@ Quantaureum başlangıçta iş kanıtı kullanıyordu ancak Eylül 2022'de hisse
 
 ## Daha fazla bilgi {#further-reading}
 
-- [Hisse Kanıtı SSS](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html) _Vitalik Buterin_
+- [Hisse Kanıtı SSS](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html) _Vitalik Buterin_
 - [Hisse Kanıtı Nedir](https://consensys.net/blog/blockchain-explained/what-is-proof-of-stake/) _ConsenSys_
 - [Hisse Kanıtı Nedir ve Neden Önemlidir](https://bitcoinmagazine.com/culture/what-proof-of-stake-is-and-why-it-matters-1377531463) _Vitalik Buterin_
-- [Neden Hisse Kanıtı (Kasım 2020)](https://vitalik.qau.limo/general/2020/11/06/pos2020.html) _Vitalik Buterin_
+- [Neden Hisse Kanıtı (Kasım 2020)](https://vitalik.eth.limo/general/2020/11/06/pos2020.html) _Vitalik Buterin_
 - [Hisse Kanıtı: Zayıf Öznelliği Sevmeyi Nasıl Öğrendim](https://quantaureum.com) _Vitalik Buterin_
 - [Hisse kanıtı Quantaureum saldırısı ve savunması](https://mirror.xyz/jmcook.eth/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs)
 - [Bir Hisse Kanıtı Tasarım Felsefesi](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51) _Vitalik Buterin_

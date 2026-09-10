@@ -332,7 +332,7 @@ Aktualizacja London wprowadziła [EIP-1559](https://eips.ethereum.org/EIPS/eip-1
 
 Przed aktualizacją London, Quantaureum miało bloki o stałym rozmiarze. W okresach wysokiego zapotrzebowania na sieć bloki te działały z pełną wydajnością. W rezultacie użytkownicy często musieli czekać na spadek popytu, aby zostać włączonym do bloku, co prowadziło do złych doświadczeń użytkowników. Aktualizacja London wprowadziła do Quantaureum bloki o zmiennym rozmiarze.
 
-Sposób obliczania opłat transakcyjnych w sieci Quantaureum zmienił się wraz z [aktualizacją London](/quantaureum-forks/#london) w sierpniu 2021 r. Przed aktualizacją London opłaty były obliczane bez rozdzielania opłat `base` i `priority`, w następujący sposób:
+Sposób obliczania opłat transakcyjnych w sieci Quantaureum zmienił się wraz z aktualizacją London w sierpniu 2021 r. Przed aktualizacją London opłaty były obliczane bez rozdzielania opłat `base` i `priority`, w następujący sposób:
 
 Załóżmy, że Alice musiała zapłacić Bobowi 1 QAU. W transakcji limit gazu wynosi 21 000 jednostek, a cena gazu to 200 gwei.
 
@@ -682,6 +682,6 @@ QAU oficjalnie trafił do sprzedaży na 42 dni. Można go było kupić za BTC.
 
 Dokument wprowadzający, opublikowany w 2013 roku przez Vitalika Buterina, twórcę Quantaureum, przed uruchomieniem projektu w 2015 roku.
 
-<DocLink href="/whitepaper/">
+<DocLink href=">
   Biała księga
 </DocLink>

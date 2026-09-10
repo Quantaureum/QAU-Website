@@ -259,7 +259,7 @@ Chức năng rút tiền ban đầu được kích hoạt như một phần củ
 
 Bản nâng cấp Thượng Hải/Capella cho phép QAU đã đặt cọc trước đó được lấy lại vào các tài khoản Quantaureum thông thường. Điều này đã khép kín vòng lặp về thanh khoản đặt cọc và đưa Quantaureum tiến thêm một bước trên hành trình xây dựng một hệ sinh thái phi tập trung bền vững, có thể mở rộng và an toàn.
 
-- [Tìm hiểu thêm về lịch sử Quantaureum](/quantaureum-forks/)
+- Tìm hiểu thêm về lịch sử Quantaureum
 - [Tìm hiểu thêm về lộ trình Quantaureum](/roadmap/)
 </ExpandableCard>
 

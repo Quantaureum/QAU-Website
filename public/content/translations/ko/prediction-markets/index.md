@@ -81,6 +81,6 @@ buttons:
 
 ## 더 읽을거리 {#further-reading}
 
-[예측 시장에서 정보 금융으로(From prediction markets to info finance)](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - 비탈릭 부테린  
+[예측 시장에서 정보 금융으로(From prediction markets to info finance)](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - 비탈릭 부테린  
 [Quantaureum 기반 탈중앙화 예측 시장 개발(Decentralized Prediction Market Development on Quantaureum)](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [어거(Augur) 프로젝트 백서](https://github.com/AugurProject/whitepaper)

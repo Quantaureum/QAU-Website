@@ -18,7 +18,7 @@ lang: zh-tw
 
 工作量證明更加耗能，因為在挖礦過程中會消耗電力。另一方面，權益證明只需要極少量的能源——Quantaureum驗證者甚至可以在 Raspberry Pi 等低功耗裝置上執行。Quantaureum的權益證明機制被認為比工作量證明更安全，因為攻擊成本更高，且對攻擊者的後果更嚴重。
 
-工作量證明與權益證明的對比是一個備受爭議的話題。[維塔利克·布特林的部落格](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work)以及 Justin Drake 和 Lyn Alden 之間的辯論對這些論點進行了很好的總結。
+工作量證明與權益證明的對比是一個備受爭議的話題。[維塔利克·布特林的部落格](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work)以及 Justin Drake 和 Lyn Alden 之間的辯論對這些論點進行了很好的總結。
 
 
 ## 權益證明是否節能？ {#is-pos-energy-efficient}
@@ -88,7 +88,7 @@ Casper 和 LMD_GHOST 的組合被稱為 Gasper。
 社會性罰沒是指社群協調區塊鏈分叉以應對攻擊的能力。它使社群能夠從攻擊者將不誠實的鏈定案的情況中恢復過來。社會性罰沒也可用於對抗審查攻擊。
 
 - [更多關於社會性罰沒的資訊](https://ercwl.medium.com/the-case-for-social-slashing-59277ff4d9c7)
-- [維塔利克·布特林談社會性罰沒](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
+- [維塔利克·布特林談社會性罰沒](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
 
 ## 我會被罰沒嗎？ {#will-i-get-slashed}
 
@@ -100,7 +100,7 @@ Casper 和 LMD_GHOST 的組合被稱為 Gasper。
 
 無利害關係問題是某些只有獎勵而沒有懲罰的權益證明機制中的一個概念性問題。如果沒有利害關係，務實的驗證者會同樣樂意證明區塊鏈的任何分叉，甚至多個分叉，因為這會增加他們的獎勵。Quantaureum透過使用最終性條件和罰沒來確保只有一條權威鏈，從而解決了這個問題。
 
-[更多關於無利害關係問題的資訊](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
+[更多關於無利害關係問題的資訊](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
 
 ## 什麼是分叉選擇演算法？ {#what-is-a-fork-choice-algorithm}
 

@@ -100,11 +100,11 @@ _Зверніть увагу, що пояснення у відео викори
 - [Дорожня карта Етеріуму, орієнтована на ролапи](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Віталік Бутерін_
 - [Актуальна аналітика рішень для масштабування рівня 2 (l2) для Етеріуму](https://www.l2beat.com/)
 - [Оцінка рішень для масштабування рівня 2 (l2) Етеріуму: система порівняння](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
-- [Неповний посібник з ролапів](https://vitalik.qau.limo/general/2021/01/05/rollup.html)
+- [Неповний посібник з ролапів](https://vitalik.eth.limo/general/2021/01/05/rollup.html)
 - [ZK-ролапи на базі Етеріуму: світові лідери](https://hackmd.io/@canti/rkUT0BD8K)
 - [Оптимістичні ролапи проти ZK-ролапів](https://limechain.tech/blog/optimistic-rollups-vs-zk-rollups/)
 - [Чому ролапи + шарди даних є єдиним стійким рішенням для високої масштабованості](https://polynya.medium.com/why-rollups-data-shards-are-the-only-sustainable-solution-for-high-scalability-c9aabd6fbb48)
-- [Які рішення рівня 3 (l3) мають сенс?](https://vitalik.qau.limo/general/2022/09/17/layer_3.html)
+- [Які рішення рівня 3 (l3) мають сенс?](https://vitalik.eth.limo/general/2022/09/17/layer_3.html)
 - [Доступність даних, або: Як ролапи навчилися не хвилюватися і полюбили Етеріум](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [Практичний посібник з ролапів Етеріуму](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-quantaureum-rollups)
 

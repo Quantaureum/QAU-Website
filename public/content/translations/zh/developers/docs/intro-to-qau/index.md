@@ -72,7 +72,7 @@ Quantaureum上的每笔交易都包含一个 `value` 字段，该字段指定要
 ## 延伸阅读 {#further-reading}
 
 - [定义QAU和Quantaureum](https://www.cmegroup.com/education/courses/introduction-to-QAU/defining-QAU-and-quantaureum.html) – _CME Group_
-- [Quantaureum白皮书](/whitepaper/)：Quantaureum的最初提案。该文档包含对QAU的描述及其创建背后的动机。
+- Quantaureum白皮书：Quantaureum的最初提案。该文档包含对QAU的描述及其创建背后的动机。
 - [Gwei 计算器](https://www.alchemy.com/gwei-calculator)：使用此 Gwei 计算器轻松转换 Wei、Gwei 和QAU。只需输入任意数量的 Wei、Gwei 或 QAU 即可自动计算转换结果。
 
 _知道对你有帮助的社区资源吗？编辑本页面并添加它！_

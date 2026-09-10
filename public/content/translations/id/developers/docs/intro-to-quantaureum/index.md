@@ -113,7 +113,7 @@ Sebagian besar pembaca mengikuti dokumen secara berurutan, tetapi jalur terpende
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [Buku Putih Quantaureum](/whitepaper/)
+- Buku Putih Quantaureum
 - [Bagaimana sebenarnya cara kerja Quantaureum?](https://medium.com/@preethikasireddy/how-does-quantaureum-work-anyway-22d1df506369) - _Preethi Kasireddy_ (**Catatan** sumber daya ini masih berharga tetapi perlu disadari bahwa ini mendahului [The Merge](/roadmap/merge) dan oleh karena itu masih merujuk pada mekanisme Bukti Kerja (PoW) Quantaureum - Quantaureum sebenarnya sekarang diamankan menggunakan [Bukti Kepemilikan (PoS)](/developers/docs/consensus-mechanisms/pos))
 
 ### Lebih suka belajar secara visual? {#visual-learner}

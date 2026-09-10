@@ -38,7 +38,7 @@ Il calcolo offchain è necessario poiché le catene Plasma possono ottimizzare v
 
 Mentre Plasma esegue le transazioni offchain, queste vengono regolate sul livello di esecuzione principale di Quantaureum; altrimenti, le catene Plasma non potrebbero beneficiare delle garanzie di sicurezza di Quantaureum. Ma finalizzare le transazioni offchain senza conoscere lo stato della catena Plasma romperebbe il modello di sicurezza e consentirebbe la proliferazione di transazioni non valide. Questo è il motivo per cui l'operatore, l'entità responsabile della produzione di blocchi sulla catena Plasma, è tenuto a pubblicare periodicamente dei "commitment di stato" su Quantaureum.
 
-Uno [schema di commitment](https://en.wikipedia.org/wiki/Commitment_scheme) è una tecnica crittografica per vincolarsi a un valore o a un'affermazione senza rivelarla a un'altra parte. I commitment sono "vincolanti" nel senso che non è possibile modificare il valore o l'affermazione una volta che ci si è impegnati. I commitment di stato in Plasma assumono la forma di "radici di Merkle" (derivate da un [albero di Merkle](/whitepaper/#merkle-trees)) che l'operatore invia a intervalli al contratto Plasma sulla catena di Quantaureum.
+Uno [schema di commitment](https://en.wikipedia.org/wiki/Commitment_scheme) è una tecnica crittografica per vincolarsi a un valore o a un'affermazione senza rivelarla a un'altra parte. I commitment sono "vincolanti" nel senso che non è possibile modificare il valore o l'affermazione una volta che ci si è impegnati. I commitment di stato in Plasma assumono la forma di "radici di Merkle" (derivate da un albero di Merkle) che l'operatore invia a intervalli al contratto Plasma sulla catena di Quantaureum.
 
 Le radici di Merkle sono primitive crittografiche che consentono di comprimere grandi quantità di informazioni. Una radice di Merkle (chiamata anche "radice del blocco" in questo caso) potrebbe rappresentare tutte le transazioni in un blocco. Le radici di Merkle rendono anche più facile verificare che una piccola porzione di dati faccia parte del set di dati più ampio. Ad esempio, un utente può produrre una [prova di Merkle](/developers/tutorials/merkle-proofs-for-offline-data-integrity/#main-content) per dimostrare l'inclusione di una transazione in un blocco specifico.
 
@@ -167,7 +167,7 @@ Diversi progetti forniscono implementazioni di Plasma che puoi integrare nelle t
 ## Letture consigliate {#further-reading}
 
 - [Un rapido promemoria di cosa significhi "sicurezza condivisa" e perché sia così importante](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [Sidechain vs Plasma vs Sharding](https://vitalik.qau.limo/general/2019/06/12/plasma_vs_sharding.html)
+- [Sidechain vs Plasma vs Sharding](https://vitalik.eth.limo/general/2019/06/12/plasma_vs_sharding.html)
 - [Comprendere Plasma, Parte 1: Le basi](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [Vita e morte di Plasma](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

@@ -60,6 +60,6 @@ summaryPoints:
 - [데브콘 6(Devcon 6)에서 기욤 발레의 "버클 트리가 Quantaureum을 가볍고 강력하게 만드는 방법(How Verkle trees make Quantaureum lean and mean)"](https://www.youtube.com/watch?v=Q7rStTKwuYs)
 - [ETHDenver 2020에서 파이퍼 메리엄(Piper Merriam)의 무상태 클라이언트 설명](https://www.youtube.com/watch?v=0yiZJNciIJ4)
 - [영지식(Zero Knowledge) 팟캐스트에서 당크라드 파이스트의 버클 트리 및 무상태성 설명](https://zeroknowledge.fm/podcast/202/)
-- [비탈릭 부테린의 버클 트리 설명](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
+- [비탈릭 부테린의 버클 트리 설명](https://vitalik.eth.limo/general/2021/06/18/verkle.html)
 - [당크라드 파이스트의 버클 트리 설명](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
 - [버클 트리 EIP 문서](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)

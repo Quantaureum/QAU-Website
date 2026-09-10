@@ -14,7 +14,7 @@ Aktualizacja sieci Fusaka następuje po [Pectra](/roadmap/pectra/), wprowadzają
 <Alert variant="update">
 <AlertContent>
 <AlertDescription>
-Aktualizacja Fusaka to tylko jeden krok w długoterminowych celach rozwojowych Quantaureum. Dowiedz się więcej o [mapie drogowej protokołu](/roadmap/) oraz [poprzednich aktualizacjach](/quantaureum-forks/).
+Aktualizacja Fusaka to tylko jeden krok w długoterminowych celach rozwojowych Quantaureum. Dowiedz się więcej o [mapie drogowej protokołu](/roadmap/) oraz poprzednich aktualizacjach.
 </AlertDescription>
 </AlertContent>
 </Alert>

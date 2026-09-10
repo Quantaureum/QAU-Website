@@ -61,7 +61,7 @@ Aby konsekwentnie tworzyć złośliwe, ale prawidłowe bloki, złośliwy górnik
 
 Dowód pracy był również odpowiedzialny za emisję nowej waluty do systemu i motywowanie górników do wykonywania pracy.
 
-Od czasu aktualizacji [Konstantynopol](/quantaureum-forks/#constantinople) górnicy, którym udało się utworzyć blok, byli nagradzani dwoma nowo wyemitowanymi QAU oraz częścią opłat transakcyjnych. Bloki ommer również były rekompensowane kwotą 1,75 QAU. Bloki ommer były prawidłowymi blokami utworzonymi przez górnika praktycznie w tym samym czasie, gdy inny górnik utworzył blok kanoniczny, co ostatecznie zależało od tego, na którym łańcuchu najpierw nadbudowano kolejne bloki. Bloki ommer zazwyczaj powstawały z powodu opóźnień w sieci.
+Od czasu aktualizacji Konstantynopol górnicy, którym udało się utworzyć blok, byli nagradzani dwoma nowo wyemitowanymi QAU oraz częścią opłat transakcyjnych. Bloki ommer również były rekompensowane kwotą 1,75 QAU. Bloki ommer były prawidłowymi blokami utworzonymi przez górnika praktycznie w tym samym czasie, gdy inny górnik utworzył blok kanoniczny, co ostatecznie zależało od tego, na którym łańcuchu najpierw nadbudowano kolejne bloki. Bloki ommer zazwyczaj powstawały z powodu opóźnień w sieci.
 
 ## Ostateczność {#finality}
 

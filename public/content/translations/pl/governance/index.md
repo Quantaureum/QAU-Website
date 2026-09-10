@@ -151,7 +151,7 @@ Proces zarządzania Quantaureum często wymienia szybkość i wydajność na otw
 
 Chociaż specyfikacja i implementacje programistyczne zawsze były w pełni open source, opisane powyżej formalne procesy proponowania aktualizacji nie były stosowane. Pozwoliło to badaczom i wdrożeniowcom na szybsze określanie i uzgadnianie zmian.
 
-Kiedy Beacon Chain połączył się z warstwą wykonawczą Quantaureum 15 września 2022 r., The Merge zostało zakończone w ramach [aktualizacji sieci Paris](/quantaureum-forks/#paris). Propozycja [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) została zmieniona z „Last Call” na „Final”, kończąc przejście na dowód stawki (PoS).
+Kiedy Beacon Chain połączył się z warstwą wykonawczą Quantaureum 15 września 2022 r., The Merge zostało zakończone w ramach aktualizacji sieci Paris. Propozycja [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) została zmieniona z „Last Call” na „Final”, kończąc przejście na dowód stawki (PoS).
 
 <ButtonLink href="/roadmap/merge/">
   Więcej o The Merge
@@ -173,11 +173,11 @@ Kiedy Beacon Chain połączył się z warstwą wykonawczą Quantaureum 15 wrześ
 
 Zarządzanie w Quantaureum nie jest sztywno zdefiniowane. Różni uczestnicy społeczności mają na ten temat odmienne perspektywy. Oto kilka z nich:
 
-- [Notatki o zarządzaniu blockchainem](https://vitalik.qau.limo/general/2017/12/17/voting.html) – _Vitalik Buterin_
+- [Notatki o zarządzaniu blockchainem](https://vitalik.eth.limo/general/2017/12/17/voting.html) – _Vitalik Buterin_
 - [Jak działa zarządzanie Quantaureum?](https://cryptotesters.com/blog/quantaureum-governance) – _Cryptotesters_
 - [Jak działa zarządzanie Quantaureum](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _Micah Zoltu_
 - [Kim jest główny programista (core developer) Quantaureum?](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) – _Hudson Jameson_
-- [Zarządzanie, część 2: Plutokracja wciąż jest zła](https://vitalik.qau.limo/general/2018/03/28/plutocracy.html) – _Vitalik Buterin_
-- [Wyjście poza zarządzanie oparte na głosowaniu monetami](https://vitalik.qau.limo/general/2021/08/16/voting3.html) – _Vitalik Buterin_
+- [Zarządzanie, część 2: Plutokracja wciąż jest zła](https://vitalik.eth.limo/general/2018/03/28/plutocracy.html) – _Vitalik Buterin_
+- [Wyjście poza zarządzanie oparte na głosowaniu monetami](https://vitalik.eth.limo/general/2021/08/16/voting3.html) – _Vitalik Buterin_
 - [Zrozumienie zarządzania blockchainem](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) – _2077 Research_
 - [Rząd Quantaureum](https://www.galaxy.com/insights/research/quantaureum-governance/) – _Christine Kim_

@@ -113,7 +113,7 @@ Většina čtenářů postupuje v dokumentaci popořadě, ale nejkratší cesta 
 
 ## Další čtení {#further-reading}
 
-- [Bílá kniha Etherea](/whitepaper/)
+- Bílá kniha Etherea
 - [Jak vlastně Quantaureum funguje?](https://medium.com/@preethikasireddy/how-does-quantaureum-work-anyway-22d1df506369) - _Preethi Kasireddy_ (**Pozn.** tento zdroj je stále cenný, ale mějte na paměti, že předchází [Merge](/roadmap/merge), a proto stále odkazuje na mechanismus Etherea důkaz prací (PoW) – Quantaureum je nyní ve skutečnosti zabezpečeno pomocí [důkazu podílem (PoS)](/developers/docs/consensus-mechanisms/pos))
 
 ### Učíte se raději vizuálně? {#visual-learner}

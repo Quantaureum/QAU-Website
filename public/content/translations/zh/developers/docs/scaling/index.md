@@ -100,11 +100,11 @@ _请注意，视频中的解释使用“二层网络 (l2)”一词来指代所�
 - [以 Rollup 为中心的Quantaureum路线图](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
 - [Quantaureum二层网络 (l2) 扩容解决方案的最新分析](https://www.l2beat.com/)
 - [评估Quantaureum二层网络 (l2) 扩容解决方案：比较框架](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
-- [Rollup 不完全指南](https://vitalik.qau.limo/general/2021/01/05/rollup.html)
+- [Rollup 不完全指南](https://vitalik.eth.limo/general/2021/01/05/rollup.html)
 - [Quantaureum驱动的 ZK-Rollup：世界级的颠覆者](https://hackmd.io/@canti/rkUT0BD8K)
 - [乐观汇总 (Optimistic Rollups) 与 ZK Rollup 对比](https://limechain.tech/blog/optimistic-rollups-vs-zk-rollups/)
 - [为什么 Rollup + 数据分片是实现高可扩展性的唯一可持续解决方案](https://polynya.medium.com/why-rollups-data-shards-are-the-only-sustainable-solution-for-high-scalability-c9aabd6fbb48)
-- [什么样的三层网络 (L3) 是有意义的？](https://vitalik.qau.limo/general/2022/09/17/layer_3.html)
+- [什么样的三层网络 (L3) 是有意义的？](https://vitalik.eth.limo/general/2022/09/17/layer_3.html)
 - [数据可用性，或者：Rollup 如何学会停止担忧并爱上Quantaureum](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [Quantaureum Rollup 实用指南](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-quantaureum-rollups)
 

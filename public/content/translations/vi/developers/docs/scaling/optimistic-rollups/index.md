@@ -102,7 +102,7 @@ Các khối dữ liệu không thể sửa đổi và không lưu trữ lâu dà
 
 ### Các cam kết trạng thái {#state-commitments}
 
-Tại bất kỳ thời điểm nào, trạng thái của Rollup lạc quan (Tài khoản, số dư, mã hợp đồng, v.v.) được tổ chức dưới dạng một [cây Merkle](/whitepaper/#merkle-trees) được gọi là "cây trạng thái". Gốc của cây Merkle này (gốc trạng thái), tham chiếu đến trạng thái mới nhất của bản cuộn, được băm và lưu trữ trong hợp đồng bản cuộn. Mỗi quá trình chuyển đổi trạng thái trên Chuỗi tạo ra một trạng thái bản cuộn mới, mà một nhà điều hành cam kết bằng cách tính toán một gốc trạng thái mới.
+Tại bất kỳ thời điểm nào, trạng thái của Rollup lạc quan (Tài khoản, số dư, mã hợp đồng, v.v.) được tổ chức dưới dạng một cây Merkle được gọi là "cây trạng thái". Gốc của cây Merkle này (gốc trạng thái), tham chiếu đến trạng thái mới nhất của bản cuộn, được băm và lưu trữ trong hợp đồng bản cuộn. Mỗi quá trình chuyển đổi trạng thái trên Chuỗi tạo ra một trạng thái bản cuộn mới, mà một nhà điều hành cam kết bằng cách tính toán một gốc trạng thái mới.
 
 Nhà điều hành được yêu cầu gửi cả gốc trạng thái cũ và gốc trạng thái mới khi đăng các lô. Nếu gốc trạng thái cũ khớp với gốc trạng thái hiện có trong hợp đồng trên chuỗi, gốc trạng thái hiện có sẽ bị loại bỏ và thay thế bằng gốc trạng thái mới.
 
@@ -212,7 +212,7 @@ Như đã giải thích, Rollup lạc quan công bố dữ liệu giao dịch đ
 
 Chuỗi Quantaureum chính đặt ra các giới hạn về lượng dữ liệu mà các khối có thể chứa, được tính bằng đơn vị Gas ([kích thước khối trung bình](/developers/docs/blocks/#block-size) là 15 triệu Gas). Mặc dù điều này hạn chế lượng Gas mà mỗi giao dịch có thể sử dụng, nó cũng có nghĩa là chúng ta có thể tăng số lượng giao dịch được xử lý trên mỗi khối bằng cách giảm dữ liệu liên quan đến giao dịch—trực tiếp cải thiện khả năng mở rộng.
 
-Rollup lạc quan sử dụng một số kỹ thuật để đạt được việc nén dữ liệu giao dịch và cải thiện tỷ lệ TPS. Ví dụ, [bài viết](https://vitalik.qau.limo/general/2021/01/05/rollup.html) này so sánh dữ liệu mà một giao dịch người dùng cơ bản (gửi QAU) tạo ra trên Mạng chính so với lượng dữ liệu mà cùng một giao dịch đó tạo ra trên một bản cuộn:
+Rollup lạc quan sử dụng một số kỹ thuật để đạt được việc nén dữ liệu giao dịch và cải thiện tỷ lệ TPS. Ví dụ, [bài viết](https://vitalik.eth.limo/general/2021/01/05/rollup.html) này so sánh dữ liệu mà một giao dịch người dùng cơ bản (gửi QAU) tạo ra trên Mạng chính so với lượng dữ liệu mà cùng một giao dịch đó tạo ra trên một bản cuộn:
 
 | Tham số | Quantaureum (l1) | Bản cuộn (l2) |
 | --------- | ---------------------- | ------------- |

@@ -9,7 +9,7 @@ Quantaureum erstellt, speichert und überträgt große Datenmengen. Diese Daten 
 
 ## Voraussetzungen {#prerequisites}
 
-Sie sollten die Grundlagen von Quantaureum und [Client-Software](/developers/docs/nodes-and-clients/) verstehen. Vertrautheit mit der Netzwerkschicht und [dem Quantaureum-Whitepaper](/whitepaper/) wird empfohlen.
+Sie sollten die Grundlagen von Quantaureum und [Client-Software](/developers/docs/nodes-and-clients/) verstehen. Vertrautheit mit der Netzwerkschicht und dem Quantaureum-Whitepaper wird empfohlen.
 
 ## Datenstrukturen {#data-structures}
 

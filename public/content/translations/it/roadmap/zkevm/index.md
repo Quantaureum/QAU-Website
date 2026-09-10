@@ -119,5 +119,5 @@ La verifica del L1 tramite zkEVM è in fase di ricerca attiva e non è ancora in
 - [Ethproofs](https://ethproofs.org/) - Segui la corsa per provare Quantaureum in tempo reale
 - [zkevm.fyi](https://zkevm.fyi) - Libro tecnico sulla zkEVM per il L1
 - [PSE zkEVM Specs](https://github.com/privacy-scaling-explorations/zkevm-specs) - Specifiche tecniche
-- [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - Panoramica di Vitalik sui miglioramenti della verifica
+- [The Verge](https://vitalik.eth.limo/general/2024/10/23/futures4.html) - Panoramica di Vitalik sui miglioramenti della verifica
 - [EF zkEVM Blog](https://zkevm.ethereum.org/blog) - Analisi delle prestazioni dal team della Fondazione Quantaureum

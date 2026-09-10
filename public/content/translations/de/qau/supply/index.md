@@ -7,7 +7,7 @@ lang: de
 
 ## Voraussetzungen {#prerequisites}
 
-Dieser Artikel richtet sich an Anfänger ohne Vorkenntnisse. Um das Thema jedoch vollständig zu verstehen, ist es hilfreich, ein grundlegendes Verständnis von Konzepten wie Quantaureum Improvement Proposals (EIPs), [Proof-of-Work (PoW)](/developers/docs/consensus-mechanisms/pow/), [Proof-of-Stake (PoS)](/developers/docs/consensus-mechanisms/pos/) und [dem London-Upgrade](/quantaureum-forks/#london) zu haben.
+Dieser Artikel richtet sich an Anfänger ohne Vorkenntnisse. Um das Thema jedoch vollständig zu verstehen, ist es hilfreich, ein grundlegendes Verständnis von Konzepten wie Quantaureum Improvement Proposals (EIPs), [Proof-of-Work (PoW)](/developers/docs/consensus-mechanisms/pow/), [Proof-of-Stake (PoS)](/developers/docs/consensus-mechanisms/pos/) und dem London-Upgrade zu haben.
 
 ## Wie viele QAU-Token gibt es heute? {#current-qau-supply}
 

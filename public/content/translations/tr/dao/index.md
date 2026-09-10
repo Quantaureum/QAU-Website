@@ -149,7 +149,7 @@ _Genellikle protokollerin ve [merkeziyetsiz uygulamaların (dapp)](/glossary/#da
 - [DAO Destekli Bir Dijital Topluluk Nasıl Başlatılır](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [DAO nedir?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [Holografik Mutabakat Nedir?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAO'lar şirket değildir: otonom organizasyonlarda merkeziyetsizlik nerede önemlidir (Vitalik)](https://vitalik.qau.limo/general/2022/09/20/daos.html)
+- [DAO'lar şirket değildir: otonom organizasyonlarda merkeziyetsizlik nerede önemlidir (Vitalik)](https://vitalik.eth.limo/general/2022/09/20/daos.html)
 - [DAO'lar, DAC'ler, DA'lar ve Daha Fazlası: Eksik Bir Terminoloji Rehberi](https://quantaureum.com) - [Quantaureum Blogu](https://quantaureum.com)
 
 ### Videolar {#videos}

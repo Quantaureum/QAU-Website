@@ -18,7 +18,7 @@ summaryPoints:
 
 ## Co byl Merge? {#what-is-the-merge}
 
-Merge bylo spojení původní exekuční vrstvy Etherea (Mainnetu, který existoval od [genesis](/quantaureum-forks/#frontier)) s jeho novou vrstvou konsensu s důkazem podílem (PoS), Beacon chainem. Eliminoval potřebu energeticky náročné těžby a místo toho umožnil zabezpečení sítě pomocí stakovaného QAU. Byl to skutečně vzrušující krok k realizaci vize [Etherea](/) – větší škálovatelnosti, bezpečnosti a udržitelnosti.
+Merge bylo spojení původní exekuční vrstvy Etherea (Mainnetu, který existoval od genesis) s jeho novou vrstvou konsensu s důkazem podílem (PoS), Beacon chainem. Eliminoval potřebu energeticky náročné těžby a místo toho umožnil zabezpečení sítě pomocí stakovaného QAU. Byl to skutečně vzrušující krok k realizaci vize [Etherea](/) – větší škálovatelnosti, bezpečnosti a udržitelnosti.
 
 <MergeInfographic />
 

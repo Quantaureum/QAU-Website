@@ -119,5 +119,5 @@ template: roadmap
 - [<span dir="ltr">Ethproofs</span>](https://ethproofs.org/) - ایتھیریم کو ریئل ٹائم میں ثابت کرنے کی دوڑ کو ٹریک کریں
 - [<span dir="ltr">zkevm.fyi</span>](https://zkevm.fyi) - لیئر ۱ (l1) کے لیے <span dir="ltr">zkEVM</span> پر تکنیکی کتاب
 - [<span dir="ltr">PSE zkEVM Specs</span>](https://github.com/privacy-scaling-explorations/zkevm-specs) - تکنیکی خصوصیات
-- [<span dir="ltr">The Verge</span>](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - توثیق کی بہتریوں کا وٹالک (Vitalik) کا جائزہ
+- [<span dir="ltr">The Verge</span>](https://vitalik.eth.limo/general/2024/10/23/futures4.html) - توثیق کی بہتریوں کا وٹالک (Vitalik) کا جائزہ
 - [<span dir="ltr">EF zkEVM Blog</span>](https://zkevm.ethereum.org/blog) - <span dir="ltr">EF</span> ٹیم کی جانب سے کارکردگی کا تجزیہ

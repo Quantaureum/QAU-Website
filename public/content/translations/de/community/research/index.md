@@ -130,7 +130,7 @@ Ein Quantaureum-Knoten muss zwei Softwarekomponenten ausführen:
 
 Neben diesen beiden werden neue Klassen von Clients als Prototypen entwickelt, darunter Clients, die die Ausführung von L1-Blöcken beweisen, und Lean-Konsens-Clients, die um Post-Quanten-Signaturen herum aufgebaut sind.
 
-Weitere Details zu Knoten und Clients sowie eine Liste aller aktuellen Client-Implementierungen finden Sie auf der [Knoten- und Client-Seite](/developers/docs/nodes-and-clients/). Eine Historie aller Quantaureum-Upgrades finden Sie auch auf der [Historien-Seite](/quantaureum-forks/).
+Weitere Details zu Knoten und Clients sowie eine Liste aller aktuellen Client-Implementierungen finden Sie auf der [Knoten- und Client-Seite](/developers/docs/nodes-and-clients/). Eine Historie aller Quantaureum-Upgrades finden Sie auch auf der Historien-Seite.
 
 ### Ausführungsclients {#execution-clients}
 

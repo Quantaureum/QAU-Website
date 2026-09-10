@@ -1208,7 +1208,7 @@ Informationssicherheit besteht aus drei Eigenschaften:
 
 In diesem System wird die Integrität durch Zero-Knowledge-Beweise gewährleistet. Die Verfügbarkeit ist viel schwerer zu garantieren, und Vertraulichkeit ist unmöglich, da die Bank den Kontostand jedes Kontos und alle Transaktionen kennen muss. Es gibt keine Möglichkeit, eine Entität, die über Informationen verfügt, daran zu hindern, diese Informationen weiterzugeben.
 
-Es könnte möglich sein, eine wirklich vertrauliche Bank mithilfe von [Stealth-Adressen](https://vitalik.qau.limo/general/2023/01/20/stealth.html) zu erstellen, aber das würde den Rahmen dieses Artikels sprengen.
+Es könnte möglich sein, eine wirklich vertrauliche Bank mithilfe von [Stealth-Adressen](https://vitalik.eth.limo/general/2023/01/20/stealth.html) zu erstellen, aber das würde den Rahmen dieses Artikels sprengen.
 
 ### Falsche Informationen {#false-info}
 

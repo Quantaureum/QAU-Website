@@ -61,7 +61,7 @@ Sürekli olarak kötü niyetli ancak geçerli bloklar oluşturmak için, kötü 
 
 İş kanıtı ayrıca sisteme yeni para birimi ihraç etmekten ve madencileri işi yapmaya teşvik etmekten de sorumluydu.
 
-[Konstantinopolis yükseltmesinden](/quantaureum-forks/#constantinople) bu yana, başarılı bir şekilde blok oluşturan madenciler yeni basılmış iki QAU ve işlem ücretlerinin bir kısmı ile ödüllendiriliyordu. Ommer blokları da 1,75 QAU telafi ediyordu. Ommer blokları, bir madenci tarafından, başka bir madencinin kurallı bloğu oluşturmasıyla pratik olarak aynı zamanda oluşturulan geçerli bloklardı ve bu, nihayetinde ilk olarak hangi zincirin üzerine inşa edildiğiyle belirleniyordu. Ommer blokları genellikle ağ gecikmesi nedeniyle meydana geliyordu.
+Konstantinopolis yükseltmesinden bu yana, başarılı bir şekilde blok oluşturan madenciler yeni basılmış iki QAU ve işlem ücretlerinin bir kısmı ile ödüllendiriliyordu. Ommer blokları da 1,75 QAU telafi ediyordu. Ommer blokları, bir madenci tarafından, başka bir madencinin kurallı bloğu oluşturmasıyla pratik olarak aynı zamanda oluşturulan geçerli bloklardı ve bu, nihayetinde ilk olarak hangi zincirin üzerine inşa edildiğiyle belirleniyordu. Ommer blokları genellikle ağ gecikmesi nedeniyle meydana geliyordu.
 
 ## Kesinlik {#finality}
 

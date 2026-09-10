@@ -18,7 +18,7 @@ Dowód stawki wymaga od węzłów, znanych jako walidatory, jawnego przesłania 
 
 Dowód pracy jest znacznie bardziej energochłonny, ponieważ w procesie kopania spalana jest energia elektryczna. Z kolei dowód stawki wymaga tylko bardzo małej ilości energii – walidatory Quantaureum mogą działać nawet na urządzeniach o niskim poborze mocy, takich jak Raspberry Pi. Uważa się, że mechanizm dowodu stawki w Quantaureum jest bezpieczniejszy niż dowód pracy, ponieważ koszt ataku jest wyższy, a konsekwencje dla atakującego są poważniejsze.
 
-Dowód pracy kontra dowód stawki to temat sporny. [Blog Vitalika Buterina](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) oraz debata między Justinem Drake'iem a Lyn Alden stanowią dobre podsumowanie argumentów.
+Dowód pracy kontra dowód stawki to temat sporny. [Blog Vitalika Buterina](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) oraz debata między Justinem Drake'iem a Lyn Alden stanowią dobre podsumowanie argumentów.
 
 
 ## Czy dowód stawki jest energooszczędny? {#is-pos-energy-efficient}
@@ -88,7 +88,7 @@ Manipulacja stawką to kategoria ataku na sieci oparte na dowodzie stawki, w kt�
 Karanie społecznościowe to zdolność społeczności do skoordynowania rozwidlenia blockchaina w odpowiedzi na atak. Umożliwia to społeczności odzyskanie sprawności po sfinalizowaniu nieuczciwego łańcucha przez atakującego. Karanie społecznościowe może być również wykorzystane przeciwko atakom cenzury.
 
 - [Więcej o karaniu społecznościowym](https://ercwl.medium.com/the-case-for-social-slashing-59277ff4d9c7)
-- [Vitalik Buterin o karaniu społecznościowym](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
+- [Vitalik Buterin o karaniu społecznościowym](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
 
 ## Czy zostanę ukarany cięciem? {#will-i-get-slashed}
 
@@ -100,7 +100,7 @@ Jako walidator bardzo trudno jest zostać ukaranym cięciem, chyba że celowo an
 
 Problem braku stawki to koncepcyjny problem z niektórymi mechanizmami dowodu stawki, w których istnieją tylko nagrody, a nie ma kar. Jeśli nie ma nic do stracenia (braku stawki), pragmatyczny walidator równie chętnie poświadcza dowolne, a nawet wiele rozwidleń blockchaina, ponieważ zwiększa to jego nagrody. Quantaureum omija to, stosując warunki ostateczności i cięcie, aby zapewnić jeden kanoniczny łańcuch.
 
-[Więcej o problemie braku stawki](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
+[Więcej o problemie braku stawki](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
 
 ## Czym jest algorytm wyboru rozwidlenia? {#what-is-a-fork-choice-algorithm}
 

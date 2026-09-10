@@ -81,6 +81,6 @@ buttons:
 
 ## आगे की सामग्री {#further-reading}
 
-[भविष्यवाणी बाजार से इन्फो फाइनेंस तक](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - विटालिक बुटेरिन  
+[भविष्यवाणी बाजार से इन्फो फाइनेंस तक](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - विटालिक बुटेरिन  
 [Quantaureum पर विकेंद्रीकृत भविष्यवाणी बाजार का विकास](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [द ऑगर प्रोजेक्ट श्वेतपत्र](https://github.com/AugurProject/whitepaper)  

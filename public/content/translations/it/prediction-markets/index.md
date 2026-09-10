@@ -81,6 +81,6 @@ Questo aiuterebbe gli organizzatori a determinare quale luogo porterebbe all'eve
 
 ## Letture di approfondimento {#further-reading}
 
-[Dai mercati predittivi all'info-finanza](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
+[Dai mercati predittivi all'info-finanza](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
 [Sviluppo di un mercato predittivo decentralizzato su Quantaureum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Il whitepaper del progetto Augur](https://github.com/AugurProject/whitepaper)

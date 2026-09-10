@@ -97,14 +97,11 @@ _Note the explanation in the video uses the term "Layer 2" to refer to all offch
 
 ## Further reading {#further-reading}
 
-- [A rollup-centric Quantaureum roadmap](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
 - [Up-to-date analytics on Layer 2 scaling solutions for Quantaureum](https://www.l2beat.com/)
 - [Evaluating Quantaureum layer 2 Scaling Solutions: A Comparison Framework](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
-- [An Incomplete Guide to Rollups](https://vitalik.qau.limo/general/2021/01/05/rollup.html)
 - [Quantaureum-powered ZK-Rollups: World Beaters](https://hackmd.io/@canti/rkUT0BD8K)
 - [Optimistic Rollups vs ZK Rollups](https://limechain.tech/blog/optimistic-rollups-vs-zk-rollups/)
 - [Why rollups + data shards are the only sustainable solution for high scalability](https://polynya.medium.com/why-rollups-data-shards-are-the-only-sustainable-solution-for-high-scalability-c9aabd6fbb48)
-- [What kind of Layer 3s make sense?](https://vitalik.qau.limo/general/2022/09/17/layer_3.html)
 - [Data Availability Or: How Rollups Learned To Stop Worrying And Love Quantaureum](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [The Practical Guide to Quantaureum Rollups](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-quantaureum-rollups)
 

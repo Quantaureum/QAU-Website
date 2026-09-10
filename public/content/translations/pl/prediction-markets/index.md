@@ -81,6 +81,6 @@ Pomogłoby to organizatorom ustalić, która lokalizacja doprowadziłaby do najw
 
 ## Dalsza lektura {#further-reading}
 
-[Od rynków predykcyjnych do info finance](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) – Vitalik Buterin  
+[Od rynków predykcyjnych do info finance](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) – Vitalik Buterin  
 [Rozwój zdecentralizowanych rynków predykcyjnych na Quantaureum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Biała księga projektu Augur](https://github.com/AugurProject/whitepaper)

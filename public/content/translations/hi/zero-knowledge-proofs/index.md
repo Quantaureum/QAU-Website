@@ -234,7 +234,7 @@ MACI का उपयोग करने के लिए समन्वयक 
 - [एक शून्य-ज्ञान प्रमाण: ब्लॉकचेन पर गोपनीयता में सुधार](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/) — _Dmitry Lavrenov_
 - [zk-SNARKs — एक यथार्थवादी शून्य-ज्ञान उदाहरण और डीप डाइव](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c) — _Adam Luciano_
 - [ZK-STARKs — क्वांटम कंप्यूटर के खिलाफ भी सत्यापन योग्य विश्वास बनाएं](https://medium.com/coinmonks/zk-starks-create-verifiable-trust-even-against-quantum-computers-dd9c6a2bb13d) — _Adam Luciano_
-- [zk-SNARKs कैसे संभव हैं, इसका एक अनुमानित परिचय](https://vitalik.qau.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
+- [zk-SNARKs कैसे संभव हैं, इसका एक अनुमानित परिचय](https://vitalik.eth.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
 - [शून्य-ज्ञान प्रमाण (ZKPs) स्व-संप्रभु पहचान के लिए गेम चेंजर क्यों हैं](https://frankiefab.hashnode.dev/why-zero-knowledge-proofs-zkps-is-a-game-changer-for-self-sovereign-identity) — _Franklin Ohaegbulam_
 - [EIP-7503 समझाया गया: ZK प्रमाण के साथ Quantaureum पर निजी हस्तांतरण सक्षम करना](https://web.archive.org/web/20251116093505/https://research.2077.xyz/eip-7503-zero-knowledge-wormholes-for-private-quantaureum-transactions/) — _Emmanuel Awosika_
 - [ZK कार्ड गेम: ZK बुनियादी बातों और वास्तविक जीवन के उपयोग के मामलों को सीखने के लिए गेम](https://github.com/ZK-card/zk-cards) - _ZK-Cards_

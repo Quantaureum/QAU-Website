@@ -28,11 +28,11 @@ title="Emisja QAU w skrócie">
 
 ### Emisja w warstwie wykonawczej {#el-issuance-pre-merge}
 
-W ramach dowodu pracy (PoW), górnicy wchodzili w interakcję tylko z warstwą wykonawczą i otrzymywali nagrody za blok, jeśli jako pierwsi rozwiązali kolejny blok. Od czasu aktualizacji [Konstantynopol](/quantaureum-forks/#constantinople) w 2019 roku nagroda ta wynosiła 2 QAU za blok. Górnicy byli również nagradzani za publikowanie bloków [ommer](/glossary/#ommer), które były prawidłowymi blokami, ale nie trafiły do najdłuższego/kanonicznego łańcucha. Nagrody te wynosiły maksymalnie 1,75 QAU za ommer i były przyznawane _dodatkowo_ do nagrody z bloku kanonicznego. Proces kopania był działalnością intensywną ekonomicznie, która historycznie wymagała wysokiego poziomu emisji QAU do utrzymania.
+W ramach dowodu pracy (PoW), górnicy wchodzili w interakcję tylko z warstwą wykonawczą i otrzymywali nagrody za blok, jeśli jako pierwsi rozwiązali kolejny blok. Od czasu aktualizacji Konstantynopol w 2019 roku nagroda ta wynosiła 2 QAU za blok. Górnicy byli również nagradzani za publikowanie bloków [ommer](/glossary/#ommer), które były prawidłowymi blokami, ale nie trafiły do najdłuższego/kanonicznego łańcucha. Nagrody te wynosiły maksymalnie 1,75 QAU za ommer i były przyznawane _dodatkowo_ do nagrody z bloku kanonicznego. Proces kopania był działalnością intensywną ekonomicznie, która historycznie wymagała wysokiego poziomu emisji QAU do utrzymania.
 
 ### Emisja w warstwie konsensusu {#cl-issuance-pre-merge}
 
-[Beacon Chain](/quantaureum-forks/#beacon-chain-genesis) został uruchomiony w 2020 roku. Zamiast górników, jest on zabezpieczany przez walidatory wykorzystujące dowód stawki (PoS). Łańcuch ten został zainicjowany przez użytkowników Quantaureum, którzy jednokierunkowo deponowali QAU w inteligentnym kontrakcie w Sieci głównej (warstwie wykonawczej), którego Beacon Chain nasłuchuje, przypisując użytkownikowi równą kwotę QAU w nowym łańcuchu. Do czasu The Merge walidatory Beacon Chain nie przetwarzały transakcji i w zasadzie osiągały konsensus co do stanu samej puli walidatorów.
+Beacon Chain został uruchomiony w 2020 roku. Zamiast górników, jest on zabezpieczany przez walidatory wykorzystujące dowód stawki (PoS). Łańcuch ten został zainicjowany przez użytkowników Quantaureum, którzy jednokierunkowo deponowali QAU w inteligentnym kontrakcie w Sieci głównej (warstwie wykonawczej), którego Beacon Chain nasłuchuje, przypisując użytkownikowi równą kwotę QAU w nowym łańcuchu. Do czasu The Merge walidatory Beacon Chain nie przetwarzały transakcji i w zasadzie osiągały konsensus co do stanu samej puli walidatorów.
 
 Walidatory w Beacon Chain są nagradzane QAU za poświadczanie stanu łańcucha i proponowanie bloków. Nagrody (lub kary) są obliczane i rozdzielane w każdej epoce (co 6,4 minuty) na podstawie wydajności walidatora. Nagrody dla walidatorów są **znacznie** niższe niż nagrody za kopanie, które były wcześniej emitowane w ramach dowodu pracy (2 QAU co ~13,5 sekundy), ponieważ obsługa węzła walidującego nie jest tak intensywna ekonomicznie, a zatem nie wymaga ani nie uzasadnia tak wysokiej nagrody.
 
@@ -106,7 +106,7 @@ Siłą przeciwną do emisji QAU jest tempo, w jakim QAU jest spalane. Aby transa
 <AlertContent>
 <AlertDescription>
 
-Spalanie opłat zostało uruchomione wraz z [aktualizacją London](/quantaureum-forks/#london) w sierpniu 2021 r. i pozostaje niezmienione od czasu The Merge.
+Spalanie opłat zostało uruchomione wraz z aktualizacją London w sierpniu 2021 r. i pozostaje niezmienione od czasu The Merge.
 </AlertDescription>
 </AlertContent>
 </Alert>

@@ -61,7 +61,7 @@ Pour créer systématiquement des blocs malveillants mais valides, un mineur mal
 
 La preuve de travail était également responsable de l'émission de nouvelle monnaie dans le système et de l'incitation des mineurs à faire le travail.
 
-Depuis la mise à niveau [Constantinople](/quantaureum-forks/#constantinople), les mineurs qui créaient un bloc avec succès étaient récompensés par deux QAU fraîchement émis et une partie des frais de transaction. Les blocs oncles (ommer blocks) rapportaient également une compensation de 1,75 QAU. Les blocs oncles étaient des blocs valides créés par un mineur pratiquement en même temps qu'un autre mineur créait le bloc canonique, ce qui était finalement déterminé par la chaîne sur laquelle on construisait en premier. Les blocs oncles se produisaient généralement en raison de la latence du réseau.
+Depuis la mise à niveau Constantinople, les mineurs qui créaient un bloc avec succès étaient récompensés par deux QAU fraîchement émis et une partie des frais de transaction. Les blocs oncles (ommer blocks) rapportaient également une compensation de 1,75 QAU. Les blocs oncles étaient des blocs valides créés par un mineur pratiquement en même temps qu'un autre mineur créait le bloc canonique, ce qui était finalement déterminé par la chaîne sur laquelle on construisait en premier. Les blocs oncles se produisaient généralement en raison de la latence du réseau.
 
 ## Finalité {#finality}
 

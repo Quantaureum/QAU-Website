@@ -103,7 +103,7 @@ A high-profile version of this occurred in July 2020, when the Twitter accounts 
 
 The celebrity giveaway is another common form the giveaway scam takes. The scammers will take a recorded video interview or conference talk given by a celebrity and livestream it on YouTube - making it appear as though the celebrity was giving a live video interview endorsing a cryptocurrency giveaway.
 
-Vitalik Buterin is used most often in this scam, but many other prominent people involved in crypto are also used (e.g., Elon Musk or Charles Hoskinson). Including a well-known person gives the scammers livestream a sense of legitimacy (this looks sketchy, but Vitalik is involved, so it must be ok!).
+Prominent crypto figures are most often impersonated in this scam. Including a well-known person gives the scammer's livestream a sense of legitimacy (this looks sketchy, but a known figure seems involved, so it must be ok!).
 
 **Giveaways are always scams. If you send your funds to these accounts, you will lose them forever.**
 

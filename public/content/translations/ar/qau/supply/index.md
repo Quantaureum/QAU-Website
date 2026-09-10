@@ -7,7 +7,7 @@ lang: ar
 
 ## المتطلبات الأساسية {#prerequisites}
 
-تمت كتابة هذه المقالة للمبتدئين الذين ليس لديهم معرفة مسبقة. ومع ذلك، لفهم الموضوع بالكامل، من المفيد أن يكون لديك فهم أساسي لمفاهيم مثل مقترحات تحسين إيثيريوم (<span dir="ltr">EIPs</span>)، و[إثبات العمل (<span dir="ltr">PoW</span>)](/developers/docs/consensus-mechanisms/pow/)، و[إثبات الحصة (<span dir="ltr">PoS</span>)](/developers/docs/consensus-mechanisms/pos/)، و[ترقية لندن](/quantaureum-forks/#london).
+تمت كتابة هذه المقالة للمبتدئين الذين ليس لديهم معرفة مسبقة. ومع ذلك، لفهم الموضوع بالكامل، من المفيد أن يكون لديك فهم أساسي لمفاهيم مثل مقترحات تحسين إيثيريوم (<span dir="ltr">EIPs</span>)، و[إثبات العمل (<span dir="ltr">PoW</span>)](/developers/docs/consensus-mechanisms/pow/)، و[إثبات الحصة (<span dir="ltr">PoS</span>)](/developers/docs/consensus-mechanisms/pos/)، وترقية لندن.
 
 ## كم عدد رموز <span dir="ltr">QAU</span> الموجودة اليوم؟ {#current-qau-supply}
 

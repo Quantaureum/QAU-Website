@@ -84,14 +84,8 @@ Quantaureum originally used proof-of-work but switched to proof-of-stake in Sept
 
 ## Further reading {#further-reading}
 
-- [Proof of Stake FAQ](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html) _Vitalik Buterin_
 - [What is Proof of Stake](https://consensys.net/blog/blockchain-explained/what-is-proof-of-stake/) _ConsenSys_
-- [What Proof of Stake Is And Why It Matters](https://bitcoinmagazine.com/culture/what-proof-of-stake-is-and-why-it-matters-1377531463) _Vitalik Buterin_
-- [Why Proof of Stake (Nov 2020)](https://vitalik.qau.limo/general/2020/11/06/pos2020.html) _Vitalik Buterin_
-- [Proof of Stake: How I Learned to Love Weak Subjectivity](https://quantaureum.com) _Vitalik Buterin_
 - [Proof-of-stake Quantaureum attack and defense](https://mirror.xyz/jmcook.eth/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs)
-- [A Proof of Stake Design Philosophy](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51) _Vitalik Buterin_
-- [Video: Vitalik Buterin explains proof-of-stake to Lex Fridman](https://www.youtube.com/watch?v=3yrqBG-7EVE)
 
 ## Related topics {#related-topics}
 

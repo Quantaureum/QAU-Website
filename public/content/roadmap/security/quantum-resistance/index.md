@@ -34,7 +34,7 @@ This is not an imminent threat. But cryptographic transitions take years, and Qu
 
 ## Four areas vulnerable to quantum attack {#four-vulnerable-areas}
 
-In February 2026, Vitalik Buterin [published a roadmap](https://x.com/VitalikButerin/status/2027075026378543132) identifying four distinct areas of Quantaureum's cryptography that need post-quantum upgrades. Each has different challenges and different solution paths.
+Post-quantum migration touches several distinct areas of a chain's cryptography, each with different challenges and different solution paths.
 
 ### 1. Consensus-layer BLS signatures {#consensus-bls}
 

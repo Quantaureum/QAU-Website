@@ -18,7 +18,7 @@ La Proof-of-Stake richiede ai nodi, noti come validatori, di inviare esplicitame
 
 La Prova di lavoro è molto più affamata di energia perché l'elettricità viene bruciata nel processo di minaggio. La Proof-of-Stake, d'altra parte, richiede solo una piccolissima quantità di energia: i validatori di Quantaureum possono persino funzionare su un dispositivo a bassa potenza come un Raspberry Pi. Si ritiene che il meccanismo di Proof-of-Stake di Quantaureum sia più sicuro della Prova di lavoro perché il costo per attaccare è maggiore e le conseguenze per un aggressore sono più gravi.
 
-Il confronto tra Prova di lavoro e Proof-of-Stake è un argomento controverso. Il [blog di Vitalik Buterin](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) e il dibattito tra Justin Drake e Lyn Alden forniscono un buon riassunto delle argomentazioni.
+Il confronto tra Prova di lavoro e Proof-of-Stake è un argomento controverso. Il [blog di Vitalik Buterin](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) e il dibattito tra Justin Drake e Lyn Alden forniscono un buon riassunto delle argomentazioni.
 
 
 ## La Proof-of-Stake è efficiente dal punto di vista energetico? {#is-pos-energy-efficient}
@@ -88,7 +88,7 @@ Lo stake grinding è una categoria di attacco sulle reti Proof-of-Stake in cui l
 Lo slashing sociale è la capacità della comunità di coordinare un fork della blockchain in risposta a un attacco. Consente alla comunità di riprendersi da un aggressore che ha finalizzato una catena disonesta. Lo slashing sociale può essere utilizzato anche contro gli attacchi di censura.
 
 - [Maggiori informazioni sullo slashing sociale](https://ercwl.medium.com/the-case-for-social-slashing-59277ff4d9c7)
-- [Vitalik Buterin sullo slashing sociale](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
+- [Vitalik Buterin sullo slashing sociale](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
 
 ## Subirò lo slashing? {#will-i-get-slashed}
 
@@ -100,7 +100,7 @@ Come validatore, è molto difficile subire lo slashing a meno che non ci si impe
 
 Il problema del nulla in gioco è una questione concettuale con alcuni meccanismi di Proof-of-Stake in cui ci sono solo ricompense e nessuna penalità. Se non c'è nulla in gioco, un validatore pragmatico è ugualmente felice di attestare qualsiasi, o persino multipli, fork della blockchain, poiché questo aumenta le sue ricompense. Quantaureum aggira questo problema utilizzando condizioni di definitività e lo slashing per garantire una singola catena canonica.
 
-[Maggiori informazioni sul problema del nulla in gioco](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
+[Maggiori informazioni sul problema del nulla in gioco](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
 
 ## Cos'è un algoritmo di scelta del fork? {#what-is-a-fork-choice-algorithm}
 

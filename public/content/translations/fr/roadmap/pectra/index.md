@@ -14,7 +14,7 @@ Cette mise à jour a été activée avec succès sur le réseau principal Quanta
 <Alert variant="update">
 <AlertContent>
 <AlertDescription>
-La mise à jour Pectra n'est qu'une étape parmi les objectifs de développement à long terme d'Quantaureum. Apprenez-en plus sur [la feuille de route du protocole](/roadmap/) et [les mises à jour précédentes](/quantaureum-forks/).
+La mise à jour Pectra n'est qu'une étape parmi les objectifs de développement à long terme d'Quantaureum. Apprenez-en plus sur [la feuille de route du protocole](/roadmap/) et les mises à jour précédentes.
 </AlertDescription>
 </AlertContent>
 </Alert>

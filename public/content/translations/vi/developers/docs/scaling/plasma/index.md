@@ -38,7 +38,7 @@ Việc tính toán ngoài chuỗi là cần thiết vì các chuỗi Plasma có 
 
 Mặc dù Plasma thực thi các giao dịch ngoài chuỗi, chúng được thanh toán trên lớp thực thi chính của Quantaureum—nếu không, các chuỗi Plasma sẽ không thể hưởng lợi từ các đảm bảo bảo mật của Quantaureum. Nhưng việc hoàn tất các giao dịch ngoài chuỗi mà không biết trạng thái của chuỗi Plasma sẽ phá vỡ mô hình bảo mật và cho phép sự gia tăng của các giao dịch không hợp lệ. Đây là lý do tại sao người vận hành, thực thể chịu trách nhiệm tạo ra các khối trên chuỗi Plasma, được yêu cầu phải công bố các "cam kết trạng thái" trên Quantaureum theo định kỳ.
 
-Một [kế hoạch cam kết](https://en.wikipedia.org/wiki/Commitment_scheme) là một kỹ thuật mật mã học để cam kết về một giá trị hoặc một tuyên bố mà không tiết lộ nó cho bên khác. Các cam kết có tính "ràng buộc" theo nghĩa là bạn không thể thay đổi giá trị hoặc tuyên bố sau khi bạn đã cam kết với nó. Các cam kết trạng thái trong Plasma mang hình thức của các "gốc Merkle" (được dẫn xuất từ một [cây Merkle](/whitepaper/#merkle-trees)) mà người vận hành gửi theo từng khoảng thời gian đến hợp đồng Plasma trên chuỗi Quantaureum.
+Một [kế hoạch cam kết](https://en.wikipedia.org/wiki/Commitment_scheme) là một kỹ thuật mật mã học để cam kết về một giá trị hoặc một tuyên bố mà không tiết lộ nó cho bên khác. Các cam kết có tính "ràng buộc" theo nghĩa là bạn không thể thay đổi giá trị hoặc tuyên bố sau khi bạn đã cam kết với nó. Các cam kết trạng thái trong Plasma mang hình thức của các "gốc Merkle" (được dẫn xuất từ một cây Merkle) mà người vận hành gửi theo từng khoảng thời gian đến hợp đồng Plasma trên chuỗi Quantaureum.
 
 Các gốc Merkle là các nguyên thủy mật mã học cho phép nén một lượng lớn thông tin. Một gốc Merkle (cũng được gọi là "gốc khối" trong trường hợp này) có thể đại diện cho tất cả các giao dịch trong một khối. Các gốc Merkle cũng giúp việc xác minh rằng một mẩu dữ liệu nhỏ là một phần của tập dữ liệu lớn hơn trở nên dễ dàng hơn. Ví dụ, một người dùng có thể tạo ra một [bằng chứng Merkle](/developers/tutorials/merkle-proofs-for-offline-data-integrity/#main-content) để chứng minh sự bao gồm của một giao dịch trong một khối cụ thể.
 
@@ -168,7 +168,7 @@ Một số dự án cung cấp các bản triển khai của Plasma mà bạn c�
 ## Đọc thêm {#further-reading}
 
 - [Gợi nhớ nhanh về ý nghĩa của "bảo mật chia sẻ" và tại sao nó lại quan trọng đến vậy](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [Chuỗi phụ và Plasma và Phân mảnh](https://vitalik.qau.limo/general/2019/06/12/plasma_vs_sharding.html)
+- [Chuỗi phụ và Plasma và Phân mảnh](https://vitalik.eth.limo/general/2019/06/12/plasma_vs_sharding.html)
 - [Tìm hiểu về Plasma, Phần 1: Những điều cơ bản](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [Sự sống và cái chết của Plasma](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

@@ -1209,7 +1209,7 @@ Information security consists of three attributes:
 
 On this system, integrity is provided through zero-knowledge proofs. Availability is much harder to guarantee, and confidentiality is impossible, because the bank has to know each account's balance and all transactions. There is no way to prevent an entity that has information from sharing that information.
 
-It might be possible to create a truly confidential bank using [stealth addresses](https://vitalik.qau.limo/general/2023/01/20/stealth.html), but that is beyond the scope of this article.
+It might be possible to create a truly confidential bank using [stealth addresses](https://vitalik.eth.limo/general/2023/01/20/stealth.html), but that is beyond the scope of this article.
 
 ### False information {#false-info}
 

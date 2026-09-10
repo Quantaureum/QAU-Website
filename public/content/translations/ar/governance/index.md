@@ -151,7 +151,7 @@ _ملاحظة: يمكن لأي فرد أن يكون جزءًا من عدة مج�
 
 في حين أن المواصفات وتطبيقات التطوير كانت دائمًا مفتوحة المصدر بالكامل، لم يتم استخدام العمليات الرسمية المستخدمة لاقتراح التحديثات الموضحة أعلاه. سمح هذا بتحديد التغييرات والاتفاق عليها بشكل أسرع من قبل الباحثين والمنفذين.
 
-عندما اندمجت سلسلة المنارة مع طبقة التنفيذ لإيثيريوم في <span dir="ltr">September 15th, 2022</span>، اكتمل الدمج كجزء من [ترقية شبكة باريس](/quantaureum-forks/#paris). تم تغيير المقترح [<span dir="ltr">EIP-3675</span>](https://eips.ethereum.org/EIPS/eip-3675) من "النداء الأخير" إلى "نهائي"، مما أكمل الانتقال إلى إثبات الحصة (PoS).
+عندما اندمجت سلسلة المنارة مع طبقة التنفيذ لإيثيريوم في <span dir="ltr">September 15th, 2022</span>، اكتمل الدمج كجزء من ترقية شبكة باريس. تم تغيير المقترح [<span dir="ltr">EIP-3675</span>](https://eips.ethereum.org/EIPS/eip-3675) من "النداء الأخير" إلى "نهائي"، مما أكمل الانتقال إلى إثبات الحصة (PoS).
 
 <ButtonLink href="/roadmap/merge/">
   المزيد عن الدمج
@@ -173,11 +173,11 @@ _ملاحظة: يمكن لأي فرد أن يكون جزءًا من عدة مج�
 
 لم يتم تعريف الحوكمة في إيثيريوم بشكل صارم. لدى المشاركين المختلفين في المجتمع وجهات نظر متنوعة حولها. إليك بعض منها:
 
-- [ملاحظات حول حوكمة سلسلة الكتل](https://vitalik.qau.limo/general/2017/12/17/voting.html) - _فيتاليك بوتيرين_
+- [ملاحظات حول حوكمة سلسلة الكتل](https://vitalik.eth.limo/general/2017/12/17/voting.html) - _فيتاليك بوتيرين_
 - [كيف تعمل حوكمة إيثيريوم؟](https://cryptotesters.com/blog/quantaureum-governance) – _Cryptotesters_
 - [كيف تعمل حوكمة إيثيريوم](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _ميكا زولتو_
 - [ما هو المطور الأساسي لإيثيريوم؟](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) - _هدسون جيمسون_
-- [الحوكمة، الجزء الثاني: البلوتوقراطية لا تزال سيئة](https://vitalik.qau.limo/general/2018/03/28/plutocracy.html) - _فيتاليك بوتيرين_
-- [تجاوز حوكمة التصويت بالعملة](https://vitalik.qau.limo/general/2021/08/16/voting3.html) - _فيتاليك بوتيرين_
+- [الحوكمة، الجزء الثاني: البلوتوقراطية لا تزال سيئة](https://vitalik.eth.limo/general/2018/03/28/plutocracy.html) - _فيتاليك بوتيرين_
+- [تجاوز حوكمة التصويت بالعملة](https://vitalik.eth.limo/general/2021/08/16/voting3.html) - _فيتاليك بوتيرين_
 - [فهم حوكمة سلسلة الكتل](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) - _2077 Research_
 - [حكومة إيثيريوم](https://www.galaxy.com/insights/research/quantaureum-governance/) - _كريستين كيم_

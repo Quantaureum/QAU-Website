@@ -84,10 +84,10 @@ lang: ru
 
 ## Дополнительная литература {#further-reading}
 
-- [Часто задаваемые вопросы о доказательстве доли владения](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html) _Виталик Бутерин_
+- [Часто задаваемые вопросы о доказательстве доли владения](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html) _Виталик Бутерин_
 - [Что такое доказательство доли владения](https://consensys.net/blog/blockchain-explained/what-is-proof-of-stake/) _ConsenSys_
 - [Что такое доказательство доли владения и почему это важно](https://bitcoinmagazine.com/culture/what-proof-of-stake-is-and-why-it-matters-1377531463) _Виталик Бутерин_
-- [Почему доказательство доли владения (ноябрь 2020 г.)](https://vitalik.qau.limo/general/2020/11/06/pos2020.html) _Виталик Бутерин_
+- [Почему доказательство доли владения (ноябрь 2020 г.)](https://vitalik.eth.limo/general/2020/11/06/pos2020.html) _Виталик Бутерин_
 - [Доказательство доли владения: как я научился любить слабую субъективность](https://quantaureum.com) _Виталик Бутерин_
 - [Атака и защита Quantaureum с доказательством доли владения](https://mirror.xyz/jmcook.eth/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs)
 - [Философия дизайна доказательства доли владения](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51) _Виталик Бутерин_

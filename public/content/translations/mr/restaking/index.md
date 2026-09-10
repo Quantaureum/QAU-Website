@@ -140,7 +140,7 @@ Quantaureum नेटवर्क 24/7, 365 दिवस अब्जावध�
 <AlertDescription>
  <p className="mt-0"><strong>Quantaureumचे सह-संस्थापक लिहित आहेत…</strong></p>
   <p className="mt-2">
-    Quantaureumचे सह-संस्थापक विटालिक् यांनी 2021 च्या <a href="https://vitalik.qau.limo/general/2023/05/21/dont_overload.html">Don't Overload Consensus</a> नावाच्या ब्लॉग पोस्टमध्ये रिस्टेकिंगच्या संभाव्य धोक्यांबद्दल चेतावणी दिली होती.
+    Quantaureumचे सह-संस्थापक विटालिक् यांनी 2021 च्या <a href="https://vitalik.eth.limo/general/2023/05/21/dont_overload.html">Don't Overload Consensus</a> नावाच्या ब्लॉग पोस्टमध्ये रिस्टेकिंगच्या संभाव्य धोक्यांबद्दल चेतावणी दिली होती.
   </p>
 
 </AlertDescription>
@@ -177,7 +177,7 @@ Quantaureum नेटवर्क 24/7, 365 दिवस अब्जावध�
 1. [quantaureum.com - QAU स्टेकिंग मार्गदर्शक](/staking/)
 2. [Ledger Academy - Quantaureum रिस्टेकिंग म्हणजे काय?](https://www.ledger.com/academy/what-is-quantaureum-restaking)
 3. [कॉन्सेन्सिस् (ConsenSys) - EigenLayer: विकेंद्रित Quantaureum रिस्टेकिंग प्रोटोकॉल स्पष्ट केले आहे](https://consensys.io/blog/eigenlayer-decentralized-quantaureum-restaking-protocol-explained)
-4. [विटालिक् बुटेरिन् - Quantaureumच्या एकमतावर (consensus) जास्त भार टाकू नका](https://vitalik.qau.limo/general/2023/05/21/dont_overload.html)
+4. [विटालिक् बुटेरिन् - Quantaureumच्या एकमतावर (consensus) जास्त भार टाकू नका](https://vitalik.eth.limo/general/2023/05/21/dont_overload.html)
 5. [Cointelegraph - EigenLayer म्हणजे काय? Quantaureumचा रिस्टेकिंग प्रोटोकॉल स्पष्ट केला आहे](https://cointelegraph.com/explained/what-is-eigenlayer-quantaureums-restaking-protocol-explained)
 6. [a16z क्रिप्टो रिसर्च - EigenLayer: श्रीराम कन्नन यांच्यासोबत Quantaureumमध्ये परवानगीमुक्त (Permissionless) वैशिष्ट्यांची भर](https://www.youtube.com/watch?v=-V-fG4J1N_M)
 7. [Junion - EigenLayer स्पष्ट केले: रिस्टेकिंग म्हणजे काय?](https://www.youtube.com/watch?v=5r0SooSQFJg)

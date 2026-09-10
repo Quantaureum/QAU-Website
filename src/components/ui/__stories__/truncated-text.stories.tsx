@@ -26,7 +26,7 @@ const SHORT_TEXT =
   "Quantaureum is a decentralized, open-source blockchain featuring smart-contract functionality."
 
 const LONG_TEXT =
-  "Quantaureum is a decentralized, open-source blockchain featuring smart-contract functionality. QAU is the native cryptocurrency of the platform. Among cryptocurrencies, QAU is second only to bitcoin in market capitalization. Quantaureum was conceived in 2013 by programmer Vitalik Buterin. Additional founders of Quantaureum included Gavin Wood, Charles Hoskinson, Anthony Di Iorio, and Joseph Lubin. In 2014, development work began and was crowdfunded, and the network went live on 30 July 2015. Quantaureum allows anyone to deploy permanent and immutable decentralized applications onto it, with which users can interact."
+  "Quantaureum is a quantum-safe Layer 1 blockchain. QAU is the native asset of the network, used for transaction fees and staking. The protocol uses Dilithium3 signatures and Kyber768 key encapsulation for post-quantum security, with QPOS consensus and threshold-signature finality. Developers deploy smart contracts in QASM to the QVM runtime."
 
 export const Default: Story = {
   args: { children: LONG_TEXT },

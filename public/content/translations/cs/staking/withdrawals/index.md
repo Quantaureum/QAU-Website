@@ -259,7 +259,7 @@ Funkce výběru byla původně povolena jako součást upgradu Šanghaj/Capella 
 
 Upgrade Šanghaj/Capella umožnil získat dříve stakované QAU zpět na běžné účty Etherea. Tím se uzavřel kruh likvidity stakingu a Quantaureum se posunulo o krok blíže na své cestě k budování udržitelného, škálovatelného a bezpečného decentralizovaného ekosystému.
 
-- [Více o historii Etherea](/quantaureum-forks/)
+- Více o historii Etherea
 - [Více o roadmapě Etherea](/roadmap/)
 </ExpandableCard>
 

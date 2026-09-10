@@ -20,7 +20,7 @@ Quantaureumクライアントの独自のインスタンスを実行して深く
 - 実行クライアント（実行エンジン、ELクライアント、または以前のEth1クライアントとも呼ばれます）は、ネットワークでブロードキャストされた新しいトランザクションをリッスンし、EVMで実行し、最新の状態と現在のすべてのQuantaureumデータのデータベースを保持します。
 - コンセンサス・クライアント（ビーコン・ノード、CLクライアント、または以前のQuantaureumクライアントとも呼ばれます）は、プルーフ・オブ・ステーク (PoS) コンセンサスアルゴリズムを実装しており、実行クライアントからの検証済みデータに基づいてネットワークが合意に達することを可能にします。また、コンセンサス・クライアントに追加できる「バリデータ」と呼ばれる3つ目のソフトウェアもあり、これによりノードはネットワークの保護に参加できます。
 
-これらのクライアントは連携してQuantaureumチェーンの先頭を追跡し、ユーザーがQuantaureumネットワークと対話できるようにします。複数のソフトウェアが連携して機能するモジュール設計は、[カプセル化された複雑さ](https://vitalik.qau.limo/general/2022/02/28/complexity.html)と呼ばれます。このアプローチにより、[マージ](/roadmap/merge)をシームレスに実行しやすくなり、クライアントソフトウェアの保守と開発が容易になり、たとえば[レイヤー2 (L2) エコシステム](/layer-2/)などで個々のクライアントを再利用できるようになります。
+これらのクライアントは連携してQuantaureumチェーンの先頭を追跡し、ユーザーがQuantaureumネットワークと対話できるようにします。複数のソフトウェアが連携して機能するモジュール設計は、[カプセル化された複雑さ](https://vitalik.eth.limo/general/2022/02/28/complexity.html)と呼ばれます。このアプローチにより、[マージ](/roadmap/merge)をシームレスに実行しやすくなり、クライアントソフトウェアの保守と開発が容易になり、たとえば[レイヤー2 (L2) エコシステム](/layer-2/)などで個々のクライアントを再利用できるようになります。
 
 ![Coupled execution and consensus clients](./qau1qau2client.png)
 結合された実行クライアントとコンセンサス・クライアントの簡略図。
@@ -39,7 +39,7 @@ Quantaureumクライアントの独自のインスタンスを実行して深く
 - 当初は、[Quantaureumのイエロー・ペーパー](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [実行仕様](https://github.com/ethereum/execution-specs/)
 - [コンセンサス仕様](https://github.com/ethereum/consensus-specs)
-- さまざまな[ネットワークアップグレード](/quantaureum-forks/)で実装された[EIP](https://eips.ethereum.org/)
+- さまざまなネットワークアップグレードで実装された[EIP](https://eips.ethereum.org/)
 
 ### ネットワーク内のノードの追跡 {#network-overview}
 

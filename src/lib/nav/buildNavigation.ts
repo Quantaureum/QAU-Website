@@ -390,12 +390,6 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
       ariaLabel: t("research-menu"),
       items: [
         {
-          id: "research/whitepaper",
-          label: t("quantaureum-whitepaper"),
-          description: t("nav-whitepaper-description"),
-          href: "/whitepaper/",
-        },
-        {
           id: "research/governance",
           label: t("nav-governance-label"),
           description: t("nav-governance-description"),

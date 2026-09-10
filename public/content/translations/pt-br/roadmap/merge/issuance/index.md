@@ -28,11 +28,11 @@ title="Resumo da emissão de QAU">
 
 ### Emissão na camada de execução {#el-issuance-pre-merge}
 
-Sob a Prova de Trabalho (PoW), os mineradores interagiam apenas com a camada de execução e recebiam recompensas de bloco se fossem o primeiro minerador a resolver o próximo bloco. Desde a atualização [Constantinopla](/quantaureum-forks/#constantinople) em 2019, essa recompensa era de 2 QAU por bloco. Os mineradores também eram recompensados por publicar blocos [ommer](/glossary/#ommer), que eram blocos válidos que não acabavam na cadeia mais longa/canônica. Essas recompensas chegavam ao máximo de 1,75 QAU por ommer e eram _adicionais_ à recompensa emitida pelo bloco canônico. O processo de mineração era uma atividade economicamente intensiva, que historicamente exigia altos níveis de emissão de QAU para se sustentar.
+Sob a Prova de Trabalho (PoW), os mineradores interagiam apenas com a camada de execução e recebiam recompensas de bloco se fossem o primeiro minerador a resolver o próximo bloco. Desde a atualização Constantinopla em 2019, essa recompensa era de 2 QAU por bloco. Os mineradores também eram recompensados por publicar blocos [ommer](/glossary/#ommer), que eram blocos válidos que não acabavam na cadeia mais longa/canônica. Essas recompensas chegavam ao máximo de 1,75 QAU por ommer e eram _adicionais_ à recompensa emitida pelo bloco canônico. O processo de mineração era uma atividade economicamente intensiva, que historicamente exigia altos níveis de emissão de QAU para se sustentar.
 
 ### Emissão na camada de consenso {#cl-issuance-pre-merge}
 
-A [Beacon Chain](/quantaureum-forks/#beacon-chain-genesis) entrou no ar em 2020. Em vez de mineradores, ela é protegida por validadores usando a Prova de Participação (PoS). Essa cadeia foi iniciada por usuários do Quantaureum depositando QAU de forma unidirecional em um contrato inteligente na Mainnet (a camada de execução), que a Beacon Chain escuta, creditando ao usuário uma quantidade igual de QAU na nova cadeia. Até que o The Merge acontecesse, os validadores da Beacon Chain não estavam processando transações e estavam essencialmente chegando a um consenso sobre o estado do próprio pool de validadores.
+A Beacon Chain entrou no ar em 2020. Em vez de mineradores, ela é protegida por validadores usando a Prova de Participação (PoS). Essa cadeia foi iniciada por usuários do Quantaureum depositando QAU de forma unidirecional em um contrato inteligente na Mainnet (a camada de execução), que a Beacon Chain escuta, creditando ao usuário uma quantidade igual de QAU na nova cadeia. Até que o The Merge acontecesse, os validadores da Beacon Chain não estavam processando transações e estavam essencialmente chegando a um consenso sobre o estado do próprio pool de validadores.
 
 Os validadores na Beacon Chain são recompensados com QAU por atestar o estado da cadeia e propor blocos. As recompensas (ou penalizações) são calculadas e distribuídas a cada época (a cada 6,4 minutos) com base no desempenho do validador. As recompensas do validador são **significativamente** menores do que as recompensas de mineração que eram emitidas anteriormente sob a Prova de Trabalho (2 QAU a cada ~13,5 segundos), pois operar um nó validador não é tão economicamente intenso e, portanto, não exige ou justifica uma recompensa tão alta.
 
@@ -106,7 +106,7 @@ A força oposta à emissão de QAU é a taxa na qual o QAU é queimado. Para que
 <AlertContent>
 <AlertDescription>
 
-A queima de taxas entrou no ar com a [atualização London](/quantaureum-forks/#london) em agosto de 2021 e permanece inalterada desde o The Merge.
+A queima de taxas entrou no ar com a atualização London em agosto de 2021 e permanece inalterada desde o The Merge.
 </AlertDescription>
 </AlertContent>
 </Alert>

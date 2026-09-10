@@ -66,5 +66,5 @@ EIP-4337 எத்திரியத்தின் முக்கிய நெ
 - [EIP-7702 ஆவணங்கள்](https://eips.ethereum.org/EIPS/eip-7702)
 - [ERC-4337 தத்தெடுப்பு டாஷ்போர்டு](https://www.bundlebear.com/erc4337-overview/all)
 - [விட்டாலிக்கின் "கணக்குச் சுருக்கத்திற்கான பாதை"](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
-- [சமூக மீட்புப் பணப்பைகள் குறித்த விட்டாலிக்கின் வலைப்பதிவு](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
+- [சமூக மீட்புப் பணப்பைகள் குறித்த விட்டாலிக்கின் வலைப்பதிவு](https://vitalik.eth.limo/general/2021/01/11/recovery.html)
 - [Awesome Account Abstraction](https://github.com/4337Mafia/awesome-account-abstraction)

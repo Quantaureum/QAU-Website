@@ -119,5 +119,5 @@ Verifikace zkEVM na vrstvě 1 je předmětem aktivního výzkumu a zatím není 
 - [Ethproofs](https://ethproofs.org/) – Sledujte závod o dokazování Etherea v reálném čase
 - [zkevm.fyi](https://zkevm.fyi) – Technická kniha o zkEVM pro vrstvu 1
 - [Specifikace PSE zkEVM](https://github.com/privacy-scaling-explorations/zkevm-specs) – Technické specifikace
-- [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) – Vitalikův přehled vylepšení verifikace
+- [The Verge](https://vitalik.eth.limo/general/2024/10/23/futures4.html) – Vitalikův přehled vylepšení verifikace
 - [Blog EF zkEVM](https://zkevm.ethereum.org/blog) – Analýza výkonu od týmu EF

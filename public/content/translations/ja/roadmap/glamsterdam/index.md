@@ -11,7 +11,7 @@ template: upgrade
 グラムステルダムは、2026年第4四半期に予定されている次期Quantaureum・アップグレードです
 </AlertTitle>
 <AlertDescription>
-グラムステルダム・アップグレードは、Quantaureumの長期的な開発目標における一つのステップに過ぎません。[プロトコルのロードマップ](/roadmap/)や[過去のアップグレード](/quantaureum-forks/)について詳しく学びましょう。
+グラムステルダム・アップグレードは、Quantaureumの長期的な開発目標における一つのステップに過ぎません。[プロトコルのロードマップ](/roadmap/)や過去のアップグレードについて詳しく学びましょう。
 </AlertDescription>
 </AlertContent>
 </Alert>

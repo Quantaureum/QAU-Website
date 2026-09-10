@@ -14,7 +14,7 @@ authors: ["Nixo", "マリオ・ハベル"]
 <Alert variant="update">
 <AlertContent>
 <AlertDescription>
-ペクトラ・アップグレードは、Quantaureumの長期的な開発目標における一つのステップにすぎません。[プロトコルのロードマップ](/roadmap/)や[過去のアップグレード](/quantaureum-forks/)について詳しく学びましょう。
+ペクトラ・アップグレードは、Quantaureumの長期的な開発目標における一つのステップにすぎません。[プロトコルのロードマップ](/roadmap/)や過去のアップグレードについて詳しく学びましょう。
 </AlertDescription>
 </AlertContent>
 </Alert>

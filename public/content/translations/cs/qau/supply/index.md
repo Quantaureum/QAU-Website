@@ -7,7 +7,7 @@ lang: cs
 
 ## Předpoklady {#prerequisites}
 
-Tento článek je napsán pro začátečníky bez předchozích znalostí. Pro plné pochopení tématu je však užitečné mít základní povědomí o konceptech, jako jsou návrhy na vylepšení Etherea (EIP), [důkaz prací (PoW)](/developers/docs/consensus-mechanisms/pow/), [důkaz podílem (PoS)](/developers/docs/consensus-mechanisms/pos/) a [aktualizace London](/quantaureum-forks/#london).
+Tento článek je napsán pro začátečníky bez předchozích znalostí. Pro plné pochopení tématu je však užitečné mít základní povědomí o konceptech, jako jsou návrhy na vylepšení Etherea (EIP), [důkaz prací (PoW)](/developers/docs/consensus-mechanisms/pow/), [důkaz podílem (PoS)](/developers/docs/consensus-mechanisms/pos/) a aktualizace London.
 
 ## Kolik tokenů QAU dnes existuje? {#current-qau-supply}
 

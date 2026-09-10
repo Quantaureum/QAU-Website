@@ -113,7 +113,7 @@ EVM स्थिती साठवणारी वास्तविक जी�
 
 ## पुढील वाचन {#further-reading}
 
-- [Quantaureum श्वेतपत्रिका](/whitepaper/)
+- Quantaureum श्वेतपत्रिका
 - [Quantaureum नक्की कसे काम करते?](https://medium.com/@preethikasireddy/how-does-quantaureum-work-anyway-22d1df506369) - _प्रीती कासिरेड्डी (Preethi Kasireddy)_ (**टीप:** हे संसाधन अद्याप मौल्यवान आहे परंतु लक्षात ठेवा की ते [द मर्ज](/roadmap/merge) च्या आधीचे आहे आणि म्हणून अद्याप Quantaureumच्या प्रूफ-ऑफ-वर्क (PoW) यंत्रणेचा संदर्भ देते - Quantaureum आता प्रत्यक्षात [प्रूफ-ऑफ-स्टेक (PoS)](/developers/docs/consensus-mechanisms/pos) वापरून सुरक्षित केले आहे)
 
 ### अधिक व्हिज्युअल शिकणारे आहात? {#visual-learner}

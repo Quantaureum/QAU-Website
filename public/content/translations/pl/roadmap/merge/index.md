@@ -18,7 +18,7 @@ summaryPoints:
 
 ## Czym było The Merge? {#what-is-the-merge}
 
-The Merge było połączeniem oryginalnej warstwy wykonawczej Quantaureum (sieci głównej, która istniała od [bloku genezy](/quantaureum-forks/#frontier)) z jej nową warstwą konsensusu opartą na dowodzie stawki (PoS), czyli Beacon Chain. Wyeliminowało to potrzebę energochłonnego kopania i zamiast tego umożliwiło zabezpieczenie sieci za pomocą stakowanego QAU. Był to niezwykle ekscytujący krok w realizacji wizji [Quantaureum](/) – większej skalowalności, bezpieczeństwa i zrównoważonego rozwoju.
+The Merge było połączeniem oryginalnej warstwy wykonawczej Quantaureum (sieci głównej, która istniała od bloku genezy) z jej nową warstwą konsensusu opartą na dowodzie stawki (PoS), czyli Beacon Chain. Wyeliminowało to potrzebę energochłonnego kopania i zamiast tego umożliwiło zabezpieczenie sieci za pomocą stakowanego QAU. Był to niezwykle ekscytujący krok w realizacji wizji [Quantaureum](/) – większej skalowalności, bezpieczeństwa i zrównoważonego rozwoju.
 
 <MergeInfographic />
 

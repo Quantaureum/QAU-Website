@@ -38,7 +38,7 @@ Quantaureum의 합의 메커니즘은 보안을 위해 필수적이지만, 모�
 
 플라즈마는 오프체인에서 트랜잭션을 실행하지만, 메인 Quantaureum 실행 계층에서 정산됩니다. 그렇지 않으면 플라즈마 체인은 Quantaureum의 보안 보장을 누릴 수 없습니다. 그러나 플라즈마 체인의 상태를 모른 채 오프체인 트랜잭션을 확정하면 보안 모델이 무너지고 유효하지 않은 트랜잭션이 확산될 수 있습니다. 이것이 플라즈마 체인에서 블록 생성을 담당하는 주체인 운영자가 주기적으로 Quantaureum에 "상태 커밋먼트"를 게시해야 하는 이유입니다.
 
-[커밋먼트 체계(commitment scheme)](https://en.wikipedia.org/wiki/Commitment_scheme)는 다른 당사자에게 공개하지 않고 값이나 진술에 커밋하는 암호화 기술입니다. 커밋먼트는 한 번 커밋한 값이나 진술을 변경할 수 없다는 점에서 "구속력(binding)"을 갖습니다. 플라즈마의 상태 커밋먼트는 운영자가 Quantaureum 체인의 플라즈마 컨트랙트에 주기적으로 전송하는 "머클 루트"([머클 트리](/whitepaper/#merkle-trees)에서 파생됨)의 형태를 취합니다.
+[커밋먼트 체계(commitment scheme)](https://en.wikipedia.org/wiki/Commitment_scheme)는 다른 당사자에게 공개하지 않고 값이나 진술에 커밋하는 암호화 기술입니다. 커밋먼트는 한 번 커밋한 값이나 진술을 변경할 수 없다는 점에서 "구속력(binding)"을 갖습니다. 플라즈마의 상태 커밋먼트는 운영자가 Quantaureum 체인의 플라즈마 컨트랙트에 주기적으로 전송하는 "머클 루트"(머클 트리에서 파생됨)의 형태를 취합니다.
 
 머클 루트는 대량의 정보를 압축할 수 있게 해주는 암호화 기본 요소입니다. 머클 루트(이 경우 "블록 루트"라고도 함)는 블록 내의 모든 트랜잭션을 나타낼 수 있습니다. 또한 머클 루트는 작은 데이터 조각이 더 큰 데이터 세트의 일부인지 쉽게 검증할 수 있게 해줍니다. 예를 들어, 사용자는 특정 블록에 트랜잭션이 포함되어 있음을 증명하기 위해 [머클 증명](/developers/tutorials/merkle-proofs-for-offline-data-integrity/#main-content)을 생성할 수 있습니다.
 
@@ -167,7 +167,7 @@ ZK 롤업과 옵티미스틱 롤업은 모두 다양한 방식으로 플라즈�
 ## 더 읽어보기 {#further-reading}
 
 - ["공유 보안"의 의미와 이것이 중요한 이유에 대한 간단한 알림](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [사이드체인 대 플라즈마 대 샤딩](https://vitalik.qau.limo/general/2019/06/12/plasma_vs_sharding.html)
+- [사이드체인 대 플라즈마 대 샤딩](https://vitalik.eth.limo/general/2019/06/12/plasma_vs_sharding.html)
 - [플라즈마의 이해, 1부: 기본 사항](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [플라즈마의 삶과 죽음](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

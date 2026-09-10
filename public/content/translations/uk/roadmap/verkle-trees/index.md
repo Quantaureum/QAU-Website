@@ -60,6 +60,6 @@ summaryPoints:
 - [«Як дерева Веркла роблять Етеріум струнким і потужним» від Гійома Балле на Devcon 6](https://www.youtube.com/watch?v=Q7rStTKwuYs)
 - [Пайпер Мерріам (Piper Merriam) про безстанові клієнти з ETHDenver 2020](https://www.youtube.com/watch?v=0yiZJNciIJ4)
 - [Данкрад Файст пояснює дерева Веркла та безстановість у подкасті Zero Knowledge](https://zeroknowledge.fm/podcast/202/)
-- [Віталік Бутерін про дерева Веркла](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
+- [Віталік Бутерін про дерева Веркла](https://vitalik.eth.limo/general/2021/06/18/verkle.html)
 - [Данкрад Файст про дерева Веркла](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
 - [Документація EIP щодо дерев Веркла](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)

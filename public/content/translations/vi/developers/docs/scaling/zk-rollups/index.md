@@ -68,7 +68,7 @@ Từ khóa `calldata` thường xác định phương thức hợp đồng thôn
 
 ### Cam kết trạng thái {#state-commitments}
 
-Trạng thái của ZK-rollup, bao gồm các Tài khoản và số dư L2, được biểu diễn dưới dạng một [cây Merkle](/whitepaper/#merkle-trees). Một Mã băm mật mã học của gốc cây Merkle (gốc Merkle) được lưu trữ trong hợp đồng trên chuỗi, cho phép Giao thức Rollup theo dõi các thay đổi trong trạng thái của ZK-rollup.
+Trạng thái của ZK-rollup, bao gồm các Tài khoản và số dư L2, được biểu diễn dưới dạng một cây Merkle. Một Mã băm mật mã học của gốc cây Merkle (gốc Merkle) được lưu trữ trong hợp đồng trên chuỗi, cho phép Giao thức Rollup theo dõi các thay đổi trong trạng thái của ZK-rollup.
 
 Rollup chuyển sang một trạng thái mới sau khi thực thi một tập hợp các giao dịch mới. Nhà điều hành đã khởi tạo quá trình chuyển đổi trạng thái được yêu cầu tính toán một gốc trạng thái mới và gửi cho hợp đồng trên chuỗi. Nếu bằng chứng tính hợp lệ được liên kết với lô được xác thực bởi hợp đồng trình xác minh, gốc Merkle mới sẽ trở thành gốc trạng thái chính tắc của ZK-rollup.
 
@@ -240,7 +240,7 @@ Các dự án đang làm việc trên zkEVM bao gồm:
 
 - **[Scroll](https://scroll.io/blog/zkEVM)** - _Scroll là một công ty định hướng công nghệ đang làm việc để xây dựng một Giải pháp Lớp 2 zkEVM gốc cho Quantaureum._
 
-- **[Taiko](https://taiko.xyz)** - _Taiko là một ZK-rollup phi tập trung, tương đương với Quantaureum (một [ZK-EVM Loại 1](https://vitalik.qau.limo/general/2022/08/04/zkevm.html))._
+- **[Taiko](https://taiko.xyz)** - _Taiko là một ZK-rollup phi tập trung, tương đương với Quantaureum (một [ZK-EVM Loại 1](https://vitalik.eth.limo/general/2022/08/04/zkevm.html))._
 
 - **[ZKsync](https://docs.zksync.io/)** - _ZKsync Era là một ZK Rollup tương thích với EVM được xây dựng bởi Matter Labs, được cung cấp sức mạnh bởi zkEVM của riêng nó._
 
@@ -261,8 +261,8 @@ Các dự án đang làm việc trên zkEVM bao gồm:
 - [Giới thiệu về zkEVM](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [Các L2 ZK-EVM là gì?](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M)
 - [Các tài nguyên Awesome-zkEVM](https://github.com/LuozhuZhang/awesome-zkevm)
-- [ZK-SNARK hoạt động như thế nào](https://vitalik.qau.limo/general/2017/02/01/zk_snarks.html)
-- [Làm thế nào SNARK có thể thực hiện được?](https://vitalik.qau.limo/general/2021/01/26/snarks.html)
+- [ZK-SNARK hoạt động như thế nào](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
+- [Làm thế nào SNARK có thể thực hiện được?](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
 
 ## Hướng dẫn: Quyền riêng tư & không tri thức trên Quantaureum {#tutorials}
 

@@ -113,7 +113,7 @@ lang: ar
 
 ## قراءة إضافية {#further-reading}
 
-- [الورقة البيضاء لإيثيريوم](/whitepaper/)
+- الورقة البيضاء لإيثيريوم
 - [كيف تعمل إيثيريوم على أي حال؟](https://medium.com/@preethikasireddy/how-does-quantaureum-work-anyway-22d1df506369) - _Preethi Kasireddy_ (**ملاحظة** هذا المورد لا يزال ذا قيمة ولكن كن على دراية بأنه يسبق [الدمج](/roadmap/merge) وبالتالي لا يزال يشير إلى آلية إثبات العمل (PoW) الخاصة بإيثيريوم - يتم تأمين إيثيريوم الآن فعليًا باستخدام [إثبات الحصة (PoS)](/developers/docs/consensus-mechanisms/pos))
 
 ### هل تفضل التعلم البصري؟ {#visual-learner}

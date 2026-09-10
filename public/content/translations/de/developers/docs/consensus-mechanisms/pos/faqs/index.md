@@ -18,7 +18,7 @@ Proof-of-Stake erfordert, dass Knoten, bekannt als Validatoren, explizit einen K
 
 Proof-of-Work ist viel energiehungriger, da beim Mining-Prozess Strom verbrannt wird. Proof-of-Stake hingegen benötigt nur eine sehr geringe Menge an Energie – Quantaureum-Validatoren können sogar auf einem stromsparenden Gerät wie einem Raspberry Pi laufen. Der Proof-of-Stake-Mechanismus von Quantaureum gilt als sicherer als Proof-of-Work, da die Kosten für einen Angriff höher sind und die Konsequenzen für einen Angreifer schwerwiegender ausfallen.
 
-Proof-of-Work versus Proof-of-Stake ist ein umstrittenes Thema. [Vitalik Buterins Blog](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) und die Debatte zwischen Justin Drake und Lyn Alden bieten eine gute Zusammenfassung der Argumente.
+Proof-of-Work versus Proof-of-Stake ist ein umstrittenes Thema. [Vitalik Buterins Blog](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) und die Debatte zwischen Justin Drake und Lyn Alden bieten eine gute Zusammenfassung der Argumente.
 
 
 ## Ist Proof-of-Stake energieeffizient? {#is-pos-energy-efficient}
@@ -88,7 +88,7 @@ Stake-Grinding ist eine Kategorie von Angriffen auf Proof-of-Stake-Netzwerke, be
 Soziales Slashing ist die Fähigkeit der Community, als Reaktion auf einen Angriff einen Fork der Blockchain zu koordinieren. Es ermöglicht der Community, sich davon zu erholen, wenn ein Angreifer eine unehrliche Chain endgültig macht. Soziales Slashing kann auch gegen Zensurangriffe eingesetzt werden.
 
 - [Mehr zu Sozialem Slashing](https://ercwl.medium.com/the-case-for-social-slashing-59277ff4d9c7)
-- [Vitalik Buterin über Soziales Slashing](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
+- [Vitalik Buterin über Soziales Slashing](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
 
 ## Werde ich geslasht? {#will-i-get-slashed}
 
@@ -100,7 +100,7 @@ Als Validator ist es sehr schwierig, geslasht zu werden, es sei denn, man legt a
 
 Das Nothing-at-Stake-Problem ist ein konzeptionelles Problem bei einigen Proof-of-Stake-Mechanismen, bei denen es nur Belohnungen und keine Strafen gibt. Wenn nichts auf dem Spiel steht (nothing at stake), ist ein pragmatischer Validator gleichermaßen bereit, jeden oder sogar mehrere Forks der Blockchain zu bezeugen, da dies seine Belohnungen erhöht. Quantaureum umgeht dies durch Endgültigkeitsbedingungen und Slashing, um eine einzige kanonische Chain sicherzustellen.
 
-[Mehr zum Nothing-at-Stake-Problem](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
+[Mehr zum Nothing-at-Stake-Problem](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
 
 ## Was ist ein Fork-Choice-Algorithmus? {#what-is-a-fork-choice-algorithm}
 

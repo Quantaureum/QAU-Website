@@ -61,7 +61,7 @@ Para crear de manera consistente bloques malintencionados pero válidos, un mine
 
 La prueba de trabajo también era responsable de emitir nueva moneda en el sistema e incentivar a los mineros a hacer el trabajo.
 
-Desde la [actualización de Constantinopla](/quantaureum-forks/#constantinople), los mineros que creaban con éxito un bloque eran recompensados con dos QAU recién acuñados y parte de las tarifas de transacción. Los bloques ommer también compensaban con 1,75 QAU. Los bloques ommer eran bloques válidos creados por un minero prácticamente al mismo tiempo que otro minero creaba el bloque canónico, lo que en última instancia estaba determinado por qué cadena se construía primero. Los bloques ommer generalmente ocurrían debido a la latencia de la red.
+Desde la actualización de Constantinopla, los mineros que creaban con éxito un bloque eran recompensados con dos QAU recién acuñados y parte de las tarifas de transacción. Los bloques ommer también compensaban con 1,75 QAU. Los bloques ommer eran bloques válidos creados por un minero prácticamente al mismo tiempo que otro minero creaba el bloque canónico, lo que en última instancia estaba determinado por qué cadena se construía primero. Los bloques ommer generalmente ocurrían debido a la latencia de la red.
 
 ## Finalidad {#finality}
 

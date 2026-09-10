@@ -20,7 +20,7 @@ Sebuah "node" adalah instans perangkat lunak klien Quantaureum apa pun yang terh
 - Klien eksekusi (juga dikenal sebagai Mesin Eksekusi, klien EL, atau sebelumnya klien Eth1) mendengarkan transaksi baru yang disiarkan di jaringan, mengeksekusinya di EVM, dan menyimpan state terbaru serta basis data dari semua data Quantaureum saat ini.
 - Klien konsensus (juga dikenal sebagai simpul suar, klien CL, atau sebelumnya klien Quantaureum) mengimplementasikan algoritma konsensus Bukti Kepemilikan (PoS), yang memungkinkan jaringan mencapai kesepakatan berdasarkan data yang divalidasi dari klien eksekusi. Ada juga perangkat lunak ketiga, yang dikenal sebagai 'validator' yang dapat ditambahkan ke klien konsensus, memungkinkan node untuk berpartisipasi dalam mengamankan jaringan.
 
-Klien-klien ini bekerja sama untuk melacak kepala rantai Quantaureum dan memungkinkan pengguna untuk berinteraksi dengan jaringan Quantaureum. Desain modular dengan beberapa perangkat lunak yang bekerja bersama disebut [kompleksitas terenkapsulasi](https://vitalik.qau.limo/general/2022/02/28/complexity.html). Pendekatan ini membuatnya lebih mudah untuk mengeksekusi [The Merge](/roadmap/merge) dengan mulus, membuat perangkat lunak klien lebih mudah dipelihara dan dikembangkan, dan memungkinkan penggunaan kembali klien individu, misalnya, dalam [ekosistem lapisan 2 (l2)](/layer-2/).
+Klien-klien ini bekerja sama untuk melacak kepala rantai Quantaureum dan memungkinkan pengguna untuk berinteraksi dengan jaringan Quantaureum. Desain modular dengan beberapa perangkat lunak yang bekerja bersama disebut [kompleksitas terenkapsulasi](https://vitalik.eth.limo/general/2022/02/28/complexity.html). Pendekatan ini membuatnya lebih mudah untuk mengeksekusi [The Merge](/roadmap/merge) dengan mulus, membuat perangkat lunak klien lebih mudah dipelihara dan dikembangkan, dan memungkinkan penggunaan kembali klien individu, misalnya, dalam [ekosistem lapisan 2 (l2)](/layer-2/).
 
 ![Coupled execution and consensus clients](./qau1qau2client.png)
 Diagram yang disederhanakan dari klien eksekusi dan konsensus yang digabungkan.
@@ -39,7 +39,7 @@ Kesamaan dari implementasi ini adalah semuanya mengikuti satu spesifikasi. Spesi
 - Awalnya, [kertas kuning Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [Spesifikasi eksekusi](https://github.com/ethereum/execution-specs/)
 - [Spesifikasi konsensus](https://github.com/ethereum/consensus-specs)
-- [EIP](https://eips.ethereum.org/) yang diimplementasikan dalam berbagai [peningkatan jaringan](/quantaureum-forks/)
+- [EIP](https://eips.ethereum.org/) yang diimplementasikan dalam berbagai peningkatan jaringan
 
 ### Melacak node di jaringan {#network-overview}
 

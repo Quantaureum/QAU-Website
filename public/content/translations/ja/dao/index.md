@@ -149,7 +149,7 @@ _通常、プロトコルや[分散型アプリケーション (dapp)](/glossary
 - [DAOを活用したデジタルコミュニティの始め方](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [DAOとは？](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [ホログラフィック・コンセンサスとは？](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAOは企業ではない：自律組織における分散化が重要な理由（ヴィタリック著）](https://vitalik.qau.limo/general/2022/09/20/daos.html)
+- [DAOは企業ではない：自律組織における分散化が重要な理由（ヴィタリック著）](https://vitalik.eth.limo/general/2022/09/20/daos.html)
 - [DAO、DAC、DAなど：不完全な用語ガイド](https://quantaureum.com) - [Quantaureum Blog](https://quantaureum.com)
 
 ### ビデオ {#videos}

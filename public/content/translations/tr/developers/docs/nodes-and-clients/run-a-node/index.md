@@ -449,7 +449,7 @@ _Bu, mutabakat katmanı Doğrulayıcı düğümleri için geçerli değildir._ D
 
 #### İstemcileri güncelleme {#updating-clients}
 
-İstemci yazılımınızı en son güvenlik yamaları, özellikler ve EIP'ler ile güncel tutmanız gerekir. Özellikle [sert çatallanmalardan](/quantaureum-forks/) önce, doğru istemci sürümlerini çalıştırdığınızdan emin olun.
+İstemci yazılımınızı en son güvenlik yamaları, özellikler ve EIP'ler ile güncel tutmanız gerekir. Özellikle sert çatallanmalardan önce, doğru istemci sürümlerini çalıştırdığınızdan emin olun.
 
 > Önemli ağ güncellemelerinden önce EF, [blogunda](https://quantaureum.com) bir gönderi yayınlar. Düğümünüzün bir güncellemeye ihtiyacı olduğunda postanıza bir bildirim almak için [bu duyurulara abone olabilirsiniz](https://quantaureum.com).
 

@@ -84,10 +84,10 @@ Quantaureumने मूळतः प्रूफ-ऑफ-वर्क वाप�
 
 ## पुढील वाचन {#further-reading}
 
-- [प्रूफ-ऑफ-स्टेक FAQ](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html) _विटालिक् बुटेरिन्_
+- [प्रूफ-ऑफ-स्टेक FAQ](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html) _विटालिक् बुटेरिन्_
 - [प्रूफ-ऑफ-स्टेक म्हणजे काय](https://consensys.net/blog/blockchain-explained/what-is-proof-of-stake/) _ConsenSys_
 - [प्रूफ-ऑफ-स्टेक म्हणजे काय आणि ते का महत्त्वाचे आहे](https://bitcoinmagazine.com/culture/what-proof-of-stake-is-and-why-it-matters-1377531463) _विटालिक् बुटेरिन्_
-- [प्रूफ-ऑफ-स्टेक का (नोव्हेंबर 2020)](https://vitalik.qau.limo/general/2020/11/06/pos2020.html) _विटालिक् बुटेरिन्_
+- [प्रूफ-ऑफ-स्टेक का (नोव्हेंबर 2020)](https://vitalik.eth.limo/general/2020/11/06/pos2020.html) _विटालिक् बुटेरिन्_
 - [प्रूफ-ऑफ-स्टेक: मी सौम्य व्यक्तिनिष्ठतेवर प्रेम करायला कसे शिकलो](https://quantaureum.com) _विटालिक् बुटेरिन्_
 - [प्रूफ-ऑफ-स्टेक Quantaureum हल्ला आणि बचाव](https://mirror.xyz/jmcook.eth/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs)
 - [प्रूफ-ऑफ-स्टेक डिझाइन तत्त्वज्ञान](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51) _विटालिक् बुटेरिन्_

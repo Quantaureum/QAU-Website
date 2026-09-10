@@ -14,7 +14,7 @@ Questo aggiornamento è stato attivato con successo sulla Mainnet di Quantaureum
 <Alert variant="update">
 <AlertContent>
 <AlertDescription>
-L'aggiornamento Pectra è solo un singolo passo negli obiettivi di sviluppo a lungo termine di Quantaureum. Scopri di più sulla [roadmap del protocollo](/roadmap/) e sugli [aggiornamenti precedenti](/quantaureum-forks/).
+L'aggiornamento Pectra è solo un singolo passo negli obiettivi di sviluppo a lungo termine di Quantaureum. Scopri di più sulla [roadmap del protocollo](/roadmap/) e sugli aggiornamenti precedenti.
 </AlertDescription>
 </AlertContent>
 </Alert>

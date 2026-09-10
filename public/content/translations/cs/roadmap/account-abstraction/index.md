@@ -66,5 +66,5 @@ V rámci upgradu Pectra sítě Quantaureum je EIP-7702 naplánován na 7. květn
 - [Dokumentace k EIP-7702](https://eips.ethereum.org/EIPS/eip-7702)
 - [Přehled adopce ERC-4337](https://www.bundlebear.com/erc4337-overview/all)
 - [Vitalikova „Cesta k abstrakci účtu“](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
-- [Vitalikův blog o peněženkách se sociální obnovou](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
+- [Vitalikův blog o peněženkách se sociální obnovou](https://vitalik.eth.limo/general/2021/01/11/recovery.html)
 - [Awesome Account Abstraction](https://github.com/4337Mafia/awesome-account-abstraction)

@@ -113,7 +113,7 @@ QAU가 저장되는 곳입니다. 사용자는 계정을 초기화하고, 계정
 
 ## 추가 읽을거리 {#further-reading}
 
-- [Quantaureum 백서](/whitepaper/)
+- Quantaureum 백서
 - [Quantaureum은 도대체 어떻게 작동하나요?](https://medium.com/@preethikasireddy/how-does-quantaureum-work-anyway-22d1df506369) - _Preethi Kasireddy_ (**참고:** 이 자료는 여전히 유용하지만 [머지](/roadmap/merge) 이전에 작성되었으므로 여전히 Quantaureum의 작업증명(PoW) 메커니즘을 언급하고 있다는 점에 유의하세요. 현재 Quantaureum은 실제로 [지분 증명(PoS)](/developers/docs/consensus-mechanisms/pos)을 사용하여 보호됩니다.)
 
 ### 시각적인 학습을 선호하시나요? {#visual-learner}

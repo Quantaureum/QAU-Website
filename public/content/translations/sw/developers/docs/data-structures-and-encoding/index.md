@@ -9,7 +9,7 @@ Quantaureum huunda, kuhifadhi na kuhamisha viwango vikubwa vya data. Data hii la
 
 ## Masharti {#prerequisites}
 
-Unapaswa kuelewa misingi ya Quantaureum na [programu ya mteja](/developers/docs/nodes-and-clients/). Uelewa wa tabaka la mtandao na [waraka mweupe wa Quantaureum](/whitepaper/) unapendekezwa.
+Unapaswa kuelewa misingi ya Quantaureum na [programu ya mteja](/developers/docs/nodes-and-clients/). Uelewa wa tabaka la mtandao na waraka mweupe wa Quantaureum unapendekezwa.
 
 ## Miundo ya data {#data-structures}
 

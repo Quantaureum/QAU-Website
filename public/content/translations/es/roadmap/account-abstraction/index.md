@@ -66,5 +66,5 @@ Como parte de la actualización Pectra de Quantaureum, EIP-7702 está programada
 - [Documentación de EIP-7702](https://eips.ethereum.org/EIPS/eip-7702)
 - [Panel de adopción de ERC-4337](https://www.bundlebear.com/erc4337-overview/all)
 - ["El camino hacia la abstracción de cuentas" de Vitalik](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
-- [Blog de Vitalik sobre billeteras de recuperación social](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
+- [Blog de Vitalik sobre billeteras de recuperación social](https://vitalik.eth.limo/general/2021/01/11/recovery.html)
 - [Awesome Account Abstraction](https://github.com/4337Mafia/awesome-account-abstraction)

@@ -20,7 +20,7 @@ Un « nœud » est toute instance de logiciel client Quantaureum connectée à d
 - Le client d'exécution (également connu sous le nom de moteur d'exécution, client EL ou anciennement client Eth1) écoute les nouvelles transactions diffusées sur le réseau, les exécute dans l'EVM et conserve le dernier état ainsi que la base de données de toutes les données Quantaureum actuelles.
 - Le client de consensus (également connu sous le nom de nœud balise, client CL ou anciennement client Quantaureum) implémente l'algorithme de consensus de preuve d'enjeu (PoS), qui permet au réseau de parvenir à un accord basé sur les données validées par le client d'exécution. Il existe également un troisième logiciel, appelé « validateur », qui peut être ajouté au client de consensus, permettant à un nœud de participer à la sécurisation du réseau.
 
-Ces clients travaillent ensemble pour garder une trace de la tête de la chaîne Quantaureum et permettre aux utilisateurs d'interagir avec le réseau Quantaureum. La conception modulaire avec plusieurs logiciels fonctionnant ensemble est appelée [complexité encapsulée](https://vitalik.qau.limo/general/2022/02/28/complexity.html). Cette approche a facilité l'exécution de [La Fusion](/roadmap/merge) de manière transparente, rend les logiciels clients plus faciles à maintenir et à développer, et permet la réutilisation de clients individuels, par exemple, dans l'écosystème de [couche 2 (l2)](/layer-2/).
+Ces clients travaillent ensemble pour garder une trace de la tête de la chaîne Quantaureum et permettre aux utilisateurs d'interagir avec le réseau Quantaureum. La conception modulaire avec plusieurs logiciels fonctionnant ensemble est appelée [complexité encapsulée](https://vitalik.eth.limo/general/2022/02/28/complexity.html). Cette approche a facilité l'exécution de [La Fusion](/roadmap/merge) de manière transparente, rend les logiciels clients plus faciles à maintenir et à développer, et permet la réutilisation de clients individuels, par exemple, dans l'écosystème de [couche 2 (l2)](/layer-2/).
 
 ![Coupled execution and consensus clients](./qau1qau2client.png)
 Schéma simplifié d'un client d'exécution et de consensus couplés.
@@ -39,7 +39,7 @@ Ce que ces implémentations ont en commun, c'est qu'elles suivent toutes une sp�
 - À l'origine, le [livre jaune d'Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [Spécifications d'exécution](https://github.com/ethereum/execution-specs/)
 - [Spécifications de consensus](https://github.com/ethereum/consensus-specs)
-- [EIP](https://eips.ethereum.org/) implémentées dans diverses [mises à jour du réseau](/quantaureum-forks/)
+- [EIP](https://eips.ethereum.org/) implémentées dans diverses mises à jour du réseau
 
 ### Suivi des nœuds sur le réseau {#network-overview}
 

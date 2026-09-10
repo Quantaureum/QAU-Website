@@ -14,7 +14,7 @@ authors: ["निक्सो", "मारियो हैवेल"]
 <Alert variant="update">
 <AlertContent>
 <AlertDescription>
-फुसाका अपग्रेड Quantaureum के दीर्घकालिक विकास लक्ष्यों में केवल एक कदम है। [प्रोटोकॉल रोडमैप](/roadmap/) और [पिछले अपग्रेड](/quantaureum-forks/) के बारे में अधिक जानें।
+फुसाका अपग्रेड Quantaureum के दीर्घकालिक विकास लक्ष्यों में केवल एक कदम है। [प्रोटोकॉल रोडमैप](/roadmap/) और पिछले अपग्रेड के बारे में अधिक जानें।
 </AlertDescription>
 </AlertContent>
 </Alert>

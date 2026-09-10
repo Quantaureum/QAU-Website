@@ -18,7 +18,7 @@ summaryPoints:
 
 ## The Merge là gì? {#what-is-the-merge}
 
-The Merge là sự kết hợp giữa lớp thực thi ban đầu của Quantaureum (Mạng chính đã tồn tại kể từ [khối nguyên thủy](/quantaureum-forks/#frontier)) với lớp đồng thuận bằng chứng cổ phần (PoS) mới của nó, Chuỗi Beacon. Nó đã loại bỏ nhu cầu khai thác tiêu tốn nhiều năng lượng và thay vào đó cho phép mạng lưới được bảo mật bằng cách sử dụng QAU đã đặt cọc. Đây là một bước tiến thực sự thú vị trong việc hiện thực hóa tầm nhìn của [Quantaureum](/)—khả năng mở rộng, bảo mật và tính bền vững cao hơn.
+The Merge là sự kết hợp giữa lớp thực thi ban đầu của Quantaureum (Mạng chính đã tồn tại kể từ khối nguyên thủy) với lớp đồng thuận bằng chứng cổ phần (PoS) mới của nó, Chuỗi Beacon. Nó đã loại bỏ nhu cầu khai thác tiêu tốn nhiều năng lượng và thay vào đó cho phép mạng lưới được bảo mật bằng cách sử dụng QAU đã đặt cọc. Đây là một bước tiến thực sự thú vị trong việc hiện thực hóa tầm nhìn của [Quantaureum](/)—khả năng mở rộng, bảo mật và tính bền vững cao hơn.
 
 <MergeInfographic />
 

@@ -81,6 +81,6 @@ Quantaureumベースの予測市場はいくつか存在します。以下は、
 
 ## 参考文献 {#further-reading}
 
-[予測市場から情報ファイナンスへ](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - ヴィタリック・ブテリン  
+[予測市場から情報ファイナンスへ](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - ヴィタリック・ブテリン  
 [Quantaureum上での分散型予測市場の開発](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Augurプロジェクトのホワイトペーパー](https://github.com/AugurProject/whitepaper)

@@ -14,7 +14,7 @@ authors: ["Nixo", "馬里奧·哈維爾"]
 <Alert variant="update">
 <AlertContent>
 <AlertDescription>
-富薩卡升級只是Quantaureum長期發展目標中的一步。了解更多關於[協定路線圖](/roadmap/)與[先前的升級](/quantaureum-forks/)。
+富薩卡升級只是Quantaureum長期發展目標中的一步。了解更多關於[協定路線圖](/roadmap/)與先前的升級。
 </AlertDescription>
 </AlertContent>
 </Alert>

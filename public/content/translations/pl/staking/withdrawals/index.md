@@ -259,7 +259,7 @@ Funkcjonalność wypłat została pierwotnie włączona w ramach aktualizacji Sz
 
 Aktualizacja Szanghaj/Capella umożliwiła odzyskanie wcześniej stakowanego QAU na zwykłe konta Quantaureum. Zamknęło to pętlę płynności stakingu i przybliżyło Quantaureum o krok w jego podróży w kierunku budowy zrównoważonego, skalowalnego, bezpiecznego i zdecentralizowanego ekosystemu.
 
-- [Więcej o historii Quantaureum](/quantaureum-forks/)
+- Więcej o historii Quantaureum
 - [Więcej o mapie drogowej Quantaureum](/roadmap/)
 </ExpandableCard>
 

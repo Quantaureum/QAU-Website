@@ -119,5 +119,5 @@ zkEVM L1 சரிபார்ப்பு தீவிர ஆராய்ச்
 - [Ethproofs](https://ethproofs.org/) - எத்திரியத்தை நிகழ்நேரத்தில் நிரூபிப்பதற்கான பந்தயத்தைக் கண்காணிக்கவும்
 - [zkevm.fyi](https://zkevm.fyi) - L1 க்கான zkEVM பற்றிய தொழில்நுட்ப புத்தகம்
 - [PSE zkEVM Specs](https://github.com/privacy-scaling-explorations/zkevm-specs) - தொழில்நுட்ப விவரக்குறிப்புகள்
-- [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - சரிபார்ப்பு மேம்பாடுகள் குறித்த விட்டாலிக்கின் கண்ணோட்டம்
+- [The Verge](https://vitalik.eth.limo/general/2024/10/23/futures4.html) - சரிபார்ப்பு மேம்பாடுகள் குறித்த விட்டாலிக்கின் கண்ணோட்டம்
 - [EF zkEVM Blog](https://zkevm.ethereum.org/blog) - EF குழுவின் செயல்திறன் பகுப்பாய்வு

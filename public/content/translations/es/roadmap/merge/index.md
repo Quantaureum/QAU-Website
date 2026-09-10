@@ -18,7 +18,7 @@ summaryPoints:
 
 ## ¿Qué fue La Fusión? {#what-is-the-merge}
 
-La Fusión fue la unión de la capa de ejecución original de Quantaureum (la red principal que ha existido desde el [génesis](/quantaureum-forks/#frontier)) con su nueva capa de consenso de prueba de participación, la cadena de balizas. Eliminó la necesidad de la minería intensiva en energía y, en su lugar, permitió que la red se asegurara utilizando QAU en staking. Fue un paso verdaderamente emocionante para hacer realidad la visión de [Quantaureum](/): más escalabilidad, seguridad y sostenibilidad.
+La Fusión fue la unión de la capa de ejecución original de Quantaureum (la red principal que ha existido desde el génesis) con su nueva capa de consenso de prueba de participación, la cadena de balizas. Eliminó la necesidad de la minería intensiva en energía y, en su lugar, permitió que la red se asegurara utilizando QAU en staking. Fue un paso verdaderamente emocionante para hacer realidad la visión de [Quantaureum](/): más escalabilidad, seguridad y sostenibilidad.
 
 <MergeInfographic />
 

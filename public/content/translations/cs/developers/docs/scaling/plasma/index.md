@@ -38,7 +38,7 @@ Výpočty offchain jsou nezbytné, protože řetězce Plasma mohou optimalizovat
 
 Zatímco Plasma provádí transakce offchain, jsou vypořádány na hlavní exekuční vrstvě Etherea – jinak by řetězce Plasma nemohly těžit z bezpečnostních záruk Etherea. Ale finalizace offchain transakcí bez znalosti stavu řetězce Plasma by narušila bezpečnostní model a umožnila šíření neplatných transakcí. Proto je operátor, entita zodpovědná za produkci bloků na řetězci Plasma, povinen pravidelně publikovat „stavové závazky“ na Ethereu.
 
-[Závazkové schéma](https://en.wikipedia.org/wiki/Commitment_scheme) je kryptografická technika pro zavázání se k hodnotě nebo tvrzení, aniž by byla odhalena druhé straně. Závazky jsou „závazné“ v tom smyslu, že jakmile se k hodnotě nebo tvrzení zavážete, nemůžete je změnit. Stavové závazky v Plasmě mají podobu „Merkleho kořenů“ (odvozených z [Merkleova stromu](/whitepaper/#merkle-trees)), které operátor v intervalech odesílá do kontraktu Plasmy na řetězci Etherea.
+[Závazkové schéma](https://en.wikipedia.org/wiki/Commitment_scheme) je kryptografická technika pro zavázání se k hodnotě nebo tvrzení, aniž by byla odhalena druhé straně. Závazky jsou „závazné“ v tom smyslu, že jakmile se k hodnotě nebo tvrzení zavážete, nemůžete je změnit. Stavové závazky v Plasmě mají podobu „Merkleho kořenů“ (odvozených z Merkleova stromu), které operátor v intervalech odesílá do kontraktu Plasmy na řetězci Etherea.
 
 Merkleho kořeny jsou kryptografická primitiva, která umožňují kompresi velkého množství informací. Merkleho kořen (v tomto případě nazývaný také „kořen bloku“) by mohl představovat všechny transakce v bloku. Merkleho kořeny také usnadňují ověření, že malý kousek dat je součástí většího datového souboru. Například uživatel může vytvořit [Merkleův důkaz](/developers/tutorials/merkle-proofs-for-offline-data-integrity/#main-content), aby prokázal zahrnutí transakce do konkrétního bloku.
 
@@ -167,7 +167,7 @@ Několik projektů poskytuje implementace Plasmy, které můžete integrovat do 
 ## Další čtení {#further-reading}
 
 - [Rychlé připomenutí toho, co znamená „sdílená bezpečnost“ a proč je tak důležitá](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [Postranní řetězce vs. Plasma vs. sharding](https://vitalik.qau.limo/general/2019/06/12/plasma_vs_sharding.html)
+- [Postranní řetězce vs. Plasma vs. sharding](https://vitalik.eth.limo/general/2019/06/12/plasma_vs_sharding.html)
 - [Porozumění Plasmě, část 1: Základy](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [Život a smrt Plasmy](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

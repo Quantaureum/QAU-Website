@@ -119,5 +119,5 @@ Uthibitishaji wa tabaka la 1 (l1) wa zkEVM upo katika utafiti unaoendelea na bad
 - [Ethproofs](https://ethproofs.org/) - Fuatilia mbio za kuthibitisha Quantaureum katika wakati halisi
 - [zkevm.fyi](https://zkevm.fyi) - Kitabu cha kiufundi kuhusu zkEVM kwa tabaka la 1 (l1)
 - [Vipimo vya zkEVM vya PSE](https://github.com/privacy-scaling-explorations/zkevm-specs) - Vipimo vya kiufundi
-- [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - Muhtasari wa Vitalik wa maboresho ya uthibitishaji
+- [The Verge](https://vitalik.eth.limo/general/2024/10/23/futures4.html) - Muhtasari wa Vitalik wa maboresho ya uthibitishaji
 - [Blogu ya zkEVM ya EF](https://zkevm.ethereum.org/blog) - Uchambuzi wa utendaji kutoka kwa timu ya EF

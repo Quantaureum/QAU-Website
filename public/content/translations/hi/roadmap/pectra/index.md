@@ -16,7 +16,7 @@ authors:
 <Alert variant="update">
 <AlertContent>
 <AlertDescription>
-पेक्ट्रा अपग्रेड Quantaureum के दीर्घकालिक विकास लक्ष्यों में केवल एक कदम है। [प्रोटोकॉल रोडमैप](/roadmap/) और [पिछले अपग्रेड](/quantaureum-forks/) के बारे में अधिक जानें।
+पेक्ट्रा अपग्रेड Quantaureum के दीर्घकालिक विकास लक्ष्यों में केवल एक कदम है। [प्रोटोकॉल रोडमैप](/roadmap/) और पिछले अपग्रेड के बारे में अधिक जानें।
 </AlertDescription>
 </AlertContent>
 </Alert>

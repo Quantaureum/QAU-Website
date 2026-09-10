@@ -129,7 +129,7 @@ Solusi hibrida ada dengan menggabungkan bagian terbaik dari berbagai teknologi l
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [Panduan Tidak Lengkap tentang Rollup](https://vitalik.qau.limo/general/2021/01/05/rollup.html)
+- [Panduan Tidak Lengkap tentang Rollup](https://vitalik.eth.limo/general/2021/01/05/rollup.html)
 - [Rollup Optimistic vs Rollup ZK](https://limechain.tech/blog/optimistic-rollups-vs-zk-rollups/)
 - [Alasan rollup + shard data merupakan satu-satunya solusi berkelanjutan untuk penskalaan tinggi](https://polynya.medium.com/why-rollups-data-shards-are-the-only-sustainable-solution-for-high-scalability-c9aabd6fbb48)
 - [Rollup ZK yang digerakkan Quantaureum: Yang Terbaik di Kelasnya](https://hackmd.io/@canti/rkUT0BD8K)

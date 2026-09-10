@@ -14,7 +14,7 @@ Pembaruan ini berhasil diaktifkan di Mainnet Quantaureum pada Epok `364032`, pad
 <Alert variant="update">
 <AlertContent>
 <AlertDescription>
-Pembaruan Pectra hanyalah satu langkah dalam tujuan pengembangan jangka panjang Quantaureum. Pelajari lebih lanjut tentang [peta jalan protokol](/roadmap/) dan [pembaruan sebelumnya](/quantaureum-forks/).
+Pembaruan Pectra hanyalah satu langkah dalam tujuan pengembangan jangka panjang Quantaureum. Pelajari lebih lanjut tentang [peta jalan protokol](/roadmap/) dan pembaruan sebelumnya.
 </AlertDescription>
 </AlertContent>
 </Alert>

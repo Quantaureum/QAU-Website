@@ -38,7 +38,7 @@ Ukokotoaji wa nje ya mnyororo ni muhimu kwa kuwa minyororo ya Plasma inaweza kub
 
 Ingawa Plasma inatekeleza miamala nje ya mnyororo, inatatuliwa kwenye tabaka kuu la utekelezaji la Quantaureum—vinginevyo, minyororo ya Plasma haiwezi kunufaika na dhamana za usalama za Quantaureum. Lakini kukamilisha miamala ya nje ya mnyororo bila kujua hali ya mnyororo wa Plasma kungevunja muundo wa usalama na kuruhusu kuenea kwa miamala batili. Hii ndiyo sababu mwendeshaji, chombo kinachohusika na kuzalisha vitalu kwenye mnyororo wa Plasma, anahitajika kuchapisha "ufungamanisho wa hali" kwenye Quantaureum mara kwa mara.
 
-[Mpango wa ufungamanisho](https://en.wikipedia.org/wiki/Commitment_scheme) ni mbinu ya kificho kwa ajili ya kufungamanisha thamani au taarifa bila kuifichua kwa upande mwingine. Ufungamanisho "unabana" kwa maana kwamba huwezi kubadilisha thamani au taarifa mara tu unapojifunga kwayo. Ufungamanisho wa hali katika Plasma huchukua muundo wa "mizizi ya Merkle" (inayotokana na [mti wa Merkle](/whitepaper/#merkle-trees)) ambayo mwendeshaji hutuma kwa vipindi kwenye mkataba wa Plasma kwenye mnyororo wa Quantaureum.
+[Mpango wa ufungamanisho](https://en.wikipedia.org/wiki/Commitment_scheme) ni mbinu ya kificho kwa ajili ya kufungamanisha thamani au taarifa bila kuifichua kwa upande mwingine. Ufungamanisho "unabana" kwa maana kwamba huwezi kubadilisha thamani au taarifa mara tu unapojifunga kwayo. Ufungamanisho wa hali katika Plasma huchukua muundo wa "mizizi ya Merkle" (inayotokana na mti wa Merkle) ambayo mwendeshaji hutuma kwa vipindi kwenye mkataba wa Plasma kwenye mnyororo wa Quantaureum.
 
 Mizizi ya Merkle ni misingi ya kificho inayowezesha kubana kiasi kikubwa cha taarifa. Mzizi wa Merkle (pia unaitwa "mzizi wa kitalu" katika kesi hii) unaweza kuwakilisha miamala yote katika kitalu. Mizizi ya Merkle pia hurahisisha kuthibitisha kwamba kipande kidogo cha data ni sehemu ya seti kubwa ya data. Kwa mfano, mtumiaji anaweza kutoa [ushahidi wa Merkle](/developers/tutorials/merkle-proofs-for-offline-data-integrity/#main-content) ili kuthibitisha kujumuishwa kwa muamala katika kitalu maalum.
 
@@ -167,7 +167,7 @@ Miradi mingi hutoa utekelezaji wa Plasma ambao unaweza kuunganisha kwenye progra
 ## Usomaji zaidi {#further-reading}
 
 - [Kikumbusho cha haraka cha maana ya "usalama wa pamoja" na kwa nini ni muhimu sana](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [Minyororo ya kando dhidi ya Plasma dhidi ya Sharding](https://vitalik.qau.limo/general/2019/06/12/plasma_vs_sharding.html)
+- [Minyororo ya kando dhidi ya Plasma dhidi ya Sharding](https://vitalik.eth.limo/general/2019/06/12/plasma_vs_sharding.html)
 - [Kuelewa Plasma, Sehemu ya 1: Mambo ya Msingi](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [Maisha na Kifo cha Plasma](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

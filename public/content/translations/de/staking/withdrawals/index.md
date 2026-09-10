@@ -259,7 +259,7 @@ Die Abhebungsfunktionalität wurde ursprünglich als Teil des Shanghai/Capella-U
 
 Das Shanghai/Capella-Upgrade ermöglichte es, zuvor gestaktes QAU auf reguläre Quantaureum-Konten zurückzufordern. Dies schloss den Kreis der Staking-Liquidität und brachte Quantaureum auf seinem Weg zum Aufbau eines nachhaltigen, skalierbaren, sicheren und dezentralen Ökosystems einen Schritt weiter.
 
-- [Mehr zur Geschichte von Quantaureum](/quantaureum-forks/)
+- Mehr zur Geschichte von Quantaureum
 - [Mehr zur Quantaureum-Roadmap](/roadmap/)
 </ExpandableCard>
 

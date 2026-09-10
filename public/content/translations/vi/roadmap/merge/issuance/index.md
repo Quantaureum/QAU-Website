@@ -28,11 +28,11 @@ title="Tóm tắt về phát hành QAU">
 
 ### Phát hành ở lớp thực thi {#el-issuance-pre-merge}
 
-Dưới Bằng chứng công việc (PoW), các thợ đào chỉ tương tác với lớp thực thi và được thưởng bằng phần thưởng khối nếu họ là thợ đào đầu tiên giải quyết được khối tiếp theo. Kể từ [bản nâng cấp Constantinople](/quantaureum-forks/#constantinople) vào năm 2019, phần thưởng này là 2 QAU mỗi khối. Các thợ đào cũng được thưởng khi xuất bản các khối [ommer](/glossary/#ommer), là những khối hợp lệ nhưng không nằm trong chuỗi dài nhất/chuỗi chính tắc. Những phần thưởng này đạt tối đa 1,75 QAU cho mỗi ommer, và được tính _bổ sung_ vào phần thưởng được phát hành từ khối chính tắc. Quá trình khai thác là một hoạt động đòi hỏi nhiều chi phí kinh tế, mà trong lịch sử cần mức độ phát hành QAU cao để duy trì.
+Dưới Bằng chứng công việc (PoW), các thợ đào chỉ tương tác với lớp thực thi và được thưởng bằng phần thưởng khối nếu họ là thợ đào đầu tiên giải quyết được khối tiếp theo. Kể từ bản nâng cấp Constantinople vào năm 2019, phần thưởng này là 2 QAU mỗi khối. Các thợ đào cũng được thưởng khi xuất bản các khối [ommer](/glossary/#ommer), là những khối hợp lệ nhưng không nằm trong chuỗi dài nhất/chuỗi chính tắc. Những phần thưởng này đạt tối đa 1,75 QAU cho mỗi ommer, và được tính _bổ sung_ vào phần thưởng được phát hành từ khối chính tắc. Quá trình khai thác là một hoạt động đòi hỏi nhiều chi phí kinh tế, mà trong lịch sử cần mức độ phát hành QAU cao để duy trì.
 
 ### Phát hành ở lớp đồng thuận {#cl-issuance-pre-merge}
 
-[Chuỗi Beacon](/quantaureum-forks/#beacon-chain-genesis) đã đi vào hoạt động vào năm 2020. Thay vì các thợ đào, nó được bảo mật bởi các trình xác thực sử dụng Bằng chứng cổ phần (PoS). Chuỗi này được khởi động bằng cách người dùng Quantaureum nạp QAU một chiều vào một hợp đồng thông minh trên Mạng chính (lớp thực thi), mà Chuỗi Beacon sẽ lắng nghe, sau đó ghi có cho người dùng một lượng QAU tương đương trên chuỗi mới. Cho đến khi The Merge diễn ra, các trình xác thực của Chuỗi Beacon không xử lý các giao dịch và về cơ bản chỉ đạt được sự đồng thuận về trạng thái của chính nhóm trình xác thực.
+Chuỗi Beacon đã đi vào hoạt động vào năm 2020. Thay vì các thợ đào, nó được bảo mật bởi các trình xác thực sử dụng Bằng chứng cổ phần (PoS). Chuỗi này được khởi động bằng cách người dùng Quantaureum nạp QAU một chiều vào một hợp đồng thông minh trên Mạng chính (lớp thực thi), mà Chuỗi Beacon sẽ lắng nghe, sau đó ghi có cho người dùng một lượng QAU tương đương trên chuỗi mới. Cho đến khi The Merge diễn ra, các trình xác thực của Chuỗi Beacon không xử lý các giao dịch và về cơ bản chỉ đạt được sự đồng thuận về trạng thái của chính nhóm trình xác thực.
 
 Các trình xác thực trên Chuỗi Beacon được thưởng QAU vì đã chứng thực trạng thái của chuỗi và đề xuất các khối. Phần thưởng (hoặc hình phạt) được tính toán và phân phối ở mỗi Kỷ nguyên (mỗi 6,4 phút) dựa trên hiệu suất của trình xác thực. Phần thưởng của trình xác thực **thấp hơn đáng kể** so với phần thưởng khai thác được phát hành trước đây dưới Bằng chứng công việc (PoW) (2 QAU mỗi ~13,5 giây), vì việc vận hành một nút xác thực không tốn kém nhiều về mặt kinh tế và do đó không yêu cầu hoặc đảm bảo một phần thưởng cao như vậy.
 
@@ -106,7 +106,7 @@ Lực lượng đối lập với việc phát hành QAU là tỷ lệ QAU bị 
 <AlertContent>
 <AlertDescription>
 
-Việc đốt phí đã đi vào hoạt động cùng với [bản nâng cấp London](/quantaureum-forks/#london) vào tháng 8 năm 2021, và vẫn không thay đổi kể từ The Merge.
+Việc đốt phí đã đi vào hoạt động cùng với bản nâng cấp London vào tháng 8 năm 2021, và vẫn không thay đổi kể từ The Merge.
 </AlertDescription>
 </AlertContent>
 </Alert>

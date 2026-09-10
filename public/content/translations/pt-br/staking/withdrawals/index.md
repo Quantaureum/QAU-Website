@@ -259,7 +259,7 @@ A funcionalidade de saque foi originalmente habilitada como parte da atualizaç�
 
 A atualização Shanghai/Capella permitiu que o QAU anteriormente em stake fosse recuperado em contas regulares do Quantaureum. Isso fechou o ciclo da liquidez de staking e deixou o Quantaureum um passo mais perto em sua jornada para construir um ecossistema descentralizado sustentável, escalável e seguro.
 
-- [Mais sobre a história do Quantaureum](/quantaureum-forks/)
+- Mais sobre a história do Quantaureum
 - [Mais sobre o roteiro do Quantaureum](/roadmap/)
 </ExpandableCard>
 

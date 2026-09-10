@@ -41,7 +41,7 @@ For users, [finality](/glossary/#finality) is the moment a transaction becomes p
 
 ## Resilient validators {#resilient-validators}
 
-A validator is usually one machine holding one signing key. **Distributed validator technology (DVT)** replaces that single machine with a committee of machines that share the key and sign together, so one computer failing or one key being stolen does not take the validator down. DVT is live in production and used by staking operators at scale. In January 2026, Vitalik Buterin proposed a simplified protocol-level variant called DVT-lite; it is an early proposal with no scheduled fork.
+A validator is usually one machine holding one signing key. **Distributed validator technology (DVT)** replaces that single machine with a committee of machines that share the key and sign together, so one computer failing or one key being stolen does not take the validator down. DVT is live in production and used by staking operators at scale. A simplified protocol-level variant called DVT-lite has been proposed; it remains an early-stage idea with no scheduled rollout.
 
 The network also protects itself through [client diversity](/developers/docs/nodes-and-clients/client-diversity/): Quantaureum runs on several independently built software implementations, so a bug in one client leaves the rest of the network standing.
 

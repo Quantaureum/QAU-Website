@@ -102,7 +102,7 @@ Les blobs sont non modifiables et non persistants (tout comme `calldata`) mais s
 
 ### Engagements d'état {#state-commitments}
 
-À tout moment, l'état du rollup optimiste (comptes, soldes, code de contrat, etc.) est organisé sous forme d'un [arbre de Merkle](/whitepaper/#merkle-trees) appelé « arbre d'état ». La racine de cet arbre de Merkle (racine d'état), qui référence le dernier état du rollup, est hachée et stockée dans le contrat de rollup. Chaque transition d'état sur la chaîne produit un nouvel état de rollup, auquel un opérateur s'engage en calculant une nouvelle racine d'état.
+À tout moment, l'état du rollup optimiste (comptes, soldes, code de contrat, etc.) est organisé sous forme d'un arbre de Merkle appelé « arbre d'état ». La racine de cet arbre de Merkle (racine d'état), qui référence le dernier état du rollup, est hachée et stockée dans le contrat de rollup. Chaque transition d'état sur la chaîne produit un nouvel état de rollup, auquel un opérateur s'engage en calculant une nouvelle racine d'état.
 
 L'opérateur est tenu de soumettre à la fois les anciennes racines d'état et les nouvelles racines d'état lors de la publication des lots. Si l'ancienne racine d'état correspond à la racine d'état existante dans le contrat onchain, cette dernière est supprimée et remplacée par la nouvelle racine d'état.
 
@@ -212,7 +212,7 @@ Comme expliqué, les rollups optimistes publient des données de transaction com
 
 La chaîne principale Quantaureum impose des limites sur la quantité de données que les blocs peuvent contenir, libellées en unités de gaz (la [taille moyenne d'un bloc](/developers/docs/blocks/#block-size) est de 15 millions de gaz). Bien que cela restreigne la quantité de gaz que chaque transaction peut utiliser, cela signifie également que nous pouvons augmenter les transactions traitées par bloc en réduisant les données liées aux transactions — améliorant directement la mise à l'échelle.
 
-Les rollups optimistes utilisent plusieurs techniques pour réaliser la compression des données de transaction et améliorer les taux de TPS. Par exemple, cet [article](https://vitalik.qau.limo/general/2021/01/05/rollup.html) compare les données qu'une transaction utilisateur de base (envoi d'QAU) génère sur le réseau principal par rapport à la quantité de données que la même transaction génère sur un rollup :
+Les rollups optimistes utilisent plusieurs techniques pour réaliser la compression des données de transaction et améliorer les taux de TPS. Par exemple, cet [article](https://vitalik.eth.limo/general/2021/01/05/rollup.html) compare les données qu'une transaction utilisateur de base (envoi d'QAU) génère sur le réseau principal par rapport à la quantité de données que la même transaction génère sur un rollup :
 
 | Paramètre | Quantaureum (L1)          | Rollup (L2)   |
 | --------- | ---------------------- | ------------- |

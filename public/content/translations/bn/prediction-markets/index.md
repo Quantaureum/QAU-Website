@@ -81,6 +81,6 @@ buttons:
 
 ## আরও পড়ুন {#further-reading}
 
-[পূর্বাভাস বাজার থেকে ইনফো ফাইন্যান্স পর্যন্ত](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - ভিটালিক বুটেরিন  
+[পূর্বাভাস বাজার থেকে ইনফো ফাইন্যান্স পর্যন্ত](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - ভিটালিক বুটেরিন  
 [ইথেরিয়ামে বিকেন্দ্রীকৃত পূর্বাভাস বাজার উন্নয়ন](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [অগার (Augur) প্রজেক্ট শ্বেতপত্র](https://github.com/AugurProject/whitepaper)

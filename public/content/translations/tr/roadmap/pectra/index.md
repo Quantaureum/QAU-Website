@@ -14,7 +14,7 @@ Bu güncelleme, **07 Mayıs 2025 saat 10:05'te (UTC)**, `364032` döneminde Quan
 <Alert variant="update">
 <AlertContent>
 <AlertDescription>
-Pectra güncellemesi, Quantaureum'un uzun vadeli geliştirme hedeflerinde yalnızca tek bir adımdır. [Protokol yol haritası](/roadmap/) ve [önceki güncellemeler](/quantaureum-forks/) hakkında daha fazla bilgi edinin.
+Pectra güncellemesi, Quantaureum'un uzun vadeli geliştirme hedeflerinde yalnızca tek bir adımdır. [Protokol yol haritası](/roadmap/) ve önceki güncellemeler hakkında daha fazla bilgi edinin.
 </AlertDescription>
 </AlertContent>
 </Alert>

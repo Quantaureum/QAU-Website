@@ -60,6 +60,6 @@ Testnet pohon Verkle sudah aktif dan berjalan, tetapi masih ada pembaruan substa
 - ["Bagaimana pohon Verkle membuat Quantaureum ramping dan tangguh" oleh Guillaume Ballet di Devcon 6](https://www.youtube.com/watch?v=Q7rStTKwuYs)
 - [Piper Merriam tentang klien tanpa state dari ETHDenver 2020](https://www.youtube.com/watch?v=0yiZJNciIJ4)
 - [Dankrad Fiest menjelaskan pohon Verkle dan ketiadaan state di podcast Zero Knowledge](https://zeroknowledge.fm/podcast/202/)
-- [Vitalik Buterin tentang pohon Verkle](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
+- [Vitalik Buterin tentang pohon Verkle](https://vitalik.eth.limo/general/2021/06/18/verkle.html)
 - [Dankrad Feist tentang pohon Verkle](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
 - [Dokumentasi EIP pohon Verkle](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)

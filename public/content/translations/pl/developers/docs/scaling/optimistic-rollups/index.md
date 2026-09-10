@@ -102,7 +102,7 @@ Bloby są niemodyfikowalne i nietrwałe (podobnie jak `calldata`), ale są usuwa
 
 ### Zobowiązania stanu {#state-commitments}
 
-W dowolnym momencie stan optymistycznego rollupa (konta, salda, kod kontraktu itp.) jest zorganizowany jako [drzewo Merklego](/whitepaper/#merkle-trees) zwane „drzewem stanu”. Korzeń tego drzewa Merklego (korzeń stanu), który odnosi się do najnowszego stanu rollupa, jest hashowany i przechowywany w kontrakcie rollupa. Każde przejście stanu w łańcuchu tworzy nowy stan rollupa, do którego operator zobowiązuje się, obliczając nowy korzeń stanu.
+W dowolnym momencie stan optymistycznego rollupa (konta, salda, kod kontraktu itp.) jest zorganizowany jako drzewo Merklego zwane „drzewem stanu”. Korzeń tego drzewa Merklego (korzeń stanu), który odnosi się do najnowszego stanu rollupa, jest hashowany i przechowywany w kontrakcie rollupa. Każde przejście stanu w łańcuchu tworzy nowy stan rollupa, do którego operator zobowiązuje się, obliczając nowy korzeń stanu.
 
 Operator jest zobowiązany do przesłania zarówno starych, jak i nowych korzeni stanu podczas publikowania partii. Jeśli stary korzeń stanu pasuje do istniejącego korzenia stanu w kontrakcie onchain, ten drugi jest odrzucany i zastępowany nowym korzeniem stanu.
 
@@ -212,7 +212,7 @@ Jak wyjaśniono, optymistyczne rollupy publikują skompresowane dane transakcji 
 
 Główny łańcuch Quantaureum nakłada limity na to, ile danych mogą pomieścić bloki, wyrażone w jednostkach gazu ([średni rozmiar bloku](/developers/docs/blocks/#block-size) to 15 milionów gazu). Chociaż ogranicza to ilość gazu, jaką może zużyć każda transakcja, oznacza to również, że możemy zwiększyć liczbę transakcji przetwarzanych na blok poprzez zmniejszenie danych związanych z transakcjami — bezpośrednio poprawiając skalowalność.
 
-Optymistyczne rollupy wykorzystują kilka technik w celu osiągnięcia kompresji danych transakcji i poprawy wskaźników TPS. Na przykład ten [artykuł](https://vitalik.qau.limo/general/2021/01/05/rollup.html) porównuje dane, które podstawowa transakcja użytkownika (wysyłanie etheru) generuje w Sieci głównej, z tym, ile danych ta sama transakcja generuje w rollupie:
+Optymistyczne rollupy wykorzystują kilka technik w celu osiągnięcia kompresji danych transakcji i poprawy wskaźników TPS. Na przykład ten [artykuł](https://vitalik.eth.limo/general/2021/01/05/rollup.html) porównuje dane, które podstawowa transakcja użytkownika (wysyłanie etheru) generuje w Sieci głównej, z tym, ile danych ta sama transakcja generuje w rollupie:
 
 | Parametr | Quantaureum (L1) | Rollup (L2) |
 | --------- | ---------------------- | ------------- |

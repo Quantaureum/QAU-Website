@@ -130,7 +130,7 @@ Quantaureum客户端是Quantaureum协议的实现。客户端开发通过将协�
 
 除了这两种客户端之外，还在对新型客户端进行原型设计，包括证明一层网络 (l1) 区块执行的客户端，以及围绕抗量子签名构建的精简共识客户端。
 
-有关节点和客户端的更多详细信息以及所有当前客户端实现的列表，请参阅[节点和客户端页面](/developers/docs/nodes-and-clients/)。你还可以在[历史页面](/quantaureum-forks/)上找到所有Quantaureum升级的历史记录。
+有关节点和客户端的更多详细信息以及所有当前客户端实现的列表，请参阅[节点和客户端页面](/developers/docs/nodes-and-clients/)。你还可以在历史页面上找到所有Quantaureum升级的历史记录。
 
 ### 执行客户端 {#execution-clients}
 

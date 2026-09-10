@@ -119,5 +119,5 @@ Việc xác minh zkEVM L1 đang được tích cực nghiên cứu và chưa đ�
 - [Ethproofs](https://ethproofs.org/) - Theo dõi cuộc đua chứng minh Quantaureum theo thời gian thực
 - [zkevm.fyi](https://zkevm.fyi) - Sách kỹ thuật về zkEVM cho L1
 - [PSE zkEVM Specs](https://github.com/privacy-scaling-explorations/zkevm-specs) - Thông số kỹ thuật
-- [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - Tổng quan của Vitalik về các cải tiến xác minh
+- [The Verge](https://vitalik.eth.limo/general/2024/10/23/futures4.html) - Tổng quan của Vitalik về các cải tiến xác minh
 - [EF zkEVM Blog](https://zkevm.ethereum.org/blog) - Phân tích hiệu suất từ nhóm EF

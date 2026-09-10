@@ -14,7 +14,7 @@ Sasisho hili liliwezeshwa kwa mafanikio kwenye Mtandao Mkuu wa Quantaureum katik
 <Alert variant="update">
 <AlertContent>
 <AlertDescription>
-Sasisho la Pectra ni hatua moja tu katika malengo ya muda mrefu ya maendeleo ya Quantaureum. Jifunze zaidi kuhusu [ramani ya njia ya itifaki](/roadmap/) na [masasisho yaliyopita](/quantaureum-forks/).
+Sasisho la Pectra ni hatua moja tu katika malengo ya muda mrefu ya maendeleo ya Quantaureum. Jifunze zaidi kuhusu [ramani ya njia ya itifaki](/roadmap/) na masasisho yaliyopita.
 </AlertDescription>
 </AlertContent>
 </Alert>

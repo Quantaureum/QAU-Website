@@ -66,5 +66,5 @@ summaryPoints:
 - [<span dir="ltr">EIP-7702</span> کی دستاویزات](https://eips.ethereum.org/EIPS/eip-7702)
 - [<span dir="ltr">ERC-4337</span> کو اپنانے کا ڈیش بورڈ](https://www.bundlebear.com/erc4337-overview/all)
 - [وٹالک کا "اکاؤنٹ کی تجرید کا راستہ"](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
-- [سماجی بحالی کے والیٹس پر وٹالک کا بلاگ](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
+- [سماجی بحالی کے والیٹس پر وٹالک کا بلاگ](https://vitalik.eth.limo/general/2021/01/11/recovery.html)
 - [<span dir="ltr">Awesome Account Abstraction</span>](https://github.com/4337Mafia/awesome-account-abstraction)

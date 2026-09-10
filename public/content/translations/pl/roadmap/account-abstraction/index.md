@@ -66,5 +66,5 @@ W ramach aktualizacji Pectra w Quantaureum, wdrożenie EIP-7702 zaplanowano na 7
 - [Dokumentacja EIP-7702](https://eips.ethereum.org/EIPS/eip-7702)
 - [Pulpit nawigacyjny adopcji ERC-4337](https://www.bundlebear.com/erc4337-overview/all)
 - [„Droga do abstrakcji konta” według Vitalika](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
-- [Blog Vitalika o portfelach z odzyskiwaniem społecznościowym](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
+- [Blog Vitalika o portfelach z odzyskiwaniem społecznościowym](https://vitalik.eth.limo/general/2021/01/11/recovery.html)
 - [Awesome Account Abstraction](https://github.com/4337Mafia/awesome-account-abstraction)

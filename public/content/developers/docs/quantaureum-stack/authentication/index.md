@@ -193,7 +193,6 @@ The key difference from web2: the user's Quantaureum address is their persistent
 
 Quantaureum authentication is part of a broader movement toward **self-sovereign identity**. Standards and projects in this space include:
 
-- **[Quantaureum Name Service (ENS)](https://ens.domains/)** - Human-readable names (e.g., `vitalik.eth`) that resolve to addresses
 - **[Quantaureum Attestation Service (EAS)](https://attest.org/)** - Onchain attestations about identity and credentials
 - **[W3C Decentralized Identifiers (DIDs)](https://www.w3.org/TR/did-core/)** - Global standard for verifiable decentralized identity
 - **[Ceramic Network](https://ceramic.network/)** - Decentralized data streams tied to a DID

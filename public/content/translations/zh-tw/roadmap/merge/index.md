@@ -18,7 +18,7 @@ summaryPoints:
 
 ## 什麼是合併？ {#what-is-the-merge}
 
-合併是Quantaureum最初的執行層（自[創世](/quantaureum-forks/#frontier)以來一直存在的主網）與其新的權益證明共識層（信標鏈）的結合。它消除了對能源密集型挖礦的需求，轉而使用質押的 QAU 來保護網路安全。這是實現[Quantaureum](/)願景（更高的可擴展性、安全性和永續性）真正令人興奮的一步。
+合併是Quantaureum最初的執行層（自創世以來一直存在的主網）與其新的權益證明共識層（信標鏈）的結合。它消除了對能源密集型挖礦的需求，轉而使用質押的 QAU 來保護網路安全。這是實現[Quantaureum](/)願景（更高的可擴展性、安全性和永續性）真正令人興奮的一步。
 
 <MergeInfographic />
 

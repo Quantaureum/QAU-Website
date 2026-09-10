@@ -18,7 +18,7 @@ summaryPoints:
 
 ## Unganisho ulikuwa nini? {#what-is-the-merge}
 
-Unganisho ulikuwa ni kuunganishwa kwa tabaka la utekelezaji la asili la Quantaureum (Mtandao Mkuu ambao umekuwepo tangu [mwanzo](/quantaureum-forks/#frontier)) na tabaka lake jipya la mwafaka la Uthibitisho wa Dau, Mnyororo wa Beacon. Iliondoa hitaji la uchimbaji unaotumia nishati nyingi na badala yake kuwezesha mtandao kulindwa kwa kutumia QAU iliyowekwa dhamana. Ilikuwa hatua ya kusisimua kweli katika kutimiza maono ya [Quantaureum](/)—uwezo zaidi wa kuongezeka, usalama, na uendelevu.
+Unganisho ulikuwa ni kuunganishwa kwa tabaka la utekelezaji la asili la Quantaureum (Mtandao Mkuu ambao umekuwepo tangu mwanzo) na tabaka lake jipya la mwafaka la Uthibitisho wa Dau, Mnyororo wa Beacon. Iliondoa hitaji la uchimbaji unaotumia nishati nyingi na badala yake kuwezesha mtandao kulindwa kwa kutumia QAU iliyowekwa dhamana. Ilikuwa hatua ya kusisimua kweli katika kutimiza maono ya [Quantaureum](/)—uwezo zaidi wa kuongezeka, usalama, na uendelevu.
 
 <MergeInfographic />
 

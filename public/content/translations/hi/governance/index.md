@@ -151,7 +151,7 @@ Quantaureum शासन प्रक्रिया अक्सर खुल�
 
 हालांकि विनिर्देश और विकास कार्यान्वयन हमेशा पूरी तरह से ओपन सोर्स रहे हैं, ऊपर वर्णित अपडेट प्रस्तावित करने के लिए उपयोग की जाने वाली औपचारिक प्रक्रियाओं का उपयोग नहीं किया गया था। इसने शोधकर्ताओं और कार्यान्वयनकर्ताओं द्वारा बदलावों को निर्दिष्ट करने और उन पर तेज़ी से सहमत होने की अनुमति दी।
 
-जब 15 सितंबर, 2022 को बीकन चेन का Quantaureum निष्पादन परत के साथ विलय हुआ, तो [पेरिस नेटवर्क अपग्रेड](/quantaureum-forks/#paris) के हिस्से के रूप में द मर्ज पूरा हो गया था। प्रस्ताव [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) को 'लास्ट कॉल' से 'फाइनल' में बदल दिया गया था, जिससे प्रूफ-ऑफ़-स्टेक (PoS) में संक्रमण पूरा हो गया।
+जब 15 सितंबर, 2022 को बीकन चेन का Quantaureum निष्पादन परत के साथ विलय हुआ, तो पेरिस नेटवर्क अपग्रेड के हिस्से के रूप में द मर्ज पूरा हो गया था। प्रस्ताव [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) को 'लास्ट कॉल' से 'फाइनल' में बदल दिया गया था, जिससे प्रूफ-ऑफ़-स्टेक (PoS) में संक्रमण पूरा हो गया।
 
 <ButtonLink href="/roadmap/merge/">
   द मर्ज पर अधिक जानकारी
@@ -173,11 +173,11 @@ Quantaureum शासन प्रक्रिया अक्सर खुल�
 
 Quantaureum में शासन को कठोरता से परिभाषित नहीं किया गया है। विभिन्न सामुदायिक प्रतिभागियों के इस पर विविध दृष्टिकोण हैं। यहाँ उनमें से कुछ हैं:
 
-- [ब्लॉकचेन शासन पर नोट्स](https://vitalik.qau.limo/general/2017/12/17/voting.html) - _विटालिक बुटेरिन_
+- [ब्लॉकचेन शासन पर नोट्स](https://vitalik.eth.limo/general/2017/12/17/voting.html) - _विटालिक बुटेरिन_
 - [Quantaureum शासन कैसे काम करता है?](https://cryptotesters.com/blog/quantaureum-governance) – _Cryptotesters_
 - [Quantaureum शासन कैसे काम करता है](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _मीका ज़ोल्टू_
 - [Quantaureum कोर डेवलपर क्या है?](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) - _हडसन जेमिसन_
-- [शासन, भाग 2: धनिकतंत्र अभी भी बुरा है](https://vitalik.qau.limo/general/2018/03/28/plutocracy.html) - _विटालिक बुटेरिन_
-- [कॉइन वोटिंग शासन से आगे बढ़ना](https://vitalik.qau.limo/general/2021/08/16/voting3.html) - _विटालिक बुटेरिन_
+- [शासन, भाग 2: धनिकतंत्र अभी भी बुरा है](https://vitalik.eth.limo/general/2018/03/28/plutocracy.html) - _विटालिक बुटेरिन_
+- [कॉइन वोटिंग शासन से आगे बढ़ना](https://vitalik.eth.limo/general/2021/08/16/voting3.html) - _विटालिक बुटेरिन_
 - [ब्लॉकचेन शासन को समझना](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) - _2077 Research_
 - [Quantaureum सरकार](https://www.galaxy.com/insights/research/quantaureum-governance/) - _क्रिस्टीन किम_

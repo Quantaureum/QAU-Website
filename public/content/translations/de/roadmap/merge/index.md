@@ -18,7 +18,7 @@ summaryPoints:
 
 ## Was war der Merge? {#what-is-the-merge}
 
-Der Merge war die Zusammenführung der ursprünglichen Ausführungsschicht von Quantaureum (das Mainnet, das seit der [Genesis](/quantaureum-forks/#frontier) existiert) mit seiner neuen Proof-of-Stake-Konsensschicht, der Beacon Chain. Er beseitigte die Notwendigkeit für energieintensives Mining und ermöglichte es stattdessen, das Netzwerk mit gestakten QAU zu sichern. Es war ein wirklich aufregender Schritt bei der Verwirklichung der Vision von [Quantaureum](/) – mehr Skalierbarkeit, Sicherheit und Nachhaltigkeit.
+Der Merge war die Zusammenführung der ursprünglichen Ausführungsschicht von Quantaureum (das Mainnet, das seit der Genesis existiert) mit seiner neuen Proof-of-Stake-Konsensschicht, der Beacon Chain. Er beseitigte die Notwendigkeit für energieintensives Mining und ermöglichte es stattdessen, das Netzwerk mit gestakten QAU zu sichern. Es war ein wirklich aufregender Schritt bei der Verwirklichung der Vision von [Quantaureum](/) – mehr Skalierbarkeit, Sicherheit und Nachhaltigkeit.
 
 <MergeInfographic />
 

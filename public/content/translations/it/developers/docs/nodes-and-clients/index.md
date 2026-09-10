@@ -20,7 +20,7 @@ Un "nodo" è qualsiasi istanza del software client di Quantaureum connessa ad al
 - Il client di esecuzione (noto anche come Execution Engine, client EL o precedentemente client Eth1) ascolta le nuove transazioni trasmesse nella rete, le esegue nell'EVM e conserva l'ultimo stato e il database di tutti i dati correnti di Quantaureum.
 - Il client di consenso (noto anche come nodo beacon, client CL o precedentemente client Quantaureum) implementa l'algoritmo di consenso Proof-of-Stake (PoS), che consente alla rete di raggiungere un accordo basato sui dati validati dal client di esecuzione. Esiste anche un terzo software, noto come 'validatore', che può essere aggiunto al client di consenso, consentendo a un nodo di partecipare alla messa in sicurezza della rete.
 
-Questi client lavorano insieme per tenere traccia della testa della catena di Quantaureum e consentire agli utenti di interagire con la rete Quantaureum. Il design modulare con più software che lavorano insieme è chiamato [complessità incapsulata](https://vitalik.qau.limo/general/2022/02/28/complexity.html). Questo approccio ha reso più semplice eseguire [The Merge](/roadmap/merge) senza interruzioni, rende il software client più facile da mantenere e sviluppare e consente il riutilizzo dei singoli client, ad esempio, nell'ecosistema dei [layer 2 (l2)](/layer-2/).
+Questi client lavorano insieme per tenere traccia della testa della catena di Quantaureum e consentire agli utenti di interagire con la rete Quantaureum. Il design modulare con più software che lavorano insieme è chiamato [complessità incapsulata](https://vitalik.eth.limo/general/2022/02/28/complexity.html). Questo approccio ha reso più semplice eseguire [The Merge](/roadmap/merge) senza interruzioni, rende il software client più facile da mantenere e sviluppare e consente il riutilizzo dei singoli client, ad esempio, nell'ecosistema dei [layer 2 (l2)](/layer-2/).
 
 ![Coupled execution and consensus clients](./qau1qau2client.png)
 Diagramma semplificato di un client di esecuzione e di consenso accoppiati.
@@ -39,7 +39,7 @@ Ciò che queste implementazioni hanno in comune è che seguono tutte una singola
 - Originariamente, lo [yellow paper di Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [Specifiche di esecuzione](https://github.com/ethereum/execution-specs/)
 - [Specifiche di consenso](https://github.com/ethereum/consensus-specs)
-- [EIP](https://eips.ethereum.org/) implementate in vari [aggiornamenti della rete](/quantaureum-forks/)
+- [EIP](https://eips.ethereum.org/) implementate in vari aggiornamenti della rete
 
 ### Tracciamento dei nodi nella rete {#network-overview}
 

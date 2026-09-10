@@ -1208,7 +1208,7 @@ Bezpieczeństwo informacji składa się z trzech atrybutów:
 
 W tym systemie integralność jest zapewniana poprzez dowody z wiedzą zerową. Dostępność jest znacznie trudniejsza do zagwarantowania, a poufność jest niemożliwa, ponieważ bank musi znać saldo każdego konta i wszystkie transakcje. Nie ma sposobu, aby zapobiec udostępnianiu informacji przez podmiot, który je posiada.
 
-Stworzenie prawdziwie poufnego banku mogłoby być możliwe przy użyciu [ukrytych adresów](https://vitalik.qau.limo/general/2023/01/20/stealth.html), ale wykracza to poza zakres tego artykułu.
+Stworzenie prawdziwie poufnego banku mogłoby być możliwe przy użyciu [ukrytych adresów](https://vitalik.eth.limo/general/2023/01/20/stealth.html), ale wykracza to poza zakres tego artykułu.
 
 ### Fałszywe informacje {#false-info}
 

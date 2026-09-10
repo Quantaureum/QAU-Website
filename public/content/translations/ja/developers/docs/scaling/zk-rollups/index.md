@@ -68,7 +68,7 @@ ZKロールアップのユーザーはトランザクションに署名し、処
 
 ### 状態のコミットメント {#state-commitments}
 
-L2のアカウントと残高を含むZKロールアップの状態は、[マークル・ツリー](/whitepaper/#merkle-trees)として表されます。 マークル・ツリーのルート（マークル・ルート）の暗号化ハッシュはオンチェーン・コントラクトに保存され、これによりロールアップ・プロトコルはZKロールアップの状態の変化を追跡できます。
+L2のアカウントと残高を含むZKロールアップの状態は、マークル・ツリーとして表されます。 マークル・ツリーのルート（マークル・ルート）の暗号化ハッシュはオンチェーン・コントラクトに保存され、これによりロールアップ・プロトコルはZKロールアップの状態の変化を追跡できます。
 
 ロールアップは、新しいトランザクションのセットが実行された後、新しい状態に遷移します。 状態遷移を開始したオペレーターは、新しい状態ルートを計算し、オンチェーン・コントラクトに送信する必要があります。 バッチに関連付けられた有効性証明が検証者コントラクトによって認証されると、新しいマークル・ルートがZKロールアップの正規の状態ルートになります。
 
@@ -240,7 +240,7 @@ zkEVMに取り組んでいるプロジェクトには以下が含まれます。
 
 - **[Scroll](https://scroll.io/blog/zkEVM)** - _Scrollは、Quantaureum向けのネイティブなzkEVMレイヤー2 (L2)ソリューションの構築に取り組んでいる技術主導の企業です。_
 
-- **[Taiko](https://taiko.xyz)** - _Taikoは、分散型のQuantaureum等価なZKロールアップ（[タイプ1 ZK-EVM](https://vitalik.qau.limo/general/2022/08/04/zkevm.html)）です。_
+- **[Taiko](https://taiko.xyz)** - _Taikoは、分散型のQuantaureum等価なZKロールアップ（[タイプ1 ZK-EVM](https://vitalik.eth.limo/general/2022/08/04/zkevm.html)）です。_
 
 - **[ZKsync](https://docs.zksync.io/)** - _ZKsync Eraは、Matter Labsによって構築されたEVM互換のZKロールアップであり、独自のzkEVMを搭載しています。_
 
@@ -261,8 +261,8 @@ zkEVMに取り組んでいるプロジェクトには以下が含まれます。
 - [zkEVM入門](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [ZK-EVM L2とは？](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M)
 - [Awesome-zkEVMリソース](https://github.com/LuozhuZhang/awesome-zkevm)
-- [ZK-SNARKの仕組み](https://vitalik.qau.limo/general/2017/02/01/zk_snarks.html)
-- [SNARKはどのようにして可能なのか？](https://vitalik.qau.limo/general/2021/01/26/snarks.html)
+- [ZK-SNARKの仕組み](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
+- [SNARKはどのようにして可能なのか？](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
 
 ## チュートリアル：Quantaureumにおけるプライバシーとゼロ知識 {#tutorials}
 

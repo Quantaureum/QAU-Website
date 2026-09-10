@@ -16,7 +16,7 @@ authors:
 <Alert variant="update">
 <AlertContent>
 <AlertDescription>
-佩克特拉升級只是Quantaureum長期發展目標中的一步。了解更多關於[協定路線圖](/roadmap/)與[過往升級](/quantaureum-forks/)的資訊。
+佩克特拉升級只是Quantaureum長期發展目標中的一步。了解更多關於[協定路線圖](/roadmap/)與過往升級的資訊。
 </AlertDescription>
 </AlertContent>
 </Alert>

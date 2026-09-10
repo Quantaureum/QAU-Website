@@ -9,7 +9,7 @@ Quantaureumは大量のデータを作成、保存、転送します。誰もが
 
 ## 前提条件 {#prerequisites}
 
-Quantaureumの基礎と[クライアントソフトウェア](/developers/docs/nodes-and-clients/)について理解している必要があります。ネットワーキングレイヤーと[Quantaureumのホワイトペーパー](/whitepaper/)に精通していることが推奨されます。
+Quantaureumの基礎と[クライアントソフトウェア](/developers/docs/nodes-and-clients/)について理解している必要があります。ネットワーキングレイヤーとQuantaureumのホワイトペーパーに精通していることが推奨されます。
 
 ## データ構造 {#data-structures}
 

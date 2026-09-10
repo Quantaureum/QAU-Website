@@ -66,5 +66,5 @@ EIP-4337 在不修改Quantaureum核心協定的情況下，實現了原生的智
 - [EIP-7702 文件](https://eips.ethereum.org/EIPS/eip-7702)
 - [ERC-4337 採用儀表板](https://www.bundlebear.com/erc4337-overview/all)
 - [Vitalik 的「帳戶抽象化之路」](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
-- [Vitalik 關於社交恢復錢包的部落格文章](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
+- [Vitalik 關於社交恢復錢包的部落格文章](https://vitalik.eth.limo/general/2021/01/11/recovery.html)
 - [Awesome Account Abstraction](https://github.com/4337Mafia/awesome-account-abstraction)

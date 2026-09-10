@@ -18,7 +18,7 @@ Bằng chứng cổ phần (PoS) yêu cầu các nút, được gọi là trình
 
 Bằng chứng công việc (PoW) tiêu tốn nhiều năng lượng hơn vì điện năng bị đốt cháy trong quá trình khai thác. Mặt khác, Bằng chứng cổ phần (PoS) chỉ yêu cầu một lượng năng lượng rất nhỏ - các trình xác thực Quantaureum thậm chí có thể chạy trên một thiết bị tiêu thụ ít điện năng như Raspberry Pi. Cơ chế Bằng chứng cổ phần (PoS) của Quantaureum được cho là an toàn hơn Bằng chứng công việc (PoW) vì chi phí để tấn công lớn hơn và hậu quả đối với kẻ tấn công cũng nghiêm trọng hơn.
 
-Bằng chứng công việc (PoW) so với Bằng chứng cổ phần (PoS) là một chủ đề gây tranh cãi. [Blog của Vitalik Buterin](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) và cuộc tranh luận giữa Justin Drake và Lyn Alden đưa ra một bản tóm tắt tốt về các lập luận này.
+Bằng chứng công việc (PoW) so với Bằng chứng cổ phần (PoS) là một chủ đề gây tranh cãi. [Blog của Vitalik Buterin](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) và cuộc tranh luận giữa Justin Drake và Lyn Alden đưa ra một bản tóm tắt tốt về các lập luận này.
 
 
 ## Bằng chứng cổ phần (PoS) có tiết kiệm năng lượng không? {#is-pos-energy-efficient}
@@ -88,7 +88,7 @@ Thao túng cổ phần là một loại hình tấn công trên các mạng lư�
 Cắt giảm xã hội là khả năng của cộng đồng trong việc điều phối một Phân nhánh của Chuỗi khối để đối phó với một cuộc tấn công. Nó cho phép cộng đồng phục hồi sau khi một kẻ tấn công làm cho một Chuỗi thiếu trung thực đã chung cuộc. Cắt giảm xã hội cũng có thể được sử dụng để chống lại các cuộc tấn công kiểm duyệt.
 
 - [Tìm hiểu thêm về cắt giảm xã hội](https://ercwl.medium.com/the-case-for-social-slashing-59277ff4d9c7)
-- [Vitalik Buterin nói về cắt giảm xã hội](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
+- [Vitalik Buterin nói về cắt giảm xã hội](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
 
 ## Tôi có bị phạt cắt giảm không? {#will-i-get-slashed}
 
@@ -100,7 +100,7 @@ Là một trình xác thực, rất khó để bị phạt cắt giảm trừ kh
 
 Vấn đề không có gì để mất là một vấn đề mang tính khái niệm với một số cơ chế Bằng chứng cổ phần (PoS) trong đó chỉ có phần thưởng và không có hình phạt. Nếu không có gì để mất, một trình xác thực thực dụng sẽ sẵn sàng chứng thực cho bất kỳ, hoặc thậm chí nhiều Phân nhánh của Chuỗi khối, vì điều này làm tăng phần thưởng của họ. Quantaureum giải quyết vấn đề này bằng cách sử dụng các điều kiện tính chung cuộc và phạt cắt giảm để đảm bảo một Chuỗi chính tắc.
 
-[Tìm hiểu thêm về vấn đề không có gì để mất](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
+[Tìm hiểu thêm về vấn đề không có gì để mất](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
 
 ## Thuật toán chọn nhánh là gì? {#what-is-a-fork-choice-algorithm}
 

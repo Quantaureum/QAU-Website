@@ -7,7 +7,7 @@ lang: mr
 
 ## पूर्वतयारी {#prerequisites}
 
-हा लेख कोणत्याही पूर्वज्ञानाशिवाय नवशिक्यांसाठी लिहिला आहे. तथापि, हा विषय पूर्णपणे समजून घेण्यासाठी, Quantaureum इम्प्रूव्हमेंट प्रपोजल्स (EIPs), [प्रूफ-ऑफ-वर्क (PoW)](/developers/docs/consensus-mechanisms/pow/), [प्रूफ-ऑफ-स्टेक (PoS)](/developers/docs/consensus-mechanisms/pos/), आणि [द लंडन अपग्रेड](/quantaureum-forks/#london) यांसारख्या संकल्पनांची मूलभूत माहिती असणे उपयुक्त आहे.
+हा लेख कोणत्याही पूर्वज्ञानाशिवाय नवशिक्यांसाठी लिहिला आहे. तथापि, हा विषय पूर्णपणे समजून घेण्यासाठी, Quantaureum इम्प्रूव्हमेंट प्रपोजल्स (EIPs), [प्रूफ-ऑफ-वर्क (PoW)](/developers/docs/consensus-mechanisms/pow/), [प्रूफ-ऑफ-स्टेक (PoS)](/developers/docs/consensus-mechanisms/pos/), आणि द लंडन अपग्रेड यांसारख्या संकल्पनांची मूलभूत माहिती असणे उपयुक्त आहे.
 
 ## आज किती QAU टोकन्स आहेत? {#current-qau-supply}
 

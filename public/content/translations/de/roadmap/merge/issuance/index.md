@@ -28,11 +28,11 @@ title="QAU-Emission TL;DR">
 
 ### Emission der Ausführungsschicht {#el-issuance-pre-merge}
 
-Unter Proof-of-Work interagierten Miner nur mit der Ausführungsschicht und wurden mit Blockbelohnungen belohnt, wenn sie der erste Miner waren, der den nächsten Block löste. Seit dem [Constantinople-Upgrade](/quantaureum-forks/#constantinople) im Jahr 2019 betrug diese Belohnung 2 QAU pro Block. Miner wurden auch für die Veröffentlichung von [Ommer](/glossary/#ommer)-Blöcken belohnt, bei denen es sich um gültige Blöcke handelte, die nicht in der längsten/kanonischen Chain landeten. Diese Belohnungen erreichten maximal 1,75 QAU pro Ommer und erfolgten _zusätzlich_ zu der Belohnung, die aus dem kanonischen Block emittiert wurde. Der Prozess des Minings war eine wirtschaftlich intensive Aktivität, die historisch gesehen ein hohes Maß an QAU-Emission erforderte, um aufrechterhalten zu werden.
+Unter Proof-of-Work interagierten Miner nur mit der Ausführungsschicht und wurden mit Blockbelohnungen belohnt, wenn sie der erste Miner waren, der den nächsten Block löste. Seit dem Constantinople-Upgrade im Jahr 2019 betrug diese Belohnung 2 QAU pro Block. Miner wurden auch für die Veröffentlichung von [Ommer](/glossary/#ommer)-Blöcken belohnt, bei denen es sich um gültige Blöcke handelte, die nicht in der längsten/kanonischen Chain landeten. Diese Belohnungen erreichten maximal 1,75 QAU pro Ommer und erfolgten _zusätzlich_ zu der Belohnung, die aus dem kanonischen Block emittiert wurde. Der Prozess des Minings war eine wirtschaftlich intensive Aktivität, die historisch gesehen ein hohes Maß an QAU-Emission erforderte, um aufrechterhalten zu werden.
 
 ### Emission der Konsensschicht {#cl-issuance-pre-merge}
 
-Die [Beacon Chain](/quantaureum-forks/#beacon-chain-genesis) ging 2020 live. Anstelle von Minern wird sie von Validatoren mittels Proof-of-Stake gesichert. Diese Chain wurde gestartet, indem Quantaureum-Nutzer QAU in eine Richtung in einen Smart Contract im Mainnet (der Ausführungsschicht) einzahlten, auf den die Beacon Chain hört, und dem Nutzer einen gleichen Betrag an QAU auf der neuen Chain gutschrieb. Bis der Merge stattfand, verarbeiteten die Validatoren der Beacon Chain keine Transaktionen und fanden im Wesentlichen einen Konsens über den Zustand des Validator-Pools selbst.
+Die Beacon Chain ging 2020 live. Anstelle von Minern wird sie von Validatoren mittels Proof-of-Stake gesichert. Diese Chain wurde gestartet, indem Quantaureum-Nutzer QAU in eine Richtung in einen Smart Contract im Mainnet (der Ausführungsschicht) einzahlten, auf den die Beacon Chain hört, und dem Nutzer einen gleichen Betrag an QAU auf der neuen Chain gutschrieb. Bis der Merge stattfand, verarbeiteten die Validatoren der Beacon Chain keine Transaktionen und fanden im Wesentlichen einen Konsens über den Zustand des Validator-Pools selbst.
 
 Validatoren auf der Beacon Chain werden mit QAU belohnt, wenn sie den Zustand der Chain bezeugen und Blöcke vorschlagen. Belohnungen (oder Strafen) werden in jeder Epoche (alle 6,4 Minuten) basierend auf der Leistung des Validators berechnet und verteilt. Validator-Belohnungen sind **deutlich** geringer als die Mining-Belohnungen, die zuvor unter Proof-of-Work emittiert wurden (2 QAU alle ~13,5 Sekunden), da der Betrieb eines validierenden Knotens wirtschaftlich nicht so intensiv ist und daher keine so hohe Belohnung erfordert oder rechtfertigt.
 
@@ -106,7 +106,7 @@ Die Gegenkraft zur QAU-Emission ist die Rate, mit der QAU verbrannt wird. Damit 
 <AlertContent>
 <AlertDescription>
 
-Die Gebührenverbrennung ging mit dem [London-Upgrade](/quantaureum-forks/#london) im August 2021 live und bleibt seit dem Merge unverändert.
+Die Gebührenverbrennung ging mit dem London-Upgrade im August 2021 live und bleibt seit dem Merge unverändert.
 </AlertDescription>
 </AlertContent>
 </Alert>

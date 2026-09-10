@@ -66,5 +66,5 @@ Kama sehemu ya uboreshaji wa Pectra wa Quantaureum, EIP-7702 imepangwa kufanyika
 - [Nyaraka za EIP-7702](https://eips.ethereum.org/EIPS/eip-7702)
 - [Dashibodi ya upitishaji wa ERC-4337](https://www.bundlebear.com/erc4337-overview/all)
 - ["Njia ya Udhanifu wa Akaunti" ya Vitalik](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
-- [Blogu ya Vitalik kuhusu mikoba ya urejeshaji wa kijamii](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
+- [Blogu ya Vitalik kuhusu mikoba ya urejeshaji wa kijamii](https://vitalik.eth.limo/general/2021/01/11/recovery.html)
 - [Udhanifu wa Akaunti wa Kustaajabisha](https://github.com/4337Mafia/awesome-account-abstraction)

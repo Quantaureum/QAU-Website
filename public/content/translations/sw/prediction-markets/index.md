@@ -81,6 +81,6 @@ Hii ingesaidia waandaaji kubaini ni eneo gani lingesababisha tukio kubwa zaidi, 
 
 ## Usomaji zaidi {#further-reading}
 
-[Kutoka masoko ya ubashiri hadi fedha za taarifa](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
+[Kutoka masoko ya ubashiri hadi fedha za taarifa](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
 [Uendelezaji wa Soko la Ubashiri Lililogatuliwa kwenye Quantaureum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Waraka Mweupe wa Mradi wa Augur](https://github.com/AugurProject/whitepaper)

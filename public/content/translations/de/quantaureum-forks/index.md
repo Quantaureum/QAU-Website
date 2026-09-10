@@ -331,7 +331,7 @@ Das London-Upgrade führte [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) e
 
 Vor dem London-Upgrade hatte Quantaureum Blöcke mit fester Größe. In Zeiten hoher Netzwerknachfrage arbeiteten diese Blöcke mit voller Kapazität. Infolgedessen mussten Benutzer oft warten, bis die Nachfrage sank, um in einen Block aufgenommen zu werden, was zu einer schlechten Benutzererfahrung führte. Das London-Upgrade führte Blöcke mit variabler Größe bei Quantaureum ein.
 
-Die Art und Weise, wie Transaktionsgebühren im Quantaureum-Netzwerk berechnet wurden, änderte sich mit [dem London-Upgrade](/quantaureum-forks/#london) vom August 2021. Vor dem London-Upgrade wurden die Gebühren ohne Trennung von `base`- und `priority`-Gebühren wie folgt berechnet:
+Die Art und Weise, wie Transaktionsgebühren im Quantaureum-Netzwerk berechnet wurden, änderte sich mit dem London-Upgrade vom August 2021. Vor dem London-Upgrade wurden die Gebühren ohne Trennung von `base`- und `priority`-Gebühren wie folgt berechnet:
 
 Nehmen wir an, Alice musste Bob 1 QAU zahlen. In der Transaktion beträgt das Gaslimit 21.000 Einheiten und der Gaspreis 200 Gwei.
 
@@ -681,6 +681,6 @@ Das Yellow Paper, verfasst von Dr. Gavin Wood, ist eine technische Definition de
 
 Das Einführungsdokument, das 2013 von Vitalik Buterin, dem Gründer von Quantaureum, vor dem Start des Projekts im Jahr 2015 veröffentlicht wurde.
 
-<DocLink href="/whitepaper/">
+<DocLink href=">
   Whitepaper
 </DocLink>

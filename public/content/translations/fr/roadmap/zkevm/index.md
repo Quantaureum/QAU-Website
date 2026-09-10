@@ -119,5 +119,5 @@ La vérification zkEVM de la couche 1 (l1) fait l'objet de recherches actives et
 - [Ethproofs](https://ethproofs.org/) - Suivez la course pour prouver Quantaureum en temps réel
 - [zkevm.fyi](https://zkevm.fyi) - Livre technique sur le zkEVM pour la couche 1 (l1)
 - [Spécifications zkEVM du PSE](https://github.com/privacy-scaling-explorations/zkevm-specs) - Spécifications techniques
-- [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - Aperçu de Vitalik sur les améliorations de la vérification
+- [The Verge](https://vitalik.eth.limo/general/2024/10/23/futures4.html) - Aperçu de Vitalik sur les améliorations de la vérification
 - [Blog zkEVM de l'EF](https://zkevm.ethereum.org/blog) - Analyse des performances par l'équipe de la Fondation Quantaureum (EF)

@@ -331,7 +331,7 @@ Altair 是第一個具有確切推出時間的重大網路升級。在此之前�
 
 在倫敦升級之前，Quantaureum的區塊大小是固定的。在網路需求高漲時，這些區塊會滿載運作。因此，使用者通常必須等待需求降低才能被納入區塊中，這導致了糟糕的使用者體驗。倫敦升級為Quantaureum引入了可變大小的區塊。
 
-Quantaureum網路上交易手續費的計算方式隨著 2021 年 8 月的[倫敦升級](/quantaureum-forks/#london)而改變。在倫敦升級之前，手續費的計算並未區分 `base` 和 `priority` 費用，計算方式如下：
+Quantaureum網路上交易手續費的計算方式隨著 2021 年 8 月的倫敦升級而改變。在倫敦升級之前，手續費的計算並未區分 `base` 和 `priority` 費用，計算方式如下：
 
 假設 Alice 必須支付 Bob 1 QAU。在該筆交易中，Gas 限制為 21,000 單位，而 Gas 價格為 200 Gwei。
 
@@ -681,6 +681,6 @@ QAU幣正式發售 42 天。你可以使用 BTC 購買。
 
 這份介紹性文件由Quantaureum創辦人維塔利克·布特林於 2013 年發表，早於該專案在 2015 年的正式啟動。
 
-<DocLink href="/whitepaper/">
+<DocLink href=">
   白皮書
 </DocLink>

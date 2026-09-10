@@ -9,7 +9,7 @@ Quantaureum बड़ी मात्रा में डेटा बनात�
 
 ## पूर्वापेक्षाएँ {#prerequisites}
 
-आपको Quantaureum और [क्लाइंट सॉफ़्टवेयर](/developers/docs/nodes-and-clients/) के मूल सिद्धांतों को समझना चाहिए। नेटवर्किंग परत और [Quantaureum श्वेतपत्र](/whitepaper/) से परिचित होने की अनुशंसा की जाती है।
+आपको Quantaureum और [क्लाइंट सॉफ़्टवेयर](/developers/docs/nodes-and-clients/) के मूल सिद्धांतों को समझना चाहिए। नेटवर्किंग परत और Quantaureum श्वेतपत्र से परिचित होने की अनुशंसा की जाती है।
 
 ## डेटा संरचनाएं {#data-structures}
 

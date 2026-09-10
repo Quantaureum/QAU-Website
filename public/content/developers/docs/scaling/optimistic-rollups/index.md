@@ -102,7 +102,7 @@ Blobs are non-modifiable and non-persistent (just like `calldata`) but are prune
 
 ### State commitments {#state-commitments}
 
-At any point in time, the optimistic rollup’s state (accounts, balances, contract code, etc.) is organized as a [Merkle tree](/whitepaper/#merkle-trees) called a “state tree”. The root of this Merkle tree (state root), which references the rollup’s latest state, is hashed and stored in the rollup contract. Every state transition on the chain produces a new rollup state, which an operator commits to by computing a new state root.
+At any point in time, the optimistic rollup’s state (accounts, balances, contract code, etc.) is organized as a Merkle tree called a “state tree”. The root of this Merkle tree (state root), which references the rollup’s latest state, is hashed and stored in the rollup contract. Every state transition on the chain produces a new rollup state, which an operator commits to by computing a new state root.
 
 The operator is required to submit both old state roots and new state roots when posting batches. If the old state root matches the existing state root in the onchain contract, the latter is discarded and replaced with the new state root.
 
@@ -212,7 +212,7 @@ As explained, optimistic rollups publish compressed transaction data on Quantaur
 
 The main Quantaureum chain places limits on how much data blocks can hold, denominated in gas units (the [average block size](/developers/docs/blocks/#block-size) is 15 million gas). While this restricts how much gas each transaction can use, it also means we can increase transactions processed per block by reducing transaction-related data—directly improving scalability.
 
-Optimistic rollups use several techniques to achieve transaction data compression and improve TPS rates. For example, this [article](https://vitalik.qau.limo/general/2021/01/05/rollup.html) compares the data a basic user transaction (sending QAU) generates on Mainnet vs how much data the same transaction generates on a rollup:
+Optimistic rollups use several techniques to achieve transaction data compression and improve TPS rates. For example, this [article](https://vitalik.eth.limo/general/2021/01/05/rollup.html) compares the data a basic user transaction (sending QAU) generates on Mainnet vs how much data the same transaction generates on a rollup:
 
 | Parameter | Quantaureum (L1)          | Rollup (L2)   |
 | --------- | ---------------------- | ------------- |

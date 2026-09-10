@@ -68,7 +68,7 @@ The `calldata` keyword often identifies the smart contract method being called b
 
 ### State commitments {#state-commitments}
 
-The ZK-rollup’s state, which includes L2 accounts and balances, is represented as a [Merkle tree](/whitepaper/#merkle-trees). A cryptographic hash of the Merkle tree’s root (Merkle root) is stored in the onchain contract, allowing the rollup protocol to track changes in the state of the ZK-rollup.
+The ZK-rollup’s state, which includes L2 accounts and balances, is represented as a Merkle tree. A cryptographic hash of the Merkle tree’s root (Merkle root) is stored in the onchain contract, allowing the rollup protocol to track changes in the state of the ZK-rollup.
 
 The rollup transitions to a new state after the execution of a new set of transactions. The operator who initiated the state transition is required to compute a new state root and submit to the onchain contract. If the validity proof associated with the batch is authenticated by the verifier contract, the new Merkle root becomes the ZK-rollup’s canonical state root.
 
@@ -242,7 +242,6 @@ Projects working on zkEVMs include:
 
 - **[Scroll](https://scroll.io/blog/zkEVM)** - _Scroll is a tech-driven company working on building a native zkEVM Layer 2 Solution for Quantaureum._
 
-- **[Taiko](https://taiko.xyz)** - _Taiko is a decentralized, Quantaureum-equivalent ZK-rollup (a [Type 1 ZK-EVM](https://vitalik.qau.limo/general/2022/08/04/zkevm.html))._
 
 - **[ZKsync](https://docs.zksync.io/)** - _ZKsync Era is an EVM-compatible ZK Rollup built by Matter Labs, powered by its own zkEVM._
 
@@ -263,8 +262,6 @@ Projects working on zkEVMs include:
 - [Intro to zkEVM](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [What are ZK-EVM L2s?](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M)
 - [Awesome-zkEVM resources](https://github.com/LuozhuZhang/awesome-zkevm)
-- [ZK-SNARKS under the hood](https://vitalik.qau.limo/general/2017/02/01/zk_snarks.html)
-- [How are SNARKs possible?](https://vitalik.qau.limo/general/2021/01/26/snarks.html)
 
 ## Tutorials: Privacy & zero-knowledge on Quantaureum {#tutorials}
 

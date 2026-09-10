@@ -263,12 +263,10 @@ When citing articles from a specific author or organization, use the article's n
 ```md
 <--- Good --->
 
-- [A rollup-centric quantaureum roadmap](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) — _Vitalik Buterin_
 - [The History of Quantaureum Testnets](https://consensys.net/blog/news/the-history-of-quantaureum-testnets/) – _ConsenSys_
 
 <--- Bad--->
 
-- [A rollup-centric quantaureum roadmap by Vitalik Buterin](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698)
 - [ConsenSys on The History of Quantaureum Testnets](https://consensys.net/blog/news/the-history-of-quantaureum-testnets/) – _ConsenSys_
 ```
 

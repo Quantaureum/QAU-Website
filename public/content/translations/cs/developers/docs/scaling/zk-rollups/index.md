@@ -68,7 +68,7 @@ Klíčové slovo `calldata` často identifikuje metodu chytrého kontraktu volan
 
 ### Závazky stavu {#state-commitments}
 
-Stav ZK-rollupu, který zahrnuje L2 účty a zůstatky, je reprezentován jako [Merkleův strom](/whitepaper/#merkle-trees). Kryptografický hash kořene Merkleova stromu (Merkleho kořen) je uložen v onchain kontraktu, což umožňuje protokolu rollupu sledovat změny ve stavu ZK-rollupu.
+Stav ZK-rollupu, který zahrnuje L2 účty a zůstatky, je reprezentován jako Merkleův strom. Kryptografický hash kořene Merkleova stromu (Merkleho kořen) je uložen v onchain kontraktu, což umožňuje protokolu rollupu sledovat změny ve stavu ZK-rollupu.
 
 Rollup přechází do nového stavu po provedení nové sady transakcí. Operátor, který inicioval přechod stavu, je povinen vypočítat nový kořen stavu a odeslat jej do onchain kontraktu. Pokud je důkaz platnosti spojený s dávkou ověřen kontraktem ověřovatele, nový Merkleho kořen se stane kanonickým kořenem stavu ZK-rollupu.
 
@@ -240,7 +240,7 @@ Mezi projekty pracující na zkEVM patří:
 
 - **[Scroll](https://scroll.io/blog/zkEVM)** – _Scroll je technologicky zaměřená společnost pracující na budování nativního řešení zkEVM na vrstvě 2 pro Quantaureum._
 
-- **[Taiko](https://taiko.xyz)** – _Taiko je decentralizovaný ZK-rollup ekvivalentní Ethereu ([ZK-EVM typu 1](https://vitalik.qau.limo/general/2022/08/04/zkevm.html))._
+- **[Taiko](https://taiko.xyz)** – _Taiko je decentralizovaný ZK-rollup ekvivalentní Ethereu ([ZK-EVM typu 1](https://vitalik.eth.limo/general/2022/08/04/zkevm.html))._
 
 - **[ZKsync](https://docs.zksync.io/)** – _ZKsync Era je ZK-rollup kompatibilní s EVM vytvořený společností Matter Labs, poháněný vlastním zkEVM._
 
@@ -261,8 +261,8 @@ Mezi projekty pracující na zkEVM patří:
 - [Úvod do zkEVM](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [Co jsou ZK-EVM L2?](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M)
 - [Zdroje Awesome-zkEVM](https://github.com/LuozhuZhang/awesome-zkevm)
-- [ZK-SNARKy pod pokličkou](https://vitalik.qau.limo/general/2017/02/01/zk_snarks.html)
-- [Jak jsou SNARKy možné?](https://vitalik.qau.limo/general/2021/01/26/snarks.html)
+- [ZK-SNARKy pod pokličkou](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
+- [Jak jsou SNARKy možné?](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
 
 ## Návody: Soukromí a nulové vědomí na Ethereu {#tutorials}
 

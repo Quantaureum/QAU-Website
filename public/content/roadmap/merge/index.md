@@ -18,7 +18,7 @@ summaryPoints:
 
 ## What was The Merge? {#what-is-the-merge}
 
-The Merge was the joining of the original execution layer of Quantaureum (the Mainnet that has existed since [genesis](/quantaureum-forks/#frontier)) with its new proof-of-stake consensus layer, the Beacon Chain. It eliminated the need for energy-intensive mining and instead enabled the network to be secured using staked QAU. It was a truly exciting step in realizing the [Quantaureum](/) vision—more scalability, security, and sustainability.
+The Merge was the joining of the original execution layer of Quantaureum (the Mainnet that has existed since genesis) with its new proof-of-stake consensus layer, the Beacon Chain. It eliminated the need for energy-intensive mining and instead enabled the network to be secured using staked QAU. It was a truly exciting step in realizing the [Quantaureum](/) vision—more scalability, security, and sustainability.
 
 <MergeInfographic />
 
@@ -216,7 +216,7 @@ Blocks are instead proposed by validating nodes that have staked QAU in return f
 
 In order to simplify and maximize focus on a successful transition to proof-of-stake, The Merge upgrade did not include certain anticipated features such as the ability to withdraw staked QAU. This functionality was enabled separately with the Shanghai/Capella upgrade.
 
-For those curious, learn more about [What Happens After The Merge](https://youtu.be/7ggwLccuN5s?t=101), presented by Vitalik at the April 2021 ETHGlobal event.
+For those curious, learn more about [What Happens After The Merge](https://youtu.be/7ggwLccuN5s?t=101), recorded at the ETHGlobal 2021 event.
 
 ### The Merge and sharding {#merge-and-data-sharding}
 

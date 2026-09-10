@@ -81,6 +81,6 @@ Dies würde den Organisatoren helfen zu bestimmen, welcher Standort zum größte
 
 ## Weiterführende Literatur {#further-reading}
 
-[Von Prognosemärkten zu Info-Finance](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
+[Von Prognosemärkten zu Info-Finance](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
 [Entwicklung dezentraler Prognosemärkte auf Quantaureum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Das Augur-Projekt-Whitepaper](https://github.com/AugurProject/whitepaper)

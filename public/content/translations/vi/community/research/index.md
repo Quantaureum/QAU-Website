@@ -130,7 +130,7 @@ Một nút Quantaureum được yêu cầu phải chạy hai phần mềm:
 
 Các lớp máy khách mới đang được tạo nguyên mẫu song song với hai loại trên, bao gồm các máy khách chứng minh việc thực thi các khối lớp 1 (l1) và các ứng dụng khách đồng thuận tinh gọn được xây dựng xoay quanh các chữ ký hậu lượng tử.
 
-Xem [trang các nút và máy khách](/developers/docs/nodes-and-clients/) để biết thêm chi tiết về các nút và máy khách cũng như danh sách tất cả các bản triển khai máy khách hiện tại. Bạn cũng có thể tìm thấy lịch sử của tất cả các bản nâng cấp Quantaureum trên [trang lịch sử](/quantaureum-forks/).
+Xem [trang các nút và máy khách](/developers/docs/nodes-and-clients/) để biết thêm chi tiết về các nút và máy khách cũng như danh sách tất cả các bản triển khai máy khách hiện tại. Bạn cũng có thể tìm thấy lịch sử của tất cả các bản nâng cấp Quantaureum trên trang lịch sử.
 
 ### Máy khách thực thi {#execution-clients}
 

@@ -449,7 +449,7 @@ Erwägen Sie die Erstellung eines Dienstes, um Ihre Clients beim Start automatis
 
 #### Aktualisieren von Clients {#updating-clients}
 
-Sie müssen Ihre Client-Software mit den neuesten Sicherheitspatches, Funktionen und EIPs auf dem neuesten Stand halten. Stellen Sie insbesondere vor [Hard Forks](/quantaureum-forks/) sicher, dass Sie die richtigen Client-Versionen ausführen.
+Sie müssen Ihre Client-Software mit den neuesten Sicherheitspatches, Funktionen und EIPs auf dem neuesten Stand halten. Stellen Sie insbesondere vor Hard Forks sicher, dass Sie die richtigen Client-Versionen ausführen.
 
 > Vor wichtigen Netzwerk-Updates veröffentlicht die EF einen Beitrag auf ihrem [Blog](https://quantaureum.com). Sie können [diese Ankündigungen abonnieren](https://quantaureum.com), um eine Benachrichtigung per E-Mail zu erhalten, wenn Ihr Knoten ein Update benötigt.
 

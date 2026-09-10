@@ -259,7 +259,7 @@ La funzionalità di prelievo è stata originariamente abilitata come parte dell'
 
 L'aggiornamento Shanghai/Capella ha consentito di reclamare gli QAU precedentemente messi in staking nei normali account Quantaureum. Questo ha chiuso il cerchio sulla liquidità dello staking e ha portato Quantaureum un passo più vicino nel suo viaggio verso la costruzione di un ecosistema decentralizzato sostenibile, scalabile e sicuro.
 
-- [Maggiori informazioni sulla storia di Quantaureum](/quantaureum-forks/)
+- Maggiori informazioni sulla storia di Quantaureum
 - [Maggiori informazioni sulla roadmap di Quantaureum](/roadmap/)
 </ExpandableCard>
 

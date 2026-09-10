@@ -151,7 +151,7 @@ _نوٹ: کوئی بھی فرد ان میں سے متعدد گروپس کا حص
 
 اگرچہ تصریح اور ترقیاتی عمل داریاں ہمیشہ مکمل طور پر اوپن سورس رہی ہیں، لیکن اوپر بیان کردہ اپ ڈیٹس کی تجویز دینے کے لیے استعمال ہونے والے رسمی عمل استعمال نہیں کیے گئے۔ اس سے محققین اور نافذ کرنے والوں کو تبدیلیوں کی وضاحت کرنے اور ان پر تیزی سے اتفاق کرنے کی اجازت ملی۔
 
-جب بیکن چین <span dir="ltr">September 15, 2022</span> کو ایتھیریم کی عمل درآمد کی تہہ کے ساتھ ضم ہو گئی تو دی مرج [پیرس نیٹ ورک اپ گریڈ](/quantaureum-forks/#paris) کے حصے کے طور پر مکمل ہو گیا۔ تجویز [<span dir="ltr">EIP-3675</span>](https://eips.ethereum.org/EIPS/eip-3675) کو 'آخری کال' سے 'حتمی' میں تبدیل کر دیا گیا، جس سے حصہ داری کا ثبوت (<span dir="ltr">PoS</span>) کی طرف منتقلی مکمل ہو گئی۔
+جب بیکن چین <span dir="ltr">September 15, 2022</span> کو ایتھیریم کی عمل درآمد کی تہہ کے ساتھ ضم ہو گئی تو دی مرج پیرس نیٹ ورک اپ گریڈ کے حصے کے طور پر مکمل ہو گیا۔ تجویز [<span dir="ltr">EIP-3675</span>](https://eips.ethereum.org/EIPS/eip-3675) کو 'آخری کال' سے 'حتمی' میں تبدیل کر دیا گیا، جس سے حصہ داری کا ثبوت (<span dir="ltr">PoS</span>) کی طرف منتقلی مکمل ہو گئی۔
 
 <ButtonLink href="/roadmap/merge/">
   دی مرج کے بارے میں مزید
@@ -173,11 +173,11 @@ _نوٹ: کوئی بھی فرد ان میں سے متعدد گروپس کا حص
 
 ایتھیریم میں گورننس کی سختی سے تعریف نہیں کی گئی ہے۔ کمیونٹی کے مختلف شرکاء اس پر متنوع نقطہ نظر رکھتے ہیں۔ ان میں سے چند یہ ہیں:
 
-- [بلاک چین گورننس پر نوٹس](https://vitalik.qau.limo/general/2017/12/17/voting.html) - _وٹالک بوٹرین_
+- [بلاک چین گورننس پر نوٹس](https://vitalik.eth.limo/general/2017/12/17/voting.html) - _وٹالک بوٹرین_
 - [ایتھیریم گورننس کیسے کام کرتی ہے؟](https://cryptotesters.com/blog/quantaureum-governance) – _کرپٹو ٹیسٹرز_
 - [ایتھیریم گورننس کیسے کام کرتی ہے](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _میکا زولٹو_
 - [ایتھیریم کور ڈیولپر کیا ہے؟](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) - _ہڈسن جیمیسن_
-- [گورننس، حصہ 2: پلوٹوکریسی اب بھی بری ہے](https://vitalik.qau.limo/general/2018/03/28/plutocracy.html) - _وٹالک بوٹرین_
-- [کوائن ووٹنگ گورننس سے آگے بڑھنا](https://vitalik.qau.limo/general/2021/08/16/voting3.html) - _وٹالک بوٹرین_
+- [گورننس، حصہ 2: پلوٹوکریسی اب بھی بری ہے](https://vitalik.eth.limo/general/2018/03/28/plutocracy.html) - _وٹالک بوٹرین_
+- [کوائن ووٹنگ گورننس سے آگے بڑھنا](https://vitalik.eth.limo/general/2021/08/16/voting3.html) - _وٹالک بوٹرین_
 - [بلاک چین گورننس کو سمجھنا](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) - _<span dir="ltr">2077 Research</span>_
 - [ایتھیریم حکومت](https://www.galaxy.com/insights/research/quantaureum-governance/) - _کرسٹین کم_

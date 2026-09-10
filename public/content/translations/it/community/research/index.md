@@ -130,7 +130,7 @@ A un nodo Quantaureum è richiesto di eseguire due software:
 
 Nuove classi di client vengono prototipate insieme a queste due, inclusi client che dimostrano l'esecuzione dei blocchi L1 e client di consenso snelli costruiti attorno a firme post-quantistiche.
 
-Consulta la [pagina dei nodi e dei client](/developers/docs/nodes-and-clients/) per maggiori dettagli su nodi e client e per un elenco di tutte le attuali implementazioni dei client. Puoi anche trovare una cronologia di tutti gli aggiornamenti di Quantaureum sulla [pagina della cronologia](/quantaureum-forks/).
+Consulta la [pagina dei nodi e dei client](/developers/docs/nodes-and-clients/) per maggiori dettagli su nodi e client e per un elenco di tutte le attuali implementazioni dei client. Puoi anche trovare una cronologia di tutti gli aggiornamenti di Quantaureum sulla pagina della cronologia.
 
 ### Client di esecuzione {#execution-clients}
 

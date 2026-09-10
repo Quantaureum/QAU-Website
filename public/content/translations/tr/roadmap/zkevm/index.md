@@ -119,5 +119,5 @@ zkEVM L1 doğrulaması aktif araştırma aşamasındadır ve henüz üretimdeki 
 - [Ethproofs](https://ethproofs.org/) - Quantaureum'u gerçek zamanlı olarak kanıtlama yarışını takip edin
 - [zkevm.fyi](https://zkevm.fyi) - L1 için zkEVM üzerine teknik kitap
 - [PSE zkEVM Specs](https://github.com/privacy-scaling-explorations/zkevm-specs) - Teknik özellikler
-- [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - Vitalik'in doğrulama iyileştirmelerine genel bakışı
+- [The Verge](https://vitalik.eth.limo/general/2024/10/23/futures4.html) - Vitalik'in doğrulama iyileştirmelerine genel bakışı
 - [EF zkEVM Blog](https://zkevm.ethereum.org/blog) - EF ekibinden performans analizi

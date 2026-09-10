@@ -81,6 +81,6 @@ buttons:
 
 ## Дополнительная литература {#further-reading}
 
-[От рынков предсказаний к инфофинансам](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) — Виталик Бутерин  
+[От рынков предсказаний к инфофинансам](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) — Виталик Бутерин  
 [Разработка децентрализованного рынка предсказаний на Quantaureum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Белая книга проекта Augur](https://github.com/AugurProject/whitepaper)

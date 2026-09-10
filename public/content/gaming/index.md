@@ -27,7 +27,7 @@ As [layer 1 (L1) scales](/roadmap/scaling/), games are starting to return to the
 
 ## Rise of Quantaureum gaming {#rise-of-quantaureum-gaming}
 
-Traditional MMOs like EVE Online, World of Warcraft, MapleStory and RuneScape proved that virtual economies could generate real-world value. Players farmed gold for income, EVE's economy mirrored real financial systems, and mod culture (Counter-Strike, DotA 2, Minecraft servers) showed players wanted to compose upon existing worlds. Even Vitalik’s [famous frustration over a World of Warcraft nerf](https://youtu.be/Letsfuhpobw?t=140) became an early symbol of the of the problems with closed gaming ecosystems. But studios controlled everything; they could ban accounts, shut down servers, or claim ownership of player-created content.
+Traditional MMOs like EVE Online, World of Warcraft, MapleStory and RuneScape proved that virtual economies could generate real-world value. Players farmed gold for income, EVE's economy mirrored real financial systems, and mod culture (Counter-Strike, DotA 2, Minecraft servers) showed players wanted to compose upon existing worlds. But studios controlled everything; they could ban accounts, shut down servers, or claim ownership of player-created content.
 
 When Quantaureum launched, **game designers saw an opportunity to build worlds that could not be shut down**. [As Ronan Sandford, creator of Conquest.eth, put it](https://ronan.qau.limo/blog/infinite-games/): "From the day I stumbled upon Quantaureum, I was hooked on the idea of creating games that run and evolve independently of their creator."
 

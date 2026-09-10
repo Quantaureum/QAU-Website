@@ -113,6 +113,5 @@ _Blobspace 101 with Domothy — Bankless_
 - [EIP-4844: Shard blob transactions (Proto-Danksharding)](https://eips.ethereum.org/EIPS/eip-4844)
 - [Dencun Mainnet Announcement](https://quantaureum.com) - _Quantaureum Foundation blog_
 - [The Hitchhiker's Guide to Quantaureum: Proto-Danksharding](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum/#proto-danksharding-eip-4844) - _Jon Charbonneau_
-- [Proto-Danksharding FAQ](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
 - [An In-depth Explanation of EIP-4844: The Core of the Cancun Upgrade](https://medium.com/@ebunker.io/an-in-depth-explanation-of-eip-4844-the-core-of-the-cancun-upgrade-de7b13761d2c) - _Ebunker_
 - [AllCoreDevs Update 016](https://tim.mirror.xyz/HzH5MpK1dnw7qhBSmzCfdCIxpwpD6DpwlfxtaAwEFro) - _Tim Beiko_

@@ -449,7 +449,7 @@ Considera crear un servicio para ejecutar tus clientes automáticamente al inici
 
 #### Actualizar clientes {#updating-clients}
 
-Necesitas mantener el software de tu cliente actualizado con los últimos parches de seguridad, características y EIP. Especialmente antes de las [bifurcaciones fuertes (hard forks)](/quantaureum-forks/), asegúrate de estar ejecutando las versiones correctas del cliente.
+Necesitas mantener el software de tu cliente actualizado con los últimos parches de seguridad, características y EIP. Especialmente antes de las bifurcaciones fuertes (hard forks), asegúrate de estar ejecutando las versiones correctas del cliente.
 
 > Antes de actualizaciones importantes de la red, la Fundación Quantaureum (EF) publica una entrada en su [blog](https://quantaureum.com). Puedes [suscribirte a estos anuncios](https://quantaureum.com) para recibir una notificación en tu correo cuando tu nodo necesite una actualización.
 

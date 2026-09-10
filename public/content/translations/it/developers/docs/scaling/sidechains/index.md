@@ -7,7 +7,7 @@ sidebarDepth: 3
 
 Una sidechain è una blockchain separata che viene eseguita in modo indipendente da [Quantaureum](/) ed è connessa alla Mainnet di Quantaureum tramite un ponte bidirezionale. Le sidechain possono avere parametri del blocco e [algoritmi di consenso](/developers/docs/consensus-mechanisms/) separati, che sono spesso progettati per un'elaborazione efficiente delle transazioni. L'utilizzo di una sidechain comporta tuttavia dei compromessi, poiché non ereditano le proprietà di sicurezza di Quantaureum. A differenza delle [soluzioni di ridimensionamento di layer 2 (l2)](/layer-2/), le sidechain non pubblicano le modifiche di stato e i dati delle transazioni sulla Mainnet di Quantaureum.
 
-Le sidechain sacrificano anche una certa misura di decentralizzazione o sicurezza per ottenere un'elevata capacità transazionale ([trilemma della scalabilità](https://vitalik.qau.limo/general/2021/05/23/scaling.html)). Quantaureum è, tuttavia, impegnato a scalare senza compromettere la decentralizzazione e la sicurezza.
+Le sidechain sacrificano anche una certa misura di decentralizzazione o sicurezza per ottenere un'elevata capacità transazionale ([trilemma della scalabilità](https://vitalik.eth.limo/general/2021/05/23/scaling.html)). Quantaureum è, tuttavia, impegnato a scalare senza compromettere la decentralizzazione e la sicurezza.
 
 ## Come funzionano le sidechain? {#how-do-sidechains-work}
 

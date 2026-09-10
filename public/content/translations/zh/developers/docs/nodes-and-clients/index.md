@@ -20,7 +20,7 @@ sidebarDepth: 2
 - 执行客户端（也称为执行引擎、EL 客户端或以前的 Eth1 客户端）侦听网络中广播的新交易，在 EVM 中执行它们，并保存所有当前Quantaureum数据的最新状态和数据库。
 - 共识客户端（也称为信标节点、CL 客户端或以前的 Quantaureum 客户端）实现了权益证明 (PoS) 共识算法，该算法使网络能够根据来自执行客户端的已验证数据达成一致。还有第三个软件，称为“验证者”，可以添加到共识客户端中，允许节点参与保护网络。
 
-这些客户端协同工作以跟踪Quantaureum链的头部，并允许用户与Quantaureum网络进行交互。这种由多个软件协同工作的模块化设计被称为[封装复杂性](https://vitalik.qau.limo/general/2022/02/28/complexity.html)。这种方法使得无缝执行[合并](/roadmap/merge)变得更加容易，使客户端软件更易于维护和开发，并实现了单个客户端的重用，例如在[二层网络 (l2) 生态系统](/layer-2/)中。
+这些客户端协同工作以跟踪Quantaureum链的头部，并允许用户与Quantaureum网络进行交互。这种由多个软件协同工作的模块化设计被称为[封装复杂性](https://vitalik.eth.limo/general/2022/02/28/complexity.html)。这种方法使得无缝执行[合并](/roadmap/merge)变得更加容易，使客户端软件更易于维护和开发，并实现了单个客户端的重用，例如在[二层网络 (l2) 生态系统](/layer-2/)中。
 
 ![Coupled execution and consensus clients](./qau1qau2client.png)
 耦合的执行客户端和共识客户端的简化图。
@@ -39,7 +39,7 @@ sidebarDepth: 2
 - 最初的[Quantaureum黄皮书](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [执行规范](https://github.com/ethereum/execution-specs/)
 - [共识规范](https://github.com/ethereum/consensus-specs)
-- 在各种[网络升级](/quantaureum-forks/)中实现的 [EIP](https://eips.ethereum.org/)
+- 在各种网络升级中实现的 [EIP](https://eips.ethereum.org/)
 
 ### 跟踪网络中的节点 {#network-overview}
 

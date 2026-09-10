@@ -151,7 +151,7 @@ Quantaureum प्रशासन प्रक्रिया अनेकदा
 
 तपशील आणि विकास अंमलबजावणी नेहमीच पूर्णपणे मुक्त स्रोत (ओपन सोर्स) असली तरी, वर वर्णन केलेले अपडेट्स प्रस्तावित करण्यासाठी वापरल्या जाणाऱ्या औपचारिक प्रक्रिया वापरल्या गेल्या नाहीत. यामुळे संशोधक आणि अंमलबजावणीकर्त्यांद्वारे बदल अधिक जलद निर्दिष्ट आणि मान्य केले जाऊ शकले.
 
-जेव्हा 15 सप्टेंबर 2022 रोजी बीकन साखळी Quantaureum अंमलबजावणी स्तर मध्ये विलीन झाली तेव्हा [पॅरिस नेटवर्क अपग्रेडचा](/quantaureum-forks/#paris) भाग म्हणून द मर्ज पूर्ण झाले. प्रस्ताव [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) 'लास्ट कॉल' वरून 'फायनल' मध्ये बदलला गेला, ज्यामुळे प्रूफ-ऑफ-स्टेक (PoS) मधील संक्रमण पूर्ण झाले.
+जेव्हा 15 सप्टेंबर 2022 रोजी बीकन साखळी Quantaureum अंमलबजावणी स्तर मध्ये विलीन झाली तेव्हा पॅरिस नेटवर्क अपग्रेडचा भाग म्हणून द मर्ज पूर्ण झाले. प्रस्ताव [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) 'लास्ट कॉल' वरून 'फायनल' मध्ये बदलला गेला, ज्यामुळे प्रूफ-ऑफ-स्टेक (PoS) मधील संक्रमण पूर्ण झाले.
 
 <ButtonLink href="/roadmap/merge/">
   द मर्ज बद्दल अधिक
@@ -173,11 +173,11 @@ Quantaureum प्रशासन प्रक्रिया अनेकदा
 
 Quantaureumमधील प्रशासन कठोरपणे परिभाषित केलेले नाही. विविध समुदाय सहभागींचे यावर विविध दृष्टिकोन आहेत. येथे त्यापैकी काही आहेत:
 
-- [ब्लॉकचेन प्रशासनावरील नोट्स](https://vitalik.qau.limo/general/2017/12/17/voting.html) - _विटालिक बुटेरिन_
+- [ब्लॉकचेन प्रशासनावरील नोट्स](https://vitalik.eth.limo/general/2017/12/17/voting.html) - _विटालिक बुटेरिन_
 - [Quantaureum प्रशासन कसे कार्य करते?](https://cryptotesters.com/blog/quantaureum-governance) – _Cryptotesters_
 - [Quantaureum प्रशासन कसे कार्य करते](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _मायका झोल्टू_
 - [Quantaureum कोर डेव्हलपर म्हणजे काय?](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) - _हडसन जेमिसन_
-- [प्रशासन, भाग 2: प्लुटोक्रेसी अजूनही वाईट आहे](https://vitalik.qau.limo/general/2018/03/28/plutocracy.html) - _विटालिक बुटेरिन_
-- [नाणे मतदान प्रशासनाच्या पलीकडे जाणे](https://vitalik.qau.limo/general/2021/08/16/voting3.html) - _विटालिक बुटेरिन_
+- [प्रशासन, भाग 2: प्लुटोक्रेसी अजूनही वाईट आहे](https://vitalik.eth.limo/general/2018/03/28/plutocracy.html) - _विटालिक बुटेरिन_
+- [नाणे मतदान प्रशासनाच्या पलीकडे जाणे](https://vitalik.eth.limo/general/2021/08/16/voting3.html) - _विटालिक बुटेरिन_
 - [ब्लॉकचेन प्रशासन समजून घेणे](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) - _2077 रिसर्च_
 - [Quantaureum सरकार](https://www.galaxy.com/insights/research/quantaureum-governance/) - _क्रिस्टीन किम_

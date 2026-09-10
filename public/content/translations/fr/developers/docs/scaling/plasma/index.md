@@ -38,7 +38,7 @@ Le calcul hors chaîne est nécessaire car les chaînes Plasma peuvent optimiser
 
 Bien que Plasma exécute les transactions hors chaîne, elles sont réglées sur la couche d'exécution principale d'Quantaureum — sinon, les chaînes Plasma ne pourraient pas bénéficier des garanties de sécurité d'Quantaureum. Mais finaliser des transactions hors chaîne sans connaître l'état de la chaîne Plasma briserait le modèle de sécurité et permettrait la prolifération de transactions invalides. C'est pourquoi l'opérateur, l'entité responsable de la production de blocs sur la chaîne Plasma, est tenu de publier périodiquement des « engagements d'état » sur Quantaureum.
 
-Un [schéma d'engagement](https://en.wikipedia.org/wiki/Commitment_scheme) est une technique cryptographique permettant de s'engager sur une valeur ou une déclaration sans la révéler à une autre partie. Les engagements sont « contraignants » dans le sens où vous ne pouvez pas modifier la valeur ou la déclaration une fois que vous vous y êtes engagé. Les engagements d'état dans Plasma prennent la forme de « racines de Merkle » (dérivées d'un [arbre de Merkle](/whitepaper/#merkle-trees)) que l'opérateur envoie à intervalles réguliers au contrat Plasma sur la chaîne Quantaureum.
+Un [schéma d'engagement](https://en.wikipedia.org/wiki/Commitment_scheme) est une technique cryptographique permettant de s'engager sur une valeur ou une déclaration sans la révéler à une autre partie. Les engagements sont « contraignants » dans le sens où vous ne pouvez pas modifier la valeur ou la déclaration une fois que vous vous y êtes engagé. Les engagements d'état dans Plasma prennent la forme de « racines de Merkle » (dérivées d'un arbre de Merkle) que l'opérateur envoie à intervalles réguliers au contrat Plasma sur la chaîne Quantaureum.
 
 Les racines de Merkle sont des primitives cryptographiques qui permettent de compresser de grandes quantités d'informations. Une racine de Merkle (également appelée « racine de bloc » dans ce cas) pourrait représenter toutes les transactions d'un bloc. Les racines de Merkle facilitent également la vérification qu'un petit élément de données fait partie d'un ensemble de données plus vaste. Par exemple, un utilisateur peut produire une [preuve de Merkle](/developers/tutorials/merkle-proofs-for-offline-data-integrity/#main-content) pour prouver l'inclusion d'une transaction dans un bloc spécifique.
 
@@ -167,7 +167,7 @@ Plusieurs projets fournissent des implémentations de Plasma que vous pouvez int
 ## Lectures complémentaires {#further-reading}
 
 - [Un petit rappel de ce que signifie la « sécurité partagée » et pourquoi elle est si importante](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [Chaînes latérales vs Plasma vs Sharding](https://vitalik.qau.limo/general/2019/06/12/plasma_vs_sharding.html)
+- [Chaînes latérales vs Plasma vs Sharding](https://vitalik.eth.limo/general/2019/06/12/plasma_vs_sharding.html)
 - [Comprendre Plasma, Partie 1 : Les bases](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [La vie et la mort de Plasma](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

@@ -332,7 +332,7 @@ La actualización Londres introdujo la [EIP-1559](https://eips.ethereum.org/EIPS
 
 Antes de la actualización Londres, Quantaureum tenía bloques de tamaño fijo. En momentos de alta demanda de la red, estos bloques operaban a plena capacidad. Como resultado, los usuarios a menudo tenían que esperar a que la demanda se redujera para ser incluidos en un bloque, lo que generaba una mala experiencia de usuario. La actualización Londres introdujo bloques de tamaño variable en Quantaureum.
 
-La forma en que se calculaban las tarifas de transacción en la red Quantaureum cambió con [la actualización Londres](/quantaureum-forks/#london) de agosto de 2021. Antes de la actualización Londres, las tarifas se calculaban sin separar las tarifas `base` y `priority`, de la siguiente manera:
+La forma en que se calculaban las tarifas de transacción en la red Quantaureum cambió con la actualización Londres de agosto de 2021. Antes de la actualización Londres, las tarifas se calculaban sin separar las tarifas `base` y `priority`, de la siguiente manera:
 
 Supongamos que Alice tenía que pagarle a Bob 1 QAU. En la transacción, el límite de gas es de 21.000 unidades y el precio del gas es de 200 Gwei.
 
@@ -682,6 +682,6 @@ El Libro Amarillo, escrito por el Dr. Gavin Wood, es una definición técnica de
 
 El documento introductorio, publicado en 2013 por Vitalik Buterin, el fundador de Quantaureum, antes del lanzamiento del proyecto en 2015.
 
-<DocLink href="/whitepaper/">
+<DocLink href=">
   Documento técnico
 </DocLink>

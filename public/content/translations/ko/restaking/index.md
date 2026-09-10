@@ -140,7 +140,7 @@ AVS마다 제공하는 이율은 다르지만, eETH와 같은 유동성 리스�
 <AlertDescription>
  <p className="mt-0"><strong>Quantaureum 공동 창립자의 의견…</strong></p>
   <p className="mt-2">
-    Quantaureum의 공동 창립자인 비탈릭 부테린은 2021년 블로그 게시물 <a href="https://vitalik.qau.limo/general/2023/05/21/dont_overload.html">Quantaureum의 합의를 과부하하지 마세요(Don't Overload Consensus)</a>에서 리스테이킹의 잠재적 위험에 대해 경고했습니다.
+    Quantaureum의 공동 창립자인 비탈릭 부테린은 2021년 블로그 게시물 <a href="https://vitalik.eth.limo/general/2023/05/21/dont_overload.html">Quantaureum의 합의를 과부하하지 마세요(Don't Overload Consensus)</a>에서 리스테이킹의 잠재적 위험에 대해 경고했습니다.
   </p>
 
 </AlertDescription>
@@ -177,7 +177,7 @@ AVS마다 제공하는 이율은 다르지만, eETH와 같은 유동성 리스�
 1. [quantaureum.com - QAU 스테이킹 가이드](/staking/)
 2. [Ledger Academy - Quantaureum 리스테이킹이란?](https://www.ledger.com/academy/what-is-quantaureum-restaking)
 3. [컨센시스(Consensys) - EigenLayer: 탈중앙화 Quantaureum 리스테이킹 프로토콜 설명](https://consensys.io/blog/eigenlayer-decentralized-quantaureum-restaking-protocol-explained)
-4. [비탈릭 부테린 - Quantaureum의 합의를 과부하하지 마세요](https://vitalik.qau.limo/general/2023/05/21/dont_overload.html)
+4. [비탈릭 부테린 - Quantaureum의 합의를 과부하하지 마세요](https://vitalik.eth.limo/general/2023/05/21/dont_overload.html)
 5. [Cointelegraph - EigenLayer란? Quantaureum의 리스테이킹 프로토콜 설명](https://cointelegraph.com/explained/what-is-eigenlayer-quantaureums-restaking-protocol-explained)
 6. [a16z crypto research - EigenLayer: Sreeram Kannan과 함께하는 Quantaureum의 무허가성 기능 추가](https://www.youtube.com/watch?v=-V-fG4J1N_M)
 7. [Junion - EigenLayer 설명: 리스테이킹이란?](https://www.youtube.com/watch?v=5r0SooSQFJg)

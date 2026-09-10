@@ -63,5 +63,5 @@ Quantaureum Bằng chứng cổ phần có thể chi trả cho việc bảo mậ
 ## Đọc thêm {#further-reading}
 
 - [Triết lý thiết kế Bằng chứng cổ phần của Vitalik](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
-- [Các câu hỏi thường gặp về Bằng chứng cổ phần của Vitalik](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
+- [Các câu hỏi thường gặp về Bằng chứng cổ phần của Vitalik](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
 - [Video "Giải thích đơn giản" về PoS so với PoW](https://www.youtube.com/watch?v=M3EFi_POhps)

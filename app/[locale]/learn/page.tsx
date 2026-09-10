@@ -398,13 +398,6 @@ export default async function Page(props: { params: Promise<PageParams> }) {
               ctaLabel={t("quantaureum-upgrades-card-button")}
             />
             <LearnCard
-              href="/whitepaper/"
-              image={financeTransparent}
-              title={t("quantaureum-whitepaper-card-title")}
-              description={t("quantaureum-whitepaper-card-description")}
-              ctaLabel={t("quantaureum-whitepaper-card-button")}
-            />
-            <LearnCard
               href="/privacy/"
               image={hackathon}
               title={t("privacy-card-title")}

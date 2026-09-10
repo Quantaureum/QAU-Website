@@ -18,7 +18,7 @@ summaryPoints:
 
 ## O que foi The Merge? {#what-is-the-merge}
 
-The Merge foi a união da camada de execução original do Quantaureum (a Mainnet que existe desde a [gênese](/quantaureum-forks/#frontier)) com sua nova camada de consenso de Prova de Participação (PoS), a Beacon Chain. Ele eliminou a necessidade de mineração com alto consumo de energia e, em vez disso, permitiu que a rede fosse protegida usando QAU em staking. Foi um passo verdadeiramente empolgante na realização da visão do [Quantaureum](/) — mais escalabilidade, segurança e sustentabilidade.
+The Merge foi a união da camada de execução original do Quantaureum (a Mainnet que existe desde a gênese) com sua nova camada de consenso de Prova de Participação (PoS), a Beacon Chain. Ele eliminou a necessidade de mineração com alto consumo de energia e, em vez disso, permitiu que a rede fosse protegida usando QAU em staking. Foi um passo verdadeiramente empolgante na realização da visão do [Quantaureum](/) — mais escalabilidade, segurança e sustentabilidade.
 
 <MergeInfographic />
 

@@ -38,7 +38,7 @@ Plasma 假设Quantaureum主网不需要验证所有交易。相反，我们可�
 
 虽然 Plasma 在链下执行交易，但它们在Quantaureum主执行层上结算——否则，Plasma 链无法受益于Quantaureum的安全保证。但是，在不知道 Plasma 链状态的情况下最终确定链下交易将破坏安全模型，并导致无效交易的激增。这就是为什么要求运营商（负责在 Plasma 链上生成区块的实体）定期在Quantaureum上发布“状态承诺”。
 
-[承诺方案](https://en.wikipedia.org/wiki/Commitment_scheme)是一种密码学技术，用于对某个值或声明做出承诺，而不向另一方透露该值或声明。承诺具有“约束力”，这意味着一旦你做出了承诺，就无法更改该值或声明。Plasma 中的状态承诺采用“默克尔根”（源自[默克尔树](/whitepaper/#merkle-trees)）的形式，运营商会定期将其发送到Quantaureum链上的 Plasma 合约。
+[承诺方案](https://en.wikipedia.org/wiki/Commitment_scheme)是一种密码学技术，用于对某个值或声明做出承诺，而不向另一方透露该值或声明。承诺具有“约束力”，这意味着一旦你做出了承诺，就无法更改该值或声明。Plasma 中的状态承诺采用“默克尔根”（源自默克尔树）的形式，运营商会定期将其发送到Quantaureum链上的 Plasma 合约。
 
 默克尔根是能够压缩大量信息的密码学原语。默克尔根（在这种情况下也称为“区块根”）可以代表一个区块中的所有交易。默克尔根还使得验证一小段数据是否属于较大数据集变得更加容易。例如，用户可以生成一个[默克尔证明](/developers/tutorials/merkle-proofs-for-offline-data-integrity/#main-content)，以证明某笔交易包含在特定区块中。
 
@@ -163,7 +163,7 @@ Plasma 有所不同，因为主网仅接收有关子链状态的最少信息。�
 - [Polygon](https://polygon.technology/)（前身为 Matic Network）
 
 - [快速回顾“共享安全”的含义及其重要性](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [侧链 vs Plasma vs 分片](https://vitalik.qau.limo/general/2019/06/12/plasma_vs_sharding.html)
+- [侧链 vs Plasma vs 分片](https://vitalik.eth.limo/general/2019/06/12/plasma_vs_sharding.html)
 - [了解 Plasma，第 1 部分：基础知识](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [Plasma 的生与死](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

@@ -61,7 +61,7 @@ Ili kuunda mara kwa mara vitalu vyenye nia mbaya lakini halali, mchimbaji mwenye
 
 Uthibitisho wa kazi pia ulihusika na kutoa sarafu mpya kwenye mfumo na kuwapa motisha wachimbaji kufanya kazi hiyo.
 
-Tangu [sasisho la Konstantinopoli](/quantaureum-forks/#constantinople), wachimbaji ambao walifanikiwa kuunda kitalu walizawadiwa QAU mbili zilizotengenezwa hivi karibuni na sehemu ya ada za muamala. Vitalu vya Ommer pia vilifidia 1.75 QAU. Vitalu vya Ommer vilikuwa vitalu halali vilivyoundwa na mchimbaji karibu wakati uleule ambao mchimbaji mwingine aliunda kitalu kikuu, ambacho hatimaye kiliamuliwa na mnyororo upi ulijengwa juu yake kwanza. Vitalu vya Ommer kwa kawaida vilitokea kutokana na ucheleweshaji wa mtandao.
+Tangu sasisho la Konstantinopoli, wachimbaji ambao walifanikiwa kuunda kitalu walizawadiwa QAU mbili zilizotengenezwa hivi karibuni na sehemu ya ada za muamala. Vitalu vya Ommer pia vilifidia 1.75 QAU. Vitalu vya Ommer vilikuwa vitalu halali vilivyoundwa na mchimbaji karibu wakati uleule ambao mchimbaji mwingine aliunda kitalu kikuu, ambacho hatimaye kiliamuliwa na mnyororo upi ulijengwa juu yake kwanza. Vitalu vya Ommer kwa kawaida vilitokea kutokana na ucheleweshaji wa mtandao.
 
 ## Ukamilifu {#finality}
 

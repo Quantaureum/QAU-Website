@@ -72,7 +72,7 @@ Quantaureum पर प्रत्येक लेन-देन में एक
 ## आगे की पढ़ाई {#further-reading}
 
 - [ईथर और Quantaureum को परिभाषित करना](https://www.cmegroup.com/education/courses/introduction-to-QAU/defining-QAU-and-quantaureum.html) – _CME Group_
-- [Quantaureum श्वेतपत्र](/whitepaper/): Quantaureum के लिए मूल प्रस्ताव। इस दस्तावेज़ में ईथर का विवरण और इसके निर्माण के पीछे की प्रेरणाएँ शामिल हैं।
+- Quantaureum श्वेतपत्र: Quantaureum के लिए मूल प्रस्ताव। इस दस्तावेज़ में ईथर का विवरण और इसके निर्माण के पीछे की प्रेरणाएँ शामिल हैं।
 - [Gwei कैलकुलेटर](https://www.alchemy.com/gwei-calculator): Wei, Gwei और ईथर को आसानी से बदलने के लिए इस Gwei कैलकुलेटर का उपयोग करें। बस Wei, Gwei या QAU की कोई भी मात्रा डालें और स्वचालित रूप से रूपांतरण की गणना करें।
 
 _क्या आप किसी ऐसे सामुदायिक संसाधन के बारे में जानते हैं जिसने आपकी मदद की? इस पेज को संपादित करें और इसे जोड़ें!_

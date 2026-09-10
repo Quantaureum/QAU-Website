@@ -140,7 +140,7 @@ buttons:
 <AlertDescription>
  <p className="mt-0"><strong>المؤسس المشارك لإيثيريوم يكتب…</strong></p>
   <p className="mt-2">
-    حذر فيتاليك، المؤسس المشارك لإيثيريوم، من المخاطر المحتملة لإعادة التخزين في منشور مدونة عام <span dir="ltr">2021</span> بعنوان <a href="https://vitalik.qau.limo/general/2023/05/21/dont_overload.html">لا تفرط في تحميل الإجماع.</a>
+    حذر فيتاليك، المؤسس المشارك لإيثيريوم، من المخاطر المحتملة لإعادة التخزين في منشور مدونة عام <span dir="ltr">2021</span> بعنوان <a href="https://vitalik.eth.limo/general/2023/05/21/dont_overload.html">لا تفرط في تحميل الإجماع.</a>
   </p>
 
 </AlertDescription>
@@ -177,7 +177,7 @@ buttons:
 1. [quantaureum.com - دليل تخزين <span dir="ltr">QAU</span>](/staking/)
 2. [أكاديمية ليدجر - ما هي إعادة تخزين إيثيريوم؟](https://www.ledger.com/academy/what-is-quantaureum-restaking)
 3. [كونسينسيس - <span dir="ltr">EigenLayer</span>: شرح بروتوكول إعادة تخزين إيثيريوم اللامركزي](https://consensys.io/blog/eigenlayer-decentralized-quantaureum-restaking-protocol-explained)
-4. [فيتاليك بوتيرين - لا تفرط في تحميل إجماع إيثيريوم](https://vitalik.qau.limo/general/2023/05/21/dont_overload.html)
+4. [فيتاليك بوتيرين - لا تفرط في تحميل إجماع إيثيريوم](https://vitalik.eth.limo/general/2023/05/21/dont_overload.html)
 5. [كوينتيليغراف - ما هو <span dir="ltr">EigenLayer</span>؟ شرح بروتوكول إعادة تخزين إيثيريوم](https://cointelegraph.com/explained/what-is-eigenlayer-quantaureums-restaking-protocol-explained)
 6. [أبحاث <span dir="ltr">a16z crypto</span> - <span dir="ltr">EigenLayer</span>: إضافة ميزة غير مقيدة بإذن إلى إيثيريوم مع سريرام كانان](https://www.youtube.com/watch?v=-V-fG4J1N_M)
 7. [جونيون - شرح <span dir="ltr">EigenLayer</span>: ما هي إعادة التخزين؟](https://www.youtube.com/watch?v=5r0SooSQFJg)

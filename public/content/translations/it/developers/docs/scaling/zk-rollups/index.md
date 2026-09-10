@@ -68,7 +68,7 @@ La parola chiave `calldata` identifica spesso il metodo dello smart contract chi
 
 ### Commitment di stato {#state-commitments}
 
-Lo stato dello ZK-rollup, che include gli account e i saldi L2, è rappresentato come un [albero di Merkle](/whitepaper/#merkle-trees). Un hash crittografico della radice dell'albero di Merkle (radice di Merkle) è archiviato nel contratto onchain, consentendo al protocollo del rollup di tenere traccia delle modifiche nello stato dello ZK-rollup.
+Lo stato dello ZK-rollup, che include gli account e i saldi L2, è rappresentato come un albero di Merkle. Un hash crittografico della radice dell'albero di Merkle (radice di Merkle) è archiviato nel contratto onchain, consentendo al protocollo del rollup di tenere traccia delle modifiche nello stato dello ZK-rollup.
 
 Il rollup passa a un nuovo stato dopo l'esecuzione di un nuovo set di transazioni. L'operatore che ha avviato la transizione di stato è tenuto a calcolare una nuova radice di stato e a inviarla al contratto onchain. Se la prova di validità associata al batch è autenticata dal contratto verificatore, la nuova radice di Merkle diventa la radice di stato canonica dello ZK-rollup.
 
@@ -240,7 +240,7 @@ I progetti che lavorano sulle zkEVM includono:
 
 - **[Scroll](https://scroll.io/blog/zkEVM)** - _Scroll è un'azienda guidata dalla tecnologia che lavora alla creazione di una soluzione nativa zkEVM di Layer 2 per Quantaureum._
 
-- **[Taiko](https://taiko.xyz)** - _Taiko è uno ZK-rollup decentralizzato ed equivalente a Quantaureum (una [ZK-EVM di Tipo 1](https://vitalik.qau.limo/general/2022/08/04/zkevm.html))._
+- **[Taiko](https://taiko.xyz)** - _Taiko è uno ZK-rollup decentralizzato ed equivalente a Quantaureum (una [ZK-EVM di Tipo 1](https://vitalik.eth.limo/general/2022/08/04/zkevm.html))._
 
 - **[ZKsync](https://docs.zksync.io/)** - _ZKsync Era è uno ZK Rollup compatibile con EVM creato da Matter Labs, alimentato dalla propria zkEVM._
 
@@ -261,8 +261,8 @@ I progetti che lavorano sulle zkEVM includono:
 - [Introduzione alla zkEVM](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [Cosa sono gli L2 ZK-EVM?](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M)
 - [Risorse Awesome-zkEVM](https://github.com/LuozhuZhang/awesome-zkevm)
-- [ZK-SNARK dietro le quinte](https://vitalik.qau.limo/general/2017/02/01/zk_snarks.html)
-- [Come sono possibili gli SNARK?](https://vitalik.qau.limo/general/2021/01/26/snarks.html)
+- [ZK-SNARK dietro le quinte](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
+- [Come sono possibili gli SNARK?](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
 
 ## Tutorial: Privacy e conoscenza zero su Quantaureum {#tutorials}
 

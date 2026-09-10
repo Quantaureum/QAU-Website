@@ -102,7 +102,7 @@ Blob tidak dapat dimodifikasi dan tidak persisten (sama seperti `calldata`) teta
 
 ### Komitmen state {#state-commitments}
 
-Pada titik waktu mana pun, state rollup Optimistic (akun, saldo, kode kontrak, dll.) diatur sebagai [pohon Merkle](/whitepaper/#merkle-trees) yang disebut "pohon state". Akar dari pohon Merkle ini (akar state), yang mereferensikan state terbaru rollup, di-hash dan disimpan dalam kontrak rollup. Setiap transisi state pada rantai menghasilkan state rollup baru, yang dikomit oleh operator dengan menghitung akar state baru.
+Pada titik waktu mana pun, state rollup Optimistic (akun, saldo, kode kontrak, dll.) diatur sebagai pohon Merkle yang disebut "pohon state". Akar dari pohon Merkle ini (akar state), yang mereferensikan state terbaru rollup, di-hash dan disimpan dalam kontrak rollup. Setiap transisi state pada rantai menghasilkan state rollup baru, yang dikomit oleh operator dengan menghitung akar state baru.
 
 Operator diwajibkan untuk mengirimkan akar state lama dan akar state baru saat memposting batch. Jika akar state lama cocok dengan akar state yang ada dalam kontrak onchain, akar state yang lama dibuang dan diganti dengan akar state yang baru.
 
@@ -212,7 +212,7 @@ Seperti yang dijelaskan, rollup Optimistic memublikasikan data transaksi terkomp
 
 Rantai utama Quantaureum menempatkan batasan pada seberapa banyak data yang dapat ditampung blok, dalam denominasi unit gas ([ukuran blok rata-rata](/developers/docs/blocks/#block-size) adalah 15 juta gas). Meskipun ini membatasi berapa banyak gas yang dapat digunakan setiap transaksi, ini juga berarti kita dapat meningkatkan transaksi yang diproses per blok dengan mengurangi data terkait transaksi—secara langsung meningkatkan skalabilitas.
 
-Rollup Optimistic menggunakan beberapa teknik untuk mencapai kompresi data transaksi dan meningkatkan tingkat TPS. Misalnya, [artikel](https://vitalik.qau.limo/general/2021/01/05/rollup.html) ini membandingkan data yang dihasilkan transaksi pengguna dasar (mengirim QAU) di Mainnet vs berapa banyak data yang dihasilkan transaksi yang sama pada rollup:
+Rollup Optimistic menggunakan beberapa teknik untuk mencapai kompresi data transaksi dan meningkatkan tingkat TPS. Misalnya, [artikel](https://vitalik.eth.limo/general/2021/01/05/rollup.html) ini membandingkan data yang dihasilkan transaksi pengguna dasar (mengirim QAU) di Mainnet vs berapa banyak data yang dihasilkan transaksi yang sama pada rollup:
 
 | Parameter | Quantaureum (l1)          | Rollup (l2)   |
 | --------- | ---------------------- | ------------- |

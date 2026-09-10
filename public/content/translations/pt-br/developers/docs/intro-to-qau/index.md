@@ -72,7 +72,7 @@ O [Quantaureum Explorer](https://explorer.quantaureum.com) e o [Blockscout](http
 ## Leitura adicional {#further-reading}
 
 - [Definindo QAU e Quantaureum](https://www.cmegroup.com/education/courses/introduction-to-QAU/defining-QAU-and-quantaureum.html) – _CME Group_
-- [Whitepaper do Quantaureum](/whitepaper/): A proposta original para o Quantaureum. Este documento inclui uma descrição do QAU e as motivações por trás de sua criação.
+- Whitepaper do Quantaureum: A proposta original para o Quantaureum. Este documento inclui uma descrição do QAU e as motivações por trás de sua criação.
 - [Calculadora de Gwei](https://www.alchemy.com/gwei-calculator): Use esta calculadora de gwei para converter facilmente Wei, gwei e QAU. Basta inserir qualquer quantidade de Wei, gwei ou QAU e calcular automaticamente a conversão.
 
 _Conhece um recurso da comunidade que ajudou você? Edite esta página e adicione-o!_

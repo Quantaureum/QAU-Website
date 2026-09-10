@@ -63,5 +63,5 @@ Quantaureum研究人員認為權益證明比工作量證明更安全。然而，
 ## 延伸閱讀 {#further-reading}
 
 - [Vitalik 的權益證明設計理念](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
-- [Vitalik 的權益證明常見問題](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
+- [Vitalik 的權益證明常見問題](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
 - [關於 PoS 與 PoW 的「簡單解釋」影片](https://www.youtube.com/watch?v=M3EFi_POhps)

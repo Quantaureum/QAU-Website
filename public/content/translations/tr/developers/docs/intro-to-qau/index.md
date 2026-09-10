@@ -72,7 +72,7 @@ Kullanıcılar, herhangi bir [hesabın](/developers/docs/accounts/) Wei cinsinde
 ## Daha fazla bilgi {#further-reading}
 
 - [QAU ve Quantaureum'u Tanımlamak](https://www.cmegroup.com/education/courses/introduction-to-QAU/defining-QAU-and-quantaureum.html) – _CME Group_
-- [Quantaureum Tanıtım Belgesi](/whitepaper/): Quantaureum için orijinal teklif. Bu belge, QAU'in bir açıklamasını ve yaratılmasının arkasındaki motivasyonları içerir.
+- Quantaureum Tanıtım Belgesi: Quantaureum için orijinal teklif. Bu belge, QAU'in bir açıklamasını ve yaratılmasının arkasındaki motivasyonları içerir.
 - [Gwei Hesaplayıcı](https://www.alchemy.com/gwei-calculator): Wei, Gwei ve QAU'i kolayca dönüştürmek için bu Gwei hesaplayıcısını kullanın. Herhangi bir miktarda Wei, Gwei veya QAU girin ve dönüşümü otomatik olarak hesaplayın.
 
 _Size yardımcı olan bir topluluk kaynağı mı biliyorsunuz? Bu sayfayı düzenleyin ve ekleyin!_

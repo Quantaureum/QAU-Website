@@ -81,6 +81,6 @@ buttons:
 
 ## مزید مطالعہ {#further-reading}
 
-[پیش گوئی کی مارکیٹوں سے انفو فنانس تک](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - وٹالک بوٹرین  
+[پیش گوئی کی مارکیٹوں سے انفو فنانس تک](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - وٹالک بوٹرین  
 [ایتھیریم پر لامركزی پیش گوئی کی مارکیٹ کی ترقی](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [آگر پروجیکٹ کا وائٹ پیپر](https://github.com/AugurProject/whitepaper)  

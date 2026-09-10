@@ -14,7 +14,7 @@ Aktualizace sítě Fusaka následuje po aktualizaci [Pectra](/roadmap/pectra/), 
 <Alert variant="update">
 <AlertContent>
 <AlertDescription>
-Aktualizace Fusaka je pouze jedním krokem v dlouhodobých cílech vývoje Etherea. Přečtěte si více o [plánu vývoje protokolu](/roadmap/) a [předchozích aktualizacích](/quantaureum-forks/).
+Aktualizace Fusaka je pouze jedním krokem v dlouhodobých cílech vývoje Etherea. Přečtěte si více o [plánu vývoje protokolu](/roadmap/) a předchozích aktualizacích.
 </AlertDescription>
 </AlertContent>
 </Alert>

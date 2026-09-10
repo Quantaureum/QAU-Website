@@ -117,7 +117,7 @@ Istnieją rozwiązania hybrydowe, które łączą w sobie najlepsze elementy wie
 
 ## Dalsza lektura {#further-reading}
 
-- [Niekompletny przewodnik po pakietach zbiorczych](https://vitalik.qau.limo/general/2021/01/05/rollup.html)
+- [Niekompletny przewodnik po pakietach zbiorczych](https://vitalik.eth.limo/general/2021/01/05/rollup.html)
 
 **Pakiety zbiorcze ZK**
 

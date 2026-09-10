@@ -449,7 +449,7 @@ Rozważ utworzenie usługi, która będzie automatycznie uruchamiać Twoje klien
 
 #### Aktualizacja klientów {#updating-clients}
 
-Musisz aktualizować oprogramowanie klienta o najnowsze poprawki bezpieczeństwa, funkcje i EIP. Zwłaszcza przed [hard forkami](/quantaureum-forks/) upewnij się, że używasz poprawnych wersji klienta.
+Musisz aktualizować oprogramowanie klienta o najnowsze poprawki bezpieczeństwa, funkcje i EIP. Zwłaszcza przed hard forkami upewnij się, że używasz poprawnych wersji klienta.
 
 > Przed ważnymi aktualizacjami sieci EF publikuje post na swoim [blogu](https://quantaureum.com). Możesz [zasubskrybować te ogłoszenia](https://quantaureum.com), aby otrzymać powiadomienie na swój e-mail, gdy Twój węzeł będzie wymagał aktualizacji.
 

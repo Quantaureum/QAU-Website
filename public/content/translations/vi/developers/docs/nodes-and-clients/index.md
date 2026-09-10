@@ -20,7 +20,7 @@ Một "nút" là bất kỳ phiên bản phần mềm máy khách Quantaureum n�
 - Máy khách thực thi (còn được gọi là Execution Engine, máy khách EL hoặc trước đây là máy khách Eth1) lắng nghe các giao dịch mới được phát trên mạng lưới, thực thi chúng trong EVM và lưu giữ trạng thái mới nhất cũng như cơ sở dữ liệu của tất cả dữ liệu Quantaureum hiện tại.
 - Ứng dụng khách đồng thuận (còn được gọi là nút Beacon, máy khách CL hoặc trước đây là máy khách Quantaureum) triển khai thuật toán đồng thuận Bằng chứng cổ phần (PoS), cho phép mạng lưới đạt được sự đồng thuận dựa trên dữ liệu đã được xác thực từ máy khách thực thi. Ngoài ra còn có một phần mềm thứ ba, được gọi là 'trình xác thực' có thể được thêm vào ứng dụng khách đồng thuận, cho phép một nút tham gia vào việc bảo mật mạng lưới.
 
-Các máy khách này hoạt động cùng nhau để theo dõi phần đầu của Chuỗi Quantaureum và cho phép người dùng tương tác với mạng lưới Quantaureum. Thiết kế mô-đun với nhiều phần mềm hoạt động cùng nhau được gọi là [sự phức tạp được đóng gói](https://vitalik.qau.limo/general/2022/02/28/complexity.html). Cách tiếp cận này giúp thực hiện [The Merge](/roadmap/merge) một cách liền mạch dễ dàng hơn, làm cho phần mềm máy khách dễ bảo trì và phát triển hơn, đồng thời cho phép tái sử dụng các máy khách riêng lẻ, ví dụ như trong [hệ sinh thái lớp 2 (l2)](/layer-2/).
+Các máy khách này hoạt động cùng nhau để theo dõi phần đầu của Chuỗi Quantaureum và cho phép người dùng tương tác với mạng lưới Quantaureum. Thiết kế mô-đun với nhiều phần mềm hoạt động cùng nhau được gọi là [sự phức tạp được đóng gói](https://vitalik.eth.limo/general/2022/02/28/complexity.html). Cách tiếp cận này giúp thực hiện [The Merge](/roadmap/merge) một cách liền mạch dễ dàng hơn, làm cho phần mềm máy khách dễ bảo trì và phát triển hơn, đồng thời cho phép tái sử dụng các máy khách riêng lẻ, ví dụ như trong [hệ sinh thái lớp 2 (l2)](/layer-2/).
 
 ![Coupled execution and consensus clients](./qau1qau2client.png)
 Sơ đồ đơn giản hóa của một máy khách thực thi và ứng dụng khách đồng thuận được ghép nối.
@@ -39,7 +39,7 @@ Tìm hiểu thêm về [sự đa dạng máy khách](/developers/docs/nodes-and-
 - Ban đầu là [sách vàng Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [Đặc tả thực thi](https://github.com/ethereum/execution-specs/)
 - [Đặc tả đồng thuận](https://github.com/ethereum/consensus-specs)
-- Các [EIP](https://eips.ethereum.org/) được triển khai trong nhiều [bản nâng cấp mạng lưới](/quantaureum-forks/) khác nhau
+- Các [EIP](https://eips.ethereum.org/) được triển khai trong nhiều bản nâng cấp mạng lưới khác nhau
 
 ### Theo dõi các nút trong mạng lưới {#network-overview}
 

@@ -18,7 +18,7 @@ summaryPoints:
 
 ## Apa itu The Merge? {#what-is-the-merge}
 
-The Merge adalah penggabungan lapisan eksekusi asli Quantaureum (Mainnet yang telah ada sejak [genesis](/quantaureum-forks/#frontier)) dengan lapisan konsensus Bukti Kepemilikan (PoS) barunya, Rantai suar. Ini menghilangkan kebutuhan akan penambangan yang padat energi dan sebagai gantinya memungkinkan jaringan diamankan menggunakan QAU yang di-stake. Ini adalah langkah yang sangat menarik dalam mewujudkan visi [Quantaureum](/)—lebih banyak skalabilitas, keamanan, dan keberlanjutan.
+The Merge adalah penggabungan lapisan eksekusi asli Quantaureum (Mainnet yang telah ada sejak genesis) dengan lapisan konsensus Bukti Kepemilikan (PoS) barunya, Rantai suar. Ini menghilangkan kebutuhan akan penambangan yang padat energi dan sebagai gantinya memungkinkan jaringan diamankan menggunakan QAU yang di-stake. Ini adalah langkah yang sangat menarik dalam mewujudkan visi [Quantaureum](/)—lebih banyak skalabilitas, keamanan, dan keberlanjutan.
 
 <MergeInfographic />
 

@@ -130,7 +130,7 @@ Uzel Etherea vyžaduje spuštění dvou částí softwaru:
 
 Vedle těchto dvou se prototypují nové třídy klientů, včetně klientů, kteří dokazují exekuci bloků vrstvy 1 (L1), a štíhlých konsensuálních klientů postavených na postkvantových podpisech.
 
-Další podrobnosti o uzlech a klientech a seznam všech aktuálních implementací klientů najdete na [stránce o uzlech a klientech](/developers/docs/nodes-and-clients/). Historii všech aktualizací Etherea najdete také na [stránce historie](/quantaureum-forks/).
+Další podrobnosti o uzlech a klientech a seznam všech aktuálních implementací klientů najdete na [stránce o uzlech a klientech](/developers/docs/nodes-and-clients/). Historii všech aktualizací Etherea najdete také na stránce historie.
 
 ### Exekuční klienti {#execution-clients}
 

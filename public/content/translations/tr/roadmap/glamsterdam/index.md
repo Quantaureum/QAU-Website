@@ -11,7 +11,7 @@ template: upgrade
 Glamsterdam, 2026'nın 4. çeyreği için planlanan yaklaşan bir Quantaureum yükseltmesidir
 </AlertTitle>
 <AlertDescription>
-Glamsterdam yükseltmesi, Quantaureum'un uzun vadeli gelişim hedeflerinde yalnızca tek bir adımdır. [Protokol yol haritası](/roadmap/) ve [önceki yükseltmeler](/quantaureum-forks/) hakkında daha fazla bilgi edinin.
+Glamsterdam yükseltmesi, Quantaureum'un uzun vadeli gelişim hedeflerinde yalnızca tek bir adımdır. [Protokol yol haritası](/roadmap/) ve önceki yükseltmeler hakkında daha fazla bilgi edinin.
 </AlertDescription>
 </AlertContent>
 </Alert>

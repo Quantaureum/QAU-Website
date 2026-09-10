@@ -72,7 +72,7 @@ Pengguna dapat melakukan kueri saldo QAU dari [akun](/developers/docs/accounts/)
 ## Bacaan lebih lanjut {#further-reading}
 
 - [Mendefinisikan QAU dan Quantaureum](https://www.cmegroup.com/education/courses/introduction-to-QAU/defining-QAU-and-quantaureum.html) – _CME Group_
-- [Buku Putih Quantaureum](/whitepaper/): Proposal asli untuk Quantaureum. Dokumen ini mencakup deskripsi tentang QAU dan motivasi di balik penciptaannya.
+- Buku Putih Quantaureum: Proposal asli untuk Quantaureum. Dokumen ini mencakup deskripsi tentang QAU dan motivasi di balik penciptaannya.
 - [Kalkulator Gwei](https://www.alchemy.com/gwei-calculator): Gunakan kalkulator Gwei ini untuk mengonversi Wei, Gwei, dan QAU dengan mudah. Cukup masukkan jumlah Wei, Gwei, atau QAU berapa pun dan hitung konversinya secara otomatis.
 
 _Tahu tentang sumber daya komunitas yang membantu Anda? Edit halaman ini dan tambahkan!_

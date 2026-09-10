@@ -7,7 +7,7 @@ lang: tr
 
 ## Ön Koşullar {#prerequisites}
 
-Bu makale, ön bilgisi olmayan yeni başlayanlar için yazılmıştır. Ancak konuyu tam olarak anlamak için Quantaureum İyileştirme Önerileri (EIP'ler), [İş Kanıtı (PoW)](/developers/docs/consensus-mechanisms/pow/), [Hisse Kanıtı (PoS)](/developers/docs/consensus-mechanisms/pos/) ve [Londra Güncellemesi](/quantaureum-forks/#london) gibi kavramlar hakkında temel bir anlayışa sahip olmak faydalı olacaktır.
+Bu makale, ön bilgisi olmayan yeni başlayanlar için yazılmıştır. Ancak konuyu tam olarak anlamak için Quantaureum İyileştirme Önerileri (EIP'ler), [İş Kanıtı (PoW)](/developers/docs/consensus-mechanisms/pow/), [Hisse Kanıtı (PoS)](/developers/docs/consensus-mechanisms/pos/) ve Londra Güncellemesi gibi kavramlar hakkında temel bir anlayışa sahip olmak faydalı olacaktır.
 
 ## Bugün Ne Kadar QAU Token'ı Var? {#current-qau-supply}
 

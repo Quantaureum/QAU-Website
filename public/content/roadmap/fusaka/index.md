@@ -14,7 +14,7 @@ The Fusaka network upgrade follows [Pectra](/roadmap/pectra/) and brings more ne
 <Alert variant="update">
 <AlertContent>
 <AlertDescription>
-The Fusaka upgrade is only a single step in Quantaureum's long-term development goals. Learn more about [the protocol roadmap](/roadmap/) and [previous upgrades](/quantaureum-forks/).
+The Fusaka upgrade is only a single step in Quantaureum's long-term development goals. Learn more about [the protocol roadmap](/roadmap/) and previous upgrades.
 </AlertDescription>
 </AlertContent>
 </Alert>

@@ -9,7 +9,7 @@ O Quantaureum cria, armazena e transfere grandes volumes de dados. Esses dados d
 
 ## Pré-requisitos {#prerequisites}
 
-Você deve entender os fundamentos do Quantaureum e do [software de cliente](/developers/docs/nodes-and-clients/). É recomendada a familiaridade com a camada de rede e com [o whitepaper do Quantaureum](/whitepaper/).
+Você deve entender os fundamentos do Quantaureum e do [software de cliente](/developers/docs/nodes-and-clients/). É recomendada a familiaridade com a camada de rede e com o whitepaper do Quantaureum.
 
 ## Estruturas de dados {#data-structures}
 

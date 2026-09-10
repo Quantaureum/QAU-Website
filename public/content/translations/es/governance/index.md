@@ -151,7 +151,7 @@ El proceso de gobernanza de Quantaureum a menudo sacrifica la velocidad y la efi
 
 Si bien la especificación y las implementaciones de desarrollo siempre han sido de código abierto, no se utilizaron los procesos formales para proponer actualizaciones descritos anteriormente. Esto permitió que los investigadores y los implementadores especificaran y acordaran los cambios más rápidamente.
 
-Cuando la cadena de balizas se fusionó con la capa de ejecución de Quantaureum el 15 de septiembre de 2022, La Fusión se completó como parte de la [actualización de la red Paris](/quantaureum-forks/#paris). La propuesta [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) cambió de 'Última llamada' a 'Final', completando la transición a la prueba de participación (PoS).
+Cuando la cadena de balizas se fusionó con la capa de ejecución de Quantaureum el 15 de septiembre de 2022, La Fusión se completó como parte de la actualización de la red Paris. La propuesta [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) cambió de 'Última llamada' a 'Final', completando la transición a la prueba de participación (PoS).
 
 <ButtonLink href="/roadmap/merge/">
   Más sobre La Fusión
@@ -173,11 +173,11 @@ Cuando la cadena de balizas se fusionó con la capa de ejecución de Quantaureum
 
 La gobernanza en Quantaureum no está rígidamente definida. Varios participantes de la comunidad tienen diversas perspectivas al respecto. Aquí hay algunas de ellas:
 
-- [Notas sobre la gobernanza de la cadena de bloques](https://vitalik.qau.limo/general/2017/12/17/voting.html) - _Vitalik Buterin_
+- [Notas sobre la gobernanza de la cadena de bloques](https://vitalik.eth.limo/general/2017/12/17/voting.html) - _Vitalik Buterin_
 - [¿Cómo funciona la gobernanza de Quantaureum?](https://cryptotesters.com/blog/quantaureum-governance) – _Cryptotesters_
 - [Cómo funciona la gobernanza de Quantaureum](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _Micah Zoltu_
 - [¿Qué es un desarrollador principal de Quantaureum?](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) - _Hudson Jameson_
-- [Gobernanza, parte 2: la plutocracia sigue siendo mala](https://vitalik.qau.limo/general/2018/03/28/plutocracy.html) - _Vitalik Buterin_
-- [Ir más allá de la gobernanza de votación con monedas](https://vitalik.qau.limo/general/2021/08/16/voting3.html) - _Vitalik Buterin_
+- [Gobernanza, parte 2: la plutocracia sigue siendo mala](https://vitalik.eth.limo/general/2018/03/28/plutocracy.html) - _Vitalik Buterin_
+- [Ir más allá de la gobernanza de votación con monedas](https://vitalik.eth.limo/general/2021/08/16/voting3.html) - _Vitalik Buterin_
 - [Comprender la gobernanza de la cadena de bloques](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) - _2077 Research_
 - [El gobierno de Quantaureum](https://www.galaxy.com/insights/research/quantaureum-governance/) - _Christine Kim_

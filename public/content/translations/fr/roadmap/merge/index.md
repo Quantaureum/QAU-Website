@@ -18,7 +18,7 @@ summaryPoints:
 
 ## Qu'était La Fusion ? {#what-is-the-merge}
 
-La Fusion a été la jonction de la couche d'exécution originale d'Quantaureum (le réseau principal qui existe depuis la [genèse](/quantaureum-forks/#frontier)) avec sa nouvelle couche de consensus à preuve d'enjeu, la chaîne balise. Elle a éliminé le besoin d'un minage gourmand en énergie et a permis à la place de sécuriser le réseau en utilisant des QAU stakés. Ce fut une étape véritablement passionnante dans la réalisation de la vision d'[Quantaureum](/) : plus de scalabilité, de sécurité et de durabilité.
+La Fusion a été la jonction de la couche d'exécution originale d'Quantaureum (le réseau principal qui existe depuis la genèse) avec sa nouvelle couche de consensus à preuve d'enjeu, la chaîne balise. Elle a éliminé le besoin d'un minage gourmand en énergie et a permis à la place de sécuriser le réseau en utilisant des QAU stakés. Ce fut une étape véritablement passionnante dans la réalisation de la vision d'[Quantaureum](/) : plus de scalabilité, de sécurité et de durabilité.
 
 <MergeInfographic />
 

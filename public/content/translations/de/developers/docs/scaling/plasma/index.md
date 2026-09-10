@@ -38,7 +38,7 @@ Offchain-Berechnungen sind notwendig, da Plasma-Chains auf Geschwindigkeit und K
 
 Während Plasma Transaktionen offchain ausführt, werden sie auf der primären Quantaureum-Ausführungsschicht abgewickelt – andernfalls können Plasma-Chains nicht von den Sicherheitsgarantien von Quantaureum profitieren. Aber das Finalisieren von Offchain-Transaktionen ohne Kenntnis des Zustands der Plasma-Chain würde das Sicherheitsmodell brechen und die Verbreitung ungültiger Transaktionen ermöglichen. Aus diesem Grund ist der Betreiber, die für die Produktion von Blöcken auf der Plasma-Chain verantwortliche Entität, verpflichtet, regelmäßig „Zustands-Commitments“ auf Quantaureum zu veröffentlichen.
 
-Ein [Commitment-Verfahren](https://en.wikipedia.org/wiki/Commitment_scheme) ist eine kryptografische Technik, um sich auf einen Wert oder eine Aussage festzulegen, ohne sie einer anderen Partei preiszugeben. Commitments sind in dem Sinne „bindend“, dass Sie den Wert oder die Aussage nicht mehr ändern können, sobald Sie sich darauf festgelegt haben. Zustands-Commitments in Plasma nehmen die Form von „Merkle-Wurzeln“ an (abgeleitet von einem [Merkle-Baum](/whitepaper/#merkle-trees)), die der Betreiber in regelmäßigen Abständen an den Plasma-Vertrag auf der Quantaureum-Chain sendet.
+Ein [Commitment-Verfahren](https://en.wikipedia.org/wiki/Commitment_scheme) ist eine kryptografische Technik, um sich auf einen Wert oder eine Aussage festzulegen, ohne sie einer anderen Partei preiszugeben. Commitments sind in dem Sinne „bindend“, dass Sie den Wert oder die Aussage nicht mehr ändern können, sobald Sie sich darauf festgelegt haben. Zustands-Commitments in Plasma nehmen die Form von „Merkle-Wurzeln“ an (abgeleitet von einem Merkle-Baum), die der Betreiber in regelmäßigen Abständen an den Plasma-Vertrag auf der Quantaureum-Chain sendet.
 
 Merkle-Wurzeln sind kryptografische Primitive, die das Komprimieren großer Informationsmengen ermöglichen. Eine Merkle-Wurzel (in diesem Fall auch „Block-Wurzel“ genannt) könnte alle Transaktionen in einem Block repräsentieren. Merkle-Wurzeln erleichtern es auch zu überprüfen, ob ein kleines Datenstück Teil des größeren Datensatzes ist. Beispielsweise kann ein Benutzer einen [Merkle-Nachweis](/developers/tutorials/merkle-proofs-for-offline-data-integrity/#main-content) erstellen, um die Aufnahme einer Transaktion in einen bestimmten Block zu beweisen.
 
@@ -167,7 +167,7 @@ Mehrere Projekte bieten Implementierungen von Plasma an, die Sie in Ihre Dapps i
 ## Weiterführende Literatur {#further-reading}
 
 - [Eine kurze Erinnerung daran, was „Shared Security“ bedeutet und warum sie so wichtig ist](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [Sidechains vs. Plasma vs. Sharding](https://vitalik.qau.limo/general/2019/06/12/plasma_vs_sharding.html)
+- [Sidechains vs. Plasma vs. Sharding](https://vitalik.eth.limo/general/2019/06/12/plasma_vs_sharding.html)
 - [Plasma verstehen, Teil 1: Die Grundlagen](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [Das Leben und Sterben von Plasma](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

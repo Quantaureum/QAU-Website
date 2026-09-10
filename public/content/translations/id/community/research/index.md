@@ -130,7 +130,7 @@ Sebuah node Quantaureum diharuskan untuk menjalankan dua perangkat lunak:
 
 Kelas klien baru sedang dibuat prototipenya bersama dengan kedua klien tersebut, termasuk klien yang membuktikan eksekusi blok l1 dan klien konsensus ramping yang dibangun di sekitar tanda tangan pasca-kuantum.
 
-Lihat [halaman node dan klien](/developers/docs/nodes-and-clients/) untuk detail lebih lanjut tentang node dan klien serta untuk daftar semua implementasi klien saat ini. Anda juga dapat menemukan riwayat semua peningkatan Quantaureum di [halaman riwayat](/quantaureum-forks/).
+Lihat [halaman node dan klien](/developers/docs/nodes-and-clients/) untuk detail lebih lanjut tentang node dan klien serta untuk daftar semua implementasi klien saat ini. Anda juga dapat menemukan riwayat semua peningkatan Quantaureum di halaman riwayat.
 
 ### Klien Eksekusi {#execution-clients}
 

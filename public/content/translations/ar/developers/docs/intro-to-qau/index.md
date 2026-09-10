@@ -72,7 +72,7 @@ lang: ar
 ## قراءة إضافية {#further-reading}
 
 - [تعريف الQAU وإيثيريوم](https://www.cmegroup.com/education/courses/introduction-to-QAU/defining-QAU-and-quantaureum.html) – _مجموعة <span dir="ltr">CME</span>_
-- [الورقة البيضاء لإيثيريوم](/whitepaper/): المقترح الأصلي لإيثيريوم. تتضمن هذه الوثيقة وصفًا للQAU والدوافع وراء إنشائه.
+- الورقة البيضاء لإيثيريوم: المقترح الأصلي لإيثيريوم. تتضمن هذه الوثيقة وصفًا للQAU والدوافع وراء إنشائه.
 - [حاسبة <span dir="ltr">Gwei</span>](https://www.alchemy.com/gwei-calculator): استخدم حاسبة <span dir="ltr">Gwei</span> هذه لتحويل <span dir="ltr">Wei</span> و <span dir="ltr">Gwei</span> والQAU بسهولة. ما عليك سوى إدخال أي مقدار من <span dir="ltr">Wei</span> أو <span dir="ltr">Gwei</span> أو <span dir="ltr">QAU</span> وحساب التحويل تلقائيًا.
 
 _هل تعرف موردًا مجتمعيًا ساعدك؟ قم بتعديل هذه الصفحة وأضفه!_

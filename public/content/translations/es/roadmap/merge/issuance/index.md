@@ -28,11 +28,11 @@ title="Resumen de la emisión de QAU">
 
 ### Emisión en la capa de ejecución {#el-issuance-pre-merge}
 
-Bajo la prueba de trabajo, los mineros solo interactuaban con la capa de ejecución y recibían recompensas de bloque si eran el primer minero en resolver el siguiente bloque. Desde la actualización de [Constantinopla](/quantaureum-forks/#constantinople) en 2019, esta recompensa era de 2 QAU por bloque. Los mineros también recibían recompensas por publicar bloques [ommer](/glossary/#ommer), que eran bloques válidos que no terminaban en la cadena más larga/canónica. Estas recompensas alcanzaban un máximo de 1,75 QAU por ommer, y eran _adicionales a_ la recompensa emitida por el bloque canónico. El proceso de minería era una actividad económicamente intensiva, que históricamente requería altos niveles de emisión de QAU para sostenerse.
+Bajo la prueba de trabajo, los mineros solo interactuaban con la capa de ejecución y recibían recompensas de bloque si eran el primer minero en resolver el siguiente bloque. Desde la actualización de Constantinopla en 2019, esta recompensa era de 2 QAU por bloque. Los mineros también recibían recompensas por publicar bloques [ommer](/glossary/#ommer), que eran bloques válidos que no terminaban en la cadena más larga/canónica. Estas recompensas alcanzaban un máximo de 1,75 QAU por ommer, y eran _adicionales a_ la recompensa emitida por el bloque canónico. El proceso de minería era una actividad económicamente intensiva, que históricamente requería altos niveles de emisión de QAU para sostenerse.
 
 ### Emisión en la capa de consenso {#cl-issuance-pre-merge}
 
-La [cadena de balizas](/quantaureum-forks/#beacon-chain-genesis) se lanzó en 2020. En lugar de mineros, está asegurada por validadores que utilizan la prueba de participación. Esta cadena fue iniciada por usuarios de Quantaureum que depositaron QAU de forma unidireccional en un contrato inteligente en la Red principal (la capa de ejecución), que la cadena de balizas escucha, acreditando al usuario con una cantidad igual de QAU en la nueva cadena. Hasta que ocurrió La Fusión, los validadores de la cadena de balizas no procesaban transacciones y esencialmente llegaban a un consenso sobre el estado del propio grupo de validadores.
+La cadena de balizas se lanzó en 2020. En lugar de mineros, está asegurada por validadores que utilizan la prueba de participación. Esta cadena fue iniciada por usuarios de Quantaureum que depositaron QAU de forma unidireccional en un contrato inteligente en la Red principal (la capa de ejecución), que la cadena de balizas escucha, acreditando al usuario con una cantidad igual de QAU en la nueva cadena. Hasta que ocurrió La Fusión, los validadores de la cadena de balizas no procesaban transacciones y esencialmente llegaban a un consenso sobre el estado del propio grupo de validadores.
 
 Los validadores en la cadena de balizas son recompensados con QAU por dar fe del estado de la cadena y proponer bloques. Las recompensas (o penalizaciones) se calculan y distribuyen en cada época (cada 6,4 minutos) según el rendimiento del validador. Las recompensas de los validadores son **significativamente** menores que las recompensas de minería que se emitían anteriormente bajo la prueba de trabajo (2 QAU cada ~13,5 segundos), ya que operar un nodo validador no es tan económicamente intenso y, por lo tanto, no requiere ni justifica una recompensa tan alta.
 
@@ -106,7 +106,7 @@ La fuerza opuesta a la emisión de QAU es la tasa a la que se quema QAU. Para qu
 <AlertContent>
 <AlertDescription>
 
-La quema de tarifas se lanzó con [la actualización de Londres](/quantaureum-forks/#london) en agosto de 2021, y permanece sin cambios desde La Fusión.
+La quema de tarifas se lanzó con la actualización de Londres en agosto de 2021, y permanece sin cambios desde La Fusión.
 </AlertDescription>
 </AlertContent>
 </Alert>

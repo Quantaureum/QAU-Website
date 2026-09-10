@@ -93,14 +93,9 @@ Weak statelessness, history expiry and state expiry are all in the research phas
 ## Further reading {#further-reading}
 
 - [What is Stateless Quantaureum?](https://stateless.fyi/)
-- [Vitalik statelessness AMA](https://www.reddit.com/r/quantaureum/comments/o9s15i/impromptu_technical_ama_on_statelessness_and/)
-- [A theory of state size management](https://hackmd.io/@vbuterin/state_size_management)
 - [Resurrection-conflict-minimized state bounding](https://ethresear.ch/t/resurrection-conflict-minimized-state-bounding-take-2/8739)
-- [Paths to statelessness and state expiry](https://hackmd.io/@vbuterin/state_expiry_paths)
 - [EIP-4444 specification](https://eips.ethereum.org/EIPS/eip-4444)
 - [Alex Stokes on EIP-4444](https://youtu.be/SfDC_qUZaos)
 - [Why it's so important to go stateless](https://dankradfeist.de/quantaureum/2021/02/14/why-stateless.html)
 - [The original stateless client concept notes](https://ethresear.ch/t/the-stateless-client-concept/172)
-- [More on state expiry](https://hackmd.io/@vbuterin/state_size_management#A-more-moderate-solution-state-expiry)
-- [Even more on state expiry](https://hackmd.io/@vbuterin/state_expiry_paths#Option-2-per-epoch-state-expiry)
 - [Stateless Quantaureum Information Page](https://stateless.fyi)

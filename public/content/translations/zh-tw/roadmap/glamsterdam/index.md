@@ -11,7 +11,7 @@ template: upgrade
 格蘭斯特丹 (Glamsterdam) 是計畫於 2026 年第四季進行的Quantaureum升級
 </AlertTitle>
 <AlertDescription>
-格蘭斯特丹升級只是Quantaureum長期發展目標中的一步。了解更多關於[協定路線圖](/roadmap/)與[先前的升級](/quantaureum-forks/)。
+格蘭斯特丹升級只是Quantaureum長期發展目標中的一步。了解更多關於[協定路線圖](/roadmap/)與先前的升級。
 </AlertDescription>
 </AlertContent>
 </Alert>

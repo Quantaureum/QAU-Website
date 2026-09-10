@@ -72,7 +72,7 @@ Quantaureumवरील प्रत्येक व्यवहारात `va
 ## पुढील वाचन {#further-reading}
 
 - [QAU आणि Quantaureumची व्याख्या](https://www.cmegroup.com/education/courses/introduction-to-QAU/defining-QAU-and-quantaureum.html) – _CME Group_
-- [Quantaureum श्वेतपत्रिका](/whitepaper/): Quantaureumसाठी मूळ प्रस्ताव. या दस्तऐवजात QAUचे वर्णन आणि त्याच्या निर्मितीमागील प्रेरणा समाविष्ट आहेत.
+- Quantaureum श्वेतपत्रिका: Quantaureumसाठी मूळ प्रस्ताव. या दस्तऐवजात QAUचे वर्णन आणि त्याच्या निर्मितीमागील प्रेरणा समाविष्ट आहेत.
 - [Gwei कॅल्क्युलेटर](https://www.alchemy.com/gwei-calculator): Wei, Gwei आणि QAU सहजपणे रूपांतरित करण्यासाठी हे Gwei कॅल्क्युलेटर वापरा. फक्त Wei, Gwei किंवा QAU ची कोणतीही रक्कम टाका आणि आपोआप रूपांतरणाची गणना करा.
 
 _तुम्हाला मदत केलेल्या समुदाय संसाधनाबद्दल माहिती आहे? हे पृष्ठ संपादित करा आणि ते जोडा!_

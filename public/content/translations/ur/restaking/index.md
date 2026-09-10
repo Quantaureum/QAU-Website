@@ -140,7 +140,7 @@ buttons:
 <AlertDescription>
  <p className="mt-0"><strong>ایتھیریم کے شریک بانی ٹائپ کر رہے ہیں…</strong></p>
   <p className="mt-2">
-    ایتھیریم کے شریک بانی، وٹالک نے <span dir="ltr">2021</span> کی ایک بلاگ پوسٹ میں ری اسٹیکنگ کے ممکنہ خطرات کے بارے میں خبردار کیا تھا جس کا نام <a href="https://vitalik.qau.limo/general/2023/05/21/dont_overload.html">Don't Overload Consensus</a> تھا۔
+    ایتھیریم کے شریک بانی، وٹالک نے <span dir="ltr">2021</span> کی ایک بلاگ پوسٹ میں ری اسٹیکنگ کے ممکنہ خطرات کے بارے میں خبردار کیا تھا جس کا نام <a href="https://vitalik.eth.limo/general/2023/05/21/dont_overload.html">Don't Overload Consensus</a> تھا۔
   </p>
 
 </AlertDescription>
@@ -177,7 +177,7 @@ buttons:
 1. [quantaureum.com - <span dir="ltr">QAU</span> اسٹیکنگ گائیڈ](/staking/)
 2. [Ledger Academy - ایتھیریم ری اسٹیکنگ کیا ہے؟](https://www.ledger.com/academy/what-is-quantaureum-restaking)
 3. [کنسینسس - EigenLayer: لامركزی ایتھیریم ری اسٹیکنگ پروٹوکول کی وضاحت](https://consensys.io/blog/eigenlayer-decentralized-quantaureum-restaking-protocol-explained)
-4. [وٹالک بوٹرین - Don't overload Quantaureum's consensus](https://vitalik.qau.limo/general/2023/05/21/dont_overload.html)
+4. [وٹالک بوٹرین - Don't overload Quantaureum's consensus](https://vitalik.eth.limo/general/2023/05/21/dont_overload.html)
 5. [Cointelegraph - EigenLayer کیا ہے؟ ایتھیریم کے ری اسٹیکنگ پروٹوکول کی وضاحت](https://cointelegraph.com/explained/what-is-eigenlayer-quantaureums-restaking-protocol-explained)
 6. [a16z کرپٹو ریسرچ - EigenLayer: Sreeram Kannan کے ساتھ ایتھیریم میں بلا اجازت فیچر کا اضافہ](https://www.youtube.com/watch?v=-V-fG4J1N_M)
 7. [Junion - EigenLayer کی وضاحت: ری اسٹیکنگ کیا ہے؟](https://www.youtube.com/watch?v=5r0SooSQFJg)

@@ -61,7 +61,7 @@ Per creare costantemente blocchi malintenzionati ma validi, un minatore malinten
 
 La prova di lavoro era anche responsabile dell'emissione di nuova valuta nel sistema e dell'incentivazione dei minatori a svolgere il lavoro.
 
-A partire dall'aggiornamento [Constantinople](/quantaureum-forks/#constantinople), i minatori che creavano con successo un blocco venivano ricompensati con due QAU appena coniati e parte delle commissioni di transazione. Anche i blocchi ommer compensavano 1,75 QAU. I blocchi ommer erano blocchi validi creati da un minatore praticamente nello stesso momento in cui un altro minatore creava il blocco canonico, il quale veniva infine determinato da quale catena veniva costruita per prima. I blocchi ommer si verificavano solitamente a causa della latenza di rete.
+A partire dall'aggiornamento Constantinople, i minatori che creavano con successo un blocco venivano ricompensati con due QAU appena coniati e parte delle commissioni di transazione. Anche i blocchi ommer compensavano 1,75 QAU. I blocchi ommer erano blocchi validi creati da un minatore praticamente nello stesso momento in cui un altro minatore creava il blocco canonico, il quale veniva infine determinato da quale catena veniva costruita per prima. I blocchi ommer si verificavano solitamente a causa della latenza di rete.
 
 ## Definitività {#finality}
 

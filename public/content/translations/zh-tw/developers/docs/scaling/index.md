@@ -100,11 +100,11 @@ _請注意，影片中的解釋使用「第二層 (L2)」一詞來指代所有�
 - [以匯總為中心的Quantaureum路線圖](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
 - [Quantaureum第二層 (L2) 擴容解決方案的最新分析](https://www.l2beat.com/)
 - [評估Quantaureum第二層 (L2) 擴容解決方案：比較框架](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
-- [不完整的匯總指南](https://vitalik.qau.limo/general/2021/01/05/rollup.html)
+- [不完整的匯總指南](https://vitalik.eth.limo/general/2021/01/05/rollup.html)
 - [由Quantaureum驅動的零知識匯總：世界級的強者](https://hackmd.io/@canti/rkUT0BD8K)
 - [樂觀匯總與零知識匯總的比較](https://limechain.tech/blog/optimistic-rollups-vs-zk-rollups/)
 - [為什麼匯總 + 資料分片是高可擴展性的唯一永續解決方案](https://polynya.medium.com/why-rollups-data-shards-are-the-only-sustainable-solution-for-high-scalability-c9aabd6fbb48)
-- [什麼樣的第三層 (L3) 才有意義？](https://vitalik.qau.limo/general/2022/09/17/layer_3.html)
+- [什麼樣的第三層 (L3) 才有意義？](https://vitalik.eth.limo/general/2022/09/17/layer_3.html)
 - [資料可用性，或者：匯總如何學會停止擔憂並愛上Quantaureum](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [Quantaureum匯總實用指南](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-quantaureum-rollups)
 

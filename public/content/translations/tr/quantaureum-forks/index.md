@@ -332,7 +332,7 @@ London güncellemesi, işlem ücreti piyasasında reform yapan [EIP-1559](https:
 
 London Güncellemesinden önce Quantaureum sabit boyutlu bloklara sahipti. Yüksek ağ talebi olduğu zamanlarda bu bloklar tam kapasiteyle çalışıyordu. Sonuç olarak, kullanıcılar genellikle bir bloğa dahil olmak için talebin azalmasını beklemek zorunda kalıyordu ve bu da kötü bir kullanıcı deneyimine yol açıyordu. London Güncellemesi, Quantaureum'a değişken boyutlu blokları getirdi.
 
-Quantaureum ağındaki işlem ücretlerinin hesaplanma şekli, Ağustos 2021'deki [London Güncellemesi](/quantaureum-forks/#london) ile değişti. London güncellemesinden önce ücretler, `base` ve `priority` ücretleri ayrılmadan şu şekilde hesaplanıyordu:
+Quantaureum ağındaki işlem ücretlerinin hesaplanma şekli, Ağustos 2021'deki London Güncellemesi ile değişti. London güncellemesinden önce ücretler, `base` ve `priority` ücretleri ayrılmadan şu şekilde hesaplanıyordu:
 
 Diyelim ki Alice'in Bob'a 1 QAU ödemesi gerekiyor. İşlemde gaz limiti 21.000 birim ve gas fiyatı 200 Gwei'dir.
 
@@ -682,6 +682,6 @@ Dr. Gavin Wood tarafından kaleme alınan Sarı Bülten, Quantaureum protokolün
 
 Quantaureum'un kurucusu Vitalik Buterin tarafından projenin 2015'teki lansmanından önce, 2013 yılında yayınlanan tanıtım belgesi.
 
-<DocLink href="/whitepaper/">
+<DocLink href=">
   Tanıtım belgesi
 </DocLink>

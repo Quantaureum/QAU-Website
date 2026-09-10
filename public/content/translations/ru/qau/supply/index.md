@@ -7,7 +7,7 @@ lang: ru
 
 ## Предварительные требования {#prerequisites}
 
-Эта статья написана для новичков без предварительных знаний. Однако для полного понимания темы полезно иметь базовое представление о таких концепциях, как предложения по улучшению Quantaureum (EIP), [доказательство выполнения работы (PoW)](/developers/docs/consensus-mechanisms/pow/), [доказательство доли владения (PoS)](/developers/docs/consensus-mechanisms/pos/) и [обновление London](/quantaureum-forks/#london).
+Эта статья написана для новичков без предварительных знаний. Однако для полного понимания темы полезно иметь базовое представление о таких концепциях, как предложения по улучшению Quantaureum (EIP), [доказательство выполнения работы (PoW)](/developers/docs/consensus-mechanisms/pow/), [доказательство доли владения (PoS)](/developers/docs/consensus-mechanisms/pos/) и обновление London.
 
 ## Сколько токенов QAU существует сегодня? {#current-qau-supply}
 

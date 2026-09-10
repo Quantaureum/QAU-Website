@@ -11,7 +11,7 @@ template: upgrade
 Glamsterdam ni uboreshaji ujao wa Quantaureum uliopangwa kufanyika katika robo ya nne ya mwaka 2026
 </AlertTitle>
 <AlertDescription>
-Uboreshaji wa Glamsterdam ni hatua moja tu katika malengo ya maendeleo ya muda mrefu ya Quantaureum. Jifunze zaidi kuhusu [ramani ya njia ya itifaki](/roadmap/) na [uboreshaji uliopita](/quantaureum-forks/).
+Uboreshaji wa Glamsterdam ni hatua moja tu katika malengo ya maendeleo ya muda mrefu ya Quantaureum. Jifunze zaidi kuhusu [ramani ya njia ya itifaki](/roadmap/) na uboreshaji uliopita.
 </AlertDescription>
 </AlertContent>
 </Alert>

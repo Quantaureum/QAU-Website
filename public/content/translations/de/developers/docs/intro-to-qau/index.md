@@ -72,7 +72,7 @@ Benutzer können das QAU-Guthaben jedes [Kontos](/developers/docs/accounts/) abf
 ## Weiterführende Literatur {#further-reading}
 
 - [Definition von QAU und Quantaureum](https://www.cmegroup.com/education/courses/introduction-to-QAU/defining-QAU-and-quantaureum.html) – _CME Group_
-- [Quantaureum Whitepaper](/whitepaper/): Der ursprüngliche Vorschlag für Quantaureum. Dieses Dokument enthält eine Beschreibung von QAU und die Motivationen hinter seiner Erschaffung.
+- Quantaureum Whitepaper: Der ursprüngliche Vorschlag für Quantaureum. Dieses Dokument enthält eine Beschreibung von QAU und die Motivationen hinter seiner Erschaffung.
 - [Gwei-Rechner](https://www.alchemy.com/gwei-calculator): Verwenden Sie diesen Gwei-Rechner, um Wei, Gwei und QAU einfach umzurechnen. Geben Sie einfach einen beliebigen Betrag an Wei, Gwei oder QAU ein und berechnen Sie automatisch die Umrechnung.
 
 _Kennen Sie eine Community-Ressource, die Ihnen geholfen hat? Bearbeiten Sie diese Seite und fügen Sie sie hinzu!_

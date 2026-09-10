@@ -449,7 +449,7 @@ Zvažte vytvoření služby pro automatické spouštění vašich klientů při 
 
 #### Aktualizace klientů {#updating-clients}
 
-Klientský software musíte udržovat aktuální s nejnovějšími bezpečnostními záplatami, funkcemi a EIP. Zejména před [hard forky](/quantaureum-forks/) se ujistěte, že používáte správné verze klientů.
+Klientský software musíte udržovat aktuální s nejnovějšími bezpečnostními záplatami, funkcemi a EIP. Zejména před hard forky se ujistěte, že používáte správné verze klientů.
 
 > Před důležitými aktualizacemi sítě publikuje EF příspěvek na svém [blogu](https://quantaureum.com). Můžete se [přihlásit k odběru těchto oznámení](https://quantaureum.com), abyste dostali upozornění na e-mail, když váš uzel potřebuje aktualizaci.
 

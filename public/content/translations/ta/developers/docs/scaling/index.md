@@ -100,11 +100,11 @@ _வீடியோவில் உள்ள விளக்கம் அனை�
 - [ரோலப்-மைய எத்திரியம் வழிகாட்டி வரைபடம்](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _விட்டாலிக் புட்டெரின் (Vitalik Buterin)_
 - [எத்திரியத்திற்கான அடுக்கு 2 (l2) அளவிடுதல் தீர்வுகள் குறித்த புதுப்பித்த பகுப்பாய்வு](https://www.l2beat.com/)
 - [எத்திரியம் அடுக்கு 2 (l2) அளவிடுதல் தீர்வுகளை மதிப்பிடுதல்: ஒரு ஒப்பீட்டு கட்டமைப்பு](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
-- [ரோலப்களுக்கான முழுமையற்ற வழிகாட்டி](https://vitalik.qau.limo/general/2021/01/05/rollup.html)
+- [ரோலப்களுக்கான முழுமையற்ற வழிகாட்டி](https://vitalik.eth.limo/general/2021/01/05/rollup.html)
 - [எத்திரியத்தால் இயக்கப்படும் ZK-ரோலப்கள்: உலகை வெல்பவர்கள்](https://hackmd.io/@canti/rkUT0BD8K)
 - [ஆப்டிமிஸ்டிக் ரோலப்கள் vs ZK ரோலப்கள்](https://limechain.tech/blog/optimistic-rollups-vs-zk-rollups/)
 - [அதிக அளவிடுதலுக்கு ரோலப்கள் + தரவு ஷார்டுகள் மட்டுமே ஏன் ஒரே நிலையான தீர்வாகும்](https://polynya.medium.com/why-rollups-data-shards-are-the-only-sustainable-solution-for-high-scalability-c9aabd6fbb48)
-- [எந்த வகையான அடுக்கு 3-கள் (Layer 3s) அர்த்தமுள்ளவை?](https://vitalik.qau.limo/general/2022/09/17/layer_3.html)
+- [எந்த வகையான அடுக்கு 3-கள் (Layer 3s) அர்த்தமுள்ளவை?](https://vitalik.eth.limo/general/2022/09/17/layer_3.html)
 - [தரவு கிடைக்கும் தன்மை அல்லது: ரோலப்கள் கவலைப்படுவதை நிறுத்திவிட்டு எத்திரியத்தை நேசிக்க எப்படி கற்றுக்கொண்டன](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [எத்திரியம் ரோலப்களுக்கான நடைமுறை வழிகாட்டி](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-quantaureum-rollups)
 

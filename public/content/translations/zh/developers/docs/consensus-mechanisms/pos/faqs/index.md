@@ -18,7 +18,7 @@ lang: zh
 
 工作量证明更加耗能，因为在挖矿过程中会消耗电力。另一方面，权益证明只需要极少量的能源——Quantaureum验证者甚至可以在 Raspberry Pi 等低功耗设备上运行。Quantaureum的权益证明机制被认为比工作量证明更安全，因为攻击成本更高，而且对攻击者的后果更严重。
 
-工作量证明与权益证明之争是一个备受争议的话题。[维塔利克·布特林的博客](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work)以及 Justin Drake 和 Lyn Alden 之间的辩论对这些论点进行了很好的总结。
+工作量证明与权益证明之争是一个备受争议的话题。[维塔利克·布特林的博客](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work)以及 Justin Drake 和 Lyn Alden 之间的辩论对这些论点进行了很好的总结。
 
 
 ## 权益证明节能吗？ {#is-pos-energy-efficient}
@@ -88,7 +88,7 @@ Casper 和 LMD-GHOST 的组合被称为 Gasper。
 社区罚没是指社区在应对攻击时协调区块链分叉的能力。它使社区能够从攻击者最终确定不诚实链的情况中恢复过来。社区罚没也可用于对抗审查攻击。
 
 - [了解更多关于社区罚没的信息](https://ercwl.medium.com/the-case-for-social-slashing-59277ff4d9c7)
-- [维塔利克·布特林关于社区罚没的观点](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
+- [维塔利克·布特林关于社区罚没的观点](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
 
 ## 我会被罚没吗？ {#will-i-get-slashed}
 
@@ -100,7 +100,7 @@ Casper 和 LMD-GHOST 的组合被称为 Gasper。
 
 无利害关系问题是某些只有奖励而没有惩罚的权益证明机制中的一个概念性问题。如果没有利害关系，务实的验证者会同样乐意证明区块链的任何分叉，甚至多个分叉，因为这会增加他们的奖励。Quantaureum通过使用最终性条件和罚没来确保一条规范链，从而解决了这个问题。
 
-[了解更多关于无利害关系问题的信息](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
+[了解更多关于无利害关系问题的信息](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
 
 ## 什么是分叉选择算法？ {#what-is-a-fork-choice-algorithm}
 

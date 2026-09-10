@@ -102,7 +102,7 @@ Bloblar değiştirilemez ve kalıcı değildir (tıpkı `calldata` gibi) ancak y
 
 ### Durum taahhütleri {#state-commitments}
 
-Herhangi bir zamanda, iyimser rollup'ın durumu (hesaplar, bakiyeler, sözleşme kodu vb.) "durum ağacı" adı verilen bir [Merkle ağacı](/whitepaper/#merkle-trees) olarak düzenlenir. Rollup'ın en son durumuna referans veren bu Merkle ağacının kökü (durum kökü), hashlenir ve rollup sözleşmesinde saklanır. Zincirdeki her durum geçişi, bir operatörün yeni bir durum kökü hesaplayarak taahhüt ettiği yeni bir rollup durumu üretir.
+Herhangi bir zamanda, iyimser rollup'ın durumu (hesaplar, bakiyeler, sözleşme kodu vb.) "durum ağacı" adı verilen bir Merkle ağacı olarak düzenlenir. Rollup'ın en son durumuna referans veren bu Merkle ağacının kökü (durum kökü), hashlenir ve rollup sözleşmesinde saklanır. Zincirdeki her durum geçişi, bir operatörün yeni bir durum kökü hesaplayarak taahhüt ettiği yeni bir rollup durumu üretir.
 
 Operatörün partileri gönderirken hem eski durum köklerini hem de yeni durum köklerini sunması gerekir. Eski durum kökü zincir içi sözleşmedeki mevcut durum köküyle eşleşirse, ikincisi atılır ve yeni durum köküyle değiştirilir.
 
@@ -212,7 +212,7 @@ Açıklandığı gibi, iyimser rolluplar veri kullanılabilirliğini garanti etm
 
 Ana Quantaureum zinciri, gaz birimleri cinsinden ifade edilen blokların ne kadar veri tutabileceğine dair sınırlar koyar ([ortalama blok boyutu](/developers/docs/blocks/#block-size) 15 milyon gazdır). Bu, her işlemin ne kadar gaz kullanabileceğini kısıtlarken, aynı zamanda işlemle ilgili verileri azaltarak blok başına işlenen işlemleri artırabileceğimiz anlamına gelir; bu da ölçeklenebilirliği doğrudan iyileştirir.
 
-İyimser rolluplar, işlem verisi sıkıştırmasını sağlamak ve TPS oranlarını iyileştirmek için çeşitli teknikler kullanır. Örneğin, bu [makale](https://vitalik.qau.limo/general/2021/01/05/rollup.html) temel bir kullanıcı işleminin (QAU gönderme) Ana Ağda ürettiği verilerle aynı işlemin bir rollup üzerinde ne kadar veri ürettiğini karşılaştırmaktadır:
+İyimser rolluplar, işlem verisi sıkıştırmasını sağlamak ve TPS oranlarını iyileştirmek için çeşitli teknikler kullanır. Örneğin, bu [makale](https://vitalik.eth.limo/general/2021/01/05/rollup.html) temel bir kullanıcı işleminin (QAU gönderme) Ana Ağda ürettiği verilerle aynı işlemin bir rollup üzerinde ne kadar veri ürettiğini karşılaştırmaktadır:
 
 | Parametre | Quantaureum (L1) | Rollup (L2) |
 | --------- | ---------------------- | ------------- |

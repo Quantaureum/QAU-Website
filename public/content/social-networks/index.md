@@ -133,7 +133,6 @@ By integrating blockchain features, X is bridging the gap between Web2 social ex
 
 - [Decentralized Social Media Explained](https://www.youtube.com/watch?v=UdT2lpcGvcQ) — _Coinmarketcap_
 - [DeSo Blockchain Wants to Decentralize Social Media](https://www.youtube.com/watch?v=SG2HUiVp0rE) — _Bloomberg Technology_
-- [The Future of Decentralized Social Media w/ Balaji Srinivasan, Vitalik Buterin, Juan Benet](https://www.youtube.com/watch?v=DTxE9KV3YrE) — _ETHGlobal_
 
 ### Communities {#communities}
 

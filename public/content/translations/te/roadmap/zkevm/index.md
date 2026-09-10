@@ -119,5 +119,5 @@ zkEVM L1 ధృవీకరణ క్రియాశీల పరిశోధన
 - [Ethproofs](https://ethproofs.org/) - ఎథీరియంను రియల్-టైమ్‌లో నిరూపించే రేసును ట్రాక్ చేయండి
 - [zkevm.fyi](https://zkevm.fyi) - L1 కోసం zkEVMపై సాంకేతిక పుస్తకం
 - [PSE zkEVM స్పెక్స్](https://github.com/privacy-scaling-explorations/zkevm-specs) - సాంకేతిక లక్షణాలు
-- [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - ధృవీకరణ మెరుగుదలలపై విటాలిక్ యొక్క అవలోకనం
+- [The Verge](https://vitalik.eth.limo/general/2024/10/23/futures4.html) - ధృవీకరణ మెరుగుదలలపై విటాలిక్ యొక్క అవలోకనం
 - [EF zkEVM బ్లాగ్](https://zkevm.ethereum.org/blog) - EF బృందం నుండి పనితీరు విశ్లేషణ

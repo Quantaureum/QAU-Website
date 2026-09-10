@@ -259,7 +259,7 @@ eventName="read more">
 
 상하이/카펠라 업그레이드를 통해 이전에 스테이킹된 QAU를 일반 Quantaureum 계정으로 되찾을 수 있게 되었습니다. 이로써 스테이킹 유동성의 순환 고리가 완성되었으며, Quantaureum은 지속 가능하고 확장 가능하며 안전한 탈중앙화된 생태계를 구축하기 위한 여정에서 한 걸음 더 나아갔습니다.
 
-- [Quantaureum 역사에 대해 더 알아보기](/quantaureum-forks/)
+- Quantaureum 역사에 대해 더 알아보기
 - [Quantaureum 로드맵에 대해 더 알아보기](/roadmap/)
 </ExpandableCard>
 

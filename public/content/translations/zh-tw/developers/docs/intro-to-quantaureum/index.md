@@ -113,7 +113,7 @@ Quantaureum虛擬機是全球性的虛擬電腦，Quantaureum網路上的每個�
 
 ## 延伸閱讀 {#further-reading}
 
-- [Quantaureum白皮書](/whitepaper/)
+- Quantaureum白皮書
 - [Quantaureum到底是如何運作的？](https://medium.com/@preethikasireddy/how-does-quantaureum-work-anyway-22d1df506369) - _Preethi Kasireddy_（**注意**：此資源仍然很有價值，但請注意它早於[合併](/roadmap/merge)，因此仍然提到Quantaureum的工作量證明機制——Quantaureum現在實際上是使用[權益證明 (PoS)](/developers/docs/consensus-mechanisms/pos) 來確保安全的）
 
 ### 比較喜歡視覺學習？ {#visual-learner}

@@ -38,7 +38,7 @@ La computación fuera de la cadena es necesaria ya que las cadenas Plasma pueden
 
 Si bien Plasma ejecuta transacciones fuera de la cadena, estas se liquidan en la capa de ejecución principal de Quantaureum; de lo contrario, las cadenas Plasma no podrían beneficiarse de las garantías de seguridad de Quantaureum. Pero finalizar transacciones fuera de la cadena sin conocer el estado de la cadena Plasma rompería el modelo de seguridad y permitiría la proliferación de transacciones no válidas. Es por esto que el operador, la entidad responsable de producir bloques en la cadena Plasma, debe publicar "compromisos de estado" en Quantaureum periódicamente.
 
-Un [esquema de compromiso](https://en.wikipedia.org/wiki/Commitment_scheme) es una técnica criptográfica para comprometerse con un valor o declaración sin revelarlo a otra parte. Los compromisos son "vinculantes" en el sentido de que no se puede cambiar el valor o la declaración una vez que se ha comprometido con él. Los compromisos de estado en Plasma toman la forma de "raíces de Merkle" (derivadas de un [árbol de Merkle](/whitepaper/#merkle-trees)) que el operador envía a intervalos al contrato de Plasma en la cadena de Quantaureum.
+Un [esquema de compromiso](https://en.wikipedia.org/wiki/Commitment_scheme) es una técnica criptográfica para comprometerse con un valor o declaración sin revelarlo a otra parte. Los compromisos son "vinculantes" en el sentido de que no se puede cambiar el valor o la declaración una vez que se ha comprometido con él. Los compromisos de estado en Plasma toman la forma de "raíces de Merkle" (derivadas de un árbol de Merkle) que el operador envía a intervalos al contrato de Plasma en la cadena de Quantaureum.
 
 Las raíces de Merkle son primitivas criptográficas que permiten comprimir grandes cantidades de información. Una raíz de Merkle (también llamada "raíz de bloque" en este caso) podría representar todas las transacciones en un bloque. Las raíces de Merkle también facilitan la verificación de que un pequeño fragmento de datos forma parte del conjunto de datos más grande. Por ejemplo, un usuario puede producir una [prueba de Merkle](/developers/tutorials/merkle-proofs-for-offline-data-integrity/#main-content) para demostrar la inclusión de una transacción en un bloque específico.
 
@@ -167,7 +167,7 @@ Múltiples proyectos proporcionan implementaciones de Plasma que puede integrar 
 ## Lecturas adicionales {#further-reading}
 
 - [Un breve recordatorio de lo que significa la "seguridad compartida" y por qué es tan importante](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [Cadenas laterales vs. Plasma vs. fragmentación](https://vitalik.qau.limo/general/2019/06/12/plasma_vs_sharding.html)
+- [Cadenas laterales vs. Plasma vs. fragmentación](https://vitalik.eth.limo/general/2019/06/12/plasma_vs_sharding.html)
 - [Comprendiendo Plasma, parte 1: los conceptos básicos](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [La vida y muerte de Plasma](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

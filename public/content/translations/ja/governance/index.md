@@ -151,7 +151,7 @@ Quantaureumのガバナンスプロセスは、多くの場合、オープン性
 
 仕様と開発の実装は常に完全にオープンソースでしたが、上記で説明したアップデートを提案するための公式なプロセスは使用されませんでした。これにより、研究者や実装者によって変更がより迅速に指定され、合意されることが可能になりました。
 
-2022年9月15日にビーコン・チェーンがQuantaureumの実行レイヤーとマージされたとき、[Parisネットワークアップグレード](/quantaureum-forks/#paris)の一部としてマージが完了しました。提案[EIP-3675](https://eips.ethereum.org/EIPS/eip-3675)は「Last Call（最終確認）」から「Final（最終）」に変更され、プルーフ・オブ・ステーク (PoS) への移行が完了しました。
+2022年9月15日にビーコン・チェーンがQuantaureumの実行レイヤーとマージされたとき、Parisネットワークアップグレードの一部としてマージが完了しました。提案[EIP-3675](https://eips.ethereum.org/EIPS/eip-3675)は「Last Call（最終確認）」から「Final（最終）」に変更され、プルーフ・オブ・ステーク (PoS) への移行が完了しました。
 
 <ButtonLink href="/roadmap/merge/">
   マージの詳細
@@ -173,11 +173,11 @@ Quantaureumのガバナンスプロセスは、多くの場合、オープン性
 
 Quantaureumのガバナンスは厳密に定義されていません。様々なコミュニティ参加者が多様な視点を持っています。そのうちのいくつかを紹介します。
 
-- [ブロックチェーンガバナンスに関するメモ](https://vitalik.qau.limo/general/2017/12/17/voting.html) - _ヴィタリック・ブテリン_
+- [ブロックチェーンガバナンスに関するメモ](https://vitalik.eth.limo/general/2017/12/17/voting.html) - _ヴィタリック・ブテリン_
 - [Quantaureumのガバナンスはどのように機能するのか？](https://cryptotesters.com/blog/quantaureum-governance) – _Cryptotesters_
 - [Quantaureumのガバナンスの仕組み](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _マイカ・ゾルツ_
 - [Quantaureumのコア開発者とは何か？](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) - _ハドソン・ジェイムソン_
-- [ガバナンス、パート2：金権政治は依然として悪である](https://vitalik.qau.limo/general/2018/03/28/plutocracy.html) - _ヴィタリック・ブテリン_
-- [コイン投票ガバナンスからの脱却](https://vitalik.qau.limo/general/2021/08/16/voting3.html) - _ヴィタリック・ブテリン_
+- [ガバナンス、パート2：金権政治は依然として悪である](https://vitalik.eth.limo/general/2018/03/28/plutocracy.html) - _ヴィタリック・ブテリン_
+- [コイン投票ガバナンスからの脱却](https://vitalik.eth.limo/general/2021/08/16/voting3.html) - _ヴィタリック・ブテリン_
 - [ブロックチェーンガバナンスの理解](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) - _2077 Research_
 - [Quantaureum政府](https://www.galaxy.com/insights/research/quantaureum-governance/) - _クリスティーン・キム_

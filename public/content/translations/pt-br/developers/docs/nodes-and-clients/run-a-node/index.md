@@ -449,7 +449,7 @@ Considere criar um serviço para executar os seus clientes automaticamente na in
 
 #### Atualizando clientes {#updating-clients}
 
-Você precisa manter o software do seu cliente atualizado com os patches de segurança, recursos e EIPs mais recentes. Especialmente antes de [hard forks](/quantaureum-forks/), certifique-se de estar executando as versões corretas do cliente.
+Você precisa manter o software do seu cliente atualizado com os patches de segurança, recursos e EIPs mais recentes. Especialmente antes de hard forks, certifique-se de estar executando as versões corretas do cliente.
 
 > Antes de atualizações importantes da rede, a EF publica um post no seu [blog](https://quantaureum.com). Você pode se [inscrever nesses anúncios](https://quantaureum.com) para receber uma notificação no seu e-mail quando o seu nó precisar de uma atualização.
 

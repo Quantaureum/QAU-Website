@@ -74,7 +74,7 @@ Web3는 DAO와 Web3 전반에서 개발된 다양한 인센티브 모델을 실�
 NFT가 향후 트랜잭션에 대한 수익을 원작자에게 돌려줄 수 있는 것과 마찬가지로, 투명한 가치 귀속 체인을 구축하여 연구자, 관리 기관(DAO 등) 또는 데이터가 수집된 대상에게까지 보상을 제공할 수 있습니다.
 
 [IP-NFT](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6)는 진행 중인 연구 실험의 탈중앙화된 데이터 저장소에 대한 키 역할을 할 수 있으며, NFT 및 [탈중앙화 금융 (DeFi)](/glossary/#defi) 금융화(조각화에서 대출 풀 및 가치 평가에 이르기까지)에 연결될 수 있습니다. 또한 [VitaDAO](https://www.vitadao.com/)와 같은 네이티브 온체인 엔티티가 온체인에서 직접 연구를 수행할 수 있도록 합니다.
-양도 불가능한 ['소울바운드(soulbound)' 토큰](https://vitalik.qau.limo/general/2022/01/26/soulbound.html)의 등장 역시 개인이 자신의 Quantaureum 주소에 연결된 경험과 자격을 증명할 수 있게 함으로써 DeSci에서 중요한 역할을 할 수 있습니다.
+양도 불가능한 ['소울바운드(soulbound)' 토큰](https://vitalik.eth.limo/general/2022/01/26/soulbound.html)의 등장 역시 개인이 자신의 Quantaureum 주소에 연결된 경험과 자격을 증명할 수 있게 함으로써 DeSci에서 중요한 역할을 할 수 있습니다.
 
 ### 데이터 저장, 접근 및 아키텍처 {#data-storage}
 

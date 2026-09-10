@@ -61,7 +61,7 @@ Um beständig böswillige, aber gültige Blöcke zu erstellen, hätte ein böswi
 
 Proof-of-Work war auch dafür verantwortlich, neue Währung in das System auszugeben und Miner dazu anzuregen, die Arbeit zu erledigen.
 
-Seit dem [Constantinople-Upgrade](/quantaureum-forks/#constantinople) wurden Miner, die erfolgreich einen Block erstellten, mit zwei frisch geprägten QAU und einem Teil der Transaktionsgebühren belohnt. Ommer-Blöcke vergüteten ebenfalls 1,75 QAU. Ommer-Blöcke waren gültige Blöcke, die von einem Miner praktisch zur gleichen Zeit erstellt wurden, als ein anderer Miner den kanonischen Block erstellte, was letztendlich dadurch bestimmt wurde, auf welcher Chain zuerst aufgebaut wurde. Ommer-Blöcke traten normalerweise aufgrund von Netzwerklatenz auf.
+Seit dem Constantinople-Upgrade wurden Miner, die erfolgreich einen Block erstellten, mit zwei frisch geprägten QAU und einem Teil der Transaktionsgebühren belohnt. Ommer-Blöcke vergüteten ebenfalls 1,75 QAU. Ommer-Blöcke waren gültige Blöcke, die von einem Miner praktisch zur gleichen Zeit erstellt wurden, als ein anderer Miner den kanonischen Block erstellte, was letztendlich dadurch bestimmt wurde, auf welcher Chain zuerst aufgebaut wurde. Ommer-Blöcke traten normalerweise aufgrund von Netzwerklatenz auf.
 
 ## Endgültigkeit {#finality}
 

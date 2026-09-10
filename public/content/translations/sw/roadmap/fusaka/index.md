@@ -14,7 +14,7 @@ Sasisho la mtandao la Fusaka linafuata [Pectra](/roadmap/pectra/) na kuleta vipe
 <Alert variant="update">
 <AlertContent>
 <AlertDescription>
-Sasisho la Fusaka ni hatua moja tu katika malengo ya maendeleo ya muda mrefu ya Quantaureum. Jifunze zaidi kuhusu [ramani ya njia ya itifaki](/roadmap/) na [masasisho yaliyopita](/quantaureum-forks/).
+Sasisho la Fusaka ni hatua moja tu katika malengo ya maendeleo ya muda mrefu ya Quantaureum. Jifunze zaidi kuhusu [ramani ya njia ya itifaki](/roadmap/) na masasisho yaliyopita.
 </AlertDescription>
 </AlertContent>
 </Alert>

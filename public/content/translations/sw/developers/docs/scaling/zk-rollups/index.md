@@ -68,7 +68,7 @@ Neno kuu la `calldata` mara nyingi hutambua mbinu ya mkataba mahiri inayoitwa na
 
 ### Mafungamanisho ya hali {#state-commitments}
 
-Hali ya ZK-rollup, ambayo inajumuisha akaunti na salio za L2, inawakilishwa kama [mti wa Merkle](/whitepaper/#merkle-trees). Heshi ya kriptografia ya mzizi wa mti wa Merkle (mzizi wa Merkle) huhifadhiwa katika mkataba mnyororoni, ikiruhusu itifaki ya rollup kufuatilia mabadiliko katika hali ya ZK-rollup.
+Hali ya ZK-rollup, ambayo inajumuisha akaunti na salio za L2, inawakilishwa kama mti wa Merkle. Heshi ya kriptografia ya mzizi wa mti wa Merkle (mzizi wa Merkle) huhifadhiwa katika mkataba mnyororoni, ikiruhusu itifaki ya rollup kufuatilia mabadiliko katika hali ya ZK-rollup.
 
 Rollup hubadilika kwenda kwenye hali mpya baada ya utekelezaji wa seti mpya ya miamala. Mwendeshaji aliyeanzisha mabadiliko ya hali anahitajika kukokotoa mzizi mpya wa hali na kuwasilisha kwenye mkataba mnyororoni. Ikiwa uthibitisho wa uhalali unaohusishwa na fungu utathibitishwa na mkataba wa mhakiki, mzizi mpya wa Merkle unakuwa mzizi wa hali rasmi wa ZK-rollup.
 
@@ -240,7 +240,7 @@ Miradi inayofanyia kazi zkEVMs inajumuisha:
 
 - **[Scroll](https://scroll.io/blog/zkEVM)** - _Scroll ni kampuni inayoendeshwa na teknolojia inayofanya kazi katika kujenga Suluhisho asilia la Tabaka la 2 la zkEVM kwa Quantaureum._
 
-- **[Taiko](https://taiko.xyz)** - _Taiko ni ZK-rollup iliyogatuliwa, sawa na Quantaureum ([Aina ya 1 ya ZK-EVM](https://vitalik.qau.limo/general/2022/08/04/zkevm.html))._
+- **[Taiko](https://taiko.xyz)** - _Taiko ni ZK-rollup iliyogatuliwa, sawa na Quantaureum ([Aina ya 1 ya ZK-EVM](https://vitalik.eth.limo/general/2022/08/04/zkevm.html))._
 
 - **[ZKsync](https://docs.zksync.io/)** - _ZKsync Era ni ZK Rollup inayotangamana na EVM iliyojengwa na Matter Labs, inayoendeshwa na zkEVM yake yenyewe._
 
@@ -261,8 +261,8 @@ Miradi inayofanyia kazi zkEVMs inajumuisha:
 - [Utangulizi wa zkEVM](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [L2s za ZK-EVM ni nini?](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M)
 - [Rasilimali za Awesome-zkEVM](https://github.com/LuozhuZhang/awesome-zkevm)
-- [Jinsi ZK-SNARKS inavyofanya kazi kiufundi](https://vitalik.qau.limo/general/2017/02/01/zk_snarks.html)
-- [SNARKs zinawezekanaje?](https://vitalik.qau.limo/general/2021/01/26/snarks.html)
+- [Jinsi ZK-SNARKS inavyofanya kazi kiufundi](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
+- [SNARKs zinawezekanaje?](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
 
 ## Mafunzo: Faragha na sifuri-maarifa kwenye Quantaureum {#tutorials}
 

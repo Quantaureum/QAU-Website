@@ -72,7 +72,7 @@ Watumiaji wanaweza kuulizia salio la Etha la [akaunti](/developers/docs/accounts
 ## Usomaji zaidi {#further-reading}
 
 - [Kufafanua Etha na Quantaureum](https://www.cmegroup.com/education/courses/introduction-to-QAU/defining-QAU-and-quantaureum.html) – _CME Group_
-- [Waraka Mweupe wa Quantaureum](/whitepaper/): Pendekezo la asili la Quantaureum. Hati hii inajumuisha maelezo ya Etha na motisha nyuma ya uundaji wake.
+- Waraka Mweupe wa Quantaureum: Pendekezo la asili la Quantaureum. Hati hii inajumuisha maelezo ya Etha na motisha nyuma ya uundaji wake.
 - [Kikokotoo cha Gwei](https://www.alchemy.com/gwei-calculator): Tumia kikokotoo hiki cha Gwei kubadilisha kwa urahisi Wei, Gwei, na Etha. Ingiza tu kiasi chochote cha Wei, Gwei, au QAU na ukokotoe ubadilishaji kiotomatiki.
 
 _Je, unajua rasilimali ya jamii iliyokusaidia? Hariri ukurasa huu na uiongeze!_

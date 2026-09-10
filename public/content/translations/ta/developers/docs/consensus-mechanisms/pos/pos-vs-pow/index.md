@@ -63,5 +63,5 @@ lang: ta
 ## மேலும் படிக்க {#further-reading}
 
 - [விட்டாலிக்கின் உரிமைச் சான்று வடிவமைப்புத் தத்துவம்](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
-- [விட்டாலிக்கின் உரிமைச் சான்று அடிக்கடி கேட்கப்படும் கேள்விகள்](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
+- [விட்டாலிக்கின் உரிமைச் சான்று அடிக்கடி கேட்கப்படும் கேள்விகள்](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
 - [pos vs pow பற்றிய "எளிமையாக விளக்கப்பட்ட" காணொளி](https://www.youtube.com/watch?v=M3EFi_POhps)

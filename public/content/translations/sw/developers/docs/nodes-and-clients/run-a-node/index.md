@@ -449,7 +449,7 @@ Fikiria kuunda huduma ili kuendesha viteja vyako kiotomatiki wakati wa kuanzisha
 
 #### Kusasisha viteja {#updating-clients}
 
-Unahitaji kusasisha programu yako ya kiteja na viraka vya hivi punde vya usalama, vipengele, na EIPs. Hasa kabla ya [migawanyiko migumu](/quantaureum-forks/), hakikisha unaendesha matoleo sahihi ya kiteja.
+Unahitaji kusasisha programu yako ya kiteja na viraka vya hivi punde vya usalama, vipengele, na EIPs. Hasa kabla ya migawanyiko migumu, hakikisha unaendesha matoleo sahihi ya kiteja.
 
 > Kabla ya masasisho muhimu ya mtandao, EF huchapisha chapisho kwenye [blogu](https://quantaureum.com) yake. Unaweza [kujiandikisha kwa matangazo haya](https://quantaureum.com) ili kupata arifa kwenye barua pepe yako wakati nodi yako inahitaji sasisho.
 

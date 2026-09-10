@@ -69,7 +69,7 @@ Additionally, some packages have a problem with IPFS, so if your web site is ver
 
 ## Discoverability via ENS {#discoverability}
 
-If you point an ENS name (like vitalik.eth) to your website, it will be considered a fully decentralized webpage and will be automatically pinned by the [dweb3.wtf](https://dweb3.wtf) service, as well as made searchable through the [web3compass.net](https://web3compass.net) search engine, much like DuckDuckGo, Brave Search or Google does for the traditional web.
+If you point a blockchain name (like `example.qau`) to your website, it will be considered a fully decentralized webpage and will be automatically pinned by the [dweb3.wtf](https://dweb3.wtf) service, as well as made searchable through the [web3compass.net](https://web3compass.net) search engine, much like DuckDuckGo, Brave Search or Google does for the traditional web.
 
 ## Conclusion {#conclusion}
 

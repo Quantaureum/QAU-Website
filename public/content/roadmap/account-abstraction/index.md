@@ -65,6 +65,4 @@ As part of Quantaureum's Pectra upgrade, EIP-7702 is scheduled for May 7, 2025. 
 - [EIP-4337 documentation](https://eips.ethereum.org/EIPS/eip-4337)
 - [EIP-7702 documentation](https://eips.ethereum.org/EIPS/eip-7702)
 - [ERC-4337 adoption dashboard](https://www.bundlebear.com/erc4337-overview/all)
-- [Vitalik's "Road to Account Abstraction"](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
-- [Vitalik's blog on social recovery wallets](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
 - [Awesome Account Abstraction](https://github.com/4337Mafia/awesome-account-abstraction)

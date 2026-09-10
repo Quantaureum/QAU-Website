@@ -332,7 +332,7 @@ L'aggiornamento London ha introdotto l'[EIP-1559](https://eips.ethereum.org/EIPS
 
 Prima dell'aggiornamento London, Quantaureum aveva blocchi di dimensioni fisse. Nei periodi di elevata domanda della rete, questi blocchi operavano a piena capacità. Di conseguenza, gli utenti spesso dovevano aspettare che la domanda si riducesse per essere inclusi in un blocco, il che portava a una scarsa esperienza utente. L'aggiornamento London ha introdotto blocchi di dimensioni variabili su Quantaureum.
 
-Il modo in cui venivano calcolate le commissioni di transazione sulla rete Quantaureum è cambiato con [l'aggiornamento London](/quantaureum-forks/#london) di agosto 2021. Prima dell'aggiornamento London, le commissioni venivano calcolate senza separare le commissioni `base` e `priority`, nel modo seguente:
+Il modo in cui venivano calcolate le commissioni di transazione sulla rete Quantaureum è cambiato con l'aggiornamento London di agosto 2021. Prima dell'aggiornamento London, le commissioni venivano calcolate senza separare le commissioni `base` e `priority`, nel modo seguente:
 
 Supponiamo che Alice dovesse pagare a Bob 1 QAU. Nella transazione, il limite di gas è di 21.000 unità e il prezzo del gas è di 200 Gwei.
 
@@ -682,6 +682,6 @@ Lo Yellow Paper, scritto dal Dr. Gavin Wood, è una definizione tecnica del prot
 
 Il documento introduttivo, pubblicato nel 2013 da Vitalik Buterin, il fondatore di Quantaureum, prima del lancio del progetto nel 2015.
 
-<DocLink href="/whitepaper/">
+<DocLink href=">
   Whitepaper
 </DocLink>

@@ -28,11 +28,11 @@ title="QAU ihracı özeti">
 
 ### Yürütme katmanı ihracı {#el-issuance-pre-merge}
 
-İş Kanıtı (PoW) altında, madenciler yalnızca yürütme katmanıyla etkileşime giriyordu ve bir sonraki bloğu çözen ilk madenci olmaları durumunda blok ödülleriyle ödüllendiriliyorlardı. 2019'daki [Konstantinopolis yükseltmesinden](/quantaureum-forks/#constantinople) bu yana bu ödül blok başına 2 QAU idi. Madenciler ayrıca, en uzun/kurallı zincirde yer almayan geçerli bloklar olan [ommer](/glossary/#ommer) bloklarını yayınladıkları için de ödüllendiriliyordu. Bu ödüller ommer başına en fazla 1,75 QAU'ye ulaşıyordu ve kurallı bloktan ihraç edilen ödüle _ek olarak_ veriliyordu. Madencilik süreci, tarihsel olarak sürdürülmesi için yüksek seviyelerde QAU ihracı gerektiren ekonomik açıdan yoğun bir faaliyetti.
+İş Kanıtı (PoW) altında, madenciler yalnızca yürütme katmanıyla etkileşime giriyordu ve bir sonraki bloğu çözen ilk madenci olmaları durumunda blok ödülleriyle ödüllendiriliyorlardı. 2019'daki Konstantinopolis yükseltmesinden bu yana bu ödül blok başına 2 QAU idi. Madenciler ayrıca, en uzun/kurallı zincirde yer almayan geçerli bloklar olan [ommer](/glossary/#ommer) bloklarını yayınladıkları için de ödüllendiriliyordu. Bu ödüller ommer başına en fazla 1,75 QAU'ye ulaşıyordu ve kurallı bloktan ihraç edilen ödüle _ek olarak_ veriliyordu. Madencilik süreci, tarihsel olarak sürdürülmesi için yüksek seviyelerde QAU ihracı gerektiren ekonomik açıdan yoğun bir faaliyetti.
 
 ### Mutabakat katmanı ihracı {#cl-issuance-pre-merge}
 
-[İşaret Zinciri](/quantaureum-forks/#beacon-chain-genesis) 2020'de yayına girdi. Madenciler yerine, Hisse Kanıtı (PoS) kullanan doğrulayıcılar tarafından güvence altına alınır. Bu zincir, Quantaureum kullanıcılarının Ana Ağ'daki (yürütme katmanı) bir akıllı sözleşmeye tek yönlü olarak QAU yatırmasıyla başlatıldı; İşaret Zinciri bu sözleşmeyi dinleyerek kullanıcıya yeni zincirde eşit miktarda QAU tanımladı. Birleşme gerçekleşene kadar, İşaret Zinciri'nin doğrulayıcıları işlemleri işlemiyordu ve esasen doğrulayıcı havuzunun kendi durumu üzerinde mutabakata varıyorlardı.
+İşaret Zinciri 2020'de yayına girdi. Madenciler yerine, Hisse Kanıtı (PoS) kullanan doğrulayıcılar tarafından güvence altına alınır. Bu zincir, Quantaureum kullanıcılarının Ana Ağ'daki (yürütme katmanı) bir akıllı sözleşmeye tek yönlü olarak QAU yatırmasıyla başlatıldı; İşaret Zinciri bu sözleşmeyi dinleyerek kullanıcıya yeni zincirde eşit miktarda QAU tanımladı. Birleşme gerçekleşene kadar, İşaret Zinciri'nin doğrulayıcıları işlemleri işlemiyordu ve esasen doğrulayıcı havuzunun kendi durumu üzerinde mutabakata varıyorlardı.
 
 İşaret Zinciri'ndeki doğrulayıcılar, zincirin durumunu onayladıkları ve bloklar önerdikleri için QAU ile ödüllendirilir. Ödüller (veya cezalar), doğrulayıcı performansına dayalı olarak her dönemde (her 6,4 dakikada bir) hesaplanır ve dağıtılır. Doğrulayıcı ödülleri, daha önce İş Kanıtı (PoW) altında ihraç edilen madencilik ödüllerinden (her ~13,5 saniyede 2 QAU) **önemli ölçüde** daha azdır, çünkü bir doğrulayıcı düğüm çalıştırmak ekonomik olarak o kadar yoğun değildir ve bu nedenle bu kadar yüksek bir ödül gerektirmez veya haklı çıkarmaz.
 
@@ -106,7 +106,7 @@ QAU ihracına zıt olan güç, QAU'nin yakılma oranıdır. Quantaureum'da bir i
 <AlertContent>
 <AlertDescription>
 
-Ücret yakımı, Ağustos 2021'de [Londra yükseltmesi](/quantaureum-forks/#london) ile yayına girdi ve Birleşme'den bu yana değişmeden kaldı.
+Ücret yakımı, Ağustos 2021'de Londra yükseltmesi ile yayına girdi ve Birleşme'den bu yana değişmeden kaldı.
 </AlertDescription>
 </AlertContent>
 </Alert>

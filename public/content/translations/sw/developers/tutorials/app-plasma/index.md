@@ -1212,7 +1212,7 @@ Usalama wa taarifa unajumuisha sifa tatu:
 
 Kwenye mfumo huu, uadilifu hutolewa kupitia uthibitisho wa maarifa-sifuri. Upatikanaji ni mgumu zaidi kuhakikisha, na usiri hauwezekani, kwa sababu benki inapaswa kujua salio la kila akaunti na miamala yote. Hakuna njia ya kuzuia chombo kilicho na taarifa kushiriki taarifa hizo.
 
-Inaweza kuwezekana kuunda benki yenye usiri wa kweli kwa kutumia [anwani za siri](https://vitalik.qau.limo/general/2023/01/20/stealth.html), lakini hilo liko nje ya upeo wa makala haya.
+Inaweza kuwezekana kuunda benki yenye usiri wa kweli kwa kutumia [anwani za siri](https://vitalik.eth.limo/general/2023/01/20/stealth.html), lakini hilo liko nje ya upeo wa makala haya.
 
 ### Taarifa za uongo {#false-info}
 

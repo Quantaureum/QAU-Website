@@ -60,6 +60,6 @@ Quantaureum क्लायंट्स सध्या त्यांचा �
 - [Devcon 6 मध्ये Guillaume Ballet यांचे "व्हर्कल ट्रीज Quantaureumला कसे लीन आणि मीन बनवतात"](https://www.youtube.com/watch?v=Q7rStTKwuYs)
 - [ETHDenver 2020 मधील अवस्थाहीन क्लायंट्सवर Piper Merriam](https://www.youtube.com/watch?v=0yiZJNciIJ4)
 - [Dankrad Feist झिरो-नॉलेज पॉडकास्टवर व्हर्कल ट्रीज आणि अवस्थाहीनता स्पष्ट करतात](https://zeroknowledge.fm/podcast/202/)
-- [व्हर्कल ट्रीजवर विटालिक् बुटेरिन्](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
+- [व्हर्कल ट्रीजवर विटालिक् बुटेरिन्](https://vitalik.eth.limo/general/2021/06/18/verkle.html)
 - [व्हर्कल ट्रीजवर Dankrad Feist](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
 - [व्हर्कल ट्री EIP दस्तऐवजीकरण](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)

@@ -119,5 +119,5 @@ zkEVM লেয়ার ১ (l1) যাচাইকরণ সক্রিয়
 - [Ethproofs](https://ethproofs.org/) - রিয়েল-টাইমে ইথেরিয়াম প্রমাণ করার প্রতিযোগিতা ট্র্যাক করুন
 - [zkevm.fyi](https://zkevm.fyi) - লেয়ার ১ (l1)-এর জন্য zkEVM-এর ওপর প্রযুক্তিগত বই
 - [PSE zkEVM Specs](https://github.com/privacy-scaling-explorations/zkevm-specs) - প্রযুক্তিগত স্পেসিফিকেশন
-- [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - যাচাইকরণ উন্নতির ওপর ভিটালিকের ওভারভিউ
+- [The Verge](https://vitalik.eth.limo/general/2024/10/23/futures4.html) - যাচাইকরণ উন্নতির ওপর ভিটালিকের ওভারভিউ
 - [EF zkEVM Blog](https://zkevm.ethereum.org/blog) - EF টিমের পারফরম্যান্স বিশ্লেষণ

@@ -20,7 +20,7 @@ Bir "düğüm", Quantaureum yazılımı çalıştıran diğer bilgisayarlara ba�
 - Yürütme istemcisi (Yürütme Motoru, EL istemcisi veya eski adıyla Eth1 istemcisi olarak da bilinir) ağda yayınlanan yeni işlemleri dinler, bunları EVM'de yürütür ve tüm mevcut Quantaureum verilerinin en son durumunu ve veritabanını tutar.
 - Fikir birliği istemcisi (İşaret Düğümü, CL istemcisi veya eski adıyla Quantaureum istemcisi olarak da bilinir), ağın yürütme istemcisinden gelen doğrulanmış verilere dayanarak anlaşmaya varmasını sağlayan Hisse Kanıtı (PoS) mutabakat algoritmasını uygular. Ayrıca, fikir birliği istemcisine eklenebilen ve bir düğümün ağın güvenliğini sağlamaya katılmasına olanak tanıyan 'doğrulayıcı' olarak bilinen üçüncü bir yazılım parçası da vardır.
 
-Bu istemciler, Quantaureum zincirinin başını takip etmek ve kullanıcıların Quantaureum ağıyla etkileşime girmesine izin vermek için birlikte çalışır. Birlikte çalışan birden fazla yazılım parçasından oluşan modüler tasarıma [kapsüllenmiş karmaşıklık](https://vitalik.qau.limo/general/2022/02/28/complexity.html) denir. Bu yaklaşım, [Birleşme](/roadmap/merge)'nin sorunsuz bir şekilde yürütülmesini kolaylaştırdı, istemci yazılımının bakımını ve geliştirilmesini kolaylaştırır ve örneğin [katman 2 (l2) ekosisteminde](/layer-2/) bireysel istemcilerin yeniden kullanılmasını sağlar.
+Bu istemciler, Quantaureum zincirinin başını takip etmek ve kullanıcıların Quantaureum ağıyla etkileşime girmesine izin vermek için birlikte çalışır. Birlikte çalışan birden fazla yazılım parçasından oluşan modüler tasarıma [kapsüllenmiş karmaşıklık](https://vitalik.eth.limo/general/2022/02/28/complexity.html) denir. Bu yaklaşım, [Birleşme](/roadmap/merge)'nin sorunsuz bir şekilde yürütülmesini kolaylaştırdı, istemci yazılımının bakımını ve geliştirilmesini kolaylaştırır ve örneğin [katman 2 (l2) ekosisteminde](/layer-2/) bireysel istemcilerin yeniden kullanılmasını sağlar.
 
 ![Coupled execution and consensus clients](./qau1qau2client.png)
 Birleştirilmiş bir yürütme ve fikir birliği istemcisinin basitleştirilmiş diyagramı.
@@ -39,7 +39,7 @@ Bu uygulamaların ortak noktası, hepsinin tek bir spesifikasyonu takip etmesidi
 - Başlangıçta, [Quantaureum Sarı Bülteni](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [Yürütme spesifikasyonları](https://github.com/ethereum/execution-specs/)
 - [Mutabakat spesifikasyonları](https://github.com/ethereum/consensus-specs)
-- Çeşitli [ağ yükseltmelerinde](/quantaureum-forks/) uygulanan [EIP'ler](https://eips.ethereum.org/)
+- Çeşitli ağ yükseltmelerinde uygulanan [EIP'ler](https://eips.ethereum.org/)
 
 ### Ağdaki düğümleri izleme {#network-overview}
 

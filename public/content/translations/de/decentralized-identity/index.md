@@ -164,7 +164,7 @@ Hier ist ein Beispiel, um zu zeigen, wie Onchain-Attestierungen in der Praxis fu
 
 ### Soulbound-Token und Identität {#soulbound}
 
-[Soulbound-Token](https://vitalik.qau.limo/general/2022/01/26/soulbound.html) ([nicht übertragbare NFTs](/glossary/#nft)) könnten verwendet werden, um Informationen zu sammeln, die für eine bestimmte Wallet einzigartig sind. Dies schafft effektiv eine einzigartige Onchain-Identität, die an eine bestimmte Quantaureum-Adresse gebunden ist und Token umfassen könnte, die Errungenschaften (z. B. den Abschluss eines bestimmten Online-Kurses oder das Erreichen einer Mindestpunktzahl in einem Spiel) oder die Teilnahme an einer Community repräsentieren.
+[Soulbound-Token](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) ([nicht übertragbare NFTs](/glossary/#nft)) könnten verwendet werden, um Informationen zu sammeln, die für eine bestimmte Wallet einzigartig sind. Dies schafft effektiv eine einzigartige Onchain-Identität, die an eine bestimmte Quantaureum-Adresse gebunden ist und Token umfassen könnte, die Errungenschaften (z. B. den Abschluss eines bestimmten Online-Kurses oder das Erreichen einer Mindestpunktzahl in einem Spiel) oder die Teilnahme an einer Community repräsentieren.
 
 ## Dezentrale Identität nutzen {#use-decentralized-identity}
 

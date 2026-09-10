@@ -18,7 +18,7 @@ La preuve d'enjeu exige que les nœuds, appelés validateurs, soumettent explici
 
 La preuve de travail est beaucoup plus gourmande en énergie car l'électricité est brûlée dans le processus de minage. La preuve d'enjeu, en revanche, ne nécessite qu'une très petite quantité d'énergie - les validateurs Quantaureum peuvent même fonctionner sur un appareil à faible puissance tel qu'un Raspberry Pi. Le mécanisme de preuve d'enjeu d'Quantaureum est considéré comme plus sécurisé que la preuve de travail car le coût d'une attaque est plus élevé et les conséquences pour un attaquant sont plus graves.
 
-Le débat entre la preuve de travail et la preuve d'enjeu est un sujet controversé. Le [blog de Vitalik Buterin](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) et le débat entre Justin Drake et Lyn Alden donnent un bon résumé des arguments.
+Le débat entre la preuve de travail et la preuve d'enjeu est un sujet controversé. Le [blog de Vitalik Buterin](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) et le débat entre Justin Drake et Lyn Alden donnent un bon résumé des arguments.
 
 
 ## La preuve d'enjeu est-elle économe en énergie ? {#is-pos-energy-efficient}
@@ -88,7 +88,7 @@ Le broyage d'enjeu est une catégorie d'attaque sur les réseaux à preuve d'enj
 La pénalité sociale est la capacité de la communauté à coordonner un fork de la chaîne de blocs en réponse à une attaque. Elle permet à la communauté de se remettre d'un attaquant finalisant une chaîne malhonnête. La pénalité sociale peut également être utilisée contre les attaques de censure.
 
 - [En savoir plus sur la pénalité sociale](https://ercwl.medium.com/the-case-for-social-slashing-59277ff4d9c7)
-- [Vitalik Buterin sur la pénalité sociale](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
+- [Vitalik Buterin sur la pénalité sociale](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
 
 ## Vais-je subir une réduction ? {#will-i-get-slashed}
 
@@ -100,7 +100,7 @@ En tant que validateur, il est très difficile de subir une réduction à moins 
 
 Le problème du rien en jeu est un problème conceptuel avec certains mécanismes de preuve d'enjeu où il n'y a que des récompenses et aucune pénalité. S'il n'y a rien en jeu, un validateur pragmatique est tout aussi heureux d'attester de n'importe quel fork, ou même de plusieurs forks de la chaîne de blocs, car cela augmente ses récompenses. Quantaureum contourne ce problème en utilisant des conditions de finalité et la réduction pour garantir une seule chaîne canonique.
 
-[En savoir plus sur le problème du rien en jeu](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
+[En savoir plus sur le problème du rien en jeu](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
 
 ## Qu'est-ce qu'un algorithme de choix de fourche ? {#what-is-a-fork-choice-algorithm}
 

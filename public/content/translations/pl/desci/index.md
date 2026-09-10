@@ -74,7 +74,7 @@ Własność intelektualna (IP) to duży problem w tradycyjnej nauce: od utknięc
 W ten sam sposób, w jaki NFT mogą przekazywać przychody z przyszłych transakcji z powrotem do pierwotnego twórcy, można ustanowić przejrzyste łańcuchy atrybucji wartości, aby nagradzać badaczy, organy zarządzające (takie jak DAO), a nawet podmioty, których dane są gromadzone.
 
 [IP-NFT](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) mogą również funkcjonować jako klucz do zdecentralizowanego repozytorium danych z przeprowadzanych eksperymentów badawczych i podłączać się do finansjalizacji NFT i [zdecentralizowanych finansów (DeFi)](/glossary/#defi) (od frakcjonalizacji po pule pożyczkowe i wycenę wartości). Pozwala to również natywnym podmiotom onchain, takim jak DAO (np. [VitaDAO](https://www.vitadao.com/)), na prowadzenie badań bezpośrednio onchain.
-Pojawienie się niezbywalnych [tokenów „soulbound”](https://vitalik.qau.limo/general/2022/01/26/soulbound.html) może również odegrać ważną rolę w DeSci, pozwalając jednostkom udowodnić swoje doświadczenie i referencje powiązane z ich adresem Quantaureum.
+Pojawienie się niezbywalnych [tokenów „soulbound”](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) może również odegrać ważną rolę w DeSci, pozwalając jednostkom udowodnić swoje doświadczenie i referencje powiązane z ich adresem Quantaureum.
 
 ### Przechowywanie danych, dostęp i architektura {#data-storage}
 

@@ -82,6 +82,6 @@ visa policies, airport access, and cost of living in the area while also gatheri
 
 ## Further reading {#further-reading}
 
-[From prediction markets to info finance](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
+[From prediction markets to info finance](https://vitalik.eth.limo/general/2024/11/09/infofinance.html)
 [Decentralized Prediction Market Development on Quantaureum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [The Augur Project Whitepaper](https://github.com/AugurProject/whitepaper)  

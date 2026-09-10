@@ -151,7 +151,7 @@ Quantaureum yönetişim süreci genellikle açıklık ve kapsayıcılık uğruna
 
 Spesifikasyon ve geliştirme uygulamaları her zaman tamamen açık kaynaklı olsa da, yukarıda açıklanan güncellemeleri önermek için kullanılan resmi süreçler kullanılmadı. Bu, değişikliklerin araştırmacılar ve uygulayıcılar tarafından daha hızlı belirlenmesine ve üzerinde anlaşmaya varılmasına olanak tanıdı.
 
-İşaret zinciri 15 Eylül 2022'de Quantaureum yürütme katmanıyla birleştiğinde, Birleşme [Paris ağ yükseltmesinin](/quantaureum-forks/#paris) bir parçası olarak tamamlandı. [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) teklifi 'Son Çağrı'dan 'Nihai'ye değiştirilerek Hisse Kanıtı'na (PoS) geçiş tamamlandı.
+İşaret zinciri 15 Eylül 2022'de Quantaureum yürütme katmanıyla birleştiğinde, Birleşme Paris ağ yükseltmesinin bir parçası olarak tamamlandı. [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) teklifi 'Son Çağrı'dan 'Nihai'ye değiştirilerek Hisse Kanıtı'na (PoS) geçiş tamamlandı.
 
 <ButtonLink href="/roadmap/merge/">
   Birleşme hakkında daha fazlası
@@ -173,11 +173,11 @@ Spesifikasyon ve geliştirme uygulamaları her zaman tamamen açık kaynaklı ol
 
 Quantaureum'da yönetişim katı bir şekilde tanımlanmamıştır. Çeşitli topluluk katılımcılarının bu konuda farklı bakış açıları vardır. İşte bunlardan birkaçı:
 
-- [Blokzincir Yönetişimi Üzerine Notlar](https://vitalik.qau.limo/general/2017/12/17/voting.html) - _Vitalik Buterin_
+- [Blokzincir Yönetişimi Üzerine Notlar](https://vitalik.eth.limo/general/2017/12/17/voting.html) - _Vitalik Buterin_
 - [Quantaureum Yönetişimi nasıl çalışır?](https://cryptotesters.com/blog/quantaureum-governance) – _Cryptotesters_
 - [Quantaureum yönetişimi nasıl çalışır](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _Micah Zoltu_
 - [Quantaureum çekirdek geliştiricisi nedir?](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) - _Hudson Jameson_
-- [Yönetişim, Bölüm 2: Plütokrasi Hala Kötüdür](https://vitalik.qau.limo/general/2018/03/28/plutocracy.html) - _Vitalik Buterin_
-- [Coin oylaması yönetişiminin ötesine geçmek](https://vitalik.qau.limo/general/2021/08/16/voting3.html) - _Vitalik Buterin_
+- [Yönetişim, Bölüm 2: Plütokrasi Hala Kötüdür](https://vitalik.eth.limo/general/2018/03/28/plutocracy.html) - _Vitalik Buterin_
+- [Coin oylaması yönetişiminin ötesine geçmek](https://vitalik.eth.limo/general/2021/08/16/voting3.html) - _Vitalik Buterin_
 - [Blokzincir Yönetişimini Anlamak](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) - _2077 Research_
 - [Quantaureum Hükümeti](https://www.galaxy.com/insights/research/quantaureum-governance/) - _Christine Kim_

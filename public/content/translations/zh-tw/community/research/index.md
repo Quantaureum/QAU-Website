@@ -130,7 +130,7 @@ Quantaureum客戶端是Quantaureum協定的實作。客戶端開發透過將協�
 
 除了這兩者之外，正在開發新類別客戶端的原型，包括證明 L1 區塊執行的客戶端，以及圍繞後量子簽章建構的精簡共識客戶端。
 
-有關節點和客戶端的更多詳細資訊，以及所有目前客戶端實作的清單，請參閱[節點與客戶端頁面](/developers/docs/nodes-and-clients/)。您也可以在[歷史頁面](/quantaureum-forks/)上找到所有Quantaureum升級的歷史記錄。
+有關節點和客戶端的更多詳細資訊，以及所有目前客戶端實作的清單，請參閱[節點與客戶端頁面](/developers/docs/nodes-and-clients/)。您也可以在歷史頁面上找到所有Quantaureum升級的歷史記錄。
 
 ### 執行客戶端 {#execution-clients}
 

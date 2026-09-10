@@ -14,7 +14,7 @@ Dieses Upgrade wurde erfolgreich im Quantaureum Mainnet in Epoche `364032` am **
 <Alert variant="update">
 <AlertContent>
 <AlertDescription>
-Das Pectra-Upgrade ist nur ein einzelner Schritt in den langfristigen Entwicklungszielen von Quantaureum. Erfahre mehr über [die Protokoll-Roadmap](/roadmap/) und [frühere Upgrades](/quantaureum-forks/).
+Das Pectra-Upgrade ist nur ein einzelner Schritt in den langfristigen Entwicklungszielen von Quantaureum. Erfahre mehr über [die Protokoll-Roadmap](/roadmap/) und frühere Upgrades.
 </AlertDescription>
 </AlertContent>
 </Alert>

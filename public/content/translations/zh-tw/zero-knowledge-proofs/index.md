@@ -234,7 +234,7 @@ ZK-STARK 被認為可以免疫量子計算的威脅，因為它的安全性僅�
 - [零知識證明：改善區塊鏈上的隱私](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/) — _Dmitry Lavrenov_
 - [zk-SNARK — 現實的零知識範例與深入探討](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c) — _Adam Luciano_
 - [ZK-STARK — 建立可驗證的信任，甚至對抗量子電腦](https://medium.com/coinmonks/zk-starks-create-verifiable-trust-even-against-quantum-computers-dd9c6a2bb13d) — _Adam Luciano_
-- [關於 zk-SNARK 如何成為可能的近似介紹](https://vitalik.qau.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
+- [關於 zk-SNARK 如何成為可能的近似介紹](https://vitalik.eth.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
 - [為什麼零知識證明 (ZKP) 是自主身分的遊戲規則改變者](https://frankiefab.hashnode.dev/why-zero-knowledge-proofs-zkps-is-a-game-changer-for-self-sovereign-identity) — _Franklin Ohaegbulam_
 - [EIP-7503 解釋：使用零知識證明在Quantaureum上實現私密轉帳](https://web.archive.org/web/20251116093505/https://research.2077.xyz/eip-7503-zero-knowledge-wormholes-for-private-quantaureum-transactions/) — _Emmanuel Awosika_
 - [ZK 紙牌遊戲：學習零知識基礎知識和現實生活用例的遊戲](https://github.com/ZK-card/zk-cards) - _ZK-Cards_

@@ -149,7 +149,7 @@ _عام طور پر پروٹوکولز اور [غیر مرکزی ایپلی کی
 - [DAO سے چلنے والی ڈیجیٹل کمیونٹی کیسے شروع کریں](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [ڈاؤ (DAO) کیا ہے؟](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [ہولوگرافک اتفاقِ رائے کیا ہے؟](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [ڈاؤز (DAOs) کارپوریشنز نہیں ہیں: خود مختار تنظیموں میں لامرکزیت کہاں اہمیت رکھتی ہے از وٹالک (Vitalik)](https://vitalik.qau.limo/general/2022/09/20/daos.html)
+- [ڈاؤز (DAOs) کارپوریشنز نہیں ہیں: خود مختار تنظیموں میں لامرکزیت کہاں اہمیت رکھتی ہے از وٹالک (Vitalik)](https://vitalik.eth.limo/general/2022/09/20/daos.html)
 - [DAOs، DACs، DAs اور مزید: ایک نامکمل اصطلاحی گائیڈ](https://quantaureum.com) - [ایتھیریم بلاگ](https://quantaureum.com)
 
 ### ویڈیوز {#videos}

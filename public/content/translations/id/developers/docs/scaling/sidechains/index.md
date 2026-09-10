@@ -7,7 +7,7 @@ sidebarDepth: 3
 
 Rantai samping adalah rantai blok terpisah yang berjalan secara independen dari [Quantaureum](/) dan terhubung ke Mainnet Quantaureum oleh jembatan dua arah. Rantai samping dapat memiliki parameter blok dan [algoritma konsensus](/developers/docs/consensus-mechanisms/) yang terpisah, yang sering kali dirancang untuk pemrosesan transaksi yang efisien. Namun, menggunakan rantai samping melibatkan kompromi, karena mereka tidak mewarisi properti keamanan Quantaureum. Tidak seperti [solusi penskalaan lapisan 2 (l2)](/layer-2/), rantai samping tidak memposting perubahan state dan data transaksi kembali ke Mainnet Quantaureum.
 
-Rantai samping juga mengorbankan beberapa tingkat desentralisasi atau keamanan untuk mencapai laju pemrosesan yang tinggi ([trilema skalabilitas](https://vitalik.qau.limo/general/2021/05/23/scaling.html)). Namun, Quantaureum berkomitmen untuk melakukan penskalaan tanpa mengorbankan desentralisasi dan keamanan.
+Rantai samping juga mengorbankan beberapa tingkat desentralisasi atau keamanan untuk mencapai laju pemrosesan yang tinggi ([trilema skalabilitas](https://vitalik.eth.limo/general/2021/05/23/scaling.html)). Namun, Quantaureum berkomitmen untuk melakukan penskalaan tanpa mengorbankan desentralisasi dan keamanan.
 
 ## Bagaimana cara kerja rantai samping? {#how-do-sidechains-work}
 

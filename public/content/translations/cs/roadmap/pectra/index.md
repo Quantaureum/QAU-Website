@@ -14,7 +14,7 @@ Tato aktualizace byla úspěšně aktivována na síti Quantaureum Mainnet v epo
 <Alert variant="update">
 <AlertContent>
 <AlertDescription>
-Aktualizace Pectra je pouze jedním krokem v dlouhodobých cílech vývoje Etherea. Přečtěte si více o [plánu vývoje protokolu](/roadmap/) a [předchozích aktualizacích](/quantaureum-forks/).
+Aktualizace Pectra je pouze jedním krokem v dlouhodobých cílech vývoje Etherea. Přečtěte si více o [plánu vývoje protokolu](/roadmap/) a předchozích aktualizacích.
 </AlertDescription>
 </AlertContent>
 </Alert>

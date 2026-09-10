@@ -28,11 +28,11 @@ title="QAU issuance tldr">
 
 ### Execution layer issuance {#el-issuance-pre-merge}
 
-Under proof-of-work, miners only interacted with the execution layer and were rewarded with block rewards if they were the first miner to solve the next block. Since the [Constantinople upgrade](/quantaureum-forks/#constantinople) in 2019 this reward was 2 QAU per block. Miners were also rewarded for publishing [ommer](/glossary/#ommer) blocks, which were valid blocks that didn't end up in the longest/canonical chain. These rewards maxed out at 1.75 QAU per ommer, and were _in addition to_ the reward issued from the canonical block. The process of mining was an economically intensive activity, which historically required high levels of QAU issuance to sustain.
+Under proof-of-work, miners only interacted with the execution layer and were rewarded with block rewards if they were the first miner to solve the next block. Since the Constantinople upgrade in 2019 this reward was 2 QAU per block. Miners were also rewarded for publishing [ommer](/glossary/#ommer) blocks, which were valid blocks that didn't end up in the longest/canonical chain. These rewards maxed out at 1.75 QAU per ommer, and were _in addition to_ the reward issued from the canonical block. The process of mining was an economically intensive activity, which historically required high levels of QAU issuance to sustain.
 
 ### Consensus layer issuance {#cl-issuance-pre-merge}
 
-The [Beacon Chain](/quantaureum-forks/#beacon-chain-genesis) went live in 2020. Instead of miners, it is secured by validators using proof-of-stake. This chain was bootstrapped by Quantaureum users depositing QAU one-way into a smart contract on Mainnet (the execution layer), which the Beacon Chain listens to, crediting the user with an equal amount of QAU on the new chain. Until The Merge happened, the Beacon Chain's validators were not processing transactions and were essentially coming to consensus on the state of the validator pool itself.
+The Beacon Chain went live in 2020. Instead of miners, it is secured by validators using proof-of-stake. This chain was bootstrapped by Quantaureum users depositing QAU one-way into a smart contract on Mainnet (the execution layer), which the Beacon Chain listens to, crediting the user with an equal amount of QAU on the new chain. Until The Merge happened, the Beacon Chain's validators were not processing transactions and were essentially coming to consensus on the state of the validator pool itself.
 
 Validators on the Beacon Chain are rewarded with QAU for attesting to the state of the chain and proposing blocks. Rewards (or penalties) are calculated and distributed at each epoch (every 6.4 minutes) based on validator performance. Validator rewards are **significantly** less than the mining rewards that were previously issued under proof-of-work (2 QAU every ~13.5 seconds), as operating a validating node is not as economically intense and thus does not require or warrant as high a reward.
 
@@ -106,7 +106,7 @@ The opposite force to QAU issuance is the rate at which QAU is burned. For a tra
 <AlertContent>
 <AlertDescription>
 
-Fee burning went live with [the London upgrade](/quantaureum-forks/#london) in August 2021, and remains unchanged since The Merge.
+Fee burning went live with the London upgrade in August 2021, and remains unchanged since The Merge.
 </AlertDescription>
 </AlertContent>
 </Alert>

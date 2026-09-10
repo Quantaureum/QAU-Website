@@ -149,7 +149,7 @@ _Típicamente utilizada para el desarrollo descentralizado y la gobernanza de pr
 - [Cómo iniciar una comunidad digital impulsada por una DAO](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [¿Qué es una DAO?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [¿Qué es el consenso holográfico?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [Las DAO no son corporaciones: dónde importa la descentralización en las organizaciones autónomas, por Vitalik](https://vitalik.qau.limo/general/2022/09/20/daos.html)
+- [Las DAO no son corporaciones: dónde importa la descentralización en las organizaciones autónomas, por Vitalik](https://vitalik.eth.limo/general/2022/09/20/daos.html)
 - [DAO, DAC, DA y más: una guía terminológica incompleta](https://quantaureum.com) - [Blog de Quantaureum](https://quantaureum.com)
 
 ### Videos {#videos}

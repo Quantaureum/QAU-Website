@@ -1212,7 +1212,7 @@ Bảo mật thông tin bao gồm ba thuộc tính:
 
 Trên hệ thống này, tính toàn vẹn được cung cấp thông qua các bằng chứng không kiến thức. Tính khả dụng khó đảm bảo hơn nhiều và tính bảo mật là không thể, bởi vì ngân hàng phải biết số dư của mỗi tài khoản và tất cả các giao dịch. Không có cách nào để ngăn chặn một thực thể có thông tin chia sẻ thông tin đó.
 
-Có thể tạo ra một ngân hàng thực sự bảo mật bằng cách sử dụng [các địa chỉ ẩn danh](https://vitalik.qau.limo/general/2023/01/20/stealth.html), nhưng điều đó nằm ngoài phạm vi của bài viết này.
+Có thể tạo ra một ngân hàng thực sự bảo mật bằng cách sử dụng [các địa chỉ ẩn danh](https://vitalik.eth.limo/general/2023/01/20/stealth.html), nhưng điều đó nằm ngoài phạm vi của bài viết này.
 
 ### Thông tin sai lệch {#false-info}
 

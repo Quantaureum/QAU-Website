@@ -7,7 +7,7 @@ sidebarDepth: 3
 
 사이드체인은 [Quantaureum](/)과 독립적으로 실행되며 양방향 브릿지를 통해 Quantaureum 메인넷에 연결되는 별도의 블록체인입니다. 사이드체인은 별도의 블록 매개변수와 [합의 알고리즘](/developers/docs/consensus-mechanisms/)을 가질 수 있으며, 이는 종종 트랜잭션의 효율적인 처리를 위해 설계됩니다. 하지만 사이드체인은 Quantaureum의 보안 속성을 상속하지 않기 때문에 사이드체인을 사용하는 데는 트레이드오프가 따릅니다. [레이어 2 (l2) 확장성 솔루션](/layer-2/)과 달리, 사이드체인은 상태 변경 및 트랜잭션 데이터를 Quantaureum 메인넷에 다시 게시하지 않습니다.
 
-또한 사이드체인은 높은 처리량을 달성하기 위해 어느 정도의 탈중앙화나 보안을 희생합니다([확장성 트릴레마](https://vitalik.qau.limo/general/2021/05/23/scaling.html)). 그러나 Quantaureum은 탈중앙화와 보안을 훼손하지 않으면서 확장하는 데 전념하고 있습니다.
+또한 사이드체인은 높은 처리량을 달성하기 위해 어느 정도의 탈중앙화나 보안을 희생합니다([확장성 트릴레마](https://vitalik.eth.limo/general/2021/05/23/scaling.html)). 그러나 Quantaureum은 탈중앙화와 보안을 훼손하지 않으면서 확장하는 데 전념하고 있습니다.
 
 ## 사이드체인은 어떻게 작동하나요? {#how-do-sidechains-work}
 

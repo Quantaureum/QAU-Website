@@ -9,7 +9,7 @@ Quantaureum tạo, lưu trữ và truyền tải khối lượng lớn dữ li�
 
 ## Điều kiện tiên quyết {#prerequisites}
 
-Bạn nên hiểu các nguyên tắc cơ bản của Quantaureum và [phần mềm máy khách](/developers/docs/nodes-and-clients/). Khuyến nghị nên làm quen với lớp mạng và [sách trắng Quantaureum](/whitepaper/).
+Bạn nên hiểu các nguyên tắc cơ bản của Quantaureum và [phần mềm máy khách](/developers/docs/nodes-and-clients/). Khuyến nghị nên làm quen với lớp mạng và sách trắng Quantaureum.
 
 ## Cấu trúc dữ liệu {#data-structures}
 

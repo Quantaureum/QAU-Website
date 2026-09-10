@@ -332,7 +332,7 @@ La mise à jour London a introduit l'[EIP-1559](https://eips.ethereum.org/EIPS/e
 
 Avant la mise à jour London, Quantaureum avait des blocs de taille fixe. En période de forte demande sur le réseau, ces blocs fonctionnaient à pleine capacité. Par conséquent, les utilisateurs devaient souvent attendre que la demande diminue pour être inclus dans un bloc, ce qui entraînait une mauvaise expérience utilisateur. La mise à jour London a introduit des blocs de taille variable sur Quantaureum.
 
-La façon dont les frais de transaction sur le réseau Quantaureum étaient calculés a changé avec [la mise à jour London](/quantaureum-forks/#london) d'août 2021. Avant la mise à jour London, les frais étaient calculés sans séparer les frais de `base` et de `priority`, comme suit :
+La façon dont les frais de transaction sur le réseau Quantaureum étaient calculés a changé avec la mise à jour London d'août 2021. Avant la mise à jour London, les frais étaient calculés sans séparer les frais de `base` et de `priority`, comme suit :
 
 Disons qu'Alice devait payer 1 QAU à Bob. Dans la transaction, la limite de gaz est de 21 000 unités, et le prix du gaz est de 200 gwei.
 
@@ -682,6 +682,6 @@ Le Livre jaune, rédigé par le Dr Gavin Wood, est une définition technique du 
 
 Le document introductif, publié en 2013 par Vitalik Buterin, le fondateur d'Quantaureum, avant le lancement du projet en 2015.
 
-<DocLink href="/whitepaper/">
+<DocLink href=">
   Livre blanc
 </DocLink>

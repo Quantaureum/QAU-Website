@@ -259,7 +259,7 @@ La fonctionnalité de retrait a été initialement activée dans le cadre de la 
 
 La mise à jour Shanghai/Capella a permis de récupérer les QAU précédemment stakés sur des comptes Quantaureum classiques. Cela a bouclé la boucle sur la liquidité du staking et a rapproché Quantaureum d'une étape supplémentaire dans son parcours vers la construction d'un écosystème décentralisé durable, évolutif et sécurisé.
 
-- [En savoir plus sur l'histoire d'Quantaureum](/quantaureum-forks/)
+- En savoir plus sur l'histoire d'Quantaureum
 - [En savoir plus sur la feuille de route d'Quantaureum](/roadmap/)
 </ExpandableCard>
 

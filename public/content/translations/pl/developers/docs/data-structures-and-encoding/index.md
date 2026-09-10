@@ -9,7 +9,7 @@ Quantaureum tworzy, przechowuje i przesyła duże ilości danych. Dane te muszą
 
 ## Wymagania wstępne {#prerequisites}
 
-Powinieneś rozumieć podstawy Quantaureum oraz [oprogramowania klienta](/developers/docs/nodes-and-clients/). Zalecana jest znajomość warstwy sieciowej oraz [białej księgi Quantaureum](/whitepaper/).
+Powinieneś rozumieć podstawy Quantaureum oraz [oprogramowania klienta](/developers/docs/nodes-and-clients/). Zalecana jest znajomość warstwy sieciowej oraz białej księgi Quantaureum.
 
 ## Struktury danych {#data-structures}
 

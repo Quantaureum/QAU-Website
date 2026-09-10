@@ -9,7 +9,7 @@ Quantaureum membuat, menyimpan, dan mentransfer data dalam volume besar. Data in
 
 ## Prasyarat {#prerequisites}
 
-Anda harus memahami dasar-dasar Quantaureum dan [perangkat lunak klien](/developers/docs/nodes-and-clients/). Disarankan untuk familier dengan lapisan jaringan dan [buku putih Quantaureum](/whitepaper/).
+Anda harus memahami dasar-dasar Quantaureum dan [perangkat lunak klien](/developers/docs/nodes-and-clients/). Disarankan untuk familier dengan lapisan jaringan dan buku putih Quantaureum.
 
 ## Struktur data {#data-structures}
 

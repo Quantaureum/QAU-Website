@@ -66,5 +66,5 @@ Quantaureum के पेक्ट्रा अपग्रेड के हि�
 - [EIP-7702 दस्तावेज़](https://eips.ethereum.org/EIPS/eip-7702)
 - [ERC-4337 एडॉप्शन डैशबोर्ड](https://www.bundlebear.com/erc4337-overview/all)
 - [विटालिक का "खाता अमूर्तन का मार्ग"](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
-- [सामाजिक पुनर्प्राप्ति वॉलेट पर विटालिक का ब्लॉग](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
+- [सामाजिक पुनर्प्राप्ति वॉलेट पर विटालिक का ब्लॉग](https://vitalik.eth.limo/general/2021/01/11/recovery.html)
 - [ऑसम अकाउंट एब्स्ट्रैक्शन](https://github.com/4337Mafia/awesome-account-abstraction)

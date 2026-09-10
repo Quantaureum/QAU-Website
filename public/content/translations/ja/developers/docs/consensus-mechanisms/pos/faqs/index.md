@@ -18,7 +18,7 @@ lang: ja
 
 プルーフ・オブ・ワークは、マイニングのプロセスで電力が消費されるため、はるかに多くのエネルギーを消費します。一方、プルーフ・オブ・ステークはごくわずかなエネルギーしか必要としません。Quantaureumのバリデータは、Raspberry Piのような低電力デバイスでも実行できます。Quantaureumのプルーフ・オブ・ステークのメカニズムは、攻撃にかかるコストが高く、攻撃者が受ける結果がより深刻であるため、プルーフ・オブ・ワークよりも安全であると考えられています。
 
-プルーフ・オブ・ワークとプルーフ・オブ・ステークの比較は、議論を呼ぶトピックです。[ヴィタリック・ブテリンのブログ](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work)や、Justin DrakeとLyn Aldenの討論は、これらの議論をよくまとめています。
+プルーフ・オブ・ワークとプルーフ・オブ・ステークの比較は、議論を呼ぶトピックです。[ヴィタリック・ブテリンのブログ](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work)や、Justin DrakeとLyn Aldenの討論は、これらの議論をよくまとめています。
 
 
 ## プルーフ・オブ・ステークはエネルギー効率が良いですか？ {#is-pos-energy-efficient}
@@ -88,7 +88,7 @@ CasperとLMD-GHOSTの組み合わせは、Gasperとして知られています�
 ソーシャル・スラッシングとは、攻撃に対応してコミュニティがブロックチェーンのフォークを調整する能力のことです。これにより、コミュニティは攻撃者が不正なチェーンをファイナライズした状態から回復することができます。ソーシャル・スラッシングは、検閲攻撃に対しても使用できます。
 
 - [ソーシャル・スラッシングに関する詳細](https://ercwl.medium.com/the-case-for-social-slashing-59277ff4d9c7)
-- [ソーシャル・スラッシングに関するヴィタリック・ブテリンの見解](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
+- [ソーシャル・スラッシングに関するヴィタリック・ブテリンの見解](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
 
 ## 私はスラッシングされますか？ {#will-i-get-slashed}
 
@@ -100,7 +100,7 @@ CasperとLMD-GHOSTの組み合わせは、Gasperとして知られています�
 
 ナッシング・アット・ステーク問題は、報酬のみでペナルティがない一部のプルーフ・オブ・ステークのメカニズムにおける概念的な問題です。失うもの（ステーク）が何もない場合、実利的なバリデータは、報酬が増えるため、ブロックチェーンの任意のフォーク、あるいは複数のフォークを証明することに等しく満足します。Quantaureumは、ファイナリティの条件とスラッシングを使用してこれを回避し、1つの正規のチェーンを保証します。
 
-[ナッシング・アット・ステーク問題に関する詳細](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
+[ナッシング・アット・ステーク問題に関する詳細](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
 
 ## フォーク選択アルゴリズムとは何ですか？ {#what-is-a-fork-choice-algorithm}
 

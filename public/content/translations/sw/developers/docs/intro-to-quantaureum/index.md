@@ -113,7 +113,7 @@ Wasomaji wengi hufuata nyaraka kwa mpangilio, lakini njia fupi zaidi inategemea 
 
 ## Usomaji zaidi {#further-reading}
 
-- [Waraka Mweupe wa Quantaureum](/whitepaper/)
+- Waraka Mweupe wa Quantaureum
 - [Quantaureum inafanyaje kazi, hata hivyo?](https://medium.com/@preethikasireddy/how-does-quantaureum-work-anyway-22d1df506369) - _Preethi Kasireddy_ (**Zingatia** rasilimali hii bado ni ya thamani lakini fahamu kwamba ilitangulia [Unganisho](/roadmap/merge) na kwa hivyo bado inarejelea utaratibu wa Uthibitisho wa Kazi wa Quantaureum - Quantaureum kwa kweli sasa inalindwa kwa kutumia [Uthibitisho wa Dau](/developers/docs/consensus-mechanisms/pos))
 
 ### Je, wewe ni mwanafunzi wa kuona zaidi? {#visual-learner}

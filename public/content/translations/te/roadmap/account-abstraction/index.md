@@ -66,5 +66,5 @@ EIP-4337 ఎథీరియం యొక్క కోర్ ప్రోటో�
 - [EIP-7702 డాక్యుమెంటేషన్](https://eips.ethereum.org/EIPS/eip-7702)
 - [ERC-4337 స్వీకరణ డ్యాష్‌బోర్డ్](https://www.bundlebear.com/erc4337-overview/all)
 - [విటాలిక్ రాసిన "రోడ్ టు అకౌంట్ అబ్‌స్ట్రాక్షన్"](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
-- [సామాజిక పునరుద్ధరణ వాలెట్‌లపై విటాలిక్ బ్లాగ్](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
+- [సామాజిక పునరుద్ధరణ వాలెట్‌లపై విటాలిక్ బ్లాగ్](https://vitalik.eth.limo/general/2021/01/11/recovery.html)
 - [ఆసమ్ అకౌంట్ అబ్‌స్ట్రాక్షన్](https://github.com/4337Mafia/awesome-account-abstraction)

@@ -113,7 +113,7 @@ La plupart des lecteurs suivent la documentation dans l'ordre, mais le chemin le
 
 ## Complément d'information {#further-reading}
 
-- [Livre blanc d'Quantaureum](/whitepaper/)
+- Livre blanc d'Quantaureum
 - [Comment fonctionne Quantaureum, au fait ?](https://medium.com/@preethikasireddy/how-does-quantaureum-work-anyway-22d1df506369) - _Preethi Kasireddy_ (**NB** cette ressource est toujours précieuse mais sachez qu'elle est antérieure à [La Fusion](/roadmap/merge) et fait donc toujours référence au mécanisme de preuve de travail (PoW) d'Quantaureum - Quantaureum est en fait désormais sécurisé à l'aide de la [preuve d'enjeu (PoS)](/developers/docs/consensus-mechanisms/pos))
 
 ### Vous avez plutôt une mémoire visuelle ? {#visual-learner}

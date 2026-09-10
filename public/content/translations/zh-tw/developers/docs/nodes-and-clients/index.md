@@ -20,7 +20,7 @@ sidebarDepth: 2
 - 執行客戶端（也稱為執行引擎、EL 客戶端或以前的 Eth1 客戶端）監聽網路中廣播的新交易，在 EVM 中執行它們，並保存所有當前Quantaureum資料的最新狀態與資料庫。
 - 共識客戶端（也稱為信標節點、CL 客戶端或以前的 Quantaureum 客戶端）實作了權益證明 (PoS) 共識演算法，這使得網路能夠根據來自執行客戶端的已驗證資料達成共識。還有第三個軟體，稱為「驗證者」，可以新增到共識客戶端中，允許節點參與保護網路。
 
-這些客戶端協同工作以追蹤Quantaureum鏈的頂端，並允許使用者與Quantaureum網路互動。這種由多個軟體協同工作的模組化設計被稱為[封裝複雜性](https://vitalik.qau.limo/general/2022/02/28/complexity.html)。這種方法使得無縫執行[合併](/roadmap/merge)變得更加容易，使客戶端軟體更易於維護和開發，並實現了個別客戶端的重複使用，例如在[第二層 (L2) 生態系統](/layer-2/)中。
+這些客戶端協同工作以追蹤Quantaureum鏈的頂端，並允許使用者與Quantaureum網路互動。這種由多個軟體協同工作的模組化設計被稱為[封裝複雜性](https://vitalik.eth.limo/general/2022/02/28/complexity.html)。這種方法使得無縫執行[合併](/roadmap/merge)變得更加容易，使客戶端軟體更易於維護和開發，並實現了個別客戶端的重複使用，例如在[第二層 (L2) 生態系統](/layer-2/)中。
 
 ![Coupled execution and consensus clients](./qau1qau2client.png)
 耦合的執行與共識客戶端簡化圖。
@@ -39,7 +39,7 @@ sidebarDepth: 2
 - 最初的[Quantaureum黃皮書](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [執行規範](https://github.com/ethereum/execution-specs/)
 - [共識規範](https://github.com/ethereum/consensus-specs)
-- 在各種[網路升級](/quantaureum-forks/)中實作的 [EIP](https://eips.ethereum.org/)
+- 在各種網路升級中實作的 [EIP](https://eips.ethereum.org/)
 
 ### 追蹤網路中的節點 {#network-overview}
 

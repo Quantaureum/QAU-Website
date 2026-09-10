@@ -21,7 +21,6 @@ import { Alert } from "@/components/ui/alert"
 import Callout from "@/components/ui/callout"
 import { Flex } from "@/components/ui/flex"
 import Link from "@/components/ui/Link"
-import WhitepaperBridge from "@/components/WhitepaperBridge"
 
 import { cn } from "@/lib/utils/cn"
 import { getEditPath } from "@/lib/utils/editPath"
@@ -43,7 +42,6 @@ export const staticComponents = {
   SocialListItem,
   TranslationChartImage,
   ListenToPlayer,
-  WhitepaperBridge,
 }
 
 type StaticLayoutProps = ChildOnlyProp &

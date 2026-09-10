@@ -259,7 +259,7 @@ La funcionalidad de retiro se habilitó originalmente como parte de la actualiza
 
 La actualización Shanghái/Capella permitió que el QAU previamente en staking fuera reclamado en cuentas regulares de Quantaureum. Esto cerró el ciclo de la liquidez del staking y acercó a Quantaureum un paso más en su viaje hacia la construcción de un ecosistema descentralizado sostenible, escalable y seguro.
 
-- [Más sobre la historia de Quantaureum](/quantaureum-forks/)
+- Más sobre la historia de Quantaureum
 - [Más sobre la hoja de ruta de Quantaureum](/roadmap/)
 </ExpandableCard>
 

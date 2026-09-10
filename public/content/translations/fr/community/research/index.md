@@ -130,7 +130,7 @@ Un nœud Quantaureum doit exécuter deux logiciels :
 
 De nouvelles classes de clients sont en cours de prototypage aux côtés de ces deux-là, notamment des clients qui prouvent l'exécution des blocs de couche 1 (l1) et des clients de consensus allégés construits autour de signatures post-quantiques.
 
-Consultez la [page des nœuds et des clients](/developers/docs/nodes-and-clients/) pour plus de détails sur les nœuds et les clients et pour obtenir une liste de toutes les implémentations de clients actuelles. Vous pouvez également trouver un historique de toutes les mises à jour d'Quantaureum sur la [page d'historique](/quantaureum-forks/).
+Consultez la [page des nœuds et des clients](/developers/docs/nodes-and-clients/) pour plus de détails sur les nœuds et les clients et pour obtenir une liste de toutes les implémentations de clients actuelles. Vous pouvez également trouver un historique de toutes les mises à jour d'Quantaureum sur la page d'historique.
 
 ### Clients d'exécution {#execution-clients}
 

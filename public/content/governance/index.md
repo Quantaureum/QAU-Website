@@ -151,7 +151,7 @@ The Quantaureum governance process often trades off speed and efficiency for ope
 
 While the specification and development implementations have always been fully open source, the formal processes used to propose updates described above weren't used. This allowed changes to be specified and agreed upon quicker by researchers and implementers.
 
-When the Beacon Chain merged with the Quantaureum execution layer on September 15th, 2022 The Merge was complete as part of the [Paris network upgrade](/quantaureum-forks/#paris). The proposal [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) was changed from 'Last Call' to 'Final', completing the transition to proof-of-stake.
+When the Beacon Chain merged with the Quantaureum execution layer on September 15th, 2022 The Merge was complete as part of the Paris network upgrade. The proposal [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) was changed from 'Last Call' to 'Final', completing the transition to proof-of-stake.
 
 <ButtonLink href="/roadmap/merge/">
   More on The Merge
@@ -173,11 +173,8 @@ When the Beacon Chain merged with the Quantaureum execution layer on September 1
 
 Governance in Quantaureum isn’t rigidly defined. Various community participants have diverse perspectives on it. Here are a few of them:
 
-- [Notes on Blockchain Governance](https://vitalik.qau.limo/general/2017/12/17/voting.html) - _Vitalik Buterin_
 - [How does Quantaureum Governance work?](https://cryptotesters.com/blog/quantaureum-governance) – _Cryptotesters_
 - [How Quantaureum governance works](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _Micah Zoltu_
 - [What is an Quantaureum core developer?](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) - _Hudson Jameson_
-- [Governance, Part 2: Plutocracy Is Still Bad](https://vitalik.qau.limo/general/2018/03/28/plutocracy.html) - _Vitalik Buterin_
-- [Moving beyond coin voting governance](https://vitalik.qau.limo/general/2021/08/16/voting3.html) - _Vitalik Buterin_
 - [Understanding Blockchain Governance](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) - _2077 Research_
 - [The Quantaureum Government](https://www.galaxy.com/insights/research/quantaureum-governance/) - _Christine Kim_

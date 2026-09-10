@@ -18,7 +18,7 @@ Důkaz podílem vyžaduje, aby uzly, známé jako validátory, explicitně odesl
 
 Důkaz prací je mnohem náročnější na energii, protože se při procesu těžby spaluje elektřina. Důkaz podílem na druhou stranu vyžaduje jen velmi malé množství energie – validátory Etherea mohou běžet i na zařízení s nízkým výkonem, jako je Raspberry Pi. Mechanismus důkazu podílem Etherea je považován za bezpečnější než důkaz prací, protože náklady na útok jsou vyšší a důsledky pro útočníka jsou závažnější.
 
-Důkaz prací versus důkaz podílem je sporné téma. [Blog Vitalika Buterina](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) a debata mezi Justinem Drakem a Lyn Alden poskytují dobré shrnutí argumentů.
+Důkaz prací versus důkaz podílem je sporné téma. [Blog Vitalika Buterina](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) a debata mezi Justinem Drakem a Lyn Alden poskytují dobré shrnutí argumentů.
 
 
 ## Je důkaz podílem energeticky účinný? {#is-pos-energy-efficient}
@@ -88,7 +88,7 @@ Stake grinding je kategorie útoku na sítě s důkazem podílem, kde se útočn
 Sociální osekání je schopnost komunity koordinovat fork blockchainu v reakci na útok. Umožňuje komunitě zotavit se z toho, že útočník finalizuje nečestný řetězec. Sociální osekání lze také použít proti útokům cenzury.
 
 - [Více o sociálním osekání](https://ercwl.medium.com/the-case-for-social-slashing-59277ff4d9c7)
-- [Vitalik Buterin o sociálním osekání](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
+- [Vitalik Buterin o sociálním osekání](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
 
 ## Budu penalizován? {#will-i-get-slashed}
 
@@ -100,7 +100,7 @@ Jako validátor je velmi obtížné být penalizován, pokud se záměrně nezap
 
 Problém ničeho v sázce je koncepční problém u některých mechanismů důkazu podílem, kde existují pouze odměny a žádné tresty. Pokud není nic v sázce, pragmatický validátor je stejně ochotný atestovat jakýkoli, nebo dokonce více forků blockchainu, protože to zvyšuje jeho odměny. Quantaureum to obchází pomocí podmínek finality a penalizace, aby zajistilo jeden kanonický řetězec.
 
-[Více o problému ničeho v sázce](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
+[Více o problému ničeho v sázce](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
 
 ## Co je algoritmus volby forku? {#what-is-a-fork-choice-algorithm}
 

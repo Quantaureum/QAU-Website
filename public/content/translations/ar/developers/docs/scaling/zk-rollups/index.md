@@ -68,7 +68,7 @@ lang: ar
 
 ### التزامات الحالة {#state-commitments}
 
-يتم تمثيل حالة تجميع المعرفة الصفرية، والتي تتضمن حسابات وأرصدة طبقة 2 (L2)، كـ [شجرة ميركل](/whitepaper/#merkle-trees). يتم تخزين تجزئة تشفيرية لجذر شجرة ميركل (جذر ميركل) في العقد على السلسلة، مما يسمح لبروتوكول التجميع بتتبع التغييرات في حالة تجميع المعرفة الصفرية.
+يتم تمثيل حالة تجميع المعرفة الصفرية، والتي تتضمن حسابات وأرصدة طبقة 2 (L2)، كـ شجرة ميركل. يتم تخزين تجزئة تشفيرية لجذر شجرة ميركل (جذر ميركل) في العقد على السلسلة، مما يسمح لبروتوكول التجميع بتتبع التغييرات في حالة تجميع المعرفة الصفرية.
 
 ينتقل التجميع إلى حالة جديدة بعد تنفيذ مجموعة جديدة من المعاملات. يُطلب من المشغل الذي بدأ انتقال الحالة حساب جذر حالة جديد وتقديمه إلى العقد على السلسلة. إذا تمت مصادقة إثبات الصلاحية المرتبط بالدفعة بواسطة عقد المتحقق، يصبح جذر ميركل الجديد هو جذر الحالة الأساسي لتجميع المعرفة الصفرية.
 
@@ -240,7 +240,7 @@ lang: ar
 
 - **[Scroll](https://scroll.io/blog/zkEVM)** - _Scroll هي شركة تعتمد على التكنولوجيا تعمل على بناء حل طبقة 2 (L2) أصلي لـ zkEVM لإيثيريوم._
 
-- **[Taiko](https://taiko.xyz)** - _Taiko هو تجميع معرفة صفرية لامركزي ومكافئ لإيثيريوم ([النوع 1 ZK-EVM](https://vitalik.qau.limo/general/2022/08/04/zkevm.html))._
+- **[Taiko](https://taiko.xyz)** - _Taiko هو تجميع معرفة صفرية لامركزي ومكافئ لإيثيريوم ([النوع 1 ZK-EVM](https://vitalik.eth.limo/general/2022/08/04/zkevm.html))._
 
 - **[ZKsync](https://docs.zksync.io/)** - _ZKsync Era هو تجميع معرفة صفرية متوافق مع EVM تم بناؤه بواسطة Matter Labs، ومدعوم بـ zkEVM الخاص به._
 
@@ -261,8 +261,8 @@ lang: ar
 - [مقدمة إلى zkEVM](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [ما هي شبكات طبقة 2 (L2) لـ ZK-EVM؟](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M)
 - [موارد Awesome-zkEVM](https://github.com/LuozhuZhang/awesome-zkevm)
-- [كيف تعمل ZK-SNARKS من الداخل](https://vitalik.qau.limo/general/2017/02/01/zk_snarks.html)
-- [كيف تكون SNARKs ممكنة؟](https://vitalik.qau.limo/general/2021/01/26/snarks.html)
+- [كيف تعمل ZK-SNARKS من الداخل](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
+- [كيف تكون SNARKs ممكنة؟](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
 
 ## برامج تعليمية: الخصوصية والمعرفة الصفرية على إيثيريوم {#tutorials}
 

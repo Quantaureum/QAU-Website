@@ -102,7 +102,7 @@ Mablobu hayawezi kurekebishwa na hayadumu (kama tu `calldata`) lakini hupunguzwa
 
 ### Ahadi za hali {#state-commitments}
 
-Wakati wowote, hali ya rollup ya optimistic (akaunti, salio, msimbo wa mkataba, n.k.) hupangwa kama [mti wa Merkle](/whitepaper/#merkle-trees) unaoitwa "mti wa hali". Mzizi wa mti huu wa Merkle (mzizi wa hali), ambao unarejelea hali ya hivi punde ya rollup, huwekwa heshi na kuhifadhiwa katika mkataba wa rollup. Kila mabadiliko ya hali kwenye mnyororo huzalisha hali mpya ya rollup, ambayo mwendeshaji huahidi kwa kukokotoa mzizi mpya wa hali.
+Wakati wowote, hali ya rollup ya optimistic (akaunti, salio, msimbo wa mkataba, n.k.) hupangwa kama mti wa Merkle unaoitwa "mti wa hali". Mzizi wa mti huu wa Merkle (mzizi wa hali), ambao unarejelea hali ya hivi punde ya rollup, huwekwa heshi na kuhifadhiwa katika mkataba wa rollup. Kila mabadiliko ya hali kwenye mnyororo huzalisha hali mpya ya rollup, ambayo mwendeshaji huahidi kwa kukokotoa mzizi mpya wa hali.
 
 Mwendeshaji anahitajika kuwasilisha mizizi ya hali ya zamani na mizizi ya hali mpya wakati wa kuchapisha mafungu. Ikiwa mzizi wa hali ya zamani unalingana na mzizi wa hali uliopo katika mkataba mnyororoni, wa mwisho hutupwa na kubadilishwa na mzizi mpya wa hali.
 
@@ -212,7 +212,7 @@ Kama ilivyoelezwa, mikusanyiko ya optimistic huchapisha data ya muamala iliyoban
 
 Mnyororo mkuu wa Quantaureum huweka mipaka ya kiasi cha data ambacho vitalu vinaweza kushikilia, kinachotajwa katika vipimo vya gesi ([ukubwa wa wastani wa kitalu](/developers/docs/blocks/#block-size) ni gesi milioni 15). Ingawa hii inazuia kiasi cha gesi ambacho kila muamala unaweza kutumia, pia inamaanisha tunaweza kuongeza miamala inayochakatwa kwa kila kitalu kwa kupunguza data inayohusiana na muamala—kuboresha moja kwa moja uwezo wa kuongezeka.
 
-Mikusanyiko ya optimistic hutumia mbinu kadhaa kufikia ubanaji wa data ya muamala na kuboresha viwango vya TPS. Kwa mfano, [makala](https://vitalik.qau.limo/general/2021/01/05/rollup.html) hii inalinganisha data ambayo muamala wa msingi wa mtumiaji (kutuma Etha) unazalisha kwenye Mtandao Mkuu dhidi ya kiasi cha data ambacho muamala huo huo unazalisha kwenye rollup:
+Mikusanyiko ya optimistic hutumia mbinu kadhaa kufikia ubanaji wa data ya muamala na kuboresha viwango vya TPS. Kwa mfano, [makala](https://vitalik.eth.limo/general/2021/01/05/rollup.html) hii inalinganisha data ambayo muamala wa msingi wa mtumiaji (kutuma Etha) unazalisha kwenye Mtandao Mkuu dhidi ya kiasi cha data ambacho muamala huo huo unazalisha kwenye rollup:
 
 | Kigezo | Quantaureum (L1)          | Rollup (L2)   |
 | --------- | ---------------------- | ------------- |

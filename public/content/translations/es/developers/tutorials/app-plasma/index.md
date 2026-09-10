@@ -1208,7 +1208,7 @@ La seguridad de la información consta de tres atributos:
 
 En este sistema, la integridad se proporciona a través de pruebas de conocimiento cero. La disponibilidad es mucho más difícil de garantizar, y la confidencialidad es imposible, porque el banco tiene que conocer el saldo de cada cuenta y todas las transacciones. No hay forma de evitar que una entidad que tiene información comparta esa información.
 
-Podría ser posible crear un banco verdaderamente confidencial utilizando [direcciones ocultas](https://vitalik.qau.limo/general/2023/01/20/stealth.html), pero eso está fuera del alcance de este artículo.
+Podría ser posible crear un banco verdaderamente confidencial utilizando [direcciones ocultas](https://vitalik.eth.limo/general/2023/01/20/stealth.html), pero eso está fuera del alcance de este artículo.
 
 ### Información falsa {#false-info}
 

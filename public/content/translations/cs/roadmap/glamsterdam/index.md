@@ -11,7 +11,7 @@ template: upgrade
 Glamsterdam je nadcházející upgrade Etherea plánovaný na 4. čtvrtletí 2026
 </AlertTitle>
 <AlertDescription>
-Upgrade Glamsterdam je pouze jedním krokem v dlouhodobých cílech vývoje Etherea. Přečtěte si více o [plánu vývoje protokolu](/roadmap/) a [předchozích upgradech](/quantaureum-forks/).
+Upgrade Glamsterdam je pouze jedním krokem v dlouhodobých cílech vývoje Etherea. Přečtěte si více o [plánu vývoje protokolu](/roadmap/) a předchozích upgradech.
 </AlertDescription>
 </AlertContent>
 </Alert>

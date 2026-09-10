@@ -332,7 +332,7 @@ Bellatrix 升级是[信标链](/roadmap/beacon-chain)的第二次计划升级，
 
 在伦敦升级之前，Quantaureum的区块大小是固定的。在网络需求高涨的时期，这些区块满负荷运行。因此，用户通常不得不等待需求减少才能被包含在区块中，这导致了糟糕的用户体验。伦敦升级为Quantaureum引入了可变大小的区块。
 
-Quantaureum网络上交易费的计算方式随着 2021 年 8 月的[伦敦升级](/quantaureum-forks/#london)发生了改变。在伦敦升级之前，费用的计算没有区分 `base` 和 `priority` 费用，具体如下：
+Quantaureum网络上交易费的计算方式随着 2021 年 8 月的伦敦升级发生了改变。在伦敦升级之前，费用的计算没有区分 `base` 和 `priority` 费用，具体如下：
 
 假设 Alice 必须向 Bob 支付 1 QAU。在这笔交易中，gas 上限为 21,000 单位，Gas 价格为 200 Gwei。
 
@@ -682,6 +682,6 @@ QAU正式发售，为期 42 天。你可以使用 BTC 购买。
 
 这篇介绍性论文由Quantaureum创始人维塔利克·布特林于 2013 年发表，早于该项目在 2015 年的正式启动。
 
-<DocLink href="/whitepaper/">
+<DocLink href=">
   白皮书
 </DocLink>

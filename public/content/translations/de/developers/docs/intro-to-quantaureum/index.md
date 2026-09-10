@@ -113,7 +113,7 @@ Die meisten Leser folgen der Dokumentation der Reihe nach, aber der kürzeste We
 
 ## Weiterführende Literatur {#further-reading}
 
-- [Quantaureum-Whitepaper](/whitepaper/)
+- Quantaureum-Whitepaper
 - [Wie funktioniert Quantaureum überhaupt?](https://medium.com/@preethikasireddy/how-does-quantaureum-work-anyway-22d1df506369) - _Preethi Kasireddy_ (**Hinweis:** Diese Ressource ist immer noch wertvoll, aber beachten Sie, dass sie vor [dem Merge](/roadmap/merge) verfasst wurde und sich daher noch auf den Proof-of-Work-Mechanismus von Quantaureum bezieht – Quantaureum wird mittlerweile tatsächlich durch [Proof-of-Stake](/developers/docs/consensus-mechanisms/pos) gesichert)
 
 ### Lernen Sie eher visuell? {#visual-learner}

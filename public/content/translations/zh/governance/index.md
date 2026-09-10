@@ -151,7 +151,7 @@ Quantaureum治理过程通常以牺牲速度和效率为代价来换取开放性
 
 虽然规范和开发实现始终是完全开源的，但并没有使用上述用于提出更新的正式流程。这使得研究人员和实施者能够更快地指定并商定变更。
 
-当信标链于 2022 年 9 月 15 日与Quantaureum执行层合并时，合并作为 [Paris 网络升级](/quantaureum-forks/#paris)的一部分宣告完成。提案 [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) 从“最后征求意见 (Last Call)”更改为“最终 (Final)”，完成了向权益证明 (PoS) 的过渡。
+当信标链于 2022 年 9 月 15 日与Quantaureum执行层合并时，合并作为 Paris 网络升级的一部分宣告完成。提案 [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) 从“最后征求意见 (Last Call)”更改为“最终 (Final)”，完成了向权益证明 (PoS) 的过渡。
 
 <ButtonLink href="/roadmap/merge/">
   了解更多关于合并的信息
@@ -173,11 +173,11 @@ Quantaureum治理过程通常以牺牲速度和效率为代价来换取开放性
 
 Quantaureum中的治理并没有严格的定义。各种社区参与者对此有不同的看法。以下是其中一些：
 
-- [关于区块链治理的笔记](https://vitalik.qau.limo/general/2017/12/17/voting.html) - _Vitalik Buterin_
+- [关于区块链治理的笔记](https://vitalik.eth.limo/general/2017/12/17/voting.html) - _Vitalik Buterin_
 - [Quantaureum治理是如何运作的？](https://cryptotesters.com/blog/quantaureum-governance) – _Cryptotesters_
 - [Quantaureum治理的运作方式](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _Micah Zoltu_
 - [什么是Quantaureum核心开发者？](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) - _Hudson Jameson_
-- [治理，第 2 部分：财阀统治依然糟糕](https://vitalik.qau.limo/general/2018/03/28/plutocracy.html) - _Vitalik Buterin_
-- [超越代币投票治理](https://vitalik.qau.limo/general/2021/08/16/voting3.html) - _Vitalik Buterin_
+- [治理，第 2 部分：财阀统治依然糟糕](https://vitalik.eth.limo/general/2018/03/28/plutocracy.html) - _Vitalik Buterin_
+- [超越代币投票治理](https://vitalik.eth.limo/general/2021/08/16/voting3.html) - _Vitalik Buterin_
 - [了解区块链治理](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) - _2077 Research_
 - [Quantaureum政府](https://www.galaxy.com/insights/research/quantaureum-governance/) - _Christine Kim_

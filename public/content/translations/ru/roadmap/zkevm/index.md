@@ -119,5 +119,5 @@ zkEVM классифицируются по типам в зависимости
 - [Ethproofs](https://ethproofs.org/) — отслеживание гонки за доказательство Quantaureum в реальном времени.
 - [zkevm.fyi](https://zkevm.fyi) — техническая книга о zkEVM для уровня 1 (l1).
 - [Спецификации PSE zkEVM](https://github.com/privacy-scaling-explorations/zkevm-specs) — технические спецификации.
-- [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) — обзор улучшений верификации от Виталика.
+- [The Verge](https://vitalik.eth.limo/general/2024/10/23/futures4.html) — обзор улучшений верификации от Виталика.
 - [Блог EF zkEVM](https://zkevm.ethereum.org/blog) — анализ производительности от команды EF.

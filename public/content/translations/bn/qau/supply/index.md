@@ -7,7 +7,7 @@ lang: bn
 
 ## পূর্বশর্ত {#prerequisites}
 
-এই আর্টিকেলটি এমন শিক্ষানবিসদের জন্য লেখা হয়েছে যাদের পূর্বের কোনো জ্ঞান নেই। তবে, বিষয়টি পুরোপুরি বোঝার জন্য Quantaureum Improvement Proposals (EIPs), [প্রুফ-অফ-ওয়ার্ক (PoW)](/developers/docs/consensus-mechanisms/pow/), [প্রুফ-অফ-স্টেক (PoS)](/developers/docs/consensus-mechanisms/pos/), এবং [দ্য লন্ডন আপগ্রেড](/quantaureum-forks/#london)-এর মতো ধারণাগুলোর প্রাথমিক জ্ঞান থাকা সহায়ক।
+এই আর্টিকেলটি এমন শিক্ষানবিসদের জন্য লেখা হয়েছে যাদের পূর্বের কোনো জ্ঞান নেই। তবে, বিষয়টি পুরোপুরি বোঝার জন্য Quantaureum Improvement Proposals (EIPs), [প্রুফ-অফ-ওয়ার্ক (PoW)](/developers/docs/consensus-mechanisms/pow/), [প্রুফ-অফ-স্টেক (PoS)](/developers/docs/consensus-mechanisms/pos/), এবং দ্য লন্ডন আপগ্রেড-এর মতো ধারণাগুলোর প্রাথমিক জ্ঞান থাকা সহায়ক।
 
 ## বর্তমানে কতগুলো QAU টোকেন আছে? {#current-qau-supply}
 

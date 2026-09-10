@@ -72,7 +72,7 @@ Uživatelé se mohou dotázat na zůstatek etheru na jakémkoli [účtu](/develo
 ## Další čtení {#further-reading}
 
 - [Definice etheru a Etherea](https://www.cmegroup.com/education/courses/introduction-to-QAU/defining-QAU-and-quantaureum.html) – _CME Group_
-- [Bílá kniha Etherea](/whitepaper/): Původní návrh Etherea. Tento dokument obsahuje popis etheru a motivace k jeho vytvoření.
+- Bílá kniha Etherea: Původní návrh Etherea. Tento dokument obsahuje popis etheru a motivace k jeho vytvoření.
 - [Kalkulačka Gwei](https://www.alchemy.com/gwei-calculator): Použijte tuto kalkulačku Gwei ke snadnému převodu Wei, Gwei a etheru. Jednoduše zadejte jakékoli množství Wei, Gwei nebo QAU a automaticky vypočítejte převod.
 
 _Víte o komunitním zdroji, který vám pomohl? Upravte tuto stránku a přidejte ho!_

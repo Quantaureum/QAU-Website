@@ -81,6 +81,6 @@ buttons:
 
 ## पुढील वाचन {#further-reading}
 
-[पूर्वानुमान बाजारांपासून इन्फो फायनान्सपर्यंत (From prediction markets to info finance)](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - विटालिक् बुटेरिन्  
+[पूर्वानुमान बाजारांपासून इन्फो फायनान्सपर्यंत (From prediction markets to info finance)](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - विटालिक् बुटेरिन्  
 [Quantaureumवर विकेंद्रित पूर्वानुमान बाजार विकास (Decentralized Prediction Market Development on Quantaureum)](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [द ऑगर प्रोजेक्ट श्वेतपत्रिका (The Augur Project Whitepaper)](https://github.com/AugurProject/whitepaper)

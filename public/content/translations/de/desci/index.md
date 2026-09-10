@@ -74,7 +74,7 @@ Geistiges Eigentum (IP) ist ein großes Problem in der traditionellen Wissenscha
 Genauso wie NFTs Einnahmen für zukünftige Transaktionen an den ursprünglichen Ersteller zurückgeben können, können Sie transparente Wertzuweisungsketten einrichten, um Forscher, Leitungsgremien (wie DAOs) oder sogar die Probanden, deren Daten gesammelt werden, zu belohnen.
 
 [IP-NFTs](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) können auch als Schlüssel zu einem dezentralen Daten-Repository der durchgeführten Forschungsexperimente fungieren und sich in die NFT- und [DeFi](/glossary/#defi)-Finanzialisierung einklinken (von Fraktionierung über Kreditvergabe-Pools bis hin zur Wertschätzung). Es ermöglicht auch nativen Onchain-Entitäten wie DAOs (z. B. [VitaDAO](https://www.vitadao.com/)), Forschung direkt Onchain durchzuführen.
-Das Aufkommen von nicht übertragbaren [„Soulbound“-Token](https://vitalik.qau.limo/general/2022/01/26/soulbound.html) könnte ebenfalls eine wichtige Rolle in DeSci spielen, indem es Einzelpersonen ermöglicht, ihre Erfahrung und Qualifikationen in Verbindung mit ihrer Quantaureum-Adresse nachzuweisen.
+Das Aufkommen von nicht übertragbaren [„Soulbound“-Token](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) könnte ebenfalls eine wichtige Rolle in DeSci spielen, indem es Einzelpersonen ermöglicht, ihre Erfahrung und Qualifikationen in Verbindung mit ihrer Quantaureum-Adresse nachzuweisen.
 
 ### Datenspeicherung, -zugriff und -architektur {#data-storage}
 

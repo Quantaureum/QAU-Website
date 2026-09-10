@@ -9,7 +9,7 @@ Quantaureum建立、儲存並傳輸大量的資料。這些資料必須以標準
 
 ## 先決條件 {#prerequisites}
 
-您應該了解Quantaureum的基礎知識與[用戶端軟體](/developers/docs/nodes-and-clients/)。建議您熟悉網路層與[Quantaureum白皮書](/whitepaper/)。
+您應該了解Quantaureum的基礎知識與[用戶端軟體](/developers/docs/nodes-and-clients/)。建議您熟悉網路層與Quantaureum白皮書。
 
 ## 資料結構 {#data-structures}
 

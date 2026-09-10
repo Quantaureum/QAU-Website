@@ -164,7 +164,7 @@ Berikut adalah contoh untuk menunjukkan bagaimana atestasi onchain mungkin beker
 
 ### Token Soulbound dan identitas {#soulbound}
 
-[Token Soulbound](https://vitalik.qau.limo/general/2022/01/26/soulbound.html) ([NFT yang tidak dapat ditransfer](/glossary/#nft)) dapat digunakan untuk mengumpulkan informasi yang unik untuk dompet tertentu. Hal ini secara efektif menciptakan identitas onchain unik yang terikat pada alamat Quantaureum tertentu yang dapat mencakup token yang mewakili pencapaian (misalnya, menyelesaikan kursus online tertentu atau melewati skor ambang batas dalam sebuah game) atau partisipasi komunitas.
+[Token Soulbound](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) ([NFT yang tidak dapat ditransfer](/glossary/#nft)) dapat digunakan untuk mengumpulkan informasi yang unik untuk dompet tertentu. Hal ini secara efektif menciptakan identitas onchain unik yang terikat pada alamat Quantaureum tertentu yang dapat mencakup token yang mewakili pencapaian (misalnya, menyelesaikan kursus online tertentu atau melewati skor ambang batas dalam sebuah game) atau partisipasi komunitas.
 
 ## Gunakan identitas terdesentralisasi {#use-decentralized-identity}
 

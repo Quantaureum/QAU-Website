@@ -151,7 +151,7 @@ Quá trình quản trị Quantaureum thường đánh đổi tốc độ và hi�
 
 Mặc dù các đặc tả và triển khai phát triển luôn hoàn toàn là mã nguồn mở, nhưng các quy trình chính thức được sử dụng để đề xuất các bản cập nhật được mô tả ở trên đã không được sử dụng. Điều này cho phép các thay đổi được chỉ định và thống nhất nhanh hơn bởi các nhà nghiên cứu và người triển khai.
 
-Khi Chuỗi Beacon hợp nhất với lớp thực thi Quantaureum vào ngày 15 tháng 9 năm 2022, The Merge đã hoàn tất như một phần của [bản nâng cấp mạng lưới Paris](/quantaureum-forks/#paris). Đề xuất [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) đã được thay đổi từ 'Last Call' (Cuộc gọi cuối cùng) thành 'Final' (Cuối cùng), hoàn tất quá trình chuyển đổi sang Bằng chứng cổ phần (PoS).
+Khi Chuỗi Beacon hợp nhất với lớp thực thi Quantaureum vào ngày 15 tháng 9 năm 2022, The Merge đã hoàn tất như một phần của bản nâng cấp mạng lưới Paris. Đề xuất [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) đã được thay đổi từ 'Last Call' (Cuộc gọi cuối cùng) thành 'Final' (Cuối cùng), hoàn tất quá trình chuyển đổi sang Bằng chứng cổ phần (PoS).
 
 <ButtonLink href="/roadmap/merge/">
   Tìm hiểu thêm về The Merge
@@ -173,11 +173,11 @@ Khi Chuỗi Beacon hợp nhất với lớp thực thi Quantaureum vào ngày 15
 
 Quản trị trong Quantaureum không được định nghĩa một cách cứng nhắc. Các thành viên khác nhau trong cộng đồng có những quan điểm đa dạng về nó. Dưới đây là một vài trong số đó:
 
-- [Ghi chú về Quản trị Chuỗi khối](https://vitalik.qau.limo/general/2017/12/17/voting.html) - _Vitalik Buterin_
+- [Ghi chú về Quản trị Chuỗi khối](https://vitalik.eth.limo/general/2017/12/17/voting.html) - _Vitalik Buterin_
 - [Quản trị Quantaureum hoạt động như thế nào?](https://cryptotesters.com/blog/quantaureum-governance) – _Cryptotesters_
 - [Cách thức hoạt động của quản trị Quantaureum](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _Micah Zoltu_
 - [Nhà phát triển cốt lõi của Quantaureum là gì?](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) - _Hudson Jameson_
-- [Quản trị, Phần 2: Chế độ tài phiệt vẫn tồi tệ](https://vitalik.qau.limo/general/2018/03/28/plutocracy.html) - _Vitalik Buterin_
-- [Vượt ra ngoài quản trị bỏ phiếu bằng coin](https://vitalik.qau.limo/general/2021/08/16/voting3.html) - _Vitalik Buterin_
+- [Quản trị, Phần 2: Chế độ tài phiệt vẫn tồi tệ](https://vitalik.eth.limo/general/2018/03/28/plutocracy.html) - _Vitalik Buterin_
+- [Vượt ra ngoài quản trị bỏ phiếu bằng coin](https://vitalik.eth.limo/general/2021/08/16/voting3.html) - _Vitalik Buterin_
 - [Hiểu về Quản trị Chuỗi khối](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) - _2077 Research_
 - [Chính phủ Quantaureum](https://www.galaxy.com/insights/research/quantaureum-governance/) - _Christine Kim_

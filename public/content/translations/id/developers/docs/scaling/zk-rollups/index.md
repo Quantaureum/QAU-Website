@@ -68,7 +68,7 @@ Kata kunci `calldata` sering kali mengidentifikasi metode kontrak pintar yang di
 
 ### Komitmen state {#state-commitments}
 
-State ZK-rollup, yang mencakup akun dan saldo l2, direpresentasikan sebagai [pohon Merkle](/whitepaper/#merkle-trees). Hash kriptografi dari akar pohon Merkle (akar Merkle) disimpan dalam kontrak onchain, memungkinkan protokol rollup untuk melacak perubahan dalam state ZK-rollup.
+State ZK-rollup, yang mencakup akun dan saldo l2, direpresentasikan sebagai pohon Merkle. Hash kriptografi dari akar pohon Merkle (akar Merkle) disimpan dalam kontrak onchain, memungkinkan protokol rollup untuk melacak perubahan dalam state ZK-rollup.
 
 Rollup bertransisi ke state baru setelah eksekusi serangkaian transaksi baru. Operator yang memulai transisi state diwajibkan untuk menghitung akar state baru dan mengirimkannya ke kontrak onchain. Jika bukti validitas yang terkait dengan batch diautentikasi oleh kontrak pemverifikasi, akar Merkle yang baru menjadi akar state kanonis ZK-rollup.
 
@@ -238,7 +238,7 @@ Proyek yang mengerjakan zkEVM meliputi:
 
 - **[Scroll](https://scroll.io/blog/zkEVM)** - _Scroll adalah perusahaan berbasis teknologi yang berupaya membangun Solusi Lapisan 2 zkEVM asli untuk Quantaureum._
 
-- **[Taiko](https://taiko.xyz)** - _Taiko adalah ZK-rollup terdesentralisasi yang setara dengan Quantaureum ([ZK-EVM Tipe 1](https://vitalik.qau.limo/general/2022/08/04/zkevm.html))._
+- **[Taiko](https://taiko.xyz)** - _Taiko adalah ZK-rollup terdesentralisasi yang setara dengan Quantaureum ([ZK-EVM Tipe 1](https://vitalik.eth.limo/general/2022/08/04/zkevm.html))._
 
 - **[ZKsync](https://docs.zksync.io/)** - _ZKsync Era adalah ZK Rollup yang kompatibel dengan EVM yang dibangun oleh Matter Labs, didukung oleh zkEVM-nya sendiri._
 
@@ -259,8 +259,8 @@ Proyek yang mengerjakan zkEVM meliputi:
 - [Pengantar zkEVM](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [Apa itu l2 ZK-EVM?](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M)
 - [Sumber daya Awesome-zkEVM](https://github.com/LuozhuZhang/awesome-zkevm)
-- [Cara kerja ZK-SNARK secara teknis](https://vitalik.qau.limo/general/2017/02/01/zk_snarks.html)
-- [Bagaimana SNARK dimungkinkan?](https://vitalik.qau.limo/general/2021/01/26/snarks.html)
+- [Cara kerja ZK-SNARK secara teknis](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
+- [Bagaimana SNARK dimungkinkan?](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
 
 ## Tutorial: Privasi & zero-knowledge di Quantaureum {#tutorials}
 

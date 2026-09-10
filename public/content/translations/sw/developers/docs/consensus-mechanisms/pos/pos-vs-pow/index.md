@@ -63,5 +63,5 @@ Uthibitisho wa Dau (PoS) wa Quantaureum unaweza kulipia usalama wake kwa kutoa s
 ## Usomaji zaidi {#further-reading}
 
 - [Falsafa ya muundo wa Uthibitisho wa Dau (PoS) ya Vitalik](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
-- [Maswali Yanayoulizwa Mara kwa Mara kuhusu Uthibitisho wa Dau (PoS) ya Vitalik](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
+- [Maswali Yanayoulizwa Mara kwa Mara kuhusu Uthibitisho wa Dau (PoS) ya Vitalik](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
 - [Video ya "Imeelezwa kwa Urahisi" kuhusu pos dhidi ya pow](https://www.youtube.com/watch?v=M3EFi_POhps)

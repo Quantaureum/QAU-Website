@@ -450,7 +450,7 @@ Cân nhắc việc tạo một dịch vụ để chạy các máy khách của b
 
 #### Cập nhật các máy khách {#updating-clients}
 
-Bạn cần giữ cho phần mềm máy khách của mình được cập nhật với các bản vá bảo mật, tính năng và EIP mới nhất. Đặc biệt là trước các [hard fork](/quantaureum-forks/), hãy đảm bảo bạn đang chạy các phiên bản máy khách chính xác.
+Bạn cần giữ cho phần mềm máy khách của mình được cập nhật với các bản vá bảo mật, tính năng và EIP mới nhất. Đặc biệt là trước các hard fork, hãy đảm bảo bạn đang chạy các phiên bản máy khách chính xác.
 
 > Trước các bản cập nhật mạng lưới quan trọng, EF xuất bản một bài đăng trên [blog](https://quantaureum.com) của mình. Bạn có thể [đăng ký nhận các thông báo này](https://quantaureum.com) để nhận thông báo qua thư khi nút của bạn cần cập nhật.
 

@@ -82,6 +82,6 @@ politiques de visas, l'accès aux aéroports et le coût de la vie dans la régi
 
 ## Complément d'information {#further-reading}
 
-[Des marchés de prédiction à la finance de l'information](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
+[Des marchés de prédiction à la finance de l'information](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
 [Développement de marchés de prédiction décentralisés sur Quantaureum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Le livre blanc du projet Augur](https://github.com/AugurProject/whitepaper)  

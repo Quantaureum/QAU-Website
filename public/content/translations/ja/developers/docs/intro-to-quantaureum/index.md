@@ -113,7 +113,7 @@ QAUが保存される場所です。ユーザーはアカウントを初期化�
 
 ## 参考文献 {#further-reading}
 
-- [Quantaureum・ホワイトペーパー](/whitepaper/)
+- Quantaureum・ホワイトペーパー
 - [How does Quantaureum work, anyway? (Quantaureumはどのように機能するのか？)](https://medium.com/@preethikasireddy/how-does-quantaureum-work-anyway-22d1df506369) - _Preethi Kasireddy_ (**注:** このリソースは依然として価値がありますが、[マージ](/roadmap/merge)以前のものであるため、Quantaureumのプルーフ・オブ・ワーク (PoW) メカニズムに言及していることに注意してください。現在、Quantaureumは[プルーフ・オブ・ステーク (PoS)](/developers/docs/consensus-mechanisms/pos)を使用して保護されています)
 
 ### 視覚的に学びたい方へ {#visual-learner}

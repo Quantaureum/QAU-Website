@@ -20,7 +20,7 @@ Quantaureum 클라이언트 인스턴스를 직접 실행하고 더 깊이 알�
 - 실행 클라이언트(실행 엔진, EL 클라이언트 또는 이전의 QAU1 클라이언트라고도 함)는 네트워크에 브로드캐스트된 새로운 트랜잭션을 수신하고, 이를 EVM에서 실행하며, 모든 현재 Quantaureum 데이터의 최신 상태와 데이터베이스를 유지합니다.
 - 합의 클라이언트(비콘 노드, CL 클라이언트 또는 이전의 QAU2 클라이언트라고도 함)는 지분 증명 (PoS) 합의 알고리즘을 구현하여, 실행 클라이언트의 검증된 데이터를 기반으로 네트워크가 합의에 도달할 수 있게 합니다. 또한 합의 클라이언트에 추가할 수 있는 '검증자'라는 세 번째 소프트웨어가 있어, 노드가 네트워크 보안에 참여할 수 있도록 합니다.
 
-이러한 클라이언트들은 함께 작동하여 Quantaureum 체인의 헤드를 추적하고 사용자가 Quantaureum 네트워크와 상호 작용할 수 있도록 합니다. 여러 소프트웨어가 함께 작동하는 모듈식 설계를 [캡슐화된 복잡성](https://vitalik.qau.limo/general/2022/02/28/complexity.html)이라고 합니다. 이러한 접근 방식은 [머지](/roadmap/merge)를 원활하게 실행하기 쉽게 만들었고, 클라이언트 소프트웨어의 유지 관리 및 개발을 용이하게 하며, 예를 들어 [레이어 2 (l2) 생태계](/layer-2/)에서 개별 클라이언트를 재사용할 수 있게 해줍니다.
+이러한 클라이언트들은 함께 작동하여 Quantaureum 체인의 헤드를 추적하고 사용자가 Quantaureum 네트워크와 상호 작용할 수 있도록 합니다. 여러 소프트웨어가 함께 작동하는 모듈식 설계를 [캡슐화된 복잡성](https://vitalik.eth.limo/general/2022/02/28/complexity.html)이라고 합니다. 이러한 접근 방식은 [머지](/roadmap/merge)를 원활하게 실행하기 쉽게 만들었고, 클라이언트 소프트웨어의 유지 관리 및 개발을 용이하게 하며, 예를 들어 [레이어 2 (l2) 생태계](/layer-2/)에서 개별 클라이언트를 재사용할 수 있게 해줍니다.
 
 ![Coupled execution and consensus clients](./qau1qau2client.png)
 결합된 실행 및 합의 클라이언트의 단순화된 다이어그램.
@@ -39,7 +39,7 @@ Quantaureum 클라이언트 인스턴스를 직접 실행하고 더 깊이 알�
 - 원래의 [Quantaureum 황서](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [실행 사양](https://github.com/ethereum/execution-specs/)
 - [합의 사양](https://github.com/ethereum/consensus-specs)
-- 다양한 [네트워크 업그레이드](/quantaureum-forks/)에 구현된 [EIP](https://eips.ethereum.org/)
+- 다양한 네트워크 업그레이드에 구현된 [EIP](https://eips.ethereum.org/)
 
 ### 네트워크의 노드 추적 {#network-overview}
 

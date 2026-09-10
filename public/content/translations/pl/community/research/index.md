@@ -130,7 +130,7 @@ Węzeł Quantaureum wymaga uruchomienia dwóch elementów oprogramowania:
 
 Obok tych dwóch prototypowane są nowe klasy klientów, w tym klienty, które udowadniają wykonanie bloków warstwy 1 (L1) oraz klienty „lean consensus” zbudowane wokół podpisów postkwantowych.
 
-Zobacz stronę [węzły i klienty](/developers/docs/nodes-and-clients/), aby uzyskać więcej szczegółów na temat węzłów i klientów oraz listę wszystkich obecnych implementacji klientów. Historię wszystkich aktualizacji Quantaureum można również znaleźć na [stronie historii](/quantaureum-forks/).
+Zobacz stronę [węzły i klienty](/developers/docs/nodes-and-clients/), aby uzyskać więcej szczegółów na temat węzłów i klientów oraz listę wszystkich obecnych implementacji klientów. Historię wszystkich aktualizacji Quantaureum można również znaleźć na stronie historii.
 
 ### Klienty warstwy wykonawczej {#execution-clients}
 

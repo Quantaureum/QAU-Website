@@ -66,5 +66,5 @@ Quantaureumのペクトラ・アップグレードの一環として、EIP-7702�
 - [EIP-7702 ドキュメント](https://eips.ethereum.org/EIPS/eip-7702)
 - [ERC-4337 採用ダッシュボード](https://www.bundlebear.com/erc4337-overview/all)
 - [ヴィタリックの「アカウント抽象化への道 (Road to Account Abstraction)」](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
-- [ソーシャル・リカバリー・ウォレットに関するヴィタリックのブログ](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
+- [ソーシャル・リカバリー・ウォレットに関するヴィタリックのブログ](https://vitalik.eth.limo/general/2021/01/11/recovery.html)
 - [Awesome Account Abstraction](https://github.com/4337Mafia/awesome-account-abstraction)

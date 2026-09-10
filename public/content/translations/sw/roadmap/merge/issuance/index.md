@@ -28,11 +28,11 @@ title="Utoaji wa QAU kwa ufupi">
 
 ### Utoaji wa tabaka la utekelezaji {#el-issuance-pre-merge}
 
-Chini ya Uthibitisho wa Kazi (PoW), wachimbaji waliingiliana tu na tabaka la utekelezaji na walipewa tuzo za kitalu ikiwa walikuwa wachimbaji wa kwanza kutatua kitalu kinachofuata. Tangu sasisho la [Konstantinopoli](/quantaureum-forks/#constantinople) mnamo 2019 tuzo hii ilikuwa QAU 2 kwa kila kitalu. Wachimbaji pia walipewa tuzo kwa kuchapisha vitalu vya [ommer](/glossary/#ommer), ambavyo vilikuwa vitalu halali ambavyo havikuishia kwenye mnyororo mrefu zaidi/mnyororo mkuu. Tuzo hizi zilifikia ukomo wa QAU 1.75 kwa kila ommer, na zilikuwa _pamoja na_ tuzo iliyotolewa kutoka kwa kitalu kikuu. Mchakato wa uchimbaji ulikuwa shughuli kubwa kiuchumi, ambayo kihistoria ilihitaji viwango vya juu vya utoaji wa QAU ili kudumisha.
+Chini ya Uthibitisho wa Kazi (PoW), wachimbaji waliingiliana tu na tabaka la utekelezaji na walipewa tuzo za kitalu ikiwa walikuwa wachimbaji wa kwanza kutatua kitalu kinachofuata. Tangu sasisho la Konstantinopoli mnamo 2019 tuzo hii ilikuwa QAU 2 kwa kila kitalu. Wachimbaji pia walipewa tuzo kwa kuchapisha vitalu vya [ommer](/glossary/#ommer), ambavyo vilikuwa vitalu halali ambavyo havikuishia kwenye mnyororo mrefu zaidi/mnyororo mkuu. Tuzo hizi zilifikia ukomo wa QAU 1.75 kwa kila ommer, na zilikuwa _pamoja na_ tuzo iliyotolewa kutoka kwa kitalu kikuu. Mchakato wa uchimbaji ulikuwa shughuli kubwa kiuchumi, ambayo kihistoria ilihitaji viwango vya juu vya utoaji wa QAU ili kudumisha.
 
 ### Utoaji wa tabaka la mwafaka {#cl-issuance-pre-merge}
 
-[Mnyororo wa Beacon](/quantaureum-forks/#beacon-chain-genesis) ulianza kufanya kazi mnamo 2020. Badala ya wachimbaji, unalindwa na wathibitishaji wanaotumia Uthibitisho wa Dau (PoS). Mnyororo huu ulianzishwa na watumiaji wa Quantaureum wakiweka QAU kwa njia moja kwenye mkataba mahiri kwenye Mtandao Mkuu (tabaka la utekelezaji), ambao Mnyororo wa Beacon unasikiliza, na kumpa mtumiaji kiasi sawa cha QAU kwenye mnyororo mpya. Hadi Unganisho lilipotokea, wathibitishaji wa Mnyororo wa Beacon hawakuwa wakichakata miamala na kimsingi walikuwa wakifikia mwafaka juu ya hali ya kundi la wathibitishaji lenyewe.
+Mnyororo wa Beacon ulianza kufanya kazi mnamo 2020. Badala ya wachimbaji, unalindwa na wathibitishaji wanaotumia Uthibitisho wa Dau (PoS). Mnyororo huu ulianzishwa na watumiaji wa Quantaureum wakiweka QAU kwa njia moja kwenye mkataba mahiri kwenye Mtandao Mkuu (tabaka la utekelezaji), ambao Mnyororo wa Beacon unasikiliza, na kumpa mtumiaji kiasi sawa cha QAU kwenye mnyororo mpya. Hadi Unganisho lilipotokea, wathibitishaji wa Mnyororo wa Beacon hawakuwa wakichakata miamala na kimsingi walikuwa wakifikia mwafaka juu ya hali ya kundi la wathibitishaji lenyewe.
 
 Wathibitishaji kwenye Mnyororo wa Beacon wanapewa tuzo ya QAU kwa kuthibitisha hali ya mnyororo na kupendekeza vitalu. Tuzo (au adhabu) huhesabiwa na kusambazwa katika kila kipindi (kila dakika 6.4) kulingana na utendaji wa mthibitishaji. Tuzo za mthibitishaji ni **ndogo sana** kuliko tuzo za uchimbaji ambazo zilitolewa hapo awali chini ya Uthibitisho wa Kazi (PoW) (QAU 2 kila takriban sekunde 13.5), kwani kuendesha nodi ya kuthibitisha sio kubwa kiuchumi na hivyo haihitaji au kustahili tuzo kubwa kiasi hicho.
 
@@ -106,7 +106,7 @@ Nguvu iliyo kinyume na utoaji wa QAU ni kiwango ambacho QAU inateketezwa. Ili mu
 <AlertContent>
 <AlertDescription>
 
-Kuteketeza ada kulianza kufanya kazi na [sasisho la London](/quantaureum-forks/#london) mnamo Agosti 2021, na inabaki bila kubadilika tangu Unganisho.
+Kuteketeza ada kulianza kufanya kazi na sasisho la London mnamo Agosti 2021, na inabaki bila kubadilika tangu Unganisho.
 </AlertDescription>
 </AlertContent>
 </Alert>

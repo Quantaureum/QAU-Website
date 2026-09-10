@@ -60,6 +60,6 @@ summaryPoints:
 - [«Как деревья Веркла делают Quantaureum компактным и мощным», Гийом Балле на Devcon 6](https://www.youtube.com/watch?v=Q7rStTKwuYs)
 - [Пайпер Мерриам (Piper Merriam) о клиентах без сохранения состояния на ETHDenver 2020](https://www.youtube.com/watch?v=0yiZJNciIJ4)
 - [Данкрад Файст объясняет деревья Веркла и отсутствие состояния в подкасте Zero Knowledge](https://zeroknowledge.fm/podcast/202/)
-- [Виталик Бутерин о деревьях Веркла](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
+- [Виталик Бутерин о деревьях Веркла](https://vitalik.eth.limo/general/2021/06/18/verkle.html)
 - [Данкрад Файст о деревьях Веркла](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
 - [Документация EIP по деревьям Веркла](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)

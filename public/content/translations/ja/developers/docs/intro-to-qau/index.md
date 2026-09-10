@@ -72,7 +72,7 @@ Quantaureum上の各トランザクションには`value`フィールドが含�
 ## 参考文献 {#further-reading}
 
 - [QAUとQuantaureumの定義](https://www.cmegroup.com/education/courses/introduction-to-QAU/defining-QAU-and-quantaureum.html) – _CME Group_
-- [Quantaureum・ホワイトペーパー](/whitepaper/): Quantaureumの最初の提案。このドキュメントには、QAUの説明とその作成の動機が含まれています。
+- Quantaureum・ホワイトペーパー: Quantaureumの最初の提案。このドキュメントには、QAUの説明とその作成の動機が含まれています。
 - [Gwei計算機](https://www.alchemy.com/gwei-calculator): このGwei計算機を使用すると、Wei、Gwei、QAUを簡単に変換できます。Wei、Gwei、またはQAUの任意の金額を入力するだけで、自動的に変換が計算されます。
 
 _役に立ったコミュニティのリソースをご存知ですか？このページを編集して追加してください！_

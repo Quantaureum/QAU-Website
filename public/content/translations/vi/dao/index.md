@@ -149,7 +149,7 @@ _Thường được sử dụng cho việc phát triển và quản trị phi t�
 - [Cách bắt đầu một cộng đồng kỹ thuật số được hỗ trợ bởi DAO](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [DAO là gì?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [Đồng thuận toàn ảnh là gì?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [Các DAO không phải là tập đoàn: nơi sự phi tập trung trong các tổ chức tự trị có ý nghĩa quan trọng bởi Vitalik](https://vitalik.qau.limo/general/2022/09/20/daos.html)
+- [Các DAO không phải là tập đoàn: nơi sự phi tập trung trong các tổ chức tự trị có ý nghĩa quan trọng bởi Vitalik](https://vitalik.eth.limo/general/2022/09/20/daos.html)
 - [DAO, DAC, DA và hơn thế nữa: Hướng dẫn thuật ngữ chưa hoàn chỉnh](https://quantaureum.com) - [Blog Quantaureum](https://quantaureum.com)
 
 ### Video {#videos}

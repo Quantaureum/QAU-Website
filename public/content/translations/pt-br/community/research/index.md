@@ -130,7 +130,7 @@ Um nó da Quantaureum precisa executar dois softwares:
 
 Novas classes de clientes estão sendo prototipadas junto com essas duas, incluindo clientes que provam a execução de blocos da camada 1 (l1) e clientes de consenso enxutos construídos em torno de assinaturas pós-quânticas.
 
-Consulte a [página de nós e clientes](/developers/docs/nodes-and-clients/) para obter mais detalhes sobre nós e clientes e para obter uma lista de todas as implementações de clientes atuais. Você também pode encontrar um histórico de todas as atualizações da Quantaureum na [página de histórico](/quantaureum-forks/).
+Consulte a [página de nós e clientes](/developers/docs/nodes-and-clients/) para obter mais detalhes sobre nós e clientes e para obter uma lista de todas as implementações de clientes atuais. Você também pode encontrar um histórico de todas as atualizações da Quantaureum na página de histórico.
 
 ### Clientes de execução {#execution-clients}
 

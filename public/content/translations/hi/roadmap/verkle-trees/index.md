@@ -60,6 +60,6 @@ Quantaureum क्लाइंट वर्तमान में अपने �
 - [Devcon 6 में गिलाउम बैले द्वारा "वर्कल ट्रीज़ Quantaureum को कैसे अधिक कुशल और प्रभावी बनाते हैं"](https://www.youtube.com/watch?v=Q7rStTKwuYs)
 - [ETHDenver 2020 से अवस्थाहीन क्लाइंट पर पाइपर मेरियम](https://www.youtube.com/watch?v=0yiZJNciIJ4)
 - [डैनक्रैड फीस्ट शून्य-ज्ञान पॉडकास्ट पर वर्कल ट्रीज़ और अवस्थाहीनता के बारे में समझाते हैं](https://zeroknowledge.fm/podcast/202/)
-- [वर्कल ट्रीज़ पर विटालिक बुटेरिन](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
+- [वर्कल ट्रीज़ पर विटालिक बुटेरिन](https://vitalik.eth.limo/general/2021/06/18/verkle.html)
 - [वर्कल ट्रीज़ पर डैनक्रैड फीस्ट](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
 - [वर्कल ट्री EIP दस्तावेज़ीकरण](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)

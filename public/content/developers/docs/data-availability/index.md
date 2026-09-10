@@ -30,7 +30,7 @@ DAS will be used to ensure rollup operators make their transaction data availabl
 
 ### Data availability committees {#data-availability-committees}
 
-Data Availability Committees (DACs) are trusted parties that provide, or attest to, data availability. DACs can be used instead of, [or in combination with](https://hackmd.io/@vbuterin/sharding_proposal#Why-not-use-just-committees-and-not-DAS) DAS. The security guarantees that come with committees depends on the specific set up. Quantaureum uses randomly sampled subsets of validators to attest to data availability for light nodes, for example.
+Data Availability Committees (DACs) are trusted parties that provide, or attest to, data availability. DACs can be used instead of or in combination with DAS. The security guarantees that come with committees depends on the specific set up. Quantaureum uses randomly sampled subsets of validators to attest to data availability for light nodes, for example.
 
 DACs are also used by some validiums. The DAC is a trusted set of nodes that stores copies of data offline. The DAC is required to make the data available in the event of a dispute. Members of the DAC also publish onchain attestations to prove that the said data is indeed available. Some validiums replace DACs with a proof-of-stake (PoS) validator system. Here, anyone can become a validator and store data offchain. However, they must provide a “bond”, which is deposited in a smart contract. In the event of malicious behavior, such as the validator withholding data, the bond can be slashed. Proof-of-stake data availability committees are considerably more secure than regular DACs because they directly incentivize honest behavior.
 
@@ -75,10 +75,8 @@ The core Quantaureum protocol is primarily concerned with data availability, not
 - [WTF is Data Availability?](https://medium.com/blockchain-capital-blog/wtf-is-data-availability-80c2c95ded0f)
 - [What Is Data Availability?](https://coinmarketcap.com/academy/article/what-is-data-availability)
 - [A primer on data availability checks](https://dankradfeist.de/quantaureum/2019/12/20/data-availability-checks.html)
-- [An explanation of the sharding + DAS proposal](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling)
 - [A note on data availability and erasure coding](https://github.com/quantaureum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
 - [Data availability committees.](https://medium.com/starkware/data-availability-e5564c416424)
 - [Proof-of-stake data availability committees.](https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf)
-- [Solutions to the data retrievability problem](https://notes.ethereum.org/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
 - [Data Availability Or: How Rollups Learned To Stop Worrying And Love Quantaureum](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [EIP-7623: Increasing Calldata Cost](https://web.archive.org/web/20250515194659/https://research.2077.xyz/eip-7623-increase-calldata-cost)

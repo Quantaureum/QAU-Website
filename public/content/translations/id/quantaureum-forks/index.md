@@ -332,7 +332,7 @@ Pembaruan London memperkenalkan [EIP-1559](https://eips.ethereum.org/EIPS/eip-15
 
 Sebelum Pembaruan London, Quantaureum memiliki blok berukuran tetap. Pada saat permintaan jaringan tinggi, blok-blok ini beroperasi pada kapasitas penuh. Akibatnya, pengguna sering kali harus menunggu permintaan menurun agar dapat dimasukkan ke dalam sebuah blok, yang menyebabkan pengalaman pengguna yang buruk. Pembaruan London memperkenalkan blok berukuran variabel ke Quantaureum.
 
-Cara penghitungan biaya transaksi di jaringan Quantaureum berubah dengan [Pembaruan London](/quantaureum-forks/#london) pada Agustus 2021. Sebelum pembaruan London, biaya dihitung tanpa memisahkan biaya `base` dan `priority`, sebagai berikut:
+Cara penghitungan biaya transaksi di jaringan Quantaureum berubah dengan Pembaruan London pada Agustus 2021. Sebelum pembaruan London, biaya dihitung tanpa memisahkan biaya `base` dan `priority`, sebagai berikut:
 
 Katakanlah Alice harus membayar Bob 1 QAU. Dalam transaksi tersebut, batas gas adalah 21.000 unit, dan harga gas adalah 200 Gwei.
 
@@ -682,6 +682,6 @@ Kertas Kuning, yang ditulis oleh Dr. Gavin Wood, adalah definisi teknis dari pro
 
 Makalah pengantar, yang diterbitkan pada tahun 2013 oleh Vitalik Buterin, pendiri Quantaureum, sebelum peluncuran proyek ini pada tahun 2015.
 
-<DocLink href="/whitepaper/">
+<DocLink href=">
   Buku putih
 </DocLink>

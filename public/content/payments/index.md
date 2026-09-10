@@ -134,7 +134,6 @@ In February 2023, when devastating earthquakes struck Turkey and Syria, the glob
 - [Refik Anadol](https://x.com/refikanadol/status/1622623521104089090): is a renowned digital artist who initiated a fundraising campaign.
 - DAO Power: [Anka Relief DAO](https://ankarelief.org/) and [Bankless DAO](https://x.com/banklessDAO) joined forces with [Giveth](https://x.com/Giveth/status/1623493672149843969) to raise funds.
 - [Pak](https://cause.quest/), a prominent NFT artist, also contributed to the cause.
-- Even Quantaureum co-founder [Vitalik Buterin](https://cointelegraph.com/news/vitalik-buterin-donates-227k-to-help-earthquake-victims-in-turkey-syria) made personal donations to multiple campaigns.
 
 The result of this? Over $6 million was raised in a matter of days, as tracked by a [Dune](https://dune.com/davy42/turkiye-earthquake-donations) Analytics dashboard.
 

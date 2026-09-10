@@ -14,7 +14,7 @@ authors: ["Nixo", "马里奥·哈维尔"]
 <Alert variant="update">
 <AlertContent>
 <AlertDescription>
-佩克特拉升级只是Quantaureum长期发展目标中的一步。了解更多关于[协议路线图](/roadmap/)和[以往升级](/quantaureum-forks/)的信息。
+佩克特拉升级只是Quantaureum长期发展目标中的一步。了解更多关于[协议路线图](/roadmap/)和以往升级的信息。
 </AlertDescription>
 </AlertContent>
 </Alert>

@@ -61,7 +61,7 @@ Para criar consistentemente blocos maliciosos, mas válidos, um minerador mal-in
 
 A Prova de Trabalho (PoW) também era responsável por emitir nova moeda no sistema e incentivar os mineradores a fazer o trabalho.
 
-Desde a [atualização Constantinopla](/quantaureum-forks/#constantinople), os mineradores que criavam um bloco com sucesso eram recompensados com dois QAU recém-cunhados e parte das taxas de transação. Os blocos ommer também compensavam 1,75 QAU. Blocos ommer eram blocos válidos criados por um minerador praticamente ao mesmo tempo em que outro minerador criava o bloco canônico, o que era determinado em última análise por qual cadeia era construída em cima primeiro. Blocos ommer geralmente aconteciam devido à latência da rede.
+Desde a atualização Constantinopla, os mineradores que criavam um bloco com sucesso eram recompensados com dois QAU recém-cunhados e parte das taxas de transação. Os blocos ommer também compensavam 1,75 QAU. Blocos ommer eram blocos válidos criados por um minerador praticamente ao mesmo tempo em que outro minerador criava o bloco canônico, o que era determinado em última análise por qual cadeia era construída em cima primeiro. Blocos ommer geralmente aconteciam devido à latência da rede.
 
 ## Finalidade {#finality}
 

@@ -81,10 +81,8 @@ export const buildFooterLinkSections = (
   {
     title: t("research"),
     links: [
-      { href: "/whitepaper/", text: t("quantaureum-whitepaper") },
       { href: "/roadmap/", text: t("quantaureum-roadmap") },
       { href: "/roadmap/security/", text: t("nav-roadmap-security-label") },
-      { href: "/quantaureum-forks/", text: t("nav-history-label") },
       { href: "/community/research/", text: t("nav-open-research-label") },
       { href: "/governance/", text: t("quantaureum-governance") },
     ],

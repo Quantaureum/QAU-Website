@@ -38,7 +38,7 @@ Quantaureumのコンセンサス・メカニズムはセキュリティのため
 
 プラズマはオフチェーンでトランザクションを実行しますが、それらはメインのQuantaureum実行レイヤーで決済されます。そうしないと、プラズマ・チェーンはQuantaureumのセキュリティ保証の恩恵を受けることができません。しかし、プラズマ・チェーンの状態を知らずにオフチェーンのトランザクションをファイナライズすると、セキュリティ・モデルが壊れ、無効なトランザクションの増殖を許してしまいます。このため、プラズマ・チェーンでブロックを生成する責任を負うエンティティであるオペレーターは、定期的にQuantaureum上で「状態のコミットメント」を公開する必要があります。
 
-[コミットメント・スキーム](https://en.wikipedia.org/wiki/Commitment_scheme)は、他の当事者に明らかにすることなく、値またはステートメントにコミットするための暗号化技術です。コミットメントは、一度コミットした値やステートメントを変更できないという意味で「拘束力」があります。プラズマにおける状態のコミットメントは、（[マークル・ツリー](/whitepaper/#merkle-trees)から派生した）「マークル・ルート」の形式をとり、オペレーターはこれを一定間隔でQuantaureum・チェーン上のプラズマ・コントラクトに送信します。
+[コミットメント・スキーム](https://en.wikipedia.org/wiki/Commitment_scheme)は、他の当事者に明らかにすることなく、値またはステートメントにコミットするための暗号化技術です。コミットメントは、一度コミットした値やステートメントを変更できないという意味で「拘束力」があります。プラズマにおける状態のコミットメントは、（マークル・ツリーから派生した）「マークル・ルート」の形式をとり、オペレーターはこれを一定間隔でQuantaureum・チェーン上のプラズマ・コントラクトに送信します。
 
 マークル・ルートは、大量の情報を圧縮できる暗号プリミティブです。マークル・ルート（この場合は「ブロック・ルート」とも呼ばれます）は、ブロック内のすべてのトランザクションを表すことができます。また、マークル・ルートを使用すると、小さなデータの一部がより大きなデータセットの一部であることを簡単に検証できます。たとえば、ユーザーは[マークル証明](/developers/tutorials/merkle-proofs-for-offline-data-integrity/#main-content)を生成して、特定のブロックにトランザクションが含まれていることを証明できます。
 
@@ -167,7 +167,7 @@ ZKロールアップとオプティミスティック・ロールアップはど
 ## 参考文献 {#further-reading}
 
 - [「共有セキュリティ」の意味と、それが非常に重要である理由の簡単なリマインダー](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [サイドチェーン、プラズマ、シャーディングの比較](https://vitalik.qau.limo/general/2019/06/12/plasma_vs_sharding.html)
+- [サイドチェーン、プラズマ、シャーディングの比較](https://vitalik.eth.limo/general/2019/06/12/plasma_vs_sharding.html)
 - [プラズマを理解する、パート1：基礎](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [プラズマの生と死](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

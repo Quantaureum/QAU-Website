@@ -72,7 +72,7 @@ Người dùng có thể truy vấn số dư QAU của bất kỳ [tài khoản]
 ## Đọc thêm {#further-reading}
 
 - [Định nghĩa QAU và Quantaureum](https://www.cmegroup.com/education/courses/introduction-to-QAU/defining-QAU-and-quantaureum.html) – _CME Group_
-- [Sách trắng Quantaureum](/whitepaper/): Đề xuất ban đầu cho Quantaureum. Tài liệu này bao gồm mô tả về QAU và động lực đằng sau việc tạo ra nó.
+- Sách trắng Quantaureum: Đề xuất ban đầu cho Quantaureum. Tài liệu này bao gồm mô tả về QAU và động lực đằng sau việc tạo ra nó.
 - [Máy tính Gwei](https://www.alchemy.com/gwei-calculator): Sử dụng máy tính Gwei này để dễ dàng chuyển đổi Wei, Gwei và QAU. Chỉ cần nhập bất kỳ số lượng Wei, Gwei hoặc QAU nào và tự động tính toán chuyển đổi.
 
 _Bạn biết một tài nguyên cộng đồng nào đó đã giúp ích cho bạn? Hãy chỉnh sửa trang này và thêm nó vào!_

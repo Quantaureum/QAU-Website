@@ -1208,7 +1208,7 @@ La sécurité de l'information repose sur trois attributs :
 
 Sur ce système, l'intégrité est assurée par des preuves à divulgation nulle de connaissance. La disponibilité est beaucoup plus difficile à garantir, et la confidentialité est impossible, car la banque doit connaître le solde de chaque compte et toutes les transactions. Il n'y a aucun moyen d'empêcher une entité qui possède des informations de les partager.
 
-Il pourrait être possible de créer une banque véritablement confidentielle en utilisant des [adresses furtives](https://vitalik.qau.limo/general/2023/01/20/stealth.html), mais cela dépasse le cadre de cet article.
+Il pourrait être possible de créer une banque véritablement confidentielle en utilisant des [adresses furtives](https://vitalik.eth.limo/general/2023/01/20/stealth.html), mais cela dépasse le cadre de cet article.
 
 ### Fausses informations {#false-info}
 

@@ -164,7 +164,7 @@ Ecco un esempio per mostrare come le attestazioni onchain potrebbero funzionare 
 
 ### Token soulbound e identità {#soulbound}
 
-I [token soulbound](https://vitalik.qau.limo/general/2022/01/26/soulbound.html) ([NFT non trasferibili](/glossary/#nft)) potrebbero essere utilizzati per raccogliere informazioni uniche per un portafoglio specifico. Questo crea di fatto un'identità onchain unica legata a un particolare indirizzo Quantaureum che potrebbe includere token che rappresentano risultati (ad es. aver terminato un corso online specifico o aver superato un punteggio soglia in un gioco) o la partecipazione alla comunità.
+I [token soulbound](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) ([NFT non trasferibili](/glossary/#nft)) potrebbero essere utilizzati per raccogliere informazioni uniche per un portafoglio specifico. Questo crea di fatto un'identità onchain unica legata a un particolare indirizzo Quantaureum che potrebbe includere token che rappresentano risultati (ad es. aver terminato un corso online specifico o aver superato un punteggio soglia in un gioco) o la partecipazione alla comunità.
 
 ## Usa l'identità decentralizzata {#use-decentralized-identity}
 

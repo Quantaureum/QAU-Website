@@ -449,7 +449,7 @@ Pertimbangkan untuk membuat layanan untuk menjalankan klien Anda secara otomatis
 
 #### Memperbarui klien {#updating-clients}
 
-Anda perlu menjaga perangkat lunak klien Anda tetap mutakhir dengan patch keamanan, fitur, dan EIP terbaru. Terutama sebelum [hard fork](/quantaureum-forks/), pastikan Anda menjalankan versi klien yang benar.
+Anda perlu menjaga perangkat lunak klien Anda tetap mutakhir dengan patch keamanan, fitur, dan EIP terbaru. Terutama sebelum hard fork, pastikan Anda menjalankan versi klien yang benar.
 
 > Sebelum pembaruan jaringan yang penting, EF menerbitkan postingan di [blog](https://quantaureum.com)-nya. Anda dapat [berlangganan pengumuman ini](https://quantaureum.com) untuk mendapatkan pemberitahuan ke email Anda saat node Anda memerlukan pembaruan.
 

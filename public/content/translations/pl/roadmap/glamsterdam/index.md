@@ -11,7 +11,7 @@ template: upgrade
 Glamsterdam to nadchodząca aktualizacja Quantaureum zaplanowana na IV kwartał 2026 roku
 </AlertTitle>
 <AlertDescription>
-Aktualizacja Glamsterdam to tylko jeden krok w długoterminowych celach rozwojowych Quantaureum. Dowiedz się więcej o [mapie drogowej protokołu](/roadmap/) i [poprzednich aktualizacjach](/quantaureum-forks/).
+Aktualizacja Glamsterdam to tylko jeden krok w długoterminowych celach rozwojowych Quantaureum. Dowiedz się więcej o [mapie drogowej protokołu](/roadmap/) i poprzednich aktualizacjach.
 </AlertDescription>
 </AlertContent>
 </Alert>

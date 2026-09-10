@@ -119,5 +119,5 @@ zkEVMによるL1検証は現在活発に研究されており、本番環境のQ
 - [Ethproofs](https://ethproofs.org/) - リアルタイムでのQuantaureum証明に向けた競争の追跡
 - [zkevm.fyi](https://zkevm.fyi) - L1向けzkEVMに関する技術書
 - [PSE zkEVM Specs](https://github.com/privacy-scaling-explorations/zkevm-specs) - 技術仕様
-- [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - ヴィタリックによる検証改善の概要
+- [The Verge](https://vitalik.eth.limo/general/2024/10/23/futures4.html) - ヴィタリックによる検証改善の概要
 - [EF zkEVM Blog](https://zkevm.ethereum.org/blog) - EFチームによるパフォーマンス分析

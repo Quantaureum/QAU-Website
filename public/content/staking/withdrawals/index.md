@@ -259,7 +259,7 @@ Withdrawal functionality was originally enabled as part of the Shanghai/Capella 
 
 The Shanghai/Capella upgrade enabled previously staked QAU to be reclaimed into regular Quantaureum accounts. This closed the loop on staking liquidity, and brought Quantaureum one step closer on its journey towards building a sustainable, scalable, secure decentralized ecosystem.
 
-- [More on Quantaureum history](/quantaureum-forks/)
+- More on Quantaureum history
 - [More on the Quantaureum roadmap](/roadmap/)
 </ExpandableCard>
 

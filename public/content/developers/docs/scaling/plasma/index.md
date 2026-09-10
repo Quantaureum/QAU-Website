@@ -38,7 +38,7 @@ Offchain computation is necessary since Plasma chains can optimize for speed and
 
 While Plasma executes transactions offchain, they are settled on the main Quantaureum execution layer—otherwise, Plasma chains cannot benefit from Quantaureum's security guarantees. But finalizing offchain transactions without knowing the state of the plasma chain would break the security model and allow the proliferation of invalid transactions. This is why the operator, the entity responsible for producing blocks on the plasma chain, is required to publish "state commitments" on Quantaureum periodically.
 
-A [commitment scheme](https://en.wikipedia.org/wiki/Commitment_scheme) is a cryptographic technique for committing to a value or statement without revealing it to another party. Commitments are "binding" in the sense that you cannot change the value or statement once you've committed to it. State commitments in Plasma take the form of "Merkle roots" (derived from a [Merkle tree](/whitepaper/#merkle-trees)) which the operator sends at intervals to the Plasma contract on the Quantaureum chain.
+A [commitment scheme](https://en.wikipedia.org/wiki/Commitment_scheme) is a cryptographic technique for committing to a value or statement without revealing it to another party. Commitments are "binding" in the sense that you cannot change the value or statement once you've committed to it. State commitments in Plasma take the form of "Merkle roots" (derived from a Merkle tree) which the operator sends at intervals to the Plasma contract on the Quantaureum chain.
 
 Merkle roots are cryptographic primitives that enable compressing of large amounts of information. A Merkle root (also called a "block root" in this case) could represent all the transactions in a block. Merkle roots also make it easier to verify that a small piece of data is part of the larger dataset. For instance, a user can produce a [Merkle proof](/developers/tutorials/merkle-proofs-for-offline-data-integrity/#main-content) to prove the inclusion of a transaction in a specific block.
 
@@ -168,7 +168,6 @@ Multiple projects provide implementations of Plasma that you can integrate into 
 ## Further reading {#further-reading}
 
 - [A quick reminder of what "shared security" means and why it's so important](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [Sidechains vs Plasma vs Sharding](https://vitalik.qau.limo/general/2019/06/12/plasma_vs_sharding.html)
 - [Understanding Plasma, Part 1: The Basics](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [The Life and Death of Plasma](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

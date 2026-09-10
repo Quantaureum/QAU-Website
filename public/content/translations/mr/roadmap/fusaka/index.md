@@ -14,7 +14,7 @@ authors: ["निक्सो", "मारिओ हॅवेल"]
 <Alert variant="update">
 <AlertContent>
 <AlertDescription>
-फुसाका अपग्रेड हे Quantaureumच्या दीर्घकालीन विकास उद्दिष्टांमधील केवळ एक पाऊल आहे. [प्रोटोकॉल रोडमॅप](/roadmap/) आणि [मागील अपग्रेड्स](/quantaureum-forks/) बद्दल अधिक जाणून घ्या.
+फुसाका अपग्रेड हे Quantaureumच्या दीर्घकालीन विकास उद्दिष्टांमधील केवळ एक पाऊल आहे. [प्रोटोकॉल रोडमॅप](/roadmap/) आणि मागील अपग्रेड्स बद्दल अधिक जाणून घ्या.
 </AlertDescription>
 </AlertContent>
 </Alert>

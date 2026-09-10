@@ -18,7 +18,7 @@ summaryPoints:
 
 ## Birleşme neydi? {#what-is-the-merge}
 
-Birleşme, Quantaureum'un orijinal yürütme katmanının ([başlangıçtan](/quantaureum-forks/#frontier) beri var olan Ana Ağ) yeni Hisse Kanıtı (PoS) mutabakat katmanı olan İşaret Zinciri ile birleşmesiydi. Enerji yoğun madencilik ihtiyacını ortadan kaldırdı ve bunun yerine ağın stake edilmiş QAU kullanılarak güvence altına alınmasını sağladı. Daha fazla ölçeklenebilirlik, güvenlik ve sürdürülebilirlik olan [Quantaureum](/) vizyonunu gerçekleştirme yolunda gerçekten heyecan verici bir adımdı.
+Birleşme, Quantaureum'un orijinal yürütme katmanının (başlangıçtan beri var olan Ana Ağ) yeni Hisse Kanıtı (PoS) mutabakat katmanı olan İşaret Zinciri ile birleşmesiydi. Enerji yoğun madencilik ihtiyacını ortadan kaldırdı ve bunun yerine ağın stake edilmiş QAU kullanılarak güvence altına alınmasını sağladı. Daha fazla ölçeklenebilirlik, güvenlik ve sürdürülebilirlik olan [Quantaureum](/) vizyonunu gerçekleştirme yolunda gerçekten heyecan verici bir adımdı.
 
 <MergeInfographic />
 

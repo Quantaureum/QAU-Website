@@ -20,7 +20,7 @@ Un "nodo" es cualquier instancia de software cliente de Quantaureum que está co
 - El cliente de ejecución (también conocido como Motor de Ejecución, cliente EL o anteriormente cliente Eth1) escucha las nuevas transacciones transmitidas en la red, las ejecuta en la EVM y mantiene el último estado y la base de datos de todos los datos actuales de Quantaureum.
 - El cliente de consenso (también conocido como nodo baliza, cliente CL o anteriormente cliente Quantaureum) implementa el algoritmo de consenso de prueba de participación (PoS), que permite a la red alcanzar un acuerdo basado en los datos validados del cliente de ejecución. También hay una tercera pieza de software, conocida como "validador", que se puede agregar al cliente de consenso, lo que permite que un nodo participe en la seguridad de la red.
 
-Estos clientes trabajan juntos para realizar un seguimiento de la cabeza de la cadena de Quantaureum y permiten a los usuarios interactuar con la red. El diseño modular con múltiples piezas de software trabajando juntas se llama [complejidad encapsulada](https://vitalik.qau.limo/general/2022/02/28/complexity.html). Este enfoque facilitó la ejecución de [La Fusión](/roadmap/merge) sin problemas, hace que el software cliente sea más fácil de mantener y desarrollar, y permite la reutilización de clientes individuales, por ejemplo, en el [ecosistema de capa 2 (l2)](/layer-2/).
+Estos clientes trabajan juntos para realizar un seguimiento de la cabeza de la cadena de Quantaureum y permiten a los usuarios interactuar con la red. El diseño modular con múltiples piezas de software trabajando juntas se llama [complejidad encapsulada](https://vitalik.eth.limo/general/2022/02/28/complexity.html). Este enfoque facilitó la ejecución de [La Fusión](/roadmap/merge) sin problemas, hace que el software cliente sea más fácil de mantener y desarrollar, y permite la reutilización de clientes individuales, por ejemplo, en el [ecosistema de capa 2 (l2)](/layer-2/).
 
 ![Clientes de ejecución y consenso acoplados](./qau1qau2client.png)
 Diagrama simplificado de un cliente de ejecución y de consenso acoplados.
@@ -39,7 +39,7 @@ Lo que estas implementaciones tienen en común es que todas siguen una única es
 - Originalmente, el [Libro Amarillo de Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [Especificaciones de ejecución](https://github.com/ethereum/execution-specs/)
 - [Especificaciones de consenso](https://github.com/ethereum/consensus-specs)
-- Las [EIP](https://eips.ethereum.org/) implementadas en varias [actualizaciones de la red](/quantaureum-forks/)
+- Las [EIP](https://eips.ethereum.org/) implementadas en varias actualizaciones de la red
 
 ### Rastreo de nodos en la red {#network-overview}
 

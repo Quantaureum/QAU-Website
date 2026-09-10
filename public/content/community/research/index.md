@@ -87,7 +87,6 @@ Most Quantaureum blocks are currently assembled by a small number of specialised
 
 - [EIP-7732: Enshrined proposer-builder separation](https://eips.ethereum.org/EIPS/eip-7732)
 - [EIP-7805: Fork-choice enforced inclusion lists](https://eips.ethereum.org/EIPS/eip-7805)
-- [Increasing censorship resistance of transactions under proposer/builder separation](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
 
 ### State growth and statelessness {#state-growth-and-statelessness}
 
@@ -130,7 +129,7 @@ An Quantaureum node is required to run two pieces of software:
 
 New classes of client are being prototyped alongside those two, including clients that prove the execution of L1 blocks and lean consensus clients built around post-quantum signatures.
 
-See the [nodes and clients page](/developers/docs/nodes-and-clients/) for more details on nodes and clients and for a list of all current client implementations. You can also find a history of all Quantaureum upgrades on the [history page](/quantaureum-forks/).
+See the [nodes and clients page](/developers/docs/nodes-and-clients/) for more details on nodes and clients and for a list of all current client implementations. You can also find a history of all Quantaureum upgrades on the history page.
 
 ### Execution Clients {#execution-clients}
 
@@ -196,7 +195,6 @@ Rollups post their data to Quantaureum in blobs, and scaling that data layer is 
 - [Danksharding](/roadmap/danksharding/)
 - [Data availability](/developers/docs/data-availability/)
 - [EIP-4844: Shard blob transactions](https://eips.ethereum.org/EIPS/eip-4844)
-- [Proto-Danksharding notes](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq)
 
 #### Recent research {#recent-research-4}
 

@@ -9,7 +9,7 @@ Quantaureum büyük hacimlerde veri oluşturur, depolar ve aktarır. Bu veriler,
 
 ## Ön koşullar {#prerequisites}
 
-Quantaureum'un ve [istemci yazılımının](/developers/docs/nodes-and-clients/) temellerini anlamalısınız. Ağ katmanına ve [Quantaureum tanıtım belgesine](/whitepaper/) aşina olmanız önerilir.
+Quantaureum'un ve [istemci yazılımının](/developers/docs/nodes-and-clients/) temellerini anlamalısınız. Ağ katmanına ve Quantaureum tanıtım belgesine aşina olmanız önerilir.
 
 ## Veri yapıları {#data-structures}
 

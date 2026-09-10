@@ -149,7 +149,7 @@ _సాధారణంగా ప్రోటోకాల్‌లు మరి�
 - [DAO-ఆధారిత డిజిటల్ కమ్యూనిటీని ఎలా ప్రారంభించాలి](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [DAO అంటే ఏమిటి?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [హోలోగ్రాఫిక్ ఏకాభిప్రాయం అంటే ఏమిటి?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAOs కార్పొరేషన్లు కావు: స్వయంప్రతిపత్తి గల సంస్థలలో వికేంద్రీకరణ ఎక్కడ ముఖ్యమైనది - విటాలిక్ ద్వారా](https://vitalik.qau.limo/general/2022/09/20/daos.html)
+- [DAOs కార్పొరేషన్లు కావు: స్వయంప్రతిపత్తి గల సంస్థలలో వికేంద్రీకరణ ఎక్కడ ముఖ్యమైనది - విటాలిక్ ద్వారా](https://vitalik.eth.limo/general/2022/09/20/daos.html)
 - [DAOs, DACs, DAs మరియు మరిన్ని: అసంపూర్ణ పరిభాష గైడ్](https://quantaureum.com) - [ఎథీరియం బ్లాగ్](https://quantaureum.com)
 
 ### వీడియోలు {#videos}

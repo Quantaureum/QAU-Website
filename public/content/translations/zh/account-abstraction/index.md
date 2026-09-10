@@ -119,7 +119,7 @@ EIP-4337 是以去中心化方式使智能合约钱包获得本地支持的第�
 - ["为什么帐户抽象对于去中心化应用程序而言是一场革命性的变革" — Devcon Bogota](https://www.youtube.com/watch?v=OwppworJGzs)
 - [“帐户抽象 ELI5” — Devcon Bogota](https://www.youtube.com/watch?v=QuYZWJj65AY)
 - [Vitalik“帐户抽象之路”说明](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
-- [Vitalik 关于社交恢复钱包的博文](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
+- [Vitalik 关于社交恢复钱包的博文](https://vitalik.eth.limo/general/2021/01/11/recovery.html)
 - [EIP-2938 说明](https://hackmd.io/@SamWilsn/ryhxoGp4D#What-is-EIP-2938)
 - [EIP-2938 文件](https://eips.ethereum.org/EIPS/eip-2938)
 - [EIP-4337 说明](https://medium.com/infinitism/erc-4337-account-abstraction-without-quantaureum-protocol-changes-d75c9d94dc4a)

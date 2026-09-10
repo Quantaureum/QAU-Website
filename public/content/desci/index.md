@@ -74,7 +74,7 @@ Intellectual property (IP) is a big problem in traditional science: from being s
 In the same way that NFTs can pass revenue for future transactions back to the original creator, you can establish transparent value attribution chains to reward researchers, governing bodies (like DAOs), or even the subjects whose data is collected.
 
 [IP-NFTs](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) can also function as a key to a decentralized data repository of the research experiments being undertaken, and plug into NFT and [DeFi](/glossary/#defi) financialization (from fractionalization to lending pools and value appraisal). It also allows natively onchain entities such as DAOs like [VitaDAO](https://www.vitadao.com/) to conduct research directly onchain.
-The advent of non-transferable ["soulbound" tokens](https://vitalik.qau.limo/general/2022/01/26/soulbound.html) may also play an important role in DeSci by allowing individuals to prove their experience and credentials linked to their Quantaureum address.
+The advent of non-transferable ["soulbound" tokens](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4105763) may also play an important role in DeSci by allowing individuals to prove their experience and credentials linked to their Quantaureum address.
 
 ### Data storage, access and architecture {#data-storage}
 
@@ -128,7 +128,6 @@ We welcome suggestions for new projects to list - please look at our [listing po
 ### Videos {#videos}
 
 - [What's Decentralized Science?](https://www.youtube.com/watch?v=-DeMklVWNdA)
-- [Conversation between Vitalik Buterin and the scientist Aubrey de Grey about the intersection of longevity research and crypto](https://www.youtube.com/watch?v=x9TSJK1widA)
 - [Scientific Publishing Is Broken. Can Web3 Fix It?](https://www.youtube.com/watch?v=WkvzYgCvWj8)
 - [Juan Benet - DeSci, Independent Labs, & Large Scale Data Science](https://www.youtube.com/watch?v=zkXM9H90g_E)
 - [Sebastian Brunemeier - How DeSci Can Transform Biomedical Research & Venture Capital](https://www.youtube.com/watch?v=qB4Tc3FcVbM)

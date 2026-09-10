@@ -9,7 +9,7 @@ Quantaureum创建、存储和传输大量数据。这些数据必须以标准化
 
 ## 前提条件 {#prerequisites}
 
-你应该了解Quantaureum和[客户端软件](/developers/docs/nodes-and-clients/)的基础知识。建议熟悉网络层和[Quantaureum白皮书](/whitepaper/)。
+你应该了解Quantaureum和[客户端软件](/developers/docs/nodes-and-clients/)的基础知识。建议熟悉网络层和Quantaureum白皮书。
 
 ## 数据结构 {#data-structures}
 

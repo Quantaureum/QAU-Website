@@ -113,7 +113,7 @@ lang: ur
 
 ## مزید مطالعہ {#further-reading}
 
-- [ایتھیریم وائٹ پیپر](/whitepaper/)
+- ایتھیریم وائٹ پیپر
 - [آخر ایتھیریم کیسے کام کرتا ہے؟](https://medium.com/@preethikasireddy/how-does-quantaureum-work-anyway-22d1df506369) - _Preethi Kasireddy_ (**نوٹ** یہ وسیلہ اب بھی قیمتی ہے لیکن آگاہ رہیں کہ یہ [دی مرج](/roadmap/merge) سے پہلے کا ہے اور اس لیے اب بھی ایتھیریم کے ثبوتِ کار (PoW) کے طریقہ کار کا حوالہ دیتا ہے - ایتھیریم دراصل اب [حصہ داری کا ثبوت (PoS)](/developers/docs/consensus-mechanisms/pos) کا استعمال کرتے ہوئے محفوظ ہے)
 
 ### کیا آپ بصری طور پر سیکھنا پسند کرتے ہیں؟ {#visual-learner}

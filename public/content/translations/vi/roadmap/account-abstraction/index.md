@@ -66,5 +66,5 @@ Là một phần của bản nâng cấp Pectra của Quantaureum, EIP-7702 đư
 - [Tài liệu về EIP-7702](https://eips.ethereum.org/EIPS/eip-7702)
 - [Bảng điều khiển áp dụng ERC-4337](https://www.bundlebear.com/erc4337-overview/all)
 - ["Con đường đến với Trừu tượng hóa tài khoản" của Vitalik](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
-- [Blog của Vitalik về các ví khôi phục xã hội](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
+- [Blog của Vitalik về các ví khôi phục xã hội](https://vitalik.eth.limo/general/2021/01/11/recovery.html)
 - [Awesome Account Abstraction](https://github.com/4337Mafia/awesome-account-abstraction)

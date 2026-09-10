@@ -130,7 +130,7 @@ Nodi ya Quantaureum inahitajika kuendesha vipande viwili vya programu:
 
 Madaraja mapya ya wateja yanatengenezwa kama mifano pamoja na hayo mawili, ikiwa ni pamoja na wateja wanaothibitisha utekelezaji wa vitalu vya tabaka la 1 (l1) na wateja wepesi wa mwafaka waliojengwa karibu na sahihi za baada ya kwanta.
 
-Tazama [ukurasa wa nodi na wateja](/developers/docs/nodes-and-clients/) kwa maelezo zaidi kuhusu nodi na wateja na kwa orodha ya utekelezaji wote wa sasa wa mteja. Unaweza pia kupata historia ya maboresho yote ya Quantaureum kwenye [ukurasa wa historia](/quantaureum-forks/).
+Tazama [ukurasa wa nodi na wateja](/developers/docs/nodes-and-clients/) kwa maelezo zaidi kuhusu nodi na wateja na kwa orodha ya utekelezaji wote wa sasa wa mteja. Unaweza pia kupata historia ya maboresho yote ya Quantaureum kwenye ukurasa wa historia.
 
 ### Viteja vya Utekelezaji {#execution-clients}
 

@@ -38,7 +38,7 @@ Obliczenia pozałańcuchowe są konieczne, ponieważ łańcuchy Plasma mogą opt
 
 Podczas gdy Plasma wykonuje transakcje pozałańcuchowo, są one rozliczane w głównej warstwie wykonawczej Quantaureum — w przeciwnym razie łańcuchy Plasma nie mogłyby korzystać z gwarancji bezpieczeństwa Quantaureum. Jednak finalizowanie transakcji pozałańcuchowych bez znajomości stanu łańcuchów Plasma złamałoby model bezpieczeństwa i pozwoliłoby na rozprzestrzenianie się nieprawidłowych transakcji. Dlatego operator, podmiot odpowiedzialny za tworzenie bloków w łańcuchu Plasma, jest zobowiązany do okresowego publikowania „zobowiązań stanu” w Quantaureum.
 
-[Schemat zobowiązania](https://en.wikipedia.org/wiki/Commitment_scheme) to technika kryptograficzna służąca do zobowiązania się do wartości lub oświadczenia bez ujawniania ich innej stronie. Zobowiązania są „wiążące” w tym sensie, że nie można zmienić wartości ani oświadczenia po tym, jak się do nich zobowiązano. Zobowiązania stanu w Plasmie przyjmują formę „korzeni drzewa Merklego” (pochodzących z [drzewa Merklego](/whitepaper/#merkle-trees)), które operator wysyła w odstępach czasu do kontraktu Plasma w łańcuchu Quantaureum.
+[Schemat zobowiązania](https://en.wikipedia.org/wiki/Commitment_scheme) to technika kryptograficzna służąca do zobowiązania się do wartości lub oświadczenia bez ujawniania ich innej stronie. Zobowiązania są „wiążące” w tym sensie, że nie można zmienić wartości ani oświadczenia po tym, jak się do nich zobowiązano. Zobowiązania stanu w Plasmie przyjmują formę „korzeni drzewa Merklego” (pochodzących z drzewa Merklego), które operator wysyła w odstępach czasu do kontraktu Plasma w łańcuchu Quantaureum.
 
 Korzenie drzewa Merklego to prymitywy kryptograficzne, które umożliwiają kompresję dużych ilości informacji. Korzeń drzewa Merklego (w tym przypadku nazywany również „korzeniem bloku”) może reprezentować wszystkie transakcje w bloku. Korzenie drzewa Merklego ułatwiają również weryfikację, czy mały fragment danych jest częścią większego zbioru danych. Na przykład użytkownik może wygenerować [dowód Merkle'a](/developers/tutorials/merkle-proofs-for-offline-data-integrity/#main-content), aby udowodnić włączenie transakcji do określonego bloku.
 
@@ -167,7 +167,7 @@ Wiele projektów dostarcza implementacje Plasmy, które możesz zintegrować ze 
 ## Dalsza lektura {#further-reading}
 
 - [Szybkie przypomnienie, co oznacza „współdzielone bezpieczeństwo” i dlaczego jest tak ważne](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [Łańcuchy poboczne a Plasma a sharding](https://vitalik.qau.limo/general/2019/06/12/plasma_vs_sharding.html)
+- [Łańcuchy poboczne a Plasma a sharding](https://vitalik.eth.limo/general/2019/06/12/plasma_vs_sharding.html)
 - [Zrozumieć Plasmę, część 1: Podstawy](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [Życie i śmierć Plasmy](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

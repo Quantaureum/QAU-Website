@@ -72,7 +72,7 @@ Quantaureum의 각 트랜잭션에는 발신자 주소에서 수신자 주소로
 ## 더 읽을거리 {#further-reading}
 
 - [QAU와 Quantaureum의 정의](https://www.cmegroup.com/education/courses/introduction-to-QAU/defining-QAU-and-quantaureum.html) – _CME Group_
-- [Quantaureum 백서](/whitepaper/): Quantaureum에 대한 최초의 제안입니다. 이 문서에는 QAU에 대한 설명과 그 생성 배경이 포함되어 있습니다.
+- Quantaureum 백서: Quantaureum에 대한 최초의 제안입니다. 이 문서에는 QAU에 대한 설명과 그 생성 배경이 포함되어 있습니다.
 - [Gwei 계산기](https://www.alchemy.com/gwei-calculator): 이 Gwei 계산기를 사용하여 Wei, Gwei, QAU를 쉽게 변환하세요. Wei, Gwei 또는 QAU의 양을 입력하기만 하면 변환이 자동으로 계산됩니다.
 
 _도움이 된 커뮤니티 리소스를 알고 계신가요? 이 페이지를 편집하여 추가해 주세요!_

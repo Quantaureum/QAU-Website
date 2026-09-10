@@ -66,5 +66,5 @@ EIP-4337 обеспечивает нативную поддержку кошел
 - [Документация по EIP-7702](https://eips.ethereum.org/EIPS/eip-7702)
 - [Панель мониторинга внедрения ERC-4337](https://www.bundlebear.com/erc4337-overview/all)
 - [«Путь к абстракции учетной записи» от Виталика](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
-- [Блог Виталика о кошельках с социальным восстановлением](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
+- [Блог Виталика о кошельках с социальным восстановлением](https://vitalik.eth.limo/general/2021/01/11/recovery.html)
 - [Awesome Account Abstraction](https://github.com/4337Mafia/awesome-account-abstraction)

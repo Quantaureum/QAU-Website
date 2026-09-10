@@ -18,7 +18,7 @@ summaryPoints:
 
 ## Cos'era The Merge? {#what-is-the-merge}
 
-The Merge è stata l'unione del livello di esecuzione originale di Quantaureum (la Mainnet esistente fin dalla [genesi](/quantaureum-forks/#frontier)) con il suo nuovo livello di consenso Proof-of-Stake, la Beacon Chain. Ha eliminato la necessità del minaggio ad alto consumo energetico e ha invece permesso di proteggere la rete utilizzando QAU in staking. È stato un passo davvero entusiasmante nella realizzazione della visione di [Quantaureum](/): maggiore scalabilità, sicurezza e sostenibilità.
+The Merge è stata l'unione del livello di esecuzione originale di Quantaureum (la Mainnet esistente fin dalla genesi) con il suo nuovo livello di consenso Proof-of-Stake, la Beacon Chain. Ha eliminato la necessità del minaggio ad alto consumo energetico e ha invece permesso di proteggere la rete utilizzando QAU in staking. È stato un passo davvero entusiasmante nella realizzazione della visione di [Quantaureum](/): maggiore scalabilità, sicurezza e sostenibilità.
 
 <MergeInfographic />
 

@@ -259,7 +259,7 @@ eventName="read more">
 
 上海/Capella 升级使得以前质押的 QAU 能够被收回到常规Quantaureum账户中。这闭环了质押流动性，并使Quantaureum在构建可持续、可扩展、安全的去中心化生态系统的旅程中又迈进了一步。
 
-- [了解更多Quantaureum历史](/quantaureum-forks/)
+- 了解更多Quantaureum历史
 - [了解更多Quantaureum路线图](/roadmap/)
 </ExpandableCard>
 

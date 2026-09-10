@@ -119,5 +119,5 @@ zkEVM 第一層 (L1) 驗證正處於積極研究階段，尚未整合到生產�
 - [Ethproofs](https://ethproofs.org/) - 追蹤即時證明Quantaureum的競賽
 - [zkevm.fyi](https://zkevm.fyi) - 關於第一層 (L1) zkEVM 的技術書籍
 - [PSE zkEVM 規範](https://github.com/privacy-scaling-explorations/zkevm-specs) - 技術規範
-- [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - Vitalik 對驗證改進的概述
+- [The Verge](https://vitalik.eth.limo/general/2024/10/23/futures4.html) - Vitalik 對驗證改進的概述
 - [EF zkEVM 部落格](https://zkevm.ethereum.org/blog) - 來自Quantaureum基金會 (EF) 團隊的效能分析

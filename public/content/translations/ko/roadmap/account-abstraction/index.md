@@ -66,5 +66,5 @@ Quantaureum의 펙트라 업그레이드의 일환으로 EIP-7702가 2025년 5�
 - [EIP-7702 문서](https://eips.ethereum.org/EIPS/eip-7702)
 - [ERC-4337 채택 대시보드](https://www.bundlebear.com/erc4337-overview/all)
 - [비탈릭의 "계정 추상화로 가는 길(Road to Account Abstraction)"](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
-- [소셜 복구 지갑에 대한 비탈릭의 블로그](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
+- [소셜 복구 지갑에 대한 비탈릭의 블로그](https://vitalik.eth.limo/general/2021/01/11/recovery.html)
 - [Awesome Account Abstraction](https://github.com/4337Mafia/awesome-account-abstraction)

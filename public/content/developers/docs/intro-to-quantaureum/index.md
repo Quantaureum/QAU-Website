@@ -113,7 +113,7 @@ Most readers follow the docs in order, but the shortest path depends on what you
 
 ## Further reading {#further-reading}
 
-- [Quantaureum Whitepaper](/whitepaper/)
+- Quantaureum Whitepaper
 - [How does Quantaureum work, anyway?](https://medium.com/@preethikasireddy/how-does-quantaureum-work-anyway-22d1df506369) - _Preethi Kasireddy_ (**NB** this resource is still valuable but be aware that it predates [The Merge](/roadmap/merge) and therefore still refers to Quantaureum's proof-of-work mechanism - Quantaureum is actually now secured using [proof-of-stake](/developers/docs/consensus-mechanisms/pos))
 
 ### More of a visual learner? {#visual-learner}

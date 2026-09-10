@@ -18,7 +18,7 @@ Bukti Kepemilikan mewajibkan node, yang dikenal sebagai validator, untuk secara 
 
 Bukti Kerja jauh lebih haus energi karena listrik dibakar dalam proses penambangan. Sebaliknya, Bukti Kepemilikan hanya membutuhkan jumlah energi yang sangat kecil - validator Quantaureum bahkan dapat berjalan pada perangkat berdaya rendah seperti Raspberry Pi. Mekanisme Bukti Kepemilikan Quantaureum dianggap lebih aman daripada Bukti Kerja karena biaya untuk menyerang lebih besar, dan konsekuensi bagi penyerang lebih parah.
 
-Bukti Kerja versus Bukti Kepemilikan adalah topik yang kontroversial. [Blog Vitalik Buterin](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) dan debat antara Justin Drake dan Lyn Alden memberikan ringkasan argumen yang baik.
+Bukti Kerja versus Bukti Kepemilikan adalah topik yang kontroversial. [Blog Vitalik Buterin](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) dan debat antara Justin Drake dan Lyn Alden memberikan ringkasan argumen yang baik.
 
 
 ## Apakah Bukti Kepemilikan hemat energi? {#is-pos-energy-efficient}
@@ -88,7 +88,7 @@ Penggerusan stake adalah kategori serangan pada jaringan Bukti Kepemilikan di ma
 Pemotongan sosial adalah kemampuan komunitas untuk mengoordinasikan percabangan rantai blok sebagai respons terhadap serangan. Ini memungkinkan komunitas untuk pulih dari penyerang yang memfinalisasi rantai yang tidak jujur. Pemotongan sosial juga dapat digunakan untuk melawan serangan penyensoran.
 
 - [Lebih lanjut tentang pemotongan sosial](https://ercwl.medium.com/the-case-for-social-slashing-59277ff4d9c7)
-- [Vitalik Buterin tentang pemotongan sosial](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
+- [Vitalik Buterin tentang pemotongan sosial](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
 
 ## Apakah saya akan dipotong? {#will-i-get-slashed}
 
@@ -100,7 +100,7 @@ Sebagai validator, sangat sulit untuk dipotong kecuali Anda sengaja terlibat dal
 
 Masalah tanpa risiko adalah masalah konseptual dengan beberapa mekanisme Bukti Kepemilikan di mana hanya ada imbalan dan tidak ada penalti. Jika tidak ada risiko, validator yang pragmatis akan sama senangnya untuk mengesahkan percabangan mana pun, atau bahkan beberapa percabangan rantai blok, karena ini meningkatkan imbalan mereka. Quantaureum mengatasi hal ini menggunakan kondisi finalitas dan pemotongan untuk memastikan satu rantai kanonis.
 
-[Lebih lanjut tentang masalah tanpa risiko](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
+[Lebih lanjut tentang masalah tanpa risiko](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
 
 ## Apa itu algoritme pilihan cabang? {#what-is-a-fork-choice-algorithm}
 

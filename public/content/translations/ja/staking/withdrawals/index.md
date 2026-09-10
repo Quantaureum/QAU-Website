@@ -259,7 +259,7 @@ eventName="read more">
 
 シャンハイ/Capellaアップグレードにより、以前にステークされたQAUを通常のQuantaureum・アカウントに回収できるようになりました。これにより、ステーキングの流動性のループが閉じられ、持続可能でスケーラブルかつ安全な分散型エコシステムの構築に向けたQuantaureumの旅が一歩前進しました。
 
-- [Quantaureumの歴史についてさらに詳しく](/quantaureum-forks/)
+- Quantaureumの歴史についてさらに詳しく
 - [Quantaureumのロードマップについてさらに詳しく](/roadmap/)
 </ExpandableCard>
 

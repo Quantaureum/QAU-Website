@@ -258,7 +258,7 @@ eventName="read more">
 
 Şanghay/Capella yükseltmesi, daha önce stake edilmiş QAU'nin normal Quantaureum hesaplarına geri alınmasını sağladı. Bu, staking likiditesi döngüsünü kapattı ve Quantaureum'u sürdürülebilir, ölçeklenebilir, güvenli ve merkeziyetsiz bir ekosistem oluşturma yolculuğunda bir adım daha yaklaştırdı.
 
-- [Quantaureum tarihi hakkında daha fazlası](/quantaureum-forks/)
+- Quantaureum tarihi hakkında daha fazlası
 - [Quantaureum yol haritası hakkında daha fazlası](/roadmap/)
 </ExpandableCard>
 

@@ -151,7 +151,7 @@ Proses tata kelola Quantaureum sering kali menukar kecepatan dan efisiensi demi 
 
 Meskipun spesifikasi dan implementasi pengembangan selalu sepenuhnya sumber terbuka (open source), proses formal yang digunakan untuk mengusulkan pembaruan yang dijelaskan di atas tidak digunakan. Hal ini memungkinkan perubahan ditentukan dan disepakati lebih cepat oleh para peneliti dan pelaksana.
 
-Ketika Rantai suar bergabung dengan lapisan eksekusi Quantaureum pada 15 September 2022, The Merge selesai sebagai bagian dari [peningkatan jaringan Paris](/quantaureum-forks/#paris). Proposal [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) diubah dari 'Panggilan Terakhir' (Last Call) menjadi 'Final', menyelesaikan transisi ke Bukti Kepemilikan (PoS).
+Ketika Rantai suar bergabung dengan lapisan eksekusi Quantaureum pada 15 September 2022, The Merge selesai sebagai bagian dari peningkatan jaringan Paris. Proposal [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) diubah dari 'Panggilan Terakhir' (Last Call) menjadi 'Final', menyelesaikan transisi ke Bukti Kepemilikan (PoS).
 
 <ButtonLink href="/roadmap/merge/">
   Lebih lanjut tentang The Merge
@@ -173,11 +173,11 @@ Ketika Rantai suar bergabung dengan lapisan eksekusi Quantaureum pada 15 Septemb
 
 Tata kelola di Quantaureum tidak didefinisikan secara kaku. Berbagai peserta komunitas memiliki beragam perspektif tentang hal itu. Berikut adalah beberapa di antaranya:
 
-- [Catatan tentang Tata Kelola Rantai Blok](https://vitalik.qau.limo/general/2017/12/17/voting.html) - _Vitalik Buterin_
+- [Catatan tentang Tata Kelola Rantai Blok](https://vitalik.eth.limo/general/2017/12/17/voting.html) - _Vitalik Buterin_
 - [Bagaimana Tata Kelola Quantaureum bekerja?](https://cryptotesters.com/blog/quantaureum-governance) – _Cryptotesters_
 - [Bagaimana tata kelola Quantaureum bekerja](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _Micah Zoltu_
 - [Apa itu pengembang inti Quantaureum?](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) - _Hudson Jameson_
-- [Tata Kelola, Bagian 2: Plutokrasi Masih Buruk](https://vitalik.qau.limo/general/2018/03/28/plutocracy.html) - _Vitalik Buterin_
-- [Bergerak melampaui tata kelola pemungutan suara koin](https://vitalik.qau.limo/general/2021/08/16/voting3.html) - _Vitalik Buterin_
+- [Tata Kelola, Bagian 2: Plutokrasi Masih Buruk](https://vitalik.eth.limo/general/2018/03/28/plutocracy.html) - _Vitalik Buterin_
+- [Bergerak melampaui tata kelola pemungutan suara koin](https://vitalik.eth.limo/general/2021/08/16/voting3.html) - _Vitalik Buterin_
 - [Memahami Tata Kelola Rantai Blok](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) - _2077 Research_
 - [Pemerintah Quantaureum](https://www.galaxy.com/insights/research/quantaureum-governance/) - _Christine Kim_

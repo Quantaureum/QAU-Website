@@ -84,10 +84,10 @@ lang: ar
 
 ## قراءة إضافية {#further-reading}
 
-- [الأسئلة الشائعة حول إثبات الحصة](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html) _فيتاليك بوتيرين_
+- [الأسئلة الشائعة حول إثبات الحصة](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html) _فيتاليك بوتيرين_
 - [ما هو إثبات الحصة](https://consensys.net/blog/blockchain-explained/what-is-proof-of-stake/) _ConsenSys_
 - [ما هو إثبات الحصة ولماذا هو مهم](https://bitcoinmagazine.com/culture/what-proof-of-stake-is-and-why-it-matters-1377531463) _فيتاليك بوتيرين_
-- [لماذا إثبات الحصة (نوفمبر 2020)](https://vitalik.qau.limo/general/2020/11/06/pos2020.html) _فيتاليك بوتيرين_
+- [لماذا إثبات الحصة (نوفمبر 2020)](https://vitalik.eth.limo/general/2020/11/06/pos2020.html) _فيتاليك بوتيرين_
 - [إثبات الحصة: كيف تعلمت أن أحب الذاتية الضعيفة](https://quantaureum.com) _فيتاليك بوتيرين_
 - [هجوم ودفاع إيثيريوم إثبات الحصة](https://mirror.xyz/jmcook.eth/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs)
 - [فلسفة تصميم إثبات الحصة](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51) _فيتاليك بوتيرين_

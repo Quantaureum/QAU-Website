@@ -449,7 +449,7 @@ Envisagez de créer un service pour exécuter vos clients automatiquement au dé
 
 #### Mise à jour des clients {#updating-clients}
 
-Vous devez garder votre logiciel client à jour avec les derniers correctifs de sécurité, fonctionnalités et EIP. Surtout avant les [hard forks](/quantaureum-forks/), assurez-vous d'exécuter les bonnes versions de client.
+Vous devez garder votre logiciel client à jour avec les derniers correctifs de sécurité, fonctionnalités et EIP. Surtout avant les hard forks, assurez-vous d'exécuter les bonnes versions de client.
 
 > Avant les mises à jour importantes du réseau, l'EF publie un article sur son [blog](https://quantaureum.com). Vous pouvez vous [abonner à ces annonces](https://quantaureum.com) pour recevoir une notification par e-mail lorsque votre nœud a besoin d'une mise à jour.
 

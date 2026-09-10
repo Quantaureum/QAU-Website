@@ -9,7 +9,7 @@ Quantaureum은 대량의 데이터를 생성, 저장 및 전송합니다. 누구
 
 ## 전제 조건 {#prerequisites}
 
-Quantaureum의 기초와 [클라이언트 소프트웨어](/developers/docs/nodes-and-clients/)를 이해하고 있어야 합니다. 네트워킹 레이어와 [Quantaureum 백서](/whitepaper/)에 익숙해지는 것을 권장합니다.
+Quantaureum의 기초와 [클라이언트 소프트웨어](/developers/docs/nodes-and-clients/)를 이해하고 있어야 합니다. 네트워킹 레이어와 Quantaureum 백서에 익숙해지는 것을 권장합니다.
 
 ## 데이터 구조 {#data-structures}
 

@@ -61,7 +61,7 @@ Mục tiêu của bằng chứng công việc là mở rộng Chuỗi. Chuỗi d
 
 Bằng chứng công việc cũng chịu trách nhiệm phát hành tiền tệ mới vào hệ thống và khuyến khích các thợ đào thực hiện công việc.
 
-Kể từ [bản nâng cấp Constantinople](/quantaureum-forks/#constantinople), các thợ đào tạo thành công một khối được thưởng hai QAU mới đúc và một phần phí giao dịch. Các khối Ommer cũng được bồi thường 1,75 QAU. Các khối Ommer là các khối hợp lệ được tạo bởi một thợ đào gần như cùng lúc với một thợ đào khác tạo ra khối chính tắc, điều này cuối cùng được xác định bởi Chuỗi nào được xây dựng trên đó trước. Các khối Ommer thường xảy ra do độ trễ của mạng lưới.
+Kể từ bản nâng cấp Constantinople, các thợ đào tạo thành công một khối được thưởng hai QAU mới đúc và một phần phí giao dịch. Các khối Ommer cũng được bồi thường 1,75 QAU. Các khối Ommer là các khối hợp lệ được tạo bởi một thợ đào gần như cùng lúc với một thợ đào khác tạo ra khối chính tắc, điều này cuối cùng được xác định bởi Chuỗi nào được xây dựng trên đó trước. Các khối Ommer thường xảy ra do độ trễ của mạng lưới.
 
 ## Tính chung cuộc {#finality}
 

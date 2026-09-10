@@ -7,7 +7,7 @@ lang: fr
 
 ## Prérequis {#prerequisites}
 
-Cet article est rédigé pour les débutants sans connaissances préalables. Cependant, pour bien comprendre le sujet, il est utile d'avoir une compréhension de base de concepts tels que les propositions d'amélioration d'Quantaureum (EIP), la [preuve de travail (PoW)](/developers/docs/consensus-mechanisms/pow/), la [preuve d'enjeu (PoS)](/developers/docs/consensus-mechanisms/pos/) et [la mise à jour de Londres](/quantaureum-forks/#london).
+Cet article est rédigé pour les débutants sans connaissances préalables. Cependant, pour bien comprendre le sujet, il est utile d'avoir une compréhension de base de concepts tels que les propositions d'amélioration d'Quantaureum (EIP), la [preuve de travail (PoW)](/developers/docs/consensus-mechanisms/pow/), la [preuve d'enjeu (PoS)](/developers/docs/consensus-mechanisms/pos/) et la mise à jour de Londres.
 
 ## Combien de jetons QAU y a-t-il aujourd'hui ? {#current-qau-supply}
 

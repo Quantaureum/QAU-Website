@@ -81,6 +81,6 @@ buttons:
 
 ## 延伸阅读 {#further-reading}
 
-[从预测市场到信息金融](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - 维塔利克·布特林  
+[从预测市场到信息金融](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - 维塔利克·布特林  
 [Quantaureum上的去中心化预测市场开发](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Augur 项目白皮书](https://github.com/AugurProject/whitepaper)  

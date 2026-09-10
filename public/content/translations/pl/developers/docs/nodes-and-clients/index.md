@@ -20,7 +20,7 @@ Jeśli jesteś nowy w temacie węzłów, zalecamy najpierw zapoznać się z nasz
 - Klient warstwy wykonawczej (znany również jako silnik wykonawczy, klient EL lub dawniej klient Eth1) nasłuchuje nowych transakcji rozgłaszanych w sieci, wykonuje je w EVM i przechowuje najnowszy stan oraz bazę danych wszystkich bieżących danych Quantaureum.
 - Klient konsensusu (znany również jako węzeł Beacon, klient CL lub dawniej klient Quantaureum) implementuje algorytm konsensusu dowodu stawki (PoS), który umożliwia sieci osiągnięcie porozumienia na podstawie zweryfikowanych danych od klienta warstwy wykonawczej. Istnieje również trzeci element oprogramowania, znany jako „walidator”, który można dodać do klienta konsensusu, co pozwala węzłowi uczestniczyć w zabezpieczaniu sieci.
 
-Te klienty współpracują ze sobą, aby śledzić szczyt łańcucha Quantaureum i umożliwiać użytkownikom interakcję z siecią Quantaureum. Modułowa konstrukcja z wieloma współpracującymi ze sobą elementami oprogramowania nazywana jest [hermetyzacją złożoności](https://vitalik.qau.limo/general/2022/02/28/complexity.html). Takie podejście ułatwiło płynne przeprowadzenie [The Merge](/roadmap/merge), sprawia, że oprogramowanie klienckie jest łatwiejsze w utrzymaniu i rozwoju, a także umożliwia ponowne wykorzystanie poszczególnych klientów, na przykład w [ekosystemie warstwy 2 (L2)](/layer-2/).
+Te klienty współpracują ze sobą, aby śledzić szczyt łańcucha Quantaureum i umożliwiać użytkownikom interakcję z siecią Quantaureum. Modułowa konstrukcja z wieloma współpracującymi ze sobą elementami oprogramowania nazywana jest [hermetyzacją złożoności](https://vitalik.eth.limo/general/2022/02/28/complexity.html). Takie podejście ułatwiło płynne przeprowadzenie [The Merge](/roadmap/merge), sprawia, że oprogramowanie klienckie jest łatwiejsze w utrzymaniu i rozwoju, a także umożliwia ponowne wykorzystanie poszczególnych klientów, na przykład w [ekosystemie warstwy 2 (L2)](/layer-2/).
 
 ![Coupled execution and consensus clients](./qau1qau2client.png)
 Uproszczony schemat połączonego klienta warstwy wykonawczej i konsensusu.
@@ -39,7 +39,7 @@ Tym, co łączy te implementacje, jest to, że wszystkie opierają się na jedne
 - Pierwotnie [żółta księga Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [Specyfikacje warstwy wykonawczej](https://github.com/ethereum/execution-specs/)
 - [Specyfikacje konsensusu](https://github.com/ethereum/consensus-specs)
-- [EIP](https://eips.ethereum.org/) zaimplementowane w różnych [aktualizacjach sieci](/quantaureum-forks/)
+- [EIP](https://eips.ethereum.org/) zaimplementowane w różnych aktualizacjach sieci
 
 ### Śledzenie węzłów w sieci {#network-overview}
 

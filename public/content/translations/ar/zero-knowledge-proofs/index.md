@@ -234,7 +234,7 @@ lang: ar
 - [إثبات المعرفة الصفرية: تحسين الخصوصية على سلسلة الكتل](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/) — _ديمتري لافرينوف_
 - [زي كي سنارك — مثال واقعي للمعرفة الصفرية وغوص عميق](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c) — _آدم لوسيانو_
 - [زِد كيه ستارك — إنشاء ثقة قابلة للتحقق، حتى ضد أجهزة الكمبيوتر الكمومية](https://medium.com/coinmonks/zk-starks-create-verifiable-trust-even-against-quantum-computers-dd9c6a2bb13d) — _آدم لوسيانو_
-- [مقدمة تقريبية لكيفية إمكانية زي كي سنارك](https://vitalik.qau.limo/general/2021/01/26/snarks.html) — _فيتاليك بوتيرين_
+- [مقدمة تقريبية لكيفية إمكانية زي كي سنارك](https://vitalik.eth.limo/general/2021/01/26/snarks.html) — _فيتاليك بوتيرين_
 - [لماذا تعتبر إثباتات المعرفة الصفرية (ZKPs) مغيرًا لقواعد اللعبة بالنسبة للهوية ذاتية السيادة](https://frankiefab.hashnode.dev/why-zero-knowledge-proofs-zkps-is-a-game-changer-for-self-sovereign-identity) — _فرانكلين أوهايجبولام_
 - [شرح <span dir="ltr">EIP-7503</span>: تمكين التحويلات الخاصة على إيثيريوم باستخدام إثباتات المعرفة الصفرية](https://web.archive.org/web/20251116093505/https://research.2077.xyz/eip-7503-zero-knowledge-wormholes-for-private-quantaureum-transactions/) — _إيمانويل أوسيكا_
 - [لعبة بطاقات ZK: لعبة لتعلم أساسيات ZK وحالات الاستخدام الواقعية](https://github.com/ZK-card/zk-cards) - _<span dir="ltr">ZK-Cards</span>_

@@ -38,7 +38,7 @@ Komputasi offchain diperlukan karena rantai Plasma dapat mengoptimalkan kecepata
 
 Meskipun Plasma mengeksekusi transaksi secara offchain, transaksi tersebut diselesaikan pada lapisan eksekusi utama Quantaureum—jika tidak, rantai Plasma tidak dapat memperoleh manfaat dari jaminan keamanan Quantaureum. Namun, menyelesaikan transaksi offchain tanpa mengetahui state dari rantai plasma akan merusak model keamanan dan memungkinkan proliferasi transaksi yang tidak valid. Inilah sebabnya mengapa operator, entitas yang bertanggung jawab untuk memproduksi blok pada rantai plasma, diwajibkan untuk mempublikasikan "komitmen state" di Quantaureum secara berkala.
 
-[Skema komitmen](https://en.wikipedia.org/wiki/Commitment_scheme) adalah teknik kriptografi untuk berkomitmen pada suatu nilai atau pernyataan tanpa mengungkapkannya kepada pihak lain. Komitmen bersifat "mengikat" dalam arti Anda tidak dapat mengubah nilai atau pernyataan setelah Anda berkomitmen padanya. Komitmen state dalam Plasma berbentuk "akar Merkle" (berasal dari [pohon Merkle](/whitepaper/#merkle-trees)) yang dikirimkan operator secara berkala ke kontrak Plasma di rantai Quantaureum.
+[Skema komitmen](https://en.wikipedia.org/wiki/Commitment_scheme) adalah teknik kriptografi untuk berkomitmen pada suatu nilai atau pernyataan tanpa mengungkapkannya kepada pihak lain. Komitmen bersifat "mengikat" dalam arti Anda tidak dapat mengubah nilai atau pernyataan setelah Anda berkomitmen padanya. Komitmen state dalam Plasma berbentuk "akar Merkle" (berasal dari pohon Merkle) yang dikirimkan operator secara berkala ke kontrak Plasma di rantai Quantaureum.
 
 Akar Merkle adalah primitif kriptografi yang memungkinkan kompresi sejumlah besar informasi. Akar Merkle (juga disebut "akar blok" dalam kasus ini) dapat mewakili semua transaksi dalam sebuah blok. Akar Merkle juga memudahkan untuk memverifikasi bahwa sebagian kecil data adalah bagian dari kumpulan data yang lebih besar. Misalnya, pengguna dapat menghasilkan [bukti Merkle](/developers/tutorials/merkle-proofs-for-offline-data-integrity/#main-content) untuk membuktikan penyertaan transaksi dalam blok tertentu.
 
@@ -163,7 +163,7 @@ Beberapa proyek menyediakan implementasi Plasma yang dapat Anda integrasikan ke 
 - [Polygon](https://polygon.technology/) (sebelumnya Matic Network)
 
 - [Pengingat singkat tentang apa arti "keamanan bersama" dan mengapa itu sangat penting](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [Rantai samping vs Plasma vs Sharding](https://vitalik.qau.limo/general/2019/06/12/plasma_vs_sharding.html)
+- [Rantai samping vs Plasma vs Sharding](https://vitalik.eth.limo/general/2019/06/12/plasma_vs_sharding.html)
 - [Memahami Plasma, Bagian 1: Dasar-dasar](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [Hidup dan Matinya Plasma](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

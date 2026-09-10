@@ -68,7 +68,7 @@ ZK-롤업의 사용자는 트랜잭션에 서명하고 처리를 위해 L2 운�
 
 ### 상태 커밋먼트 {#state-commitments}
 
-L2 계정과 잔액을 포함하는 ZK-롤업의 상태는 [머클 트리](/whitepaper/#merkle-trees)로 표시됩니다. 머클 트리 루트(머클 루트)의 암호학적 해시는 온체인 컨트랙트에 저장되어 롤업 프로토콜이 ZK-롤업 상태의 변경 사항을 추적할 수 있게 해줍니다.
+L2 계정과 잔액을 포함하는 ZK-롤업의 상태는 머클 트리로 표시됩니다. 머클 트리 루트(머클 루트)의 암호학적 해시는 온체인 컨트랙트에 저장되어 롤업 프로토콜이 ZK-롤업 상태의 변경 사항을 추적할 수 있게 해줍니다.
 
 롤업은 새로운 트랜잭션 세트가 실행된 후 새로운 상태로 전환됩니다. 상태 전환을 시작한 운영자는 새로운 상태 루트를 계산하여 온체인 컨트랙트에 제출해야 합니다. 배치와 관련된 유효성 증명이 검증자 컨트랙트에 의해 인증되면 새로운 머클 루트가 ZK-롤업의 정식 상태 루트가 됩니다.
 
@@ -240,7 +240,7 @@ zkEVM을 개발 중인 프로젝트는 다음과 같습니다.
 
 - **[Scroll](https://scroll.io/blog/zkEVM)** - _Scroll은 Quantaureum을 위한 네이티브 zkEVM 레이어 2 (l2) 솔루션 구축을 위해 노력하는 기술 중심 기업입니다._
 
-- **[Taiko](https://taiko.xyz)** - _Taiko는 탈중앙화된 Quantaureum 동등 ZK-롤업([유형 1 ZK-EVM](https://vitalik.qau.limo/general/2022/08/04/zkevm.html))입니다._
+- **[Taiko](https://taiko.xyz)** - _Taiko는 탈중앙화된 Quantaureum 동등 ZK-롤업([유형 1 ZK-EVM](https://vitalik.eth.limo/general/2022/08/04/zkevm.html))입니다._
 
 - **[지케이싱크(ZKsync)](https://docs.zksync.io/)** - _지케이싱크 에라(ZKsync Era)는 Matter Labs에서 구축한 EVM 호환 ZK 롤업으로, 자체 zkEVM으로 구동됩니다._
 
@@ -261,8 +261,8 @@ zkEVM을 개발 중인 프로젝트는 다음과 같습니다.
 - [zkEVM 소개](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [ZK-EVM L2란 무엇인가요?](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M)
 - [Awesome-zkEVM 리소스](https://github.com/LuozhuZhang/awesome-zkevm)
-- [영지식 스나크(ZK-SNARK)의 내부 작동 원리](https://vitalik.qau.limo/general/2017/02/01/zk_snarks.html)
-- [SNARK는 어떻게 가능한가요?](https://vitalik.qau.limo/general/2021/01/26/snarks.html)
+- [영지식 스나크(ZK-SNARK)의 내부 작동 원리](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
+- [SNARK는 어떻게 가능한가요?](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
 
 ## 튜토리얼: Quantaureum의 프라이버시 및 영지식 {#tutorials}
 

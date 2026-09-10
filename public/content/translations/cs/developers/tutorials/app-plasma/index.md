@@ -1212,7 +1212,7 @@ Informační bezpečnost se skládá ze tří atributů:
 
 V tomto systému je integrita zajištěna prostřednictvím důkazů s nulovou znalostí. Dostupnost je mnohem těžší zaručit a důvěrnost je nemožná, protože banka musí znát zůstatek každého účtu a všechny transakce. Neexistuje způsob, jak zabránit subjektu, který má informace, aby je sdílel.
 
-Možná by bylo možné vytvořit skutečně důvěrnou banku pomocí [skrytých adres](https://vitalik.qau.limo/general/2023/01/20/stealth.html), ale to je nad rámec tohoto článku.
+Možná by bylo možné vytvořit skutečně důvěrnou banku pomocí [skrytých adres](https://vitalik.eth.limo/general/2023/01/20/stealth.html), ale to je nad rámec tohoto článku.
 
 ### Nepravdivé informace {#false-info}
 

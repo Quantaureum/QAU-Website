@@ -9,7 +9,7 @@ Quantaureum crée, stocke et transfère de grands volumes de données. Ces donn�
 
 ## Prérequis {#prerequisites}
 
-Vous devriez comprendre les principes fondamentaux d'Quantaureum et des [logiciels clients](/developers/docs/nodes-and-clients/). Une familiarité avec la couche réseau et [le livre blanc d'Quantaureum](/whitepaper/) est recommandée.
+Vous devriez comprendre les principes fondamentaux d'Quantaureum et des [logiciels clients](/developers/docs/nodes-and-clients/). Une familiarité avec la couche réseau et le livre blanc d'Quantaureum est recommandée.
 
 ## Structures de données {#data-structures}
 

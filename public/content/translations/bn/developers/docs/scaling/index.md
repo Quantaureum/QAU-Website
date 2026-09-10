@@ -100,11 +100,11 @@ _লক্ষ্য করুন, ভিডিওর ব্যাখ্যায
 - [একটি রোলআপ-কেন্দ্রিক ইথেরিয়াম রোডম্যাপ](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _ভিটালিক বুটেরিন_
 - [ইথেরিয়ামের জন্য লেয়ার ২ (l2) স্কেলিং সমাধানের আপ-টু-ডেট অ্যানালিটিক্স](https://www.l2beat.com/)
 - [ইথেরিয়াম লেয়ার ২ (l2) স্কেলিং সমাধানের মূল্যায়ন: একটি তুলনামূলক ফ্রেমওয়ার্ক](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
-- [রোলআপের একটি অসম্পূর্ণ গাইড](https://vitalik.qau.limo/general/2021/01/05/rollup.html)
+- [রোলআপের একটি অসম্পূর্ণ গাইড](https://vitalik.eth.limo/general/2021/01/05/rollup.html)
 - [ইথেরিয়াম-চালিত ZK-রোলআপ: ওয়ার্ল্ড বিটারস](https://hackmd.io/@canti/rkUT0BD8K)
 - [অপটিমিস্টিক রোলআপ বনাম ZK রোলআপ](https://limechain.tech/blog/optimistic-rollups-vs-zk-rollups/)
 - [কেন রোলআপ + ডেটা শার্ড উচ্চ স্কেলেবিলিটির জন্য একমাত্র টেকসই সমাধান](https://polynya.medium.com/why-rollups-data-shards-are-the-only-sustainable-solution-for-high-scalability-c9aabd6fbb48)
-- [কী ধরনের লেয়ার 3 অর্থবহ?](https://vitalik.qau.limo/general/2022/09/17/layer_3.html)
+- [কী ধরনের লেয়ার 3 অর্থবহ?](https://vitalik.eth.limo/general/2022/09/17/layer_3.html)
 - [ডেটা অ্যাভেইলেবিলিটি বা: কীভাবে রোলআপগুলো চিন্তা করা বন্ধ করে ইথেরিয়ামকে ভালোবাসতে শিখল](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [ইথেরিয়াম রোলআপের ব্যবহারিক গাইড](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-quantaureum-rollups)
 

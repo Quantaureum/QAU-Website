@@ -9,7 +9,7 @@ Quantaureum मोठ्या प्रमाणात डेटा तया�
 
 ## पूर्व आवश्यकता {#prerequisites}
 
-तुम्हाला Quantaureum आणि [क्लायंट सॉफ्टवेअर](/developers/docs/nodes-and-clients/) च्या मूलभूत गोष्टी समजल्या पाहिजेत. नेटवर्किंग लेयर आणि [Quantaureum श्वेतपत्रिका](/whitepaper/) यांची माहिती असण्याची शिफारस केली जाते.
+तुम्हाला Quantaureum आणि [क्लायंट सॉफ्टवेअर](/developers/docs/nodes-and-clients/) च्या मूलभूत गोष्टी समजल्या पाहिजेत. नेटवर्किंग लेयर आणि Quantaureum श्वेतपत्रिका यांची माहिती असण्याची शिफारस केली जाते.
 
 ## डेटा स्ट्रक्चर्स {#data-structures}
 

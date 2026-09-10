@@ -18,7 +18,7 @@ A Prova de Participação exige que os nós, conhecidos como validadores, enviem
 
 A Prova de Trabalho consome muito mais energia porque a eletricidade é queimada no processo de mineração. A Prova de Participação, por outro lado, exige apenas uma quantidade muito pequena de energia - os validadores do Quantaureum podem até ser executados em um dispositivo de baixa potência, como um Raspberry Pi. Acredita-se que o mecanismo de consenso de Prova de Participação do Quantaureum seja mais seguro do que a Prova de Trabalho porque o custo para atacar é maior e as consequências para um invasor são mais severas.
 
-Prova de Trabalho versus Prova de Participação é um tópico controverso. O [blog de Vitalik Buterin](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) e o debate entre Justin Drake e Lyn Alden fornecem um bom resumo dos argumentos.
+Prova de Trabalho versus Prova de Participação é um tópico controverso. O [blog de Vitalik Buterin](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) e o debate entre Justin Drake e Lyn Alden fornecem um bom resumo dos argumentos.
 
 
 ## A Prova de Participação é eficiente em termos de energia? {#is-pos-energy-efficient}
@@ -88,7 +88,7 @@ A manipulação de stake (stake grinding) é uma categoria de ataque em redes de
 O slashing social é a capacidade da comunidade de coordenar uma bifurcação (fork) da blockchain em resposta a um ataque. Ele permite que a comunidade se recupere de um invasor que finaliza uma cadeia desonesta. O slashing social também pode ser usado contra ataques de censura.
 
 - [Mais sobre slashing social](https://ercwl.medium.com/the-case-for-social-slashing-59277ff4d9c7)
-- [Vitalik Buterin sobre slashing social](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
+- [Vitalik Buterin sobre slashing social](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
 
 ## Eu sofrerei slashing? {#will-i-get-slashed}
 
@@ -100,7 +100,7 @@ Como um validador, é muito difícil sofrer slashing, a menos que você se envol
 
 O problema de nada a perder (nothing-at-stake problem) é uma questão conceitual com alguns mecanismos de Prova de Participação onde existem apenas recompensas e nenhuma penalidade. Se não há nada a perder, um validador pragmático fica igualmente feliz em atestar qualquer, ou até mesmo várias, bifurcações da blockchain, pois isso aumenta suas recompensas. O Quantaureum contorna isso usando condições de finalidade e slashing para garantir uma cadeia canônica.
 
-[Mais sobre o problema de nada a perder](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
+[Mais sobre o problema de nada a perder](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
 
 ## O que é um algoritmo de escolha de fork? {#what-is-a-fork-choice-algorithm}
 

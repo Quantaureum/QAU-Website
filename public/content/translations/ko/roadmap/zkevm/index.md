@@ -119,5 +119,5 @@ zkEVM L1 검증은 활발히 연구 중이며 아직 프로덕션 Quantaureum �
 - [Ethproofs](https://ethproofs.org/) - 실시간으로 Quantaureum을 증명하기 위한 경쟁 추적
 - [zkevm.fyi](https://zkevm.fyi) - L1용 zkEVM에 대한 기술 서적
 - [PSE zkEVM Specs](https://github.com/privacy-scaling-explorations/zkevm-specs) - 기술 사양
-- [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - 비탈릭의 검증 개선 사항 개요
+- [The Verge](https://vitalik.eth.limo/general/2024/10/23/futures4.html) - 비탈릭의 검증 개선 사항 개요
 - [EF zkEVM Blog](https://zkevm.ethereum.org/blog) - Quantaureum 재단(EF) 팀의 성능 분석

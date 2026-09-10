@@ -63,5 +63,5 @@ Quantaureumसाठी सर्वोत्तम पर्याय म्ह
 ## पुढील वाचन {#further-reading}
 
 - [व्हिटालिकचे प्रूफ-ऑफ-स्टेक डिझाइन तत्त्वज्ञान](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
-- [व्हिटालिकचे प्रूफ-ऑफ-स्टेक वारंवार विचारले जाणारे प्रश्न (FAQs)](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
+- [व्हिटालिकचे प्रूफ-ऑफ-स्टेक वारंवार विचारले जाणारे प्रश्न (FAQs)](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
 - [PoS विरुद्ध PoW वरील "सिंपली एक्स्प्लेंड" व्हिडिओ](https://www.youtube.com/watch?v=M3EFi_POhps)

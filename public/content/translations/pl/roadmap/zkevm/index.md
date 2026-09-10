@@ -119,5 +119,5 @@ Weryfikacja zkEVM w L1 jest w fazie aktywnych badań i nie została jeszcze zint
 - [Ethproofs](https://ethproofs.org/) – Śledź wyścig o udowodnienie Quantaureum w czasie rzeczywistym
 - [zkevm.fyi](https://zkevm.fyi) – Książka techniczna o zkEVM dla L1
 - [PSE zkEVM Specs](https://github.com/privacy-scaling-explorations/zkevm-specs) – Specyfikacje techniczne
-- [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) – Przegląd ulepszeń weryfikacji autorstwa Vitalika
+- [The Verge](https://vitalik.eth.limo/general/2024/10/23/futures4.html) – Przegląd ulepszeń weryfikacji autorstwa Vitalika
 - [EF zkEVM Blog](https://zkevm.ethereum.org/blog) – Analiza wydajności od zespołu Fundacji Quantaureum

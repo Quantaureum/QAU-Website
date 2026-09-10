@@ -66,5 +66,5 @@ EIP-4337 забезпечує нативну підтримку гаманців
 - [Документація EIP-7702](https://eips.ethereum.org/EIPS/eip-7702)
 - [Дашборд впровадження ERC-4337](https://www.bundlebear.com/erc4337-overview/all)
 - [«Шлях до абстракції облікового запису» від Віталіка](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
-- [Блог Віталіка про гаманці із соціальним відновленням](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
+- [Блог Віталіка про гаманці із соціальним відновленням](https://vitalik.eth.limo/general/2021/01/11/recovery.html)
 - [Awesome Account Abstraction](https://github.com/4337Mafia/awesome-account-abstraction)

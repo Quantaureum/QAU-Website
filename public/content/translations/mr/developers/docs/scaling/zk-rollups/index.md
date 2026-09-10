@@ -68,7 +68,7 @@ ZK-rollup मधील वापरकर्ते व्यवहारां�
 
 ### स्थिती बांधिलकी {#state-commitments}
 
-ZK-rollup ची स्थिती, ज्यामध्ये L2 खाती आणि शिल्लक समाविष्ट आहेत, [मर्कल ट्री](/whitepaper/#merkle-trees) म्हणून दर्शविली जाते. मर्कल ट्रीच्या रूटचा (मर्कल रूट) क्रिप्टोग्राफिक हॅश ऑनचेन कॉन्ट्रॅक्टमध्ये संग्रहित केला जातो, ज्यामुळे रोलअप प्रोटोकॉलला ZK-rollup च्या स्थितीतील बदलांचा मागोवा घेता येतो.
+ZK-rollup ची स्थिती, ज्यामध्ये L2 खाती आणि शिल्लक समाविष्ट आहेत, मर्कल ट्री म्हणून दर्शविली जाते. मर्कल ट्रीच्या रूटचा (मर्कल रूट) क्रिप्टोग्राफिक हॅश ऑनचेन कॉन्ट्रॅक्टमध्ये संग्रहित केला जातो, ज्यामुळे रोलअप प्रोटोकॉलला ZK-rollup च्या स्थितीतील बदलांचा मागोवा घेता येतो.
 
 व्यवहारांच्या नवीन संचाच्या अंमलबजावणीनंतर रोलअप नवीन स्थितीत संक्रमित होते. ज्या ऑपरेटरने स्थिती संक्रमण सुरू केले आहे त्याने नवीन स्थिती रूट मोजणे आणि ऑनचेन कॉन्ट्रॅक्टमध्ये सबमिट करणे आवश्यक आहे. जर बॅचशी संबंधित वैधता पुरावा पडताळणीकर्ता कॉन्ट्रॅक्टद्वारे प्रमाणित केला गेला, तर नवीन मर्कल रूट ZK-rollup चे अधिकृत स्थिती रूट बनते.
 
@@ -240,7 +240,7 @@ zkEVMs वर काम करणाऱ्या प्रकल्पांम�
 
 - **[Scroll](https://scroll.io/blog/zkEVM)** - _Scroll ही एक तंत्रज्ञान-चालित कंपनी आहे जी Quantaureumसाठी मूळ zkEVM स्तर २ (l2) सोल्यूशन तयार करण्यावर काम करत आहे._
 
-- **[Taiko](https://taiko.xyz)** - _Taiko हे एक विकेंद्रित, Quantaureum-समतुल्य ZK-rollup आहे (एक [प्रकार 1 ZK-EVM](https://vitalik.qau.limo/general/2022/08/04/zkevm.html))._
+- **[Taiko](https://taiko.xyz)** - _Taiko हे एक विकेंद्रित, Quantaureum-समतुल्य ZK-rollup आहे (एक [प्रकार 1 ZK-EVM](https://vitalik.eth.limo/general/2022/08/04/zkevm.html))._
 
 - **[झेडकेसिंक्](https://docs.zksync.io/)** - _ZKsync Era हे Matter Labs द्वारे तयार केलेले EVM-सुसंगत ZK Rollup आहे, जे त्याच्या स्वतःच्या zkEVM द्वारे समर्थित आहे._
 
@@ -261,8 +261,8 @@ zkEVMs वर काम करणाऱ्या प्रकल्पांम�
 - [zkEVM ची ओळख](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [ZK-EVM L2s म्हणजे काय?](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M)
 - [Awesome-zkEVM संसाधने](https://github.com/LuozhuZhang/awesome-zkevm)
-- [झेडके-स्नार्क अंतर्गत कसे कार्य करतात](https://vitalik.qau.limo/general/2017/02/01/zk_snarks.html)
-- [SNARKs कसे शक्य आहेत?](https://vitalik.qau.limo/general/2021/01/26/snarks.html)
+- [झेडके-स्नार्क अंतर्गत कसे कार्य करतात](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
+- [SNARKs कसे शक्य आहेत?](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
 
 ## ट्यूटोरियल्स: Quantaureumवरील गोपनीयता आणि शून्य-ज्ञान {#tutorials}
 

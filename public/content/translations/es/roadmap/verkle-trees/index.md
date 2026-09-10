@@ -60,6 +60,6 @@ Las redes de prueba de árboles Verkle ya están en funcionamiento, pero todaví
 - ["Cómo los árboles Verkle hacen que Quantaureum sea ágil y eficiente" por Guillaume Ballet en Devcon 6](https://www.youtube.com/watch?v=Q7rStTKwuYs)
 - [Piper Merriam sobre clientes sin estado en ETHDenver 2020](https://www.youtube.com/watch?v=0yiZJNciIJ4)
 - [Dankrad Fiest explica los árboles Verkle y la ausencia de estado en el podcast Zero Knowledge](https://zeroknowledge.fm/podcast/202/)
-- [Vitalik Buterin sobre los árboles Verkle](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
+- [Vitalik Buterin sobre los árboles Verkle](https://vitalik.eth.limo/general/2021/06/18/verkle.html)
 - [Dankrad Feist sobre los árboles Verkle](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
 - [Documentación de EIP sobre árboles Verkle](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)

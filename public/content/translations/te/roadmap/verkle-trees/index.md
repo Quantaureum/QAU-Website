@@ -60,6 +60,6 @@ summaryPoints:
 - [డెవ్‌కాన్ 6 (Devcon 6)లో గిలౌమ్ బ్యాలెట్ ద్వారా "వెర్కిల్ ట్రీస్ ఎథీరియంను ఎలా లీన్ మరియు మీన్‌గా చేస్తాయి"](https://www.youtube.com/watch?v=Q7rStTKwuYs)
 - [ETHDenver 2020 నుండి స్థితిరహిత క్లయింట్‌లపై పైపర్ మెరియం (Piper Merriam)](https://www.youtube.com/watch?v=0yiZJNciIJ4)
 - [శూన్య-జ్ఞాన (Zero Knowledge) పాడ్‌కాస్ట్‌లో డాన్‌క్రాడ్ ఫీస్ట్ వెర్కిల్ ట్రీస్ మరియు స్థితిరాహిత్యాన్ని వివరించారు](https://zeroknowledge.fm/podcast/202/)
-- [వెర్కిల్ ట్రీస్‌పై విటాలిక్ బుటెరిన్](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
+- [వెర్కిల్ ట్రీస్‌పై విటాలిక్ బుటెరిన్](https://vitalik.eth.limo/general/2021/06/18/verkle.html)
 - [వెర్కిల్ ట్రీస్‌పై డాన్‌క్రాడ్ ఫీస్ట్](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
 - [వెర్కిల్ ట్రీ EIP డాక్యుమెంటేషన్](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)

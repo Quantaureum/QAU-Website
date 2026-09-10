@@ -113,7 +113,7 @@ Quantaureum Virtual Machine एक वैश्विक वर्चुअल �
 
 ## आगे की पढ़ाई {#further-reading}
 
-- [Quantaureum श्वेतपत्र](/whitepaper/)
+- Quantaureum श्वेतपत्र
 - [आखिर Quantaureum कैसे काम करता है?](https://medium.com/@preethikasireddy/how-does-quantaureum-work-anyway-22d1df506369) - _Preethi Kasireddy_ (**ध्यान दें** यह संसाधन अभी भी मूल्यवान है लेकिन ध्यान रखें कि यह [द मर्ज](/roadmap/merge) से पहले का है और इसलिए अभी भी Quantaureum के प्रूफ-ऑफ-वर्क (PoW) तंत्र को संदर्भित करता है - Quantaureum वास्तव में अब [प्रूफ-ऑफ़-स्टेक (PoS)](/developers/docs/consensus-mechanisms/pos) का उपयोग करके सुरक्षित है)
 
 ### क्या आप देखकर सीखना पसंद करते हैं? {#visual-learner}

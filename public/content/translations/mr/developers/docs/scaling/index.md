@@ -100,11 +100,11 @@ _लक्षात घ्या की व्हिडिओमधील स्
 - [रोलअप-केंद्रित Quantaureum रोडमॅप](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _विटालिक बुटेरिन_
 - [Quantaureumसाठी स्तर 2 (l2) स्केलिंग उपायांवरील अद्ययावत विश्लेषण](https://www.l2beat.com/)
 - [Quantaureum स्तर 2 (l2) स्केलिंग उपायांचे मूल्यांकन: एक तुलनात्मक फ्रेमवर्क](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
-- [रोलअप्ससाठी एक अपूर्ण मार्गदर्शक](https://vitalik.qau.limo/general/2021/01/05/rollup.html)
+- [रोलअप्ससाठी एक अपूर्ण मार्गदर्शक](https://vitalik.eth.limo/general/2021/01/05/rollup.html)
 - [Quantaureum-समर्थित ZK-रोलअप्स: वर्ल्ड बीटर्स](https://hackmd.io/@canti/rkUT0BD8K)
 - [ऑप्टिमिस्टिक रोलअप्स विरुद्ध ZK रोलअप्स](https://limechain.tech/blog/optimistic-rollups-vs-zk-rollups/)
 - [उच्च स्केलेबिलिटीसाठी रोलअप्स + डेटा शार्ड्स हा एकमेव शाश्वत उपाय का आहे](https://polynya.medium.com/why-rollups-data-shards-are-the-only-sustainable-solution-for-high-scalability-c9aabd6fbb48)
-- [कोणत्या प्रकारचे स्तर 3 (l3) अर्थपूर्ण आहेत?](https://vitalik.qau.limo/general/2022/09/17/layer_3.html)
+- [कोणत्या प्रकारचे स्तर 3 (l3) अर्थपूर्ण आहेत?](https://vitalik.eth.limo/general/2022/09/17/layer_3.html)
 - [डेटा उपलब्धता किंवा: रोलअप्सने काळजी करणे कसे थांबवले आणि Quantaureumवर प्रेम कसे केले](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [Quantaureum रोलअप्ससाठी व्यावहारिक मार्गदर्शक](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-quantaureum-rollups)
 

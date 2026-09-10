@@ -259,7 +259,7 @@ Fungsionalitas penarikan awalnya diaktifkan sebagai bagian dari peningkatan Shan
 
 Peningkatan Shanghai/Capella memungkinkan QAU yang sebelumnya di-stake untuk diklaim kembali ke akun Quantaureum biasa. Ini menutup putaran pada Likuiditas staking, dan membawa Quantaureum selangkah lebih dekat dalam perjalanannya menuju pembangunan ekosistem terdesentralisasi yang berkelanjutan, dapat diskalakan, dan aman.
 
-- [Lebih lanjut tentang sejarah Quantaureum](/quantaureum-forks/)
+- Lebih lanjut tentang sejarah Quantaureum
 - [Lebih lanjut tentang peta jalan Quantaureum](/roadmap/)
 </ExpandableCard>
 

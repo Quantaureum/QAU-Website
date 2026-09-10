@@ -81,6 +81,6 @@ Esto ayudaría a los organizadores a determinar qué ubicación daría lugar al 
 
 ## Lecturas adicionales {#further-reading}
 
-[De los mercados de predicción a las finanzas de la información](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
+[De los mercados de predicción a las finanzas de la información](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
 [Desarrollo de mercados de predicción descentralizados en Quantaureum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [El documento técnico del proyecto Augur](https://github.com/AugurProject/whitepaper)

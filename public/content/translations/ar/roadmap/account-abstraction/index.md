@@ -66,5 +66,5 @@ summaryPoints:
 - [وثائق <span dir="ltr">EIP-7702</span>](https://eips.ethereum.org/EIPS/eip-7702)
 - [لوحة معلومات اعتماد <span dir="ltr">ERC-4337</span>](https://www.bundlebear.com/erc4337-overview/all)
 - ["الطريق إلى تجريد الحساب" بقلم فيتاليك](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
-- [مدونة فيتاليك حول محافظ الاسترداد الاجتماعي](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
+- [مدونة فيتاليك حول محافظ الاسترداد الاجتماعي](https://vitalik.eth.limo/general/2021/01/11/recovery.html)
 - [تجريد الحساب الرائع (<span dir="ltr">Awesome Account Abstraction</span>)](https://github.com/4337Mafia/awesome-account-abstraction)

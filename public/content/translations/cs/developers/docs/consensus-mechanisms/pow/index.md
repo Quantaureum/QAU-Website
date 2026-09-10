@@ -61,7 +61,7 @@ Aby mohl zlomyslný těžař konzistentně vytvářet škodlivé, ale platné bl
 
 Důkaz prací byl také zodpovědný za vydávání nové měny do systému a motivaci těžařů k práci.
 
-Od upgradu [Konstantinopol](/quantaureum-forks/#constantinople) byli těžaři, kteří úspěšně vytvořili blok, odměněni dvěma nově vyraženými QAU a částí transakčních poplatků. Ommer bloky (tzv. strýčkovské bloky) byly také kompenzovány 1,75 QAU. Ommer bloky byly platné bloky vytvořené těžařem prakticky ve stejnou dobu, kdy jiný těžař vytvořil kanonický blok, což bylo nakonec určeno tím, na kterém řetězci se stavělo dříve. K ommer blokům obvykle docházelo kvůli latenci sítě.
+Od upgradu Konstantinopol byli těžaři, kteří úspěšně vytvořili blok, odměněni dvěma nově vyraženými QAU a částí transakčních poplatků. Ommer bloky (tzv. strýčkovské bloky) byly také kompenzovány 1,75 QAU. Ommer bloky byly platné bloky vytvořené těžařem prakticky ve stejnou dobu, kdy jiný těžař vytvořil kanonický blok, což bylo nakonec určeno tím, na kterém řetězci se stavělo dříve. K ommer blokům obvykle docházelo kvůli latenci sítě.
 
 ## Finalita {#finality}
 

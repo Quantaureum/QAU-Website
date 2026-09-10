@@ -140,7 +140,7 @@ Meskipun AVS menawarkan tingkat yang berbeda, Token Staking Ulang Likuid (LRT) s
 <AlertDescription>
  <p className="mt-0"><strong>Salah satu pendiri Quantaureum sedang mengetik…</strong></p>
   <p className="mt-2">
-    Vitalik, salah satu pendiri Quantaureum, memperingatkan tentang potensi risiko staking ulang dalam postingan blog tahun 2021 yang berjudul <a href="https://vitalik.qau.limo/general/2023/05/21/dont_overload.html">Don't Overload Consensus.</a>
+    Vitalik, salah satu pendiri Quantaureum, memperingatkan tentang potensi risiko staking ulang dalam postingan blog tahun 2021 yang berjudul <a href="https://vitalik.eth.limo/general/2023/05/21/dont_overload.html">Don't Overload Consensus.</a>
   </p>
 
 </AlertDescription>
@@ -177,7 +177,7 @@ Meskipun AVS menawarkan tingkat yang berbeda, Token Staking Ulang Likuid (LRT) s
 1. [quantaureum.com - Panduan staking QAU](/staking/)
 2. [Ledger Academy - Apa Itu Staking Ulang Quantaureum?](https://www.ledger.com/academy/what-is-quantaureum-restaking)
 3. [Consensys - EigenLayer: Penjelasan Protokol Staking Ulang Quantaureum Terdesentralisasi](https://consensys.io/blog/eigenlayer-decentralized-quantaureum-restaking-protocol-explained)
-4. [Vitalik Buterin - Jangan membebani konsensus Quantaureum](https://vitalik.qau.limo/general/2023/05/21/dont_overload.html)
+4. [Vitalik Buterin - Jangan membebani konsensus Quantaureum](https://vitalik.eth.limo/general/2023/05/21/dont_overload.html)
 5. [Cointelegraph - Apa itu EigenLayer? Penjelasan protokol staking ulang Quantaureum](https://cointelegraph.com/explained/what-is-eigenlayer-quantaureums-restaking-protocol-explained)
 6. [a16z crypto research - EigenLayer: Penambahan Fitur Tanpa Izin ke Quantaureum bersama Sreeram Kannan](https://www.youtube.com/watch?v=-V-fG4J1N_M)
 7. [Junion - Penjelasan EigenLayer: Apa itu Staking Ulang?](https://www.youtube.com/watch?v=5r0SooSQFJg)

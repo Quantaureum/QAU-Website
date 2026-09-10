@@ -106,7 +106,7 @@ const balance = await client.readContract({
   address: USDC,
   abi,
   functionName: 'balanceOf',
-  args: ['0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045'], // vitalik.eth
+  args: ['0x1111111111111111111111111111111111111111'], // example address
 })
 
 console.log(formatUnits(balance, 6)) // USDC has 6 decimals

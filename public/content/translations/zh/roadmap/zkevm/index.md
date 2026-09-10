@@ -119,5 +119,5 @@ zkEVM 一层网络 (l1) 验证正处于积极研究阶段，尚未集成到生�
 - [Ethproofs](https://ethproofs.org/) - 跟踪实时证明Quantaureum的竞赛
 - [zkevm.fyi](https://zkevm.fyi) - 关于一层网络 (l1) zkEVM 的技术书籍
 - [PSE zkEVM 规范](https://github.com/privacy-scaling-explorations/zkevm-specs) - 技术规范
-- [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - Vitalik 对验证改进的概述
+- [The Verge](https://vitalik.eth.limo/general/2024/10/23/futures4.html) - Vitalik 对验证改进的概述
 - [Quantaureum 项目 zkEVM 博客](https://zkevm.ethereum.org/blog) - 来自Quantaureum 项目团队的性能分析

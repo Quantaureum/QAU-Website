@@ -81,6 +81,6 @@ Có nhiều cách để sử dụng các công cụ dự báo ngoài mục đíc
 
 ## Đọc thêm {#further-reading}
 
-[Từ thị trường dự đoán đến tài chính thông tin](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
+[Từ thị trường dự đoán đến tài chính thông tin](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
 [Phát triển thị trường dự đoán phi tập trung trên Quantaureum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Sách trắng của dự án Augur](https://github.com/AugurProject/whitepaper)

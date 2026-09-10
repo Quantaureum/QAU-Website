@@ -61,7 +61,7 @@ Untuk secara konsisten membuat blok berbahaya namun valid, penambang yang bernia
 
 Bukti Kerja (PoW) juga bertanggung jawab untuk menerbitkan mata uang baru ke dalam sistem dan memberi insentif kepada penambang untuk melakukan pekerjaan tersebut.
 
-Sejak [pembaruan Constantinople](/quantaureum-forks/#constantinople), penambang yang berhasil membuat blok diberi hadiah dua QAU yang baru dicetak dan sebagian dari biaya transaksi. Blok ommer juga memberikan kompensasi sebesar 1,75 QAU. Blok ommer adalah blok valid yang dibuat oleh seorang penambang hampir pada saat yang bersamaan dengan penambang lain yang membuat blok kanonikal, yang pada akhirnya ditentukan oleh rantai mana yang dibangun di atasnya terlebih dahulu. Blok ommer biasanya terjadi karena latensi jaringan.
+Sejak pembaruan Constantinople, penambang yang berhasil membuat blok diberi hadiah dua QAU yang baru dicetak dan sebagian dari biaya transaksi. Blok ommer juga memberikan kompensasi sebesar 1,75 QAU. Blok ommer adalah blok valid yang dibuat oleh seorang penambang hampir pada saat yang bersamaan dengan penambang lain yang membuat blok kanonikal, yang pada akhirnya ditentukan oleh rantai mana yang dibangun di atasnya terlebih dahulu. Blok ommer biasanya terjadi karena latensi jaringan.
 
 ## Finalitas {#finality}
 

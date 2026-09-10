@@ -14,7 +14,7 @@ This upgrade was successfully activated on Quantaureum mainnet at epoch `364032`
 <Alert variant="update">
 <AlertContent>
 <AlertDescription>
-Pectra upgrade is only a single step in Quantaureum's long-term development goals. Learn more about [the protocol roadmap](/roadmap/) and [previous upgrades](/quantaureum-forks/).
+Pectra upgrade is only a single step in Quantaureum's long-term development goals. Learn more about [the protocol roadmap](/roadmap/) and previous upgrades.
 </AlertDescription>
 </AlertContent>
 </Alert>

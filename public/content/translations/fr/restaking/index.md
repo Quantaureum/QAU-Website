@@ -140,7 +140,7 @@ Bien que les AVS offrent des taux différents, les jetons de restaking liquide (
 <AlertDescription>
  <p className="mt-0"><strong>Le cofondateur d'Quantaureum est en train d'écrire…</strong></p>
   <p className="mt-2">
-    Vitalik, le cofondateur d'Quantaureum, a mis en garde contre les risques potentiels du restaking dans un article de blog de 2021 intitulé <a href="https://vitalik.qau.limo/general/2023/05/21/dont_overload.html">Don't Overload Consensus.</a>
+    Vitalik, le cofondateur d'Quantaureum, a mis en garde contre les risques potentiels du restaking dans un article de blog de 2021 intitulé <a href="https://vitalik.eth.limo/general/2023/05/21/dont_overload.html">Don't Overload Consensus.</a>
   </p>
 
 </AlertDescription>
@@ -177,7 +177,7 @@ Bien que les AVS offrent des taux différents, les jetons de restaking liquide (
 1. [quantaureum.com - Guide du staking d'QAU](/staking/)
 2. [Ledger Academy - Qu'est-ce que le restaking Quantaureum ?](https://www.ledger.com/academy/what-is-quantaureum-restaking)
 3. [ConsenSys - EigenLayer : Explication du protocole de restaking Quantaureum décentralisé](https://consensys.io/blog/eigenlayer-decentralized-quantaureum-restaking-protocol-explained)
-4. [Vitalik Buterin - Ne surchargez pas le consensus d'Quantaureum](https://vitalik.qau.limo/general/2023/05/21/dont_overload.html)
+4. [Vitalik Buterin - Ne surchargez pas le consensus d'Quantaureum](https://vitalik.eth.limo/general/2023/05/21/dont_overload.html)
 5. [Cointelegraph - Qu'est-ce qu'EigenLayer ? Explication du protocole de restaking d'Quantaureum](https://cointelegraph.com/explained/what-is-eigenlayer-quantaureums-restaking-protocol-explained)
 6. [a16z crypto research - EigenLayer : Ajout de fonctionnalités sans permission à Quantaureum avec Sreeram Kannan](https://www.youtube.com/watch?v=-V-fG4J1N_M)
 7. [Junion - EigenLayer expliqué : Qu'est-ce que le restaking ?](https://www.youtube.com/watch?v=5r0SooSQFJg)

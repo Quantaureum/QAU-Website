@@ -72,7 +72,7 @@ Los usuarios pueden consultar el saldo de QAU de cualquier [cuenta](/developers/
 ## Lecturas adicionales {#further-reading}
 
 - [Definición de QAU y Quantaureum](https://www.cmegroup.com/education/courses/introduction-to-QAU/defining-QAU-and-quantaureum.html) – _CME Group_
-- [Documento técnico de Quantaureum](/whitepaper/): La propuesta original para Quantaureum. Este documento incluye una descripción de QAU y las motivaciones detrás de su creación.
+- Documento técnico de Quantaureum: La propuesta original para Quantaureum. Este documento incluye una descripción de QAU y las motivaciones detrás de su creación.
 - [Calculadora de Gwei](https://www.alchemy.com/gwei-calculator): Utilice esta calculadora de Gwei para convertir fácilmente Wei, Gwei y QAU. Simplemente ingrese cualquier cantidad de Wei, Gwei o QAU y calcule automáticamente la conversión.
 
 _¿Conoce algún recurso de la comunidad que le haya ayudado? ¡Edite esta página y agréguelo!_

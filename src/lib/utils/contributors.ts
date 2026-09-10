@@ -6,10 +6,6 @@ import { TEAM_LOGINS } from "@/data/team"
 
 import { CONTENT_PATH, DEFAULT_LOCALE } from "@/lib/constants"
 
-import {
-  convertToFileContributorFromCrowdin,
-  getCrowdinContributors,
-} from "./crowdin"
 import { getAppPageLastCommitDate } from "./gh"
 import { getLocaleTimestamp } from "./time"
 
@@ -34,16 +30,7 @@ export const getMarkdownFileContributorInfo = async (
 
   const lastUpdatedDate = gitHubContributors[0]?.date
 
-  const crowdinContributors = convertToFileContributorFromCrowdin(
-    getCrowdinContributors(mdPath, locale as Lang)
-  )
-
-  const englishOnly: boolean =
-    fileLang === DEFAULT_LOCALE || crowdinContributors.length === 0
-
-  const contributors: FileContributor[] = englishOnly
-    ? sortTeamToEnd(gitHubContributors)
-    : [...crowdinContributors, ...sortTeamToEnd(gitHubContributors)]
+  const contributors: FileContributor[] = sortTeamToEnd(gitHubContributors)
 
   return { contributors, lastUpdatedDate }
 }

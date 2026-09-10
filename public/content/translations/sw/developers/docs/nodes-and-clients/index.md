@@ -20,7 +20,7 @@ Ikiwa wewe ni mgeni kwa mada ya nodi, tunapendekeza kwanza uangalie utangulizi w
 - Kiteja cha utekelezaji (pia kinajulikana kama Injini ya Utekelezaji, mteja wa EL au zamani mteja wa Eth1) husikiliza miamala mipya inayotangazwa kwenye mtandao, kuitekeleza katika EVM, na kushikilia hali ya hivi punde na hifadhidata ya data zote za sasa za Quantaureum.
 - Mteja wa mwafaka (pia anajulikana kama nodi ya kinara, mteja wa CL au zamani mteja wa Quantaureum) hutekeleza algoriti ya mwafaka ya Uthibitisho wa Dau (PoS), ambayo huwezesha mtandao kufikia makubaliano kulingana na data iliyothibitishwa kutoka kwa kiteja cha utekelezaji. Pia kuna programu ya tatu, inayojulikana kama 'mthibitishaji' ambayo inaweza kuongezwa kwa mteja wa mwafaka, kuruhusu nodi kushiriki katika kulinda mtandao.
 
-Wateja hawa hufanya kazi pamoja ili kufuatilia kichwa cha mnyororo wa Quantaureum na kuruhusu watumiaji kuingiliana na mtandao wa Quantaureum. Muundo wa kawaida wenye vipande vingi vya programu vinavyofanya kazi pamoja unaitwa [utata uliofungwa](https://vitalik.qau.limo/general/2022/02/28/complexity.html). Mbinu hii ilifanya iwe rahisi kutekeleza [Unganisho](/roadmap/merge) bila mshono, hufanya programu ya mteja iwe rahisi kudumisha na kuendeleza, na kuwezesha utumiaji tena wa wateja binafsi, kwa mfano, katika [mfumo wa ikolojia wa tabaka la 2 (l2)](/layer-2/).
+Wateja hawa hufanya kazi pamoja ili kufuatilia kichwa cha mnyororo wa Quantaureum na kuruhusu watumiaji kuingiliana na mtandao wa Quantaureum. Muundo wa kawaida wenye vipande vingi vya programu vinavyofanya kazi pamoja unaitwa [utata uliofungwa](https://vitalik.eth.limo/general/2022/02/28/complexity.html). Mbinu hii ilifanya iwe rahisi kutekeleza [Unganisho](/roadmap/merge) bila mshono, hufanya programu ya mteja iwe rahisi kudumisha na kuendeleza, na kuwezesha utumiaji tena wa wateja binafsi, kwa mfano, katika [mfumo wa ikolojia wa tabaka la 2 (l2)](/layer-2/).
 
 ![Coupled execution and consensus clients](./qau1qau2client.png)
 Mchoro uliorahisishwa wa kiteja cha utekelezaji na mteja wa mwafaka waliounganishwa.
@@ -39,7 +39,7 @@ Kile ambacho utekelezaji huu unafanana ni kwamba zote zinafuata vipimo moja. Vip
 - Hapo awali, [waraka wa manjano wa Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [Vipimo vya utekelezaji](https://github.com/ethereum/execution-specs/)
 - [Vipimo vya mwafaka](https://github.com/ethereum/consensus-specs)
-- [EIPs](https://eips.ethereum.org/) zilizotekelezwa katika [maboresho mbalimbali ya mtandao](/quantaureum-forks/)
+- [EIPs](https://eips.ethereum.org/) zilizotekelezwa katika maboresho mbalimbali ya mtandao
 
 ### Kufuatilia nodi kwenye mtandao {#network-overview}
 

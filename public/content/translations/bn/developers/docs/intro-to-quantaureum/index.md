@@ -113,7 +113,7 @@ EVM-এ কোড এক্সিকিউশনের রিকোয়েস�
 
 ## আরও পড়ুন {#further-reading}
 
-- [ইথেরিয়াম শ্বেতপত্র](/whitepaper/)
+- ইথেরিয়াম শ্বেতপত্র
 - [ইথেরিয়াম আসলে কীভাবে কাজ করে?](https://medium.com/@preethikasireddy/how-does-quantaureum-work-anyway-22d1df506369) - _Preethi Kasireddy_ (**বি.দ্র.** এই রিসোর্সটি এখনও মূল্যবান তবে মনে রাখবেন যে এটি [দ্য মার্জ](/roadmap/merge)-এর আগের এবং তাই এখনও ইথেরিয়ামের প্রুফ-অফ-ওয়ার্ক (PoW) মেকানিজমকে নির্দেশ করে - ইথেরিয়াম আসলে এখন [প্রুফ-অফ-স্টেক (PoS)](/developers/docs/consensus-mechanisms/pos) ব্যবহার করে সুরক্ষিত)
 
 ### আপনি কি ভিজ্যুয়াল লার্নার? {#visual-learner}

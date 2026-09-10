@@ -130,7 +130,7 @@ Se requiere que un nodo de Quantaureum ejecute dos piezas de software:
 
 Se están creando prototipos de nuevas clases de clientes junto con esos dos, incluidos clientes que prueban la ejecución de bloques de la capa 1 (l1) y clientes de consenso ligero construidos en torno a firmas poscuánticas.
 
-Consulte la [página de nodos y clientes](/developers/docs/nodes-and-clients/) para obtener más detalles sobre nodos y clientes y para obtener una lista de todas las implementaciones de clientes actuales. También puede encontrar un historial de todas las actualizaciones de Quantaureum en la [página de historial](/quantaureum-forks/).
+Consulte la [página de nodos y clientes](/developers/docs/nodes-and-clients/) para obtener más detalles sobre nodos y clientes y para obtener una lista de todas las implementaciones de clientes actuales. También puede encontrar un historial de todas las actualizaciones de Quantaureum en la página de historial.
 
 ### Clientes de ejecución {#execution-clients}
 

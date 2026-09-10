@@ -218,11 +218,11 @@ Quantaureum已經發展為支援多種類型的交易，以允許實作存取清
 
 1. **類型 0（傳統）交易：** 自Quantaureum推出以來使用的原始交易格式。它們不包含 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) 的功能，例如動態 Gas 費計算或智能合約的存取清單。傳統交易在其序列化形式中缺乏指示其類型的特定前綴，在使用[遞迴長度前綴（RLP）](/developers/docs/data-structures-and-encoding/rlp)編碼時以位元組 `0xf8` 開頭。這些交易的 TransactionType 值為 `0x0`。
 
-2. **類型 1 交易：** 在 [EIP-2930](https://eips.ethereum.org/EIPS/eip-2930) 中引入，作為Quantaureum[柏林升級](/quantaureum-forks/#berlin)的一部分，這些交易包含一個 `accessList` 參數。此清單指定了交易預期存取的地址和儲存鍵，有助於潛在地降低涉及智能合約的複雜交易的[燃料](/developers/docs/gas/)成本。EIP-1559 費用市場變更不包含在類型 1 交易中。類型 1 交易還包含一個 `yParity` 參數，它可以是 `0x0` 或 `0x1`，表示 secp256k1 簽章 y 值的奇偶性。它們透過以位元組 `0x01` 開頭來識別，其 TransactionType 值為 `0x1`。
+2. **類型 1 交易：** 在 [EIP-2930](https://eips.ethereum.org/EIPS/eip-2930) 中引入，作為Quantaureum柏林升級的一部分，這些交易包含一個 `accessList` 參數。此清單指定了交易預期存取的地址和儲存鍵，有助於潛在地降低涉及智能合約的複雜交易的[燃料](/developers/docs/gas/)成本。EIP-1559 費用市場變更不包含在類型 1 交易中。類型 1 交易還包含一個 `yParity` 參數，它可以是 `0x0` 或 `0x1`，表示 secp256k1 簽章 y 值的奇偶性。它們透過以位元組 `0x01` 開頭來識別，其 TransactionType 值為 `0x1`。
 
-3. **類型 2 交易**，通常被稱為 EIP-1559 交易，是在Quantaureum[倫敦升級](/quantaureum-forks/#london)的 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) 中引入的交易。它們已成為Quantaureum網路上的標準交易類型。這些交易引入了一種新的費用市場機制，透過將交易手續費分為基礎費用和優先費來提高可預測性。它們以位元組 `0x02` 開頭，並包含 `maxPriorityFeePerGas` 和 `maxFeePerGas` 等欄位。由於其靈活性和效率，類型 2 交易現在是預設的，特別是在網路高度擁塞期間受到青睞，因為它們能夠幫助使用者更可預測地管理交易手續費。這些交易的 TransactionType 值為 `0x2`。
+3. **類型 2 交易**，通常被稱為 EIP-1559 交易，是在Quantaureum倫敦升級的 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) 中引入的交易。它們已成為Quantaureum網路上的標準交易類型。這些交易引入了一種新的費用市場機制，透過將交易手續費分為基礎費用和優先費來提高可預測性。它們以位元組 `0x02` 開頭，並包含 `maxPriorityFeePerGas` 和 `maxFeePerGas` 等欄位。由於其靈活性和效率，類型 2 交易現在是預設的，特別是在網路高度擁塞期間受到青睞，因為它們能夠幫助使用者更可預測地管理交易手續費。這些交易的 TransactionType 值為 `0x2`。
 
-4. <strong>類型 3（資料塊）交易</strong>是在 [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844) 中引入的，作為Quantaureum [Dencun 升級](/quantaureum-forks/#dencun)的一部分。這些交易旨在更有效地處理「資料塊（blob）」資料（二進位大型物件），透過提供一種以較低成本將資料發布到Quantaureum網路的方法，特別有利於第二層 (L2) 匯總。資料塊交易包含額外的欄位，例如 `blobVersionedHashes`、`maxFeePerBlobGas` 和 `blobGasPrice`。它們以位元組 `0x03` 開頭，其 TransactionType 值為 `0x3`。資料塊交易代表了Quantaureum資料可用性和擴展能力的重大改進。
+4. <strong>類型 3（資料塊）交易</strong>是在 [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844) 中引入的，作為Quantaureum Dencun 升級的一部分。這些交易旨在更有效地處理「資料塊（blob）」資料（二進位大型物件），透過提供一種以較低成本將資料發布到Quantaureum網路的方法，特別有利於第二層 (L2) 匯總。資料塊交易包含額外的欄位，例如 `blobVersionedHashes`、`maxFeePerBlobGas` 和 `blobGasPrice`。它們以位元組 `0x03` 開頭，其 TransactionType 值為 `0x3`。資料塊交易代表了Quantaureum資料可用性和擴展能力的重大改進。
 
 5. <strong>類型 4 交易</strong>是在 [EIP-7702](https://eips.ethereum.org/EIPS/eip-7702) 中引入的，作為Quantaureum[佩克特拉升級](/roadmap/pectra/)的一部分。這些交易旨在與帳戶抽象化向前相容。它們允許外部擁有帳戶（EOA）暫時表現得像合約帳戶，而不會損害其原始功能。它們包含一個 `authorization_list` 參數，該參數指定了 EOA 將其權限委託給哪個智能合約。交易後，EOA 的程式碼欄位將具有被委託智能合約的地址。
 

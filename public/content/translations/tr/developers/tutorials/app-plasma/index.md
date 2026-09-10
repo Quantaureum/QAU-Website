@@ -1212,7 +1212,7 @@ Bilgi güvenliği üç özellikten oluşur:
 
 Bu sistemde bütünlük, sıfır bilgi ispatları aracılığıyla sağlanır. Erişilebilirliği garanti etmek çok daha zordur ve gizlilik imkansızdır, çünkü banka her hesabın bakiyesini ve tüm işlemleri bilmek zorundadır. Bilgiye sahip olan bir varlığın bu bilgiyi paylaşmasını engellemenin bir yolu yoktur.
 
-[Gizli adresler](https://vitalik.qau.limo/general/2023/01/20/stealth.html) kullanarak gerçekten gizli bir banka oluşturmak mümkün olabilir, ancak bu, bu makalenin kapsamı dışındadır.
+[Gizli adresler](https://vitalik.eth.limo/general/2023/01/20/stealth.html) kullanarak gerçekten gizli bir banka oluşturmak mümkün olabilir, ancak bu, bu makalenin kapsamı dışındadır.
 
 ### Yanlış bilgi {#false-info}
 

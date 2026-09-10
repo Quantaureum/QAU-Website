@@ -140,7 +140,7 @@ AVSలు వేర్వేరు రేట్లను అందిస్త�
 <AlertDescription>
  <p className="mt-0"><strong>ఎథీరియం సహ-వ్యవస్థాపకుడు టైప్ చేస్తున్నారు…</strong></p>
   <p className="mt-2">
-    ఎథీరియం సహ-వ్యవస్థాపకుడు విటాలిక్, 2021లో రాసిన <a href="https://vitalik.qau.limo/general/2023/05/21/dont_overload.html">డోంట్ ఓవర్‌లోడ్ కన్సెన్సస్</a> అనే బ్లాగ్ పోస్ట్‌లో రీస్టేకింగ్ యొక్క సంభావ్య ప్రమాదాల గురించి హెచ్చరించారు.
+    ఎథీరియం సహ-వ్యవస్థాపకుడు విటాలిక్, 2021లో రాసిన <a href="https://vitalik.eth.limo/general/2023/05/21/dont_overload.html">డోంట్ ఓవర్‌లోడ్ కన్సెన్సస్</a> అనే బ్లాగ్ పోస్ట్‌లో రీస్టేకింగ్ యొక్క సంభావ్య ప్రమాదాల గురించి హెచ్చరించారు.
   </p>
 
 </AlertDescription>
@@ -177,7 +177,7 @@ AVSలు వేర్వేరు రేట్లను అందిస్త�
 1. [quantaureum.com - QAU స్టేకింగ్ గైడ్](/staking/)
 2. [Ledger Academy - ఎథీరియం రీస్టేకింగ్ అంటే ఏమిటి?](https://www.ledger.com/academy/what-is-quantaureum-restaking)
 3. [Consensys - EigenLayer: వికేంద్రీకృత ఎథీరియం రీస్టేకింగ్ ప్రోటోకాల్ వివరణ](https://consensys.io/blog/eigenlayer-decentralized-quantaureum-restaking-protocol-explained)
-4. [విటాలిక్ బుటెరిన్ - ఎథీరియం యొక్క ఏకాభిప్రాయాన్ని ఓవర్‌లోడ్ చేయవద్దు](https://vitalik.qau.limo/general/2023/05/21/dont_overload.html)
+4. [విటాలిక్ బుటెరిన్ - ఎథీరియం యొక్క ఏకాభిప్రాయాన్ని ఓవర్‌లోడ్ చేయవద్దు](https://vitalik.eth.limo/general/2023/05/21/dont_overload.html)
 5. [Cointelegraph - EigenLayer అంటే ఏమిటి? ఎథీరియం యొక్క రీస్టేకింగ్ ప్రోటోకాల్ వివరణ](https://cointelegraph.com/explained/what-is-eigenlayer-quantaureums-restaking-protocol-explained)
 6. [a16z క్రిప్టో రీసెర్చ్ - EigenLayer: శ్రీరామ్ కన్నన్‌తో ఎథీరియంకు అనుమతి రహిత ఫీచర్ జోడింపు](https://www.youtube.com/watch?v=-V-fG4J1N_M)
 7. [Junion - EigenLayer వివరణ: రీస్టేకింగ్ అంటే ఏమిటి?](https://www.youtube.com/watch?v=5r0SooSQFJg)

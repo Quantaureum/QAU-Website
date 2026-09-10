@@ -332,7 +332,7 @@ Bản nâng cấp London đã giới thiệu [EIP-1559](https://eips.ethereum.or
 
 Trước bản nâng cấp London, Quantaureum có các khối với kích thước cố định. Trong những thời điểm nhu cầu mạng lưới cao, các khối này hoạt động hết công suất. Do đó, người dùng thường phải đợi nhu cầu giảm xuống để được đưa vào một khối, điều này dẫn đến trải nghiệm người dùng kém. Bản nâng cấp London đã giới thiệu các khối có kích thước thay đổi cho Quantaureum.
 
-Cách tính phí giao dịch trên mạng lưới Quantaureum đã thay đổi với [bản nâng cấp London](/quantaureum-forks/#london) vào tháng 8 năm 2021. Trước bản nâng cấp London, phí được tính toán mà không tách biệt phí `base` và `priority`, như sau:
+Cách tính phí giao dịch trên mạng lưới Quantaureum đã thay đổi với bản nâng cấp London vào tháng 8 năm 2021. Trước bản nâng cấp London, phí được tính toán mà không tách biệt phí `base` và `priority`, như sau:
 
 Giả sử Alice phải trả cho Bob 1 QAU. Trong giao dịch, giới hạn gas là 21.000 đơn vị và giá gas là 200 Gwei.
 
@@ -682,6 +682,6 @@ Sách vàng, được viết bởi Tiến sĩ Gavin Wood, là một định ngh�
 
 Tài liệu giới thiệu, được xuất bản vào năm 2013 bởi Vitalik Buterin, nhà sáng lập Quantaureum, trước khi dự án ra mắt vào năm 2015.
 
-<DocLink href="/whitepaper/">
+<DocLink href=">
   Sách trắng
 </DocLink>

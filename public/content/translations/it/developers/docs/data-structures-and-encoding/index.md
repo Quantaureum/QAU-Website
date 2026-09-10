@@ -9,7 +9,7 @@ Quantaureum crea, archivia e trasferisce grandi volumi di dati. Questi dati devo
 
 ## Prerequisiti {#prerequisites}
 
-Dovresti comprendere i fondamenti di Quantaureum e del [software client](/developers/docs/nodes-and-clients/). Si consiglia di avere familiarità con il livello di rete e con [il whitepaper di Quantaureum](/whitepaper/).
+Dovresti comprendere i fondamenti di Quantaureum e del [software client](/developers/docs/nodes-and-clients/). Si consiglia di avere familiarità con il livello di rete e con il whitepaper di Quantaureum.
 
 ## Strutture dati {#data-structures}
 

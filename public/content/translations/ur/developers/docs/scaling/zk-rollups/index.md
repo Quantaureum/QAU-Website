@@ -68,7 +68,7 @@ lang: ur
 
 ### حالت کی کمٹمنٹس {#state-commitments}
 
-<span dir="ltr">ZK-rollup</span> کی حالت، جس میں لیئر ۲ (<span dir="ltr">l2</span>) اکاؤنٹس اور بیلنس شامل ہیں، کو ایک [مرکل ٹری](/whitepaper/#merkle-trees) کے طور پر ظاہر کیا جاتا ہے۔ مرکل ٹری کی روٹ (مرکل روٹ) کا ایک کرپٹوگرافک ہیش آن چین کنٹریکٹ میں اسٹور کیا جاتا ہے، جس سے رول اپ پروٹوکول کو <span dir="ltr">ZK-rollup</span> کی حالت میں ہونے والی تبدیلیوں کو ٹریک کرنے کی اجازت ملتی ہے۔
+<span dir="ltr">ZK-rollup</span> کی حالت، جس میں لیئر ۲ (<span dir="ltr">l2</span>) اکاؤنٹس اور بیلنس شامل ہیں، کو ایک مرکل ٹری کے طور پر ظاہر کیا جاتا ہے۔ مرکل ٹری کی روٹ (مرکل روٹ) کا ایک کرپٹوگرافک ہیش آن چین کنٹریکٹ میں اسٹور کیا جاتا ہے، جس سے رول اپ پروٹوکول کو <span dir="ltr">ZK-rollup</span> کی حالت میں ہونے والی تبدیلیوں کو ٹریک کرنے کی اجازت ملتی ہے۔
 
 ٹرانزیکشنز کے ایک نئے سیٹ کے نفاذ کے بعد رول اپ ایک نئی حالت میں منتقل ہو جاتا ہے۔ جس آپریٹر نے حالت کی منتقلی شروع کی ہے اسے ایک نئی حالت کی روٹ کا حساب لگانے اور آن چین کنٹریکٹ میں جمع کرانے کی ضرورت ہے۔ اگر بیچ سے وابستہ درستگی کا ثبوت تصدیق کنندہ کنٹریکٹ کے ذریعے تصدیق شدہ ہے، تو نیا مرکل روٹ <span dir="ltr">ZK-rollup</span> کا کینونیکل حالت کا روٹ بن جاتا ہے۔
 
@@ -240,7 +240,7 @@ lang: ur
 
 - **[<span dir="ltr">Scroll</span>](https://scroll.io/blog/zkEVM)** - _<span dir="ltr">Scroll</span> ایک ٹیک پر مبنی کمپنی ہے جو ایتھیریم کے لیے ایک مقامی <span dir="ltr">zkEVM</span> لیئر ۲ (<span dir="ltr">l2</span>) حل بنانے پر کام کر رہی ہے۔_
 
-- **[<span dir="ltr">Taiko</span>](https://taiko.xyz)** - _<span dir="ltr">Taiko</span> ایک لامركزی، ایتھیریم کے مساوی <span dir="ltr">ZK-rollup</span> ہے (ایک [ٹائپ ۱ <span dir="ltr">ZK-EVM</span>](https://vitalik.qau.limo/general/2022/08/04/zkevm.html))۔_
+- **[<span dir="ltr">Taiko</span>](https://taiko.xyz)** - _<span dir="ltr">Taiko</span> ایک لامركزی، ایتھیریم کے مساوی <span dir="ltr">ZK-rollup</span> ہے (ایک [ٹائپ ۱ <span dir="ltr">ZK-EVM</span>](https://vitalik.eth.limo/general/2022/08/04/zkevm.html))۔_
 
 - **[زی کے سنک](https://docs.zksync.io/)** - _<span dir="ltr">ZKsync Era</span> ایک <span dir="ltr">EVM</span> سے مطابقت رکھنے والا <span dir="ltr">ZK Rollup</span> ہے جسے <span dir="ltr">Matter Labs</span> نے بنایا ہے، جو اس کے اپنے <span dir="ltr">zkEVM</span> سے چلتا ہے۔_
 
@@ -261,8 +261,8 @@ lang: ur
 - [<span dir="ltr">zkEVM</span> کا تعارف](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [<span dir="ltr">ZK-EVM</span> لیئر ۲ (<span dir="ltr">l2s</span>) کیا ہیں؟](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M)
 - [شاندار <span dir="ltr">zkEVM</span> وسائل](https://github.com/LuozhuZhang/awesome-zkevm)
-- [زیڈ کے اسنارک اندرونی طور پر کیسے کام کرتے ہیں](https://vitalik.qau.limo/general/2017/02/01/zk_snarks.html)
-- [<span dir="ltr">SNARKs</span> کیسے ممکن ہیں؟](https://vitalik.qau.limo/general/2021/01/26/snarks.html)
+- [زیڈ کے اسنارک اندرونی طور پر کیسے کام کرتے ہیں](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
+- [<span dir="ltr">SNARKs</span> کیسے ممکن ہیں؟](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
 
 ## ٹیوٹوریلز: ایتھیریم پر رازداری اور صفر علم {#tutorials}
 

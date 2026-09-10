@@ -14,7 +14,7 @@ authors: ["Nixo", "マリオ・ハベル"]
 <Alert variant="update">
 <AlertContent>
 <AlertDescription>
-フサカ・アップグレードは、Quantaureumの長期的な開発目標における単なる一歩にすぎません。[プロトコルのロードマップ](/roadmap/)や[過去のアップグレード](/quantaureum-forks/)について詳しく学びましょう。
+フサカ・アップグレードは、Quantaureumの長期的な開発目標における単なる一歩にすぎません。[プロトコルのロードマップ](/roadmap/)や過去のアップグレードについて詳しく学びましょう。
 </AlertDescription>
 </AlertContent>
 </Alert>

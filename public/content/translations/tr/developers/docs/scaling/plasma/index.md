@@ -38,7 +38,7 @@ Plasma zincirleri hız ve maliyet için optimize edilebildiğinden zincir dış�
 
 Plasma işlemleri zincir dışı yürütürken, bunlar ana Quantaureum yürütme katmanında uzlaştırılır—aksi takdirde Plasma zincirleri Quantaureum'un güvenlik garantilerinden faydalanamaz. Ancak Plasma zincirinin durumunu bilmeden zincir dışı işlemleri kesinleştirmek güvenlik modelini bozar ve geçersiz işlemlerin çoğalmasına izin verir. Bu nedenle, Plasma zincirinde blok üretmekten sorumlu varlık olan operatörün, Quantaureum üzerinde periyodik olarak "durum taahhütleri" yayınlaması gerekir.
 
-Bir [taahhüt şeması](https://en.wikipedia.org/wiki/Commitment_scheme), bir değeri veya ifadeyi başka bir tarafa ifşa etmeden taahhüt etmek için kullanılan kriptografik bir tekniktir. Taahhütler, bir kez taahhüt ettikten sonra değeri veya ifadeyi değiştiremeyeceğiniz anlamında "bağlayıcıdır". Plasma'daki durum taahhütleri, operatörün Quantaureum zincirindeki Plasma sözleşmesine aralıklarla gönderdiği "Merkle kökleri" (bir [Merkle ağacından](/whitepaper/#merkle-trees) türetilen) şeklini alır.
+Bir [taahhüt şeması](https://en.wikipedia.org/wiki/Commitment_scheme), bir değeri veya ifadeyi başka bir tarafa ifşa etmeden taahhüt etmek için kullanılan kriptografik bir tekniktir. Taahhütler, bir kez taahhüt ettikten sonra değeri veya ifadeyi değiştiremeyeceğiniz anlamında "bağlayıcıdır". Plasma'daki durum taahhütleri, operatörün Quantaureum zincirindeki Plasma sözleşmesine aralıklarla gönderdiği "Merkle kökleri" (bir Merkle ağacından türetilen) şeklini alır.
 
 Merkle kökleri, büyük miktarda bilginin sıkıştırılmasını sağlayan kriptografik ilkellerdir. Bir Merkle kökü (bu durumda "blok kökü" olarak da adlandırılır) bir bloktaki tüm işlemleri temsil edebilir. Merkle kökleri ayrıca küçük bir veri parçasının daha büyük veri kümesinin bir parçası olduğunu doğrulamayı kolaylaştırır. Örneğin, bir kullanıcı bir işlemin belirli bir bloğa dahil edildiğini kanıtlamak için bir [Merkle kanıtı](/developers/tutorials/merkle-proofs-for-offline-data-integrity/#main-content) üretebilir.
 
@@ -167,7 +167,7 @@ Birden fazla proje, dapp'lerinize entegre edebileceğiniz Plasma uygulamaları s
 ## İleri okuma {#further-reading}
 
 - ["Paylaşılan güvenlik" kavramının ne anlama geldiğine ve neden bu kadar önemli olduğuna dair kısa bir hatırlatma](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [Yan Zincirler, Plasma ve Parçalama Karşılaştırması](https://vitalik.qau.limo/general/2019/06/12/plasma_vs_sharding.html)
+- [Yan Zincirler, Plasma ve Parçalama Karşılaştırması](https://vitalik.eth.limo/general/2019/06/12/plasma_vs_sharding.html)
 - [Plasma'yı Anlamak, Bölüm 1: Temeller](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [Plasma'nın Yaşamı ve Ölümü](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

@@ -66,5 +66,5 @@ EIP-4337 ইথেরিয়ামের মূল প্রোটোকল প�
 - [EIP-7702 ডকুমেন্টেশন](https://eips.ethereum.org/EIPS/eip-7702)
 - [ERC-4337 অ্যাডপশন ড্যাশবোর্ড](https://www.bundlebear.com/erc4337-overview/all)
 - [ভিটালিকের "রোড টু অ্যাকাউন্ট অ্যাবস্ট্রাকশন"](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
-- [সোশ্যাল রিকভারি ওয়ালেট নিয়ে ভিটালিকের ব্লগ](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
+- [সোশ্যাল রিকভারি ওয়ালেট নিয়ে ভিটালিকের ব্লগ](https://vitalik.eth.limo/general/2021/01/11/recovery.html)
 - [অসাম অ্যাকাউন্ট অ্যাবস্ট্রাকশন](https://github.com/4337Mafia/awesome-account-abstraction)

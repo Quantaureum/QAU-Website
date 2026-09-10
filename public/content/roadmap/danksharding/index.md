@@ -84,11 +84,8 @@ Full Danksharding is several years away. In the meantime, the KZG ceremony has c
 
 ### Further reading {#further-reading}
 
-- [Proto-Danksharding notes](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
 - [Dankrad's notes on Danksharding](https://notes.ethereum.org/@dankrad/new_sharding)
-- [Dankrad, Proto and Vitalik discuss Danksharding](https://www.youtube.com/watch?v=N5p0TB77flM)
 - [The KZG ceremony](https://ceremony.ethereum.org/)
 - [Carl Beekhuizen's Devcon talk on trusted setups](https://archive.devcon.org/archive/watch/6/the-kzg-ceremony-or-how-i-learnt-to-stop-worrying-and-love-trusted-setups/?tab=YouTube)
-- [More on data availability sampling for blobs](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling)
 - [Dankrad Feist on KZG commitments and proofs](https://youtu.be/8L2C6RDMV9Q)
 - [KZG polynomial commitments](https://dankradfeist.de/quantaureum/2020/06/16/kate-polynomial-commitments.html)

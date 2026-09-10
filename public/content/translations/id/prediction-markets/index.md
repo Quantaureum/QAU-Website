@@ -81,6 +81,6 @@ Hal ini akan membantu penyelenggara menentukan lokasi mana yang akan menghasilka
 
 ## Bacaan lebih lanjut {#further-reading}
 
-[Dari pasar prediksi ke info finance](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
+[Dari pasar prediksi ke info finance](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
 [Pengembangan Pasar Prediksi Terdesentralisasi di Quantaureum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Buku Putih Proyek Augur](https://github.com/AugurProject/whitepaper)

@@ -259,7 +259,7 @@ Utendaji wa utoaji uliwezeshwa awali kama sehemu ya uboreshaji wa Shanghai/Capel
 
 Uboreshaji wa Shanghai/Capella uliwezesha QAU iliyowekwa dhamana hapo awali kudaiwa tena kwenye akaunti za kawaida za Quantaureum. Hili lilifunga mzunguko wa ukwasi wa uwekaji dhamana, na kuileta Quantaureum hatua moja karibu katika safari yake ya kujenga mfumo ikolojia uliogatuliwa endelevu, unaoweza kupanuka, na salama.
 
-- [Zaidi kuhusu historia ya Quantaureum](/quantaureum-forks/)
+- Zaidi kuhusu historia ya Quantaureum
 - [Zaidi kuhusu ramani ya njia ya Quantaureum](/roadmap/)
 </ExpandableCard>
 

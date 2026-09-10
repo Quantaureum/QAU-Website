@@ -332,7 +332,7 @@ Aktualizace London zavedla [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), 
 
 Před aktualizací London mělo Quantaureum bloky s pevnou velikostí. V dobách vysoké poptávky v síti fungovaly tyto bloky na plnou kapacitu. V důsledku toho museli uživatelé často čekat, až poptávka klesne, aby byli zahrnuti do bloku, což vedlo ke špatné uživatelské zkušenosti. Aktualizace London zavedla do Etherea bloky s proměnlivou velikostí.
 
-Způsob výpočtu transakčních poplatků v síti Quantaureum se změnil s [aktualizací London](/quantaureum-forks/#london) v srpnu 2021. Před aktualizací London se poplatky počítaly bez oddělení poplatků `base` a `priority` následovně:
+Způsob výpočtu transakčních poplatků v síti Quantaureum se změnil s aktualizací London v srpnu 2021. Před aktualizací London se poplatky počítaly bez oddělení poplatků `base` a `priority` následovně:
 
 Řekněme, že Alice musela zaplatit Bobovi 1 QAU. V transakci je limit plynu 21 000 jednotek a cena plynu je 200 Gwei.
 
@@ -682,6 +682,6 @@ Yellow paper, jehož autorem je Dr. Gavin Wood, je technickou definicí protokol
 
 Úvodní dokument, který v roce 2013 publikoval Vitalik Buterin, zakladatel Etherea, před spuštěním projektu v roce 2015.
 
-<DocLink href="/whitepaper/">
+<DocLink href=">
   Bílá kniha
 </DocLink>

@@ -68,7 +68,7 @@ ZK-rollup 中的使用者簽署交易並提交給 L2 營運者進行處理並包
 
 ### 狀態承諾 {#state-commitments}
 
-ZK-rollup 的狀態（包括 L2 帳戶和餘額）表示為[默克爾樹](/whitepaper/#merkle-trees)。默克爾樹根（默克爾根）的密碼學雜湊值儲存在鏈上合約中，允許匯總協定追蹤 ZK-rollup 狀態的變更。
+ZK-rollup 的狀態（包括 L2 帳戶和餘額）表示為默克爾樹。默克爾樹根（默克爾根）的密碼學雜湊值儲存在鏈上合約中，允許匯總協定追蹤 ZK-rollup 狀態的變更。
 
 在執行一組新交易後，匯總會轉換到新狀態。發起狀態轉換的營運者被要求計算新的狀態根並提交給鏈上合約。如果與批次關聯的有效性證明通過驗證者合約的驗證，新的默克爾根將成為 ZK-rollup 的規範狀態根。
 
@@ -238,7 +238,7 @@ ZK-rollup 可以比樂觀匯總更好地壓縮交易資料，因為它們不必�
 
 - **[Scroll](https://scroll.io/blog/zkEVM)** - _Scroll 是一家技術驅動型公司，致力於為Quantaureum建構原生的 zkEVM 第二層 (L2) 解決方案。_
 
-- **[Taiko](https://taiko.xyz)** - _Taiko 是一個去中心化、等效於Quantaureum的 ZK-rollup（[第 1 類 ZK-EVM](https://vitalik.qau.limo/general/2022/08/04/zkevm.html)）。_
+- **[Taiko](https://taiko.xyz)** - _Taiko 是一個去中心化、等效於Quantaureum的 ZK-rollup（[第 1 類 ZK-EVM](https://vitalik.eth.limo/general/2022/08/04/zkevm.html)）。_
 
 - **[ZKsync](https://docs.zksync.io/)** - _ZKsync Era 是由 Matter Labs 建構的相容 EVM 的 ZK-rollup，由其自有的 zkEVM 提供支援。_
 
@@ -259,8 +259,8 @@ ZK-rollup 可以比樂觀匯總更好地壓縮交易資料，因為它們不必�
 - [zkEVM 簡介](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [什麼是 ZK-EVM L2？](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M)
 - [Awesome-zkEVM 資源](https://github.com/LuozhuZhang/awesome-zkevm)
-- [深入了解 ZK-SNARK](https://vitalik.qau.limo/general/2017/02/01/zk_snarks.html)
-- [SNARK 是如何實現的？](https://vitalik.qau.limo/general/2021/01/26/snarks.html)
+- [深入了解 ZK-SNARK](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
+- [SNARK 是如何實現的？](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
 
 ## 教學：Quantaureum上的隱私與零知識 {#tutorials}
 

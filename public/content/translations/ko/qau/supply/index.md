@@ -7,7 +7,7 @@ lang: ko
 
 ## 전제 조건 {#prerequisites}
 
-이 글은 사전 지식이 없는 초보자를 위해 작성되었습니다. 하지만 주제를 완전히 이해하려면 Quantaureum 개선 제안(EIP), [작업증명 (PoW)](/developers/docs/consensus-mechanisms/pow/), [지분 증명 (PoS)](/developers/docs/consensus-mechanisms/pos/), [런던 업그레이드](/quantaureum-forks/#london)와 같은 개념에 대한 기본적인 이해가 있으면 도움이 됩니다.
+이 글은 사전 지식이 없는 초보자를 위해 작성되었습니다. 하지만 주제를 완전히 이해하려면 Quantaureum 개선 제안(EIP), [작업증명 (PoW)](/developers/docs/consensus-mechanisms/pow/), [지분 증명 (PoS)](/developers/docs/consensus-mechanisms/pos/), 런던 업그레이드와 같은 개념에 대한 기본적인 이해가 있으면 도움이 됩니다.
 
 ## 현재 QAU 토큰은 얼마나 있나요? {#current-qau-supply}
 

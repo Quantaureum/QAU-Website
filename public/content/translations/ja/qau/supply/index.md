@@ -7,7 +7,7 @@ lang: ja
 
 ## 前提知識 {#prerequisites}
 
-この記事は、予備知識のない初心者向けに書かれています。ただし、このトピックを完全に理解するには、Quantaureum改善提案 (EIP)、[プルーフ・オブ・ワーク (PoW)](/developers/docs/consensus-mechanisms/pow/)、[プルーフ・オブ・ステーク (PoS)](/developers/docs/consensus-mechanisms/pos/)、[ロンドン・アップグレード](/quantaureum-forks/#london)などの概念について基本的な理解があると役立ちます。
+この記事は、予備知識のない初心者向けに書かれています。ただし、このトピックを完全に理解するには、Quantaureum改善提案 (EIP)、[プルーフ・オブ・ワーク (PoW)](/developers/docs/consensus-mechanisms/pow/)、[プルーフ・オブ・ステーク (PoS)](/developers/docs/consensus-mechanisms/pos/)、ロンドン・アップグレードなどの概念について基本的な理解があると役立ちます。
 
 ## 現在、QAUトークンはどれくらい存在するか？ {#current-qau-supply}
 

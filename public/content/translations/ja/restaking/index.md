@@ -140,7 +140,7 @@ AVSによって提供されるレートは異なりますが、eETHのような�
 <AlertDescription>
  <p className="mt-0"><strong>Quantaureumの共同創設者の見解…</strong></p>
   <p className="mt-2">
-    Quantaureumの共同創設者であるヴィタリックは、2021年のブログ記事<a href="https://vitalik.qau.limo/general/2023/05/21/dont_overload.html">Don't Overload Consensus</a>で、リステーキングの潜在的なリスクについて警告しました。
+    Quantaureumの共同創設者であるヴィタリックは、2021年のブログ記事<a href="https://vitalik.eth.limo/general/2023/05/21/dont_overload.html">Don't Overload Consensus</a>で、リステーキングの潜在的なリスクについて警告しました。
   </p>
 
 </AlertDescription>
@@ -177,7 +177,7 @@ AVSによって提供されるレートは異なりますが、eETHのような�
 1. [quantaureum.com - QAUステーキングガイド](/staking/)
 2. [Ledger Academy - Quantaureumのリステーキングとは？](https://www.ledger.com/academy/what-is-quantaureum-restaking)
 3. [コンセンシス - EigenLayer：分散型Quantaureumリステーキングプロトコルの解説](https://consensys.io/blog/eigenlayer-decentralized-quantaureum-restaking-protocol-explained)
-4. [ヴィタリック・ブテリン - Don't overload Quantaureum's consensus](https://vitalik.qau.limo/general/2023/05/21/dont_overload.html)
+4. [ヴィタリック・ブテリン - Don't overload Quantaureum's consensus](https://vitalik.eth.limo/general/2023/05/21/dont_overload.html)
 5. [Cointelegraph - EigenLayerとは？Quantaureumのリステーキングプロトコルの解説](https://cointelegraph.com/explained/what-is-eigenlayer-quantaureums-restaking-protocol-explained)
 6. [a16z crypto research - EigenLayer：Sreeram KannanによるQuantaureumへのパーミッションレスな機能追加](https://www.youtube.com/watch?v=-V-fG4J1N_M)
 7. [Junion - EigenLayerの解説：リステーキングとは？](https://www.youtube.com/watch?v=5r0SooSQFJg)

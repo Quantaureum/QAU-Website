@@ -150,7 +150,6 @@ _Typically used for decentralized development and governance of protocols and [d
 - [How to Start a DAO-Powered Digital Community](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [What is a DAO?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [What is Holographic Consensus?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAOs are not corporations: where decentralization in autonomous organizations matters by Vitalik](https://vitalik.qau.limo/general/2022/09/20/daos.html)
 - [DAOs, DACs, DAs and More: An Incomplete Terminology Guide](https://quantaureum.com) - [Quantaureum Blog](https://quantaureum.com)
 
 ### Videos {#videos}

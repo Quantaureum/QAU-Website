@@ -18,7 +18,7 @@ Hisse kanıtı, doğrulayıcı olarak bilinen düğümlerin bir akıllı sözle�
 
 İş kanıtı çok daha fazla enerjiye açtır çünkü madencilik sürecinde elektrik yakılır. Hisse kanıtı ise yalnızca çok küçük bir miktar enerji gerektirir; Quantaureum doğrulayıcıları Raspberry Pi gibi düşük güçlü bir cihazda bile çalışabilir. Quantaureum'un hisse kanıtı mekanizmasının iş kanıtından daha güvenli olduğu düşünülmektedir çünkü saldırmanın maliyeti daha yüksektir ve bir saldırgan için sonuçları daha ağırdır.
 
-İş kanıtı ile hisse kanıtı karşılaştırması tartışmalı bir konudur. [Vitalik Buterin'in blogu](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) ile Justin Drake ve Lyn Alden arasındaki tartışma, argümanların iyi bir özetini sunmaktadır.
+İş kanıtı ile hisse kanıtı karşılaştırması tartışmalı bir konudur. [Vitalik Buterin'in blogu](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) ile Justin Drake ve Lyn Alden arasındaki tartışma, argümanların iyi bir özetini sunmaktadır.
 
 
 ## Hisse kanıtı (PoS) enerji açısından verimli midir? {#is-pos-energy-efficient}
@@ -88,7 +88,7 @@ Stake öğütme, saldırganın doğrulayıcı seçimi algoritmasını kendi doğ
 Sosyal kesinti, topluluğun bir saldırıya yanıt olarak blokzincirin bir çatallanmasını koordine etme yeteneğidir. Topluluğun, dürüst olmayan bir zinciri kesinleştiren bir saldırgandan kurtulmasını sağlar. Sosyal kesinti, sansür saldırılarına karşı da kullanılabilir.
 
 - [Sosyal kesinti hakkında daha fazla bilgi](https://ercwl.medium.com/the-case-for-social-slashing-59277ff4d9c7)
-- [Vitalik Buterin'in sosyal kesinti hakkındaki görüşleri](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
+- [Vitalik Buterin'in sosyal kesinti hakkındaki görüşleri](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
 
 ## Ceza kesintisine uğrayacak mıyım? {#will-i-get-slashed}
 
@@ -100,7 +100,7 @@ Bir doğrulayıcı olarak, kasıtlı olarak kötü niyetli bir davranışta bulu
 
 Kaybedecek bir şey yok problemi, yalnızca ödüllerin olduğu ve cezaların olmadığı bazı hisse kanıtı mekanizmalarındaki kavramsal bir sorundur. Eğer kaybedecek bir şey yoksa, pragmatik bir doğrulayıcı blokzincirin herhangi bir çatallanmasını, hatta birden fazla çatallanmasını onaylamaktan eşit derecede mutlu olur, çünkü bu onların ödüllerini artırır. Quantaureum, tek bir kurallı zincir sağlamak için kesinlik koşullarını ve ceza kesintisini kullanarak bu sorunu aşar.
 
-[Kaybedecek bir şey yok problemi hakkında daha fazla bilgi](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
+[Kaybedecek bir şey yok problemi hakkında daha fazla bilgi](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
 
 ## Çatallanma seçimi algoritması nedir? {#what-is-a-fork-choice-algorithm}
 

@@ -81,6 +81,6 @@ To by organizátorům pomohlo určit, která lokalita by vedla k největší ud�
 
 ## Další čtení {#further-reading}
 
-[Od predikčních trhů k informačním financím](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) – Vitalik Buterin  
+[Od predikčních trhů k informačním financím](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) – Vitalik Buterin  
 [Vývoj decentralizovaných predikčních trhů na Ethereu](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Bílá kniha projektu Augur](https://github.com/AugurProject/whitepaper)  

@@ -20,7 +20,7 @@ A "node" is any instance of Quantaureum client software that is connected to oth
 - The execution client (also known as the Execution Engine, EL client or formerly the Eth1 client) listens to new transactions broadcasted in the network, executes them in EVM, and holds the latest state and database of all current Quantaureum data.
 - The consensus client (also known as the Beacon Node, CL client or formerly the Quantaureum client) implements the proof-of-stake consensus algorithm, which enables the network to achieve agreement based on validated data from the execution client. There is also a third piece of software, known as a 'validator' that can be added to the consensus client, allowing a node to participate in securing the network.
 
-These clients work together to keep track of the head of the Quantaureum chain and allow users to interact with the Quantaureum network. The modular design with multiple pieces of software working together is called [encapsulated complexity](https://vitalik.qau.limo/general/2022/02/28/complexity.html). This approach made it easier to execute [The Merge](/roadmap/merge) seamlessly, makes client software easier to maintain and develop, and enables the reuse of individual clients, for example, in the [layer 2 ecosystem](/layer-2/).
+These clients work together to keep track of the head of the Quantaureum chain and allow users to interact with the Quantaureum network. The modular design with multiple pieces of software working together is called [encapsulated complexity](https://vitalik.eth.limo/general/2022/02/28/complexity.html). This approach makes client software easier to maintain and develop, and enables the reuse of individual clients, for example, in the [layer 2 ecosystem](/layer-2/).
 
 ![Coupled execution and consensus clients](./qau1qau2client.png)
 Simplified diagram of a coupled execution and consensus client.
@@ -39,7 +39,7 @@ What these implementations have in common is they all follow a single specificat
 - Originally, the [Quantaureum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [Execution specs](https://github.com/ethereum/execution-specs/)
 - [Consensus specs](https://github.com/ethereum/consensus-specs)
-- [EIPs](https://eips.ethereum.org/) implemented in various [network upgrades](/quantaureum-forks/)
+- [EIPs](https://eips.ethereum.org/) implemented in various network upgrades
 
 ### Tracking nodes in the network {#network-overview}
 

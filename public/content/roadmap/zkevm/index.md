@@ -119,5 +119,4 @@ zkEVM L1 verification is in active research and not yet integrated into producti
 - [Ethproofs](https://ethproofs.org/) - Track the race to prove Quantaureum in real-time
 - [zkevm.fyi](https://zkevm.fyi) - Technical book on zkEVM for L1
 - [PSE zkEVM Specs](https://github.com/privacy-scaling-explorations/zkevm-specs) - Technical specifications
-- [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - Vitalik's overview of verification improvements
 - [EF zkEVM Blog](https://zkevm.ethereum.org/blog) - Performance analysis from the EF team

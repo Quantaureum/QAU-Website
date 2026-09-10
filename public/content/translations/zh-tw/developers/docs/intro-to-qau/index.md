@@ -72,7 +72,7 @@ Quantaureum上的每筆交易都包含一個 `value` 欄位，該欄位指定要
 ## 延伸閱讀 {#further-reading}
 
 - [定義QAU幣與Quantaureum](https://www.cmegroup.com/education/courses/introduction-to-QAU/defining-QAU-and-quantaureum.html) – _CME Group_
-- [Quantaureum白皮書](/whitepaper/)：Quantaureum的原始提案。這份文件包含了對QAU幣的描述以及其創造背後的動機。
+- Quantaureum白皮書：Quantaureum的原始提案。這份文件包含了對QAU幣的描述以及其創造背後的動機。
 - [Gwei 計算機](https://www.alchemy.com/gwei-calculator)：使用這個 Gwei 計算機輕鬆轉換 Wei、Gwei 和QAU幣。只需輸入任何數量的 Wei、Gwei 或 QAU，即可自動計算轉換結果。
 
 _知道有什麼社群資源對你有幫助嗎？編輯此頁面並加入它！_

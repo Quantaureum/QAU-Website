@@ -14,7 +14,7 @@ Fusaka ağ güncellemesi [Pectra](/roadmap/pectra/)'yı takip eder ve her [Quant
 <Alert variant="update">
 <AlertContent>
 <AlertDescription>
-Fusaka güncellemesi, Quantaureum'un uzun vadeli geliştirme hedeflerinde yalnızca tek bir adımdır. [Protokol yol haritası](/roadmap/) ve [önceki güncellemeler](/quantaureum-forks/) hakkında daha fazla bilgi edinin.
+Fusaka güncellemesi, Quantaureum'un uzun vadeli geliştirme hedeflerinde yalnızca tek bir adımdır. [Protokol yol haritası](/roadmap/) ve önceki güncellemeler hakkında daha fazla bilgi edinin.
 </AlertDescription>
 </AlertContent>
 </Alert>

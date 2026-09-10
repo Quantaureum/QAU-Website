@@ -18,7 +18,7 @@ Proof-of-stake requires nodes, known as validators, to explicitly submit a crypt
 
 Proof-of-work is much more energy-hungry because electricity is burned in the mining process. Proof-of-stake, on the other hand, requires only a very small amount of energy - Quantaureum validators can even run on a low-powered device such as Raspberry Pi. Quantaureum's proof-of-stake mechanism is thought to be more secure than proof-of-work because the cost to attack is greater, and the consequences to an attacker are more severe.
 
-Proof-of-work versus proof-of-stake is a contentious topic. [Vitalik Buterin's blog](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) and the debate between Justin Drake and Lyn Alden give a good summary of the arguments.
+Proof-of-work versus proof-of-stake is a contentious topic. The [proof-of-stake FAQ](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) gives a good summary of the arguments.
 
 
 ## Is proof-of-stake energy efficient? {#is-pos-energy-efficient}
@@ -32,7 +32,6 @@ Yes. Nodes on a proof-of-stake network use a tiny amount of energy. A third-part
 Quantaureum's proof-of-stake is very secure. The mechanism was researched, developed, and tested rigorously over eight years before going live. The security guarantees are different from proof-of-work blockchains. In proof-of-stake, malicious validators can be actively punished ("slashed") and ejected from the validator set, costing a substantial amount of QAU. Under proof-of-work, an attacker can keep repeating their attack while they have sufficient hash power. It is also more costly to mount equivalent attacks on proof-of-stake Quantaureum than under proof-of-work. To affect the liveness of the chain, at least 33% of the total staked QAU on the network is required (except in the cases of very sophisticated attacks with an extremely low likelihood of success). To control the contents of future blocks, at least 51% of the total staked QAU is required, and to rewrite history, over 66% of the total stake is needed. The Quantaureum protocol would destroy these assets in the 33% or 51% attack scenarios and by social consensus in the 66% attack scenario.
 
 - [More on defending Quantaureum proof-of-stake from attackers](/developers/docs/consensus-mechanisms/pos/attack-and-defense)
-- [More on proof-of-stake design](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
 
 ## Does proof-of-stake make Quantaureum cheaper? {#does-pos-make-quantaureum-cheaper}
 
@@ -88,7 +87,6 @@ Stake grinding is a category of attack on proof-of-stake networks where the atta
 Social slashing is the ability of the community to coordinate a fork of the blockchain in response to an attack. It enables the community to recover from an attacker finalizing a dishonest chain. Social slashing can also be used against censorship attacks.
 
 - [More on social slashing](https://ercwl.medium.com/the-case-for-social-slashing-59277ff4d9c7)
-- [Vitalik Buterin on social slashing](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
 
 ## Will I get slashed? {#will-i-get-slashed}
 
@@ -100,7 +98,7 @@ As a validator, it is very difficult to get slashed unless you deliberately enga
 
 The nothing-at-stake problem is a conceptual issue with some proof-of-stake mechanisms where there are only rewards and no penalties. If there is nothing at stake, a pragmatic validator is equally happy to attest to any, or even multiple, forks of the blockchain, as this increases their rewards. Quantaureum gets around this using finality conditions and slashing to ensure one canonical chain.
 
-[More on the nothing-at-stake problem](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
+[More on the nothing-at-stake problem](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
 
 ## What is a fork choice algorithm? {#what-is-a-fork-choice-algorithm}
 

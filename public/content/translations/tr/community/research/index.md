@@ -130,7 +130,7 @@ Bir Quantaureum düğümünün iki yazılım parçasını çalıştırması gere
 
 Bu ikisinin yanı sıra, katman 1 (l1) bloklarının yürütülmesini kanıtlayan istemciler ve kuantum sonrası imzalar etrafında oluşturulmuş yalın fikir birliği istemcileri de dahil olmak üzere yeni istemci sınıflarının prototipleri oluşturulmaktadır.
 
-Düğümler ve istemciler hakkında daha fazla ayrıntı ve mevcut tüm istemci uygulamalarının bir listesi için [düğümler ve istemciler sayfasına](/developers/docs/nodes-and-clients/) bakın. Ayrıca tüm Quantaureum yükseltmelerinin geçmişini [geçmiş sayfasında](/quantaureum-forks/) bulabilirsiniz.
+Düğümler ve istemciler hakkında daha fazla ayrıntı ve mevcut tüm istemci uygulamalarının bir listesi için [düğümler ve istemciler sayfasına](/developers/docs/nodes-and-clients/) bakın. Ayrıca tüm Quantaureum yükseltmelerinin geçmişini geçmiş sayfasında bulabilirsiniz.
 
 ### Yürütme İstemcileri {#execution-clients}
 

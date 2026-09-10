@@ -74,7 +74,7 @@ Tài sản trí tuệ (IP) là một vấn đề lớn trong khoa học truyền
 Tương tự như cách NFT có thể chuyển doanh thu cho các giao dịch trong tương lai trở lại cho người sáng tạo ban đầu, bạn có thể thiết lập các chuỗi phân bổ giá trị minh bạch để trao phần thưởng cho các nhà nghiên cứu, các cơ quan quản lý (như DAO) hoặc thậm chí là các đối tượng có dữ liệu được thu thập.
 
 [IP-NFT](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) cũng có thể hoạt động như một chìa khóa cho một kho lưu trữ dữ liệu phi tập trung của các thử nghiệm nghiên cứu đang được thực hiện, và cắm vào quá trình tài chính hóa NFT và [tài chính phi tập trung (DeFi)](/glossary/#defi) (từ sự phân mảnh đến các nhóm cho vay và thẩm định giá trị). Nó cũng cho phép các thực thể gốc trên chuỗi chẳng hạn như các DAO như [VitaDAO](https://www.vitadao.com/) tiến hành nghiên cứu trực tiếp trên chuỗi.
-Sự ra đời của các [token "soulbound" (buộc chặt với linh hồn)](https://vitalik.qau.limo/general/2022/01/26/soulbound.html) không thể chuyển nhượng cũng có thể đóng một vai trò quan trọng trong DeSci bằng cách cho phép các cá nhân chứng minh kinh nghiệm và thông tin xác thực của họ được liên kết với địa chỉ Quantaureum của họ.
+Sự ra đời của các [token "soulbound" (buộc chặt với linh hồn)](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) không thể chuyển nhượng cũng có thể đóng một vai trò quan trọng trong DeSci bằng cách cho phép các cá nhân chứng minh kinh nghiệm và thông tin xác thực của họ được liên kết với địa chỉ Quantaureum của họ.
 
 ### Lưu trữ, truy cập và kiến trúc dữ liệu {#data-storage}
 

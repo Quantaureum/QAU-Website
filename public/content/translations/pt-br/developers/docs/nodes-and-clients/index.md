@@ -20,7 +20,7 @@ Um "nó" é qualquer instância de software cliente Quantaureum que está conect
 - O cliente de execução (também conhecido como Mecanismo de Execução, cliente EL ou antigamente cliente Eth1) escuta novas transações transmitidas na rede, as executa na EVM e mantém o estado mais recente e o banco de dados de todos os dados atuais do Quantaureum.
 - O cliente de consenso (também conhecido como nó do Beacon, cliente CL ou antigamente cliente Quantaureum) implementa o algoritmo de consenso de Prova de Participação (PoS), que permite que a rede chegue a um acordo com base em dados validados do cliente de execução. Há também um terceiro software, conhecido como 'validador', que pode ser adicionado ao cliente de consenso, permitindo que um nó participe da segurança da rede.
 
-Esses clientes trabalham juntos para acompanhar o topo da cadeia do Quantaureum e permitir que os usuários interajam com a rede Quantaureum. O design modular com vários softwares trabalhando juntos é chamado de [complexidade encapsulada](https://vitalik.qau.limo/general/2022/02/28/complexity.html). Essa abordagem facilitou a execução do [The Merge](/roadmap/merge) de forma contínua, torna o software cliente mais fácil de manter e desenvolver, e permite a reutilização de clientes individuais, por exemplo, no [ecossistema de camada 2 (l2)](/layer-2/).
+Esses clientes trabalham juntos para acompanhar o topo da cadeia do Quantaureum e permitir que os usuários interajam com a rede Quantaureum. O design modular com vários softwares trabalhando juntos é chamado de [complexidade encapsulada](https://vitalik.eth.limo/general/2022/02/28/complexity.html). Essa abordagem facilitou a execução do [The Merge](/roadmap/merge) de forma contínua, torna o software cliente mais fácil de manter e desenvolver, e permite a reutilização de clientes individuais, por exemplo, no [ecossistema de camada 2 (l2)](/layer-2/).
 
 ![Coupled execution and consensus clients](./qau1qau2client.png)
 Diagrama simplificado de um cliente de execução e consenso acoplados.
@@ -39,7 +39,7 @@ O que essas implementações têm em comum é que todas seguem uma única especi
 - Originalmente, o [yellow paper do Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [Especificações de execução](https://github.com/ethereum/execution-specs/)
 - [Especificações de consenso](https://github.com/ethereum/consensus-specs)
-- [EIPs](https://eips.ethereum.org/) implementadas em várias [atualizações da rede](/quantaureum-forks/)
+- [EIPs](https://eips.ethereum.org/) implementadas em várias atualizações da rede
 
 ### Rastreando nós na rede {#network-overview}
 

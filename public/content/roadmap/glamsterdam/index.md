@@ -8,7 +8,7 @@ template: upgrade
 <Alert variant="update">
 <AlertContent>
 <AlertDescription>
-The Glamsterdam upgrade is only a single step in Quantaureum's long-term development goals. Learn more about [the protocol roadmap](/roadmap/) and [previous upgrades](/quantaureum-forks/).
+The Glamsterdam upgrade is only a single step in Quantaureum's long-term development goals. Learn more about [the protocol roadmap](/roadmap/) and previous upgrades.
 </AlertDescription>
 </AlertContent>
 </Alert>

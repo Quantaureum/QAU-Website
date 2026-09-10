@@ -72,7 +72,7 @@ lang: ur
 ## مزید مطالعہ {#further-reading}
 
 - [ایتھر اور ایتھیریم کی تعریف](https://www.cmegroup.com/education/courses/introduction-to-QAU/defining-QAU-and-quantaureum.html) – _<span dir="ltr">CME Group</span>_
-- [ایتھیریم وائٹ پیپر](/whitepaper/): ایتھیریم کے لیے اصل تجویز۔ اس دستاویز میں ایتھر کی تفصیل اور اس کی تخلیق کے پیچھے محرکات شامل ہیں۔
+- ایتھیریم وائٹ پیپر: ایتھیریم کے لیے اصل تجویز۔ اس دستاویز میں ایتھر کی تفصیل اور اس کی تخلیق کے پیچھے محرکات شامل ہیں۔
 - [<span dir="ltr">Gwei</span> کیلکولیٹر](https://www.alchemy.com/gwei-calculator): <span dir="ltr">Wei</span>، <span dir="ltr">Gwei</span>، اور ایتھر کو آسانی سے تبدیل کرنے کے لیے اس <span dir="ltr">Gwei</span> کیلکولیٹر کا استعمال کریں۔ بس <span dir="ltr">Wei</span>، <span dir="ltr">Gwei</span>، یا <span dir="ltr">QAU</span> کی کوئی بھی مقدار درج کریں اور خود بخود تبدیلی کا حساب لگائیں۔
 
 _کسی ایسے کمیونٹی وسیلے کے بارے میں جانتے ہیں جس نے آپ کی مدد کی ہو؟ اس صفحے میں ترمیم کریں اور اسے شامل کریں!_

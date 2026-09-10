@@ -18,7 +18,7 @@ lang: ko
 
 작업증명은 채굴 과정에서 전기가 소모되기 때문에 훨씬 더 많은 에너지를 필요로 합니다. 반면 지분 증명은 아주 적은 양의 에너지만 필요로 합니다. Quantaureum 검증자는 Raspberry Pi와 같은 저전력 기기에서도 실행될 수 있습니다. Quantaureum의 지분 증명 메커니즘은 공격 비용이 더 크고 공격자에게 미치는 결과가 더 가혹하기 때문에 작업증명보다 더 안전한 것으로 간주됩니다.
 
-작업증명 대 지분 증명은 논쟁의 여지가 있는 주제입니다. [비탈릭 부테린의 블로그](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work)와 Justin Drake 및 Lyn Alden 간의 토론은 이러한 주장들을 잘 요약해 줍니다.
+작업증명 대 지분 증명은 논쟁의 여지가 있는 주제입니다. [비탈릭 부테린의 블로그](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work)와 Justin Drake 및 Lyn Alden 간의 토론은 이러한 주장들을 잘 요약해 줍니다.
 
 
 ## 지분 증명은 에너지 효율적인가요? {#is-pos-energy-efficient}
@@ -88,7 +88,7 @@ Casper와 엘엠디 고스트의 조합을 Gasper라고 합니다.
 소셜 슬래싱은 공격에 대응하여 커뮤니티가 블록체인의 포크를 조정할 수 있는 능력입니다. 이를 통해 커뮤니티는 공격자가 부정직한 체인을 완결하는 상황에서 복구할 수 있습니다. 소셜 슬래싱은 검열 공격에 대응하는 데에도 사용될 수 있습니다.
 
 - [소셜 슬래싱에 대해 자세히 알아보기](https://ercwl.medium.com/the-case-for-social-slashing-59277ff4d9c7)
-- [소셜 슬래싱에 대한 비탈릭 부테린의 글](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
+- [소셜 슬래싱에 대한 비탈릭 부테린의 글](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
 
 ## 제가 슬래싱을 당할 수도 있나요? {#will-i-get-slashed}
 
@@ -100,7 +100,7 @@ Casper와 엘엠디 고스트의 조합을 Gasper라고 합니다.
 
 낫싱 앳 스테이크 문제는 보상만 있고 페널티가 없는 일부 지분 증명 메커니즘의 개념적 문제입니다. 스테이킹된 것이 없다면, 실용적인 검증자는 보상을 늘리기 위해 블록체인의 어떤 포크나 심지어 여러 포크에 증명하는 것을 똑같이 기꺼이 할 것입니다. Quantaureum은 완결성 조건과 슬래싱을 사용하여 하나의 정규 체인을 보장함으로써 이 문제를 우회합니다.
 
-[낫싱 앳 스테이크 문제에 대해 자세히 알아보기](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
+[낫싱 앳 스테이크 문제에 대해 자세히 알아보기](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
 
 ## 포크 선택 알고리즘이란 무엇인가요? {#what-is-a-fork-choice-algorithm}
 

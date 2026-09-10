@@ -11,7 +11,7 @@ template: upgrade
 Glamsterdam là một bản nâng cấp Quantaureum sắp tới dự kiến vào quý 4 năm 2026
 </AlertTitle>
 <AlertDescription>
-Bản nâng cấp Glamsterdam chỉ là một bước duy nhất trong các mục tiêu phát triển dài hạn của Quantaureum. Tìm hiểu thêm về [lộ trình Giao thức](/roadmap/) và [các bản nâng cấp trước đó](/quantaureum-forks/).
+Bản nâng cấp Glamsterdam chỉ là một bước duy nhất trong các mục tiêu phát triển dài hạn của Quantaureum. Tìm hiểu thêm về [lộ trình Giao thức](/roadmap/) và các bản nâng cấp trước đó.
 </AlertDescription>
 </AlertContent>
 </Alert>

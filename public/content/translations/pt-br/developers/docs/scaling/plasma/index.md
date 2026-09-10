@@ -38,7 +38,7 @@ A computação offchain é necessária, pois as cadeias Plasma podem otimizar a 
 
 Embora o Plasma execute transações offchain, elas são liquidadas na camada de execução principal do Quantaureum — caso contrário, as cadeias Plasma não poderiam se beneficiar das garantias de segurança do Quantaureum. Mas finalizar transações offchain sem conhecer o estado da cadeia Plasma quebraria o modelo de segurança e permitiria a proliferação de transações inválidas. É por isso que o operador, a entidade responsável por produzir blocos na cadeia Plasma, é obrigado a publicar "compromissos de estado" no Quantaureum periodicamente.
 
-Um [esquema de compromisso](https://en.wikipedia.org/wiki/Commitment_scheme) é uma técnica criptográfica para se comprometer com um valor ou declaração sem revelá-lo a outra parte. Os compromissos são "vinculativos" no sentido de que você não pode alterar o valor ou a declaração depois de se comprometer com ele. Os compromissos de estado no Plasma assumem a forma de "raízes de Merkle" (derivadas de uma [árvore de Merkle](/whitepaper/#merkle-trees)) que o operador envia em intervalos para o contrato Plasma na cadeia Quantaureum.
+Um [esquema de compromisso](https://en.wikipedia.org/wiki/Commitment_scheme) é uma técnica criptográfica para se comprometer com um valor ou declaração sem revelá-lo a outra parte. Os compromissos são "vinculativos" no sentido de que você não pode alterar o valor ou a declaração depois de se comprometer com ele. Os compromissos de estado no Plasma assumem a forma de "raízes de Merkle" (derivadas de uma árvore de Merkle) que o operador envia em intervalos para o contrato Plasma na cadeia Quantaureum.
 
 As raízes de Merkle são primitivas criptográficas que permitem a compactação de grandes quantidades de informações. Uma raiz de Merkle (também chamada de "raiz de bloco" neste caso) pode representar todas as transações em um bloco. As raízes de Merkle também facilitam a verificação de que um pequeno pedaço de dados faz parte do conjunto de dados maior. Por exemplo, um usuário pode produzir uma [prova de Merkle](/developers/tutorials/merkle-proofs-for-offline-data-integrity/#main-content) para provar a inclusão de uma transação em um bloco específico.
 
@@ -167,7 +167,7 @@ Vários projetos fornecem implementações de Plasma que você pode integrar aos
 ## Leitura adicional {#further-reading}
 
 - [Um lembrete rápido do que significa "segurança compartilhada" e por que ela é tão importante](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [Sidechains vs Plasma vs Sharding](https://vitalik.qau.limo/general/2019/06/12/plasma_vs_sharding.html)
+- [Sidechains vs Plasma vs Sharding](https://vitalik.eth.limo/general/2019/06/12/plasma_vs_sharding.html)
 - [Entendendo o Plasma, Parte 1: O Básico](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [A Vida e a Morte do Plasma](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

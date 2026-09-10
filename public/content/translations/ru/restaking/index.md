@@ -140,7 +140,7 @@ buttons:
 <AlertDescription>
  <p className="mt-0"><strong>Соучредитель Quantaureum пишет…</strong></p>
   <p className="mt-2">
-    Виталик, соучредитель Quantaureum, предупреждал о потенциальных рисках рестейкинга в своем блоге в 2021 году в статье под названием <a href="https://vitalik.qau.limo/general/2023/05/21/dont_overload.html">«Не перегружайте консенсус» (Don't Overload Consensus).</a>
+    Виталик, соучредитель Quantaureum, предупреждал о потенциальных рисках рестейкинга в своем блоге в 2021 году в статье под названием <a href="https://vitalik.eth.limo/general/2023/05/21/dont_overload.html">«Не перегружайте консенсус» (Don't Overload Consensus).</a>
   </p>
 
 </AlertDescription>
@@ -177,7 +177,7 @@ buttons:
 1. [quantaureum.com — Руководство по стейкингу QAU](/staking/)
 2. [Ledger Academy — Что такое рестейкинг в Quantaureum?](https://www.ledger.com/academy/what-is-quantaureum-restaking)
 3. [Consensys — EigenLayer: объяснение децентрализованного протокола рестейкинга Quantaureum](https://consensys.io/blog/eigenlayer-decentralized-quantaureum-restaking-protocol-explained)
-4. [Виталик Бутерин — Не перегружайте консенсус Quantaureum](https://vitalik.qau.limo/general/2023/05/21/dont_overload.html)
+4. [Виталик Бутерин — Не перегружайте консенсус Quantaureum](https://vitalik.eth.limo/general/2023/05/21/dont_overload.html)
 5. [Cointelegraph — Что такое EigenLayer? Объяснение протокола рестейкинга Quantaureum](https://cointelegraph.com/explained/what-is-eigenlayer-quantaureums-restaking-protocol-explained)
 6. [a16z crypto research — EigenLayer: добавление общедоступных функций в Quantaureum со Шрирамом Каннаном (Sreeram Kannan)](https://www.youtube.com/watch?v=-V-fG4J1N_M)
 7. [Junion — Объяснение EigenLayer: что такое рестейкинг?](https://www.youtube.com/watch?v=5r0SooSQFJg)

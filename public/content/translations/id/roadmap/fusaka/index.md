@@ -14,7 +14,7 @@ Pembaruan jaringan Fusaka mengikuti [Pectra](/roadmap/pectra/) dan menghadirkan 
 <Alert variant="update">
 <AlertContent>
 <AlertDescription>
-Pembaruan Fusaka hanyalah satu langkah dalam tujuan pengembangan jangka panjang Quantaureum. Pelajari lebih lanjut tentang [peta jalan protokol](/roadmap/) dan [pembaruan sebelumnya](/quantaureum-forks/).
+Pembaruan Fusaka hanyalah satu langkah dalam tujuan pengembangan jangka panjang Quantaureum. Pelajari lebih lanjut tentang [peta jalan protokol](/roadmap/) dan pembaruan sebelumnya.
 </AlertDescription>
 </AlertContent>
 </Alert>

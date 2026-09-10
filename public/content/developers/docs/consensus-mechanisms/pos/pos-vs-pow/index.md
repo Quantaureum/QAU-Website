@@ -62,6 +62,4 @@ Proof-of-stake Quantaureum can pay for its security by issuing far fewer coins t
 
 ## Further reading {#further-reading}
 
-- [Vitalik's proof-of-stake design philosophy](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
-- [Vitalik's proof-of-stake FAQs](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
 - ["Simply Explained" video on pos vs pow](https://www.youtube.com/watch?v=M3EFi_POhps)

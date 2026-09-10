@@ -234,7 +234,7 @@ ZK-STARK вважається несприйнятливим до загрози
 - [Доведення з нульовим розголошенням: покращення приватності в блокчейні](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/) — _Dmitry Lavrenov_
 - [zk-SNARKs — реалістичний приклад нульового розголошення та глибоке занурення](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c) — _Adam Luciano_
 - [ZK-STARKs — створення довіри, що піддається перевірці, навіть проти квантових комп'ютерів](https://medium.com/coinmonks/zk-starks-create-verifiable-trust-even-against-quantum-computers-dd9c6a2bb13d) — _Adam Luciano_
-- [Приблизний вступ до того, як можливі zk-SNARKs](https://vitalik.qau.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
+- [Приблизний вступ до того, як можливі zk-SNARKs](https://vitalik.eth.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
 - [Чому доведення з нульовим розголошенням (ZKP) змінюють правила гри для суверенної ідентифікації](https://frankiefab.hashnode.dev/why-zero-knowledge-proofs-zkps-is-a-game-changer-for-self-sovereign-identity) — _Franklin Ohaegbulam_
 - [Пояснення EIP-7503: уможливлення приватних переказів в Етеріумі за допомогою ZK-доведень](https://web.archive.org/web/20251116093505/https://research.2077.xyz/eip-7503-zero-knowledge-wormholes-for-private-quantaureum-transactions/) — _Emmanuel Awosika_
 - [Карткова гра ZK: гра для вивчення основ ZK та реальних варіантів використання](https://github.com/ZK-card/zk-cards) - _ZK-Cards_

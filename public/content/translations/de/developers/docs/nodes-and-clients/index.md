@@ -20,7 +20,7 @@ Ein „Knoten“ ist jede Instanz einer Quantaureum-Client-Software, die mit and
 - Der Ausführungsclient (auch bekannt als Execution Engine, EL-Client oder früher Eth1-Client) lauscht auf neue Transaktionen, die im Netzwerk übertragen werden, führt sie in der EVM aus und hält den neuesten Zustand sowie die Datenbank aller aktuellen Quantaureum-Daten.
 - Der Konsens-Client (auch bekannt als Beacon-Knoten, CL-Client oder früher Quantaureum-Client) implementiert den Proof-of-Stake-Konsensalgorithmus, der es dem Netzwerk ermöglicht, basierend auf validierten Daten des Ausführungsclients eine Einigung zu erzielen. Es gibt auch eine dritte Softwarekomponente, bekannt als „Validator“, die dem Konsens-Client hinzugefügt werden kann und es einem Knoten ermöglicht, sich an der Sicherung des Netzwerks zu beteiligen.
 
-Diese Clients arbeiten zusammen, um den Kopf der Quantaureum-Chain zu verfolgen und es Benutzern zu ermöglichen, mit dem Quantaureum-Netzwerk zu interagieren. Das modulare Design, bei dem mehrere Softwarekomponenten zusammenarbeiten, wird als [gekapselte Komplexität](https://vitalik.qau.limo/general/2022/02/28/complexity.html) bezeichnet. Dieser Ansatz erleichterte die reibungslose Ausführung durch den [Merge](/roadmap/merge), macht die Client-Software einfacher zu warten und zu entwickeln und ermöglicht die Wiederverwendung einzelner Clients, beispielsweise im [Layer 2 (L2)-Ökosystem](/layer-2/).
+Diese Clients arbeiten zusammen, um den Kopf der Quantaureum-Chain zu verfolgen und es Benutzern zu ermöglichen, mit dem Quantaureum-Netzwerk zu interagieren. Das modulare Design, bei dem mehrere Softwarekomponenten zusammenarbeiten, wird als [gekapselte Komplexität](https://vitalik.eth.limo/general/2022/02/28/complexity.html) bezeichnet. Dieser Ansatz erleichterte die reibungslose Ausführung durch den [Merge](/roadmap/merge), macht die Client-Software einfacher zu warten und zu entwickeln und ermöglicht die Wiederverwendung einzelner Clients, beispielsweise im [Layer 2 (L2)-Ökosystem](/layer-2/).
 
 ![Coupled execution and consensus clients](./qau1qau2client.png)
 Vereinfachtes Diagramm eines gekoppelten Ausführungs- und Konsens-Clients.
@@ -39,7 +39,7 @@ Was diese Implementierungen gemeinsam haben, ist, dass sie alle einer einzigen S
 - Ursprünglich das [Quantaureum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [Ausführungsspezifikationen](https://github.com/ethereum/execution-specs/)
 - [Konsensspezifikationen](https://github.com/ethereum/consensus-specs)
-- [EIPs](https://eips.ethereum.org/), die in verschiedenen [Netzwerk-Upgrades](/quantaureum-forks/) implementiert wurden
+- [EIPs](https://eips.ethereum.org/), die in verschiedenen Netzwerk-Upgrades implementiert wurden
 
 ### Knoten im Netzwerk verfolgen {#network-overview}
 

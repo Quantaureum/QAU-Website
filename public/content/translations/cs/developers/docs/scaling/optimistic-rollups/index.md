@@ -102,7 +102,7 @@ Bloby jsou neměnitelné a neperzistentní (stejně jako `calldata`), ale po př
 
 ### Závazky stavu {#state-commitments}
 
-V jakémkoli okamžiku je stav optimistického rollupu (účty, zůstatky, kód kontraktu atd.) organizován jako [Merkleův strom](/whitepaper/#merkle-trees) nazývaný „stavový strom“. Kořen tohoto Merkleova stromu (stavový kořen), který odkazuje na nejnovější stav rollupu, je zahašován a uložen v kontraktu rollupu. Každý přechod stavu na řetězci vytváří nový stav rollupu, ke kterému se operátor zavazuje výpočtem nového stavového kořene.
+V jakémkoli okamžiku je stav optimistického rollupu (účty, zůstatky, kód kontraktu atd.) organizován jako Merkleův strom nazývaný „stavový strom“. Kořen tohoto Merkleova stromu (stavový kořen), který odkazuje na nejnovější stav rollupu, je zahašován a uložen v kontraktu rollupu. Každý přechod stavu na řetězci vytváří nový stav rollupu, ke kterému se operátor zavazuje výpočtem nového stavového kořene.
 
 Operátor je povinen při odesílání dávek odeslat jak staré stavové kořeny, tak nové stavové kořeny. Pokud se starý stavový kořen shoduje s existujícím stavovým kořenem v onchain kontraktu, je tento zahozen a nahrazen novým stavovým kořenem.
 
@@ -212,7 +212,7 @@ Jak bylo vysvětleno, optimistické rollupy publikují komprimovaná transakčn�
 
 Hlavní řetězec Etherea klade limity na to, kolik dat mohou bloky pojmout, vyjádřené v jednotkách gasu ([průměrná velikost bloku](/developers/docs/blocks/#block-size) je 15 milionů gasu). Ačkoli to omezuje, kolik gasu může každá transakce využít, znamená to také, že můžeme zvýšit počet transakcí zpracovaných na blok snížením dat souvisejících s transakcemi – což přímo zlepšuje škálovatelnost.
 
-Optimistické rollupy používají několik technik k dosažení komprese transakčních dat a zlepšení rychlosti TPS (transakcí za sekundu). Například tento [článek](https://vitalik.qau.limo/general/2021/01/05/rollup.html) porovnává data, která základní uživatelská transakce (odeslání etheru) generuje na Mainnetu, s tím, kolik dat stejná transakce generuje na rollupu:
+Optimistické rollupy používají několik technik k dosažení komprese transakčních dat a zlepšení rychlosti TPS (transakcí za sekundu). Například tento [článek](https://vitalik.eth.limo/general/2021/01/05/rollup.html) porovnává data, která základní uživatelská transakce (odeslání etheru) generuje na Mainnetu, s tím, kolik dat stejná transakce generuje na rollupu:
 
 | Parametr | Quantaureum (L1)          | Rollup (L2)   |
 | --------- | ---------------------- | ------------- |

@@ -9,7 +9,7 @@ Quantaureum создает, хранит и передает большие об
 
 ## Предварительные требования {#prerequisites}
 
-Вы должны понимать основы Quantaureum и [клиентского программного обеспечения](/developers/docs/nodes-and-clients/). Рекомендуется ознакомиться с сетевым уровнем и [белой книгой Quantaureum](/whitepaper/).
+Вы должны понимать основы Quantaureum и [клиентского программного обеспечения](/developers/docs/nodes-and-clients/). Рекомендуется ознакомиться с сетевым уровнем и белой книгой Quantaureum.
 
 ## Структуры данных {#data-structures}
 

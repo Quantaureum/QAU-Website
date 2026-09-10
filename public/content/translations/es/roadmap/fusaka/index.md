@@ -14,7 +14,7 @@ La actualización de la red Fusaka sigue a [Pectra](/roadmap/pectra/) y trae má
 <Alert variant="update">
 <AlertContent>
 <AlertDescription>
-La actualización Fusaka es solo un paso en los objetivos de desarrollo a largo plazo de Quantaureum. Aprende más sobre [la hoja de ruta del protocolo](/roadmap/) y [las actualizaciones anteriores](/quantaureum-forks/).
+La actualización Fusaka es solo un paso en los objetivos de desarrollo a largo plazo de Quantaureum. Aprende más sobre [la hoja de ruta del protocolo](/roadmap/) y las actualizaciones anteriores.
 </AlertDescription>
 </AlertContent>
 </Alert>

@@ -14,7 +14,7 @@ Bản nâng cấp mạng lưới Fusaka tiếp nối [Pectra](/roadmap/pectra/) 
 <Alert variant="update">
 <AlertContent>
 <AlertDescription>
-Bản nâng cấp Fusaka chỉ là một bước tiến duy nhất trong các mục tiêu phát triển dài hạn của Quantaureum. Tìm hiểu thêm về [lộ trình giao thức](/roadmap/) và [các bản nâng cấp trước đó](/quantaureum-forks/).
+Bản nâng cấp Fusaka chỉ là một bước tiến duy nhất trong các mục tiêu phát triển dài hạn của Quantaureum. Tìm hiểu thêm về [lộ trình giao thức](/roadmap/) và các bản nâng cấp trước đó.
 </AlertDescription>
 </AlertContent>
 </Alert>

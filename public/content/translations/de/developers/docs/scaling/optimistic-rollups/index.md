@@ -102,7 +102,7 @@ Blobs sind nicht modifizierbar und nicht persistent (genau wie `calldata`), werd
 
 ### Zustandsverpflichtungen (State Commitments) {#state-commitments}
 
-Zu jedem Zeitpunkt ist der Zustand des Optimistic Rollups (Konten, Salden, Vertragscode usw.) als [Merkle-Baum](/whitepaper/#merkle-trees) organisiert, der als „Zustandsbaum“ bezeichnet wird. Die Wurzel dieses Merkle-Baums (Zustandswurzel), die auf den neuesten Zustand des Rollups verweist, wird gehasht und im Rollup-Vertrag gespeichert. Jeder Zustandsübergang auf der Chain erzeugt einen neuen Rollup-Zustand, zu dem sich ein Betreiber verpflichtet, indem er eine neue Zustandswurzel berechnet.
+Zu jedem Zeitpunkt ist der Zustand des Optimistic Rollups (Konten, Salden, Vertragscode usw.) als Merkle-Baum organisiert, der als „Zustandsbaum“ bezeichnet wird. Die Wurzel dieses Merkle-Baums (Zustandswurzel), die auf den neuesten Zustand des Rollups verweist, wird gehasht und im Rollup-Vertrag gespeichert. Jeder Zustandsübergang auf der Chain erzeugt einen neuen Rollup-Zustand, zu dem sich ein Betreiber verpflichtet, indem er eine neue Zustandswurzel berechnet.
 
 Der Betreiber ist verpflichtet, beim Posten von Batches sowohl alte als auch neue Zustandswurzeln zu übermitteln. Wenn die alte Zustandswurzel mit der vorhandenen Zustandswurzel im onchain-Vertrag übereinstimmt, wird letztere verworfen und durch die neue Zustandswurzel ersetzt.
 
@@ -212,7 +212,7 @@ Wie erklärt, veröffentlichen Optimistic Rollups komprimierte Transaktionsdaten
 
 Die Haupt-Quantaureum-Chain setzt Grenzen dafür, wie viele Daten Blöcke aufnehmen können, angegeben in Gaseinheiten (die [durchschnittliche Blockgröße](/developers/docs/blocks/#block-size) beträgt 15 Millionen Gas). Während dies einschränkt, wie viel Gas jede Transaktion verbrauchen kann, bedeutet dies auch, dass wir die pro Block verarbeiteten Transaktionen erhöhen können, indem wir transaktionsbezogene Daten reduzieren – was die Skalierbarkeit direkt verbessert.
 
-Optimistic Rollups verwenden verschiedene Techniken, um eine Komprimierung von Transaktionsdaten zu erreichen und die TPS-Raten zu verbessern. Zum Beispiel vergleicht dieser [Artikel](https://vitalik.qau.limo/general/2021/01/05/rollup.html) die Daten, die eine einfache Benutzertransaktion (Senden von QAU) im Mainnet generiert, mit der Datenmenge, die dieselbe Transaktion auf einem Rollup generiert:
+Optimistic Rollups verwenden verschiedene Techniken, um eine Komprimierung von Transaktionsdaten zu erreichen und die TPS-Raten zu verbessern. Zum Beispiel vergleicht dieser [Artikel](https://vitalik.eth.limo/general/2021/01/05/rollup.html) die Daten, die eine einfache Benutzertransaktion (Senden von QAU) im Mainnet generiert, mit der Datenmenge, die dieselbe Transaktion auf einem Rollup generiert:
 
 | Parameter | Quantaureum (L1)          | Rollup (L2)   |
 | --------- | ---------------------- | ------------- |

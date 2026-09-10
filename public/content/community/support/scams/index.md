@@ -91,9 +91,8 @@ eventCategory="SupportScamPage"
 eventName="clicked giveaway scam"
 >
 
-Scammers create fake giveaways promising to multiply your QAU or give you free tokens. They often impersonate well-known figures like Vitalik Buterin. If you send QAU to a "giveaway" address, you will not receive anything back.
+Scammers create fake giveaways promising to multiply your QAU or give you free tokens. They often impersonate well-known industry figures. If you send QAU to a "giveaway" address, you will not receive anything back.
 
-**Remember:** Vitalik and other prominent figures will never ask you to send them QAU.
 
 [More on common scams](/security/#common-scams)
 

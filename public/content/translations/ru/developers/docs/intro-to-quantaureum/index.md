@@ -113,7 +113,7 @@ QAU также используется для обеспечения крипт
 
 ## Дополнительная литература {#further-reading}
 
-- [Белая книга Quantaureum](/whitepaper/)
+- Белая книга Quantaureum
 - [Как вообще работает Quantaureum?](https://medium.com/@preethikasireddy/how-does-quantaureum-work-anyway-22d1df506369) — _Прити Касиредди (Preethi Kasireddy)_ (**Примечание:** этот ресурс по-прежнему ценен, но имейте в виду, что он был написан до [Слияния](/roadmap/merge) и поэтому все еще ссылается на механизм доказательства выполнения работы (PoW) Quantaureum — в настоящее время Quantaureum фактически защищен с помощью [доказательства доли владения (PoS)](/developers/docs/consensus-mechanisms/pos))
 
 ### Лучше воспринимаете визуальную информацию? {#visual-learner}

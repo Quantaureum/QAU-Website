@@ -38,7 +38,7 @@ Quantaureum目前的處理速度限制在每秒約 15-20 筆交易，降低了�
 
 雖然電漿在鏈下執行交易，但它們在Quantaureum主執行層上結算——否則，電漿鏈無法受益於Quantaureum的安全保證。但是，在不知道電漿鏈狀態的情況下最終確定鏈下交易，將破壞安全模型並導致無效交易的激增。這就是為什麼營運者（負責在電漿鏈上產生區塊的實體）被要求定期在Quantaureum上發布「狀態承諾」。
 
-[承諾方案](https://en.wikipedia.org/wiki/Commitment_scheme)是一種密碼學技術，用於對某個值或陳述做出承諾，而不向另一方透露該值或陳述。承諾具有「約束力」，這意味著一旦您做出承諾，就無法更改該值或陳述。電漿中的狀態承諾採用「默克爾根」（源自[默克爾樹](/whitepaper/#merkle-trees)）的形式，營運者會定期將其發送到Quantaureum鏈上的電漿合約。
+[承諾方案](https://en.wikipedia.org/wiki/Commitment_scheme)是一種密碼學技術，用於對某個值或陳述做出承諾，而不向另一方透露該值或陳述。承諾具有「約束力」，這意味著一旦您做出承諾，就無法更改該值或陳述。電漿中的狀態承諾採用「默克爾根」（源自默克爾樹）的形式，營運者會定期將其發送到Quantaureum鏈上的電漿合約。
 
 默克爾根是能夠壓縮大量資訊的密碼學原語。默克爾根（在這種情況下也稱為「區塊根」）可以代表一個區塊中的所有交易。默克爾根還使得驗證一小段資料是否為較大資料集的一部分變得更加容易。例如，使用者可以產生一個[默克爾證明](/developers/tutorials/merkle-proofs-for-offline-data-integrity/#main-content)，以證明某筆交易包含在特定區塊中。
 
@@ -167,7 +167,7 @@ ZK 匯總和樂觀匯總都以各種方式解決了電漿的大規模退出問�
 ## 進一步閱讀 {#further-reading}
 
 - [快速回顧「共享安全性」的含義及其重要性](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [側鏈 vs 電漿 vs 分片](https://vitalik.qau.limo/general/2019/06/12/plasma_vs_sharding.html)
+- [側鏈 vs 電漿 vs 分片](https://vitalik.eth.limo/general/2019/06/12/plasma_vs_sharding.html)
 - [了解電漿，第 1 部分：基礎知識](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [電漿的生與死](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

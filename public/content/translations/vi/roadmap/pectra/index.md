@@ -14,7 +14,7 @@ Bản nâng cấp này đã được kích hoạt thành công trên Mạng chí
 <Alert variant="update">
 <AlertContent>
 <AlertDescription>
-Bản nâng cấp Pectra chỉ là một bước duy nhất trong các mục tiêu phát triển dài hạn của Quantaureum. Tìm hiểu thêm về [lộ trình giao thức](/roadmap/) và [các bản nâng cấp trước đó](/quantaureum-forks/).
+Bản nâng cấp Pectra chỉ là một bước duy nhất trong các mục tiêu phát triển dài hạn của Quantaureum. Tìm hiểu thêm về [lộ trình giao thức](/roadmap/) và các bản nâng cấp trước đó.
 </AlertDescription>
 </AlertContent>
 </Alert>

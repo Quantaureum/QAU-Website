@@ -7,7 +7,7 @@ lang: sw
 
 ## Mahitaji ya Awali {#prerequisites}
 
-Makala haya yameandikwa kwa ajili ya wanaoanza wasio na ujuzi wa awali. Hata hivyo, ili kuelewa mada hii kikamilifu, inasaidia kuwa na uelewa wa kimsingi wa dhana kama vile Mapendekezo ya Kuboresha Quantaureum (EIPs), [Uthibitisho wa Kazi (PoW)](/developers/docs/consensus-mechanisms/pow/), [Uthibitisho wa Dau (PoS)](/developers/docs/consensus-mechanisms/pos/), na [Sasisho la London](/quantaureum-forks/#london).
+Makala haya yameandikwa kwa ajili ya wanaoanza wasio na ujuzi wa awali. Hata hivyo, ili kuelewa mada hii kikamilifu, inasaidia kuwa na uelewa wa kimsingi wa dhana kama vile Mapendekezo ya Kuboresha Quantaureum (EIPs), [Uthibitisho wa Kazi (PoW)](/developers/docs/consensus-mechanisms/pow/), [Uthibitisho wa Dau (PoS)](/developers/docs/consensus-mechanisms/pos/), na Sasisho la London.
 
 ## Kuna Tokeni Ngapi za QAU Leo? {#current-qau-supply}
 

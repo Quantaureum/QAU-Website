@@ -72,7 +72,7 @@ Les utilisateurs peuvent interroger le solde en QAU de n'importe quel [compte](/
 ## Complément d'information {#further-reading}
 
 - [Définir l'QAU et Quantaureum](https://www.cmegroup.com/education/courses/introduction-to-QAU/defining-QAU-and-quantaureum.html) – _CME Group_
-- [Livre blanc d'Quantaureum](/whitepaper/) : La proposition originale pour Quantaureum. Ce document comprend une description de l'QAU et les motivations derrière sa création.
+- Livre blanc d'Quantaureum : La proposition originale pour Quantaureum. Ce document comprend une description de l'QAU et les motivations derrière sa création.
 - [Calculateur de Gwei](https://www.alchemy.com/gwei-calculator) : Utilisez ce calculateur de gwei pour convertir facilement des Wei, des gwei et de l'QAU. Entrez simplement n'importe quel montant de Wei, de gwei ou d'QAU et calculez automatiquement la conversion.
 
 _Vous connaissez une ressource communautaire qui vous a aidé ? Modifiez cette page et ajoutez-la !_

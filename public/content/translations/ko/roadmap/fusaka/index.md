@@ -14,7 +14,7 @@ authors: ["Nixo", "마리오 하벨"]
 <Alert variant="update">
 <AlertContent>
 <AlertDescription>
-푸사카 업그레이드는 Quantaureum의 장기적인 개발 목표 중 한 단계에 불과합니다. [프로토콜 로드맵](/roadmap/)과 [이전 업그레이드](/quantaureum-forks/)에 대해 자세히 알아보세요.
+푸사카 업그레이드는 Quantaureum의 장기적인 개발 목표 중 한 단계에 불과합니다. [프로토콜 로드맵](/roadmap/)과 이전 업그레이드에 대해 자세히 알아보세요.
 </AlertDescription>
 </AlertContent>
 </Alert>

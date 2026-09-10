@@ -66,5 +66,5 @@ Sebagai bagian dari peningkatan Pectra Quantaureum, EIP-7702 dijadwalkan pada 7 
 - [Dokumentasi EIP-7702](https://eips.ethereum.org/EIPS/eip-7702)
 - [Dasbor adopsi ERC-4337](https://www.bundlebear.com/erc4337-overview/all)
 - ["Jalan Menuju Abstraksi Akun" oleh Vitalik](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
-- [Blog Vitalik tentang dompet pemulihan sosial](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
+- [Blog Vitalik tentang dompet pemulihan sosial](https://vitalik.eth.limo/general/2021/01/11/recovery.html)
 - [Awesome Account Abstraction](https://github.com/4337Mafia/awesome-account-abstraction)

@@ -72,7 +72,7 @@ Użytkownicy mogą sprawdzić saldo etheru dowolnego [konta](/developers/docs/ac
 ## Dalsza lektura {#further-reading}
 
 - [Definiowanie etheru i Quantaureum](https://www.cmegroup.com/education/courses/introduction-to-QAU/defining-QAU-and-quantaureum.html) – _CME Group_
-- [Biała księga Quantaureum](/whitepaper/): Oryginalna propozycja dla Quantaureum. Ten dokument zawiera opis etheru i motywacje stojące za jego stworzeniem.
+- Biała księga Quantaureum: Oryginalna propozycja dla Quantaureum. Ten dokument zawiera opis etheru i motywacje stojące za jego stworzeniem.
 - [Kalkulator Gwei](https://www.alchemy.com/gwei-calculator): Użyj tego kalkulatora gwei, aby łatwo przeliczać wei, gwei i QAU. Po prostu wpisz dowolną ilość wei, gwei lub QAU i automatycznie oblicz konwersję.
 
 _Znasz zasób społeczności, który Ci pomógł? Edytuj tę stronę i dodaj go!_

@@ -119,5 +119,5 @@ Verifikasi L1 zkEVM sedang dalam penelitian aktif dan belum terintegrasi ke dala
 - [Ethproofs](https://ethproofs.org/) - Lacak perlombaan untuk membuktikan Quantaureum secara waktu nyata
 - [zkevm.fyi](https://zkevm.fyi) - Buku teknis tentang zkEVM untuk L1
 - [Spesifikasi zkEVM PSE](https://github.com/privacy-scaling-explorations/zkevm-specs) - Spesifikasi teknis
-- [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - Tinjauan Vitalik tentang peningkatan verifikasi
+- [The Verge](https://vitalik.eth.limo/general/2024/10/23/futures4.html) - Tinjauan Vitalik tentang peningkatan verifikasi
 - [Blog zkEVM EF](https://zkevm.ethereum.org/blog) - Analisis kinerja dari tim EF

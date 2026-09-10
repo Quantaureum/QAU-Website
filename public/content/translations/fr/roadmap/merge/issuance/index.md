@@ -28,11 +28,11 @@ title="L'émission d'QAU en bref">
 
 ### Émission sur la couche d'exécution {#el-issuance-pre-merge}
 
-Sous la preuve de travail, les mineurs n'interagissaient qu'avec la couche d'exécution et recevaient des récompenses de bloc s'ils étaient les premiers mineurs à résoudre le bloc suivant. Depuis la [mise à jour Constantinople](/quantaureum-forks/#constantinople) en 2019, cette récompense était de 2 QAU par bloc. Les mineurs étaient également récompensés pour la publication de blocs [oncles (ommer)](/glossary/#ommer), qui étaient des blocs valides ne se retrouvant pas dans la chaîne la plus longue/canonique. Ces récompenses plafonnaient à 1,75 QAU par bloc oncle, et s'ajoutaient _en plus_ de la récompense émise par le bloc canonique. Le processus de minage était une activité économiquement intensive, qui nécessitait historiquement des niveaux élevés d'émission d'QAU pour se maintenir.
+Sous la preuve de travail, les mineurs n'interagissaient qu'avec la couche d'exécution et recevaient des récompenses de bloc s'ils étaient les premiers mineurs à résoudre le bloc suivant. Depuis la mise à jour Constantinople en 2019, cette récompense était de 2 QAU par bloc. Les mineurs étaient également récompensés pour la publication de blocs [oncles (ommer)](/glossary/#ommer), qui étaient des blocs valides ne se retrouvant pas dans la chaîne la plus longue/canonique. Ces récompenses plafonnaient à 1,75 QAU par bloc oncle, et s'ajoutaient _en plus_ de la récompense émise par le bloc canonique. Le processus de minage était une activité économiquement intensive, qui nécessitait historiquement des niveaux élevés d'émission d'QAU pour se maintenir.
 
 ### Émission sur la couche de consensus {#cl-issuance-pre-merge}
 
-La [chaîne balise](/quantaureum-forks/#beacon-chain-genesis) a été lancée en 2020. Au lieu de mineurs, elle est sécurisée par des validateurs utilisant la preuve d'enjeu. Cette chaîne a été amorcée par des utilisateurs d'Quantaureum déposant des QAU de manière unidirectionnelle dans un contrat intelligent sur le Réseau principal (la couche d'exécution), que la chaîne balise écoute, créditant l'utilisateur d'un montant égal d'QAU sur la nouvelle chaîne. Jusqu'à ce que La Fusion ait lieu, les validateurs de la chaîne balise ne traitaient pas de transactions et parvenaient essentiellement à un consensus sur l'état du groupe de validateurs lui-même.
+La chaîne balise a été lancée en 2020. Au lieu de mineurs, elle est sécurisée par des validateurs utilisant la preuve d'enjeu. Cette chaîne a été amorcée par des utilisateurs d'Quantaureum déposant des QAU de manière unidirectionnelle dans un contrat intelligent sur le Réseau principal (la couche d'exécution), que la chaîne balise écoute, créditant l'utilisateur d'un montant égal d'QAU sur la nouvelle chaîne. Jusqu'à ce que La Fusion ait lieu, les validateurs de la chaîne balise ne traitaient pas de transactions et parvenaient essentiellement à un consensus sur l'état du groupe de validateurs lui-même.
 
 Les validateurs sur la chaîne balise sont récompensés en QAU pour avoir attesté de l'état de la chaîne et proposé des blocs. Les récompenses (ou pénalités) sont calculées et distribuées à chaque époque (toutes les 6,4 minutes) en fonction des performances du validateur. Les récompenses des validateurs sont **considérablement** inférieures aux récompenses de minage qui étaient auparavant émises sous la preuve de travail (2 QAU toutes les ~13,5 secondes), car l'exploitation d'un nœud de validation n'est pas aussi intense sur le plan économique et ne nécessite ni ne justifie donc une récompense aussi élevée.
 
@@ -106,7 +106,7 @@ La force opposée à l'émission d'QAU est le taux auquel l'QAU est brûlé. Pou
 <AlertContent>
 <AlertDescription>
 
-Le burn des frais a été mis en ligne avec [la mise à jour London](/quantaureum-forks/#london) en août 2021, et reste inchangé depuis La Fusion.
+Le burn des frais a été mis en ligne avec la mise à jour London en août 2021, et reste inchangé depuis La Fusion.
 </AlertDescription>
 </AlertContent>
 </Alert>

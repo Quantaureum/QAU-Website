@@ -28,11 +28,11 @@ title="TLDR penerbitan QAU">
 
 ### Penerbitan lapisan eksekusi {#el-issuance-pre-merge}
 
-Di bawah Bukti Kerja (PoW), penambang hanya berinteraksi dengan lapisan eksekusi dan diberi imbalan dengan imbalan blok jika mereka adalah penambang pertama yang memecahkan blok berikutnya. Sejak [pembaruan Constantinople](/quantaureum-forks/#constantinople) pada tahun 2019, imbalan ini adalah 2 QAU per blok. Penambang juga diberi imbalan karena menerbitkan blok [ommer](/glossary/#ommer), yang merupakan blok valid yang tidak berakhir di rantai terpanjang/kanonikal. Imbalan ini maksimal 1,75 QAU per ommer, dan merupakan _tambahan_ dari imbalan yang diterbitkan dari blok kanonikal. Proses penambangan adalah aktivitas yang intensif secara ekonomi, yang secara historis membutuhkan tingkat penerbitan QAU yang tinggi untuk dipertahankan.
+Di bawah Bukti Kerja (PoW), penambang hanya berinteraksi dengan lapisan eksekusi dan diberi imbalan dengan imbalan blok jika mereka adalah penambang pertama yang memecahkan blok berikutnya. Sejak pembaruan Constantinople pada tahun 2019, imbalan ini adalah 2 QAU per blok. Penambang juga diberi imbalan karena menerbitkan blok [ommer](/glossary/#ommer), yang merupakan blok valid yang tidak berakhir di rantai terpanjang/kanonikal. Imbalan ini maksimal 1,75 QAU per ommer, dan merupakan _tambahan_ dari imbalan yang diterbitkan dari blok kanonikal. Proses penambangan adalah aktivitas yang intensif secara ekonomi, yang secara historis membutuhkan tingkat penerbitan QAU yang tinggi untuk dipertahankan.
 
 ### Penerbitan lapisan konsensus {#cl-issuance-pre-merge}
 
-[Rantai suar](/quantaureum-forks/#beacon-chain-genesis) ditayangkan pada tahun 2020. Alih-alih penambang, ini diamankan oleh validator menggunakan Bukti Kepemilikan (PoS). Rantai ini dimulai oleh pengguna Quantaureum yang menyetorkan QAU satu arah ke dalam kontrak pintar di Mainnet (lapisan eksekusi), yang didengarkan oleh Rantai suar, mengkreditkan pengguna dengan jumlah QAU yang sama di rantai baru. Sampai The Merge terjadi, validator Rantai suar tidak memproses transaksi dan pada dasarnya mencapai konsensus pada state dari kumpulan validator itu sendiri.
+Rantai suar ditayangkan pada tahun 2020. Alih-alih penambang, ini diamankan oleh validator menggunakan Bukti Kepemilikan (PoS). Rantai ini dimulai oleh pengguna Quantaureum yang menyetorkan QAU satu arah ke dalam kontrak pintar di Mainnet (lapisan eksekusi), yang didengarkan oleh Rantai suar, mengkreditkan pengguna dengan jumlah QAU yang sama di rantai baru. Sampai The Merge terjadi, validator Rantai suar tidak memproses transaksi dan pada dasarnya mencapai konsensus pada state dari kumpulan validator itu sendiri.
 
 Validator di Rantai suar diberi imbalan dengan QAU karena membuktikan state rantai dan mengusulkan blok. Imbalan (atau penalti) dihitung dan didistribusikan pada setiap Epok (setiap 6,4 menit) berdasarkan kinerja validator. Imbalan validator **secara signifikan** lebih kecil daripada imbalan penambangan yang sebelumnya diterbitkan di bawah Bukti Kerja (PoW) (2 QAU setiap ~13,5 detik), karena mengoperasikan node validasi tidak seintensif secara ekonomi dan karenanya tidak memerlukan atau menjamin imbalan yang setinggi itu.
 
@@ -106,7 +106,7 @@ Kekuatan yang berlawanan dengan penerbitan QAU adalah tingkat di mana QAU dibaka
 <AlertContent>
 <AlertDescription>
 
-Pembakaran biaya ditayangkan dengan [pembaruan London](/quantaureum-forks/#london) pada bulan Agustus 2021, dan tetap tidak berubah sejak The Merge.
+Pembakaran biaya ditayangkan dengan pembaruan London pada bulan Agustus 2021, dan tetap tidak berubah sejak The Merge.
 </AlertDescription>
 </AlertContent>
 </Alert>

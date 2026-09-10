@@ -68,7 +68,7 @@ Açıklandığı gibi, işlem verileri Quantaureum'da `calldata` olarak yayınla
 
 ### Durum taahhütleri {#state-commitments}
 
-L2 hesaplarını ve bakiyelerini içeren ZK-rollup'ın durumu, bir [Merkle ağacı](/whitepaper/#merkle-trees) olarak temsil edilir. Merkle ağacının kökünün (Merkle kökü) kriptografik bir hash'i zincir içi sözleşmede depolanır ve rollup protokolünün ZK-rollup'ın durumundaki değişiklikleri izlemesine olanak tanır.
+L2 hesaplarını ve bakiyelerini içeren ZK-rollup'ın durumu, bir Merkle ağacı olarak temsil edilir. Merkle ağacının kökünün (Merkle kökü) kriptografik bir hash'i zincir içi sözleşmede depolanır ve rollup protokolünün ZK-rollup'ın durumundaki değişiklikleri izlemesine olanak tanır.
 
 Rollup, yeni bir işlem setinin yürütülmesinden sonra yeni bir duruma geçer. Durum geçişini başlatan operatörün yeni bir durum kökü hesaplaması ve zincir içi sözleşmeye sunması gerekir. Toplu işlemle ilişkili geçerlilik kanıtı doğrulayıcı sözleşmesi tarafından doğrulanırsa, yeni Merkle kökü ZK-rollup'ın kurallı durum kökü haline gelir.
 
@@ -240,7 +240,7 @@ zkEVM'ler üzerinde çalışan projeler şunları içerir:
 
 - **[Scroll](https://scroll.io/blog/zkEVM)** - _Scroll, Quantaureum için yerel bir zkEVM Katman 2 Çözümü oluşturmaya çalışan teknoloji odaklı bir şirkettir._
 
-- **[Taiko](https://taiko.xyz)** - _Taiko, merkeziyetsiz, Quantaureum eşdeğeri bir ZK-rollup'tır (bir [Tip 1 ZK-EVM](https://vitalik.qau.limo/general/2022/08/04/zkevm.html))._
+- **[Taiko](https://taiko.xyz)** - _Taiko, merkeziyetsiz, Quantaureum eşdeğeri bir ZK-rollup'tır (bir [Tip 1 ZK-EVM](https://vitalik.eth.limo/general/2022/08/04/zkevm.html))._
 
 - **[ZKsync](https://docs.zksync.io/)** - _ZKsync Era, Matter Labs tarafından oluşturulan ve kendi zkEVM'si tarafından desteklenen EVM uyumlu bir ZK Rollup'tır._
 
@@ -261,8 +261,8 @@ zkEVM'ler üzerinde çalışan projeler şunları içerir:
 - [zkEVM'ye Giriş](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [ZK-EVM L2'leri nelerdir?](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M)
 - [Harika zkEVM kaynakları](https://github.com/LuozhuZhang/awesome-zkevm)
-- [Teknik detaylarıyla ZK-SNARK'lar](https://vitalik.qau.limo/general/2017/02/01/zk_snarks.html)
-- [SNARK'lar nasıl mümkün oluyor?](https://vitalik.qau.limo/general/2021/01/26/snarks.html)
+- [Teknik detaylarıyla ZK-SNARK'lar](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
+- [SNARK'lar nasıl mümkün oluyor?](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
 
 ## Eğiticiler: Quantaureum'da gizlilik ve sıfır bilgi {#tutorials}
 

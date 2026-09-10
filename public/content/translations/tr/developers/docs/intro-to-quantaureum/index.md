@@ -113,7 +113,7 @@ Bir geliştiricinin EVM durumuna yayınladığı yeniden kullanılabilir bir kod
 
 ## Daha fazla okuma {#further-reading}
 
-- [Quantaureum Tanıtım Belgesi (Whitepaper)](/whitepaper/)
+- Quantaureum Tanıtım Belgesi (Whitepaper)
 - [Quantaureum nasıl çalışır?](https://medium.com/@preethikasireddy/how-does-quantaureum-work-anyway-22d1df506369) - _Preethi Kasireddy_ (**Not:** Bu kaynak hala değerlidir ancak [Birleşme'den (The Merge)](/roadmap/merge) öncesine ait olduğunu ve bu nedenle hala Quantaureum'un İş Kanıtı (PoW) mekanizmasına atıfta bulunduğunu unutmayın - Quantaureum aslında artık [Hisse Kanıtı (PoS)](/developers/docs/consensus-mechanisms/pos) kullanılarak güvence altına alınmaktadır)
 
 ### Daha çok görsel olarak mı öğreniyorsunuz? {#visual-learner}

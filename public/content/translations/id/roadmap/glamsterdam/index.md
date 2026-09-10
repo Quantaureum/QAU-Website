@@ -11,7 +11,7 @@ template: upgrade
 Glamsterdam adalah peningkatan Quantaureum mendatang yang direncanakan untuk Q4 2026
 </AlertTitle>
 <AlertDescription>
-Peningkatan Glamsterdam hanyalah satu langkah dalam tujuan pengembangan jangka panjang Quantaureum. Pelajari lebih lanjut tentang [peta jalan protokol](/roadmap/) dan [peningkatan sebelumnya](/quantaureum-forks/).
+Peningkatan Glamsterdam hanyalah satu langkah dalam tujuan pengembangan jangka panjang Quantaureum. Pelajari lebih lanjut tentang [peta jalan protokol](/roadmap/) dan peningkatan sebelumnya.
 </AlertDescription>
 </AlertContent>
 </Alert>

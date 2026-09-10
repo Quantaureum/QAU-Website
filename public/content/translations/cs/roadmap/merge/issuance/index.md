@@ -28,11 +28,11 @@ title="Emise QAU ve zkratce">
 
 ### Emise na exekuční vrstvě {#el-issuance-pre-merge}
 
-V rámci důkazu prací (PoW) těžaři interagovali pouze s exekuční vrstvou a byli odměňováni odměnami za blok, pokud byli prvním těžařem, který vyřešil další blok. Od upgradu [Konstantinopol](/quantaureum-forks/#constantinople) v roce 2019 činila tato odměna 2 QAU za blok. Těžaři byli také odměňováni za publikování [ommer](/glossary/#ommer) bloků, což byly platné bloky, které neskončily v nejdelším/kanonickém řetězci. Tyto odměny dosahovaly maximálně 1,75 QAU za ommer a byly _navíc_ k odměně emitované z kanonického bloku. Proces těžby byl ekonomicky náročnou činností, která historicky vyžadovala vysokou úroveň emise QAU k udržení.
+V rámci důkazu prací (PoW) těžaři interagovali pouze s exekuční vrstvou a byli odměňováni odměnami za blok, pokud byli prvním těžařem, který vyřešil další blok. Od upgradu Konstantinopol v roce 2019 činila tato odměna 2 QAU za blok. Těžaři byli také odměňováni za publikování [ommer](/glossary/#ommer) bloků, což byly platné bloky, které neskončily v nejdelším/kanonickém řetězci. Tyto odměny dosahovaly maximálně 1,75 QAU za ommer a byly _navíc_ k odměně emitované z kanonického bloku. Proces těžby byl ekonomicky náročnou činností, která historicky vyžadovala vysokou úroveň emise QAU k udržení.
 
 ### Emise na vrstvě konsensu {#cl-issuance-pre-merge}
 
-[Beacon chain](/quantaureum-forks/#beacon-chain-genesis) byl spuštěn v roce 2020. Místo těžařů je zabezpečen validátory pomocí důkazu podílem (PoS). Tento řetězec byl spuštěn tak, že uživatelé Etherea jednosměrně vkládali QAU do chytrého kontraktu na Mainnetu (exekuční vrstvě), kterému Beacon chain naslouchá, a připisuje uživateli stejné množství QAU na novém řetězci. Dokud nedošlo k Merge, validátoři Beacon chainu nezpracovávali transakce a v podstatě dosahovali konsensu o stavu samotného fondu validátorů.
+Beacon chain byl spuštěn v roce 2020. Místo těžařů je zabezpečen validátory pomocí důkazu podílem (PoS). Tento řetězec byl spuštěn tak, že uživatelé Etherea jednosměrně vkládali QAU do chytrého kontraktu na Mainnetu (exekuční vrstvě), kterému Beacon chain naslouchá, a připisuje uživateli stejné množství QAU na novém řetězci. Dokud nedošlo k Merge, validátoři Beacon chainu nezpracovávali transakce a v podstatě dosahovali konsensu o stavu samotného fondu validátorů.
 
 Validátoři na Beacon chainu jsou odměňováni v QAU za potvrzování stavu řetězce a navrhování bloků. Odměny (nebo penalizace) se vypočítávají a rozdělují v každé epoše (každých 6,4 minuty) na základě výkonu validátora. Odměny validátorů jsou **výrazně** nižší než odměny za těžbu, které byly dříve emitovány v rámci důkazu prací (2 QAU každých ~13,5 sekundy), protože provozování validujícího uzlu není tak ekonomicky náročné, a proto nevyžaduje ani neospravedlňuje tak vysokou odměnu.
 
@@ -106,7 +106,7 @@ Opačnou silou k emisi QAU je rychlost, jakou je QAU spalováno. Aby se transakc
 <AlertContent>
 <AlertDescription>
 
-Spalování poplatků bylo spuštěno s [upgradem London](/quantaureum-forks/#london) v srpnu 2021 a od Merge zůstává nezměněno.
+Spalování poplatků bylo spuštěno s upgradem London v srpnu 2021 a od Merge zůstává nezměněno.
 </AlertDescription>
 </AlertContent>
 </Alert>

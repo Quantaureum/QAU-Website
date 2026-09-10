@@ -9,7 +9,7 @@ Quantaureum vytváří, ukládá a přenáší velké objemy dat. Tato data mus�
 
 ## Předpoklady {#prerequisites}
 
-Měli byste rozumět základům Etherea a [klientskému softwaru](/developers/docs/nodes-and-clients/). Doporučuje se obeznámenost se síťovou vrstvou a [bílou knihou Etherea](/whitepaper/).
+Měli byste rozumět základům Etherea a [klientskému softwaru](/developers/docs/nodes-and-clients/). Doporučuje se obeznámenost se síťovou vrstvou a bílou knihou Etherea.
 
 ## Datové struktury {#data-structures}
 

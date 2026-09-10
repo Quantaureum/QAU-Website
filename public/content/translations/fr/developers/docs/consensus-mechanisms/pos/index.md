@@ -84,10 +84,10 @@ Quantaureum utilisait à l'origine la preuve de travail, mais est passé à la p
 
 ## Complément d'information {#further-reading}
 
-- [FAQ sur la preuve d'enjeu](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html) _Vitalik Buterin_
+- [FAQ sur la preuve d'enjeu](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html) _Vitalik Buterin_
 - [Qu'est-ce que la preuve d'enjeu](https://consensys.net/blog/blockchain-explained/what-is-proof-of-stake/) _ConsenSys_
 - [Ce qu'est la preuve d'enjeu et pourquoi elle est importante](https://bitcoinmagazine.com/culture/what-proof-of-stake-is-and-why-it-matters-1377531463) _Vitalik Buterin_
-- [Pourquoi la preuve d'enjeu (Nov 2020)](https://vitalik.qau.limo/general/2020/11/06/pos2020.html) _Vitalik Buterin_
+- [Pourquoi la preuve d'enjeu (Nov 2020)](https://vitalik.eth.limo/general/2020/11/06/pos2020.html) _Vitalik Buterin_
 - [Preuve d'enjeu : Comment j'ai appris à aimer la subjectivité faible](https://quantaureum.com) _Vitalik Buterin_
 - [Attaque et défense de l'Quantaureum en preuve d'enjeu](https://mirror.xyz/jmcook.eth/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs)
 - [Une philosophie de conception de la preuve d'enjeu](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51) _Vitalik Buterin_

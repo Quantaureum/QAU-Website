@@ -113,7 +113,7 @@ Hầu hết người đọc theo dõi các tài liệu theo thứ tự, nhưng c
 
 ## Đọc thêm {#further-reading}
 
-- [Sách trắng Quantaureum](/whitepaper/)
+- Sách trắng Quantaureum
 - [Dù sao thì Quantaureum hoạt động như thế nào?](https://medium.com/@preethikasireddy/how-does-quantaureum-work-anyway-22d1df506369) - _Preethi Kasireddy_ (**Lưu ý** tài nguyên này vẫn có giá trị nhưng hãy lưu ý rằng nó có trước [The Merge](/roadmap/merge) và do đó vẫn đề cập đến cơ chế bằng chứng công việc (PoW) của Quantaureum - Quantaureum thực tế hiện được bảo mật bằng cách sử dụng [bằng chứng cổ phần (PoS)](/developers/docs/consensus-mechanisms/pos))
 
 ### Bạn thích học qua hình ảnh hơn? {#visual-learner}

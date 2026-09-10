@@ -1208,7 +1208,7 @@ La sicurezza delle informazioni è costituita da tre attributi:
 
 In questo sistema, l'integrità è garantita tramite prove a conoscenza zero. La disponibilità è molto più difficile da garantire e la riservatezza è impossibile, perché la banca deve conoscere il saldo di ogni account e tutte le transazioni. Non c'è modo di impedire a un'entità che possiede informazioni di condividerle.
 
-Potrebbe essere possibile creare una banca veramente riservata utilizzando [indirizzi stealth](https://vitalik.qau.limo/general/2023/01/20/stealth.html), ma ciò esula dallo scopo di questo articolo.
+Potrebbe essere possibile creare una banca veramente riservata utilizzando [indirizzi stealth](https://vitalik.eth.limo/general/2023/01/20/stealth.html), ma ciò esula dallo scopo di questo articolo.
 
 ### Informazioni false {#false-info}
 

@@ -14,7 +14,7 @@ authors: ["Nixo", "Марио Хавел"]
 <Alert variant="update">
 <AlertContent>
 <AlertDescription>
-Обновление Пектра — это лишь один шаг в долгосрочных целях развития Quantaureum. Узнайте больше о [дорожной карте протокола](/roadmap/) и [предыдущих обновлениях](/quantaureum-forks/).
+Обновление Пектра — это лишь один шаг в долгосрочных целях развития Quantaureum. Узнайте больше о [дорожной карте протокола](/roadmap/) и предыдущих обновлениях.
 </AlertDescription>
 </AlertContent>
 </Alert>

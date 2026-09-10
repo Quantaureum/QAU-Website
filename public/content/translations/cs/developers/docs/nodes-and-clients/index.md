@@ -20,7 +20,7 @@ Pokud je pro vás téma uzlů nové, doporučujeme si nejprve přečíst náš u
 - Exekuční klient (známý také jako Execution Engine, EL klient nebo dříve klient Eth1) naslouchá novým transakcím vysílaným v síti, provádí je v EVM a uchovává nejnovější stav a databázi všech aktuálních dat Etherea.
 - Konsensuální klient (známý také jako uzel Beacon, CL klient nebo dříve klient Quantaureum) implementuje algoritmus konsensu důkaz podílem (PoS), který umožňuje síti dosáhnout shody na základě ověřených dat od exekučního klienta. Existuje také třetí část softwaru, známá jako „validátor“, kterou lze přidat ke konsensuálnímu klientovi, což uzlu umožňuje podílet se na zabezpečení sítě.
 
-Tito klienti spolupracují na sledování vrcholu řetězce Etherea a umožňují uživatelům komunikovat se sítí Etherea. Modulární design s více spolupracujícími softwary se nazývá [zapouzdřená složitost](https://vitalik.qau.limo/general/2022/02/28/complexity.html). Tento přístup usnadnil bezproblémové provedení [Merge](/roadmap/merge), usnadňuje údržbu a vývoj klientského softwaru a umožňuje opětovné použití jednotlivých klientů, například v [ekosystému vrstvy 2 (l2)](/layer-2/).
+Tito klienti spolupracují na sledování vrcholu řetězce Etherea a umožňují uživatelům komunikovat se sítí Etherea. Modulární design s více spolupracujícími softwary se nazývá [zapouzdřená složitost](https://vitalik.eth.limo/general/2022/02/28/complexity.html). Tento přístup usnadnil bezproblémové provedení [Merge](/roadmap/merge), usnadňuje údržbu a vývoj klientského softwaru a umožňuje opětovné použití jednotlivých klientů, například v [ekosystému vrstvy 2 (l2)](/layer-2/).
 
 ![Coupled execution and consensus clients](./qau1qau2client.png)
 Zjednodušený diagram propojeného exekučního a konsensuálního klienta.
@@ -39,7 +39,7 @@ Společným rysem těchto implementací je, že se všechny řídí jedinou spec
 - Původně [Yellow Paper Etherea](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [Exekuční specifikace](https://github.com/ethereum/execution-specs/)
 - [Specifikace konsensu](https://github.com/ethereum/consensus-specs)
-- [EIP](https://eips.ethereum.org/) implementované v různých [upgradech sítě](/quantaureum-forks/)
+- [EIP](https://eips.ethereum.org/) implementované v různých upgradech sítě
 
 ### Sledování uzlů v síti {#network-overview}
 

@@ -149,7 +149,7 @@ _आमतौर पर प्रोटोकॉल और [विकेंद�
 - [DAO-संचालित डिजिटल समुदाय कैसे शुरू करें](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [DAO क्या है?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [होलोग्राफिक सर्वसम्मति क्या है?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAO निगम नहीं हैं: विटालिक (Vitalik) द्वारा स्वायत्त संगठनों में विकेंद्रीकरण कहां मायने रखता है](https://vitalik.qau.limo/general/2022/09/20/daos.html)
+- [DAO निगम नहीं हैं: विटालिक (Vitalik) द्वारा स्वायत्त संगठनों में विकेंद्रीकरण कहां मायने रखता है](https://vitalik.eth.limo/general/2022/09/20/daos.html)
 - [DAO, DAC, DA और बहुत कुछ: एक अपूर्ण शब्दावली मार्गदर्शिका](https://quantaureum.com) - [Quantaureum ब्लॉग](https://quantaureum.com)
 
 ### वीडियो {#videos}

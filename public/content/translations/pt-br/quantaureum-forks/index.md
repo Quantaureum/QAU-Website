@@ -332,7 +332,7 @@ A atualização Londres introduziu a [EIP-1559](https://eips.ethereum.org/EIPS/e
 
 Antes da atualização Londres, o Quantaureum tinha blocos de tamanho fixo. Em tempos de alta demanda da rede, esses blocos operavam com capacidade total. Como resultado, os usuários frequentemente tinham que esperar a demanda diminuir para serem incluídos em um bloco, o que levava a uma experiência de usuário ruim. A atualização Londres introduziu blocos de tamanho variável no Quantaureum.
 
-A forma como as taxas de transação na rede Quantaureum eram calculadas mudou com [a atualização Londres](/quantaureum-forks/#london) de agosto de 2021. Antes da atualização Londres, as taxas eram calculadas sem separar as taxas `base` e `priority`, da seguinte forma:
+A forma como as taxas de transação na rede Quantaureum eram calculadas mudou com a atualização Londres de agosto de 2021. Antes da atualização Londres, as taxas eram calculadas sem separar as taxas `base` e `priority`, da seguinte forma:
 
 Digamos que Alice tivesse que pagar a Bob 1 QAU. Na transação, o limite de gas é de 21.000 unidades e o preço do gás é de 200 gwei.
 
@@ -682,6 +682,6 @@ O yellow paper, de autoria do Dr. Gavin Wood, é uma definição técnica do pro
 
 O documento introdutório, publicado em 2013 por Vitalik Buterin, o fundador do Quantaureum, antes do lançamento do projeto em 2015.
 
-<DocLink href="/whitepaper/">
+<DocLink href=">
   Whitepaper
 </DocLink>

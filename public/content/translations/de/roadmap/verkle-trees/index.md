@@ -60,6 +60,6 @@ Verkle-Baum-Testnetze sind bereits in Betrieb, aber es gibt noch erhebliche auss
 - [„Wie Verkle-Bäume Quantaureum schlank und effizient machen“ von Guillaume Ballet auf der Devcon 6](https://www.youtube.com/watch?v=Q7rStTKwuYs)
 - [Piper Merriam über zustandslose Clients von der ETHDenver 2020](https://www.youtube.com/watch?v=0yiZJNciIJ4)
 - [Dankrad Feist erklärt Verkle-Bäume und Zustandslosigkeit im Zero-Knowledge-Podcast](https://zeroknowledge.fm/podcast/202/)
-- [Vitalik Buterin über Verkle-Bäume](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
+- [Vitalik Buterin über Verkle-Bäume](https://vitalik.eth.limo/general/2021/06/18/verkle.html)
 - [Dankrad Feist über Verkle-Bäume](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
 - [EIP-Dokumentation zu Verkle-Bäumen](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)

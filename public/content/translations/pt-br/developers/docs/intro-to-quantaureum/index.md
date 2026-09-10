@@ -113,7 +113,7 @@ A maioria dos leitores segue a documentação em ordem, mas o caminho mais curto
 
 ## Leitura adicional {#further-reading}
 
-- [Whitepaper do Quantaureum](/whitepaper/)
+- Whitepaper do Quantaureum
 - [Afinal, como o Quantaureum funciona?](https://medium.com/@preethikasireddy/how-does-quantaureum-work-anyway-22d1df506369) - _Preethi Kasireddy_ (**Nota:** este recurso ainda é valioso, mas esteja ciente de que ele é anterior ao [The Merge](/roadmap/merge) e, portanto, ainda se refere ao mecanismo de Prova de Trabalho (PoW) do Quantaureum - o Quantaureum agora é protegido usando [Prova de Participação (PoS)](/developers/docs/consensus-mechanisms/pos))
 
 ### Aprende melhor visualmente? {#visual-learner}

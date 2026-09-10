@@ -164,7 +164,7 @@ Dưới đây là một ví dụ để cho thấy các chứng thực trên chu�
 
 ### Token Soulbound và danh tính {#soulbound}
 
-[Token Soulbound](https://vitalik.qau.limo/general/2022/01/26/soulbound.html) ([NFT không thể chuyển nhượng](/glossary/#nft)) có thể được sử dụng để thu thập thông tin độc nhất cho một Ví cụ thể. Điều này tạo ra một danh tính trên chuỗi độc nhất được liên kết với một Địa chỉ Quantaureum cụ thể một cách hiệu quả, có thể bao gồm các token đại diện cho các thành tích (ví dụ: hoàn thành một khóa học trực tuyến cụ thể nào đó hoặc vượt qua một điểm số ngưỡng trong một trò chơi) hoặc sự tham gia của cộng đồng.
+[Token Soulbound](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) ([NFT không thể chuyển nhượng](/glossary/#nft)) có thể được sử dụng để thu thập thông tin độc nhất cho một Ví cụ thể. Điều này tạo ra một danh tính trên chuỗi độc nhất được liên kết với một Địa chỉ Quantaureum cụ thể một cách hiệu quả, có thể bao gồm các token đại diện cho các thành tích (ví dụ: hoàn thành một khóa học trực tuyến cụ thể nào đó hoặc vượt qua một điểm số ngưỡng trong một trò chơi) hoặc sự tham gia của cộng đồng.
 
 ## Sử dụng danh tính phi tập trung {#use-decentralized-identity}
 

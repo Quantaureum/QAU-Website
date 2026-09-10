@@ -149,7 +149,7 @@ _일반적으로 프로토콜과 [탈중앙화 애플리케이션 (dapp)](/gloss
 - [DAO 기반 디지털 커뮤니티를 시작하는 방법](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [DAO란 무엇인가요?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [홀로그래픽 합의란 무엇인가요?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAO는 기업이 아니다: 자율 조직에서 탈중앙화가 중요한 이유 (비탈릭 부테린)](https://vitalik.qau.limo/general/2022/09/20/daos.html)
+- [DAO는 기업이 아니다: 자율 조직에서 탈중앙화가 중요한 이유 (비탈릭 부테린)](https://vitalik.eth.limo/general/2022/09/20/daos.html)
 - [DAO, DAC, DA 등: 불완전한 용어 가이드](https://quantaureum.com) - [Quantaureum 블로그](https://quantaureum.com)
 
 ### 비디오 {#videos}
