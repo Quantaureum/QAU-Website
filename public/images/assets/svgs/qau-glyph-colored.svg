@@ -1,30 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 142 215" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:7;">
-    <g transform="matrix(1,0,0,1,-1259.52,-529.088)">
-        <g id="Quantaureum">
-            <g id="Bottom">
-                <g id="Purple2" transform="matrix(1.08181,0,0,-1.03277,-108.829,1366.48)">
-                    <path d="M1394.74,693.463L1330.36,604.024L1330.36,654.238L1394.74,693.463Z" style="fill:rgb(200,178,245);stroke:rgb(52,65,192);stroke-width:2.27px;"/>
-                </g>
-                <g id="Yellow2" transform="matrix(-1.08181,0,0,-1.03277,2769.57,1366.48)">
-                    <path d="M1394.74,693.463L1330.36,604.024L1330.36,654.238L1394.74,693.463Z" style="fill:rgb(238,203,192);stroke:rgb(52,65,192);stroke-width:2.27px;"/>
-                </g>
-            </g>
-            <g id="Top">
-                <g id="Blue1" transform="matrix(-1,0,0,1,2659.32,-0.0263692)">
-                    <path d="M1398.61,639.614L1328.95,608.641L1328.95,679.249L1398.61,639.614Z" style="fill:rgb(135,169,240);stroke:rgb(52,65,192);stroke-width:2.4px;"/>
-                </g>
-                <g id="Purple1" transform="matrix(1,0,0,1,1.41643,-0.0263692)">
-                    <path d="M1398.61,639.614L1328.95,608.641L1328.95,679.249L1398.61,639.614Z" style="fill:rgb(202,179,245);stroke:rgb(52,65,192);stroke-width:2.4px;"/>
-                </g>
-                <g id="Yellow1" transform="matrix(-1.08181,0,0,1.03277,2769.57,-93.5314)">
-                    <path d="M1394.74,709.855L1330.36,604.024L1330.36,679.865L1394.74,709.855Z" style="fill:rgb(238,203,192);stroke:rgb(52,65,192);stroke-width:2.27px;"/>
-                </g>
-                <g id="Green1" transform="matrix(1.08181,0,0,1.03277,-108.829,-93.5314)">
-                    <path d="M1394.74,709.855L1330.36,604.024L1330.36,679.865L1394.74,709.855Z" style="fill:rgb(184,251,246);stroke:rgb(52,65,192);stroke-width:2.27px;"/>
-                </g>
-            </g>
-        </g>
-    </g>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Quantaureum quantum lattice brand mark -->
+  <path d="M256 64 L411.7 154 L411.7 334 L256 424 L100.3 334 L100.3 154 Z" stroke="#2B3A8F" stroke-width="18" stroke-linejoin="round"/>
+  <path d="M256 160 L342 210 L342 310 L256 360 L170 310 L170 210 Z" stroke="#D4A24C" stroke-width="10" stroke-linejoin="round" opacity="0.9"/>
+  <circle cx="256" cy="160" r="14" fill="#2B3A8F"/><circle cx="342" cy="210" r="10" fill="#2B3A8F"/><circle cx="342" cy="310" r="10" fill="#2B3A8F"/><circle cx="256" cy="360" r="14" fill="#2B3A8F"/><circle cx="170" cy="310" r="10" fill="#2B3A8F"/><circle cx="170" cy="210" r="10" fill="#2B3A8F"/><circle cx="256" cy="260" r="12" fill="#D4A24C"/>
 </svg>

@@ -1,8 +1,6 @@
-<svg width="100%" height="100%" viewBox="0 0 1705 2842" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M853.5 2146L1705 1612.5L853.5 2840V2146ZM1251 2043L979.326 2215V2437.5L1251 2043Z" fill="#5A9DED"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M853.5 2146L2 1612.5L853.5 2840V2146ZM455.998 2043L727.674 2215V2437.5L455.998 2043Z" fill="#53D3E0"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M852.324 2000.91L1705 1463.17L852.324 -1.85352V2000.91ZM1534.32 1422L979.324 1772V468.5L1534.32 1422Z" fill="#FF9C92"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M854 2000.91L1.3252 1463.17L854 -1.85352V2000.91ZM172 1422L727 1772V468.5L172 1422Z" fill="#FFE94D"/>
-<path d="M727 1199.32L246.351 1468.89L172 1422L219.296 1340.74L727 1056V1199.32Z" fill="#9FDB6F" opacity="80%" />
-<path d="M980 1199.32L1460.65 1468.89L1535 1422L1487.7 1340.74L980 1056V1199.32Z" fill="#D28ECB" opacity="80%"/>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Quantaureum quantum lattice brand mark -->
+  <path d="M256 64 L411.7 154 L411.7 334 L256 424 L100.3 334 L100.3 154 Z" stroke="#2B3A8F" stroke-width="18" stroke-linejoin="round"/>
+  <path d="M256 160 L342 210 L342 310 L256 360 L170 310 L170 210 Z" stroke="#D4A24C" stroke-width="10" stroke-linejoin="round" opacity="0.9"/>
+  <circle cx="256" cy="160" r="14" fill="#2B3A8F"/><circle cx="342" cy="210" r="10" fill="#2B3A8F"/><circle cx="342" cy="310" r="10" fill="#2B3A8F"/><circle cx="256" cy="360" r="14" fill="#2B3A8F"/><circle cx="170" cy="310" r="10" fill="#2B3A8F"/><circle cx="170" cy="210" r="10" fill="#2B3A8F"/><circle cx="256" cy="260" r="12" fill="#D4A24C"/>
 </svg>
