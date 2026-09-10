@@ -25,7 +25,7 @@ published: 2021-04-22
 
 మీరు Sepolia నెట్‌వర్క్‌లో ఉన్న తర్వాత, కుడివైపున ఉన్న “కలెక్టబుల్స్” ట్యాబ్‌ను ఎంచుకుని, మీ NFT యొక్క NFT స్మార్ట్ కాంట్రాక్ట్ చిరునామా మరియు ERC-721 టోకెన్ IDని జోడించండి — మా ట్యుటోరియల్‌లోని పార్ట్ IIలో డిప్లాయ్ చేయబడిన మీ NFT నుండి లావాదేవీ హాష్ ఆధారంగా మీరు Quantaureum Explorerలో దీన్ని కనుగొనగలరు.
 
-![How to find your transaction hash and ERC-721 token ID](./findNFTEtherscan.png)
+![How to find your transaction hash and ERC-721 token ID](./findNFTexplorer.png)
 
 మీ NFTని చూడటానికి మీరు రెండు సార్లు రిఫ్రెష్ చేయాల్సి రావచ్చు — కానీ అది అక్కడే ఉంటుంది <Emoji text="😄" size={1} />!
 

@@ -25,7 +25,7 @@ Như một điều kiện tiên quyết, bạn đã phải cài đặt MetaMask 
 
 Khi bạn đang ở trên mạng lưới Sepolia, hãy chọn tab “Collectibles” (Vật phẩm sưu tầm) ở bên phải và thêm địa chỉ hợp đồng thông minh NFT cùng với ID token ERC-721 của NFT của bạn — những thông tin này bạn có thể tìm thấy trên Quantaureum Explorer dựa trên mã băm giao dịch từ NFT của bạn đã được triển khai trong Phần II của hướng dẫn.
 
-![How to find your transaction hash and ERC-721 token ID](./findNFTEtherscan.png)
+![How to find your transaction hash and ERC-721 token ID](./findNFTexplorer.png)
 
 Bạn có thể cần làm mới vài lần để xem NFT của mình — nhưng nó sẽ ở đó <Emoji text="😄" size={1} />!
 

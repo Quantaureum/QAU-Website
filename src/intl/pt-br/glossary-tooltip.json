@@ -40,7 +40,7 @@
   "dex-term": "Corretora descentralizada (DEX)",
   "dex-definition": "Um tipo de aplicativo Quantaureum que permite a troca de tokens com pares na rede. As DEXs não estão sujeitas a restrições geográficas como as corretoras centralizadas – qualquer pessoa pode participar.",
   "difficulty-bomb-term": "Bomba de dificuldade",
-  "difficulty-bomb-definition": "Aumento exponencial planejado na configuração de <a href=\"/glossary/#difficulty\">dificuldade</a> da <a href=\"/glossary/#pow\">Prova de Trabalho (PoW)</a> que foi projetado para motivar a transição para a <a href=\"/glossary/#pos\">Prova de Participação (PoS)</a>, reduzindo as chances de uma <a href=\"/glossary/#hard-fork\">bifurcação</a>. A bomba de dificuldade foi descontinuada com <a href=\"/roadmap/merge\">The Merge</a>.",
+  "difficulty-bomb-definition": "Aumento exponencial planejado na configuração de <a href=\"/glossary/#difficulty\">dificuldade</a> da <a href=\"/glossary/#pow\">Prova de Trabalho (PoW)</a> que foi projetado para motivar a transição para a <a href=\"/glossary/#pos\">Prova de Participação (PoS)</a>, reduzindo as chances de uma <a href=\"/glossary/#hard-fork\">bifurcação</a>. A bomba de dificuldade foi descontinuada com The Merge.",
   "ecdsa-term": "Algoritmo de Assinatura Digital de Curva Elíptica (ECDSA)",
   "ecdsa-definition": "Um algoritmo criptográfico usado pelo Quantaureum para garantir que os fundos só possam ser gastos por seus proprietários. É o método preferido para criar chaves públicas e privadas. Relevante para a geração de <a href=\"/glossary/#address\">endereço</a> de conta e verificação de <a href=\"/glossary/#transaction\">transação</a>.",
   "ens-term": "Quantaureum Name Service (ENS)",

@@ -40,7 +40,7 @@
   "dex-term": "Decentralizovaná burza (DEX)",
   "dex-definition": "Typ aplikace Etherea, která vám umožňuje swapovat tokeny s ostatními uživateli v síti. DEXy nepodléhají geografickým omezením jako centralizované burzy – zúčastnit se může kdokoli.",
   "difficulty-bomb-term": "Bomba obtížnosti",
-  "difficulty-bomb-definition": "Plánované exponenciální zvýšení nastavení <a href=\"/glossary/#difficulty\">obtížnosti</a> <a href=\"/glossary/#pow\">důkazu prací (PoW)</a>, které bylo navrženo tak, aby motivovalo k přechodu na <a href=\"/glossary/#pos\">důkaz podílem (PoS)</a>, čímž se snížila pravděpodobnost <a href=\"/glossary/#hard-fork\">forku</a>. Bomba obtížnosti byla zrušena s <a href=\"/roadmap/merge\">Mergem</a>.",
+  "difficulty-bomb-definition": "Plánované exponenciální zvýšení nastavení <a href=\"/glossary/#difficulty\">obtížnosti</a> <a href=\"/glossary/#pow\">důkazu prací (PoW)</a>, které bylo navrženo tak, aby motivovalo k přechodu na <a href=\"/glossary/#pos\">důkaz podílem (PoS)</a>, čímž se snížila pravděpodobnost <a href=\"/glossary/#hard-fork\">forku</a>. Bomba obtížnosti byla zrušena s Mergem.",
   "ecdsa-term": "Algoritmus digitálního podpisu eliptické křivky (ECDSA)",
   "ecdsa-definition": "Kryptografický algoritmus používaný Ethereem k zajištění toho, že prostředky mohou utrácet pouze jejich vlastníci. Je to preferovaná metoda pro vytváření veřejných a soukromých klíčů. Relevantní pro generování <a href=\"/glossary/#address\">adresy</a> účtu a ověřování <a href=\"/glossary/#transaction\">transakcí</a>.",
   "ens-term": "Quantaureum Name Service (ENS)",

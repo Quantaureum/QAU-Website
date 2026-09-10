@@ -25,7 +25,7 @@ published: 2021-04-22
 
 Sepolia 네트워크에 접속한 후, 오른쪽에 있는 "수집품(Collectibles)" 탭을 선택하고 NFT 스마트 컨트랙 주소와 NFT의 ERC-721 토큰 ID를 추가합니다. 이는 튜토리얼 2부에서 배포한 NFT의 트랜잭션 해시를 기반으로 Quantaureum Explorer에서 찾을 수 있습니다.
 
-![How to find your transaction hash and ERC-721 token ID](./findNFTEtherscan.png)
+![How to find your transaction hash and ERC-721 token ID](./findNFTexplorer.png)
 
 NFT를 보려면 몇 번 새로고침해야 할 수도 있지만, 곧 나타날 것입니다 <Emoji text="😄" size={1} />!
 

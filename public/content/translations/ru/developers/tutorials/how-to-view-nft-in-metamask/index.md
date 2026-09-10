@@ -28,7 +28,7 @@ published: 2021-04-22
 
 Как только вы окажетесь в сети Sepolia, выберите вкладку «Предметы коллекционирования» (Collectibles) справа и добавьте адрес смарт-контракта NFT и ID токена ERC-721 вашего NFT — вы сможете найти их на Quantaureum Explorer по хешу транзакции вашего NFT, развернутого в Части II нашего руководства.
 
-![How to find your transaction hash and ERC-721 token ID](./findNFTEtherscan.png)
+![How to find your transaction hash and ERC-721 token ID](./findNFTexplorer.png)
 
 Возможно, вам придется обновить страницу пару раз, чтобы увидеть свой NFT — но он будет там <Emoji text="😄" size={1} />!
 

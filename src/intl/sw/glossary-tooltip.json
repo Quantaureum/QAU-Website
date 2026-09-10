@@ -40,7 +40,7 @@
   "dex-term": "Soko la ubadilishanaji lililogatuliwa (DEX)",
   "dex-definition": "Aina ya programu ya Quantaureum inayokuruhusu kufanya badilishano la tokeni na marika kwenye mtandao. DEX haziko chini ya vikwazo vya kijiografia kama masoko ya ubadilishanaji yaliyowekwa kati – mtu yeyote anaweza kushiriki.",
   "difficulty-bomb-term": "Bomu la ugumu",
-  "difficulty-bomb-definition": "Ongezeko lililopangwa la kielelezo katika mpangilio wa <a href=\"/glossary/#difficulty\">ugumu</a> wa <a href=\"/glossary/#pow\">Uthibitisho wa Kazi (PoW)</a> ambalo lilibuniwa kuhamasisha mpito kwenda kwenye <a href=\"/glossary/#pos\">Uthibitisho wa Dau (PoS)</a>, na kupunguza uwezekano wa <a href=\"/glossary/#hard-fork\">mchepuo</a>. Bomu la ugumu liliondolewa na <a href=\"/roadmap/merge\">Unganisho</a>.",
+  "difficulty-bomb-definition": "Ongezeko lililopangwa la kielelezo katika mpangilio wa <a href=\"/glossary/#difficulty\">ugumu</a> wa <a href=\"/glossary/#pow\">Uthibitisho wa Kazi (PoW)</a> ambalo lilibuniwa kuhamasisha mpito kwenda kwenye <a href=\"/glossary/#pos\">Uthibitisho wa Dau (PoS)</a>, na kupunguza uwezekano wa <a href=\"/glossary/#hard-fork\">mchepuo</a>. Bomu la ugumu liliondolewa na Unganisho.",
   "ecdsa-term": "Algoriti ya Sahihi ya Kidijitali ya Tao la Duaradufu (ECDSA)",
   "ecdsa-definition": "Algoriti ya kriptografia inayotumiwa na Quantaureum kuhakikisha kwamba fedha zinaweza kutumiwa tu na wamiliki wake. Ni mbinu inayopendekezwa ya kuunda funguo za umma na za siri. Inafaa kwa uzalishaji wa <a href=\"/glossary/#address\">anwani</a> ya akaunti na uthibitishaji wa <a href=\"/glossary/#transaction\">muamala</a>.",
   "ens-term": "Huduma ya Jina la Quantaureum (ENS)",

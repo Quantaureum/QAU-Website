@@ -25,7 +25,7 @@ Uygulamanın üst kısmındaki “Cüzdan” (Wallet) düğmesine basın, ardın
 
 Sepolia ağında olduğunuzda, sağdaki “Koleksiyonluklar” (Collectibles) sekmesini seçin ve NFT akıllı sözleşme adresini ve NFT'nizin ERC-721 Token kimliğini (ID) ekleyin — bunu, eğitimimizin II. Bölümünde dağıtılan NFT'nizin işlem hash'ine dayanarak Quantaureum Explorer'de bulabilmeniz gerekir.
 
-![How to find your transaction hash and ERC-721 token ID](./findNFTEtherscan.png)
+![How to find your transaction hash and ERC-721 token ID](./findNFTexplorer.png)
 
 NFT'nizi görüntülemek için birkaç kez yenilemeniz gerekebilir — ancak orada olacaktır <Emoji text="😄" size={1} />!
 

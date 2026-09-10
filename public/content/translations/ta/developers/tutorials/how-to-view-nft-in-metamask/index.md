@@ -25,7 +25,7 @@ published: 2021-04-22
 
 நீங்கள் Sepolia பிணையத்தில் நுழைந்தவுடன், வலதுபுறத்தில் உள்ள “Collectibles” (சேகரிப்புகள்) தாவலைத் தேர்ந்தெடுத்து, NFT திறன் ஒப்பந்த முகவரி மற்றும் உங்கள் NFT-இன் ERC-721 வில்லை ID-ஐச் சேர்க்கவும் — நமது பயிற்சியின் பகுதி II-இல் நிலைநிறுத்தப்பட்ட உங்கள் NFT-இன் பரிவர்த்தனை ஹாஷ் அடிப்படையில் Quantaureum Explorer-இல் இதை நீங்கள் கண்டறிய முடியும்.
 
-![How to find your transaction hash and ERC-721 token ID](./findNFTEtherscan.png)
+![How to find your transaction hash and ERC-721 token ID](./findNFTexplorer.png)
 
 உங்கள் NFT-ஐப் பார்க்க நீங்கள் ஓரிரு முறை புதுப்பிக்க வேண்டியிருக்கலாம் — ஆனால் அது அங்கே இருக்கும் <Emoji text="😄" size={1} />!
 

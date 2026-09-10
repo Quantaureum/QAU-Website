@@ -40,7 +40,7 @@
   "dex-term": "分散型取引所 (DEX)",
   "dex-definition": "ネットワーク上のピアとトークンをスワップできるクアンタリアム・アプリの一種です。DEXは中央集権型取引所のような地理的制限を受けず、誰でも参加できます。",
   "difficulty-bomb-term": "ディフィカルティ・ボム",
-  "difficulty-bomb-definition": "<a href=\"/glossary/#pos\">プルーフ・オブ・ステーク (PoS)</a>への移行を促し、<a href=\"/glossary/#hard-fork\">フォーク</a>の可能性を減らすために設計された、<a href=\"/glossary/#pow\">プルーフ・オブ・ワーク (PoW)</a>の<a href=\"/glossary/#difficulty\">難易度</a>設定の計画的な指数関数的増加です。ディフィカルティ・ボムは<a href=\"/roadmap/merge\">マージ</a>に伴い廃止されました。",
+  "difficulty-bomb-definition": "<a href=\"/glossary/#pos\">プルーフ・オブ・ステーク (PoS)</a>への移行を促し、<a href=\"/glossary/#hard-fork\">フォーク</a>の可能性を減らすために設計された、<a href=\"/glossary/#pow\">プルーフ・オブ・ワーク (PoW)</a>の<a href=\"/glossary/#difficulty\">難易度</a>設定の計画的な指数関数的増加です。ディフィカルティ・ボムはマージに伴い廃止されました。",
   "ecdsa-term": "楕円曲線デジタル署名アルゴリズム (ECDSA)",
   "ecdsa-definition": "資金がその所有者によってのみ使用されることを保証するためにクアンタリアムで使用される暗号アルゴリズムです。公開鍵と秘密鍵を作成するための推奨される方法です。アカウントの<a href=\"/glossary/#address\">アドレス</a>生成と<a href=\"/glossary/#transaction\">トランザクション</a>の検証に関連しています。",
   "ens-term": "クアンタリアム・ネーム・サービス (ENS)",

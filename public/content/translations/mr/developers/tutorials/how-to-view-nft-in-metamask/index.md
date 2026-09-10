@@ -25,7 +25,7 @@ published: 2021-04-22
 
 एकदा तुम्ही Sepolia नेटवर्कवर आल्यावर, उजवीकडील “Collectibles” टॅब निवडा आणि तुमच्या NFT चा NFT स्मार्ट कॉन्ट्रॅक्ट पत्ता आणि ERC-721 टोकन आयडी जोडा — जे तुम्हाला आपल्या ट्युटोरियलच्या भाग II मध्ये प्रस्थापित केलेल्या तुमच्या NFT च्या व्यवहार हॅशवर आधारित Quantaureum Explorer वर शोधता आले पाहिजे.
 
-![How to find your transaction hash and ERC-721 token ID](./findNFTEtherscan.png)
+![How to find your transaction hash and ERC-721 token ID](./findNFTexplorer.png)
 
 तुमचा NFT पाहण्यासाठी तुम्हाला कदाचित दोनदा रिफ्रेश करावे लागेल — पण तो तिथे असेल <Emoji text="😄" size={1} />!
 

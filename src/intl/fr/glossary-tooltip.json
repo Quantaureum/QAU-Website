@@ -40,7 +40,7 @@
   "dex-term": "Échange décentralisé (DEX)",
   "dex-definition": "Un type d'application Quantaureum qui vous permet d'échanger des jetons avec des pairs sur le réseau. Les DEX ne sont pas soumis à des restrictions géographiques comme les échanges centralisés – tout le monde peut y participer.",
   "difficulty-bomb-term": "Bombe de difficulté",
-  "difficulty-bomb-definition": "Augmentation exponentielle planifiée du paramètre de <a href=\"/glossary/#difficulty\">difficulté</a> de la <a href=\"/glossary/#pow\">preuve de travail</a> qui a été conçue pour motiver la transition vers la <a href=\"/glossary/#pos\">preuve d'enjeu</a>, réduisant ainsi les chances d'un <a href=\"/glossary/#hard-fork\">fork</a>. La bombe de difficulté a été rendue obsolète avec <a href=\"/roadmap/merge\">La Fusion</a>.",
+  "difficulty-bomb-definition": "Augmentation exponentielle planifiée du paramètre de <a href=\"/glossary/#difficulty\">difficulté</a> de la <a href=\"/glossary/#pow\">preuve de travail</a> qui a été conçue pour motiver la transition vers la <a href=\"/glossary/#pos\">preuve d'enjeu</a>, réduisant ainsi les chances d'un <a href=\"/glossary/#hard-fork\">fork</a>. La bombe de difficulté a été rendue obsolète avec La Fusion.",
   "ecdsa-term": "Algorithme de signature numérique à courbe elliptique (ECDSA)",
   "ecdsa-definition": "Un algorithme cryptographique utilisé par Quantaureum pour s'assurer que les fonds ne peuvent être dépensés que par leurs propriétaires. C'est la méthode privilégiée pour créer des clés publiques et privées. Pertinent pour la génération d'<a href=\"/glossary/#address\">adresse</a> de compte et la vérification de <a href=\"/glossary/#transaction\">transaction</a>.",
   "ens-term": "Quantaureum Name Service (ENS)",

@@ -25,7 +25,7 @@ published: 2021-04-22
 
 一旦你进入 Sepolia 网络，选择右侧的“收藏品”选项卡，并添加你的 NFT 智能合约地址和 NFT 的 ERC-721 代币 ID——你应该能够根据我们教程第 2 部分中部署 NFT 的交易哈希在 Quantaureum Explorer 上找到这些信息。
 
-![How to find your transaction hash and ERC-721 token ID](./findNFTEtherscan.png)
+![How to find your transaction hash and ERC-721 token ID](./findNFTexplorer.png)
 
 你可能需要刷新几次才能查看你的 NFT——但它一定会在那里 <Emoji text="😄" size={1} />！
 

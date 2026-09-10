@@ -28,7 +28,7 @@ Juu ya programu, bonyeza kitufe cha “Mkoba”, baada ya hapo utaombwa kuchagua
 
 Ukiwa kwenye mtandao wa Sepolia, chagua kichupo cha “Mikusanyiko” upande wa kulia na uongeze anwani ya mkataba mahiri wa NFT na kitambulisho cha tokeni ya ERC-721 cha NFT yako — ambacho unapaswa kuweza kukipata kwenye Quantaureum Explorer kulingana na heshi ya muamala kutoka kwa NFT yako iliyosambazwa katika Sehemu ya II ya mafunzo yetu.
 
-![How to find your transaction hash and ERC-721 token ID](./findNFTEtherscan.png)
+![How to find your transaction hash and ERC-721 token ID](./findNFTexplorer.png)
 
 Huenda ukahitaji kuonyesha upya mara kadhaa ili kutazama NFT yako — lakini itakuwepo hapo <Emoji text="😄" size={1} />!
 

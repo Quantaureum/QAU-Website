@@ -25,7 +25,7 @@ Di bagian atas aplikasi, tekan tombol “Dompet” (Wallet), setelah itu Anda ak
 
 Setelah Anda berada di jaringan Sepolia, pilih tab “Koleksi” (Collectibles) di sebelah kanan dan tambahkan alamat kontrak pintar NFT dan ID token ERC-721 dari NFT Anda — yang seharusnya dapat Anda temukan di Quantaureum Explorer berdasarkan hash transaksi dari NFT Anda yang disebarkan di Bagian II dari tutorial kami.
 
-![How to find your transaction hash and ERC-721 token ID](./findNFTEtherscan.png)
+![How to find your transaction hash and ERC-721 token ID](./findNFTexplorer.png)
 
 Anda mungkin perlu menyegarkan beberapa kali untuk melihat NFT Anda — tetapi itu akan ada di sana <Emoji text="😄" size={1} />!
 

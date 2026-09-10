@@ -8,7 +8,6 @@ import FileContributors from "@/components/FileContributors"
 import GlossaryDefinition from "@/components/Glossary/GlossaryDefinition"
 import GlossaryTooltip from "@/components/Glossary/GlossaryTooltip"
 import { HubHero, PageHero } from "@/components/Hero"
-import NetworkUpgradeSummary from "@/components/History/NetworkUpgradeSummary"
 import ListenToPlayer from "@/components/ListenToPlayer"
 import Logo from "@/components/Logo"
 import MainArticle from "@/components/MainArticle"
@@ -38,7 +37,6 @@ export const staticComponents = {
   Link, // TODO: Refactor /community/online/ `Link` usage to `[]()` then deprecate this
   Logo,
   MatomoOptOut,
-  NetworkUpgradeSummary,
   SocialListItem,
   TranslationChartImage,
   ListenToPlayer,

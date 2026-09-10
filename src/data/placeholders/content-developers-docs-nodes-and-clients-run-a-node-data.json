@@ -26,5 +26,9 @@
   "/content/translations/tr/developers/docs/nodes-and-clients/run-a-node/diagram.png": {
     "hash": "8a127415",
     "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAIAAAC0SDtlAAAACXBIWXMAAAsTAAALEwEAmpwYAAABDklEQVR4nFVQIdNFUBC9f8Df8EMEM2YESRNkwYz2BU3QRMGMIGiaIpgRBEEQzAiCIAiCIAjCfee7633vfSfsnN179+zZZfd9c86naarruqoqxLZt/zgi0q7rwIdh8H2fcQEk8zxf13WeJ1L8+Hlj3/dLAARtLAzDKIpIuCxLx3E8zyuKIkmSLMvyPEePZVmoo9j3PXNdl36kaTqOYyqAB8QgCJqmieMYv8FhD+ljCfKwtCzLKAAOkxi+riupwAL2RJHR0mCrAHrmN2AadRoCt+jctu2ZgC2P47j/g4RgWFEUOEcnJD5Xwh34Fw4BskTr4oC/O5ASSqqqGoah67qmaaZpMgFZlk0BPNm2LUnSC1L4OuDCBS0KAAAAAElFTkSuQmCC"
+  },
+  "\\content\\translations\\fr\\developers\\docs\\nodes-and-clients\\run-a-node\\diagram.png": {
+    "hash": "7e3c66e0",
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAYAAAA7KqwyAAAACXBIWXMAAAsTAAALEwEAmpwYAAABWElEQVR4nG1Qq67CQBBdwU/wL/wA31BBgiDhA0gQOERFRcUmNU0qEEhERcUKREUFoqICUVFRtUHUkKxYkj03ZwIk9+ZOcrIzZx57ZpRzzgPwXdd5Y4wvy9JXVSU+QZ8c/bquBeTatvX7/d4rvK1tW/R9D+ccns+ncIwPhwN2ux2yLMM0Td/84/GAMQYqSRKkaSpBXdcoyxKr1Qrb7RaXy0VyRVEgz3N5l8sl4jhG0zRSr6IoAsHk+XwW8vNrVVXybjYbaK1xOp0wm82E4wBRgLexkZKHYcD9fv8FKmHudruJIsbku66Der1e3xuM4yjgEDZ8QI55rkd1VMJm3oEKAtE0TZimSfz/0Pd90FoHpVSIoigMwxDGcQzfFTiRF/5r/IWgCqrhMbkKa6/XK5RzzgKwxhh7PB5tkiSCOI5tlmV2Pp9bpZRdr9dWa23zPLdpmtqiKOxisbA/E4zKlib/CsIAAAAASUVORK5CYII="
   }
 }

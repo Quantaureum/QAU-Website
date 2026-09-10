@@ -40,7 +40,7 @@
   "dex-term": "Sàn giao dịch phi tập trung (DEX)",
   "dex-definition": "Một loại ứng dụng Quantaureum cho phép bạn hoán đổi token với các đối tác ngang hàng trên mạng lưới. Các DEX không bị hạn chế về mặt địa lý như các sàn giao dịch tập trung – bất kỳ ai cũng có thể tham gia.",
   "difficulty-bomb-term": "Bom độ khó",
-  "difficulty-bomb-definition": "Sự gia tăng theo cấp số nhân đã được lên kế hoạch trong cài đặt <a href=\"/glossary/#difficulty\">độ khó</a> của <a href=\"/glossary/#pow\">bằng chứng công việc (PoW)</a> được thiết kế để thúc đẩy quá trình chuyển đổi sang <a href=\"/glossary/#pos\">bằng chứng cổ phần (PoS)</a>, làm giảm khả năng xảy ra <a href=\"/glossary/#hard-fork\">phân nhánh</a>. Bom độ khó đã bị loại bỏ cùng với <a href=\"/roadmap/merge\">The Merge</a>.",
+  "difficulty-bomb-definition": "Sự gia tăng theo cấp số nhân đã được lên kế hoạch trong cài đặt <a href=\"/glossary/#difficulty\">độ khó</a> của <a href=\"/glossary/#pow\">bằng chứng công việc (PoW)</a> được thiết kế để thúc đẩy quá trình chuyển đổi sang <a href=\"/glossary/#pos\">bằng chứng cổ phần (PoS)</a>, làm giảm khả năng xảy ra <a href=\"/glossary/#hard-fork\">phân nhánh</a>. Bom độ khó đã bị loại bỏ cùng với The Merge.",
   "ecdsa-term": "Thuật toán chữ ký số đường cong elliptic (ECDSA)",
   "ecdsa-definition": "Một thuật toán mật mã học được Quantaureum sử dụng để đảm bảo rằng tiền chỉ có thể được chi tiêu bởi chủ sở hữu của chúng. Đây là phương pháp được ưu tiên để tạo khóa công khai và khóa riêng tư. Có liên quan đến việc tạo <a href=\"/glossary/#address\">địa chỉ</a> tài khoản và xác minh <a href=\"/glossary/#transaction\">giao dịch</a>.",
   "ens-term": "Dịch vụ tên miền Quantaureum (ENS)",

@@ -25,7 +25,7 @@ V horní části aplikace stiskněte tlačítko „Wallet“ (Peněženka), po k
 
 Jakmile budete v síti Sepolia, vyberte záložku „Collectibles“ (Sběratelské předměty) vpravo a přidejte adresu chytrého kontraktu NFT a ID tokenu ERC-721 vašeho NFT — to byste měli být schopni najít na Etherscanu na základě hashe transakce z vašeho NFT nasazeného ve II. části našeho tutoriálu.
 
-![How to find your transaction hash and ERC-721 token ID](./findNFTEtherscan.png)
+![How to find your transaction hash and ERC-721 token ID](./findNFTexplorer.png)
 
 Možná budete muset několikrát obnovit stránku, abyste své NFT viděli — ale bude tam <Emoji text="😄" size={1} />!
 

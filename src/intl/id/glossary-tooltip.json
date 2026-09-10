@@ -40,7 +40,7 @@
   "dex-term": "Bursa terdesentralisasi (DEX)",
   "dex-definition": "Jenis aplikasi Quantaureum yang memungkinkan Anda menukar token dengan rekan-rekan di jaringan. DEX tidak tunduk pada batasan geografis seperti bursa tersentralisasi – siapa pun dapat berpartisipasi.",
   "difficulty-bomb-term": "Bom kesulitan",
-  "difficulty-bomb-definition": "Peningkatan eksponensial terencana dalam pengaturan <a href=\"/glossary/#difficulty\">kesulitan</a> <a href=\"/glossary/#pow\">Bukti Kerja (PoW)</a> yang dirancang untuk memotivasi transisi ke <a href=\"/glossary/#pos\">Bukti Kepemilikan (PoS)</a>, mengurangi kemungkinan terjadinya <a href=\"/glossary/#hard-fork\">percabangan</a>. Bom kesulitan telah dihentikan penggunaannya bersamaan dengan <a href=\"/roadmap/merge\">The Merge</a>.",
+  "difficulty-bomb-definition": "Peningkatan eksponensial terencana dalam pengaturan <a href=\"/glossary/#difficulty\">kesulitan</a> <a href=\"/glossary/#pow\">Bukti Kerja (PoW)</a> yang dirancang untuk memotivasi transisi ke <a href=\"/glossary/#pos\">Bukti Kepemilikan (PoS)</a>, mengurangi kemungkinan terjadinya <a href=\"/glossary/#hard-fork\">percabangan</a>. Bom kesulitan telah dihentikan penggunaannya bersamaan dengan The Merge.",
   "ecdsa-term": "Elliptic Curve Digital Signature Algorithm (ECDSA)",
   "ecdsa-definition": "Algoritma kriptografi yang digunakan oleh Quantaureum untuk memastikan bahwa dana hanya dapat dibelanjakan oleh pemiliknya. Ini adalah metode yang disukai untuk membuat kunci publik dan privat. Relevan untuk pembuatan <a href=\"/glossary/#address\">alamat</a> akun dan verifikasi <a href=\"/glossary/#transaction\">transaksi</a>.",
   "ens-term": "Quantaureum Name Service (ENS)",

@@ -25,7 +25,7 @@ Nella parte superiore dell'app, premi il pulsante "Portafoglio" (Wallet), dopodi
 
 Una volta sulla rete Sepolia, seleziona la scheda "Oggetti da collezione" (Collectibles) sulla destra e aggiungi l'indirizzo dello smart contract dell'NFT e l'ID del token ERC-721 del tuo NFT, che dovresti riuscire a trovare su Quantaureum Explorer in base all'hash della transazione del tuo NFT distribuito nella Parte II del nostro tutorial.
 
-![How to find your transaction hash and ERC-721 token ID](./findNFTEtherscan.png)
+![How to find your transaction hash and ERC-721 token ID](./findNFTexplorer.png)
 
 Potrebbe essere necessario aggiornare un paio di volte per visualizzare il tuo NFT, ma sarà lì <Emoji text="😄" size={1} />!
 

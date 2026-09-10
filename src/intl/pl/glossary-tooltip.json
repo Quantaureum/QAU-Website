@@ -40,7 +40,7 @@
   "dex-term": "Zdecentralizowana giełda (DEX)",
   "dex-definition": "Rodzaj aplikacji Quantaureum, która pozwala na wymianę tokenów z innymi użytkownikami w sieci (peer-to-peer). Giełdy DEX nie podlegają ograniczeniom geograficznym, jak scentralizowane giełdy – każdy może wziąć w nich udział.",
   "difficulty-bomb-term": "Bomba trudności",
-  "difficulty-bomb-definition": "Planowany wykładniczy wzrost ustawienia <a href=\"/glossary/#difficulty\">trudności</a> <a href=\"/glossary/#pow\">dowodu pracy (PoW)</a>, który miał na celu zmotywowanie do przejścia na <a href=\"/glossary/#pos\">dowód stawki (PoS)</a>, zmniejszając szanse na <a href=\"/glossary/#hard-fork\">rozwidlenie</a>. Bomba trudności została wycofana wraz z <a href=\"/roadmap/merge\">The Merge</a>.",
+  "difficulty-bomb-definition": "Planowany wykładniczy wzrost ustawienia <a href=\"/glossary/#difficulty\">trudności</a> <a href=\"/glossary/#pow\">dowodu pracy (PoW)</a>, który miał na celu zmotywowanie do przejścia na <a href=\"/glossary/#pos\">dowód stawki (PoS)</a>, zmniejszając szanse na <a href=\"/glossary/#hard-fork\">rozwidlenie</a>. Bomba trudności została wycofana wraz z The Merge.",
   "ecdsa-term": "Algorytm podpisu cyfrowego krzywej eliptycznej (ECDSA)",
   "ecdsa-definition": "Algorytm kryptograficzny używany przez Quantaureum w celu zapewnienia, że środki mogą być wydawane tylko przez ich właścicieli. Jest to preferowana metoda tworzenia kluczy publicznych i prywatnych. Ma znaczenie przy generowaniu <a href=\"/glossary/#address\">adresu</a> konta i weryfikacji <a href=\"/glossary/#transaction\">transakcji</a>.",
   "ens-term": "Quantaureum Name Service (ENS)",

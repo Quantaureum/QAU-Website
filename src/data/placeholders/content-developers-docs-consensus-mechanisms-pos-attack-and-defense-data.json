@@ -22,5 +22,13 @@
   "/content/translations/zh/developers/docs/consensus-mechanisms/pos/attack-and-defense/reorg-schematic.png": {
     "hash": "8b7d12b7",
     "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAYAAAA7KqwyAAAACXBIWXMAAAsTAAALEwEAmpwYAAABKElEQVR4nHWRTUrDQBTHZ+UR7AVcCeIZRDyB+HGBggju3OoJXLsVERcKEpB26S5gWzWp4i6SNpIaCU1IjE46adq/M2OnlCb+Z/PmvcfvfRFMFEURHMdBnueglMK2bWkLCVv4ykSUkSQJB3Sh6zosy4Lv+2CMyZjwf/N4KYCxTBo7+0cglVV4vQ+YpokbTcOn56EfBCALSzg4Pvkr9EMxngWoNk/PrrBZPUREY1ktDHzZ9jAbYmN7DxfXNZmn8gsjKPlffTy8PmNlfRd3epN7RkgHqYzpLQPLa1t4s9+nsClAfNLJzK12G4Qs4lyrY5BTWD0HcRbj8rbO/RU0H1+KAKURf0JhGMJ4MtC4b2C2SGGJpavlcl0XnW5HXkSBxyV5/wLUCec1D/kFi98UpYY6dRoAAAAASUVORK5CYII="
+  },
+  "\\content\\translations\\zh\\developers\\docs\\consensus-mechanisms\\pos\\attack-and-defense\\reorg-schematic.png": {
+    "hash": "8b7d12b7",
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAYAAAA7KqwyAAAACXBIWXMAAAsTAAALEwEAmpwYAAABKUlEQVR4nHWRz0rDQBDG9+Qj2AfwJojPIOITiH9eQBDBm1d9As9eRcSDQgmIPXoL2FZNqniLpF1JjYQmJEY3Tbrxk91mKyTxO307M/ubGYagUBiGoJSCcw7GGGzbll5IeBGrE1EmjmNQOoCu67AsC57nIU1TmRPxrziuB6RpJs3W3iFIYxnu8B2maaKpafhwXYx8H2RuAftHx9NG3wyc538AXox5cnqJ9Z0DhCyS3QLfk2NPsgnWNndxfnUj61R9ZQUl73OE+5cnLK1u41bvAMiRjBOZ07sGFlc28Gq/zWBEfRSPpNi52+uBkHmcaS2MOYM1pIiyCBfXLRDSQOfhuQpQyjHdLwgCGI8G2nftWa48vlAFoOQ4DvqDvryIAv/U1P0LUCcsqwz5BX9IFJ2XQA0XAAAAAElFTkSuQmCC"
+  },
+  "\\content\\translations\\ja\\developers\\docs\\consensus-mechanisms\\pos\\attack-and-defense\\reorg-schematic.png": {
+    "hash": "b8ab487d",
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAYAAAA7KqwyAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNklEQVR4nI2QvUoDQRSFp7UUxEcQzEsI+gSxEB8gFvYW2lsI1qbVwioYsBK2EGQRU0hkTRHDmh8JkrgaduMa153sxE9mdBVMEM8wcGbuvWfOGQGglKJer5sdRRHtdptKpUIYhuZcrVbxPI9JECnRzXetJkfFIpZl0el0kFKamr7X9YkCUg4Nya5tIqYztBoNHMfBtm26D116vR5iao71rR3T9/IaodToR0ApZcjefoHl3Ab+wDe24zji0fNwXZeFbI7t3TxhPzBxJ0ZI4T0/Ubq+IrO0ysmpjUwkb3FEksRYZ+fML65wc9s0vdqJSAe1cpq5VC4jxAz5wwKDJMS9b9EfhhwUjxFilotL53tmzMGIz3zafir4F8YENIIgoFar4fs+71+iemn+LwH9sv7IYZKM1X6LfADsTxIZB/C/kgAAAABJRU5ErkJggg=="
   }
 }

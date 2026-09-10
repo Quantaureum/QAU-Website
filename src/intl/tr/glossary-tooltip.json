@@ -40,7 +40,7 @@
   "dex-term": "Merkeziyetsiz borsa (DEX)",
   "dex-definition": "Ağdaki eşlerle token takas etmenizi sağlayan bir tür Quantaureum uygulaması. DEX'ler, merkezi borsalar gibi coğrafi kısıtlamalara tabi değildir; herkes katılabilir.",
   "difficulty-bomb-term": "Zorluk bombası",
-  "difficulty-bomb-definition": "<a href=\"/glossary/#pos\">Hisse Kanıtı (PoS)</a> sistemine geçişi teşvik etmek ve bir <a href=\"/glossary/#hard-fork\">çatallanma</a> olasılığını azaltmak için tasarlanmış, <a href=\"/glossary/#pow\">İş Kanıtı (PoW)</a> <a href=\"/glossary/#difficulty\">zorluk</a> ayarındaki planlı üstel artış. Zorluk bombası, <a href=\"/roadmap/merge\">Birleşme</a> ile kullanımdan kaldırıldı.",
+  "difficulty-bomb-definition": "<a href=\"/glossary/#pos\">Hisse Kanıtı (PoS)</a> sistemine geçişi teşvik etmek ve bir <a href=\"/glossary/#hard-fork\">çatallanma</a> olasılığını azaltmak için tasarlanmış, <a href=\"/glossary/#pow\">İş Kanıtı (PoW)</a> <a href=\"/glossary/#difficulty\">zorluk</a> ayarındaki planlı üstel artış. Zorluk bombası, Birleşme ile kullanımdan kaldırıldı.",
   "ecdsa-term": "Eliptik Eğri Dijital İmza Algoritması (ECDSA)",
   "ecdsa-definition": "Fonların yalnızca sahipleri tarafından harcanabilmesini sağlamak için Quantaureum tarafından kullanılan kriptografik bir algoritma. Açık ve özel anahtarlar oluşturmak için tercih edilen yöntemdir. Hesap <a href=\"/glossary/#address\">adresi</a> oluşturma ve <a href=\"/glossary/#transaction\">işlem</a> doğrulaması ile ilgilidir.",
   "ens-term": "Quantaureum İsim Hizmeti (ENS)",

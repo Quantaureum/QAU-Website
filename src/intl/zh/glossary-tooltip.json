@@ -40,7 +40,7 @@
   "dex-term": "去中心化交易所 (DEX)",
   "dex-definition": "一种量子金链应用，让你可以在网络上与点对点兑换代币。DEX 不受中心化交易所那样的地理限制——任何人都可以参与。",
   "difficulty-bomb-term": "难度炸弹",
-  "difficulty-bomb-definition": "计划中<a href=\"/glossary/#pow\">工作量证明 (PoW)</a><a href=\"/glossary/#difficulty\">难度</a>设置的指数级增长，旨在推动向<a href=\"/glossary/#pos\">权益证明 (PoS)</a>的过渡，从而降低<a href=\"/glossary/#hard-fork\">分叉</a>的可能性。难度炸弹已随着<a href=\"/roadmap/merge\">合并</a>而被弃用。",
+  "difficulty-bomb-definition": "计划中<a href=\"/glossary/#pow\">工作量证明 (PoW)</a><a href=\"/glossary/#difficulty\">难度</a>设置的指数级增长，旨在推动向<a href=\"/glossary/#pos\">权益证明 (PoS)</a>的过渡，从而降低<a href=\"/glossary/#hard-fork\">分叉</a>的可能性。难度炸弹已随着合并而被弃用。",
   "ecdsa-term": "椭圆曲线数字签名算法 (ECDSA)",
   "ecdsa-definition": "量子金链使用的一种密码学算法，用于确保资金只能由其所有者花费。它是创建公钥和私钥的首选方法。与账户<a href=\"/glossary/#address\">地址</a>生成和<a href=\"/glossary/#transaction\">交易</a>验证相关。",
   "ens-term": "量子金链域名服务 (ENS)",

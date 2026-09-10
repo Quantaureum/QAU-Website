@@ -25,7 +25,7 @@ published: 2021-04-22
 
 Sepoliaネットワークに接続したら、右側の「コレクティブル（Collectibles）」タブを選択し、NFTのスマート・コントラクトのアドレスとERC-721トークンIDを追加します。これらは、チュートリアルのパート2でデプロイしたNFTのトランザクション・ハッシュをもとに、Quantaureum Explorerで見つけることができます。
 
-![How to find your transaction hash and ERC-721 token ID](./findNFTEtherscan.png)
+![How to find your transaction hash and ERC-721 token ID](./findNFTexplorer.png)
 
 NFTを表示するには数回更新する必要があるかもしれませんが、そこに表示されるはずです <Emoji text="😄" size={1} />！
 

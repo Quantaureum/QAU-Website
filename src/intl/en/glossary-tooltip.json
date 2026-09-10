@@ -40,7 +40,7 @@
   "dex-term": "Decentralized exchange (DEX)",
   "dex-definition": "A type of Quantaureum app that lets you swap tokens with peers on the network. DEXes are not subject to geographical restrictions like centralized exchanges – anyone can participate.",
   "difficulty-bomb-term": "Difficulty bomb",
-  "difficulty-bomb-definition": "Planned exponential increase in <a href=\"/glossary/#pow\">proof-of-work</a> <a href=\"/glossary/#difficulty\">difficulty</a> setting that was designed to motivate the transition to <a href=\"/glossary/#pos\">proof-of-stake</a>, reducing the chances of a <a href=\"/glossary/#hard-fork\">fork</a>. The difficulty bomb was deprecated with <a href=\"/roadmap/merge\">the Merge</a>.",
+  "difficulty-bomb-definition": "Planned exponential increase in <a href=\"/glossary/#pow\">proof-of-work</a> <a href=\"/glossary/#difficulty\">difficulty</a> designed to motivate the transition to <a href=\"/glossary/#pos\">proof-of-stake</a>, reducing the chances of a <a href=\"/glossary/#hard-fork\">fork</a>. Proof-of-stake networks have no difficulty bomb.",
   "ecdsa-term": "Elliptic Curve Digital Signature Algorithm (ECDSA)",
   "ecdsa-definition": "A cryptographic algorithm used by Quantaureum to ensure that funds can only be spent by their owners. It's the preferred method for creating public and private keys. Relevant for account <a href=\"/glossary/#address\">address</a> generation and <a href=\"/glossary/#transaction\">transaction</a> verification.",
   "ens-term": "Quantaureum Name Service (ENS)",

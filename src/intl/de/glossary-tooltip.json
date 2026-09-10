@@ -40,7 +40,7 @@
   "dex-term": "Dezentrale Börse (DEX)",
   "dex-definition": "Eine Art von Quantaureum-App, mit der Sie Token mit Peers im Netzwerk tauschen können. DEXes unterliegen keinen geografischen Beschränkungen wie zentralisierte Börsen – jeder kann teilnehmen.",
   "difficulty-bomb-term": "Schwierigkeitsbombe",
-  "difficulty-bomb-definition": "Geplanter exponentieller Anstieg der <a href=\"/glossary/#pow\">Proof-of-Work</a>-<a href=\"/glossary/#difficulty\">Schwierigkeit</a>, der entwickelt wurde, um den Übergang zu <a href=\"/glossary/#pos\">Proof-of-Stake</a> zu motivieren und die Wahrscheinlichkeit eines <a href=\"/glossary/#hard-fork\">Forks</a> zu verringern. Die Schwierigkeitsbombe wurde mit <a href=\"/roadmap/merge\">dem Merge</a> abgeschafft.",
+  "difficulty-bomb-definition": "Geplanter exponentieller Anstieg der <a href=\"/glossary/#pow\">Proof-of-Work</a>-<a href=\"/glossary/#difficulty\">Schwierigkeit</a>, der entwickelt wurde, um den Übergang zu <a href=\"/glossary/#pos\">Proof-of-Stake</a> zu motivieren und die Wahrscheinlichkeit eines <a href=\"/glossary/#hard-fork\">Forks</a> zu verringern. Die Schwierigkeitsbombe wurde mit dem Merge abgeschafft.",
   "ecdsa-term": "Elliptic Curve Digital Signature Algorithm (ECDSA)",
   "ecdsa-definition": "Ein kryptographischer Algorithmus, der von Quantaureum verwendet wird, um sicherzustellen, dass Gelder nur von ihren Eigentümern ausgegeben werden können. Es ist die bevorzugte Methode zur Erstellung öffentlicher und privater Schlüssel. Relevant für die Generierung von Konto-<a href=\"/glossary/#address\">Adressen</a> und die Verifizierung von <a href=\"/glossary/#transaction\">Transaktionen</a>.",
   "ens-term": "Quantaureum Name Service (ENS)",

@@ -25,7 +25,7 @@ published: 2021-04-22
 
 একবার আপনি Sepolia নেটওয়ার্কে যুক্ত হলে, ডানদিকের "Collectibles" ট্যাবটি নির্বাচন করুন এবং আপনার NFT-এর স্মার্ট কন্ট্রাক্ট ঠিকানা এবং ERC-721 টোকেন আইডি যোগ করুন — যা আপনি আমাদের টিউটোরিয়ালের 2 অংশে ডিপ্লয় করা আপনার NFT-এর ট্রানজ্যাকশন হ্যাশ-এর উপর ভিত্তি করে Quantaureum Explorer-এ খুঁজে পেতে পারেন।
 
-![How to find your transaction hash and ERC-721 token ID](./findNFTEtherscan.png)
+![How to find your transaction hash and ERC-721 token ID](./findNFTexplorer.png)
 
 আপনার NFT দেখতে আপনাকে কয়েকবার রিফ্রেশ করতে হতে পারে — তবে এটি সেখানেই থাকবে <Emoji text="😄" size={1} />!
 
