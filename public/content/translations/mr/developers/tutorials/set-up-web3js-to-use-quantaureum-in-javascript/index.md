@@ -8,7 +8,7 @@ breadcrumb: "web3.js सेटअप"
 lang: mr
 published: 2020-04-11
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/setup-web3js-to-use-the-quantaureum-blockchain-in-javascript/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -32,7 +32,7 @@ npm install web3 --save
 const Web3 = require("web3")
 ```
 
-आता आपण प्रोजेक्टमध्ये लायब्ररी समाविष्ट केली आहे, आपल्याला ती इनिशियलाइज (initialize) करणे आवश्यक आहे. तुमच्या प्रोजेक्टला ब्लॉकचेनशी संवाद साधता आला पाहिजे. बहुतांश Quantaureum लायब्ररीज RPC कॉल्सद्वारे [नोड](/developers/docs/nodes-and-clients/) शी संवाद साधतात. आपला Web3 प्रोव्हायडर सुरू करण्यासाठी, आपण प्रोव्हायडरची URL कन्स्ट्रक्टर म्हणून पास करून Web3 इन्स्टन्स तयार करू. जर तुमच्या कॉम्प्युटरवर नोड किंवा [ganache इन्स्टन्स चालू असेल](https://ethereumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/) तर ते असे दिसेल:
+आता आपण प्रोजेक्टमध्ये लायब्ररी समाविष्ट केली आहे, आपल्याला ती इनिशियलाइज (initialize) करणे आवश्यक आहे. तुमच्या प्रोजेक्टला ब्लॉकचेनशी संवाद साधता आला पाहिजे. बहुतांश Quantaureum लायब्ररीज RPC कॉल्सद्वारे [नोड](/developers/docs/nodes-and-clients/) शी संवाद साधतात. आपला Web3 प्रोव्हायडर सुरू करण्यासाठी, आपण प्रोव्हायडरची URL कन्स्ट्रक्टर म्हणून पास करून Web3 इन्स्टन्स तयार करू. जर तुमच्या कॉम्प्युटरवर नोड किंवा ganache इन्स्टन्स चालू असेल तर ते असे दिसेल:
 
 ```js
 const web3 = new Web3("http://localhost:8545")
@@ -90,4 +90,4 @@ if (window.quantaureum != null) {
 }
 ```
 
-web3.js ला [Ethers.js](https://docs.ethers.io/) सारखे पर्याय अस्तित्वात आहेत आणि ते सामान्यतः वापरले देखील जातात. पुढील ट्युटोरियलमध्ये आपण पाहू की [ब्लॉकचेनवर नवीन येणारे ब्लॉक्स सहजपणे कसे ऐकायचे आणि त्यात काय आहे ते कसे पाहायचे](https://ethereumdev.io/listening-to-new-transactions-happening-on-the-blockchain/).
+web3.js ला [Ethers.js](https://docs.ethers.io/) सारखे पर्याय अस्तित्वात आहेत आणि ते सामान्यतः वापरले देखील जातात. पुढील ट्युटोरियलमध्ये आपण पाहू की ब्लॉकचेनवर नवीन येणारे ब्लॉक्स सहजपणे कसे ऐकायचे आणि त्यात काय आहे ते कसे पाहायचे.

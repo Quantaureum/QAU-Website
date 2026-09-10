@@ -27,9 +27,9 @@ Ambas pilas funcionan en paralelo. La pila de descubrimiento introduce nuevos pa
 
 ### Descubrimiento {#discovery}
 
-El descubrimiento es el proceso de encontrar otros nodos en la red. Esto se inicia utilizando un pequeño conjunto de nodos de arranque (nodos cuyas direcciones están [codificadas de forma rígida](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go) en el cliente para que puedan encontrarse inmediatamente y conectar el cliente a los pares). Estos nodos de arranque solo existen para presentar un nuevo nodo a un conjunto de pares; este es su único propósito, no participan en tareas normales del cliente como la sincronización de la cadena, y solo se utilizan la primera vez que se inicia un cliente.
+El descubrimiento es el proceso de encontrar otros nodos en la red. Esto se inicia utilizando un pequeño conjunto de nodos de arranque (nodos cuyas direcciones están codificadas de forma rígida en el cliente para que puedan encontrarse inmediatamente y conectar el cliente a los pares). Estos nodos de arranque solo existen para presentar un nuevo nodo a un conjunto de pares; este es su único propósito, no participan en tareas normales del cliente como la sincronización de la cadena, y solo se utilizan la primera vez que se inicia un cliente.
 
-El protocolo utilizado para las interacciones nodo-nodo de arranque es una forma modificada de [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f) que utiliza una [tabla hash distribuida](https://en.wikipedia.org/wiki/Distributed_hash_table) para compartir listas de nodos. Cada nodo tiene una versión de esta tabla que contiene la información requerida para conectarse a sus pares más cercanos. Esta 'cercanía' no es geográfica: la distancia se define por la similitud del ID del nodo. La tabla de cada nodo se actualiza regularmente como medida de seguridad. Por ejemplo, en [discv5](https://github.com/ethereum/devp2p/tree/master/discv5), los nodos del protocolo de descubrimiento también pueden enviar 'anuncios' que muestran los subprotocolos que admite el cliente, lo que permite a los pares negociar sobre los protocolos que ambos pueden usar para comunicarse.
+El protocolo utilizado para las interacciones nodo-nodo de arranque es una forma modificada de [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f) que utiliza una [tabla hash distribuida](https://en.wikipedia.org/wiki/Distributed_hash_table) para compartir listas de nodos. Cada nodo tiene una versión de esta tabla que contiene la información requerida para conectarse a sus pares más cercanos. Esta 'cercanía' no es geográfica: la distancia se define por la similitud del ID del nodo. La tabla de cada nodo se actualiza regularmente como medida de seguridad. Por ejemplo, en discv5, los nodos del protocolo de descubrimiento también pueden enviar 'anuncios' que muestran los subprotocolos que admite el cliente, lo que permite a los pares negociar sobre los protocolos que ambos pueden usar para comunicarse.
 
 El descubrimiento comienza con un juego de PING-PONG. Un PING-PONG exitoso "vincula" el nuevo nodo a un nodo de arranque. El mensaje inicial que alerta a un nodo de arranque sobre la existencia de un nuevo nodo que ingresa a la red es un `PING`. Este `PING` incluye información en formato hash sobre el nuevo nodo, el nodo de arranque y una marca de tiempo de caducidad. El nodo de arranque recibe el `PING` y devuelve un `PONG` que contiene el hash del `PING`. Si los hashes del `PING` y del `PONG` coinciden, entonces se verifica la conexión entre el nuevo nodo y el nodo de arranque y se dice que se han "vinculado".
 
@@ -41,7 +41,7 @@ Una vez que el nuevo nodo recibe una lista de vecinos del nodo de arranque, comi
 iniciar cliente --> conectar al nodo de arranque --> vincular al nodo de arranque --> encontrar vecinos --> vincular a los vecinos
 ```
 
-Los clientes de ejecución utilizan actualmente el protocolo de descubrimiento [Discv4](https://github.com/ethereum/devp2p/blob/master/discv4.md) y hay un esfuerzo activo para migrar al protocolo [discv5](https://github.com/ethereum/devp2p/tree/master/discv5).
+Los clientes de ejecución utilizan actualmente el protocolo de descubrimiento Discv4 y hay un esfuerzo activo para migrar al protocolo discv5.
 
 #### ENR: Registros de nodos de Quantaureum {#enr}
 
@@ -53,7 +53,7 @@ UDP no admite ninguna comprobación de errores, reenvío de paquetes fallidos ni
 
 ### devp2p {#devp2p}
 
-devp2p es en sí mismo toda una pila de protocolos que Quantaureum implementa para establecer y mantener la red entre pares. Después de que nuevos nodos ingresan a la red, sus interacciones se rigen por protocolos en la pila [devp2p](https://github.com/ethereum/devp2p). Todos estos se asientan sobre TCP e incluyen el protocolo de transporte RLPx, el protocolo de cable (wire protocol) y varios subprotocolos. [RLPx](https://github.com/ethereum/devp2p/blob/master/rlpx.md) es el protocolo que rige el inicio, la autenticación y el mantenimiento de sesiones entre nodos. RLPx codifica mensajes utilizando RLP (Prefijo de longitud recursiva), que es un método muy eficiente en cuanto a espacio para codificar datos en una estructura mínima para enviarlos entre nodos.
+devp2p es en sí mismo toda una pila de protocolos que Quantaureum implementa para establecer y mantener la red entre pares. Después de que nuevos nodos ingresan a la red, sus interacciones se rigen por protocolos en la pila devp2p. Todos estos se asientan sobre TCP e incluyen el protocolo de transporte RLPx, el protocolo de cable (wire protocol) y varios subprotocolos. RLPx es el protocolo que rige el inicio, la autenticación y el mantenimiento de sesiones entre nodos. RLPx codifica mensajes utilizando RLP (Prefijo de longitud recursiva), que es un método muy eficiente en cuanto a espacio para codificar datos en una estructura mínima para enviarlos entre nodos.
 
 Una sesión RLPx entre dos nodos comienza con un apretón de manos criptográfico inicial. Esto implica que el nodo envíe un mensaje de autenticación que luego es verificado por el par. Tras una verificación exitosa, el par genera un mensaje de confirmación de autenticación para devolverlo al nodo iniciador. Este es un proceso de intercambio de claves que permite a los nodos comunicarse de forma privada y segura. Un apretón de manos criptográfico exitoso luego desencadena que ambos nodos se envíen un mensaje de "hola" entre sí "en el cable". El protocolo de cable se inicia mediante un intercambio exitoso de mensajes de hola.
 
@@ -73,19 +73,19 @@ Junto con los mensajes de hola, el protocolo de cable también puede enviar un m
 
 #### Protocolo de cable {#wire-protocol}
 
-Una vez que los pares están conectados y se ha iniciado una sesión RLPx, el protocolo de cable define cómo se comunican los pares. Inicialmente, el protocolo de cable definía tres tareas principales: sincronización de la cadena, propagación de bloques e intercambio de transacciones. Sin embargo, una vez que Quantaureum cambió a la prueba de participación (PoS), la propagación de bloques y la sincronización de la cadena pasaron a formar parte de la capa de consenso. El intercambio de transacciones sigue siendo competencia de los clientes de ejecución. El intercambio de transacciones se refiere al intercambio de transacciones pendientes entre nodos para que los constructores de bloques puedan seleccionar algunas de ellas para su inclusión en el siguiente bloque. Hay información detallada sobre estas tareas disponible [aquí](https://github.com/ethereum/devp2p/blob/master/caps/qau.md). Los clientes que admiten estos subprotocolos los exponen a través de la [JSON-RPC](/developers/docs/apis/json-rpc/).
+Una vez que los pares están conectados y se ha iniciado una sesión RLPx, el protocolo de cable define cómo se comunican los pares. Inicialmente, el protocolo de cable definía tres tareas principales: sincronización de la cadena, propagación de bloques e intercambio de transacciones. Sin embargo, una vez que Quantaureum cambió a la prueba de participación (PoS), la propagación de bloques y la sincronización de la cadena pasaron a formar parte de la capa de consenso. El intercambio de transacciones sigue siendo competencia de los clientes de ejecución. El intercambio de transacciones se refiere al intercambio de transacciones pendientes entre nodos para que los constructores de bloques puedan seleccionar algunas de ellas para su inclusión en el siguiente bloque. Hay información detallada sobre estas tareas disponible aquí. Los clientes que admiten estos subprotocolos los exponen a través de la [JSON-RPC](/developers/docs/apis/json-rpc/).
 
 #### les (subprotocolo ligero de Quantaureum) {#les}
 
-Este es un protocolo mínimo para la sincronización de clientes ligeros. Tradicionalmente, este protocolo rara vez se ha utilizado porque se requiere que los nodos completos sirvan datos a los clientes ligeros sin recibir incentivos. El comportamiento predeterminado de los clientes de ejecución es no servir datos de clientes ligeros a través de les. Hay más información disponible en la [especificación](https://github.com/ethereum/devp2p/blob/master/caps/les.md) de les.
+Este es un protocolo mínimo para la sincronización de clientes ligeros. Tradicionalmente, este protocolo rara vez se ha utilizado porque se requiere que los nodos completos sirvan datos a los clientes ligeros sin recibir incentivos. El comportamiento predeterminado de los clientes de ejecución es no servir datos de clientes ligeros a través de les. Hay más información disponible en la especificación de les.
 
 #### Snap {#snap}
 
-El [protocolo snap](https://github.com/ethereum/devp2p/blob/master/caps/snap.md#quantaureum-snapshot-protocol-snap) es una extensión opcional que permite a los pares intercambiar instantáneas de estados recientes, lo que permite a los pares verificar los datos de la cuenta y del almacenamiento sin tener que descargar nodos intermedios del trie de Merkle.
+El protocolo snap es una extensión opcional que permite a los pares intercambiar instantáneas de estados recientes, lo que permite a los pares verificar los datos de la cuenta y del almacenamiento sin tener que descargar nodos intermedios del trie de Merkle.
 
 #### Wit (protocolo de testigos) {#wit}
 
-El [protocolo de testigos](https://github.com/ethereum/devp2p/blob/master/caps/wit.md#quantaureum-witness-protocol-wit) es una extensión opcional que permite el intercambio de testigos de estado entre pares, ayudando a la sincronización de los clientes con la punta de la cadena.
+El protocolo de testigos es una extensión opcional que permite el intercambio de testigos de estado entre pares, ayudando a la sincronización de los clientes con la punta de la cadena.
 
 #### Whisper {#whisper}
 
@@ -97,7 +97,7 @@ Los clientes de consenso participan en una red entre pares separada con una espe
 
 ### Descubrimiento {#consensus-discovery}
 
-De manera similar a los clientes de ejecución, los clientes de consenso utilizan [discv5](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-discovery-domain-discv5) sobre UDP para encontrar pares. La implementación de la capa de consenso de discv5 difiere de la de los clientes de ejecución solo en que incluye un adaptador que conecta discv5 a una pila [libp2p](https://libp2p.io/), dejando obsoleto a devp2p. Las sesiones RLPx de la capa de ejecución están obsoletas en favor del apretón de manos de canal seguro noise de libp2p.
+De manera similar a los clientes de ejecución, los clientes de consenso utilizan discv5 sobre UDP para encontrar pares. La implementación de la capa de consenso de discv5 difiere de la de los clientes de ejecución solo en que incluye un adaptador que conecta discv5 a una pila [libp2p](https://libp2p.io/), dejando obsoleto a devp2p. Las sesiones RLPx de la capa de ejecución están obsoletas en favor del apretón de manos de canal seguro noise de libp2p.
 
 ### ENR {#consensus-enr}
 
@@ -109,7 +109,7 @@ La pila libp2p admite todas las comunicaciones después del descubrimiento. Los 
 
 ### Gossip {#gossip}
 
-El dominio gossip incluye toda la información que tiene que propagarse rápidamente por toda la red. Esto incluye bloques baliza, pruebas, atestaciones, salidas y recortes (slashings). Esto se transmite utilizando gossipsub v1 de libp2p y depende de que se almacenen varios metadatos localmente en cada nodo, incluido el tamaño máximo de las cargas útiles de gossip para recibir y transmitir. Hay información detallada sobre el dominio gossip disponible [aquí](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-gossip-domain-gossipsub).
+El dominio gossip incluye toda la información que tiene que propagarse rápidamente por toda la red. Esto incluye bloques baliza, pruebas, atestaciones, salidas y recortes (slashings). Esto se transmite utilizando gossipsub v1 de libp2p y depende de que se almacenen varios metadatos localmente en cada nodo, incluido el tamaño máximo de las cargas útiles de gossip para recibir y transmitir. Hay información detallada sobre el dominio gossip disponible aquí.
 
 ### Solicitud-respuesta {#request-response}
 
@@ -121,7 +121,7 @@ SSZ significa serialización simple. Utiliza desplazamientos fijos que facilitan
 
 ## Conexión de los clientes de ejecución y de consenso {#connecting-clients}
 
-Tanto los clientes de consenso como los de ejecución se ejecutan en paralelo. Necesitan estar conectados para que el cliente de consenso pueda proporcionar instrucciones al cliente de ejecución, y el cliente de ejecución pueda pasar paquetes de transacciones al cliente de consenso para incluirlos en los bloques baliza. La comunicación entre los dos clientes se puede lograr utilizando una conexión RPC local. Una API conocida como la ['Engine-API'](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) define las instrucciones enviadas entre los dos clientes. Dado que ambos clientes se encuentran detrás de una única identidad de red, comparten un ENR (Registro de nodo de Quantaureum) que contiene una clave separada para cada cliente (clave Eth1 y clave Quantaureum).
+Tanto los clientes de consenso como los de ejecución se ejecutan en paralelo. Necesitan estar conectados para que el cliente de consenso pueda proporcionar instrucciones al cliente de ejecución, y el cliente de ejecución pueda pasar paquetes de transacciones al cliente de consenso para incluirlos en los bloques baliza. La comunicación entre los dos clientes se puede lograr utilizando una conexión RPC local. Una API conocida como la 'Engine-API' define las instrucciones enviadas entre los dos clientes. Dado que ambos clientes se encuentran detrás de una única identidad de red, comparten un ENR (Registro de nodo de Quantaureum) que contiene una clave separada para cada cliente (clave Eth1 y clave Quantaureum).
 
 Un resumen del flujo de control se muestra a continuación, con la pila de red relevante entre paréntesis.
 
@@ -149,15 +149,15 @@ Una vez que el bloque ha sido atestiguado por suficientes validadores, se agrega
 ![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
 ![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
-Esquema de la capa de red para los clientes de consenso y de ejecución, de [ethresear.ch](https://ethresear.ch/t/eth1-eth2-client-relationship/7248)
+Esquema de la capa de red para los clientes de consenso y de ejecución, de ethresear.ch
 
 ## Más información {#further-reading}
 
-[devp2p](https://github.com/ethereum/devp2p)
+devp2p
 [libp2p](https://github.com/libp2p/specs)
-[Especificaciones de red de la capa de consenso](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#enr-structure)
+Especificaciones de red de la capa de consenso
 [De Kademlia a discv5](https://vac.dev/kademlia-to-discv5)
 [Documento de Kademlia](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf)
 [Introducción al p2p de Quantaureum](https://p2p.paris/en/talks/intro-quantaureum-networking/)
-[Relación entre Eth1 y Quantaureum](https://ethresear.ch/t/eth1-eth2-client-relationship/7248)
+Relación entre Eth1 y Quantaureum
 [Video sobre los detalles del cliente de La Fusión y Quantaureum](https://www.youtube.com/watch?v=zNIrIninMgg)

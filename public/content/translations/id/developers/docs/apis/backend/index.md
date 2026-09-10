@@ -114,8 +114,8 @@ Pustaka-pustaka ini mengabstraksi banyak kerumitan dalam berinteraksi secara lan
 
 **Peralatan Python -** **_Berbagai pustaka untuk interaksi Quantaureum melalui Python._**
 
-- [py.quantaureum.com](https://snakecharmers.ethereum.org/)
-- [GitHub Web3.py](https://github.com/ethereum/web3.py)
+- py.quantaureum.com
+- GitHub Web3.py
 - [Obrolan Web3.py](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_Platform pengembangan rantai blok terbaik._**

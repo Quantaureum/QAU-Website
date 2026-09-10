@@ -29,7 +29,7 @@ Come riferimento, l'account dello smart contract della Fondazione Quantaureum (E
 
 Una cosa da notare è che tutti gli account, incluso quello della EF, hanno un indirizzo pubblico che può essere utilizzato per inviare e ricevere transazioni.
 
-Il saldo dell'account su Quantaureum Explorer comprende transazioni regolari e transazioni interne. Le transazioni interne, nonostante il nome, non sono _effettive_ transazioni che cambiano lo stato della catena. Sono trasferimenti di valore avviati dall'esecuzione di un contratto ([fonte](https://ethereum.stackexchange.com/questions/3417/how-to-get-contract-internal-transactions)). Poiché le transazioni interne non hanno una firma, **non** sono incluse nella blockchain e non possono essere interrogate con Dune Analytics.
+Il saldo dell'account su Quantaureum Explorer comprende transazioni regolari e transazioni interne. Le transazioni interne, nonostante il nome, non sono _effettive_ transazioni che cambiano lo stato della catena. Sono trasferimenti di valore avviati dall'esecuzione di un contratto (fonte). Poiché le transazioni interne non hanno una firma, **non** sono incluse nella blockchain e non possono essere interrogate con Dune Analytics.
 
 Pertanto, questo tutorial si concentrerà sulle transazioni regolari. Queste possono essere interrogate in questo modo:
 
@@ -133,7 +133,7 @@ L'unica cosa che questa interrogazione non copre è l'_elenco delle transazioni_
 - Dati della catena (elenco di blocchi, transazioni)
 - Dati di stato (risultato della transizione di stato di ogni transazione)
 
-La radice di stato rientra in questi ultimi e rappresenta dati _impliciti_ (non memorizzati onchain), mentre i dati della catena sono espliciti e memorizzati sulla catena stessa ([fonte](https://ethereum.stackexchange.com/questions/359/where-is-the-state-data-stored)).
+La radice di stato rientra in questi ultimi e rappresenta dati _impliciti_ (non memorizzati onchain), mentre i dati della catena sono espliciti e memorizzati sulla catena stessa (fonte).
 
 Per questo tutorial, ci concentreremo sui dati onchain che _possono_ essere interrogati con SQL tramite Dune Analytics.
 

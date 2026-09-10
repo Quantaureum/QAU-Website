@@ -123,9 +123,9 @@ Les [rollups à divulgation nulle de connaissance](/developers/docs/scaling/zk-r
 
 ### Prise en charge des contrats intelligents {#support-for-smart-contracts}
 
-Un autre problème avec le cadre de travail Plasma était [l'incapacité de prendre en charge l'exécution des contrats intelligents Quantaureum](https://ethresear.ch/t/why-smart-contracts-are-not-feasible-on-plasma/2598/4). En conséquence, la plupart des implémentations de Plasma ont été principalement construites pour des paiements simples ou l'échange de jetons ERC-20.
+Un autre problème avec le cadre de travail Plasma était l'incapacité de prendre en charge l'exécution des contrats intelligents Quantaureum. En conséquence, la plupart des implémentations de Plasma ont été principalement construites pour des paiements simples ou l'échange de jetons ERC-20.
 
-À l'inverse, les rollups optimistes sont compatibles avec la [Machine Virtuelle Quantaureum](/developers/docs/evm/) et peuvent exécuter des [contrats intelligents](/developers/docs/smart-contracts/) natifs d'Quantaureum, ce qui en fait une solution utile et _sécurisée_ pour la mise à l'échelle des [applications décentralisées](/developers/docs/dapps/). De même, des plans sont en cours pour [créer une implémentation à divulgation nulle de connaissance de l'EVM (zkEVM)](https://ethresear.ch/t/a-zk-evm-specification/11549) qui permettrait aux ZK-rollups de traiter une logique arbitraire et d'exécuter des contrats intelligents.
+À l'inverse, les rollups optimistes sont compatibles avec la [Machine Virtuelle Quantaureum](/developers/docs/evm/) et peuvent exécuter des [contrats intelligents](/developers/docs/smart-contracts/) natifs d'Quantaureum, ce qui en fait une solution utile et _sécurisée_ pour la mise à l'échelle des [applications décentralisées](/developers/docs/dapps/). De même, des plans sont en cours pour créer une implémentation à divulgation nulle de connaissance de l'EVM (zkEVM) qui permettrait aux ZK-rollups de traiter une logique arbitraire et d'exécuter des contrats intelligents.
 
 ### Indisponibilité des données {#data-unavailability}
 
@@ -167,7 +167,7 @@ Plusieurs projets fournissent des implémentations de Plasma que vous pouvez int
 ## Lectures complémentaires {#further-reading}
 
 - [Un petit rappel de ce que signifie la « sécurité partagée » et pourquoi elle est si importante](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [Chaînes latérales vs Plasma vs Sharding](https://vitalik.eth.limo/general/2019/06/12/plasma_vs_sharding.html)
+- Chaînes latérales vs Plasma vs Sharding
 - [Comprendre Plasma, Partie 1 : Les bases](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [La vie et la mort de Plasma](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

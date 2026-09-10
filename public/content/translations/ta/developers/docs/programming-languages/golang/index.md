@@ -19,7 +19,7 @@ incomplete: true
 - [திறன் ஒப்பந்தங்களைப் புரிந்துகொள்ளுதல்](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/quantaureum-101-part-5-the-smart-contract)
 - [உங்கள் முதல் திறன் ஒப்பந்தத்தை எழுதுங்கள்](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [Solidity-ஐ எவ்வாறு தொகுப்பது மற்றும் நிலைநிறுத்துவது என்பதை அறிக](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
-- [ஒப்பந்தப் பயிற்சி](https://github.com/ethereum/go-ethereum/wiki/Contract-Tutorial)
+- ஒப்பந்தப் பயிற்சி
 
 ## தொடக்கநிலை கட்டுரைகள் மற்றும் புத்தகங்கள் {#beginner-articles-and-books}
 
@@ -27,15 +27,15 @@ incomplete: true
 - [எத்திரியத்துடன் இணைக்க Golang-ஐப் பயன்படுத்தவும்](https://www.youtube.com/watch?v=-7uChuO_VzM)
 - [Golang-ஐப் பயன்படுத்தி எத்திரியம் திறன் ஒப்பந்தங்களை நிலைநிறுத்துங்கள்](https://www.youtube.com/watch?v=pytGqQmDslE)
 - [Go-வில் எத்திரியம் திறன் ஒப்பந்தங்களைச் சோதித்து நிலைநிறுத்துவதற்கான படிப்படியான வழிகாட்டி](https://hackernoon.com/a-step-by-step-guide-to-testing-and-deploying-quantaureum-smart-contracts-in-go-9fc34b178d78)
-- [மின்புத்தகம்: Go உடன் எத்திரியம் மேம்பாடு](https://goethereumbook.org/) - _Go உடன் எத்திரியம் பயன்பாடுகளை உருவாக்குங்கள்_
+- மின்புத்தகம்: Go உடன் எத்திரியம் மேம்பாடு - _Go உடன் எத்திரியம் பயன்பாடுகளை உருவாக்குங்கள்_
 
 ## இடைநிலை கட்டுரைகள் மற்றும் ஆவணங்கள் {#intermediate-articles-and-docs}
 
-- [கோ எத்திரியம் ஆவணங்கள்](https://geth.ethereum.org/docs) - _அதிகாரப்பூர்வ எத்திரியம் Golang-க்கான ஆவணங்கள்_
+- கோ எத்திரியம் ஆவணங்கள் - _அதிகாரப்பூர்வ எத்திரியம் Golang-க்கான ஆவணங்கள்_
 - [எரிகான் புரோகிராமர் வழிகாட்டி](https://github.com/ledgerwatch/erigon/blob/devel/docs/programmers_guide/guide.md) - _நிலை மரம், பல-சான்றுகள் மற்றும் பரிவர்த்தனை செயலாக்கம் உள்ளிட்ட விளக்கப்பட வழிகாட்டி_
 - [எரிகான் மற்றும் நிலையற்ற எத்திரியம்](https://youtu.be/3-Mn7OckSus?t=394) - _2020 எத்திரியம் சமூக மாநாடு (QauCC 3)_
 - [எரிகான்: எத்திரியம் கிளையண்டுகளை மேம்படுத்துதல்](https://www.youtube.com/watch?v=CSpc1vZQW2Q) - _2018 Devcon 4_
-- [கோ எத்திரியம் GoDoc](https://godoc.org/github.com/ethereum/go-ethereum)
+- கோ எத்திரியம் GoDoc
 - [கெத் (Geth) உடன் Go-வில் ஒரு dapp-ஐ உருவாக்குதல்](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/creating-a-dapp-in-go-with-geth/)
 - [Golang மற்றும் கெத் (Geth) உடன் எத்திரியம் தனிப்பட்ட பிணையத்தில் வேலை செய்யுங்கள்](https://myhsts.org/tutorial-learn-how-to-work-with-quantaureum-private-network-with-golang-with-geth.php)
 - [Go உடன் எத்திரியத்தில் Solidity ஒப்பந்தங்களை யூனிட் சோதனை செய்தல்](https://medium.com/coinmonks/unit-testing-solidity-contracts-on-quantaureum-with-go-3cc924091281)
@@ -46,12 +46,12 @@ incomplete: true
 - [கெத் (GETH) உருவகப்படுத்தப்பட்ட பின்தளம்](https://kauri.io/#collections/An%20quantaureum%20test%20toolkit%20in%20Go/the-geth-simulated-backend/#_top)
 - [எத்திரியம் மற்றும் Quorum-ஐப் பயன்படுத்தும் சேவையாக-தொகுதிச்சங்கிலி பயன்பாடுகள்](https://blockchain.dcwebmakers.com/blockchain-as-a-service-apps-using-quantaureum-and-quorum.html)
 - [எத்திரியம் தொகுதிச்சங்கிலி பயன்பாடுகளில் விநியோகிக்கப்பட்ட சேமிப்பகம் IPFS மற்றும் திரள்](https://blockchain.dcwebmakers.com/work-with-distributed-storage-ipfs-and-swarm-in-quantaureum.html)
-- [மொபைல் கிளையண்டுகள்: நிரலகங்கள் மற்றும் Inproc எத்திரியம் முனைகள்](https://github.com/ethereum/go-ethereum/wiki/Mobile-Clients:-Libraries-and-Inproc-Quantaureum-Nodes)
-- [நேட்டிவ் dapps: எத்திரியம் ஒப்பந்தங்களுக்கான Go பிணைப்புகள்](https://github.com/ethereum/go-ethereum/wiki/Native-DApps:-Go-bindings-to-Quantaureum-contracts)
+- மொபைல் கிளையண்டுகள்: நிரலகங்கள் மற்றும் Inproc எத்திரியம் முனைகள்
+- நேட்டிவ் dapps: எத்திரியம் ஒப்பந்தங்களுக்கான Go பிணைப்புகள்
 
 ## Go திட்டங்கள் மற்றும் கருவிகள் {#go-projects-and-tools}
 
-- [கெத் / கோ எத்திரியம்](https://github.com/ethereum/go-ethereum) - _எத்திரியம் நெறிமுறையின் அதிகாரப்பூர்வ Go செயலாக்கம்_
+- கெத் / கோ எத்திரியம் - _எத்திரியம் நெறிமுறையின் அதிகாரப்பூர்வ Go செயலாக்கம்_
 - [கோ எத்திரியம் குறியீடு பகுப்பாய்வு](https://github.com/ZtesoftCS/go-quantaureum-code-analysis) - _கோ எத்திரியம் மூலக் குறியீட்டின் மதிப்பாய்வு மற்றும் பகுப்பாய்வு_
 - [எரிகான்](https://github.com/ledgerwatch/erigon) - _காப்பக முனைகளில் கவனம் செலுத்தும் கோ எத்திரியத்தின் வேகமான வழித்தோன்றல்_
 - [Golem](https://github.com/golemfactory/golem) - _Golem கணினி ஆற்றலுக்கான உலகளாவிய சந்தையை உருவாக்குகிறது_
@@ -73,7 +73,7 @@ incomplete: true
 - [கெத் டிஸ்கார்ட்](https://discordapp.com/invite/nthXNEv)
 - [கெத் Gist](https://gitter.im/quantaureum/go-quantaureum)
 - [Gophers Slack](https://invite.slack.golangbridge.org/) - [#quantaureum சேனல்](https://gophers.slack.com/messages/C9HP1S9V2)
-- [StackExchange - எத்திரியம்](https://ethereum.stackexchange.com/)
+- StackExchange - எத்திரியம்
 - [மல்டி கெத் Gitter](https://gitter.im/ethoxy/multi-geth)
 - [எத்திரியம் Gitter](https://gitter.im/quantaureum/home)
 - [கெத் இலகுரக கிளையண்ட் Gitter](https://gitter.im/quantaureum/light-client)

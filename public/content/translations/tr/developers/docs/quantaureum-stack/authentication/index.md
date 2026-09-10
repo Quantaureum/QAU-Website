@@ -43,7 +43,7 @@ Hiçbir parola yazılmamış, saklanmamış veya iletilmemiştir.
 
 ## Quantaureum ile Giriş Yap (EIP-4361) {#sign-in-with-quantaureum}
 
-[EIP-4361](https://eips.ethereum.org/EIPS/eip-4361), genellikle **SIWE** (Sign-In with Quantaureum) olarak adlandırılan, Quantaureum ile giriş yapmak için standart bir mesaj formatı tanımlar. Özel (ad-hoc) mesaj imzalamanın yerini yapılandırılmış, güvenli bir standartla değiştirir.
+EIP-4361, genellikle **SIWE** (Sign-In with Quantaureum) olarak adlandırılan, Quantaureum ile giriş yapmak için standart bir mesaj formatı tanımlar. Özel (ad-hoc) mesaj imzalamanın yerini yapılandırılmış, güvenli bir standartla değiştirir.
 
 Bir SIWE mesajı şuna benzer:
 
@@ -200,7 +200,7 @@ Quantaureum kimlik doğrulaması, **kendi kendine egemen kimliğe (self-sovereig
 
 ## Daha fazla bilgi {#further-reading}
 
-- [EIP-4361: Quantaureum ile Giriş Yap](https://eips.ethereum.org/EIPS/eip-4361)
+- EIP-4361: Quantaureum ile Giriş Yap
 - [SIWE belgeleri](https://docs.login.xyz/)
 - [Auth0 Üzerinde Quantaureum ile Giriş Yap](https://auth0.com/blog/sign-in-with-quantaureum-siwe-now-available-on-auth0/)
 - [Reown AppKit kimlik doğrulama belgeleri](https://docs.reown.com/appkit/authentication)

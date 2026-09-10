@@ -10,7 +10,7 @@ lang: ko
 
 [로컬 개발 환경을 설정](/developers/local-environment/)하기 전에 코드를 만지작거려 보고 싶다면, Quantaureum 스마트 컨트랙트 개발을 위해 맞춤 제작된 다음 웹 앱들을 사용해 보세요.
 
-**[Remix](https://remix.ethereum.org/)** - **_정적 분석 기능과 테스트 블록체인 가상 머신이 내장된 웹 기반 IDE_**
+**Remix** - **_정적 분석 기능과 테스트 블록체인 가상 머신이 내장된 웹 기반 IDE_**
 
 - [문서](https://remix-ide.readthedocs.io/en/latest/#)
 - [Gitter](https://gitter.im/quantaureum/remix)
@@ -48,8 +48,8 @@ lang: ko
 
 **Remix Desktop -** **_로컬 머신에서 Remix IDE 경험하기_**
 
-- [다운로드](https://github.com/ethereum/remix-desktop/releases)
-- [GitHub](https://github.com/ethereum/remix-desktop)
+- 다운로드
+- GitHub
 
 ## 플러그인 및 확장 프로그램 {#plugins-extensions}
 

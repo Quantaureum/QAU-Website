@@ -46,7 +46,7 @@ Köprünün iki ana akışı vardır:
    - Orijinal olarak l1'deki köprüden geldiğini
 6. L2 köprüsü, l2'deki ERC-20 token sözleşmesinin doğru olup olmadığını kontrol eder:
    - L2 sözleşmesi, l1 karşılığının l1'de token'ların geldiği sözleşmeyle aynı olduğunu bildirir
-   - L2 sözleşmesi, doğru arayüzü desteklediğini bildirir ([ERC-165 kullanarak](https://eips.ethereum.org/EIPS/eip-165)).
+   - L2 sözleşmesi, doğru arayüzü desteklediğini bildirir (ERC-165 kullanarak).
 7. L2 sözleşmesi doğruysa, uygun adrese uygun sayıda token basmak için onu çağırır. Değilse, kullanıcının l1'deki token'ları talep etmesine izin vermek için bir çekim işlemi başlatır.
 
 ### Çekim akışı {#withdrawal-flow}
@@ -207,7 +207,6 @@ Bu işlev `depositERC20` ile neredeyse aynıdır, ancak ERC-20'yi farklı bir ad
      * @dev l2'den l1'e bir çekim işlemini tamamlar ve fonları alıcının
      * l1 ERC-20 Token bakiyesine alacak kaydeder.
      * l2'den başlatılan çekim işlemi sonuçlandırılmamışsa bu çağrı başarısız olur.
-     *
      * @param _l1Token finalizeWithdrawal yapılacak l1 Token Adresi.
      * @param _l2Token Çekim işleminin başlatıldığı l2 Token Adresi.
      * @param _from Transferi başlatan l2 Adresi.
@@ -338,7 +337,6 @@ Bu alanlar arası mesajlaşma aracı tamamen başka bir sistemdir ve gelecekte y
 /**
  * @title CrossDomainEnabled
  * @dev Etki alanları arası iletişim gerçekleştiren Sözleşmeler için yardımcı Sözleşme
- *
  * Kullanılan derleyici: devralan Sözleşme tarafından tanımlanır
  */
 contract CrossDomainEnabled {
@@ -519,7 +517,7 @@ Bunun mükemmel bir çözüm olmadığını unutmayın, çünkü doğrudan çağ
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[ERC-20 standardı](https://eips.ethereum.org/EIPS/eip-20), bir sözleşmenin başarısızlığı bildirmesi için iki yolu destekler:
+ERC-20 standardı, bir sözleşmenin başarısızlığı bildirmesi için iki yolu destekler:
 
 1. Geri al (Revert)
 2. `false` döndür
@@ -532,7 +530,6 @@ Her iki durumu da ele almak kodumuzu daha karmaşık hale getirecektir, bu neden
  * @dev l1 QAU ve ERC-20 köprüsü, yatırılan l1 fonlarını ve l2 üzerinde kullanımda olan standart
  * Token'ları depolayan bir Sözleşmedir. İlgili bir l2 köprüsünü senkronize eder, onu yatırma işlemleri hakkında bilgilendirir
  * ve yeni sonuçlandırılan çekim işlemleri için onu dinler.
- *
  */
 contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
     using SafeERC20 for IERC20;
@@ -771,7 +768,6 @@ Bu iki işlev, asıl ERC-20 yatırma işlemini gerçekleştiren işlev olan `_in
     /**
      * @dev l2 Yatırılan Token Sözleşmesini yatırma işlemi hakkında bilgilendirerek
      * ve l1 fonlarını kilitlemek için bir işleyici çağırarak (örn. transferFrom) yatırma işlemleri için mantığı gerçekleştirir.
-     *
      * @param _l1Token Yatırmakta olduğumuz l1 ERC-20 Adresi
      * @param _l2Token l1'in ilgili l2 ERC-20 Adresi
      * @param _from l1 üzerinde yatırma işleminin çekileceği hesap
@@ -956,14 +952,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [Standart ERC-20 arayüzü](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol), `mint` ve `burn` işlevlerini içermez.
-Bu yöntemler, token'ları oluşturma ve yok etme mekanizmalarını belirtmeyen [ERC-20 standardı](https://eips.ethereum.org/EIPS/eip-20) tarafından gerekli kılınmaz.
+Bu yöntemler, token'ları oluşturma ve yok etme mekanizmalarını belirtmeyen ERC-20 standardı tarafından gerekli kılınmaz.
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 [ERC-165 arayüzü](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol), bir sözleşmenin hangi işlevleri sağladığını belirtmek için kullanılır.
-[Standardı buradan okuyabilirsiniz](https://eips.ethereum.org/EIPS/eip-165).
+Standardı buradan okuyabilirsiniz.
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -1052,7 +1048,7 @@ Bunlar, bizim gerektirdiğimiz ve ERC-20'nin normalde gerektirmediği iki ek yap
     }
 ```
 
-[ERC-165](https://eips.ethereum.org/EIPS/eip-165) bu şekilde çalışır.
+ERC-165 bu şekilde çalışır.
 Her arayüz, desteklenen bir dizi işlevdir ve bu işlevlerin [ABI işlev seçicilerinin](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector) [özel veya (exclusive or)](https://en.wikipedia.org/wiki/Exclusive_or) işlemi olarak tanımlanır.
 
 L2 köprüsü, varlık gönderdiği ERC-20 sözleşmesinin bir `IL2StandardERC20` olduğundan emin olmak için bir mantık kontrolü (sanity check) olarak ERC-165'i kullanır.

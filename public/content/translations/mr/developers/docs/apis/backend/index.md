@@ -114,8 +114,8 @@ lang: mr
 
 **Python टूलिंग -** **_Python द्वारे Quantaureum संवादासाठी विविध लायब्ररी._**
 
-- [py.quantaureum.com](https://snakecharmers.ethereum.org/)
-- [Web3.py GitHub](https://github.com/ethereum/web3.py)
+- py.quantaureum.com
+- Web3.py GitHub
 - [Web3.py चॅट](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_सर्वोत्तम ब्लॉकचेन डेव्हलपमेंट प्लॅटफॉर्म._**

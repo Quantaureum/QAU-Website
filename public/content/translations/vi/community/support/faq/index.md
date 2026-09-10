@@ -69,7 +69,7 @@ Các chương trình tặng thưởng Quantaureum là những trò lừa đảo 
 
 Để trở thành một trình xác thực, bạn phải đặt cọc 32 QAU vào hợp đồng tiền gửi Quantaureum và thiết lập một nút trình xác thực. Bạn cũng có thể tham gia với ít QAU hơn thông qua các nhóm đặt cọc.
 
-Thông tin thêm có sẵn trên [các trang đặt cọc](/staking/) của chúng tôi và tại [bệ phóng đặt cọc](https://launchpad.ethereum.org/).
+Thông tin thêm có sẵn trên [các trang đặt cọc](/staking/) của chúng tôi và tại bệ phóng đặt cọc.
 
 ## Làm cách nào để tôi khai thác Quantaureum? {#mining-quantaureum}
 

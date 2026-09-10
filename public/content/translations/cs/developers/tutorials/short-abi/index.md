@@ -65,9 +65,9 @@ Data volání jsou rozdělena takto:
 Vysvětlení:
 
 - **Selektor funkce**: Kontrakt má méně než 256 funkcí, takže je můžeme rozlišit jediným bajtem.
-  Tyto bajty jsou obvykle nenulové, a proto [stojí šestnáct gas](https://eips.ethereum.org/EIPS/eip-2028).
+  Tyto bajty jsou obvykle nenulové, a proto stojí šestnáct gas.
 - **Nuly**: Tyto bajty jsou vždy nulové, protože dvacetibajtová adresa nevyžaduje k uložení dvaatřicetibajtové slovo.
-  Bajty, které obsahují nulu, stojí čtyři gas ([viz yellow paper](https://ethereum.github.io/yellowpaper/paper.pdf), dodatek G,
+  Bajty, které obsahují nulu, stojí čtyři gas (viz yellow paper, dodatek G,
   str. 27, hodnota pro `G`<sub>`txdatazero`</sub>).
 - **Částka**: Pokud budeme předpokládat, že v tomto kontraktu je `decimals` osmnáct (běžná hodnota) a maximální množství tokenů, které převedeme, bude 10<sup>18</sup>, dostaneme maximální částku 10<sup>36</sup>.
   256<sup>15</sup> &gt; 10<sup>36</sup>, takže patnáct bajtů stačí.
@@ -201,7 +201,7 @@ Existují dva důvody, proč by zde funkce nebyla dostupná:
 2. Funkce, které spoléhají na [`msg.sender`](https://docs.soliditylang.org/en/v0.8.12/units-and-global-variables.html#block-and-transaction-properties).
    Hodnota `msg.sender` bude adresa `CalldataInterpreter`, nikoli volajícího.
 
-Bohužel, [při pohledu na specifikace ERC-20](https://eips.ethereum.org/EIPS/eip-20) nám zbývá pouze jedna funkce, `transfer`.
+Bohužel, při pohledu na specifikace ERC-20 nám zbývá pouze jedna funkce, `transfer`.
 To nám ponechává pouze dvě funkce: `transfer` (protože můžeme zavolat `transferFrom`) a `faucet` (protože můžeme převést tokeny zpět tomu, kdo nás zavolal).
 
 ```solidity

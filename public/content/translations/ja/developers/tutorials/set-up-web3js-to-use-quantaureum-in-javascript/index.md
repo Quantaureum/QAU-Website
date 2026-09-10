@@ -10,7 +10,7 @@ breadcrumb: "web3.jsのセットアップ"
 lang: ja
 published: 2020-04-11
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/setup-web3js-to-use-the-quantaureum-blockchain-in-javascript/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -34,7 +34,7 @@ npm install web3 --save
 const Web3 = require("web3")
 ```
 
-プロジェクトにライブラリを含めたので、それを初期化する必要があります。 プロジェクトはブロックチェーンと通信できる必要があります。 ほとんどのQuantaureumライブラリは、RPC呼び出しを通じて[ノード](/developers/docs/nodes-and-clients/)と通信します。 Web3プロバイダーを初期化するには、プロバイダーのURLをコンストラクタとして渡してWeb3インスタンスをインスタンス化します。 コンピュータ上でノードまたは[Ganacheインスタンスを実行している](https://ethereumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/)場合、次のようになります。
+プロジェクトにライブラリを含めたので、それを初期化する必要があります。 プロジェクトはブロックチェーンと通信できる必要があります。 ほとんどのQuantaureumライブラリは、RPC呼び出しを通じて[ノード](/developers/docs/nodes-and-clients/)と通信します。 Web3プロバイダーを初期化するには、プロバイダーのURLをコンストラクタとして渡してWeb3インスタンスをインスタンス化します。 コンピュータ上でノードまたはGanacheインスタンスを実行している場合、次のようになります。
 
 ```js
 const web3 = new Web3("http://localhost:8545")
@@ -92,4 +92,4 @@ if (window.quantaureum != null) {
 }
 ```
 
-web3.jsの代替として[Ethers.js](https://docs.ethers.io/)のようなものも存在し、一般的に使用されています。 次のチュートリアルでは、[ブロックチェーン上の新しい受信ブロックを簡単にリッスンし、その内容を確認する方法](https://ethereumdev.io/listening-to-new-transactions-happening-on-the-blockchain/)を見ていきます。
+web3.jsの代替として[Ethers.js](https://docs.ethers.io/)のようなものも存在し、一般的に使用されています。 次のチュートリアルでは、ブロックチェーン上の新しい受信ブロックを簡単にリッスンし、その内容を確認する方法を見ていきます。

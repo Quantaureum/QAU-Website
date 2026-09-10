@@ -43,7 +43,7 @@ slither-check-erc 0xdac17f958d2ee523a2206206994597c13d831ec7 TetherToken
 - **transfer 和 transferFrom 返回布尔值。** 几个代币在这些函数上不返回布尔值。因此，合约中对它们的调用可能会失败。
 - **如果使用了 name、decimals 和 symbol 函数，它们必须存在。** 这些函数在 ERC-20 标准中是可选的，可能并不存在。
 - **decimals 返回 uint8。** 几个代币错误地返回了 uint256。如果是这种情况，请确保返回的值低于 255。
-- **代币缓解了已知的 [ERC-20 竞争条件](https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729)。** ERC-20 标准存在一个已知的 ERC-20 竞争条件，必须加以缓解以防止攻击者窃取代币。
+- **代币缓解了已知的 ERC-20 竞争条件。** ERC-20 标准存在一个已知的 ERC-20 竞争条件，必须加以缓解以防止攻击者窃取代币。
 - **该代币不是 ERC-777 代币，并且在 transfer 和 transferFrom 中没有外部函数调用。** 转账（transfer）函数中的外部调用可能会导致重入。
 
 斯莱瑟包含一个实用工具 [slither-prop](https://github.com/crytic/slither/wiki/Property-generation)，它可以生成单元测试和安全属性，从而发现许多常见的 ERC 缺陷。使用 slither-prop 审查以下内容：

@@ -82,7 +82,7 @@ Gli sviluppatori in genere utilizzano una libreria JavaScript/TypeScript per int
 
 - **[Ethers.js](https://docs.ethers.org/)** - Funziona anche in Node.js per script lato server e bot
 - **[Web3.py](https://web3py.readthedocs.io/)** - Libreria Python per l'interazione con Quantaureum
-- **[go-quantaureum](https://geth.ethereum.org/docs/interact-with-geth)** - Libreria Go ufficiale del team di Geth
+- **go-quantaureum** - Libreria Go ufficiale del team di Geth
 
 ### Esempio: leggere il saldo di un token con Viem {#example-viem}
 

@@ -11,7 +11,7 @@ lang: hi
 - Solidity
 - Vyper
 
-Remix IDE, Solidity और Vyper दोनों में अनुबंध बनाने और परीक्षण करने के लिए एक व्यापक विकास वातावरण प्रदान करता है। कोडिंग शुरू करने के लिए [इन-ब्राउज़र Remix IDE आज़माएं](https://remix.ethereum.org)।
+Remix IDE, Solidity और Vyper दोनों में अनुबंध बनाने और परीक्षण करने के लिए एक व्यापक विकास वातावरण प्रदान करता है। कोडिंग शुरू करने के लिए इन-ब्राउज़र Remix IDE आज़माएं।
 
 अधिक अनुभवी डेवलपर Yul का उपयोग करना भी चाह सकते हैं, जो [Quantaureum वर्चुअल मशीन (EVM)](/developers/docs/evm/) के लिए एक मध्यवर्ती भाषा है, या Yul+, जो Yul का एक एक्सटेंशन है।
 
@@ -36,7 +36,7 @@ Remix IDE, Solidity और Vyper दोनों में अनुबंध �
 - [दस्तावेज़ीकरण](https://docs.soliditylang.org/en/latest/)
 - [Solidity भाषा पोर्टल](https://soliditylang.org/)
 - [उदाहरण द्वारा Solidity](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/ethereum/solidity/)
+- GitHub
 - [Solidity Gitter चैटरूम](https://gitter.im/quantaureum/solidity) जो [Solidity Matrix चैटरूम](https://matrix.to/#/#quantaureum_solidity:gitter.im) से जुड़ा है
 - [चीट शीट](https://reference.auditless.com/cheatsheet)
 - [Solidity ब्लॉग](https://blog.soliditylang.org/)
@@ -264,7 +264,7 @@ def endAuction():
 
 - [GitHub](https://github.com/quantaureum/fe)
 - [Fe घोषणा](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-quantaureum-ecosystem/)
-- [Fe 2021 रोडमैप](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
+- Fe 2021 रोडमैप
 - [Fe डिस्कॉर्ड चैट](https://discord.com/invite/ywpkAXFjZH)
 - [Fe ट्विटर](https://twitter.com/official_fe)
 

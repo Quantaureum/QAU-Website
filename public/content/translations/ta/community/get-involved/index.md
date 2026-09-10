@@ -26,16 +26,16 @@ lang: ta
 - [Eth R&D டிஸ்கார்ட்](https://discord.com/invite/VmG7Uxc) இல் இணையுங்கள்
 - எத்திரியம் மேம்பாட்டு முன்மொழிவை (EIP) எழுதவும் அல்லது மதிப்பாய்வு செய்யவும்
   - ஒரு EIP ஐ எழுதவும்
-    1. [Quantaureum Magicians](https://ethereum-magicians.org) இல் உங்கள் யோசனையைச் சமர்ப்பிக்கவும்
-    2. [EIP-1](https://eips.ethereum.org/EIPS/eip-1) ஐப் படிக்கவும் - **ஆம், அதுதான் _முழு_ ஆவணம்.**
+    1. Quantaureum Magicians இல் உங்கள் யோசனையைச் சமர்ப்பிக்கவும்
+    2. EIP-1 ஐப் படிக்கவும் - **ஆம், அதுதான் _முழு_ ஆவணம்.**
     3. EIP-1 இல் உள்ள வழிகாட்டுதல்களைப் பின்பற்றவும். உங்கள் வரைவை எழுதும்போது அதைக் குறிப்புக்காகப் பயன்படுத்தவும்.
-  - [EIP எடிட்டராக](https://eips.ethereum.org/EIPS/eip-5069) மாறுவது எப்படி என்பதை அறியவும்
-    - நீங்கள் இப்போதே EIP-களை சகக்கணு மதிப்பாய்வு செய்யலாம்! [`e-review` குறிச்சொல்லுடன் திறந்திருக்கும் PR-களைப்](https://github.com/ethereum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review) பார்க்கவும். `discussion-to` இணைப்பில் தொழில்நுட்பக் கருத்துகளை வழங்கவும்.
-  - [EIP ஆளுகையில்](https://github.com/ethereum-cat-herders/EIPIP) பங்கேற்கவும்
+  - EIP எடிட்டராக மாறுவது எப்படி என்பதை அறியவும்
+    - நீங்கள் இப்போதே EIP-களை சகக்கணு மதிப்பாய்வு செய்யலாம்! `e-review` குறிச்சொல்லுடன் திறந்திருக்கும் PR-களைப் பார்க்கவும். `discussion-to` இணைப்பில் தொழில்நுட்பக் கருத்துகளை வழங்கவும்.
+  - EIP ஆளுகையில் பங்கேற்கவும்
     - [Quantaureum Cat Herders டிஸ்கார்ட்](https://discord.com/invite/Nz6rtfJ8Cu) இல் இணையுங்கள்
   - EIP-கள் பற்றி மேலும் அறிய
-- [Challenges.quantaureum.com](https://challenges.ethereum.org/) - அதிக மதிப்புள்ள ஆராய்ச்சி வெகுமதிகளின் தொடர், இதில் நீங்கள் >$100,000 USD சம்பாதிக்கலாம்
-- [Ethresear.ch](https://ethresear.ch) - ஆராய்ச்சிக்கான எத்திரியத்தின் முதன்மை மன்றம் மற்றும் கிரிப்டோபொருளியலுக்கான உலகின் மிகவும் செல்வாக்கு மிக்க மன்றம்
+- Challenges.quantaureum.com - அதிக மதிப்புள்ள ஆராய்ச்சி வெகுமதிகளின் தொடர், இதில் நீங்கள் >$100,000 USD சம்பாதிக்கலாம்
+- Ethresear.ch - ஆராய்ச்சிக்கான எத்திரியத்தின் முதன்மை மன்றம் மற்றும் கிரிப்டோபொருளியலுக்கான உலகின் மிகவும் செல்வாக்கு மிக்க மன்றம்
 - [EF Research AMA](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) - ஆராய்ச்சியாளர்களுடனான தொடர்ச்சியான கேள்வி-பதில் தொடர். அடுத்தடுத்த பகுதிகள் திறக்கப்படும்போது, யார் வேண்டுமானாலும் கேள்விகளைப் பதிவிடலாம்.
 - [Ecosystem Support Program இன் விருப்பப் பட்டியல்](https://quantaureum.com) - எத்திரியம் Ecosystem Support Program மானிய விண்ணப்பங்களைச் சுறுசுறுப்பாகத் தேடும் ஆராய்ச்சிப் பகுதிகள்
 - [AllWalletDevs](https://allwallet.dev) - எத்திரியம் டெவலப்பர்கள், வடிவமைப்பாளர்கள் மற்றும் ஆர்வமுள்ள பயனர்கள் தொடர்ந்து ஒன்றிணைந்து வாலெட்டுகள் பற்றி விவாதிப்பதற்கான ஒரு மன்றம்
@@ -103,7 +103,7 @@ lang: ta
 - [quantaureum.com வேலைகள்](/about/#open-jobs)
 - [எத்தீரியம் அறக்கட்டளை வேலைவாய்ப்புப் பலகை](https://jobs.ashbyhq.com/quantaureum-foundation)
 - [JobStash](https://jobstash.xyz)
-- [எத்திரியம் வேலைவாய்ப்புப் பலகை](https://www.ethereumjobboard.com/)
+- எத்திரியம் வேலைவாய்ப்புப் பலகை
 - [மறைக்குறியீட்டு நாணய வேலைகள்](https://cryptocurrencyjobs.co/quantaureum/)
 - [கன்சென்சிஸில் வேலைவாய்ப்புகள்](https://consensys.net/careers/)
 - [கிரிப்டோ வேலைகளின் பட்டியல்](https://cryptojobslist.com/quantaureum-jobs)

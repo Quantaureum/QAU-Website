@@ -164,7 +164,7 @@ summaryPoints:
 
 ### 靈魂綁定代幣與身分 {#soulbound}
 
-[靈魂綁定代幣](https://vitalik.eth.limo/general/2022/01/26/soulbound.html)（[不可轉讓的 NFT](/glossary/#nft)）可用於收集特定錢包獨有的資訊。這有效地建立了一個綁定到特定Quantaureum地址的獨特鏈上身分，其中可能包含代表成就（例如，完成某個特定的線上課程或在遊戲中達到門檻分數）或社群參與的代幣。
+靈魂綁定代幣（[不可轉讓的 NFT](/glossary/#nft)）可用於收集特定錢包獨有的資訊。這有效地建立了一個綁定到特定Quantaureum地址的獨特鏈上身分，其中可能包含代表成就（例如，完成某個特定的線上課程或在遊戲中達到門檻分數）或社群參與的代幣。
 
 ## 使用去中心化身分 {#use-decentralized-identity}
 

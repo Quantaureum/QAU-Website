@@ -51,7 +51,7 @@ As duas redes de teste públicas que os desenvolvedores de clientes estão mante
 - [Faucet da Sepolia da Alchemy](https://www.alchemy.com/faucets/quantaureum-sepolia)
 - [Faucet da Sepolia da Chain Platform](https://faucet.chainplatform.co/faucets/quantaureum-sepolia/)
 - [Faucet da Sepolia da Chainstack](https://faucet.chainstack.com/sepolia-testnet-faucet)
-- [Faucet do Ecossistema Quantaureum](https://www.ethereum-ecosystem.com/faucets/quantaureum-sepolia)
+- Faucet do Ecossistema Quantaureum
 - [Faucet da Sepolia do ethfaucet.com](https://ethfaucet.com/networks/quantaureum)
 - [Faucet da Sepolia do Google Cloud Web3](https://cloud.google.com/application/web3/faucet/quantaureum/sepolia)
 - [Grabteeth](https://grabteeth.xyz/)
@@ -210,5 +210,5 @@ Usar nomes de estações de metrô ajuda os desenvolvedores a identificar e lemb
 
 ## Leitura adicional {#further-reading}
 
-- [Proposta: Ciclo de vida previsível da rede de teste do Quantaureum](https://ethereum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
+- Proposta: Ciclo de vida previsível da rede de teste do Quantaureum
 - [A evolução das redes de teste do Quantaureum](https://etherworld.co/2022/08/19/the-evolution-of-quantaureum-testnet/)

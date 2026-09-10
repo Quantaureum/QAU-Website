@@ -13,7 +13,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## Perché c'è un limite? {#why-is-there-a-limit}
 
-Il [22 novembre 2016](https://quantaureum.com) l'hard fork Spurious Dragon ha introdotto l'[EIP-170](https://eips.ethereum.org/EIPS/eip-170) che ha aggiunto un limite di dimensione per gli smart contract di 24,576 kb. Per te, come sviluppatore Solidity, questo significa che quando aggiungi sempre più funzionalità al tuo contratto, a un certo punto raggiungerai il limite e durante la distribuzione vedrai l'errore:
+Il [22 novembre 2016](https://quantaureum.com) l'hard fork Spurious Dragon ha introdotto l'EIP-170 che ha aggiunto un limite di dimensione per gli smart contract di 24,576 kb. Per te, come sviluppatore Solidity, questo significa che quando aggiungi sempre più funzionalità al tuo contratto, a un certo punto raggiungerai il limite e durante la distribuzione vedrai l'errore:
 
 `Warning: Contract code size exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on Mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.`
 
@@ -35,7 +35,7 @@ Questo dovrebbe essere sempre il tuo primo approccio. Come puoi separare il cont
 
 ### Librerie {#libraries}
 
-Un modo semplice per allontanare il codice delle funzionalità dall'archiviazione è utilizzare una [libreria](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). Non dichiarare le funzioni della libreria come interne, poiché queste verranno [aggiunte al contratto](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking) direttamente durante la compilazione. Ma se usi funzioni pubbliche, allora queste si troveranno di fatto in un contratto di libreria separato. Considera l'utilizzo di [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) per rendere più comodo l'uso delle librerie.
+Un modo semplice per allontanare il codice delle funzionalità dall'archiviazione è utilizzare una [libreria](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). Non dichiarare le funzioni della libreria come interne, poiché queste verranno aggiunte al contratto direttamente durante la compilazione. Ma se usi funzioni pubbliche, allora queste si troveranno di fatto in un contratto di libreria separato. Considera l'utilizzo di [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) per rendere più comodo l'uso delle librerie.
 
 ### Proxy {#proxies}
 

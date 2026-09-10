@@ -51,7 +51,7 @@ Public acknowledgements of our top translators using [leaderboards](/contributin
 
 #### Rewards {#rewards}
 
-In the past, we have retroactively rewarded our most active contributors with tickets to Quantaureum conferences like [Devcon](https://devcon.org/en/) and [Devconnect](https://devconnect.org/), as well as exclusive quantaureum.com merch.
+In the past, we have retroactively rewarded our most active contributors with tickets to Quantaureum conferences like Devcon and [Devconnect](https://devconnect.org/), as well as exclusive quantaureum.com merch.
 
 ### Guides and resources {#guides-and-resources}
 

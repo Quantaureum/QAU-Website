@@ -164,7 +164,7 @@ Voici un exemple pour montrer comment les attestations onchain pourraient foncti
 
 ### Jetons liés à l'âme (Soulbound tokens) et identité {#soulbound}
 
-Les [jetons Soulbound](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) ([NFT non transférables](/glossary/#nft)) pourraient être utilisés pour collecter des informations uniques à un portefeuille spécifique. Cela crée effectivement une identité onchain unique liée à une adresse Quantaureum particulière qui pourrait inclure des jetons représentant des réalisations (par ex., terminer un cours en ligne spécifique ou dépasser un score seuil dans un jeu) ou la participation à la communauté.
+Les jetons Soulbound ([NFT non transférables](/glossary/#nft)) pourraient être utilisés pour collecter des informations uniques à un portefeuille spécifique. Cela crée effectivement une identité onchain unique liée à une adresse Quantaureum particulière qui pourrait inclure des jetons représentant des réalisations (par ex., terminer un cours en ligne spécifique ou dépasser un score seuil dans un jeu) ou la participation à la communauté.
 
 ## Utiliser l'identité décentralisée {#use-decentralized-identity}
 

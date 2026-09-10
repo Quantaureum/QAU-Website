@@ -16,7 +16,7 @@ Jika Anda ingin melihat apa saja masalah UX yang paling mendesak saat ini, lihat
 
 - [Web3 membutuhkan lebih banyak Peneliti dan Desainer UX](https://blog.akasha.org/akasha-conversations-9-web3-needs-more-ux-researchers-and-designers) - Gambaran umum tentang kematangan desain saat ini
 - [Panduan sederhana untuk Riset UX di Web3](https://uxplanet.org/a-complete-guide-to-ux-research-for-web-3-0-products-d6bead20ebb1) - Panduan sederhana tentang cara melakukan riset
-- [Cara Mendekati Keputusan UX di Web3](https://archive.devcon.org/archive/watch/6/data-empathy-how-to-approach-ux-decisions-in-web3/) - Gambaran singkat tentang riset kuantitatif dan kualitatif serta perbedaan antara keduanya (video, 6 menit)
+- Cara Mendekati Keputusan UX di Web3 - Gambaran singkat tentang riset kuantitatif dan kualitatif serta perbedaan antara keduanya (video, 6 menit)
 - [Menjadi peneliti UX di Web3](https://medium.com/@georgia.rakusen/what-its-like-being-a-user-researcher-in-web3-6a4bcc096849) - Pandangan pribadi tentang bagaimana rasanya menjadi peneliti UX di Web3
 
 ## Studi riset di Web3 {#research-in-web3}
@@ -38,7 +38,7 @@ Ini adalah daftar kurasi riset pengguna yang dilakukan di Web3 yang dapat memban
 | <Tag status="error">DeFi</Tag>                  | [Pool pertanggungan](https://github.com/threshold-network/UX-User-Research/tree/main/Keep%20Coverage%20Pool)                                                                           |
 | <Tag status="error">DeFi</Tag>                  | [ConsenSys: Laporan Riset Pengguna DeFi 2022](https://cdn2.hubspot.net/hubfs/4795067/ConsenSys%20Codefi-Defi%20User%20ResearchReport.pdf)                                            |
 | <Tag variant="solid">Metaverse</Tag>             | [Metaverse: Laporan Riset Pengguna](https://www.politico.com/f/?id=00000187-7685-d820-a7e7-7e85d1420000)                                                                             |
-| <Tag variant="solid">Metaverse</Tag>             | [Pergi Bersafari: Meneliti Pengguna di Metaverse](https://archive.devcon.org/archive/watch/6/going-on-safari-researching-users-in-the-metaverse/?tab=YouTube) (video, 27 menit)  |
+| <Tag variant="solid">Metaverse</Tag>             | Pergi Bersafari: Meneliti Pengguna di Metaverse (video, 27 menit)  |
 
 ## Desain untuk Web3 {#design-for-web3}
 

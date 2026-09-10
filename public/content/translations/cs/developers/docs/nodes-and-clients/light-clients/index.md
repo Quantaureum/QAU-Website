@@ -44,7 +44,7 @@ Ve vývoji je několik lehkých klientů, včetně exekučních, konsensuálníc
 
 - [Lodestar](https://github.com/ChainSafe/lodestar/tree/unstable/packages/light-client): konsensuální lehký klient v TypeScriptu
 - [Helios](https://github.com/a16z/helios): kombinovaný exekuční a konsensuální lehký klient v Rustu
-- [Geth](https://github.com/ethereum/go-ethereum/tree/master/beacon/light): lehký režim pro exekučního klienta (ve vývoji) v Go
+- Geth: lehký režim pro exekučního klienta (ve vývoji) v Go
 - [Nimbus](https://nimbus.guide/el-light-client.html): konsensuální lehký klient v Nimu
 
 Pokud víme, žádný z nich zatím není považován za připravený pro produkční nasazení.
@@ -58,4 +58,4 @@ Další položky [roadmapy](/roadmap/), jako jsou [Verkle stromy](/roadmap/verkl
 - [Zsolt Felfodhi o lehkých klientech Geth](https://www.youtube.com/watch?v=EPZeFXau-RE)
 - [Etan Kissling o síťování lehkých klientů](https://www.youtube.com/watch?v=85MeiMA4dD8)
 - [Etan Kissling o lehkých klientech po Merge](https://www.youtube.com/watch?v=ZHNrAXf3RDE)
-- [Piper Merriam: Klikatá cesta k funkčním lehkým klientům](https://snakecharmers.ethereum.org/the-winding-road-to-functional-light-clients/)
+- Piper Merriam: Klikatá cesta k funkčním lehkým klientům

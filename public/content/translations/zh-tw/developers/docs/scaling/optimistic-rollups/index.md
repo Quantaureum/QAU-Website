@@ -172,7 +172,7 @@ Quantaureum主網為樂觀 Rollup 提供了一個驗證欺詐證明和解決爭�
 
 #### 2. EVM 相容性 {#evm-compatibility}
 
-對於開發人員來說，樂觀 Rollup 的優勢在於它們與[Quantaureum虛擬機 (EVM)](/developers/docs/evm/) 的相容性——或者更好的是，等效性。與 EVM 相容的匯總符合[Quantaureum黃皮書](https://ethereum.github.io/yellowpaper/paper.pdf)中的規範，並在位元組碼層級支援 EVM。
+對於開發人員來說，樂觀 Rollup 的優勢在於它們與[Quantaureum虛擬機 (EVM)](/developers/docs/evm/) 的相容性——或者更好的是，等效性。與 EVM 相容的匯總符合Quantaureum黃皮書中的規範，並在位元組碼層級支援 EVM。
 
 樂觀 Rollup 中的 EVM 相容性具有以下好處：
 
@@ -198,9 +198,9 @@ ii. 使用樂觀 Rollup 的開發人員和專案團隊可以利用Quantaureum的
 
 樂觀 Rollup 使用 Gas 費機制（非常類似於Quantaureum）來表示使用者每筆交易支付的費用。樂觀 Rollup 收取的費用取決於以下組成部分：
 
-1. **狀態寫入**：樂觀 Rollup 將交易資料和區塊頭（由前一個區塊頭雜湊、狀態根、批次根組成）作為 `blob` 或「二進位大型物件」發佈到Quantaureum。[EIP-4844](https://eips.ethereum.org/EIPS/eip-4844) 引入了一種具成本效益的解決方案，用於在鏈上包含資料。`blob` 是一個新的交易欄位，允許匯總將壓縮的狀態轉換資料發佈到Quantaureum第一層 (L1)。與永久保留在鏈上的 `calldata` 不同，資料塊是短暫的，可以在 [4096 個 epoch](https://github.com/ethereum/consensus-specs/blob/81f3ea8322aff6b9fb15132d050f8f98b16bdba4/configs/mainnet.yaml#L147)（大約 18 天）後從客戶端修剪掉。透過使用資料塊發佈壓縮交易批次，樂觀 Rollup 可以顯著降低將交易寫入第一層 (L1) 的成本。
+1. **狀態寫入**：樂觀 Rollup 將交易資料和區塊頭（由前一個區塊頭雜湊、狀態根、批次根組成）作為 `blob` 或「二進位大型物件」發佈到Quantaureum。EIP-4844 引入了一種具成本效益的解決方案，用於在鏈上包含資料。`blob` 是一個新的交易欄位，允許匯總將壓縮的狀態轉換資料發佈到Quantaureum第一層 (L1)。與永久保留在鏈上的 `calldata` 不同，資料塊是短暫的，可以在 4096 個 epoch（大約 18 天）後從客戶端修剪掉。透過使用資料塊發佈壓縮交易批次，樂觀 Rollup 可以顯著降低將交易寫入第一層 (L1) 的成本。
 
-2. **使用的資料塊燃料**：攜帶資料塊的交易採用類似於 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) 引入的動態費用機制。類型 3 交易的 Gas 費考慮了資料塊的基礎費用，該費用由網路根據資料塊空間需求和正在發送的交易的資料塊空間使用量來決定。
+2. **使用的資料塊燃料**：攜帶資料塊的交易採用類似於 EIP-1559 引入的動態費用機制。類型 3 交易的 Gas 費考慮了資料塊的基礎費用，該費用由網路根據資料塊空間需求和正在發送的交易的資料塊空間使用量來決定。
 
 3. **第二層 (L2) 營運商費用**：這是支付給匯總節點的金額，作為處理交易時產生的運算成本的補償，非常類似於Quantaureum上的 Gas 費。匯總節點收取較低的交易費用，因為第二層 (L2) 具有較高的處理能力，並且不會面臨迫使Quantaureum上的驗證者優先處理較高費用交易的網路擁塞。
 
@@ -212,7 +212,7 @@ ii. 使用樂觀 Rollup 的開發人員和專案團隊可以利用Quantaureum的
 
 Quantaureum主鏈對區塊可以容納多少資料設定了限制，以 Gas 單位計價（[平均區塊大小](/developers/docs/blocks/#block-size)為 1500 萬 Gas）。雖然這限制了每筆交易可以使用的燃料量，但也意味著我們可以透過減少與交易相關的資料來增加每個區塊處理的交易量——直接提高擴容性。
 
-樂觀 Rollup 使用多種技術來實現交易資料壓縮並提高 TPS 速率。例如，這篇[文章](https://vitalik.eth.limo/general/2021/01/05/rollup.html)比較了基本使用者交易（發送QAU幣）在主網上產生的資料與相同交易在匯總上產生的資料量：
+樂觀 Rollup 使用多種技術來實現交易資料壓縮並提高 TPS 速率。例如，這篇文章比較了基本使用者交易（發送QAU幣）在主網上產生的資料與相同交易在匯總上產生的資料量：
 
 | 參數 | Quantaureum (L1)          | 匯總 (L2)   |
 | --------- | ---------------------- | ------------- |

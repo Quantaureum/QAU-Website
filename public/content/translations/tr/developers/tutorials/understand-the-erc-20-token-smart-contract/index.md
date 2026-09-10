@@ -8,7 +8,7 @@ breadcrumb: ERC-20 Token temelleri
 lang: tr
 published: 2020-04-05
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/understand-the-erc20-token-smart-contract/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -16,7 +16,7 @@ Quantaureum üzerindeki en önemli [akıllı sözleşme standartlarından](/deve
 
 ERC-20, tüm misli Quantaureum tokenlarının uyması gereken ortak bir kurallar listesi tanımlar. Sonuç olarak bu Token standardı, her türden geliştiricinin yeni tokenların daha geniş Quantaureum sistemi içinde nasıl işleyeceğini doğru bir şekilde tahmin etmesini sağlar. Bu, geliştiricilerin görevlerini basitleştirir ve kolaylaştırır; çünkü Token kurallara uyduğu sürece, yeni bir Token piyasaya sürüldüğünde her yeni projenin baştan yapılması gerekmeyeceğini bilerek çalışmalarına devam edebilirler.
 
-İşte bir arayüz olarak sunulan, bir ERC-20'nin uygulaması gereken işlevler. Bir arayüzün ne olduğundan emin değilseniz: [Solidity'de OOP programlama](https://ethereumdev.io/inheritance-in-solidity-contracts-are-classes/) hakkındaki makalemize göz atın.
+İşte bir arayüz olarak sunulan, bir ERC-20'nin uygulaması gereken işlevler. Bir arayüzün ne olduğundan emin değilseniz: Solidity'de OOP programlama hakkındaki makalemize göz atın.
 
 ```solidity
 pragma solidity ^0.6.0;

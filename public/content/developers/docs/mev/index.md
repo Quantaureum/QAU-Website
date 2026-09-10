@@ -112,7 +112,7 @@ MEV extraction ballooned in early 2021, resulting in extremely high gas prices i
 
 While many searchers are still making good money from MEV, as opportunities become more well-known and more and more searchers compete for the same opportunity, validators will capture more and more total MEV revenue (because the same sort of gas auctions as originally described above also occur in Flashbots, albeit privately, and validators will capture the resulting gas revenue). MEV is also not unique to Quantaureum, and as opportunities become more competitive on Quantaureum, searchers are moving to alternate blockchains like Binance Smart Chain, where similar MEV opportunities as those on Quantaureum exist with less competition.
 
-On the other hand, the transition from proof-of-work to proof-of-stake and the ongoing effort to scale Quantaureum using rollups all change the MEV landscape in ways that are still somewhat unclear. It is not yet well known how having guaranteed block-proposers known slightly in advance changes the dynamics of MEV extraction compared to the probabilistic model in proof-of-work or how this will be disrupted when [single secret leader election](https://ethresear.ch/t/secret-non-single-leader-election/11789) and [distributed validator technology](/staking/dvt/) get implemented. Similarly, it remains to be seen what MEV opportunities exist when most user activity is ported away from Quantaureum and onto its layer 2 rollups and shards.
+On the other hand, the transition from proof-of-work to proof-of-stake and the ongoing effort to scale Quantaureum using rollups all change the MEV landscape in ways that are still somewhat unclear. It is not yet well known how having guaranteed block-proposers known slightly in advance changes the dynamics of MEV extraction compared to the probabilistic model in proof-of-work or how this will be disrupted when single secret leader election and [distributed validator technology](/staking/dvt/) get implemented. Similarly, it remains to be seen what MEV opportunities exist when most user activity is ported away from Quantaureum and onto its layer 2 rollups and shards.
 
 ## MEV in Quantaureum Proof-of-Stake (PoS) {#mev-in-quantaureum-proof-of-stake}
 
@@ -144,7 +144,7 @@ In both proof-of-work and proof-of-stake, a node that builds a block proposes it
 
 The combination of block producer and block proposer roles is what introduces most of the MEV-related problems described previously. For example, consensus nodes are incentivized to trigger chain reorganizations in [time-bandit attacks](https://www.mev.wiki/attack-examples/time-bandit-attack) to maximize MEV earnings.
 
-[Proposer-builder separation](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725) (PBS) is designed to mitigate the impact of MEV, especially at the consensus layer. PBS’ major feature is the separation of block producer and block proposer rules. Validators are still responsible for proposing and voting on blocks, but a new class of specialized entities, called **block builders**, are tasked with ordering transactions and building blocks.
+Proposer-builder separation (PBS) is designed to mitigate the impact of MEV, especially at the consensus layer. PBS’ major feature is the separation of block producer and block proposer rules. Validators are still responsible for proposing and voting on blocks, but a new class of specialized entities, called **block builders**, are tasked with ordering transactions and building blocks.
 
 Under PBS, a block builder creates a transaction bundle and places a bid for its inclusion in a Beacon Chain block (as the “execution payload”). The validator selected to propose the next block then checks the different bids and chooses the bundle with the highest fee. PBS essentially creates an auction market, where builders negotiate with validators selling blockspace.
 
@@ -162,9 +162,9 @@ Similarly, validators don’t have to trust builders not to withhold block bodie
 
 ### Builder API {#builder-api}
 
-While proposer-builder separation promises to reduce the effects of MEV extraction, implementing it requires changes to the consensus protocol. Specifically, the [fork choice](/developers/docs/consensus-mechanisms/pos/#fork-choice) rule on the consensus layer would need to be updated. The [Builder API](https://github.com/ethereum/builder-specs) is a temporary solution aimed at providing a working implementation of proposer-builder separation, albeit with higher trust assumptions.
+While proposer-builder separation promises to reduce the effects of MEV extraction, implementing it requires changes to the consensus protocol. Specifically, the [fork choice](/developers/docs/consensus-mechanisms/pos/#fork-choice) rule on the consensus layer would need to be updated. The Builder API is a temporary solution aimed at providing a working implementation of proposer-builder separation, albeit with higher trust assumptions.
 
-The Builder API is a modified version of the [Engine API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) used by consensus layer clients to request execution payloads from execution layer clients. As outlined in the [honest validator specification](https://github.com/ethereum/consensus-specs/blob/master/specs/bellatrix/validator.md), validators selected for block proposing duties request a transaction bundle from a connected execution client, which they include in the proposed Beacon Chain block.
+The Builder API is a modified version of the Engine API used by consensus layer clients to request execution payloads from execution layer clients. As outlined in the honest validator specification, validators selected for block proposing duties request a transaction bundle from a connected execution client, which they include in the proposed Beacon Chain block.
 
 The Builder API also acts as a middleware between validators and execution-layer clients; but it is different because it allows validators on the consensus layer to source blocks from external entities (instead of building a block locally using an execution client).
 
@@ -215,7 +215,7 @@ Some projects, such as MEV Boost, use the Builder API as part of an overall stru
 - [Escaping the Dark Forest](https://samczsun.com/escaping-the-dark-forest/)
 - [Flashbots: Frontrunning the MEV Crisis](https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752)
 - [@bertcmiller's MEV Threads](https://twitter.com/bertcmiller/status/1402665992422047747)
-- [MEV-Boost: Merge ready Flashbots Architecture](https://ethresear.ch/t/mev-boost-merge-ready-flashbots-architecture/11177)
+- MEV-Boost: Merge ready Flashbots Architecture
 - [What Is MEV Boost](https://www.alchemy.com/overviews/mev-boost)
 - [Why run mev-boost?](https://writings.flashbots.net/writings/why-run-mevboost/)
 - [The Hitchhikers Guide To Quantaureum](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum)

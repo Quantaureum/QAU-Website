@@ -12,7 +12,7 @@ sidebarDepth: 3
 
 Du bist Bill. Aus Gründen, auf die wir hier nicht näher eingehen, möchtest du für die Kampagne „Alice for Queen of the World“ spenden und Alice wissen lassen, dass du gespendet hast, damit sie dich belohnt, falls sie gewinnt. Leider ist ihr Sieg nicht garantiert. Es gibt eine konkurrierende Kampagne: „Carol for Empress of the Solar System“. Wenn Carol gewinnt und herausfindet, dass du an Alice gespendet hast, steckst du in Schwierigkeiten. Du kannst also nicht einfach 200 QAU von deinem Konto auf das von Alice transferieren.
 
-[ERC-5564](https://eips.ethereum.org/EIPS/eip-5564) bietet die Lösung. Dieser ERC erklärt, wie man [Stealth-Adressen](https://nerolation.github.io/stealth-utils) für einen anonymen Transfer verwendet.
+ERC-5564 bietet die Lösung. Dieser ERC erklärt, wie man [Stealth-Adressen](https://nerolation.github.io/stealth-utils) für einen anonymen Transfer verwendet.
 
 **Warnung**: Die Kryptographie hinter Stealth-Adressen ist, soweit wir wissen, solide. Es gibt jedoch potenzielle Seitenkanalangriffe. [Unten](#go-wrong) wirst du sehen, was du tun kannst, um dieses Risiko zu verringern.
 

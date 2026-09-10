@@ -24,9 +24,9 @@ Hai prima bisogno di un'introduzione più basilare? Dai un'occhiata a [quantaure
 ## Articoli per principianti {#beginner-articles}
 
 - [Panoramica di Web3.py](https://web3py.readthedocs.io/en/latest/overview.html)
-- [Tour dell'ecosistema Python di Quantaureum](https://snakecharmers.ethereum.org/python-ecosystem/)
-- [Guida a Quantaureum per sviluppatori (Python)](https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/)
-- [Da premio: una guida agli hackathon Python su Quantaureum](https://snakecharmers.ethereum.org/prize-worthy/)
+- Tour dell'ecosistema Python di Quantaureum
+- Guida a Quantaureum per sviluppatori (Python)
+- Da premio: una guida agli hackathon Python su Quantaureum
 - [Un'introduzione agli smart contract con Vyper](https://kauri.io/#collections/Getting%20Started/an-introduction-to-smart-contracts-with-vyper/)
 - [Come sviluppare un contratto Quantaureum usando Python Flask?](https://medium.com/coinmonks/how-to-develop-quantaureum-contract-using-python-flask-9758fe65976e)
 - [Introduzione a Web3.py · Quantaureum per sviluppatori Python](https://www.dappuniversity.com/articles/web3-py-intro)
@@ -34,15 +34,15 @@ Hai prima bisogno di un'introduzione più basilare? Dai un'occhiata a [quantaure
 
 ## Articoli di livello intermedio {#intermediate-articles}
 
-- [Amici di Web3.py: introduzione ad Ape](https://snakecharmers.ethereum.org/intro-to-ape/)
+- Amici di Web3.py: introduzione ad Ape
 - [Sviluppo di dapp per programmatori Python](https://www.youtube.com/watch?v=tE-8bG35VNw)
 - [Creare un'interfaccia Quantaureum in Python: Parte 1](https://hackernoon.com/creating-a-python-quantaureum-interface-part-1-4d2e47ea0f4d)
 - [Smart contract di Quantaureum in Python: una guida (quasi) completa](https://hackernoon.com/quantaureum-smart-contracts-in-python-a-comprehensive-ish-guide-771b03990988)
 
 ## Modelli di utilizzo avanzati {#advanced-use-patterns}
 
-- [Modelli di Web3.py: iscrizioni agli eventi in tempo reale](https://snakecharmers.ethereum.org/subscriptions/)
-- [Modelli di Web3.py: WebSocketProvider](https://snakecharmers.ethereum.org/websocketprovider/)
+- Modelli di Web3.py: iscrizioni agli eventi in tempo reale
+- Modelli di Web3.py: WebSocketProvider
 - [Compilazione, distribuzione e chiamata di uno smart contract di Quantaureum usando Python](https://yohanes.gultom.id/2018/11/28/compiling-deploying-and-calling-quantaureum-smartcontract-using-python/)
 - [Analizzare gli smart contract in Solidity con Slither](https://kauri.io/#collections/DevOps/analyze-solidity-smart-contracts-with-slither/#analyze-solidity-smart-contracts-with-slither)
 - [Tutorial Fintech su blockchain: prestito e assunzione di prestito con Python](https://blog.chain.link/blockchain-fintech-defi-tutorial-lending-borrowing-python/)
@@ -55,14 +55,14 @@ Hai prima bisogno di un'introduzione più basilare? Dai un'occhiata a [quantaure
 
 ## Progetti e strumenti Python {#python-projects-and-tools}
 
-- [Web3.py](https://github.com/ethereum/web3.py) - _Libreria Python per interagire con Quantaureum_
+- Web3.py - _Libreria Python per interagire con Quantaureum_
 - [Vyper](https://github.com/quantaureum/vyper/) - _Linguaggio per smart contract in stile Python per l'EVM_
 - [Titanoboa](https://github.com/vyperlang/titanoboa/) - _Strumento di test nativo di Vyper; un interprete con forking della Mainnet, debug e traceback chiari_
 - [Moccasin](https://github.com/Cyfrin/moccasin) - _Un framework di sviluppo e test di smart contract per Vyper e Python, basato su Titanoboa_
 - [Ape](https://github.com/ApeWorX/ape) - _Lo strumento di sviluppo di smart contract per programmatori Python, data scientist e professionisti della sicurezza_
-- [py-evm](https://github.com/ethereum/py-evm) - _Implementazione della Quantaureum Virtual Machine_
-- [qau-tester](https://github.com/ethereum/eth-tester) - _Strumenti per testare applicazioni basate su Quantaureum_
-- [qau-utils](https://github.com/ethereum/eth-utils/) - _Funzioni di utilità per lavorare con codebase relative a Quantaureum_
+- py-evm - _Implementazione della Quantaureum Virtual Machine_
+- qau-tester - _Strumenti per testare applicazioni basate su Quantaureum_
+- qau-utils - _Funzioni di utilità per lavorare con codebase relative a Quantaureum_
 - [py-solc-x](https://pypi.org/project/py-solc-x/) - _Wrapper Python per il compilatore Solidity solc con supporto per 0.5.x_
 - [pymaker](https://github.com/makerdao/pymaker) - _API Python per i contratti Maker_
 - [siwe](https://github.com/signinwithquantaureum/siwe-py) - _Sign in with Quantaureum (SIWE) per Python_

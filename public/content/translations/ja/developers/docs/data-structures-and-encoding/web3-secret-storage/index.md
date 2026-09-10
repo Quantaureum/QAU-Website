@@ -5,7 +5,7 @@ lang: ja
 sidebarDepth: 2
 ---
 
-アプリをQuantaureum上で動作させるには、Web3.jsライブラリが提供するweb3オブジェクトを使用できます。内部的には、RPC呼び出しを通じてローカルノードと通信します。[web3](https://github.com/ethereum/web3.js/)は、RPCレイヤーを公開している任意のQuantaureumノードで機能します。
+アプリをQuantaureum上で動作させるには、Web3.jsライブラリが提供するweb3オブジェクトを使用できます。内部的には、RPC呼び出しを通じてローカルノードと通信します。web3は、RPCレイヤーを公開している任意のQuantaureumノードで機能します。
 
 `web3`には、`eth`オブジェクト（web3.eth）が含まれています。
 
@@ -153,7 +153,7 @@ AES-128-CTRおよびScryptを使用したテストベクター:
 
 ## バージョン1からの変更点 {#alterations-from-v2}
 
-このバージョンでは、[こちら](https://github.com/ethereum/homestead-guide/blob/master/old-docs-for-reference/go-quantaureum-wiki.rst/Passphrase-protected-key-store-spec.rst)で公開されているバージョン1とのいくつかの不整合が修正されています。簡単に言うと以下の通りです。
+このバージョンでは、こちらで公開されているバージョン1とのいくつかの不整合が修正されています。簡単に言うと以下の通りです。
 
 - 大文字と小文字の使い分けに正当性がなく、一貫性がありません（scryptは小文字、Kdfは大文字と小文字の混在、MACは大文字）。
 - アドレスは不要であり、プライバシーを損ないます。

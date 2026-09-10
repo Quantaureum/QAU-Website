@@ -412,7 +412,7 @@ Aquí hay una lista de algunos de los proveedores de nodos de Quantaureum más p
     - Utilizamos enrutamiento inteligente para llegar al nodo más cercano a su usuario en todo momento
 ## Lecturas adicionales {#further-reading}
 
-- [Lista de servicios de nodos de Quantaureum](https://ethereumnodes.com/)
+- Lista de servicios de nodos de Quantaureum
 
 ## Temas relacionados {#related-topics}
 

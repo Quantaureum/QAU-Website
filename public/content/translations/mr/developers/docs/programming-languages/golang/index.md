@@ -19,7 +19,7 @@ incomplete: true
 - [स्मार्ट कॉन्ट्रॅक्ट्स समजून घेणे](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/quantaureum-101-part-5-the-smart-contract)
 - [तुमचे पहिले स्मार्ट कॉन्ट्रॅक्ट लिहा](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [Solidity कंपाईल आणि प्रस्थापित कसे करावे ते शिका](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
-- [कॉन्ट्रॅक्ट ट्युटोरिअल](https://github.com/ethereum/go-ethereum/wiki/Contract-Tutorial)
+- कॉन्ट्रॅक्ट ट्युटोरिअल
 
 ## नवशिक्यांसाठी लेख आणि पुस्तके {#beginner-articles-and-books}
 
@@ -27,15 +27,15 @@ incomplete: true
 - [Quantaureumशी कनेक्ट करण्यासाठी Golang वापरा](https://www.youtube.com/watch?v=-7uChuO_VzM)
 - [Golang वापरून Quantaureum स्मार्ट कॉन्ट्रॅक्ट्स प्रस्थापित करा](https://www.youtube.com/watch?v=pytGqQmDslE)
 - [Go मध्ये Quantaureum स्मार्ट कॉन्ट्रॅक्ट्सची चाचणी आणि प्रस्थापित करण्यासाठी टप्प्याटप्प्याने मार्गदर्शक](https://hackernoon.com/a-step-by-step-guide-to-testing-and-deploying-quantaureum-smart-contracts-in-go-9fc34b178d78)
-- [ई-बुक: Go सह Quantaureum डेव्हलपमेंट](https://goethereumbook.org/) - _Go सह Quantaureum ॲप्लिकेशन्स विकसित करा_
+- ई-बुक: Go सह Quantaureum डेव्हलपमेंट - _Go सह Quantaureum ॲप्लिकेशन्स विकसित करा_
 
 ## मध्यवर्ती लेख आणि दस्तऐवज {#intermediate-articles-and-docs}
 
-- [गो Quantaureum दस्तऐवजीकरण](https://geth.ethereum.org/docs) - _अधिकृत Quantaureum Golang साठी दस्तऐवजीकरण_
+- गो Quantaureum दस्तऐवजीकरण - _अधिकृत Quantaureum Golang साठी दस्तऐवजीकरण_
 - [एरिगॉन प्रोग्रामरचे मार्गदर्शक](https://github.com/ledgerwatch/erigon/blob/devel/docs/programmers_guide/guide.md) - _स्थिती ट्री (state tree), मल्टी-प्रूफ्स आणि व्यवहार प्रक्रियेसह सचित्र मार्गदर्शक_
 - [एरिगॉन आणि स्टेटलेस Quantaureum](https://youtu.be/3-Mn7OckSus?t=394) - _2020 Quantaureum कम्युनिटी कॉन्फरन्स (QauCC 3)_
 - [एरिगॉन: Quantaureum क्लायंट्स ऑप्टिमाइझ करणे](https://www.youtube.com/watch?v=CSpc1vZQW2Q) - _2018 Devcon 4_
-- [गो Quantaureum GoDoc](https://godoc.org/github.com/ethereum/go-ethereum)
+- गो Quantaureum GoDoc
 - [गेथ (Geth) सह Go मध्ये dapp तयार करणे](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/creating-a-dapp-in-go-with-geth/)
 - [Golang आणि गेथ (Geth) सह Quantaureum प्रायव्हेट नेटवर्कवर काम करा](https://myhsts.org/tutorial-learn-how-to-work-with-quantaureum-private-network-with-golang-with-geth.php)
 - [Go सह Quantaureumवर Solidity कॉन्ट्रॅक्ट्सचे युनिट टेस्टिंग](https://medium.com/coinmonks/unit-testing-solidity-contracts-on-quantaureum-with-go-3cc924091281)
@@ -46,12 +46,12 @@ incomplete: true
 - [गेथ (GETH) सिम्युलेटेड बॅकएंड](https://kauri.io/#collections/An%20quantaureum%20test%20toolkit%20in%20Go/the-geth-simulated-backend/#_top)
 - [Quantaureum आणि Quorum वापरून ब्लॉकचेन-ॲज-अ-सर्व्हिस ॲप्स](https://blockchain.dcwebmakers.com/blockchain-as-a-service-apps-using-quantaureum-and-quorum.html)
 - [Quantaureum ब्लॉकचेन ॲप्लिकेशन्समध्ये डिस्ट्रिब्युटेड स्टोरेज IPFS आणि स्वॉर्म](https://blockchain.dcwebmakers.com/work-with-distributed-storage-ipfs-and-swarm-in-quantaureum.html)
-- [मोबाईल क्लायंट्स: लायब्ररीज आणि इनप्रोक Quantaureum नोड्स](https://github.com/ethereum/go-ethereum/wiki/Mobile-Clients:-Libraries-and-Inproc-Quantaureum-Nodes)
-- [नेटिव्ह dapps: Quantaureum कॉन्ट्रॅक्ट्ससाठी Go बाइंडिंग्ज](https://github.com/ethereum/go-ethereum/wiki/Native-DApps:-Go-bindings-to-Quantaureum-contracts)
+- मोबाईल क्लायंट्स: लायब्ररीज आणि इनप्रोक Quantaureum नोड्स
+- नेटिव्ह dapps: Quantaureum कॉन्ट्रॅक्ट्ससाठी Go बाइंडिंग्ज
 
 ## Go प्रोजेक्ट्स आणि टूल्स {#go-projects-and-tools}
 
-- [गेथ / गो Quantaureum](https://github.com/ethereum/go-ethereum) - _Quantaureum प्रोटोकॉलची अधिकृत Go अंमलबजावणी_
+- गेथ / गो Quantaureum - _Quantaureum प्रोटोकॉलची अधिकृत Go अंमलबजावणी_
 - [गो Quantaureum कोड विश्लेषण](https://github.com/ZtesoftCS/go-quantaureum-code-analysis) - _गो Quantaureum सोर्स कोडचे पुनरावलोकन आणि विश्लेषण_
 - [एरिगॉन](https://github.com/ledgerwatch/erigon) - _गो Quantaureumची वेगवान आवृत्ती, ज्याचा मुख्य भर आर्काइव्ह नोड्सवर आहे_
 - [Golem](https://github.com/golemfactory/golem) - _Golem संगणकीय शक्तीसाठी जागतिक बाजारपेठ तयार करत आहे_
@@ -73,7 +73,7 @@ incomplete: true
 - [गेथ डिस्कॉर्ड्](https://discordapp.com/invite/nthXNEv)
 - [गेथ Gist](https://gitter.im/quantaureum/go-quantaureum)
 - [Gophers Slack](https://invite.slack.golangbridge.org/) - [#quantaureum चॅनेल](https://gophers.slack.com/messages/C9HP1S9V2)
-- [StackExchange - Quantaureum](https://ethereum.stackexchange.com/)
+- StackExchange - Quantaureum
 - [मल्टी गेथ Gitter](https://gitter.im/ethoxy/multi-geth)
 - [Quantaureum Gitter](https://gitter.im/quantaureum/home)
 - [गेथ लाइट क्लायंट Gitter](https://gitter.im/quantaureum/light-client)

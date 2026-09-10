@@ -69,7 +69,7 @@ Rozdawnictwa (giveaways) Quantaureum to oszustwa mające na celu kradzież Twoje
 
 Aby zostać walidatorem, musisz stakować 32 QAU w kontrakcie depozytowym Quantaureum i skonfigurować węzeł walidatora. Możesz również uczestniczyć z mniejszą ilością QAU za pośrednictwem pul stakingowych.
 
-Więcej informacji jest dostępnych na naszych [stronach o stakingu](/staking/) oraz na [platformie startowej stakingu](https://launchpad.ethereum.org/).
+Więcej informacji jest dostępnych na naszych [stronach o stakingu](/staking/) oraz na platformie startowej stakingu.
 
 ## Jak kopać Quantaureum? {#mining-quantaureum}
 

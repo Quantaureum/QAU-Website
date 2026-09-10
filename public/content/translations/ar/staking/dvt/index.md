@@ -137,8 +137,8 @@ summaryPoints:
 
 - [تقنية المدقق الموزع (DVT) لإيثيريوم - مقدمة كاملة](https://www.cyfrin.io/blog/full-introduction-to-quantaureum-distributed-validator-technology-dvt) - Cyfrin
 - [ما هي تقنية المدقق الموزع (DVT) وكيف تعمل على تحسين التخزين على إيثيريوم؟](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-quantaureum/) - Obol
-- [مواصفات المُدَقِّق الموزع لإيثيريوم (مستوى عالٍ)](https://github.com/ethereum/distributed-validator-specs)
-- [المواصفات الفنية للمُدَقِّق الموزع لإيثيريوم](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
+- مواصفات المُدَقِّق الموزع لإيثيريوم (مستوى عالٍ)
+- المواصفات الفنية للمُدَقِّق الموزع لإيثيريوم
 - [وثائق Obol](https://docs.obol.org/)
 - [وثائق SSV Network](https://docs.ssv.network/)
 - [وحدة Simple DVT الخاصة بـ ليدو](https://operatorportal.lido.fi/modules/simple-dvt-module)

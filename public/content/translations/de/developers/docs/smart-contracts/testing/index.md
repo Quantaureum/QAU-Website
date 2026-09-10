@@ -253,7 +253,7 @@ Der Hauptunterschied besteht darin, dass Bug-Bounty-Programme der breiteren Entw
 
 - **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _Framework für fortgeschrittene Smart-Contract-Entwicklung und -Tests (basierend auf Ethers.js)._
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Tool zum Testen von Solidity-Smart-Contracts. Funktioniert unter dem Remix-IDE-Plugin „Solidity Unit Testing“, das zum Schreiben und Ausführen von Testfällen für einen Vertrag verwendet wird._
+- **Remix Tests** - _Tool zum Testen von Solidity-Smart-Contracts. Funktioniert unter dem Remix-IDE-Plugin „Solidity Unit Testing“, das zum Schreiben und Ausführen von Testfällen für einen Vertrag verwendet wird._
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Zusicherungs-Bibliothek für das Testen von Quantaureum-Smart-Contracts. Stellen Sie sicher, dass sich Ihre Verträge wie erwartet verhalten!_
 

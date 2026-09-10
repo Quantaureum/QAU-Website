@@ -140,7 +140,7 @@ buttons:
 <AlertDescription>
  <p className="mt-0"><strong>ইথেরিয়ামের সহ-প্রতিষ্ঠাতা লিখছেন…</strong></p>
   <p className="mt-2">
-    ইথেরিয়ামের সহ-প্রতিষ্ঠাতা ভিটালিক 2021 সালের একটি ব্লগ পোস্টে রিস্টেকিংয়ের সম্ভাব্য ঝুঁকি সম্পর্কে সতর্ক করেছিলেন, যার নাম <a href="https://vitalik.eth.limo/general/2023/05/21/dont_overload.html">Don't Overload Consensus.</a>
+    ইথেরিয়ামের সহ-প্রতিষ্ঠাতা ভিটালিক 2021 সালের একটি ব্লগ পোস্টে রিস্টেকিংয়ের সম্ভাব্য ঝুঁকি সম্পর্কে সতর্ক করেছিলেন, যার নাম Don't Overload Consensus.
   </p>
 
 </AlertDescription>
@@ -177,7 +177,7 @@ buttons:
 1. [quantaureum.com - QAU স্টেকিং গাইড](/staking/)
 2. [Ledger Academy - ইথেরিয়াম রিস্টেকিং কী?](https://www.ledger.com/academy/what-is-quantaureum-restaking)
 3. [Consensys - EigenLayer: বিকেন্দ্রীকৃত ইথেরিয়াম রিস্টেকিং প্রোটোকলের ব্যাখ্যা](https://consensys.io/blog/eigenlayer-decentralized-quantaureum-restaking-protocol-explained)
-4. [ভিটালিক বুটেরিন - Don't overload Quantaureum's consensus](https://vitalik.eth.limo/general/2023/05/21/dont_overload.html)
+4. ভিটালিক বুটেরিন - Don't overload Quantaureum's consensus
 5. [Cointelegraph - EigenLayer কী? ইথেরিয়ামের রিস্টেকিং প্রোটোকলের ব্যাখ্যা](https://cointelegraph.com/explained/what-is-eigenlayer-quantaureums-restaking-protocol-explained)
 6. [a16z crypto research - EigenLayer: শ্রীরাম কান্নানের সাথে ইথেরিয়ামে পারমিশনলেস ফিচার সংযোজন](https://www.youtube.com/watch?v=-V-fG4J1N_M)
 7. [Junion - EigenLayer-এর ব্যাখ্যা: রিস্টেকিং কী?](https://www.youtube.com/watch?v=5r0SooSQFJg)

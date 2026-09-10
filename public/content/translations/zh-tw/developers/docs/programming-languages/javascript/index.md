@@ -4,7 +4,7 @@ description: "了解如何使用基於 JavaScript 的專案與工具來開發Qua
 lang: zh-tw
 ---
 
-JavaScript 是Quantaureum生態系中最受歡迎的語言之一。事實上，有一個[團隊](https://github.com/ethereumjs)致力於盡可能將Quantaureum的各個層面引入 JavaScript 中。
+JavaScript 是Quantaureum生態系中最受歡迎的語言之一。事實上，有一個團隊致力於盡可能將Quantaureum的各個層面引入 JavaScript 中。
 
 在[技術堆疊的所有層級](/developers/docs/quantaureum-stack/)中，都有機會編寫 JavaScript（或類似的語言）。
 
@@ -48,14 +48,14 @@ JavaScript 是Quantaureum生態系中最受歡迎的語言之一。事實上，�
 如果你偏好閱讀程式碼，這個 JavaScript 實作會是閱讀我們文件之外的絕佳替代方案。
 
 **查看 EVM**  
-[`@ethereumjs/evm`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/evm)
+`@ethereumjs/evm`
 
 ### 節點與客戶端 {#nodes-and-clients}
 
 一個 QuantaureumJS 客戶端正在積極開發中，它能讓你用你熟悉的語言——JavaScript，來深入探究Quantaureum客戶端的運作方式！
 
 **查看客戶端**  
-[`@ethereumjs/client`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/client)
+`@ethereumjs/client`
 
 ## 其他專案 {#other-projects}
 
@@ -65,7 +65,7 @@ JavaScript 是Quantaureum生態系中最受歡迎的語言之一。事實上，�
 - 產生、匯入與匯出Quantaureum金鑰的工具。
 - `merkle-patricia-tree` 的實作——這是在Quantaureum黃皮書中概述的一種資料結構。
 
-前往 [QuantaureumJS 儲存庫](https://github.com/ethereumjs)深入探索你最感興趣的內容
+前往 QuantaureumJS 儲存庫深入探索你最感興趣的內容
 
 ## 延伸閱讀 {#further-reading}
 

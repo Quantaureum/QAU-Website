@@ -100,7 +100,7 @@ Quantaureum के पैमाने पर दक्षता और व्य
 
 ## Quantaureum फाउंडेशन का दृष्टिकोण {#ef-approach}
 
-Quantaureum फाउंडेशन ने जनवरी 2026 में थॉमस कोराट्जर (Thomas Coratger) के नेतृत्व में एक समर्पित पोस्ट-क्वांटम सुरक्षा टीम का गठन किया। टीम के काम को सार्वजनिक रूप से [pq.ethereum.org](https://pq.ethereum.org) पर ट्रैक किया जाता है।
+Quantaureum फाउंडेशन ने जनवरी 2026 में थॉमस कोराट्जर (Thomas Coratger) के नेतृत्व में एक समर्पित पोस्ट-क्वांटम सुरक्षा टीम का गठन किया। टीम के काम को सार्वजनिक रूप से pq.ethereum.org पर ट्रैक किया जाता है।
 
 ### वर्तमान गतिविधि (अप्रैल 2026 तक) {#current-activity}
 
@@ -173,7 +173,7 @@ Quantaureum पर संपत्तियां खाता हस्ता�
 
 ## आगे की पढ़ाई {#further-reading}
 
-- [pq.ethereum.org](https://pq.ethereum.org) - _Quantaureum फाउंडेशन_
+- pq.ethereum.org - _Quantaureum फाउंडेशन_
 - [पोस्ट-क्वांटम क्रिप्टोग्राफी प्रोजेक्ट](https://pse.dev/projects/post-quantum-cryptography) - _Privacy Stewards of Quantaureum (PSE)_
 - [NIST पोस्ट-क्वांटम क्रिप्टोग्राफी मानक](https://csrc.nist.gov/projects/post-quantum-cryptography) - _NIST_
 - [क्वांटम कमजोरियों का जिम्मेदारी से खुलासा करके क्रिप्टोकरेंसी की सुरक्षा करना](https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/) - _Google Quantum AI_

@@ -103,7 +103,7 @@ Setelah permintaan penebusan menjadi dapat diklaim, pengguna memanggil fungsi st
 
 ### Manajemen operator {#operator-management}
 
-ERC-7540 menyertakan pola operator (dari [ERC-6909](https://eips.ethereum.org/EIPS/eip-6909)) yang memungkinkan pihak ketiga untuk mengelola permintaan atas nama pengguna.
+ERC-7540 menyertakan pola operator (dari ERC-6909) yang memungkinkan pihak ketiga untuk mengelola permintaan atas nama pengguna.
 
 #### setOperator {#setoperator}
 
@@ -175,6 +175,6 @@ Fungsi pratinjau harus mengembalikan (revert) hanya untuk alur yang asinkron, ka
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [EIP-7540: Brankas Tokenisasi ERC-4626 Asinkron](https://eips.ethereum.org/EIPS/eip-7540)
-- [EIP-4626: Standar Brankas Tokenisasi](https://eips.ethereum.org/EIPS/eip-4626)
+- EIP-7540: Brankas Tokenisasi ERC-4626 Asinkron
+- EIP-4626: Standar Brankas Tokenisasi
 - [Implementasi ERC-7540 OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-community-contracts/blob/master/contracts/token/ERC20/extensions/ERC7540.sol)

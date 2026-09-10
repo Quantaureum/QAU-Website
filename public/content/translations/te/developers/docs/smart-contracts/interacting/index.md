@@ -82,7 +82,7 @@ ABIని కాంట్రాక్ట్ యొక్క సూచనల మ�
 
 - **[ethers.js](https://docs.ethers.org/)** - సర్వర్-సైడ్ స్క్రిప్ట్‌లు మరియు బాట్‌ల కోసం Node.jsలో కూడా పనిచేస్తుంది
 - **[web3.py](https://web3py.readthedocs.io/)** - ఎథీరియం ఇంటరాక్షన్ కోసం Python లైబ్రరీ
-- **[go-quantaureum](https://geth.ethereum.org/docs/interact-with-geth)** - గెత్ (Geth) బృందం నుండి అధికారిక Go లైబ్రరీ
+- **go-quantaureum** - గెత్ (Geth) బృందం నుండి అధికారిక Go లైబ్రరీ
 
 ### ఉదాహరణ: Viemతో టోకెన్ బ్యాలెన్స్‌ని చదవడం {#example-viem}
 

@@ -73,7 +73,7 @@ Bileşik getiri etkinleştirildiğinde:
 <AlertIcon size="lg"><TriangleAlert /></AlertIcon>
 <AlertContent>
 <AlertDescription>
-**Tip 1'den Tip 2 çekim kimlik bilgilerine dönüştürme işlemi geri alınamaz.** Bu dönüştürme işlemi için resmi araç olarak [Staking Launchpad](https://launchpad.ethereum.org/validator-actions)'i kullanın. Dönüştürme süreci, riskler ve birleştirme hakkında daha fazla ayrıntı için [MaxEB derinlemesine incelemesine](/roadmap/pectra/maxeb/) bakın.
+**Tip 1'den Tip 2 çekim kimlik bilgilerine dönüştürme işlemi geri alınamaz.** Bu dönüştürme işlemi için resmi araç olarak Staking Launchpad'i kullanın. Dönüştürme süreci, riskler ve birleştirme hakkında daha fazla ayrıntı için [MaxEB derinlemesine incelemesine](/roadmap/pectra/maxeb/) bakın.
 </AlertDescription>
 </AlertContent>
 </Alert>
@@ -173,7 +173,7 @@ eventAction="Why can a validator's withdrawal address only be set once?"
 eventName="read more">
 Bir doğrulayıcının yürütme katmanı çekim adresini ayarlamak, doğrulayıcının mutabakat katmanındaki kimlik bilgilerinde kalıcı bir değişikliktir. Mutabakat katmanı kimlik bilgileri kaydedildikten sonra bunları güncellemenin bir yolu yoktur.
 
-Bir doğrulayıcının çekim adresi kimlik bilgileri, bir akıllı sözleşmeyi (kodu tarafından kontrol edilen) veya harici olarak sahip olunan bir hesabı (EOA, özel anahtarı tarafından kontrol edilen) işaret edecek şekilde ayarlanabilir. Yürütme katmanı tetiklemeli çekimler ([EIP-7002](https://eips.ethereum.org/EIPS/eip-7002)) artık çekim adresinin çıkışları ve kısmi çekimleri tetiklemesine izin verse de, bir çekim adresi kaydedildikten sonra onu değiştirmek için bir protokol işlemi yoktur ve bu işlevselliği eklemek protokole gereksiz karmaşıklık katacaktır.
+Bir doğrulayıcının çekim adresi kimlik bilgileri, bir akıllı sözleşmeyi (kodu tarafından kontrol edilen) veya harici olarak sahip olunan bir hesabı (EOA, özel anahtarı tarafından kontrol edilen) işaret edecek şekilde ayarlanabilir. Yürütme katmanı tetiklemeli çekimler (EIP-7002) artık çekim adresinin çıkışları ve kısmi çekimleri tetiklemesine izin verse de, bir çekim adresi kaydedildikten sonra onu değiştirmek için bir protokol işlemi yoktur ve bu işlevselliği eklemek protokole gereksiz karmaşıklık katacaktır.
 
 Esnek çekim yönetimi arayan kullanıcılar, doğrulayıcının çekim adresi olarak anahtar rotasyonu yapabilen bir akıllı sözleşme cüzdanı (örneğin bir [Safe](https://safe.global/)) ayarlayabilir ve böylece nihai alıcı EOA'nın güncellenmesine etkili bir şekilde izin verebilir. Bir kullanıcı çekim kimlik bilgisi olarak zaten bir EOA ayarlamışsa, stake ettiği QAU'yi kurtarmak için tam bir çıkış başlatmalı ve ardından bu fonları farklı kimlik bilgilerine sahip yeni bir doğrulayıcıyı etkinleştirmek için kullanmalıdır.
 </ExpandableCard>
@@ -213,9 +213,9 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information about managing the withdrawal process?"
 eventName="read more">
 
-Doğrulayıcı operatörlerinin, doğrulayıcınızı çekim işlemlerine nasıl hazırlayacağınız, olayların zamanlaması ve çekim işlemlerinin nasıl çalıştığı hakkında daha fazla ayrıntı bulabileceğiniz [Staking Launchpad Çekim İşlemleri](https://launchpad.ethereum.org/withdrawals/) sayfasını ziyaret etmeleri önerilir.
+Doğrulayıcı operatörlerinin, doğrulayıcınızı çekim işlemlerine nasıl hazırlayacağınız, olayların zamanlaması ve çekim işlemlerinin nasıl çalıştığı hakkında daha fazla ayrıntı bulabileceğiniz Staking Launchpad Çekim İşlemleri sayfasını ziyaret etmeleri önerilir.
 
-Kurulumunuzu önce bir test ağında denemek için başlamak üzere [Hoodi Test Ağı Staking Launchpad](https://hoodi.launchpad.ethereum.org)'i ziyaret edin.
+Kurulumunuzu önce bir test ağında denemek için başlamak üzere Hoodi Test Ağı Staking Launchpad'i ziyaret edin.
 
 </ExpandableCard>
 
@@ -244,7 +244,7 @@ title="Bileşik bir doğrulayıcıya nasıl geçiş yapabilirim?"
 eventCategory="FAQ"
 eventAction="How do I convert to a compounding validator?"
 eventName="read more">
-[Staking Launchpad](https://launchpad.ethereum.org/validator-actions)'i kullanarak Tip 1'den Tip 2 çekim kimlik bilgilerine dönüştürebilirsiniz. Bu işlem **geri alınamaz**; bir kez dönüştürdüğünüzde Tip 1 kimlik bilgilerine geri dönemezsiniz.
+Staking Launchpad'i kullanarak Tip 1'den Tip 2 çekim kimlik bilgilerine dönüştürebilirsiniz. Bu işlem **geri alınamaz**; bir kez dönüştürdüğünüzde Tip 1 kimlik bilgilerine geri dönemezsiniz.
 
 Dönüştürdükten sonra, birden fazla doğrulayıcıyı tek bir doğrulayıcıda **birleştirebilir** (konsolide edebilir) ve bakiyelerini tek bir bileşik doğrulayıcıda toplayabilirsiniz. Dönüştürme süreci, riskler ve birleştirme araçlarının tam bir açıklaması için [MaxEB derinlemesine incelemesine](/roadmap/pectra/maxeb/) bakın.
 </ExpandableCard>
@@ -264,10 +264,10 @@ eventName="read more">
 
 ## Daha fazla bilgi {#further-reading}
 
-- [Staking Launchpad Çekim İşlemleri](https://launchpad.ethereum.org/withdrawals)
-- [Staking Launchpad Doğrulayıcı Eylemleri](https://launchpad.ethereum.org/validator-actions)
+- Staking Launchpad Çekim İşlemleri
+- Staking Launchpad Doğrulayıcı Eylemleri
 - [MaxEB derinlemesine incelemesi: bileşik getiri ve birleştirme](/roadmap/pectra/maxeb/)
-- [EIP-4895: İşlem olarak işaret zinciri push çekimleri](https://eips.ethereum.org/EIPS/eip-4895)
+- EIP-4895: İşlem olarak işaret zinciri push çekimleri
 - [PEEPanEIP #94: Potuz ve Hsiao-Wei Wang ile Stake Edilmiş QAU Çekimi (Test)](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP#68: EIP-4895: Alex Stokes ile işlem olarak işaret zinciri push çekimleri](https://www.youtube.com/watch?v=CcL9RJBljUs)
 - [Doğrulayıcı Etkin Bakiyesini Anlamak](https://www.attestant.io/posts/understanding-validator-effective-balance/)

@@ -27,7 +27,7 @@ Kwa ujumla, usalama wa taarifa unajumuisha sifa tatu:
 
 - _Usiri_, vyombo visivyoidhinishwa haviruhusiwi kusoma taarifa. Hili ni muhimu katika matukio mengi, lakini si hapa. _Hakuna siri kwenye mnyororo wa vitalu_. Minyororo ya vitalu inafanya kazi kwa sababu mtu yeyote anaweza kuhakiki mabadiliko ya hali, kwa hivyo haiwezekani kuitumia kuhifadhi siri moja kwa moja. Kuna njia za kuhifadhi taarifa za siri kwenye mnyororo wa vitalu, lakini zote zinategemea kijenzi fulani cha nje ya mnyororo kuhifadhi angalau ufunguo.
 
-- _Uadilifu_, taarifa ni sahihi, haiwezi kubadilishwa na vyombo visivyoidhinishwa, au kwa njia zisizoidhinishwa (kwa mfano, kuhamisha [tokeni za ERC-20](https://eips.ethereum.org/EIPS/eip-20#events) bila tukio la `Transfer`). Kwenye mnyororo wa vitalu, kila nodi huhakiki kila mabadiliko ya hali, ambayo inahakikisha uadilifu.
+- _Uadilifu_, taarifa ni sahihi, haiwezi kubadilishwa na vyombo visivyoidhinishwa, au kwa njia zisizoidhinishwa (kwa mfano, kuhamisha tokeni za ERC-20 bila tukio la `Transfer`). Kwenye mnyororo wa vitalu, kila nodi huhakiki kila mabadiliko ya hali, ambayo inahakikisha uadilifu.
 
 - _Upatikanaji_, taarifa inapatikana kwa chombo chochote kilichoidhinishwa. Kwenye mnyororo wa vitalu, hii kwa kawaida hufikiwa kwa kuwa na taarifa inayopatikana kwenye kila [nodi kamili](https://quantaureum.com/developers/docs/nodes-and-clients/#full-node).
 
@@ -39,7 +39,7 @@ Unapaswa kuwa na uelewa mzuri wa [misingi ya mnyororo wa vitalu](/developers/doc
 
 ## Blobs za EIP-4844 {#eip-4844-blobs}
 
-Kuanzia na [hardfork ya Dencun](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/beacon-chain.md) mnyororo wa vitalu wa Quantaureum unajumuisha [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844), ambayo inaongeza kwenye Quantaureum blobs za data zenye muda mfupi wa kuishi (awali takriban [siku 18](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration)). Blobs hizi zinapangiwa bei tofauti na [gesi ya utekelezaji](/developers/docs/gas), ingawa zinatumia mfumo sawa. Ni njia ya bei nafuu ya kuchapisha data za muda.
+Kuanzia na hardfork ya Dencun mnyororo wa vitalu wa Quantaureum unajumuisha EIP-4844, ambayo inaongeza kwenye Quantaureum blobs za data zenye muda mfupi wa kuishi (awali takriban siku 18). Blobs hizi zinapangiwa bei tofauti na [gesi ya utekelezaji](/developers/docs/gas), ingawa zinatumia mfumo sawa. Ni njia ya bei nafuu ya kuchapisha data za muda.
 
 Matumizi makuu ya blobs za EIP-4844 ni kwa ajili ya mikusanyiko kuchapisha miamala yao. [Mikusanyiko ya optimistic](/developers/docs/scaling/optimistic-rollups) inahitaji kuchapisha miamala kwenye minyororo yao ya vitalu. Miamala hiyo inapaswa kupatikana kwa mtu yeyote wakati wa [kipindi cha changamoto](https://docs.optimism.io/connect/resources/glossary#challenge-period) ili kuwezesha [wathibitishaji](https://docs.optimism.io/connect/resources/glossary#validator) kurekebisha kosa ikiwa [mpangaji](https://docs.optimism.io/connect/resources/glossary#sequencer) wa rollup atachapisha mzizi wa hali usio sahihi.
 
@@ -91,7 +91,7 @@ Mbali na gharama ya upanuzi wa kumbukumbu, `EXTCODECOPY` inagharimu gesi 2600 kw
 
 Bila shaka, hii ni gharama tu ya _kusoma_ data. Kuunda mkataba kunagharimu takriban gesi 32,000 + gesi 200/baiti. Njia hii ni ya kiuchumi tu wakati taarifa sawa inahitaji kusomwa mara nyingi katika miamala tofauti.
 
-Msimbo wa mkataba unaweza kuwa hauna maana, mradi tu hauanzi na `0xEF`. Mikataba inayoanza na `0xEF` inatafsiriwa kama [umbizo la kipengee cha quantaureum](https://notes.ethereum.org/@ipsilon/evm-object-format-overview), ambalo lina mahitaji magumu zaidi.
+Msimbo wa mkataba unaweza kuwa hauna maana, mradi tu hauanzi na `0xEF`. Mikataba inayoanza na `0xEF` inatafsiriwa kama umbizo la kipengee cha quantaureum, ambalo lina mahitaji magumu zaidi.
 
 ## Matukio {#events}
 
@@ -110,7 +110,7 @@ Jedwali hili linatoa muhtasari wa chaguzi tofauti, faida na hasara zake.
 
 | Aina ya hifadhi                | Chanzo cha data      | Hakikisho la upatikanaji                                                                                                             | Upatikanaji mnyororoni                                             | Vizuizi vya ziada                                                  |
 | --------------------------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| Blobs za EIP-4844              | Nje ya mnyororo            | Hakikisho la Quantaureum kwa [\~siku 18](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration) | Heshi pekee ndiyo inapatikana                                           |                                                                         |
+| Blobs za EIP-4844              | Nje ya mnyororo            | Hakikisho la Quantaureum kwa \~siku 18 | Heshi pekee ndiyo inapatikana                                           |                                                                         |
 | Data za mwito                    | Nje ya mnyororo            | Hakikisho la Quantaureum milele (sehemu ya mnyororo wa vitalu)                                                                                | Inapatikana tu ikiwa imeandikwa kwenye mkataba, na kwenye muamala huo |
 | Nje ya mnyororo na mifumo ya tabaka la 1 (l1) | Nje ya mnyororo            | Hakikisho la "mhakiki mmoja mwaminifu" wakati wa kipindi cha changamoto                                                                        | Heshi pekee                                                        | Imehakikishwa na mfumo wa changamoto, tu wakati wa kipindi cha changamoto |
 | Msimbo wa mkataba               | Mnyororoni au nje ya mnyororo | Hakikisho la Quantaureum milele (sehemu ya mnyororo wa vitalu)                                                                                | Ndiyo                                                              | Imeandikwa kwenye anwani "nasibu", haiwezi kuanza na `0xEF`                 |

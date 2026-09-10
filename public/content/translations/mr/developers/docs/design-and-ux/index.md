@@ -16,7 +16,7 @@ lang: mr
 
 - [Web3 ला अधिक UX संशोधक आणि डिझायनर्सची आवश्यकता आहे](https://blog.akasha.org/akasha-conversations-9-web3-needs-more-ux-researchers-and-designers) - सध्याच्या डिझाइन परिपक्वतेचा आढावा
 - [Web3 मधील UX संशोधनासाठी एक सोपे मार्गदर्शक](https://uxplanet.org/a-complete-guide-to-ux-research-for-web-3-0-products-d6bead20ebb1) - संशोधन कसे करावे याबद्दल सोपे मार्गदर्शक
-- [Web3 मध्ये UX निर्णयांकडे कसे जावे](https://archive.devcon.org/archive/watch/6/data-empathy-how-to-approach-ux-decisions-in-web3/) - परिमाणात्मक आणि गुणात्मक संशोधनाचा संक्षिप्त आढावा आणि त्या दोन्हींमधील फरक (व्हिडिओ, 6 मिनिटे)
+- Web3 मध्ये UX निर्णयांकडे कसे जावे - परिमाणात्मक आणि गुणात्मक संशोधनाचा संक्षिप्त आढावा आणि त्या दोन्हींमधील फरक (व्हिडिओ, 6 मिनिटे)
 - [Web3 मध्ये UX संशोधक असणे](https://medium.com/@georgia.rakusen/what-its-like-being-a-user-researcher-in-web3-6a4bcc096849) - Web3 मध्ये UX संशोधक असणे कसे असते यावर एक वैयक्तिक दृष्टिकोन
 
 ## Web3 मधील संशोधन अभ्यास {#research-in-web3}
@@ -38,7 +38,7 @@ lang: mr
 | <Tag status="error">DeFi</Tag>                  | [कव्हरेज पूल्स](https://github.com/threshold-network/UX-User-Research/tree/main/Keep%20Coverage%20Pool)                                                                           |
 | <Tag status="error">DeFi</Tag>                  | [कॉन्सेन्सिस्: विकेंद्रित वित्त (DeFi) वापरकर्ता संशोधन अहवाल 2022](https://cdn2.hubspot.net/hubfs/4795067/ConsenSys%20Codefi-Defi%20User%20ResearchReport.pdf)                                            |
 | <Tag variant="solid">मेटाव्हर्स</Tag>             | [मेटाव्हर्स: वापरकर्ता संशोधन अहवाल](https://www.politico.com/f/?id=00000187-7685-d820-a7e7-7e85d1420000)                                                                             |
-| <Tag variant="solid">मेटाव्हर्स</Tag>             | [सफारीवर जाणे: मेटाव्हर्समधील वापरकर्त्यांचे संशोधन](https://archive.devcon.org/archive/watch/6/going-on-safari-researching-users-in-the-metaverse/?tab=YouTube) (व्हिडिओ, 27 मिनिटे)  |
+| <Tag variant="solid">मेटाव्हर्स</Tag>             | सफारीवर जाणे: मेटाव्हर्समधील वापरकर्त्यांचे संशोधन (व्हिडिओ, 27 मिनिटे)  |
 
 ## Web3 साठी डिझाइन {#design-for-web3}
 

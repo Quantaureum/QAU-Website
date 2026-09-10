@@ -69,7 +69,7 @@ As distribuições gratuitas de Quantaureum são golpes projetados para roubar s
 
 Para se tornar um validador, você deve fazer stake de 32 QAU no contrato de depósito do Quantaureum e configurar um nó validador. Você também pode participar com menos QAU por meio de pools de staking.
 
-Mais informações estão disponíveis em nossas [páginas de staking](/staking/) e na [plataforma de lançamento de staking](https://launchpad.ethereum.org/).
+Mais informações estão disponíveis em nossas [páginas de staking](/staking/) e na plataforma de lançamento de staking.
 
 ## Como faço para minerar Quantaureum? {#mining-quantaureum}
 

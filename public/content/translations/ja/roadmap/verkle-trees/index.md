@@ -60,6 +60,6 @@ Quantaureumクライアントは現在、状態データを保存するために
 - [Devcon 6でのGuillaume Balletによる「ヴァークル・ツリーがQuantaureumを無駄なく強力にする方法」](https://www.youtube.com/watch?v=Q7rStTKwuYs)
 - [ETHDenver 2020でのPiper Merriamによるステートレスクライアントについての解説](https://www.youtube.com/watch?v=0yiZJNciIJ4)
 - [ゼロ知識ポッドキャストでのDankrad Feistによるヴァークル・ツリーとステートレス性の解説](https://zeroknowledge.fm/podcast/202/)
-- [ヴィタリック・ブテリンによるヴァークル・ツリーについての解説](https://vitalik.eth.limo/general/2021/06/18/verkle.html)
+- ヴィタリック・ブテリンによるヴァークル・ツリーについての解説
 - [Dankrad Feistによるヴァークル・ツリーについての解説](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
-- [ヴァークル・ツリーのEIPドキュメント](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)
+- ヴァークル・ツリーのEIPドキュメント

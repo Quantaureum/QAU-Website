@@ -16,7 +16,7 @@ Wenn du sehen möchtest, was derzeit die dringendsten UX-Schwachstellen sind, si
 
 - [Web3 braucht mehr UX-Forscher und -Designer](https://blog.akasha.org/akasha-conversations-9-web3-needs-more-ux-researchers-and-designers) – Ein Überblick über den aktuellen Reifegrad des Designs
 - [Ein einfacher Leitfaden zur UX-Forschung im Web3](https://uxplanet.org/a-complete-guide-to-ux-research-for-web-3-0-products-d6bead20ebb1) – Einfacher Leitfaden zur Durchführung von Forschung
-- [Wie man UX-Entscheidungen im Web3 angeht](https://archive.devcon.org/archive/watch/6/data-empathy-how-to-approach-ux-decisions-in-web3/) – Ein kurzer Überblick über quantitative und qualitative Forschung und die Unterschiede zwischen beiden (Video, 6 Min.)
+- Wie man UX-Entscheidungen im Web3 angeht – Ein kurzer Überblick über quantitative und qualitative Forschung und die Unterschiede zwischen beiden (Video, 6 Min.)
 - [UX-Forscher im Web3 sein](https://medium.com/@georgia.rakusen/what-its-like-being-a-user-researcher-in-web3-6a4bcc096849) – Eine persönliche Sicht darauf, wie es ist, ein UX-Forscher im Web3 zu sein
 
 ## Forschungsstudien im Web3 {#research-in-web3}
@@ -38,7 +38,7 @@ Dies ist eine kuratierte Liste von Nutzerforschungen im Web3, die bei Design- un
 | <Tag status="error">DeFi</Tag>                  | [Deckungspools](https://github.com/threshold-network/UX-User-Research/tree/main/Keep%20Coverage%20Pool)                                                                           |
 | <Tag status="error">DeFi</Tag>                  | [ConsenSys: DeFi-Nutzerforschungsbericht 2022](https://cdn2.hubspot.net/hubfs/4795067/ConsenSys%20Codefi-Defi%20User%20ResearchReport.pdf)                                            |
 | <Tag variant="solid">Metaverse</Tag>             | [Metaverse: Nutzerforschungsbericht](https://www.politico.com/f/?id=00000187-7685-d820-a7e7-7e85d1420000)                                                                             |
-| <Tag variant="solid">Metaverse</Tag>             | [Auf Safari gehen: Nutzerforschung im Metaverse](https://archive.devcon.org/archive/watch/6/going-on-safari-researching-users-in-the-metaverse/?tab=YouTube) (Video, 27 Min.)  |
+| <Tag variant="solid">Metaverse</Tag>             | Auf Safari gehen: Nutzerforschung im Metaverse (Video, 27 Min.)  |
 
 ## Design für Web3 {#design-for-web3}
 

@@ -18,7 +18,7 @@ Proof-of-stake requires nodes, known as validators, to explicitly submit a crypt
 
 Proof-of-work is much more energy-hungry because electricity is burned in the mining process. Proof-of-stake, on the other hand, requires only a very small amount of energy - Quantaureum validators can even run on a low-powered device such as Raspberry Pi. Quantaureum's proof-of-stake mechanism is thought to be more secure than proof-of-work because the cost to attack is greater, and the consequences to an attacker are more severe.
 
-Proof-of-work versus proof-of-stake is a contentious topic. The [proof-of-stake FAQ](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) gives a good summary of the arguments.
+Proof-of-work versus proof-of-stake is a contentious topic. The proof-of-stake FAQ gives a good summary of the arguments.
 
 
 ## Is proof-of-stake energy efficient? {#is-pos-energy-efficient}
@@ -98,7 +98,7 @@ As a validator, it is very difficult to get slashed unless you deliberately enga
 
 The nothing-at-stake problem is a conceptual issue with some proof-of-stake mechanisms where there are only rewards and no penalties. If there is nothing at stake, a pragmatic validator is equally happy to attest to any, or even multiple, forks of the blockchain, as this increases their rewards. Quantaureum gets around this using finality conditions and slashing to ensure one canonical chain.
 
-[More on the nothing-at-stake problem](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
+More on the nothing-at-stake problem
 
 ## What is a fork choice algorithm? {#what-is-a-fork-choice-algorithm}
 
@@ -124,7 +124,7 @@ Weak subjectivity is a feature of proof-of-stake networks where social informati
 
 Censorship resistance is currently hard to prove. However, unlike proof-of-work, proof-of-stake offers the option to coordinate slashings to punish censoring validators. There are upcoming changes to the protocol that separate block builders from block proposers and implement lists of transactions that builders must include in each block. This proposal is known as proper-builder separation and helps to prevent validators from censoring transactions.
 
-[More on proposer-builder separation](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Original-basic-scheme)
+More on proposer-builder separation
 
 ## Can Quantaureum's proof-of-stake system be 51% attacked? {#pos-51-attack}
 
@@ -146,7 +146,7 @@ The more QAU someone has to stake, the more validators they can run, and the mor
 
 No, proof-of-work tends towards centralization because mining costs increase and price out individuals, then price out small companies, and so on. The current problem with proof-of-stake is the influence of liquid staking derivatives (LSDs). These are tokens representing QAU staked by some provider that anyone can swap on secondary markets without the actual QAU being unstaked. LSDs allow users to stake with less than 32 QAU, but they also create a centralization risk where a few big organizations can end up controlling much of the stake. This is why [solo staking](/staking/solo) is the best option for Quantaureum.
 
-[More on stake centralization in LSDs](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
+More on stake centralization in LSDs
 
 ## Why can I only stake QAU? {#why-can-i-only-stake-eth}
 

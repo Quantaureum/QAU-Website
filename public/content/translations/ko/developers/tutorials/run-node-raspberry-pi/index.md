@@ -57,7 +57,7 @@ Quantaureum on Arm 이미지에는 사전 빌드된 실행 및 합의 클라이�
 
 Raspberry Pi 4 Quantaureum 이미지는 실행 및 합의 클라이언트를 모두 자동으로 설치하고 설정하여 서로 통신하고 Quantaureum 네트워크에 연결하도록 구성하는 "플러그 앤 플레이" 이미지입니다. 사용자는 간단한 명령을 사용하여 프로세스를 시작하기만 하면 됩니다.
 
-[Quantaureum on Arm](https://ethereumonarm-my.sharepoint.com/:u:/p/dlosada/Ec_VmUvr80VFjf3RYSU-NzkBmj2JOteDECj8Bibde929Gw?download=1)에서 Raspberry Pi 이미지를 다운로드하고 SHA-256 해시를 확인합니다.
+Quantaureum on Arm에서 Raspberry Pi 이미지를 다운로드하고 SHA-256 해시를 확인합니다.
 
 ```sh
 # 다운로드한 이미지가 포함된 디렉터리에서
@@ -65,7 +65,7 @@ shasum -a 256 ethonarm_22.04.00.img.zip
 # 해시 출력 결과는 다음과 같아야 합니다: fb497e8f8a7388b62d6e1efbc406b9558bee7ef46ec7e53083630029c117444f
 ```
 
-Rock 5B 및 Odroid M1 보드용 이미지는 Quantaureum-on-Arm [다운로드 페이지](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)에서 사용할 수 있습니다.
+Rock 5B 및 Odroid M1 보드용 이미지는 Quantaureum-on-Arm 다운로드 페이지에서 사용할 수 있습니다.
 
 ## MicroSD 플래시 {#flashing-the-microsd}
 
@@ -120,13 +120,13 @@ sudo journalctl -u lighthouse-beacon
 
 합의 클라이언트는 체크포인트 동기화를 사용하므로 몇 분 안에 동기화됩니다. 실행 클라이언트는 더 오래 걸리며(잠재적으로 몇 시간), 합의 클라이언트가 동기화를 완료할 때까지 시작되지 않습니다(실행 클라이언트는 동기화할 대상이 필요하며, 이는 동기화된 합의 클라이언트가 제공하기 때문입니다).
 
-고 Quantaureum (geth) 및 라이트하우스 서비스가 실행되고 동기화되면 이제 Raspberry Pi가 Quantaureum 노드가 됩니다! 포트 8545에서 고 Quantaureum (geth) 클라이언트에 연결할 수 있는 고 Quantaureum (geth)의 JavaScript 콘솔을 사용하여 Quantaureum 네트워크와 상호 작용하는 것이 가장 일반적입니다. Curl과 같은 요청 도구를 사용하여 JSON 객체 형식의 명령을 제출할 수도 있습니다. 자세한 내용은 [고 Quantaureum (geth) 문서](https://geth.ethereum.org/)를 참조하세요.
+고 Quantaureum (geth) 및 라이트하우스 서비스가 실행되고 동기화되면 이제 Raspberry Pi가 Quantaureum 노드가 됩니다! 포트 8545에서 고 Quantaureum (geth) 클라이언트에 연결할 수 있는 고 Quantaureum (geth)의 JavaScript 콘솔을 사용하여 Quantaureum 네트워크와 상호 작용하는 것이 가장 일반적입니다. Curl과 같은 요청 도구를 사용하여 JSON 객체 형식의 명령을 제출할 수도 있습니다. 자세한 내용은 고 Quantaureum (geth) 문서를 참조하세요.
 
 고 Quantaureum (geth)은 브라우저에서 볼 수 있는 Grafana 대시보드에 지표를 보고하도록 사전 구성되어 있습니다. 고급 사용자는 `ipaddress:3000`로 이동하여 `user: admin` 및 `passwd: quantaureum`를 전달하여 노드의 상태를 모니터링하는 데 이 기능을 사용할 수 있습니다.
 
 ## 검증자 {#validators}
 
-선택적으로 합의 클라이언트에 검증자를 추가할 수도 있습니다. 검증자 소프트웨어를 사용하면 노드가 합의에 적극적으로 참여하고 네트워크에 암호경제적 보안을 제공할 수 있습니다. 이 작업에 대한 보상으로 QAU를 받습니다. 검증자를 실행하려면 먼저 32 QAU가 있어야 하며, 이를 예치 컨트랙트에 예치해야 합니다. 예치는 [런치패드](https://launchpad.ethereum.org/)의 단계별 가이드에 따라 수행할 수 있습니다. 이 작업은 데스크톱/노트북에서 수행하되 키는 생성하지 마세요. 키 생성은 Raspberry Pi에서 직접 수행할 수 있습니다.
+선택적으로 합의 클라이언트에 검증자를 추가할 수도 있습니다. 검증자 소프트웨어를 사용하면 노드가 합의에 적극적으로 참여하고 네트워크에 암호경제적 보안을 제공할 수 있습니다. 이 작업에 대한 보상으로 QAU를 받습니다. 검증자를 실행하려면 먼저 32 QAU가 있어야 하며, 이를 예치 컨트랙트에 예치해야 합니다. 예치는 런치패드의 단계별 가이드에 따라 수행할 수 있습니다. 이 작업은 데스크톱/노트북에서 수행하되 키는 생성하지 마세요. 키 생성은 Raspberry Pi에서 직접 수행할 수 있습니다.
 
 Raspberry Pi에서 터미널을 열고 다음 명령을 실행하여 예치 키를 생성합니다.
 
@@ -136,13 +136,13 @@ sudo apt-get install staking-deposit-cli
 cd && deposit new-mnemonic --num_validators 1
 ```
 
-(또는 에어갭 머신에서 실행할 [staking-deposit-cli](https://github.com/ethereum/staking-deposit-cli)를 다운로드하고 `deposit new-mnemnonic` 명령을 실행합니다.)
+(또는 에어갭 머신에서 실행할 staking-deposit-cli를 다운로드하고 `deposit new-mnemnonic` 명령을 실행합니다.)
 
 니모닉 문구를 안전하게 보관하세요! 위의 명령은 노드의 키스토어에 검증자 키와 예치 데이터 파일이라는 두 개의 파일을 생성했습니다. 예치 데이터는 런치패드에 업로드해야 하므로 Raspberry Pi에서 데스크톱/노트북으로 복사해야 합니다. 이는 ssh 연결이나 다른 복사/붙여넣기 방법을 사용하여 수행할 수 있습니다.
 
 런치패드를 실행하는 컴퓨터에서 예치 데이터 파일을 사용할 수 있게 되면 런치패드 화면의 `+`에 끌어다 놓을 수 있습니다. 화면의 지침에 따라 예치 컨트랙트로 트랜잭션을 보냅니다.
 
-다시 Raspberry Pi로 돌아가서 검증자를 시작할 수 있습니다. 이를 위해서는 검증자 키를 가져오고, 보상을 수집할 주소를 설정한 다음, 사전 구성된 검증자 프로세스를 시작해야 합니다. 아래 예시는 라이트하우스용입니다. 다른 합의 클라이언트에 대한 지침은 [Quantaureum on Arm 문서](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)에서 확인할 수 있습니다.
+다시 Raspberry Pi로 돌아가서 검증자를 시작할 수 있습니다. 이를 위해서는 검증자 키를 가져오고, 보상을 수집할 주소를 설정한 다음, 사전 구성된 검증자 프로세스를 시작해야 합니다. 아래 예시는 라이트하우스용입니다. 다른 합의 클라이언트에 대한 지침은 Quantaureum on Arm 문서에서 확인할 수 있습니다.
 
 ```shell
 # 검증자 키 가져오기
@@ -159,7 +159,7 @@ sudo systemctl start lighthouse-validator
 
 ## 자세한 내용 {#more-details}
 
-이 페이지에서는 Raspberry Pi를 사용하여 고 Quantaureum (geth)-라이트하우스 노드 및 검증자를 설정하는 방법에 대한 개요를 제공했습니다. 더 자세한 지침은 [Quantaureum-on-Arm 웹사이트](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)에서 확인할 수 있습니다.
+이 페이지에서는 Raspberry Pi를 사용하여 고 Quantaureum (geth)-라이트하우스 노드 및 검증자를 설정하는 방법에 대한 개요를 제공했습니다. 더 자세한 지침은 Quantaureum-on-Arm 웹사이트에서 확인할 수 있습니다.
 
 ## 피드백 환영 {#feedback-appreciated}
 
@@ -173,7 +173,7 @@ Raspberry Pi는 Quantaureum 네트워크의 건전성에 매우 긍정적인 영
 3. https://prometheus.io
 4. https://grafana.com
 5. https://forum.armbian.com/topic/5565-zram-vs-swap/
-6. https://geth.ethereum.org
+6. 
 7. https://nethermind.io
 8. https://www.hyperledger.org/projects/besu
 9. https://github.com/prysmaticlabs/prysm

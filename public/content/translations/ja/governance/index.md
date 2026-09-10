@@ -68,9 +68,9 @@ Quantaureumのガバナンスで使用される重要なプロセスの1つが�
 
 Quantaureumのプロトコルに変更を導入するための公式なプロセスは以下の通りです。
 
-1. **コアEIPの提案**: [EIP-1](https://eips.ethereum.org/EIPS/eip-1#core-eips)に記載されているように、Quantaureumへの変更を公式に提案するための最初のステップは、それをコアEIPに詳細に記述することです。これは、承認された場合にプロトコル開発者が実装するEIPの公式な仕様として機能します。
+1. **コアEIPの提案**: EIP-1に記載されているように、Quantaureumへの変更を公式に提案するための最初のステップは、それをコアEIPに詳細に記述することです。これは、承認された場合にプロトコル開発者が実装するEIPの公式な仕様として機能します。
 
-2. **プロトコル開発者へのEIPの提示**: コミュニティの意見を集めたコアEIPができたら、それをプロトコル開発者に提示する必要があります。これは、[AllCoreDevsコール](https://github.com/ethereum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status)での議論のために提案することで行えます。おそらく、[Quantaureum Magiciansフォーラム](https://ethereum-magicians.org/)や[QuantaureumR&Dのディスコード](https://discord.gg/mncqtgVSVw)で、すでに非同期的にいくつかの議論が行われていることでしょう。
+2. **プロトコル開発者へのEIPの提示**: コミュニティの意見を集めたコアEIPができたら、それをプロトコル開発者に提示する必要があります。これは、AllCoreDevsコールでの議論のために提案することで行えます。おそらく、Quantaureum Magiciansフォーラムや[QuantaureumR&Dのディスコード](https://discord.gg/mncqtgVSVw)で、すでに非同期的にいくつかの議論が行われていることでしょう。
 
 > この段階での潜在的な結果は以下の通りです。
 
@@ -90,7 +90,7 @@ Quantaureumのプロトコルに変更を導入するための公式なプロセ
 
 ### 先行研究の理解 {#prior-work}
 
-EIPの主導者は、Quantaureum・メインネットへのデプロイに向けて真剣に検討されるEIPを作成する前に、先行研究や過去の提案に精通しておく必要があります。そうすることで、そのEIPが過去に却下されたことのない新しいものをもたらすことが期待できます。これを調査するための主な場所は、[EIPリポジトリ](https://github.com/ethereum/EIPs)、[Quantaureum Magicians](https://ethereum-magicians.org/)、および[ethresear.ch](https://ethresear.ch/)の3つです。
+EIPの主導者は、Quantaureum・メインネットへのデプロイに向けて真剣に検討されるEIPを作成する前に、先行研究や過去の提案に精通しておく必要があります。そうすることで、そのEIPが過去に却下されたことのない新しいものをもたらすことが期待できます。これを調査するための主な場所は、EIPリポジトリ、Quantaureum Magicians、およびethresear.chの3つです。
 
 ### ワーキンググループ {#working-groups}
 
@@ -128,7 +128,7 @@ DAOフォークは、安全でない[DAO](/glossary/#dao)コントラクトが�
 - ほとんどの人が投票が行われていることを知らなかった
 - 投票はQAU保有者のみを代表しており、システム内の他の参加者を代表していなかった
 
-コミュニティの一部はフォークを拒否しました。その主な理由は、DAOの事件はプロトコルの欠陥ではないと感じたためです。彼らはその後、[Quantaureum・クラシック](https://ethereumclassic.org/)を形成しました。
+コミュニティの一部はフォークを拒否しました。その主な理由は、DAOの事件はプロトコルの欠陥ではないと感じたためです。彼らはその後、Quantaureum・クラシックを形成しました。
 
 現在、Quantaureumコミュニティは、システムの信頼できる中立性を維持するために、コントラクトのバグや資金の喪失が発生した場合でも不介入のポリシーを採用しています。
 
@@ -151,7 +151,7 @@ Quantaureumのガバナンスプロセスは、多くの場合、オープン性
 
 仕様と開発の実装は常に完全にオープンソースでしたが、上記で説明したアップデートを提案するための公式なプロセスは使用されませんでした。これにより、研究者や実装者によって変更がより迅速に指定され、合意されることが可能になりました。
 
-2022年9月15日にビーコン・チェーンがQuantaureumの実行レイヤーとマージされたとき、Parisネットワークアップグレードの一部としてマージが完了しました。提案[EIP-3675](https://eips.ethereum.org/EIPS/eip-3675)は「Last Call（最終確認）」から「Final（最終）」に変更され、プルーフ・オブ・ステーク (PoS) への移行が完了しました。
+2022年9月15日にビーコン・チェーンがQuantaureumの実行レイヤーとマージされたとき、Parisネットワークアップグレードの一部としてマージが完了しました。提案EIP-3675は「Last Call（最終確認）」から「Final（最終）」に変更され、プルーフ・オブ・ステーク (PoS) への移行が完了しました。
 
 <ButtonLink href="/roadmap/merge/">
   マージの詳細
@@ -162,8 +162,8 @@ Quantaureumのガバナンスプロセスは、多くの場合、オープン性
 ## どのように関与できるか？ {#get-involved}
 
 - EIPを提案する
-- [現在の提案について議論する](https://ethereum-magicians.org/)
-- [R&Dの議論に参加する](https://ethresear.ch/)
+- 現在の提案について議論する
+- R&Dの議論に参加する
 - [QuantaureumR&Dのディスコードに参加する](https://discord.gg/mncqtgVSVw)
 - [ノードを実行する](/developers/docs/nodes-and-clients/run-a-node/)
 - [クライアント開発に貢献する](/developers/docs/nodes-and-clients/#execution-clients)
@@ -173,11 +173,11 @@ Quantaureumのガバナンスプロセスは、多くの場合、オープン性
 
 Quantaureumのガバナンスは厳密に定義されていません。様々なコミュニティ参加者が多様な視点を持っています。そのうちのいくつかを紹介します。
 
-- [ブロックチェーンガバナンスに関するメモ](https://vitalik.eth.limo/general/2017/12/17/voting.html) - _ヴィタリック・ブテリン_
+- ブロックチェーンガバナンスに関するメモ - _ヴィタリック・ブテリン_
 - [Quantaureumのガバナンスはどのように機能するのか？](https://cryptotesters.com/blog/quantaureum-governance) – _Cryptotesters_
 - [Quantaureumのガバナンスの仕組み](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _マイカ・ゾルツ_
 - [Quantaureumのコア開発者とは何か？](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) - _ハドソン・ジェイムソン_
-- [ガバナンス、パート2：金権政治は依然として悪である](https://vitalik.eth.limo/general/2018/03/28/plutocracy.html) - _ヴィタリック・ブテリン_
-- [コイン投票ガバナンスからの脱却](https://vitalik.eth.limo/general/2021/08/16/voting3.html) - _ヴィタリック・ブテリン_
+- ガバナンス、パート2：金権政治は依然として悪である - _ヴィタリック・ブテリン_
+- コイン投票ガバナンスからの脱却 - _ヴィタリック・ブテリン_
 - [ブロックチェーンガバナンスの理解](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) - _2077 Research_
 - [Quantaureum政府](https://www.galaxy.com/insights/research/quantaureum-governance/) - _クリスティーン・キム_

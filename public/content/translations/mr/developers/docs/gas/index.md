@@ -146,6 +146,6 @@ Quantaureum [स्केलेबिलिटी अपग्रेड्स](/
 - [Quantaureum गॅस स्पष्ट केले](https://defiprime.com/gas)
 - [तुमच्या स्मार्ट कॉन्ट्रॅक्ट्सचा गॅस वापर कमी करणे](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
 - [विकसकांसाठी गॅस अनुकूलन धोरणे](https://www.alchemy.com/overviews/solidity-gas-optimization)
-- [EIP-1559 दस्तऐवज](https://eips.ethereum.org/EIPS/eip-1559).
+- EIP-1559 दस्तऐवज.
 - [Tim Beiko चे EIP-1559 संसाधने](https://hackmd.io/@timbeiko/1559-resources)
 - [EIP-1559: मीम्समधून यंत्रणा वेगळे करणे](https://web.archive.org/web/20241126205908/https://research.2077.xyz/eip-1559-separating-mechanisms-from-memes)

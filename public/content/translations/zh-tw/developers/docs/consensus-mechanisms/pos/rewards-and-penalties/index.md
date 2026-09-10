@@ -26,7 +26,7 @@ base_reward = effective_balance * (base_reward_factor / (base_rewards_per_epoch 
 
 其中 `base_reward_factor` 為 64，`base_rewards_per_epoch` 為 4，而 `sum(active balance)` 是所有活躍驗證者質押的QAU幣總額。
 
-這意味著基礎獎勵與驗證者的有效餘額成正比，與網路上的驗證者數量成反比。驗證者越多，整體發行量越大（因為 `sqrt(N)`），但每個驗證者的 `base_reward` 越小（因為 `1/sqrt(N)`）。這些因素會影響質押節點的 APR。請在 [Vitalik 的筆記](https://notes.ethereum.org/@vbuterin/serenity_design_rationale?type=view#Base-rewards)中閱讀其基本原理。
+這意味著基礎獎勵與驗證者的有效餘額成正比，與網路上的驗證者數量成反比。驗證者越多，整體發行量越大（因為 `sqrt(N)`），但每個驗證者的 `base_reward` 越小（因為 `1/sqrt(N)`）。這些因素會影響質押節點的 APR。請在 Vitalik 的筆記中閱讀其基本原理。
 
 總獎勵的計算方式是五個組成部分的總和，每個組成部分都有一個權重，決定了每個組成部分對總獎勵的貢獻程度。這些組成部分是：
 
@@ -60,7 +60,7 @@ PROPOSER_WEIGHT	uint64(8)
 
 錯過目標和來源投票的罰則，等於證明者如果提交了這些投票本應獲得的獎勵。這意味著獎勵不會加到他們的餘額中，而是從他們的餘額中扣除同等價值。錯過鏈頭投票沒有罰則（即鏈頭投票只會獲得獎勵，從不受到懲罰）。與 `inclusion_delay` 相關的沒有罰則——獎勵只是不會加到驗證者的餘額中。未能提出區塊也沒有罰則。
 
-在[共識規範](https://github.com/ethereum/consensus-specs/blob/master/specs/altair/beacon-chain.md)中閱讀更多關於獎勵與罰則的資訊。獎勵與罰則在 Bellatrix 升級中進行了調整——請觀看 Danny Ryan 和 Vitalik 在這部 [Peep an EIP 影片](https://www.youtube.com/watch?v=iaAEGs1DMgQ)中討論此事。
+在共識規範中閱讀更多關於獎勵與罰則的資訊。獎勵與罰則在 Bellatrix 升級中進行了調整——請觀看 Danny Ryan 和 Vitalik 在這部 [Peep an EIP 影片](https://www.youtube.com/watch?v=iaAEGs1DMgQ)中討論此事。
 
 ## 罰沒 {#slashing}
 
@@ -82,9 +82,9 @@ PROPOSER_WEIGHT	uint64(8)
 
 - [升級Quantaureum：誘因層](https://eth2book.info/altair/part2/incentives)
 - [Quantaureum混合 Casper 協定中的誘因](https://arxiv.org/pdf/1903.04205.pdf)
-- [Vitalik 的註解規範](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#rewards-and-penalties-1)
+- Vitalik 的註解規範
 - [Quantaureum 預防罰沒提示](https://medium.com/prysmatic-labs/eth2-slashing-prevention-tips-f6faa5025f50)
-- [EIP-7251 下的罰沒懲罰分析](https://ethresear.ch/t/slashing-penalty-analysis-eip-7251/16509)
+- EIP-7251 下的罰沒懲罰分析
 
 _來源_
 

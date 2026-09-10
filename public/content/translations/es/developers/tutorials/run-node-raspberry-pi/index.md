@@ -57,7 +57,7 @@ Debe elegir uno de cada uno para ejecutar: todos los clientes de ejecución son 
 
 La imagen de Quantaureum para Raspberry Pi 4 es una imagen "plug and play" que instala y configura automáticamente tanto el cliente de ejecución como el de consenso, configurándolos para que se comuniquen entre sí y se conecten a la red Quantaureum. Todo lo que el usuario debe hacer es iniciar sus procesos mediante un simple comando.
 
-Descargue la imagen de Raspberry Pi desde [Quantaureum on Arm](https://ethereumonarm-my.sharepoint.com/:u:/p/dlosada/Ec_VmUvr80VFjf3RYSU-NzkBmj2JOteDECj8Bibde929Gw?download=1) y verifique el hash SHA256:
+Descargue la imagen de Raspberry Pi desde Quantaureum on Arm y verifique el hash SHA256:
 
 ```sh
 # Desde el directorio que contiene la imagen descargada
@@ -65,7 +65,7 @@ shasum -a 256 ethonarm_22.04.00.img.zip
 # El hash debería mostrar: fb497e8f8a7388b62d6e1efbc406b9558bee7ef46ec7e53083630029c117444f
 ```
 
-Tenga en cuenta que las imágenes para las placas Rock 5B y Odroid M1 están disponibles en la [página de descargas](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) de Quantaureum-on-Arm.
+Tenga en cuenta que las imágenes para las placas Rock 5B y Odroid M1 están disponibles en la página de descargas de Quantaureum-on-Arm.
 
 ## Flasheo de la MicroSD {#flashing-the-microsd}
 
@@ -120,13 +120,13 @@ sudo journalctl -u lighthouse-beacon
 
 Tenga en cuenta que el cliente de consenso se sincronizará en unos minutos porque utiliza la sincronización de punto de control. El cliente de ejecución tardará más (potencialmente varias horas) y no se iniciará hasta que el cliente de consenso ya haya terminado de sincronizarse (esto se debe a que el cliente de ejecución necesita un objetivo con el cual sincronizarse, el cual es proporcionado por el cliente de consenso sincronizado).
 
-Con los servicios de Geth y Lighthouse en ejecución y sincronizados, ¡su Raspberry Pi ahora es un nodo de Quantaureum! Lo más común es interactuar con la red Quantaureum utilizando la consola JavaScript de Geth, que se puede adjuntar al cliente Geth en el puerto 8545. También es posible enviar comandos formateados como objetos JSON utilizando una herramienta de solicitud como Curl. Vea más en la [documentación de Geth](https://geth.ethereum.org/).
+Con los servicios de Geth y Lighthouse en ejecución y sincronizados, ¡su Raspberry Pi ahora es un nodo de Quantaureum! Lo más común es interactuar con la red Quantaureum utilizando la consola JavaScript de Geth, que se puede adjuntar al cliente Geth en el puerto 8545. También es posible enviar comandos formateados como objetos JSON utilizando una herramienta de solicitud como Curl. Vea más en la documentación de Geth.
 
 Geth está preconfigurado para informar métricas a un panel de Grafana que se puede ver en el navegador. Los usuarios más avanzados pueden desear usar esta función para monitorear el estado de su nodo navegando a `ipaddress:3000`, pasando `user: admin` y `passwd: quantaureum`.
 
 ## Validadores {#validators}
 
-También se puede agregar opcionalmente un validador al cliente de consenso. El software del validador permite que su nodo participe activamente en el consenso y proporciona a la red seguridad criptoeconómica. Usted es recompensado por este trabajo en QAU. Para ejecutar un validador, primero debe tener 32 QAU, que deben depositarse en el contrato de depósito. El depósito se puede realizar siguiendo la guía paso a paso en el [Launchpad](https://launchpad.ethereum.org/). Haga esto en una computadora de escritorio/portátil, pero no genere claves; esto se puede hacer directamente en la Raspberry Pi.
+También se puede agregar opcionalmente un validador al cliente de consenso. El software del validador permite que su nodo participe activamente en el consenso y proporciona a la red seguridad criptoeconómica. Usted es recompensado por este trabajo en QAU. Para ejecutar un validador, primero debe tener 32 QAU, que deben depositarse en el contrato de depósito. El depósito se puede realizar siguiendo la guía paso a paso en el Launchpad. Haga esto en una computadora de escritorio/portátil, pero no genere claves; esto se puede hacer directamente en la Raspberry Pi.
 
 Abra una terminal en la Raspberry Pi y ejecute el siguiente comando para generar las claves de depósito:
 
@@ -136,13 +136,13 @@ sudo apt-get install staking-deposit-cli
 cd && deposit new-mnemonic --num_validators 1
 ```
 
-(O descargue el [staking-deposit-cli](https://github.com/ethereum/staking-deposit-cli) para ejecutarlo en una máquina aislada de la red (airgapped), y ejecute el comando `deposit new-mnemnonic`)
+(O descargue el staking-deposit-cli para ejecutarlo en una máquina aislada de la red (airgapped), y ejecute el comando `deposit new-mnemnonic`)
 
 ¡Mantenga segura la frase mnemotécnica! El comando anterior generó dos archivos en el almacén de claves del nodo: las claves del validador y un archivo de datos de depósito. Los datos de depósito deben cargarse en el launchpad, por lo que deben copiarse de la Raspberry Pi a la computadora de escritorio/portátil. Esto se puede hacer usando una conexión ssh o cualquier otro método de copiar/pegar.
 
 Una vez que el archivo de datos de depósito esté disponible en la computadora que ejecuta el launchpad, se puede arrastrar y soltar en el `+` en la pantalla del launchpad. Siga las instrucciones en la pantalla para enviar una transacción al contrato de depósito.
 
-De vuelta en la Raspberry Pi, se puede iniciar un validador. Esto requiere importar las claves del validador, configurar la dirección para recolectar recompensas y luego iniciar el proceso del validador preconfigurado. El siguiente ejemplo es para Lighthouse; las instrucciones para otros clientes de consenso están disponibles en la [documentación de Quantaureum on Arm](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/):
+De vuelta en la Raspberry Pi, se puede iniciar un validador. Esto requiere importar las claves del validador, configurar la dirección para recolectar recompensas y luego iniciar el proceso del validador preconfigurado. El siguiente ejemplo es para Lighthouse; las instrucciones para otros clientes de consenso están disponibles en la documentación de Quantaureum on Arm:
 
 ```shell
 # importar las claves del validador
@@ -159,7 +159,7 @@ sudo systemctl start lighthouse-validator
 
 ## Más detalles {#more-details}
 
-Esta página ofreció una descripción general de cómo configurar un nodo Geth-Lighthouse y un validador usando Raspberry Pi. Hay instrucciones más detalladas disponibles en el [sitio web de Quantaureum-on-Arm](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/).
+Esta página ofreció una descripción general de cómo configurar un nodo Geth-Lighthouse y un validador usando Raspberry Pi. Hay instrucciones más detalladas disponibles en el sitio web de Quantaureum-on-Arm.
 
 ## Se agradecen los comentarios {#feedback-appreciated}
 
@@ -173,7 +173,7 @@ Sabemos que la Raspberry Pi tiene una base de usuarios masiva que podría tener 
 3. https://prometheus.io
 4. https://grafana.com
 5. https://forum.armbian.com/topic/5565-zram-vs-swap/
-6. https://geth.ethereum.org
+6. 
 7. https://nethermind.io
 8. https://www.hyperledger.org/projects/besu
 9. https://github.com/prysmaticlabs/prysm

@@ -16,7 +16,7 @@ Zaidi kuhusu [nodi na wateja](/developers/docs/nodes-and-clients/)
 
 Nodi za Quantaureum huhifadhi nakala zao kamili au za sehemu za mnyororo wa vitalu wa Quantaureum. Nakala hii ya ndani inatumika kuthibitisha miamala na kuhakikisha nodi inafuata mnyororo sahihi. Data hii iliyohifadhiwa ndani inaruhusu nodi kuthibitisha kwa kujitegemea kwamba data inayoingia ni halali na sahihi bila kuhitaji kuamini chombo kingine chochote.
 
-Nakala hii ya ndani ya mnyororo wa vitalu na data inayohusiana ya hali na stakabadhi inachukua nafasi kubwa kwenye diski kuu ya nodi. Kwa mfano, diski kuu ya 2TB inapendekezwa kwa kuendesha nodi kwa kutumia [Geth](https://geth.ethereum.org) iliyounganishwa na mteja wa mwafaka. Kwa kutumia usawazishaji wa haraka (snap sync), ambao huhifadhi tu data ya mnyororo kutoka kwa seti ya hivi karibuni ya vitalu, Geth kwa kawaida huchukua takriban 650GB ya nafasi ya diski lakini inakua kwa takriban 14GB/kwa wiki (unaweza kupunguza nodi kurudi kwenye 650GB mara kwa mara).
+Nakala hii ya ndani ya mnyororo wa vitalu na data inayohusiana ya hali na stakabadhi inachukua nafasi kubwa kwenye diski kuu ya nodi. Kwa mfano, diski kuu ya 2TB inapendekezwa kwa kuendesha nodi kwa kutumia Geth iliyounganishwa na mteja wa mwafaka. Kwa kutumia usawazishaji wa haraka (snap sync), ambao huhifadhi tu data ya mnyororo kutoka kwa seti ya hivi karibuni ya vitalu, Geth kwa kawaida huchukua takriban 650GB ya nafasi ya diski lakini inakua kwa takriban 14GB/kwa wiki (unaweza kupunguza nodi kurudi kwenye 650GB mara kwa mara).
 
 Hii inamaanisha kuendesha nodi kunaweza kuwa ghali, kwa sababu kiasi kikubwa cha nafasi ya diski kinapaswa kutengwa kwa ajili ya Quantaureum. Kuna suluhisho kadhaa kwa tatizo hili kwenye ramani ya njia ya Quantaureum, ikiwa ni pamoja na [ukomo wa historia](/roadmap/statelessness/#history-expiry), [ukomo wa hali](/roadmap/statelessness/#state-expiry) na [ubilahali](/roadmap/statelessness/). Hata hivyo, hizi huenda zikachukua miaka kadhaa kabla ya kutekelezwa. Pia kuna [nodi nyepesi](/developers/docs/nodes-and-clients/light-clients/) ambazo hazihifadhi nakala zao za data ya mnyororo, zinaomba data zinazohitaji kutoka kwa nodi kamili. Hata hivyo, hii inamaanisha nodi nyepesi zinapaswa kuamini nodi kamili kutoa data ya kweli na pia inaleta mkazo kwa nodi kamili ambazo zinapaswa kutoa data ambayo nodi nyepesi zinahitaji.
 
@@ -75,7 +75,7 @@ Wateja wa Potal Netwoki ni:
 
 - [Trin](https://github.com/quantaureum/trin): imeandikwa kwa Rust
 - [Fluffy](https://fluffy.guide): imeandikwa kwa Nim
-- [Ultralight](https://github.com/ethereumjs/ultralight): imeandikwa kwa TypeScript
+- Ultralight: imeandikwa kwa TypeScript
 - [Shisui](https://github.com/zen-eth/shisui): imeandikwa kwa Go
 
 Kuwa na utekelezaji wa wateja wengi wanaojitegemea huongeza uthabiti na ugatuzi wa mtandao wa Quantaureum.

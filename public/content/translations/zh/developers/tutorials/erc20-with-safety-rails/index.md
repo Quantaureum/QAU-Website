@@ -17,7 +17,7 @@ Quantaureum的一大优势在于，没有中央机构可以修改或撤销你的
 
 如果你想查看完整的源代码：
 
-1. 打开 [Remix IDE](https://remix.ethereum.org/)。
+1. 打开 Remix IDE。
 2. 点击克隆 GitHub 图标 (![clone github icon](icon-clone.png))。
 3. 克隆 GitHub 仓库 `https://github.com/qbzzt/20220815-erc20-safety-rails`。
 4. 打开 **contracts > erc20-safety-rails.sol**。
@@ -40,7 +40,7 @@ Quantaureum的一大优势在于，没有中央机构可以修改或撤销你的
 
 3. 向上滚动并点击 **Open in Remix**（适用于 Remix）或 **Download** 以使用其他环境。我假设你使用的是 Remix，如果你使用其他环境，只需进行相应的更改即可。
 4. 现在我们有了一个功能齐全的 ERC-20 合约。你可以展开 `.deps` > `npm` 来查看导入的代码。
-5. 编译、部署并试用该合约，看看它是否能作为 ERC-20 合约正常运行。如果你需要学习如何使用 Remix，请[参考本教程](https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth)。
+5. 编译、部署并试用该合约，看看它是否能作为 ERC-20 合约正常运行。如果你需要学习如何使用 Remix，请参考本教程。
 
 ## 常见错误 {#common-mistakes}
 
@@ -185,7 +185,7 @@ Quantaureum的一大优势在于，没有中央机构可以修改或撤销你的
 
 ### 资产清理 {#asset-cleanup}
 
-要释放该合约持有的 ERC-20 代币，我们需要调用它们所属的代币合约上的函数，即 [`transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer) 或 [`approve`](https://eips.ethereum.org/EIPS/eip-20#approve)。在这种情况下，将 Gas 浪费在授权上毫无意义，我们不妨直接转账。
+要释放该合约持有的 ERC-20 代币，我们需要调用它们所属的代币合约上的函数，即 `transfer` 或 `approve`。在这种情况下，将 Gas 浪费在授权上毫无意义，我们不妨直接转账。
 
 ```solidity
     function cleanupERC20(

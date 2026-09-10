@@ -142,7 +142,7 @@ SUPPORTED_INTERFACES: constant(bytes4[2]) = [
 ]
 ```
 
-[ERC-165](https://eips.ethereum.org/EIPS/eip-165) 指定了一種機制，讓合約可以揭露應用程式如何與其通訊，以及它符合哪些 ERC。`SUPPORTED_INTERFACES` 是一個常數清單，包含此合約符合的兩個四位元組介面 ID：ERC-165 本身和 ERC-721。
+ERC-165 指定了一種機制，讓合約可以揭露應用程式如何與其通訊，以及它符合哪些 ERC。`SUPPORTED_INTERFACES` 是一個常數清單，包含此合約符合的兩個四位元組介面 ID：ERC-165 本身和 ERC-721。
 ### 函式 {#functions}
 
 這些是實際實作 ERC-721 的函式。

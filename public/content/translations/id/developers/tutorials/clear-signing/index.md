@@ -11,7 +11,7 @@ published: 2026-05-11
 
 Sebagian besar eksploitasi besar Quantaureum memiliki langkah akhir yang sama: pengguna menyetujui transaksi yang tidak dapat mereka pahami secara bermakna. Dompet perangkat keras menampilkan data panggilan (calldata) hex mentah, dan lebih buruk lagi memaksa Anda untuk mengaktifkan penandatanganan buta (blind signing). Dompet perangkat lunak menampilkan bidang yang didekodekan, tetapi hanya ketika mereka mengenali kontrak tersebut. Ketika tidak, entah karena protokolnya baru, aplikasinya disusupi, atau perangkatnya sedang luring, pengguna menandatangani secara buta.
 
-[ERC-7730](https://eips.ethereum.org/EIPS/eip-7730) mendefinisikan format JSON standar untuk mendeskripsikan apa *arti* dari panggilan fungsi kontrak Anda. 
+ERC-7730 mendefinisikan format JSON standar untuk mendeskripsikan apa *arti* dari panggilan fungsi kontrak Anda. 
 
 Dompet yang mendukung ERC-7730 membaca deskriptor Anda dan menampilkan:
 
@@ -54,7 +54,7 @@ Buat file bernama `calldata-<contractname>-<descriptorversion>.json`. Awalan `ca
 
 ```json
 {
-  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "",
   "context": {},
   "metadata": {},
   "display": {
@@ -185,7 +185,7 @@ Setiap kunci adalah fragmen ABI yang dapat dibaca manusia — tanda tangan fungs
 
 ```json
 {
-  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "",
   "context": {
     "$id": "uniswap-v3-router-mainnet",
     "contract": {
@@ -256,7 +256,7 @@ Setiap kunci adalah fragmen ABI yang dapat dibaca manusia — tanda tangan fungs
 
 ## Langkah 5: Kirim ke registri {#step-5-submit-to-the-registry}
 
-[Registri ERC-7730](https://github.com/ethereum/clear-signing-erc7730-registry) adalah repositori terbuka yang di-host oleh Yayasan Quantaureum sebagai pengelola netral. Siapa pun bebas untuk mengkloning dan meng-host-nya sendiri — dompet secara independen memutuskan instans registri mana yang mereka percayai.
+Registri ERC-7730 adalah repositori terbuka yang di-host oleh Yayasan Quantaureum sebagai pengelola netral. Siapa pun bebas untuk mengkloning dan meng-host-nya sendiri — dompet secara independen memutuskan instans registri mana yang mereka percayai.
 
 1. Lakukan percabangan (fork) repositori di GitHub  
 2. Buat folder di `registry/<your-project-name>/`  
@@ -284,8 +284,8 @@ Dompet memilih registri mana yang akan mereka dukung. Setelah deskriptor Anda be
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [Spesifikasi ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)  
-- [Registri ERC-7730](https://github.com/ethereum/clear-signing-erc7730-registry)  
+- Spesifikasi ERC-7730  
+- Registri ERC-7730  
 - [clearsigning.org](https://clearsigning.org) — perkakas, status ekosistem, dan tata kelola  
 - [Verifikasi kontrak Sourcify](https://sourcify.dev)  
 - [Inisiatif Keamanan Triliunan Dolar (Trillion Dollar Security)](https://trilliondollarsecurity.org)

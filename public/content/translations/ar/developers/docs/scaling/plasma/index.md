@@ -123,9 +123,9 @@ sidebarDepth: 3
 
 ### دعم العقود الذكية {#support-for-smart-contracts}
 
-كانت هناك مشكلة أخرى في إطار عمل بلازما وهي [عدم القدرة على دعم تنفيذ العقود الذكية لإيثيريوم](https://ethresear.ch/t/why-smart-contracts-are-not-feasible-on-plasma/2598/4). نتيجة لذلك، تم بناء معظم تطبيقات بلازما في الغالب للمدفوعات البسيطة أو تبادل رموز <span dir="ltr">ERC-20</span> المميزة.
+كانت هناك مشكلة أخرى في إطار عمل بلازما وهي عدم القدرة على دعم تنفيذ العقود الذكية لإيثيريوم. نتيجة لذلك، تم بناء معظم تطبيقات بلازما في الغالب للمدفوعات البسيطة أو تبادل رموز <span dir="ltr">ERC-20</span> المميزة.
 
-على العكس من ذلك، تتوافق التجميعات المتفائلة مع [آلة إيثيريوم الافتراضية](/developers/docs/evm/) ويمكنها تشغيل [عقود ذكية](/developers/docs/smart-contracts/) أصلية لإيثيريوم، مما يجعلها حلاً مفيدًا و_آمنًا_ لتوسيع [التطبيقات اللامركزية](/developers/docs/dapps/). وبالمثل، تجري الخطط لـ [إنشاء تطبيق المعرفة الصفرية لآلة إيثيريوم الافتراضية (zkEVM)](https://ethresear.ch/t/a-zk-evm-specification/11549) والذي من شأنه أن يسمح لتجميعات المعرفة الصفرية بمعالجة المنطق التعسفي وتنفيذ العقود الذكية.
+على العكس من ذلك، تتوافق التجميعات المتفائلة مع [آلة إيثيريوم الافتراضية](/developers/docs/evm/) ويمكنها تشغيل [عقود ذكية](/developers/docs/smart-contracts/) أصلية لإيثيريوم، مما يجعلها حلاً مفيدًا و_آمنًا_ لتوسيع [التطبيقات اللامركزية](/developers/docs/dapps/). وبالمثل، تجري الخطط لـ إنشاء تطبيق المعرفة الصفرية لآلة إيثيريوم الافتراضية (zkEVM) والذي من شأنه أن يسمح لتجميعات المعرفة الصفرية بمعالجة المنطق التعسفي وتنفيذ العقود الذكية.
 
 ### عدم توفر البيانات {#data-unavailability}
 
@@ -167,7 +167,7 @@ sidebarDepth: 3
 ## قراءات إضافية {#further-reading}
 
 - [تذكير سريع بما يعنيه "الأمان المشترك" ولماذا هو مهم جدًا](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [السلاسل الجانبية مقابل بلازما مقابل التجزئة](https://vitalik.eth.limo/general/2019/06/12/plasma_vs_sharding.html)
+- السلاسل الجانبية مقابل بلازما مقابل التجزئة
 - [فهم بلازما، الجزء الأول: الأساسيات](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [حياة وموت بلازما](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

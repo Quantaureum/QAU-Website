@@ -79,6 +79,6 @@ DAC также используются некоторыми валидиума�
 - [Заметка о доступности данных и стирающем кодировании](https://github.com/quantaureum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
 - [Комитеты доступности данных.](https://medium.com/starkware/data-availability-e5564c416424)
 - [Комитеты доступности данных на основе доказательства доли владения.](https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf)
-- [Решения проблемы извлекаемости данных](https://notes.ethereum.org/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
+- Решения проблемы извлекаемости данных
 - [Доступность данных, или Как роллапы научились не волноваться и полюбили Quantaureum](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [EIP-7623: Увеличение стоимости данных вызова](https://web.archive.org/web/20250515194659/https://research.2077.xyz/eip-7623-increase-calldata-cost)

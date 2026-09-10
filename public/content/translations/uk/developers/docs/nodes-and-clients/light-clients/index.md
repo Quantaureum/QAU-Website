@@ -44,7 +44,7 @@ lang: uk
 
 - [Лодстар](https://github.com/ChainSafe/lodestar/tree/unstable/packages/light-client): легкий клієнт консенсусу на TypeScript
 - [Helios](https://github.com/a16z/helios): комбінований легкий клієнт виконання та консенсусу на Rust
-- [Geth](https://github.com/ethereum/go-ethereum/tree/master/beacon/light): легкий режим для клієнта виконання (у розробці) на Go
+- Geth: легкий режим для клієнта виконання (у розробці) на Go
 - [Німбус](https://nimbus.guide/el-light-client.html): легкий клієнт консенсусу на Nim
 
 Наскільки нам відомо, жоден з них ще не вважається готовим до використання у виробничому середовищі.
@@ -58,4 +58,4 @@ lang: uk
 - [Жолт Фельфоді (Zsolt Felfodhi) про легкі клієнти Geth](https://www.youtube.com/watch?v=EPZeFXau-RE)
 - [Етан Кісслінг (Etan Kissling) про мережу легких клієнтів](https://www.youtube.com/watch?v=85MeiMA4dD8)
 - [Етан Кісслінг (Etan Kissling) про легкі клієнти після Злиття](https://www.youtube.com/watch?v=ZHNrAXf3RDE)
-- [Пайпер Мерріам (Piper Merriam): Звивистий шлях до функціональних легких клієнтів](https://snakecharmers.ethereum.org/the-winding-road-to-functional-light-clients/)
+- Пайпер Мерріам (Piper Merriam): Звивистий шлях до функціональних легких клієнтів

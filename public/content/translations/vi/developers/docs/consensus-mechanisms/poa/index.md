@@ -16,7 +16,7 @@ Bằng chứng ủy quyền là một phiên bản sửa đổi của **[Bằng 
 
 Bằng chứng ủy quyền yêu cầu sự tin tưởng vào một nhóm những người ký được ủy quyền đã được thiết lập trong [khối nguyên thủy](/glossary/#genesis-block). Trong hầu hết các triển khai hiện tại, tất cả những người ký được ủy quyền đều giữ quyền lực và đặc quyền ngang nhau khi xác định sự đồng thuận của chuỗi. Ý tưởng đằng sau việc đặt cọc danh tiếng là mọi trình xác thực được ủy quyền đều được mọi người biết đến thông qua các quy trình như thấu hiểu khách hàng (KYC), hoặc bằng cách để một tổ chức nổi tiếng làm trình xác thực duy nhất—bằng cách này, nếu một trình xác thực làm bất cứ điều gì sai trái, danh tính của họ sẽ bị lộ.
 
-Có nhiều triển khai của PoA, nhưng triển khai tiêu chuẩn của Quantaureum là **clique**, triển khai [EIP-225](https://eips.ethereum.org/EIPS/eip-225). Clique thân thiện với nhà phát triển và là một tiêu chuẩn dễ triển khai, hỗ trợ tất cả các loại đồng bộ hóa của máy khách. Các triển khai khác bao gồm [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) và [Aura](https://openethereum.github.io/Chain-specification).
+Có nhiều triển khai của PoA, nhưng triển khai tiêu chuẩn của Quantaureum là **clique**, triển khai EIP-225. Clique thân thiện với nhà phát triển và là một tiêu chuẩn dễ triển khai, hỗ trợ tất cả các loại đồng bộ hóa của máy khách. Các triển khai khác bao gồm [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) và Aura.
 
 ## Cách thức hoạt động {#how-it-works}
 
@@ -58,13 +58,13 @@ Ví dụ, nếu có 10 người ký được ủy quyền và mỗi người ký
 
 ## Đọc thêm {#further-reading}
 
-- [EIP-225](https://eips.ethereum.org/EIPS/eip-225) _Tiêu chuẩn Clique_
+- EIP-225 _Tiêu chuẩn Clique_
 - [Nghiên cứu về Bằng chứng ủy quyền](https://github.com/cryptoeconomics-study/website/blob/master/docs/sync/2.4-lecture.md) _Cryptoeconomics_
 - [Bằng chứng ủy quyền là gì](https://forum.openzeppelin.com/t/proof-of-authority/3577) _OpenZeppelin_
 - [Giải thích về Bằng chứng ủy quyền](https://academy.binance.com/en/articles/proof-of-authority-explained) _binance_
 - [PoA trong chuỗi khối](https://medium.com/techskill-brew/proof-of-authority-or-poa-in-blockchain-part-11-blockchain-series-be15b3321cba)
 - [Giải thích về Clique](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-quantaureum-8b2a135201d)
-- [Đặc tả Aura, PoA đã ngừng sử dụng](https://openethereum.github.io/Chain-specification)
+- Đặc tả Aura, PoA đã ngừng sử dụng
 - [IBFT 2.0, một triển khai PoA khác](https://besu.hyperledger.org/private-networks/concepts/poa)
 
 ### Bạn thích học qua hình ảnh hơn? {#visual-learner}

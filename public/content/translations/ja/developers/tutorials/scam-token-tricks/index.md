@@ -198,7 +198,7 @@ modifier auth() {
 
 プールアカウントから受信者の配列に対して金額の配列を送金する関数は、完全に理にかなっています。給与計算やエアドロップなど、単一のソースから複数の宛先にトークンを配布したいユースケースは数多くあります。複数のトランザクションを発行したり、同じトランザクションの一部として別のコントラクトからERC-20を複数回呼び出したりするよりも、単一のトランザクションで行う方が（ガス代が）安くなります。
 
-しかし、`dropNewTokens`はそれを行いません。これは[`Transfer`イベント](https://eips.ethereum.org/EIPS/eip-20#transfer-1)を発行しますが、実際にはトークンを送金しません。実際には起こっていない送金を伝えることで、オフチェーンのアプリケーションを混乱させる正当な理由はありません。
+しかし、`dropNewTokens`はそれを行いません。これは`Transfer`イベントを発行しますが、実際にはトークンを送金しません。実際には起こっていない送金を伝えることで、オフチェーンのアプリケーションを混乱させる正当な理由はありません。
 
 ### バーンを行う`Approve`関数 {#the-burning-approve-function}
 
@@ -240,7 +240,7 @@ ERC-20コントラクトにはアローワンスのための[`approve`関数](/d
 
 #### `mount`関数 {#the-mount-function}
 
-[標準](https://eips.ethereum.org/EIPS/eip-20)では指定されていませんが、一般的に新しいトークンを作成する関数は[`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn)と呼ばれます。
+標準では指定されていませんが、一般的に新しいトークンを作成する関数は[`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn)と呼ばれます。
 
 `wARB`のコンストラクタを見ると、ミント関数がなぜか`mount`に名前変更されており、効率のために全額を1回で呼び出すのではなく、初期供給量の5分の1で5回呼び出されていることがわかります。
 
@@ -316,7 +316,7 @@ ERC-20トークンが発行するイベントを見ることで、そのトー�
 
 ## 疑わしい`Approval`イベント {#suspicious-approval-events}
 
-[`Approval`イベント](https://eips.ethereum.org/EIPS/eip-20#approval)は、直接の要求があった場合にのみ発生するべきです（アローワンスの結果として発生する可能性のある[`Transfer`イベント](https://eips.ethereum.org/EIPS/eip-20#transfer-1)とは対照的です）。この問題の詳細な説明と、要求がコントラクトを介するのではなく直接である必要がある理由については、[Solidityのドキュメントを参照してください](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin)。
+`Approval`イベントは、直接の要求があった場合にのみ発生するべきです（アローワンスの結果として発生する可能性のある`Transfer`イベントとは対照的です）。この問題の詳細な説明と、要求がコントラクトを介するのではなく直接である必要がある理由については、[Solidityのドキュメントを参照してください](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin)。
 
 これは、[外部所有アカウント](/developers/docs/accounts/#types-of-account)からの支出を承認する`Approval`イベントは、そのアカウントを起点とし、宛先がERC-20コントラクトであるトランザクションから発生しなければならないことを意味します。外部所有アカウントからのその他の種類の承認は疑わしいものです。
 
@@ -425,7 +425,7 @@ const txn = await getEventTxn(ev)
 if (owner.toLowerCase() != txn.from.toLowerCase()) return ev
 ```
 
-アドレスは16進数であり文字が含まれているため、単に文字列の等価性をチェックすることはできません。例えば`txn.from`のように、それらの文字がすべて小文字である場合があります。他の場合、例えば`ev.args._owner`のように、アドレスは[エラー識別のために大文字と小文字が混在](https://eips.ethereum.org/EIPS/eip-55)しています。
+アドレスは16進数であり文字が含まれているため、単に文字列の等価性をチェックすることはできません。例えば`txn.from`のように、それらの文字がすべて小文字である場合があります。他の場合、例えば`ev.args._owner`のように、アドレスはエラー識別のために大文字と小文字が混在しています。
 
 しかし、トランザクションが所有者からのものではなく、その所有者が外部所有である場合、それは疑わしいトランザクションです。
 

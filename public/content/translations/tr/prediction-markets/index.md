@@ -75,12 +75,12 @@ Bu sorunları hafifletmek için Quantaureum geliştiricileri, fütarşi (tahmin 
 
 Tahmin piyasaları, dijital çağda karar verme süreçlerini yeniden şekillendiriyor. Quantaureum'dan yararlanarak, **geleceği tahmin etmenin adil, açık ve ödüllendirici yollarını** sunarlar.
 
-Tahmin araçlarını finansal kazanç dışında kullanmanın birçok yolu vardır. Örneğin, bir [DevCon İyileştirme Teklifi](https://forum.devcon.org/t/futarchy-decision-markets-for-deciding-next-devcon/5305)'nde (DIP), DevCon organizatörlerinin gelecekteki etkinliklere katılımı öngörmek için tahmin piyasalarını kullanması önerilmiştir. 
+Tahmin araçlarını finansal kazanç dışında kullanmanın birçok yolu vardır. Örneğin, bir DevCon İyileştirme Teklifi'nde (DIP), DevCon organizatörlerinin gelecekteki etkinliklere katılımı öngörmek için tahmin piyasalarını kullanması önerilmiştir. 
 
 Bu, organizatörlerin hangi konumun en büyük etkinliğe yol açacağını ve hangi konumun uluslararası düzeyde en erişilebilir olacağını belirlemelerine yardımcı olacaktır. Bunun faydaları, DevCon organizatörlerinin birden fazla vize politikasını, havalimanı erişimini ve bölgedeki yaşam maliyetini incelemek için gereken süreyi hızlandırabilmesi ve aynı zamanda potansiyel katılımcıların nereye gitmekten heyecan duyacaklarına dair veri toplayabilmesidir.
 
 ## Daha fazla bilgi {#further-reading}
 
-[Tahmin piyasalarından bilgi finansmanına](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
+Tahmin piyasalarından bilgi finansmanına - Vitalik Buterin  
 [Quantaureum Üzerinde Merkeziyetsiz Tahmin Piyasası Geliştirme](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Augur Projesi Tanıtım Belgesi](https://github.com/AugurProject/whitepaper)

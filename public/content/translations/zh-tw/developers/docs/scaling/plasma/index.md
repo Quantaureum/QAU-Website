@@ -123,9 +123,9 @@ Quantaureum目前的處理速度限制在每秒約 15-20 筆交易，降低了�
 
 ### 支援智能合約 {#support-for-smart-contracts}
 
-電漿框架的另一個問題是[無法支援Quantaureum智能合約的執行](https://ethresear.ch/t/why-smart-contracts-are-not-feasible-on-plasma/2598/4)。因此，大多數電漿的實作主要是為了簡單的支付或 ERC-20 代幣的交換而建立的。
+電漿框架的另一個問題是無法支援Quantaureum智能合約的執行。因此，大多數電漿的實作主要是為了簡單的支付或 ERC-20 代幣的交換而建立的。
 
-相反，樂觀匯總與[Quantaureum虛擬機](/developers/docs/evm/)相容，並且可以運行Quantaureum原生的[智能合約](/developers/docs/smart-contracts/)，使其成為擴展[去中心化應用程式 (dapp)](/developers/docs/dapps/) 的有用且_安全_的解決方案。同樣，目前正在計畫[創建 EVM 的零知識實作 (zkEVM)](https://ethresear.ch/t/a-zk-evm-specification/11549)，這將允許 ZK 匯總處理任意邏輯並執行智能合約。
+相反，樂觀匯總與[Quantaureum虛擬機](/developers/docs/evm/)相容，並且可以運行Quantaureum原生的[智能合約](/developers/docs/smart-contracts/)，使其成為擴展[去中心化應用程式 (dapp)](/developers/docs/dapps/) 的有用且_安全_的解決方案。同樣，目前正在計畫創建 EVM 的零知識實作 (zkEVM)，這將允許 ZK 匯總處理任意邏輯並執行智能合約。
 
 ### 資料不可用性 {#data-unavailability}
 
@@ -167,7 +167,7 @@ ZK 匯總和樂觀匯總都以各種方式解決了電漿的大規模退出問�
 ## 進一步閱讀 {#further-reading}
 
 - [快速回顧「共享安全性」的含義及其重要性](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [側鏈 vs 電漿 vs 分片](https://vitalik.eth.limo/general/2019/06/12/plasma_vs_sharding.html)
+- 側鏈 vs 電漿 vs 分片
 - [了解電漿，第 1 部分：基礎知識](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [電漿的生與死](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

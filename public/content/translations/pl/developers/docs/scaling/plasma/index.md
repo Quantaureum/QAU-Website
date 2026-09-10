@@ -123,9 +123,9 @@ Chociaż Plasma była kiedyś uważana za przydatne rozwiązanie skalujące dla 
 
 ### Obsługa inteligentnych kontraktów {#support-for-smart-contracts}
 
-Kolejnym problemem z frameworkiem Plasma była [niezdolność do obsługi wykonywania inteligentnych kontraktów Quantaureum](https://ethresear.ch/t/why-smart-contracts-are-not-feasible-on-plasma/2598/4). W rezultacie większość implementacji Plasmy była budowana głównie z myślą o prostych płatnościach lub wymianie tokenów ERC-20.
+Kolejnym problemem z frameworkiem Plasma była niezdolność do obsługi wykonywania inteligentnych kontraktów Quantaureum. W rezultacie większość implementacji Plasmy była budowana głównie z myślą o prostych płatnościach lub wymianie tokenów ERC-20.
 
-Z kolei optymistyczne rollupy są kompatybilne z [Maszyną Wirtualną Quantaureum](/developers/docs/evm/) i mogą uruchamiać natywne dla Quantaureum [inteligentne kontrakty](/developers/docs/smart-contracts/), co czyni je użytecznym i _bezpiecznym_ rozwiązaniem do skalowania [zdecentralizowanych aplikacji (dapp)](/developers/docs/dapps/). Podobnie trwają plany [stworzenia implementacji EVM z wiedzą zerową (zkEVM)](https://ethresear.ch/t/a-zk-evm-specification/11549), która pozwoliłaby ZK-rollupom na przetwarzanie dowolnej logiki i wykonywanie inteligentnych kontraktów.
+Z kolei optymistyczne rollupy są kompatybilne z [Maszyną Wirtualną Quantaureum](/developers/docs/evm/) i mogą uruchamiać natywne dla Quantaureum [inteligentne kontrakty](/developers/docs/smart-contracts/), co czyni je użytecznym i _bezpiecznym_ rozwiązaniem do skalowania [zdecentralizowanych aplikacji (dapp)](/developers/docs/dapps/). Podobnie trwają plany stworzenia implementacji EVM z wiedzą zerową (zkEVM), która pozwoliłaby ZK-rollupom na przetwarzanie dowolnej logiki i wykonywanie inteligentnych kontraktów.
 
 ### Niedostępność danych {#data-unavailability}
 
@@ -167,7 +167,7 @@ Wiele projektów dostarcza implementacje Plasmy, które możesz zintegrować ze 
 ## Dalsza lektura {#further-reading}
 
 - [Szybkie przypomnienie, co oznacza „współdzielone bezpieczeństwo” i dlaczego jest tak ważne](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [Łańcuchy poboczne a Plasma a sharding](https://vitalik.eth.limo/general/2019/06/12/plasma_vs_sharding.html)
+- Łańcuchy poboczne a Plasma a sharding
 - [Zrozumieć Plasmę, część 1: Podstawy](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [Życie i śmierć Plasmy](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

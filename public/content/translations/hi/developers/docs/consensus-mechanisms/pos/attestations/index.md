@@ -86,7 +86,7 @@ lang: hi
 
 ## आगे की पढ़ाई {#further-reading}
 
-- [विटालिक के एनोटेटेड सर्वसम्मति स्पेक में अनुप्रमाणन](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- विटालिक के एनोटेटेड सर्वसम्मति स्पेक में अनुप्रमाणन
 - [eth2book.info में अनुप्रमाणन](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _क्या आप किसी ऐसे सामुदायिक संसाधन के बारे में जानते हैं जिसने आपकी मदद की? इस पृष्ठ को संपादित करें और इसे जोड़ें!_

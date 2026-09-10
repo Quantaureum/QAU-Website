@@ -23,7 +23,7 @@ Quantaureum最常見的用途之一是讓一個群體建立可交易的代幣，
 
 如果你是一位經驗豐富的程式設計師，你可能記得在 [Java](https://www.w3schools.com/java/java_interface.asp) 甚至 [C 標頭檔](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html)中看過類似的結構。
 
-這是歐本齊柏林提供的 [ERC-20 介面](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)定義。它是將[人類可讀的標準](https://eips.ethereum.org/EIPS/eip-20)翻譯成 Solidity 程式碼。當然，介面本身並不定義「如何」執行任何操作。這將在下面的合約原始碼中解釋。
+這是歐本齊柏林提供的 [ERC-20 介面](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)定義。它是將人類可讀的標準翻譯成 Solidity 程式碼。當然，介面本身並不定義「如何」執行任何操作。這將在下面的合約原始碼中解釋。
 
 &nbsp;
 
@@ -88,9 +88,7 @@ interface IERC20 {
 ```solidity
     /**
      * @dev 將 `amount` 數量的代幣從呼叫者的帳戶轉帳至 `recipient`。
-     *
      * 回傳一個布林值來指示操作是否成功。
-     *
      * 觸發 {Transfer} 事件。
      */
     function transfer(address recipient, uint256 amount) external returns (bool);
@@ -112,7 +110,6 @@ interface IERC20 {
 ```solidity
     /**
      * @dev 回傳 `spender` 透過 {transferFrom} 被允許代表 `owner` 花費的剩餘代幣數量。預設為零。
-     *
      * 當呼叫 {approve} 或 {transferFrom} 時，此數值會改變。
      */
     function allowance(address owner, address spender) external view returns (uint256);
@@ -125,12 +122,9 @@ interface IERC20 {
 ```solidity
     /**
      * @dev 將 `amount` 設定為 `spender` 對呼叫者代幣的授權額度。
-     *
      * 回傳一個布林值來指示操作是否成功。
-     *
      * 重要提示：請注意，使用此方法更改授權額度會帶來風險，因為不幸的交易順序可能導致某人同時使用舊的與新的授權額度。減輕此競爭條件的一種可能解決方案是先將花費者的授權額度降至 0，然後再設定所需的值：
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
-     *
+
      * 觸發 {Approval} 事件。
      */
     function approve(address spender, uint256 amount) external returns (bool);
@@ -143,9 +137,7 @@ interface IERC20 {
 ```solidity
     /**
      * @dev 使用授權額度機制將 `amount` 數量的代幣從 `sender` 轉帳至 `recipient`。隨後會從呼叫者的授權額度中扣除 `amount`。
-     *
      * 回傳一個布林值來指示操作是否成功。
-     *
      * 觸發 {Transfer} 事件。
      */
     function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
@@ -159,7 +151,6 @@ interface IERC20 {
 
     /**
      * @dev 當 `value` 數量的代幣從一個帳戶（`from`）轉帳至另一個帳戶（`to`）時觸發。
-     *
      * 請注意，`value` 可以為零。
      */
     event Transfer(address indexed from, address indexed to, uint256 value);
@@ -196,7 +187,7 @@ import "../../math/SafeMath.sol";
 ```
 
 - `GSN/Context.sol` 是使用 [OpenGSN](https://opengsn.org/) 所需的定義，這是一個允許沒有QAU幣的使用者使用區塊鏈的系統。請注意，這是一個舊版本，如果你想與 OpenGSN 整合，請[使用本教學](https://docs.opengsn.org/javascript-client/tutorial.html)。
-- [SafeMath 函式庫](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/)，它可以防止 Solidity 版本 **&lt;0.8.0** 的算術溢位/下溢。在 Solidity ≥0.8.0 中，算術運算在溢位/下溢時會自動回滾，使得 SafeMath 變得不必要。此合約使用 SafeMath 是為了與舊版編譯器向下相容。
+- SafeMath 函式庫，它可以防止 Solidity 版本 **&lt;0.8.0** 的算術溢位/下溢。在 Solidity ≥0.8.0 中，算術運算在溢位/下溢時會自動回滾，使得 SafeMath 變得不必要。此合約使用 SafeMath 是為了與舊版編譯器向下相容。
 
 &nbsp;
 
@@ -205,18 +196,13 @@ import "../../math/SafeMath.sol";
 ```solidity
 /**
  * @dev {IERC20} 介面的實作。
- *
  * 此實作與代幣建立的方式無關。這意味著必須在衍生合約中使用 {_mint} 新增供應機制。
  * 如需通用機制，請參閱 {ERC20PresetMinterPauser}。
- *
  * 提示：如需詳細說明，請參閱我們的指南
  * https://forum.zeppelin.solutions/t/how-to-implement-erc20-supply-mechanisms/226[如何實作供應機制]。
- *
  * 我們遵循了歐本齊柏林的一般準則：函式在失敗時會回復（revert）而不是回傳 `false`。儘管如此，這種行為是符合慣例的，並且不會與 ERC-20 應用程式的期望發生衝突。
- *
  * 此外，在呼叫 {transferFrom} 時會觸發 {Approval} 事件。
  * 這允許應用程式僅透過監聽上述事件來重建所有帳戶的授權額度。EIP 的其他實作可能不會觸發這些事件，因為規範並未要求。
- *
  * 最後，新增了非標準的 {decreaseAllowance} 與 {increaseAllowance}
  * 函式，以減輕設定授權額度時眾所周知的問題。請參閱 {IERC20-approve}。
  */
@@ -290,9 +276,7 @@ contract ERC20 is Context, IERC20 {
 ```solidity
     /**
      * @dev 設定 {name} 與 {symbol} 的值，並將 {decimals} 初始化為預設值 18。
-     *
      * 若要為 {decimals} 選擇不同的值，請使用 {_setupDecimals}。
-     *
      * 這三個值都是不可變的：它們只能在建構期間設定一次。
      */
     constructor (string memory name_, string memory symbol_) public {
@@ -326,9 +310,7 @@ contract ERC20 is Context, IERC20 {
     /**
      * @dev 回傳用於獲取其使用者表示形式的小數位數。
      * 例如，如果 `decimals` 等於 `2`，則 `505` 個代幣的餘額應向使用者顯示為 `5,05`（`505 / 10 ** 2`）。
-     *
      * 代幣通常選擇 18 作為值，以模仿QAU幣與 Wei 之間的關係。這是 {ERC-20} 使用的值，除非呼叫了 {_setupDecimals}。
-     *
      * 注意：此資訊僅用於_顯示_目的：它絕不會影響合約的任何算術運算，包括 {IERC20-balanceOf} 與 {IERC20-transfer}。
      */
     function decimals() public view returns (uint8) {
@@ -381,9 +363,7 @@ contract ERC20 is Context, IERC20 {
 ```solidity
     /**
      * @dev 請參閱 {IERC20-transfer}。
-     *
      * 要求：
-     *
      * - `recipient` 不能是零地址。
      * - 呼叫者必須擁有至少 `amount` 的餘額。
      */
@@ -426,9 +406,7 @@ contract ERC20 is Context, IERC20 {
 ```solidity
     /**
      * @dev 請參閱 {IERC20-approve}。
-     *
      * 要求：
-     *
      * - `spender` 不能是零地址。
      */
     function approve(address spender, uint256 amount) public virtual override returns (bool) {
@@ -456,11 +434,8 @@ contract ERC20 is Context, IERC20 {
 ```solidity
     /**
      * @dev 請參閱 {IERC20-transferFrom}。
-     *
      * 觸發 {Approval} 事件以指示更新後的授權額度。這不是 EIP 所要求的。請參閱 {ERC-20} 開頭的注意事項。
-     *
      * 要求：
-     *
      * - `sender` 與 `recipient` 不能是零地址。
      * - `sender` 必須擁有至少 `amount` 的餘額。
      * - 呼叫者對 ``sender`` 的代幣必須擁有至少 `amount` 的授權額度。
@@ -516,13 +491,9 @@ B：
 ```solidity
     /**
      * @dev 原子性地增加呼叫者授予 `spender` 的授權額度。
-     *
      * 這是 {approve} 的替代方案，可用作減輕 {IERC20-approve} 中描述之問題的對策。
-     *
      * 觸發 {Approval} 事件以指示更新後的授權額度。
-     *
      * 要求：
-     *
      * - `spender` 不能是零地址。
      */
     function increaseAllowance(address spender, uint256 addedValue) public virtual returns (bool) {
@@ -537,13 +508,9 @@ B：
 
     /**
      * @dev 原子性地減少呼叫者授予 `spender` 的授權額度。
-     *
      * 這是 {approve} 的替代方案，可用作減輕 {IERC20-approve} 中描述之問題的對策。
-     *
      * 觸發 {Approval} 事件以指示更新後的授權額度。
-     *
      * 要求：
-     *
      * - `spender` 不能是零地址。
      * - `spender` 對呼叫者必須擁有至少 `subtractedValue` 的授權額度。
      */
@@ -563,13 +530,9 @@ B：
 ```solidity
     /**
      * @dev 將 `amount` 數量的代幣從 `sender` 轉帳至 `recipient`。
-     *
      * 這個內部函式等同於 {transfer}，可用於例如實作自動代幣費用、削減機制等。
-     *
      * 觸發 {Transfer} 事件。
-     *
      * 要求：
-     *
      * - `sender` 不能是零地址。
      * - `recipient` 不能是零地址。
      * - `sender` 必須擁有至少 `amount` 的餘額。
@@ -630,11 +593,8 @@ B：
 
 ```solidity
     /** @dev 建立 `amount` 數量的代幣並將其分配給 `account`，增加總供應量。
-     *
      * 觸發 {Transfer} 事件，並將 `from` 設定為零地址。
-     *
      * 要求：
-     *
      * - `to` 不能是零地址。
      */
     function _mint(address account, uint256 amount) internal virtual {
@@ -653,11 +613,8 @@ B：
 ```solidity
     /**
      * @dev 從 `account` 銷毀 `amount` 數量的代幣，減少總供應量。
-     *
      * 觸發 {Transfer} 事件，並將 `to` 設定為零地址。
-     *
      * 要求：
-     *
      * - `account` 不能是零地址。
      * - `account` 必須擁有至少 `amount` 數量的代幣。
      */
@@ -681,13 +638,9 @@ B：
 ```solidity
     /**
      * @dev 將 `amount` 設定為 `spender` 對 `owner` 代幣的授權額度。
-     *
      * 這個內部函式等同於 `approve`，可用於例如為某些子系統設定自動授權額度等。
-     *
      * 觸發 {Approval} 事件。
-     *
      * 要求：
-     *
      * - `owner` 不能是零地址。
      * - `spender` 不能是零地址。
      */
@@ -715,7 +668,6 @@ B：
 
     /**
      * @dev 將 {decimals} 設定為預設值 18 以外的值。
-     *
      * 警告：此函式只能從建構函式中呼叫。大多數與代幣合約互動的應用程式不會預期 {decimals} 會發生改變，如果改變可能會導致運作不正確。
      */
     function _setupDecimals(uint8 decimals_) internal {
@@ -731,14 +683,11 @@ B：
 
     /**
      * @dev 在任何代幣轉帳之前呼叫的掛鉤（Hook）。這包括鑄造與銷毀。
-     *
      * 呼叫條件：
-     *
      * - 當 `from` 與 `to` 均非零時，``from`` 的 `amount` 數量代幣將被轉帳至 `to`。
      * - 當 `from` 為零時，將為 `to` 鑄造 `amount` 數量的代幣。
      * - 當 `to` 為零時，``from`` 的 `amount` 數量代幣將被銷毀。
      * - `from` 與 `to` 永遠不會同時為零。
-     *
      * 若要了解有關掛鉤的更多資訊，請前往 xref:ROOT:extending-contracts.adoc#using-hooks[Using Hooks]。
      */
     function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual { }

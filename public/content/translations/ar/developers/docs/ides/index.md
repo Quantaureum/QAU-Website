@@ -10,7 +10,7 @@ lang: ar
 
 إذا كنت تتطلع إلى تجربة الأكواد قبل [إعداد بيئة تطوير محلية](/developers/local-environment/)، فإن تطبيقات الويب هذه مصممة خصيصًا لتطوير العقود الذكية على إيثيريوم.
 
-**[Remix](https://remix.ethereum.org/)** - **_بيئة تطوير متكاملة مستندة إلى الويب مع تحليل ثابت مدمج، وآلة افتراضية لاختبار سلسلة الكتل_**
+**Remix** - **_بيئة تطوير متكاملة مستندة إلى الويب مع تحليل ثابت مدمج، وآلة افتراضية لاختبار سلسلة الكتل_**
 
 - [المستندات](https://remix-ide.readthedocs.io/en/latest/#)
 - [Gitter](https://gitter.im/quantaureum/remix)
@@ -48,8 +48,8 @@ lang: ar
 
 **<span dir="ltr">Remix Desktop</span> -** **_جرب بيئة التطوير المتكاملة Remix على جهازك المحلي_**
 
-- [تنزيل](https://github.com/ethereum/remix-desktop/releases)
-- [GitHub](https://github.com/ethereum/remix-desktop)
+- تنزيل
+- GitHub
 
 ## الإضافات والملحقات {#plugins-extensions}
 

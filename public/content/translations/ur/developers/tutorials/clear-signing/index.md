@@ -11,7 +11,7 @@ published: 2026-05-11
 
 زیادہ تر بڑے ایتھیریم حملوں کا آخری مرحلہ ایک ہی تھا: ایک صارف ایسی ٹرانزیکشن کو منظور کرنا جسے وہ بامعنی طور پر سمجھ نہیں سکتا تھا۔ ہارڈویئر والیٹس خام ہیکس کال ڈیٹا دکھاتے ہیں، اور اس سے بھی بدتر یہ کہ آپ کو بلائنڈ سائننگ (اندھا دستخط) آن کرنے پر مجبور کرتے ہیں۔ سافٹ ویئر والیٹس ڈی کوڈ شدہ فیلڈز دکھاتے ہیں، لیکن صرف اس وقت جب وہ کنٹریکٹ کو پہچانتے ہوں۔ جب وہ ایسا نہیں کرتے، چاہے اس کی وجہ یہ ہو کہ پروٹوکول نیا ہے، ایپ سے سمجھوتہ کیا گیا ہے، یا ڈیوائس آف لائن ہے، تو صارفین اندھے دستخط کرتے ہیں۔
 
-[<span dir="ltr">ERC-7730</span>](https://eips.ethereum.org/EIPS/eip-7730) ایک معیاری <span dir="ltr">JSON</span> فارمیٹ کی وضاحت کرتا ہے جو یہ بیان کرتا ہے کہ آپ کے کنٹریکٹ کی فنکشن کالز کا *مطلب* کیا ہے۔ 
+<span dir="ltr">ERC-7730</span> ایک معیاری <span dir="ltr">JSON</span> فارمیٹ کی وضاحت کرتا ہے جو یہ بیان کرتا ہے کہ آپ کے کنٹریکٹ کی فنکشن کالز کا *مطلب* کیا ہے۔ 
 
 ایک والیٹ جو <span dir="ltr">ERC-7730</span> کو سپورٹ کرتا ہے وہ آپ کا ڈسکرپٹر پڑھتا ہے اور دکھاتا ہے:
 
@@ -54,7 +54,7 @@ published: 2026-05-11
 
 ```json
 {
-  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "",
   "context": {},
   "metadata": {},
   "display": {
@@ -185,7 +185,7 @@ published: 2026-05-11
 
 ```json
 {
-  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "",
   "context": {
     "$id": "uniswap-v3-router-mainnet",
     "contract": {
@@ -256,7 +256,7 @@ published: 2026-05-11
 
 ## مرحلہ 5: رجسٹری میں جمع کرائیں {#step-5-submit-to-the-registry}
 
-[<span dir="ltr">ERC-7730</span> رجسٹری](https://github.com/ethereum/clear-signing-erc7730-registry) ایک اوپن ریپوزٹری ہے جس کی میزبانی ایتھیریم فاؤنڈیشن ایک غیر جانبدار منتظم کے طور پر کرتی ہے۔ کوئی بھی اسے کلون کرنے اور خود میزبانی کرنے کے لیے آزاد ہے — والیٹس آزادانہ طور پر فیصلہ کرتے ہیں کہ وہ کن رجسٹری انسٹینسز پر بھروسہ کرتے ہیں۔
+<span dir="ltr">ERC-7730</span> رجسٹری ایک اوپن ریپوزٹری ہے جس کی میزبانی ایتھیریم فاؤنڈیشن ایک غیر جانبدار منتظم کے طور پر کرتی ہے۔ کوئی بھی اسے کلون کرنے اور خود میزبانی کرنے کے لیے آزاد ہے — والیٹس آزادانہ طور پر فیصلہ کرتے ہیں کہ وہ کن رجسٹری انسٹینسز پر بھروسہ کرتے ہیں۔
 
 1. <span dir="ltr">GitHub</span> پر ریپوزٹری کو فورک کریں  
 2. `registry/<your-project-name>/` پر ایک فولڈر بنائیں  
@@ -284,8 +284,8 @@ published: 2026-05-11
 
 ## مزید مطالعہ {#further-reading}
 
-- [<span dir="ltr">ERC-7730</span> کی تفصیلات](https://eips.ethereum.org/EIPS/eip-7730)  
-- [<span dir="ltr">ERC-7730</span> رجسٹری](https://github.com/ethereum/clear-signing-erc7730-registry)  
+- <span dir="ltr">ERC-7730</span> کی تفصیلات  
+- <span dir="ltr">ERC-7730</span> رجسٹری  
 - [<span dir="ltr">clearsigning.org</span>](https://clearsigning.org) — ٹولنگ، ایکو سسٹم کی حیثیت، اور گورننس  
 - [<span dir="ltr">Sourcify</span> کنٹریکٹ کی تصدیق](https://sourcify.dev)  
 - [ٹریلین ڈالر سیکیورٹی اقدام](https://trilliondollarsecurity.org)

@@ -198,7 +198,7 @@ Kizuizi hiki kinaleta maana kabisa, kwa sababu hatungetaka akaunti za kubahatish
 
 Kazi ya kuhamisha kutoka kwa akaunti ya pamoja hadi kwa orodha ya wapokeaji orodha ya kiasi inaleta maana kabisa. Kuna matumizi mengi ambapo utataka kusambaza tokeni kutoka chanzo kimoja hadi maeneo mengi, kama vile malipo ya mishahara, airdrops, n.k. Ni nafuu (kwa gesi) kufanya katika muamala mmoja badala ya kutoa miamala mingi, au hata kuita ERC-20 mara nyingi kutoka kwa mkataba tofauti kama sehemu ya muamala huo huo.
 
-Hata hivyo, `dropNewTokens` haifanyi hivyo. Inatoa [matukio ya `Transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer-1), lakini kwa kweli haihamishi tokeni zozote. Hakuna sababu halali ya kuchanganya programu za nje ya mnyororo kwa kuziambia kuhusu hamisho ambalo halikufanyika kweli.
+Hata hivyo, `dropNewTokens` haifanyi hivyo. Inatoa matukio ya `Transfer`, lakini kwa kweli haihamishi tokeni zozote. Hakuna sababu halali ya kuchanganya programu za nje ya mnyororo kwa kuziambia kuhusu hamisho ambalo halikufanyika kweli.
 
 ### Kazi ya kuteketeza ya `Approve` {#the-burning-approve-function}
 
@@ -240,7 +240,7 @@ Masuala haya ya ubora wa msimbo _hayathibitishi_ kwamba msimbo huu ni utapeli, l
 
 #### Kazi ya `mount` {#the-mount-function}
 
-Ingawa haijabainishwa katika [kiwango](https://eips.ethereum.org/EIPS/eip-20), kwa ujumla kazi inayounda tokeni mpya inaitwa [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn).
+Ingawa haijabainishwa katika kiwango, kwa ujumla kazi inayounda tokeni mpya inaitwa [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn).
 
 Tukiangalia katika konstrukta ya `wARB`, tunaona kazi ya kufua muda imebadilishwa jina kuwa `mount` kwa sababu fulani, na inaitwa mara tano na sehemu ya tano ya usambazaji wa awali, badala ya mara moja kwa kiasi chote kwa ufanisi.
 
@@ -316,7 +316,7 @@ Kuna baadhi ya mbinu tunazoweza kutumia kutambua kwamba tokeni ya ERC-20 inatia 
 
 ## Matukio ya `Approval` yanayotia shaka {#suspicious-approval-events}
 
-[Matukio ya `Approval`](https://eips.ethereum.org/EIPS/eip-20#approval) yanapaswa kutokea tu kwa ombi la moja kwa moja (tofauti na [matukio ya `Transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer-1) ambayo yanaweza kutokea kama matokeo ya kibali). [Tazama nyaraka za Solidity](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin) kwa maelezo ya kina ya suala hili na kwa nini maombi yanahitaji kuwa ya moja kwa moja, badala ya kupatanishwa na mkataba.
+Matukio ya `Approval` yanapaswa kutokea tu kwa ombi la moja kwa moja (tofauti na matukio ya `Transfer` ambayo yanaweza kutokea kama matokeo ya kibali). [Tazama nyaraka za Solidity](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin) kwa maelezo ya kina ya suala hili na kwa nini maombi yanahitaji kuwa ya moja kwa moja, badala ya kupatanishwa na mkataba.
 
 Hii inamaanisha kuwa matukio ya `Approval` yanayoidhinisha matumizi kutoka kwa [akaunti inayomilikiwa na mtu wa nje](/developers/docs/accounts/#types-of-account) lazima yatokane na miamala inayoanzia kwenye akaunti hiyo, na ambayo lengo lake ni mkataba wa ERC-20. Aina nyingine yoyote ya idhini kutoka kwa akaunti inayomilikiwa na mtu wa nje inatia shaka.
 
@@ -425,7 +425,7 @@ Ikiwa idhini inatoka kwa akaunti inayomilikiwa na mtu wa nje, pata muamala ulios
 if (owner.toLowerCase() != txn.from.toLowerCase()) return ev
 ```
 
-Hatuwezi tu kuangalia usawa wa mfuatano kwa sababu anwani ni heksadesimali, kwa hivyo zina herufi. Wakati mwingine, kwa mfano katika `txn.from`, herufi hizo zote ni ndogo. Katika hali nyingine, kama vile `ev.args._owner`, anwani iko katika [herufi mchanganyiko kwa utambuzi wa makosa](https://eips.ethereum.org/EIPS/eip-55).
+Hatuwezi tu kuangalia usawa wa mfuatano kwa sababu anwani ni heksadesimali, kwa hivyo zina herufi. Wakati mwingine, kwa mfano katika `txn.from`, herufi hizo zote ni ndogo. Katika hali nyingine, kama vile `ev.args._owner`, anwani iko katika herufi mchanganyiko kwa utambuzi wa makosa.
 
 Lakini ikiwa muamala hautoki kwa mmiliki, na mmiliki huyo anamilikiwa na mtu wa nje, basi tuna muamala unaotia shaka.
 

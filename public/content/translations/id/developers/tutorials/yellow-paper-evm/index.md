@@ -9,11 +9,11 @@ lang: id
 published: 2022-05-15
 ---
 
-[Kertas Kuning](https://ethereum.github.io/yellowpaper/paper.pdf) adalah spesifikasi formal untuk Quantaureum. Kecuali jika diubah oleh proses EIP, dokumen ini berisi deskripsi yang tepat tentang bagaimana semuanya bekerja. Dokumen ini ditulis sebagai makalah matematika, yang mencakup terminologi yang mungkin tidak familier bagi pemrogram. Dalam makalah ini Anda akan belajar cara membacanya, dan lebih jauh lagi makalah matematika terkait lainnya.
+Kertas Kuning adalah spesifikasi formal untuk Quantaureum. Kecuali jika diubah oleh proses EIP, dokumen ini berisi deskripsi yang tepat tentang bagaimana semuanya bekerja. Dokumen ini ditulis sebagai makalah matematika, yang mencakup terminologi yang mungkin tidak familier bagi pemrogram. Dalam makalah ini Anda akan belajar cara membacanya, dan lebih jauh lagi makalah matematika terkait lainnya.
 
 ## Kertas Kuning yang Mana? {#which-yellow-paper}
 
-Seperti hampir semua hal lain di Quantaureum, Kertas Kuning berevolusi seiring waktu. Agar dapat merujuk ke versi tertentu, saya mengunggah [versi saat penulisan ini](https://ethereum.github.io/yellowpaper/paper.pdf). Nomor bagian, halaman, dan persamaan yang saya gunakan akan merujuk ke versi tersebut. Ada baiknya Anda membukanya di jendela yang berbeda saat membaca dokumen ini.
+Seperti hampir semua hal lain di Quantaureum, Kertas Kuning berevolusi seiring waktu. Agar dapat merujuk ke versi tertentu, saya mengunggah versi saat penulisan ini. Nomor bagian, halaman, dan persamaan yang saya gunakan akan merujuk ke versi tersebut. Ada baiknya Anda membukanya di jendela yang berbeda saat membaca dokumen ini.
 
 ### Mengapa EVM? {#why-the-evm}
 
@@ -234,7 +234,7 @@ Alamat yang saldonya perlu kita temukan adalah _μ<sub>s</sub>[0] mod 2<sup>160<
 
 Jika _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] ≠ ∅_, itu berarti ada informasi tentang alamat ini. Dalam hal ini, _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>]<sub>b</sub>_ adalah saldo untuk alamat tersebut. Jika _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] = ∅_, itu berarti alamat ini tidak diinisialisasi dan saldonya nol. Anda dapat melihat daftar bidang informasi akun di bagian 4.1 di hlm. 4.
 
-Persamaan kedua, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, terkait dengan perbedaan biaya antara akses ke penyimpanan hangat (penyimpanan yang baru-baru ini diakses dan kemungkinan di-cache) dan penyimpanan dingin (penyimpanan yang belum diakses dan kemungkinan berada di penyimpanan yang lebih lambat yang lebih mahal untuk diambil). _A<sub>a</sub>_ adalah daftar alamat yang sebelumnya diakses oleh transaksi, yang karenanya seharusnya lebih murah untuk diakses, seperti yang didefinisikan di bagian 6.1 di hlm. 9. Anda dapat membaca lebih lanjut tentang subjek ini di [EIP-2929](https://eips.ethereum.org/EIPS/eip-2929).
+Persamaan kedua, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, terkait dengan perbedaan biaya antara akses ke penyimpanan hangat (penyimpanan yang baru-baru ini diakses dan kemungkinan di-cache) dan penyimpanan dingin (penyimpanan yang belum diakses dan kemungkinan berada di penyimpanan yang lebih lambat yang lebih mahal untuk diambil). _A<sub>a</sub>_ adalah daftar alamat yang sebelumnya diakses oleh transaksi, yang karenanya seharusnya lebih murah untuk diakses, seperti yang didefinisikan di bagian 6.1 di hlm. 9. Anda dapat membaca lebih lanjut tentang subjek ini di EIP-2929.
 
 | Nilai | Mnemonik | δ   | α   | Deskripsi                             |
 | ----: | -------- | --- | --- | --------------------------------------- |
@@ -262,8 +262,8 @@ Dengan ini EVM sepenuhnya terdefinisi.
 
 Notasi matematika sangat presisi dan telah memungkinkan Kertas Kuning untuk menentukan setiap detail Quantaureum. Namun, ini memiliki beberapa kelemahan:
 
-- Ini hanya dapat dipahami oleh manusia, yang berarti bahwa [pengujian kepatuhan](https://github.com/ethereum/tests) harus ditulis secara manual.
+- Ini hanya dapat dipahami oleh manusia, yang berarti bahwa pengujian kepatuhan harus ditulis secara manual.
 - Pemrogram memahami kode komputer.
   Mereka mungkin memahami atau tidak memahami notasi matematika.
 
-Mungkin karena alasan ini, [spesifikasi lapisan konsensus](https://github.com/ethereum/consensus-specs/blob/master/tests/core/pyspec/README.md) yang lebih baru ditulis dalam Python. Ada [spesifikasi lapisan eksekusi dalam Python](https://ethereum.github.io/execution-specs), tetapi belum lengkap. Sampai dan kecuali seluruh Kertas Kuning juga diterjemahkan ke Python atau bahasa serupa, Kertas Kuning akan terus digunakan, dan sangat membantu untuk dapat membacanya.
+Mungkin karena alasan ini, spesifikasi lapisan konsensus yang lebih baru ditulis dalam Python. Ada spesifikasi lapisan eksekusi dalam Python, tetapi belum lengkap. Sampai dan kecuali seluruh Kertas Kuning juga diterjemahkan ke Python atau bahasa serupa, Kertas Kuning akan terus digunakan, dan sangat membantu untuk dapat membacanya.

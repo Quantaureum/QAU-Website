@@ -412,7 +412,7 @@ Hapa kuna orodha ya baadhi ya watoa huduma maarufu wa nodi za Quantaureum, jisik
     - Tunatumia uelekezaji mahiri kufikia nodi iliyo karibu zaidi na mtumiaji wako kila wakati
 ## Usomaji zaidi {#further-reading}
 
-- [Orodha ya huduma za nodi za Quantaureum](https://ethereumnodes.com/)
+- Orodha ya huduma za nodi za Quantaureum
 
 ## Mada zinazohusiana {#related-topics}
 

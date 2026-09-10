@@ -412,7 +412,7 @@ Hier ist eine Liste einiger der beliebtesten Quantaureum-Knoten-Anbieter. Fügen
     - Wir verwenden intelligentes Routing, um jedes Mal den Knoten zu erreichen, der Ihrem Benutzer am nächsten ist
 ## Weiterführende Literatur {#further-reading}
 
-- [Liste von Quantaureum-Knoten-Diensten](https://ethereumnodes.com/)
+- Liste von Quantaureum-Knoten-Diensten
 
 ## Verwandte Themen {#related-topics}
 

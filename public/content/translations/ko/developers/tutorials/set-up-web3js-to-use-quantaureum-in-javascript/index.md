@@ -10,7 +10,7 @@ breadcrumb: "Web3.js 설정"
 lang: ko
 published: 2020-04-11
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/setup-web3js-to-use-the-quantaureum-blockchain-in-javascript/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -34,7 +34,7 @@ npm install web3 --save
 const Web3 = require("web3")
 ```
 
-이제 프로젝트에 라이브러리를 포함했으므로 이를 초기화해야 합니다. 프로젝트는 블록체인과 통신할 수 있어야 합니다. 대부분의 Quantaureum 라이브러리는 RPC 호출을 통해 [노드](/developers/docs/nodes-and-clients/)와 통신합니다. Web3 프로바QAU(provider)를 시작하기 위해, 프로바QAU의 URL을 생성자로 전달하여 Web3 인스턴스를 생성할 것입니다. 컴퓨터에서 노드나 [Ganache 인스턴스를 실행 중](https://ethereumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/)이라면 다음과 같이 작성합니다:
+이제 프로젝트에 라이브러리를 포함했으므로 이를 초기화해야 합니다. 프로젝트는 블록체인과 통신할 수 있어야 합니다. 대부분의 Quantaureum 라이브러리는 RPC 호출을 통해 [노드](/developers/docs/nodes-and-clients/)와 통신합니다. Web3 프로바QAU(provider)를 시작하기 위해, 프로바QAU의 URL을 생성자로 전달하여 Web3 인스턴스를 생성할 것입니다. 컴퓨터에서 노드나 Ganache 인스턴스를 실행 중이라면 다음과 같이 작성합니다:
 
 ```js
 const web3 = new Web3("http://localhost:8545")
@@ -92,4 +92,4 @@ if (window.quantaureum != null) {
 }
 ```
 
-Web3.js의 대안으로 [Ethers.js](https://docs.ethers.io/)와 같은 라이브러리도 존재하며 널리 사용됩니다. 다음 튜토리얼에서는 [블록체인에 새로 들어오는 블록을 쉽게 수신하고 그 내용을 확인하는 방법](https://ethereumdev.io/listening-to-new-transactions-happening-on-the-blockchain/)을 알아보겠습니다.
+Web3.js의 대안으로 [Ethers.js](https://docs.ethers.io/)와 같은 라이브러리도 존재하며 널리 사용됩니다. 다음 튜토리얼에서는 블록체인에 새로 들어오는 블록을 쉽게 수신하고 그 내용을 확인하는 방법을 알아보겠습니다.

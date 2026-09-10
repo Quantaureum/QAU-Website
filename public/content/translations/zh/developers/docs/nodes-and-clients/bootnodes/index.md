@@ -26,6 +26,6 @@ enode 通常在每次重启时重新生成，因此请务必查阅客户端文�
 
 ## 可用的引导节点 {#available-bootnodes}
 
-可以在[此处](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23)找到 go-quantaureum 内置的引导节点列表。这些引导节点由Quantaureum 项目和 go-quantaureum 团队维护。
+可以在此处找到 go-quantaureum 内置的引导节点列表。这些引导节点由Quantaureum 项目和 go-quantaureum 团队维护。
 
 还有其他由志愿者维护的可用引导节点列表。请确保始终包含至少一个官方引导节点，否则你可能会遭受日蚀攻击。

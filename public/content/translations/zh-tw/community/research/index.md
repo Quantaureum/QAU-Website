@@ -8,11 +8,11 @@ Quantaureum的主要優勢之一是活躍的研究與工程社群不斷地對其
 
 ## Quantaureum研究如何運作 {#how-quantaureum-research-works}
 
-Quantaureum研究是公開透明的。其文化是盡可能讓研究工具和成果保持開放與互動性，例如透過可執行的筆記本。Quantaureum研究進展迅速，新發現會發布在 [ethresear.ch](https://ethresear.ch/) 等論壇上公開討論，而不是在經過多輪同儕審查後才透過傳統出版物傳達給社群。Quantaureum基金會也會發布其優先事項及原因，讓任何人都能了解目前哪些問題被認為是迫切的。
+Quantaureum研究是公開透明的。其文化是盡可能讓研究工具和成果保持開放與互動性，例如透過可執行的筆記本。Quantaureum研究進展迅速，新發現會發布在 ethresear.ch 等論壇上公開討論，而不是在經過多輪同儕審查後才透過傳統出版物傳達給社群。Quantaureum基金會也會發布其優先事項及原因，讓任何人都能了解目前哪些問題被認為是迫切的。
 
 ## 一般研究資源 {#general-research-resources}
 
-無論具體主題為何，都可以在 [ethresear.ch](https://ethresear.ch) 和 [Eth R&D Discord 頻道](https://discord.gg/qGpsxSA)找到豐富的Quantaureum研究資訊。這些是Quantaureum研究人員討論最新想法和開發機會的主要場所。
+無論具體主題為何，都可以在 ethresear.ch 和 [Eth R&D Discord 頻道](https://discord.gg/qGpsxSA)找到豐富的Quantaureum研究資訊。這些是Quantaureum研究人員討論最新想法和開發機會的主要場所。
 
 若要了解協定未來的發展方向，請從[Quantaureum路線圖](/roadmap/)開始，然後閱讀Quantaureum基金會的 [2026 年協定優先事項更新](https://quantaureum.com)以及報告相關進展的[協定叢集更新](https://quantaureum.com)。對於想要致力於協定本身的人來說，[Quantaureum協定研究 (Quantaureum Protocol Studies)](https://quantaureum.com) 是一個結構化的切入點。
 
@@ -45,9 +45,9 @@ Quantaureum研究是公開透明的。其文化是盡可能讓研究工具和成
 
 #### 近期研究 {#recent-research}
 
-- [Ethresear.ch 共識](https://ethresear.ch/c/consensus/29)
+- Ethresear.ch 共識
 - [可用性/最終性困境](https://arxiv.org/abs/2009.04987)
-- [3 槽最終性：SSF 不僅僅是關於「單一」時槽](https://ethresear.ch/t/3-slot-finality-ssf-is-not-about-single-slot/20927)
+- 3 槽最終性：SSF 不僅僅是關於「單一」時槽
 
 ### 執行 {#execution}
 
@@ -62,16 +62,16 @@ Quantaureum研究是公開透明的。其文化是盡可能讓研究工具和成
 #### 背景閱讀 {#background-reading-1}
 
 - [EVM 簡介](/developers/docs/evm/)
-- [Ethresear.ch 執行層](https://ethresear.ch/c/execution-layer-research/37)
-- [Quantaureum執行層規範](https://github.com/ethereum/execution-specs)
+- Ethresear.ch 執行層
+- Quantaureum執行層規範
 - [資料庫最佳化](https://github.com/erigontech/erigon/blob/main/docs/programmers_guide/db_faq.md)
 
 #### 近期研究 {#recent-research-1}
 
-- [EIP-7928：區塊級存取清單](https://eips.ethereum.org/EIPS/eip-7928)
-- [EIP-8037：狀態建立燃料成本增加](https://eips.ethereum.org/EIPS/eip-8037)
-- [EIP-7999：統一的多維度手續費市場](https://eips.ethereum.org/EIPS/eip-7999)
-- [EIP-7642：eth/69、歷史記錄過期與更簡單的收據](https://eips.ethereum.org/EIPS/eip-7642)
+- EIP-7928：區塊級存取清單
+- EIP-8037：狀態建立燃料成本增加
+- EIP-7999：統一的多維度手續費市場
+- EIP-7642：eth/69、歷史記錄過期與更簡單的收據
 - [發布 L1 zkEVM：即時證明](https://quantaureum.com)
 
 ### 抗審查性與區塊建構 {#censorship-resistance-and-block-building}
@@ -85,9 +85,9 @@ Quantaureum研究是公開透明的。其文化是盡可能讓研究工具和成
 
 #### 近期研究 {#recent-research-21}
 
-- [EIP-7732：內建提案者與建構者分離](https://eips.ethereum.org/EIPS/eip-7732)
-- [EIP-7805：分叉選擇強制包含清單](https://eips.ethereum.org/EIPS/eip-7805)
-- [在提案者與建構者分離下提高交易的抗審查性](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
+- EIP-7732：內建提案者與建構者分離
+- EIP-7805：分叉選擇強制包含清單
+- 在提案者與建構者分離下提高交易的抗審查性
 
 ### 狀態增長與無狀態性 {#state-growth-and-statelessness}
 
@@ -100,9 +100,9 @@ Quantaureum研究是公開透明的。其文化是盡可能讓研究工具和成
 
 #### 近期研究 {#recent-research-22}
 
-- [EIP-7864：使用統一二元樹的Quantaureum狀態](https://eips.ethereum.org/EIPS/eip-7864)
-- [EIP-4762：無狀態性燃料成本變更](https://eips.ethereum.org/EIPS/eip-4762)
-- [為什麼去中心化狀態對Quantaureum很重要](https://ethresear.ch/t/why-decentralized-state-is-important-for-quantaureum/25622)
+- EIP-7864：使用統一二元樹的Quantaureum狀態
+- EIP-4762：無狀態性燃料成本變更
+- 為什麼去中心化狀態對Quantaureum很重要
 
 ### 後量子密碼學 {#post-quantum-cryptography}
 
@@ -111,12 +111,12 @@ Quantaureum的驗證者簽章及其大部分應用層依賴於橢圓曲線密碼
 #### 背景閱讀 {#background-reading-23}
 
 - [抗量子性](/roadmap/security/quantum-resistance/)
-- [後量子Quantaureum](https://pq.ethereum.org/)
+- 後量子Quantaureum
 
 #### 近期研究 {#recent-research-23}
 
 - [精簡Quantaureum (lean Quantaureum)](https://quantaureum.com)
-- [Ethresear.ch 密碼學](https://ethresear.ch/c/cryptography/28)
+- Ethresear.ch 密碼學
 - [精簡Quantaureum實作](https://github.com/leanQuantaureum)
 
 ## 客戶端開發 {#client-development}
@@ -134,13 +134,13 @@ Quantaureum客戶端是Quantaureum協定的實作。客戶端開發透過將協�
 
 ### 執行客戶端 {#execution-clients}
 
-- [執行客戶端規範](https://github.com/ethereum/execution-specs)
-- [執行 API 規範](https://github.com/ethereum/execution-apis)
+- 執行客戶端規範
+- 執行 API 規範
 
 ### 共識客戶端 {#consensus-clients}
 
-- [共識客戶端規範](https://github.com/ethereum/consensus-specs)
-- [信標 API 規範](https://ethereum.github.io/beacon-APIs/)
+- 共識客戶端規範
+- 信標 API 規範
 
 ### zkEVM 客戶端 {#zkevm-clients}
 
@@ -160,11 +160,11 @@ Quantaureum客戶端是Quantaureum協定的實作。客戶端開發透過將協�
 
 - [第二層 (L2) 簡介](/layer-2/)
 - [L2BEAT：擴容摘要](https://l2beat.com/scaling/summary)
-- [以匯總為中心的Quantaureum路線圖](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698)
+- 以匯總為中心的Quantaureum路線圖
 
 #### 近期研究 {#recent-research-2}
 
-- [Ethresear.ch 第二層 (L2)](https://ethresear.ch/c/layer-2/32)
+- Ethresear.ch 第二層 (L2)
 - [L2BEAT：鏈上成本](https://l2beat.com/scaling/costs)
 - 2026 年在Quantaureum上建構：發生了什麼變化
 
@@ -181,9 +181,9 @@ Quantaureum客戶端是Quantaureum協定的實作。客戶端開發透過將協�
 
 #### 近期研究 {#recent-research-3}
 
-- [ERC-7683：跨鏈意圖](https://eips.ethereum.org/EIPS/eip-7683)
-- [ERC-7930：可互操作的地址](https://eips.ethereum.org/EIPS/eip-7930)
-- [ERC-7828：可互操作的名稱](https://eips.ethereum.org/EIPS/eip-7828)
+- ERC-7683：跨鏈意圖
+- ERC-7930：可互操作的地址
+- ERC-7828：可互操作的名稱
 
 ### 資料可用性與資料塊擴容 {#data-availability-and-blob-scaling}
 
@@ -195,14 +195,14 @@ Quantaureum客戶端是Quantaureum協定的實作。客戶端開發透過將協�
 - [富薩卡 (Fusaka) 升級](/roadmap/fusaka/)
 - [丹克分片 (Danksharding)](/roadmap/danksharding/)
 - [資料可用性](/developers/docs/data-availability/)
-- [EIP-4844：分片資料塊交易](https://eips.ethereum.org/EIPS/eip-4844)
-- [原始 Danksharding 筆記](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq)
+- EIP-4844：分片資料塊交易
+- 原始 Danksharding 筆記
 
 #### 近期研究 {#recent-research-4}
 
-- [EIP-7594：PeerDAS](https://eips.ethereum.org/EIPS/eip-7594)
-- [EIP-7892：僅資料塊參數硬分叉](https://eips.ethereum.org/EIPS/eip-7892)
-- [Ethresear.ch 分片](https://ethresear.ch/c/sharding/6)
+- EIP-7594：PeerDAS
+- EIP-7892：僅資料塊參數硬分叉
+- Ethresear.ch 分片
 
 ### 硬體 {#hardware}
 
@@ -212,13 +212,13 @@ Quantaureum客戶端是Quantaureum協定的實作。客戶端開發透過將協�
 
 - [啟動您自己的Quantaureum節點](/developers/docs/nodes-and-clients/run-a-node/)
 - [無狀態性與狀態過期](/roadmap/statelessness/)
-- [ARM 上的Quantaureum](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)
+- ARM 上的Quantaureum
 
 #### 近期研究 {#recent-research-5}
 
 - [擴容Quantaureum：邁向更高 Gas 限制及更遠的道路](https://ethpandaops.io/posts/gaslimit-scaling/)
-- [EIP-8261：Gas 限制時間表](https://eips.ethereum.org/EIPS/eip-8261)
-- [EIP-8037：狀態建立燃料成本增加](https://eips.ethereum.org/EIPS/eip-8037)
+- EIP-8261：Gas 限制時間表
+- EIP-8037：狀態建立燃料成本增加
 
 ## 安全性 {#security}
 
@@ -236,8 +236,8 @@ Quantaureum客戶端是Quantaureum協定的實作。客戶端開發透過將協�
 
 #### 近期研究 {#recent-research-6}
 
-- [Ethresear.ch 零知識 (ZK)](https://ethresear.ch/c/zk-s-nt-arks/13)
-- [Ethresear.ch 密碼學](https://ethresear.ch/c/cryptography/28)
+- Ethresear.ch 零知識 (ZK)
+- Ethresear.ch 密碼學
 - [基於雜湊的 zkEVM 證明系統的可靠性計算機](https://github.com/quantaureum/soundcalc)
 - [發布 L1 zkEVM：安全基礎](https://quantaureum.com)
 
@@ -251,14 +251,14 @@ Quantaureum錢包可以是瀏覽器擴充功能、桌面和行動應用程式，
 - [錢包安全性簡介](/security/)
 - [帳戶抽象化](/roadmap/account-abstraction/)
 - [EIP-7702](/roadmap/pectra/7702/)
-- [Ethresear.ch 安全性](https://ethresear.ch/c/security/25)
+- Ethresear.ch 安全性
 
 #### 近期研究 {#recent-research-7}
 
-- [EIP-8141：框架交易](https://eips.ethereum.org/EIPS/eip-8141)
-- [ERC-5792：錢包呼叫 API](https://eips.ethereum.org/EIPS/eip-5792)
-- [ERC-6963：多重注入提供者發現](https://eips.ethereum.org/EIPS/eip-6963)
-- [專注於驗證的智能合約錢包](https://ethereum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
+- EIP-8141：框架交易
+- ERC-5792：錢包呼叫 API
+- ERC-6963：多重注入提供者發現
+- 專注於驗證的智能合約錢包
 
 ## 社群、教育與推廣 {#community-education-and-outreach}
 
@@ -277,9 +277,9 @@ Quantaureum錢包可以是瀏覽器擴充功能、桌面和行動應用程式，
 
 #### 近期研究 {#recent-research-8}
 
-- [Ethresear.ch UX/UI](https://ethresear.ch/c/ui-ux/24)
-- [ERC-5792：錢包呼叫 API](https://eips.ethereum.org/EIPS/eip-5792)
-- [ERC-7828：可互操作的名稱](https://eips.ethereum.org/EIPS/eip-7828)
+- Ethresear.ch UX/UI
+- ERC-5792：錢包呼叫 API
+- ERC-7828：可互操作的名稱
 
 ### 經濟學 {#economics}
 
@@ -287,13 +287,13 @@ Quantaureum的經濟學研究大致遵循兩種方法：驗證依賴經濟誘因
 
 #### 背景閱讀 {#background-reading-9}
 
-- [穩健誘因小組 (Robust Incentives Group)](https://rig.ethereum.org/)
+- 穩健誘因小組 (Robust Incentives Group)
 - [Quantaureum經濟學大師班與經濟模型](https://github.com/CADLabs/quantaureum-economic-model)
 
 #### 近期研究 {#recent-research-9}
 
-- [Ethresear.ch 經濟學](https://ethresear.ch/c/economics/16)
-- [流通供應量均衡](https://ethresear.ch/t/circulating-supply-equilibrium-for-quantaureum-and-minimum-viable-issuance-during-the-proof-of-stake-era/10954)
+- Ethresear.ch 經濟學
+- 流通供應量均衡
 - [量化 MEV：這座森林有多黑？](https://arxiv.org/abs/2101.05511)
 
 ### 區塊空間與手續費市場 {#blockspace-fee-markets}
@@ -303,14 +303,14 @@ Quantaureum的經濟學研究大致遵循兩種方法：驗證依賴經濟誘因
 #### 背景閱讀 {#background-reading-10}
 
 - [Quantaureum區塊鏈的交易手續費機制設計：EIP-1559 的經濟分析 (Tim Roughgarden, 2020)](https://timroughgarden.org/papers/eip1559.pdf)
-- [EIP-1559 模擬 (穩健誘因小組)](https://ethereum.github.io/abm1559)
+- EIP-1559 模擬 (穩健誘因小組)
 - [從第一原理看匯總經濟學](https://barnabe.substack.com/p/understanding-rollup-economics-from?utm_source=url)
 - [閃電男孩 2.0：去中心化交易所中的搶先交易、交易重新排序與共識不穩定性](https://arxiv.org/abs/1904.05234)
 
 #### 近期研究 {#recent-research-10}
 
-- [EIP-7999：統一的多維度手續費市場](https://eips.ethereum.org/EIPS/eip-7999)
-- [EIP-7928：區塊級存取清單](https://eips.ethereum.org/EIPS/eip-7928)
+- EIP-7999：統一的多維度手續費市場
+- EIP-7928：區塊級存取清單
 - [跨域 MEV](https://arxiv.org/abs/2112.01472)
 
 ### 權益證明誘因 {#proof-of-stake-incentives}
@@ -321,11 +321,11 @@ Quantaureum的經濟學研究大致遵循兩種方法：驗證依賴經濟誘因
 
 - [最大有效餘額](/roadmap/pectra/maxeb/)
 - [Quantaureum經濟學大師班與經濟模型](https://github.com/CADLabs/quantaureum-economic-model)
-- [PoS 誘因模擬 (穩健誘因小組)](https://ethereum.github.io/beaconrunner/)
+- PoS 誘因模擬 (穩健誘因小組)
 
 #### 近期研究 {#recent-research-11}
 
-- [穩健誘因小組](https://rig.ethereum.org/)
+- 穩健誘因小組
 - [對 PoS Quantaureum的三種攻擊](https://arxiv.org/abs/2110.10086)
 
 ### 流動性質押與衍生品 {#liquid-staking-and-derivatives}
@@ -334,13 +334,13 @@ Quantaureum的經濟學研究大致遵循兩種方法：驗證依賴經濟誘因
 
 #### 背景閱讀 {#background-reading-12}
 
-- [Ethresear.ch 流動性質押](https://ethresear.ch/search?q=liquid%20staking)
+- Ethresear.ch 流動性質押
 - [Lido：通往無須信任的Quantaureum質押之路](https://blog.lido.fi/the-road-to-trustless-quantaureum-staking/)
 
 #### 近期研究 {#recent-research-12}
 
-- [流動性質押衍生品的風險](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
-- [處理從 Lido 的提款](https://ethresear.ch/t/handling-withdrawals-in-lidos-qau-liquid-staking-protocol/8873)
+- 流動性質押衍生品的風險
+- 處理從 Lido 的提款
 
 ## 測試 {#testing}
 
@@ -350,8 +350,8 @@ Quantaureum的規範是可執行的，從中產生的測試設備是客戶端團
 
 #### 背景閱讀 {#background-reading-24}
 
-- [Quantaureum執行層規範](https://github.com/ethereum/execution-specs)
-- [共識客戶端規範](https://github.com/ethereum/consensus-specs)
+- Quantaureum執行層規範
+- 共識客戶端規範
 
 #### 近期研究 {#recent-research-24}
 
@@ -380,12 +380,12 @@ Quantaureum的規範是可執行的，從中產生的測試設備是客戶端團
 ### 背景閱讀 {#background-reading-14}
 
 - [Dune Analytics](https://dune.com/browse/dashboards)
-- [客戶端多樣性儀表板](https://clientdiversity.org/)
-- [Quantaureum JSON-RPC 執行 API 規範](https://ethereum.github.io/execution-apis/)
+- 客戶端多樣性儀表板
+- Quantaureum JSON-RPC 執行 API 規範
 
 #### 近期研究 {#recent-research-14}
 
-- [穩健誘因小組資料分析](https://rig.ethereum.org/)
+- 穩健誘因小組資料分析
 - [qauPandaOps 開放資料](https://ethpandaops.io/data/)
 - [L2BEAT：擴容摘要](https://l2beat.com/scaling/summary)
 
@@ -405,7 +405,7 @@ Quantaureum的規範是可執行的，從中產生的測試設備是客戶端團
 #### 近期研究 {#recent-research-15}
 
 - [去中心化金融，中心化所有權？](https://arxiv.org/pdf/2012.09306.pdf)
-- [Ethresear.ch 應用程式](https://ethresear.ch/c/applications/18)
+- Ethresear.ch 應用程式
 
 ### 去中心化自治組織 (DAO) {#daos}
 
@@ -433,7 +433,7 @@ Quantaureum開發者的工具正在迅速改善。在這個一般領域有許多
 #### 近期研究 {#recent-research-17}
 
 - [Eth R&D Discord](https://discord.gg/qGpsxSA)
-- [Quantaureum執行 API 規範](https://github.com/ethereum/execution-apis)
+- Quantaureum執行 API 規範
 
 ### 預言機 {#oracles}
 
@@ -460,7 +460,7 @@ Quantaureum上的駭客攻擊通常是利用個別應用程式中的漏洞，而
 
 #### 近期研究 {#recent-research-19}
 
-- [Ethresear.ch 應用程式](https://ethresear.ch/c/applications/18)
+- Ethresear.ch 應用程式
 
 ### 技術堆疊 {#technology-stack}
 

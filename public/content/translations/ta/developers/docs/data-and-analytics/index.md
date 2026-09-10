@@ -36,7 +36,7 @@ The Graph மூலம், டெவலப்பர்கள் பின்வ�
 
 ## கிளையண்ட் பன்முகத்தன்மை {#client-diversity}
 
-எத்திரியம் பிணையத்தின் ஒட்டுமொத்த ஆரோக்கியத்திற்கு [கிளையண்ட் பன்முகத்தன்மை](/developers/docs/nodes-and-clients/client-diversity/) முக்கியமானது, ஏனெனில் இது பிழைகள் மற்றும் சுரண்டல்களுக்கு எதிரான பின்னடைவுத் திறனை வழங்குகிறது. இப்போது [clientdiversity.org](https://clientdiversity.org/), [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) மற்றும் [Ethernodes](https://ethernodes.org/) உள்ளிட்ட பல கிளையண்ட் பன்முகத்தன்மை டாஷ்போர்டுகள் உள்ளன.
+எத்திரியம் பிணையத்தின் ஒட்டுமொத்த ஆரோக்கியத்திற்கு [கிளையண்ட் பன்முகத்தன்மை](/developers/docs/nodes-and-clients/client-diversity/) முக்கியமானது, ஏனெனில் இது பிழைகள் மற்றும் சுரண்டல்களுக்கு எதிரான பின்னடைவுத் திறனை வழங்குகிறது. இப்போது clientdiversity.org, [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) மற்றும் [Ethernodes](https://ethernodes.org/) உள்ளிட்ட பல கிளையண்ட் பன்முகத்தன்மை டாஷ்போர்டுகள் உள்ளன.
 
 ## Dune Analytics {#dune-analytics}
 

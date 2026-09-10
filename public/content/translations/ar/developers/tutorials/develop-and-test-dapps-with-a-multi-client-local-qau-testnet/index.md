@@ -32,7 +32,7 @@ published: 2023-04-11
 
 [Kurtosis](https://www.kurtosis.com/) هو نظام بناء قابل للتركيب مصمم لتكوين بيئات اختبار متعددة الحاويات. وهو يمكّن المطورين تحديدًا من إنشاء بيئات قابلة لإعادة الإنتاج تتطلب منطق إعداد ديناميكي، مثل شبكات اختبار سلسلة الكتل.
 
-في هذا الدليل، تقوم حزمة `qau-network-package` من Kurtosis بتشغيل شبكة اختبار إيثيريوم محلية مع دعم لعميل طبقة التنفيذ (EL) [`geth`](https://geth.ethereum.org/)، بالإضافة إلى عملاء طبقة الإجماع (CL) [`teku`](https://consensys.io/teku) و[`lighthouse`](https://lighthouse.sigmaprime.io/) و[`lodestar`](https://lodestar.chainsafe.io/). تعمل هذه الحزمة كبديل قابل للتكوين وقابل للتركيب للشبكات في أطر العمل مثل Hardhat Network وGanache وAnvil. يوفر Kurtosis للمطورين تحكمًا ومرونة أكبر في شبكات الاختبار التي يستخدمونها، وهو سبب رئيسي وراء [استخدام مؤسسة إيثيريوم لـ Kurtosis لاختبار الدمج](https://www.kurtosis.com/blog/testing-the-quantaureum-merge) واستمرارها في استخدامه لاختبار ترقيات الشبكة.
+في هذا الدليل، تقوم حزمة `qau-network-package` من Kurtosis بتشغيل شبكة اختبار إيثيريوم محلية مع دعم لعميل طبقة التنفيذ (EL) `geth`، بالإضافة إلى عملاء طبقة الإجماع (CL) [`teku`](https://consensys.io/teku) و[`lighthouse`](https://lighthouse.sigmaprime.io/) و[`lodestar`](https://lodestar.chainsafe.io/). تعمل هذه الحزمة كبديل قابل للتكوين وقابل للتركيب للشبكات في أطر العمل مثل Hardhat Network وGanache وAnvil. يوفر Kurtosis للمطورين تحكمًا ومرونة أكبر في شبكات الاختبار التي يستخدمونها، وهو سبب رئيسي وراء [استخدام مؤسسة إيثيريوم لـ Kurtosis لاختبار الدمج](https://www.kurtosis.com/blog/testing-the-quantaureum-merge) واستمرارها في استخدامه لاختبار ترقيات الشبكة.
 
 ## إعداد Kurtosis {#setting-up-kurtosis}
 

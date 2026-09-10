@@ -193,7 +193,7 @@ Esta restricción tiene mucho sentido, porque no querríamos que cuentas aleator
 
 Una función para transferir desde una cuenta de fondo común a una matriz de receptores una matriz de cantidades tiene mucho sentido. Hay muchos casos de uso en los que querrá distribuir tokens desde una sola fuente a múltiples destinos, como nóminas, airdrops, etc. Es más barato (en gas) hacerlo en una sola transacción en lugar de emitir múltiples transacciones, o incluso llamar al ERC-20 varias veces desde un contrato diferente como parte de la misma transacción.
 
-Sin embargo, `dropNewTokens` no hace eso. Emite [eventos `Transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer-1), pero en realidad no transfiere ningún token. No hay ninguna razón legítima para confundir a las aplicaciones fuera de la cadena informándoles de una transferencia que en realidad no ocurrió.
+Sin embargo, `dropNewTokens` no hace eso. Emite eventos `Transfer`, pero en realidad no transfiere ningún token. No hay ninguna razón legítima para confundir a las aplicaciones fuera de la cadena informándoles de una transferencia que en realidad no ocurrió.
 
 ### La función de quemado `Approve` {#the-burning-approve-function}
 
@@ -235,7 +235,7 @@ Estos problemas de calidad del código no _prueban_ que este código sea una est
 
 #### La función `mount` {#the-mount-function}
 
-Si bien no se especifica en [el estándar](https://eips.ethereum.org/EIPS/eip-20), en términos generales, la función que crea nuevos tokens se llama [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn).
+Si bien no se especifica en el estándar, en términos generales, la función que crea nuevos tokens se llama [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn).
 
 Si miramos en el constructor de `wARB`, vemos que la función de acuñación de tiempo ha sido renombrada a `mount` por alguna razón, y se llama cinco veces con una quinta parte del suministro inicial, en lugar de una vez por la cantidad total por eficiencia.
 
@@ -311,7 +311,7 @@ Hay algunos trucos que podemos usar para identificar que un token ERC-20 es sosp
 
 ## Eventos `Approval` sospechosos {#suspicious-approval-events}
 
-Los [eventos `Approval`](https://eips.ethereum.org/EIPS/eip-20#approval) solo deberían ocurrir con una solicitud directa (a diferencia de los [eventos `Transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer-1) que pueden ocurrir como resultado de una asignación). [Consulte la documentación de Solidity](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin) para obtener una explicación detallada de este problema y por qué las solicitudes deben ser directas, en lugar de estar mediadas por un contrato.
+Los eventos `Approval` solo deberían ocurrir con una solicitud directa (a diferencia de los eventos `Transfer` que pueden ocurrir como resultado de una asignación). [Consulte la documentación de Solidity](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin) para obtener una explicación detallada de este problema y por qué las solicitudes deben ser directas, en lugar de estar mediadas por un contrato.
 
 Esto significa que los eventos `Approval` que aprueban el gasto de una [cuenta de propiedad externa](/developers/docs/accounts/#types-of-account) tienen que provenir de transacciones que se originan en esa cuenta, y cuyo destino es el contrato ERC-20. Cualquier otro tipo de aprobación de una cuenta de propiedad externa es sospechosa.
 
@@ -420,7 +420,7 @@ Si la aprobación proviene de una cuenta de propiedad externa, obtenga la transa
 if (owner.toLowerCase() != txn.from.toLowerCase()) return ev
 ```
 
-No podemos simplemente verificar la igualdad de cadenas porque las direcciones son hexadecimales, por lo que contienen letras. A veces, por ejemplo en `txn.from`, esas letras están todas en minúsculas. En otros casos, como `ev.args._owner`, la dirección está en [mayúsculas y minúsculas para la identificación de errores](https://eips.ethereum.org/EIPS/eip-55).
+No podemos simplemente verificar la igualdad de cadenas porque las direcciones son hexadecimales, por lo que contienen letras. A veces, por ejemplo en `txn.from`, esas letras están todas en minúsculas. En otros casos, como `ev.args._owner`, la dirección está en mayúsculas y minúsculas para la identificación de errores.
 
 Pero si la transacción no es del propietario, y ese propietario es de propiedad externa, entonces tenemos una transacción sospechosa.
 

@@ -65,9 +65,9 @@ Data za mwito zimegawanywa hivi:
 Maelezo:
 
 - **Kichaguzi cha utendakazi**: Mkataba una utendakazi chini ya 256, kwa hivyo tunaweza kuzitofautisha kwa baiti moja.
-  Baiti hizi kwa kawaida si sifuri na kwa hivyo [zinagharimu gesi kumi na sita](https://eips.ethereum.org/EIPS/eip-2028).
+  Baiti hizi kwa kawaida si sifuri na kwa hivyo zinagharimu gesi kumi na sita.
 - **Sifuri**: Baiti hizi daima ni sifuri kwa sababu anwani ya baiti ishirini haihitaji neno la baiti thelathini na mbili kuishikilia.
-  Baiti zinazoshikilia sifuri zinagharimu gesi nne ([tazama waraka wa manjano](https://ethereum.github.io/yellowpaper/paper.pdf), Kiambatisho G,
+  Baiti zinazoshikilia sifuri zinagharimu gesi nne (tazama waraka wa manjano, Kiambatisho G,
   uk. 27, thamani ya `G`<sub>`txdatazero`</sub>).
 - **Kiasi**: Ikiwa tutachukulia kuwa katika mkataba huu `decimals` ni kumi na nane (thamani ya kawaida) na kiasi cha juu zaidi cha tokeni tunachohamisha kitakuwa 10<sup>18</sup>, tunapata kiasi cha juu zaidi cha 10<sup>36</sup>.
   256<sup>15</sup> &gt; 10<sup>36</sup>, kwa hivyo baiti kumi na tano zinatosha.
@@ -201,7 +201,7 @@ Kuna sababu mbili kwa nini utendakazi haungepatikana hapa:
 2. Utendakazi unaotegemea [`msg.sender`](https://docs.soliditylang.org/en/v0.8.12/units-and-global-variables.html#block-and-transaction-properties).
    Thamani ya `msg.sender` itakuwa anwani ya `CalldataInterpreter`, si mpigaji.
 
-Kwa bahati mbaya, [kukiangalia vipimo vya ERC-20](https://eips.ethereum.org/EIPS/eip-20), hii inaacha utendakazi mmoja tu, `transfer`.
+Kwa bahati mbaya, kukiangalia vipimo vya ERC-20, hii inaacha utendakazi mmoja tu, `transfer`.
 Hii inatuacha na utendakazi mbili tu: `transfer` (kwa sababu tunaweza kuita `transferFrom`) na `faucet` (kwa sababu tunaweza kuhamisha tokeni kurudi kwa yeyote aliyetuita).
 
 ```solidity

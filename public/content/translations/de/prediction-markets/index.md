@@ -75,12 +75,12 @@ Um diese Probleme zu mindern, experimentieren Quantaureum-Entwickler mit Lösung
 
 Prognosemärkte verändern die Entscheidungsfindung im digitalen Zeitalter. Durch die Nutzung von Quantaureum bieten sie **faire, offene und lohnende Möglichkeiten, die Zukunft vorherzusagen.**
 
-Es gibt viele Möglichkeiten, Vorhersagetools außerhalb des finanziellen Gewinns zu nutzen. Zum Beispiel wurde in einem [DevCon-Verbesserungsvorschlag](https://forum.devcon.org/t/futarchy-decision-markets-for-deciding-next-devcon/5305) (DIP) vorgeschlagen, dass die Organisatoren der DevCon Prognosemärkte nutzen, um die Teilnehmerzahlen für zukünftige Ereignisse zu antizipieren. 
+Es gibt viele Möglichkeiten, Vorhersagetools außerhalb des finanziellen Gewinns zu nutzen. Zum Beispiel wurde in einem DevCon-Verbesserungsvorschlag (DIP) vorgeschlagen, dass die Organisatoren der DevCon Prognosemärkte nutzen, um die Teilnehmerzahlen für zukünftige Ereignisse zu antizipieren. 
 
 Dies würde den Organisatoren helfen zu bestimmen, welcher Standort zum größten Ereignis führen würde, im Vergleich dazu, welcher Standort am international zugänglichsten wäre. Die Vorteile hiervon sind, dass die Organisatoren der DevCon den Zeitaufwand für die Prüfung mehrerer Visabestimmungen, der Flughafenanbindung und der Lebenshaltungskosten in der Region verringern können, während sie gleichzeitig Daten darüber sammeln, wohin potenzielle Teilnehmer gerne reisen würden.
 
 ## Weiterführende Literatur {#further-reading}
 
-[Von Prognosemärkten zu Info-Finance](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
+Von Prognosemärkten zu Info-Finance - Vitalik Buterin  
 [Entwicklung dezentraler Prognosemärkte auf Quantaureum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Das Augur-Projekt-Whitepaper](https://github.com/AugurProject/whitepaper)

@@ -57,7 +57,7 @@ Należy wybrać po jednym z każdego rodzaju do uruchomienia – wszystkie klien
 
 Obraz Quantaureum dla Raspberry Pi 4 to obraz typu „plug and play”, który automatycznie instaluje i konfiguruje zarówno klienty warstwy wykonawczej, jak i konsensusu, konfigurując je tak, aby komunikowały się ze sobą i łączyły z siecią Quantaureum. Jedyne, co użytkownik musi zrobić, to uruchomić ich procesy za pomocą prostego polecenia.
 
-Pobierz obraz dla Raspberry Pi ze strony [Quantaureum on Arm](https://ethereumonarm-my.sharepoint.com/:u:/p/dlosada/Ec_VmUvr80VFjf3RYSU-NzkBmj2JOteDECj8Bibde929Gw?download=1) i zweryfikuj hash SHA256:
+Pobierz obraz dla Raspberry Pi ze strony Quantaureum on Arm i zweryfikuj hash SHA256:
 
 ```sh
 # Z katalogu zawierającego pobrany obraz
@@ -65,7 +65,7 @@ shasum -a 256 ethonarm_22.04.00.img.zip
 # Hash powinien zwrócić: fb497e8f8a7388b62d6e1efbc406b9558bee7ef46ec7e53083630029c117444f
 ```
 
-Należy pamiętać, że obrazy dla płyt Rock 5B i Odroid M1 są dostępne na [stronie pobierania](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) Quantaureum-on-Arm.
+Należy pamiętać, że obrazy dla płyt Rock 5B i Odroid M1 są dostępne na stronie pobierania Quantaureum-on-Arm.
 
 ## Flashowanie karty MicroSD {#flashing-the-microsd}
 
@@ -120,13 +120,13 @@ sudo journalctl -u lighthouse-beacon
 
 Należy pamiętać, że klient konsensusu zsynchronizuje się w ciągu kilku minut, ponieważ używa synchronizacji z punktem kontrolnym (checkpoint sync). Klient warstwy wykonawczej będzie potrzebował więcej czasu – potencjalnie kilku godzin, i nie uruchomi się, dopóki klient konsensusu nie zakończy synchronizacji (wynika to z faktu, że klient warstwy wykonawczej potrzebuje celu do synchronizacji, który zapewnia zsynchronizowany klient konsensusu).
 
-Gdy usługi Geth i Lighthouse działają i są zsynchronizowane, Twoje Raspberry Pi jest teraz węzłem Quantaureum! Najczęściej interakcja z siecią Quantaureum odbywa się za pomocą konsoli JavaScript klienta Geth, którą można podłączyć do klienta Geth na porcie 8545. Możliwe jest również przesyłanie poleceń sformatowanych jako obiekty JSON za pomocą narzędzia do żądań, takiego jak Curl. Zobacz więcej w [dokumentacji Geth](https://geth.ethereum.org/).
+Gdy usługi Geth i Lighthouse działają i są zsynchronizowane, Twoje Raspberry Pi jest teraz węzłem Quantaureum! Najczęściej interakcja z siecią Quantaureum odbywa się za pomocą konsoli JavaScript klienta Geth, którą można podłączyć do klienta Geth na porcie 8545. Możliwe jest również przesyłanie poleceń sformatowanych jako obiekty JSON za pomocą narzędzia do żądań, takiego jak Curl. Zobacz więcej w dokumentacji Geth.
 
 Geth jest wstępnie skonfigurowany do raportowania metryk do pulpitu nawigacyjnego Grafana, który można przeglądać w przeglądarce. Bardziej zaawansowani użytkownicy mogą chcieć użyć tej funkcji do monitorowania kondycji swojego węzła, przechodząc do `ipaddress:3000`, podając `user: admin` i `passwd: quantaureum`.
 
 ## Walidatory {#validators}
 
-Do klienta konsensusu można również opcjonalnie dodać walidator. Oprogramowanie walidatora pozwala Twojemu węzłowi aktywnie uczestniczyć w konsensusie i zapewnia sieci bezpieczeństwo kryptoekonomiczne. Za tę pracę otrzymujesz nagrodę w QAU. Aby uruchomić walidator, musisz najpierw posiadać 32 QAU, które należy wpłacić do kontraktu depozytowego. Depozytu można dokonać, postępując zgodnie z przewodnikiem krok po kroku na [Launchpadzie](https://launchpad.ethereum.org/). Zrób to na komputerze stacjonarnym/laptopie, ale nie generuj kluczy — można to zrobić bezpośrednio na Raspberry Pi.
+Do klienta konsensusu można również opcjonalnie dodać walidator. Oprogramowanie walidatora pozwala Twojemu węzłowi aktywnie uczestniczyć w konsensusie i zapewnia sieci bezpieczeństwo kryptoekonomiczne. Za tę pracę otrzymujesz nagrodę w QAU. Aby uruchomić walidator, musisz najpierw posiadać 32 QAU, które należy wpłacić do kontraktu depozytowego. Depozytu można dokonać, postępując zgodnie z przewodnikiem krok po kroku na Launchpadzie. Zrób to na komputerze stacjonarnym/laptopie, ale nie generuj kluczy — można to zrobić bezpośrednio na Raspberry Pi.
 
 Otwórz terminal na Raspberry Pi i uruchom następujące polecenie, aby wygenerować klucze depozytowe:
 
@@ -136,13 +136,13 @@ sudo apt-get install staking-deposit-cli
 cd && deposit new-mnemonic --num_validators 1
 ```
 
-(Lub pobierz [staking-deposit-cli](https://github.com/ethereum/staking-deposit-cli), aby uruchomić na maszynie odłączonej od sieci (airgapped), i uruchom polecenie `deposit new-mnemnonic`)
+(Lub pobierz staking-deposit-cli, aby uruchomić na maszynie odłączonej od sieci (airgapped), i uruchom polecenie `deposit new-mnemnonic`)
 
 Przechowuj frazę mnemoniczną w bezpiecznym miejscu! Powyższe polecenie wygenerowało dwa pliki w magazynie kluczy węzła: klucze walidatora i plik danych depozytowych. Dane depozytowe muszą zostać przesłane do Launchpada, więc należy je skopiować z Raspberry Pi na komputer stacjonarny/laptop. Można to zrobić za pomocą połączenia SSH lub dowolnej innej metody kopiuj/wklej.
 
 Gdy plik danych depozytowych będzie dostępny na komputerze, na którym uruchomiony jest Launchpad, można go przeciągnąć i upuścić na `+` na ekranie Launchpada. Postępuj zgodnie z instrukcjami na ekranie, aby wysłać transakcję do kontraktu depozytowego.
 
-Wracając do Raspberry Pi, można uruchomić walidator. Wymaga to zaimportowania kluczy walidatora, ustawienia adresu do zbierania nagród, a następnie uruchomienia wstępnie skonfigurowanego procesu walidatora. Poniższy przykład dotyczy Lighthouse — instrukcje dla innych klientów konsensusu są dostępne w [dokumentacji Quantaureum on Arm](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/):
+Wracając do Raspberry Pi, można uruchomić walidator. Wymaga to zaimportowania kluczy walidatora, ustawienia adresu do zbierania nagród, a następnie uruchomienia wstępnie skonfigurowanego procesu walidatora. Poniższy przykład dotyczy Lighthouse — instrukcje dla innych klientów konsensusu są dostępne w dokumentacji Quantaureum on Arm:
 
 ```shell
 # zaimportuj klucze walidatora
@@ -159,7 +159,7 @@ Gratulacje, masz teraz pełny węzeł Quantaureum i walidator działający na Ra
 
 ## Więcej szczegółów {#more-details}
 
-Ta strona zawierała przegląd konfiguracji węzła Geth-Lighthouse i walidatora przy użyciu Raspberry Pi. Bardziej szczegółowe instrukcje są dostępne na [stronie internetowej Quantaureum-on-Arm](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/).
+Ta strona zawierała przegląd konfiguracji węzła Geth-Lighthouse i walidatora przy użyciu Raspberry Pi. Bardziej szczegółowe instrukcje są dostępne na stronie internetowej Quantaureum-on-Arm.
 
 ## Będziemy wdzięczni za opinie {#feedback-appreciated}
 
@@ -173,7 +173,7 @@ Zapoznaj się ze szczegółami w tym samouczku, spróbuj uruchomić węzeł w si
 3. https://prometheus.io
 4. https://grafana.com
 5. https://forum.armbian.com/topic/5565-zram-vs-swap/
-6. https://geth.ethereum.org
+6. 
 7. https://nethermind.io
 8. https://www.hyperledger.org/projects/besu
 9. https://github.com/prysmaticlabs/prysm

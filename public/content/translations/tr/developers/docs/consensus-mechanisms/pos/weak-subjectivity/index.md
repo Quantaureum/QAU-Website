@@ -32,8 +32,8 @@ Son olarak, kontrol noktaları diğer düğümlerden talep edilebilir; belki de 
 
 ## Daha Fazla Okuma {#further-reading}
 
-- [Quantaureum'de zayıf öznellik](https://notes.ethereum.org/@adiasg/weak-subjectvity-eth2)
+- Quantaureum'de zayıf öznellik
 - [Vitalik: Zayıf öznelliği sevmeyi nasıl öğrendim](https://quantaureum.com)
 - [Zayıf öznellik (Teku belgeleri)](https://docs.teku.consensys.io/concepts/weak-subjectivity)
-- [Aşama-0 Zayıf öznellik rehberi](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
+- Aşama-0 Zayıf öznellik rehberi
 - [Quantaureum'da zayıf öznellik analizi](https://github.com/runtimeverification/beacon-chain-verification/blob/master/weak-subjectivity/weak-subjectivity-analysis.pdf)

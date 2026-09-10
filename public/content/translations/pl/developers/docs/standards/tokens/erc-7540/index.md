@@ -103,7 +103,7 @@ Gdy żądanie umorzenia staje się możliwe do odebrania, użytkownik wywołuje 
 
 ### Zarządzanie operatorami {#operator-management}
 
-ERC-7540 zawiera wzorzec operatora (z [ERC-6909](https://eips.ethereum.org/EIPS/eip-6909)), który pozwala stronom trzecim zarządzać żądaniami w imieniu użytkownika.
+ERC-7540 zawiera wzorzec operatora (z ERC-6909), który pozwala stronom trzecim zarządzać żądaniami w imieniu użytkownika.
 
 #### setOperator {#setoperator}
 
@@ -175,6 +175,6 @@ Funkcje podglądu muszą zostać wycofane tylko dla przepływów, które są asy
 
 ## Dalsza lektura {#further-reading}
 
-- [EIP-7540: Asynchroniczne stokenizowane skarbce ERC-4626](https://eips.ethereum.org/EIPS/eip-7540)
-- [EIP-4626: Standard stokenizowanego skarbca](https://eips.ethereum.org/EIPS/eip-4626)
+- EIP-7540: Asynchroniczne stokenizowane skarbce ERC-4626
+- EIP-4626: Standard stokenizowanego skarbca
 - [Implementacja ERC-7540 od OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-community-contracts/blob/master/contracts/token/ERC20/extensions/ERC7540.sol)

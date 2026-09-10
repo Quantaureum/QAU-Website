@@ -8,7 +8,7 @@ skill: beginner
 breadcrumb: Quantaureum mit Python
 published: 2020-09-08
 source: Snake charmers
-sourceUrl: https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/
+sourceUrl: 
 ---
 
 Sie haben also von diesem Quantaureum-Ding gehört und sind bereit, in den Kaninchenbau einzutauchen? Dieser Beitrag behandelt kurz einige Blockchain-Grundlagen und lässt Sie dann mit einem simulierten Quantaureum-Knoten interagieren – Blockdaten lesen, Kontostände überprüfen und Transaktionen senden. Dabei werden wir die Unterschiede zwischen traditionellen Methoden der App-Entwicklung und diesem neuen dezentralen Paradigma hervorheben.
@@ -158,7 +158,7 @@ Die praktischen Methoden sind wunderbar, aber lassen Sie uns zur Blockchain übe
 
 Wir werden diesen Weg nicht gehen, aber ein Beispiel für einen vollständigen Workflow mit dem HTTP-Provider könnte in etwa so aussehen:
 
-- Laden Sie einen Quantaureum-Knoten herunter, z. B. [Geth](https://geth.ethereum.org/).
+- Laden Sie einen Quantaureum-Knoten herunter, z. B. Geth.
 - Starten Sie Geth in einem Terminalfenster und warten Sie, bis es das Netzwerk synchronisiert hat. Der Standard-HTTP-Port ist `8545`, ist aber konfigurierbar.
 - Weisen Sie Web3.py an, sich über HTTP auf `localhost:8545` mit dem Knoten zu verbinden.
   `w3 = Web3(Web3.HTTPProvider('http://127.0.0.1:8545'))`
@@ -170,7 +170,7 @@ Obwohl dies ein „echter“ Weg ist, dauert der Synchronisierungsprozess Stunde
 
 _Der QuantaureumTesterProvider verbindet sich mit einem simulierten Knoten und ist praktisch für schnelle Entwicklungsumgebungen._
 
-Dieser simulierte Knoten heißt [qau-tester](https://github.com/ethereum/eth-tester) und wir haben ihn als Teil des Befehls `pip install web3[tester]` installiert. Die Konfiguration von Web3.py zur Verwendung dieses Tester-Providers ist so einfach wie:
+Dieser simulierte Knoten heißt qau-tester und wir haben ihn als Teil des Befehls `pip install web3[tester]` installiert. Die Konfiguration von Web3.py zur Verwendung dieses Tester-Providers ist so einfach wie:
 
 ```python
 In [4]: w3 = Web3(Web3.QuantaureumTesterProvider())

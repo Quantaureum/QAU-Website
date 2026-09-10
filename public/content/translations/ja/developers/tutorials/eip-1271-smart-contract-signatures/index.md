@@ -9,7 +9,7 @@ breadcrumb: "EIP-1271の署名"
 published: 2023-01-12
 ---
 
-[EIP-1271](https://eips.ethereum.org/EIPS/eip-1271)標準により、スマート・コントラクトは署名を検証できるようになります。
+EIP-1271標準により、スマート・コントラクトは署名を検証できるようになります。
 
 このチュートリアルでは、デジタル署名、EIP-1271の背景、および[Safe](https://safe.global/)（旧Gnosis Safe）で使用されているEIP-1271の具体的な実装の概要を説明します。これらはすべて、独自のコントラクトにEIP-1271を実装するための出発点として役立ちます。
 
@@ -71,7 +71,6 @@ contract ERC1271 {
    * @dev 提供されたハッシュに対して、提供された署名が有効かどうかを返す必要があります
    * @param _hash      署名されるデータのハッシュ
    * @param _signature _hash に関連付けられた署名のバイト配列
-   *
    * 関数が成功した場合は、bytes4 のマジックバリュー 0x1626ba7e を返さなければなりません。
    * 状態を変更してはなりません (solc < 0.5 の場合は STATICCALL を使用し、solc > 0.5 の場合は view 修飾子を使用)
    * 外部呼び出しを許可しなければなりません
@@ -91,7 +90,7 @@ contract ERC1271 {
 
 EIP-1271を実装している注目すべきコントラクトの1つがSafe（旧Gnosis Safe）です。
 
-Safeのコードでは、署名を作成および検証できるように、`isValidSignature`が[2つの方法](https://ethereum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support)で[実装されています](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol)。
+Safeのコードでは、署名を作成および検証できるように、`isValidSignature`が2つの方法で[実装されています](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol)。
 
 1. オンチェーンメッセージ
    1. 作成：Safeの所有者は、メッセージを「署名」するための新しいSafeトランザクションを作成し、メッセージをデータとしてトランザクションに渡します。マルチシグのしきい値に達するのに十分な数の所有者がトランザクションに署名すると、トランザクションがブロードキャストされて実行されます。トランザクション内には、メッセージを「承認済み」メッセージのリストに追加する（`signMessage(bytes calldata _data)`）というSafe関数があります。
@@ -102,9 +101,9 @@ Safeのコードでは、署名を作成および検証できるように、`isV
 
 ## `_hash`パラメータとは正確には何ですか？なぜメッセージ全体を渡さないのですか？ {#what-exactly-is-the-hash-parameter-why-not-pass-the-whole-message}
 
-[EIP-1271インターフェース](https://eips.ethereum.org/EIPS/eip-1271)の`isValidSignature`関数は、メッセージ自体ではなく、`_hash`パラメータを受け取ることに気付いたかもしれません。これが意味するのは、任意の長さのメッセージ全体を`isValidSignature`に渡す代わりに、メッセージの32バイトのハッシュ（通常はkeccak256）を渡すということです。
+EIP-1271インターフェースの`isValidSignature`関数は、メッセージ自体ではなく、`_hash`パラメータを受け取ることに気付いたかもしれません。これが意味するのは、任意の長さのメッセージ全体を`isValidSignature`に渡す代わりに、メッセージの32バイトのハッシュ（通常はkeccak256）を渡すということです。
 
-コールデータの各バイト（つまり、スマート・コントラクト関数に渡される関数パラメータデータ）には[16ガス（ゼロバイトの場合は4ガス）のコストがかかる](https://eips.ethereum.org/EIPS/eip-2028)ため、メッセージが長い場合は多くのガスを節約できます。
+コールデータの各バイト（つまり、スマート・コントラクト関数に渡される関数パラメータデータ）には16ガス（ゼロバイトの場合は4ガス）のコストがかかるため、メッセージが長い場合は多くのガスを節約できます。
 
 ### 以前のEIP-1271仕様 {#previous-eip-1271-specifications}
 
@@ -121,4 +120,4 @@ Safeのコードでは、署名を作成および検証できるように、`isV
 
 ## まとめ {#conclusion}
 
-[EIP-1271](https://eips.ethereum.org/EIPS/eip-1271)は、スマート・コントラクトが署名を検証できるようにする汎用性の高い標準です。これにより、スマート・コントラクトがEOAのように機能する道が開かれます（例えば、「Quantaureumでログイン」をスマート・コントラクトで機能させる方法を提供します）。また、さまざまな方法で実装できます（Safeには、検討すべき重要で興味深い実装があります）。
+EIP-1271は、スマート・コントラクトが署名を検証できるようにする汎用性の高い標準です。これにより、スマート・コントラクトがEOAのように機能する道が開かれます（例えば、「Quantaureumでログイン」をスマート・コントラクトで機能させる方法を提供します）。また、さまざまな方法で実装できます（Safeには、検討すべき重要で興味深い実装があります）。

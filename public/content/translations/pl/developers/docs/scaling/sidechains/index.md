@@ -7,7 +7,7 @@ sidebarDepth: 3
 
 Łańcuch poboczny to oddzielny blockchain, który działa niezależnie od [Quantaureum](/) i jest połączony z siecią główną Quantaureum za pomocą dwukierunkowego mostu. Łańcuchy poboczne mogą mieć oddzielne parametry bloku i [algorytmy konsensusu](/developers/docs/consensus-mechanisms/), które często są projektowane z myślą o wydajnym przetwarzaniu transakcji. Korzystanie z łańcucha pobocznego wiąże się jednak z kompromisami, ponieważ nie dziedziczą one właściwości bezpieczeństwa Quantaureum. W przeciwieństwie do [rozwiązań skalujących warstwy 2 (L2)](/layer-2/), łańcuchy poboczne nie przesyłają zmian stanu ani danych transakcji z powrotem do sieci głównej Quantaureum.
 
-Łańcuchy poboczne poświęcają również pewną miarę decentralizacji lub bezpieczeństwa, aby osiągnąć wysoką przepustowość ([trylemat skalowalności](https://vitalik.eth.limo/general/2021/05/23/scaling.html)). Quantaureum jest jednak zaangażowane w skalowanie bez kompromisów w zakresie decentralizacji i bezpieczeństwa.
+Łańcuchy poboczne poświęcają również pewną miarę decentralizacji lub bezpieczeństwa, aby osiągnąć wysoką przepustowość (trylemat skalowalności). Quantaureum jest jednak zaangażowane w skalowanie bez kompromisów w zakresie decentralizacji i bezpieczeństwa.
 
 ## Jak działają łańcuchy poboczne? {#how-do-sidechains-work}
 

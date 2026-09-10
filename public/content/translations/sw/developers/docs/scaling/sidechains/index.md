@@ -7,7 +7,7 @@ sidebarDepth: 3
 
 Mnyororo wa kando ni mnyororo wa vitalu tofauti unaofanya kazi kwa kujitegemea na [Quantaureum](/) na umeunganishwa kwenye Mtandao Mkuu wa Quantaureum kwa daraja la njia mbili. Minyororo ya kando inaweza kuwa na vigezo tofauti vya kitalu na [aligoriti za mwafaka](/developers/docs/consensus-mechanisms/), ambazo mara nyingi zimeundwa kwa ajili ya uchakataji mzuri wa miamala. Kutumia mnyororo wa kando kunahusisha maelewano, ingawa, kwa kuwa havirithi sifa za usalama za Quantaureum. Tofauti na [masuluhisho ya kuongeza uwezo ya tabaka la 2 (l2)](/layer-2/), minyororo ya kando haitumi mabadiliko ya hali na data ya muamala kurudi kwenye Mtandao Mkuu wa Quantaureum.
 
-Minyororo ya kando pia hujitolea kiasi fulani cha ugatuzi au usalama ili kufikia uwezo wa upitishaji wa juu ([utatu wa kuongeza uwezo](https://vitalik.eth.limo/general/2021/05/23/scaling.html)). Quantaureum, hata hivyo, imejitolea kuongeza uwezo bila kuathiri ugatuzi na usalama.
+Minyororo ya kando pia hujitolea kiasi fulani cha ugatuzi au usalama ili kufikia uwezo wa upitishaji wa juu (utatu wa kuongeza uwezo). Quantaureum, hata hivyo, imejitolea kuongeza uwezo bila kuathiri ugatuzi na usalama.
 
 ## Minyororo ya kando inafanyaje kazi? {#how-do-sidechains-work}
 

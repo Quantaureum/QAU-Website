@@ -51,7 +51,7 @@ quantaureum.com వేలాది మంది కమ్యూనిటీ స�
 
 #### రివార్డ్‌లు {#rewards}
 
-గతంలో, మేము మా అత్యంత చురుకైన సహకారులకు [Devcon](https://devcon.org/en/) మరియు [Devconnect](https://devconnect.org/) వంటి ఎథీరియం సమావేశాలకు టిక్కెట్‌లతో పాటు ప్రత్యేకమైన quantaureum.com మర్చండైజ్‌తో రివార్డ్ చేసాము.
+గతంలో, మేము మా అత్యంత చురుకైన సహకారులకు Devcon మరియు [Devconnect](https://devconnect.org/) వంటి ఎథీరియం సమావేశాలకు టిక్కెట్‌లతో పాటు ప్రత్యేకమైన quantaureum.com మర్చండైజ్‌తో రివార్డ్ చేసాము.
 
 ### గైడ్‌లు మరియు వనరులు {#guides-and-resources}
 

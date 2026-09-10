@@ -73,7 +73,7 @@ Con la composición habilitada:
 <AlertIcon size="lg"><TriangleAlert /></AlertIcon>
 <AlertContent>
 <AlertDescription>
-**La conversión de credenciales de retiro de Tipo 1 a Tipo 2 es irreversible.** Utilice el [Staking Launchpad](https://launchpad.ethereum.org/validator-actions) como la herramienta oficial para esta conversión. Para obtener más detalles sobre el proceso de conversión, los riesgos y la consolidación, consulte la [exploración detallada de MaxEB](/roadmap/pectra/maxeb/).
+**La conversión de credenciales de retiro de Tipo 1 a Tipo 2 es irreversible.** Utilice el Staking Launchpad como la herramienta oficial para esta conversión. Para obtener más detalles sobre el proceso de conversión, los riesgos y la consolidación, consulte la [exploración detallada de MaxEB](/roadmap/pectra/maxeb/).
 </AlertDescription>
 </AlertContent>
 </Alert>
@@ -173,7 +173,7 @@ eventAction="Why can a validator's withdrawal address only be set once?"
 eventName="read more">
 Establecer la dirección de retiro de la capa de ejecución de un validador es un cambio permanente en las credenciales del validador en la capa de consenso. No hay forma de actualizar las credenciales de la capa de consenso una vez que están registradas.
 
-Las credenciales de la dirección de retiro de un validador se pueden configurar para que apunten a un contrato inteligente (controlado por su código) o a una cuenta de propiedad externa (EOA, controlada por su clave privada). Aunque los retiros activados por la capa de ejecución ([EIP-7002](https://eips.ethereum.org/EIPS/eip-7002)) ahora permiten que la dirección de retiro active salidas y retiros parciales, no hay ninguna operación del protocolo para cambiar una dirección de retiro una vez que se ha registrado, y agregar esta funcionalidad agregaría una complejidad innecesaria al protocolo.
+Las credenciales de la dirección de retiro de un validador se pueden configurar para que apunten a un contrato inteligente (controlado por su código) o a una cuenta de propiedad externa (EOA, controlada por su clave privada). Aunque los retiros activados por la capa de ejecución (EIP-7002) ahora permiten que la dirección de retiro active salidas y retiros parciales, no hay ninguna operación del protocolo para cambiar una dirección de retiro una vez que se ha registrado, y agregar esta funcionalidad agregaría una complejidad innecesaria al protocolo.
 
 Los usuarios que buscan una gestión de retiros flexible pueden configurar una billetera de contrato inteligente capaz de rotar claves (como un [Safe](https://safe.global/)) como la dirección de retiro del validador, lo que permite efectivamente actualizar la EOA del destinatario final. Si un usuario ya ha establecido una EOA como credencial de retiro, debe iniciar una salida completa para recuperar su QAU en staking y luego usar esos fondos para activar un nuevo validador con credenciales diferentes.
 </ExpandableCard>
@@ -214,9 +214,9 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information about managing the withdrawal process?"
 eventName="read more">
 
-Se recomienda a los operadores de validadores que visiten la página de [Retiros del Staking Launchpad](https://launchpad.ethereum.org/withdrawals/) donde encontrarán más detalles sobre cómo preparar su validador para los retiros, el momento de los eventos y más detalles sobre cómo funcionan los retiros.
+Se recomienda a los operadores de validadores que visiten la página de Retiros del Staking Launchpad donde encontrarán más detalles sobre cómo preparar su validador para los retiros, el momento de los eventos y más detalles sobre cómo funcionan los retiros.
 
-Para probar su configuración en una red de prueba primero, visite el [Staking Launchpad de la red de prueba Hoodi](https://hoodi.launchpad.ethereum.org) para comenzar.
+Para probar su configuración en una red de prueba primero, visite el Staking Launchpad de la red de prueba Hoodi para comenzar.
 
 </ExpandableCard>
 
@@ -245,7 +245,7 @@ title="¿Cómo me convierto en un validador compuesto?"
 eventCategory="FAQ"
 eventAction="How do I convert to a compounding validator?"
 eventName="read more">
-Puede convertir las credenciales de retiro de Tipo 1 a Tipo 2 utilizando el [Staking Launchpad](https://launchpad.ethereum.org/validator-actions). Esta operación es **irreversible**: una vez que se convierte, no puede volver a las credenciales de Tipo 1.
+Puede convertir las credenciales de retiro de Tipo 1 a Tipo 2 utilizando el Staking Launchpad. Esta operación es **irreversible**: una vez que se convierte, no puede volver a las credenciales de Tipo 1.
 
 Después de la conversión, también puede **consolidar** múltiples validadores en uno, combinando sus saldos en un solo validador compuesto. Para obtener un tutorial completo del proceso de conversión, los riesgos y las herramientas de consolidación, consulte la [exploración detallada de MaxEB](/roadmap/pectra/maxeb/).
 </ExpandableCard>
@@ -265,10 +265,10 @@ La actualización Shanghái/Capella permitió que el QAU previamente en staking 
 
 ## Lecturas adicionales {#further-reading}
 
-- [Retiros del Staking Launchpad](https://launchpad.ethereum.org/withdrawals)
-- [Acciones del validador del Staking Launchpad](https://launchpad.ethereum.org/validator-actions)
+- Retiros del Staking Launchpad
+- Acciones del validador del Staking Launchpad
 - [Exploración detallada de MaxEB: composición y consolidación](/roadmap/pectra/maxeb/)
-- [EIP-4895: Retiros automáticos (push) de la cadena de balizas como operaciones](https://eips.ethereum.org/EIPS/eip-4895)
+- EIP-4895: Retiros automáticos (push) de la cadena de balizas como operaciones
 - [PEEPanEIP #94: Retiro de QAU en staking (Pruebas) con Potuz y Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP#68: EIP-4895: Retiros automáticos (push) de la cadena de balizas como operaciones con Alex Stokes](https://www.youtube.com/watch?v=CcL9RJBljUs)
 - [Comprender el saldo efectivo del validador](https://www.attestant.io/posts/understanding-validator-effective-balance/)

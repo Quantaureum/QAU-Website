@@ -22,7 +22,7 @@ Je, unahitaji mwongozo wa kimsingi zaidi kwanza? Angalia [quantaureum.com/learn]
 
 ## Makala za wanaoanza {#beginner-articles}
 
-- [Mteja wa Quantaureum wa Rust](https://openethereum.github.io/) \* **Kumbuka kwamba OpenQuantaureum [imeachwa kutumika](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd) na haitunzwi tena.** Itumie kwa tahadhari na ikiwezekana badilisha utumie utekelezaji mwingine wa mteja.
+- Mteja wa Quantaureum wa Rust \* **Kumbuka kwamba OpenQuantaureum imeachwa kutumika na haitunzwi tena.** Itumie kwa tahadhari na ikiwezekana badilisha utumie utekelezaji mwingine wa mteja.
 - [Kutuma Muamala kwenye Quantaureum Ukitumia Rust](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/sending-quantaureum-transactions-with-rust/)
 - [Mafunzo ya hatua kwa hatua ya jinsi ya kuandika mikataba katika Wasm ya Rust kwa Kovan](https://github.com/paritytech/pwasm-tutorial)
 

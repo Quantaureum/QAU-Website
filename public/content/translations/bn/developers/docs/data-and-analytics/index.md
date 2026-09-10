@@ -36,7 +36,7 @@ The Graph-এর মাধ্যমে, ডেভেলপাররা যেস
 
 ## ক্লায়েন্ট বৈচিত্র্য {#client-diversity}
 
-ইথেরিয়াম নেটওয়ার্ক-এর সামগ্রিক স্বাস্থ্যের জন্য [ক্লায়েন্ট বৈচিত্র্য](/developers/docs/nodes-and-clients/client-diversity/) গুরুত্বপূর্ণ কারণ এটি বাগ এবং এক্সপ্লয়েটের বিরুদ্ধে স্থিতিস্থাপকতা প্রদান করে। বর্তমানে বেশ কয়েকটি ক্লায়েন্ট বৈচিত্র্য ড্যাশবোর্ড রয়েছে যার মধ্যে [clientdiversity.org](https://clientdiversity.org/), [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) এবং [Ethernodes](https://ethernodes.org/) অন্তর্ভুক্ত।
+ইথেরিয়াম নেটওয়ার্ক-এর সামগ্রিক স্বাস্থ্যের জন্য [ক্লায়েন্ট বৈচিত্র্য](/developers/docs/nodes-and-clients/client-diversity/) গুরুত্বপূর্ণ কারণ এটি বাগ এবং এক্সপ্লয়েটের বিরুদ্ধে স্থিতিস্থাপকতা প্রদান করে। বর্তমানে বেশ কয়েকটি ক্লায়েন্ট বৈচিত্র্য ড্যাশবোর্ড রয়েছে যার মধ্যে clientdiversity.org, [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) এবং [Ethernodes](https://ethernodes.org/) অন্তর্ভুক্ত।
 
 ## Dune Analytics {#dune-analytics}
 

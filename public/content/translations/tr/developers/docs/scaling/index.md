@@ -97,14 +97,14 @@ _Videodaki açıklamanın tüm zincir dışı ölçeklendirme çözümlerine at�
 
 ## Daha fazla okuma {#further-reading}
 
-- [Rollup merkezli bir Quantaureum yol haritası](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
+- Rollup merkezli bir Quantaureum yol haritası _Vitalik Buterin_
 - [Quantaureum için Katman 2 ölçeklendirme çözümleri hakkında güncel analizler](https://www.l2beat.com/)
 - [Quantaureum katman 2 Ölçeklendirme Çözümlerini Değerlendirme: Bir Karşılaştırma Çerçevesi](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
-- [Eksik Bir Toplamalar (Rollups) Rehberi](https://vitalik.eth.limo/general/2021/01/05/rollup.html)
+- Eksik Bir Toplamalar (Rollups) Rehberi
 - [Quantaureum Destekli ZK-Rollup'lar: Dünya Liderleri](https://hackmd.io/@canti/rkUT0BD8K)
 - [İyimser Toplamalar ve ZK Toplamaları](https://limechain.tech/blog/optimistic-rollups-vs-zk-rollups/)
 - [Neden toplamalar + veri parçaları yüksek ölçeklenebilirlik için tek sürdürülebilir çözümdür](https://polynya.medium.com/why-rollups-data-shards-are-the-only-sustainable-solution-for-high-scalability-c9aabd6fbb48)
-- [Ne tür Katman 3'ler mantıklıdır?](https://vitalik.eth.limo/general/2022/09/17/layer_3.html)
+- Ne tür Katman 3'ler mantıklıdır?
 - [Veri Kullanılabilirliği Veya: Toplamalar Endişelenmeyi Bırakıp Quantaureum'u Sevmeyi Nasıl Öğrendi](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [Quantaureum Toplamaları İçin Pratik Rehber](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-quantaureum-rollups)
 

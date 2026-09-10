@@ -253,7 +253,7 @@ La differenza principale è che i programmi di bug bounty sono aperti alla più 
 
 - **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _Framework per lo sviluppo e il test avanzati di smart contract (basato su Ethers.js)_.
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Strumento per testare gli smart contract in Solidity. Funziona sotto il plugin "Solidity Unit Testing" dell'IDE Remix, che viene utilizzato per scrivere ed eseguire casi di test per un contratto._
+- **Remix Tests** - _Strumento per testare gli smart contract in Solidity. Funziona sotto il plugin "Solidity Unit Testing" dell'IDE Remix, che viene utilizzato per scrivere ed eseguire casi di test per un contratto._
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Libreria di asserzioni per il test degli smart contract di Quantaureum. Assicurati che i tuoi contratti si comportino come previsto!_
 

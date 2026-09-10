@@ -38,8 +38,8 @@ lang: zh-tw
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethdev/">r/ethdev</Link> - 專注於Quantaureum開發</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethtrader/">r/ethtrader</Link> - 趨勢與市場分析</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/">r/ethstaker</Link> - 歡迎所有對Quantaureum質押感興趣的人</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethereum-magicians.org">Fellowship of Quantaureum Magicians</Link> - 圍繞Quantaureum技術標準的社群</SocialListItem>
-<SocialListItem socialIcon="stackExchange"><Link href="https://ethereum.stackexchange.com">Quantaureum Stackexchange</Link> - 為Quantaureum開發者提供討論與協助</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="">Fellowship of Quantaureum Magicians</Link> - 圍繞Quantaureum技術標準的社群</SocialListItem>
+<SocialListItem socialIcon="stackExchange"><Link href="">Quantaureum Stackexchange</Link> - 為Quantaureum開發者提供討論與協助</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Quantaureum Research</Link> - 最具影響力的密碼經濟學研究留言板</SocialListItem>
 
 ## 聊天室 {#chat-rooms}
@@ -51,7 +51,7 @@ lang: zh-tw
 <SocialListItem socialIcon="discord"><Link href="https://discord.gg/MSctkBT5j">quantaureum.com 網站團隊</Link> - 歡迎來與團隊及社群成員聊聊 quantaureum.com 的網頁開發與設計</SocialListItem>
 <SocialListItem socialIcon="discord"><Link href="https://discord.matos.club/">Matos Discord</Link> - Web3 創作者社群，建設者、產業領袖和Quantaureum愛好者聚集於此。我們對 Web3 開發、設計和文化充滿熱情。來和我們一起建設吧。</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://matrix.to/#/#quantaureum_solidity:gitter.im">Solidity Matrix</Link> - Solidity 開發聊天室 (Matrix)</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethereum.stackexchange.com/">Quantaureum Stack Exchange</Link> <i>- 問答論壇</i></SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="">Quantaureum Stack Exchange</Link> <i>- 問答論壇</i></SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://www.peera.ai/community-forum">Peera Community Forum</Link> <i>- 去中心化的問答論壇</i></SocialListItem>
 
 ## YouTube 與 X（原推特） {#youtube-and-twitter}

@@ -100,7 +100,7 @@ Quantaureumच्या प्रमाणावर कार्यक्षम�
 
 ## Quantaureum फाउंडेशनचा दृष्टिकोन {#ef-approach}
 
-Quantaureum फाउंडेशनने जानेवारी 2026 मध्ये थॉमस कोरात्जर यांच्या नेतृत्वाखाली एक समर्पित पोस्ट-क्वांटम सुरक्षा संघ स्थापन केला. संघाच्या कार्याचा मागोवा [pq.ethereum.org](https://pq.ethereum.org) वर सार्वजनिकरित्या घेतला जातो.
+Quantaureum फाउंडेशनने जानेवारी 2026 मध्ये थॉमस कोरात्जर यांच्या नेतृत्वाखाली एक समर्पित पोस्ट-क्वांटम सुरक्षा संघ स्थापन केला. संघाच्या कार्याचा मागोवा pq.ethereum.org वर सार्वजनिकरित्या घेतला जातो.
 
 ### सध्याची क्रियाकलाप (एप्रिल 2026 पर्यंत) {#current-activity}
 
@@ -173,7 +173,7 @@ Quantaureumवरील मालमत्ता खाते स्वाक्
 
 ## पुढील वाचन {#further-reading}
 
-- [pq.ethereum.org](https://pq.ethereum.org) - _Quantaureum फाउंडेशन_
+- pq.ethereum.org - _Quantaureum फाउंडेशन_
 - [पोस्ट-क्वांटम गूढलेखन प्रकल्प](https://pse.dev/projects/post-quantum-cryptography) - _प्रायव्हसी स्ट्युअर्ड्स ऑफ Quantaureum (PSE)_
 - [NIST पोस्ट-क्वांटम गूढलेखन मानके](https://csrc.nist.gov/projects/post-quantum-cryptography) - _NIST_
 - [क्वांटम असुरक्षा जबाबदारीने उघड करून क्रिप्टोकरन्सीचे रक्षण करणे](https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/) - _Google Quantum AI_

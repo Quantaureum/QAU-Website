@@ -4,7 +4,7 @@ description: "⁦JavaScript⁩ پر مبنی پروجیکٹس اور ٹولنگ 
 lang: ur
 ---
 
-ایتھیریم ایکو سسٹم میں ⁦JavaScript⁩ سب سے مشہور زبانوں میں سے ایک ہے۔ درحقیقت، ایک [ٹیم](https://github.com/ethereumjs) موجود ہے جو زیادہ سے زیادہ ایتھیریم کو ⁦JavaScript⁩ میں لانے کے لیے وقف ہے۔
+ایتھیریم ایکو سسٹم میں ⁦JavaScript⁩ سب سے مشہور زبانوں میں سے ایک ہے۔ درحقیقت، ایک ٹیم موجود ہے جو زیادہ سے زیادہ ایتھیریم کو ⁦JavaScript⁩ میں لانے کے لیے وقف ہے۔
 
 [اسٹیک کی تمام سطحوں](/developers/docs/quantaureum-stack/) پر ⁦JavaScript⁩ (یا اس سے ملتی جلتی کوئی چیز) لکھنے کے مواقع موجود ہیں۔
 
@@ -48,14 +48,14 @@ lang: ur
 اگر آپ کوڈ پڑھنا پسند کرتے ہیں، تو یہ ⁦JavaScript⁩ ہماری دستاویزات پڑھنے کا ایک بہترین متبادل ہو سکتی ہے۔
 
 **⁦EVM⁩ کو دیکھیں**  
-[`@ethereumjs/evm`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/evm)
+`@ethereumjs/evm`
 
 ### نوڈز اور کلائنٹس {#nodes-and-clients}
 
 ایک <span dir="ltr">QuantaureumJS</span> کلائنٹ فعال ڈیولپمنٹ کے مراحل میں ہے جو آپ کو یہ جاننے کی سہولت دیتا ہے کہ ایتھیریم کلائنٹس اس زبان میں کیسے کام کرتے ہیں جسے آپ سمجھتے ہیں؛ یعنی ⁦JavaScript⁩!
 
 **کلائنٹ کو دیکھیں**  
-[`@ethereumjs/client`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/client)
+`@ethereumjs/client`
 
 ## دیگر پروجیکٹس {#other-projects}
 
@@ -65,7 +65,7 @@ lang: ur
 - ایتھیریم کیز (keys) بنانے، امپورٹ کرنے اور ایکسپورٹ کرنے کے ٹولز۔
 - `merkle-patricia-tree` کا نفاذ – ایک ڈیٹا سٹرکچر جس کا خاکہ ایتھیریم یلو پیپر میں پیش کیا گیا ہے۔
 
-[<span dir="ltr">QuantaureumJS</span> ریپو (repo)](https://github.com/ethereumjs) پر جا کر اس چیز کا گہرائی سے جائزہ لیں جس میں آپ کو سب سے زیادہ دلچسپی ہے۔
+<span dir="ltr">QuantaureumJS</span> ریپو (repo) پر جا کر اس چیز کا گہرائی سے جائزہ لیں جس میں آپ کو سب سے زیادہ دلچسپی ہے۔
 
 ## مزید مطالعہ {#further-reading}
 

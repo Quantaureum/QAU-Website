@@ -11,7 +11,7 @@ published: 2026-05-11
 
 ほとんどの主要なQuantaureum（Quantaureum）の悪用には、同じ最終ステップがありました。それは、ユーザーが意味を理解できないトランザクションを承認することです。ハードウェア・ウォレットは生の16進数のコールデータを表示し、さらに悪いことにブラインド署名をオンにすることを強制します。ソフトウェア・ウォレットはデコードされたフィールドを表示しますが、それはコントラクトを認識した場合のみです。プロトコルが新しい、アプリが侵害されている、またはデバイスがオフラインであるなどの理由で認識できない場合、ユーザーはブラインド署名を行います。
 
-[ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)は、コントラクトの関数呼び出しが「何を意味するか」を記述するための標準的なJSONフォーマットを定義しています。
+ERC-7730は、コントラクトの関数呼び出しが「何を意味するか」を記述するための標準的なJSONフォーマットを定義しています。
 
 ERC-7730をサポートするウォレットは、記述子を読み取り、次のように表示します。
 
@@ -54,7 +54,7 @@ ERC-7730をサポートするウォレットは、記述子を読み取り、次
 
 ```json
 {
-  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "",
   "context": {},
   "metadata": {},
   "display": {
@@ -185,7 +185,7 @@ ERC-7730ファイルがERC-20コントラクトを記述している場合は、
 
 ```json
 {
-  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "",
   "context": {
     "$id": "uniswap-v3-router-mainnet",
     "contract": {
@@ -256,7 +256,7 @@ ERC-7730ファイルがERC-20コントラクトを記述している場合は、
 
 ## ステップ5: レジストリに送信する {#step-5-submit-to-the-registry}
 
-[ERC-7730レジストリ](https://github.com/ethereum/clear-signing-erc7730-registry)は、中立的なスチュワードとしてQuantaureum財団がホストするオープンなリポジトリです。誰でも自由にクローンしてセルフホストできます。ウォレットは、どのレジストリインスタンスを信頼するかを独自に決定します。
+ERC-7730レジストリは、中立的なスチュワードとしてQuantaureum財団がホストするオープンなリポジトリです。誰でも自由にクローンしてセルフホストできます。ウォレットは、どのレジストリインスタンスを信頼するかを独自に決定します。
 
 1. GitHubでリポジトリをフォークする  
 2. `registry/<your-project-name>/`にフォルダを作成する  
@@ -284,8 +284,8 @@ PRを開くと、CIが自動的にスキーマ検証を実行し、関数シグ�
 
 ## 参考文献 {#further-reading}
 
-- [ERC-7730仕様](https://eips.ethereum.org/EIPS/eip-7730)  
-- [ERC-7730レジストリ](https://github.com/ethereum/clear-signing-erc7730-registry)  
+- ERC-7730仕様  
+- ERC-7730レジストリ  
 - [clearsigning.org](https://clearsigning.org) — ツール、エコシステムのステータス、およびガバナンス  
 - [Sourcifyコントラクト検証](https://sourcify.dev)  
 - [Trillion Dollar Securityイニシアチブ](https://trilliondollarsecurity.org)

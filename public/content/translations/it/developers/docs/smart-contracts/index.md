@@ -90,7 +90,7 @@ Gli smart contract da soli non possono ottenere informazioni sugli eventi del "m
 
 Tuttavia, è importante che le applicazioni blockchain siano in grado di utilizzare dati offchain. La soluzione sono gli [oracoli](/developers/docs/oracles/), che sono strumenti che acquisiscono dati offchain e li rendono disponibili agli smart contract.
 
-Un'altra limitazione degli smart contract è la dimensione massima del contratto. Uno smart contract può avere una dimensione massima di 24KB, altrimenti esaurirà il gas. Questo limite può essere aggirato utilizzando [Il Diamond Pattern](https://eips.ethereum.org/EIPS/eip-2535).
+Un'altra limitazione degli smart contract è la dimensione massima del contratto. Uno smart contract può avere una dimensione massima di 24KB, altrimenti esaurirà il gas. Questo limite può essere aggirato utilizzando Il Diamond Pattern.
 
 ## Contratti multisig {#multisig}
 

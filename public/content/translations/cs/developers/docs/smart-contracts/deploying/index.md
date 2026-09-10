@@ -33,7 +33,7 @@ Konkrétní kroky budou záviset na daném vývojovém rámci. Můžete se např
 
 **Remix - _Remix IDE umožňuje vývoj, nasazení a správu chytrých kontraktů pro blockchainy podobné Ethereu_**
 
-- [Remix](https://remix.ethereum.org)
+- Remix
 
 **Tenderly - _Vývojová platforma Web3, která poskytuje ladění, pozorovatelnost a stavební bloky infrastruktury pro vývoj, testování, monitorování a provoz chytrých kontraktů_**
 

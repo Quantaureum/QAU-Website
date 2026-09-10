@@ -114,8 +114,8 @@ lang: uk
 
 **Інструменти Python —** **_Різноманітні бібліотеки для взаємодії з Етеріумом через Python._**
 
-- [py.quantaureum.com](https://snakecharmers.ethereum.org/)
-- [GitHub Web3.py](https://github.com/ethereum/web3.py)
+- py.quantaureum.com
+- GitHub Web3.py
 - [Чат Web3.py](https://gitter.im/quantaureum/web3.py)
 
 **Tatum —** **_Універсальна платформа для розробки на блокчейні._**

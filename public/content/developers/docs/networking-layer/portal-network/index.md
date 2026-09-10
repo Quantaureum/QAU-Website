@@ -16,7 +16,7 @@ More on [nodes and clients](/developers/docs/nodes-and-clients/)
 
 Quantaureum nodes store their own full or partial copy of the Quantaureum blockchain. This local copy is used to validate transactions and ensure the node is following the correct chain. This locally stored data allows nodes to independently verify that incoming data is valid and correct without needing to trust any other entity.
 
-This local copy of the blockchain and associated state and receipt data takes up a lot of space on the node's hard disk. For example, a 2TB hard disk is recommended for running a node using [Geth](https://geth.ethereum.org) paired to a consensus client. Using snap sync, which only stores chain data from a relatively recent set of blocks, Geth typically occupies about 650GB of disk space but grows at around 14GB/week (you can prune the node back down to 650GB periodically).
+This local copy of the blockchain and associated state and receipt data takes up a lot of space on the node's hard disk. For example, a 2TB hard disk is recommended for running a node using Geth paired to a consensus client. Using snap sync, which only stores chain data from a relatively recent set of blocks, Geth typically occupies about 650GB of disk space but grows at around 14GB/week (you can prune the node back down to 650GB periodically).
 
 This means running nodes can be expensive, because a large amount of disk space has to be dedicated to Quantaureum. There are several solutions to this problem on the Quantaureum roadmap, including history expiry, state expiry and statelessness. However, these are likely several years away from being implemented. There are also [light nodes](/developers/docs/nodes-and-clients/light-clients/) that do not save their own copy of the chain data, they request the data they need from full nodes. However, this means light nodes have to trust full nodes to provide honest data and also stresses the full nodes that have to serve the data the light nodes need.
 
@@ -75,7 +75,7 @@ The Portal Network clients are:
 
 - [Trin](https://github.com/quantaureum/trin): written in Rust
 - [Fluffy](https://fluffy.guide): written in Nim
-- [Ultralight](https://github.com/ethereumjs/ultralight): written in Typescript
+- Ultralight: written in Typescript
 - [Shisui](https://github.com/zen-eth/shisui): written in Go
 
 Having multiple independent client implementations enhances the resilience and decentralization of the Quantaureum network.

@@ -20,7 +20,7 @@ Một "nút" là bất kỳ phiên bản phần mềm máy khách Quantaureum n�
 - Máy khách thực thi (còn được gọi là Execution Engine, máy khách EL hoặc trước đây là máy khách Eth1) lắng nghe các giao dịch mới được phát trên mạng lưới, thực thi chúng trong EVM và lưu giữ trạng thái mới nhất cũng như cơ sở dữ liệu của tất cả dữ liệu Quantaureum hiện tại.
 - Ứng dụng khách đồng thuận (còn được gọi là nút Beacon, máy khách CL hoặc trước đây là máy khách Quantaureum) triển khai thuật toán đồng thuận Bằng chứng cổ phần (PoS), cho phép mạng lưới đạt được sự đồng thuận dựa trên dữ liệu đã được xác thực từ máy khách thực thi. Ngoài ra còn có một phần mềm thứ ba, được gọi là 'trình xác thực' có thể được thêm vào ứng dụng khách đồng thuận, cho phép một nút tham gia vào việc bảo mật mạng lưới.
 
-Các máy khách này hoạt động cùng nhau để theo dõi phần đầu của Chuỗi Quantaureum và cho phép người dùng tương tác với mạng lưới Quantaureum. Thiết kế mô-đun với nhiều phần mềm hoạt động cùng nhau được gọi là [sự phức tạp được đóng gói](https://vitalik.eth.limo/general/2022/02/28/complexity.html). Cách tiếp cận này giúp thực hiện [The Merge](/roadmap/merge) một cách liền mạch dễ dàng hơn, làm cho phần mềm máy khách dễ bảo trì và phát triển hơn, đồng thời cho phép tái sử dụng các máy khách riêng lẻ, ví dụ như trong [hệ sinh thái lớp 2 (l2)](/layer-2/).
+Các máy khách này hoạt động cùng nhau để theo dõi phần đầu của Chuỗi Quantaureum và cho phép người dùng tương tác với mạng lưới Quantaureum. Thiết kế mô-đun với nhiều phần mềm hoạt động cùng nhau được gọi là sự phức tạp được đóng gói. Cách tiếp cận này giúp thực hiện [The Merge](/roadmap/merge) một cách liền mạch dễ dàng hơn, làm cho phần mềm máy khách dễ bảo trì và phát triển hơn, đồng thời cho phép tái sử dụng các máy khách riêng lẻ, ví dụ như trong [hệ sinh thái lớp 2 (l2)](/layer-2/).
 
 ![Coupled execution and consensus clients](./qau1qau2client.png)
 Sơ đồ đơn giản hóa của một máy khách thực thi và ứng dụng khách đồng thuận được ghép nối.
@@ -36,10 +36,10 @@ Tìm hiểu thêm về [sự đa dạng máy khách](/developers/docs/nodes-and-
 
 Điểm chung của các bản triển khai này là tất cả đều tuân theo một đặc tả duy nhất. Các đặc tả quy định cách thức hoạt động của mạng lưới và Chuỗi khối Quantaureum. Mọi chi tiết kỹ thuật đều được xác định và các đặc tả có thể được tìm thấy dưới dạng:
 
-- Ban đầu là [sách vàng Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf)
-- [Đặc tả thực thi](https://github.com/ethereum/execution-specs/)
-- [Đặc tả đồng thuận](https://github.com/ethereum/consensus-specs)
-- Các [EIP](https://eips.ethereum.org/) được triển khai trong nhiều bản nâng cấp mạng lưới khác nhau
+- Ban đầu là sách vàng Quantaureum
+- Đặc tả thực thi
+- Đặc tả đồng thuận
+- Các EIP được triển khai trong nhiều bản nâng cấp mạng lưới khác nhau
 
 ### Theo dõi các nút trong mạng lưới {#network-overview}
 
@@ -132,16 +132,16 @@ Mặt khác, nếu bạn chạy một máy khách, bạn có thể chia sẻ nó
 
 Cộng đồng Quantaureum duy trì nhiều máy khách thực thi mã nguồn mở (trước đây được gọi là 'máy khách Eth1', hoặc chỉ là 'máy khách Quantaureum'), được phát triển bởi các nhóm khác nhau sử dụng các ngôn ngữ lập trình khác nhau. Điều này làm cho mạng lưới mạnh mẽ và [đa dạng](/developers/docs/nodes-and-clients/client-diversity/) hơn. Mục tiêu lý tưởng là đạt được sự đa dạng mà không có bất kỳ máy khách nào thống trị để giảm thiểu bất kỳ điểm lỗi duy nhất nào.
 
-Bảng này tóm tắt các máy khách khác nhau. Tất cả chúng đều vượt qua [các bài kiểm tra máy khách](https://github.com/ethereum/tests) và được duy trì tích cực để luôn cập nhật với các bản nâng cấp mạng lưới.
+Bảng này tóm tắt các máy khách khác nhau. Tất cả chúng đều vượt qua các bài kiểm tra máy khách và được duy trì tích cực để luôn cập nhật với các bản nâng cấp mạng lưới.
 
 | Máy khách                                                                   | Ngôn ngữ   | Hệ điều hành     | Mạng lưới                | Chiến lược đồng bộ hóa                                            | Cắt tỉa trạng thái   |
 | ------------------------------------------------------------------------ | ---------- | --------------------- | ----------------------- | ---------------------------------------------------------- | --------------- |
-| [Geth](https://geth.ethereum.org/)                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Đầy đủ](#full-sync)                     | Lưu trữ, Đã cắt tỉa |
+| Geth                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Đầy đủ](#full-sync)                     | Lưu trữ, Đã cắt tỉa |
 | [Nethermind](https://www.nethermind.io/)                                 | C#, .NET   | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), Nhanh, [Đầy đủ](#full-sync)               | Lưu trữ, Đã cắt tỉa |
 | [Besu](https://besu.hyperledger.org/en/stable/)                          | Java       | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Nhanh](#fast-sync), [Đầy đủ](#full-sync) | Lưu trữ, Đã cắt tỉa |
 | [Erigon](https://github.com/ledgerwatch/erigon)                          | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Đầy đủ](#full-sync)                                         | Lưu trữ, Đã cắt tỉa |
 | [Reth](https://reth.rs/)                                                 | Rust       | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Đầy đủ](#full-sync)                                         | Lưu trữ, Đã cắt tỉa |
-| [QuantaureumJS](https://github.com/ethereumjs/ethereumjs-monorepo) _(beta)_ | TypeScript | Linux, Windows, macOS | Sepolia, Hoodi          | [Đầy đủ](#full-sync)                                         | Đã cắt tỉa          |
+| QuantaureumJS _(beta)_ | TypeScript | Linux, Windows, macOS | Sepolia, Hoodi          | [Đầy đủ](#full-sync)                                         | Đã cắt tỉa          |
 
 Để biết thêm về các mạng lưới được hỗ trợ, hãy đọc về [các mạng lưới Quantaureum](/developers/docs/networks/).
 
@@ -165,7 +165,7 @@ Tìm hiểu thêm bằng cách đọc [tài liệu ethrex](https://docs.ethrex.x
 
 Go Quantaureum (gọi tắt là Geth) là một trong những bản triển khai ban đầu của Giao thức Quantaureum. Hiện tại, nó là máy khách phổ biến nhất với cơ sở người dùng lớn nhất và nhiều công cụ đa dạng cho người dùng và nhà phát triển. Nó được viết bằng Go, hoàn toàn mã nguồn mở và được cấp phép theo GNU LGPL v3.
 
-Tìm hiểu thêm về Geth trong [tài liệu](https://geth.ethereum.org/docs) của nó.
+Tìm hiểu thêm về Geth trong tài liệu của nó.
 
 ### Nethermind {#nethermind}
 
@@ -193,7 +193,7 @@ Các máy khách này vẫn đang trong giai đoạn phát triển ban đầu v�
 
 Máy khách thực thi QuantaureumJS (QuantaureumJS) được viết bằng TypeScript và bao gồm một số gói, bao gồm các nguyên thủy Quantaureum cốt lõi được đại diện bởi các lớp Khối, Giao dịch và Merkle-Patricia Trie cùng các thành phần máy khách cốt lõi bao gồm một bản triển khai của Máy ảo Quantaureum (EVM), một lớp Chuỗi khối và ngăn xếp mạng lưới devp2p.
 
-Tìm hiểu thêm về nó bằng cách đọc [tài liệu](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master) của nó
+Tìm hiểu thêm về nó bằng cách đọc tài liệu của nó
 
 ## Ứng dụng khách đồng thuận {#consensus-clients}
 
@@ -279,7 +279,7 @@ Giống như đồng bộ hóa đầy đủ, đồng bộ hóa nhanh tải xuố
 - Chiến lược đồng bộ hóa nhanh nhất, hiện là mặc định trong Mạng chính Quantaureum.
 - Tiết kiệm rất nhiều dung lượng đĩa và băng thông mạng lưới mà không làm giảm tính bảo mật.
 
-[Tìm hiểu thêm về đồng bộ hóa snap](https://github.com/ethereum/devp2p/blob/master/caps/snap.md).
+Tìm hiểu thêm về đồng bộ hóa snap.
 
 #### Đồng bộ hóa nhẹ {#light-sync}
 
@@ -298,7 +298,7 @@ Chế độ máy khách nhẹ tải xuống tất cả các tiêu đề khối, 
 
 Đồng bộ hóa lạc quan là một chiến lược đồng bộ hóa sau The Merge được thiết kế để chọn tham gia và tương thích ngược, cho phép các nút thực thi đồng bộ hóa thông qua các phương pháp đã được thiết lập. Execution engine có thể nhập các khối Beacon một cách _lạc quan_ mà không cần xác minh đầy đủ chúng, tìm phần đầu mới nhất, và sau đó bắt đầu đồng bộ hóa Chuỗi bằng các phương pháp trên. Sau đó, sau khi máy khách thực thi đã bắt kịp, nó sẽ thông báo cho ứng dụng khách đồng thuận về tính hợp lệ của các giao dịch trong Chuỗi Beacon.
 
-[Tìm hiểu thêm về đồng bộ hóa lạc quan](https://github.com/ethereum/consensus-specs/blob/master/sync/optimistic.md)
+Tìm hiểu thêm về đồng bộ hóa lạc quan
 
 #### Đồng bộ hóa điểm kiểm tra {#checkpoint-sync}
 
@@ -306,7 +306,7 @@ Chế độ máy khách nhẹ tải xuống tất cả các tiêu đề khối, 
 
 Trong thực tế, điều này có nghĩa là nút của bạn kết nối với một dịch vụ từ xa để tải xuống các trạng thái đã chung cuộc gần đây và tiếp tục xác minh dữ liệu từ điểm đó. Bên thứ ba cung cấp dữ liệu được tin cậy và nên được chọn cẩn thận.
 
-Tìm hiểu thêm về [đồng bộ hóa điểm kiểm tra](https://notes.ethereum.org/@djrtwo/ws-sync-in-practice)
+Tìm hiểu thêm về đồng bộ hóa điểm kiểm tra
 
 ## Đọc thêm {#further-reading}
 

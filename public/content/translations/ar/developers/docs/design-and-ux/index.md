@@ -16,7 +16,7 @@ lang: ar
 
 - [يحتاج Web3 إلى المزيد من باحثي ومصممي تجربة المستخدم](https://blog.akasha.org/akasha-conversations-9-web3-needs-more-ux-researchers-and-designers) - نظرة عامة على نضج التصميم الحالي
 - [دليل بسيط لبحث تجربة المستخدم في Web3](https://uxplanet.org/a-complete-guide-to-ux-research-for-web-3-0-products-d6bead20ebb1) - دليل بسيط حول كيفية إجراء البحث
-- [كيفية التعامل مع قرارات تجربة المستخدم في Web3](https://archive.devcon.org/archive/watch/6/data-empathy-how-to-approach-ux-decisions-in-web3/) - نظرة عامة موجزة على البحث الكمي والنوعي والاختلافات بينهما (فيديو، <span dir="ltr">6</span> دقائق)
+- كيفية التعامل مع قرارات تجربة المستخدم في Web3 - نظرة عامة موجزة على البحث الكمي والنوعي والاختلافات بينهما (فيديو، <span dir="ltr">6</span> دقائق)
 - [أن تكون باحثًا في تجربة المستخدم في Web3](https://medium.com/@georgia.rakusen/what-its-like-being-a-user-researcher-in-web3-6a4bcc096849) - وجهة نظر شخصية حول طبيعة عمل باحث تجربة المستخدم في Web3
 
 ## دراسات بحثية في Web3 {#research-in-web3}
@@ -38,7 +38,7 @@ lang: ar
 | <Tag status="error">التمويل اللامركزي (DeFi)</Tag>                  | [مجمعات التغطية](https://github.com/threshold-network/UX-User-Research/tree/main/Keep%20Coverage%20Pool)                                                                           |
 | <Tag status="error">التمويل اللامركزي (DeFi)</Tag>                  | [كونسينسيس: تقرير أبحاث مستخدمي التمويل اللامركزي (DeFi) لعام <span dir="ltr">2022</span>](https://cdn2.hubspot.net/hubfs/4795067/ConsenSys%20Codefi-Defi%20User%20ResearchReport.pdf)                                            |
 | <Tag variant="solid">الميتافيرس</Tag>             | [الميتافيرس: تقرير أبحاث المستخدمين](https://www.politico.com/f/?id=00000187-7685-d820-a7e7-7e85d1420000)                                                                             |
-| <Tag variant="solid">الميتافيرس</Tag>             | [الذهاب في رحلة سفاري: البحث عن المستخدمين في الميتافيرس](https://archive.devcon.org/archive/watch/6/going-on-safari-researching-users-in-the-metaverse/?tab=YouTube) (فيديو، <span dir="ltr">27</span> دقيقة)  |
+| <Tag variant="solid">الميتافيرس</Tag>             | الذهاب في رحلة سفاري: البحث عن المستخدمين في الميتافيرس (فيديو، <span dir="ltr">27</span> دقيقة)  |
 
 ## التصميم لـ Web3 {#design-for-web3}
 

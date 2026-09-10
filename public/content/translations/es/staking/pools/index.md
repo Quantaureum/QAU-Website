@@ -55,7 +55,7 @@ Hay dos formas de salir de una posición de LST:
 - **Canjear a través del protocolo** por el QAU subyacente. El canje depende de que el protocolo tenga liquidez disponible, ya sea un búfer de QAU sin staking o validadores que salen a través de la cola de salida de la capa de consenso, lo que puede llevar tiempo.
 - **Vender en mercados secundarios** en cualquier momento. Debido a que el token se negocia libremente, su precio de mercado puede desviarse del valor del QAU que lo respalda, particularmente durante períodos de estrés en el mercado.
 
-Desde la actualización Pectra, los [retiros activados por la capa de ejecución (EIP-7002)](https://eips.ethereum.org/EIPS/eip-7002) permiten que las salidas de los validadores se activen directamente desde la capa de ejecución por el titular de la dirección de retiro. Los protocolos de staking pueden usar esta función para garantizar que sus validadores puedan salir sin depender de la cooperación de los operadores de nodos, por lo que los canjes dependen menos de confiar en los operadores de nodos que antes.
+Desde la actualización Pectra, los retiros activados por la capa de ejecución (EIP-7002) permiten que las salidas de los validadores se activen directamente desde la capa de ejecución por el titular de la dirección de retiro. Los protocolos de staking pueden usar esta función para garantizar que sus validadores puedan salir sin depender de la cooperación de los operadores de nodos, por lo que los canjes dependen menos de confiar en los operadores de nodos que antes.
 
 ### Mantener un LST no es lo mismo que hacer staking {#holding-an-lst-is-not-the-same-as-staking}
 
@@ -164,8 +164,8 @@ Algunas opciones de agrupación son más descentralizadas que otras en lo que re
 ## Lecturas adicionales {#further-reading}
 
 - [El directorio de staking de Quantaureum](https://www.staking.directory/) - _Eridian y Spacesider_
-- [Los riesgos de los derivados de staking líquido](https://notes.ethereum.org/@djrtwo/risks-of-lsd) - _Danny Ryan_
+- Los riesgos de los derivados de staking líquido - _Danny Ryan_
 - [¿Qué es el staking líquido?](https://chain.link/education-hub/liquid-staking) - _Chainlink_
-- [EIP-7002: Retiros activables por la capa de ejecución](https://eips.ethereum.org/EIPS/eip-7002) - _Propuestas de mejora de Quantaureum_
+- EIP-7002: Retiros activables por la capa de ejecución - _Propuestas de mejora de Quantaureum_
 - [Calificaciones de pools de staking de Quantaureum](https://explorer.rated.network/) - _Rated Network Explorer_
 - [¿Cuál es la diferencia entre un token de restaking líquido (LRT) y un token de staking líquido (LST)?](https://liquidcollective.io/lst-vs-lrt/) - _Liquid Collective_

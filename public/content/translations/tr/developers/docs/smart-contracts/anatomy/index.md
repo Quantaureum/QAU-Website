@@ -207,7 +207,7 @@ Olaylar, akıllı sözleşmenizin ön yüzünüzle veya abone olan diğer uygula
 
 ## Açıklamalı örnekler {#annotated-examples}
 
-Bunlar Solidity ile yazılmış bazı örneklerdir. Kodla oynamak isterseniz, onlarla [Remix](https://remix.ethereum.org) üzerinde etkileşime girebilirsiniz.
+Bunlar Solidity ile yazılmış bazı örneklerdir. Kodla oynamak isterseniz, onlarla Remix üzerinde etkileşime girebilirsiniz.
 
 ### Merhaba dünya {#hello-world}
 
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // Şu anda bir adreste bir sözleşme olup olmadığını kontrol etmenin daha iyi bir yolu yoktur
         // o adresteki kodun boyutunu kontrol etmekten başka.
-        // Bkz. https://ethereum.stackexchange.com/a/14016/36603
+        // Bkz. 
         // bunun nasıl çalıştığı hakkında daha fazla ayrıntı için.
         // YAPILACAKLAR Serenity sürümünden önce bunu tekrar kontrol edin, çünkü o zaman tüm adresler
         // sözleşme olacaktır.

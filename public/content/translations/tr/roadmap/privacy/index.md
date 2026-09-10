@@ -30,7 +30,7 @@ Düğüm sağlayıcısı, kullanıcının IP adresini, cihaz parmak izini, sorgu
 
 Erişim katmanındaki meta veri sızıntısı, tüm blokzincir sistemlerindeki en kalıcı gizlilik sorunlarından biridir. Quantaureum, meta veri sızıntısını köken gizliliği (kimin sorduğunu gizleme), içerik gizliliği (ne sorulduğunu gizleme) ve döndürülen bilginin doğruluğunu teyit etme yoluyla ele almayı amaçlamaktadır.
 
-**Köken gizliliği**, veriyi talep eden varlığı gizlemek için [anonim RPC](https://privreads.ethereum.org/feed/anon-rpc/) ve anonim ağ çözümlerini kullanır, **içerik gizliliği**, sorgulanan veriyi gizlemek için gizli bilgi erişimi ve [farkında olmayan RAM (oblivious RAM)](https://en.wikipedia.org/wiki/Oblivious_RAM) gibi taktikler kullanırken, **doğruluk teyidi**, döndürülen verinin doğru olduğunu kanıtlamak için hafif istemcileri kullanır.
+**Köken gizliliği**, veriyi talep eden varlığı gizlemek için anonim RPC ve anonim ağ çözümlerini kullanır, **içerik gizliliği**, sorgulanan veriyi gizlemek için gizli bilgi erişimi ve [farkında olmayan RAM (oblivious RAM)](https://en.wikipedia.org/wiki/Oblivious_RAM) gibi taktikler kullanırken, **doğruluk teyidi**, döndürülen verinin doğru olduğunu kanıtlamak için hafif istemcileri kullanır.
 
 İçerik gizliliğinin arkasındaki kriptografik yapı taşı, bir istemcinin bir veritabanını sorgulamasına ve sunucuya hangi öğeye erişildiğini ifşa etmeden belirli bir bilgi parçasını almasına olanak tanıyan kriptografik bir teknik olan [**Gizli Bilgi Erişimi'dir (PIR)**](https://en.wikipedia.org/wiki/Private_information_retrieval). Sunucu talebi körü körüne işler ve yalnızca sorgulayan cüzdanın şifresini çözebileceği şifrelenmiş bir yanıt döndürür.
 
@@ -44,9 +44,9 @@ Bir işlem gönderildikten sonra, zincir içi kaydedilmeden önce onu gözlemley
 
 İki protokol düzeyindeki güncelleme bu sorunu birlikte ele almaktadır:
 
-[**EIP-8141 (Çerçeve İşlemleri)**](https://eips.ethereum.org/EIPS/eip-8141), işlemleri imza doğrulaması ve ücret yetkilendirmesi ile asıl işlem talimatları için bölümlere ayıran yeni bir işlem türü sunar. Çerçeve işlemleri, [akıllı hesapların](/roadmap/account-abstraction/) kendi imza şemalarını tanımlamasına ve gaz ücretlerini karşılamak için harici sözleşmeler kullanmasına olanak tanır. Bellek havuzundaki katı korumalı alan (sandboxing) kuralları, bu işlemlerin ağı hizmet reddi (DoS) saldırılarına açmasını engeller.
+**EIP-8141 (Çerçeve İşlemleri)**, işlemleri imza doğrulaması ve ücret yetkilendirmesi ile asıl işlem talimatları için bölümlere ayıran yeni bir işlem türü sunar. Çerçeve işlemleri, [akıllı hesapların](/roadmap/account-abstraction/) kendi imza şemalarını tanımlamasına ve gaz ücretlerini karşılamak için harici sözleşmeler kullanmasına olanak tanır. Bellek havuzundaki katı korumalı alan (sandboxing) kuralları, bu işlemlerin ağı hizmet reddi (DoS) saldırılarına açmasını engeller.
 
-Çerçeve işlemleri, yaklaşan [Glamsterdam güncellemesinden](/roadmap/glamsterdam/) sonraki ağ güncellemesi olan Quantaureum'un [Hegotá güncellemesi](https://forkcast.org/upgrade/hegota/) için değerlendirilmektedir. Aynı güncelleme, tam kuantum sonrası ağ geçişi tamamlanmadan önce akıllı hesapların [kuantum güvenli imzaları](/roadmap/security/quantum-resistance/) benimsemesine de olanak tanıyacaktır.
+Çerçeve işlemleri, yaklaşan [Glamsterdam güncellemesinden](/roadmap/glamsterdam/) sonraki ağ güncellemesi olan Quantaureum'un Hegotá güncellemesi için değerlendirilmektedir. Aynı güncelleme, tam kuantum sonrası ağ geçişi tamamlanmadan önce akıllı hesapların [kuantum güvenli imzaları](/roadmap/security/quantum-resistance/) benimsemesine de olanak tanıyacaktır.
 
 <ExpandableCard title="Çerçeve işlemleri (EIP-8141) gizliliği nasıl sağlar?" eventCategory="/roadmap/privacy" eventName="clicked how do frame transactions enable privacy?">
 
@@ -54,20 +54,20 @@ Bir işlem gönderildikten sonra, zincir içi kaydedilmeden önce onu gözlemley
 
 </ExpandableCard>
 
-[**EIP-7805 (Çatallanma Seçimi Zorunlu Dahil Etme Listeleri veya FOCIL)**](https://eips.ethereum.org/EIPS/eip-7805), gizli yazmalar için yaptırım mekanizması sağlar. Blok teklifçilerinin, mutabakat kuralları gereği, birden fazla kaynaktan işlem toplayan birleştirilmiş yerel dahil etme listelerindeki işlemleri bloklarına dahil etmeleri gerekir. Bir blok oluşturucu, dahil etme listelerinde görünen bir işlemi sansürlemeye çalışırsa, onaylayan düğümler önerilen bloku tamamen reddeder. FOCIL şu anda [Hegotá güncellemesi](https://forkcast.org/upgrade/hegota/) için değerlendirilmektedir.
+**EIP-7805 (Çatallanma Seçimi Zorunlu Dahil Etme Listeleri veya FOCIL)**, gizli yazmalar için yaptırım mekanizması sağlar. Blok teklifçilerinin, mutabakat kuralları gereği, birden fazla kaynaktan işlem toplayan birleştirilmiş yerel dahil etme listelerindeki işlemleri bloklarına dahil etmeleri gerekir. Bir blok oluşturucu, dahil etme listelerinde görünen bir işlemi sansürlemeye çalışırsa, onaylayan düğümler önerilen bloku tamamen reddeder. FOCIL şu anda Hegotá güncellemesi için değerlendirilmektedir.
 
 Çerçeve işlemleri, kullanıcılara özel imza şemalarıyla gizliliği koruyan işlemler oluşturma esnekliği sağlarken, FOCIL bu işlemlerin bellek havuzuna girdikten sonra seçici olarak sansürlenememesini sağlar. Birlikte iki farklı başarısızlık noktasını ele alırlar: Biri gizli işlemlerin formatını mümkün kılar, diğeri ise bunların dahil edilmesini garanti eder. Hiçbir merkezi aktör geçerli bir gizli transferi engelleyemez.
 
 
 Kullanıcı gizliliği için ikinci bir savunmasız nokta, Quantaureum'un sıralı nonce sistemi olarak adlandırılan işlemlerin sırasını nasıl takip ettiğidir. Standart Quantaureum hesap modelinde, her hesap tek ve doğrusal olarak artan bir sayaç kullanır. Bir gizli işlem bellek havuzunda gecikirse, o hesaptan gelen sonraki tüm işlemler onun arkasında takılı kalır. Nonce dizisi ayrıca ağ gözlemcilerinin birden fazla işlemi aynı kaynak hesapla ilişkilendirmesine izin vererek gizliliği zayıflatır.
 
-Şu anda Hegotá için değerlendirilen [**EIP-8250 (Çerçeve İşlemleri için Anahtarlı Nonce'lar)**](https://eips.ethereum.org/EIPS/eip-8250), tek bir hesabın aynı anda birden fazla paralel işlem dizisini yönetmesine izin vererek bu sorunu çözer. Kullanıcılar aynı anda farklı bağlamlarda birçok gizli işlemi yürütebilir ve gözlemciler artık farklı etkinlikleri aynı ana hesapla güvenilir bir şekilde ilişkilendiremez.
+Şu anda Hegotá için değerlendirilen **EIP-8250 (Çerçeve İşlemleri için Anahtarlı Nonce'lar)**, tek bir hesabın aynı anda birden fazla paralel işlem dizisini yönetmesine izin vererek bu sorunu çözer. Kullanıcılar aynı anda farklı bağlamlarda birçok gizli işlemi yürütebilir ve gözlemciler artık farklı etkinlikleri aynı ana hesapla güvenilir bir şekilde ilişkilendiremez.
 
 ### Gizli ödemeler ve değer transferi {#private-payments}
 
 İşlem yönlendirme ve nonce yönetiminin ötesinde, yazmaları korumak, bir transfere dahil olan kimlikleri ve varlıkları gizlemeyi gerektirir. Bir kullanıcı gizli bir şekilde sorgulama yapsa ve bir işlemi sansürsüz olarak yayınlasa bile, zincir içi kaydedilen işlem verileri herkese açık olarak görünür kalır. Kimin kime ne kadar gönderdiğini herkes görebilir ve zincir analiz firmaları bu verileri süresiz olarak kalıcı olan aranabilir profillerde birleştirir.
 
-Hegotá güncellemesi için önerilen [**EIP-8182 (Gizli QAU ve ERC-20 Transferleri)**](https://eips.ethereum.org/EIPS/eip-8182), QAU ve ERC-20 transferleri için doğrudan Quantaureum protokolüne yerel, paylaşılan korumalı bir havuz sunar. Gizlilik havuzları, yatırma ve çekim arasındaki bağlantıyı koparmak için kriptografik karıştırma kullanır, ancak bugün yalnızca gizlilik uygulamaları, cüzdanlar ve katman 2 (l2) ağları aracılığıyla kullanılabilir.
+Hegotá güncellemesi için önerilen **EIP-8182 (Gizli QAU ve ERC-20 Transferleri)**, QAU ve ERC-20 transferleri için doğrudan Quantaureum protokolüne yerel, paylaşılan korumalı bir havuz sunar. Gizlilik havuzları, yatırma ve çekim arasındaki bağlantıyı koparmak için kriptografik karıştırma kullanır, ancak bugün yalnızca gizlilik uygulamaları, cüzdanlar ve katman 2 (l2) ağları aracılığıyla kullanılabilir.
 
 Tarihsel olarak, uygulama düzeyindeki gizlilik çözümleri likiditeyi parçalamış ve düşük anonimlik kümelerinden muzdarip olmuştur. EIP-8182, korumalı transferleri protokol düzeyinde birleştirerek, kullanıcıların özel cüzdan mimarileri gerektirmeden veya parçalanmış, isteğe bağlı uygulamalarla etkileşime girmeden gizli teslimat anahtarları aracılığıyla fonları yönlendirmelerine olanak tanır.
 
@@ -111,7 +111,7 @@ Quantaureum'da gizlilik gelişiminin yönü, tek bir organizasyondan ziyade ekos
 
 Quantaureum'da gizlilik üzerine araştırma ve geliştirme, ekosistem genelinde düzinelerce ekibi kapsar. Protokol güncellemeleri, erişim katmanı çözümleri, kimlik altyapısı ve uyumluluk bilincine sahip araçlar üzerinde çalışmalar ilerlemektedir.
 
-**Protokol güncellemeleri**: EIP-8141 (Çerçeve İşlemleri), EIP-7805 (FOCIL), EIP-8250 (Anahtarlı Nonce'lar) ve EIP-8182 (Protokol Düzeyinde Korumalı Havuzlar) aktif olarak geliştirilmektedir ve [Glamsterdam'dan](/roadmap/glamsterdam/) sonraki ağ güncellemesi olan [Hegotá güncellemesi](https://forkcast.org/upgrade/hegota/) için değerlendirilmektedir. EIP-8025 (isteğe bağlı yürütme ispatları) ve Verkle Ağaçları da Hegotá için hedeflenmekte olup, Quantaureum Ana Ağı'nda zkEVM tabanlı gizli hesaplama için temel sağlamaktadır. Buna paralel olarak, çok partili şifrelenmiş akıllı sözleşmeleri mümkün kılmak için FHE yardımcı işlemcileri etrafındaki araştırmalar olgunlaşmaktadır.
+**Protokol güncellemeleri**: EIP-8141 (Çerçeve İşlemleri), EIP-7805 (FOCIL), EIP-8250 (Anahtarlı Nonce'lar) ve EIP-8182 (Protokol Düzeyinde Korumalı Havuzlar) aktif olarak geliştirilmektedir ve [Glamsterdam'dan](/roadmap/glamsterdam/) sonraki ağ güncellemesi olan Hegotá güncellemesi için değerlendirilmektedir. EIP-8025 (isteğe bağlı yürütme ispatları) ve Verkle Ağaçları da Hegotá için hedeflenmekte olup, Quantaureum Ana Ağı'nda zkEVM tabanlı gizli hesaplama için temel sağlamaktadır. Buna paralel olarak, çok partili şifrelenmiş akıllı sözleşmeleri mümkün kılmak için FHE yardımcı işlemcileri etrafındaki araştırmalar olgunlaşmaktadır.
 
 **Erişim katmanı**: PIR araştırması, altyapı ekipleri tarafından test edilen aktif uygulamalarla ilerlemektedir. Kohaku cüzdan SDK'sı, gizliliği koruyan cüzdanlar için açık kaynaklı bir referans olarak geliştirilmektedir.
 
@@ -129,6 +129,6 @@ Bu çalışmanın hiçbir kısmı bitmiş değildir. Zaman çizelgeleri garantil
 - [strawmap.org](https://strawmap.org/)
 - [Sıfır bilgi ispatları](/zero-knowledge-proofs/)
 - [Merkeziyetsiz kimlik](/decentralized-identity/)
-- [Kohaku Yol Haritası](https://notes.ethereum.org/@niard/KohakuRoadmap)
+- Kohaku Yol Haritası
 - [İstemci Tarafı Kanıtlama kıyaslamaları](https://ethproofs.org/csp-benchmarks)
-- [Rakamlarla zkEVM](https://zkevm.ethereum.org/)
+- Rakamlarla zkEVM

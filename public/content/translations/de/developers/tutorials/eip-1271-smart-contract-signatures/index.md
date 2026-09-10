@@ -9,7 +9,7 @@ breadcrumb: EIP-1271-Signaturen
 published: 2023-01-12
 ---
 
-Der [EIP-1271](https://eips.ethereum.org/EIPS/eip-1271)-Standard ermöglicht es Smart Contracts, Signaturen zu verifizieren.
+Der EIP-1271-Standard ermöglicht es Smart Contracts, Signaturen zu verifizieren.
 
 In diesem Tutorial geben wir einen Überblick über digitale Signaturen, den Hintergrund von EIP-1271 und die spezifische Implementierung von EIP-1271, die von [Safe](https://safe.global/) (ehemals Gnosis Safe) verwendet wird. Alles in allem kann dies als Ausgangspunkt für die Implementierung von EIP-1271 in Ihren eigenen Verträgen dienen.
 
@@ -71,7 +71,6 @@ contract ERC1271 {
    * @dev Sollte zurückgeben, ob die bereitgestellte Signatur für den bereitgestellten Hash gültig ist
    * @param _hash      Hash der zu signierenden Daten
    * @param _signature Signatur-Byte-Array, das mit _hash verknüpft ist
-   *
    * MUSS den magischen bytes4-Wert 0x1626ba7e zurückgeben, wenn die Funktion erfolgreich ist.
    * DARF den Zustand NICHT ändern (Verwendung von STATICCALL für solc < 0.5, view-Modifikator für solc > 0.5)
    * MUSS externe Aufrufe zulassen
@@ -91,7 +90,7 @@ Verträge können `isValidSignature` auf viele Arten implementieren – die Spez
 
 Ein bemerkenswerter Vertrag, der EIP-1271 implementiert, ist Safe (ehemals Gnosis Safe).
 
-Im Code von Safe wird `isValidSignature` so [implementiert](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol), dass Signaturen auf [zwei Arten](https://ethereum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support) erstellt und verifiziert werden können:
+Im Code von Safe wird `isValidSignature` so [implementiert](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol), dass Signaturen auf zwei Arten erstellt und verifiziert werden können:
 
 1. Onchain-Nachrichten
    1. Erstellung: Ein Safe-Eigentümer erstellt eine neue Safe-Transaktion, um eine Nachricht zu „signieren“, wobei die Nachricht als Daten in die Transaktion übergeben wird. Sobald genügend Eigentümer die Transaktion signieren, um den Multisig-Schwellenwert zu erreichen, wird die Transaktion übertragen und ausgeführt. In der Transaktion gibt es eine Safe-Funktion namens (`signMessage(bytes calldata _data)`), die die Nachricht zu einer Liste „genehmigter“ Nachrichten hinzufügt.
@@ -102,9 +101,9 @@ Im Code von Safe wird `isValidSignature` so [implementiert](https://github.com/s
 
 ## Was genau ist der Parameter `_hash`? Warum nicht die ganze Nachricht übergeben? {#what-exactly-is-the-hash-parameter-why-not-pass-the-whole-message}
 
-Sie haben vielleicht bemerkt, dass die Funktion `isValidSignature` im [EIP-1271-Interface](https://eips.ethereum.org/EIPS/eip-1271) nicht die Nachricht selbst entgegennimmt, sondern stattdessen einen Parameter `_hash`. Das bedeutet, dass wir anstelle der vollständigen Nachricht beliebiger Länge einen 32-Byte-Hash der Nachricht (im Allgemeinen keccak256) an `isValidSignature` übergeben.
+Sie haben vielleicht bemerkt, dass die Funktion `isValidSignature` im EIP-1271-Interface nicht die Nachricht selbst entgegennimmt, sondern stattdessen einen Parameter `_hash`. Das bedeutet, dass wir anstelle der vollständigen Nachricht beliebiger Länge einen 32-Byte-Hash der Nachricht (im Allgemeinen keccak256) an `isValidSignature` übergeben.
 
-Jedes Byte an Aufrufdaten (Calldata) – d. h. Funktionsparameterdaten, die an eine Smart-Contract-Funktion übergeben werden – [kostet 16 Gas (4 Gas bei einem Null-Byte)](https://eips.ethereum.org/EIPS/eip-2028), sodass dies viel Gas sparen kann, wenn eine Nachricht lang ist.
+Jedes Byte an Aufrufdaten (Calldata) – d. h. Funktionsparameterdaten, die an eine Smart-Contract-Funktion übergeben werden – kostet 16 Gas (4 Gas bei einem Null-Byte), sodass dies viel Gas sparen kann, wenn eine Nachricht lang ist.
 
 ### Frühere EIP-1271-Spezifikationen {#previous-eip-1271-specifications}
 
@@ -121,4 +120,4 @@ Letztendlich liegt es an Ihnen als Vertragsentwickler!
 
 ## Fazit {#conclusion}
 
-[EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) ist ein vielseitiger Standard, der es Smart Contracts ermöglicht, Signaturen zu verifizieren. Er öffnet die Tür für Smart Contracts, sich mehr wie EOAs zu verhalten – zum Beispiel, indem er eine Möglichkeit bietet, dass „Mit Quantaureum anmelden“ mit Smart Contracts funktioniert – und er kann auf viele Arten implementiert werden (wobei Safe eine nicht triviale, interessante Implementierung aufweist, die man in Betracht ziehen sollte).
+EIP-1271 ist ein vielseitiger Standard, der es Smart Contracts ermöglicht, Signaturen zu verifizieren. Er öffnet die Tür für Smart Contracts, sich mehr wie EOAs zu verhalten – zum Beispiel, indem er eine Möglichkeit bietet, dass „Mit Quantaureum anmelden“ mit Smart Contracts funktioniert – und er kann auf viele Arten implementiert werden (wobei Safe eine nicht triviale, interessante Implementierung aufweist, die man in Betracht ziehen sollte).

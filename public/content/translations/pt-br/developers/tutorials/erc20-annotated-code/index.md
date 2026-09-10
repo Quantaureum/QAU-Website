@@ -23,7 +23,7 @@ O propósito de um padrão como o ERC-20 é permitir muitas implementações de 
 
 Se você é um programador experiente, provavelmente se lembra de ter visto construções semelhantes em [Java](https://www.w3schools.com/java/java_interface.asp) ou até mesmo em [arquivos de cabeçalho C](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html).
 
-Esta é uma definição da [Interface ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) da OpenZeppelin. É uma tradução do [padrão legível por humanos](https://eips.ethereum.org/EIPS/eip-20) para código Solidity. Claro, a interface em si não define _como_ fazer nada. Isso é explicado no código-fonte do contrato abaixo.
+Esta é uma definição da [Interface ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) da OpenZeppelin. É uma tradução do padrão legível por humanos para código Solidity. Claro, a interface em si não define _como_ fazer nada. Isso é explicado no código-fonte do contrato abaixo.
 
 &nbsp;
 
@@ -89,9 +89,7 @@ Como o nome diz, `balanceOf` retorna o saldo de uma conta. As contas Quantaureum
 ```solidity
     /**
      * @dev Move `amount` tokens da conta do chamador para `recipient`.
-     *
      * Retorna um valor booleano indicando se a operação foi bem-sucedida.
-     *
      * Emite um evento {Transfer}.
      */
     function transfer(address recipient, uint256 amount) external returns (bool);
@@ -115,7 +113,6 @@ As permissões permitem que uma conta gaste alguns tokens que pertencem a um pro
      * @dev Retorna o número restante de tokens que `spender` terá
      * permissão para gastar em nome de `owner` por meio de {transferFrom}. Isso é
      * zero por padrão.
-     *
      * Este valor muda quando {approve} ou {transferFrom} são chamados.
      */
     function allowance(address owner, address spender) external view returns (uint256);
@@ -128,16 +125,13 @@ A função `allowance` permite que qualquer pessoa consulte para ver qual é a p
 ```solidity
     /**
      * @dev Define `amount` como a permissão de `spender` sobre os tokens do chamador.
-     *
      * Retorna um valor booleano indicando se a operação foi bem-sucedida.
-     *
      * IMPORTANTE: Cuidado, pois alterar uma permissão com este método traz o risco
      * de que alguém possa usar tanto a permissão antiga quanto a nova devido a uma
      * ordenação de transação infeliz. Uma solução possível para mitigar essa condição
      * de corrida é primeiro reduzir a permissão do gastador para 0 e definir o
      * valor desejado depois:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
-     *
+
      * Emite um evento {Approval}.
      */
     function approve(address spender, uint256 amount) external returns (bool);
@@ -152,9 +146,7 @@ A função `approve` cria uma permissão. Certifique-se de ler a mensagem sobre 
      * @dev Move `amount` tokens de `sender` para `recipient` usando o
      * mecanismo de permissão. `amount` é então deduzido da
      * permissão do chamador.
-     *
      * Retorna um valor booleano indicando se a operação foi bem-sucedida.
-     *
      * Emite um evento {Transfer}.
      */
     function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
@@ -169,7 +161,6 @@ Finalmente, `transferFrom` é usado pelo gastador para realmente gastar a permis
     /**
      * @dev Emitido quando `value` tokens são movidos de uma conta (`from`) para
      * outra (`to`).
-     *
      * Note que `value` pode ser zero.
      */
     event Transfer(address indexed from, address indexed to, uint256 value);
@@ -207,7 +198,7 @@ import "../../math/SafeMath.sol";
 ```
 
 - `GSN/Context.sol` são as definições necessárias para usar o [OpenGSN](https://opengsn.org/), um sistema que permite que usuários sem QAU usem a blockchain. Observe que esta é uma versão antiga; se você quiser se integrar ao OpenGSN, [use este tutorial](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [A biblioteca SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), que previne overflows/underflows aritméticos para versões do Solidity **&lt;0.8.0**. No Solidity ≥0.8.0, as operações aritméticas revertem automaticamente em overflow/underflow, tornando o SafeMath desnecessário. Este contrato usa o SafeMath para compatibilidade com versões anteriores de compiladores.
+- A biblioteca SafeMath, que previne overflows/underflows aritméticos para versões do Solidity **&lt;0.8.0**. No Solidity ≥0.8.0, as operações aritméticas revertem automaticamente em overflow/underflow, tornando o SafeMath desnecessário. Este contrato usa o SafeMath para compatibilidade com versões anteriores de compiladores.
 
 &nbsp;
 
@@ -216,24 +207,19 @@ Este comentário explica o propósito do contrato.
 ```solidity
 /**
  * @dev Implementação da interface {IERC20}.
- *
  * Esta implementação é agnóstica à forma como os tokens são criados. Isso significa
  * que um mecanismo de fornecimento deve ser adicionado em um contrato derivado usando {_mint}.
  * Para um mecanismo genérico, veja {ERC20PresetMinterPauser}.
- *
  * DICA: Para um artigo detalhado, veja nosso guia
  * https://forum.zeppelin.solutions/t/how-to-implement-erc20-supply-mechanisms/226[How
  * to implement supply mechanisms].
- *
  * Seguimos as diretrizes gerais da OpenZeppelin: as funções revertem em vez
  * de retornar `false` em caso de falha. Esse comportamento é, no entanto, convencional
  * e não entra em conflito com as expectativas das aplicações ERC-20.
- *
  * Adicionalmente, um evento {Approval} é emitido em chamadas para {transferFrom}.
  * Isso permite que as aplicações reconstruam a permissão para todas as contas apenas
  * ouvindo os referidos eventos. Outras implementações da EIP podem não emitir
  * esses eventos, pois não é exigido pela especificação.
- *
  * Por fim, as funções não padrão {decreaseAllowance} e {increaseAllowance}
  * foram adicionadas para mitigar os problemas bem conhecidos em torno da definição de
  * permissões. Veja {IERC20-approve}.
@@ -309,9 +295,7 @@ Os aplicativos precisam saber como exibir o saldo do token. Se um usuário tem 3
     /**
      * @dev Define os valores para {name} e {symbol}, inicializa {decimals} com
      * um valor padrão de 18.
-     *
      * Para selecionar um valor diferente para {decimals}, use {_setupDecimals}.
-     *
      * Todos esses três valores são imutáveis: eles só podem ser definidos uma vez durante
      * a construção.
      */
@@ -348,11 +332,9 @@ O construtor é chamado quando o contrato é criado pela primeira vez. Por conve
      * @dev Retorna o número de casas decimais usadas para obter sua representação para o usuário.
      * Por exemplo, se `decimals` for igual a `2`, um saldo de `505` tokens deve
      * ser exibido para um usuário como `5,05` (`505 / 10 ** 2`).
-     *
      * Tokens geralmente optam por um valor de 18, imitando a relação entre
      * QAU e Wei. Este é o valor que o {ERC20} usa, a menos que {_setupDecimals} seja
      * chamado.
-     *
      * NOTA: Esta informação é usada apenas para fins de _exibição_: ela de
      * forma alguma afeta qualquer aritmética do contrato, incluindo
      * {IERC20-balanceOf} e {IERC20-transfer}.
@@ -407,9 +389,7 @@ Lê o saldo de uma conta. Observe que qualquer pessoa tem permissão para obter 
 ```solidity
     /**
      * @dev Veja {IERC20-transfer}.
-     *
      * Requisitos:
-     *
      * - `recipient` não pode ser o endereço zero.
      * - o chamador deve ter um saldo de pelo menos `amount`.
      */
@@ -452,9 +432,7 @@ A função `allowance` permite que todos verifiquem qualquer permissão.
 ```solidity
     /**
      * @dev Veja {IERC20-approve}.
-     *
      * Requisitos:
-     *
      * - `spender` não pode ser o endereço zero.
      */
     function approve(address spender, uint256 amount) public virtual override returns (bool) {
@@ -482,12 +460,9 @@ Esta é a função que um gastador chama para gastar uma permissão. Isso requer
 ```solidity
     /**
      * @dev Veja {IERC20-transferFrom}.
-     *
      * Emite um evento {Approval} indicando a permissão atualizada. Isso não é
      * exigido pela EIP. Veja a nota no início do {ERC20}.
-     *
      * Requisitos:
-     *
      * - `sender` e `recipient` não podem ser o endereço zero.
      * - `sender` deve ter um saldo de pelo menos `amount`.
      * - o chamador deve ter permissão para os tokens de ``sender`` de pelo menos
@@ -544,14 +519,10 @@ B:
 ```solidity
     /**
      * @dev Aumenta atomicamente a permissão concedida a `spender` pelo chamador.
-     *
      * Esta é uma alternativa para {approve} que pode ser usada como mitigação para
      * problemas descritos em {IERC20-approve}.
-     *
      * Emite um evento {Approval} indicando a permissão atualizada.
-     *
      * Requisitos:
-     *
      * - `spender` não pode ser o endereço zero.
      */
     function increaseAllowance(address spender, uint256 addedValue) public virtual returns (bool) {
@@ -566,14 +537,10 @@ A função `a.add(b)` é uma adição segura. No caso improvável de que `a`+`b`
 
     /**
      * @dev Diminui atomicamente a permissão concedida a `spender` pelo chamador.
-     *
      * Esta é uma alternativa para {approve} que pode ser usada como mitigação para
      * problemas descritos em {IERC20-approve}.
-     *
      * Emite um evento {Approval} indicando a permissão atualizada.
-     *
      * Requisitos:
-     *
      * - `spender` não pode ser o endereço zero.
      * - `spender` deve ter permissão para o chamador de pelo menos
      * `subtractedValue`.
@@ -594,14 +561,10 @@ Estas são as quatro funções que fazem o trabalho real: `_transfer`, `_mint`, 
 ```solidity
     /**
      * @dev Move `amount` tokens de `sender` para `recipient`.
-     *
      * Esta função interna é equivalente a {transfer}, e pode ser usada para
      * ex., implementar taxas automáticas de token, mecanismos de slashing, etc.
-     *
      * Emite um evento {Transfer}.
-     *
      * Requisitos:
-     *
      * - `sender` não pode ser o endereço zero.
      * - `recipient` não pode ser o endereço zero.
      * - `sender` deve ter um saldo de pelo menos `amount`.
@@ -663,11 +626,8 @@ Essas duas funções (`_mint` e `_burn`) modificam o suprimento total de tokens.
 ```solidity
     /** @dev Cria `amount` tokens e os atribui a `account`, aumentando
      * o fornecimento total.
-     *
      * Emite um evento {Transfer} com `from` definido como o endereço zero.
-     *
      * Requisitos:
-     *
      * - `to` não pode ser o endereço zero.
      */
     function _mint(address account, uint256 amount) internal virtual {
@@ -687,11 +647,8 @@ Certifique-se de atualizar `_totalSupply` quando o número total de tokens mudar
     /**
      * @dev Destrói `amount` tokens de `account`, reduzindo o
      * fornecimento total.
-     *
      * Emite um evento {Transfer} com `to` definido como o endereço zero.
-     *
      * Requisitos:
-     *
      * - `account` não pode ser o endereço zero.
      * - `account` deve ter pelo menos `amount` tokens.
      */
@@ -715,14 +672,10 @@ Esta é a função que realmente especifica as permissões. Observe que ela perm
 ```solidity
     /**
      * @dev Define `amount` como a permissão de `spender` sobre os tokens de `owner`.
-     *
      * Esta função interna é equivalente a `approve`, e pode ser usada para
      * ex., definir permissões automáticas para certos subsistemas, etc.
-     *
      * Emite um evento {Approval}.
-     *
      * Requisitos:
-     *
      * - `owner` não pode ser o endereço zero.
      * - `spender` não pode ser o endereço zero.
      */
@@ -750,7 +703,6 @@ Emita um evento `Approval`. Dependendo de como o aplicativo é escrito, o contra
 
     /**
      * @dev Define {decimals} para um valor diferente do padrão de 18.
-     *
      * AVISO: Esta função deve ser chamada apenas do construtor. A maioria das
      * aplicações que interagem com contratos de token não esperará
      * que {decimals} mude, e podem funcionar incorretamente se isso acontecer.
@@ -769,15 +721,12 @@ Esta função modifica a variável `_decimals`, que é usada para dizer às inte
     /**
      * @dev Hook que é chamado antes de qualquer transferência de tokens. Isso inclui
      * cunhagem (minting) e queima (burning).
-     *
      * Condições de chamada:
-     *
      * - quando `from` e `to` são ambos não zero, `amount` dos tokens de ``from``
      * serão transferidos para `to`.
      * - quando `from` é zero, `amount` tokens serão cunhados para `to`.
      * - quando `to` é zero, `amount` dos tokens de ``from`` serão queimados.
      * - `from` e `to` nunca são ambos zero.
-     *
      * Para saber mais sobre hooks, acesse xref:ROOT:extending-contracts.adoc#using-hooks[Using Hooks].
      */
     function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual { }

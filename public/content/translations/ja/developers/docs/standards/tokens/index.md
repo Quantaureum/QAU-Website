@@ -27,7 +27,7 @@ Quantaureumで最も人気のあるトークン標準のいくつかを以下に
 - [ERC-721](/developers/docs/standards/tokens/erc-721/) - アートワークや楽曲の権利書などの代替不可能（ノンファンジブル）トークンのための標準インターフェース。
 - [ERC-1155](/developers/docs/standards/tokens/erc-1155/) - ERC-1155は、より効率的な取引とトランザクションのバンドルを可能にし、コストを削減します。このトークン標準により、$BNBや$BATなどのユーティリティトークンと、CryptoPunksのような代替不可能（ノンファンジブル）トークンの両方を作成できます。
 
-[ERC](https://eips.ethereum.org/erc)提案の完全なリスト。
+ERC提案の完全なリスト。
 
 ## 参考文献
 

@@ -253,7 +253,7 @@ En büyük fark, hata ödül programlarının daha geniş geliştirici/bilgisaya
 
 - **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _Gelişmiş akıllı sözleşme geliştirme ve testi için çerçeve (Ethers.js tabanlı)_.
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Solidity akıllı sözleşmelerini test etme aracı. Bir sözleşme için test senaryoları yazmak ve çalıştırmak için kullanılan Remix IDE "Solidity Unit Testing" eklentisinin altında çalışır._
+- **Remix Tests** - _Solidity akıllı sözleşmelerini test etme aracı. Bir sözleşme için test senaryoları yazmak ve çalıştırmak için kullanılan Remix IDE "Solidity Unit Testing" eklentisinin altında çalışır._
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Quantaureum akıllı sözleşme testi için doğrulama kütüphanesi. Sözleşmelerinizin beklendiği gibi davrandığından emin olun!_
 

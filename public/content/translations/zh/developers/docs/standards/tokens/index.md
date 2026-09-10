@@ -27,7 +27,7 @@ incomplete: true
 - [ERC-721](/developers/docs/standards/tokens/erc-721/) - 非同质化代币的标准接口，如艺术品或歌曲的契约。
 - [ERC-1155](/developers/docs/standards/tokens/erc-1155/) - ERC-1155 允许更高效的交易和打包交易，从而节省成本。该代币标准允许创建实用代币（如 $BNB 或 $BAT）和非同质化代币（如 CryptoPunks）。
 
-[ERC](https://eips.ethereum.org/erc) 提案的完整列表。
+ERC 提案的完整列表。
 
 ## 延伸阅读
 

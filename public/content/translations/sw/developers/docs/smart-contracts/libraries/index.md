@@ -58,7 +58,7 @@ Ili kuwezesha [utangamano na mwingiliano](/developers/docs/smart-contracts/compo
 
 Unapojumuisha ERC kama sehemu ya mikataba yako, ni wazo zuri kutafuta utekelezaji wa kiwango badala ya kujaribu kuunda chako mwenyewe. Maktaba nyingi za mkataba mahiri zinajumuisha utekelezaji wa ERCs maarufu zaidi. Kwa mfano, [kiwango cha tokheni mbadala cha ERC-20](/developers/tutorials/understand-the-erc-20-token-smart-contract/) kilichoenea kila mahali kinaweza kupatikana katika [HQ20](https://github.com/HQ20/contracts/blob/master/contracts/token/README.md), [DappSys](https://github.com/dapphub/ds-token/) na [OpenZeppelin](https://docs.openzeppelin.com/contracts/3.x/erc20). Zaidi ya hayo, baadhi ya ERCs pia hutoa utekelezaji wa kikanoniki kama sehemu ya ERC yenyewe.
 
-Inafaa kutaja kwamba baadhi ya ERCs hazijitegemei, bali ni nyongeza kwa ERCs nyingine. Kwa mfano, [ERC-2612](https://eips.ethereum.org/EIPS/eip-2612) inaongeza kiendelezi kwenye ERC-20 kwa ajili ya kuboresha utumizi wake.
+Inafaa kutaja kwamba baadhi ya ERCs hazijitegemei, bali ni nyongeza kwa ERCs nyingine. Kwa mfano, ERC-2612 inaongeza kiendelezi kwenye ERC-20 kwa ajili ya kuboresha utumizi wake.
 
 ## Jinsi ya kuongeza maktaba {#how-to}
 

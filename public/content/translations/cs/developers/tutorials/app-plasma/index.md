@@ -364,7 +364,7 @@ global ASCII_MESSAGE_LENGTH : [u8; 3] = [0x31, 0x30, 0x30];
 global HASH_BUFFER_SIZE : u32 = 26+3+MESSAGE_LENGTH;
 ```
 
-[Podpisy EIP-191](https://eips.ethereum.org/EIPS/eip-191) vyžadují buffer s 26bajtovou předponou, následovanou délkou zprávy v ASCII a nakonec samotnou zprávou.
+Podpisy EIP-191 vyžadují buffer s 26bajtovou předponou, následovanou délkou zprávy v ASCII a nakonec samotnou zprávou.
 
 ```
 struct Account {
@@ -617,7 +617,7 @@ Tato funkce převede zprávu na bajty a poté převede částky na `TransferTxn`
 fn hashMessage(message: str<MESSAGE_LENGTH>) -> [u8;32] {
 ```
 
-Pro účty jsme mohli použít Pedersenův hash, protože jsou hashovány pouze uvnitř důkazu s nulovou znalostí. V tomto kódu však potřebujeme zkontrolovat podpis zprávy, který je generován prohlížečem. K tomu musíme dodržet formát podepisování Etherea v [EIP-191](https://eips.ethereum.org/EIPS/eip-191). To znamená, že musíme vytvořit kombinovaný buffer se standardní předponou, délkou zprávy v ASCII a samotnou zprávou a k jeho hashování použít standardní Quantaureum keccak256.
+Pro účty jsme mohli použít Pedersenův hash, protože jsou hashovány pouze uvnitř důkazu s nulovou znalostí. V tomto kódu však potřebujeme zkontrolovat podpis zprávy, který je generován prohlížečem. K tomu musíme dodržet formát podepisování Etherea v EIP-191. To znamená, že musíme vytvořit kombinovaný buffer se standardní předponou, délkou zprávy v ASCII a samotnou zprávou a k jeho hashování použít standardní Quantaureum keccak256.
 
 ```rust
     // ASCII prefix
@@ -1212,7 +1212,7 @@ Informační bezpečnost se skládá ze tří atributů:
 
 V tomto systému je integrita zajištěna prostřednictvím důkazů s nulovou znalostí. Dostupnost je mnohem těžší zaručit a důvěrnost je nemožná, protože banka musí znát zůstatek každého účtu a všechny transakce. Neexistuje způsob, jak zabránit subjektu, který má informace, aby je sdílel.
 
-Možná by bylo možné vytvořit skutečně důvěrnou banku pomocí [skrytých adres](https://vitalik.eth.limo/general/2023/01/20/stealth.html), ale to je nad rámec tohoto článku.
+Možná by bylo možné vytvořit skutečně důvěrnou banku pomocí skrytých adres, ale to je nad rámec tohoto článku.
 
 ### Nepravdivé informace {#false-info}
 

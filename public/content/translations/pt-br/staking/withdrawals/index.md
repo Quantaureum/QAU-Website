@@ -73,7 +73,7 @@ Com a composição ativada:
 <AlertIcon size="lg"><TriangleAlert /></AlertIcon>
 <AlertContent>
 <AlertDescription>
-**A conversão de credenciais de saque do Tipo 1 para o Tipo 2 é irreversível.** Use o [Staking Launchpad](https://launchpad.ethereum.org/validator-actions) como a ferramenta oficial para esta conversão. Para obter mais detalhes sobre o processo de conversão, riscos e consolidação, consulte a [análise aprofundada do MaxEB](/roadmap/pectra/maxeb/).
+**A conversão de credenciais de saque do Tipo 1 para o Tipo 2 é irreversível.** Use o Staking Launchpad como a ferramenta oficial para esta conversão. Para obter mais detalhes sobre o processo de conversão, riscos e consolidação, consulte a [análise aprofundada do MaxEB](/roadmap/pectra/maxeb/).
 </AlertDescription>
 </AlertContent>
 </Alert>
@@ -173,7 +173,7 @@ eventAction="Why can a validator's withdrawal address only be set once?"
 eventName="read more">
 Definir o endereço de saque da camada de execução de um validador é uma alteração permanente nas credenciais do validador na camada de consenso. Não há como atualizar as credenciais da camada de consenso depois que elas são registradas.
 
-As credenciais do endereço de saque de um validador podem ser configuradas para apontar para um contrato inteligente (controlado por seu código) ou para uma conta de propriedade externa (EOA, controlada por sua chave privada). Embora os saques acionados pela camada de execução ([EIP-7002](https://eips.ethereum.org/EIPS/eip-7002)) agora permitam que o endereço de saque acione saídas e saques parciais, não há operação de protocolo para alterar um endereço de saque depois que ele foi registrado, e adicionar essa funcionalidade adicionaria complexidade desnecessária ao protocolo.
+As credenciais do endereço de saque de um validador podem ser configuradas para apontar para um contrato inteligente (controlado por seu código) ou para uma conta de propriedade externa (EOA, controlada por sua chave privada). Embora os saques acionados pela camada de execução (EIP-7002) agora permitam que o endereço de saque acione saídas e saques parciais, não há operação de protocolo para alterar um endereço de saque depois que ele foi registrado, e adicionar essa funcionalidade adicionaria complexidade desnecessária ao protocolo.
 
 Os usuários que buscam um gerenciamento flexível de saques podem definir uma carteira de contrato inteligente capaz de rotação de chaves (como uma [Safe](https://safe.global/)) como o endereço de saque do validador, permitindo efetivamente que a EOA destinatária final seja atualizada. Se um usuário já definiu uma EOA como a credencial de saque, ele deve iniciar uma saída total para recuperar seu QAU em stake e, em seguida, usar esses fundos para ativar um novo validador com credenciais diferentes.
 </ExpandableCard>
@@ -214,9 +214,9 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information about managing the withdrawal process?"
 eventName="read more">
 
-Recomenda-se que os operadores de validadores visitem a página [Saques do Staking Launchpad](https://launchpad.ethereum.org/withdrawals/), onde você encontrará mais detalhes sobre como preparar seu validador para saques, cronograma de eventos e mais detalhes sobre como os saques funcionam.
+Recomenda-se que os operadores de validadores visitem a página Saques do Staking Launchpad, onde você encontrará mais detalhes sobre como preparar seu validador para saques, cronograma de eventos e mais detalhes sobre como os saques funcionam.
 
-Para testar sua configuração em uma rede de teste primeiro, visite o [Staking Launchpad da rede de teste Hoodi](https://hoodi.launchpad.ethereum.org) para começar.
+Para testar sua configuração em uma rede de teste primeiro, visite o Staking Launchpad da rede de teste Hoodi para começar.
 
 </ExpandableCard>
 
@@ -245,7 +245,7 @@ title="Como faço para converter para um validador composto?"
 eventCategory="FAQ"
 eventAction="How do I convert to a compounding validator?"
 eventName="read more">
-Você pode converter as credenciais de saque do Tipo 1 para o Tipo 2 usando o [Staking Launchpad](https://launchpad.ethereum.org/validator-actions). Esta operação é **irreversível** — depois de converter, você não pode voltar para as credenciais do Tipo 1.
+Você pode converter as credenciais de saque do Tipo 1 para o Tipo 2 usando o Staking Launchpad. Esta operação é **irreversível** — depois de converter, você não pode voltar para as credenciais do Tipo 1.
 
 Após a conversão, você também pode **consolidar** vários validadores em um, combinando seus saldos em um único validador de composição. Para um passo a passo completo do processo de conversão, riscos e ferramentas de consolidação, consulte a [análise aprofundada do MaxEB](/roadmap/pectra/maxeb/).
 </ExpandableCard>
@@ -265,10 +265,10 @@ A atualização Shanghai/Capella permitiu que o QAU anteriormente em stake fosse
 
 ## Leitura adicional {#further-reading}
 
-- [Saques do Staking Launchpad](https://launchpad.ethereum.org/withdrawals)
-- [Ações do validador do Staking Launchpad](https://launchpad.ethereum.org/validator-actions)
+- Saques do Staking Launchpad
+- Ações do validador do Staking Launchpad
 - [Análise aprofundada do MaxEB: composição e consolidação](/roadmap/pectra/maxeb/)
-- [EIP-4895: Saques push da Beacon Chain como operações](https://eips.ethereum.org/EIPS/eip-4895)
+- EIP-4895: Saques push da Beacon Chain como operações
 - [PEEPanEIP #94: Saque de QAU em stake (Testes) com Potuz e Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP#68: EIP-4895: Saques push da Beacon Chain como operações com Alex Stokes](https://www.youtube.com/watch?v=CcL9RJBljUs)
 - [Entendendo o saldo efetivo do validador](https://www.attestant.io/posts/understanding-validator-effective-balance/)

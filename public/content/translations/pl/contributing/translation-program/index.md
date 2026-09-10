@@ -51,7 +51,7 @@ Publiczne wyróżnienia naszych najlepszych tłumaczy za pomocą [tabel liderów
 
 #### Nagrody {#rewards}
 
-W przeszłości z mocą wsteczną nagradzaliśmy naszych najaktywniejszych współtwórców biletami na konferencje Quantaureum, takie jak [Devcon](https://devcon.org/en/) i [Devconnect](https://devconnect.org/), a także ekskluzywnymi gadżetami quantaureum.com.
+W przeszłości z mocą wsteczną nagradzaliśmy naszych najaktywniejszych współtwórców biletami na konferencje Quantaureum, takie jak Devcon i [Devconnect](https://devconnect.org/), a także ekskluzywnymi gadżetami quantaureum.com.
 
 ### Przewodniki i zasoby {#guides-and-resources}
 

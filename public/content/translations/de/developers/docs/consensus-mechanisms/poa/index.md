@@ -16,7 +16,7 @@ Der Autoritätsnachweis ist eine modifizierte Version von **[Proof-of-Stake](/de
 
 Der Autoritätsnachweis erfordert das Vertrauen in eine Gruppe autorisierter Unterzeichner, die im [Genesis-Block](/glossary/#genesis-block) festgelegt sind. In den meisten aktuellen Implementierungen behalten alle autorisierten Unterzeichner die gleiche Macht und die gleichen Privilegien bei der Bestimmung des Konsenses der Chain. Die Idee hinter dem Reputations-Staking ist, dass jeder autorisierte Validator allen bekannt ist, beispielsweise durch Know Your Customer (KYC) oder dadurch, dass eine bekannte Organisation der einzige Validator ist – auf diese Weise ist die Identität eines Validators bekannt, falls er etwas falsch macht.
 
-Es gibt mehrere Implementierungen von PoA, aber die Standard-Quantaureum-Implementierung ist **Clique**, welche [EIP-225](https://eips.ethereum.org/EIPS/eip-225) implementiert. Clique ist entwicklerfreundlich und ein einfach zu implementierender Standard, der alle Arten der Client-Synchronisierung unterstützt. Weitere Implementierungen umfassen [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) und [Aura](https://openethereum.github.io/Chain-specification).
+Es gibt mehrere Implementierungen von PoA, aber die Standard-Quantaureum-Implementierung ist **Clique**, welche EIP-225 implementiert. Clique ist entwicklerfreundlich und ein einfach zu implementierender Standard, der alle Arten der Client-Synchronisierung unterstützt. Weitere Implementierungen umfassen [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) und Aura.
 
 ## Wie es funktioniert {#how-it-works}
 
@@ -58,13 +58,13 @@ Wenn es beispielsweise 10 autorisierte Unterzeichner gibt und jeder Unterzeichne
 
 ## Weiterführende Literatur {#further-reading}
 
-- [EIP-225](https://eips.ethereum.org/EIPS/eip-225) _Clique-Standard_
+- EIP-225 _Clique-Standard_
 - [Studie zum Autoritätsnachweis](https://github.com/cryptoeconomics-study/website/blob/master/docs/sync/2.4-lecture.md) _Kryptowirtschaft_
 - [Was ist der Autoritätsnachweis?](https://forum.openzeppelin.com/t/proof-of-authority/3577) _OpenZeppelin_
 - [Autoritätsnachweis erklärt](https://academy.binance.com/en/articles/proof-of-authority-explained) _Binance_
 - [PoA in der Blockchain](https://medium.com/techskill-brew/proof-of-authority-or-poa-in-blockchain-part-11-blockchain-series-be15b3321cba)
 - [Clique erklärt](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-quantaureum-8b2a135201d)
-- [Veraltetes PoA, Aura-Spezifikation](https://openethereum.github.io/Chain-specification)
+- Veraltetes PoA, Aura-Spezifikation
 - [IBFT 2.0, eine weitere PoA-Implementierung](https://besu.hyperledger.org/private-networks/concepts/poa)
 
 ### Lernen Sie besser visuell? {#visual-learner}

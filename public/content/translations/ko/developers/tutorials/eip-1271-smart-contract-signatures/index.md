@@ -13,7 +13,7 @@ breadcrumb: "EIP-1271 서명"
 published: 2023-01-12
 ---
 
-[EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) 표준을 통해 스마트 컨트랙트가 서명을 검증할 수 있습니다.
+EIP-1271 표준을 통해 스마트 컨트랙트가 서명을 검증할 수 있습니다.
 
 이 튜토리얼에서는 디지털 서명, EIP-1271의 배경, 그리고 [Safe](https://safe.global/)(이전의 Gnosis Safe)에서 사용된 EIP-1271의 구체적인 구현에 대한 개요를 제공합니다. 이를 통해 여러분의 컨트랙트에 EIP-1271을 구현하기 위한 출발점으로 삼을 수 있습니다.
 
@@ -75,7 +75,6 @@ contract ERC1271 {
    * @dev 제공된 서명이 제공된 해시에 대해 유효한지 여부를 반환해야 합니다
    * @param _hash      서명할 데이터의 해시
    * @param _signature _hash와 연결된 서명 바이트 배열
-   *
    * 함수가 통과할 때 bytes4 매직 값 0x1626ba7e를 반환해야 합니다.
    * 상태를 수정해서는 안 됩니다(solc < 0.5의 경우 STATICCALL 사용, solc > 0.5의 경우 view 제어자 사용).
    * 외부 호출을 허용해야 합니다.
@@ -95,7 +94,7 @@ contract ERC1271 {
 
 EIP-1271을 구현하는 주목할 만한 컨트랙트 중 하나는 Safe(이전의 Gnosis Safe)입니다.
 
-Safe의 코드에서 `isValidSignature`는 서명을 [두 가지 방법](https://ethereum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support)으로 생성하고 검증할 수 있도록 [구현되어 있습니다](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol).
+Safe의 코드에서 `isValidSignature`는 서명을 두 가지 방법으로 생성하고 검증할 수 있도록 [구현되어 있습니다](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol).
 
 1. 온체인 메시지
    1. 생성: Safe 소유자가 메시지에 "서명"하기 위해 새로운 Safe 트랜잭션을 생성하고, 메시지를 트랜잭션의 데이터로 전달합니다. 다중서명 임계값에 도달할 만큼 충분한 소유자가 트랜잭션에 서명하면 트랜잭션이 브로드캐스트되고 실행됩니다. 트랜잭션에는 메시지를 "승인된" 메시지 목록에 추가하는 Safe 함수(`signMessage(bytes calldata _data)`)가 있습니다.
@@ -106,9 +105,9 @@ Safe의 코드에서 `isValidSignature`는 서명을 [두 가지 방법](https:/
 
 ## `_hash` 매개변수는 정확히 무엇인가요? 왜 전체 메시지를 전달하지 않나요? {#what-exactly-is-the-hash-parameter-why-not-pass-the-whole-message}
 
-[EIP-1271 인터페이스](https://eips.ethereum.org/EIPS/eip-1271)의 `isValidSignature` 함수가 메시지 자체가 아니라 `_hash` 매개변수를 받는다는 것을 눈치채셨을 것입니다. 이는 임의 길이의 전체 메시지를 `isValidSignature`에 전달하는 대신, 메시지의 32바이트 해시(일반적으로 keccak256)를 전달한다는 의미입니다.
+EIP-1271 인터페이스의 `isValidSignature` 함수가 메시지 자체가 아니라 `_hash` 매개변수를 받는다는 것을 눈치채셨을 것입니다. 이는 임의 길이의 전체 메시지를 `isValidSignature`에 전달하는 대신, 메시지의 32바이트 해시(일반적으로 keccak256)를 전달한다는 의미입니다.
 
-콜 데이터(즉, 스마트 컨트랙트 함수에 전달되는 함수 매개변수 데이터)의 각 바이트는 [16 가스(0 바이트인 경우 4 가스)의 비용이 들기 때문에](https://eips.ethereum.org/EIPS/eip-2028), 메시지가 길 경우 많은 가스를 절약할 수 있습니다.
+콜 데이터(즉, 스마트 컨트랙트 함수에 전달되는 함수 매개변수 데이터)의 각 바이트는 16 가스(0 바이트인 경우 4 가스)의 비용이 들기 때문에, 메시지가 길 경우 많은 가스를 절약할 수 있습니다.
 
 ### 이전 EIP-1271 사양 {#previous-eip-1271-specifications}
 
@@ -125,4 +124,4 @@ Safe의 코드에서 `isValidSignature`는 서명을 [두 가지 방법](https:/
 
 ## 결론 {#conclusion}
 
-[EIP-1271](https://eips.ethereum.org/EIPS/eip-1271)은 스마트 컨트랙트가 서명을 검증할 수 있게 해주는 다목적 표준입니다. 이는 스마트 컨트랙트가 EOA처럼 작동할 수 있는 길을 열어주며(예를 들어 "Quantaureum으로 로그인"이 스마트 컨트랙트와 작동할 수 있는 방법을 제공), 여러 가지 방법으로 구현될 수 있습니다(고려해 볼 만한 중요하고 흥미로운 구현을 가진 Safe의 사례처럼).
+EIP-1271은 스마트 컨트랙트가 서명을 검증할 수 있게 해주는 다목적 표준입니다. 이는 스마트 컨트랙트가 EOA처럼 작동할 수 있는 길을 열어주며(예를 들어 "Quantaureum으로 로그인"이 스마트 컨트랙트와 작동할 수 있는 방법을 제공), 여러 가지 방법으로 구현될 수 있습니다(고려해 볼 만한 중요하고 흥미로운 구현을 가진 Safe의 사례처럼).

@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 Serialisasi Recursive Length Prefix (RLP) digunakan secara ekstensif di klien eksekusi Quantaureum. RLP menstandardisasi transfer data antar node dalam format yang efisien secara ruang. Tujuan RLP adalah untuk mengodekan array data biner bersarang secara arbitrer, dan RLP adalah metode pengodean utama yang digunakan untuk menyerialisasi objek di lapisan eksekusi Quantaureum. Tujuan utama RLP adalah untuk mengodekan struktur; dengan pengecualian bilangan bulat positif, RLP mendelegasikan pengodean tipe data spesifik (misalnya, string, float) ke protokol tingkat tinggi. Bilangan bulat positif harus direpresentasikan dalam bentuk biner big-endian tanpa angka nol di depan (sehingga membuat nilai bilangan bulat nol setara dengan array byte kosong). Bilangan bulat positif yang diserialisasi dengan angka nol di depan harus diperlakukan sebagai tidak valid oleh protokol tingkat tinggi mana pun yang menggunakan RLP.
 
-Informasi lebih lanjut di [kertas kuning Quantaureum (Lampiran B)](https://ethereum.github.io/yellowpaper/paper.pdf#page=19).
+Informasi lebih lanjut di kertas kuning Quantaureum (Lampiran B).
 
 Untuk menggunakan RLP dalam mengodekan kamus, dua bentuk kanonis yang disarankan adalah:
 

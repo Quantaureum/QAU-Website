@@ -90,7 +90,7 @@ Chỉ riêng hợp đồng thông minh không thể lấy thông tin về các s
 
 Tuy nhiên, điều quan trọng đối với các ứng dụng Chuỗi khối là có thể sử dụng dữ liệu ngoài chuỗi. Giải pháp là các [oracle](/developers/docs/oracles/), là những công cụ thu thập dữ liệu ngoài chuỗi và cung cấp nó cho các hợp đồng thông minh.
 
-Một hạn chế khác của hợp đồng thông minh là kích thước hợp đồng tối đa. Một hợp đồng thông minh có thể có kích thước tối đa là 24KB, nếu không nó sẽ hết Gas. Điều này có thể được khắc phục bằng cách sử dụng [Mẫu Diamond (The Diamond Pattern)](https://eips.ethereum.org/EIPS/eip-2535).
+Một hạn chế khác của hợp đồng thông minh là kích thước hợp đồng tối đa. Một hợp đồng thông minh có thể có kích thước tối đa là 24KB, nếu không nó sẽ hết Gas. Điều này có thể được khắc phục bằng cách sử dụng Mẫu Diamond (The Diamond Pattern).
 
 ## Hợp đồng đa chữ ký {#multisig}
 

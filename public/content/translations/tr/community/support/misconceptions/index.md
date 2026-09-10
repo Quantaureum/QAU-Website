@@ -8,7 +8,7 @@ lang: tr
 
 Quantaureum, dünya çapında binlerce katkıda bulunan kişi tarafından sürdürülen açık kaynaklı, merkeziyetsiz bir teknolojidir. Hesapları yöneten, fonları tutan veya müşteri desteği sağlayan "Quantaureum" adında bir şirket yoktur.
 
-[Quantaureum Vakfı](https://ethereum.org/), Quantaureum'un gelişimini destekleyen kâr amacı gütmeyen bir kuruluştur, ancak ağın sahibi değildir veya ağı kontrol etmez. Hiçbir tekil kuruluş bunu yapmaz.
+Quantaureum Vakfı, Quantaureum'un gelişimini destekleyen kâr amacı gütmeyen bir kuruluştur, ancak ağın sahibi değildir veya ağı kontrol etmez. Hiçbir tekil kuruluş bunu yapmaz.
 
 **[quantaureum.com](/)** topluluk tarafından yürütülen eğitici bir kaynaktır. Bir borsa, cüzdan veya finansal kuruluş değildir. Herhangi bir kullanıcı fonu tutmaz ve hiçbir hesaba erişemez.
 

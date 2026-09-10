@@ -42,7 +42,7 @@ Contoh fungsionalitas yang disediakan ERC-20:
 
 Jika sebuah Kontrak Pintar mengimplementasikan metode dan peristiwa berikut, kontrak tersebut dapat disebut sebagai Kontrak Token ERC-20 dan, setelah diterapkan, kontrak tersebut akan bertanggung jawab untuk melacak token yang dibuat di Quantaureum.
 
-Dari [EIP-20](https://eips.ethereum.org/EIPS/eip-20):
+Dari EIP-20:
 
 ### Metode {#methods}
 
@@ -171,7 +171,7 @@ Beberapa standar alternatif telah muncul dari masalah ini seperti [ERC-223](/dev
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [EIP-20: Standar Token ERC-20](https://eips.ethereum.org/EIPS/eip-20)
+- EIP-20: Standar Token ERC-20
 - [OpenZeppelin - Token](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [OpenZeppelin - Implementasi ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Panduan untuk Token ERC20 Solidity](https://www.alchemy.com/overviews/erc20-solidity)

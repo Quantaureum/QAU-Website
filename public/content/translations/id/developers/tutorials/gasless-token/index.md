@@ -93,7 +93,7 @@ Identitas pemilik dan sebuah [nonce](https://en.wikipedia.org/wiki/Cryptographic
     bytes32 immutable DOMAIN_SEPARATOR;
 ```
 
-Informasi yang diperlukan untuk memverifikasi [tanda tangan EIP-712](https://eips.ethereum.org/EIPS/eip-712).
+Informasi yang diperlukan untuk memverifikasi tanda tangan EIP-712.
 
 ```solidity
     constructor(address owner_) {
@@ -117,7 +117,7 @@ Sebuah `UserProxy` terikat pada satu alamat pemilik. Ini diperlukan karena ia da
     }
 ```
 
-[Pemisah domain](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator). Ini tidak dapat dihitung pada waktu kompilasi, karena bergantung pada ID rantai dan alamat kontrak. Hal ini membuat UserProxy tidak mungkin tertipu oleh pesan yang disiapkan untuk yang lain.
+Pemisah domain. Ini tidak dapat dihitung pada waktu kompilasi, karena bergantung pada ID rantai dan alamat kontrak. Hal ini membuat UserProxy tidak mungkin tertipu oleh pesan yang disiapkan untuk yang lain.
 
 ```solidity
     event CallResult(address target, bytes returnData);

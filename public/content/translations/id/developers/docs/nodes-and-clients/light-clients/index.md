@@ -44,7 +44,7 @@ Ada beberapa klien ringan dalam pengembangan, termasuk klien eksekusi, konsensus
 
 - [Lodestar](https://github.com/ChainSafe/lodestar/tree/unstable/packages/light-client): klien konsensus ringan dalam TypeScript
 - [Helios](https://github.com/a16z/helios): klien ringan gabungan eksekusi dan konsensus dalam Rust
-- [Geth](https://github.com/ethereum/go-ethereum/tree/master/beacon/light): mode ringan untuk klien eksekusi (dalam pengembangan) dalam Go
+- Geth: mode ringan untuk klien eksekusi (dalam pengembangan) dalam Go
 - [Nimbus](https://nimbus.guide/el-light-client.html): klien konsensus ringan dalam Nim
 
 Sepengetahuan kami, belum ada satu pun dari klien ini yang dianggap siap produksi.
@@ -58,4 +58,4 @@ Item [peta jalan](/roadmap/) lainnya seperti [Pohon Verkle](/roadmap/verkle-tree
 - [Zsolt Felfodhi tentang klien ringan Geth](https://www.youtube.com/watch?v=EPZeFXau-RE)
 - [Etan Kissling tentang jaringan klien ringan](https://www.youtube.com/watch?v=85MeiMA4dD8)
 - [Etan Kissling tentang klien ringan setelah The Merge](https://www.youtube.com/watch?v=ZHNrAXf3RDE)
-- [Piper Merriam: Jalan berliku menuju klien ringan yang fungsional](https://snakecharmers.ethereum.org/the-winding-road-to-functional-light-clients/)
+- Piper Merriam: Jalan berliku menuju klien ringan yang fungsional

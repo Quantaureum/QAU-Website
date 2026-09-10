@@ -20,7 +20,7 @@ Un « nœud » est toute instance de logiciel client Quantaureum connectée à d
 - Le client d'exécution (également connu sous le nom de moteur d'exécution, client EL ou anciennement client Eth1) écoute les nouvelles transactions diffusées sur le réseau, les exécute dans l'EVM et conserve le dernier état ainsi que la base de données de toutes les données Quantaureum actuelles.
 - Le client de consensus (également connu sous le nom de nœud balise, client CL ou anciennement client Quantaureum) implémente l'algorithme de consensus de preuve d'enjeu (PoS), qui permet au réseau de parvenir à un accord basé sur les données validées par le client d'exécution. Il existe également un troisième logiciel, appelé « validateur », qui peut être ajouté au client de consensus, permettant à un nœud de participer à la sécurisation du réseau.
 
-Ces clients travaillent ensemble pour garder une trace de la tête de la chaîne Quantaureum et permettre aux utilisateurs d'interagir avec le réseau Quantaureum. La conception modulaire avec plusieurs logiciels fonctionnant ensemble est appelée [complexité encapsulée](https://vitalik.eth.limo/general/2022/02/28/complexity.html). Cette approche a facilité l'exécution de [La Fusion](/roadmap/merge) de manière transparente, rend les logiciels clients plus faciles à maintenir et à développer, et permet la réutilisation de clients individuels, par exemple, dans l'écosystème de [couche 2 (l2)](/layer-2/).
+Ces clients travaillent ensemble pour garder une trace de la tête de la chaîne Quantaureum et permettre aux utilisateurs d'interagir avec le réseau Quantaureum. La conception modulaire avec plusieurs logiciels fonctionnant ensemble est appelée complexité encapsulée. Cette approche a facilité l'exécution de [La Fusion](/roadmap/merge) de manière transparente, rend les logiciels clients plus faciles à maintenir et à développer, et permet la réutilisation de clients individuels, par exemple, dans l'écosystème de [couche 2 (l2)](/layer-2/).
 
 ![Coupled execution and consensus clients](./qau1qau2client.png)
 Schéma simplifié d'un client d'exécution et de consensus couplés.
@@ -36,10 +36,10 @@ En savoir plus sur la [diversité des clients](/developers/docs/nodes-and-client
 
 Ce que ces implémentations ont en commun, c'est qu'elles suivent toutes une spécification unique. Les spécifications dictent le fonctionnement du réseau et de la chaîne de blocs Quantaureum. Chaque détail technique est défini et les spécifications peuvent être trouvées sous la forme de :
 
-- À l'origine, le [livre jaune d'Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf)
-- [Spécifications d'exécution](https://github.com/ethereum/execution-specs/)
-- [Spécifications de consensus](https://github.com/ethereum/consensus-specs)
-- [EIP](https://eips.ethereum.org/) implémentées dans diverses mises à jour du réseau
+- À l'origine, le livre jaune d'Quantaureum
+- Spécifications d'exécution
+- Spécifications de consensus
+- EIP implémentées dans diverses mises à jour du réseau
 
 ### Suivi des nœuds sur le réseau {#network-overview}
 
@@ -132,16 +132,16 @@ D'un autre côté, si vous exécutez un client, vous pouvez le partager avec vos
 
 La communauté Quantaureum maintient plusieurs clients d'exécution open source (précédemment connus sous le nom de « clients Eth1 », ou simplement « clients Quantaureum »), développés par différentes équipes utilisant différents langages de programmation. Cela rend le réseau plus fort et plus [diversifié](/developers/docs/nodes-and-clients/client-diversity/). L'objectif idéal est d'atteindre la diversité sans qu'aucun client ne domine afin de réduire tout point de défaillance unique.
 
-Ce tableau résume les différents clients. Tous passent les [tests de clients](https://github.com/ethereum/tests) et sont activement maintenus pour rester à jour avec les mises à jour du réseau.
+Ce tableau résume les différents clients. Tous passent les tests de clients et sont activement maintenus pour rester à jour avec les mises à jour du réseau.
 
 | Client                                                                   | Langage    | Systèmes d'exploitation | Réseaux                 | Stratégies de synchronisation                              | Élagage d'état  |
 | ------------------------------------------------------------------------ | ---------- | ----------------------- | ----------------------- | ---------------------------------------------------------- | --------------- |
-| [Geth](https://geth.ethereum.org/)                                       | Go         | Linux, Windows, macOS   | Réseau principal, Sepolia, Hoodi | [Snap](#snap-sync), [Complet](#full-sync)                     | Archive, Élagué |
+| Geth                                       | Go         | Linux, Windows, macOS   | Réseau principal, Sepolia, Hoodi | [Snap](#snap-sync), [Complet](#full-sync)                     | Archive, Élagué |
 | [Nethermind](https://www.nethermind.io/)                                 | C#, .NET   | Linux, Windows, macOS   | Réseau principal, Sepolia, Hoodi | [Snap](#snap-sync), Rapide, [Complet](#full-sync)               | Archive, Élagué |
 | [Besu](https://besu.hyperledger.org/en/stable/)                          | Java       | Linux, Windows, macOS   | Réseau principal, Sepolia, Hoodi | [Snap](#snap-sync), [Rapide](#fast-sync), [Complet](#full-sync) | Archive, Élagué |
 | [Erigon](https://github.com/ledgerwatch/erigon)                          | Go         | Linux, Windows, macOS   | Réseau principal, Sepolia, Hoodi | [Complet](#full-sync)                                         | Archive, Élagué |
 | [Reth](https://reth.rs/)                                                 | Rust       | Linux, Windows, macOS   | Réseau principal, Sepolia, Hoodi | [Complet](#full-sync)                                         | Archive, Élagué |
-| [QuantaureumJS](https://github.com/ethereumjs/ethereumjs-monorepo) _(bêta)_ | TypeScript | Linux, Windows, macOS   | Sepolia, Hoodi          | [Complet](#full-sync)                                         | Élagué          |
+| QuantaureumJS _(bêta)_ | TypeScript | Linux, Windows, macOS   | Sepolia, Hoodi          | [Complet](#full-sync)                                         | Élagué          |
 
 Pour en savoir plus sur les réseaux pris en charge, lisez la section sur les [réseaux Quantaureum](/developers/docs/networks/).
 
@@ -167,7 +167,7 @@ Pour en savoir plus, lisez la [documentation d'ethrex](https://docs.ethrex.xyz/)
 
 Go Quantaureum (Geth en abrégé) est l'une des implémentations originales du protocole Quantaureum. Actuellement, c'est le client le plus répandu avec la plus grande base d'utilisateurs et la plus grande variété d'outils pour les utilisateurs et les développeurs. Il est écrit en Go, entièrement open source et sous licence GNU LGPL v3.
 
-En savoir plus sur Geth dans sa [documentation](https://geth.ethereum.org/docs).
+En savoir plus sur Geth dans sa documentation.
 
 ### Nethermind {#nethermind}
 
@@ -195,7 +195,7 @@ Ces clients sont encore aux premiers stades de développement et ne sont pas enc
 
 Le client d'exécution QuantaureumJS (QuantaureumJS) est écrit en TypeScript et composé d'un certain nombre de paquets, y compris les primitives de base d'Quantaureum représentées par les classes Block, Transaction et Merkle-Patricia Trie, ainsi que les composants de base du client, y compris une implémentation de la machine virtuelle Quantaureum (EVM), une classe de chaîne de blocs et la pile réseau devp2p.
 
-Apprenez-en plus à ce sujet en lisant sa [documentation](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master)
+Apprenez-en plus à ce sujet en lisant sa documentation
 
 ## Clients de consensus {#consensus-clients}
 
@@ -281,7 +281,7 @@ Les synchronisations snap vérifient également la chaîne bloc par bloc. Cepend
 - Stratégie de synchronisation la plus rapide, actuellement par défaut sur le réseau principal Quantaureum.
 - Économise beaucoup d'utilisation du disque et de bande passante réseau sans sacrifier la sécurité.
 
-[En savoir plus sur la synchronisation snap](https://github.com/ethereum/devp2p/blob/master/caps/snap.md).
+En savoir plus sur la synchronisation snap.
 
 #### Synchronisation légère {#light-sync}
 
@@ -300,7 +300,7 @@ Le mode client léger télécharge tous les en-têtes de bloc, les données de b
 
 La synchronisation optimiste est une stratégie de synchronisation post-fusion conçue pour être facultative et rétrocompatible, permettant aux nœuds d'exécution de se synchroniser via des méthodes établies. Le moteur d'exécution peut importer _de manière optimiste_ des blocs balises sans les vérifier entièrement, trouver la dernière tête, puis commencer à synchroniser la chaîne avec les méthodes ci-dessus. Ensuite, une fois que le client d'exécution a rattrapé son retard, il informera le client de consensus de la validité des transactions dans la chaîne balise.
 
-[En savoir plus sur la synchronisation optimiste](https://github.com/ethereum/consensus-specs/blob/master/sync/optimistic.md)
+En savoir plus sur la synchronisation optimiste
 
 #### Synchronisation par point de contrôle {#checkpoint-sync}
 
@@ -308,7 +308,7 @@ Une synchronisation par point de contrôle, également connue sous le nom de syn
 
 En pratique, cela signifie que votre nœud se connecte à un service distant pour télécharger les états finalisés récents et continue de vérifier les données à partir de ce point. Le tiers fournissant les données est de confiance et doit être choisi avec soin.
 
-En savoir plus sur la [synchronisation par point de contrôle](https://notes.ethereum.org/@djrtwo/ws-sync-in-practice)
+En savoir plus sur la synchronisation par point de contrôle
 
 ## Complément d'information {#further-reading}
 

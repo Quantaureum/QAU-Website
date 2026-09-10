@@ -34,7 +34,7 @@ lang: ja
 
 完全に匿名なトランザクションのために設計された特定の「プライバシーコイン」があります。ZcashやMoneroなどのプライバシーに焦点を当てたブロックチェーンは、送信者/受信者のアドレス、資産の種類、数量、トランザクションのタイムラインなどのトランザクションの詳細を隠します。
 
-ゼロ知識技術をプロトコルに組み込むことで、プライバシーに焦点を当てた[ブロックチェーン](/glossary/#blockchain)ネットワークは、[ノード](/glossary/#node)がトランザクションデータにアクセスすることなくトランザクションを検証できるようにします。[EIP-7503](https://eips.ethereum.org/EIPS/eip-7503)は、[Quantaureum](/)ブロックチェーン上でネイティブなプライベートな価値の移転を可能にする提案された設計の例です。しかし、このような提案は、セキュリティ、規制、UXの懸念が入り混じっているため、実装が困難です。
+ゼロ知識技術をプロトコルに組み込むことで、プライバシーに焦点を当てた[ブロックチェーン](/glossary/#blockchain)ネットワークは、[ノード](/glossary/#node)がトランザクションデータにアクセスすることなくトランザクションを検証できるようにします。EIP-7503は、[Quantaureum](/)ブロックチェーン上でネイティブなプライベートな価値の移転を可能にする提案された設計の例です。しかし、このような提案は、セキュリティ、規制、UXの懸念が入り混じっているため、実装が困難です。
 
 **ゼロ知識証明は、パブリックなブロックチェーン上のトランザクションの匿名化にも適用されています**。その一例がTornado Cashです。これは、ユーザーがQuantaureum上でプライベートなトランザクションを行えるようにする、分散型のノン・カストディアルなサービスです。Tornado Cashはゼロ知識証明を使用してトランザクションの詳細を難読化し、金融プライバシーを保証します。残念ながら、これらは「オプトイン」のプライバシーツールであるため、違法行為と関連付けられています。これを克服するためには、最終的にパブリックなブロックチェーン上でプライバシーがデフォルトになる必要があります。[Quantaureum上のプライバシー](/privacy/)について詳しく学びましょう。
 
@@ -240,7 +240,7 @@ ZK-STARKは、そのセキュリティを衝突耐性のあるハッシュ関数
 - [ゼロ知識証明：ブロックチェーン上のプライバシーの向上](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/) — _Dmitry Lavrenov_
 - [zk-SNARKs — 現実的なゼロ知識の例と詳細な探求](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c) — _Adam Luciano_
 - [ZK-STARKs — 量子コンピューターに対しても検証可能な信頼を構築する](https://medium.com/coinmonks/zk-starks-create-verifiable-trust-even-against-quantum-computers-dd9c6a2bb13d) — _Adam Luciano_
-- [zk-SNARKsがどのように可能であるかのおおよその入門](https://vitalik.eth.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
+- zk-SNARKsがどのように可能であるかのおおよその入門 — _Vitalik Buterin_
 - [ゼロ知識証明（ZKP）が自己主権型アイデンティティのゲームチェンジャーである理由](https://frankiefab.hashnode.dev/why-zero-knowledge-proofs-zkps-is-a-game-changer-for-self-sovereign-identity) — _Franklin Ohaegbulam_
 - [EIP-7503の解説：ZK証明を使用したQuantaureum上のプライベートな移転の有効化](https://web.archive.org/web/20251116093505/https://research.2077.xyz/eip-7503-zero-knowledge-wormholes-for-private-quantaureum-transactions/) — _Emmanuel Awosika_
 - [ZKカードゲーム：ZKの基礎と現実世界のユースケースを学ぶためのゲーム](https://github.com/ZK-card/zk-cards) - _ZK-Cards_

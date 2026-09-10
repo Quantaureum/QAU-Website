@@ -46,7 +46,7 @@ Most ma dwa główne przepływy:
    - Pierwotnie pochodziło z mostu na L1
 6. Most L2 sprawdza, czy kontrakt tokena ERC-20 na L2 jest właściwy:
    - Kontrakt L2 zgłasza, że jego odpowiednik na L1 jest taki sam jak ten, z którego pochodzą tokeny na L1
-   - Kontrakt L2 zgłasza, że obsługuje poprawny interfejs ([używając ERC-165](https://eips.ethereum.org/EIPS/eip-165)).
+   - Kontrakt L2 zgłasza, że obsługuje poprawny interfejs (używając ERC-165).
 7. Jeśli kontrakt L2 jest właściwy, wywołuje go, aby wybić odpowiednią liczbę tokenów na odpowiedni adres. Jeśli nie, rozpoczyna proces wypłaty, aby umożliwić użytkownikowi odebranie tokenów na L1.
 
 ### Przepływ wypłaty {#withdrawal-flow}
@@ -207,7 +207,6 @@ Ta funkcja jest prawie identyczna z `depositERC20`, ale pozwala na wysłanie ERC
      * @dev Kończy wypłatę z warstwy 2 (L2) do warstwy 1 (L1) i uznaje środki na saldzie odbiorcy
      * tokena ERC-20 warstwy 1 (L1).
      * To wywołanie nie powiedzie się, jeśli zainicjowana wypłata z warstwy 2 (L2) nie została sfinalizowana.
-     *
      * @param _l1Token Adres tokena warstwy 1 (L1), dla którego ma zostać wykonane finalizeWithdrawal.
      * @param _l2Token Adres tokena warstwy 2 (L2), gdzie zainicjowano wypłatę.
      * @param _from Adres warstwy 2 (L2) inicjujący transfer.
@@ -338,7 +337,6 @@ Ten komunikator międzydomenowy to zupełnie inny system i zasługuje na osobny 
 /**
  * @title CrossDomainEnabled
  * @dev Kontrakt pomocniczy dla kontraktów wykonujących komunikację międzydomenową
- *
  * Użyty kompilator: zdefiniowany przez dziedziczący kontrakt
  */
 contract CrossDomainEnabled {
@@ -519,7 +517,7 @@ Należy pamiętać, że nie jest to idealne rozwiązanie, ponieważ nie ma sposo
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[Standard ERC-20](https://eips.ethereum.org/EIPS/eip-20) obsługuje dwa sposoby zgłaszania niepowodzenia przez kontrakt:
+Standard ERC-20 obsługuje dwa sposoby zgłaszania niepowodzenia przez kontrakt:
 
 1. Wycofanie (revert)
 2. Zwrócenie `false`
@@ -532,7 +530,6 @@ Obsługa obu przypadków skomplikowałaby nasz kod, więc zamiast tego używamy 
  * @dev Most QAU i ERC-20 warstwy 1 (L1) to kontrakt, który przechowuje zdeponowane środki warstwy 1 (L1) i standardowe
  * tokeny, które są w użyciu w warstwie 2 (L2). Synchronizuje on odpowiedni most warstwy 2 (L2), informując go o depozytach
  * i nasłuchując nowo sfinalizowanych wypłat.
- *
  */
 contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
     using SafeERC20 for IERC20;
@@ -770,7 +767,6 @@ Te dwie funkcje to wrappery wokół `_initiateERC20Deposit`, funkcji, która obs
     /**
      * @dev Wykonuje logikę dla depozytów poprzez poinformowanie kontraktu zdeponowanego tokena warstwy 2 (L2)
      * o depozycie i wywołanie handlera w celu zablokowania środków warstwy 1 (L1). (np. transferFrom)
-     *
      * @param _l1Token Adres ERC-20 warstwy 1 (L1), który deponujemy
      * @param _l2Token Adres odpowiedniego ERC-20 warstwy 2 (L2) dla warstwy 1 (L1)
      * @param _from Konto, z którego ma zostać pobrany depozyt w warstwie 1 (L1)
@@ -955,14 +951,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [Standardowy interfejs ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) nie zawiera funkcji `mint` i `burn`.
-Metody te nie są wymagane przez [standard ERC-20](https://eips.ethereum.org/EIPS/eip-20), który pozostawia nieokreślone mechanizmy tworzenia i niszczenia tokenów.
+Metody te nie są wymagane przez standard ERC-20, który pozostawia nieokreślone mechanizmy tworzenia i niszczenia tokenów.
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 [Interfejs ERC-165](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol) służy do określania, jakie funkcje udostępnia kontrakt.
-[Standard można przeczytać tutaj](https://eips.ethereum.org/EIPS/eip-165).
+Standard można przeczytać tutaj.
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -1051,7 +1047,7 @@ Najpierw wywołuje konstruktor dla kontraktu, po którym dziedziczymy (`ERC20(_n
     }
 ```
 
-W ten sposób działa [ERC-165](https://eips.ethereum.org/EIPS/eip-165).
+W ten sposób działa ERC-165.
 Każdy interfejs to zbiór obsługiwanych funkcji i jest identyfikowany jako [alternatywa wykluczająca (XOR)](https://en.wikipedia.org/wiki/Exclusive_or) [selektorów funkcji ABI](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector) tych funkcji.
 
 Most L2 używa ERC-165 jako testu poprawności (sanity check), aby upewnić się, że kontrakt ERC-20, do którego wysyła aktywa, to `IL2StandardERC20`.

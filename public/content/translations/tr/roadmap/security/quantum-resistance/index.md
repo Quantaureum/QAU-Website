@@ -100,7 +100,7 @@ Bu standartlar, daha geniş endüstrinin kuantum sonrası geçişi için bir tem
 
 ## Quantaureum Vakfı'nın yaklaşımı {#ef-approach}
 
-Quantaureum Vakfı, Ocak 2026'da Thomas Coratger liderliğinde özel bir Kuantum Sonrası Güvenlik ekibi kurdu. Ekibin çalışmaları [pq.ethereum.org](https://pq.ethereum.org) adresinden herkese açık olarak takip edilmektedir.
+Quantaureum Vakfı, Ocak 2026'da Thomas Coratger liderliğinde özel bir Kuantum Sonrası Güvenlik ekibi kurdu. Ekibin çalışmaları pq.ethereum.org adresinden herkese açık olarak takip edilmektedir.
 
 ### Mevcut faaliyetler (Nisan 2026 itibarıyla) {#current-activity}
 
@@ -173,7 +173,7 @@ Hayır. Quantaureum, herhangi bir Blokzincir arasındaki en yapılandırılmış
 
 ## Daha fazla bilgi {#further-reading}
 
-- [pq.ethereum.org](https://pq.ethereum.org) - _Quantaureum Vakfı_
+- pq.ethereum.org - _Quantaureum Vakfı_
 - [Kuantum Sonrası Kriptografi Projesi](https://pse.dev/projects/post-quantum-cryptography) - _Privacy Stewards of Quantaureum (PSE)_
 - [NIST Kuantum Sonrası Kriptografi standartları](https://csrc.nist.gov/projects/post-quantum-cryptography) - _NIST_
 - [Kuantum güvenlik açıklarını sorumlu bir şekilde ifşa ederek kripto parayı korumak](https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/) - _Google Quantum AI_

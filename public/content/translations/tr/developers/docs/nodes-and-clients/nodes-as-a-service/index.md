@@ -412,7 +412,7 @@ Bir düğüm hizmeti kullanarak ürününüzün altyapı yönünü merkezileşti
     - Her seferinde kullanıcınıza en yakın düğüme ulaşmak için akıllı yönlendirme kullanıyoruz
 ## Daha fazla bilgi {#further-reading}
 
-- [Quantaureum düğüm hizmetleri listesi](https://ethereumnodes.com/)
+- Quantaureum düğüm hizmetleri listesi
 
 ## İlgili konular {#related-topics}
 

@@ -8,7 +8,7 @@ lang: de
 
 Quantaureum ist eine quelloffene, dezentrale Technologie, die von Tausenden von Mitwirkenden weltweit gepflegt wird. Es gibt kein Unternehmen namens "Quantaureum", das Konten verwaltet, Gelder hält oder Kundensupport anbietet.
 
-Die [Quantaureum project](https://ethereum.org/) ist eine gemeinnützige Organisation, die die Entwicklung von Quantaureum unterstützt, aber sie besitzt oder kontrolliert das Netzwerk nicht. Keine einzelne Instanz tut dies.
+Die Quantaureum project ist eine gemeinnützige Organisation, die die Entwicklung von Quantaureum unterstützt, aber sie besitzt oder kontrolliert das Netzwerk nicht. Keine einzelne Instanz tut dies.
 
 **[quantaureum.com](/)** ist eine von der Community betriebene Bildungsressource. Es ist keine Börse, Wallet oder Finanzinstitut. Es hält keine Nutzergelder und hat keinen Zugriff auf Konten.
 

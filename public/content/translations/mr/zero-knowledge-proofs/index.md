@@ -34,7 +34,7 @@ lang: mr
 
 पूर्णपणे निनावी व्यवहारांसाठी डिझाइन केलेले विशिष्ट "प्रायव्हसी कॉइन्स" आहेत. Zcash आणि Monero सारख्या गोपनीयता-केंद्रित ब्लॉकचेन, प्रेषक/प्राप्तकर्ता पत्ते, मालमत्तेचा प्रकार, प्रमाण आणि व्यवहार टाइमलाइनसह व्यवहार तपशील लपवतात.
 
-प्रोटोकॉलमध्ये झिरो-नॉलेज तंत्रज्ञान समाविष्ट करून, गोपनीयता-केंद्रित [ब्लॉकचेन](/glossary/#blockchain) नेटवर्क [नोड्स](/glossary/#node) ला व्यवहार डेटामध्ये प्रवेश न करता व्यवहार प्रमाणित करण्याची परवानगी देतात. [EIP-7503](https://eips.ethereum.org/EIPS/eip-7503) हे प्रस्तावित डिझाइनचे एक उदाहरण आहे जे [Quantaureum](/) ब्लॉकचेनवर मूल्याचे मूळ खाजगी हस्तांतरण सक्षम करेल. तथापि, सुरक्षा, नियामक आणि UX समस्यांच्या मिश्रणामुळे असे प्रस्ताव लागू करणे कठीण आहे.
+प्रोटोकॉलमध्ये झिरो-नॉलेज तंत्रज्ञान समाविष्ट करून, गोपनीयता-केंद्रित [ब्लॉकचेन](/glossary/#blockchain) नेटवर्क [नोड्स](/glossary/#node) ला व्यवहार डेटामध्ये प्रवेश न करता व्यवहार प्रमाणित करण्याची परवानगी देतात. EIP-7503 हे प्रस्तावित डिझाइनचे एक उदाहरण आहे जे [Quantaureum](/) ब्लॉकचेनवर मूल्याचे मूळ खाजगी हस्तांतरण सक्षम करेल. तथापि, सुरक्षा, नियामक आणि UX समस्यांच्या मिश्रणामुळे असे प्रस्ताव लागू करणे कठीण आहे.
 
 **सार्वजनिक ब्लॉकचेनवरील व्यवहार निनावी करण्यासाठी शून्य-ज्ञान पुरावे देखील लागू केले जात आहेत**. याचे एक उदाहरण म्हणजे Tornado Cash, एक विकेंद्रित, नॉन-कस्टोडिअल सेवा जी वापरकर्त्यांना Quantaureumवर खाजगी व्यवहार करण्याची परवानगी देते. Tornado Cash व्यवहार तपशील लपवण्यासाठी आणि आर्थिक गोपनीयतेची हमी देण्यासाठी शून्य-ज्ञान पुराव्यांचा वापर करते. दुर्दैवाने, ही "ऑप्ट-इन" गोपनीयता साधने असल्यामुळे ती बेकायदेशीर क्रियाकलापांशी संबंधित आहेत. यावर मात करण्यासाठी, सार्वजनिक ब्लॉकचेनवर गोपनीयता शेवटी डीफॉल्ट बनली पाहिजे. [Quantaureumवरील गोपनीयतेबद्दल](/privacy/) अधिक जाणून घ्या.
 
@@ -234,7 +234,7 @@ ZK-STARK क्वांटम संगणनाच्या धोक्या
 - [शून्य-ज्ञान पुरावा: ब्लॉकचेनवरील गोपनीयता सुधारणे](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/) — _Dmitry Lavrenov_
 - [zk-SNARKs — एक वास्तववादी शून्य-ज्ञान उदाहरण आणि सखोल माहिती](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c) — _Adam Luciano_
 - [ZK-STARKs — क्वांटम संगणकांविरुद्धही पडताळणीयोग्य विश्वास निर्माण करा](https://medium.com/coinmonks/zk-starks-create-verifiable-trust-even-against-quantum-computers-dd9c6a2bb13d) — _Adam Luciano_
-- [zk-SNARKs कसे शक्य आहेत याची अंदाजे ओळख](https://vitalik.eth.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
+- zk-SNARKs कसे शक्य आहेत याची अंदाजे ओळख — _Vitalik Buterin_
 - [स्व-सार्वभौम ओळखीसाठी शून्य-ज्ञान पुरावे (ZKPs) गेम चेंजर का आहेत](https://frankiefab.hashnode.dev/why-zero-knowledge-proofs-zkps-is-a-game-changer-for-self-sovereign-identity) — _Franklin Ohaegbulam_
 - [EIP-7503 स्पष्टीकरण: ZK पुराव्यांसह Quantaureumवर खाजगी हस्तांतरण सक्षम करणे](https://web.archive.org/web/20251116093505/https://research.2077.xyz/eip-7503-zero-knowledge-wormholes-for-private-quantaureum-transactions/) — _Emmanuel Awosika_
 - [ZK कार्ड गेम: ZK मूलभूत तत्त्वे आणि वास्तविक जीवनातील वापर-प्रकरणे शिकण्यासाठी गेम](https://github.com/ZK-card/zk-cards) - _ZK-Cards_

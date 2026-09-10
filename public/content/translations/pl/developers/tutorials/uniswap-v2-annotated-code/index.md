@@ -469,7 +469,7 @@ Użyj funkcji `UniswapV2ERC20._mint`, aby faktycznie utworzyć dodatkowe tokeny 
     }
 ```
 
-Jeśli nie ma opłaty, ustaw `kLast` na zero (jeśli jeszcze nim nie jest). Kiedy ten kontrakt był pisany, istniała [funkcja zwrotu gazu](https://eips.ethereum.org/EIPS/eip-3298), która zachęcała kontrakty do zmniejszania ogólnego rozmiaru stanu Quantaureum poprzez zerowanie pamięci, której nie potrzebowały.
+Jeśli nie ma opłaty, ustaw `kLast` na zero (jeśli jeszcze nim nie jest). Kiedy ten kontrakt był pisany, istniała funkcja zwrotu gazu, która zachęcała kontrakty do zmniejszania ogólnego rozmiaru stanu Quantaureum poprzez zerowanie pamięci, której nie potrzebowały.
 Ten kod uzyskuje ten zwrot, gdy jest to możliwe.
 
 #### Funkcje dostępne z zewnątrz {#pair-external}
@@ -629,7 +629,7 @@ Ta funkcja również powinna być wywoływana z [kontraktu peryferyjnego](#unisw
 ```
 
 Zmienne lokalne mogą być przechowywane w pamięci (memory) lub, jeśli nie ma ich zbyt wiele, bezpośrednio na stosie (stack).
-Jeśli możemy ograniczyć ich liczbę, aby użyć stosu, zużywamy mniej gazu. Więcej szczegółów znajdziesz w [żółtej księdze, formalnej specyfikacji Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf), str. 26, równanie 298.
+Jeśli możemy ograniczyć ich liczbę, aby użyć stosu, zużywamy mniej gazu. Więcej szczegółów znajdziesz w żółtej księdze, formalnej specyfikacji Quantaureum, str. 26, równanie 298.
 
 ```solidity
             address _token0 = token0;
@@ -784,7 +784,7 @@ Duże pule płynności są lepsze niż małe, ponieważ mają bardziej stabilne 
         bytes memory bytecode = type(UniswapV2Pair).creationCode;
 ```
 
-Aby utworzyć nowy kontrakt, potrzebujemy kodu, który go tworzy (zarówno funkcji konstruktora, jak i kodu, który zapisuje w pamięci kod bajtowy EVM właściwego kontraktu). Normalnie w Solidity po prostu używamy `addr = new <name of contract>(<constructor parameters>)` i kompilator zajmuje się wszystkim za nas, ale aby mieć deterministyczny adres kontraktu, musimy użyć [kodu operacji CREATE2](https://eips.ethereum.org/EIPS/eip-1014).
+Aby utworzyć nowy kontrakt, potrzebujemy kodu, który go tworzy (zarówno funkcji konstruktora, jak i kodu, który zapisuje w pamięci kod bajtowy EVM właściwego kontraktu). Normalnie w Solidity po prostu używamy `addr = new <name of contract>(<constructor parameters>)` i kompilator zajmuje się wszystkim za nas, ale aby mieć deterministyczny adres kontraktu, musimy użyć kodu operacji CREATE2.
 Kiedy ten kod był pisany, ten kod operacji nie był jeszcze obsługiwany przez Solidity, więc konieczne było ręczne pobrannie kodu. Nie stanowi to już problemu, ponieważ [Solidity teraz obsługuje CREATE2](https://docs.soliditylang.org/en/v0.8.3/control-structures.html#salted-contract-creations-create2).
 
 ```solidity
@@ -840,7 +840,7 @@ Właściciel tokenów podpisuje transakcję, która pozwala komuś innemu na wyp
     bytes32 public constant PERMIT_TYPEHASH = 0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
 ```
 
-Ten hash to [identyfikator typu transakcji](https://eips.ethereum.org/EIPS/eip-712#rationale-for-typehash). Jedynym, który tutaj obsługujemy, jest `Permit` z tymi parametrami.
+Ten hash to identyfikator typu transakcji. Jedynym, który tutaj obsługujemy, jest `Permit` z tymi parametrami.
 
 ```solidity
     mapping(address => uint) public nonces;
@@ -871,7 +871,7 @@ To jest kod do pobrania [identyfikatora łańcucha](https://chainid.network/). U
     }
 ```
 
-Oblicz [separator domeny](https://eips.ethereum.org/EIPS/eip-712#rationale-for-domainseparator) dla EIP-712.
+Oblicz separator domeny dla EIP-712.
 
 ```solidity
     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external {
@@ -912,7 +912,7 @@ Ze skrótu (digest) i podpisu możemy uzyskać adres, który go podpisał, używ
 
 ```
 
-Jeśli wszystko jest w porządku, potraktuj to jako [zatwierdzenie (approve) ERC-20](https://eips.ethereum.org/EIPS/eip-20#approve).
+Jeśli wszystko jest w porządku, potraktuj to jako zatwierdzenie (approve) ERC-20.
 ```
 
 ## Kontrakty peryferyjne {#periphery-contracts}
@@ -1810,7 +1810,7 @@ Posortuj dwa tokeny według adresu, abyśmy mogli uzyskać adres wymiany pary dl
     }
 ```
 
-Ta funkcja oblicza adres wymiany pary dla dwóch tokenów. Ten kontrakt jest tworzony przy użyciu [kodu operacji CREATE2](https://eips.ethereum.org/EIPS/eip-1014), więc możemy obliczyć adres za pomocą tego samego algorytmu, jeśli znamy parametry, których używa. Jest to znacznie tańsze niż pytanie fabryki, a
+Ta funkcja oblicza adres wymiany pary dla dwóch tokenów. Ten kontrakt jest tworzony przy użyciu kodu operacji CREATE2, więc możemy obliczyć adres za pomocą tego samego algorytmu, jeśli znamy parametry, których używa. Jest to znacznie tańsze niż pytanie fabryki, a
 
 ```solidity
     // pobiera i sortuje rezerwy dla pary
@@ -1948,7 +1948,7 @@ Ze względu na kompatybilność wsteczną z tokenami, które zostały utworzone 
     }
 ```
 
-Ta funkcja implementuje [funkcjonalność transferu ERC-20](https://eips.ethereum.org/EIPS/eip-20#transfer), która pozwala kontu na wydanie limitu wydatków zapewnionego przez inne konto.
+Ta funkcja implementuje funkcjonalność transferu ERC-20, która pozwala kontu na wydanie limitu wydatków zapewnionego przez inne konto.
 
 ```solidity
 
@@ -1967,7 +1967,7 @@ Ta funkcja implementuje [funkcjonalność transferu ERC-20](https://eips.ethereu
     }
 ```
 
-Ta funkcja implementuje [funkcjonalność transferFrom ERC-20](https://eips.ethereum.org/EIPS/eip-20#transferfrom), która pozwala kontu na wydanie limitu wydatków zapewnionego przez inne konto.
+Ta funkcja implementuje funkcjonalność transferFrom ERC-20, która pozwala kontu na wydanie limitu wydatków zapewnionego przez inne konto.
 
 ```solidity
 

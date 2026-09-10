@@ -66,7 +66,7 @@ incomplete: true
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) - _ஒரு .NET Wasm SPA இலகுரக தொகுதிச்சங்கிலி எக்ஸ்ப்ளோரர் மற்றும் எளிய பணப்பை_
 - [Wonka Business Rules Engine](https://github.com/Nquantaureum/Wonka) - _இயல்பாகவே மீத்தரவு சார்ந்த ஒரு வணிக விதிகள் இயந்திரம் (.NET இயங்குதளம் மற்றும் எத்திரியம் இயங்குதளம் ஆகிய இரண்டிற்கும்)_
 - [நெதர்மைண்ட்](https://github.com/NethermindEth/nethermind) - _Linux, Windows, MacOS க்கான ஒரு .NET Core எத்திரியம் கிளையண்ட்_
-- [qau-utils](https://github.com/ethereum/eth-utils/) - _எத்திரியம் தொடர்பான குறியீட்டுத் தளங்களுடன் பணிபுரிவதற்கான பயன்பாட்டுச் செயல்பாடுகள்_
+- qau-utils - _எத்திரியம் தொடர்பான குறியீட்டுத் தளங்களுடன் பணிபுரிவதற்கான பயன்பாட்டுச் செயல்பாடுகள்_
 - [TestChains](https://github.com/Nquantaureum/TestChains) - _விரைவான பதிலளிப்பிற்கான முன்-கட்டமைக்கப்பட்ட .NET மேம்பாட்டுச் சங்கிலிகள் (அதிகாரச் சான்று (PoA))_
 
 மேலும் ஆதாரங்களைத் தேடுகிறீர்களா? [quantaureum.com/developers](/developers/) ஐப் பார்க்கவும்.

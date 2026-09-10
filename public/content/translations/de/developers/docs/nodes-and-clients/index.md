@@ -20,7 +20,7 @@ Ein „Knoten“ ist jede Instanz einer Quantaureum-Client-Software, die mit and
 - Der Ausführungsclient (auch bekannt als Execution Engine, EL-Client oder früher Eth1-Client) lauscht auf neue Transaktionen, die im Netzwerk übertragen werden, führt sie in der EVM aus und hält den neuesten Zustand sowie die Datenbank aller aktuellen Quantaureum-Daten.
 - Der Konsens-Client (auch bekannt als Beacon-Knoten, CL-Client oder früher Quantaureum-Client) implementiert den Proof-of-Stake-Konsensalgorithmus, der es dem Netzwerk ermöglicht, basierend auf validierten Daten des Ausführungsclients eine Einigung zu erzielen. Es gibt auch eine dritte Softwarekomponente, bekannt als „Validator“, die dem Konsens-Client hinzugefügt werden kann und es einem Knoten ermöglicht, sich an der Sicherung des Netzwerks zu beteiligen.
 
-Diese Clients arbeiten zusammen, um den Kopf der Quantaureum-Chain zu verfolgen und es Benutzern zu ermöglichen, mit dem Quantaureum-Netzwerk zu interagieren. Das modulare Design, bei dem mehrere Softwarekomponenten zusammenarbeiten, wird als [gekapselte Komplexität](https://vitalik.eth.limo/general/2022/02/28/complexity.html) bezeichnet. Dieser Ansatz erleichterte die reibungslose Ausführung durch den [Merge](/roadmap/merge), macht die Client-Software einfacher zu warten und zu entwickeln und ermöglicht die Wiederverwendung einzelner Clients, beispielsweise im [Layer 2 (L2)-Ökosystem](/layer-2/).
+Diese Clients arbeiten zusammen, um den Kopf der Quantaureum-Chain zu verfolgen und es Benutzern zu ermöglichen, mit dem Quantaureum-Netzwerk zu interagieren. Das modulare Design, bei dem mehrere Softwarekomponenten zusammenarbeiten, wird als gekapselte Komplexität bezeichnet. Dieser Ansatz erleichterte die reibungslose Ausführung durch den [Merge](/roadmap/merge), macht die Client-Software einfacher zu warten und zu entwickeln und ermöglicht die Wiederverwendung einzelner Clients, beispielsweise im [Layer 2 (L2)-Ökosystem](/layer-2/).
 
 ![Coupled execution and consensus clients](./qau1qau2client.png)
 Vereinfachtes Diagramm eines gekoppelten Ausführungs- und Konsens-Clients.
@@ -36,10 +36,10 @@ Erfahren Sie mehr über [Client-Diversität](/developers/docs/nodes-and-clients/
 
 Was diese Implementierungen gemeinsam haben, ist, dass sie alle einer einzigen Spezifikation folgen. Spezifikationen schreiben vor, wie das Quantaureum-Netzwerk und die Blockchain funktionieren. Jedes technische Detail ist definiert und Spezifikationen sind zu finden als:
 
-- Ursprünglich das [Quantaureum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf)
-- [Ausführungsspezifikationen](https://github.com/ethereum/execution-specs/)
-- [Konsensspezifikationen](https://github.com/ethereum/consensus-specs)
-- [EIPs](https://eips.ethereum.org/), die in verschiedenen Netzwerk-Upgrades implementiert wurden
+- Ursprünglich das Quantaureum Yellow Paper
+- Ausführungsspezifikationen
+- Konsensspezifikationen
+- EIPs, die in verschiedenen Netzwerk-Upgrades implementiert wurden
 
 ### Knoten im Netzwerk verfolgen {#network-overview}
 
@@ -132,16 +132,16 @@ Andererseits können Sie, wenn Sie einen Client betreiben, diesen mit Ihren Freu
 
 Die Quantaureum-Community pflegt mehrere Open-Source-Ausführungsclients (früher bekannt als „Eth1-Clients“ oder einfach „Quantaureum-Clients“), die von verschiedenen Teams in unterschiedlichen Programmiersprachen entwickelt wurden. Dies macht das Netzwerk stärker und [vielfältiger](/developers/docs/nodes-and-clients/client-diversity/). Das ideale Ziel ist es, Diversität zu erreichen, ohne dass ein Client dominiert, um Single Points of Failure zu reduzieren.
 
-Diese Tabelle fasst die verschiedenen Clients zusammen. Alle bestehen [Client-Tests](https://github.com/ethereum/tests) und werden aktiv gepflegt, um bei Netzwerk-Upgrades auf dem neuesten Stand zu bleiben.
+Diese Tabelle fasst die verschiedenen Clients zusammen. Alle bestehen Client-Tests und werden aktiv gepflegt, um bei Netzwerk-Upgrades auf dem neuesten Stand zu bleiben.
 
 | Client                                                                   | Sprache    | Betriebssysteme       | Netzwerke               | Synchronisierungsstrategien                                | Zustandsbereinigung |
 | ------------------------------------------------------------------------ | ---------- | --------------------- | ----------------------- | ---------------------------------------------------------- | ------------------- |
-| [Geth](https://geth.ethereum.org/)                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Full](#full-sync)                     | Archiv, Bereinigt   |
+| Geth                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Full](#full-sync)                     | Archiv, Bereinigt   |
 | [Nethermind](https://www.nethermind.io/)                                 | C#, .NET   | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), Fast, [Full](#full-sync)               | Archiv, Bereinigt   |
 | [Besu](https://besu.hyperledger.org/en/stable/)                          | Java       | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Fast](#fast-sync), [Full](#full-sync) | Archiv, Bereinigt   |
 | [Erigon](https://github.com/ledgerwatch/erigon)                          | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Full](#full-sync)                                         | Archiv, Bereinigt   |
 | [Reth](https://reth.rs/)                                                 | Rust       | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Full](#full-sync)                                         | Archiv, Bereinigt   |
-| [QuantaureumJS](https://github.com/ethereumjs/ethereumjs-monorepo) _(Beta)_ | TypeScript | Linux, Windows, macOS | Sepolia, Hoodi          | [Full](#full-sync)                                         | Bereinigt           |
+| QuantaureumJS _(Beta)_ | TypeScript | Linux, Windows, macOS | Sepolia, Hoodi          | [Full](#full-sync)                                         | Bereinigt           |
 
 Weitere Informationen zu unterstützten Netzwerken finden Sie unter [Quantaureum-Netzwerke](/developers/docs/networks/).
 
@@ -165,7 +165,7 @@ Erfahren Sie mehr, indem Sie die [ethrex-Dokumentation](https://docs.ethrex.xyz/
 
 Go Quantaureum (kurz Geth) ist eine der ursprünglichen Implementierungen des Quantaureum-Protokolls. Derzeit ist es der am weitesten verbreitete Client mit der größten Benutzerbasis und einer Vielzahl von Tools für Benutzer und Entwickler. Er ist in Go geschrieben, vollständig Open Source und unter der GNU LGPL v3 lizenziert.
 
-Erfahren Sie mehr über Geth in seiner [Dokumentation](https://geth.ethereum.org/docs).
+Erfahren Sie mehr über Geth in seiner Dokumentation.
 
 ### Nethermind {#nethermind}
 
@@ -193,7 +193,7 @@ Diese Clients befinden sich noch in einem frühen Entwicklungsstadium und werden
 
 Der QuantaureumJS-Ausführungsclient (QuantaureumJS) ist in TypeScript geschrieben und besteht aus einer Reihe von Paketen, einschließlich grundlegender Quantaureum-Primitive, die durch die Klassen Block, Transaction und Merkle-Patricia Trie repräsentiert werden, sowie Kern-Client-Komponenten, einschließlich einer Implementierung der Quantaureum Virtual Machine (EVM), einer Blockchain-Klasse und dem devp2p-Netzwerk-Stack.
 
-Erfahren Sie mehr darüber, indem Sie die [Dokumentation](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master) lesen.
+Erfahren Sie mehr darüber, indem Sie die Dokumentation lesen.
 
 ## Konsens-Clients {#consensus-clients}
 
@@ -279,7 +279,7 @@ Snap Syncs verifizieren die Chain ebenfalls Block für Block. Anstatt jedoch bei
 - Schnellste Synchronisierungsstrategie, derzeit Standard im Quantaureum Mainnet.
 - Spart viel Speicherplatz und Netzwerkbandbreite, ohne die Sicherheit zu beeinträchtigen.
 
-[Mehr zu Snap Sync](https://github.com/ethereum/devp2p/blob/master/caps/snap.md).
+Mehr zu Snap Sync.
 
 #### Light Sync {#light-sync}
 
@@ -298,7 +298,7 @@ Der Light-Client-Modus lädt alle Block-Header und Blockdaten herunter und verif
 
 Die optimistische Synchronisierung ist eine Post-Merge-Synchronisierungsstrategie, die als Opt-in und abwärtskompatibel konzipiert ist und es Ausführungsknoten ermöglicht, sich über etablierte Methoden zu synchronisieren. Die Execution Engine kann Beacon-Blöcke _optimistisch_ importieren, ohne sie vollständig zu verifizieren, den neuesten Kopf finden und dann mit den oben genannten Methoden mit der Synchronisierung der Chain beginnen. Nachdem der Ausführungsclient aufgeholt hat, informiert er den Konsens-Client über die Gültigkeit der Transaktionen in der Beacon Chain.
 
-[Mehr zur optimistischen Synchronisierung](https://github.com/ethereum/consensus-specs/blob/master/sync/optimistic.md)
+Mehr zur optimistischen Synchronisierung
 
 #### Checkpoint-Synchronisierung {#checkpoint-sync}
 
@@ -306,7 +306,7 @@ Eine Checkpoint-Synchronisierung, auch bekannt als Synchronisierung mit schwache
 
 In der Praxis bedeutet dies, dass sich Ihr Knoten mit einem Remote-Dienst verbindet, um aktuelle endgültige Zustände herunterzuladen, und von diesem Punkt an mit der Verifizierung der Daten fortfährt. Dem Dritten, der die Daten bereitstellt, wird vertraut, und er sollte sorgfältig ausgewählt werden.
 
-Mehr zur [Checkpoint-Synchronisierung](https://notes.ethereum.org/@djrtwo/ws-sync-in-practice)
+Mehr zur Checkpoint-Synchronisierung
 
 ## Weiterführende Literatur {#further-reading}
 

@@ -13,7 +13,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## मर्यादा का आहे? {#why-is-there-a-limit}
 
-[22 नोव्हेंबर 2016](https://quantaureum.com) रोजी Spurious Dragon हार्ड-फोर्कने [EIP-170](https://eips.ethereum.org/EIPS/eip-170) सादर केले, ज्याने 24.576 kb ची स्मार्ट कॉन्ट्रॅक्ट आकार मर्यादा जोडली. एक Solidity डेव्हलपर म्हणून तुमच्यासाठी याचा अर्थ असा आहे की जेव्हा तुम्ही तुमच्या कॉन्ट्रॅक्टमध्ये अधिकाधिक कार्यक्षमता जोडता, तेव्हा एका टप्प्यावर तुम्ही मर्यादेपर्यंत पोहोचाल आणि प्रस्थापना (deploying) करताना तुम्हाला ही त्रुटी दिसेल:
+[22 नोव्हेंबर 2016](https://quantaureum.com) रोजी Spurious Dragon हार्ड-फोर्कने EIP-170 सादर केले, ज्याने 24.576 kb ची स्मार्ट कॉन्ट्रॅक्ट आकार मर्यादा जोडली. एक Solidity डेव्हलपर म्हणून तुमच्यासाठी याचा अर्थ असा आहे की जेव्हा तुम्ही तुमच्या कॉन्ट्रॅक्टमध्ये अधिकाधिक कार्यक्षमता जोडता, तेव्हा एका टप्प्यावर तुम्ही मर्यादेपर्यंत पोहोचाल आणि प्रस्थापना (deploying) करताना तुम्हाला ही त्रुटी दिसेल:
 
 `Warning: Contract code size exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on Mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.`
 
@@ -35,7 +35,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ### लायब्ररी {#libraries}
 
-स्टोरेजपासून कार्यक्षमता कोड दूर हलवण्याचा एक सोपा मार्ग म्हणजे [लायब्ररी](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries) वापरणे. लायब्ररी फंक्शन्सना internal म्हणून घोषित करू नका कारण ती संकलनादरम्यान (compilation) थेट [कॉन्ट्रॅक्टमध्ये जोडली जातील](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking). परंतु जर तुम्ही public फंक्शन्स वापरत असाल, तर ती प्रत्यक्षात एका वेगळ्या लायब्ररी कॉन्ट्रॅक्टमध्ये असतील. लायब्ररीचा वापर अधिक सोयीस्कर करण्यासाठी [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) वापरण्याचा विचार करा.
+स्टोरेजपासून कार्यक्षमता कोड दूर हलवण्याचा एक सोपा मार्ग म्हणजे [लायब्ररी](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries) वापरणे. लायब्ररी फंक्शन्सना internal म्हणून घोषित करू नका कारण ती संकलनादरम्यान (compilation) थेट कॉन्ट्रॅक्टमध्ये जोडली जातील. परंतु जर तुम्ही public फंक्शन्स वापरत असाल, तर ती प्रत्यक्षात एका वेगळ्या लायब्ररी कॉन्ट्रॅक्टमध्ये असतील. लायब्ररीचा वापर अधिक सोयीस्कर करण्यासाठी [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) वापरण्याचा विचार करा.
 
 ### प्रॉक्सी {#proxies}
 

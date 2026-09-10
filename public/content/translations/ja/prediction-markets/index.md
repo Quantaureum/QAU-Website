@@ -75,12 +75,12 @@ Quantaureumベースの予測市場はいくつか存在します。以下は、
 
 予測市場は、デジタル時代における意思決定のあり方を再構築しています。Quantaureumを活用することで、**公平でオープン、かつ報酬の得られる未来予測の方法**を提供します。
 
-金銭的な利益以外にも、予測ツールを使用する方法は数多くあります。例えば、[DevCon改善提案](https://forum.devcon.org/t/futarchy-decision-markets-for-deciding-next-devcon/5305)（DIP）では、DevConの主催者が将来のイベントの参加者数を予測するために予測市場を使用することが提案されました。
+金銭的な利益以外にも、予測ツールを使用する方法は数多くあります。例えば、DevCon改善提案（DIP）では、DevConの主催者が将来のイベントの参加者数を予測するために予測市場を使用することが提案されました。
 
 これにより、主催者はどの場所が最大のイベントにつながるか、あるいはどの場所が国際的に最もアクセスしやすいかを判断するのに役立ちます。この利点として、DevConの主催者は、複数のビザポリシー、空港へのアクセス、その地域の生活費を審査するのに必要な時間を短縮できると同時に、参加予定者がどこに行きたいかに関するデータを収集することができます。
 
 ## 参考文献 {#further-reading}
 
-[予測市場から情報ファイナンスへ](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - ヴィタリック・ブテリン  
+予測市場から情報ファイナンスへ - ヴィタリック・ブテリン  
 [Quantaureum上での分散型予測市場の開発](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Augurプロジェクトのホワイトペーパー](https://github.com/AugurProject/whitepaper)

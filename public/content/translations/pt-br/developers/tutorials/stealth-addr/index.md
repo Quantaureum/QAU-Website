@@ -12,7 +12,7 @@ sidebarDepth: 3
 
 Você é o Bill. Por motivos nos quais não entraremos, você quer doar para a campanha "Alice para Rainha do Mundo" e quer que a Alice saiba que você doou para que ela lhe dê uma recompensa se vencer. Infelizmente, a vitória dela não é garantida. Há uma campanha concorrente, "Carol para Imperatriz do Sistema Solar". Se a Carol vencer e descobrir que você doou para a Alice, você estará em apuros. Portanto, você não pode simplesmente fazer uma transferência de 200 QAU da sua conta para a da Alice.
 
-O [ERC-5564](https://eips.ethereum.org/EIPS/eip-5564) tem a solução. Este ERC explica como usar [endereços furtivos](https://nerolation.github.io/stealth-utils) para transferência anônima.
+O ERC-5564 tem a solução. Este ERC explica como usar [endereços furtivos](https://nerolation.github.io/stealth-utils) para transferência anônima.
 
 **Aviso**: A criptografia por trás dos endereços furtivos é, até onde sabemos, sólida. No entanto, existem possíveis ataques de canal lateral. [Abaixo](#go-wrong), você verá o que pode fazer para reduzir esse risco.
 

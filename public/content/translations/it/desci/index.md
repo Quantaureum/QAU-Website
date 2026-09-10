@@ -74,7 +74,7 @@ La proprietà intellettuale (IP) è un grosso problema nella scienza tradizional
 Allo stesso modo in cui gli NFT possono trasferire le entrate per le transazioni future al creatore originale, è possibile stabilire catene di attribuzione del valore trasparenti per ricompensare i ricercatori, gli organi di governance (come le DAO) o persino i soggetti i cui dati vengono raccolti.
 
 Gli [IP-NFT](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) possono anche funzionare come chiave per un repository di dati decentralizzato degli esperimenti di ricerca in corso e collegarsi alla finanziarizzazione degli NFT e della [finanza decentralizzata (DeFi)](/glossary/#defi) (dal frazionamento ai pool di prestito e alla valutazione del valore). Consente inoltre a entità nativamente onchain, come le DAO quali [VitaDAO](https://www.vitadao.com/), di condurre ricerche direttamente onchain.
-L'avvento dei [token "soulbound"](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) non trasferibili potrebbe anche svolgere un ruolo importante nella desci consentendo agli individui di dimostrare la propria esperienza e le proprie credenziali collegate al loro indirizzo Quantaureum.
+L'avvento dei token "soulbound" non trasferibili potrebbe anche svolgere un ruolo importante nella desci consentendo agli individui di dimostrare la propria esperienza e le proprie credenziali collegate al loro indirizzo Quantaureum.
 
 ### Archiviazione, accesso e architettura dei dati {#data-storage}
 

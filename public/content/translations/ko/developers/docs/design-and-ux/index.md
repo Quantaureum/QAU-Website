@@ -16,7 +16,7 @@ Web3에 대한 더 기초적인 이해가 먼저 필요하신가요? [**학습 �
 
 - [Web3에는 더 많은 UX 리서처와 디자이너가 필요합니다(Web3 needs more UX Researchers and Designers)](https://blog.akasha.org/akasha-conversations-9-web3-needs-more-ux-researchers-and-designers) - 현재 디자인 성숙도에 대한 개요
 - [Web3 UX 리서치를 위한 간단한 가이드(A simple guide to UX Research in web3)](https://uxplanet.org/a-complete-guide-to-ux-research-for-web-3-0-products-d6bead20ebb1) - 리서치 수행 방법에 대한 간단한 가이드
-- [Web3에서 UX 결정에 접근하는 방법(How to Approach UX Decisions in Web3)](https://archive.devcon.org/archive/watch/6/data-empathy-how-to-approach-ux-decisions-in-web3/) - 정량적 및 정성적 리서치와 두 가지의 차이점에 대한 간략한 개요 (동영상, 6분)
+- Web3에서 UX 결정에 접근하는 방법(How to Approach UX Decisions in Web3) - 정량적 및 정성적 리서치와 두 가지의 차이점에 대한 간략한 개요 (동영상, 6분)
 - [Web3에서 UX 리서처로 일하기(Being a ux researcher in web3)](https://medium.com/@georgia.rakusen/what-its-like-being-a-user-researcher-in-web3-6a4bcc096849) - Web3에서 UX 리서처로 일하는 것에 대한 개인적인 견해
 
 ## Web3 리서치 연구 {#research-in-web3}
@@ -38,7 +38,7 @@ Web3에 대한 더 기초적인 이해가 먼저 필요하신가요? [**학습 �
 | <Tag status="error">DeFi</Tag>                  | [커버리지 풀(Coverage pools)](https://github.com/threshold-network/UX-User-Research/tree/main/Keep%20Coverage%20Pool)                                                                           |
 | <Tag status="error">DeFi</Tag>                  | [컨센시스: 2022년 DeFi 사용자 리서치 보고서(DeFi User Research Report 2022)](https://cdn2.hubspot.net/hubfs/4795067/ConsenSys%20Codefi-Defi%20User%20ResearchReport.pdf)                                            |
 | <Tag variant="solid">메타버스</Tag>             | [메타버스: 사용자 리서치 보고서(Metaverse: User Research Report)](https://www.politico.com/f/?id=00000187-7685-d820-a7e7-7e85d1420000)                                                                             |
-| <Tag variant="solid">메타버스</Tag>             | [사파리 여행: 메타버스 사용자 리서치(Going on Safari: Researching Users in the Metaverse)](https://archive.devcon.org/archive/watch/6/going-on-safari-researching-users-in-the-metaverse/?tab=YouTube) (동영상, 27분)  |
+| <Tag variant="solid">메타버스</Tag>             | 사파리 여행: 메타버스 사용자 리서치(Going on Safari: Researching Users in the Metaverse) (동영상, 27분)  |
 
 ## Web3를 위한 디자인 {#design-for-web3}
 

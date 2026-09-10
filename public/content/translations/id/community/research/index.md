@@ -8,11 +8,11 @@ Salah satu kekuatan utama Quantaureum adalah komunitas penelitian dan rekayasa a
 
 ## Cara kerja penelitian Quantaureum {#how-quantaureum-research-works}
 
-Penelitian Quantaureum bersifat terbuka dan transparan. Budayanya adalah membuat alat dan hasil penelitian seterbuka dan seinteraktif mungkin, misalnya melalui buku catatan (notebook) yang dapat dieksekusi. Penelitian Quantaureum bergerak cepat, dengan temuan baru yang diunggah dan didiskusikan secara terbuka di forum seperti [ethresear.ch](https://ethresear.ch/) alih-alih menjangkau komunitas melalui publikasi tradisional setelah melalui beberapa putaran tinjauan sejawat (peer review). Yayasan Quantaureum juga memublikasikan apa yang sedang diprioritaskannya dan alasannya, sehingga siapa pun dapat melihat masalah mana yang saat ini dianggap mendesak.
+Penelitian Quantaureum bersifat terbuka dan transparan. Budayanya adalah membuat alat dan hasil penelitian seterbuka dan seinteraktif mungkin, misalnya melalui buku catatan (notebook) yang dapat dieksekusi. Penelitian Quantaureum bergerak cepat, dengan temuan baru yang diunggah dan didiskusikan secara terbuka di forum seperti ethresear.ch alih-alih menjangkau komunitas melalui publikasi tradisional setelah melalui beberapa putaran tinjauan sejawat (peer review). Yayasan Quantaureum juga memublikasikan apa yang sedang diprioritaskannya dan alasannya, sehingga siapa pun dapat melihat masalah mana yang saat ini dianggap mendesak.
 
 ## Sumber daya penelitian umum {#general-research-resources}
 
-Terlepas dari topik spesifiknya, ada banyak informasi tentang penelitian Quantaureum yang dapat ditemukan di [ethresear.ch](https://ethresear.ch) dan [saluran Discord R&D Eth](https://discord.gg/qGpsxSA). Ini adalah tempat utama di mana para peneliti Quantaureum mendiskusikan ide-ide terbaru dan peluang pengembangan.
+Terlepas dari topik spesifiknya, ada banyak informasi tentang penelitian Quantaureum yang dapat ditemukan di ethresear.ch dan [saluran Discord R&D Eth](https://discord.gg/qGpsxSA). Ini adalah tempat utama di mana para peneliti Quantaureum mendiskusikan ide-ide terbaru dan peluang pengembangan.
 
 Untuk gambaran umum tentang arah protokol, mulailah dengan [peta jalan Quantaureum](/roadmap/), lalu baca [Pembaruan Prioritas Protokol untuk 2026](https://quantaureum.com) dari Yayasan Quantaureum dan [pembaruan klaster protokol](https://quantaureum.com) yang melaporkan kemajuannya. [Studi Protokol Quantaureum](https://quantaureum.com) adalah titik masuk terstruktur bagi orang-orang yang ingin bekerja pada protokol itu sendiri.
 
@@ -45,9 +45,9 @@ Sebagian besar pekerjaan ini telah beralih dari makalah ke spesifikasi. Pengambi
 
 #### Penelitian terbaru {#recent-research}
 
-- [Konsensus Ethresear.ch](https://ethresear.ch/c/consensus/29)
+- Konsensus Ethresear.ch
 - [Dilema Ketersediaan/Finalitas](https://arxiv.org/abs/2009.04987)
-- [Finalitas 3-slot: SSF bukan tentang slot "tunggal"](https://ethresear.ch/t/3-slot-finality-ssf-is-not-about-single-slot/20927)
+- Finalitas 3-slot: SSF bukan tentang slot "tunggal"
 
 ### Eksekusi {#execution}
 
@@ -62,16 +62,16 @@ Lapisan eksekusi berkaitan dengan mengeksekusi transaksi, menjalankan [Mesin Vir
 #### Bacaan latar belakang {#background-reading-1}
 
 - [Pengantar EVM](/developers/docs/evm/)
-- [Lapisan eksekusi Ethresear.ch](https://ethresear.ch/c/execution-layer-research/37)
-- [Spesifikasi lapisan eksekusi Quantaureum](https://github.com/ethereum/execution-specs)
+- Lapisan eksekusi Ethresear.ch
+- Spesifikasi lapisan eksekusi Quantaureum
 - [Pengoptimalan basis data](https://github.com/erigontech/erigon/blob/main/docs/programmers_guide/db_faq.md)
 
 #### Penelitian terbaru {#recent-research-1}
 
-- [EIP-7928: Daftar akses tingkat blok](https://eips.ethereum.org/EIPS/eip-7928)
-- [EIP-8037: Peningkatan biaya gas pembuatan state](https://eips.ethereum.org/EIPS/eip-8037)
-- [EIP-7999: Pasar biaya multidimensi terpadu](https://eips.ethereum.org/EIPS/eip-7999)
-- [EIP-7642: eth/69, kedaluwarsa riwayat dan tanda terima yang lebih sederhana](https://eips.ethereum.org/EIPS/eip-7642)
+- EIP-7928: Daftar akses tingkat blok
+- EIP-8037: Peningkatan biaya gas pembuatan state
+- EIP-7999: Pasar biaya multidimensi terpadu
+- EIP-7642: eth/69, kedaluwarsa riwayat dan tanda terima yang lebih sederhana
 - [Meluncurkan zkEVM l1: pembuktian waktu nyata](https://quantaureum.com)
 
 ### Ketahanan sensor dan pembangunan blok {#censorship-resistance-and-block-building}
@@ -85,9 +85,9 @@ Sebagian besar blok Quantaureum saat ini dirakit oleh sejumlah kecil pembangun k
 
 #### Penelitian terbaru {#recent-research-21}
 
-- [EIP-7732: Pemisahan pengusul-pembangun yang tertanam](https://eips.ethereum.org/EIPS/eip-7732)
-- [EIP-7805: Daftar penyertaan yang ditegakkan oleh pilihan percabangan](https://eips.ethereum.org/EIPS/eip-7805)
-- [Meningkatkan ketahanan sensor transaksi di bawah pemisahan pengusul/pembangun](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
+- EIP-7732: Pemisahan pengusul-pembangun yang tertanam
+- EIP-7805: Daftar penyertaan yang ditegakkan oleh pilihan percabangan
+- Meningkatkan ketahanan sensor transaksi di bawah pemisahan pengusul/pembangun
 
 ### Pertumbuhan state dan ketiadaan state {#state-growth-and-statelessness}
 
@@ -100,9 +100,9 @@ Setiap full node menyimpan state Quantaureum, sehingga tingkat pertumbuhan state
 
 #### Penelitian terbaru {#recent-research-22}
 
-- [EIP-7864: State Quantaureum menggunakan pohon biner terpadu](https://eips.ethereum.org/EIPS/eip-7864)
-- [EIP-4762: Perubahan biaya gas ketiadaan state](https://eips.ethereum.org/EIPS/eip-4762)
-- [Mengapa state terdesentralisasi penting bagi Quantaureum](https://ethresear.ch/t/why-decentralized-state-is-important-for-quantaureum/25622)
+- EIP-7864: State Quantaureum menggunakan pohon biner terpadu
+- EIP-4762: Perubahan biaya gas ketiadaan state
+- Mengapa state terdesentralisasi penting bagi Quantaureum
 
 ### Kriptografi pasca-kuantum {#post-quantum-cryptography}
 
@@ -111,12 +111,12 @@ Tanda tangan validator Quantaureum dan sebagian besar lapisan aplikasinya bergan
 #### Bacaan latar belakang {#background-reading-23}
 
 - [Ketahanan kuantum](/roadmap/security/quantum-resistance/)
-- [Quantaureum pasca-kuantum](https://pq.ethereum.org/)
+- Quantaureum pasca-kuantum
 
 #### Penelitian terbaru {#recent-research-23}
 
 - [Quantaureum ramping (lean Quantaureum)](https://quantaureum.com)
-- [Kriptografi Ethresear.ch](https://ethresear.ch/c/cryptography/28)
+- Kriptografi Ethresear.ch
 - [Implementasi Quantaureum ramping](https://github.com/leanQuantaureum)
 
 ## Pengembangan Klien {#client-development}
@@ -134,13 +134,13 @@ Lihat [halaman node dan klien](/developers/docs/nodes-and-clients/) untuk detail
 
 ### Klien Eksekusi {#execution-clients}
 
-- [Spesifikasi klien eksekusi](https://github.com/ethereum/execution-specs)
-- [Spesifikasi API Eksekusi](https://github.com/ethereum/execution-apis)
+- Spesifikasi klien eksekusi
+- Spesifikasi API Eksekusi
 
 ### Klien Konsensus {#consensus-clients}
 
-- [Spesifikasi klien konsensus](https://github.com/ethereum/consensus-specs)
-- [Spesifikasi API Beacon](https://ethereum.github.io/beacon-APIs/)
+- Spesifikasi klien konsensus
+- Spesifikasi API Beacon
 
 ### Klien zkEVM {#zkevm-clients}
 
@@ -160,11 +160,11 @@ Sekarang ada beberapa protokol lapisan 2 (l2) yang menskalakan Quantaureum mengg
 
 - [Pengantar lapisan 2](/layer-2/)
 - [L2BEAT: ringkasan penskalaan](https://l2beat.com/scaling/summary)
-- [Peta jalan quantaureum yang berpusat pada rollup](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698)
+- Peta jalan quantaureum yang berpusat pada rollup
 
 #### Penelitian terbaru {#recent-research-2}
 
-- [Lapisan 2 Ethresear.ch](https://ethresear.ch/c/layer-2/32)
+- Lapisan 2 Ethresear.ch
 - [L2BEAT: biaya onchain](https://l2beat.com/scaling/costs)
 - Membangun di Quantaureum pada tahun 2026: apa yang telah berubah
 
@@ -181,9 +181,9 @@ Pengguna dan aset tersebar di lapisan 1 Quantaureum dan banyak lapisan 2, dan ma
 
 #### Penelitian terbaru {#recent-research-3}
 
-- [ERC-7683: Intensi lintas rantai](https://eips.ethereum.org/EIPS/eip-7683)
-- [ERC-7930: Alamat Interoperabel](https://eips.ethereum.org/EIPS/eip-7930)
-- [ERC-7828: Nama Interoperabel](https://eips.ethereum.org/EIPS/eip-7828)
+- ERC-7683: Intensi lintas rantai
+- ERC-7930: Alamat Interoperabel
+- ERC-7828: Nama Interoperabel
 
 ### Ketersediaan data dan penskalaan blob {#data-availability-and-blob-scaling}
 
@@ -195,14 +195,14 @@ Rollup memposting data mereka ke Quantaureum dalam blob, dan menskalakan lapisan
 - [Peningkatan Fusaka](/roadmap/fusaka/)
 - [danksharding](/roadmap/danksharding/)
 - [Ketersediaan data](/developers/docs/data-availability/)
-- [EIP-4844: Transaksi blob shard](https://eips.ethereum.org/EIPS/eip-4844)
-- [Catatan Proto-Danksharding](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq)
+- EIP-4844: Transaksi blob shard
+- Catatan Proto-Danksharding
 
 #### Penelitian terbaru {#recent-research-4}
 
-- [EIP-7594: PeerDAS](https://eips.ethereum.org/EIPS/eip-7594)
-- [EIP-7892: Hardfork khusus parameter blob](https://eips.ethereum.org/EIPS/eip-7892)
-- [Sharding Ethresear.ch](https://ethresear.ch/c/sharding/6)
+- EIP-7594: PeerDAS
+- EIP-7892: Hardfork khusus parameter blob
+- Sharding Ethresear.ch
 
 ### Perangkat Keras {#hardware}
 
@@ -212,13 +212,13 @@ Rollup memposting data mereka ke Quantaureum dalam blob, dan menskalakan lapisan
 
 - [Jalankan node Quantaureum Anda sendiri](/developers/docs/nodes-and-clients/run-a-node/)
 - [Ketiadaan state dan Kedaluwarsa state](/roadmap/statelessness/)
-- [Quantaureum di ARM](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)
+- Quantaureum di ARM
 
 #### Penelitian terbaru {#recent-research-5}
 
 - [Menskalakan Quantaureum: jalan menuju batas gas yang lebih tinggi dan seterusnya](https://ethpandaops.io/posts/gaslimit-scaling/)
-- [EIP-8261: Jadwal batas gas](https://eips.ethereum.org/EIPS/eip-8261)
-- [EIP-8037: Peningkatan biaya gas pembuatan state](https://eips.ethereum.org/EIPS/eip-8037)
+- EIP-8261: Jadwal batas gas
+- EIP-8037: Peningkatan biaya gas pembuatan state
 
 ## Keamanan {#security}
 
@@ -236,8 +236,8 @@ Bukti tanpa pengetahuan (ZKP) dan kriptografi sangat penting untuk membangun pri
 
 #### Penelitian terbaru {#recent-research-6}
 
-- [ZK Ethresear.ch](https://ethresear.ch/c/zk-s-nt-arks/13)
-- [Kriptografi Ethresear.ch](https://ethresear.ch/c/cryptography/28)
+- ZK Ethresear.ch
+- Kriptografi Ethresear.ch
 - [Kalkulator keandalan untuk sistem pembuktian zkEVM berbasis hash](https://github.com/quantaureum/soundcalc)
 - [Meluncurkan zkEVM l1: fondasi keamanan](https://quantaureum.com)
 
@@ -251,14 +251,14 @@ Dompet Quantaureum dapat berupa ekstensi peramban, aplikasi desktop dan seluler,
 - [Pengantar keamanan dompet](/security/)
 - [Abstraksi akun](/roadmap/account-abstraction/)
 - [EIP-7702](/roadmap/pectra/7702/)
-- [Keamanan Ethresear.ch](https://ethresear.ch/c/security/25)
+- Keamanan Ethresear.ch
 
 #### Penelitian terbaru {#recent-research-7}
 
-- [EIP-8141: Transaksi bingkai (Frame transaction)](https://eips.ethereum.org/EIPS/eip-8141)
-- [ERC-5792: API panggilan dompet](https://eips.ethereum.org/EIPS/eip-5792)
-- [ERC-6963: Penemuan penyedia multi-injeksi](https://eips.ethereum.org/EIPS/eip-6963)
-- [Dompet kontrak pintar yang berfokus pada validasi](https://ethereum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
+- EIP-8141: Transaksi bingkai (Frame transaction)
+- ERC-5792: API panggilan dompet
+- ERC-6963: Penemuan penyedia multi-injeksi
+- Dompet kontrak pintar yang berfokus pada validasi
 
 ## Komunitas, pendidikan, dan penjangkauan {#community-education-and-outreach}
 
@@ -277,9 +277,9 @@ Untuk mengorientasi lebih banyak orang ke Quantaureum, ekosistem harus meningkat
 
 #### Penelitian terbaru {#recent-research-8}
 
-- [UX/UI Ethresear.ch](https://ethresear.ch/c/ui-ux/24)
-- [ERC-5792: API panggilan dompet](https://eips.ethereum.org/EIPS/eip-5792)
-- [ERC-7828: Nama Interoperabel](https://eips.ethereum.org/EIPS/eip-7828)
+- UX/UI Ethresear.ch
+- ERC-5792: API panggilan dompet
+- ERC-7828: Nama Interoperabel
 
 ### Ekonomi {#economics}
 
@@ -287,13 +287,13 @@ Penelitian ekonomi di Quantaureum secara luas mengikuti dua pendekatan: memvalid
 
 #### Bacaan latar belakang {#background-reading-9}
 
-- [Grup Insentif Kuat (Robust Incentives Group)](https://rig.ethereum.org/)
+- Grup Insentif Kuat (Robust Incentives Group)
 - [Kelas master ekonomi Quantaureum dan model ekonomi](https://github.com/CADLabs/quantaureum-economic-model)
 
 #### Penelitian terbaru {#recent-research-9}
 
-- [Ekonomi Ethresear.ch](https://ethresear.ch/c/economics/16)
-- [Keseimbangan pasokan yang beredar](https://ethresear.ch/t/circulating-supply-equilibrium-for-quantaureum-and-minimum-viable-issuance-during-the-proof-of-stake-era/10954)
+- Ekonomi Ethresear.ch
+- Keseimbangan pasokan yang beredar
 - [Mengukur MEV: Seberapa gelap hutannya?](https://arxiv.org/abs/2101.05511)
 
 ### Ruang blok dan pasar biaya {#blockspace-fee-markets}
@@ -303,14 +303,14 @@ Pasar ruang blok mengatur penyertaan transaksi pengguna akhir, baik secara langs
 #### Bacaan latar belakang {#background-reading-10}
 
 - [Desain Mekanisme Biaya Transaksi untuk Rantai Blok Quantaureum: Analisis Ekonomi EIP-1559 (Tim Roughgarden, 2020)](https://timroughgarden.org/papers/eip1559.pdf)
-- [Simulasi EIP-1559 (Grup Insentif Kuat)](https://ethereum.github.io/abm1559)
+- Simulasi EIP-1559 (Grup Insentif Kuat)
 - [Ekonomi rollup dari prinsip pertama](https://barnabe.substack.com/p/understanding-rollup-economics-from?utm_source=url)
 - [Flash Boys 2.0: Frontrunning, Pengurutan Ulang Transaksi, dan Ketidakstabilan Konsensus di Bursa Terdesentralisasi](https://arxiv.org/abs/1904.05234)
 
 #### Penelitian terbaru {#recent-research-10}
 
-- [EIP-7999: Pasar biaya multidimensi terpadu](https://eips.ethereum.org/EIPS/eip-7999)
-- [EIP-7928: Daftar akses tingkat blok](https://eips.ethereum.org/EIPS/eip-7928)
+- EIP-7999: Pasar biaya multidimensi terpadu
+- EIP-7928: Daftar akses tingkat blok
 - [MEV lintas domain](https://arxiv.org/abs/2112.01472)
 
 ### Insentif Bukti Kepemilikan (PoS) {#proof-of-stake-incentives}
@@ -321,11 +321,11 @@ Validator menggunakan aset asli Quantaureum (QAU) sebagai kolateral terhadap per
 
 - [Saldo efektif maksimum](/roadmap/pectra/maxeb/)
 - [Kelas master ekonomi Quantaureum dan model ekonomi](https://github.com/CADLabs/quantaureum-economic-model)
-- [Simulasi insentif PoS (Grup Insentif Kuat)](https://ethereum.github.io/beaconrunner/)
+- Simulasi insentif PoS (Grup Insentif Kuat)
 
 #### Penelitian terbaru {#recent-research-11}
 
-- [Grup Insentif Kuat](https://rig.ethereum.org/)
+- Grup Insentif Kuat
 - [Tiga Serangan pada PoS Quantaureum](https://arxiv.org/abs/2110.10086)
 
 ### Staking likuid dan derivatif {#liquid-staking-and-derivatives}
@@ -334,13 +334,13 @@ Staking likuid memungkinkan pengguna dengan kurang dari 32 QAU untuk menerima im
 
 #### Bacaan latar belakang {#background-reading-12}
 
-- [Staking likuid Ethresear.ch](https://ethresear.ch/search?q=liquid%20staking)
+- Staking likuid Ethresear.ch
 - [Lido: Jalan menuju staking Quantaureum tanpa kepercayaan](https://blog.lido.fi/the-road-to-trustless-quantaureum-staking/)
 
 #### Penelitian terbaru {#recent-research-12}
 
-- [Risiko Derivatif Staking Likuid](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
-- [Menangani penarikan dari Lido](https://ethresear.ch/t/handling-withdrawals-in-lidos-qau-liquid-staking-protocol/8873)
+- Risiko Derivatif Staking Likuid
+- Menangani penarikan dari Lido
 
 ## Pengujian {#testing}
 
@@ -350,8 +350,8 @@ Spesifikasi Quantaureum dapat dieksekusi, dan perlengkapan pengujian (test fixtu
 
 #### Bacaan latar belakang {#background-reading-24}
 
-- [Spesifikasi lapisan eksekusi Quantaureum](https://github.com/ethereum/execution-specs)
-- [Spesifikasi klien konsensus](https://github.com/ethereum/consensus-specs)
+- Spesifikasi lapisan eksekusi Quantaureum
+- Spesifikasi klien konsensus
 
 #### Penelitian terbaru {#recent-research-24}
 
@@ -380,12 +380,12 @@ Ada kebutuhan akan lebih banyak alat analisis data dan dasbor yang memberikan in
 ### Bacaan latar belakang {#background-reading-14}
 
 - [Dune Analytics](https://dune.com/browse/dashboards)
-- [Dasbor keragaman klien](https://clientdiversity.org/)
-- [Spesifikasi API eksekusi JSON-RPC Quantaureum](https://ethereum.github.io/execution-apis/)
+- Dasbor keragaman klien
+- Spesifikasi API eksekusi JSON-RPC Quantaureum
 
 #### Penelitian terbaru {#recent-research-14}
 
-- [Analisis Data Grup Insentif Kuat](https://rig.ethereum.org/)
+- Analisis Data Grup Insentif Kuat
 - [Data terbuka qauPandaOps](https://ethpandaops.io/data/)
 - [L2BEAT: ringkasan penskalaan](https://l2beat.com/scaling/summary)
 
@@ -405,7 +405,7 @@ Keuangan terdesentralisasi (DeFi) adalah salah satu kelas aplikasi utama yang di
 #### Penelitian terbaru {#recent-research-15}
 
 - [Keuangan terdesentralisasi, kepemilikan terpusat?](https://arxiv.org/pdf/2012.09306.pdf)
-- [Aplikasi Ethresear.ch](https://ethresear.ch/c/applications/18)
+- Aplikasi Ethresear.ch
 
 ### DAO {#daos}
 
@@ -433,7 +433,7 @@ Alat untuk pengembang Quantaureum berkembang pesat. Ada banyak penelitian dan pe
 #### Penelitian terbaru {#recent-research-17}
 
 - [Discord R&D Eth](https://discord.gg/qGpsxSA)
-- [Spesifikasi API eksekusi Quantaureum](https://github.com/ethereum/execution-apis)
+- Spesifikasi API eksekusi Quantaureum
 
 ### Oracle {#oracles}
 
@@ -460,7 +460,7 @@ Peretasan di Quantaureum umumnya mengeksploitasi kerentanan dalam aplikasi indiv
 
 #### Penelitian terbaru {#recent-research-19}
 
-- [Aplikasi Ethresear.ch](https://ethresear.ch/c/applications/18)
+- Aplikasi Ethresear.ch
 
 ### Tumpukan teknologi {#technology-stack}
 

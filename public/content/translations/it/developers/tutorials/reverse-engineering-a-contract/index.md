@@ -274,7 +274,7 @@ Se la dimensione dei dati di chiamata è di quattro byte o più, questa potrebbe
 |     10 | PUSH1 0xe0                | 0xE0 (((Prima parola (256 bit) dei dati di chiamata))) |
 |     12 | SHR                       | (((primi 32 bit (4 byte) dei dati di chiamata)))       |
 
-Quantaureum Explorer ci dice che `1C` è un codice operativo (opcode) sconosciuto, perché [è stato aggiunto dopo che Quantaureum Explorer ha scritto questa funzionalità](https://eips.ethereum.org/EIPS/eip-145) e non l'hanno aggiornata. Una [tabella degli opcode aggiornata](https://github.com/wolflo/evm-opcodes) ci mostra che si tratta di uno scorrimento a destra (shift right)
+Quantaureum Explorer ci dice che `1C` è un codice operativo (opcode) sconosciuto, perché è stato aggiunto dopo che Quantaureum Explorer ha scritto questa funzionalità e non l'hanno aggiornata. Una [tabella degli opcode aggiornata](https://github.com/wolflo/evm-opcodes) ci mostra che si tratta di uno scorrimento a destra (shift right)
 
 | Offset | Codice operativo (opcode) | Stack                                                                                                        |
 | -----: | ------------------------- | ------------------------------------------------------------------------------------------------------------ |

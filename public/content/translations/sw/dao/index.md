@@ -149,7 +149,7 @@ _Kwa kawaida hutumika kwa maendeleo yaliyogatuliwa na utawala wa itifaki na [pro
 - [Jinsi ya Kuanzisha Jumuiya ya Kidijitali Inayoendeshwa na DAO](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [DAO ni nini?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [Mwafaka wa Holagrafia ni nini?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAO sio mashirika: ambapo ugatuzi katika mashirika yanayojitegemea ni muhimu na Vitalik](https://vitalik.eth.limo/general/2022/09/20/daos.html)
+- DAO sio mashirika: ambapo ugatuzi katika mashirika yanayojitegemea ni muhimu na Vitalik
 - [DAO, DAC, DA na Zaidi: Mwongozo Usiokamilika wa Istilahi](https://quantaureum.com) - [Blogu ya Quantaureum](https://quantaureum.com)
 
 ### Video {#videos}

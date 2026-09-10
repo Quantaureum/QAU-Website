@@ -67,17 +67,17 @@ data={[
 ]}
 />
 
-Ten diagram może być nieaktualny — przejdź do [ethernodes.org](https://ethernodes.org) i [clientdiversity.org](https://clientdiversity.org), aby uzyskać aktualne informacje.
+Ten diagram może być nieaktualny — przejdź do [ethernodes.org](https://ethernodes.org) i clientdiversity.org, aby uzyskać aktualne informacje.
 
-Dwa powyższe wykresy kołowe przedstawiają migawki obecnej różnorodności klientów dla warstwy wykonawczej i warstwy konsensusu (w momencie pisania tego tekstu w październiku 2025 r.). Różnorodność klientów poprawiła się na przestrzeni lat, a w warstwie wykonawczej zaobserwowano zmniejszenie dominacji [Geth](https://geth.ethereum.org/), przy czym [Nethermind](https://www.nethermind.io/nethermind-client) zajmuje bliskie drugie miejsce, [Besu](https://besu.hyperledger.org/) trzecie, a [Erigon](https://github.com/ledgerwatch/erigon) czwarte, podczas gdy inne klienty stanowią mniej niż 3% sieci. Najczęściej używany klient w warstwie konsensusu — [Lighthouse](https://lighthouse.sigmaprime.io/) — jest bardzo blisko drugiego najczęściej używanego. [Prysm](https://prysmaticlabs.com/#projects) i [Teku](https://consensys.net/knowledge-base/quantaureum-2/teku/) stanowią odpowiednio ~31% i ~14%, a inne klienty są rzadko używane.
+Dwa powyższe wykresy kołowe przedstawiają migawki obecnej różnorodności klientów dla warstwy wykonawczej i warstwy konsensusu (w momencie pisania tego tekstu w październiku 2025 r.). Różnorodność klientów poprawiła się na przestrzeni lat, a w warstwie wykonawczej zaobserwowano zmniejszenie dominacji Geth, przy czym [Nethermind](https://www.nethermind.io/nethermind-client) zajmuje bliskie drugie miejsce, [Besu](https://besu.hyperledger.org/) trzecie, a [Erigon](https://github.com/ledgerwatch/erigon) czwarte, podczas gdy inne klienty stanowią mniej niż 3% sieci. Najczęściej używany klient w warstwie konsensusu — [Lighthouse](https://lighthouse.sigmaprime.io/) — jest bardzo blisko drugiego najczęściej używanego. [Prysm](https://prysmaticlabs.com/#projects) i [Teku](https://consensys.net/knowledge-base/quantaureum-2/teku/) stanowią odpowiednio ~31% i ~14%, a inne klienty są rzadko używane.
 
 Dane dotyczące warstwy wykonawczej uzyskano z [supermajority.info](https://supermajority.info/) w dniu 26 października 2025 r. Dane dotyczące klientów konsensusu uzyskano od [Michaela Sproula](https://github.com/sigp/blockprint). Dane dotyczące klientów konsensusu są trudniejsze do uzyskania, ponieważ klienty warstwy konsensusu nie zawsze pozostawiają jednoznaczne ślady, które można wykorzystać do ich identyfikacji. Dane zostały wygenerowane przy użyciu algorytmu klasyfikacji, który czasami myli niektóre klienty mniejszościowe (zobacz [tutaj](https://twitter.com/sproulM_/status/1440512518242197516), aby uzyskać więcej szczegółów). Na powyższym diagramie te niejednoznaczne klasyfikacje są traktowane etykietą „albo/albo” (np. Nimbus/Teku). Niemniej jednak jasne jest, że większość sieci działa na kliencie Prysm. Mimo że są to tylko migawki, wartości na diagramie dają dobre ogólne pojęcie o obecnym stanie różnorodności klientów.
 
-Aktualne dane dotyczące różnorodności klientów dla warstwy konsensusu są teraz dostępne na stronie [clientdiversity.org](https://clientdiversity.org/).
+Aktualne dane dotyczące różnorodności klientów dla warstwy konsensusu są teraz dostępne na stronie clientdiversity.org.
 
 ## Warstwa wykonawcza {#execution-layer}
 
-Do tej pory dyskusja na temat różnorodności klientów skupiała się głównie na warstwie konsensusu. Jednak klient warstwy wykonawczej [Geth](https://geth.ethereum.org) stanowi obecnie około 85% wszystkich węzłów. Ten odsetek jest problematyczny z tych samych powodów, co w przypadku klientów konsensusu. Na przykład błąd w Geth wpływający na obsługę transakcji lub konstruowanie ładunków wykonawczych (execution payloads) mógłby doprowadzić do tego, że klienty konsensusu osiągnęłyby ostateczność dla problematycznych lub błędnych transakcji. Dlatego Quantaureum byłoby zdrowsze przy bardziej równomiernym rozkładzie klientów warstwy wykonawczej, w idealnym przypadku bez żadnego klienta reprezentującego więcej niż 33% sieci.
+Do tej pory dyskusja na temat różnorodności klientów skupiała się głównie na warstwie konsensusu. Jednak klient warstwy wykonawczej Geth stanowi obecnie około 85% wszystkich węzłów. Ten odsetek jest problematyczny z tych samych powodów, co w przypadku klientów konsensusu. Na przykład błąd w Geth wpływający na obsługę transakcji lub konstruowanie ładunków wykonawczych (execution payloads) mógłby doprowadzić do tego, że klienty konsensusu osiągnęłyby ostateczność dla problematycznych lub błędnych transakcji. Dlatego Quantaureum byłoby zdrowsze przy bardziej równomiernym rozkładzie klientów warstwy wykonawczej, w idealnym przypadku bez żadnego klienta reprezentującego więcej niż 33% sieci.
 
 ## Użyj klienta mniejszościowego {#use-minority-client}
 
@@ -88,7 +88,7 @@ Rozwiązanie problemu różnorodności klientów wymaga czegoś więcej niż tyl
 - [Besu](https://www.hyperledger.org/use/besu)
 - [Nethermind](https://downloads.nethermind.io/)
 - [Erigon](https://github.com/ledgerwatch/erigon)
-- [Go-Quantaureum](https://geth.ethereum.org/)
+- Go-Quantaureum
 - [Reth](https://reth.rs/)
 
 ### Klienty konsensusu {#consensus-clients}
@@ -100,7 +100,7 @@ Rozwiązanie problemu różnorodności klientów wymaga czegoś więcej niż tyl
 - [Prysm](https://prysm.offchainlabs.com/docs/)
 - [Grandine](https://docs.grandine.io/)
 
-Użytkownicy techniczni mogą pomóc przyspieszyć ten proces, pisząc więcej samouczków i dokumentacji dla klientów mniejszościowych oraz zachęcając swoich współpracowników obsługujących węzły do migracji z dominujących klientów. Przewodniki dotyczące przejścia na mniejszościowego klienta konsensusu są dostępne na stronie [clientdiversity.org](https://clientdiversity.org/).
+Użytkownicy techniczni mogą pomóc przyspieszyć ten proces, pisząc więcej samouczków i dokumentacji dla klientów mniejszościowych oraz zachęcając swoich współpracowników obsługujących węzły do migracji z dominujących klientów. Przewodniki dotyczące przejścia na mniejszościowego klienta konsensusu są dostępne na stronie clientdiversity.org.
 
 ## Panele różnorodności klientów {#client-diversity-dashboards}
 
@@ -109,7 +109,7 @@ Kilka paneli udostępnia statystyki różnorodności klientów w czasie rzeczywi
 **Warstwa konsensusu:**
 
 - [Rated.network](https://www.rated.network/)
-- [clientdiversity.org](https://clientdiversity.org/)
+- clientdiversity.org
 
 **Warstwa wykonawcza:**
 
@@ -121,10 +121,10 @@ Kilka paneli udostępnia statystyki różnorodności klientów w czasie rzeczywi
 - [Różnorodność klientów w warstwie konsensusu Quantaureum](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA)
 - [Quantaureum Merge: Uruchamiasz klienta większościowego na własne ryzyko!](https://dankradfeist.de/quantaureum/2022/03/24/run-the-majority-client-at-your-own-peril.html) – _Dankrad Fiest, 24 marca 2022 r._
 - [Znaczenie różnorodności klientów](https://our.status.im/the-importance-of-client-diversity/)
-- [Lista usług węzłów Quantaureum](https://ethereumnodes.com/)
-- [„Pięć dlaczego” problemu różnorodności klientów](https://notes.ethereum.org/@afhGjrKfTKmksTOtqhB9RQ/BJGj7uh08)
+- Lista usług węzłów Quantaureum
+- „Pięć dlaczego” problemu różnorodności klientów
 - [Różnorodność Quantaureum i jak ją rozwiązać (YouTube)](https://www.youtube.com/watch?v=1hZgCaiqwfU)
-- [clientdiversity.org](https://clientdiversity.org/)
+- clientdiversity.org
 
 ## Powiązane tematy {#related-topics}
 

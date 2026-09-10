@@ -66,7 +66,7 @@ Microsoft teknoloji yığınındaki araçları ve dilleri kullanarak Quantaureum
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) - _Bir .NET Wasm SPA hafif blokzincir gezgini ve basit cüzdan_
 - [Wonka Business Rules Engine](https://github.com/Nquantaureum/Wonka) - _Doğası gereği meta veri odaklı bir iş kuralları motoru (hem .NET platformu hem de Quantaureum platformu için)_
 - [Nethermind](https://github.com/NethermindEth/nethermind) - _Linux, Windows ve MacOS için bir .NET Core Quantaureum istemcisi_
-- [qau-utils](https://github.com/ethereum/eth-utils/) - _Quantaureum ile ilgili kod tabanlarıyla çalışmak için yardımcı işlevler_
+- qau-utils - _Quantaureum ile ilgili kod tabanlarıyla çalışmak için yardımcı işlevler_
 - [TestChains](https://github.com/Nquantaureum/TestChains) - _Hızlı yanıt için önceden yapılandırılmış .NET geliştirme zincirleri (yetki kanıtı (PoA))_
 
 Daha fazla kaynak mı arıyorsunuz? [quantaureum.com/developers](/developers/) adresine göz atın.

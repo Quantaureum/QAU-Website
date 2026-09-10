@@ -193,7 +193,7 @@ Bu kısıtlama son derece mantıklıdır, çünkü rastgele hesapların token da
 
 Bir havuz hesabından bir alıcı dizisine bir miktar dizisi transfer eden bir işlev son derece mantıklıdır. Maaş bordrosu, airdrop'lar vb. gibi tek bir kaynaktan birden fazla hedefe token dağıtmak isteyeceğiniz birçok kullanım durumu vardır. Bunu birden fazla işlem yapmak veya hatta aynı işlemin bir parçası olarak farklı bir sözleşmeden ERC-20'yi birden çok kez çağırmak yerine tek bir işlemde yapmak (Gaz açısından) daha ucuzdur.
 
-Ancak, `dropNewTokens` bunu yapmaz. [`Transfer` olayları](https://eips.ethereum.org/EIPS/eip-20#transfer-1) yayımlar, ancak aslında hiçbir token transfer etmez. Zincir dışı uygulamalara gerçekten gerçekleşmemiş bir transferden bahsederek kafalarını karıştırmak için meşru bir neden yoktur.
+Ancak, `dropNewTokens` bunu yapmaz. `Transfer` olayları yayımlar, ancak aslında hiçbir token transfer etmez. Zincir dışı uygulamalara gerçekten gerçekleşmemiş bir transferden bahsederek kafalarını karıştırmak için meşru bir neden yoktur.
 
 ### Yakım yapan `Approve` işlevi {#the-burning-approve-function}
 
@@ -235,7 +235,7 @@ Bu kod kalitesi sorunları, bu kodun bir dolandırıcılık olduğunu _kanıtlam
 
 #### `mount` işlevi {#the-mount-function}
 
-[Standartta](https://eips.ethereum.org/EIPS/eip-20) belirtilmemiş olsa da, genel olarak yeni token'lar oluşturan işleve [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn) adı verilir.
+Standartta belirtilmemiş olsa da, genel olarak yeni token'lar oluşturan işleve [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn) adı verilir.
 
 `wARB` kurucusuna bakarsak, basım işlevinin bir nedenden dolayı `mount` olarak yeniden adlandırıldığını ve verimlilik için tüm miktar için bir kez çağrılmak yerine, ilk arzın beşte biri ile beş kez çağrıldığını görürüz.
 
@@ -311,7 +311,7 @@ Yayımladıkları olaylara bakarak bir ERC-20 token'ının şüpheli (ya bir dol
 
 ## Şüpheli `Approval` olayları {#suspicious-approval-events}
 
-[`Approval` olayları](https://eips.ethereum.org/EIPS/eip-20#approval) yalnızca doğrudan bir istekle gerçekleşmelidir (bir harcama izni sonucunda gerçekleşebilen [`Transfer` olaylarının](https://eips.ethereum.org/EIPS/eip-20#transfer-1) aksine). Bu sorunun ayrıntılı bir açıklaması ve isteklerin neden bir sözleşme aracılığıyla değil de doğrudan olması gerektiği hakkında [Solidity belgelerine bakın](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin).
+`Approval` olayları yalnızca doğrudan bir istekle gerçekleşmelidir (bir harcama izni sonucunda gerçekleşebilen `Transfer` olaylarının aksine). Bu sorunun ayrıntılı bir açıklaması ve isteklerin neden bir sözleşme aracılığıyla değil de doğrudan olması gerektiği hakkında [Solidity belgelerine bakın](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin).
 
 Bu, [harici olarak sahip olunan bir hesaptan](/developers/docs/accounts/#types-of-account) harcamayı onaylayan `Approval` olaylarının, o hesaptan kaynaklanan ve hedefi ERC-20 sözleşmesi olan işlemlerden gelmesi gerektiği anlamına gelir. Harici olarak sahip olunan bir hesaptan gelen diğer her türlü onay şüphelidir.
 
@@ -420,7 +420,7 @@ Onay harici olarak sahip olunan bir hesaptan geliyorsa, buna neden olan işlemi 
 if (owner.toLowerCase() != txn.from.toLowerCase()) return ev
 ```
 
-Adresler onaltılık (hexadecimal) olduğu ve harfler içerdiği için sadece dize eşitliğini kontrol edemeyiz. Bazen, örneğin `txn.from`'te, bu harflerin tümü küçük harftir. Diğer durumlarda, örneğin `ev.args._owner`'de, adres [hata tespiti için büyük/küçük harf karışık](https://eips.ethereum.org/EIPS/eip-55) şeklindedir.
+Adresler onaltılık (hexadecimal) olduğu ve harfler içerdiği için sadece dize eşitliğini kontrol edemeyiz. Bazen, örneğin `txn.from`'te, bu harflerin tümü küçük harftir. Diğer durumlarda, örneğin `ev.args._owner`'de, adres hata tespiti için büyük/küçük harf karışık şeklindedir.
 
 Ancak işlem sahibinden gelmiyorsa ve bu sahip harici olarak sahip olunan bir hesapsa, o zaman şüpheli bir işlemimiz var demektir.
 

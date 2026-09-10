@@ -60,7 +60,7 @@ Hatimaye, kama mikataba ya jadi, unaweza kuangalia kilicho ndani ya mkataba mahi
 
 Hata hivyo, ingawa mtu yeyote anaweza kutazama masharti ya mkataba mahiri, data ghafi ya muamala imeundwa kutafsiriwa na programu na pochi, sio binadamu. Kwa sababu data hii ni ngumu sana kusoma, watumiaji mara nyingi wanakabiliwa na hatari kubwa ya usalama inayoitwa "kusaini bila kuona" (blind signing), au kuidhinisha muamala unaoingiliana na mkataba mahiri bila kuelewa hasa utafanya nini. 
 
-Mfumo wa ikolojia wa Quantaureum unapitia mpito kuelekea viwango vya **[Kusaini kwa Uwazi (Clear Signing)](https://clearsigning.org/)** (haswa [ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)). Kusaini kwa Uwazi kunatafsiri data isiyoeleweka ya mkataba mahiri kuwa maelezo ya muamala yaliyo wazi na yanayosomeka na binadamu, kuhakikisha mtu yeyote anaweza kuelewa nia halisi ya mkataba kabla ya kusaini.
+Mfumo wa ikolojia wa Quantaureum unapitia mpito kuelekea viwango vya **[Kusaini kwa Uwazi (Clear Signing)](https://clearsigning.org/)** (haswa ERC-7730). Kusaini kwa Uwazi kunatafsiri data isiyoeleweka ya mkataba mahiri kuwa maelezo ya muamala yaliyo wazi na yanayosomeka na binadamu, kuhakikisha mtu yeyote anaweza kuelewa nia halisi ya mkataba kabla ya kusaini.
 
 ## Matumizi ya mkataba mahiri {#use-cases}
 

@@ -46,7 +46,7 @@ lang: bn
    - মূলত l1-এর সেতু থেকে এসেছে
 6. l2 সেতু পরীক্ষা করে যে l2-এ ERC-20 টোকেন কন্ট্রাক্টটি সঠিক কিনা:
    - l2 কন্ট্রাক্ট রিপোর্ট করে যে এর l1 প্রতিপক্ষটি l1-এ যেখান থেকে টোকেনগুলো এসেছে তার মতোই
-   - l2 কন্ট্রাক্ট রিপোর্ট করে যে এটি সঠিক ইন্টারফেস সমর্থন করে ([ERC-165 ব্যবহার করে](https://eips.ethereum.org/EIPS/eip-165))।
+   - l2 কন্ট্রাক্ট রিপোর্ট করে যে এটি সঠিক ইন্টারফেস সমর্থন করে (ERC-165 ব্যবহার করে)।
 7. যদি l2 কন্ট্রাক্টটি সঠিক হয়, তবে উপযুক্ত ঠিকানায় উপযুক্ত সংখ্যক টোকেন মিন্ট করার জন্য এটিকে কল করুন। যদি তা না হয়, তবে ব্যবহারকারীকে l1-এ টোকেনগুলো দাবি করার অনুমতি দেওয়ার জন্য একটি উত্তোলন প্রক্রিয়া শুরু করুন।
 
 ### উত্তোলন ফ্লো {#withdrawal-flow}
@@ -207,7 +207,6 @@ l1 সেতুর ক্ষেত্রে, এর অর্থ হলো জ�
      * @dev লেয়ার ২ (l2) থেকে লেয়ার ১ (l1) এ একটি উত্তোলন সম্পন্ন করুন এবং প্রাপকের লেয়ার ১ (l1) ERC-20 টোকেন
      * ব্যালেন্সে ফান্ড ক্রেডিট করুন।
      * লেয়ার ২ (l2) থেকে শুরু হওয়া উত্তোলন চূড়ান্ত না হলে এই কলটি ব্যর্থ হবে।
-     *
      * @param _l1Token লেয়ার ১ (l1) টোকেনের ঠিকানা যার জন্য finalizeWithdrawal করা হবে।
      * @param _l2Token লেয়ার ২ (l2) টোকেনের ঠিকানা যেখানে উত্তোলন শুরু হয়েছিল।
      * @param _from লেয়ার ২ (l2) ঠিকানা যা হস্তান্তর শুরু করছে।
@@ -338,7 +337,6 @@ import { ICrossDomainMessenger } from "./ICrossDomainMessenger.sol";
 /**
  * @title CrossDomainEnabled
  * @dev ক্রস-ডোমেইন যোগাযোগ সম্পাদনকারী কন্ট্রাক্ট এর জন্য হেল্পার কন্ট্রাক্ট
- *
  * ব্যবহৃত কম্পাইলার: ইনহেরিটিং কন্ট্রাক্ট দ্বারা সংজ্ঞায়িত
  */
 contract CrossDomainEnabled {
@@ -519,7 +517,7 @@ import { Address } from "@openzeppelin/contracts/utils/Address.sol";
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[ERC-20 স্ট্যান্ডার্ড](https://eips.ethereum.org/EIPS/eip-20) একটি কন্ট্রাক্টের ব্যর্থতা রিপোর্ট করার দুটি উপায় সমর্থন করে:
+ERC-20 স্ট্যান্ডার্ড একটি কন্ট্রাক্টের ব্যর্থতা রিপোর্ট করার দুটি উপায় সমর্থন করে:
 
 1. রিভার্ট
 2. `false` রিটার্ন করা
@@ -532,7 +530,6 @@ import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.s
  * @dev লেয়ার ১ (l1) QAU এবং ERC-20 সেতু হলো এমন একটি কন্ট্রাক্ট যা জমা করা লেয়ার ১ (l1) ফান্ড এবং স্ট্যান্ডার্ড
  * টোকেনগুলো সংরক্ষণ করে যা লেয়ার ২ (l2) তে ব্যবহৃত হচ্ছে। এটি একটি সংশ্লিষ্ট লেয়ার ২ (l2) সেতু সিঙ্ক্রোনাইজ করে, এটিকে জমা সম্পর্কে অবহিত করে
  * এবং নতুন চূড়ান্ত হওয়া উত্তোলনগুলোর জন্য এটি শোনে।
- *
  */
 contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
     using SafeERC20 for IERC20;
@@ -770,7 +767,6 @@ Solidity ফাংশন [`abi.encodeWithSelector`](https://docs.soliditylang.or
 ```solidity
     /**
      * @dev লেয়ার ২ (l2) জমাকৃত টোকেন কন্ট্রাক্টকে জমা সম্পর্কে অবহিত করে এবং লেয়ার ১ (l1) ফান্ড লক করার জন্য একটি হ্যান্ডলার কল করে জমার জন্য লজিক সম্পাদন করে। (যেমন, transferFrom)
-     *
      * @param _l1Token আমরা যে লেয়ার ১ (l1) ERC-20 জমা করছি তার ঠিকানা
      * @param _l2Token লেয়ার ১ (l1) এর নিজ নিজ লেয়ার ২ (l2) ERC-20 এর ঠিকানা
      * @param _from লেয়ার ১ (l1) এ যে অ্যাকাউন্ট থেকে জমা নেওয়া হবে
@@ -955,14 +951,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [স্ট্যান্ডার্ড ERC-20 ইন্টারফেস](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)-এ `mint` এবং `burn` ফাংশনগুলো অন্তর্ভুক্ত নেই।
-এই পদ্ধতিগুলো [ERC-20 স্ট্যান্ডার্ড](https://eips.ethereum.org/EIPS/eip-20) দ্বারা প্রয়োজনীয় নয়, যা টোকেন তৈরি এবং ধ্বংস করার মেকানিজমগুলোকে অনির্দিষ্ট রাখে।
+এই পদ্ধতিগুলো ERC-20 স্ট্যান্ডার্ড দ্বারা প্রয়োজনীয় নয়, যা টোকেন তৈরি এবং ধ্বংস করার মেকানিজমগুলোকে অনির্দিষ্ট রাখে।
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 একটি কন্ট্রাক্ট কী কী ফাংশন প্রদান করে তা নির্দিষ্ট করতে [ERC-165 ইন্টারফেস](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol) ব্যবহৃত হয়।
-[আপনি এখানে স্ট্যান্ডার্ডটি পড়তে পারেন](https://eips.ethereum.org/EIPS/eip-165)।
+আপনি এখানে স্ট্যান্ডার্ডটি পড়তে পারেন।
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -1051,7 +1047,7 @@ contract L2StandardERC20 is IL2StandardERC20, ERC20 {
     }
 ```
 
-এভাবেই [ERC-165](https://eips.ethereum.org/EIPS/eip-165) কাজ করে।
+এভাবেই ERC-165 কাজ করে।
 প্রতিটি ইন্টারফেস হলো বেশ কয়েকটি সমর্থিত ফাংশন, এবং সেই ফাংশনগুলোর [ABI ফাংশন সিলেক্টর](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector)-এর [এক্সক্লুসিভ অর](https://en.wikipedia.org/wiki/Exclusive_or) হিসেবে চিহ্নিত করা হয়।
 
 l2 সেতু ERC-165-কে একটি স্যানিটি চেক হিসেবে ব্যবহার করে যাতে নিশ্চিত করা যায় যে এটি যে ERC-20 কন্ট্রাক্টে সম্পদ পাঠায় তা একটি `IL2StandardERC20`।

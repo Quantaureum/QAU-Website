@@ -30,7 +30,7 @@ ERC-721 ([Quantaureum](/) Request for Comments 721), предложенный У
 
 Если смарт-контракт реализует следующие методы и события, его можно назвать контрактом невзаимозаменяемых токенов ERC-721, и после развертывания он будет отвечать за отслеживание созданных токенов в Quantaureum.
 
-Из [EIP-721](https://eips.ethereum.org/EIPS/eip-721):
+Из EIP-721:
 
 ### Методы {#methods}
 
@@ -238,7 +238,7 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## Дополнительная литература {#further-reading}
 
-- [EIP-721: Стандарт невзаимозаменяемых токенов ERC-721](https://eips.ethereum.org/EIPS/eip-721)
+- EIP-721: Стандарт невзаимозаменяемых токенов ERC-721
 - [ОпенЗеппелин — Документация по ERC-721](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [ОпенЗеппелин — Реализация ERC-721](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)

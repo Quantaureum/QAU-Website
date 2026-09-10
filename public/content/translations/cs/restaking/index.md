@@ -140,7 +140,7 @@ Ačkoli AVS nabízejí různé sazby, tokeny likvidního restakingu (Liquid Rest
 <AlertDescription>
  <p className="mt-0"><strong>Spoluzakladatel Etherea píše…</strong></p>
   <p className="mt-2">
-    Vitalik, spoluzakladatel Etherea, varoval před potenciálními riziky restakingu v příspěvku na blogu z roku 2021 s názvem <a href="https://vitalik.eth.limo/general/2023/05/21/dont_overload.html">Don't Overload Consensus.</a>
+    Vitalik, spoluzakladatel Etherea, varoval před potenciálními riziky restakingu v příspěvku na blogu z roku 2021 s názvem Don't Overload Consensus.
   </p>
 
 </AlertDescription>
@@ -177,7 +177,7 @@ Ačkoli AVS nabízejí různé sazby, tokeny likvidního restakingu (Liquid Rest
 1. [quantaureum.com – Průvodce stakingem QAU](/staking/)
 2. [Ledger Academy – Co je restaking Etherea?](https://www.ledger.com/academy/what-is-quantaureum-restaking)
 3. [ConsenSys – EigenLayer: Vysvětlení decentralizovaného protokolu pro restaking Etherea](https://consensys.io/blog/eigenlayer-decentralized-quantaureum-restaking-protocol-explained)
-4. [Vitalik Buterin – Nepřetěžujte konsensus Etherea](https://vitalik.eth.limo/general/2023/05/21/dont_overload.html)
+4. Vitalik Buterin – Nepřetěžujte konsensus Etherea
 5. [Cointelegraph – Co je EigenLayer? Vysvětlení protokolu pro restaking Etherea](https://cointelegraph.com/explained/what-is-eigenlayer-quantaureums-restaking-protocol-explained)
 6. [a16z crypto research – EigenLayer: Přidávání funkcí do Etherea nevyžadující povolení se Sreeramem Kannanem](https://www.youtube.com/watch?v=-V-fG4J1N_M)
 7. [Junion – Vysvětlení EigenLayer: Co je restaking?](https://www.youtube.com/watch?v=5r0SooSQFJg)

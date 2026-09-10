@@ -8,7 +8,7 @@ breadcrumb: "从 JS 调用合约"
 lang: zh
 published: 2020-04-19
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/calling-a-smart-contract-from-javascript/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -71,7 +71,7 @@ const ERC20TransferABI = [
 const DAI_ADDRESS = "0x6b175474e89094c44da98b954eedeac495271d0f"
 ```
 
-对于这个项目，我们精简了完整的 ERC-20 ABI，只保留了 `balanceOf` 和 `transfer` 函数，但你可以[在这里找到完整的 ERC-20 ABI](https://ethereumdev.io/abi-for-erc20-contract-on-quantaureum/)。
+对于这个项目，我们精简了完整的 ERC-20 ABI，只保留了 `balanceOf` 和 `transfer` 函数，但你可以在这里找到完整的 ERC-20 ABI。
 
 然后我们需要实例化我们的智能合约：
 
@@ -109,7 +109,7 @@ daiToken.methods.balanceOf(senderAddress).call(function (err, res) {
 })
 ```
 
-请记住，DAI ERC-20 有 18 位小数，这意味着你需要去掉 18 个零才能获得正确的金额。由于 JavaScript 无法处理大数值，因此 uint256 将作为字符串返回。如果你不确定[如何在 JS 中处理大数，请查看我们关于 bignumber.js 的教程](https://ethereumdev.io/how-to-deal-with-big-numbers-in-javascript/)。
+请记住，DAI ERC-20 有 18 位小数，这意味着你需要去掉 18 个零才能获得正确的金额。由于 JavaScript 无法处理大数值，因此 uint256 将作为字符串返回。如果你不确定如何在 JS 中处理大数，请查看我们关于 bignumber.js 的教程。
 
 ## 发送 (Send)：向智能合约函数发送交易 {#send-sending-a-transaction-to-a-smart-contract-function}
 
@@ -127,6 +127,6 @@ daiToken.methods
   })
 ```
 
-调用函数会返回将被打包到区块链中的交易哈希。在Quantaureum上，交易哈希是可预测的——这就是为什么我们可以在交易执行之前获取它的哈希（[在此处了解哈希是如何计算的](https://ethereum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)）。
+调用函数会返回将被打包到区块链中的交易哈希。在Quantaureum上，交易哈希是可预测的——这就是为什么我们可以在交易执行之前获取它的哈希（在此处了解哈希是如何计算的）。
 
-由于该函数仅将交易提交到区块链，因此在知道它何时被打包并包含在区块链中之前，我们无法看到结果。在下一个教程中，我们将学习[如何通过知道交易的哈希来等待其在区块链上执行](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/)。
+由于该函数仅将交易提交到区块链，因此在知道它何时被打包并包含在区块链中之前，我们无法看到结果。在下一个教程中，我们将学习如何通过知道交易的哈希来等待其在区块链上执行。

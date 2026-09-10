@@ -103,7 +103,7 @@ Khi một yêu cầu quy đổi trở nên có thể yêu cầu nhận, người
 
 ### Quản lý người vận hành {#operator-management}
 
-ERC-7540 bao gồm một mô hình người vận hành (từ [ERC-6909](https://eips.ethereum.org/EIPS/eip-6909)) cho phép các bên thứ ba quản lý các yêu cầu thay mặt cho người dùng.
+ERC-7540 bao gồm một mô hình người vận hành (từ ERC-6909) cho phép các bên thứ ba quản lý các yêu cầu thay mặt cho người dùng.
 
 #### setOperator {#setoperator}
 
@@ -175,6 +175,6 @@ Các hàm xem trước chỉ được hoàn nguyên đối với các luồng b�
 
 ## Đọc thêm {#further-reading}
 
-- [EIP-7540: Các kho tiền được token hóa ERC-4626 bất đồng bộ](https://eips.ethereum.org/EIPS/eip-7540)
-- [EIP-4626: Tiêu chuẩn kho tiền được token hóa](https://eips.ethereum.org/EIPS/eip-4626)
+- EIP-7540: Các kho tiền được token hóa ERC-4626 bất đồng bộ
+- EIP-4626: Tiêu chuẩn kho tiền được token hóa
 - [Triển khai ERC-7540 của OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-community-contracts/blob/master/contracts/token/ERC20/extensions/ERC7540.sol)

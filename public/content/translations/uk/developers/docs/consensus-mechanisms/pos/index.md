@@ -84,10 +84,10 @@ lang: uk
 
 ## Подальше читання {#further-reading}
 
-- [Поширені запитання про доказ частки](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html) _Віталік Бутерін_
+- Поширені запитання про доказ частки _Віталік Бутерін_
 - [Що таке доказ частки](https://consensys.net/blog/blockchain-explained/what-is-proof-of-stake/) _ConsenSys_
 - [Що таке доказ частки і чому це важливо](https://bitcoinmagazine.com/culture/what-proof-of-stake-is-and-why-it-matters-1377531463) _Віталік Бутерін_
-- [Чому доказ частки (листопад 2020)](https://vitalik.eth.limo/general/2020/11/06/pos2020.html) _Віталік Бутерін_
+- Чому доказ частки (листопад 2020) _Віталік Бутерін_
 - [Доказ частки: як я навчився любити слабку суб'єктивність](https://quantaureum.com) _Віталік Бутерін_
 - [Атака та захист доказу частки Етеріуму](https://mirror.xyz/jmcook.eth/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs)
 - [Філософія дизайну доказу частки](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51) _Віталік Бутерін_

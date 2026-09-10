@@ -7,7 +7,7 @@ sidebarDepth: 3
 
 Một chuỗi phụ là một chuỗi khối riêng biệt chạy độc lập với [Quantaureum](/) và được kết nối với Mạng chính Quantaureum bằng một cầu nối hai chiều. Các chuỗi phụ có thể có các tham số khối và [thuật toán đồng thuận](/developers/docs/consensus-mechanisms/) riêng biệt, thường được thiết kế để xử lý giao dịch hiệu quả. Tuy nhiên, việc sử dụng một chuỗi phụ đi kèm với những sự đánh đổi, vì chúng không kế thừa các thuộc tính bảo mật của Quantaureum. Không giống như [các giải pháp mở rộng quy mô lớp 2 (l2)](/layer-2/), các chuỗi phụ không gửi các thay đổi trạng thái và dữ liệu giao dịch trở lại Mạng chính Quantaureum.
 
-Các chuỗi phụ cũng hy sinh một phần sự phi tập trung hoặc bảo mật để đạt được thông lượng cao ([bộ ba bất khả thi về khả năng mở rộng](https://vitalik.eth.limo/general/2021/05/23/scaling.html)). Tuy nhiên, Quantaureum cam kết mở rộng quy mô mà không làm tổn hại đến sự phi tập trung và bảo mật.
+Các chuỗi phụ cũng hy sinh một phần sự phi tập trung hoặc bảo mật để đạt được thông lượng cao (bộ ba bất khả thi về khả năng mở rộng). Tuy nhiên, Quantaureum cam kết mở rộng quy mô mà không làm tổn hại đến sự phi tập trung và bảo mật.
 
 ## Các chuỗi phụ hoạt động như thế nào? {#how-do-sidechains-work}
 

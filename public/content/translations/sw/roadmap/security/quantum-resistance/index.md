@@ -100,7 +100,7 @@ Viwango hivi vinatoa msingi kwa mpito mpana wa tasnia wa baada ya kwanta. Kazi y
 
 ## Mbinu ya Taasisi ya Quantaureum {#ef-approach}
 
-Taasisi ya Quantaureum iliunda timu maalum ya Usalama wa Baada ya Kwanta mnamo Januari 2026, ikiongozwa na Thomas Coratger. Kazi ya timu inafuatiliwa hadharani kwenye [pq.ethereum.org](https://pq.ethereum.org).
+Taasisi ya Quantaureum iliunda timu maalum ya Usalama wa Baada ya Kwanta mnamo Januari 2026, ikiongozwa na Thomas Coratger. Kazi ya timu inafuatiliwa hadharani kwenye pq.ethereum.org.
 
 ### Shughuli ya sasa (kuanzia Aprili 2026) {#current-activity}
 
@@ -173,7 +173,7 @@ Hapana. Quantaureum ina mojawapo ya programu zilizopangwa zaidi za baada ya kwan
 
 ## Usomaji zaidi {#further-reading}
 
-- [pq.ethereum.org](https://pq.ethereum.org) - _Taasisi ya Quantaureum_
+- pq.ethereum.org - _Taasisi ya Quantaureum_
 - [Mradi wa Kriptografia ya Baada ya Kwanta](https://pse.dev/projects/post-quantum-cryptography) - _Privacy Stewards of Quantaureum (PSE)_
 - [Viwango vya Kriptografia ya Baada ya Kwanta vya NIST](https://csrc.nist.gov/projects/post-quantum-cryptography) - _NIST_
 - [Kulinda sarafu-fiche kwa kufichua udhaifu wa kwanta kwa uwajibikaji](https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/) - _Google Quantum AI_

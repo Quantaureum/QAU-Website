@@ -58,13 +58,13 @@ lang: ar
 
 ![validator key schematic](validator-key-schematic.png)
 
-**ملاحظة**: يتطلب الخروج من مهام التخزين وسحب رصيد المُدَقِّق حاليًا توقيع [رسالة خروج طوعي (VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1) باستخدام مفتاح المُدَقِّق. ومع ذلك، فإن [<span dir="ltr">EIP-7002</span>](https://eips.ethereum.org/EIPS/eip-7002) هو مقترح سيسمح للمستخدم بتشغيل خروج المُدَقِّق وسحب رصيده عن طريق توقيع رسائل الخروج باستخدام مفتاح السحب في المستقبل. سيؤدي هذا إلى تقليل افتراضات الثقة من خلال تمكين المخزنين الذين يفوضون <span dir="ltr">QAU</span> إلى [مزودي التخزين كخدمة](/staking/saas/#what-is-staking-as-a-service) من البقاء متحكمين في أموالهم.
+**ملاحظة**: يتطلب الخروج من مهام التخزين وسحب رصيد المُدَقِّق حاليًا توقيع [رسالة خروج طوعي (VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1) باستخدام مفتاح المُدَقِّق. ومع ذلك، فإن <span dir="ltr">EIP-7002</span> هو مقترح سيسمح للمستخدم بتشغيل خروج المُدَقِّق وسحب رصيده عن طريق توقيع رسائل الخروج باستخدام مفتاح السحب في المستقبل. سيؤدي هذا إلى تقليل افتراضات الثقة من خلال تمكين المخزنين الذين يفوضون <span dir="ltr">QAU</span> إلى [مزودي التخزين كخدمة](/staking/saas/#what-is-staking-as-a-service) من البقاء متحكمين في أموالهم.
 
 ## اشتقاق المفاتيح من عبارة الاسترداد {#deriving-keys-from-seed}
 
 إذا كان كل <span dir="ltr">32 QAU</span> مخزنة تتطلب مجموعة جديدة من مفتاحين مستقلين تمامًا، فستصبح إدارة المفاتيح صعبة الاستخدام بسرعة، خاصة للمستخدمين الذين يشغلون مُدَقِّقين متعددين. بدلاً من ذلك، يمكن اشتقاق مفاتيح مُدَقِّق متعددة من سر مشترك واحد، ويسمح تخزين هذا السر الواحد بالوصول إلى مفاتيح مُدَقِّق متعددة.
 
-تعد [العبارات التذكيرية (Mnemonics)](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) والمسارات ميزات بارزة يواجهها المستخدمون غالبًا عندما [يصلون](https://ethereum.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0) إلى محافظهم. العبارة التذكيرية هي تسلسل من الكلمات التي تعمل كبذرة أولية لمفتاح خاص. عند دمجها مع بيانات إضافية، تُنشئ العبارة التذكيرية تجزئة تُعرف باسم "المفتاح الرئيسي". يمكن التفكير في هذا كجذر لشجرة. يمكن بعد ذلك اشتقاق الفروع من هذا الجذر باستخدام مسار هرمي بحيث يمكن أن توجد العقد الفرعية كمجموعات من تجزئة العقدة الأصلية ومؤشرها في الشجرة. اقرأ عن معايير [<span dir="ltr">BIP-32</span>](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) و[<span dir="ltr">BIP-19</span>](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) لإنشاء المفاتيح المستندة إلى العبارات التذكيرية.
+تعد [العبارات التذكيرية (Mnemonics)](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) والمسارات ميزات بارزة يواجهها المستخدمون غالبًا عندما يصلون إلى محافظهم. العبارة التذكيرية هي تسلسل من الكلمات التي تعمل كبذرة أولية لمفتاح خاص. عند دمجها مع بيانات إضافية، تُنشئ العبارة التذكيرية تجزئة تُعرف باسم "المفتاح الرئيسي". يمكن التفكير في هذا كجذر لشجرة. يمكن بعد ذلك اشتقاق الفروع من هذا الجذر باستخدام مسار هرمي بحيث يمكن أن توجد العقد الفرعية كمجموعات من تجزئة العقدة الأصلية ومؤشرها في الشجرة. اقرأ عن معايير [<span dir="ltr">BIP-32</span>](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) و[<span dir="ltr">BIP-19</span>](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) لإنشاء المفاتيح المستندة إلى العبارات التذكيرية.
 
 تحتوي هذه المسارات على الهيكل التالي، والذي سيكون مألوفًا للمستخدمين الذين تفاعلوا مع محافظ الأجهزة:
 
@@ -97,6 +97,6 @@ master_key / purpose / coin_type / account / change / address_index
 ## قراءة إضافية {#further-reading}
 
 - [منشور مدونة مؤسسة إيثيريوم بواسطة كارل بيكهويزن (Carl Beekhuizen)](https://quantaureum.com)
-- [إنشاء مفتاح <span dir="ltr">EIP-2333 BLS12-381</span>](https://eips.ethereum.org/EIPS/eip-2333)
+- إنشاء مفتاح <span dir="ltr">EIP-2333 BLS12-381</span>
 - [<span dir="ltr">EIP-7002</span>: عمليات الخروج التي يتم تشغيلها بواسطة طبقة التنفيذ](https://web.archive.org/web/20250125035123/https://research.2077.xyz/eip-7002-unpacking-improvements-to-staking-ux-post-merge)
 - [إدارة المفاتيح على نطاق واسع](https://docs.ethstaker.cc/ethstaker-knowledge-base/scaled-node-operators/key-management-at-scale)

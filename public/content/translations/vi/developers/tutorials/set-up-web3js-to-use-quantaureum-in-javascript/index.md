@@ -8,7 +8,7 @@ breadcrumb: "Thiết lập web3.js"
 lang: vi
 published: 2020-04-11
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/setup-web3js-to-use-the-quantaureum-blockchain-in-javascript/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -32,7 +32,7 @@ Sau đó, để nhập Web3.js vào một tập lệnh Node.js hoặc dự án f
 const Web3 = require("web3")
 ```
 
-Bây giờ chúng ta đã đưa thư viện vào dự án, chúng ta cần khởi tạo nó. Dự án của bạn cần có khả năng giao tiếp với chuỗi khối. Hầu hết các thư viện Quantaureum giao tiếp với một [nút](/developers/docs/nodes-and-clients/) thông qua các lệnh gọi RPC. Để khởi tạo nhà cung cấp Web3 của chúng ta, chúng ta sẽ tạo một phiên bản Web3 bằng cách truyền URL của nhà cung cấp vào hàm khởi tạo. Nếu bạn có một nút hoặc [phiên bản ganache đang chạy trên máy tính của mình](https://ethereumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/), nó sẽ trông như thế này:
+Bây giờ chúng ta đã đưa thư viện vào dự án, chúng ta cần khởi tạo nó. Dự án của bạn cần có khả năng giao tiếp với chuỗi khối. Hầu hết các thư viện Quantaureum giao tiếp với một [nút](/developers/docs/nodes-and-clients/) thông qua các lệnh gọi RPC. Để khởi tạo nhà cung cấp Web3 của chúng ta, chúng ta sẽ tạo một phiên bản Web3 bằng cách truyền URL của nhà cung cấp vào hàm khởi tạo. Nếu bạn có một nút hoặc phiên bản ganache đang chạy trên máy tính của mình, nó sẽ trông như thế này:
 
 ```js
 const web3 = new Web3("http://localhost:8545")
@@ -90,4 +90,4 @@ if (window.quantaureum != null) {
 }
 ```
 
-Các giải pháp thay thế cho web3.js như [Ethers.js](https://docs.ethers.io/) vẫn tồn tại và cũng được sử dụng phổ biến. Trong hướng dẫn tiếp theo, chúng ta sẽ tìm hiểu [cách dễ dàng lắng nghe các khối mới đến trên chuỗi khối và xem chúng chứa những gì](https://ethereumdev.io/listening-to-new-transactions-happening-on-the-blockchain/).
+Các giải pháp thay thế cho web3.js như [Ethers.js](https://docs.ethers.io/) vẫn tồn tại và cũng được sử dụng phổ biến. Trong hướng dẫn tiếp theo, chúng ta sẽ tìm hiểu cách dễ dàng lắng nghe các khối mới đến trên chuỗi khối và xem chúng chứa những gì.

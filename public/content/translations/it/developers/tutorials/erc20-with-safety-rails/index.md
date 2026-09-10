@@ -17,7 +17,7 @@ Nota che, sebbene utilizzeremo il [contratto del token ERC-20 di OpenZeppelin](h
 
 Se vuoi vedere il codice sorgente completo:
 
-1. Apri l'[IDE Remix](https://remix.ethereum.org/).
+1. Apri l'IDE Remix.
 2. Fai clic sull'icona per clonare da GitHub (![clone github icon](icon-clone.png)).
 3. Clona il repository GitHub `https://github.com/qbzzt/20220815-erc20-safety-rails`.
 4. Apri **contracts > erc20-safety-rails.sol**.
@@ -40,7 +40,7 @@ Prima di poter aggiungere la funzionalità delle misure di sicurezza, abbiamo bi
 
 3. Scorri verso l'alto e fai clic su **Open in Remix** (per Remix) o su **Download** per utilizzare un ambiente diverso. Darò per scontato che tu stia utilizzando Remix; se usi qualcos'altro, apporta semplicemente le modifiche appropriate.
 4. Ora abbiamo un contratto ERC-20 completamente funzionante. Puoi espandere `.deps` > `npm` per vedere il codice importato.
-5. Compila, distribuisci e gioca con il contratto per vedere che funziona come un contratto ERC-20. Se hai bisogno di imparare a usare Remix, [usa questo tutorial](https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth).
+5. Compila, distribuisci e gioca con il contratto per vedere che funziona come un contratto ERC-20. Se hai bisogno di imparare a usare Remix, usa questo tutorial.
 
 ## Errori comuni {#common-mistakes}
 
@@ -185,7 +185,7 @@ Congelare e scongelare i contratti richiede diverse modifiche:
 
 ### Pulizia degli asset {#asset-cleanup}
 
-Per rilasciare i token ERC-20 detenuti da questo contratto dobbiamo chiamare una funzione sul contratto del token a cui appartengono, ovvero [`transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer) o [`approve`](https://eips.ethereum.org/EIPS/eip-20#approve). Non ha senso sprecare gas in questo caso per le autorizzazioni (allowance), tanto vale trasferire direttamente.
+Per rilasciare i token ERC-20 detenuti da questo contratto dobbiamo chiamare una funzione sul contratto del token a cui appartengono, ovvero `transfer` o `approve`. Non ha senso sprecare gas in questo caso per le autorizzazioni (allowance), tanto vale trasferire direttamente.
 
 ```solidity
     function cleanupERC20(

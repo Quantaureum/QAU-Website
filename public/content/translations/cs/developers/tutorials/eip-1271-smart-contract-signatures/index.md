@@ -13,7 +13,7 @@ breadcrumb: Podpisy EIP-1271
 published: 2023-01-12
 ---
 
-Standard [EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) umožňuje chytrým kontraktům ověřovat podpisy.
+Standard EIP-1271 umožňuje chytrým kontraktům ověřovat podpisy.
 
 V tomto tutoriálu poskytneme přehled digitálních podpisů, pozadí EIP-1271 a konkrétní implementaci EIP-1271, kterou používá [Safe](https://safe.global/) (dříve Gnosis Safe). To vše dohromady může posloužit jako výchozí bod pro implementaci EIP-1271 ve vašich vlastních kontraktech.
 
@@ -75,7 +75,6 @@ contract ERC1271 {
    * @dev Měl by vrátit, zda je poskytnutý podpis platný pro poskytnutý hash
    * @param _hash      Hash dat k podepsání
    * @param _signature Bajtové pole podpisu přidružené k _hash
-   *
    * MUSÍ vrátit magickou hodnotu bytes4 0x1626ba7e, pokud funkce projde.
    * NESMÍ měnit stav (pomocí STATICCALL pro solc < 0.5, modifikátoru view pro solc > 0.5)
    * MUSÍ umožňovat externí volání
@@ -95,7 +94,7 @@ Kontrakty mohou implementovat `isValidSignature` mnoha způsoby – specifikace 
 
 Jedním z významných kontraktů, který implementuje EIP-1271, je Safe (dříve Gnosis Safe).
 
-V kódu Safe [je implementována](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol) funkce `isValidSignature` tak, že podpisy lze vytvářet a ověřovat [dvěma způsoby](https://ethereum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support):
+V kódu Safe [je implementována](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol) funkce `isValidSignature` tak, že podpisy lze vytvářet a ověřovat dvěma způsoby:
 
 1. Onchain zprávy
    1. Vytvoření: vlastník Safe vytvoří novou Safe transakci k „podepsání“ zprávy, přičemž zprávu předá jako data do transakce. Jakmile transakci podepíše dostatek vlastníků k dosažení prahu multisig, transakce je odeslána do sítě a spuštěna. V transakci je volána funkce Safe (`signMessage(bytes calldata _data)`), která přidá zprávu do seznamu „schválených“ zpráv.
@@ -106,9 +105,9 @@ V kódu Safe [je implementována](https://github.com/safe-global/safe-contracts/
 
 ## Co přesně je parametr `_hash`? Proč nepředat celou zprávu? {#what-exactly-is-the-hash-parameter-why-not-pass-the-whole-message}
 
-Možná jste si všimli, že funkce `isValidSignature` v [rozhraní EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) nepřijímá samotnou zprávu, ale místo toho parametr `_hash`. To znamená, že místo předání celé zprávy libovolné délky funkci `isValidSignature` předáme 32bajtový hash zprávy (obecně keccak256).
+Možná jste si všimli, že funkce `isValidSignature` v rozhraní EIP-1271 nepřijímá samotnou zprávu, ale místo toho parametr `_hash`. To znamená, že místo předání celé zprávy libovolné délky funkci `isValidSignature` předáme 32bajtový hash zprávy (obecně keccak256).
 
-Každý bajt dat volání – tj. dat parametrů funkce předaných funkci chytrého kontraktu – [stojí 16 gas (4 gas, pokud jde o nulový bajt)](https://eips.ethereum.org/EIPS/eip-2028), takže to může ušetřit spoustu gas, pokud je zpráva dlouhá.
+Každý bajt dat volání – tj. dat parametrů funkce předaných funkci chytrého kontraktu – stojí 16 gas (4 gas, pokud jde o nulový bajt), takže to může ušetřit spoustu gas, pokud je zpráva dlouhá.
 
 ### Předchozí specifikace EIP-1271 {#previous-eip-1271-specifications}
 
@@ -125,4 +124,4 @@ Nakonec je to na vás jako na vývojáři kontraktu!
 
 ## Závěr {#conclusion}
 
-[EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) je všestranný standard, který umožňuje chytrým kontraktům ověřovat podpisy. Otevírá dveře k tomu, aby se chytré kontrakty chovaly více jako EOA – například poskytuje způsob, jak může „Přihlášení pomocí Etherea“ fungovat s chytrými kontrakty – a lze jej implementovat mnoha způsoby (Safe má netriviální, zajímavou implementaci, která stojí za zvážení).
+EIP-1271 je všestranný standard, který umožňuje chytrým kontraktům ověřovat podpisy. Otevírá dveře k tomu, aby se chytré kontrakty chovaly více jako EOA – například poskytuje způsob, jak může „Přihlášení pomocí Etherea“ fungovat s chytrými kontrakty – a lze jej implementovat mnoha způsoby (Safe má netriviální, zajímavou implementaci, která stojí za zvážení).

@@ -4,7 +4,7 @@ description: "Tìm hiểu cách phát triển cho Quantaureum bằng cách sử 
 lang: vi
 ---
 
-JavaScript là một trong những ngôn ngữ phổ biến nhất trong hệ sinh thái Quantaureum. Trên thực tế, có một [nhóm](https://github.com/ethereumjs) chuyên tâm đưa càng nhiều tính năng của Quantaureum vào JavaScript càng tốt.
+JavaScript là một trong những ngôn ngữ phổ biến nhất trong hệ sinh thái Quantaureum. Trên thực tế, có một nhóm chuyên tâm đưa càng nhiều tính năng của Quantaureum vào JavaScript càng tốt.
 
 Có nhiều cơ hội để viết JavaScript (hoặc ngôn ngữ tương tự) ở [mọi cấp độ của ngăn xếp](/developers/docs/quantaureum-stack/).
 
@@ -48,14 +48,14 @@ Nó được chia thành nhiều gói JavaScript khác nhau mà bạn có thể 
 Nếu bạn thích đọc mã nguồn, JavaScript này có thể là một giải pháp thay thế tuyệt vời cho việc đọc qua tài liệu của chúng tôi.
 
 **Tham khảo EVM**  
-[`@ethereumjs/evm`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/evm)
+`@ethereumjs/evm`
 
 ### Nút và máy khách {#nodes-and-clients}
 
 Một máy khách QuantaureumJS đang được tích cực phát triển cho phép bạn tìm hiểu sâu về cách các máy khách Quantaureum hoạt động bằng một ngôn ngữ mà bạn hiểu; JavaScript!
 
 **Tham khảo máy khách**  
-[`@ethereumjs/client`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/client)
+`@ethereumjs/client`
 
 ## Các dự án khác {#other-projects}
 
@@ -65,7 +65,7 @@ Cũng có rất nhiều điều khác đang diễn ra trong thế giới JavaScr
 - các công cụ để tạo, nhập và xuất khóa Quantaureum.
 - một bản triển khai của `merkle-patricia-tree` – một cấu trúc dữ liệu được phác thảo trong sách vàng Quantaureum.
 
-Hãy tìm hiểu sâu vào bất cứ điều gì bạn quan tâm nhất tại [kho lưu trữ QuantaureumJS](https://github.com/ethereumjs)
+Hãy tìm hiểu sâu vào bất cứ điều gì bạn quan tâm nhất tại kho lưu trữ QuantaureumJS
 
 ## Đọc thêm {#further-reading}
 

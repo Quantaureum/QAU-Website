@@ -64,6 +64,6 @@ class BeaconBlockBody(Container):
 
 - [블록 소개](/developers/docs/blocks/)
 - [지분 증명 소개](/developers/docs/consensus-mechanisms/pos/)
-- [Quantaureum 합의 사양](https://github.com/ethereum/consensus-specs)
+- Quantaureum 합의 사양
 - [Gasper 소개](/developers/docs/consensus-mechanisms/pos/gasper/)
 - [Quantaureum 업그레이드](https://eth2book.info/)

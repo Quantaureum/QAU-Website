@@ -23,7 +23,7 @@ ERC-20과 같은 표준의 목적은 지갑이나 탈중앙화 거래소와 같�
 
 숙련된 프로그래머라면 [Java](https://www.w3schools.com/java/java_interface.asp)나 [C 헤더 파일](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html)에서 비슷한 구조를 본 기억이 있을 것입니다.
 
-이것은 오픈제플린의 [ERC-20 인터페이스](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) 정의입니다. [사람이 읽을 수 있는 표준](https://eips.ethereum.org/EIPS/eip-20)을 Solidity 코드로 번역한 것입니다. 물론 인터페이스 자체는 어떤 작업을 _어떻게_ 수행할지 정의하지 않습니다. 이는 아래의 컨트랙트 소스 코드에 설명되어 있습니다.
+이것은 오픈제플린의 [ERC-20 인터페이스](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) 정의입니다. 사람이 읽을 수 있는 표준을 Solidity 코드로 번역한 것입니다. 물론 인터페이스 자체는 어떤 작업을 _어떻게_ 수행할지 정의하지 않습니다. 이는 아래의 컨트랙트 소스 코드에 설명되어 있습니다.
 
 &nbsp;
 
@@ -89,9 +89,7 @@ interface IERC20 {
 ```solidity
     /**
      * @dev 호출자의 계정에서 `recipient`로 `amount`만큼의 토큰을 전송합니다.
-     *
      * 작업의 성공 여부를 나타내는 부울 값을 반환합니다.
-     *
      * {Transfer} 이벤트를 발생시킵니다.
      */
     function transfer(address recipient, uint256 amount) external returns (bool);
@@ -113,7 +111,6 @@ interface IERC20 {
 ```solidity
     /**
      * @dev `spender`가 {transferFrom}을 통해 `owner`를 대신하여 사용할 수 있도록 허용된 토큰의 남은 양을 반환합니다. 기본값은 0입니다.
-     *
      * 이 값은 {approve} 또는 {transferFrom}이 호출될 때 변경됩니다.
      */
     function allowance(address owner, address spender) external view returns (uint256);
@@ -126,12 +123,9 @@ interface IERC20 {
 ```solidity
     /**
      * @dev 호출자의 토큰에 대해 `spender`의 허용량으로 `amount`를 설정합니다.
-     *
      * 작업의 성공 여부를 나타내는 부울 값을 반환합니다.
-     *
      * 중요: 이 메서드를 사용하여 허용량을 변경하면 불행한 트랜잭션 순서로 인해 누군가가 이전 허용량과 새 허용량을 모두 사용할 수 있는 위험이 발생할 수 있습니다. 이 경쟁 조건을 완화하는 한 가지 가능한 해결책은 먼저 spender의 허용량을 0으로 줄인 다음 원하는 값을 설정하는 것입니다:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
-     *
+
      * {Approval} 이벤트를 발생시킵니다.
      */
     function approve(address spender, uint256 amount) external returns (bool);
@@ -144,9 +138,7 @@ interface IERC20 {
 ```solidity
     /**
      * @dev 허용량 메커니즘을 사용하여 `sender`에서 `recipient`로 `amount`만큼의 토큰을 전송합니다. 그런 다음 호출자의 허용량에서 `amount`가 차감됩니다.
-     *
      * 작업의 성공 여부를 나타내는 부울 값을 반환합니다.
-     *
      * {Transfer} 이벤트를 발생시킵니다.
      */
     function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
@@ -160,7 +152,6 @@ interface IERC20 {
 
     /**
      * @dev `value`만큼의 토큰이 한 계정(`from`)에서 다른 계정(`to`)으로 전송될 때 발생합니다.
-     *
      * `value`는 0일 수 있습니다.
      */
     event Transfer(address indexed from, address indexed to, uint256 value);
@@ -197,7 +188,7 @@ import "../../math/SafeMath.sol";
 ```
 
 - `GSN/Context.sol`는 QAU가 없는 사용자도 블록체인을 사용할 수 있게 해주는 시스템인 [OpenGSN](https://opengsn.org/)을 사용하는 데 필요한 정의입니다. 이것은 이전 버전이므로 OpenGSN과 통합하려면 [이 튜토리얼을 사용하세요](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [SafeMath 라이브러리](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/)는 Solidity 버전 <strong>&lt;0.8.0</strong>에서 산술 오버플로/언더플로를 방지합니다. Solidity ≥0.8.0에서는 산술 연산이 오버플로/언더플로 시 자동으로 되돌리기(revert)를 수행하므로 SafeMath가 필요하지 않습니다. 이 컨트랙트는 이전 컴파일러 버전과의 이전 버전 호환성을 위해 SafeMath를 사용합니다.
+- SafeMath 라이브러리는 Solidity 버전 <strong>&lt;0.8.0</strong>에서 산술 오버플로/언더플로를 방지합니다. Solidity ≥0.8.0에서는 산술 연산이 오버플로/언더플로 시 자동으로 되돌리기(revert)를 수행하므로 SafeMath가 필요하지 않습니다. 이 컨트랙트는 이전 컴파일러 버전과의 이전 버전 호환성을 위해 SafeMath를 사용합니다.
 
 &nbsp;
 
@@ -206,18 +197,13 @@ import "../../math/SafeMath.sol";
 ```solidity
 /**
  * @dev {IERC20} 인터페이스의 구현입니다.
- *
  * 이 구현은 토큰이 생성되는 방식에 구애받지 않습니다. 즉, 파생된 컨트랙트에서 {_mint}를 사용하여 공급 메커니즘을 추가해야 합니다.
  * 일반적인 메커니즘은 {ERC20PresetMinterPauser}를 참조하세요.
- *
  * 팁: 자세한 내용은 가이드를 참조하세요
  * https://forum.zeppelin.solutions/t/how-to-implement-erc20-supply-mechanisms/226[공급 메커니즘 구현 방법].
- *
  * 우리는 일반적인 오픈제플린 가이드라인을 따랐습니다: 함수는 실패 시 `false`를 반환하는 대신 revert를 수행합니다. 그럼에도 불구하고 이러한 동작은 관례적이며 ERC-20 애플리케이션의 기대치와 충돌하지 않습니다.
- *
  * 또한 {transferFrom} 호출 시 {Approval} 이벤트가 발생합니다.
  * 이를 통해 애플리케이션은 해당 이벤트를 수신하는 것만으로 모든 계정에 대한 허용량을 재구성할 수 있습니다. 사양에서 요구하지 않기 때문에 EIP의 다른 구현은 이러한 이벤트를 발생시키지 않을 수 있습니다.
- *
  * 마지막으로, 허용량 설정과 관련된 잘 알려진 문제를 완화하기 위해 비표준 {decreaseAllowance} 및 {increaseAllowance}
  * 함수가 추가되었습니다. {IERC20-approve}를 참조하세요.
  */
@@ -291,9 +277,7 @@ contract ERC20 is Context, IERC20 {
 ```solidity
     /**
      * @dev {name} 및 {symbol}의 값을 설정하고, {decimals}를 기본값인 18로 초기화합니다.
-     *
      * {decimals}에 다른 값을 선택하려면 {_setupDecimals}를 사용하세요.
-     *
      * 이 세 가지 값은 모두 불변입니다: 생성자 실행 중에 한 번만 설정할 수 있습니다.
      */
     constructor (string memory name_, string memory symbol_) public {
@@ -327,9 +311,7 @@ contract ERC20 is Context, IERC20 {
     /**
      * @dev 사용자 표현을 얻기 위해 사용되는 소수점 이하 자릿수를 반환합니다.
      * 예를 들어, `decimals`가 `2`인 경우 `505` 토큰의 잔액은 사용자에게 `5,05` (`505 / 10 ** 2`)로 표시되어야 합니다.
-     *
      * 토큰은 일반적으로 QAU와 Wei의 관계를 모방하여 18의 값을 선택합니다. {_setupDecimals}가 호출되지 않는 한 이 값은 {ERC20}이 사용하는 값입니다.
-     *
      * 참고: 이 정보는 _표시_ 목적으로만 사용됩니다: {IERC20-balanceOf} 및 {IERC20-transfer}를 포함하여 컨트랙트의 산술 연산에는 전혀 영향을 미치지 않습니다.
      */
     function decimals() public view returns (uint8) {
@@ -382,9 +364,7 @@ contract ERC20 is Context, IERC20 {
 ```solidity
     /**
      * @dev {IERC20-transfer}를 참조하세요.
-     *
      * 요구 사항:
-     *
      * - `recipient`는 제로 주소일 수 없습니다.
      * - 호출자는 최소한 `amount`만큼의 잔액을 가지고 있어야 합니다.
      */
@@ -427,9 +407,7 @@ contract ERC20 is Context, IERC20 {
 ```solidity
     /**
      * @dev {IERC20-approve}를 참조하세요.
-     *
      * 요구 사항:
-     *
      * - `spender`는 제로 주소일 수 없습니다.
      */
     function approve(address spender, uint256 amount) public virtual override returns (bool) {
@@ -457,11 +435,8 @@ contract ERC20 is Context, IERC20 {
 ```solidity
     /**
      * @dev {IERC20-transferFrom}을 참조하세요.
-     *
      * 업데이트된 허용량을 나타내는 {Approval} 이벤트를 발생시킵니다. 이는 EIP에서 요구하지 않습니다. {ERC20}의 시작 부분에 있는 참고 사항을 참조하세요.
-     *
      * 요구 사항:
-     *
      * - `sender` 및 `recipient`는 제로 주소일 수 없습니다.
      * - `sender`는 최소한 `amount`만큼의 잔액을 가지고 있어야 합니다.
      * - 호출자는 ``sender``의 토큰에 대해 최소한 `amount`만큼의 허용량을 가지고 있어야 합니다.
@@ -517,13 +492,9 @@ B:
 ```solidity
     /**
      * @dev 호출자가 `spender`에게 부여한 허용량을 원자적으로 증가시킵니다.
-     *
      * 이는 {IERC20-approve}에 설명된 문제에 대한 완화책으로 사용할 수 있는 {approve}의 대안입니다.
-     *
      * 업데이트된 허용량을 나타내는 {Approval} 이벤트를 발생시킵니다.
-     *
      * 요구 사항:
-     *
      * - `spender`는 제로 주소일 수 없습니다.
      */
     function increaseAllowance(address spender, uint256 addedValue) public virtual returns (bool) {
@@ -538,13 +509,9 @@ B:
 
     /**
      * @dev 호출자가 `spender`에게 부여한 허용량을 원자적으로 감소시킵니다.
-     *
      * 이는 {IERC20-approve}에 설명된 문제에 대한 완화책으로 사용할 수 있는 {approve}의 대안입니다.
-     *
      * 업데이트된 허용량을 나타내는 {Approval} 이벤트를 발생시킵니다.
-     *
      * 요구 사항:
-     *
      * - `spender`는 제로 주소일 수 없습니다.
      * - `spender`는 호출자에 대해 최소한 `subtractedValue`만큼의 허용량을 가지고 있어야 합니다.
      */
@@ -564,13 +531,9 @@ B:
 ```solidity
     /**
      * @dev `sender`에서 `recipient`로 `amount`만큼의 토큰을 전송합니다.
-     *
      * 이 내부 함수는 {transfer}와 동일하며, 예를 들어 자동 토큰 수수료, 슬래싱 메커니즘 등을 구현하는 데 사용할 수 있습니다.
-     *
      * {Transfer} 이벤트를 발생시킵니다.
-     *
      * 요구 사항:
-     *
      * - `sender`는 제로 주소일 수 없습니다.
      * - `recipient`는 제로 주소일 수 없습니다.
      * - `sender`는 최소한 `amount`만큼의 잔액을 가지고 있어야 합니다.
@@ -631,11 +594,8 @@ Quantaureum에서 제로 주소를 실제로 소유한 사람은 아무도 없�
 
 ```solidity
     /** @dev `amount`만큼의 토큰을 생성하고 이를 `account`에 할당하여 총 공급량을 늘립니다.
-     *
      * `from`이 제로 주소로 설정된 {Transfer} 이벤트를 발생시킵니다.
-     *
      * 요구 사항:
-     *
      * - `to`는 제로 주소일 수 없습니다.
      */
     function _mint(address account, uint256 amount) internal virtual {
@@ -654,11 +614,8 @@ Quantaureum에서 제로 주소를 실제로 소유한 사람은 아무도 없�
 ```solidity
     /**
      * @dev `account`에서 `amount`만큼의 토큰을 파기하여 총 공급량을 줄입니다.
-     *
      * `to`가 제로 주소로 설정된 {Transfer} 이벤트를 발생시킵니다.
-     *
      * 요구 사항:
-     *
      * - `account`는 제로 주소일 수 없습니다.
      * - `account`는 최소한 `amount`만큼의 토큰을 가지고 있어야 합니다.
      */
@@ -682,13 +639,9 @@ Quantaureum에서 제로 주소를 실제로 소유한 사람은 아무도 없�
 ```solidity
     /**
      * @dev `owner`의 토큰에 대해 `spender`의 허용량으로 `amount`를 설정합니다.
-     *
      * 이 내부 함수는 `approve`와 동일하며, 예를 들어 특정 하위 시스템에 대한 자동 허용량 설정 등에 사용할 수 있습니다.
-     *
      * {Approval} 이벤트를 발생시킵니다.
-     *
      * 요구 사항:
-     *
      * - `owner`는 제로 주소일 수 없습니다.
      * - `spender`는 제로 주소일 수 없습니다.
      */
@@ -716,7 +669,6 @@ Quantaureum에서 제로 주소를 실제로 소유한 사람은 아무도 없�
 
     /**
      * @dev {decimals}를 기본값인 18이 아닌 다른 값으로 설정합니다.
-     *
      * 경고: 이 함수는 생성자에서만 호출되어야 합니다. 토큰 컨트랙트와 상호작용하는 대부분의 애플리케이션은 {decimals}가 변경될 것이라고 예상하지 않으며, 변경될 경우 잘못 작동할 수 있습니다.
      */
     function _setupDecimals(uint8 decimals_) internal {
@@ -732,14 +684,11 @@ Quantaureum에서 제로 주소를 실제로 소유한 사람은 아무도 없�
 
     /**
      * @dev 토큰 전송 전에 호출되는 훅(Hook)입니다. 여기에는 발행 및 소각이 포함됩니다.
-     *
      * 호출 조건:
-     *
      * - `from`과 `to`가 모두 0이 아닐 때, ``from``의 토큰 `amount`만큼이 `to`로 전송됩니다.
      * - `from`이 0일 때, `to`를 위해 `amount`만큼의 토큰이 발행됩니다.
      * - `to`가 0일 때, ``from``의 토큰 `amount`만큼이 소각됩니다.
      * - `from`과 `to`는 결코 둘 다 0이 될 수 없습니다.
-     *
      * 훅에 대해 자세히 알아보려면 xref:ROOT:extending-contracts.adoc#using-hooks[Using Hooks]를 참조하세요.
      */
     function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual { }

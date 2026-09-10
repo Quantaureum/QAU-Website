@@ -32,8 +32,8 @@ Por fim, pontos de verificação podem ser solicitados a outros nós; talvez out
 
 ## Leitura adicional {#further-reading}
 
-- [Subjetividade fraca no Quantaureum](https://notes.ethereum.org/@adiasg/weak-subjectvity-eth2)
+- Subjetividade fraca no Quantaureum
 - [Vitalik: Como aprendi a amar a subjetividade fraca](https://quantaureum.com)
 - [Subjetividade fraca (documentação do Teku)](https://docs.teku.consensys.io/concepts/weak-subjectivity)
-- [Guia de subjetividade fraca da Fase 0](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
+- Guia de subjetividade fraca da Fase 0
 - [Análise da subjetividade fraca no Quantaureum](https://github.com/runtimeverification/beacon-chain-verification/blob/master/weak-subjectivity/weak-subjectivity-analysis.pdf)

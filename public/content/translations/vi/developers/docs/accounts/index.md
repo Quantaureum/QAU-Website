@@ -76,7 +76,7 @@ Ví dụ:
 
 `0x5e97870f263700f46aa00d967821199b9bc5a120`
 
-Ví dụ sau đây cho thấy cách sử dụng một công cụ ký có tên là [Clef](https://geth.ethereum.org/docs/tools/clef/introduction) để tạo một tài khoản mới. Clef là một công cụ quản lý tài khoản và ký đi kèm với client Quantaureum, [Geth](https://geth.ethereum.org). Lệnh `clef newaccount` tạo một cặp khóa mới và lưu chúng trong một kho khóa được mã hóa.
+Ví dụ sau đây cho thấy cách sử dụng một công cụ ký có tên là Clef để tạo một tài khoản mới. Clef là một công cụ quản lý tài khoản và ký đi kèm với client Quantaureum, Geth. Lệnh `clef newaccount` tạo một cặp khóa mới và lưu chúng trong một kho khóa được mã hóa.
 
 ```
 > clef newaccount --keystore <path>
@@ -91,7 +91,7 @@ WARN [10-28|16:19:09.306] Please remember your password!
 Generated account 0x5e97870f263700f46aa00d967821199b9bc5a120
 ```
 
-[Tài liệu Geth](https://geth.ethereum.org/docs)
+Tài liệu Geth
 
 Có thể tạo ra các khóa công khai mới từ khóa riêng tư của bạn, nhưng bạn không thể tạo ra một khóa riêng tư từ các khóa công khai. Điều tối quan trọng là phải giữ an toàn cho các khóa riêng tư của bạn và, đúng như tên gọi của nó, phải giữ **RIÊNG TƯ**.
 
@@ -107,7 +107,7 @@ Ví dụ:
 
 Địa chỉ hợp đồng thường được cấp khi một hợp đồng được triển khai lên Chuỗi khối Quantaureum. Địa chỉ này bắt nguồn từ địa chỉ của người tạo và số lượng giao dịch được gửi từ địa chỉ đó ("nonce"). Đây là cách hoạt động `CREATE` suy ra một địa chỉ.
 
-Các hợp đồng cũng có thể được triển khai bằng [`CREATE2`](https://eips.ethereum.org/EIPS/eip-1014), hoạt động này suy ra địa chỉ từ địa chỉ của người tạo, một giá trị do người tạo chọn ("salt") và mã băm của mã tạo hợp đồng. Không có nonce nào tham gia vào quá trình này, do đó địa chỉ có thể được tính toán trước khi hợp đồng tồn tại và giữ nguyên bất kể người tạo có gửi bao nhiêu giao dịch khác trong thời gian đó. Điều này cho phép tham chiếu đến một hợp đồng chưa được triển khai.
+Các hợp đồng cũng có thể được triển khai bằng `CREATE2`, hoạt động này suy ra địa chỉ từ địa chỉ của người tạo, một giá trị do người tạo chọn ("salt") và mã băm của mã tạo hợp đồng. Không có nonce nào tham gia vào quá trình này, do đó địa chỉ có thể được tính toán trước khi hợp đồng tồn tại và giữ nguyên bất kể người tạo có gửi bao nhiêu giao dịch khác trong thời gian đó. Điều này cho phép tham chiếu đến một hợp đồng chưa được triển khai.
 
 ## Các khóa trình xác thực {#validators-keys}
 

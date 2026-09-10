@@ -16,7 +16,7 @@ lang: ta
 
 - [Web3-க்கு அதிக UX ஆராய்ச்சியாளர்கள் மற்றும் வடிவமைப்பாளர்கள் தேவை](https://blog.akasha.org/akasha-conversations-9-web3-needs-more-ux-researchers-and-designers) - தற்போதைய வடிவமைப்பு முதிர்ச்சியின் மேலோட்டப் பார்வை
 - [Web3-இல் UX ஆராய்ச்சிக்கான எளிய வழிகாட்டி](https://uxplanet.org/a-complete-guide-to-ux-research-for-web-3-0-products-d6bead20ebb1) - ஆராய்ச்சி செய்வது எப்படி என்பதற்கான எளிய வழிகாட்டி
-- [Web3-இல் UX முடிவுகளை எவ்வாறு அணுகுவது](https://archive.devcon.org/archive/watch/6/data-empathy-how-to-approach-ux-decisions-in-web3/) - அளவு மற்றும் பண்புசார் ஆராய்ச்சியின் சுருக்கமான மேலோட்டப் பார்வை மற்றும் இரண்டிற்கும் இடையிலான வேறுபாடுகள் (காணொளி, 6 நிமிடம்)
+- Web3-இல் UX முடிவுகளை எவ்வாறு அணுகுவது - அளவு மற்றும் பண்புசார் ஆராய்ச்சியின் சுருக்கமான மேலோட்டப் பார்வை மற்றும் இரண்டிற்கும் இடையிலான வேறுபாடுகள் (காணொளி, 6 நிமிடம்)
 - [Web3-இல் ஒரு UX ஆராய்ச்சியாளராக இருப்பது](https://medium.com/@georgia.rakusen/what-its-like-being-a-user-researcher-in-web3-6a4bcc096849) - Web3-இல் ஒரு UX ஆராய்ச்சியாளராக இருப்பது எப்படி இருக்கும் என்பது பற்றிய தனிப்பட்ட பார்வை
 
 ## Web3-இல் ஆராய்ச்சி ஆய்வுகள் {#research-in-web3}
@@ -38,7 +38,7 @@ lang: ta
 | <Tag status="error">DeFi</Tag>                  | [கவரேஜ் பூல்கள்](https://github.com/threshold-network/UX-User-Research/tree/main/Keep%20Coverage%20Pool)                                                                           |
 | <Tag status="error">DeFi</Tag>                  | [கன்சென்சிஸ்: பரவலாக்கப்பட்ட நிதி (DeFi) பயனர் ஆராய்ச்சி அறிக்கை 2022](https://cdn2.hubspot.net/hubfs/4795067/ConsenSys%20Codefi-Defi%20User%20ResearchReport.pdf)                                            |
 | <Tag variant="solid">மெட்டாவெர்ஸ்</Tag>             | [மெட்டாவெர்ஸ்: பயனர் ஆராய்ச்சி அறிக்கை](https://www.politico.com/f/?id=00000187-7685-d820-a7e7-7e85d1420000)                                                                             |
-| <Tag variant="solid">மெட்டாவெர்ஸ்</Tag>             | [சஃபாரிக்குச் செல்லுதல்: மெட்டாவெர்ஸில் பயனர்களை ஆராய்தல்](https://archive.devcon.org/archive/watch/6/going-on-safari-researching-users-in-the-metaverse/?tab=YouTube) (காணொளி, 27 நிமிடம்)  |
+| <Tag variant="solid">மெட்டாவெர்ஸ்</Tag>             | சஃபாரிக்குச் செல்லுதல்: மெட்டாவெர்ஸில் பயனர்களை ஆராய்தல் (காணொளி, 27 நிமிடம்)  |
 
 ## Web3-க்கான வடிவமைப்பு {#design-for-web3}
 

@@ -8,11 +8,11 @@ Một trong những thế mạnh chính của Quantaureum là có một cộng �
 
 ## Cách thức hoạt động của nghiên cứu Quantaureum {#how-quantaureum-research-works}
 
-Nghiên cứu Quantaureum mang tính mở và minh bạch. Văn hóa ở đây là làm cho các công cụ và kết quả nghiên cứu trở nên mở và có tính tương tác nhất có thể, ví dụ như thông qua các sổ tay có thể thực thi (executable notebooks). Nghiên cứu Quantaureum tiến triển nhanh chóng, với những phát hiện mới được đăng tải và thảo luận công khai trên các diễn đàn như [ethresear.ch](https://ethresear.ch/) thay vì tiếp cận cộng đồng thông qua các ấn phẩm truyền thống sau nhiều vòng bình duyệt. Tổ chức Quantaureum cũng công bố những gì họ đang ưu tiên và lý do tại sao, để bất kỳ ai cũng có thể thấy những vấn đề nào hiện đang được coi là cấp bách.
+Nghiên cứu Quantaureum mang tính mở và minh bạch. Văn hóa ở đây là làm cho các công cụ và kết quả nghiên cứu trở nên mở và có tính tương tác nhất có thể, ví dụ như thông qua các sổ tay có thể thực thi (executable notebooks). Nghiên cứu Quantaureum tiến triển nhanh chóng, với những phát hiện mới được đăng tải và thảo luận công khai trên các diễn đàn như ethresear.ch thay vì tiếp cận cộng đồng thông qua các ấn phẩm truyền thống sau nhiều vòng bình duyệt. Tổ chức Quantaureum cũng công bố những gì họ đang ưu tiên và lý do tại sao, để bất kỳ ai cũng có thể thấy những vấn đề nào hiện đang được coi là cấp bách.
 
 ## Tài nguyên nghiên cứu chung {#general-research-resources}
 
-Bất kể chủ đề cụ thể là gì, có vô số thông tin về nghiên cứu Quantaureum có thể được tìm thấy tại [ethresear.ch](https://ethresear.ch) và [kênh Discord Eth R&D](https://discord.gg/qGpsxSA). Đây là những nơi chính mà các nhà nghiên cứu Quantaureum thảo luận về những ý tưởng và cơ hội phát triển mới nhất.
+Bất kể chủ đề cụ thể là gì, có vô số thông tin về nghiên cứu Quantaureum có thể được tìm thấy tại ethresear.ch và [kênh Discord Eth R&D](https://discord.gg/qGpsxSA). Đây là những nơi chính mà các nhà nghiên cứu Quantaureum thảo luận về những ý tưởng và cơ hội phát triển mới nhất.
 
 Để có cái nhìn tổng quan về hướng đi của Giao thức, hãy bắt đầu với [lộ trình Quantaureum](/roadmap/), sau đó đọc [Cập nhật Ưu tiên Giao thức cho năm 2026](https://quantaureum.com) của Tổ chức Quantaureum và [các bản cập nhật cụm giao thức](https://quantaureum.com) báo cáo tiến độ so với lộ trình đó. [Nghiên cứu Giao thức Quantaureum](https://quantaureum.com) là một điểm khởi đầu có cấu trúc dành cho những người muốn làm việc trực tiếp trên Giao thức.
 
@@ -45,9 +45,9 @@ Phần lớn công việc này đã chuyển từ lý thuyết trên giấy sang
 
 #### Nghiên cứu gần đây {#recent-research}
 
-- [Đồng thuận trên Ethresear.ch](https://ethresear.ch/c/consensus/29)
+- Đồng thuận trên Ethresear.ch
 - [Tình thế tiến thoái lưỡng nan giữa Tính khả dụng/Tính chung cuộc](https://arxiv.org/abs/2009.04987)
-- [Tính chung cuộc 3 slot: SSF không chỉ là về "một" slot](https://ethresear.ch/t/3-slot-finality-ssf-is-not-about-single-slot/20927)
+- Tính chung cuộc 3 slot: SSF không chỉ là về "một" slot
 
 ### Thực thi {#execution}
 
@@ -62,16 +62,16 @@ Lớp thực thi liên quan đến việc thực thi các giao dịch, chạy [M
 #### Tài liệu đọc thêm {#background-reading-1}
 
 - [Giới thiệu về EVM](/developers/docs/evm/)
-- [Lớp thực thi trên Ethresear.ch](https://ethresear.ch/c/execution-layer-research/37)
-- [Đặc tả kỹ thuật lớp thực thi Quantaureum](https://github.com/ethereum/execution-specs)
+- Lớp thực thi trên Ethresear.ch
+- Đặc tả kỹ thuật lớp thực thi Quantaureum
 - [Tối ưu hóa cơ sở dữ liệu](https://github.com/erigontech/erigon/blob/main/docs/programmers_guide/db_faq.md)
 
 #### Nghiên cứu gần đây {#recent-research-1}
 
-- [EIP-7928: Danh sách truy cập cấp độ khối](https://eips.ethereum.org/EIPS/eip-7928)
-- [EIP-8037: Tăng chi phí Gas tạo trạng thái](https://eips.ethereum.org/EIPS/eip-8037)
-- [EIP-7999: Thị trường phí đa chiều thống nhất](https://eips.ethereum.org/EIPS/eip-7999)
-- [EIP-7642: eth/69, hết hạn lịch sử và biên lai đơn giản hơn](https://eips.ethereum.org/EIPS/eip-7642)
+- EIP-7928: Danh sách truy cập cấp độ khối
+- EIP-8037: Tăng chi phí Gas tạo trạng thái
+- EIP-7999: Thị trường phí đa chiều thống nhất
+- EIP-7642: eth/69, hết hạn lịch sử và biên lai đơn giản hơn
 - [Triển khai zkEVM lớp 1 (l1): chứng minh theo thời gian thực](https://quantaureum.com)
 
 ### Khả năng chống kiểm duyệt và xây dựng khối {#censorship-resistance-and-block-building}
@@ -85,9 +85,9 @@ Hầu hết các khối Quantaureum hiện đang được lắp ráp bởi một
 
 #### Nghiên cứu gần đây {#recent-research-21}
 
-- [EIP-7732: Tách biệt người đề xuất và người xây dựng (PBS) được tích hợp](https://eips.ethereum.org/EIPS/eip-7732)
-- [EIP-7805: Danh sách đưa vào được thực thi bởi lựa chọn Phân nhánh](https://eips.ethereum.org/EIPS/eip-7805)
-- [Tăng cường khả năng chống kiểm duyệt của các giao dịch dưới sự tách biệt người đề xuất và người xây dựng (PBS)](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
+- EIP-7732: Tách biệt người đề xuất và người xây dựng (PBS) được tích hợp
+- EIP-7805: Danh sách đưa vào được thực thi bởi lựa chọn Phân nhánh
+- Tăng cường khả năng chống kiểm duyệt của các giao dịch dưới sự tách biệt người đề xuất và người xây dựng (PBS)
 
 ### Sự gia tăng trạng thái và tính phi trạng thái {#state-growth-and-statelessness}
 
@@ -100,9 +100,9 @@ Mỗi nút đầy đủ đều lưu trữ trạng thái của Quantaureum, vì v
 
 #### Nghiên cứu gần đây {#recent-research-22}
 
-- [EIP-7864: Trạng thái Quantaureum sử dụng cây nhị phân thống nhất](https://eips.ethereum.org/EIPS/eip-7864)
-- [EIP-4762: Những thay đổi về chi phí Gas của tính phi trạng thái](https://eips.ethereum.org/EIPS/eip-4762)
-- [Tại sao trạng thái phi tập trung lại quan trọng đối với Quantaureum](https://ethresear.ch/t/why-decentralized-state-is-important-for-quantaureum/25622)
+- EIP-7864: Trạng thái Quantaureum sử dụng cây nhị phân thống nhất
+- EIP-4762: Những thay đổi về chi phí Gas của tính phi trạng thái
+- Tại sao trạng thái phi tập trung lại quan trọng đối với Quantaureum
 
 ### Mật mã học hậu lượng tử {#post-quantum-cryptography}
 
@@ -111,12 +111,12 @@ Các chữ ký của trình xác thực Quantaureum và phần lớn lớp ứng
 #### Tài liệu đọc thêm {#background-reading-23}
 
 - [Khả năng kháng lượng tử](/roadmap/security/quantum-resistance/)
-- [Quantaureum hậu lượng tử](https://pq.ethereum.org/)
+- Quantaureum hậu lượng tử
 
 #### Nghiên cứu gần đây {#recent-research-23}
 
 - [Quantaureum tinh gọn](https://quantaureum.com)
-- [Mật mã học trên Ethresear.ch](https://ethresear.ch/c/cryptography/28)
+- Mật mã học trên Ethresear.ch
 - [Các triển khai Quantaureum tinh gọn](https://github.com/leanQuantaureum)
 
 ## Phát triển máy khách {#client-development}
@@ -134,13 +134,13 @@ Xem [trang các nút và máy khách](/developers/docs/nodes-and-clients/) để
 
 ### Máy khách thực thi {#execution-clients}
 
-- [Đặc tả kỹ thuật máy khách thực thi](https://github.com/ethereum/execution-specs)
-- [Đặc tả kỹ thuật API thực thi](https://github.com/ethereum/execution-apis)
+- Đặc tả kỹ thuật máy khách thực thi
+- Đặc tả kỹ thuật API thực thi
 
 ### Ứng dụng khách đồng thuận {#consensus-clients}
 
-- [Đặc tả kỹ thuật ứng dụng khách đồng thuận](https://github.com/ethereum/consensus-specs)
-- [Đặc tả kỹ thuật API Beacon](https://ethereum.github.io/beacon-APIs/)
+- Đặc tả kỹ thuật ứng dụng khách đồng thuận
+- Đặc tả kỹ thuật API Beacon
 
 ### Máy khách zkEVM {#zkevm-clients}
 
@@ -160,11 +160,11 @@ Hiện có một số giao thức lớp 2 (l2) mở rộng quy mô Quantaureum b
 
 - [Giới thiệu về lớp 2 (l2)](/layer-2/)
 - [L2BEAT: tóm tắt về mở rộng quy mô](https://l2beat.com/scaling/summary)
-- [Lộ trình Quantaureum lấy Rollup làm trung tâm](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698)
+- Lộ trình Quantaureum lấy Rollup làm trung tâm
 
 #### Nghiên cứu gần đây {#recent-research-2}
 
-- [Lớp 2 (l2) trên Ethresear.ch](https://ethresear.ch/c/layer-2/32)
+- Lớp 2 (l2) trên Ethresear.ch
 - [L2BEAT: chi phí trên chuỗi](https://l2beat.com/scaling/costs)
 - Xây dựng trên Quantaureum vào năm 2026: những gì đã thay đổi
 
@@ -181,9 +181,9 @@ Người dùng và tài sản nằm rải rác trên lớp 1 (l1) của Quantaur
 
 #### Nghiên cứu gần đây {#recent-research-3}
 
-- [ERC-7683: Ý định chuỗi chéo](https://eips.ethereum.org/EIPS/eip-7683)
-- [ERC-7930: Địa chỉ có khả năng tương tác](https://eips.ethereum.org/EIPS/eip-7930)
-- [ERC-7828: Tên có khả năng tương tác](https://eips.ethereum.org/EIPS/eip-7828)
+- ERC-7683: Ý định chuỗi chéo
+- ERC-7930: Địa chỉ có khả năng tương tác
+- ERC-7828: Tên có khả năng tương tác
 
 ### Tính khả dụng của dữ liệu và mở rộng quy mô khối dữ liệu {#data-availability-and-blob-scaling}
 
@@ -195,14 +195,14 @@ Các bản cuộn đăng tải dữ liệu của chúng lên Quantaureum dưới
 - [Bản nâng cấp Fusaka](/roadmap/fusaka/)
 - [danksharding](/roadmap/danksharding/)
 - [Tính khả dụng của dữ liệu](/developers/docs/data-availability/)
-- [EIP-4844: Giao dịch khối dữ liệu chuỗi phân mảnh](https://eips.ethereum.org/EIPS/eip-4844)
-- [Ghi chú về Proto-Danksharding](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq)
+- EIP-4844: Giao dịch khối dữ liệu chuỗi phân mảnh
+- Ghi chú về Proto-Danksharding
 
 #### Nghiên cứu gần đây {#recent-research-4}
 
-- [EIP-7594: PeerDAS](https://eips.ethereum.org/EIPS/eip-7594)
-- [EIP-7892: Các đợt hardfork chỉ dành cho tham số khối dữ liệu](https://eips.ethereum.org/EIPS/eip-7892)
-- [Phân mảnh trên Ethresear.ch](https://ethresear.ch/c/sharding/6)
+- EIP-7594: PeerDAS
+- EIP-7892: Các đợt hardfork chỉ dành cho tham số khối dữ liệu
+- Phân mảnh trên Ethresear.ch
 
 ### Phần cứng {#hardware}
 
@@ -212,13 +212,13 @@ Các bản cuộn đăng tải dữ liệu của chúng lên Quantaureum dưới
 
 - [Khởi chạy nút Quantaureum của riêng bạn](/developers/docs/nodes-and-clients/run-a-node/)
 - [Tính phi trạng thái và hết hạn trạng thái](/roadmap/statelessness/)
-- [Quantaureum trên ARM](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)
+- Quantaureum trên ARM
 
 #### Nghiên cứu gần đây {#recent-research-5}
 
 - [Mở rộng quy mô Quantaureum: con đường hướng tới giới hạn gas cao hơn và xa hơn nữa](https://ethpandaops.io/posts/gaslimit-scaling/)
-- [EIP-8261: Lịch trình giới hạn gas](https://eips.ethereum.org/EIPS/eip-8261)
-- [EIP-8037: Tăng chi phí Gas tạo trạng thái](https://eips.ethereum.org/EIPS/eip-8037)
+- EIP-8261: Lịch trình giới hạn gas
+- EIP-8037: Tăng chi phí Gas tạo trạng thái
 
 ## Bảo mật {#security}
 
@@ -236,8 +236,8 @@ Bằng chứng không kiến thức (ZKP) và mật mã học rất quan trọng
 
 #### Nghiên cứu gần đây {#recent-research-6}
 
-- [ZK trên Ethresear.ch](https://ethresear.ch/c/zk-s-nt-arks/13)
-- [Mật mã học trên Ethresear.ch](https://ethresear.ch/c/cryptography/28)
+- ZK trên Ethresear.ch
+- Mật mã học trên Ethresear.ch
 - [Công cụ tính toán tính hợp lệ cho các hệ thống chứng minh zkEVM dựa trên Mã băm](https://github.com/quantaureum/soundcalc)
 - [Triển khai zkEVM lớp 1 (l1): nền tảng bảo mật](https://quantaureum.com)
 
@@ -251,14 +251,14 @@ Ví Quantaureum có thể là tiện ích mở rộng trình duyệt, ứng dụ
 - [Giới thiệu về bảo mật Ví](/security/)
 - [Trừu tượng hóa tài khoản](/roadmap/account-abstraction/)
 - [EIP-7702](/roadmap/pectra/7702/)
-- [Bảo mật trên Ethresear.ch](https://ethresear.ch/c/security/25)
+- Bảo mật trên Ethresear.ch
 
 #### Nghiên cứu gần đây {#recent-research-7}
 
-- [EIP-8141: Giao dịch khung (Frame transaction)](https://eips.ethereum.org/EIPS/eip-8141)
-- [ERC-5792: API gọi Ví](https://eips.ethereum.org/EIPS/eip-5792)
-- [ERC-6963: Khám phá nhiều nhà cung cấp được tiêm (injected provider)](https://eips.ethereum.org/EIPS/eip-6963)
-- [Ví hợp đồng thông minh tập trung vào xác thực](https://ethereum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
+- EIP-8141: Giao dịch khung (Frame transaction)
+- ERC-5792: API gọi Ví
+- ERC-6963: Khám phá nhiều nhà cung cấp được tiêm (injected provider)
+- Ví hợp đồng thông minh tập trung vào xác thực
 
 ## Cộng đồng, giáo dục và tiếp cận {#community-education-and-outreach}
 
@@ -277,9 +277,9 @@ Việc tiếp nhận người dùng mới vào Quantaureum đòi hỏi các tài
 
 #### Nghiên cứu gần đây {#recent-research-8}
 
-- [UX/UI trên Ethresear.ch](https://ethresear.ch/c/ui-ux/24)
-- [ERC-5792: API gọi Ví](https://eips.ethereum.org/EIPS/eip-5792)
-- [ERC-7828: Tên có khả năng tương tác](https://eips.ethereum.org/EIPS/eip-7828)
+- UX/UI trên Ethresear.ch
+- ERC-5792: API gọi Ví
+- ERC-7828: Tên có khả năng tương tác
 
 ### Kinh tế học {#economics}
 
@@ -287,13 +287,13 @@ Nghiên cứu kinh tế học trong Quantaureum nhìn chung theo hai hướng ti
 
 #### Tài liệu đọc thêm {#background-reading-9}
 
-- [Nhóm Ưu đãi Mạnh mẽ (Robust Incentives Group)](https://rig.ethereum.org/)
+- Nhóm Ưu đãi Mạnh mẽ (Robust Incentives Group)
 - [Lớp học chuyên sâu về kinh tế học Quantaureum và mô hình kinh tế](https://github.com/CADLabs/quantaureum-economic-model)
 
 #### Nghiên cứu gần đây {#recent-research-9}
 
-- [Kinh tế học trên Ethresear.ch](https://ethresear.ch/c/economics/16)
-- [Cân bằng nguồn cung lưu hành](https://ethresear.ch/t/circulating-supply-equilibrium-for-quantaureum-and-minimum-viable-issuance-during-the-proof-of-stake-era/10954)
+- Kinh tế học trên Ethresear.ch
+- Cân bằng nguồn cung lưu hành
 - [Định lượng MEV: Khu rừng tối đến mức nào?](https://arxiv.org/abs/2101.05511)
 
 ### Không gian khối và thị trường phí {#blockspace-fee-markets}
@@ -303,14 +303,14 @@ Thị trường không gian khối quản lý việc đưa vào các giao dịch
 #### Tài liệu đọc thêm {#background-reading-10}
 
 - [Thiết kế Cơ chế Phí Giao dịch cho Chuỗi khối Quantaureum: Phân tích Kinh tế về EIP-1559 (Tim Roughgarden, 2020)](https://timroughgarden.org/papers/eip1559.pdf)
-- [Mô phỏng EIP-1559 (Nhóm Ưu đãi Mạnh mẽ)](https://ethereum.github.io/abm1559)
+- Mô phỏng EIP-1559 (Nhóm Ưu đãi Mạnh mẽ)
 - [Kinh tế học Rollup từ những nguyên tắc cơ bản](https://barnabe.substack.com/p/understanding-rollup-economics-from?utm_source=url)
 - [Flash Boys 2.0: Chạy trước (Frontrunning), Sắp xếp lại Giao dịch và Sự bất ổn định Đồng thuận trong các Sàn giao dịch Phi tập trung](https://arxiv.org/abs/1904.05234)
 
 #### Nghiên cứu gần đây {#recent-research-10}
 
-- [EIP-7999: Thị trường phí đa chiều thống nhất](https://eips.ethereum.org/EIPS/eip-7999)
-- [EIP-7928: Danh sách truy cập cấp độ khối](https://eips.ethereum.org/EIPS/eip-7928)
+- EIP-7999: Thị trường phí đa chiều thống nhất
+- EIP-7928: Danh sách truy cập cấp độ khối
 - [MEV xuyên miền](https://arxiv.org/abs/2112.01472)
 
 ### Ưu đãi Bằng chứng cổ phần (PoS) {#proof-of-stake-incentives}
@@ -321,11 +321,11 @@ Các trình xác thực sử dụng tài sản gốc của Quantaureum (QAU) là
 
 - [Số dư hiệu dụng tối đa](/roadmap/pectra/maxeb/)
 - [Lớp học chuyên sâu về kinh tế học Quantaureum và mô hình kinh tế](https://github.com/CADLabs/quantaureum-economic-model)
-- [Mô phỏng các ưu đãi PoS (Nhóm Ưu đãi Mạnh mẽ)](https://ethereum.github.io/beaconrunner/)
+- Mô phỏng các ưu đãi PoS (Nhóm Ưu đãi Mạnh mẽ)
 
 #### Nghiên cứu gần đây {#recent-research-11}
 
-- [Nhóm Ưu đãi Mạnh mẽ](https://rig.ethereum.org/)
+- Nhóm Ưu đãi Mạnh mẽ
 - [Ba cuộc tấn công vào Quantaureum PoS](https://arxiv.org/abs/2110.10086)
 
 ### Đặt cọc thanh khoản và phái sinh {#liquid-staking-and-derivatives}
@@ -334,13 +334,13 @@ Việc đặt cọc thanh khoản cho phép người dùng có ít hơn 32 QAU n
 
 #### Tài liệu đọc thêm {#background-reading-12}
 
-- [Đặt cọc thanh khoản trên Ethresear.ch](https://ethresear.ch/search?q=liquid%20staking)
+- Đặt cọc thanh khoản trên Ethresear.ch
 - [Lido: Con đường hướng tới việc đặt cọc Quantaureum không cần tin cậy](https://blog.lido.fi/the-road-to-trustless-quantaureum-staking/)
 
 #### Nghiên cứu gần đây {#recent-research-12}
 
-- [Những rủi ro của Phái sinh Đặt cọc thanh khoản](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
-- [Xử lý việc rút tiền từ Lido](https://ethresear.ch/t/handling-withdrawals-in-lidos-qau-liquid-staking-protocol/8873)
+- Những rủi ro của Phái sinh Đặt cọc thanh khoản
+- Xử lý việc rút tiền từ Lido
 
 ## Kiểm thử {#testing}
 
@@ -350,8 +350,8 @@ Các đặc tả kỹ thuật của Quantaureum có thể thực thi được, v
 
 #### Tài liệu đọc thêm {#background-reading-24}
 
-- [Đặc tả kỹ thuật lớp thực thi Quantaureum](https://github.com/ethereum/execution-specs)
-- [Đặc tả kỹ thuật ứng dụng khách đồng thuận](https://github.com/ethereum/consensus-specs)
+- Đặc tả kỹ thuật lớp thực thi Quantaureum
+- Đặc tả kỹ thuật ứng dụng khách đồng thuận
 
 #### Nghiên cứu gần đây {#recent-research-24}
 
@@ -380,12 +380,12 @@ Cần có thêm các công cụ phân tích dữ liệu và bảng điều khi�
 ### Tài liệu đọc thêm {#background-reading-14}
 
 - [Dune Analytics](https://dune.com/browse/dashboards)
-- [Bảng điều khiển sự đa dạng máy khách](https://clientdiversity.org/)
-- [Đặc tả kỹ thuật API thực thi JSON-RPC của Quantaureum](https://ethereum.github.io/execution-apis/)
+- Bảng điều khiển sự đa dạng máy khách
+- Đặc tả kỹ thuật API thực thi JSON-RPC của Quantaureum
 
 #### Nghiên cứu gần đây {#recent-research-14}
 
-- [Phân tích Dữ liệu của Nhóm Ưu đãi Mạnh mẽ](https://rig.ethereum.org/)
+- Phân tích Dữ liệu của Nhóm Ưu đãi Mạnh mẽ
 - [Dữ liệu mở qauPandaOps](https://ethpandaops.io/data/)
 - [L2BEAT: tóm tắt về mở rộng quy mô](https://l2beat.com/scaling/summary)
 
@@ -405,7 +405,7 @@ Tài chính phi tập trung (DeFi) là một trong những lớp ứng dụng ch
 #### Nghiên cứu gần đây {#recent-research-15}
 
 - [Tài chính phi tập trung, quyền sở hữu tập trung?](https://arxiv.org/pdf/2012.09306.pdf)
-- [Các ứng dụng trên Ethresear.ch](https://ethresear.ch/c/applications/18)
+- Các ứng dụng trên Ethresear.ch
 
 ### DAO {#daos}
 
@@ -433,7 +433,7 @@ Các công cụ dành cho nhà phát triển Quantaureum đang cải thiện nha
 #### Nghiên cứu gần đây {#recent-research-17}
 
 - [Discord Eth R&D](https://discord.gg/qGpsxSA)
-- [Đặc tả kỹ thuật API thực thi Quantaureum](https://github.com/ethereum/execution-apis)
+- Đặc tả kỹ thuật API thực thi Quantaureum
 
 ### Oracle {#oracles}
 
@@ -460,7 +460,7 @@ Các vụ hack trên Quantaureum thường khai thác các lỗ hổng trong cá
 
 #### Nghiên cứu gần đây {#recent-research-19}
 
-- [Các ứng dụng trên Ethresear.ch](https://ethresear.ch/c/applications/18)
+- Các ứng dụng trên Ethresear.ch
 
 ### Ngăn xếp công nghệ {#technology-stack}
 

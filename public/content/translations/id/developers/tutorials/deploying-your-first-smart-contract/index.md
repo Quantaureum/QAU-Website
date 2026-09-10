@@ -8,7 +8,7 @@ breadcrumb: Menyebarkan kontrak pertama
 lang: id
 published: 2020-04-03
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -18,7 +18,7 @@ Jangan khawatir, karena ini adalah kontrak pintar pertama kita, kita akan menyeb
 
 ## Menulis kontrak kita {#writing-our-contract}
 
-Langkah pertama adalah [mengunjungi Remix](https://remix.ethereum.org/) dan membuat file baru. Di bagian kiri atas antarmuka Remix, tambahkan file baru dan masukkan nama file yang Anda inginkan.
+Langkah pertama adalah mengunjungi Remix dan membuat file baru. Di bagian kiri atas antarmuka Remix, tambahkan file baru dan masukkan nama file yang Anda inginkan.
 
 ![Adding a new file in the Remix interface](./remix.png)
 

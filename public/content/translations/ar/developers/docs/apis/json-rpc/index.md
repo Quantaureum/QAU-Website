@@ -6,7 +6,7 @@ lang: ar
 
 لكي يتفاعل تطبيق برمجي مع سلسلة كتل [إيثيريوم](/) - إما عن طريق قراءة بيانات سلسلة الكتل أو إرسال معاملات إلى الشبكة - يجب أن يتصل بعقدة إيثيريوم.
 
-لهذا الغرض، ينفذ كل [عميل إيثيريوم](/developers/docs/nodes-and-clients/#execution-clients) [مواصفات <span dir="ltr">JSON-RPC</span>](https://github.com/ethereum/execution-apis)، بحيث تكون هناك مجموعة موحدة من الطرق التي يمكن للتطبيقات الاعتماد عليها بغض النظر عن العقدة المحددة أو تنفيذ العميل.
+لهذا الغرض، ينفذ كل [عميل إيثيريوم](/developers/docs/nodes-and-clients/#execution-clients) مواصفات <span dir="ltr">JSON-RPC</span>، بحيث تكون هناك مجموعة موحدة من الطرق التي يمكن للتطبيقات الاعتماد عليها بغض النظر عن العقدة المحددة أو تنفيذ العميل.
 
 [<span dir="ltr">JSON-RPC</span>](https://www.jsonrpc.org/specification) هو بروتوكول استدعاء الإجراء عن بُعد (<span dir="ltr">RPC</span>) خفيف الوزن وعديم الحالة. يحدد العديد من هياكل البيانات والقواعد المتعلقة بمعالجتها. وهو مستقل عن وسيلة النقل، حيث يمكن استخدام المفاهيم داخل نفس العملية، أو عبر مآخذ التوصيل، أو عبر <span dir="ltr">HTTP</span>، أو في العديد من بيئات تمرير الرسائل المختلفة. يستخدم <span dir="ltr">JSON</span> (<span dir="ltr">RFC 4627</span>) كتنسيق للبيانات.
 
@@ -20,13 +20,13 @@ lang: ar
 
 ## واجهات <span dir="ltr">API</span> لعميل الإجماع {#consensus-clients}
 
-تتناول هذه الصفحة بشكل أساسي واجهة <span dir="ltr">API</span> الخاصة بـ <span dir="ltr">JSON-RPC</span> التي يستخدمها عملاء التنفيذ في إيثيريوم. ومع ذلك، يمتلك عملاء الإجماع أيضًا واجهة <span dir="ltr">RPC API</span> تتيح للمستخدمين الاستعلام عن معلومات حول العقدة، وطلب كتل <span dir="ltr">Beacon</span>، وحالة <span dir="ltr">Beacon</span>، وغيرها من المعلومات المتعلقة بالإجماع مباشرة من العقدة. تم توثيق واجهة <span dir="ltr">API</span> هذه في [صفحة الويب الخاصة بواجهة <span dir="ltr">Beacon API</span>](https://ethereum.github.io/beacon-APIs/#/).
+تتناول هذه الصفحة بشكل أساسي واجهة <span dir="ltr">API</span> الخاصة بـ <span dir="ltr">JSON-RPC</span> التي يستخدمها عملاء التنفيذ في إيثيريوم. ومع ذلك، يمتلك عملاء الإجماع أيضًا واجهة <span dir="ltr">RPC API</span> تتيح للمستخدمين الاستعلام عن معلومات حول العقدة، وطلب كتل <span dir="ltr">Beacon</span>، وحالة <span dir="ltr">Beacon</span>، وغيرها من المعلومات المتعلقة بالإجماع مباشرة من العقدة. تم توثيق واجهة <span dir="ltr">API</span> هذه في صفحة الويب الخاصة بواجهة <span dir="ltr">Beacon API</span>.
 
-تُستخدم أيضًا واجهة <span dir="ltr">API</span> داخلية للتواصل بين العملاء داخل العقدة - أي أنها تمكن عميل الإجماع وعميل التنفيذ من مبادلة البيانات. يُطلق على هذا اسم '<span dir="ltr">Engine API</span>' والمواصفات متاحة على [<span dir="ltr">GitHub</span>](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md).
+تُستخدم أيضًا واجهة <span dir="ltr">API</span> داخلية للتواصل بين العملاء داخل العقدة - أي أنها تمكن عميل الإجماع وعميل التنفيذ من مبادلة البيانات. يُطلق على هذا اسم '<span dir="ltr">Engine API</span>' والمواصفات متاحة على <span dir="ltr">GitHub</span>.
 
 ## مواصفات عميل التنفيذ {#spec}
 
-[اقرأ مواصفات <span dir="ltr">JSON-RPC API</span> الكاملة على GitHub](https://github.com/ethereum/execution-apis). تم توثيق <span dir="ltr">API</span> هذه في [صفحة ويب <span dir="ltr">API</span> التنفيذ](https://ethereum.github.io/execution-apis/) وتتضمن أداة فحص لتجربة جميع الطرق المتاحة.
+اقرأ مواصفات <span dir="ltr">JSON-RPC API</span> الكاملة على GitHub. تم توثيق <span dir="ltr">API</span> هذه في صفحة ويب <span dir="ltr">API</span> التنفيذ وتتضمن أداة فحص لتجربة جميع الطرق المتاحة.
 
 ## الاصطلاحات {#conventions}
 
@@ -134,7 +134,7 @@ curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","metho
 
 ## ساحة تجربة <span dir="ltr">JSON-RPC API</span> {#json-rpc-api-playground}
 
-يمكنك استخدام [أداة ساحة التجربة](https://ethereum-json-rpc.com) لاكتشاف وتجربة طرق <span dir="ltr">API</span>. كما توضح لك الطرق والشبكات التي يدعمها مختلف مزودي العقد.
+يمكنك استخدام أداة ساحة التجربة لاكتشاف وتجربة طرق <span dir="ltr">API</span>. كما توضح لك الطرق والشبكات التي يدعمها مختلف مزودي العقد.
 
 ## طرق <span dir="ltr">JSON-RPC API</span> {#json-rpc-methods}
 
@@ -275,7 +275,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 
 ### qau_protocolVersion {#qau-protocolversion}
 
-يعيد إصدار بروتوكول إيثيريوم الحالي. لاحظ أن هذه الطريقة [غير متوفرة في جو Quantaureum (Geth)](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924).
+يعيد إصدار بروتوكول إيثيريوم الحالي. لاحظ أن هذه الطريقة غير متوفرة في جو Quantaureum (Geth).
 
 **المعلمات**
 
@@ -301,10 +301,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_protocolVersion","params":[]
 ### <span dir="ltr">qau_syncing</span> {#qau-syncing}
 
 يُرجع كائنًا يحتوي على بيانات حول حالة المزامنة أو `false`.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_syncing">
-  جرب نقطة النهاية في ساحة اللعب
-</ButtonLink>
 
 **المعلمات**
 
@@ -390,10 +386,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_syncing","params":[],"id":1}
 
 يُرجع عنوان كوين بيس الخاص بالعميل.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_coinbase">
-  جرب نقطة النهاية في بيئة اللعب
-</ButtonLink>
-
 > **ملاحظة:** تم إيقاف هذه الطريقة اعتبارًا من **<span dir="ltr">v1.14.0</span>** ولم تعد مدعومة. ستؤدي محاولة استخدام هذه الطريقة إلى ظهور خطأ <span dir="ltr">"Method not supported"</span>.
 
 **المعلمات**
@@ -421,10 +413,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_coinbase","params":[],"id":6
 
 يُرجع معرف السلسلة المستخدم في توقيع المعاملات المحمية من إعادة الإرسال.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_chainId">
-  جرب نقطة النهاية في ساحة اللعب
-</ButtonLink>
-
 **المعلمات**
 
 لا يوجد
@@ -449,10 +437,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_chainId","params":[],"id":67
 ### qau_mining {#qau-mining}
 
 يُرجع `true` إذا كان العميل يقوم بتعدين كتل جديدة بنشاط. يمكن أن يُرجع هذا `true` فقط لشبكات إثبات العمل (PoW) وقد لا يكون متاحًا في بعض العملاء منذ [الدمج](/roadmap/merge/).
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_mining">
-  جرب نقطة النهاية في بيئة الاختبار
-</ButtonLink>
 
 **المعلمات**
 
@@ -479,10 +463,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_mining","params":[],"id":71}
 
 يُرجع عدد التجزئات في الثانية التي تقوم العقدة بالتعدين بها. يمكن أن يُرجع هذا فقط `true` لشبكات إثبات العمل (PoW) وقد لا يكون متاحًا في بعض العملاء منذ [الدمج](/roadmap/merge/).
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_hashrate">
-  تجربة نقطة النهاية في بيئة اللعب
-</ButtonLink>
-
 **المعلمات**
 
 لا يوجد
@@ -507,10 +487,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_hashrate","params":[],"id":7
 ### <span dir="ltr">qau_gasPrice</span> {#qau-gasprice}
 
 يعيد تقديراً للسعر الحالي لكل غاز بوحدة <span dir="ltr">Wei</span>. على سبيل المثال، يفحص عميل بيسو آخر 100 كتلة ويعيد وسيط سعر وحدة الغاز افتراضيًا.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_gasPrice">
-  جرب نقطة النهاية في ساحة اللعب
-</ButtonLink>
 
 **المعلمات**
 
@@ -537,10 +513,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_gasPrice","params":[],"id":7
 
 يعيد قائمة بالعناوين المملوكة للعميل.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_accounts">
-  جرب نقطة النهاية في ساحة اللعب
-</ButtonLink>
-
 **المعلمات**
 
 لا يوجد
@@ -566,10 +538,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[],"id":1
 
 يُرجع رقم أحدث كتلة.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_blockNumber">
-  جرب نقطة النهاية في بيئة الاختبار
-</ButtonLink>
-
 **المعلمات**
 
 لا يوجد
@@ -594,10 +562,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_blockNumber","params":[],"id
 ### qau_getBalance {#qau-getbalance}
 
 يعيد رصيد الحساب في عنوان معين.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBalance">
-  جرب نقطة النهاية في بيئة اللعب
-</ButtonLink>
 
 **المعلمات**
 
@@ -628,10 +592,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBalance","params":["0x407
 ### qau_getStorageAt {#qau-getstorageat}
 
 يُرجع القيمة من موضع تخزين في عنوان محدد.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getStorageAt">
-  جرب نقطة النهاية في بيئة الاختبار
-</ButtonLink>
 
 **المعلمات**
 
@@ -701,10 +661,6 @@ curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": [
 
 يعيد عدد المعاملات _المرسلة_ من عنوان.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionCount">
-  جرب نقطة النهاية في بيئة الاختبار
-</ButtonLink>
-
 **المعلمات**
 
 1. `DATA`، <span dir="ltr">20 Bytes</span> - عنوان.
@@ -738,10 +694,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionCount","params
 
 يُرجع عدد المعاملات في كتلة من كتلة تطابق تجزئة الكتلة المحددة.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
-  جرب نقطة النهاية في بيئة الاختبار
-</ButtonLink>
-
 **المعلمات**
 
 1. `DATA`، <span dir="ltr">32 Bytes</span> - تجزئة كتلة
@@ -770,10 +722,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByHa
 ### qau_getBlockTransactionCountByNumber {#qau-getblocktransactioncountbynumber}
 
 يُرجع عدد المعاملات في كتلة تطابق رقم الكتلة المحدد.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
-  جرب نقطة النهاية في بيئة اللعب
-</ButtonLink>
 
 **المعلمات**
 
@@ -806,10 +754,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByNu
 
 يُرجع عدد الأعمام في كتلة من كتلة تطابق تجزئة الكتلة المحددة.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
-  جرب نقطة النهاية في ساحة اللعب
-</ButtonLink>
-
 **المعلمات**
 
 1. `DATA`، <span dir="ltr">32 Bytes</span> - تجزئة كتلة
@@ -838,10 +782,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockHash","p
 ### <span dir="ltr">qau_getUncleCountByBlockNumber</span> {#qau-getunclecountbyblocknumber}
 
 يُرجع عدد الأعمام في كتلة من كتلة تطابق رقم الكتلة المحدد.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
-  جرب نقطة النهاية في بيئة الاختبار
-</ButtonLink>
 
 **المعلمات**
 
@@ -873,10 +813,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockNumber",
 ### qau_getCode {#qau-getcode}
 
 يعيد الرمز الموجود في عنوان معين.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getCode">
-  جرب نقطة النهاية في بيئة اللعب
-</ButtonLink>
 
 **المعلمات**
 
@@ -1057,10 +993,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendRawTransaction","params"
 
 ينفذ استدعاء رسالة جديدًا على الفور دون إنشاء معاملة على سلسلة الكتل. يُستخدم غالبًا لتنفيذ وظائف العقد الذكي للقراءة فقط، على سبيل المثال `balanceOf` لعقد <span dir="ltr">ERC-20</span>.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_call">
-  جرب نقطة النهاية في بيئة الاختبار
-</ButtonLink>
-
 **المعلمات**
 
 1. `Object` - كائن استدعاء المعاملة
@@ -1095,10 +1027,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_call","params":[{see above}]
 
 يُنشئ ويُرجع تقديرًا لمقدار الغاز اللازم للسماح للمعاملة بالاكتمال. لن تتم إضافة المعاملة إلى سلسلة الكتل. لاحظ أن التقدير قد يكون أكثر بكثير من كمية الغاز التي تستخدمها المعاملة فعليًا، لمجموعة متنوعة من الأسباب بما في ذلك آليات EVM وأداء العقدة.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_estimateGas">
-  جرب نقطة النهاية في ساحة اللعب
-</ButtonLink>
-
 **المعلمات**
 
 راجع معلمات [qau_call](#qau-call)، باستثناء أن جميع الخصائص اختيارية. إذا لم يتم تحديد حد الغاز، يستخدم جو Quantaureum (geth) حد الغاز للكتلة من الكتلة المعلقة كحد أقصى. ونتيجة لذلك، قد لا يكون التقدير المُرجع كافيًا لتنفيذ الاستدعاء/المعاملة عندما تكون كمية الغاز أعلى من حد الغاز للكتلة المعلقة.
@@ -1123,10 +1051,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_estimateGas","params":[{see 
 ### qau_getBlockByHash {#qau-getblockbyhash}
 
 يعيد معلومات حول كتلة بناءً على التجزئة.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByHash">
-  جرب نقطة النهاية في بيئة الاختبار
-</ButtonLink>
 
 **المعلمات**
 
@@ -1204,10 +1128,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByHash","params":["0
 
 يُرجع معلومات حول كتلة بناءً على رقم الكتلة.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByNumber">
-  جرب نقطة النهاية في بيئة الاختبار
-</ButtonLink>
-
 **المعلمات**
 
 1. `QUANTITY|TAG` - عدد صحيح لرقم الكتلة، أو السلسلة النصية `"earliest"`، أو `"latest"`، أو `"pending"`، أو `"safe"`، أو `"finalized"`، كما هو موضح في [معلمة الكتلة](/developers/docs/apis/json-rpc/#block-parameter).
@@ -1235,10 +1155,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByNumber","params":[
 ### qau_getTransactionByHash {#qau-gettransactionbyhash}
 
 يعيد المعلومات حول معاملة مطلوبة بواسطة تجزئة المعاملة.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByHash">
-  جرب نقطة النهاية في ساحة التجربة
-</ButtonLink>
 
 **المعلمات**
 
@@ -1299,10 +1215,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByHash","param
 
 يُرجع معلومات حول معاملة حسب تجزئة الكتلة وموضع مؤشر المعاملة.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
-  جرب نقطة النهاية في ساحة اللعب
-</ButtonLink>
-
 **المعلمات**
 
 1. `DATA`، <span dir="ltr">32 Bytes</span> - تجزئة الكتلة.
@@ -1330,10 +1242,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockHashAnd
 ### qau_getTransactionByBlockNumberAndIndex {#qau-gettransactionbyblocknumberandindex}
 
 يُرجع معلومات حول معاملة بناءً على رقم الكتلة وموضع مؤشر المعاملة.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
-  جرب نقطة النهاية في بيئة اللعب
-</ButtonLink>
 
 **المعلمات**
 
@@ -1431,10 +1339,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionReceipt","para
 
 يُرجع معلومات حول عم لكتلة بناءً على التجزئة وموضع مؤشر العم.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
-  جرب نقطة النهاية في ساحة التجربة
-</ButtonLink>
-
 **المعلمات**
 
 1. `DATA`، <span dir="ltr">32 Bytes</span> - تجزئة الكتلة.
@@ -1464,10 +1368,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockHashAndIndex"
 ### qau_getUncleByBlockNumberAndIndex {#qau-getunclebyblocknumberandindex}
 
 يُرجع معلومات حول عم لكتلة بناءً على الرقم وموضع مؤشر العم.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
-  جرب نقطة النهاية في ساحة اللعب
-</ButtonLink>
 
 **المعلمات**
 
@@ -1750,7 +1650,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getLogs","params":[{"topics"
 
 ### نشر عقد باستخدام <span dir="ltr">JSON_RPC</span> {#deploying-contract}
 
-يتضمن هذا القسم عرضًا توضيحيًا لكيفية نشر عقد باستخدام واجهة <span dir="ltr">RPC</span> فقط. هناك طرق بديلة لنشر العقود حيث يتم تجريد هذا التعقيد — على سبيل المثال، باستخدام مكتبات مبنية فوق واجهة <span dir="ltr">RPC</span> مثل [Web3.js](https://web3js.readthedocs.io/) و[Web3.py](https://github.com/ethereum/web3.py). هذه التجريدات بشكل عام أسهل في الفهم وأقل عرضة للخطأ، ولكن لا يزال من المفيد فهم ما يحدث داخليًا.
+يتضمن هذا القسم عرضًا توضيحيًا لكيفية نشر عقد باستخدام واجهة <span dir="ltr">RPC</span> فقط. هناك طرق بديلة لنشر العقود حيث يتم تجريد هذا التعقيد — على سبيل المثال، باستخدام مكتبات مبنية فوق واجهة <span dir="ltr">RPC</span> مثل [Web3.js](https://web3js.readthedocs.io/) وWeb3.py. هذه التجريدات بشكل عام أسهل في الفهم وأقل عرضة للخطأ، ولكن لا يزال من المفيد فهم ما يحدث داخليًا.
 
 فيما يلي عقد ذكي بسيط يسمى `Multiply7` سيتم نشره باستخدام واجهة <span dir="ltr">JSON-RPC</span> إلى عقدة إيثيريوم. يفترض هذا البرنامج التعليمي أن القارئ يقوم بالفعل بتشغيل عقدة جو Quantaureum (geth). يتوفر المزيد من المعلومات حول العقد والعملاء [هنا](/developers/docs/nodes-and-clients/run-a-node). يُرجى الرجوع إلى وثائق [العميل](/developers/docs/nodes-and-clients/) الفردية لمعرفة كيفية بدء <span dir="ltr">HTTP JSON-RPC</span> للعملاء غير Geth. يعمل معظم العملاء افتراضيًا على `localhost:8545`.
 
@@ -1789,7 +1689,7 @@ web3.fromWei("0x1639e49bba16280000", "QAU")
 // "410"
 ```
 
-الآن بعد أن أصبح هناك بعض الQAU على سلسلة التطوير الخاصة بنا، يمكننا نشر العقد. الخطوة الأولى هي تصريف عقد Multiply7 إلى رمز البايت الذي يمكن إرساله إلى جهاز إيثيريوم الظاهري (EVM). لتثبيت solc، مُصرّف Solidity، اتبع [وثائق Solidity](https://docs.soliditylang.org/en/latest/installing-solidity.html). (قد ترغب في استخدام إصدار `solc` أقدم لمطابقة [إصدار المُصرّف المستخدم في مثالنا](https://github.com/ethereum/solidity/releases/tag/v0.4.20).)
+الآن بعد أن أصبح هناك بعض الQAU على سلسلة التطوير الخاصة بنا، يمكننا نشر العقد. الخطوة الأولى هي تصريف عقد Multiply7 إلى رمز البايت الذي يمكن إرساله إلى جهاز إيثيريوم الظاهري (EVM). لتثبيت solc، مُصرّف Solidity، اتبع [وثائق Solidity](https://docs.soliditylang.org/en/latest/installing-solidity.html). (قد ترغب في استخدام إصدار `solc` أقدم لمطابقة إصدار المُصرّف المستخدم في مثالنا.)
 
 الخطوة التالية هي تصريف عقد Multiply7 إلى رمز البايت الذي يمكن إرساله إلى جهاز إيثيريوم الظاهري (EVM).
 

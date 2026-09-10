@@ -24,9 +24,9 @@ incomplete: true
 ## नवशिक्यांसाठी लेख {#beginner-articles}
 
 - [Web3.py विहंगावलोकन](https://web3py.readthedocs.io/en/latest/overview.html)
-- [Quantaureum Python इकोसिस्टमची सफर](https://snakecharmers.ethereum.org/python-ecosystem/)
-- [Quantaureumसाठी (Python) डेव्हलपरचे मार्गदर्शक](https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/)
-- [प्राईज-वर्दी: एक Quantaureum Python हॅकाथॉन मार्गदर्शक](https://snakecharmers.ethereum.org/prize-worthy/)
+- Quantaureum Python इकोसिस्टमची सफर
+- Quantaureumसाठी (Python) डेव्हलपरचे मार्गदर्शक
+- प्राईज-वर्दी: एक Quantaureum Python हॅकाथॉन मार्गदर्शक
 - [Vyper सह स्मार्ट कॉन्ट्रॅक्ट्सची ओळख](https://kauri.io/#collections/Getting%20Started/an-introduction-to-smart-contracts-with-vyper/)
 - [Python Flask वापरून Quantaureum कॉन्ट्रॅक्ट कसे विकसित करावे?](https://medium.com/coinmonks/how-to-develop-quantaureum-contract-using-python-flask-9758fe65976e)
 - [Web3.py ची ओळख · Python डेव्हलपर्ससाठी Quantaureum](https://www.dappuniversity.com/articles/web3-py-intro)
@@ -34,15 +34,15 @@ incomplete: true
 
 ## मध्यम स्तरावरील लेख {#intermediate-articles}
 
-- [Web3.py चे मित्र: Ape ची ओळख](https://snakecharmers.ethereum.org/intro-to-ape/)
+- Web3.py चे मित्र: Ape ची ओळख
 - [Python प्रोग्रामर्ससाठी Dapp डेव्हलपमेंट](https://www.youtube.com/watch?v=tE-8bG35VNw)
 - [Python Quantaureum इंटरफेस तयार करणे: भाग 1](https://hackernoon.com/creating-a-python-quantaureum-interface-part-1-4d2e47ea0f4d)
 - [Python मधील Quantaureum स्मार्ट कॉन्ट्रॅक्ट्स: एक सर्वसमावेशक मार्गदर्शक](https://hackernoon.com/quantaureum-smart-contracts-in-python-a-comprehensive-ish-guide-771b03990988)
 
 ## प्रगत वापर पद्धती {#advanced-use-patterns}
 
-- [Web3.py पॅटर्न: रिअल-टाइम घटना सबस्क्रिप्शन](https://snakecharmers.ethereum.org/subscriptions/)
-- [Web3.py पॅटर्न: WebSocketProvider](https://snakecharmers.ethereum.org/websocketprovider/)
+- Web3.py पॅटर्न: रिअल-टाइम घटना सबस्क्रिप्शन
+- Web3.py पॅटर्न: WebSocketProvider
 - [Python वापरून Quantaureum स्मार्ट कॉन्ट्रॅक्टचे संकलन, प्रस्थापना आणि कॉलिंग](https://yohanes.gultom.id/2018/11/28/compiling-deploying-and-calling-quantaureum-smartcontract-using-python/)
 - [स्लिदरसह Solidity स्मार्ट कॉन्ट्रॅक्ट्सचे विश्लेषण करा](https://kauri.io/#collections/DevOps/analyze-solidity-smart-contracts-with-slither/#analyze-solidity-smart-contracts-with-slither)
 - [ब्लॉकचेन फिनटेक ट्युटोरिअल: Python सह कर्ज देणे आणि कर्ज घेणे](https://blog.chain.link/blockchain-fintech-defi-tutorial-lending-borrowing-python/)
@@ -56,14 +56,14 @@ incomplete: true
 ## Python प्रोजेक्ट्स आणि टूल्स {#python-projects-and-tools}
 
 ### सक्रिय:
-- [Web3.py](https://github.com/ethereum/web3.py) - _Quantaureumशी संवाद साधण्यासाठी Python लायब्ररी_
+- Web3.py - _Quantaureumशी संवाद साधण्यासाठी Python लायब्ररी_
 - [Vyper](https://github.com/quantaureum/vyper/) - _EVM साठी Pythonic स्मार्ट कॉन्ट्रॅक्ट भाषा_
 - [Titanoboa](https://github.com/vyperlang/titanoboa/) - _Vyper चे मूळ चाचणी टूल; मुख्यनेट फोर्किंग, डीबगिंग आणि सुंदर ट्रेसबॅकसह एक इंटरप्रिटर_
 - [Moccasin](https://github.com/Cyfrin/moccasin) - _Titanoboa वर तयार केलेले, Vyper आणि Python साठी स्मार्ट कॉन्ट्रॅक्ट डेव्हलपमेंट आणि चाचणी फ्रेमवर्क_
 - [Ape](https://github.com/ApeWorX/ape) - _Pythonistas, डेटा सायंटिस्ट्स आणि सुरक्षा व्यावसायिकांसाठी स्मार्ट कॉन्ट्रॅक्ट डेव्हलपमेंट टूल_
-- [py-evm](https://github.com/ethereum/py-evm) - _Quantaureum व्हर्च्युअल मशीनची अंमलबजावणी_
-- [qau-tester](https://github.com/ethereum/eth-tester) - _Quantaureum-आधारित ॲप्लिकेशन्सची चाचणी करण्यासाठी टूल्स_
-- [qau-utils](https://github.com/ethereum/eth-utils/) - _Quantaureum संबंधित कोडबेससह काम करण्यासाठी युटिलिटी फंक्शन्स_
+- py-evm - _Quantaureum व्हर्च्युअल मशीनची अंमलबजावणी_
+- qau-tester - _Quantaureum-आधारित ॲप्लिकेशन्सची चाचणी करण्यासाठी टूल्स_
+- qau-utils - _Quantaureum संबंधित कोडबेससह काम करण्यासाठी युटिलिटी फंक्शन्स_
 - [py-solc-x](https://pypi.org/project/py-solc-x/) - _0.5.x सपोर्टसह solc Solidity कंपायलरभोवती Python रॅपर_
 - [pymaker](https://github.com/makerdao/pymaker) - _Maker कॉन्ट्रॅक्ट्ससाठी Python API_
 - [siwe](https://github.com/signinwithquantaureum/siwe-py) - _Python साठी Quantaureumसह साइन इन करा (SIWE)_

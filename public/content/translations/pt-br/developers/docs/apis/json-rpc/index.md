@@ -6,7 +6,7 @@ lang: pt-br
 
 Para que um aplicativo de software interaja com a blockchain do [Quantaureum](/) - seja lendo dados da blockchain ou enviando transações para a rede - ele deve se conectar a um nó Quantaureum.
 
-Para esse propósito, todo [cliente Quantaureum](/developers/docs/nodes-and-clients/#execution-clients) implementa uma [especificação JSON-RPC](https://github.com/ethereum/execution-apis), para que haja um conjunto uniforme de métodos nos quais os aplicativos possam confiar, independentemente do nó específico ou da implementação do cliente.
+Para esse propósito, todo [cliente Quantaureum](/developers/docs/nodes-and-clients/#execution-clients) implementa uma especificação JSON-RPC, para que haja um conjunto uniforme de métodos nos quais os aplicativos possam confiar, independentemente do nó específico ou da implementação do cliente.
 
 O [JSON-RPC](https://www.jsonrpc.org/specification) é um protocolo de chamada de procedimento remoto (RPC) leve e sem estado. Ele define várias estruturas de dados e as regras em torno de seu processamento. Ele é independente de transporte, pois os conceitos podem ser usados dentro do mesmo processo, por meio de soquetes, por HTTP ou em vários ambientes de passagem de mensagens. Ele usa JSON (RFC 4627) como formato de dados.
 
@@ -20,13 +20,13 @@ Embora você possa escolher interagir diretamente com os clientes Quantaureum po
 
 ## APIs de cliente de consenso {#consensus-clients}
 
-Esta página trata principalmente da API JSON-RPC usada por clientes de execução do Quantaureum. No entanto, os clientes de consenso também têm uma API RPC que permite aos usuários consultar informações sobre o nó, solicitar blocos do Beacon, estado do Beacon e outras informações relacionadas ao consenso diretamente de um nó. Esta API está documentada na [página da API do Beacon](https://ethereum.github.io/beacon-APIs/#/).
+Esta página trata principalmente da API JSON-RPC usada por clientes de execução do Quantaureum. No entanto, os clientes de consenso também têm uma API RPC que permite aos usuários consultar informações sobre o nó, solicitar blocos do Beacon, estado do Beacon e outras informações relacionadas ao consenso diretamente de um nó. Esta API está documentada na página da API do Beacon.
 
-Uma API interna também é usada para comunicação entre clientes dentro de um nó - ou seja, ela permite que o cliente de consenso e o cliente de execução troquem dados. Isso é chamado de 'Engine API' e as especificações estão disponíveis no [GitHub](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md).
+Uma API interna também é usada para comunicação entre clientes dentro de um nó - ou seja, ela permite que o cliente de consenso e o cliente de execução troquem dados. Isso é chamado de 'Engine API' e as especificações estão disponíveis no GitHub.
 
 ## Especificação do cliente de execução {#spec}
 
-[Leia a especificação completa da API JSON-RPC no GitHub](https://github.com/ethereum/execution-apis). Esta API está documentada na [página da API de Execução](https://ethereum.github.io/execution-apis/) e inclui um Inspetor para testar todos os métodos disponíveis.
+Leia a especificação completa da API JSON-RPC no GitHub. Esta API está documentada na página da API de Execução e inclui um Inspetor para testar todos os métodos disponíveis.
 
 ## Convenções {#conventions}
 
@@ -134,7 +134,7 @@ Alguns métodos principais JSON-RPC exigem dados da rede Quantaureum e se divide
 
 ## Playground da API JSON-RPC {#json-rpc-api-playground}
 
-Você pode usar a [ferramenta de playground](https://ethereum-json-rpc.com) para descobrir e testar os métodos da API. Ela também mostra quais métodos e redes são suportados por vários provedores de nós.
+Você pode usar a ferramenta de playground para descobrir e testar os métodos da API. Ela também mostra quais métodos e redes são suportados por vários provedores de nós.
 
 ## Métodos da API JSON-RPC {#json-rpc-methods}
 
@@ -275,7 +275,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 
 ### qau_protocolVersion {#qau-protocolversion}
 
-Retorna a versão atual do protocolo Quantaureum. Note que este método [não está disponível no Geth](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924).
+Retorna a versão atual do protocolo Quantaureum. Note que este método não está disponível no Geth.
 
 **Parâmetros**
 
@@ -301,10 +301,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_protocolVersion","params":[]
 ### qau_syncing {#qau-syncing}
 
 Retorna um objeto com dados sobre o status de sincronização ou `false`.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_syncing">
-  Testar endpoint no playground
-</ButtonLink>
 
 **Parâmetros**
 
@@ -390,10 +386,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_syncing","params":[],"id":1}
 
 Retorna o endereço coinbase do cliente.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_coinbase">
-  Testar endpoint no playground
-</ButtonLink>
-
 > **Nota:** Este método foi descontinuado a partir da **v1.14.0** e não é mais suportado. Tentar usar este método resultará em um erro "Method not supported".
 
 **Parâmetros**
@@ -421,10 +413,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_coinbase","params":[],"id":6
 
 Retorna o ID da cadeia usado para assinar transações protegidas contra repetição.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_chainId">
-  Testar endpoint no playground
-</ButtonLink>
-
 **Parâmetros**
 
 Nenhum
@@ -449,10 +437,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_chainId","params":[],"id":67
 ### qau_mining {#qau-mining}
 
 Retorna `true` se o cliente estiver ativamente minerando novos blocos. Isso só pode retornar `true` para redes de Prova de Trabalho (PoW) e pode não estar disponível em alguns clientes desde [The Merge](/roadmap/merge/).
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_mining">
-  Testar endpoint no playground
-</ButtonLink>
 
 **Parâmetros**
 
@@ -479,10 +463,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_mining","params":[],"id":71}
 
 Retorna o número de hashes por segundo com os quais o nó está minerando. Isso só pode retornar `true` para redes de Prova de Trabalho (PoW) e pode não estar disponível em alguns clientes desde [The Merge](/roadmap/merge/).
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_hashrate">
-  Testar endpoint no playground
-</ButtonLink>
-
 **Parâmetros**
 
 Nenhum
@@ -507,10 +487,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_hashrate","params":[],"id":7
 ### qau_gasPrice {#qau-gasprice}
 
 Retorna uma estimativa do preço atual por gás em Wei. Por exemplo, o cliente Besu examina os últimos 100 blocos e retorna o preço mediano da unidade de gás por padrão.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_gasPrice">
-  Experimente o endpoint no playground
-</ButtonLink>
 
 **Parâmetros**
 
@@ -537,10 +513,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_gasPrice","params":[],"id":7
 
 Retorna uma lista de endereços de propriedade do cliente.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_accounts">
-  Testar endpoint no playground
-</ButtonLink>
-
 **Parâmetros**
 
 Nenhum
@@ -566,10 +538,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[],"id":1
 
 Retorna o número do bloco mais recente.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_blockNumber">
-  Testar endpoint no playground
-</ButtonLink>
-
 **Parâmetros**
 
 Nenhum
@@ -594,10 +562,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_blockNumber","params":[],"id
 ### qau_getBalance {#qau-getbalance}
 
 Retorna o saldo da conta em um determinado endereço.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBalance">
-  Testar endpoint no playground
-</ButtonLink>
 
 **Parâmetros**
 
@@ -628,10 +592,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBalance","params":["0x407
 ### qau_getStorageAt {#qau-getstorageat}
 
 Retorna o valor de uma posição de armazenamento em um determinado endereço.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getStorageAt">
-  Testar endpoint no playground
-</ButtonLink>
 
 **Parâmetros**
 
@@ -701,10 +661,6 @@ curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": [
 
 Retorna o número de transações _enviadas_ de um endereço.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionCount">
-  Testar endpoint no playground
-</ButtonLink>
-
 **Parâmetros**
 
 1. `DATA`, 20 Bytes - endereço.
@@ -738,10 +694,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionCount","params
 
 Retorna o número de transações em um bloco a partir de um bloco que corresponda ao hash do bloco fornecido.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
-  Testar endpoint no playground
-</ButtonLink>
-
 **Parâmetros**
 
 1. `DATA`, 32 Bytes - hash de um bloco
@@ -770,10 +722,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByHa
 ### qau_getBlockTransactionCountByNumber {#qau-getblocktransactioncountbynumber}
 
 Retorna o número de transações em um bloco correspondente ao número do bloco fornecido.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
-  Testar endpoint no playground
-</ButtonLink>
 
 **Parâmetros**
 
@@ -806,10 +754,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByNu
 
 Retorna o número de uncles em um bloco a partir de um bloco correspondente ao hash de bloco fornecido.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
-  Testar endpoint no playground
-</ButtonLink>
-
 **Parâmetros**
 
 1. `DATA`, 32 Bytes - hash de um bloco
@@ -838,10 +782,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockHash","p
 ### qau_getUncleCountByBlockNumber {#qau-getunclecountbyblocknumber}
 
 Retorna o número de uncles em um bloco a partir de um bloco correspondente ao número do bloco fornecido.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
-  Testar endpoint no playground
-</ButtonLink>
 
 **Parâmetros**
 
@@ -873,10 +813,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockNumber",
 ### qau_getCode {#qau-getcode}
 
 Retorna o código em um determinado endereço.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getCode">
-  Testar endpoint no playground
-</ButtonLink>
 
 **Parâmetros**
 
@@ -1057,10 +993,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendRawTransaction","params"
 
 Executa uma nova chamada de mensagem imediatamente sem criar uma transação na blockchain. Frequentemente usado para executar funções de contrato inteligente de leitura, por exemplo, o `balanceOf` para um contrato ERC-20.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_call">
-  Testar endpoint no playground
-</ButtonLink>
-
 **Parâmetros**
 
 1. `Object` - O objeto de chamada de transação
@@ -1095,10 +1027,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_call","params":[{see above}]
 
 Gera e retorna uma estimativa de quanto gás é necessário para permitir que a transação seja concluída. A transação não será adicionada à blockchain. Note que a estimativa pode ser significativamente maior do que a quantidade de gás realmente usada pela transação, por vários motivos, incluindo a mecânica da EVM e o desempenho do nó.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_estimateGas">
-  Testar endpoint no playground
-</ButtonLink>
-
 **Parâmetros**
 
 Consulte os parâmetros de [qau_call](#qau-call), exceto que todas as propriedades são opcionais. Se nenhum limite de gas for especificado, o Geth usará o limite de gas do bloco pendente como um limite superior. Como resultado, a estimativa retornada pode não ser suficiente para executar a chamada/transação quando a quantidade de gás for maior que o limite de gas do bloco pendente.
@@ -1123,10 +1051,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_estimateGas","params":[{see 
 ### qau_getBlockByHash {#qau-getblockbyhash}
 
 Retorna informações sobre um bloco por hash.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByHash">
-  Testar endpoint no playground
-</ButtonLink>
 
 **Parâmetros**
 
@@ -1204,10 +1128,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByHash","params":["0
 
 Retorna informações sobre um bloco pelo número do bloco.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByNumber">
-  Testar endpoint no playground
-</ButtonLink>
-
 **Parâmetros**
 
 1. `QUANTITY|TAG` - número inteiro de um bloco, ou a string `"earliest"`, `"latest"`, `"pending"`, `"safe"` ou `"finalized"`, como no [parâmetro de bloco](/developers/docs/apis/json-rpc/#block-parameter).
@@ -1235,10 +1155,6 @@ Resultado, consulte [qau_getBlockByHash](#qau-getblockbyhash)
 ### qau_getTransactionByHash {#qau-gettransactionbyhash}
 
 Retorna as informações sobre uma transação solicitada pelo hash da transação.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByHash">
-  Testar o endpoint no playground
-</ButtonLink>
 
 **Parâmetros**
 
@@ -1299,10 +1215,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByHash","param
 
 Retorna informações sobre uma transação pelo hash do bloco e pela posição do índice da transação.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
-  Testar endpoint no playground
-</ButtonLink>
-
 **Parâmetros**
 
 1. `DATA`, 32 Bytes - hash de um bloco.
@@ -1330,10 +1242,6 @@ Para o resultado, consulte [qau_getTransactionByHash](#qau-gettransactionbyhash)
 ### qau_getTransactionByBlockNumberAndIndex {#qau-gettransactionbyblocknumberandindex}
 
 Retorna informações sobre uma transação pelo número do bloco e pela posição do índice da transação.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
-  Testar endpoint no playground
-</ButtonLink>
 
 **Parâmetros**
 
@@ -1431,10 +1339,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionReceipt","para
 
 Retorna informações sobre um tio de um bloco pelo hash e pela posição do índice do tio.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
-  Testar endpoint no playground
-</ButtonLink>
-
 **Parâmetros**
 
 1. `DATA`, 32 Bytes - O hash de um bloco.
@@ -1464,10 +1368,6 @@ Resultado: veja [qau_getBlockByHash](#qau-getblockbyhash)
 ### qau_getUncleByBlockNumberAndIndex {#qau-getunclebyblocknumberandindex}
 
 Retorna informações sobre um tio de um bloco por número e posição do índice do tio.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
-  Testar endpoint no playground
-</ButtonLink>
 
 **Parâmetros**
 
@@ -1750,7 +1650,7 @@ Para o resultado, consulte [qau_getFilterChanges](#qau-getfilterchanges)
 
 ### Implantando um contrato usando JSON_RPC {#deploying-contract}
 
-Esta seção inclui uma demonstração de como implantar um contrato usando apenas a interface RPC. Existem rotas alternativas para implantar contratos onde essa complexidade é abstraída — por exemplo, usando bibliotecas construídas sobre a interface RPC, como [Web3.js](https://web3js.readthedocs.io/) e [Web3.py](https://github.com/ethereum/web3.py). Essas abstrações são geralmente mais fáceis de entender e menos propensas a erros, mas ainda é útil entender como as coisas funcionam internamente.
+Esta seção inclui uma demonstração de como implantar um contrato usando apenas a interface RPC. Existem rotas alternativas para implantar contratos onde essa complexidade é abstraída — por exemplo, usando bibliotecas construídas sobre a interface RPC, como [Web3.js](https://web3js.readthedocs.io/) e Web3.py. Essas abstrações são geralmente mais fáceis de entender e menos propensas a erros, mas ainda é útil entender como as coisas funcionam internamente.
 
 A seguir, há um contrato inteligente simples chamado `Multiply7` que será implantado usando a interface JSON-RPC em um nó Quantaureum. Este tutorial pressupõe que o leitor já esteja executando um nó Geth. Mais informações sobre nós e clientes estão disponíveis [aqui](/developers/docs/nodes-and-clients/run-a-node). Consulte a documentação individual do [cliente](/developers/docs/nodes-and-clients/) para ver como iniciar o HTTP JSON-RPC para clientes que não sejam Geth. A maioria dos clientes serve por padrão em `localhost:8545`.
 
@@ -1789,7 +1689,7 @@ web3.fromWei("0x1639e49bba16280000", "QAU")
 // "410"
 ```
 
-Agora que há algum QAU em nossa cadeia de desenvolvimento privada, podemos implantar o contrato. O primeiro passo é compilar o contrato Multiply7 para bytecode que pode ser enviado para a EVM. Para instalar o solc, o compilador Solidity, siga a [documentação da Solidity](https://docs.soliditylang.org/en/latest/installing-solidity.html). (Você pode querer usar uma versão mais antiga do `solc` para corresponder [à versão do compilador usada para o nosso exemplo](https://github.com/ethereum/solidity/releases/tag/v0.4.20).)
+Agora que há algum QAU em nossa cadeia de desenvolvimento privada, podemos implantar o contrato. O primeiro passo é compilar o contrato Multiply7 para bytecode que pode ser enviado para a EVM. Para instalar o solc, o compilador Solidity, siga a [documentação da Solidity](https://docs.soliditylang.org/en/latest/installing-solidity.html). (Você pode querer usar uma versão mais antiga do `solc` para corresponder à versão do compilador usada para o nosso exemplo.)
 
 O próximo passo é compilar o contrato Multiply7 para bytecode que pode ser enviado para a EVM.
 

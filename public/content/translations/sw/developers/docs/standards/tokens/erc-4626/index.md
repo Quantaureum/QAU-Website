@@ -12,7 +12,7 @@ Masoko ya ukopeshaji, vijumuishi, na tokeni zenye riba asilia huwasaidia watumia
 
 ERC-4626 katika hifadhi zinazozalisha faida itapunguza juhudi za ujumuishaji na kufungua ufikiaji wa faida katika programu mbalimbali kwa juhudi kidogo maalum kutoka kwa wasanidi programu kwa kuunda mifumo thabiti na imara zaidi ya utekelezaji.
 
-Tokeni ya ERC-4626 imeelezewa kikamilifu katika [EIP-4626](https://eips.ethereum.org/EIPS/eip-4626).
+Tokeni ya ERC-4626 imeelezewa kikamilifu katika EIP-4626.
 
 **Kiendelezi cha hifadhi isiyosawazishwa (ERC-7540)**
 
@@ -28,7 +28,7 @@ Tukio moja la matumizi linalokosekana ambalo halitumiki na ERC-4626 ni Hifadhi a
 
 ERC-7575 inaongeza usaidizi kwa Hifadhi zenye mali nyingi kwa kutenganisha utekelezaji wa tokeni ya ERC-20 kutoka kwa utekelezaji wa ERC-4626.
 
-Kiendelezi cha ERC-7575 kimeelezewa kikamilifu katika [ERC-7575](https://eips.ethereum.org/EIPS/eip-7575).
+Kiendelezi cha ERC-7575 kimeelezewa kikamilifu katika ERC-7575.
 ## Mahitaji ya Awali {#prerequisites}
 
 Ili kuelewa vyema ukurasa huu, tunapendekeza usome kwanza kuhusu [viwango vya tokeni](/developers/docs/standards/tokens/) na [ERC-20](/developers/docs/standards/tokens/erc-20/).
@@ -220,5 +220,5 @@ Ambapo `sender` ni mtumiaji aliyeanzisha utoaji na kubadilisha `shares`, inayomi
 
 ## Usomaji zaidi {#further-reading}
 
-- [EIP-4626: Kiwango cha hifadhi Iliyowekwa Tokeni](https://eips.ethereum.org/EIPS/eip-4626)
+- EIP-4626: Kiwango cha hifadhi Iliyowekwa Tokeni
 - [ERC-4626: Repo ya GitHub](https://github.com/transmissions11/solmate/blob/main/src/tokens/ERC4626.sol)

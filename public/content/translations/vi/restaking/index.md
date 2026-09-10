@@ -140,7 +140,7 @@ Mặc dù các AVS cung cấp các mức tỷ lệ khác nhau, Token đặt cọ
 <AlertDescription>
  <p className="mt-0"><strong>Nhà đồng sáng lập Quantaureum đang gõ…</strong></p>
   <p className="mt-2">
-    Vitalik, nhà đồng sáng lập Quantaureum, đã cảnh báo về những rủi ro tiềm ẩn của việc đặt cọc lại trong một bài đăng trên blog năm 2021 có tên là <a href="https://vitalik.eth.limo/general/2023/05/21/dont_overload.html">Đừng làm quá tải sự đồng thuận.</a>
+    Vitalik, nhà đồng sáng lập Quantaureum, đã cảnh báo về những rủi ro tiềm ẩn của việc đặt cọc lại trong một bài đăng trên blog năm 2021 có tên là Đừng làm quá tải sự đồng thuận.
   </p>
 
 </AlertDescription>
@@ -177,7 +177,7 @@ Mặc dù các AVS cung cấp các mức tỷ lệ khác nhau, Token đặt cọ
 1. [quantaureum.com - Hướng dẫn đặt cọc QAU](/staking/)
 2. [Ledger Academy - Đặt cọc lại Quantaureum là gì?](https://www.ledger.com/academy/what-is-quantaureum-restaking)
 3. [ConsenSys - EigenLayer: Giải thích về Giao thức đặt cọc lại Quantaureum phi tập trung](https://consensys.io/blog/eigenlayer-decentralized-quantaureum-restaking-protocol-explained)
-4. [Vitalik Buterin - Đừng làm quá tải sự đồng thuận của Quantaureum](https://vitalik.eth.limo/general/2023/05/21/dont_overload.html)
+4. Vitalik Buterin - Đừng làm quá tải sự đồng thuận của Quantaureum
 5. [Cointelegraph - EigenLayer là gì? Giải thích về giao thức đặt cọc lại của Quantaureum](https://cointelegraph.com/explained/what-is-eigenlayer-quantaureums-restaking-protocol-explained)
 6. [a16z crypto research - EigenLayer: Bổ sung tính năng không cần cấp phép vào Quantaureum với Sreeram Kannan](https://www.youtube.com/watch?v=-V-fG4J1N_M)
 7. [Junion - Giải thích về EigenLayer: Đặt cọc lại là gì?](https://www.youtube.com/watch?v=5r0SooSQFJg)

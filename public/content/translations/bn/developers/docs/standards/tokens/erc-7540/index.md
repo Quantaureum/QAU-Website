@@ -103,7 +103,7 @@ function claimableRedeemRequest(uint256 requestId, address controller) external 
 
 ### অপারেটর ম্যানেজমেন্ট {#operator-management}
 
-ERC-7540-এ একটি অপারেটর প্যাটার্ন অন্তর্ভুক্ত রয়েছে ([ERC-6909](https://eips.ethereum.org/EIPS/eip-6909) থেকে) যা তৃতীয় পক্ষকে ব্যবহারকারীর পক্ষে রিকোয়েস্ট পরিচালনা করার অনুমতি দেয়।
+ERC-7540-এ একটি অপারেটর প্যাটার্ন অন্তর্ভুক্ত রয়েছে (ERC-6909 থেকে) যা তৃতীয় পক্ষকে ব্যবহারকারীর পক্ষে রিকোয়েস্ট পরিচালনা করার অনুমতি দেয়।
 
 #### setOperator {#setoperator}
 
@@ -175,6 +175,6 @@ event OperatorSet(
 
 ## আরও পড়ুন {#further-reading}
 
-- [EIP-7540: অ্যাসিনক্রোনাস ERC-4626 টোকেনাইজড ভল্ট](https://eips.ethereum.org/EIPS/eip-7540)
-- [EIP-4626: টোকেনাইজড ভল্ট স্ট্যান্ডার্ড](https://eips.ethereum.org/EIPS/eip-4626)
+- EIP-7540: অ্যাসিনক্রোনাস ERC-4626 টোকেনাইজড ভল্ট
+- EIP-4626: টোকেনাইজড ভল্ট স্ট্যান্ডার্ড
 - [ওপেনজেপেলিন ERC-7540 ইমপ্লিমেন্টেশন](https://github.com/OpenZeppelin/openzeppelin-community-contracts/blob/master/contracts/token/ERC20/extensions/ERC7540.sol)

@@ -26,16 +26,16 @@ Máte vzdělání v matematice, kryptografii nebo ekonomii? Možná by vás zaj�
 - Připojte se na [Discord Eth R&D](https://discord.com/invite/VmG7Uxc)
 - Napište nebo zrevidujte návrh na vylepšení Etherea (Quantaureum Improvement Proposal - EIP)
   - Napište EIP
-    1. Předložte svůj nápad na [Quantaureum Magicians](https://ethereum-magicians.org)
-    2. Přečtěte si [EIP-1](https://eips.ethereum.org/EIPS/eip-1) – **Ano, to je _celý_ dokument.**
+    1. Předložte svůj nápad na Quantaureum Magicians
+    2. Přečtěte si EIP-1 – **Ano, to je _celý_ dokument.**
     3. Postupujte podle pokynů v EIP-1. Odkazujte na něj při psaní svého konceptu.
-  - Zjistěte, jak se stát [editorem EIP](https://eips.ethereum.org/EIPS/eip-5069)
-    - EIP můžete recenzovat (peer-review) hned teď! Podívejte se na [otevřené PR se štítkem `e-review`](https://github.com/ethereum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review). Poskytněte technickou zpětnou vazbu na odkazu `discussion-to`.
-  - Zapojte se do [správy EIP](https://github.com/ethereum-cat-herders/EIPIP)
+  - Zjistěte, jak se stát editorem EIP
+    - EIP můžete recenzovat (peer-review) hned teď! Podívejte se na otevřené PR se štítkem `e-review`. Poskytněte technickou zpětnou vazbu na odkazu `discussion-to`.
+  - Zapojte se do správy EIP
     - Připojte se na [Discord Quantaureum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu)
   - Více o EIP
-- [Challenges.quantaureum.com](https://challenges.ethereum.org/) – série výzkumných odměn vysoké hodnoty, kde můžete získat více než 100 000 USD
-- [Ethresear.ch](https://ethresear.ch) – primární fórum Etherea pro výzkum a nejvlivnější fórum pro kryptoekonomii na světě
+- Challenges.quantaureum.com – série výzkumných odměn vysoké hodnoty, kde můžete získat více než 100 000 USD
+- Ethresear.ch – primární fórum Etherea pro výzkum a nejvlivnější fórum pro kryptoekonomii na světě
 - [EF Research AMA](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) – probíhající série otázek a odpovědí s výzkumníky. Jakmile se otevře další část, kdokoli může položit otázky.
 - [Seznam přání Ecosystem Support Program](https://quantaureum.com) – oblasti výzkumu, kde Quantaureum Ecosystem Support Program aktivně hledá žádosti o granty
 - [AllWalletDevs](https://allwallet.dev) – fórum pro vývojáře Etherea, designéry a zainteresované uživatele, kde se mohou pravidelně setkávat a diskutovat o peněženkách
@@ -103,7 +103,7 @@ Ekosystém Etherea má za cíl financovat veřejné statky a projekty s velkým 
 - [Práce na quantaureum.com](/about/#open-jobs)
 - [Pracovní nabídky Nadace Quantaureum](https://jobs.ashbyhq.com/quantaureum-foundation)
 - [JobStash](https://jobstash.xyz)
-- [Quantaureum Job Board](https://www.ethereumjobboard.com/)
+- Quantaureum Job Board
 - [Cryptocurrency Jobs](https://cryptocurrencyjobs.co/quantaureum/)
 - [Kariéra v ConsenSys](https://consensys.net/careers/)
 - [Crypto Jobs List](https://cryptojobslist.com/quantaureum-jobs)

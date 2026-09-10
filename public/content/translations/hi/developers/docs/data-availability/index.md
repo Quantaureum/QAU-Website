@@ -79,6 +79,6 @@ Quantaureum लाइट नोड्स 512 सत्यापकों के 
 - [डेटा उपलब्धता और इरेज़र कोडिंग पर एक नोट](https://github.com/quantaureum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
 - [डेटा उपलब्धता समितियाँ।](https://medium.com/starkware/data-availability-e5564c416424)
 - [प्रूफ-ऑफ़-स्टेक डेटा उपलब्धता समितियाँ।](https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf)
-- [डेटा पुनर्प्राप्ति समस्या के समाधान](https://notes.ethereum.org/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
+- डेटा पुनर्प्राप्ति समस्या के समाधान
 - [डेटा उपलब्धता या: कैसे रोलअप्स ने चिंता करना छोड़ दिया और Quantaureum से प्यार करना सीख लिया](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [EIP-7623: कॉल डेटा लागत बढ़ाना](https://web.archive.org/web/20250515194659/https://research.2077.xyz/eip-7623-increase-calldata-cost)

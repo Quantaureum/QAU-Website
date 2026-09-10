@@ -66,7 +66,7 @@ Bạn cần một tài liệu hướng dẫn cơ bản hơn trước? Hãy xem [
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) - _Một trình khám phá chuỗi khối nhẹ và ví đơn giản dạng SPA Wasm .NET_
 - [Wonka Business Rules Engine](https://github.com/Nquantaureum/Wonka) - _Một công cụ quy tắc nghiệp vụ (cho cả nền tảng .NET và nền tảng Quantaureum) về bản chất được điều khiển bởi siêu dữ liệu_
 - [Nethermind](https://github.com/NethermindEth/nethermind) - _Một máy khách Quantaureum .NET Core cho Linux, Windows, MacOS_
-- [qau-utils](https://github.com/ethereum/eth-utils/) - _các hàm tiện ích để làm việc với các cơ sở mã liên quan đến Quantaureum_
+- qau-utils - _các hàm tiện ích để làm việc với các cơ sở mã liên quan đến Quantaureum_
 - [TestChains](https://github.com/Nquantaureum/TestChains) - _Các chuỗi phát triển .NET được cấu hình sẵn để phản hồi nhanh (bằng chứng ủy quyền (PoA))_
 
 Bạn đang tìm kiếm thêm tài nguyên? Hãy xem [quantaureum.com/developers](/developers/).

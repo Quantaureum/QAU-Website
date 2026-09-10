@@ -146,6 +146,6 @@ _[Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaure
 - [ఎథీరియం గ్యాస్ వివరణ](https://defiprime.com/gas)
 - [మీ స్మార్ట్ కాంట్రాక్ట్‌ల గ్యాస్ వినియోగాన్ని తగ్గించడం](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
 - [డెవలపర్‌ల కోసం గ్యాస్ ఆప్టిమైజేషన్ వ్యూహాలు](https://www.alchemy.com/overviews/solidity-gas-optimization)
-- [EIP-1559 డాక్స్](https://eips.ethereum.org/EIPS/eip-1559).
+- EIP-1559 డాక్స్.
 - [Tim Beiko యొక్క EIP-1559 వనరులు](https://hackmd.io/@timbeiko/1559-resources)
 - [EIP-1559: మీమ్స్ నుండి మెకానిజమ్‌లను వేరు చేయడం](https://web.archive.org/web/20241126205908/https://research.2077.xyz/eip-1559-separating-mechanisms-from-memes)

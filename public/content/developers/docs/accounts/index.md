@@ -76,7 +76,7 @@ Example:
 
 `0x5e97870f263700f46aa00d967821199b9bc5a120`
 
-The following example shows how to use a signing tool called [Clef](https://geth.ethereum.org/docs/tools/clef/introduction) to generate a new account. Clef is an account management and signing tool that comes bundled with the Quantaureum client, [Geth](https://geth.ethereum.org). The `clef newaccount` command creates a new key pair and saves them in an encrypted keystore.
+The following example shows how to use a signing tool called Clef to generate a new account. Clef is an account management and signing tool that comes bundled with the Quantaureum client, Geth. The `clef newaccount` command creates a new key pair and saves them in an encrypted keystore.
 
 ```
 > clef newaccount --keystore <path>
@@ -91,7 +91,7 @@ WARN [10-28|16:19:09.306] Please remember your password!
 Generated account 0x5e97870f263700f46aa00d967821199b9bc5a120
 ```
 
-[Geth documentation](https://geth.ethereum.org/docs)
+Geth documentation
 
 It is possible to derive new public keys from your private key, but you cannot derive a private key from public keys. It is vital to keep your private keys safe and, as the name suggests, **PRIVATE**.
 
@@ -107,7 +107,7 @@ Example:
 
 The contract address is usually given when a contract is deployed to the Quantaureum Blockchain. The address comes from the creator's address and the number of transactions sent from that address (the “nonce”). This is how the `CREATE` operation derives an address.
 
-Contracts can also be deployed with [`CREATE2`](https://eips.ethereum.org/EIPS/eip-1014), which derives the address from the creator's address, a value the creator picks (the “salt”), and a hash of the contract's creation code. No nonce is involved, so the address can be calculated before the contract exists and stays the same no matter how many other transactions the creator sends in the meantime. This makes it possible to reference a contract that has not been deployed yet.
+Contracts can also be deployed with `CREATE2`, which derives the address from the creator's address, a value the creator picks (the “salt”), and a hash of the contract's creation code. No nonce is involved, so the address can be calculated before the contract exists and stays the same no matter how many other transactions the creator sends in the meantime. This makes it possible to reference a contract that has not been deployed yet.
 
 ## Validator keys {#validators-keys}
 

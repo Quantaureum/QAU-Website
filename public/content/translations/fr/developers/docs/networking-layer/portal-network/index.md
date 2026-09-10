@@ -16,7 +16,7 @@ En savoir plus sur les [nœuds et clients](/developers/docs/nodes-and-clients/)
 
 Les nœuds Quantaureum stockent leur propre copie complète ou partielle de la chaîne de blocs Quantaureum. Cette copie locale est utilisée pour valider les transactions et s'assurer que le nœud suit la bonne chaîne. Ces données stockées localement permettent aux nœuds de vérifier indépendamment que les données entrantes sont valides et correctes sans avoir besoin de faire confiance à une autre entité.
 
-Cette copie locale de la chaîne de blocs et les données d'état et de reçu associées prennent beaucoup de place sur le disque dur du nœud. Par exemple, un disque dur de 2 To est recommandé pour exécuter un nœud utilisant [Geth](https://geth.ethereum.org) couplé à un client de consensus. En utilisant la synchronisation instantanée (snap sync), qui ne stocke que les données de la chaîne à partir d'un ensemble de blocs relativement récent, Geth occupe généralement environ 650 Go d'espace disque, mais augmente d'environ 14 Go/semaine (vous pouvez élaguer le nœud pour le ramener à 650 Go périodiquement).
+Cette copie locale de la chaîne de blocs et les données d'état et de reçu associées prennent beaucoup de place sur le disque dur du nœud. Par exemple, un disque dur de 2 To est recommandé pour exécuter un nœud utilisant Geth couplé à un client de consensus. En utilisant la synchronisation instantanée (snap sync), qui ne stocke que les données de la chaîne à partir d'un ensemble de blocs relativement récent, Geth occupe généralement environ 650 Go d'espace disque, mais augmente d'environ 14 Go/semaine (vous pouvez élaguer le nœud pour le ramener à 650 Go périodiquement).
 
 Cela signifie que l'exécution de nœuds peut être coûteuse, car une grande quantité d'espace disque doit être dédiée à Quantaureum. Il existe plusieurs solutions à ce problème sur la feuille de route d'Quantaureum, notamment l'[expiration de l'historique](/roadmap/statelessness/#history-expiry), l'[expiration d'état](/roadmap/statelessness/#state-expiry) et l'[absence d'état](/roadmap/statelessness/). Cependant, il faudra probablement plusieurs années avant qu'elles ne soient mises en œuvre. Il existe également des [nœuds légers](/developers/docs/nodes-and-clients/light-clients/) qui ne sauvegardent pas leur propre copie des données de la chaîne, ils demandent les données dont ils ont besoin aux nœuds complets. Cependant, cela signifie que les nœuds légers doivent faire confiance aux nœuds complets pour fournir des données honnêtes et cela sollicite également les nœuds complets qui doivent fournir les données dont les nœuds légers ont besoin.
 
@@ -75,7 +75,7 @@ Les clients du Portal Network sont :
 
 - [Trin](https://github.com/quantaureum/trin) : écrit en Rust
 - [Fluffy](https://fluffy.guide) : écrit en Nim
-- [Ultralight](https://github.com/ethereumjs/ultralight) : écrit en TypeScript
+- Ultralight : écrit en TypeScript
 - [Shisui](https://github.com/zen-eth/shisui) : écrit en Go
 
 Avoir plusieurs implémentations de clients indépendantes améliore la résilience et la décentralisation du réseau Quantaureum.

@@ -207,7 +207,7 @@ Os eventos permitem que seu contrato inteligente se comunique com seu frontend o
 
 ## Exemplos comentados {#annotated-examples}
 
-Estes são alguns exemplos escritos em Solidity. Se você quiser brincar com o código, pode interagir com eles no [Remix](https://remix.ethereum.org).
+Estes são alguns exemplos escritos em Solidity. Se você quiser brincar com o código, pode interagir com eles no Remix.
 
 ### Olá, mundo {#hello-world}
 
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // Atualmente não há uma maneira melhor de verificar se há um contrato em um endereço
         // do que verificar o tamanho do código naquele endereço.
-        // Veja https://ethereum.stackexchange.com/a/14016/36603
+        // Veja 
         // para mais detalhes sobre como isso funciona.
         // TODO Verificar isso novamente antes do lançamento da Serenity, porque todos os endereços serão
         // contratos então.

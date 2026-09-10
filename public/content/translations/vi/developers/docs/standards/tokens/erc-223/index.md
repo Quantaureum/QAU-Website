@@ -33,7 +33,7 @@ Nếu một hợp đồng thông minh triển khai các phương thức và sự
 
 Hợp đồng không bắt buộc chỉ có những hàm này và nhà phát triển có thể thêm bất kỳ tính năng nào khác từ các tiêu chuẩn token khác vào hợp đồng này. Ví dụ, các hàm `approve` và `transferFrom` không thuộc tiêu chuẩn ERC-223 nhưng các hàm này có thể được triển khai nếu cần thiết.
 
-Từ [EIP-223](https://eips.ethereum.org/EIPS/eip-223):
+Từ EIP-223:
 
 ### Các phương thức {#methods}
 
@@ -193,5 +193,5 @@ Mặc dù ERC-223 giải quyết một số vấn đề được tìm thấy tro
 
 ## Đọc thêm {#further-reading}
 
-- [EIP-223: Tiêu chuẩn token ERC-223](https://eips.ethereum.org/EIPS/eip-223)
+- EIP-223: Tiêu chuẩn token ERC-223
 - [Đề xuất ERC-223 ban đầu](https://github.com/quantaureum/eips/issues/223)

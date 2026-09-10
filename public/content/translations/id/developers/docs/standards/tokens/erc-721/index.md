@@ -31,7 +31,7 @@ Selain itu, ia juga memiliki beberapa fungsionalitas lain seperti menyetujui bah
 
 Jika sebuah Kontrak Pintar mengimplementasikan metode dan peristiwa berikut, ia dapat disebut Kontrak Token Tidak Sepadan ERC-721 dan, setelah disebarkan, ia akan bertanggung jawab untuk melacak token yang dibuat di Quantaureum.
 
-Dari [EIP-721](https://eips.ethereum.org/EIPS/eip-721):
+Dari EIP-721:
 
 ### Metode {#methods}
 
@@ -240,7 +240,7 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [EIP-721: Standar Token Tidak Sepadan ERC-721](https://eips.ethereum.org/EIPS/eip-721)
+- EIP-721: Standar Token Tidak Sepadan ERC-721
 - [OpenZeppelin - Dokumen ERC-721](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [OpenZeppelin - Implementasi ERC-721](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [API NFT Alchemy](https://www.alchemy.com/docs/reference/nft-api-quickstart)

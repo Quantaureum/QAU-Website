@@ -54,7 +54,7 @@ ERC-1363 திரும்ப அழைப்புகளை ஏற்கக்
 
 பிற ERC-20 நீட்டிப்பு முன்மொழிவுகளைப் போலல்லாமல், ERC-1363 ஆனது ERC-20 இன் `transfer` மற்றும் `transferFrom` முறைகளை மேலெழுதாது, மேலும் ERC-20 உடன் பின்தங்கிய இணக்கத்தன்மையைப் பராமரித்துச் செயல்படுத்த வேண்டிய இடைமுக ஐடிகளை (IDs) வரையறுக்கிறது.
 
-[EIP-1363](https://eips.ethereum.org/EIPS/eip-1363) இலிருந்து:
+EIP-1363 இலிருந்து:
 
 ### முறைகள் {#methods}
 
@@ -165,11 +165,9 @@ interface ERC165 {
 interface ERC1363Receiver {
   /**
    * @dev `operator` மூலம் `from`-லிருந்து `ERC1363::transferAndCall` அல்லது `ERC1363::transferFromAndCall` வழியாக இந்த ஒப்பந்தத்திற்கு ERC-1363 வில்லைகள் பரிமாற்றம் செய்யப்படும்போதெல்லாம், இந்தச் செயல்பாடு அழைக்கப்படுகிறது.
-   *
    * குறிப்பு: பரிமாற்றத்தை ஏற்க, இது
    * `bytes4(keccak256("onTransferReceived(address,address,uint256,bytes)"))`
    * (அதாவது 0x88a7ca5c, அல்லது அதன் சொந்த செயல்பாடு தேர்வி) என்பதை வழங்க வேண்டும்.
-   *
    * @param operator `transferAndCall` அல்லது `transferFromAndCall` செயல்பாட்டை அழைத்த முகவரி.
    * @param from வில்லைகள் எங்கிருந்து பரிமாற்றம் செய்யப்படுகின்றனவோ அந்த முகவரி.
    * @param value பரிமாற்றம் செய்யப்பட்ட வில்லைகளின் அளவு.
@@ -190,11 +188,9 @@ interface ERC1363Receiver {
 interface ERC1363Spender {
   /**
    * @dev ஒரு ERC-1363 வில்லைகளின் `owner` தங்களது வில்லைகளைச் செலவழிக்க `ERC1363::approveAndCall` வழியாக இந்த ஒப்பந்தத்திற்கு ஒப்புதல் அளிக்கும்போதெல்லாம், இந்தச் செயல்பாடு அழைக்கப்படுகிறது.
-   *
    * குறிப்பு: ஒப்புதலை ஏற்க, இது
    * `bytes4(keccak256("onApprovalReceived(address,uint256,bytes)"))`
    * (அதாவது 0x7b04a2d0, அல்லது அதன் சொந்த செயல்பாடு தேர்வி) என்பதை வழங்க வேண்டும்.
-   *
    * @param owner `approveAndCall` செயல்பாட்டை அழைத்த மற்றும் முன்பு வில்லைகளைச் சொந்தமாகக் கொண்டிருந்த முகவரி.
    * @param value செலவழிக்கப்பட வேண்டிய வில்லைகளின் அளவு.
    * @param data குறிப்பிட்ட வடிவமைப்பு இல்லாத கூடுதல் தரவு.
@@ -206,5 +202,5 @@ interface ERC1363Spender {
 
 ## மேலும் படிக்க {#further-reading}
 
-- [ERC-1363: செலுத்தக்கூடிய வில்லை தரநிலை](https://eips.ethereum.org/EIPS/eip-1363)
+- ERC-1363: செலுத்தக்கூடிய வில்லை தரநிலை
 - [ERC-1363: GitHub களஞ்சியம்](https://github.com/vittominacori/erc1363-payable-token)

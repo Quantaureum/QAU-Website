@@ -54,7 +54,7 @@ lang: ar
 
 على عكس مقترحات امتداد <span dir="ltr">ERC-20</span> الأخرى، لا يتجاوز <span dir="ltr">ERC-1363</span> طرق `transfer` و`transferFrom` الخاصة بـ <span dir="ltr">ERC-20</span> ويحدد معرفات الواجهات التي سيتم تنفيذها مع الحفاظ على التوافق مع الإصدارات السابقة من <span dir="ltr">ERC-20</span>.
 
-من [<span dir="ltr">EIP-1363</span>](https://eips.ethereum.org/EIPS/eip-1363):
+من <span dir="ltr">EIP-1363</span>:
 
 ### الطرق {#methods}
 
@@ -167,11 +167,9 @@ interface ERC1363Receiver {
   /**
    * @dev كلما تم تحويل رموز ERC-1363 المميزة إلى هذا العقد عبر `ERC1363::transferAndCall` أو `ERC1363::transferFromAndCall`
    * بواسطة `operator` من `from`، يتم استدعاء هذه الدالة.
-   *
    * ملاحظة: لقبول التحويل، يجب أن تُرجع هذه الدالة
    * `bytes4(keccak256("onTransferReceived(address,address,uint256,bytes)"))`
    * (أي 0x88a7ca5c، أو محدد الدالة الخاص بها).
-   *
    * @param operator العنوان الذي استدعى دالة `transferAndCall` أو `transferFromAndCall`.
    * @param from العنوان الذي يتم تحويل الرموز المميزة منه.
    * @param value مقدار الرموز المميزة المحولة.
@@ -193,11 +191,9 @@ interface ERC1363Spender {
   /**
    * @dev كلما وافق `owner` لرموز ERC-1363 المميزة على هذا العقد عبر `ERC1363::approveAndCall`
    * لإنفاق رموزه المميزة، يتم استدعاء هذه الدالة.
-   *
    * ملاحظة: لقبول الموافقة، يجب أن تُرجع هذه الدالة
    * `bytes4(keccak256("onApprovalReceived(address,uint256,bytes)"))`
    * (أي 0x7b04a2d0، أو محدد الدالة الخاص بها).
-   *
    * @param owner العنوان الذي استدعى دالة `approveAndCall` وكان يمتلك الرموز المميزة مسبقًا.
    * @param value مقدار الرموز المميزة المراد إنفاقها.
    * @param data بيانات إضافية بدون تنسيق محدد.
@@ -209,5 +205,5 @@ interface ERC1363Spender {
 
 ## قراءة إضافية {#further-reading}
 
-- [<span dir="ltr">ERC-1363</span>: معيار الرمز المميز القابل للدفع](https://eips.ethereum.org/EIPS/eip-1363)
+- <span dir="ltr">ERC-1363</span>: معيار الرمز المميز القابل للدفع
 - [<span dir="ltr">ERC-1363</span>: مستودع <span dir="ltr">GitHub</span>](https://github.com/vittominacori/erc1363-payable-token)

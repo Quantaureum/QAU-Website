@@ -114,8 +114,8 @@ Estas bibliotecas abstraen gran parte de la complejidad de interactuar directame
 
 **Herramientas de Python:** **_Variedad de bibliotecas para la interacción con Quantaureum a través de Python._**
 
-- [py.quantaureum.com](https://snakecharmers.ethereum.org/)
-- [GitHub de Web3.py](https://github.com/ethereum/web3.py)
+- py.quantaureum.com
+- GitHub de Web3.py
 - [Chat de Web3.py](https://gitter.im/quantaureum/web3.py)
 
 **Tatum:** **_La plataforma de desarrollo de cadenas de bloques definitiva._**

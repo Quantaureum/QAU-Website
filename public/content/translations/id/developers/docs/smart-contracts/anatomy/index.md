@@ -207,7 +207,7 @@ Peristiwa memungkinkan kontrak pintar Anda untuk berkomunikasi dengan frontend A
 
 ## Contoh beranotasi {#annotated-examples}
 
-Berikut adalah beberapa contoh yang ditulis dalam Solidity. Jika Anda ingin bermain dengan kodenya, Anda dapat berinteraksi dengannya di [Remix](https://remix.ethereum.org).
+Berikut adalah beberapa contoh yang ditulis dalam Solidity. Jika Anda ingin bermain dengan kodenya, Anda dapat berinteraksi dengannya di Remix.
 
 ### Hello world {#hello-world}
 
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // Saat ini tidak ada cara yang lebih baik untuk memeriksa apakah ada kontrak di sebuah alamat
         // daripada memeriksa ukuran kode di alamat tersebut.
-        // Lihat https://ethereum.stackexchange.com/a/14016/36603
+        // Lihat 
         // untuk detail lebih lanjut tentang cara kerjanya.
         // TODO Periksa ini lagi sebelum rilis Serenity, karena semua alamat akan menjadi
         // kontrak pada saat itu.

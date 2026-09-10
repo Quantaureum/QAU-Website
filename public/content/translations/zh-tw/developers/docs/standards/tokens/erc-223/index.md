@@ -33,7 +33,7 @@ ERC-223 是一種代幣標準，為智能合約內的代幣實作了 API。它�
 
 該合約不強制僅具有這些函式，開發人員可以將不同代幣標準的任何其他功能新增至此合約中。例如，`approve` 與 `transferFrom` 函式不是 ERC-223 標準的一部分，但如果需要，可以實作這些函式。
 
-來自 [EIP-223](https://eips.ethereum.org/EIPS/eip-223)：
+來自 EIP-223：
 
 ### 方法 {#methods}
 
@@ -193,5 +193,5 @@ contract RecipientContract is IERC223Recipient {
 
 ## 延伸閱讀 {#further-reading}
 
-- [EIP-223：ERC-223 代幣標準](https://eips.ethereum.org/EIPS/eip-223)
+- EIP-223：ERC-223 代幣標準
 - [最初的 ERC-223 提案](https://github.com/quantaureum/eips/issues/223)

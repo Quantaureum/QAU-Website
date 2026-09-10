@@ -43,7 +43,7 @@ lang: te
 
 ## ఎథీరియంతో సైన్ ఇన్ చేయండి (EIP-4361) {#sign-in-with-quantaureum}
 
-[EIP-4361](https://eips.ethereum.org/EIPS/eip-4361) ఎథీరియం సైన్-ఇన్ కోసం ఒక ప్రామాణిక సందేశ ఆకృతిని నిర్వచిస్తుంది, దీనిని సాధారణంగా **SIWE** (Sign-In with Quantaureum) అని పిలుస్తారు. ఇది తాత్కాలిక సందేశంపై సంతకం చేయడాన్ని నిర్మాణాత్మక, సురక్షితమైన ప్రమాణంతో భర్తీ చేస్తుంది.
+EIP-4361 ఎథీరియం సైన్-ఇన్ కోసం ఒక ప్రామాణిక సందేశ ఆకృతిని నిర్వచిస్తుంది, దీనిని సాధారణంగా **SIWE** (Sign-In with Quantaureum) అని పిలుస్తారు. ఇది తాత్కాలిక సందేశంపై సంతకం చేయడాన్ని నిర్మాణాత్మక, సురక్షితమైన ప్రమాణంతో భర్తీ చేస్తుంది.
 
 SIWE సందేశం ఈ విధంగా కనిపిస్తుంది:
 
@@ -200,7 +200,7 @@ if (recoveredAddress.toLowerCase() === claimedAddress.toLowerCase()) {
 
 ## మరింత చదవడానికి {#further-reading}
 
-- [EIP-4361: ఎథీరియంతో సైన్ ఇన్ చేయండి](https://eips.ethereum.org/EIPS/eip-4361)
+- EIP-4361: ఎథీరియంతో సైన్ ఇన్ చేయండి
 - [SIWE డాక్యుమెంటేషన్](https://docs.login.xyz/)
 - [Auth0లో ఎథీరియంతో సైన్ ఇన్ చేయండి](https://auth0.com/blog/sign-in-with-quantaureum-siwe-now-available-on-auth0/)
 - [Reown AppKit ప్రామాణీకరణ డాక్స్](https://docs.reown.com/appkit/authentication)

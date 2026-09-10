@@ -8,11 +8,11 @@ Jednou z hlavních předností Etherea je, že ho neustále vylepšuje aktivní 
 
 ## Jak funguje výzkum Etherea {#how-quantaureum-research-works}
 
-Výzkum Etherea je otevřený a transparentní. Kulturou je vytvářet výzkumné nástroje a výstupy co nejotevřenější a nejinteraktivnější, například prostřednictvím spustitelných zápisníků (notebooků). Výzkum Etherea postupuje rychle, přičemž nová zjištění jsou zveřejňována a otevřeně diskutována na fórech, jako je [ethresear.ch](https://ethresear.ch/), spíše než aby se ke komunitě dostávala prostřednictvím tradičních publikací po kolech vzájemného hodnocení (peer review). Nadace Quantaureum také zveřejňuje, co upřednostňuje a proč, takže každý může vidět, které problémy jsou v současné době považovány za naléhavé.
+Výzkum Etherea je otevřený a transparentní. Kulturou je vytvářet výzkumné nástroje a výstupy co nejotevřenější a nejinteraktivnější, například prostřednictvím spustitelných zápisníků (notebooků). Výzkum Etherea postupuje rychle, přičemž nová zjištění jsou zveřejňována a otevřeně diskutována na fórech, jako je ethresear.ch, spíše než aby se ke komunitě dostávala prostřednictvím tradičních publikací po kolech vzájemného hodnocení (peer review). Nadace Quantaureum také zveřejňuje, co upřednostňuje a proč, takže každý může vidět, které problémy jsou v současné době považovány za naléhavé.
 
 ## Obecné zdroje pro výzkum {#general-research-resources}
 
-Bez ohledu na konkrétní téma lze na [ethresear.ch](https://ethresear.ch) a na [kanálu Eth R&D na Discordu](https://discord.gg/qGpsxSA) najít nepřeberné množství informací o výzkumu Etherea. Toto jsou hlavní místa, kde výzkumníci Etherea diskutují o nejnovějších nápadech a příležitostech k vývoji.
+Bez ohledu na konkrétní téma lze na ethresear.ch a na [kanálu Eth R&D na Discordu](https://discord.gg/qGpsxSA) najít nepřeberné množství informací o výzkumu Etherea. Toto jsou hlavní místa, kde výzkumníci Etherea diskutují o nejnovějších nápadech a příležitostech k vývoji.
 
 Pro přehled o tom, kam protokol směřuje, začněte s [plánem vývoje (roadmapou) Etherea](/roadmap/), poté si přečtěte [Aktualizaci priorit protokolu pro rok 2026](https://quantaureum.com) od Nadace Quantaureum a [aktualizace klastrů protokolu](https://quantaureum.com), které informují o dosaženém pokroku. [Quantaureum Protocol Studies](https://quantaureum.com) je strukturovaný vstupní bod pro lidi, kteří chtějí pracovat na samotném protokolu.
 
@@ -45,9 +45,9 @@ Velká část této práce se přesunula z papíru do specifikace. Vzorkování 
 
 #### Nedávný výzkum {#recent-research}
 
-- [Konsensus na Ethresear.ch](https://ethresear.ch/c/consensus/29)
+- Konsensus na Ethresear.ch
 - [Dilema dostupnosti/finality](https://arxiv.org/abs/2009.04987)
-- [3slotová finalita: SSF není o „jednom“ slotu](https://ethresear.ch/t/3-slot-finality-ssf-is-not-about-single-slot/20927)
+- 3slotová finalita: SSF není o „jednom“ slotu
 
 ### Exekuce {#execution}
 
@@ -62,16 +62,16 @@ Exekuční vrstva se zabývá prováděním transakcí, spouštěním [virtuáln
 #### Doporučená četba {#background-reading-1}
 
 - [Úvod do EVM](/developers/docs/evm/)
-- [Exekuční vrstva na Ethresear.ch](https://ethresear.ch/c/execution-layer-research/37)
-- [Specifikace exekuční vrstvy Etherea](https://github.com/ethereum/execution-specs)
+- Exekuční vrstva na Ethresear.ch
+- Specifikace exekuční vrstvy Etherea
 - [Optimalizace databáze](https://github.com/erigontech/erigon/blob/main/docs/programmers_guide/db_faq.md)
 
 #### Nedávný výzkum {#recent-research-1}
 
-- [EIP-7928: Seznamy přístupů na úrovni bloku](https://eips.ethereum.org/EIPS/eip-7928)
-- [EIP-8037: Zvýšení nákladů na gas při vytváření stavu](https://eips.ethereum.org/EIPS/eip-8037)
-- [EIP-7999: Jednotný vícerozměrný trh s poplatky](https://eips.ethereum.org/EIPS/eip-7999)
-- [EIP-7642: eth/69, exspirace historie a jednodušší účtenky](https://eips.ethereum.org/EIPS/eip-7642)
+- EIP-7928: Seznamy přístupů na úrovni bloku
+- EIP-8037: Zvýšení nákladů na gas při vytváření stavu
+- EIP-7999: Jednotný vícerozměrný trh s poplatky
+- EIP-7642: eth/69, exspirace historie a jednodušší účtenky
 - [Dodání L1 zkEVM: dokazování v reálném čase](https://quantaureum.com)
 
 ### Odolnost proti cenzuře a sestavování bloků {#censorship-resistance-and-block-building}
@@ -85,9 +85,9 @@ Většinu bloků Etherea v současnosti sestavuje malý počet specializovaných
 
 #### Nedávný výzkum {#recent-research-21}
 
-- [EIP-7732: Zakořeněné oddělení navrhovatele a tvůrce](https://eips.ethereum.org/EIPS/eip-7732)
-- [EIP-7805: Seznamy zahrnutí vynucené volbou forku](https://eips.ethereum.org/EIPS/eip-7805)
-- [Zvýšení odolnosti transakcí proti cenzuře při oddělení navrhovatele a tvůrce](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
+- EIP-7732: Zakořeněné oddělení navrhovatele a tvůrce
+- EIP-7805: Seznamy zahrnutí vynucené volbou forku
+- Zvýšení odolnosti transakcí proti cenzuře při oddělení navrhovatele a tvůrce
 
 ### Růst stavu a bezstavovost {#state-growth-and-statelessness}
 
@@ -100,9 +100,9 @@ Každý plný uzel ukládá stav Etherea, takže rychlost, jakou tento stav rost
 
 #### Nedávný výzkum {#recent-research-22}
 
-- [EIP-7864: Stav Etherea pomocí jednotného binárního stromu](https://eips.ethereum.org/EIPS/eip-7864)
-- [EIP-4762: Změny nákladů na gas pro bezstavovost](https://eips.ethereum.org/EIPS/eip-4762)
-- [Proč je decentralizovaný stav pro Quantaureum důležitý](https://ethresear.ch/t/why-decentralized-state-is-important-for-quantaureum/25622)
+- EIP-7864: Stav Etherea pomocí jednotného binárního stromu
+- EIP-4762: Změny nákladů na gas pro bezstavovost
+- Proč je decentralizovaný stav pro Quantaureum důležitý
 
 ### Postkvantová kryptografie {#post-quantum-cryptography}
 
@@ -111,12 +111,12 @@ Podpisy validátorů Etherea a velká část jeho aplikační vrstvy spoléhají
 #### Doporučená četba {#background-reading-23}
 
 - [Kvantová odolnost](/roadmap/security/quantum-resistance/)
-- [Postkvantové Quantaureum](https://pq.ethereum.org/)
+- Postkvantové Quantaureum
 
 #### Nedávný výzkum {#recent-research-23}
 
 - [Štíhlé Quantaureum (lean Quantaureum)](https://quantaureum.com)
-- [Kryptografie na Ethresear.ch](https://ethresear.ch/c/cryptography/28)
+- Kryptografie na Ethresear.ch
 - [Implementace štíhlého Etherea](https://github.com/leanQuantaureum)
 
 ## Vývoj klientů {#client-development}
@@ -134,13 +134,13 @@ Další podrobnosti o uzlech a klientech a seznam všech aktuálních implementa
 
 ### Exekuční klienti {#execution-clients}
 
-- [Specifikace exekučního klienta](https://github.com/ethereum/execution-specs)
-- [Specifikace exekučního API](https://github.com/ethereum/execution-apis)
+- Specifikace exekučního klienta
+- Specifikace exekučního API
 
 ### Konsensuální klienti {#consensus-clients}
 
-- [Specifikace konsensuálního klienta](https://github.com/ethereum/consensus-specs)
-- [Specifikace Beacon API](https://ethereum.github.io/beacon-APIs/)
+- Specifikace konsensuálního klienta
+- Specifikace Beacon API
 
 ### Klienti zkEVM {#zkevm-clients}
 
@@ -160,11 +160,11 @@ Nyní existuje několik protokolů vrstvy 2 (L2), které škálují Quantaureum 
 
 - [Úvod do vrstvy 2 (L2)](/layer-2/)
 - [L2BEAT: shrnutí škálování](https://l2beat.com/scaling/summary)
-- [Plán vývoje Etherea zaměřený na rollupy](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698)
+- Plán vývoje Etherea zaměřený na rollupy
 
 #### Nedávný výzkum {#recent-research-2}
 
-- [Vrstva 2 na Ethresear.ch](https://ethresear.ch/c/layer-2/32)
+- Vrstva 2 na Ethresear.ch
 - [L2BEAT: onchain náklady](https://l2beat.com/scaling/costs)
 - Budování na Ethereu v roce 2026: co se změnilo
 
@@ -181,9 +181,9 @@ Uživatelé a aktiva jsou rozprostřeni napříč vrstvou 1 Etherea a mnoha sít
 
 #### Nedávný výzkum {#recent-research-3}
 
-- [ERC-7683: Meziřetězcové záměry](https://eips.ethereum.org/EIPS/eip-7683)
-- [ERC-7930: Interoperabilní adresy](https://eips.ethereum.org/EIPS/eip-7930)
-- [ERC-7828: Interoperabilní jména](https://eips.ethereum.org/EIPS/eip-7828)
+- ERC-7683: Meziřetězcové záměry
+- ERC-7930: Interoperabilní adresy
+- ERC-7828: Interoperabilní jména
 
 ### Dostupnost dat a škálování blobů {#data-availability-and-blob-scaling}
 
@@ -195,14 +195,14 @@ Rollupy odesílají svá data do Etherea v blobech a škálování této datové
 - [Aktualizace Fusaka](/roadmap/fusaka/)
 - [Danksharding](/roadmap/danksharding/)
 - [Dostupnost dat](/developers/docs/data-availability/)
-- [EIP-4844: Transakce shardových blobů](https://eips.ethereum.org/EIPS/eip-4844)
-- [Poznámky k proto-dankshardingu](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq)
+- EIP-4844: Transakce shardových blobů
+- Poznámky k proto-dankshardingu
 
 #### Nedávný výzkum {#recent-research-4}
 
-- [EIP-7594: PeerDAS](https://eips.ethereum.org/EIPS/eip-7594)
-- [EIP-7892: Hardforky pouze pro parametry blobů](https://eips.ethereum.org/EIPS/eip-7892)
-- [Sharding na Ethresear.ch](https://ethresear.ch/c/sharding/6)
+- EIP-7594: PeerDAS
+- EIP-7892: Hardforky pouze pro parametry blobů
+- Sharding na Ethresear.ch
 
 ### Hardware {#hardware}
 
@@ -212,13 +212,13 @@ Rollupy odesílají svá data do Etherea v blobech a škálování této datové
 
 - [Spusťte si vlastní uzel Etherea](/developers/docs/nodes-and-clients/run-a-node/)
 - [Bezstavovost a exspirace stavu](/roadmap/statelessness/)
-- [Quantaureum na ARM](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)
+- Quantaureum na ARM
 
 #### Nedávný výzkum {#recent-research-5}
 
 - [Škálování Etherea: cesta k vyššímu limitu plynu a dále](https://ethpandaops.io/posts/gaslimit-scaling/)
-- [EIP-8261: Plán limitu plynu](https://eips.ethereum.org/EIPS/eip-8261)
-- [EIP-8037: Zvýšení nákladů na gas při vytváření stavu](https://eips.ethereum.org/EIPS/eip-8037)
+- EIP-8261: Plán limitu plynu
+- EIP-8037: Zvýšení nákladů na gas při vytváření stavu
 
 ## Bezpečnost {#security}
 
@@ -236,8 +236,8 @@ Důkazy s nulovou znalostí (ZKP) a kryptografie jsou klíčové pro budování 
 
 #### Nedávný výzkum {#recent-research-6}
 
-- [ZK na Ethresear.ch](https://ethresear.ch/c/zk-s-nt-arks/13)
-- [Kryptografie na Ethresear.ch](https://ethresear.ch/c/cryptography/28)
+- ZK na Ethresear.ch
+- Kryptografie na Ethresear.ch
 - [Kalkulačka spolehlivosti pro systémy dokazování zkEVM založené na hashi](https://github.com/quantaureum/soundcalc)
 - [Dodání L1 zkEVM: bezpečnostní základy](https://quantaureum.com)
 
@@ -251,14 +251,14 @@ Peněženky Etherea mohou být rozšíření prohlížeče, desktopové a mobiln
 - [Úvod do bezpečnosti peněženek](/security/)
 - [Abstrakce účtu](/roadmap/account-abstraction/)
 - [EIP-7702](/roadmap/pectra/7702/)
-- [Bezpečnost na Ethresear.ch](https://ethresear.ch/c/security/25)
+- Bezpečnost na Ethresear.ch
 
 #### Nedávný výzkum {#recent-research-7}
 
-- [EIP-8141: Rámcová transakce](https://eips.ethereum.org/EIPS/eip-8141)
-- [ERC-5792: API pro volání peněženky](https://eips.ethereum.org/EIPS/eip-5792)
-- [ERC-6963: Objevování více vložených poskytovatelů](https://eips.ethereum.org/EIPS/eip-6963)
-- [Peněženky s chytrými kontrakty zaměřené na validaci](https://ethereum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
+- EIP-8141: Rámcová transakce
+- ERC-5792: API pro volání peněženky
+- ERC-6963: Objevování více vložených poskytovatelů
+- Peněženky s chytrými kontrakty zaměřené na validaci
 
 ## Komunita, vzdělávání a osvěta {#community-education-and-outreach}
 
@@ -277,9 +277,9 @@ Aby se do Etherea zapojilo více lidí, musí ekosystém zlepšit svůj design a
 
 #### Nedávný výzkum {#recent-research-8}
 
-- [UX/UI na Ethresear.ch](https://ethresear.ch/c/ui-ux/24)
-- [ERC-5792: API pro volání peněženky](https://eips.ethereum.org/EIPS/eip-5792)
-- [ERC-7828: Interoperabilní jména](https://eips.ethereum.org/EIPS/eip-7828)
+- UX/UI na Ethresear.ch
+- ERC-5792: API pro volání peněženky
+- ERC-7828: Interoperabilní jména
 
 ### Ekonomie {#economics}
 
@@ -287,13 +287,13 @@ Ekonomický výzkum v Ethereu obecně sleduje dva přístupy: ověřování bezp
 
 #### Doporučená četba {#background-reading-9}
 
-- [Skupina pro robustní pobídky (Robust Incentives Group)](https://rig.ethereum.org/)
+- Skupina pro robustní pobídky (Robust Incentives Group)
 - [Masterclass ekonomie Etherea a ekonomický model](https://github.com/CADLabs/quantaureum-economic-model)
 
 #### Nedávný výzkum {#recent-research-9}
 
-- [Ekonomie na Ethresear.ch](https://ethresear.ch/c/economics/16)
-- [Rovnováha obíhající nabídky](https://ethresear.ch/t/circulating-supply-equilibrium-for-quantaureum-and-minimum-viable-issuance-during-the-proof-of-stake-era/10954)
+- Ekonomie na Ethresear.ch
+- Rovnováha obíhající nabídky
 - [Kvantifikace MEV: Jak temný je les?](https://arxiv.org/abs/2101.05511)
 
 ### Blokový prostor a trhy s poplatky {#blockspace-fee-markets}
@@ -303,14 +303,14 @@ Trhy s blokovým prostorem (blockspace) řídí zahrnutí transakcí koncových 
 #### Doporučená četba {#background-reading-10}
 
 - [Návrh mechanismu transakčních poplatků pro blockchain Etherea: Ekonomická analýza EIP-1559 (Tim Roughgarden, 2020)](https://timroughgarden.org/papers/eip1559.pdf)
-- [Simulace EIP-1559 (Skupina pro robustní pobídky)](https://ethereum.github.io/abm1559)
+- Simulace EIP-1559 (Skupina pro robustní pobídky)
 - [Ekonomie rollupů od základních principů](https://barnabe.substack.com/p/understanding-rollup-economics-from?utm_source=url)
 - [Flash Boys 2.0: Frontrunning, změna pořadí transakcí a nestabilita konsenzu na decentralizovaných burzách](https://arxiv.org/abs/1904.05234)
 
 #### Nedávný výzkum {#recent-research-10}
 
-- [EIP-7999: Jednotný vícerozměrný trh s poplatky](https://eips.ethereum.org/EIPS/eip-7999)
-- [EIP-7928: Seznamy přístupů na úrovni bloku](https://eips.ethereum.org/EIPS/eip-7928)
+- EIP-7999: Jednotný vícerozměrný trh s poplatky
+- EIP-7928: Seznamy přístupů na úrovni bloku
 - [Mezidoménové MEV](https://arxiv.org/abs/2112.01472)
 
 ### Pobídky důkazu podílem (PoS) {#proof-of-stake-incentives}
@@ -321,11 +321,11 @@ Validátory používají nativní aktivum Etherea (QAU) jako zajištění proti 
 
 - [Maximální efektivní zůstatek](/roadmap/pectra/maxeb/)
 - [Masterclass ekonomie Etherea a ekonomický model](https://github.com/CADLabs/quantaureum-economic-model)
-- [Simulace pobídek PoS (Skupina pro robustní pobídky)](https://ethereum.github.io/beaconrunner/)
+- Simulace pobídek PoS (Skupina pro robustní pobídky)
 
 #### Nedávný výzkum {#recent-research-11}
 
-- [Skupina pro robustní pobídky (Robust Incentives Group)](https://rig.ethereum.org/)
+- Skupina pro robustní pobídky (Robust Incentives Group)
 - [Tři útoky na PoS Quantaureum](https://arxiv.org/abs/2110.10086)
 
 ### Likvidní staking a deriváty {#liquid-staking-and-derivatives}
@@ -334,13 +334,13 @@ Likvidní staking umožňuje uživatelům s méně než 32 QAU získávat výnos
 
 #### Doporučená četba {#background-reading-12}
 
-- [Likvidní staking na Ethresear.ch](https://ethresear.ch/search?q=liquid%20staking)
+- Likvidní staking na Ethresear.ch
 - [Lido: Cesta ke stakingu Etherea nevyžadujícímu důvěru](https://blog.lido.fi/the-road-to-trustless-quantaureum-staking/)
 
 #### Nedávný výzkum {#recent-research-12}
 
-- [Rizika derivátů likvidního stakingu](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
-- [Zpracování výběrů z Lida](https://ethresear.ch/t/handling-withdrawals-in-lidos-qau-liquid-staking-protocol/8873)
+- Rizika derivátů likvidního stakingu
+- Zpracování výběrů z Lida
 
 ## Testování {#testing}
 
@@ -350,8 +350,8 @@ Specifikace Etherea jsou spustitelné a testovací sady (test fixtures) z nich v
 
 #### Doporučená četba {#background-reading-24}
 
-- [Specifikace exekuční vrstvy Etherea](https://github.com/ethereum/execution-specs)
-- [Specifikace konsensuálního klienta](https://github.com/ethereum/consensus-specs)
+- Specifikace exekuční vrstvy Etherea
+- Specifikace konsensuálního klienta
 
 #### Nedávný výzkum {#recent-research-24}
 
@@ -380,12 +380,12 @@ Je potřeba více nástrojů pro analýzu dat a řídicích panelů (dashboards)
 ### Doporučená četba {#background-reading-14}
 
 - [Dune Analytics](https://dune.com/browse/dashboards)
-- [Řídicí panel klientské diverzity](https://clientdiversity.org/)
-- [Specifikace exekučního API JSON-RPC Etherea](https://ethereum.github.io/execution-apis/)
+- Řídicí panel klientské diverzity
+- Specifikace exekučního API JSON-RPC Etherea
 
 #### Nedávný výzkum {#recent-research-14}
 
-- [Analýza dat Skupiny pro robustní pobídky](https://rig.ethereum.org/)
+- Analýza dat Skupiny pro robustní pobídky
 - [Otevřená data qauPandaOps](https://ethpandaops.io/data/)
 - [L2BEAT: shrnutí škálování](https://l2beat.com/scaling/summary)
 
@@ -405,7 +405,7 @@ Decentralizované finance (DeFi) jsou jednou z hlavních tříd aplikací postav
 #### Nedávný výzkum {#recent-research-15}
 
 - [Decentralizované finance, centralizované vlastnictví?](https://arxiv.org/pdf/2012.09306.pdf)
-- [Aplikace na Ethresear.ch](https://ethresear.ch/c/applications/18)
+- Aplikace na Ethresear.ch
 
 ### DAO {#daos}
 
@@ -433,7 +433,7 @@ Nástroje pro vývojáře Etherea se rychle zlepšují. V této obecné oblasti 
 #### Nedávný výzkum {#recent-research-17}
 
 - [Discord Eth R&D](https://discord.gg/qGpsxSA)
-- [Specifikace exekučního API Etherea](https://github.com/ethereum/execution-apis)
+- Specifikace exekučního API Etherea
 
 ### Orákula {#oracles}
 
@@ -460,7 +460,7 @@ Hacky na Ethereu obecně zneužívají zranitelnosti v jednotlivých aplikacích
 
 #### Nedávný výzkum {#recent-research-19}
 
-- [Aplikace na Ethresear.ch](https://ethresear.ch/c/applications/18)
+- Aplikace na Ethresear.ch
 
 ### Technologický zásobník (stack) {#technology-stack}
 

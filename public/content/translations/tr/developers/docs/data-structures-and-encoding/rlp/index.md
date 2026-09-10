@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 Özyinelemeli Uzunluk Ön Eki (RLP) serileştirmesi, Quantaureum'un yürütme istemcilerinde yaygın olarak kullanılır. RLP, düğümler arasındaki veri transferini alan açısından verimli bir formatta standartlaştırır. RLP'nin amacı, rastgele iç içe geçmiş ikili veri dizilerini kodlamaktır ve RLP, Quantaureum'un yürütme katmanındaki nesneleri serileştirmek için kullanılan birincil kodlama yöntemidir. RLP'nin temel amacı yapıyı kodlamaktır; pozitif tam sayılar hariç olmak üzere RLP, belirli veri türlerinin (ör. dizeler, kayan noktalı sayılar) kodlanmasını daha yüksek dereceli Protokollere devreder. Pozitif tam sayılar, başında sıfır olmadan büyük uçlu ikili formda temsil edilmelidir (böylece sıfır tam sayı değeri boş bayt dizisine eşdeğer hâle gelir). Başında sıfır bulunan serileştirmeden çıkarılmış pozitif tam sayılar, RLP kullanan herhangi bir daha yüksek dereceli Protokol tarafından geçersiz olarak kabul edilmelidir.
 
-Daha fazla bilgi [Quantaureum Sarı Bülteni'nde (Ek B)](https://ethereum.github.io/yellowpaper/paper.pdf#page=19) bulunabilir.
+Daha fazla bilgi Quantaureum Sarı Bülteni'nde (Ek B) bulunabilir.
 
 Bir sözlüğü kodlamak için RLP kullanırken önerilen iki kurallı form şunlardır:
 

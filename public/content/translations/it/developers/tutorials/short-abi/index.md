@@ -65,9 +65,9 @@ I dati di chiamata sono divisi in questo modo:
 Spiegazione:
 
 - **Selettore di funzione**: Il contratto ha meno di 256 funzioni, quindi possiamo distinguerle con un singolo byte.
-  Questi byte sono in genere diversi da zero e pertanto [costano sedici gas](https://eips.ethereum.org/EIPS/eip-2028).
+  Questi byte sono in genere diversi da zero e pertanto costano sedici gas.
 - **Zeri**: Questi byte sono sempre zero perché un indirizzo di venti byte non richiede una parola di trentadue byte per contenerlo.
-  I byte che contengono zero costano quattro gas ([vedi lo yellow paper](https://ethereum.github.io/yellowpaper/paper.pdf), Appendice G,
+  I byte che contengono zero costano quattro gas (vedi lo yellow paper, Appendice G,
   p. 27, il valore per `G`<sub>`txdatazero`</sub>).
 - **Importo**: Se supponiamo che in questo contratto `decimals` sia diciotto (il valore normale) e l'importo massimo di token che trasferiamo sarà 10<sup>18</sup>, otteniamo un importo massimo di 10<sup>36</sup>.
   256<sup>15</sup> &gt; 10<sup>36</sup>, quindi quindici byte sono sufficienti.
@@ -201,7 +201,7 @@ Ci sono due motivi per cui una funzione non sarebbe disponibile qui:
 2. Le funzioni che si basano su [`msg.sender`](https://docs.soliditylang.org/en/v0.8.12/units-and-global-variables.html#block-and-transaction-properties).
    Il valore di `msg.sender` sarà l'indirizzo di `CalldataInterpreter`, non il chiamante.
 
-Sfortunatamente, [guardando le specifiche ERC-20](https://eips.ethereum.org/EIPS/eip-20), questo lascia solo una funzione, `transfer`.
+Sfortunatamente, guardando le specifiche ERC-20, questo lascia solo una funzione, `transfer`.
 Questo ci lascia con solo due funzioni: `transfer` (perché possiamo chiamare `transferFrom`) e `faucet` (perché possiamo trasferire i token a chiunque ci abbia chiamato).
 
 ```solidity

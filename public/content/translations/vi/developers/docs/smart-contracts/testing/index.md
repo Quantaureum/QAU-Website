@@ -253,7 +253,7 @@ Sự khác biệt chính là các chương trình tiền thưởng tìm lỗi m�
 
 - **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _Khuôn khổ để phát triển và thử nghiệm hợp đồng thông minh nâng cao (dựa trên Ethers.js)_.
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Công cụ để thử nghiệm các hợp đồng thông minh Solidity. Hoạt động bên dưới plugin "Solidity Unit Testing" của Remix IDE, được sử dụng để viết và chạy các trường hợp thử nghiệm cho một hợp đồng._
+- **Remix Tests** - _Công cụ để thử nghiệm các hợp đồng thông minh Solidity. Hoạt động bên dưới plugin "Solidity Unit Testing" của Remix IDE, được sử dụng để viết và chạy các trường hợp thử nghiệm cho một hợp đồng._
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Thư viện khẳng định cho việc thử nghiệm hợp đồng thông minh Quantaureum. Đảm bảo các hợp đồng của bạn hoạt động như mong đợi!_
 

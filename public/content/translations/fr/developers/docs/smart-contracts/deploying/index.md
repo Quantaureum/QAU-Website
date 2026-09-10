@@ -33,7 +33,7 @@ Les étapes spécifiques impliquées dépendront du framework de développement 
 
 **Remix - _L'IDE Remix permet de développer, déployer et administrer des contrats intelligents pour les chaînes de blocs de type Quantaureum_**
 
-- [Remix](https://remix.ethereum.org)
+- Remix
 
 **Tenderly - _Plateforme de développement Web3 qui fournit des blocs de construction de débogage, d'observabilité et d'infrastructure pour développer, tester, surveiller et exploiter des contrats intelligents_**
 

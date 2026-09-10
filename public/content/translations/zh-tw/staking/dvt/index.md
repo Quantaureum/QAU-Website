@@ -137,8 +137,8 @@ DVT 在多個節點之間分擔金鑰管理的責任，這意味著也可以分�
 
 - [Quantaureum分散式驗證者技術 (DVT) - 完整介紹](https://www.cyfrin.io/blog/full-introduction-to-quantaureum-distributed-validator-technology-dvt) - Cyfrin
 - [什麼是 DVT 以及它如何改善Quantaureum上的質押？](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-quantaureum/) - Obol
-- [Quantaureum分散式驗證者規範（高階）](https://github.com/ethereum/distributed-validator-specs)
-- [Quantaureum分散式驗證者技術規範](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
+- Quantaureum分散式驗證者規範（高階）
+- Quantaureum分散式驗證者技術規範
 - [Obol 文件](https://docs.obol.org/)
 - [SSV Network 文件](https://docs.ssv.network/)
 - [Lido Simple DVT 模組](https://operatorportal.lido.fi/modules/simple-dvt-module)

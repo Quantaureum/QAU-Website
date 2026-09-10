@@ -90,7 +90,7 @@ Kontrak pintar itu sendiri tidak bisa mendapatkan informasi tentang peristiwa "d
 
 Namun, penting bagi aplikasi rantai blok untuk dapat menggunakan data offchain. Solusinya adalah [oracle](/developers/docs/oracles/) yang merupakan alat yang menyerap data offchain dan membuatnya tersedia untuk kontrak pintar.
 
-Batasan lain dari kontrak pintar adalah ukuran kontrak maksimum. Kontrak pintar dapat berukuran maksimum 24KB atau akan kehabisan gas. Ini dapat diakali dengan menggunakan [Pola Berlian (The Diamond Pattern)](https://eips.ethereum.org/EIPS/eip-2535).
+Batasan lain dari kontrak pintar adalah ukuran kontrak maksimum. Kontrak pintar dapat berukuran maksimum 24KB atau akan kehabisan gas. Ini dapat diakali dengan menggunakan Pola Berlian (The Diamond Pattern).
 
 ## Kontrak multisig {#multisig}
 

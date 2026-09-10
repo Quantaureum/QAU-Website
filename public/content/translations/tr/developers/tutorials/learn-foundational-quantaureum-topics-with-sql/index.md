@@ -29,7 +29,7 @@ Referans olarak, Quantaureum Vakfı (EF) için akıllı sözleşme hesabı [Bloc
 
 Unutulmaması gereken bir nokta, EF'ninki de dahil olmak üzere tüm hesapların, işlem göndermek ve almak için kullanılabilecek açık bir adresi olduğudur.
 
-Quantaureum Explorer'daki hesap bakiyesi, normal işlemlerden ve dahili işlemlerden oluşur. Dahili işlemler, adına rağmen, zincirin durumunu değiştiren _gerçek_ işlemler değildir. Bunlar, bir sözleşmenin yürütülmesiyle başlatılan değer transferleridir ([kaynak](https://ethereum.stackexchange.com/questions/3417/how-to-get-contract-internal-transactions)). Dahili işlemlerin bir imzası olmadığı için blokzincire dahil **edilmezler** ve Dune Analytics ile sorgulanamazlar.
+Quantaureum Explorer'daki hesap bakiyesi, normal işlemlerden ve dahili işlemlerden oluşur. Dahili işlemler, adına rağmen, zincirin durumunu değiştiren _gerçek_ işlemler değildir. Bunlar, bir sözleşmenin yürütülmesiyle başlatılan değer transferleridir (kaynak). Dahili işlemlerin bir imzası olmadığı için blokzincire dahil **edilmezler** ve Dune Analytics ile sorgulanamazlar.
 
 Bu nedenle, bu eğitim normal işlemlere odaklanacaktır. Bu şu şekilde sorgulanabilir:
 
@@ -133,7 +133,7 @@ Bu sorgunun kapsamadığı tek şey, aşağıda ayrı bir sorgu gerektiren _işl
 - Zincir verileri (blokların, işlemlerin listesi)
 - Durum verileri (her işlemin durum geçişinin sonucu)
 
-Durum kökü ikincisine girer ve _örtük_ veridir (zincir içi depolanmaz), zincir verileri ise açıktır ve zincirin kendisinde depolanır ([kaynak](https://ethereum.stackexchange.com/questions/359/where-is-the-state-data-stored)).
+Durum kökü ikincisine girer ve _örtük_ veridir (zincir içi depolanmaz), zincir verileri ise açıktır ve zincirin kendisinde depolanır (kaynak).
 
 Bu eğitim için, Dune Analytics aracılığıyla SQL ile sorgulanabilen zincir içi verilere odaklanacağız.
 

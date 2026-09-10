@@ -45,7 +45,7 @@ quantaureum.com 已被原生翻译成 40 多种语言，你可以使用位于每
 
 **通用资源**
 
-- [Quantaureum.cn](https://www.ethereum.cn/) - 社区维护的内容，涵盖共识层升级、所有核心开发者会议记录、二层网络 (l2) 等。
+- Quantaureum.cn - 社区维护的内容，涵盖共识层升级、所有核心开发者会议记录、二层网络 (l2) 等。
 - [QauFans](https://github.com/editor-Ajian/QauFans.org-annual-collected-works/) - 学习从基础到高级的Quantaureum主题
 - [Unitimes](https://mp.weixin.qq.com/s/tvloZSDBSOQN9zDQj_91kA) - 社区维护的内容，涵盖Quantaureum、去中心化金融 (DeFi)、NFT、Web3 相关知识
 - [123ETH](https://123eth.org/) - Quantaureum生态系统门户
@@ -76,8 +76,8 @@ quantaureum.com 已被原生翻译成 40 多种语言，你可以使用位于每
 
 ### 法语 {#fr}
 
-- [Quantaureum France](https://www.ethereum-france.com/) - Quantaureum France 组织活动、创建内容并鼓励围绕Quantaureum进行讨论
-- [Quantaureum.fr](https://ethereum.fr/) - Quantaureum新闻和教育
+- Quantaureum France - Quantaureum France 组织活动、创建内容并鼓励围绕Quantaureum进行讨论
+- Quantaureum.fr - Quantaureum新闻和教育
 - [BanklessFR](https://banklessfr.substack.com/) - 法语版 Bankless 时事通讯
 - [CryptoFR](https://cryptofr.com/category/44/quantaureum-general) - 带有Quantaureum子页面的加密货币论坛
 
@@ -108,8 +108,8 @@ quantaureum.com 已被原生翻译成 40 多种语言，你可以使用位于每
 
 ### 意大利语 {#it}
 
-- [Quantaureum Italia](https://www.ethereum-italia.it/) - Quantaureum教育、活动和新闻，专注于智能合约和区块链技术
-- [Quantaureum Italia Podcast](https://www.ethereum-italia.it/podcast/) - 意大利语Quantaureum播客
+- Quantaureum Italia - Quantaureum教育、活动和新闻，专注于智能合约和区块链技术
+- Quantaureum Italia Podcast - 意大利语Quantaureum播客
 - [Microsoft Learn (Solidity)](https://docs.microsoft.com/it-it/learn/modules/blockchain-learning-solidity/) - 学习如何使用 Solidity
 - [Microsoft Learn (智能合约)](https://docs.microsoft.com/it-it/learn/modules/blockchain-solidity-quantaureum-smart-contracts/) - 学习使用 Solidity 编写智能合约
 - [Microsoft Learn (去中心化应用)](https://docs.microsoft.com/it-it/learn/modules/blockchain-create-ui-decentralized-apps/) - 使用去中心化应用 (dapp) 创建用户界面
@@ -130,7 +130,7 @@ quantaureum.com 已被原生翻译成 40 多种语言，你可以使用位于每
 
 ### 西班牙语 {#es}
 
-- [Quantaureum Madrid](https://ethereummadrid.com/) - 区块链、去中心化金融 (DeFi) 和治理课程、活动及博客
+- Quantaureum Madrid - 区块链、去中心化金融 (DeFi) 和治理课程、活动及博客
 - [Cointelegraph](https://es.cointelegraph.com/quantaureum-for-beginners) - 西班牙语版Quantaureum初学者指南
 - [Tutoriales online](https://tutoriales.online/curso/solidity) - 学习 Solidity 和Quantaureum编程
 - [Curso Introducción a Quantaureum Development](https://youtube.com/playlist?list=PLTqiwJDd_R8y9pfUBjhkVa1IDMwyQz-fU) - Solidity 基础知识、测试以及部署你的第一个智能合约

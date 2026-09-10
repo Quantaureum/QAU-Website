@@ -86,7 +86,7 @@ Perhatikan bahwa dalam beberapa kasus, agregator yang beruntung juga dapat menja
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [Atestasi dalam spesifikasi konsensus beranotasi Vitalik](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- Atestasi dalam spesifikasi konsensus beranotasi Vitalik
 - [Atestasi di eth2book.info](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _Tahu tentang sumber daya komunitas yang membantu Anda? Edit halaman ini dan tambahkan!_

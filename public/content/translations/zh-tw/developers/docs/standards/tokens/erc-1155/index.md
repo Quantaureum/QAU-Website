@@ -12,7 +12,7 @@ lang: zh-tw
 
 這個概念很簡單，旨在建立一個可以代表並控制任意數量的同質化與非同質化代幣類型的智能合約介面。透過這種方式，ERC-1155 代幣可以執行與 [ERC-20](/developers/docs/standards/tokens/erc-20/) 和 [ERC-721](/developers/docs/standards/tokens/erc-721/) 代幣相同的功能，甚至能同時具備兩者的功能。它改善了 ERC-20 和 ERC-721 標準的功能，使其更有效率並修正了明顯的實作錯誤。
 
-ERC-1155 代幣在 [EIP-1155](https://eips.ethereum.org/EIPS/eip-1155) 中有完整的描述。
+ERC-1155 代幣在 EIP-1155 中有完整的描述。
 
 ## 先決條件 {#prerequisites}
 
@@ -113,7 +113,7 @@ function onERC1155BatchReceived(
 ) external returns(bytes4);
 ```
 
-基於對 [EIP-165](https://eips.ethereum.org/EIPS/eip-165) 的支援，ERC-1155 僅支援智能合約的接收掛鉤。掛鉤函式必須回傳一個預先定義的魔術 bytes4 值，其給定如下：
+基於對 EIP-165 的支援，ERC-1155 僅支援智能合約的接收掛鉤。掛鉤函式必須回傳一個預先定義的魔術 bytes4 值，其給定如下：
 
 ```solidity
 bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"))
@@ -123,7 +123,7 @@ bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],byt
 
 ### NFT 支援 {#nft-support}
 
-當供應量只有一個時，該代幣本質上就是一個非同質化代幣 (NFT)。如同 ERC-721 的標準，你可以定義一個中繼資料 URL。該 URL 可以被客戶端讀取和修改，請參閱[這裡](https://eips.ethereum.org/EIPS/eip-1155#metadata)。
+當供應量只有一個時，該代幣本質上就是一個非同質化代幣 (NFT)。如同 ERC-721 的標準，你可以定義一個中繼資料 URL。該 URL 可以被客戶端讀取和修改，請參閱這裡。
 
 ### 安全轉帳規則 {#safe-transfer-rule}
 
@@ -140,7 +140,7 @@ _注意_：所有批次函式（包含掛鉤）也都存在非批次版本。這
 
 ## 延伸閱讀 {#further-reading}
 
-- [EIP-1155：多代幣標準](https://eips.ethereum.org/EIPS/eip-1155)
+- EIP-1155：多代幣標準
 - [ERC-1155：歐本齊柏林文件](https://docs.openzeppelin.com/contracts/5.x/erc1155)
 - [ERC-1155：GitHub 儲存庫](https://github.com/enjin/erc-1155)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)

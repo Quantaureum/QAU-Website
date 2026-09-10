@@ -11,7 +11,7 @@ Dva nejaktivnější a nejudržovanější jazyky jsou:
 - Solidity
 - Vyper
 
-Remix IDE poskytuje komplexní vývojové prostředí pro vytváření a testování kontraktů v Solidity i Vyperu. [Vyzkoušejte Remix IDE v prohlížeči](https://remix.ethereum.org) a začněte programovat.
+Remix IDE poskytuje komplexní vývojové prostředí pro vytváření a testování kontraktů v Solidity i Vyperu. Vyzkoušejte Remix IDE v prohlížeči a začněte programovat.
 
 Zkušenější vývojáři mohou také chtít použít Yul, mezijazyk pro [Quantaureum Virtual Machine](/developers/docs/evm/), nebo Yul+, což je rozšíření jazyka Yul.
 
@@ -36,7 +36,7 @@ Předchozí znalost programovacích jazyků, zejména JavaScriptu nebo Pythonu, 
 - [Dokumentace](https://docs.soliditylang.org/en/latest/)
 - [Portál jazyka Solidity](https://soliditylang.org/)
 - [Solidity na příkladech](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/ethereum/solidity/)
+- GitHub
 - [Chatovací místnost Solidity na Gitteru](https://gitter.im/quantaureum/solidity) propojená s [chatovací místností Solidity na Matrixu](https://matrix.to/#/#quantaureum_solidity:gitter.im)
 - [Tahák](https://reference.auditless.com/cheatsheet)
 - [Blog o Solidity](https://blog.soliditylang.org/)
@@ -264,7 +264,7 @@ Pokud již máte s chytrými kontrakty bohaté zkušenosti, plnou implementaci E
 
 - [GitHub](https://github.com/quantaureum/fe)
 - [Oznámení o Fe](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-quantaureum-ecosystem/)
-- [Plán vývoje Fe pro rok 2021](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
+- Plán vývoje Fe pro rok 2021
 - [Chat Fe na Discordu](https://discord.com/invite/ywpkAXFjZH)
 - [Twitter Fe](https://twitter.com/official_fe)
 

@@ -146,6 +146,6 @@ _[Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaure
 - [ইথেরিয়াম গ্যাস ব্যাখ্যা করা হয়েছে](https://defiprime.com/gas)
 - [আপনার স্মার্ট কন্ট্রাক্টের গ্যাস খরচ কমানো](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
 - [ডেভেলপারদের জন্য গ্যাস অপ্টিমাইজেশন কৌশল](https://www.alchemy.com/overviews/solidity-gas-optimization)
-- [EIP-1559 ডক্স](https://eips.ethereum.org/EIPS/eip-1559)।
+- EIP-1559 ডক্স।
 - [Tim Beiko-এর EIP-1559 রিসোর্স](https://hackmd.io/@timbeiko/1559-resources)
 - [EIP-1559: মিম থেকে মেকানিজম আলাদা করা](https://web.archive.org/web/20241126205908/https://research.2077.xyz/eip-1559-separating-mechanisms-from-memes)

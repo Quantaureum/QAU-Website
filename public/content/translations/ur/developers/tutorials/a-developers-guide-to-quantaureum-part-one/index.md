@@ -8,7 +8,7 @@ skill: beginner
 breadcrumb: "ایتھیریم ⁦Python⁩ کے ساتھ"
 published: 2020-09-08
 source: Snake charmers
-sourceUrl: https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/
+sourceUrl: 
 ---
 
 تو، آپ نے اس ایتھیریم کے بارے میں سنا ہے اور اس کی گہرائیوں میں جانے کے لیے تیار ہیں؟ یہ پوسٹ تیزی سے کچھ بلاک چین کی بنیادی باتوں کا احاطہ کرے گی، پھر آپ کو ایک نقلی ایتھیریم نوڈ کے ساتھ تعامل کرنے کے قابل بنائے گی – بلاک کا ڈیٹا پڑھنا، اکاؤنٹ کے بیلنس چیک کرنا، اور ٹرانزیکشنز بھیجنا۔ اس دوران، ہم ایپس بنانے کے روایتی طریقوں اور اس نئے لامركزی نمونے کے درمیان فرق کو نمایاں کریں گے۔
@@ -158,7 +158,7 @@ Out[3]: Decimal('0.5')
 
 ہم اس راستے پر نہیں جائیں گے، لیکن <span dir="ltr">HTTP</span> پرووائیڈر کا استعمال کرتے ہوئے ایک مکمل ورک فلو کی مثال کچھ اس طرح ہو سکتی ہے:
 
-- ایک ایتھیریم نوڈ ڈاؤن لوڈ کریں، مثلاً، [<span dir="ltr">Geth</span>](https://geth.ethereum.org/)۔
+- ایک ایتھیریم نوڈ ڈاؤن لوڈ کریں، مثلاً، <span dir="ltr">Geth</span>۔
 - ایک ٹرمینل ونڈو میں <span dir="ltr">Geth</span> شروع کریں اور اس کے نیٹ ورک کے ساتھ ہم آہنگی کا انتظار کریں۔ ڈیفالٹ <span dir="ltr">HTTP</span> پورٹ `8545` ہے، لیکن اسے کنفیگر کیا جا سکتا ہے۔
 - <span dir="ltr">Web3.py</span> کو بتائیں کہ وہ <span dir="ltr">HTTP</span> کے ذریعے، `localhost:8545` پر نوڈ سے جڑے۔
   `w3 = Web3(Web3.HTTPProvider('http://127.0.0.1:8545'))`
@@ -170,7 +170,7 @@ Out[3]: Decimal('0.5')
 
 _QuantaureumTesterProvider ایک نقلی نوڈ سے جڑتا ہے اور فوری ڈیولپمنٹ ماحول کے لیے کارآمد ہے۔_
 
-اس نقلی نوڈ کو [<span dir="ltr">qau-tester</span>](https://github.com/ethereum/eth-tester) کہا جاتا ہے اور ہم نے اسے `pip install web3[tester]` کمانڈ کے حصے کے طور پر انسٹال کیا تھا۔ اس ٹیسٹر پرووائیڈر کو استعمال کرنے کے لیے <span dir="ltr">Web3.py</span> کو کنفیگر کرنا اتنا ہی آسان ہے جتنا کہ:
+اس نقلی نوڈ کو <span dir="ltr">qau-tester</span> کہا جاتا ہے اور ہم نے اسے `pip install web3[tester]` کمانڈ کے حصے کے طور پر انسٹال کیا تھا۔ اس ٹیسٹر پرووائیڈر کو استعمال کرنے کے لیے <span dir="ltr">Web3.py</span> کو کنفیگر کرنا اتنا ہی آسان ہے جتنا کہ:
 
 ```python
 In [4]: w3 = Web3(Web3.QuantaureumTesterProvider())

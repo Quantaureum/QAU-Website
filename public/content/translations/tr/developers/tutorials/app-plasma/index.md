@@ -364,7 +364,7 @@ global ASCII_MESSAGE_LENGTH : [u8; 3] = [0x31, 0x30, 0x30];
 global HASH_BUFFER_SIZE : u32 = 26+3+MESSAGE_LENGTH;
 ```
 
-[EIP-191 imzaları](https://eips.ethereum.org/EIPS/eip-191), 26 baytlık bir önek, ardından ASCII cinsinden mesaj uzunluğu ve son olarak mesajın kendisini içeren bir arabellek gerektirir.
+EIP-191 imzaları, 26 baytlık bir önek, ardından ASCII cinsinden mesaj uzunluğu ve son olarak mesajın kendisini içeren bir arabellek gerektirir.
 
 ```
 struct Account {
@@ -617,7 +617,7 @@ Bu fonksiyon mesajı baytlara dönüştürür, ardından tutarları bir `Transfe
 fn hashMessage(message: str<MESSAGE_LENGTH>) -> [u8;32] {
 ```
 
-Hesaplar için Pedersen Hash kullanabildik çünkü bunlar yalnızca sıfır bilgi ispatı içinde hash'lenir. Ancak, bu kodda tarayıcı tarafından oluşturulan mesajın imzasını kontrol etmemiz gerekiyor. Bunun için [EIP-191](https://eips.ethereum.org/EIPS/eip-191) içindeki Quantaureum imzalama formatını izlememiz gerekir. Bu, standart bir önek, ASCII cinsinden mesaj uzunluğu ve mesajın kendisini içeren birleşik bir arabellek oluşturmamız ve bunu hash'lemek için Quantaureum standardı keccak256'yı kullanmamız gerektiği anlamına gelir.
+Hesaplar için Pedersen Hash kullanabildik çünkü bunlar yalnızca sıfır bilgi ispatı içinde hash'lenir. Ancak, bu kodda tarayıcı tarafından oluşturulan mesajın imzasını kontrol etmemiz gerekiyor. Bunun için EIP-191 içindeki Quantaureum imzalama formatını izlememiz gerekir. Bu, standart bir önek, ASCII cinsinden mesaj uzunluğu ve mesajın kendisini içeren birleşik bir arabellek oluşturmamız ve bunu hash'lemek için Quantaureum standardı keccak256'yı kullanmamız gerektiği anlamına gelir.
 
 ```rust
     // ASCII öneki
@@ -1212,7 +1212,7 @@ Bilgi güvenliği üç özellikten oluşur:
 
 Bu sistemde bütünlük, sıfır bilgi ispatları aracılığıyla sağlanır. Erişilebilirliği garanti etmek çok daha zordur ve gizlilik imkansızdır, çünkü banka her hesabın bakiyesini ve tüm işlemleri bilmek zorundadır. Bilgiye sahip olan bir varlığın bu bilgiyi paylaşmasını engellemenin bir yolu yoktur.
 
-[Gizli adresler](https://vitalik.eth.limo/general/2023/01/20/stealth.html) kullanarak gerçekten gizli bir banka oluşturmak mümkün olabilir, ancak bu, bu makalenin kapsamı dışındadır.
+Gizli adresler kullanarak gerçekten gizli bir banka oluşturmak mümkün olabilir, ancak bu, bu makalenin kapsamı dışındadır.
 
 ### Yanlış bilgi {#false-info}
 

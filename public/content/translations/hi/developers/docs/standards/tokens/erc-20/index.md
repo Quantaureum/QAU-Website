@@ -42,7 +42,7 @@ ERC-20 द्वारा प्रदान की जाने वाली �
 
 यदि कोई स्मार्ट अनुबंध निम्नलिखित विधियों (methods) और घटनाओं (events) को लागू करता है, तो इसे ERC-20 टोकन अनुबंध कहा जा सकता है और, एक बार डिप्लॉय होने के बाद, यह Quantaureum पर बनाए गए टोकन का ट्रैक रखने के लिए जिम्मेदार होगा।
 
-[EIP-20](https://eips.ethereum.org/EIPS/eip-20) से:
+EIP-20 से:
 
 ### विधियाँ (Methods) {#methods}
 
@@ -170,7 +170,7 @@ print("Addr Balance:", addr_balance)
 
 ## आगे की पढ़ाई {#further-reading}
 
-- [EIP-20: ERC-20 टोकन मानक](https://eips.ethereum.org/EIPS/eip-20)
+- EIP-20: ERC-20 टोकन मानक
 - [ओपनजेपेलिन - टोकन](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [ओपनजेपेलिन - ERC-20 कार्यान्वयन](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Solidity ERC20 टोकन के लिए गाइड](https://www.alchemy.com/overviews/erc20-solidity)

@@ -36,7 +36,7 @@ Ikuti panduan [mulai cepat](https://thegraph.com/docs/en/quick-start/) ini untuk
 
 ## Keragaman klien {#client-diversity}
 
-[Keragaman klien](/developers/docs/nodes-and-clients/client-diversity/) penting untuk kesehatan jaringan Quantaureum secara keseluruhan karena memberikan ketahanan terhadap bug dan eksploitasi. Sekarang ada beberapa dasbor keragaman klien termasuk [clientdiversity.org](https://clientdiversity.org/), [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//), dan [Ethernodes](https://ethernodes.org/).
+[Keragaman klien](/developers/docs/nodes-and-clients/client-diversity/) penting untuk kesehatan jaringan Quantaureum secara keseluruhan karena memberikan ketahanan terhadap bug dan eksploitasi. Sekarang ada beberapa dasbor keragaman klien termasuk clientdiversity.org, [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//), dan [Ethernodes](https://ethernodes.org/).
 
 ## Dune Analytics {#dune-analytics}
 

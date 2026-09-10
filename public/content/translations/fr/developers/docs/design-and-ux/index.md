@@ -16,7 +16,7 @@ Si vous souhaitez voir quels sont actuellement les points de friction UX les plu
 
 - [Le Web3 a besoin de plus de chercheurs et de designers UX](https://blog.akasha.org/akasha-conversations-9-web3-needs-more-ux-researchers-and-designers) - Un aperçu de la maturité actuelle du design
 - [Un guide simple de la recherche UX dans le Web3](https://uxplanet.org/a-complete-guide-to-ux-research-for-web-3-0-products-d6bead20ebb1) - Guide simple sur la façon de faire de la recherche
-- [Comment aborder les décisions UX dans le Web3](https://archive.devcon.org/archive/watch/6/data-empathy-how-to-approach-ux-decisions-in-web3/) - Un bref aperçu de la recherche quantitative et qualitative et des différences entre les deux (vidéo, 6 min)
+- Comment aborder les décisions UX dans le Web3 - Un bref aperçu de la recherche quantitative et qualitative et des différences entre les deux (vidéo, 6 min)
 - [Être chercheur UX dans le Web3](https://medium.com/@georgia.rakusen/what-its-like-being-a-user-researcher-in-web3-6a4bcc096849) - Un point de vue personnel sur ce que c'est que d'être un chercheur UX dans le Web3
 
 ## Études de recherche dans le Web3 {#research-in-web3}
@@ -38,7 +38,7 @@ Il s'agit d'une liste organisée de recherches utilisateurs effectuées dans le 
 | <Tag status="error">DeFi</Tag>                  | [Pools de couverture](https://github.com/threshold-network/UX-User-Research/tree/main/Keep%20Coverage%20Pool)                                                                           |
 | <Tag status="error">DeFi</Tag>                  | [ConsenSys : Rapport de recherche sur les utilisateurs de la DeFi 2022](https://cdn2.hubspot.net/hubfs/4795067/ConsenSys%20Codefi-Defi%20User%20ResearchReport.pdf)                                            |
 | <Tag variant="solid">Métavers</Tag>             | [Métavers : Rapport de recherche utilisateur](https://www.politico.com/f/?id=00000187-7685-d820-a7e7-7e85d1420000)                                                                             |
-| <Tag variant="solid">Métavers</Tag>             | [Partir en safari : Recherche sur les utilisateurs dans le métavers](https://archive.devcon.org/archive/watch/6/going-on-safari-researching-users-in-the-metaverse/?tab=YouTube) (vidéo, 27 min)  |
+| <Tag variant="solid">Métavers</Tag>             | Partir en safari : Recherche sur les utilisateurs dans le métavers (vidéo, 27 min)  |
 
 ## Design pour le Web3 {#design-for-web3}
 

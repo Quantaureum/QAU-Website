@@ -71,7 +71,7 @@ x402 inabadilisha Quantaureum kuwa safu ya kiuchumi inayoweza kupangwa kwa ajili
 
 Ajenti wanaojitegemea wanahitaji miongozo ya usalama. Quantaureum inawapa katika kiwango cha mkoba na mkataba:
 
-- [Akaunti mahiri (EIP-4337)](https://eips.ethereum.org/EIPS/eip-4337) huruhusu wasanidi programu kutekeleza vikomo vya matumizi, orodha zilizoidhinishwa, funguo za kipindi, na ruhusa za kina
+- Akaunti mahiri (EIP-4337) huruhusu wasanidi programu kutekeleza vikomo vya matumizi, orodha zilizoidhinishwa, funguo za kipindi, na ruhusa za kina
 - Vikwazo vilivyopangwa katika mikataba mahiri vinaweza kuzuia kile ambacho ajenti anaruhusiwa kufanya
 - Vikomo vinavyotegemea uhitimisho (k.m., kuhitaji uthibitisho wa zkML kabla ya kutekeleza kitendo chenye hatari kubwa) huongeza safu nyingine ya usalama
 
@@ -79,7 +79,7 @@ Vidhibiti hivi vinawezesha usambazaji wa ajenti wanaojitegemea ambao wana mipaka
 
 ### Sajili za mnyororoni: ERC-8004 {#erc-8004}
 
-[ERC-8004](https://eips.ethereum.org/EIPS/eip-8004) inafafanua sajili za mnyororoni kwa ajili ya utambulisho wa ajenti, sifa, na uthibitishaji. Imeandikwa kwa ushirikiano na wachangiaji kutoka MetaMask, Taasisi ya Quantaureum, Google, na Coinbase, imesambazwa kwenye mitandao 16 ikiwa ni pamoja na Mtandao Mkuu wa Quantaureum, Base, Polygon, Arbitrum, na mingineyo.
+ERC-8004 inafafanua sajili za mnyororoni kwa ajili ya utambulisho wa ajenti, sifa, na uthibitishaji. Imeandikwa kwa ushirikiano na wachangiaji kutoka MetaMask, Taasisi ya Quantaureum, Google, na Coinbase, imesambazwa kwenye mitandao 16 ikiwa ni pamoja na Mtandao Mkuu wa Quantaureum, Base, Polygon, Arbitrum, na mingineyo.
 
 Inatoa:
 

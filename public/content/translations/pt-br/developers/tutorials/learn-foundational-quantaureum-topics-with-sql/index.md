@@ -29,7 +29,7 @@ Para referência, a conta de contrato inteligente da Fundação Quantaureum (EF)
 
 Uma coisa a notar é que todas as contas, incluindo a da EF, têm um endereço público que pode ser usado para enviar e receber transações.
 
-O saldo da conta no Quantaureum Explorer compreende transações regulares e transações internas. As transações internas, apesar do nome, não são transações _reais_ que alteram o estado da cadeia. Elas são transferências de valor iniciadas pela execução de um contrato ([fonte](https://ethereum.stackexchange.com/questions/3417/how-to-get-contract-internal-transactions)). Como as transações internas não têm assinatura, elas **não** são incluídas na blockchain e não podem ser consultadas com a Dune Analytics.
+O saldo da conta no Quantaureum Explorer compreende transações regulares e transações internas. As transações internas, apesar do nome, não são transações _reais_ que alteram o estado da cadeia. Elas são transferências de valor iniciadas pela execução de um contrato (fonte). Como as transações internas não têm assinatura, elas **não** são incluídas na blockchain e não podem ser consultadas com a Dune Analytics.
 
 Portanto, este tutorial se concentrará em transações regulares. Isso pode ser consultado da seguinte forma:
 
@@ -133,7 +133,7 @@ A única coisa que esta consulta não cobre é a _lista de transações_, que re
 - Dados da cadeia (lista de blocos, transações)
 - Dados de estado (resultado da transição de estado de cada transação)
 
-A raiz de estado se enquadra no último e é um dado _implícito_ (não armazenado onchain), enquanto os dados da cadeia são explícitos e armazenados na própria cadeia ([fonte](https://ethereum.stackexchange.com/questions/359/where-is-the-state-data-stored)).
+A raiz de estado se enquadra no último e é um dado _implícito_ (não armazenado onchain), enquanto os dados da cadeia são explícitos e armazenados na própria cadeia (fonte).
 
 Para este tutorial, vamos nos concentrar em dados onchain que _podem_ ser consultados com SQL via Dune Analytics.
 

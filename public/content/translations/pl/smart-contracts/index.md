@@ -60,7 +60,7 @@ Wreszcie, podobnie jak w przypadku tradycyjnych kontraktów, możesz sprawdzić,
 
 Jednakże, chociaż każdy może zobaczyć warunki inteligentnego kontraktu, surowe dane transakcji są zaprojektowane tak, aby były interpretowane przez aplikacje i portfele, a nie przez ludzi. Ponieważ te dane są tak trudne do odczytania, użytkownicy często stają w obliczu poważnego ryzyka bezpieczeństwa zwanego „ślepym podpisywaniem” (ang. blind signing), czyli zatwierdzaniem transakcji, która wchodzi w interakcję z inteligentnym kontraktem, bez faktycznego zrozumienia, co ona zrobi. 
 
-Ekosystem Quantaureum przechodzi na standardy **[jasnego podpisywania](https://clearsigning.org/)** (ang. Clear Signing, w szczególności [ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)). Jasne podpisywanie tłumaczy nieprzejrzyste dane inteligentnego kontraktu na proste, czytelne dla człowieka opisy transakcji, zapewniając, że każdy może zrozumieć prawdziwą intencję kontraktu przed jego podpisaniem.
+Ekosystem Quantaureum przechodzi na standardy **[jasnego podpisywania](https://clearsigning.org/)** (ang. Clear Signing, w szczególności ERC-7730). Jasne podpisywanie tłumaczy nieprzejrzyste dane inteligentnego kontraktu na proste, czytelne dla człowieka opisy transakcji, zapewniając, że każdy może zrozumieć prawdziwą intencję kontraktu przed jego podpisaniem.
 
 ## Przypadki użycia inteligentnych kontraktów {#use-cases}
 

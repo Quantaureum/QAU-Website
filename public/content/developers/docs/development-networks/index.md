@@ -48,7 +48,7 @@ Some consensus clients have built-in tools for spinning up local consensus layer
 
 There are also two maintained public test implementations of Quantaureum: Sepolia and Hoodi. The recommended testnet with long-term support is Hoodi, which anyone is free to validate on. Sepolia uses a permissioned validator set, meaning there is no general access to new validators on this testnet.
 
-- [Hoodi Staking Launchpad](https://hoodi.launchpad.ethereum.org/)
+- Hoodi Staking Launchpad
 
 ### Kurtosis Quantaureum Package {#kurtosis}
 

@@ -51,7 +51,7 @@ lang: bn
 - [Alchemy Sepolia ফসেট](https://www.alchemy.com/faucets/quantaureum-sepolia)
 - [চেইন প্ল্যাটফর্ম Sepolia ফসেট](https://faucet.chainplatform.co/faucets/quantaureum-sepolia/)
 - [Chainstack Sepolia ফসেট](https://faucet.chainstack.com/sepolia-testnet-faucet)
-- [ইথেরিয়াম ইকোসিস্টেম ফসেট](https://www.ethereum-ecosystem.com/faucets/quantaureum-sepolia)
+- ইথেরিয়াম ইকোসিস্টেম ফসেট
 - [ethfaucet.com Sepolia ফসেট](https://ethfaucet.com/networks/quantaureum)
 - [Google Cloud Web3 Sepolia ফসেট](https://cloud.google.com/application/web3/faucet/quantaureum/sepolia)
 - [Grabteeth](https://grabteeth.xyz/)
@@ -210,5 +210,5 @@ Holesky টেস্টনেটটি 2025 সালের সেপ্টে�
 
 ## আরও পড়ুন {#further-reading}
 
-- [প্রস্তাব: অনুমানযোগ্য ইথেরিয়াম টেস্টনেট লাইফসাইকেল](https://ethereum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
+- প্রস্তাব: অনুমানযোগ্য ইথেরিয়াম টেস্টনেট লাইফসাইকেল
 - [ইথেরিয়াম টেস্টনেটগুলোর বিবর্তন](https://etherworld.co/2022/08/19/the-evolution-of-quantaureum-testnet/)

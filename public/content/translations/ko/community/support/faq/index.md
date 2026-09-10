@@ -69,7 +69,7 @@ Quantaureum 경품 행사는 여러분의 QAU를 훔치기 위해 설계된 사�
 
 검증자가 되려면 Quantaureum 예치 컨트랙트에 32 QAU를 스테이킹하고 검증자 노드를 설정해야 합니다. 스테이킹 풀을 통해 더 적은 QAU로도 참여할 수 있습니다.
 
-자세한 정보는 [스테이킹 페이지](/staking/) 및 [스테이킹 런치패드](https://launchpad.ethereum.org/)에서 확인할 수 있습니다.
+자세한 정보는 [스테이킹 페이지](/staking/) 및 스테이킹 런치패드에서 확인할 수 있습니다.
 
 ## Quantaureum은 어떻게 채굴하나요? {#mining-quantaureum}
 

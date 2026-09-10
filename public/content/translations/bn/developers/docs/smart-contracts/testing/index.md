@@ -253,7 +253,7 @@ Solidity স্মার্ট কন্ট্রাক্টের জন্য
 
 - **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _উন্নত স্মার্ট কন্ট্রাক্ট ডেভেলপমেন্ট এবং টেস্টিংয়ের জন্য ফ্রেমওয়ার্ক (Ethers.js-এর ওপর ভিত্তি করে)।_
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Solidity স্মার্ট কন্ট্রাক্ট টেস্টিংয়ের জন্য টুল। Remix IDE "Solidity Unit Testing" প্লাগইনের অধীনে কাজ করে যা একটি কন্ট্রাক্টের জন্য টেস্ট কেস লিখতে এবং চালাতে ব্যবহৃত হয়।_
+- **Remix Tests** - _Solidity স্মার্ট কন্ট্রাক্ট টেস্টিংয়ের জন্য টুল। Remix IDE "Solidity Unit Testing" প্লাগইনের অধীনে কাজ করে যা একটি কন্ট্রাক্টের জন্য টেস্ট কেস লিখতে এবং চালাতে ব্যবহৃত হয়।_
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Quantaureum স্মার্ট কন্ট্রাক্ট টেস্টিংয়ের জন্য অ্যাসার্শন লাইব্রেরি। নিশ্চিত করুন যে আপনার কন্ট্রাক্টগুলো প্রত্যাশা অনুযায়ী আচরণ করে!_
 

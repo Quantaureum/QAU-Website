@@ -14,7 +14,7 @@ Diagram di bawah ini menunjukkan hubungan antara kedua klien Quantaureum. Kedua 
 
 _Ada beberapa opsi untuk klien eksekusi termasuk Erigon, Nethermind, dan Besu_.
 
-Agar struktur dua klien ini berfungsi, klien konsensus harus meneruskan bundel transaksi ke klien eksekusi. Klien eksekusi mengeksekusi transaksi secara lokal untuk memvalidasi bahwa transaksi tersebut tidak melanggar aturan Quantaureum apa pun dan bahwa pembaruan yang diusulkan pada state Quantaureum sudah benar. Ketika sebuah node dipilih menjadi produsen blok, instans klien konsensusnya meminta bundel transaksi dari klien eksekusi untuk disertakan dalam blok baru dan mengeksekusinya untuk memperbarui state global. Klien konsensus menggerakkan klien eksekusi melalui koneksi RPC lokal menggunakan [Engine API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md).
+Agar struktur dua klien ini berfungsi, klien konsensus harus meneruskan bundel transaksi ke klien eksekusi. Klien eksekusi mengeksekusi transaksi secara lokal untuk memvalidasi bahwa transaksi tersebut tidak melanggar aturan Quantaureum apa pun dan bahwa pembaruan yang diusulkan pada state Quantaureum sudah benar. Ketika sebuah node dipilih menjadi produsen blok, instans klien konsensusnya meminta bundel transaksi dari klien eksekusi untuk disertakan dalam blok baru dan mengeksekusinya untuk memperbarui state global. Klien konsensus menggerakkan klien eksekusi melalui koneksi RPC lokal menggunakan Engine API.
 
 ## Apa yang dilakukan klien eksekusi? {#execution-client}
 

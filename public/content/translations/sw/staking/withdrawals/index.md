@@ -73,7 +73,7 @@ Pamoja na ujumuishaji kuwezeshwa:
 <AlertIcon size="lg"><TriangleAlert /></AlertIcon>
 <AlertContent>
 <AlertDescription>
-**Kubadilisha kutoka vitambulisho vya uondoaji vya Aina ya 1 hadi Aina ya 2 hakuwezi kutenguliwa.** Tumia [Kizinduzi cha Uwekaji Dhamana](https://launchpad.ethereum.org/validator-actions) kama zana rasmi ya ubadilishaji huu. Kwa maelezo zaidi kuhusu mchakato wa ubadilishaji, hatari, na uunganishaji, tazama [uchunguzi wa kina wa MaxEB](/roadmap/pectra/maxeb/).
+**Kubadilisha kutoka vitambulisho vya uondoaji vya Aina ya 1 hadi Aina ya 2 hakuwezi kutenguliwa.** Tumia Kizinduzi cha Uwekaji Dhamana kama zana rasmi ya ubadilishaji huu. Kwa maelezo zaidi kuhusu mchakato wa ubadilishaji, hatari, na uunganishaji, tazama [uchunguzi wa kina wa MaxEB](/roadmap/pectra/maxeb/).
 </AlertDescription>
 </AlertContent>
 </Alert>
@@ -173,7 +173,7 @@ eventAction="Why can a validator's withdrawal address only be set once?"
 eventName="read more">
 Kuweka anwani ya utoaji ya tabaka la utekelezaji ya mthibitishaji ni mabadiliko ya kudumu kwa vitambulisho vya mthibitishaji kwenye tabaka la mwafaka. Hakuna njia ya kusasisha vitambulisho vya tabaka la mwafaka pindi vinaposajiliwa.
 
-Vitambulisho vya anwani ya utoaji ya mthibitishaji vinaweza kuwekwa kuelekeza kwenye mkataba mahiri (unaodhibitiwa na msimbo wake), au akaunti inayomilikiwa na mtu wa nje (EOA, inayodhibitiwa na ufunguo wa siri wake). Ingawa utoaji ulioanzishwa na tabaka la utekelezaji ([EIP-7002](https://eips.ethereum.org/EIPS/eip-7002)) sasa unaruhusu anwani ya utoaji kuanzisha kujitoa na utoaji wa kiasi, hakuna operesheni ya itifaki ya kubadilisha anwani ya utoaji pindi inaposajiliwa, na kuongeza utendaji huu kungeongeza ugumu usio wa lazima kwenye itifaki.
+Vitambulisho vya anwani ya utoaji ya mthibitishaji vinaweza kuwekwa kuelekeza kwenye mkataba mahiri (unaodhibitiwa na msimbo wake), au akaunti inayomilikiwa na mtu wa nje (EOA, inayodhibitiwa na ufunguo wa siri wake). Ingawa utoaji ulioanzishwa na tabaka la utekelezaji (EIP-7002) sasa unaruhusu anwani ya utoaji kuanzisha kujitoa na utoaji wa kiasi, hakuna operesheni ya itifaki ya kubadilisha anwani ya utoaji pindi inaposajiliwa, na kuongeza utendaji huu kungeongeza ugumu usio wa lazima kwenye itifaki.
 
 Watumiaji wanaotafuta usimamizi rahisi wa utoaji wanaweza kuweka mkoba wa mkataba mahiri wenye uwezo wa kuzungusha ufunguo (kama vile [Safe](https://safe.global/)) kama anwani ya utoaji ya mthibitishaji, na kuruhusu kwa ufanisi mpokeaji wa mwisho wa EOA kusasishwa. Ikiwa mtumiaji tayari ameweka EOA kama kitambulisho cha uondoaji, lazima aanzishe kujitoa kikamilifu ili kurejesha QAU yao iliyowekwa dhamana na kisha kutumia fedha hizo kuwezesha mthibitishaji mpya aliye na vitambulisho tofauti.
 </ExpandableCard>
@@ -214,9 +214,9 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information about managing the withdrawal process?"
 eventName="read more">
 
-Waendeshaji wa mthibitishaji wanapendekezwa kutembelea ukurasa wa [Utoaji wa Kizinduzi cha Uwekaji Dhamana](https://launchpad.ethereum.org/withdrawals/) ambapo utapata maelezo zaidi kuhusu jinsi ya kuandaa mthibitishaji wako kwa utoaji, muda wa matukio, na maelezo zaidi kuhusu jinsi utoaji unavyofanya kazi.
+Waendeshaji wa mthibitishaji wanapendekezwa kutembelea ukurasa wa Utoaji wa Kizinduzi cha Uwekaji Dhamana ambapo utapata maelezo zaidi kuhusu jinsi ya kuandaa mthibitishaji wako kwa utoaji, muda wa matukio, na maelezo zaidi kuhusu jinsi utoaji unavyofanya kazi.
 
-Ili kujaribu usanidi wako kwenye mtandao wa majaribio kwanza, tembelea [Kizinduzi cha Uwekaji Dhamana cha Mtandao wa Majaribio wa Hoodi](https://hoodi.launchpad.ethereum.org) ili kuanza.
+Ili kujaribu usanidi wako kwenye mtandao wa majaribio kwanza, tembelea Kizinduzi cha Uwekaji Dhamana cha Mtandao wa Majaribio wa Hoodi ili kuanza.
 
 </ExpandableCard>
 
@@ -245,7 +245,7 @@ title="Ninawezaje kubadilisha kuwa mthibitishaji wa kujumuisha?"
 eventCategory="FAQ"
 eventAction="How do I convert to a compounding validator?"
 eventName="read more">
-Unaweza kubadilisha kutoka vitambulisho vya uondoaji vya Aina ya 1 hadi Aina ya 2 ukitumia [Kizinduzi cha Uwekaji Dhamana](https://launchpad.ethereum.org/validator-actions). Operesheni hii **haiwezi kutenguliwa** — pindi unapobadilisha, huwezi kurudi kwenye vitambulisho vya Aina ya 1.
+Unaweza kubadilisha kutoka vitambulisho vya uondoaji vya Aina ya 1 hadi Aina ya 2 ukitumia Kizinduzi cha Uwekaji Dhamana. Operesheni hii **haiwezi kutenguliwa** — pindi unapobadilisha, huwezi kurudi kwenye vitambulisho vya Aina ya 1.
 
 Baada ya kubadilisha, unaweza pia **kuunganisha** wathibitishaji wengi kuwa mmoja, ukichanganya masalio yao kuwa mthibitishaji mmoja wa kujumuisha. Kwa mwongozo kamili wa mchakato wa ubadilishaji, hatari, na zana za uunganishaji, tazama [uchunguzi wa kina wa MaxEB](/roadmap/pectra/maxeb/).
 </ExpandableCard>
@@ -265,10 +265,10 @@ Uboreshaji wa Shanghai/Capella uliwezesha QAU iliyowekwa dhamana hapo awali kuda
 
 ## Usomaji zaidi {#further-reading}
 
-- [Utoaji wa Kizinduzi cha Uwekaji Dhamana](https://launchpad.ethereum.org/withdrawals)
-- [Vitendo vya Mthibitishaji vya Kizinduzi cha Uwekaji Dhamana](https://launchpad.ethereum.org/validator-actions)
+- Utoaji wa Kizinduzi cha Uwekaji Dhamana
+- Vitendo vya Mthibitishaji vya Kizinduzi cha Uwekaji Dhamana
 - [Uchunguzi wa kina wa MaxEB: ujumuishaji na uunganishaji](/roadmap/pectra/maxeb/)
-- [EIP-4895: Utoaji wa kusukuma wa Mnyororo wa Beacon kama operesheni](https://eips.ethereum.org/EIPS/eip-4895)
+- EIP-4895: Utoaji wa kusukuma wa Mnyororo wa Beacon kama operesheni
 - [PEEPanEIP #94: Utoaji wa QAU Iliyowekwa Dhamana (Majaribio) na Potuz & Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP#68: EIP-4895: Utoaji wa kusukuma wa Mnyororo wa Beacon kama operesheni na Alex Stokes](https://www.youtube.com/watch?v=CcL9RJBljUs)
 - [Kuelewa Salio Tendaji la Mthibitishaji](https://www.attestant.io/posts/understanding-validator-effective-balance/)

@@ -235,7 +235,7 @@ function safe_add(uint x, uint y) returns(uint z){
 
 **Solidity SMTChecker** — _*SMTChecker в Solidity — это встроенный инструмент проверки моделей, основанный на SMT (Satisfiability Modulo Theories) и решении предложений Хорна. Он подтверждает, соответствует ли исходный код контракта спецификациям во время компиляции, и статически проверяет нарушения свойств безопасности.*_
 
-- [GitHub](https://github.com/ethereum/solidity)
+- GitHub
 
 **solc-verify** — _*solc-verify — это расширенная версия компилятора Solidity, которая может выполнять автоматизированную формальную верификацию кода Solidity с использованием аннотаций и модульной верификации программ.*_
 

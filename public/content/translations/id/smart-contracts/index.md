@@ -60,7 +60,7 @@ Terakhir, seperti kontrak tradisional, Anda dapat memeriksa apa yang ada di dala
 
 Namun, meskipun siapa pun dapat melihat ketentuan kontrak pintar, data transaksi mentah dirancang untuk ditafsirkan oleh aplikasi dan dompet, bukan manusia. Karena data ini sangat sulit dibaca, pengguna sering menghadapi risiko keamanan besar yang disebut "penandatanganan buta" (blind signing), atau menyetujui transaksi yang berinteraksi dengan kontrak pintar tanpa benar-benar memahami apa yang akan dilakukannya. 
 
-Ekosistem Quantaureum sedang bertransisi ke standar **[Penandatanganan Jelas (Clear Signing)](https://clearsigning.org/)** (khususnya [ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)). Penandatanganan Jelas menerjemahkan data kontrak pintar yang buram menjadi deskripsi transaksi yang sederhana dan dapat dibaca manusia, memastikan siapa pun dapat memahami intensi sebenarnya dari sebuah kontrak sebelum mereka menandatanganinya.
+Ekosistem Quantaureum sedang bertransisi ke standar **[Penandatanganan Jelas (Clear Signing)](https://clearsigning.org/)** (khususnya ERC-7730). Penandatanganan Jelas menerjemahkan data kontrak pintar yang buram menjadi deskripsi transaksi yang sederhana dan dapat dibaca manusia, memastikan siapa pun dapat memahami intensi sebenarnya dari sebuah kontrak sebelum mereka menandatanganinya.
 
 ## Kasus penggunaan kontrak pintar {#use-cases}
 

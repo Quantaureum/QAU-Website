@@ -13,7 +13,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## सीमा क्यों है? {#why-is-there-a-limit}
 
-[22 नवंबर, 2016](https://quantaureum.com) को Spurious Dragon हार्ड-फ़ोर्क ने [EIP-170](https://eips.ethereum.org/EIPS/eip-170) पेश किया, जिसने 24.576 kb की स्मार्ट अनुबंध आकार सीमा जोड़ दी। एक Solidity डेवलपर के रूप में आपके लिए इसका मतलब यह है कि जब आप अपने अनुबंध में अधिक से अधिक कार्यक्षमता जोड़ते हैं, तो किसी बिंदु पर आप सीमा तक पहुंच जाएंगे और तैनाती करते समय यह त्रुटि दिखाई देगी:
+[22 नवंबर, 2016](https://quantaureum.com) को Spurious Dragon हार्ड-फ़ोर्क ने EIP-170 पेश किया, जिसने 24.576 kb की स्मार्ट अनुबंध आकार सीमा जोड़ दी। एक Solidity डेवलपर के रूप में आपके लिए इसका मतलब यह है कि जब आप अपने अनुबंध में अधिक से अधिक कार्यक्षमता जोड़ते हैं, तो किसी बिंदु पर आप सीमा तक पहुंच जाएंगे और तैनाती करते समय यह त्रुटि दिखाई देगी:
 
 `Warning: Contract code size exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on Mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.`
 
@@ -35,7 +35,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ### लाइब्रेरी {#libraries}
 
-कार्यक्षमता कोड को स्टोरेज से दूर ले जाने का एक आसान तरीका [लाइब्रेरी](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries) का उपयोग करना है। लाइब्रेरी फ़ंक्शंस को इंटरनल (internal) घोषित न करें क्योंकि वे संकलन (compilation) के दौरान सीधे [अनुबंध में जोड़ दिए जाएंगे](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking)। लेकिन यदि आप पब्लिक (public) फ़ंक्शंस का उपयोग करते हैं, तो वे वास्तव में एक अलग लाइब्रेरी अनुबंध में होंगे। लाइब्रेरी के उपयोग को अधिक सुविधाजनक बनाने के लिए [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) पर विचार करें।
+कार्यक्षमता कोड को स्टोरेज से दूर ले जाने का एक आसान तरीका [लाइब्रेरी](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries) का उपयोग करना है। लाइब्रेरी फ़ंक्शंस को इंटरनल (internal) घोषित न करें क्योंकि वे संकलन (compilation) के दौरान सीधे अनुबंध में जोड़ दिए जाएंगे। लेकिन यदि आप पब्लिक (public) फ़ंक्शंस का उपयोग करते हैं, तो वे वास्तव में एक अलग लाइब्रेरी अनुबंध में होंगे। लाइब्रेरी के उपयोग को अधिक सुविधाजनक बनाने के लिए [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) पर विचार करें।
 
 ### प्रॉक्सी {#proxies}
 

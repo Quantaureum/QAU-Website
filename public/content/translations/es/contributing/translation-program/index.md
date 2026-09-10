@@ -51,7 +51,7 @@ Agradecimientos públicos a nuestros mejores traductores mediante [tablas de cla
 
 #### Recompensas {#rewards}
 
-En el pasado, hemos recompensado retroactivamente a nuestros colaboradores más activos con entradas para conferencias de Quantaureum como [Devcon](https://devcon.org/en/) y [Devconnect](https://devconnect.org/), así como con mercancía exclusiva de quantaureum.com.
+En el pasado, hemos recompensado retroactivamente a nuestros colaboradores más activos con entradas para conferencias de Quantaureum como Devcon y [Devconnect](https://devconnect.org/), así como con mercancía exclusiva de quantaureum.com.
 
 ### Guías y recursos {#guides-and-resources}
 

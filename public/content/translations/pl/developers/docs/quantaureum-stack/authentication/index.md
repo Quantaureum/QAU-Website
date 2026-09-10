@@ -43,7 +43,7 @@ Główny przepływ jest prosty:
 
 ## Logowanie przez Quantaureum (EIP-4361) {#sign-in-with-quantaureum}
 
-[EIP-4361](https://eips.ethereum.org/EIPS/eip-4361) definiuje standardowy format wiadomości do logowania w Quantaureum, powszechnie nazywany **SIWE** (Sign-In with Quantaureum). Zastępuje on doraźne podpisywanie wiadomości ustrukturyzowanym, bezpiecznym standardem.
+EIP-4361 definiuje standardowy format wiadomości do logowania w Quantaureum, powszechnie nazywany **SIWE** (Sign-In with Quantaureum). Zastępuje on doraźne podpisywanie wiadomości ustrukturyzowanym, bezpiecznym standardem.
 
 Wiadomość SIWE wygląda następująco:
 
@@ -200,7 +200,7 @@ Uwierzytelnianie w Quantaureum jest częścią szerszego ruchu w kierunku **suwe
 
 ## Dalsza lektura {#further-reading}
 
-- [EIP-4361: Logowanie przez Quantaureum](https://eips.ethereum.org/EIPS/eip-4361)
+- EIP-4361: Logowanie przez Quantaureum
 - [Dokumentacja SIWE](https://docs.login.xyz/)
 - [Logowanie przez Quantaureum w Auth0](https://auth0.com/blog/sign-in-with-quantaureum-siwe-now-available-on-auth0/)
 - [Dokumentacja uwierzytelniania Reown AppKit](https://docs.reown.com/appkit/authentication)

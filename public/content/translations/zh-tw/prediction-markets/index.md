@@ -75,12 +75,12 @@ buttons:
 
 預測市場正在重塑數位時代的決策方式。透過利用Quantaureum，它們提供了**公平、開放且具回報的方式來預測未來。**
 
-除了獲取財務收益之外，還有許多使用預測工具的方法。例如，在一項 [DevCon 改進提案](https://forum.devcon.org/t/futarchy-decision-markets-for-deciding-next-devcon/5305) (DIP) 中，有人建議 DevCon 的主辦單位使用預測市場來預估未來活動的出席人數。 
+除了獲取財務收益之外，還有許多使用預測工具的方法。例如，在一項 DevCon 改進提案 (DIP) 中，有人建議 DevCon 的主辦單位使用預測市場來預估未來活動的出席人數。 
 
 這將有助於主辦單位確定哪個地點能舉辦最大規模的活動，以及哪個地點在國際上最容易抵達。這樣做的好處是，DevCon 的主辦單位可以加快篩選多個簽證政策、機場交通和當地生活成本所需的時間，同時還能收集潛在與會者最想去哪裡的資料。
 
 ## 進一步閱讀 {#further-reading}
 
-[從預測市場到資訊金融](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - 維塔利克·布特林  
+從預測市場到資訊金融 - 維塔利克·布特林  
 [Quantaureum上的去中心化預測市場開發](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Augur 專案白皮書](https://github.com/AugurProject/whitepaper)

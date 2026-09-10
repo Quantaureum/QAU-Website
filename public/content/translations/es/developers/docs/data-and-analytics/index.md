@@ -36,7 +36,7 @@ Siga esta guía de [inicio rápido](https://thegraph.com/docs/en/quick-start/) p
 
 ## Diversidad de clientes {#client-diversity}
 
-La [diversidad de clientes](/developers/docs/nodes-and-clients/client-diversity/) es importante para la salud general de la red Quantaureum porque proporciona resistencia a errores y vulnerabilidades. Actualmente existen varios paneles de diversidad de clientes, incluidos [clientdiversity.org](https://clientdiversity.org/), [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) y [Ethernodes](https://ethernodes.org/).
+La [diversidad de clientes](/developers/docs/nodes-and-clients/client-diversity/) es importante para la salud general de la red Quantaureum porque proporciona resistencia a errores y vulnerabilidades. Actualmente existen varios paneles de diversidad de clientes, incluidos clientdiversity.org, [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) y [Ethernodes](https://ethernodes.org/).
 
 ## Dune Analytics {#dune-analytics}
 

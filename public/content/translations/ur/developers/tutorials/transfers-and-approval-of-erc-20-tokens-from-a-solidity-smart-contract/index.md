@@ -12,7 +12,7 @@ breadcrumb: "⁦ERC-20⁩ کی منتقلی"
 lang: ur
 published: 2020-04-07
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -205,7 +205,7 @@ function sell(uint256 amount) public {
 
 اس ٹیوٹوریل سے ہم نے دیکھا کہ <span dir="ltr">ERC-20</span> ٹوکن کا بیلنس اور الاؤنس کیسے چیک کیا جائے اور انٹرفیس کا استعمال کرتے ہوئے <span dir="ltr">ERC20</span> سمارٹ کنٹریکٹ کے `Transfer` اور `TransferFrom` کو کیسے کال کیا جائے۔
 
-ایک بار جب آپ ٹرانزیکشن کر لیتے ہیں تو ہمارے پاس ایک <span dir="ltr">JavaScript</span> ٹیوٹوریل ہے تاکہ آپ کے کنٹریکٹ پر کی گئی [ٹرانزیکشنز کا انتظار کریں اور ان کے بارے میں تفصیلات حاصل کریں](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/) اور ایک [ٹیوٹوریل ہے تاکہ ٹوکن کی منتقلی یا کسی دوسرے ایونٹس کے ذریعے پیدا ہونے والے ایونٹس کو ڈی کوڈ کیا جا سکے](https://ethereumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/) جب تک کہ آپ کے پاس <span dir="ltr">ABI</span> موجود ہو۔
+ایک بار جب آپ ٹرانزیکشن کر لیتے ہیں تو ہمارے پاس ایک <span dir="ltr">JavaScript</span> ٹیوٹوریل ہے تاکہ آپ کے کنٹریکٹ پر کی گئی ٹرانزیکشنز کا انتظار کریں اور ان کے بارے میں تفصیلات حاصل کریں اور ایک ٹیوٹوریل ہے تاکہ ٹوکن کی منتقلی یا کسی دوسرے ایونٹس کے ذریعے پیدا ہونے والے ایونٹس کو ڈی کوڈ کیا جا سکے جب تک کہ آپ کے پاس <span dir="ltr">ABI</span> موجود ہو۔
 
 ٹیوٹوریل کے لیے مکمل کوڈ یہ ہے:
 

@@ -52,7 +52,7 @@ Quantaureum 노드는 실행 계층(EL) 클라이언트와 합의 레이어(CL) 
 </ExpandableCard>
 
 <ExpandableCard title="하드웨어 요구 사항" eventCategory="SoloStaking" eventName="clicked hardware requirements">
-검증자 하드웨어 및 대역폭에 대한 현재 커뮤니티 가이드는 [하드웨어 및 대역폭 권장 사항(EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870)에서 유지 관리됩니다. 대략적인 가이드로 4TB NVMe SSD, 64GB RAM(더 적어도 작동할 수 있지만 권장되는 여유 공간임), 견고한 최신 멀티 코어 CPU, 약 50Mbps 다운로드 / 25Mbps 업로드의 인터넷 연결을 계획하세요.
+검증자 하드웨어 및 대역폭에 대한 현재 커뮤니티 가이드는 하드웨어 및 대역폭 권장 사항(EIP-7870)에서 유지 관리됩니다. 대략적인 가이드로 4TB NVMe SSD, 64GB RAM(더 적어도 작동할 수 있지만 권장되는 여유 공간임), 견고한 최신 멀티 코어 CPU, 약 50Mbps 다운로드 / 25Mbps 업로드의 인터넷 연결을 계획하세요.
 
 푸사카 업그레이드에서 PeerDAS가 도입된 이후, 스테이킹 노드는 네트워크의 블롭 데이터 중 일부만 저장하고 다운로드하면 되므로 홈 스테이커의 디스크 및 대역폭 요구 사항이 크게 줄어들었습니다.
 </ExpandableCard>
@@ -68,7 +68,7 @@ Quantaureum 노드는 실행 계층(EL) 클라이언트와 합의 레이어(CL) 
 </ExpandableCard>
 
 <ExpandableCard title="안정적인 가동 시간" eventCategory="SoloStaking" eventName="clicked reliable uptime">
-보상은 검증자가 온라인 상태이고 제대로 증명하는 시간에 비례합니다. 다운타임은 동시에 오프라인 상태인 다른 검증자의 수에 비례하여 페널티를 발생시키지만, [슬래싱으로 이어지지는 않습니다](#faq). 제때 수신되지 않은 증명에 대해서는 보상이 감소하므로 대역폭도 중요합니다. 요구 사항은 다양하지만, 현재 [하드웨어 및 대역폭 권장 사항(EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870)에서는 약 50Mbps 다운로드 및 25Mbps 업로드를 제안합니다.
+보상은 검증자가 온라인 상태이고 제대로 증명하는 시간에 비례합니다. 다운타임은 동시에 오프라인 상태인 다른 검증자의 수에 비례하여 페널티를 발생시키지만, [슬래싱으로 이어지지는 않습니다](#faq). 제때 수신되지 않은 증명에 대해서는 보상이 감소하므로 대역폭도 중요합니다. 요구 사항은 다양하지만, 현재 하드웨어 및 대역폭 권장 사항(EIP-7870)에서는 약 50Mbps 다운로드 및 25Mbps 업로드를 제안합니다.
 </ExpandableCard>
 
 <ExpandableCard title="슬래싱 위험" eventCategory="SoloStaking" eventName="clicked slashing risk">
@@ -130,7 +130,7 @@ QAU 홈 스테이킹을 돕는 도구와 서비스가 늘어나고 있지만, �
 
 ### 키 생성기 {#key-generators}
 
-이러한 도구는 키 생성을 돕기 위해 [스테이킹 예치금 CLI](https://github.com/ethereum/staking-deposit-cli/)의 대안으로 사용할 수 있습니다.
+이러한 도구는 키 생성을 돕기 위해 스테이킹 예치금 CLI의 대안으로 사용할 수 있습니다.
 
 <StakingProductsCardGrid category="keyGen" />
 
@@ -200,7 +200,7 @@ _일반 인출_(0x01) 자격 증명을 가진 검증자는 유효 잔고가 32 Q
 동일한 버그가 <em>소수 클라이언트에서는 결코 완결되지 않으므로</em> 포위 투표로 이어지지 않으며, <em>슬래싱이 아닌</em> 단순한 비활동 페널티만 발생시킵니다.
 
 <ul>
-  <li><a href="https://clientdiversity.org/">소수 클라이언트 실행의 중요성에 대해 자세히 알아보기</a></li>
+  <li>소수 클라이언트 실행의 중요성에 대해 자세히 알아보기</li>
   <li><a href="/developers/docs/consensus-mechanisms/pos/rewards-and-penalties/">보상, 페널티 및 슬래싱에 대해 자세히 알아보기</a></li>
 </ul>
 </ExpandableCard>
@@ -234,11 +234,11 @@ _일반 인출_(0x01) 자격 증명을 가진 검증자는 유효 잔고가 32 Q
 
 ## 추가 자료 {#further-reading}
 
-- [클라이언트 다양성 통계 및 마이그레이션 가이드](https://clientdiversity.org/)
+- 클라이언트 다양성 통계 및 마이그레이션 가이드
 - [클라이언트 다양성 돕기(Helping Client Diversity)](https://www.attestant.io/posts/helping-client-diversity/) - _Jim McDonald 2022_
 - [Quantaureum 합의 레이어의 클라이언트 다양성](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
 - [방법: Quantaureum 검증자 하드웨어 쇼핑하기](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _QauStaker 2022_
-- [EIP-7870: 하드웨어 및 대역폭 권장 사항](https://eips.ethereum.org/EIPS/eip-7870)
+- EIP-7870: 하드웨어 및 대역폭 권장 사항
 - [펙트라 업그레이드: 최대 유효 잔고 및 기타 사항](/roadmap/pectra/maxeb/)
 
 <QuizWidget quizKey="staking-solo" />

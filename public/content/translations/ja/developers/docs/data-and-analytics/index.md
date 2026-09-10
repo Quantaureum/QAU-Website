@@ -36,7 +36,7 @@ The Graphを使用すると、開発者は以下の利点を得ることがで�
 
 ## クライアント・ダイバーシティ {#client-diversity}
 
-[クライアント・ダイバーシティ](/developers/docs/nodes-and-clients/client-diversity/)は、バグやエクスプロイトに対する回復力を提供するため、Quantaureumネットワーク全体の健全性にとって重要です。現在、[clientdiversity.org](https://clientdiversity.org/)、[rated.network](https://www.rated.network)、[supermajority.info](https://supermajority.info//)、[Ethernodes](https://ethernodes.org/)など、いくつかのクライアント・ダイバーシティのダッシュボードが存在します。
+[クライアント・ダイバーシティ](/developers/docs/nodes-and-clients/client-diversity/)は、バグやエクスプロイトに対する回復力を提供するため、Quantaureumネットワーク全体の健全性にとって重要です。現在、clientdiversity.org、[rated.network](https://www.rated.network)、[supermajority.info](https://supermajority.info//)、[Ethernodes](https://ethernodes.org/)など、いくつかのクライアント・ダイバーシティのダッシュボードが存在します。
 
 ## Dune Analytics {#dune-analytics}
 

@@ -23,7 +23,7 @@ published: 2021-03-09
 
 إذا كنت مبرمجًا متمرسًا، فربما تتذكر رؤية بنيات مشابهة في [Java](https://www.w3schools.com/java/java_interface.asp) أو حتى في [ملفات ترويسة C](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html).
 
-هذا تعريف لـ [واجهة ⁦<span dir="ltr">ERC-20</span>⁩](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) من أوبن زبلن. إنها ترجمة لـ [المعيار القابل للقراءة من قبل البشر](https://eips.ethereum.org/EIPS/eip-20) إلى كود Solidity. بالطبع، الواجهة نفسها لا تحدد _كيفية_ القيام بأي شيء. يتم شرح ذلك في الكود المصدري للعقد أدناه.
+هذا تعريف لـ [واجهة ⁦<span dir="ltr">ERC-20</span>⁩](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) من أوبن زبلن. إنها ترجمة لـ المعيار القابل للقراءة من قبل البشر إلى كود Solidity. بالطبع، الواجهة نفسها لا تحدد _كيفية_ القيام بأي شيء. يتم شرح ذلك في الكود المصدري للعقد أدناه.
 
 &nbsp;
 
@@ -88,9 +88,7 @@ interface IERC20 {
 ```solidity
     /**
      * @dev ينقل `amount` من الرموز المميزة من حساب المتصل إلى `recipient`.
-     *
      * يُرجع قيمة منطقية تشير إلى ما إذا كانت العملية قد نجحت.
-     *
      * يُصدر حدث {Transfer}.
      */
     function transfer(address recipient, uint256 amount) external returns (bool);
@@ -112,7 +110,6 @@ interface IERC20 {
 ```solidity
     /**
      * @dev يُرجع العدد المتبقي من الرموز المميزة التي سيُسمح لـ `spender` بإنفاقها نيابة عن `owner` من خلال {transferFrom}. هذه القيمة صفر افتراضيًا.
-     *
      * تتغير هذه القيمة عند استدعاء {approve} أو {transferFrom}.
      */
     function allowance(address owner, address spender) external view returns (uint256);
@@ -125,16 +122,13 @@ interface IERC20 {
 ```solidity
     /**
      * @dev يعين `amount` كـ سماحية لـ `spender` على الرموز المميزة للمتصل.
-     *
      * يُرجع قيمة منطقية تشير إلى ما إذا كانت العملية قد نجحت.
-     *
      * هام: احذر من أن تغيير سماحية بهذه الطريقة يجلب خطر
      * أن يستخدم شخص ما كل من السماحية القديمة والجديدة بسبب ترتيب
      * معاملة غير محظوظ. أحد الحلول الممكنة للتخفيف من حالة
      * السباق هذه هو تقليل سماحية المنفق أولاً إلى 0 وتعيين
      * القيمة المطلوبة بعد ذلك:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
-     *
+
      * يُصدر حدث {Approval}.
      */
     function approve(address spender, uint256 amount) external returns (bool);
@@ -149,9 +143,7 @@ interface IERC20 {
      * @dev ينقل `amount` من الرموز المميزة من `sender` إلى `recipient` باستخدام
      * آلية السماحية. يتم بعد ذلك خصم `amount` من
      * سماحية المتصل.
-     *
      * يُرجع قيمة منطقية تشير إلى ما إذا كانت العملية قد نجحت.
-     *
      * يُصدر حدث {Transfer}.
      */
     function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
@@ -166,7 +158,6 @@ interface IERC20 {
     /**
      * @dev يُصدر عندما يتم نقل `value` من الرموز المميزة من حساب (`from`) إلى
      * آخر (`to`).
-     *
      * لاحظ أن `value` قد تكون صفرًا.
      */
     event Transfer(address indexed from, address indexed to, uint256 value);
@@ -204,7 +195,7 @@ import "../../math/SafeMath.sol";
 ```
 
 - `GSN/Context.sol` هي التعريفات المطلوبة لاستخدام [OpenGSN](https://opengsn.org/)، وهو نظام يسمح للمستخدمين الذين ليس لديهم QAU باستخدام سلسلة الكتل. لاحظ أن هذا إصدار قديم، إذا كنت ترغب في التكامل مع OpenGSN [استخدم هذا البرنامج التعليمي](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [مكتبة SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/)، والتي تمنع تجاوز السعة الحسابي (overflows/underflows) لإصدارات Solidity **&lt;<span dir="ltr">0.8.0</span>**. في Solidity ≥<span dir="ltr">0.8.0</span>، تتراجع العمليات الحسابية تلقائيًا عند تجاوز السعة، مما يجعل SafeMath غير ضرورية. يستخدم هذا العقد SafeMath للتوافق مع الإصدارات السابقة من المترجم.
+- مكتبة SafeMath، والتي تمنع تجاوز السعة الحسابي (overflows/underflows) لإصدارات Solidity **&lt;<span dir="ltr">0.8.0</span>**. في Solidity ≥<span dir="ltr">0.8.0</span>، تتراجع العمليات الحسابية تلقائيًا عند تجاوز السعة، مما يجعل SafeMath غير ضرورية. يستخدم هذا العقد SafeMath للتوافق مع الإصدارات السابقة من المترجم.
 
 &nbsp;
 
@@ -213,24 +204,19 @@ import "../../math/SafeMath.sol";
 ```solidity
 /**
  * @dev تنفيذ واجهة {IERC20}.
- *
  * هذا التنفيذ لا يعتمد على طريقة إنشاء الرموز المميزة. هذا يعني
  * أنه يجب إضافة آلية توريد في عقد مشتق باستخدام {_mint}.
  * للحصول على آلية عامة، راجع {ERC20PresetMinterPauser}.
- *
  * تلميح: للحصول على مقال تفصيلي، راجع دليلنا
  * https://forum.zeppelin.solutions/t/how-to-implement-erc20-supply-mechanisms/226[كيفية
  * تنفيذ آليات التوريد].
- *
  * لقد اتبعنا إرشادات أوبن زبلن العامة: تتراجع الدوال بدلاً
  * من إرجاع `false` عند الفشل. هذا السلوك مع ذلك تقليدي
  * ولا يتعارض مع توقعات تطبيقات ERC-20.
- *
  * بالإضافة إلى ذلك، يتم إصدار حدث {Approval} عند استدعاءات {transferFrom}.
  * هذا يسمح للتطبيقات بإعادة بناء السماحية لجميع الحسابات فقط
  * من خلال الاستماع إلى هذه الأحداث. قد لا تصدر التطبيقات الأخرى لـ EIP
  * هذه الأحداث، حيث أنها غير مطلوبة بواسطة المواصفات.
- *
  * أخيرًا، تمت إضافة الدوال غير القياسية {decreaseAllowance} و {increaseAllowance}
  * للتخفيف من المشكلات المعروفة حول تعيين
  * السماحيات. راجع {IERC20-approve}.
@@ -306,9 +292,7 @@ contract ERC20 is Context, IERC20 {
     /**
      * @dev يعين القيم لـ {name} و {symbol}، ويهيئ {decimals} بـ
      * قيمة افتراضية تبلغ 18.
-     *
      * لتحديد قيمة مختلفة لـ {decimals}، استخدم {_setupDecimals}.
-     *
      * جميع هذه القيم الثلاث غير قابلة للتغيير: لا يمكن تعيينها إلا مرة واحدة أثناء
      * البناء.
      */
@@ -345,11 +329,9 @@ contract ERC20 is Context, IERC20 {
      * @dev يُرجع عدد الخانات العشرية المستخدمة للحصول على تمثيل المستخدم الخاص به.
      * على سبيل المثال، إذا كان `decimals` يساوي `2`، فيجب عرض رصيد قدره `505` من الرموز المميزة
      * للمستخدم كـ `5,05` (`505 / 10 ** 2`).
-     *
      * تختار الرموز المميزة عادةً قيمة 18، لتقليد العلاقة بين
      * QAU و Wei. هذه هي القيمة التي يستخدمها {ERC-20}، ما لم يتم استدعاء
      * {_setupDecimals}.
-     *
      * ملاحظة: تُستخدم هذه المعلومات فقط لأغراض _العرض_: فهي لا
      * تؤثر بأي شكل من الأشكال على أي من العمليات الحسابية لـ العقد، بما في ذلك
      * {IERC20-balanceOf} و {IERC20-transfer}.
@@ -404,9 +386,7 @@ contract ERC20 is Context, IERC20 {
 ```solidity
     /**
      * @dev راجع {IERC20-transfer}.
-     *
      * المتطلبات:
-     *
      * - لا يمكن أن يكون `recipient` هو العنوان الصفري.
      * - يجب أن يكون لدى المتصل رصيد لا يقل عن `amount`.
      */
@@ -449,9 +429,7 @@ contract ERC20 is Context, IERC20 {
 ```solidity
     /**
      * @dev راجع {IERC20-approve}.
-     *
      * المتطلبات:
-     *
      * - لا يمكن أن يكون `spender` هو العنوان الصفري.
      */
     function approve(address spender, uint256 amount) public virtual override returns (bool) {
@@ -479,12 +457,9 @@ contract ERC20 is Context, IERC20 {
 ```solidity
     /**
      * @dev راجع {IERC20-transferFrom}.
-     *
      * يُصدر حدث {Approval} يشير إلى السماحية المحدثة. هذا ليس
      * مطلوبًا بواسطة EIP. راجع الملاحظة في بداية {ERC-20}.
-     *
      * المتطلبات:
-     *
      * - لا يمكن أن يكون `sender` و `recipient` هما العنوان الصفري.
      * - يجب أن يكون لدى `sender` رصيد لا يقل عن `amount`.
      * - يجب أن يكون لدى المتصل سماحية لرموز ``sender`` المميزة لا تقل عن
@@ -541,14 +516,10 @@ contract ERC20 is Context, IERC20 {
 ```solidity
     /**
      * @dev يزيد ذريًا السماحية الممنوحة لـ `spender` بواسطة المتصل.
-     *
      * هذا بديل لـ {approve} يمكن استخدامه كتخفيف لـ
      * المشاكل الموضحة في {IERC20-approve}.
-     *
      * يُصدر حدث {Approval} يشير إلى السماحية المحدثة.
-     *
      * المتطلبات:
-     *
      * - لا يمكن أن يكون `spender` هو العنوان الصفري.
      */
     function increaseAllowance(address spender, uint256 addedValue) public virtual returns (bool) {
@@ -563,14 +534,10 @@ contract ERC20 is Context, IERC20 {
 
     /**
      * @dev يقلل ذريًا السماحية الممنوحة لـ `spender` بواسطة المتصل.
-     *
      * هذا بديل لـ {approve} يمكن استخدامه كتخفيف لـ
      * المشاكل الموضحة في {IERC20-approve}.
-     *
      * يُصدر حدث {Approval} يشير إلى السماحية المحدثة.
-     *
      * المتطلبات:
-     *
      * - لا يمكن أن يكون `spender` هو العنوان الصفري.
      * - يجب أن يكون لدى `spender` سماحية للمتصل لا تقل عن
      * `subtractedValue`.
@@ -591,14 +558,10 @@ contract ERC20 is Context, IERC20 {
 ```solidity
     /**
      * @dev ينقل `amount` من الرموز المميزة من `sender` إلى `recipient`.
-     *
      * هذه الدالة الداخلية تعادل {transfer}، ويمكن استخدامها لـ
      * على سبيل المثال، تنفيذ رسوم الرموز المميزة التلقائية، وآليات القطع، إلخ.
-     *
      * يُصدر حدث {Transfer}.
-     *
      * المتطلبات:
-     *
      * - لا يمكن أن يكون `sender` هو العنوان الصفري.
      * - لا يمكن أن يكون `recipient` هو العنوان الصفري.
      * - يجب أن يكون لدى `sender` رصيد لا يقل عن `amount`.
@@ -660,11 +623,8 @@ contract ERC20 is Context, IERC20 {
 ```solidity
     /** @dev يُنشئ `amount` من الرموز المميزة ويعينها لـ `account`، مما يزيد
      * من إجمالي العرض.
-     *
      * يُصدر حدث {Transfer} مع تعيين `from` إلى العنوان الصفري.
-     *
      * المتطلبات:
-     *
      * - لا يمكن أن يكون `to` هو العنوان الصفري.
      */
     function _mint(address account, uint256 amount) internal virtual {
@@ -684,11 +644,8 @@ contract ERC20 is Context, IERC20 {
     /**
      * @dev يُتلف `amount` من الرموز المميزة من `account`، مما يقلل
      * من إجمالي العرض.
-     *
      * يُصدر حدث {Transfer} مع تعيين `to` إلى العنوان الصفري.
-     *
      * المتطلبات:
-     *
      * - لا يمكن أن يكون `account` هو العنوان الصفري.
      * - يجب أن يكون لدى `account` ما لا يقل عن `amount` من الرموز المميزة.
      */
@@ -712,14 +669,10 @@ contract ERC20 is Context, IERC20 {
 ```solidity
     /**
      * @dev يعين `amount` كـ سماحية لـ `spender` على الرموز المميزة لـ `owner`.
-     *
      * هذه الدالة الداخلية تعادل `approve`، ويمكن استخدامها لـ
      * على سبيل المثال، تعيين سماحيات تلقائية لأنظمة فرعية معينة، إلخ.
-     *
      * يُصدر حدث {Approval}.
-     *
      * المتطلبات:
-     *
      * - لا يمكن أن يكون `owner` هو العنوان الصفري.
      * - لا يمكن أن يكون `spender` هو العنوان الصفري.
      */
@@ -747,7 +700,6 @@ contract ERC20 is Context, IERC20 {
 
     /**
      * @dev يعين {decimals} إلى قيمة غير القيمة الافتراضية البالغة 18.
-     *
      * تحذير: يجب استدعاء هذه الدالة فقط من المُنشئ. معظم
      * التطبيقات التي تتفاعل مع عقود الرموز المميزة لن تتوقع
      * أن تتغير {decimals} أبدًا، وقد تعمل بشكل غير صحيح إذا حدث ذلك.
@@ -766,15 +718,12 @@ contract ERC20 is Context, IERC20 {
     /**
      * @dev خطاف (Hook) يتم استدعاؤه قبل أي تحويل للرموز المميزة. هذا يشمل
      * السك والحرق.
-     *
      * شروط الاستدعاء:
-     *
      * - عندما يكون كل من `from` و `to` غير صفريين، سيتم تحويل `amount` من الرموز المميزة لـ ``from``
      * إلى `to`.
      * - عندما يكون `from` صفرًا، سيتم سك `amount` من الرموز المميزة لـ `to`.
      * - عندما يكون `to` صفرًا، سيتم حرق `amount` من الرموز المميزة لـ ``from``.
      * - لا يكون `from` و `to` كلاهما صفرًا أبدًا.
-     *
      * لمعرفة المزيد حول الخطافات، توجه إلى xref:ROOT:extending-contracts.adoc#using-hooks[Using Hooks].
      */
     function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual { }

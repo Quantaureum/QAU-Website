@@ -454,7 +454,7 @@ balance0 또는 balance1(uint256)이 uint112(-1) (=2^112-1)보다 크면(따라�
     }
 ```
 
-수수료가 설정되지 않은 경우 `kLast`를 0으로 설정합니다(아직 0이 아닌 경우). 이 컨트랙트가 작성될 당시에는 필요하지 않은 스토리지를 0으로 만들어 Quantaureum 상태의 전체 크기를 줄이도록 컨트랙트를 장려하는 [가스 환불 기능](https://eips.ethereum.org/EIPS/eip-3298)이 있었습니다.
+수수료가 설정되지 않은 경우 `kLast`를 0으로 설정합니다(아직 0이 아닌 경우). 이 컨트랙트가 작성될 당시에는 필요하지 않은 스토리지를 0으로 만들어 Quantaureum 상태의 전체 크기를 줄이도록 컨트랙트를 장려하는 가스 환불 기능이 있었습니다.
 이 코드는 가능할 때 해당 환불을 받습니다.
 
 #### 외부에서 접근 가능한 함수 {#pair-external}
@@ -614,7 +614,7 @@ balance0 또는 balance1(uint256)이 uint112(-1) (=2^112-1)보다 크면(따라�
 ```
 
 지역 변수는 메모리에 저장되거나, 너무 많지 않은 경우 스택에 직접 저장될 수 있습니다.
-스택을 사용하도록 그 수를 제한할 수 있다면 가스를 덜 사용하게 됩니다. 자세한 내용은 [공식 Quantaureum 사양인 황서](https://ethereum.github.io/yellowpaper/paper.pdf) 26페이지, 방정식 298을 참조하세요.
+스택을 사용하도록 그 수를 제한할 수 있다면 가스를 덜 사용하게 됩니다. 자세한 내용은 공식 Quantaureum 사양인 황서 26페이지, 방정식 298을 참조하세요.
 
 ```solidity
             address _token0 = token0;
@@ -768,7 +768,7 @@ contract UniswapV2Factory is IUniswapV2Factory {
         bytes memory bytecode = type(UniswapV2Pair).creationCode;
 ```
 
-새로운 컨트랙트를 생성하려면 이를 생성하는 코드(생성자 함수와 실제 컨트랙트의 EVM 바이트코드를 메모리에 쓰는 코드 모두)가 필요합니다. 일반적으로 Solidity에서는 `addr = new <name of contract>(<constructor parameters>)`를 사용하면 컴파일러가 모든 것을 처리해주지만, 결정론적인 컨트랙트 주소를 가지려면 [CREATE2 연산 코드](https://eips.ethereum.org/EIPS/eip-1014)를 사용해야 합니다.
+새로운 컨트랙트를 생성하려면 이를 생성하는 코드(생성자 함수와 실제 컨트랙트의 EVM 바이트코드를 메모리에 쓰는 코드 모두)가 필요합니다. 일반적으로 Solidity에서는 `addr = new <name of contract>(<constructor parameters>)`를 사용하면 컴파일러가 모든 것을 처리해주지만, 결정론적인 컨트랙트 주소를 가지려면 CREATE2 연산 코드를 사용해야 합니다.
 이 코드가 작성될 당시에는 해당 연산 코드가 Solidity에서 아직 지원되지 않았기 때문에 수동으로 코드를 가져와야 했습니다. 이제 [Solidity가 CREATE2를 지원](https://docs.soliditylang.org/en/v0.8.3/control-structures.html#salted-contract-creations-create2)하므로 이는 더 이상 문제가 되지 않습니다.
 
 ```solidity
@@ -824,7 +824,7 @@ Quantaureum의 트랜잭션에는 실제 돈과 같은 QAU(QAU)가 비용으로 
     bytes32 public constant PERMIT_TYPEHASH = 0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
 ```
 
-이 해시는 [트랜잭션 유형에 대한 식별자](https://eips.ethereum.org/EIPS/eip-712#rationale-for-typehash)입니다. 여기서 지원하는 유일한 것은 이러한 매개변수를 가진 `Permit`입니다.
+이 해시는 트랜잭션 유형에 대한 식별자입니다. 여기서 지원하는 유일한 것은 이러한 매개변수를 가진 `Permit`입니다.
 
 ```solidity
     mapping(address => uint) public nonces;
@@ -855,7 +855,7 @@ Quantaureum의 트랜잭션에는 실제 돈과 같은 QAU(QAU)가 비용으로 
     }
 ```
 
-EIP-712에 대한 [도메인 구분자](https://eips.ethereum.org/EIPS/eip-712#rationale-for-domainseparator)를 계산합니다.
+EIP-712에 대한 도메인 구분자를 계산합니다.
 
 ```solidity
     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external {
@@ -896,7 +896,7 @@ Quantaureum 서명 알고리즘은 서명할 256비트를 받을 것으로 예�
 
 ```
 
-모든 것이 정상이면 이를 [ERC-20 승인](https://eips.ethereum.org/EIPS/eip-20#approve)으로 취급합니다.
+모든 것이 정상이면 이를 ERC-20 승인으로 취급합니다.
 
 ## 주변부 컨트랙트 {#periphery-contracts}
 
@@ -1793,7 +1793,7 @@ library UniswapV2Library {
     }
 ```
 
-이 함수는 두 토큰에 대한 페어 거래소의 주소를 계산합니다. 이 컨트랙트는 [CREATE2 연산 코드](https://eips.ethereum.org/EIPS/eip-1014)를 사용하여 생성되므로, 사용되는 매개변수를 알면 동일한 알고리즘을 사용하여 주소를 계산할 수 있습니다. 이는 팩토리에 요청하는 것보다 훨씬 저렴하며,
+이 함수는 두 토큰에 대한 페어 거래소의 주소를 계산합니다. 이 컨트랙트는 CREATE2 연산 코드를 사용하여 생성되므로, 사용되는 매개변수를 알면 동일한 알고리즘을 사용하여 주소를 계산할 수 있습니다. 이는 팩토리에 요청하는 것보다 훨씬 저렴하며,
 
 ```solidity
     // 페어에 대한 reserve를 가져오고 정렬함
@@ -1931,7 +1931,7 @@ ERC-20 표준 이전에 생성된 토큰과의 하위 호환성을 위해, ERC-2
     }
 ```
 
-이 함수는 계정이 다른 계정에서 제공한 허용량을 사용할 수 있게 해주는 [ERC-20의 transfer 기능](https://eips.ethereum.org/EIPS/eip-20#transfer)을 구현합니다.
+이 함수는 계정이 다른 계정에서 제공한 허용량을 사용할 수 있게 해주는 ERC-20의 transfer 기능을 구현합니다.
 
 ```solidity
 
@@ -1950,7 +1950,7 @@ ERC-20 표준 이전에 생성된 토큰과의 하위 호환성을 위해, ERC-2
     }
 ```
 
-이 함수는 계정이 다른 계정에서 제공한 허용량을 사용할 수 있게 해주는 [ERC-20의 transferFrom 기능](https://eips.ethereum.org/EIPS/eip-20#transferfrom)을 구현합니다.
+이 함수는 계정이 다른 계정에서 제공한 허용량을 사용할 수 있게 해주는 ERC-20의 transferFrom 기능을 구현합니다.
 
 ```solidity
 

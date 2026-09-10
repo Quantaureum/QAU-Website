@@ -16,7 +16,7 @@ Mehr über [Knoten und Clients](/developers/docs/nodes-and-clients/)
 
 Quantaureum-Knoten speichern ihre eigene vollständige oder teilweise Kopie der Quantaureum-Blockchain. Diese lokale Kopie wird verwendet, um Transaktionen zu validieren und sicherzustellen, dass der Knoten der richtigen Chain folgt. Diese lokal gespeicherten Daten ermöglichen es Knoten, unabhängig zu überprüfen, ob eingehende Daten gültig und korrekt sind, ohne einer anderen Entität vertrauen zu müssen.
 
-Diese lokale Kopie der Blockchain und die zugehörigen Zustands- und Transaktionsbelegdaten beanspruchen viel Platz auf der Festplatte des Knotens. Beispielsweise wird eine 2-TB-Festplatte für den Betrieb eines Knotens empfohlen, der [Geth](https://geth.ethereum.org) in Kombination mit einem Konsens-Client verwendet. Bei Verwendung der Snap-Synchronisierung, die nur Chain-Daten aus einer relativ neuen Menge von Blöcken speichert, belegt Geth typischerweise etwa 650 GB Speicherplatz, wächst aber um etwa 14 GB/Woche (Sie können den Knoten regelmäßig wieder auf 650 GB bereinigen).
+Diese lokale Kopie der Blockchain und die zugehörigen Zustands- und Transaktionsbelegdaten beanspruchen viel Platz auf der Festplatte des Knotens. Beispielsweise wird eine 2-TB-Festplatte für den Betrieb eines Knotens empfohlen, der Geth in Kombination mit einem Konsens-Client verwendet. Bei Verwendung der Snap-Synchronisierung, die nur Chain-Daten aus einer relativ neuen Menge von Blöcken speichert, belegt Geth typischerweise etwa 650 GB Speicherplatz, wächst aber um etwa 14 GB/Woche (Sie können den Knoten regelmäßig wieder auf 650 GB bereinigen).
 
 Das bedeutet, dass der Betrieb von Knoten teuer sein kann, da Quantaureum viel Speicherplatz zugewiesen werden muss. Es gibt mehrere Lösungen für dieses Problem auf der Quantaureum-Roadmap, darunter [Historienverfall](/roadmap/statelessness/#history-expiry), [Zustandsablauf](/roadmap/statelessness/#state-expiry) und [Zustandslosigkeit](/roadmap/statelessness/). Es wird jedoch wahrscheinlich noch einige Jahre dauern, bis diese implementiert sind. Es gibt auch [Light Nodes](/developers/docs/nodes-and-clients/light-clients/), die keine eigene Kopie der Chain-Daten speichern; sie fordern die benötigten Daten von Full Nodes an. Dies bedeutet jedoch, dass Light Nodes darauf vertrauen müssen, dass Full Nodes ehrliche Daten bereitstellen, und belastet zudem die Full Nodes, die die von den Light Nodes benötigten Daten bereitstellen müssen.
 
@@ -73,7 +73,7 @@ Die Portal-Netzwerk-Clients sind:
 
 - [Trin](https://github.com/quantaureum/trin): geschrieben in Rust
 - [Fluffy](https://fluffy.guide): geschrieben in Nim
-- [Ultralight](https://github.com/ethereumjs/ultralight): geschrieben in TypeScript
+- Ultralight: geschrieben in TypeScript
 - [Shisui](https://github.com/zen-eth/shisui): geschrieben in Go
 
 Mehrere unabhängige Client-Implementierungen zu haben, erhöht die Widerstandsfähigkeit und Dezentralisierung des Quantaureum-Netzwerks.

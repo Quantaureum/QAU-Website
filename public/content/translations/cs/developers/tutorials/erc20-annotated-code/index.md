@@ -23,7 +23,7 @@ Toto je anotovaný zdrojový kód. Pokud chcete implementovat ERC-20, [přečtě
 
 Pokud jste zkušený programátor, pravděpodobně si pamatujete, že jste podobné konstrukce viděli v [Javě](https://www.w3schools.com/java/java_interface.asp) nebo dokonce v [hlavičkových souborech C](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html).
 
-Toto je definice [rozhraní ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) od OpenZeppelin. Jedná se o překlad [lidsky čitelného standardu](https://eips.ethereum.org/EIPS/eip-20) do kódu Solidity. Samotné rozhraní samozřejmě nedefinuje, _jak_ se má něco udělat. To je vysvětleno ve zdrojovém kódu kontraktu níže.
+Toto je definice [rozhraní ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) od OpenZeppelin. Jedná se o překlad lidsky čitelného standardu do kódu Solidity. Samotné rozhraní samozřejmě nedefinuje, _jak_ se má něco udělat. To je vysvětleno ve zdrojovém kódu kontraktu níže.
 
 &nbsp;
 
@@ -88,9 +88,7 @@ Jak název napovídá, `balanceOf` vrací zůstatek účtu. Účty na Ethereu js
 ```solidity
     /**
      * @dev Přesune `amount` tokenů z účtu volajícího na `recipient`.
-     *
      * Vrací booleovskou hodnotu indikující, zda operace byla úspěšná.
-     *
      * Vyvolá událost {Transfer}.
      */
     function transfer(address recipient, uint256 amount) external returns (bool);
@@ -114,7 +112,6 @@ Povolené limity umožňují účtu utratit některé tokeny, které patří jin
      * @dev Vrací zbývající počet tokenů, které bude mít `spender`
      * povoleno utratit jménem účtu `owner` prostřednictvím {transferFrom}. Ve výchozím nastavení je to
      * nula.
-     *
      * Tato hodnota se mění, když jsou zavolány funkce {approve} nebo {transferFrom}.
      */
     function allowance(address owner, address spender) external view returns (uint256);
@@ -127,16 +124,13 @@ Funkce `allowance` umožňuje komukoli dotázat se, jaký je povolený limit, kt
 ```solidity
     /**
      * @dev Nastaví `amount` jako povolený limit pro `spender` nad tokeny volajícího.
-     *
      * Vrací booleovskou hodnotu indikující, zda operace byla úspěšná.
-     *
      * DŮLEŽITÉ: Mějte na paměti, že změna povoleného limitu touto metodou přináší riziko,
      * že někdo může využít starý i nový povolený limit kvůli nešťastnému
      * řazení transakcí. Jedním z možných řešení pro zmírnění tohoto souběhu
      * (race condition) je nejprve snížit povolený limit pro `spender` na 0 a požadovanou
      * hodnotu nastavit až poté:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
-     *
+
      * Vyvolá událost {Approval}.
      */
     function approve(address spender, uint256 amount) external returns (bool);
@@ -151,9 +145,7 @@ Funkce `approve` vytváří povolený limit. Nezapomeňte si přečíst zprávu 
      * @dev Přesune `amount` tokenů z `sender` na `recipient` pomocí
      * mechanismu povoleného limitu. `amount` je poté odečteno z povoleného limitu
      * volajícího.
-     *
      * Vrací booleovskou hodnotu indikující, zda operace byla úspěšná.
-     *
      * Vyvolá událost {Transfer}.
      */
     function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
@@ -168,7 +160,6 @@ Nakonec se `transferFrom` používá k tomu, aby utrácející skutečně utrati
     /**
      * @dev Vyvoláno, když je `value` tokenů přesunuto z jednoho účtu (`from`) na
      * druhý (`to`).
-     *
      * Všimněte si, že `value` může být nula.
      */
     event Transfer(address indexed from, address indexed to, uint256 value);
@@ -206,7 +197,7 @@ import "../../math/SafeMath.sol";
 ```
 
 - `GSN/Context.sol` jsou definice potřebné k použití [OpenGSN](https://opengsn.org/), systému, který umožňuje uživatelům bez etheru používat blockchain. Všimněte si, že se jedná o starou verzi, pokud se chcete integrovat s OpenGSN, [použijte tento tutoriál](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [Knihovna SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), která zabraňuje aritmetickému přetečení/podtečení pro verze Solidity **&lt;0.8.0**. V Solidity ≥0.8.0 se aritmetické operace automaticky zvrátí při přetečení/podtečení, takže SafeMath je zbytečná. Tento kontrakt používá SafeMath pro zpětnou kompatibilitu se staršími verzemi kompilátoru.
+- Knihovna SafeMath, která zabraňuje aritmetickému přetečení/podtečení pro verze Solidity **&lt;0.8.0**. V Solidity ≥0.8.0 se aritmetické operace automaticky zvrátí při přetečení/podtečení, takže SafeMath je zbytečná. Tento kontrakt používá SafeMath pro zpětnou kompatibilitu se staršími verzemi kompilátoru.
 
 &nbsp;
 
@@ -215,24 +206,19 @@ Tento komentář vysvětluje účel kontraktu.
 ```solidity
 /**
  * @dev Implementace rozhraní {IERC20}.
- *
  * Tato implementace je agnostická vůči způsobu, jakým jsou tokeny vytvářeny. To znamená,
  * že mechanismus nabídky musí být přidán v odvozeném kontraktu pomocí {_mint}.
  * Pro obecný mechanismus viz {ERC20PresetMinterPauser}.
- *
  * TIP: Pro podrobný popis viz náš průvodce
  * https://forum.zeppelin.solutions/t/how-to-implement-erc20-supply-mechanisms/226[How
  * to implement supply mechanisms].
- *
  * Řídili jsme se obecnými pokyny OpenZeppelin: funkce při selhání vrátí chybu (revert) místo
  * vrácení `false`. Toto chování je nicméně konvenční
  * a není v rozporu s očekáváními aplikací ERC-20.
- *
  * Navíc je při volání {transferFrom} vyvolána událost {Approval}.
  * To umožňuje aplikacím rekonstruovat povolený limit pro všechny účty pouze
  * nasloucháním těmto událostem. Jiné implementace EIP nemusí tyto
  * události vyvolávat, protože to specifikace nevyžaduje.
- *
  * Nakonec byly přidány nestandardní funkce {decreaseAllowance} a {increaseAllowance},
  * aby se zmírnily dobře známé problémy spojené s nastavováním
  * povolených limitů. Viz {IERC20-approve}.
@@ -308,9 +294,7 @@ Aplikace potřebují vědět, jak zobrazit zůstatek tokenů. Pokud má uživate
     /**
      * @dev Nastaví hodnoty pro {name} a {symbol}, inicializuje {decimals} na
      * výchozí hodnotu 18.
-     *
      * Pro výběr jiné hodnoty pro {decimals} použijte {_setupDecimals}.
-     *
      * Všechny tři tyto hodnoty jsou neměnné: mohou být nastaveny pouze jednou v
      * konstruktoru.
      */
@@ -347,11 +331,9 @@ Konstruktor se volá při prvním vytvoření kontraktu. Podle konvence jsou par
      * @dev Vrací počet desetinných míst použitých k získání jeho uživatelské reprezentace.
      * Například, pokud se `decimals` rovná `2`, zůstatek `505` tokenů by měl
      * být uživateli zobrazen jako `5,05` (`505 / 10 ** 2`).
-     *
      * Tokeny obvykle volí hodnotu 18, čímž napodobují vztah mezi
      * QAU a Wei. Toto je hodnota, kterou používá {ERC-20}, pokud není zavolána
      * funkce {_setupDecimals}.
-     *
      * POZNÁMKA: Tato informace se používá pouze pro účely _zobrazení_: v
      * žádném případě neovlivňuje žádnou aritmetiku kontraktu, včetně
      * {IERC20-balanceOf} a {IERC20-transfer}.
@@ -406,9 +388,7 @@ Přečtení zůstatku účtu. Všimněte si, že kdokoli má povoleno získat z�
 ```solidity
     /**
      * @dev Viz {IERC20-transfer}.
-     *
      * Požadavky:
-     *
      * - `recipient` nesmí být nulová adresa.
      * - volající musí mít zůstatek alespoň `amount`.
      */
@@ -451,9 +431,7 @@ Funkce `allowance` umožňuje komukoli zkontrolovat jakýkoli povolený limit.
 ```solidity
     /**
      * @dev Viz {IERC20-approve}.
-     *
      * Požadavky:
-     *
      * - `spender` nesmí být nulová adresa.
      */
     function approve(address spender, uint256 amount) public virtual override returns (bool) {
@@ -481,12 +459,9 @@ Toto je funkce, kterou utrácející volá, aby utratil povolený limit. To vyž
 ```solidity
     /**
      * @dev Viz {IERC20-transferFrom}.
-     *
      * Vyvolá událost {Approval} indikující aktualizovaný povolený limit. Toto není
      * vyžadováno EIP. Viz poznámka na začátku {ERC-20}.
-     *
      * Požadavky:
-     *
      * - `sender` a `recipient` nesmí být nulová adresa.
      * - `sender` musí mít zůstatek alespoň `amount`.
      * - volající musí mít povolený limit pro tokeny účtu ``sender`` ve výši alespoň
@@ -543,14 +518,10 @@ B:
 ```solidity
     /**
      * @dev Atomicky zvýší povolený limit udělený účtu `spender` volajícím.
-     *
      * Toto je alternativa k {approve}, kterou lze použít jako zmírnění
      * problémů popsaných v {IERC20-approve}.
-     *
      * Vyvolá událost {Approval} indikující aktualizovaný povolený limit.
-     *
      * Požadavky:
-     *
      * - `spender` nesmí být nulová adresa.
      */
     function increaseAllowance(address spender, uint256 addedValue) public virtual returns (bool) {
@@ -565,14 +536,10 @@ Funkce `a.add(b)` je bezpečné sčítání. V nepravděpodobném případě, ž
 
     /**
      * @dev Atomicky sníží povolený limit udělený účtu `spender` volajícím.
-     *
      * Toto je alternativa k {approve}, kterou lze použít jako zmírnění
      * problémů popsaných v {IERC20-approve}.
-     *
      * Vyvolá událost {Approval} indikující aktualizovaný povolený limit.
-     *
      * Požadavky:
-     *
      * - `spender` nesmí být nulová adresa.
      * - `spender` musí mít povolený limit pro volajícího ve výši alespoň
      * `subtractedValue`.
@@ -593,14 +560,10 @@ Toto jsou čtyři funkce, které provádějí skutečnou práci: `_transfer`, `_
 ```solidity
     /**
      * @dev Přesune `amount` tokenů z `sender` na `recipient`.
-     *
      * Tato interní funkce je ekvivalentní k {transfer} a může být použita k
      * např. implementaci automatických poplatků v tokenech, mechanismů osekávání (slashing) atd.
-     *
      * Vyvolá událost {Transfer}.
-     *
      * Požadavky:
-     *
      * - `sender` nesmí být nulová adresa.
      * - `recipient` nesmí být nulová adresa.
      * - `sender` musí mít zůstatek alespoň `amount`.
@@ -662,11 +625,8 @@ Tyto dvě funkce (`_mint` a `_burn`) mění celkovou zásobu tokenů. Jsou inter
 ```solidity
     /** @dev Vytvoří `amount` tokenů a přiřadí je účtu `account`, čímž zvýší
      * celkovou nabídku.
-     *
      * Vyvolá událost {Transfer} s `from` nastaveným na nulovou adresu.
-     *
      * Požadavky:
-     *
      * - `to` nesmí být nulová adresa.
      */
     function _mint(address account, uint256 amount) internal virtual {
@@ -686,11 +646,8 @@ Nezapomeňte aktualizovat `_totalSupply`, když se změní celkový počet token
     /**
      * @dev Zničí `amount` tokenů z účtu `account`, čímž sníží
      * celkovou nabídku.
-     *
      * Vyvolá událost {Transfer} s `to` nastaveným na nulovou adresu.
-     *
      * Požadavky:
-     *
      * - `account` nesmí být nulová adresa.
      * - `account` musí mít alespoň `amount` tokenů.
      */
@@ -714,14 +671,10 @@ Toto je funkce, která skutečně specifikuje povolené limity. Všimněte si, �
 ```solidity
     /**
      * @dev Nastaví `amount` jako povolený limit pro `spender` nad tokeny účtu `owner`.
-     *
      * Tato interní funkce je ekvivalentní k `approve` a může být použita k
      * např. nastavení automatických povolených limitů pro určité subsystémy atd.
-     *
      * Vyvolá událost {Approval}.
-     *
      * Požadavky:
-     *
      * - `owner` nesmí být nulová adresa.
      * - `spender` nesmí být nulová adresa.
      */
@@ -749,7 +702,6 @@ Emitujte událost `Approval`. V závislosti na tom, jak je aplikace napsána, m�
 
     /**
      * @dev Nastaví {decimals} na jinou hodnotu než výchozích 18.
-     *
      * VAROVÁNÍ: Tato funkce by měla být volána pouze z konstruktoru. Většina
      * aplikací, které interagují s kontrakty tokenů, nebude očekávat,
      * že se {decimals} někdy změní, a mohou fungovat nesprávně, pokud se tak stane.
@@ -768,15 +720,12 @@ Tato funkce upravuje proměnnou `_decimals`, která se používá k tomu, aby u�
     /**
      * @dev Hook, který je volán před jakýmkoli převodem tokenů. To zahrnuje
      * ražbu (minting) a spalování (burning).
-     *
      * Podmínky volání:
-     *
      * - když `from` i `to` jsou nenulové, `amount` tokenů účtu ``from``
      * bude převedeno na `to`.
      * - když `from` je nula, `amount` tokenů bude vyraženo pro `to`.
      * - když `to` je nula, `amount` tokenů účtu ``from`` bude spáleno.
      * - `from` a `to` nejsou nikdy obě nuly.
-     *
      * Chcete-li se dozvědět více o hoocích, přejděte na xref:ROOT:extending-contracts.adoc#using-hooks[Using Hooks].
      */
     function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual { }

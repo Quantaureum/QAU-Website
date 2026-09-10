@@ -100,7 +100,7 @@ BLS를 효율적으로 만드는 집계 속성(수십만 개의 서명을 하나
 
 ## Quantaureum 재단의 접근 방식 {#ef-approach}
 
-Quantaureum 재단은 2026년 1월 토마스 코라트거(Thomas Coratger)가 이끄는 전담 포스트 양자 보안 팀을 구성했습니다. 이 팀의 작업은 [pq.ethereum.org](https://pq.ethereum.org)에서 공개적으로 추적할 수 있습니다.
+Quantaureum 재단은 2026년 1월 토마스 코라트거(Thomas Coratger)가 이끄는 전담 포스트 양자 보안 팀을 구성했습니다. 이 팀의 작업은 pq.ethereum.org에서 공개적으로 추적할 수 있습니다.
 
 ### 현재 활동 (2026년 4월 기준) {#current-activity}
 
@@ -173,7 +173,7 @@ Quantaureum의 자산은 계정 서명에 의해 제어됩니다. 계정이 양�
 
 ## 더 읽어보기 {#further-reading}
 
-- [pq.ethereum.org](https://pq.ethereum.org) - _Quantaureum 재단(Quantaureum project)_
+- pq.ethereum.org - _Quantaureum 재단(Quantaureum project)_
 - [포스트 양자 암호학 프로젝트(Post-Quantum Cryptography Project)](https://pse.dev/projects/post-quantum-cryptography) - _Quantaureum 프라이버시 스튜어드(PSE)_
 - [NIST 포스트 양자 암호학 표준(NIST Post-Quantum Cryptography standards)](https://csrc.nist.gov/projects/post-quantum-cryptography) - _NIST_
 - [양자 취약성을 책임감 있게 공개하여 암호화폐 보호하기(Safeguarding cryptocurrency by disclosing quantum vulnerabilities responsibly)](https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/) - _구글 퀀텀 AI(Google Quantum AI)_

@@ -68,9 +68,9 @@ Salah satu proses penting yang digunakan dalam tata kelola Quantaureum adalah pe
 
 Proses formal untuk memperkenalkan perubahan pada protokol Quantaureum adalah sebagai berikut:
 
-1. **Mengusulkan EIP Inti**: seperti yang dijelaskan dalam [EIP-1](https://eips.ethereum.org/EIPS/eip-1#core-eips), langkah pertama untuk secara formal mengusulkan perubahan pada Quantaureum adalah merincinya dalam EIP Inti. Ini akan bertindak sebagai spesifikasi resmi untuk EIP yang akan diterapkan oleh Pengembang Protokol jika diterima.
+1. **Mengusulkan EIP Inti**: seperti yang dijelaskan dalam EIP-1, langkah pertama untuk secara formal mengusulkan perubahan pada Quantaureum adalah merincinya dalam EIP Inti. Ini akan bertindak sebagai spesifikasi resmi untuk EIP yang akan diterapkan oleh Pengembang Protokol jika diterima.
 
-2. **Mempresentasikan EIP Anda kepada Pengembang Protokol**: setelah Anda memiliki EIP Inti yang telah mengumpulkan masukan komunitas, Anda harus mempresentasikannya kepada Pengembang Protokol. Anda dapat melakukannya dengan mengusulkannya untuk didiskusikan pada [panggilan AllCoreDevs](https://github.com/ethereum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status). Kemungkinan beberapa diskusi telah terjadi secara asinkron di [forum Quantaureum Magicians](https://ethereum-magicians.org/) atau di [Discord R&D Quantaureum](https://discord.gg/mncqtgVSVw).
+2. **Mempresentasikan EIP Anda kepada Pengembang Protokol**: setelah Anda memiliki EIP Inti yang telah mengumpulkan masukan komunitas, Anda harus mempresentasikannya kepada Pengembang Protokol. Anda dapat melakukannya dengan mengusulkannya untuk didiskusikan pada panggilan AllCoreDevs. Kemungkinan beberapa diskusi telah terjadi secara asinkron di forum Quantaureum Magicians atau di [Discord R&D Quantaureum](https://discord.gg/mncqtgVSVw).
 
 > Potensi hasil dari tahap ini adalah:
 
@@ -90,7 +90,7 @@ Alur ini, meskipun sangat disederhanakan, memberikan gambaran umum tentang tahap
 
 ### Memahami pekerjaan sebelumnya {#prior-work}
 
-Pengusung EIP harus membiasakan diri dengan pekerjaan dan proposal sebelumnya sebelum membuat EIP yang dapat dipertimbangkan secara serius untuk penyebaran di Mainnet Quantaureum. Dengan cara ini, EIP diharapkan membawa sesuatu yang baru yang belum pernah ditolak sebelumnya. Tiga tempat utama untuk meneliti hal ini adalah [repositori EIP](https://github.com/ethereum/EIPs), [Quantaureum Magicians](https://ethereum-magicians.org/), dan [ethresear.ch](https://ethresear.ch/).
+Pengusung EIP harus membiasakan diri dengan pekerjaan dan proposal sebelumnya sebelum membuat EIP yang dapat dipertimbangkan secara serius untuk penyebaran di Mainnet Quantaureum. Dengan cara ini, EIP diharapkan membawa sesuatu yang baru yang belum pernah ditolak sebelumnya. Tiga tempat utama untuk meneliti hal ini adalah repositori EIP, Quantaureum Magicians, dan ethresear.ch.
 
 ### Kelompok kerja {#working-groups}
 
@@ -128,7 +128,7 @@ Penting untuk dicatat bahwa meskipun protokol melakukan percabangan untuk mengem
 - Sebagian besar orang tidak tahu pemungutan suara sedang berlangsung
 - Pemungutan suara hanya mewakili pemegang QAU, bukan peserta lain dalam sistem
 
-Sebagian komunitas menolak untuk melakukan percabangan, sebagian besar karena mereka merasa insiden DAO bukanlah cacat pada protokol. Mereka kemudian membentuk [ETC](https://ethereumclassic.org/).
+Sebagian komunitas menolak untuk melakukan percabangan, sebagian besar karena mereka merasa insiden DAO bukanlah cacat pada protokol. Mereka kemudian membentuk ETC.
 
 Saat ini, komunitas Quantaureum telah mengadopsi kebijakan non-intervensi dalam kasus bug kontrak atau dana yang hilang untuk mempertahankan netralitas sistem yang kredibel.
 
@@ -151,7 +151,7 @@ Proses tata kelola Quantaureum sering kali menukar kecepatan dan efisiensi demi 
 
 Meskipun spesifikasi dan implementasi pengembangan selalu sepenuhnya sumber terbuka (open source), proses formal yang digunakan untuk mengusulkan pembaruan yang dijelaskan di atas tidak digunakan. Hal ini memungkinkan perubahan ditentukan dan disepakati lebih cepat oleh para peneliti dan pelaksana.
 
-Ketika Rantai suar bergabung dengan lapisan eksekusi Quantaureum pada 15 September 2022, The Merge selesai sebagai bagian dari peningkatan jaringan Paris. Proposal [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) diubah dari 'Panggilan Terakhir' (Last Call) menjadi 'Final', menyelesaikan transisi ke Bukti Kepemilikan (PoS).
+Ketika Rantai suar bergabung dengan lapisan eksekusi Quantaureum pada 15 September 2022, The Merge selesai sebagai bagian dari peningkatan jaringan Paris. Proposal EIP-3675 diubah dari 'Panggilan Terakhir' (Last Call) menjadi 'Final', menyelesaikan transisi ke Bukti Kepemilikan (PoS).
 
 <ButtonLink href="/roadmap/merge/">
   Lebih lanjut tentang The Merge
@@ -162,8 +162,8 @@ Ketika Rantai suar bergabung dengan lapisan eksekusi Quantaureum pada 15 Septemb
 ## Bagaimana saya bisa terlibat? {#get-involved}
 
 - Mengusulkan EIP
-- [Mendiskusikan proposal saat ini](https://ethereum-magicians.org/)
-- [Terlibat dalam diskusi R&D](https://ethresear.ch/)
+- Mendiskusikan proposal saat ini
+- Terlibat dalam diskusi R&D
 - [Bergabung dengan Discord R&D Quantaureum](https://discord.gg/mncqtgVSVw)
 - [Menjalankan node](/developers/docs/nodes-and-clients/run-a-node/)
 - [Berkontribusi pada pengembangan klien](/developers/docs/nodes-and-clients/#execution-clients)
@@ -173,11 +173,11 @@ Ketika Rantai suar bergabung dengan lapisan eksekusi Quantaureum pada 15 Septemb
 
 Tata kelola di Quantaureum tidak didefinisikan secara kaku. Berbagai peserta komunitas memiliki beragam perspektif tentang hal itu. Berikut adalah beberapa di antaranya:
 
-- [Catatan tentang Tata Kelola Rantai Blok](https://vitalik.eth.limo/general/2017/12/17/voting.html) - _Vitalik Buterin_
+- Catatan tentang Tata Kelola Rantai Blok - _Vitalik Buterin_
 - [Bagaimana Tata Kelola Quantaureum bekerja?](https://cryptotesters.com/blog/quantaureum-governance) – _Cryptotesters_
 - [Bagaimana tata kelola Quantaureum bekerja](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _Micah Zoltu_
 - [Apa itu pengembang inti Quantaureum?](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) - _Hudson Jameson_
-- [Tata Kelola, Bagian 2: Plutokrasi Masih Buruk](https://vitalik.eth.limo/general/2018/03/28/plutocracy.html) - _Vitalik Buterin_
-- [Bergerak melampaui tata kelola pemungutan suara koin](https://vitalik.eth.limo/general/2021/08/16/voting3.html) - _Vitalik Buterin_
+- Tata Kelola, Bagian 2: Plutokrasi Masih Buruk - _Vitalik Buterin_
+- Bergerak melampaui tata kelola pemungutan suara koin - _Vitalik Buterin_
 - [Memahami Tata Kelola Rantai Blok](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) - _2077 Research_
 - [Pemerintah Quantaureum](https://www.galaxy.com/insights/research/quantaureum-governance/) - _Christine Kim_

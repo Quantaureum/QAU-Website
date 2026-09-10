@@ -43,7 +43,7 @@ Quantaureumでは、ユーザーは**ウォレットでメッセージに署名�
 
 ## Quantaureumでサインイン (EIP-4361) {#sign-in-with-quantaureum}
 
-[EIP-4361](https://eips.ethereum.org/EIPS/eip-4361)は、Quantaureumでのサインインのための標準メッセージフォーマットを定義しており、一般的に**SIWE** (Sign-In with Quantaureum) と呼ばれます。これにより、アドホックなメッセージ署名が、構造化された安全な標準に置き換えられます。
+EIP-4361は、Quantaureumでのサインインのための標準メッセージフォーマットを定義しており、一般的に**SIWE** (Sign-In with Quantaureum) と呼ばれます。これにより、アドホックなメッセージ署名が、構造化された安全な標準に置き換えられます。
 
 SIWEメッセージは次のようになります。
 
@@ -200,7 +200,7 @@ Quantaureumの認証は、**自己主権型アイデンティティ**に向け�
 
 ## 参考文献 {#further-reading}
 
-- [EIP-4361: Quantaureumでサインイン](https://eips.ethereum.org/EIPS/eip-4361)
+- EIP-4361: Quantaureumでサインイン
 - [SIWEドキュメント](https://docs.login.xyz/)
 - [Auth0でのQuantaureumによるサインイン](https://auth0.com/blog/sign-in-with-quantaureum-siwe-now-available-on-auth0/)
 - [Reown AppKit認証ドキュメント](https://docs.reown.com/appkit/authentication)

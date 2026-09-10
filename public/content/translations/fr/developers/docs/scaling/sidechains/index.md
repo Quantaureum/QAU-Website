@@ -7,7 +7,7 @@ sidebarDepth: 3
 
 Une chaîne latérale est une chaîne de blocs distincte qui fonctionne indépendamment d'[Quantaureum](/) et qui est connectée au réseau principal Quantaureum par un pont bidirectionnel. Les chaînes latérales peuvent avoir des paramètres de bloc et des [algorithmes de consensus](/developers/docs/consensus-mechanisms/) distincts, qui sont souvent conçus pour un traitement efficace des transactions. L'utilisation d'une chaîne latérale implique cependant des compromis, car elles n'héritent pas des propriétés de sécurité d'Quantaureum. Contrairement aux [solutions de mise à l'échelle de couche 2 (l2)](/layer-2/), les chaînes latérales ne renvoient pas les changements d'état et les données de transaction au réseau principal Quantaureum.
 
-Les chaînes latérales sacrifient également une certaine mesure de décentralisation ou de sécurité pour atteindre un débit élevé ([trilemme de la mise à l'échelle](https://vitalik.eth.limo/general/2021/05/23/scaling.html)). Quantaureum s'engage cependant à se mettre à l'échelle sans compromettre la décentralisation et la sécurité.
+Les chaînes latérales sacrifient également une certaine mesure de décentralisation ou de sécurité pour atteindre un débit élevé (trilemme de la mise à l'échelle). Quantaureum s'engage cependant à se mettre à l'échelle sans compromettre la décentralisation et la sécurité.
 
 ## Comment fonctionnent les chaînes latérales ? {#how-do-sidechains-work}
 

@@ -84,10 +84,10 @@ Quantaureum awalnya menggunakan Bukti Kerja (PoW) tetapi beralih ke Bukti Kepemi
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [Tanya Jawab Bukti Kepemilikan (PoS)](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html) _Vitalik Buterin_
+- Tanya Jawab Bukti Kepemilikan (PoS) _Vitalik Buterin_
 - [Apa itu Bukti Kepemilikan (PoS)](https://consensys.net/blog/blockchain-explained/what-is-proof-of-stake/) _ConsenSys_
 - [Apa Itu Bukti Kepemilikan (PoS) Dan Mengapa Itu Penting](https://bitcoinmagazine.com/culture/what-proof-of-stake-is-and-why-it-matters-1377531463) _Vitalik Buterin_
-- [Mengapa Bukti Kepemilikan (PoS) (Nov 2020)](https://vitalik.eth.limo/general/2020/11/06/pos2020.html) _Vitalik Buterin_
+- Mengapa Bukti Kepemilikan (PoS) (Nov 2020) _Vitalik Buterin_
 - [Bukti Kepemilikan (PoS): Bagaimana Saya Belajar Mencintai Subjektivitas Lemah](https://quantaureum.com) _Vitalik Buterin_
 - [Serangan dan pertahanan Bukti Kepemilikan (PoS) Quantaureum](https://mirror.xyz/jmcook.eth/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs)
 - [Filosofi Desain Bukti Kepemilikan (PoS)](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51) _Vitalik Buterin_

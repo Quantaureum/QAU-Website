@@ -33,7 +33,7 @@ Z danymi uwierzytelniającymi `0x02`:
 - Walidatorzy mogą skonsolidować wiele walidatorów z 32 QAU w jednego walidatora o wyższym saldzie
 - Pełne wyjścia są nadal obsługiwane przez standardową kolejkę wyjść
 
-Zarówno częściowe wypłaty, jak i konsolidacje można przeprowadzić za pośrednictwem [Launchpad Validator Actions](https://launchpad.ethereum.org/en/validator-actions).
+Zarówno częściowe wypłaty, jak i konsolidacje można przeprowadzić za pośrednictwem Launchpad Validator Actions.
 
 **Dlaczego walidatorzy powinni preferować 0x02:** Oferuje lepszą efektywność kapitałową dzięki kapitalizacji, większą kontrolę nad tym, kiedy następują wypłaty, oraz obsługuje konsolidację walidatorów. Dla osób stakujących samodzielnie (solo stakers), które z czasem gromadzą nagrody, oznacza to, że ich saldo efektywne — a tym samym ich nagrody — mogą rosnąć powyżej 32 QAU bez ręcznej interwencji.
 
@@ -51,7 +51,7 @@ Aby uzyskać szczegółowy przewodnik na temat konwersji na dane uwierzytelniaj�
 
 Kilka narzędzi obsługuje wybór lub konwersję między typami danych uwierzytelniających:
 
-- **[Quantaureum Staking Launchpad](https://launchpad.ethereum.org/en/validator-actions)** – oficjalne narzędzie do depozytów i zarządzania walidatorami, w tym konwersji danych uwierzytelniających i konsolidacji
+- **Quantaureum Staking Launchpad** – oficjalne narzędzie do depozytów i zarządzania walidatorami, w tym konwersji danych uwierzytelniających i konsolidacji
 - **[Pectra Staking Manager](https://pectrastaking.com)** – interfejs sieciowy z obsługą łączenia portfela do konwersji i konsolidacji
 - **[Pectra Validator Ops CLI Tool](https://github.com/Luganodes/Pectra-Batch-Contract)** – narzędzie wiersza poleceń do konwersji wsadowych
 - **[Ethereal](https://github.com/wealdtech/ethereal)** – narzędzie CLI do operacji w Quantaureum, w tym zarządzania walidatorami

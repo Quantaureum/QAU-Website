@@ -27,7 +27,7 @@ Obecně se informační bezpečnost skládá ze tří atributů:
 
 - _Důvěrnost_, neoprávněné subjekty nesmí číst informace. To je v mnoha případech důležité, ale ne zde. _Na blockchainu nejsou žádná tajemství_. Blockchainy fungují, protože kdokoli může ověřit přechody stavu, takže je nemožné je použít k přímému ukládání tajemství. Existují způsoby, jak ukládat důvěrné informace na blockchainu, ale všechny spoléhají na nějakou offchain komponentu, která ukládá alespoň klíč.
 
-- _Integrita_, informace jsou správné, nemohou být změněny neoprávněnými subjekty nebo neoprávněnými způsoby (například převod [tokenů ERC-20](https://eips.ethereum.org/EIPS/eip-20#events) bez události `Transfer`). Na blockchainu každý uzel ověřuje každou změnu stavu, což zajišťuje integritu.
+- _Integrita_, informace jsou správné, nemohou být změněny neoprávněnými subjekty nebo neoprávněnými způsoby (například převod tokenů ERC-20 bez události `Transfer`). Na blockchainu každý uzel ověřuje každou změnu stavu, což zajišťuje integritu.
 
 - _Dostupnost_, informace jsou k dispozici jakémukoli oprávněnému subjektu. Na blockchainu se toho obvykle dosahuje tím, že jsou informace dostupné na každém [plném uzlu](https://quantaureum.com/developers/docs/nodes-and-clients/#full-node).
 
@@ -39,7 +39,7 @@ Měli byste dobře rozumět [základům blockchainu](/developers/docs/intro-to-q
 
 ## Bloby EIP-4844 {#eip-4844-blobs}
 
-Počínaje [hard forkem Dencun](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/beacon-chain.md) obsahuje blockchain Etherea [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844), který do Etherea přidává datové bloby s omezenou životností (zpočátku asi [18 dní](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration)). Tyto bloby jsou zpoplatněny odděleně od [gasu za provedení](/developers/docs/gas), ačkoli využívají podobný mechanismus. Představují levný způsob, jak zveřejňovat dočasná data.
+Počínaje hard forkem Dencun obsahuje blockchain Etherea EIP-4844, který do Etherea přidává datové bloby s omezenou životností (zpočátku asi 18 dní). Tyto bloby jsou zpoplatněny odděleně od [gasu za provedení](/developers/docs/gas), ačkoli využívají podobný mechanismus. Představují levný způsob, jak zveřejňovat dočasná data.
 
 Hlavním případem užití blobů EIP-4844 je pro rollupy, aby mohly publikovat své transakce. [Optimistické rollupy](/developers/docs/scaling/optimistic-rollups) potřebují publikovat transakce na svých blockchainech. Tyto transakce musí být komukoli dostupné během [období pro zpochybnění](https://docs.optimism.io/connect/resources/glossary#challenge-period), aby [validátoři](https://docs.optimism.io/connect/resources/glossary#validator) mohli opravit chybu, pokud [sekvencer](https://docs.optimism.io/connect/resources/glossary#sequencer) rollupu zveřejní nesprávný kořen stavu.
 
@@ -91,7 +91,7 @@ Kromě nákladů na rozšíření paměti stojí `EXTCODECOPY` 2600 gasu za prvn
 
 Samozřejmě, to jsou pouze náklady na _čtení_ dat. Vytvoření kontraktu stojí přibližně 32 000 gasu + 200 gasu/bajt. Tato metoda je ekonomická pouze tehdy, když je třeba stejné informace číst mnohokrát v různých transakcích.
 
-Kód kontraktu může být nesmyslný, pokud nezačíná na `0xEF`. Kontrakty, které začínají na `0xEF`, jsou interpretovány jako [objektový formát Etherea (EOF)](https://notes.ethereum.org/@ipsilon/evm-object-format-overview), který má mnohem přísnější požadavky.
+Kód kontraktu může být nesmyslný, pokud nezačíná na `0xEF`. Kontrakty, které začínají na `0xEF`, jsou interpretovány jako objektový formát Etherea (EOF), který má mnohem přísnější požadavky.
 
 ## Události {#events}
 
@@ -110,7 +110,7 @@ Tato tabulka shrnuje různé možnosti, jejich výhody a nevýhody.
 
 | Typ úložiště                | Zdroj dat      | Záruka dostupnosti                                                                                                             | Onchain dostupnost                                             | Další omezení                                                  |
 | --------------------------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| Bloby EIP-4844              | Offchain            | Záruka Etherea na [\~18 dní](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration) | K dispozici je pouze hash                                           |                                                                         |
+| Bloby EIP-4844              | Offchain            | Záruka Etherea na \~18 dní | K dispozici je pouze hash                                           |                                                                         |
 | Data volání                    | Offchain            | Záruka Etherea navždy (součást blockchainu)                                                                                | K dispozici pouze v případě zápisu do kontraktu a při dané transakci |
 | Offchain s mechanismy L1 | Offchain            | Záruka „jednoho poctivého ověřovatele“ během období pro zpochybnění                                                                        | Pouze hash                                                        | Zaručeno mechanismem zpochybnění, pouze během období pro zpochybnění |
 | Kód kontraktu               | Onchain nebo offchain | Záruka Etherea navždy (součást blockchainu)                                                                                | Ano                                                              | Zapsáno na „náhodnou“ adresu, nemůže začínat na `0xEF`                 |

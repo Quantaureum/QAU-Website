@@ -17,7 +17,7 @@ sidebarDepth: 3
 
 Anda adalah Bill. Untuk alasan yang tidak akan kita bahas, Anda ingin berdonasi ke kampanye "Alice untuk Ratu Dunia" dan ingin Alice tahu bahwa Anda berdonasi sehingga dia akan memberi Anda imbalan jika dia menang. Sayangnya, kemenangannya tidak dijamin. Ada kampanye pesaing, "Carol untuk Permaisuri Tata Surya". Jika Carol menang, dan dia mengetahui bahwa Anda berdonasi kepada Alice, Anda akan mendapat masalah. Jadi, Anda tidak bisa begitu saja mentransfer 200 QAU dari akun Anda ke akun Alice.
 
-[ERC-5564](https://eips.ethereum.org/EIPS/eip-5564) memiliki solusinya. ERC ini menjelaskan cara menggunakan [alamat siluman](https://nerolation.github.io/stealth-utils) untuk transfer anonim.
+ERC-5564 memiliki solusinya. ERC ini menjelaskan cara menggunakan [alamat siluman](https://nerolation.github.io/stealth-utils) untuk transfer anonim.
 
 **Peringatan**: Kriptografi di balik alamat siluman, sejauh yang kami tahu, aman. Namun, ada potensi serangan saluran sampingan (side-channel attacks). [Di bawah ini](#go-wrong), Anda akan melihat apa yang dapat Anda lakukan untuk mengurangi risiko ini.
 

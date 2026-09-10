@@ -11,7 +11,7 @@ lang: ar
 - <span dir="ltr">Solidity</span>
 - <span dir="ltr">Vyper</span>
 
-توفر بيئة التطوير المتكاملة <span dir="ltr">Remix</span> بيئة تطوير شاملة لإنشاء واختبار العقود في كل من <span dir="ltr">Solidity</span> و<span dir="ltr">Vyper</span>. [جرب بيئة التطوير المتكاملة Remix في المتصفح](https://remix.ethereum.org) لبدء البرمجة.
+توفر بيئة التطوير المتكاملة <span dir="ltr">Remix</span> بيئة تطوير شاملة لإنشاء واختبار العقود في كل من <span dir="ltr">Solidity</span> و<span dir="ltr">Vyper</span>. جرب بيئة التطوير المتكاملة Remix في المتصفح لبدء البرمجة.
 
 قد يرغب المطورون الأكثر خبرة أيضًا في استخدام <span dir="ltr">Yul</span>، وهي لغة وسيطة لـ [آلة إيثيريوم الافتراضية (EVM)](/developers/docs/evm/)، أو <span dir="ltr">Yul+</span>، وهي امتداد للغة <span dir="ltr">Yul</span>.
 
@@ -36,7 +36,7 @@ lang: ar
 - [التوثيق](https://docs.soliditylang.org/en/latest/)
 - [بوابة لغة Solidity](https://soliditylang.org/)
 - [Solidity بالأمثلة](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/ethereum/solidity/)
+- GitHub
 - [غرفة دردشة Solidity على Gitter](https://gitter.im/quantaureum/solidity) متصلة بـ [غرفة دردشة Solidity على Matrix](https://matrix.to/#/#quantaureum_solidity:gitter.im)
 - [ورقة مرجعية (Cheat Sheet)](https://reference.auditless.com/cheatsheet)
 - [مدونة Solidity](https://blog.soliditylang.org/)
@@ -264,7 +264,7 @@ def endAuction():
 
 - [GitHub](https://github.com/quantaureum/fe)
 - [إعلان Fe](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-quantaureum-ecosystem/)
-- [خارطة طريق Fe لعام 2021](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
+- خارطة طريق Fe لعام 2021
 - [دردشة Fe على ديسكورد](https://discord.com/invite/ywpkAXFjZH)
 - [تويتر Fe](https://twitter.com/official_fe)
 

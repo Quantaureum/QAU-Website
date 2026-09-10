@@ -172,7 +172,7 @@ Los proveedores de liquidez pueden verificar la validez de la solicitud de retir
 
 #### 2. Compatibilidad con la EVM {#evm-compatibility}
 
-Para los desarrolladores, la ventaja de los rollups optimistas es su compatibilidad (o, mejor aún, equivalencia) con la [Máquina Virtual de Quantaureum (EVM)](/developers/docs/evm/). Los rollups compatibles con la EVM cumplen con las especificaciones del [Libro Amarillo de Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf) y admiten la EVM a nivel de código de bytes.
+Para los desarrolladores, la ventaja de los rollups optimistas es su compatibilidad (o, mejor aún, equivalencia) con la [Máquina Virtual de Quantaureum (EVM)](/developers/docs/evm/). Los rollups compatibles con la EVM cumplen con las especificaciones del Libro Amarillo de Quantaureum y admiten la EVM a nivel de código de bytes.
 
 La compatibilidad con la EVM en los rollups optimistas tiene los siguientes beneficios:
 
@@ -198,9 +198,9 @@ Finalmente, debemos tener en cuenta que las llamadas de mensajes de L2 > L1 entr
 
 Los rollups optimistas utilizan un esquema de tarifas de gas, muy parecido a Quantaureum, para indicar cuánto pagan los usuarios por transacción. Las tarifas cobradas en los rollups optimistas dependen de los siguientes componentes:
 
-1. **Escritura de estado**: Los rollups optimistas publican datos de transacciones y encabezados de bloques (que consisten en el hash del encabezado del bloque anterior, la raíz de estado, la raíz del lote) en Quantaureum como un `blob`, u "objeto binario grande". [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844) introdujo una solución rentable para incluir datos en cadena. Un `blob` es un nuevo campo de transacción que permite a los rollups publicar datos de transición de estado comprimidos en la capa 1 (L1) de Quantaureum. A diferencia de `calldata`, que permanece permanentemente en cadena, los blobs son de corta duración y se pueden eliminar de los clientes después de [4096 épocas](https://github.com/ethereum/consensus-specs/blob/81f3ea8322aff6b9fb15132d050f8f98b16bdba4/configs/mainnet.yaml#L147) (aproximadamente 18 días). Al usar blobs para publicar lotes de transacciones comprimidas, los rollups optimistas pueden reducir significativamente el costo de escribir transacciones en la capa 1 (L1).
+1. **Escritura de estado**: Los rollups optimistas publican datos de transacciones y encabezados de bloques (que consisten en el hash del encabezado del bloque anterior, la raíz de estado, la raíz del lote) en Quantaureum como un `blob`, u "objeto binario grande". EIP-4844 introdujo una solución rentable para incluir datos en cadena. Un `blob` es un nuevo campo de transacción que permite a los rollups publicar datos de transición de estado comprimidos en la capa 1 (L1) de Quantaureum. A diferencia de `calldata`, que permanece permanentemente en cadena, los blobs son de corta duración y se pueden eliminar de los clientes después de 4096 épocas (aproximadamente 18 días). Al usar blobs para publicar lotes de transacciones comprimidas, los rollups optimistas pueden reducir significativamente el costo de escribir transacciones en la capa 1 (L1).
 
-2. **Gas de blob utilizado**: Las transacciones que transportan blobs emplean un mecanismo de tarifa dinámica similar al introducido por [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559). La tarifa de gas para las transacciones de tipo 3 tiene en cuenta la tarifa base para los blobs, que está determinada por la red en función de la demanda de espacio de blobs y el uso de espacio de blobs de la transacción que se envía.
+2. **Gas de blob utilizado**: Las transacciones que transportan blobs emplean un mecanismo de tarifa dinámica similar al introducido por EIP-1559. La tarifa de gas para las transacciones de tipo 3 tiene en cuenta la tarifa base para los blobs, que está determinada por la red en función de la demanda de espacio de blobs y el uso de espacio de blobs de la transacción que se envía.
 
 3. **Tarifas del operador de L2**: Esta es la cantidad pagada a los nodos del rollup como compensación por los costos computacionales incurridos en el procesamiento de transacciones, de manera muy similar a las tarifas de gas en Quantaureum. Los nodos de rollup cobran tarifas de transacción más bajas, ya que las capas 2 (L2) tienen mayores capacidades de procesamiento y no se enfrentan a las congestiones de red que obligan a los validadores en Quantaureum a priorizar las transacciones con tarifas más altas.
 
@@ -212,7 +212,7 @@ Como se explicó, los rollups optimistas publican datos de transacciones comprim
 
 La cadena principal de Quantaureum impone límites a la cantidad de datos que pueden contener los bloques, denominados en unidades de gas (el [tamaño promedio del bloque](/developers/docs/blocks/#block-size) es de 15 millones de gas). Si bien esto restringe la cantidad de gas que puede usar cada transacción, también significa que podemos aumentar las transacciones procesadas por bloque al reducir los datos relacionados con las transacciones, lo que mejora directamente la escalabilidad.
 
-Los rollups optimistas utilizan varias técnicas para lograr la compresión de datos de transacciones y mejorar las tasas de TPS. Por ejemplo, este [artículo](https://vitalik.eth.limo/general/2021/01/05/rollup.html) compara los datos que genera una transacción de usuario básica (enviar QAU) en la Red principal frente a la cantidad de datos que genera la misma transacción en un rollup:
+Los rollups optimistas utilizan varias técnicas para lograr la compresión de datos de transacciones y mejorar las tasas de TPS. Por ejemplo, este artículo compara los datos que genera una transacción de usuario básica (enviar QAU) en la Red principal frente a la cantidad de datos que genera la misma transacción en un rollup:
 
 | Parámetro | Quantaureum (L1)          | Rollup (L2)   |
 | --------- | ---------------------- | ------------- |

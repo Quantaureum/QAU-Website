@@ -359,7 +359,7 @@ contract PriceConsumerV3 {
 
 Певні блокчейн-застосунки, такі як ігри на базі блокчейну або лотерейні схеми, вимагають високого рівня непередбачуваності та випадковості для ефективної роботи. Однак детерміноване виконання блокчейнів усуває випадковість.
 
-Початковий підхід полягав у використанні псевдовипадкових криптографічних функцій, таких як `blockhash`, але ними могли [маніпулювати майнери](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.), які вирішували алгоритм доказу виконання роботи (PoW). Крім того, [перехід Етеріуму на доказ частки (PoS)](/roadmap/merge/) означає, що розробники більше не можуть покладатися на `blockhash` для ончейн-випадковості. Натомість [механізм RANDAO](https://eth2book.info/altair/part2/building_blocks/randomness) сигнального ланцюга надає альтернативне джерело випадковості.
+Початковий підхід полягав у використанні псевдовипадкових криптографічних функцій, таких як `blockhash`, але ними могли маніпулювати майнери, які вирішували алгоритм доказу виконання роботи (PoW). Крім того, [перехід Етеріуму на доказ частки (PoS)](/roadmap/merge/) означає, що розробники більше не можуть покладатися на `blockhash` для ончейн-випадковості. Натомість [механізм RANDAO](https://eth2book.info/altair/part2/building_blocks/randomness) сигнального ланцюга надає альтернативне джерело випадковості.
 
 Можна згенерувати випадкове значення позамережево та надіслати його ончейн, але це накладає високі вимоги до довіри з боку користувачів. Вони повинні вірити, що значення було дійсно згенеровано за допомогою непередбачуваних механізмів і не було змінено під час передачі.
 
@@ -421,7 +421,7 @@ contract PriceConsumerV3 {
 - [Що таке блокчейн-оракул?](https://medium.com/better-programming/what-is-a-blockchain-oracle-f5ccab8dbd72) — _Патрік Коллінз_
 - [Децентралізовані оракули: всебічний огляд](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) — _Жульєн Тевенар (Julien Thevenard)_
 - [Реалізація блокчейн-оракула в Етеріумі](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-quantaureum-cedc7e26b49e) – _Педро Коста (Pedro Costa)_
-- [Чому смарт-контракти не можуть здійснювати виклики API?](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
+- Чому смарт-контракти не можуть здійснювати виклики API? — _StackExchange_
 - [Отже, ви хочете використовувати ціновий оракул](https://samczsun.com/so-you-want-to-use-a-price-oracle/) — _samczsun_
 
 **Відео**

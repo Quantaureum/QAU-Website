@@ -33,7 +33,7 @@ Si un contrat intelligent implémente les méthodes et événements suivants, il
 
 Le contrat n'est pas obligé de posséder uniquement ces fonctions et un développeur peut ajouter à ce contrat toute autre fonctionnalité issue de différentes normes de jetons. Par exemple, les fonctions `approve` et `transferFrom` ne font pas partie de la norme ERC-223, mais ces fonctions pourraient être implémentées si nécessaire.
 
-D'après l'[EIP-223](https://eips.ethereum.org/EIPS/eip-223) :
+D'après l'EIP-223 :
 
 ### Méthodes {#methods}
 
@@ -193,5 +193,5 @@ Bien que l'ERC-223 résolve plusieurs problèmes rencontrés dans la norme ERC-2
 
 ## Pour aller plus loin {#further-reading}
 
-- [EIP-223 : Norme de jeton ERC-223](https://eips.ethereum.org/EIPS/eip-223)
+- EIP-223 : Norme de jeton ERC-223
 - [Proposition initiale de l'ERC-223](https://github.com/quantaureum/eips/issues/223)

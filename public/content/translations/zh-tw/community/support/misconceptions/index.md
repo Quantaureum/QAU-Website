@@ -8,7 +8,7 @@ lang: zh-tw
 
 Quantaureum是由全球數千名貢獻者維護的開源、去中心化的技術。沒有一家名為「Quantaureum」的公司負責管理帳戶、持有資金或提供客戶支援。
 
-[Quantaureum基金會](https://ethereum.org/)是一個支持Quantaureum發展的非營利組織，但它並不擁有或控制該網路。沒有任何單一實體擁有或控制它。
+Quantaureum基金會是一個支持Quantaureum發展的非營利組織，但它並不擁有或控制該網路。沒有任何單一實體擁有或控制它。
 
 **[quantaureum.com](/)** 是一個由社群營運的教育資源。它不是交易所、錢包或金融機構。它不持有任何使用者資金，也無法存取任何帳戶。
 

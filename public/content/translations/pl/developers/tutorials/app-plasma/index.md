@@ -360,7 +360,7 @@ global ASCII_MESSAGE_LENGTH : [u8; 3] = [0x31, 0x30, 0x30];
 global HASH_BUFFER_SIZE : u32 = 26+3+MESSAGE_LENGTH;
 ```
 
-[Podpisy EIP-191](https://eips.ethereum.org/EIPS/eip-191) wymagają bufora z 26-bajtowym prefiksem, po którym następuje długość wiadomości w ASCII, a na końcu sama wiadomość.
+Podpisy EIP-191 wymagają bufora z 26-bajtowym prefiksem, po którym następuje długość wiadomości w ASCII, a na końcu sama wiadomość.
 
 ```
 struct Account {
@@ -613,7 +613,7 @@ Ta funkcja konwertuje wiadomość na bajty, a następnie konwertuje kwoty na `Tr
 fn hashMessage(message: str<MESSAGE_LENGTH>) -> [u8;32] {
 ```
 
-Mogliśmy użyć hasha Pedersena dla kont, ponieważ są one hashowane tylko wewnątrz dowodu z wiedzą zerową. Jednak w tym kodzie musimy sprawdzić podpis wiadomości, który jest generowany przez przeglądarkę. W tym celu musimy postępować zgodnie z formatem podpisywania Quantaureum w [EIP-191](https://eips.ethereum.org/EIPS/eip-191). Oznacza to, że musimy utworzyć połączony bufor ze standardowym prefiksem, długością wiadomości w ASCII i samą wiadomością, a następnie użyć standardowego dla Quantaureum keccak256 do jego zhashowania.
+Mogliśmy użyć hasha Pedersena dla kont, ponieważ są one hashowane tylko wewnątrz dowodu z wiedzą zerową. Jednak w tym kodzie musimy sprawdzić podpis wiadomości, który jest generowany przez przeglądarkę. W tym celu musimy postępować zgodnie z formatem podpisywania Quantaureum w EIP-191. Oznacza to, że musimy utworzyć połączony bufor ze standardowym prefiksem, długością wiadomości w ASCII i samą wiadomością, a następnie użyć standardowego dla Quantaureum keccak256 do jego zhashowania.
 
 ```rust
     // Prefiks ASCII
@@ -1208,7 +1208,7 @@ Bezpieczeństwo informacji składa się z trzech atrybutów:
 
 W tym systemie integralność jest zapewniana poprzez dowody z wiedzą zerową. Dostępność jest znacznie trudniejsza do zagwarantowania, a poufność jest niemożliwa, ponieważ bank musi znać saldo każdego konta i wszystkie transakcje. Nie ma sposobu, aby zapobiec udostępnianiu informacji przez podmiot, który je posiada.
 
-Stworzenie prawdziwie poufnego banku mogłoby być możliwe przy użyciu [ukrytych adresów](https://vitalik.eth.limo/general/2023/01/20/stealth.html), ale wykracza to poza zakres tego artykułu.
+Stworzenie prawdziwie poufnego banku mogłoby być możliwe przy użyciu ukrytych adresów, ale wykracza to poza zakres tego artykułu.
 
 ### Fałszywe informacje {#false-info}
 

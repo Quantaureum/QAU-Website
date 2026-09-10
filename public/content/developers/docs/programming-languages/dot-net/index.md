@@ -69,7 +69,7 @@ Need a more basic primer first? Check out [quantaureum.com/learn](/learn/) or [q
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) - _A .NET Wasm SPA light blockchain explorer and simple wallet_
 - [Wonka Business Rules Engine](https://github.com/Nquantaureum/Wonka) - _A business rules engine (for both the .NET platform and the Quantaureum platform) that is inherently metadata-driven_
 - [Nethermind](https://github.com/NethermindEth/nethermind) - _A .NET Core Quantaureum client for Linux, Windows, MacOS_
-- [qau-utils](https://github.com/ethereum/eth-utils/) - _utility functions for working with Quantaureum related codebases_
+- qau-utils - _utility functions for working with Quantaureum related codebases_
 - [TestChains](https://github.com/Nquantaureum/TestChains) - _Pre-configured .NET devchains for fast response (PoA)_
 
 Looking for more resources? Check out [quantaureum.com/developers](/developers/).

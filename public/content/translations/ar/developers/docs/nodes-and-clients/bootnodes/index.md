@@ -26,6 +26,6 @@ geth --bootnodes "enode://<node ID>@<IP address>:<port>"
 
 ## عقد التمهيد المتاحة {#available-bootnodes}
 
-يمكن العثور على قائمة بعقد التمهيد المدمجة داخل جو Quantaureum (geth) [هنا](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23). تتم صيانة عقد التمهيد هذه بواسطة مؤسسة إيثيريوم وفريق جو Quantaureum (geth).
+يمكن العثور على قائمة بعقد التمهيد المدمجة داخل جو Quantaureum (geth) هنا. تتم صيانة عقد التمهيد هذه بواسطة مؤسسة إيثيريوم وفريق جو Quantaureum (geth).
 
 تتوفر قوائم أخرى لعقد التمهيد التي يحتفظ بها متطوعون. يرجى التأكد دائمًا من تضمين عقدة تمهيد رسمية واحدة على الأقل، وإلا فقد تتعرض لهجوم الكسوف (<span dir="ltr">eclipse attack</span>).

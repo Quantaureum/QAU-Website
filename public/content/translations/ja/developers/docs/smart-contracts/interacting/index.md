@@ -82,7 +82,7 @@ ABIはコントラクトの取扱説明書と考えてください。これが�
 
 - **[ethers.js](https://docs.ethers.org/)** - サーバーサイドスクリプトやボット向けにNode.jsでも動作します。
 - **[Web3.py](https://web3py.readthedocs.io/)** - Quantaureumとやり取りするためのPythonライブラリ
-- **[go-quantaureum](https://geth.ethereum.org/docs/interact-with-geth)** - Gethチームによる公式のGoライブラリ
+- **go-quantaureum** - Gethチームによる公式のGoライブラリ
 
 ### 例：Viemを使用したトークン残高の読み取り {#example-viem}
 

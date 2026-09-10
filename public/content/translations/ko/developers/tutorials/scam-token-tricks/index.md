@@ -198,7 +198,7 @@ modifier auth() {
 
 풀 계정에서 수신자 배열로 금액 배열을 전송하는 함수는 매우 타당합니다. 급여 지급, 에어드롭 등 단일 출처에서 여러 목적지로 토큰을 분배해야 하는 사용 사례는 많습니다. 여러 트랜잭션을 발행하거나 동일한 트랜잭션의 일부로 다른 컨트랙트에서 ERC-20을 여러 번 호출하는 것보다 단일 트랜잭션으로 처리하는 것이 (가스 측면에서) 더 저렴합니다.
 
-하지만 `dropNewTokens`는 그렇게 하지 않습니다. 이 함수는 [`Transfer` 이벤트](https://eips.ethereum.org/EIPS/eip-20#transfer-1)를 발생시키지만, 실제로는 어떤 토큰도 전송하지 않습니다. 실제로 일어나지 않은 전송을 알려 오프체인 애플리케이션을 혼란스럽게 할 합당한 이유는 없습니다.
+하지만 `dropNewTokens`는 그렇게 하지 않습니다. 이 함수는 `Transfer` 이벤트를 발생시키지만, 실제로는 어떤 토큰도 전송하지 않습니다. 실제로 일어나지 않은 전송을 알려 오프체인 애플리케이션을 혼란스럽게 할 합당한 이유는 없습니다.
 
 ### 소각하는 `Approve` 함수 {#the-burning-approve-function}
 
@@ -240,7 +240,7 @@ ERC-20 컨트랙트에는 허용량을 위한 [`approve` 함수](/developers/tut
 
 #### `mount` 함수 {#the-mount-function}
 
-[표준](https://eips.ethereum.org/EIPS/eip-20)에 명시되어 있지는 않지만, 일반적으로 새로운 토큰을 생성하는 함수는 [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn)라고 부릅니다.
+표준에 명시되어 있지는 않지만, 일반적으로 새로운 토큰을 생성하는 함수는 [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn)라고 부릅니다.
 
 `wARB` 생성자를 살펴보면, 어떤 이유에서인지 발행 함수가 `mount`로 이름이 변경되었으며, 효율성을 위해 전체 금액에 대해 한 번 호출하는 대신 초기 공급량의 5분의 1씩 다섯 번 호출되는 것을 볼 수 있습니다.
 
@@ -316,7 +316,7 @@ ERC-20 토큰이 발생시키는 이벤트를 살펴봄으로써 해당 토큰�
 
 ## 의심스러운 `Approval` 이벤트 {#suspicious-approval-events}
 
-[`Approval` 이벤트](https://eips.ethereum.org/EIPS/eip-20#approval)는 직접적인 요청이 있을 때만 발생해야 합니다(허용량의 결과로 발생할 수 있는 [`Transfer` 이벤트](https://eips.ethereum.org/EIPS/eip-20#transfer-1)와 대조됨). 이 문제에 대한 자세한 설명과 요청이 컨트랙트를 통해 매개되는 것이 아니라 직접적이어야 하는 이유에 대해서는 [Solidity 문서](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin)를 참조하세요.
+`Approval` 이벤트는 직접적인 요청이 있을 때만 발생해야 합니다(허용량의 결과로 발생할 수 있는 `Transfer` 이벤트와 대조됨). 이 문제에 대한 자세한 설명과 요청이 컨트랙트를 통해 매개되는 것이 아니라 직접적이어야 하는 이유에 대해서는 [Solidity 문서](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin)를 참조하세요.
 
 이는 [외부 소유 계정](/developers/docs/accounts/#types-of-account)의 지출을 승인하는 `Approval` 이벤트가 해당 계정에서 시작되고 목적지가 ERC-20 컨트랙트인 트랜잭션에서 발생해야 함을 의미합니다. 외부 소유 계정에서 발생하는 다른 종류의 승인은 모두 의심스럽습니다.
 
@@ -425,7 +425,7 @@ const txn = await getEventTxn(ev)
 if (owner.toLowerCase() != txn.from.toLowerCase()) return ev
 ```
 
-주소는 16진수이므로 문자를 포함하고 있어 단순히 문자열이 같은지만 확인할 수는 없습니다. 예를 들어 `txn.from`와 같이 문자가 모두 소문자인 경우도 있습니다. `ev.args._owner`와 같은 다른 경우에는 주소가 [오류 식별을 위해 대소문자가 혼합](https://eips.ethereum.org/EIPS/eip-55)되어 있습니다.
+주소는 16진수이므로 문자를 포함하고 있어 단순히 문자열이 같은지만 확인할 수는 없습니다. 예를 들어 `txn.from`와 같이 문자가 모두 소문자인 경우도 있습니다. `ev.args._owner`와 같은 다른 경우에는 주소가 오류 식별을 위해 대소문자가 혼합되어 있습니다.
 
 하지만 트랜잭션이 소유자로부터 온 것이 아니고 해당 소유자가 외부 소유 계정이라면, 이는 의심스러운 트랜잭션입니다.
 

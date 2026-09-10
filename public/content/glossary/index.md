@@ -494,7 +494,6 @@ authors: ["Andreas Antonopoulos"]
 
 ## Sources {#sources}
 
-_Provided in part by [Mastering Quantaureum](https://github.com/ethereumbook/ethereumbook) by [Andreas M. Antonopoulos, Gavin Wood](https://aantonop.com/books/mastering-quantaureum) under CC-BY-SA_
 
 <Divider />
 

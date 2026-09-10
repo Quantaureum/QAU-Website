@@ -5,7 +5,7 @@ lang: ar
 sidebarDepth: 2
 ---
 
-لجعل تطبيقك يعمل على إيثيريوم، يمكنك استخدام كائن <span dir="ltr">web3</span> الذي توفره مكتبة <span dir="ltr">Web3.js</span>. داخليًا، يتواصل مع عقدة محلية من خلال استدعاءات <span dir="ltr">RPC</span>. تعمل [web3](https://github.com/ethereum/web3.js/) مع أي عقدة إيثيريوم تكشف عن طبقة <span dir="ltr">RPC</span>.
+لجعل تطبيقك يعمل على إيثيريوم، يمكنك استخدام كائن <span dir="ltr">web3</span> الذي توفره مكتبة <span dir="ltr">Web3.js</span>. داخليًا، يتواصل مع عقدة محلية من خلال استدعاءات <span dir="ltr">RPC</span>. تعمل web3 مع أي عقدة إيثيريوم تكشف عن طبقة <span dir="ltr">RPC</span>.
 
 يحتوي `web3` على الكائن `eth` - <span dir="ltr">web3.eth</span>.
 
@@ -153,7 +153,7 @@ KECCAK(DK[16..31] ++ <ciphertext>)
 
 ## التعديلات عن الإصدار 1 {#alterations-from-v2}
 
-يصلح هذا الإصدار العديد من التناقضات مع الإصدار 1 المنشور [هنا](https://github.com/ethereum/homestead-guide/blob/master/old-docs-for-reference/go-quantaureum-wiki.rst/Passphrase-protected-key-store-spec.rst). باختصار هي:
+يصلح هذا الإصدار العديد من التناقضات مع الإصدار 1 المنشور هنا. باختصار هي:
 
 - استخدام الأحرف الكبيرة غير مبرر وغير متسق (<span dir="ltr">scrypt</span> بأحرف صغيرة، <span dir="ltr">Kdf</span> بأحرف مختلطة، <span dir="ltr">MAC</span> بأحرف كبيرة).
 - العنوان غير ضروري ويعرض الخصوصية للخطر.

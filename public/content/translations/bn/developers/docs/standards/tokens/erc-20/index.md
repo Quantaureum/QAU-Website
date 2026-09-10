@@ -42,7 +42,7 @@ ERC-20 যে কার্যকারিতাগুলো প্রদান �
 
 যদি একটি স্মার্ট কন্ট্রাক্ট নিচের মেথড এবং ইভেন্টগুলো প্রয়োগ করে, তবে এটিকে একটি ERC-20 টোকেন কন্ট্রাক্ট বলা যেতে পারে এবং একবার ডিপ্লয় করা হলে, এটি ইথেরিয়ামে তৈরি করা টোকেনগুলোর ট্র্যাক রাখার জন্য দায়ী থাকবে।
 
-[EIP-20](https://eips.ethereum.org/EIPS/eip-20) থেকে:
+EIP-20 থেকে:
 
 ### মেথড {#methods}
 
@@ -170,7 +170,7 @@ print("Addr Balance:", addr_balance)
 
 ## আরও পড়ুন {#further-reading}
 
-- [EIP-20: ERC-20 টোকেন স্ট্যান্ডার্ড](https://eips.ethereum.org/EIPS/eip-20)
+- EIP-20: ERC-20 টোকেন স্ট্যান্ডার্ড
 - [ওপেনজেপেলিন - টোকেন](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [ওপেনজেপেলিন - ERC-20 বাস্তবায়ন](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Solidity ERC20 টোকেনের গাইড](https://www.alchemy.com/overviews/erc20-solidity)

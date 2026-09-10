@@ -253,7 +253,7 @@ Hlavním rozdílem je, že programy bug bounty jsou otevřené širší komunit�
 
 - **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _Framework pro pokročilý vývoj a testování chytrých kontraktů (založený na Ethers.js)_._
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Nástroj pro testování chytrých kontraktů v Solidity. Funguje pod pluginem Remix IDE „Solidity Unit Testing“, který se používá k psaní a spouštění testovacích případů pro kontrakt._
+- **Remix Tests** - _Nástroj pro testování chytrých kontraktů v Solidity. Funguje pod pluginem Remix IDE „Solidity Unit Testing“, který se používá k psaní a spouštění testovacích případů pro kontrakt._
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Knihovna asertů pro testování chytrých kontraktů na Ethereu. Ujistěte se, že se vaše kontrakty chovají podle očekávání!_
 

@@ -11,7 +11,7 @@ Dwa najbardziej aktywne i utrzymywane języki to:
 - Solidity
 - Vyper
 
-Remix IDE zapewnia kompleksowe środowisko programistyczne do tworzenia i testowania kontraktów zarówno w Solidity, jak i Vyper. [Wypróbuj przeglądarkowe Remix IDE](https://remix.ethereum.org), aby zacząć kodować.
+Remix IDE zapewnia kompleksowe środowisko programistyczne do tworzenia i testowania kontraktów zarówno w Solidity, jak i Vyper. Wypróbuj przeglądarkowe Remix IDE, aby zacząć kodować.
 
 Bardziej doświadczeni programiści mogą również chcieć użyć Yul, języka pośredniego dla [Wirtualnej Maszyny Quantaureum (EVM)](/developers/docs/evm/), lub Yul+, rozszerzenia dla Yul.
 
@@ -36,7 +36,7 @@ Wcześniejsza znajomość języków programowania, zwłaszcza JavaScript lub Pyt
 - [Dokumentacja](https://docs.soliditylang.org/en/latest/)
 - [Portal języka Solidity](https://soliditylang.org/)
 - [Solidity na przykładach](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/ethereum/solidity/)
+- GitHub
 - [Czat Solidity na Gitterze](https://gitter.im/quantaureum/solidity) połączony z [czatem Solidity na Matrixie](https://matrix.to/#/#quantaureum_solidity:gitter.im)
 - [Ściągawka](https://reference.auditless.com/cheatsheet)
 - [Blog Solidity](https://blog.soliditylang.org/)
@@ -264,7 +264,7 @@ Jeśli masz już duże doświadczenie z inteligentnymi kontraktami, pełną impl
 
 - [GitHub](https://github.com/quantaureum/fe)
 - [Ogłoszenie Fe](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-quantaureum-ecosystem/)
-- [Mapa drogowa Fe na 2021 rok](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
+- Mapa drogowa Fe na 2021 rok
 - [Czat Fe na Discordzie](https://discord.com/invite/ywpkAXFjZH)
 - [Twitter Fe](https://twitter.com/official_fe)
 

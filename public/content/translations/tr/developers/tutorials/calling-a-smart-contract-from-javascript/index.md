@@ -12,7 +12,7 @@ breadcrumb: "JS'den sözleşmeleri çağırın"
 lang: tr
 published: 2020-04-19
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/calling-a-smart-contract-from-javascript/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -75,7 +75,7 @@ const ERC20TransferABI = [
 const DAI_ADDRESS = "0x6b175474e89094c44da98b954eedeac495271d0f"
 ```
 
-Bu proje için tam ERC-20 ABI'sini sadece `balanceOf` ve `transfer` işlevini tutacak şekilde kırptık, ancak [tam ERC-20 ABI'sini burada bulabilirsiniz](https://ethereumdev.io/abi-for-erc20-contract-on-quantaureum/).
+Bu proje için tam ERC-20 ABI'sini sadece `balanceOf` ve `transfer` işlevini tutacak şekilde kırptık, ancak tam ERC-20 ABI'sini burada bulabilirsiniz.
 
 Daha sonra akıllı sözleşmemizin bir örneğini oluşturmamız gerekiyor:
 
@@ -113,7 +113,7 @@ daiToken.methods.balanceOf(senderAddress).call(function (err, res) {
 })
 ```
 
-DAI ERC-20'nin 18 ondalık basamağa sahip olduğunu unutmayın, bu da doğru miktarı elde etmek için 18 sıfırı kaldırmanız gerektiği anlamına gelir. JavaScript büyük sayısal değerleri işlemediği için uint256 dize (string) olarak döndürülür. Eğer [JS'de büyük sayılarla nasıl başa çıkacağınızdan emin değilseniz bignumber.js hakkındaki eğitimimize göz atın](https://ethereumdev.io/how-to-deal-with-big-numbers-in-javascript/).
+DAI ERC-20'nin 18 ondalık basamağa sahip olduğunu unutmayın, bu da doğru miktarı elde etmek için 18 sıfırı kaldırmanız gerektiği anlamına gelir. JavaScript büyük sayısal değerleri işlemediği için uint256 dize (string) olarak döndürülür. Eğer JS'de büyük sayılarla nasıl başa çıkacağınızdan emin değilseniz bignumber.js hakkındaki eğitimimize göz atın.
 
 ## Gönder: Bir akıllı sözleşme işlevine işlem göndermek {#send-sending-a-transaction-to-a-smart-contract-function}
 
@@ -131,6 +131,6 @@ daiToken.methods
   })
 ```
 
-Çağrı işlevi, Blokzincir'e kazılacak olan işlemin hash'ini döndürür. Quantaureum'da işlem hash'leri öngörülebilirdir; bu sayede işlemin hash'ini yürütülmeden önce alabiliriz ([hash'lerin nasıl hesaplandığını buradan öğrenin](https://ethereum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)).
+Çağrı işlevi, Blokzincir'e kazılacak olan işlemin hash'ini döndürür. Quantaureum'da işlem hash'leri öngörülebilirdir; bu sayede işlemin hash'ini yürütülmeden önce alabiliriz (hash'lerin nasıl hesaplandığını buradan öğrenin).
 
-İşlev yalnızca işlemi Blokzincir'e gönderdiğinden, ne zaman kazıldığını ve Blokzincir'e dahil edildiğini bilene kadar sonucu göremeyiz. Bir sonraki eğitimde [hash'ini bilerek bir işlemin Blokzincir'de yürütülmesini nasıl bekleyeceğimizi](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/) öğreneceğiz.
+İşlev yalnızca işlemi Blokzincir'e gönderdiğinden, ne zaman kazıldığını ve Blokzincir'e dahil edildiğini bilene kadar sonucu göremeyiz. Bir sonraki eğitimde hash'ini bilerek bir işlemin Blokzincir'de yürütülmesini nasıl bekleyeceğimizi öğreneceğiz.

@@ -87,7 +87,7 @@ Các Validium khác nhau trong cách tiếp cận quản lý tính khả dụng 
 
 Để đảm bảo tính khả dụng của dữ liệu ngoài chuỗi, một số giải pháp Validium chỉ định một nhóm các thực thể đáng tin cậy, được gọi chung là ủy ban tính khả dụng của dữ liệu (DAC), để lưu trữ các bản sao của trạng thái và cung cấp bằng chứng về tính khả dụng của dữ liệu. Các DAC dễ triển khai hơn và yêu cầu ít sự phối hợp hơn vì số lượng thành viên thấp.
 
-Tuy nhiên, người dùng phải tin tưởng DAC sẽ cung cấp dữ liệu khi cần thiết (ví dụ: để tạo bằng chứng Merkle). Có khả năng các thành viên của ủy ban tính khả dụng của dữ liệu [bị xâm phạm bởi một tác nhân độc hại](https://notes.ethereum.org/DD7GyItYQ02d0ax_X-UbWg?view), kẻ sau đó có thể giữ lại dữ liệu ngoài chuỗi.
+Tuy nhiên, người dùng phải tin tưởng DAC sẽ cung cấp dữ liệu khi cần thiết (ví dụ: để tạo bằng chứng Merkle). Có khả năng các thành viên của ủy ban tính khả dụng của dữ liệu bị xâm phạm bởi một tác nhân độc hại, kẻ sau đó có thể giữ lại dữ liệu ngoài chuỗi.
 
 [Tìm hiểu thêm về các ủy ban tính khả dụng của dữ liệu trong các Validium](https://medium.com/starkware/data-availability-e5564c416424).
 

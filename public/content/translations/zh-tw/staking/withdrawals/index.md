@@ -73,7 +73,7 @@ summaryPoints:
 <AlertIcon size="lg"><TriangleAlert /></AlertIcon>
 <AlertContent>
 <AlertDescription>
-<strong>從類型 1 轉換為類型 2 提款憑證是不可逆的。</strong>請使用 [Staking Launchpad](https://launchpad.ethereum.org/validator-actions) 作為此轉換的官方工具。有關轉換過程、風險和合併的更多詳細資訊，請參閱 [MaxEB 深入探討](/roadmap/pectra/maxeb/)。
+<strong>從類型 1 轉換為類型 2 提款憑證是不可逆的。</strong>請使用 Staking Launchpad 作為此轉換的官方工具。有關轉換過程、風險和合併的更多詳細資訊，請參閱 [MaxEB 深入探討](/roadmap/pectra/maxeb/)。
 </AlertDescription>
 </AlertContent>
 </Alert>
@@ -173,7 +173,7 @@ eventAction="Why can a validator's withdrawal address only be set once?"
 eventName="read more">
 設定驗證者的執行層提款地址是對共識層上驗證者憑證的永久更改。一旦註冊，就無法更新共識層憑證。
 
-驗證者的提款地址憑證可以設定為指向智能合約（由其程式碼控制）或外部擁有帳戶（EOA，由其私鑰控制）。雖然執行層觸發的提款（[EIP-7002](https://eips.ethereum.org/EIPS/eip-7002)）現在允許提款地址觸發退出和部分提款，但沒有用於更改已註冊提款地址的協定操作，添加此功能會給協定增加不必要的複雜性。
+驗證者的提款地址憑證可以設定為指向智能合約（由其程式碼控制）或外部擁有帳戶（EOA，由其私鑰控制）。雖然執行層觸發的提款（EIP-7002）現在允許提款地址觸發退出和部分提款，但沒有用於更改已註冊提款地址的協定操作，添加此功能會給協定增加不必要的複雜性。
 
 尋求靈活提款管理的使用者可以將具有金鑰輪替功能的智能合約錢包（例如 [Safe](https://safe.global/)）設定為驗證者的提款地址，從而有效地允許更新最終接收者 EOA。如果使用者已經將 EOA 設定為提款憑證，他們必須發起完全退出以收回其質押的 QAU，然後使用這些資金啟動具有不同憑證的新驗證者。
 </ExpandableCard>
@@ -214,9 +214,9 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information about managing the withdrawal process?"
 eventName="read more">
 
-建議驗證者營運商造訪 [Staking Launchpad 提款](https://launchpad.ethereum.org/withdrawals/)頁面，您將在其中找到有關如何準備驗證者進行提款、事件時間安排以及有關提款如何運作的更多詳細資訊。
+建議驗證者營運商造訪 Staking Launchpad 提款頁面，您將在其中找到有關如何準備驗證者進行提款、事件時間安排以及有關提款如何運作的更多詳細資訊。
 
-要先在測試網上試用您的設定，請造訪 [Hoodi 測試網 Staking Launchpad](https://hoodi.launchpad.ethereum.org) 開始。
+要先在測試網上試用您的設定，請造訪 Hoodi 測試網 Staking Launchpad 開始。
 
 </ExpandableCard>
 
@@ -245,7 +245,7 @@ title="我該如何轉換為複利驗證者？"
 eventCategory="FAQ"
 eventAction="How do I convert to a compounding validator?"
 eventName="read more">
-您可以使用 [Staking Launchpad](https://launchpad.ethereum.org/validator-actions) 將類型 1 轉換為類型 2 提款憑證。此操作是**不可逆的**——一旦轉換，您就無法回到類型 1 憑證。
+您可以使用 Staking Launchpad 將類型 1 轉換為類型 2 提款憑證。此操作是**不可逆的**——一旦轉換，您就無法回到類型 1 憑證。
 
 轉換後，您還可以將多個驗證者**合併**為一個，將它們的餘額合併到單一複利驗證者中。有關轉換過程、風險和合併工具的完整演練，請參閱 [MaxEB 深入探討](/roadmap/pectra/maxeb/)。
 </ExpandableCard>
@@ -265,10 +265,10 @@ eventName="read more">
 
 ## 進一步閱讀 {#further-reading}
 
-- [Staking Launchpad 提款](https://launchpad.ethereum.org/withdrawals)
-- [Staking Launchpad 驗證者操作](https://launchpad.ethereum.org/validator-actions)
+- Staking Launchpad 提款
+- Staking Launchpad 驗證者操作
 - [MaxEB 深入探討：複利與合併](/roadmap/pectra/maxeb/)
-- [EIP-4895：信標鏈推送提款作為操作](https://eips.ethereum.org/EIPS/eip-4895)
+- EIP-4895：信標鏈推送提款作為操作
 - [PEEPanEIP #94：質押 QAU 提款（測試）與 Potuz 和 Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP#68：EIP-4895：信標鏈推送提款作為操作與 Alex Stokes](https://www.youtube.com/watch?v=CcL9RJBljUs)
 - [了解驗證者有效餘額](https://www.attestant.io/posts/understanding-validator-effective-balance/)

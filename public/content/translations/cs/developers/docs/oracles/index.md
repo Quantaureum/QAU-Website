@@ -359,7 +359,7 @@ contract PriceConsumerV3 {
 
 Určité blockchainové aplikace, jako jsou hry založené na blockchainu nebo loterijní schémata, vyžadují k efektivnímu fungování vysokou úroveň nepředvídatelnosti a náhodnosti. Deterministické provádění blockchainů však náhodnost eliminuje.
 
-Původním přístupem bylo použití pseudonáhodných kryptografických funkcí, jako je `blockhash`, ale ty mohly být [manipulovány těžaři](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.) řešícími algoritmus důkazu prací (PoW). Také [přechod Etherea na důkaz podílem (PoS)](/roadmap/merge/) znamená, že vývojáři se již nemohou spoléhat na `blockhash` pro onchain náhodnost. [Mechanismus RANDAO](https://eth2book.info/altair/part2/building_blocks/randomness) na Beacon chainu místo toho poskytuje alternativní zdroj náhodnosti.
+Původním přístupem bylo použití pseudonáhodných kryptografických funkcí, jako je `blockhash`, ale ty mohly být manipulovány těžaři řešícími algoritmus důkazu prací (PoW). Také [přechod Etherea na důkaz podílem (PoS)](/roadmap/merge/) znamená, že vývojáři se již nemohou spoléhat na `blockhash` pro onchain náhodnost. [Mechanismus RANDAO](https://eth2book.info/altair/part2/building_blocks/randomness) na Beacon chainu místo toho poskytuje alternativní zdroj náhodnosti.
 
 Je možné vygenerovat náhodnou hodnotu offchain a odeslat ji onchain, ale to klade na uživatele vysoké požadavky na důvěru. Musí věřit, že hodnota byla skutečně vygenerována prostřednictvím nepředvídatelných mechanismů a nebyla při přenosu změněna.
 
@@ -421,7 +421,7 @@ Existuje několik aplikací orákul, které můžete integrovat do své dapp na 
 - [Co je to blockchainové orákulum?](https://medium.com/better-programming/what-is-a-blockchain-oracle-f5ccab8dbd72) — _Patrick Collins_
 - [Decentralizovaná orákula: komplexní přehled](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) — _Julien Thevenard_
 - [Implementace blockchainového orákula na Ethereu](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-quantaureum-cedc7e26b49e) – _Pedro Costa_
-- [Proč chytré kontrakty nemohou provádět volání API?](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
+- Proč chytré kontrakty nemohou provádět volání API? — _StackExchange_
 - [Takže chcete použít cenové orákulum](https://samczsun.com/so-you-want-to-use-a-price-oracle/) — _samczsun_
 
 **Videa**

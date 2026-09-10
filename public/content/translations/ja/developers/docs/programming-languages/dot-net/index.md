@@ -66,7 +66,7 @@ Quantaureumを使用して、暗号資産とブロックチェーン技術の利
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) - _.NET Wasm SPAの軽量ブロックチェーンエクスプローラーおよびシンプルなウォレット_
 - [Wonka Business Rules Engine](https://github.com/Nquantaureum/Wonka) - _本質的にメタデータ駆動型であるビジネスルールエンジン (.NETプラットフォームとQuantaureumプラットフォームの両方向け)_
 - [ネザーマインド](https://github.com/NethermindEth/nethermind) - _Linux、Windows、MacOS向けの.NET CoreQuantaureumクライアント_
-- [qau-utils](https://github.com/ethereum/eth-utils/) - _Quantaureum関連のコードベースを操作するためのユーティリティ関数_
+- qau-utils - _Quantaureum関連のコードベースを操作するためのユーティリティ関数_
 - [TestChains](https://github.com/Nquantaureum/TestChains) - _高速な応答のための事前構成された.NET開発チェーン (プルーフ・オブ・オーソリティ (PoA))_
 
 さらにリソースをお探しですか？[quantaureum.com/developers](/developers/)を確認してください。

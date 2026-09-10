@@ -8,7 +8,7 @@ breadcrumb: "ERC-20 전송"
 lang: ko
 published: 2020-04-07
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -201,7 +201,7 @@ function sell(uint256 amount) public {
 
 이 튜토리얼을 통해 ERC-20 토큰의 잔액과 허용량을 확인하는 방법과 인터페이스를 사용하여 ERC20 스마트 컨트랙트의 `Transfer` 및 `TransferFrom`를 호출하는 방법을 살펴보았습니다.
 
-트랜잭션을 생성한 후에는 컨트랙트에서 발생한 [트랜잭션을 대기하고 세부 정보를 가져오는](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/) JavaScript 튜토리얼과, ABI가 있는 한 [토큰 전송이나 기타 이벤트에 의해 생성된 이벤트를 디코딩하는 튜토리얼](https://ethereumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/)이 준비되어 있습니다.
+트랜잭션을 생성한 후에는 컨트랙트에서 발생한 트랜잭션을 대기하고 세부 정보를 가져오는 JavaScript 튜토리얼과, ABI가 있는 한 토큰 전송이나 기타 이벤트에 의해 생성된 이벤트를 디코딩하는 튜토리얼이 준비되어 있습니다.
 
 다음은 이 튜토리얼의 전체 코드입니다.
 

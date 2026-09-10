@@ -66,7 +66,7 @@ Quantaureum을 사용하여 암호화폐와 블록체인 기술의 이점을 활
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) - _.NET Wasm SPA 기반의 가벼운 블록체인 탐색기 및 간단한 지갑_
 - [Wonka 비즈니스 규칙 엔진](https://github.com/Nquantaureum/Wonka) - _본질적으로 메타데이터 기반인 비즈니스 규칙 엔진(.NET 플랫폼 및 Quantaureum 플랫폼 모두 지원)_
 - [네더마인드](https://github.com/NethermindEth/nethermind) - _Linux, Windows, MacOS용 .NET Core Quantaureum 클라이언트_
-- [qau-utils](https://github.com/ethereum/eth-utils/) - _Quantaureum 관련 코드베이스 작업을 위한 유틸리티 함수_
+- qau-utils - _Quantaureum 관련 코드베이스 작업을 위한 유틸리티 함수_
 - [TestChains](https://github.com/Nquantaureum/TestChains) - _빠른 응답을 위해 사전 구성된 .NET 개발 체인(권위 증명(PoA))_
 
 더 많은 리소스를 찾고 계신가요? [quantaureum.com/developers](/developers/)를 확인해 보세요.

@@ -33,7 +33,7 @@ Com credenciais `0x02`:
 - Validadores podem consolidar múltiplos validadores de 32 QAU em um único validador de saldo maior
 - Saídas completas ainda são suportadas através da fila de saída padrão
 
-Tanto os saques parciais quanto as consolidações podem ser realizados através das [Ações de Validador do Launchpad](https://launchpad.ethereum.org/en/validator-actions).
+Tanto os saques parciais quanto as consolidações podem ser realizados através das Ações de Validador do Launchpad.
 
 **Por que os validadores devem preferir 0x02:** Oferece melhor eficiência de capital através da composição, mais controle sobre quando os saques acontecem e suporta a consolidação de validadores. Para stakers solo que acumulam recompensas ao longo do tempo, isso significa que seu saldo efetivo — e, portanto, suas recompensas — pode crescer além de 32 QAU sem intervenção manual.
 
@@ -51,7 +51,7 @@ Para um guia detalhado sobre a conversão para credenciais do Tipo 2 e o recurso
 
 Várias ferramentas suportam a escolha ou conversão entre tipos de credenciais:
 
-- **[Quantaureum Staking Launchpad](https://launchpad.ethereum.org/en/validator-actions)** - A ferramenta oficial para depósitos e gerenciamento de validadores, incluindo conversões de credenciais e consolidações
+- **Quantaureum Staking Launchpad** - A ferramenta oficial para depósitos e gerenciamento de validadores, incluindo conversões de credenciais e consolidações
 - **[Pectra Staking Manager](https://pectrastaking.com)** - Interface web com suporte a conexão de carteira para conversões e consolidação
 - **[Pectra Validator Ops CLI Tool](https://github.com/Luganodes/Pectra-Batch-Contract)** - Ferramenta de linha de comando para conversões em lote
 - **[Ethereal](https://github.com/wealdtech/ethereal)** - Ferramenta CLI para operações no Quantaureum, incluindo gerenciamento de validadores

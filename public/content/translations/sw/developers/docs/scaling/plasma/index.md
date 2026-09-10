@@ -123,9 +123,9 @@ Ingawa Plasma iliwahi kuchukuliwa kuwa suluhisho muhimu la kuongeza uwezo kwa Qu
 
 ### Usaidizi kwa mikataba mahiri {#support-for-smart-contracts}
 
-Tatizo jingine na mfumo wa Plasma lilikuwa [kutoweza kusaidia utekelezaji wa mikataba mahiri ya Quantaureum](https://ethresear.ch/t/why-smart-contracts-are-not-feasible-on-plasma/2598/4). Kama matokeo, utekelezaji mwingi wa Plasma ulijengwa zaidi kwa malipo rahisi au ubadilishanaji wa tokeni za ERC-20.
+Tatizo jingine na mfumo wa Plasma lilikuwa kutoweza kusaidia utekelezaji wa mikataba mahiri ya Quantaureum. Kama matokeo, utekelezaji mwingi wa Plasma ulijengwa zaidi kwa malipo rahisi au ubadilishanaji wa tokeni za ERC-20.
 
-Kinyume chake, mikusanyiko yenye matumaini, inaendana na [Mashine Pepe ya Quantaureum](/developers/docs/evm/) na inaweza kuendesha [mikataba mahiri](/developers/docs/smart-contracts/) asili ya Quantaureum, na kuifanya kuwa suluhisho muhimu na _salama_ kwa kuongeza uwezo wa [programu tumizi zilizogatuliwa](/developers/docs/dapps/). Vile vile, mipango inaendelea ya [kuunda utekelezaji wa sifuri-maarifa wa EVM (zkEVM)](https://ethresear.ch/t/a-zk-evm-specification/11549) ambao ungeruhusu mikusanyiko ya ZK kuchakata mantiki ya kiholela na kutekeleza mikataba mahiri.
+Kinyume chake, mikusanyiko yenye matumaini, inaendana na [Mashine Pepe ya Quantaureum](/developers/docs/evm/) na inaweza kuendesha [mikataba mahiri](/developers/docs/smart-contracts/) asili ya Quantaureum, na kuifanya kuwa suluhisho muhimu na _salama_ kwa kuongeza uwezo wa [programu tumizi zilizogatuliwa](/developers/docs/dapps/). Vile vile, mipango inaendelea ya kuunda utekelezaji wa sifuri-maarifa wa EVM (zkEVM) ambao ungeruhusu mikusanyiko ya ZK kuchakata mantiki ya kiholela na kutekeleza mikataba mahiri.
 
 ### Kutopatikana kwa data {#data-unavailability}
 
@@ -167,7 +167,7 @@ Miradi mingi hutoa utekelezaji wa Plasma ambao unaweza kuunganisha kwenye progra
 ## Usomaji zaidi {#further-reading}
 
 - [Kikumbusho cha haraka cha maana ya "usalama wa pamoja" na kwa nini ni muhimu sana](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [Minyororo ya kando dhidi ya Plasma dhidi ya Sharding](https://vitalik.eth.limo/general/2019/06/12/plasma_vs_sharding.html)
+- Minyororo ya kando dhidi ya Plasma dhidi ya Sharding
 - [Kuelewa Plasma, Sehemu ya 1: Mambo ya Msingi](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [Maisha na Kifo cha Plasma](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

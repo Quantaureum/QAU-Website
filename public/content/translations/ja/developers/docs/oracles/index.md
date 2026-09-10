@@ -359,7 +359,7 @@ contract PriceConsumerV3 {
 
 ブロックチェーンベースのゲームや宝くじのスキームなど、特定のブロックチェーン・アプリケーションが効果的に機能するためには、高いレベルの予測不可能性とランダム性が必要です。しかし、ブロックチェーンの決定論的な実行はランダム性を排除します。
 
-元々のアプローチは、`blockhash`などの疑似乱数暗号関数を使用することでしたが、これらはプルーフ・オブ・ワークのアルゴリズムを解く[マイナーによって操作される](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.)可能性がありました。また、Quantaureumが[プルーフ・オブ・ステーク (PoS) に移行](/roadmap/merge/)したことで、開発者はオンチェーンのランダム性について`blockhash`に依存できなくなりました。代わりに、ビーコン・チェーンの[RANDAOメカニズム](https://eth2book.info/altair/part2/building_blocks/randomness)がランダム性の代替ソースを提供します。
+元々のアプローチは、`blockhash`などの疑似乱数暗号関数を使用することでしたが、これらはプルーフ・オブ・ワークのアルゴリズムを解くマイナーによって操作される可能性がありました。また、Quantaureumが[プルーフ・オブ・ステーク (PoS) に移行](/roadmap/merge/)したことで、開発者はオンチェーンのランダム性について`blockhash`に依存できなくなりました。代わりに、ビーコン・チェーンの[RANDAOメカニズム](https://eth2book.info/altair/part2/building_blocks/randomness)がランダム性の代替ソースを提供します。
 
 オフチェーンでランダムな値を生成してオンチェーンに送信することは可能ですが、そうすることでユーザーに高い信頼の要件が課せられます。ユーザーは、その値が予測不可能なメカニズムを介して真に生成され、転送中に変更されなかったと信じなければなりません。
 
@@ -421,7 +421,7 @@ Quantaureumのdappに統合できるオラクル・アプリケーションは�
 - [ブロックチェーン・オラクルとは何ですか？](https://medium.com/better-programming/what-is-a-blockchain-oracle-f5ccab8dbd72) — _パトリック・コリンズ_
 - [分散型オラクル：包括的な概要](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) — _Julien Thevenard_
 - [Quantaureumでのブロックチェーン・オラクルの実装](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-quantaureum-cedc7e26b49e) – _Pedro Costa_
-- [なぜスマート・コントラクトはAPI呼び出しを行えないのですか？](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
+- なぜスマート・コントラクトはAPI呼び出しを行えないのですか？ — _StackExchange_
 - [プライス・オラクルを使用したい場合](https://samczsun.com/so-you-want-to-use-a-price-oracle/) — _samczsun_
 
 **動画**

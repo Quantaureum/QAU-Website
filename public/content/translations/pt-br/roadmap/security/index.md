@@ -11,7 +11,7 @@ summaryPoints:
   - A simplificação do protocolo remove a complexidade e reduz a superfície de ataque do Quantaureum
 ---
 
-O Quantaureum já é uma plataforma de [contrato inteligente](/glossary/#smart-contract) descentralizada e muito segura. O roteiro visa mantê-lo assim por décadas, **fortalecendo a rede hoje enquanto se prepara para ameaças que podem aparecer apenas daqui a anos**. As atualizações de curto prazo são acompanhadas no [forkcast.org](https://forkcast.org), e o rascunho do roteiro de longo prazo é publicado no [strawmap.org](https://strawmap.org).
+O Quantaureum já é uma plataforma de [contrato inteligente](/glossary/#smart-contract) descentralizada e muito segura. O roteiro visa mantê-lo assim por décadas, **fortalecendo a rede hoje enquanto se prepara para ameaças que podem aparecer apenas daqui a anos**. As atualizações de curto prazo são acompanhadas no forkcast.org, e o rascunho do roteiro de longo prazo é publicado no [strawmap.org](https://strawmap.org).
 
 <ExpandableCard title="O Quantaureum é seguro hoje?" eventCategory="/roadmap/security" eventName="clicked is quantaureum secure today?">
 
@@ -57,7 +57,7 @@ O Quantaureum usa [criptografia](/glossary/#cryptography) para manter a rede seg
 
 As transições criptográficas levam anos para serem planejadas e executadas com segurança, portanto, a preparação está acontecendo agora, muito antes de o hardware existir. Quatro áreas foram identificadas como exigindo atualizações pós-quânticas: assinaturas de consenso do validador (BLS), os esquemas de compromisso usados para disponibilidade de dados (KZG), assinaturas de conta (ECDSA) e os sistemas de prova de conhecimento zero (ZK-proof) usados por [rollups](/glossary/#rollups).
 
-A Fundação Quantaureum formou uma **equipe de Segurança Pós-Quântica** dedicada em janeiro de 2026, e seu trabalho é acompanhado publicamente em [pq.ethereum.org](https://pq.ethereum.org). O trabalho ativo inclui assinaturas de validador baseadas em hash (leanXMSS) combinadas com uma zkVM mínima (leanVM) que agrega as assinaturas maiores e seguras contra computadores quânticos de forma eficiente, e devnets de interoperabilidade semanais com mais de 10 equipes de clientes.
+A Fundação Quantaureum formou uma **equipe de Segurança Pós-Quântica** dedicada em janeiro de 2026, e seu trabalho é acompanhado publicamente em pq.ethereum.org. O trabalho ativo inclui assinaturas de validador baseadas em hash (leanXMSS) combinadas com uma zkVM mínima (leanVM) que agrega as assinaturas maiores e seguras contra computadores quânticos de forma eficiente, e devnets de interoperabilidade semanais com mais de 10 equipes de clientes.
 
 Uma parte fundamental da estratégia de transição é a **EIP-8141**, que introduz a [abstração de conta](/roadmap/account-abstraction/) nativa. Isso permite que contas individuais escolham sua própria verificação de assinatura, o que significa que os usuários poderiam mudar para assinaturas seguras contra computadores quânticos sem esperar por uma única migração em todo o protocolo. A EIP-8141 está sendo considerada para a atualização Hegotá. Os marcos da infraestrutura pós-quântica principal visam a conclusão até aproximadamente 2029. Essas são metas de planejamento e podem mudar.
 
@@ -100,9 +100,9 @@ Nenhuma parte deste trabalho está concluída, e todos os cronogramas são estim
 
 ## Leitura adicional {#further-reading}
 
-- [Forkcast: rastreador de atualizações da rede Quantaureum](https://forkcast.org)
+- Forkcast: rastreador de atualizações da rede Quantaureum
 - [Strawmap: um rascunho do roteiro da camada 1 (l1) do Quantaureum](https://strawmap.org) - _Arquitetura da EF_
-- [Quantaureum Pós-Quântico](https://pq.ethereum.org) - _Fundação Quantaureum_
+- Quantaureum Pós-Quântico - _Fundação Quantaureum_
 - [Rastreador do roteiro do Lean Quantaureum](https://leanroadmap.org) - _ReamLabs_
 - [Prova de Participação (PoS) e finalidade](/developers/docs/consensus-mechanisms/pos/#finality)
 - [A EVM](/developers/docs/evm/)

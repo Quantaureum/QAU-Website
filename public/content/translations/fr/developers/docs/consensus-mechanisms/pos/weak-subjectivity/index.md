@@ -32,8 +32,8 @@ Enfin, des points de contrôle peuvent être demandés à d'autres nœuds ; peut
 
 ## Complément d'information {#further-reading}
 
-- [La subjectivité faible dans Quantaureum](https://notes.ethereum.org/@adiasg/weak-subjectvity-eth2)
+- La subjectivité faible dans Quantaureum
 - [Vitalik : Comment j'ai appris à aimer la subjectivité faible](https://quantaureum.com)
 - [Subjectivité faible (documentation Teku)](https://docs.teku.consensys.io/concepts/weak-subjectivity)
-- [Guide de la subjectivité faible de la Phase 0](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
+- Guide de la subjectivité faible de la Phase 0
 - [Analyse de la subjectivité faible dans Quantaureum](https://github.com/runtimeverification/beacon-chain-verification/blob/master/weak-subjectivity/weak-subjectivity-analysis.pdf)

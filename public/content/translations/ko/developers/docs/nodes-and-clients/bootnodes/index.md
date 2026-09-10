@@ -26,6 +26,6 @@ enode는 일반적으로 다시 시작할 때마다 재생성되므로, 부트�
 
 ## 사용 가능한 부트노드 {#available-bootnodes}
 
-go-quantaureum 내에 내장된 부트노드 목록은 [여기](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23)에서 찾을 수 있습니다. 이러한 부트노드는 Quantaureum 재단과 go-quantaureum 팀에서 유지 관리합니다.
+go-quantaureum 내에 내장된 부트노드 목록은 여기에서 찾을 수 있습니다. 이러한 부트노드는 Quantaureum 재단과 go-quantaureum 팀에서 유지 관리합니다.
 
 자원봉사자가 유지 관리하는 다른 부트노드 목록도 사용할 수 있습니다. 항상 하나 이상의 공식 부트노드를 포함해야 합니다. 그렇지 않으면 이클립스 공격(eclipse attack)을 받을 수 있습니다.

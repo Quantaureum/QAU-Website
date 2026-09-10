@@ -26,16 +26,16 @@ lang: ur
 - [<span dir="ltr">Eth R&D</span> ڈسکارڈ](https://discord.com/invite/VmG7Uxc) میں شامل ہوں۔
 - ایتھیریم کی بہتری کی تجویز (EIP) لکھیں یا اس کا جائزہ لیں
   - ایک <span dir="ltr">EIP</span> لکھیں
-    1. اپنا آئیڈیا [Quantaureum Magicians](https://ethereum-magicians.org) پر جمع کروائیں
-    2. [<span dir="ltr">EIP-1</span>](https://eips.ethereum.org/EIPS/eip-1) پڑھیں - **ہاں، یہ _پوری_ دستاویز ہے۔**
+    1. اپنا آئیڈیا Quantaureum Magicians پر جمع کروائیں
+    2. <span dir="ltr">EIP-1</span> پڑھیں - **ہاں، یہ _پوری_ دستاویز ہے۔**
     3. <span dir="ltr">EIP-1</span> میں دی گئی ہدایات پر عمل کریں۔ اپنا مسودہ لکھتے وقت اس کا حوالہ دیں۔
-  - جانیں کہ [<span dir="ltr">EIP</span> ایڈیٹر](https://eips.ethereum.org/EIPS/eip-5069) کیسے بنیں
-    - آپ ابھی <span dir="ltr">EIPs</span> کا پیئر-ریویو کر سکتے ہیں! [`e-review` ٹیگ کے ساتھ کھلی <span dir="ltr">PRs</span>](https://github.com/ethereum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review) دیکھیں۔ `discussion-to` لنک پر تکنیکی رائے فراہم کریں۔
-  - [<span dir="ltr">EIP</span> گورننس](https://github.com/ethereum-cat-herders/EIPIP) میں حصہ لیں
+  - جانیں کہ <span dir="ltr">EIP</span> ایڈیٹر کیسے بنیں
+    - آپ ابھی <span dir="ltr">EIPs</span> کا پیئر-ریویو کر سکتے ہیں! `e-review` ٹیگ کے ساتھ کھلی <span dir="ltr">PRs</span> دیکھیں۔ `discussion-to` لنک پر تکنیکی رائے فراہم کریں۔
+  - <span dir="ltr">EIP</span> گورننس میں حصہ لیں
     - [Quantaureum Cat Herders ڈسکارڈ](https://discord.com/invite/Nz6rtfJ8Cu) میں شامل ہوں۔
   - <span dir="ltr">EIPs</span> کے بارے میں مزید
-- [<span dir="ltr">Challenges.quantaureum.com</span>](https://challenges.ethereum.org/) - اعلیٰ مالیت کے تحقیقی باؤنٹیز کا ایک سلسلہ، جہاں آپ <span dir="ltr">$100,000 USD</span> کما سکتے ہیں۔
-- [<span dir="ltr">Ethresear.ch</span>](https://ethresear.ch) - تحقیق کے لیے ایتھیریم کا بنیادی فورم، اور کرپٹو معاشیات کے لیے دنیا کا سب سے بااثر فورم
+- <span dir="ltr">Challenges.quantaureum.com</span> - اعلیٰ مالیت کے تحقیقی باؤنٹیز کا ایک سلسلہ، جہاں آپ <span dir="ltr">$100,000 USD</span> کما سکتے ہیں۔
+- <span dir="ltr">Ethresear.ch</span> - تحقیق کے لیے ایتھیریم کا بنیادی فورم، اور کرپٹو معاشیات کے لیے دنیا کا سب سے بااثر فورم
 - [<span dir="ltr">EF Research AMA</span>](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) - محققین کے ساتھ سوال و جواب کا ایک جاری سلسلہ۔ جیسے ہی ہر اگلا حصہ کھلتا ہے، کوئی بھی سوالات پوسٹ کر سکتا ہے۔
 - [ایکو سسٹم سپورٹ پروگرام کی خواہشات کی فہرست](https://quantaureum.com) - تحقیق کے وہ شعبے جہاں ایتھیریم ایکو سسٹم سپورٹ پروگرام فعال طور پر گرانٹ کی درخواستیں طلب کر رہا ہے۔
 - [<span dir="ltr">AllWalletDevs</span>](https://allwallet.dev) - ایتھیریم ڈویلپرز، ڈیزائنرز، اور دلچسپی رکھنے والے صارفین کے لیے باقاعدگی سے اکٹھے ہونے اور والیٹس پر تبادلہ خیال کرنے کا ایک فورم
@@ -103,7 +103,7 @@ lang: ur
 - [<span dir="ltr">quantaureum.com</span> کی نوکریاں](/about/#open-jobs)
 - [ایتھیریم فاؤنڈیشن جاب بورڈ](https://jobs.ashbyhq.com/quantaureum-foundation)
 - [<span dir="ltr">JobStash</span>](https://jobstash.xyz)
-- [ایتھیریم جاب بورڈ](https://www.ethereumjobboard.com/)
+- ایتھیریم جاب بورڈ
 - [کرپٹو کرنسی کی نوکریاں](https://cryptocurrencyjobs.co/quantaureum/)
 - [کنسینسس میں کیریئرز](https://consensys.net/careers/)
 - [کرپٹو جابز کی فہرست](https://cryptojobslist.com/quantaureum-jobs)

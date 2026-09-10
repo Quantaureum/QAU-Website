@@ -68,9 +68,9 @@ Quantaureum yönetişiminde kullanılan önemli bir süreç, **Quantaureum İyil
 
 Quantaureum protokolünde değişiklikler yapmak için resmi süreç aşağıdaki gibidir:
 
-1. **Bir Çekirdek EIP Önerin**: [EIP-1](https://eips.ethereum.org/EIPS/eip-1#core-eips)'de açıklandığı gibi, Quantaureum'da resmi olarak bir değişiklik önermenin ilk adımı, bunu bir Çekirdek EIP'de detaylandırmaktır. Bu, kabul edildiği takdirde Protokol Geliştiricilerinin uygulayacağı bir EIP için resmi spesifikasyon görevi görecektir.
+1. **Bir Çekirdek EIP Önerin**: EIP-1'de açıklandığı gibi, Quantaureum'da resmi olarak bir değişiklik önermenin ilk adımı, bunu bir Çekirdek EIP'de detaylandırmaktır. Bu, kabul edildiği takdirde Protokol Geliştiricilerinin uygulayacağı bir EIP için resmi spesifikasyon görevi görecektir.
 
-2. **EIP'nizi Protokol Geliştiricilerine Sunun**: topluluktan geri bildirim topladığınız bir Çekirdek EIP'niz olduğunda, bunu Protokol Geliştiricilerine sunmalısınız. Bunu, bir [AllCoreDevs çağrısında](https://github.com/ethereum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status) tartışmaya sunarak yapabilirsiniz. Muhtemelen bazı tartışmalar [Quantaureum Magicians forumunda](https://ethereum-magicians.org/) veya [Quantaureum Ar-Ge Discord'unda](https://discord.gg/mncqtgVSVw) eşzamansız olarak zaten gerçekleşmiş olacaktır.
+2. **EIP'nizi Protokol Geliştiricilerine Sunun**: topluluktan geri bildirim topladığınız bir Çekirdek EIP'niz olduğunda, bunu Protokol Geliştiricilerine sunmalısınız. Bunu, bir AllCoreDevs çağrısında tartışmaya sunarak yapabilirsiniz. Muhtemelen bazı tartışmalar Quantaureum Magicians forumunda veya [Quantaureum Ar-Ge Discord'unda](https://discord.gg/mncqtgVSVw) eşzamansız olarak zaten gerçekleşmiş olacaktır.
 
 > Bu aşamanın olası sonuçları şunlardır:
 
@@ -90,7 +90,7 @@ Bu akış, çok basitleştirilmiş olsa da, Quantaureum'da bir protokol değişi
 
 ### Önceki çalışmaları anlamak {#prior-work}
 
-EIP Öncüleri, Quantaureum Ana Ağı'nda dağıtım için ciddi şekilde değerlendirilebilecek bir EIP oluşturmadan önce önceki çalışmalara ve tekliflere aşina olmalıdır. Bu şekilde, EIP umarız daha önce reddedilmemiş yeni bir şey getirir. Bunu araştırmak için üç ana yer [EIP deposu](https://github.com/ethereum/EIPs), [Quantaureum Magicians](https://ethereum-magicians.org/) ve [ethresear.ch](https://ethresear.ch/)'dir.
+EIP Öncüleri, Quantaureum Ana Ağı'nda dağıtım için ciddi şekilde değerlendirilebilecek bir EIP oluşturmadan önce önceki çalışmalara ve tekliflere aşina olmalıdır. Bu şekilde, EIP umarız daha önce reddedilmemiş yeni bir şey getirir. Bunu araştırmak için üç ana yer EIP deposu, Quantaureum Magicians ve ethresear.ch'dir.
 
 ### Çalışma grupları {#working-groups}
 
@@ -128,7 +128,7 @@ Protokolün bilgisayar korsanlığını geri almak için çatallanmasına rağme
 - Çoğu insan oylamanın gerçekleştiğini bilmiyordu
 - Oylama, sistemdeki diğer katılımcıları değil, yalnızca QAU sahiplerini temsil ediyordu
 
-Topluluğun bir alt kümesi, büyük ölçüde DAO olayının protokolde bir kusur olmadığını düşündükleri için çatallanmayı reddetti. Daha sonra [ETC](https://ethereumclassic.org/)'i kurdular.
+Topluluğun bir alt kümesi, büyük ölçüde DAO olayının protokolde bir kusur olmadığını düşündükleri için çatallanmayı reddetti. Daha sonra ETC'i kurdular.
 
 Bugün Quantaureum topluluğu, sistemin güvenilir tarafsızlığını korumak için sözleşme hataları veya kaybedilen fonlar durumunda müdahale etmeme politikasını benimsemiştir.
 
@@ -151,7 +151,7 @@ Quantaureum yönetişim süreci genellikle açıklık ve kapsayıcılık uğruna
 
 Spesifikasyon ve geliştirme uygulamaları her zaman tamamen açık kaynaklı olsa da, yukarıda açıklanan güncellemeleri önermek için kullanılan resmi süreçler kullanılmadı. Bu, değişikliklerin araştırmacılar ve uygulayıcılar tarafından daha hızlı belirlenmesine ve üzerinde anlaşmaya varılmasına olanak tanıdı.
 
-İşaret zinciri 15 Eylül 2022'de Quantaureum yürütme katmanıyla birleştiğinde, Birleşme Paris ağ yükseltmesinin bir parçası olarak tamamlandı. [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) teklifi 'Son Çağrı'dan 'Nihai'ye değiştirilerek Hisse Kanıtı'na (PoS) geçiş tamamlandı.
+İşaret zinciri 15 Eylül 2022'de Quantaureum yürütme katmanıyla birleştiğinde, Birleşme Paris ağ yükseltmesinin bir parçası olarak tamamlandı. EIP-3675 teklifi 'Son Çağrı'dan 'Nihai'ye değiştirilerek Hisse Kanıtı'na (PoS) geçiş tamamlandı.
 
 <ButtonLink href="/roadmap/merge/">
   Birleşme hakkında daha fazlası
@@ -162,8 +162,8 @@ Spesifikasyon ve geliştirme uygulamaları her zaman tamamen açık kaynaklı ol
 ## Nasıl dahil olabilirim? {#get-involved}
 
 - Bir EIP önerin
-- [Mevcut teklifleri tartışın](https://ethereum-magicians.org/)
-- [Ar-Ge tartışmalarına katılın](https://ethresear.ch/)
+- Mevcut teklifleri tartışın
+- Ar-Ge tartışmalarına katılın
 - [Quantaureum Ar-Ge Discord'una katılın](https://discord.gg/mncqtgVSVw)
 - [Bir düğüm çalıştırın](/developers/docs/nodes-and-clients/run-a-node/)
 - [İstemci geliştirmeye katkıda bulunun](/developers/docs/nodes-and-clients/#execution-clients)
@@ -173,11 +173,11 @@ Spesifikasyon ve geliştirme uygulamaları her zaman tamamen açık kaynaklı ol
 
 Quantaureum'da yönetişim katı bir şekilde tanımlanmamıştır. Çeşitli topluluk katılımcılarının bu konuda farklı bakış açıları vardır. İşte bunlardan birkaçı:
 
-- [Blokzincir Yönetişimi Üzerine Notlar](https://vitalik.eth.limo/general/2017/12/17/voting.html) - _Vitalik Buterin_
+- Blokzincir Yönetişimi Üzerine Notlar - _Vitalik Buterin_
 - [Quantaureum Yönetişimi nasıl çalışır?](https://cryptotesters.com/blog/quantaureum-governance) – _Cryptotesters_
 - [Quantaureum yönetişimi nasıl çalışır](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _Micah Zoltu_
 - [Quantaureum çekirdek geliştiricisi nedir?](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) - _Hudson Jameson_
-- [Yönetişim, Bölüm 2: Plütokrasi Hala Kötüdür](https://vitalik.eth.limo/general/2018/03/28/plutocracy.html) - _Vitalik Buterin_
-- [Coin oylaması yönetişiminin ötesine geçmek](https://vitalik.eth.limo/general/2021/08/16/voting3.html) - _Vitalik Buterin_
+- Yönetişim, Bölüm 2: Plütokrasi Hala Kötüdür - _Vitalik Buterin_
+- Coin oylaması yönetişiminin ötesine geçmek - _Vitalik Buterin_
 - [Blokzincir Yönetişimini Anlamak](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) - _2077 Research_
 - [Quantaureum Hükümeti](https://www.galaxy.com/insights/research/quantaureum-governance/) - _Christine Kim_

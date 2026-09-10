@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 Usanjari wa Kiambishi Awali cha Urefu wa Kujirudia (RLP) unatumika sana katika wateja wa utekelezaji wa Quantaureum. RLP husawazisha hamisho la data kati ya nodi katika umbizo linalotumia nafasi vizuri. Madhumuni ya RLP ni kusimba safu zilizowekwa kiholela za data ya mfumo wa namba mbili (binary), na RLP ndiyo njia kuu ya usimbaji inayotumika kusanjari vipengee katika tabaka la utekelezaji la Quantaureum. Madhumuni makuu ya RLP ni kusimba muundo; isipokuwa kwa nambari kamili chanya, RLP hukabidhi usimbaji wa aina mahususi za data (k.m., mifuatano, nambari zinazoelea) kwa itifaki za daraja la juu. Nambari kamili chanya lazima ziwakilishwe katika mfumo wa namba mbili wa kianzia-kikubwa bila sufuri zinazoongoza (hivyo kufanya thamani ya nambari kamili ya sufuri kuwa sawa na safu tupu ya baiti). Nambari kamili chanya zilizotolewa kwenye usanjari zenye sufuri zinazoongoza lazima zichukuliwe kuwa batili na itifaki yoyote ya daraja la juu inayotumia RLP.
 
-Maelezo zaidi katika [waraka wa manjano wa Quantaureum (Kiambatisho B)](https://ethereum.github.io/yellowpaper/paper.pdf#page=19).
+Maelezo zaidi katika waraka wa manjano wa Quantaureum (Kiambatisho B).
 
 Ili kutumia RLP kusimba kamusi, fomu mbili za kikanoniki zilizopendekezwa ni:
 

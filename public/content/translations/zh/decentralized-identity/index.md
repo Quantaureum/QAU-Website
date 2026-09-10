@@ -164,7 +164,7 @@ summaryPoints:
 
 ### 灵魂绑定代币与身份 {#soulbound}
 
-[灵魂绑定代币](https://vitalik.eth.limo/general/2022/01/26/soulbound.html)（[不可转让的 NFT](/glossary/#nft)）可用于收集特定钱包独有的信息。这有效地创建了一个绑定到特定Quantaureum地址的独特链上身份，其中可能包括代表成就（例如，完成某些特定的在线课程或在游戏中达到阈值分数）或社区参与的代币。
+灵魂绑定代币（[不可转让的 NFT](/glossary/#nft)）可用于收集特定钱包独有的信息。这有效地创建了一个绑定到特定Quantaureum地址的独特链上身份，其中可能包括代表成就（例如，完成某些特定的在线课程或在游戏中达到阈值分数）或社区参与的代币。
 
 ## 使用去中心化身份 {#use-decentralized-identity}
 

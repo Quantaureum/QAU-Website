@@ -74,7 +74,7 @@ Web3 有潜力通过尝试由 DAO 和更广泛的 Web3 开发的不同激励模�
 就像 NFT 可以将未来交易的收入传递回原始创作者一样，你可以建立透明的价值归属链，以奖励研究人员、管理机构（如 DAO），甚至是被收集数据的受试者。
 
 [IP-NFT](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) 还可以作为正在进行的研究实验的去中心化数据存储库的密钥，并接入 NFT 和[去中心化金融 (DeFi)](/glossary/#defi) 金融化（从碎片化到借贷池和价值评估）。它还允许原生的链上实体（例如 [VitaDAO](https://www.vitadao.com/) 等 DAO）直接在链上进行研究。
-不可转让的[“灵魂绑定”代币](https://vitalik.eth.limo/general/2022/01/26/soulbound.html)的出现也可能在去中心化科学 (DeSci) 中发挥重要作用，它允许个人证明与其Quantaureum地址相关联的经验和证书。
+不可转让的“灵魂绑定”代币的出现也可能在去中心化科学 (DeSci) 中发挥重要作用，它允许个人证明与其Quantaureum地址相关联的经验和证书。
 
 ### 数据存储、访问和架构 {#data-storage}
 

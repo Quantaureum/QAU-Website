@@ -193,7 +193,7 @@ This restriction makes perfect sense, because we wouldn't want random accounts t
 
 A function to transfer from a pool account to an array of receivers an array of amounts makes perfect sense. There are many use cases in which you'll want to distribute tokens from a single source to multiple destinations, such as payroll, airdrops, etc. It is cheaper (in gas) to do in a single transaction instead of issuing multiple transactions, or even calling the ERC-20 multiple times from a different contract as part of the same transaction.
 
-However, `dropNewTokens` doesn't do that. It emits [`Transfer` events](https://eips.ethereum.org/EIPS/eip-20#transfer-1), but does not actually transfer any tokens. There is no legitimate reason to confuse offchain applications by telling them of a transfer that did not really happen.
+However, `dropNewTokens` doesn't do that. It emits `Transfer` events, but does not actually transfer any tokens. There is no legitimate reason to confuse offchain applications by telling them of a transfer that did not really happen.
 
 ### The burning `Approve` function {#the-burning-approve-function}
 
@@ -235,7 +235,7 @@ These code quality issues don't _prove_ that this code is a scam, but they make 
 
 #### The `mount` function {#the-mount-function}
 
-While it is not specified in [the standard](https://eips.ethereum.org/EIPS/eip-20), generally speaking the function that creates new tokens is called [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn).
+While it is not specified in the standard, generally speaking the function that creates new tokens is called [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn).
 
 If we look in the `wARB` constructor, we see the time mint function has been renamed to `mount` for some reason, and is called five times with a fifth of the initial supply, instead of once for the entire amount for efficiency.
 
@@ -311,7 +311,7 @@ There are some tricks we can use to identify that an ERC-20 token is suspicious 
 
 ## Suspicious `Approval` events {#suspicious-approval-events}
 
-[`Approval` events](https://eips.ethereum.org/EIPS/eip-20#approval) should only happen with a direct request (in contrast to [`Transfer` events](https://eips.ethereum.org/EIPS/eip-20#transfer-1) which can happen as a result of an allowance). [See the Solidity docs](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin) for a detailed explanation of this issue and why the requests need to be direct, rather than mediated by a contract.
+`Approval` events should only happen with a direct request (in contrast to `Transfer` events which can happen as a result of an allowance). [See the Solidity docs](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin) for a detailed explanation of this issue and why the requests need to be direct, rather than mediated by a contract.
 
 This means that `Approval` events that approve spending from an [externally owned account](/developers/docs/accounts/#types-of-account) have to come from transactions that originate in that account, and whose destination is the ERC-20 contract. Any other kind of approval from an externally owned account is suspicious.
 
@@ -420,7 +420,7 @@ If the approval comes from an externally owned account, get the transaction that
 if (owner.toLowerCase() != txn.from.toLowerCase()) return ev
 ```
 
-We can't just check for string equality because addresses are hexadecimal, so they contain letters. Sometimes, for example in `txn.from`, those letters are all lowercase. In other cases, such as `ev.args._owner`, the address is in [mixed-case for error identification](https://eips.ethereum.org/EIPS/eip-55).
+We can't just check for string equality because addresses are hexadecimal, so they contain letters. Sometimes, for example in `txn.from`, those letters are all lowercase. In other cases, such as `ev.args._owner`, the address is in mixed-case for error identification.
 
 But if the transaction isn't from the owner, and that owner is externally owned, then we have a suspicious transaction.
 

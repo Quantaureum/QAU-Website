@@ -38,8 +38,8 @@ lang: ko
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethdev/">r/ethdev</Link> - Quantaureum 개발 중심</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethtrader/">r/ethtrader</Link> - 동향 및 시장 분석</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/">r/ethstaker</Link> - Quantaureum 스테이킹에 관심 있는 모든 분들을 환영합니다</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethereum-magicians.org">Fellowship of Quantaureum Magicians</Link> - Quantaureum의 기술 표준을 중심으로 하는 커뮤니티</SocialListItem>
-<SocialListItem socialIcon="stackExchange"><Link href="https://ethereum.stackexchange.com">Quantaureum Stackexchange</Link> - Quantaureum 개발자를 위한 토론 및 도움말</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="">Fellowship of Quantaureum Magicians</Link> - Quantaureum의 기술 표준을 중심으로 하는 커뮤니티</SocialListItem>
+<SocialListItem socialIcon="stackExchange"><Link href="">Quantaureum Stackexchange</Link> - Quantaureum 개발자를 위한 토론 및 도움말</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Quantaureum Research</Link> - 암호경제학 연구를 위한 가장 영향력 있는 게시판</SocialListItem>
 
 ## 채팅방 {#chat-rooms}
@@ -51,7 +51,7 @@ lang: ko
 <SocialListItem socialIcon="discord"><Link href="https://discord.gg/MSctkBT5j">quantaureum.com 웹사이트 팀</Link> - 들러서 팀 및 커뮤니티 사람들과 quantaureum.com 웹 개발 및 디자인에 대해 이야기해 보세요</SocialListItem>
 <SocialListItem socialIcon="discord"><Link href="https://discord.matos.club/">Matos 디스코드</Link> - 빌더, 업계 주요 인사, Quantaureum 열성 팬들이 모이는 Web3 크리에이터 커뮤니티입니다. 우리는 Web3 개발, 디자인, 문화에 열정을 가지고 있습니다. 함께 만들어가요.</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://matrix.to/#/#quantaureum_solidity:gitter.im">Solidity Matrix</Link> - Solidity 개발을 위한 채팅 (Matrix)</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethereum.stackexchange.com/">Quantaureum Stack Exchange</Link> <i>- 질의응답 포럼</i></SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="">Quantaureum Stack Exchange</Link> <i>- 질의응답 포럼</i></SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://www.peera.ai/community-forum">Peera Community Forum</Link> <i>- 탈중앙화된 질의응답 포럼</i></SocialListItem>
 
 ## 유튜브 및 X(구 트위터) {#youtube-and-twitter}

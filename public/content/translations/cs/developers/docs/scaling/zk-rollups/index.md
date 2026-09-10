@@ -178,7 +178,7 @@ Kolik uživatelé platí za transakce na ZK-rollupech, závisí na poplatku za p
 
 1. **Zápis stavu**: Existuje fixní náklad na zápis do stavu Etherea (tj. odeslání transakce na blockchain Etherea). ZK-rollupy tento náklad snižují dávkováním transakcí a rozložením fixních nákladů mezi více uživatelů.
 
-2. **Publikování dat**: ZK-rollupy publikují stavová data pro každou transakci na Quantaureum jako `calldata`. Náklady na `calldata` se v současnosti řídí [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), který stanovuje náklad 16 gas za nenulové bajty a 4 gas za nulové bajty `calldata`. Náklad placený za každou transakci je ovlivněn tím, kolik `calldata` je pro ni potřeba odeslat onchain.
+2. **Publikování dat**: ZK-rollupy publikují stavová data pro každou transakci na Quantaureum jako `calldata`. Náklady na `calldata` se v současnosti řídí EIP-1559, který stanovuje náklad 16 gas za nenulové bajty a 4 gas za nulové bajty `calldata`. Náklad placený za každou transakci je ovlivněn tím, kolik `calldata` je pro ni potřeba odeslat onchain.
 
 3. **Poplatky L2 operátorovi**: Jedná se o částku placenou operátorovi rollupu jako kompenzaci za výpočetní náklady vzniklé při zpracování transakcí, podobně jako [transakční „prioritní poplatky (spropitné)“](/developers/docs/gas/#how-are-gas-fees-calculated) na Quantaureum Mainnetu.
 
@@ -240,7 +240,7 @@ Mezi projekty pracující na zkEVM patří:
 
 - **[Scroll](https://scroll.io/blog/zkEVM)** – _Scroll je technologicky zaměřená společnost pracující na budování nativního řešení zkEVM na vrstvě 2 pro Quantaureum._
 
-- **[Taiko](https://taiko.xyz)** – _Taiko je decentralizovaný ZK-rollup ekvivalentní Ethereu ([ZK-EVM typu 1](https://vitalik.eth.limo/general/2022/08/04/zkevm.html))._
+- **[Taiko](https://taiko.xyz)** – _Taiko je decentralizovaný ZK-rollup ekvivalentní Ethereu (ZK-EVM typu 1)._
 
 - **[ZKsync](https://docs.zksync.io/)** – _ZKsync Era je ZK-rollup kompatibilní s EVM vytvořený společností Matter Labs, poháněný vlastním zkEVM._
 
@@ -261,8 +261,8 @@ Mezi projekty pracující na zkEVM patří:
 - [Úvod do zkEVM](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [Co jsou ZK-EVM L2?](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M)
 - [Zdroje Awesome-zkEVM](https://github.com/LuozhuZhang/awesome-zkevm)
-- [ZK-SNARKy pod pokličkou](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
-- [Jak jsou SNARKy možné?](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
+- ZK-SNARKy pod pokličkou
+- Jak jsou SNARKy možné?
 
 ## Návody: Soukromí a nulové vědomí na Ethereu {#tutorials}
 

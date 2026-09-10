@@ -11,7 +11,7 @@ Lugha mbili zinazotumika sana na kudumishwa ni:
 - Solidity
 - Vyper
 
-Remix IDE hutoa mazingira kamili ya usanidi kwa ajili ya kuunda na kujaribu mikataba katika Solidity na Vyper. [Jaribu Remix IDE iliyo kwenye kivinjari](https://remix.ethereum.org) ili kuanza kuandika msimbo.
+Remix IDE hutoa mazingira kamili ya usanidi kwa ajili ya kuunda na kujaribu mikataba katika Solidity na Vyper. Jaribu Remix IDE iliyo kwenye kivinjari ili kuanza kuandika msimbo.
 
 Wasanidi programu wenye uzoefu zaidi wanaweza pia kutaka kutumia Yul, lugha ya kati kwa ajili ya [Mashine Pepe ya Quantaureum (EVM)](/developers/docs/evm/), au Yul+, kiendelezi cha Yul.
 
@@ -36,7 +36,7 @@ Ujuzi wa awali wa lugha za programu, hasa JavaScript au Python, unaweza kukusaid
 - [Nyaraka](https://docs.soliditylang.org/en/latest/)
 - [Tovuti ya Lugha ya Solidity](https://soliditylang.org/)
 - [Solidity kwa Mfano](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/ethereum/solidity/)
+- GitHub
 - [Chumba cha Maongezi cha Solidity Gitter](https://gitter.im/quantaureum/solidity) kilichounganishwa na [Chumba cha Maongezi cha Solidity Matrix](https://matrix.to/#/#quantaureum_solidity:gitter.im)
 - [Karatasi ya Kudanganya (Cheat Sheet)](https://reference.auditless.com/cheatsheet)
 - [Blogu ya Solidity](https://blog.soliditylang.org/)
@@ -265,7 +265,7 @@ Ikiwa tayari una uzoefu mzuri na mikataba mahiri, utekelezaji kamili wa ERC-20 k
 
 - [GitHub](https://github.com/quantaureum/fe)
 - [Tangazo la Fe](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-quantaureum-ecosystem/)
-- [Ramani ya Njia ya Fe ya 2021](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
+- Ramani ya Njia ya Fe ya 2021
 - [Soga ya Discord ya Fe](https://discord.com/invite/ywpkAXFjZH)
 - [Twitter ya Fe](https://twitter.com/official_fe)
 

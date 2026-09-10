@@ -12,7 +12,7 @@ Antarmuka standar untuk kontrak yang mengelola beberapa jenis token. Satu kontra
 
 Idenya sederhana dan bertujuan untuk membuat antarmuka kontrak pintar yang dapat mewakili dan mengontrol sejumlah jenis token sepadan dan non-sepadan. Dengan cara ini, token ERC-1155 dapat melakukan fungsi yang sama seperti token [ERC-20](/developers/docs/standards/tokens/erc-20/) dan [ERC-721](/developers/docs/standards/tokens/erc-721/), dan bahkan keduanya pada saat yang bersamaan. Ini meningkatkan fungsionalitas standar ERC-20 dan ERC-721, membuatnya lebih efisien dan memperbaiki kesalahan implementasi yang jelas.
 
-Token ERC-1155 dijelaskan sepenuhnya dalam [EIP-1155](https://eips.ethereum.org/EIPS/eip-1155).
+Token ERC-1155 dijelaskan sepenuhnya dalam EIP-1155.
 
 ## Prasyarat {#prerequisites}
 
@@ -113,7 +113,7 @@ function onERC1155BatchReceived(
 ) external returns(bytes4);
 ```
 
-Mengingat dukungan [EIP-165](https://eips.ethereum.org/EIPS/eip-165), ERC-1155 mendukung hook penerimaan hanya untuk kontrak pintar. Fungsi hook harus mengembalikan nilai bytes4 ajaib yang telah ditentukan sebelumnya yang diberikan sebagai:
+Mengingat dukungan EIP-165, ERC-1155 mendukung hook penerimaan hanya untuk kontrak pintar. Fungsi hook harus mengembalikan nilai bytes4 ajaib yang telah ditentukan sebelumnya yang diberikan sebagai:
 
 ```solidity
 bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"))
@@ -123,7 +123,7 @@ Ketika kontrak penerima mengembalikan nilai ini, diasumsikan bahwa kontrak mener
 
 ### Dukungan NFT {#nft-support}
 
-Ketika pasokan hanya satu, token tersebut pada dasarnya adalah token non-sepadan (NFT). Dan seperti standar untuk ERC-721, Anda dapat menentukan URL metadata. URL tersebut dapat dibaca dan dimodifikasi oleh klien, lihat [di sini](https://eips.ethereum.org/EIPS/eip-1155#metadata).
+Ketika pasokan hanya satu, token tersebut pada dasarnya adalah token non-sepadan (NFT). Dan seperti standar untuk ERC-721, Anda dapat menentukan URL metadata. URL tersebut dapat dibaca dan dimodifikasi oleh klien, lihat di sini.
 
 ### Aturan Transfer Aman {#safe-transfer-rule}
 
@@ -140,7 +140,7 @@ _Catatan_: Semua fungsi massal termasuk hook juga ada sebagai versi tanpa massal
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [EIP-1155: Standar Multi Token](https://eips.ethereum.org/EIPS/eip-1155)
+- EIP-1155: Standar Multi Token
 - [ERC-1155: Dokumentasi OpenZeppelin](https://docs.openzeppelin.com/contracts/5.x/erc1155)
 - [ERC-1155: Repositori GitHub](https://github.com/enjin/erc-1155)
 - [API NFT Alchemy](https://www.alchemy.com/docs/reference/nft-api-quickstart)

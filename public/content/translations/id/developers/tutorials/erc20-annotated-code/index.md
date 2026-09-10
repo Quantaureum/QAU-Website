@@ -32,7 +32,7 @@ Jika Anda adalah seorang pemrogram berpengalaman, Anda mungkin ingat pernah meli
 atau bahkan di [file header C](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html).
 
 Ini adalah definisi dari [Antarmuka ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)
-dari OpenZeppelin. Ini adalah terjemahan dari [standar yang dapat dibaca manusia](https://eips.ethereum.org/EIPS/eip-20) ke dalam kode Solidity. Tentu saja,
+dari OpenZeppelin. Ini adalah terjemahan dari standar yang dapat dibaca manusia ke dalam kode Solidity. Tentu saja,
 antarmuka itu sendiri tidak mendefinisikan _bagaimana_ melakukan sesuatu. Hal itu dijelaskan dalam kode sumber kontrak di bawah ini.
 
 &nbsp;
@@ -109,9 +109,7 @@ Ini juga merupakan `external` dan `view`.
 ```solidity
     /**
      * @dev Memindahkan sejumlah `amount` token dari akun pemanggil ke `recipient`.
-     *
      * Mengembalikan nilai boolean yang menunjukkan apakah operasi berhasil.
-     *
      * Memancarkan peristiwa {Transfer}.
      */
     function transfer(address recipient, uint256 amount) external returns (bool);
@@ -147,7 +145,6 @@ dapat mengetahui apakah itu berhasil.
      * @dev Mengembalikan sisa jumlah token yang diizinkan untuk dibelanjakan oleh `spender`
      * atas nama `owner` melalui {transferFrom}. Nilai bawaannya adalah
      * nol.
-     *
      * Nilai ini berubah ketika {approve} atau {transferFrom} dipanggil.
      */
     function allowance(address owner, address spender) external view returns (uint256);
@@ -161,16 +158,13 @@ alamat (`owner`) untuk dibelanjakan oleh alamat lain (`spender`).
 ```solidity
     /**
      * @dev Menetapkan `amount` sebagai jatah dari `spender` atas token pemanggil.
-     *
      * Mengembalikan nilai boolean yang menunjukkan apakah operasi berhasil.
-     *
      * PENTING: Berhati-hatilah karena mengubah jatah dengan metode ini membawa risiko
      * bahwa seseorang mungkin menggunakan jatah lama dan baru karena urutan
      * transaksi yang tidak menguntungkan. Salah satu solusi yang mungkin untuk memitigasi kondisi
      * balapan ini adalah dengan terlebih dahulu mengurangi jatah pembelanja menjadi 0 dan menetapkan
      * nilai yang diinginkan setelahnya:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
-     *
+
      * Memancarkan peristiwa {Approval}.
      */
     function approve(address spender, uint256 amount) external returns (bool);
@@ -189,9 +183,7 @@ transaksi pihak lain telah terjadi.
      * @dev Memindahkan sejumlah `amount` token dari `sender` ke `recipient` menggunakan
      * mekanisme jatah. `amount` kemudian dikurangi dari jatah
      * pemanggil.
-     *
      * Mengembalikan nilai boolean yang menunjukkan apakah operasi berhasil.
-     *
      * Memancarkan peristiwa {Transfer}.
      */
     function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
@@ -206,7 +198,6 @@ Terakhir, `transferFrom` digunakan oleh pembelanja untuk benar-benar membelanjak
     /**
      * @dev Dipancarkan ketika sejumlah `value` token dipindahkan dari satu akun (`from`) ke
      * akun lainnya (`to`).
-     *
      * Perhatikan bahwa `value` mungkin saja nol.
      */
     event Transfer(address indexed from, address indexed to, uint256 value);
@@ -249,7 +240,7 @@ import "../../math/SafeMath.sol";
 - `GSN/Context.sol` adalah definisi yang diperlukan untuk menggunakan [OpenGSN](https://opengsn.org/), sebuah sistem yang memungkinkan pengguna tanpa QAU
   untuk menggunakan rantai blok. Perhatikan bahwa ini adalah versi lama, jika Anda ingin berintegrasi dengan OpenGSN
   [gunakan tutorial ini](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [Pustaka SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), yang mencegah
+- Pustaka SafeMath, yang mencegah
   limpahan/kekurangan aritmatika untuk versi Solidity **&lt;0.8.0**. Di Solidity ≥0.8.0, operasi aritmatika secara otomatis
   mengembalikan pada limpahan/kekurangan, membuat SafeMath tidak diperlukan. Kontrak ini menggunakan SafeMath untuk kompatibilitas mundur dengan
   versi kompiler yang lebih lama.
@@ -261,24 +252,19 @@ Komentar ini menjelaskan tujuan dari kontrak tersebut.
 ```solidity
 /**
  * @dev Implementasi dari antarmuka {IERC20}.
- *
  * Implementasi ini agnostik terhadap cara token dibuat. Ini berarti
  * bahwa mekanisme pasokan harus ditambahkan dalam kontrak turunan menggunakan {_mint}.
  * Untuk mekanisme generik, lihat {ERC20PresetMinterPauser}.
- *
  * TIPS: Untuk tulisan mendetail, lihat panduan kami
  * https://forum.zeppelin.solutions/t/how-to-implement-erc20-supply-mechanisms/226[How
  * to implement supply mechanisms].
- *
  * Kami telah mengikuti pedoman umum OpenZeppelin: fungsi dikembalikan (revert) alih-alih
  * mengembalikan `false` saat gagal. Perilaku ini bagaimanapun juga konvensional
  * dan tidak bertentangan dengan ekspektasi aplikasi ERC-20.
- *
  * Selain itu, peristiwa {Approval} dipancarkan pada panggilan ke {transferFrom}.
  * Ini memungkinkan aplikasi untuk merekonstruksi jatah untuk semua akun hanya
  * dengan mendengarkan peristiwa tersebut. Implementasi lain dari EIP mungkin tidak memancarkan
  * peristiwa ini, karena tidak diwajibkan oleh spesifikasi.
- *
  * Terakhir, fungsi non-standar {decreaseAllowance} dan {increaseAllowance}
  * telah ditambahkan untuk memitigasi masalah yang sudah dikenal seputar penetapan
  * jatah. Lihat {IERC20-approve}.
@@ -371,9 +357,7 @@ nilai `_decimals` sebesar nol. Jika Anda ingin menggunakan standar yang sama den
     /**
      * @dev Menetapkan nilai untuk {name} dan {symbol}, menginisialisasi {decimals} dengan
      * nilai bawaan 18.
-     *
      * Untuk memilih nilai yang berbeda untuk {decimals}, gunakan {_setupDecimals}.
-     *
      * Ketiga nilai ini tidak dapat diubah (immutable): hanya dapat ditetapkan sekali selama
      * konstruksi.
      */
@@ -410,11 +394,9 @@ Konstruktor dipanggil saat kontrak pertama kali dibuat. Berdasarkan konvensi, pa
      * @dev Mengembalikan jumlah desimal yang digunakan untuk mendapatkan representasi penggunanya.
      * Sebagai contoh, jika `decimals` sama dengan `2`, saldo sebesar `505` token harus
      * ditampilkan kepada pengguna sebagai `5,05` (`505 / 10 ** 2`).
-     *
      * Token biasanya memilih nilai 18, meniru hubungan antara
      * QAU dan Wei. Ini adalah nilai yang digunakan {ERC20}, kecuali {_setupDecimals}
      * dipanggil.
-     *
      * CATATAN: Informasi ini hanya digunakan untuk tujuan _tampilan_: ini sama
      * sekali tidak memengaruhi aritmatika apa pun dari kontrak, termasuk
      * {IERC20-balanceOf} dan {IERC20-transfer}.
@@ -473,9 +455,7 @@ node. _Tidak ada rahasia di rantai blok._
 ```solidity
     /**
      * @dev Lihat {IERC20-transfer}.
-     *
      * Persyaratan:
-     *
      * - `recipient` tidak boleh berupa alamat nol.
      * - pemanggil harus memiliki saldo setidaknya sebesar `amount`.
      */
@@ -527,9 +507,7 @@ Fungsi `allowance` memungkinkan semua orang untuk memeriksa jatah apa pun.
 ```solidity
     /**
      * @dev Lihat {IERC20-approve}.
-     *
      * Persyaratan:
-     *
      * - `spender` tidak boleh berupa alamat nol.
      */
     function approve(address spender, uint256 amount) public virtual override returns (bool) {
@@ -559,12 +537,9 @@ yang dibelanjakan dan mengurangi jatah dengan jumlah tersebut.
 ```solidity
     /**
      * @dev Lihat {IERC20-transferFrom}.
-     *
      * Memancarkan peristiwa {Approval} yang menunjukkan jatah yang diperbarui. Ini tidak
      * diwajibkan oleh EIP. Lihat catatan di awal {ERC20}.
-     *
      * Persyaratan:
-     *
      * - `sender` dan `recipient` tidak boleh berupa alamat nol.
      * - `sender` harus memiliki saldo setidaknya sebesar `amount`.
      * - pemanggil harus memiliki jatah untuk token ``sender`` setidaknya sebesar
@@ -635,14 +610,10 @@ B:
 ```solidity
     /**
      * @dev Secara atomik meningkatkan jatah yang diberikan kepada `spender` oleh pemanggil.
-     *
      * Ini adalah alternatif untuk {approve} yang dapat digunakan sebagai mitigasi untuk
      * masalah yang dijelaskan dalam {IERC20-approve}.
-     *
      * Memancarkan peristiwa {Approval} yang menunjukkan jatah yang diperbarui.
-     *
      * Persyaratan:
-     *
      * - `spender` tidak boleh berupa alamat nol.
      */
     function increaseAllowance(address spender, uint256 addedValue) public virtual returns (bool) {
@@ -658,14 +629,10 @@ seperti yang dilakukan penambahan normal.
 
     /**
      * @dev Secara atomik mengurangi jatah yang diberikan kepada `spender` oleh pemanggil.
-     *
      * Ini adalah alternatif untuk {approve} yang dapat digunakan sebagai mitigasi untuk
      * masalah yang dijelaskan dalam {IERC20-approve}.
-     *
      * Memancarkan peristiwa {Approval} yang menunjukkan jatah yang diperbarui.
-     *
      * Persyaratan:
-     *
      * - `spender` tidak boleh berupa alamat nol.
      * - `spender` harus memiliki jatah untuk pemanggil setidaknya sebesar
      * `subtractedValue`.
@@ -686,14 +653,10 @@ Ini adalah empat fungsi yang melakukan pekerjaan sebenarnya: `_transfer`, `_mint
 ```solidity
     /**
      * @dev Memindahkan token sejumlah `amount` dari `sender` ke `recipient`.
-     *
      * Fungsi internal ini setara dengan {transfer}, dan dapat digunakan untuk
      * mis., mengimplementasikan biaya token otomatis, mekanisme pemotongan (slashing), dll.
-     *
      * Memancarkan peristiwa {Transfer}.
-     *
      * Persyaratan:
-     *
      * - `sender` tidak boleh berupa alamat nol.
      * - `recipient` tidak boleh berupa alamat nol.
      * - `sender` harus memiliki saldo setidaknya sebesar `amount`.
@@ -772,11 +735,8 @@ untuk menghindari inflasi yang tidak terkendali.
 ```solidity
     /** @dev Membuat sejumlah `amount` token dan menetapkannya ke `account`, meningkatkan
      * total pasokan.
-     *
      * Memancarkan peristiwa {Transfer} dengan `from` ditetapkan ke alamat nol.
-     *
      * Persyaratan:
-     *
      * - `to` tidak boleh berupa alamat nol.
      */
     function _mint(address account, uint256 amount) internal virtual {
@@ -796,11 +756,8 @@ Pastikan untuk memperbarui `_totalSupply` saat jumlah total token berubah.
     /**
      * @dev Menghancurkan sejumlah `amount` token dari `account`, mengurangi
      * total pasokan.
-     *
      * Memancarkan peristiwa {Transfer} dengan `to` ditetapkan ke alamat nol.
-     *
      * Persyaratan:
-     *
      * - `account` tidak boleh berupa alamat nol.
      * - `account` harus memiliki setidaknya sejumlah `amount` token.
      */
@@ -827,14 +784,10 @@ dibuat.
 ```solidity
     /**
      * @dev Menetapkan `amount` sebagai jatah dari `spender` atas token `owner`.
-     *
      * Fungsi internal ini setara dengan `approve`, dan dapat digunakan untuk
      * mis., menetapkan jatah otomatis untuk subsistem tertentu, dll.
-     *
      * Memancarkan peristiwa {Approval}.
-     *
      * Persyaratan:
-     *
      * - `owner` tidak boleh berupa alamat nol.
      * - `spender` tidak boleh berupa alamat nol.
      */
@@ -863,7 +816,6 @@ persetujuan baik oleh pemilik atau oleh server yang mendengarkan peristiwa-peris
 
     /**
      * @dev Menetapkan {decimals} ke nilai selain nilai bawaan 18.
-     *
      * PERINGATAN: Fungsi ini hanya boleh dipanggil dari konstruktor. Sebagian besar
      * aplikasi yang berinteraksi dengan kontrak token tidak akan menduga
      * {decimals} pernah berubah, dan mungkin bekerja secara tidak benar jika itu terjadi.
@@ -884,15 +836,12 @@ tidak dirancang untuk menanganinya.
     /**
      * @dev Hook yang dipanggil sebelum transfer token apa pun. Ini termasuk
      * pencetakan (minting) dan pembakaran (burning).
-     *
      * Kondisi pemanggilan:
-     *
      * - ketika `from` dan `to` keduanya bukan nol, sejumlah `amount` token milik ``from``
      * akan ditransfer ke `to`.
      * - ketika `from` adalah nol, sejumlah `amount` token akan dicetak untuk `to`.
      * - ketika `to` adalah nol, sejumlah `amount` token milik ``from`` akan dibakar.
      * - `from` dan `to` tidak pernah keduanya nol.
-     *
      * Untuk mempelajari lebih lanjut tentang hook, kunjungi xref:ROOT:extending-contracts.adoc#using-hooks[Using Hooks].
      */
     function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual { }

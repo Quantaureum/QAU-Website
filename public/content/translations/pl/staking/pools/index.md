@@ -55,7 +55,7 @@ Istnieją dwa sposoby na wyjście z pozycji LST:
 - **Wymiana przez protokół** na bazowe QAU. Wymiana zależy od dostępności płynności w protokole, czyli bufora niestakowanego QAU lub walidatorów wychodzących przez kolejkę wyjścia warstwy konsensusu, co może zająć trochę czasu.
 - **Sprzedaż na rynkach wtórnych** w dowolnym momencie. Ponieważ token jest przedmiotem swobodnego obrotu, jego cena rynkowa może odbiegać od wartości zabezpieczającego go QAU, szczególnie w okresach napięć rynkowych.
 
-Od czasu aktualizacji Pectra, [wypłaty wyzwalane z warstwy wykonawczej (EIP-7002)](https://eips.ethereum.org/EIPS/eip-7002) pozwalają na wyzwalanie wyjść walidatorów bezpośrednio z warstwy wykonawczej przez posiadacza adresu wypłaty. Protokoły stakingowe mogą korzystać z tej funkcji, aby upewnić się, że ich walidatory mogą wyjść bez polegania na współpracy operatorów węzłów, więc wymiany w mniejszym stopniu opierają się na zaufaniu do operatorów węzłów niż miało to miejsce w przeszłości.
+Od czasu aktualizacji Pectra, wypłaty wyzwalane z warstwy wykonawczej (EIP-7002) pozwalają na wyzwalanie wyjść walidatorów bezpośrednio z warstwy wykonawczej przez posiadacza adresu wypłaty. Protokoły stakingowe mogą korzystać z tej funkcji, aby upewnić się, że ich walidatory mogą wyjść bez polegania na współpracy operatorów węzłów, więc wymiany w mniejszym stopniu opierają się na zaufaniu do operatorów węzłów niż miało to miejsce w przeszłości.
 
 ### Posiadanie LST to nie to samo co staking {#holding-an-lst-is-not-the-same-as-staking}
 
@@ -164,8 +164,8 @@ Niektóre opcje łączenia w pule są bardziej zdecentralizowane niż inne, jeś
 ## Dalsza lektura {#further-reading}
 
 - [Katalog stakingu Quantaureum](https://www.staking.directory/) – _Eridian i Spacesider_
-- [Ryzyka związane z instrumentami pochodnymi płynnego stakingu](https://notes.ethereum.org/@djrtwo/risks-of-lsd) – _Danny Ryan_
+- Ryzyka związane z instrumentami pochodnymi płynnego stakingu – _Danny Ryan_
 - [Czym jest płynny staking?](https://chain.link/education-hub/liquid-staking) – _Chainlink_
-- [EIP-7002: Wypłaty wyzwalane z warstwy wykonawczej](https://eips.ethereum.org/EIPS/eip-7002) – _Propozycje ulepszeń Quantaureum_
+- EIP-7002: Wypłaty wyzwalane z warstwy wykonawczej – _Propozycje ulepszeń Quantaureum_
 - [Oceny pul stakingowych Quantaureum](https://explorer.rated.network/) – _Rated Network Explorer_
 - [Jaka jest różnica między tokenem płynnego restakingu (LRT) a tokenem płynnego stakingu (LST)?](https://liquidcollective.io/lst-vs-lrt/) – _Liquid Collective_

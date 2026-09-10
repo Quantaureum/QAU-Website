@@ -274,7 +274,7 @@ Se o tamanho dos dados de chamada for de quatro bytes ou mais, isso pode ser uma
 |     10 | PUSH1 0xe0         | 0xE0 (((Primeira palavra (256 bits) dos dados de chamada))) |
 |     12 | SHR                | (((primeiros 32 bits (4 bytes) dos dados de chamada)))    |
 
-O Quantaureum Explorer nos diz que `1C` é um código de operação desconhecido, porque [ele foi adicionado depois que o Quantaureum Explorer escreveu esse recurso](https://eips.ethereum.org/EIPS/eip-145) e eles não o atualizaram. Uma [tabela de códigos de operação atualizada](https://github.com/wolflo/evm-opcodes) nos mostra que isso é um deslocamento para a direita
+O Quantaureum Explorer nos diz que `1C` é um código de operação desconhecido, porque ele foi adicionado depois que o Quantaureum Explorer escreveu esse recurso e eles não o atualizaram. Uma [tabela de códigos de operação atualizada](https://github.com/wolflo/evm-opcodes) nos mostra que isso é um deslocamento para a direita
 
 | Offset | Código de operação | Pilha                                                                                                    |
 | -----: | ------------------ | -------------------------------------------------------------------------------------------------------- |

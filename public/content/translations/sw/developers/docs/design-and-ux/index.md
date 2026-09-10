@@ -16,7 +16,7 @@ Ikiwa unataka kuona ni changamoto zipi za UX zinazosumbua zaidi kwa sasa, angali
 
 - [Web3 inahitaji Watafiti na Wasanifu zaidi wa UX](https://blog.akasha.org/akasha-conversations-9-web3-needs-more-ux-researchers-and-designers) - Muhtasari wa ukomavu wa sasa wa usanifu
 - [Mwongozo rahisi wa Utafiti wa UX katika Web3](https://uxplanet.org/a-complete-guide-to-ux-research-for-web-3-0-products-d6bead20ebb1) - Mwongozo rahisi wa jinsi ya kufanya utafiti
-- [Jinsi ya Kukaribia Maamuzi ya UX katika Web3](https://archive.devcon.org/archive/watch/6/data-empathy-how-to-approach-ux-decisions-in-web3/) - Muhtasari mfupi wa utafiti wa kiasi na ubora na tofauti kati ya hizo mbili (video, dakika 6)
+- Jinsi ya Kukaribia Maamuzi ya UX katika Web3 - Muhtasari mfupi wa utafiti wa kiasi na ubora na tofauti kati ya hizo mbili (video, dakika 6)
 - [Kuwa mtafiti wa ux katika Web3](https://medium.com/@georgia.rakusen/what-its-like-being-a-user-researcher-in-web3-6a4bcc096849) - Mtazamo wa kibinafsi kuhusu jinsi ilivyo kuwa mtafiti wa UX katika Web3
 
 ## Tafiti katika Web3 {#research-in-web3}
@@ -38,7 +38,7 @@ Hii ni orodha iliyoratibiwa ya utafiti wa mtumiaji uliofanywa katika Web3 ambayo
 | <Tag status="error">DeFi</Tag>                  | [Madimbwi ya ulinzi](https://github.com/threshold-network/UX-User-Research/tree/main/Keep%20Coverage%20Pool)                                                                           |
 | <Tag status="error">DeFi</Tag>                  | [ConsenSys: Ripoti ya Utafiti wa Mtumiaji wa DeFi 2022](https://cdn2.hubspot.net/hubfs/4795067/ConsenSys%20Codefi-Defi%20User%20ResearchReport.pdf)                                            |
 | <Tag variant="solid">Metaverse</Tag>             | [Metaverse: Ripoti ya Utafiti wa Mtumiaji](https://www.politico.com/f/?id=00000187-7685-d820-a7e7-7e85d1420000)                                                                             |
-| <Tag variant="solid">Metaverse</Tag>             | [Kwenda Safari: Kutafiti Watumiaji katika Metaverse](https://archive.devcon.org/archive/watch/6/going-on-safari-researching-users-in-the-metaverse/?tab=YouTube) (video, dakika 27)  |
+| <Tag variant="solid">Metaverse</Tag>             | Kwenda Safari: Kutafiti Watumiaji katika Metaverse (video, dakika 27)  |
 
 ## Usanifu kwa ajili ya Web3 {#design-for-web3}
 

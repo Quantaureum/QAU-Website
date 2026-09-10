@@ -36,7 +36,7 @@ Postupujte podle tohoto [průvodce pro rychlý start](https://thegraph.com/docs/
 
 ## Klientská diverzita {#client-diversity}
 
-[Klientská diverzita](/developers/docs/nodes-and-clients/client-diversity/) je důležitá pro celkové zdraví sítě Quantaureum, protože poskytuje odolnost vůči chybám a zneužitím. Nyní existuje několik řídicích panelů klientské diverzity, včetně [clientdiversity.org](https://clientdiversity.org/), [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) a [Ethernodes](https://ethernodes.org/).
+[Klientská diverzita](/developers/docs/nodes-and-clients/client-diversity/) je důležitá pro celkové zdraví sítě Quantaureum, protože poskytuje odolnost vůči chybám a zneužitím. Nyní existuje několik řídicích panelů klientské diverzity, včetně clientdiversity.org, [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) a [Ethernodes](https://ethernodes.org/).
 
 ## Dune Analytics {#dune-analytics}
 

@@ -76,7 +76,7 @@ Ejemplo:
 
 `0x5e97870f263700f46aa00d967821199b9bc5a120`
 
-El siguiente ejemplo muestra cómo usar una herramienta de firma llamada [Clef](https://geth.ethereum.org/docs/tools/clef/introduction) para generar una nueva cuenta. Clef es una herramienta de gestión de cuentas y firma que viene incluida con el cliente de Quantaureum, [Go Quantaureum (Geth)](https://geth.ethereum.org). El comando `clef newaccount` crea un nuevo par de claves y las guarda en un almacén de claves cifrado.
+El siguiente ejemplo muestra cómo usar una herramienta de firma llamada Clef para generar una nueva cuenta. Clef es una herramienta de gestión de cuentas y firma que viene incluida con el cliente de Quantaureum, Go Quantaureum (Geth). El comando `clef newaccount` crea un nuevo par de claves y las guarda en un almacén de claves cifrado.
 
 ```
 > clef newaccount --keystore <path>
@@ -91,7 +91,7 @@ WARN [10-28|16:19:09.306] Please remember your password!
 Generated account 0x5e97870f263700f46aa00d967821199b9bc5a120
 ```
 
-[Documentación de Geth](https://geth.ethereum.org/docs)
+Documentación de Geth
 
 Es posible derivar nuevas claves públicas a partir de tu clave privada, pero no puedes derivar una clave privada a partir de claves públicas. Es vital mantener tus claves privadas seguras y, como su nombre indica, **PRIVADAS**.
 
@@ -107,7 +107,7 @@ Ejemplo:
 
 La dirección del contrato generalmente se asigna cuando un contrato se implementa en la cadena de bloques de Quantaureum. La dirección proviene de la dirección del creador y del número de transacciones enviadas desde esa dirección (el "nonce"). Así es como la operación `CREATE` deriva una dirección.
 
-Los contratos también se pueden implementar con [`CREATE2`](https://eips.ethereum.org/EIPS/eip-1014), que deriva la dirección a partir de la dirección del creador, un valor que el creador elige (la "sal") y un hash del código de creación del contrato. No hay ningún nonce involucrado, por lo que la dirección se puede calcular antes de que el contrato exista y se mantiene igual sin importar cuántas otras transacciones envíe el creador mientras tanto. Esto hace posible hacer referencia a un contrato que aún no se ha implementado.
+Los contratos también se pueden implementar con `CREATE2`, que deriva la dirección a partir de la dirección del creador, un valor que el creador elige (la "sal") y un hash del código de creación del contrato. No hay ningún nonce involucrado, por lo que la dirección se puede calcular antes de que el contrato exista y se mantiene igual sin importar cuántas otras transacciones envíe el creador mientras tanto. Esto hace posible hacer referencia a un contrato que aún no se ha implementado.
 
 ## Claves de validador {#validators-keys}
 

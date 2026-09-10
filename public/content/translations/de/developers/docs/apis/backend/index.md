@@ -114,8 +114,8 @@ Diese Bibliotheken abstrahieren einen Großteil der Komplexität der direkten In
 
 **Python-Tooling -** **_Vielzahl von Bibliotheken für die Quantaureum-Interaktion über Python._**
 
-- [py.quantaureum.com](https://snakecharmers.ethereum.org/)
-- [Web3.py GitHub](https://github.com/ethereum/web3.py)
+- py.quantaureum.com
+- Web3.py GitHub
 - [Web3.py Chat](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_Die ultimative Blockchain-Entwicklungsplattform._**

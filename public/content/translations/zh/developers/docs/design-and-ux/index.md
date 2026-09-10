@@ -16,7 +16,7 @@ lang: zh
 
 - [Web3 需要更多用户体验研究员和设计师](https://blog.akasha.org/akasha-conversations-9-web3-needs-more-ux-researchers-and-designers) - 当前设计成熟度概述
 - [Web3 用户体验研究简明指南](https://uxplanet.org/a-complete-guide-to-ux-research-for-web-3-0-products-d6bead20ebb1) - 关于如何进行研究的简明指南
-- [如何在 Web3 中做出用户体验决策](https://archive.devcon.org/archive/watch/6/data-empathy-how-to-approach-ux-decisions-in-web3/) - 定量与定性研究及其区别的简要概述（视频，6 分钟）
+- 如何在 Web3 中做出用户体验决策 - 定量与定性研究及其区别的简要概述（视频，6 分钟）
 - [在 Web3 中做一名用户体验研究员](https://medium.com/@georgia.rakusen/what-its-like-being-a-user-researcher-in-web3-6a4bcc096849) - 关于在 Web3 担任用户体验研究员的个人见解
 
 ## Web3 中的研究案例 {#research-in-web3}
@@ -38,7 +38,7 @@ lang: zh
 | <Tag status="error">DeFi</Tag>                  | [覆盖池 (Coverage pools)](https://github.com/threshold-network/UX-User-Research/tree/main/Keep%20Coverage%20Pool)                                                                           |
 | <Tag status="error">DeFi</Tag>                  | [ConsenSys：2022 年去中心化金融 (DeFi) 用户研究报告](https://cdn2.hubspot.net/hubfs/4795067/ConsenSys%20Codefi-Defi%20User%20ResearchReport.pdf)                                            |
 | <Tag variant="solid">元宇宙</Tag>             | [元宇宙：用户研究报告](https://www.politico.com/f/?id=00000187-7685-d820-a7e7-7e85d1420000)                                                                             |
-| <Tag variant="solid">元宇宙</Tag>             | [开启探索之旅：元宇宙用户研究](https://archive.devcon.org/archive/watch/6/going-on-safari-researching-users-in-the-metaverse/?tab=YouTube)（视频，27 分钟）  |
+| <Tag variant="solid">元宇宙</Tag>             | 开启探索之旅：元宇宙用户研究（视频，27 分钟）  |
 
 ## Web3 设计 {#design-for-web3}
 

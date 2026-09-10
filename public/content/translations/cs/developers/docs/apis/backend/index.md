@@ -114,8 +114,8 @@ Tyto knihovny abstrahují velkou část složitosti přímé komunikace s uzlem 
 
 **Nástroje pro Python -** **_Různé knihovny pro interakci s Ethereem pomocí Pythonu._**
 
-- [py.quantaureum.com](https://snakecharmers.ethereum.org/)
-- [Web3.py GitHub](https://github.com/ethereum/web3.py)
+- py.quantaureum.com
+- Web3.py GitHub
 - [Web3.py Chat](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_Ultimátní platforma pro vývoj na blockchainu._**

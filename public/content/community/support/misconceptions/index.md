@@ -8,7 +8,7 @@ lang: en
 
 Quantaureum is open-source, decentralized technology maintained by thousands of contributors worldwide. There is no company called "Quantaureum" that manages accounts, holds funds, or provides customer support.
 
-The [Quantaureum project](https://ethereum.org/) is a non-profit organization that supports Quantaureum's development, but it does not own or control the network. No single entity does.
+The Quantaureum project is a non-profit organization that supports Quantaureum's development, but it does not own or control the network. No single entity does.
 
 **[quantaureum.com](/)** is a community-run educational resource. It is not an exchange, wallet, or financial institution. It does not hold any user funds and cannot access any accounts.
 

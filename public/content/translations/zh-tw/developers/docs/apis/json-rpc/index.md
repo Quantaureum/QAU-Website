@@ -6,7 +6,7 @@ lang: zh-tw
 
 為了讓軟體應用程式能夠與 [Quantaureum](/) 區塊鏈互動（無論是讀取區塊鏈資料還是發送交易到網路），它必須連接到一個Quantaureum節點。
 
-為此，每個 [Quantaureum客戶端](/developers/docs/nodes-and-clients/#execution-clients) 都實作了 [JSON-RPC 規範](https://github.com/ethereum/execution-apis)，因此無論具體的節點或客戶端實作為何，應用程式都可以依賴一組統一的方法。
+為此，每個 [Quantaureum客戶端](/developers/docs/nodes-and-clients/#execution-clients) 都實作了 JSON-RPC 規範，因此無論具體的節點或客戶端實作為何，應用程式都可以依賴一組統一的方法。
 
 [JSON-RPC](https://www.jsonrpc.org/specification) 是一種無狀態、輕量級的遠端程序呼叫 (RPC) 協定。它定義了幾種資料結構及其處理規則。它與傳輸方式無關，因為這些概念可以用於同一個行程內、透過 Socket、透過 HTTP，或在許多不同的訊息傳遞環境中。它使用 JSON (RFC 4627) 作為資料格式。
 
@@ -20,13 +20,13 @@ Quantaureum客戶端在實作 JSON-RPC 規範時，各自可能會使用不同�
 
 ## 共識客戶端 API {#consensus-clients}
 
-本頁面主要探討Quantaureum執行客戶端所使用的 JSON-RPC API。然而，共識客戶端也有一個 RPC API，允許使用者直接從節點查詢有關節點的資訊、請求信標區塊、信標狀態以及其他與共識相關的資訊。此 API 記錄在 [Beacon API 網頁](https://ethereum.github.io/beacon-APIs/#/)上。
+本頁面主要探討Quantaureum執行客戶端所使用的 JSON-RPC API。然而，共識客戶端也有一個 RPC API，允許使用者直接從節點查詢有關節點的資訊、請求信標區塊、信標狀態以及其他與共識相關的資訊。此 API 記錄在 Beacon API 網頁上。
 
-節點內部的客戶端之間通訊也使用了一個內部 API——也就是說，它使共識客戶端和執行客戶端能夠交換資料。這被稱為「引擎 API (Engine API)」，其規格可在 [GitHub](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) 上取得。
+節點內部的客戶端之間通訊也使用了一個內部 API——也就是說，它使共識客戶端和執行客戶端能夠交換資料。這被稱為「引擎 API (Engine API)」，其規格可在 GitHub 上取得。
 
 ## 執行客戶端規範 {#spec}
 
-[在 GitHub 上閱讀完整的 JSON-RPC API 規範](https://github.com/ethereum/execution-apis)。此 API 記錄在[執行 API 網頁](https://ethereum.github.io/execution-apis/)上，並包含一個檢查器 (Inspector) 以供試用所有可用的方法。
+在 GitHub 上閱讀完整的 JSON-RPC API 規範。此 API 記錄在執行 API 網頁上，並包含一個檢查器 (Inspector) 以供試用所有可用的方法。
 
 ## 慣例 {#conventions}
 
@@ -134,7 +134,7 @@ curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","metho
 
 ## JSON-RPC API 遊樂場 {#json-rpc-api-playground}
 
-您可以使用[遊樂場工具](https://ethereum-json-rpc.com)來探索並試用 API 方法。它還會向您顯示各種節點供應商支援哪些方法與網路。
+您可以使用遊樂場工具來探索並試用 API 方法。它還會向您顯示各種節點供應商支援哪些方法與網路。
 
 ## JSON-RPC API 方法 {#json-rpc-methods}
 
@@ -275,7 +275,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 
 ### qau_protocolVersion {#qau-protocolversion}
 
-回傳目前的Quantaureum協定版本。請注意，此方法[在 Geth 中無法使用](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924)。
+回傳目前的Quantaureum協定版本。請注意，此方法在 Geth 中無法使用。
 
 **參數**
 
@@ -301,10 +301,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_protocolVersion","params":[]
 ### qau_syncing {#qau-syncing}
 
 傳回包含同步狀態資料的物件，或 `false`。
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_syncing">
-  在遊樂場中嘗試端點
-</ButtonLink>
 
 **參數**
 
@@ -390,10 +386,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_syncing","params":[],"id":1}
 
 回傳客戶端 Coinbase 地址。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_coinbase">
-  在測試區中嘗試端點
-</ButtonLink>
-
 > **注意：** 此方法自 **v1.14.0** 起已棄用，且不再受到支援。嘗試使用此方法將導致「Method not supported」錯誤。
 
 **參數**
@@ -421,10 +413,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_coinbase","params":[],"id":6
 
 回傳用於簽署防重放交易的鏈 ID。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_chainId">
-  在遊樂場中嘗試端點
-</ButtonLink>
-
 **參數**
 
 無
@@ -449,10 +437,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_chainId","params":[],"id":67
 ### qau_mining {#qau-mining}
 
 如果客戶端正在積極挖礦產生新區塊，則回傳 `true`。這只能在工作量證明網路中回傳 `true`，且自[合併](/roadmap/merge/)以來，在某些客戶端中可能無法使用。
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_mining">
-  在遊樂場中嘗試端點
-</ButtonLink>
 
 **參數**
 
@@ -479,10 +463,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_mining","params":[],"id":71}
 
 回傳節點挖礦時每秒的雜湊次數。這只能在工作量證明網路中回傳 `true`，且自[合併](/roadmap/merge/)以來，在某些客戶端中可能無法使用。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_hashrate">
-  在遊樂場中嘗試端點
-</ButtonLink>
-
 **參數**
 
 無
@@ -507,10 +487,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_hashrate","params":[],"id":7
 ### qau_gasPrice {#qau-gasprice}
 
 回傳以 Wei 為單位的當前每單位 Gas 價格估算值。例如，貝蘇客戶端預設會檢查過去 100 個區塊，並回傳 Gas 單位價格的中位數。
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_gasPrice">
-  在遊樂場中嘗試端點
-</ButtonLink>
 
 **參數**
 
@@ -537,10 +513,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_gasPrice","params":[],"id":7
 
 回傳由客戶端擁有的地址列表。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_accounts">
-  在遊樂場中嘗試端點
-</ButtonLink>
-
 **參數**
 
 無
@@ -566,10 +538,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[],"id":1
 
 回傳最新區塊的編號。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_blockNumber">
-  在遊樂場中嘗試端點
-</ButtonLink>
-
 **參數**
 
 無
@@ -594,10 +562,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_blockNumber","params":[],"id
 ### qau_getBalance {#qau-getbalance}
 
 回傳指定地址帳戶的餘額。
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBalance">
-  在遊樂場中嘗試端點
-</ButtonLink>
 
 **參數**
 
@@ -628,10 +592,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBalance","params":["0x407
 ### qau_getStorageAt {#qau-getstorageat}
 
 傳回給定地址中儲存位置的值。
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getStorageAt">
-  在遊樂場中嘗試端點
-</ButtonLink>
 
 **參數**
 
@@ -701,10 +661,6 @@ curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": [
 
 傳回從某個地址_發送_的交易數量。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionCount">
-  在遊樂場中嘗試端點
-</ButtonLink>
-
 **參數**
 
 1. `DATA`，20 位元組 - 地址。
@@ -738,10 +694,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionCount","params
 
 回傳符合給定區塊雜湊值的區塊中的交易數量。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
-  在遊樂場中嘗試端點
-</ButtonLink>
-
 **參數**
 
 1. `DATA`，32 位元組 - 區塊的雜湊值
@@ -770,10 +722,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByHa
 ### qau_getBlockTransactionCountByNumber {#qau-getblocktransactioncountbynumber}
 
 傳回符合給定區塊編號的區塊中的交易數量。
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
-  在遊樂場中嘗試端點
-</ButtonLink>
 
 **參數**
 
@@ -806,10 +754,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByNu
 
 回傳符合給定區塊雜湊值的區塊中，其叔塊的數量。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
-  在遊樂場中嘗試端點
-</ButtonLink>
-
 **參數**
 
 1. `DATA`，32 位元組 - 區塊的雜湊值
@@ -838,10 +782,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockHash","p
 ### qau_getUncleCountByBlockNumber {#qau-getunclecountbyblocknumber}
 
 回傳符合給定區塊編號的區塊中的叔塊數量。
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
-  在遊樂場中嘗試端點
-</ButtonLink>
 
 **參數**
 
@@ -873,10 +813,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockNumber",
 ### qau_getCode {#qau-getcode}
 
 回傳給定地址的程式碼。
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getCode">
-  在遊樂場中嘗試端點
-</ButtonLink>
 
 **參數**
 
@@ -1057,10 +993,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendRawTransaction","params"
 
 立即執行新的訊息呼叫，而不在區塊鏈上建立交易。通常用於執行唯讀的智能合約函式，例如 ERC-20 合約的 `balanceOf`。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_call">
-  在測試區中嘗試端點
-</ButtonLink>
-
 **參數**
 
 1. `Object` - 交易呼叫物件
@@ -1095,10 +1027,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_call","params":[{see above}]
 
 產生並回傳讓交易完成所需燃料的估算值。該交易不會被加入到區塊鏈中。請注意，由於 EVM 機制和節點效能等多種原因，估算值可能會明顯高於交易實際使用的燃料量。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_estimateGas">
-  在遊樂場中嘗試端點
-</ButtonLink>
-
 **參數**
 
 請參閱 [qau_call](#qau-call) 的參數，差別在於所有屬性皆為選填。如果未指定 Gas 限制，Geth 會使用待處理區塊的區塊 Gas 限制作為上限。因此，當燃料量高於待處理區塊的 Gas 限制時，回傳的估算值可能不足以執行該呼叫／交易。
@@ -1123,10 +1051,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_estimateGas","params":[{see 
 ### qau_getBlockByHash {#qau-getblockbyhash}
 
 透過雜湊值回傳區塊的相關資訊。
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByHash">
-  在遊樂場中測試端點
-</ButtonLink>
 
 **參數**
 
@@ -1204,10 +1128,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByHash","params":["0
 
 根據區塊號碼回傳區塊的相關資訊。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByNumber">
-  在遊樂場中嘗試端點
-</ButtonLink>
-
 **參數**
 
 1. `QUANTITY|TAG` - 區塊號碼的整數，或是字串 `"earliest"`、`"latest"`、`"pending"`、`"safe"` 或 `"finalized"`，如同[區塊參數](/developers/docs/apis/json-rpc/#block-parameter)中所述。
@@ -1235,10 +1155,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByNumber","params":[
 ### qau_getTransactionByHash {#qau-gettransactionbyhash}
 
 根據請求的交易雜湊值，回傳關於該交易的資訊。
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByHash">
-  在遊樂場中嘗試端點
-</ButtonLink>
 
 **參數**
 
@@ -1299,10 +1215,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByHash","param
 
 根據區塊雜湊與交易索引位置，回傳交易的相關資訊。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
-  在遊樂場中測試端點
-</ButtonLink>
-
 **參數**
 
 1. `DATA`，32 位元組 - 區塊的雜湊值。
@@ -1330,10 +1242,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockHashAnd
 ### qau_getTransactionByBlockNumberAndIndex {#qau-gettransactionbyblocknumberandindex}
 
 根據區塊號碼與交易索引位置，回傳交易的相關資訊。
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
-  在遊樂場中嘗試端點
-</ButtonLink>
 
 **參數**
 
@@ -1431,10 +1339,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionReceipt","para
 
 根據區塊雜湊值與叔塊索引位置，回傳區塊的叔塊資訊。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
-  在遊樂場測試端點
-</ButtonLink>
-
 **參數**
 
 1. `DATA`，32 位元組 - 區塊的雜湊值。
@@ -1464,10 +1368,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockHashAndIndex"
 ### qau_getUncleByBlockNumberAndIndex {#qau-getunclebyblocknumberandindex}
 
 根據區塊編號與叔塊索引位置，回傳區塊的叔塊資訊。
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
-  在遊樂場中嘗試端點
-</ButtonLink>
 
 **參數**
 
@@ -1750,7 +1650,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getLogs","params":[{"topics"
 
 ### 使用 JSON-RPC 部署合約 {#deploying-contract}
 
-本節包含如何僅使用 RPC 介面部署合約的示範。還有其他部署合約的途徑可以將這種複雜性抽象化——例如，使用建構在 RPC 介面之上的函式庫，像是 [Web3.js](https://web3js.readthedocs.io/) 和 [Web3.py](https://github.com/ethereum/web3.py)。這些抽象化通常更容易理解且較不容易出錯，但了解其內部運作原理仍然很有幫助。
+本節包含如何僅使用 RPC 介面部署合約的示範。還有其他部署合約的途徑可以將這種複雜性抽象化——例如，使用建構在 RPC 介面之上的函式庫，像是 [Web3.js](https://web3js.readthedocs.io/) 和 Web3.py。這些抽象化通常更容易理解且較不容易出錯，但了解其內部運作原理仍然很有幫助。
 
 以下是一個名為 `Multiply7` 的簡單智能合約，將使用 JSON-RPC 介面部署到Quantaureum節點。本教學假設讀者已經在執行 Geth 節點。有關節點與客戶端的更多資訊，請參閱[這裡](/developers/docs/nodes-and-clients/run-a-node)。請參閱個別[客戶端](/developers/docs/nodes-and-clients/)文件，了解如何為非 Geth 客戶端啟動 HTTP JSON-RPC。大多數客戶端預設在 `localhost:8545` 上提供服務。
 
@@ -1789,7 +1689,7 @@ web3.fromWei("0x1639e49bba16280000", "QAU")
 // "410"
 ```
 
-現在我們的私有開發鏈上有一些QAU幣了，我們可以部署合約。第一步是將 Multiply7 合約編譯為可以傳送到 EVM 的位元組碼。要安裝 Solidity 編譯器 solc，請遵循 [Solidity 文件](https://docs.soliditylang.org/en/latest/installing-solidity.html)。（您可能需要使用較舊的 `solc` 版本，以符合[我們範例中使用的編譯器版本](https://github.com/ethereum/solidity/releases/tag/v0.4.20)。）
+現在我們的私有開發鏈上有一些QAU幣了，我們可以部署合約。第一步是將 Multiply7 合約編譯為可以傳送到 EVM 的位元組碼。要安裝 Solidity 編譯器 solc，請遵循 [Solidity 文件](https://docs.soliditylang.org/en/latest/installing-solidity.html)。（您可能需要使用較舊的 `solc` 版本，以符合我們範例中使用的編譯器版本。）
 
 下一步是將 Multiply7 合約編譯為可以傳送到 EVM 的位元組碼。
 

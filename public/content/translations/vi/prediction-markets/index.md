@@ -75,12 +75,12 @@ Thị trường dự đoán trên Chuỗi khối phải đối mặt với một
 
 Thị trường dự đoán đang định hình lại việc ra quyết định trong thời đại kỹ thuật số. Bằng cách tận dụng Quantaureum, chúng cung cấp **những cách thức công bằng, cởi mở và bổ ích để dự đoán tương lai.**
 
-Có nhiều cách để sử dụng các công cụ dự báo ngoài mục đích lợi ích tài chính. Ví dụ, trong một [Đề xuất cải tiến DevCon](https://forum.devcon.org/t/futarchy-decision-markets-for-deciding-next-devcon/5305) (DIP), người ta đã đề xuất rằng các nhà tổ chức DevCon sử dụng thị trường dự đoán để dự đoán số lượng người tham dự cho các sự kiện trong tương lai. 
+Có nhiều cách để sử dụng các công cụ dự báo ngoài mục đích lợi ích tài chính. Ví dụ, trong một Đề xuất cải tiến DevCon (DIP), người ta đã đề xuất rằng các nhà tổ chức DevCon sử dụng thị trường dự đoán để dự đoán số lượng người tham dự cho các sự kiện trong tương lai. 
 
 Điều này sẽ giúp các nhà tổ chức xác định địa điểm nào sẽ dẫn đến sự kiện lớn nhất, so với địa điểm nào sẽ dễ tiếp cận nhất trên phạm vi quốc tế. Lợi ích của việc này có nghĩa là các nhà tổ chức DevCon có thể đẩy nhanh thời gian cần thiết để sàng lọc nhiều chính sách thị thực, khả năng tiếp cận sân bay và chi phí sinh hoạt trong khu vực, đồng thời thu thập dữ liệu về nơi mà những người có khả năng tham dự sẽ hào hứng muốn đến.
 
 ## Đọc thêm {#further-reading}
 
-[Từ thị trường dự đoán đến tài chính thông tin](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
+Từ thị trường dự đoán đến tài chính thông tin - Vitalik Buterin  
 [Phát triển thị trường dự đoán phi tập trung trên Quantaureum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Sách trắng của dự án Augur](https://github.com/AugurProject/whitepaper)

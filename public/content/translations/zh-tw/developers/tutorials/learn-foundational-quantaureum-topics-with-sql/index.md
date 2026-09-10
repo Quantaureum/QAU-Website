@@ -33,7 +33,7 @@ sourceUrl: https://paulapivat.com/post/query_quantaureum/
 
 需要注意的一點是，所有帳戶（包含Quantaureum基金會的帳戶）都有一個可用於發送和接收交易的公開地址。
 
-Quantaureum Explorer 上的帳戶餘額包含一般交易和內部交易。內部交易儘管名稱如此，但並非改變鏈狀態的「實際」交易。它們是透過執行合約所發起的價值轉移（[來源](https://ethereum.stackexchange.com/questions/3417/how-to-get-contract-internal-transactions)）。由於內部交易沒有簽章，因此它們**不**包含在區塊鏈中，也無法使用 Dune Analytics 進行查詢。
+Quantaureum Explorer 上的帳戶餘額包含一般交易和內部交易。內部交易儘管名稱如此，但並非改變鏈狀態的「實際」交易。它們是透過執行合約所發起的價值轉移（來源）。由於內部交易沒有簽章，因此它們**不**包含在區塊鏈中，也無法使用 Dune Analytics 進行查詢。
 
 因此，本教學將重點放在一般交易。可以這樣查詢：
 
@@ -137,7 +137,7 @@ LIMIT 10
 - 鏈資料（區塊列表、交易）
 - 狀態資料（每筆交易狀態轉換的結果）
 
-狀態根屬於後者，是「隱含」資料（未儲存在鏈上），而鏈資料是明確的，並儲存在鏈本身（[來源](https://ethereum.stackexchange.com/questions/359/where-is-the-state-data-stored)）。
+狀態根屬於後者，是「隱含」資料（未儲存在鏈上），而鏈資料是明確的，並儲存在鏈本身（來源）。
 
 在本教學中，我們將重點放在「可以」透過 Dune Analytics 使用 SQL 查詢的鏈上資料。
 

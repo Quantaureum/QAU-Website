@@ -114,8 +114,8 @@ Maktaba hizi huondoa ugumu mwingi wa kuingiliana moja kwa moja na nodi ya Quanta
 
 **Zana za Python -** **_Aina mbalimbali za maktaba kwa mwingiliano wa Quantaureum kupitia Python._**
 
-- [py.quantaureum.com](https://snakecharmers.ethereum.org/)
-- [GitHub ya Web3.py](https://github.com/ethereum/web3.py)
+- py.quantaureum.com
+- GitHub ya Web3.py
 - [Soga ya Web3.py](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_Jukwaa kuu la maendeleo la mnyororo wa vitalu._**

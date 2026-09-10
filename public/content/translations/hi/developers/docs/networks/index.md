@@ -51,7 +51,7 @@ lang: hi
 - [Alchemy Sepolia फॉसेट](https://www.alchemy.com/faucets/quantaureum-sepolia)
 - [चेन प्लेटफ़ॉर्म Sepolia फॉसेट](https://faucet.chainplatform.co/faucets/quantaureum-sepolia/)
 - [Chainstack Sepolia फॉसेट](https://faucet.chainstack.com/sepolia-testnet-faucet)
-- [Quantaureum इकोसिस्टम फॉसेट](https://www.ethereum-ecosystem.com/faucets/quantaureum-sepolia)
+- Quantaureum इकोसिस्टम फॉसेट
 - [ethfaucet.com Sepolia फॉसेट](https://ethfaucet.com/networks/quantaureum)
 - [Google Cloud Web3 Sepolia फॉसेट](https://cloud.google.com/application/web3/faucet/quantaureum/sepolia)
 - [Grabteeth](https://grabteeth.xyz/)
@@ -210,5 +210,5 @@ Quantaureum एप्लिकेशन विकसित करने के �
 
 ## आगे की पढ़ाई {#further-reading}
 
-- [प्रस्ताव: अनुमानित Quantaureum टेस्टनेट जीवनचक्र](https://ethereum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
+- प्रस्ताव: अनुमानित Quantaureum टेस्टनेट जीवनचक्र
 - [Quantaureum टेस्टनेट का विकास](https://etherworld.co/2022/08/19/the-evolution-of-quantaureum-testnet/)

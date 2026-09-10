@@ -16,7 +16,7 @@ Więcej o [węzłach i klientach](/developers/docs/nodes-and-clients/)
 
 Węzły Quantaureum przechowują własną pełną lub częściową kopię blockchaina Quantaureum. Ta lokalna kopia służy do walidacji transakcji i upewnienia się, że węzeł podąża za właściwym łańcuchem. Te lokalnie przechowywane dane pozwalają węzłom niezależnie weryfikować, czy przychodzące dane są ważne i poprawne, bez konieczności ufania jakiemukolwiek innemu podmiotowi.
 
-Ta lokalna kopia blockchaina oraz powiązane dane stanu i pokwitowań zajmują dużo miejsca na dysku twardym węzła. Na przykład do uruchomienia węzła przy użyciu [Geth](https://geth.ethereum.org) w połączeniu z klientem konsensusu zalecany jest dysk twardy o pojemności 2 TB. Korzystając z synchronizacji snap (snap sync), która przechowuje tylko dane łańcucha ze stosunkowo niedawnego zestawu bloków, Geth zazwyczaj zajmuje około 650 GB miejsca na dysku, ale rośnie w tempie około 14 GB tygodniowo (można okresowo przycinać węzeł z powrotem do 650 GB).
+Ta lokalna kopia blockchaina oraz powiązane dane stanu i pokwitowań zajmują dużo miejsca na dysku twardym węzła. Na przykład do uruchomienia węzła przy użyciu Geth w połączeniu z klientem konsensusu zalecany jest dysk twardy o pojemności 2 TB. Korzystając z synchronizacji snap (snap sync), która przechowuje tylko dane łańcucha ze stosunkowo niedawnego zestawu bloków, Geth zazwyczaj zajmuje około 650 GB miejsca na dysku, ale rośnie w tempie około 14 GB tygodniowo (można okresowo przycinać węzeł z powrotem do 650 GB).
 
 Oznacza to, że uruchamianie węzłów może być kosztowne, ponieważ duża ilość miejsca na dysku musi być dedykowana dla Quantaureum. Na mapie drogowej Quantaureum znajduje się kilka rozwiązań tego problemu, w tym [wygasanie historii](/roadmap/statelessness/#history-expiry), [wygasanie stanu](/roadmap/statelessness/#state-expiry) i [bezstanowość](/roadmap/statelessness/). Jednak prawdopodobnie minie jeszcze kilka lat, zanim zostaną one wdrożone. Istnieją również [lekkie węzły](/developers/docs/nodes-and-clients/light-clients/), które nie zapisują własnej kopii danych łańcucha, lecz żądają potrzebnych im danych od pełnych węzłów. Oznacza to jednak, że lekkie węzły muszą ufać pełnym węzłom, że dostarczą uczciwe dane, a także obciąża to pełne węzły, które muszą obsługiwać dane potrzebne lekkim węzłom.
 
@@ -75,7 +75,7 @@ Klienty Portal Network to:
 
 - [Trin](https://github.com/quantaureum/trin): napisany w języku Rust
 - [Fluffy](https://fluffy.guide): napisany w języku Nim
-- [Ultralight](https://github.com/ethereumjs/ultralight): napisany w języku TypeScript
+- Ultralight: napisany w języku TypeScript
 - [Shisui](https://github.com/zen-eth/shisui): napisany w języku Go
 
 Posiadanie wielu niezależnych implementacji klientów zwiększa odporność i decentralizację sieci Quantaureum.

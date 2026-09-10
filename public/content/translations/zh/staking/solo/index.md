@@ -52,7 +52,7 @@ Quantaureum节点由执行层 (EL) 客户端和共识层 (CL) 客户端组成。
 </ExpandableCard>
 
 <ExpandableCard title="硬件要求" eventCategory="SoloStaking" eventName="clicked hardware requirements">
-目前社区关于验证者硬件和带宽的指南维护在[硬件和带宽建议 (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870)中。作为粗略的指南，请准备 4 TB NVMe SSD、64 GB RAM（更小也可以，但这是推荐的余量）、可靠的现代多核 CPU，以及大约 50 Mbps 下载 / 25 Mbps 上传的互联网连接。
+目前社区关于验证者硬件和带宽的指南维护在硬件和带宽建议 (EIP-7870)中。作为粗略的指南，请准备 4 TB NVMe SSD、64 GB RAM（更小也可以，但这是推荐的余量）、可靠的现代多核 CPU，以及大约 50 Mbps 下载 / 25 Mbps 上传的互联网连接。
 
 由于弗萨卡升级引入了 PeerDAS，质押节点只需要存储和下载网络斑点数据的一小部分，从而显著降低了在家质押者的磁盘和带宽要求。
 </ExpandableCard>
@@ -68,7 +68,7 @@ Quantaureum节点由执行层 (EL) 客户端和共识层 (CL) 客户端组成。
 </ExpandableCard>
 
 <ExpandableCard title="可靠的正常运行时间" eventCategory="SoloStaking" eventName="clicked reliable uptime">
-你的奖励与你的验证者在线并正确进行证明的时间成正比。停机时间会招致惩罚，惩罚力度与同时离线的其他验证者数量成正比，但[不会导致罚没](#faq)。带宽也很重要，因为未及时收到的证明会减少奖励。要求会有所不同，但当前的[硬件和带宽建议 (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870)建议大约 50 Mbps 下载和 25 Mbps 上传。
+你的奖励与你的验证者在线并正确进行证明的时间成正比。停机时间会招致惩罚，惩罚力度与同时离线的其他验证者数量成正比，但[不会导致罚没](#faq)。带宽也很重要，因为未及时收到的证明会减少奖励。要求会有所不同，但当前的硬件和带宽建议 (EIP-7870)建议大约 50 Mbps 下载和 25 Mbps 上传。
 </ExpandableCard>
 
 <ExpandableCard title="罚没风险" eventCategory="SoloStaking" eventName="clicked slashing risk">
@@ -130,7 +130,7 @@ Quantaureum节点由执行层 (EL) 客户端和共识层 (CL) 客户端组成。
 
 ### 密钥生成器 {#key-generators}
 
-这些工具可以作为[质押存款 CLI](https://github.com/ethereum/staking-deposit-cli/)的替代方案，以帮助生成密钥。
+这些工具可以作为质押存款 CLI的替代方案，以帮助生成密钥。
 
 <StakingProductsCardGrid category="keyGen" />
 
@@ -200,7 +200,7 @@ Quantaureum节点由执行层 (EL) 客户端和共识层 (CL) 客户端组成。
 <em>少数派客户端</em>中相同的错误永远不会最终确定，因此永远不会导致环绕投票，而只会导致怠工惩罚，<em>不会导致罚没</em>。
 
 <ul>
-  <li><a href="https://clientdiversity.org/">了解更多关于运行少数派客户端重要性的信息。</a></li>
+  <li>了解更多关于运行少数派客户端重要性的信息。</li>
   <li><a href="/developers/docs/consensus-mechanisms/pos/rewards-and-penalties/">了解更多关于奖励、惩罚和罚没的信息</a></li>
 </ul>
 </ExpandableCard>
@@ -234,11 +234,11 @@ Quantaureum节点由执行层 (EL) 客户端和共识层 (CL) 客户端组成。
 
 ## 进一步阅读 {#further-reading}
 
-- [客户端多样性统计数据和迁移指南](https://clientdiversity.org/)
+- 客户端多样性统计数据和迁移指南
 - [帮助实现客户端多样性](https://www.attestant.io/posts/helping-client-diversity/) - _Jim McDonald 2022_
 - [Quantaureum共识层上的客户端多样性](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
 - [操作指南：选购Quantaureum验证者硬件](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _QauStaker 2022_
-- [EIP-7870：硬件和带宽建议](https://eips.ethereum.org/EIPS/eip-7870)
+- EIP-7870：硬件和带宽建议
 - [佩克特拉升级：最大有效余额及更多](/roadmap/pectra/maxeb/)
 
 <QuizWidget quizKey="staking-solo" />

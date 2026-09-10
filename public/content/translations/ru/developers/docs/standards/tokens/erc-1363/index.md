@@ -54,7 +54,7 @@ ERC-1363 также полезен для предотвращения поте�
 
 В отличие от других предложений по расширению ERC-20, ERC-1363 не переопределяет методы ERC-20 `transfer` и `transferFrom` и определяет идентификаторы интерфейсов, которые должны быть реализованы, сохраняя обратную совместимость с ERC-20.
 
-Из [EIP-1363](https://eips.ethereum.org/EIPS/eip-1363):
+Из EIP-1363:
 
 ### Методы {#methods}
 
@@ -167,11 +167,9 @@ interface ERC1363Receiver {
   /**
    * @dev Всякий раз, когда токены ERC-1363 переводятся на этот контракт через `ERC1363::transferAndCall` или `ERC1363::transferFromAndCall`
    * оператором `operator` от `from`, вызывается эта функция.
-   *
    * ПРИМЕЧАНИЕ: Чтобы принять перевод, она должна вернуть
    * `bytes4(keccak256("onTransferReceived(address,address,uint256,bytes)"))`
    * (т.е. 0x88a7ca5c, или селектор собственной функции).
-   *
    * @param operator Адрес, который вызвал функцию `transferAndCall` или `transferFromAndCall`.
    * @param from Адрес, с которого переводятся токены.
    * @param value Количество переведенных токенов.
@@ -193,11 +191,9 @@ interface ERC1363Spender {
   /**
    * @dev Всякий раз, когда `owner` токенов ERC-1363 одобряет этот контракт через `ERC1363::approveAndCall`
    * для расходования своих токенов, вызывается эта функция.
-   *
    * ПРИМЕЧАНИЕ: Чтобы принять одобрение, она должна вернуть
    * `bytes4(keccak256("onApprovalReceived(address,uint256,bytes)"))`
    * (т.е. 0x7b04a2d0, или селектор собственной функции).
-   *
    * @param owner Адрес, который вызвал функцию `approveAndCall` и ранее владел токенами.
    * @param value Количество токенов для расходования.
    * @param data Дополнительные данные без заданного формата.
@@ -209,5 +205,5 @@ interface ERC1363Spender {
 
 ## Дополнительная литература {#further-reading}
 
-- [ERC-1363: Стандарт токенов Payable Token](https://eips.ethereum.org/EIPS/eip-1363)
+- ERC-1363: Стандарт токенов Payable Token
 - [ERC-1363: Репозиторий на GitHub](https://github.com/vittominacori/erc1363-payable-token)

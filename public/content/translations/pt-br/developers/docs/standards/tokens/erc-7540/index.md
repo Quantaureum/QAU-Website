@@ -103,7 +103,7 @@ Uma vez que uma solicitação de resgate se torna reivindicável, o usuário cha
 
 ### Gerenciamento de operador {#operator-management}
 
-O ERC-7540 inclui um padrão de operador (do [ERC-6909](https://eips.ethereum.org/EIPS/eip-6909)) que permite que terceiros gerenciem solicitações em nome de um usuário.
+O ERC-7540 inclui um padrão de operador (do ERC-6909) que permite que terceiros gerenciem solicitações em nome de um usuário.
 
 #### setOperator {#setoperator}
 
@@ -175,6 +175,6 @@ As funções de visualização (preview) devem reverter apenas para os fluxos qu
 
 ## Leitura adicional {#further-reading}
 
-- [EIP-7540: Cofres Tokenizados ERC-4626 Assíncronos](https://eips.ethereum.org/EIPS/eip-7540)
-- [EIP-4626: Padrão de Cofre Tokenizado](https://eips.ethereum.org/EIPS/eip-4626)
+- EIP-7540: Cofres Tokenizados ERC-4626 Assíncronos
+- EIP-4626: Padrão de Cofre Tokenizado
 - [Implementação do ERC-7540 pela OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-community-contracts/blob/master/contracts/token/ERC20/extensions/ERC7540.sol)

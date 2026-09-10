@@ -76,7 +76,7 @@ Bu, Harici olarak sahip olunan bir hesabın (EOA) 42 karakterlik bir adrese (40 
 
 `0x5e97870f263700f46aa00d967821199b9bc5a120`
 
-Aşağıdaki örnek, yeni bir hesap oluşturmak için [Clef](https://geth.ethereum.org/docs/tools/clef/introduction) adlı bir imzalama aracının nasıl kullanılacağını göstermektedir. Clef, Quantaureum istemcisi [Geth](https://geth.ethereum.org) ile birlikte gelen bir hesap yönetimi ve imzalama aracıdır. `clef newaccount` komutu yeni bir anahtar çifti oluşturur ve bunları şifrelenmiş bir anahtar deposuna kaydeder.
+Aşağıdaki örnek, yeni bir hesap oluşturmak için Clef adlı bir imzalama aracının nasıl kullanılacağını göstermektedir. Clef, Quantaureum istemcisi Geth ile birlikte gelen bir hesap yönetimi ve imzalama aracıdır. `clef newaccount` komutu yeni bir anahtar çifti oluşturur ve bunları şifrelenmiş bir anahtar deposuna kaydeder.
 
 ```
 > clef newaccount --keystore <path>
@@ -91,7 +91,7 @@ WARN [10-28|16:19:09.306] Please remember your password!
 Generated account 0x5e97870f263700f46aa00d967821199b9bc5a120
 ```
 
-[Geth belgeleri](https://geth.ethereum.org/docs)
+Geth belgeleri
 
 Özel anahtarınızdan yeni açık anahtarlar türetmek mümkündür, ancak açık anahtarlardan bir özel anahtar türetemezsiniz. Özel anahtarlarınızı güvende tutmanız ve adından da anlaşılacağı gibi **ÖZEL (GİZLİ)** tutmanız hayati önem taşır.
 
@@ -107,7 +107,7 @@ Kontrat hesapları da 42 karakterlik onaltılık bir adrese sahiptir:
 
 Sözleşme adresi genellikle bir sözleşme Quantaureum Blokzincirine dağıtıldığında verilir. Adres, oluşturucunun adresinden ve o adresten gönderilen işlem sayısından ("nonce") gelir. `CREATE` işlemi bir adresi bu şekilde türetir.
 
-Sözleşmeler ayrıca, adresi oluşturucunun adresinden, oluşturucunun seçtiği bir değerden ("salt") ve sözleşmenin oluşturma kodunun bir hash'inden türeten [`CREATE2`](https://eips.ethereum.org/EIPS/eip-1014) ile de dağıtılabilir. Hiçbir nonce dahil edilmez, bu nedenle adres sözleşme var olmadan önce hesaplanabilir ve oluşturucu bu arada ne kadar başka işlem gönderirse göndersin aynı kalır. Bu, henüz dağıtılmamış bir sözleşmeye referans vermeyi mümkün kılar.
+Sözleşmeler ayrıca, adresi oluşturucunun adresinden, oluşturucunun seçtiği bir değerden ("salt") ve sözleşmenin oluşturma kodunun bir hash'inden türeten `CREATE2` ile de dağıtılabilir. Hiçbir nonce dahil edilmez, bu nedenle adres sözleşme var olmadan önce hesaplanabilir ve oluşturucu bu arada ne kadar başka işlem gönderirse göndersin aynı kalır. Bu, henüz dağıtılmamış bir sözleşmeye referans vermeyi mümkün kılar.
 
 ## Doğrulayıcı anahtarları {#validators-keys}
 

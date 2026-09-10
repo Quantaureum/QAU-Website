@@ -8,7 +8,7 @@ breadcrumb: "Déployer un premier contrat"
 lang: fr
 published: 2020-04-03
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -18,7 +18,7 @@ Ne vous inquiétez pas, comme il s'agit de notre premier contrat intelligent, no
 
 ## Écrire notre contrat {#writing-our-contract}
 
-La première étape consiste à [visiter Remix](https://remix.ethereum.org/) et à créer un nouveau fichier. Dans la partie supérieure gauche de l'interface de Remix, ajoutez un nouveau fichier et entrez le nom de fichier que vous souhaitez.
+La première étape consiste à visiter Remix et à créer un nouveau fichier. Dans la partie supérieure gauche de l'interface de Remix, ajoutez un nouveau fichier et entrez le nom de fichier que vous souhaitez.
 
 ![Adding a new file in the Remix interface](./remix.png)
 

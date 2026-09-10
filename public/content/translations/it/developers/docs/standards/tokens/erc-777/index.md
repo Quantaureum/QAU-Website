@@ -24,11 +24,11 @@ L'ERC-777 fornisce i seguenti miglioramenti rispetto all'ERC-20.
 
 Gli hook sono una funzione descritta nel codice di uno smart contract. Gli hook vengono chiamati quando i token vengono inviati o ricevuti tramite il contratto. Ciò consente a uno smart contract di reagire ai token in entrata o in uscita.
 
-Gli hook vengono registrati e scoperti utilizzando lo standard [ERC-1820](https://eips.ethereum.org/EIPS/eip-1820).
+Gli hook vengono registrati e scoperti utilizzando lo standard ERC-1820.
 
 #### Perché gli hook sono fantastici? {#why-are-hooks-great}
 
-1. Gli hook consentono di inviare token a un contratto e di notificare il contratto in una singola transazione, a differenza dell'[ERC-20](https://eips.ethereum.org/EIPS/eip-20), che richiede una doppia chiamata (`approve`/`transferFrom`) per ottenere questo risultato.
+1. Gli hook consentono di inviare token a un contratto e di notificare il contratto in una singola transazione, a differenza dell'ERC-20, che richiede una doppia chiamata (`approve`/`transferFrom`) per ottenere questo risultato.
 2. I contratti che non hanno registrato hook sono incompatibili con l'ERC-777. Il contratto mittente interromperà la transazione quando il contratto ricevente non ha registrato un hook. Questo previene trasferimenti accidentali a smart contract non ERC-777.
 3. Gli hook possono rifiutare le transazioni.
 
@@ -42,4 +42,4 @@ Lo standard risolve anche la confusione attorno a `decimals` causata nell'ERC-20
 
 ## Letture consigliate {#further-reading}
 
-[EIP-777: Standard dei Token](https://eips.ethereum.org/EIPS/eip-777)
+EIP-777: Standard dei Token

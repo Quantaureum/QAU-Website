@@ -191,7 +191,7 @@ Então, o que esse código _faz_ exatamente? Vamos detalhá-lo, linha por linha.
 
 No topo do nosso contrato inteligente, importamos três classes de contratos inteligentes da [OpenZeppelin](https://openzeppelin.com/):
 
-- @openzeppelin/contracts/token/ERC721/ERC721.sol contém a implementação do padrão ERC-721, que nosso contrato inteligente de NFT herdará. (Para ser um NFT válido, seu contrato inteligente deve implementar todos os métodos do padrão ERC-721.) Para saber mais sobre as funções ERC-721 herdadas, confira a definição da interface [aqui](https://eips.ethereum.org/EIPS/eip-721).
+- @openzeppelin/contracts/token/ERC721/ERC721.sol contém a implementação do padrão ERC-721, que nosso contrato inteligente de NFT herdará. (Para ser um NFT válido, seu contrato inteligente deve implementar todos os métodos do padrão ERC-721.) Para saber mais sobre as funções ERC-721 herdadas, confira a definição da interface aqui.
 
 - @openzeppelin/contracts/utils/Counters.sol fornece contadores que só podem ser incrementados ou decrementados em um. Nosso contrato inteligente usa um contador para rastrear o número total de NFTs cunhados e definir o ID exclusivo em nosso novo NFT. (Cada NFT cunhado usando um contrato inteligente deve receber um ID exclusivo — aqui, nosso ID exclusivo é determinado apenas pelo número total de NFTs existentes. Por exemplo, o primeiro NFT que cunhamos com nosso contrato inteligente tem um ID de "1", nosso segundo NFT tem um ID de "2", etc.)
 

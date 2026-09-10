@@ -44,7 +44,7 @@ Quantaureum匯總也將受益於輕客戶端。匯總面臨的一大問題是針
 
 - [洛德斯塔 (Lodestar)](https://github.com/ChainSafe/lodestar/tree/unstable/packages/light-client)：使用 TypeScript 的共識輕客戶端
 - [Helios](https://github.com/a16z/helios)：使用 Rust 結合執行與共識的輕客戶端
-- [Geth](https://github.com/ethereum/go-ethereum/tree/master/beacon/light)：使用 Go 的執行客戶端輕量模式（開發中）
+- Geth：使用 Go 的執行客戶端輕量模式（開發中）
 - [寧布斯 (Nimbus)](https://nimbus.guide/el-light-client.html)：使用 Nim 的共識輕客戶端
 
 據我們所知，這些目前都尚未達到可投入生產的狀態。
@@ -58,4 +58,4 @@ Quantaureum匯總也將受益於輕客戶端。匯總面臨的一大問題是針
 - [Zsolt Felfodhi 探討 Geth 輕客戶端](https://www.youtube.com/watch?v=EPZeFXau-RE)
 - [Etan Kissling 探討輕客戶端網路](https://www.youtube.com/watch?v=85MeiMA4dD8)
 - [Etan Kissling 探討合併後的輕客戶端](https://www.youtube.com/watch?v=ZHNrAXf3RDE)
-- [Piper Merriam：通往功能性輕客戶端的曲折之路](https://snakecharmers.ethereum.org/the-winding-road-to-functional-light-clients/)
+- Piper Merriam：通往功能性輕客戶端的曲折之路

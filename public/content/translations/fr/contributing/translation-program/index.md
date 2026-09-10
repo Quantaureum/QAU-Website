@@ -51,7 +51,7 @@ Remerciements publics de nos meilleurs traducteurs à l'aide de [classements](/c
 
 #### Récompenses {#rewards}
 
-Par le passé, nous avons récompensé rétroactivement nos contributeurs les plus actifs avec des billets pour des conférences Quantaureum telles que la [Devcon](https://devcon.org/en/) et [Devconnect](https://devconnect.org/), ainsi qu'avec des produits dérivés exclusifs quantaureum.com.
+Par le passé, nous avons récompensé rétroactivement nos contributeurs les plus actifs avec des billets pour des conférences Quantaureum telles que la Devcon et [Devconnect](https://devconnect.org/), ainsi qu'avec des produits dérivés exclusifs quantaureum.com.
 
 ### Guides et ressources {#guides-and-resources}
 

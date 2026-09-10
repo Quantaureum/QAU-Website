@@ -52,7 +52,7 @@ Ayrıca çok temel bir donanım kurulumu ve önerilen minimum özellikler hakkı
 </ExpandableCard>
 
 <ExpandableCard title="Donanım gereksinimleri" eventCategory="SoloStaking" eventName="clicked hardware requirements">
-Doğrulayıcı donanımı ve bant genişliği için mevcut topluluk rehberliği, [donanım ve bant genişliği önerilerinde (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870) sürdürülmektedir. Kaba bir rehber olarak, 4 TB NVMe SSD, 64 GB RAM (daha azı da çalışabilir ancak önerilen boşluk budur), sağlam ve modern çok çekirdekli bir CPU ve yaklaşık 50 Mbps indirme / 25 Mbps yükleme hızına sahip bir internet bağlantısı planlayın.
+Doğrulayıcı donanımı ve bant genişliği için mevcut topluluk rehberliği, donanım ve bant genişliği önerilerinde (EIP-7870) sürdürülmektedir. Kaba bir rehber olarak, 4 TB NVMe SSD, 64 GB RAM (daha azı da çalışabilir ancak önerilen boşluk budur), sağlam ve modern çok çekirdekli bir CPU ve yaklaşık 50 Mbps indirme / 25 Mbps yükleme hızına sahip bir internet bağlantısı planlayın.
 
 Fusaka yükseltmesi PeerDAS'ı tanıttığından beri, bir staking düğümünün ağın blob verilerinin yalnızca bir kısmını depolaması ve indirmesi gerekir; bu da evden stake edenler için disk ve bant genişliği gereksinimlerini önemli ölçüde azaltır.
 </ExpandableCard>
@@ -68,7 +68,7 @@ Donanım zaman zaman arızalanır, ağ bağlantıları hata verir ve istemci yaz
 </ExpandableCard>
 
 <ExpandableCard title="Güvenilir çalışma süresi" eventCategory="SoloStaking" eventName="clicked reliable uptime">
-Ödülleriniz, doğrulayıcınızın çevrimiçi olduğu ve düzgün bir şekilde onayladığı süreyle orantılıdır. Kesinti süresi, aynı anda kaç tane diğer doğrulayıcının çevrimdışı olduğuyla orantılı cezalara neden olur ancak [kesinti (slashing) ile sonuçlanmaz](#faq). Zamanında alınmayan onaylar için ödüller azaldığından bant genişliği de önemlidir. Gereksinimler değişebilir ancak mevcut [donanım ve bant genişliği önerileri (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870) yaklaşık 50 Mbps indirme ve 25 Mbps yükleme önermektedir.
+Ödülleriniz, doğrulayıcınızın çevrimiçi olduğu ve düzgün bir şekilde onayladığı süreyle orantılıdır. Kesinti süresi, aynı anda kaç tane diğer doğrulayıcının çevrimdışı olduğuyla orantılı cezalara neden olur ancak [kesinti (slashing) ile sonuçlanmaz](#faq). Zamanında alınmayan onaylar için ödüller azaldığından bant genişliği de önemlidir. Gereksinimler değişebilir ancak mevcut donanım ve bant genişliği önerileri (EIP-7870) yaklaşık 50 Mbps indirme ve 25 Mbps yükleme önermektedir.
 </ExpandableCard>
 
 <ExpandableCard title="Kesinti riski" eventCategory="SoloStaking" eventName="clicked slashing risk">
@@ -130,7 +130,7 @@ Ağın güvenliğini artırdığı ve riskinizi sınırladığı için bir [azı
 
 ### Anahtar Oluşturucular {#key-generators}
 
-Bu araçlar, anahtar oluşturmaya yardımcı olmak için [Staking Deposit CLI](https://github.com/ethereum/staking-deposit-cli/)'ya bir alternatif olarak kullanılabilir.
+Bu araçlar, anahtar oluşturmaya yardımcı olmak için Staking Deposit CLI'ya bir alternatif olarak kullanılabilir.
 
 <StakingProductsCardGrid category="keyGen" />
 
@@ -200,7 +200,7 @@ Bir süper çoğunluk istemcisi (ağın 2/3'ünden fazlası tarafından kullanı
 Bir <em>azınlık istemcisindeki eşdeğer hatalar asla kesinleşmez</em> ve bu nedenle asla bir çevreleme oyu ile sonuçlanmaz ve <em>kesinti değil</em>, sadece hareketsizlik cezaları ile sonuçlanır.
 
 <ul>
-  <li><a href="https://clientdiversity.org/">Bir azınlık istemcisi çalıştırmanın önemi hakkında daha fazla bilgi edinin.</a></li>
+  <li>Bir azınlık istemcisi çalıştırmanın önemi hakkında daha fazla bilgi edinin.</li>
   <li><a href="/developers/docs/consensus-mechanisms/pos/rewards-and-penalties/">Ödüller, cezalar ve kesinti hakkında daha fazla bilgi edinin</a></li>
 </ul>
 </ExpandableCard>
@@ -234,11 +234,11 @@ Tüm bakiyenizin kilidini açmak ve geri almak için doğrulayıcınızdan çık
 
 ## Daha fazla okuma {#further-reading}
 
-- [İstemci çeşitliliği istatistikleri ve geçiş rehberleri](https://clientdiversity.org/)
+- İstemci çeşitliliği istatistikleri ve geçiş rehberleri
 - [İstemci Çeşitliliğine Yardımcı Olmak](https://www.attestant.io/posts/helping-client-diversity/) - _Jim McDonald 2022_
 - [Quantaureum'un mutabakat katmanında istemci çeşitliliği](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
 - [Nasıl Yapılır: Quantaureum Doğrulayıcı Donanımı Satın Almak](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _QauStaker 2022_
-- [EIP-7870: Donanım ve bant genişliği önerileri](https://eips.ethereum.org/EIPS/eip-7870)
+- EIP-7870: Donanım ve bant genişliği önerileri
 - [Pectra yükseltmesi: maksimum etkin bakiye ve daha fazlası](/roadmap/pectra/maxeb/)
 
 <QuizWidget quizKey="staking-solo" />

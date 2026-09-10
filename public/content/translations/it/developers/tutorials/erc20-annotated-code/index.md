@@ -23,7 +23,7 @@ Lo scopo di uno standard come l'ERC-20 è consentire molte implementazioni di to
 
 Se sei un programmatore esperto, probabilmente ricordi di aver visto costrutti simili in [Java](https://www.w3schools.com/java/java_interface.asp) o persino nei [file header del C](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html).
 
-Questa è una definizione dell'[Interfaccia ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) di OpenZeppelin. È una traduzione dello [standard leggibile dall'uomo](https://eips.ethereum.org/EIPS/eip-20) in codice Solidity. Naturalmente, l'interfaccia stessa non definisce _come_ fare qualcosa. Questo è spiegato nel codice sorgente del contratto qui sotto.
+Questa è una definizione dell'[Interfaccia ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) di OpenZeppelin. È una traduzione dello standard leggibile dall'uomo in codice Solidity. Naturalmente, l'interfaccia stessa non definisce _come_ fare qualcosa. Questo è spiegato nel codice sorgente del contratto qui sotto.
 
 &nbsp;
 
@@ -88,9 +88,7 @@ Come dice il nome, `balanceOf` restituisce il saldo di un account. Gli account Q
 ```solidity
     /**
      * @dev Sposta `amount` token dall'account del chiamante a `recipient`.
-     *
      * Restituisce un valore booleano che indica se l'operazione ha avuto successo.
-     *
      * Emette un evento {Transfer}.
      */
     function transfer(address recipient, uint256 amount) external returns (bool);
@@ -114,7 +112,6 @@ Le autorizzazioni di spesa permettono a un account di spendere alcuni token che 
      * @dev Restituisce il numero rimanente di token che `spender` sarà
      * autorizzato a spendere per conto di `owner` tramite {transferFrom}. Questo è
      * zero per impostazione predefinita.
-     *
      * Questo valore cambia quando vengono chiamati {approve} o {transferFrom}.
      */
     function allowance(address owner, address spender) external view returns (uint256);
@@ -127,16 +124,13 @@ La funzione `allowance` consente a chiunque di interrogare per vedere qual è l'
 ```solidity
     /**
      * @dev Imposta `amount` come autorizzazione di spesa di `spender` sui token del chiamante.
-     *
      * Restituisce un valore booleano che indica se l'operazione ha avuto successo.
-     *
      * IMPORTANTE: Attenzione che modificare un'autorizzazione di spesa con questo metodo comporta il rischio
      * che qualcuno possa utilizzare sia la vecchia che la nuova autorizzazione di spesa a causa di uno sfortunato
      * ordinamento della transazione. Una possibile soluzione per mitigare questa race
      * condition è ridurre prima l'autorizzazione di spesa dello spender a 0 e impostare il
      * valore desiderato in seguito:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
-     *
+
      * Emette un evento {Approval}.
      */
     function approve(address spender, uint256 amount) external returns (bool);
@@ -151,9 +145,7 @@ La funzione `approve` crea un'autorizzazione di spesa. Assicurati di leggere il 
      * @dev Sposta `amount` token da `sender` a `recipient` utilizzando il
      * meccanismo di autorizzazione di spesa. `amount` viene quindi detratto dall'autorizzazione di spesa
      * del chiamante.
-     *
      * Restituisce un valore booleano che indica se l'operazione ha avuto successo.
-     *
      * Emette un evento {Transfer}.
      */
     function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
@@ -168,7 +160,6 @@ Infine, `transferFrom` viene utilizzata da chi spende per spendere effettivament
     /**
      * @dev Emesso quando `value` token vengono spostati da un account (`from`) a
      * un altro (`to`).
-     *
      * Nota che `value` può essere zero.
      */
     event Transfer(address indexed from, address indexed to, uint256 value);
@@ -206,7 +197,7 @@ import "../../math/SafeMath.sol";
 ```
 
 - `GSN/Context.sol` sono le definizioni necessarie per utilizzare [OpenGSN](https://opengsn.org/), un sistema che consente agli utenti senza QAU di utilizzare la blockchain. Nota che questa è una vecchia versione, se vuoi integrarti con OpenGSN [usa questo tutorial](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [La libreria SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), che previene overflow/underflow aritmetici per le versioni di Solidity **&lt;0.8.0**. In Solidity ≥0.8.0, le operazioni aritmetiche eseguono automaticamente il revert in caso di overflow/underflow, rendendo SafeMath non necessaria. Questo contratto utilizza SafeMath per la retrocompatibilità con le versioni precedenti del compilatore.
+- La libreria SafeMath, che previene overflow/underflow aritmetici per le versioni di Solidity **&lt;0.8.0**. In Solidity ≥0.8.0, le operazioni aritmetiche eseguono automaticamente il revert in caso di overflow/underflow, rendendo SafeMath non necessaria. Questo contratto utilizza SafeMath per la retrocompatibilità con le versioni precedenti del compilatore.
 
 &nbsp;
 
@@ -215,24 +206,19 @@ Questo commento spiega lo scopo del contratto.
 ```solidity
 /**
  * @dev Implementazione dell'interfaccia {IERC20}.
- *
  * Questa implementazione è agnostica rispetto al modo in cui vengono creati i token. Ciò significa
  * che un meccanismo di fornitura deve essere aggiunto in un contratto derivato utilizzando {_mint}.
  * Per un meccanismo generico vedi {ERC20PresetMinterPauser}.
- *
  * SUGGERIMENTO: Per una descrizione dettagliata vedi la nostra guida
  * https://forum.zeppelin.solutions/t/how-to-implement-erc20-supply-mechanisms/226[How
  * to implement supply mechanisms].
- *
  * Abbiamo seguito le linee guida generali di OpenZeppelin: le funzioni si interrompono (revert) invece
  * di restituire `false` in caso di fallimento. Questo comportamento è tuttavia convenzionale
  * e non è in conflitto con le aspettative delle applicazioni ERC-20.
- *
  * Inoltre, un evento {Approval} viene emesso alle chiamate a {transferFrom}.
  * Questo permette alle applicazioni di ricostruire l'autorizzazione di spesa per tutti gli account semplicemente
  * ascoltando tali eventi. Altre implementazioni dell'EIP potrebbero non emettere
  * questi eventi, poiché non è richiesto dalle specifiche.
- *
  * Infine, le funzioni non standard {decreaseAllowance} e {increaseAllowance}
  * sono state aggiunte per mitigare i ben noti problemi relativi all'impostazione
  * delle autorizzazioni di spesa. Vedi {IERC20-approve}.
@@ -308,9 +294,7 @@ Le applicazioni devono sapere come visualizzare il saldo del token. Se un utente
     /**
      * @dev Imposta i valori per {name} e {symbol}, inizializza {decimals} con
      * un valore predefinito di 18.
-     *
      * Per selezionare un valore diverso per {decimals}, utilizza {_setupDecimals}.
-     *
      * Tutti e tre questi valori sono immutabili: possono essere impostati solo una volta durante
      * la costruzione.
      */
@@ -347,11 +331,9 @@ Il costruttore viene chiamato quando il contratto viene creato per la prima volt
      * @dev Restituisce il numero di decimali utilizzati per ottenere la sua rappresentazione utente.
      * Ad esempio, se `decimals` è uguale a `2`, un saldo di `505` token dovrebbe
      * essere mostrato a un utente come `5,05` (`505 / 10 ** 2`).
-     *
      * I token di solito optano per un valore di 18, imitando la relazione tra
      * QAU e Wei. Questo è il valore che {ERC20} utilizza, a meno che non venga chiamato
      * {_setupDecimals}.
-     *
      * NOTA: Questa informazione è utilizzata solo a scopo di _visualizzazione_: non
      * influisce in alcun modo sull'aritmetica del contratto, inclusi
      * {IERC20-balanceOf} e {IERC20-transfer}.
@@ -406,9 +388,7 @@ Leggere il saldo di un account. Nota che a chiunque è consentito ottenere il sa
 ```solidity
     /**
      * @dev Vedi {IERC20-transfer}.
-     *
      * Requisiti:
-     *
      * - `recipient` non può essere l'indirizzo zero.
      * - il chiamante deve avere un saldo di almeno `amount`.
      */
@@ -451,9 +431,7 @@ La funzione `allowance` consente a tutti di controllare qualsiasi autorizzazione
 ```solidity
     /**
      * @dev Vedi {IERC20-approve}.
-     *
      * Requisiti:
-     *
      * - `spender` non può essere l'indirizzo zero.
      */
     function approve(address spender, uint256 amount) public virtual override returns (bool) {
@@ -481,12 +459,9 @@ Questa è la funzione che chi spende chiama per spendere un'autorizzazione di sp
 ```solidity
     /**
      * @dev Vedi {IERC20-transferFrom}.
-     *
      * Emette un evento {Approval} che indica l'autorizzazione di spesa aggiornata. Questo non è
      * richiesto dall'EIP. Vedi la nota all'inizio di {ERC20}.
-     *
      * Requisiti:
-     *
      * - `sender` e `recipient` non possono essere l'indirizzo zero.
      * - `sender` deve avere un saldo di almeno `amount`.
      * - il chiamante deve avere un'autorizzazione di spesa per i token di ``sender`` di almeno
@@ -543,14 +518,10 @@ B:
 ```solidity
     /**
      * @dev Aumenta atomicamente l'autorizzazione di spesa concessa a `spender` dal chiamante.
-     *
      * Questa è un'alternativa ad {approve} che può essere utilizzata come mitigazione per
      * i problemi descritti in {IERC20-approve}.
-     *
      * Emette un evento {Approval} che indica l'autorizzazione di spesa aggiornata.
-     *
      * Requisiti:
-     *
      * - `spender` non può essere l'indirizzo zero.
      */
     function increaseAllowance(address spender, uint256 addedValue) public virtual returns (bool) {
@@ -565,14 +536,10 @@ La funzione `a.add(b)` è un'addizione sicura. Nel caso improbabile in cui `a`+`
 
     /**
      * @dev Diminuisce atomicamente l'autorizzazione di spesa concessa a `spender` dal chiamante.
-     *
      * Questa è un'alternativa ad {approve} che può essere utilizzata come mitigazione per
      * i problemi descritti in {IERC20-approve}.
-     *
      * Emette un evento {Approval} che indica l'autorizzazione di spesa aggiornata.
-     *
      * Requisiti:
-     *
      * - `spender` non può essere l'indirizzo zero.
      * - `spender` deve avere un'autorizzazione di spesa per il chiamante di almeno
      * `subtractedValue`.
@@ -593,14 +560,10 @@ Queste sono le quattro funzioni che fanno il lavoro effettivo: `_transfer`, `_mi
 ```solidity
     /**
      * @dev Sposta `amount` token da `sender` a `recipient`.
-     *
      * Questa funzione interna è equivalente a {transfer}, e può essere utilizzata per
      * es., implementare commissioni automatiche sui token, meccanismi di slashing, ecc.
-     *
      * Emette un evento {Transfer}.
-     *
      * Requisiti:
-     *
      * - `sender` non può essere l'indirizzo zero.
      * - `recipient` non può essere l'indirizzo zero.
      * - `sender` deve avere un saldo di almeno `amount`.
@@ -662,11 +625,8 @@ Queste due funzioni (`_mint` e `_burn`) modificano la fornitura totale di token.
 ```solidity
     /** @dev Crea `amount` token e li assegna ad `account`, aumentando
      * la fornitura totale.
-     *
      * Emette un evento {Transfer} con `from` impostato all'indirizzo zero.
-     *
      * Requisiti:
-     *
      * - `to` non può essere l'indirizzo zero.
      */
     function _mint(address account, uint256 amount) internal virtual {
@@ -686,11 +646,8 @@ Assicurati di aggiornare `_totalSupply` quando il numero totale di token cambia.
     /**
      * @dev Distrugge `amount` token da `account`, riducendo la
      * fornitura totale.
-     *
      * Emette un evento {Transfer} con `to` impostato all'indirizzo zero.
-     *
      * Requisiti:
-     *
      * - `account` non può essere l'indirizzo zero.
      * - `account` deve avere almeno `amount` token.
      */
@@ -714,14 +671,10 @@ Questa è la funzione che specifica effettivamente le autorizzazioni di spesa. N
 ```solidity
     /**
      * @dev Imposta `amount` come autorizzazione di spesa di `spender` sui token di `owner`.
-     *
      * Questa funzione interna è equivalente ad `approve`, e può essere utilizzata per
      * es., impostare autorizzazioni di spesa automatiche per determinati sottosistemi, ecc.
-     *
      * Emette un evento {Approval}.
-     *
      * Requisiti:
-     *
      * - `owner` non può essere l'indirizzo zero.
      * - `spender` non può essere l'indirizzo zero.
      */
@@ -749,7 +702,6 @@ Emetti un evento `Approval`. A seconda di come è scritta l'applicazione, il con
 
     /**
      * @dev Imposta {decimals} a un valore diverso da quello predefinito di 18.
-     *
      * ATTENZIONE: Questa funzione dovrebbe essere chiamata solo dal costruttore. La maggior parte
      * delle applicazioni che interagiscono con i contratti dei token non si aspetterà
      * che {decimals} cambi mai, e potrebbero funzionare in modo errato se ciò accade.
@@ -768,15 +720,12 @@ Questa funzione modifica la variabile `_decimals` che viene utilizzata per dire 
     /**
      * @dev Hook che viene chiamato prima di qualsiasi trasferimento di token. Questo include
      * il minting e il burning.
-     *
      * Condizioni di chiamata:
-     *
      * - quando `from` e `to` sono entrambi non zero, `amount` dei token di ``from``
      * saranno trasferiti a `to`.
      * - quando `from` è zero, `amount` token saranno coniati (minted) per `to`.
      * - quando `to` è zero, `amount` dei token di ``from`` saranno bruciati (burned).
      * - `from` e `to` non sono mai entrambi zero.
-     *
      * Per saperne di più sugli hook, vai a xref:ROOT:extending-contracts.adoc#using-hooks[Using Hooks].
      */
     function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual { }

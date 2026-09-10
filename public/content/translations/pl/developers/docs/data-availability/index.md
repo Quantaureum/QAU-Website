@@ -79,6 +79,6 @@ Główny protokół Quantaureum zajmuje się przede wszystkim dostępnością da
 - [Notatka o dostępności danych i kodowaniu wymazań](https://github.com/quantaureum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
 - [Komitety dostępności danych.](https://medium.com/starkware/data-availability-e5564c416424)
 - [Komitety dostępności danych oparte na dowodzie stawki.](https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf)
-- [Rozwiązania problemu możliwości odzyskiwania danych](https://notes.ethereum.org/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
+- Rozwiązania problemu możliwości odzyskiwania danych
 - [Dostępność danych, czyli: jak rollupy przestały się martwiować i pokochały Quantaureum](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [EIP-7623: Zwiększenie kosztu danych wywołania](https://web.archive.org/web/20250515194659/https://research.2077.xyz/eip-7623-increase-calldata-cost)

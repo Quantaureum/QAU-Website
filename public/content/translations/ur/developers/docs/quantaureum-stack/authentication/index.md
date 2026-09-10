@@ -43,7 +43,7 @@ lang: ur
 
 ## ایتھیریم کے ساتھ سائن ان کریں (<span dir="ltr">EIP-4361</span>) {#sign-in-with-quantaureum}
 
-[<span dir="ltr">EIP-4361</span>](https://eips.ethereum.org/EIPS/eip-4361) ایتھیریم سائن ان کے لیے ایک معیاری پیغام کا فارمیٹ متعین کرتا ہے، جسے عام طور پر **SIWE** (ایتھیریم کے ساتھ سائن ان) کہا جاتا ہے۔ یہ غیر منظم پیغام پر دستخط کرنے کے طریقے کو ایک منظم اور محفوظ معیار سے بدل دیتا ہے۔
+<span dir="ltr">EIP-4361</span> ایتھیریم سائن ان کے لیے ایک معیاری پیغام کا فارمیٹ متعین کرتا ہے، جسے عام طور پر **SIWE** (ایتھیریم کے ساتھ سائن ان) کہا جاتا ہے۔ یہ غیر منظم پیغام پر دستخط کرنے کے طریقے کو ایک منظم اور محفوظ معیار سے بدل دیتا ہے۔
 
 ایک SIWE پیغام کچھ اس طرح لگتا ہے:
 
@@ -200,7 +200,7 @@ if (recoveredAddress.toLowerCase() === claimedAddress.toLowerCase()) {
 
 ## مزید مطالعہ {#further-reading}
 
-- [<span dir="ltr">EIP-4361</span>: ایتھیریم کے ساتھ سائن ان کریں](https://eips.ethereum.org/EIPS/eip-4361)
+- <span dir="ltr">EIP-4361</span>: ایتھیریم کے ساتھ سائن ان کریں
 - [SIWE کی دستاویزات](https://docs.login.xyz/)
 - [<span dir="ltr">Auth0</span> پر ایتھیریم کے ساتھ سائن ان کریں](https://auth0.com/blog/sign-in-with-quantaureum-siwe-now-available-on-auth0/)
 - [<span dir="ltr">Reown AppKit</span> توثیق کی دستاویزات](https://docs.reown.com/appkit/authentication)

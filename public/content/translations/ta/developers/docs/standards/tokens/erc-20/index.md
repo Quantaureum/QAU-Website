@@ -42,7 +42,7 @@ ERC-20 வழங்கும் எடுத்துக்காட்டு �
 
 ஒரு திறன் ஒப்பந்தம் பின்வரும் முறைகள் மற்றும் நிகழ்வுகளைச் செயல்படுத்தினால், அதை ERC-20 வில்லை ஒப்பந்தம் என்று அழைக்கலாம், மேலும் அது பயன்படுத்தப்பட்டவுடன், எத்திரியத்தில் உருவாக்கப்பட்ட வில்லைகளைக் கண்காணிக்கும் பொறுப்பை அது ஏற்கும்.
 
-[EIP-20](https://eips.ethereum.org/EIPS/eip-20) இலிருந்து:
+EIP-20 இலிருந்து:
 
 ### முறைகள் {#methods}
 
@@ -170,7 +170,7 @@ ERC-20 மூலம் இந்தச் சிக்கலை முழும�
 
 ## மேலும் படிக்க {#further-reading}
 
-- [EIP-20: ERC-20 வில்லை தரநிலை](https://eips.ethereum.org/EIPS/eip-20)
+- EIP-20: ERC-20 வில்லை தரநிலை
 - [ஓப்பன்செப்பெலின் - வில்லைகள்](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [ஓப்பன்செப்பெலின் - ERC-20 செயலாக்கம்](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Solidity ERC20 வில்லைகளுக்கான வழிகாட்டி](https://www.alchemy.com/overviews/erc20-solidity)

@@ -16,7 +16,7 @@ Pokud chcete vidět, jaké jsou v současnosti nejpalčivější problémy v obl
 
 - [Web3 potřebuje více UX výzkumníků a designérů](https://blog.akasha.org/akasha-conversations-9-web3-needs-more-ux-researchers-and-designers) - Přehled současné vyspělosti designu
 - [Jednoduchý průvodce UX výzkumem ve Web3](https://uxplanet.org/a-complete-guide-to-ux-research-for-web-3-0-products-d6bead20ebb1) - Jednoduchý návod, jak provádět výzkum
-- [Jak přistupovat k rozhodnutím o UX ve Web3](https://archive.devcon.org/archive/watch/6/data-empathy-how-to-approach-ux-decisions-in-web3/) - Stručný přehled kvantitativního a kvalitativního výzkumu a rozdílů mezi nimi (video, 6 min)
+- Jak přistupovat k rozhodnutím o UX ve Web3 - Stručný přehled kvantitativního a kvalitativního výzkumu a rozdílů mezi nimi (video, 6 min)
 - [Být UX výzkumníkem ve Web3](https://medium.com/@georgia.rakusen/what-its-like-being-a-user-researcher-in-web3-6a4bcc096849) - Osobní pohled na to, jaké to je být UX výzkumníkem ve Web3
 
 ## Výzkumné studie ve Web3 {#research-in-web3}
@@ -38,7 +38,7 @@ Toto je vybraný seznam uživatelských výzkumů provedených ve Web3, které m
 | <Tag status="error">DeFi</Tag>                  | [Fondy krytí (Coverage pools)](https://github.com/threshold-network/UX-User-Research/tree/main/Keep%20Coverage%20Pool)                                                                           |
 | <Tag status="error">DeFi</Tag>                  | [ConsenSys: Zpráva o uživatelském výzkumu DeFi 2022](https://cdn2.hubspot.net/hubfs/4795067/ConsenSys%20Codefi-Defi%20User%20ResearchReport.pdf)                                            |
 | <Tag variant="solid">Metaverse</Tag>             | [Metaverse: Zpráva o uživatelském výzkumu](https://www.politico.com/f/?id=00000187-7685-d820-a7e7-7e85d1420000)                                                                             |
-| <Tag variant="solid">Metaverse</Tag>             | [Na safari: Výzkum uživatelů v Metaverse](https://archive.devcon.org/archive/watch/6/going-on-safari-researching-users-in-the-metaverse/?tab=YouTube) (video, 27 min)  |
+| <Tag variant="solid">Metaverse</Tag>             | Na safari: Výzkum uživatelů v Metaverse (video, 27 min)  |
 
 ## Design pro Web3 {#design-for-web3}
 

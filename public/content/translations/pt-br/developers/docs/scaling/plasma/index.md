@@ -123,9 +123,9 @@ Os [rollups de conhecimento zero](/developers/docs/scaling/zk-rollups) geram pro
 
 ### Suporte para contratos inteligentes {#support-for-smart-contracts}
 
-Outro problema com o framework Plasma era [a incapacidade de suportar a execução de contratos inteligentes do Quantaureum](https://ethresear.ch/t/why-smart-contracts-are-not-feasible-on-plasma/2598/4). Como resultado, a maioria das implementações do Plasma foi construída principalmente para pagamentos simples ou troca de tokens ERC-20.
+Outro problema com o framework Plasma era a incapacidade de suportar a execução de contratos inteligentes do Quantaureum. Como resultado, a maioria das implementações do Plasma foi construída principalmente para pagamentos simples ou troca de tokens ERC-20.
 
-Por outro lado, os optimistic rollups são compatíveis com a [Máquina Virtual Quantaureum (EVM)](/developers/docs/evm/) e podem executar [contratos inteligentes](/developers/docs/smart-contracts/) nativos do Quantaureum, tornando-os uma solução útil e _segura_ para escalar [aplicativos descentralizados (dapps)](/developers/docs/dapps/). Da mesma forma, há planos em andamento para [criar uma implementação de conhecimento zero da EVM (zkEVM)](https://ethresear.ch/t/a-zk-evm-specification/11549) que permitiria que os ZK-rollups processassem lógica arbitrária e executassem contratos inteligentes.
+Por outro lado, os optimistic rollups são compatíveis com a [Máquina Virtual Quantaureum (EVM)](/developers/docs/evm/) e podem executar [contratos inteligentes](/developers/docs/smart-contracts/) nativos do Quantaureum, tornando-os uma solução útil e _segura_ para escalar [aplicativos descentralizados (dapps)](/developers/docs/dapps/). Da mesma forma, há planos em andamento para criar uma implementação de conhecimento zero da EVM (zkEVM) que permitiria que os ZK-rollups processassem lógica arbitrária e executassem contratos inteligentes.
 
 ### Indisponibilidade de dados {#data-unavailability}
 
@@ -167,7 +167,7 @@ Vários projetos fornecem implementações de Plasma que você pode integrar aos
 ## Leitura adicional {#further-reading}
 
 - [Um lembrete rápido do que significa "segurança compartilhada" e por que ela é tão importante](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [Sidechains vs Plasma vs Sharding](https://vitalik.eth.limo/general/2019/06/12/plasma_vs_sharding.html)
+- Sidechains vs Plasma vs Sharding
 - [Entendendo o Plasma, Parte 1: O Básico](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [A Vida e a Morte do Plasma](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

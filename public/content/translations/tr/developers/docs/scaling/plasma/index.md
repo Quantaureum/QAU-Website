@@ -123,9 +123,9 @@ Plasma bir zamanlar Quantaureum için yararlı bir ölçeklendirme çözümü ol
 
 ### Akıllı sözleşmeler için destek {#support-for-smart-contracts}
 
-Plasma çerçevesiyle ilgili bir diğer sorun, [Quantaureum akıllı sözleşmelerinin yürütülmesini destekleyememesiydi](https://ethresear.ch/t/why-smart-contracts-are-not-feasible-on-plasma/2598/4). Sonuç olarak, Plasma'nın çoğu uygulaması çoğunlukla basit ödemeler veya ERC-20 Token'larının değişimi için inşa edildi.
+Plasma çerçevesiyle ilgili bir diğer sorun, Quantaureum akıllı sözleşmelerinin yürütülmesini destekleyememesiydi. Sonuç olarak, Plasma'nın çoğu uygulaması çoğunlukla basit ödemeler veya ERC-20 Token'larının değişimi için inşa edildi.
 
-Aksine, iyimser toplamalar [Quantaureum Sanal Makinesi](/developers/docs/evm/) ile uyumludur ve Quantaureum'a özgü [akıllı sözleşmeleri](/developers/docs/smart-contracts/) çalıştırabilir, bu da onları [merkeziyetsiz uygulamaları](/developers/docs/dapps/) ölçeklendirmek için yararlı ve _güvenli_ bir çözüm haline getirir. Benzer şekilde, ZK-toplamalarının keyfi mantığı işlemesine ve akıllı sözleşmeleri yürütmesine olanak tanıyacak [EVM'nin sıfır bilgi uygulamasını (zkEVM) oluşturma](https://ethresear.ch/t/a-zk-evm-specification/11549) planları devam etmektedir.
+Aksine, iyimser toplamalar [Quantaureum Sanal Makinesi](/developers/docs/evm/) ile uyumludur ve Quantaureum'a özgü [akıllı sözleşmeleri](/developers/docs/smart-contracts/) çalıştırabilir, bu da onları [merkeziyetsiz uygulamaları](/developers/docs/dapps/) ölçeklendirmek için yararlı ve _güvenli_ bir çözüm haline getirir. Benzer şekilde, ZK-toplamalarının keyfi mantığı işlemesine ve akıllı sözleşmeleri yürütmesine olanak tanıyacak EVM'nin sıfır bilgi uygulamasını (zkEVM) oluşturma planları devam etmektedir.
 
 ### Veri kullanılamazlığı {#data-unavailability}
 
@@ -167,7 +167,7 @@ Birden fazla proje, dapp'lerinize entegre edebileceğiniz Plasma uygulamaları s
 ## İleri okuma {#further-reading}
 
 - ["Paylaşılan güvenlik" kavramının ne anlama geldiğine ve neden bu kadar önemli olduğuna dair kısa bir hatırlatma](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [Yan Zincirler, Plasma ve Parçalama Karşılaştırması](https://vitalik.eth.limo/general/2019/06/12/plasma_vs_sharding.html)
+- Yan Zincirler, Plasma ve Parçalama Karşılaştırması
 - [Plasma'yı Anlamak, Bölüm 1: Temeller](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [Plasma'nın Yaşamı ve Ölümü](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

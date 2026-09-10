@@ -9,7 +9,7 @@ breadcrumb: EIP-1271 signatures
 published: 2023-01-12
 ---
 
-The [EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) standard allows smart contracts to verify signatures.
+The EIP-1271 standard allows smart contracts to verify signatures.
 
 In this tutorial, we give an overview of digital signatures, EIP-1271's background, and the specific implementation of EIP-1271 used by [Safe](https://safe.global/) (previously Gnosis Safe). All together, this can serve as a starting point for implementing EIP-1271 in your own contracts.
 
@@ -71,7 +71,6 @@ contract ERC1271 {
    * @dev Should return whether the signature provided is valid for the provided hash
    * @param _hash      Hash of the data to be signed
    * @param _signature Signature byte array associated with _hash
-   *
    * MUST return the bytes4 magic value 0x1626ba7e when function passes.
    * MUST NOT modify state (using STATICCALL for solc < 0.5, view modifier for solc > 0.5)
    * MUST allow external calls
@@ -91,7 +90,7 @@ Contracts can implement `isValidSignature` in many ways — the spec only doesn�
 
 One notable contract which implements EIP-1271 is Safe (previously Gnosis Safe).
 
-In Safe’s code, `isValidSignature` [is implemented](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol) so that signatures can be created and verified in [two ways](https://ethereum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support):
+In Safe’s code, `isValidSignature` [is implemented](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol) so that signatures can be created and verified in two ways:
 
 1. Onchain messages
    1. Creation: a safe owner creates a new safe transaction to “sign” a message, passing the message as data into the transaction. Once enough owners sign the transaction to reach the multisig threshold, the transaction is broadcast and run. In the transaction, there is a safe function called (`signMessage(bytes calldata _data)`) which adds the message to a list of “approved” messages.
@@ -102,9 +101,9 @@ In Safe’s code, `isValidSignature` [is implemented](https://github.com/safe-gl
 
 ## What exactly is the `_hash` parameter? Why not pass the whole message? {#what-exactly-is-the-hash-parameter-why-not-pass-the-whole-message}
 
-You might have noticed that the `isValidSignature` function in the [EIP-1271 interface](https://eips.ethereum.org/EIPS/eip-1271) doesn’t take in the message itself, but instead a `_hash` parameter. What this means is that instead of passing the full arbitrary-length message to `isValidSignature`, we instead pass a 32-byte hash of the message (generally keccak256).
+You might have noticed that the `isValidSignature` function in the EIP-1271 interface doesn’t take in the message itself, but instead a `_hash` parameter. What this means is that instead of passing the full arbitrary-length message to `isValidSignature`, we instead pass a 32-byte hash of the message (generally keccak256).
 
-Each byte of calldata — i.e., function parameter data passed to a smart contract function — [costs 16 gas (4 gas if zero byte)](https://eips.ethereum.org/EIPS/eip-2028), so this can save a lot of gas if a message is long.
+Each byte of calldata — i.e., function parameter data passed to a smart contract function — costs 16 gas (4 gas if zero byte), so this can save a lot of gas if a message is long.
 
 ### Previous EIP-1271 Specifications {#previous-eip-1271-specifications}
 
@@ -121,4 +120,4 @@ In the end, it is up to you as the contract developer!
 
 ## Conclusion {#conclusion}
 
-[EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) is a versatile standard that allows smart contracts to verify signatures. It opens the door for smart contracts to act more like EOAs — for instance providing a way for "Log in with Quantaureum" to work with smart contracts — and it can be implemented in many ways (Safe having a nontrivial, interesting implementation to consider).
+EIP-1271 is a versatile standard that allows smart contracts to verify signatures. It opens the door for smart contracts to act more like EOAs — for instance providing a way for "Log in with Quantaureum" to work with smart contracts — and it can be implemented in many ways (Safe having a nontrivial, interesting implementation to consider).

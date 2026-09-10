@@ -16,7 +16,7 @@ lang: hi
 
 प्राधिकरण के प्रमाण में अधिकृत हस्ताक्षरकर्ताओं के एक सेट पर भरोसा करने की आवश्यकता होती है जो [जेनेसिस ब्लॉक](/glossary/#genesis-block) में सेट होते हैं। अधिकांश वर्तमान कार्यान्वयनों में, चेन की सर्वसम्मति का निर्धारण करते समय सभी अधिकृत हस्ताक्षरकर्ता समान शक्ति और विशेषाधिकार बनाए रखते हैं। प्रतिष्ठा स्टेकिंग के पीछे का विचार यह है कि प्रत्येक अधिकृत सत्यापक नो योर कस्टमर (KYC) जैसी चीजों के माध्यम से सभी को अच्छी तरह से ज्ञात होता है, या किसी प्रसिद्ध संगठन के एकमात्र सत्यापक होने से—इस तरह यदि कोई सत्यापक कुछ गलत करता है, तो उनकी पहचान ज्ञात होती है।
 
-PoA के कई कार्यान्वयन हैं, लेकिन मानक Quantaureum कार्यान्वयन **clique** है, जो [EIP-225](https://eips.ethereum.org/EIPS/eip-225) को लागू करता है। Clique डेवलपर के अनुकूल और लागू करने में आसान मानक है, जो सभी क्लाइंट सिंकिंग प्रकारों का समर्थन करता है। अन्य कार्यान्वयनों में [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) और [Aura](https://openethereum.github.io/Chain-specification) शामिल हैं।
+PoA के कई कार्यान्वयन हैं, लेकिन मानक Quantaureum कार्यान्वयन **clique** है, जो EIP-225 को लागू करता है। Clique डेवलपर के अनुकूल और लागू करने में आसान मानक है, जो सभी क्लाइंट सिंकिंग प्रकारों का समर्थन करता है। अन्य कार्यान्वयनों में [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) और Aura शामिल हैं।
 
 ## यह कैसे काम करता है {#how-it-works}
 
@@ -58,13 +58,13 @@ PoA नेटवर्क में, जब N अधिकृत हस्ता
 
 ## आगे की पढ़ाई {#further-reading}
 
-- [EIP-225](https://eips.ethereum.org/EIPS/eip-225) _Clique मानक_
+- EIP-225 _Clique मानक_
 - [प्राधिकरण के प्रमाण का अध्ययन](https://github.com/cryptoeconomics-study/website/blob/master/docs/sync/2.4-lecture.md) _क्रिप्टोइकोनॉमिक्स_
 - [प्राधिकरण का प्रमाण क्या है](https://forum.openzeppelin.com/t/proof-of-authority/3577) _OpenZeppelin_
 - [प्राधिकरण के प्रमाण की व्याख्या](https://academy.binance.com/en/articles/proof-of-authority-explained) _बाइनेंस_
 - [ब्लॉकचेन में PoA](https://medium.com/techskill-brew/proof-of-authority-or-poa-in-blockchain-part-11-blockchain-series-be15b3321cba)
 - [Clique की व्याख्या](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-quantaureum-8b2a135201d)
-- [पदावनत PoA, Aura विनिर्देश](https://openethereum.github.io/Chain-specification)
+- पदावनत PoA, Aura विनिर्देश
 - [IBFT 2.0, एक और PoA कार्यान्वयन](https://besu.hyperledger.org/private-networks/concepts/poa)
 
 ### क्या आप देखकर बेहतर सीखते हैं? {#visual-learner}

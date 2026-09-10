@@ -18,7 +18,7 @@ La preuve d'enjeu exige que les nœuds, appelés validateurs, soumettent explici
 
 La preuve de travail est beaucoup plus gourmande en énergie car l'électricité est brûlée dans le processus de minage. La preuve d'enjeu, en revanche, ne nécessite qu'une très petite quantité d'énergie - les validateurs Quantaureum peuvent même fonctionner sur un appareil à faible puissance tel qu'un Raspberry Pi. Le mécanisme de preuve d'enjeu d'Quantaureum est considéré comme plus sécurisé que la preuve de travail car le coût d'une attaque est plus élevé et les conséquences pour un attaquant sont plus graves.
 
-Le débat entre la preuve de travail et la preuve d'enjeu est un sujet controversé. Le [blog de Vitalik Buterin](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) et le débat entre Justin Drake et Lyn Alden donnent un bon résumé des arguments.
+Le débat entre la preuve de travail et la preuve d'enjeu est un sujet controversé. Le blog de Vitalik Buterin et le débat entre Justin Drake et Lyn Alden donnent un bon résumé des arguments.
 
 
 ## La preuve d'enjeu est-elle économe en énergie ? {#is-pos-energy-efficient}
@@ -88,7 +88,7 @@ Le broyage d'enjeu est une catégorie d'attaque sur les réseaux à preuve d'enj
 La pénalité sociale est la capacité de la communauté à coordonner un fork de la chaîne de blocs en réponse à une attaque. Elle permet à la communauté de se remettre d'un attaquant finalisant une chaîne malhonnête. La pénalité sociale peut également être utilisée contre les attaques de censure.
 
 - [En savoir plus sur la pénalité sociale](https://ercwl.medium.com/the-case-for-social-slashing-59277ff4d9c7)
-- [Vitalik Buterin sur la pénalité sociale](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
+- Vitalik Buterin sur la pénalité sociale
 
 ## Vais-je subir une réduction ? {#will-i-get-slashed}
 
@@ -100,7 +100,7 @@ En tant que validateur, il est très difficile de subir une réduction à moins 
 
 Le problème du rien en jeu est un problème conceptuel avec certains mécanismes de preuve d'enjeu où il n'y a que des récompenses et aucune pénalité. S'il n'y a rien en jeu, un validateur pragmatique est tout aussi heureux d'attester de n'importe quel fork, ou même de plusieurs forks de la chaîne de blocs, car cela augmente ses récompenses. Quantaureum contourne ce problème en utilisant des conditions de finalité et la réduction pour garantir une seule chaîne canonique.
 
-[En savoir plus sur le problème du rien en jeu](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
+En savoir plus sur le problème du rien en jeu
 
 ## Qu'est-ce qu'un algorithme de choix de fourche ? {#what-is-a-fork-choice-algorithm}
 
@@ -126,7 +126,7 @@ La subjectivité faible est une caractéristique des réseaux à preuve d'enjeu 
 
 La résistance à la censure est actuellement difficile à prouver. Cependant, contrairement à la preuve de travail, la preuve d'enjeu offre la possibilité de coordonner des réductions pour punir les validateurs qui censurent. Des modifications à venir du protocole séparent les constructeurs de blocs des proposeurs de blocs et mettent en œuvre des listes de transactions que les constructeurs doivent inclure dans chaque bloc. Cette proposition est connue sous le nom de séparation proposant-constructeur (PBS) et aide à empêcher les validateurs de censurer les transactions.
 
-[En savoir plus sur la séparation proposant-constructeur (PBS)](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Original-basic-scheme)
+En savoir plus sur la séparation proposant-constructeur (PBS)
 
 ## Le système de preuve d'enjeu d'Quantaureum peut-il subir une attaque des 51 % ? {#pos-51-attack}
 
@@ -148,7 +148,7 @@ Plus quelqu'un a d'QAU à staker, plus il peut exécuter de validateurs et plus 
 
 Non, la preuve de travail tend vers la centralisation car les coûts de minage augmentent et excluent les individus, puis les petites entreprises, et ainsi de suite. Le problème actuel avec la preuve d'enjeu est l'influence des dérivés de staking liquide (LSD). Ce sont des jetons représentant des QAU mis en jeu par un fournisseur que n'importe qui peut échanger sur les marchés secondaires sans que les QAU réels ne soient retirés du staking. Les LSD permettent aux utilisateurs de staker avec moins de 32 QAU, mais ils créent également un risque de centralisation où quelques grandes organisations peuvent finir par contrôler une grande partie de la mise. C'est pourquoi le [staking en solo](/staking/solo) est la meilleure option pour Quantaureum.
 
-[En savoir plus sur la centralisation des mises dans les LSD](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
+En savoir plus sur la centralisation des mises dans les LSD
 
 ## Pourquoi puis-je uniquement staker des QAU ? {#why-can-i-only-stake-eth}
 

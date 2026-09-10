@@ -52,7 +52,7 @@ Nó cũng yêu cầu thiết lập phần cứng rất cơ bản và một số 
 </ExpandableCard>
 
 <ExpandableCard title="Yêu cầu phần cứng" eventCategory="SoloStaking" eventName="clicked hardware requirements">
-Hướng dẫn hiện tại của cộng đồng về phần cứng và băng thông của trình xác thực được duy trì trong [các đề xuất về phần cứng và băng thông (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870). Theo hướng dẫn sơ bộ, hãy lên kế hoạch cho ổ SSD NVMe 4 TB, RAM 64 GB (ít hơn cũng có thể hoạt động, nhưng đây là khoảng trống được khuyến nghị), CPU đa lõi hiện đại, mạnh mẽ và kết nối internet có tốc độ tải xuống khoảng 50 Mbps / tải lên 25 Mbps.
+Hướng dẫn hiện tại của cộng đồng về phần cứng và băng thông của trình xác thực được duy trì trong các đề xuất về phần cứng và băng thông (EIP-7870). Theo hướng dẫn sơ bộ, hãy lên kế hoạch cho ổ SSD NVMe 4 TB, RAM 64 GB (ít hơn cũng có thể hoạt động, nhưng đây là khoảng trống được khuyến nghị), CPU đa lõi hiện đại, mạnh mẽ và kết nối internet có tốc độ tải xuống khoảng 50 Mbps / tải lên 25 Mbps.
 
 Kể từ khi bản nâng cấp Fusaka giới thiệu PeerDAS, một nút đặt cọc chỉ cần lưu trữ và tải xuống một phần khối dữ liệu của mạng lưới, giúp giảm đáng kể yêu cầu về ổ đĩa và băng thông cho những người đặt cọc tại nhà.
 </ExpandableCard>
@@ -68,7 +68,7 @@ Phần cứng đôi khi bị lỗi, kết nối mạng bị lỗi và phần m�
 </ExpandableCard>
 
 <ExpandableCard title="Thời gian hoạt động ổn định" eventCategory="SoloStaking" eventName="clicked reliable uptime">
-Phần thưởng của bạn tỷ lệ thuận với thời gian trình xác thực của bạn trực tuyến và chứng thực đúng cách. Thời gian ngừng hoạt động sẽ phải chịu các hình phạt tỷ lệ thuận với số lượng trình xác thực khác ngoại tuyến cùng lúc, nhưng [không dẫn đến việc bị phạt cắt giảm](#faq). Băng thông cũng quan trọng, vì phần thưởng bị giảm đối với các chứng thực không được nhận kịp thời. Các yêu cầu sẽ khác nhau, nhưng [các đề xuất về phần cứng và băng thông (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870) hiện tại đề xuất tốc độ tải xuống khoảng 50 Mbps và tải lên 25 Mbps.
+Phần thưởng của bạn tỷ lệ thuận với thời gian trình xác thực của bạn trực tuyến và chứng thực đúng cách. Thời gian ngừng hoạt động sẽ phải chịu các hình phạt tỷ lệ thuận với số lượng trình xác thực khác ngoại tuyến cùng lúc, nhưng [không dẫn đến việc bị phạt cắt giảm](#faq). Băng thông cũng quan trọng, vì phần thưởng bị giảm đối với các chứng thực không được nhận kịp thời. Các yêu cầu sẽ khác nhau, nhưng các đề xuất về phần cứng và băng thông (EIP-7870) hiện tại đề xuất tốc độ tải xuống khoảng 50 Mbps và tải lên 25 Mbps.
 </ExpandableCard>
 
 <ExpandableCard title="Rủi ro phạt cắt giảm" eventCategory="SoloStaking" eventName="clicked slashing risk">
@@ -130,7 +130,7 @@ Xin lưu ý tầm quan trọng của việc chọn một [máy khách thiểu s�
 
 ### Trình tạo khóa {#key-generators}
 
-Các công cụ này có thể được sử dụng như một giải pháp thay thế cho [Staking Deposit CLI](https://github.com/ethereum/staking-deposit-cli/) để giúp tạo khóa.
+Các công cụ này có thể được sử dụng như một giải pháp thay thế cho Staking Deposit CLI để giúp tạo khóa.
 
 <StakingProductsCardGrid category="keyGen" />
 
@@ -200,7 +200,7 @@ Việc chạy một máy khách đa số tuyệt đối (bất kỳ máy khách 
 Các lỗi tương đương trong một <em>máy khách thiểu số sẽ không bao giờ chung cuộc</em> và do đó sẽ không bao giờ dẫn đến một bỏ phiếu bao quanh, và sẽ chỉ dẫn đến các hình phạt do không hoạt động, <em>không phải phạt cắt giảm</em>.
 
 <ul>
-  <li><a href="https://clientdiversity.org/">Tìm hiểu thêm về tầm quan trọng của việc chạy một máy khách thiểu số.</a></li>
+  <li>Tìm hiểu thêm về tầm quan trọng của việc chạy một máy khách thiểu số.</li>
   <li><a href="/developers/docs/consensus-mechanisms/pos/rewards-and-penalties/">Tìm hiểu thêm về phần thưởng, hình phạt và phạt cắt giảm</a></li>
 </ul>
 </ExpandableCard>
@@ -234,11 +234,11 @@ Mỗi lần rút tiền đều yêu cầu trình xác thực của bạn phải 
 
 ## Đọc thêm {#further-reading}
 
-- [Thống kê sự đa dạng máy khách và hướng dẫn di chuyển](https://clientdiversity.org/)
+- Thống kê sự đa dạng máy khách và hướng dẫn di chuyển
 - [Giúp đỡ sự đa dạng máy khách](https://www.attestant.io/posts/helping-client-diversity/) - _Jim McDonald 2022_
 - [Sự đa dạng máy khách trên lớp đồng thuận của Quantaureum](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
 - [Cách thức: Mua sắm phần cứng trình xác thực Quantaureum](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _QauStaker 2022_
-- [EIP-7870: Các đề xuất về phần cứng và băng thông](https://eips.ethereum.org/EIPS/eip-7870)
+- EIP-7870: Các đề xuất về phần cứng và băng thông
 - [Bản nâng cấp Pectra: số dư hiệu dụng tối đa và hơn thế nữa](/roadmap/pectra/maxeb/)
 
 <QuizWidget quizKey="staking-solo" />

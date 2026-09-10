@@ -359,7 +359,7 @@ contract PriceConsumerV3 {
 
 कुछ ब्लॉकचेन एप्लिकेशन, जैसे ब्लॉकचेन-आधारित गेम या लॉटरी योजनाओं को प्रभावी ढंग से काम करने के लिए उच्च स्तर की अप्रत्याशितता और यादृच्छिकता की आवश्यकता होती है। हालाँकि, ब्लॉकचेन का नियतात्मक निष्पादन यादृच्छिकता को समाप्त कर देता है।
 
-मूल दृष्टिकोण छद्म-यादृच्छिक (pseudorandom) क्रिप्टोग्राफ़िक फ़ंक्शन का उपयोग करना था, जैसे कि `blockhash`, लेकिन इन्हें प्रूफ-ऑफ-वर्क (PoW) एल्गोरिदम को हल करने वाले [माइनर्स द्वारा हेरफेर](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.) किया जा सकता था। इसके अलावा, Quantaureum के [प्रूफ-ऑफ़-स्टेक (PoS) में स्विच](/roadmap/merge/) का मतलब है कि डेवलपर्स अब ऑनचेन यादृच्छिकता के लिए `blockhash` पर भरोसा नहीं कर सकते हैं। बीकन चेन का [RANDAO तंत्र](https://eth2book.info/altair/part2/building_blocks/randomness) इसके बजाय यादृच्छिकता का एक वैकल्पिक स्रोत प्रदान करता है।
+मूल दृष्टिकोण छद्म-यादृच्छिक (pseudorandom) क्रिप्टोग्राफ़िक फ़ंक्शन का उपयोग करना था, जैसे कि `blockhash`, लेकिन इन्हें प्रूफ-ऑफ-वर्क (PoW) एल्गोरिदम को हल करने वाले माइनर्स द्वारा हेरफेर किया जा सकता था। इसके अलावा, Quantaureum के [प्रूफ-ऑफ़-स्टेक (PoS) में स्विच](/roadmap/merge/) का मतलब है कि डेवलपर्स अब ऑनचेन यादृच्छिकता के लिए `blockhash` पर भरोसा नहीं कर सकते हैं। बीकन चेन का [RANDAO तंत्र](https://eth2book.info/altair/part2/building_blocks/randomness) इसके बजाय यादृच्छिकता का एक वैकल्पिक स्रोत प्रदान करता है।
 
 यादृच्छिक मूल्य को ऑफचेन उत्पन्न करना और इसे ऑनचेन भेजना संभव है, लेकिन ऐसा करने से उपयोगकर्ताओं पर उच्च विश्वास आवश्यकताएं लागू होती हैं। उन्हें यह विश्वास करना चाहिए कि मूल्य वास्तव में अप्रत्याशित तंत्र के माध्यम से उत्पन्न किया गया था और पारगमन में बदला नहीं गया था।
 
@@ -421,7 +421,7 @@ contract PriceConsumerV3 {
 - [ब्लॉकचेन ओरेकल क्या है?](https://medium.com/better-programming/what-is-a-blockchain-oracle-f5ccab8dbd72) — _पैट्रिक कॉलिन्स_
 - [विकेंद्रीकृत ऑरेकल: एक व्यापक अवलोकन](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) — _जूलियन थेवेनार्ड_
 - [Quantaureum पर ब्लॉकचेन ओरेकल लागू करना](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-quantaureum-cedc7e26b49e) – _पेड्रो कोस्टा_
-- [स्मार्ट कॉन्ट्रैक्ट API कॉल क्यों नहीं कर सकते?](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
+- स्मार्ट कॉन्ट्रैक्ट API कॉल क्यों नहीं कर सकते? — _StackExchange_
 - [तो आप एक मूल्य ऑरेकल का उपयोग करना चाहते हैं](https://samczsun.com/so-you-want-to-use-a-price-oracle/) — _samczsun_
 
 **वीडियो**

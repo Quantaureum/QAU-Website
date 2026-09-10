@@ -54,7 +54,7 @@ ERC-1363 토큰은 전송 또는 승인을 받은 후 콜백을 실행해야 하
 
 다른 ERC-20 확장 제안과 달리, ERC-1363은 ERC-20의 `transfer` 및 `transferFrom` 메서드를 재정의하지 않으며, ERC-20과의 하위 호환성을 유지하면서 구현할 인터페이스 ID를 정의합니다.
 
-[EIP-1363](https://eips.ethereum.org/EIPS/eip-1363) 발췌:
+EIP-1363 발췌:
 
 ### 메서드 {#methods}
 
@@ -159,11 +159,9 @@ interface ERC165 {
 interface ERC1363Receiver {
   /**
    * @dev `operator`가 `from`에서 `ERC1363::transferAndCall` 또는 `ERC1363::transferFromAndCall`을 통해 이 컨트랙트로 ERC-1363 토큰을 전송할 때마다 이 함수가 호출됩니다.
-   *
    * 참고: 전송을 수락하려면 이 함수는 반드시
    * `bytes4(keccak256("onTransferReceived(address,address,uint256,bytes)"))`
    * (즉, 0x88a7ca5c 또는 자체 함수 선택자)를 반환해야 합니다.
-   *
    * @param operator `transferAndCall` 또는 `transferFromAndCall` 함수를 호출한 주소입니다.
    * @param from 토큰이 전송되는 출발지 주소입니다.
    * @param value 전송된 토큰의 양입니다.
@@ -184,11 +182,9 @@ interface ERC1363Receiver {
 interface ERC1363Spender {
   /**
    * @dev ERC-1363 토큰의 `owner`가 자신의 토큰을 지출하도록 `ERC1363::approveAndCall`을 통해 이 컨트랙트를 승인할 때마다 이 함수가 호출됩니다.
-   *
    * 참고: 승인을 수락하려면 이 함수는 반드시
    * `bytes4(keccak256("onApprovalReceived(address,uint256,bytes)"))`
    * (즉, 0x7b04a2d0 또는 자체 함수 선택자)를 반환해야 합니다.
-   *
    * @param owner `approveAndCall` 함수를 호출하고 이전에 토큰을 소유했던 주소입니다.
    * @param value 지출할 토큰의 양입니다.
    * @param data 지정된 형식이 없는 추가 데이터입니다.
@@ -200,5 +196,5 @@ interface ERC1363Spender {
 
 ## 더 읽어보기 {#further-reading}
 
-- [ERC-1363: 지불 가능 토큰 표준](https://eips.ethereum.org/EIPS/eip-1363)
+- ERC-1363: 지불 가능 토큰 표준
 - [ERC-1363: GitHub 리포지토리](https://github.com/vittominacori/erc1363-payable-token)

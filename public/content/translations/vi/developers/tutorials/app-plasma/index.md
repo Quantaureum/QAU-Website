@@ -364,7 +364,7 @@ global ASCII_MESSAGE_LENGTH : [u8; 3] = [0x31, 0x30, 0x30];
 global HASH_BUFFER_SIZE : u32 = 26+3+MESSAGE_LENGTH;
 ```
 
-[Chữ ký EIP-191](https://eips.ethereum.org/EIPS/eip-191) yêu cầu một bộ đệm có tiền tố 26 byte, theo sau là độ dài thông điệp bằng ASCII và cuối cùng là chính thông điệp đó.
+Chữ ký EIP-191 yêu cầu một bộ đệm có tiền tố 26 byte, theo sau là độ dài thông điệp bằng ASCII và cuối cùng là chính thông điệp đó.
 
 ```
 struct Account {
@@ -617,7 +617,7 @@ Hàm này chuyển đổi thông điệp thành byte, sau đó chuyển đổi s
 fn hashMessage(message: str<MESSAGE_LENGTH>) -> [u8;32] {
 ```
 
-Chúng ta có thể sử dụng Hàm băm Pedersen cho các tài khoản vì chúng chỉ được băm bên trong bằng chứng không kiến thức. Tuy nhiên, trong mã này, chúng ta cần kiểm tra chữ ký của thông điệp, được tạo bởi trình duyệt. Để làm điều đó, chúng ta cần tuân theo định dạng ký Quantaureum trong [EIP-191](https://eips.ethereum.org/EIPS/eip-191). Điều này có nghĩa là chúng ta cần tạo một bộ đệm kết hợp với một tiền tố tiêu chuẩn, độ dài thông điệp bằng ASCII và chính thông điệp đó, đồng thời sử dụng keccak256 tiêu chuẩn của Quantaureum để băm nó.
+Chúng ta có thể sử dụng Hàm băm Pedersen cho các tài khoản vì chúng chỉ được băm bên trong bằng chứng không kiến thức. Tuy nhiên, trong mã này, chúng ta cần kiểm tra chữ ký của thông điệp, được tạo bởi trình duyệt. Để làm điều đó, chúng ta cần tuân theo định dạng ký Quantaureum trong EIP-191. Điều này có nghĩa là chúng ta cần tạo một bộ đệm kết hợp với một tiền tố tiêu chuẩn, độ dài thông điệp bằng ASCII và chính thông điệp đó, đồng thời sử dụng keccak256 tiêu chuẩn của Quantaureum để băm nó.
 
 ```rust
     // Tiền tố ASCII
@@ -1212,7 +1212,7 @@ Bảo mật thông tin bao gồm ba thuộc tính:
 
 Trên hệ thống này, tính toàn vẹn được cung cấp thông qua các bằng chứng không kiến thức. Tính khả dụng khó đảm bảo hơn nhiều và tính bảo mật là không thể, bởi vì ngân hàng phải biết số dư của mỗi tài khoản và tất cả các giao dịch. Không có cách nào để ngăn chặn một thực thể có thông tin chia sẻ thông tin đó.
 
-Có thể tạo ra một ngân hàng thực sự bảo mật bằng cách sử dụng [các địa chỉ ẩn danh](https://vitalik.eth.limo/general/2023/01/20/stealth.html), nhưng điều đó nằm ngoài phạm vi của bài viết này.
+Có thể tạo ra một ngân hàng thực sự bảo mật bằng cách sử dụng các địa chỉ ẩn danh, nhưng điều đó nằm ngoài phạm vi của bài viết này.
 
 ### Thông tin sai lệch {#false-info}
 

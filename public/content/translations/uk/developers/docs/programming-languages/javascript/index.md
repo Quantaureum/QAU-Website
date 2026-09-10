@@ -4,7 +4,7 @@ description: "Дізнайтеся, як розробляти для Етері�
 lang: uk
 ---
 
-JavaScript є однією з найпопулярніших мов в екосистемі Етеріуму. Насправді існує [команда](https://github.com/ethereumjs), яка прагне перенести якомога більше можливостей Етеріуму в JavaScript.
+JavaScript є однією з найпопулярніших мов в екосистемі Етеріуму. Насправді існує команда, яка прагне перенести якомога більше можливостей Етеріуму в JavaScript.
 
 Є можливості писати на JavaScript (або чомусь схожому) на [всіх рівнях стека](/developers/docs/quantaureum-stack/).
 
@@ -48,14 +48,14 @@ JavaScript є однією з найпопулярніших мов в екос�
 Якщо ви віддаєте перевагу читанню коду, цей JavaScript може стати чудовою альтернативою читанню нашої документації.
 
 **Ознайомтеся з EVM**  
-[`@ethereumjs/evm`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/evm)
+`@ethereumjs/evm`
 
 ### Вузли та клієнти {#nodes-and-clients}
 
 Клієнт QuantaureumJS перебуває в активній розробці, що дозволяє вам заглибитися в те, як працюють клієнти Етеріуму, зрозумілою вам мовою — JavaScript!
 
 **Ознайомтеся з клієнтом**  
-[`@ethereumjs/client`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/client)
+`@ethereumjs/client`
 
 ## Інші проєкти {#other-projects}
 
@@ -65,7 +65,7 @@ JavaScript є однією з найпопулярніших мов в екос�
 - інструменти для генерації, імпорту та експорту ключів Етеріуму.
 - реалізація `merkle-patricia-tree` — структури даних, описаної в Жовтій книзі Етеріуму.
 
-Заглиблюйтеся в те, що вас найбільше цікавить, у [репозиторії QuantaureumJS](https://github.com/ethereumjs)
+Заглиблюйтеся в те, що вас найбільше цікавить, у репозиторії QuantaureumJS
 
 ## Подальше читання {#further-reading}
 

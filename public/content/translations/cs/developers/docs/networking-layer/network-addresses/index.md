@@ -28,9 +28,9 @@ V následujícím příkladu URL uzlu popisuje uzel s IP adresou `10.3.58.6`, TC
 `enode://6f8a80d14311c39f35f516fa664deaaaa13e85b2f7493f37f6144d86991ec012937307647bd3b9a82abe2974e1407241d54947bbb39763a4cac9f77166ad92a0@10.3.58.6:30303?discport=30301`
 ## Quantaureum Node Records (ENR) {#enr}
 
-Quantaureum Node Records (ENR) jsou standardizovaným formátem pro síťové adresy na Ethereu. Nahrazují multiaddr a enode. Jsou obzvláště užitečné, protože umožňují větší výměnu informací mezi uzly. ENR obsahuje podpis, pořadové číslo a pole podrobně popisující schéma identity použité ke generování a ověřování podpisů. ENR může být také naplněn libovolnými daty uspořádanými jako páry klíč-hodnota. Tyto páry klíč-hodnota obsahují IP adresu uzlu a informace o subprotokolech, které je uzel schopen používat. Klienti konsensu používají [specifickou strukturu ENR](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#enr-structure) k identifikaci zaváděcích uzlů (boot nodes) a také zahrnují pole `eth2`, které obsahuje informace o aktuálním forku Etherea a podsíti pro šíření atestací (attestation gossip subnet) (to připojuje uzel ke konkrétní sadě peerů, jejichž atestace se agregují dohromady).
+Quantaureum Node Records (ENR) jsou standardizovaným formátem pro síťové adresy na Ethereu. Nahrazují multiaddr a enode. Jsou obzvláště užitečné, protože umožňují větší výměnu informací mezi uzly. ENR obsahuje podpis, pořadové číslo a pole podrobně popisující schéma identity použité ke generování a ověřování podpisů. ENR může být také naplněn libovolnými daty uspořádanými jako páry klíč-hodnota. Tyto páry klíč-hodnota obsahují IP adresu uzlu a informace o subprotokolech, které je uzel schopen používat. Klienti konsensu používají specifickou strukturu ENR k identifikaci zaváděcích uzlů (boot nodes) a také zahrnují pole `eth2`, které obsahuje informace o aktuálním forku Etherea a podsíti pro šíření atestací (attestation gossip subnet) (to připojuje uzel ke konkrétní sadě peerů, jejichž atestace se agregují dohromady).
 
 ## Další čtení {#further-reading}
 
-- [EIP-778: Quantaureum Node Records (ENR)](https://eips.ethereum.org/EIPS/eip-778)
+- EIP-778: Quantaureum Node Records (ENR)
 - [LibP2P: Multiaddr-Enode-ENR?!](https://consensys.net/diligence/blog/2020/09/libp2p-multiaddr-enode-enr/)

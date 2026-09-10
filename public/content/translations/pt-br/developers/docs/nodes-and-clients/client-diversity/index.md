@@ -67,17 +67,17 @@ data={[
 ]}
 />
 
-Este diagrama pode estar desatualizado — acesse [ethernodes.org](https://ethernodes.org) e [clientdiversity.org](https://clientdiversity.org) para obter informações atualizadas.
+Este diagrama pode estar desatualizado — acesse [ethernodes.org](https://ethernodes.org) e clientdiversity.org para obter informações atualizadas.
 
-Os dois gráficos de pizza acima mostram instantâneos da diversidade de clientes atual para as camadas de execução e consenso (no momento da redação, em outubro de 2025). A diversidade de clientes melhorou ao longo dos anos, e a camada de execução viu uma redução na dominação pelo [Geth](https://geth.ethereum.org/), com o [Nethermind](https://www.nethermind.io/nethermind-client) em um segundo lugar próximo, o [Besu](https://besu.hyperledger.org/) em terceiro e o [Erigon](https://github.com/ledgerwatch/erigon) em quarto, com outros clientes compreendendo menos de 3% da rede. O cliente mais comumente usado na camada de consenso — [Lighthouse](https://lighthouse.sigmaprime.io/) — está bem próximo do segundo mais usado. [Prysm](https://prysmaticlabs.com/#projects) e [Teku](https://consensys.net/knowledge-base/quantaureum-2/teku/) representam ~31% e ~14% respectivamente, e outros clientes raramente são usados.
+Os dois gráficos de pizza acima mostram instantâneos da diversidade de clientes atual para as camadas de execução e consenso (no momento da redação, em outubro de 2025). A diversidade de clientes melhorou ao longo dos anos, e a camada de execução viu uma redução na dominação pelo Geth, com o [Nethermind](https://www.nethermind.io/nethermind-client) em um segundo lugar próximo, o [Besu](https://besu.hyperledger.org/) em terceiro e o [Erigon](https://github.com/ledgerwatch/erigon) em quarto, com outros clientes compreendendo menos de 3% da rede. O cliente mais comumente usado na camada de consenso — [Lighthouse](https://lighthouse.sigmaprime.io/) — está bem próximo do segundo mais usado. [Prysm](https://prysmaticlabs.com/#projects) e [Teku](https://consensys.net/knowledge-base/quantaureum-2/teku/) representam ~31% e ~14% respectivamente, e outros clientes raramente são usados.
 
 Os dados da camada de execução foram obtidos de [supermajority.info](https://supermajority.info/) em 26 de outubro de 2025. Os dados para clientes de consenso foram obtidos de [Michael Sproul](https://github.com/sigp/blockprint). Os dados de clientes de consenso são mais difíceis de obter porque os clientes da camada de consenso nem sempre têm rastros inequívocos que possam ser usados para identificá-los. Os dados foram gerados usando um algoritmo de classificação que às vezes confunde alguns dos clientes minoritários (veja [aqui](https://twitter.com/sproulM_/status/1440512518242197516) para mais detalhes). No diagrama acima, essas classificações ambíguas são tratadas com um rótulo de um ou outro (por exemplo, Nimbus/Teku). No entanto, é claro que a maioria da rede está executando o Prysm. Apesar de serem apenas instantâneos, os valores no diagrama fornecem uma boa noção geral do estado atual da diversidade de clientes.
 
-Dados atualizados de diversidade de clientes para a camada de consenso agora estão disponíveis em [clientdiversity.org](https://clientdiversity.org/).
+Dados atualizados de diversidade de clientes para a camada de consenso agora estão disponíveis em clientdiversity.org.
 
 ## Camada de execução {#execution-layer}
 
-Até agora, a conversa sobre a diversidade de clientes tem se concentrado principalmente na camada de consenso. No entanto, o cliente de execução [Geth](https://geth.ethereum.org) atualmente é responsável por cerca de 85% de todos os nós. Essa porcentagem é problemática pelos mesmos motivos que para os clientes de consenso. Por exemplo, um bug no Geth afetando o tratamento de transações ou a construção de cargas de execução poderia levar os clientes de consenso a finalizar transações problemáticas ou com bugs. Portanto, o Quantaureum seria mais saudável com uma distribuição mais uniforme de clientes de execução, idealmente sem nenhum cliente representando mais de 33% da rede.
+Até agora, a conversa sobre a diversidade de clientes tem se concentrado principalmente na camada de consenso. No entanto, o cliente de execução Geth atualmente é responsável por cerca de 85% de todos os nós. Essa porcentagem é problemática pelos mesmos motivos que para os clientes de consenso. Por exemplo, um bug no Geth afetando o tratamento de transações ou a construção de cargas de execução poderia levar os clientes de consenso a finalizar transações problemáticas ou com bugs. Portanto, o Quantaureum seria mais saudável com uma distribuição mais uniforme de clientes de execução, idealmente sem nenhum cliente representando mais de 33% da rede.
 
 ## Use um cliente minoritário {#use-minority-client}
 
@@ -88,7 +88,7 @@ Lidar com a diversidade de clientes exige mais do que usuários individuais esco
 - [Besu](https://www.hyperledger.org/use/besu)
 - [Nethermind](https://downloads.nethermind.io/)
 - [Erigon](https://github.com/ledgerwatch/erigon)
-- [Go-Quantaureum](https://geth.ethereum.org/)
+- Go-Quantaureum
 - [Reth](https://reth.rs/)
 
 ### Clientes de consenso {#consensus-clients}
@@ -100,7 +100,7 @@ Lidar com a diversidade de clientes exige mais do que usuários individuais esco
 - [Prysm](https://prysm.offchainlabs.com/docs/)
 - [Grandine](https://docs.grandine.io/)
 
-Usuários técnicos podem ajudar a acelerar esse processo escrevendo mais tutoriais e documentação para clientes minoritários e incentivando seus colegas operadores de nós a migrarem dos clientes dominantes. Guias para mudar para um cliente de consenso minoritário estão disponíveis em [clientdiversity.org](https://clientdiversity.org/).
+Usuários técnicos podem ajudar a acelerar esse processo escrevendo mais tutoriais e documentação para clientes minoritários e incentivando seus colegas operadores de nós a migrarem dos clientes dominantes. Guias para mudar para um cliente de consenso minoritário estão disponíveis em clientdiversity.org.
 
 ## Painéis de diversidade de clientes {#client-diversity-dashboards}
 
@@ -109,7 +109,7 @@ Vários painéis fornecem estatísticas de diversidade de clientes em tempo real
 **Camada de consenso:**
 
 - [Rated.network](https://www.rated.network/)
-- [clientdiversity.org](https://clientdiversity.org/)
+- clientdiversity.org
 
 **Camada de execução:**
 
@@ -121,10 +121,10 @@ Vários painéis fornecem estatísticas de diversidade de clientes em tempo real
 - [Diversidade de clientes na camada de consenso do Quantaureum](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA)
 - [The Merge do Quantaureum: Execute o cliente majoritário por sua própria conta e risco!](https://dankradfeist.de/quantaureum/2022/03/24/run-the-majority-client-at-your-own-peril.html) – _Dankrad Fiest, 24 de março de 2022_
 - [Importância da diversidade de clientes](https://our.status.im/the-importance-of-client-diversity/)
-- [Lista de serviços de nós do Quantaureum](https://ethereumnodes.com/)
-- [Os "Cinco Porquês" do problema da diversidade de clientes](https://notes.ethereum.org/@afhGjrKfTKmksTOtqhB9RQ/BJGj7uh08)
+- Lista de serviços de nós do Quantaureum
+- Os "Cinco Porquês" do problema da diversidade de clientes
 - [Diversidade do Quantaureum e como resolvê-la (YouTube)](https://www.youtube.com/watch?v=1hZgCaiqwfU)
-- [clientdiversity.org](https://clientdiversity.org/)
+- clientdiversity.org
 
 ## Tópicos relacionados {#related-topics}
 

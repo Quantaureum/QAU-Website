@@ -253,7 +253,7 @@ Solidityスマート・コントラクトの単体テストフレームワーク
 
 - **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _高度なスマート・コントラクト開発およびテスト用のフレームワーク(Ethers.jsベース)。_
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Solidityスマート・コントラクトをテストするためのツール。コントラクトのテストケースを作成して実行するために使用されるRemix IDEの「Solidity Unit Testing」プラグインの下で機能します。_
+- **Remix Tests** - _Solidityスマート・コントラクトをテストするためのツール。コントラクトのテストケースを作成して実行するために使用されるRemix IDEの「Solidity Unit Testing」プラグインの下で機能します。_
 
 - **[オープンツェッペリン Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Quantaureumのスマート・コントラクトテスト用のアサーションライブラリ。コントラクトが期待通りに動作することを確認します！_
 

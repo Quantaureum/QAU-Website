@@ -143,7 +143,7 @@ SUPPORTED_INTERFACES: constant(bytes4[2]) = [
 ]
 ```
 
-[ERC-165](https://eips.ethereum.org/EIPS/eip-165) chỉ định một cơ chế để một hợp đồng tiết lộ cách các ứng dụng có thể giao tiếp với nó, nó tuân thủ các ERC nào. `SUPPORTED_INTERFACES` là một danh sách hằng số gồm hai ID giao diện bốn byte mà hợp đồng này tuân thủ: chính ERC-165 và ERC-721.
+ERC-165 chỉ định một cơ chế để một hợp đồng tiết lộ cách các ứng dụng có thể giao tiếp với nó, nó tuân thủ các ERC nào. `SUPPORTED_INTERFACES` là một danh sách hằng số gồm hai ID giao diện bốn byte mà hợp đồng này tuân thủ: chính ERC-165 và ERC-721.
 ### Các hàm {#functions}
 
 Đây là các hàm thực sự triển khai ERC-721.

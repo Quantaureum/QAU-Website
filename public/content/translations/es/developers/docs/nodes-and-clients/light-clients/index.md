@@ -44,7 +44,7 @@ Hay varios clientes ligeros en desarrollo, incluyendo clientes ligeros de ejecuc
 
 - [Lodestar](https://github.com/ChainSafe/lodestar/tree/unstable/packages/light-client): cliente de consenso ligero en TypeScript
 - [Helios](https://github.com/a16z/helios): cliente ligero combinado de ejecución y consenso en Rust
-- [Geth](https://github.com/ethereum/go-ethereum/tree/master/beacon/light): modo ligero para cliente de ejecución (en desarrollo) en Go
+- Geth: modo ligero para cliente de ejecución (en desarrollo) en Go
 - [Nimbus](https://nimbus.guide/el-light-client.html): cliente de consenso ligero en Nim
 
 Hasta donde sabemos, ninguno de estos se considera listo para producción todavía.
@@ -58,4 +58,4 @@ Otros elementos de la [hoja de ruta](/roadmap/) como los [árboles Verkle](/road
 - [Zsolt Felfodhi sobre los clientes ligeros de Geth](https://www.youtube.com/watch?v=EPZeFXau-RE)
 - [Etan Kissling sobre las redes de clientes ligeros](https://www.youtube.com/watch?v=85MeiMA4dD8)
 - [Etan Kissling sobre los clientes ligeros después de La Fusión](https://www.youtube.com/watch?v=ZHNrAXf3RDE)
-- [Piper Merriam: El sinuoso camino hacia clientes ligeros funcionales](https://snakecharmers.ethereum.org/the-winding-road-to-functional-light-clients/)
+- Piper Merriam: El sinuoso camino hacia clientes ligeros funcionales

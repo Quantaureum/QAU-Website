@@ -52,7 +52,7 @@ También requiere una configuración de hardware muy básica y cierta comprensi�
 </ExpandableCard>
 
 <ExpandableCard title="Requisitos de hardware" eventCategory="SoloStaking" eventName="clicked hardware requirements">
-La orientación actual de la comunidad para el hardware y el ancho de banda del validador se mantiene en las [recomendaciones de hardware y ancho de banda (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870). Como guía aproximada, planifica un SSD NVMe de 4 TB, 64 GB de RAM (menos puede funcionar, pero este es el margen recomendado), una CPU multinúcleo moderna y sólida, y una conexión a internet de alrededor de 50 Mbps de descarga / 25 Mbps de carga.
+La orientación actual de la comunidad para el hardware y el ancho de banda del validador se mantiene en las recomendaciones de hardware y ancho de banda (EIP-7870). Como guía aproximada, planifica un SSD NVMe de 4 TB, 64 GB de RAM (menos puede funcionar, pero este es el margen recomendado), una CPU multinúcleo moderna y sólida, y una conexión a internet de alrededor de 50 Mbps de descarga / 25 Mbps de carga.
 
 Dado que la actualización Fusaka introdujo PeerDAS, un nodo de staking solo necesita almacenar y descargar una fracción de los datos blob de la red, lo que reduce significativamente los requisitos de disco y ancho de banda para quienes hacen staking desde casa.
 </ExpandableCard>
@@ -68,7 +68,7 @@ El hardware falla ocasionalmente, las conexiones de red dan error y el software 
 </ExpandableCard>
 
 <ExpandableCard title="Tiempo de actividad confiable" eventCategory="SoloStaking" eventName="clicked reliable uptime">
-Tus recompensas son proporcionales al tiempo que tu validador está en línea y atestiguando correctamente. El tiempo de inactividad incurre en penalizaciones proporcionales a cuántos otros validadores están fuera de línea al mismo tiempo, pero [no resulta en un recorte](#faq). El ancho de banda también importa, ya que las recompensas disminuyen para las atestaciones que no se reciben a tiempo. Los requisitos variarán, pero las [recomendaciones actuales de hardware y ancho de banda (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870) sugieren alrededor de 50 Mbps de descarga y 25 Mbps de carga.
+Tus recompensas son proporcionales al tiempo que tu validador está en línea y atestiguando correctamente. El tiempo de inactividad incurre en penalizaciones proporcionales a cuántos otros validadores están fuera de línea al mismo tiempo, pero [no resulta en un recorte](#faq). El ancho de banda también importa, ya que las recompensas disminuyen para las atestaciones que no se reciben a tiempo. Los requisitos variarán, pero las recomendaciones actuales de hardware y ancho de banda (EIP-7870) sugieren alrededor de 50 Mbps de descarga y 25 Mbps de carga.
 </ExpandableCard>
 
 <ExpandableCard title="Riesgo de recorte" eventCategory="SoloStaking" eventName="clicked slashing risk">
@@ -130,7 +130,7 @@ Ten en cuenta la importancia de elegir un [cliente minoritario](/developers/docs
 
 ### Generadores de claves {#key-generators}
 
-Estas herramientas se pueden utilizar como alternativa a la [CLI de depósito de staking](https://github.com/ethereum/staking-deposit-cli/) para ayudar con la generación de claves.
+Estas herramientas se pueden utilizar como alternativa a la CLI de depósito de staking para ayudar con la generación de claves.
 
 <StakingProductsCardGrid category="keyGen" />
 
@@ -200,7 +200,7 @@ Ejecutar un cliente de supermayoría (cualquier cliente utilizado por más de 2/
 Los errores equivalentes en un <em>cliente minoritario nunca se finalizarían</em> y, por lo tanto, nunca resultarían en un voto envolvente, y simplemente resultarían en penalizaciones por inactividad, <em>no en un recorte</em>.
 
 <ul>
-  <li><a href="https://clientdiversity.org/">Obtén más información sobre la importancia de ejecutar un cliente minoritario.</a></li>
+  <li>Obtén más información sobre la importancia de ejecutar un cliente minoritario.</li>
   <li><a href="/developers/docs/consensus-mechanisms/pos/rewards-and-penalties/">Obtén más información sobre recompensas, penalizaciones y recortes</a></li>
 </ul>
 </ExpandableCard>
@@ -234,11 +234,11 @@ Para desbloquear y recibir todo tu saldo de vuelta, debes salir de tu validador.
 
 ## Lecturas adicionales {#further-reading}
 
-- [Estadísticas de diversidad de clientes y guías de migración](https://clientdiversity.org/)
+- Estadísticas de diversidad de clientes y guías de migración
 - [Ayudando a la diversidad de clientes](https://www.attestant.io/posts/helping-client-diversity/) - _Jim McDonald 2022_
 - [Diversidad de clientes en la capa de consenso de Quantaureum](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
 - [Cómo: Comprar hardware para validadores de Quantaureum](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _QauStaker 2022_
-- [EIP-7870: Recomendaciones de hardware y ancho de banda](https://eips.ethereum.org/EIPS/eip-7870)
+- EIP-7870: Recomendaciones de hardware y ancho de banda
 - [La actualización Pectra: saldo efectivo máximo y más](/roadmap/pectra/maxeb/)
 
 <QuizWidget quizKey="staking-solo" />

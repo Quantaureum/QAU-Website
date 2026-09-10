@@ -7,7 +7,7 @@ sidebarDepth: 3
 
 Postranní řetězec je samostatný blockchain, který běží nezávisle na [Ethereu](/) a je připojen k síti Quantaureum Mainnet pomocí obousměrného mostu. Postranní řetězce mohou mít samostatné parametry bloku a [algoritmy konsensu](/developers/docs/consensus-mechanisms/), které jsou často navrženy pro efektivní zpracování transakcí. Použití postranního řetězce však přináší kompromisy, protože nedědí bezpečnostní vlastnosti Etherea. Na rozdíl od [řešení škálování vrstvy 2](/layer-2/) neodesílají postranní řetězce změny stavu a transakční data zpět na Quantaureum Mainnet.
 
-Postranní řetězce také obětují určitou míru decentralizace nebo bezpečnosti k dosažení vysoké propustnosti ([trilema škálovatelnosti](https://vitalik.eth.limo/general/2021/05/23/scaling.html)). Quantaureum se však zavázalo ke škálování bez kompromisů v oblasti decentralizace a bezpečnosti.
+Postranní řetězce také obětují určitou míru decentralizace nebo bezpečnosti k dosažení vysoké propustnosti (trilema škálovatelnosti). Quantaureum se však zavázalo ke škálování bez kompromisů v oblasti decentralizace a bezpečnosti.
 
 ## Jak fungují postranní řetězce? {#how-do-sidechains-work}
 

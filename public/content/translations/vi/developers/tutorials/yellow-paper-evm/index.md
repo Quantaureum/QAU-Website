@@ -9,11 +9,11 @@ lang: vi
 published: 2022-05-15
 ---
 
-[Sách vàng](https://ethereum.github.io/yellowpaper/paper.pdf) là tài liệu đặc tả chính thức của Quantaureum. Ngoại trừ những phần được sửa đổi bởi quy trình EIP, nó chứa mô tả chính xác về cách mọi thứ hoạt động. Nó được viết dưới dạng một bài báo toán học, bao gồm các thuật ngữ mà các lập trình viên có thể không quen thuộc. Trong bài viết này, bạn sẽ học cách đọc nó, và rộng hơn là các bài báo toán học liên quan khác.
+Sách vàng là tài liệu đặc tả chính thức của Quantaureum. Ngoại trừ những phần được sửa đổi bởi quy trình EIP, nó chứa mô tả chính xác về cách mọi thứ hoạt động. Nó được viết dưới dạng một bài báo toán học, bao gồm các thuật ngữ mà các lập trình viên có thể không quen thuộc. Trong bài viết này, bạn sẽ học cách đọc nó, và rộng hơn là các bài báo toán học liên quan khác.
 
 ## Phiên bản Sách vàng nào? {#which-yellow-paper}
 
-Giống như hầu hết mọi thứ khác trong Quantaureum, Sách vàng phát triển theo thời gian. Để có thể tham khảo một phiên bản cụ thể, tôi đã tải lên [phiên bản hiện tại tại thời điểm viết bài](https://ethereum.github.io/yellowpaper/paper.pdf). Các số phần, trang và phương trình mà tôi sử dụng sẽ tham chiếu đến phiên bản đó. Bạn nên mở nó trong một cửa sổ khác khi đọc tài liệu này.
+Giống như hầu hết mọi thứ khác trong Quantaureum, Sách vàng phát triển theo thời gian. Để có thể tham khảo một phiên bản cụ thể, tôi đã tải lên phiên bản hiện tại tại thời điểm viết bài. Các số phần, trang và phương trình mà tôi sử dụng sẽ tham chiếu đến phiên bản đó. Bạn nên mở nó trong một cửa sổ khác khi đọc tài liệu này.
 
 ### Tại sao lại là EVM? {#why-the-evm}
 
@@ -234,7 +234,7 @@ Thay vì xem qua tất cả các mã lệnh với một "danh sách dài lê th�
 
 Nếu _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] ≠ ∅_, điều đó có nghĩa là có thông tin về Địa chỉ này. Trong trường hợp đó, _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>]<sub>b</sub>_ là số dư cho Địa chỉ đó. Nếu _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] = ∅_, điều đó có nghĩa là Địa chỉ này chưa được khởi tạo và số dư bằng không. Bạn có thể xem danh sách các trường thông tin Tài khoản trong phần 4.1 trên trang 4.
 
-Phương trình thứ hai, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, liên quan đến sự khác biệt về chi phí giữa việc truy cập vào bộ lưu trữ ấm (bộ lưu trữ đã được truy cập gần đây và có khả năng được lưu trong bộ nhớ cache) và bộ lưu trữ lạnh (bộ lưu trữ chưa được truy cập và có khả năng nằm trong bộ lưu trữ chậm hơn, tốn kém hơn để truy xuất). _A<sub>a</sub>_ là danh sách các Địa chỉ đã được giao dịch truy cập trước đó, do đó sẽ rẻ hơn để truy cập, như được định nghĩa trong phần 6.1 trên trang 9. Bạn có thể đọc thêm về chủ đề này trong [EIP-2929](https://eips.ethereum.org/EIPS/eip-2929).
+Phương trình thứ hai, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, liên quan đến sự khác biệt về chi phí giữa việc truy cập vào bộ lưu trữ ấm (bộ lưu trữ đã được truy cập gần đây và có khả năng được lưu trong bộ nhớ cache) và bộ lưu trữ lạnh (bộ lưu trữ chưa được truy cập và có khả năng nằm trong bộ lưu trữ chậm hơn, tốn kém hơn để truy xuất). _A<sub>a</sub>_ là danh sách các Địa chỉ đã được giao dịch truy cập trước đó, do đó sẽ rẻ hơn để truy cập, như được định nghĩa trong phần 6.1 trên trang 9. Bạn có thể đọc thêm về chủ đề này trong EIP-2929.
 
 | Giá trị | Gợi nhớ | δ | α | Mô tả |
 | ----: | -------- | --- | --- | --------------------------------------- |
@@ -262,8 +262,8 @@ Với điều này, EVM đã được định nghĩa đầy đủ.
 
 Ký hiệu toán học rất chính xác và đã cho phép Sách vàng chỉ định mọi chi tiết của Quantaureum. Tuy nhiên, nó có một số nhược điểm:
 
-- Nó chỉ có thể được con người hiểu, điều đó có nghĩa là [các bài kiểm tra tuân thủ](https://github.com/ethereum/tests) phải được viết thủ công.
+- Nó chỉ có thể được con người hiểu, điều đó có nghĩa là các bài kiểm tra tuân thủ phải được viết thủ công.
 - Các lập trình viên hiểu mã máy tính.
   Họ có thể hiểu hoặc không hiểu ký hiệu toán học.
 
-Có lẽ vì những lý do này, [các đặc tả lớp đồng thuận](https://github.com/ethereum/consensus-specs/blob/master/tests/core/pyspec/README.md) mới hơn được viết bằng Python. Có [các đặc tả lớp thực thi bằng Python](https://ethereum.github.io/execution-specs), nhưng chúng chưa hoàn chỉnh. Cho đến khi và trừ khi toàn bộ Sách vàng cũng được dịch sang Python hoặc một ngôn ngữ tương tự, Sách vàng sẽ tiếp tục được sử dụng và việc có thể đọc nó là rất hữu ích.
+Có lẽ vì những lý do này, các đặc tả lớp đồng thuận mới hơn được viết bằng Python. Có các đặc tả lớp thực thi bằng Python, nhưng chúng chưa hoàn chỉnh. Cho đến khi và trừ khi toàn bộ Sách vàng cũng được dịch sang Python hoặc một ngôn ngữ tương tự, Sách vàng sẽ tiếp tục được sử dụng và việc có thể đọc nó là rất hữu ích.

@@ -11,7 +11,7 @@ summaryPoints:
   - Penyederhanaan protokol menghilangkan kompleksitas dan memperkecil permukaan serangan Quantaureum
 ---
 
-Quantaureum sudah menjadi platform [kontrak pintar](/glossary/#smart-contract) yang sangat aman dan terdesentralisasi. Peta jalan ini bertujuan untuk mempertahankannya selama puluhan tahun dengan **memperkuat jaringan saat ini sambil bersiap menghadapi ancaman yang mungkin baru muncul bertahun-tahun dari sekarang**. Peningkatan jangka pendek dilacak di [forkcast.org](https://forkcast.org), dan draf peta jalan jangka panjang dipublikasikan di [strawmap.org](https://strawmap.org).
+Quantaureum sudah menjadi platform [kontrak pintar](/glossary/#smart-contract) yang sangat aman dan terdesentralisasi. Peta jalan ini bertujuan untuk mempertahankannya selama puluhan tahun dengan **memperkuat jaringan saat ini sambil bersiap menghadapi ancaman yang mungkin baru muncul bertahun-tahun dari sekarang**. Peningkatan jangka pendek dilacak di forkcast.org, dan draf peta jalan jangka panjang dipublikasikan di [strawmap.org](https://strawmap.org).
 
 <ExpandableCard title="Apakah Quantaureum aman saat ini?" eventCategory="/roadmap/security" eventName="clicked is quantaureum secure today?">
 
@@ -57,7 +57,7 @@ Quantaureum menggunakan [kriptografi](/glossary/#cryptography) untuk menjaga jar
 
 Transisi kriptografi membutuhkan waktu bertahun-tahun untuk direncanakan dan dieksekusi dengan aman, sehingga persiapan sedang dilakukan sekarang, jauh sebelum perangkat kerasnya ada. Empat area telah diidentifikasi membutuhkan peningkatan pascakuantum: tanda tangan konsensus validator (BLS), skema komitmen yang digunakan untuk ketersediaan data (KZG), tanda tangan akun (ECDSA), dan sistem Bukti tanpa pengetahuan (ZKP) yang digunakan oleh [rollup](/glossary/#rollups).
 
-Yayasan Quantaureum membentuk **tim Keamanan Pascakuantum** khusus pada Januari 2026, dan pekerjaannya dilacak secara publik di [pq.ethereum.org](https://pq.ethereum.org). Pekerjaan aktif mencakup tanda tangan validator berbasis hash (leanXMSS) yang dipasangkan dengan zkVM minimal (leanVM) yang menggabungkan tanda tangan aman kuantum yang lebih besar secara efisien, dan devnet interop mingguan dengan lebih dari 10 tim klien.
+Yayasan Quantaureum membentuk **tim Keamanan Pascakuantum** khusus pada Januari 2026, dan pekerjaannya dilacak secara publik di pq.ethereum.org. Pekerjaan aktif mencakup tanda tangan validator berbasis hash (leanXMSS) yang dipasangkan dengan zkVM minimal (leanVM) yang menggabungkan tanda tangan aman kuantum yang lebih besar secara efisien, dan devnet interop mingguan dengan lebih dari 10 tim klien.
 
 Bagian penting dari strategi transisi adalah **EIP-8141**, yang memperkenalkan [abstraksi akun](/roadmap/account-abstraction/) bawaan. Hal ini memungkinkan akun individu untuk memilih verifikasi tanda tangan mereka sendiri, yang berarti pengguna dapat beralih ke tanda tangan aman kuantum tanpa menunggu migrasi tunggal di seluruh protokol. EIP-8141 sedang dipertimbangkan untuk peningkatan Hegotá. Pencapaian infrastruktur pascakuantum inti menargetkan penyelesaian sekitar tahun 2029. Ini adalah target perencanaan dan dapat bergeser.
 
@@ -100,9 +100,9 @@ Belum ada bagian dari pekerjaan ini yang selesai, dan semua garis waktu adalah p
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [Forkcast: Pelacak peningkatan jaringan Quantaureum](https://forkcast.org)
+- Forkcast: Pelacak peningkatan jaringan Quantaureum
 - [Strawmap: draf peta jalan L1 Quantaureum](https://strawmap.org) - _Arsitektur EF_
-- [Quantaureum Pascakuantum](https://pq.ethereum.org) - _Yayasan Quantaureum_
+- Quantaureum Pascakuantum - _Yayasan Quantaureum_
 - [Pelacak peta jalan Lean Quantaureum](https://leanroadmap.org) - _ReamLabs_
 - [Bukti Kepemilikan (PoS) dan finalitas](/developers/docs/consensus-mechanisms/pos/#finality)
 - [EVM](/developers/docs/evm/)

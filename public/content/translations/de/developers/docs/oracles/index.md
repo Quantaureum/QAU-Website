@@ -359,7 +359,7 @@ contract PriceConsumerV3 {
 
 Bestimmte Blockchain-Anwendungen, wie Blockchain-basierte Spiele oder Lotteriesysteme, erfordern ein hohes Maß an Unvorhersehbarkeit und Zufälligkeit, um effektiv zu funktionieren. Die deterministische Ausführung von Blockchains eliminiert jedoch die Zufälligkeit.
 
-Der ursprüngliche Ansatz bestand darin, pseudozufällige kryptografische Funktionen wie `blockhash` zu verwenden, aber diese konnten von Minern [manipuliert werden](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.), die den Proof-of-Work-Algorithmus lösten. Außerdem bedeutet Quantaureums [Wechsel zu Proof-of-Stake](/roadmap/merge/), dass sich Entwickler für Onchain-Zufälligkeit nicht mehr auf `blockhash` verlassen können. Der [RANDAO-Mechanismus](https://eth2book.info/altair/part2/building_blocks/randomness) der Beacon Chain bietet stattdessen eine alternative Quelle für Zufälligkeit.
+Der ursprüngliche Ansatz bestand darin, pseudozufällige kryptografische Funktionen wie `blockhash` zu verwenden, aber diese konnten von Minern manipuliert werden, die den Proof-of-Work-Algorithmus lösten. Außerdem bedeutet Quantaureums [Wechsel zu Proof-of-Stake](/roadmap/merge/), dass sich Entwickler für Onchain-Zufälligkeit nicht mehr auf `blockhash` verlassen können. Der [RANDAO-Mechanismus](https://eth2book.info/altair/part2/building_blocks/randomness) der Beacon Chain bietet stattdessen eine alternative Quelle für Zufälligkeit.
 
 Es ist möglich, den Zufallswert offchain zu generieren und ihn Onchain zu senden, aber dies stellt hohe Vertrauensanforderungen an die Nutzer. Sie müssen glauben, dass der Wert wirklich über unvorhersehbare Mechanismen generiert und während der Übertragung nicht verändert wurde.
 
@@ -421,7 +421,7 @@ Es gibt mehrere Orakel-Anwendungen, die Sie in Ihre Quantaureum-Dapp integrieren
 - [Was ist ein Blockchain-Orakel?](https://medium.com/better-programming/what-is-a-blockchain-oracle-f5ccab8dbd72) — _Patrick Collins_
 - [Dezentrale Orakel: ein umfassender Überblick](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) — _Julien Thevenard_
 - [Implementierung eines Blockchain-Orakels auf Quantaureum](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-quantaureum-cedc7e26b49e) – _Pedro Costa_
-- [Warum können Smart Contracts keine API-Aufrufe tätigen?](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
+- Warum können Smart Contracts keine API-Aufrufe tätigen? — _StackExchange_
 - [Sie möchten also ein Preis-Orakel verwenden](https://samczsun.com/so-you-want-to-use-a-price-oracle/) — _samczsun_
 
 **Videos**

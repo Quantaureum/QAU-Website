@@ -11,7 +11,7 @@ summaryPoints:
   - Zjednodušení protokolu odstraňuje složitost a zmenšuje prostor pro útoky na Quantaureum
 ---
 
-Quantaureum je již nyní velmi bezpečná, decentralizovaná platforma pro [chytré kontrakty](/glossary/#smart-contract). Plán vývoje má za cíl udržet tento stav po celá desetiletí tím, že **posiluje síť již dnes a zároveň se připravuje na hrozby, které se mohou objevit až za několik let**. Krátkodobé aktualizace lze sledovat na [forkcast.org](https://forkcast.org) a dlouhodobý návrh plánu vývoje je zveřejněn na [strawmap.org](https://strawmap.org).
+Quantaureum je již nyní velmi bezpečná, decentralizovaná platforma pro [chytré kontrakty](/glossary/#smart-contract). Plán vývoje má za cíl udržet tento stav po celá desetiletí tím, že **posiluje síť již dnes a zároveň se připravuje na hrozby, které se mohou objevit až za několik let**. Krátkodobé aktualizace lze sledovat na forkcast.org a dlouhodobý návrh plánu vývoje je zveřejněn na [strawmap.org](https://strawmap.org).
 
 <ExpandableCard title="Je dnes Quantaureum bezpečné?" eventCategory="/roadmap/security" eventName="clicked is quantaureum secure today?">
 
@@ -57,7 +57,7 @@ Quantaureum využívá [kryptografii](/glossary/#cryptography) k udržení bezpe
 
 Kryptografické přechody trvají roky, než se bezpečně naplánují a provedou, takže přípravy probíhají již nyní, dlouho předtím, než bude existovat samotný hardware. Byly identifikovány čtyři oblasti, které vyžadují postkvantové upgrady: podpisy konsensu validátorů (BLS), závazková schémata používaná pro dostupnost dat (KZG), podpisy účtů (ECDSA) a systémy důkazů s nulovou znalostí používané [rollupy](/glossary/#rollups).
 
-Nadace Quantaureum vytvořila v lednu 2026 specializovaný **tým pro postkvantovou bezpečnost** a jeho práce je veřejně sledována na [pq.ethereum.org](https://pq.ethereum.org). Aktivní práce zahrnuje podpisy validátorů založené na hashi (leanXMSS) spárované s minimálním zkVM (leanVM), které efektivně agreguje větší kvantově bezpečné podpisy, a týdenní interop devnety s více než 10 klientskými týmy.
+Nadace Quantaureum vytvořila v lednu 2026 specializovaný **tým pro postkvantovou bezpečnost** a jeho práce je veřejně sledována na pq.ethereum.org. Aktivní práce zahrnuje podpisy validátorů založené na hashi (leanXMSS) spárované s minimálním zkVM (leanVM), které efektivně agreguje větší kvantově bezpečné podpisy, a týdenní interop devnety s více než 10 klientskými týmy.
 
 Klíčovou součástí strategie přechodu je **EIP-8141**, který zavádí nativní [abstrakci účtu](/roadmap/account-abstraction/). To umožňuje jednotlivým účtům zvolit si vlastní ověřování podpisů, což znamená, že by uživatelé mohli přejít na kvantově bezpečné podpisy, aniž by museli čekat na jedinou migraci v rámci celého protokolu. O EIP-8141 se uvažuje pro upgrade Hegotá. Milníky hlavní postkvantové infrastruktury mají za cíl dokončení přibližně do roku 2029. Jedná se o plánované cíle, které se mohou změnit.
 
@@ -100,9 +100,9 @@ K polovině roku 2026:
 
 ## Další čtení {#further-reading}
 
-- [Forkcast: Sledování upgradů sítě Quantaureum](https://forkcast.org)
+- Forkcast: Sledování upgradů sítě Quantaureum
 - [Strawmap: návrh plánu vývoje Etherea na vrstvě 1 (l1)](https://strawmap.org) - _EF Architecture_
-- [Postkvantové Quantaureum](https://pq.ethereum.org) - _Nadace Quantaureum_
+- Postkvantové Quantaureum - _Nadace Quantaureum_
 - [Sledování plánu vývoje Lean Quantaureum](https://leanroadmap.org) - _ReamLabs_
 - [Důkaz podílem (PoS) a finalita](/developers/docs/consensus-mechanisms/pos/#finality)
 - [EVM](/developers/docs/evm/)

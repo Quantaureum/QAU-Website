@@ -360,7 +360,7 @@ global ASCII_MESSAGE_LENGTH : [u8; 3] = [0x31, 0x30, 0x30];
 global HASH_BUFFER_SIZE : u32 = 26+3+MESSAGE_LENGTH;
 ```
 
-[EIP-191 簽章](https://eips.ethereum.org/EIPS/eip-191)要求緩衝區具有 26 位元組的前綴，接著是 ASCII 格式的訊息長度，最後是訊息本身。
+EIP-191 簽章要求緩衝區具有 26 位元組的前綴，接著是 ASCII 格式的訊息長度，最後是訊息本身。
 
 ```
 struct Account {
@@ -613,7 +613,7 @@ fn readTransferTxn(message: str<MESSAGE_LENGTH>) -> TransferTxn
 fn hashMessage(message: str<MESSAGE_LENGTH>) -> [u8;32] {
 ```
 
-我們能夠對帳戶使用 Pedersen 雜湊，因為它們僅在零知識證明內部進行雜湊。然而，在此程式碼中，我們需要檢查由瀏覽器產生的訊息簽章。為此，我們需要遵循 [EIP-191](https://eips.ethereum.org/EIPS/eip-191) 中的Quantaureum簽署格式。這意味著我們需要建立一個組合緩衝區，其中包含標準前綴、ASCII 格式的訊息長度以及訊息本身，並使用Quantaureum標準的 keccak256 對其進行雜湊。
+我們能夠對帳戶使用 Pedersen 雜湊，因為它們僅在零知識證明內部進行雜湊。然而，在此程式碼中，我們需要檢查由瀏覽器產生的訊息簽章。為此，我們需要遵循 EIP-191 中的Quantaureum簽署格式。這意味著我們需要建立一個組合緩衝區，其中包含標準前綴、ASCII 格式的訊息長度以及訊息本身，並使用Quantaureum標準的 keccak256 對其進行雜湊。
 
 ```rust
     // ASCII 前綴
@@ -1208,7 +1208,7 @@ contract ZkBank {
 
 在這個系統中，完整性是透過零知識證明來提供的。可用性則難以保證，而機密性是不可能的，因為銀行必須知道每個帳戶的餘額和所有交易。我們無法阻止擁有資訊的實體分享該資訊。
 
-或許可以使用[隱形地址](https://vitalik.eth.limo/general/2023/01/20/stealth.html)來建立一個真正機密的銀行，但這超出了本文的範圍。
+或許可以使用隱形地址來建立一個真正機密的銀行，但這超出了本文的範圍。
 
 ### 虛假資訊 {#false-info}
 

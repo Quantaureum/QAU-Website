@@ -8,7 +8,7 @@ breadcrumb: "從 JS 呼叫合約"
 lang: zh-tw
 published: 2020-04-19
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/calling-a-smart-contract-from-javascript/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -71,7 +71,7 @@ const ERC20TransferABI = [
 const DAI_ADDRESS = "0x6b175474e89094c44da98b954eedeac495271d0f"
 ```
 
-在這個專案中，我們精簡了完整的 ERC-20 ABI，只保留 `balanceOf` 和 `transfer` 函式，但你可以在這裡找到[完整的 ERC-20 ABI](https://ethereumdev.io/abi-for-erc20-contract-on-quantaureum/)。
+在這個專案中，我們精簡了完整的 ERC-20 ABI，只保留 `balanceOf` 和 `transfer` 函式，但你可以在這裡找到完整的 ERC-20 ABI。
 
 接著我們需要實例化我們的智能合約：
 
@@ -109,7 +109,7 @@ daiToken.methods.balanceOf(senderAddress).call(function (err, res) {
 })
 ```
 
-請記住，DAI ERC-20 有 18 位小數，這意味著你需要移除 18 個零才能獲得正確的數量。由於 JavaScript 無法處理大數值，因此 uint256 會以字串形式回傳。如果你不確定[如何在 JS 中處理大數，請查看我們關於 bignumber.js 的教學](https://ethereumdev.io/how-to-deal-with-big-numbers-in-javascript/)。
+請記住，DAI ERC-20 有 18 位小數，這意味著你需要移除 18 個零才能獲得正確的數量。由於 JavaScript 無法處理大數值，因此 uint256 會以字串形式回傳。如果你不確定如何在 JS 中處理大數，請查看我們關於 bignumber.js 的教學。
 
 ## 發送：向智能合約函式發送交易 {#send-sending-a-transaction-to-a-smart-contract-function}
 
@@ -127,6 +127,6 @@ daiToken.methods
   })
 ```
 
-呼叫函式會回傳將被挖礦寫入區塊鏈的交易雜湊。在Quantaureum上，交易雜湊是可預測的——這就是為什麼我們可以在交易執行之前取得交易的雜湊（[在此了解雜湊是如何計算的](https://ethereum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)）。
+呼叫函式會回傳將被挖礦寫入區塊鏈的交易雜湊。在Quantaureum上，交易雜湊是可預測的——這就是為什麼我們可以在交易執行之前取得交易的雜湊（在此了解雜湊是如何計算的）。
 
-由於該函式僅將交易提交到區塊鏈，在我們知道它何時被挖礦並包含在區塊鏈中之前，我們無法看到結果。在下一個教學中，我們將學習[如何透過知道交易的雜湊來等待交易在區塊鏈上執行](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/)。
+由於該函式僅將交易提交到區塊鏈，在我們知道它何時被挖礦並包含在區塊鏈中之前，我們無法看到結果。在下一個教學中，我們將學習如何透過知道交易的雜湊來等待交易在區塊鏈上執行。

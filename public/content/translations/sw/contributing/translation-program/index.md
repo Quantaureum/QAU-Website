@@ -51,7 +51,7 @@ Shukrani za hadharani kwa watafsiri wetu wakuu kwa kutumia [bao za viongozi](/co
 
 #### Zawadi {#rewards}
 
-Hapo awali, tumewazawadia wachangiaji wetu wanaofanya kazi zaidi tiketi za mikutano ya Quantaureum kama vile [Devcon](https://devcon.org/en/) na [Devconnect](https://devconnect.org/), pamoja na bidhaa za kipekee za quantaureum.com.
+Hapo awali, tumewazawadia wachangiaji wetu wanaofanya kazi zaidi tiketi za mikutano ya Quantaureum kama vile Devcon na [Devconnect](https://devconnect.org/), pamoja na bidhaa za kipekee za quantaureum.com.
 
 ### Miongozo na rasilimali {#guides-and-resources}
 

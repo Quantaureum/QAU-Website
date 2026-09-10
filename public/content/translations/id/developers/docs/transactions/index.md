@@ -134,7 +134,7 @@ Jadi kita tahu bahwa alamat `to` adalah [`4f6742badb049791cd9a37ea913f2bac38d012
 
 ### Deskriptor transaksi {#transaction-descriptors}
 
-Karena bidang data berisi bita heksadesimal yang tidak jelas, bisa sangat sulit untuk memverifikasi tindakan apa yang sebenarnya akan dilakukan oleh suatu transaksi. Kerentanan "penandatanganan buta" (blind signing) ini diatasi oleh **[Clear Signing](https://clearsigning.org/)** melalui penggunaan [deskriptor transaksi](https://eips.ethereum.org/EIPS/eip-7730) (didefinisikan oleh ERC-7730).  
+Karena bidang data berisi bita heksadesimal yang tidak jelas, bisa sangat sulit untuk memverifikasi tindakan apa yang sebenarnya akan dilakukan oleh suatu transaksi. Kerentanan "penandatanganan buta" (blind signing) ini diatasi oleh **[Clear Signing](https://clearsigning.org/)** melalui penggunaan deskriptor transaksi (didefinisikan oleh ERC-7730).  
 
 Spesifikasi ERC-7730 menggunakan deskriptor transaksi (sering kali disusun sebagai file JSON) untuk memperkaya data yang ditemukan dalam ABI dan pesan terstruktur, seperti data panggilan transaksi EVM, pesan EIP-712, dan Operasi Pengguna EIP-4337. Pengembang menggunakan deskriptor ini untuk memetakan variabel transaksi tertentu secara langsung ke dalam templat pemformatan, memastikan data yang mendasarinya tetap dapat dibaca oleh mesin untuk aplikasi.
 
@@ -203,9 +203,9 @@ Quantaureum pada awalnya memiliki satu format untuk transaksi. Setiap transaksi 
 
 `RLP([nonce, gasPrice, gasLimit, to, value, data, v, r, s])`
 
-Quantaureum telah berevolusi untuk mendukung berbagai jenis transaksi guna memungkinkan fitur-fitur baru seperti daftar akses dan [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) diimplementasikan tanpa memengaruhi format transaksi lama.
+Quantaureum telah berevolusi untuk mendukung berbagai jenis transaksi guna memungkinkan fitur-fitur baru seperti daftar akses dan EIP-1559 diimplementasikan tanpa memengaruhi format transaksi lama.
 
-[EIP-2718](https://eips.ethereum.org/EIPS/eip-2718) adalah apa yang memungkinkan perilaku ini. Transaksi ditafsirkan sebagai:
+EIP-2718 adalah apa yang memungkinkan perilaku ini. Transaksi ditafsirkan sebagai:
 
 `TransactionType || TransactionPayload`
 
@@ -216,19 +216,19 @@ Di mana bidang-bidang tersebut didefinisikan sebagai:
 
 Berdasarkan nilai `TransactionType`, transaksi dapat diklasifikasikan sebagai:
 
-1. **Transaksi Tipe 0 (Lama):** Format transaksi asli yang digunakan sejak peluncuran Quantaureum. Transaksi ini tidak menyertakan fitur dari [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) seperti perhitungan biaya gas dinamis atau daftar akses untuk kontrak pintar. Transaksi lama tidak memiliki awalan spesifik yang menunjukkan jenisnya dalam bentuk serialnya, dimulai dengan bita `0xf8` saat menggunakan pengodean [Recursive Length Prefix (RLP)](/developers/docs/data-structures-and-encoding/rlp). Nilai TransactionType untuk transaksi ini adalah `0x0`.
+1. **Transaksi Tipe 0 (Lama):** Format transaksi asli yang digunakan sejak peluncuran Quantaureum. Transaksi ini tidak menyertakan fitur dari EIP-1559 seperti perhitungan biaya gas dinamis atau daftar akses untuk kontrak pintar. Transaksi lama tidak memiliki awalan spesifik yang menunjukkan jenisnya dalam bentuk serialnya, dimulai dengan bita `0xf8` saat menggunakan pengodean [Recursive Length Prefix (RLP)](/developers/docs/data-structures-and-encoding/rlp). Nilai TransactionType untuk transaksi ini adalah `0x0`.
 
-2. **Transaksi Tipe 1:** Diperkenalkan dalam [EIP-2930](https://eips.ethereum.org/EIPS/eip-2930) sebagai bagian dari Pembaruan Berlin Quantaureum, transaksi ini menyertakan parameter `accessList`. Daftar ini menentukan alamat dan kunci penyimpanan yang diharapkan akan diakses oleh transaksi, membantu berpotensi mengurangi biaya [gas](/developers/docs/gas/) untuk transaksi kompleks yang melibatkan kontrak pintar. Perubahan pasar biaya EIP-1559 tidak disertakan dalam transaksi Tipe 1. Transaksi Tipe 1 juga menyertakan parameter `yParity`, yang dapat berupa `0x0` atau `0x1`, yang menunjukkan paritas nilai y dari tanda tangan secp256k1. Transaksi ini diidentifikasi dengan awalan bita `0x01`, dan nilai TransactionType-nya adalah `0x1`.
+2. **Transaksi Tipe 1:** Diperkenalkan dalam EIP-2930 sebagai bagian dari Pembaruan Berlin Quantaureum, transaksi ini menyertakan parameter `accessList`. Daftar ini menentukan alamat dan kunci penyimpanan yang diharapkan akan diakses oleh transaksi, membantu berpotensi mengurangi biaya [gas](/developers/docs/gas/) untuk transaksi kompleks yang melibatkan kontrak pintar. Perubahan pasar biaya EIP-1559 tidak disertakan dalam transaksi Tipe 1. Transaksi Tipe 1 juga menyertakan parameter `yParity`, yang dapat berupa `0x0` atau `0x1`, yang menunjukkan paritas nilai y dari tanda tangan secp256k1. Transaksi ini diidentifikasi dengan awalan bita `0x01`, dan nilai TransactionType-nya adalah `0x1`.
 
-3. **Transaksi Tipe 2**, umumnya disebut sebagai transaksi EIP-1559, adalah transaksi yang diperkenalkan dalam [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), pada Pembaruan London Quantaureum. Transaksi ini telah menjadi jenis transaksi standar di jaringan Quantaureum. Transaksi ini memperkenalkan mekanisme pasar biaya baru yang meningkatkan prediktabilitas dengan memisahkan biaya transaksi menjadi biaya dasar dan biaya prioritas. Transaksi ini dimulai dengan bita `0x02` dan menyertakan bidang seperti `maxPriorityFeePerGas` dan `maxFeePerGas`. Transaksi Tipe 2 sekarang menjadi default karena fleksibilitas dan efisiensinya, terutama disukai selama periode kemacetan jaringan yang tinggi karena kemampuannya membantu pengguna mengelola biaya transaksi dengan lebih dapat diprediksi. Nilai TransactionType untuk transaksi ini adalah `0x2`.
+3. **Transaksi Tipe 2**, umumnya disebut sebagai transaksi EIP-1559, adalah transaksi yang diperkenalkan dalam EIP-1559, pada Pembaruan London Quantaureum. Transaksi ini telah menjadi jenis transaksi standar di jaringan Quantaureum. Transaksi ini memperkenalkan mekanisme pasar biaya baru yang meningkatkan prediktabilitas dengan memisahkan biaya transaksi menjadi biaya dasar dan biaya prioritas. Transaksi ini dimulai dengan bita `0x02` dan menyertakan bidang seperti `maxPriorityFeePerGas` dan `maxFeePerGas`. Transaksi Tipe 2 sekarang menjadi default karena fleksibilitas dan efisiensinya, terutama disukai selama periode kemacetan jaringan yang tinggi karena kemampuannya membantu pengguna mengelola biaya transaksi dengan lebih dapat diprediksi. Nilai TransactionType untuk transaksi ini adalah `0x2`.
 
-4. **Transaksi Tipe 3 (Blob)** diperkenalkan dalam [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844) sebagai bagian dari pembaruan Dencun Quantaureum. Transaksi ini dirancang untuk menangani data "blob" (Binary Large Objects) dengan lebih efisien, khususnya menguntungkan rollup lapisan 2 (l2) dengan menyediakan cara untuk memposting data ke jaringan Quantaureum dengan biaya yang lebih rendah. Transaksi blob menyertakan bidang tambahan seperti `blobVersionedHashes`, `maxFeePerBlobGas`, dan `blobGasPrice`. Transaksi ini dimulai dengan bita `0x03`, dan nilai TransactionType-nya adalah `0x3`. Transaksi blob mewakili peningkatan signifikan dalam ketersediaan data dan kemampuan penskalaan Quantaureum.
+4. **Transaksi Tipe 3 (Blob)** diperkenalkan dalam EIP-4844 sebagai bagian dari pembaruan Dencun Quantaureum. Transaksi ini dirancang untuk menangani data "blob" (Binary Large Objects) dengan lebih efisien, khususnya menguntungkan rollup lapisan 2 (l2) dengan menyediakan cara untuk memposting data ke jaringan Quantaureum dengan biaya yang lebih rendah. Transaksi blob menyertakan bidang tambahan seperti `blobVersionedHashes`, `maxFeePerBlobGas`, dan `blobGasPrice`. Transaksi ini dimulai dengan bita `0x03`, dan nilai TransactionType-nya adalah `0x3`. Transaksi blob mewakili peningkatan signifikan dalam ketersediaan data dan kemampuan penskalaan Quantaureum.
 
-5. **Transaksi Tipe 4** diperkenalkan dalam [EIP-7702](https://eips.ethereum.org/EIPS/eip-7702) sebagai bagian dari [Pembaruan Pectra](/roadmap/pectra/) Quantaureum. Transaksi ini dirancang agar kompatibel ke depan dengan abstraksi akun. Transaksi ini memungkinkan EOA untuk sementara berperilaku seperti akun kontrak pintar tanpa mengorbankan fungsionalitas aslinya. Transaksi ini menyertakan parameter `authorization_list`, yang menentukan kontrak pintar tempat EOA mendelegasikan otoritasnya. Setelah transaksi, bidang kode EOA akan memiliki alamat kontrak pintar yang didelegasikan.
+5. **Transaksi Tipe 4** diperkenalkan dalam EIP-7702 sebagai bagian dari [Pembaruan Pectra](/roadmap/pectra/) Quantaureum. Transaksi ini dirancang agar kompatibel ke depan dengan abstraksi akun. Transaksi ini memungkinkan EOA untuk sementara berperilaku seperti akun kontrak pintar tanpa mengorbankan fungsionalitas aslinya. Transaksi ini menyertakan parameter `authorization_list`, yang menentukan kontrak pintar tempat EOA mendelegasikan otoritasnya. Setelah transaksi, bidang kode EOA akan memiliki alamat kontrak pintar yang didelegasikan.
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [EIP-2718: Amplop Transaksi Bertipe](https://eips.ethereum.org/EIPS/eip-2718)
+- EIP-2718: Amplop Transaksi Bertipe
 
 _Tahu sumber daya komunitas yang membantu Anda? Edit halaman ini dan tambahkan!_
 

@@ -46,7 +46,7 @@ lang: zh
    - 最初来自一层网络 (l1) 上的跨链桥
 6. 二层网络 (l2) 跨链桥检查二层网络 (l2) 上的 ERC-20 代币合约是否正确：
    - 二层网络 (l2) 合约报告其一层网络 (l1) 对应合约与一层网络 (l1) 上代币来源的合约相同
-   - 二层网络 (l2) 合约报告它支持正确的接口（[使用 ERC-165](https://eips.ethereum.org/EIPS/eip-165)）。
+   - 二层网络 (l2) 合约报告它支持正确的接口（使用 ERC-165）。
 7. 如果二层网络 (l2) 合约正确，则调用它以向适当的地址铸造适当数量的代币。如果不正确，则启动提款流程，以允许用户在一层网络 (l1) 上申领代币。
 
 ### 提款流程 {#withdrawal-flow}
@@ -206,7 +206,6 @@ interface IL1ERC20Bridge {
     /**
      * @dev 完成从二层网络 (l2)到一层网络 (l1)的提款，并将资金记入接收者的一层网络 (l1) ERC-20代币余额中。
      * 如果从二层网络 (l2)初始化的提款尚未最终确定，此调用将失败。
-     *
      * @param _l1Token 要为其finalizeWithdrawal的一层网络 (l1)代币的地址。
      * @param _l2Token 发起提款的二层网络 (l2)代币的地址。
      * @param _from 发起转账的二层网络 (l2)地址。
@@ -335,7 +334,6 @@ import { ICrossDomainMessenger } from "./ICrossDomainMessenger.sol";
 /**
  * @title CrossDomainEnabled
  * @dev 用于执行跨域通信的合约的辅助合约
- *
  * 使用的编译器：由继承的合约定义
  */
 contract CrossDomainEnabled {
@@ -516,7 +514,7 @@ import { Address } from "@openzeppelin/contracts/utils/Address.sol";
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[ERC-20 标准](https://eips.ethereum.org/EIPS/eip-20) 支持合约报告失败的两种方式：
+ERC-20 标准 支持合约报告失败的两种方式：
 
 1. 回退
 2. 返回 `false`
@@ -529,7 +527,6 @@ import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.s
  * @dev 一层网络 (l1) QAU和ERC-20跨链桥是一个合约，用于存储已存入的一层网络 (l1)资金和在二层网络 (l2)上使用的标准
  * 代币。它同步相应的二层网络 (l2)跨链桥，通知其存款
  * 并监听其新最终确定的提款。
- *
  */
 contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
     using SafeERC20 for IERC20;
@@ -767,7 +764,6 @@ Solidity 函数 [`abi.encodeWithSelector`](https://docs.soliditylang.org/en/v0.8
     /**
      * @dev 通过通知二层网络 (l2) Deposited Token
      * 合约存款并调用处理程序锁定一层网络 (l1)资金（例如，transferFrom）来执行存款逻辑。
-     *
      * @param _l1Token 我们正在存入的一层网络 (l1) ERC-20代币的地址
      * @param _l2Token 一层网络 (l1)对应的二层网络 (l2) ERC-20代币的地址
      * @param _from 在一层网络 (l1)上提取存款的账户
@@ -952,14 +948,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [标准 ERC-20 接口](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)不包括 `mint` 和 `burn` 函数。
-[ERC-20 标准](https://eips.ethereum.org/EIPS/eip-20)不需要这些方法，该标准未指定创建和销毁代币的机制。
+ERC-20 标准不需要这些方法，该标准未指定创建和销毁代币的机制。
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 [ERC-165 接口](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol)用于指定合约提供哪些函数。
-[您可以在此处阅读该标准](https://eips.ethereum.org/EIPS/eip-165)。
+您可以在此处阅读该标准。
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -1048,7 +1044,7 @@ contract L2StandardERC20 is IL2StandardERC20, ERC20 {
     }
 ```
 
-这就是 [ERC-165](https://eips.ethereum.org/EIPS/eip-165) 的工作方式。
+这就是 ERC-165 的工作方式。
 每个接口都是许多受支持的函数，并被标识为这些函数的 [ABI 函数选择器](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector)的[异或](https://en.wikipedia.org/wiki/Exclusive_or)。
 
 二层网络 (l2) 跨链桥使用 ERC-165 作为健全性检查，以确保它向其发送资产的 ERC-20 合约是 `IL2StandardERC20`。

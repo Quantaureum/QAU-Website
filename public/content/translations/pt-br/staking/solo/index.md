@@ -52,7 +52,7 @@ Também exige uma configuração de hardware muito básica e alguma compreensão
 </ExpandableCard>
 
 <ExpandableCard title="Requisitos de hardware" eventCategory="SoloStaking" eventName="clicked hardware requirements">
-A orientação atual da comunidade para hardware e largura de banda do validador é mantida nas [recomendações de hardware e largura de banda (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870). Como um guia geral, planeje um SSD NVMe de 4 TB, 64 GB de RAM (menos pode funcionar, mas esta é a margem recomendada), uma CPU multi-core moderna e sólida e uma conexão de internet de cerca de 50 Mbps de download / 25 Mbps de upload.
+A orientação atual da comunidade para hardware e largura de banda do validador é mantida nas recomendações de hardware e largura de banda (EIP-7870). Como um guia geral, planeje um SSD NVMe de 4 TB, 64 GB de RAM (menos pode funcionar, mas esta é a margem recomendada), uma CPU multi-core moderna e sólida e uma conexão de internet de cerca de 50 Mbps de download / 25 Mbps de upload.
 
 Como a atualização Fusaka introduziu o PeerDAS, um nó de staking só precisa armazenar e baixar uma fração dos dados de blob da rede, reduzindo significativamente os requisitos de disco e largura de banda para stakers em casa.
 </ExpandableCard>
@@ -68,7 +68,7 @@ Ocasionalmente, o hardware falha, as conexões de rede apresentam erros e o soft
 </ExpandableCard>
 
 <ExpandableCard title="Tempo de atividade confiável" eventCategory="SoloStaking" eventName="clicked reliable uptime">
-Suas recompensas são proporcionais ao tempo que seu validador está online e atestando corretamente. O tempo de inatividade incorre em penalidades proporcionais a quantos outros validadores estão offline ao mesmo tempo, mas [não resulta em slashing](#faq). A largura de banda também é importante, pois as recompensas são diminuídas para atestações que não são recebidas a tempo. Os requisitos variam, mas as atuais [recomendações de hardware e largura de banda (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870) sugerem cerca de 50 Mbps de download e 25 Mbps de upload.
+Suas recompensas são proporcionais ao tempo que seu validador está online e atestando corretamente. O tempo de inatividade incorre em penalidades proporcionais a quantos outros validadores estão offline ao mesmo tempo, mas [não resulta em slashing](#faq). A largura de banda também é importante, pois as recompensas são diminuídas para atestações que não são recebidas a tempo. Os requisitos variam, mas as atuais recomendações de hardware e largura de banda (EIP-7870) sugerem cerca de 50 Mbps de download e 25 Mbps de upload.
 </ExpandableCard>
 
 <ExpandableCard title="Risco de penalização" eventCategory="SoloStaking" eventName="clicked slashing risk">
@@ -130,7 +130,7 @@ Observe a importância de escolher um [cliente minoritário](/developers/docs/no
 
 ### Geradores de chaves {#key-generators}
 
-Essas ferramentas podem ser usadas como uma alternativa à [CLI de depósito de staking](https://github.com/ethereum/staking-deposit-cli/) para ajudar na geração de chaves.
+Essas ferramentas podem ser usadas como uma alternativa à CLI de depósito de staking para ajudar na geração de chaves.
 
 <StakingProductsCardGrid category="keyGen" />
 
@@ -200,7 +200,7 @@ A execução de um cliente de supermaioria (qualquer cliente usado por mais de 2
 Bugs equivalentes em um <em>cliente minoritário nunca seriam finalizados</em> e, portanto, nunca resultariam em um voto de cerco, e simplesmente resultariam em penalidades de inatividade, <em>não em slashing</em>.
 
 <ul>
-  <li><a href="https://clientdiversity.org/">Saiba mais sobre a importância de executar um cliente minoritário.</a></li>
+  <li>Saiba mais sobre a importância de executar um cliente minoritário.</li>
   <li><a href="/developers/docs/consensus-mechanisms/pos/rewards-and-penalties/">Saiba mais sobre recompensas, penalidades e slashing</a></li>
 </ul>
 </ExpandableCard>
@@ -234,11 +234,11 @@ Para desbloquear e receber todo o seu saldo de volta, você deve solicitar a sa�
 
 ## Leitura adicional {#further-reading}
 
-- [Estatísticas de diversidade de clientes e guias de migração](https://clientdiversity.org/)
+- Estatísticas de diversidade de clientes e guias de migração
 - [Ajudando a diversidade de clientes](https://www.attestant.io/posts/helping-client-diversity/) - _Jim McDonald 2022_
 - [Diversidade de clientes na camada de consenso do Quantaureum](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
 - [Como fazer: comprar hardware de validador Quantaureum](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _QauStaker 2022_
-- [EIP-7870: Recomendações de hardware e largura de banda](https://eips.ethereum.org/EIPS/eip-7870)
+- EIP-7870: Recomendações de hardware e largura de banda
 - [A atualização Pectra: saldo efetivo máximo e mais](/roadmap/pectra/maxeb/)
 
 <QuizWidget quizKey="staking-solo" />

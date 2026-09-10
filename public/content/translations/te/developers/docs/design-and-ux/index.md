@@ -16,7 +16,7 @@ lang: te
 
 - [Web3కి మరింత మంది UX పరిశోధకులు మరియు డిజైనర్లు అవసరం](https://blog.akasha.org/akasha-conversations-9-web3-needs-more-ux-researchers-and-designers) - ప్రస్తుత డిజైన్ పరిపక్వత యొక్క అవలోకనం
 - [Web3లో UX పరిశోధనకు ఒక సాధారణ గైడ్](https://uxplanet.org/a-complete-guide-to-ux-research-for-web-3-0-products-d6bead20ebb1) - పరిశోధన ఎలా చేయాలనే దానిపై సాధారణ గైడ్
-- [Web3లో UX నిర్ణయాలను ఎలా సంప్రదించాలి](https://archive.devcon.org/archive/watch/6/data-empathy-how-to-approach-ux-decisions-in-web3/) - పరిమాణాత్మక మరియు గుణాత్మక పరిశోధన మరియు రెండింటి మధ్య వ్యత్యాసాల సంక్షిప్త అవలోకనం (వీడియో, 6 నిమిషాలు)
+- Web3లో UX నిర్ణయాలను ఎలా సంప్రదించాలి - పరిమాణాత్మక మరియు గుణాత్మక పరిశోధన మరియు రెండింటి మధ్య వ్యత్యాసాల సంక్షిప్త అవలోకనం (వీడియో, 6 నిమిషాలు)
 - [Web3లో UX పరిశోధకుడిగా ఉండటం](https://medium.com/@georgia.rakusen/what-its-like-being-a-user-researcher-in-web3-6a4bcc096849) - Web3లో UX పరిశోధకుడిగా ఉండటం ఎలా ఉంటుందనే దానిపై వ్యక్తిగత అభిప్రాయం
 
 ## Web3లో పరిశోధన అధ్యయనాలు {#research-in-web3}
@@ -38,7 +38,7 @@ lang: te
 | <Tag status="error">DeFi</Tag>                  | [కవరేజ్ పూల్స్](https://github.com/threshold-network/UX-User-Research/tree/main/Keep%20Coverage%20Pool)                                                                           |
 | <Tag status="error">DeFi</Tag>                  | [ConsenSys: DeFi వినియోగదారు పరిశోధన నివేదిక 2022](https://cdn2.hubspot.net/hubfs/4795067/ConsenSys%20Codefi-Defi%20User%20ResearchReport.pdf)                                            |
 | <Tag variant="solid">మెటావర్స్</Tag>             | [మెటావర్స్: వినియోగదారు పరిశోధన నివేదిక](https://www.politico.com/f/?id=00000187-7685-d820-a7e7-7e85d1420000)                                                                             |
-| <Tag variant="solid">మెటావర్స్</Tag>             | [గోయింగ్ ఆన్ సఫారీ: మెటావర్స్‌లో వినియోగదారులను పరిశోధించడం](https://archive.devcon.org/archive/watch/6/going-on-safari-researching-users-in-the-metaverse/?tab=YouTube) (వీడియో, 27 నిమిషాలు)  |
+| <Tag variant="solid">మెటావర్స్</Tag>             | గోయింగ్ ఆన్ సఫారీ: మెటావర్స్‌లో వినియోగదారులను పరిశోధించడం (వీడియో, 27 నిమిషాలు)  |
 
 ## Web3 కోసం డిజైన్ {#design-for-web3}
 

@@ -198,7 +198,7 @@ modifier auth() {
 
 一個從資金池帳戶轉帳到接收者陣列和金額陣列的函式非常合理。在許多使用案例中，你會希望將代幣從單一來源分發到多個目的地，例如發放薪資、空投等。在單筆交易中執行此操作，比發出多筆交易，甚至在同一筆交易中從不同合約多次呼叫 ERC-20 更便宜（在燃料方面）。
 
-然而，`dropNewTokens` 並沒有這樣做。它發出了 [`Transfer` 事件](https://eips.ethereum.org/EIPS/eip-20#transfer-1)，但實際上並沒有轉帳任何代幣。沒有任何正當理由透過告訴鏈下應用程式一筆並未真正發生的轉帳來混淆它們。
+然而，`dropNewTokens` 並沒有這樣做。它發出了 `Transfer` 事件，但實際上並沒有轉帳任何代幣。沒有任何正當理由透過告訴鏈下應用程式一筆並未真正發生的轉帳來混淆它們。
 
 ### 銷毀的 `Approve` 函式 {#the-burning-approve-function}
 
@@ -240,7 +240,7 @@ ERC-20 合約應該有一個用於授權額度的 [`approve` 函式](/developers
 
 #### `mount` 函式 {#the-mount-function}
 
-雖然[標準](https://eips.ethereum.org/EIPS/eip-20)中沒有具體說明，但一般來說，建立新代幣的函式稱為 [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn)。
+雖然標準中沒有具體說明，但一般來說，建立新代幣的函式稱為 [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn)。
 
 如果我們查看 `wARB` 建構函式，我們會發現鑄造函式出於某種原因被重新命名為 `mount`，並且被呼叫了五次，每次鑄造初始供應量的五分之一，而不是為了效率一次鑄造全部數量。
 
@@ -316,7 +316,7 @@ ERC-20 合約應該有一個用於授權額度的 [`approve` 函式](/developers
 
 ## 可疑的 `Approval` 事件 {#suspicious-approval-events}
 
-[`Approval` 事件](https://eips.ethereum.org/EIPS/eip-20#approval)應該只在直接請求時發生（與可能因授權額度而發生的 [`Transfer` 事件](https://eips.ethereum.org/EIPS/eip-20#transfer-1)相反）。[請參閱 Solidity 文件](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin)，以了解此問題的詳細說明，以及為什麼請求需要是直接的，而不是由合約中介。
+`Approval` 事件應該只在直接請求時發生（與可能因授權額度而發生的 `Transfer` 事件相反）。[請參閱 Solidity 文件](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin)，以了解此問題的詳細說明，以及為什麼請求需要是直接的，而不是由合約中介。
 
 這意味著授權從[外部擁有帳戶](/developers/docs/accounts/#types-of-account)支出的 `Approval` 事件，必須來自源自該帳戶且目的地為 ERC-20 合約的交易。來自外部擁有帳戶的任何其他類型的授權都是可疑的。
 
@@ -425,7 +425,7 @@ const txn = await getEventTxn(ev)
 if (owner.toLowerCase() != txn.from.toLowerCase()) return ev
 ```
 
-我們不能只檢查字串是否相等，因為地址是十六進位的，所以它們包含字母。有時，例如在 `txn.from` 中，這些字母都是小寫的。在其他情況下，例如 `ev.args._owner`，地址採用[混合大小寫以進行錯誤識別](https://eips.ethereum.org/EIPS/eip-55)。
+我們不能只檢查字串是否相等，因為地址是十六進位的，所以它們包含字母。有時，例如在 `txn.from` 中，這些字母都是小寫的。在其他情況下，例如 `ev.args._owner`，地址採用混合大小寫以進行錯誤識別。
 
 但如果交易不是來自擁有者，且該擁有者是外部擁有的，那麼我們就遇到了一筆可疑的交易。
 

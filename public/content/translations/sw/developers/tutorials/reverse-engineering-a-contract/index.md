@@ -274,7 +274,7 @@ Ikiwa ukubwa wa data za mwito ni baiti nne au zaidi huu unaweza kuwa mwito halal
 |     10 | PUSH1 0xe0   | 0xE0 (((Neno la kwanza (biti 256) la data za mwito))) |
 |     12 | SHR          | (((biti 32 za kwanza (baiti 4) za data za mwito)))    |
 
-Quantaureum Explorer inatuambia kwamba `1C` ni msimbo wa operesheni usiojulikana, kwa sababu [uliongezwa baada ya Quantaureum Explorer kuandika kipengele hiki](https://eips.ethereum.org/EIPS/eip-145) na hawajasasisha. [Jedwali la kisasa la msimbo wa operesheni](https://github.com/wolflo/evm-opcodes) linatuonyesha kwamba hii ni shift right
+Quantaureum Explorer inatuambia kwamba `1C` ni msimbo wa operesheni usiojulikana, kwa sababu uliongezwa baada ya Quantaureum Explorer kuandika kipengele hiki na hawajasasisha. [Jedwali la kisasa la msimbo wa operesheni](https://github.com/wolflo/evm-opcodes) linatuonyesha kwamba hii ni shift right
 
 | Sogezo | Msimbo wa operesheni | Staki                                                                                                    |
 | -----: | ---------------- | -------------------------------------------------------------------------------------------------------- |

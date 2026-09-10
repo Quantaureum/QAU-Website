@@ -8,11 +8,11 @@ breadcrumb: Interaksi kontrak
 lang: id
 published: 2020-04-05
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/interact-with-other-contracts-from-solidity/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Dalam tutorial sebelumnya kita telah banyak belajar [cara menyebarkan kontrak pintar pertama Anda](/developers/tutorials/deploying-your-first-smart-contract/) dan menambahkan beberapa fitur ke dalamnya seperti [mengontrol akses dengan pengubah (modifier)](https://ethereumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) atau [penanganan kesalahan di Solidity](https://ethereumdev.io/handle-errors-in-solidity-with-require-and-revert/). Dalam tutorial ini kita akan belajar cara menyebarkan kontrak pintar dari kontrak yang sudah ada dan berinteraksi dengannya.
+Dalam tutorial sebelumnya kita telah banyak belajar [cara menyebarkan kontrak pintar pertama Anda](/developers/tutorials/deploying-your-first-smart-contract/) dan menambahkan beberapa fitur ke dalamnya seperti mengontrol akses dengan pengubah (modifier) atau penanganan kesalahan di Solidity. Dalam tutorial ini kita akan belajar cara menyebarkan kontrak pintar dari kontrak yang sudah ada dan berinteraksi dengannya.
 
 Kita akan membuat kontrak yang memungkinkan siapa saja untuk memiliki `Counter` kontrak pintar mereka sendiri dengan membuat pabrik (factory) untuknya, namanya adalah `CounterFactory`. Pertama, berikut adalah kode dari kontrak pintar `Counter` awal kita:
 
@@ -99,7 +99,7 @@ function increment() public {
   }
 ```
 
-Perhatikan bahwa jika dipanggil terlalu banyak, counter kita mungkin bisa menjadi korban limpahan. Anda harus menggunakan [Pustaka SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/) sebanyak mungkin untuk melindungi dari kemungkinan kasus ini.
+Perhatikan bahwa jika dipanggil terlalu banyak, counter kita mungkin bisa menjadi korban limpahan. Anda harus menggunakan Pustaka SafeMath sebanyak mungkin untuk melindungi dari kemungkinan kasus ini.
 
 Untuk menyebarkan kontrak kita, Anda perlu menyediakan kode `CounterFactory` dan `Counter`. Saat menyebarkan misalnya di Remix, Anda harus memilih CounterFactory.
 

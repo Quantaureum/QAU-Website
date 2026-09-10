@@ -46,7 +46,7 @@ Cầu nối có hai luồng chính:
    - Ban đầu xuất phát từ cầu nối trên l1
 6. Cầu nối l2 kiểm tra xem hợp đồng token ERC-20 trên l2 có đúng không:
    - Hợp đồng l2 báo cáo rằng đối tác l1 của nó giống với đối tác mà các token xuất phát từ l1
-   - Hợp đồng l2 báo cáo rằng nó hỗ trợ đúng giao diện ([sử dụng ERC-165](https://eips.ethereum.org/EIPS/eip-165)).
+   - Hợp đồng l2 báo cáo rằng nó hỗ trợ đúng giao diện (sử dụng ERC-165).
 7. Nếu hợp đồng l2 là hợp đồng đúng, hãy gọi nó để đúc số lượng token thích hợp đến địa chỉ thích hợp. Nếu không, hãy bắt đầu quá trình rút tiền để cho phép người dùng yêu cầu nhận các token trên l1.
 
 ### Luồng rút tiền {#withdrawal-flow}
@@ -207,7 +207,6 @@ Hàm này gần như giống hệt với `depositERC20`, nhưng nó cho phép b�
      * @dev Hoàn thành việc rút tiền từ l2 sang l1 và ghi có tiền vào số dư của người nhận đối với
      * token ERC-20 l1.
      * Lệnh gọi này sẽ thất bại nếu khoản rút tiền được khởi tạo từ l2 chưa được hoàn tất.
-     *
      * @param _l1Token Địa chỉ của token l1 để finalizeWithdrawal.
      * @param _l2Token Địa chỉ của token l2 nơi khoản rút tiền được khởi tạo.
      * @param _from Địa chỉ l2 khởi tạo việc chuyển.
@@ -338,7 +337,6 @@ Trình nhắn tin liên miền này là một hệ thống hoàn toàn khác và
 /**
  * @title CrossDomainEnabled
  * @dev Hợp đồng trợ giúp cho các hợp đồng thực hiện giao tiếp chéo miền
- *
  * Trình biên dịch được sử dụng: được xác định bởi hợp đồng kế thừa
  */
 contract CrossDomainEnabled {
@@ -519,7 +517,7 @@ Lưu ý rằng đây không phải là một giải pháp hoàn hảo, vì khôn
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[Tiêu chuẩn ERC-20](https://eips.ethereum.org/EIPS/eip-20) hỗ trợ hai cách để một hợp đồng báo cáo lỗi:
+Tiêu chuẩn ERC-20 hỗ trợ hai cách để một hợp đồng báo cáo lỗi:
 
 1. Hoàn nguyên
 2. Trả về `false`
@@ -532,7 +530,6 @@ Việc xử lý cả hai trường hợp sẽ làm cho mã của chúng ta phứ
  * @dev Cầu nối QAU và ERC-20 l1 là một hợp đồng lưu trữ tiền l1 đã nạp và các token
  * tiêu chuẩn đang được sử dụng trên l2. Nó đồng bộ hóa một cầu nối l2 tương ứng, thông báo cho nó về các khoản nạp
  * và lắng nghe nó đối với các khoản rút tiền mới được hoàn tất.
- *
  */
 contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
     using SafeERC20 for IERC20;
@@ -771,7 +768,6 @@ Hai hàm này là các trình bao bọc xung quanh `_initiateERC20Deposit`, hàm
     /**
      * @dev Thực hiện logic cho các khoản nạp bằng cách thông báo cho hợp đồng Token Đã nạp l2
      * về khoản nạp và gọi một trình xử lý để khóa tiền l1. (ví dụ: transferFrom)
-     *
      * @param _l1Token Địa chỉ của ERC-20 l1 mà chúng ta đang nạp
      * @param _l2Token Địa chỉ của ERC-20 l2 tương ứng với l1
      * @param _from Tài khoản để kéo khoản nạp từ trên l1
@@ -956,14 +952,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [Giao diện ERC-20 tiêu chuẩn](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) không bao gồm các hàm `mint` và `burn`.
-Các phương thức đó không được yêu cầu bởi [tiêu chuẩn ERC-20](https://eips.ethereum.org/EIPS/eip-20), tiêu chuẩn này không chỉ định các cơ chế để tạo và tiêu hủy token.
+Các phương thức đó không được yêu cầu bởi tiêu chuẩn ERC-20, tiêu chuẩn này không chỉ định các cơ chế để tạo và tiêu hủy token.
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 [Giao diện ERC-165](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol) được sử dụng để chỉ định những hàm mà một hợp đồng cung cấp.
-[Bạn có thể đọc tiêu chuẩn tại đây](https://eips.ethereum.org/EIPS/eip-165).
+Bạn có thể đọc tiêu chuẩn tại đây.
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -1052,7 +1048,7 @@ contract L2StandardERC20 is IL2StandardERC20, ERC20 {
     }
 ```
 
-Đây là cách [ERC-165](https://eips.ethereum.org/EIPS/eip-165) hoạt động.
+Đây là cách ERC-165 hoạt động.
 Mỗi giao diện là một số lượng các hàm được hỗ trợ và được xác định là [phép toán XOR (exclusive or)](https://en.wikipedia.org/wiki/Exclusive_or) của [các bộ chọn hàm ABI](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector) của các hàm đó.
 
 Cầu nối l2 sử dụng ERC-165 như một bước kiểm tra tính hợp lý để đảm bảo rằng hợp đồng ERC-20 mà nó gửi tài sản đến là một `IL2StandardERC20`.

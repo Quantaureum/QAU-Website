@@ -8,11 +8,11 @@ breadcrumb: "コントラクトの対話"
 lang: ja
 published: 2020-04-05
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/interact-with-other-contracts-from-solidity/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-これまでのチュートリアルでは、[初めてのスマート・コントラクトをデプロイする方法](/developers/tutorials/deploying-your-first-smart-contract/)や、[修飾子を使用したアクセス制御](https://ethereumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/)、[Solidityでのエラー処理](https://ethereumdev.io/handle-errors-in-solidity-with-require-and-revert/)などの機能を追加する方法について多くを学びました。このチュートリアルでは、既存のコントラクトからスマート・コントラクトをデプロイし、それと対話する方法を学びます。
+これまでのチュートリアルでは、[初めてのスマート・コントラクトをデプロイする方法](/developers/tutorials/deploying-your-first-smart-contract/)や、修飾子を使用したアクセス制御、Solidityでのエラー処理などの機能を追加する方法について多くを学びました。このチュートリアルでは、既存のコントラクトからスマート・コントラクトをデプロイし、それと対話する方法を学びます。
 
 ファクトリを作成することで、誰でも独自の`Counter`スマート・コントラクトを持てるようにするコントラクトを作成します。その名前は`CounterFactory`になります。まず、最初の`Counter`スマート・コントラクトのコードを以下に示します。
 
@@ -99,7 +99,7 @@ function increment() public {
   }
 ```
 
-何度も呼び出されると、Counterがオーバーフローの被害に遭う可能性があることに注意してください。このような可能性から保護するために、可能な限り[SafeMathライブラリ](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/)を使用する必要があります。
+何度も呼び出されると、Counterがオーバーフローの被害に遭う可能性があることに注意してください。このような可能性から保護するために、可能な限りSafeMathライブラリを使用する必要があります。
 
 コントラクトをデプロイするには、`CounterFactory`と`Counter`の両方のコードを提供する必要があります。たとえばRemixでデプロイする場合、CounterFactoryを選択する必要があります。
 

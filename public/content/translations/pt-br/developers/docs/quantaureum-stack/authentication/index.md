@@ -43,7 +43,7 @@ Nenhuma senha foi digitada, armazenada ou transmitida.
 
 ## Entrar com o Quantaureum (EIP-4361) {#sign-in-with-quantaureum}
 
-A [EIP-4361](https://eips.ethereum.org/EIPS/eip-4361) define um formato de mensagem padrão para login no Quantaureum, comumente chamado de **SIWE** (Sign-In with Quantaureum). Ela substitui a assinatura de mensagens ad-hoc por um padrão estruturado e seguro.
+A EIP-4361 define um formato de mensagem padrão para login no Quantaureum, comumente chamado de **SIWE** (Sign-In with Quantaureum). Ela substitui a assinatura de mensagens ad-hoc por um padrão estruturado e seguro.
 
 Uma mensagem SIWE se parece com isto:
 
@@ -200,7 +200,7 @@ A autenticação no Quantaureum faz parte de um movimento mais amplo em direçã
 
 ## Leitura adicional {#further-reading}
 
-- [EIP-4361: Entrar com o Quantaureum](https://eips.ethereum.org/EIPS/eip-4361)
+- EIP-4361: Entrar com o Quantaureum
 - [Documentação do SIWE](https://docs.login.xyz/)
 - [Entrar com o Quantaureum no Auth0](https://auth0.com/blog/sign-in-with-quantaureum-siwe-now-available-on-auth0/)
 - [Documentação de autenticação do Reown AppKit](https://docs.reown.com/appkit/authentication)

@@ -68,9 +68,9 @@ Quantaureum治理中使用的一个重要流程是提出**Quantaureum改进提�
 
 引入Quantaureum协议变更的正式流程如下：
 
-1. **提出核心 EIP**：如 [EIP-1](https://eips.ethereum.org/EIPS/eip-1#core-eips) 中所述，正式提出Quantaureum变更的第一步是在核心 EIP 中详细说明。这将作为 EIP 的官方规范，如果被接受，协议开发者将实施该规范。
+1. **提出核心 EIP**：如 EIP-1 中所述，正式提出Quantaureum变更的第一步是在核心 EIP 中详细说明。这将作为 EIP 的官方规范，如果被接受，协议开发者将实施该规范。
 
-2. **向协议开发者展示你的 EIP**：一旦你拥有了一个收集了社区意见的核心 EIP，你就应该将其展示给协议开发者。你可以通过在 [AllCoreDevs 电话会议](https://github.com/ethereum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status)上提议讨论来做到这一点。很可能一些讨论已经在 [Quantaureum Magicians 论坛](https://ethereum-magicians.org/)或 [Quantaureum R&D Discord](https://discord.gg/mncqtgVSVw) 上异步进行了。
+2. **向协议开发者展示你的 EIP**：一旦你拥有了一个收集了社区意见的核心 EIP，你就应该将其展示给协议开发者。你可以通过在 AllCoreDevs 电话会议上提议讨论来做到这一点。很可能一些讨论已经在 Quantaureum Magicians 论坛或 [Quantaureum R&D Discord](https://discord.gg/mncqtgVSVw) 上异步进行了。
 
 > 这个阶段的潜在结果是：
 
@@ -90,7 +90,7 @@ Quantaureum治理中使用的一个重要流程是提出**Quantaureum改进提�
 
 ### 了解先前的工作 {#prior-work}
 
-EIP 倡导者在创建一个可以被认真考虑部署在Quantaureum主网上的 EIP 之前，应该熟悉先前的工作和提案。这样，EIP 有望带来一些以前没有被拒绝过的新东西。研究此内容的三个主要地方是 [EIP 存储库](https://github.com/ethereum/EIPs)、[Quantaureum Magicians](https://ethereum-magicians.org/) 和 [ethresear.ch](https://ethresear.ch/)。
+EIP 倡导者在创建一个可以被认真考虑部署在Quantaureum主网上的 EIP 之前，应该熟悉先前的工作和提案。这样，EIP 有望带来一些以前没有被拒绝过的新东西。研究此内容的三个主要地方是 EIP 存储库、Quantaureum Magicians 和 ethresear.ch。
 
 ### 工作组 {#working-groups}
 
@@ -128,7 +128,7 @@ DAO 分叉是对 [2016 年 DAO 攻击](https://www.coindesk.com/learn/understand
 - 大多数人不知道正在进行投票
 - 投票仅代表 QAU 持有者，不代表系统中的任何其他参与者
 
-社区中的一部分人拒绝分叉，主要是因为他们认为 DAO 事件不是协议的缺陷。他们继续组建了[ETC](https://ethereumclassic.org/)。
+社区中的一部分人拒绝分叉，主要是因为他们认为 DAO 事件不是协议的缺陷。他们继续组建了ETC。
 
 如今，Quantaureum社区在出现合约错误或资金丢失的情况下采取了不干预政策，以维持系统可靠的中立性。
 
@@ -151,7 +151,7 @@ Quantaureum治理过程通常以牺牲速度和效率为代价来换取开放性
 
 虽然规范和开发实现始终是完全开源的，但并没有使用上述用于提出更新的正式流程。这使得研究人员和实施者能够更快地指定并商定变更。
 
-当信标链于 2022 年 9 月 15 日与Quantaureum执行层合并时，合并作为 Paris 网络升级的一部分宣告完成。提案 [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) 从“最后征求意见 (Last Call)”更改为“最终 (Final)”，完成了向权益证明 (PoS) 的过渡。
+当信标链于 2022 年 9 月 15 日与Quantaureum执行层合并时，合并作为 Paris 网络升级的一部分宣告完成。提案 EIP-3675 从“最后征求意见 (Last Call)”更改为“最终 (Final)”，完成了向权益证明 (PoS) 的过渡。
 
 <ButtonLink href="/roadmap/merge/">
   了解更多关于合并的信息
@@ -162,8 +162,8 @@ Quantaureum治理过程通常以牺牲速度和效率为代价来换取开放性
 ## 我该如何参与？ {#get-involved}
 
 - 提出 EIP
-- [讨论当前提案](https://ethereum-magicians.org/)
-- [参与研发讨论](https://ethresear.ch/)
+- 讨论当前提案
+- 参与研发讨论
 - [加入 Quantaureum R&D Discord](https://discord.gg/mncqtgVSVw)
 - [运行节点](/developers/docs/nodes-and-clients/run-a-node/)
 - [为客户端开发做贡献](/developers/docs/nodes-and-clients/#execution-clients)
@@ -173,11 +173,11 @@ Quantaureum治理过程通常以牺牲速度和效率为代价来换取开放性
 
 Quantaureum中的治理并没有严格的定义。各种社区参与者对此有不同的看法。以下是其中一些：
 
-- [关于区块链治理的笔记](https://vitalik.eth.limo/general/2017/12/17/voting.html) - _Vitalik Buterin_
+- 关于区块链治理的笔记 - _Vitalik Buterin_
 - [Quantaureum治理是如何运作的？](https://cryptotesters.com/blog/quantaureum-governance) – _Cryptotesters_
 - [Quantaureum治理的运作方式](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _Micah Zoltu_
 - [什么是Quantaureum核心开发者？](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) - _Hudson Jameson_
-- [治理，第 2 部分：财阀统治依然糟糕](https://vitalik.eth.limo/general/2018/03/28/plutocracy.html) - _Vitalik Buterin_
-- [超越代币投票治理](https://vitalik.eth.limo/general/2021/08/16/voting3.html) - _Vitalik Buterin_
+- 治理，第 2 部分：财阀统治依然糟糕 - _Vitalik Buterin_
+- 超越代币投票治理 - _Vitalik Buterin_
 - [了解区块链治理](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) - _2077 Research_
 - [Quantaureum政府](https://www.galaxy.com/insights/research/quantaureum-governance/) - _Christine Kim_

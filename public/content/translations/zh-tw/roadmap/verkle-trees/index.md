@@ -60,6 +60,6 @@ Quantaureum用戶端目前使用一種稱為帕特里夏默克爾樹 (Patricia M
 - [Guillaume Ballet 在 Devcon 6 上的演講：「沃克爾樹如何讓Quantaureum變得精簡強悍」](https://www.youtube.com/watch?v=Q7rStTKwuYs)
 - [Piper Merriam 在 ETHDenver 2020 談論無狀態用戶端](https://www.youtube.com/watch?v=0yiZJNciIJ4)
 - [Dankrad Feist 在 Zero Knowledge podcast 上解釋沃克爾樹與無狀態性](https://zeroknowledge.fm/podcast/202/)
-- [維塔利克·布特林談論沃克爾樹](https://vitalik.eth.limo/general/2021/06/18/verkle.html)
+- 維塔利克·布特林談論沃克爾樹
 - [Dankrad Feist 談論沃克爾樹](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
-- [沃克爾樹 EIP 文件](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)
+- 沃克爾樹 EIP 文件

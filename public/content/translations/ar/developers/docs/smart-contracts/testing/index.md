@@ -253,7 +253,7 @@ function auctionEnd() external {
 
 - **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _إطار عمل لتطوير واختبار العقود الذكية المتقدمة (يعتمد على Ethers.js)._
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _أداة لاختبار العقود الذكية المكتوبة بلغة Solidity. تعمل تحت المكون الإضافي "Solidity Unit Testing" في بيئة التطوير المتكاملة Remix والذي يُستخدم لكتابة وتشغيل حالات الاختبار للعقد._
+- **Remix Tests** - _أداة لاختبار العقود الذكية المكتوبة بلغة Solidity. تعمل تحت المكون الإضافي "Solidity Unit Testing" في بيئة التطوير المتكاملة Remix والذي يُستخدم لكتابة وتشغيل حالات الاختبار للعقد._
 
 - **[أوبن زبلن Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _مكتبة تأكيد لاختبار العقود الذكية على إيثيريوم. تأكد من أن عقودك تتصرف كما هو متوقع!_
 

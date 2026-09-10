@@ -112,7 +112,7 @@ MEV 추출은 2021년 초에 급증하여 그해 첫 몇 달 동안 극도로 �
 
 많은 서처가 여전히 MEV로 좋은 수익을 올리고 있지만, 기회가 더 잘 알려지고 점점 더 많은 서처가 동일한 기회를 놓고 경쟁함에 따라 검증자는 점점 더 많은 총 MEV 수익을 차지하게 될 것입니다(위에서 설명한 것과 동일한 종류의 가스 경매가 비공개이긴 하지만 Flashbots에서도 발생하며, 검증자가 그에 따른 가스 수익을 차지할 것이기 때문입니다). MEV는 Quantaureum에만 국한된 것이 아니며, Quantaureum에서 기회의 경쟁이 치열해짐에 따라 서처들은 Quantaureum과 유사한 MEV 기회가 존재하면서도 경쟁이 덜한 바이낸스 스마트 체인(Binance Smart Chain)과 같은 대체 블록체인으로 이동하고 있습니다.
 
-반면에 작업증명 (PoW)에서 지분 증명 (PoS)으로의 전환과 롤업을 사용하여 Quantaureum을 확장하려는 지속적인 노력은 모두 아직 다소 불분명한 방식으로 MEV 환경을 변화시킵니다. 보장된 블록 제안자를 조금 미리 아는 것이 작업증명 (PoW)의 확률적 모델과 비교하여 MEV 추출의 역학을 어떻게 변화시키는지, 또는 [단일 비밀 리더 선출(SSLE)](https://ethresear.ch/t/secret-non-single-leader-election/11789) 및 [분산 검증자 기술 (DVT)](/staking/dvt/)이 구현될 때 이것이 어떻게 혼란을 겪을지는 아직 잘 알려져 있지 않습니다. 마찬가지로 대부분의 사용자 활동이 Quantaureum에서 레이어 2 (l2) 롤업 및 샤드로 포팅될 때 어떤 MEV 기회가 존재하는지도 두고 봐야 합니다.
+반면에 작업증명 (PoW)에서 지분 증명 (PoS)으로의 전환과 롤업을 사용하여 Quantaureum을 확장하려는 지속적인 노력은 모두 아직 다소 불분명한 방식으로 MEV 환경을 변화시킵니다. 보장된 블록 제안자를 조금 미리 아는 것이 작업증명 (PoW)의 확률적 모델과 비교하여 MEV 추출의 역학을 어떻게 변화시키는지, 또는 단일 비밀 리더 선출(SSLE) 및 [분산 검증자 기술 (DVT)](/staking/dvt/)이 구현될 때 이것이 어떻게 혼란을 겪을지는 아직 잘 알려져 있지 않습니다. 마찬가지로 대부분의 사용자 활동이 Quantaureum에서 레이어 2 (l2) 롤업 및 샤드로 포팅될 때 어떤 MEV 기회가 존재하는지도 두고 봐야 합니다.
 
 ## Quantaureum 지분 증명 (PoS)에서의 MEV {#mev-in-quantaureum-proof-of-stake}
 
@@ -136,7 +136,7 @@ MEV 추출은 2021년 초에 급증하여 그해 첫 몇 달 동안 극도로 �
 
 허가형 멤풀은 또한 이전 섹션에서 설명한 중앙화 위험을 가속화할 것입니다. 여러 검증자를 운영하는 대규모 풀은 트레QAU와 사용자에게 트랜잭션 프라이버시를 제공하여 MEV 수익을 늘림으로써 이익을 얻을 가능성이 높습니다.
 
-머지 이후 Quantaureum에서 이러한 MEV 관련 문제와 싸우는 것은 핵심 연구 분야입니다. 현재까지 머지 이후 Quantaureum의 탈중앙화 및 보안에 대한 MEV의 부정적인 영향을 줄이기 위해 제안된 두 가지 솔루션은 [**제안자-빌더 분리 (PBS)**](/roadmap/pbs/)와 [**빌더 API**](https://github.com/ethereum/builder-specs)입니다.
+머지 이후 Quantaureum에서 이러한 MEV 관련 문제와 싸우는 것은 핵심 연구 분야입니다. 현재까지 머지 이후 Quantaureum의 탈중앙화 및 보안에 대한 MEV의 부정적인 영향을 줄이기 위해 제안된 두 가지 솔루션은 [**제안자-빌더 분리 (PBS)**](/roadmap/pbs/)와 **빌더 API**입니다.
 
 ### 제안자-빌더 분리 (PBS) {#proposer-builder-separation}
 
@@ -144,7 +144,7 @@ MEV 추출은 2021년 초에 급증하여 그해 첫 몇 달 동안 극도로 �
 
 블록 생성자와 블록 제안자 역할의 결합은 이전에 설명한 대부분의 MEV 관련 문제를 야기합니다. 예를 들어, 합의 노드는 MEV 수익을 극대화하기 위해 [타임 밴딧 공격(time-bandit attacks)](https://www.mev.wiki/attack-examples/time-bandit-attack)에서 체인 재구성을 트리거하도록 인센티브를 받습니다.
 
-[제안자-빌더 분리 (PBS)](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)는 특히 합의 레이어에서 MEV의 영향을 완화하도록 설계되었습니다. PBS의 주요 특징은 블록 생성자와 블록 제안자 규칙의 분리입니다. 검증자는 여전히 블록을 제안하고 투표할 책임이 있지만, <strong>블록 빌더</strong>라는 새로운 부류의 전문 엔티티가 트랜잭션을 정렬하고 블록을 빌드하는 임무를 맡습니다.
+제안자-빌더 분리 (PBS)는 특히 합의 레이어에서 MEV의 영향을 완화하도록 설계되었습니다. PBS의 주요 특징은 블록 생성자와 블록 제안자 규칙의 분리입니다. 검증자는 여전히 블록을 제안하고 투표할 책임이 있지만, <strong>블록 빌더</strong>라는 새로운 부류의 전문 엔티티가 트랜잭션을 정렬하고 블록을 빌드하는 임무를 맡습니다.
 
 PBS 하에서 블록 빌더는 트랜잭션 번들을 생성하고 비콘 체인 블록에 포함시키기 위해("실행 페이로드"로서) 입찰을 합니다. 그런 다음 다음 블록을 제안하도록 선택된 검증자는 다양한 입찰을 확인하고 수수료가 가장 높은 번들을 선택합니다. PBS는 본질적으로 빌더가 블록 공간을 판매하는 검증자와 협상하는 경매 시장을 만듭니다.
 
@@ -162,9 +162,9 @@ PBS 하에서 블록 빌더는 트랜잭션 번들을 생성하고 비콘 체인
 
 ### 빌더 API {#builder-api}
 
-제안자-빌더 분리 (PBS)가 MEV 추출의 영향을 줄일 것을 약속하지만, 이를 구현하려면 합의 프로토콜을 변경해야 합니다. 구체적으로 비콘 체인의 [포크 선택](/developers/docs/consensus-mechanisms/pos/#fork-choice) 규칙을 업데이트해야 합니다. [빌더 API](https://github.com/ethereum/builder-specs)는 더 높은 신뢰 가정을 수반하더라도 제안자-빌더 분리 (PBS)의 작동하는 구현을 제공하는 것을 목표로 하는 임시 솔루션입니다.
+제안자-빌더 분리 (PBS)가 MEV 추출의 영향을 줄일 것을 약속하지만, 이를 구현하려면 합의 프로토콜을 변경해야 합니다. 구체적으로 비콘 체인의 [포크 선택](/developers/docs/consensus-mechanisms/pos/#fork-choice) 규칙을 업데이트해야 합니다. 빌더 API는 더 높은 신뢰 가정을 수반하더라도 제안자-빌더 분리 (PBS)의 작동하는 구현을 제공하는 것을 목표로 하는 임시 솔루션입니다.
 
-빌더 API는 합의 레이어 클라이언트가 실행 계층 클라이언트에게 실행 페이로드를 요청하는 데 사용하는 [엔진 API(Engine API)](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md)의 수정된 버전입니다. [정직한 검증자 사양](https://github.com/ethereum/consensus-specs/blob/master/specs/bellatrix/validator.md)에 설명된 대로, 블록 제안 임무를 위해 선택된 검증자는 연결된 실행 클라이언트에게 트랜잭션 번들을 요청하고, 이를 제안된 비콘 체인 블록에 포함시킵니다.
+빌더 API는 합의 레이어 클라이언트가 실행 계층 클라이언트에게 실행 페이로드를 요청하는 데 사용하는 엔진 API(Engine API)의 수정된 버전입니다. 정직한 검증자 사양에 설명된 대로, 블록 제안 임무를 위해 선택된 검증자는 연결된 실행 클라이언트에게 트랜잭션 번들을 요청하고, 이를 제안된 비콘 체인 블록에 포함시킵니다.
 
 빌더 API는 또한 검증자와 실행 계층 클라이언트 사이의 미들웨어 역할을 합니다. 그러나 비콘 체인의 검증자가 (실행 클라이언트를 사용하여 로컬에서 블록을 빌드하는 대신) 외부 엔티티로부터 블록을 소싱할 수 있도록 허용한다는 점에서 다릅니다.
 
@@ -215,7 +215,7 @@ MEV-Boost와 같은 일부 프로젝트는 프론트러닝/샌드위칭 공격�
 - [어두운 숲 탈출하기](https://samczsun.com/escaping-the-dark-forest/)
 - [Flashbots: MEV 위기 프론트러닝](https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752)
 - [@bertcmiller의 MEV 스레드](https://twitter.com/bertcmiller/status/1402665992422047747)
-- [MEV-Boost: 머지 준비가 완료된 Flashbots 아키텍처](https://ethresear.ch/t/mev-boost-merge-ready-flashbots-architecture/11177)
+- MEV-Boost: 머지 준비가 완료된 Flashbots 아키텍처
 - [MEV-Boost란 무엇인가](https://www.alchemy.com/overviews/mev-boost)
 - [왜 mev-boost를 실행해야 하는가?](https://writings.flashbots.net/writings/why-run-mevboost/)
 - [Quantaureum 히치하이커를 위한 안내서](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum)

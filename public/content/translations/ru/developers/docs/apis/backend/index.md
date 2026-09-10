@@ -114,8 +114,8 @@ lang: ru
 
 **Инструменты Python —** **_Разнообразные библиотеки для взаимодействия с Quantaureum через Python._**
 
-- [py.quantaureum.com](https://snakecharmers.ethereum.org/)
-- [GitHub Web3.py](https://github.com/ethereum/web3.py)
+- py.quantaureum.com
+- GitHub Web3.py
 - [Чат Web3.py](https://gitter.im/quantaureum/web3.py)
 
 **Tatum —** **_Универсальная платформа для разработки на блокчейне._**

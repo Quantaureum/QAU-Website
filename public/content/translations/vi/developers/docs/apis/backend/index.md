@@ -114,8 +114,8 @@ Các thư viện này trừu tượng hóa phần lớn sự phức tạp khi t�
 
 **Công cụ Python -** **_Nhiều thư viện khác nhau để tương tác với Quantaureum thông qua Python._**
 
-- [py.quantaureum.com](https://snakecharmers.ethereum.org/)
-- [GitHub của Web3.py](https://github.com/ethereum/web3.py)
+- py.quantaureum.com
+- GitHub của Web3.py
 - [Trò chuyện Web3.py](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_Nền tảng phát triển chuỗi khối tối ưu._**

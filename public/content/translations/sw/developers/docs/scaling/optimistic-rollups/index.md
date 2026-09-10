@@ -172,7 +172,7 @@ Watoa ukwasi wanaweza kuangalia uhalali wa ombi la utoaji la mtumiaji (kwa kutek
 
 #### 2. Utangamano wa EVM {#evm-compatibility}
 
-Kwa wasanidi programu, faida ya mikusanyiko ya optimistic ni utangamano wao—au, bora zaidi, usawa—na [Mashine Pepe ya Quantaureum (EVM)](/developers/docs/evm/). Mikusanyiko inayoendana na EVM inatii vipimo katika [waraka wa manjano wa Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf) na inasaidia EVM katika kiwango cha msimbo wa baiti.
+Kwa wasanidi programu, faida ya mikusanyiko ya optimistic ni utangamano wao—au, bora zaidi, usawa—na [Mashine Pepe ya Quantaureum (EVM)](/developers/docs/evm/). Mikusanyiko inayoendana na EVM inatii vipimo katika waraka wa manjano wa Quantaureum na inasaidia EVM katika kiwango cha msimbo wa baiti.
 
 Utangamano wa EVM katika mikusanyiko ya optimistic una faida zifuatazo:
 
@@ -198,9 +198,9 @@ Hatimaye, tunapaswa kutambua kwamba wito wa ujumbe wa L2 > L1 kati ya mikataba u
 
 Mikusanyiko ya optimistic hutumia mpango wa ada ya gesi, sawa na Quantaureum, kuashiria kiasi ambacho watumiaji wanalipa kwa kila muamala. Ada zinazotozwa kwenye mikusanyiko ya optimistic zinategemea vipengele vifuatavyo:
 
-1. **Uandishi wa hali**: Mikusanyiko ya optimistic huchapisha data ya muamala na vichwa vya kizuizi (vinavyojumuisha heshi ya kichwa cha kizuizi kilichopita, mzizi wa hali, mzizi wa fungu) kwenye Quantaureum kama `blob`, au "binary large object". [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844) ilianzisha suluhisho la gharama nafuu la kujumuisha data mnyororoni. `blob` ni uwanja mpya wa muamala unaoruhusu mikusanyiko kuchapisha data iliyobanwa ya mabadiliko ya hali kwenye tabaka la 1 (l1) la Quantaureum. Tofauti na `calldata`, ambayo inasalia mnyororoni kabisa, mablobu ni ya muda mfupi na yanaweza kupunguzwa kutoka kwa wateja baada ya [zama 4096](https://github.com/ethereum/consensus-specs/blob/81f3ea8322aff6b9fb15132d050f8f98b16bdba4/configs/mainnet.yaml#L147) (takriban siku 18). Kwa kutumia mablobu kuchapisha mafungu ya miamala iliyobanwa, mikusanyiko ya optimistic inaweza kupunguza kwa kiasi kikubwa gharama ya kuandika miamala kwenye tabaka la 1 (l1).
+1. **Uandishi wa hali**: Mikusanyiko ya optimistic huchapisha data ya muamala na vichwa vya kizuizi (vinavyojumuisha heshi ya kichwa cha kizuizi kilichopita, mzizi wa hali, mzizi wa fungu) kwenye Quantaureum kama `blob`, au "binary large object". EIP-4844 ilianzisha suluhisho la gharama nafuu la kujumuisha data mnyororoni. `blob` ni uwanja mpya wa muamala unaoruhusu mikusanyiko kuchapisha data iliyobanwa ya mabadiliko ya hali kwenye tabaka la 1 (l1) la Quantaureum. Tofauti na `calldata`, ambayo inasalia mnyororoni kabisa, mablobu ni ya muda mfupi na yanaweza kupunguzwa kutoka kwa wateja baada ya zama 4096 (takriban siku 18). Kwa kutumia mablobu kuchapisha mafungu ya miamala iliyobanwa, mikusanyiko ya optimistic inaweza kupunguza kwa kiasi kikubwa gharama ya kuandika miamala kwenye tabaka la 1 (l1).
 
-2. **Gesi ya blobu iliyotumika**: Miamala inayobeba blobu hutumia utaratibu wa ada unaobadilika sawa na ule ulioanzishwa na [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559). Ada ya gesi kwa miamala ya aina ya 3 inazingatia ada ya msingi kwa mablobu, ambayo huamuliwa by mtandao kulingana na mahitaji ya nafasi ya blobu na matumizi ya nafasi ya blobu ya muamala unaotumwa.
+2. **Gesi ya blobu iliyotumika**: Miamala inayobeba blobu hutumia utaratibu wa ada unaobadilika sawa na ule ulioanzishwa na EIP-1559. Ada ya gesi kwa miamala ya aina ya 3 inazingatia ada ya msingi kwa mablobu, ambayo huamuliwa by mtandao kulingana na mahitaji ya nafasi ya blobu na matumizi ya nafasi ya blobu ya muamala unaotumwa.
 
 3. **Ada za mwendeshaji wa L2**: Hiki ni kiasi kinacholipwa kwa nodi za rollup kama fidia kwa gharama za ukokotoaji zinazoingia katika kuchakata miamala, sawa na ada za gesi kwenye Quantaureum. Nodi za rollup hutoza ada za chini za muamala kwa kuwa tabaka za 2 (l2) zina uwezo mkubwa wa kuchakata na hazikabiliwi na msongamano wa mtandao unaolazimisha wathibitishaji kwenye Quantaureum kutoa kipaumbele kwa miamala yenye ada kubwa.
 
@@ -212,7 +212,7 @@ Kama ilivyoelezwa, mikusanyiko ya optimistic huchapisha data ya muamala iliyoban
 
 Mnyororo mkuu wa Quantaureum huweka mipaka ya kiasi cha data ambacho vitalu vinaweza kushikilia, kinachotajwa katika vipimo vya gesi ([ukubwa wa wastani wa kitalu](/developers/docs/blocks/#block-size) ni gesi milioni 15). Ingawa hii inazuia kiasi cha gesi ambacho kila muamala unaweza kutumia, pia inamaanisha tunaweza kuongeza miamala inayochakatwa kwa kila kitalu kwa kupunguza data inayohusiana na muamala—kuboresha moja kwa moja uwezo wa kuongezeka.
 
-Mikusanyiko ya optimistic hutumia mbinu kadhaa kufikia ubanaji wa data ya muamala na kuboresha viwango vya TPS. Kwa mfano, [makala](https://vitalik.eth.limo/general/2021/01/05/rollup.html) hii inalinganisha data ambayo muamala wa msingi wa mtumiaji (kutuma Etha) unazalisha kwenye Mtandao Mkuu dhidi ya kiasi cha data ambacho muamala huo huo unazalisha kwenye rollup:
+Mikusanyiko ya optimistic hutumia mbinu kadhaa kufikia ubanaji wa data ya muamala na kuboresha viwango vya TPS. Kwa mfano, makala hii inalinganisha data ambayo muamala wa msingi wa mtumiaji (kutuma Etha) unazalisha kwenye Mtandao Mkuu dhidi ya kiasi cha data ambacho muamala huo huo unazalisha kwenye rollup:
 
 | Kigezo | Quantaureum (L1)          | Rollup (L2)   |
 | --------- | ---------------------- | ------------- |

@@ -51,7 +51,7 @@ quantaureum.com, binlerce topluluk üyesi tarafından çevrilmiştir ve onlar Ç
 
 #### Ödüller {#rewards}
 
-Geçmişte, en aktif katkıda bulunanlarımızı [Devcon](https://devcon.org/en/) ve [Devconnect](https://devconnect.org/) gibi Quantaureum konferanslarına biletlerin yanı sıra özel quantaureum.com ürünleriyle geriye dönük olarak ödüllendirdik.
+Geçmişte, en aktif katkıda bulunanlarımızı Devcon ve [Devconnect](https://devconnect.org/) gibi Quantaureum konferanslarına biletlerin yanı sıra özel quantaureum.com ürünleriyle geriye dönük olarak ödüllendirdik.
 
 ### Kılavuzlar ve kaynaklar {#guides-and-resources}
 

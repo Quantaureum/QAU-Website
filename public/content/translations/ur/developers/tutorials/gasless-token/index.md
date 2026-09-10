@@ -93,7 +93,7 @@ contract UserProxy {
     bytes32 immutable DOMAIN_SEPARATOR;
 ```
 
-[<span dir="ltr">EIP-712</span> دستخطوں](https://eips.ethereum.org/EIPS/eip-712) کی تصدیق کے لیے درکار معلومات۔
+<span dir="ltr">EIP-712</span> دستخطوں کی تصدیق کے لیے درکار معلومات۔
 
 ```solidity
     constructor(address owner_) {
@@ -117,7 +117,7 @@ contract UserProxy {
     }
 ```
 
-[ڈومین الگ کرنے والا](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator)۔ اس کا حساب کمپائل کے وقت نہیں لگایا جا سکتا، کیونکہ یہ چین <span dir="ltr">ID</span> اور کنٹریکٹ کے پتے پر منحصر ہے۔ یہ کسی <span dir="ltr">UserProxy</span> کے لیے دوسرے کے لیے تیار کردہ پیغام سے بے وقوف بننا ناممکن بنا دیتا ہے۔
+ڈومین الگ کرنے والا۔ اس کا حساب کمپائل کے وقت نہیں لگایا جا سکتا، کیونکہ یہ چین <span dir="ltr">ID</span> اور کنٹریکٹ کے پتے پر منحصر ہے۔ یہ کسی <span dir="ltr">UserProxy</span> کے لیے دوسرے کے لیے تیار کردہ پیغام سے بے وقوف بننا ناممکن بنا دیتا ہے۔
 
 ```solidity
     event CallResult(address target, bytes returnData);

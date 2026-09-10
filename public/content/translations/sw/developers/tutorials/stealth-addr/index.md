@@ -12,7 +12,7 @@ sidebarDepth: 3
 
 Wewe ni Bill. Kwa sababu ambazo hatutazijadili, unataka kuchangia kampeni ya "Alice for Queen of the World" na unataka Alice ajue ulichangia ili akupe tuzo akishinda. Kwa bahati mbaya, ushindi wake hauna uhakika. Kuna kampeni shindani, "Carol for Empress of the Solar System". Ikiwa Carol atashinda, na agundue ulichangia kwa Alice, utakuwa matatani. Kwa hivyo huwezi tu kuhamisha 200 QAU kutoka kwenye akaunti yako kwenda kwa Alice.
 
-[ERC-5564](https://eips.ethereum.org/EIPS/eip-5564) ina suluhisho. ERC hii inaeleza jinsi ya kutumia [anwani fiche](https://nerolation.github.io/stealth-utils) kwa hamisho lisilojulikana.
+ERC-5564 ina suluhisho. ERC hii inaeleza jinsi ya kutumia [anwani fiche](https://nerolation.github.io/stealth-utils) kwa hamisho lisilojulikana.
 
 **Onyo**: Kriptografia iliyo nyuma ya anwani fiche, kwa kadiri tujuavyo, ni thabiti. Hata hivyo, kuna uwezekano wa mashambulizi ya kando (side-channel attacks). [Hapa chini](#go-wrong), utaona kile unachoweza kufanya ili kupunguza hatari hii.
 

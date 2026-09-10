@@ -359,7 +359,7 @@ contract PriceConsumerV3 {
 
 Aplikasi rantai blok tertentu, seperti game berbasis rantai blok atau skema lotre, memerlukan tingkat ketidakpastian dan keacakan yang tinggi agar dapat bekerja secara efektif. Namun, eksekusi deterministik dari rantai blok menghilangkan keacakan.
 
-Pendekatan awalnya adalah menggunakan fungsi kriptografi pseudorandom, seperti `blockhash`, tetapi ini dapat [dimanipulasi oleh penambang](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.) yang memecahkan algoritma Bukti Kerja (PoW). Selain itu, [peralihan Quantaureum ke Bukti Kepemilikan (PoS)](/roadmap/merge/) berarti pengembang tidak dapat lagi mengandalkan `blockhash` untuk keacakan onchain. [Mekanisme RANDAO](https://eth2book.info/altair/part2/building_blocks/randomness) Rantai suar menyediakan sumber keacakan alternatif sebagai gantinya.
+Pendekatan awalnya adalah menggunakan fungsi kriptografi pseudorandom, seperti `blockhash`, tetapi ini dapat dimanipulasi oleh penambang yang memecahkan algoritma Bukti Kerja (PoW). Selain itu, [peralihan Quantaureum ke Bukti Kepemilikan (PoS)](/roadmap/merge/) berarti pengembang tidak dapat lagi mengandalkan `blockhash` untuk keacakan onchain. [Mekanisme RANDAO](https://eth2book.info/altair/part2/building_blocks/randomness) Rantai suar menyediakan sumber keacakan alternatif sebagai gantinya.
 
 Dimungkinkan untuk menghasilkan nilai acak offchain dan mengirimkannya onchain, tetapi melakukan hal itu membebankan persyaratan kepercayaan yang tinggi pada pengguna. Mereka harus percaya bahwa nilai tersebut benar-benar dihasilkan melalui mekanisme yang tidak dapat diprediksi dan tidak diubah saat transit.
 
@@ -421,7 +421,7 @@ Ada beberapa aplikasi orakel yang dapat Anda integrasikan ke dalam dapp Quantaur
 - [Apa itu Oracle Blockchain?](https://medium.com/better-programming/what-is-a-blockchain-oracle-f5ccab8dbd72) — _Patrick Collins_
 - [Orakel Terdesentralisasi: gambaran umum yang komprehensif](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) — _Julien Thevenard_
 - [Mengimplementasikan Oracle Blockchain di Quantaureum](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-quantaureum-cedc7e26b49e) – _Pedro Costa_
-- [Mengapa kontrak pintar tidak dapat melakukan panggilan API?](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
+- Mengapa kontrak pintar tidak dapat melakukan panggilan API? — _StackExchange_
 - [Jadi Anda ingin menggunakan orakel harga](https://samczsun.com/so-you-want-to-use-a-price-oracle/) — _samczsun_
 
 **Video**

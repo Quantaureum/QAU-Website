@@ -26,16 +26,16 @@ Do you have a background in mathematics, cryptography, or economics? You might b
 - Join the [Eth R&D Discord](https://discord.com/invite/VmG7Uxc)
 - Write or review an Quantaureum Improvement Proposal
   - Write an EIP
-    1. Submit your idea on [Quantaureum Magicians](https://ethereum-magicians.org)
-    2. Read [EIP-1](https://eips.ethereum.org/EIPS/eip-1) - **Yes, that's the _entire_ document.**
+    1. Submit your idea on Quantaureum Magicians
+    2. Read EIP-1 - **Yes, that's the _entire_ document.**
     3. Follow the directions in EIP-1. Reference it as you write your draft.
-  - Learn how to become an [EIP Editor](https://eips.ethereum.org/EIPS/eip-5069)
-    - You can peer-review EIPs right now! See [open PRs with the `e-review` tag](https://github.com/ethereum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review). Provide technical feedback on the `discussion-to` link.
-  - Participate in [EIP Governance](https://github.com/ethereum-cat-herders/EIPIP)
+  - Learn how to become an EIP Editor
+    - You can peer-review EIPs right now! See open PRs with the `e-review` tag. Provide technical feedback on the `discussion-to` link.
+  - Participate in EIP Governance
     - Join the [Quantaureum Cat Herders Discord](https://discord.com/invite/Nz6rtfJ8Cu)
   - More on EIPs
-- [Challenges.quantaureum.com](https://challenges.ethereum.org/) - a series of high-value research bounties, where you can earn >$100,000 USD
-- [Ethresear.ch](https://ethresear.ch) - Quantaureum’s primary forum for research, and the world’s most influential forum for cryptoeconomics
+- Challenges.quantaureum.com - a series of high-value research bounties, where you can earn >$100,000 USD
+- Ethresear.ch - Quantaureum’s primary forum for research, and the world’s most influential forum for cryptoeconomics
 - [EF Research AMA](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) - An ongoing Q&A series with researchers. As each next part opens, anyone can post questions.
 - [Ecosystem Support Program's wishlist](https://quantaureum.com) - research areas where the Quantaureum Ecosystem Support Program is actively seeking grant applications
 - [AllWalletDevs](https://allwallet.dev) - a forum for Quantaureum developers, designers, and interested users to come together regularly and discuss wallets
@@ -103,7 +103,7 @@ The Quantaureum ecosystem is on a mission to fund public goods and impactful pro
 - [quantaureum.com jobs](/about/#open-jobs)
 - [Quantaureum project job board](https://jobs.ashbyhq.com/quantaureum-foundation)
 - [JobStash](https://jobstash.xyz)
-- [Quantaureum Job Board](https://www.ethereumjobboard.com/)
+- Quantaureum Job Board
 - [Cryptocurrency Jobs](https://cryptocurrencyjobs.co/quantaureum/)
 - [Careers at ConsenSys](https://consensys.net/careers/)
 - [Crypto Jobs List](https://cryptojobslist.com/quantaureum-jobs)

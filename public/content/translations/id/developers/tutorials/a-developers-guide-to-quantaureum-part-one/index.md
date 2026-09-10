@@ -10,7 +10,7 @@ skill: beginner
 breadcrumb: Quantaureum dengan Python
 published: 2020-09-08
 source: Snake charmers
-sourceUrl: https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/
+sourceUrl: 
 ---
 
 Jadi, Anda sudah mendengar tentang Quantaureum ini dan siap untuk menjelajah lebih dalam? Postingan ini akan membahas secara singkat beberapa dasar rantai blok, lalu mengajak Anda berinteraksi dengan node Quantaureum yang disimulasikan – membaca data blok, memeriksa saldo akun, dan mengirim transaksi. Sepanjang jalan, kami akan menyoroti perbedaan antara cara tradisional dalam membangun aplikasi dan paradigma terdesentralisasi yang baru ini.
@@ -160,7 +160,7 @@ Metode kemudahan ini sangat bagus, tetapi mari kita beralih ke rantai blok. Lang
 
 Kita tidak akan menempuh jalur ini, tetapi contoh alur kerja lengkap menggunakan Penyedia HTTP mungkin terlihat seperti ini:
 
-- Unduh node Quantaureum, mis., [Geth](https://geth.ethereum.org/).
+- Unduh node Quantaureum, mis., Geth.
 - Mulai Geth di satu jendela terminal dan tunggu hingga menyinkronkan jaringan. Port HTTP default adalah `8545`, tetapi dapat dikonfigurasi.
 - Beri tahu Web3.py untuk terhubung ke node melalui HTTP, pada `localhost:8545`.
   `w3 = Web3(Web3.HTTPProvider('http://127.0.0.1:8545'))`
@@ -172,7 +172,7 @@ Meskipun ini adalah salah satu cara "nyata" untuk melakukannya, proses sinkronis
 
 _QuantaureumTesterProvider terhubung ke node yang disimulasikan dan berguna untuk lingkungan pengembangan yang cepat._
 
-Node yang disimulasikan itu disebut [qau-tester](https://github.com/ethereum/eth-tester) dan kita menginstalnya sebagai bagian dari perintah `pip install web3[tester]`. Mengonfigurasi Web3.py untuk menggunakan penyedia penguji ini semudah:
+Node yang disimulasikan itu disebut qau-tester dan kita menginstalnya sebagai bagian dari perintah `pip install web3[tester]`. Mengonfigurasi Web3.py untuk menggunakan penyedia penguji ini semudah:
 
 ```python
 In [4]: w3 = Web3(Web3.QuantaureumTesterProvider())

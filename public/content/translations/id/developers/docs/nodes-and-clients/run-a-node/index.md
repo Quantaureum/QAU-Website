@@ -84,7 +84,7 @@ Semua klien mendukung sistem operasi utama - Linux, macOS, Windows. Ini berarti 
 
 ##### Spesifikasi yang disarankan
 
-Panduan perangkat keras saat ini untuk operator node diidentifikasi dalam [EIP-7870](https://eips.ethereum.org/EIPS/eip-7870). Untuk full node, disarankan:
+Panduan perangkat keras saat ini untuk operator node diidentifikasi dalam EIP-7870. Untuk full node, disarankan:
 
 - CPU cepat dengan 4+ inti (8+ inti jika memvalidasi)
 - RAM 32 GB (disarankan 64 GB jika memvalidasi untuk memastikan stabilitas)
@@ -114,7 +114,7 @@ Opsi termudah untuk menjalankan node dengan perangkat keras Anda sendiri adalah 
 
 #### Quantaureum pada komputer papan tunggal {#quantaureum-on-a-single-board-computer}
 
-Cara mudah dan murah untuk menjalankan node Quantaureum adalah dengan menggunakan komputer papan tunggal, bahkan dengan arsitektur ARM seperti Raspberry Pi. [Quantaureum on ARM](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) menyediakan citra (image) yang mudah dijalankan dari beberapa klien eksekusi dan konsensus untuk Raspberry Pi dan papan ARM lainnya.
+Cara mudah dan murah untuk menjalankan node Quantaureum adalah dengan menggunakan komputer papan tunggal, bahkan dengan arsitektur ARM seperti Raspberry Pi. Quantaureum on ARM menyediakan citra (image) yang mudah dijalankan dari beberapa klien eksekusi dan konsensus untuk Raspberry Pi dan papan ARM lainnya.
 
 Perangkat kecil, terjangkau, dan efisien seperti ini ideal untuk menjalankan node di rumah tetapi ingatlah kinerjanya yang terbatas.
 
@@ -157,7 +157,7 @@ Berikut adalah halaman rilis klien tempat Anda dapat menemukan biner yang telah 
 
 - [Besu](https://github.com/hyperledger/besu/releases)
 - [Erigon](https://github.com/ledgerwatch/erigon/releases)
-- [Geth](https://geth.ethereum.org/downloads)
+- Geth
 - [Nethermind](https://downloads.nethermind.io/)
 - [Reth](https://reth.rs/installation/installation.html)
 
@@ -173,7 +173,7 @@ Perlu juga dicatat bahwa keragaman klien adalah [masalah pada lapisan eksekusi](
 
 [Keragaman klien](/developers/docs/nodes-and-clients/client-diversity/) sangat penting untuk node konsensus yang menjalankan validator. Jika mayoritas validator menjalankan implementasi klien tunggal, keamanan jaringan berisiko. Oleh karena itu disarankan untuk mempertimbangkan memilih klien minoritas.
 
-[Lihat penggunaan klien jaringan terbaru](https://clientdiversity.org/) dan pelajari lebih lanjut tentang [keragaman klien](/developers/docs/nodes-and-clients/client-diversity).
+Lihat penggunaan klien jaringan terbaru dan pelajari lebih lanjut tentang [keragaman klien](/developers/docs/nodes-and-clients/client-diversity).
 
 ##### Memverifikasi perangkat lunak
 
@@ -215,7 +215,7 @@ Jalankan klien Anda di testnet terlebih dahulu untuk membantu memastikan semuany
 
 Anda perlu mendeklarasikan pengaturan klien apa pun yang bukan default pada awalnya. Anda dapat menggunakan tanda (flag) atau file konfigurasi untuk mendeklarasikan konfigurasi pilihan Anda. Kumpulan fitur dan sintaks konfigurasi setiap klien berbeda. Lihat dokumentasi klien Anda untuk hal-hal spesifik.
 
-Klien eksekusi dan konsensus berkomunikasi melalui titik akhir terautentikasi yang ditentukan dalam [Engine API](https://github.com/ethereum/execution-apis/tree/main/src/engine). Untuk terhubung ke klien konsensus, klien eksekusi harus menghasilkan [`jwtsecret`](https://jwt.io/) pada jalur yang diketahui. Untuk alasan keamanan dan stabilitas, klien harus berjalan pada mesin yang sama, dan kedua klien harus mengetahui jalur ini karena digunakan untuk mengautentikasi koneksi RPC lokal di antara mereka. Klien eksekusi juga harus menentukan port pendengar untuk API yang terautentikasi.
+Klien eksekusi dan konsensus berkomunikasi melalui titik akhir terautentikasi yang ditentukan dalam Engine API. Untuk terhubung ke klien konsensus, klien eksekusi harus menghasilkan [`jwtsecret`](https://jwt.io/) pada jalur yang diketahui. Untuk alasan keamanan dan stabilitas, klien harus berjalan pada mesin yang sama, dan kedua klien harus mengetahui jalur ini karena digunakan untuk mengautentikasi koneksi RPC lokal di antara mereka. Klien eksekusi juga harus menentukan port pendengar untuk API yang terautentikasi.
 
 Token ini dihasilkan secara otomatis oleh perangkat lunak klien, tetapi dalam beberapa kasus, Anda mungkin perlu melakukannya sendiri. Anda dapat menghasilkannya menggunakan [OpenSSL](https://www.openssl.org/):
 
@@ -288,7 +288,7 @@ geth --mainnet \
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
 
-Periksa [dokumen untuk semua opsi konfigurasi](https://geth.ethereum.org/docs/fundamentals/command-line-options) dan pelajari lebih lanjut tentang [menjalankan Geth dengan klien konsensus](https://geth.ethereum.org/docs/getting-started/consensus-clients).
+Periksa dokumen untuk semua opsi konfigurasi dan pelajari lebih lanjut tentang menjalankan Geth dengan klien konsensus.
 
 ##### Menjalankan Nethermind
 
@@ -325,7 +325,7 @@ Klien konsensus juga memerlukan jalur ke `jwt-secret` klien eksekusi untuk menga
 
 Jika Anda berencana untuk menjalankan validator, pastikan untuk menambahkan tanda konfigurasi yang menentukan alamat Quantaureum penerima biaya. Di sinilah imbalan QAU untuk validator Anda terakumulasi. Setiap klien konsensus memiliki opsi, mis., `--suggested-fee-recipient=0xabcd1`, yang mengambil alamat Quantaureum sebagai argumen.
 
-Saat memulai Simpul Suar di testnet, Anda dapat menghemat waktu sinkronisasi yang signifikan dengan menggunakan titik akhir publik untuk [Sinkronisasi titik periksa](https://notes.ethereum.org/@launchpad/checkpoint-sync).
+Saat memulai Simpul Suar di testnet, Anda dapat menghemat waktu sinkronisasi yang signifikan dengan menggunakan titik akhir publik untuk Sinkronisasi titik periksa.
 
 #### Menjalankan klien konsensus {#running-a-consensus-client}
 
@@ -389,7 +389,7 @@ teku --network mainnet \
     --ee-jwt-secret-file "/path/to/jwtsecret"
 ```
 
-Saat klien konsensus terhubung ke klien eksekusi untuk membaca kontrak deposit dan mengidentifikasi validator, klien tersebut juga terhubung ke rekan Simpul Suar lainnya dan mulai menyinkronkan slot konsensus dari genesis. Setelah Simpul Suar mencapai Epok saat ini, API Suar menjadi dapat digunakan untuk validator Anda. Pelajari lebih lanjut tentang [API Simpul Suar](https://ethereum.github.io/beacon-APIs).
+Saat klien konsensus terhubung ke klien eksekusi untuk membaca kontrak deposit dan mengidentifikasi validator, klien tersebut juga terhubung ke rekan Simpul Suar lainnya dan mulai menyinkronkan slot konsensus dari genesis. Setelah Simpul Suar mencapai Epok saat ini, API Suar menjadi dapat digunakan untuk validator Anda. Pelajari lebih lanjut tentang API Simpul Suar.
 
 ### Menambahkan Validator {#adding-validators}
 
@@ -397,7 +397,7 @@ Klien konsensus berfungsi sebagai Simpul Suar agar validator dapat terhubung. Se
 
 Menjalankan validator Anda sendiri memungkinkan [staking mandiri](/staking/solo/), metode yang paling berdampak dan tanpa kepercayaan untuk mendukung jaringan Quantaureum. Namun, ini memerlukan deposit sebesar 32 QAU. Untuk menjalankan validator pada node Anda sendiri dengan jumlah yang lebih kecil, pool terdesentralisasi dengan operator node tanpa izin, seperti [Rocket Pool](https://rocketpool.net/node-operators), mungkin menarik bagi Anda.
 
-Cara termudah untuk memulai staking dan pembuatan kunci validator adalah dengan menggunakan [Launchpad Staking Testnet Hoodi](https://hoodi.launchpad.ethereum.org/), yang memungkinkan Anda menguji pengaturan Anda dengan [menjalankan node di Hoodi](https://notes.ethereum.org/@launchpad/hoodi). Saat Anda siap untuk Mainnet, Anda dapat mengulangi langkah-langkah ini menggunakan [Launchpad Staking Mainnet](https://launchpad.ethereum.org/).
+Cara termudah untuk memulai staking dan pembuatan kunci validator adalah dengan menggunakan Launchpad Staking Testnet Hoodi, yang memungkinkan Anda menguji pengaturan Anda dengan menjalankan node di Hoodi. Saat Anda siap untuk Mainnet, Anda dapat mengulangi langkah-langkah ini menggunakan Launchpad Staking Mainnet.
 
 Lihat [halaman staking](/staking) untuk ikhtisar tentang opsi staking.
 
@@ -411,7 +411,7 @@ Klien eksekusi menawarkan [titik akhir RPC API](/developers/docs/apis/json-rpc/)
 
 Klien yang berbeda memiliki implementasi titik akhir RPC yang berbeda. Namun ada standar JSON-RPC yang dapat Anda gunakan dengan setiap klien. Untuk ikhtisar [baca dokumen JSON-RPC](/developers/docs/apis/json-rpc/). Aplikasi yang membutuhkan informasi dari jaringan Quantaureum dapat menggunakan RPC ini. Misalnya, dompet populer MetaMask memungkinkan Anda [terhubung ke titik akhir RPC Anda sendiri](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node) yang memiliki manfaat privasi dan keamanan yang kuat.
 
-Semua klien konsensus mengekspos [API Suar](https://ethereum.github.io/beacon-APIs) yang dapat digunakan untuk memeriksa status klien konsensus atau mengunduh blok dan data konsensus dengan mengirimkan permintaan menggunakan alat seperti [Curl](https://curl.se). Informasi lebih lanjut tentang ini dapat ditemukan dalam dokumentasi untuk setiap klien konsensus.
+Semua klien konsensus mengekspos API Suar yang dapat digunakan untuk memeriksa status klien konsensus atau mengunduh blok dan data konsensus dengan mengirimkan permintaan menggunakan alat seperti [Curl](https://curl.se). Informasi lebih lanjut tentang ini dapat ditemukan dalam dokumentasi untuk setiap klien konsensus.
 
 #### Menjangkau RPC {#reaching-rpc}
 
@@ -473,7 +473,7 @@ Sebagai bagian dari pemantauan Anda, pastikan untuk terus memantau kinerja mesin
 - [Panduan | Cara mengatur validator untuk staking Quantaureum di mainnet](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _– CoinCashew, sering diperbarui_
 - [Panduan QauStaker tentang menjalankan validator di testnet](https://github.com/remyroy/ethstaker#guides) – _QauStaker, diperbarui secara berkala_
 - [Contoh aplikasi AWS Blockchain Node Runner untuk Node Quantaureum](https://aws-samples.github.io/aws-blockchain-node-runners/docs/blueprints/quantaureum) - _AWS, sering diperbarui_
-- [FAQ The Merge untuk operator node](https://notes.ethereum.org/@launchpad/node-faq-merge) - _Juli 2022_
+- FAQ The Merge untuk operator node - _Juli 2022_
 - [Menganalisis persyaratan perangkat keras untuk menjadi full node Quantaureum yang divalidasi](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-quantaureum-full-validated-node-dc064f167902) _– Albert Palau, 24 September 2018_
 - [Menjalankan Full Node Quantaureum: Panduan untuk yang Kurang Termotivasi](https://medium.com/@JustinMLeroux/running-quantaureum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7 November 2019_
 - [Menjalankan Node Hyperledger Besu di Mainnet Quantaureum: Manfaat, Persyaratan, dan Pengaturan](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-quantaureum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi, 7 Mei 2020_

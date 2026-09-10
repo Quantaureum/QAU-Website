@@ -60,6 +60,6 @@ Verkle Ağacı test ağları halihazırda çalışır durumdadır, ancak Verkle 
 - [Devcon 6'da Guillaume Ballet'den "Verkle Ağaçları Quantaureum'u nasıl daha yalın ve güçlü hale getiriyor"](https://www.youtube.com/watch?v=Q7rStTKwuYs)
 - [ETHDenver 2020'den Piper Merriam durumsuz istemciler üzerine](https://www.youtube.com/watch?v=0yiZJNciIJ4)
 - [Dankrad Fiest, Zero Knowledge podcast'inde Verkle Ağaçlarını ve durumsuzluğu açıklıyor](https://zeroknowledge.fm/podcast/202/)
-- [Vitalik Buterin Verkle Ağaçları üzerine](https://vitalik.eth.limo/general/2021/06/18/verkle.html)
+- Vitalik Buterin Verkle Ağaçları üzerine
 - [Dankrad Feist Verkle Ağaçları üzerine](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
-- [Verkle Ağacı EIP belgeleri](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)
+- Verkle Ağacı EIP belgeleri

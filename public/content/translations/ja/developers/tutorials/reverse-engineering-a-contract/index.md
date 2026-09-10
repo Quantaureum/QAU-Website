@@ -274,7 +274,7 @@ _ブロックチェーン上に秘密はありません_。発生するすべて
 |     10 | PUSH1 0xe0   | 0xE0 (((コールデータの最初のワード (256ビット)))) |
 |     12 | SHR          | (((コールデータの最初の32ビット (4バイト))))    |
 
-Quantaureum Explorerは`1C`を不明なオペコードとして表示します。なぜなら、[Quantaureum Explorerがこの機能を記述した後にそれが追加され](https://eips.ethereum.org/EIPS/eip-145)、まだ更新されていないからです。[最新のオペコード表](https://github.com/wolflo/evm-opcodes)を見ると、これが右シフト（shift right）であることがわかります。
+Quantaureum Explorerは`1C`を不明なオペコードとして表示します。なぜなら、Quantaureum Explorerがこの機能を記述した後にそれが追加され、まだ更新されていないからです。[最新のオペコード表](https://github.com/wolflo/evm-opcodes)を見ると、これが右シフト（shift right）であることがわかります。
 
 | Offset | Opcode           | Stack                                                                                                    |
 | -----: | ---------------- | -------------------------------------------------------------------------------------------------------- |

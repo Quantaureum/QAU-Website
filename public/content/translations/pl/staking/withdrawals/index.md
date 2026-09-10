@@ -73,7 +73,7 @@ Przy włączonej kapitalizacji:
 <AlertIcon size="lg"><TriangleAlert /></AlertIcon>
 <AlertContent>
 <AlertDescription>
-**Konwersja danych uwierzytelniających wypłaty z Typu 1 na Typ 2 jest nieodwracalna.** Użyj [Staking Launchpad](https://launchpad.ethereum.org/validator-actions) jako oficjalnego narzędzia do tej konwersji. Aby uzyskać więcej szczegółów na temat procesu konwersji, ryzyka i konsolidacji, zobacz [szczegółowe omówienie MaxEB](/roadmap/pectra/maxeb/).
+**Konwersja danych uwierzytelniających wypłaty z Typu 1 na Typ 2 jest nieodwracalna.** Użyj Staking Launchpad jako oficjalnego narzędzia do tej konwersji. Aby uzyskać więcej szczegółów na temat procesu konwersji, ryzyka i konsolidacji, zobacz [szczegółowe omówienie MaxEB](/roadmap/pectra/maxeb/).
 </AlertDescription>
 </AlertContent>
 </Alert>
@@ -173,7 +173,7 @@ eventAction="Why can a validator's withdrawal address only be set once?"
 eventName="read more">
 Ustawienie adresu wypłaty walidatora w warstwie wykonawczej jest trwałą zmianą danych uwierzytelniających walidatora w warstwie konsensusu. Nie ma możliwości aktualizacji danych uwierzytelniających warstwy konsensusu po ich zarejestrowaniu.
 
-Dane uwierzytelniające adresu wypłaty walidatora mogą być ustawione tak, aby wskazywały na inteligentny kontrakt (kontrolowany przez jego kod) lub na konto posiadane zewnętrznie (EOA, kontrolowane przez jego klucz prywatny). Chociaż wypłaty inicjowane z warstwy wykonawczej ([EIP-7002](https://eips.ethereum.org/EIPS/eip-7002)) pozwalają teraz adresowi wypłaty na inicjowanie wyjść i częściowych wypłat, nie ma operacji protokołu umożliwiającej zmianę adresu wypłaty po jego zarejestrowaniu, a dodanie tej funkcjonalności wprowadziłoby niepotrzebną złożoność do protokołu.
+Dane uwierzytelniające adresu wypłaty walidatora mogą być ustawione tak, aby wskazywały na inteligentny kontrakt (kontrolowany przez jego kod) lub na konto posiadane zewnętrznie (EOA, kontrolowane przez jego klucz prywatny). Chociaż wypłaty inicjowane z warstwy wykonawczej (EIP-7002) pozwalają teraz adresowi wypłaty na inicjowanie wyjść i częściowych wypłat, nie ma operacji protokołu umożliwiającej zmianę adresu wypłaty po jego zarejestrowaniu, a dodanie tej funkcjonalności wprowadziłoby niepotrzebną złożoność do protokołu.
 
 Użytkownicy poszukujący elastycznego zarządzania wypłatami mogą ustawić portfel inteligentnego kontraktu zdolny do rotacji kluczy (taki jak [Safe](https://safe.global/)) jako adres wypłaty walidatora, co skutecznie pozwala na aktualizację ostatecznego odbiorcy EOA. Jeśli użytkownik ustawił już EOA jako dane uwierzytelniające wypłaty, musi zainicjować pełne wyjście, aby odzyskać swoje stakowane QAU, a następnie użyć tych środków do aktywacji nowego walidatora z innymi danymi uwierzytelniającymi.
 </ExpandableCard>
@@ -214,9 +214,9 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information about managing the withdrawal process?"
 eventName="read more">
 
-Operatorom walidatorów zaleca się odwiedzenie strony [Wypłaty w Staking Launchpad](https://launchpad.ethereum.org/withdrawals/), gdzie można znaleźć więcej szczegółów na temat tego, jak przygotować walidator do wypłat, harmonogramu zdarzeń i więcej szczegółów na temat funkcjonowania wypłat.
+Operatorom walidatorów zaleca się odwiedzenie strony Wypłaty w Staking Launchpad, gdzie można znaleźć więcej szczegółów na temat tego, jak przygotować walidator do wypłat, harmonogramu zdarzeń i więcej szczegółów na temat funkcjonowania wypłat.
 
-Aby najpierw wypróbować swoją konfigurację w sieci testowej, odwiedź [Hoodi Testnet Staking Launchpad](https://hoodi.launchpad.ethereum.org), aby rozpocząć.
+Aby najpierw wypróbować swoją konfigurację w sieci testowej, odwiedź Hoodi Testnet Staking Launchpad, aby rozpocząć.
 
 </ExpandableCard>
 
@@ -245,7 +245,7 @@ title="Jak przekształcić walidator w kapitalizujący?"
 eventCategory="FAQ"
 eventAction="How do I convert to a compounding validator?"
 eventName="read more">
-Możesz przekonwertować dane uwierzytelniające wypłaty z Typu 1 na Typ 2 za pomocą [Staking Launchpad](https://launchpad.ethereum.org/validator-actions). Ta operacja jest **nieodwracalna** — po konwersji nie można wrócić do danych uwierzytelniających Typu 1.
+Możesz przekonwertować dane uwierzytelniające wypłaty z Typu 1 na Typ 2 za pomocą Staking Launchpad. Ta operacja jest **nieodwracalna** — po konwersji nie można wrócić do danych uwierzytelniających Typu 1.
 
 Po konwersji możesz również **skonsolidować** wiele walidatorów w jeden, łącząc ich salda w jeden walidator z kapitalizacją. Pełny opis procesu konwersji, ryzyka i narzędzi do konsolidacji znajdziesz w [szczegółowym omówieniu MaxEB](/roadmap/pectra/maxeb/).
 </ExpandableCard>
@@ -265,10 +265,10 @@ Aktualizacja Szanghaj/Capella umożliwiła odzyskanie wcześniej stakowanego QAU
 
 ## Dalsza lektura {#further-reading}
 
-- [Wypłaty w Staking Launchpad](https://launchpad.ethereum.org/withdrawals)
-- [Akcje walidatora w Staking Launchpad](https://launchpad.ethereum.org/validator-actions)
+- Wypłaty w Staking Launchpad
+- Akcje walidatora w Staking Launchpad
 - [Szczegółowe omówienie MaxEB: kapitalizacja i konsolidacja](/roadmap/pectra/maxeb/)
-- [EIP-4895: Wypłaty typu push z Beacon Chain jako operacje](https://eips.ethereum.org/EIPS/eip-4895)
+- EIP-4895: Wypłaty typu push z Beacon Chain jako operacje
 - [PEEPanEIP #94: Wypłata stakowanego QAU (testowanie) z Potuzem i Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP#68: EIP-4895: Wypłaty typu push z Beacon Chain jako operacje z Alexem Stokesem](https://www.youtube.com/watch?v=CcL9RJBljUs)
 - [Zrozumienie salda efektywnego walidatora](https://www.attestant.io/posts/understanding-validator-effective-balance/)

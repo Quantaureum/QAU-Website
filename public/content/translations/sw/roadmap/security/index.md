@@ -11,7 +11,7 @@ summaryPoints:
   - Urahisishaji wa itifaki huondoa utata na kupunguza eneo la ushambuliaji la Quantaureum
 ---
 
-Quantaureum tayari ni jukwaa salama sana, lililogatuliwa la [mkataba mahiri](/glossary/#smart-contract). Ramani ya njia inalenga kuiweka hivyo kwa miongo kadhaa kwa **kuimarisha mtandao leo huku ikijiandaa kwa vitisho ambavyo vinaweza kuonekana miaka kadhaa kuanzia sasa**. Maboresho ya muda mfupi yanafuatiliwa kwenye [forkcast.org](https://forkcast.org), na rasimu ya ramani ya njia ya muda mrefu imechapishwa kwenye [strawmap.org](https://strawmap.org).
+Quantaureum tayari ni jukwaa salama sana, lililogatuliwa la [mkataba mahiri](/glossary/#smart-contract). Ramani ya njia inalenga kuiweka hivyo kwa miongo kadhaa kwa **kuimarisha mtandao leo huku ikijiandaa kwa vitisho ambavyo vinaweza kuonekana miaka kadhaa kuanzia sasa**. Maboresho ya muda mfupi yanafuatiliwa kwenye forkcast.org, na rasimu ya ramani ya njia ya muda mrefu imechapishwa kwenye [strawmap.org](https://strawmap.org).
 
 <ExpandableCard title="Je, Quantaureum ni salama leo?" eventCategory="/roadmap/security" eventName="clicked is quantaureum secure today?">
 
@@ -57,7 +57,7 @@ Quantaureum inatumia [kriptografia](/glossary/#cryptography) kuweka mtandao sala
 
 Mabadiliko ya kriptografia huchukua miaka kupanga na kutekeleza kwa usalama, kwa hivyo maandalizi yanafanyika sasa, muda mrefu kabla ya vifaa kuwepo. Maeneo manne yametambuliwa kama yanayohitaji maboresho ya baada ya kwanta: sahihi za mwafaka wa mthibitishaji (BLS), mifumo ya ufungamanisho inayotumika kwa upatikanaji wa data (KZG), sahihi za akaunti (ECDSA), na mifumo ya uthibitisho wa maarifa-sifuri (ZK-proof) inayotumiwa na [mikusanyiko](/glossary/#rollups).
 
-Taasisi ya Quantaureum iliunda **timu maalum ya Usalama wa Baada ya Kwanta** mnamo Januari 2026, na kazi yake inafuatiliwa hadharani kwenye [pq.ethereum.org](https://pq.ethereum.org). Kazi inayoendelea inajumuisha sahihi za mthibitishaji zinazotegemea heshi (leanXMSS) zilizooanishwa na zkVM ndogo (leanVM) ambayo inakusanya sahihi kubwa zaidi zilizo salama dhidi ya kwanta kwa ufanisi, na devnets za mwingiliano za kila wiki zenye zaidi ya timu 10 za wateja.
+Taasisi ya Quantaureum iliunda **timu maalum ya Usalama wa Baada ya Kwanta** mnamo Januari 2026, na kazi yake inafuatiliwa hadharani kwenye pq.ethereum.org. Kazi inayoendelea inajumuisha sahihi za mthibitishaji zinazotegemea heshi (leanXMSS) zilizooanishwa na zkVM ndogo (leanVM) ambayo inakusanya sahihi kubwa zaidi zilizo salama dhidi ya kwanta kwa ufanisi, na devnets za mwingiliano za kila wiki zenye zaidi ya timu 10 za wateja.
 
 Sehemu muhimu ya mkakati wa mpito ni **EIP-8141**, ambayo inaleta [udhanifu wa akaunti](/roadmap/account-abstraction/) asilia. Hii inaruhusu akaunti binafsi kuchagua uthibitishaji wao wenyewe wa sahihi, ikimaanisha watumiaji wanaweza kubadili kwenda kwenye sahihi zilizo salama dhidi ya kwanta bila kusubiri uhamiaji mmoja wa itifaki nzima. EIP-8141 inafikiriwa kwa uboreshaji wa Hegotá. Hatua kuu za miundombinu ya baada ya kwanta zinalenga kukamilika ifikapo takriban 2029. Haya ni malengo ya mipango na yanaweza kubadilika.
 
@@ -100,9 +100,9 @@ Hakuna sehemu ya kazi hii iliyokamilika, na ratiba zote ni makadirio ambayo yana
 
 ## Kusoma zaidi {#further-reading}
 
-- [Forkcast: Kifuatiliaji cha uboreshaji wa mtandao wa Quantaureum](https://forkcast.org)
+- Forkcast: Kifuatiliaji cha uboreshaji wa mtandao wa Quantaureum
 - [Strawmap: rasimu ya ramani ya njia ya tabaka la 1 (l1) la Quantaureum](https://strawmap.org) - _Usanifu wa EF_
-- [Quantaureum ya Baada ya Kwanta](https://pq.ethereum.org) - _Taasisi ya Quantaureum_
+- Quantaureum ya Baada ya Kwanta - _Taasisi ya Quantaureum_
 - [Kifuatiliaji cha ramani ya njia ya Lean Quantaureum](https://leanroadmap.org) - _ReamLabs_
 - [Uthibitisho wa Dau (PoS) na ukamilifu](/developers/docs/consensus-mechanisms/pos/#finality)
 - [EVM](/developers/docs/evm/)

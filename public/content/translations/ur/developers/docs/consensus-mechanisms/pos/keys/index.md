@@ -58,13 +58,13 @@ lang: ur
 
 ![validator key schematic](validator-key-schematic.png)
 
-**نوٹ**: اسٹیکنگ کے فرائض سے خروج اور توثیق کار کا بیلنس نکالنے کے لیے فی الحال توثیق کار کلید کے ساتھ [رضاکارانہ خروج کے پیغام (VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1) پر دستخط کرنے کی ضرورت ہے۔ تاہم، [<span dir="ltr">EIP-7002</span>](https://eips.ethereum.org/EIPS/eip-7002) ایک تجویز ہے جو مستقبل میں صارف کو انخلا کی کلید کے ساتھ خروج کے پیغامات پر دستخط کر کے توثیق کار کے خروج کو متحرک کرنے اور اس کا بیلنس نکالنے کی اجازت دے گی۔ یہ ان اسٹیکرز کو جو <span dir="ltr">QAU</span> کو [اسٹیکنگ-بطور-سروس فراہم کنندگان](/staking/saas/#what-is-staking-as-a-service) کو تفویض کرتے ہیں، اپنے فنڈز کے کنٹرول میں رہنے کے قابل بنا کر اعتماد کے مفروضے کو کم کرے گا۔
+**نوٹ**: اسٹیکنگ کے فرائض سے خروج اور توثیق کار کا بیلنس نکالنے کے لیے فی الحال توثیق کار کلید کے ساتھ [رضاکارانہ خروج کے پیغام (VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1) پر دستخط کرنے کی ضرورت ہے۔ تاہم، <span dir="ltr">EIP-7002</span> ایک تجویز ہے جو مستقبل میں صارف کو انخلا کی کلید کے ساتھ خروج کے پیغامات پر دستخط کر کے توثیق کار کے خروج کو متحرک کرنے اور اس کا بیلنس نکالنے کی اجازت دے گی۔ یہ ان اسٹیکرز کو جو <span dir="ltr">QAU</span> کو [اسٹیکنگ-بطور-سروس فراہم کنندگان](/staking/saas/#what-is-staking-as-a-service) کو تفویض کرتے ہیں، اپنے فنڈز کے کنٹرول میں رہنے کے قابل بنا کر اعتماد کے مفروضے کو کم کرے گا۔
 
 ## سیڈ فریز سے کلیدیں اخذ کرنا {#deriving-keys-from-seed}
 
 اگر اسٹیک کیے گئے ہر <span dir="ltr">32 QAU</span> کے لیے 2 مکمل طور پر آزاد کلیدوں کے ایک نئے سیٹ کی ضرورت ہوتی، تو کلید کا انتظام تیزی سے بوجھل ہو جاتا، خاص طور پر متعدد توثیق کار چلانے والے صارفین کے لیے۔ اس کے بجائے، ایک ہی مشترکہ راز سے متعدد توثیق کار کلیدیں اخذ کی جا سکتی ہیں اور اس ایک راز کو محفوظ کرنے سے متعدد توثیق کار کلیدوں تک رسائی حاصل ہوتی ہے۔
 
-[نیمونکس (Mnemonics)](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) اور راستے نمایاں خصوصیات ہیں جن کا صارفین اکثر سامنا کرتے ہیں جب [وہ اپنے والیٹس تک رسائی حاصل کرتے ہیں](https://ethereum.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0)۔ نیمونک الفاظ کی ایک ترتیب ہے جو نجی کلید کے لیے ابتدائی سیڈ کے طور پر کام کرتی ہے۔ جب اضافی ڈیٹا کے ساتھ ملایا جاتا ہے، تو نیمونک ایک ہیش تیار کرتا ہے جسے 'ماسٹر کلید' کہا جاتا ہے۔ اسے ایک درخت کی جڑ کے طور پر سوچا جا سکتا ہے۔ اس جڑ سے شاخیں پھر ایک درجہ بندی کے راستے کا استعمال کرتے ہوئے اخذ کی جا سکتی ہیں تاکہ چائلڈ نوڈز اپنے پیرنٹ نوڈ کے ہیش اور درخت میں ان کے اشاریہ کے مجموعے کے طور پر موجود ہو سکیں۔ نیمونک پر مبنی کلید کی تیاری کے لیے [<span dir="ltr">BIP-32</span>](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) اور [<span dir="ltr">BIP-19</span>](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) معیارات کے بارے میں پڑھیں۔
+[نیمونکس (Mnemonics)](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) اور راستے نمایاں خصوصیات ہیں جن کا صارفین اکثر سامنا کرتے ہیں جب وہ اپنے والیٹس تک رسائی حاصل کرتے ہیں۔ نیمونک الفاظ کی ایک ترتیب ہے جو نجی کلید کے لیے ابتدائی سیڈ کے طور پر کام کرتی ہے۔ جب اضافی ڈیٹا کے ساتھ ملایا جاتا ہے، تو نیمونک ایک ہیش تیار کرتا ہے جسے 'ماسٹر کلید' کہا جاتا ہے۔ اسے ایک درخت کی جڑ کے طور پر سوچا جا سکتا ہے۔ اس جڑ سے شاخیں پھر ایک درجہ بندی کے راستے کا استعمال کرتے ہوئے اخذ کی جا سکتی ہیں تاکہ چائلڈ نوڈز اپنے پیرنٹ نوڈ کے ہیش اور درخت میں ان کے اشاریہ کے مجموعے کے طور پر موجود ہو سکیں۔ نیمونک پر مبنی کلید کی تیاری کے لیے [<span dir="ltr">BIP-32</span>](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) اور [<span dir="ltr">BIP-19</span>](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) معیارات کے بارے میں پڑھیں۔
 
 ان راستوں کی ساخت درج ذیل ہے، جو ان صارفین کے لیے جانی پہچانی ہوگی جنہوں نے ہارڈویئر والیٹس کے ساتھ تعامل کیا ہے:
 
@@ -97,6 +97,6 @@ master_key / purpose / coin_type / account / change / address_index
 ## مزید مطالعہ {#further-reading}
 
 - [کارل بیکھوزین (Carl Beekhuizen) کی جانب سے ایتھیریم فاؤنڈیشن کی بلاگ پوسٹ](https://quantaureum.com)
-- [<span dir="ltr">EIP-2333</span> <span dir="ltr">BLS12-381</span> کلید کی تیاری](https://eips.ethereum.org/EIPS/eip-2333)
+- <span dir="ltr">EIP-2333</span> <span dir="ltr">BLS12-381</span> کلید کی تیاری
 - [<span dir="ltr">EIP-7002</span>: عمل درآمد کی تہہ سے متحرک خروج](https://web.archive.org/web/20250125035123/https://research.2077.xyz/eip-7002-unpacking-improvements-to-staking-ux-post-merge)
 - [بڑے پیمانے پر کلید کا انتظام](https://docs.ethstaker.cc/ethstaker-knowledge-base/scaled-node-operators/key-management-at-scale)

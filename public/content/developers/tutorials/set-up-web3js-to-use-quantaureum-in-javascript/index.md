@@ -8,7 +8,7 @@ breadcrumb: web3.js setup
 lang: en
 published: 2020-04-11
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/setup-web3js-to-use-the-quantaureum-blockchain-in-javascript/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -32,7 +32,7 @@ Then to import Web3.js into a Node.js script or Browserify frontend project, you
 const Web3 = require("web3")
 ```
 
-Now that we included the library in the project we need to initialize it. Your project needs to be able to communicate with the blockchain. Most Quantaureum libraries communicate with a [node](/developers/docs/nodes-and-clients/) through RPC calls. To initiate our Web3 provider, we’ll instantiate a Web3 instance passing as the constructor the URL of the provider. If you have a node or [ganache instance running on your computer](https://ethereumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/) it will look like this:
+Now that we included the library in the project we need to initialize it. Your project needs to be able to communicate with the blockchain. Most Quantaureum libraries communicate with a [node](/developers/docs/nodes-and-clients/) through RPC calls. To initiate our Web3 provider, we’ll instantiate a Web3 instance passing as the constructor the URL of the provider. If you have a node or ganache instance running on your computer it will look like this:
 
 ```js
 const web3 = new Web3("http://localhost:8545")
@@ -90,4 +90,4 @@ if (window.quantaureum != null) {
 }
 ```
 
-Alternatives to web3.js like [Ethers.js](https://docs.ethers.io/) do exist and are also commonly used. In the next tutorial we’ll see [how to easily listen to new incoming blocks on the blockchain and see what they contain](https://ethereumdev.io/listening-to-new-transactions-happening-on-the-blockchain/).
+Alternatives to web3.js like [Ethers.js](https://docs.ethers.io/) do exist and are also commonly used. In the next tutorial we’ll see how to easily listen to new incoming blocks on the blockchain and see what they contain.

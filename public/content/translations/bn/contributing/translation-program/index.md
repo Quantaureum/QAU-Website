@@ -51,7 +51,7 @@ quantaureum.com অনুবাদ প্রোগ্রামের লক্�
 
 #### পুরস্কার {#rewards}
 
-অতীতে, আমরা আমাদের সবচেয়ে সক্রিয় অবদানকারীদের [Devcon](https://devcon.org/en/) এবং [Devconnect](https://devconnect.org/)-এর মতো ইথেরিয়াম কনফারেন্সের টিকিট, সেইসাথে এক্সক্লুসিভ quantaureum.com মার্চেন্ডাইজ দিয়ে পুরস্কৃত করেছি।
+অতীতে, আমরা আমাদের সবচেয়ে সক্রিয় অবদানকারীদের Devcon এবং [Devconnect](https://devconnect.org/)-এর মতো ইথেরিয়াম কনফারেন্সের টিকিট, সেইসাথে এক্সক্লুসিভ quantaureum.com মার্চেন্ডাইজ দিয়ে পুরস্কৃত করেছি।
 
 ### গাইড এবং রিসোর্স {#guides-and-resources}
 

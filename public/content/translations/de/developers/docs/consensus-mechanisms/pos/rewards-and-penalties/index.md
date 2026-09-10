@@ -26,7 +26,7 @@ base_reward = effective_balance * (base_reward_factor / (base_rewards_per_epoch 
 
 wobei `base_reward_factor` 64 ist, `base_rewards_per_epoch` 4 ist und `sum(active balance)` die gesamten gestakten QAU aller aktiven Validatoren sind.
 
-Das bedeutet, dass die Basisbelohnung proportional zum effektiven Guthaben des Validators und umgekehrt proportional zur Anzahl der Validatoren im Netzwerk ist. Je mehr Validatoren, desto größer die gesamte Emission (da `sqrt(N)`), aber desto kleiner die `base_reward` pro Validator (da `1/sqrt(N)`). Diese Faktoren beeinflussen die APR für einen Staking-Knoten. Lesen Sie die Begründung dafür in [Vitaliks Notizen](https://notes.ethereum.org/@vbuterin/serenity_design_rationale?type=view#Base-rewards).
+Das bedeutet, dass die Basisbelohnung proportional zum effektiven Guthaben des Validators und umgekehrt proportional zur Anzahl der Validatoren im Netzwerk ist. Je mehr Validatoren, desto größer die gesamte Emission (da `sqrt(N)`), aber desto kleiner die `base_reward` pro Validator (da `1/sqrt(N)`). Diese Faktoren beeinflussen die APR für einen Staking-Knoten. Lesen Sie die Begründung dafür in Vitaliks Notizen.
 
 Die Gesamtbelohnung wird dann als Summe von fünf Komponenten berechnet, die jeweils eine Gewichtung haben, die bestimmt, wie viel jede Komponente zur Gesamtbelohnung beiträgt. Die Komponenten sind:
 
@@ -60,7 +60,7 @@ Bisher haben wir uns perfekt verhaltende Validatoren betrachtet, aber was ist mi
 
 Die Strafen für das Verpassen der Target- und Source-Stimmen entsprechen den Belohnungen, die der Attestierende erhalten hätte, wenn er sie eingereicht hätte. Das bedeutet, dass anstelle der Hinzufügung der Belohnung zu ihrem Guthaben ein gleichwertiger Betrag von ihrem Guthaben abgezogen wird. Es gibt keine Strafe für das Verpassen der Head-Stimme (d. h. Head-Stimmen werden nur belohnt, niemals bestraft). Es gibt keine Strafe im Zusammenhang mit der `inclusion_delay` – die Belohnung wird dem Guthaben des Validators einfach nicht hinzugefügt. Es gibt auch keine Strafe für das Versäumnis, einen Block vorzuschlagen.
 
-Lesen Sie mehr über Belohnungen und Strafen in den [Konsensspezifikationen](https://github.com/ethereum/consensus-specs/blob/master/specs/altair/beacon-chain.md). Belohnungen und Strafen wurden im Bellatrix-Upgrade angepasst – sehen Sie sich an, wie Danny Ryan und Vitalik dies in diesem [Peep an EIP-Video](https://www.youtube.com/watch?v=iaAEGs1DMgQ) diskutieren.
+Lesen Sie mehr über Belohnungen und Strafen in den Konsensspezifikationen. Belohnungen und Strafen wurden im Bellatrix-Upgrade angepasst – sehen Sie sich an, wie Danny Ryan und Vitalik dies in diesem [Peep an EIP-Video](https://www.youtube.com/watch?v=iaAEGs1DMgQ) diskutieren.
 
 ## Slashing {#slashing}
 
@@ -82,9 +82,9 @@ Das Design von Belohnungen, Strafen und Slashing des Konsensmechanismus ermutigt
 
 - [Upgrading Quantaureum: Die Anreizschicht](https://eth2book.info/altair/part2/incentives)
 - [Anreize in Quantaureums hybridem Casper-Protokoll](https://arxiv.org/pdf/1903.04205.pdf)
-- [Vitaliks kommentierte Spezifikation](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#rewards-and-penalties-1)
+- Vitaliks kommentierte Spezifikation
 - [Tipps zur Vermeidung von Quantaureum-Slashing](https://medium.com/prysmatic-labs/eth2-slashing-prevention-tips-f6faa5025f50)
-- [Analyse der Slashing-Strafen unter EIP-7251](https://ethresear.ch/t/slashing-penalty-analysis-eip-7251/16509)
+- Analyse der Slashing-Strafen unter EIP-7251
 
 _Quellen_
 

@@ -46,7 +46,7 @@ lang: ko
    - 원래 l1의 브릿지에서 왔는지
 6. l2 브릿지는 l2의 ERC-20 토큰 컨트랙트가 올바른지 확인합니다:
    - l2 컨트랙트는 자신의 l1 상대방이 l1에서 토큰이 온 곳과 동일하다고 보고합니다.
-   - l2 컨트랙트는 올바른 인터페이스를 지원한다고 보고합니다([ERC-165 사용](https://eips.ethereum.org/EIPS/eip-165)).
+   - l2 컨트랙트는 올바른 인터페이스를 지원한다고 보고합니다(ERC-165 사용).
 7. l2 컨트랙트가 올바른 경우, 이를 호출하여 적절한 주소에 적절한 수의 토큰을 발행합니다. 그렇지 않은 경우, 사용자가 l1에서 토큰을 청구할 수 있도록 인출 프로세스를 시작합니다.
 
 ### 인출 흐름 {#withdrawal-flow}
@@ -202,7 +202,6 @@ l1 브릿지의 주소는 알기 _쉽지 않기_ 때문에 l2 브릿지와의 �
     /**
      * @dev l2에서 l1으로의 인출을 완료하고, 수신자의 l1 ERC-20 토큰 잔고에 자금을 입금합니다.
      * l2에서 초기화된 인출이 완료되지 않은 경우 이 호출은 실패합니다.
-     *
      * @param _l1Token finalizeWithdrawal을 수행할 l1 토큰의 주소.
      * @param _l2Token 인출이 시작된 l2 토큰의 주소.
      * @param _from 전송을 시작하는 l2 주소.
@@ -329,7 +328,6 @@ import { ICrossDomainMessenger } from "./ICrossDomainMessenger.sol";
 /**
  * @title CrossDomainEnabled
  * @dev 크로스 도메인 통신을 수행하는 컨트랙트를 위한 헬퍼 컨트랙트
- *
  * 사용된 컴파일러: 상속받는 컨트랙트에서 정의됨
  */
 contract CrossDomainEnabled {
@@ -507,7 +505,7 @@ import { Address } from "@openzeppelin/contracts/utils/Address.sol";
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[ERC-20 표준](https://eips.ethereum.org/EIPS/eip-20)은 컨트랙트가 실패를 보고하는 두 가지 방법을 지원합니다:
+ERC-20 표준은 컨트랙트가 실패를 보고하는 두 가지 방법을 지원합니다:
 
 1. 되돌리기
 2. `false` 반환
@@ -518,7 +516,6 @@ import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.s
 /**
  * @title L1StandardBridge
  * @dev l1 QAU 및 ERC-20 브릿지는 예치된 l1 자금과 l2에서 사용 중인 표준 토큰을 저장하는 컨트랙트입니다. 이는 대응하는 l2 브릿지를 동기화하여, 예치 사실을 알리고 새로 완료된 인출을 수신합니다.
- *
  */
 contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
     using SafeERC20 for IERC20;
@@ -751,7 +748,6 @@ Solidity 함수 [`abi.encodeWithSelector`](https://docs.soliditylang.org/en/v0.8
 ```solidity
     /**
      * @dev l2 예치 토큰 컨트랙트에 예치 사실을 알리고 핸들러를 호출하여 l1 자금을 잠금으로써 예치 로직을 수행합니다. (예: transferFrom)
-     *
      * @param _l1Token 예치하려는 l1 ERC-20의 주소
      * @param _l2Token 해당 l1에 대응하는 l2 ERC-20의 주소
      * @param _from l1에서 예치금을 가져올 계정
@@ -933,14 +929,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [표준 ERC-20 인터페이스](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)에는 `mint` 및 `burn` 함수가 포함되어 있지 않습니다.
-이러한 메서드는 토큰을 생성하고 파괴하는 메커니즘을 지정하지 않은 [ERC-20 표준](https://eips.ethereum.org/EIPS/eip-20)에서 요구하지 않습니다.
+이러한 메서드는 토큰을 생성하고 파괴하는 메커니즘을 지정하지 않은 ERC-20 표준에서 요구하지 않습니다.
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 [ERC-165 인터페이스](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol)는 컨트랙트가 제공하는 함수를 지정하는 데 사용됩니다.
-[여기에서 표준을 읽을 수 있습니다](https://eips.ethereum.org/EIPS/eip-165).
+여기에서 표준을 읽을 수 있습니다.
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -1029,7 +1025,7 @@ contract L2StandardERC20 is IL2StandardERC20, ERC20 {
     }
 ```
 
-이것이 [ERC-165](https://eips.ethereum.org/EIPS/eip-165)가 작동하는 방식입니다.
+이것이 ERC-165가 작동하는 방식입니다.
 모든 인터페이스는 지원되는 여러 함수이며, 해당 함수들의 [ABI 함수 선택자](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector)의 [배타적 논리합(XOR)](https://en.wikipedia.org/wiki/Exclusive_or)으로 식별됩니다.
 
 l2 브릿지는 자산을 보내는 ERC-20 컨트랙트가 `IL2StandardERC20`인지 확인하기 위한 온전성 검사(sanity check)로 ERC-165를 사용합니다.

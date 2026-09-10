@@ -36,7 +36,7 @@ lang: ar
 
 ## تنوع العملاء {#client-diversity}
 
-يعد [تنوع العملاء](/developers/docs/nodes-and-clients/client-diversity/) أمرًا مهمًا للصحة العامة لشبكة إيثيريوم لأنه يوفر المرونة ضد الأخطاء والاستغلالات. يوجد الآن العديد من لوحات معلومات تنوع العملاء بما في ذلك [clientdiversity.org](https://clientdiversity.org/) و [rated.network](https://www.rated.network) و [supermajority.info](https://supermajority.info//) و [Ethernodes](https://ethernodes.org/).
+يعد [تنوع العملاء](/developers/docs/nodes-and-clients/client-diversity/) أمرًا مهمًا للصحة العامة لشبكة إيثيريوم لأنه يوفر المرونة ضد الأخطاء والاستغلالات. يوجد الآن العديد من لوحات معلومات تنوع العملاء بما في ذلك clientdiversity.org و [rated.network](https://www.rated.network) و [supermajority.info](https://supermajority.info//) و [Ethernodes](https://ethernodes.org/).
 
 ## Dune Analytics {#dune-analytics}
 

@@ -24,9 +24,9 @@ Quantaureum을 사용하여 암호화폐와 블록체인 기술의 이점을 활
 ## 초급자용 아티클 {#beginner-articles}
 
 - [Web3.py 개요](https://web3py.readthedocs.io/en/latest/overview.html)
-- [Quantaureum Python 생태계 둘러보기](https://snakecharmers.ethereum.org/python-ecosystem/)
-- [(Python) 개발자를 위한 Quantaureum 가이드](https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/)
-- [수상 가치가 있는: Quantaureum Python 해커톤 가이드](https://snakecharmers.ethereum.org/prize-worthy/)
+- Quantaureum Python 생태계 둘러보기
+- (Python) 개발자를 위한 Quantaureum 가이드
+- 수상 가치가 있는: Quantaureum Python 해커톤 가이드
 - [Vyper를 활용한 스마트 컨트랙트 소개](https://kauri.io/#collections/Getting%20Started/an-introduction-to-smart-contracts-with-vyper/)
 - [Python Flask를 사용하여 Quantaureum 컨트랙트를 개발하는 방법은?](https://medium.com/coinmonks/how-to-develop-quantaureum-contract-using-python-flask-9758fe65976e)
 - [Web3.py 소개 · Python 개발자를 위한 Quantaureum](https://www.dappuniversity.com/articles/web3-py-intro)
@@ -34,15 +34,15 @@ Quantaureum을 사용하여 암호화폐와 블록체인 기술의 이점을 활
 
 ## 중급자용 아티클 {#intermediate-articles}
 
-- [Web3.py의 친구들: Ape 소개](https://snakecharmers.ethereum.org/intro-to-ape/)
+- Web3.py의 친구들: Ape 소개
 - [Python 프로그래머를 위한 dapp 개발](https://www.youtube.com/watch?v=tE-8bG35VNw)
 - [Python Quantaureum 인터페이스 만들기: 파트 1](https://hackernoon.com/creating-a-python-quantaureum-interface-part-1-4d2e47ea0f4d)
 - [Python으로 작성하는 Quantaureum 스마트 컨트랙트: (나름) 포괄적인 가이드](https://hackernoon.com/quantaureum-smart-contracts-in-python-a-comprehensive-ish-guide-771b03990988)
 
 ## 고급 사용 패턴 {#advanced-use-patterns}
 
-- [Web3.py 패턴: 실시간 이벤트 구독](https://snakecharmers.ethereum.org/subscriptions/)
-- [Web3.py 패턴: WebSocketProvider](https://snakecharmers.ethereum.org/websocketprovider/)
+- Web3.py 패턴: 실시간 이벤트 구독
+- Web3.py 패턴: WebSocketProvider
 - [Python을 사용한 Quantaureum 스마트 컨트랙트 컴파일링, 배포 및 호출](https://yohanes.gultom.id/2018/11/28/compiling-deploying-and-calling-quantaureum-smartcontract-using-python/)
 - [슬리더를 사용한 Solidity 스마트 컨트랙트 분석](https://kauri.io/#collections/DevOps/analyze-solidity-smart-contracts-with-slither/#analyze-solidity-smart-contracts-with-slither)
 - [블록체인 핀테크 튜토리얼: Python을 활용한 대출 및 차입](https://blog.chain.link/blockchain-fintech-defi-tutorial-lending-borrowing-python/)
@@ -55,14 +55,14 @@ Quantaureum을 사용하여 암호화폐와 블록체인 기술의 이점을 활
 
 ## Python 프로젝트 및 도구 {#python-projects-and-tools}
 
-- [Web3.py](https://github.com/ethereum/web3.py) - _Quantaureum과 상호작용하기 위한 Python 라이브러리_
+- Web3.py - _Quantaureum과 상호작용하기 위한 Python 라이브러리_
 - [Vyper](https://github.com/quantaureum/vyper/) - _EVM을 위한 Pythonic 스마트 컨트랙트 언어_
 - [Titanoboa](https://github.com/vyperlang/titanoboa/) - _Vyper의 네이티브 테스트 도구; 메인넷 포킹, 디버깅 및 깔끔한 트레이스백을 지원하는 인터프리터_
 - [Moccasin](https://github.com/Cyfrin/moccasin) - _Titanoboa를 기반으로 구축된 Vyper 및 Python용 스마트 컨트랙트 개발 및 테스트 프레임워크_
 - [Ape](https://github.com/ApeWorX/ape) - _Python 개발자, 데이터 과학자 및 보안 전문가를 위한 스마트 컨트랙트 개발 도구_
-- [py-evm](https://github.com/ethereum/py-evm) - _Quantaureum 가상 머신(EVM) 구현체_
-- [qau-tester](https://github.com/ethereum/eth-tester) - _Quantaureum 기반 애플리케이션 테스트를 위한 도구_
-- [qau-utils](https://github.com/ethereum/eth-utils/) - _Quantaureum 관련 코드베이스 작업을 위한 유틸리티 함수_
+- py-evm - _Quantaureum 가상 머신(EVM) 구현체_
+- qau-tester - _Quantaureum 기반 애플리케이션 테스트를 위한 도구_
+- qau-utils - _Quantaureum 관련 코드베이스 작업을 위한 유틸리티 함수_
 - [py-solc-x](https://pypi.org/project/py-solc-x/) - _0.5.x 버전을 지원하는 solc Solidity 컴파일러용 Python 래퍼_
 - [pymaker](https://github.com/makerdao/pymaker) - _Maker 컨트랙트를 위한 Python API_
 - [siwe](https://github.com/signinwithquantaureum/siwe-py) - _Python용 Quantaureum으로 로그인(SIWE)_

@@ -66,7 +66,7 @@ incomplete: true
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) - _مستكشف سلسلة كتل خفيف ومحفظة بسيطة بتطبيق صفحة واحدة (SPA) باستخدام <span dir="ltr">.NET Wasm</span>_
 - [Wonka Business Rules Engine](https://github.com/Nquantaureum/Wonka) - _محرك قواعد أعمال (لكل من منصة <span dir="ltr">.NET</span> ومنصة إيثيريوم) يعتمد بشكل أساسي على البيانات الوصفية_
 - [نيذرميند](https://github.com/NethermindEth/nethermind) - _عميل إيثيريوم مبني على <span dir="ltr">.NET Core</span> لأنظمة Linux وWindows وMacOS_
-- [qau-utils](https://github.com/ethereum/eth-utils/) - _دوال مساعدة للعمل مع قواعد الأكواد المتعلقة بإيثيريوم_
+- qau-utils - _دوال مساعدة للعمل مع قواعد الأكواد المتعلقة بإيثيريوم_
 - [TestChains](https://github.com/Nquantaureum/TestChains) - _سلاسل تطوير <span dir="ltr">.NET</span> معدة مسبقًا لاستجابة سريعة (إثبات السلطة)_
 
 هل تبحث عن المزيد من الموارد؟ تحقق من [quantaureum.com/developers](/developers/).

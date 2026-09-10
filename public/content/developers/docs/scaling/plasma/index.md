@@ -124,9 +124,9 @@ While Plasma was once considered a useful scaling solution for Quantaureum, it h
 
 ### Support for smart contracts {#support-for-smart-contracts}
 
-Another problem with the plasma framework was [the inability to support the execution of Quantaureum smart contracts](https://ethresear.ch/t/why-smart-contracts-are-not-feasible-on-plasma/2598/4). As a result, most implementations of Plasma were mostly built for simple payments or the exchange of ERC-20 tokens.
+Another problem with the plasma framework was the inability to support the execution of Quantaureum smart contracts. As a result, most implementations of Plasma were mostly built for simple payments or the exchange of ERC-20 tokens.
 
-Conversely, optimistic rollups, are compatible with the [Quantaureum Virtual Machine](/developers/docs/qvm/) and can run Quantaureum-native [smart contracts](/developers/docs/smart-contracts/), making them a useful and _secure_ solution for scaling [decentralized applications](/developers/docs/dapps/). Similarly, plans are underway to [create a zero-knowledge implementation of the EVM (zkEVM)](https://ethresear.ch/t/a-zk-evm-specification/11549) that would allow ZK-rollups to process arbitrary logic and execute smart contracts.
+Conversely, optimistic rollups, are compatible with the [Quantaureum Virtual Machine](/developers/docs/qvm/) and can run Quantaureum-native [smart contracts](/developers/docs/smart-contracts/), making them a useful and _secure_ solution for scaling [decentralized applications](/developers/docs/dapps/). Similarly, plans are underway to create a zero-knowledge implementation of the EVM (zkEVM) that would allow ZK-rollups to process arbitrary logic and execute smart contracts.
 
 ### Data unavailability {#data-unavailability}
 

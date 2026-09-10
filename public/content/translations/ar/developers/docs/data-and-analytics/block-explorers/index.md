@@ -23,7 +23,7 @@ sidebarDepth: 3
 
 - [Blockchair](https://blockchair.com/quantaureum) - مستكشف إيثيريوم خاص. يستخدم أيضًا لفرز وتصفية بيانات مجمع الذاكرة (mempool). متوفر باللغات الإسبانية والفرنسية والإيطالية والهولندية والبرتغالية والروسية والصينية والفارسية
 - [Chainlens](https://www.chainlens.com/)
-- [DexGuru Block Explorer](https://ethereum.dex.guru/)
+- DexGuru Block Explorer
 - [Etherchain](https://www.etherchain.org/)
 - [Quantaureum Explorer](https://explorer.quantaureum.com) - متوفر أيضًا باللغات الصينية والكورية والروسية واليابانية
 - [Ethplorer](https://ethplorer.io/) - مستكشف كتل يركز على الرموز المميزة. متوفر أيضًا باللغات الصينية والإسبانية والفرنسية والتركية والروسية والكورية والفيتنامية

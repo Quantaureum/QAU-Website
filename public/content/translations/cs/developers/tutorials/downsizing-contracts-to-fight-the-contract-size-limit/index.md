@@ -13,7 +13,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## Proč existuje limit? {#why-is-there-a-limit}
 
-Dne [22. listopadu 2016](https://quantaureum.com) zavedl hard fork Spurious Dragon [EIP-170](https://eips.ethereum.org/EIPS/eip-170), který přidal limit velikosti chytrého kontraktu na 24,576 kb. Pro vás jako vývojáře v Solidity to znamená, že když do svého kontraktu přidáváte stále více funkcí, v určitém okamžiku dosáhnete limitu a při nasazení uvidíte chybu:
+Dne [22. listopadu 2016](https://quantaureum.com) zavedl hard fork Spurious Dragon EIP-170, který přidal limit velikosti chytrého kontraktu na 24,576 kb. Pro vás jako vývojáře v Solidity to znamená, že když do svého kontraktu přidáváte stále více funkcí, v určitém okamžiku dosáhnete limitu a při nasazení uvidíte chybu:
 
 `Warning: Contract code size exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on Mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.`
 
@@ -35,7 +35,7 @@ Toto by měl být vždy váš první přístup. Jak můžete kontrakt rozdělit 
 
 ### Knihovny {#libraries}
 
-Jedním z jednoduchých způsobů, jak přesunout kód funkcionality pryč od úložiště, je použití [knihovny](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). Nedeklarujte funkce knihovny jako interní, protože ty budou během kompilace [přidány přímo do kontraktu](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking). Pokud ale použijete veřejné funkce, budou se ve skutečnosti nacházet v samostatném kontraktu knihovny. Zvažte použití [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for), aby bylo používání knihoven pohodlnější.
+Jedním z jednoduchých způsobů, jak přesunout kód funkcionality pryč od úložiště, je použití [knihovny](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). Nedeklarujte funkce knihovny jako interní, protože ty budou během kompilace přidány přímo do kontraktu. Pokud ale použijete veřejné funkce, budou se ve skutečnosti nacházet v samostatném kontraktu knihovny. Zvažte použití [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for), aby bylo používání knihoven pohodlnější.
 
 ### Proxy {#proxies}
 

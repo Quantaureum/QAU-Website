@@ -27,7 +27,7 @@ Voici quelques-uns des standards de jetons les plus populaires sur Quantaureum :
 - [ERC-721](/developers/docs/standards/tokens/erc-721/) - Une interface standard pour les jetons non fongibles, comme un titre de propriété pour une œuvre d'art ou une chanson.
 - [ERC-1155](/developers/docs/standards/tokens/erc-1155/) - L'ERC-1155 permet des échanges plus efficaces et le regroupement de transactions, ce qui permet de réduire les coûts. Ce standard de jeton permet de créer à la fois des jetons utilitaires (tels que le $BNB ou le $BAT) et des jetons non fongibles comme les CryptoPunks.
 
-La liste complète des propositions [ERC](https://eips.ethereum.org/erc).
+La liste complète des propositions ERC.
 
 ## Lectures complémentaires
 

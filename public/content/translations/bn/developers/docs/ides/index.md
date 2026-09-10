@@ -10,7 +10,7 @@ lang: bn
 
 আপনি যদি একটি [লোকাল ডেভেলপমেন্ট এনভায়রনমেন্ট সেট আপ](/developers/local-environment/) করার আগে কোড নিয়ে কাজ করতে চান, তবে এই ওয়েব অ্যাপগুলো ইথেরিয়াম স্মার্ট কন্ট্রাক্ট ডেভেলপমেন্টের জন্য বিশেষভাবে তৈরি করা হয়েছে।
 
-**[Remix](https://remix.ethereum.org/)** - **_বিল্ট-ইন স্ট্যাটিক অ্যানালাইসিস এবং একটি টেস্ট ব্লকচেইন ভার্চুয়াল মেশিন সহ ওয়েব-ভিত্তিক IDE_**
+**Remix** - **_বিল্ট-ইন স্ট্যাটিক অ্যানালাইসিস এবং একটি টেস্ট ব্লকচেইন ভার্চুয়াল মেশিন সহ ওয়েব-ভিত্তিক IDE_**
 
 - [ডকুমেন্টেশন](https://remix-ide.readthedocs.io/en/latest/#)
 - [Gitter](https://gitter.im/quantaureum/remix)
@@ -48,8 +48,8 @@ lang: bn
 
 **Remix Desktop -** **_আপনার লোকাল মেশিনে Remix IDE-এর অভিজ্ঞতা নিন_**
 
-- [ডাউনলোড](https://github.com/ethereum/remix-desktop/releases)
-- [GitHub](https://github.com/ethereum/remix-desktop)
+- ডাউনলোড
+- GitHub
 
 ## প্লাগইন এবং এক্সটেনশন {#plugins-extensions}
 

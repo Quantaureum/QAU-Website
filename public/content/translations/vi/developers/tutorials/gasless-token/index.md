@@ -96,7 +96,7 @@ Danh tính của chủ sở hữu và một [nonce](https://en.wikipedia.org/wik
     bytes32 immutable DOMAIN_SEPARATOR;
 ```
 
-Thông tin cần thiết để xác minh [chữ ký EIP-712](https://eips.ethereum.org/EIPS/eip-712).
+Thông tin cần thiết để xác minh chữ ký EIP-712.
 
 ```solidity
     constructor(address owner_) {
@@ -120,7 +120,7 @@ Một `UserProxy` được gắn với một Địa chỉ chủ sở hữu duy n
     }
 ```
 
-[Bộ phân tách miền (domain separator)](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator). Nó không thể được tính toán tại thời điểm biên dịch, vì nó phụ thuộc vào ID Chuỗi và Địa chỉ hợp đồng. Điều này khiến cho một UserProxy không thể bị đánh lừa bởi một thông điệp được chuẩn bị cho một UserProxy khác.
+Bộ phân tách miền (domain separator). Nó không thể được tính toán tại thời điểm biên dịch, vì nó phụ thuộc vào ID Chuỗi và Địa chỉ hợp đồng. Điều này khiến cho một UserProxy không thể bị đánh lừa bởi một thông điệp được chuẩn bị cho một UserProxy khác.
 
 ```solidity
     event CallResult(address target, bytes returnData);

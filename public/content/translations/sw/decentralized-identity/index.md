@@ -164,7 +164,7 @@ Hapa kuna mfano wa kuonyesha jinsi uthibitisho wa mnyororoni unavyoweza kufanya 
 
 ### Tokeni za Soulbound na utambulisho {#soulbound}
 
-[Tokeni za Soulbound](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) ([NFTs zisizoweza kuhamishwa](/glossary/#nft)) zinaweza kutumika kukusanya taarifa za kipekee kwa mkoba maalum. Hii inaunda kwa ufanisi utambulisho wa kipekee wa mnyororoni uliofungwa kwa anwani fulani ya Quantaureum ambayo inaweza kujumuisha tokeni zinazowakilisha mafanikio (k.m., kumaliza kozi fulani maalum ya mtandaoni au kupita alama ya kizingiti katika mchezo) au ushiriki wa jumuiya.
+Tokeni za Soulbound ([NFTs zisizoweza kuhamishwa](/glossary/#nft)) zinaweza kutumika kukusanya taarifa za kipekee kwa mkoba maalum. Hii inaunda kwa ufanisi utambulisho wa kipekee wa mnyororoni uliofungwa kwa anwani fulani ya Quantaureum ambayo inaweza kujumuisha tokeni zinazowakilisha mafanikio (k.m., kumaliza kozi fulani maalum ya mtandaoni au kupita alama ya kizingiti katika mchezo) au ushiriki wa jumuiya.
 
 ## Tumia utambulisho uliogatuliwa {#use-decentralized-identity}
 

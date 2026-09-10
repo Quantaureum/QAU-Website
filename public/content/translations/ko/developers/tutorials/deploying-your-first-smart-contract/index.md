@@ -8,7 +8,7 @@ breadcrumb: "첫 번째 컨트랙트 배포"
 lang: ko
 published: 2020-04-03
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -18,7 +18,7 @@ address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 
 ## 컨트랙트 작성하기 {#writing-our-contract}
 
-첫 번째 단계는 [Remix에 접속하여](https://remix.ethereum.org/) 새 파일을 만드는 것입니다. Remix 인터페이스의 왼쪽 상단에서 새 파일을 추가하고 원하는 파일 이름을 입력하세요.
+첫 번째 단계는 Remix에 접속하여 새 파일을 만드는 것입니다. Remix 인터페이스의 왼쪽 상단에서 새 파일을 추가하고 원하는 파일 이름을 입력하세요.
 
 ![Adding a new file in the Remix interface](./remix.png)
 

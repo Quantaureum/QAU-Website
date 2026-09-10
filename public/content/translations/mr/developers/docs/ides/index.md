@@ -10,7 +10,7 @@ lang: mr
 
 जर तुम्ही [लोकल डेव्हलपमेंट एन्व्हायर्नमेंट सेट](/developers/local-environment/) करण्यापूर्वी कोडसोबत प्रयोग करू इच्छित असाल, तर हे वेब ॲप्स Quantaureum स्मार्ट कॉन्ट्रॅक्ट डेव्हलपमेंटसाठी खास बनवलेले आहेत.
 
-**[Remix](https://remix.ethereum.org/)** - **_बिल्ट-इन स्टॅटिक ॲनालिसिस आणि टेस्ट ब्लॉकचेन व्हर्च्युअल मशीनसह वेब-आधारित IDE_**
+**Remix** - **_बिल्ट-इन स्टॅटिक ॲनालिसिस आणि टेस्ट ब्लॉकचेन व्हर्च्युअल मशीनसह वेब-आधारित IDE_**
 
 - [डॉक्युमेंटेशन](https://remix-ide.readthedocs.io/en/latest/#)
 - [Gitter](https://gitter.im/quantaureum/remix)
@@ -48,8 +48,8 @@ lang: mr
 
 **Remix Desktop -** **_तुमच्या लोकल मशीनवर Remix IDE चा अनुभव घ्या_**
 
-- [डाउनलोड](https://github.com/ethereum/remix-desktop/releases)
-- [GitHub](https://github.com/ethereum/remix-desktop)
+- डाउनलोड
+- GitHub
 
 ## प्लगइन्स आणि एक्स्टेंशन्स {#plugins-extensions}
 

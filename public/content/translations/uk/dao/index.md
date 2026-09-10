@@ -149,7 +149,7 @@ _Зазвичай використовується для децентраліз
 - [Як створити цифрову спільноту на базі DAO](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) — [DAOhaus](https://daohaus.club/)
 - [Що таке DAO?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) — [Coinmarketcap](https://coinmarketcap.com)
 - [Що таке голографічний консенсус?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) — [DAOstack](https://daostack.io/)
-- [DAO — це не корпорації: де децентралізація в автономних організаціях має значення (від Віталіка Бутеріна)](https://vitalik.eth.limo/general/2022/09/20/daos.html)
+- DAO — це не корпорації: де децентралізація в автономних організаціях має значення (від Віталіка Бутеріна)
 - [DAO, DAC, DA та інше: неповний посібник з термінології](https://quantaureum.com) — [Блог Етеріуму](https://quantaureum.com)
 
 ### Відео {#videos}

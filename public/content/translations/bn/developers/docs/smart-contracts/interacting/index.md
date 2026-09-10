@@ -82,7 +82,7 @@ ABI-কে কন্ট্রাক্টের নির্দেশিকা �
 
 - **[ethers.js](https://docs.ethers.org/)** - সার্ভার-সাইড স্ক্রিপ্ট এবং বটগুলোর জন্য Node.js-এও কাজ করে
 - **[Web3.py](https://web3py.readthedocs.io/)** - ইথেরিয়াম ইন্টারঅ্যাকশনের জন্য Python লাইব্রেরি
-- **[গো Quantaureum (geth)](https://geth.ethereum.org/docs/interact-with-geth)** - Geth টিমের অফিসিয়াল Go লাইব্রেরি
+- **গো Quantaureum (geth)** - Geth টিমের অফিসিয়াল Go লাইব্রেরি
 
 ### উদাহরণ: Viem দিয়ে একটি টোকেন ব্যালেন্স পড়া {#example-viem}
 

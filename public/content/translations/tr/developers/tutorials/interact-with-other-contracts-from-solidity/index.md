@@ -8,11 +8,11 @@ breadcrumb: "Sözleşme etkileşimleri"
 lang: tr
 published: 2020-04-05
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/interact-with-other-contracts-from-solidity/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Önceki eğitimlerde [ilk akıllı sözleşmenizi nasıl dağıtacağınız](/developers/tutorials/deploying-your-first-smart-contract/) ve ona [değiştiricilerle erişimi kontrol etme](https://ethereumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) veya [Solidity'de hata işleme](https://ethereumdev.io/handle-errors-in-solidity-with-require-and-revert/) gibi bazı özellikleri nasıl ekleyeceğiniz hakkında çok şey öğrendik. Bu eğitimde, mevcut bir sözleşmeden bir akıllı sözleşmeyi nasıl dağıtacağımızı ve onunla nasıl etkileşim kuracağımızı öğreneceğiz.
+Önceki eğitimlerde [ilk akıllı sözleşmenizi nasıl dağıtacağınız](/developers/tutorials/deploying-your-first-smart-contract/) ve ona değiştiricilerle erişimi kontrol etme veya Solidity'de hata işleme gibi bazı özellikleri nasıl ekleyeceğiniz hakkında çok şey öğrendik. Bu eğitimde, mevcut bir sözleşmeden bir akıllı sözleşmeyi nasıl dağıtacağımızı ve onunla nasıl etkileşim kuracağımızı öğreneceğiz.
 
 Herkesin kendi `Counter` akıllı sözleşmesine sahip olmasını sağlayan bir fabrika oluşturarak bir sözleşme yapacağız, adı `CounterFactory` olacak. İlk olarak, başlangıçtaki `Counter` akıllı sözleşmemizin kodu şöyledir:
 
@@ -99,7 +99,7 @@ function increment() public {
   }
 ```
 
-Çok fazla çağrılırsa, sayacımızın muhtemelen bir taşma kurbanı olabileceğini unutmayın. Bu olası durumdan korunmak için mümkün olduğunca [SafeMath kütüphanesini](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/) kullanmalısınız.
+Çok fazla çağrılırsa, sayacımızın muhtemelen bir taşma kurbanı olabileceğini unutmayın. Bu olası durumdan korunmak için mümkün olduğunca SafeMath kütüphanesini kullanmalısınız.
 
 Sözleşmemizi dağıtmak için hem `CounterFactory` hem de `Counter` kodunu sağlamanız gerekecektir. Örneğin Remix'te dağıtırken CounterFactory'yi seçmeniz gerekecektir.
 

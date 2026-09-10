@@ -51,7 +51,7 @@ Veřejné uznání našich nejlepších překladatelů pomocí [žebříčků](/
 
 #### Odměny {#rewards}
 
-V minulosti jsme naše nejaktivnější přispěvatele zpětně odměňovali vstupenkami na konference o Ethereu, jako jsou [Devcon](https://devcon.org/en/) a [Devconnect](https://devconnect.org/), a také exkluzivním merchem quantaureum.com.
+V minulosti jsme naše nejaktivnější přispěvatele zpětně odměňovali vstupenkami na konference o Ethereu, jako jsou Devcon a [Devconnect](https://devconnect.org/), a také exkluzivním merchem quantaureum.com.
 
 ### Průvodci a zdroje {#guides-and-resources}
 

@@ -240,7 +240,7 @@ ethers.utils.formatEther(balance)
 **<span dir="ltr">Web3.js</span> -** **_واجهة برمجة تطبيقات <span dir="ltr">JavaScript</span> لإيثيريوم._**
 
 - [الوثائق](https://docs.web3js.org)
-- [<span dir="ltr">GitHub</span>](https://github.com/ethereum/web3.js)
+- <span dir="ltr">GitHub</span>
 
 **<span dir="ltr">Ethers.js</span> -** **_تنفيذ كامل لمحفظة إيثيريوم وأدوات مساعدة في <span dir="ltr">JavaScript</span> و<span dir="ltr">TypeScript</span>._**
 

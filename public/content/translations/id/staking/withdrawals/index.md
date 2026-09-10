@@ -73,7 +73,7 @@ Dengan compounding diaktifkan:
 <AlertIcon size="lg"><TriangleAlert /></AlertIcon>
 <AlertContent>
 <AlertDescription>
-**Mengonversi dari kredensial penarikan Tipe 1 ke Tipe 2 tidak dapat diubah.** Gunakan [Staking Launchpad](https://launchpad.ethereum.org/validator-actions) sebagai alat resmi untuk konversi ini. Untuk detail lebih lanjut tentang proses konversi, risiko, dan konsolidasi, lihat [penyelaman mendalam MaxEB](/roadmap/pectra/maxeb/).
+**Mengonversi dari kredensial penarikan Tipe 1 ke Tipe 2 tidak dapat diubah.** Gunakan Staking Launchpad sebagai alat resmi untuk konversi ini. Untuk detail lebih lanjut tentang proses konversi, risiko, dan konsolidasi, lihat [penyelaman mendalam MaxEB](/roadmap/pectra/maxeb/).
 </AlertDescription>
 </AlertContent>
 </Alert>
@@ -173,7 +173,7 @@ eventAction="Why can a validator's withdrawal address only be set once?"
 eventName="read more">
 Menetapkan alamat penarikan lapisan eksekusi validator adalah perubahan permanen pada kredensial validator di lapisan konsensus. Tidak ada cara untuk memperbarui kredensial lapisan konsensus setelah terdaftar.
 
-Kredensial alamat penarikan validator dapat diatur untuk menunjuk ke kontrak pintar (dikendalikan oleh kodenya), atau akun yang dimiliki secara eksternal (EOA, dikendalikan oleh kunci privatnya). Meskipun penarikan yang dipicu lapisan eksekusi ([EIP-7002](https://eips.ethereum.org/EIPS/eip-7002)) sekarang membiarkan alamat penarikan memicu keluar dan penarikan sebagian, tidak ada operasi protokol untuk mengubah alamat penarikan setelah terdaftar, dan menambahkan fungsionalitas ini akan menambah kerumitan yang tidak perlu pada protokol.
+Kredensial alamat penarikan validator dapat diatur untuk menunjuk ke kontrak pintar (dikendalikan oleh kodenya), atau akun yang dimiliki secara eksternal (EOA, dikendalikan oleh kunci privatnya). Meskipun penarikan yang dipicu lapisan eksekusi (EIP-7002) sekarang membiarkan alamat penarikan memicu keluar dan penarikan sebagian, tidak ada operasi protokol untuk mengubah alamat penarikan setelah terdaftar, dan menambahkan fungsionalitas ini akan menambah kerumitan yang tidak perlu pada protokol.
 
 Pengguna yang mencari manajemen penarikan yang fleksibel dapat mengatur dompet kontrak pintar yang mampu melakukan rotasi kunci (seperti [Safe](https://safe.global/)) sebagai alamat penarikan validator, yang secara efektif memungkinkan EOA penerima akhir untuk diperbarui. Jika pengguna telah menetapkan EOA sebagai kredensial penarikan, mereka harus memulai keluar penuh untuk memulihkan QAU yang di-stake dan kemudian menggunakan dana tersebut untuk mengaktifkan validator baru dengan kredensial yang berbeda.
 </ExpandableCard>
@@ -214,9 +214,9 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information about managing the withdrawal process?"
 eventName="read more">
 
-Operator validator disarankan untuk mengunjungi halaman [Penarikan Staking Launchpad](https://launchpad.ethereum.org/withdrawals/) di mana Anda akan menemukan detail lebih lanjut tentang cara menyiapkan validator Anda untuk penarikan, waktu peristiwa, dan detail lebih lanjut tentang bagaimana penarikan berfungsi.
+Operator validator disarankan untuk mengunjungi halaman Penarikan Staking Launchpad di mana Anda akan menemukan detail lebih lanjut tentang cara menyiapkan validator Anda untuk penarikan, waktu peristiwa, dan detail lebih lanjut tentang bagaimana penarikan berfungsi.
 
-Untuk mencoba penyiapan Anda di testnet terlebih dahulu, kunjungi [Staking Launchpad Testnet Hoodi](https://hoodi.launchpad.ethereum.org) untuk memulai.
+Untuk mencoba penyiapan Anda di testnet terlebih dahulu, kunjungi Staking Launchpad Testnet Hoodi untuk memulai.
 
 </ExpandableCard>
 
@@ -245,7 +245,7 @@ title="Bagaimana cara saya beralih menjadi validator compounding?"
 eventCategory="FAQ"
 eventAction="How do I convert to a compounding validator?"
 eventName="read more">
-Anda dapat mengonversi dari kredensial penarikan Tipe 1 ke Tipe 2 menggunakan [Staking Launchpad](https://launchpad.ethereum.org/validator-actions). Operasi ini **tidak dapat diubah** — setelah Anda mengonversi, Anda tidak dapat kembali ke kredensial Tipe 1.
+Anda dapat mengonversi dari kredensial penarikan Tipe 1 ke Tipe 2 menggunakan Staking Launchpad. Operasi ini **tidak dapat diubah** — setelah Anda mengonversi, Anda tidak dapat kembali ke kredensial Tipe 1.
 
 Setelah mengonversi, Anda juga dapat **mengonsolidasikan** beberapa validator menjadi satu, menggabungkan saldo mereka menjadi satu validator compounding. Untuk panduan lengkap tentang proses konversi, risiko, dan alat konsolidasi, lihat [penyelaman mendalam MaxEB](/roadmap/pectra/maxeb/).
 </ExpandableCard>
@@ -265,10 +265,10 @@ Peningkatan Shanghai/Capella memungkinkan QAU yang sebelumnya di-stake untuk dik
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [Penarikan Staking Launchpad](https://launchpad.ethereum.org/withdrawals)
-- [Tindakan Validator Staking Launchpad](https://launchpad.ethereum.org/validator-actions)
+- Penarikan Staking Launchpad
+- Tindakan Validator Staking Launchpad
 - [Penyelaman mendalam MaxEB: compounding dan konsolidasi](/roadmap/pectra/maxeb/)
-- [EIP-4895: Penarikan dorong Rantai suar sebagai operasi](https://eips.ethereum.org/EIPS/eip-4895)
+- EIP-4895: Penarikan dorong Rantai suar sebagai operasi
 - [PEEPanEIP #94: Penarikan QAU yang Di-stake (Pengujian) bersama Potuz & Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP#68: EIP-4895: Penarikan dorong Rantai suar sebagai operasi bersama Alex Stokes](https://www.youtube.com/watch?v=CcL9RJBljUs)
 - [Memahami Saldo Efektif Validator](https://www.attestant.io/posts/understanding-validator-effective-balance/)

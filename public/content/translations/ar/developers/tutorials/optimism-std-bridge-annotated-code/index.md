@@ -46,7 +46,7 @@ lang: ar
    - كان في الأصل من الجسر على طبقة 1 (L1)
 6. يتحقق جسر طبقة 2 (L2) مما إذا كان عقد الرمز المميز <span dir="ltr">ERC-20</span> على طبقة 2 (L2) هو العقد الصحيح:
    - يُبلغ عقد طبقة 2 (L2) أن نظيره في طبقة 1 (L1) هو نفسه الذي جاءت منه الرموز المميزة على طبقة 1 (L1)
-   - يُبلغ عقد طبقة 2 (L2) أنه يدعم الواجهة الصحيحة ([باستخدام <span dir="ltr">ERC-165</span>](https://eips.ethereum.org/EIPS/eip-165)).
+   - يُبلغ عقد طبقة 2 (L2) أنه يدعم الواجهة الصحيحة (باستخدام <span dir="ltr">ERC-165</span>).
 7. إذا كان عقد طبقة 2 (L2) هو العقد الصحيح، فاستدعه لسك العدد المناسب من الرموز المميزة إلى العنوان المناسب. إذا لم يكن كذلك، فابدأ عملية سحب للسماح للمستخدم بالمطالبة بالرموز المميزة على طبقة 1 (L1).
 
 ### تدفق السحب {#withdrawal-flow}
@@ -207,7 +207,6 @@ interface IL1ERC20Bridge {
      * @dev إكمال سحب من طبقة 2 (L2) إلى طبقة 1 (L1)، وإضافة الأموال إلى رصيد المستلم من
      * الرمز المميز ERC-20 على طبقة 1 (L1).
      * سيفشل هذا الاستدعاء إذا لم يتم الانتهاء من السحب المهيأ من طبقة 2 (L2).
-     *
      * @param _l1Token عنوان الرمز المميز على طبقة 1 (L1) لإنهاء السحب (finalizeWithdrawal) له.
      * @param _l2Token عنوان الرمز المميز على طبقة 2 (L2) حيث تم بدء السحب.
      * @param _from عنوان طبقة 2 (L2) الذي بدأ التحويل.
@@ -338,7 +337,6 @@ import { ICrossDomainMessenger } from "./ICrossDomainMessenger.sol";
 /**
  * @title CrossDomainEnabled
  * @dev عقد مساعد للعقود التي تقوم باتصالات عبر النطاقات
- *
  * المترجم المستخدم: محدد بواسطة العقد الوارث
  */
 contract CrossDomainEnabled {
@@ -519,7 +517,7 @@ import { Address } from "@openzeppelin/contracts/utils/Address.sol";
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-يدعم [معيار <span dir="ltr">ERC-20</span>](https://eips.ethereum.org/EIPS/eip-20) طريقتين للعقد للإبلاغ عن الفشل:
+يدعم معيار <span dir="ltr">ERC-20</span> طريقتين للعقد للإبلاغ عن الفشل:
 
 1. التراجع
 2. إرجاع `false`
@@ -532,7 +530,6 @@ import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.s
  * @dev جسر QAU و ERC-20 على طبقة 1 (L1) هو عقد يخزن أموال طبقة 1 (L1) المودعة والرموز المميزة
  * القياسية المستخدمة على طبقة 2 (L2). يقوم بمزامنة جسر طبقة 2 (L2) المقابل، وإبلاغه بالإيداعات
  * والاستماع إليه لمعرفة عمليات السحب المنتهية حديثًا.
- *
  */
 contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
     using SafeERC20 for IERC20;
@@ -770,7 +767,6 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
     /**
      * @dev ينفذ منطق الإيداعات عن طريق إبلاغ عقد الرمز المميز المودع على طبقة 2 (L2)
      * بالإيداع واستدعاء معالج لقفل أموال طبقة 1 (L1). (مثل transferFrom)
-     *
      * @param _l1Token عنوان ERC-20 على طبقة 1 (L1) الذي نقوم بإيداعه
      * @param _l2Token عنوان ERC-20 على طبقة 2 (L2) المقابل لـ طبقة 1 (L1)
      * @param _from الحساب الذي سيتم سحب الإيداع منه على طبقة 1 (L1)
@@ -955,14 +951,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 لا تتضمن [واجهة <span dir="ltr">ERC-20</span> القياسية](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) الدالتين `mint` و`burn`.
-هذه الطرق غير مطلوبة بواسطة [معيار <span dir="ltr">ERC-20</span>](https://eips.ethereum.org/EIPS/eip-20)، والذي يترك آليات إنشاء وتدمير الرموز المميزة غير محددة.
+هذه الطرق غير مطلوبة بواسطة معيار <span dir="ltr">ERC-20</span>، والذي يترك آليات إنشاء وتدمير الرموز المميزة غير محددة.
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 تُستخدم [واجهة <span dir="ltr">ERC-165</span>](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol) لتحديد الدوال التي يوفرها العقد.
-[يمكنك قراءة المعيار هنا](https://eips.ethereum.org/EIPS/eip-165).
+يمكنك قراءة المعيار هنا.
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -1051,7 +1047,7 @@ contract L2StandardERC20 is IL2StandardERC20, ERC20 {
     }
 ```
 
-هذه هي الطريقة التي يعمل بها [<span dir="ltr">ERC-165</span>](https://eips.ethereum.org/EIPS/eip-165).
+هذه هي الطريقة التي يعمل بها <span dir="ltr">ERC-165</span>.
 كل واجهة عبارة عن عدد من الدوال المدعومة، ويتم تحديدها على أنها [أو الحصرية (XOR)](https://en.wikipedia.org/wiki/Exclusive_or) لـ [محددات دوال <span dir="ltr">ABI</span>](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector) لتلك الدوال.
 
 يستخدم جسر طبقة 2 (L2) <span dir="ltr">ERC-165</span> كفحص سلامة للتأكد من أن عقد <span dir="ltr">ERC-20</span> الذي يرسل إليه الأصول هو `IL2StandardERC20`.

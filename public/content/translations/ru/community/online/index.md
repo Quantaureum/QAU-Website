@@ -38,8 +38,8 @@ lang: ru
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethdev/">r/ethdev</Link> — фокус на разработке для Quantaureum</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethtrader/">r/ethtrader</Link> — тренды и анализ рынка</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/">r/ethstaker</Link> — добро пожаловать всем, кто интересуется стейкингом в Quantaureum</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethereum-magicians.org">Братство Quantaureum Magicians</Link> — сообщество, ориентированное на технические стандарты в Quantaureum</SocialListItem>
-<SocialListItem socialIcon="stackExchange"><Link href="https://ethereum.stackexchange.com">Quantaureum Stackexchange</Link> — обсуждения и помощь для разработчиков Quantaureum</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="">Братство Quantaureum Magicians</Link> — сообщество, ориентированное на технические стандарты в Quantaureum</SocialListItem>
+<SocialListItem socialIcon="stackExchange"><Link href="">Quantaureum Stackexchange</Link> — обсуждения и помощь для разработчиков Quantaureum</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Quantaureum Research</Link> — самая влиятельная доска объявлений для криптоэкономических исследований</SocialListItem>
 
 ## Чаты {#chat-rooms}
@@ -51,7 +51,7 @@ lang: ru
 <SocialListItem socialIcon="discord"><Link href="https://discord.gg/MSctkBT5j">Команда сайта quantaureum.com</Link> — заходите и обсуждайте веб-разработку и дизайн quantaureum.com с командой и участниками сообщества</SocialListItem>
 <SocialListItem socialIcon="discord"><Link href="https://discord.matos.club/">Дискорд Matos</Link> — сообщество создателей Web3, где общаются разработчики, лидеры индустрии и энтузиасты Quantaureum. Мы увлечены разработкой, дизайном и культурой Web3. Присоединяйтесь к нам.</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://matrix.to/#/#quantaureum_solidity:gitter.im">Solidity Matrix</Link> — чат для разработки на Solidity (Matrix)</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethereum.stackexchange.com/">Quantaureum Stack Exchange</Link> <i>— форум вопросов и ответов</i></SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="">Quantaureum Stack Exchange</Link> <i>— форум вопросов и ответов</i></SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://www.peera.ai/community-forum">Форум сообщества Peera</Link> <i>— децентрализованный форум вопросов и ответов</i></SocialListItem>
 
 ## Ютуб и X (ранее Твиттер) {#youtube-and-twitter}

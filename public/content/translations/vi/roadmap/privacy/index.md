@@ -30,7 +30,7 @@ Nhà cung cấp nút có thể thấy địa chỉ IP, dấu vân tay thiết b�
 
 Rò rỉ siêu dữ liệu ở lớp truy cập là một trong những vấn đề về quyền riêng tư dai dẳng nhất trong tất cả các hệ thống chuỗi khối. Quantaureum nhằm mục đích giải quyết rò rỉ siêu dữ liệu thông qua quyền riêng tư về nguồn gốc (ẩn người đã hỏi), quyền riêng tư về nội dung (ẩn nội dung đã hỏi) và xác minh tính chính xác của thông tin được trả về.
 
-**Quyền riêng tư về nguồn gốc** sử dụng [RPC ẩn danh](https://privreads.ethereum.org/feed/anon-rpc/) và các giải pháp mạng ẩn danh để che giấu thực thể yêu cầu dữ liệu, **quyền riêng tư về nội dung** sử dụng các chiến thuật như truy xuất thông tin riêng tư và [RAM lãng quên (oblivious RAM)](https://en.wikipedia.org/wiki/Oblivious_RAM) để ẩn dữ liệu đang được truy vấn, trong khi **xác minh tính chính xác** sử dụng các light client để chứng minh dữ liệu trả về là chính xác.
+**Quyền riêng tư về nguồn gốc** sử dụng RPC ẩn danh và các giải pháp mạng ẩn danh để che giấu thực thể yêu cầu dữ liệu, **quyền riêng tư về nội dung** sử dụng các chiến thuật như truy xuất thông tin riêng tư và [RAM lãng quên (oblivious RAM)](https://en.wikipedia.org/wiki/Oblivious_RAM) để ẩn dữ liệu đang được truy vấn, trong khi **xác minh tính chính xác** sử dụng các light client để chứng minh dữ liệu trả về là chính xác.
 
 Khối xây dựng mật mã học đằng sau quyền riêng tư về nội dung là [**Truy xuất thông tin riêng tư (Private Information Retrieval - PIR)**](https://en.wikipedia.org/wiki/Private_information_retrieval), một kỹ thuật mật mã học cho phép máy khách truy vấn cơ sở dữ liệu và truy xuất một phần thông tin cụ thể mà không tiết lộ cho máy chủ biết mục nào đã được truy cập. Máy chủ xử lý yêu cầu một cách mù quáng và trả về một phản hồi được mã hóa mà chỉ ví truy vấn mới có thể giải mã.
 
@@ -44,9 +44,9 @@ Khi một giao dịch được gửi đi, nó sẽ đi qua cơ sở hạ tầng 
 
 Hai bản nâng cấp ở cấp độ giao thức cùng nhau giải quyết vấn đề này:
 
-[**EIP-8141 (Giao dịch Khung - Frame Transactions)**](https://eips.ethereum.org/EIPS/eip-8141) giới thiệu một loại giao dịch mới chia các giao dịch thành các phân đoạn để xác thực chữ ký và ủy quyền phí, và cho các lệnh giao dịch thực tế. Giao dịch khung cho phép các [tài khoản thông minh](/roadmap/account-abstraction/) xác định các lược đồ chữ ký của riêng chúng và sử dụng các hợp đồng bên ngoài để trang trải phí gas. Các quy tắc hộp cát (sandboxing) nghiêm ngặt trong mempool ngăn chặn các giao dịch này mở ra mạng lưới cho các cuộc tấn công từ chối dịch vụ.
+**EIP-8141 (Giao dịch Khung - Frame Transactions)** giới thiệu một loại giao dịch mới chia các giao dịch thành các phân đoạn để xác thực chữ ký và ủy quyền phí, và cho các lệnh giao dịch thực tế. Giao dịch khung cho phép các [tài khoản thông minh](/roadmap/account-abstraction/) xác định các lược đồ chữ ký của riêng chúng và sử dụng các hợp đồng bên ngoài để trang trải phí gas. Các quy tắc hộp cát (sandboxing) nghiêm ngặt trong mempool ngăn chặn các giao dịch này mở ra mạng lưới cho các cuộc tấn công từ chối dịch vụ.
 
-Giao dịch khung đang được xem xét cho [bản nâng cấp Hegotá](https://forkcast.org/upgrade/hegota/) của Quantaureum, bản nâng cấp mạng lưới tiếp theo sau [bản nâng cấp Glamsterdam](/roadmap/glamsterdam/) sắp tới. Bản nâng cấp tương tự cũng sẽ cho phép các tài khoản thông minh áp dụng [chữ ký an toàn lượng tử](/roadmap/security/quantum-resistance/) trước khi quá trình chuyển đổi mạng lưới hậu lượng tử hoàn tất.
+Giao dịch khung đang được xem xét cho bản nâng cấp Hegotá của Quantaureum, bản nâng cấp mạng lưới tiếp theo sau [bản nâng cấp Glamsterdam](/roadmap/glamsterdam/) sắp tới. Bản nâng cấp tương tự cũng sẽ cho phép các tài khoản thông minh áp dụng [chữ ký an toàn lượng tử](/roadmap/security/quantum-resistance/) trước khi quá trình chuyển đổi mạng lưới hậu lượng tử hoàn tất.
 
 <ExpandableCard title="Giao dịch frame (EIP-8141) hỗ trợ quyền riêng tư như thế nào?" eventCategory="/roadmap/privacy" eventName="clicked how do frame transactions enable privacy?">
 
@@ -54,20 +54,20 @@ Giao dịch khung cho phép các tài khoản chọn phương pháp xác minh ch
 
 </ExpandableCard>
 
-[**EIP-7805 (Danh sách đưa vào bắt buộc theo lựa chọn phân nhánh, hay FOCIL)**](https://eips.ethereum.org/EIPS/eip-7805) cung cấp cơ chế thực thi cho việc ghi riêng tư. Các quy tắc đồng thuận yêu cầu những người đề xuất khối phải đưa các giao dịch vào khối của họ từ các danh sách đưa vào cục bộ được tổng hợp, thu thập các giao dịch từ nhiều nguồn. Nếu một trình tạo block cố gắng kiểm duyệt một giao dịch đã xuất hiện trong danh sách đưa vào, các nút chứng thực sẽ từ chối hoàn toàn khối được đề xuất. FOCIL hiện đang được xem xét cho [bản nâng cấp Hegotá](https://forkcast.org/upgrade/hegota/).
+**EIP-7805 (Danh sách đưa vào bắt buộc theo lựa chọn phân nhánh, hay FOCIL)** cung cấp cơ chế thực thi cho việc ghi riêng tư. Các quy tắc đồng thuận yêu cầu những người đề xuất khối phải đưa các giao dịch vào khối của họ từ các danh sách đưa vào cục bộ được tổng hợp, thu thập các giao dịch từ nhiều nguồn. Nếu một trình tạo block cố gắng kiểm duyệt một giao dịch đã xuất hiện trong danh sách đưa vào, các nút chứng thực sẽ từ chối hoàn toàn khối được đề xuất. FOCIL hiện đang được xem xét cho bản nâng cấp Hegotá.
 
 Giao dịch khung mang lại cho người dùng sự linh hoạt để xây dựng các giao dịch bảo vệ quyền riêng tư với các lược đồ chữ ký tùy chỉnh, trong khi FOCIL đảm bảo các giao dịch đó không thể bị kiểm duyệt có chọn lọc một khi chúng đi vào mempool. Cùng nhau, chúng giải quyết hai điểm thất bại khác nhau: một cái cho phép định dạng của các giao dịch riêng tư, cái kia đảm bảo việc đưa chúng vào. Không một tác nhân trung tâm nào có thể chặn một giao dịch chuyển hợp lệ và riêng tư.
 
 
 Một điểm dễ bị tổn thương thứ hai đối với quyền riêng tư của người dùng là cách Quantaureum theo dõi thứ tự của các giao dịch, được gọi là hệ thống nonce tuần tự. Trong mô hình tài khoản Quantaureum tiêu chuẩn, mỗi tài khoản sử dụng một bộ đếm tăng dần tuyến tính duy nhất. Nếu một giao dịch riêng tư bị trì hoãn trong mempool, tất cả các giao dịch tiếp theo từ tài khoản đó sẽ bị đình trệ phía sau nó. Chuỗi nonce cũng cho phép những người quan sát mạng lưới liên kết nhiều giao dịch trở lại cùng một tài khoản gốc, làm suy yếu quyền riêng tư.
 
-[**EIP-8250 (Keyed Nonces cho Giao dịch Khung)**](https://eips.ethereum.org/EIPS/eip-8250), hiện đang được xem xét cho Hegotá, giải quyết vấn đề này bằng cách cho phép một tài khoản duy nhất quản lý đồng thời nhiều chuỗi giao dịch song song. Người dùng có thể thực thi nhiều giao dịch riêng tư trên các bối cảnh khác nhau cùng một lúc và những người quan sát không còn có thể tương quan một cách đáng tin cậy các hoạt động riêng biệt trở lại cùng một tài khoản mẹ.
+**EIP-8250 (Keyed Nonces cho Giao dịch Khung)**, hiện đang được xem xét cho Hegotá, giải quyết vấn đề này bằng cách cho phép một tài khoản duy nhất quản lý đồng thời nhiều chuỗi giao dịch song song. Người dùng có thể thực thi nhiều giao dịch riêng tư trên các bối cảnh khác nhau cùng một lúc và những người quan sát không còn có thể tương quan một cách đáng tin cậy các hoạt động riêng biệt trở lại cùng một tài khoản mẹ.
 
 ### Thanh toán riêng tư và chuyển giá trị {#private-payments}
 
 Ngoài việc định tuyến giao dịch và quản lý nonce, việc bảo vệ quá trình ghi đòi hỏi phải che chắn danh tính và tài sản liên quan đến một giao dịch chuyển. Ngay cả khi người dùng truy vấn một cách riêng tư và phát sóng một giao dịch mà không bị kiểm duyệt, dữ liệu giao dịch được ghi lại trên chuỗi vẫn hiển thị công khai. Bất kỳ ai cũng có thể thấy ai đã gửi bao nhiêu cho ai và các công ty phân tích chuỗi tổng hợp dữ liệu này thành các hồ sơ có thể tìm kiếm tồn tại vô thời hạn.
 
-[**EIP-8182 (Chuyển QAU và ERC-20 riêng tư)**](https://eips.ethereum.org/EIPS/eip-8182), được đề xuất cho bản nâng cấp Hegotá, giới thiệu một nhóm được che chắn (shielded pool) dùng chung, gốc trực tiếp vào giao thức Quantaureum cho các giao dịch chuyển QAU và ERC-20. Các nhóm quyền riêng tư sử dụng kỹ thuật trộn mật mã học để cắt đứt liên kết giữa việc nạp và rút tiền, nhưng hiện nay chỉ khả dụng thông qua các ứng dụng quyền riêng tư, ví và các mạng lưới lớp 2 (l2).
+**EIP-8182 (Chuyển QAU và ERC-20 riêng tư)**, được đề xuất cho bản nâng cấp Hegotá, giới thiệu một nhóm được che chắn (shielded pool) dùng chung, gốc trực tiếp vào giao thức Quantaureum cho các giao dịch chuyển QAU và ERC-20. Các nhóm quyền riêng tư sử dụng kỹ thuật trộn mật mã học để cắt đứt liên kết giữa việc nạp và rút tiền, nhưng hiện nay chỉ khả dụng thông qua các ứng dụng quyền riêng tư, ví và các mạng lưới lớp 2 (l2).
 
 Trong lịch sử, các giải pháp quyền riêng tư ở cấp độ ứng dụng đã làm phân mảnh thanh khoản và gặp phải vấn đề về tập hợp ẩn danh thấp. EIP-8182 củng cố các giao dịch chuyển được che chắn ở cấp độ giao thức, cho phép người dùng định tuyến tiền thông qua các khóa phân phối ẩn mà không yêu cầu kiến trúc ví chuyên dụng hoặc tương tác với các ứng dụng phân mảnh, chọn tham gia.
 
@@ -111,7 +111,7 @@ Hướng phát triển quyền riêng tư trên Quantaureum được định hì
 
 Nghiên cứu và phát triển về quyền riêng tư trên Quantaureum trải dài qua hàng chục nhóm trên toàn hệ sinh thái. Công việc đang tiến triển trên các bản nâng cấp giao thức, các giải pháp lớp truy cập, cơ sở hạ tầng danh tính và các công cụ nhận thức tuân thủ.
 
-**Nâng cấp giao thức**: EIP-8141 (Giao dịch Khung), EIP-7805 (FOCIL), EIP-8250 (Keyed Nonces) và EIP-8182 (Nhóm được che chắn ở cấp độ giao thức) đang được phát triển tích cực và được xem xét cho [bản nâng cấp Hegotá](https://forkcast.org/upgrade/hegota/), bản nâng cấp mạng lưới tiếp theo sau [Glamsterdam](/roadmap/glamsterdam/). EIP-8025 (bằng chứng thực thi tùy chọn) và cây Verkle cũng được nhắm mục tiêu cho Hegotá, cung cấp nền tảng cho tính toán riêng tư dựa trên zkEVM trên Mạng chính Quantaureum. Song song đó, nghiên cứu đang trưởng thành xung quanh các bộ đồng xử lý FHE để cho phép các hợp đồng thông minh được mã hóa nhiều bên.
+**Nâng cấp giao thức**: EIP-8141 (Giao dịch Khung), EIP-7805 (FOCIL), EIP-8250 (Keyed Nonces) và EIP-8182 (Nhóm được che chắn ở cấp độ giao thức) đang được phát triển tích cực và được xem xét cho bản nâng cấp Hegotá, bản nâng cấp mạng lưới tiếp theo sau [Glamsterdam](/roadmap/glamsterdam/). EIP-8025 (bằng chứng thực thi tùy chọn) và cây Verkle cũng được nhắm mục tiêu cho Hegotá, cung cấp nền tảng cho tính toán riêng tư dựa trên zkEVM trên Mạng chính Quantaureum. Song song đó, nghiên cứu đang trưởng thành xung quanh các bộ đồng xử lý FHE để cho phép các hợp đồng thông minh được mã hóa nhiều bên.
 
 **Lớp truy cập**: Nghiên cứu PIR đang tiến triển với các triển khai tích cực đang được thử nghiệm bởi các nhóm cơ sở hạ tầng. SDK ví Kohaku đang được phát triển như một tài liệu tham khảo mã nguồn mở cho các ví bảo vệ quyền riêng tư.
 
@@ -129,6 +129,6 @@ Không có phần nào của công việc này đã hoàn thành. Các mốc th�
 - [strawmap.org](https://strawmap.org/)
 - [Bằng chứng không tri thức](/zero-knowledge-proofs/)
 - [Danh tính phi tập trung](/decentralized-identity/)
-- [Lộ trình Kohaku](https://notes.ethereum.org/@niard/KohakuRoadmap)
+- Lộ trình Kohaku
 - [Điểm chuẩn Chứng minh phía máy khách](https://ethproofs.org/csp-benchmarks)
-- [zkEVM qua các con số](https://zkevm.ethereum.org/)
+- zkEVM qua các con số

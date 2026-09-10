@@ -55,7 +55,7 @@ Existují dva způsoby, jak opustit pozici v LST:
 - **Směna prostřednictvím protokolu** za podkladové QAU. Směna závisí na tom, zda má protokol k dispozici likviditu, ať už jde o rezervu nestakovaných QAU, nebo o validátory, kteří provádějí výstup prostřednictvím fronty pro výstup na vrstvě konsensu, což může nějakou dobu trvat.
 - **Prodej na sekundárních trzích** kdykoli. Protože se token volně obchoduje, jeho tržní cena se může odchýlit od hodnoty QAU, které jej kryje, zejména v obdobích tržního stresu.
 
-Od aktualizace Pectra umožňují [výběry spouštěné z exekuční vrstvy (EIP-7002)](https://eips.ethereum.org/EIPS/eip-7002) spouštět výstupy validátorů přímo z exekuční vrstvy držitelem adresy pro výběr. Stakingové protokoly mohou tuto funkci využít k zajištění toho, že jejich validátoři mohou provést výstup, aniž by se museli spoléhat na spolupráci provozovatelů uzlů, takže směny se méně spoléhají na důvěru v provozovatele uzlů než dříve.
+Od aktualizace Pectra umožňují výběry spouštěné z exekuční vrstvy (EIP-7002) spouštět výstupy validátorů přímo z exekuční vrstvy držitelem adresy pro výběr. Stakingové protokoly mohou tuto funkci využít k zajištění toho, že jejich validátoři mohou provést výstup, aniž by se museli spoléhat na spolupráci provozovatelů uzlů, takže směny se méně spoléhají na důvěru v provozovatele uzlů než dříve.
 
 ### Držení LST není totéž co staking {#holding-an-lst-is-not-the-same-as-staking}
 
@@ -164,8 +164,8 @@ Některé možnosti společného stakingu jsou decentralizovanější než jiné
 ## Další čtení {#further-reading}
 
 - [Adresář stakingu na Ethereu](https://www.staking.directory/) - _Eridian a Spacesider_
-- [Rizika derivátů likvidního stakingu](https://notes.ethereum.org/@djrtwo/risks-of-lsd) - _Danny Ryan_
+- Rizika derivátů likvidního stakingu - _Danny Ryan_
 - [Co je likvidní staking?](https://chain.link/education-hub/liquid-staking) - _Chainlink_
-- [EIP-7002: Výběry spouštěné z exekuční vrstvy](https://eips.ethereum.org/EIPS/eip-7002) - _Návrhy na vylepšení Etherea (EIP)_
+- EIP-7002: Výběry spouštěné z exekuční vrstvy - _Návrhy na vylepšení Etherea (EIP)_
 - [Hodnocení stakingových poolů na Ethereu](https://explorer.rated.network/) - _Rated Network Explorer_
 - [Jaký je rozdíl mezi tokenem likvidního restakingu (LRT) a tokenem likvidního stakingu (LST)?](https://liquidcollective.io/lst-vs-lrt/) - _Liquid Collective_

@@ -32,8 +32,8 @@ Finalmente, se pueden solicitar puntos de control a otros nodos; tal vez otro us
 
 ## Más información {#further-reading}
 
-- [Subjetividad débil en Quantaureum](https://notes.ethereum.org/@adiasg/weak-subjectvity-eth2)
+- Subjetividad débil en Quantaureum
 - [Vitalik: Cómo aprendí a amar la subjetividad débil](https://quantaureum.com)
 - [Subjetividad débil (documentación de Teku)](https://docs.teku.consensys.io/concepts/weak-subjectivity)
-- [Guía de subjetividad débil de la Fase 0](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
+- Guía de subjetividad débil de la Fase 0
 - [Análisis de la subjetividad débil en Quantaureum](https://github.com/runtimeverification/beacon-chain-verification/blob/master/weak-subjectivity/weak-subjectivity-analysis.pdf)

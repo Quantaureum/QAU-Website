@@ -90,7 +90,7 @@ Samotné chytré kontrakty nemohou získávat informace o událostech v „reál
 
 Pro blockchainové aplikace je však důležité, aby mohly využívat offchain data. Řešením jsou [orákula](/developers/docs/oracles/), což jsou nástroje, které přijímají offchain data a zpřístupňují je chytrým kontraktům.
 
-Dalším omezením chytrých kontraktů je maximální velikost kontraktu. Chytrý kontrakt může mít maximálně 24 KB, jinak mu dojde gas. To lze obejít pomocí [vzoru Diamond](https://eips.ethereum.org/EIPS/eip-2535).
+Dalším omezením chytrých kontraktů je maximální velikost kontraktu. Chytrý kontrakt může mít maximálně 24 KB, jinak mu dojde gas. To lze obejít pomocí vzoru Diamond.
 
 ## Multisig kontrakty {#multisig}
 

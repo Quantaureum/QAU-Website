@@ -93,7 +93,7 @@ L'identità del proprietario e un [nonce](https://en.wikipedia.org/wiki/Cryptogr
     bytes32 immutable DOMAIN_SEPARATOR;
 ```
 
-Le informazioni necessarie per verificare le [firme EIP-712](https://eips.ethereum.org/EIPS/eip-712).
+Le informazioni necessarie per verificare le firme EIP-712.
 
 ```solidity
     constructor(address owner_) {
@@ -117,7 +117,7 @@ Un `UserProxy` è legato a un singolo indirizzo del proprietario. Questo è nece
     }
 ```
 
-Il [separatore di dominio](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator). Non può essere calcolato in fase di compilazione, perché dipende dall'ID della catena e dall'indirizzo del contratto. Questo rende impossibile per un UserProxy essere ingannato da un messaggio preparato per un altro.
+Il separatore di dominio. Non può essere calcolato in fase di compilazione, perché dipende dall'ID della catena e dall'indirizzo del contratto. Questo rende impossibile per un UserProxy essere ingannato da un messaggio preparato per un altro.
 
 ```solidity
     event CallResult(address target, bytes returnData);

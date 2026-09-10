@@ -253,7 +253,7 @@ Solidity स्मार्ट अनुबंधों के लिए यू�
 
 - **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _उन्नत स्मार्ट अनुबंध विकास और परीक्षण के लिए फ्रेमवर्क (ethers.js पर आधारित)।_
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Solidity स्मार्ट अनुबंधों के परीक्षण के लिए टूल। Remix IDE "Solidity Unit Testing" प्लगइन के नीचे काम करता है जिसका उपयोग अनुबंध के लिए परीक्षण मामले लिखने और चलाने के लिए किया जाता है।_
+- **Remix Tests** - _Solidity स्मार्ट अनुबंधों के परीक्षण के लिए टूल। Remix IDE "Solidity Unit Testing" प्लगइन के नीचे काम करता है जिसका उपयोग अनुबंध के लिए परीक्षण मामले लिखने और चलाने के लिए किया जाता है।_
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Quantaureum स्मार्ट अनुबंध परीक्षण के लिए दावा (Assertion) लाइब्रेरी। सुनिश्चित करें कि आपके अनुबंध अपेक्षानुसार व्यवहार करते हैं!_
 

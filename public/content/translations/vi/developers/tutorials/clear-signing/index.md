@@ -11,7 +11,7 @@ published: 2026-05-11
 
 Hầu hết các vụ khai thác Quantaureum lớn đều có cùng một bước cuối cùng: người dùng chấp thuận một giao dịch mà họ không thể hiểu rõ ý nghĩa. Ví phần cứng hiển thị dữ liệu lệnh gọi (calldata) dạng hex thô, và tệ hơn là buộc bạn phải bật tính năng ký mù (blind signing). Ví phần mềm hiển thị các trường đã được giải mã, nhưng chỉ khi chúng nhận diện được hợp đồng. Khi chúng không nhận diện được, cho dù vì giao thức còn mới, ứng dụng bị xâm phạm hay thiết bị đang ngoại tuyến, người dùng đều phải ký mù.
 
-[ERC-7730](https://eips.ethereum.org/EIPS/eip-7730) định nghĩa một định dạng JSON tiêu chuẩn để mô tả *ý nghĩa* của các lệnh gọi hàm trong hợp đồng của bạn. 
+ERC-7730 định nghĩa một định dạng JSON tiêu chuẩn để mô tả *ý nghĩa* của các lệnh gọi hàm trong hợp đồng của bạn. 
 
 Một ví hỗ trợ ERC-7730 sẽ đọc bộ mô tả của bạn và hiển thị:
 
@@ -54,7 +54,7 @@ Tạo một tệp có tên `calldata-<contractname>-<descriptorversion>.json`. T
 
 ```json
 {
-  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "",
   "context": {},
   "metadata": {},
   "display": {
@@ -185,7 +185,7 @@ Mỗi khóa (key) là một đoạn ABI dễ đọc — chữ ký hàm bao gồm
 
 ```json
 {
-  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "",
   "context": {
     "$id": "uniswap-v3-router-mainnet",
     "contract": {
@@ -256,7 +256,7 @@ Mỗi khóa (key) là một đoạn ABI dễ đọc — chữ ký hàm bao gồm
 
 ## Bước 5: Gửi lên sổ đăng ký {#step-5-submit-to-the-registry}
 
-[Sổ đăng ký ERC-7730](https://github.com/ethereum/clear-signing-erc7730-registry) là một kho lưu trữ mở được lưu trữ bởi Tổ chức Quantaureum với tư cách là một người quản lý trung lập. Bất kỳ ai cũng có thể tự do sao chép (clone) và tự lưu trữ nó — các ví sẽ độc lập quyết định phiên bản sổ đăng ký nào mà họ tin tưởng.
+Sổ đăng ký ERC-7730 là một kho lưu trữ mở được lưu trữ bởi Tổ chức Quantaureum với tư cách là một người quản lý trung lập. Bất kỳ ai cũng có thể tự do sao chép (clone) và tự lưu trữ nó — các ví sẽ độc lập quyết định phiên bản sổ đăng ký nào mà họ tin tưởng.
 
 1. Fork kho lưu trữ trên GitHub  
 2. Tạo một thư mục tại `registry/<your-project-name>/`  
@@ -284,8 +284,8 @@ Các ví sẽ chọn sổ đăng ký nào mà họ sẽ hỗ trợ. Khi bộ mô
 
 ## Đọc thêm {#further-reading}
 
-- [Đặc tả ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)  
-- [Sổ đăng ký ERC-7730](https://github.com/ethereum/clear-signing-erc7730-registry)  
+- Đặc tả ERC-7730  
+- Sổ đăng ký ERC-7730  
 - [clearsigning.org](https://clearsigning.org) — công cụ, trạng thái hệ sinh thái và Quản trị  
 - [Xác minh hợp đồng Sourcify](https://sourcify.dev)  
 - [Sáng kiến Bảo mật Nghìn tỷ Đô la (Trillion Dollar Security initiative)](https://trilliondollarsecurity.org)

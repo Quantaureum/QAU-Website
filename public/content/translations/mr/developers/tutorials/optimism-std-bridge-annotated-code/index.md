@@ -49,7 +49,7 @@ lang: mr
    - मूळतः L1 वरील सेतूमधून आला होता
 6. L2 सेतू तपासतो की L2 वरील ERC-20 टोकन कॉन्ट्रॅक्ट योग्य आहे की नाही:
    - L2 कॉन्ट्रॅक्ट अहवाल देतो की त्याचा L1 समकक्ष तोच आहे ज्यातून L1 वर टोकन आले होते
-   - L2 कॉन्ट्रॅक्ट अहवाल देतो की तो योग्य इंटरफेसचे समर्थन करतो ([ERC-165 वापरून](https://eips.ethereum.org/EIPS/eip-165)).
+   - L2 कॉन्ट्रॅक्ट अहवाल देतो की तो योग्य इंटरफेसचे समर्थन करतो (ERC-165 वापरून).
 7. जर L2 कॉन्ट्रॅक्ट योग्य असेल, तर योग्य पत्त्यावर योग्य संख्येने टोकन मिंट करण्यासाठी त्याला कॉल करा. नसल्यास, वापरकर्त्याला L1 वर टोकनचा दावा करण्याची अनुमती देण्यासाठी रक्कम काढण्याची प्रक्रिया सुरू करा.
 
 ### रक्कम काढण्याचा प्रवाह {#withdrawal-flow}
@@ -205,7 +205,6 @@ L1 सेतूच्या बाबतीत, याचा अर्थ जम
     /**
      * @dev स्तर २ (l2) वरून स्तर १ (l1) मध्ये रक्कम काढणे पूर्ण करा, आणि प्राप्तकर्त्याच्या स्तर १ (l1) ERC-20 टोकन शिल्लकीमध्ये निधी जमा करा.
      * जर स्तर २ (l2) वरून सुरू केलेले रक्कम काढणे अंतिम झाले नसेल तर हा कॉल अयशस्वी होईल.
-     *
      * @param _l1Token finalizeWithdrawal करण्यासाठी स्तर १ (l1) टोकनचा पत्ता.
      * @param _l2Token स्तर २ (l2) टोकनचा पत्ता जिथे रक्कम काढणे सुरू केले गेले.
      * @param _from हस्तांतरण सुरू करणारा स्तर २ (l2) पत्ता.
@@ -332,7 +331,6 @@ import { ICrossDomainMessenger } from "./ICrossDomainMessenger.sol";
 /**
  * @title CrossDomainEnabled
  * @dev क्रॉस-डोमेन संप्रेषण करणाऱ्या कॉन्ट्रॅक्ट्ससाठी मदतनीस कॉन्ट्रॅक्ट
- *
  * वापरलेला कंपायलर: इनहेरिटिंग कॉन्ट्रॅक्टद्वारे परिभाषित
  */
 contract CrossDomainEnabled {
@@ -510,7 +508,7 @@ import { Address } from "@openzeppelin/contracts/utils/Address.sol";
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[ERC-20 स्टँडर्ड](https://eips.ethereum.org/EIPS/eip-20) कॉन्ट्रॅक्टला अपयश नोंदवण्यासाठी दोन मार्गांचे समर्थन करते:
+ERC-20 स्टँडर्ड कॉन्ट्रॅक्टला अपयश नोंदवण्यासाठी दोन मार्गांचे समर्थन करते:
 
 1. पूर्ववत करणे
 2. `false` परत करणे
@@ -521,7 +519,6 @@ import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.s
 /**
  * @title L1StandardBridge
  * @dev स्तर १ (l1) QAU आणि ERC-20 सेतू हे एक कॉन्ट्रॅक्ट आहे जे जमा केलेले स्तर १ (l1) निधी आणि स्तर २ (l2) वर वापरात असलेले मानक टोकन संचयित करते. हे संबंधित स्तर २ (l2) सेतू समक्रमित करते, त्याला ठेवींची माहिती देते आणि नव्याने अंतिम झालेल्या रक्कम काढणे यासाठी ऐकते.
- *
  */
 contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
     using SafeERC20 for IERC20;
@@ -754,7 +751,6 @@ Solidity फंक्शन [`abi.encodeWithSelector`](https://docs.soliditylang
 ```solidity
     /**
      * @dev स्तर २ (l2) जमा केलेल्या टोकन कॉन्ट्रॅक्टला ठेवीची माहिती देऊन आणि स्तर १ (l1) निधी लॉक करण्यासाठी हँडलरला कॉल करून ठेवींसाठी लॉजिक करते. (उदा., transferFrom)
-     *
      * @param _l1Token आपण जमा करत असलेल्या स्तर १ (l1) ERC-20 चा पत्ता
      * @param _l2Token स्तर १ (l1) च्या संबंधित स्तर २ (l2) ERC-20 चा पत्ता
      * @param _from स्तर १ (l1) वरून ठेव काढण्यासाठी खाते
@@ -936,14 +932,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [स्टँडर्ड ERC-20 इंटरफेसमध्ये](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) `mint` आणि `burn` फंक्शन्स समाविष्ट नाहीत.
-त्या पद्धती [ERC-20 स्टँडर्डद्वारे](https://eips.ethereum.org/EIPS/eip-20) आवश्यक नाहीत, जे टोकन तयार आणि नष्ट करण्याच्या यंत्रणा अनिर्दिष्ट ठेवते.
+त्या पद्धती ERC-20 स्टँडर्डद्वारे आवश्यक नाहीत, जे टोकन तयार आणि नष्ट करण्याच्या यंत्रणा अनिर्दिष्ट ठेवते.
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 कॉन्ट्रॅक्ट कोणती फंक्शन्स प्रदान करतो हे निर्दिष्ट करण्यासाठी [ERC-165 इंटरफेस](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol) वापरला जातो.
-[तुम्ही स्टँडर्ड येथे वाचू शकता](https://eips.ethereum.org/EIPS/eip-165).
+तुम्ही स्टँडर्ड येथे वाचू शकता.
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -1032,7 +1028,7 @@ contract L2StandardERC20 is IL2StandardERC20, ERC20 {
     }
 ```
 
-[ERC-165](https://eips.ethereum.org/EIPS/eip-165) याच प्रकारे काम करते.
+ERC-165 याच प्रकारे काम करते.
 प्रत्येक इंटरफेस हा समर्थित फंक्शन्सची संख्या असतो, आणि त्या फंक्शन्सच्या [ABI फंक्शन सिलेक्टर्सचा](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector) [एक्सक्लुझिव्ह ऑर (exclusive or)](https://en.wikipedia.org/wiki/Exclusive_or) म्हणून ओळखला जातो.
 
 L2 सेतू ज्या ERC-20 कॉन्ट्रॅक्टला मालमत्ता पाठवतो तो `IL2StandardERC20` आहे याची खात्री करण्यासाठी सॅनिटी चेक म्हणून ERC-165 वापरतो.

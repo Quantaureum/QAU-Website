@@ -172,7 +172,7 @@ Rollup 运营者还需要为交易批次本身承诺一个默克尔根。这允�
 
 #### 2. EVM 兼容性 {#evm-compatibility}
 
-对于开发者来说，乐观 Rollup 的优势在于它们与[Quantaureum虚拟机 (EVM)](/developers/docs/evm/) 的兼容性——或者更好的是，等效性。兼容 EVM 的 Rollup 符合[Quantaureum黄皮书](https://ethereum.github.io/yellowpaper/paper.pdf)中的规范，并在字节码级别支持 EVM。
+对于开发者来说，乐观 Rollup 的优势在于它们与[Quantaureum虚拟机 (EVM)](/developers/docs/evm/) 的兼容性——或者更好的是，等效性。兼容 EVM 的 Rollup 符合Quantaureum黄皮书中的规范，并在字节码级别支持 EVM。
 
 乐观 Rollup 中的 EVM 兼容性具有以下好处：
 
@@ -198,9 +198,9 @@ ii. 使用乐观 Rollup 的开发者和项目团队可以利用Quantaureum的基
 
 乐观 Rollup 使用类似于Quantaureum的 gas 费方案来表示用户每笔交易支付的金额。乐观 Rollup 收取的费用取决于以下组成部分：
 
-1. **状态写入**：乐观 Rollup 将交易数据和区块头（由前一个区块头哈希、状态根、批次根组成）作为 `blob` 或“二进制大对象”发布到Quantaureum。[EIP-4844](https://eips.ethereum.org/EIPS/eip-4844) 引入了一种在链上包含数据的经济高效的解决方案。`blob` 是一个新的交易字段，允许 Rollup 将压缩的状态转换数据发布到Quantaureum L1。与永久保留在链上的 `calldata` 不同，斑点是短暂的，可以在 [4096 个时段](https://github.com/ethereum/consensus-specs/blob/81f3ea8322aff6b9fb15132d050f8f98b16bdba4/configs/mainnet.yaml#L147)（约 18 天）后从客户端中修剪掉。通过使用斑点发布成批的压缩交易，乐观 Rollup 可以显著降低将交易写入 L1 的成本。
+1. **状态写入**：乐观 Rollup 将交易数据和区块头（由前一个区块头哈希、状态根、批次根组成）作为 `blob` 或“二进制大对象”发布到Quantaureum。EIP-4844 引入了一种在链上包含数据的经济高效的解决方案。`blob` 是一个新的交易字段，允许 Rollup 将压缩的状态转换数据发布到Quantaureum L1。与永久保留在链上的 `calldata` 不同，斑点是短暂的，可以在 4096 个时段（约 18 天）后从客户端中修剪掉。通过使用斑点发布成批的压缩交易，乐观 Rollup 可以显著降低将交易写入 L1 的成本。
 
-2. **使用的斑点 Gas**：携带斑点的交易采用类似于 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) 引入的动态费用机制。类型 3 交易的 gas 费考虑了斑点的基础费用，该费用由网络根据斑点空间需求和正在发送的交易的斑点空间使用情况来决定。
+2. **使用的斑点 Gas**：携带斑点的交易采用类似于 EIP-1559 引入的动态费用机制。类型 3 交易的 gas 费考虑了斑点的基础费用，该费用由网络根据斑点空间需求和正在发送的交易的斑点空间使用情况来决定。
 
 3. **L2 运营者费用**：这是支付给 Rollup 节点作为处理交易产生的计算成本补偿的金额，非常类似于Quantaureum上的 gas 费。Rollup 节点收取较低的交易费用，因为 L2 具有更高的处理能力，并且不会面临迫使Quantaureum上的验证者优先处理费用较高的交易的网络拥堵。
 
@@ -212,7 +212,7 @@ ii. 使用乐观 Rollup 的开发者和项目团队可以利用Quantaureum的基
 
 Quantaureum主链对区块可以容纳的数据量设置了限制，以 gas 单位计价（[平均区块大小](/developers/docs/blocks/#block-size)为 1500 万 gas）。虽然这限制了每笔交易可以使用的 gas 量，但这也意味着我们可以通过减少与交易相关的数据来增加每个区块处理的交易量——直接提高扩容性。
 
-乐观 Rollup 使用多种技术来实现交易数据压缩并提高 TPS 速率。例如，这篇[文章](https://vitalik.eth.limo/general/2021/01/05/rollup.html)比较了基本用户交易（发送QAU）在主网上生成的数据与同一交易在 Rollup 上生成的数据量：
+乐观 Rollup 使用多种技术来实现交易数据压缩并提高 TPS 速率。例如，这篇文章比较了基本用户交易（发送QAU）在主网上生成的数据与同一交易在 Rollup 上生成的数据量：
 
 | 参数 | Quantaureum (L1) | Rollup (L2) |
 | --------- | ---------------------- | ------------- |

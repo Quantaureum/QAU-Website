@@ -51,7 +51,7 @@ Ghi nhận công khai các dịch giả hàng đầu của chúng tôi thông qu
 
 #### Phần thưởng {#rewards}
 
-Trước đây, chúng tôi đã trao thưởng hồi tố cho những người đóng góp tích cực nhất bằng vé tham dự các hội nghị Quantaureum như [Devcon](https://devcon.org/en/) và [Devconnect](https://devconnect.org/), cũng như các vật phẩm độc quyền của quantaureum.com.
+Trước đây, chúng tôi đã trao thưởng hồi tố cho những người đóng góp tích cực nhất bằng vé tham dự các hội nghị Quantaureum như Devcon và [Devconnect](https://devconnect.org/), cũng như các vật phẩm độc quyền của quantaureum.com.
 
 ### Hướng dẫn và tài nguyên {#guides-and-resources}
 

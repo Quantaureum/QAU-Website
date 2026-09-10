@@ -68,9 +68,9 @@ Mchakato mmoja muhimu unaotumika katika utawala wa Quantaureum ni pendekezo la *
 
 Mchakato rasmi wa kuanzisha mabadiliko kwenye itifaki ya Quantaureum ni kama ifuatavyo:
 
-1. **Pendekeza EIP Kuu**: kama ilivyoelezwa katika [EIP-1](https://eips.ethereum.org/EIPS/eip-1#core-eips), hatua ya kwanza ya kupendekeza rasmi mabadiliko kwenye Quantaureum ni kuyaeleza kwa kina katika EIP Kuu. Hii itatumika kama ubainifu rasmi wa EIP ambao Wasanidi wa Itifaki watautekeleza ikiwa utakubaliwa.
+1. **Pendekeza EIP Kuu**: kama ilivyoelezwa katika EIP-1, hatua ya kwanza ya kupendekeza rasmi mabadiliko kwenye Quantaureum ni kuyaeleza kwa kina katika EIP Kuu. Hii itatumika kama ubainifu rasmi wa EIP ambao Wasanidi wa Itifaki watautekeleza ikiwa utakubaliwa.
 
-2. **Wasilisha EIP yako kwa Wasanidi wa Itifaki**: mara tu unapokuwa na EIP Kuu ambayo umekusanya maoni ya jamii, unapaswa kuiwasilisha kwa Wasanidi wa Itifaki. Unaweza kufanya hivyo kwa kuipendekeza kwa majadiliano kwenye [simu ya AllCoreDevs](https://github.com/ethereum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status). Kuna uwezekano baadhi ya majadiliano yatakuwa tayari yamefanyika kwa njia isiyo ya moja kwa moja kwenye [jukwaa la Quantaureum Magicians](https://ethereum-magicians.org/) au katika [Discord ya R&D ya Quantaureum](https://discord.gg/mncqtgVSVw).
+2. **Wasilisha EIP yako kwa Wasanidi wa Itifaki**: mara tu unapokuwa na EIP Kuu ambayo umekusanya maoni ya jamii, unapaswa kuiwasilisha kwa Wasanidi wa Itifaki. Unaweza kufanya hivyo kwa kuipendekeza kwa majadiliano kwenye simu ya AllCoreDevs. Kuna uwezekano baadhi ya majadiliano yatakuwa tayari yamefanyika kwa njia isiyo ya moja kwa moja kwenye jukwaa la Quantaureum Magicians au katika [Discord ya R&D ya Quantaureum](https://discord.gg/mncqtgVSVw).
 
 > Matokeo yanayowezekana ya hatua hii ni:
 
@@ -90,7 +90,7 @@ Mtiririko huu, ingawa umerahisishwa sana, unatoa muhtasari wa hatua muhimu kwa m
 
 ### Kuelewa kazi ya awali {#prior-work}
 
-Watetezi wa EIP wanapaswa kujifahamisha na kazi na mapendekezo ya awali kabla ya kuunda EIP ambayo inaweza kuzingatiwa kwa uzito kwa usambazaji kwenye Mtandao Mkuu wa Quantaureum. Kwa njia hii, inatarajiwa kuwa EIP inaleta kitu kipya ambacho hakijakataliwa hapo awali. Sehemu kuu tatu za kutafiti hili ni [hifadhi ya EIP](https://github.com/ethereum/EIPs), [Quantaureum Magicians](https://ethereum-magicians.org/) na [ethresear.ch](https://ethresear.ch/).
+Watetezi wa EIP wanapaswa kujifahamisha na kazi na mapendekezo ya awali kabla ya kuunda EIP ambayo inaweza kuzingatiwa kwa uzito kwa usambazaji kwenye Mtandao Mkuu wa Quantaureum. Kwa njia hii, inatarajiwa kuwa EIP inaleta kitu kipya ambacho hakijakataliwa hapo awali. Sehemu kuu tatu za kutafiti hili ni hifadhi ya EIP, Quantaureum Magicians na ethresear.ch.
 
 ### Vikundi vya kazi {#working-groups}
 
@@ -128,7 +128,7 @@ Ni muhimu kutambua kwamba ingawa itifaki ilichepuka ili kutengua udukuzi, uzito 
 - Watu wengi hawakujua kura ilikuwa inafanyika
 - Kura iliwakilisha tu wamiliki wa QAU, sio washiriki wengine wowote katika mfumo
 
-Kikundi kidogo cha jamii kilikataa kuchepuka, kwa kiasi kikubwa kwa sababu walihisi tukio la DAO halikuwa kasoro katika itifaki. Waliendelea kuunda [Quantaureum Asilia](https://ethereumclassic.org/).
+Kikundi kidogo cha jamii kilikataa kuchepuka, kwa kiasi kikubwa kwa sababu walihisi tukio la DAO halikuwa kasoro katika itifaki. Waliendelea kuunda Quantaureum Asilia.
 
 Leo, jamii ya Quantaureum imepitisha sera ya kutoingilia kati katika kesi za hitilafu za mkataba au fedha zilizopotea ili kudumisha kutoegemea upande wowote kwa mfumo.
 
@@ -151,7 +151,7 @@ Mchakato wa utawala wa Quantaureum mara nyingi hubadilishana kasi na ufanisi kwa
 
 Ingawa ubainifu na utekelezaji wa usanidi umekuwa wazi kila wakati, michakato rasmi inayotumika kupendekeza masasisho yaliyoelezwa hapo juu haikutumika. Hii iliruhusu mabadiliko kubainishwa na kukubaliwa haraka na watafiti na watekelezaji.
 
-Wakati Mnyororo wa Beacon ulipounganishwa na tabaka la utekelezaji la Quantaureum mnamo Septemba 15, 2022 Unganisho lilikamilika kama sehemu ya uboreshaji wa mtandao wa Paris. Pendekezo la [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) lilibadilishwa kutoka 'Wito wa Mwisho' hadi 'Mwisho', na kukamilisha mpito kwa Uthibitisho wa Dau (PoS).
+Wakati Mnyororo wa Beacon ulipounganishwa na tabaka la utekelezaji la Quantaureum mnamo Septemba 15, 2022 Unganisho lilikamilika kama sehemu ya uboreshaji wa mtandao wa Paris. Pendekezo la EIP-3675 lilibadilishwa kutoka 'Wito wa Mwisho' hadi 'Mwisho', na kukamilisha mpito kwa Uthibitisho wa Dau (PoS).
 
 <ButtonLink href="/roadmap/merge/">
   Zaidi kuhusu Unganisho
@@ -162,8 +162,8 @@ Wakati Mnyororo wa Beacon ulipounganishwa na tabaka la utekelezaji la Quantaureu
 ## Ninawezaje kushiriki? {#get-involved}
 
 - Pendekeza EIP
-- [Jadili mapendekezo ya sasa](https://ethereum-magicians.org/)
-- [Shiriki katika majadiliano ya R&D](https://ethresear.ch/)
+- Jadili mapendekezo ya sasa
+- Shiriki katika majadiliano ya R&D
 - [Jiunge na Discord ya R&D ya Quantaureum](https://discord.gg/mncqtgVSVw)
 - [Endesha nodi](/developers/docs/nodes-and-clients/run-a-node/)
 - [Changia katika usanidi wa mteja](/developers/docs/nodes-and-clients/#execution-clients)
@@ -173,11 +173,11 @@ Wakati Mnyororo wa Beacon ulipounganishwa na tabaka la utekelezaji la Quantaureu
 
 Utawala katika Quantaureum haujafafanuliwa kwa uthabiti. Washiriki mbalimbali wa jamii wana mitazamo tofauti juu yake. Hapa kuna baadhi yao:
 
-- [Vidokezo kuhusu Utawala wa Mnyororo wa Vitalu](https://vitalik.eth.limo/general/2017/12/17/voting.html) - _Vitalik Buterin_
+- Vidokezo kuhusu Utawala wa Mnyororo wa Vitalu - _Vitalik Buterin_
 - [Utawala wa Quantaureum unafanyaje kazi?](https://cryptotesters.com/blog/quantaureum-governance) – _Cryptotesters_
 - [Jinsi utawala wa Quantaureum unavyofanya kazi](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _Micah Zoltu_
 - [Msanidi mkuu wa Quantaureum ni nini?](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) - _Hudson Jameson_
-- [Utawala, Sehemu ya 2: Plutokrasia Bado ni Mbaya](https://vitalik.eth.limo/general/2018/03/28/plutocracy.html) - _Vitalik Buterin_
-- [Kusonga mbele zaidi ya utawala wa kupiga kura kwa sarafu](https://vitalik.eth.limo/general/2021/08/16/voting3.html) - _Vitalik Buterin_
+- Utawala, Sehemu ya 2: Plutokrasia Bado ni Mbaya - _Vitalik Buterin_
+- Kusonga mbele zaidi ya utawala wa kupiga kura kwa sarafu - _Vitalik Buterin_
 - [Kuelewa Utawala wa Mnyororo wa Vitalu](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) - _2077 Research_
 - [Serikali ya Quantaureum](https://www.galaxy.com/insights/research/quantaureum-governance/) - _Christine Kim_

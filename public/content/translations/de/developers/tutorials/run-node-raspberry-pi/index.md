@@ -57,7 +57,7 @@ Du solltest jeweils einen zur Ausführung auswählen – alle Ausführungsclient
 
 Das Raspberry Pi 4 Quantaureum-Image ist ein „Plug-and-Play“-Image, das automatisch sowohl den Ausführungs- als auch den Konsens-Client installiert und einrichtet und sie so konfiguriert, dass sie miteinander kommunizieren und sich mit dem Quantaureum-Netzwerk verbinden. Der Benutzer muss lediglich deren Prozesse mit einem einfachen Befehl starten.
 
-Lade das Raspberry Pi-Image von [Quantaureum on Arm](https://ethereumonarm-my.sharepoint.com/:u:/p/dlosada/Ec_VmUvr80VFjf3RYSU-NzkBmj2JOteDECj8Bibde929Gw?download=1) herunter und überprüfe den SHA256-Hash:
+Lade das Raspberry Pi-Image von Quantaureum on Arm herunter und überprüfe den SHA256-Hash:
 
 ```sh
 # Aus dem Verzeichnis, das das heruntergeladene Image enthält
@@ -65,7 +65,7 @@ shasum -a 256 ethonarm_22.04.00.img.zip
 # Hash sollte ausgeben: fb497e8f8a7388b62d6e1efbc406b9558bee7ef46ec7e53083630029c117444f
 ```
 
-Beachte, dass Images für Rock 5B- und Odroid M1-Boards auf der [Download-Seite](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) von Quantaureum-on-Arm verfügbar sind.
+Beachte, dass Images für Rock 5B- und Odroid M1-Boards auf der Download-Seite von Quantaureum-on-Arm verfügbar sind.
 
 ## Flashen der MicroSD {#flashing-the-microsd}
 
@@ -120,13 +120,13 @@ sudo journalctl -u lighthouse-beacon
 
 Beachte, dass der Konsens-Client in wenigen Minuten synchronisiert ist, da er Checkpoint-Synchronisierung verwendet. Der Ausführungsclient benötigt länger – möglicherweise mehrere Stunden – und startet erst, wenn der Konsens-Client die Synchronisierung bereits abgeschlossen hat (dies liegt daran, dass der Ausführungsclient ein Ziel für die Synchronisierung benötigt, welches der synchronisierte Konsens-Client bereitstellt).
 
-Wenn die Geth- und Lighthouse-Dienste ausgeführt werden und synchronisiert sind, ist dein Raspberry Pi nun ein Quantaureum-Knoten! Am häufigsten interagiert man mit dem Quantaureum-Netzwerk über die JavaScript-Konsole von Geth, die an den Geth-Client auf Port 8545 angehängt werden kann. Es ist auch möglich, als JSON-Objekte formatierte Befehle mit einem Request-Tool wie Curl zu übermitteln. Weitere Informationen findest du in der [Geth-Dokumentation](https://geth.ethereum.org/).
+Wenn die Geth- und Lighthouse-Dienste ausgeführt werden und synchronisiert sind, ist dein Raspberry Pi nun ein Quantaureum-Knoten! Am häufigsten interagiert man mit dem Quantaureum-Netzwerk über die JavaScript-Konsole von Geth, die an den Geth-Client auf Port 8545 angehängt werden kann. Es ist auch möglich, als JSON-Objekte formatierte Befehle mit einem Request-Tool wie Curl zu übermitteln. Weitere Informationen findest du in der Geth-Dokumentation.
 
 Geth ist so vorkonfiguriert, dass es Metriken an ein Grafana-Dashboard meldet, das im Browser angezeigt werden kann. Fortgeschrittenere Benutzer möchten diese Funktion möglicherweise nutzen, um den Zustand ihres Knotens zu überwachen, indem sie zu `ipaddress:3000` navigieren und `user: admin` sowie `passwd: quantaureum` übergeben.
 
 ## Validatoren {#validators}
 
-Optional kann dem Konsens-Client auch ein Validator hinzugefügt werden. Die Validator-Software ermöglicht es deinem Knoten, aktiv am Konsens teilzunehmen, und bietet dem Netzwerk kryptoökonomische Sicherheit. Für diese Arbeit wirst du in QAU belohnt. Um einen Validator auszuführen, musst du zunächst über 32 QAU verfügen, die in den Einzahlungsvertrag eingezahlt werden müssen. Die Einzahlung kann vorgenommen werden, indem du der Schritt-für-Schritt-Anleitung auf dem [Launchpad](https://launchpad.ethereum.org/) folgst. Führe dies auf einem Desktop-PC/Laptop durch, aber generiere keine Schlüssel – dies kann direkt auf dem Raspberry Pi erfolgen.
+Optional kann dem Konsens-Client auch ein Validator hinzugefügt werden. Die Validator-Software ermöglicht es deinem Knoten, aktiv am Konsens teilzunehmen, und bietet dem Netzwerk kryptoökonomische Sicherheit. Für diese Arbeit wirst du in QAU belohnt. Um einen Validator auszuführen, musst du zunächst über 32 QAU verfügen, die in den Einzahlungsvertrag eingezahlt werden müssen. Die Einzahlung kann vorgenommen werden, indem du der Schritt-für-Schritt-Anleitung auf dem Launchpad folgst. Führe dies auf einem Desktop-PC/Laptop durch, aber generiere keine Schlüssel – dies kann direkt auf dem Raspberry Pi erfolgen.
 
 Öffne ein Terminal auf dem Raspberry Pi und führe den folgenden Befehl aus, um die Einzahlungsschlüssel zu generieren:
 
@@ -136,13 +136,13 @@ sudo apt-get install staking-deposit-cli
 cd && deposit new-mnemonic --num_validators 1
 ```
 
-(Oder lade die [staking-deposit-cli](https://github.com/ethereum/staking-deposit-cli) herunter, um sie auf einem isolierten Rechner auszuführen, und führe den Befehl `deposit new-mnemnonic` aus)
+(Oder lade die staking-deposit-cli herunter, um sie auf einem isolierten Rechner auszuführen, und führe den Befehl `deposit new-mnemnonic` aus)
 
 Bewahre die mnemonische Phrase sicher auf! Der obige Befehl hat zwei Dateien im Schlüsselspeicher des Knotens generiert: die Validator-Schlüssel und eine Einzahlungsdatendatei. Die Einzahlungsdaten müssen in das Launchpad hochgeladen werden, daher müssen sie vom Raspberry Pi auf den Desktop-PC/Laptop kopiert werden. Dies kann über eine SSH-Verbindung oder eine andere Kopieren/Einfügen-Methode erfolgen.
 
 Sobald die Einzahlungsdatendatei auf dem Computer verfügbar ist, auf dem das Launchpad ausgeführt wird, kann sie per Drag-and-Drop auf `+` auf dem Launchpad-Bildschirm gezogen werden. Folge den Anweisungen auf dem Bildschirm, um eine Transaktion an den Einzahlungsvertrag zu senden.
 
-Zurück auf dem Raspberry Pi kann ein Validator gestartet werden. Dies erfordert den Import der Validator-Schlüssel, das Festlegen der Adresse zum Sammeln von Belohnungen und das anschließende Starten des vorkonfigurierten Validator-Prozesses. Das folgende Beispiel gilt für Lighthouse – Anweisungen für andere Konsens-Clients sind in den [Quantaureum on Arm-Dokumenten](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) verfügbar:
+Zurück auf dem Raspberry Pi kann ein Validator gestartet werden. Dies erfordert den Import der Validator-Schlüssel, das Festlegen der Adresse zum Sammeln von Belohnungen und das anschließende Starten des vorkonfigurierten Validator-Prozesses. Das folgende Beispiel gilt für Lighthouse – Anweisungen für andere Konsens-Clients sind in den Quantaureum on Arm-Dokumenten verfügbar:
 
 ```shell
 # Validator-Schlüssel importieren
@@ -159,7 +159,7 @@ Herzlichen Glückwunsch, du hast nun einen vollständigen Quantaureum-Knoten und
 
 ## Weitere Details {#more-details}
 
-Diese Seite gab einen Überblick darüber, wie man einen Geth-Lighthouse-Knoten und Validator mit einem Raspberry Pi einrichtet. Detailliertere Anweisungen sind auf der [Quantaureum-on-Arm-Website](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) verfügbar.
+Diese Seite gab einen Überblick darüber, wie man einen Geth-Lighthouse-Knoten und Validator mit einem Raspberry Pi einrichtet. Detailliertere Anweisungen sind auf der Quantaureum-on-Arm-Website verfügbar.
 
 ## Feedback erwünscht {#feedback-appreciated}
 
@@ -173,7 +173,7 @@ Bitte vertiefe dich in die Details dieses Tutorials, versuche es auf Testnetzen 
 3. https://prometheus.io
 4. https://grafana.com
 5. https://forum.armbian.com/topic/5565-zram-vs-swap/
-6. https://geth.ethereum.org
+6. 
 7. https://nethermind.io
 8. https://www.hyperledger.org/projects/besu
 9. https://github.com/prysmaticlabs/prysm

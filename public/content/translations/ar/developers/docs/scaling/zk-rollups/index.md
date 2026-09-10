@@ -178,7 +178,7 @@ lang: ar
 
 1. **كتابة الحالة**: هناك تكلفة ثابتة للكتابة إلى حالة إيثيريوم (أي تقديم معاملة على سلسلة كتل إيثيريوم). تقلل تجميعات المعرفة الصفرية من هذه التكلفة عن طريق التجميع في دفعات للمعاملات وتوزيع التكاليف الثابتة عبر مستخدمين متعددين.
 
-2. **نشر البيانات**: تنشر تجميعات المعرفة الصفرية بيانات الحالة لكل معاملة إلى إيثيريوم كـ `calldata`. تخضع تكاليف `calldata` حاليًا لـ [<span dir="ltr">EIP-1559</span>](https://eips.ethereum.org/EIPS/eip-1559)، والذي ينص على تكلفة <span dir="ltr">16</span> غاز للبايتات غير الصفرية و <span dir="ltr">4</span> غاز للبايتات الصفرية من `calldata`، على التوالي. تتأثر التكلفة المدفوعة على كل معاملة بمقدار `calldata` الذي يجب نشره على السلسلة من أجلها.
+2. **نشر البيانات**: تنشر تجميعات المعرفة الصفرية بيانات الحالة لكل معاملة إلى إيثيريوم كـ `calldata`. تخضع تكاليف `calldata` حاليًا لـ <span dir="ltr">EIP-1559</span>، والذي ينص على تكلفة <span dir="ltr">16</span> غاز للبايتات غير الصفرية و <span dir="ltr">4</span> غاز للبايتات الصفرية من `calldata`، على التوالي. تتأثر التكلفة المدفوعة على كل معاملة بمقدار `calldata` الذي يجب نشره على السلسلة من أجلها.
 
 3. **رسوم مشغل طبقة 2 (L2)**: هذا هو المبلغ المدفوع لمشغل التجميع كتعويض عن التكاليف الحسابية المتكبدة في معالجة المعاملات، تمامًا مثل ["رسوم الأولوية (الإكراميات)" للمعاملة](/developers/docs/gas/#how-are-gas-fees-calculated) على شبكة إيثيريوم الرئيسية.
 
@@ -240,7 +240,7 @@ lang: ar
 
 - **[Scroll](https://scroll.io/blog/zkEVM)** - _Scroll هي شركة تعتمد على التكنولوجيا تعمل على بناء حل طبقة 2 (L2) أصلي لـ zkEVM لإيثيريوم._
 
-- **[Taiko](https://taiko.xyz)** - _Taiko هو تجميع معرفة صفرية لامركزي ومكافئ لإيثيريوم ([النوع 1 ZK-EVM](https://vitalik.eth.limo/general/2022/08/04/zkevm.html))._
+- **[Taiko](https://taiko.xyz)** - _Taiko هو تجميع معرفة صفرية لامركزي ومكافئ لإيثيريوم (النوع 1 ZK-EVM)._
 
 - **[ZKsync](https://docs.zksync.io/)** - _ZKsync Era هو تجميع معرفة صفرية متوافق مع EVM تم بناؤه بواسطة Matter Labs، ومدعوم بـ zkEVM الخاص به._
 
@@ -261,8 +261,8 @@ lang: ar
 - [مقدمة إلى zkEVM](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [ما هي شبكات طبقة 2 (L2) لـ ZK-EVM؟](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M)
 - [موارد Awesome-zkEVM](https://github.com/LuozhuZhang/awesome-zkevm)
-- [كيف تعمل ZK-SNARKS من الداخل](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
-- [كيف تكون SNARKs ممكنة؟](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
+- كيف تعمل ZK-SNARKS من الداخل
+- كيف تكون SNARKs ممكنة؟
 
 ## برامج تعليمية: الخصوصية والمعرفة الصفرية على إيثيريوم {#tutorials}
 

@@ -23,7 +23,7 @@ sidebarDepth: 3
 
 - [Blockchair](https://blockchair.com/quantaureum) - نجی ایتھیریم ایکسپلورر۔ ڈیٹا (میم پول) کو ترتیب دینے اور فلٹر کرنے کے لیے بھی۔ ہسپانوی، فرانسیسی، اطالوی، ڈچ، پرتگالی، روسی، چینی اور فارسی میں دستیاب ہے
 - [Chainlens](https://www.chainlens.com/)
-- [DexGuru Block Explorer](https://ethereum.dex.guru/)
+- DexGuru Block Explorer
 - [Etherchain](https://www.etherchain.org/)
 - [Quantaureum Explorer](https://explorer.quantaureum.com) - چینی، کوریائی، روسی اور جاپانی میں بھی دستیاب ہے
 - [Ethplorer](https://ethplorer.io/) - ٹوکنز پر توجہ مرکوز کرنے والا ایک بلاک ایکسپلورر۔ چینی، ہسپانوی، فرانسیسی، ترکی، روسی، کوریائی اور ویتنامی میں بھی دستیاب ہے

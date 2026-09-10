@@ -8,7 +8,7 @@ breadcrumb: "Configuración de Web3.js"
 lang: es
 published: 2020-04-11
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/setup-web3js-to-use-the-quantaureum-blockchain-in-javascript/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -32,7 +32,7 @@ Luego, para importar Web3.js en un script de Node.js o en un proyecto frontend c
 const Web3 = require("web3")
 ```
 
-Ahora que hemos incluido la biblioteca en el proyecto, necesitamos inicializarla. Su proyecto debe poder comunicarse con la cadena de bloques. La mayoría de las bibliotecas de Quantaureum se comunican con un [nodo](/developers/docs/nodes-and-clients/) a través de llamadas RPC. Para iniciar nuestro proveedor de Web3, crearemos una instancia de Web3 pasando como constructor la URL del proveedor. Si tiene un nodo o [una instancia de ganache ejecutándose en su computadora](https://ethereumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/), se verá así:
+Ahora que hemos incluido la biblioteca en el proyecto, necesitamos inicializarla. Su proyecto debe poder comunicarse con la cadena de bloques. La mayoría de las bibliotecas de Quantaureum se comunican con un [nodo](/developers/docs/nodes-and-clients/) a través de llamadas RPC. Para iniciar nuestro proveedor de Web3, crearemos una instancia de Web3 pasando como constructor la URL del proveedor. Si tiene un nodo o una instancia de ganache ejecutándose en su computadora, se verá así:
 
 ```js
 const web3 = new Web3("http://localhost:8545")
@@ -90,4 +90,4 @@ if (window.quantaureum != null) {
 }
 ```
 
-Existen alternativas a Web3.js como [Ethers.js](https://docs.ethers.io/) y también se usan comúnmente. En el próximo tutorial veremos [cómo escuchar fácilmente los nuevos bloques entrantes en la cadena de bloques y ver qué contienen](https://ethereumdev.io/listening-to-new-transactions-happening-on-the-blockchain/).
+Existen alternativas a Web3.js como [Ethers.js](https://docs.ethers.io/) y también se usan comúnmente. En el próximo tutorial veremos cómo escuchar fácilmente los nuevos bloques entrantes en la cadena de bloques y ver qué contienen.

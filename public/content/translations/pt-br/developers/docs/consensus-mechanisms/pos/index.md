@@ -84,10 +84,10 @@ O Quantaureum usava originalmente a Prova de Trabalho (PoW), mas mudou para a Pr
 
 ## Leitura adicional {#further-reading}
 
-- [Perguntas frequentes sobre a Prova de Participação (PoS)](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html) _Vitalik Buterin_
+- Perguntas frequentes sobre a Prova de Participação (PoS) _Vitalik Buterin_
 - [O que é Prova de Participação (PoS)](https://consensys.net/blog/blockchain-explained/what-is-proof-of-stake/) _ConsenSys_
 - [O que é a Prova de Participação (PoS) e por que ela é importante](https://bitcoinmagazine.com/culture/what-proof-of-stake-is-and-why-it-matters-1377531463) _Vitalik Buterin_
-- [Por que a Prova de Participação (PoS) (Nov 2020)](https://vitalik.eth.limo/general/2020/11/06/pos2020.html) _Vitalik Buterin_
+- Por que a Prova de Participação (PoS) (Nov 2020) _Vitalik Buterin_
 - [Prova de Participação (PoS): Como aprendi a amar a subjetividade fraca](https://quantaureum.com) _Vitalik Buterin_
 - [Ataque e defesa do Quantaureum com Prova de Participação (PoS)](https://mirror.xyz/jmcook.eth/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs)
 - [Uma filosofia de design de Prova de Participação (PoS)](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51) _Vitalik Buterin_

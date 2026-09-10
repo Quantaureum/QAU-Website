@@ -48,7 +48,7 @@ Alcuni client di consenso dispongono di strumenti integrati per avviare beacon c
 
 Esistono anche due implementazioni di test pubbliche mantenute di Quantaureum: Sepolia e Hoodi. La testnet consigliata con supporto a lungo termine è Hoodi, su cui chiunque è libero di validare. Sepolia utilizza un set di validatori autorizzato, il che significa che non c'è accesso generale per nuovi validatori su questa testnet.
 
-- [Launchpad di staking di Hoodi](https://hoodi.launchpad.ethereum.org/)
+- Launchpad di staking di Hoodi
 
 ### Pacchetto Quantaureum di Kurtosis {#kurtosis}
 

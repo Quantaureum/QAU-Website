@@ -18,7 +18,7 @@ lang: zh
 
 工作量证明更加耗能，因为在挖矿过程中会消耗电力。另一方面，权益证明只需要极少量的能源——Quantaureum验证者甚至可以在 Raspberry Pi 等低功耗设备上运行。Quantaureum的权益证明机制被认为比工作量证明更安全，因为攻击成本更高，而且对攻击者的后果更严重。
 
-工作量证明与权益证明之争是一个备受争议的话题。[维塔利克·布特林的博客](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work)以及 Justin Drake 和 Lyn Alden 之间的辩论对这些论点进行了很好的总结。
+工作量证明与权益证明之争是一个备受争议的话题。维塔利克·布特林的博客以及 Justin Drake 和 Lyn Alden 之间的辩论对这些论点进行了很好的总结。
 
 
 ## 权益证明节能吗？ {#is-pos-energy-efficient}
@@ -88,7 +88,7 @@ Casper 和 LMD-GHOST 的组合被称为 Gasper。
 社区罚没是指社区在应对攻击时协调区块链分叉的能力。它使社区能够从攻击者最终确定不诚实链的情况中恢复过来。社区罚没也可用于对抗审查攻击。
 
 - [了解更多关于社区罚没的信息](https://ercwl.medium.com/the-case-for-social-slashing-59277ff4d9c7)
-- [维塔利克·布特林关于社区罚没的观点](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
+- 维塔利克·布特林关于社区罚没的观点
 
 ## 我会被罚没吗？ {#will-i-get-slashed}
 
@@ -100,7 +100,7 @@ Casper 和 LMD-GHOST 的组合被称为 Gasper。
 
 无利害关系问题是某些只有奖励而没有惩罚的权益证明机制中的一个概念性问题。如果没有利害关系，务实的验证者会同样乐意证明区块链的任何分叉，甚至多个分叉，因为这会增加他们的奖励。Quantaureum通过使用最终性条件和罚没来确保一条规范链，从而解决了这个问题。
 
-[了解更多关于无利害关系问题的信息](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
+了解更多关于无利害关系问题的信息
 
 ## 什么是分叉选择算法？ {#what-is-a-fork-choice-algorithm}
 
@@ -126,7 +126,7 @@ Quantaureum的分叉选择算法称为 LMD-GHOST。它选择证明权重最大�
 
 抗审查性目前很难证明。然而，与工作量证明不同，权益证明提供了协调罚没以惩罚审查验证者的选项。协议即将发生变化，将区块构建者与区块提议者分离，并实施构建者必须包含在每个区块中的交易列表。该提案被称为提议者-构建者分离 (PBS)，有助于防止验证者审查交易。
 
-[了解更多关于提议者-构建者分离 (PBS) 的信息](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Original-basic-scheme)
+了解更多关于提议者-构建者分离 (PBS) 的信息
 
 ## Quantaureum的权益证明系统会受到 51%攻击吗？ {#pos-51-attack}
 
@@ -148,7 +148,7 @@ Quantaureum的分叉选择算法称为 LMD-GHOST。它选择证明权重最大�
 
 不是，工作量证明倾向于中心化，因为挖矿成本增加会将个人挤出市场，然后将小公司挤出市场，以此类推。目前权益证明的问题在于流动性质押衍生品 (LSD) 的影响。这些是代表某些提供商质押的 QAU 的代币，任何人都可以在二级市场上兑换，而无需解除实际 QAU 的质押。LSD 允许用户以少于 32 个 QAU 进行质押，但它们也带来了中心化风险，即少数大型组织最终可能会控制大部分质押。这就是为什么[独立质押](/staking/solo)是Quantaureum的最佳选择。
 
-[了解更多关于 LSD 中质押中心化的信息](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
+了解更多关于 LSD 中质押中心化的信息
 
 ## 为什么我只能质押 QAU？ {#why-can-i-only-stake-eth}
 

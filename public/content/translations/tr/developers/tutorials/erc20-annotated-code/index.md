@@ -32,7 +32,7 @@ Deneyimli bir programcıysanız, muhtemelen [Java](https://www.w3schools.com/jav
 veya hatta [C başlık dosyalarında](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html) benzer yapılar gördüğünüzü hatırlarsınız.
 
 Bu, OpenZeppelin'den [ERC-20 Arayüzünün](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)
-bir tanımıdır. [İnsan tarafından okunabilir standardın](https://eips.ethereum.org/EIPS/eip-20) Solidity koduna çevrilmiş halidir. Elbette,
+bir tanımıdır. İnsan tarafından okunabilir standardın Solidity koduna çevrilmiş halidir. Elbette,
 arayüzün kendisi bir şeyin _nasıl_ yapılacağını tanımlamaz. Bu, aşağıdaki sözleşme kaynak kodunda açıklanmıştır.
 
 &nbsp;
@@ -111,9 +111,7 @@ Ayrıca `external` ve `view`'dir.
 ```solidity
     /**
      * @dev Çağırıcının Hesabından `recipient` adresine `amount` kadar Token transfer eder.
-     *
      * İşlemin başarılı olup olmadığını belirten boolean bir değer döndürür.
-     *
      * Bir {Transfer} olayı yayar.
      */
     function transfer(address recipient, uint256 amount) external returns (bool);
@@ -146,7 +144,6 @@ başarılı olup olmadığını bilebilir.
 ```solidity
     /**
      * @dev `spender`ın {transferFrom} aracılığıyla `owner` adına harcamasına izin verilecek kalan Token miktarını döndürür. Bu varsayılan olarak sıfırdır.
-     *
      * Bu değer {approve} veya {transferFrom} çağrıldığında değişir.
      */
     function allowance(address owner, address spender) external view returns (uint256);
@@ -160,12 +157,9 @@ başarılı olup olmadığını bilebilir.
 ```solidity
     /**
      * @dev Çağırıcının Tokenları üzerinde `spender` için harcama izni olarak `amount` değerini ayarlar.
-     *
      * İşlemin başarılı olup olmadığını belirten boolean bir değer döndürür.
-     *
      * ÖNEMLİ: Bu yöntemle bir harcama iznini değiştirmenin, talihsiz bir işlem sıralamasıyla birisinin hem eski hem de yeni harcama iznini kullanabilmesi riskini getirdiğine dikkat edin. Bu yarış durumunu (race condition) hafifletmek için olası bir çözüm, önce harcayıcının harcama iznini 0'a düşürmek ve ardından istenen değeri ayarlamaktır:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
-     *
+
      * Bir {Approval} olayı yayar.
      */
     function approve(address spender, uint256 amount) external returns (bool);
@@ -181,9 +175,7 @@ diğer insanların işlemlerinin hangi sırayla yürütüleceğini kontrol edeme
 ```solidity
     /**
      * @dev Harcama izni mekanizmasını kullanarak `sender` adresinden `recipient` adresine `amount` kadar Token transfer eder. `amount` daha sonra çağırıcının harcama izninden düşülür.
-     *
      * İşlemin başarılı olup olmadığını belirten boolean bir değer döndürür.
-     *
      * Bir {Transfer} olayı yayar.
      */
     function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
@@ -197,7 +189,6 @@ Son olarak, `transferFrom` harcayan tarafından harcama iznini fiilen harcamak i
 
     /**
      * @dev `value` kadar Token bir Hesaptan (`from`) diğerine (`to`) transfer edildiğinde yayılır.
-     *
      * `value` değerinin sıfır olabileceğini unutmayın.
      */
     event Transfer(address indexed from, address indexed to, uint256 value);
@@ -239,7 +230,7 @@ import "../../math/SafeMath.sol";
 - `GSN/Context.sol`, QAU'i olmayan kullanıcıların Blokzincir'i kullanmasına olanak tanıyan bir sistem olan [OpenGSN](https://opengsn.org/)'yi kullanmak için gereken tanımlardır. Bunun eski bir sürüm olduğunu unutmayın, OpenGSN ile entegre olmak istiyorsanız
   [bu öğreticiyi kullanın](https://docs.opengsn.org/javascript-client/tutorial.html).
 - Solidity sürümleri **&lt;0.8.0** için aritmetik taşmaları/alt taşmaları önleyen
-  [SafeMath Kütüphanesi](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/). Solidity ≥0.8.0'da, aritmetik işlemler taşma/alt taşma durumunda otomatik olarak
+  SafeMath Kütüphanesi. Solidity ≥0.8.0'da, aritmetik işlemler taşma/alt taşma durumunda otomatik olarak
   geri alınır ve SafeMath'i gereksiz kılar. Bu sözleşme, eski derleyici sürümleriyle geriye dönük uyumluluk için
   SafeMath kullanır.
 
@@ -250,20 +241,15 @@ Bu yorum sözleşmenin amacını açıklar.
 ```solidity
 /**
  * @dev {IERC20} arayüzünün uygulaması.
- *
  * Bu uygulama, Tokenların oluşturulma şeklinden bağımsızdır. Bu, türetilmiş bir Sözleşmede {_mint} kullanılarak bir arz mekanizmasının eklenmesi gerektiği anlamına gelir.
  * Genel bir mekanizma için {ERC20PresetMinterPauser} Sözleşmesine bakın.
- *
  * İPUCU: Ayrıntılı bir açıklama için kılavuzumuza bakın
  * https://forum.zeppelin.solutions/t/how-to-implement-erc20-supply-mechanisms/226[Arz mekanizmaları nasıl uygulanır].
- *
  * Genel OpenZeppelin yönergelerini izledik: fonksiyonlar başarısızlık durumunda `false` döndürmek yerine işlemi geri alır (revert). Bu davranış yine de gelenekseldir
  * ve ERC-20 uygulamalarının beklentileriyle çelişmez.
- *
  * Ek olarak, {transferFrom} çağrılarında bir {Approval} olayı yayılır.
  * Bu, uygulamaların yalnızca söz konusu olayları dinleyerek tüm Hesaplar için harcama iznini yeniden oluşturmasına olanak tanır. EIP'nin diğer uygulamaları, spesifikasyon tarafından gerekli kılınmadığı için
  * bu olayları yaymayabilir.
- *
  * Son olarak, harcama izinlerini ayarlamayla ilgili iyi bilinen sorunları hafifletmek için standart olmayan {decreaseAllowance} ve {increaseAllowance}
  * fonksiyonları eklenmiştir. Bkz. {IERC20-approve}.
  */
@@ -355,9 +341,7 @@ Token'ınız için farklı bir değer seçebilirsiniz. Token'ı bölmek mantıkl
     /**
      * @dev {name} ve {symbol} değerlerini ayarlar, {decimals} değerini
      * varsayılan olarak 18 ile başlatır.
-     *
      * {decimals} için farklı bir değer seçmek üzere {_setupDecimals} kullanın.
-     *
      * Bu üç değerin tümü değiştirilemez (immutable): yalnızca kurucu (constructor) sırasında bir kez ayarlanabilirler.
      */
     constructor (string memory name_, string memory symbol_) public {
@@ -392,9 +376,7 @@ Kurucu, sözleşme ilk oluşturulduğunda çağrılır. Geleneksel olarak, fonks
      * @dev Kullanıcı gösterimini elde etmek için kullanılan ondalık basamak sayısını döndürür.
      * Örneğin, `decimals` `2`ye eşitse, `505` Tokenlık bir bakiye
      * kullanıcıya `5,05` (`505 / 10 ** 2`) olarak gösterilmelidir.
-     *
      * Tokenlar genellikle QAU ve Wei arasındaki ilişkiyi taklit ederek 18 değerini tercih eder. {_setupDecimals} çağrılmadığı sürece {ERC-20} tarafından kullanılan değer budur.
-     *
      * NOT: Bu bilgi yalnızca _görüntüleme_ amacıyla kullanılır: {IERC20-balanceOf} ve {IERC20-transfer} dahil olmak üzere
      * Sözleşmenin aritmetiğini hiçbir şekilde etkilemez.
      */
@@ -452,9 +434,7 @@ Düğüm'de mevcuttur. _Blokzincir'de sır yoktur._
 ```solidity
     /**
      * @dev Bkz. {IERC20-transfer}.
-     *
      * Gereksinimler:
-     *
      * - `recipient` sıfır adresi olamaz.
      * - çağırıcının bakiyesi en az `amount` kadar olmalıdır.
      */
@@ -505,9 +485,7 @@ ve `_approve`. Ek olarak, OpenZeppelin uygulaması güvenliği artıran bazı ö
 ```solidity
     /**
      * @dev Bkz. {IERC20-approve}.
-     *
      * Gereksinimler:
-     *
      * - `spender` sıfır adresi olamaz.
      */
     function approve(address spender, uint256 amount) public virtual override returns (bool) {
@@ -537,12 +515,9 @@ transfer etmek ve harcama iznini o miktar kadar azaltmak.
 ```solidity
     /**
      * @dev Bkz. {IERC20-transferFrom}.
-     *
      * Güncellenen harcama iznini belirten bir {Approval} olayı yayar. Bu, EIP tarafından
      * gerekli değildir. {ERC-20} başlangıcındaki nota bakın.
-     *
      * Gereksinimler:
-     *
      * - `sender` ve `recipient` sıfır adresi olamaz.
      * - `sender` bakiyesi en az `amount` kadar olmalıdır.
      * - çağırıcının ``sender`` Tokenları için en az `amount` kadar harcama izni olmalıdır.
@@ -612,13 +587,9 @@ B:
 ```solidity
     /**
      * @dev Çağırıcı tarafından `spender`a verilen harcama iznini atomik olarak artırır.
-     *
      * Bu, {IERC20-approve} içinde açıklanan sorunları hafifletmek için kullanılabilecek {approve} alternatifidir.
-     *
      * Güncellenen harcama iznini belirten bir {Approval} olayı yayar.
-     *
      * Gereksinimler:
-     *
      * - `spender` sıfır adresi olamaz.
      */
     function increaseAllowance(address spender, uint256 addedValue) public virtual returns (bool) {
@@ -634,13 +605,9 @@ normal toplamanın yaptığı gibi başa sarmaz (taşma yapmaz).
 
     /**
      * @dev Çağırıcı tarafından `spender`a verilen harcama iznini atomik olarak azaltır.
-     *
      * Bu, {IERC20-approve} içinde açıklanan sorunları hafifletmek için kullanılabilecek {approve} alternatifidir.
-     *
      * Güncellenen harcama iznini belirten bir {Approval} olayı yayar.
-     *
      * Gereksinimler:
-     *
      * - `spender` sıfır adresi olamaz.
      * - `spender`, çağırıcı için en az `subtractedValue` kadar harcama iznine sahip olmalıdır.
      */
@@ -660,14 +627,10 @@ Bunlar asıl işi yapan dört fonksiyondur: `_transfer`, `_mint`, `_burn` ve `_a
 ```solidity
     /**
      * @dev `sender` adresinden `recipient` adresine `amount` kadar Token transfer eder.
-     *
      * Bu dahili (internal) fonksiyon {transfer} ile eşdeğerdir ve örneğin
      * otomatik Token ücretleri, kesinti (slashing) mekanizmaları vb. uygulamak için kullanılabilir.
-     *
      * Bir {Transfer} olayı yayar.
-     *
      * Gereksinimler:
-     *
      * - `sender` sıfır adresi olamaz.
      * - `recipient` sıfır adresi olamaz.
      * - `sender` bakiyesi en az `amount` kadar olmalıdır.
@@ -748,11 +711,8 @@ mantığınızı eklerseniz yararlıdırlar.
 ```solidity
     /** @dev `amount` kadar Token oluşturur ve bunları `account` Hesabına atayarak
      * toplam arzı artırır.
-     *
      * `from` değeri sıfır adresi olarak ayarlanmış bir {Transfer} olayı yayar.
-     *
      * Gereksinimler:
-     *
      * - `to` sıfır adresi olamaz.
      */
     function _mint(address account, uint256 amount) internal virtual {
@@ -772,11 +732,8 @@ Toplam Token sayısı değiştiğinde `_totalSupply`'yi güncellediğinizden emi
     /**
      * @dev `account` Hesabından `amount` kadar Tokenı yok eder (burn) ve
      * toplam arzı azaltır.
-     *
      * `to` değeri sıfır adresi olarak ayarlanmış bir {Transfer} olayı yayar.
-     *
      * Gereksinimler:
-     *
      * - `account` sıfır adresi olamaz.
      * - `account` en az `amount` kadar Tokena sahip olmalıdır.
      */
@@ -802,14 +759,10 @@ harcama izni oluşturulduğundaki bakiyeden farklı olabileceği transfer anınd
 ```solidity
     /**
      * @dev `owner` Tokenları üzerinde `spender` için harcama izni olarak `amount` değerini ayarlar.
-     *
      * Bu dahili fonksiyon `approve` ile eşdeğerdir ve örneğin
      * belirli alt sistemler için otomatik harcama izinleri ayarlamak vb. için kullanılabilir.
-     *
      * Bir {Approval} olayı yayar.
-     *
      * Gereksinimler:
-     *
      * - `owner` sıfır adresi olamaz.
      * - `spender` sıfır adresi olamaz.
      */
@@ -838,7 +791,6 @@ ya sahibi tarafından ya da bu olayları dinleyen bir sunucu tarafından bilgi v
 
     /**
      * @dev {decimals} değerini varsayılan 18 değerinden farklı bir değere ayarlar.
-     *
      * UYARI: Bu fonksiyon yalnızca kurucu (constructor) içinden çağrılmalıdır. Token Sözleşmeleriyle
      * etkileşime giren çoğu uygulama {decimals} değerinin değişmesini beklemez ve değişirse yanlış çalışabilir.
      */
@@ -858,15 +810,12 @@ bunu idare edecek şekilde tasarlanmamıştır.
     /**
      * @dev Herhangi bir Token transferinden önce çağrılan kanca (hook). Buna
      * basım ve yakım dahildir.
-     *
      * Çağrı koşulları:
-     *
      * - `from` ve `to` her ikisi de sıfır olmadığında, ``from`` Tokenlarının `amount` kadarı
      * `to` adresine transfer edilecektir.
      * - `from` sıfır olduğunda, `to` için `amount` kadar Token basılacaktır.
      * - `to` sıfır olduğunda, ``from`` Tokenlarının `amount` kadarı yakılacaktır.
      * - `from` ve `to` asla aynı anda sıfır olamaz.
-     *
      * Kancalar hakkında daha fazla bilgi edinmek için xref:ROOT:extending-contracts.adoc#using-hooks[Kancaları Kullanma] bölümüne gidin.
      */
     function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual { }

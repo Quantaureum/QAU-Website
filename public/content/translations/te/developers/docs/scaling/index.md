@@ -97,14 +97,14 @@ _వీడియోలోని వివరణ అన్ని ఆఫ్‌చ�
 
 ## మరింత చదవడానికి {#further-reading}
 
-- [రోలప్-కేంద్రీకృత ఎథీరియం రోడ్‌మ్యాప్](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _విటాలిక్ బుటెరిన్_
+- రోలప్-కేంద్రీకృత ఎథీరియం రోడ్‌మ్యాప్ _విటాలిక్ బుటెరిన్_
 - [ఎథీరియం కోసం లేయర్ 2 (l2) స్కేలింగ్ పరిష్కారాలపై తాజా విశ్లేషణలు](https://www.l2beat.com/)
 - [ఎథీరియం లేయర్ 2 (l2) స్కేలింగ్ పరిష్కారాలను మూల్యాంకనం చేయడం: ఒక పోలిక ఫ్రేమ్‌వర్క్](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
-- [రోల్అప్‌లకు అసంపూర్ణ మార్గదర్శి](https://vitalik.eth.limo/general/2021/01/05/rollup.html)
+- రోల్అప్‌లకు అసంపూర్ణ మార్గదర్శి
 - [ఎథీరియం-ఆధారిత ZK-రోల్అప్‌లు: వరల్డ్ బీటర్స్](https://hackmd.io/@canti/rkUT0BD8K)
 - [ఆప్టిమిస్టిక్ రోల్అప్‌లు వర్సెస్ ZK రోల్అప్‌లు](https://limechain.tech/blog/optimistic-rollups-vs-zk-rollups/)
 - [అధిక స్కేలబిలిటీకి రోల్అప్‌లు + డేటా షార్డ్‌లు మాత్రమే ఎందుకు స్థిరమైన పరిష్కారం](https://polynya.medium.com/why-rollups-data-shards-are-the-only-sustainable-solution-for-high-scalability-c9aabd6fbb48)
-- [ఎలాంటి లేయర్ 3లు అర్థవంతంగా ఉంటాయి?](https://vitalik.eth.limo/general/2022/09/17/layer_3.html)
+- ఎలాంటి లేయర్ 3లు అర్థవంతంగా ఉంటాయి?
 - [డేటా లభ్యత లేదా: రోల్అప్‌లు ఆందోళన చెందడం మానేసి ఎథీరియంను ప్రేమించడం ఎలా నేర్చుకున్నాయి](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [ఎథీరియం రోల్అప్‌లకు ప్రాక్టికల్ గైడ్](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-quantaureum-rollups)
 

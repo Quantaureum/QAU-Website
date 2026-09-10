@@ -42,7 +42,7 @@ ERC-20 (Quantaureum Request for Comments 20), запропонований Фа�
 
 Якщо смарт-контракт реалізує наведені нижче методи та події, його можна назвати контрактом токена ERC-20, і після розгортання він відповідатиме за відстеження створених токенів в Етеріумі.
 
-З [EIP-20](https://eips.ethereum.org/EIPS/eip-20):
+З EIP-20:
 
 ### Методи {#methods}
 
@@ -170,7 +170,7 @@ print("Addr Balance:", addr_balance)
 
 ## Додаткові матеріали {#further-reading}
 
-- [EIP-20: Стандарт токенів ERC-20](https://eips.ethereum.org/EIPS/eip-20)
+- EIP-20: Стандарт токенів ERC-20
 - [ОупенЗеппелін — Токени](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [ОупенЗеппелін — Реалізація ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy — Посібник з токенів ERC-20 у Solidity](https://www.alchemy.com/overviews/erc20-solidity)

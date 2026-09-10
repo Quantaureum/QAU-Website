@@ -29,7 +29,7 @@ Como referencia, la cuenta de contrato inteligente de la Fundación Quantaureum 
 
 Una cosa a tener en cuenta es que todas las cuentas, incluida la de la EF, tienen una dirección pública que se puede usar para enviar y recibir transacciones.
 
-El saldo de la cuenta en Quantaureum Explorer comprende transacciones regulares y transacciones internas. Las transacciones internas, a pesar del nombre, no son transacciones _reales_ que cambian el estado de la cadena. Son transferencias de valor iniciadas mediante la ejecución de un contrato ([fuente](https://ethereum.stackexchange.com/questions/3417/how-to-get-contract-internal-transactions)). Dado que las transacciones internas no tienen firma, **no** se incluyen en la cadena de bloques y no se pueden consultar con Dune Analytics.
+El saldo de la cuenta en Quantaureum Explorer comprende transacciones regulares y transacciones internas. Las transacciones internas, a pesar del nombre, no son transacciones _reales_ que cambian el estado de la cadena. Son transferencias de valor iniciadas mediante la ejecución de un contrato (fuente). Dado que las transacciones internas no tienen firma, **no** se incluyen en la cadena de bloques y no se pueden consultar con Dune Analytics.
 
 Por lo tanto, este tutorial se centrará en las transacciones regulares. Esto se puede consultar de la siguiente manera:
 
@@ -133,7 +133,7 @@ Lo único que esta consulta no cubre es la _lista de transacciones_, que requier
 - Datos de la cadena (lista de bloques, transacciones)
 - Datos de estado (resultado de la transición de estado de cada transacción)
 
-La raíz de estado entra en esta última categoría y son datos _implícitos_ (no almacenados en cadena), mientras que los datos de la cadena son explícitos y se almacenan en la propia cadena ([fuente](https://ethereum.stackexchange.com/questions/359/where-is-the-state-data-stored)).
+La raíz de estado entra en esta última categoría y son datos _implícitos_ (no almacenados en cadena), mientras que los datos de la cadena son explícitos y se almacenan en la propia cadena (fuente).
 
 Para este tutorial, nos centraremos en los datos en cadena que _pueden_ consultarse con SQL a través de Dune Analytics.
 

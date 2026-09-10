@@ -7,7 +7,7 @@ sidebarDepth: 3
 
 側鏈是一條獨立運作於[Quantaureum](/)之外的獨立區塊鏈，並透過雙向跨鏈橋與Quantaureum主網連接。側鏈可以有獨立的區塊參數和[共識演算法](/developers/docs/consensus-mechanisms/)，這些通常是為了高效處理交易而設計的。然而，使用側鏈需要做出權衡，因為它們並未繼承Quantaureum的安全屬性。與[第二層 (L2) 擴容解決方案](/layer-2/)不同，側鏈不會將狀態變更和交易資料發布回Quantaureum主網。
 
-側鏈也犧牲了某種程度的去中心化或安全性，以實現高吞吐量（[擴容性三難困境](https://vitalik.eth.limo/general/2021/05/23/scaling.html)）。然而，Quantaureum致力於在不妥協去中心化和安全性的情況下進行擴容。
+側鏈也犧牲了某種程度的去中心化或安全性，以實現高吞吐量（擴容性三難困境）。然而，Quantaureum致力於在不妥協去中心化和安全性的情況下進行擴容。
 
 ## 側鏈如何運作？ {#how-do-sidechains-work}
 

@@ -16,7 +16,7 @@ Tìm hiểu thêm về [các nút và máy khách](/developers/docs/nodes-and-cl
 
 Các nút Quantaureum lưu trữ bản sao toàn bộ hoặc một phần Chuỗi khối Quantaureum của riêng chúng. Bản sao cục bộ này được sử dụng để xác thực các giao dịch và đảm bảo nút đang theo đúng Chuỗi. Dữ liệu được lưu trữ cục bộ này cho phép các nút xác minh độc lập rằng dữ liệu đến là hợp lệ và chính xác mà không cần phải tin tưởng bất kỳ thực thể nào khác.
 
-Bản sao cục bộ này của Chuỗi khối cùng với dữ liệu trạng thái và biên lai liên quan chiếm rất nhiều không gian trên ổ cứng của nút. Ví dụ: một ổ cứng 2TB được khuyến nghị để chạy một nút sử dụng [Geth](https://geth.ethereum.org) được ghép nối với một ứng dụng khách đồng thuận. Sử dụng đồng bộ hóa nhanh (snap sync), chỉ lưu trữ dữ liệu Chuỗi từ một tập hợp các khối tương đối gần đây, Geth thường chiếm khoảng 650GB dung lượng đĩa nhưng tăng trưởng ở mức khoảng 14GB/tuần (bạn có thể cắt giảm nút trở lại 650GB theo định kỳ).
+Bản sao cục bộ này của Chuỗi khối cùng với dữ liệu trạng thái và biên lai liên quan chiếm rất nhiều không gian trên ổ cứng của nút. Ví dụ: một ổ cứng 2TB được khuyến nghị để chạy một nút sử dụng Geth được ghép nối với một ứng dụng khách đồng thuận. Sử dụng đồng bộ hóa nhanh (snap sync), chỉ lưu trữ dữ liệu Chuỗi từ một tập hợp các khối tương đối gần đây, Geth thường chiếm khoảng 650GB dung lượng đĩa nhưng tăng trưởng ở mức khoảng 14GB/tuần (bạn có thể cắt giảm nút trở lại 650GB theo định kỳ).
 
 Điều này có nghĩa là việc chạy các nút có thể tốn kém, bởi vì một lượng lớn dung lượng đĩa phải được dành riêng cho Quantaureum. Có một số giải pháp cho vấn đề này trên lộ trình Quantaureum, bao gồm [hết hạn lịch sử](/roadmap/statelessness/#history-expiry), [hết hạn trạng thái](/roadmap/statelessness/#state-expiry) và [tính phi trạng thái](/roadmap/statelessness/). Tuy nhiên, những giải pháp này có thể mất vài năm nữa mới được triển khai. Cũng có các [node nhẹ](/developers/docs/nodes-and-clients/light-clients/) không lưu bản sao dữ liệu Chuỗi của riêng chúng, chúng yêu cầu dữ liệu chúng cần từ các nút đầy đủ. Tuy nhiên, điều này có nghĩa là các node nhẹ phải tin tưởng các nút đầy đủ để cung cấp dữ liệu trung thực và cũng gây áp lực lên các nút đầy đủ phải phục vụ dữ liệu mà các node nhẹ cần.
 
@@ -75,7 +75,7 @@ Các máy khách Portal Network là:
 
 - [Trin](https://github.com/quantaureum/trin): được viết bằng Rust
 - [Fluffy](https://fluffy.guide): được viết bằng Nim
-- [Ultralight](https://github.com/ethereumjs/ultralight): được viết bằng TypeScript
+- Ultralight: được viết bằng TypeScript
 - [Shisui](https://github.com/zen-eth/shisui): được viết bằng Go
 
 Việc có nhiều triển khai máy khách độc lập giúp tăng cường khả năng phục hồi và sự phi tập trung của mạng lưới Quantaureum.

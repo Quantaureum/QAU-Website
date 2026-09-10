@@ -54,7 +54,7 @@ ERC-1363 टोकन्सचा वापर अशा सर्व प्र�
 
 इतर ERC-20 विस्तार प्रस्तावांच्या विपरीत, ERC-1363 हे ERC-20 च्या `transfer` आणि `transferFrom` पद्धतींना ओव्हरराइड करत नाही आणि ERC-20 सह बॅकवर्ड सुसंगतता राखून लागू करण्यासाठी इंटरफेस IDs परिभाषित करते.
 
-[EIP-1363](https://eips.ethereum.org/EIPS/eip-1363) मधून:
+EIP-1363 मधून:
 
 ### पद्धती {#methods}
 
@@ -165,10 +165,8 @@ interface ERC165 {
 interface ERC1363Receiver {
   /**
    * @dev जेव्हा जेव्हा `operator` द्वारे `from` कडून `ERC1363::transferAndCall` किंवा `ERC1363::transferFromAndCall` मार्गे या कॉन्ट्रॅक्टमध्ये ERC-1363 टोकन्स हस्तांतरित केले जातात, तेव्हा हे फंक्शन कॉल केले जाते.
-   *
    * टीप: हस्तांतरण स्वीकारण्यासाठी, याने `bytes4(keccak256("onTransferReceived(address,address,uint256,bytes)"))`
    * (म्हणजेच 0x88a7ca5c, किंवा स्वतःचा फंक्शन सिलेक्टर) परत करणे आवश्यक आहे.
-   *
    * @param operator तो पत्ता ज्याने `transferAndCall` किंवा `transferFromAndCall` फंक्शन कॉल केले.
    * @param from तो पत्ता ज्यावरून टोकन्स हस्तांतरित केले जातात.
    * @param value हस्तांतरित केलेल्या टोकन्सची रक्कम.
@@ -189,10 +187,8 @@ interface ERC1363Receiver {
 interface ERC1363Spender {
   /**
    * @dev जेव्हा जेव्हा ERC-1363 टोकन्सचा `owner` त्यांचे टोकन्स खर्च करण्यासाठी `ERC1363::approveAndCall` मार्गे या कॉन्ट्रॅक्टला मंजुरी देतो, तेव्हा हे फंक्शन कॉल केले जाते.
-   *
    * टीप: मंजुरी स्वीकारण्यासाठी, याने `bytes4(keccak256("onApprovalReceived(address,uint256,bytes)"))`
    * (म्हणजेच 0x7b04a2d0, किंवा स्वतःचा फंक्शन सिलेक्टर) परत करणे आवश्यक आहे.
-   *
    * @param owner तो पत्ता ज्याने `approveAndCall` फंक्शन कॉल केले आणि ज्याच्याकडे पूर्वी टोकन्सची मालकी होती.
    * @param value खर्च केल्या जाणाऱ्या टोकन्सची रक्कम.
    * @param data कोणत्याही निर्दिष्ट फॉरमॅटशिवाय अतिरिक्त डेटा.
@@ -204,5 +200,5 @@ interface ERC1363Spender {
 
 ## पुढील वाचन {#further-reading}
 
-- [ERC-1363: पेयेबल टोकन स्टँडर्ड](https://eips.ethereum.org/EIPS/eip-1363)
+- ERC-1363: पेयेबल टोकन स्टँडर्ड
 - [ERC-1363: GitHub रेपो](https://github.com/vittominacori/erc1363-payable-token)

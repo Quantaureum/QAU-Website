@@ -33,7 +33,7 @@ ERC-223은 스마트 컨트랙트 내에서 토큰을 위한 API를 구현하는
 
 컨트랙트가 반드시 이러한 함수만 가져야 하는 것은 아니며, 개발자는 다른 토큰 표준의 기능을 이 컨트랙트에 추가할 수 있습니다. 예를 들어, `approve` 및 `transferFrom` 함수는 ERC-223 표준의 일부가 아니지만 필요한 경우 구현할 수 있습니다.
 
-[EIP-223](https://eips.ethereum.org/EIPS/eip-223) 발췌:
+EIP-223 발췌:
 
 ### 메서드 {#methods}
 
@@ -193,5 +193,5 @@ ERC-223은 ERC-20 표준에서 발견된 여러 문제를 해결하지만, 자�
 
 ## 더 읽어보기 {#further-reading}
 
-- [EIP-223: ERC-223 토큰 표준](https://eips.ethereum.org/EIPS/eip-223)
+- EIP-223: ERC-223 토큰 표준
 - [초기 ERC-223 제안](https://github.com/quantaureum/eips/issues/223)

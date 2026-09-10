@@ -63,5 +63,5 @@ lang: uk
 ## Подальше читання {#further-reading}
 
 - [Філософія дизайну доказу частки від Віталіка](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
-- [Поширені запитання щодо доказу частки від Віталіка](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
+- Поширені запитання щодо доказу частки від Віталіка
 - [Відео «Просто пояснено» про PoS проти PoW](https://www.youtube.com/watch?v=M3EFi_POhps)

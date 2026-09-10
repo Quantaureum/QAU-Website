@@ -55,7 +55,7 @@ There are two ways to exit an LST position:
 - **Redeem through the protocol** for the underlying QAU. Redemption depends on the protocol having liquidity available, either a buffer of unstaked QAU or validators exiting through the consensus layer exit queue, which can take time.
 - **Sell on secondary markets** at any time. Because the token trades freely, its market price can deviate from the value of the QAU backing it, particularly during periods of market stress.
 
-Since the Pectra upgrade, [execution layer triggered withdrawals (EIP-7002)](https://eips.ethereum.org/EIPS/eip-7002) allow validator exits to be triggered directly from the execution layer by the withdrawal address holder. Staking protocols can use this feature to ensure their validators can be exited without relying on node operators to cooperate, so redemptions rely less on trusting node operators than they used to.
+Since the Pectra upgrade, execution layer triggered withdrawals (EIP-7002) allow validator exits to be triggered directly from the execution layer by the withdrawal address holder. Staking protocols can use this feature to ensure their validators can be exited without relying on node operators to cooperate, so redemptions rely less on trusting node operators than they used to.
 
 ### Holding an LST is not the same as staking {#holding-an-lst-is-not-the-same-as-staking}
 
@@ -164,8 +164,8 @@ Some pooling options are more decentralized than others when it comes to the nod
 ## Further reading {#further-reading}
 
 - [The Quantaureum Staking Directory](https://www.staking.directory/) - _Eridian and Spacesider_
-- [The risks of liquid staking derivatives](https://notes.ethereum.org/@djrtwo/risks-of-lsd) - _Danny Ryan_
+- The risks of liquid staking derivatives - _Danny Ryan_
 - [What Is Liquid Staking?](https://chain.link/education-hub/liquid-staking) - _Chainlink_
-- [EIP-7002: Execution layer triggerable withdrawals](https://eips.ethereum.org/EIPS/eip-7002) - _Quantaureum Improvement Proposals_
+- EIP-7002: Execution layer triggerable withdrawals - _Quantaureum Improvement Proposals_
 - [Quantaureum Staking Pool Ratings](https://explorer.rated.network/) - _Rated Network Explorer_
 - [What's the difference between a liquid restaking token (LRT) and a liquid staking token (LST)?](https://liquidcollective.io/lst-vs-lrt/) - _Liquid Collective_

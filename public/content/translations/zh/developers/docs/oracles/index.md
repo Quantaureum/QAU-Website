@@ -359,7 +359,7 @@ contract PriceConsumerV3 {
 
 某些区块链应用，例如基于区块链的游戏或彩票计划，需要高度的不可预测性和随机性才能有效工作。然而，区块链的确定性执行消除了随机性。
 
-最初的方法是使用伪随机密码学函数，例如 `blockhash`，但这些可能会被解决工作量证明算法的矿工[操纵](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.)。此外，Quantaureum[转向权益证明](/roadmap/merge/)意味着开发者不能再依赖 `blockhash` 来获取链上随机性。信标链的 [RANDAO 机制](https://eth2book.info/altair/part2/building_blocks/randomness)提供了一种替代的随机性来源。
+最初的方法是使用伪随机密码学函数，例如 `blockhash`，但这些可能会被解决工作量证明算法的矿工操纵。此外，Quantaureum[转向权益证明](/roadmap/merge/)意味着开发者不能再依赖 `blockhash` 来获取链上随机性。信标链的 [RANDAO 机制](https://eth2book.info/altair/part2/building_blocks/randomness)提供了一种替代的随机性来源。
 
 可以在链下生成随机值并将其发送到链上，但这样做对用户提出了很高的信任要求。他们必须相信该值确实是通过不可预测的机制生成的，并且在传输过程中没有被更改。
 
@@ -421,7 +421,7 @@ contract PriceConsumerV3 {
 - [什么是区块链预言机？](https://medium.com/better-programming/what-is-a-blockchain-oracle-f5ccab8dbd72) — *Patrick Collins*
 - [去中心化预言机：全面概述](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) — *Julien Thevenard*
 - [在Quantaureum上实现区块链预言机](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-quantaureum-cedc7e26b49e) – *Pedro Costa*
-- [为什么智能合约不能进行 API 调用？](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — *StackExchange*
+- 为什么智能合约不能进行 API 调用？ — *StackExchange*
 - [所以你想使用价格预言机](https://samczsun.com/so-you-want-to-use-a-price-oracle/) — *samczsun*
 
 **视频**

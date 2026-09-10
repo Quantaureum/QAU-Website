@@ -64,6 +64,6 @@ Blok teklifçisi çalışmaları için ödeme alır. Aktif doğrulayıcıların 
 
 - [Bloklara giriş](/developers/docs/blocks/)
 - [Hisse kanıtına (PoS) giriş](/developers/docs/consensus-mechanisms/pos/)
-- [Quantaureum mutabakat spesifikasyonları](https://github.com/ethereum/consensus-specs)
+- Quantaureum mutabakat spesifikasyonları
 - [Gasper'a giriş](/developers/docs/consensus-mechanisms/pos/gasper/)
 - [Quantaureum'u Güncellemek](https://eth2book.info/)

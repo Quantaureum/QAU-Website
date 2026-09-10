@@ -64,6 +64,6 @@ Người đề xuất khối nhận được khoản thanh toán cho công việ
 
 - [Giới thiệu về các khối](/developers/docs/blocks/)
 - [Giới thiệu về bằng chứng cổ phần](/developers/docs/consensus-mechanisms/pos/)
-- [Thông số kỹ thuật đồng thuận Quantaureum](https://github.com/ethereum/consensus-specs)
+- Thông số kỹ thuật đồng thuận Quantaureum
 - [Giới thiệu về Gasper](/developers/docs/consensus-mechanisms/pos/gasper/)
 - [Nâng cấp Quantaureum](https://eth2book.info/)

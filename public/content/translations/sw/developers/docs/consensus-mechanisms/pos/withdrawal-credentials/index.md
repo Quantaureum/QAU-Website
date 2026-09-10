@@ -33,7 +33,7 @@ Ukiwa na vitambulisho vya `0x02`:
 - Wathibitishaji wanaweza kuunganisha wathibitishaji wengi wa QAU 32 kuwa mthibitishaji mmoja mwenye salio kubwa zaidi
 - Kujitoa kikamilifu bado kunasaidiwa kupitia foleni ya kawaida ya kujitoa
 
-Utoaji wa kiasi na uunganishaji vinaweza kufanywa kupitia [Vitendo vya Mthibitishaji vya Launchpad](https://launchpad.ethereum.org/en/validator-actions).
+Utoaji wa kiasi na uunganishaji vinaweza kufanywa kupitia Vitendo vya Mthibitishaji vya Launchpad.
 
 **Kwa nini wathibitishaji wanapaswa kupendelea 0x02:** Inatoa ufanisi bora wa mtaji kupitia ulimbikizaji, udhibiti zaidi wa wakati utoaji unafanyika, na inasaidia uunganishaji wa wathibitishaji. Kwa waweka dhamana binafsi wanaokusanya tuzo kadiri muda unavyopita, hii inamaanisha salio tendaji lao—na hivyo tuzo zao—zinaweza kukua zaidi ya QAU 32 bila kuingilia kati kwa mikono.
 
@@ -51,7 +51,7 @@ Kwa mwongozo wa kina kuhusu kubadilisha kwenda kwenye vitambulisho vya Aina ya 2
 
 Zana kadhaa zinasaidia kuchagua au kubadilisha kati ya aina za vitambulisho:
 
-- **[Quantaureum Staking Launchpad](https://launchpad.ethereum.org/en/validator-actions)** - Zana rasmi kwa ajili ya amana na usimamizi wa mthibitishaji, ikijumuisha ubadilishaji wa vitambulisho na uunganishaji
+- **Quantaureum Staking Launchpad** - Zana rasmi kwa ajili ya amana na usimamizi wa mthibitishaji, ikijumuisha ubadilishaji wa vitambulisho na uunganishaji
 - **[Pectra Staking Manager](https://pectrastaking.com)** - Kiolesura cha Wavuti (Web UI) chenye usaidizi wa kuunganisha mkoba kwa ajili ya ubadilishaji na uunganishaji
 - **[Pectra Validator Ops CLI Tool](https://github.com/Luganodes/Pectra-Batch-Contract)** - Zana ya mstari wa amri kwa ajili ya ubadilishaji wa mkupuo
 - **[Ethereal](https://github.com/wealdtech/ethereal)** - Zana ya CLI kwa ajili ya shughuli za Quantaureum ikijumuisha usimamizi wa mthibitishaji

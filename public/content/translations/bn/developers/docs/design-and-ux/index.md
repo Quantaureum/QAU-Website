@@ -16,7 +16,7 @@ lang: bn
 
 - [Web3-তে আরও বেশি UX গবেষক এবং ডিজাইনার প্রয়োজন](https://blog.akasha.org/akasha-conversations-9-web3-needs-more-ux-researchers-and-designers) - বর্তমান ডিজাইন ম্যাচিউরিটির একটি ওভারভিউ
 - [Web3-তে UX গবেষণার একটি সহজ গাইড](https://uxplanet.org/a-complete-guide-to-ux-research-for-web-3-0-products-d6bead20ebb1) - কীভাবে গবেষণা করতে হয় তার সহজ গাইড
-- [Web3-তে UX সিদ্ধান্তগুলো কীভাবে নিতে হয়](https://archive.devcon.org/archive/watch/6/data-empathy-how-to-approach-ux-decisions-in-web3/) - পরিমাণগত (quantitative) এবং গুণগত (qualitative) গবেষণার একটি সংক্ষিপ্ত ওভারভিউ এবং এই দুইয়ের মধ্যে পার্থক্য (ভিডিও, 6 মিনিট)
+- Web3-তে UX সিদ্ধান্তগুলো কীভাবে নিতে হয় - পরিমাণগত (quantitative) এবং গুণগত (qualitative) গবেষণার একটি সংক্ষিপ্ত ওভারভিউ এবং এই দুইয়ের মধ্যে পার্থক্য (ভিডিও, 6 মিনিট)
 - [Web3-তে একজন UX গবেষক হওয়া](https://medium.com/@georgia.rakusen/what-its-like-being-a-user-researcher-in-web3-6a4bcc096849) - Web3-তে একজন UX গবেষক হওয়ার অভিজ্ঞতা কেমন, সে সম্পর্কে একটি ব্যক্তিগত দৃষ্টিভঙ্গি
 
 ## Web3-তে গবেষণামূলক স্টাডি {#research-in-web3}
@@ -38,7 +38,7 @@ lang: bn
 | <Tag status="error">DeFi</Tag>                  | [কভারেজ পুল](https://github.com/threshold-network/UX-User-Research/tree/main/Keep%20Coverage%20Pool)                                                                           |
 | <Tag status="error">DeFi</Tag>                  | [ConsenSys: বিকেন্দ্রীভূত অর্থব্যবস্থা (DeFi) ইউজার রিসার্চ রিপোর্ট 2022](https://cdn2.hubspot.net/hubfs/4795067/ConsenSys%20Codefi-Defi%20User%20ResearchReport.pdf)                                            |
 | <Tag variant="solid">মেটাভার্স</Tag>             | [মেটাভার্স: ইউজার রিসার্চ রিপোর্ট](https://www.politico.com/f/?id=00000187-7685-d820-a7e7-7e85d1420000)                                                                             |
-| <Tag variant="solid">মেটাভার্স</Tag>             | [সাফারিতে যাওয়া: মেটাভার্সে ইউজারদের নিয়ে গবেষণা](https://archive.devcon.org/archive/watch/6/going-on-safari-researching-users-in-the-metaverse/?tab=YouTube) (ভিডিও, 27 মিনিট)  |
+| <Tag variant="solid">মেটাভার্স</Tag>             | সাফারিতে যাওয়া: মেটাভার্সে ইউজারদের নিয়ে গবেষণা (ভিডিও, 27 মিনিট)  |
 
 ## Web3-এর জন্য ডিজাইন {#design-for-web3}
 

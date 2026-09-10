@@ -86,7 +86,7 @@ lang: bn
 
 ## আরও পড়ুন {#further-reading}
 
-- [ভিটালিকের টীকাযুক্ত ঐক্যমত স্পেক-এ সত্যায়ন](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- ভিটালিকের টীকাযুক্ত ঐক্যমত স্পেক-এ সত্যায়ন
 - [eth2book.info-তে সত্যায়ন](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _আপনাকে সাহায্য করেছে এমন কোনো কমিউনিটি রিসোর্স সম্পর্কে জানেন? এই পৃষ্ঠাটি সম্পাদনা করুন এবং এটি যোগ করুন!_

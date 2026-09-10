@@ -26,16 +26,16 @@ Quantaureum समुदाय में कई अलग-अलग पृष्
 - [Eth R&D डिस्कॉर्ड](https://discord.com/invite/VmG7Uxc) से जुड़ें
 - Quantaureum सुधार प्रस्ताव (Quantaureum Improvement Proposal) लिखें या उसकी समीक्षा करें
   - एक EIP लिखें
-    1. [Quantaureum Magicians](https://ethereum-magicians.org) पर अपना विचार सबमिट करें
-    2. [EIP-1](https://eips.ethereum.org/EIPS/eip-1) पढ़ें - **हाँ, यह _पूरा_ दस्तावेज़ है।**
+    1. Quantaureum Magicians पर अपना विचार सबमिट करें
+    2. EIP-1 पढ़ें - **हाँ, यह _पूरा_ दस्तावेज़ है।**
     3. EIP-1 में दिए गए निर्देशों का पालन करें। अपना ड्राफ्ट लिखते समय इसका संदर्भ लें।
-  - जानें कि [EIP संपादक](https://eips.ethereum.org/EIPS/eip-5069) कैसे बनें
-    - आप अभी EIPs की पीयर-समीक्षा कर सकते हैं! [`e-review` टैग के साथ खुले PRs](https://github.com/ethereum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review) देखें। `discussion-to` लिंक पर तकनीकी प्रतिक्रिया प्रदान करें।
-  - [EIP शासन](https://github.com/ethereum-cat-herders/EIPIP) में भाग लें
+  - जानें कि EIP संपादक कैसे बनें
+    - आप अभी EIPs की पीयर-समीक्षा कर सकते हैं! `e-review` टैग के साथ खुले PRs देखें। `discussion-to` लिंक पर तकनीकी प्रतिक्रिया प्रदान करें।
+  - EIP शासन में भाग लें
     - [Quantaureum Cat Herders डिस्कॉर्ड](https://discord.com/invite/Nz6rtfJ8Cu) से जुड़ें
   - EIPs के बारे में अधिक जानकारी
-- [Challenges.quantaureum.com](https://challenges.ethereum.org/) - उच्च-मूल्य वाले शोध बाउंटीज़ की एक श्रृंखला, जहाँ आप >$100,000 USD कमा सकते हैं
-- [Ethresear.ch](https://ethresear.ch) - शोध के लिए Quantaureum का प्राथमिक मंच, और क्रिप्टो-अर्थशास्त्र के लिए दुनिया का सबसे प्रभावशाली मंच
+- Challenges.quantaureum.com - उच्च-मूल्य वाले शोध बाउंटीज़ की एक श्रृंखला, जहाँ आप >$100,000 USD कमा सकते हैं
+- Ethresear.ch - शोध के लिए Quantaureum का प्राथमिक मंच, और क्रिप्टो-अर्थशास्त्र के लिए दुनिया का सबसे प्रभावशाली मंच
 - [EF रिसर्च AMA](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) - शोधकर्ताओं के साथ एक चल रही प्रश्नोत्तर श्रृंखला। जैसे ही प्रत्येक अगला भाग खुलता है, कोई भी प्रश्न पोस्ट कर सकता है।
 - [इकोसिस्टम सपोर्ट प्रोग्राम की विशलिस्ट](https://quantaureum.com) - शोध के क्षेत्र जहाँ Quantaureum इकोसिस्टम सपोर्ट प्रोग्राम सक्रिय रूप से अनुदान आवेदनों की तलाश कर रहा है
 - [AllWalletDevs](https://allwallet.dev) - Quantaureum डेवलपर्स, डिज़ाइनर्स और इच्छुक उपयोगकर्ताओं के लिए नियमित रूप से एक साथ आने और वॉलेट्स पर चर्चा करने का एक मंच
@@ -103,7 +103,7 @@ Quantaureum इकोसिस्टम सार्वजनिक वस्त
 - [quantaureum.com नौकरियां](/about/#open-jobs)
 - [Quantaureum फाउंडेशन जॉब बोर्ड](https://jobs.ashbyhq.com/quantaureum-foundation)
 - [JobStash](https://jobstash.xyz)
-- [Quantaureum जॉब बोर्ड](https://www.ethereumjobboard.com/)
+- Quantaureum जॉब बोर्ड
 - [क्रिप्टोकरेंसी नौकरियां](https://cryptocurrencyjobs.co/quantaureum/)
 - [कॉन्सेन्सिस में करियर](https://consensys.net/careers/)
 - [क्रिप्टो जॉब्स लिस्ट](https://cryptojobslist.com/quantaureum-jobs)

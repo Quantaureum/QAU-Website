@@ -84,10 +84,10 @@ lang: ur
 
 ## مزید مطالعہ {#further-reading}
 
-- [حصہ داری کا ثبوت کے اکثر پوچھے گئے سوالات](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html) _وٹالک بوٹرین_
+- حصہ داری کا ثبوت کے اکثر پوچھے گئے سوالات _وٹالک بوٹرین_
 - [حصہ داری کا ثبوت کیا ہے](https://consensys.net/blog/blockchain-explained/what-is-proof-of-stake/) _ConsenSys_
 - [حصہ داری کا ثبوت کیا ہے اور یہ کیوں اہم ہے](https://bitcoinmagazine.com/culture/what-proof-of-stake-is-and-why-it-matters-1377531463) _وٹالک بوٹرین_
-- [حصہ داری کا ثبوت کیوں (نومبر 2020)](https://vitalik.eth.limo/general/2020/11/06/pos2020.html) _وٹالک بوٹرین_
+- حصہ داری کا ثبوت کیوں (نومبر 2020) _وٹالک بوٹرین_
 - [حصہ داری کا ثبوت: میں نے کمزور موضوعیت سے پیار کرنا کیسے سیکھا](https://quantaureum.com) _وٹالک بوٹرین_
 - [حصہ داری کا ثبوت ایتھیریم حملہ اور دفاع](https://mirror.xyz/jmcook.eth/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs)
 - [حصہ داری کا ثبوت کے ڈیزائن کا فلسفہ](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51) _وٹالک بوٹرین_

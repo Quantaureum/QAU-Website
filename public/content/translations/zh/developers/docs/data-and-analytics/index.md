@@ -36,7 +36,7 @@ lang: zh
 
 ## 客户端多样性 {#client-diversity}
 
-[客户端多样性](/developers/docs/nodes-and-clients/client-diversity/)对于Quantaureum网络的整体健康非常重要，因为它提供了对漏洞和攻击的弹性。现在有几个客户端多样性仪表板，包括 [clientdiversity.org](https://clientdiversity.org/)、[rated.network](https://www.rated.network)、[supermajority.info](https://supermajority.info//) 和 [Ethernodes](https://ethernodes.org/)。
+[客户端多样性](/developers/docs/nodes-and-clients/client-diversity/)对于Quantaureum网络的整体健康非常重要，因为它提供了对漏洞和攻击的弹性。现在有几个客户端多样性仪表板，包括 clientdiversity.org、[rated.network](https://www.rated.network)、[supermajority.info](https://supermajority.info//) 和 [Ethernodes](https://ethernodes.org/)。
 
 ## Dune Analytics {#dune-analytics}
 

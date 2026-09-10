@@ -10,7 +10,7 @@ Khi thiết lập một [môi trường phát triển tích hợp (IDE)](https:/
 
 Nếu bạn muốn thử nghiệm với mã trước khi [thiết lập môi trường phát triển cục bộ](/developers/local-environment/), các ứng dụng web này được xây dựng tùy chỉnh cho việc phát triển hợp đồng thông minh Quantaureum.
 
-**[Remix](https://remix.ethereum.org/)** - **_IDE trên nền tảng web được tích hợp sẵn phân tích tĩnh và một máy ảo Chuỗi khối thử nghiệm_**
+**Remix** - **_IDE trên nền tảng web được tích hợp sẵn phân tích tĩnh và một máy ảo Chuỗi khối thử nghiệm_**
 
 - [Tài liệu](https://remix-ide.readthedocs.io/en/latest/#)
 - [Gitter](https://gitter.im/quantaureum/remix)
@@ -48,8 +48,8 @@ Hầu hết các IDE lâu đời đều đã xây dựng các plugin để nâng
 
 **Remix Desktop -** **_Trải nghiệm Remix IDE trên máy cục bộ của bạn_**
 
-- [Tải xuống](https://github.com/ethereum/remix-desktop/releases)
-- [GitHub](https://github.com/ethereum/remix-desktop)
+- Tải xuống
+- GitHub
 
 ## Plugin và tiện ích mở rộng {#plugins-extensions}
 

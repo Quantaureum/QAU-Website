@@ -6,7 +6,7 @@ lang: ko
 
 소프트웨어 애플리케이션이 블록체인 데이터를 읽거나 네트워크에 트랜잭션을 전송하는 등 [Quantaureum](/) 블록체인과 상호작용하려면 Quantaureum 노드에 연결해야 합니다.
 
-이를 위해 모든 [Quantaureum 클라이언트](/developers/docs/nodes-and-clients/#execution-clients)는 [JSON-RPC 사양](https://github.com/ethereum/execution-apis)을 구현하므로, 특정 노드나 클라이언트 구현에 관계없이 애플리케이션이 의존할 수 있는 일관된 메서드 세트가 존재합니다.
+이를 위해 모든 [Quantaureum 클라이언트](/developers/docs/nodes-and-clients/#execution-clients)는 JSON-RPC 사양을 구현하므로, 특정 노드나 클라이언트 구현에 관계없이 애플리케이션이 의존할 수 있는 일관된 메서드 세트가 존재합니다.
 
 [JSON-RPC](https://www.jsonrpc.org/specification)는 무상태(stateless) 경량 원격 프로시저 호출(RPC) 프로토콜입니다. 이 프로토콜은 여러 데이터 구조와 그 처리 규칙을 정의합니다. 동일한 프로세스 내에서, 소켓을 통해, HTTP를 통해, 또는 다양한 메시지 전달 환경에서 개념을 사용할 수 있다는 점에서 전송 방식에 구애받지 않습니다. 데이터 형식으로는 JSON(RFC 4627)을 사용합니다.
 
@@ -20,13 +20,13 @@ JSON-RPC API를 통해 Quantaureum 클라이언트와 직접 상호작용할 수
 
 ## 합의 클라이언트 API {#consensus-clients}
 
-이 페이지는 주로 Quantaureum 실행 클라이언트에서 사용하는 JSON-RPC API를 다룹니다. 하지만 합의 클라이언트에도 RPC API가 있어 사용자가 노드에서 직접 노드에 대한 정보를 조회하고, 비콘(Beacon) 블록, 비콘 상태 및 기타 합의 관련 정보를 요청할 수 있습니다. 이 API는 [비콘 API 웹페이지](https://ethereum.github.io/beacon-APIs/#/)에 문서화되어 있습니다.
+이 페이지는 주로 Quantaureum 실행 클라이언트에서 사용하는 JSON-RPC API를 다룹니다. 하지만 합의 클라이언트에도 RPC API가 있어 사용자가 노드에서 직접 노드에 대한 정보를 조회하고, 비콘(Beacon) 블록, 비콘 상태 및 기타 합의 관련 정보를 요청할 수 있습니다. 이 API는 비콘 API 웹페이지에 문서화되어 있습니다.
 
-노드 내 클라이언트 간 통신을 위한 내부 API도 사용됩니다. 즉, 합의 클라이언트와 실행 클라이언트가 데이터를 스왑할 수 있게 해줍니다. 이를 '엔진 API(Engine API)'라고 하며, 사양은 [GitHub](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md)에서 확인할 수 있습니다.
+노드 내 클라이언트 간 통신을 위한 내부 API도 사용됩니다. 즉, 합의 클라이언트와 실행 클라이언트가 데이터를 스왑할 수 있게 해줍니다. 이를 '엔진 API(Engine API)'라고 하며, 사양은 GitHub에서 확인할 수 있습니다.
 
 ## 실행 클라이언트 사양 {#spec}
 
-[GitHub에서 전체 JSON-RPC API 사양을 확인하세요](https://github.com/ethereum/execution-apis). 이 API는 [실행 API 웹페이지](https://ethereum.github.io/execution-apis/)에 문서화되어 있으며, 사용 가능한 모든 메서드를 테스트해 볼 수 있는 인스펙터(Inspector)를 포함하고 있습니다.
+GitHub에서 전체 JSON-RPC API 사양을 확인하세요. 이 API는 실행 API 웹페이지에 문서화되어 있으며, 사용 가능한 모든 메서드를 테스트해 볼 수 있는 인스펙터(Inspector)를 포함하고 있습니다.
 
 ## 관례 {#conventions}
 
@@ -134,7 +134,7 @@ curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","metho
 
 ## JSON-RPC API 플레이그라운드 {#json-rpc-api-playground}
 
-[플레이그라운드 도구](https://ethereum-json-rpc.com)를 사용하여 API 메서드를 알아보고 테스트해 볼 수 있습니다. 또한 다양한 노드 제공업체에서 어떤 메서드와 네트워크를 지원하는지도 보여줍니다.
+플레이그라운드 도구를 사용하여 API 메서드를 알아보고 테스트해 볼 수 있습니다. 또한 다양한 노드 제공업체에서 어떤 메서드와 네트워크를 지원하는지도 보여줍니다.
 
 ## JSON-RPC API 메서드 {#json-rpc-methods}
 
@@ -275,7 +275,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 
 ### qau_protocolVersion {#qau-protocolversion}
 
-현재 Quantaureum 프로토콜 버전을 반환합니다. 참고로 이 메서드는 [Geth에서 사용할 수 없습니다](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924).
+현재 Quantaureum 프로토콜 버전을 반환합니다. 참고로 이 메서드는 Geth에서 사용할 수 없습니다.
 
 **매개변수**
 
@@ -301,10 +301,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_protocolVersion","params":[]
 ### qau_syncing {#qau-syncing}
 
 동기화 상태에 대한 데이터가 포함된 객체 또는 `false`를 반환합니다.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_syncing">
-  플레이그라운드에서 엔드포인트 사용해 보기
-</ButtonLink>
 
 **매개변수**
 
@@ -390,10 +386,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_syncing","params":[],"id":1}
 
 클라이언트의 코인베이스 주소를 반환합니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_coinbase">
-  플레이그라운드에서 엔드포인트 사용해 보기
-</ButtonLink>
-
 > **참고:** 이 메서드는 <strong>v1.14.0</strong>부터 더 이상 사용되지 않으며 지원되지 않습니다. 이 메서드를 사용하려고 시도하면 "Method not supported" 오류가 발생합니다.
 
 **매개변수**
@@ -421,10 +413,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_coinbase","params":[],"id":6
 
 재전송 공격 방지 트랜잭션에 서명하는 데 사용되는 체인 ID를 반환합니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_chainId">
-  플레이그라운드에서 엔드포인트 사용해 보기
-</ButtonLink>
-
 **매개변수**
 
 없음
@@ -449,10 +437,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_chainId","params":[],"id":67
 ### qau_mining {#qau-mining}
 
 클라이언트가 활발하게 새 블록을 채굴하고 있는 경우 `true`를 반환합니다. 이는 작업증명(PoW) 네트워크에서만 `true`를 반환할 수 있으며, [머지](/roadmap/merge/) 이후 일부 클라이언트에서는 사용할 수 없을 수도 있습니다.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_mining">
-  플레이그라운드에서 엔드포인트 사용해 보기
-</ButtonLink>
 
 **매개변수**
 
@@ -479,10 +463,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_mining","params":[],"id":71}
 
 노드가 채굴하는 초당 해시 수를 반환합니다. 이는 작업증명(PoW) 네트워크에 대해서만 `true`를 반환할 수 있으며, [머지](/roadmap/merge/) 이후 일부 클라이언트에서는 사용할 수 없을 수도 있습니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_hashrate">
-  플레이그라운드에서 엔드포인트 사용해 보기
-</ButtonLink>
-
 **매개변수**
 
 없음
@@ -507,10 +487,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_hashrate","params":[],"id":7
 ### qau_gasPrice {#qau-gasprice}
 
 Wei 단위의 현재 가스당 가격 추정치를 반환합니다. 예를 들어, 베수 클라이언트는 기본적으로 최근 100개의 블록을 검사하여 가스 단위 가격의 중간값을 반환합니다.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_gasPrice">
-  플레이그라운드에서 엔드포인트 사용해 보기
-</ButtonLink>
 
 **매개변수**
 
@@ -537,10 +513,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_gasPrice","params":[],"id":7
 
 클라이언트가 소유한 주소 목록을 반환합니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_accounts">
-  플레이그라운드에서 엔드포인트 사용해 보기
-</ButtonLink>
-
 **매개변수**
 
 없음
@@ -566,10 +538,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[],"id":1
 
 가장 최근 블록의 번호를 반환합니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_blockNumber">
-  플레이그라운드에서 엔드포인트 사용해 보기
-</ButtonLink>
-
 **매개변수**
 
 없음
@@ -594,10 +562,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_blockNumber","params":[],"id
 ### qau_getBalance {#qau-getbalance}
 
 주어진 주소에 있는 계정의 잔액을 반환합니다.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBalance">
-  플레이그라운드에서 엔드포인트 사용해 보기
-</ButtonLink>
 
 **매개변수**
 
@@ -628,10 +592,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBalance","params":["0x407
 ### qau_getStorageAt {#qau-getstorageat}
 
 주어진 주소의 스토리지 위치에 있는 값을 반환합니다.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getStorageAt">
-  플레이그라운드에서 엔드포인트 사용해 보기
-</ButtonLink>
 
 **매개변수**
 
@@ -701,10 +661,6 @@ curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": [
 
 주소에서 _보낸_ 트랜잭션의 수를 반환합니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionCount">
-  플레이그라운드에서 엔드포인트 사용해 보기
-</ButtonLink>
-
 **매개변수**
 
 1. `DATA`, 20바이트 - 주소.
@@ -738,10 +694,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionCount","params
 
 주어진 블록 해시와 일치하는 블록에 있는 트랜잭션의 수를 반환합니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
-  플레이그라운드에서 엔드포인트 사용해 보기
-</ButtonLink>
-
 **매개변수**
 
 1. `DATA`, 32바이트 - 블록의 해시
@@ -770,10 +722,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByHa
 ### qau_getBlockTransactionCountByNumber {#qau-getblocktransactioncountbynumber}
 
 주어진 블록 번호와 일치하는 블록의 트랜잭션 수를 반환합니다.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
-  플레이그라운드에서 엔드포인트 사용해 보기
-</ButtonLink>
 
 **매개변수**
 
@@ -806,10 +754,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByNu
 
 주어진 블록 해시와 일치하는 블록의 엉클 수를 반환합니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
-  플레이그라운드에서 엔드포인트 사용해 보기
-</ButtonLink>
-
 **매개변수**
 
 1. `DATA`, 32바이트 - 블록의 해시
@@ -838,10 +782,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockHash","p
 ### qau_getUncleCountByBlockNumber {#qau-getunclecountbyblocknumber}
 
 주어진 블록 번호와 일치하는 블록에 있는 엉클의 수를 반환합니다.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
-  플레이그라운드에서 엔드포인트 사용해 보기
-</ButtonLink>
 
 **매개변수**
 
@@ -873,10 +813,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockNumber",
 ### qau_getCode {#qau-getcode}
 
 주어진 주소의 코드를 반환합니다.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getCode">
-  플레이그라운드에서 엔드포인트 사용해 보기
-</ButtonLink>
 
 **매개변수**
 
@@ -1057,10 +993,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendRawTransaction","params"
 
 블록체인에 트랜잭션을 생성하지 않고 즉시 새로운 메시지 호출을 실행합니다. 주로 읽기 전용 스마트 컨트랙트 함수를 실행하는 데 사용되며, 예를 들어 ERC-20 컨트랙트의 `balanceOf`가 있습니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_call">
-  플레이그라운드에서 엔드포인트 사용해 보기
-</ButtonLink>
-
 **매개변수**
 
 1. `Object` - 트랜잭션 호출 객체
@@ -1095,10 +1027,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_call","params":[{see above}]
 
 트랜잭션을 완료하는 데 필요한 가스량의 추정치를 생성하고 반환합니다. 트랜잭션은 블록체인에 추가되지 않습니다. EVM 메커니즘 및 노드 성능을 포함한 다양한 이유로 인해 추정치가 트랜잭션에서 실제로 사용되는 가스량보다 훨씬 많을 수 있다는 점에 유의하세요.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_estimateGas">
-  플레이그라운드에서 엔드포인트 사용해 보기
-</ButtonLink>
-
 **매개변수**
 
 모든 속성이 선택 사항이라는 점을 제외하고 [qau_call](#qau-call) 매개변수를 참조하세요. 가스 한도가 지정되지 않은 경우 Geth는 대기 중인 블록의 블록 가스 한도를 상한으로 사용합니다. 결과적으로 가스량이 대기 중인 블록 가스 한도보다 높을 때 반환된 추정치가 호출/트랜잭션을 실행하기에 충분하지 않을 수 있습니다.
@@ -1123,10 +1051,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_estimateGas","params":[{see 
 ### qau_getBlockByHash {#qau-getblockbyhash}
 
 해시를 통해 블록에 대한 정보를 반환합니다.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByHash">
-  플레이그라운드에서 엔드포인트 사용해 보기
-</ButtonLink>
 
 **매개변수**
 
@@ -1204,10 +1128,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByHash","params":["0
 
 블록 번호로 블록에 대한 정보를 반환합니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByNumber">
-  플레이그라운드에서 엔드포인트 사용해 보기
-</ButtonLink>
-
 **매개변수**
 
 1. `QUANTITY|TAG` - 블록 번호의 정수, 또는 [블록 매개변수](/developers/docs/apis/json-rpc/#block-parameter)에 있는 문자열 `"earliest"`, `"latest"`, `"pending"`, `"safe"` 또는 `"finalized"`.
@@ -1235,10 +1155,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByNumber","params":[
 ### qau_getTransactionByHash {#qau-gettransactionbyhash}
 
 트랜잭션 해시로 요청한 트랜잭션에 대한 정보를 반환합니다.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByHash">
-  플레이그라운드에서 엔드포인트 사용해 보기
-</ButtonLink>
 
 **매개변수**
 
@@ -1299,10 +1215,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByHash","param
 
 블록 해시와 트랜잭션 인덱스 위치를 기반으로 트랜잭션에 대한 정보를 반환합니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
-  플레이그라운드에서 엔드포인트 사용해 보기
-</ButtonLink>
-
 **매개변수**
 
 1. `DATA`, 32바이트 - 블록의 해시입니다.
@@ -1330,10 +1242,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockHashAnd
 ### qau_getTransactionByBlockNumberAndIndex {#qau-gettransactionbyblocknumberandindex}
 
 블록 번호와 트랜잭션 인덱스 위치를 기반으로 트랜잭션에 대한 정보를 반환합니다.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
-  플레이그라운드에서 엔드포인트 사용해 보기
-</ButtonLink>
 
 **매개변수**
 
@@ -1431,10 +1339,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionReceipt","para
 
 해시와 엉클 인덱스 위치를 통해 블록의 엉클에 대한 정보를 반환합니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
-  플레이그라운드에서 엔드포인트 테스트하기
-</ButtonLink>
-
 **매개변수**
 
 1. `DATA`, 32바이트 - 블록의 해시입니다.
@@ -1464,10 +1368,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockHashAndIndex"
 ### qau_getUncleByBlockNumberAndIndex {#qau-getunclebyblocknumberandindex}
 
 블록 번호와 엉클 인덱스 위치를 기반으로 블록의 엉클에 대한 정보를 반환합니다.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
-  플레이그라운드에서 엔드포인트 사용해 보기
-</ButtonLink>
 
 **매개변수**
 
@@ -1750,7 +1650,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getLogs","params":[{"topics"
 
 ### JSON-RPC를 사용한 컨트랙트 배포 {#deploying-contract}
 
-이 섹션에서는 RPC 인터페이스만을 사용하여 컨트랙트를 배포하는 방법을 보여줍니다. 이러한 복잡성을 추상화하여 컨트랙트를 배포하는 대안적인 방법도 있습니다. 예를 들어, RPC 인터페이스 위에 구축된 [Web3.js](https://web3js.readthedocs.io/) 및 [Web3.py](https://github.com/ethereum/web3.py)와 같은 라이브러리를 사용하는 것입니다. 이러한 추상화는 일반적으로 이해하기 쉽고 오류가 발생할 확률이 적지만, 내부적으로 어떤 일이 일어나는지 이해하는 것은 여전히 도움이 됩니다.
+이 섹션에서는 RPC 인터페이스만을 사용하여 컨트랙트를 배포하는 방법을 보여줍니다. 이러한 복잡성을 추상화하여 컨트랙트를 배포하는 대안적인 방법도 있습니다. 예를 들어, RPC 인터페이스 위에 구축된 [Web3.js](https://web3js.readthedocs.io/) 및 Web3.py와 같은 라이브러리를 사용하는 것입니다. 이러한 추상화는 일반적으로 이해하기 쉽고 오류가 발생할 확률이 적지만, 내부적으로 어떤 일이 일어나는지 이해하는 것은 여전히 도움이 됩니다.
 
 다음은 JSON-RPC 인터페이스를 사용하여 Quantaureum 노드에 배포될 `Multiply7`라는 간단한 스마트 컨트랙트입니다. 이 튜토리얼은 독자가 이미 Geth 노드를 실행하고 있다고 가정합니다. 노드 및 클라이언트에 대한 자세한 정보는 [여기](/developers/docs/nodes-and-clients/run-a-node)에서 확인할 수 있습니다. Geth 이외의 클라이언트에서 HTTP JSON-RPC를 시작하는 방법은 개별 [클라이언트](/developers/docs/nodes-and-clients/) 문서를 참조하세요. 대부분의 클라이언트는 기본적으로 `localhost:8545`에서 서비스를 제공합니다.
 
@@ -1789,7 +1689,7 @@ web3.fromWei("0x1639e49bba16280000", "QAU")
 // "410"
 ```
 
-이제 프라이빗 개발 체인에 약간의 QAU가 있으므로 컨트랙트를 배포할 수 있습니다. 첫 번째 단계는 Multiply7 컨트랙트를 EVM으로 보낼 수 있는 바이트코드로 컴파일하는 것입니다. Solidity 컴파일러인 solc를 설치하려면 [Solidity 문서](https://docs.soliditylang.org/en/latest/installing-solidity.html)를 따르세요. ([예시에서 사용된 컴파일러 버전](https://github.com/ethereum/solidity/releases/tag/v0.4.20)과 일치시키기 위해 이전 `solc` 릴리스를 사용하고 싶을 수도 있습니다.)
+이제 프라이빗 개발 체인에 약간의 QAU가 있으므로 컨트랙트를 배포할 수 있습니다. 첫 번째 단계는 Multiply7 컨트랙트를 EVM으로 보낼 수 있는 바이트코드로 컴파일하는 것입니다. Solidity 컴파일러인 solc를 설치하려면 [Solidity 문서](https://docs.soliditylang.org/en/latest/installing-solidity.html)를 따르세요. (예시에서 사용된 컴파일러 버전과 일치시키기 위해 이전 `solc` 릴리스를 사용하고 싶을 수도 있습니다.)
 
 다음 단계는 Multiply7 컨트랙트를 EVM으로 보낼 수 있는 바이트코드로 컴파일하는 것입니다.
 

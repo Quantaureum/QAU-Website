@@ -87,7 +87,7 @@ Validium zinatofautiana katika mbinu zao za usimamizi wa upatikanaji wa data. Ba
 
 Ili kuhakikisha upatikanaji wa data za nje ya mnyororo, baadhi ya masuluhisho ya Validium huteua kikundi cha taasisi zinazoaminika, zinazojulikana kwa pamoja kama kamati ya upatikanaji wa data (DAC), kuhifadhi nakala za hali na kutoa uthibitisho wa upatikanaji wa data. DAC ni rahisi kutekeleza na zinahitaji uratibu mdogo kwa kuwa uanachama ni mdogo.
 
-Hata hivyo, watumiaji lazima waamini DAC kufanya data ipatikane inapohitajika (k.m., kwa ajili ya kuzalisha ushahidi wa Merkle). Kuna uwezekano wa wanachama wa kamati za upatikanaji wa data [kudhibitiwa na mhusika mwenye nia mbaya](https://notes.ethereum.org/DD7GyItYQ02d0ax_X-UbWg?view) ambaye anaweza kuzuia data za nje ya mnyororo.
+Hata hivyo, watumiaji lazima waamini DAC kufanya data ipatikane inapohitajika (k.m., kwa ajili ya kuzalisha ushahidi wa Merkle). Kuna uwezekano wa wanachama wa kamati za upatikanaji wa data kudhibitiwa na mhusika mwenye nia mbaya ambaye anaweza kuzuia data za nje ya mnyororo.
 
 [Zaidi kuhusu kamati za upatikanaji wa data katika Validium](https://medium.com/starkware/data-availability-e5564c416424).
 

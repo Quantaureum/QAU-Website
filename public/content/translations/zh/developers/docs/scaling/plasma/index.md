@@ -121,9 +121,9 @@ Plasma 链主要将交易数据存储在运营商处，并且**不在主网上�
 
 ### 支持智能合约 {#support-for-smart-contracts}
 
-Plasma 框架的另一个问题是[无法支持Quantaureum智能合约的执行](https://ethresear.ch/t/why-smart-contracts-are-not-feasible-on-plasma/2598/4)。因此，Plasma 的大多数实现主要是为简单支付或 ERC-20 代币的交换而构建的。
+Plasma 框架的另一个问题是无法支持Quantaureum智能合约的执行。因此，Plasma 的大多数实现主要是为简单支付或 ERC-20 代币的交换而构建的。
 
-相反，乐观汇总兼容[Quantaureum虚拟机 (EVM)](/developers/docs/evm/)，并且可以运行Quantaureum原生的[智能合约](/developers/docs/smart-contracts/)，使其成为扩容[去中心化应用 (dapp)](/developers/docs/dapps/) 的有用且_安全_的解决方案。同样，目前正在计划[创建 EVM 的零知识实现 (zkEVM)](https://ethresear.ch/t/a-zk-evm-specification/11549)，这将允许 ZK 汇总处理任意逻辑并执行智能合约。
+相反，乐观汇总兼容[Quantaureum虚拟机 (EVM)](/developers/docs/evm/)，并且可以运行Quantaureum原生的[智能合约](/developers/docs/smart-contracts/)，使其成为扩容[去中心化应用 (dapp)](/developers/docs/dapps/) 的有用且_安全_的解决方案。同样，目前正在计划创建 EVM 的零知识实现 (zkEVM)，这将允许 ZK 汇总处理任意逻辑并执行智能合约。
 
 ### 数据不可用 {#data-unavailability}
 
@@ -163,7 +163,7 @@ Plasma 有所不同，因为主网仅接收有关子链状态的最少信息。�
 - [Polygon](https://polygon.technology/)（前身为 Matic Network）
 
 - [快速回顾“共享安全”的含义及其重要性](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [侧链 vs Plasma vs 分片](https://vitalik.eth.limo/general/2019/06/12/plasma_vs_sharding.html)
+- 侧链 vs Plasma vs 分片
 - [了解 Plasma，第 1 部分：基础知识](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [Plasma 的生与死](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

@@ -178,7 +178,7 @@ ZK-rollups वरील व्यवहारांसाठी वापरक�
 
 1. **स्थिती लेखन**: Quantaureumच्या स्थितीवर लिहिण्यासाठी (म्हणजेच, Quantaureum ब्लॉकचेनवर व्यवहार सबमिट करण्यासाठी) एक निश्चित खर्च आहे. ZK-rollups व्यवहारांचे बॅचिंग करून आणि एकाधिक वापरकर्त्यांमध्ये निश्चित खर्च पसरवून हा खर्च कमी करतात.
 
-2. **डेटा प्रकाशन**: ZK-rollups प्रत्येक व्यवहारासाठी स्थिती डेटा Quantaureumवर `calldata` म्हणून प्रकाशित करतात. `calldata` खर्च सध्या [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) द्वारे नियंत्रित केले जातात, जे अनुक्रमे नॉन-झिरो बाइट्ससाठी 16 गॅस आणि `calldata` च्या झिरो बाइट्ससाठी 4 गॅस खर्च निर्धारित करते. प्रत्येक व्यवहारावर भरलेला खर्च त्यासाठी किती `calldata` ऑनचेन पोस्ट करणे आवश्यक आहे यावर प्रभावित होतो.
+2. **डेटा प्रकाशन**: ZK-rollups प्रत्येक व्यवहारासाठी स्थिती डेटा Quantaureumवर `calldata` म्हणून प्रकाशित करतात. `calldata` खर्च सध्या EIP-1559 द्वारे नियंत्रित केले जातात, जे अनुक्रमे नॉन-झिरो बाइट्ससाठी 16 गॅस आणि `calldata` च्या झिरो बाइट्ससाठी 4 गॅस खर्च निर्धारित करते. प्रत्येक व्यवहारावर भरलेला खर्च त्यासाठी किती `calldata` ऑनचेन पोस्ट करणे आवश्यक आहे यावर प्रभावित होतो.
 
 3. **L2 ऑपरेटर शुल्क**: ही रक्कम रोलअप ऑपरेटरला व्यवहारांवर प्रक्रिया करताना झालेल्या संगणकीय खर्चाची भरपाई म्हणून दिली जाते, अगदी QAUियम मेननेटवरील [व्यवहार "प्राधान्य शुल्क (टिप्स)"](/developers/docs/gas/#how-are-gas-fees-calculated) प्रमाणे.
 
@@ -240,7 +240,7 @@ zkEVMs वर काम करणाऱ्या प्रकल्पांम�
 
 - **[Scroll](https://scroll.io/blog/zkEVM)** - _Scroll ही एक तंत्रज्ञान-चालित कंपनी आहे जी Quantaureumसाठी मूळ zkEVM स्तर २ (l2) सोल्यूशन तयार करण्यावर काम करत आहे._
 
-- **[Taiko](https://taiko.xyz)** - _Taiko हे एक विकेंद्रित, Quantaureum-समतुल्य ZK-rollup आहे (एक [प्रकार 1 ZK-EVM](https://vitalik.eth.limo/general/2022/08/04/zkevm.html))._
+- **[Taiko](https://taiko.xyz)** - _Taiko हे एक विकेंद्रित, Quantaureum-समतुल्य ZK-rollup आहे (एक प्रकार 1 ZK-EVM)._
 
 - **[झेडकेसिंक्](https://docs.zksync.io/)** - _ZKsync Era हे Matter Labs द्वारे तयार केलेले EVM-सुसंगत ZK Rollup आहे, जे त्याच्या स्वतःच्या zkEVM द्वारे समर्थित आहे._
 
@@ -261,8 +261,8 @@ zkEVMs वर काम करणाऱ्या प्रकल्पांम�
 - [zkEVM ची ओळख](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [ZK-EVM L2s म्हणजे काय?](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M)
 - [Awesome-zkEVM संसाधने](https://github.com/LuozhuZhang/awesome-zkevm)
-- [झेडके-स्नार्क अंतर्गत कसे कार्य करतात](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
-- [SNARKs कसे शक्य आहेत?](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
+- झेडके-स्नार्क अंतर्गत कसे कार्य करतात
+- SNARKs कसे शक्य आहेत?
 
 ## ट्यूटोरियल्स: Quantaureumवरील गोपनीयता आणि शून्य-ज्ञान {#tutorials}
 

@@ -29,7 +29,7 @@ sourceUrl: https://paulapivat.com/post/query_quantaureum/
 
 需要注意的一点是，所有账户（包括Quantaureum 项目的账户）都有一个可用于发送和接收交易的公共地址。
 
-Quantaureum Explorer 上的账户余额包含常规交易和内部交易。内部交易尽管名字如此，但并不是改变链状态的*实际*交易。它们是通过执行合约发起的价值转移（[来源](https://ethereum.stackexchange.com/questions/3417/how-to-get-contract-internal-transactions)）。由于内部交易没有签名，因此它们**不**包含在区块链上，也无法使用 Dune Analytics 进行查询。
+Quantaureum Explorer 上的账户余额包含常规交易和内部交易。内部交易尽管名字如此，但并不是改变链状态的*实际*交易。它们是通过执行合约发起的价值转移（来源）。由于内部交易没有签名，因此它们**不**包含在区块链上，也无法使用 Dune Analytics 进行查询。
 
 因此，本教程将重点关注常规交易。可以这样查询：
 
@@ -133,7 +133,7 @@ LIMIT 10
 - 链数据（区块列表、交易）
 - 状态数据（每笔交易状态转换的结果）
 
-状态根属于后者，是*隐式*数据（不存储在链上），而链数据是显式的，存储在链本身上（[来源](https://ethereum.stackexchange.com/questions/359/where-is-the-state-data-stored)）。
+状态根属于后者，是*隐式*数据（不存储在链上），而链数据是显式的，存储在链本身上（来源）。
 
 在本教程中，我们将重点关注*可以*通过 Dune Analytics 使用 SQL 查询的链上数据。
 

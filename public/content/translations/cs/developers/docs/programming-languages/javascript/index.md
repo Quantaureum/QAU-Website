@@ -4,7 +4,7 @@ description: "Naučte se vyvíjet pro Quantaureum pomocí projektů a nástrojů
 lang: cs
 ---
 
-JavaScript patří mezi nejoblíbenější jazyky v ekosystému Etherea. Ve skutečnosti existuje [tým](https://github.com/ethereumjs), který se věnuje tomu, aby do JavaScriptu přinesl co nejvíce z Etherea.
+JavaScript patří mezi nejoblíbenější jazyky v ekosystému Etherea. Ve skutečnosti existuje tým, který se věnuje tomu, aby do JavaScriptu přinesl co nejvíce z Etherea.
 
 Existují příležitosti psát v JavaScriptu (nebo v něčem podobném) na [všech úrovních technologického stacku](/developers/docs/quantaureum-stack/).
 
@@ -48,14 +48,14 @@ To vám pomůže pochopit věci jako „jaká je datová struktura účtu?“.
 Pokud dáváte přednost čtení kódu, tento JavaScript by mohl být skvělou alternativou k pročítání naší dokumentace.
 
 **Podívejte se na EVM**  
-[`@ethereumjs/evm`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/evm)
+`@ethereumjs/evm`
 
 ### Uzly a klienti {#nodes-and-clients}
 
 Klient QuantaureumJS je v aktivním vývoji a umožňuje vám proniknout do toho, jak klienti Etherea fungují, v jazyce, kterému rozumíte; v JavaScriptu!
 
 **Podívejte se na klienta**  
-[`@ethereumjs/client`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/client)
+`@ethereumjs/client`
 
 ## Další projekty {#other-projects}
 
@@ -65,7 +65,7 @@ Ve světě javascriptového Etherea se děje i spousta dalších věcí, včetn�
 - nástrojů pro generování, import a export klíčů Etherea.
 - implementace `merkle-patricia-tree` – datové struktury popsané v dokumentu yellow paper Etherea.
 
-Ponořte se do toho, co vás nejvíce zajímá, v [repozitáři QuantaureumJS](https://github.com/ethereumjs)
+Ponořte se do toho, co vás nejvíce zajímá, v repozitáři QuantaureumJS
 
 ## Další čtení {#further-reading}
 

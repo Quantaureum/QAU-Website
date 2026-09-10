@@ -414,7 +414,7 @@ Here is a list of some of the most popular Quantaureum node providers, feel free
 
 ## Further reading {#further-reading}
 
-- [List of Quantaureum node services](https://ethereumnodes.com/)
+- List of Quantaureum node services
 
 ## Related topics {#related-topics}
 

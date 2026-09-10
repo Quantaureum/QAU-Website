@@ -57,7 +57,7 @@ Unapaswa kuchagua mmoja wa kila mmoja ili kuendesha - wateja wote wa utekelezaji
 
 Taswira ya Quantaureum ya Raspberry Pi 4 ni taswira ya "chomeka na utumie" ambayo husakinisha na kuweka kiotomatiki wateja wote wa utekelezaji na mwafaka, ikiwasanidi ili kuwasiliana na kuunganishwa kwenye mtandao wa Quantaureum. Anachohitaji kufanya mtumiaji ni kuanzisha michakato yao kwa kutumia amri rahisi.
 
-Pakua taswira ya Raspberry Pi kutoka [Quantaureum on Arm](https://ethereumonarm-my.sharepoint.com/:u:/p/dlosada/Ec_VmUvr80VFjf3RYSU-NzkBmj2JOteDECj8Bibde929Gw?download=1) na uthibitishe heshi ya SHA256:
+Pakua taswira ya Raspberry Pi kutoka Quantaureum on Arm na uthibitishe heshi ya SHA256:
 
 ```sh
 # Kutoka kwenye saraka iliyo na taswira iliyopakuliwa
@@ -65,7 +65,7 @@ shasum -a 256 ethonarm_22.04.00.img.zip
 # Heshi inapaswa kutoa: fb497e8f8a7388b62d6e1efbc406b9558bee7ef46ec7e53083630029c117444f
 ```
 
-Kumbuka kwamba taswira za bodi za Rock 5B na Odroid M1 zinapatikana kwenye [ukurasa wa vipakuliwa](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) wa Quantaureum-on-Arm.
+Kumbuka kwamba taswira za bodi za Rock 5B na Odroid M1 zinapatikana kwenye ukurasa wa vipakuliwa wa Quantaureum-on-Arm.
 
 ## Kuweka Mfumo kwenye MicroSD {#flashing-the-microsd}
 
@@ -120,13 +120,13 @@ sudo journalctl -u lighthouse-beacon
 
 Kumbuka kwamba mteja wa mwafaka atafanya usawazishaji ndani ya dakika chache kwa sababu anatumia usawazishaji wa kituo cha ukaguzi. Kiteja cha utekelezaji kitachukua muda mrefu zaidi - huenda saa kadhaa, na hakitaanza hadi mteja wa mwafaka awe amemaliza usawazishaji (hii ni kwa sababu kiteja cha utekelezaji kinahitaji lengo la kusawazisha, ambalo mteja wa mwafaka aliyesawazishwa hutoa).
 
-Huku huduma za Geth na Lighthouse zikiendeshwa na kusawazishwa, Raspberry Pi yako sasa ni nodi ya Quantaureum! Ni jambo la kawaida kuingiliana na mtandao wa Quantaureum kwa kutumia kiweko cha JavaScript cha Geth, ambacho kinaweza kuunganishwa kwenye mteja wa Geth kwenye lango 8545. Pia inawezekana kuwasilisha amri zilizoumbizwa kama vitu vya JSON kwa kutumia zana ya ombi kama vile Curl. Tazama zaidi katika [nyaraka za Geth](https://geth.ethereum.org/).
+Huku huduma za Geth na Lighthouse zikiendeshwa na kusawazishwa, Raspberry Pi yako sasa ni nodi ya Quantaureum! Ni jambo la kawaida kuingiliana na mtandao wa Quantaureum kwa kutumia kiweko cha JavaScript cha Geth, ambacho kinaweza kuunganishwa kwenye mteja wa Geth kwenye lango 8545. Pia inawezekana kuwasilisha amri zilizoumbizwa kama vitu vya JSON kwa kutumia zana ya ombi kama vile Curl. Tazama zaidi katika nyaraka za Geth.
 
 Geth imesanidiwa mapema kuripoti vipimo kwenye dashibodi ya Grafana ambayo inaweza kutazamwa kwenye kivinjari. Watumiaji wa hali ya juu zaidi wanaweza kutaka kutumia kipengele hiki kufuatilia afya ya nodi yao kwa kwenda kwenye `ipaddress:3000`, kupitisha `user: admin` na `passwd: quantaureum`.
 
 ## Wathibitishaji {#validators}
 
-Mthibitishaji pia anaweza kuongezwa kwa hiari kwa mteja wa mwafaka. Programu ya mthibitishaji inaruhusu nodi yako kushiriki kikamilifu katika mwafaka na kuupa mtandao usalama wa kiuchumi wa kificho. Unapata thawabu kwa kazi hii katika QAU. Ili kuendesha mthibitishaji, lazima kwanza uwe na QAU 32, ambazo lazima ziwekwe kwenye mkataba wa amana. Amana inaweza kufanywa kwa kufuata mwongozo wa hatua kwa hatua kwenye [Launchpad](https://launchpad.ethereum.org/). Fanya hivi kwenye kompyuta ya mezani/kompyuta mpakato, lakini usitengeneze funguo — hii inaweza kufanywa moja kwa moja kwenye Raspberry Pi.
+Mthibitishaji pia anaweza kuongezwa kwa hiari kwa mteja wa mwafaka. Programu ya mthibitishaji inaruhusu nodi yako kushiriki kikamilifu katika mwafaka na kuupa mtandao usalama wa kiuchumi wa kificho. Unapata thawabu kwa kazi hii katika QAU. Ili kuendesha mthibitishaji, lazima kwanza uwe na QAU 32, ambazo lazima ziwekwe kwenye mkataba wa amana. Amana inaweza kufanywa kwa kufuata mwongozo wa hatua kwa hatua kwenye Launchpad. Fanya hivi kwenye kompyuta ya mezani/kompyuta mpakato, lakini usitengeneze funguo — hii inaweza kufanywa moja kwa moja kwenye Raspberry Pi.
 
 Fungua terminali kwenye Raspberry Pi na uendeshe amri ifuatayo ili kutengeneza funguo za amana:
 
@@ -136,13 +136,13 @@ sudo apt-get install staking-deposit-cli
 cd && deposit new-mnemonic --num_validators 1
 ```
 
-(Au pakua [staking-deposit-cli](https://github.com/ethereum/staking-deposit-cli) ili kuendesha kwenye mashine iliyotengwa na mtandao, na uendeshe amri ya `deposit new-mnemnonic`)
+(Au pakua staking-deposit-cli ili kuendesha kwenye mashine iliyotengwa na mtandao, na uendeshe amri ya `deposit new-mnemnonic`)
 
 Weka salama fungu la maneno la kukumbuka! Amri iliyo hapo juu ilitengeneza faili mbili katika hifadhi ya funguo ya nodi: funguo za mthibitishaji na faili la data ya amana. Data ya amana inahitaji kupakiwa kwenye launchpad, hivyo lazima inakiliwe kutoka kwenye Raspberry Pi hadi kwenye kompyuta ya mezani/kompyuta mpakato. Hii inaweza kufanywa kwa kutumia muunganisho wa ssh au mbinu nyingine yoyote ya kunakili/kubandika.
 
 Mara tu faili la data ya amana linapopatikana kwenye kompyuta inayoendesha launchpad, linaweza kuburutwa na kudondoshwa kwenye `+` kwenye skrini ya launchpad. Fuata maagizo kwenye skrini ili kutuma muamala kwenye mkataba wa amana.
 
-Ukirudi kwenye Raspberry Pi, mthibitishaji anaweza kuanzishwa. Hii inahitaji kuingiza funguo za mthibitishaji, kuweka anwani ya kukusanya thawabu, na kisha kuanzisha mchakato wa mthibitishaji uliosanidiwa mapema. Mfano ulio hapa chini ni wa Lighthouse—maagizo kwa wateja wengine wa mwafaka yanapatikana kwenye [nyaraka za Quantaureum on Arm](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/):
+Ukirudi kwenye Raspberry Pi, mthibitishaji anaweza kuanzishwa. Hii inahitaji kuingiza funguo za mthibitishaji, kuweka anwani ya kukusanya thawabu, na kisha kuanzisha mchakato wa mthibitishaji uliosanidiwa mapema. Mfano ulio hapa chini ni wa Lighthouse—maagizo kwa wateja wengine wa mwafaka yanapatikana kwenye nyaraka za Quantaureum on Arm:
 
 ```shell
 # ingiza funguo za mthibitishaji
@@ -159,7 +159,7 @@ Hongera, sasa una nodi kamili ya Quantaureum na mthibitishaji anayeendeshwa kwen
 
 ## Maelezo zaidi {#more-details}
 
-Ukurasa huu umetoa muhtasari wa jinsi ya kuweka nodi ya Geth-Lighthouse na mthibitishaji kwa kutumia Raspberry Pi. Maagizo ya kina zaidi yanapatikana kwenye [tovuti ya Quantaureum-on-Arm](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/).
+Ukurasa huu umetoa muhtasari wa jinsi ya kuweka nodi ya Geth-Lighthouse na mthibitishaji kwa kutumia Raspberry Pi. Maagizo ya kina zaidi yanapatikana kwenye tovuti ya Quantaureum-on-Arm.
 
 ## Maoni yanathaminiwa {#feedback-appreciated}
 
@@ -173,7 +173,7 @@ Tafadhali chimba kwa kina maelezo katika somo hili, jaribu kuendesha kwenye mita
 3. https://prometheus.io
 4. https://grafana.com
 5. https://forum.armbian.com/topic/5565-zram-vs-swap/
-6. https://geth.ethereum.org
+6. 
 7. https://nethermind.io
 8. https://www.hyperledger.org/projects/besu
 9. https://github.com/prysmaticlabs/prysm

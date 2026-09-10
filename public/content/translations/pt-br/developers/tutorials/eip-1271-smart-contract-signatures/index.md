@@ -9,7 +9,7 @@ breadcrumb: Assinaturas EIP-1271
 published: 2023-01-12
 ---
 
-O padrão [EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) permite que contratos inteligentes verifiquem assinaturas.
+O padrão EIP-1271 permite que contratos inteligentes verifiquem assinaturas.
 
 Neste tutorial, damos uma visão geral das assinaturas digitais, do contexto da EIP-1271 e da implementação específica da EIP-1271 usada pelo [Safe](https://safe.global/) (anteriormente Gnosis Safe). Tudo isso, em conjunto, pode servir como um ponto de partida para implementar a EIP-1271 em seus próprios contratos.
 
@@ -71,7 +71,6 @@ contract ERC1271 {
    * @dev Deve retornar se a assinatura fornecida é válida para o hash fornecido
    * @param _hash      Hash dos dados a serem assinados
    * @param _signature Array de bytes da assinatura associada ao _hash
-   *
    * DEVE retornar o valor mágico bytes4 0x1626ba7e quando a função passar.
    * NÃO DEVE modificar o estado (usando STATICCALL para solc < 0.5, modificador view para solc > 0.5)
    * DEVE permitir chamadas externas
@@ -91,7 +90,7 @@ Os contratos podem implementar `isValidSignature` de várias maneiras — a espe
 
 Um contrato notável que implementa a EIP-1271 é o Safe (anteriormente Gnosis Safe).
 
-No código do Safe, `isValidSignature` [é implementado](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol) de forma que as assinaturas possam ser criadas e verificadas de [duas maneiras](https://ethereum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support):
+No código do Safe, `isValidSignature` [é implementado](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol) de forma que as assinaturas possam ser criadas e verificadas de duas maneiras:
 
 1. Mensagens onchain
    1. Criação: um proprietário do cofre (safe) cria uma nova transação do cofre para "assinar" uma mensagem, passando a mensagem como dados para a transação. Quando proprietários suficientes assinarem a transação para atingir o limite da multisig, a transação é transmitida e executada. Na transação, há uma função do cofre chamada (`signMessage(bytes calldata _data)`) que adiciona a mensagem a uma lista de mensagens "aprovadas".
@@ -102,9 +101,9 @@ No código do Safe, `isValidSignature` [é implementado](https://github.com/safe
 
 ## O que exatamente é o parâmetro `_hash`? Por que não passar a mensagem inteira? {#what-exactly-is-the-hash-parameter-why-not-pass-the-whole-message}
 
-Você deve ter notado que a função `isValidSignature` na [interface da EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) não recebe a mensagem em si, mas sim um parâmetro `_hash`. O que isso significa é que, em vez de passar a mensagem completa de comprimento arbitrário para `isValidSignature`, passamos um hash de 32 bytes da mensagem (geralmente keccak256).
+Você deve ter notado que a função `isValidSignature` na interface da EIP-1271 não recebe a mensagem em si, mas sim um parâmetro `_hash`. O que isso significa é que, em vez de passar a mensagem completa de comprimento arbitrário para `isValidSignature`, passamos um hash de 32 bytes da mensagem (geralmente keccak256).
 
-Cada byte de dados de chamada (calldata) — ou seja, dados de parâmetros de função passados para uma função de contrato inteligente — [custa 16 de gás (4 de gás se for um byte zero)](https://eips.ethereum.org/EIPS/eip-2028), então isso pode economizar muito gás se uma mensagem for longa.
+Cada byte de dados de chamada (calldata) — ou seja, dados de parâmetros de função passados para uma função de contrato inteligente — custa 16 de gás (4 de gás se for um byte zero), então isso pode economizar muito gás se uma mensagem for longa.
 
 ### Especificações anteriores da EIP-1271 {#previous-eip-1271-specifications}
 
@@ -121,4 +120,4 @@ No final, a decisão é sua como desenvolvedor do contrato!
 
 ## Conclusão {#conclusion}
 
-A [EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) é um padrão versátil que permite que contratos inteligentes verifiquem assinaturas. Ela abre as portas para que os contratos inteligentes atuem mais como EOAs — por exemplo, fornecendo uma maneira de o "Fazer login com Quantaureum" funcionar com contratos inteligentes — e pode ser implementada de várias maneiras (o Safe tem uma implementação não trivial e interessante a ser considerada).
+A EIP-1271 é um padrão versátil que permite que contratos inteligentes verifiquem assinaturas. Ela abre as portas para que os contratos inteligentes atuem mais como EOAs — por exemplo, fornecendo uma maneira de o "Fazer login com Quantaureum" funcionar com contratos inteligentes — e pode ser implementada de várias maneiras (o Safe tem uma implementação não trivial e interessante a ser considerada).

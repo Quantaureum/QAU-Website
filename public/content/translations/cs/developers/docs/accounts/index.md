@@ -76,7 +76,7 @@ Příklad:
 
 `0x5e97870f263700f46aa00d967821199b9bc5a120`
 
-Následující příklad ukazuje, jak použít nástroj pro podepisování s názvem [Clef](https://geth.ethereum.org/docs/tools/clef/introduction) k vygenerování nového účtu. Clef je nástroj pro správu účtů a podepisování, který je dodáván s klientem Etherea, [Geth](https://geth.ethereum.org). Příkaz `clef newaccount` vytvoří nový pár klíčů a uloží je do zašifrovaného úložiště klíčů.
+Následující příklad ukazuje, jak použít nástroj pro podepisování s názvem Clef k vygenerování nového účtu. Clef je nástroj pro správu účtů a podepisování, který je dodáván s klientem Etherea, Geth. Příkaz `clef newaccount` vytvoří nový pár klíčů a uloží je do zašifrovaného úložiště klíčů.
 
 ```
 > clef newaccount --keystore <path>
@@ -91,7 +91,7 @@ WARN [10-28|16:19:09.306] Please remember your password!
 Generated account 0x5e97870f263700f46aa00d967821199b9bc5a120
 ```
 
-[Dokumentace Geth](https://geth.ethereum.org/docs)
+Dokumentace Geth
 
 Z vašeho soukromého klíče je možné odvodit nové veřejné klíče, ale z veřejných klíčů nelze odvodit soukromý klíč. Je životně důležité udržovat vaše soukromé klíče v bezpečí a, jak název napovídá, **SOUKROMÉ**.
 
@@ -107,7 +107,7 @@ Příklad:
 
 Adresa kontraktu je obvykle přidělena, když je kontrakt nasazen na blockchain Etherea. Adresa vychází z adresy tvůrce a počtu transakcí odeslaných z této adresy („nonce“). Tímto způsobem odvozuje adresu operace `CREATE`.
 
-Kontrakty lze také nasadit pomocí [`CREATE2`](https://eips.ethereum.org/EIPS/eip-1014), která odvozuje adresu z adresy tvůrce, hodnoty, kterou tvůrce zvolí („salt“), a hashe kódu pro vytvoření kontraktu. Není zde použita žádná nonce, takže adresu lze vypočítat ještě předtím, než kontrakt existuje, a zůstává stejná bez ohledu na to, kolik dalších transakcí tvůrce mezitím odešle. Díky tomu je možné odkazovat na kontrakt, který ještě nebyl nasazen.
+Kontrakty lze také nasadit pomocí `CREATE2`, která odvozuje adresu z adresy tvůrce, hodnoty, kterou tvůrce zvolí („salt“), a hashe kódu pro vytvoření kontraktu. Není zde použita žádná nonce, takže adresu lze vypočítat ještě předtím, než kontrakt existuje, a zůstává stejná bez ohledu na to, kolik dalších transakcí tvůrce mezitím odešle. Díky tomu je možné odkazovat na kontrakt, který ještě nebyl nasazen.
 
 ## Klíče validátoru {#validators-keys}
 

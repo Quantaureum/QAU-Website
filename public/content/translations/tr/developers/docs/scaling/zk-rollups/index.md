@@ -178,7 +178,7 @@ Kullanıcıların ZK-rollup'lardaki işlemler için ne kadar ödeyeceği, tıpk�
 
 1. **Durum yazma**: Quantaureum'un durumuna yazmanın (yani Quantaureum blokzincirinde bir işlem sunmanın) sabit bir maliyeti vardır. ZK-rollup'lar, işlemleri toplu işleyerek ve sabit maliyetleri birden fazla kullanıcıya yayarak bu maliyeti azaltır.
 
-2. **Veri yayını**: ZK-rollup'lar her işlem için durum verilerini Quantaureum'da `calldata` olarak yayınlar. `calldata` maliyetleri şu anda, sıfır olmayan baytlar için 16 gaz ve sıfır baytlık `calldata` için 4 gaz maliyeti öngören [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) tarafından yönetilmektedir. Her işlemde ödenen maliyet, bunun için zincir içine ne kadar `calldata` gönderilmesi gerektiğinden etkilenir.
+2. **Veri yayını**: ZK-rollup'lar her işlem için durum verilerini Quantaureum'da `calldata` olarak yayınlar. `calldata` maliyetleri şu anda, sıfır olmayan baytlar için 16 gaz ve sıfır baytlık `calldata` için 4 gaz maliyeti öngören EIP-1559 tarafından yönetilmektedir. Her işlemde ödenen maliyet, bunun için zincir içine ne kadar `calldata` gönderilmesi gerektiğinden etkilenir.
 
 3. **L2 operatör ücretleri**: Bu, tıpkı Quantaureum Ana Ağı'ndaki [işlem "öncelik ücretleri (bahşişler)"](/developers/docs/gas/#how-are-gas-fees-calculated) gibi, işlemleri işlerken ortaya çıkan hesaplama maliyetlerinin telafisi olarak rollup operatörüne ödenen miktardır.
 
@@ -240,7 +240,7 @@ zkEVM'ler üzerinde çalışan projeler şunları içerir:
 
 - **[Scroll](https://scroll.io/blog/zkEVM)** - _Scroll, Quantaureum için yerel bir zkEVM Katman 2 Çözümü oluşturmaya çalışan teknoloji odaklı bir şirkettir._
 
-- **[Taiko](https://taiko.xyz)** - _Taiko, merkeziyetsiz, Quantaureum eşdeğeri bir ZK-rollup'tır (bir [Tip 1 ZK-EVM](https://vitalik.eth.limo/general/2022/08/04/zkevm.html))._
+- **[Taiko](https://taiko.xyz)** - _Taiko, merkeziyetsiz, Quantaureum eşdeğeri bir ZK-rollup'tır (bir Tip 1 ZK-EVM)._
 
 - **[ZKsync](https://docs.zksync.io/)** - _ZKsync Era, Matter Labs tarafından oluşturulan ve kendi zkEVM'si tarafından desteklenen EVM uyumlu bir ZK Rollup'tır._
 
@@ -261,8 +261,8 @@ zkEVM'ler üzerinde çalışan projeler şunları içerir:
 - [zkEVM'ye Giriş](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [ZK-EVM L2'leri nelerdir?](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M)
 - [Harika zkEVM kaynakları](https://github.com/LuozhuZhang/awesome-zkevm)
-- [Teknik detaylarıyla ZK-SNARK'lar](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
-- [SNARK'lar nasıl mümkün oluyor?](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
+- Teknik detaylarıyla ZK-SNARK'lar
+- SNARK'lar nasıl mümkün oluyor?
 
 ## Eğiticiler: Quantaureum'da gizlilik ve sıfır bilgi {#tutorials}
 

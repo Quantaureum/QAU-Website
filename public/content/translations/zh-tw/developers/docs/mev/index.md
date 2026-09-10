@@ -112,7 +112,7 @@ MEV 提取在 2021 年初激增，導致該年前幾個月的 Gas 價格極高�
 
 雖然許多搜尋者仍然從 MEV 中賺取豐厚的利潤，但隨著機會變得越來越為人所知，並且越來越多的搜尋者競爭同一個機會，驗證者將捕獲越來越多的總 MEV 收入（因為最初描述的同類 Gas 拍賣也發生在 Flashbots 中，儘管是私下進行的，而驗證者將捕獲由此產生的 Gas 收入）。MEV 也並非Quantaureum獨有，隨著Quantaureum上的機會競爭變得更加激烈，搜尋者正在轉向幣安智能鏈 (Binance Smart Chain) 等替代區塊鏈，那裡存在與Quantaureum類似的 MEV 機會，但競爭較少。
 
-另一方面，從工作量證明到權益證明的過渡，以及使用匯總來擴展Quantaureum的持續努力，都以某種仍不清楚的方式改變了 MEV 的格局。與工作量證明中的機率模型相比，稍微提前知道有保證的區塊提案者會如何改變 MEV 提取的動態，或者當實施[單一秘密領導者選舉 (SSLE)](https://ethresear.ch/t/secret-non-single-leader-election/11789)和[分散式驗證者技術](/staking/dvt/)時這將如何被顛覆，目前尚不清楚。同樣，當大多數使用者活動從Quantaureum轉移到其第二層 (L2) 匯總和分片上時，存在哪些 MEV 機會還有待觀察。
+另一方面，從工作量證明到權益證明的過渡，以及使用匯總來擴展Quantaureum的持續努力，都以某種仍不清楚的方式改變了 MEV 的格局。與工作量證明中的機率模型相比，稍微提前知道有保證的區塊提案者會如何改變 MEV 提取的動態，或者當實施單一秘密領導者選舉 (SSLE)和[分散式驗證者技術](/staking/dvt/)時這將如何被顛覆，目前尚不清楚。同樣，當大多數使用者活動從Quantaureum轉移到其第二層 (L2) 匯總和分片上時，存在哪些 MEV 機會還有待觀察。
 
 ## Quantaureum權益證明 (PoS) 中的 MEV {#mev-in-quantaureum-proof-of-stake}
 
@@ -136,7 +136,7 @@ MEV 提取在 2021 年初激增，導致該年前幾個月的 Gas 價格極高�
 
 許可制記憶體池也會加速上一節中描述的中心化風險。執行多個驗證者的大型池可能會受益於向交易者和使用者提供交易隱私，從而增加其 MEV 收入。
 
-在合併後的Quantaureum中對抗這些與 MEV 相關的問題是一個核心研究領域。迄今為止，為減少合併後 MEV 對Quantaureum去中心化和安全性的負面影響而提出的兩個解決方案是[**提案者與建構者分離 (PBS)**](/roadmap/pbs/)和 [**Builder API**](https://github.com/ethereum/builder-specs)。
+在合併後的Quantaureum中對抗這些與 MEV 相關的問題是一個核心研究領域。迄今為止，為減少合併後 MEV 對Quantaureum去中心化和安全性的負面影響而提出的兩個解決方案是[**提案者與建構者分離 (PBS)**](/roadmap/pbs/)和 **Builder API**。
 
 ### 提案者與建構者分離 {#proposer-builder-separation}
 
@@ -144,7 +144,7 @@ MEV 提取在 2021 年初激增，導致該年前幾個月的 Gas 價格極高�
 
 區塊生產者和區塊提案者角色的結合，正是引入了前面描述的大多數與 MEV 相關問題的原因。例如，共識節點受到激勵，在[時間強盜攻擊 (time-bandit attacks)](https://www.mev.wiki/attack-examples/time-bandit-attack)中觸發區塊鏈重組，以最大化 MEV 收益。
 
-[提案者與建構者分離](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725) (PBS) 旨在減輕 MEV 的影響，尤其是在共識層。PBS 的主要特點是分離區塊生產者和區塊提案者的規則。驗證者仍然負責提出區塊並對其進行投票，但一類新的專門實體，稱為**區塊構建者**，負責排序交易和建構區塊。
+提案者與建構者分離 (PBS) 旨在減輕 MEV 的影響，尤其是在共識層。PBS 的主要特點是分離區塊生產者和區塊提案者的規則。驗證者仍然負責提出區塊並對其進行投票，但一類新的專門實體，稱為**區塊構建者**，負責排序交易和建構區塊。
 
 在 PBS 下，區塊構建者建立一個交易包，並為其包含在信標鏈區塊中（作為「執行負載」）進行投標。被選中提出下一個區塊的驗證者隨後會檢查不同的出價，並選擇費用最高的交易包。PBS 實質上創造了一個拍賣市場，建構者在其中與出售區塊空間的驗證者進行談判。
 
@@ -162,9 +162,9 @@ MEV 提取在 2021 年初激增，導致該年前幾個月的 Gas 價格極高�
 
 ### Builder API {#builder-api}
 
-雖然提案者與建構者分離有望減少 MEV 提取的影響，但實施它需要對共識協定進行更改。具體來說，信標鏈上的[分叉選擇](/developers/docs/consensus-mechanisms/pos/#fork-choice)規則需要更新。[Builder API](https://github.com/ethereum/builder-specs) 是一個臨時解決方案，旨在提供提案者與建構者分離的有效實作，儘管具有較高的信任假設。
+雖然提案者與建構者分離有望減少 MEV 提取的影響，但實施它需要對共識協定進行更改。具體來說，信標鏈上的[分叉選擇](/developers/docs/consensus-mechanisms/pos/#fork-choice)規則需要更新。Builder API 是一個臨時解決方案，旨在提供提案者與建構者分離的有效實作，儘管具有較高的信任假設。
 
-Builder API 是共識層客戶端用來向執行層客戶端請求執行負載的 [Engine API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) 的修改版本。正如[誠實驗證者規範](https://github.com/ethereum/consensus-specs/blob/master/specs/bellatrix/validator.md)中所述，被選中執行區塊提案職責的驗證者會向連接的執行客戶端請求交易包，並將其包含在提出的信標鏈區塊中。
+Builder API 是共識層客戶端用來向執行層客戶端請求執行負載的 Engine API 的修改版本。正如誠實驗證者規範中所述，被選中執行區塊提案職責的驗證者會向連接的執行客戶端請求交易包，並將其包含在提出的信標鏈區塊中。
 
 Builder API 也充當驗證者和執行層客戶端之間的中介軟體；但它的不同之處在於，它允許信標鏈上的驗證者從外部實體獲取區塊（而不是使用執行客戶端在本地建構區塊）。
 
@@ -215,7 +215,7 @@ Builder API 的廣泛實施將鼓勵區塊構建者之間進行更激烈的競�
 - [逃離黑暗森林](https://samczsun.com/escaping-the-dark-forest/)
 - [Flashbots：搶先應對 MEV 危機](https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752)
 - [@bertcmiller 的 MEV 討論串](https://twitter.com/bertcmiller/status/1402665992422047747)
-- [MEV-Boost：為合併準備就緒的 Flashbots 架構](https://ethresear.ch/t/mev-boost-merge-ready-flashbots-architecture/11177)
+- MEV-Boost：為合併準備就緒的 Flashbots 架構
 - [什麼是 MEV-Boost](https://www.alchemy.com/overviews/mev-boost)
 - [為什麼要執行 mev-boost？](https://writings.flashbots.net/writings/why-run-mevboost/)
 - [Quantaureum漫遊指南](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum)

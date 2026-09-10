@@ -193,7 +193,7 @@ Diese Einschränkung ist absolut sinnvoll, da wir nicht möchten, dass zufällig
 
 Eine Funktion, um von einem Pool-Konto an ein Array von Empfängern ein Array von Beträgen zu transferieren, ist absolut sinnvoll. Es gibt viele Anwendungsfälle, in denen Sie Token von einer einzigen Quelle an mehrere Ziele verteilen möchten, wie z. B. Gehaltsabrechnungen, Airdrops usw. Es ist (in Bezug auf Gas) günstiger, dies in einer einzigen Transaktion zu tun, anstatt mehrere Transaktionen auszugeben oder sogar den ERC-20 mehrmals von einem anderen Vertrag als Teil derselben Transaktion aufzurufen.
 
-Jedoch tut `dropNewTokens` das nicht. Sie gibt [`Transfer`-Ereignisse](https://eips.ethereum.org/EIPS/eip-20#transfer-1) aus, transferiert aber tatsächlich keine Token. Es gibt keinen legitimen Grund, offchain-Anwendungen zu verwirren, indem man ihnen von einem Transfer erzählt, der nicht wirklich stattgefunden hat.
+Jedoch tut `dropNewTokens` das nicht. Sie gibt `Transfer`-Ereignisse aus, transferiert aber tatsächlich keine Token. Es gibt keinen legitimen Grund, offchain-Anwendungen zu verwirren, indem man ihnen von einem Transfer erzählt, der nicht wirklich stattgefunden hat.
 
 ### Die verbrennende `Approve`-Funktion {#the-burning-approve-function}
 
@@ -235,7 +235,7 @@ Diese Probleme mit der Codequalität _beweisen_ nicht, dass dieser Code ein Betr
 
 #### Die `mount`-Funktion {#the-mount-function}
 
-Obwohl es in [dem Standard](https://eips.ethereum.org/EIPS/eip-20) nicht spezifiziert ist, wird die Funktion, die neue Token erstellt, im Allgemeinen [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn) genannt.
+Obwohl es in dem Standard nicht spezifiziert ist, wird die Funktion, die neue Token erstellt, im Allgemeinen [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn) genannt.
 
 Wenn wir uns den Konstruktor von `wARB` ansehen, sehen wir, dass die Prägefunktion aus irgendeinem Grund in `mount` umbenannt wurde und fünfmal mit einem Fünftel des anfänglichen Angebots aufgerufen wird, anstatt aus Effizienzgründen einmal für den gesamten Betrag.
 
@@ -311,7 +311,7 @@ Es gibt einige Tricks, mit denen wir erkennen können, dass ein ERC-20-Token ver
 
 ## Verdächtige `Approval`-Ereignisse {#suspicious-approval-events}
 
-[`Approval`-Ereignisse](https://eips.ethereum.org/EIPS/eip-20#approval) sollten nur bei einer direkten Anfrage auftreten (im Gegensatz zu [`Transfer`-Ereignissen](https://eips.ethereum.org/EIPS/eip-20#transfer-1), die als Ergebnis eines Freigabebetrags auftreten können). [Siehe die Solidity-Dokumentation](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin) für eine detaillierte Erklärung dieses Problems und warum die Anfragen direkt sein müssen, anstatt durch einen Vertrag vermittelt zu werden.
+`Approval`-Ereignisse sollten nur bei einer direkten Anfrage auftreten (im Gegensatz zu `Transfer`-Ereignissen, die als Ergebnis eines Freigabebetrags auftreten können). [Siehe die Solidity-Dokumentation](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin) für eine detaillierte Erklärung dieses Problems und warum die Anfragen direkt sein müssen, anstatt durch einen Vertrag vermittelt zu werden.
 
 Das bedeutet, dass `Approval`-Ereignisse, die Ausgaben von einem [externen Konto](/developers/docs/accounts/#types-of-account) genehmigen, aus Transaktionen stammen müssen, die von diesem Konto ausgehen und deren Ziel der ERC-20-Vertrag ist. Jede andere Art der Genehmigung von einem externen Konto ist verdächtig.
 
@@ -420,7 +420,7 @@ Wenn die Genehmigung von einem externen Konto stammt, rufen Sie die Transaktion 
 if (owner.toLowerCase() != txn.from.toLowerCase()) return ev
 ```
 
-Wir können nicht einfach auf Zeichenfolgengleichheit prüfen, da Adressen hexadezimal sind und daher Buchstaben enthalten. Manchmal, zum Beispiel in `txn.from`, sind diese Buchstaben alle kleingeschrieben. In anderen Fällen, wie bei `ev.args._owner`, ist die Adresse in [gemischter Groß-/Kleinschreibung zur Fehlererkennung](https://eips.ethereum.org/EIPS/eip-55).
+Wir können nicht einfach auf Zeichenfolgengleichheit prüfen, da Adressen hexadezimal sind und daher Buchstaben enthalten. Manchmal, zum Beispiel in `txn.from`, sind diese Buchstaben alle kleingeschrieben. In anderen Fällen, wie bei `ev.args._owner`, ist die Adresse in gemischter Groß-/Kleinschreibung zur Fehlererkennung.
 
 Aber wenn die Transaktion nicht vom Besitzer stammt und dieser Besitzer ein externes Konto ist, dann haben wir eine verdächtige Transaktion.
 

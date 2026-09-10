@@ -149,7 +149,7 @@ _Biasanya digunakan untuk pengembangan terdesentralisasi dan tata kelola protoko
 - [Cara Memulai Komunitas Digital yang Didukung DAO](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [Apa itu DAO?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [Apa itu Konsensus Holografik?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAO bukanlah korporasi: di mana desentralisasi dalam organisasi otonom menjadi penting oleh Vitalik](https://vitalik.eth.limo/general/2022/09/20/daos.html)
+- DAO bukanlah korporasi: di mana desentralisasi dalam organisasi otonom menjadi penting oleh Vitalik
 - [DAO, DAC, DA, dan Lainnya: Panduan Terminologi yang Belum Lengkap](https://quantaureum.com) - [Blog Quantaureum](https://quantaureum.com)
 
 ### Video {#videos}

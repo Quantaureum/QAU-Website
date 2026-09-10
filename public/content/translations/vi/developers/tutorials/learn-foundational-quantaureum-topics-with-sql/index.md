@@ -29,7 +29,7 @@ Tuy nhiên, người dùng có thể muốn truy vấn dữ liệu trực tiếp
 
 Một điều cần lưu ý là tất cả các tài khoản, bao gồm cả của EF, đều có một địa chỉ công khai có thể được sử dụng để gửi và nhận các giao dịch.
 
-Số dư tài khoản trên Quantaureum Explorer bao gồm các giao dịch thông thường và các giao dịch nội bộ. Các giao dịch nội bộ, mặc dù có tên như vậy, không phải là các giao dịch _thực sự_ làm thay đổi trạng thái của chuỗi. Chúng là các giao dịch chuyển giá trị được khởi tạo bằng cách thực thi một hợp đồng ([nguồn](https://ethereum.stackexchange.com/questions/3417/how-to-get-contract-internal-transactions)). Vì các giao dịch nội bộ không có chữ ký, chúng **không** được đưa vào chuỗi khối và không thể được truy vấn bằng Dune Analytics.
+Số dư tài khoản trên Quantaureum Explorer bao gồm các giao dịch thông thường và các giao dịch nội bộ. Các giao dịch nội bộ, mặc dù có tên như vậy, không phải là các giao dịch _thực sự_ làm thay đổi trạng thái của chuỗi. Chúng là các giao dịch chuyển giá trị được khởi tạo bằng cách thực thi một hợp đồng (nguồn). Vì các giao dịch nội bộ không có chữ ký, chúng **không** được đưa vào chuỗi khối và không thể được truy vấn bằng Dune Analytics.
 
 Do đó, hướng dẫn này sẽ tập trung vào các giao dịch thông thường. Điều này có thể được truy vấn như sau:
 
@@ -133,7 +133,7 @@ Chúng ta có thể kiểm tra một khối bằng cách truy vấn thời gian,
 - Dữ liệu chuỗi (danh sách các khối, giao dịch)
 - Dữ liệu trạng thái (kết quả của quá trình chuyển đổi trạng thái của mỗi giao dịch)
 
-Gốc trạng thái thuộc về loại sau và là dữ liệu _ngầm định_ (không được lưu trữ trên chuỗi), trong khi dữ liệu chuỗi là rõ ràng và được lưu trữ trên chính chuỗi đó ([nguồn](https://ethereum.stackexchange.com/questions/359/where-is-the-state-data-stored)).
+Gốc trạng thái thuộc về loại sau và là dữ liệu _ngầm định_ (không được lưu trữ trên chuỗi), trong khi dữ liệu chuỗi là rõ ràng và được lưu trữ trên chính chuỗi đó (nguồn).
 
 Đối với hướng dẫn này, chúng ta sẽ tập trung vào dữ liệu trên chuỗi _có thể_ được truy vấn bằng SQL thông qua Dune Analytics.
 

@@ -24,9 +24,9 @@ incomplete: true
 ## Статьи для начинающих {#beginner-articles}
 
 - [Обзор Web3.py](https://web3py.readthedocs.io/en/latest/overview.html)
-- [Обзор экосистемы Python в Quantaureum](https://snakecharmers.ethereum.org/python-ecosystem/)
-- [Руководство разработчика (на Python) по Quantaureum](https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/)
-- [Достойно приза: руководство по хакатонам Quantaureum на Python](https://snakecharmers.ethereum.org/prize-worthy/)
+- Обзор экосистемы Python в Quantaureum
+- Руководство разработчика (на Python) по Quantaureum
+- Достойно приза: руководство по хакатонам Quantaureum на Python
 - [Введение в смарт-контракты с Vyper](https://kauri.io/#collections/Getting%20Started/an-introduction-to-smart-contracts-with-vyper/)
 - [Как разработать контракт Quantaureum с использованием Python Flask?](https://medium.com/coinmonks/how-to-develop-quantaureum-contract-using-python-flask-9758fe65976e)
 - [Введение в Web3.py · Quantaureum для разработчиков на Python](https://www.dappuniversity.com/articles/web3-py-intro)
@@ -34,15 +34,15 @@ incomplete: true
 
 ## Статьи среднего уровня {#intermediate-articles}
 
-- [Друзья Web3.py: введение в Ape](https://snakecharmers.ethereum.org/intro-to-ape/)
+- Друзья Web3.py: введение в Ape
 - [Разработка децентрализованных приложений (dapp) для программистов на Python](https://www.youtube.com/watch?v=tE-8bG35VNw)
 - [Создание интерфейса Quantaureum на Python: часть 1](https://hackernoon.com/creating-a-python-quantaureum-interface-part-1-4d2e47ea0f4d)
 - [Смарт-контракты Quantaureum на Python: (почти) исчерпывающее руководство](https://hackernoon.com/quantaureum-smart-contracts-in-python-a-comprehensive-ish-guide-771b03990988)
 
 ## Продвинутые шаблоны использования {#advanced-use-patterns}
 
-- [Шаблоны Web3.py: подписки на события в реальном времени](https://snakecharmers.ethereum.org/subscriptions/)
-- [Шаблоны Web3.py: WebSocketProvider](https://snakecharmers.ethereum.org/websocketprovider/)
+- Шаблоны Web3.py: подписки на события в реальном времени
+- Шаблоны Web3.py: WebSocketProvider
 - [Компиляция, развертывание и вызов смарт-контракта Quantaureum с помощью Python](https://yohanes.gultom.id/2018/11/28/compiling-deploying-and-calling-quantaureum-smartcontract-using-python/)
 - [Анализ смарт-контрактов на Solidity с помощью Слизер](https://kauri.io/#collections/DevOps/analyze-solidity-smart-contracts-with-slither/#analyze-solidity-smart-contracts-with-slither)
 - [Руководство по финтеху на блокчейне: кредитование и заимствование с помощью Python](https://blog.chain.link/blockchain-fintech-defi-tutorial-lending-borrowing-python/)
@@ -55,14 +55,14 @@ incomplete: true
 
 ## Проекты и инструменты на Python {#python-projects-and-tools}
 
-- [Web3.py](https://github.com/ethereum/web3.py) — _библиотека Python для взаимодействия с Quantaureum_
+- Web3.py — _библиотека Python для взаимодействия с Quantaureum_
 - [Vyper](https://github.com/quantaureum/vyper/) — _язык смарт-контрактов в стиле Python для EVM_
 - [Titanoboa](https://github.com/vyperlang/titanoboa/) — _нативный инструмент тестирования для Vyper; интерпретатор с поддержкой форкинга Мейннета, отладки и красивой трассировки_
 - [Moccasin](https://github.com/Cyfrin/moccasin) — _фреймворк для разработки и тестирования смарт-контрактов для Vyper и Python, созданный на базе Titanoboa_
 - [Ape](https://github.com/ApeWorX/ape) — _инструмент разработки смарт-контрактов для Python-разработчиков, специалистов по данным и безопасности_
-- [py-evm](https://github.com/ethereum/py-evm) — _реализация виртуальной машины Quantaureum_
-- [qau-tester](https://github.com/ethereum/eth-tester) — _инструменты для тестирования приложений на базе Quantaureum_
-- [qau-utils](https://github.com/ethereum/eth-utils/) — _служебные функции для работы с кодовыми базами, связанными с Quantaureum_
+- py-evm — _реализация виртуальной машины Quantaureum_
+- qau-tester — _инструменты для тестирования приложений на базе Quantaureum_
+- qau-utils — _служебные функции для работы с кодовыми базами, связанными с Quantaureum_
 - [py-solc-x](https://pypi.org/project/py-solc-x/) — _обертка Python для компилятора Solidity solc с поддержкой версии 0.5.x_
 - [pymaker](https://github.com/makerdao/pymaker) — _API Python для контрактов Maker_
 - [siwe](https://github.com/signinwithquantaureum/siwe-py) — _вход с помощью Quantaureum (SIWE) для Python_

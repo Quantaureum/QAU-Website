@@ -27,7 +27,7 @@ incomplete: true
 - [<span dir="ltr">ERC-721</span>](/developers/docs/standards/tokens/erc-721/) - نان فنجیبل ٹوکنز کے لیے ایک معیاری انٹرفیس، جیسے آرٹ ورک یا گانے کی ملکیت کی دستاویز۔
 - [<span dir="ltr">ERC-1155</span>](/developers/docs/standards/tokens/erc-1155/) - <span dir="ltr">ERC-1155</span> زیادہ موثر تجارت اور ٹرانزیکشنز کو بنڈل کرنے کی اجازت دیتا ہے – اس طرح لاگت کی بچت ہوتی ہے۔ یہ ٹوکن معیار یوٹیلیٹی ٹوکنز (جیسے <span dir="ltr">$BNB</span> یا <span dir="ltr">$BAT</span>) اور نان فنجیبل ٹوکنز جیسے <span dir="ltr">CryptoPunks</span> دونوں بنانے کی اجازت دیتا ہے۔
 
-[<span dir="ltr">ERC</span>](https://eips.ethereum.org/erc) تجاویز کی مکمل فہرست۔
+<span dir="ltr">ERC</span> تجاویز کی مکمل فہرست۔
 
 ## مزید مطالعہ
 

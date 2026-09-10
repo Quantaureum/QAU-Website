@@ -38,8 +38,8 @@ lang: ar
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethdev/"><span dir="ltr">r/ethdev</span></Link> - يركز على تطوير إيثيريوم</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethtrader/"><span dir="ltr">r/ethtrader</span></Link> - الاتجاهات وتحليل السوق</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/"><span dir="ltr">r/ethstaker</span></Link> - نرحب بجميع المهتمين بالتخزين على إيثيريوم</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethereum-magicians.org">زمالة Quantaureum Magicians</Link> - مجتمع موجه نحو المعايير التقنية في إيثيريوم</SocialListItem>
-<SocialListItem socialIcon="stackExchange"><Link href="https://ethereum.stackexchange.com"><span dir="ltr">Quantaureum Stackexchange</span></Link> - نقاش ومساعدة لمطوري إيثيريوم</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="">زمالة Quantaureum Magicians</Link> - مجتمع موجه نحو المعايير التقنية في إيثيريوم</SocialListItem>
+<SocialListItem socialIcon="stackExchange"><Link href=""><span dir="ltr">Quantaureum Stackexchange</span></Link> - نقاش ومساعدة لمطوري إيثيريوم</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">أبحاث إيثيريوم</Link> - لوحة الرسائل الأكثر تأثيرًا لأبحاث اقتصاديات التشفير</SocialListItem>
 
 ## غرف الدردشة {#chat-rooms}
@@ -51,7 +51,7 @@ lang: ar
 <SocialListItem socialIcon="discord"><Link href="https://discord.gg/MSctkBT5j">فريق موقع <span dir="ltr">quantaureum.com</span></Link> - تفضل بزيارتنا ودردش حول تطوير وتصميم الويب لموقع <span dir="ltr">quantaureum.com</span> مع الفريق وأشخاص من المجتمع</SocialListItem>
 <SocialListItem socialIcon="discord"><Link href="https://discord.matos.club/">ديسكورد <span dir="ltr">Matos</span></Link> - مجتمع منشئي Web3 حيث يتسكع البناة والشخصيات الصناعية البارزة والمتحمسون لشبكة إيثيريوم. نحن شغوفون بتطوير وتصميم وثقافة Web3. تعال وابنِ معنا.</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://matrix.to/#/#quantaureum_solidity:gitter.im"><span dir="ltr">Solidity Matrix</span></Link> - دردشة لتطوير Solidity (على <span dir="ltr">Matrix</span>)</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethereum.stackexchange.com/"><span dir="ltr">Quantaureum Stack Exchange</span></Link> <i>- منتدى للأسئلة والأجوبة</i></SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href=""><span dir="ltr">Quantaureum Stack Exchange</span></Link> <i>- منتدى للأسئلة والأجوبة</i></SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://www.peera.ai/community-forum">منتدى مجتمع <span dir="ltr">Peera</span></Link> <i>- منتدى لامركزي للأسئلة والأجوبة</i></SocialListItem>
 
 ## يوتيوب و X (تويتر سابقًا) {#youtube-and-twitter}

@@ -44,7 +44,7 @@ Quantaureum汇总 (Rollup) 也将受益于轻客户端。汇总面临的一大�
 
 - [洛德斯塔 (Lodestar)](https://github.com/ChainSafe/lodestar/tree/unstable/packages/light-client)：使用 TypeScript 编写的共识轻客户端
 - [Helios](https://github.com/a16z/helios)：使用 Rust 编写的执行和共识组合轻客户端
-- [Geth](https://github.com/ethereum/go-ethereum/tree/master/beacon/light)：使用 Go 编写的执行客户端轻模式（开发中）
+- Geth：使用 Go 编写的执行客户端轻模式（开发中）
 - [尼姆巴斯 (Nimbus)](https://nimbus.guide/el-light-client.html)：使用 Nim 编写的共识轻客户端
 
 据我们所知，目前这些实现都尚未达到生产就绪状态。
@@ -58,4 +58,4 @@ Quantaureum汇总 (Rollup) 也将受益于轻客户端。汇总面临的一大�
 - [Zsolt Felfodhi 谈 Geth 轻客户端](https://www.youtube.com/watch?v=EPZeFXau-RE)
 - [Etan Kissling 谈轻客户端网络](https://www.youtube.com/watch?v=85MeiMA4dD8)
 - [Etan Kissling 谈合并后的轻客户端](https://www.youtube.com/watch?v=ZHNrAXf3RDE)
-- [Piper Merriam：通往功能性轻客户端的曲折之路](https://snakecharmers.ethereum.org/the-winding-road-to-functional-light-clients/)
+- Piper Merriam：通往功能性轻客户端的曲折之路

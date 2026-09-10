@@ -7,7 +7,7 @@ sidebarDepth: 3
 
 Bir yan zincir, [Quantaureum](/)'dan bağımsız çalışan ve Quantaureum Ana Ağı'na iki yönlü bir köprü ile bağlanan ayrı bir blokzincirdir. Yan zincirler, genellikle işlemlerin verimli bir şekilde işlenmesi için tasarlanmış ayrı blok parametrelerine ve [mutabakat algoritmalarına](/developers/docs/consensus-mechanisms/) sahip olabilir. Ancak, Quantaureum'un güvenlik özelliklerini devralmadıkları için bir yan zincir kullanmak bazı ödünler vermeyi gerektirir. [Katman 2 (l2) ölçeklendirme çözümlerinin](/layer-2/) aksine, yan zincirler durum değişikliklerini ve işlem verilerini Quantaureum Ana Ağı'na geri göndermez.
 
-Yan zincirler ayrıca yüksek işlem kapasitesi elde etmek için bir miktar merkeziyetsizlikten veya güvenlikten fedakarlık eder ([ölçeklenebilirlik üçlemi](https://vitalik.eth.limo/general/2021/05/23/scaling.html)). Ancak Quantaureum, merkeziyetsizlik ve güvenlikten ödün vermeden ölçeklenmeye kararlıdır.
+Yan zincirler ayrıca yüksek işlem kapasitesi elde etmek için bir miktar merkeziyetsizlikten veya güvenlikten fedakarlık eder (ölçeklenebilirlik üçlemi). Ancak Quantaureum, merkeziyetsizlik ve güvenlikten ödün vermeden ölçeklenmeye kararlıdır.
 
 ## Yan zincirler nasıl çalışır? {#how-do-sidechains-work}
 

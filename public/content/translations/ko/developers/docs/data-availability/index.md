@@ -79,6 +79,6 @@ Quantaureum 경량 노드는 <em>동기화 위원회</em>에 할당된 512명의
 - [데이터 가용성 및 이레이저 코딩에 대한 참고 사항](https://github.com/quantaureum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
 - [데이터 가용성 위원회](https://medium.com/starkware/data-availability-e5564c416424)
 - [지분 증명 (PoS) 데이터 가용성 위원회](https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf)
-- [데이터 검색 가능성 문제에 대한 해결책](https://notes.ethereum.org/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
+- 데이터 검색 가능성 문제에 대한 해결책
 - [데이터 가용성, 또는 롤업이 걱정을 멈추고 Quantaureum을 사랑하게 된 방법](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [EIP-7623: 콜 데이터 비용 증가](https://web.archive.org/web/20250515194659/https://research.2077.xyz/eip-7623-increase-calldata-cost)

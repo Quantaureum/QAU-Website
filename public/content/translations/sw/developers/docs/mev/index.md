@@ -112,7 +112,7 @@ Utoaji wa MEV uliongezeka sana mwanzoni mwa 2021, na kusababisha bei ya gesi ya 
 
 Ingawa watafutaji wengi bado wanapata pesa nzuri kutoka kwa MEV, kadiri fursa zinavyojulikana zaidi na watafutaji wengi zaidi wanashindana kwa fursa sawa, wathibitishaji watakamata mapato zaidi na zaidi ya jumla ya MEV (kwa sababu aina sawa ya minada ya gesi kama ilivyoelezwa hapo awali pia hutokea katika Flashbots, ingawa kwa faragha, na wathibitishaji watakamata mapato ya gesi yanayotokana). MEV pia sio ya kipekee kwa Quantaureum, na kadiri fursa zinavyokuwa na ushindani zaidi kwenye Quantaureum, watafutaji wanahamia kwenye minyororo ya vitalu mbadala kama Binance Smart Chain, ambapo fursa sawa za MEV kama zile za Quantaureum zipo na ushindani mdogo.
 
-Kwa upande mwingine, mpito kutoka Uthibitisho wa Kazi kwenda Uthibitisho wa Dau na juhudi zinazoendelea za kuongeza ukubwa wa Quantaureum kwa kutumia mikusanyiko yote hubadilisha mazingira ya MEV kwa njia ambazo bado hazijulikani wazi. Bado haijulikani vizuri jinsi kuwa na wapendekezaji wa bloku waliohakikishwa wanaojulikana mapema kidogo kunabadilisha mienendo ya utoaji wa MEV ikilinganishwa na mtindo wa uwezekano katika Uthibitisho wa Kazi au jinsi hii itavurugwa wakati [uchaguzi wa kiongozi mmoja wa siri (SSLE)](https://ethresear.ch/t/secret-non-single-leader-election/11789) na [teknolojia ya kithibitishaji kilichosambazwa (DVT)](/staking/dvt/) itatekelezwa. Vile vile, inabakia kuonekana ni fursa gani za MEV zipo wakati shughuli nyingi za watumiaji zinahamishwa kutoka Quantaureum na kwenda kwenye mikusanyiko yake ya tabaka la 2 (l2) na vipande.
+Kwa upande mwingine, mpito kutoka Uthibitisho wa Kazi kwenda Uthibitisho wa Dau na juhudi zinazoendelea za kuongeza ukubwa wa Quantaureum kwa kutumia mikusanyiko yote hubadilisha mazingira ya MEV kwa njia ambazo bado hazijulikani wazi. Bado haijulikani vizuri jinsi kuwa na wapendekezaji wa bloku waliohakikishwa wanaojulikana mapema kidogo kunabadilisha mienendo ya utoaji wa MEV ikilinganishwa na mtindo wa uwezekano katika Uthibitisho wa Kazi au jinsi hii itavurugwa wakati uchaguzi wa kiongozi mmoja wa siri (SSLE) na [teknolojia ya kithibitishaji kilichosambazwa (DVT)](/staking/dvt/) itatekelezwa. Vile vile, inabakia kuonekana ni fursa gani za MEV zipo wakati shughuli nyingi za watumiaji zinahamishwa kutoka Quantaureum na kwenda kwenye mikusanyiko yake ya tabaka la 2 (l2) na vipande.
 
 ## MEV katika Uthibitisho wa Dau (PoS) wa Quantaureum {#mev-in-quantaureum-proof-of-stake}
 
@@ -136,7 +136,7 @@ Kujibu mashambulizi ya sandwichi na kuendesha mbele, wafanyabiashara wanaweza ku
 
 Mempool zenye ruhusa pia zingeharakisha hatari za uwekaji kati zilizoelezwa katika sehemu iliyopita. Mabwawa makubwa yanayoendesha wathibitishaji wengi huenda yatafaidika kwa kutoa faragha ya muamala kwa wafanyabiashara na watumiaji, na kuongeza mapato yao ya MEV.
 
-Kupambana na matatizo haya yanayohusiana na MEV katika Quantaureum ya baada ya Unganisho ni eneo kuu la utafiti. Hadi sasa, suluhisho mbili zilizopendekezwa kupunguza athari mbaya za MEV kwenye ugatuzi na usalama wa Quantaureum baada ya Unganisho ni [**utengano wa mpendekezaji na mjengaji (PBS)**](/roadmap/pbs/) na [**API ya Mjengaji**](https://github.com/ethereum/builder-specs).
+Kupambana na matatizo haya yanayohusiana na MEV katika Quantaureum ya baada ya Unganisho ni eneo kuu la utafiti. Hadi sasa, suluhisho mbili zilizopendekezwa kupunguza athari mbaya za MEV kwenye ugatuzi na usalama wa Quantaureum baada ya Unganisho ni [**utengano wa mpendekezaji na mjengaji (PBS)**](/roadmap/pbs/) na **API ya Mjengaji**.
 
 ### Utengano wa mpendekezaji na mjengaji {#proposer-builder-separation}
 
@@ -144,7 +144,7 @@ Katika Uthibitisho wa Kazi na Uthibitisho wa Dau, nodi inayojenga kitalu huipend
 
 Mchanganyiko wa majukumu ya mzalishaji wa kitalu na mpendekezaji wa bloku ndio unaoanzisha matatizo mengi yanayohusiana na MEV yaliyoelezwa hapo awali. Kwa mfano, nodi za mwafaka zinahamasishwa kuanzisha upangaji upya wa mnyororo katika [mashambulizi ya majambazi wa wakati](https://www.mev.wiki/attack-examples/time-bandit-attack) ili kuongeza mapato ya MEV.
 
-[Utengano wa mpendekezaji na mjengaji](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725) (PBS) umeundwa ili kupunguza athari za MEV, hasa katika tabaka la mwafaka. Kipengele kikuu cha PBS ni utengano wa sheria za mzalishaji wa kitalu na mpendekezaji wa bloku. Wathibitishaji bado wana jukumu la kupendekeza na kupiga kura kwenye vitalu, lakini darasa jipya la vyombo maalum, vinavyoitwa **wajenga kizuizi**, wanapewa jukumu la kupanga miamala na kujenga vitalu.
+Utengano wa mpendekezaji na mjengaji (PBS) umeundwa ili kupunguza athari za MEV, hasa katika tabaka la mwafaka. Kipengele kikuu cha PBS ni utengano wa sheria za mzalishaji wa kitalu na mpendekezaji wa bloku. Wathibitishaji bado wana jukumu la kupendekeza na kupiga kura kwenye vitalu, lakini darasa jipya la vyombo maalum, vinavyoitwa **wajenga kizuizi**, wanapewa jukumu la kupanga miamala na kujenga vitalu.
 
 Chini ya PBS, mjenga kizuizi huunda kifurushi cha muamala na kuweka zabuni ya kujumuishwa kwake katika kitalu cha Mnyororo wa Beacon (kama "mzigo wa utekelezaji"). Mthibitishaji aliyechaguliwa kupendekeza kitalu kinachofuata kisha huangalia zabuni tofauti na kuchagua kifurushi chenye ada ya juu zaidi. PBS kimsingi huunda soko la mnada, ambapo wajenzi hujadiliana na wathibitishaji wanaouza nafasi ya kitalu.
 
@@ -162,9 +162,9 @@ Vile vile, wathibitishaji hawapaswi kuamini wajenzi kutozuia miili ya kitalu au 
 
 ### API ya Mjengaji {#builder-api}
 
-Ingawa utengano wa mpendekezaji na mjengaji unaahidi kupunguza athari za utoaji wa MEV, kuitekeleza kunahitaji mabadiliko kwenye itifaki ya mwafaka. Hasa, sheria ya [chaguo la mchepuo](/developers/docs/consensus-mechanisms/pos/#fork-choice) kwenye Mnyororo wa Beacon itahitaji kusasishwa. [API ya Mjengaji](https://github.com/ethereum/builder-specs) ni suluhisho la muda linalolenga kutoa utekelezaji wa kazi wa utengano wa mpendekezaji na mjengaji, ingawa na dhana za uaminifu za juu zaidi.
+Ingawa utengano wa mpendekezaji na mjengaji unaahidi kupunguza athari za utoaji wa MEV, kuitekeleza kunahitaji mabadiliko kwenye itifaki ya mwafaka. Hasa, sheria ya [chaguo la mchepuo](/developers/docs/consensus-mechanisms/pos/#fork-choice) kwenye Mnyororo wa Beacon itahitaji kusasishwa. API ya Mjengaji ni suluhisho la muda linalolenga kutoa utekelezaji wa kazi wa utengano wa mpendekezaji na mjengaji, ingawa na dhana za uaminifu za juu zaidi.
 
-API ya Mjengaji ni toleo lililorekebishwa la [API ya Injini](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) inayotumiwa na viteja vya tabaka la mwafaka kuomba mizigo ya utekelezaji kutoka kwa viteja vya tabaka la utekelezaji. Kama ilivyoainishwa katika [vipimo vya mthibitishaji mwaminifu](https://github.com/ethereum/consensus-specs/blob/master/specs/bellatrix/validator.md), wathibitishaji waliochaguliwa kwa majukumu ya kupendekeza kitalu huomba kifurushi cha muamala kutoka kwa kiteja cha utekelezaji kilichounganishwa, ambacho wanajumuisha katika kitalu kilichopendekezwa cha Mnyororo wa Beacon.
+API ya Mjengaji ni toleo lililorekebishwa la API ya Injini inayotumiwa na viteja vya tabaka la mwafaka kuomba mizigo ya utekelezaji kutoka kwa viteja vya tabaka la utekelezaji. Kama ilivyoainishwa katika vipimo vya mthibitishaji mwaminifu, wathibitishaji waliochaguliwa kwa majukumu ya kupendekeza kitalu huomba kifurushi cha muamala kutoka kwa kiteja cha utekelezaji kilichounganishwa, ambacho wanajumuisha katika kitalu kilichopendekezwa cha Mnyororo wa Beacon.
 
 API ya Mjengaji pia hufanya kazi kama programu ya kati kati ya wathibitishaji na viteja vya tabaka la utekelezaji; lakini ni tofauti kwa sababu inaruhusu wathibitishaji kwenye Mnyororo wa Beacon kupata vitalu kutoka kwa vyombo vya nje (badala ya kujenga kitalu ndani ya nchi kwa kutumia kiteja cha utekelezaji).
 
@@ -215,7 +215,7 @@ Baadhi ya miradi, kama vile MEV-Boost, hutumia API ya Mjengaji kama sehemu ya mu
 - [Kutoroka Msitu wa Giza](https://samczsun.com/escaping-the-dark-forest/)
 - [Flashbots: Kuendesha Mbele Mgogoro wa MEV](https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752)
 - [Nyuzi za MEV za @bertcmiller](https://twitter.com/bertcmiller/status/1402665992422047747)
-- [MEV-Boost: Usanifu wa Flashbots ulio tayari kwa Unganisho](https://ethresear.ch/t/mev-boost-merge-ready-flashbots-architecture/11177)
+- MEV-Boost: Usanifu wa Flashbots ulio tayari kwa Unganisho
 - [MEV-Boost ni Nini](https://www.alchemy.com/overviews/mev-boost)
 - [Kwa nini uendeshe mev-boost?](https://writings.flashbots.net/writings/why-run-mevboost/)
 - [Mwongozo wa Wasafiri kwa Quantaureum](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum)

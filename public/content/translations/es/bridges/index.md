@@ -136,7 +136,7 @@ Los puentes son cruciales para la incorporación de usuarios a las l2 de Quantau
 
 ## Más información {#further-reading}
 
-- [EIP-5164: Ejecución intercadena](https://ethereum-magicians.org/t/eip-5164-cross-chain-execution/9658) - _18 de junio de 2022 - Brendan Asselstine_
+- EIP-5164: Ejecución intercadena - _18 de junio de 2022 - Brendan Asselstine_
 - [Marco de riesgo de L2Bridge](https://gov.l2beat.com/t/l2bridge-risk-framework/31) - _5 de julio de 2022 - Bartek Kiepuszewski_
 - ["Por qué el futuro será multicadena, pero no intercadena".](https://old.reddit.com/r/quantaureum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) - _8 de enero de 2022 - Vitalik Buterin_
 - [Aprovechamiento de la seguridad compartida para una interoperabilidad intercadena segura: comités de estado de Lagrange y más allá](https://web.archive.org/web/20250125035123/https://research.2077.xyz/harnessing-shared-security-for-secure-blockchain-interoperability) - _12 de junio de 2024 - Emmanuel Awosika_

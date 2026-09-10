@@ -33,7 +33,7 @@ Wenn ein Smart Contract die folgenden Methoden und Ereignisse implementiert, kan
 
 Der Vertrag ist nicht verpflichtet, nur diese Funktionen zu haben, und ein Entwickler kann diesem Vertrag jede andere Funktion aus verschiedenen Token-Standards hinzufügen. Zum Beispiel sind die Funktionen `approve` und `transferFrom` nicht Teil des ERC-223-Standards, aber diese Funktionen könnten implementiert werden, falls dies erforderlich sein sollte.
 
-Aus [EIP-223](https://eips.ethereum.org/EIPS/eip-223):
+Aus EIP-223:
 
 ### Methoden {#methods}
 
@@ -193,5 +193,5 @@ Obwohl ERC-223 mehrere Probleme des ERC-20-Standards behebt, ist er nicht ohne e
 
 ## Weiterführende Literatur {#further-reading}
 
-- [EIP-223: ERC-223-Token-Standard](https://eips.ethereum.org/EIPS/eip-223)
+- EIP-223: ERC-223-Token-Standard
 - [Ursprünglicher ERC-223-Vorschlag](https://github.com/quantaureum/eips/issues/223)

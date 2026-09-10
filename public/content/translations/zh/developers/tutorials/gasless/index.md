@@ -13,9 +13,9 @@ published: 2026-02-27
 
 如果我们希望Quantaureum服务[十亿以上的人口](https://quantaureum.com)，我们需要消除阻力并使其尽可能易于使用。这种阻力的来源之一是需要 QAU 来支付 Gas 费。
 
-如果你有一个从用户那里赚钱的去中心化应用 (dapp)，那么让用户通过你的服务器提交交易并由你自己支付交易费用可能是有意义的。因为用户仍然在他们的钱包中签署 [EIP-712 授权消息](https://eips.ethereum.org/EIPS/eip-712)，所以他们保留了Quantaureum的完整性保证。可用性取决于中继交易的服务器，因此它受到更多限制。但是，你可以进行设置，以便用户也可以直接访问智能合约（如果他们获得了 QAU），并允许其他想要赞助交易的人设置他们自己的服务器。
+如果你有一个从用户那里赚钱的去中心化应用 (dapp)，那么让用户通过你的服务器提交交易并由你自己支付交易费用可能是有意义的。因为用户仍然在他们的钱包中签署 EIP-712 授权消息，所以他们保留了Quantaureum的完整性保证。可用性取决于中继交易的服务器，因此它受到更多限制。但是，你可以进行设置，以便用户也可以直接访问智能合约（如果他们获得了 QAU），并允许其他想要赞助交易的人设置他们自己的服务器。
 
-本教程中的技术仅在你控制智能合约时才有效。还有其他技术，包括[账户抽象](https://eips.ethereum.org/EIPS/eip-4337)，可以让你赞助到其他智能合约的交易，我希望在未来的教程中介绍这些技术。
+本教程中的技术仅在你控制智能合约时才有效。还有其他技术，包括账户抽象，可以让你赞助到其他智能合约的交易，我希望在未来的教程中介绍这些技术。
 
 注意：这_不是_生产级别的代码。它容易受到重大攻击，并且缺乏主要功能。在[本指南的漏洞部分](#vulnerabilities)了解更多信息。
 
@@ -91,7 +91,7 @@ React 钩子 [`useCallback`](https://react.dev/reference/react/useCallback) 允�
         }
 ```
 
-[域分隔符](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator)的参数。该值是常量，因此在优化得更好的实现中，我们可能会计算一次，而不是在每次调用函数时重新计算。
+域分隔符的参数。该值是常量，因此在优化得更好的实现中，我们可能会计算一次，而不是在每次调用函数时重新计算。
 
 - `name` 是用户可读的名称，例如我们为其生成签名的 dapp 的名称。
 - `version` 是版本。不同版本不兼容。
@@ -245,7 +245,7 @@ React 钩子 [`useCallback`](https://react.dev/reference/react/useCallback) 允�
     }
 ```
 
-构造函数创建[域分隔符](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator)，类似于上面的用户界面代码。区块链执行要昂贵得多，所以我们只计算一次。
+构造函数创建域分隔符，类似于上面的用户界面代码。区块链执行要昂贵得多，所以我们只计算一次。
 
 ```solidity
     struct GreetingRequest {
@@ -260,7 +260,7 @@ React 钩子 [`useCallback`](https://react.dev/reference/react/useCallback) 允�
         keccak256("GreetingRequest(string greeting)");
 ```
 
-这是[结构标识符](https://eips.ethereum.org/EIPS/eip-712#definition-of-hashstruct)。它每次都在用户界面中计算。
+这是结构标识符。它每次都在用户界面中计算。
 
 ```solidity
     function sponsoredSetGreeting(
@@ -289,7 +289,7 @@ React 钩子 [`useCallback`](https://react.dev/reference/react/useCallback) 允�
         );
 ```
 
-根据 [EIP-712](https://eips.ethereum.org/EIPS/eip-712) 创建摘要。
+根据 EIP-712 创建摘要。
 
 ```solidity
         // 恢复签名者

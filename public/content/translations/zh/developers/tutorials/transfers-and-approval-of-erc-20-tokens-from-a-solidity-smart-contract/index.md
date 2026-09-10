@@ -8,7 +8,7 @@ breadcrumb: "ERC-20 转账"
 lang: zh
 published: 2020-04-07
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -201,7 +201,7 @@ function sell(uint256 amount) public {
 
 通过本教程，我们了解了如何检查 ERC-20 代币的余额和授权额度，以及如何使用接口调用 ERC-20 智能合约的 `Transfer` 和 `TransferFrom`。
 
-一旦你进行了一笔交易，我们有一个 JavaScript 教程来教你如何[等待并获取有关向你的合约发起的交易的详细信息](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/)，以及一个[教程来解码由代币转账或任何其他事件生成的事件](https://ethereumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/)（只要你有 ABI）。
+一旦你进行了一笔交易，我们有一个 JavaScript 教程来教你如何等待并获取有关向你的合约发起的交易的详细信息，以及一个教程来解码由代币转账或任何其他事件生成的事件（只要你有 ABI）。
 
 以下是本教程的完整代码：
 

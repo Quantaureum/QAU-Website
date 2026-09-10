@@ -87,7 +87,7 @@ Validia se liší ve svém přístupu ke správě dostupnosti dat. Některá se 
 
 K zaručení dostupnosti offchain dat některá řešení Validia jmenují skupinu důvěryhodných subjektů, souhrnně známou jako výbor pro dostupnost dat (DAC), aby ukládala kopie stavu a poskytovala důkaz o dostupnosti dat. DAC se snáze implementují a vyžadují méně koordinace, protože počet členů je nízký.
 
-Uživatelé však musí důvěřovat DAC, že data zpřístupní, když to bude potřeba (např. pro generování Merkleových důkazů). Existuje možnost, že členové výborů pro dostupnost dat [budou kompromitováni zlomyslným aktérem](https://notes.ethereum.org/DD7GyItYQ02d0ax_X-UbWg?view), který pak může zatajit offchain data.
+Uživatelé však musí důvěřovat DAC, že data zpřístupní, když to bude potřeba (např. pro generování Merkleových důkazů). Existuje možnost, že členové výborů pro dostupnost dat budou kompromitováni zlomyslným aktérem, který pak může zatajit offchain data.
 
 [Více o výborech pro dostupnost dat ve Validiích](https://medium.com/starkware/data-availability-e5564c416424).
 

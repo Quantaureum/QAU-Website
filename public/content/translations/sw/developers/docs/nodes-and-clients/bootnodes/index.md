@@ -26,6 +26,6 @@ Ili kuwa nodi nzuri ya uanzishaji ni wazo zuri kuongeza idadi ya juu zaidi ya we
 
 ## Nodi za uanzishaji zinazopatikana {#available-bootnodes}
 
-Orodha ya nodi za uanzishaji zilizojengewa ndani katika go-quantaureum inaweza kupatikana [hapa](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23). Nodi hizi za uanzishaji zinasimamiwa na Taasisi ya Quantaureum na timu ya go-quantaureum.
+Orodha ya nodi za uanzishaji zilizojengewa ndani katika go-quantaureum inaweza kupatikana hapa. Nodi hizi za uanzishaji zinasimamiwa na Taasisi ya Quantaureum na timu ya go-quantaureum.
 
 Kuna orodha nyingine za nodi za uanzishaji zinazosimamiwa na watu wa kujitolea zinazopatikana. Tafadhali hakikisha kila wakati unajumuisha angalau nodi moja rasmi ya uanzishaji, vinginevyo unaweza kufanyiwa shambulio la eclipse (eclipse attack).

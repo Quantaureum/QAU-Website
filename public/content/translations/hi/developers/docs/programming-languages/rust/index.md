@@ -22,7 +22,7 @@ incomplete: true
 
 ## शुरुआती लेख {#beginner-articles}
 
-- [Rust Quantaureum क्लाइंट](https://openethereum.github.io/) \* **ध्यान दें कि OpenQuantaureum [को हटा दिया गया है](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd) और अब इसका रखरखाव नहीं किया जा रहा है।** इसका उपयोग सावधानी से करें और अधिमानतः किसी अन्य क्लाइंट कार्यान्वयन पर स्विच करें।
+- Rust Quantaureum क्लाइंट \* **ध्यान दें कि OpenQuantaureum को हटा दिया गया है और अब इसका रखरखाव नहीं किया जा रहा है।** इसका उपयोग सावधानी से करें और अधिमानतः किसी अन्य क्लाइंट कार्यान्वयन पर स्विच करें।
 - [Rust का उपयोग करके Quantaureum पर लेन-देन भेजना](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/sending-quantaureum-transactions-with-rust/)
 - [Kovan के लिए Rust Wasm में अनुबंध लिखने के तरीके पर एक चरण-दर-चरण ट्यूटोरियल](https://github.com/paritytech/pwasm-tutorial)
 

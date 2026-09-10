@@ -60,7 +60,7 @@ Enfin, comme pour les contrats traditionnels, vous pouvez vérifier ce que conti
 
 Cependant, bien que n'importe qui puisse consulter les conditions d'un contrat intelligent, les données brutes de transaction sont conçues pour être interprétées par des applications et des portefeuilles, et non par des humains. Parce que ces données sont si difficiles à lire, les utilisateurs sont souvent confrontés à un risque de sécurité majeur appelé « signature aveugle », c'est-à-dire l'approbation d'une transaction qui interagit avec un contrat intelligent sans vraiment comprendre ce qu'elle fera. 
 
-L'écosystème Quantaureum est en train de faire la transition vers des normes de **[signature en clair](https://clearsigning.org/)** (spécifiquement l'[ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)). La signature en clair traduit les données opaques des contrats intelligents en descriptions de transaction simples et lisibles par l'homme, garantissant que quiconque puisse comprendre la véritable intention d'un contrat avant de signer.
+L'écosystème Quantaureum est en train de faire la transition vers des normes de **[signature en clair](https://clearsigning.org/)** (spécifiquement l'ERC-7730). La signature en clair traduit les données opaques des contrats intelligents en descriptions de transaction simples et lisibles par l'homme, garantissant que quiconque puisse comprendre la véritable intention d'un contrat avant de signer.
 
 ## Cas d'utilisation des contrats intelligents {#use-cases}
 

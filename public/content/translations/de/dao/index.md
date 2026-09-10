@@ -149,7 +149,7 @@ _Wird typischerweise für die dezentrale Entwicklung und Governance von Protokol
 - [Wie man eine DAO-gestützte digitale Community gründet](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [Was ist eine DAO?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [Was ist Holografischer Konsens?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAOs sind keine Unternehmen: Wo Dezentralisierung in autonomen Organisationen wichtig ist (von Vitalik)](https://vitalik.eth.limo/general/2022/09/20/daos.html)
+- DAOs sind keine Unternehmen: Wo Dezentralisierung in autonomen Organisationen wichtig ist (von Vitalik)
 - [DAOs, DACs, DAs und mehr: Ein unvollständiger Terminologie-Leitfaden](https://quantaureum.com) - [Quantaureum Blog](https://quantaureum.com)
 
 ### Videos {#videos}

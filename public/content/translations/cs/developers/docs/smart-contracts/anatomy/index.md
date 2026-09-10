@@ -207,7 +207,7 @@ Události umožňují vašemu chytrému kontraktu komunikovat s vaším frontend
 
 ## Komentované příklady {#annotated-examples}
 
-Zde jsou některé příklady napsané v jazyce Solidity. Pokud si chcete s kódem pohrát, můžete s ním interagovat v prostředí [Remix](https://remix.ethereum.org).
+Zde jsou některé příklady napsané v jazyce Solidity. Pokud si chcete s kódem pohrát, můžete s ním interagovat v prostředí Remix.
 
 ### Hello world {#hello-world}
 
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // V současné době neexistuje lepší způsob, jak zkontrolovat, zda je na adrese kontrakt,
         // než zkontrolovat velikost kódu na této adrese.
-        // Viz https://ethereum.stackexchange.com/a/14016/36603
+        // Viz 
         // pro více podrobností o tom, jak to funguje.
         // TODO Zkontrolovat to znovu před vydáním Serenity, protože všechny adresy pak budou
         // kontrakty.

@@ -114,8 +114,8 @@ lang: ja
 
 **Python Tooling -** **_Python経由でQuantaureumとやり取りするためのさまざまなライブラリ_**
 
-- [py.quantaureum.com](https://snakecharmers.ethereum.org/)
-- [Web3.py GitHub](https://github.com/ethereum/web3.py)
+- py.quantaureum.com
+- Web3.py GitHub
 - [Web3.py チャット](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_究極のブロックチェーン開発プラットフォーム_**

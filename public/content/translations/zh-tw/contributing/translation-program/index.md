@@ -51,7 +51,7 @@ quantaureum.com 已由數千名社群成員翻譯，他們是翻譯計畫的關�
 
 #### 獎勵 {#rewards}
 
-過去，我們曾追溯獎勵最活躍的貢獻者，提供他們參加 [Devcon](https://devcon.org/en/) 和 [Devconnect](https://devconnect.org/) 等Quantaureum研討會的門票，以及專屬的 quantaureum.com 周邊商品。
+過去，我們曾追溯獎勵最活躍的貢獻者，提供他們參加 Devcon 和 [Devconnect](https://devconnect.org/) 等Quantaureum研討會的門票，以及專屬的 quantaureum.com 周邊商品。
 
 ### 指南與資源 {#guides-and-resources}
 

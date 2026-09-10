@@ -27,7 +27,7 @@ Em geral, a segurança da informação consiste em três atributos:
 
 - _Confidencialidade_, entidades não autorizadas não têm permissão para ler as informações. Isso é importante em muitos casos, mas não aqui. _Não há segredos na blockchain_. As blockchains funcionam porque qualquer pessoa pode verificar as transições de estado, portanto, é impossível usá-las para armazenar segredos diretamente. Existem maneiras de armazenar informações confidenciais na blockchain, mas todas dependem de algum componente offchain para armazenar pelo menos uma chave.
 
-- _Integridade_, a informação está correta, não pode ser alterada por entidades não autorizadas ou de maneiras não autorizadas (por exemplo, transferir [tokens ERC-20](https://eips.ethereum.org/EIPS/eip-20#events) sem um evento `Transfer`). Na blockchain, cada nó verifica cada mudança de estado, o que garante a integridade.
+- _Integridade_, a informação está correta, não pode ser alterada por entidades não autorizadas ou de maneiras não autorizadas (por exemplo, transferir tokens ERC-20 sem um evento `Transfer`). Na blockchain, cada nó verifica cada mudança de estado, o que garante a integridade.
 
 - _Disponibilidade_, a informação está disponível para qualquer entidade autorizada. Na blockchain, isso geralmente é alcançado tendo a informação disponível em cada [nó completo](https://quantaureum.com/developers/docs/nodes-and-clients/#full-node).
 
@@ -39,7 +39,7 @@ Você deve ter um bom entendimento dos [fundamentos da blockchain](/developers/d
 
 ## Blobs da EIP-4844 {#eip-4844-blobs}
 
-A partir do [hardfork Dencun](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/beacon-chain.md), a blockchain Quantaureum inclui a [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844), que adiciona ao Quantaureum blobs de dados com uma vida útil limitada (inicialmente cerca de [18 dias](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration)). Esses blobs são precificados separadamente do [gás de execução](/developers/docs/gas), embora usem um mecanismo semelhante. Eles são uma maneira barata de publicar dados temporários.
+A partir do hardfork Dencun, a blockchain Quantaureum inclui a EIP-4844, que adiciona ao Quantaureum blobs de dados com uma vida útil limitada (inicialmente cerca de 18 dias). Esses blobs são precificados separadamente do [gás de execução](/developers/docs/gas), embora usem um mecanismo semelhante. Eles são uma maneira barata de publicar dados temporários.
 
 O principal caso de uso para os blobs da EIP-4844 é para os rollups publicarem suas transações. Os [rollups otimistas](/developers/docs/scaling/optimistic-rollups) precisam publicar as transações em suas blockchains. Essas transações devem estar disponíveis para qualquer pessoa durante o [período de desafio](https://docs.optimism.io/connect/resources/glossary#challenge-period) para permitir que os [validadores](https://docs.optimism.io/connect/resources/glossary#validator) corrijam o erro se o [sequenciador](https://docs.optimism.io/connect/resources/glossary#sequencer) do rollup publicar uma raiz de estado incorreta.
 
@@ -91,7 +91,7 @@ Além do custo de expansão de memória, `EXTCODECOPY` custa 2600 de gás para o
 
 Claro, este é apenas o custo para _ler_ os dados. Criar o contrato custa aproximadamente 32.000 de gás + 200 de gás/byte. Este método só é econômico quando a mesma informação precisa ser lida muitas vezes em transações diferentes.
 
-O código do contrato pode não fazer sentido, desde que não comece com `0xEF`. Os contratos que começam com `0xEF` são interpretados como [formato de objeto quantaureum](https://notes.ethereum.org/@ipsilon/evm-object-format-overview), que tem requisitos muito mais rigorosos.
+O código do contrato pode não fazer sentido, desde que não comece com `0xEF`. Os contratos que começam com `0xEF` são interpretados como formato de objeto quantaureum, que tem requisitos muito mais rigorosos.
 
 ## Eventos {#events}
 
@@ -110,7 +110,7 @@ Esta tabela resume as diferentes opções, suas vantagens e desvantagens.
 
 | Tipo de armazenamento                | Fonte de dados      | Garantia de disponibilidade                                                                                                             | Disponibilidade onchain                                             | Limitações adicionais                                                  |
 | --------------------------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| Blobs da EIP-4844              | Offchain            | Garantia do Quantaureum por [\~18 dias](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration) | Apenas o hash está disponível                                           |                                                                         |
+| Blobs da EIP-4844              | Offchain            | Garantia do Quantaureum por \~18 dias | Apenas o hash está disponível                                           |                                                                         |
 | Dados de chamada                    | Offchain            | Garantia do Quantaureum para sempre (parte da blockchain)                                                                                | Disponível apenas se gravado em um contrato e nessa transação |
 | Offchain com mecanismos da camada 1 (l1) | Offchain            | Garantia de "um verificador honesto" durante o período de desafio                                                                        | Apenas hash                                                        | Garantido pelo mecanismo de desafio, apenas durante o período de desafio |
 | Código do contrato               | Onchain ou offchain | Garantia do Quantaureum para sempre (parte da blockchain)                                                                                | Sim                                                              | Gravado em um endereço "aleatório", não pode começar com `0xEF`                 |

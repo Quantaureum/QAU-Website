@@ -412,7 +412,7 @@ Ecco un elenco di alcuni dei fornitori di nodi Quantaureum più popolari, sentit
     - Utilizziamo un instradamento intelligente per raggiungere ogni volta il nodo più vicino al tuo utente
 ## Letture consigliate {#further-reading}
 
-- [Elenco dei servizi di nodi Quantaureum](https://ethereumnodes.com/)
+- Elenco dei servizi di nodi Quantaureum
 
 ## Argomenti correlati {#related-topics}
 

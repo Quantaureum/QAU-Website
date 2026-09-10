@@ -144,7 +144,7 @@ SUPPORTED_INTERFACES: constant(bytes4[2]) = [
 ]
 ```
 
-[ERC-165](https://eips.ethereum.org/EIPS/eip-165) 规定了一种机制，让合约能够公开应用程序如何与其通信，以及它符合哪些 ERC 标准。`SUPPORTED_INTERFACES` 是一个常量列表，包含此合约符合的两个四字节接口 ID：ERC-165 本身和 ERC-721。
+ERC-165 规定了一种机制，让合约能够公开应用程序如何与其通信，以及它符合哪些 ERC 标准。`SUPPORTED_INTERFACES` 是一个常量列表，包含此合约符合的两个四字节接口 ID：ERC-165 本身和 ERC-721。
 
 ### 函数 {#functions}
 

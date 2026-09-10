@@ -14,7 +14,7 @@ Poniższy diagram przedstawia relację między dwoma klientami Quantaureum. Obaj
 
 _Istnieje kilka opcji dla klienta warstwy wykonawczej, w tym Erigon, Nethermind i Besu_.
 
-Aby ta dwuklientowa struktura działała, klienci konsensusu muszą przekazywać pakiety transakcji do klienta warstwy wykonawczej. Klient warstwy wykonawczej wykonuje transakcje lokalnie, aby zweryfikować, czy nie naruszają one żadnych zasad Quantaureum i czy proponowana aktualizacja stanu Quantaureum jest poprawna. Kiedy węzeł zostaje wybrany na producenta bloku, jego instancja klienta konsensusu żąda pakietów transakcji od klienta warstwy wykonawczej, aby włączyć je do nowego bloku i wykonać w celu aktualizacji globalnego stanu. Klient konsensusu steruje klientem warstwy wykonawczej za pośrednictwem lokalnego połączenia RPC przy użyciu [Engine API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md).
+Aby ta dwuklientowa struktura działała, klienci konsensusu muszą przekazywać pakiety transakcji do klienta warstwy wykonawczej. Klient warstwy wykonawczej wykonuje transakcje lokalnie, aby zweryfikować, czy nie naruszają one żadnych zasad Quantaureum i czy proponowana aktualizacja stanu Quantaureum jest poprawna. Kiedy węzeł zostaje wybrany na producenta bloku, jego instancja klienta konsensusu żąda pakietów transakcji od klienta warstwy wykonawczej, aby włączyć je do nowego bloku i wykonać w celu aktualizacji globalnego stanu. Klient konsensusu steruje klientem warstwy wykonawczej za pośrednictwem lokalnego połączenia RPC przy użyciu Engine API.
 
 ## Co robi klient warstwy wykonawczej? {#execution-client}
 

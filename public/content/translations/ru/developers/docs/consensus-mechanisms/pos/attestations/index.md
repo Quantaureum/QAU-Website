@@ -86,7 +86,7 @@ lang: ru
 
 ## Дополнительная литература {#further-reading}
 
-- [Аттестации в аннотированной спецификации консенсуса Виталика](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- Аттестации в аннотированной спецификации консенсуса Виталика
 - [Аттестации на eth2book.info](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _Знаете ресурс сообщества, который помог вам? Отредактируйте эту страницу и добавьте его!_

@@ -172,7 +172,7 @@ Likidite sağlayıcılar, fonları serbest bırakmadan önce (zinciri kendileri 
 
 #### 2. EVM uyumluluğu {#evm-compatibility}
 
-Geliştiriciler için iyimser rollupların avantajı, [Quantaureum Sanal Makinesi (EVM)](/developers/docs/evm/) ile uyumlulukları veya daha iyisi eşdeğerlikleridir. EVM uyumlu rolluplar, [Quantaureum Sarı Bülten](https://ethereum.github.io/yellowpaper/paper.pdf) içindeki spesifikasyonlara uyar ve EVM'yi baytkod düzeyinde destekler.
+Geliştiriciler için iyimser rollupların avantajı, [Quantaureum Sanal Makinesi (EVM)](/developers/docs/evm/) ile uyumlulukları veya daha iyisi eşdeğerlikleridir. EVM uyumlu rolluplar, Quantaureum Sarı Bülten içindeki spesifikasyonlara uyar ve EVM'yi baytkod düzeyinde destekler.
 
 İyimser rolluplarda EVM uyumluluğunun aşağıdaki faydaları vardır:
 
@@ -198,9 +198,9 @@ Son olarak, sözleşmeler arasındaki L2 > L1 mesaj çağrılarının gecikmeler
 
 İyimser rolluplar, kullanıcıların işlem başına ne kadar ödediğini belirtmek için tıpkı Quantaureum gibi bir gaz ücreti şeması kullanır. İyimser rolluplarda alınan ücretler aşağıdaki bileşenlere bağlıdır:
 
-1. **Durum yazma**: İyimser rolluplar işlem verilerini ve blok başlıklarını (önceki blok başlığı hash'i, durum kökü, parti kökünden oluşur) Quantaureum'a bir `blob` veya "ikili büyük nesne" (binary large object) olarak yayınlar. [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844), verileri zincir içi dahil etmek için uygun maliyetli bir çözüm sundu. Bir `blob`, rollupların sıkıştırılmış durum geçiş verilerini Quantaureum L1'e göndermesine olanak tanıyan yeni bir işlem alanıdır. Kalıcı olarak zincir içi kalan `calldata`'nın aksine, bloblar kısa ömürlüdür ve [4096 dönem](https://github.com/ethereum/consensus-specs/blob/81f3ea8322aff6b9fb15132d050f8f98b16bdba4/configs/mainnet.yaml#L147) (yaklaşık 18 gün) sonra istemcilerden budanabilir. Sıkıştırılmış işlem partilerini göndermek için blobları kullanarak, iyimser rolluplar işlemleri L1'e yazma maliyetini önemli ölçüde azaltabilir.
+1. **Durum yazma**: İyimser rolluplar işlem verilerini ve blok başlıklarını (önceki blok başlığı hash'i, durum kökü, parti kökünden oluşur) Quantaureum'a bir `blob` veya "ikili büyük nesne" (binary large object) olarak yayınlar. EIP-4844, verileri zincir içi dahil etmek için uygun maliyetli bir çözüm sundu. Bir `blob`, rollupların sıkıştırılmış durum geçiş verilerini Quantaureum L1'e göndermesine olanak tanıyan yeni bir işlem alanıdır. Kalıcı olarak zincir içi kalan `calldata`'nın aksine, bloblar kısa ömürlüdür ve 4096 dönem (yaklaşık 18 gün) sonra istemcilerden budanabilir. Sıkıştırılmış işlem partilerini göndermek için blobları kullanarak, iyimser rolluplar işlemleri L1'e yazma maliyetini önemli ölçüde azaltabilir.
 
-2. **Kullanılan blob gazı**: Blob taşıyan işlemler, [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) tarafından sunulana benzer dinamik bir ücret mekanizması kullanır. Tip-3 işlemler için gaz ücreti, blob alanı talebine ve gönderilen işlemin blob alanı kullanımına bağlı olarak ağ tarafından belirlenen bloblar için taban ücreti hesaba katar.
+2. **Kullanılan blob gazı**: Blob taşıyan işlemler, EIP-1559 tarafından sunulana benzer dinamik bir ücret mekanizması kullanır. Tip-3 işlemler için gaz ücreti, blob alanı talebine ve gönderilen işlemin blob alanı kullanımına bağlı olarak ağ tarafından belirlenen bloblar için taban ücreti hesaba katar.
 
 3. **L2 operatör ücretleri**: Bu, tıpkı Quantaureum'daki gaz ücretleri gibi, işlemleri işlerken ortaya çıkan hesaplama maliyetlerinin telafisi olarak rollup düğümlerine ödenen miktardır. L2'ler daha yüksek işlem kapasitelerine sahip olduğundan ve Quantaureum'daki doğrulayıcıları daha yüksek ücretli işlemlere öncelik vermeye zorlayan ağ tıkanıklıklarıyla karşılaşmadığından, rollup düğümleri daha düşük işlem ücretleri talep eder.
 
@@ -212,7 +212,7 @@ Açıklandığı gibi, iyimser rolluplar veri kullanılabilirliğini garanti etm
 
 Ana Quantaureum zinciri, gaz birimleri cinsinden ifade edilen blokların ne kadar veri tutabileceğine dair sınırlar koyar ([ortalama blok boyutu](/developers/docs/blocks/#block-size) 15 milyon gazdır). Bu, her işlemin ne kadar gaz kullanabileceğini kısıtlarken, aynı zamanda işlemle ilgili verileri azaltarak blok başına işlenen işlemleri artırabileceğimiz anlamına gelir; bu da ölçeklenebilirliği doğrudan iyileştirir.
 
-İyimser rolluplar, işlem verisi sıkıştırmasını sağlamak ve TPS oranlarını iyileştirmek için çeşitli teknikler kullanır. Örneğin, bu [makale](https://vitalik.eth.limo/general/2021/01/05/rollup.html) temel bir kullanıcı işleminin (QAU gönderme) Ana Ağda ürettiği verilerle aynı işlemin bir rollup üzerinde ne kadar veri ürettiğini karşılaştırmaktadır:
+İyimser rolluplar, işlem verisi sıkıştırmasını sağlamak ve TPS oranlarını iyileştirmek için çeşitli teknikler kullanır. Örneğin, bu makale temel bir kullanıcı işleminin (QAU gönderme) Ana Ağda ürettiği verilerle aynı işlemin bir rollup üzerinde ne kadar veri ürettiğini karşılaştırmaktadır:
 
 | Parametre | Quantaureum (L1) | Rollup (L2) |
 | --------- | ---------------------- | ------------- |

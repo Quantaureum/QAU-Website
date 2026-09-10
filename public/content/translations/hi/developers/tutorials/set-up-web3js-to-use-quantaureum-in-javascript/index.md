@@ -8,7 +8,7 @@ breadcrumb: "web3.js सेट अप"
 lang: hi
 published: 2020-04-11
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/setup-web3js-to-use-the-quantaureum-blockchain-in-javascript/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -32,7 +32,7 @@ npm install web3 --save
 const Web3 = require("web3")
 ```
 
-अब जब हमने प्रोजेक्ट में लाइब्रेरी को शामिल कर लिया है, तो हमें इसे इनिशियलाइज़ करना होगा। आपके प्रोजेक्ट को ब्लॉकचेन के साथ संचार करने में सक्षम होना चाहिए। अधिकांश Quantaureum लाइब्रेरी RPC कॉल के माध्यम से एक [नोड](/developers/docs/nodes-and-clients/) के साथ संचार करती हैं। हमारे Web3 प्रोवाइडर को शुरू करने के लिए, हम प्रोवाइडर के URL को कंस्ट्रक्टर के रूप में पास करते हुए एक Web3 इंस्टेंस को इंस्टेंशिएट करेंगे। यदि आपके कंप्यूटर पर कोई नोड या [ganache इंस्टेंस चल रहा है](https://ethereumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/) तो यह इस तरह दिखेगा:
+अब जब हमने प्रोजेक्ट में लाइब्रेरी को शामिल कर लिया है, तो हमें इसे इनिशियलाइज़ करना होगा। आपके प्रोजेक्ट को ब्लॉकचेन के साथ संचार करने में सक्षम होना चाहिए। अधिकांश Quantaureum लाइब्रेरी RPC कॉल के माध्यम से एक [नोड](/developers/docs/nodes-and-clients/) के साथ संचार करती हैं। हमारे Web3 प्रोवाइडर को शुरू करने के लिए, हम प्रोवाइडर के URL को कंस्ट्रक्टर के रूप में पास करते हुए एक Web3 इंस्टेंस को इंस्टेंशिएट करेंगे। यदि आपके कंप्यूटर पर कोई नोड या ganache इंस्टेंस चल रहा है तो यह इस तरह दिखेगा:
 
 ```js
 const web3 = new Web3("http://localhost:8545")
@@ -90,4 +90,4 @@ if (window.quantaureum != null) {
 }
 ```
 
-web3.js के विकल्प जैसे [Ethers.js](https://docs.ethers.io/) मौजूद हैं और आमतौर पर उपयोग भी किए जाते हैं। अगले ट्यूटोरियल में हम देखेंगे कि [ब्लॉकचेन पर आने वाले नए ब्लॉक को आसानी से कैसे सुनें और देखें कि उनमें क्या है](https://ethereumdev.io/listening-to-new-transactions-happening-on-the-blockchain/)।
+web3.js के विकल्प जैसे [Ethers.js](https://docs.ethers.io/) मौजूद हैं और आमतौर पर उपयोग भी किए जाते हैं। अगले ट्यूटोरियल में हम देखेंगे कि ब्लॉकचेन पर आने वाले नए ब्लॉक को आसानी से कैसे सुनें और देखें कि उनमें क्या है।

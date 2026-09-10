@@ -12,7 +12,7 @@ Một giao diện tiêu chuẩn cho các hợp đồng quản lý nhiều loại
 
 Ý tưởng này rất đơn giản và nhằm mục đích tạo ra một giao diện hợp đồng thông minh có thể đại diện và kiểm soát bất kỳ số lượng loại token có thể thay thế và không thể thay thế nào. Theo cách này, token ERC-1155 có thể thực hiện các chức năng tương tự như token [ERC-20](/developers/docs/standards/tokens/erc-20/) và [ERC-721](/developers/docs/standards/tokens/erc-721/), và thậm chí là cả hai cùng một lúc. Nó cải thiện chức năng của cả hai tiêu chuẩn ERC-20 và ERC-721, làm cho nó hiệu quả hơn và sửa chữa các lỗi triển khai rõ ràng.
 
-Token ERC-1155 được mô tả đầy đủ trong [EIP-1155](https://eips.ethereum.org/EIPS/eip-1155).
+Token ERC-1155 được mô tả đầy đủ trong EIP-1155.
 
 ## Điều kiện tiên quyết {#prerequisites}
 
@@ -113,7 +113,7 @@ function onERC1155BatchReceived(
 ) external returns(bytes4);
 ```
 
-Với sự hỗ trợ của [EIP-165](https://eips.ethereum.org/EIPS/eip-165), ERC-1155 chỉ hỗ trợ các hook nhận cho các hợp đồng thông minh. Hàm hook phải trả về một giá trị bytes4 ma thuật được xác định trước, được cho là:
+Với sự hỗ trợ của EIP-165, ERC-1155 chỉ hỗ trợ các hook nhận cho các hợp đồng thông minh. Hàm hook phải trả về một giá trị bytes4 ma thuật được xác định trước, được cho là:
 
 ```solidity
 bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"))
@@ -123,7 +123,7 @@ Khi hợp đồng nhận trả về giá trị này, người ta giả định r
 
 ### Hỗ trợ NFT {#nft-support}
 
-Khi nguồn cung chỉ là một, token về cơ bản là một token không thể thay thế (NFT). Và theo tiêu chuẩn của ERC-721, bạn có thể xác định một URL siêu dữ liệu. URL này có thể được đọc và sửa đổi bởi các client, xem [tại đây](https://eips.ethereum.org/EIPS/eip-1155#metadata).
+Khi nguồn cung chỉ là một, token về cơ bản là một token không thể thay thế (NFT). Và theo tiêu chuẩn của ERC-721, bạn có thể xác định một URL siêu dữ liệu. URL này có thể được đọc và sửa đổi bởi các client, xem tại đây.
 
 ### Quy tắc chuyển an toàn {#safe-transfer-rule}
 
@@ -140,7 +140,7 @@ _Lưu ý_: Tất cả các hàm hàng loạt bao gồm cả hook cũng tồn t�
 
 ## Đọc thêm {#further-reading}
 
-- [EIP-1155: Tiêu chuẩn đa token](https://eips.ethereum.org/EIPS/eip-1155)
+- EIP-1155: Tiêu chuẩn đa token
 - [ERC-1155: Tài liệu OpenZeppelin](https://docs.openzeppelin.com/contracts/5.x/erc1155)
 - [ERC-1155: Kho lưu trữ GitHub](https://github.com/enjin/erc-1155)
 - [API NFT của Alchemy](https://www.alchemy.com/docs/reference/nft-api-quickstart)

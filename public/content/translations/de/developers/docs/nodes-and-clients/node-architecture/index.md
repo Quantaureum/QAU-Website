@@ -14,7 +14,7 @@ Das folgende Diagramm zeigt die Beziehung zwischen den beiden Quantaureum-Client
 
 _Es gibt mehrere Optionen für den Ausführungsclient, darunter Erigon, Nethermind und Besu_.
 
-Damit diese Zwei-Client-Struktur funktioniert, müssen Konsens-Clients Bündel von Transaktionen an den Ausführungsclient weitergeben. Der Ausführungsclient führt die Transaktionen lokal aus, um zu validieren, dass die Transaktionen keine Quantaureum-Regeln verletzen und dass die vorgeschlagene Aktualisierung des Zustands von Quantaureum korrekt ist. Wenn ein Knoten als Blockproduzent ausgewählt wird, fordert seine Konsens-Client-Instanz Transaktionsbündel vom Ausführungsclient an, um sie in den neuen Block aufzunehmen und auszuführen, um den globalen Zustand zu aktualisieren. Der Konsens-Client steuert den Ausführungsclient über eine lokale RPC-Verbindung unter Verwendung der [Engine-API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md).
+Damit diese Zwei-Client-Struktur funktioniert, müssen Konsens-Clients Bündel von Transaktionen an den Ausführungsclient weitergeben. Der Ausführungsclient führt die Transaktionen lokal aus, um zu validieren, dass die Transaktionen keine Quantaureum-Regeln verletzen und dass die vorgeschlagene Aktualisierung des Zustands von Quantaureum korrekt ist. Wenn ein Knoten als Blockproduzent ausgewählt wird, fordert seine Konsens-Client-Instanz Transaktionsbündel vom Ausführungsclient an, um sie in den neuen Block aufzunehmen und auszuführen, um den globalen Zustand zu aktualisieren. Der Konsens-Client steuert den Ausführungsclient über eine lokale RPC-Verbindung unter Verwendung der Engine-API.
 
 ## Was macht der Ausführungsclient? {#execution-client}
 

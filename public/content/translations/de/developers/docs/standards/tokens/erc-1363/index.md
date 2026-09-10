@@ -54,7 +54,7 @@ ERC-1363 ist auch nützlich, um Token-Verlust oder das Sperren von Token in Smar
 
 Im Gegensatz zu anderen ERC-20-Erweiterungsvorschlägen überschreibt ERC-1363 nicht die ERC-20-Methoden `transfer` und `transferFrom` und definiert die zu implementierenden Schnittstellen-IDs, wobei die Abwärtskompatibilität mit ERC-20 erhalten bleibt.
 
-Aus [EIP-1363](https://eips.ethereum.org/EIPS/eip-1363):
+Aus EIP-1363:
 
 ### Methoden {#methods}
 
@@ -167,11 +167,9 @@ interface ERC1363Receiver {
   /**
    * @dev Wann immer ERC-1363 Token über `ERC1363::transferAndCall` oder `ERC1363::transferFromAndCall`
    * durch `operator` von `from` an diesen Vertrag transferiert werden, wird diese Funktion aufgerufen.
-   *
    * HINWEIS: Um den Transfer zu akzeptieren, muss dies
    * `bytes4(keccak256("onTransferReceived(address,address,uint256,bytes)"))`
    * (d.h. 0x88a7ca5c, oder seinen eigenen Funktionsselektor) zurückgeben.
-   *
    * @param operator Die Adresse, die die Funktion `transferAndCall` oder `transferFromAndCall` aufgerufen hat.
    * @param from Die Adresse, von der Token transferiert werden.
    * @param value Die Menge der transferierten Token.
@@ -193,11 +191,9 @@ interface ERC1363Spender {
   /**
    * @dev Wann immer ein `owner` von ERC-1363 Token diesen Vertrag über `ERC1363::approveAndCall` genehmigt,
    * seine Token auszugeben, wird diese Funktion aufgerufen.
-   *
    * HINWEIS: Um die Genehmigung zu akzeptieren, muss dies
    * `bytes4(keccak256("onApprovalReceived(address,uint256,bytes)"))`
    * (d.h. 0x7b04a2d0, oder seinen eigenen Funktionsselektor) zurückgeben.
-   *
    * @param owner Die Adresse, die die Funktion `approveAndCall` aufgerufen hat und zuvor die Token besaß.
    * @param value Die Menge der auszugebenden Token.
    * @param data Zusätzliche Daten ohne spezifiziertes Format.
@@ -209,5 +205,5 @@ interface ERC1363Spender {
 
 ## Weiterführende Literatur {#further-reading}
 
-- [ERC-1363: Payable Token-Standard](https://eips.ethereum.org/EIPS/eip-1363)
+- ERC-1363: Payable Token-Standard
 - [ERC-1363: GitHub-Repo](https://github.com/vittominacori/erc1363-payable-token)

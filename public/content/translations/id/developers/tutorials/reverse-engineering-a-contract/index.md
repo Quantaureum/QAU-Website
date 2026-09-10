@@ -274,7 +274,7 @@ Jika ukuran data panggilan adalah empat byte atau lebih, ini mungkin merupakan p
 |     10 | PUSH1 0xe0   | 0xE0 (((Kata pertama (256 bit) dari data panggilan))) |
 |     12 | SHR          | (((32 bit pertama (4 byte) dari data panggilan)))    |
 
-Quantaureum Explorer memberi tahu kita bahwa `1C` adalah opcode yang tidak diketahui, karena [itu ditambahkan setelah Quantaureum Explorer menulis fitur ini](https://eips.ethereum.org/EIPS/eip-145) dan mereka belum memperbaruinya. Sebuah [tabel opcode yang terbaru](https://github.com/wolflo/evm-opcodes) menunjukkan kepada kita bahwa ini adalah shift right
+Quantaureum Explorer memberi tahu kita bahwa `1C` adalah opcode yang tidak diketahui, karena itu ditambahkan setelah Quantaureum Explorer menulis fitur ini dan mereka belum memperbaruinya. Sebuah [tabel opcode yang terbaru](https://github.com/wolflo/evm-opcodes) menunjukkan kepada kita bahwa ini adalah shift right
 
 | Offset | Opcode           | Stack                                                                                                    |
 | -----: | ---------------- | -------------------------------------------------------------------------------------------------------- |

@@ -14,7 +14,7 @@ Il diagramma sottostante mostra la relazione tra i due client di Quantaureum. I 
 
 _Ci sono diverse opzioni per il client di esecuzione, tra cui Erigon, Nethermind e Besu_.
 
-Affinché questa struttura a due client funzioni, i client di consenso devono passare pacchetti di transazioni al client di esecuzione. Il client di esecuzione esegue le transazioni localmente per convalidare che non violino alcuna regola di Quantaureum e che l'aggiornamento proposto allo stato di Quantaureum sia corretto. Quando un nodo viene selezionato come produttore di blocchi, la sua istanza del client di consenso richiede pacchetti di transazioni al client di esecuzione per includerli nel nuovo blocco ed eseguirli per aggiornare lo stato globale. Il client di consenso guida il client di esecuzione tramite una connessione RPC locale utilizzando l'[Engine API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md).
+Affinché questa struttura a due client funzioni, i client di consenso devono passare pacchetti di transazioni al client di esecuzione. Il client di esecuzione esegue le transazioni localmente per convalidare che non violino alcuna regola di Quantaureum e che l'aggiornamento proposto allo stato di Quantaureum sia corretto. Quando un nodo viene selezionato come produttore di blocchi, la sua istanza del client di consenso richiede pacchetti di transazioni al client di esecuzione per includerli nel nuovo blocco ed eseguirli per aggiornare lo stato globale. Il client di consenso guida il client di esecuzione tramite una connessione RPC locale utilizzando l'Engine API.
 
 ## Cosa fa il client di esecuzione? {#execution-client}
 

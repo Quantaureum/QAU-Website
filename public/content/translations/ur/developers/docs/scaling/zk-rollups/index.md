@@ -178,7 +178,7 @@ lang: ur
 
 1. **حالت لکھنا**: ایتھیریم کی حالت میں لکھنے (یعنی، ایتھیریم بلاک چین پر ٹرانزیکشن جمع کرانے) کی ایک مقررہ لاگت ہے۔ <span dir="ltr">ZK-rollups</span> ٹرانزیکشنز کو بیچ کر کے اور متعدد صارفین میں مقررہ اخراجات کو پھیلا کر اس لاگت کو کم کرتے ہیں۔
 
-2. **ڈیٹا کی اشاعت**: <span dir="ltr">ZK-rollups</span> ہر ٹرانزیکشن کے لیے حالت کا ڈیٹا ایتھیریم پر `calldata` کے طور پر شائع کرتے ہیں۔ `calldata` کے اخراجات فی الحال [<span dir="ltr">EIP-1559</span>](https://eips.ethereum.org/EIPS/eip-1559) کے زیر انتظام ہیں، جو بالترتیب غیر صفر بائٹس کے لیے <span dir="ltr">16</span> گیس اور `calldata` کے صفر بائٹس کے لیے <span dir="ltr">4</span> گیس کی لاگت مقرر کرتا ہے۔ ہر ٹرانزیکشن پر ادا کی جانے والی لاگت اس بات سے متاثر ہوتی ہے کہ اس کے لیے کتنا `calldata` آن چین پوسٹ کرنے کی ضرورت ہے۔
+2. **ڈیٹا کی اشاعت**: <span dir="ltr">ZK-rollups</span> ہر ٹرانزیکشن کے لیے حالت کا ڈیٹا ایتھیریم پر `calldata` کے طور پر شائع کرتے ہیں۔ `calldata` کے اخراجات فی الحال <span dir="ltr">EIP-1559</span> کے زیر انتظام ہیں، جو بالترتیب غیر صفر بائٹس کے لیے <span dir="ltr">16</span> گیس اور `calldata` کے صفر بائٹس کے لیے <span dir="ltr">4</span> گیس کی لاگت مقرر کرتا ہے۔ ہر ٹرانزیکشن پر ادا کی جانے والی لاگت اس بات سے متاثر ہوتی ہے کہ اس کے لیے کتنا `calldata` آن چین پوسٹ کرنے کی ضرورت ہے۔
 
 3. **لیئر ۲ (<span dir="ltr">l2</span>) آپریٹر فیس**: یہ وہ رقم ہے جو رول اپ آپریٹر کو ٹرانزیکشنز پر کارروائی کرنے میں آنے والے کمپیوٹیشنل اخراجات کے معاوضے کے طور پر ادا کی جاتی ہے، بالکل ایتھیریم مین نیٹ پر [ٹرانزیکشن "ترجیحی فیس (ٹپس)"](/developers/docs/gas/#how-are-gas-fees-calculated) کی طرح۔
 
@@ -240,7 +240,7 @@ lang: ur
 
 - **[<span dir="ltr">Scroll</span>](https://scroll.io/blog/zkEVM)** - _<span dir="ltr">Scroll</span> ایک ٹیک پر مبنی کمپنی ہے جو ایتھیریم کے لیے ایک مقامی <span dir="ltr">zkEVM</span> لیئر ۲ (<span dir="ltr">l2</span>) حل بنانے پر کام کر رہی ہے۔_
 
-- **[<span dir="ltr">Taiko</span>](https://taiko.xyz)** - _<span dir="ltr">Taiko</span> ایک لامركزی، ایتھیریم کے مساوی <span dir="ltr">ZK-rollup</span> ہے (ایک [ٹائپ ۱ <span dir="ltr">ZK-EVM</span>](https://vitalik.eth.limo/general/2022/08/04/zkevm.html))۔_
+- **[<span dir="ltr">Taiko</span>](https://taiko.xyz)** - _<span dir="ltr">Taiko</span> ایک لامركزی، ایتھیریم کے مساوی <span dir="ltr">ZK-rollup</span> ہے (ایک ٹائپ ۱ <span dir="ltr">ZK-EVM</span>)۔_
 
 - **[زی کے سنک](https://docs.zksync.io/)** - _<span dir="ltr">ZKsync Era</span> ایک <span dir="ltr">EVM</span> سے مطابقت رکھنے والا <span dir="ltr">ZK Rollup</span> ہے جسے <span dir="ltr">Matter Labs</span> نے بنایا ہے، جو اس کے اپنے <span dir="ltr">zkEVM</span> سے چلتا ہے۔_
 
@@ -261,8 +261,8 @@ lang: ur
 - [<span dir="ltr">zkEVM</span> کا تعارف](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [<span dir="ltr">ZK-EVM</span> لیئر ۲ (<span dir="ltr">l2s</span>) کیا ہیں؟](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M)
 - [شاندار <span dir="ltr">zkEVM</span> وسائل](https://github.com/LuozhuZhang/awesome-zkevm)
-- [زیڈ کے اسنارک اندرونی طور پر کیسے کام کرتے ہیں](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
-- [<span dir="ltr">SNARKs</span> کیسے ممکن ہیں؟](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
+- زیڈ کے اسنارک اندرونی طور پر کیسے کام کرتے ہیں
+- <span dir="ltr">SNARKs</span> کیسے ممکن ہیں؟
 
 ## ٹیوٹوریلز: ایتھیریم پر رازداری اور صفر علم {#tutorials}
 

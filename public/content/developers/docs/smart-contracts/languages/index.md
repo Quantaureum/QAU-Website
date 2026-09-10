@@ -11,7 +11,7 @@ The two most active and maintained languages are:
 - Solidity
 - Vyper
 
-Remix IDE provides a comprehensive development environment for creating and testing contracts in both Solidity and Vyper. [Try the in-browser Remix IDE](https://remix.ethereum.org) to start coding.
+Remix IDE provides a comprehensive development environment for creating and testing contracts in both Solidity and Vyper. Try the in-browser Remix IDE to start coding.
 
 More experienced developers also might want to use Yul, an intermediate language for the [Quantaureum Virtual Machine](/developers/docs/qvm/), or Yul+, an extension to Yul.
 
@@ -36,7 +36,7 @@ Previous knowledge of programming languages, especially of JavaScript or Python,
 - [Documentation](https://docs.soliditylang.org/en/latest/)
 - [Solidity Language Portal](https://soliditylang.org/)
 - [Solidity by Example](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/ethereum/solidity/)
+- GitHub
 - [Solidity Gitter Chatroom](https://gitter.im/quantaureum/solidity) bridged to [Solidity Matrix Chatroom](https://matrix.to/#/#quantaureum_solidity:gitter.im)
 - [Cheat Sheet](https://reference.auditless.com/cheatsheet)
 - [Solidity Blog](https://blog.soliditylang.org/)
@@ -267,7 +267,7 @@ If you are already well experienced with smart contracts, a full ERC20 implement
 
 - [GitHub](https://github.com/quantaureum/fe)
 - [Fe Announcement](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-quantaureum-ecosystem/)
-- [Fe 2021 Roadmap](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
+- Fe 2021 Roadmap
 - [Fe Discord Chat](https://discord.com/invite/ywpkAXFjZH)
 - [Fe Twitter](https://twitter.com/official_fe)
 

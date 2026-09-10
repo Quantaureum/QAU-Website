@@ -14,7 +14,7 @@ lang: ur
 
 منافع بخش تجوریوں میں <span dir="ltr">ERC-4626</span> انضمام کی کوشش کو کم کرے گا اور زیادہ مستقل اور مضبوط نفاذ کے نمونے بنا کر ڈیولپرز کی جانب سے کم خصوصی کوشش کے ساتھ مختلف ایپلی کیشنز میں منافع تک رسائی کو کھولے گا۔
 
-<span dir="ltr">ERC-4626</span> ٹوکن کو مکمل طور پر [<span dir="ltr">EIP-4626</span>](https://eips.ethereum.org/EIPS/eip-4626) میں بیان کیا گیا ہے۔
+<span dir="ltr">ERC-4626</span> ٹوکن کو مکمل طور پر <span dir="ltr">EIP-4626</span> میں بیان کیا گیا ہے۔
 
 **غیر ہم آہنگ (Asynchronous) تجوری کی توسیع (<span dir="ltr">ERC-7540</span>)**
 
@@ -30,7 +30,7 @@ lang: ur
 
 <span dir="ltr">ERC-7575</span> <span dir="ltr">ERC-4626</span> کے نفاذ سے <span dir="ltr">ERC-20</span> ٹوکن کے نفاذ کو بیرونی بنا کر متعدد اثاثوں والی تجوریوں کے لیے تعاون کا اضافہ کرتا ہے۔
 
-<span dir="ltr">ERC-7575</span> توسیع کو مکمل طور پر [<span dir="ltr">ERC-7575</span>](https://eips.ethereum.org/EIPS/eip-7575) میں بیان کیا گیا ہے۔
+<span dir="ltr">ERC-7575</span> توسیع کو مکمل طور پر <span dir="ltr">ERC-7575</span> میں بیان کیا گیا ہے۔
 ## پیشگی شرائط {#prerequisites}
 
 اس صفحے کو بہتر طور پر سمجھنے کے لیے، ہم تجویز کرتے ہیں کہ آپ پہلے [ٹوکن کے معیارات](/developers/docs/standards/tokens/) اور [<span dir="ltr">ERC-20</span>](/developers/docs/standards/tokens/erc-20/) کے بارے میں پڑھیں۔
@@ -222,5 +222,5 @@ event Withdraw(
 
 ## مزید مطالعہ {#further-reading}
 
-- [<span dir="ltr">EIP-4626</span>: ٹوکنائزڈ تجوری کا معیار](https://eips.ethereum.org/EIPS/eip-4626)
+- <span dir="ltr">EIP-4626</span>: ٹوکنائزڈ تجوری کا معیار
 - [<span dir="ltr">ERC-4626</span>: <span dir="ltr">GitHub</span> ریپو](https://github.com/transmissions11/solmate/blob/main/src/tokens/ERC4626.sol)

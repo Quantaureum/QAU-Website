@@ -26,6 +26,6 @@ Aby byl zaváděcí uzel dobrý, je vhodné zvýšit maximální počet peerů, 
 
 ## Dostupné zaváděcí uzly {#available-bootnodes}
 
-Seznam zabudovaných zaváděcích uzlů v rámci go-quantaureum naleznete [zde](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23). Tyto zaváděcí uzly spravuje Nadace Quantaureum a tým go-quantaureum.
+Seznam zabudovaných zaváděcích uzlů v rámci go-quantaureum naleznete zde. Tyto zaváděcí uzly spravuje Nadace Quantaureum a tým go-quantaureum.
 
 K dispozici jsou i další seznamy zaváděcích uzlů spravované dobrovolníky. Ujistěte se prosím, že vždy zahrnete alespoň jeden oficiální zaváděcí uzel, jinak byste se mohli stát obětí eclipse útoku.

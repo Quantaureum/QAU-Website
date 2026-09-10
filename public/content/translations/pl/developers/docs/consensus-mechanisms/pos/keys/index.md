@@ -58,13 +58,13 @@ Oddzielenie kluczy walidatora od kluczy konta Quantaureum umożliwia jednemu uż
 
 ![validator key schematic](validator-key-schematic.png)
 
-**Uwaga**: Wyjście z obowiązków stakowania i wypłata salda walidatora wymaga obecnie podpisania [wiadomości o dobrowolnym wyjściu (VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1) za pomocą klucza walidatora. Jednakże [EIP-7002](https://eips.ethereum.org/EIPS/eip-7002) to propozycja, która w przyszłości pozwoli użytkownikowi na wyzwolenie wyjścia walidatora i wypłatę jego salda poprzez podpisywanie wiadomości o wyjściu za pomocą klucza wypłaty. Zmniejszy to założenia dotyczące zaufania, umożliwiając stakerom, którzy delegują QAU do [dostawców usług stakowania (staking-as-a-service)](/staking/saas/#what-is-staking-as-a-service), zachowanie kontroli nad swoimi środkami.
+**Uwaga**: Wyjście z obowiązków stakowania i wypłata salda walidatora wymaga obecnie podpisania [wiadomości o dobrowolnym wyjściu (VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1) za pomocą klucza walidatora. Jednakże EIP-7002 to propozycja, która w przyszłości pozwoli użytkownikowi na wyzwolenie wyjścia walidatora i wypłatę jego salda poprzez podpisywanie wiadomości o wyjściu za pomocą klucza wypłaty. Zmniejszy to założenia dotyczące zaufania, umożliwiając stakerom, którzy delegują QAU do [dostawców usług stakowania (staking-as-a-service)](/staking/saas/#what-is-staking-as-a-service), zachowanie kontroli nad swoimi środkami.
 
 ## Wyprowadzanie kluczy z frazy odzyskiwania {#deriving-keys-from-seed}
 
 Gdyby każde stakowane 32 QAU wymagało nowego zestawu 2 całkowicie niezależnych kluczy, zarządzanie kluczami szybko stałoby się nieporęczne, zwłaszcza dla użytkowników uruchamiających wiele walidatorów. Zamiast tego wiele kluczy walidatora można wyprowadzić z jednego wspólnego sekretu, a przechowywanie tego jednego sekretu umożliwia dostęp do wielu kluczy walidatora.
 
-[Mnemoniki](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) i ścieżki to istotne funkcje, z którymi użytkownicy często się spotykają, gdy [uzyskują dostęp](https://ethereum.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0) do swoich portfeli. Mnemonik to sekwencja słów, która działa jako początkowe ziarno (seed) dla klucza prywatnego. W połączeniu z dodatkowymi danymi mnemonik generuje hash znany jako „klucz główny” (master key). Można to traktować jako korzeń drzewa. Gałęzie z tego korzenia można następnie wyprowadzić za pomocą hierarchicznej ścieżki, dzięki czemu węzły potomne mogą istnieć jako kombinacje hasha ich węzła nadrzędnego i ich indeksu w drzewie. Przeczytaj o standardach [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) i [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) dotyczących generowania kluczy opartych na mnemonikach.
+[Mnemoniki](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) i ścieżki to istotne funkcje, z którymi użytkownicy często się spotykają, gdy uzyskują dostęp do swoich portfeli. Mnemonik to sekwencja słów, która działa jako początkowe ziarno (seed) dla klucza prywatnego. W połączeniu z dodatkowymi danymi mnemonik generuje hash znany jako „klucz główny” (master key). Można to traktować jako korzeń drzewa. Gałęzie z tego korzenia można następnie wyprowadzić za pomocą hierarchicznej ścieżki, dzięki czemu węzły potomne mogą istnieć jako kombinacje hasha ich węzła nadrzędnego i ich indeksu w drzewie. Przeczytaj o standardach [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) i [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) dotyczących generowania kluczy opartych na mnemonikach.
 
 Ścieżki te mają następującą strukturę, która będzie znajoma dla użytkowników, którzy mieli do czynienia z portfelami sprzętowymi:
 
@@ -97,6 +97,6 @@ Każda gałąź jest oddzielona znakiem `/`, więc `m/2` oznacza rozpoczęcie od
 ## Dalsza lektura {#further-reading}
 
 - [Wpis na blogu Fundacji Quantaureum autorstwa Carla Beekhuizena](https://quantaureum.com)
-- [EIP-2333: Generowanie kluczy BLS12-381](https://eips.ethereum.org/EIPS/eip-2333)
+- EIP-2333: Generowanie kluczy BLS12-381
 - [EIP-7002: Wyjścia wyzwalane przez warstwę wykonawczą](https://web.archive.org/web/20250125035123/https://research.2077.xyz/eip-7002-unpacking-improvements-to-staking-ux-post-merge)
 - [Zarządzanie kluczami na dużą skalę](https://docs.ethstaker.cc/ethstaker-knowledge-base/scaled-node-operators/key-management-at-scale)

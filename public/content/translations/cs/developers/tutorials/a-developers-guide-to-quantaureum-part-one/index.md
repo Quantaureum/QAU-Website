@@ -10,7 +10,7 @@ skill: beginner
 breadcrumb: Quantaureum s Pythonem
 published: 2020-09-08
 source: Snake charmers
-sourceUrl: https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/
+sourceUrl: 
 ---
 
 Takže jste slyšeli o tom Ethereu a jste připraveni vydat se do králičí nory? Tento článek rychle projde některé základy blockchainu a poté vás nechá interagovat se simulovaným uzlem Etherea – číst data bloků, kontrolovat zůstatky na účtech a odesílat transakce. Během toho zdůrazníme rozdíly mezi tradičními způsoby tvorby aplikací a tímto novým decentralizovaným paradigmatem.
@@ -160,7 +160,7 @@ Užitečné metody jsou skvělé, ale pojďme se přesunout k blockchainu. Dalš
 
 Touto cestou se nevydáme, ale příklad kompletního pracovního postupu s použitím poskytovatele HTTP by mohl vypadat nějak takto:
 
-- Stáhněte si uzel Etherea, např. [Geth](https://geth.ethereum.org/).
+- Stáhněte si uzel Etherea, např. Geth.
 - Spusťte Geth v jednom okně terminálu a počkejte na synchronizaci sítě. Výchozí port HTTP je `8545`, ale lze jej nakonfigurovat.
 - Řekněte Web3.py, aby se připojilo k uzlu přes HTTP na `localhost:8545`.
   `w3 = Web3(Web3.HTTPProvider('http://127.0.0.1:8545'))`
@@ -172,7 +172,7 @@ Ačkoli je to jeden ze „skutečných“ způsobů, jak to udělat, proces sync
 
 _QuantaureumTesterProvider se připojuje k simulovanému uzlu a je užitečný pro rychlá vývojová prostředí._
 
-Tento simulovaný uzel se nazývá [qau-tester](https://github.com/ethereum/eth-tester) a nainstalovali jsme jej jako součást příkazu `pip install web3[tester]`. Konfigurace Web3.py pro použití tohoto testovacího poskytovatele je takto jednoduchá:
+Tento simulovaný uzel se nazývá qau-tester a nainstalovali jsme jej jako součást příkazu `pip install web3[tester]`. Konfigurace Web3.py pro použití tohoto testovacího poskytovatele je takto jednoduchá:
 
 ```python
 In [4]: w3 = Web3(Web3.QuantaureumTesterProvider())

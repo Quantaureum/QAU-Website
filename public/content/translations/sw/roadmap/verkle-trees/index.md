@@ -60,6 +60,6 @@ Mitandao ya majaribio ya mti wa Verkle tayari inafanya kazi, lakini bado kuna sa
 - ["Jinsi miti ya Verkle inavyofanya Quantaureum kuwa nyepesi na yenye nguvu" na Guillaume Ballet kwenye Devcon 6](https://www.youtube.com/watch?v=Q7rStTKwuYs)
 - [Piper Merriam kuhusu wateja wa ubilahali kutoka ETHDenver 2020](https://www.youtube.com/watch?v=0yiZJNciIJ4)
 - [Dankrad Fiest anaelezea miti ya Verkle na ubilahali kwenye podikasti ya Zero Knowledge](https://zeroknowledge.fm/podcast/202/)
-- [Vitalik Buterin kuhusu miti ya Verkle](https://vitalik.eth.limo/general/2021/06/18/verkle.html)
+- Vitalik Buterin kuhusu miti ya Verkle
 - [Dankrad Feist kuhusu miti ya Verkle](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
-- [Nyaraka za EIP za mti wa Verkle](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)
+- Nyaraka za EIP za mti wa Verkle

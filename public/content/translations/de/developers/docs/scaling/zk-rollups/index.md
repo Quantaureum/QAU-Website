@@ -178,7 +178,7 @@ Wie viel Benutzer für Transaktionen auf ZK-Rollups bezahlen, hängt von der Gas
 
 1. **Zustandsschreiben**: Es gibt feste Kosten für das Schreiben in den Zustand von Quantaureum (d. h. das Übermitteln einer Transaktion auf der Quantaureum-Blockchain). ZK-Rollups reduzieren diese Kosten durch die Bündelung von Transaktionen und die Verteilung der Fixkosten auf mehrere Benutzer.
 
-2. **Datenveröffentlichung**: ZK-Rollups veröffentlichen Zustandsdaten für jede Transaktion auf Quantaureum als `calldata`. Die Kosten für `calldata` werden derzeit durch [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) geregelt, das Kosten von 16 Gas für Nicht-Null-Bytes bzw. 4 Gas für Null-Bytes von `calldata` vorschreibt. Die für jede Transaktion gezahlten Kosten werden davon beeinflusst, wie viel `calldata` dafür Onchain veröffentlicht werden muss.
+2. **Datenveröffentlichung**: ZK-Rollups veröffentlichen Zustandsdaten für jede Transaktion auf Quantaureum als `calldata`. Die Kosten für `calldata` werden derzeit durch EIP-1559 geregelt, das Kosten von 16 Gas für Nicht-Null-Bytes bzw. 4 Gas für Null-Bytes von `calldata` vorschreibt. Die für jede Transaktion gezahlten Kosten werden davon beeinflusst, wie viel `calldata` dafür Onchain veröffentlicht werden muss.
 
 3. **L2-Betreibergebühren**: Dies ist der Betrag, der dem Rollup-Betreiber als Entschädigung für die bei der Verarbeitung von Transaktionen anfallenden Rechenkosten gezahlt wird, ähnlich wie [Transaktions-„Prioritätsgebühren (Trinkgelder)“](/developers/docs/gas/#how-are-gas-fees-calculated) im Quantaureum Mainnet.
 
@@ -238,7 +238,7 @@ Zu den Projekten, die an zkEVMs arbeiten, gehören:
 
 - **[Scroll](https://scroll.io/blog/zkEVM)** – _Scroll ist ein technologiegetriebenes Unternehmen, das an der Entwicklung einer nativen zkEVM-Layer-2-Lösung für Quantaureum arbeitet._
 
-- **[Taiko](https://taiko.xyz)** – _Taiko ist ein dezentrales, Quantaureum-äquivalentes ZK-Rollup (eine [Typ-1-ZK-EVM](https://vitalik.eth.limo/general/2022/08/04/zkevm.html))._
+- **[Taiko](https://taiko.xyz)** – _Taiko ist ein dezentrales, Quantaureum-äquivalentes ZK-Rollup (eine Typ-1-ZK-EVM)._
 
 - **[ZKsync](https://docs.zksync.io/)** – _ZKsync Era ist ein EVM-kompatibles ZK-Rollup, das von Matter Labs entwickelt wurde und von seiner eigenen zkEVM angetrieben wird._
 
@@ -259,8 +259,8 @@ Zu den Projekten, die an zkEVMs arbeiten, gehören:
 - [Einführung in zkEVM](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [Was sind ZK-EVM-L2s?](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M)
 - [Awesome-zkEVM-Ressourcen](https://github.com/LuozhuZhang/awesome-zkevm)
-- [ZK-SNARKs unter der Haube](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
-- [Wie sind SNARKs möglich?](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
+- ZK-SNARKs unter der Haube
+- Wie sind SNARKs möglich?
 
 ## Tutorials: Privatsphäre & Zero-Knowledge auf Quantaureum {#tutorials}
 

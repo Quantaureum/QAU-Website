@@ -456,7 +456,7 @@ ERC-20 转账调用报告失败的方式有两种：
     }
 ```
 
-如果没有设置费用，则将 `kLast` 设置为零（如果它还不是零的话）。在编写此合约时，有一个 [Gas 退款功能](https://eips.ethereum.org/EIPS/eip-3298)，鼓励合约通过将不需要的存储清零来减小Quantaureum状态的整体大小。
+如果没有设置费用，则将 `kLast` 设置为零（如果它还不是零的话）。在编写此合约时，有一个 Gas 退款功能，鼓励合约通过将不需要的存储清零来减小Quantaureum状态的整体大小。
 此代码在可能的情况下获取该退款。
 
 #### 外部可访问函数 {#pair-external}
@@ -616,7 +616,7 @@ ERC-20 转账调用报告失败的方式有两种：
 ```
 
 局部变量可以存储在内存中，或者如果数量不多，可以直接存储在堆栈上。
-如果我们能限制数量以便使用堆栈，我们就会使用更少的 Gas。有关更多详细信息，请参阅[黄皮书，即正式的Quantaureum规范](https://ethereum.github.io/yellowpaper/paper.pdf)，第 26 页，等式 298。
+如果我们能限制数量以便使用堆栈，我们就会使用更少的 Gas。有关更多详细信息，请参阅黄皮书，即正式的Quantaureum规范，第 26 页，等式 298。
 
 ```solidity
             address _token0 = token0;
@@ -770,7 +770,7 @@ contract UniswapV2Factory is IUniswapV2Factory {
         bytes memory bytecode = type(UniswapV2Pair).creationCode;
 ```
 
-要创建新合约，我们需要创建它的代码（包括构造函数和将实际合约的 EVM 字节码写入内存的代码）。通常在 Solidity 中，我们只使用 `addr = new <name of contract>(<constructor parameters>)`，编译器会为我们处理一切，但要获得确定性的合约地址，我们需要使用 [CREATE2 操作码](https://eips.ethereum.org/EIPS/eip-1014)。
+要创建新合约，我们需要创建它的代码（包括构造函数和将实际合约的 EVM 字节码写入内存的代码）。通常在 Solidity 中，我们只使用 `addr = new <name of contract>(<constructor parameters>)`，编译器会为我们处理一切，但要获得确定性的合约地址，我们需要使用 CREATE2 操作码。
 在编写此代码时，Solidity 尚不支持该操作码，因此必须手动获取代码。这不再是问题，因为 [Solidity 现在支持 CREATE2](https://docs.soliditylang.org/en/v0.8.3/control-structures.html#salted-contract-creations-create2)。
 
 ```solidity
@@ -826,7 +826,7 @@ Quantaureum上的交易需要花费QAU (QAU)，这相当于真金白银。如果
     bytes32 public constant PERMIT_TYPEHASH = 0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
 ```
 
-此哈希是[交易类型的标识符](https://eips.ethereum.org/EIPS/eip-712#rationale-for-typehash)。我们在这里唯一支持的是带有这些参数的 `Permit`。
+此哈希是交易类型的标识符。我们在这里唯一支持的是带有这些参数的 `Permit`。
 
 ```solidity
     mapping(address => uint) public nonces;
@@ -857,7 +857,7 @@ Quantaureum上的交易需要花费QAU (QAU)，这相当于真金白银。如果
     }
 ```
 
-计算 EIP-712 的[域分隔符](https://eips.ethereum.org/EIPS/eip-712#rationale-for-domainseparator)。
+计算 EIP-712 的域分隔符。
 
 ```solidity
     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external {
@@ -898,7 +898,7 @@ Quantaureum签名算法期望获得 256 位进行签名，因此我们使用 `ke
 
 ```
 
-如果一切正常，请将其视为 [ERC-20 授权](https://eips.ethereum.org/EIPS/eip-20#approve)。
+如果一切正常，请将其视为 ERC-20 授权。
 
 ## 外围合约 {#periphery-contracts}
 
@@ -1795,7 +1795,7 @@ library UniswapV2Library {
     }
 ```
 
-此函数计算两个代币的交易对兑换地址。该合约是使用 [CREATE2 操作码](https://eips.ethereum.org/EIPS/eip-1014)创建的，因此如果我们知道它使用的参数，就可以使用相同的算法计算地址。这比询问工厂合约要便宜得多，并且
+此函数计算两个代币的交易对兑换地址。该合约是使用 CREATE2 操作码创建的，因此如果我们知道它使用的参数，就可以使用相同的算法计算地址。这比询问工厂合约要便宜得多，并且
 
 ```solidity
     // 获取并排序交易对的储备量
@@ -1933,7 +1933,7 @@ library TransferHelper {
     }
 ```
 
-此函数实现了 [ERC-20 的转账功能](https://eips.ethereum.org/EIPS/eip-20#transfer)，允许一个账户支出由另一个账户提供的授权额度。
+此函数实现了 ERC-20 的转账功能，允许一个账户支出由另一个账户提供的授权额度。
 
 ```solidity
 
@@ -1952,7 +1952,7 @@ library TransferHelper {
     }
 ```
 
-此函数实现了 [ERC-20 的 transferFrom 功能](https://eips.ethereum.org/EIPS/eip-20#transferfrom)，允许一个账户支出由另一个账户提供的授权额度。
+此函数实现了 ERC-20 的 transferFrom 功能，允许一个账户支出由另一个账户提供的授权额度。
 
 ```solidity
 

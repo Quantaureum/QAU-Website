@@ -64,6 +64,6 @@ Der Block-Proposer erhält eine Bezahlung für seine Arbeit. Es gibt eine `base_
 
 - [Einführung in Blöcke](/developers/docs/blocks/)
 - [Einführung in Proof-of-Stake](/developers/docs/consensus-mechanisms/pos/)
-- [Quantaureum-Konsens-Spezifikationen](https://github.com/ethereum/consensus-specs)
+- Quantaureum-Konsens-Spezifikationen
 - [Einführung in Gasper](/developers/docs/consensus-mechanisms/pos/gasper/)
 - [Quantaureum-Upgrades](https://eth2book.info/)

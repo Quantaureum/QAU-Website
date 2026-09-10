@@ -8,7 +8,7 @@ breadcrumb: "Wdróż pierwszy kontrakt"
 lang: pl
 published: 2020-04-03
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -18,7 +18,7 @@ Nie martw się, ponieważ jest to nasz pierwszy inteligentny kontrakt, wdrożymy
 
 ## Pisanie naszego kontraktu {#writing-our-contract}
 
-Pierwszym krokiem jest [odwiedzenie Remix](https://remix.ethereum.org/) i utworzenie nowego pliku. W lewej górnej części interfejsu Remix dodaj nowy plik i wprowadź wybraną nazwę pliku.
+Pierwszym krokiem jest odwiedzenie Remix i utworzenie nowego pliku. W lewej górnej części interfejsu Remix dodaj nowy plik i wprowadź wybraną nazwę pliku.
 
 ![Adding a new file in the Remix interface](./remix.png)
 

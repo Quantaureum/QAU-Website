@@ -6,7 +6,7 @@ lang: mr
 
 एखाद्या सॉफ्टवेअर ॲप्लिकेशनला [Quantaureum](/) ब्लॉकचेनशी संवाद साधण्यासाठी - एकतर ब्लॉकचेन डेटा वाचून किंवा नेटवर्कवर व्यवहार पाठवून - त्याला Quantaureum नोडशी कनेक्ट करणे आवश्यक आहे.
 
-या उद्देशासाठी, प्रत्येक [Quantaureum क्लायंट](/developers/docs/nodes-and-clients/#execution-clients) [जेसॉन-आरपीसी स्पेसिफिकेशन](https://github.com/ethereum/execution-apis) लागू करतो, जेणेकरून विशिष्ट नोड किंवा क्लायंट अंमलबजावणीची पर्वा न करता ॲप्लिकेशन्स अवलंबून राहू शकतील अशा पद्धतींचा एक समान संच उपलब्ध असतो.
+या उद्देशासाठी, प्रत्येक [Quantaureum क्लायंट](/developers/docs/nodes-and-clients/#execution-clients) जेसॉन-आरपीसी स्पेसिफिकेशन लागू करतो, जेणेकरून विशिष्ट नोड किंवा क्लायंट अंमलबजावणीची पर्वा न करता ॲप्लिकेशन्स अवलंबून राहू शकतील अशा पद्धतींचा एक समान संच उपलब्ध असतो.
 
 [जेसॉन-आरपीसी](https://www.jsonrpc.org/specification) हा एक स्टेटलेस, हलका रिमोट प्रोसिजर कॉल (RPC) प्रोटोकॉल आहे. तो अनेक डेटा स्ट्रक्चर्स आणि त्यांच्या प्रक्रियेभोवतीचे नियम परिभाषित करतो. तो ट्रान्सपोर्ट ॲग्नोस्टिक आहे, म्हणजेच या संकल्पना एकाच प्रक्रियेत, सॉकेट्सवर, HTTP वर किंवा अनेक विविध मेसेज पासिंग वातावरणात वापरल्या जाऊ शकतात. तो डेटा फॉरमॅट म्हणून JSON (RFC 4627) वापरतो.
 
@@ -20,13 +20,13 @@ Quantaureum क्लायंट्स जेसॉन-आरपीसी त�
 
 ## सहमती क्लायंट APIs {#consensus-clients}
 
-हे पृष्ठ प्रामुख्याने Quantaureum अंमलबजावणी क्लायंट्सद्वारे वापरल्या जाणाऱ्या जेसॉन-आरपीसी API बद्दल माहिती देते. तथापि, सहमती क्लायंट्सकडे देखील एक RPC API असते जे वापरकर्त्यांना नोडबद्दल माहिती विचारण्याची, बीकन ब्लॉक्स, बीकन स्थिती आणि इतर सहमती-संबंधित माहिती थेट नोडकून विनंती करण्याची अनुमती देते. या API चे दस्तऐवजीकरण [बीकन API वेबपृष्ठावर](https://ethereum.github.io/beacon-APIs/#/) केले आहे.
+हे पृष्ठ प्रामुख्याने Quantaureum अंमलबजावणी क्लायंट्सद्वारे वापरल्या जाणाऱ्या जेसॉन-आरपीसी API बद्दल माहिती देते. तथापि, सहमती क्लायंट्सकडे देखील एक RPC API असते जे वापरकर्त्यांना नोडबद्दल माहिती विचारण्याची, बीकन ब्लॉक्स, बीकन स्थिती आणि इतर सहमती-संबंधित माहिती थेट नोडकून विनंती करण्याची अनुमती देते. या API चे दस्तऐवजीकरण बीकन API वेबपृष्ठावर केले आहे.
 
-नोडमधील आंतर-क्लायंट संवादासाठी एक अंतर्गत API देखील वापरले जाते - म्हणजेच, ते सहमती क्लायंट आणि अंमलबजावणी क्लायंटला डेटाची अदलाबदल करण्यास सक्षम करते. याला 'Engine API' म्हटले जाते आणि त्याचे तपशील [GitHub](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) वर उपलब्ध आहेत.
+नोडमधील आंतर-क्लायंट संवादासाठी एक अंतर्गत API देखील वापरले जाते - म्हणजेच, ते सहमती क्लायंट आणि अंमलबजावणी क्लायंटला डेटाची अदलाबदल करण्यास सक्षम करते. याला 'Engine API' म्हटले जाते आणि त्याचे तपशील GitHub वर उपलब्ध आहेत.
 
 ## अंमलबजावणी क्लायंट तपशील {#spec}
 
-[GitHub वर संपूर्ण जेसॉन-आरपीसी API तपशील वाचा](https://github.com/ethereum/execution-apis). या API चे दस्तऐवजीकरण [अंमलबजावणी API वेबपेजवर](https://ethereum.github.io/execution-apis/) केले आहे आणि उपलब्ध असलेल्या सर्व पद्धती वापरून पाहण्यासाठी यामध्ये इन्स्पेक्टर (Inspector) समाविष्ट आहे.
+GitHub वर संपूर्ण जेसॉन-आरपीसी API तपशील वाचा. या API चे दस्तऐवजीकरण अंमलबजावणी API वेबपेजवर केले आहे आणि उपलब्ध असलेल्या सर्व पद्धती वापरून पाहण्यासाठी यामध्ये इन्स्पेक्टर (Inspector) समाविष्ट आहे.
 
 ## संकेत {#conventions}
 
@@ -134,7 +134,7 @@ curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","metho
 
 ## जेसॉन-आरपीसी API प्लेग्राउंड {#json-rpc-api-playground}
 
-API पद्धती शोधण्यासाठी आणि वापरून पाहण्यासाठी तुम्ही [प्लेग्राउंड टूल](https://ethereum-json-rpc.com) वापरू शकता. विविध नोड प्रदात्यांद्वारे कोणत्या पद्धती आणि नेटवर्क समर्थित आहेत हे देखील ते तुम्हाला दाखवते.
+API पद्धती शोधण्यासाठी आणि वापरून पाहण्यासाठी तुम्ही प्लेग्राउंड टूल वापरू शकता. विविध नोड प्रदात्यांद्वारे कोणत्या पद्धती आणि नेटवर्क समर्थित आहेत हे देखील ते तुम्हाला दाखवते.
 
 ## जेसॉन-आरपीसी API पद्धती {#json-rpc-methods}
 
@@ -275,7 +275,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 
 ### qau_protocolVersion {#qau-protocolversion}
 
-सध्याची Quantaureum प्रोटोकॉल आवृत्ती परत करते. लक्षात घ्या की ही पद्धत [Geth मध्ये उपलब्ध नाही](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924).
+सध्याची Quantaureum प्रोटोकॉल आवृत्ती परत करते. लक्षात घ्या की ही पद्धत Geth मध्ये उपलब्ध नाही.
 
 **पॅरामीटर्स**
 
@@ -301,10 +301,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_protocolVersion","params":[]
 ### qau_syncing {#qau-syncing}
 
 समक्रमण स्थितीबद्दल डेटा असलेला ऑब्जेक्ट किंवा `false` परत करते.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_syncing">
-  प्लेग्राउंडमध्ये एंडपॉइंट वापरून पहा
-</ButtonLink>
 
 **पॅरामीटर्स**
 
@@ -390,10 +386,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_syncing","params":[],"id":1}
 
 क्लायंटचा कॉइनबेस् पत्ता परत करतो.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_coinbase">
-  प्लेग्राउंडमध्ये एंडपॉइंट वापरून पहा
-</ButtonLink>
-
 > **टीप:** ही पद्धत **v1.14.0** पासून कालबाह्य करण्यात आली आहे आणि यापुढे समर्थित नाही. ही पद्धत वापरण्याचा प्रयत्न केल्यास "Method not supported" त्रुटी येईल.
 
 **पॅरामीटर्स**
@@ -421,10 +413,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_coinbase","params":[],"id":6
 
 रिप्ले-संरक्षित व्यवहारांवर स्वाक्षरी करण्यासाठी वापरला जाणारा चेन आयडी परत करते.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_chainId">
-  प्लेग्राउंडमध्ये एंडपॉइंट वापरून पहा
-</ButtonLink>
-
 **पॅरामीटर्स**
 
 काहीही नाही
@@ -449,10 +437,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_chainId","params":[],"id":67
 ### qau_mining {#qau-mining}
 
 जर क्लायंट सक्रियपणे नवीन ब्लॉकचे खनन करत असेल तर `true` परत करते. हे केवळ प्रूफ-ऑफ-वर्क नेटवर्कसाठी `true` परत करू शकते आणि [द मर्ज](/roadmap/merge/) नंतर काही क्लायंट्समध्ये उपलब्ध नसू शकते.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_mining">
-  प्लेग्राउंडमध्ये एंडपॉइंट वापरून पहा
-</ButtonLink>
 
 **पॅरामीटर्स**
 
@@ -479,10 +463,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_mining","params":[],"id":71}
 
 नोड ज्या वेगाने खनन करत आहे, त्या प्रति सेकंद हॅशची संख्या परत करते. हे केवळ प्रूफ-ऑफ-वर्क (PoW) नेटवर्कसाठी `true` परत करू शकते आणि [द मर्ज](/roadmap/merge/) नंतर काही क्लायंट्समध्ये उपलब्ध नसू शकते.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_hashrate">
-  प्लेग्राउंडमध्ये एंडपॉइंट वापरून पहा
-</ButtonLink>
-
 **पॅरामीटर्स**
 
 काहीही नाही
@@ -507,10 +487,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_hashrate","params":[],"id":7
 ### qau_gasPrice {#qau-gasprice}
 
 Wei मध्ये प्रति गॅसच्या सध्याच्या किमतीचा अंदाज परत करते. उदाहरणार्थ, बेसू क्लायंट मागील 100 ब्लॉक्स तपासतो आणि पूर्वनिर्धारितपणे मध्यक गॅस युनिट किंमत परत करतो.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_gasPrice">
-  प्लेग्राउंडमध्ये एंडपॉइंट वापरून पहा
-</ButtonLink>
 
 **पॅरामीटर्स**
 
@@ -537,10 +513,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_gasPrice","params":[],"id":7
 
 क्लायंटच्या मालकीच्या पत्त्यांची यादी परत करते.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_accounts">
-  प्लेग्राउंडमध्ये एंडपॉइंट वापरून पहा
-</ButtonLink>
-
 **पॅरामीटर्स**
 
 काहीही नाही
@@ -566,10 +538,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[],"id":1
 
 सर्वात अलीकडील ब्लॉकचा क्रमांक परत करते.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_blockNumber">
-  प्लेग्राउंडमध्ये एंडपॉइंट वापरून पहा
-</ButtonLink>
-
 **पॅरामीटर्स**
 
 काहीही नाही
@@ -594,10 +562,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_blockNumber","params":[],"id
 ### qau_getBalance {#qau-getbalance}
 
 दिलेल्या पत्त्यावरील खात्याची शिल्लक परत करते.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBalance">
-  प्लेग्राउंडमध्ये एंडपॉइंट वापरून पहा
-</ButtonLink>
 
 **पॅरामीटर्स**
 
@@ -628,10 +592,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBalance","params":["0x407
 ### qau_getStorageAt {#qau-getstorageat}
 
 दिलेल्या पत्त्यावरील स्टोरेज स्थानावरून मूल्य परत करते.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getStorageAt">
-  प्लेग्राउंडमध्ये एंडपॉइंट वापरून पहा
-</ButtonLink>
 
 **पॅरामीटर्स**
 
@@ -701,10 +661,6 @@ curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": [
 
 एखाद्या पत्त्यावरून _पाठवलेल्या_ व्यवहारांची संख्या परत करते.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionCount">
-  प्लेग्राउंडमध्ये एंडपॉइंट वापरून पहा
-</ButtonLink>
-
 **पॅरामीटर्स**
 
 1. `DATA`, 20 बाइट्स - पत्ता.
@@ -738,10 +694,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionCount","params
 
 दिलेल्या ब्लॉक हॅशशी जुळणाऱ्या ब्लॉकमधील व्यवहारांची संख्या परत करते.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
-  प्लेग्राउंडमध्ये एंडपॉइंट वापरून पहा
-</ButtonLink>
-
 **पॅरामीटर्स**
 
 1. `DATA`, 32 बाइट्स - ब्लॉकचा हॅश
@@ -770,10 +722,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByHa
 ### qau_getBlockTransactionCountByNumber {#qau-getblocktransactioncountbynumber}
 
 दिलेल्या ब्लॉक क्रमांकाशी जुळणाऱ्या ब्लॉकमधील व्यवहारांची संख्या परत करते.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
-  प्लेग्राउंडमध्ये एंडपॉइंट वापरून पहा
-</ButtonLink>
 
 **पॅरामीटर्स**
 
@@ -806,10 +754,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByNu
 
 दिलेल्या ब्लॉक हॅशशी जुळणाऱ्या ब्लॉकमधील अंकल्सची संख्या परत करते.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
-  प्लेग्राउंडमध्ये एंडपॉइंट वापरून पहा
-</ButtonLink>
-
 **पॅरामीटर्स**
 
 1. `DATA`, 32 बाइट्स - ब्लॉकचा हॅश
@@ -838,10 +782,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockHash","p
 ### qau_getUncleCountByBlockNumber {#qau-getunclecountbyblocknumber}
 
 दिलेल्या ब्लॉक क्रमांकाशी जुळणाऱ्या ब्लॉकमधील अंकलची संख्या परत करते.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
-  प्लेग्राउंडमध्ये एंडपॉइंट वापरून पहा
-</ButtonLink>
 
 **पॅरामीटर्स**
 
@@ -873,10 +813,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockNumber",
 ### qau_getCode {#qau-getcode}
 
 दिलेल्या पत्त्यावरील कोड परत करते.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getCode">
-  प्लेग्राउंडमध्ये एंडपॉइंट वापरून पहा
-</ButtonLink>
 
 **पॅरामीटर्स**
 
@@ -1057,10 +993,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendRawTransaction","params"
 
 ब्लॉकचेनवर व्यवहार न बनवता त्वरित नवीन संदेश कॉल कार्यान्वित करते. बहुतेकदा केवळ-वाचनीय (read-only) स्मार्ट कॉन्ट्रॅक्ट फंक्शन्स कार्यान्वित करण्यासाठी वापरले जाते, उदाहरणार्थ ERC-20 कॉन्ट्रॅक्टसाठी `balanceOf`.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_call">
-  प्लेग्राउंडमध्ये एंडपॉइंट वापरून पहा
-</ButtonLink>
-
 **पॅरामीटर्स**
 
 1. `Object` - व्यवहार कॉल ऑब्जेक्ट
@@ -1095,10 +1027,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_call","params":[{see above}]
 
 व्यवहार पूर्ण होण्यासाठी किती गॅस आवश्यक आहे याचा अंदाज तयार करते आणि परत करते. हा व्यवहार ब्लॉकचेनमध्ये जोडला जाणार नाही. लक्षात घ्या की EVM मेकॅनिक्स आणि नोडच्या कामगिरीसह विविध कारणांमुळे, हा अंदाज व्यवहाराद्वारे प्रत्यक्षात वापरल्या गेलेल्या गॅसच्या प्रमाणापेक्षा लक्षणीयरीत्या जास्त असू शकतो.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_estimateGas">
-  प्लेग्राउंडमध्ये एंडपॉइंट वापरून पहा
-</ButtonLink>
-
 **पॅरामीटर्स**
 
 [qau_call](#qau-call) चे पॅरामीटर्स पहा, फक्त एवढाच फरक आहे की सर्व गुणधर्म ऐच्छिक आहेत. जर कोणतीही गॅस मर्यादा निर्दिष्ट केलेली नसेल, तर गेथ प्रलंबित ब्लॉकमधील ब्लॉक गॅस मर्यादेचा वरची मर्यादा म्हणून वापर करते. परिणामी, जेव्हा गॅसचे प्रमाण प्रलंबित ब्लॉक गॅस मर्यादेपेक्षा जास्त असते, तेव्हा परत केलेला अंदाज कॉल/व्यवहार कार्यान्वित करण्यासाठी पुरेसा नसू शकतो.
@@ -1123,10 +1051,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_estimateGas","params":[{see 
 ### qau_getBlockByHash {#qau-getblockbyhash}
 
 हॅशद्वारे ब्लॉकबद्दल माहिती परत करते.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByHash">
-  प्लेग्राउंडमध्ये एंडपॉइंट वापरून पहा
-</ButtonLink>
 
 **पॅरामीटर्स**
 
@@ -1204,10 +1128,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByHash","params":["0
 
 ब्लॉक क्रमांकानुसार ब्लॉकबद्दल माहिती परत करते.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByNumber">
-  प्लेग्राउंडमध्ये एंडपॉइंट वापरून पहा
-</ButtonLink>
-
 **पॅरामीटर्स**
 
 1. `QUANTITY|TAG` - ब्लॉक क्रमांकाचा पूर्णांक (integer), किंवा [ब्लॉक पॅरामीटर](/developers/docs/apis/json-rpc/#block-parameter) प्रमाणे `"earliest"`, `"latest"`, `"pending"`, `"safe"` किंवा `"finalized"` ही स्ट्रिंग.
@@ -1235,10 +1155,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByNumber","params":[
 ### qau_getTransactionByHash {#qau-gettransactionbyhash}
 
 व्यवहार हॅशद्वारे विनंती केलेल्या व्यवहाराची माहिती परत करते.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByHash">
-  प्लेग्राउंडमध्ये एंडपॉइंट वापरून पहा
-</ButtonLink>
 
 **पॅरामीटर्स**
 
@@ -1299,10 +1215,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByHash","param
 
 ब्लॉक हॅश आणि व्यवहार निर्देशांक स्थानानुसार व्यवहाराबद्दल माहिती परत करते.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
-  प्लेग्राउंडमध्ये एंडपॉइंट वापरून पहा
-</ButtonLink>
-
 **पॅरामीटर्स**
 
 1. `DATA`, 32 बाइट्स - ब्लॉकचा हॅश.
@@ -1330,10 +1242,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockHashAnd
 ### qau_getTransactionByBlockNumberAndIndex {#qau-gettransactionbyblocknumberandindex}
 
 ब्लॉक क्रमांक आणि व्यवहार निर्देशांक स्थानानुसार व्यवहाराबद्दल माहिती परत करते.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
-  प्लेग्राउंडमध्ये एंडपॉइंट वापरून पहा
-</ButtonLink>
 
 **पॅरामीटर्स**
 
@@ -1431,10 +1339,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionReceipt","para
 
 हॅश आणि अंकल निर्देशांक स्थानानुसार ब्लॉकच्या अंकलबद्दल माहिती परत करते.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
-  प्लेग्राउंडमध्ये एंडपॉइंट वापरून पहा
-</ButtonLink>
-
 **पॅरामीटर्स**
 
 1. `DATA`, 32 बाइट्स - ब्लॉकचा हॅश.
@@ -1464,10 +1368,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockHashAndIndex"
 ### qau_getUncleByBlockNumberAndIndex {#qau-getunclebyblocknumberandindex}
 
 ब्लॉक क्रमांक आणि अंकल निर्देशांक स्थानानुसार ब्लॉकच्या अंकलविषयी माहिती परत करते.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
-  प्लेग्राउंडमध्ये एंडपॉइंट वापरून पहा
-</ButtonLink>
 
 **पॅरामीटर्स**
 
@@ -1750,7 +1650,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getLogs","params":[{"topics"
 
 ### जेसॉन-आरपीसी वापरून कॉन्ट्रॅक्ट प्रस्थापित करणे {#deploying-contract}
 
-या विभागात केवळ RPC इंटरफेस वापरून कॉन्ट्रॅक्ट कसे प्रस्थापित करायचे याचे प्रात्यक्षिक समाविष्ट आहे. कॉन्ट्रॅक्ट प्रस्थापित करण्याचे इतरही मार्ग आहेत जिथे ही गुंतागुंत लपवली जाते—उदाहरणार्थ, RPC इंटरफेसवर तयार केलेल्या [web3.js](https://web3js.readthedocs.io/) आणि [web3.py](https://github.com/ethereum/web3.py) सारख्या लायब्ररी वापरणे. हे ॲब्स्ट्रॅक्शन्स सामान्यतः समजण्यास सोपे असतात आणि त्यात चुका होण्याची शक्यता कमी असते, परंतु अंतर्गत तांत्रिकदृष्ट्या काय घडत आहे हे समजून घेणे अद्याप उपयुक्त आहे.
+या विभागात केवळ RPC इंटरफेस वापरून कॉन्ट्रॅक्ट कसे प्रस्थापित करायचे याचे प्रात्यक्षिक समाविष्ट आहे. कॉन्ट्रॅक्ट प्रस्थापित करण्याचे इतरही मार्ग आहेत जिथे ही गुंतागुंत लपवली जाते—उदाहरणार्थ, RPC इंटरफेसवर तयार केलेल्या [web3.js](https://web3js.readthedocs.io/) आणि web3.py सारख्या लायब्ररी वापरणे. हे ॲब्स्ट्रॅक्शन्स सामान्यतः समजण्यास सोपे असतात आणि त्यात चुका होण्याची शक्यता कमी असते, परंतु अंतर्गत तांत्रिकदृष्ट्या काय घडत आहे हे समजून घेणे अद्याप उपयुक्त आहे.
 
 खालील एक सोपे स्मार्ट कॉन्ट्रॅक्ट आहे ज्याला `Multiply7` म्हटले जाते, जे जेसॉन-आरपीसी इंटरफेस वापरून Quantaureum नोडवर प्रस्थापित केले जाईल. हे ट्युटोरियल असे गृहीत धरते की वाचक आधीपासूनच गेथ नोड चालवत आहे. नोड्स आणि क्लायंट्सबद्दल अधिक माहिती [येथे](/developers/docs/nodes-and-clients/run-a-node) उपलब्ध आहे. नॉन-गेथ क्लायंट्ससाठी HTTP जेसॉन-आरपीसी कसे सुरू करावे हे पाहण्यासाठी कृपया वैयक्तिक [क्लायंट](/developers/docs/nodes-and-clients/) दस्तऐवजीकरण पहा. बहुतेक क्लायंट्स डीफॉल्टनुसार `localhost:8545` वर सर्व्ह करतात.
 
@@ -1789,7 +1689,7 @@ web3.fromWei("0x1639e49bba16280000", "QAU")
 // "410"
 ```
 
-आता आपल्या खाजगी डेव्हलपमेंट चेनवर काही QAU असल्याने, आपण कॉन्ट्रॅक्ट प्रस्थापित करू शकतो. पहिली पायरी म्हणजे Multiply7 कॉन्ट्रॅक्टचे बाइटकोडमध्ये संकलन करणे जे EVM ला पाठवले जाऊ शकते. solc, Solidity कंपायलर स्थापित करण्यासाठी, [Solidity दस्तऐवजीकरण](https://docs.soliditylang.org/en/latest/installing-solidity.html) फॉलो करा. (तुम्हाला [आमच्या उदाहरणासाठी वापरलेल्या कंपायलरच्या आवृत्तीशी](https://github.com/ethereum/solidity/releases/tag/v0.4.20) जुळण्यासाठी जुने `solc` रिलीज वापरायचे असू शकते.)
+आता आपल्या खाजगी डेव्हलपमेंट चेनवर काही QAU असल्याने, आपण कॉन्ट्रॅक्ट प्रस्थापित करू शकतो. पहिली पायरी म्हणजे Multiply7 कॉन्ट्रॅक्टचे बाइटकोडमध्ये संकलन करणे जे EVM ला पाठवले जाऊ शकते. solc, Solidity कंपायलर स्थापित करण्यासाठी, [Solidity दस्तऐवजीकरण](https://docs.soliditylang.org/en/latest/installing-solidity.html) फॉलो करा. (तुम्हाला आमच्या उदाहरणासाठी वापरलेल्या कंपायलरच्या आवृत्तीशी जुळण्यासाठी जुने `solc` रिलीज वापरायचे असू शकते.)
 
 पुढची पायरी म्हणजे Multiply7 कॉन्ट्रॅक्टचे बाइटकोडमध्ये संकलन करणे जे EVM ला पाठवले जाऊ शकते.
 

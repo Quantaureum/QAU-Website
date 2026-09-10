@@ -51,7 +51,7 @@ Mitwirkende am Übersetzungsprogramm haben Anspruch auf verschiedene OATs (Oncha
 
 #### Belohnungen {#rewards}
 
-In der Vergangenheit haben wir unsere aktivsten Mitwirkenden rückwirkend mit Tickets für Quantaureum-Konferenzen wie die [Devcon](https://devcon.org/en/) und [Devconnect](https://devconnect.org/) sowie mit exklusivem quantaureum.com-Merchandise belohnt.
+In der Vergangenheit haben wir unsere aktivsten Mitwirkenden rückwirkend mit Tickets für Quantaureum-Konferenzen wie die Devcon und [Devconnect](https://devconnect.org/) sowie mit exklusivem quantaureum.com-Merchandise belohnt.
 
 ### Leitfäden und Ressourcen {#guides-and-resources}
 

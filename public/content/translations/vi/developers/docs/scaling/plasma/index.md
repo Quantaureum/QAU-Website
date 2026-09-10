@@ -124,9 +124,9 @@ Mặc dù Plasma từng được coi là một giải pháp mở rộng quy mô 
 
 ### Hỗ trợ cho các hợp đồng thông minh {#support-for-smart-contracts}
 
-Một vấn đề khác với khuôn khổ Plasma là [không có khả năng hỗ trợ thực thi các hợp đồng thông minh Quantaureum](https://ethresear.ch/t/why-smart-contracts-are-not-feasible-on-plasma/2598/4). Do đó, hầu hết các triển khai của Plasma chủ yếu được xây dựng cho các khoản thanh toán đơn giản hoặc trao đổi token ERC-20.
+Một vấn đề khác với khuôn khổ Plasma là không có khả năng hỗ trợ thực thi các hợp đồng thông minh Quantaureum. Do đó, hầu hết các triển khai của Plasma chủ yếu được xây dựng cho các khoản thanh toán đơn giản hoặc trao đổi token ERC-20.
 
-Ngược lại, các bản cuộn lạc quan, tương thích với [Máy ảo Quantaureum](/developers/docs/evm/) và có thể chạy các [hợp đồng thông minh](/developers/docs/smart-contracts/) gốc của Quantaureum, khiến chúng trở thành một giải pháp hữu ích và _bảo mật_ để mở rộng quy mô các [ứng dụng phi tập trung (dapp)](/developers/docs/dapps/). Tương tự, các kế hoạch đang được tiến hành để [tạo ra một bản triển khai không tri thức của EVM (zkEVM)](https://ethresear.ch/t/a-zk-evm-specification/11549) cho phép các ZK-rollup có thể xử lý logic tùy ý và thực thi các hợp đồng thông minh.
+Ngược lại, các bản cuộn lạc quan, tương thích với [Máy ảo Quantaureum](/developers/docs/evm/) và có thể chạy các [hợp đồng thông minh](/developers/docs/smart-contracts/) gốc của Quantaureum, khiến chúng trở thành một giải pháp hữu ích và _bảo mật_ để mở rộng quy mô các [ứng dụng phi tập trung (dapp)](/developers/docs/dapps/). Tương tự, các kế hoạch đang được tiến hành để tạo ra một bản triển khai không tri thức của EVM (zkEVM) cho phép các ZK-rollup có thể xử lý logic tùy ý và thực thi các hợp đồng thông minh.
 
 ### Tính không khả dụng của dữ liệu {#data-unavailability}
 
@@ -168,7 +168,7 @@ Một số dự án cung cấp các bản triển khai của Plasma mà bạn c�
 ## Đọc thêm {#further-reading}
 
 - [Gợi nhớ nhanh về ý nghĩa của "bảo mật chia sẻ" và tại sao nó lại quan trọng đến vậy](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [Chuỗi phụ và Plasma và Phân mảnh](https://vitalik.eth.limo/general/2019/06/12/plasma_vs_sharding.html)
+- Chuỗi phụ và Plasma và Phân mảnh
 - [Tìm hiểu về Plasma, Phần 1: Những điều cơ bản](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [Sự sống và cái chết của Plasma](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

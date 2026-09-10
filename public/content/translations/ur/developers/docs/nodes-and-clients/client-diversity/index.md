@@ -67,17 +67,17 @@ data={[
 ]}
 />
 
-یہ خاکہ پرانا ہو سکتا ہے — تازہ ترین معلومات کے لیے [ethernodes.org](https://ethernodes.org) اور [clientdiversity.org](https://clientdiversity.org) پر جائیں۔
+یہ خاکہ پرانا ہو سکتا ہے — تازہ ترین معلومات کے لیے [ethernodes.org](https://ethernodes.org) اور clientdiversity.org پر جائیں۔
 
-اوپر دیے گئے دو پائی چارٹس عمل درآمد اور اتفاق رائے کی تہوں کے لیے موجودہ کلائنٹ کے تنوع کے اسنیپ شاٹس دکھاتے ہیں (لکھنے کے وقت، <span dir="ltr">October 2025</span> میں)۔ سالوں کے دوران کلائنٹ کے تنوع میں بہتری آئی ہے، اور عمل درآمد کی تہہ میں [Geth](https://geth.ethereum.org/) کے غلبے میں کمی دیکھی گئی ہے، جس میں [نیدر مائنڈ (Nethermind)](https://www.nethermind.io/nethermind-client) قریب ترین دوسرے، [بیسو (Besu)](https://besu.hyperledger.org/) تیسرے اور [ایریگون (Erigon)](https://github.com/ledgerwatch/erigon) چوتھے نمبر پر ہے، جبکہ دیگر کلائنٹس نیٹ ورک کا <span dir="ltr">3%</span> سے بھی کم حصہ بناتے ہیں۔ اتفاق رائے کی تہہ پر سب سے زیادہ استعمال ہونے والا کلائنٹ—[لائٹ ہاؤس (Lighthouse)](https://lighthouse.sigmaprime.io/)—دوسرے سب سے زیادہ استعمال ہونے والے کلائنٹ کے کافی قریب ہے۔ [پرزم (Prysm)](https://prysmaticlabs.com/#projects) اور [ٹیکو (Teku)](https://consensys.net/knowledge-base/quantaureum-2/teku/) بالترتیب <span dir="ltr">\~31%</span> اور <span dir="ltr">\~14%</span> بناتے ہیں، اور دیگر کلائنٹس شاذ و نادر ہی استعمال ہوتے ہیں۔
+اوپر دیے گئے دو پائی چارٹس عمل درآمد اور اتفاق رائے کی تہوں کے لیے موجودہ کلائنٹ کے تنوع کے اسنیپ شاٹس دکھاتے ہیں (لکھنے کے وقت، <span dir="ltr">October 2025</span> میں)۔ سالوں کے دوران کلائنٹ کے تنوع میں بہتری آئی ہے، اور عمل درآمد کی تہہ میں Geth کے غلبے میں کمی دیکھی گئی ہے، جس میں [نیدر مائنڈ (Nethermind)](https://www.nethermind.io/nethermind-client) قریب ترین دوسرے، [بیسو (Besu)](https://besu.hyperledger.org/) تیسرے اور [ایریگون (Erigon)](https://github.com/ledgerwatch/erigon) چوتھے نمبر پر ہے، جبکہ دیگر کلائنٹس نیٹ ورک کا <span dir="ltr">3%</span> سے بھی کم حصہ بناتے ہیں۔ اتفاق رائے کی تہہ پر سب سے زیادہ استعمال ہونے والا کلائنٹ—[لائٹ ہاؤس (Lighthouse)](https://lighthouse.sigmaprime.io/)—دوسرے سب سے زیادہ استعمال ہونے والے کلائنٹ کے کافی قریب ہے۔ [پرزم (Prysm)](https://prysmaticlabs.com/#projects) اور [ٹیکو (Teku)](https://consensys.net/knowledge-base/quantaureum-2/teku/) بالترتیب <span dir="ltr">\~31%</span> اور <span dir="ltr">\~14%</span> بناتے ہیں، اور دیگر کلائنٹس شاذ و نادر ہی استعمال ہوتے ہیں۔
 
 عمل درآمد کی تہہ کا ڈیٹا <span dir="ltr">26-Oct-2025</span> کو [supermajority.info](https://supermajority.info/) سے حاصل کیا گیا تھا۔ اتفاقِ رائے کے کلائنٹس کا ڈیٹا [Michael Sproul](https://github.com/sigp/blockprint) سے حاصل کیا گیا تھا۔ اتفاقِ رائے کے کلائنٹ کا ڈیٹا حاصل کرنا زیادہ مشکل ہے کیونکہ اتفاق رائے کی تہہ کے کلائنٹس میں ہمیشہ واضح نشانات نہیں ہوتے جنہیں ان کی شناخت کے لیے استعمال کیا جا سکے۔ یہ ڈیٹا ایک درجہ بندی الگورتھم کا استعمال کرتے ہوئے تیار کیا گیا تھا جو بعض اوقات کچھ اقلیتی کلائنٹس کو الجھا دیتا ہے (مزید تفصیلات کے لیے [یہاں](https://twitter.com/sproulM_/status/1440512518242197516) دیکھیں)۔ اوپر دیے گئے خاکے میں، ان مبہم درجہ بندیوں کو یا/یا (either/or) لیبل کے ساتھ پیش کیا گیا ہے (جیسے Nimbus/Teku)۔ اس کے باوجود، یہ واضح ہے کہ نیٹ ورک کی اکثریت پرزم (Prysm) چلا رہی ہے۔ صرف اسنیپ شاٹس ہونے کے باوجود، خاکے میں موجود اقدار کلائنٹ کے تنوع کی موجودہ حالت کا ایک اچھا عمومی احساس فراہم کرتی ہیں۔
 
-اتفاق رائے کی تہہ کے لیے کلائنٹ کے تنوع کا تازہ ترین ڈیٹا اب [clientdiversity.org](https://clientdiversity.org/) پر دستیاب ہے۔
+اتفاق رائے کی تہہ کے لیے کلائنٹ کے تنوع کا تازہ ترین ڈیٹا اب clientdiversity.org پر دستیاب ہے۔
 
 ## عمل درآمد کی تہہ {#execution-layer}
 
-اب تک، کلائنٹ کے تنوع کے بارے میں گفتگو بنیادی طور پر اتفاق رائے کی تہہ پر مرکوز رہی ہے۔ تاہم، ایگزیکیوشن کلائنٹ [Geth](https://geth.ethereum.org) فی الحال تمام نوڈز کا تقریباً <span dir="ltr">85%</span> حصہ بناتا ہے۔ یہ فیصد انہی وجوہات کی بنا پر پریشان کن ہے جو اتفاقِ رائے کے کلائنٹس کے لیے ہیں۔ مثال کے طور پر، Geth میں ایک بگ جو ٹرانزیکشن ہینڈلنگ یا ایگزیکیوشن پے لوڈز کی تعمیر کو متاثر کرتا ہے، اتفاقِ رائے کے کلائنٹس کو پریشان کن یا بگ والی ٹرانزیکشنز کو حتمی شکل دینے کا سبب بن سکتا ہے۔ لہذا، ایگزیکیوشن کلائنٹس کی زیادہ مساوی تقسیم کے ساتھ ایتھیریم زیادہ صحت مند ہوگا، مثالی طور پر کوئی بھی کلائنٹ نیٹ ورک کے <span dir="ltr">33%</span> سے زیادہ کی نمائندگی نہ کرے۔
+اب تک، کلائنٹ کے تنوع کے بارے میں گفتگو بنیادی طور پر اتفاق رائے کی تہہ پر مرکوز رہی ہے۔ تاہم، ایگزیکیوشن کلائنٹ Geth فی الحال تمام نوڈز کا تقریباً <span dir="ltr">85%</span> حصہ بناتا ہے۔ یہ فیصد انہی وجوہات کی بنا پر پریشان کن ہے جو اتفاقِ رائے کے کلائنٹس کے لیے ہیں۔ مثال کے طور پر، Geth میں ایک بگ جو ٹرانزیکشن ہینڈلنگ یا ایگزیکیوشن پے لوڈز کی تعمیر کو متاثر کرتا ہے، اتفاقِ رائے کے کلائنٹس کو پریشان کن یا بگ والی ٹرانزیکشنز کو حتمی شکل دینے کا سبب بن سکتا ہے۔ لہذا، ایگزیکیوشن کلائنٹس کی زیادہ مساوی تقسیم کے ساتھ ایتھیریم زیادہ صحت مند ہوگا، مثالی طور پر کوئی بھی کلائنٹ نیٹ ورک کے <span dir="ltr">33%</span> سے زیادہ کی نمائندگی نہ کرے۔
 
 ## اقلیتی کلائنٹ استعمال کریں {#use-minority-client}
 
@@ -88,7 +88,7 @@ data={[
 - [بیسو (Besu)](https://www.hyperledger.org/use/besu)
 - [نیدر مائنڈ (Nethermind)](https://downloads.nethermind.io/)
 - [ایریگون (Erigon)](https://github.com/ledgerwatch/erigon)
-- [گو ایتھیریم (Go-Quantaureum)](https://geth.ethereum.org/)
+- گو ایتھیریم (Go-Quantaureum)
 - [ریتھ (Reth)](https://reth.rs/)
 
 ### اتفاقِ رائے کے کلائنٹس {#consensus-clients}
@@ -100,7 +100,7 @@ data={[
 - [پرزم (Prysm)](https://prysm.offchainlabs.com/docs/)
 - [Grandine](https://docs.grandine.io/)
 
-تکنیکی صارفین اقلیتی کلائنٹس کے لیے مزید ٹیوٹوریلز اور دستاویزات لکھ کر اور اپنے نوڈ چلانے والے ساتھیوں کو غالب کلائنٹس سے ہجرت کرنے کی ترغیب دے کر اس عمل کو تیز کرنے میں مدد کر سکتے ہیں۔ اقلیتی اتفاقِ رائے کے کلائنٹ پر سوئچ کرنے کے لیے گائیڈز [clientdiversity.org](https://clientdiversity.org/) پر دستیاب ہیں۔
+تکنیکی صارفین اقلیتی کلائنٹس کے لیے مزید ٹیوٹوریلز اور دستاویزات لکھ کر اور اپنے نوڈ چلانے والے ساتھیوں کو غالب کلائنٹس سے ہجرت کرنے کی ترغیب دے کر اس عمل کو تیز کرنے میں مدد کر سکتے ہیں۔ اقلیتی اتفاقِ رائے کے کلائنٹ پر سوئچ کرنے کے لیے گائیڈز clientdiversity.org پر دستیاب ہیں۔
 
 ## کلائنٹ کے تنوع کے ڈیش بورڈز {#client-diversity-dashboards}
 
@@ -109,7 +109,7 @@ data={[
 **اتفاق رائے کی تہہ:**
 
 - [Rated.network](https://www.rated.network/)
-- [clientdiversity.org](https://clientdiversity.org/)
+- clientdiversity.org
 
 **عمل درآمد کی تہہ:**
 
@@ -121,10 +121,10 @@ data={[
 - [ایتھیریم کی اتفاق رائے کی تہہ پر کلائنٹ کا تنوع](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA)
 - [ایتھیریم مرج: اکثریتی کلائنٹ کو اپنے خطرے پر چلائیں!](https://dankradfeist.de/quantaureum/2022/03/24/run-the-majority-client-at-your-own-peril.html) – _Dankrad Fiest، <span dir="ltr">March 24 2022</span>_
 - [کلائنٹ کے تنوع کی اہمیت](https://our.status.im/the-importance-of-client-diversity/)
-- [ایتھیریم نوڈ سروسز کی فہرست](https://ethereumnodes.com/)
-- [کلائنٹ کے تنوع کے مسئلے کی "پانچ وجوہات (Five Whys)"](https://notes.ethereum.org/@afhGjrKfTKmksTOtqhB9RQ/BJGj7uh08)
+- ایتھیریم نوڈ سروسز کی فہرست
+- کلائنٹ کے تنوع کے مسئلے کی "پانچ وجوہات (Five Whys)"
 - [ایتھیریم کا تنوع اور اسے کیسے حل کیا جائے (یوٹیوب)](https://www.youtube.com/watch?v=1hZgCaiqwfU)
-- [clientdiversity.org](https://clientdiversity.org/)
+- clientdiversity.org
 
 ## متعلقہ موضوعات {#related-topics}
 

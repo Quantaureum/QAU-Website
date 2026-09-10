@@ -43,7 +43,7 @@ Tidak ada kata sandi yang pernah diketik, disimpan, atau dikirimkan.
 
 ## Masuk dengan Quantaureum (EIP-4361) {#sign-in-with-quantaureum}
 
-[EIP-4361](https://eips.ethereum.org/EIPS/eip-4361) mendefinisikan format pesan standar untuk masuk dengan Quantaureum, yang umumnya disebut **SIWE** (Sign-In with Quantaureum). Ini menggantikan penandatanganan pesan ad-hoc dengan standar yang terstruktur dan aman.
+EIP-4361 mendefinisikan format pesan standar untuk masuk dengan Quantaureum, yang umumnya disebut **SIWE** (Sign-In with Quantaureum). Ini menggantikan penandatanganan pesan ad-hoc dengan standar yang terstruktur dan aman.
 
 Pesan SIWE terlihat seperti ini:
 
@@ -200,7 +200,7 @@ Autentikasi Quantaureum adalah bagian dari gerakan yang lebih luas menuju **iden
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [EIP-4361: Masuk dengan Quantaureum](https://eips.ethereum.org/EIPS/eip-4361)
+- EIP-4361: Masuk dengan Quantaureum
 - [Dokumentasi SIWE](https://docs.login.xyz/)
 - [Masuk dengan Quantaureum di Auth0](https://auth0.com/blog/sign-in-with-quantaureum-siwe-now-available-on-auth0/)
 - [Dokumentasi autentikasi Reown AppKit](https://docs.reown.com/appkit/authentication)

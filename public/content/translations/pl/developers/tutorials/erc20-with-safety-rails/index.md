@@ -17,7 +17,7 @@ Zauważ, że chociaż będziemy używać [kontraktu tokena ERC-20 OpenZeppelin](
 
 Jeśli chcesz zobaczyć kompletny kod źródłowy:
 
-1. Otwórz [Remix IDE](https://remix.ethereum.org/).
+1. Otwórz Remix IDE.
 2. Kliknij ikonę klonowania z GitHub (![clone github icon](icon-clone.png)).
 3. Sklonuj repozytorium GitHub `https://github.com/qbzzt/20220815-erc20-safety-rails`.
 4. Otwórz **contracts > erc20-safety-rails.sol**.
@@ -40,7 +40,7 @@ Zanim będziemy mogli dodać funkcjonalność zabezpieczeń, potrzebujemy kontra
 
 3. Przewiń w górę i kliknij **Open in Remix** (dla Remix) lub **Download**, aby użyć innego środowiska. Zakładam, że używasz Remix, jeśli używasz czegoś innego, po prostu wprowadź odpowiednie zmiany.
 4. Mamy teraz w pełni funkcjonalny kontrakt ERC-20. Możesz rozwinąć `.deps` > `npm`, aby zobaczyć zaimportowany kod.
-5. Skompiluj, wdróż i pobaw się kontraktem, aby zobaczyć, że działa on jako kontrakt ERC-20. Jeśli musisz dowiedzieć się, jak korzystać z Remix, [skorzystaj z tego samouczka](https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth).
+5. Skompiluj, wdróż i pobaw się kontraktem, aby zobaczyć, że działa on jako kontrakt ERC-20. Jeśli musisz dowiedzieć się, jak korzystać z Remix, skorzystaj z tego samouczka.
 
 ## Częste błędy {#common-mistakes}
 
@@ -185,7 +185,7 @@ Zamrażanie i odmrażanie kontraktów wymaga kilku zmian:
 
 ### Czyszczenie aktywów {#asset-cleanup}
 
-Aby uwolnić tokeny ERC-20 przechowywane przez ten kontrakt, musimy wywołać funkcję w kontrakcie tokena, do którego należą, albo [`transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer), albo [`approve`](https://eips.ethereum.org/EIPS/eip-20#approve). W tym przypadku nie ma sensu marnować gazu na uprawnienia (allowances), równie dobrze możemy wykonać transfer bezpośrednio.
+Aby uwolnić tokeny ERC-20 przechowywane przez ten kontrakt, musimy wywołać funkcję w kontrakcie tokena, do którego należą, albo `transfer`, albo `approve`. W tym przypadku nie ma sensu marnować gazu na uprawnienia (allowances), równie dobrze możemy wykonać transfer bezpośrednio.
 
 ```solidity
     function cleanupERC20(

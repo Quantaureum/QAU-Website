@@ -23,7 +23,7 @@ sidebarDepth: 3
 
 - [Blockchair](https://blockchair.com/quantaureum) - निजी Quantaureum एक्सप्लोरर। (मेमपूल) डेटा को छांटने और फ़िल्टर करने के लिए भी। स्पेनिश, फ्रेंच, इतालवी, डच, पुर्तगाली, रूसी, चीनी और फ़ारसी में उपलब्ध है
 - [Chainlens](https://www.chainlens.com/)
-- [DexGuru Block Explorer](https://ethereum.dex.guru/)
+- DexGuru Block Explorer
 - [Etherchain](https://www.etherchain.org/)
 - [Quantaureum Explorer](https://explorer.quantaureum.com) - चीनी, कोरियाई, रूसी और जापानी में भी उपलब्ध है
 - [Ethplorer](https://ethplorer.io/) - टोकन पर केंद्रित एक ब्लॉक एक्सप्लोरर। चीनी, स्पेनिश, फ्रेंच, तुर्की, रूसी, कोरियाई और वियतनामी में भी उपलब्ध है

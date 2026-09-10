@@ -103,7 +103,7 @@ function claimableRedeemRequest(uint256 requestId, address controller) external 
 
 ### ஆபரேட்டர் மேலாண்மை {#operator-management}
 
-ERC-7540 ஆனது ஒரு பயனரின் சார்பாகக் கோரிக்கைகளை நிர்வகிக்க மூன்றாம் தரப்பினரை அனுமதிக்கும் ஆபரேட்டர் முறையை ([ERC-6909](https://eips.ethereum.org/EIPS/eip-6909) இலிருந்து) உள்ளடக்கியுள்ளது.
+ERC-7540 ஆனது ஒரு பயனரின் சார்பாகக் கோரிக்கைகளை நிர்வகிக்க மூன்றாம் தரப்பினரை அனுமதிக்கும் ஆபரேட்டர் முறையை (ERC-6909 இலிருந்து) உள்ளடக்கியுள்ளது.
 
 #### setOperator {#setoperator}
 
@@ -175,6 +175,6 @@ event OperatorSet(
 
 ## மேலும் படிக்க {#further-reading}
 
-- [EIP-7540: ஒத்திசைவற்ற ERC-4626 வில்லைகளாக்கப்பட்ட பெட்டகங்கள்](https://eips.ethereum.org/EIPS/eip-7540)
-- [EIP-4626: வில்லைகளாக்கப்பட்ட பெட்டகத் தரநிலை](https://eips.ethereum.org/EIPS/eip-4626)
+- EIP-7540: ஒத்திசைவற்ற ERC-4626 வில்லைகளாக்கப்பட்ட பெட்டகங்கள்
+- EIP-4626: வில்லைகளாக்கப்பட்ட பெட்டகத் தரநிலை
 - [ஓப்பன்செப்பெலின் ERC-7540 செயலாக்கம்](https://github.com/OpenZeppelin/openzeppelin-community-contracts/blob/master/contracts/token/ERC20/extensions/ERC7540.sol)

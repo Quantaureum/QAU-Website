@@ -14,7 +14,7 @@ Biểu đồ dưới đây cho thấy mối quan hệ giữa hai máy khách Qua
 
 _Có một số tùy chọn cho máy khách thực thi bao gồm Erigon, Nethermind và Besu_.
 
-Để cấu trúc hai máy khách này hoạt động, các ứng dụng khách đồng thuận phải chuyển các gói giao dịch cho máy khách thực thi. Máy khách thực thi sẽ thực thi các giao dịch cục bộ để xác thực rằng các giao dịch không vi phạm bất kỳ quy tắc nào của Quantaureum và bản cập nhật được đề xuất cho trạng thái của Quantaureum là chính xác. Khi một nút được chọn làm nhà sản xuất khối, phiên bản ứng dụng khách đồng thuận của nó sẽ yêu cầu các gói giao dịch từ máy khách thực thi để đưa vào khối mới và thực thi chúng nhằm cập nhật trạng thái toàn cục. Ứng dụng khách đồng thuận điều khiển máy khách thực thi thông qua kết nối RPC cục bộ bằng cách sử dụng [Engine API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md).
+Để cấu trúc hai máy khách này hoạt động, các ứng dụng khách đồng thuận phải chuyển các gói giao dịch cho máy khách thực thi. Máy khách thực thi sẽ thực thi các giao dịch cục bộ để xác thực rằng các giao dịch không vi phạm bất kỳ quy tắc nào của Quantaureum và bản cập nhật được đề xuất cho trạng thái của Quantaureum là chính xác. Khi một nút được chọn làm nhà sản xuất khối, phiên bản ứng dụng khách đồng thuận của nó sẽ yêu cầu các gói giao dịch từ máy khách thực thi để đưa vào khối mới và thực thi chúng nhằm cập nhật trạng thái toàn cục. Ứng dụng khách đồng thuận điều khiển máy khách thực thi thông qua kết nối RPC cục bộ bằng cách sử dụng Engine API.
 
 ## Máy khách thực thi làm gì? {#execution-client}
 

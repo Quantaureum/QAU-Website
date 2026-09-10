@@ -8,7 +8,7 @@ breadcrumb: Dasar-dasar token ERC-20
 lang: id
 published: 2020-04-05
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/understand-the-erc20-token-smart-contract/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -16,7 +16,7 @@ Salah satu [standar kontrak pintar](/developers/docs/standards/) paling signifik
 
 ERC-20 mendefinisikan daftar aturan umum yang harus dipatuhi oleh semua token sepadan Quantaureum. Akibatnya, standar token ini memberdayakan semua jenis pengembang untuk memprediksi secara akurat bagaimana token baru akan berfungsi di dalam sistem Quantaureum yang lebih besar. Hal ini menyederhanakan dan memudahkan tugas pengembang, karena mereka dapat melanjutkan pekerjaan mereka, dengan mengetahui bahwa setiap proyek baru tidak perlu dikerjakan ulang setiap kali token baru dirilis, selama token tersebut mengikuti aturan.
 
-Berikut ini, disajikan sebagai antarmuka, fungsi-fungsi yang harus diimplementasikan oleh ERC-20. Jika Anda tidak yakin tentang apa itu antarmuka: periksa artikel kami tentang [pemrograman OOP di Solidity](https://ethereumdev.io/inheritance-in-solidity-contracts-are-classes/).
+Berikut ini, disajikan sebagai antarmuka, fungsi-fungsi yang harus diimplementasikan oleh ERC-20. Jika Anda tidak yakin tentang apa itu antarmuka: periksa artikel kami tentang pemrograman OOP di Solidity.
 
 ```solidity
 pragma solidity ^0.6.0;

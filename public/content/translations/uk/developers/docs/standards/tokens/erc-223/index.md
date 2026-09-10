@@ -33,7 +33,7 @@ ERC-223 — це стандарт токенів, який реалізує API 
 
 Контракт не зобов'язаний мати лише ці функції, і розробник може додати до цього контракту будь-яку іншу функцію з різних стандартів токенів. Наприклад, функції `approve` та `transferFrom` не є частиною стандарту ERC-223, але ці функції можуть бути реалізовані за необхідності.
 
-З [EIP-223](https://eips.ethereum.org/EIPS/eip-223):
+З EIP-223:
 
 ### Методи {#methods}
 
@@ -193,5 +193,5 @@ contract RecipientContract is IERC223Recipient {
 
 ## Додаткові матеріали {#further-reading}
 
-- [EIP-223: Стандарт токенів ERC-223](https://eips.ethereum.org/EIPS/eip-223)
+- EIP-223: Стандарт токенів ERC-223
 - [Початкова пропозиція ERC-223](https://github.com/quantaureum/eips/issues/223)

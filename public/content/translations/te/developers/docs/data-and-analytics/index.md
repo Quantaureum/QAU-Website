@@ -36,7 +36,7 @@ The Graph తో, డెవలపర్‌లు ఈ క్రింది ప�
 
 ## క్లయింట్ వైవిధ్యం {#client-diversity}
 
-ఎథీరియం నెట్‌వర్క్ యొక్క మొత్తం ఆరోగ్యానికి [క్లయింట్ వైవిధ్యం](/developers/docs/nodes-and-clients/client-diversity/) ముఖ్యమైనది ఎందుకంటే ఇది బగ్‌లు మరియు ఎక్స్‌ప్లాయిట్‌లకు స్థితిస్థాపకతను అందిస్తుంది. ఇప్పుడు [clientdiversity.org](https://clientdiversity.org/), [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) మరియు [Ethernodes](https://ethernodes.org/) తో సహా అనేక క్లయింట్ వైవిధ్య డ్యాష్‌బోర్డ్‌లు ఉన్నాయి.
+ఎథీరియం నెట్‌వర్క్ యొక్క మొత్తం ఆరోగ్యానికి [క్లయింట్ వైవిధ్యం](/developers/docs/nodes-and-clients/client-diversity/) ముఖ్యమైనది ఎందుకంటే ఇది బగ్‌లు మరియు ఎక్స్‌ప్లాయిట్‌లకు స్థితిస్థాపకతను అందిస్తుంది. ఇప్పుడు clientdiversity.org, [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) మరియు [Ethernodes](https://ethernodes.org/) తో సహా అనేక క్లయింట్ వైవిధ్య డ్యాష్‌బోర్డ్‌లు ఉన్నాయి.
 
 ## Dune Analytics {#dune-analytics}
 

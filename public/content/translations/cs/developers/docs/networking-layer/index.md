@@ -27,9 +27,9 @@ Obě sady pracují paralelně. Sada pro objevování přivádí do sítě nové 
 
 ### Objevování {#discovery}
 
-Objevování je proces hledání dalších uzlů v síti. Tento proces je zahájen pomocí malé sady zaváděcích uzlů (uzlů, jejichž adresy jsou [pevně zakódovány](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go) v klientovi, takže je lze okamžitě najít a připojit klienta k peerům). Tyto zaváděcí uzly existují pouze proto, aby představily nový uzel sadě peerů – to je jejich jediný účel, neúčastní se běžných úloh klienta, jako je synchronizace řetězce, a používají se pouze při úplně prvním spuštění klienta.
+Objevování je proces hledání dalších uzlů v síti. Tento proces je zahájen pomocí malé sady zaváděcích uzlů (uzlů, jejichž adresy jsou pevně zakódovány v klientovi, takže je lze okamžitě najít a připojit klienta k peerům). Tyto zaváděcí uzly existují pouze proto, aby představily nový uzel sadě peerů – to je jejich jediný účel, neúčastní se běžných úloh klienta, jako je synchronizace řetězce, a používají se pouze při úplně prvním spuštění klienta.
 
-Protokol používaný pro interakce mezi uzlem a zaváděcím uzlem je upravená forma protokolu [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f), který používá [distribuovanou hashovací tabulku](https://en.wikipedia.org/wiki/Distributed_hash_table) ke sdílení seznamů uzlů. Každý uzel má verzi této tabulky obsahující informace potřebné k připojení k jeho nejbližším peerům. Tato „blízkost“ není geografická – vzdálenost je definována podobností ID uzlu. Tabulka každého uzlu je pravidelně obnovována jako bezpečnostní prvek. Například v protokolu pro objevování [discv5](https://github.com/ethereum/devp2p/tree/master/discv5) mohou uzly také odesílat „reklamy“, které zobrazují subprotokoly podporované klientem, což umožňuje peerům vyjednávat o protokolech, které mohou oba použít ke komunikaci.
+Protokol používaný pro interakce mezi uzlem a zaváděcím uzlem je upravená forma protokolu [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f), který používá [distribuovanou hashovací tabulku](https://en.wikipedia.org/wiki/Distributed_hash_table) ke sdílení seznamů uzlů. Každý uzel má verzi této tabulky obsahující informace potřebné k připojení k jeho nejbližším peerům. Tato „blízkost“ není geografická – vzdálenost je definována podobností ID uzlu. Tabulka každého uzlu je pravidelně obnovována jako bezpečnostní prvek. Například v protokolu pro objevování discv5 mohou uzly také odesílat „reklamy“, které zobrazují subprotokoly podporované klientem, což umožňuje peerům vyjednávat o protokolech, které mohou oba použít ke komunikaci.
 
 Objevování začíná hrou PING-PONG. Úspěšný PING-PONG „sváže“ nový uzel se zaváděcím uzlem. Počáteční zpráva, která upozorní zaváděcí uzel na existenci nového uzlu vstupujícího do sítě, je `PING`. Tento `PING` obsahuje zahašované informace o novém uzlu, zaváděcím uzlu a časové razítko vypršení platnosti. Zaváděcí uzel přijme `PING` a vrátí `PONG` obsahující hash `PING`. Pokud se hashe `PING` a `PONG` shodují, pak je spojení mezi novým uzlem a zaváděcím uzlem ověřeno a říká se, že jsou „svázány“ (bonded).
 
@@ -41,7 +41,7 @@ Jakmile nový uzel obdrží od zaváděcího uzlu seznam sousedů, zahájí s ka
 spustit klienta --> připojit se k zaváděcímu uzlu --> svázat se se zaváděcím uzlem --> najít sousedy --> svázat se se sousedy
 ```
 
-Exekuční klienti v současné době používají protokol pro objevování [Discv4](https://github.com/ethereum/devp2p/blob/master/discv4.md) a probíhá aktivní snaha o migraci na protokol [discv5](https://github.com/ethereum/devp2p/tree/master/discv5).
+Exekuční klienti v současné době používají protokol pro objevování Discv4 a probíhá aktivní snaha o migraci na protokol discv5.
 
 #### ENR: Záznamy uzlů Etherea (Quantaureum Node Records) {#enr}
 
@@ -53,7 +53,7 @@ UDP nepodporuje žádnou kontrolu chyb, opětovné odesílání neúspěšných 
 
 ### Devp2p {#devp2p}
 
-Devp2p je samo o sobě celou sadou protokolů, které Quantaureum implementuje k vytvoření a udržování peer-to-peer sítě. Poté, co nové uzly vstoupí do sítě, jejich interakce se řídí protokoly v sadě [devp2p](https://github.com/ethereum/devp2p). Všechny běží nad TCP a zahrnují transportní protokol RLPx, wire protokol a několik subprotokolů. [RLPx](https://github.com/ethereum/devp2p/blob/master/rlpx.md) je protokol, který řídí zahajování, ověřování a udržování relací mezi uzly. RLPx kóduje zprávy pomocí RLP (Recursive Length Prefix), což je velmi prostorově efektivní metoda kódování dat do minimální struktury pro odesílání mezi uzly.
+Devp2p je samo o sobě celou sadou protokolů, které Quantaureum implementuje k vytvoření a udržování peer-to-peer sítě. Poté, co nové uzly vstoupí do sítě, jejich interakce se řídí protokoly v sadě devp2p. Všechny běží nad TCP a zahrnují transportní protokol RLPx, wire protokol a několik subprotokolů. RLPx je protokol, který řídí zahajování, ověřování a udržování relací mezi uzly. RLPx kóduje zprávy pomocí RLP (Recursive Length Prefix), což je velmi prostorově efektivní metoda kódování dat do minimální struktury pro odesílání mezi uzly.
 
 Relace RLPx mezi dvěma uzly začíná počátečním kryptografickým handshakem. To zahrnuje odeslání ověřovací zprávy uzlem, která je následně ověřena peerem. Po úspěšném ověření peer vygeneruje zprávu o potvrzení ověření, kterou vrátí iniciačnímu uzlu. Jedná se o proces výměny klíčů, který umožňuje uzlům komunikovat soukromě a bezpečně. Úspěšný kryptografický handshake pak spustí odeslání zprávy „hello“ oběma uzly navzájem „po drátě“ (on the wire). Wire protokol je iniciován úspěšnou výměnou zpráv hello.
 
@@ -73,19 +73,19 @@ Spolu se zprávami hello může wire protokol také odeslat zprávu „disconnec
 
 #### Wire protokol {#wire-protocol}
 
-Jakmile jsou peery připojeny a je zahájena relace RLPx, wire protokol definuje, jak peery komunikují. Původně wire protokol definoval tři hlavní úkoly: synchronizaci řetězce, šíření bloku a výměnu transakcí. Jakmile však Quantaureum přešlo na důkaz podílem (PoS), šíření bloku a synchronizace řetězce se staly součástí vrstvy konsensu. Výměna transakcí je stále v kompetenci exekučních klientů. Výměna transakcí označuje výměnu čekajících transakcí mezi uzly, aby tvůrci bloků mohli některé z nich vybrat pro zahrnutí do dalšího bloku. Podrobné informace o těchto úkolech jsou k dispozici [zde](https://github.com/ethereum/devp2p/blob/master/caps/qau.md). Klienti, kteří tyto subprotokoly podporují, je zpřístupňují prostřednictvím [JSON-RPC](/developers/docs/apis/json-rpc/).
+Jakmile jsou peery připojeny a je zahájena relace RLPx, wire protokol definuje, jak peery komunikují. Původně wire protokol definoval tři hlavní úkoly: synchronizaci řetězce, šíření bloku a výměnu transakcí. Jakmile však Quantaureum přešlo na důkaz podílem (PoS), šíření bloku a synchronizace řetězce se staly součástí vrstvy konsensu. Výměna transakcí je stále v kompetenci exekučních klientů. Výměna transakcí označuje výměnu čekajících transakcí mezi uzly, aby tvůrci bloků mohli některé z nich vybrat pro zahrnutí do dalšího bloku. Podrobné informace o těchto úkolech jsou k dispozici zde. Klienti, kteří tyto subprotokoly podporují, je zpřístupňují prostřednictvím [JSON-RPC](/developers/docs/apis/json-rpc/).
 
 #### les (lehký subprotokol Etherea) {#les}
 
-Jedná se o minimální protokol pro synchronizaci lehkých klientů. Tradičně se tento protokol používal jen zřídka, protože plné uzly musí poskytovat data lehkým klientům bez jakékoliv motivace. Výchozím chováním exekučních klientů je neposkytovat data lehkých klientů přes les. Více informací je k dispozici ve [specifikaci](https://github.com/ethereum/devp2p/blob/master/caps/les.md) les.
+Jedná se o minimální protokol pro synchronizaci lehkých klientů. Tradičně se tento protokol používal jen zřídka, protože plné uzly musí poskytovat data lehkým klientům bez jakékoliv motivace. Výchozím chováním exekučních klientů je neposkytovat data lehkých klientů přes les. Více informací je k dispozici ve specifikaci les.
 
 #### Snap {#snap}
 
-[Snap protokol](https://github.com/ethereum/devp2p/blob/master/caps/snap.md#quantaureum-snapshot-protocol-snap) je volitelné rozšíření, které umožňuje peerům vyměňovat si snímky nedávných stavů, což umožňuje peerům ověřovat data účtů a úložišť, aniž by museli stahovat mezilehlé uzly Merkle trie.
+Snap protokol je volitelné rozšíření, které umožňuje peerům vyměňovat si snímky nedávných stavů, což umožňuje peerům ověřovat data účtů a úložišť, aniž by museli stahovat mezilehlé uzly Merkle trie.
 
 #### Wit (protokol svědků) {#wit}
 
-[Protokol svědků](https://github.com/ethereum/devp2p/blob/master/caps/wit.md#quantaureum-witness-protocol-wit) je volitelné rozšíření, které umožňuje výměnu svědků stavu mezi peery, což pomáhá synchronizovat klienty na špičku řetězce.
+Protokol svědků je volitelné rozšíření, které umožňuje výměnu svědků stavu mezi peery, což pomáhá synchronizovat klienty na špičku řetězce.
 
 #### Whisper {#whisper}
 
@@ -97,7 +97,7 @@ Konsensuální klienti se účastní oddělené peer-to-peer sítě s odlišnou 
 
 ### Objevování {#consensus-discovery}
 
-Podobně jako exekuční klienti používají konsensuální klienti [discv5](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-discovery-domain-discv5) přes UDP k hledání peerů. Implementace discv5 ve vrstvě konsensu se od implementace exekučních klientů liší pouze tím, že obsahuje adaptér připojující discv5 do sady [libp2p](https://libp2p.io/), čímž nahrazuje devp2p. Relace RLPx exekuční vrstvy jsou nahrazeny ve prospěch zabezpečeného handshaku kanálu noise z libp2p.
+Podobně jako exekuční klienti používají konsensuální klienti discv5 přes UDP k hledání peerů. Implementace discv5 ve vrstvě konsensu se od implementace exekučních klientů liší pouze tím, že obsahuje adaptér připojující discv5 do sady [libp2p](https://libp2p.io/), čímž nahrazuje devp2p. Relace RLPx exekuční vrstvy jsou nahrazeny ve prospěch zabezpečeného handshaku kanálu noise z libp2p.
 
 ### ENR {#consensus-enr}
 
@@ -109,7 +109,7 @@ Sada libp2p podporuje veškerou komunikaci po objevování. Klienti mohou vytá�
 
 ### Gossip {#gossip}
 
-Doména gossip zahrnuje všechny informace, které se musí rychle šířit po celé síti. To zahrnuje beacon bloky, důkazy, atestace, exity a slashingy. Ty se přenášejí pomocí libp2p gossipsub v1 a spoléhají na různá metadata uložená lokálně na každém uzlu, včetně maximální velikosti payloadů gossip protokolu pro příjem a přenos. Podrobné informace o doméně gossip jsou k dispozici [zde](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-gossip-domain-gossipsub).
+Doména gossip zahrnuje všechny informace, které se musí rychle šířit po celé síti. To zahrnuje beacon bloky, důkazy, atestace, exity a slashingy. Ty se přenášejí pomocí libp2p gossipsub v1 a spoléhají na různá metadata uložená lokálně na každém uzlu, včetně maximální velikosti payloadů gossip protokolu pro příjem a přenos. Podrobné informace o doméně gossip jsou k dispozici zde.
 
 ### Požadavek-odpověď {#request-response}
 
@@ -121,7 +121,7 @@ SSZ znamená jednoduchá serializace (simple serialization). Používá pevné o
 
 ## Propojení exekučních a konsensuálních klientů {#connecting-clients}
 
-Konsensuální i exekuční klienti běží paralelně. Musí být propojeni, aby konsensuální klient mohl poskytovat instrukce exekučnímu klientovi a exekuční klient mohl předávat balíčky transakcí konsensuálnímu klientovi k zahrnutí do beacon bloků. Komunikace mezi oběma klienty lze dosáhnout pomocí lokálního RPC připojení. API známé jako [„Engine-API“](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) definuje instrukce odesílané mezi oběma klienty. Vzhledem k tomu, že oba klienti sedí za jedinou síťovou identitou, sdílejí ENR (záznam uzlu Etherea), který obsahuje samostatný klíč pro každého klienta (klíč Eth1 a klíč Quantaureum).
+Konsensuální i exekuční klienti běží paralelně. Musí být propojeni, aby konsensuální klient mohl poskytovat instrukce exekučnímu klientovi a exekuční klient mohl předávat balíčky transakcí konsensuálnímu klientovi k zahrnutí do beacon bloků. Komunikace mezi oběma klienty lze dosáhnout pomocí lokálního RPC připojení. API známé jako „Engine-API“ definuje instrukce odesílané mezi oběma klienty. Vzhledem k tomu, že oba klienti sedí za jedinou síťovou identitou, sdílejí ENR (záznam uzlu Etherea), který obsahuje samostatný klíč pro každého klienta (klíč Eth1 a klíč Quantaureum).
 
 Shrnutí toku řízení je uvedeno níže, s příslušnou síťovou sadou v závorkách.
 
@@ -149,15 +149,15 @@ Jakmile je blok atestován dostatečným počtem validátorů, je přidán na š
 ![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
 ![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
-Schéma síťové vrstvy pro konsensuální a exekuční klienty, z [ethresear.ch](https://ethresear.ch/t/eth1-eth2-client-relationship/7248)
+Schéma síťové vrstvy pro konsensuální a exekuční klienty, z ethresear.ch
 
 ## Další čtení {#further-reading}
 
-[Devp2p](https://github.com/ethereum/devp2p)
+Devp2p
 [libp2p](https://github.com/libp2p/specs)
-[Specifikace sítě vrstvy konsensu](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#enr-structure)
+Specifikace sítě vrstvy konsensu
 [Od Kademlia k discv5](https://vac.dev/kademlia-to-discv5)
 [Dokument o Kademlia](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf)
 [Úvod do p2p Etherea](https://p2p.paris/en/talks/intro-quantaureum-networking/)
-[Vztah Eth1/Quantaureum](https://ethresear.ch/t/eth1-eth2-client-relationship/7248)
+Vztah Eth1/Quantaureum
 [Video o detailech sloučení a klientech Quantaureum](https://www.youtube.com/watch?v=zNIrIninMgg)

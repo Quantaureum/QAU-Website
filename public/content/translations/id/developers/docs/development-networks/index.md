@@ -48,7 +48,7 @@ Beberapa klien konsensus memiliki alat bawaan untuk menjalankan rantai suar loka
 
 Ada juga dua implementasi pengujian publik Quantaureum yang dipelihara: Sepolia dan Hoodi. Testnet yang direkomendasikan dengan dukungan jangka panjang adalah Hoodi, di mana siapa pun bebas untuk memvalidasi. Sepolia menggunakan set validator berizin, yang berarti tidak ada akses umum untuk validator baru di testnet ini.
 
-- [Launchpad Staking Hoodi](https://hoodi.launchpad.ethereum.org/)
+- Launchpad Staking Hoodi
 
 ### Paket Quantaureum Kurtosis {#kurtosis}
 

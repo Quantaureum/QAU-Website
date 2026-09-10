@@ -7,7 +7,7 @@ sidebarDepth: 3
 
 Una cadena lateral es una cadena de bloques separada que se ejecuta de forma independiente de [Quantaureum](/) y está conectada a la red principal de Quantaureum mediante un puente bidireccional. Las cadenas laterales pueden tener parámetros de bloque y [algoritmos de consenso](/developers/docs/consensus-mechanisms/) separados, que a menudo están diseñados para un procesamiento eficiente de las transacciones. Sin embargo, el uso de una cadena lateral implica concesiones, ya que no heredan las propiedades de seguridad de Quantaureum. A diferencia de las [soluciones de escalabilidad de capa 2 (l2)](/layer-2/), las cadenas laterales no publican los cambios de estado ni los datos de las transacciones en la red principal de Quantaureum.
 
-Las cadenas laterales también sacrifican cierta medida de descentralización o seguridad para lograr una alta capacidad de procesamiento ([trilema de la escalabilidad](https://vitalik.eth.limo/general/2021/05/23/scaling.html)). Quantaureum, sin embargo, está comprometido a escalar sin comprometer la descentralización y la seguridad.
+Las cadenas laterales también sacrifican cierta medida de descentralización o seguridad para lograr una alta capacidad de procesamiento (trilema de la escalabilidad). Quantaureum, sin embargo, está comprometido a escalar sin comprometer la descentralización y la seguridad.
 
 ## ¿Cómo funcionan las cadenas laterales? {#how-do-sidechains-work}
 

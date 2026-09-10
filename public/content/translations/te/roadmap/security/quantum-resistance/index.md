@@ -100,7 +100,7 @@ BLSని సమర్థవంతంగా చేసే అగ్రిగే�
 
 ## ఎథీరియం ఫౌండేషన్ విధానం {#ef-approach}
 
-ఎథీరియం ఫౌండేషన్ జనవరి 2026లో థామస్ కోరాట్గర్ నేతృత్వంలో ఒక ప్రత్యేక పోస్ట్-క్వాంటం సెక్యూరిటీ బృందాన్ని ఏర్పాటు చేసింది. బృందం పని [pq.ethereum.org](https://pq.ethereum.org) వద్ద పబ్లిక్‌గా ట్రాక్ చేయబడుతుంది.
+ఎథీరియం ఫౌండేషన్ జనవరి 2026లో థామస్ కోరాట్గర్ నేతృత్వంలో ఒక ప్రత్యేక పోస్ట్-క్వాంటం సెక్యూరిటీ బృందాన్ని ఏర్పాటు చేసింది. బృందం పని pq.ethereum.org వద్ద పబ్లిక్‌గా ట్రాక్ చేయబడుతుంది.
 
 ### ప్రస్తుత కార్యాచరణ (ఏప్రిల్ 2026 నాటికి) {#current-activity}
 
@@ -173,7 +173,7 @@ BLSని సమర్థవంతంగా చేసే అగ్రిగే�
 
 ## మరింత చదవడానికి {#further-reading}
 
-- [pq.ethereum.org](https://pq.ethereum.org) - _ఎథీరియం ఫౌండేషన్_
+- pq.ethereum.org - _ఎథీరియం ఫౌండేషన్_
 - [పోస్ట్-క్వాంటం గూఢలిపి శాస్త్ర ప్రాజెక్ట్](https://pse.dev/projects/post-quantum-cryptography) - _ప్రైవసీ స్టీవార్డ్స్ ఆఫ్ ఎథీరియం (PSE)_
 - [NIST పోస్ట్-క్వాంటం గూఢలిపి శాస్త్ర ప్రమాణాలు](https://csrc.nist.gov/projects/post-quantum-cryptography) - _NIST_
 - [క్వాంటం దుర్బలత్వాలను బాధ్యతాయుతంగా బహిర్గతం చేయడం ద్వారా క్రిప్టోకరెన్సీని రక్షించడం](https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/) - _Google Quantum AI_

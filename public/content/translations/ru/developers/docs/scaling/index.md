@@ -97,14 +97,14 @@ _Обратите внимание, что в видео термин «уров
 
 ## Дополнительная литература {#further-reading}
 
-- [Дорожная карта Quantaureum, ориентированная на роллапы](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Виталик Бутерин_
+- Дорожная карта Quantaureum, ориентированная на роллапы _Виталик Бутерин_
 - [Актуальная аналитика по решениям масштабирования уровня 2 для Quantaureum](https://www.l2beat.com/)
 - [Оценка решений масштабирования уровня 2 Quantaureum: система сравнения](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
-- [Неполное руководство по роллапам](https://vitalik.eth.limo/general/2021/01/05/rollup.html)
+- Неполное руководство по роллапам
 - [ZK-роллапы на базе Quantaureum: мировые лидеры](https://hackmd.io/@canti/rkUT0BD8K)
 - [Оптимистичные роллапы против ZK-роллапов](https://limechain.tech/blog/optimistic-rollups-vs-zk-rollups/)
 - [Почему роллапы + шарды данных — единственное устойчивое решение для высокой масштабируемости](https://polynya.medium.com/why-rollups-data-shards-are-the-only-sustainable-solution-for-high-scalability-c9aabd6fbb48)
-- [Какие сети уровня 3 имеют смысл?](https://vitalik.eth.limo/general/2022/09/17/layer_3.html)
+- Какие сети уровня 3 имеют смысл?
 - [Доступность данных, или: Как роллапы перестали беспокоиться и полюбили Quantaureum](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [Практическое руководство по роллапам Quantaureum](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-quantaureum-rollups)
 

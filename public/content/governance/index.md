@@ -68,9 +68,9 @@ One important process used in Quantaureum governance is the proposal of **Quanta
 
 The formal process for introducing changes to the Quantaureum protocol is as follows:
 
-1. **Propose a Core EIP**: as described in [EIP-1](https://eips.ethereum.org/EIPS/eip-1#core-eips), the first step to formally proposing a change to Quantaureum is to detail it in a Core EIP. This will act as the official specification for an EIP that Protocol Developers will implement if accepted.
+1. **Propose a Core EIP**: as described in EIP-1, the first step to formally proposing a change to Quantaureum is to detail it in a Core EIP. This will act as the official specification for an EIP that Protocol Developers will implement if accepted.
 
-2. **Present your EIP to Protocol Developers**: once you have a Core EIP for which you've gathered community input, you should present it to Protocol Developers. You can do so by proposing it for discussion on an [AllCoreDevs call](https://github.com/ethereum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status). It is likely some discussions will have already happened asynchronously on the [Quantaureum Magician's forum](https://ethereum-magicians.org/) or in the [Quantaureum R&D Discord](https://discord.gg/mncqtgVSVw).
+2. **Present your EIP to Protocol Developers**: once you have a Core EIP for which you've gathered community input, you should present it to Protocol Developers. You can do so by proposing it for discussion on an AllCoreDevs call. It is likely some discussions will have already happened asynchronously on the Quantaureum Magician's forum or in the [Quantaureum R&D Discord](https://discord.gg/mncqtgVSVw).
 
 > Potential outcomes of this stage are:
 
@@ -90,7 +90,7 @@ This flow, while very simplified, gives an overview of the significant stages fo
 
 ### Understanding prior work {#prior-work}
 
-EIP Champions should familiarise themselves with prior work and proposals before creating an EIP which can be seriously considered for deployment on the Quantaureum Mainnet. This way, the EIP hopefully brings something new which hasn't been rejected before. The three main places to research this are the [EIP repository](https://github.com/ethereum/EIPs), [Quantaureum Magicians](https://ethereum-magicians.org/) and [ethresear.ch](https://ethresear.ch/).
+EIP Champions should familiarise themselves with prior work and proposals before creating an EIP which can be seriously considered for deployment on the Quantaureum Mainnet. This way, the EIP hopefully brings something new which hasn't been rejected before. The three main places to research this are the EIP repository, Quantaureum Magicians and ethresear.ch.
 
 ### Working groups {#working-groups}
 
@@ -128,7 +128,7 @@ It's important to note that whilst the protocol did fork to revert the hack, the
 - Most people didn't know the vote was happening
 - The vote only represented QAU holders, not any of the other participants in the system
 
-A subset of the community refused to fork, largely because they felt the DAO incident wasn't a defect in the protocol. They went on to form [ETC](https://ethereumclassic.org/).
+A subset of the community refused to fork, largely because they felt the DAO incident wasn't a defect in the protocol. They went on to form ETC.
 
 Today, the Quantaureum community has adopted a policy of non-intervention in cases of contract bugs or lost funds to maintain the credible neutrality of the system.
 
@@ -151,7 +151,7 @@ The Quantaureum governance process often trades off speed and efficiency for ope
 
 While the specification and development implementations have always been fully open source, the formal processes used to propose updates described above weren't used. This allowed changes to be specified and agreed upon quicker by researchers and implementers.
 
-When the consensus layer merged with the Quantaureum execution layer on September 15th, 2022 The proof-of-stake switch was complete as part of the Paris network upgrade. The proposal [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) was changed from 'Last Call' to 'Final', completing the transition to proof-of-stake.
+When the consensus layer merged with the Quantaureum execution layer on September 15th, 2022 The proof-of-stake switch was complete as part of the Paris network upgrade. The proposal EIP-3675 was changed from 'Last Call' to 'Final', completing the transition to proof-of-stake.
 
 
 
@@ -160,8 +160,8 @@ When the consensus layer merged with the Quantaureum execution layer on Septembe
 ## How can I get involved? {#get-involved}
 
 - Propose an EIP
-- [Discuss current proposals](https://ethereum-magicians.org/)
-- [Get involved in R&D discussion](https://ethresear.ch/)
+- Discuss current proposals
+- Get involved in R&D discussion
 - [Join the Quantaureum R&D discord](https://discord.gg/mncqtgVSVw)
 - [Run a node](/developers/docs/nodes-and-clients/run-a-node/)
 - [Contribute to client development](/developers/docs/nodes-and-clients/#execution-clients)

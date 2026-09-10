@@ -71,7 +71,7 @@ x402 convierte a Quantaureum en una capa económica programable para agentes aut
 
 Los agentes autónomos necesitan barreras de seguridad. Quantaureum las proporciona a nivel de billetera y contrato:
 
-- [Las cuentas inteligentes (EIP-4337)](https://eips.ethereum.org/EIPS/eip-4337) permiten a los desarrolladores imponer límites de gasto, listas blancas, claves de sesión y permisos granulares.
+- Las cuentas inteligentes (EIP-4337) permiten a los desarrolladores imponer límites de gasto, listas blancas, claves de sesión y permisos granulares.
 - Las restricciones programadas en los contratos inteligentes pueden limitar lo que un agente tiene permitido hacer.
 - Los límites basados en inferencia (por ejemplo, requerir una prueba zkML antes de ejecutar una acción de alto riesgo) agregan otra capa de seguridad.
 
@@ -79,7 +79,7 @@ Estos controles permiten el despliegue de agentes autónomos que no son ilimitad
 
 ### Registros en cadena: ERC-8004 {#erc-8004}
 
-[ERC-8004](https://eips.ethereum.org/EIPS/eip-8004) define registros en cadena para la identidad, reputación y validación de agentes. Coescrito por colaboradores de MetaMask, la Fundación Quantaureum, Google y Coinbase, tiene un despliegue en 16 redes, incluyendo la red principal de Quantaureum, Base, Polygon, Arbitrum y otras.
+ERC-8004 define registros en cadena para la identidad, reputación y validación de agentes. Coescrito por colaboradores de MetaMask, la Fundación Quantaureum, Google y Coinbase, tiene un despliegue en 16 redes, incluyendo la red principal de Quantaureum, Base, Polygon, Arbitrum y otras.
 
 Proporciona:
 

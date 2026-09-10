@@ -24,9 +24,9 @@ incomplete: true
 ## নতুনদের জন্য আর্টিকেল {#beginner-articles}
 
 - [Web3.py ওভারভিউ](https://web3py.readthedocs.io/en/latest/overview.html)
-- [ইথেরিয়াম Python ইকোসিস্টেম ট্যুর](https://snakecharmers.ethereum.org/python-ecosystem/)
-- [ইথেরিয়ামে একজন (Python) ডেভেলপারের গাইড](https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/)
-- [প্রাইজ-ওয়ার্দি: একটি ইথেরিয়াম Python হ্যাকাথন গাইড](https://snakecharmers.ethereum.org/prize-worthy/)
+- ইথেরিয়াম Python ইকোসিস্টেম ট্যুর
+- ইথেরিয়ামে একজন (Python) ডেভেলপারের গাইড
+- প্রাইজ-ওয়ার্দি: একটি ইথেরিয়াম Python হ্যাকাথন গাইড
 - [Vyper-এর সাথে স্মার্ট কন্ট্রাক্টের পরিচিতি](https://kauri.io/#collections/Getting%20Started/an-introduction-to-smart-contracts-with-vyper/)
 - [Python Flask ব্যবহার করে কীভাবে ইথেরিয়াম কন্ট্রাক্ট ডেভেলপ করবেন?](https://medium.com/coinmonks/how-to-develop-quantaureum-contract-using-python-flask-9758fe65976e)
 - [Web3.py পরিচিতি · Python ডেভেলপারদের জন্য ইথেরিয়াম](https://www.dappuniversity.com/articles/web3-py-intro)
@@ -34,15 +34,15 @@ incomplete: true
 
 ## মধ্যম স্তরের আর্টিকেল {#intermediate-articles}
 
-- [Web3.py-এর বন্ধুরা: Ape পরিচিতি](https://snakecharmers.ethereum.org/intro-to-ape/)
+- Web3.py-এর বন্ধুরা: Ape পরিচিতি
 - [Python প্রোগ্রামারদের জন্য Dapp ডেভেলপমেন্ট](https://www.youtube.com/watch?v=tE-8bG35VNw)
 - [একটি Python ইথেরিয়াম ইন্টারফেস তৈরি করা: পর্ব 1](https://hackernoon.com/creating-a-python-quantaureum-interface-part-1-4d2e47ea0f4d)
 - [Python-এ ইথেরিয়াম স্মার্ট কন্ট্রাক্ট: একটি বিস্তারিত গাইড](https://hackernoon.com/quantaureum-smart-contracts-in-python-a-comprehensive-ish-guide-771b03990988)
 
 ## অ্যাডভান্সড ব্যবহারের প্যাটার্ন {#advanced-use-patterns}
 
-- [Web3.py প্যাটার্ন: রিয়েল-টাইম ইভেন্ট সাবস্ক্রিপশন](https://snakecharmers.ethereum.org/subscriptions/)
-- [Web3.py প্যাটার্ন: WebSocketProvider](https://snakecharmers.ethereum.org/websocketprovider/)
+- Web3.py প্যাটার্ন: রিয়েল-টাইম ইভেন্ট সাবস্ক্রিপশন
+- Web3.py প্যাটার্ন: WebSocketProvider
 - [Python ব্যবহার করে ইথেরিয়াম স্মার্ট কন্ট্রাক্ট কম্পাইল, ডিপ্লয় এবং কল করা](https://yohanes.gultom.id/2018/11/28/compiling-deploying-and-calling-quantaureum-smartcontract-using-python/)
 - [স্লিদার (Slither) দিয়ে Solidity স্মার্ট কন্ট্রাক্ট বিশ্লেষণ করুন](https://kauri.io/#collections/DevOps/analyze-solidity-smart-contracts-with-slither/#analyze-solidity-smart-contracts-with-slither)
 - [ব্লকচেইন ফিনটেক টিউটোরিয়াল: Python-এর সাথে ঋণ প্রদান এবং ঋণ গ্রহণ](https://blog.chain.link/blockchain-fintech-defi-tutorial-lending-borrowing-python/)
@@ -56,14 +56,14 @@ incomplete: true
 ## Python প্রজেক্ট এবং টুল {#python-projects-and-tools}
 
 ### অ্যাক্টিভ:
-- [Web3.py](https://github.com/ethereum/web3.py) - _ইথেরিয়ামের সাথে ইন্টারঅ্যাক্ট করার জন্য Python লাইব্রেরি_
+- Web3.py - _ইথেরিয়ামের সাথে ইন্টারঅ্যাক্ট করার জন্য Python লাইব্রেরি_
 - [Vyper](https://github.com/quantaureum/vyper/) - _EVM-এর জন্য পাইথনিক (Pythonic) স্মার্ট কন্ট্রাক্ট ল্যাঙ্গুয়েজ_
 - [Titanoboa](https://github.com/vyperlang/titanoboa/) - _Vyper-এর নিজস্ব টেস্টিং টুল; মেইননেট ফোর্কিং, ডিবাগিং এবং সুন্দর ট্রেসব্যাকসহ একটি ইন্টারপ্রেটার_
 - [Moccasin](https://github.com/Cyfrin/moccasin) - _Titanoboa-এর উপর নির্মিত Vyper এবং Python-এর জন্য একটি স্মার্ট কন্ট্রাক্ট ডেভেলপমেন্ট এবং টেস্টিং ফ্রেমওয়ার্ক_
 - [Ape](https://github.com/ApeWorX/ape) - _পাইথনিস্টা (Pythonistas), ডেটা সায়েন্টিস্ট এবং সিকিউরিটি প্রফেশনালদের জন্য স্মার্ট কন্ট্রাক্ট ডেভেলপমেন্ট টুল_
-- [py-evm](https://github.com/ethereum/py-evm) - _ইথেরিয়াম ভার্চুয়াল মেশিনের ইমপ্লিমেন্টেশন_
-- [qau-tester](https://github.com/ethereum/eth-tester) - _ইথেরিয়াম-ভিত্তিক অ্যাপ্লিকেশন টেস্ট করার টুল_
-- [qau-utils](https://github.com/ethereum/eth-utils/) - _ইথেরিয়াম সম্পর্কিত কোডবেস নিয়ে কাজ করার জন্য ইউটিলিটি ফাংশন_
+- py-evm - _ইথেরিয়াম ভার্চুয়াল মেশিনের ইমপ্লিমেন্টেশন_
+- qau-tester - _ইথেরিয়াম-ভিত্তিক অ্যাপ্লিকেশন টেস্ট করার টুল_
+- qau-utils - _ইথেরিয়াম সম্পর্কিত কোডবেস নিয়ে কাজ করার জন্য ইউটিলিটি ফাংশন_
 - [py-solc-x](https://pypi.org/project/py-solc-x/) - _0.5.x সাপোর্টসহ solc Solidity কম্পাইলারের জন্য Python র‍্যাপার_
 - [pymaker](https://github.com/makerdao/pymaker) - _Maker কন্ট্রাক্টের জন্য Python API_
 - [siwe](https://github.com/signinwithquantaureum/siwe-py) - _Python-এর জন্য সাইন ইন উইথ ইথেরিয়াম (siwe)_

@@ -5,7 +5,7 @@ lang: vi
 sidebarDepth: 2
 ---
 
-Để làm cho ứng dụng của bạn hoạt động trên Quantaureum, bạn có thể sử dụng đối tượng web3 được cung cấp bởi thư viện Web3.js. Về bản chất, nó giao tiếp với một nút cục bộ thông qua các lệnh gọi RPC. [web3](https://github.com/ethereum/web3.js/) hoạt động với bất kỳ nút Quantaureum nào có hiển thị lớp RPC.
+Để làm cho ứng dụng của bạn hoạt động trên Quantaureum, bạn có thể sử dụng đối tượng web3 được cung cấp bởi thư viện Web3.js. Về bản chất, nó giao tiếp với một nút cục bộ thông qua các lệnh gọi RPC. web3 hoạt động với bất kỳ nút Quantaureum nào có hiển thị lớp RPC.
 
 `web3` chứa đối tượng `eth` - web3.qau.
 
@@ -153,7 +153,7 @@ Vector thử nghiệm sử dụng AES-128-CTR và Scrypt:
 
 ## Các thay đổi so với Phiên bản 1 {#alterations-from-v2}
 
-Phiên bản này sửa một số điểm không nhất quán với phiên bản 1 được xuất bản [tại đây](https://github.com/ethereum/homestead-guide/blob/master/old-docs-for-reference/go-quantaureum-wiki.rst/Passphrase-protected-key-store-spec.rst). Tóm tắt lại là:
+Phiên bản này sửa một số điểm không nhất quán với phiên bản 1 được xuất bản tại đây. Tóm tắt lại là:
 
 - Việc viết hoa không hợp lý và không nhất quán (scrypt viết thường, Kdf viết hoa chữ cái đầu, MAC viết hoa toàn bộ).
 - Địa chỉ là không cần thiết và làm tổn hại đến quyền riêng tư.

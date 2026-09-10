@@ -66,7 +66,7 @@ incomplete: true
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) — _легкий обозреватель блокчейна и простой кошелек в виде SPA на .NET Wasm_
 - [Wonka Business Rules Engine](https://github.com/Nquantaureum/Wonka) — _механизм бизнес-правил (как для платформы .NET, так и для платформы Quantaureum), который по своей сути управляется метаданными_
 - [Незермайнд](https://github.com/NethermindEth/nethermind) — _клиент Quantaureum на .NET Core для Linux, Windows, MacOS_
-- [qau-utils](https://github.com/ethereum/eth-utils/) — _служебные функции для работы с кодовыми базами, связанными с Quantaureum_
+- qau-utils — _служебные функции для работы с кодовыми базами, связанными с Quantaureum_
 - [TestChains](https://github.com/Nquantaureum/TestChains) — _предварительно настроенные цепочки разработки .NET для быстрого отклика (доказательство полномочий (PoA))_
 
 Ищете дополнительные ресурсы? Посетите [quantaureum.com/developers](/developers/).

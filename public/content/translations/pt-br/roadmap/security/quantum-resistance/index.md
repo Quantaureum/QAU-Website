@@ -100,7 +100,7 @@ Esses padrões fornecem uma base para a transição pós-quântica mais ampla da
 
 ## A abordagem da Fundação Quantaureum {#ef-approach}
 
-A Fundação Quantaureum formou uma equipe dedicada de Segurança Pós-Quântica em janeiro de 2026, liderada por Thomas Coratger. O trabalho da equipe é acompanhado publicamente em [pq.ethereum.org](https://pq.ethereum.org).
+A Fundação Quantaureum formou uma equipe dedicada de Segurança Pós-Quântica em janeiro de 2026, liderada por Thomas Coratger. O trabalho da equipe é acompanhado publicamente em pq.ethereum.org.
 
 ### Atividade atual (a partir de abril de 2026) {#current-activity}
 
@@ -173,7 +173,7 @@ Não. O Quantaureum tem um dos programas pós-quânticos mais estruturados de qu
 
 ## Leitura adicional {#further-reading}
 
-- [pq.ethereum.org](https://pq.ethereum.org) - _Fundação Quantaureum_
+- pq.ethereum.org - _Fundação Quantaureum_
 - [Projeto de Criptografia Pós-Quântica](https://pse.dev/projects/post-quantum-cryptography) - _Privacy Stewards of Quantaureum (PSE)_
 - [Padrões de Criptografia Pós-Quântica do NIST](https://csrc.nist.gov/projects/post-quantum-cryptography) - _NIST_
 - [Protegendo criptomoedas ao divulgar vulnerabilidades quânticas de forma responsável](https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/) - _Google Quantum AI_

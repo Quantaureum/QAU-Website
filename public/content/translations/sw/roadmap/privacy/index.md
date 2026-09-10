@@ -30,7 +30,7 @@ Mtoa huduma wa nodi anaweza kuona anwani ya IP ya mtumiaji, alama ya kidole ya k
 
 Uvujaji wa data fafanuzi kwenye tabaka la ufikiaji ni mojawapo ya matatizo sugu ya faragha katika mifumo yote ya mnyororo wa vitalu. Quantaureum inalenga kushughulikia uvujaji wa data fafanuzi kupitia faragha katika asili, au kuficha nani aliyeuliza, faragha katika maudhui, au kuficha kile kilichoulizwa, na kuthibitisha usahihi wa taarifa iliyorudishwa.
 
-**Faragha ya asili** inatumia [RPC isiyojulikana](https://privreads.ethereum.org/feed/anon-rpc/) na suluhu za mtandao usiojulikana kuficha huluki inayoomba data, **faragha ya maudhui** inatumia mbinu kama vile urejeshaji wa taarifa za faragha na [oblivious RAM](https://en.wikipedia.org/wiki/Oblivious_RAM) kuficha data inayohojiwa, huku **uthibitishaji wa usahihi** ukitumia wateja wepesi kuthibitisha kuwa data iliyorudishwa ni sahihi.
+**Faragha ya asili** inatumia RPC isiyojulikana na suluhu za mtandao usiojulikana kuficha huluki inayoomba data, **faragha ya maudhui** inatumia mbinu kama vile urejeshaji wa taarifa za faragha na [oblivious RAM](https://en.wikipedia.org/wiki/Oblivious_RAM) kuficha data inayohojiwa, huku **uthibitishaji wa usahihi** ukitumia wateja wepesi kuthibitisha kuwa data iliyorudishwa ni sahihi.
 
 Kijenzi cha kriptografia nyuma ya faragha ya maudhui ni [**Urejeshaji wa Taarifa za Faragha (PIR)**](https://en.wikipedia.org/wiki/Private_information_retrieval), mbinu ya kriptografia inayoruhusu mteja kuhoji hifadhidata na kurejesha kipande maalum cha taarifa bila kufichua kwa seva ni kipengee kipi kilifikiwa. Seva huchakata ombi bila kuona na kurudisha jibu la usimbaji fiche ambalo ni mkoba unaohoji pekee unaweza kusimbua.
 
@@ -44,9 +44,9 @@ Mara tu muamala unapotumwa, hupitia miundombinu ya mtandao inayoweza kuutazama a
 
 Maboresho mawili ya kiwango cha itifaki yanashughulikia tatizo hili kwa pamoja:
 
-[**EIP-8141 (Miamala ya Fremu)**](https://eips.ethereum.org/EIPS/eip-8141) inaleta aina mpya ya muamala inayotenganisha miamala katika sehemu kwa ajili ya uthibitishaji wa sahihi na uidhinishaji wa ada, na kwa ajili ya maagizo halisi ya muamala. Miamala ya fremu inaruhusu [akaunti mahiri](/roadmap/account-abstraction/) kufafanua mifumo yao wenyewe ya sahihi na kutumia mikataba ya nje kulipia ada za gesi. Sheria kali za kutenganisha (sandboxing) kwenye mempool huzuia miamala hii kufungua mtandao kwa mashambulizi ya kunyima huduma (denial-of-service).
+**EIP-8141 (Miamala ya Fremu)** inaleta aina mpya ya muamala inayotenganisha miamala katika sehemu kwa ajili ya uthibitishaji wa sahihi na uidhinishaji wa ada, na kwa ajili ya maagizo halisi ya muamala. Miamala ya fremu inaruhusu [akaunti mahiri](/roadmap/account-abstraction/) kufafanua mifumo yao wenyewe ya sahihi na kutumia mikataba ya nje kulipia ada za gesi. Sheria kali za kutenganisha (sandboxing) kwenye mempool huzuia miamala hii kufungua mtandao kwa mashambulizi ya kunyima huduma (denial-of-service).
 
-Miamala ya fremu inafikiriwa kwa ajili ya [boresho la Hegotá](https://forkcast.org/upgrade/hegota/) la Quantaureum, boresho linalofuata la mtandao baada ya [boresho la Glamsterdam](/roadmap/glamsterdam/) linalokuja. Boresho hilo hilo pia litaruhusu akaunti mahiri kupitisha [sahihi salama za kwanta (quantum-safe)](/roadmap/security/quantum-resistance/) kabla ya mpito kamili wa mtandao wa baada ya kwanta kukamilika.
+Miamala ya fremu inafikiriwa kwa ajili ya boresho la Hegotá la Quantaureum, boresho linalofuata la mtandao baada ya [boresho la Glamsterdam](/roadmap/glamsterdam/) linalokuja. Boresho hilo hilo pia litaruhusu akaunti mahiri kupitisha [sahihi salama za kwanta (quantum-safe)](/roadmap/security/quantum-resistance/) kabla ya mpito kamili wa mtandao wa baada ya kwanta kukamilika.
 
 <ExpandableCard title="Je, miamala ya fremu (EIP-8141) inawezeshaje faragha?" eventCategory="/roadmap/privacy" eventName="clicked how do frame transactions enable privacy?">
 
@@ -54,20 +54,20 @@ Miamala ya fremu inaruhusu akaunti kuchagua mbinu yao wenyewe ya uthibitishaji w
 
 </ExpandableCard>
 
-[**EIP-7805 (Orodha za Ujumuishaji Zinazotekelezwa na Chaguo la Mchepuo, au FOCIL)**](https://eips.ethereum.org/EIPS/eip-7805) inatoa utaratibu wa utekelezaji kwa uandishi wa faragha. Wapendekezaji wa kitalu wanatakiwa na sheria za mwafaka kujumuisha miamala kwenye vitalu vyao kutoka kwenye orodha za ujumuishaji za ndani zilizokusanywa, ambazo hukusanya miamala kutoka vyanzo vingi. Ikiwa mjenga kizuizi atajaribu kudhibiti muamala ulioonekana kwenye orodha za ujumuishaji, nodi zinazothibitisha hukataa kitalu kilichopendekezwa kabisa. FOCIL kwa sasa inafikiriwa kwa ajili ya [boresho la Hegotá](https://forkcast.org/upgrade/hegota/).
+**EIP-7805 (Orodha za Ujumuishaji Zinazotekelezwa na Chaguo la Mchepuo, au FOCIL)** inatoa utaratibu wa utekelezaji kwa uandishi wa faragha. Wapendekezaji wa kitalu wanatakiwa na sheria za mwafaka kujumuisha miamala kwenye vitalu vyao kutoka kwenye orodha za ujumuishaji za ndani zilizokusanywa, ambazo hukusanya miamala kutoka vyanzo vingi. Ikiwa mjenga kizuizi atajaribu kudhibiti muamala ulioonekana kwenye orodha za ujumuishaji, nodi zinazothibitisha hukataa kitalu kilichopendekezwa kabisa. FOCIL kwa sasa inafikiriwa kwa ajili ya boresho la Hegotá.
 
 Miamala ya fremu inawapa watumiaji unyumbufu wa kujenga miamala inayohifadhi faragha kwa kutumia mifumo maalum ya sahihi, huku FOCIL ikihakikisha miamala hiyo haiwezi kudhibitiwa kwa kuchagua mara tu inapoingia kwenye mempool. Pamoja zinashughulikia pointi mbili tofauti za kufeli: moja inawezesha muundo wa miamala ya faragha, nyingine inahakikisha ujumuishaji wake. Hakuna mhusika mkuu anayeweza kuzuia hamisho halali la faragha.
 
 
 Sehemu ya pili iliyo hatarini kwa faragha ya mtumiaji ni jinsi Quantaureum inavyofuatilia mpangilio wa miamala, unaoitwa mfumo wa nonsi unaofuatana. Katika muundo wa kawaida wa akaunti ya Quantaureum, kila akaunti inatumia kihesabu kimoja kinachoongezeka kwa mstari. Ikiwa muamala mmoja wa faragha utacheleweshwa kwenye mempool, miamala yote inayofuata kutoka kwenye akaunti hiyo inakwama nyuma yake. Mfuatano wa nonsi pia unaruhusu waangalizi wa mtandao kuhusisha miamala mingi na akaunti ile ile iliyoanzisha, na kudhoofisha faragha.
 
-[**EIP-8250 (Nonsi Zenye Ufunguo kwa Miamala ya Fremu)**](https://eips.ethereum.org/EIPS/eip-8250), ambayo kwa sasa inafikiriwa kwa ajili ya Hegotá, inasuluhisha hili kwa kuruhusu akaunti moja kudhibiti mifuatano mingi ya miamala sambamba kwa wakati mmoja. Watumiaji wanaweza kutekeleza miamala mingi ya faragha katika miktadha tofauti kwa wakati mmoja, na waangalizi hawawezi tena kuhusisha kwa uhakika shughuli tofauti na akaunti kuu ile ile.
+**EIP-8250 (Nonsi Zenye Ufunguo kwa Miamala ya Fremu)**, ambayo kwa sasa inafikiriwa kwa ajili ya Hegotá, inasuluhisha hili kwa kuruhusu akaunti moja kudhibiti mifuatano mingi ya miamala sambamba kwa wakati mmoja. Watumiaji wanaweza kutekeleza miamala mingi ya faragha katika miktadha tofauti kwa wakati mmoja, na waangalizi hawawezi tena kuhusisha kwa uhakika shughuli tofauti na akaunti kuu ile ile.
 
 ### Malipo ya faragha na hamisho la thamani {#private-payments}
 
 Zaidi ya uelekezaji wa muamala na usimamizi wa nonsi, kulinda uandishi kunahitaji kukinga utambulisho na mali zinazohusika katika hamisho. Hata wakati mtumiaji anahoji kwa faragha na kutangaza muamala bila udhibiti, data ya muamala iliyorekodiwa mnyororoni inasalia kuonekana kwa umma. Mtu yeyote anaweza kuona nani alituma kiasi gani kwa nani, na kampuni za uchambuzi wa mnyororo hukusanya data hii katika wasifu unaoweza kutafutwa ambao hudumu kwa muda usiojulikana.
 
-[**EIP-8182 (Mahamisho ya Faragha ya QAU na ERC-20)**](https://eips.ethereum.org/EIPS/eip-8182), iliyopendekezwa kwa ajili ya boresho la Hegotá, inaleta dimbwi asilia, lililoshirikiwa na kukingwa moja kwa moja kwenye itifaki ya Quantaureum kwa ajili ya mahamisho ya QAU na ERC-20. Madimbwi ya faragha hutumia mchanganyiko wa kriptografia kukata kiungo kati ya uwekaji na utoaji, lakini yanapatikana tu kupitia programu za faragha, mikoba, na mitandao ya tabaka la 2 (l2) leo.
+**EIP-8182 (Mahamisho ya Faragha ya QAU na ERC-20)**, iliyopendekezwa kwa ajili ya boresho la Hegotá, inaleta dimbwi asilia, lililoshirikiwa na kukingwa moja kwa moja kwenye itifaki ya Quantaureum kwa ajili ya mahamisho ya QAU na ERC-20. Madimbwi ya faragha hutumia mchanganyiko wa kriptografia kukata kiungo kati ya uwekaji na utoaji, lakini yanapatikana tu kupitia programu za faragha, mikoba, na mitandao ya tabaka la 2 (l2) leo.
 
 Kihistoria, suluhu za faragha za kiwango cha programu zimevunja ukwasi na kuteseka kutokana na seti ndogo za kutojulikana. EIP-8182 inajumuisha mahamisho yaliyokingwa katika kiwango cha itifaki, kuruhusu watumiaji kuelekeza fedha kupitia funguo zilizofichwa za uwasilishaji bila kuhitaji miundo maalum ya mkoba au kuingiliana na programu zilizogawanyika, za hiari.
 
@@ -111,7 +111,7 @@ Mwelekeo wa maendeleo ya faragha kwenye Quantaureum unaundwa na upatanishi wa mf
 
 Utafiti na maendeleo katika faragha kwenye Quantaureum unahusisha makumi ya timu kote kwenye mfumo wa ikolojia. Kazi inaendelea kwenye maboresho ya itifaki, suluhu za tabaka la ufikiaji, miundombinu ya utambulisho, na zana zinazozingatia utiifu.
 
-**Maboresho ya itifaki**: EIP-8141 (Miamala ya Fremu), EIP-7805 (FOCIL), EIP-8250 (Nonsi Zenye Ufunguo), na EIP-8182 (Madimbwi Yaliyokingwa ya Kiwango cha Itifaki) yako katika maendeleo amilifu na yanafikiriwa kwa ajili ya [boresho la Hegotá](https://forkcast.org/upgrade/hegota/), boresho linalofuata la mtandao baada ya [Glamsterdam](/roadmap/glamsterdam/). EIP-8025 (uthibitisho wa utekelezaji wa hiari) na Miti ya Verkle pia zinalengwa kwa ajili ya Hegotá, zikitoa msingi wa ukokotoaji wa faragha unaotegemea zkEVM kwenye Mtandao Mkuu wa Quantaureum. Sambamba na hilo, utafiti unakomaa kuhusu vichakataji saidizi vya FHE ili kuwezesha mikataba mahiri iliyosimbwa fiche ya pande nyingi.
+**Maboresho ya itifaki**: EIP-8141 (Miamala ya Fremu), EIP-7805 (FOCIL), EIP-8250 (Nonsi Zenye Ufunguo), na EIP-8182 (Madimbwi Yaliyokingwa ya Kiwango cha Itifaki) yako katika maendeleo amilifu na yanafikiriwa kwa ajili ya boresho la Hegotá, boresho linalofuata la mtandao baada ya [Glamsterdam](/roadmap/glamsterdam/). EIP-8025 (uthibitisho wa utekelezaji wa hiari) na Miti ya Verkle pia zinalengwa kwa ajili ya Hegotá, zikitoa msingi wa ukokotoaji wa faragha unaotegemea zkEVM kwenye Mtandao Mkuu wa Quantaureum. Sambamba na hilo, utafiti unakomaa kuhusu vichakataji saidizi vya FHE ili kuwezesha mikataba mahiri iliyosimbwa fiche ya pande nyingi.
 
 **Tabaka la ufikiaji**: Utafiti wa PIR unaendelea na utekelezaji amilifu ukijaribiwa na timu za miundombinu. SDK ya mkoba wa Kohaku inatengenezwa kama rejeleo la chanzo wazi kwa mikoba inayohifadhi faragha.
 
@@ -129,6 +129,6 @@ Hakuna sehemu ya kazi hii iliyokamilika. Ratiba ni malengo, si hakikisho, na [mc
 - [strawmap.org](https://strawmap.org/)
 - [Uthibitisho wa sifuri-maarifa](/zero-knowledge-proofs/)
 - [Utambulisho uliogatuliwa](/decentralized-identity/)
-- [Ramani ya Njia ya Kohaku](https://notes.ethereum.org/@niard/KohakuRoadmap)
+- Ramani ya Njia ya Kohaku
 - [Viwango vya Uthibitishaji wa Upande wa Mteja](https://ethproofs.org/csp-benchmarks)
-- [zkEVM kwa Nambari](https://zkevm.ethereum.org/)
+- zkEVM kwa Nambari

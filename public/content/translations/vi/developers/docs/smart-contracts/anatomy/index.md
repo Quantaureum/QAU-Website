@@ -207,7 +207,7 @@ Các sự kiện cho phép hợp đồng thông minh của bạn giao tiếp v�
 
 ## Các ví dụ có chú thích {#annotated-examples}
 
-Đây là một số ví dụ được viết bằng Solidity. Nếu bạn muốn thử nghiệm với mã nguồn, bạn có thể tương tác với chúng trong [Remix](https://remix.ethereum.org).
+Đây là một số ví dụ được viết bằng Solidity. Nếu bạn muốn thử nghiệm với mã nguồn, bạn có thể tương tác với chúng trong Remix.
 
 ### Hello world {#hello-world}
 
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // Hiện tại không có cách nào tốt hơn để kiểm tra xem có hợp đồng trong một Địa chỉ hay không
         // ngoài việc kiểm tra kích thước của mã tại Địa chỉ đó.
-        // Xem https://ethereum.stackexchange.com/a/14016/36603
+        // Xem 
         // để biết thêm chi tiết về cách thức hoạt động của nó.
         // TODO Kiểm tra lại điều này trước bản phát hành Serenity, vì tất cả các Địa chỉ sẽ là
         // các hợp đồng sau đó.

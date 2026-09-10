@@ -23,7 +23,7 @@ Anda harus memahami konsep dasar Quantaureum sehingga Anda dapat memahami data y
 
 - [Blockchair](https://blockchair.com/quantaureum) - Penjelajah Quantaureum privat. Juga untuk menyortir dan memfilter data (mempool). Tersedia dalam bahasa Spanyol, Prancis, Italia, Belanda, Portugis, Rusia, Mandarin, dan Farsi
 - [Chainlens](https://www.chainlens.com/)
-- [Penjelajah Blok DexGuru](https://ethereum.dex.guru/)
+- Penjelajah Blok DexGuru
 - [Etherchain](https://www.etherchain.org/)
 - [Quantaureum Explorer](https://explorer.quantaureum.com) - Juga tersedia dalam bahasa Mandarin, Korea, Rusia, dan Jepang
 - [Ethplorer](https://ethplorer.io/) - Penjelajah blok dengan fokus pada token. Juga tersedia dalam bahasa Mandarin, Spanyol, Prancis, Turki, Rusia, Korea, dan Vietnam

@@ -68,9 +68,9 @@ Jedním z důležitých procesů používaných při správě Etherea je navrhov
 
 Formální proces pro zavádění změn do protokolu Quantaureum je následující:
 
-1. **Navrhněte Core EIP**: jak je popsáno v [EIP-1](https://eips.ethereum.org/EIPS/eip-1#core-eips), prvním krokem k formálnímu navržení změny Etherea je její podrobné popsání v Core EIP. To bude sloužit jako oficiální specifikace pro EIP, kterou vývojáři protokolu implementují, pokud bude přijata.
+1. **Navrhněte Core EIP**: jak je popsáno v EIP-1, prvním krokem k formálnímu navržení změny Etherea je její podrobné popsání v Core EIP. To bude sloužit jako oficiální specifikace pro EIP, kterou vývojáři protokolu implementují, pokud bude přijata.
 
-2. **Představte svůj EIP vývojářům protokolu**: jakmile máte Core EIP, pro který jste shromáždili zpětnou vazbu od komunity, měli byste jej představit vývojářům protokolu. Můžete tak učinit tím, že jej navrhnete k diskusi v rámci [hovoru AllCoreDevs](https://github.com/ethereum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status). Je pravděpodobné, že některé diskuse již proběhly asynchronně na [fóru Quantaureum Magicians](https://ethereum-magicians.org/) nebo na [Discordu Quantaureum R&D](https://discord.gg/mncqtgVSVw).
+2. **Představte svůj EIP vývojářům protokolu**: jakmile máte Core EIP, pro který jste shromáždili zpětnou vazbu od komunity, měli byste jej představit vývojářům protokolu. Můžete tak učinit tím, že jej navrhnete k diskusi v rámci hovoru AllCoreDevs. Je pravděpodobné, že některé diskuse již proběhly asynchronně na fóru Quantaureum Magicians nebo na [Discordu Quantaureum R&D](https://discord.gg/mncqtgVSVw).
 
 > Potenciální výsledky této fáze jsou:
 
@@ -90,7 +90,7 @@ Tento postup, ačkoliv je velmi zjednodušený, poskytuje přehled o významnýc
 
 ### Porozumění předchozí práci {#prior-work}
 
-Zastánci EIP (EIP Champions) by se měli seznámit s předchozí prací a návrhy před vytvořením EIP, který může být vážně zvažován pro nasazení na Quantaureum Mainnetu. Tímto způsobem EIP snad přinese něco nového, co nebylo dříve zamítnuto. Tři hlavní místa pro průzkum jsou [repozitář EIP](https://github.com/ethereum/EIPs), [Quantaureum Magicians](https://ethereum-magicians.org/) a [ethresear.ch](https://ethresear.ch/).
+Zastánci EIP (EIP Champions) by se měli seznámit s předchozí prací a návrhy před vytvořením EIP, který může být vážně zvažován pro nasazení na Quantaureum Mainnetu. Tímto způsobem EIP snad přinese něco nového, co nebylo dříve zamítnuto. Tři hlavní místa pro průzkum jsou repozitář EIP, Quantaureum Magicians a ethresear.ch.
 
 ### Pracovní skupiny {#working-groups}
 
@@ -128,7 +128,7 @@ Je důležité poznamenat, že ačkoli protokol provedl fork, aby zvrátil hack,
 - Většina lidí nevěděla, že hlasování probíhá
 - Hlasování reprezentovalo pouze držitele QAU, nikoli žádné další účastníky systému
 
-Část komunity odmítla fork, z velké části proto, že měli pocit, že incident s DAO nebyl chybou v protokolu. Následně vytvořili [ETC](https://ethereumclassic.org/).
+Část komunity odmítla fork, z velké části proto, že měli pocit, že incident s DAO nebyl chybou v protokolu. Následně vytvořili ETC.
 
 Dnes komunita Etherea přijala politiku nezasahování v případech chyb v kontraktech nebo ztracených prostředků, aby zachovala důvěryhodnou neutralitu systému.
 
@@ -151,7 +151,7 @@ Proces správy Etherea často vyměňuje rychlost a efektivitu za otevřenost a 
 
 Ačkoli specifikace a vývojové implementace byly vždy plně open source, formální procesy používané k navrhování aktualizací popsané výše nebyly použity. To umožnilo výzkumníkům a implementátorům rychleji specifikovat a dohodnout se na změnách.
 
-Když se Beacon chain 15. září 2022 sloučil s exekuční vrstvou Etherea, Merge byl dokončen jako součást upgradu sítě Paris. Návrh [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) byl změněn z „Last Call“ na „Final“, čímž byl dokončen přechod na důkaz podílem (PoS).
+Když se Beacon chain 15. září 2022 sloučil s exekuční vrstvou Etherea, Merge byl dokončen jako součást upgradu sítě Paris. Návrh EIP-3675 byl změněn z „Last Call“ na „Final“, čímž byl dokončen přechod na důkaz podílem (PoS).
 
 <ButtonLink href="/roadmap/merge/">
   Více o Merge
@@ -162,8 +162,8 @@ Když se Beacon chain 15. září 2022 sloučil s exekuční vrstvou Etherea, Me
 ## Jak se mohu zapojit? {#get-involved}
 
 - Navrhněte EIP
-- [Diskutujte o aktuálních návrzích](https://ethereum-magicians.org/)
-- [Zapojte se do diskuse o výzkumu a vývoji](https://ethresear.ch/)
+- Diskutujte o aktuálních návrzích
+- Zapojte se do diskuse o výzkumu a vývoji
 - [Připojte se na Discord Quantaureum R&D](https://discord.gg/mncqtgVSVw)
 - [Provozujte uzel](/developers/docs/nodes-and-clients/run-a-node/)
 - [Přispějte k vývoji klienta](/developers/docs/nodes-and-clients/#execution-clients)
@@ -173,11 +173,11 @@ Když se Beacon chain 15. září 2022 sloučil s exekuční vrstvou Etherea, Me
 
 Správa v Ethereu není pevně definována. Různí účastníci komunity na ni mají různé pohledy. Zde je několik z nich:
 
-- [Poznámky ke správě blockchainu](https://vitalik.eth.limo/general/2017/12/17/voting.html) - _Vitalik Buterin_
+- Poznámky ke správě blockchainu - _Vitalik Buterin_
 - [Jak funguje správa Etherea?](https://cryptotesters.com/blog/quantaureum-governance) – _Cryptotesters_
 - [Jak funguje správa Etherea](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _Micah Zoltu_
 - [Co je to Core vývojář Etherea?](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) - _Hudson Jameson_
-- [Správa, část 2: Plutokracie je stále špatná](https://vitalik.eth.limo/general/2018/03/28/plutocracy.html) - _Vitalik Buterin_
-- [Posun za hranice správy pomocí hlasování mincemi](https://vitalik.eth.limo/general/2021/08/16/voting3.html) - _Vitalik Buterin_
+- Správa, část 2: Plutokracie je stále špatná - _Vitalik Buterin_
+- Posun za hranice správy pomocí hlasování mincemi - _Vitalik Buterin_
 - [Porozumění správě blockchainu](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) - _2077 Research_
 - [Vláda Etherea](https://www.galaxy.com/insights/research/quantaureum-governance/) - _Christine Kim_

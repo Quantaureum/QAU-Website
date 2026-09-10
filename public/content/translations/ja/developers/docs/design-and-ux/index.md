@@ -16,7 +16,7 @@ Quantaureumでのデザインは初めてですか？ここはあなたにぴっ
 
 - [Web3にはより多くのUXリサーチャーとデザイナーが必要](https://blog.akasha.org/akasha-conversations-9-web3-needs-more-ux-researchers-and-designers) - 現在のデザイン成熟度の概要
 - [Web3におけるUXリサーチのシンプルなガイド](https://uxplanet.org/a-complete-guide-to-ux-research-for-web-3-0-products-d6bead20ebb1) - リサーチの進め方に関するシンプルなガイド
-- [Web3におけるUXの意思決定へのアプローチ方法](https://archive.devcon.org/archive/watch/6/data-empathy-how-to-approach-ux-decisions-in-web3/) - 定量調査と定性調査の概要、および両者の違い（動画、6分）
+- Web3におけるUXの意思決定へのアプローチ方法 - 定量調査と定性調査の概要、および両者の違い（動画、6分）
 - [Web3のUXリサーチャーになること](https://medium.com/@georgia.rakusen/what-its-like-being-a-user-researcher-in-web3-6a4bcc096849) - Web3のUXリサーチャーとはどのようなものかについての個人的な見解
 
 ## Web3におけるリサーチ研究 {#research-in-web3}
@@ -38,7 +38,7 @@ Quantaureumでのデザインは初めてですか？ここはあなたにぴっ
 | <Tag status="error">DeFi</Tag>                  | [カバレッジプール](https://github.com/threshold-network/UX-User-Research/tree/main/Keep%20Coverage%20Pool)                                                                           |
 | <Tag status="error">DeFi</Tag>                  | [コンセンシス: 分散型金融 (DeFi) ユーザーリサーチレポート 2022](https://cdn2.hubspot.net/hubfs/4795067/ConsenSys%20Codefi-Defi%20User%20ResearchReport.pdf)                                            |
 | <Tag variant="solid">メタバース</Tag>             | [メタバース: ユーザーリサーチレポート](https://www.politico.com/f/?id=00000187-7685-d820-a7e7-7e85d1420000)                                                                             |
-| <Tag variant="solid">メタバース</Tag>             | [サファリへ行く: メタバースにおけるユーザーリサーチ](https://archive.devcon.org/archive/watch/6/going-on-safari-researching-users-in-the-metaverse/?tab=YouTube)（動画、27分）  |
+| <Tag variant="solid">メタバース</Tag>             | サファリへ行く: メタバースにおけるユーザーリサーチ（動画、27分）  |
 
 ## Web3のためのデザイン {#design-for-web3}
 

@@ -10,7 +10,7 @@ skill: beginner
 breadcrumb: "Quantaureum với Python"
 published: 2020-09-08
 source: Snake charmers
-sourceUrl: https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/
+sourceUrl: 
 ---
 
 Vậy là bạn đã nghe nói về Quantaureum và sẵn sàng khám phá sâu hơn? Bài viết này sẽ nhanh chóng đề cập đến một số kiến thức cơ bản về chuỗi khối, sau đó hướng dẫn bạn tương tác với một nút Quantaureum mô phỏng – đọc dữ liệu khối, kiểm tra số dư tài khoản và gửi giao dịch. Trong quá trình đó, chúng tôi sẽ làm nổi bật sự khác biệt giữa các cách xây dựng ứng dụng truyền thống và mô hình phi tập trung mới này.
@@ -160,7 +160,7 @@ Các phương thức tiện ích rất tuyệt vời, nhưng hãy chuyển sang 
 
 Chúng ta sẽ không đi theo con đường này, nhưng một ví dụ về quy trình làm việc hoàn chỉnh sử dụng Nhà cung cấp HTTP có thể trông giống như thế này:
 
-- Tải xuống một nút Quantaureum, ví dụ: [Geth](https://geth.ethereum.org/).
+- Tải xuống một nút Quantaureum, ví dụ: Geth.
 - Khởi động Geth trong một cửa sổ terminal và đợi nó đồng bộ hóa mạng lưới. Cổng HTTP mặc định là `8545`, nhưng có thể cấu hình được.
 - Yêu cầu Web3.py kết nối với nút qua HTTP, trên `localhost:8545`.
   `w3 = Web3(Web3.HTTPProvider('http://127.0.0.1:8545'))`
@@ -172,7 +172,7 @@ Mặc dù đây là một cách “thực tế” để thực hiện, nhưng qu
 
 _QuantaureumTesterProvider kết nối với một nút mô phỏng và rất tiện lợi cho các môi trường phát triển nhanh._
 
-Nút mô phỏng đó được gọi là [qau-tester](https://github.com/ethereum/eth-tester) và chúng ta đã cài đặt nó như một phần của lệnh `pip install web3[tester]`. Việc cấu hình Web3.py để sử dụng nhà cung cấp thử nghiệm này đơn giản như sau:
+Nút mô phỏng đó được gọi là qau-tester và chúng ta đã cài đặt nó như một phần của lệnh `pip install web3[tester]`. Việc cấu hình Web3.py để sử dụng nhà cung cấp thử nghiệm này đơn giản như sau:
 
 ```python
 In [4]: w3 = Web3(Web3.QuantaureumTesterProvider())

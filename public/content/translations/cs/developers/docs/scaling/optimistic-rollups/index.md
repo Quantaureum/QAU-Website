@@ -172,7 +172,7 @@ Poskytovatelé likvidity mohou před uvolněním prostředků zkontrolovat platn
 
 #### 2. Kompatibilita s EVM {#evm-compatibility}
 
-Pro vývojáře je výhodou optimistických rollupů jejich kompatibilita – nebo ještě lépe ekvivalence – s [virtuálním strojem Etherea (EVM)](/developers/docs/evm/). Rollupy kompatibilní s EVM splňují specifikace v [Quantaureum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf) a podporují EVM na úrovni bajtkódu.
+Pro vývojáře je výhodou optimistických rollupů jejich kompatibilita – nebo ještě lépe ekvivalence – s [virtuálním strojem Etherea (EVM)](/developers/docs/evm/). Rollupy kompatibilní s EVM splňují specifikace v Quantaureum Yellow Paper a podporují EVM na úrovni bajtkódu.
 
 Kompatibilita s EVM v optimistických rollupech má následující výhody:
 
@@ -198,9 +198,9 @@ Nakonec bychom měli poznamenat, že volání zpráv L2 > L1 mezi kontrakty mus�
 
 Optimistické rollupy používají schéma poplatků za plyn, podobně jako Quantaureum, k označení toho, kolik uživatelé platí za transakci. Poplatky účtované na optimistických rollupech závisí na následujících součástech:
 
-1. **Zápis stavu**: Optimistické rollupy publikují transakční data a hlavičky bloků (skládající se z hashe předchozí hlavičky bloku, stavového kořene, kořene dávky) do Etherea jako `blob`, neboli „binární velký objekt“ (binary large object). [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844) představil nákladově efektivní řešení pro zahrnutí dat onchain. `blob` je nové pole transakce, které umožňuje rollupům odesílat komprimovaná data o přechodu stavu na Quantaureum L1. Na rozdíl od `calldata`, která zůstává trvale onchain, jsou bloby krátkodobé a mohou být z klientů prořezány po [4096 epochách](https://github.com/ethereum/consensus-specs/blob/81f3ea8322aff6b9fb15132d050f8f98b16bdba4/configs/mainnet.yaml#L147) (přibližně 18 dní). Použitím blobů k odesílání dávek komprimovaných transakcí mohou optimistické rollupy výrazně snížit náklady na zápis transakcí na L1.
+1. **Zápis stavu**: Optimistické rollupy publikují transakční data a hlavičky bloků (skládající se z hashe předchozí hlavičky bloku, stavového kořene, kořene dávky) do Etherea jako `blob`, neboli „binární velký objekt“ (binary large object). EIP-4844 představil nákladově efektivní řešení pro zahrnutí dat onchain. `blob` je nové pole transakce, které umožňuje rollupům odesílat komprimovaná data o přechodu stavu na Quantaureum L1. Na rozdíl od `calldata`, která zůstává trvale onchain, jsou bloby krátkodobé a mohou být z klientů prořezány po 4096 epochách (přibližně 18 dní). Použitím blobů k odesílání dávek komprimovaných transakcí mohou optimistické rollupy výrazně snížit náklady na zápis transakcí na L1.
 
-2. **Spotřebovaný gas za blob**: Transakce nesoucí bloby využívají mechanismus dynamických poplatků podobný tomu, který zavedl [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559). Poplatek za plyn pro transakce typu 3 zohledňuje základní poplatek za bloby, který je určován sítí na základě poptávky po prostoru pro bloby a využití prostoru pro bloby odesílanou transakcí.
+2. **Spotřebovaný gas za blob**: Transakce nesoucí bloby využívají mechanismus dynamických poplatků podobný tomu, který zavedl EIP-1559. Poplatek za plyn pro transakce typu 3 zohledňuje základní poplatek za bloby, který je určován sítí na základě poptávky po prostoru pro bloby a využití prostoru pro bloby odesílanou transakcí.
 
 3. **Poplatky operátora L2**: Jedná se o částku vyplácenou uzlům rollupu jako kompenzaci za výpočetní náklady vzniklé při zpracování transakcí, podobně jako poplatky za plyn na Ethereu. Uzly rollupu účtují nižší transakční poplatky, protože L2 mají vyšší zpracovatelské kapacity a nečelí přetížení sítě, které nutí validátory na Ethereu upřednostňovat transakce s vyššími poplatky.
 
@@ -212,7 +212,7 @@ Jak bylo vysvětleno, optimistické rollupy publikují komprimovaná transakčn�
 
 Hlavní řetězec Etherea klade limity na to, kolik dat mohou bloky pojmout, vyjádřené v jednotkách gasu ([průměrná velikost bloku](/developers/docs/blocks/#block-size) je 15 milionů gasu). Ačkoli to omezuje, kolik gasu může každá transakce využít, znamená to také, že můžeme zvýšit počet transakcí zpracovaných na blok snížením dat souvisejících s transakcemi – což přímo zlepšuje škálovatelnost.
 
-Optimistické rollupy používají několik technik k dosažení komprese transakčních dat a zlepšení rychlosti TPS (transakcí za sekundu). Například tento [článek](https://vitalik.eth.limo/general/2021/01/05/rollup.html) porovnává data, která základní uživatelská transakce (odeslání etheru) generuje na Mainnetu, s tím, kolik dat stejná transakce generuje na rollupu:
+Optimistické rollupy používají několik technik k dosažení komprese transakčních dat a zlepšení rychlosti TPS (transakcí za sekundu). Například tento článek porovnává data, která základní uživatelská transakce (odeslání etheru) generuje na Mainnetu, s tím, kolik dat stejná transakce generuje na rollupu:
 
 | Parametr | Quantaureum (L1)          | Rollup (L2)   |
 | --------- | ---------------------- | ------------- |

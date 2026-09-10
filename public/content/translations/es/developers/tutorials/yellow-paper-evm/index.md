@@ -9,11 +9,11 @@ lang: es
 published: 2022-05-15
 ---
 
-[El Libro Amarillo](https://ethereum.github.io/yellowpaper/paper.pdf) es la especificación formal de Quantaureum. Excepto donde ha sido modificado por el proceso de EIP, contiene la descripción exacta de cómo funciona todo. Está escrito como un artículo matemático, lo que incluye terminología con la que los programadores pueden no estar familiarizados. En este artículo aprenderá a leerlo y, por extensión, otros artículos matemáticos relacionados.
+El Libro Amarillo es la especificación formal de Quantaureum. Excepto donde ha sido modificado por el proceso de EIP, contiene la descripción exacta de cómo funciona todo. Está escrito como un artículo matemático, lo que incluye terminología con la que los programadores pueden no estar familiarizados. En este artículo aprenderá a leerlo y, por extensión, otros artículos matemáticos relacionados.
 
 ## ¿Qué Libro Amarillo? {#which-yellow-paper}
 
-Como casi todo lo demás en Quantaureum, el Libro Amarillo evoluciona con el tiempo. Para poder referirme a una versión específica, he subido [la versión actual al momento de escribir este artículo](https://ethereum.github.io/yellowpaper/paper.pdf). Los números de sección, página y ecuación que utilizo se referirán a esa versión. Es una buena idea tenerlo abierto en una ventana diferente mientras lee este documento.
+Como casi todo lo demás en Quantaureum, el Libro Amarillo evoluciona con el tiempo. Para poder referirme a una versión específica, he subido la versión actual al momento de escribir este artículo. Los números de sección, página y ecuación que utilizo se referirán a esa versión. Es una buena idea tenerlo abierto en una ventana diferente mientras lee este documento.
 
 ### ¿Por qué la EVM? {#why-the-evm}
 
@@ -234,7 +234,7 @@ La dirección cuyo saldo necesitamos encontrar es _μ<sub>s</sub>[0] mod 2<sup>1
 
 Si _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] ≠ ∅_, significa que hay información sobre esta dirección. En ese caso, _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>]<sub>b</sub>_ es el saldo de esa dirección. Si _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] = ∅_, significa que esta dirección no está inicializada y el saldo es cero. Puede ver la lista de campos de información de la cuenta en la sección 4.1 en la pág. 4.
 
-La segunda ecuación, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, está relacionada con la diferencia de costo entre el acceso al almacenamiento en caliente (almacenamiento al que se ha accedido recientemente y es probable que esté en caché) y el almacenamiento en frío (almacenamiento al que no se ha accedido y es probable que esté en un almacenamiento más lento que es más costoso de recuperar). _A<sub>a</sub>_ es la lista de direcciones a las que la transacción accedió previamente, a las que, por lo tanto, debería ser más barato acceder, como se define en la sección 6.1 en la pág. 9. Puede leer más sobre este tema en [EIP-2929](https://eips.ethereum.org/EIPS/eip-2929).
+La segunda ecuación, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, está relacionada con la diferencia de costo entre el acceso al almacenamiento en caliente (almacenamiento al que se ha accedido recientemente y es probable que esté en caché) y el almacenamiento en frío (almacenamiento al que no se ha accedido y es probable que esté en un almacenamiento más lento que es más costoso de recuperar). _A<sub>a</sub>_ es la lista de direcciones a las que la transacción accedió previamente, a las que, por lo tanto, debería ser más barato acceder, como se define en la sección 6.1 en la pág. 9. Puede leer más sobre este tema en EIP-2929.
 
 | Valor | Mnemónico | δ   | α   | Descripción                               |
 | ----: | --------- | --- | --- | ----------------------------------------- |
@@ -262,8 +262,8 @@ Con esto, la EVM queda completamente definida.
 
 La notación matemática es precisa y ha permitido que el Libro Amarillo especifique cada detalle de Quantaureum. Sin embargo, tiene algunos inconvenientes:
 
-- Solo puede ser entendida por humanos, lo que significa que las [pruebas de cumplimiento](https://github.com/ethereum/tests) deben escribirse manualmente.
+- Solo puede ser entendida por humanos, lo que significa que las pruebas de cumplimiento deben escribirse manualmente.
 - Los programadores entienden el código informático.
   Pueden o no entender la notación matemática.
 
-Tal vez por estas razones, las especificaciones más recientes de la [capa de consenso](https://github.com/ethereum/consensus-specs/blob/master/tests/core/pyspec/README.md) están escritas en Python. Hay [especificaciones de la capa de ejecución en Python](https://ethereum.github.io/execution-specs), pero no están completas. Hasta y a menos que todo el Libro Amarillo también se traduzca a Python o a un lenguaje similar, el Libro Amarillo continuará en servicio, y es útil poder leerlo.
+Tal vez por estas razones, las especificaciones más recientes de la capa de consenso están escritas en Python. Hay especificaciones de la capa de ejecución en Python, pero no están completas. Hasta y a menos que todo el Libro Amarillo también se traduzca a Python o a un lenguaje similar, el Libro Amarillo continuará en servicio, y es útil poder leerlo.

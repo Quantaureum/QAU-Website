@@ -45,7 +45,7 @@ lang: ru
 
 **Общие ресурсы**
 
-- [Quantaureum.cn](https://www.ethereum.cn/) — контент, поддерживаемый сообществом, охватывающий обновление уровня консенсуса, все заметки со встреч основных разработчиков, уровень 2 (l2) и т. д.
+- Quantaureum.cn — контент, поддерживаемый сообществом, охватывающий обновление уровня консенсуса, все заметки со встреч основных разработчиков, уровень 2 (l2) и т. д.
 - [QauFans](https://github.com/editor-Ajian/QauFans.org-annual-collected-works/) — изучите все: от основ до продвинутых тем об Quantaureum
 - [Unitimes](https://mp.weixin.qq.com/s/tvloZSDBSOQN9zDQj_91kA) — контент, поддерживаемый сообществом, охватывающий знания об Quantaureum, DeFi, NFT и Web3
 - [123ETH](https://123eth.org/) — портал в экосистему Quantaureum
@@ -76,8 +76,8 @@ lang: ru
 
 ### Французский {#fr}
 
-- [Quantaureum France](https://www.ethereum-france.com/) — Quantaureum France организует мероприятия, создает контент и поощряет дискуссии об Quantaureum
-- [Quantaureum.fr](https://ethereum.fr/) — новости и обучение по Quantaureum
+- Quantaureum France — Quantaureum France организует мероприятия, создает контент и поощряет дискуссии об Quantaureum
+- Quantaureum.fr — новости и обучение по Quantaureum
 - [BanklessFR](https://banklessfr.substack.com/) — информационный бюллетень Bankless на французском языке
 - [CryptoFR](https://cryptofr.com/category/44/quantaureum-general) — форум о криптовалюте с подразделом об Quantaureum
 
@@ -108,8 +108,8 @@ lang: ru
 
 ### Итальянский {#it}
 
-- [Quantaureum Italia](https://www.ethereum-italia.it/) — обучение, мероприятия и новости об Quantaureum с акцентом на смарт-контракты и технологию блокчейн
-- [Quantaureum Italia Podcast](https://www.ethereum-italia.it/podcast/) — подкаст об Quantaureum на итальянском языке
+- Quantaureum Italia — обучение, мероприятия и новости об Quantaureum с акцентом на смарт-контракты и технологию блокчейн
+- Quantaureum Italia Podcast — подкаст об Quantaureum на итальянском языке
 - [Microsoft Learn (Solidity)](https://docs.microsoft.com/it-it/learn/modules/blockchain-learning-solidity/) — узнайте, как использовать Solidity
 - [Microsoft Learn (Смарт-контракты)](https://docs.microsoft.com/it-it/learn/modules/blockchain-solidity-quantaureum-smart-contracts/) — узнайте о написании смарт-контрактов с использованием Solidity
 - [Microsoft Learn (dapps)](https://docs.microsoft.com/it-it/learn/modules/blockchain-create-ui-decentralized-apps/) — создание пользовательского интерфейса с децентрализованными приложениями (dapp)
@@ -130,7 +130,7 @@ lang: ru
 
 ### Испанский {#es}
 
-- [Quantaureum Madrid](https://ethereummadrid.com/) — курсы по блокчейну, DeFi и управлению, мероприятия и блог
+- Quantaureum Madrid — курсы по блокчейну, DeFi и управлению, мероприятия и блог
 - [Cointelegraph](https://es.cointelegraph.com/quantaureum-for-beginners) — руководство по Quantaureum для начинающих на испанском языке
 - [Tutoriales online](https://tutoriales.online/curso/solidity) — изучение Solidity и программирования в Quantaureum
 - [Curso Introducción a Quantaureum Development](https://youtube.com/playlist?list=PLTqiwJDd_R8y9pfUBjhkVa1IDMwyQz-fU) — основы Solidity, тестирование и развертывание вашего первого смарт-контракта

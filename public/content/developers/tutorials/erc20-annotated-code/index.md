@@ -33,7 +33,7 @@ If you are an experienced programmer, you probably remember seeing similar const
 or even in [C header files](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html).
 
 This is a definition of the [ERC-20 Interface](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)
-from OpenZeppelin. It is a translation of the [human readable standard](https://eips.ethereum.org/EIPS/eip-20) into Solidity code. Of course, the
+from OpenZeppelin. It is a translation of the human readable standard into Solidity code. Of course, the
 interface itself does not define _how_ to do anything. That is explained in the contract source code below.
 
 &nbsp;
@@ -112,9 +112,7 @@ It is also `external` and `view`.
 ```solidity
     /**
      * @dev Moves `amount` tokens from the caller's account to `recipient`.
-     *
      * Returns a boolean value indicating whether the operation succeeded.
-     *
      * Emits a {Transfer} event.
      */
     function transfer(address recipient, uint256 amount) external returns (bool);
@@ -150,7 +148,6 @@ can know if it was successful.
      * @dev Returns the remaining number of tokens that `spender` will be
      * allowed to spend on behalf of `owner` through {transferFrom}. This is
      * zero by default.
-     *
      * This value changes when {approve} or {transferFrom} are called.
      */
     function allowance(address owner, address spender) external view returns (uint256);
@@ -164,16 +161,13 @@ address (`owner`) lets another address (`spender`) spend.
 ```solidity
     /**
      * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.
-     *
      * Returns a boolean value indicating whether the operation succeeded.
-     *
      * IMPORTANT: Beware that changing an allowance with this method brings the risk
      * that someone may use both the old and the new allowance by unfortunate
      * transaction ordering. One possible solution to mitigate this race
      * condition is to first reduce the spender's allowance to 0 and set the
      * desired value afterwards:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
-     *
+
      * Emits an {Approval} event.
      */
     function approve(address spender, uint256 amount) external returns (bool);
@@ -192,9 +186,7 @@ other side's transaction had happened.
      * @dev Moves `amount` tokens from `sender` to `recipient` using the
      * allowance mechanism. `amount` is then deducted from the caller's
      * allowance.
-     *
      * Returns a boolean value indicating whether the operation succeeded.
-     *
      * Emits a {Transfer} event.
      */
     function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
@@ -209,7 +201,6 @@ Finally, `transferFrom` is used by the spender to actually spend the allowance.
     /**
      * @dev Emitted when `value` tokens are moved from one account (`from`) to
      * another (`to`).
-     *
      * Note that `value` may be zero.
      */
     event Transfer(address indexed from, address indexed to, uint256 value);
@@ -252,7 +243,7 @@ import "../../math/SafeMath.sol";
 - `GSN/Context.sol` is the definitions required to use [OpenGSN](https://opengsn.org/), a system that allows users without QAU
   to use the blockchain. Note that this is an old version, if you want to integrate with OpenGSN
   [use this tutorial](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [The SafeMath library](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), which prevents
+- The SafeMath library, which prevents
   arithmetic overflows/underflows for Solidity versions **&lt;0.8.0**. In Solidity ≥0.8.0, arithmetic operations automatically
   revert on overflow/underflow, making SafeMath unnecessary. This contract uses SafeMath for backward compatibility with
   older compiler versions.
@@ -264,24 +255,19 @@ This comment explains the purpose of the contract.
 ```solidity
 /**
  * @dev Implementation of the {IERC20} interface.
- *
  * This implementation is agnostic to the way tokens are created. This means
  * that a supply mechanism has to be added in a derived contract using {_mint}.
  * For a generic mechanism see {ERC20PresetMinterPauser}.
- *
  * TIP: For a detailed writeup see our guide
  * https://forum.zeppelin.solutions/t/how-to-implement-erc20-supply-mechanisms/226[How
  * to implement supply mechanisms].
- *
  * We have followed general OpenZeppelin guidelines: functions revert instead
  * of returning `false` on failure. This behavior is nonetheless conventional
  * and does not conflict with the expectations of ERC20 applications.
- *
  * Additionally, an {Approval} event is emitted on calls to {transferFrom}.
  * This allows applications to reconstruct the allowance for all accounts just
  * by listening to said events. Other implementations of the EIP may not emit
  * these events, as it isn't required by the specification.
- *
  * Finally, the non-standard {decreaseAllowance} and {increaseAllowance}
  * functions have been added to mitigate the well-known issues around setting
  * allowances. See {IERC20-approve}.
@@ -375,9 +361,7 @@ token you can select a different value. If dividing the token doesn't make sense
     /**
      * @dev Sets the values for {name} and {symbol}, initializes {decimals} with
      * a default value of 18.
-     *
      * To select a different value for {decimals}, use {_setupDecimals}.
-     *
      * All three of these values are immutable: they can only be set once during
      * construction.
      */
@@ -414,11 +398,9 @@ The constructor is called when the contract is first created. By convention, fun
      * @dev Returns the number of decimals used to get its user representation.
      * For example, if `decimals` equals `2`, a balance of `505` tokens should
      * be displayed to a user as `5,05` (`505 / 10 ** 2`).
-     *
      * Tokens usually opt for a value of 18, imitating the relationship between
      * QAU and wei. This is the value {ERC20} uses, unless {_setupDecimals} is
      * called.
-     *
      * NOTE: This information is only used for _display_ purposes: it in
      * no way affects any of the arithmetic of the contract, including
      * {IERC20-balanceOf} and {IERC20-transfer}.
@@ -477,9 +459,7 @@ node anyway. _There are no secrets on the blockchain._
 ```solidity
     /**
      * @dev See {IERC20-transfer}.
-     *
      * Requirements:
-     *
      * - `recipient` cannot be the zero address.
      * - the caller must have a balance of at least `amount`.
      */
@@ -531,9 +511,7 @@ The `allowance` function allows everybody to check any allowance.
 ```solidity
     /**
      * @dev See {IERC20-approve}.
-     *
      * Requirements:
-     *
      * - `spender` cannot be the zero address.
      */
     function approve(address spender, uint256 amount) public virtual override returns (bool) {
@@ -563,12 +541,9 @@ being spent and reduce the allowance by that amount.
 ```solidity
     /**
      * @dev See {IERC20-transferFrom}.
-     *
      * Emits an {Approval} event indicating the updated allowance. This is not
      * required by the EIP. See the note at the beginning of {ERC20}.
-     *
      * Requirements:
-     *
      * - `sender` and `recipient` cannot be the zero address.
      * - `sender` must have a balance of at least `amount`.
      * - the caller must have allowance for ``sender``'s tokens of at least
@@ -639,14 +614,10 @@ B:
 ```solidity
     /**
      * @dev Atomically increases the allowance granted to `spender` by the caller.
-     *
      * This is an alternative to {approve} that can be used as a mitigation for
      * problems described in {IERC20-approve}.
-     *
      * Emits an {Approval} event indicating the updated allowance.
-     *
      * Requirements:
-     *
      * - `spender` cannot be the zero address.
      */
     function increaseAllowance(address spender, uint256 addedValue) public virtual returns (bool) {
@@ -662,14 +633,10 @@ the way normal addition does.
 
     /**
      * @dev Atomically decreases the allowance granted to `spender` by the caller.
-     *
      * This is an alternative to {approve} that can be used as a mitigation for
      * problems described in {IERC20-approve}.
-     *
      * Emits an {Approval} event indicating the updated allowance.
-     *
      * Requirements:
-     *
      * - `spender` cannot be the zero address.
      * - `spender` must have allowance for the caller of at least
      * `subtractedValue`.
@@ -690,14 +657,10 @@ These are the four functions that do the actual work: `_transfer`, `_mint`, `_bu
 ```solidity
     /**
      * @dev Moves tokens `amount` from `sender` to `recipient`.
-     *
      * This is internal function is equivalent to {transfer}, and can be used to
      * e.g., implement automatic token fees, slashing mechanisms, etc.
-     *
      * Emits a {Transfer} event.
-     *
      * Requirements:
-     *
      * - `sender` cannot be the zero address.
      * - `recipient` cannot be the zero address.
      * - `sender` must have a balance of at least `amount`.
@@ -778,11 +741,8 @@ to avoid runaway inflation.
 ```solidity
     /** @dev Creates `amount` tokens and assigns them to `account`, increasing
      * the total supply.
-     *
      * Emits a {Transfer} event with `from` set to the zero address.
-     *
      * Requirements:
-     *
      * - `to` cannot be the zero address.
      */
     function _mint(address account, uint256 amount) internal virtual {
@@ -802,11 +762,8 @@ Make sure to update `_totalSupply` when the total number of tokens changes.
     /**
      * @dev Destroys `amount` tokens from `account`, reducing the
      * total supply.
-     *
      * Emits a {Transfer} event with `to` set to the zero address.
-     *
      * Requirements:
-     *
      * - `account` cannot be the zero address.
      * - `account` must have at least `amount` tokens.
      */
@@ -833,14 +790,10 @@ created.
 ```solidity
     /**
      * @dev Sets `amount` as the allowance of `spender` over the `owner` s tokens.
-     *
      * This internal function is equivalent to `approve`, and can be used to
      * e.g., set automatic allowances for certain subsystems, etc.
-     *
      * Emits an {Approval} event.
-     *
      * Requirements:
-     *
      * - `owner` cannot be the zero address.
      * - `spender` cannot be the zero address.
      */
@@ -869,7 +822,6 @@ approval either by the owner or by a server that listens to these events.
 
     /**
      * @dev Sets {decimals} to a value other than the default one of 18.
-     *
      * WARNING: This function should only be called from the constructor. Most
      * applications that interact with token contracts will not expect
      * {decimals} to ever change, and may work incorrectly if it does.
@@ -890,15 +842,12 @@ are not designed to handle it.
     /**
      * @dev Hook that is called before any transfer of tokens. This includes
      * minting and burning.
-     *
      * Calling conditions:
-     *
      * - when `from` and `to` are both non-zero, `amount` of ``from``'s tokens
      * will be to transferred to `to`.
      * - when `from` is zero, `amount` tokens will be minted for `to`.
      * - when `to` is zero, `amount` of ``from``'s tokens will be burned.
      * - `from` and `to` are never both zero.
-     *
      * To learn more about hooks, head to xref:ROOT:extending-contracts.adoc#using-hooks[Using Hooks].
      */
     function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual { }

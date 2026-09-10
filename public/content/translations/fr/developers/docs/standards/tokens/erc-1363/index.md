@@ -54,7 +54,7 @@ L'ERC-1363 est également utile pour éviter la perte ou le verrouillage de jeto
 
 Contrairement à d'autres propositions d'extension ERC-20, l'ERC-1363 ne remplace pas les méthodes `transfer` et `transferFrom` de l'ERC-20 et définit les identifiants d'interfaces à implémenter tout en maintenant la rétrocompatibilité avec l'ERC-20.
 
-D'après l'[EIP-1363](https://eips.ethereum.org/EIPS/eip-1363) :
+D'après l'EIP-1363 :
 
 ### Méthodes {#methods}
 
@@ -167,11 +167,9 @@ interface ERC1363Receiver {
   /**
    * @dev Chaque fois que des jetons ERC-1363 sont transférés vers ce contrat via `ERC1363::transferAndCall` ou `ERC1363::transferFromAndCall`
    * par `operator` depuis `from`, cette fonction est appelée.
-   *
    * NOTE : Pour accepter le transfert, cela doit retourner
    * `bytes4(keccak256("onTransferReceived(address,address,uint256,bytes)"))`
    * (c'est-à-dire 0x88a7ca5c, ou son propre sélecteur de fonction).
-   *
    * @param operator L'adresse qui a appelé la fonction `transferAndCall` ou `transferFromAndCall`.
    * @param from L'adresse à partir de laquelle les jetons sont transférés.
    * @param value La quantité de jetons transférés.
@@ -193,11 +191,9 @@ interface ERC1363Spender {
   /**
    * @dev Chaque fois qu'un `owner` de jetons ERC-1363 approuve ce contrat via `ERC1363::approveAndCall`
    * pour dépenser ses jetons, cette fonction est appelée.
-   *
    * NOTE : Pour accepter l'approbation, cela doit retourner
    * `bytes4(keccak256("onApprovalReceived(address,uint256,bytes)"))`
    * (c'est-à-dire 0x7b04a2d0, ou son propre sélecteur de fonction).
-   *
    * @param owner L'adresse qui a appelé la fonction `approveAndCall` et qui possédait précédemment les jetons.
    * @param value La quantité de jetons à dépenser.
    * @param data Données supplémentaires sans format spécifié.
@@ -209,5 +205,5 @@ interface ERC1363Spender {
 
 ## Complément d'information {#further-reading}
 
-- [ERC-1363 : Norme de jeton payable](https://eips.ethereum.org/EIPS/eip-1363)
+- ERC-1363 : Norme de jeton payable
 - [ERC-1363 : Dépôt GitHub](https://github.com/vittominacori/erc1363-payable-token)

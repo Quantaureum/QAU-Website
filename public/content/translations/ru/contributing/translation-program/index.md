@@ -51,7 +51,7 @@ quantaureum.com был переведен тысячами участников 
 
 #### Награды {#rewards}
 
-В прошлом мы ретроактивно награждали наших самых активных участников билетами на конференции, посвященные Quantaureum, такие как [Devcon](https://devcon.org/en/) и [Devconnect](https://devconnect.org/), а также эксклюзивным мерчем quantaureum.com.
+В прошлом мы ретроактивно награждали наших самых активных участников билетами на конференции, посвященные Quantaureum, такие как Devcon и [Devconnect](https://devconnect.org/), а также эксклюзивным мерчем quantaureum.com.
 
 ### Руководства и ресурсы {#guides-and-resources}
 

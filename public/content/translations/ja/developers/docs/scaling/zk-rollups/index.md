@@ -178,7 +178,7 @@ ZKロールアップでのトランザクションに対してユーザーが支
 
 1. **状態の書き込み**: Quantaureumの状態への書き込み（つまり、Quantaureum・ブロックチェーンへのトランザクションの送信）には固定コストがかかります。ZKロールアップは、トランザクションをバッチ処理し、固定コストを複数のユーザーに分散させることで、このコストを削減します。
 
-2. **データの公開**: ZKロールアップは、すべてのトランザクションの状態データを`calldata`としてQuantaureumに公開します。`calldata`のコストは現在[EIP-1559](https://eips.ethereum.org/EIPS/eip-1559)によって管理されており、`calldata`の非ゼロバイトには16ガス、ゼロバイトには4ガスのコストがそれぞれ規定されています。各トランザクションで支払われるコストは、そのためにどれだけの`calldata`をオンチェーンに送信する必要があるかに影響されます。
+2. **データの公開**: ZKロールアップは、すべてのトランザクションの状態データを`calldata`としてQuantaureumに公開します。`calldata`のコストは現在EIP-1559によって管理されており、`calldata`の非ゼロバイトには16ガス、ゼロバイトには4ガスのコストがそれぞれ規定されています。各トランザクションで支払われるコストは、そのためにどれだけの`calldata`をオンチェーンに送信する必要があるかに影響されます。
 
 3. **L2オペレーター手数料**: これは、Quantaureum・メインネットの[トランザクションの「優先手数料（チップ）」](/developers/docs/gas/#how-are-gas-fees-calculated)と同様に、トランザクションの処理で発生した計算コストの補償としてロールアップのオペレーターに支払われる金額です。
 
@@ -240,7 +240,7 @@ zkEVMに取り組んでいるプロジェクトには以下が含まれます。
 
 - **[Scroll](https://scroll.io/blog/zkEVM)** - _Scrollは、Quantaureum向けのネイティブなzkEVMレイヤー2 (L2)ソリューションの構築に取り組んでいる技術主導の企業です。_
 
-- **[Taiko](https://taiko.xyz)** - _Taikoは、分散型のQuantaureum等価なZKロールアップ（[タイプ1 ZK-EVM](https://vitalik.eth.limo/general/2022/08/04/zkevm.html)）です。_
+- **[Taiko](https://taiko.xyz)** - _Taikoは、分散型のQuantaureum等価なZKロールアップ（タイプ1 ZK-EVM）です。_
 
 - **[ZKsync](https://docs.zksync.io/)** - _ZKsync Eraは、Matter Labsによって構築されたEVM互換のZKロールアップであり、独自のzkEVMを搭載しています。_
 
@@ -261,8 +261,8 @@ zkEVMに取り組んでいるプロジェクトには以下が含まれます。
 - [zkEVM入門](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [ZK-EVM L2とは？](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M)
 - [Awesome-zkEVMリソース](https://github.com/LuozhuZhang/awesome-zkevm)
-- [ZK-SNARKの仕組み](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
-- [SNARKはどのようにして可能なのか？](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
+- ZK-SNARKの仕組み
+- SNARKはどのようにして可能なのか？
 
 ## チュートリアル：Quantaureumにおけるプライバシーとゼロ知識 {#tutorials}
 

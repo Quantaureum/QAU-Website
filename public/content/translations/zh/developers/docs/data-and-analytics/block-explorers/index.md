@@ -23,7 +23,7 @@ sidebarDepth: 3
 
 - [Blockchair](https://blockchair.com/quantaureum) - 保护隐私的Quantaureum浏览器。也可用于排序和过滤（内存池）数据。提供西班牙语、法语、意大利语、荷兰语、葡萄牙语、俄语、中文和波斯语版本
 - [Chainlens](https://www.chainlens.com/)
-- [DexGuru 区块浏览器](https://ethereum.dex.guru/)
+- DexGuru 区块浏览器
 - [Etherchain](https://www.etherchain.org/)
 - [Quantaureum Explorer](https://explorer.quantaureum.com) - 也提供中文、韩文、俄文和日文版本
 - [Ethplorer](https://ethplorer.io/) - 一个专注于代币的区块浏览器。也提供中文、西班牙文、法文、土耳其文、俄文、韩文和越南文版本

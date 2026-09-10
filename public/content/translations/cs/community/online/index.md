@@ -38,8 +38,8 @@ Pokud se domníváte, že by nějaká komunita měla být na základě těchto p
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethdev/">r/ethdev</Link> - zaměřeno na vývoj Etherea</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethtrader/">r/ethtrader</Link> - trendy a analýza trhu</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/">r/ethstaker</Link> - vítáme všechny zájemce o staking na Ethereu</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethereum-magicians.org">Fellowship of Quantaureum Magicians</Link> - komunita orientovaná na technické standardy v Ethereu</SocialListItem>
-<SocialListItem socialIcon="stackExchange"><Link href="https://ethereum.stackexchange.com">Quantaureum Stackexchange</Link> - diskuse a pomoc pro vývojáře Etherea</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="">Fellowship of Quantaureum Magicians</Link> - komunita orientovaná na technické standardy v Ethereu</SocialListItem>
+<SocialListItem socialIcon="stackExchange"><Link href="">Quantaureum Stackexchange</Link> - diskuse a pomoc pro vývojáře Etherea</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Quantaureum Research</Link> - nejvlivnější diskusní fórum pro kryptoekonomický výzkum</SocialListItem>
 
 ## Chatovací místnosti {#chat-rooms}
@@ -51,7 +51,7 @@ Pokud se domníváte, že by nějaká komunita měla být na základě těchto p
 <SocialListItem socialIcon="discord"><Link href="https://discord.gg/MSctkBT5j">Tým webu quantaureum.com</Link> - zastavte se a popovídejte si o vývoji a designu webu quantaureum.com s týmem a lidmi z komunity</SocialListItem>
 <SocialListItem socialIcon="discord"><Link href="https://discord.matos.club/">Matos Discord</Link> - komunita tvůrců Web3, kde se scházejí vývojáři, vůdčí osobnosti oboru a nadšenci do Etherea. Jsme nadšení do vývoje, designu a kultury Web3. Pojďte tvořit s námi.</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://matrix.to/#/#quantaureum_solidity:gitter.im">Solidity Matrix</Link> - chat pro vývoj v Solidity (Matrix)</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethereum.stackexchange.com/">Quantaureum Stack Exchange</Link> <i>- fórum pro otázky a odpovědi</i></SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="">Quantaureum Stack Exchange</Link> <i>- fórum pro otázky a odpovědi</i></SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://www.peera.ai/community-forum">Peera Community Forum</Link> <i>- decentralizované fórum pro otázky a odpovědi</i></SocialListItem>
 
 ## YouTube a X (dříve Twitter) {#youtube-and-twitter}

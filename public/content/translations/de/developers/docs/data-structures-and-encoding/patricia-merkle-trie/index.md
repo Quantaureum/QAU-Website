@@ -251,13 +251,13 @@ else:
   value = TxType | encode(tx)
 ```
 
-Weitere Informationen hierzu finden Sie in der Dokumentation zu [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718).
+Weitere Informationen hierzu finden Sie in der Dokumentation zu EIP-2718.
 
 ### Transaktionsbeleg-Trie {#receipts-trie}
 
 Jeder Block hat seinen eigenen Transaktionsbeleg-Trie. Ein `path` hier ist: `rlp(transactionIndex)`. `transactionIndex` ist sein Index innerhalb des Blocks, in den er aufgenommen wurde. Der Transaktionsbeleg-Trie wird niemals aktualisiert. Ähnlich wie beim Transaktions-Trie gibt es aktuelle und Legacy-Transaktionsbelege. Um einen bestimmten Transaktionsbeleg im Transaktionsbeleg-Trie abzufragen, werden der Index der Transaktion in ihrem Block, die Nutzdaten (Payload) des Transaktionsbelegs und der Transaktionstyp benötigt. Der zurückgegebene Transaktionsbeleg kann vom Typ `Receipt` sein, der als Verkettung von `TransactionType` und `ReceiptPayload` definiert ist, oder er kann vom Typ `LegacyReceipt` sein, der als `rlp([status, cumulativeGasUsed, logsBloom, logs])` definiert ist.
 
-Weitere Informationen hierzu finden Sie in der Dokumentation zu [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718).
+Weitere Informationen hierzu finden Sie in der Dokumentation zu EIP-2718.
 
 ## Weiterführende Literatur {#further-reading}
 

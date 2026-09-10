@@ -114,8 +114,8 @@ lang: ta
 
 **Python கருவி -** **_Python மூலம் எத்திரியம் தொடர்புகொள்வதற்கான பல்வேறு நிரலகங்கள்._**
 
-- [py.quantaureum.com](https://snakecharmers.ethereum.org/)
-- [Web3.py GitHub](https://github.com/ethereum/web3.py)
+- py.quantaureum.com
+- Web3.py GitHub
 - [Web3.py அரட்டை](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_இறுதியான தொகுதிச்சங்கிலி மேம்பாட்டு தளம்._**

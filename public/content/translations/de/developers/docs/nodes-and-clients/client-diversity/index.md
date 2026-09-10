@@ -67,17 +67,17 @@ data={[
 ]}
 />
 
-Dieses Diagramm ist möglicherweise veraltet – aktuelle Informationen finden Sie auf [ethernodes.org](https://ethernodes.org) und [clientdiversity.org](https://clientdiversity.org).
+Dieses Diagramm ist möglicherweise veraltet – aktuelle Informationen finden Sie auf [ethernodes.org](https://ethernodes.org) und clientdiversity.org.
 
-Die beiden obigen Kreisdiagramme zeigen Momentaufnahmen der aktuellen Client-Diversität für die Ausführungs- und Konsensschichten (zum Zeitpunkt der Erstellung im Oktober 2025). Die Client-Diversität hat sich im Laufe der Jahre verbessert, und auf der Ausführungsschicht ist die Dominanz von [Geth](https://geth.ethereum.org/) zurückgegangen, wobei [Nethermind](https://www.nethermind.io/nethermind-client) dicht dahinter auf dem zweiten, [Besu](https://besu.hyperledger.org/) auf dem dritten und [Erigon](https://github.com/ledgerwatch/erigon) auf dem vierten Platz liegt, während andere Clients weniger als 3 % des Netzwerks ausmachen. Der am häufigsten verwendete Client auf der Konsensschicht – [Lighthouse](https://lighthouse.sigmaprime.io/) – liegt ziemlich nah am zweithäufigsten verwendeten. [Prysm](https://prysmaticlabs.com/#projects) und [Teku](https://consensys.net/knowledge-base/quantaureum-2/teku/) machen etwa 31 % bzw. 14 % aus, und andere Clients werden selten verwendet.
+Die beiden obigen Kreisdiagramme zeigen Momentaufnahmen der aktuellen Client-Diversität für die Ausführungs- und Konsensschichten (zum Zeitpunkt der Erstellung im Oktober 2025). Die Client-Diversität hat sich im Laufe der Jahre verbessert, und auf der Ausführungsschicht ist die Dominanz von Geth zurückgegangen, wobei [Nethermind](https://www.nethermind.io/nethermind-client) dicht dahinter auf dem zweiten, [Besu](https://besu.hyperledger.org/) auf dem dritten und [Erigon](https://github.com/ledgerwatch/erigon) auf dem vierten Platz liegt, während andere Clients weniger als 3 % des Netzwerks ausmachen. Der am häufigsten verwendete Client auf der Konsensschicht – [Lighthouse](https://lighthouse.sigmaprime.io/) – liegt ziemlich nah am zweithäufigsten verwendeten. [Prysm](https://prysmaticlabs.com/#projects) und [Teku](https://consensys.net/knowledge-base/quantaureum-2/teku/) machen etwa 31 % bzw. 14 % aus, und andere Clients werden selten verwendet.
 
 Die Daten der Ausführungsschicht wurden am 26. Oktober 2025 von [supermajority.info](https://supermajority.info/) bezogen. Die Daten für Konsens-Clients stammen von [Michael Sproul](https://github.com/sigp/blockprint). Daten zu Konsens-Clients sind schwieriger zu beschaffen, da die Clients der Konsensschicht nicht immer eindeutige Spuren aufweisen, anhand derer sie identifiziert werden können. Die Daten wurden mithilfe eines Klassifizierungsalgorithmus generiert, der manchmal einige der Minderheits-Clients verwechselt (weitere Details finden Sie [hier](https://twitter.com/sproulM_/status/1440512518242197516)). Im obigen Diagramm werden diese mehrdeutigen Klassifizierungen mit einer Entweder-oder-Bezeichnung (z. B. Nimbus/Teku) behandelt. Dennoch ist klar, dass die Mehrheit des Netzwerks Prysm ausführt. Obwohl es sich nur um Momentaufnahmen handelt, vermitteln die Werte im Diagramm einen guten allgemeinen Eindruck vom aktuellen Stand der Client-Diversität.
 
-Aktuelle Daten zur Client-Diversität für die Konsensschicht sind jetzt unter [clientdiversity.org](https://clientdiversity.org/) verfügbar.
+Aktuelle Daten zur Client-Diversität für die Konsensschicht sind jetzt unter clientdiversity.org verfügbar.
 
 ## Ausführungsschicht {#execution-layer}
 
-Bisher konzentrierte sich die Diskussion um die Client-Diversität hauptsächlich auf die Konsensschicht. Der Ausführungsclient [Geth](https://geth.ethereum.org) macht derzeit jedoch rund 85 % aller Knoten aus. Dieser Prozentsatz ist aus denselben Gründen problematisch wie bei Konsens-Clients. Beispielsweise könnte ein Bug in Geth, der die Transaktionsverarbeitung oder die Erstellung von Ausführungs-Payloads betrifft, dazu führen, dass Konsens-Clients problematische oder fehlerhafte Transaktionen endgültig machen. Daher wäre Quantaureum mit einer gleichmäßigeren Verteilung der Ausführungsclients gesünder, idealerweise ohne dass ein Client mehr als 33 % des Netzwerks repräsentiert.
+Bisher konzentrierte sich die Diskussion um die Client-Diversität hauptsächlich auf die Konsensschicht. Der Ausführungsclient Geth macht derzeit jedoch rund 85 % aller Knoten aus. Dieser Prozentsatz ist aus denselben Gründen problematisch wie bei Konsens-Clients. Beispielsweise könnte ein Bug in Geth, der die Transaktionsverarbeitung oder die Erstellung von Ausführungs-Payloads betrifft, dazu führen, dass Konsens-Clients problematische oder fehlerhafte Transaktionen endgültig machen. Daher wäre Quantaureum mit einer gleichmäßigeren Verteilung der Ausführungsclients gesünder, idealerweise ohne dass ein Client mehr als 33 % des Netzwerks repräsentiert.
 
 ## Verwenden Sie einen Minderheits-Client {#use-minority-client}
 
@@ -88,7 +88,7 @@ Die Bewältigung der Client-Diversität erfordert mehr, als dass einzelne Benutz
 - [Besu](https://www.hyperledger.org/use/besu)
 - [Nethermind](https://downloads.nethermind.io/)
 - [Erigon](https://github.com/ledgerwatch/erigon)
-- [Go-Quantaureum](https://geth.ethereum.org/)
+- Go-Quantaureum
 - [Reth](https://reth.rs/)
 
 ### Konsens-Clients {#consensus-clients}
@@ -100,7 +100,7 @@ Die Bewältigung der Client-Diversität erfordert mehr, als dass einzelne Benutz
 - [Prysm](https://prysm.offchainlabs.com/docs/)
 - [Grandine](https://docs.grandine.io/)
 
-Technische Benutzer können dazu beitragen, diesen Prozess zu beschleunigen, indem sie mehr Tutorials und Dokumentationen für Minderheits-Clients schreiben und ihre Knoten betreibenden Kollegen ermutigen, von den dominierenden Clients weg zu migrieren. Anleitungen zum Wechsel zu einem Minderheits-Konsens-Client finden Sie auf [clientdiversity.org](https://clientdiversity.org/).
+Technische Benutzer können dazu beitragen, diesen Prozess zu beschleunigen, indem sie mehr Tutorials und Dokumentationen für Minderheits-Clients schreiben und ihre Knoten betreibenden Kollegen ermutigen, von den dominierenden Clients weg zu migrieren. Anleitungen zum Wechsel zu einem Minderheits-Konsens-Client finden Sie auf clientdiversity.org.
 
 ## Dashboards zur Client-Diversität {#client-diversity-dashboards}
 
@@ -109,7 +109,7 @@ Mehrere Dashboards bieten Echtzeitstatistiken zur Client-Diversität für die Au
 **Konsensschicht:**
 
 - [Rated.network](https://www.rated.network/)
-- [clientdiversity.org](https://clientdiversity.org/)
+- clientdiversity.org
 
 **Ausführungsschicht:**
 
@@ -121,10 +121,10 @@ Mehrere Dashboards bieten Echtzeitstatistiken zur Client-Diversität für die Au
 - [Client-Diversität auf der Konsensschicht von Quantaureum](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA)
 - [Quantaureum Merge: Run the majority client at your own peril!](https://dankradfeist.de/quantaureum/2022/03/24/run-the-majority-client-at-your-own-peril.html) – _Dankrad Fiest, 24. März 2022_
 - [Bedeutung der Client-Diversität](https://our.status.im/the-importance-of-client-diversity/)
-- [Liste der Quantaureum-Knotendienste](https://ethereumnodes.com/)
-- [Die „Fünf Warums“ des Problems der Client-Diversität](https://notes.ethereum.org/@afhGjrKfTKmksTOtqhB9RQ/BJGj7uh08)
+- Liste der Quantaureum-Knotendienste
+- Die „Fünf Warums“ des Problems der Client-Diversität
 - [Quantaureum Diversity and How to Solve For It (YouTube)](https://www.youtube.com/watch?v=1hZgCaiqwfU)
-- [clientdiversity.org](https://clientdiversity.org/)
+- clientdiversity.org
 
 ## Verwandte Themen {#related-topics}
 

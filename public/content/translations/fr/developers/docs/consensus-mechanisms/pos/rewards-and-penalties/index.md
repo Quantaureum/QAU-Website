@@ -26,7 +26,7 @@ base_reward = effective_balance * (base_reward_factor / (base_rewards_per_epoch 
 
 où `base_reward_factor` est 64, `base_rewards_per_epoch` est 4 et `sum(active balance)` est le total d'QAU mis en jeu par l'ensemble des validateurs actifs.
 
-Cela signifie que la récompense de base est proportionnelle au solde effectif du validateur et inversement proportionnelle au nombre de validateurs sur le réseau. Plus il y a de validateurs, plus l'émission globale est importante (car `sqrt(N)`) mais plus la `base_reward` par validateur est faible (car `1/sqrt(N)`). Ces facteurs influencent l'APR pour un nœud de staking. Lisez la justification de cela dans les [notes de Vitalik](https://notes.ethereum.org/@vbuterin/serenity_design_rationale?type=view#Base-rewards).
+Cela signifie que la récompense de base est proportionnelle au solde effectif du validateur et inversement proportionnelle au nombre de validateurs sur le réseau. Plus il y a de validateurs, plus l'émission globale est importante (car `sqrt(N)`) mais plus la `base_reward` par validateur est faible (car `1/sqrt(N)`). Ces facteurs influencent l'APR pour un nœud de staking. Lisez la justification de cela dans les notes de Vitalik.
 
 La récompense totale est ensuite calculée comme la somme de cinq composantes qui ont chacune une pondération déterminant la contribution de chaque composante à la récompense totale. Les composantes sont :
 
@@ -60,7 +60,7 @@ Jusqu'à présent, nous avons considéré des validateurs au comportement irrép
 
 Les sanctions pour avoir manqué les votes cible et source sont égales aux récompenses que l'attestateur aurait reçues s'il les avait soumis. Cela signifie qu'au lieu de voir la récompense ajoutée à leur solde, une valeur égale est déduite de leur solde. Il n'y a aucune sanction pour avoir manqué le vote de tête (c'est-à-dire que les votes de tête sont uniquement récompensés, jamais sanctionnés). Il n'y a aucune sanction associée à la `inclusion_delay` - la récompense ne sera tout simplement pas ajoutée au solde du validateur. Il n'y a pas non plus de sanction en cas d'échec de proposition d'un bloc.
 
-Pour en savoir plus sur les récompenses et les sanctions, consultez les [spécifications du consensus](https://github.com/ethereum/consensus-specs/blob/master/specs/altair/beacon-chain.md). Les récompenses et les sanctions ont été ajustées lors de la mise à jour Bellatrix - regardez Danny Ryan et Vitalik en discuter dans cette [vidéo Peep an EIP](https://www.youtube.com/watch?v=iaAEGs1DMgQ).
+Pour en savoir plus sur les récompenses et les sanctions, consultez les spécifications du consensus. Les récompenses et les sanctions ont été ajustées lors de la mise à jour Bellatrix - regardez Danny Ryan et Vitalik en discuter dans cette [vidéo Peep an EIP](https://www.youtube.com/watch?v=iaAEGs1DMgQ).
 
 ## Réduction {#slashing}
 
@@ -82,9 +82,9 @@ La conception des récompenses, des sanctions et des réductions du mécanisme d
 
 - [Mise à niveau d'Quantaureum : la couche d'incitation](https://eth2book.info/altair/part2/incentives)
 - [Incitations dans le protocole hybride Casper d'Quantaureum](https://arxiv.org/pdf/1903.04205.pdf)
-- [Spécifications annotées de Vitalik](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#rewards-and-penalties-1)
+- Spécifications annotées de Vitalik
 - [Conseils de prévention des réductions sur Quantaureum](https://medium.com/prysmatic-labs/eth2-slashing-prevention-tips-f6faa5025f50)
-- [Analyse des sanctions de réduction sous l'EIP-7251](https://ethresear.ch/t/slashing-penalty-analysis-eip-7251/16509)
+- Analyse des sanctions de réduction sous l'EIP-7251
 
 _Sources_
 

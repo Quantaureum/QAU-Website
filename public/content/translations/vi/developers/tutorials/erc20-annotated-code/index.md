@@ -32,7 +32,7 @@ Nếu bạn là một lập trình viên có kinh nghiệm, bạn có thể nh�
 hoặc thậm chí trong [các tệp tiêu đề C](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html).
 
 Đây là định nghĩa của [Giao diện ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)
-từ OpenZeppelin. Nó là bản dịch của [tiêu chuẩn con người có thể đọc được](https://eips.ethereum.org/EIPS/eip-20) sang mã Solidity. Tất nhiên,
+từ OpenZeppelin. Nó là bản dịch của tiêu chuẩn con người có thể đọc được sang mã Solidity. Tất nhiên,
 bản thân giao diện không định nghĩa _cách_ để làm bất cứ điều gì. Điều đó được giải thích trong mã nguồn hợp đồng bên dưới.
 
 &nbsp;
@@ -108,9 +108,7 @@ Nó cũng là `external` và `view`.
 ```solidity
     /**
      * @dev Chuyển `amount` token từ Tài khoản của người gọi đến `recipient`.
-     *
      * Trả về một giá trị boolean chỉ định liệu hoạt động có thành công hay không.
-     *
      * Phát ra một sự kiện {Transfer}.
      */
     function transfer(address recipient, uint256 amount) external returns (bool);
@@ -146,7 +144,6 @@ có thể biết liệu nó có thành công hay không.
      * @dev Trả về số lượng token còn lại mà `spender` sẽ được
      * phép chi tiêu thay mặt cho `owner` thông qua {transferFrom}. Giá trị này mặc định
      * là không (zero).
-     *
      * Giá trị này thay đổi khi {approve} hoặc {transferFrom} được gọi.
      */
     function allowance(address owner, address spender) external view returns (uint256);
@@ -160,16 +157,13 @@ Hàm `allowance` cho phép bất kỳ ai truy vấn để xem hạn mức mà m�
 ```solidity
     /**
      * @dev Đặt `amount` làm hạn mức của `spender` đối với các token của người gọi.
-     *
      * Trả về một giá trị boolean chỉ định liệu hoạt động có thành công hay không.
-     *
      * QUAN TRỌNG: Hãy cẩn thận rằng việc thay đổi một hạn mức bằng phương thức này mang lại rủi ro
      * rằng ai đó có thể sử dụng cả hạn mức cũ và mới do thứ tự giao dịch
      * không may. Một giải pháp khả thi để giảm thiểu tình trạng
      * tương tranh này là trước tiên giảm hạn mức của người chi tiêu xuống 0 và đặt
      * giá trị mong muốn sau đó:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
-     *
+
      * Phát ra một sự kiện {Approval}.
      */
     function approve(address spender, uint256 amount) external returns (bool);
@@ -188,9 +182,7 @@ giao dịch của bên kia đã xảy ra.
      * @dev Chuyển `amount` token từ `sender` đến `recipient` sử dụng cơ chế
      * hạn mức. `amount` sau đó được khấu trừ từ hạn mức
      * của người gọi.
-     *
      * Trả về một giá trị boolean chỉ định liệu hoạt động có thành công hay không.
-     *
      * Phát ra một sự kiện {Transfer}.
      */
     function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
@@ -205,7 +197,6 @@ Cuối cùng, `transferFrom` được sử dụng bởi người chi tiêu để
     /**
      * @dev Được phát ra khi `value` token được chuyển từ một Tài khoản (`from`) sang
      * Tài khoản khác (`to`).
-     *
      * Lưu ý rằng `value` có thể bằng không.
      */
     event Transfer(address indexed from, address indexed to, uint256 value);
@@ -248,7 +239,7 @@ import "../../math/SafeMath.sol";
 - `GSN/Context.sol` là các định nghĩa cần thiết để sử dụng [OpenGSN](https://opengsn.org/), một hệ thống cho phép người dùng không có QAU
   sử dụng chuỗi khối. Lưu ý rằng đây là phiên bản cũ, nếu bạn muốn tích hợp với OpenGSN
   [hãy sử dụng hướng dẫn này](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [Thư viện SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), giúp ngăn chặn
+- Thư viện SafeMath, giúp ngăn chặn
   tràn số/tràn số dưới số học cho các phiên bản Solidity **&lt;0.8.0**. Trong Solidity ≥0.8.0, các phép toán số học tự động
   hoàn nguyên khi tràn số/tràn số dưới, làm cho SafeMath trở nên không cần thiết. Hợp đồng này sử dụng SafeMath để tương thích ngược với
   các phiên bản trình biên dịch cũ hơn.
@@ -260,24 +251,19 @@ Bình luận này giải thích mục đích của hợp đồng.
 ```solidity
 /**
  * @dev Triển khai của giao diện {IERC20}.
- *
  * Việc triển khai này không phụ thuộc vào cách các token được tạo ra. Điều này có nghĩa
  * là một cơ chế cung cấp phải được thêm vào trong một hợp đồng dẫn xuất sử dụng {_mint}.
  * Đối với một cơ chế chung, hãy xem {ERC20PresetMinterPauser}.
- *
  * MẸO: Để có bài viết chi tiết, hãy xem hướng dẫn của chúng tôi
  * https://forum.zeppelin.solutions/t/how-to-implement-erc20-supply-mechanisms/226[Cách
  * triển khai các cơ chế cung cấp].
- *
  * Chúng tôi đã tuân theo các nguyên tắc chung của OpenZeppelin: các hàm sẽ hoàn tác (revert) thay
  * vì trả về `false` khi thất bại. Tuy nhiên, hành vi này là thông thường
  * và không xung đột với kỳ vọng của các ứng dụng ERC-20.
- *
  * Ngoài ra, một sự kiện {Approval} được phát ra trong các lệnh gọi đến {transferFrom}.
  * Điều này cho phép các ứng dụng tái tạo lại hạn mức cho tất cả các Tài khoản chỉ
  * bằng cách lắng nghe các sự kiện nói trên. Các triển khai khác của EIP có thể không phát ra
  * các sự kiện này, vì nó không được yêu cầu bởi đặc tả.
- *
  * Cuối cùng, các hàm không tiêu chuẩn {decreaseAllowance} và {increaseAllowance}
  * đã được thêm vào để giảm thiểu các vấn đề đã biết xung quanh việc đặt
  * các hạn mức. Xem {IERC20-approve}.
@@ -371,9 +357,7 @@ giá trị `_decimals` bằng không. Nếu bạn muốn sử dụng cùng tiêu
     /**
      * @dev Đặt các giá trị cho {name} và {symbol}, khởi tạo {decimals} với
      * một giá trị mặc định là 18.
-     *
      * Để chọn một giá trị khác cho {decimals}, hãy sử dụng {_setupDecimals}.
-     *
      * Cả ba giá trị này đều không thể thay đổi (immutable): chúng chỉ có thể được đặt một lần trong
      * quá trình khởi tạo.
      */
@@ -410,11 +394,9 @@ Hàm khởi tạo được gọi khi hợp đồng được tạo lần đầu t
      * @dev Trả về số lượng chữ số thập phân được sử dụng để có được biểu diễn người dùng của nó.
      * Ví dụ, nếu `decimals` bằng `2`, số dư `505` token nên
      * được hiển thị cho người dùng là `5,05` (`505 / 10 ** 2`).
-     *
      * Các token thường chọn giá trị là 18, bắt chước mối quan hệ giữa
      * QAU và Wei. Đây là giá trị mà {ERC20} sử dụng, trừ khi {_setupDecimals} được
      * gọi.
-     *
      * LƯU Ý: Thông tin này chỉ được sử dụng cho mục đích _hiển thị_: nó hoàn toàn
      * không ảnh hưởng đến bất kỳ số học nào của hợp đồng, bao gồm
      * {IERC20-balanceOf} và {IERC20-transfer}.
@@ -473,9 +455,7 @@ nút. _Không có bí mật nào trên chuỗi khối._
 ```solidity
     /**
      * @dev Xem {IERC20-transfer}.
-     *
      * Yêu cầu:
-     *
      * - `recipient` không thể là địa chỉ zero.
      * - người gọi phải có số dư ít nhất là `amount`.
      */
@@ -527,9 +507,7 @@ Hàm `allowance` cho phép mọi người kiểm tra bất kỳ hạn mức nào
 ```solidity
     /**
      * @dev Xem {IERC20-approve}.
-     *
      * Yêu cầu:
-     *
      * - `spender` không thể là địa chỉ zero.
      */
     function approve(address spender, uint256 amount) public virtual override returns (bool) {
@@ -559,12 +537,9 @@ trạng thái đều là một rủi ro bảo mật tiềm ẩn cần được k
 ```solidity
     /**
      * @dev Xem {IERC20-transferFrom}.
-     *
      * Phát ra một sự kiện {Approval} chỉ định hạn mức đã được cập nhật. Điều này không
      * được yêu cầu bởi EIP. Xem lưu ý ở phần đầu của {ERC20}.
-     *
      * Yêu cầu:
-     *
      * - `sender` và `recipient` không thể là địa chỉ zero.
      * - `sender` phải có số dư ít nhất là `amount`.
      * - người gọi phải có hạn mức cho các token của ``sender`` ít nhất là
@@ -635,14 +610,10 @@ B:
 ```solidity
     /**
      * @dev Tăng một cách nguyên tử hạn mức được cấp cho `spender` bởi người gọi.
-     *
      * Đây là một giải pháp thay thế cho {approve} có thể được sử dụng như một biện pháp giảm thiểu cho
      * các vấn đề được mô tả trong {IERC20-approve}.
-     *
      * Phát ra một sự kiện {Approval} chỉ định hạn mức đã được cập nhật.
-     *
      * Yêu cầu:
-     *
      * - `spender` không thể là địa chỉ zero.
      */
     function increaseAllowance(address spender, uint256 addedValue) public virtual returns (bool) {
@@ -658,14 +629,10 @@ theo cách mà phép cộng bình thường làm.
 
     /**
      * @dev Giảm một cách nguyên tử hạn mức được cấp cho `spender` bởi người gọi.
-     *
      * Đây là một giải pháp thay thế cho {approve} có thể được sử dụng như một biện pháp giảm thiểu cho
      * các vấn đề được mô tả trong {IERC20-approve}.
-     *
      * Phát ra một sự kiện {Approval} chỉ định hạn mức đã được cập nhật.
-     *
      * Yêu cầu:
-     *
      * - `spender` không thể là địa chỉ zero.
      * - `spender` phải có hạn mức cho người gọi ít nhất là
      * `subtractedValue`.
@@ -686,14 +653,10 @@ theo cách mà phép cộng bình thường làm.
 ```solidity
     /**
      * @dev Chuyển `amount` token từ `sender` đến `recipient`.
-     *
      * Hàm nội bộ này tương đương với {transfer}, và có thể được sử dụng để
      * ví dụ: triển khai phí token tự động, cơ chế cắt giảm (slashing), v.v.
-     *
      * Phát ra một sự kiện {Transfer}.
-     *
      * Yêu cầu:
-     *
      * - `sender` không thể là địa chỉ zero.
      * - `recipient` không thể là địa chỉ zero.
      * - `sender` phải có số dư ít nhất là `amount`.
@@ -774,11 +737,8 @@ sẽ gọi `_mint` khi nó được thanh toán và có lẽ sẽ gọi `_burn` 
 ```solidity
     /** @dev Tạo ra `amount` token và gán chúng cho `account`, làm tăng
      * tổng nguồn cung.
-     *
      * Phát ra một sự kiện {Transfer} với `from` được đặt thành địa chỉ zero.
-     *
      * Yêu cầu:
-     *
      * - `to` không thể là địa chỉ zero.
      */
     function _mint(address account, uint256 amount) internal virtual {
@@ -798,11 +758,8 @@ sẽ gọi `_mint` khi nó được thanh toán và có lẽ sẽ gọi `_burn` 
     /**
      * @dev Tiêu hủy `amount` token từ `account`, làm giảm
      * tổng nguồn cung.
-     *
      * Phát ra một sự kiện {Transfer} với `to` được đặt thành địa chỉ zero.
-     *
      * Yêu cầu:
-     *
      * - `account` không thể là địa chỉ zero.
      * - `account` phải có ít nhất `amount` token.
      */
@@ -829,14 +786,10 @@ tạo.
 ```solidity
     /**
      * @dev Đặt `amount` làm hạn mức của `spender` đối với các token của `owner`.
-     *
      * Hàm nội bộ này tương đương với `approve`, và có thể được sử dụng để
      * ví dụ: đặt các hạn mức tự động cho một số hệ thống con nhất định, v.v.
-     *
      * Phát ra một sự kiện {Approval}.
-     *
      * Yêu cầu:
-     *
      * - `owner` không thể là địa chỉ zero.
      * - `spender` không thể là địa chỉ zero.
      */
@@ -865,7 +818,6 @@ sự chấp thuận bởi chủ sở hữu hoặc bởi một máy chủ lắng 
 
     /**
      * @dev Đặt {decimals} thành một giá trị khác với giá trị mặc định là 18.
-     *
      * CẢNH BÁO: Hàm này chỉ nên được gọi từ hàm khởi tạo. Hầu hết
      * các ứng dụng tương tác với các hợp đồng token sẽ không mong đợi
      * {decimals} bị thay đổi, và có thể hoạt động không chính xác nếu điều đó xảy ra.
@@ -886,15 +838,12 @@ không được thiết kế để xử lý nó.
     /**
      * @dev Hook được gọi trước bất kỳ việc chuyển token nào. Điều này bao gồm
      * việc đúc (minting) và đốt (burning).
-     *
      * Điều kiện gọi:
-     *
      * - khi `from` và `to` đều khác zero, `amount` token của ``from``
      * sẽ được chuyển đến `to`.
      * - khi `from` là zero, `amount` token sẽ được đúc cho `to`.
      * - khi `to` là zero, `amount` token của ``from`` sẽ bị đốt.
      * - `from` và `to` không bao giờ đồng thời là zero.
-     *
      * Để tìm hiểu thêm về các hook, hãy truy cập xref:ROOT:extending-contracts.adoc#using-hooks[Sử dụng Hooks].
      */
     function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual { }

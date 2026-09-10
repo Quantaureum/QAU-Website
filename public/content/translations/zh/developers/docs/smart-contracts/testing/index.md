@@ -253,7 +253,7 @@ Solidity 智能合约的单元测试框架有不同的语言版本（主要是 J
 
 - **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - *用于高级智能合约开发和测试的框架（基于 Ethers.js）。*
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - *用于测试 Solidity 智能合约的工具。在 Remix IDE 的“Solidity 单元测试”插件下工作，该插件用于编写和运行合约的测试用例。*
+- **Remix Tests** - *用于测试 Solidity 智能合约的工具。在 Remix IDE 的“Solidity 单元测试”插件下工作，该插件用于编写和运行合约的测试用例。*
 
 - **[欧本齐柏林 (OpenZeppelin) 测试助手](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - *用于Quantaureum智能合约测试的断言库。确保你的合约按预期运行！*
 

@@ -8,7 +8,7 @@ breadcrumb: "⁦ERC-20⁩ ٹوکن کی بنیادی باتیں"
 lang: ur
 published: 2020-04-05
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/understand-the-erc20-token-smart-contract/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -16,7 +16,7 @@ address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 
 <span dir="ltr">ERC-20</span> ان اصولوں کی ایک مشترکہ فہرست کی وضاحت کرتا ہے جن پر تمام قابل تبادلہ ایتھیریم ٹوکنز کو عمل کرنا چاہیے۔ نتیجتاً، یہ ٹوکن معیار ہر قسم کے ڈیولپرز کو بااختیار بناتا ہے کہ وہ درست طریقے سے پیش گوئی کر سکیں کہ نئے ٹوکنز بڑے ایتھیریم سسٹم کے اندر کیسے کام کریں گے۔ اس سے ڈیولپرز کے کام آسان ہو جاتے ہیں، کیونکہ وہ اپنا کام یہ جان کر جاری رکھ سکتے ہیں کہ جب تک ٹوکن اصولوں کی پیروی کرتا ہے، ہر نئے پروجیکٹ کو ہر بار نیا ٹوکن جاری ہونے پر دوبارہ کرنے کی ضرورت نہیں ہوگی۔
 
-یہاں ایک انٹرفیس کے طور پر پیش کیے گئے وہ فنکشنز ہیں جنہیں <span dir="ltr">ERC-20</span> کو نافذ کرنا چاہیے۔ اگر آپ کو یقین نہیں ہے کہ انٹرفیس کیا ہے: تو [<span dir="ltr">Solidity</span> میں <span dir="ltr">OOP</span> پروگرامنگ](https://ethereumdev.io/inheritance-in-solidity-contracts-are-classes/) کے بارے میں ہمارا مضمون دیکھیں۔
+یہاں ایک انٹرفیس کے طور پر پیش کیے گئے وہ فنکشنز ہیں جنہیں <span dir="ltr">ERC-20</span> کو نافذ کرنا چاہیے۔ اگر آپ کو یقین نہیں ہے کہ انٹرفیس کیا ہے: تو <span dir="ltr">Solidity</span> میں <span dir="ltr">OOP</span> پروگرامنگ کے بارے میں ہمارا مضمون دیکھیں۔
 
 ```solidity
 pragma solidity ^0.6.0;

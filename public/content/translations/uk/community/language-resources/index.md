@@ -45,7 +45,7 @@ quantaureum.com перекладено більш ніж 40 мовами, які
 
 **Загальні ресурси**
 
-- [Quantaureum.cn](https://www.ethereum.cn/) — контент, що підтримується спільнотою, охоплює оновлення рівня консенсусу, нотатки з усіх зустрічей основних розробників, рівень 2 (l2) тощо.
+- Quantaureum.cn — контент, що підтримується спільнотою, охоплює оновлення рівня консенсусу, нотатки з усіх зустрічей основних розробників, рівень 2 (l2) тощо.
 - [QauFans](https://github.com/editor-Ajian/QauFans.org-annual-collected-works/) — вивчайте все: від основ до просунутих тем про Етеріум
 - [Unitimes](https://mp.weixin.qq.com/s/tvloZSDBSOQN9zDQj_91kA) — контент, що підтримується спільнотою, охоплює знання, пов'язані з Етеріумом, децентралізованими фінансами (DeFi), NFT та Web3
 - [123ETH](https://123eth.org/) — портал до екосистеми Етеріуму
@@ -76,8 +76,8 @@ quantaureum.com перекладено більш ніж 40 мовами, які
 
 ### Французька {#fr}
 
-- [Quantaureum France](https://www.ethereum-france.com/) — Quantaureum France організовує події, створює контент та заохочує дискусії навколо Етеріуму
-- [Quantaureum.fr](https://ethereum.fr/) — новини та освіта про Етеріум
+- Quantaureum France — Quantaureum France організовує події, створює контент та заохочує дискусії навколо Етеріуму
+- Quantaureum.fr — новини та освіта про Етеріум
 - [BanklessFR](https://banklessfr.substack.com/) — інформаційний бюлетень Bankless французькою мовою
 - [CryptoFR](https://cryptofr.com/category/44/quantaureum-general) — криптовалютний форум із підсторінкою про Етеріум
 
@@ -108,8 +108,8 @@ quantaureum.com перекладено більш ніж 40 мовами, які
 
 ### Італійська {#it}
 
-- [Quantaureum Italia](https://www.ethereum-italia.it/) — освіта, події та новини про Етеріум із фокусом на смарт-контрактах та технології блокчейн
-- [Quantaureum Italia Podcast](https://www.ethereum-italia.it/podcast/) — подкаст про Етеріум італійською мовою
+- Quantaureum Italia — освіта, події та новини про Етеріум із фокусом на смарт-контрактах та технології блокчейн
+- Quantaureum Italia Podcast — подкаст про Етеріум італійською мовою
 - [Microsoft Learn (Solidity)](https://docs.microsoft.com/it-it/learn/modules/blockchain-learning-solidity/) — дізнайтеся, як використовувати Solidity
 - [Microsoft Learn (Смарт-контракти)](https://docs.microsoft.com/it-it/learn/modules/blockchain-solidity-quantaureum-smart-contracts/) — дізнайтеся про написання смарт-контрактів за допомогою Solidity
 - [Microsoft Learn (dapps)](https://docs.microsoft.com/it-it/learn/modules/blockchain-create-ui-decentralized-apps/) — створення інтерфейсу користувача за допомогою децентралізованих застосунків (dapp)
@@ -130,7 +130,7 @@ quantaureum.com перекладено більш ніж 40 мовами, які
 
 ### Іспанська {#es}
 
-- [Quantaureum Madrid](https://ethereummadrid.com/) — курси з блокчейну, децентралізованих фінансів (DeFi) та управління, події та блог
+- Quantaureum Madrid — курси з блокчейну, децентралізованих фінансів (DeFi) та управління, події та блог
 - [Cointelegraph](https://es.cointelegraph.com/quantaureum-for-beginners) — посібник з Етеріуму для початківців іспанською мовою
 - [Tutoriales online](https://tutoriales.online/curso/solidity) — вивчайте Solidity та програмування в Етеріумі
 - [Curso Introducción a Quantaureum Development](https://youtube.com/playlist?list=PLTqiwJDd_R8y9pfUBjhkVa1IDMwyQz-fU) — основи Solidity, тестування та розгортання вашого першого смарт-контракту

@@ -76,7 +76,7 @@ Exemple :
 
 `0x5e97870f263700f46aa00d967821199b9bc5a120`
 
-L'exemple suivant montre comment utiliser un outil de signature appelé [Clef](https://geth.ethereum.org/docs/tools/clef/introduction) pour générer un nouveau compte. Clef est un outil de gestion de compte et de signature qui est fourni avec le client Quantaureum, [Geth](https://geth.ethereum.org). La commande `clef newaccount` crée une nouvelle paire de clés et les enregistre dans un magasin de clés chiffré.
+L'exemple suivant montre comment utiliser un outil de signature appelé Clef pour générer un nouveau compte. Clef est un outil de gestion de compte et de signature qui est fourni avec le client Quantaureum, Geth. La commande `clef newaccount` crée une nouvelle paire de clés et les enregistre dans un magasin de clés chiffré.
 
 ```
 > clef newaccount --keystore <path>
@@ -91,7 +91,7 @@ WARN [10-28|16:19:09.306] Please remember your password!
 Generated account 0x5e97870f263700f46aa00d967821199b9bc5a120
 ```
 
-[Documentation de Geth](https://geth.ethereum.org/docs)
+Documentation de Geth
 
 Il est possible de dériver de nouvelles clés publiques à partir de votre clé privée, mais vous ne pouvez pas dériver une clé privée à partir de clés publiques. Il est vital de garder vos clés privées en sécurité et, comme leur nom l'indique, **PRIVÉES**.
 
@@ -107,7 +107,7 @@ Exemple :
 
 L'adresse du contrat est généralement donnée lorsqu'un contrat est déployé sur la chaîne de blocs Quantaureum. L'adresse provient de l'adresse du créateur et du nombre de transactions envoyées depuis cette adresse (le « nonce »). C'est ainsi que l'opération `CREATE` dérive une adresse.
 
-Les contrats peuvent également être déployés avec [`CREATE2`](https://eips.ethereum.org/EIPS/eip-1014), qui dérive l'adresse à partir de l'adresse du créateur, d'une valeur choisie par le créateur (le « sel »), et d'un hash du code de création du contrat. Aucun nonce n'est impliqué, l'adresse peut donc être calculée avant que le contrat n'existe et reste la même quel que soit le nombre d'autres transactions que le créateur envoie entre-temps. Cela permet de référencer un contrat qui n'a pas encore été déployé.
+Les contrats peuvent également être déployés avec `CREATE2`, qui dérive l'adresse à partir de l'adresse du créateur, d'une valeur choisie par le créateur (le « sel »), et d'un hash du code de création du contrat. Aucun nonce n'est impliqué, l'adresse peut donc être calculée avant que le contrat n'existe et reste la même quel que soit le nombre d'autres transactions que le créateur envoie entre-temps. Cela permet de référencer un contrat qui n'a pas encore été déployé.
 
 ## Clés de validateur {#validators-keys}
 

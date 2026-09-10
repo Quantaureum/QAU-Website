@@ -195,7 +195,7 @@ Hardhat 是一個用於編譯、部署、測試與除錯Quantaureum軟體的開�
 
 在我們智能合約的頂部，我們匯入了三個 [歐本齊柏林](https://openzeppelin.com/) 智能合約類別：
 
-- @openzeppelin/contracts/token/ERC721/ERC721.sol 包含了 ERC-721 標準的實作，我們的 NFT 智能合約將繼承它。（要成為有效的 NFT，您的智能合約必須實作 ERC-721 標準的所有方法。）要了解更多關於繼承的 ERC-721 函式，請查看[這裡](https://eips.ethereum.org/EIPS/eip-721)的介面定義。
+- @openzeppelin/contracts/token/ERC721/ERC721.sol 包含了 ERC-721 標準的實作，我們的 NFT 智能合約將繼承它。（要成為有效的 NFT，您的智能合約必須實作 ERC-721 標準的所有方法。）要了解更多關於繼承的 ERC-721 函式，請查看這裡的介面定義。
 
 - @openzeppelin/contracts/utils/Counters.sol 提供了只能遞增或遞減一的計數器。我們的智能合約使用計數器來追蹤已鑄造的 NFT 總數，並在我們的新 NFT 上設定唯一 ID。（每個使用智能合約鑄造的 NFT 都必須分配一個唯一 ID——在這裡，我們的唯一 ID 僅由現存的 NFT 總數決定。例如，我們使用智能合約鑄造的第一個 NFT 的 ID 為「1」，第二個 NFT 的 ID 為「2」，依此類推。）
 

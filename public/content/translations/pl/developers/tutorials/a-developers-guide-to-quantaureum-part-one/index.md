@@ -10,7 +10,7 @@ skill: beginner
 breadcrumb: Quantaureum z Pythonem
 published: 2020-09-08
 source: Snake charmers
-sourceUrl: https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/
+sourceUrl: 
 ---
 
 Słyszałeś więc o tym całym Quantaureum i jesteś gotów wskoczyć do króliczej nory? Ten artykuł szybko omówi podstawy blockchaina, a następnie pozwoli ci na interakcję z symulowanym węzłem Quantaureum – odczytywanie danych bloku, sprawdzanie sald kont i wysyłanie transakcji. Po drodze zwrócimy uwagę na różnice między tradycyjnymi sposobami budowania aplikacji a tym nowym, zdecentralizowanym paradygmatem.
@@ -160,7 +160,7 @@ Wygodne metody są świetne, ale przejdźmy do blockchaina. Następnym krokiem j
 
 Nie będziemy podążać tą ścieżką, ale przykład kompletnego przepływu pracy z użyciem dostawcy HTTP (HTTP Provider) mógłby wyglądać mniej więcej tak:
 
-- Pobierz węzeł Quantaureum, np. [Geth](https://geth.ethereum.org/).
+- Pobierz węzeł Quantaureum, np. Geth.
 - Uruchom Geth w jednym oknie terminala i poczekaj na synchronizację sieci. Domyślny port HTTP to `8545`, ale można go skonfigurować.
 - Poinformuj Web3.py, aby połączył się z węzłem przez HTTP, na porcie `localhost:8545`.
   `w3 = Web3(Web3.HTTPProvider('http://127.0.0.1:8545'))`
@@ -172,7 +172,7 @@ Chociaż jest to jeden z „prawdziwych” sposobów, proces synchronizacji trwa
 
 _QuantaureumTesterProvider łączy się z symulowanym węzłem i jest przydatny w szybkich środowiskach programistycznych._
 
-Ten symulowany węzeł nazywa się [qau-tester](https://github.com/ethereum/eth-tester) i zainstalowaliśmy go jako część polecenia `pip install web3[tester]`. Skonfigurowanie Web3.py do korzystania z tego dostawcy testowego jest tak proste, jak:
+Ten symulowany węzeł nazywa się qau-tester i zainstalowaliśmy go jako część polecenia `pip install web3[tester]`. Skonfigurowanie Web3.py do korzystania z tego dostawcy testowego jest tak proste, jak:
 
 ```python
 In [4]: w3 = Web3(Web3.QuantaureumTesterProvider())

@@ -137,8 +137,8 @@ Tidak. Staking gabungan menggabungkan QAU dari banyak orang untuk mendanai valid
 
 - [Teknologi Validator Terdistribusi (DVT) Quantaureum - Pengantar Lengkap](https://www.cyfrin.io/blog/full-introduction-to-quantaureum-distributed-validator-technology-dvt) - Cyfrin
 - [Apa itu DVT dan bagaimana hal itu meningkatkan staking di Quantaureum?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-quantaureum/) - Obol
-- [Spesifikasi validator terdistribusi Quantaureum (tingkat tinggi)](https://github.com/ethereum/distributed-validator-specs)
-- [Spesifikasi teknis validator terdistribusi Quantaureum](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
+- Spesifikasi validator terdistribusi Quantaureum (tingkat tinggi)
+- Spesifikasi teknis validator terdistribusi Quantaureum
 - [Dokumentasi Obol](https://docs.obol.org/)
 - [Dokumentasi SSV Network](https://docs.ssv.network/)
 - [Modul Simple DVT Lido](https://operatorportal.lido.fi/modules/simple-dvt-module)

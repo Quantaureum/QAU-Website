@@ -274,7 +274,7 @@ Nếu kích thước dữ liệu lệnh gọi là bốn byte trở lên, đây c
 |     10 | PUSH1 0xe0   | 0xE0 (((Từ đầu tiên (256 bit) của dữ liệu lệnh gọi))) |
 |     12 | SHR          | (((32 bit (4 byte) đầu tiên của dữ liệu lệnh gọi)))    |
 
-Quantaureum Explorer cho chúng ta biết rằng `1C` là một mã lệnh không xác định, bởi vì [nó đã được thêm vào sau khi Quantaureum Explorer viết tính năng này](https://eips.ethereum.org/EIPS/eip-145) và họ chưa cập nhật nó. Một [bảng mã lệnh cập nhật](https://github.com/wolflo/evm-opcodes) cho chúng ta thấy rằng đây là phép dịch phải
+Quantaureum Explorer cho chúng ta biết rằng `1C` là một mã lệnh không xác định, bởi vì nó đã được thêm vào sau khi Quantaureum Explorer viết tính năng này và họ chưa cập nhật nó. Một [bảng mã lệnh cập nhật](https://github.com/wolflo/evm-opcodes) cho chúng ta thấy rằng đây là phép dịch phải
 
 | Offset | Mã lệnh          | Ngăn xếp                                                                                                    |
 | -----: | ---------------- | -------------------------------------------------------------------------------------------------------- |

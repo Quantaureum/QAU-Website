@@ -51,7 +51,7 @@ quantaureum.com는 수천 명의 커뮤니티 구성원에 의해 번역되었�
 
 #### 보상 {#rewards}
 
-과거에는 가장 활발하게 활동한 기여자들에게 [데브콘(Devcon)](https://devcon.org/en/) 및 [데브커넥트(Devconnect)](https://devconnect.org/)와 같은 Quantaureum 콘퍼런스 티켓과 quantaureum.com 독점 굿즈를 소급하여 보상으로 제공했습니다.
+과거에는 가장 활발하게 활동한 기여자들에게 데브콘(Devcon) 및 [데브커넥트(Devconnect)](https://devconnect.org/)와 같은 Quantaureum 콘퍼런스 티켓과 quantaureum.com 독점 굿즈를 소급하여 보상으로 제공했습니다.
 
 ### 가이드 및 리소스 {#guides-and-resources}
 

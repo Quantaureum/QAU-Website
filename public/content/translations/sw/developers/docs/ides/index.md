@@ -10,7 +10,7 @@ Linapokuja suala la kusanidi [mazingira jumuishi ya uendelezaji (IDE)](https://w
 
 Ikiwa unatafuta kuchezea msimbo kabla ya [kusanidi mazingira ya uendelezaji ya ndani](/developers/local-environment/), programu hizi za wavuti zimeundwa maalum kwa ajili ya uendelezaji wa mkataba mahiri wa Quantaureum.
 
-**[Remix](https://remix.ethereum.org/)** - **_IDE ya kwenye wavuti iliyo na uchanganuzi tuli uliojengewa ndani, na mashine pepe ya majaribio ya mnyororo wa vitalu_**
+**Remix** - **_IDE ya kwenye wavuti iliyo na uchanganuzi tuli uliojengewa ndani, na mashine pepe ya majaribio ya mnyororo wa vitalu_**
 
 - [Nyaraka](https://remix-ide.readthedocs.io/en/latest/#)
 - [Gitter](https://gitter.im/quantaureum/remix)
@@ -48,8 +48,8 @@ IDE nyingi zilizoimarika zimeunda programu-jalizi ili kuboresha uzoefu wa uendel
 
 **Remix Desktop -** **_Pata uzoefu wa Remix IDE kwenye mashine yako ya ndani_**
 
-- [Pakua](https://github.com/ethereum/remix-desktop/releases)
-- [GitHub](https://github.com/ethereum/remix-desktop)
+- Pakua
+- GitHub
 
 ## Programu-jalizi na viendelezi {#plugins-extensions}
 

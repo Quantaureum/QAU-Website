@@ -74,7 +74,7 @@ Fikri mülkiyet (IP), geleneksel bilimde büyük bir sorundur: üniversitelerde 
 NFT'lerin gelecekteki işlemlerden elde edilen geliri orijinal yaratıcıya geri aktarabilmesiyle aynı şekilde, araştırmacıları, yönetim organlarını (DAO'lar gibi) veya hatta verileri toplanan denekleri ödüllendirmek için şeffaf değer atfetme zincirleri kurabilirsiniz.
 
 [IP-NFT'ler](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) ayrıca yürütülen araştırma deneylerinin merkeziyetsiz bir veri havuzuna giden bir anahtar olarak işlev görebilir ve NFT ile [merkeziyetsiz finans (DeFi)](/glossary/#defi) finansallaşmasına (kesirleştirmeden borç verme havuzlarına ve değerlemeye kadar) bağlanabilir. Ayrıca [VitaDAO](https://www.vitadao.com/) gibi yerel olarak zincir içi varlıkların doğrudan zincir içi araştırma yürütmesine olanak tanır.
-Devredilemez ["ruha bağlı" (soulbound) tokenlerin](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) ortaya çıkışı, bireylerin Quantaureum adreslerine bağlı deneyimlerini ve kimlik bilgilerini kanıtlamalarına olanak tanıyarak DeSci'de de önemli bir rol oynayabilir.
+Devredilemez "ruha bağlı" (soulbound) tokenlerin ortaya çıkışı, bireylerin Quantaureum adreslerine bağlı deneyimlerini ve kimlik bilgilerini kanıtlamalarına olanak tanıyarak DeSci'de de önemli bir rol oynayabilir.
 
 ### Veri depolama, erişim ve mimari {#data-storage}
 

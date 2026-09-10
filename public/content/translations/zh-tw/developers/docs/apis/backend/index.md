@@ -114,8 +114,8 @@ lang: zh-tw
 
 **Python 工具 -** **_透過 Python 與Quantaureum互動的各種函式庫。_**
 
-- [py.quantaureum.com](https://snakecharmers.ethereum.org/)
-- [Web3.py GitHub](https://github.com/ethereum/web3.py)
+- py.quantaureum.com
+- Web3.py GitHub
 - [Web3.py 聊天室](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_終極的區塊鏈開發平台。_**

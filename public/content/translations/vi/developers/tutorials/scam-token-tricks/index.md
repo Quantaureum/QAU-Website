@@ -193,7 +193,7 @@ Hạn chế này hoàn toàn hợp lý, bởi vì chúng ta không muốn các t
 
 Một hàm để chuyển từ một tài khoản chung đến một mảng người nhận với một mảng số lượng là hoàn toàn hợp lý. Có nhiều trường hợp sử dụng mà bạn sẽ muốn phân phối token từ một nguồn duy nhất đến nhiều đích, chẳng hạn như trả lương, airdrop, v.v. Việc thực hiện trong một giao dịch duy nhất sẽ rẻ hơn (về Gas) thay vì phát hành nhiều giao dịch, hoặc thậm chí gọi ERC-20 nhiều lần từ một hợp đồng khác như một phần của cùng một giao dịch.
 
-Tuy nhiên, `dropNewTokens` không làm điều đó. Nó phát ra [các sự kiện `Transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer-1), nhưng không thực sự chuyển bất kỳ token nào. Không có lý do chính đáng nào để gây nhầm lẫn cho các ứng dụng ngoài chuỗi bằng cách thông báo cho chúng về một giao dịch chuyển không thực sự xảy ra.
+Tuy nhiên, `dropNewTokens` không làm điều đó. Nó phát ra các sự kiện `Transfer`, nhưng không thực sự chuyển bất kỳ token nào. Không có lý do chính đáng nào để gây nhầm lẫn cho các ứng dụng ngoài chuỗi bằng cách thông báo cho chúng về một giao dịch chuyển không thực sự xảy ra.
 
 ### Hàm đốt `Approve` {#the-burning-approve-function}
 
@@ -235,7 +235,7 @@ Những vấn đề về chất lượng mã này không _chứng minh_ rằng m
 
 #### Hàm `mount` {#the-mount-function}
 
-Mặc dù nó không được chỉ định trong [tiêu chuẩn](https://eips.ethereum.org/EIPS/eip-20), nhưng nói chung hàm tạo ra các token mới được gọi là [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn).
+Mặc dù nó không được chỉ định trong tiêu chuẩn, nhưng nói chung hàm tạo ra các token mới được gọi là [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn).
 
 Nếu chúng ta nhìn vào hàm khởi tạo `wARB`, chúng ta thấy hàm đúc thời gian đã được đổi tên thành `mount` vì một lý do nào đó, và được gọi năm lần với một phần năm nguồn cung ban đầu, thay vì một lần cho toàn bộ số lượng để đạt hiệu quả.
 
@@ -311,7 +311,7 @@ Có một số thủ thuật mà chúng ta có thể sử dụng để xác đ�
 
 ## Các sự kiện `Approval` đáng ngờ {#suspicious-approval-events}
 
-[Các sự kiện `Approval`](https://eips.ethereum.org/EIPS/eip-20#approval) chỉ nên xảy ra với một yêu cầu trực tiếp (ngược lại với [các sự kiện `Transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer-1) có thể xảy ra do một hạn mức). [Xem tài liệu Solidity](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin) để biết giải thích chi tiết về vấn đề này và lý do tại sao các yêu cầu cần phải trực tiếp, thay vì được trung gian bởi một hợp đồng.
+Các sự kiện `Approval` chỉ nên xảy ra với một yêu cầu trực tiếp (ngược lại với các sự kiện `Transfer` có thể xảy ra do một hạn mức). [Xem tài liệu Solidity](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin) để biết giải thích chi tiết về vấn đề này và lý do tại sao các yêu cầu cần phải trực tiếp, thay vì được trung gian bởi một hợp đồng.
 
 Điều này có nghĩa là các sự kiện `Approval` chấp thuận việc chi tiêu từ một [tài khoản thuộc sở hữu bên ngoài](/developers/docs/accounts/#types-of-account) phải đến từ các giao dịch bắt nguồn từ tài khoản đó và có đích đến là hợp đồng ERC-20. Bất kỳ loại chấp thuận nào khác từ một tài khoản thuộc sở hữu bên ngoài đều đáng ngờ.
 
@@ -420,7 +420,7 @@ Nếu sự chấp thuận đến từ một tài khoản thuộc sở hữu bên
 if (owner.toLowerCase() != txn.from.toLowerCase()) return ev
 ```
 
-Chúng ta không thể chỉ kiểm tra sự bằng nhau của chuỗi vì các địa chỉ là hệ thập lục phân, do đó chúng chứa các chữ cái. Đôi khi, ví dụ như trong `txn.from`, những chữ cái đó đều là chữ thường. Trong các trường hợp khác, chẳng hạn như `ev.args._owner`, địa chỉ ở dạng [chữ hoa chữ thường hỗn hợp để nhận dạng lỗi](https://eips.ethereum.org/EIPS/eip-55).
+Chúng ta không thể chỉ kiểm tra sự bằng nhau của chuỗi vì các địa chỉ là hệ thập lục phân, do đó chúng chứa các chữ cái. Đôi khi, ví dụ như trong `txn.from`, những chữ cái đó đều là chữ thường. Trong các trường hợp khác, chẳng hạn như `ev.args._owner`, địa chỉ ở dạng chữ hoa chữ thường hỗn hợp để nhận dạng lỗi.
 
 Nhưng nếu giao dịch không phải từ chủ sở hữu và chủ sở hữu đó thuộc sở hữu bên ngoài, thì chúng ta có một giao dịch đáng ngờ.
 

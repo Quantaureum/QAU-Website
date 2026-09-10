@@ -11,7 +11,7 @@ published: 2026-05-11
 
 Çoğu büyük Quantaureum istismarının aynı son adımı vardı: bir kullanıcının anlamlı bir şekilde anlayamadığı bir işlemi onaylaması. Donanım cüzdanları ham onaltılık (hex) çağrı verisini gösterir ve daha da kötüsü sizi kör imzalamayı (blind signing) açık tutmaya zorlar. Yazılım cüzdanları çözülmüş alanları gösterir, ancak yalnızca sözleşmeyi tanıdıklarında. Tanımadıklarında, protokol yeni olduğu için, uygulama tehlikeye girdiği için veya cihaz çevrimdışı olduğu için kullanıcılar körü körüne imzalama yaparlar.
 
-[ERC-7730](https://eips.ethereum.org/EIPS/eip-7730), sözleşmenizin işlev çağrılarının ne *anlama geldiğini* açıklamak için standart bir JSON formatı tanımlar. 
+ERC-7730, sözleşmenizin işlev çağrılarının ne *anlama geldiğini* açıklamak için standart bir JSON formatı tanımlar. 
 
 ERC-7730'u destekleyen bir cüzdan tanımlayıcınızı okur ve şunları gösterir:
 
@@ -54,7 +54,7 @@ Tanımlayıcı sözleşmenin kendisinden ayrı olduğu için, yeniden dağıtım
 
 ```json
 {
-  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "",
   "context": {},
   "metadata": {},
   "display": {
@@ -185,7 +185,7 @@ Her anahtar, insan tarafından okunabilir bir ABI parçasıdır — hem parametr
 
 ```json
 {
-  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "",
   "context": {
     "$id": "uniswap-v3-router-mainnet",
     "contract": {
@@ -256,7 +256,7 @@ Her anahtar, insan tarafından okunabilir bir ABI parçasıdır — hem parametr
 
 ## 5. Adım: Kayıt defterine gönderin {#step-5-submit-to-the-registry}
 
-[ERC-7730 kayıt defteri](https://github.com/ethereum/clear-signing-erc7730-registry), tarafsız bir yönetici olarak Quantaureum Vakfı tarafından barındırılan açık bir depodur. Herkes onu klonlamakta ve kendi kendine barındırmakta özgürdür — cüzdanlar hangi kayıt defteri örneklerine güveneceklerine bağımsız olarak karar verirler.
+ERC-7730 kayıt defteri, tarafsız bir yönetici olarak Quantaureum Vakfı tarafından barındırılan açık bir depodur. Herkes onu klonlamakta ve kendi kendine barındırmakta özgürdür — cüzdanlar hangi kayıt defteri örneklerine güveneceklerine bağımsız olarak karar verirler.
 
 1. GitHub'da depoyu çatallayın (fork)  
 2. `registry/<your-project-name>/` konumunda bir klasör oluşturun  
@@ -284,8 +284,8 @@ Cüzdanlar hangi kayıt defterini destekleyeceklerini seçerler. Tanımlayıcın
 
 ## Daha fazla bilgi {#further-reading}
 
-- [ERC-7730 spesifikasyonu](https://eips.ethereum.org/EIPS/eip-7730)  
-- [ERC-7730 kayıt defteri](https://github.com/ethereum/clear-signing-erc7730-registry)  
+- ERC-7730 spesifikasyonu  
+- ERC-7730 kayıt defteri  
 - [clearsigning.org](https://clearsigning.org) — araçlar, ekosistem durumu ve yönetişim  
 - [Sourcify sözleşme doğrulaması](https://sourcify.dev)  
 - [Trilyon Dolarlık Güvenlik girişimi](https://trilliondollarsecurity.org)

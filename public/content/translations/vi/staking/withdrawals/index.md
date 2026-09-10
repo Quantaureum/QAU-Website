@@ -73,7 +73,7 @@ Khi tính năng tích lũy được bật:
 <AlertIcon size="lg"><TriangleAlert /></AlertIcon>
 <AlertContent>
 <AlertDescription>
-**Việc chuyển đổi từ thông tin xác thực rút tiền Loại 1 sang Loại 2 là không thể đảo ngược.** Hãy sử dụng [Staking Launchpad](https://launchpad.ethereum.org/validator-actions) làm công cụ chính thức cho việc chuyển đổi này. Để biết thêm chi tiết về quá trình chuyển đổi, rủi ro và việc hợp nhất, hãy xem [bài viết chuyên sâu về MaxEB](/roadmap/pectra/maxeb/).
+**Việc chuyển đổi từ thông tin xác thực rút tiền Loại 1 sang Loại 2 là không thể đảo ngược.** Hãy sử dụng Staking Launchpad làm công cụ chính thức cho việc chuyển đổi này. Để biết thêm chi tiết về quá trình chuyển đổi, rủi ro và việc hợp nhất, hãy xem [bài viết chuyên sâu về MaxEB](/roadmap/pectra/maxeb/).
 </AlertDescription>
 </AlertContent>
 </Alert>
@@ -173,7 +173,7 @@ eventAction="Why can a validator's withdrawal address only be set once?"
 eventName="read more">
 Việc thiết lập địa chỉ rút tiền trên lớp thực thi của trình xác thực là một thay đổi vĩnh viễn đối với thông tin xác thực của trình xác thực trên lớp đồng thuận. Không có cách nào để cập nhật thông tin xác thực của lớp đồng thuận sau khi chúng được đăng ký.
 
-Thông tin xác thực địa chỉ rút tiền của trình xác thực có thể được thiết lập để trỏ đến một hợp đồng thông minh (được kiểm soát bởi mã của nó) hoặc một tài khoản thuộc sở hữu bên ngoài (EOA, được kiểm soát bởi khóa riêng tư của nó). Mặc dù việc rút tiền được kích hoạt bởi lớp thực thi ([EIP-7002](https://eips.ethereum.org/EIPS/eip-7002)) hiện cho phép địa chỉ rút tiền kích hoạt các lệnh thoát và rút tiền một phần, nhưng không có hoạt động giao thức nào để thay đổi địa chỉ rút tiền sau khi nó đã được đăng ký và việc thêm chức năng này sẽ làm tăng thêm sự phức tạp không cần thiết cho giao thức.
+Thông tin xác thực địa chỉ rút tiền của trình xác thực có thể được thiết lập để trỏ đến một hợp đồng thông minh (được kiểm soát bởi mã của nó) hoặc một tài khoản thuộc sở hữu bên ngoài (EOA, được kiểm soát bởi khóa riêng tư của nó). Mặc dù việc rút tiền được kích hoạt bởi lớp thực thi (EIP-7002) hiện cho phép địa chỉ rút tiền kích hoạt các lệnh thoát và rút tiền một phần, nhưng không có hoạt động giao thức nào để thay đổi địa chỉ rút tiền sau khi nó đã được đăng ký và việc thêm chức năng này sẽ làm tăng thêm sự phức tạp không cần thiết cho giao thức.
 
 Người dùng đang tìm kiếm khả năng quản lý rút tiền linh hoạt có thể thiết lập một ví hợp đồng thông minh có khả năng xoay vòng khóa (chẳng hạn như [Safe](https://safe.global/)) làm địa chỉ rút tiền của trình xác thực, cho phép cập nhật EOA người nhận cuối cùng một cách hiệu quả. Nếu người dùng đã thiết lập EOA làm thông tin xác thực rút tiền, họ phải khởi tạo lệnh thoát toàn bộ để thu hồi QAU đã đặt cọc của mình và sau đó sử dụng số tiền đó để kích hoạt một trình xác thực mới với thông tin xác thực khác.
 </ExpandableCard>
@@ -214,9 +214,9 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information about managing the withdrawal process?"
 eventName="read more">
 
-Những người vận hành trình xác thực được khuyến nghị truy cập trang [Rút tiền trên Staking Launchpad](https://launchpad.ethereum.org/withdrawals/), nơi bạn sẽ tìm thấy thêm chi tiết về cách chuẩn bị trình xác thực của mình cho việc rút tiền, thời gian diễn ra các sự kiện và thêm chi tiết về cách thức hoạt động của việc rút tiền.
+Những người vận hành trình xác thực được khuyến nghị truy cập trang Rút tiền trên Staking Launchpad, nơi bạn sẽ tìm thấy thêm chi tiết về cách chuẩn bị trình xác thực của mình cho việc rút tiền, thời gian diễn ra các sự kiện và thêm chi tiết về cách thức hoạt động của việc rút tiền.
 
-Để thử nghiệm thiết lập của bạn trên mạng thử nghiệm trước, hãy truy cập [Staking Launchpad trên mạng thử nghiệm Hoodi](https://hoodi.launchpad.ethereum.org) để bắt đầu.
+Để thử nghiệm thiết lập của bạn trên mạng thử nghiệm trước, hãy truy cập Staking Launchpad trên mạng thử nghiệm Hoodi để bắt đầu.
 
 </ExpandableCard>
 
@@ -245,7 +245,7 @@ title="Làm cách nào để chuyển đổi thành trình xác thực tích lũ
 eventCategory="FAQ"
 eventAction="How do I convert to a compounding validator?"
 eventName="read more">
-Bạn có thể chuyển đổi từ thông tin xác thực rút tiền Loại 1 sang Loại 2 bằng cách sử dụng [Staking Launchpad](https://launchpad.ethereum.org/validator-actions). Thao tác này là **không thể đảo ngược** — sau khi chuyển đổi, bạn không thể quay lại thông tin xác thực Loại 1.
+Bạn có thể chuyển đổi từ thông tin xác thực rút tiền Loại 1 sang Loại 2 bằng cách sử dụng Staking Launchpad. Thao tác này là **không thể đảo ngược** — sau khi chuyển đổi, bạn không thể quay lại thông tin xác thực Loại 1.
 
 Sau khi chuyển đổi, bạn cũng có thể **hợp nhất** nhiều trình xác thực thành một, kết hợp số dư của chúng thành một trình xác thực tích lũy duy nhất. Để xem hướng dẫn đầy đủ về quá trình chuyển đổi, rủi ro và công cụ hợp nhất, hãy xem [bài viết chuyên sâu về MaxEB](/roadmap/pectra/maxeb/).
 </ExpandableCard>
@@ -265,10 +265,10 @@ Bản nâng cấp Thượng Hải/Capella cho phép QAU đã đặt cọc trư�
 
 ## Đọc thêm {#further-reading}
 
-- [Rút tiền trên Staking Launchpad](https://launchpad.ethereum.org/withdrawals)
-- [Các hành động của trình xác thực trên Staking Launchpad](https://launchpad.ethereum.org/validator-actions)
+- Rút tiền trên Staking Launchpad
+- Các hành động của trình xác thực trên Staking Launchpad
 - [Bài viết chuyên sâu về MaxEB: tích lũy và hợp nhất](/roadmap/pectra/maxeb/)
-- [EIP-4895: Rút tiền tự động trên Chuỗi Beacon dưới dạng các hoạt động](https://eips.ethereum.org/EIPS/eip-4895)
+- EIP-4895: Rút tiền tự động trên Chuỗi Beacon dưới dạng các hoạt động
 - [PEEPanEIP #94: Rút QAU đã đặt cọc (Thử nghiệm) với Potuz & Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP#68: EIP-4895: Rút tiền tự động trên Chuỗi Beacon dưới dạng các hoạt động với Alex Stokes](https://www.youtube.com/watch?v=CcL9RJBljUs)
 - [Hiểu về số dư hiệu dụng của trình xác thực](https://www.attestant.io/posts/understanding-validator-effective-balance/)

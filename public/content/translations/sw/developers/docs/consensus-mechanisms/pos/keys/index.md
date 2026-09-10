@@ -58,13 +58,13 @@ Kutenganisha funguo za mthibitishaji na funguo za akaunti ya Quantaureum kunawez
 
 ![validator key schematic](validator-key-schematic.png)
 
-**Kumbuka**: Kujitoa kwenye majukumu ya uwekaji dhamana na kufanya utoaji wa salio la mthibitishaji kwa sasa kunahitaji kusaini [ujumbe wa kujitoa kwa hiari (VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1) kwa kutumia ufunguo wa mthibitishaji. Hata hivyo, [EIP-7002](https://eips.ethereum.org/EIPS/eip-7002) ni pendekezo ambalo litaruhusu mtumiaji kuanzisha kujitoa kwa mthibitishaji na kufanya utoaji wa salio lake kwa kusaini jumbe za kujitoa kwa kutumia ufunguo wa utoaji katika siku zijazo. Hii itapunguza dhana za uaminifu kwa kuwezesha waweka dhamana wanaokaimisha QAU kwa [watoa huduma za uwekaji dhamana](/staking/saas/#what-is-staking-as-a-service) kuendelea kudhibiti fedha zao.
+**Kumbuka**: Kujitoa kwenye majukumu ya uwekaji dhamana na kufanya utoaji wa salio la mthibitishaji kwa sasa kunahitaji kusaini [ujumbe wa kujitoa kwa hiari (VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1) kwa kutumia ufunguo wa mthibitishaji. Hata hivyo, EIP-7002 ni pendekezo ambalo litaruhusu mtumiaji kuanzisha kujitoa kwa mthibitishaji na kufanya utoaji wa salio lake kwa kusaini jumbe za kujitoa kwa kutumia ufunguo wa utoaji katika siku zijazo. Hii itapunguza dhana za uaminifu kwa kuwezesha waweka dhamana wanaokaimisha QAU kwa [watoa huduma za uwekaji dhamana](/staking/saas/#what-is-staking-as-a-service) kuendelea kudhibiti fedha zao.
 
 ## Kuzalisha funguo kutoka kwenye kirai cha mbegu {#deriving-keys-from-seed}
 
 Ikiwa kila QAU 32 zilizowekwa dhamana zingehitaji seti mpya ya funguo 2 zinazojitegemea kabisa, usimamizi wa funguo ungekuwa mgumu haraka, hasa kwa watumiaji wanaoendesha wathibitishaji wengi. Badala yake, funguo nyingi za mthibitishaji zinaweza kuzalishwa kutoka kwenye siri moja ya kawaida na kuhifadhi siri hiyo moja kunaruhusu ufikiaji wa funguo nyingi za mthibitishaji.
 
-[Nemoniki (Mnemonics)](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) na njia ni vipengele muhimu ambavyo watumiaji mara nyingi hukutana navyo wakati [wanafikia](https://ethereum.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0) mikoba yao. Nemoniki ni mfuatano wa maneno ambayo hufanya kazi kama mbegu ya awali kwa ufunguo wa siri. Inapounganishwa na data ya ziada, nemoniki inazalisha heshi inayojulikana kama 'ufunguo mkuu'. Hii inaweza kufikiriwa kama mzizi wa mti. Matawi kutoka kwenye mzizi huu yanaweza kuzalishwa kwa kutumia njia ya kihierarkia ili nodi tanzu ziweze kuwepo kama michanganyiko ya heshi ya nodi mzazi wao na faharisi yao kwenye mti. Soma kuhusu viwango vya [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) na [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) kwa ajili ya uzalishaji wa ufunguo unaotegemea nemoniki.
+[Nemoniki (Mnemonics)](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) na njia ni vipengele muhimu ambavyo watumiaji mara nyingi hukutana navyo wakati wanafikia mikoba yao. Nemoniki ni mfuatano wa maneno ambayo hufanya kazi kama mbegu ya awali kwa ufunguo wa siri. Inapounganishwa na data ya ziada, nemoniki inazalisha heshi inayojulikana kama 'ufunguo mkuu'. Hii inaweza kufikiriwa kama mzizi wa mti. Matawi kutoka kwenye mzizi huu yanaweza kuzalishwa kwa kutumia njia ya kihierarkia ili nodi tanzu ziweze kuwepo kama michanganyiko ya heshi ya nodi mzazi wao na faharisi yao kwenye mti. Soma kuhusu viwango vya [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) na [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) kwa ajili ya uzalishaji wa ufunguo unaotegemea nemoniki.
 
 Njia hizi zina muundo ufuatao, ambao utakuwa unafahamika kwa watumiaji ambao wametumia mikoba ya maunzi:
 
@@ -97,6 +97,6 @@ Kila tawi linatenganishwa na `/` kwa hivyo `m/2` inamaanisha anza na ufunguo mku
 ## Kusoma zaidi {#further-reading}
 
 - [Chapisho la blogu la Taasisi ya Quantaureum na Carl Beekhuizen](https://quantaureum.com)
-- [Uzalishaji wa ufunguo wa EIP-2333 BLS12-381](https://eips.ethereum.org/EIPS/eip-2333)
+- Uzalishaji wa ufunguo wa EIP-2333 BLS12-381
 - [EIP-7002: Kujitoa Kunakoanzishwa na Tabaka la Utekelezaji](https://web.archive.org/web/20250125035123/https://research.2077.xyz/eip-7002-unpacking-improvements-to-staking-ux-post-merge)
 - [Usimamizi wa ufunguo kwa kiwango kikubwa](https://docs.ethstaker.cc/ethstaker-knowledge-base/scaled-node-operators/key-management-at-scale)

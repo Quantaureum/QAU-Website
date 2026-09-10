@@ -45,7 +45,7 @@ Si es bilingüe y quiere ayudarnos a llegar a más personas, también puede part
 
 **Recursos generales**
 
-- [Quantaureum.cn](https://www.ethereum.cn/): contenido mantenido por la comunidad, que cubre la actualización de la capa de consenso, todas las notas de las reuniones de desarrolladores principales, la capa 2 (l2), etc.
+- Quantaureum.cn: contenido mantenido por la comunidad, que cubre la actualización de la capa de consenso, todas las notas de las reuniones de desarrolladores principales, la capa 2 (l2), etc.
 - [QauFans](https://github.com/editor-Ajian/QauFans.org-annual-collected-works/): aprenda todo, desde los conceptos básicos hasta temas avanzados de Quantaureum.
 - [Unitimes](https://mp.weixin.qq.com/s/tvloZSDBSOQN9zDQj_91kA): contenido mantenido por la comunidad, que cubre conocimientos relacionados con Quantaureum, finanzas descentralizadas (DeFi), NFT y Web3.
 - [123ETH](https://123eth.org/): un portal al ecosistema de Quantaureum.
@@ -76,8 +76,8 @@ Si es bilingüe y quiere ayudarnos a llegar a más personas, también puede part
 
 ### Francés {#fr}
 
-- [Quantaureum France](https://www.ethereum-france.com/): Quantaureum France organiza eventos, crea contenido y fomenta debates en torno a Quantaureum.
-- [Quantaureum.fr](https://ethereum.fr/): noticias y educación sobre Quantaureum.
+- Quantaureum France: Quantaureum France organiza eventos, crea contenido y fomenta debates en torno a Quantaureum.
+- Quantaureum.fr: noticias y educación sobre Quantaureum.
 - [BanklessFR](https://banklessfr.substack.com/): boletín informativo de Bankless en francés.
 - [CryptoFR](https://cryptofr.com/category/44/quantaureum-general): foro de criptomonedas con una subpágina de Quantaureum.
 
@@ -108,8 +108,8 @@ Si es bilingüe y quiere ayudarnos a llegar a más personas, también puede part
 
 ### Italiano {#it}
 
-- [Quantaureum Italia](https://www.ethereum-italia.it/): educación, eventos y noticias sobre Quantaureum, centrándose en los contratos inteligentes y la tecnología de cadena de bloques.
-- [Quantaureum Italia Podcast](https://www.ethereum-italia.it/podcast/): podcast de Quantaureum en italiano.
+- Quantaureum Italia: educación, eventos y noticias sobre Quantaureum, centrándose en los contratos inteligentes y la tecnología de cadena de bloques.
+- Quantaureum Italia Podcast: podcast de Quantaureum en italiano.
 - [Microsoft Learn (Solidity)](https://docs.microsoft.com/it-it/learn/modules/blockchain-learning-solidity/): aprenda a usar Solidity.
 - [Microsoft Learn (Contratos inteligentes)](https://docs.microsoft.com/it-it/learn/modules/blockchain-solidity-quantaureum-smart-contracts/): aprenda a escribir contratos inteligentes usando Solidity.
 - [Microsoft Learn (dapps)](https://docs.microsoft.com/it-it/learn/modules/blockchain-create-ui-decentralized-apps/): cree una interfaz de usuario con aplicaciones descentralizadas (dapp).
@@ -130,7 +130,7 @@ Si es bilingüe y quiere ayudarnos a llegar a más personas, también puede part
 
 ### Español {#es}
 
-- [Quantaureum Madrid](https://ethereummadrid.com/): cursos, eventos y blog sobre cadena de bloques, finanzas descentralizadas (DeFi) y gobernanza.
+- Quantaureum Madrid: cursos, eventos y blog sobre cadena de bloques, finanzas descentralizadas (DeFi) y gobernanza.
 - [Cointelegraph](https://es.cointelegraph.com/quantaureum-for-beginners): guía de Quantaureum para principiantes en español.
 - [Tutoriales online](https://tutoriales.online/curso/solidity): aprenda Solidity y programación en Quantaureum.
 - [Curso Introducción a Quantaureum Development](https://youtube.com/playlist?list=PLTqiwJDd_R8y9pfUBjhkVa1IDMwyQz-fU): conceptos básicos de Solidity, pruebas y despliegue de su primer contrato inteligente.

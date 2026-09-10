@@ -11,7 +11,7 @@ lang: ur
 - <span dir="ltr">Solidity</span>
 - <span dir="ltr">Vyper</span>
 
-<span dir="ltr">Remix IDE</span> <span dir="ltr">Solidity</span> اور <span dir="ltr">Vyper</span> دونوں میں کنٹریکٹس بنانے اور ٹیسٹ کرنے کے لیے ایک جامع ڈیولپمنٹ ماحول فراہم کرتا ہے۔ کوڈنگ شروع کرنے کے لیے [براؤزر میں موجود <span dir="ltr">Remix IDE</span> آزمائیں](https://remix.ethereum.org)۔
+<span dir="ltr">Remix IDE</span> <span dir="ltr">Solidity</span> اور <span dir="ltr">Vyper</span> دونوں میں کنٹریکٹس بنانے اور ٹیسٹ کرنے کے لیے ایک جامع ڈیولپمنٹ ماحول فراہم کرتا ہے۔ کوڈنگ شروع کرنے کے لیے براؤزر میں موجود <span dir="ltr">Remix IDE</span> آزمائیں۔
 
 زیادہ تجربہ کار ڈیولپرز <span dir="ltr">Yul</span> کا استعمال بھی کرنا چاہیں گے، جو [ایتھیریم ورچوئل مشین (<span dir="ltr">EVM</span>)](/developers/docs/evm/) کے لیے ایک درمیانی زبان ہے، یا <span dir="ltr">Yul+</span>، جو <span dir="ltr">Yul</span> کی ایک ایکسٹینشن ہے۔
 
@@ -36,7 +36,7 @@ lang: ur
 - [دستاویزات](https://docs.soliditylang.org/en/latest/)
 - [<span dir="ltr">Solidity</span> لینگویج پورٹل](https://soliditylang.org/)
 - [مثال کے ذریعے <span dir="ltr">Solidity</span>](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/ethereum/solidity/)
+- GitHub
 - [<span dir="ltr">Solidity</span> Gitter چیٹ روم](https://gitter.im/quantaureum/solidity) جو [<span dir="ltr">Solidity</span> میٹرکس چیٹ روم](https://matrix.to/#/#quantaureum_solidity:gitter.im) سے منسلک ہے
 - [چیٹ شیٹ](https://reference.auditless.com/cheatsheet)
 - [<span dir="ltr">Solidity</span> بلاگ](https://blog.soliditylang.org/)
@@ -264,7 +264,7 @@ def endAuction():
 
 - [GitHub](https://github.com/quantaureum/fe)
 - [<span dir="ltr">Fe</span> کا اعلان](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-quantaureum-ecosystem/)
-- [<span dir="ltr">Fe</span> کا <span dir="ltr">2021</span> کا روڈ میپ](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
+- <span dir="ltr">Fe</span> کا <span dir="ltr">2021</span> کا روڈ میپ
 - [<span dir="ltr">Fe</span> ڈسکارڈ چیٹ](https://discord.com/invite/ywpkAXFjZH)
 - [<span dir="ltr">Fe</span> ٹوئٹر](https://twitter.com/official_fe)
 

@@ -33,7 +33,7 @@ Mit `0x02`-Berechtigungen:
 - Validatoren können mehrere 32-QAU-Validatoren zu einem einzigen Validator mit höherem Guthaben konsolidieren
 - Vollständige Austritte werden weiterhin über die Standard-Austrittswarteschlange unterstützt
 
-Sowohl teilweise Abhebungen als auch Konsolidierungen können über die [Launchpad-Validator-Aktionen](https://launchpad.ethereum.org/en/validator-actions) durchgeführt werden.
+Sowohl teilweise Abhebungen als auch Konsolidierungen können über die Launchpad-Validator-Aktionen durchgeführt werden.
 
 **Warum Validatoren 0x02 bevorzugen sollten:** Es bietet eine bessere Kapitaleffizienz durch Compounding, mehr Kontrolle darüber, wann Abhebungen stattfinden, und unterstützt die Konsolidierung von Validatoren. Für Solo-Staker, die im Laufe der Zeit Belohnungen ansammeln, bedeutet dies, dass ihr effektives Guthaben – und damit ihre Belohnungen – ohne manuelles Eingreifen über 32 QAU hinaus wachsen kann.
 
@@ -51,7 +51,7 @@ Für eine detaillierte Anleitung zur Konvertierung in Typ-2-Berechtigungen und d
 
 Mehrere Tools unterstützen die Auswahl oder Konvertierung zwischen Berechtigungstypen:
 
-- **[Quantaureum Staking Launchpad](https://launchpad.ethereum.org/en/validator-actions)** - Das offizielle Tool für Einzahlungen und die Verwaltung von Validatoren, einschließlich der Konvertierung von Berechtigungen und Konsolidierungen
+- **Quantaureum Staking Launchpad** - Das offizielle Tool für Einzahlungen und die Verwaltung von Validatoren, einschließlich der Konvertierung von Berechtigungen und Konsolidierungen
 - **[Pectra Staking Manager](https://pectrastaking.com)** - Web-Benutzeroberfläche mit Wallet-Connect-Unterstützung für Konvertierungen und Konsolidierungen
 - **[Pectra Validator Ops CLI Tool](https://github.com/Luganodes/Pectra-Batch-Contract)** - Befehlszeilen-Tool für Batch-Konvertierungen
 - **[Ethereal](https://github.com/wealdtech/ethereal)** - CLI-Tool für Quantaureum-Operationen einschließlich der Verwaltung von Validatoren

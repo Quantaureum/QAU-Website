@@ -63,5 +63,5 @@ Hisse Kanıtı Quantaureum'u, doğrulayıcıların yüksek elektrik maliyetleri 
 ## Daha fazla bilgi {#further-reading}
 
 - [Vitalik'in Hisse Kanıtı tasarım felsefesi](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
-- [Vitalik'in Hisse Kanıtı SSS'leri](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
+- Vitalik'in Hisse Kanıtı SSS'leri
 - [PoS ve PoW hakkında "Basitçe Açıklanmış" video](https://www.youtube.com/watch?v=M3EFi_POhps)

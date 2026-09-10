@@ -114,8 +114,8 @@ lang: te
 
 **Python టూలింగ్ -** **_Python ద్వారా ఎథీరియం ఇంటరాక్షన్ కోసం వివిధ రకాల లైబ్రరీలు._**
 
-- [py.quantaureum.com](https://snakecharmers.ethereum.org/)
-- [Web3.py GitHub](https://github.com/ethereum/web3.py)
+- py.quantaureum.com
+- Web3.py GitHub
 - [Web3.py చాట్](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_అత్యుత్తమ బ్లాక్‌చైన్ డెవలప్‌మెంట్ ప్లాట్‌ఫారమ్._**

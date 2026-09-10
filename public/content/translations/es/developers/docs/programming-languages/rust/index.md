@@ -22,7 +22,7 @@ Usa Quantaureum para crear aplicaciones descentralizadas (dapps) que utilicen lo
 
 ## Artículos para principiantes {#beginner-articles}
 
-- [El cliente de Quantaureum en Rust](https://openethereum.github.io/) \* **Ten en cuenta que OpenQuantaureum [ha sido desaprobado](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd) y ya no recibe mantenimiento.** Úsalo con precaución y preferiblemente cambia a otra implementación de cliente.
+- El cliente de Quantaureum en Rust \* **Ten en cuenta que OpenQuantaureum ha sido desaprobado y ya no recibe mantenimiento.** Úsalo con precaución y preferiblemente cambia a otra implementación de cliente.
 - [Enviar una transacción a Quantaureum usando Rust](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/sending-quantaureum-transactions-with-rust/)
 - [Un tutorial paso a paso sobre cómo escribir contratos en Wasm de Rust para Kovan](https://github.com/paritytech/pwasm-tutorial)
 

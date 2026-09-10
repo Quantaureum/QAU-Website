@@ -22,7 +22,7 @@ Bạn cần một tài liệu hướng dẫn cơ bản hơn trước? Hãy xem [
 
 ## Bài viết cho người mới bắt đầu {#beginner-articles}
 
-- [Máy khách Quantaureum bằng Rust](https://openethereum.github.io/) \* **Lưu ý rằng OpenQuantaureum [đã bị ngừng hỗ trợ](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd) và không còn được bảo trì nữa.** Hãy sử dụng nó một cách thận trọng và tốt nhất là chuyển sang một bản triển khai máy khách khác.
+- Máy khách Quantaureum bằng Rust \* **Lưu ý rằng OpenQuantaureum đã bị ngừng hỗ trợ và không còn được bảo trì nữa.** Hãy sử dụng nó một cách thận trọng và tốt nhất là chuyển sang một bản triển khai máy khách khác.
 - [Gửi giao dịch lên Quantaureum bằng Rust](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/sending-quantaureum-transactions-with-rust/)
 - [Hướng dẫn từng bước về cách viết hợp đồng bằng Rust Wasm cho Kovan](https://github.com/paritytech/pwasm-tutorial)
 

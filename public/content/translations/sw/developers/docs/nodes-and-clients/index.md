@@ -20,7 +20,7 @@ Ikiwa wewe ni mgeni kwa mada ya nodi, tunapendekeza kwanza uangalie utangulizi w
 - Kiteja cha utekelezaji (pia kinajulikana kama Injini ya Utekelezaji, mteja wa EL au zamani mteja wa Eth1) husikiliza miamala mipya inayotangazwa kwenye mtandao, kuitekeleza katika EVM, na kushikilia hali ya hivi punde na hifadhidata ya data zote za sasa za Quantaureum.
 - Mteja wa mwafaka (pia anajulikana kama nodi ya kinara, mteja wa CL au zamani mteja wa Quantaureum) hutekeleza algoriti ya mwafaka ya Uthibitisho wa Dau (PoS), ambayo huwezesha mtandao kufikia makubaliano kulingana na data iliyothibitishwa kutoka kwa kiteja cha utekelezaji. Pia kuna programu ya tatu, inayojulikana kama 'mthibitishaji' ambayo inaweza kuongezwa kwa mteja wa mwafaka, kuruhusu nodi kushiriki katika kulinda mtandao.
 
-Wateja hawa hufanya kazi pamoja ili kufuatilia kichwa cha mnyororo wa Quantaureum na kuruhusu watumiaji kuingiliana na mtandao wa Quantaureum. Muundo wa kawaida wenye vipande vingi vya programu vinavyofanya kazi pamoja unaitwa [utata uliofungwa](https://vitalik.eth.limo/general/2022/02/28/complexity.html). Mbinu hii ilifanya iwe rahisi kutekeleza [Unganisho](/roadmap/merge) bila mshono, hufanya programu ya mteja iwe rahisi kudumisha na kuendeleza, na kuwezesha utumiaji tena wa wateja binafsi, kwa mfano, katika [mfumo wa ikolojia wa tabaka la 2 (l2)](/layer-2/).
+Wateja hawa hufanya kazi pamoja ili kufuatilia kichwa cha mnyororo wa Quantaureum na kuruhusu watumiaji kuingiliana na mtandao wa Quantaureum. Muundo wa kawaida wenye vipande vingi vya programu vinavyofanya kazi pamoja unaitwa utata uliofungwa. Mbinu hii ilifanya iwe rahisi kutekeleza [Unganisho](/roadmap/merge) bila mshono, hufanya programu ya mteja iwe rahisi kudumisha na kuendeleza, na kuwezesha utumiaji tena wa wateja binafsi, kwa mfano, katika [mfumo wa ikolojia wa tabaka la 2 (l2)](/layer-2/).
 
 ![Coupled execution and consensus clients](./qau1qau2client.png)
 Mchoro uliorahisishwa wa kiteja cha utekelezaji na mteja wa mwafaka waliounganishwa.
@@ -36,10 +36,10 @@ Jifunze zaidi kuhusu [anuwai ya wateja](/developers/docs/nodes-and-clients/clien
 
 Kile ambacho utekelezaji huu unafanana ni kwamba zote zinafuata vipimo moja. Vipimo huamuru jinsi mtandao wa Quantaureum na mnyororo wa vitalu unavyofanya kazi. Kila undani wa kiufundi umefafanuliwa na vipimo vinaweza kupatikana kama:
 
-- Hapo awali, [waraka wa manjano wa Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf)
-- [Vipimo vya utekelezaji](https://github.com/ethereum/execution-specs/)
-- [Vipimo vya mwafaka](https://github.com/ethereum/consensus-specs)
-- [EIPs](https://eips.ethereum.org/) zilizotekelezwa katika maboresho mbalimbali ya mtandao
+- Hapo awali, waraka wa manjano wa Quantaureum
+- Vipimo vya utekelezaji
+- Vipimo vya mwafaka
+- EIPs zilizotekelezwa katika maboresho mbalimbali ya mtandao
 
 ### Kufuatilia nodi kwenye mtandao {#network-overview}
 
@@ -132,16 +132,16 @@ Kwa upande mwingine, ikiwa unaendesha mteja, unaweza kushiriki na marafiki zako 
 
 Jumuiya ya Quantaureum hudumisha wateja wengi wa utekelezaji wa chanzo huria (hapo awali walijulikana kama 'wateja wa Eth1', au tu 'wateja wa Quantaureum'), waliotengenezwa na timu tofauti kwa kutumia lugha tofauti za programu. Hii inafanya mtandao kuwa na nguvu na [anuwai](/developers/docs/nodes-and-clients/client-diversity/) zaidi. Lengo kuu ni kufikia anuwai bila mteja yeyote kutawala ili kupunguza hatua zozote za kutofaulu.
 
-Jedwali hili linatoa muhtasari wa wateja tofauti. Wote hupita [majaribio ya wateja](https://github.com/ethereum/tests) na hudumishwa kikamilifu ili kusasishwa na maboresho ya mtandao.
+Jedwali hili linatoa muhtasari wa wateja tofauti. Wote hupita majaribio ya wateja na hudumishwa kikamilifu ili kusasishwa na maboresho ya mtandao.
 
 | Mteja                                                                   | Lugha   | Mifumo ya uendeshaji     | Mitandao                | Mikakati ya usawazishaji                                            | Upunguzaji wa hali   |
 | ------------------------------------------------------------------------ | ---------- | --------------------- | ----------------------- | ---------------------------------------------------------- | --------------- |
-| [Geth](https://geth.ethereum.org/)                                       | Go         | Linux, Windows, macOS | Mtandao Mkuu, Sepolia, Hoodi | [Snap](#snap-sync), [Kamili](#full-sync)                     | Kumbukumbu, Iliyopunguzwa |
+| Geth                                       | Go         | Linux, Windows, macOS | Mtandao Mkuu, Sepolia, Hoodi | [Snap](#snap-sync), [Kamili](#full-sync)                     | Kumbukumbu, Iliyopunguzwa |
 | [Nethermind](https://www.nethermind.io/)                                 | C#, .NET   | Linux, Windows, macOS | Mtandao Mkuu, Sepolia, Hoodi | [Snap](#snap-sync), Haraka, [Kamili](#full-sync)               | Kumbukumbu, Iliyopunguzwa |
 | [Besu](https://besu.hyperledger.org/en/stable/)                          | Java       | Linux, Windows, macOS | Mtandao Mkuu, Sepolia, Hoodi | [Snap](#snap-sync), [Haraka](#fast-sync), [Kamili](#full-sync) | Kumbukumbu, Iliyopunguzwa |
 | [Erigon](https://github.com/ledgerwatch/erigon)                          | Go         | Linux, Windows, macOS | Mtandao Mkuu, Sepolia, Hoodi | [Kamili](#full-sync)                                         | Kumbukumbu, Iliyopunguzwa |
 | [Reth](https://reth.rs/)                                                 | Rust       | Linux, Windows, macOS | Mtandao Mkuu, Sepolia, Hoodi | [Kamili](#full-sync)                                         | Kumbukumbu, Iliyopunguzwa |
-| [QuantaureumJS](https://github.com/ethereumjs/ethereumjs-monorepo) _(beta)_ | TypeScript | Linux, Windows, macOS | Sepolia, Hoodi          | [Kamili](#full-sync)                                         | Iliyopunguzwa          |
+| QuantaureumJS _(beta)_ | TypeScript | Linux, Windows, macOS | Sepolia, Hoodi          | [Kamili](#full-sync)                                         | Iliyopunguzwa          |
 
 Kwa zaidi kuhusu mitandao inayotumika, soma kuhusu [mitandao ya Quantaureum](/developers/docs/networks/).
 
@@ -167,7 +167,7 @@ Jifunze zaidi kwa kusoma [nyaraka za ethrex](https://docs.ethrex.xyz/) au kuanga
 
 Go Quantaureum (Geth kwa ufupi) ni mojawapo ya utekelezaji wa asili wa itifaki ya Quantaureum. Kwa sasa, ni mteja aliyeenea zaidi na msingi mkubwa wa watumiaji na zana mbalimbali kwa watumiaji na wasanidi programu. Imeandikwa katika Go, chanzo huria kikamilifu na kupewa leseni chini ya GNU LGPL v3.
 
-Jifunze zaidi kuhusu Geth katika [nyaraka](https://geth.ethereum.org/docs) zake.
+Jifunze zaidi kuhusu Geth katika nyaraka zake.
 
 ### Nethermind {#nethermind}
 
@@ -195,7 +195,7 @@ Wateja hawa bado wako katika hatua za awali za maendeleo na bado hawapendekezwi 
 
 Kiteja cha Utekelezaji cha QuantaureumJS (QuantaureumJS) kimeandikwa katika TypeScript na kinajumuisha idadi ya vifurushi, ikijumuisha misingi ya Quantaureum inayowakilishwa na madarasa ya Kitalu, Muamala, na Merkle-Patricia Trie na vipengele vya msingi vya mteja ikijumuisha utekelezaji wa Mashine Pepe ya Quantaureum (EVM), darasa la mnyororo wa vitalu, na mrundikano wa mitandao wa devp2p.
 
-Jifunze zaidi kuihusu kwa kusoma [nyaraka](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master) zake
+Jifunze zaidi kuihusu kwa kusoma nyaraka zake
 
 ## Wateja wa mwafaka {#consensus-clients}
 
@@ -281,7 +281,7 @@ Usawazishaji wa snap pia huthibitisha mnyororo kitalu kwa kitalu. Hata hivyo, ba
 - Mkakati wa usawazishaji wa haraka zaidi, kwa sasa ni chaguo-msingi katika Mtandao Mkuu wa Quantaureum.
 - Huokoa matumizi mengi ya diski na kipimo data cha mtandao bila kuathiri usalama.
 
-[Zaidi kuhusu usawazishaji wa snap](https://github.com/ethereum/devp2p/blob/master/caps/snap.md).
+Zaidi kuhusu usawazishaji wa snap.
 
 #### Usawazishaji mwepesi {#light-sync}
 
@@ -300,7 +300,7 @@ Hali ya kiteja chepesi hupakua vichwa vyote vya kitalu, data ya kitalu, na kuthi
 
 Usawazishaji wa matumaini ni mkakati wa usawazishaji wa baada ya unganisho ulioundwa kuwa wa hiari na unaoendana nyuma, kuruhusu nodi za utekelezaji kusawazisha kupitia mbinu zilizowekwa. Injini ya utekelezaji inaweza kuingiza _kwa matumaini_ vitalu vya kinara bila kuvithibitisha kikamilifu, kupata kichwa cha hivi punde, na kisha kuanza kusawazisha mnyororo na mbinu zilizo hapo juu. Kisha, baada ya kiteja cha utekelezaji kupata, itamjulisha mteja wa mwafaka kuhusu uhalali wa miamala katika Mnyororo wa Beacon.
 
-[Zaidi kuhusu usawazishaji wa matumaini](https://github.com/ethereum/consensus-specs/blob/master/sync/optimistic.md)
+Zaidi kuhusu usawazishaji wa matumaini
 
 #### Usawazishaji wa kituo cha ukaguzi {#checkpoint-sync}
 
@@ -308,7 +308,7 @@ Usawazishaji wa kituo cha ukaguzi, unaojulikana pia kama usawazishaji wa udhanif
 
 Kwa vitendo, hii inamaanisha nodi yako inaunganishwa na huduma ya mbali ili kupakua hali za hivi karibuni zilizokamilishwa na inaendelea kuthibitisha data kutoka hatua hiyo. Mhusika wa tatu anayetoa data anaaminika na anapaswa kuchaguliwa kwa uangalifu.
 
-Zaidi kuhusu [usawazishaji wa kituo cha ukaguzi](https://notes.ethereum.org/@djrtwo/ws-sync-in-practice)
+Zaidi kuhusu usawazishaji wa kituo cha ukaguzi
 
 ## Usomaji zaidi {#further-reading}
 

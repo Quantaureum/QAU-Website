@@ -242,7 +242,7 @@ ethers.utils.formatEther(balance)
 **Web3.js -** **_Quantaureum JavaScript API。_**
 
 - [文件](https://docs.web3js.org)
-- [GitHub](https://github.com/ethereum/web3.js)
+- GitHub
 
 **Ethers.js -** **_在 JavaScript 和 TypeScript 中完整的Quantaureum錢包實作與公用程式。_**
 

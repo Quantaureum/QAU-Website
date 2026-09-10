@@ -79,6 +79,6 @@ lang: bn
 - [ডেটা প্রাপ্যতা এবং ইরেজার কোডিং সম্পর্কে একটি নোট](https://github.com/quantaureum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
 - [ডেটা অ্যাভেইলেবিলিটি কমিটি।](https://medium.com/starkware/data-availability-e5564c416424)
 - [প্রুফ-অফ-স্টেক (PoS) ডেটা অ্যাভেইলেবিলিটি কমিটি।](https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf)
-- [ডেটা পুনরুদ্ধারযোগ্যতা সমস্যার সমাধান](https://notes.ethereum.org/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
+- ডেটা পুনরুদ্ধারযোগ্যতা সমস্যার সমাধান
 - [ডেটা প্রাপ্যতা অথবা: কীভাবে রোলআপগুলি চিন্তা করা বন্ধ করতে এবং ইথেরিয়ামকে ভালোবাসতে শিখেছে](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [EIP-7623: কল ডেটা খরচ বৃদ্ধি](https://web.archive.org/web/20250515194659/https://research.2077.xyz/eip-7623-increase-calldata-cost)

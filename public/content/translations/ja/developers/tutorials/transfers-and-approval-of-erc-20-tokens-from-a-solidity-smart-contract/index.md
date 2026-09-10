@@ -8,7 +8,7 @@ breadcrumb: "ERC-20の送金"
 lang: ja
 published: 2020-04-07
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -201,7 +201,7 @@ function sell(uint256 amount) public {
 
 このチュートリアルでは、ERC-20トークンの残高とアローワンスを確認する方法、およびインターフェースを使用してERC20スマート・コントラクトの`Transfer`と`TransferFrom`を呼び出す方法を見てきました。
 
-トランザクションを作成した後は、コントラクトに対して行われた[トランザクションを待機して詳細を取得する](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/)ためのJavaScriptチュートリアルや、ABIがある限り、[トークンの送金やその他のイベントによって生成されたイベントをデコードするためのチュートリアル](https://ethereumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/)があります。
+トランザクションを作成した後は、コントラクトに対して行われたトランザクションを待機して詳細を取得するためのJavaScriptチュートリアルや、ABIがある限り、トークンの送金やその他のイベントによって生成されたイベントをデコードするためのチュートリアルがあります。
 
 以下は、このチュートリアルの完全なコードです。
 

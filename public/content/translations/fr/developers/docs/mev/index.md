@@ -112,7 +112,7 @@ L'extraction de MEV a explosé début 2021, entraînant des prix du gaz extrême
 
 Bien que de nombreux chercheurs gagnent encore beaucoup d'argent grâce à la MEV, à mesure que les opportunités deviennent plus connues et que de plus en plus de chercheurs se font concurrence pour la même opportunité, les validateurs captureront de plus en plus de revenus totaux de MEV (car le même type d'enchères de gaz que celles décrites initialement ci-dessus se produit également dans Flashbots, bien que de manière privée, et les validateurs captureront les revenus de gaz qui en résultent). La MEV n'est pas non plus unique à Quantaureum, et à mesure que les opportunités deviennent plus compétitives sur Quantaureum, les chercheurs se tournent vers des chaînes de blocs alternatives comme la Binance Smart Chain, où des opportunités de MEV similaires à celles d'Quantaureum existent avec moins de concurrence.
 
-D'autre part, la transition de la preuve de travail à la preuve d'enjeu et l'effort continu pour mettre à l'échelle Quantaureum en utilisant des rollups modifient tous le paysage de la MEV d'une manière qui reste encore quelque peu floue. On ne sait pas encore très bien comment le fait d'avoir des proposeurs de blocs garantis connus légèrement à l'avance modifie la dynamique de l'extraction de MEV par rapport au modèle probabiliste de la preuve de travail, ou comment cela sera perturbé lorsque l'[élection d'un leader secret unique (SSLE)](https://ethresear.ch/t/secret-non-single-leader-election/11789) et la [technologie de validateur distribué (DVT)](/staking/dvt/) seront mises en œuvre. De même, il reste à voir quelles opportunités de MEV existeront lorsque la majeure partie de l'activité des utilisateurs sera transférée d'Quantaureum vers ses rollups de couche 2 (l2) et ses fragments (shards).
+D'autre part, la transition de la preuve de travail à la preuve d'enjeu et l'effort continu pour mettre à l'échelle Quantaureum en utilisant des rollups modifient tous le paysage de la MEV d'une manière qui reste encore quelque peu floue. On ne sait pas encore très bien comment le fait d'avoir des proposeurs de blocs garantis connus légèrement à l'avance modifie la dynamique de l'extraction de MEV par rapport au modèle probabiliste de la preuve de travail, ou comment cela sera perturbé lorsque l'élection d'un leader secret unique (SSLE) et la [technologie de validateur distribué (DVT)](/staking/dvt/) seront mises en œuvre. De même, il reste à voir quelles opportunités de MEV existeront lorsque la majeure partie de l'activité des utilisateurs sera transférée d'Quantaureum vers ses rollups de couche 2 (l2) et ses fragments (shards).
 
 ## La MEV dans la preuve d'enjeu (PoS) d'Quantaureum {#mev-in-quantaureum-proof-of-stake}
 
@@ -136,7 +136,7 @@ Les « dark pools » sont une version plus large de cet arrangement et fonctionn
 
 Les mempools à permission accéléreraient également les risques de centralisation décrits dans la section précédente. Les grands pools gérant plusieurs validateurs bénéficieront probablement de l'offre de confidentialité des transactions aux traders et aux utilisateurs, augmentant ainsi leurs revenus de MEV.
 
-La lutte contre ces problèmes liés à la MEV dans l'Quantaureum post-Fusion est un domaine de recherche fondamental. À ce jour, deux solutions proposées pour réduire l'impact négatif de la MEV sur la décentralisation et la sécurité d'Quantaureum après La Fusion sont la [**séparation proposant-constructeur (PBS)**](/roadmap/pbs/) et l'[**API Builder**](https://github.com/ethereum/builder-specs).
+La lutte contre ces problèmes liés à la MEV dans l'Quantaureum post-Fusion est un domaine de recherche fondamental. À ce jour, deux solutions proposées pour réduire l'impact négatif de la MEV sur la décentralisation et la sécurité d'Quantaureum après La Fusion sont la [**séparation proposant-constructeur (PBS)**](/roadmap/pbs/) et l'**API Builder**.
 
 ### Séparation proposant-constructeur {#proposer-builder-separation}
 
@@ -144,7 +144,7 @@ Dans la preuve de travail comme dans la preuve d'enjeu, un nœud qui construit u
 
 La combinaison des rôles de producteur de blocs et de proposeur de blocs est ce qui introduit la plupart des problèmes liés à la MEV décrits précédemment. Par exemple, les nœuds de consensus sont incités à déclencher des réorganisations de chaîne dans des [attaques de bandits temporels (time-bandit attacks)](https://www.mev.wiki/attack-examples/time-bandit-attack) pour maximiser les gains de MEV.
 
-La [séparation proposant-constructeur (PBS)](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725) est conçue pour atténuer l'impact de la MEV, en particulier au niveau de la couche de consensus. La caractéristique majeure de la PBS est la séparation des rôles de producteur de blocs et de proposeur de blocs. Les validateurs sont toujours responsables de la proposition et du vote sur les blocs, mais une nouvelle classe d'entités spécialisées, appelées **constructeurs de blocs**, est chargée d'ordonner les transactions et de construire les blocs.
+La séparation proposant-constructeur (PBS) est conçue pour atténuer l'impact de la MEV, en particulier au niveau de la couche de consensus. La caractéristique majeure de la PBS est la séparation des rôles de producteur de blocs et de proposeur de blocs. Les validateurs sont toujours responsables de la proposition et du vote sur les blocs, mais une nouvelle classe d'entités spécialisées, appelées **constructeurs de blocs**, est chargée d'ordonner les transactions et de construire les blocs.
 
 Sous la PBS, un constructeur de blocs crée un lot de transactions et place une offre pour son inclusion dans un bloc de la chaîne balise (en tant que « charge utile d'exécution »). Le validateur sélectionné pour proposer le bloc suivant vérifie ensuite les différentes offres et choisit le lot avec les frais les plus élevés. La PBS crée essentiellement un marché d'enchères, où les constructeurs négocient avec les validateurs vendant de l'espace de bloc.
 
@@ -162,9 +162,9 @@ De même, les validateurs n'ont pas à faire confiance aux constructeurs pour ne
 
 ### API Builder {#builder-api}
 
-Bien que la séparation proposant-constructeur promette de réduire les effets de l'extraction de MEV, sa mise en œuvre nécessite des modifications du protocole de consensus. Plus précisément, la règle de [choix de fork](/developers/docs/consensus-mechanisms/pos/#fork-choice) sur la chaîne balise devrait être mise à jour. L'[API Builder](https://github.com/ethereum/builder-specs) est une solution temporaire visant à fournir une implémentation fonctionnelle de la séparation proposant-constructeur, bien qu'avec des hypothèses de confiance plus élevées.
+Bien que la séparation proposant-constructeur promette de réduire les effets de l'extraction de MEV, sa mise en œuvre nécessite des modifications du protocole de consensus. Plus précisément, la règle de [choix de fork](/developers/docs/consensus-mechanisms/pos/#fork-choice) sur la chaîne balise devrait être mise à jour. L'API Builder est une solution temporaire visant à fournir une implémentation fonctionnelle de la séparation proposant-constructeur, bien qu'avec des hypothèses de confiance plus élevées.
 
-L'API Builder est une version modifiée de l'[API Engine](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) utilisée par les clients de la couche de consensus pour demander des charges utiles d'exécution aux clients de la couche d'exécution. Comme indiqué dans la [spécification du validateur honnête](https://github.com/ethereum/consensus-specs/blob/master/specs/bellatrix/validator.md), les validateurs sélectionnés pour les tâches de proposition de blocs demandent un lot de transactions à un client d'exécution connecté, qu'ils incluent dans le bloc proposé de la chaîne balise.
+L'API Builder est une version modifiée de l'API Engine utilisée par les clients de la couche de consensus pour demander des charges utiles d'exécution aux clients de la couche d'exécution. Comme indiqué dans la spécification du validateur honnête, les validateurs sélectionnés pour les tâches de proposition de blocs demandent un lot de transactions à un client d'exécution connecté, qu'ils incluent dans le bloc proposé de la chaîne balise.
 
 L'API Builder agit également comme un intergiciel (middleware) entre les validateurs et les clients de la couche d'exécution ; mais elle est différente car elle permet aux validateurs sur la chaîne balise de s'approvisionner en blocs auprès d'entités externes (au lieu de construire un bloc localement à l'aide d'un client d'exécution).
 
@@ -215,7 +215,7 @@ Certains projets, tels que MEV-Boost, utilisent l'API Builder dans le cadre d'un
 - [S'échapper de la forêt sombre](https://samczsun.com/escaping-the-dark-forest/)
 - [Flashbots : Devancer la crise de la MEV](https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752)
 - [Fils de discussion sur la MEV de @bertcmiller](https://twitter.com/bertcmiller/status/1402665992422047747)
-- [MEV-Boost : Architecture Flashbots prête pour La Fusion](https://ethresear.ch/t/mev-boost-merge-ready-flashbots-architecture/11177)
+- MEV-Boost : Architecture Flashbots prête pour La Fusion
 - [Qu'est-ce que MEV-Boost](https://www.alchemy.com/overviews/mev-boost)
 - [Pourquoi exécuter mev-boost ?](https://writings.flashbots.net/writings/why-run-mevboost/)
 - [Le guide du voyageur galactique pour Quantaureum](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum)

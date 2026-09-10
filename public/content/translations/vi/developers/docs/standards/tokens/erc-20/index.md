@@ -42,7 +42,7 @@ Các chức năng ví dụ mà ERC-20 cung cấp:
 
 Nếu một Hợp đồng thông minh triển khai các phương thức và sự kiện sau, nó có thể được gọi là một Hợp đồng Token ERC-20 và, sau khi được triển khai, nó sẽ chịu trách nhiệm theo dõi các token được tạo ra trên Quantaureum.
 
-Từ [EIP-20](https://eips.ethereum.org/EIPS/eip-20):
+Từ EIP-20:
 
 ### Các phương thức {#methods}
 
@@ -170,7 +170,7 @@ Một số tiêu chuẩn thay thế đã ra đời từ vấn đề này như [E
 
 ## Đọc thêm {#further-reading}
 
-- [EIP-20: Tiêu chuẩn token ERC-20](https://eips.ethereum.org/EIPS/eip-20)
+- EIP-20: Tiêu chuẩn token ERC-20
 - [OpenZeppelin - Các token](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [OpenZeppelin - Triển khai ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Hướng dẫn về các token ERC20 trong Solidity](https://www.alchemy.com/overviews/erc20-solidity)

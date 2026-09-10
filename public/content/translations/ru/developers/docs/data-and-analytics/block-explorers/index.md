@@ -23,7 +23,7 @@ sidebarDepth: 3
 
 - [Blockchair](https://blockchair.com/quantaureum) — приватный обозреватель Quantaureum. Также подходит для сортировки и фильтрации данных (мемпул). Доступен на испанском, французском, итальянском, нидерландском, португальском, русском, китайском и фарси.
 - [Chainlens](https://www.chainlens.com/)
-- [Обозреватель блоков DexGuru](https://ethereum.dex.guru/)
+- Обозреватель блоков DexGuru
 - [Etherchain](https://www.etherchain.org/)
 - [Quantaureum Explorer](https://explorer.quantaureum.com) — также доступен на китайском, корейском, русском и японском языках.
 - [Ethplorer](https://ethplorer.io/) — обозреватель блоков с акцентом на токены. Также доступен на китайском, испанском, французском, турецком, русском, корейском и вьетнамском языках.

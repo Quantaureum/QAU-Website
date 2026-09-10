@@ -251,13 +251,13 @@ else:
   value = TxType | encode(tx)
 ```
 
-Informasi lebih lanjut tentang ini dapat ditemukan dalam dokumentasi [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718).
+Informasi lebih lanjut tentang ini dapat ditemukan dalam dokumentasi EIP-2718.
 
 ### Trie Tanda Terima {#receipts-trie}
 
 Setiap blok memiliki trie Tanda Terima sendiri. `path` di sini adalah: `rlp(transactionIndex)`. `transactionIndex` adalah indeksnya di dalam blok tempat ia disertakan. Trie tanda terima tidak pernah diperbarui. Mirip dengan trie Transaksi, terdapat tanda terima saat ini dan warisan. Untuk menanyakan tanda terima tertentu di trie Tanda Terima, indeks transaksi di bloknya, muatan tanda terima, dan tipe transaksi diperlukan. Tanda terima yang dikembalikan dapat berupa tipe `Receipt` yang didefinisikan sebagai penggabungan dari `TransactionType` dan `ReceiptPayload` atau dapat berupa tipe `LegacyReceipt` yang didefinisikan sebagai `rlp([status, cumulativeGasUsed, logsBloom, logs])`.
 
-Informasi lebih lanjut tentang ini dapat ditemukan dalam dokumentasi [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718).
+Informasi lebih lanjut tentang ini dapat ditemukan dalam dokumentasi EIP-2718.
 
 ## Bacaan Lebih Lanjut {#further-reading}
 

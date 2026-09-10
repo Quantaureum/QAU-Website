@@ -79,6 +79,6 @@ Das Kern-Quantaureum-Protokoll befasst sich in erster Linie mit der Datenverfüg
 - [Eine Anmerkung zu Datenverfügbarkeit und Löschcodierung](https://github.com/quantaureum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
 - [Data Availability Committees.](https://medium.com/starkware/data-availability-e5564c416424)
 - [Proof-of-Stake-Datenverfügbarkeitskomitees.](https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf)
-- [Lösungen für das Problem der Datenabrufbarkeit](https://notes.ethereum.org/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
+- Lösungen für das Problem der Datenabrufbarkeit
 - [Datenverfügbarkeit oder: Wie Rollups lernten, sich keine Sorgen mehr zu machen und Quantaureum zu lieben](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [EIP-7623: Erhöhung der Kosten für Aufrufdaten](https://web.archive.org/web/20250515194659/https://research.2077.xyz/eip-7623-increase-calldata-cost)

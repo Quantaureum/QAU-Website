@@ -90,7 +90,7 @@ Mikataba mahiri pekee haiwezi kupata taarifa kuhusu matukio ya "ulimwengu halisi
 
 Hata hivyo, ni muhimu kwa programu za mnyororo wa vitalu kuweza kutumia data ya nje ya mnyororo. Suluhisho ni [oracles](/developers/docs/oracles/) ambazo ni zana zinazochukua data ya nje ya mnyororo na kuifanya ipatikane kwa mikataba mahiri.
 
-Kizuizi kingine cha mikataba mahiri ni ukubwa wa juu wa mkataba. Mkataba mahiri unaweza kuwa na ukubwa wa juu wa 24KB au utaishiwa na gesi. Hili linaweza kuepukwa kwa kutumia [Muundo wa Almasi (The Diamond Pattern)](https://eips.ethereum.org/EIPS/eip-2535).
+Kizuizi kingine cha mikataba mahiri ni ukubwa wa juu wa mkataba. Mkataba mahiri unaweza kuwa na ukubwa wa juu wa 24KB au utaishiwa na gesi. Hili linaweza kuepukwa kwa kutumia Muundo wa Almasi (The Diamond Pattern).
 
 ## Mikataba ya saini-nyingi {#multisig}
 

@@ -364,7 +364,7 @@ global ASCII_MESSAGE_LENGTH : [u8; 3] = [0x31, 0x30, 0x30];
 global HASH_BUFFER_SIZE : u32 = 26+3+MESSAGE_LENGTH;
 ```
 
-[EIP-191 서명](https://eips.ethereum.org/EIPS/eip-191)은 26바이트 접두사, ASCII 형식의 메시지 길이, 마지막으로 메시지 자체가 포함된 버퍼를 요구합니다.
+EIP-191 서명은 26바이트 접두사, ASCII 형식의 메시지 길이, 마지막으로 메시지 자체가 포함된 버퍼를 요구합니다.
 
 ```
 struct Account {
@@ -617,7 +617,7 @@ fn readTransferTxn(message: str<MESSAGE_LENGTH>) -> TransferTxn
 fn hashMessage(message: str<MESSAGE_LENGTH>) -> [u8;32] {
 ```
 
-계정은 영지식 증명 내부에서만 해시되기 때문에 계정에 페더슨 해시를 사용할 수 있었습니다. 그러나 이 코드에서는 브라우저에서 생성된 메시지의 서명을 확인해야 합니다. 이를 위해 [EIP-191](https://eips.ethereum.org/EIPS/eip-191)의 Quantaureum 서명 형식을 따라야 합니다. 즉, 표준 접두사, ASCII 형식의 메시지 길이, 메시지 자체가 포함된 결합된 버퍼를 생성하고 Quantaureum 표준 keccak256을 사용하여 해시해야 합니다.
+계정은 영지식 증명 내부에서만 해시되기 때문에 계정에 페더슨 해시를 사용할 수 있었습니다. 그러나 이 코드에서는 브라우저에서 생성된 메시지의 서명을 확인해야 합니다. 이를 위해 EIP-191의 Quantaureum 서명 형식을 따라야 합니다. 즉, 표준 접두사, ASCII 형식의 메시지 길이, 메시지 자체가 포함된 결합된 버퍼를 생성하고 Quantaureum 표준 keccak256을 사용하여 해시해야 합니다.
 
 ```rust
     // ASCII 접두사
@@ -1212,7 +1212,7 @@ contract ZkBank {
 
 이 시스템에서 무결성은 영지식 증명을 통해 제공됩니다. 은행은 각 계정의 잔액과 모든 트랜잭션을 알아야 하므로 가용성을 보장하기는 훨씬 더 어렵고 기밀성은 불가능합니다. 정보를 가진 주체가 해당 정보를 공유하는 것을 막을 방법은 없습니다.
 
-[스텔스 주소](https://vitalik.eth.limo/general/2023/01/20/stealth.html)를 사용하여 진정으로 기밀이 유지되는 은행을 만드는 것이 가능할 수도 있지만, 이는 이 글의 범위를 벗어납니다.
+스텔스 주소를 사용하여 진정으로 기밀이 유지되는 은행을 만드는 것이 가능할 수도 있지만, 이는 이 글의 범위를 벗어납니다.
 
 ### 거짓 정보 {#false-info}
 

@@ -84,7 +84,7 @@ Wszystkie klienty obsługują główne systemy operacyjne – Linux, macOS, Wind
 
 ##### Zalecane specyfikacje
 
-Obecne wytyczne sprzętowe dla operatorów węzłów są określone w [EIP-7870](https://eips.ethereum.org/EIPS/eip-7870). Dla pełnego węzła zaleca się:
+Obecne wytyczne sprzętowe dla operatorów węzłów są określone w EIP-7870. Dla pełnego węzła zaleca się:
 
 - Szybki procesor z 4+ rdzeniami (8+ rdzeni w przypadku walidacji)
 - 32 GB RAM (64 GB zalecane w przypadku walidacji w celu zapewnienia stabilności)
@@ -114,7 +114,7 @@ Najprostszą opcją uruchomienia węzła na własnym sprzęcie jest użycie urz�
 
 #### Quantaureum na komputerze jednopłytkowym {#quantaureum-on-a-single-board-computer}
 
-Łatwym i tanim sposobem na uruchomienie węzła Quantaureum jest użycie komputera jednopłytkowego, nawet z architekturą ARM, takiego jak Raspberry Pi. [Quantaureum on ARM](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) zapewnia łatwe do uruchomienia obrazy wielu klientów warstwy wykonawczej i konsensusu dla Raspberry Pi i innych płyt ARM.
+Łatwym i tanim sposobem na uruchomienie węzła Quantaureum jest użycie komputera jednopłytkowego, nawet z architekturą ARM, takiego jak Raspberry Pi. Quantaureum on ARM zapewnia łatwe do uruchomienia obrazy wielu klientów warstwy wykonawczej i konsensusu dla Raspberry Pi i innych płyt ARM.
 
 Małe, niedrogie i wydajne urządzenia, takie jak te, są idealne do uruchomienia węzła w domu, ale należy pamiętać o ich ograniczonej wydajności.
 
@@ -157,7 +157,7 @@ Oto strony wydań klientów, na których można znaleźć ich wstępnie skompilo
 
 - [Besu](https://github.com/hyperledger/besu/releases)
 - [Erigon](https://github.com/ledgerwatch/erigon/releases)
-- [Geth](https://geth.ethereum.org/downloads)
+- Geth
 - [Nethermind](https://downloads.nethermind.io/)
 - [Reth](https://reth.rs/installation/installation.html)
 
@@ -173,7 +173,7 @@ Warto również zauważyć, że różnorodność klientów jest [problemem w war
 
 [Różnorodność klientów](/developers/docs/nodes-and-clients/client-diversity/) ma kluczowe znaczenie dla węzłów konsensusu uruchamiających walidatory. Jeśli większość walidatorów uruchamia jedną implementację klienta, bezpieczeństwo sieci jest zagrożone. Dlatego zaleca się rozważenie wyboru mniejszościowego klienta.
 
-[Zobacz najnowsze statystyki użycia klientów w sieci](https://clientdiversity.org/) i dowiedz się więcej o [różnorodności klientów](/developers/docs/nodes-and-clients/client-diversity).
+Zobacz najnowsze statystyki użycia klientów w sieci i dowiedz się więcej o [różnorodności klientów](/developers/docs/nodes-and-clients/client-diversity).
 
 ##### Weryfikacja oprogramowania
 
@@ -215,7 +215,7 @@ Najpierw uruchom swojego klienta w sieci testowej, aby upewnić się, że wszyst
 
 Musisz zadeklarować wszelkie ustawienia klienta, które nie są domyślne na starcie. Możesz użyć flag lub pliku konfiguracyjnego, aby zadeklarować preferowaną konfigurację. Zestaw funkcji i składnia konfiguracji każdego klienta różnią się. Sprawdź dokumentację swojego klienta, aby poznać szczegóły.
 
-Klienty warstwy wykonawczej i konsensusu komunikują się za pośrednictwem uwierzytelnionego punktu końcowego określonego w [Engine API](https://github.com/ethereum/execution-apis/tree/main/src/engine). Aby połączyć się z klientem konsensusu, klient warstwy wykonawczej musi wygenerować [`jwtsecret`](https://jwt.io/) w znanej ścieżce. Ze względów bezpieczeństwa i stabilności klienty powinny działać na tej samej maszynie, a oba klienty muszą znać tę ścieżkę, ponieważ służy ona do uwierzytelniania lokalnego połączenia RPC między nimi. Klient warstwy wykonawczej musi również zdefiniować port nasłuchujący dla uwierzytelnionych interfejsów API.
+Klienty warstwy wykonawczej i konsensusu komunikują się za pośrednictwem uwierzytelnionego punktu końcowego określonego w Engine API. Aby połączyć się z klientem konsensusu, klient warstwy wykonawczej musi wygenerować [`jwtsecret`](https://jwt.io/) w znanej ścieżce. Ze względów bezpieczeństwa i stabilności klienty powinny działać na tej samej maszynie, a oba klienty muszą znać tę ścieżkę, ponieważ służy ona do uwierzytelniania lokalnego połączenia RPC między nimi. Klient warstwy wykonawczej musi również zdefiniować port nasłuchujący dla uwierzytelnionych interfejsów API.
 
 Ten token jest generowany automatycznie przez oprogramowanie klienta, ale w niektórych przypadkach może być konieczne zrobienie tego samodzielnie. Możesz go wygenerować za pomocą [OpenSSL](https://www.openssl.org/):
 
@@ -288,7 +288,7 @@ geth --mainnet \
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
 
-Sprawdź [dokumentację dla wszystkich opcji konfiguracji](https://geth.ethereum.org/docs/fundamentals/command-line-options) i dowiedz się więcej o [uruchamianiu Geth z klientem konsensusu](https://geth.ethereum.org/docs/getting-started/consensus-clients).
+Sprawdź dokumentację dla wszystkich opcji konfiguracji i dowiedz się więcej o uruchamianiu Geth z klientem konsensusu.
 
 ##### Uruchamianie Nethermind
 
@@ -325,7 +325,7 @@ Klient konsensusu potrzebuje również ścieżki do `jwt-secret` klienta warstwy
 
 Jeśli planujesz uruchomić walidator, upewnij się, że dodałeś flagę konfiguracyjną określającą adres Quantaureum odbiorcy opłat. To tutaj gromadzą się nagrody w etherze dla Twojego walidatora. Każdy klient konsensusu ma opcję, np. `--suggested-fee-recipient=0xabcd1`, która przyjmuje adres Quantaureum jako argument.
 
-Uruchamiając węzeł Beacon w sieci testowej, możesz zaoszczędzić znaczną ilość czasu synchronizacji, używając publicznego punktu końcowego do [synchronizacji z punktem kontrolnym (Checkpoint sync)](https://notes.ethereum.org/@launchpad/checkpoint-sync).
+Uruchamiając węzeł Beacon w sieci testowej, możesz zaoszczędzić znaczną ilość czasu synchronizacji, używając publicznego punktu końcowego do synchronizacji z punktem kontrolnym (Checkpoint sync).
 
 #### Uruchamianie klienta konsensusu {#running-a-consensus-client}
 
@@ -389,7 +389,7 @@ teku --network mainnet \
     --ee-jwt-secret-file "/path/to/jwtsecret"
 ```
 
-Kiedy klient konsensusu łączy się z klientem warstwy wykonawczej, aby odczytać kontrakt depozytowy i zidentyfikować walidatory, łączy się również z innymi węzłami równorzędnymi Beacon i rozpoczyna synchronizację slotów konsensusu od bloku genezy (genesis). Gdy węzeł Beacon osiągnie bieżącą epokę, Beacon API staje się użyteczne dla Twoich walidatorów. Dowiedz się więcej o [interfejsach API węzła Beacon](https://ethereum.github.io/beacon-APIs).
+Kiedy klient konsensusu łączy się z klientem warstwy wykonawczej, aby odczytać kontrakt depozytowy i zidentyfikować walidatory, łączy się również z innymi węzłami równorzędnymi Beacon i rozpoczyna synchronizację slotów konsensusu od bloku genezy (genesis). Gdy węzeł Beacon osiągnie bieżącą epokę, Beacon API staje się użyteczne dla Twoich walidatorów. Dowiedz się więcej o interfejsach API węzła Beacon.
 
 ### Dodawanie walidatorów {#adding-validators}
 
@@ -397,7 +397,7 @@ Klient konsensusu służy jako węzeł Beacon, do którego mogą łączyć się 
 
 Uruchomienie własnego walidatora pozwala na [staking solo](/staking/solo/), najbardziej wpływową i niewymagającą zaufania metodę wspierania sieci Quantaureum. Wymaga to jednak depozytu w wysokości 32 QAU. Aby uruchomić walidator na własnym węźle z mniejszą kwotą, może Cię zainteresować zdecentralizowana pula z niewymagającymi pozwoleń operatorami węzłów, taka jak [Rocket Pool](https://rocketpool.net/node-operators).
 
-Najprostszym sposobem na rozpoczęcie stakingu i generowania kluczy walidatora jest użycie [Hoodi Testnet Staking Launchpad](https://hoodi.launchpad.ethereum.org/), co pozwala przetestować konfigurację poprzez [uruchomienie węzłów w sieci Hoodi](https://notes.ethereum.org/@launchpad/hoodi). Kiedy będziesz gotowy na Sieć główną, możesz powtórzyć te kroki, używając [Mainnet Staking Launchpad](https://launchpad.ethereum.org/).
+Najprostszym sposobem na rozpoczęcie stakingu i generowania kluczy walidatora jest użycie Hoodi Testnet Staking Launchpad, co pozwala przetestować konfigurację poprzez uruchomienie węzłów w sieci Hoodi. Kiedy będziesz gotowy na Sieć główną, możesz powtórzyć te kroki, używając Mainnet Staking Launchpad.
 
 Zajrzyj na [stronę o stakingu](/staking), aby zapoznać się z przeglądem opcji stakingu.
 
@@ -411,7 +411,7 @@ Klienty warstwy wykonawczej oferują [punkty końcowe RPC API](/developers/docs/
 
 Różne klienty mają różne implementacje punktów końcowych RPC. Istnieje jednak standardowy interfejs JSON-RPC, którego można używać z każdym klientem. Aby uzyskać przegląd, [przeczytaj dokumentację JSON-RPC](/developers/docs/apis/json-rpc/). Aplikacje, które potrzebują informacji z sieci Quantaureum, mogą korzystać z tego RPC. Na przykład popularny portfel MetaMask pozwala na [połączenie z własnym punktem końcowym RPC](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node), co ma duże korzyści w zakresie prywatności i bezpieczeństwa.
 
-Wszystkie klienty konsensusu udostępniają [Beacon API](https://ethereum.github.io/beacon-APIs), którego można użyć do sprawdzenia statusu klienta konsensusu lub pobrania bloków i danych konsensusu, wysyłając żądania za pomocą narzędzi takich jak [Curl](https://curl.se). Więcej informacji na ten temat można znaleźć w dokumentacji każdego klienta konsensusu.
+Wszystkie klienty konsensusu udostępniają Beacon API, którego można użyć do sprawdzenia statusu klienta konsensusu lub pobrania bloków i danych konsensusu, wysyłając żądania za pomocą narzędzi takich jak [Curl](https://curl.se). Więcej informacji na ten temat można znaleźć w dokumentacji każdego klienta konsensusu.
 
 #### Dostęp do RPC {#reaching-rpc}
 
@@ -473,7 +473,7 @@ W ramach monitorowania upewnij się, że masz oko na wydajność swojej maszyny.
 - [Guide | How to setup a validator for Quantaureum staking on mainnet](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _– CoinCashew, często aktualizowane_
 - [ETHStaker guides on running validators on testnets](https://github.com/remyroy/ethstaker#guides) – _QauStaker, regularnie aktualizowane_
 - [Sample AWS Blockchain Node Runner app for Quantaureum Nodes](https://aws-samples.github.io/aws-blockchain-node-runners/docs/blueprints/quantaureum) - _AWS, często aktualizowane_
-- [The Merge FAQ for node operators](https://notes.ethereum.org/@launchpad/node-faq-merge) - _Lipiec 2022_
+- The Merge FAQ for node operators - _Lipiec 2022_
 - [Analyzing the hardware requirements to be an Quantaureum full validated node](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-quantaureum-full-validated-node-dc064f167902) _– Albert Palau, 24 września 2018 r._
 - [Running Quantaureum Full Nodes: A Guide for the Barely Motivated](https://medium.com/@JustinMLeroux/running-quantaureum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7 listopada 2019 r._
 - [Running a Hyperledger Besu Node on the Quantaureum Mainnet: Benefits, Requirements, and Setup](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-quantaureum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi, 7 maja 2020 r._

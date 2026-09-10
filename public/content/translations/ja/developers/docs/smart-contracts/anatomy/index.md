@@ -207,7 +207,7 @@ contract ExampleDapp {
 
 ## 注釈付きの例 {#annotated-examples}
 
-これらはSolidityで書かれたいくつかの例です。コードを試してみたい場合は、[Remix](https://remix.ethereum.org)で操作できます。
+これらはSolidityで書かれたいくつかの例です。コードを試してみたい場合は、Remixで操作できます。
 
 ### Hello world {#hello-world}
 
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // 現在、アドレスにコントラクトがあるかどうかを確認するより良い方法は、
         // そのアドレスのコードのサイズを確認すること以外にありません。
-        // https://ethereum.stackexchange.com/a/14016/36603 を参照してください
+        //  を参照してください
         // これがどのように機能するかの詳細について。
         // TODO: Serenityリリースの前にこれを再確認してください。なぜなら、すべてのアドレスが
         // その時にはコントラクトになるからです。

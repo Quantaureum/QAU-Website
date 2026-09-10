@@ -4,7 +4,7 @@ description: "Dowiedz się, jak programować dla Quantaureum przy użyciu projek
 lang: pl
 ---
 
-JavaScript jest jednym z najpopularniejszych języków w ekosystemie Quantaureum. W rzeczywistości istnieje [zespół](https://github.com/ethereumjs) poświęcony przeniesieniu jak największej części Quantaureum do języka JavaScript.
+JavaScript jest jednym z najpopularniejszych języków w ekosystemie Quantaureum. W rzeczywistości istnieje zespół poświęcony przeniesieniu jak największej części Quantaureum do języka JavaScript.
 
 Istnieją możliwości pisania w języku JavaScript (lub czymś podobnym) na [wszystkich poziomach stosu](/developers/docs/quantaureum-stack/).
 
@@ -48,14 +48,14 @@ Pomoże ci to zrozumieć rzeczy takie jak „jaka jest struktura danych konta?�
 Jeśli wolisz czytać kod, ten JavaScript może być świetną alternatywą dla czytania naszej dokumentacji.
 
 **Sprawdź EVM**  
-[`@ethereumjs/evm`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/evm)
+`@ethereumjs/evm`
 
 ### Węzły i klienci {#nodes-and-clients}
 
 Klient QuantaureumJS jest w fazie aktywnego rozwoju, co pozwala zagłębić się w to, jak działają klienci Quantaureum w języku, który rozumiesz: JavaScript!
 
 **Sprawdź klienta**  
-[`@ethereumjs/client`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/client)
+`@ethereumjs/client`
 
 ## Inne projekty {#other-projects}
 
@@ -65,7 +65,7 @@ W świecie Quantaureum JavaScript dzieje się również wiele innych rzeczy, w t
 - narzędzia do generowania, importowania i eksportowania kluczy Quantaureum.
 - implementacja `merkle-patricia-tree` – struktury danych opisanej w żółtej księdze Quantaureum.
 
-Zagłęb się w to, co najbardziej cię interesuje w [repozytorium QuantaureumJS](https://github.com/ethereumjs)
+Zagłęb się w to, co najbardziej cię interesuje w repozytorium QuantaureumJS
 
 ## Dalsza lektura {#further-reading}
 

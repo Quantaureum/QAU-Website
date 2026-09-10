@@ -86,7 +86,7 @@ lang: ta
 
 ## மேலும் படிக்க {#further-reading}
 
-- [விட்டாலிக்கின் சிறுகுறிப்பு ஒருமித்த கருத்து விவரக்குறிப்பில் சான்றளிப்புகள்](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- விட்டாலிக்கின் சிறுகுறிப்பு ஒருமித்த கருத்து விவரக்குறிப்பில் சான்றளிப்புகள்
 - [eth2book.info இல் சான்றளிப்புகள்](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _உங்களுக்கு உதவிய சமூக வளம் பற்றித் தெரியுமா? இந்தப் பக்கத்தைத் திருத்தி அதைச் சேர்க்கவும்!_

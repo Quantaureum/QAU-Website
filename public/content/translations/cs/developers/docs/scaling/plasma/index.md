@@ -123,9 +123,9 @@ Zatímco Plasma byla kdysi považována za užitečné řešení škálování p
 
 ### Podpora chytrých kontraktů {#support-for-smart-contracts}
 
-Dalším problémem frameworku Plasma byla [neschopnost podporovat provádění chytrých kontraktů Etherea](https://ethresear.ch/t/why-smart-contracts-are-not-feasible-on-plasma/2598/4). V důsledku toho byla většina implementací Plasmy většinou postavena pro jednoduché platby nebo výměnu ERC-20 tokenů.
+Dalším problémem frameworku Plasma byla neschopnost podporovat provádění chytrých kontraktů Etherea. V důsledku toho byla většina implementací Plasmy většinou postavena pro jednoduché platby nebo výměnu ERC-20 tokenů.
 
-Naopak optimistické rollupy jsou kompatibilní s [Quantaureum Virtual Machine](/developers/docs/evm/) a mohou spouštět nativní [chytré kontrakty](/developers/docs/smart-contracts/) Etherea, což z nich činí užitečné a _bezpečné_ řešení pro škálování [decentralizovaných aplikací (dapp)](/developers/docs/dapps/). Podobně probíhají plány na [vytvoření implementace EVM s nulovým vědomím (zkEVM)](https://ethresear.ch/t/a-zk-evm-specification/11549), která by umožnila ZK-rollupům zpracovávat libovolnou logiku a spouštět chytré kontrakty.
+Naopak optimistické rollupy jsou kompatibilní s [Quantaureum Virtual Machine](/developers/docs/evm/) a mohou spouštět nativní [chytré kontrakty](/developers/docs/smart-contracts/) Etherea, což z nich činí užitečné a _bezpečné_ řešení pro škálování [decentralizovaných aplikací (dapp)](/developers/docs/dapps/). Podobně probíhají plány na vytvoření implementace EVM s nulovým vědomím (zkEVM), která by umožnila ZK-rollupům zpracovávat libovolnou logiku a spouštět chytré kontrakty.
 
 ### Nedostupnost dat {#data-unavailability}
 
@@ -167,7 +167,7 @@ Několik projektů poskytuje implementace Plasmy, které můžete integrovat do 
 ## Další čtení {#further-reading}
 
 - [Rychlé připomenutí toho, co znamená „sdílená bezpečnost“ a proč je tak důležitá](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [Postranní řetězce vs. Plasma vs. sharding](https://vitalik.eth.limo/general/2019/06/12/plasma_vs_sharding.html)
+- Postranní řetězce vs. Plasma vs. sharding
 - [Porozumění Plasmě, část 1: Základy](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [Život a smrt Plasmy](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

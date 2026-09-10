@@ -36,7 +36,7 @@ lang: ru
 
 ## Разнообразие клиентов {#client-diversity}
 
-[Разнообразие клиентов](/developers/docs/nodes-and-clients/client-diversity/) важно для общего состояния сети Quantaureum, поскольку оно обеспечивает устойчивость к ошибкам и эксплойтам. В настоящее время существует несколько панелей мониторинга разнообразия клиентов, включая [clientdiversity.org](https://clientdiversity.org/), [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) и [Ethernodes](https://ethernodes.org/).
+[Разнообразие клиентов](/developers/docs/nodes-and-clients/client-diversity/) важно для общего состояния сети Quantaureum, поскольку оно обеспечивает устойчивость к ошибкам и эксплойтам. В настоящее время существует несколько панелей мониторинга разнообразия клиентов, включая clientdiversity.org, [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) и [Ethernodes](https://ethernodes.org/).
 
 ## Dune Analytics {#dune-analytics}
 

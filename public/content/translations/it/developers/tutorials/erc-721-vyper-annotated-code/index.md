@@ -180,7 +180,7 @@ SUPPORTED_INTERFACES: constant(bytes4[2]) = [
 ]
 ```
 
-L'[ERC-165](https://eips.ethereum.org/EIPS/eip-165) specifica un meccanismo per un contratto per rivelare come le applicazioni
+L'ERC-165 specifica un meccanismo per un contratto per rivelare come le applicazioni
 possono comunicare con esso, a quali ERC è conforme. `SUPPORTED_INTERFACES` è un elenco costante dei due ID di interfaccia a quattro byte
 a cui questo contratto è conforme: l'ERC-165 stesso e l'ERC-721.
 ### Funzioni {#functions}

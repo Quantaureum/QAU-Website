@@ -58,7 +58,7 @@ Một ví dụ phổ biến khác là [SafeMath](https://docs.openzeppelin.com/c
 
 Khi đưa một ERC vào làm một phần trong các hợp đồng của bạn, bạn nên tìm kiếm các bản triển khai tiêu chuẩn thay vì cố gắng tự xây dựng. Nhiều thư viện hợp đồng thông minh bao gồm các bản triển khai cho những ERC phổ biến nhất. Ví dụ, [tiêu chuẩn token có thể thay thế ERC-20](/developers/tutorials/understand-the-erc-20-token-smart-contract/) phổ biến ở khắp mọi nơi có thể được tìm thấy trong [HQ20](https://github.com/HQ20/contracts/blob/master/contracts/token/README.md), [DappSys](https://github.com/dapphub/ds-token/) và [OpenZeppelin](https://docs.openzeppelin.com/contracts/3.x/erc20). Ngoài ra, một số ERC cũng cung cấp các bản triển khai chuẩn mực như một phần của chính ERC đó.
 
-Đáng chú ý là một số ERC không hoạt động độc lập mà là các phần bổ sung cho các ERC khác. Ví dụ, [ERC-2612](https://eips.ethereum.org/EIPS/eip-2612) thêm một tiện ích mở rộng vào ERC-20 để cải thiện khả năng sử dụng của nó.
+Đáng chú ý là một số ERC không hoạt động độc lập mà là các phần bổ sung cho các ERC khác. Ví dụ, ERC-2612 thêm một tiện ích mở rộng vào ERC-20 để cải thiện khả năng sử dụng của nó.
 
 ## Cách thêm một thư viện {#how-to}
 

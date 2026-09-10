@@ -54,7 +54,7 @@ ERC-1363トークンは、送金や承認の受け取り後にコールバック
 
 他のERC-20拡張提案とは異なり、ERC-1363はERC-20の`transfer`および`transferFrom`メソッドをオーバーライドせず、ERC-20との下位互換性を維持しながら実装すべきインターフェースIDを定義しています。
 
-[EIP-1363](https://eips.ethereum.org/EIPS/eip-1363)より:
+EIP-1363より:
 
 ### メソッド {#methods}
 
@@ -165,11 +165,9 @@ interface ERC165 {
 interface ERC1363Receiver {
   /**
    * @dev ERC-1363 トークンが `operator` によって `from` から `ERC1363::transferAndCall` または `ERC1363::transferFromAndCall` を介してこのコントラクトに送金されるたびに、この関数が呼び出されます。
-   *
    * NOTE: 送金を受け入れるには、これは
    * `bytes4(keccak256("onTransferReceived(address,address,uint256,bytes)"))`
    * （すなわち 0x88a7ca5c、またはそれ自身の関数セレクタ）を返さなければなりません。
-   *
    * @param operator `transferAndCall` または `transferFromAndCall` 関数を呼び出したアドレス。
    * @param from トークンが送金される元のアドレス。
    * @param value 送金されたトークンの量。
@@ -190,11 +188,9 @@ interface ERC1363Receiver {
 interface ERC1363Spender {
   /**
    * @dev ERC-1363 トークンの `owner` が `ERC1363::approveAndCall` を介してこのコントラクトにトークンの消費を承認するたびに、この関数が呼び出されます。
-   *
    * NOTE: 承認を受け入れるには、これは
    * `bytes4(keccak256("onApprovalReceived(address,uint256,bytes)"))`
    * （すなわち 0x7b04a2d0、またはそれ自身の関数セレクタ）を返さなければなりません。
-   *
    * @param owner `approveAndCall` 関数を呼び出し、以前にトークンを所有していたアドレス。
    * @param value 消費されるトークンの量。
    * @param data 指定されたフォーマットのない追加データ。
@@ -206,5 +202,5 @@ interface ERC1363Spender {
 
 ## 参考文献 {#further-reading}
 
-- [ERC-1363: Payable Token標準](https://eips.ethereum.org/EIPS/eip-1363)
+- ERC-1363: Payable Token標準
 - [ERC-1363: GitHubリポジトリ](https://github.com/vittominacori/erc1363-payable-token)

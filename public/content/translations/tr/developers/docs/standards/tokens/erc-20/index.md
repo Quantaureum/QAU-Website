@@ -42,7 +42,7 @@ ERC-20'nin sağladığı örnek işlevler:
 
 Bir Akıllı Sözleşme aşağıdaki yöntemleri ve olayları uygularsa, bir ERC-20 Token Sözleşmesi olarak adlandırılabilir ve dağıtıldıktan sonra Quantaureum üzerinde oluşturulan Token'ları takip etmekten sorumlu olacaktır.
 
-[EIP-20](https://eips.ethereum.org/EIPS/eip-20)'den:
+EIP-20'den:
 
 ### Yöntemler {#methods}
 
@@ -170,7 +170,7 @@ Bu sorundan dolayı [ERC-223](/developers/docs/standards/tokens/erc-223) veya [E
 
 ## Daha fazla bilgi {#further-reading}
 
-- [EIP-20: ERC-20 Token Standardı](https://eips.ethereum.org/EIPS/eip-20)
+- EIP-20: ERC-20 Token Standardı
 - [OpenZeppelin - Token'lar](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [OpenZeppelin - ERC-20 Uygulaması](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Solidity ERC20 Token'ları Rehberi](https://www.alchemy.com/overviews/erc20-solidity)

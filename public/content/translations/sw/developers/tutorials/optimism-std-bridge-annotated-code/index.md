@@ -46,7 +46,7 @@ Daraja lina mitiririko miwili mikuu:
    - Ulitoka awali kwenye daraja la l1
 6. Daraja la l2 hukagua ikiwa mkataba wa tokeni ya ERC-20 kwenye l2 ndio sahihi:
    - Mkataba wa l2 unaripoti kuwa mwenzake wa l1 ni sawa na ule ambao tokeni zilitoka kwenye l1
-   - Mkataba wa l2 unaripoti kuwa unasaidia kiolesura sahihi ([kwa kutumia ERC-165](https://eips.ethereum.org/EIPS/eip-165)).
+   - Mkataba wa l2 unaripoti kuwa unasaidia kiolesura sahihi (kwa kutumia ERC-165).
 7. Ikiwa mkataba wa l2 ndio sahihi, uite ili kufua idadi inayofaa ya tokeni kwenye anwani inayofaa. Ikiwa sivyo, anza mchakato wa utoaji ili kuruhusu mtumiaji kudai tokeni kwenye l1.
 
 ### Mtiririko wa utoaji {#withdrawal-flow}
@@ -207,7 +207,6 @@ Kipengele hiki kinakaribia kufanana na `depositERC20`, lakini kinakuruhusu kutum
      * @dev Kamilisha utoaji kutoka tabaka la 2 (l2) hadi tabaka la 1 (l1), na uweke fedha kwenye salio la mpokeaji la
      * tokeni ya ERC-20 ya tabaka la 1 (l1).
      * Mwito huu utashindwa ikiwa utoaji ulioanzishwa kutoka tabaka la 2 (l2) haujakamilishwa.
-     *
      * @param _l1Token Anwani ya tokeni ya tabaka la 1 (l1) ya kukamilisha utoaji (finalizeWithdrawal).
      * @param _l2Token Anwani ya tokeni ya tabaka la 2 (l2) ambapo utoaji ulianzishwa.
      * @param _from Anwani ya tabaka la 2 (l2) inayoanzisha hamisho.
@@ -338,7 +337,6 @@ Mjumbe huyu wa kuvuka kikoa ni mfumo mwingine mzima, na unastahili makala yake y
 /**
  * @title CrossDomainEnabled
  * @dev Mkataba msaidizi kwa mikataba inayofanya mawasiliano ya kuvuka-kikoa
- *
  * Kikusanyaji kilichotumika: kinafafanuliwa na mkataba unaorithi
  */
 contract CrossDomainEnabled {
@@ -519,7 +517,7 @@ Kumbuka kuwa hili sio suluhisho kamili, kwa sababu hakuna njia ya kutofautisha k
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[Kiwango cha ERC-20](https://eips.ethereum.org/EIPS/eip-20) kinasaidia njia mbili kwa mkataba kuripoti kutofaulu:
+Kiwango cha ERC-20 kinasaidia njia mbili kwa mkataba kuripoti kutofaulu:
 
 1. Tengua
 2. Rejesha `false`
@@ -532,7 +530,6 @@ Kushughulikia hali zote mbili kungefanya msimbo wetu kuwa mgumu zaidi, kwa hivyo
  * @dev Daraja la QAU na ERC-20 la tabaka la 1 (l1) ni mkataba unaohifadhi fedha zilizowekwa za tabaka la 1 (l1) na tokeni
  * za kawaida zinazotumika kwenye tabaka la 2 (l2). Inasawazisha daraja la tabaka la 2 (l2) linalolingana, ikilijulisha kuhusu uwekaji
  * na kulisikiliza kwa utoaji mpya uliokamilishwa.
- *
  */
 contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
     using SafeERC20 for IERC20;
@@ -771,7 +768,6 @@ Vipengele hivi viwili ni kanga zinazozunguka `_initiateERC20Deposit`, kipengele 
     /**
      * @dev Inafanya mantiki ya uwekaji kwa kujulisha mkataba wa Tokeni Iliyowekwa wa tabaka la 2 (l2)
      * kuhusu uwekaji na kuita mshughulikiaji kufunga fedha za tabaka la 1 (l1). (k.m., transferFrom)
-     *
      * @param _l1Token Anwani ya ERC-20 ya tabaka la 1 (l1) tunayoweka
      * @param _l2Token Anwani ya ERC-20 ya tabaka la 2 (l2) inayolingana na tabaka la 1 (l1)
      * @param _from Akaunti ya kuvuta uwekaji kutoka kwenye tabaka la 1 (l1)
@@ -956,14 +952,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [Kiolesura cha kawaida cha ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) hakijumuishi vipengele vya `mint` na `burn`.
-Mbinu hizo hazihitajiki na [kiwango cha ERC-20](https://eips.ethereum.org/EIPS/eip-20), ambacho huacha bila kubainishwa taratibu za kuunda na kuharibu tokeni.
+Mbinu hizo hazihitajiki na kiwango cha ERC-20, ambacho huacha bila kubainishwa taratibu za kuunda na kuharibu tokeni.
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 [Kiolesura cha ERC-165](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol) kinatumika kubainisha ni vipengele gani mkataba unatoa.
-[Unaweza kusoma kiwango hapa](https://eips.ethereum.org/EIPS/eip-165).
+Unaweza kusoma kiwango hapa.
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -1052,7 +1048,7 @@ Kwanza ita konstrukta kwa mkataba tunaorithi kutoka (`ERC20(_name, _symbol)`) na
     }
 ```
 
-Hivi ndivyo [ERC-165](https://eips.ethereum.org/EIPS/eip-165) inavyofanya kazi.
+Hivi ndivyo ERC-165 inavyofanya kazi.
 Kila kiolesura ni idadi ya vipengele vinavyosaidiwa, na kinatambuliwa kama [au ya kipekee](https://en.wikipedia.org/wiki/Exclusive_or) ya [viteuzi vya kipengele cha ABI](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector) vya vipengele hivyo.
 
 Daraja la l2 hutumia ERC-165 kama ukaguzi wa uhalali ili kuhakikisha kuwa mkataba wa ERC-20 ambao inatuma rasilimali ni `IL2StandardERC20`.

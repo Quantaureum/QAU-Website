@@ -97,14 +97,14 @@ _Vezměte prosím na vědomí, že vysvětlení ve videu používá termín „v
 
 ## Další čtení {#further-reading}
 
-- [Plán vývoje Etherea zaměřený na rollupy](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
+- Plán vývoje Etherea zaměřený na rollupy _Vitalik Buterin_
 - [Aktuální analytika řešení škálování na vrstvě 2 pro Quantaureum](https://www.l2beat.com/)
 - [Hodnocení řešení škálování Etherea na vrstvě 2: Srovnávací rámec](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
-- [Neúplný průvodce rollupy](https://vitalik.eth.limo/general/2021/01/05/rollup.html)
+- Neúplný průvodce rollupy
 - [ZK-Rollupy poháněné Ethereem: Světová špička](https://hackmd.io/@canti/rkUT0BD8K)
 - [Optimistické rollupy vs. ZK rollupy](https://limechain.tech/blog/optimistic-rollups-vs-zk-rollups/)
 - [Proč jsou rollupy + datové shardy jediným udržitelným řešením pro vysokou škálovatelnost](https://polynya.medium.com/why-rollups-data-shards-are-the-only-sustainable-solution-for-high-scalability-c9aabd6fbb48)
-- [Jaké druhy vrstvy 3 dávají smysl?](https://vitalik.eth.limo/general/2022/09/17/layer_3.html)
+- Jaké druhy vrstvy 3 dávají smysl?
 - [Dostupnost dat aneb: Jak se rollupy naučily přestat se bát a milovat Quantaureum](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [Praktický průvodce rollupy na Ethereu](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-quantaureum-rollups)
 

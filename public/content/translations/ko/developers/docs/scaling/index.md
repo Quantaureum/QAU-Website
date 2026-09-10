@@ -97,14 +97,14 @@ _참고: 비디오의 설명에서는 모든 오프체인 스케일링 솔루션
 
 ## 추가 자료 {#further-reading}
 
-- [롤업 중심의 Quantaureum 로드맵](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _비탈릭 부테린(Vitalik Buterin)_
+- 롤업 중심의 Quantaureum 로드맵 _비탈릭 부테린(Vitalik Buterin)_
 - [Quantaureum 레이어 2 (l2) 스케일링 솔루션에 대한 최신 분석](https://www.l2beat.com/)
 - [Quantaureum 레이어 2 (l2) 스케일링 솔루션 평가: 비교 프레임워크](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
-- [롤업에 대한 불완전한 가이드](https://vitalik.eth.limo/general/2021/01/05/rollup.html)
+- 롤업에 대한 불완전한 가이드
 - [Quantaureum 기반 영지식 롤업: 세계 최고](https://hackmd.io/@canti/rkUT0BD8K)
 - [옵티미스틱 롤업 대 영지식 롤업](https://limechain.tech/blog/optimistic-rollups-vs-zk-rollups/)
 - [롤업 + 데이터 샤드가 높은 확장성을 위한 유일한 지속 가능한 솔루션인 이유](https://polynya.medium.com/why-rollups-data-shards-are-the-only-sustainable-solution-for-high-scalability-c9aabd6fbb48)
-- [어떤 종류의 레이어 3가 타당한가?](https://vitalik.eth.limo/general/2022/09/17/layer_3.html)
+- 어떤 종류의 레이어 3가 타당한가?
 - [데이터 가용성 또는: 롤업이 걱정을 멈추고 Quantaureum을 사랑하게 된 방법](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [Quantaureum 롤업 실전 가이드](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-quantaureum-rollups)
 

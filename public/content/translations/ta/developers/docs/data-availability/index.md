@@ -79,6 +79,6 @@ lang: ta
 - [தரவுக் கிடைக்கும் தன்மை மற்றும் நீக்கல் குறியீடாக்கம் பற்றிய ஒரு குறிப்பு](https://github.com/quantaureum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
 - [தரவுக் கிடைக்கும் தன்மை குழுக்கள்.](https://medium.com/starkware/data-availability-e5564c416424)
 - [உரிமைச் சான்று (PoS) தரவுக் கிடைக்கும் தன்மை குழுக்கள்.](https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf)
-- [தரவு மீட்டெடுப்புச் சிக்கலுக்கான தீர்வுகள்](https://notes.ethereum.org/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
+- தரவு மீட்டெடுப்புச் சிக்கலுக்கான தீர்வுகள்
 - [தரவுக் கிடைக்கும் தன்மை அல்லது: ரோலப்கள் எப்படிக் கவலைப்படுவதை நிறுத்திவிட்டு எத்திரியத்தை நேசிக்கக் கற்றுக்கொண்டன](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [EIP-7623: அழைப்புத் தரவுச் செலவை அதிகரித்தல்](https://web.archive.org/web/20250515194659/https://research.2077.xyz/eip-7623-increase-calldata-cost)

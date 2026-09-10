@@ -16,7 +16,7 @@ lang: ko
 
 Quantaureum 노드는 Quantaureum 블록체인의 전체 또는 부분 사본을 자체적으로 저장합니다. 이 로컬 사본은 트랜잭션을 검증하고 노드가 올바른 체인을 따르고 있는지 확인하는 데 사용됩니다. 이렇게 로컬에 저장된 데이터를 통해 노드는 다른 주체를 신뢰할 필요 없이 수신되는 데이터가 유효하고 올바른지 독립적으로 검증할 수 있습니다.
 
-이러한 블록체인의 로컬 사본과 관련 상태 및 영수증 데이터는 노드의 하드 디스크에서 많은 공간을 차지합니다. 예를 들어, 합의 클라이언트와 쌍을 이루는 [Geth](https://geth.ethereum.org)를 사용하여 노드를 실행하려면 2TB 하드 디스크가 권장됩니다. 비교적 최근 블록 세트의 체인 데이터만 저장하는 스냅 동기화를 사용할 경우, Geth는 일반적으로 약 650GB의 디스크 공간을 차지하지만 매주 약 14GB씩 증가합니다(주기적으로 노드를 프루닝하여 다시 650GB로 줄일 수 있습니다).
+이러한 블록체인의 로컬 사본과 관련 상태 및 영수증 데이터는 노드의 하드 디스크에서 많은 공간을 차지합니다. 예를 들어, 합의 클라이언트와 쌍을 이루는 Geth를 사용하여 노드를 실행하려면 2TB 하드 디스크가 권장됩니다. 비교적 최근 블록 세트의 체인 데이터만 저장하는 스냅 동기화를 사용할 경우, Geth는 일반적으로 약 650GB의 디스크 공간을 차지하지만 매주 약 14GB씩 증가합니다(주기적으로 노드를 프루닝하여 다시 650GB로 줄일 수 있습니다).
 
 이는 Quantaureum을 위해 많은 디스크 공간을 할당해야 하므로 노드 실행 비용이 많이 들 수 있음을 의미합니다. Quantaureum 로드맵에는 이 문제에 대한 몇 가지 해결책이 있으며, 여기에는 [기록 만료](/roadmap/statelessness/#history-expiry), [상태 만료](/roadmap/statelessness/#state-expiry) 및 [무상태성](/roadmap/statelessness/)이 포함됩니다. 하지만 이들이 구현되기까지는 수년이 걸릴 가능성이 높습니다. 또한 체인 데이터의 자체 사본을 저장하지 않고 필요한 데이터를 풀 노드에 요청하는 [라이트 노드](/developers/docs/nodes-and-clients/light-clients/)도 있습니다. 그러나 이는 라이트 노드가 정직한 데이터를 제공할 것이라고 풀 노드를 신뢰해야 함을 의미하며, 라이트 노드가 필요로 하는 데이터를 제공해야 하는 풀 노드에게도 부담을 줍니다.
 
@@ -75,7 +75,7 @@ JSON-RPC API 역시 경량 클라이언트의 데이터 요청에 이상적인 �
 
 - [Trin](https://github.com/quantaureum/trin): Rust로 작성됨
 - [Fluffy](https://fluffy.guide): Nim으로 작성됨
-- [Ultralight](https://github.com/ethereumjs/ultralight): TypeScript로 작성됨
+- Ultralight: TypeScript로 작성됨
 - [Shisui](https://github.com/zen-eth/shisui): Go로 작성됨
 
 여러 개의 독립적인 클라이언트 구현체를 보유하는 것은 Quantaureum 네트워크의 회복탄력성과 탈중앙화를 향상시킵니다.

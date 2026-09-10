@@ -1,16 +1,8 @@
 import * as Sentry from "@sentry/nextjs"
 
 import { KNOWN_ORGANIZATIONS } from "./organizations"
-import { KNOWN_PERSONS } from "./persons"
 import { REFERENCE } from "./references"
 import type { KnownEntity } from "./types"
-
-/**
- * Helper to get an @id reference for a known Person
- */
-export const personReference = (key: keyof typeof KNOWN_PERSONS) => ({
-  "@id": KNOWN_PERSONS[key]["@id"],
-})
 
 /**
  * Helper to get an @id reference for a known Organization
@@ -23,7 +15,7 @@ export const organizationReference = (
 
 /**
  * Alias map for entity lookup.
- * Auto-generated from KNOWN_PERSONS, KNOWN_ORGANIZATIONS, and the core
+ * Auto-generated from KNOWN_ORGANIZATIONS and the core
  * Quantaureum project / Community organizations -- no manual maintenance
  * needed. Allows frontmatter to use profile key (for KNOWN_* entries),
  * display name, or GitHub handle. Keys are lowercased for
@@ -51,7 +43,6 @@ function buildEntityAliases(): Record<string, KnownEntity> {
   const entries: Array<[string | null, KnownEntity]> = [
     [null, KNOWN_ORGANIZATIONS["quantaureum-org"]],
     [null, KNOWN_ORGANIZATIONS["quantaureum-community"]],
-    ...Object.entries(KNOWN_PERSONS),
     ...Object.entries(KNOWN_ORGANIZATIONS),
   ]
 
@@ -69,7 +60,7 @@ function buildEntityAliases(): Record<string, KnownEntity> {
 
 /**
  * Resolve entity name(s) into known entities via the alias map. Matches
- * against both KNOWN_PERSONS and KNOWN_ORGANIZATIONS by profile key,
+ * against KNOWN_ORGANIZATIONS by profile key,
  * display name, or GitHub handle. Accepts a single string or an array;
  * values that don't resolve are dropped.
  */

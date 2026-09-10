@@ -86,7 +86,7 @@ Si noti che in alcuni casi un aggregatore fortunato può anche diventare il prop
 
 ## Letture consigliate {#further-reading}
 
-- [Attestazioni nelle specifiche di consenso annotate di Vitalik](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- Attestazioni nelle specifiche di consenso annotate di Vitalik
 - [Attestazioni su eth2book.info](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _Conosci una risorsa della community che ti è stata utile? Modifica questa pagina e aggiungila!_

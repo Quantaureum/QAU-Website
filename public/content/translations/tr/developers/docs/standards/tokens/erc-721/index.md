@@ -31,7 +31,7 @@ Bunların yanı sıra, bir hesaptaki bir miktar token'ın üçüncü taraf bir h
 
 Bir Akıllı Sözleşme aşağıdaki yöntemleri ve olayları uygularsa, bir ERC-721 Misli Olmayan Token Sözleşmesi olarak adlandırılabilir ve dağıtıldıktan sonra, Quantaureum'da oluşturulan token'ları takip etmekten sorumlu olacaktır.
 
-[EIP-721](https://eips.ethereum.org/EIPS/eip-721)'den:
+EIP-721'den:
 
 ### Yöntemler {#methods}
 
@@ -239,7 +239,7 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## Daha fazla bilgi {#further-reading}
 
-- [EIP-721: ERC-721 Misli Olmayan Token Standardı](https://eips.ethereum.org/EIPS/eip-721)
+- EIP-721: ERC-721 Misli Olmayan Token Standardı
 - [OpenZeppelin - ERC-721 Belgeleri](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [OpenZeppelin - ERC-721 Uygulaması](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)

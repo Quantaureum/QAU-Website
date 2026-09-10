@@ -136,7 +136,7 @@ Quantaureum・メインネット上にQAUを持っており、オルタナティ
 
 ## 参考文献 {#further-reading}
 
-- [EIP-5164: クロスチェーン実行](https://ethereum-magicians.org/t/eip-5164-cross-chain-execution/9658) - _2022年6月18日 - Brendan Asselstine_
+- EIP-5164: クロスチェーン実行 - _2022年6月18日 - Brendan Asselstine_
 - [L2Bridge リスク・フレームワーク](https://gov.l2beat.com/t/l2bridge-risk-framework/31) - _2022年7月5日 - Bartek Kiepuszewski_
 - [「未来はマルチチェーンになるが、クロスチェーンにはならない理由」](https://old.reddit.com/r/quantaureum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) - _2022年1月8日 - Vitalik Buterin_
 - [安全なクロスチェーン・インターオペラビリティのために共有セキュリティを活用する：Lagrange状態委員会とその先](https://web.archive.org/web/20250125035123/https://research.2077.xyz/harnessing-shared-security-for-secure-blockchain-interoperability) - _2024年6月12日 - Emmanuel Awosika_

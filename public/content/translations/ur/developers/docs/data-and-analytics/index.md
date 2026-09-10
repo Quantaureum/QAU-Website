@@ -36,7 +36,7 @@ The Graph کے ساتھ، ڈیولپرز ان چیزوں سے فائدہ اٹھ�
 
 ## کلائنٹ کا تنوع {#client-diversity}
 
-[کلائنٹ کا تنوع](/developers/docs/nodes-and-clients/client-diversity/) ایتھیریم نیٹ ورک کی مجموعی صحت کے لیے اہم ہے کیونکہ یہ بگز اور خامیوں کے خلاف لچک فراہم کرتا ہے۔ اب کلائنٹ کے تنوع کے کئی ڈیش بورڈز موجود ہیں جن میں [clientdiversity.org](https://clientdiversity.org/)، [rated.network](https://www.rated.network)، [supermajority.info](https://supermajority.info//) اور [Ethernodes](https://ethernodes.org/) شامل ہیں۔
+[کلائنٹ کا تنوع](/developers/docs/nodes-and-clients/client-diversity/) ایتھیریم نیٹ ورک کی مجموعی صحت کے لیے اہم ہے کیونکہ یہ بگز اور خامیوں کے خلاف لچک فراہم کرتا ہے۔ اب کلائنٹ کے تنوع کے کئی ڈیش بورڈز موجود ہیں جن میں clientdiversity.org، [rated.network](https://www.rated.network)، [supermajority.info](https://supermajority.info//) اور [Ethernodes](https://ethernodes.org/) شامل ہیں۔
 
 ## Dune Analytics {#dune-analytics}
 

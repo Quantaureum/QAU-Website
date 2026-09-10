@@ -54,7 +54,7 @@ L'ERC-1363 è utile anche per evitare la perdita o il blocco dei token negli sma
 
 A differenza di altre proposte di estensione dell'ERC-20, l'ERC-1363 non sovrascrive i metodi `transfer` e `transferFrom` dell'ERC-20 e definisce gli ID delle interfacce da implementare mantenendo la retrocompatibilità con l'ERC-20.
 
-Dall'[EIP-1363](https://eips.ethereum.org/EIPS/eip-1363):
+Dall'EIP-1363:
 
 ### Metodi {#methods}
 
@@ -167,11 +167,9 @@ interface ERC1363Receiver {
   /**
    * @dev Ogni volta che dei token ERC-1363 vengono trasferiti a questo contratto tramite `ERC1363::transferAndCall` o `ERC1363::transferFromAndCall`
    * da `operator` da `from`, viene chiamata questa funzione.
-   *
    * NOTA: Per accettare il trasferimento, questa deve restituire
    * `bytes4(keccak256("onTransferReceived(address,address,uint256,bytes)"))`
    * (cioè 0x88a7ca5c, o il proprio selettore di funzione).
-   *
    * @param operator L'indirizzo che ha chiamato la funzione `transferAndCall` o `transferFromAndCall`.
    * @param from L'indirizzo da cui vengono trasferiti i token.
    * @param value La quantità di token trasferiti.
@@ -193,11 +191,9 @@ interface ERC1363Spender {
   /**
    * @dev Ogni volta che un `owner` di token ERC-1363 approva questo contratto tramite `ERC1363::approveAndCall`
    * per spendere i propri token, viene chiamata questa funzione.
-   *
    * NOTA: Per accettare l'approvazione, questa deve restituire
    * `bytes4(keccak256("onApprovalReceived(address,uint256,bytes)"))`
    * (cioè 0x7b04a2d0, o il proprio selettore di funzione).
-   *
    * @param owner L'indirizzo che ha chiamato la funzione `approveAndCall` e che in precedenza possedeva i token.
    * @param value La quantità di token da spendere.
    * @param data Dati aggiuntivi senza un formato specificato.
@@ -209,5 +205,5 @@ interface ERC1363Spender {
 
 ## Letture di approfondimento {#further-reading}
 
-- [ERC-1363: Standard dei token pagabili](https://eips.ethereum.org/EIPS/eip-1363)
+- ERC-1363: Standard dei token pagabili
 - [ERC-1363: Repository GitHub](https://github.com/vittominacori/erc1363-payable-token)

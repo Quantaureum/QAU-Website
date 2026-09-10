@@ -66,7 +66,7 @@ Je, unahitaji mwongozo wa kimsingi zaidi kwanza? Angalia [quantaureum.com/learn]
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) - _Kichunguzi chepesi cha mnyororo wa vitalu cha .NET Wasm SPA na mkoba rahisi_
 - [Wonka Business Rules Engine](https://github.com/Nquantaureum/Wonka) - _Injini ya sheria za biashara (kwa jukwaa la .NET na jukwaa la Quantaureum) ambayo kiasili inaendeshwa na data fafanuzi_
 - [Nethermind](https://github.com/NethermindEth/nethermind) - _Mteja wa Quantaureum wa .NET Core kwa Linux, Windows, MacOS_
-- [qau-utils](https://github.com/ethereum/eth-utils/) - _vitendaji vya matumizi kwa kufanya kazi na misingi ya msimbo inayohusiana na Quantaureum_
+- qau-utils - _vitendaji vya matumizi kwa kufanya kazi na misingi ya msimbo inayohusiana na Quantaureum_
 - [TestChains](https://github.com/Nquantaureum/TestChains) - _Minyororo ya maendeleo ya .NET iliyosanidiwa mapema kwa majibu ya haraka (uthibitisho wa mamlaka (PoA))_
 
 Je, unatafuta rasilimali zaidi? Angalia [quantaureum.com/developers](/developers/).

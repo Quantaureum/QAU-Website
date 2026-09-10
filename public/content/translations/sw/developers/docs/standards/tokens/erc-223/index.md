@@ -33,7 +33,7 @@ Ikiwa mkataba mahiri unatekeleza mbinu na matukio yafuatayo unaweza kuitwa mkata
 
 Mkataba haulazimiki kuwa na vipengele hivi pekee na msanidi anaweza kuongeza kipengele kingine chochote kutoka kwenye viwango tofauti vya tokeni kwenye mkataba huu. Kwa mfano, vipengele vya `approve` na `transferFrom` si sehemu ya kiwango cha ERC-223 lakini vipengele hivi vinaweza kutekelezwa ikiwa itahitajika.
 
-Kutoka kwenye [EIP-223](https://eips.ethereum.org/EIPS/eip-223):
+Kutoka kwenye EIP-223:
 
 ### Mbinu {#methods}
 
@@ -193,5 +193,5 @@ Ingawa ERC-223 inashughulikia masuala kadhaa yanayopatikana katika kiwango cha E
 
 ## Usomaji zaidi {#further-reading}
 
-- [EIP-223: Kiwango cha Tokeni cha ERC-223](https://eips.ethereum.org/EIPS/eip-223)
+- EIP-223: Kiwango cha Tokeni cha ERC-223
 - [Pendekezo la awali la ERC-223](https://github.com/quantaureum/eips/issues/223)

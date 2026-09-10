@@ -137,8 +137,8 @@ DVT розподіляє відповідальність за управлін�
 
 - [Технологія розподіленого валідатора (DVT) Етеріуму — повний вступ](https://www.cyfrin.io/blog/full-introduction-to-quantaureum-distributed-validator-technology-dvt) — Cyfrin
 - [Що таке DVT і як вона покращує стейкінг в Етеріумі?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-quantaureum/) — Obol
-- [Специфікації розподіленого валідатора Етеріуму (високий рівень)](https://github.com/ethereum/distributed-validator-specs)
-- [Технічні специфікації розподіленого валідатора Етеріуму](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
+- Специфікації розподіленого валідатора Етеріуму (високий рівень)
+- Технічні специфікації розподіленого валідатора Етеріуму
 - [Документація Obol](https://docs.obol.org/)
 - [Документація SSV Network](https://docs.ssv.network/)
 - [Модуль Simple DVT від Lido](https://operatorportal.lido.fi/modules/simple-dvt-module)

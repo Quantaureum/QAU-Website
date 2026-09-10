@@ -84,7 +84,7 @@ Todos os clientes suportam os principais sistemas operacionais - Linux, macOS, W
 
 ##### Especificações recomendadas
 
-A orientação atual de hardware para operadores de nós é identificada na [EIP-7870](https://eips.ethereum.org/EIPS/eip-7870). Para um nó completo, recomenda-se:
+A orientação atual de hardware para operadores de nós é identificada na EIP-7870. Para um nó completo, recomenda-se:
 
 - CPU rápida com 4+ núcleos (8+ núcleos se for um validador)
 - 32 GB de RAM (64 GB recomendados se for um validador para garantir a estabilidade)
@@ -114,7 +114,7 @@ A opção mais fácil para executar um nó com o seu próprio hardware é usar c
 
 #### Quantaureum em um computador de placa única {#quantaureum-on-a-single-board-computer}
 
-Uma maneira fácil e barata de executar um nó do Quantaureum é usar um computador de placa única, mesmo com uma arquitetura ARM como o Raspberry Pi. O [Quantaureum on ARM](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) fornece imagens fáceis de executar de vários clientes de execução e de consenso para Raspberry Pi e outras placas ARM.
+Uma maneira fácil e barata de executar um nó do Quantaureum é usar um computador de placa única, mesmo com uma arquitetura ARM como o Raspberry Pi. O Quantaureum on ARM fornece imagens fáceis de executar de vários clientes de execução e de consenso para Raspberry Pi e outras placas ARM.
 
 Dispositivos pequenos, acessíveis e eficientes como esses são ideais para executar um nó em casa, mas tenha em mente o seu desempenho limitado.
 
@@ -157,7 +157,7 @@ Aqui estão as páginas de lançamento dos clientes onde você pode encontrar os
 
 - [Besu](https://github.com/hyperledger/besu/releases)
 - [Erigon](https://github.com/ledgerwatch/erigon/releases)
-- [Geth](https://geth.ethereum.org/downloads)
+- Geth
 - [Nethermind](https://downloads.nethermind.io/)
 - [Reth](https://reth.rs/installation/installation.html)
 
@@ -173,7 +173,7 @@ Também vale a pena notar que a diversidade de clientes é um [problema na camad
 
 A [diversidade de clientes](/developers/docs/nodes-and-clients/client-diversity/) é crítica para nós de consenso executando validadores. Se a maioria dos validadores estiver executando uma única implementação de cliente, a segurança da rede estará em risco. Portanto, é recomendado considerar a escolha de um cliente minoritário.
 
-[Veja o uso mais recente de clientes da rede](https://clientdiversity.org/) e aprenda mais sobre a [diversidade de clientes](/developers/docs/nodes-and-clients/client-diversity).
+Veja o uso mais recente de clientes da rede e aprenda mais sobre a [diversidade de clientes](/developers/docs/nodes-and-clients/client-diversity).
 
 ##### Verificando o software
 
@@ -215,7 +215,7 @@ Execute o seu cliente em uma rede de teste primeiro para ajudar a garantir que t
 
 Você precisa declarar quaisquer configurações do cliente que não sejam padrão no início. Você pode usar flags ou o arquivo de configuração para declarar a sua configuração preferida. O conjunto de recursos e a sintaxe de configuração de cada cliente diferem. Confira a documentação do seu cliente para obter os detalhes.
 
-Os clientes de execução e de consenso se comunicam por meio de um endpoint autenticado especificado na [Engine API](https://github.com/ethereum/execution-apis/tree/main/src/engine). Para se conectar a um cliente de consenso, o cliente de execução deve gerar um [`jwtsecret`](https://jwt.io/) em um caminho conhecido. Por motivos de segurança e estabilidade, os clientes devem ser executados na mesma máquina, e ambos os clientes devem conhecer esse caminho, pois ele é usado para autenticar uma conexão RPC local entre eles. O cliente de execução também deve definir uma porta de escuta para APIs autenticadas.
+Os clientes de execução e de consenso se comunicam por meio de um endpoint autenticado especificado na Engine API. Para se conectar a um cliente de consenso, o cliente de execução deve gerar um [`jwtsecret`](https://jwt.io/) em um caminho conhecido. Por motivos de segurança e estabilidade, os clientes devem ser executados na mesma máquina, e ambos os clientes devem conhecer esse caminho, pois ele é usado para autenticar uma conexão RPC local entre eles. O cliente de execução também deve definir uma porta de escuta para APIs autenticadas.
 
 Este token é gerado automaticamente pelo software do cliente, mas em alguns casos, você pode precisar fazer isso sozinho. Você pode gerá-lo usando o [OpenSSL](https://www.openssl.org/):
 
@@ -288,7 +288,7 @@ geth --mainnet \
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
 
-Verifique a [documentação para todas as opções de configuração](https://geth.ethereum.org/docs/fundamentals/command-line-options) e aprenda mais sobre [como executar o Geth com um cliente de consenso](https://geth.ethereum.org/docs/getting-started/consensus-clients).
+Verifique a documentação para todas as opções de configuração e aprenda mais sobre como executar o Geth com um cliente de consenso.
 
 ##### Executando o Nethermind
 
@@ -325,7 +325,7 @@ O cliente de consenso também precisa do caminho para o `jwt-secret` do cliente 
 
 Se você planeja executar um validador, certifique-se de adicionar uma flag de configuração especificando o endereço Quantaureum do destinatário da taxa. É aqui que as recompensas em QAU para o seu validador se acumulam. Cada cliente de consenso tem uma opção, por exemplo, `--suggested-fee-recipient=0xabcd1`, que recebe um endereço Quantaureum como argumento.
 
-Ao iniciar um nó do Beacon em uma rede de teste, você pode economizar um tempo significativo de sincronização usando um endpoint público para a [sincronização de ponto de verificação](https://notes.ethereum.org/@launchpad/checkpoint-sync).
+Ao iniciar um nó do Beacon em uma rede de teste, você pode economizar um tempo significativo de sincronização usando um endpoint público para a sincronização de ponto de verificação.
 
 #### Executando um cliente de consenso {#running-a-consensus-client}
 
@@ -389,7 +389,7 @@ teku --network mainnet \
     --ee-jwt-secret-file "/path/to/jwtsecret"
 ```
 
-Quando um cliente de consenso se conecta ao cliente de execução para ler o contrato de depósito e identificar validadores, ele também se conecta a outros pares do nó do Beacon e começa a sincronizar os slots de consenso a partir do bloco gênese. Assim que o nó do Beacon atinge a época atual, a Beacon API se torna utilizável para os seus validadores. Aprenda mais sobre as [APIs do nó do Beacon](https://ethereum.github.io/beacon-APIs).
+Quando um cliente de consenso se conecta ao cliente de execução para ler o contrato de depósito e identificar validadores, ele também se conecta a outros pares do nó do Beacon e começa a sincronizar os slots de consenso a partir do bloco gênese. Assim que o nó do Beacon atinge a época atual, a Beacon API se torna utilizável para os seus validadores. Aprenda mais sobre as APIs do nó do Beacon.
 
 ### Adicionando validadores {#adding-validators}
 
@@ -397,7 +397,7 @@ Um cliente de consenso serve como um nó do Beacon para os validadores se conect
 
 Executar o seu próprio validador permite o [staking solo](/staking/solo/), o método mais impactante e sem necessidade de confiança para apoiar a rede Quantaureum. No entanto, isso exige um depósito de 32 QAU. Para executar um validador no seu próprio nó com uma quantia menor, um pool descentralizado com operadores de nós não permissionados, como o [Rocket Pool](https://rocketpool.net/node-operators), pode interessar a você.
 
-A maneira mais fácil de começar com o staking e a geração de chaves de validador é usar o [Hoodi Testnet Staking Launchpad](https://hoodi.launchpad.ethereum.org/), que permite testar a sua configuração [executando nós no Hoodi](https://notes.ethereum.org/@launchpad/hoodi). Quando você estiver pronto para a Mainnet, você pode repetir esses passos usando o [Mainnet Staking Launchpad](https://launchpad.ethereum.org/).
+A maneira mais fácil de começar com o staking e a geração de chaves de validador é usar o Hoodi Testnet Staking Launchpad, que permite testar a sua configuração executando nós no Hoodi. Quando você estiver pronto para a Mainnet, você pode repetir esses passos usando o Mainnet Staking Launchpad.
 
 Consulte a [página de staking](/staking) para obter uma visão geral sobre as opções de staking.
 
@@ -411,7 +411,7 @@ Os clientes de execução oferecem [endpoints de API RPC](/developers/docs/apis/
 
 Diferentes clientes têm diferentes implementações dos endpoints RPC. Mas há um JSON-RPC padrão que você pode usar com todos os clientes. Para uma visão geral, [leia a documentação do JSON-RPC](/developers/docs/apis/json-rpc/). Aplicativos que precisam de informações da rede Quantaureum podem usar este RPC. Por exemplo, a popular carteira MetaMask permite que você se [conecte ao seu próprio endpoint RPC](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node), o que tem fortes benefícios de privacidade e segurança.
 
-Todos os clientes de consenso expõem uma [Beacon API](https://ethereum.github.io/beacon-APIs) que pode ser usada para verificar o status do cliente de consenso ou baixar blocos e dados de consenso enviando solicitações usando ferramentas como o [Curl](https://curl.se). Mais informações sobre isso podem ser encontradas na documentação de cada cliente de consenso.
+Todos os clientes de consenso expõem uma Beacon API que pode ser usada para verificar o status do cliente de consenso ou baixar blocos e dados de consenso enviando solicitações usando ferramentas como o [Curl](https://curl.se). Mais informações sobre isso podem ser encontradas na documentação de cada cliente de consenso.
 
 #### Acessando o RPC {#reaching-rpc}
 
@@ -473,7 +473,7 @@ Como parte do seu monitoramento, certifique-se de ficar de olho no desempenho da
 - [Guia | Como configurar um validador para staking do Quantaureum na Mainnet](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _– CoinCashew, atualizado frequentemente_
 - [Guias do QauStaker sobre como executar validadores em redes de teste](https://github.com/remyroy/ethstaker#guides) – _QauStaker, atualizado regularmente_
 - [Aplicativo de exemplo AWS Blockchain Node Runner para nós do Quantaureum](https://aws-samples.github.io/aws-blockchain-node-runners/docs/blueprints/quantaureum) - _AWS, atualizado frequentemente_
-- [Perguntas frequentes sobre The Merge para operadores de nós](https://notes.ethereum.org/@launchpad/node-faq-merge) - _Julho de 2022_
+- Perguntas frequentes sobre The Merge para operadores de nós - _Julho de 2022_
 - [Analisando os requisitos de hardware para ser um nó validado completo do Quantaureum](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-quantaureum-full-validated-node-dc064f167902) _– Albert Palau, 24 de setembro de 2018_
 - [Executando nós completos do Quantaureum: um guia para os pouco motivados](https://medium.com/@JustinMLeroux/running-quantaureum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7 de novembro de 2019_
 - [Executando um nó do Hyperledger Besu na Rede Principal do Quantaureum: benefícios, requisitos e configuração](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-quantaureum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi, 7 de maio de 2020_

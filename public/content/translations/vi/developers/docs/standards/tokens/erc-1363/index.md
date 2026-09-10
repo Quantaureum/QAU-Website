@@ -54,7 +54,7 @@ ERC-1363 cũng hữu ích trong việc tránh mất token hoặc khóa token tro
 
 Không giống như các đề xuất mở rộng ERC-20 khác, ERC-1363 không ghi đè các phương thức `transfer` và `transferFrom` của ERC-20 và định nghĩa các ID giao diện cần được triển khai để duy trì khả năng tương thích ngược với ERC-20.
 
-Từ [EIP-1363](https://eips.ethereum.org/EIPS/eip-1363):
+Từ EIP-1363:
 
 ### Các phương thức {#methods}
 
@@ -167,11 +167,9 @@ interface ERC1363Receiver {
   /**
    * @dev Bất cứ khi nào các token ERC-1363 được chuyển đến hợp đồng này thông qua `ERC1363::transferAndCall` hoặc `ERC1363::transferFromAndCall`
    * bởi `operator` từ `from`, hàm này sẽ được gọi.
-   *
    * LƯU Ý: Để chấp nhận việc chuyển, hàm này phải trả về
    * `bytes4(keccak256("onTransferReceived(address,address,uint256,bytes)"))`
    * (tức là 0x88a7ca5c, hoặc bộ chọn hàm của chính nó).
-   *
    * @param operator Địa chỉ đã gọi hàm `transferAndCall` hoặc `transferFromAndCall`.
    * @param from Địa chỉ mà các token được chuyển từ đó.
    * @param value Số lượng token được chuyển.
@@ -193,11 +191,9 @@ interface ERC1363Spender {
   /**
    * @dev Bất cứ khi nào một `owner` của các token ERC-1363 phê duyệt hợp đồng này thông qua `ERC1363::approveAndCall`
    * để chi tiêu các token của họ, hàm này sẽ được gọi.
-   *
    * LƯU Ý: Để chấp nhận sự phê duyệt, hàm này phải trả về
    * `bytes4(keccak256("onApprovalReceived(address,uint256,bytes)"))`
    * (tức là 0x7b04a2d0, hoặc bộ chọn hàm của chính nó).
-   *
    * @param owner Địa chỉ đã gọi hàm `approveAndCall` và trước đó sở hữu các token.
    * @param value Số lượng token sẽ được chi tiêu.
    * @param data Dữ liệu bổ sung không có định dạng cụ thể.
@@ -209,5 +205,5 @@ interface ERC1363Spender {
 
 ## Đọc thêm {#further-reading}
 
-- [ERC-1363: Tiêu chuẩn Token có thể thanh toán](https://eips.ethereum.org/EIPS/eip-1363)
+- ERC-1363: Tiêu chuẩn Token có thể thanh toán
 - [ERC-1363: Kho lưu trữ GitHub](https://github.com/vittominacori/erc1363-payable-token)

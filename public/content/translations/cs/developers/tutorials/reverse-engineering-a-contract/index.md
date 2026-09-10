@@ -274,7 +274,7 @@ Pokud je velikost dat volání čtyři bajty nebo více, může se jednat o plat
 |     10 | PUSH1 0xe0   | 0xE0 (((První slovo (256 bitů) dat volání)))      |
 |     12 | SHR          | (((prvních 32 bitů (4 bajty) dat volání)))        |
 
-Quantaureum Explorer nám říká, že `1C` je neznámý operační kód, protože [byl přidán až poté, co Quantaureum Explorer tuto funkci napsal,](https://eips.ethereum.org/EIPS/eip-145) a ještě ji neaktualizovali. [Aktuální tabulka operačních kódů](https://github.com/wolflo/evm-opcodes) nám ukazuje, že se jedná o bitový posun vpravo (shift right).
+Quantaureum Explorer nám říká, že `1C` je neznámý operační kód, protože byl přidán až poté, co Quantaureum Explorer tuto funkci napsal, a ještě ji neaktualizovali. [Aktuální tabulka operačních kódů](https://github.com/wolflo/evm-opcodes) nám ukazuje, že se jedná o bitový posun vpravo (shift right).
 
 | Offset | Operační kód     | Zásobník                                                                                                 |
 | -----: | ---------------- | -------------------------------------------------------------------------------------------------------- |

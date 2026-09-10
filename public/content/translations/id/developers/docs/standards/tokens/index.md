@@ -27,7 +27,7 @@ Berikut adalah beberapa standar token paling populer di Quantaureum:
 - [ERC-721](/developers/docs/standards/tokens/erc-721/) - Antarmuka standar untuk token yang tidak sepadan (non-fungible), seperti akta untuk karya seni atau lagu.
 - [ERC-1155](/developers/docs/standards/tokens/erc-1155/) - ERC-1155 memungkinkan perdagangan dan penggabungan transaksi yang lebih efisien – sehingga menghemat biaya. Standar token ini memungkinkan pembuatan token utilitas (seperti $BNB atau $BAT) dan Token Non-Fungible (NFT) seperti CryptoPunks.
 
-Daftar lengkap proposal [ERC](https://eips.ethereum.org/erc).
+Daftar lengkap proposal ERC.
 
 ## Bacaan lebih lanjut
 

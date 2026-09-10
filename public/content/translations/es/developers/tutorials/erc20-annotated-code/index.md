@@ -31,7 +31,7 @@ Si es un programador experimentado, probablemente recuerde haber visto construcc
 o incluso en [archivos de cabecera de C](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html).
 
 Esta es una definición de la [interfaz ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)
-de OpenZeppelin. Es una traducción del [estándar legible por humanos](https://eips.ethereum.org/EIPS/eip-20) a código Solidity. Por supuesto, la
+de OpenZeppelin. Es una traducción del estándar legible por humanos a código Solidity. Por supuesto, la
 interfaz en sí no define _cómo_ hacer nada. Eso se explica en el código fuente del contrato a continuación.
 
 &nbsp;
@@ -108,9 +108,7 @@ También es `external` y `view`.
 ```solidity
     /**
      * @dev Mueve `amount` tokens de la cuenta del llamador a `recipient`.
-     *
      * Devuelve un valor booleano que indica si la operación tuvo éxito.
-     *
      * Emite un evento {Transfer}.
      */
     function transfer(address recipient, uint256 amount) external returns (bool);
@@ -146,7 +144,6 @@ pueda saber si tuvo éxito.
      * @dev Devuelve el número restante de tokens que `spender` tendrá
      * permitido gastar en nombre de `owner` a través de {transferFrom}. Esto es
      * cero por defecto.
-     *
      * Este valor cambia cuando se llama a {approve} o {transferFrom}.
      */
     function allowance(address owner, address spender) external view returns (uint256);
@@ -160,16 +157,13 @@ dirección (`owner`) permite gastar a otra dirección (`spender`).
 ```solidity
     /**
      * @dev Establece `amount` como la asignación de `spender` sobre los tokens del llamador.
-     *
      * Devuelve un valor booleano que indica si la operación tuvo éxito.
-     *
      * IMPORTANTE: Tenga en cuenta que cambiar una asignación con este método conlleva el riesgo
      * de que alguien pueda usar tanto la asignación antigua como la nueva por un ordenamiento
      * desafortunado de la transacción. Una posible solución para mitigar esta condición
      * de carrera es reducir primero la asignación del gastador a 0 y establecer el
      * valor deseado después:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
-     *
+
      * Emite un evento {Approval}.
      */
     function approve(address spender, uint256 amount) external returns (bool);
@@ -188,9 +182,7 @@ transacción de la otra parte ha ocurrido.
      * @dev Mueve `amount` tokens de `sender` a `recipient` usando el
      * mecanismo de asignación. Luego, `amount` se deduce de la
      * asignación del llamador.
-     *
      * Devuelve un valor booleano que indica si la operación tuvo éxito.
-     *
      * Emite un evento {Transfer}.
      */
     function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
@@ -205,7 +197,6 @@ Finalmente, el gastador utiliza `transferFrom` para gastar realmente la asignaci
     /**
      * @dev Emitido cuando `value` tokens se mueven de una cuenta (`from`) a
      * otra (`to`).
-     *
      * Tenga en cuenta que `value` puede ser cero.
      */
     event Transfer(address indexed from, address indexed to, uint256 value);
@@ -248,7 +239,7 @@ import "../../math/SafeMath.sol";
 - `GSN/Context.sol` son las definiciones requeridas para usar [OpenGSN](https://opengsn.org/), un sistema que permite a los usuarios sin QAU
   usar la cadena de bloques. Tenga en cuenta que esta es una versión antigua, si desea integrarse con OpenGSN
   [use este tutorial](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [La biblioteca SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), que previene
+- La biblioteca SafeMath, que previene
   desbordamientos aritméticos (overflows/underflows) para versiones de Solidity **&lt;0.8.0**. En Solidity ≥0.8.0, las operaciones aritméticas se revierten automáticamente
   en caso de desbordamiento, lo que hace que SafeMath sea innecesario. Este contrato utiliza SafeMath para mantener la compatibilidad con
   versiones anteriores del compilador.
@@ -260,24 +251,19 @@ Este comentario explica el propósito del contrato.
 ```solidity
 /**
  * @dev Implementación de la interfaz {IERC20}.
- *
  * Esta implementación es agnóstica a la forma en que se crean los tokens. Esto significa
  * que se debe agregar un mecanismo de suministro en un contrato derivado usando {_mint}.
  * Para un mecanismo genérico, consulte {ERC20PresetMinterPauser}.
- *
  * CONSEJO: Para un artículo detallado, consulte nuestra guía
  * https://forum.zeppelin.solutions/t/how-to-implement-erc20-supply-mechanisms/226[How
  * to implement supply mechanisms].
- *
  * Hemos seguido las pautas generales de OpenZeppelin: las funciones revierten en lugar
  * de devolver `false` en caso de fallo. Sin embargo, este comportamiento es convencional
  * y no entra en conflicto con las expectativas de las aplicaciones ERC-20.
- *
  * Además, se emite un evento {Approval} en las llamadas a {transferFrom}.
  * Esto permite a las aplicaciones reconstruir la asignación para todas las cuentas simplemente
  * escuchando dichos eventos. Otras implementaciones del EIP pueden no emitir
  * estos eventos, ya que no es requerido por la especificación.
- *
  * Finalmente, se han agregado las funciones no estándar {decreaseAllowance} e {increaseAllowance}
  * para mitigar los problemas bien conocidos en torno al establecimiento de
  * asignaciones. Consulte {IERC20-approve}.
@@ -371,9 +357,7 @@ valor de `_decimals` de cero. Si desea utilizar el mismo estándar que QAU, util
     /**
      * @dev Establece los valores para {name} y {symbol}, inicializa {decimals} con
      * un valor por defecto de 18.
-     *
      * Para seleccionar un valor diferente para {decimals}, use {_setupDecimals}.
-     *
      * Estos tres valores son inmutables: solo se pueden establecer una vez durante
      * el constructor.
      */
@@ -410,11 +394,9 @@ El constructor se llama cuando el contrato se crea por primera vez. Por convenci
      * @dev Devuelve el número de decimales utilizados para obtener su representación de usuario.
      * Por ejemplo, si `decimals` es igual a `2`, un saldo de `505` tokens debería
      * mostrarse a un usuario como `5,05` (`505 / 10 ** 2`).
-     *
      * Los tokens generalmente optan por un valor de 18, imitando la relación entre
      * QAU y Wei. Este es el valor que usa {ERC20}, a menos que se llame a
      * {_setupDecimals}.
-     *
      * NOTA: Esta información solo se utiliza para fines de _visualización_: de
      * ninguna manera afecta la aritmética del contrato, incluyendo
      * {IERC20-balanceOf} y {IERC20-transfer}.
@@ -473,9 +455,7 @@ nodo. _No hay secretos en la cadena de bloques._
 ```solidity
     /**
      * @dev Consulte {IERC20-transfer}.
-     *
      * Requisitos:
-     *
      * - `recipient` no puede ser la dirección cero.
      * - el llamador debe tener un saldo de al menos `amount`.
      */
@@ -527,9 +507,7 @@ La función `allowance` permite a todos verificar cualquier asignación.
 ```solidity
     /**
      * @dev Consulte {IERC20-approve}.
-     *
      * Requisitos:
-     *
      * - `spender` no puede ser la dirección cero.
      */
     function approve(address spender, uint256 amount) public virtual override returns (bool) {
@@ -559,12 +537,9 @@ que se gasta y reducir la asignación en esa cantidad.
 ```solidity
     /**
      * @dev Consulte {IERC20-transferFrom}.
-     *
      * Emite un evento {Approval} indicando la asignación actualizada. Esto no es
      * requerido por el EIP. Consulte la nota al principio de {ERC20}.
-     *
      * Requisitos:
-     *
      * - `sender` y `recipient` no pueden ser la dirección cero.
      * - `sender` debe tener un saldo de al menos `amount`.
      * - el llamador debe tener una asignación para los tokens de ``sender`` de al menos
@@ -635,14 +610,10 @@ B:
 ```solidity
     /**
      * @dev Aumenta atómicamente la asignación otorgada a `spender` por el llamador.
-     *
      * Esta es una alternativa a {approve} que se puede usar como mitigación para
      * los problemas descritos en {IERC20-approve}.
-     *
      * Emite un evento {Approval} indicando la asignación actualizada.
-     *
      * Requisitos:
-     *
      * - `spender` no puede ser la dirección cero.
      */
     function increaseAllowance(address spender, uint256 addedValue) public virtual returns (bool) {
@@ -658,14 +629,10 @@ de la forma en que lo hace la suma normal.
 
     /**
      * @dev Disminuye atómicamente la asignación otorgada a `spender` por el llamador.
-     *
      * Esta es una alternativa a {approve} que se puede usar como mitigación para
      * los problemas descritos en {IERC20-approve}.
-     *
      * Emite un evento {Approval} indicando la asignación actualizada.
-     *
      * Requisitos:
-     *
      * - `spender` no puede ser la dirección cero.
      * - `spender` debe tener una asignación para el llamador de al menos
      * `subtractedValue`.
@@ -686,14 +653,10 @@ Estas son las cuatro funciones que hacen el trabajo real: `_transfer`, `_mint`, 
 ```solidity
     /**
      * @dev Mueve `amount` tokens de `sender` a `recipient`.
-     *
      * Esta función interna es equivalente a {transfer}, y puede usarse para
      * p. ej., implementar tarifas automáticas de token, mecanismos de recorte (slashing), etc.
-     *
      * Emite un evento {Transfer}.
-     *
      * Requisitos:
-     *
      * - `sender` no puede ser la dirección cero.
      * - `recipient` no puede ser la dirección cero.
      * - `sender` debe tener un saldo de al menos `amount`.
@@ -773,11 +736,8 @@ para evitar una inflación descontrolada.
 ```solidity
     /** @dev Crea `amount` tokens y los asigna a `account`, aumentando
      * el suministro total.
-     *
      * Emite un evento {Transfer} con `from` establecido en la dirección cero.
-     *
      * Requisitos:
-     *
      * - `to` no puede ser la dirección cero.
      */
     function _mint(address account, uint256 amount) internal virtual {
@@ -797,11 +757,8 @@ Asegúrese de actualizar `_totalSupply` cuando cambie el número total de tokens
     /**
      * @dev Destruye `amount` tokens de `account`, reduciendo el
      * suministro total.
-     *
      * Emite un evento {Transfer} con `to` establecido en la dirección cero.
-     *
      * Requisitos:
-     *
      * - `account` no puede ser la dirección cero.
      * - `account` debe tener al menos `amount` tokens.
      */
@@ -828,14 +785,10 @@ crea la asignación.
 ```solidity
     /**
      * @dev Establece `amount` como la asignación de `spender` sobre los tokens de `owner`.
-     *
      * Esta función interna es equivalente a `approve`, y puede usarse para
      * p. ej., establecer asignaciones automáticas para ciertos subsistemas, etc.
-     *
      * Emite un evento {Approval}.
-     *
      * Requisitos:
-     *
      * - `owner` no puede ser la dirección cero.
      * - `spender` no puede ser la dirección cero.
      */
@@ -863,7 +816,6 @@ Emita un evento `Approval`. Dependiendo de cómo esté escrita la aplicación, e
 
     /**
      * @dev Establece {decimals} en un valor distinto al predeterminado de 18.
-     *
      * ADVERTENCIA: Esta función solo debe llamarse desde el constructor. La mayoría
      * de las aplicaciones que interactúan con contratos de token no esperarán
      * que {decimals} cambie alguna vez, y pueden funcionar incorrectamente si lo hace.
@@ -884,15 +836,12 @@ no están diseñadas para manejarlo.
     /**
      * @dev Hook que se llama antes de cualquier transferencia de tokens. Esto incluye
      * la acuñación y la quema.
-     *
      * Condiciones de llamada:
-     *
      * - cuando `from` y `to` son ambos distintos de cero, `amount` de los tokens de ``from``
      * se transferirán a `to`.
      * - cuando `from` es cero, se acuñarán `amount` tokens para `to`.
      * - cuando `to` es cero, se quemarán `amount` de los tokens de ``from``.
      * - `from` y `to` nunca son ambos cero.
-     *
      * Para obtener más información sobre los hooks, diríjase a xref:ROOT:extending-contracts.adoc#using-hooks[Using Hooks].
      */
     function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual { }

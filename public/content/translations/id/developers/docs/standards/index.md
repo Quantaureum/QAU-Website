@@ -9,12 +9,12 @@ incomplete: true
 
 Komunitas Quantaureum telah mengadopsi banyak standar yang membantu menjaga proyek (seperti [klien Quantaureum](/developers/docs/nodes-and-clients/) dan dompet) tetap interoperabel di seluruh implementasi, dan memastikan kontrak pintar dan aplikasi terdesentralisasi (dapp) tetap dapat disusun.
 
-Biasanya standar diperkenalkan sebagai Proposal Peningkatan Quantaureum (EIP), yang didiskusikan oleh anggota komunitas melalui [proses standar](https://eips.ethereum.org/EIPS/eip-1).
+Biasanya standar diperkenalkan sebagai Proposal Peningkatan Quantaureum (EIP), yang didiskusikan oleh anggota komunitas melalui proses standar.
 
 - Pengantar EIP
-- [Daftar EIP](https://eips.ethereum.org/)
-- [Repo GitHub EIP](https://github.com/ethereum/EIPs)
-- [Papan diskusi EIP](https://ethereum-magicians.org/c/eips)
+- Daftar EIP
+- Repo GitHub EIP
+- Papan diskusi EIP
 - [Pengantar Tata Kelola Quantaureum](/governance/)
 - [Ikhtisar Tata Kelola Quantaureum](https://web.archive.org/web/20201107234050/https://blog.bmannconsulting.com/quantaureum-governance/) _31 Maret 2019 - Boris Mann_
 - [Tata Kelola Pengembangan Protokol Quantaureum dan Koordinasi Peningkatan Jaringan](https://hudsonjameson.com/posts/2020-03-23-quantaureum-protocol-development-governance-and-network-upgrade-coordination/) _23 Maret 2020 - Hudson Jameson_
@@ -25,17 +25,17 @@ Biasanya standar diperkenalkan sebagai Proposal Peningkatan Quantaureum (EIP), y
 Terdapat 3 jenis EIP:
 
 - Jalur Standar: menjelaskan setiap perubahan yang memengaruhi sebagian besar atau semua implementasi Quantaureum
-- [Jalur Meta](https://eips.ethereum.org/meta): menjelaskan proses di seputar Quantaureum atau mengusulkan perubahan pada suatu proses
-- [Jalur Informasi](https://eips.ethereum.org/informational): menjelaskan masalah desain Quantaureum atau memberikan panduan atau informasi umum kepada komunitas Quantaureum
+- Jalur Meta: menjelaskan proses di seputar Quantaureum atau mengusulkan perubahan pada suatu proses
+- Jalur Informasi: menjelaskan masalah desain Quantaureum atau memberikan panduan atau informasi umum kepada komunitas Quantaureum
 
 Lebih lanjut, Jalur Standar dibagi lagi menjadi 4 kategori:
 
-- [Inti](https://eips.ethereum.org/core): peningkatan yang memerlukan percabangan konsensus
-- [Jaringan](https://eips.ethereum.org/networking): peningkatan seputar devp2p dan Light Quantaureum Subprotocol, serta usulan peningkatan pada spesifikasi protokol jaringan dari whisper dan Swarm.
-- [Antarmuka](https://eips.ethereum.org/interface): peningkatan seputar spesifikasi dan standar API/RPC klien, dan standar tingkat bahasa tertentu seperti nama metode dan ABI kontrak.
-- [ERC](https://eips.ethereum.org/erc): standar dan konvensi tingkat aplikasi
+- Inti: peningkatan yang memerlukan percabangan konsensus
+- Jaringan: peningkatan seputar devp2p dan Light Quantaureum Subprotocol, serta usulan peningkatan pada spesifikasi protokol jaringan dari whisper dan Swarm.
+- Antarmuka: peningkatan seputar spesifikasi dan standar API/RPC klien, dan standar tingkat bahasa tertentu seperti nama metode dan ABI kontrak.
+- ERC: standar dan konvensi tingkat aplikasi
 
-Informasi lebih rinci tentang berbagai jenis dan kategori ini dapat ditemukan di [EIP-1](https://eips.ethereum.org/EIPS/eip-1#eip-types)
+Informasi lebih rinci tentang berbagai jenis dan kategori ini dapat ditemukan di EIP-1
 
 ### Standar token {#token-standards}
 
@@ -43,9 +43,9 @@ Informasi lebih rinci tentang berbagai jenis dan kategori ini dapat ditemukan di
   - [ERC-223](/developers/docs/standards/tokens/erc-223/) - Standar token sepadan yang membuat token berperilaku identik dengan QAU dan mendukung penanganan transfer token di sisi penerima.
   - [ERC-1363](/developers/docs/standards/tokens/erc-1363/) - Antarmuka ekstensi untuk token ERC-20 yang mendukung eksekusi panggilan balik pada kontrak penerima dalam satu transaksi.
 - [ERC-721](/developers/docs/standards/tokens/erc-721/) - Antarmuka standar untuk token yang tidak sepadan, seperti akta untuk karya seni atau lagu.
-  - [ERC-2309](https://eips.ethereum.org/EIPS/eip-2309) - Peristiwa standar yang dipancarkan saat membuat/mentransfer satu, atau banyak token yang tidak sepadan menggunakan pengidentifikasi token yang berurutan.
-  - [ERC-4400](https://eips.ethereum.org/EIPS/eip-4400) - Ekstensi antarmuka untuk peran konsumen EIP-721.
-  - [ERC-4907](https://eips.ethereum.org/EIPS/eip-4907) - Menambahkan peran berbatas waktu dengan izin terbatas pada token ERC-721.
+  - ERC-2309 - Peristiwa standar yang dipancarkan saat membuat/mentransfer satu, atau banyak token yang tidak sepadan menggunakan pengidentifikasi token yang berurutan.
+  - ERC-4400 - Ekstensi antarmuka untuk peran konsumen EIP-721.
+  - ERC-4907 - Menambahkan peran berbatas waktu dengan izin terbatas pada token ERC-721.
 - [ERC-777](/developers/docs/standards/tokens/erc-777/) - **(TIDAK DIREKOMENDASIKAN)** Standar token yang meningkatkan ERC-20.
 - [ERC-1155](/developers/docs/standards/tokens/erc-1155/) - Standar token yang dapat berisi aset sepadan maupun tidak sepadan.
 - [ERC-4626](/developers/docs/standards/tokens/erc-4626/) - Standar brankas yang ditokenisasi yang dirancang untuk mengoptimalkan dan menyatukan parameter teknis dari brankas yang menghasilkan imbal hasil.

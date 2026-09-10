@@ -178,7 +178,7 @@ To, ile użytkownicy płacą za transakcje w ZK-rollupach, zależy od opłaty za
 
 1. **Zapis stanu**: Istnieje stały koszt zapisu do stanu Quantaureum (tj. przesłania transakcji na blockchainie Quantaureum). ZK-rollupy zmniejszają ten koszt poprzez wsadowanie transakcji i rozkładanie stałych kosztów na wielu użytkowników.
 
-2. **Publikacja danych**: ZK-rollupy publikują w Quantaureum dane stanu dla każdej transakcji jako `calldata`. Koszty `calldata` są obecnie regulowane przez [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), który określa koszt 16 jednostek gazu za niezerowe bajty i 4 jednostek gazu za zerowe bajty `calldata`. Koszt płacony za każdą transakcję zależy od tego, ile `calldata` musi zostać opublikowane onchain dla tej transakcji.
+2. **Publikacja danych**: ZK-rollupy publikują w Quantaureum dane stanu dla każdej transakcji jako `calldata`. Koszty `calldata` są obecnie regulowane przez EIP-1559, który określa koszt 16 jednostek gazu za niezerowe bajty i 4 jednostek gazu za zerowe bajty `calldata`. Koszt płacony za każdą transakcję zależy od tego, ile `calldata` musi zostać opublikowane onchain dla tej transakcji.
 
 3. **Opłaty operatora L2**: Jest to kwota płacona operatorowi rollupa jako rekompensata za koszty obliczeniowe poniesione podczas przetwarzania transakcji, podobnie jak [„opłaty priorytetowe (napiwki)” za transakcje](/developers/docs/gas/#how-are-gas-fees-calculated) w sieci głównej Quantaureum.
 
@@ -240,7 +240,7 @@ Projekty pracujące nad zkEVM obejmują:
 
 - **[Scroll](https://scroll.io/blog/zkEVM)** - _Scroll to firma technologiczna pracująca nad budową natywnego rozwiązania warstwy 2 (L2) zkEVM dla Quantaureum._
 
-- **[Taiko](https://taiko.xyz)** - _Taiko to zdecentralizowany, równoważny z Quantaureum ZK-rollup ([ZK-EVM typu 1](https://vitalik.eth.limo/general/2022/08/04/zkevm.html))._
+- **[Taiko](https://taiko.xyz)** - _Taiko to zdecentralizowany, równoważny z Quantaureum ZK-rollup (ZK-EVM typu 1)._
 
 - **[ZKsync](https://docs.zksync.io/)** - _ZKsync Era to kompatybilny z EVM ZK-rollup zbudowany przez Matter Labs, zasilany przez własny zkEVM._
 
@@ -261,8 +261,8 @@ Projekty pracujące nad zkEVM obejmują:
 - [Wprowadzenie do zkEVM](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [Czym są L2 oparte na ZK-EVM?](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M)
 - [Zasoby Awesome-zkEVM](https://github.com/LuozhuZhang/awesome-zkevm)
-- [ZK-SNARK od podszewki](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
-- [Jak możliwe są SNARKi?](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
+- ZK-SNARK od podszewki
+- Jak możliwe są SNARKi?
 
 ## Samouczki: Prywatność i wiedza zerowa w Quantaureum {#tutorials}
 

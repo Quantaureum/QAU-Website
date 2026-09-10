@@ -46,7 +46,7 @@ Most má dva hlavní toky:
    - Původně pocházelo z mostu na l1.
 6. Most na l2 zkontroluje, zda je kontrakt ERC-20 tokenu na l2 ten správný:
    - Kontrakt na l2 hlásí, že jeho protějšek na l1 je stejný jako ten, ze kterého tokeny přišly na l1.
-   - Kontrakt na l2 hlásí, že podporuje správné rozhraní ([pomocí ERC-165](https://eips.ethereum.org/EIPS/eip-165)).
+   - Kontrakt na l2 hlásí, že podporuje správné rozhraní (pomocí ERC-165).
 7. Pokud je kontrakt na l2 správný, zavolá jej, aby vyrazil příslušný počet tokenů na příslušnou adresu. Pokud ne, zahájí proces výběru, aby uživateli umožnil uplatnit nárok na tokeny na l1.
 
 ### Tok výběru {#withdrawal-flow}
@@ -207,7 +207,6 @@ Tato funkce je téměř identická s `depositERC20`, ale umožňuje odeslat ERC-
      * @dev Dokončí výběr z vrstvy 2 na vrstvu 1 a připíše prostředky na zůstatek příjemce
      * tokenu ERC-20 na vrstvě 1.
      * Toto volání selže, pokud inicializovaný výběr z vrstvy 2 nebyl dokončen.
-     *
      * @param _l1Token Adresa tokenu na vrstvě 1, pro který se má provést finalizeWithdrawal.
      * @param _l2Token Adresa tokenu na vrstvě 2, kde byl výběr zahájen.
      * @param _from Adresa na vrstvě 2 iniciující převod.
@@ -338,7 +337,6 @@ Tento cross domain messenger je zcela jiný systém a zaslouží si vlastní čl
 /**
  * @title CrossDomainEnabled
  * @dev Pomocný kontrakt pro kontrakty provádějící mezidoménovou komunikaci
- *
  * Použitý kompilátor: definován dědícím kontraktem
  */
 contract CrossDomainEnabled {
@@ -519,7 +517,7 @@ Vezměte na vědomí, že to není dokonalé řešení, protože neexistuje způ
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[Standard ERC-20](https://eips.ethereum.org/EIPS/eip-20) podporuje dva způsoby, jak může kontrakt nahlásit selhání:
+Standard ERC-20 podporuje dva způsoby, jak může kontrakt nahlásit selhání:
 
 1. Zvrátit (revert)
 2. Vrátit `false`
@@ -532,7 +530,6 @@ Ošetření obou případů by náš kód zkomplikovalo, takže místo toho pou�
  * @dev Most pro QAU a ERC-20 na vrstvě 1 je kontrakt, který uchovává vložené prostředky z vrstvy 1 a standardní
  * tokeny, které se používají na vrstvě 2. Synchronizuje odpovídající most na vrstvě 2, informuje ho o vkladech
  * a naslouchá mu ohledně nově dokončených výběrů.
- *
  */
 contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
     using SafeERC20 for IERC20;
@@ -770,7 +767,6 @@ Tyto dvě funkce jsou obaly kolem `_initiateERC20Deposit`, funkce, která zpraco
     /**
      * @dev Provádí logiku pro vklady informováním kontraktu vloženého tokenu na vrstvě 2
      * o vkladu a zavoláním handleru pro uzamčení prostředků na vrstvě 1. (např. transferFrom)
-     *
      * @param _l1Token Adresa ERC-20 na vrstvě 1, který vkládáme
      * @param _l2Token Adresa příslušného ERC-20 na vrstvě 2 k vrstvě 1
      * @param _from Účet, ze kterého se má stáhnout vklad na vrstvě 1
@@ -955,14 +951,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [Standardní rozhraní ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) nezahrnuje funkce `mint` a `burn`.
-Tyto metody nejsou vyžadovány [standardem ERC-20](https://eips.ethereum.org/EIPS/eip-20), který ponechává mechanismy pro vytváření a ničení tokenů nespecifikované.
+Tyto metody nejsou vyžadovány standardem ERC-20, který ponechává mechanismy pro vytváření a ničení tokenů nespecifikované.
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 [Rozhraní ERC-165](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol) se používá k určení, jaké funkce kontrakt poskytuje.
-[Standard si můžete přečíst zde](https://eips.ethereum.org/EIPS/eip-165).
+Standard si můžete přečíst zde.
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -1051,7 +1047,7 @@ Nejprve zavoláme konstruktor pro kontrakt, ze kterého dědíme (`ERC20(_name, 
     }
 ```
 
-Tímto způsobem funguje [ERC-165](https://eips.ethereum.org/EIPS/eip-165).
+Tímto způsobem funguje ERC-165.
 Každé rozhraní je množinou podporovaných funkcí a je identifikováno jako [exkluzivní disjunkce (XOR)](https://en.wikipedia.org/wiki/Exclusive_or) [selektorů funkcí ABI](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector) těchto funkcí.
 
 Most na l2 používá ERC-165 jako kontrolu správnosti (sanity check), aby se ujistil, že kontrakt ERC-20, do kterého odesílá aktiva, je `IL2StandardERC20`.

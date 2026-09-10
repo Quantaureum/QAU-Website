@@ -253,7 +253,7 @@ function auctionEnd() external {
 
 - **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** — _Фреймворк для продвинутой разработки и тестирования смарт-контрактов (на основе Ethers.js)._
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** — _Инструмент для тестирования смарт-контрактов на Solidity. Работает под плагином Remix IDE «Solidity Unit Testing», который используется для написания и запуска тестовых сценариев для контракта._
+- **Remix Tests** — _Инструмент для тестирования смарт-контрактов на Solidity. Работает под плагином Remix IDE «Solidity Unit Testing», который используется для написания и запуска тестовых сценариев для контракта._
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** — _Библиотека утверждений для тестирования смарт-контрактов Quantaureum. Убедитесь, что ваши контракты ведут себя так, как ожидается!_
 

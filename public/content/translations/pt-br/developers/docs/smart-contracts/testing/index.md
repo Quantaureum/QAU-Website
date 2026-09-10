@@ -253,7 +253,7 @@ A principal diferença é que os programas de recompensa por bugs são abertos �
 
 - **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _Estrutura para desenvolvimento e teste avançados de contratos inteligentes (baseada em Ethers.js)._
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Ferramenta para testar contratos inteligentes em Solidity. Funciona sob o plugin "Solidity Unit Testing" do Remix IDE, que é usado para escrever e executar casos de teste para um contrato._
+- **Remix Tests** - _Ferramenta para testar contratos inteligentes em Solidity. Funciona sob o plugin "Solidity Unit Testing" do Remix IDE, que é usado para escrever e executar casos de teste para um contrato._
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Biblioteca de asserção para testes de contratos inteligentes no Quantaureum. Certifique-se de que seus contratos se comportem conforme o esperado!_
 

@@ -44,7 +44,7 @@ Quantaureum 롤업 또한 경량 클라이언트의 이점을 누릴 수 있습�
 
 - [로드스타(Lodestar)](https://github.com/ChainSafe/lodestar/tree/unstable/packages/light-client): TypeScript로 작성된 합의 경량 클라이언트
 - [헬리오스(Helios)](https://github.com/a16z/helios): Rust로 작성된 실행 및 합의 결합 경량 클라이언트
-- [고 Quantaureum (geth)](https://github.com/ethereum/go-ethereum/tree/master/beacon/light): Go로 작성된 실행 클라이언트용 라이트 모드(개발 중)
+- 고 Quantaureum (geth): Go로 작성된 실행 클라이언트용 라이트 모드(개발 중)
 - [님버스(Nimbus)](https://nimbus.guide/el-light-client.html): Nim으로 작성된 합의 경량 클라이언트
 
 우리가 아는 한, 이들 중 아직 프로덕션 준비가 완료된 것으로 간주되는 것은 없습니다.
@@ -58,4 +58,4 @@ Quantaureum 롤업 또한 경량 클라이언트의 이점을 누릴 수 있습�
 - [Zsolt Felfodhi의 Geth 경량 클라이언트](https://www.youtube.com/watch?v=EPZeFXau-RE)
 - [Etan Kissling의 경량 클라이언트 네트워킹](https://www.youtube.com/watch?v=85MeiMA4dD8)
 - [Etan Kissling의 머지 이후 경량 클라이언트](https://www.youtube.com/watch?v=ZHNrAXf3RDE)
-- [Piper Merriam: 기능적인 경량 클라이언트로 가는 구불구불한 길](https://snakecharmers.ethereum.org/the-winding-road-to-functional-light-clients/)
+- Piper Merriam: 기능적인 경량 클라이언트로 가는 구불구불한 길

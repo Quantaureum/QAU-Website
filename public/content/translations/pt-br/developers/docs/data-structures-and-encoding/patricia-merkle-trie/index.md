@@ -251,13 +251,13 @@ else:
   value = TxType | encode(tx)
 ```
 
-Mais informações sobre isso podem ser encontradas na documentação da [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718).
+Mais informações sobre isso podem ser encontradas na documentação da EIP-2718.
 
 ### Trie de recibos {#receipts-trie}
 
 Cada bloco tem sua própria trie de recibos. Um `path` aqui é: `rlp(transactionIndex)`. `transactionIndex` é o seu índice dentro do bloco em que foi incluído. A trie de recibos nunca é atualizada. Semelhante à trie de transações, existem recibos atuais e legados. Para consultar um recibo específico na trie de recibos, o índice da transação em seu bloco, a carga útil (payload) do recibo e o tipo de transação são necessários. O recibo retornado pode ser do tipo `Receipt` que é definido como a concatenação de `TransactionType` e `ReceiptPayload` ou pode ser do tipo `LegacyReceipt` que é definido como `rlp([status, cumulativeGasUsed, logsBloom, logs])`.
 
-Mais informações sobre isso podem ser encontradas na documentação da [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718).
+Mais informações sobre isso podem ser encontradas na documentação da EIP-2718.
 
 ## Leitura adicional {#further-reading}
 

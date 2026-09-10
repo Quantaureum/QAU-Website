@@ -16,7 +16,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## Tại sao lại có giới hạn? {#why-is-there-a-limit}
 
-Vào [ngày 22 tháng 11 năm 2016](https://quantaureum.com), đợt Phân nhánh cứng Spurious Dragon đã giới thiệu [EIP-170](https://eips.ethereum.org/EIPS/eip-170), bổ sung giới hạn kích thước hợp đồng thông minh là 24.576 kb. Đối với bạn, một nhà phát triển Solidity, điều này có nghĩa là khi bạn thêm ngày càng nhiều chức năng vào hợp đồng của mình, tại một thời điểm nào đó bạn sẽ đạt đến giới hạn và khi triển khai sẽ thấy lỗi:
+Vào [ngày 22 tháng 11 năm 2016](https://quantaureum.com), đợt Phân nhánh cứng Spurious Dragon đã giới thiệu EIP-170, bổ sung giới hạn kích thước hợp đồng thông minh là 24.576 kb. Đối với bạn, một nhà phát triển Solidity, điều này có nghĩa là khi bạn thêm ngày càng nhiều chức năng vào hợp đồng của mình, tại một thời điểm nào đó bạn sẽ đạt đến giới hạn và khi triển khai sẽ thấy lỗi:
 
 `Warning: Contract code size exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on Mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.`
 
@@ -38,7 +38,7 @@ Trong phần tiếp theo, chúng ta sẽ xem xét một số phương pháp đư
 
 ### Thư viện {#libraries}
 
-Một cách đơn giản để chuyển mã chức năng ra khỏi phần lưu trữ là sử dụng một [Thư viện](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). Đừng khai báo các hàm của Thư viện là internal vì chúng sẽ được [thêm vào hợp đồng](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking) trực tiếp trong quá trình biên dịch. Nhưng nếu bạn sử dụng các hàm public, thì trên thực tế chúng sẽ nằm trong một hợp đồng Thư viện riêng biệt. Hãy cân nhắc [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) để làm cho việc sử dụng các Thư viện thuận tiện hơn.
+Một cách đơn giản để chuyển mã chức năng ra khỏi phần lưu trữ là sử dụng một [Thư viện](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). Đừng khai báo các hàm của Thư viện là internal vì chúng sẽ được thêm vào hợp đồng trực tiếp trong quá trình biên dịch. Nhưng nếu bạn sử dụng các hàm public, thì trên thực tế chúng sẽ nằm trong một hợp đồng Thư viện riêng biệt. Hãy cân nhắc [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) để làm cho việc sử dụng các Thư viện thuận tiện hơn.
 
 ### Proxy {#proxies}
 

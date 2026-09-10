@@ -54,7 +54,7 @@ ERC-1363 también es útil para evitar la pérdida o el bloqueo de tokens en con
 
 A diferencia de otras propuestas de extensión de ERC-20, ERC-1363 no anula los métodos `transfer` y `transferFrom` de ERC-20 y define los ID de las interfaces que se implementarán manteniendo la compatibilidad con versiones anteriores de ERC-20.
 
-De [EIP-1363](https://eips.ethereum.org/EIPS/eip-1363):
+De EIP-1363:
 
 ### Métodos {#methods}
 
@@ -167,11 +167,9 @@ interface ERC1363Receiver {
   /**
    * @dev Siempre que se transfieran tokens ERC-1363 a este contrato a través de `ERC1363::transferAndCall` o `ERC1363::transferFromAndCall`
    * por `operator` desde `from`, se llama a esta función.
-   *
    * NOTA: Para aceptar la transferencia, esto debe devolver
    * `bytes4(keccak256("onTransferReceived(address,address,uint256,bytes)"))`
    * (es decir, 0x88a7ca5c, o su propio selector de función).
-   *
    * @param operator La dirección que llamó a la función `transferAndCall` o `transferFromAndCall`.
    * @param from La dirección desde la cual se transfieren los tokens.
    * @param value La cantidad de tokens transferidos.
@@ -193,11 +191,9 @@ interface ERC1363Spender {
   /**
    * @dev Siempre que un `owner` de tokens ERC-1363 apruebe este contrato a través de `ERC1363::approveAndCall`
    * para gastar sus tokens, se llama a esta función.
-   *
    * NOTA: Para aceptar la aprobación, esto debe devolver
    * `bytes4(keccak256("onApprovalReceived(address,uint256,bytes)"))`
    * (es decir, 0x7b04a2d0, o su propio selector de función).
-   *
    * @param owner La dirección que llamó a la función `approveAndCall` y que anteriormente poseía los tokens.
    * @param value La cantidad de tokens a gastar.
    * @param data Datos adicionales sin formato especificado.
@@ -209,5 +205,5 @@ interface ERC1363Spender {
 
 ## Lecturas adicionales {#further-reading}
 
-- [ERC-1363: Estándar de token pagadero](https://eips.ethereum.org/EIPS/eip-1363)
+- ERC-1363: Estándar de token pagadero
 - [ERC-1363: Repositorio en GitHub](https://github.com/vittominacori/erc1363-payable-token)

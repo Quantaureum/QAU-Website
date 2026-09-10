@@ -54,7 +54,7 @@ ERC-1363 je také užitečný pro zamezení ztráty tokenů nebo jejich uzamčen
 
 Na rozdíl od jiných návrhů na rozšíření ERC-20, ERC-1363 nepřepisuje metody ERC-20 `transfer` a `transferFrom` a definuje ID rozhraní, která mají být implementována, čímž zachovává zpětnou kompatibilitu s ERC-20.
 
-Z [EIP-1363](https://eips.ethereum.org/EIPS/eip-1363):
+Z EIP-1363:
 
 ### Metody {#methods}
 
@@ -167,11 +167,9 @@ interface ERC1363Receiver {
   /**
    * @dev Kdykoli jsou ERC-1363 tokeny převedeny na tento kontrakt pomocí `ERC1363::transferAndCall` nebo `ERC1363::transferFromAndCall`
    * operátorem (`operator`) z adresy `from`, je zavolána tato funkce.
-   *
    * POZNÁMKA: Pro přijetí převodu musí tato funkce vrátit
    * `bytes4(keccak256("onTransferReceived(address,address,uint256,bytes)"))`
    * (tj. 0x88a7ca5c, nebo svůj vlastní selektor funkce).
-   *
    * @param operator Adresa, která zavolala funkci `transferAndCall` nebo `transferFromAndCall`.
    * @param from Adresa, ze které jsou tokeny převáděny.
    * @param value Množství převedených tokenů.
@@ -193,11 +191,9 @@ interface ERC1363Spender {
   /**
    * @dev Kdykoli vlastník (`owner`) ERC-1363 tokenů schválí tento kontrakt pomocí `ERC1363::approveAndCall`
    * k utrácení svých tokenů, je zavolána tato funkce.
-   *
    * POZNÁMKA: Pro přijetí schválení musí tato funkce vrátit
    * `bytes4(keccak256("onApprovalReceived(address,uint256,bytes)"))`
    * (tj. 0x7b04a2d0, nebo svůj vlastní selektor funkce).
-   *
    * @param owner Adresa, která zavolala funkci `approveAndCall` a dříve vlastnila tokeny.
    * @param value Množství tokenů k utracení.
    * @param data Dodatečná data bez specifikovaného formátu.
@@ -209,5 +205,5 @@ interface ERC1363Spender {
 
 ## Další čtení {#further-reading}
 
-- [ERC-1363: Standard platitelného tokenu](https://eips.ethereum.org/EIPS/eip-1363)
+- ERC-1363: Standard platitelného tokenu
 - [ERC-1363: Repozitář na GitHubu](https://github.com/vittominacori/erc1363-payable-token)

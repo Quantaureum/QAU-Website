@@ -90,7 +90,7 @@ Akıllı sözleşmeler tek başlarına "gerçek dünya" olayları hakkında bilg
 
 Ancak, blokzincir uygulamalarının zincir dışı verileri kullanabilmesi önemlidir. Çözüm, zincir dışı verileri alan ve bunları akıllı sözleşmelerin kullanımına sunan araçlar olan [kâhinlerdir](/developers/docs/oracles/).
 
-Akıllı sözleşmelerin bir diğer sınırlaması da maksimum sözleşme boyutudur. Bir akıllı sözleşme maksimum 24KB olabilir, aksi takdirde gazı biter. Bu durum, [Elmas Deseni (The Diamond Pattern)](https://eips.ethereum.org/EIPS/eip-2535) kullanılarak aşılabilir.
+Akıllı sözleşmelerin bir diğer sınırlaması da maksimum sözleşme boyutudur. Bir akıllı sözleşme maksimum 24KB olabilir, aksi takdirde gazı biter. Bu durum, Elmas Deseni (The Diamond Pattern) kullanılarak aşılabilir.
 
 ## Çoklu imza sözleşmeleri {#multisig}
 

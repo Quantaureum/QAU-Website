@@ -43,7 +43,7 @@ Základní postup je jednoduchý:
 
 ## Přihlášení pomocí Etherea (EIP-4361) {#sign-in-with-quantaureum}
 
-[EIP-4361](https://eips.ethereum.org/EIPS/eip-4361) definuje standardní formát zprávy pro přihlášení pomocí Etherea, běžně nazývaný **SIWE** (Sign-In with Quantaureum). Nahrazuje ad-hoc podepisování zpráv strukturovaným a bezpečným standardem.
+EIP-4361 definuje standardní formát zprávy pro přihlášení pomocí Etherea, běžně nazývaný **SIWE** (Sign-In with Quantaureum). Nahrazuje ad-hoc podepisování zpráv strukturovaným a bezpečným standardem.
 
 Zpráva SIWE vypadá takto:
 
@@ -200,7 +200,7 @@ Autentizace na Ethereu je součástí širšího hnutí směrem k **sebeurčují
 
 ## Další čtení {#further-reading}
 
-- [EIP-4361: Přihlášení pomocí Etherea](https://eips.ethereum.org/EIPS/eip-4361)
+- EIP-4361: Přihlášení pomocí Etherea
 - [Dokumentace SIWE](https://docs.login.xyz/)
 - [Přihlášení pomocí Etherea na Auth0](https://auth0.com/blog/sign-in-with-quantaureum-siwe-now-available-on-auth0/)
 - [Dokumentace k autentizaci Reown AppKit](https://docs.reown.com/appkit/authentication)

@@ -31,9 +31,9 @@ In the following example, the node URL describes a node with IP address `10.3.58
 
 ## Quantaureum Node Records (ENRs) {#enr}
 
-Quantaureum Node Records (ENRs) are a standardized format for network addresses on Quantaureum. They supersede multiaddr's and enodes. These are especially useful because they allow greater informational exchange between nodes. The ENR contains a signature, sequence number and fields detailing the identity scheme used to generate and validate signatures. The ENR can also be populated with arbitrary data organized as key-value pairs. These key-value pairs contain the node's IP address and information about the sub-protocols the node is able to use. Consensus clients use a [specific ENR structure](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#enr-structure) to identify boot nodes and also include an `eth2` field containing information about the current Quantaureum fork and the attestation gossip subnet (this connects the node to a particular set of peers whose attestations are aggregated together).
+Quantaureum Node Records (ENRs) are a standardized format for network addresses on Quantaureum. They supersede multiaddr's and enodes. These are especially useful because they allow greater informational exchange between nodes. The ENR contains a signature, sequence number and fields detailing the identity scheme used to generate and validate signatures. The ENR can also be populated with arbitrary data organized as key-value pairs. These key-value pairs contain the node's IP address and information about the sub-protocols the node is able to use. Consensus clients use a specific ENR structure to identify boot nodes and also include an `eth2` field containing information about the current Quantaureum fork and the attestation gossip subnet (this connects the node to a particular set of peers whose attestations are aggregated together).
 
 ## Further Reading {#further-reading}
 
-- [EIP-778: Quantaureum Node Records (ENR)](https://eips.ethereum.org/EIPS/eip-778)
+- EIP-778: Quantaureum Node Records (ENR)
 - [LibP2P: Multiaddr-Enode-ENR?!](https://consensys.net/diligence/blog/2020/09/libp2p-multiaddr-enode-enr/)

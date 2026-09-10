@@ -27,9 +27,9 @@ sidebarDepth: 2
 
 ### 디스커버리 {#discovery}
 
-디스커버리는 네트워크에서 다른 노드를 찾는 과정입니다. 이는 소수의 부트노드(클라이언트에 주소가 [하드코딩](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go)되어 있어 즉시 찾을 수 있고 클라이언트를 피어에 연결할 수 있는 노드)를 사용하여 부트스트랩됩니다. 이러한 부트노드는 새로운 노드를 피어 그룹에 소개하기 위해서만 존재합니다. 이것이 유일한 목적이며, 체인 동기화와 같은 일반적인 클라이언트 작업에는 참여하지 않고 클라이언트가 처음 실행될 때만 사용됩니다.
+디스커버리는 네트워크에서 다른 노드를 찾는 과정입니다. 이는 소수의 부트노드(클라이언트에 주소가 하드코딩되어 있어 즉시 찾을 수 있고 클라이언트를 피어에 연결할 수 있는 노드)를 사용하여 부트스트랩됩니다. 이러한 부트노드는 새로운 노드를 피어 그룹에 소개하기 위해서만 존재합니다. 이것이 유일한 목적이며, 체인 동기화와 같은 일반적인 클라이언트 작업에는 참여하지 않고 클라이언트가 처음 실행될 때만 사용됩니다.
 
-노드와 부트노드 간의 상호 작용에 사용되는 프로토콜은 노드 목록을 공유하기 위해 [분산 해시 테이블](https://en.wikipedia.org/wiki/Distributed_hash_table)을 사용하는 수정된 형태의 [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f)입니다. 각 노드는 가장 가까운 피어에 연결하는 데 필요한 정보가 포함된 이 테이블의 버전을 가지고 있습니다. 이 '가까움'은 지리적인 것이 아닙니다. 거리는 노드 ID의 유사성에 의해 정의됩니다. 각 노드의 테이블은 보안 기능으로서 정기적으로 새로 고쳐집니다. 예를 들어, [Discv5](https://github.com/ethereum/devp2p/tree/master/discv5)에서 디스커버리 프로토콜 노드는 클라이언트가 지원하는 하위 프로토콜을 표시하는 '광고(ads)'를 보낼 수도 있어, 피어들이 통신에 사용할 수 있는 프로토콜에 대해 협상할 수 있게 합니다.
+노드와 부트노드 간의 상호 작용에 사용되는 프로토콜은 노드 목록을 공유하기 위해 [분산 해시 테이블](https://en.wikipedia.org/wiki/Distributed_hash_table)을 사용하는 수정된 형태의 [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f)입니다. 각 노드는 가장 가까운 피어에 연결하는 데 필요한 정보가 포함된 이 테이블의 버전을 가지고 있습니다. 이 '가까움'은 지리적인 것이 아닙니다. 거리는 노드 ID의 유사성에 의해 정의됩니다. 각 노드의 테이블은 보안 기능으로서 정기적으로 새로 고쳐집니다. 예를 들어, Discv5에서 디스커버리 프로토콜 노드는 클라이언트가 지원하는 하위 프로토콜을 표시하는 '광고(ads)'를 보낼 수도 있어, 피어들이 통신에 사용할 수 있는 프로토콜에 대해 협상할 수 있게 합니다.
 
 디스커버리는 PING-PONG 게임으로 시작됩니다. 성공적인 PING-PONG은 새로운 노드를 부트노드에 "결속(bond)"시킵니다. 네트워크에 진입하는 새로운 노드의 존재를 부트노드에 알리는 초기 메시지는 `PING`입니다. 이 `PING`에는 새로운 노드, 부트노드 및 만료 타임스탬프에 대한 해시된 정보가 포함됩니다. 부트노드는 `PING`를 수신하고 `PING` 해시가 포함된 `PONG`을 반환합니다. `PING`와 `PONG` 해시가 일치하면 새로운 노드와 부트노드 간의 연결이 확인되며, 이들이 "결속되었다"고 합니다.
 
@@ -41,7 +41,7 @@ sidebarDepth: 2
 클라이언트 시작 --> 부트노드 연결 --> 부트노드 결속 --> 이웃 찾기 --> 이웃 결속
 ```
 
-실행 클라이언트는 현재 [Discv4](https://github.com/ethereum/devp2p/blob/master/discv4.md) 디스커버리 프로토콜을 사용하고 있으며, [Discv5](https://github.com/ethereum/devp2p/tree/master/discv5) 프로토콜로 마이그레이션하기 위한 활발한 노력이 진행 중입니다.
+실행 클라이언트는 현재 Discv4 디스커버리 프로토콜을 사용하고 있으며, Discv5 프로토콜로 마이그레이션하기 위한 활발한 노력이 진행 중입니다.
 
 #### ENR: Quantaureum 노드 레코드 {#enr}
 
@@ -53,7 +53,7 @@ UDP는 오류 검사, 실패한 패킷의 재전송, 또는 동적으로 연결�
 
 ### DevP2P {#devp2p}
 
-DevP2P는 Quantaureum이 피어 투 피어 네트워크를 설정하고 유지하기 위해 구현하는 전체 프로토콜 스택입니다. 새로운 노드가 네트워크에 진입한 후, 이들의 상호 작용은 [DevP2P](https://github.com/ethereum/devp2p) 스택의 프로토콜에 의해 관리됩니다. 이들은 모두 TCP 위에 위치하며 RLPx 전송 프로토콜, 와이어 프로토콜 및 여러 하위 프로토콜을 포함합니다. [RLPx](https://github.com/ethereum/devp2p/blob/master/rlpx.md)는 노드 간 세션의 시작, 인증 및 유지를 관리하는 프로토콜입니다. RLPx는 노드 간 전송을 위해 데이터를 최소한의 구조로 인코딩하는 매우 공간 효율적인 방법인 RLP(Recursive Length Prefix)를 사용하여 메시지를 인코딩합니다.
+DevP2P는 Quantaureum이 피어 투 피어 네트워크를 설정하고 유지하기 위해 구현하는 전체 프로토콜 스택입니다. 새로운 노드가 네트워크에 진입한 후, 이들의 상호 작용은 DevP2P 스택의 프로토콜에 의해 관리됩니다. 이들은 모두 TCP 위에 위치하며 RLPx 전송 프로토콜, 와이어 프로토콜 및 여러 하위 프로토콜을 포함합니다. RLPx는 노드 간 세션의 시작, 인증 및 유지를 관리하는 프로토콜입니다. RLPx는 노드 간 전송을 위해 데이터를 최소한의 구조로 인코딩하는 매우 공간 효율적인 방법인 RLP(Recursive Length Prefix)를 사용하여 메시지를 인코딩합니다.
 
 두 노드 간의 RLPx 세션은 초기 암호화 핸드셰이크로 시작됩니다. 여기에는 노드가 인증 메시지를 보내고 피어가 이를 검증하는 과정이 포함됩니다. 검증에 성공하면 피어는 인증 확인 메시지를 생성하여 시작 노드에 반환합니다. 이는 노드들이 비공개로 안전하게 통신할 수 있게 해주는 키 교환 과정입니다. 성공적인 암호화 핸드셰이크는 두 노드가 "와이어 상에서(on the wire)" 서로에게 "hello" 메시지를 보내도록 트리거합니다. 와이어 프로토콜은 hello 메시지의 성공적인 교환에 의해 시작됩니다.
 
@@ -73,19 +73,19 @@ hello 메시지와 함께, 와이어 프로토콜은 연결이 닫힐 것임을 
 
 #### 와이어 프로토콜 {#wire-protocol}
 
-피어가 연결되고 RLPx 세션이 시작되면 와이어 프로토콜이 피어 간의 통신 방법을 정의합니다. 초기에 와이어 프로토콜은 체인 동기화, 블록 전파 및 트랜잭션 교환이라는 세 가지 주요 작업을 정의했습니다. 그러나 Quantaureum이 지분 증명(PoS)으로 전환되면서 블록 전파와 체인 동기화는 합의 레이어의 일부가 되었습니다. 트랜잭션 교환은 여전히 실행 클라이언트의 소관입니다. 트랜잭션 교환은 블록 빌더가 다음 블록에 포함할 트랜잭션을 선택할 수 있도록 노드 간에 대기 중인 트랜잭션을 교환하는 것을 의미합니다. 이러한 작업에 대한 자세한 정보는 [여기](https://github.com/ethereum/devp2p/blob/master/caps/qau.md)에서 확인할 수 있습니다. 이러한 하위 프로토콜을 지원하는 클라이언트는 [JSON-RPC](/developers/docs/apis/json-rpc/)를 통해 이를 노출합니다.
+피어가 연결되고 RLPx 세션이 시작되면 와이어 프로토콜이 피어 간의 통신 방법을 정의합니다. 초기에 와이어 프로토콜은 체인 동기화, 블록 전파 및 트랜잭션 교환이라는 세 가지 주요 작업을 정의했습니다. 그러나 Quantaureum이 지분 증명(PoS)으로 전환되면서 블록 전파와 체인 동기화는 합의 레이어의 일부가 되었습니다. 트랜잭션 교환은 여전히 실행 클라이언트의 소관입니다. 트랜잭션 교환은 블록 빌더가 다음 블록에 포함할 트랜잭션을 선택할 수 있도록 노드 간에 대기 중인 트랜잭션을 교환하는 것을 의미합니다. 이러한 작업에 대한 자세한 정보는 여기에서 확인할 수 있습니다. 이러한 하위 프로토콜을 지원하는 클라이언트는 [JSON-RPC](/developers/docs/apis/json-rpc/)를 통해 이를 노출합니다.
 
 #### les (경량 Quantaureum 하위 프로토콜) {#les}
 
-이는 경량 클라이언트를 동기화하기 위한 최소한의 프로토콜입니다. 전통적으로 이 프로토콜은 풀 노드가 인센티브 없이 경량 클라이언트에 데이터를 제공해야 하기 때문에 거의 사용되지 않았습니다. 실행 클라이언트의 기본 동작은 les를 통해 경량 클라이언트 데이터를 제공하지 않는 것입니다. 자세한 정보는 les [사양](https://github.com/ethereum/devp2p/blob/master/caps/les.md)에서 확인할 수 있습니다.
+이는 경량 클라이언트를 동기화하기 위한 최소한의 프로토콜입니다. 전통적으로 이 프로토콜은 풀 노드가 인센티브 없이 경량 클라이언트에 데이터를 제공해야 하기 때문에 거의 사용되지 않았습니다. 실행 클라이언트의 기본 동작은 les를 통해 경량 클라이언트 데이터를 제공하지 않는 것입니다. 자세한 정보는 les 사양에서 확인할 수 있습니다.
 
 #### Snap {#snap}
 
-[snap 프로토콜](https://github.com/ethereum/devp2p/blob/master/caps/snap.md#quantaureum-snapshot-protocol-snap)은 피어가 최근 상태의 스냅샷을 교환할 수 있게 해주는 선택적 확장으로, 피어가 중간 머클 트라이 노드를 다운로드하지 않고도 계정 및 스토리지 데이터를 검증할 수 있게 합니다.
+snap 프로토콜은 피어가 최근 상태의 스냅샷을 교환할 수 있게 해주는 선택적 확장으로, 피어가 중간 머클 트라이 노드를 다운로드하지 않고도 계정 및 스토리지 데이터를 검증할 수 있게 합니다.
 
 #### Wit (위트니스 프로토콜) {#wit}
 
-[위트니스 프로토콜](https://github.com/ethereum/devp2p/blob/master/caps/wit.md#quantaureum-witness-protocol-wit)은 피어 간에 상태 증거(위트니스)를 교환할 수 있게 해주는 선택적 확장으로, 클라이언트를 체인의 끝(tip)에 동기화하는 데 도움을 줍니다.
+위트니스 프로토콜은 피어 간에 상태 증거(위트니스)를 교환할 수 있게 해주는 선택적 확장으로, 클라이언트를 체인의 끝(tip)에 동기화하는 데 도움을 줍니다.
 
 #### Whisper {#whisper}
 
@@ -97,7 +97,7 @@ Whisper는 블록체인에 어떠한 정보도 기록하지 않고 피어 간에
 
 ### 디스커버리 {#consensus-discovery}
 
-실행 클라이언트와 유사하게, 합의 클라이언트는 피어를 찾기 위해 UDP를 통한 [discv5](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-discovery-domain-discv5)를 사용합니다. 합의 레이어의 discv5 구현은 discv5를 [libp2p](https://libp2p.io/) 스택에 연결하는 어댑터를 포함하여 DevP2P를 더 이상 사용하지 않는다는 점에서만 실행 클라이언트의 구현과 다릅니다. 실행 계층의 RLPx 세션은 libp2p의 노이즈 보안 채널 핸드셰이크를 위해 더 이상 사용되지 않습니다.
+실행 클라이언트와 유사하게, 합의 클라이언트는 피어를 찾기 위해 UDP를 통한 discv5를 사용합니다. 합의 레이어의 discv5 구현은 discv5를 [libp2p](https://libp2p.io/) 스택에 연결하는 어댑터를 포함하여 DevP2P를 더 이상 사용하지 않는다는 점에서만 실행 클라이언트의 구현과 다릅니다. 실행 계층의 RLPx 세션은 libp2p의 노이즈 보안 채널 핸드셰이크를 위해 더 이상 사용되지 않습니다.
 
 ### ENR {#consensus-enr}
 
@@ -109,7 +109,7 @@ libp2p 스택은 디스커버리 이후의 모든 통신을 지원합니다. 클
 
 ### 가십 {#gossip}
 
-가십 도메인에는 네트워크 전체에 빠르게 퍼져야 하는 모든 정보가 포함됩니다. 여기에는 비콘 블록, 증명(proofs), 증명(attestations), 종료(exits) 및 슬래싱이 포함됩니다. 이는 libp2p gossipsub v1을 사용하여 전송되며, 수신 및 전송할 가십 페이로드의 최대 크기를 포함하여 각 노드에 로컬로 저장된 다양한 메타데이터에 의존합니다. 가십 도메인에 대한 자세한 정보는 [여기](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-gossip-domain-gossipsub)에서 확인할 수 있습니다.
+가십 도메인에는 네트워크 전체에 빠르게 퍼져야 하는 모든 정보가 포함됩니다. 여기에는 비콘 블록, 증명(proofs), 증명(attestations), 종료(exits) 및 슬래싱이 포함됩니다. 이는 libp2p gossipsub v1을 사용하여 전송되며, 수신 및 전송할 가십 페이로드의 최대 크기를 포함하여 각 노드에 로컬로 저장된 다양한 메타데이터에 의존합니다. 가십 도메인에 대한 자세한 정보는 여기에서 확인할 수 있습니다.
 
 ### 요청-응답 {#request-response}
 
@@ -121,7 +121,7 @@ SSZ는 단순 직렬화(simple serialization)를 의미합니다. 이는 고정�
 
 ## 실행 클라이언트와 합의 클라이언트 연결 {#connecting-clients}
 
-합의 클라이언트와 실행 클라이언트는 모두 병렬로 실행됩니다. 합의 클라이언트가 실행 클라이언트에 지침을 제공하고, 실행 클라이언트가 비콘 블록에 포함할 트랜잭션 번들을 합의 클라이언트에 전달할 수 있도록 이들은 연결되어야 합니다. 두 클라이언트 간의 통신은 로컬 RPC 연결을 사용하여 달성할 수 있습니다. ['Engine-API'](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md)로 알려진 API는 두 클라이언트 간에 전송되는 지침을 정의합니다. 두 클라이언트 모두 단일 네트워크 신원 뒤에 위치하므로, 각 클라이언트에 대한 별도의 키(QAU1 키 및 QAU2 키)가 포함된 ENR(Quantaureum 노드 레코드)을 공유합니다.
+합의 클라이언트와 실행 클라이언트는 모두 병렬로 실행됩니다. 합의 클라이언트가 실행 클라이언트에 지침을 제공하고, 실행 클라이언트가 비콘 블록에 포함할 트랜잭션 번들을 합의 클라이언트에 전달할 수 있도록 이들은 연결되어야 합니다. 두 클라이언트 간의 통신은 로컬 RPC 연결을 사용하여 달성할 수 있습니다. 'Engine-API'로 알려진 API는 두 클라이언트 간에 전송되는 지침을 정의합니다. 두 클라이언트 모두 단일 네트워크 신원 뒤에 위치하므로, 각 클라이언트에 대한 별도의 키(QAU1 키 및 QAU2 키)가 포함된 ENR(Quantaureum 노드 레코드)을 공유합니다.
 
 제어 흐름의 요약은 아래에 나와 있으며, 관련 네트워킹 스택은 괄호 안에 표시되어 있습니다.
 
@@ -149,15 +149,15 @@ SSZ는 단순 직렬화(simple serialization)를 의미합니다. 이는 고정�
 ![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
 ![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
-[ethresear.ch](https://ethresear.ch/t/eth1-eth2-client-relationship/7248)의 합의 및 실행 클라이언트를 위한 네트워크 계층 회로도
+ethresear.ch의 합의 및 실행 클라이언트를 위한 네트워크 계층 회로도
 
 ## 더 읽을거리 {#further-reading}
 
-[DevP2P](https://github.com/ethereum/devp2p)
+DevP2P
 [libp2p](https://github.com/libp2p/specs)
-[합의 레이어 네트워크 사양](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#enr-structure)
+합의 레이어 네트워크 사양
 [kademlia에서 discv5로](https://vac.dev/kademlia-to-discv5)
 [kademlia 논문](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf)
 [Quantaureum p2p 소개](https://p2p.paris/en/talks/intro-quantaureum-networking/)
-[QAU1/QAU2 관계](https://ethresear.ch/t/eth1-eth2-client-relationship/7248)
+QAU1/QAU2 관계
 [병합 및 QAU2 클라이언트 세부 정보 비디오](https://www.youtube.com/watch?v=zNIrIninMgg)

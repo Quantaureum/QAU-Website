@@ -12,7 +12,7 @@ ERC-4626은 수익 창출 볼트의 기술적 매개변수를 최적화하고 �
 
 수익 창출 볼트의 ERC-4626은 더 일관되고 강력한 구현 패턴을 생성하여 통합 노력을 줄이고, 개발자의 특별한 노력 없이도 다양한 애플리케이션에서 수익에 접근할 수 있게 해줍니다.
 
-ERC-4626 토큰은 [EIP-4626](https://eips.ethereum.org/EIPS/eip-4626)에 자세히 설명되어 있습니다.
+ERC-4626 토큰은 EIP-4626에 자세히 설명되어 있습니다.
 
 **비동기 볼트 확장 (ERC-7540)**
 
@@ -28,7 +28,7 @@ ERC-4626에서 지원하지 않는 누락된 사용 사례 중 하나는 유동�
 
 ERC-7575는 ERC-4626 구현에서 ERC-20 토큰 구현을 외부화하여 다중 자산을 가진 볼트에 대한 지원을 추가합니다.
 
-ERC-7575 확장은 [ERC-7575](https://eips.ethereum.org/EIPS/eip-7575)에 자세히 설명되어 있습니다.
+ERC-7575 확장은 ERC-7575에 자세히 설명되어 있습니다.
 ## 전제 조건 {#prerequisites}
 
 이 페이지를 더 잘 이해하려면 먼저 [토큰 표준](/developers/docs/standards/tokens/)과 [ERC-20](/developers/docs/standards/tokens/erc-20/)에 대해 읽어보는 것을 권장합니다.
@@ -220,5 +220,5 @@ event Withdraw(
 
 ## 더 읽어보기 {#further-reading}
 
-- [EIP-4626: 토큰화된 볼트 표준](https://eips.ethereum.org/EIPS/eip-4626)
+- EIP-4626: 토큰화된 볼트 표준
 - [ERC-4626: GitHub 저장소](https://github.com/transmissions11/solmate/blob/main/src/tokens/ERC4626.sol)

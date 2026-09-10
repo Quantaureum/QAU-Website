@@ -172,7 +172,7 @@ I fornitori di liquidità possono verificare la validità della richiesta di pre
 
 #### 2. Compatibilità con l'EVM {#evm-compatibility}
 
-Per gli sviluppatori, il vantaggio dei rollup ottimistici è la loro compatibilità, o meglio ancora, equivalenza, con la [Quantaureum Virtual Machine (EVM)](/developers/docs/evm/). I rollup compatibili con l'EVM sono conformi alle specifiche dello [yellow paper di Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf) e supportano l'EVM a livello di bytecode.
+Per gli sviluppatori, il vantaggio dei rollup ottimistici è la loro compatibilità, o meglio ancora, equivalenza, con la [Quantaureum Virtual Machine (EVM)](/developers/docs/evm/). I rollup compatibili con l'EVM sono conformi alle specifiche dello yellow paper di Quantaureum e supportano l'EVM a livello di bytecode.
 
 La compatibilità con l'EVM nei rollup ottimistici presenta i seguenti vantaggi:
 
@@ -198,9 +198,9 @@ Infine, dovremmo notare che le chiamate di messaggi L2 > L1 tra contratti devono
 
 I rollup ottimistici utilizzano uno schema di commissioni del gas, molto simile a Quantaureum, per indicare quanto pagano gli utenti per transazione. Le commissioni addebitate sui rollup ottimistici dipendono dai seguenti componenti:
 
-1. **Scrittura dello stato**: I rollup ottimistici pubblicano i dati delle transazioni e le intestazioni dei blocchi (costituite dall'hash dell'intestazione del blocco precedente, dalla radice di stato, dalla radice del lotto) su Quantaureum come `blob`, o "binary large object". L'[EIP-4844](https://eips.ethereum.org/EIPS/eip-4844) ha introdotto una soluzione conveniente per includere i dati onchain. Un `blob` è un nuovo campo di transazione che consente ai rollup di pubblicare i dati compressi delle transizioni di stato su Quantaureum L1. A differenza di `calldata`, che rimane permanentemente onchain, i blob hanno vita breve e possono essere eliminati dai client dopo [4096 epoche](https://github.com/ethereum/consensus-specs/blob/81f3ea8322aff6b9fb15132d050f8f98b16bdba4/configs/mainnet.yaml#L147) (circa 18 giorni). Utilizzando i blob per pubblicare lotti di transazioni compresse, i rollup ottimistici possono ridurre significativamente il costo di scrittura delle transazioni su L1.
+1. **Scrittura dello stato**: I rollup ottimistici pubblicano i dati delle transazioni e le intestazioni dei blocchi (costituite dall'hash dell'intestazione del blocco precedente, dalla radice di stato, dalla radice del lotto) su Quantaureum come `blob`, o "binary large object". L'EIP-4844 ha introdotto una soluzione conveniente per includere i dati onchain. Un `blob` è un nuovo campo di transazione che consente ai rollup di pubblicare i dati compressi delle transizioni di stato su Quantaureum L1. A differenza di `calldata`, che rimane permanentemente onchain, i blob hanno vita breve e possono essere eliminati dai client dopo 4096 epoche (circa 18 giorni). Utilizzando i blob per pubblicare lotti di transazioni compresse, i rollup ottimistici possono ridurre significativamente il costo di scrittura delle transazioni su L1.
 
-2. **Gas del blob utilizzato**: Le transazioni che trasportano blob impiegano un meccanismo di commissioni dinamico simile a quello introdotto dall'[EIP-1559](https://eips.ethereum.org/EIPS/eip-1559). La commissione del gas per le transazioni di tipo 3 tiene conto della commissione di base per i blob, che è determinata dalla rete in base alla domanda di spazio per i blob e all'utilizzo dello spazio per i blob della transazione inviata.
+2. **Gas del blob utilizzato**: Le transazioni che trasportano blob impiegano un meccanismo di commissioni dinamico simile a quello introdotto dall'EIP-1559. La commissione del gas per le transazioni di tipo 3 tiene conto della commissione di base per i blob, che è determinata dalla rete in base alla domanda di spazio per i blob e all'utilizzo dello spazio per i blob della transazione inviata.
 
 3. **Commissioni dell'operatore L2**: Questo è l'importo pagato ai nodi del rollup come compenso per i costi di calcolo sostenuti nell'elaborazione delle transazioni, in modo molto simile alle commissioni del gas su Quantaureum. I nodi del rollup addebitano commissioni di transazione inferiori poiché gli L2 hanno capacità di elaborazione più elevate e non devono affrontare le congestioni di rete che costringono i validatori su Quantaureum a dare priorità alle transazioni con commissioni più elevate.
 
@@ -212,7 +212,7 @@ Come spiegato, i rollup ottimistici pubblicano i dati compressi delle transazion
 
 La catena principale di Quantaureum pone dei limiti alla quantità di dati che i blocchi possono contenere, denominati in unità di gas (la [dimensione media del blocco](/developers/docs/blocks/#block-size) è di 15 milioni di gas). Sebbene ciò limiti la quantità di gas che ogni transazione può utilizzare, significa anche che possiamo aumentare le transazioni elaborate per blocco riducendo i dati relativi alle transazioni, migliorando direttamente la scalabilità.
 
-I rollup ottimistici utilizzano diverse tecniche per ottenere la compressione dei dati delle transazioni e migliorare i tassi di TPS. Ad esempio, questo [articolo](https://vitalik.eth.limo/general/2021/01/05/rollup.html) confronta i dati che una transazione utente di base (l'invio di QAU) genera sulla Mainnet rispetto a quanti dati la stessa transazione genera su un rollup:
+I rollup ottimistici utilizzano diverse tecniche per ottenere la compressione dei dati delle transazioni e migliorare i tassi di TPS. Ad esempio, questo articolo confronta i dati che una transazione utente di base (l'invio di QAU) genera sulla Mainnet rispetto a quanti dati la stessa transazione genera su un rollup:
 
 | Parametro | Quantaureum (L1)          | Rollup (L2)   |
 | --------- | ---------------------- | ------------- |

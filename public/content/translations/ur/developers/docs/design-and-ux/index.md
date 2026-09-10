@@ -16,7 +16,7 @@ lang: ur
 
 - [Web3 کو مزید UX ریسرچرز اور ڈیزائنرز کی ضرورت ہے](https://blog.akasha.org/akasha-conversations-9-web3-needs-more-ux-researchers-and-designers) - موجودہ ڈیزائن کی پختگی کا جائزہ
 - [Web3 میں UX ریسرچ کے لیے ایک سادہ گائیڈ](https://uxplanet.org/a-complete-guide-to-ux-research-for-web-3-0-products-d6bead20ebb1) - ریسرچ کرنے کے طریقے کی سادہ گائیڈ
-- [Web3 میں UX فیصلوں تک کیسے پہنچیں](https://archive.devcon.org/archive/watch/6/data-empathy-how-to-approach-ux-decisions-in-web3/) - مقداری اور کوالٹیٹو ریسرچ اور دونوں کے درمیان فرق کا مختصر جائزہ (ویڈیو، <span dir="ltr">6 min</span>)
+- Web3 میں UX فیصلوں تک کیسے پہنچیں - مقداری اور کوالٹیٹو ریسرچ اور دونوں کے درمیان فرق کا مختصر جائزہ (ویڈیو، <span dir="ltr">6 min</span>)
 - [Web3 میں ایک UX ریسرچر ہونا](https://medium.com/@georgia.rakusen/what-its-like-being-a-user-researcher-in-web3-6a4bcc096849) - Web3 میں ایک <span dir="ltr">UX</span> ریسرچر ہونے کے بارے میں ایک ذاتی نقطہ نظر
 
 ## Web3 میں ریسرچ اسٹڈیز {#research-in-web3}
@@ -38,7 +38,7 @@ lang: ur
 | <Tag status="error">DeFi</Tag>                  | [کوریج پولز](https://github.com/threshold-network/UX-User-Research/tree/main/Keep%20Coverage%20Pool)                                                                           |
 | <Tag status="error">DeFi</Tag>                  | [کنسینسس: غیر مرکزی مالیات (DeFi) یوزر ریسرچ رپورٹ 2022](https://cdn2.hubspot.net/hubfs/4795067/ConsenSys%20Codefi-Defi%20User%20ResearchReport.pdf)                                            |
 | <Tag variant="solid">Metaverse</Tag>             | [Metaverse: یوزر ریسرچ رپورٹ](https://www.politico.com/f/?id=00000187-7685-d820-a7e7-7e85d1420000)                                                                             |
-| <Tag variant="solid">Metaverse</Tag>             | [سفاری پر جانا: Metaverse میں صارفین کی ریسرچ](https://archive.devcon.org/archive/watch/6/going-on-safari-researching-users-in-the-metaverse/?tab=YouTube) (ویڈیو، <span dir="ltr">27 min</span>)  |
+| <Tag variant="solid">Metaverse</Tag>             | سفاری پر جانا: Metaverse میں صارفین کی ریسرچ (ویڈیو، <span dir="ltr">27 min</span>)  |
 
 ## Web3 کے لیے ڈیزائن {#design-for-web3}
 

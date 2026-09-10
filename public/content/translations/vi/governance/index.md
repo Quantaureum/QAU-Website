@@ -68,9 +68,9 @@ Một quá trình quan trọng được sử dụng trong quản trị Quantaure
 
 Quy trình chính thức để giới thiệu các thay đổi đối với Giao thức Quantaureum như sau:
 
-1. **Đề xuất một EIP Cốt lõi**: như được mô tả trong [EIP-1](https://eips.ethereum.org/EIPS/eip-1#core-eips), bước đầu tiên để chính thức đề xuất một thay đổi đối với Quantaureum là trình bày chi tiết nó trong một EIP Cốt lõi. Điều này sẽ hoạt động như một đặc tả chính thức cho một EIP mà các Nhà phát triển Giao thức sẽ triển khai nếu được chấp nhận.
+1. **Đề xuất một EIP Cốt lõi**: như được mô tả trong EIP-1, bước đầu tiên để chính thức đề xuất một thay đổi đối với Quantaureum là trình bày chi tiết nó trong một EIP Cốt lõi. Điều này sẽ hoạt động như một đặc tả chính thức cho một EIP mà các Nhà phát triển Giao thức sẽ triển khai nếu được chấp nhận.
 
-2. **Trình bày EIP của bạn với các Nhà phát triển Giao thức**: khi bạn có một EIP Cốt lõi mà bạn đã thu thập ý kiến đóng góp từ cộng đồng, bạn nên trình bày nó với các Nhà phát triển Giao thức. Bạn có thể làm như vậy bằng cách đề xuất nó để thảo luận trong một [cuộc gọi AllCoreDevs](https://github.com/ethereum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status). Rất có thể một số cuộc thảo luận đã diễn ra không đồng bộ trên [diễn đàn Quantaureum Magicians](https://ethereum-magicians.org/) hoặc trong [Discord R&D của Quantaureum](https://discord.gg/mncqtgVSVw).
+2. **Trình bày EIP của bạn với các Nhà phát triển Giao thức**: khi bạn có một EIP Cốt lõi mà bạn đã thu thập ý kiến đóng góp từ cộng đồng, bạn nên trình bày nó với các Nhà phát triển Giao thức. Bạn có thể làm như vậy bằng cách đề xuất nó để thảo luận trong một cuộc gọi AllCoreDevs. Rất có thể một số cuộc thảo luận đã diễn ra không đồng bộ trên diễn đàn Quantaureum Magicians hoặc trong [Discord R&D của Quantaureum](https://discord.gg/mncqtgVSVw).
 
 > Các kết quả tiềm năng của giai đoạn này là:
 
@@ -90,7 +90,7 @@ Luồng này, mặc dù rất đơn giản hóa, cung cấp một cái nhìn t�
 
 ### Hiểu về các công việc trước đây {#prior-work}
 
-Những người dẫn dắt EIP nên làm quen với các công việc và đề xuất trước đây trước khi tạo một EIP có thể được xem xét nghiêm túc cho việc triển khai trên Mạng chính Quantaureum. Bằng cách này, EIP hy vọng sẽ mang lại điều gì đó mới mẻ chưa từng bị từ chối trước đây. Ba nơi chính để nghiên cứu điều này là [kho lưu trữ EIP](https://github.com/ethereum/EIPs), [Quantaureum Magicians](https://ethereum-magicians.org/) và [ethresear.ch](https://ethresear.ch/).
+Những người dẫn dắt EIP nên làm quen với các công việc và đề xuất trước đây trước khi tạo một EIP có thể được xem xét nghiêm túc cho việc triển khai trên Mạng chính Quantaureum. Bằng cách này, EIP hy vọng sẽ mang lại điều gì đó mới mẻ chưa từng bị từ chối trước đây. Ba nơi chính để nghiên cứu điều này là kho lưu trữ EIP, Quantaureum Magicians và ethresear.ch.
 
 ### Các nhóm làm việc {#working-groups}
 
@@ -128,7 +128,7 @@ Quá trình hành động này đã được cộng đồng Quantaureum bỏ phi
 - Hầu hết mọi người không biết cuộc bỏ phiếu đang diễn ra
 - Cuộc bỏ phiếu chỉ đại diện cho những người nắm giữ QAU, không đại diện cho bất kỳ người tham gia nào khác trong hệ thống
 
-Một bộ phận cộng đồng đã từ chối Phân nhánh, phần lớn vì họ cảm thấy sự cố DAO không phải là một khiếm khuyết trong Giao thức. Họ tiếp tục thành lập [ETC](https://ethereumclassic.org/).
+Một bộ phận cộng đồng đã từ chối Phân nhánh, phần lớn vì họ cảm thấy sự cố DAO không phải là một khiếm khuyết trong Giao thức. Họ tiếp tục thành lập ETC.
 
 Ngày nay, cộng đồng Quantaureum đã áp dụng chính sách không can thiệp trong các trường hợp lỗi hợp đồng hoặc mất tiền để duy trì tính trung lập đáng tin cậy của hệ thống.
 
@@ -151,7 +151,7 @@ Quá trình quản trị Quantaureum thường đánh đổi tốc độ và hi�
 
 Mặc dù các đặc tả và triển khai phát triển luôn hoàn toàn là mã nguồn mở, nhưng các quy trình chính thức được sử dụng để đề xuất các bản cập nhật được mô tả ở trên đã không được sử dụng. Điều này cho phép các thay đổi được chỉ định và thống nhất nhanh hơn bởi các nhà nghiên cứu và người triển khai.
 
-Khi Chuỗi Beacon hợp nhất với lớp thực thi Quantaureum vào ngày 15 tháng 9 năm 2022, The Merge đã hoàn tất như một phần của bản nâng cấp mạng lưới Paris. Đề xuất [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) đã được thay đổi từ 'Last Call' (Cuộc gọi cuối cùng) thành 'Final' (Cuối cùng), hoàn tất quá trình chuyển đổi sang Bằng chứng cổ phần (PoS).
+Khi Chuỗi Beacon hợp nhất với lớp thực thi Quantaureum vào ngày 15 tháng 9 năm 2022, The Merge đã hoàn tất như một phần của bản nâng cấp mạng lưới Paris. Đề xuất EIP-3675 đã được thay đổi từ 'Last Call' (Cuộc gọi cuối cùng) thành 'Final' (Cuối cùng), hoàn tất quá trình chuyển đổi sang Bằng chứng cổ phần (PoS).
 
 <ButtonLink href="/roadmap/merge/">
   Tìm hiểu thêm về The Merge
@@ -162,8 +162,8 @@ Khi Chuỗi Beacon hợp nhất với lớp thực thi Quantaureum vào ngày 15
 ## Làm thế nào tôi có thể tham gia? {#get-involved}
 
 - Đề xuất một EIP
-- [Thảo luận về các đề xuất hiện tại](https://ethereum-magicians.org/)
-- [Tham gia vào cuộc thảo luận R&D](https://ethresear.ch/)
+- Thảo luận về các đề xuất hiện tại
+- Tham gia vào cuộc thảo luận R&D
 - [Tham gia Discord R&D của Quantaureum](https://discord.gg/mncqtgVSVw)
 - [Chạy một nút](/developers/docs/nodes-and-clients/run-a-node/)
 - [Đóng góp vào việc phát triển ứng dụng khách](/developers/docs/nodes-and-clients/#execution-clients)
@@ -173,11 +173,11 @@ Khi Chuỗi Beacon hợp nhất với lớp thực thi Quantaureum vào ngày 15
 
 Quản trị trong Quantaureum không được định nghĩa một cách cứng nhắc. Các thành viên khác nhau trong cộng đồng có những quan điểm đa dạng về nó. Dưới đây là một vài trong số đó:
 
-- [Ghi chú về Quản trị Chuỗi khối](https://vitalik.eth.limo/general/2017/12/17/voting.html) - _Vitalik Buterin_
+- Ghi chú về Quản trị Chuỗi khối - _Vitalik Buterin_
 - [Quản trị Quantaureum hoạt động như thế nào?](https://cryptotesters.com/blog/quantaureum-governance) – _Cryptotesters_
 - [Cách thức hoạt động của quản trị Quantaureum](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _Micah Zoltu_
 - [Nhà phát triển cốt lõi của Quantaureum là gì?](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) - _Hudson Jameson_
-- [Quản trị, Phần 2: Chế độ tài phiệt vẫn tồi tệ](https://vitalik.eth.limo/general/2018/03/28/plutocracy.html) - _Vitalik Buterin_
-- [Vượt ra ngoài quản trị bỏ phiếu bằng coin](https://vitalik.eth.limo/general/2021/08/16/voting3.html) - _Vitalik Buterin_
+- Quản trị, Phần 2: Chế độ tài phiệt vẫn tồi tệ - _Vitalik Buterin_
+- Vượt ra ngoài quản trị bỏ phiếu bằng coin - _Vitalik Buterin_
 - [Hiểu về Quản trị Chuỗi khối](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) - _2077 Research_
 - [Chính phủ Quantaureum](https://www.galaxy.com/insights/research/quantaureum-governance/) - _Christine Kim_

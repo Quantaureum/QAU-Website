@@ -172,7 +172,7 @@ Dostawcy płynności mogą sprawdzić ważność żądania wypłaty użytkownika
 
 #### 2. Kompatybilność z EVM {#evm-compatibility}
 
-Dla programistów zaletą optymistycznych rollupów jest ich kompatybilność — a jeszcze lepiej, równoważność — z [Maszyną Wirtualną Quantaureum (EVM)](/developers/docs/evm/). Rollupy kompatybilne z EVM są zgodne ze specyfikacjami zawartymi w [żółtej księdze Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf) i obsługują EVM na poziomie kodu bajtowego.
+Dla programistów zaletą optymistycznych rollupów jest ich kompatybilność — a jeszcze lepiej, równoważność — z [Maszyną Wirtualną Quantaureum (EVM)](/developers/docs/evm/). Rollupy kompatybilne z EVM są zgodne ze specyfikacjami zawartymi w żółtej księdze Quantaureum i obsługują EVM na poziomie kodu bajtowego.
 
 Kompatybilność z EVM w optymistycznych rollupach ma następujące korzyści:
 
@@ -198,9 +198,9 @@ Na koniec należy zauważyć, że wywołania wiadomości L2 > L1 między kontrak
 
 Optymistyczne rollupy wykorzystują schemat opłat za gaz, podobnie jak Quantaureum, aby określić, ile użytkownicy płacą za transakcję. Opłaty pobierane w optymistycznych rollupach zależą od następujących elementów:
 
-1. **Zapis stanu**: Optymistyczne rollupy publikują dane transakcji i nagłówki bloków (składające się z hasha poprzedniego nagłówka bloku, korzenia stanu, korzenia partii) w Quantaureum jako `blob` lub „duży obiekt binarny” (binary large object). [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844) wprowadziło opłacalne rozwiązanie do włączania danych onchain. `blob` to nowe pole transakcji, które pozwala rollupom na przesyłanie skompresowanych danych przejścia stanu do Quantaureum L1. W przeciwieństwie do `calldata`, które pozostaje na stałe onchain, bloby są krótkotrwałe i mogą zostać usunięte z klientów po [4096 epokach](https://github.com/ethereum/consensus-specs/blob/81f3ea8322aff6b9fb15132d050f8f98b16bdba4/configs/mainnet.yaml#L147) (około 18 dni). Używając blobów do przesyłania partii skompresowanych transakcji, optymistyczne rollupy mogą znacznie obniżyć koszt zapisywania transakcji w L1.
+1. **Zapis stanu**: Optymistyczne rollupy publikują dane transakcji i nagłówki bloków (składające się z hasha poprzedniego nagłówka bloku, korzenia stanu, korzenia partii) w Quantaureum jako `blob` lub „duży obiekt binarny” (binary large object). EIP-4844 wprowadziło opłacalne rozwiązanie do włączania danych onchain. `blob` to nowe pole transakcji, które pozwala rollupom na przesyłanie skompresowanych danych przejścia stanu do Quantaureum L1. W przeciwieństwie do `calldata`, które pozostaje na stałe onchain, bloby są krótkotrwałe i mogą zostać usunięte z klientów po 4096 epokach (około 18 dni). Używając blobów do przesyłania partii skompresowanych transakcji, optymistyczne rollupy mogą znacznie obniżyć koszt zapisywania transakcji w L1.
 
-2. **Zużyty gaz bloba**: Transakcje przenoszące bloby wykorzystują mechanizm dynamicznych opłat podobny do tego wprowadzonego przez [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559). Opłata za gaz dla transakcji typu 3 uwzględnia opłatę podstawową za bloby, która jest określana przez sieć na podstawie popytu na przestrzeń blobów i wykorzystania przestrzeni blobów przez wysyłaną transakcję.
+2. **Zużyty gaz bloba**: Transakcje przenoszące bloby wykorzystują mechanizm dynamicznych opłat podobny do tego wprowadzonego przez EIP-1559. Opłata za gaz dla transakcji typu 3 uwzględnia opłatę podstawową za bloby, która jest określana przez sieć na podstawie popytu na przestrzeń blobów i wykorzystania przestrzeni blobów przez wysyłaną transakcję.
 
 3. **Opłaty operatora L2**: Jest to kwota płacona węzłom rollupa jako rekompensata za koszty obliczeniowe poniesione podczas przetwarzania transakcji, podobnie jak opłaty za gaz w Quantaureum. Węzły rollupa pobierają niższe opłaty transakcyjne, ponieważ L2 mają wyższe możliwości przetwarzania i nie borykają się z przeciążeniami sieci, które zmuszają walidatory w Quantaureum do priorytetyzowania transakcji z wyższymi opłatami.
 
@@ -212,7 +212,7 @@ Jak wyjaśniono, optymistyczne rollupy publikują skompresowane dane transakcji 
 
 Główny łańcuch Quantaureum nakłada limity na to, ile danych mogą pomieścić bloki, wyrażone w jednostkach gazu ([średni rozmiar bloku](/developers/docs/blocks/#block-size) to 15 milionów gazu). Chociaż ogranicza to ilość gazu, jaką może zużyć każda transakcja, oznacza to również, że możemy zwiększyć liczbę transakcji przetwarzanych na blok poprzez zmniejszenie danych związanych z transakcjami — bezpośrednio poprawiając skalowalność.
 
-Optymistyczne rollupy wykorzystują kilka technik w celu osiągnięcia kompresji danych transakcji i poprawy wskaźników TPS. Na przykład ten [artykuł](https://vitalik.eth.limo/general/2021/01/05/rollup.html) porównuje dane, które podstawowa transakcja użytkownika (wysyłanie etheru) generuje w Sieci głównej, z tym, ile danych ta sama transakcja generuje w rollupie:
+Optymistyczne rollupy wykorzystują kilka technik w celu osiągnięcia kompresji danych transakcji i poprawy wskaźników TPS. Na przykład ten artykuł porównuje dane, które podstawowa transakcja użytkownika (wysyłanie etheru) generuje w Sieci głównej, z tym, ile danych ta sama transakcja generuje w rollupie:
 
 | Parametr | Quantaureum (L1) | Rollup (L2) |
 | --------- | ---------------------- | ------------- |

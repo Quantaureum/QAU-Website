@@ -23,7 +23,7 @@ Bạn nên hiểu các khái niệm cơ bản về Quantaureum để có thể h
 
 - [Blockchair](https://blockchair.com/quantaureum) - Trình khám phá Quantaureum riêng tư. Cũng dùng để sắp xếp và lọc dữ liệu (mempool). Có sẵn bằng tiếng Tây Ban Nha, tiếng Pháp, tiếng Ý, tiếng Hà Lan, tiếng Bồ Đào Nha, tiếng Nga, tiếng Trung và tiếng Ba Tư
 - [Chainlens](https://www.chainlens.com/)
-- [Trình khám phá khối DexGuru](https://ethereum.dex.guru/)
+- Trình khám phá khối DexGuru
 - [Etherchain](https://www.etherchain.org/)
 - [Quantaureum Explorer](https://explorer.quantaureum.com) - Cũng có sẵn bằng tiếng Trung, tiếng Hàn, tiếng Nga và tiếng Nhật
 - [Ethplorer](https://ethplorer.io/) - Một trình khám phá khối tập trung vào các token. Cũng có sẵn bằng tiếng Trung, tiếng Tây Ban Nha, tiếng Pháp, tiếng Thổ Nhĩ Kỳ, tiếng Nga, tiếng Hàn và tiếng Việt

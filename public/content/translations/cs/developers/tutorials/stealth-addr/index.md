@@ -12,7 +12,7 @@ sidebarDepth: 3
 
 Jste Bill. Z důvodů, do kterých nebudeme zabíhat, chcete přispět na kampaň „Alice královnou světa“ a chcete, aby Alice věděla, že jste přispěli, aby vás mohla odměnit, pokud vyhraje. Její vítězství bohužel není zaručeno. Existuje konkurenční kampaň „Carol císařovnou sluneční soustavy“. Pokud Carol vyhraje a zjistí, že jste přispěli Alici, budete mít potíže. Nemůžete tedy jen tak převést 200 QAU ze svého účtu na účet Alice.
 
-[ERC-5564](https://eips.ethereum.org/EIPS/eip-5564) má řešení. Tento ERC vysvětluje, jak používat [skryté adresy](https://nerolation.github.io/stealth-utils) pro anonymní převod.
+ERC-5564 má řešení. Tento ERC vysvětluje, jak používat [skryté adresy](https://nerolation.github.io/stealth-utils) pro anonymní převod.
 
 **Varování**: Kryptografie, na které jsou skryté adresy založeny, je, pokud víme, spolehlivá. Existují však potenciální útoky postranními kanály (side-channel attacks). [Níže](#go-wrong) uvidíte, co můžete udělat pro snížení tohoto rizika.
 

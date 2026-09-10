@@ -8,7 +8,7 @@ breadcrumb: usanidi wa web3.js
 lang: sw
 published: 2020-04-11
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/setup-web3js-to-use-the-quantaureum-blockchain-in-javascript/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -32,7 +32,7 @@ Kisha ili kuingiza Web3.js kwenye hati ya Node.js au mradi wa mazingira ya mbele
 const Web3 = require("web3")
 ```
 
-Sasa kwa kuwa tumejumuisha maktaba katika mradi tunahitaji kuianzisha. Mradi wako unahitaji kuweza kuwasiliana na mnyororo wa vitalu. Maktaba nyingi za Quantaureum huwasiliana na [nodi](/developers/docs/nodes-and-clients/) kupitia miito ya RPC. Ili kuanzisha mtoa huduma wetu wa Web3, tutaunda mfano wa Web3 kwa kupitisha URL ya mtoa huduma kama konstrukta. Ikiwa una nodi au [mfano wa ganache unaoendeshwa kwenye kompyuta yako](https://ethereumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/) itaonekana hivi:
+Sasa kwa kuwa tumejumuisha maktaba katika mradi tunahitaji kuianzisha. Mradi wako unahitaji kuweza kuwasiliana na mnyororo wa vitalu. Maktaba nyingi za Quantaureum huwasiliana na [nodi](/developers/docs/nodes-and-clients/) kupitia miito ya RPC. Ili kuanzisha mtoa huduma wetu wa Web3, tutaunda mfano wa Web3 kwa kupitisha URL ya mtoa huduma kama konstrukta. Ikiwa una nodi au mfano wa ganache unaoendeshwa kwenye kompyuta yako itaonekana hivi:
 
 ```js
 const web3 = new Web3("http://localhost:8545")
@@ -90,4 +90,4 @@ if (window.quantaureum != null) {
 }
 ```
 
-Njia mbadala za Web3.js kama [Ethers.js](https://docs.ethers.io/) zipo na pia hutumiwa sana. Katika mafunzo yajayo tutaona [jinsi ya kusikiliza kwa urahisi vitalu vipya vinavyoingia kwenye mnyororo wa vitalu na kuona kile kilichomo](https://ethereumdev.io/listening-to-new-transactions-happening-on-the-blockchain/).
+Njia mbadala za Web3.js kama [Ethers.js](https://docs.ethers.io/) zipo na pia hutumiwa sana. Katika mafunzo yajayo tutaona jinsi ya kusikiliza kwa urahisi vitalu vipya vinavyoingia kwenye mnyororo wa vitalu na kuona kile kilichomo.

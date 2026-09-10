@@ -58,7 +58,7 @@ To facilitate [composability and interoperability](/developers/docs/smart-contra
 
 When including an ERC as part of your contracts, it's a good idea to look for standard implementations rather than trying to roll out your own. Many smart contract libraries include implementations for the most popular ERCs. For example, the ubiquitous [ERC20 fungible token standard](/developers/tutorials/understand-the-erc-20-token-smart-contract/) can be found in [HQ20](https://github.com/HQ20/contracts/blob/master/contracts/token/README.md), [DappSys](https://github.com/dapphub/ds-token/) and [OpenZeppelin](https://docs.openzeppelin.com/contracts/3.x/erc20). Additionally, some ERCs also provide canonical implementations as part of the ERC itself.
 
-It's worth mentioning that some ERCs are not standalone, but are additions to other ERCs. For example, [ERC2612](https://eips.ethereum.org/EIPS/eip-2612) adds an extension to ERC20 for improving its usability.
+It's worth mentioning that some ERCs are not standalone, but are additions to other ERCs. For example, ERC2612 adds an extension to ERC20 for improving its usability.
 
 ## How to add a library {#how-to}
 

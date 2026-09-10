@@ -10,7 +10,7 @@ breadcrumb: "web3.js அமைப்பு"
 lang: ta
 published: 2020-04-11
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/setup-web3js-to-use-the-quantaureum-blockchain-in-javascript/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -34,7 +34,7 @@ npm install web3 --save
 const Web3 = require("web3")
 ```
 
-இப்போது திட்டத்தில் நிரலகத்தைச் சேர்த்துள்ளதால், அதைத் துவக்க வேண்டும். உங்கள் திட்டம் தொகுதிச்சங்கிலியுடன் தொடர்புகொள்ளக்கூடியதாக இருக்க வேண்டும். பெரும்பாலான எத்திரியம் நிரலகங்கள் RPC அழைப்புகள் மூலம் ஒரு [கணு](/developers/docs/nodes-and-clients/)வுடன் தொடர்புகொள்கின்றன. எங்கள் Web3 வழங்குநரைத் (provider) தொடங்க, வழங்குநரின் URL-ஐ ஆக்கியாக (constructor) அனுப்பி ஒரு Web3 நிகழ்வை (instance) உருவாக்குவோம். உங்கள் கணினியில் ஒரு கணு அல்லது [ganache நிகழ்வு இயங்கிக்கொண்டிருந்தால்](https://ethereumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/) அது இப்படி இருக்கும்:
+இப்போது திட்டத்தில் நிரலகத்தைச் சேர்த்துள்ளதால், அதைத் துவக்க வேண்டும். உங்கள் திட்டம் தொகுதிச்சங்கிலியுடன் தொடர்புகொள்ளக்கூடியதாக இருக்க வேண்டும். பெரும்பாலான எத்திரியம் நிரலகங்கள் RPC அழைப்புகள் மூலம் ஒரு [கணு](/developers/docs/nodes-and-clients/)வுடன் தொடர்புகொள்கின்றன. எங்கள் Web3 வழங்குநரைத் (provider) தொடங்க, வழங்குநரின் URL-ஐ ஆக்கியாக (constructor) அனுப்பி ஒரு Web3 நிகழ்வை (instance) உருவாக்குவோம். உங்கள் கணினியில் ஒரு கணு அல்லது ganache நிகழ்வு இயங்கிக்கொண்டிருந்தால் அது இப்படி இருக்கும்:
 
 ```js
 const web3 = new Web3("http://localhost:8545")
@@ -92,4 +92,4 @@ if (window.quantaureum != null) {
 }
 ```
 
-web3.js-க்கு மாற்றாக [Ethers.js](https://docs.ethers.io/) போன்றவையும் உள்ளன, மேலும் அவை பொதுவாகப் பயன்படுத்தப்படுகின்றன. அடுத்த வழிகாட்டியில் [தொகுதிச்சங்கிலியில் புதிதாக வரும் தொகுதிகளை எவ்வாறு எளிதாகக் கவனிப்பது மற்றும் அவற்றில் என்ன உள்ளன என்பதைப் பார்ப்பது](https://ethereumdev.io/listening-to-new-transactions-happening-on-the-blockchain/) எப்படிக் காண்போம்.
+web3.js-க்கு மாற்றாக [Ethers.js](https://docs.ethers.io/) போன்றவையும் உள்ளன, மேலும் அவை பொதுவாகப் பயன்படுத்தப்படுகின்றன. அடுத்த வழிகாட்டியில் தொகுதிச்சங்கிலியில் புதிதாக வரும் தொகுதிகளை எவ்வாறு எளிதாகக் கவனிப்பது மற்றும் அவற்றில் என்ன உள்ளன என்பதைப் பார்ப்பது எப்படிக் காண்போம்.

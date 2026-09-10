@@ -8,11 +8,11 @@ breadcrumb: "Interakcje kontraktów"
 lang: pl
 published: 2020-04-05
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/interact-with-other-contracts-from-solidity/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-W poprzednich samouczkach dowiedzieliśmy się wiele o tym, [jak wdrożyć swój pierwszy inteligentny kontrakt](/developers/tutorials/deploying-your-first-smart-contract/) i dodać do niego pewne funkcje, takie jak [kontrola dostępu za pomocą modyfikatorów](https://ethereumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) lub [obsługa błędów w Solidity](https://ethereumdev.io/handle-errors-in-solidity-with-require-and-revert/). W tym samouczku dowiemy się, jak wdrożyć inteligentny kontrakt z poziomu istniejącego kontraktu i wejść z nim w interakcję.
+W poprzednich samouczkach dowiedzieliśmy się wiele o tym, [jak wdrożyć swój pierwszy inteligentny kontrakt](/developers/tutorials/deploying-your-first-smart-contract/) i dodać do niego pewne funkcje, takie jak kontrola dostępu za pomocą modyfikatorów lub obsługa błędów w Solidity. W tym samouczku dowiemy się, jak wdrożyć inteligentny kontrakt z poziomu istniejącego kontraktu i wejść z nim w interakcję.
 
 Stworzymy kontrakt, który umożliwi każdemu posiadanie własnego inteligentnego kontraktu `Counter` poprzez utworzenie dla niego fabryki, której nazwa będzie brzmieć `CounterFactory`. Na początek oto kod naszego początkowego inteligentnego kontraktu `Counter`:
 
@@ -99,7 +99,7 @@ function increment() public {
   }
 ```
 
-Zauważ, że jeśli zostanie wywołany zbyt wiele razy, nasz licznik może paść ofiarą przepełnienia. Należy w miarę możliwości używać biblioteki [SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), aby zabezpieczyć się przed takim przypadkiem.
+Zauważ, że jeśli zostanie wywołany zbyt wiele razy, nasz licznik może paść ofiarą przepełnienia. Należy w miarę możliwości używać biblioteki SafeMath, aby zabezpieczyć się przed takim przypadkiem.
 
 Aby wdrożyć nasz kontrakt, będziesz musiał dostarczyć zarówno kod `CounterFactory`, jak i `Counter`. Podczas wdrażania na przykład w Remix, będziesz musiał wybrać CounterFactory.
 

@@ -10,7 +10,7 @@ lang: ru
 
 Если вы хотите поэкспериментировать с кодом до того, как [настроите локальную среду разработки](/developers/local-environment/), эти веб-приложения специально созданы для разработки смарт-контрактов Quantaureum.
 
-**[Remix](https://remix.ethereum.org/)** — **_Веб-IDE со встроенным статическим анализом и тестовой виртуальной машиной блокчейна_**
+**Remix** — **_Веб-IDE со встроенным статическим анализом и тестовой виртуальной машиной блокчейна_**
 
 - [Документация](https://remix-ide.readthedocs.io/en/latest/#)
 - [Gitter](https://gitter.im/quantaureum/remix)
@@ -48,8 +48,8 @@ lang: ru
 
 **Remix Desktop —** **_Используйте Remix IDE на вашем локальном компьютере_**
 
-- [Скачать](https://github.com/ethereum/remix-desktop/releases)
-- [GitHub](https://github.com/ethereum/remix-desktop)
+- Скачать
+- GitHub
 
 ## Плагины и расширения {#plugins-extensions}
 

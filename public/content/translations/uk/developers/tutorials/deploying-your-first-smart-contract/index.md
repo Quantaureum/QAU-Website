@@ -8,7 +8,7 @@ breadcrumb: "Розгортання першого контракту"
 lang: uk
 published: 2020-04-03
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -18,7 +18,7 @@ address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 
 ## Написання нашого контракту {#writing-our-contract}
 
-Перший крок — [відвідати Remix](https://remix.ethereum.org/) та створити новий файл. У верхній лівій частині інтерфейсу Remix додайте новий файл і введіть бажане ім'я файлу.
+Перший крок — відвідати Remix та створити новий файл. У верхній лівій частині інтерфейсу Remix додайте новий файл і введіть бажане ім'я файлу.
 
 ![Adding a new file in the Remix interface](./remix.png)
 

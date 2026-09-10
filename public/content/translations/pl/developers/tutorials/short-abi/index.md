@@ -65,9 +65,9 @@ Dane wywołania są podzielone w następujący sposób:
 Wyjaśnienie:
 
 - **Selektor funkcji**: Kontrakt ma mniej niż 256 funkcji, więc możemy je rozróżnić za pomocą jednego bajtu.
-  Te bajty zazwyczaj są niezerowe i dlatego [kosztują szesnaście jednostek gazu](https://eips.ethereum.org/EIPS/eip-2028).
+  Te bajty zazwyczaj są niezerowe i dlatego kosztują szesnaście jednostek gazu.
 - **Zera**: Te bajty zawsze wynoszą zero, ponieważ dwudziestobajtowy adres nie wymaga trzydziestodwubajtowego słowa do jego przechowania.
-  Bajty o wartości zero kosztują cztery jednostki gazu ([zobacz żółtą księgę](https://ethereum.github.io/yellowpaper/paper.pdf), Dodatek G,
+  Bajty o wartości zero kosztują cztery jednostki gazu (zobacz żółtą księgę, Dodatek G,
   str. 27, wartość dla `G`<sub>`txdatazero`</sub>).
 - **Kwota**: Jeśli założymy, że w tym kontrakcie `decimals` wynosi osiemnaście (standardowa wartość), a maksymalna kwota tokenów, które transferujemy, wyniesie 10<sup>18</sup>, otrzymamy maksymalną kwotę 10<sup>36</sup>.
   256<sup>15</sup> &gt; 10<sup>36</sup>, więc piętnaście bajtów wystarczy.
@@ -201,7 +201,7 @@ Istnieją dwa powody, dla których funkcja nie byłaby tutaj dostępna:
 2. Funkcje, które opierają się na [`msg.sender`](https://docs.soliditylang.org/en/v0.8.12/units-and-global-variables.html#block-and-transaction-properties).
    Wartością `msg.sender` będzie adres `CalldataInterpreter`, a nie wywołującego.
 
-Niestety, [patrząc na specyfikację ERC-20](https://eips.ethereum.org/EIPS/eip-20), pozostawia to tylko jedną funkcję, `transfer`.
+Niestety, patrząc na specyfikację ERC-20, pozostawia to tylko jedną funkcję, `transfer`.
 Pozostawia nam to tylko dwie funkcje: `transfer` (ponieważ możemy wywołać `transferFrom`) oraz `faucet` (ponieważ możemy przetransferować tokeny z powrotem do tego, kto nas wywołał).
 
 ```solidity

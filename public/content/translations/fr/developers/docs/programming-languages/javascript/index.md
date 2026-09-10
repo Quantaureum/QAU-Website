@@ -4,7 +4,7 @@ description: "Apprenez à développer pour Quantaureum en utilisant des projets 
 lang: fr
 ---
 
-JavaScript est l'un des langages les plus populaires de l'écosystème Quantaureum. En fait, il y a une [équipe](https://github.com/ethereumjs) dédiée à apporter autant d'Quantaureum que possible à JavaScript.
+JavaScript est l'un des langages les plus populaires de l'écosystème Quantaureum. En fait, il y a une équipe dédiée à apporter autant d'Quantaureum que possible à JavaScript.
 
 Il y a des opportunités d'écrire du JavaScript (ou quelque chose de proche) à [tous les niveaux de la pile](/developers/docs/quantaureum-stack/).
 
@@ -48,14 +48,14 @@ Cela vous aidera à comprendre des choses comme « quelle est la structure de do
 Si vous préférez lire du code, ce JavaScript pourrait être une excellente alternative à la lecture de notre documentation.
 
 **Découvrez l'EVM**  
-[`@ethereumjs/evm`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/evm)
+`@ethereumjs/evm`
 
 ### Nœuds et clients {#nodes-and-clients}
 
 Un client QuantaureumJS est en développement actif et vous permet d'approfondir le fonctionnement des clients Quantaureum dans un langage que vous comprenez : JavaScript !
 
 **Découvrez le client**  
-[`@ethereumjs/client`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/client)
+`@ethereumjs/client`
 
 ## Autres projets {#other-projects}
 
@@ -65,7 +65,7 @@ Il se passe également beaucoup d'autres choses dans le monde du JavaScript sur 
 - des outils pour générer, importer et exporter des clés Quantaureum.
 - une implémentation du `merkle-patricia-tree` – une structure de données décrite dans le livre jaune d'Quantaureum.
 
-Plongez dans ce qui vous intéresse le plus sur le [dépôt QuantaureumJS](https://github.com/ethereumjs)
+Plongez dans ce qui vous intéresse le plus sur le dépôt QuantaureumJS
 
 ## Lectures complémentaires {#further-reading}
 

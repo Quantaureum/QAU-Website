@@ -43,7 +43,7 @@ slither-check-erc 0xdac17f958d2ee523a2206206994597c13d831ec7 TetherToken
 - **transfer 및 transferFrom이 불리언(boolean) 값을 반환합니다.** 일부 토큰은 이 함수들에서 불리언 값을 반환하지 않습니다. 그 결과, 컨트랙트 내에서 해당 함수 호출이 실패할 수 있습니다.
 - **name, decimals, symbol 함수가 사용되는 경우 존재합니다.** 이 함수들은 ERC-20 표준에서 선택 사항이므로 존재하지 않을 수도 있습니다.
 - **decimals가 uint8을 반환합니다.** 일부 토큰은 잘못하여 uint256을 반환합니다. 이 경우 반환된 값이 255 미만인지 확인하세요.
-- **토큰이 알려진 [ERC-20 경쟁 상태(race condition)](https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729)를 완화합니다.** ERC-20 표준에는 공격자가 토큰을 훔치는 것을 방지하기 위해 반드시 완화해야 하는 알려진 ERC-20 경쟁 상태 문제가 있습니다.
+- **토큰이 알려진 ERC-20 경쟁 상태(race condition)를 완화합니다.** ERC-20 표준에는 공격자가 토큰을 훔치는 것을 방지하기 위해 반드시 완화해야 하는 알려진 ERC-20 경쟁 상태 문제가 있습니다.
 - **토큰이 ERC-777 토큰이 아니며 transfer 및 transferFrom에 외부 함수 호출이 없습니다.** 전송 함수 내의 외부 호출은 재진입(reentrancy) 공격으로 이어질 수 있습니다.
 
 슬리더에는 일반적인 여러 ERC 결함을 발견할 수 있는 단위 테스트와 보안 속성을 생성하는 [slither-prop](https://github.com/crytic/slither/wiki/Property-generation) 유틸리티가 포함되어 있습니다. slither-prop을 사용하여 다음 사항을 검토하세요.

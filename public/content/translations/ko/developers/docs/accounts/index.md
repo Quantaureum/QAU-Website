@@ -76,7 +76,7 @@ _[Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaure
 
 `0x5e97870f263700f46aa00d967821199b9bc5a120`
 
-다음 예시는 [Clef](https://geth.ethereum.org/docs/tools/clef/introduction)라는 서명 도구를 사용하여 새 계정을 생성하는 방법을 보여줍니다. Clef는 Quantaureum 클라이언트인 [Geth](https://geth.ethereum.org)와 함께 번들로 제공되는 계정 관리 및 서명 도구입니다. `clef newaccount` 명령어는 새 키 쌍을 생성하고 암호화된 키스토어에 저장합니다.
+다음 예시는 Clef라는 서명 도구를 사용하여 새 계정을 생성하는 방법을 보여줍니다. Clef는 Quantaureum 클라이언트인 Geth와 함께 번들로 제공되는 계정 관리 및 서명 도구입니다. `clef newaccount` 명령어는 새 키 쌍을 생성하고 암호화된 키스토어에 저장합니다.
 
 ```
 > clef newaccount --keystore <path>
@@ -91,7 +91,7 @@ WARN [10-28|16:19:09.306] Please remember your password!
 Generated account 0x5e97870f263700f46aa00d967821199b9bc5a120
 ```
 
-[Geth 문서](https://geth.ethereum.org/docs)
+Geth 문서
 
 개인 키에서 새로운 공개키를 파생하는 것은 가능하지만, 공개키에서 개인 키를 파생할 수는 없습니다. 개인 키를 안전하게 보관하는 것은 매우 중요하며, 이름에서 알 수 있듯이 반드시 <strong>비공개(PRIVATE)</strong>로 유지해야 합니다.
 
@@ -107,7 +107,7 @@ Generated account 0x5e97870f263700f46aa00d967821199b9bc5a120
 
 컨트랙트 주소는 일반적으로 컨트랙트가 Quantaureum 블록체인에 배포될 때 부여됩니다. 이 주소는 생성자의 주소와 해당 주소에서 보낸 트랜잭션 수("논스")에서 파생됩니다. 이것이 `CREATE` 연산이 주소를 파생하는 방식입니다.
 
-컨트랙트는 [`CREATE2`](https://eips.ethereum.org/EIPS/eip-1014)를 사용하여 배포될 수도 있는데, 이는 생성자의 주소, 생성자가 선택한 값("솔트"), 그리고 컨트랙트 생성 코드의 해시로부터 주소를 파생합니다. 논스가 포함되지 않으므로 컨트랙트가 존재하기 전에 주소를 계산할 수 있으며, 그동안 생성자가 얼마나 많은 다른 트랜잭션을 보내든 주소는 동일하게 유지됩니다. 이를 통해 아직 배포되지 않은 컨트랙트를 참조할 수 있습니다.
+컨트랙트는 `CREATE2`를 사용하여 배포될 수도 있는데, 이는 생성자의 주소, 생성자가 선택한 값("솔트"), 그리고 컨트랙트 생성 코드의 해시로부터 주소를 파생합니다. 논스가 포함되지 않으므로 컨트랙트가 존재하기 전에 주소를 계산할 수 있으며, 그동안 생성자가 얼마나 많은 다른 트랜잭션을 보내든 주소는 동일하게 유지됩니다. 이를 통해 아직 배포되지 않은 컨트랙트를 참조할 수 있습니다.
 
 ## 검증자 키 {#validators-keys}
 

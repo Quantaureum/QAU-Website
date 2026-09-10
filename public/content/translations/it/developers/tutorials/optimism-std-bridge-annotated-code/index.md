@@ -46,7 +46,7 @@ Il ponte ha due flussi principali:
    - Proviene originariamente dal ponte sul l1
 6. Il ponte del l2 controlla se il contratto del token ERC-20 sul l2 è quello corretto:
    - Il contratto del l2 segnala che la sua controparte sul l1 è la stessa da cui provengono i token sul l1
-   - Il contratto del l2 segnala che supporta l'interfaccia corretta ([utilizzando ERC-165](https://eips.ethereum.org/EIPS/eip-165)).
+   - Il contratto del l2 segnala che supporta l'interfaccia corretta (utilizzando ERC-165).
 7. Se il contratto del l2 è quello corretto, lo chiama per coniare il numero appropriato di token all'indirizzo appropriato. In caso contrario, avvia un processo di prelievo per consentire all'utente il riscatto dei token sul l1.
 
 ### Flusso di prelievo {#withdrawal-flow}
@@ -207,7 +207,6 @@ Questa funzione è quasi identica a `depositERC20`, ma ti consente di inviare l'
      * @dev Completa un prelievo dal l2 al l1 e accredita i fondi sul saldo del destinatario del
      * token ERC-20 sul l1.
      * Questa chiamata fallirà se il prelievo inizializzato dal l2 non è stato finalizzato.
-     *
      * @param _l1Token Indirizzo del token l1 per cui eseguire finalizeWithdrawal.
      * @param _l2Token Indirizzo del token l2 in cui è stato avviato il prelievo.
      * @param _from Indirizzo l2 che avvia il trasferimento.
@@ -338,7 +337,6 @@ Questo messaggero tra domini è un sistema completamente diverso e merita un art
 /**
  * @title CrossDomainEnabled
  * @dev Contratto di supporto per i contratti che eseguono comunicazioni cross-domain
- *
  * Compilatore utilizzato: definito dal contratto che eredita
  */
 contract CrossDomainEnabled {
@@ -519,7 +517,7 @@ Nota che questa non è una soluzione perfetta, perché non c'è modo di distingu
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[Lo standard ERC-20](https://eips.ethereum.org/EIPS/eip-20) supporta due modi per un contratto di segnalare un fallimento:
+Lo standard ERC-20 supporta due modi per un contratto di segnalare un fallimento:
 
 1. Revert
 2. Restituire `false`
@@ -532,7 +530,6 @@ Gestire entrambi i casi renderebbe il nostro codice più complicato, quindi util
  * @dev Il ponte per QAU ed ERC-20 sul l1 è un contratto che memorizza i fondi l1 depositati e i token
  * standard che sono in uso sul l2. Sincronizza un ponte l2 corrispondente, informandolo dei depositi
  * e ascoltandolo per i prelievi appena finalizzati.
- *
  */
 contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
     using SafeERC20 for IERC20;
@@ -771,7 +768,6 @@ Queste due funzioni sono wrapper attorno a `_initiateERC20Deposit`, la funzione 
     /**
      * @dev Esegue la logica per i depositi informando il contratto Deposited Token l2
      * del deposito e chiamando un gestore per bloccare i fondi l1. (es., transferFrom)
-     *
      * @param _l1Token Indirizzo dell'ERC-20 sul l1 che stiamo depositando
      * @param _l2Token Indirizzo del rispettivo ERC-20 sul l2 del l1
      * @param _from Account da cui prelevare il deposito sul l1
@@ -956,14 +952,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [L'interfaccia ERC-20 standard](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) non include le funzioni `mint` e `burn`.
-Questi metodi non sono richiesti dallo [standard ERC-20](https://eips.ethereum.org/EIPS/eip-20), che lascia non specificati i meccanismi per creare e distruggere i token.
+Questi metodi non sono richiesti dallo standard ERC-20, che lascia non specificati i meccanismi per creare e distruggere i token.
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 [L'interfaccia ERC-165](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol) viene utilizzata per specificare quali funzioni fornisce un contratto.
-[Puoi leggere lo standard qui](https://eips.ethereum.org/EIPS/eip-165).
+Puoi leggere lo standard qui.
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -1052,7 +1048,7 @@ Prima chiama il costruttore per il contratto da cui ereditiamo (`ERC20(_name, _s
     }
 ```
 
-Questo è il modo in cui funziona [ERC-165](https://eips.ethereum.org/EIPS/eip-165).
+Questo è il modo in cui funziona ERC-165.
 Ogni interfaccia è un numero di funzioni supportate ed è identificata come l'[or esclusivo](https://en.wikipedia.org/wiki/Exclusive_or) dei [selettori di funzione ABI](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector) di quelle funzioni.
 
 Il ponte del l2 utilizza ERC-165 come controllo di integrità per assicurarsi che il contratto ERC-20 a cui invia gli asset sia un `IL2StandardERC20`.

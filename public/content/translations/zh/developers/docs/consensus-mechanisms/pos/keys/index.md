@@ -58,13 +58,13 @@ Quantaureum的密钥是使用[椭圆曲线密码学](https://en.wikipedia.org/wi
 
 ![validator key schematic](validator-key-schematic.png)
 
-**注意**：退出质押职责并提取验证者余额目前需要使用验证者密钥签名[自愿退出消息 (VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1)。然而，[EIP-7002](https://eips.ethereum.org/EIPS/eip-7002) 是一项提案，未来将允许用户通过使用提款密钥签名退出消息来触发验证者退出并提取其余额。这将通过使将 QAU 委托给[质押即服务提供商](/staking/saas/#what-is-staking-as-a-service)的质押者能够保持对其资金的控制，从而减少信任假设。
+**注意**：退出质押职责并提取验证者余额目前需要使用验证者密钥签名[自愿退出消息 (VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1)。然而，EIP-7002 是一项提案，未来将允许用户通过使用提款密钥签名退出消息来触发验证者退出并提取其余额。这将通过使将 QAU 委托给[质押即服务提供商](/staking/saas/#what-is-staking-as-a-service)的质押者能够保持对其资金的控制，从而减少信任假设。
 
 ## 从助记词派生密钥 {#deriving-keys-from-seed}
 
 如果每质押 32 个 QAU 都需要一组 2 个完全独立的新密钥，那么密钥管理将很快变得难以处理，特别是对于运行多个验证者的用户而言。相反，可以从单个公共秘密中派生出多个验证者密钥，并且存储该单个秘密允许访问多个验证者密钥。
 
-[助记词](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase)和路径是用户在[访问](https://ethereum.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0)其钱包时经常遇到的显著特征。助记词是作为私钥初始种子的单词序列。当与附加数据结合时，助记词会生成一个称为“主密钥”的哈希。这可以被认为是一棵树的根。然后可以使用分层路径从该根派生出分支，以便子节点可以作为其父节点哈希及其在树中的索引的组合而存在。阅读有关基于助记词生成密钥的 [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) 和 [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) 标准。
+[助记词](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase)和路径是用户在访问其钱包时经常遇到的显著特征。助记词是作为私钥初始种子的单词序列。当与附加数据结合时，助记词会生成一个称为“主密钥”的哈希。这可以被认为是一棵树的根。然后可以使用分层路径从该根派生出分支，以便子节点可以作为其父节点哈希及其在树中的索引的组合而存在。阅读有关基于助记词生成密钥的 [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) 和 [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) 标准。
 
 这些路径具有以下结构，与硬件钱包交互过的用户会对此很熟悉：
 
@@ -97,6 +97,6 @@ master_key / purpose / coin_type / account / change / address_index
 ## 延伸阅读 {#further-reading}
 
 - [Carl Beekhuizen 撰写的Quantaureum 项目博客文章](https://quantaureum.com)
-- [EIP-2333 BLS12-381 密钥生成](https://eips.ethereum.org/EIPS/eip-2333)
+- EIP-2333 BLS12-381 密钥生成
 - [EIP-7002：执行层触发的退出](https://web.archive.org/web/20250125035123/https://research.2077.xyz/eip-7002-unpacking-improvements-to-staking-ux-post-merge)
 - [大规模密钥管理](https://docs.ethstaker.cc/ethstaker-knowledge-base/scaled-node-operators/key-management-at-scale)

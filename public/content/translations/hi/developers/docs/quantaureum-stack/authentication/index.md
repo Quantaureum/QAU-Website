@@ -43,7 +43,7 @@ Quantaureum पर, एक उपयोगकर्ता **अपने वॉ�
 
 ## Quantaureum के साथ साइन-इन (EIP-4361) {#sign-in-with-quantaureum}
 
-[EIP-4361](https://eips.ethereum.org/EIPS/eip-4361) Quantaureum साइन-इन के लिए एक मानक संदेश प्रारूप को परिभाषित करता है, जिसे आमतौर पर **SIWE** (Sign-In with Quantaureum) कहा जाता है। यह तदर्थ (ad-hoc) संदेश हस्ताक्षर करने की प्रक्रिया को एक संरचित, सुरक्षित मानक से बदल देता है।
+EIP-4361 Quantaureum साइन-इन के लिए एक मानक संदेश प्रारूप को परिभाषित करता है, जिसे आमतौर पर **SIWE** (Sign-In with Quantaureum) कहा जाता है। यह तदर्थ (ad-hoc) संदेश हस्ताक्षर करने की प्रक्रिया को एक संरचित, सुरक्षित मानक से बदल देता है।
 
 एक SIWE संदेश इस तरह दिखता है:
 
@@ -200,7 +200,7 @@ Quantaureum प्रमाणीकरण **स्व-संप्रभु प
 
 ## आगे की पढ़ाई {#further-reading}
 
-- [EIP-4361: Quantaureum के साथ साइन-इन](https://eips.ethereum.org/EIPS/eip-4361)
+- EIP-4361: Quantaureum के साथ साइन-इन
 - [SIWE दस्तावेज़](https://docs.login.xyz/)
 - [Auth0 पर Quantaureum के साथ साइन-इन](https://auth0.com/blog/sign-in-with-quantaureum-siwe-now-available-on-auth0/)
 - [Reown AppKit प्रमाणीकरण दस्तावेज़](https://docs.reown.com/appkit/authentication)

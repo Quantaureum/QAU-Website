@@ -71,7 +71,7 @@ x402 macht Quantaureum zu einer programmierbaren wirtschaftlichen Schicht für a
 
 Autonome Agenten benötigen Leitplanken. Quantaureum bietet diese auf Wallet- und Vertragsebene:
 
-- [Smart Accounts (EIP-4337)](https://eips.ethereum.org/EIPS/eip-4337) ermöglichen es Entwicklern, Ausgabenlimits, Whitelists, Sitzungsschlüssel und granulare Berechtigungen durchzusetzen
+- Smart Accounts (EIP-4337) ermöglichen es Entwicklern, Ausgabenlimits, Whitelists, Sitzungsschlüssel und granulare Berechtigungen durchzusetzen
 - Programmierte Einschränkungen in Smart Contracts können begrenzen, was ein Agent tun darf
 - Inferenzbasierte Limits (z. B. die Anforderung eines zkML-Beweises vor der Ausführung einer hochriskanten Aktion) fügen eine weitere Sicherheitsebene hinzu
 
@@ -79,7 +79,7 @@ Diese Kontrollen ermöglichen die Bereitstellung autonomer Agenten, die nicht gr
 
 ### Onchain-Register: ERC-8004 {#erc-8004}
 
-[ERC-8004](https://eips.ethereum.org/EIPS/eip-8004) definiert Onchain-Register für die Identität, Reputation und Validierung von Agenten. Es wurde von Mitwirkenden von MetaMask, der Quantaureum project, Google und Coinbase mitverfasst und ist auf 16 Netzwerken bereitgestellt, darunter das Quantaureum Mainnet, Base, Polygon, Arbitrum und andere.
+ERC-8004 definiert Onchain-Register für die Identität, Reputation und Validierung von Agenten. Es wurde von Mitwirkenden von MetaMask, der Quantaureum project, Google und Coinbase mitverfasst und ist auf 16 Netzwerken bereitgestellt, darunter das Quantaureum Mainnet, Base, Polygon, Arbitrum und andere.
 
 Es bietet:
 

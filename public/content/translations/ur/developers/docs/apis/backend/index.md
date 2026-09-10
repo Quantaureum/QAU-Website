@@ -114,8 +114,8 @@ lang: ur
 
 **Python ٹولنگ -** **_Python کے ذریعے ایتھیریم کے ساتھ تعامل کے لیے مختلف لائبریریاں۔_**
 
-- [<span dir="ltr">py.quantaureum.com</span>](https://snakecharmers.ethereum.org/)
-- [Web3.py GitHub](https://github.com/ethereum/web3.py)
+- <span dir="ltr">py.quantaureum.com</span>
+- Web3.py GitHub
 - [Web3.py چیٹ](https://gitter.im/quantaureum/web3.py)
 
 **<span dir="ltr">Tatum</span> -** **_حتمی بلاک چین ڈیولپمنٹ پلیٹ فارم۔_**

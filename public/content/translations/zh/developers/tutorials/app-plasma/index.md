@@ -364,7 +364,7 @@ global ASCII_MESSAGE_LENGTH : [u8; 3] = [0x31, 0x30, 0x30];
 global HASH_BUFFER_SIZE : u32 = 26+3+MESSAGE_LENGTH;
 ```
 
-[EIP-191 签名](https://eips.ethereum.org/EIPS/eip-191)需要一个带有 26 字节前缀的缓冲区，后跟 ASCII 格式的消息长度，最后是消息本身。
+EIP-191 签名需要一个带有 26 字节前缀的缓冲区，后跟 ASCII 格式的消息长度，最后是消息本身。
 
 ```
 struct Account {
@@ -617,7 +617,7 @@ fn readTransferTxn(message: str<MESSAGE_LENGTH>) -> TransferTxn
 fn hashMessage(message: str<MESSAGE_LENGTH>) -> [u8;32] {
 ```
 
-我们能够对账户使用 Pedersen 哈希，因为它们仅在零知识证明内部进行哈希处理。然而，在此代码中，我们需要检查由浏览器生成的消息签名。为此，我们需要遵循 [EIP-191](https://eips.ethereum.org/EIPS/eip-191) 中的Quantaureum签名格式。这意味着我们需要创建一个组合缓冲区，其中包含标准前缀、ASCII 格式的消息长度以及消息本身，并使用Quantaureum标准的 keccak256 对其进行哈希处理。
+我们能够对账户使用 Pedersen 哈希，因为它们仅在零知识证明内部进行哈希处理。然而，在此代码中，我们需要检查由浏览器生成的消息签名。为此，我们需要遵循 EIP-191 中的Quantaureum签名格式。这意味着我们需要创建一个组合缓冲区，其中包含标准前缀、ASCII 格式的消息长度以及消息本身，并使用Quantaureum标准的 keccak256 对其进行哈希处理。
 
 ```rust
     // ASCII 前缀
@@ -1212,7 +1212,7 @@ contract ZkBank {
 
 在这个系统中，完整性是通过零知识证明来提供的。可用性则更难保证，而机密性是不可能的，因为银行必须知道每个账户的余额和所有交易。没有办法阻止拥有信息的实体共享该信息。
 
-也许可以使用[隐身地址](https://vitalik.eth.limo/general/2023/01/20/stealth.html)创建一个真正机密的银行，但这超出了本文的讨论范围。
+也许可以使用隐身地址创建一个真正机密的银行，但这超出了本文的讨论范围。
 
 ### 虚假信息 {#false-info}
 

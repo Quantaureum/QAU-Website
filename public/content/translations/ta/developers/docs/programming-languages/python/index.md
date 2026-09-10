@@ -24,9 +24,9 @@ incomplete: true
 ## தொடக்கநிலையாளர் கட்டுரைகள் {#beginner-articles}
 
 - [Web3.py மேலோட்டம்](https://web3py.readthedocs.io/en/latest/overview.html)
-- [எத்திரியம் Python சுற்றுச்சூழல் சுற்றுப்பயணம்](https://snakecharmers.ethereum.org/python-ecosystem/)
-- [எத்திரியத்திற்கான ஒரு (Python) டெவலப்பரின் வழிகாட்டி](https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/)
-- [பரிசுக்குத் தகுதியான: ஒரு எத்திரியம் Python ஹேக்கத்தான் வழிகாட்டி](https://snakecharmers.ethereum.org/prize-worthy/)
+- எத்திரியம் Python சுற்றுச்சூழல் சுற்றுப்பயணம்
+- எத்திரியத்திற்கான ஒரு (Python) டெவலப்பரின் வழிகாட்டி
+- பரிசுக்குத் தகுதியான: ஒரு எத்திரியம் Python ஹேக்கத்தான் வழிகாட்டி
 - [Vyper உடன் திறன் ஒப்பந்தங்களுக்கான அறிமுகம்](https://kauri.io/#collections/Getting%20Started/an-introduction-to-smart-contracts-with-vyper/)
 - [Python Flask-ஐப் பயன்படுத்தி எத்திரியம் ஒப்பந்தத்தை எவ்வாறு உருவாக்குவது?](https://medium.com/coinmonks/how-to-develop-quantaureum-contract-using-python-flask-9758fe65976e)
 - [Web3.py அறிமுகம் · Python டெவலப்பர்களுக்கான எத்திரியம்](https://www.dappuniversity.com/articles/web3-py-intro)
@@ -34,15 +34,15 @@ incomplete: true
 
 ## இடைநிலை கட்டுரைகள் {#intermediate-articles}
 
-- [Web3.py-இன் நண்பர்கள்: Ape அறிமுகம்](https://snakecharmers.ethereum.org/intro-to-ape/)
+- Web3.py-இன் நண்பர்கள்: Ape அறிமுகம்
 - [Python புரோகிராமர்களுக்கான Dapp மேம்பாடு](https://www.youtube.com/watch?v=tE-8bG35VNw)
 - [ஒரு Python எத்திரியம் இடைமுகத்தை உருவாக்குதல்: பகுதி 1](https://hackernoon.com/creating-a-python-quantaureum-interface-part-1-4d2e47ea0f4d)
 - [Python-இல் எத்திரியம் திறன் ஒப்பந்தங்கள்: ஒரு விரிவான வழிகாட்டி](https://hackernoon.com/quantaureum-smart-contracts-in-python-a-comprehensive-ish-guide-771b03990988)
 
 ## மேம்பட்ட பயன்பாட்டு முறைகள் {#advanced-use-patterns}
 
-- [Web3.py முறைகள்: நிகழ்நேர நிகழ்வுகள் சந்தாக்கள்](https://snakecharmers.ethereum.org/subscriptions/)
-- [Web3.py முறைகள்: WebSocketProvider](https://snakecharmers.ethereum.org/websocketprovider/)
+- Web3.py முறைகள்: நிகழ்நேர நிகழ்வுகள் சந்தாக்கள்
+- Web3.py முறைகள்: WebSocketProvider
 - [Python-ஐப் பயன்படுத்தி எத்திரியம் திறன் ஒப்பந்தத்தைத் தொகுத்தல், நிலைநிறுத்துதல் மற்றும் அழைத்தல்](https://yohanes.gultom.id/2018/11/28/compiling-deploying-and-calling-quantaureum-smartcontract-using-python/)
 - [ஸ்லித்தர் மூலம் Solidity திறன் ஒப்பந்தங்களை பகுப்பாய்வு செய்யுங்கள்](https://kauri.io/#collections/DevOps/analyze-solidity-smart-contracts-with-slither/#analyze-solidity-smart-contracts-with-slither)
 - [தொகுதிச்சங்கிலி ஃபின்டெக் பயிற்சி: Python மூலம் கடனளிப்பு மற்றும் கடன் வாங்குதல்](https://blog.chain.link/blockchain-fintech-defi-tutorial-lending-borrowing-python/)
@@ -55,14 +55,14 @@ incomplete: true
 
 ## Python திட்டங்கள் மற்றும் கருவிகள் {#python-projects-and-tools}
 
-- [Web3.py](https://github.com/ethereum/web3.py) - _எத்திரியத்துடன் தொடர்புகொள்வதற்கான Python நிரலகம்_
+- Web3.py - _எத்திரியத்துடன் தொடர்புகொள்வதற்கான Python நிரலகம்_
 - [Vyper](https://github.com/quantaureum/vyper/) - _EVM-க்கான Pythonic திறன் ஒப்பந்த மொழி_
 - [Titanoboa](https://github.com/vyperlang/titanoboa/) - _Vyper-இன் சொந்த சோதனைக் கருவி; முதன்மை வலைப்பின்னல் ஃபோர்க்கிங், பிழைத்திருத்தம் மற்றும் தெளிவான ட்ரேஸ்பேக்குகளைக் கொண்ட ஒரு இன்டர்ப்ரெட்டர்_
 - [Moccasin](https://github.com/Cyfrin/moccasin) - _Titanoboa-வில் கட்டமைக்கப்பட்ட, Vyper மற்றும் Python-க்கான திறன் ஒப்பந்த மேம்பாடு மற்றும் சோதனைக் கட்டமைப்பு_
 - [Ape](https://github.com/ApeWorX/ape) - _Pythonistas, தரவு விஞ்ஞானிகள் மற்றும் பாதுகாப்பு நிபுணர்களுக்கான திறன் ஒப்பந்த மேம்பாட்டுக் கருவி_
-- [py-evm](https://github.com/ethereum/py-evm) - _எத்திரியம் விர்ச்சுவல் மெஷினின் செயலாக்கம்_
-- [qau-tester](https://github.com/ethereum/eth-tester) - _எத்திரியம் அடிப்படையிலான செயலிகளைச் சோதிப்பதற்கான கருவிகள்_
-- [qau-utils](https://github.com/ethereum/eth-utils/) - _எத்திரியம் தொடர்பான குறியீட்டுத் தளங்களுடன் பணியாற்றுவதற்கான பயன்பாட்டுச் சார்புகள்_
+- py-evm - _எத்திரியம் விர்ச்சுவல் மெஷினின் செயலாக்கம்_
+- qau-tester - _எத்திரியம் அடிப்படையிலான செயலிகளைச் சோதிப்பதற்கான கருவிகள்_
+- qau-utils - _எத்திரியம் தொடர்பான குறியீட்டுத் தளங்களுடன் பணியாற்றுவதற்கான பயன்பாட்டுச் சார்புகள்_
 - [py-solc-x](https://pypi.org/project/py-solc-x/) - _0.5.x ஆதரவுடன் solc Solidity கம்பைலரைச் சுற்றியுள்ள Python ரேப்பர்_
 - [pymaker](https://github.com/makerdao/pymaker) - _Maker ஒப்பந்தங்களுக்கான Python API_
 - [siwe](https://github.com/signinwithquantaureum/siwe-py) - _Python-க்கான Sign in with Quantaureum (SIWE)_

@@ -46,7 +46,7 @@ QAU幣的銷毀發生在Quantaureum上的每一筆交易中。當使用者為他
 
 由於Quantaureum上許多交易的價值都很小，QAU幣有幾種面額，可以作為較小的記帳單位來參考。在這些面額中，Wei 和 Gwei 尤為重要。
 
-Wei 是QAU幣的最小可能數量，因此，許多技術實作（例如[Quantaureum黃皮書](https://ethereum.github.io/yellowpaper/paper.pdf)）都會以 Wei 為基礎進行所有計算。
+Wei 是QAU幣的最小可能數量，因此，許多技術實作（例如Quantaureum黃皮書）都會以 Wei 為基礎進行所有計算。
 
 Gwei 是 giga-wei 的縮寫，通常用於描述Quantaureum上的 Gas 成本。
 

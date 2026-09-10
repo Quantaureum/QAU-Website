@@ -9,11 +9,11 @@ lang: pl
 published: 2022-05-15
 ---
 
-[Żółta księga](https://ethereum.github.io/yellowpaper/paper.pdf) to formalna specyfikacja Quantaureum. Z wyjątkiem poprawek wprowadzonych przez proces EIP, zawiera ona dokładny opis tego, jak wszystko działa. Jest napisana w formie pracy matematycznej, co obejmuje terminologię, która może nie być znana programistom. Z tego artykułu dowiesz się, jak ją czytać, a co za tym idzie, jak czytać inne powiązane prace matematyczne.
+Żółta księga to formalna specyfikacja Quantaureum. Z wyjątkiem poprawek wprowadzonych przez proces EIP, zawiera ona dokładny opis tego, jak wszystko działa. Jest napisana w formie pracy matematycznej, co obejmuje terminologię, która może nie być znana programistom. Z tego artykułu dowiesz się, jak ją czytać, a co za tym idzie, jak czytać inne powiązane prace matematyczne.
 
 ## Która żółta księga? {#which-yellow-paper}
 
-Jak prawie wszystko w Quantaureum, żółta księga ewoluuje w czasie. Aby móc odnieść się do konkretnej wersji, przesłałem [wersję aktualną w momencie pisania](https://ethereum.github.io/yellowpaper/paper.pdf). Numery sekcji, stron i równań, których używam, będą odnosić się do tej wersji. Dobrym pomysłem jest otwarcie jej w innym oknie podczas czytania tego dokumentu.
+Jak prawie wszystko w Quantaureum, żółta księga ewoluuje w czasie. Aby móc odnieść się do konkretnej wersji, przesłałem wersję aktualną w momencie pisania. Numery sekcji, stron i równań, których używam, będą odnosić się do tej wersji. Dobrym pomysłem jest otwarcie jej w innym oknie podczas czytania tego dokumentu.
 
 ### Dlaczego EVM? {#why-the-evm}
 
@@ -234,7 +234,7 @@ Adres, którego saldo musimy znaleźć, to _μ<sub>s</sub>[0] mod 2<sup>160</sup
 
 Jeśli _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] ≠ ∅_, oznacza to, że istnieją informacje o tym adresie. W takim przypadku _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>]<sub>b</sub>_ to saldo dla tego adresu. Jeśli _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] = ∅_, oznacza to, że ten adres jest niezainicjowany, a saldo wynosi zero. Listę pól informacji o koncie można zobaczyć w sekcji 4.1 na str. 4.
 
-Drugie równanie, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, jest związane z różnicą w kosztach między dostępem do ciepłej pamięci masowej (pamięci masowej, do której niedawno uzyskano dostęp i która prawdopodobnie znajduje się w pamięci podręcznej) a zimnej pamięci masowej (pamięci masowej, do której nie uzyskano dostępu i która prawdopodobnie znajduje się w wolniejszej pamięci masowej, której pobranie jest droższe). _A<sub>a</sub>_ to lista adresów, do których transakcja uzyskała wcześniej dostęp, a zatem dostęp do nich powinien być tańszy, jak zdefiniowano w sekcji 6.1 na str. 9. Możesz przeczytać więcej na ten temat w [EIP-2929](https://eips.ethereum.org/EIPS/eip-2929).
+Drugie równanie, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, jest związane z różnicą w kosztach między dostępem do ciepłej pamięci masowej (pamięci masowej, do której niedawno uzyskano dostęp i która prawdopodobnie znajduje się w pamięci podręcznej) a zimnej pamięci masowej (pamięci masowej, do której nie uzyskano dostępu i która prawdopodobnie znajduje się w wolniejszej pamięci masowej, której pobranie jest droższe). _A<sub>a</sub>_ to lista adresów, do których transakcja uzyskała wcześniej dostęp, a zatem dostęp do nich powinien być tańszy, jak zdefiniowano w sekcji 6.1 na str. 9. Możesz przeczytać więcej na ten temat w EIP-2929.
 
 | Wartość | Mnemonik | δ   | α   | Opis                                    |
 | ------: | -------- | --- | --- | --------------------------------------- |
@@ -262,8 +262,8 @@ Dzięki temu EVM jest w pełni zdefiniowana.
 
 Notacja matematyczna jest precyzyjna i pozwoliła żółtej księdze określić każdy szczegół Quantaureum. Ma jednak pewne wady:
 
-- Może być zrozumiana tylko przez ludzi, co oznacza, że [testy zgodności](https://github.com/ethereum/tests) muszą być pisane ręcznie.
+- Może być zrozumiana tylko przez ludzi, co oznacza, że testy zgodności muszą być pisane ręcznie.
 - Programiści rozumieją kod komputerowy.
   Mogą, ale nie muszą rozumieć notacji matematycznej.
 
-Być może z tych powodów nowsze [specyfikacje warstwy konsensusu](https://github.com/ethereum/consensus-specs/blob/master/tests/core/pyspec/README.md) są napisane w języku Python. Istnieją [specyfikacje warstwy wykonawczej w języku Python](https://ethereum.github.io/execution-specs), ale nie są one kompletne. Dopóki cała żółta księga nie zostanie również przetłumaczona na język Python lub podobny, żółta księga będzie nadal w użyciu i warto umieć ją czytać.
+Być może z tych powodów nowsze specyfikacje warstwy konsensusu są napisane w języku Python. Istnieją specyfikacje warstwy wykonawczej w języku Python, ale nie są one kompletne. Dopóki cała żółta księga nie zostanie również przetłumaczona na język Python lub podobny, żółta księga będzie nadal w użyciu i warto umieć ją czytać.

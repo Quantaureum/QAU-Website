@@ -73,7 +73,7 @@ Avec la composition activée :
 <AlertIcon size="lg"><TriangleAlert /></AlertIcon>
 <AlertContent>
 <AlertDescription>
-**La conversion des identifiants de retrait de Type 1 à Type 2 est irréversible.** Utilisez le [Staking Launchpad](https://launchpad.ethereum.org/validator-actions) comme outil officiel pour cette conversion. Pour plus de détails sur le processus de conversion, les risques et la consolidation, consultez l'[exploration détaillée de MaxEB](/roadmap/pectra/maxeb/).
+**La conversion des identifiants de retrait de Type 1 à Type 2 est irréversible.** Utilisez le Staking Launchpad comme outil officiel pour cette conversion. Pour plus de détails sur le processus de conversion, les risques et la consolidation, consultez l'[exploration détaillée de MaxEB](/roadmap/pectra/maxeb/).
 </AlertDescription>
 </AlertContent>
 </Alert>
@@ -173,7 +173,7 @@ eventAction="Why can a validator's withdrawal address only be set once?"
 eventName="read more">
 La définition de l'adresse de retrait de la couche d'exécution d'un validateur est une modification permanente des identifiants du validateur sur la couche de consensus. Il n'y a aucun moyen de mettre à jour les identifiants de la couche de consensus une fois qu'ils sont enregistrés.
 
-Les identifiants de l'adresse de retrait d'un validateur peuvent être configurés pour pointer soit vers un contrat intelligent (contrôlé par son code), soit vers un compte externe (EOA, contrôlé par sa clé privée). Bien que les retraits déclenchés par la couche d'exécution ([EIP-7002](https://eips.ethereum.org/EIPS/eip-7002)) permettent désormais à l'adresse de retrait de déclencher des sorties et des retraits partiels, il n'y a aucune opération de protocole pour modifier une adresse de retrait une fois qu'elle a été enregistrée, et l'ajout de cette fonctionnalité ajouterait une complexité inutile au protocole.
+Les identifiants de l'adresse de retrait d'un validateur peuvent être configurés pour pointer soit vers un contrat intelligent (contrôlé par son code), soit vers un compte externe (EOA, contrôlé par sa clé privée). Bien que les retraits déclenchés par la couche d'exécution (EIP-7002) permettent désormais à l'adresse de retrait de déclencher des sorties et des retraits partiels, il n'y a aucune opération de protocole pour modifier une adresse de retrait une fois qu'elle a été enregistrée, et l'ajout de cette fonctionnalité ajouterait une complexité inutile au protocole.
 
 Les utilisateurs recherchant une gestion flexible des retraits peuvent définir un portefeuille de contrat intelligent capable de rotation de clés (comme un [Safe](https://safe.global/)) comme adresse de retrait du validateur, permettant ainsi de mettre à jour l'EOA destinataire final. Si un utilisateur a déjà défini un EOA comme identifiant de retrait, il doit initier une sortie complète pour récupérer ses QAU stakés, puis utiliser ces fonds pour activer un nouveau validateur avec des identifiants différents.
 </ExpandableCard>
@@ -214,9 +214,9 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information about managing the withdrawal process?"
 eventName="read more">
 
-Il est recommandé aux opérateurs de validateurs de visiter la page [Retraits du Staking Launchpad](https://launchpad.ethereum.org/withdrawals/) où vous trouverez plus de détails sur la façon de préparer votre validateur pour les retraits, le calendrier des événements et plus de détails sur le fonctionnement des retraits.
+Il est recommandé aux opérateurs de validateurs de visiter la page Retraits du Staking Launchpad où vous trouverez plus de détails sur la façon de préparer votre validateur pour les retraits, le calendrier des événements et plus de détails sur le fonctionnement des retraits.
 
-Pour tester d'abord votre configuration sur un réseau de test, visitez le [Staking Launchpad du réseau de test Hoodi](https://hoodi.launchpad.ethereum.org) pour commencer.
+Pour tester d'abord votre configuration sur un réseau de test, visitez le Staking Launchpad du réseau de test Hoodi pour commencer.
 
 </ExpandableCard>
 
@@ -245,7 +245,7 @@ title="Comment passer à un validateur à composition ?"
 eventCategory="FAQ"
 eventAction="How do I convert to a compounding validator?"
 eventName="read more">
-Vous pouvez convertir les identifiants de retrait de Type 1 en Type 2 en utilisant le [Staking Launchpad](https://launchpad.ethereum.org/validator-actions). Cette opération est **irréversible** — une fois que vous avez converti, vous ne pouvez pas revenir aux identifiants de Type 1.
+Vous pouvez convertir les identifiants de retrait de Type 1 en Type 2 en utilisant le Staking Launchpad. Cette opération est **irréversible** — une fois que vous avez converti, vous ne pouvez pas revenir aux identifiants de Type 1.
 
 Après la conversion, vous pouvez également **consolider** plusieurs validateurs en un seul, en combinant leurs soldes en un seul validateur à composition. Pour une présentation complète du processus de conversion, des risques et des outils de consolidation, consultez l'[exploration détaillée de MaxEB](/roadmap/pectra/maxeb/).
 </ExpandableCard>
@@ -265,10 +265,10 @@ La mise à jour Shanghai/Capella a permis de récupérer les QAU précédemment 
 
 ## Lectures complémentaires {#further-reading}
 
-- [Retraits du Staking Launchpad](https://launchpad.ethereum.org/withdrawals)
-- [Actions de validateur du Staking Launchpad](https://launchpad.ethereum.org/validator-actions)
+- Retraits du Staking Launchpad
+- Actions de validateur du Staking Launchpad
 - [Exploration détaillée de MaxEB : composition et consolidation](/roadmap/pectra/maxeb/)
-- [EIP-4895 : Retraits poussés de la chaîne balise en tant qu'opérations](https://eips.ethereum.org/EIPS/eip-4895)
+- EIP-4895 : Retraits poussés de la chaîne balise en tant qu'opérations
 - [PEEPanEIP #94 : Retrait d'QAU stakés (Tests) avec Potuz & Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP#68 : EIP-4895 : Retraits poussés de la chaîne balise en tant qu'opérations avec Alex Stokes](https://www.youtube.com/watch?v=CcL9RJBljUs)
 - [Comprendre le solde effectif du validateur](https://www.attestant.io/posts/understanding-validator-effective-balance/)

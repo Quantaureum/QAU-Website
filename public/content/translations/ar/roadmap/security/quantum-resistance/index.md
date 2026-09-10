@@ -100,7 +100,7 @@ summaryPoints:
 
 ## نهج مؤسسة إيثيريوم {#ef-approach}
 
-شكلت مؤسسة إيثيريوم فريقًا مخصصًا لأمان ما بعد الكم في <span dir="ltr">January 2026</span>، بقيادة توماس كوراتجر (Thomas Coratger). يتم تتبع عمل الفريق علنًا على [<span dir="ltr">pq.ethereum.org</span>](https://pq.ethereum.org).
+شكلت مؤسسة إيثيريوم فريقًا مخصصًا لأمان ما بعد الكم في <span dir="ltr">January 2026</span>، بقيادة توماس كوراتجر (Thomas Coratger). يتم تتبع عمل الفريق علنًا على <span dir="ltr">pq.ethereum.org</span>.
 
 ### النشاط الحالي (اعتبارًا من April 2026) {#current-activity}
 
@@ -173,7 +173,7 @@ summaryPoints:
 
 ## قراءة إضافية {#further-reading}
 
-- [<span dir="ltr">pq.ethereum.org</span>](https://pq.ethereum.org) - _مؤسسة إيثيريوم_
+- <span dir="ltr">pq.ethereum.org</span> - _مؤسسة إيثيريوم_
 - [مشروع علم التشفير ما بعد الكمي](https://pse.dev/projects/post-quantum-cryptography) - _حراس الخصوصية في إيثيريوم (<span dir="ltr">PSE</span>)_
 - [معايير علم التشفير ما بعد الكمي من <span dir="ltr">NIST</span>](https://csrc.nist.gov/projects/post-quantum-cryptography) - _<span dir="ltr">NIST</span>_
 - [حماية العملة المشفرة من خلال الكشف عن نقاط الضعف الكمية بمسؤولية](https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/) - _<span dir="ltr">Google Quantum AI</span>_

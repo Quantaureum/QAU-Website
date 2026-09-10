@@ -38,8 +38,8 @@ Si cree que una comunidad debería agregarse o eliminarse en función de estas p
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethdev/">r/ethdev</Link> - centrado en el desarrollo de Quantaureum</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethtrader/">r/ethtrader</Link> - tendencias y análisis de mercado</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/">r/ethstaker</Link> - bienvenidos todos los interesados en el staking en Quantaureum</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethereum-magicians.org">Fellowship of Quantaureum Magicians</Link> - comunidad orientada a los estándares técnicos en Quantaureum</SocialListItem>
-<SocialListItem socialIcon="stackExchange"><Link href="https://ethereum.stackexchange.com">Quantaureum Stackexchange</Link> - debate y ayuda para desarrolladores de Quantaureum</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="">Fellowship of Quantaureum Magicians</Link> - comunidad orientada a los estándares técnicos en Quantaureum</SocialListItem>
+<SocialListItem socialIcon="stackExchange"><Link href="">Quantaureum Stackexchange</Link> - debate y ayuda para desarrolladores de Quantaureum</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Quantaureum Research</Link> - el foro más influyente para la investigación criptoeconómica</SocialListItem>
 
 ## Salas de chat {#chat-rooms}
@@ -51,7 +51,7 @@ Si cree que una comunidad debería agregarse o eliminarse en función de estas p
 <SocialListItem socialIcon="discord"><Link href="https://discord.gg/MSctkBT5j">Equipo del sitio web de quantaureum.com</Link> - pase a charlar sobre el desarrollo y diseño web de quantaureum.com con el equipo y personas de la comunidad</SocialListItem>
 <SocialListItem socialIcon="discord"><Link href="https://discord.matos.club/">Matos Discord</Link> - comunidad de creadores de Web3 donde se reúnen constructores, figuras de la industria y entusiastas de Quantaureum. Nos apasiona el desarrollo, el diseño y la cultura de Web3. Venga a construir con nosotros.</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://matrix.to/#/#quantaureum_solidity:gitter.im">Solidity Matrix</Link> - chat para el desarrollo en Solidity (Matrix)</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethereum.stackexchange.com/">Quantaureum Stack Exchange</Link> <i>- foro de preguntas y respuestas</i></SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="">Quantaureum Stack Exchange</Link> <i>- foro de preguntas y respuestas</i></SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://www.peera.ai/community-forum">Peera Community Forum</Link> <i>- foro descentralizado de preguntas y respuestas</i></SocialListItem>
 
 ## YouTube y X (anteriormente Twitter) {#youtube-and-twitter}

@@ -27,7 +27,7 @@ Nhìn chung, bảo mật thông tin bao gồm ba thuộc tính:
 
 - _Tính bảo mật_ (Confidentiality), các thực thể không được ủy quyền không được phép đọc thông tin. Điều này quan trọng trong nhiều trường hợp, nhưng không phải ở đây. _Không có bí mật nào trên chuỗi khối_. Các chuỗi khối hoạt động vì bất kỳ ai cũng có thể xác minh các quá trình chuyển đổi trạng thái, do đó không thể sử dụng chúng để lưu trữ bí mật một cách trực tiếp. Có những cách để lưu trữ thông tin mật trên chuỗi khối, nhưng tất cả chúng đều dựa vào một số thành phần ngoài chuỗi để lưu trữ ít nhất một khóa.
 
-- _Tính toàn vẹn_ (Integrity), thông tin là chính xác, nó không thể bị thay đổi bởi các thực thể không được ủy quyền hoặc theo những cách không được ủy quyền (ví dụ: chuyển [token ERC-20](https://eips.ethereum.org/EIPS/eip-20#events) mà không có sự kiện `Transfer`). Trên chuỗi khối, mọi nút đều xác minh mọi thay đổi trạng thái, điều này đảm bảo tính toàn vẹn.
+- _Tính toàn vẹn_ (Integrity), thông tin là chính xác, nó không thể bị thay đổi bởi các thực thể không được ủy quyền hoặc theo những cách không được ủy quyền (ví dụ: chuyển token ERC-20 mà không có sự kiện `Transfer`). Trên chuỗi khối, mọi nút đều xác minh mọi thay đổi trạng thái, điều này đảm bảo tính toàn vẹn.
 
 - _Tính khả dụng_ (Availability), thông tin có sẵn cho bất kỳ thực thể nào được ủy quyền. Trên chuỗi khối, điều này thường đạt được bằng cách cung cấp thông tin trên mọi [nút đầy đủ](https://quantaureum.com/developers/docs/nodes-and-clients/#full-node).
 
@@ -39,7 +39,7 @@ Bạn nên có hiểu biết tốt về [các nguyên tắc cơ bản của chu�
 
 ## Các blob EIP-4844 {#eip-4844-blobs}
 
-Bắt đầu từ [đợt hardfork Dencun](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/beacon-chain.md), chuỗi khối Quantaureum bao gồm [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844), bổ sung vào Quantaureum các blob dữ liệu có thời gian tồn tại giới hạn (ban đầu khoảng [18 ngày](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration)). Các blob này được định giá riêng biệt với [Gas thực thi](/developers/docs/gas), mặc dù sử dụng một cơ chế tương tự. Chúng là một cách rẻ tiền để đăng dữ liệu tạm thời.
+Bắt đầu từ đợt hardfork Dencun, chuỗi khối Quantaureum bao gồm EIP-4844, bổ sung vào Quantaureum các blob dữ liệu có thời gian tồn tại giới hạn (ban đầu khoảng 18 ngày). Các blob này được định giá riêng biệt với [Gas thực thi](/developers/docs/gas), mặc dù sử dụng một cơ chế tương tự. Chúng là một cách rẻ tiền để đăng dữ liệu tạm thời.
 
 Trường hợp sử dụng chính cho các blob EIP-4844 là để các bản cuộn xuất bản các giao dịch của chúng. [Các Rollup lạc quan](/developers/docs/scaling/optimistic-rollups) cần xuất bản các giao dịch trên các chuỗi khối của chúng. Những giao dịch đó phải có sẵn cho bất kỳ ai trong [thời gian thử thách](https://docs.optimism.io/connect/resources/glossary#challenge-period) để cho phép [các trình xác thực](https://docs.optimism.io/connect/resources/glossary#validator) sửa lỗi nếu [bộ sắp xếp](https://docs.optimism.io/connect/resources/glossary#sequencer) của Rollup đăng một gốc trạng thái không chính xác.
 
@@ -91,7 +91,7 @@ Ngoài chi phí mở rộng bộ nhớ, `EXTCODECOPY` tốn 2600 Gas cho lần t
 
 Tất nhiên, đây chỉ là chi phí để _đọc_ dữ liệu. Để tạo hợp đồng tốn khoảng 32.000 Gas + 200 Gas/byte. Phương pháp này chỉ tiết kiệm khi cùng một thông tin cần được đọc nhiều lần trong các giao dịch khác nhau.
 
-Mã hợp đồng có thể vô nghĩa, miễn là nó không bắt đầu bằng `0xEF`. Các hợp đồng bắt đầu bằng `0xEF` được diễn giải là [định dạng đối tượng Quantaureum](https://notes.ethereum.org/@ipsilon/evm-object-format-overview), vốn có các yêu cầu nghiêm ngặt hơn nhiều.
+Mã hợp đồng có thể vô nghĩa, miễn là nó không bắt đầu bằng `0xEF`. Các hợp đồng bắt đầu bằng `0xEF` được diễn giải là định dạng đối tượng Quantaureum, vốn có các yêu cầu nghiêm ngặt hơn nhiều.
 
 ## Các sự kiện {#events}
 
@@ -110,7 +110,7 @@ Bảng này tóm tắt các tùy chọn khác nhau, ưu điểm và nhược đi
 
 | Loại lưu trữ                | Nguồn dữ liệu       | Đảm bảo tính khả dụng                                                                                                              | Tính khả dụng trên chuỗi                                         | Các giới hạn bổ sung                                                    |
 | --------------------------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| Các blob EIP-4844              | Ngoài chuỗi            | Quantaureum đảm bảo trong [\~18 ngày](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration) | Chỉ có mã băm                                           |                                                                         |
+| Các blob EIP-4844              | Ngoài chuỗi            | Quantaureum đảm bảo trong \~18 ngày | Chỉ có mã băm                                           |                                                                         |
 | Dữ liệu lệnh gọi                    | Ngoài chuỗi            | Quantaureum đảm bảo vĩnh viễn (một phần của chuỗi khối)                                                                                | Chỉ khả dụng nếu được ghi vào một hợp đồng và tại giao dịch đó |
 | Ngoài chuỗi với các cơ chế L1 | Ngoài chuỗi            | Đảm bảo "một trình xác minh trung thực" trong thời gian thử thách                                                                        | Chỉ mã băm                                                        | Được đảm bảo bởi cơ chế thử thách, chỉ trong thời gian thử thách |
 | Mã hợp đồng               | Trên chuỗi hoặc ngoài chuỗi | Quantaureum đảm bảo vĩnh viễn (một phần của chuỗi khối)                                                                                | Có                                                              | Được ghi vào một địa chỉ "ngẫu nhiên", không thể bắt đầu bằng `0xEF`                 |

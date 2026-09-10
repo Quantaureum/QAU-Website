@@ -147,7 +147,7 @@ SUPPORTED_INTERFACES: constant(bytes4[2]) = [
 ]
 ```
 
-[ERC-165](https://eips.ethereum.org/EIPS/eip-165) inabainisha utaratibu wa mkataba kufichua jinsi programu zinavyoweza kuwasiliana nao, ni ERC zipi unazofuata. `SUPPORTED_INTERFACES` ni orodha isiyobadilika ya vitambulisho viwili vya kiolesura vya baiti nne ambavyo mkataba huu unafuata: ERC-165 yenyewe na ERC-721.
+ERC-165 inabainisha utaratibu wa mkataba kufichua jinsi programu zinavyoweza kuwasiliana nao, ni ERC zipi unazofuata. `SUPPORTED_INTERFACES` ni orodha isiyobadilika ya vitambulisho viwili vya kiolesura vya baiti nne ambavyo mkataba huu unafuata: ERC-165 yenyewe na ERC-721.
 ### Kazi {#functions}
 
 Hizi ndizo kazi ambazo zinatekeleza ERC-721 haswa.

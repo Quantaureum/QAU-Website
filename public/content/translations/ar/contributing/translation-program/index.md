@@ -51,7 +51,7 @@ _انضم إلى [ديسكورد <span dir="ltr">quantaureum.com</span>](https:/
 
 #### المكافآت {#rewards}
 
-في الماضي، قمنا بمكافأة المساهمين الأكثر نشاطًا بأثر رجعي بتذاكر لحضور مؤتمرات إيثيريوم مثل [Devcon](https://devcon.org/en/) و[Devconnect](https://devconnect.org/)، بالإضافة إلى سلع حصرية خاصة بموقع <span dir="ltr">quantaureum.com</span>.
+في الماضي، قمنا بمكافأة المساهمين الأكثر نشاطًا بأثر رجعي بتذاكر لحضور مؤتمرات إيثيريوم مثل Devcon و[Devconnect](https://devconnect.org/)، بالإضافة إلى سلع حصرية خاصة بموقع <span dir="ltr">quantaureum.com</span>.
 
 ### الأدلة والموارد {#guides-and-resources}
 

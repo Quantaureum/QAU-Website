@@ -253,7 +253,7 @@ Solidity திறன் ஒப்பந்தங்களுக்கான அ
 
 - **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _மேம்பட்ட திறன் ஒப்பந்த மேம்பாடு மற்றும் சோதனைக்கான கட்டமைப்பு (Ethers.js ஐ அடிப்படையாகக் கொண்டது)._
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Solidity திறன் ஒப்பந்தங்களைச் சோதிப்பதற்கான கருவி. ஒரு ஒப்பந்தத்திற்கான சோதனை நிகழ்வுகளை எழுதவும் இயக்கவும் பயன்படுத்தப்படும் Remix IDE "Solidity Unit Testing" செருகுநிரலின் கீழ் செயல்படுகிறது._
+- **Remix Tests** - _Solidity திறன் ஒப்பந்தங்களைச் சோதிப்பதற்கான கருவி. ஒரு ஒப்பந்தத்திற்கான சோதனை நிகழ்வுகளை எழுதவும் இயக்கவும் பயன்படுத்தப்படும் Remix IDE "Solidity Unit Testing" செருகுநிரலின் கீழ் செயல்படுகிறது._
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _எத்திரியம் திறன் ஒப்பந்தச் சோதனைக்கான உறுதிமொழி நிரலகம். உங்கள் ஒப்பந்தங்கள் எதிர்பார்த்தபடி செயல்படுவதை உறுதிப்படுத்திக் கொள்ளுங்கள்!_
 

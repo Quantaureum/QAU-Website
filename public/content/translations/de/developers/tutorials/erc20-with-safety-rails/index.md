@@ -17,7 +17,7 @@ Beachten Sie, dass wir zwar den [OpenZeppelin-ERC-20-Token-Vertrag](https://gith
 
 Wenn Sie den vollständigen Quellcode sehen möchten:
 
-1. Öffnen Sie die [Remix IDE](https://remix.ethereum.org/).
+1. Öffnen Sie die Remix IDE.
 2. Klicken Sie auf das GitHub-Klonen-Symbol (![clone github icon](icon-clone.png)).
 3. Klonen Sie das GitHub-Repository `https://github.com/qbzzt/20220815-erc20-safety-rails`.
 4. Öffnen Sie **contracts > erc20-safety-rails.sol**.
@@ -40,7 +40,7 @@ Bevor wir die Sicherheitsvorkehrungen hinzufügen können, benötigen wir einen 
 
 3. Scrollen Sie nach oben und klicken Sie auf **Open in Remix** (für Remix) oder **Download**, um eine andere Umgebung zu verwenden. Ich gehe davon aus, dass Sie Remix verwenden; falls Sie etwas anderes nutzen, nehmen Sie einfach die entsprechenden Änderungen vor.
 4. Wir haben nun einen voll funktionsfähigen ERC-20-Vertrag. Sie können `.deps` > `npm` erweitern, um den importierten Code zu sehen.
-5. Kompilieren, stellen Sie den Vertrag bereit und experimentieren Sie damit, um zu sehen, dass er als ERC-20-Vertrag funktioniert. Wenn Sie lernen müssen, wie man Remix benutzt, [nutzen Sie dieses Tutorial](https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth).
+5. Kompilieren, stellen Sie den Vertrag bereit und experimentieren Sie damit, um zu sehen, dass er als ERC-20-Vertrag funktioniert. Wenn Sie lernen müssen, wie man Remix benutzt, nutzen Sie dieses Tutorial.
 
 ## Häufige Fehler {#common-mistakes}
 
@@ -185,7 +185,7 @@ Das Einfrieren und Entsperren von Verträgen erfordert mehrere Änderungen:
 
 ### Bereinigung von Vermögenswerten {#asset-cleanup}
 
-Um ERC-20-Token freizugeben, die von diesem Vertrag gehalten werden, müssen wir eine Funktion in dem Token-Vertrag aufrufen, zu dem sie gehören, entweder [`transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer) oder [`approve`](https://eips.ethereum.org/EIPS/eip-20#approve). Es hat keinen Sinn, in diesem Fall Gas für Freigaben (Allowances) zu verschwenden, wir können genauso gut direkt einen Transfer durchführen.
+Um ERC-20-Token freizugeben, die von diesem Vertrag gehalten werden, müssen wir eine Funktion in dem Token-Vertrag aufrufen, zu dem sie gehören, entweder `transfer` oder `approve`. Es hat keinen Sinn, in diesem Fall Gas für Freigaben (Allowances) zu verschwenden, wir können genauso gut direkt einen Transfer durchführen.
 
 ```solidity
     function cleanupERC20(

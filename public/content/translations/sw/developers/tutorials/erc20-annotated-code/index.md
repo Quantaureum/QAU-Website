@@ -32,7 +32,7 @@ Ikiwa wewe ni mtayarishaji programu mzoefu, labda unakumbuka kuona miundo sawa k
 au hata katika [faili za kichwa za C](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html).
 
 Huu ni ufafanuzi wa [Kiolesura cha ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)
-kutoka OpenZeppelin. Ni tafsiri ya [kiwango kinachosomeka na binadamu](https://eips.ethereum.org/EIPS/eip-20) kuwa msimbo wa Solidity. Bila shaka,
+kutoka OpenZeppelin. Ni tafsiri ya kiwango kinachosomeka na binadamu kuwa msimbo wa Solidity. Bila shaka,
 kiolesura chenyewe hakifafanui _jinsi_ ya kufanya chochote. Hilo linaelezwa katika msimbo wa chanzo wa mkataba hapa chini.
 
 &nbsp;
@@ -110,9 +110,7 @@ Pia ni `external` na `view`.
 ```solidity
     /**
      * @dev Inahamisha tokeni `amount` kutoka kwenye akaunti ya mpigaji kwenda kwa `recipient`.
-     *
      * Inarejesha thamani ya boolean inayoonyesha ikiwa operesheni imefaulu.
-     *
      * Inatoa tukio la {hamisho}.
      */
     function transfer(address recipient, uint256 amount) external returns (bool);
@@ -148,7 +146,6 @@ uweze kujua ikiwa ulifanikiwa.
      * @dev Inarejesha idadi iliyobaki ya tokeni ambazo `spender` ataruhusiwa
      * kutumia kwa niaba ya `owner` kupitia {transferFrom}. Hii ni
      * sifuri kwa chaguo-msingi.
-     *
      * Thamani hii inabadilika wakati {idhinisha} au {transferFrom} inapoitwa.
      */
     function allowance(address owner, address spender) external view returns (uint256);
@@ -162,16 +159,13 @@ anwani moja (`owner`) inaruhusu anwani nyingine (`spender`) kutumia.
 ```solidity
     /**
      * @dev Inaweka `amount` kama kibali cha `spender` juu ya tokeni za mpigaji.
-     *
      * Inarejesha thamani ya boolean inayoonyesha ikiwa operesheni imefaulu.
-     *
      * MUHIMU: Jihadharini kwamba kubadilisha kibali kwa njia hii kunaleta hatari
      * kwamba mtu anaweza kutumia kibali cha zamani na kipya kwa mpangilio mbaya
      * wa muamala. Suluhisho moja linalowezekana la kupunguza hali hii ya
      * ushindani ni kwanza kupunguza kibali cha mtumiaji hadi 0 na kuweka
      * thamani inayotakikana baadaye:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
-     *
+
      * Inatoa tukio la {Approval}.
      */
     function approve(address spender, uint256 amount) external returns (bool);
@@ -190,9 +184,7 @@ muamala wa upande mwingine umetokea.
      * @dev Inahamisha tokeni `amount` kutoka kwa `sender` kwenda kwa `recipient` kwa kutumia
      * utaratibu wa kibali. `amount` kisha inakatwa kutoka kwenye kibali
      * cha mpigaji.
-     *
      * Inarejesha thamani ya boolean inayoonyesha ikiwa operesheni imefaulu.
-     *
      * Inatoa tukio la {hamisho}.
      */
     function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
@@ -207,7 +199,6 @@ Hatimaye, `transferFrom` inatumiwa na mtumiaji kutumia kibali hicho.
     /**
      * @dev Inatolewa wakati tokeni `value` zinahamishwa kutoka akaunti moja (`from`) kwenda
      * nyingine (`to`).
-     *
      * Kumbuka kwamba `value` inaweza kuwa sifuri.
      */
     event Transfer(address indexed from, address indexed to, uint256 value);
@@ -250,7 +241,7 @@ import "../../math/SafeMath.sol";
 - `GSN/Context.sol` ni ufafanuzi unaohitajika kutumia [OpenGSN](https://opengsn.org/), mfumo unaoruhusu watumiaji wasio na Etha
   kutumia mnyororo wa vitalu. Kumbuka kuwa hili ni toleo la zamani, ikiwa unataka kuunganisha na OpenGSN
   [tumia mafunzo haya](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [Maktaba ya SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), ambayo inazuia
+- Maktaba ya SafeMath, ambayo inazuia
   mizidio/upungufu wa hesabu kwa matoleo ya Solidity **&lt;0.8.0**. Katika Solidity ≥0.8.0, shughuli za hesabu hutengua kiotomatiki
   kwenye mzidio/upungufu, na kufanya SafeMath isiwe ya lazima. Mkataba huu unatumia SafeMath kwa utangamano wa nyuma na
   matoleo ya zamani ya kikusanyaji.
@@ -262,24 +253,19 @@ Maoni haya yanaelezea madhumuni ya mkataba.
 ```solidity
 /**
  * @dev Utekelezaji wa kiolesura cha {IERC20}.
- *
  * Utekelezaji huu haujali jinsi tokeni zinavyoundwa. Hii inamaanisha
  * kwamba utaratibu wa usambazaji unapaswa kuongezwa katika mkataba unaotokana kwa kutumia {_mint}.
  * Kwa utaratibu wa jumla tazama {ERC20PresetMinterPauser}.
- *
  * DOKEZO: Kwa maelezo ya kina tazama mwongozo wetu
  * https://forum.zeppelin.solutions/t/how-to-implement-erc20-supply-mechanisms/226[How
  * to implement supply mechanisms].
- *
  * Tumefuata miongozo ya jumla ya OpenZeppelin: vitendaji hubatilisha badala
  * ya kurejesha `false` vinaposhindwa. Tabia hii hata hivyo ni ya kawaida
  * na haipingani na matarajio ya programu za ERC-20.
- *
  * Zaidi ya hayo, tukio la {Approval} linatolewa kwenye wito wa {transferFrom}.
  * Hii inaruhusu programu kuunda upya kibali kwa akaunti zote tu
  * kwa kusikiliza matukio hayo. Utekelezaji mwingine wa EIP huenda usitoe
  * matukio haya, kwani haihitajiki na vipimo.
- *
  * Hatimaye, vitendaji visivyo vya kiwango vya {decreaseAllowance} na {increaseAllowance}
  * vimeongezwa ili kupunguza matatizo yanayojulikana sana kuhusu kuweka
  * vibali. Tazama {IERC20-approve}.
@@ -373,9 +359,7 @@ thamani ya `_decimals` ya sifuri. Ikiwa unataka kutumia kiwango sawa na QAU, tum
     /**
      * @dev Inaweka thamani za {name} na {symbol}, inaanzisha {decimals} na
      * thamani ya chaguo-msingi ya 18.
-     *
      * Ili kuchagua thamani tofauti kwa {decimals}, tumia {_setupDecimals}.
-     *
      * Thamani zote tatu hizi hazibadiliki: zinaweza tu kuwekwa mara moja wakati
      * wa ujenzi.
      */
@@ -412,10 +396,8 @@ Konstrukta inaitwa wakati mkataba unaundwa kwa mara ya kwanza. Kwa kawaida, vige
      * @dev Inarejesha idadi ya desimali zinazotumika kupata uwakilishi wake kwa mtumiaji.
      * Kwa mfano, ikiwa `decimals` ni sawa na `2`, salio la tokeni `505` linapaswa
      * kuonyeshwa kwa mtumiaji kama `5,05` (`505 / 10 ** 2`).
-     *
      * Kwa kawaida tokeni huchagua thamani ya 18, kuiga uhusiano kati ya
      * Etha na Wei. Hii ndiyo thamani ambayo {ERC-20} inatumia, isipokuwa {_setupDecimals} iitwe.
-     *
      * KUMBUKA: Taarifa hii inatumika tu kwa madhumuni ya _kuonyesha_: kwa
      * vyovyote vile haiathiri hesabu yoyote ya mkataba, ikiwa ni pamoja na
      * {IERC20-balanceOf} na {IERC20-transfer}.
@@ -474,9 +456,7 @@ nodi hata hivyo. _Hakuna siri kwenye mnyororo wa vitalu._
 ```solidity
     /**
      * @dev Tazama {IERC20-transfer}.
-     *
      * Mahitaji:
-     *
      * - `recipient` haiwezi kuwa anwani sifuri.
      * - mpigaji lazima awe na salio la angalau `amount`.
      */
@@ -528,9 +508,7 @@ Kazi ya `allowance` inaruhusu kila mtu kuangalia kibali chochote.
 ```solidity
     /**
      * @dev Tazama {IERC20-approve}.
-     *
      * Mahitaji:
-     *
      * - `spender` haiwezi kuwa anwani sifuri.
      */
     function approve(address spender, uint256 amount) public virtual override returns (bool) {
@@ -560,12 +538,9 @@ kinachotumiwa na kupunguza kibali kwa kiasi hicho.
 ```solidity
     /**
      * @dev Tazama {IERC20-transferFrom}.
-     *
      * Inatoa tukio la {Approval} kuonyesha kibali kilichosasishwa. Hii
      * haihitajiki na EIP. Tazama dokezo mwanzoni mwa {ERC-20}.
-     *
      * Mahitaji:
-     *
      * - `sender` na `recipient` haziwezi kuwa anwani sifuri.
      * - `sender` lazima awe na salio la angalau `amount`.
      * - mpigaji lazima awe na kibali cha tokeni za ``sender`` cha angalau
@@ -636,14 +611,10 @@ B:
 ```solidity
     /**
      * @dev Inaongeza kibali kilichotolewa kwa `spender` na mpigaji kwa njia ya atomiki.
-     *
      * Hii ni mbadala wa {idhinisha} ambayo inaweza kutumika kama suluhisho kwa
      * matatizo yaliyoelezwa katika {IERC20-approve}.
-     *
      * Inatoa tukio la {Approval} kuonyesha kibali kilichosasishwa.
-     *
      * Mahitaji:
-     *
      * - `spender` haiwezi kuwa anwani sifuri.
      */
     function increaseAllowance(address spender, uint256 addedValue) public virtual returns (bool) {
@@ -659,14 +630,10 @@ kwa njia ambayo nyongeza ya kawaida hufanya.
 
     /**
      * @dev Inapunguza kibali kilichotolewa kwa `spender` na mpigaji kwa njia ya atomiki.
-     *
      * Hii ni mbadala wa {idhinisha} ambayo inaweza kutumika kama suluhisho kwa
      * matatizo yaliyoelezwa katika {IERC20-approve}.
-     *
      * Inatoa tukio la {Approval} kuonyesha kibali kilichosasishwa.
-     *
      * Mahitaji:
-     *
      * - `spender` haiwezi kuwa anwani sifuri.
      * - `spender` lazima awe na kibali cha mpigaji cha angalau
      * `subtractedValue`.
@@ -687,14 +654,10 @@ Hizi ni kazi nne zinazofanya kazi halisi: `_transfer`, `_mint`, `_burn`, na `_ap
 ```solidity
     /**
      * @dev Inahamisha tokeni `amount` kutoka kwa `sender` kwenda kwa `recipient`.
-     *
      * Kitendaji hiki cha ndani ni sawa na {hamisho}, na kinaweza kutumika
      * k.m., kutekeleza ada za tokeni za kiotomatiki, taratibu za kukata (slashing), n.k.
-     *
      * Inatoa tukio la {hamisho}.
-     *
      * Mahitaji:
-     *
      * - `sender` haiwezi kuwa anwani sifuri.
      * - `recipient` haiwezi kuwa anwani sifuri.
      * - `sender` lazima awe na salio la angalau `amount`.
@@ -774,11 +737,8 @@ ili kuepuka mfumuko wa bei unaokimbia.
 ```solidity
     /** @dev Inaunda tokeni `amount` na kuzikabidhi kwa `akaunti`, na kuongeza
      * usambazaji wa jumla.
-     *
      * Inatoa tukio la {hamisho} huku `from` ikiwekwa kuwa anwani sifuri.
-     *
      * Mahitaji:
-     *
      * - `to` haiwezi kuwa anwani sifuri.
      */
     function _mint(address account, uint256 amount) internal virtual {
@@ -798,11 +758,8 @@ Hakikisha unasasisha `_totalSupply` wakati jumla ya idadi ya tokeni inabadilika.
     /**
      * @dev Inaharibu tokeni `amount` kutoka kwenye `akaunti`, na kupunguza
      * usambazaji wa jumla.
-     *
      * Inatoa tukio la {hamisho} huku `to` ikiwekwa kuwa anwani sifuri.
-     *
      * Mahitaji:
-     *
      * - `akaunti` haiwezi kuwa anwani sifuri.
      * - `akaunti` lazima iwe na angalau tokeni `amount`.
      */
@@ -829,14 +786,10 @@ kinaundwa.
 ```solidity
     /**
      * @dev Inaweka `amount` kama kibali cha `spender` juu ya tokeni za `owner`.
-     *
      * Kitendaji hiki cha ndani ni sawa na `idhinisha`, na kinaweza kutumika
      * k.m., kuweka vibali vya kiotomatiki kwa mifumo midogo fulani, n.k.
-     *
      * Inatoa tukio la {Approval}.
-     *
      * Mahitaji:
-     *
      * - `owner` haiwezi kuwa anwani sifuri.
      * - `spender` haiwezi kuwa anwani sifuri.
      */
@@ -865,7 +818,6 @@ idhini iwe na mmiliki au na seva inayosikiliza matukio haya.
 
     /**
      * @dev Inaweka {decimals} kuwa thamani tofauti na ile ya chaguo-msingi ya 18.
-     *
      * ONYO: Kitendaji hiki kinapaswa kuitwa tu kutoka kwenye konstrukta. Programu
      * nyingi zinazoingiliana na mikataba ya tokeni hazitatarajia
      * {decimals} kubadilika kamwe, na zinaweza kufanya kazi vibaya ikiwa itabadilika.
@@ -886,15 +838,12 @@ hazijaundwa kushughulikia hilo.
     /**
      * @dev Ndoano (Hook) inayoitwa kabla ya hamisho lolote la tokeni. Hii inajumuisha
      * uundaji (minting) na uchomaji (burning).
-     *
      * Masharti ya wito:
-     *
      * - wakati `from` na `to` zote sio sifuri, tokeni `amount` za ``from``
      * zitahamishwa kwenda kwa `to`.
      * - wakati `from` ni sifuri, tokeni `amount` zitaundwa kwa ajili ya `to`.
      * - wakati `to` ni sifuri, tokeni `amount` za ``from`` zitachomwa.
      * - `from` na `to` haziwezi kuwa sifuri zote mbili.
-     *
      * Ili kujifunza zaidi kuhusu ndoano, nenda kwenye xref:ROOT:extending-contracts.adoc#using-hooks[Using Hooks].
      */
     function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual { }

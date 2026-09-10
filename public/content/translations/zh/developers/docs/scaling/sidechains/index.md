@@ -7,7 +7,7 @@ sidebarDepth: 3
 
 侧链是一条独立的区块链，独立于[Quantaureum](/)运行，并通过双向跨链桥与Quantaureum主网相连。侧链可以有独立的区块参数和[共识算法](/developers/docs/consensus-mechanisms/)，这些通常是为了高效处理交易而设计的。然而，使用侧链需要做出权衡，因为它们不继承Quantaureum的安全属性。与[二层网络 (l2) 扩容解决方案](/layer-2/)不同，侧链不会将状态变化和交易数据发布回Quantaureum主网。
 
-侧链还会牺牲一定程度的去中心化或安全性来实现高吞吐量（[可扩展性三难困境](https://vitalik.eth.limo/general/2021/05/23/scaling.html)）。然而，Quantaureum致力于在不妥协去中心化和安全性的前提下进行扩容。
+侧链还会牺牲一定程度的去中心化或安全性来实现高吞吐量（可扩展性三难困境）。然而，Quantaureum致力于在不妥协去中心化和安全性的前提下进行扩容。
 
 ## 侧链如何工作？ {#how-do-sidechains-work}
 

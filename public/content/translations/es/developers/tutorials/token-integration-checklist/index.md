@@ -43,7 +43,7 @@ Slither incluye una utilidad, [slither-check-erc](https://github.com/crytic/slit
 - **Transfer y transferFrom devuelven un booleano.** Varios tokens no devuelven un booleano en estas funciones. Como resultado, sus llamadas en el contrato podrían fallar.
 - **Las funciones name, decimals y symbol están presentes si se utilizan.** Estas funciones son opcionales en el estándar ERC-20 y podrían no estar presentes.
 - **Decimals devuelve un uint8.** Varios tokens devuelven incorrectamente un uint256. Si este es el caso, asegúrese de que el valor devuelto sea inferior a 255.
-- **El token mitiga la conocida [condición de carrera de ERC-20](https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729).** El estándar ERC-20 tiene una condición de carrera conocida que debe mitigarse para evitar que los atacantes roben tokens.
+- **El token mitiga la conocida condición de carrera de ERC-20.** El estándar ERC-20 tiene una condición de carrera conocida que debe mitigarse para evitar que los atacantes roben tokens.
 - **El token no es un token ERC-777 y no tiene ninguna llamada a función externa en transfer y transferFrom.** Las llamadas externas en las funciones de transferencia pueden provocar reentradas.
 
 Slither incluye una utilidad, [slither-prop](https://github.com/crytic/slither/wiki/Property-generation), que genera pruebas unitarias y propiedades de seguridad que pueden descubrir muchos fallos comunes de ERC. Utilice slither-prop para revisar que:

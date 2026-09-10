@@ -12,7 +12,7 @@ lang: ja
 
 そのアイデアはシンプルで、任意の数の代替可能トークンおよび非代替性トークンのタイプを表現し、制御できるスマート・コントラクトのインターフェースを作成することを目指しています。これにより、ERC-1155トークンは[ERC-20](/developers/docs/standards/tokens/erc-20/)および[ERC-721](/developers/docs/standards/tokens/erc-721/)トークンと同じ機能を果たすことができ、さらに両方を同時に機能させることも可能です。ERC-20およびERC-721規格の両方の機能を向上させ、より効率的にし、明らかな実装エラーを修正します。
 
-ERC-1155トークンの詳細は、[EIP-1155](https://eips.ethereum.org/EIPS/eip-1155)で完全に説明されています。
+ERC-1155トークンの詳細は、EIP-1155で完全に説明されています。
 
 ## 前提条件 {#prerequisites}
 
@@ -113,7 +113,7 @@ function onERC1155BatchReceived(
 ) external returns(bytes4);
 ```
 
-[EIP-165](https://eips.ethereum.org/EIPS/eip-165)のサポートにより、ERC-1155はスマート・コントラクトに対してのみ受信フックをサポートします。フック関数は、以下のように事前に定義されたマジックbytes4値を返す必要があります。
+EIP-165のサポートにより、ERC-1155はスマート・コントラクトに対してのみ受信フックをサポートします。フック関数は、以下のように事前に定義されたマジックbytes4値を返す必要があります。
 
 ```solidity
 bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"))
@@ -123,7 +123,7 @@ bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],byt
 
 ### NFTサポート {#nft-support}
 
-供給量が1つだけの場合、そのトークンは実質的に非代替性トークン (NFT) となります。そして、ERC-721の標準と同様に、メタデータのURLを定義できます。このURLはクライアントによって読み取りおよび変更が可能です。詳細は[こちら](https://eips.ethereum.org/EIPS/eip-1155#metadata)をご覧ください。
+供給量が1つだけの場合、そのトークンは実質的に非代替性トークン (NFT) となります。そして、ERC-721の標準と同様に、メタデータのURLを定義できます。このURLはクライアントによって読み取りおよび変更が可能です。詳細はこちらをご覧ください。
 
 ### 安全な送金ルール {#safe-transfer-rule}
 
@@ -140,7 +140,7 @@ _注_: フックを含むすべての一括処理関数には、一括処理を�
 
 ## 参考文献 {#further-reading}
 
-- [EIP-1155: マルチトークン規格](https://eips.ethereum.org/EIPS/eip-1155)
+- EIP-1155: マルチトークン規格
 - [ERC-1155: オープンツェッペリンのドキュメント](https://docs.openzeppelin.com/contracts/5.x/erc1155)
 - [ERC-1155: GitHubリポジトリ](https://github.com/enjin/erc-1155)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)

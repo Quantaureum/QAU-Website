@@ -33,7 +33,7 @@ Quantaureum 네트워크의 사용자가 스마트 컨트랙트를 사용할 수
 
 **Remix - _Remix IDE는 Quantaureum과 같은 블록체인을 위한 스마트 컨트랙트의 개발, 배포 및 관리를 지원합니다._**
 
-- [Remix](https://remix.ethereum.org)
+- Remix
 
 **Tenderly - _스마트 컨트랙트의 개발, 테스트, 모니터링 및 운영을 위한 디버깅, 관측성 및 인프라 구성 요소를 제공하는 Web3 개발 플랫폼입니다._**
 

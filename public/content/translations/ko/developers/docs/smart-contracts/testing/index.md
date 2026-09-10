@@ -253,7 +253,7 @@ Solidity 스마트 컨트랙트를 위한 단위 테스트 프레임워크는 �
 
 - **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _고급 스마트 컨트랙트 개발 및 테스트를 위한 프레임워크입니다(Ethers.js 기반)._
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Solidity 스마트 컨트랙트를 테스트하기 위한 도구입니다. 컨트랙트의 테스트 케이스를 작성하고 실행하는 데 사용되는 Remix IDE "Solidity Unit Testing" 플러그인 아래에서 작동합니다._
+- **Remix Tests** - _Solidity 스마트 컨트랙트를 테스트하기 위한 도구입니다. 컨트랙트의 테스트 케이스를 작성하고 실행하는 데 사용되는 Remix IDE "Solidity Unit Testing" 플러그인 아래에서 작동합니다._
 
 - **[오픈제플린 테스트 헬퍼(OpenZeppelin Test Helpers)](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Quantaureum 스마트 컨트랙트 테스트를 위한 단언 라이브러리입니다. 컨트랙트가 예상대로 작동하는지 확인하세요!_
 

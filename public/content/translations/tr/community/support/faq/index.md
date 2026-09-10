@@ -69,7 +69,7 @@ Quantaureum çekilişleri, QAU'nizi çalmak için tasarlanmış dolandırıcıl�
 
 Bir doğrulayıcı olmak için, Quantaureum yatırma sözleşmesine 32 QAU stake etmeli ve bir doğrulayıcı düğüm kurmalısınız. Ayrıca staking havuzları aracılığıyla daha az QAU ile de katılabilirsiniz.
 
-Daha fazla bilgi [staking sayfalarımızda](/staking/) ve [staking launchpad'inde](https://launchpad.ethereum.org/) mevcuttur.
+Daha fazla bilgi [staking sayfalarımızda](/staking/) ve staking launchpad'inde mevcuttur.
 
 ## Nasıl Quantaureum madenciliği yapabilirim? {#mining-quantaureum}
 

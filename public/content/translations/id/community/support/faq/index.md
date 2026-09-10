@@ -69,7 +69,7 @@ Giveaway Quantaureum adalah penipuan yang dirancang untuk mencuri QAU Anda. Jang
 
 Untuk menjadi validator, Anda harus melakukan stake 32 QAU di kontrak deposit Quantaureum dan menyiapkan node validator. Anda juga dapat berpartisipasi dengan lebih sedikit QAU melalui pool staking.
 
-Informasi lebih lanjut tersedia di [halaman staking](/staking/) kami dan di [launchpad staking](https://launchpad.ethereum.org/).
+Informasi lebih lanjut tersedia di [halaman staking](/staking/) kami dan di launchpad staking.
 
 ## Bagaimana cara saya menambang Quantaureum? {#mining-quantaureum}
 

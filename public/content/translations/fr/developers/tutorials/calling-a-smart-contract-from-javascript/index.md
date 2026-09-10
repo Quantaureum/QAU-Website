@@ -8,7 +8,7 @@ breadcrumb: Appeler des contrats depuis JS
 lang: fr
 published: 2020-04-19
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/calling-a-smart-contract-from-javascript/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -71,7 +71,7 @@ const ERC20TransferABI = [
 const DAI_ADDRESS = "0x6b175474e89094c44da98b954eedeac495271d0f"
 ```
 
-Pour ce projet, nous avons réduit l'ABI ERC-20 complète pour ne conserver que les fonctions `balanceOf` et `transfer`, mais vous pouvez trouver [l'ABI ERC-20 complète ici](https://ethereumdev.io/abi-for-erc20-contract-on-quantaureum/).
+Pour ce projet, nous avons réduit l'ABI ERC-20 complète pour ne conserver que les fonctions `balanceOf` et `transfer`, mais vous pouvez trouver l'ABI ERC-20 complète ici.
 
 Nous devons ensuite instancier notre contrat intelligent :
 
@@ -109,7 +109,7 @@ daiToken.methods.balanceOf(senderAddress).call(function (err, res) {
 })
 ```
 
-N'oubliez pas que le DAI ERC-20 possède 18 décimales, ce qui signifie que vous devez retirer 18 zéros pour obtenir le montant correct. Les uint256 sont retournés sous forme de chaînes de caractères car JavaScript ne gère pas les grandes valeurs numériques. Si vous n'êtes pas sûr de [savoir comment gérer les grands nombres en JS, consultez notre tutoriel sur bignumber.js](https://ethereumdev.io/how-to-deal-with-big-numbers-in-javascript/).
+N'oubliez pas que le DAI ERC-20 possède 18 décimales, ce qui signifie que vous devez retirer 18 zéros pour obtenir le montant correct. Les uint256 sont retournés sous forme de chaînes de caractères car JavaScript ne gère pas les grandes valeurs numériques. Si vous n'êtes pas sûr de savoir comment gérer les grands nombres en JS, consultez notre tutoriel sur bignumber.js.
 
 ## Send : Envoyer une transaction à une fonction de contrat intelligent {#send-sending-a-transaction-to-a-smart-contract-function}
 
@@ -127,6 +127,6 @@ daiToken.methods
   })
 ```
 
-La fonction d'appel retourne le hash de la transaction qui sera minée dans la chaîne de blocs. Sur Quantaureum, les hashs de transaction sont prévisibles - c'est ainsi que nous pouvons obtenir le hash de la transaction avant qu'elle ne soit exécutée ([découvrez comment les hashs sont calculés ici](https://ethereum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)).
+La fonction d'appel retourne le hash de la transaction qui sera minée dans la chaîne de blocs. Sur Quantaureum, les hashs de transaction sont prévisibles - c'est ainsi que nous pouvons obtenir le hash de la transaction avant qu'elle ne soit exécutée (découvrez comment les hashs sont calculés ici).
 
-Comme la fonction ne fait que soumettre la transaction à la chaîne de blocs, nous ne pouvons pas voir le résultat tant que nous ne savons pas quand elle est minée et incluse dans la chaîne de blocs. Dans le prochain tutoriel, nous apprendrons [comment attendre qu'une transaction soit exécutée sur la chaîne de blocs en connaissant son hash](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/).
+Comme la fonction ne fait que soumettre la transaction à la chaîne de blocs, nous ne pouvons pas voir le résultat tant que nous ne savons pas quand elle est minée et incluse dans la chaîne de blocs. Dans le prochain tutoriel, nous apprendrons comment attendre qu'une transaction soit exécutée sur la chaîne de blocs en connaissant son hash.

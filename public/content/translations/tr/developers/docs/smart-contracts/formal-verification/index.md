@@ -235,7 +235,7 @@ Ayrıca, bir programın asla sonlanmayabileceği için program doğrulayıcılar
 
 **Solidity SMTChecker** - _*Solidity'nin SMTChecker'ı, SMT (Satisfiability Modulo Theories) ve Horn çözümüne dayalı yerleşik bir model denetleyicisidir. Derleme sırasında bir sözleşmenin kaynak kodunun spesifikasyonlarla eşleşip eşleşmediğini onaylar ve güvenlik özelliklerinin ihlallerini statik olarak kontrol eder.*_
 
-- [GitHub](https://github.com/ethereum/solidity)
+- GitHub
 
 **solc-verify** - _*solc-verify, ek açıklamalar ve modüler program doğrulaması kullanarak Solidity kodu üzerinde otomatik biçimsel doğrulama gerçekleştirebilen Solidity derleyicisinin genişletilmiş bir sürümüdür.*_
 

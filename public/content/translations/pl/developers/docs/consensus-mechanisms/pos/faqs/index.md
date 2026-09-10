@@ -18,7 +18,7 @@ Dowód stawki wymaga od węzłów, znanych jako walidatory, jawnego przesłania 
 
 Dowód pracy jest znacznie bardziej energochłonny, ponieważ w procesie kopania spalana jest energia elektryczna. Z kolei dowód stawki wymaga tylko bardzo małej ilości energii – walidatory Quantaureum mogą działać nawet na urządzeniach o niskim poborze mocy, takich jak Raspberry Pi. Uważa się, że mechanizm dowodu stawki w Quantaureum jest bezpieczniejszy niż dowód pracy, ponieważ koszt ataku jest wyższy, a konsekwencje dla atakującego są poważniejsze.
 
-Dowód pracy kontra dowód stawki to temat sporny. [Blog Vitalika Buterina](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) oraz debata między Justinem Drake'iem a Lyn Alden stanowią dobre podsumowanie argumentów.
+Dowód pracy kontra dowód stawki to temat sporny. Blog Vitalika Buterina oraz debata między Justinem Drake'iem a Lyn Alden stanowią dobre podsumowanie argumentów.
 
 
 ## Czy dowód stawki jest energooszczędny? {#is-pos-energy-efficient}
@@ -88,7 +88,7 @@ Manipulacja stawką to kategoria ataku na sieci oparte na dowodzie stawki, w kt�
 Karanie społecznościowe to zdolność społeczności do skoordynowania rozwidlenia blockchaina w odpowiedzi na atak. Umożliwia to społeczności odzyskanie sprawności po sfinalizowaniu nieuczciwego łańcucha przez atakującego. Karanie społecznościowe może być również wykorzystane przeciwko atakom cenzury.
 
 - [Więcej o karaniu społecznościowym](https://ercwl.medium.com/the-case-for-social-slashing-59277ff4d9c7)
-- [Vitalik Buterin o karaniu społecznościowym](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
+- Vitalik Buterin o karaniu społecznościowym
 
 ## Czy zostanę ukarany cięciem? {#will-i-get-slashed}
 
@@ -100,7 +100,7 @@ Jako walidator bardzo trudno jest zostać ukaranym cięciem, chyba że celowo an
 
 Problem braku stawki to koncepcyjny problem z niektórymi mechanizmami dowodu stawki, w których istnieją tylko nagrody, a nie ma kar. Jeśli nie ma nic do stracenia (braku stawki), pragmatyczny walidator równie chętnie poświadcza dowolne, a nawet wiele rozwidleń blockchaina, ponieważ zwiększa to jego nagrody. Quantaureum omija to, stosując warunki ostateczności i cięcie, aby zapewnić jeden kanoniczny łańcuch.
 
-[Więcej o problemie braku stawki](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
+Więcej o problemie braku stawki
 
 ## Czym jest algorytm wyboru rozwidlenia? {#what-is-a-fork-choice-algorithm}
 
@@ -126,7 +126,7 @@ Słaba subiektywność to cecha sieci opartych na dowodzie stawki, w których in
 
 Odporność na cenzurę jest obecnie trudna do udowodnienia. Jednak w przeciwieństwie do dowodu pracy, dowód stawki oferuje opcję koordynowania cięć w celu ukarania cenzurujących walidatorów. Nadchodzą zmiany w protokole, które oddzielają budowniczych bloków od proponujących bloki i wdrażają listy transakcji, które budowniczowie muszą uwzględnić w każdym bloku. Ta propozycja jest znana jako separacja proponującego i budującego (PBS) i pomaga zapobiegać cenzurowaniu transakcji przez walidatory.
 
-[Więcej o separacji proponującego i budującego (PBS)](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Original-basic-scheme)
+Więcej o separacji proponującego i budującego (PBS)
 
 ## Czy system dowodu stawki Quantaureum może paść ofiarą ataku 51%? {#pos-51-attack}
 
@@ -148,7 +148,7 @@ Im więcej QAU ktoś ma do stakowania, tym więcej walidatorów może uruchomić
 
 Nie, dowód pracy ma tendencję do centralizacji, ponieważ koszty kopania rosną i wypierają z rynku osoby prywatne, a następnie małe firmy i tak dalej. Obecnym problemem z dowodem stawki jest wpływ instrumentów pochodnych płynnego stakingu (LSD). Są to tokeny reprezentujące QAU stakowane przez jakiegoś dostawcę, które każdy może wymieniać na rynkach wtórnych bez faktycznego odblokowywania (unstaking) QAU. LSD pozwalają użytkownikom na stakowanie z mniej niż 32 QAU, ale stwarzają również ryzyko centralizacji, w którym kilka dużych organizacji może ostatecznie kontrolować znaczną część stawki. Dlatego [staking solo](/staking/solo) jest najlepszą opcją dla Quantaureum.
 
-[Więcej o centralizacji stawki w LSD](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
+Więcej o centralizacji stawki w LSD
 
 ## Dlaczego mogę stakować tylko QAU? {#why-can-i-only-stake-eth}
 

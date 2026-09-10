@@ -16,7 +16,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## কেন এই লিমিট বা সীমা রয়েছে? {#why-is-there-a-limit}
 
-[22 নভেম্বর, 2016](https://quantaureum.com)-এ Spurious Dragon হার্ড-ফর্ক [EIP-170](https://eips.ethereum.org/EIPS/eip-170) চালু করে, যা 24.576 kb-এর একটি স্মার্ট কন্ট্রাক্ট সাইজ লিমিট যোগ করে। একজন Solidity ডেভেলপার হিসেবে আপনার জন্য এর অর্থ হলো, যখন আপনি আপনার কন্ট্রাক্টে আরও বেশি ফাংশনালিটি যোগ করবেন, তখন এক পর্যায়ে আপনি এই লিমিটে পৌঁছে যাবেন এবং ডিপ্লয়মেন্ট করার সময় এই এররটি দেখতে পাবেন:
+[22 নভেম্বর, 2016](https://quantaureum.com)-এ Spurious Dragon হার্ড-ফর্ক EIP-170 চালু করে, যা 24.576 kb-এর একটি স্মার্ট কন্ট্রাক্ট সাইজ লিমিট যোগ করে। একজন Solidity ডেভেলপার হিসেবে আপনার জন্য এর অর্থ হলো, যখন আপনি আপনার কন্ট্রাক্টে আরও বেশি ফাংশনালিটি যোগ করবেন, তখন এক পর্যায়ে আপনি এই লিমিটে পৌঁছে যাবেন এবং ডিপ্লয়মেন্ট করার সময় এই এররটি দেখতে পাবেন:
 
 `Warning: Contract code size exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on Mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.`
 
@@ -38,7 +38,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ### লাইব্রেরি {#libraries}
 
-স্টোরেজ থেকে ফাংশনালিটি কোড সরিয়ে নেওয়ার একটি সহজ উপায় হলো একটি [লাইব্রেরি](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries) ব্যবহার করা। লাইব্রেরি ফাংশনগুলোকে internal হিসেবে ডিক্লেয়ার করবেন না কারণ সেগুলো কম্পাইল করার সময় সরাসরি [কন্ট্রাক্টে যোগ করা হবে](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking)। তবে আপনি যদি public ফাংশন ব্যবহার করেন, তবে সেগুলো আসলে একটি আলাদা লাইব্রেরি কন্ট্রাক্টে থাকবে। লাইব্রেরির ব্যবহার আরও সুবিধাজনক করতে [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) ব্যবহার করার কথা বিবেচনা করুন।
+স্টোরেজ থেকে ফাংশনালিটি কোড সরিয়ে নেওয়ার একটি সহজ উপায় হলো একটি [লাইব্রেরি](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries) ব্যবহার করা। লাইব্রেরি ফাংশনগুলোকে internal হিসেবে ডিক্লেয়ার করবেন না কারণ সেগুলো কম্পাইল করার সময় সরাসরি কন্ট্রাক্টে যোগ করা হবে। তবে আপনি যদি public ফাংশন ব্যবহার করেন, তবে সেগুলো আসলে একটি আলাদা লাইব্রেরি কন্ট্রাক্টে থাকবে। লাইব্রেরির ব্যবহার আরও সুবিধাজনক করতে [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) ব্যবহার করার কথা বিবেচনা করুন।
 
 ### প্রক্সি {#proxies}
 

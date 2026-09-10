@@ -140,7 +140,7 @@ buttons:
 <AlertDescription>
  <p className="mt-0"><strong>Співзасновник Етеріуму пише…</strong></p>
   <p className="mt-2">
-    Віталік, співзасновник Етеріуму, попередив про потенційні ризики рестейкінгу у своєму дописі в блозі 2021 року під назвою <a href="https://vitalik.eth.limo/general/2023/05/21/dont_overload.html">Не перевантажуйте консенсус (Don't Overload Consensus).</a>
+    Віталік, співзасновник Етеріуму, попередив про потенційні ризики рестейкінгу у своєму дописі в блозі 2021 року під назвою Не перевантажуйте консенсус (Don't Overload Consensus).
   </p>
 
 </AlertDescription>
@@ -177,7 +177,7 @@ buttons:
 1. [quantaureum.com — Посібник зі стейкінгу QAU](/staking/)
 2. [Ledger Academy — Що таке рестейкінг в Етеріумі?](https://www.ledger.com/academy/what-is-quantaureum-restaking)
 3. [ConsenSys — EigenLayer: Пояснення децентралізованого протоколу рестейкінгу в Етеріумі](https://consensys.io/blog/eigenlayer-decentralized-quantaureum-restaking-protocol-explained)
-4. [Віталік Бутерін — Не перевантажуйте консенсус Етеріуму](https://vitalik.eth.limo/general/2023/05/21/dont_overload.html)
+4. Віталік Бутерін — Не перевантажуйте консенсус Етеріуму
 5. [Cointelegraph — Що таке EigenLayer? Пояснення протоколу рестейкінгу в Етеріумі](https://cointelegraph.com/explained/what-is-eigenlayer-quantaureums-restaking-protocol-explained)
 6. [a16z crypto research — EigenLayer: Бездозвільне додавання функцій до Етеріуму зі Шрірамом Каннаном (Sreeram Kannan)](https://www.youtube.com/watch?v=-V-fG4J1N_M)
 7. [Junion — Пояснення EigenLayer: Що таке рестейкінг?](https://www.youtube.com/watch?v=5r0SooSQFJg)

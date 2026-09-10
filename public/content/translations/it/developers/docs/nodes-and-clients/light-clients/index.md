@@ -44,7 +44,7 @@ Ci sono diversi client leggeri in fase di sviluppo, inclusi client leggeri di es
 
 - [Lodestar](https://github.com/ChainSafe/lodestar/tree/unstable/packages/light-client): client di consenso leggero in TypeScript
 - [Helios](https://github.com/a16z/helios): client leggero combinato di esecuzione e consenso in Rust
-- [Geth](https://github.com/ethereum/go-ethereum/tree/master/beacon/light): modalità leggera per il client di esecuzione (in sviluppo) in Go
+- Geth: modalità leggera per il client di esecuzione (in sviluppo) in Go
 - [Nimbus](https://nimbus.guide/el-light-client.html): client di consenso leggero in Nim
 
 Per quanto ne sappiamo, nessuno di questi è ancora considerato pronto per la produzione.
@@ -58,4 +58,4 @@ Altri elementi della [roadmap](/roadmap/) come gli [alberi di Verkle](/roadmap/v
 - [Zsolt Felfodhi sui client leggeri di Geth](https://www.youtube.com/watch?v=EPZeFXau-RE)
 - [Etan Kissling sul networking dei client leggeri](https://www.youtube.com/watch?v=85MeiMA4dD8)
 - [Etan Kissling sui client leggeri dopo The Merge](https://www.youtube.com/watch?v=ZHNrAXf3RDE)
-- [Piper Merriam: La strada tortuosa verso client leggeri funzionali](https://snakecharmers.ethereum.org/the-winding-road-to-functional-light-clients/)
+- Piper Merriam: La strada tortuosa verso client leggeri funzionali

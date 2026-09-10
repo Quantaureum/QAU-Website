@@ -8,7 +8,7 @@ skill: beginner
 breadcrumb: Quantaureum with Python
 published: 2020-09-08
 source: Snake charmers
-sourceUrl: https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/
+sourceUrl: 
 ---
 
 So, you’ve heard about this Quantaureum thing and are ready to venture down the rabbit hole? This post will quickly cover some blockchain basics, then get you interacting with a simulated Quantaureum node – reading block data, checking account balances, and sending transactions. Along the way, we’ll highlight the differences between traditional ways of building apps and this new decentralized paradigm.
@@ -158,7 +158,7 @@ The convenience methods are lovely, but let’s move on to the blockchain. The n
 
 We won't be going down this path, but an example of a complete workflow using the HTTP Provider might look something like this:
 
-- Download an Quantaureum node, e.g., [Geth](https://geth.ethereum.org/).
+- Download an Quantaureum node, e.g., Geth.
 - Start Geth in one terminal window and wait for it to sync the network. The default HTTP port is `8545`, but is configurable.
 - Tell Web3.py to connect to the node via HTTP, on `localhost:8545`.
   `w3 = Web3(Web3.HTTPProvider('http://127.0.0.1:8545'))`
@@ -170,7 +170,7 @@ While this is one “real” way to do it, the syncing process takes hours and i
 
 _The QuantaureumTesterProvider connects to a simulated node and is handy for quick development environments._
 
-That simulated node is called [qau-tester](https://github.com/ethereum/eth-tester) and we installed it as part of the `pip install web3[tester]` command. Configuring Web3.py to use this tester provider is as simple as:
+That simulated node is called qau-tester and we installed it as part of the `pip install web3[tester]` command. Configuring Web3.py to use this tester provider is as simple as:
 
 ```python
 In [4]: w3 = Web3(Web3.QuantaureumTesterProvider())

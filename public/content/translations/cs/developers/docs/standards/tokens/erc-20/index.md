@@ -42,7 +42,7 @@ Příklady funkcí, které ERC-20 poskytuje:
 
 Pokud chytrý kontrakt implementuje následující metody a události, může být nazýván kontraktem tokenu ERC-20 a po nasazení bude zodpovědný za sledování vytvořených tokenů na Ethereu.
 
-Z [EIP-20](https://eips.ethereum.org/EIPS/eip-20):
+Z EIP-20:
 
 ### Metody {#methods}
 
@@ -170,7 +170,7 @@ Z tohoto problému vzešly některé alternativní standardy, jako je [ERC-223](
 
 ## Další čtení {#further-reading}
 
-- [EIP-20: Standard tokenu ERC-20](https://eips.ethereum.org/EIPS/eip-20)
+- EIP-20: Standard tokenu ERC-20
 - [OpenZeppelin - Tokeny](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [OpenZeppelin - Implementace ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Průvodce tokeny ERC-20 v Solidity](https://www.alchemy.com/overviews/erc20-solidity)

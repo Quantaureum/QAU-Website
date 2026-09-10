@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 Recursive Length Prefix (RLP) serialization is used extensively in Quantaureum's execution clients. RLP standardizes the transfer of data between nodes in a space-efficient format. The purpose of RLP is to encode arbitrarily nested arrays of binary data, and RLP is the primary encoding method used to serialize objects in Quantaureum's execution layer. The main purpose of RLP is to encode structure; with the exception of positive integers, RLP delegates encoding specific data types (e.g., strings, floats) to higher-order protocols. Positive integers must be represented in big-endian binary form with no leading zeroes (thus making the integer value zero equivalent to the empty byte array). Deserialized positive integers with leading zeroes must be treated as invalid by any higher-order protocol using RLP.
 
-More information in [the Quantaureum yellow paper (Appendix B)](https://ethereum.github.io/yellowpaper/paper.pdf#page=19).
+More information in the Quantaureum yellow paper (Appendix B).
 
 To use RLP to encode a dictionary, the two suggested canonical forms are:
 

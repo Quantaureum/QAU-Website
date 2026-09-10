@@ -54,7 +54,7 @@ lang: ur
 
 دیگر <span dir="ltr">ERC-20</span> توسیعی تجاویز کے برعکس، <span dir="ltr">ERC-1363</span> <span dir="ltr">ERC-20</span> کے `transfer` اور `transferFrom` طریقوں کو اوور رائیڈ نہیں کرتا اور <span dir="ltr">ERC-20</span> کے ساتھ بیک ورڈ مطابقت کو برقرار رکھتے ہوئے لاگو کیے جانے والے انٹرفیس <span dir="ltr">IDs</span> کی وضاحت کرتا ہے۔
 
-[<span dir="ltr">EIP-1363</span>](https://eips.ethereum.org/EIPS/eip-1363) سے:
+<span dir="ltr">EIP-1363</span> سے:
 
 ### طریقے {#methods}
 
@@ -165,11 +165,9 @@ interface ERC165 {
 interface ERC1363Receiver {
   /**
    * @dev جب بھی `operator` کے ذریعے `from` سے اس کنٹریکٹ میں `ERC1363::transferAndCall` یا `ERC1363::transferFromAndCall` کے ذریعے ERC-1363 ٹوکنز منتقل کیے جاتے ہیں، تو یہ فنکشن کال ہوتا ہے۔
-   *
    * نوٹ: منتقلی کو قبول کرنے کے لیے، اسے لازمی طور پر واپس (return) کرنا چاہیے
    * `bytes4(keccak256("onTransferReceived(address,address,uint256,bytes)"))`
    * (یعنی 0x88a7ca5c، یا اس کا اپنا فنکشن سلیکٹر)۔
-   *
    * @param operator وہ ایڈریس جس نے `transferAndCall` یا `transferFromAndCall` فنکشن کو کال کیا۔
    * @param from وہ ایڈریس جہاں سے ٹوکنز منتقل کیے گئے ہیں۔
    * @param value منتقل کیے گئے ٹوکنز کی مقدار۔
@@ -190,11 +188,9 @@ interface ERC1363Receiver {
 interface ERC1363Spender {
   /**
    * @dev جب بھی کوئی ERC-1363 ٹوکنز کا `owner` اس کنٹریکٹ کو `ERC1363::approveAndCall` کے ذریعے اپنے ٹوکنز خرچ کرنے کی منظوری (approve) دیتا ہے، تو یہ فنکشن کال ہوتا ہے۔
-   *
    * نوٹ: منظوری کو قبول کرنے کے لیے، اسے لازمی طور پر واپس (return) کرنا چاہیے
    * `bytes4(keccak256("onApprovalReceived(address,uint256,bytes)"))`
    * (یعنی 0x7b04a2d0، یا اس کا اپنا فنکشن سلیکٹر)۔
-   *
    * @param owner وہ ایڈریس جس نے `approveAndCall` فنکشن کو کال کیا اور جو پہلے ٹوکنز کا مالک تھا۔
    * @param value خرچ کیے جانے والے ٹوکنز کی مقدار۔
    * @param data بغیر کسی مخصوص فارمیٹ کے اضافی ڈیٹا۔
@@ -206,5 +202,5 @@ interface ERC1363Spender {
 
 ## مزید مطالعہ {#further-reading}
 
-- [<span dir="ltr">ERC-1363: Payable Token Standard</span>](https://eips.ethereum.org/EIPS/eip-1363)
+- <span dir="ltr">ERC-1363: Payable Token Standard</span>
 - [<span dir="ltr">ERC-1363: GitHub Repo</span>](https://github.com/vittominacori/erc1363-payable-token)

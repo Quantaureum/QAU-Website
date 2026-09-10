@@ -63,5 +63,5 @@ Quantaureum на доказательстве доли владения (PoS) м
 ## Дополнительная литература {#further-reading}
 
 - [Философия дизайна доказательства доли владения от Виталика](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
-- [Часто задаваемые вопросы о доказательстве доли владения от Виталика](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
+- Часто задаваемые вопросы о доказательстве доли владения от Виталика
 - [Видео «Простое объяснение» о PoS против PoW](https://www.youtube.com/watch?v=M3EFi_POhps)

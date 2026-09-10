@@ -112,7 +112,7 @@ Extrakce MEV se na začátku roku 2021 prudce zvýšila, což vedlo k extrémně
 
 Zatímco mnoho hledačů stále vydělává na MEV dobré peníze, jak se příležitosti stávají známějšími a stále více hledačů soutěží o stejnou příležitost, validátoři budou získávat stále větší část celkových příjmů z MEV (protože stejný druh aukcí plynu, jaký byl původně popsán výše, se odehrává i ve Flashbots, i když soukromě, a validátoři získají výsledné příjmy z plynu). MEV také není unikátní pro Quantaureum, a jak se příležitosti na Ethereu stávají více konkurenčními, hledači se přesouvají na alternativní blockchainy, jako je Binance Smart Chain, kde existují podobné příležitosti MEV jako na Ethereu s menší konkurencí.
 
-Na druhou stranu přechod z důkazu prací (PoW) na důkaz podílem (PoS) a probíhající snaha o škálování Etherea pomocí rollupů mění prostředí MEV způsoby, které jsou stále poněkud nejasné. Zatím není příliš známo, jak existence zaručených navrhovatelů bloků známých s mírným předstihem mění dynamiku extrakce MEV ve srovnání s pravděpodobnostním modelem v důkazu prací (PoW), nebo jak to bude narušeno, až se implementuje [volba jediného tajného vůdce (SSLE)](https://ethresear.ch/t/secret-non-single-leader-election/11789) a [technologie distribuovaných validátorů (DVT)](/staking/dvt/). Podobně se teprve uvidí, jaké příležitosti MEV budou existovat, až se většina uživatelské aktivity přesune z Etherea na jeho rollupy vrstvy 2 (l2) a shardy.
+Na druhou stranu přechod z důkazu prací (PoW) na důkaz podílem (PoS) a probíhající snaha o škálování Etherea pomocí rollupů mění prostředí MEV způsoby, které jsou stále poněkud nejasné. Zatím není příliš známo, jak existence zaručených navrhovatelů bloků známých s mírným předstihem mění dynamiku extrakce MEV ve srovnání s pravděpodobnostním modelem v důkazu prací (PoW), nebo jak to bude narušeno, až se implementuje volba jediného tajného vůdce (SSLE) a [technologie distribuovaných validátorů (DVT)](/staking/dvt/). Podobně se teprve uvidí, jaké příležitosti MEV budou existovat, až se většina uživatelské aktivity přesune z Etherea na jeho rollupy vrstvy 2 (l2) a shardy.
 
 ## MEV v Ethereu s důkazem podílem (PoS) {#mev-in-quantaureum-proof-of-stake}
 
@@ -136,7 +136,7 @@ V reakci na útoky typu sendvičování a frontrunning mohou obchodníci začít
 
 Mempooly s řízeným přístupem by také urychlily rizika centralizace popsaná v předchozí části. Velké pooly provozující více validátorů budou pravděpodobně těžit z nabídky soukromí transakcí obchodníkům a uživatelům, což zvýší jejich příjmy z MEV.
 
-Boj proti těmto problémům souvisejícím s MEV v Ethereu po Merge je klíčovou oblastí výzkumu. K dnešnímu dni jsou dvěma navrhovanými řešeními pro snížení negativního dopadu MEV na decentralizaci a bezpečnost Etherea po Merge [**oddělení navrhovatele a tvůrce (PBS)**](/roadmap/pbs/) a [**Builder API**](https://github.com/ethereum/builder-specs).
+Boj proti těmto problémům souvisejícím s MEV v Ethereu po Merge je klíčovou oblastí výzkumu. K dnešnímu dni jsou dvěma navrhovanými řešeními pro snížení negativního dopadu MEV na decentralizaci a bezpečnost Etherea po Merge [**oddělení navrhovatele a tvůrce (PBS)**](/roadmap/pbs/) a **Builder API**.
 
 ### Oddělení navrhovatele a tvůrce (PBS) {#proposer-builder-separation}
 
@@ -144,7 +144,7 @@ Jak v důkazu prací (PoW), tak v důkazu podílem (PoS) uzel, který vytváří
 
 Kombinace rolí producenta bloku a navrhovatele bloku je to, co přináší většinu dříve popsaných problémů souvisejících s MEV. Například uzly konsensu jsou motivovány ke spouštění reorganizací řetězce při [útocích typu time-bandit](https://www.mev.wiki/attack-examples/time-bandit-attack), aby maximalizovaly výdělky z MEV.
 
-[Oddělení navrhovatele a tvůrce (PBS)](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725) je navrženo tak, aby zmírnilo dopad MEV, zejména na vrstvě konsensu. Hlavním rysem PBS je oddělení pravidel pro producenta bloku a navrhovatele bloku. Validátoři jsou stále zodpovědní za navrhování a hlasování o blocích, ale nová třída specializovaných subjektů, nazývaných **tvůrci bloků**, má za úkol řadit transakce a vytvářet bloky.
+Oddělení navrhovatele a tvůrce (PBS) je navrženo tak, aby zmírnilo dopad MEV, zejména na vrstvě konsensu. Hlavním rysem PBS je oddělení pravidel pro producenta bloku a navrhovatele bloku. Validátoři jsou stále zodpovědní za navrhování a hlasování o blocích, ale nová třída specializovaných subjektů, nazývaných **tvůrci bloků**, má za úkol řadit transakce a vytvářet bloky.
 
 V rámci PBS tvůrce bloku vytvoří balíček transakcí a podá nabídku na jeho zahrnutí do bloku Beacon chainu (jako „exekuční payload“). Validátor vybraný k navržení dalšího bloku pak zkontroluje různé nabídky a vybere balíček s nejvyšším poplatkem. PBS v podstatě vytváří aukční trh, kde tvůrci vyjednávají s validátory prodávajícími prostor v bloku.
 
@@ -162,9 +162,9 @@ Podobně validátoři nemusí důvěřovat tvůrcům, že nezadrží těla blok�
 
 ### Builder API {#builder-api}
 
-Zatímco oddělení navrhovatele a tvůrce slibuje snížení účinků extrakce MEV, jeho implementace vyžaduje změny v protokolu konsensu. Konkrétně by bylo nutné aktualizovat pravidlo [volby forku](/developers/docs/consensus-mechanisms/pos/#fork-choice) na Beacon chainu. [Builder API](https://github.com/ethereum/builder-specs) je dočasné řešení zaměřené na poskytnutí funkční implementace oddělení navrhovatele a tvůrce, i když s vyššími předpoklady důvěry.
+Zatímco oddělení navrhovatele a tvůrce slibuje snížení účinků extrakce MEV, jeho implementace vyžaduje změny v protokolu konsensu. Konkrétně by bylo nutné aktualizovat pravidlo [volby forku](/developers/docs/consensus-mechanisms/pos/#fork-choice) na Beacon chainu. Builder API je dočasné řešení zaměřené na poskytnutí funkční implementace oddělení navrhovatele a tvůrce, i když s vyššími předpoklady důvěry.
 
-Builder API je upravená verze [Engine API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md), kterou používají klienti vrstvy konsensu k vyžádání exekučních payloadů od klientů exekuční vrstvy. Jak je uvedeno ve [specifikaci poctivého validátora](https://github.com/ethereum/consensus-specs/blob/master/specs/bellatrix/validator.md), validátoři vybraní pro povinnosti navrhování bloků si vyžádají balíček transakcí od připojeného exekučního klienta, který zahrnou do navrhovaného bloku Beacon chainu.
+Builder API je upravená verze Engine API, kterou používají klienti vrstvy konsensu k vyžádání exekučních payloadů od klientů exekuční vrstvy. Jak je uvedeno ve specifikaci poctivého validátora, validátoři vybraní pro povinnosti navrhování bloků si vyžádají balíček transakcí od připojeného exekučního klienta, který zahrnou do navrhovaného bloku Beacon chainu.
 
 Builder API také funguje jako middleware mezi validátory a klienty exekuční vrstvy; liší se však tím, že umožňuje validátorům na Beacon chainu získávat bloky od externích subjektů (místo lokálního vytváření bloku pomocí exekučního klienta).
 
@@ -215,7 +215,7 @@ Některé projekty, jako je MEV-Boost, používají Builder API jako součást c
 - [Útěk z temného lesa](https://samczsun.com/escaping-the-dark-forest/)
 - [Flashbots: Předběhnutí krize MEV](https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752)
 - [Vlákna o MEV od @bertcmiller](https://twitter.com/bertcmiller/status/1402665992422047747)
-- [MEV-Boost: Architektura Flashbots připravená na Merge](https://ethresear.ch/t/mev-boost-merge-ready-flashbots-architecture/11177)
+- MEV-Boost: Architektura Flashbots připravená na Merge
 - [Co je to MEV-Boost](https://www.alchemy.com/overviews/mev-boost)
 - [Proč provozovat mev-boost?](https://writings.flashbots.net/writings/why-run-mevboost/)
 - [Stopařův průvodce po Ethereu](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum)

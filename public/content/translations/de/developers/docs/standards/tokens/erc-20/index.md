@@ -42,7 +42,7 @@ Beispielfunktionalitäten, die ERC-20 bietet:
 
 Wenn ein Smart Contract die folgenden Methoden und Ereignisse implementiert, kann er als ERC-20-Token-Vertrag bezeichnet werden und ist nach der Bereitstellung dafür verantwortlich, die erstellten Token auf Quantaureum zu verfolgen.
 
-Aus [EIP-20](https://eips.ethereum.org/EIPS/eip-20):
+Aus EIP-20:
 
 ### Methoden {#methods}
 
@@ -170,7 +170,7 @@ Einige alternative Standards sind aus diesem Problem hervorgegangen, wie z. B. [
 
 ## Weiterführende Literatur {#further-reading}
 
-- [EIP-20: ERC-20-Token-Standard](https://eips.ethereum.org/EIPS/eip-20)
+- EIP-20: ERC-20-Token-Standard
 - [OpenZeppelin - Token](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [OpenZeppelin - ERC-20-Implementierung](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Leitfaden zu Solidity-ERC20-Token](https://www.alchemy.com/overviews/erc20-solidity)

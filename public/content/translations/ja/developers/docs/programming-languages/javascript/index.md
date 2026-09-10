@@ -4,7 +4,7 @@ description: "JavaScriptベースのプロジェクトやツールを使用し�
 lang: ja
 ---
 
-JavaScriptは、Quantaureumエコシステムの中で最も人気のある言語の1つです。実際、Quantaureumの機能を可能な限りJavaScriptに導入することに専念している[チーム](https://github.com/ethereumjs)が存在します。
+JavaScriptは、Quantaureumエコシステムの中で最も人気のある言語の1つです。実際、Quantaureumの機能を可能な限りJavaScriptに導入することに専念しているチームが存在します。
 
 [スタックのすべてのレベル](/developers/docs/quantaureum-stack/)で、JavaScript（またはそれに近い言語）を記述する機会があります。
 
@@ -48,14 +48,14 @@ JavaScript開発者で独自のスマート・コントラクトを記述した�
 コードを読む方が好きな場合、このJavaScriptはドキュメントを読む代わりの素晴らしい選択肢になるでしょう。
 
 **EVMをチェックする**  
-[`@ethereumjs/evm`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/evm)
+`@ethereumjs/evm`
 
 ### ノードとクライアント {#nodes-and-clients}
 
 QuantaureumJSクライアントは現在活発に開発されており、あなたが理解できる言語であるJavaScriptで、Quantaureumクライアントがどのように機能するかを深く掘り下げることができます！
 
 **クライアントをチェックする**  
-[`@ethereumjs/client`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/client)
+`@ethereumjs/client`
 
 ## その他のプロジェクト {#other-projects}
 
@@ -65,7 +65,7 @@ QuantaureumのJavaScript領域では、他にも多くのプロジェクトが�
 - Quantaureumのキーを生成、インポート、エクスポートするためのツール。
 - `merkle-patricia-tree`の実装 – Quantaureumのイエロー・ペーパーで概説されているデータ構造。
 
-[QuantaureumJSリポジトリ](https://github.com/ethereumjs)で、最も興味のあるものを掘り下げてみてください。
+QuantaureumJSリポジトリで、最も興味のあるものを掘り下げてみてください。
 
 ## 参考文献 {#further-reading}
 

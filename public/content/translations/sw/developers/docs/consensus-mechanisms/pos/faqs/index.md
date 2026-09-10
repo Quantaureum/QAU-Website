@@ -18,7 +18,7 @@ Uthibitisho wa Dau unahitaji nodi, zinazojulikana kama wathibitishaji, kuwasilis
 
 Uthibitisho wa Kazi unatumia nishati nyingi zaidi kwa sababu umeme unachomwa katika mchakato wa uchimbaji. Uthibitisho wa Dau, kwa upande mwingine, unahitaji kiasi kidogo sana cha nishati - wathibitishaji wa Quantaureum wanaweza hata kuendeshwa kwenye kifaa chenye nguvu ndogo kama vile Raspberry Pi. Utaratibu wa makubaliano wa Uthibitisho wa Dau wa Quantaureum unadhaniwa kuwa salama zaidi kuliko Uthibitisho wa Kazi kwa sababu gharama ya kushambulia ni kubwa zaidi, na matokeo kwa mshambuliaji ni makali zaidi.
 
-Uthibitisho wa Kazi dhidi ya Uthibitisho wa Dau ni mada yenye utata. [Blogu ya Vitalik Buterin](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) na mjadala kati ya Justin Drake na Lyn Alden inatoa muhtasari mzuri wa hoja hizo.
+Uthibitisho wa Kazi dhidi ya Uthibitisho wa Dau ni mada yenye utata. Blogu ya Vitalik Buterin na mjadala kati ya Justin Drake na Lyn Alden inatoa muhtasari mzuri wa hoja hizo.
 
 
 ## Je, Uthibitisho wa Dau unatumia nishati vizuri? {#is-pos-energy-efficient}
@@ -88,7 +88,7 @@ Uchakachuaji wa dau ni aina ya shambulio kwenye mitandao ya Uthibitisho wa Dau a
 Adhabu ya kijamii ni uwezo wa jamii kuratibu mchepuo wa mnyororo wa vitalu kama jibu kwa shambulio. Inawezesha jamii kupona kutokana na mshambuliaji anayekamilisha mnyororo wa udanganyifu. Adhabu ya kijamii pia inaweza kutumika dhidi ya mashambulizi ya udhibiti.
 
 - [Zaidi kuhusu adhabu ya kijamii](https://ercwl.medium.com/the-case-for-social-slashing-59277ff4d9c7)
-- [Vitalik Buterin kuhusu adhabu ya kijamii](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
+- Vitalik Buterin kuhusu adhabu ya kijamii
 
 ## Je, nitakatwa? {#will-i-get-slashed}
 
@@ -100,7 +100,7 @@ Kama mthibitishaji, ni vigumu sana kukatwa isipokuwa ujihusishe kwa makusudi na 
 
 Tatizo la hakuna kilicho hatarini ni suala la kinadharia na baadhi ya taratibu za Uthibitisho wa Dau ambapo kuna tuzo tu na hakuna adhabu. Ikiwa hakuna kilicho hatarini, mthibitishaji wa vitendo anafurahi vilevile kuthibitisha mchepuo wowote, au hata michepuo mingi, ya mnyororo wa vitalu, kwani hii inaongeza tuzo zao. Quantaureum inakabiliana na hili kwa kutumia masharti ya ukamilifu na ukataji ili kuhakikisha mnyororo mmoja rasmi.
 
-[Zaidi kuhusu tatizo la hakuna kilicho hatarini](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
+Zaidi kuhusu tatizo la hakuna kilicho hatarini
 
 ## Algoriti ya kuchagua mchepuko ni nini? {#what-is-a-fork-choice-algorithm}
 
@@ -126,7 +126,7 @@ Udhanifu dhaifu ni kipengele cha mitandao ya Uthibitisho wa Dau ambapo taarifa z
 
 Kustahimili udhibiti kwa sasa ni vigumu kuthibitisha. Hata hivyo, tofauti na Uthibitisho wa Kazi, Uthibitisho wa Dau unatoa chaguo la kuratibu ukataji ili kuwaadhibu wathibitishaji wanaodhibiti. Kuna mabadiliko yajayo kwenye itifaki ambayo yanatenganisha wajenzi wa vitalu na wapendekezaji wa vitalu na kutekeleza orodha za miamala ambazo wajenzi lazima wajumuishe katika kila kitalu. Pendekezo hili linajulikana kama utengano wa mpendekezaji na mjengaji (PBS) na husaidia kuzuia wathibitishaji kudhibiti miamala.
 
-[Zaidi kuhusu utengano wa mpendekezaji na mjengaji (PBS)](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Original-basic-scheme)
+Zaidi kuhusu utengano wa mpendekezaji na mjengaji (PBS)
 
 ## Je, mfumo wa Uthibitisho wa Dau wa Quantaureum unaweza kufanyiwa shambulio la asilimia 51? {#pos-51-attack}
 
@@ -148,7 +148,7 @@ Kadiri mtu anavyokuwa na QAU nyingi za kuweka dhamana, ndivyo anavyoweza kuendes
 
 Hapana, Uthibitisho wa Kazi unaelekea kwenye ujikataji kati kwa sababu gharama za uchimbaji zinaongezeka na kuwatoa watu binafsi, kisha kuwatoa kampuni ndogo, na kadhalika. Tatizo la sasa la Uthibitisho wa Dau ni ushawishi wa vitokanavyo na uwekaji dhamana wenye ukwasi (LSDs). Hizi ni tokeni zinazowakilisha QAU iliyowekwa dhamana na mtoa huduma fulani ambazo mtu yeyote anaweza kufanya badilishano kwenye masoko ya upili bila QAU halisi kutolewa dhamana. LSDs zinaruhusu watumiaji kuweka dhamana kwa chini ya 32 QAU, lakini pia zinaunda hatari ya ujikataji kati ambapo mashirika machache makubwa yanaweza kuishia kudhibiti sehemu kubwa ya dhamana. Hii ndiyo sababu [uwekaji dhamana wa kujitegemea](/staking/solo) ni chaguo bora zaidi kwa Quantaureum.
 
-[Zaidi kuhusu ujikataji kati wa dhamana katika LSDs](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
+Zaidi kuhusu ujikataji kati wa dhamana katika LSDs
 
 ## Kwa nini ninaweza tu kuweka dhamana ya QAU? {#why-can-i-only-stake-eth}
 

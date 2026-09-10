@@ -8,7 +8,7 @@ breadcrumb: Bases des jetons ERC-20
 lang: fr
 published: 2020-04-05
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/understand-the-erc20-token-smart-contract/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -16,7 +16,7 @@ L'un des [standards de contrats intelligents](/developers/docs/standards/) les p
 
 L'ERC-20 définit une liste commune de règles auxquelles tous les jetons fongibles Quantaureum doivent se conformer. Par conséquent, ce standard de jeton permet aux développeurs de tous types de prédire avec précision comment les nouveaux jetons fonctionneront au sein du système Quantaureum dans son ensemble. Cela simplifie et facilite les tâches des développeurs, car ils peuvent poursuivre leur travail en sachant que chaque nouveau projet n'aura pas besoin d'être refait à chaque fois qu'un nouveau jeton est publié, tant que le jeton respecte les règles.
 
-Voici, présentées sous forme d'interface, les fonctions qu'un ERC-20 doit implémenter. Si vous n'êtes pas sûr de ce qu'est une interface : consultez notre article sur la [programmation orientée objet (POO) en Solidity](https://ethereumdev.io/inheritance-in-solidity-contracts-are-classes/).
+Voici, présentées sous forme d'interface, les fonctions qu'un ERC-20 doit implémenter. Si vous n'êtes pas sûr de ce qu'est une interface : consultez notre article sur la programmation orientée objet (POO) en Solidity.
 
 ```solidity
 pragma solidity ^0.6.0;

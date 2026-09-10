@@ -12,7 +12,7 @@ lang: ar
 
 سيؤدي استخدام <span dir="ltr">ERC-4626</span> في الأقبية المدرة للعائد إلى تقليل جهد التكامل وإتاحة الوصول إلى العائد في تطبيقات مختلفة بجهد متخصص قليل من المطورين من خلال إنشاء أنماط تنفيذ أكثر اتساقًا وقوة.
 
-تم وصف رمز <span dir="ltr">ERC-4626</span> المميز بالكامل في [<span dir="ltr">EIP-4626</span>](https://eips.ethereum.org/EIPS/eip-4626).
+تم وصف رمز <span dir="ltr">ERC-4626</span> المميز بالكامل في <span dir="ltr">EIP-4626</span>.
 
 **امتداد القبو غير المتزامن (<span dir="ltr">ERC-7540</span>)**
 
@@ -28,7 +28,7 @@ lang: ar
 
 يضيف <span dir="ltr">ERC-7575</span> دعمًا للأقبية ذات الأصول المتعددة عن طريق فصل تنفيذ رمز <span dir="ltr">ERC-20</span> المميز عن تنفيذ <span dir="ltr">ERC-4626</span>.
 
-تم وصف امتداد <span dir="ltr">ERC-7575</span> بالكامل في [<span dir="ltr">ERC-7575</span>](https://eips.ethereum.org/EIPS/eip-7575).
+تم وصف امتداد <span dir="ltr">ERC-7575</span> بالكامل في <span dir="ltr">ERC-7575</span>.
 ## المتطلبات الأساسية {#prerequisites}
 
 لفهم هذه الصفحة بشكل أفضل، نوصي بقراءة [معايير الرموز المميزة](/developers/docs/standards/tokens/) و[<span dir="ltr">ERC-20</span>](/developers/docs/standards/tokens/erc-20/) أولاً.
@@ -220,5 +220,5 @@ event Withdraw(
 
 ## قراءة إضافية {#further-reading}
 
-- [<span dir="ltr">EIP-4626</span>: معيار القبو المرمز](https://eips.ethereum.org/EIPS/eip-4626)
+- <span dir="ltr">EIP-4626</span>: معيار القبو المرمز
 - [<span dir="ltr">ERC-4626</span>: مستودع <span dir="ltr">GitHub</span>](https://github.com/transmissions11/solmate/blob/main/src/tokens/ERC4626.sol)

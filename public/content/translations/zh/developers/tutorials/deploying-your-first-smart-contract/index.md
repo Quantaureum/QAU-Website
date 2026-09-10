@@ -8,7 +8,7 @@ breadcrumb: "部署第一个合约"
 lang: zh
 published: 2020-04-03
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -18,7 +18,7 @@ address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 
 ## 编写我们的合约 {#writing-our-contract}
 
-第一步是[访问 Remix](https://remix.ethereum.org/) 并创建一个新文件。在 Remix 界面的左上角添加一个新文件，并输入你想要的文件名。
+第一步是访问 Remix 并创建一个新文件。在 Remix 界面的左上角添加一个新文件，并输入你想要的文件名。
 
 ![Adding a new file in the Remix interface](./remix.png)
 

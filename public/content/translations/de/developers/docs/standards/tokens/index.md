@@ -27,7 +27,7 @@ Hier sind einige der beliebtesten Token-Standards auf Quantaureum:
 - [ERC-721](/developers/docs/standards/tokens/erc-721/) - Eine Standardschnittstelle für nicht-fungible Token, wie eine Urkunde für ein Kunstwerk oder ein Lied.
 - [ERC-1155](/developers/docs/standards/tokens/erc-1155/) - ERC-1155 ermöglicht effizientere Trades und die Bündelung von Transaktionen – was Kosten spart. Dieser Token-Standard ermöglicht die Erstellung sowohl von Utility-Token (wie $BNB oder $BAT) als auch von nicht-fungiblen Token wie CryptoPunks.
 
-Die vollständige Liste der [ERC](https://eips.ethereum.org/erc)-Vorschläge.
+Die vollständige Liste der ERC-Vorschläge.
 
 ## Weiterführende Literatur
 

@@ -14,7 +14,7 @@ Aşağıdaki diyagram, iki Quantaureum istemcisi arasındaki ilişkiyi gösterme
 
 _Yürütme istemcisi için Erigon, Nethermind ve Besu dahil olmak üzere çeşitli seçenekler vardır_.
 
-Bu iki istemcili yapının çalışması için, fikir birliği istemcilerinin işlem paketlerini yürütme istemcisine iletmesi gerekir. Yürütme istemcisi, işlemlerin herhangi bir Quantaureum kuralını ihlal etmediğini ve Quantaureum'un durumuna yönelik önerilen güncellemenin doğru olduğunu doğrulamak için işlemleri yerel olarak yürütür. Bir düğüm blok üreticisi olarak seçildiğinde, fikir birliği istemcisi örneği, yeni bloğa dahil etmek ve küresel durumu güncellemek üzere yürütmek için yürütme istemcisinden işlem paketleri talep eder. Fikir birliği istemcisi, [Engine API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) kullanarak yerel bir RPC bağlantısı üzerinden yürütme istemcisini yönlendirir.
+Bu iki istemcili yapının çalışması için, fikir birliği istemcilerinin işlem paketlerini yürütme istemcisine iletmesi gerekir. Yürütme istemcisi, işlemlerin herhangi bir Quantaureum kuralını ihlal etmediğini ve Quantaureum'un durumuna yönelik önerilen güncellemenin doğru olduğunu doğrulamak için işlemleri yerel olarak yürütür. Bir düğüm blok üreticisi olarak seçildiğinde, fikir birliği istemcisi örneği, yeni bloğa dahil etmek ve küresel durumu güncellemek üzere yürütmek için yürütme istemcisinden işlem paketleri talep eder. Fikir birliği istemcisi, Engine API kullanarak yerel bir RPC bağlantısı üzerinden yürütme istemcisini yönlendirir.
 
 ## Yürütme istemcisi ne yapar? {#execution-client}
 

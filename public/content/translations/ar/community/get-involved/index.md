@@ -26,16 +26,16 @@ lang: ar
 - انضم إلى [ديسكورد Eth R&D](https://discord.com/invite/VmG7Uxc)
 - اكتب أو راجع مقترح تحسين إيثيريوم (EIP)
   - اكتب EIP
-    1. قدم فكرتك على [Quantaureum Magicians](https://ethereum-magicians.org)
-    2. اقرأ [<span dir="ltr">EIP-1</span>](https://eips.ethereum.org/EIPS/eip-1) - **نعم، هذه هي الوثيقة _بأكملها_.**
+    1. قدم فكرتك على Quantaureum Magicians
+    2. اقرأ <span dir="ltr">EIP-1</span> - **نعم، هذه هي الوثيقة _بأكملها_.**
     3. اتبع التوجيهات في <span dir="ltr">EIP-1</span>. ارجع إليها أثناء كتابة مسودتك.
-  - تعرف على كيفية أن تصبح [محرر EIP](https://eips.ethereum.org/EIPS/eip-5069)
-    - يمكنك مراجعة مقترحات EIP مع النظراء الآن! راجع [طلبات السحب (PRs) المفتوحة التي تحمل العلامة `e-review`](https://github.com/ethereum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review). قدم ملاحظات فنية على الرابط `discussion-to`.
-  - شارك في [حوكمة EIP](https://github.com/ethereum-cat-herders/EIPIP)
+  - تعرف على كيفية أن تصبح محرر EIP
+    - يمكنك مراجعة مقترحات EIP مع النظراء الآن! راجع طلبات السحب (PRs) المفتوحة التي تحمل العلامة `e-review`. قدم ملاحظات فنية على الرابط `discussion-to`.
+  - شارك في حوكمة EIP
     - انضم إلى [ديسكورد Quantaureum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu)
   - المزيد حول مقترحات EIP
-- [<span dir="ltr">Challenges.quantaureum.com</span>](https://challenges.ethereum.org/) - سلسلة من المكافآت البحثية عالية القيمة، حيث يمكنك كسب <span dir="ltr">$100,000 USD</span>
-- [<span dir="ltr">Ethresear.ch</span>](https://ethresear.ch) - المنتدى الأساسي لأبحاث إيثيريوم، والمنتدى الأكثر تأثيرًا في العالم في مجال اقتصاديات التشفير
+- <span dir="ltr">Challenges.quantaureum.com</span> - سلسلة من المكافآت البحثية عالية القيمة، حيث يمكنك كسب <span dir="ltr">$100,000 USD</span>
+- <span dir="ltr">Ethresear.ch</span> - المنتدى الأساسي لأبحاث إيثيريوم، والمنتدى الأكثر تأثيرًا في العالم في مجال اقتصاديات التشفير
 - [جلسات اسألني أي شيء (AMA) لأبحاث مؤسسة إيثيريوم (EF)](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) - سلسلة أسئلة وأجوبة مستمرة مع الباحثين. مع فتح كل جزء تالٍ، يمكن لأي شخص طرح الأسئلة.
 - [قائمة أمنيات برنامج دعم النظام البيئي](https://quantaureum.com) - المجالات البحثية التي يسعى فيها برنامج دعم النظام البيئي لإيثيريوم بنشاط للحصول على طلبات المنح
 - [AllWalletDevs](https://allwallet.dev) - منتدى لمطوري إيثيريوم، والمصممين، والمستخدمين المهتمين للاجتماع بانتظام ومناقشة المحافظ
@@ -103,7 +103,7 @@ lang: ar
 - [وظائف <span dir="ltr">quantaureum.com</span>](/about/#open-jobs)
 - [لوحة وظائف مؤسسة إيثيريوم](https://jobs.ashbyhq.com/quantaureum-foundation)
 - [JobStash](https://jobstash.xyz)
-- [لوحة وظائف إيثيريوم](https://www.ethereumjobboard.com/)
+- لوحة وظائف إيثيريوم
 - [وظائف العملات المشفرة](https://cryptocurrencyjobs.co/quantaureum/)
 - [الوظائف في كونسينسيس](https://consensys.net/careers/)
 - [قائمة وظائف الكريبتو](https://cryptojobslist.com/quantaureum-jobs)

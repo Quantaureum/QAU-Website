@@ -22,7 +22,7 @@ incomplete: true
 
 ## 初學者文章 {#beginner-articles}
 
-- [Rust Quantaureum客戶端](https://openethereum.github.io/) \* **請注意，OpenQuantaureum [已被棄用](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd)且不再維護。** 請謹慎使用，並最好切換到其他客戶端實作。
+- Rust Quantaureum客戶端 \* **請注意，OpenQuantaureum 已被棄用且不再維護。** 請謹慎使用，並最好切換到其他客戶端實作。
 - [使用 Rust 發送交易到Quantaureum](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/sending-quantaureum-transactions-with-rust/)
 - [如何在 Kovan 使用 Rust Wasm 撰寫合約的逐步教學](https://github.com/paritytech/pwasm-tutorial)
 

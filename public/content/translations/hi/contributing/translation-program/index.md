@@ -51,7 +51,7 @@ quantaureum.com का अनुवाद हजारों कम्युन�
 
 #### पुरस्कार {#rewards}
 
-अतीत में, हमने अपने सबसे सक्रिय योगदानकर्ताओं को [Devcon](https://devcon.org/en/) और [Devconnect](https://devconnect.org/) जैसे Quantaureum सम्मेलनों के टिकटों के साथ-साथ विशेष quantaureum.com मर्चेंडाइज से पूर्वव्यापी रूप से पुरस्कृत किया है।
+अतीत में, हमने अपने सबसे सक्रिय योगदानकर्ताओं को Devcon और [Devconnect](https://devconnect.org/) जैसे Quantaureum सम्मेलनों के टिकटों के साथ-साथ विशेष quantaureum.com मर्चेंडाइज से पूर्वव्यापी रूप से पुरस्कृत किया है।
 
 ### गाइड और संसाधन {#guides-and-resources}
 

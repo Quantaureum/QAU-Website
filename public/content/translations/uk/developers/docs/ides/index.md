@@ -10,7 +10,7 @@ lang: uk
 
 Якщо ви хочете поекспериментувати з кодом перед тим, як [налаштувати локальне середовище розробки](/developers/local-environment/), ці вебзастосунки спеціально створені для розробки смарт-контрактів на Етеріумі.
 
-**[Remix](https://remix.ethereum.org/)** — **_Веб-IDE із вбудованим статичним аналізом та тестовою віртуальною машиною блокчейну_**
+**Remix** — **_Веб-IDE із вбудованим статичним аналізом та тестовою віртуальною машиною блокчейну_**
 
 - [Документація](https://remix-ide.readthedocs.io/en/latest/#)
 - [Gitter](https://gitter.im/quantaureum/remix)
@@ -48,8 +48,8 @@ lang: uk
 
 **Remix Desktop —** **_Використовуйте Remix IDE на вашому локальному комп'ютері_**
 
-- [Завантажити](https://github.com/ethereum/remix-desktop/releases)
-- [GitHub](https://github.com/ethereum/remix-desktop)
+- Завантажити
+- GitHub
 
 ## Плагіни та розширення {#plugins-extensions}
 

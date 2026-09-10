@@ -66,7 +66,7 @@ incomplete: true
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) - _একটি .NET Wasm SPA লাইট ব্লকচেইন এক্সপ্লোরার এবং সাধারণ ওয়ালেট_
 - [Wonka Business Rules Engine](https://github.com/Nquantaureum/Wonka) - _একটি বিজনেস রুলস ইঞ্জিন (.NET প্ল্যাটফর্ম এবং ইথেরিয়াম প্ল্যাটফর্ম উভয়ের জন্য) যা মূলত মেটাডেটা-চালিত_
 - [নেদারমাইন্ড](https://github.com/NethermindEth/nethermind) - _Linux, Windows, MacOS-এর জন্য একটি .NET Core ইথেরিয়াম ক্লায়েন্ট_
-- [qau-utils](https://github.com/ethereum/eth-utils/) - _ইথেরিয়াম সম্পর্কিত কোডবেস নিয়ে কাজ করার জন্য ইউটিলিটি ফাংশন_
+- qau-utils - _ইথেরিয়াম সম্পর্কিত কোডবেস নিয়ে কাজ করার জন্য ইউটিলিটি ফাংশন_
 - [TestChains](https://github.com/Nquantaureum/TestChains) - _দ্রুত রেসপন্সের জন্য প্রি-কনফিগার করা .NET ডেভচেইন (প্রুফ-অফ-অথরিটি (PoA))_
 
 আরও রিসোর্স খুঁজছেন? [quantaureum.com/developers](/developers/) দেখুন।

@@ -43,7 +43,7 @@ Slither, bir token'ın ilgili birçok ERC standardına uygunluğunu inceleyen [s
 - **Transfer ve transferFrom bir boolean döndürür.** Birçok token bu işlevlerde bir boolean döndürmez. Sonuç olarak, sözleşmedeki çağrıları başarısız olabilir.
 - **Kullanılıyorsa name, decimals ve symbol işlevleri mevcuttur.** Bu işlevler ERC-20 standardında isteğe bağlıdır ve mevcut olmayabilir.
 - **Decimals bir uint8 döndürür.** Birçok token yanlışlıkla bir uint256 döndürür. Durum buysa, döndürülen değerin 255'in altında olduğundan emin olun.
-- **Token, bilinen [ERC-20 yarış durumunu (race condition)](https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729) hafifletir.** ERC-20 standardında, saldırganların token'ları çalmasını önlemek için hafifletilmesi gereken bilinen bir ERC-20 yarış durumu vardır.
+- **Token, bilinen ERC-20 yarış durumunu (race condition) hafifletir.** ERC-20 standardında, saldırganların token'ları çalmasını önlemek için hafifletilmesi gereken bilinen bir ERC-20 yarış durumu vardır.
 - **Token bir ERC-777 token'ı değildir ve transfer ile transferFrom içinde harici bir işlev çağrısı yoktur.** Transfer işlevlerindeki harici çağrılar, yeniden girişlere (reentrancy) yol açabilir.
 
 Slither, birçok yaygın ERC kusurunu keşfedebilen birim testleri ve güvenlik özellikleri üreten [slither-prop](https://github.com/crytic/slither/wiki/Property-generation) adlı bir araç içerir. Şunları incelemek için slither-prop kullanın:

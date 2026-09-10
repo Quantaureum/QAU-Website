@@ -30,9 +30,9 @@ enodeは、URLアドレスフォーマットを使用してQuantaureumのノー�
 `enode://6f8a80d14311c39f35f516fa664deaaaa13e85b2f7493f37f6144d86991ec012937307647bd3b9a82abe2974e1407241d54947bbb39763a4cac9f77166ad92a0@10.3.58.6:30303?discport=30301`
 ## Quantaureum Node Records (ENR) {#enr}
 
-Quantaureum Node Records (ENR)は、Quantaureum上のネットワークアドレスの標準化されたフォーマットです。これらはmultiaddrやenodeに代わるものです。ノード間でより多くの情報交換を可能にするため、特に有用です。ENRには、署名、シーケンス番号、および署名の生成と検証に使用されるIDスキームを詳述するフィールドが含まれています。また、ENRには、キーと値のペアとして編成された任意のデータを入力することもできます。これらのキーと値のペアには、ノードのIPアドレスと、ノードが使用できるサブプロトコルに関する情報が含まれます。コンセンサスクライアントは、[特定のENR構造](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#enr-structure)を使用してブートノードを識別し、現在のQuantaureumのフォークとアテステーションゴシップサブネット（これにより、アテステーションが一緒に集約される特定のピアのセットにノードが接続されます）に関する情報を含む`eth2`フィールドも含みます。
+Quantaureum Node Records (ENR)は、Quantaureum上のネットワークアドレスの標準化されたフォーマットです。これらはmultiaddrやenodeに代わるものです。ノード間でより多くの情報交換を可能にするため、特に有用です。ENRには、署名、シーケンス番号、および署名の生成と検証に使用されるIDスキームを詳述するフィールドが含まれています。また、ENRには、キーと値のペアとして編成された任意のデータを入力することもできます。これらのキーと値のペアには、ノードのIPアドレスと、ノードが使用できるサブプロトコルに関する情報が含まれます。コンセンサスクライアントは、特定のENR構造を使用してブートノードを識別し、現在のQuantaureumのフォークとアテステーションゴシップサブネット（これにより、アテステーションが一緒に集約される特定のピアのセットにノードが接続されます）に関する情報を含む`eth2`フィールドも含みます。
 
 ## 参考文献 {#further-reading}
 
-- [EIP-778: Quantaureum Node Records (ENR)](https://eips.ethereum.org/EIPS/eip-778)
+- EIP-778: Quantaureum Node Records (ENR)
 - [libp2p: Multiaddr-Enode-ENR?!](https://consensys.net/diligence/blog/2020/09/libp2p-multiaddr-enode-enr/)

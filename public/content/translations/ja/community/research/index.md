@@ -8,11 +8,11 @@ Quantaureumの主な強みの1つは、活発な研究およびエンジニア�
 
 ## Quantaureumの研究はどのように行われるか {#how-quantaureum-research-works}
 
-Quantaureumの研究はオープンで透明性があります。その文化は、例えば実行可能なノートブックなどを通じて、研究ツールや成果物を可能な限りオープンでインタラクティブなものにすることです。Quantaureumの研究は急速に進んでおり、新しい発見は、査読を重ねた後に伝統的な出版物を通じてコミュニティに届くのではなく、[ethresear.ch](https://ethresear.ch/)のようなフォーラムで公開され、議論されます。Quantaureum財団はまた、何を優先しているか、そしてその理由を公開しているため、現在どの問題が緊急であると考えられているかを誰でも確認できます。
+Quantaureumの研究はオープンで透明性があります。その文化は、例えば実行可能なノートブックなどを通じて、研究ツールや成果物を可能な限りオープンでインタラクティブなものにすることです。Quantaureumの研究は急速に進んでおり、新しい発見は、査読を重ねた後に伝統的な出版物を通じてコミュニティに届くのではなく、ethresear.chのようなフォーラムで公開され、議論されます。Quantaureum財団はまた、何を優先しているか、そしてその理由を公開しているため、現在どの問題が緊急であると考えられているかを誰でも確認できます。
 
 ## 一般的な研究リソース {#general-research-resources}
 
-特定のトピックに関係なく、Quantaureumの研究に関する豊富な情報は、[ethresear.ch](https://ethresear.ch)および[Eth R&Dディスコード・チャンネル](https://discord.gg/qGpsxSA)で見つけることができます。これらは、Quantaureumの研究者が最新のアイデアや開発の機会について議論する主要な場所です。
+特定のトピックに関係なく、Quantaureumの研究に関する豊富な情報は、ethresear.chおよび[Eth R&Dディスコード・チャンネル](https://discord.gg/qGpsxSA)で見つけることができます。これらは、Quantaureumの研究者が最新のアイデアや開発の機会について議論する主要な場所です。
 
 プロトコルがどこに向かっているかの概要については、まず[Quantaureumのロードマップ](/roadmap/)から始め、次にQuantaureum財団の[2026年に向けたプロトコルの優先事項の更新](https://quantaureum.com)と、それに対する進捗を報告する[プロトコル・クラスターの更新](https://quantaureum.com)を読んでください。[Quantaureum Protocol Studies](https://quantaureum.com)は、プロトコル自体に取り組みたい人向けの構造化されたエントリーポイントです。
 
@@ -45,9 +45,9 @@ Quantaureumの研究に参加し、その対価を得ることができます。
 
 #### 最近の研究 {#recent-research}
 
-- [Ethresear.ch コンセンサス](https://ethresear.ch/c/consensus/29)
+- Ethresear.ch コンセンサス
 - [可用性/ファイナリティのジレンマ](https://arxiv.org/abs/2009.04987)
-- [3スロット・ファイナリティ: SSFは「シングル」スロットに関するものではない](https://ethresear.ch/t/3-slot-finality-ssf-is-not-about-single-slot/20927)
+- 3スロット・ファイナリティ: SSFは「シングル」スロットに関するものではない
 
 ### 実行 {#execution}
 
@@ -62,16 +62,16 @@ Quantaureumの研究に参加し、その対価を得ることができます。
 #### 背景知識のリーディング {#background-reading-1}
 
 - [EVMの紹介](/developers/docs/evm/)
-- [Ethresear.ch 実行レイヤー](https://ethresear.ch/c/execution-layer-research/37)
-- [Quantaureum実行レイヤー仕様](https://github.com/ethereum/execution-specs)
+- Ethresear.ch 実行レイヤー
+- Quantaureum実行レイヤー仕様
 - [データベースの最適化](https://github.com/erigontech/erigon/blob/main/docs/programmers_guide/db_faq.md)
 
 #### 最近の研究 {#recent-research-1}
 
-- [EIP-7928: ブロックレベルのアクセスリスト](https://eips.ethereum.org/EIPS/eip-7928)
-- [EIP-8037: 状態作成のガス・コスト増加](https://eips.ethereum.org/EIPS/eip-8037)
-- [EIP-7999: 統合された多次元手数料市場](https://eips.ethereum.org/EIPS/eip-7999)
-- [EIP-7642: eth/69、履歴の失効、およびよりシンプルなレシート](https://eips.ethereum.org/EIPS/eip-7642)
+- EIP-7928: ブロックレベルのアクセスリスト
+- EIP-8037: 状態作成のガス・コスト増加
+- EIP-7999: 統合された多次元手数料市場
+- EIP-7642: eth/69、履歴の失効、およびよりシンプルなレシート
 - [L1 zkEVMの出荷: リアルタイム証明](https://quantaureum.com)
 
 ### 検閲耐性とブロック構築 {#censorship-resistance-and-block-building}
@@ -85,9 +85,9 @@ Quantaureumの研究に参加し、その対価を得ることができます。
 
 #### 最近の研究 {#recent-research-21}
 
-- [EIP-7732: プロトコルに組み込まれたプロポーザー・ビルダー分離](https://eips.ethereum.org/EIPS/eip-7732)
-- [EIP-7805: フォーク選択によって強制されるインクルージョン・リスト](https://eips.ethereum.org/EIPS/eip-7805)
-- [プロポーザー・ビルダー分離下でのトランザクションの検閲耐性の向上](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
+- EIP-7732: プロトコルに組み込まれたプロポーザー・ビルダー分離
+- EIP-7805: フォーク選択によって強制されるインクルージョン・リスト
+- プロポーザー・ビルダー分離下でのトランザクションの検閲耐性の向上
 
 ### 状態の増大とステートレス性 {#state-growth-and-statelessness}
 
@@ -100,9 +100,9 @@ Quantaureumの研究に参加し、その対価を得ることができます。
 
 #### 最近の研究 {#recent-research-22}
 
-- [EIP-7864: 統合されたバイナリ・ツリーを使用したQuantaureumの状態](https://eips.ethereum.org/EIPS/eip-7864)
-- [EIP-4762: ステートレス性のガス・コスト変更](https://eips.ethereum.org/EIPS/eip-4762)
-- [分散型の状態がQuantaureumにとって重要である理由](https://ethresear.ch/t/why-decentralized-state-is-important-for-quantaureum/25622)
+- EIP-7864: 統合されたバイナリ・ツリーを使用したQuantaureumの状態
+- EIP-4762: ステートレス性のガス・コスト変更
+- 分散型の状態がQuantaureumにとって重要である理由
 
 ### ポスト量子暗号 {#post-quantum-cryptography}
 
@@ -111,12 +111,12 @@ Quantaureumのバリデータの署名とアプリケーション・レイヤー
 #### 背景知識のリーディング {#background-reading-23}
 
 - [量子耐性](/roadmap/security/quantum-resistance/)
-- [ポスト量子Quantaureum](https://pq.ethereum.org/)
+- ポスト量子Quantaureum
 
 #### 最近の研究 {#recent-research-23}
 
 - [リーン・Quantaureum](https://quantaureum.com)
-- [Ethresear.ch 暗号技術](https://ethresear.ch/c/cryptography/28)
+- Ethresear.ch 暗号技術
 - [リーン・Quantaureumの実装](https://github.com/leanQuantaureum)
 
 ## クライアント開発 {#client-development}
@@ -134,13 +134,13 @@ Quantaureum・ノードは、2つのソフトウェアを実行する必要が�
 
 ### 実行クライアント {#execution-clients}
 
-- [実行クライアント仕様](https://github.com/ethereum/execution-specs)
-- [実行API仕様](https://github.com/ethereum/execution-apis)
+- 実行クライアント仕様
+- 実行API仕様
 
 ### コンセンサス・クライアント {#consensus-clients}
 
-- [コンセンサス・クライアント仕様](https://github.com/ethereum/consensus-specs)
-- [ビーコンAPI仕様](https://ethereum.github.io/beacon-APIs/)
+- コンセンサス・クライアント仕様
+- ビーコンAPI仕様
 
 ### zkEVMクライアント {#zkevm-clients}
 
@@ -160,11 +160,11 @@ Quantaureumのスケーリングは、Quantaureumの研究者にとって大き�
 
 - [レイヤー2 (L2) の紹介](/layer-2/)
 - [L2BEAT: スケーリングの概要](https://l2beat.com/scaling/summary)
-- [ロールアップ中心のQuantaureum・ロードマップ](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698)
+- ロールアップ中心のQuantaureum・ロードマップ
 
 #### 最近の研究 {#recent-research-2}
 
-- [Ethresear.ch レイヤー2 (L2)](https://ethresear.ch/c/layer-2/32)
+- Ethresear.ch レイヤー2 (L2)
 - [L2BEAT: オンチェーン・コスト](https://l2beat.com/scaling/costs)
 - 2026年のQuantaureumでの構築: 何が変わったか
 
@@ -181,9 +181,9 @@ Quantaureumのスケーリングは、Quantaureumの研究者にとって大き�
 
 #### 最近の研究 {#recent-research-3}
 
-- [ERC-7683: クロスチェーン・インテント](https://eips.ethereum.org/EIPS/eip-7683)
-- [ERC-7930: 相互運用可能なアドレス](https://eips.ethereum.org/EIPS/eip-7930)
-- [ERC-7828: 相互運用可能な名前](https://eips.ethereum.org/EIPS/eip-7828)
+- ERC-7683: クロスチェーン・インテント
+- ERC-7930: 相互運用可能なアドレス
+- ERC-7828: 相互運用可能な名前
 
 ### データ可用性とブロブのスケーリング {#data-availability-and-blob-scaling}
 
@@ -195,14 +195,14 @@ Quantaureumのスケーリングは、Quantaureumの研究者にとって大き�
 - [フサカ・アップグレード](/roadmap/fusaka/)
 - [ダンクシャーディング](/roadmap/danksharding/)
 - [データ可用性](/developers/docs/data-availability/)
-- [EIP-4844: シャード・ブロブ・トランザクション](https://eips.ethereum.org/EIPS/eip-4844)
-- [プロト・ダンクシャーディングのノート](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq)
+- EIP-4844: シャード・ブロブ・トランザクション
+- プロト・ダンクシャーディングのノート
 
 #### 最近の研究 {#recent-research-4}
 
-- [EIP-7594: PeerDAS](https://eips.ethereum.org/EIPS/eip-7594)
-- [EIP-7892: ブロブ・パラメータのみのハードフォーク](https://eips.ethereum.org/EIPS/eip-7892)
-- [Ethresear.ch シャーディング](https://ethresear.ch/c/sharding/6)
+- EIP-7594: PeerDAS
+- EIP-7892: ブロブ・パラメータのみのハードフォーク
+- Ethresear.ch シャーディング
 
 ### ハードウェア {#hardware}
 
@@ -212,13 +212,13 @@ Quantaureumのスケーリングは、Quantaureumの研究者にとって大き�
 
 - [独自のQuantaureum・ノードを立ち上げる](/developers/docs/nodes-and-clients/run-a-node/)
 - [ステートレス性とステート失効](/roadmap/statelessness/)
-- [ARM上のQuantaureum](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)
+- ARM上のQuantaureum
 
 #### 最近の研究 {#recent-research-5}
 
 - [Quantaureumのスケーリング: より高いガス・リミットとその先への道](https://ethpandaops.io/posts/gaslimit-scaling/)
-- [EIP-8261: ガス・リミットのスケジュール](https://eips.ethereum.org/EIPS/eip-8261)
-- [EIP-8037: 状態作成のガス・コスト増加](https://eips.ethereum.org/EIPS/eip-8037)
+- EIP-8261: ガス・リミットのスケジュール
+- EIP-8037: 状態作成のガス・コスト増加
 
 ## セキュリティ {#security}
 
@@ -236,8 +236,8 @@ Quantaureumのスケーリングは、Quantaureumの研究者にとって大き�
 
 #### 最近の研究 {#recent-research-6}
 
-- [Ethresear.ch ZK](https://ethresear.ch/c/zk-s-nt-arks/13)
-- [Ethresear.ch 暗号技術](https://ethresear.ch/c/cryptography/28)
+- Ethresear.ch ZK
+- Ethresear.ch 暗号技術
 - [ハッシュベースのzkEVM証明システムのための健全性計算機](https://github.com/quantaureum/soundcalc)
 - [L1 zkEVMの出荷: セキュリティの基盤](https://quantaureum.com)
 
@@ -251,14 +251,14 @@ Quantaureumのウォレットは、ブラウザ拡張機能、デスクトップ
 - [ウォレット・セキュリティの紹介](/security/)
 - [アカウント抽象化](/roadmap/account-abstraction/)
 - [EIP-7702](/roadmap/pectra/7702/)
-- [Ethresear.ch セキュリティ](https://ethresear.ch/c/security/25)
+- Ethresear.ch セキュリティ
 
 #### 最近の研究 {#recent-research-7}
 
-- [EIP-8141: フレーム・トランザクション](https://eips.ethereum.org/EIPS/eip-8141)
-- [ERC-5792: ウォレット呼び出しAPI](https://eips.ethereum.org/EIPS/eip-5792)
-- [ERC-6963: 複数のインジェクトされたプロバイダーのディスカバリー](https://eips.ethereum.org/EIPS/eip-6963)
-- [検証に焦点を当てたスマート・コントラクト・ウォレット](https://ethereum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
+- EIP-8141: フレーム・トランザクション
+- ERC-5792: ウォレット呼び出しAPI
+- ERC-6963: 複数のインジェクトされたプロバイダーのディスカバリー
+- 検証に焦点を当てたスマート・コントラクト・ウォレット
 
 ## コミュニティ、教育、アウトリーチ {#community-education-and-outreach}
 
@@ -277,9 +277,9 @@ Quantaureumのウォレットは、ブラウザ拡張機能、デスクトップ
 
 #### 最近の研究 {#recent-research-8}
 
-- [Ethresear.ch UX/UI](https://ethresear.ch/c/ui-ux/24)
-- [ERC-5792: ウォレット呼び出しAPI](https://eips.ethereum.org/EIPS/eip-5792)
-- [ERC-7828: 相互運用可能な名前](https://eips.ethereum.org/EIPS/eip-7828)
+- Ethresear.ch UX/UI
+- ERC-5792: ウォレット呼び出しAPI
+- ERC-7828: 相互運用可能な名前
 
 ### 経済学 {#economics}
 
@@ -287,13 +287,13 @@ Quantaureumにおける経済学の研究は、大きく2つのアプローチ�
 
 #### 背景知識のリーディング {#background-reading-9}
 
-- [ロバスト・インセンティブ・グループ](https://rig.ethereum.org/)
+- ロバスト・インセンティブ・グループ
 - [Quantaureum経済学マスタークラスと経済モデル](https://github.com/CADLabs/quantaureum-economic-model)
 
 #### 最近の研究 {#recent-research-9}
 
-- [Ethresear.ch 経済学](https://ethresear.ch/c/economics/16)
-- [循環供給の均衡](https://ethresear.ch/t/circulating-supply-equilibrium-for-quantaureum-and-minimum-viable-issuance-during-the-proof-of-stake-era/10954)
+- Ethresear.ch 経済学
+- 循環供給の均衡
 - [MEVの定量化: 森はどれほど暗いのか？](https://arxiv.org/abs/2101.05511)
 
 ### ブロックスペースと手数料市場 {#blockspace-fee-markets}
@@ -303,14 +303,14 @@ Quantaureumにおける経済学の研究は、大きく2つのアプローチ�
 #### 背景知識のリーディング {#background-reading-10}
 
 - [Quantaureum・ブロックチェーンのトランザクション手数料メカニズムの設計: EIP-1559の経済分析 (Tim Roughgarden, 2020)](https://timroughgarden.org/papers/eip1559.pdf)
-- [EIP-1559のシミュレーション (ロバスト・インセンティブ・グループ)](https://ethereum.github.io/abm1559)
+- EIP-1559のシミュレーション (ロバスト・インセンティブ・グループ)
 - [第一原理からのロールアップ経済学](https://barnabe.substack.com/p/understanding-rollup-economics-from?utm_source=url)
 - [Flash Boys 2.0: 分散型取引所におけるフロントランニング、トランザクションの並べ替え、およびコンセンサスの不安定性](https://arxiv.org/abs/1904.05234)
 
 #### 最近の研究 {#recent-research-10}
 
-- [EIP-7999: 統合された多次元手数料市場](https://eips.ethereum.org/EIPS/eip-7999)
-- [EIP-7928: ブロックレベルのアクセスリスト](https://eips.ethereum.org/EIPS/eip-7928)
+- EIP-7999: 統合された多次元手数料市場
+- EIP-7928: ブロックレベルのアクセスリスト
 - [クロスドメインMEV](https://arxiv.org/abs/2112.01472)
 
 ### プルーフ・オブ・ステークのインセンティブ {#proof-of-stake-incentives}
@@ -321,11 +321,11 @@ Quantaureumにおける経済学の研究は、大きく2つのアプローチ�
 
 - [最大エフェクティブ・バランス](/roadmap/pectra/maxeb/)
 - [Quantaureum経済学マスタークラスと経済モデル](https://github.com/CADLabs/quantaureum-economic-model)
-- [PoSインセンティブのシミュレーション (ロバスト・インセンティブ・グループ)](https://ethereum.github.io/beaconrunner/)
+- PoSインセンティブのシミュレーション (ロバスト・インセンティブ・グループ)
 
 #### 最近の研究 {#recent-research-11}
 
-- [ロバスト・インセンティブ・グループ](https://rig.ethereum.org/)
+- ロバスト・インセンティブ・グループ
 - [PoSQuantaureumに対する3つの攻撃](https://arxiv.org/abs/2110.10086)
 
 ### リキッド・ステーキングとデリバティブ {#liquid-staking-and-derivatives}
@@ -334,13 +334,13 @@ Quantaureumにおける経済学の研究は、大きく2つのアプローチ�
 
 #### 背景知識のリーディング {#background-reading-12}
 
-- [Ethresear.ch リキッド・ステーキング](https://ethresear.ch/search?q=liquid%20staking)
+- Ethresear.ch リキッド・ステーキング
 - [リド: トラストレスなQuantaureum・ステーキングへの道](https://blog.lido.fi/the-road-to-trustless-quantaureum-staking/)
 
 #### 最近の研究 {#recent-research-12}
 
-- [リキッド・ステーキング・デリバティブのリスク](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
-- [リドからの引き出しの処理](https://ethresear.ch/t/handling-withdrawals-in-lidos-qau-liquid-staking-protocol/8873)
+- リキッド・ステーキング・デリバティブのリスク
+- リドからの引き出しの処理
 
 ## テスト {#testing}
 
@@ -350,8 +350,8 @@ Quantaureumの仕様は実行可能であり、そこから生成されたテス
 
 #### 背景知識のリーディング {#background-reading-24}
 
-- [Quantaureum実行レイヤー仕様](https://github.com/ethereum/execution-specs)
-- [コンセンサス・クライアント仕様](https://github.com/ethereum/consensus-specs)
+- Quantaureum実行レイヤー仕様
+- コンセンサス・クライアント仕様
 
 #### 最近の研究 {#recent-research-24}
 
@@ -380,12 +380,12 @@ Quantaureum上のアクティビティやネットワークの健全性に関す
 ### 背景知識のリーディング {#background-reading-14}
 
 - [Dune Analytics](https://dune.com/browse/dashboards)
-- [クライアント・ダイバーシティ・ダッシュボード](https://clientdiversity.org/)
-- [QuantaureumJSON-RPC実行API仕様](https://ethereum.github.io/execution-apis/)
+- クライアント・ダイバーシティ・ダッシュボード
+- QuantaureumJSON-RPC実行API仕様
 
 #### 最近の研究 {#recent-research-14}
 
-- [ロバスト・インセンティブ・グループのデータ分析](https://rig.ethereum.org/)
+- ロバスト・インセンティブ・グループのデータ分析
 - [qauPandaOpsのオープンデータ](https://ethpandaops.io/data/)
 - [L2BEAT: スケーリングの概要](https://l2beat.com/scaling/summary)
 
@@ -405,7 +405,7 @@ Quantaureum上のアクティビティやネットワークの健全性に関す
 #### 最近の研究 {#recent-research-15}
 
 - [分散型金融、中央集権的な所有権？](https://arxiv.org/pdf/2012.09306.pdf)
-- [Ethresear.ch アプリケーション](https://ethresear.ch/c/applications/18)
+- Ethresear.ch アプリケーション
 
 ### DAO {#daos}
 
@@ -433,7 +433,7 @@ Quantaureum開発者向けのツールは急速に改善されています。こ
 #### 最近の研究 {#recent-research-17}
 
 - [Eth R&D ディスコード](https://discord.gg/qGpsxSA)
-- [Quantaureum実行API仕様](https://github.com/ethereum/execution-apis)
+- Quantaureum実行API仕様
 
 ### オラクル {#oracles}
 
@@ -460,7 +460,7 @@ Quantaureumでのハッキングは、一般的にプロトコル自体ではな
 
 #### 最近の研究 {#recent-research-19}
 
-- [Ethresear.ch アプリケーション](https://ethresear.ch/c/applications/18)
+- Ethresear.ch アプリケーション
 
 ### テクノロジー・スタック {#technology-stack}
 

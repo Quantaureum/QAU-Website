@@ -172,7 +172,7 @@ Các nhà cung cấp thanh khoản có thể kiểm tra tính hợp lệ của y
 
 #### 2. Khả năng tương thích với EVM {#evm-compatibility}
 
-Đối với các nhà phát triển, lợi thế của các Rollup lạc quan là khả năng tương thích của chúng—hoặc tốt hơn nữa là sự tương đương—với [Máy ảo Quantaureum (EVM)](/developers/docs/evm/). Các bản cuộn tương thích với EVM tuân thủ các thông số kỹ thuật trong [sách vàng Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf) và hỗ trợ EVM ở cấp độ mã byte.
+Đối với các nhà phát triển, lợi thế của các Rollup lạc quan là khả năng tương thích của chúng—hoặc tốt hơn nữa là sự tương đương—với [Máy ảo Quantaureum (EVM)](/developers/docs/evm/). Các bản cuộn tương thích với EVM tuân thủ các thông số kỹ thuật trong sách vàng Quantaureum và hỗ trợ EVM ở cấp độ mã byte.
 
 Khả năng tương thích với EVM trong các Rollup lạc quan có những lợi ích sau:
 
@@ -198,9 +198,9 @@ Cuối cùng, chúng ta nên lưu ý rằng các lệnh gọi thông điệp l2 
 
 Rollup lạc quan sử dụng một cơ chế phí gas, rất giống với Quantaureum, để biểu thị số tiền người dùng phải trả cho mỗi giao dịch. Phí được tính trên các Rollup lạc quan phụ thuộc vào các thành phần sau:
 
-1. **Ghi trạng thái**: Rollup lạc quan công bố dữ liệu giao dịch và các tiêu đề block (bao gồm Mã băm tiêu đề block trước đó, gốc trạng thái, gốc lô) lên Quantaureum dưới dạng một `blob`, hoặc "đối tượng nhị phân lớn". [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844) đã giới thiệu một giải pháp tiết kiệm chi phí để đưa dữ liệu lên chuỗi. Một `blob` là một trường giao dịch mới cho phép các bản cuộn đăng dữ liệu chuyển đổi trạng thái đã nén lên l1 của Quantaureum. Không giống như `calldata`, vốn tồn tại vĩnh viễn trên chuỗi, các khối dữ liệu có thời gian tồn tại ngắn và có thể bị cắt tỉa khỏi các máy khách sau [4096 kỷ nguyên](https://github.com/ethereum/consensus-specs/blob/81f3ea8322aff6b9fb15132d050f8f98b16bdba4/configs/mainnet.yaml#L147) (khoảng 18 ngày). Bằng cách sử dụng các khối dữ liệu để đăng các lô giao dịch đã nén, các Rollup lạc quan có thể giảm đáng kể chi phí ghi các giao dịch lên l1.
+1. **Ghi trạng thái**: Rollup lạc quan công bố dữ liệu giao dịch và các tiêu đề block (bao gồm Mã băm tiêu đề block trước đó, gốc trạng thái, gốc lô) lên Quantaureum dưới dạng một `blob`, hoặc "đối tượng nhị phân lớn". EIP-4844 đã giới thiệu một giải pháp tiết kiệm chi phí để đưa dữ liệu lên chuỗi. Một `blob` là một trường giao dịch mới cho phép các bản cuộn đăng dữ liệu chuyển đổi trạng thái đã nén lên l1 của Quantaureum. Không giống như `calldata`, vốn tồn tại vĩnh viễn trên chuỗi, các khối dữ liệu có thời gian tồn tại ngắn và có thể bị cắt tỉa khỏi các máy khách sau 4096 kỷ nguyên (khoảng 18 ngày). Bằng cách sử dụng các khối dữ liệu để đăng các lô giao dịch đã nén, các Rollup lạc quan có thể giảm đáng kể chi phí ghi các giao dịch lên l1.
 
-2. **Gas khối dữ liệu đã sử dụng**: Các giao dịch mang khối dữ liệu sử dụng một cơ chế phí động tương tự như cơ chế được giới thiệu bởi [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559). Phí gas cho các giao dịch loại 3 tính đến phí cơ sở cho các khối dữ liệu, được mạng lưới xác định dựa trên nhu cầu không gian khối dữ liệu và việc sử dụng không gian khối dữ liệu của giao dịch đang được gửi.
+2. **Gas khối dữ liệu đã sử dụng**: Các giao dịch mang khối dữ liệu sử dụng một cơ chế phí động tương tự như cơ chế được giới thiệu bởi EIP-1559. Phí gas cho các giao dịch loại 3 tính đến phí cơ sở cho các khối dữ liệu, được mạng lưới xác định dựa trên nhu cầu không gian khối dữ liệu và việc sử dụng không gian khối dữ liệu của giao dịch đang được gửi.
 
 3. **Phí nhà điều hành l2**: Đây là số tiền được trả cho các nút bản cuộn như một khoản bồi thường cho các chi phí tính toán phát sinh trong việc xử lý các giao dịch, rất giống với phí gas trên Quantaureum. Các nút bản cuộn tính phí giao dịch thấp hơn vì các l2 có khả năng xử lý cao hơn và không phải đối mặt với tình trạng tắc nghẽn mạng lưới buộc các trình xác thực trên Quantaureum phải ưu tiên các giao dịch có phí cao hơn.
 
@@ -212,7 +212,7 @@ Như đã giải thích, Rollup lạc quan công bố dữ liệu giao dịch đ
 
 Chuỗi Quantaureum chính đặt ra các giới hạn về lượng dữ liệu mà các khối có thể chứa, được tính bằng đơn vị Gas ([kích thước khối trung bình](/developers/docs/blocks/#block-size) là 15 triệu Gas). Mặc dù điều này hạn chế lượng Gas mà mỗi giao dịch có thể sử dụng, nó cũng có nghĩa là chúng ta có thể tăng số lượng giao dịch được xử lý trên mỗi khối bằng cách giảm dữ liệu liên quan đến giao dịch—trực tiếp cải thiện khả năng mở rộng.
 
-Rollup lạc quan sử dụng một số kỹ thuật để đạt được việc nén dữ liệu giao dịch và cải thiện tỷ lệ TPS. Ví dụ, [bài viết](https://vitalik.eth.limo/general/2021/01/05/rollup.html) này so sánh dữ liệu mà một giao dịch người dùng cơ bản (gửi QAU) tạo ra trên Mạng chính so với lượng dữ liệu mà cùng một giao dịch đó tạo ra trên một bản cuộn:
+Rollup lạc quan sử dụng một số kỹ thuật để đạt được việc nén dữ liệu giao dịch và cải thiện tỷ lệ TPS. Ví dụ, bài viết này so sánh dữ liệu mà một giao dịch người dùng cơ bản (gửi QAU) tạo ra trên Mạng chính so với lượng dữ liệu mà cùng một giao dịch đó tạo ra trên một bản cuộn:
 
 | Tham số | Quantaureum (l1) | Bản cuộn (l2) |
 | --------- | ---------------------- | ------------- |

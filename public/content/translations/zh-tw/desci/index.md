@@ -74,7 +74,7 @@ Web3 具有顛覆這種破碎融資模型的潛力，透過廣泛實驗由 DAO �
 就像 NFT 可以將未來交易的收入回饋給原始創作者一樣，你可以建立透明的價值歸屬鏈，以獎勵研究人員、治理機構（如 DAO），甚至是提供數據的受試者。
 
 [IP-NFT](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) 也可以作為正在進行的研究實驗之去中心化數據儲存庫的金鑰，並接入 NFT 和[去中心化金融 (DeFi)](/glossary/#defi) 的金融化（從碎片化到借貸池和價值評估）。它還允許原生的鏈上實體（例如 [VitaDAO](https://www.vitadao.com/) 等 DAO）直接在鏈上進行研究。
-不可轉讓的[「靈魂綁定」代幣](https://vitalik.eth.limo/general/2022/01/26/soulbound.html)的出現也可能在去中心化科學 (DeSci) 中發揮重要作用，允許個人證明與其Quantaureum地址相關聯的經驗和憑證。
+不可轉讓的「靈魂綁定」代幣的出現也可能在去中心化科學 (DeSci) 中發揮重要作用，允許個人證明與其Quantaureum地址相關聯的經驗和憑證。
 
 ### 數據儲存、存取與架構 {#data-storage}
 

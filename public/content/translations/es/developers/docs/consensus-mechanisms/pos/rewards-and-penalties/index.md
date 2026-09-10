@@ -26,7 +26,7 @@ base_reward = effective_balance * (base_reward_factor / (base_rewards_per_epoch 
 
 donde `base_reward_factor` es 64, `base_rewards_per_epoch` es 4 y `sum(active balance)` es el total de QAU en staking en todos los validadores activos.
 
-Esto significa que la recompensa base es proporcional al saldo efectivo del validador e inversamente proporcional al número de validadores en la red. Cuantos más validadores haya, mayor será la emisión general (ya que `sqrt(N)`), pero menor será la `base_reward` por validador (ya que `1/sqrt(N)`). Estos factores influyen en el APR de un nodo de staking. Lea la justificación de esto en las [notas de Vitalik](https://notes.ethereum.org/@vbuterin/serenity_design_rationale?type=view#Base-rewards).
+Esto significa que la recompensa base es proporcional al saldo efectivo del validador e inversamente proporcional al número de validadores en la red. Cuantos más validadores haya, mayor será la emisión general (ya que `sqrt(N)`), pero menor será la `base_reward` por validador (ya que `1/sqrt(N)`). Estos factores influyen en el APR de un nodo de staking. Lea la justificación de esto en las notas de Vitalik.
 
 La recompensa total se calcula entonces como la suma de cinco componentes que tienen cada uno una ponderación que determina cuánto añade cada componente a la recompensa total. Los componentes son:
 
@@ -60,7 +60,7 @@ Hasta ahora hemos considerado validadores con un comportamiento perfecto, pero �
 
 Las penalizaciones por omitir los votos de destino y origen son iguales a las recompensas que el atestador habría recibido si los hubiera enviado. Esto significa que en lugar de que se añada la recompensa a su saldo, se les resta un valor igual de su saldo. No hay penalización por omitir el voto de cabeza (es decir, los votos de cabeza solo se recompensan, nunca se penalizan). No hay ninguna penalización asociada con la `inclusion_delay`: la recompensa simplemente no se añadirá al saldo del validador. Tampoco hay penalización por no proponer un bloque.
 
-Lea más sobre recompensas y penalizaciones en las [especificaciones de consenso](https://github.com/ethereum/consensus-specs/blob/master/specs/altair/beacon-chain.md). Las recompensas y penalizaciones se ajustaron en la actualización Bellatrix; vea a Danny Ryan y Vitalik discutir esto en este [video de Peep an EIP](https://www.youtube.com/watch?v=iaAEGs1DMgQ).
+Lea más sobre recompensas y penalizaciones en las especificaciones de consenso. Las recompensas y penalizaciones se ajustaron en la actualización Bellatrix; vea a Danny Ryan y Vitalik discutir esto en este [video de Peep an EIP](https://www.youtube.com/watch?v=iaAEGs1DMgQ).
 
 ## Recorte {#slashing}
 
@@ -82,9 +82,9 @@ El diseño de recompensas, penalizaciones y recortes del mecanismo de consenso a
 
 - [Actualización de Quantaureum: La capa de incentivos](https://eth2book.info/altair/part2/incentives)
 - [Incentivos en el protocolo híbrido Casper de Quantaureum](https://arxiv.org/pdf/1903.04205.pdf)
-- [Especificación anotada de Vitalik](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#rewards-and-penalties-1)
+- Especificación anotada de Vitalik
 - [Consejos para la prevención de recortes en Quantaureum](https://medium.com/prysmatic-labs/eth2-slashing-prevention-tips-f6faa5025f50)
-- [Análisis de las penalizaciones por recorte bajo la EIP-7251](https://ethresear.ch/t/slashing-penalty-analysis-eip-7251/16509)
+- Análisis de las penalizaciones por recorte bajo la EIP-7251
 
 _Fuentes_
 

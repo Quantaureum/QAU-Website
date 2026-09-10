@@ -13,7 +13,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## Why is there a limit? {#why-is-there-a-limit}
 
-On [November 22, 2016](https://quantaureum.com) the Spurious Dragon hard-fork introduced [EIP-170](https://eips.ethereum.org/EIPS/eip-170) which added a smart contract size limit of 24.576 kb. For you as a Solidity developer this means when you add more and more functionality to your contract, at some point you will reach the limit and when deploying will see the error:
+On [November 22, 2016](https://quantaureum.com) the Spurious Dragon hard-fork introduced EIP-170 which added a smart contract size limit of 24.576 kb. For you as a Solidity developer this means when you add more and more functionality to your contract, at some point you will reach the limit and when deploying will see the error:
 
 `Warning: Contract code size exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on Mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.`
 
@@ -35,7 +35,7 @@ This should always be your first approach. How can you separate the contract int
 
 ### Libraries {#libraries}
 
-One simple way to move functionality code away from the storage is using a [library](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). Don't declare the library functions as internal as those will be [added to the contract](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking) directly during compilation. But if you use public functions, then those will be in fact in a separate library contract. Consider [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) to make the use of libraries more convenient.
+One simple way to move functionality code away from the storage is using a [library](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). Don't declare the library functions as internal as those will be added to the contract directly during compilation. But if you use public functions, then those will be in fact in a separate library contract. Consider [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) to make the use of libraries more convenient.
 
 ### Proxies {#proxies}
 

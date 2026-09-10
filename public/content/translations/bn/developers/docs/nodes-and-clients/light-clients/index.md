@@ -44,7 +44,7 @@ lang: bn
 
 - [লোডস্টার (Lodestar)](https://github.com/ChainSafe/lodestar/tree/unstable/packages/light-client): TypeScript-এ কনসেনসাস লাইট ক্লায়েন্ট
 - [হেলিওস (Helios)](https://github.com/a16z/helios): Rust-এ সম্মিলিত এক্সিকিউশন এবং কনসেনসাস লাইট ক্লায়েন্ট
-- [গেথ (Geth)](https://github.com/ethereum/go-ethereum/tree/master/beacon/light): Go-তে এক্সিকিউশন ক্লায়েন্টের জন্য লাইট মোড (ডেভেলপমেন্টের পর্যায়ে)
+- গেথ (Geth): Go-তে এক্সিকিউশন ক্লায়েন্টের জন্য লাইট মোড (ডেভেলপমেন্টের পর্যায়ে)
 - [নিম্বাস (Nimbus)](https://nimbus.guide/el-light-client.html): Nim-এ কনসেনসাস লাইট ক্লায়েন্ট
 
 আমাদের জানামতে এগুলোর কোনোটিই এখনও প্রোডাকশন-রেডি হিসেবে বিবেচিত নয়।
@@ -58,4 +58,4 @@ lang: bn
 - [গেথ লাইট ক্লায়েন্ট সম্পর্কে জোল্ট ফেলফোডি (Zsolt Felfodhi)](https://www.youtube.com/watch?v=EPZeFXau-RE)
 - [লাইট ক্লায়েন্ট নেটওয়ার্কিং সম্পর্কে ইথান কিসলিং (Etan Kissling)](https://www.youtube.com/watch?v=85MeiMA4dD8)
 - [দ্য মার্জ-এর পর লাইট ক্লায়েন্ট সম্পর্কে ইথান কিসলিং (Etan Kissling)](https://www.youtube.com/watch?v=ZHNrAXf3RDE)
-- [পাইপার মেরিয়াম (Piper Merriam): কার্যকরী লাইট ক্লায়েন্টের দিকে আঁকাবাঁকা পথ](https://snakecharmers.ethereum.org/the-winding-road-to-functional-light-clients/)
+- পাইপার মেরিয়াম (Piper Merriam): কার্যকরী লাইট ক্লায়েন্টের দিকে আঁকাবাঁকা পথ

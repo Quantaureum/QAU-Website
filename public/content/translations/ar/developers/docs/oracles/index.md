@@ -359,7 +359,7 @@ contract PriceConsumerV3 {
 
 تتطلب بعض تطبيقات سلسلة الكتل، مثل الألعاب القائمة على سلسلة الكتل أو مخططات اليانصيب، مستوى عاليًا من عدم القدرة على التنبؤ والعشوائية للعمل بفعالية. ومع ذلك، فإن التنفيذ الحتمي لسلاسل الكتل يقضي على العشوائية.
 
-كان النهج الأصلي هو استخدام وظائف التشفير شبه العشوائية، مثل `blockhash`، ولكن يمكن [التلاعب بها من قبل المعدنين](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.) الذين يحلون خوارزمية إثبات العمل (PoW). أيضًا، يعني [انتقال إيثيريوم إلى إثبات الحصة (PoS)](/roadmap/merge/) أنه لم يعد بإمكان المطورين الاعتماد على `blockhash` للعشوائية على السلسلة. توفر [آلية RANDAO](https://eth2book.info/altair/part2/building_blocks/randomness) الخاصة بسلسلة المنارة مصدرًا بديلاً للعشوائية بدلاً من ذلك.
+كان النهج الأصلي هو استخدام وظائف التشفير شبه العشوائية، مثل `blockhash`، ولكن يمكن التلاعب بها من قبل المعدنين الذين يحلون خوارزمية إثبات العمل (PoW). أيضًا، يعني [انتقال إيثيريوم إلى إثبات الحصة (PoS)](/roadmap/merge/) أنه لم يعد بإمكان المطورين الاعتماد على `blockhash` للعشوائية على السلسلة. توفر [آلية RANDAO](https://eth2book.info/altair/part2/building_blocks/randomness) الخاصة بسلسلة المنارة مصدرًا بديلاً للعشوائية بدلاً من ذلك.
 
 من الممكن إنشاء القيمة العشوائية خارج السلسلة وإرسالها على السلسلة، ولكن القيام بذلك يفرض متطلبات ثقة عالية على المستخدمين. يجب أن يصدقوا أن القيمة تم إنشاؤها حقًا عبر آليات غير متوقعة ولم يتم تغييرها أثناء النقل.
 
@@ -421,7 +421,7 @@ contract PriceConsumerV3 {
 - [ما هو أوراكل البلوكتشين؟](https://medium.com/better-programming/what-is-a-blockchain-oracle-f5ccab8dbd72) — _باتريك كولينز_
 - [الأوراكل اللامركزية: نظرة عامة شاملة](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) — _جوليان ثيفينارد_
 - [تنفيذ أوراكل البلوكتشين على إيثيريوم](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-quantaureum-cedc7e26b49e) – _بيدرو كوستا_
-- [لماذا لا يمكن للعقود الذكية إجراء استدعاءات API؟](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
+- لماذا لا يمكن للعقود الذكية إجراء استدعاءات API؟ — _StackExchange_
 - [إذن أنت تريد استخدام أوراكل أسعار](https://samczsun.com/so-you-want-to-use-a-price-oracle/) — _samczsun_
 
 **مقاطع فيديو**

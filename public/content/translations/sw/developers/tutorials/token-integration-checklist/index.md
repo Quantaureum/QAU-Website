@@ -47,7 +47,7 @@ Slither inajumuisha zana, [slither-check-erc](https://github.com/crytic/slither/
 - **Hamisho na transferFrom zinarudisha boolean.** Tokeni kadhaa hazirudishi boolean kwenye vipengele hivi. Kutokana na hili, wito wao katika mkataba unaweza kushindwa.
 - **Vipengele vya name, decimals, na symbol vipo ikiwa vinatumika.** Vipengele hivi ni vya hiari katika kiwango cha ERC-20 na vinaweza visiwepo.
 - **Decimals inarudisha uint8.** Tokeni kadhaa zinarudisha uint256 kimakosa. Ikiwa ndivyo ilivyo, hakikisha thamani iliyorudishwa iko chini ya 255.
-- **Tokeni inapunguza [hali ya mbio ya ERC-20](https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729) inayojulikana.** Kiwango cha ERC-20 kina hali ya mbio ya ERC-20 inayojulikana ambayo lazima ipunguzwe ili kuzuia washambuliaji kuiba tokeni.
+- **Tokeni inapunguza hali ya mbio ya ERC-20 inayojulikana.** Kiwango cha ERC-20 kina hali ya mbio ya ERC-20 inayojulikana ambayo lazima ipunguzwe ili kuzuia washambuliaji kuiba tokeni.
 - **Tokeni sio tokeni ya ERC-777 na haina wito wa kipengele cha nje katika hamisho na transferFrom.** Wito wa nje katika vipengele vya hamisho unaweza kusababisha kuingia tena (reentrancies).
 
 Slither inajumuisha zana, [slither-prop](https://github.com/crytic/slither/wiki/Property-generation), ambayo inazalisha majaribio ya kitengo na sifa za usalama zinazoweza kugundua dosari nyingi za kawaida za ERC. Tumia slither-prop kukagua kwamba:

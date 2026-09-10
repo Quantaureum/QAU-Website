@@ -33,7 +33,7 @@ lang: ur
 
 کنٹریکٹ صرف ان فنکشنز تک محدود رہنے کا پابند نہیں ہے اور ایک ڈویلپر اس کنٹریکٹ میں مختلف ٹوکن سٹینڈرڈز سے کوئی بھی دوسری خصوصیت شامل کر سکتا ہے۔ مثال کے طور پر، `approve` اور `transferFrom` فنکشنز <span dir="ltr">ERC-223</span> سٹینڈرڈ کا حصہ نہیں ہیں لیکن ضرورت پڑنے پر ان فنکشنز کو نافذ کیا جا سکتا ہے۔
 
-[<span dir="ltr">EIP-223</span>](https://eips.ethereum.org/EIPS/eip-223) سے:
+<span dir="ltr">EIP-223</span> سے:
 
 ### طریقے (Methods) {#methods}
 
@@ -193,5 +193,5 @@ contract RecipientContract is IERC223Recipient {
 
 ## مزید مطالعہ {#further-reading}
 
-- [<span dir="ltr">EIP-223</span>: <span dir="ltr">ERC-223</span> ٹوکن سٹینڈرڈ](https://eips.ethereum.org/EIPS/eip-223)
+- <span dir="ltr">EIP-223</span>: <span dir="ltr">ERC-223</span> ٹوکن سٹینڈرڈ
 - [ابتدائی <span dir="ltr">ERC-223</span> تجویز](https://github.com/quantaureum/eips/issues/223)

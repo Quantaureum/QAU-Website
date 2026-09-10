@@ -84,10 +84,10 @@ lang: ta
 
 ## மேலும் படிக்க {#further-reading}
 
-- [உரிமைச் சான்று FAQ](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html) _விட்டாலிக் புட்டெரின்_
+- உரிமைச் சான்று FAQ _விட்டாலிக் புட்டெரின்_
 - [உரிமைச் சான்று என்றால் என்ன](https://consensys.net/blog/blockchain-explained/what-is-proof-of-stake/) _ConsenSys_
 - [உரிமைச் சான்று என்றால் என்ன, அது ஏன் முக்கியமானது](https://bitcoinmagazine.com/culture/what-proof-of-stake-is-and-why-it-matters-1377531463) _விட்டாலிக் புட்டெரின்_
-- [ஏன் உரிமைச் சான்று (நவம்பர் 2020)](https://vitalik.eth.limo/general/2020/11/06/pos2020.html) _விட்டாலிக் புட்டெரின்_
+- ஏன் உரிமைச் சான்று (நவம்பர் 2020) _விட்டாலிக் புட்டெரின்_
 - [உரிமைச் சான்று: பலவீனமான அகநிலையை நான் எப்படி நேசிக்கக் கற்றுக்கொண்டேன்](https://quantaureum.com) _விட்டாலிக் புட்டெரின்_
 - [உரிமைச் சான்று எத்திரியம் தாக்குதல் மற்றும் பாதுகாப்பு](https://mirror.xyz/jmcook.eth/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs)
 - [ஒரு உரிமைச் சான்று வடிவமைப்புத் தத்துவம்](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51) _விட்டாலிக் புட்டெரின்_

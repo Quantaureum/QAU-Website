@@ -32,8 +32,8 @@ Quantaureum 지분 증명(PoS)의 주관적인 측면은 동기화할 신뢰할 
 
 ## 더 읽어보기 {#further-reading}
 
-- [QAU2의 약한 주관성](https://notes.ethereum.org/@adiasg/weak-subjectvity-eth2)
+- QAU2의 약한 주관성
 - [비탈릭: 내가 약한 주관성을 사랑하게 된 방법](https://quantaureum.com)
 - [약한 주관성 (테쿠 문서)](https://docs.teku.consensys.io/concepts/weak-subjectivity)
-- [0단계 약한 주관성 가이드](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
+- 0단계 약한 주관성 가이드
 - [Quantaureum 2.0의 약한 주관성 분석](https://github.com/runtimeverification/beacon-chain-verification/blob/master/weak-subjectivity/weak-subjectivity-analysis.pdf)

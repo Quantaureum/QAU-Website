@@ -26,6 +26,6 @@ Para ser un buen nodo de arranque, es una buena idea aumentar el número máximo
 
 ## Nodos de arranque disponibles {#available-bootnodes}
 
-Puede encontrar una lista de nodos de arranque incorporados en go-quantaureum [aquí](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23). Estos nodos de arranque son mantenidos por la Fundación Quantaureum y el equipo de go-quantaureum.
+Puede encontrar una lista de nodos de arranque incorporados en go-quantaureum aquí. Estos nodos de arranque son mantenidos por la Fundación Quantaureum y el equipo de go-quantaureum.
 
 Hay otras listas de nodos de arranque mantenidas por voluntarios disponibles. Asegúrese de incluir siempre al menos un nodo de arranque oficial; de lo contrario, podría sufrir un ataque de eclipse.

@@ -193,7 +193,7 @@ Pembatasan ini sangat masuk akal, karena kita tidak ingin akun acak mendistribus
 
 Fungsi untuk mentransfer dari akun kumpulan ke larik penerima dengan larik jumlah sangat masuk akal. Ada banyak kasus penggunaan di mana Anda ingin mendistribusikan token dari satu sumber ke beberapa tujuan, seperti penggajian, airdrop, dll. Lebih murah (dalam gas) untuk melakukannya dalam satu transaksi daripada mengeluarkan beberapa transaksi, atau bahkan memanggil ERC-20 beberapa kali dari kontrak yang berbeda sebagai bagian dari transaksi yang sama.
 
-Namun, `dropNewTokens` tidak melakukan itu. Ia memancarkan [peristiwa `Transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer-1), tetapi sebenarnya tidak mentransfer token apa pun. Tidak ada alasan yang sah untuk membingungkan aplikasi offchain dengan memberi tahu mereka tentang transfer yang tidak benar-benar terjadi.
+Namun, `dropNewTokens` tidak melakukan itu. Ia memancarkan peristiwa `Transfer`, tetapi sebenarnya tidak mentransfer token apa pun. Tidak ada alasan yang sah untuk membingungkan aplikasi offchain dengan memberi tahu mereka tentang transfer yang tidak benar-benar terjadi.
 
 ### Fungsi `Approve` pembakaran {#the-burning-approve-function}
 
@@ -235,7 +235,7 @@ Masalah kualitas kode ini tidak _membuktikan_ bahwa kode ini adalah penipuan, te
 
 #### Fungsi `mount` {#the-mount-function}
 
-Meskipun tidak ditentukan dalam [standar](https://eips.ethereum.org/EIPS/eip-20), secara umum fungsi yang membuat token baru disebut [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn).
+Meskipun tidak ditentukan dalam standar, secara umum fungsi yang membuat token baru disebut [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn).
 
 Jika kita melihat di konstruktor `wARB`, kita melihat fungsi pencetakan waktu telah diubah namanya menjadi `mount` karena suatu alasan, dan dipanggil lima kali dengan seperlima dari pasokan awal, alih-alih sekali untuk seluruh jumlah demi efisiensi.
 
@@ -311,7 +311,7 @@ Ada beberapa trik yang dapat kita gunakan untuk mengidentifikasi bahwa token ERC
 
 ## Peristiwa `Approval` yang mencurigakan {#suspicious-approval-events}
 
-[Peristiwa `Approval`](https://eips.ethereum.org/EIPS/eip-20#approval) seharusnya hanya terjadi dengan permintaan langsung (berbeda dengan [peristiwa `Transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer-1) yang dapat terjadi sebagai akibat dari jatah). [Lihat dokumentasi Solidity](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin) untuk penjelasan terperinci tentang masalah ini dan mengapa permintaan harus langsung, daripada dimediasi oleh kontrak.
+Peristiwa `Approval` seharusnya hanya terjadi dengan permintaan langsung (berbeda dengan peristiwa `Transfer` yang dapat terjadi sebagai akibat dari jatah). [Lihat dokumentasi Solidity](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin) untuk penjelasan terperinci tentang masalah ini dan mengapa permintaan harus langsung, daripada dimediasi oleh kontrak.
 
 Ini berarti bahwa peristiwa `Approval` yang menyetujui pengeluaran dari [akun yang dimiliki secara eksternal](/developers/docs/accounts/#types-of-account) harus berasal dari transaksi yang berasal dari akun tersebut, dan yang tujuannya adalah kontrak ERC-20. Jenis persetujuan apa pun lainnya dari akun yang dimiliki secara eksternal adalah mencurigakan.
 
@@ -420,7 +420,7 @@ Jika persetujuan berasal dari akun yang dimiliki secara eksternal, dapatkan tran
 if (owner.toLowerCase() != txn.from.toLowerCase()) return ev
 ```
 
-Kita tidak bisa hanya memeriksa kesetaraan string karena alamat adalah heksadesimal, sehingga mengandung huruf. Terkadang, misalnya dalam `txn.from`, huruf-huruf tersebut semuanya huruf kecil. Dalam kasus lain, seperti `ev.args._owner`, alamatnya dalam [huruf campuran untuk identifikasi kesalahan](https://eips.ethereum.org/EIPS/eip-55).
+Kita tidak bisa hanya memeriksa kesetaraan string karena alamat adalah heksadesimal, sehingga mengandung huruf. Terkadang, misalnya dalam `txn.from`, huruf-huruf tersebut semuanya huruf kecil. Dalam kasus lain, seperti `ev.args._owner`, alamatnya dalam huruf campuran untuk identifikasi kesalahan.
 
 Tetapi jika transaksi bukan dari pemilik, dan pemilik tersebut dimiliki secara eksternal, maka kita memiliki transaksi yang mencurigakan.
 

@@ -48,7 +48,7 @@ lang: ur
 
 ایتھیریم کے دو برقرار رکھے گئے عوامی ٹیسٹ کے نفاذ بھی ہیں: <span dir="ltr">Sepolia</span> اور <span dir="ltr">Hoodi</span>۔ طویل مدتی تعاون کے ساتھ تجویز کردہ آزمائشی نیٹ ورک <span dir="ltr">Hoodi</span> ہے، جس پر کوئی بھی توثیق کرنے کے لیے آزاد ہے۔ <span dir="ltr">Sepolia</span> ایک اجازت یافتہ توثیق کار سیٹ کا استعمال کرتا ہے، جس کا مطلب ہے کہ اس آزمائشی نیٹ ورک پر نئے توثیق کاروں تک کوئی عام رسائی نہیں ہے۔
 
-- [<span dir="ltr">Hoodi</span> اسٹیکنگ لانچ پیڈ](https://hoodi.launchpad.ethereum.org/)
+- <span dir="ltr">Hoodi</span> اسٹیکنگ لانچ پیڈ
 
 ### <span dir="ltr">Kurtosis</span> ایتھیریم پیکیج {#kurtosis}
 

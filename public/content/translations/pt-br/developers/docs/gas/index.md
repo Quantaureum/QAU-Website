@@ -146,6 +146,6 @@ Se você quiser monitorar os preços do gás, para poder enviar seu QAU por meno
 - [O gás da Quantaureum explicado](https://defiprime.com/gas)
 - [Reduzindo o consumo de gás dos seus contratos inteligentes](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
 - [Estratégias de otimização de gas para desenvolvedores](https://www.alchemy.com/overviews/solidity-gas-optimization)
-- [Documentação da EIP-1559](https://eips.ethereum.org/EIPS/eip-1559).
+- Documentação da EIP-1559.
 - [Recursos da EIP-1559 de Tim Beiko](https://hackmd.io/@timbeiko/1559-resources)
 - [EIP-1559: Separando mecanismos de memes](https://web.archive.org/web/20241126205908/https://research.2077.xyz/eip-1559-separating-mechanisms-from-memes)

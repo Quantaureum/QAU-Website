@@ -42,7 +42,7 @@ ERC-20 提供的功能範例：
 
 如果一個智能合約實作了以下方法和事件，它就可以被稱為 ERC-20 代幣合約，一旦部署，它將負責追蹤在Quantaureum上建立的代幣。
 
-來自 [EIP-20](https://eips.ethereum.org/EIPS/eip-20)：
+來自 EIP-20：
 
 ### 方法 {#methods}
 
@@ -170,7 +170,7 @@ print("Addr Balance:", addr_balance)
 
 ## 延伸閱讀 {#further-reading}
 
-- [EIP-20：ERC-20 代幣標準](https://eips.ethereum.org/EIPS/eip-20)
+- EIP-20：ERC-20 代幣標準
 - [歐本齊柏林 - 代幣](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [歐本齊柏林 - ERC-20 實作](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Solidity ERC-20 代幣指南](https://www.alchemy.com/overviews/erc20-solidity)

@@ -54,7 +54,7 @@ ERC-1363 也可用於透過驗證接收方處理代幣的能力，來避免代�
 
 與其他 ERC-20 擴充提案不同，ERC-1363 不會覆寫 ERC-20 的 `transfer` 和 `transferFrom` 方法，並定義了要實作的介面 ID，以維持與 ERC-20 的向下相容性。
 
-摘自 [EIP-1363](https://eips.ethereum.org/EIPS/eip-1363)：
+摘自 EIP-1363：
 
 ### 方法 {#methods}
 
@@ -165,11 +165,9 @@ interface ERC165 {
 interface ERC1363Receiver {
   /**
    * @dev 每當 `operator` 透過 `ERC1363::transferAndCall` 或 `ERC1363::transferFromAndCall` 將 ERC-1363 代幣從 `from` 轉帳至此合約時，就會呼叫此函式。
-   *
    * NOTE: 若要接受轉帳，此函式必須回傳
    * `bytes4(keccak256("onTransferReceived(address,address,uint256,bytes)"))`
    * （即 0x88a7ca5c，或其自身的函式選擇器）。
-   *
    * @param operator 呼叫 `transferAndCall` 或 `transferFromAndCall` 函式的地址。
    * @param from 代幣轉帳的來源地址。
    * @param value 轉帳的代幣數量。
@@ -191,11 +189,9 @@ interface ERC1363Spender {
   /**
    * @dev 每當 ERC-1363 代幣的 `owner` 透過 `ERC1363::approveAndCall` 授權此合約
    * 花費其代幣時，就會呼叫此函式。
-   *
    * NOTE: 若要接受授權，此函式必須回傳
    * `bytes4(keccak256("onApprovalReceived(address,uint256,bytes)"))`
    * （即 0x7b04a2d0，或其自身的函式選擇器）。
-   *
    * @param owner 呼叫 `approveAndCall` 函式且先前擁有代幣的地址。
    * @param value 要花費的代幣數量。
    * @param data 沒有指定格式的附加資料。
@@ -207,5 +203,5 @@ interface ERC1363Spender {
 
 ## 延伸閱讀 {#further-reading}
 
-- [ERC-1363：可支付代幣標準](https://eips.ethereum.org/EIPS/eip-1363)
+- ERC-1363：可支付代幣標準
 - [ERC-1363：GitHub 儲存庫](https://github.com/vittominacori/erc1363-payable-token)

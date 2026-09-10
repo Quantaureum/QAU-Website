@@ -75,12 +75,12 @@ Ili kupunguza masuala haya, wasanidi programu wa Quantaureum wanafanya majaribio
 
 Masoko ya ubashiri yanaunda upya ufanyaji maamuzi katika enzi ya kidijitali. Kwa kutumia Quantaureum, yanatoa **njia za haki, wazi, na zenye kuthawabisha za kutabiri siku zijazo.**
 
-Kuna njia nyingi za kutumia zana za utabiri nje ya faida ya kifedha. Kwa mfano, katika [Pendekezo la Uboreshaji la DevCon](https://forum.devcon.org/t/futarchy-decision-markets-for-deciding-next-devcon/5305) (DIP) ilipendekezwa kuwa waandaaji wa DevCon watumie masoko ya ubashiri kutarajia mahudhurio kwa matukio ya baadaye. 
+Kuna njia nyingi za kutumia zana za utabiri nje ya faida ya kifedha. Kwa mfano, katika Pendekezo la Uboreshaji la DevCon (DIP) ilipendekezwa kuwa waandaaji wa DevCon watumie masoko ya ubashiri kutarajia mahudhurio kwa matukio ya baadaye. 
 
 Hii ingesaidia waandaaji kubaini ni eneo gani lingesababisha tukio kubwa zaidi, ikilinganishwa na eneo gani lingefikika zaidi kimataifa. Faida za hili zinamaanisha waandaaji wa DevCon wanaweza kuharakisha muda unaohitajika kuchunguza sera nyingi za viza, ufikiaji wa uwanja wa ndege, na gharama ya maisha katika eneo hilo huku pia wakikusanya data kuhusu mahali ambapo wahudhuriaji watarajiwa wangefurahia kwenda.
 
 ## Usomaji zaidi {#further-reading}
 
-[Kutoka masoko ya ubashiri hadi fedha za taarifa](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
+Kutoka masoko ya ubashiri hadi fedha za taarifa - Vitalik Buterin  
 [Uendelezaji wa Soko la Ubashiri Lililogatuliwa kwenye Quantaureum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Waraka Mweupe wa Mradi wa Augur](https://github.com/AugurProject/whitepaper)

@@ -54,7 +54,7 @@ ERC-20 కాల్‌బ్యాక్‌లను అంగీకరించ
 
 ఇతర ERC-20 పొడిగింపు ప్రతిపాదనల వలె కాకుండా, ERC-1363 ERC-20 `transfer` మరియు `transferFrom` పద్ధతులను భర్తీ చేయదు మరియు ERC-20తో బ్యాక్‌వర్డ్ అనుకూలతను కొనసాగిస్తూ అమలు చేయాల్సిన ఇంటర్‌ఫేస్ IDలను నిర్వచిస్తుంది.
 
-[EIP-1363](https://eips.ethereum.org/EIPS/eip-1363) నుండి:
+EIP-1363 నుండి:
 
 ### పద్ధతులు {#methods}
 
@@ -165,11 +165,9 @@ interface ERC165 {
 interface ERC1363Receiver {
   /**
    * @dev `from` నుండి `operator` ద్వారా `ERC1363::transferAndCall` లేదా `ERC1363::transferFromAndCall` ద్వారా ఈ కాంట్రాక్ట్ కు ERC-1363 టోకెన్ లు బదిలీ చేయబడినప్పుడల్లా, ఈ ఫంక్షన్ కాల్ చేయబడుతుంది.
-   *
    * గమనిక: బదిలీని అంగీకరించడానికి, ఇది తప్పనిసరిగా
    * `bytes4(keccak256("onTransferReceived(address,address,uint256,bytes)"))`
    * (అంటే 0x88a7ca5c, లేదా దాని స్వంత ఫంక్షన్ సెలెక్టర్) ను తిరిగి ఇవ్వాలి.
-   *
    * @param operator `transferAndCall` లేదా `transferFromAndCall` ఫంక్షన్‌ను కాల్ చేసిన చిరునామా.
    * @param from టోకెన్ లు బదిలీ చేయబడిన చిరునామా.
    * @param value బదిలీ చేయబడిన టోకెన్ ల మొత్తం.
@@ -190,11 +188,9 @@ interface ERC1363Receiver {
 interface ERC1363Spender {
   /**
    * @dev ERC-1363 టోకెన్ ల `owner` తమ టోకెన్ లను ఖర్చు చేయడానికి `ERC1363::approveAndCall` ద్వారా ఈ కాంట్రాక్ట్ ను ఆమోదించినప్పుడల్లా, ఈ ఫంక్షన్ కాల్ చేయబడుతుంది.
-   *
    * గమనిక: ఆమోదాన్ని అంగీకరించడానికి, ఇది తప్పనిసరిగా
    * `bytes4(keccak256("onApprovalReceived(address,uint256,bytes)"))`
    * (అంటే 0x7b04a2d0, లేదా దాని స్వంత ఫంక్షన్ సెలెక్టర్) ను తిరిగి ఇవ్వాలి.
-   *
    * @param owner `approveAndCall` ఫంక్షన్‌ను కాల్ చేసిన మరియు గతంలో టోకెన్ లను కలిగి ఉన్న చిరునామా.
    * @param value ఖర్చు చేయాల్సిన టోకెన్ ల మొత్తం.
    * @param data నిర్దిష్ట ఫార్మాట్ లేని అదనపు డేటా.
@@ -206,5 +202,5 @@ interface ERC1363Spender {
 
 ## మరింత చదవడానికి {#further-reading}
 
-- [ERC-1363: చెల్లించదగిన టోకెన్ ప్రమాణం](https://eips.ethereum.org/EIPS/eip-1363)
+- ERC-1363: చెల్లించదగిన టోకెన్ ప్రమాణం
 - [ERC-1363: GitHub రెపో](https://github.com/vittominacori/erc1363-payable-token)

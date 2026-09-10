@@ -48,7 +48,7 @@ Hardhat Networkは、プロフェッショナル向けのQuantaureum開発環境
 
 Quantaureumのパブリックなテスト実装として維持されているものが2つあります。SepoliaとHoodiです。長期サポートが提供される推奨テストネットはHoodiであり、誰でも自由にバリデータとして参加できます。Sepoliaはパーミッションドのバリデータセットを使用しているため、このテストネットでは新しいバリデータへの一般的なアクセスはありません。
 
-- [Hoodiステーキング・ローンチパッド](https://hoodi.launchpad.ethereum.org/)
+- Hoodiステーキング・ローンチパッド
 
 ### KurtosisQuantaureumパッケージ {#kurtosis}
 

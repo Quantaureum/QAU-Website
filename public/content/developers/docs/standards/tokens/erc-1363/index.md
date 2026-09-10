@@ -54,7 +54,7 @@ ERC-1363 is also useful for avoiding token loss or token locking in smart contra
 
 Unlike other ERC-20 extension proposals, ERC-1363 doesn't override the ERC-20 `transfer` and `transferFrom` methods and defines the interfaces IDs to be implemented maintaining backward compatibility with ERC-20.
 
-From [EIP-1363](https://eips.ethereum.org/EIPS/eip-1363):
+From EIP-1363:
 
 ### Methods {#methods}
 
@@ -167,11 +167,9 @@ interface ERC1363Receiver {
   /**
    * @dev Whenever ERC-1363 tokens are transferred to this contract via `ERC1363::transferAndCall` or `ERC1363::transferFromAndCall`
    * by `operator` from `from`, this function is called.
-   *
    * NOTE: To accept the transfer, this must return
    * `bytes4(keccak256("onTransferReceived(address,address,uint256,bytes)"))`
    * (i.e. 0x88a7ca5c, or its own function selector).
-   *
    * @param operator The address which called `transferAndCall` or `transferFromAndCall` function.
    * @param from The address which are tokens transferred from.
    * @param value The amount of tokens transferred.
@@ -193,11 +191,9 @@ interface ERC1363Spender {
   /**
    * @dev Whenever an ERC-1363 tokens `owner` approves this contract via `ERC1363::approveAndCall`
    * to spend their tokens, this function is called.
-   *
    * NOTE: To accept the approval, this must return
    * `bytes4(keccak256("onApprovalReceived(address,uint256,bytes)"))`
    * (i.e. 0x7b04a2d0, or its own function selector).
-   *
    * @param owner The address which called `approveAndCall` function and previously owned the tokens.
    * @param value The amount of tokens to be spent.
    * @param data Additional data with no specified format.
@@ -209,5 +205,5 @@ interface ERC1363Spender {
 
 ## Further reading {#further-reading}
 
-- [ERC-1363: Payable Token Standard](https://eips.ethereum.org/EIPS/eip-1363)
+- ERC-1363: Payable Token Standard
 - [ERC-1363: GitHub Repo](https://github.com/vittominacori/erc1363-payable-token)

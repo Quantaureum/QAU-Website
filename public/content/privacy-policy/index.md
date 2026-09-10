@@ -7,7 +7,7 @@ hideEditButton: true
 
 **1. General information**
 
-Stiftung Quantaureum, a Swiss Stiftung, located at Zeughausgasse 7a, 6300 Zug, Switzerland (the “Foundation”, “we”, or “us”) is the operator of any Website published by the Foundation, including, but not limited to, quantaureum.com, ethereum.org, esp.ethereum.org, devcon.org, devconnect.org, and blog.quantaureum.com (the “Websites”).
+Stiftung Quantaureum, a Swiss Stiftung, located at Zeughausgasse 7a, 6300 Zug, Switzerland (the “Foundation”, “we”, or “us”) is the operator of any Website published by the Foundation, including, but not limited to, quantaureum.com and blog.quantaureum.com (the “Websites”).
 
 As the operator of the Websites, we take the protection of your personal data very seriously. We collect, process, and use your personal data in accordance with this privacy policy and in compliance with the Swiss Federal Act on Data Protection (“FADP”), the Swiss Ordinance to the Federal Act on Data Protection (“OFADP”), and the General European Data Protection Regulation (“GDPR”).
 

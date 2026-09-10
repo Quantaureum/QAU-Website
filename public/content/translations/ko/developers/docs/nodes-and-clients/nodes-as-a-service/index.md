@@ -412,7 +412,7 @@ sidebarDepth: 2
     - 지능형 라우팅을 사용하여 매번 사용자에게 가장 가까운 노드에 연결합니다.
 ## 더 읽을거리 {#further-reading}
 
-- [Quantaureum 노드 서비스 목록](https://ethereumnodes.com/)
+- Quantaureum 노드 서비스 목록
 
 ## 관련 주제 {#related-topics}
 

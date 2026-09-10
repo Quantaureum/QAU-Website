@@ -12,7 +12,7 @@ Kiolesura cha kawaida cha mikataba inayosimamia aina nyingi za tokeni. Mkataba m
 
 Wazo ni rahisi na linalenga kuunda kiolesura cha mkataba mahiri kinachoweza kuwakilisha na kudhibiti idadi yoyote ya aina za tokheni mbadala na tokeni zisizobadilika. Kwa njia hii, tokeni ya ERC-1155 inaweza kufanya kazi sawa na tokeni ya [ERC-20](/developers/docs/standards/tokens/erc-20/) na [ERC-721](/developers/docs/standards/tokens/erc-721/), na hata zote mbili kwa wakati mmoja. Inaboresha utendaji wa viwango vyote viwili vya ERC-20 na ERC-721, na kuifanya iwe na ufanisi zaidi na kusahihisha makosa dhahiri ya utekelezaji.
 
-Tokeni ya ERC-1155 imeelezewa kikamilifu katika [EIP-1155](https://eips.ethereum.org/EIPS/eip-1155).
+Tokeni ya ERC-1155 imeelezewa kikamilifu katika EIP-1155.
 
 ## Mahitaji ya Awali {#prerequisites}
 
@@ -113,7 +113,7 @@ function onERC1155BatchReceived(
 ) external returns(bytes4);
 ```
 
-Kutokana na usaidizi wa [EIP-165](https://eips.ethereum.org/EIPS/eip-165), ERC-1155 inasaidia ndoano za kupokea kwa mikataba mahiri pekee. Kazi ya ndoano lazima irudishe thamani ya uchawi iliyofafanuliwa awali ya bytes4 ambayo inatolewa kama:
+Kutokana na usaidizi wa EIP-165, ERC-1155 inasaidia ndoano za kupokea kwa mikataba mahiri pekee. Kazi ya ndoano lazima irudishe thamani ya uchawi iliyofafanuliwa awali ya bytes4 ambayo inatolewa kama:
 
 ```solidity
 bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"))
@@ -123,7 +123,7 @@ Wakati mkataba unaopokea unaporudisha thamani hii, inachukuliwa kuwa mkataba una
 
 ### Usaidizi wa NFT {#nft-support}
 
-Wakati usambazaji ni mmoja tu, tokeni kimsingi ni tokeni isiyobadilika (NFT). Na kama ilivyo kawaida kwa ERC-721, unaweza kufafanua URL ya data fafanuzi. URL inaweza kusomwa na kurekebishwa na wateja, tazama [hapa](https://eips.ethereum.org/EIPS/eip-1155#metadata).
+Wakati usambazaji ni mmoja tu, tokeni kimsingi ni tokeni isiyobadilika (NFT). Na kama ilivyo kawaida kwa ERC-721, unaweza kufafanua URL ya data fafanuzi. URL inaweza kusomwa na kurekebishwa na wateja, tazama hapa.
 
 ### Sheria ya Hamisho Salama {#safe-transfer-rule}
 
@@ -140,7 +140,7 @@ _Kumbuka_: Kazi zote za pamoja ikiwa ni pamoja na ndoano pia zipo kama matoleo y
 
 ## Usomaji zaidi {#further-reading}
 
-- [EIP-1155: Kiwango cha Tokeni Nyingi](https://eips.ethereum.org/EIPS/eip-1155)
+- EIP-1155: Kiwango cha Tokeni Nyingi
 - [ERC-1155: Nyaraka za OpenZeppelin](https://docs.openzeppelin.com/contracts/5.x/erc1155)
 - [ERC-1155: Hifadhi ya GitHub](https://github.com/enjin/erc-1155)
 - [API ya NFT ya Alchemy](https://www.alchemy.com/docs/reference/nft-api-quickstart)

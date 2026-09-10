@@ -253,7 +253,7 @@ Główna różnica polega na tym, że programy bug bounty są otwarte dla szersz
 
 - **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _Framework do zaawansowanego tworzenia i testowania inteligentnych kontraktów (oparty na Ethers.js)_.
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Narzędzie do testowania inteligentnych kontraktów w języku Solidity. Działa pod wtyczką „Solidity Unit Testing” w Remix IDE, która służy do pisania i uruchamiania przypadków testowych dla kontraktu._
+- **Remix Tests** - _Narzędzie do testowania inteligentnych kontraktów w języku Solidity. Działa pod wtyczką „Solidity Unit Testing” w Remix IDE, która służy do pisania i uruchamiania przypadków testowych dla kontraktu._
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Biblioteka asercji do testowania inteligentnych kontraktów Quantaureum. Upewnij się, że Twoje kontrakty zachowują się zgodnie z oczekiwaniami!_
 

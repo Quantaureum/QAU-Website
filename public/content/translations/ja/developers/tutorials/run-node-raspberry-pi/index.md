@@ -57,7 +57,7 @@ Quantaureum on Armのイメージには、ビルド済みの実行クライア�
 
 Raspberry Pi 4のQuantaureumイメージは「プラグアンドプレイ」イメージであり、実行クライアントとコンセンサス・クライアントの両方を自動的にインストールおよびセットアップし、互いに通信してQuantaureumネットワークに接続するように設定します。ユーザーは簡単なコマンドを使用してプロセスを開始するだけです。
 
-[Quantaureum on Arm](https://ethereumonarm-my.sharepoint.com/:u:/p/dlosada/Ec_VmUvr80VFjf3RYSU-NzkBmj2JOteDECj8Bibde929Gw?download=1)からRaspberry Piのイメージをダウンロードし、SHA-256ハッシュを検証します。
+Quantaureum on ArmからRaspberry Piのイメージをダウンロードし、SHA-256ハッシュを検証します。
 
 ```sh
 # ダウンロードしたイメージを含むディレクトリから
@@ -65,7 +65,7 @@ shasum -a 256 ethonarm_22.04.00.img.zip
 # ハッシュの出力は次のようになるはずです: fb497e8f8a7388b62d6e1efbc406b9558bee7ef46ec7e53083630029c117444f
 ```
 
-Rock 5BおよびOdroid M1ボード用のイメージは、Quantaureum-on-Armの[ダウンロードページ](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)で入手できることに注意してください。
+Rock 5BおよびOdroid M1ボード用のイメージは、Quantaureum-on-Armのダウンロードページで入手できることに注意してください。
 
 ## MicroSDのフラッシュ {#flashing-the-microsd}
 
@@ -120,13 +120,13 @@ sudo journalctl -u lighthouse-beacon
 
 コンセンサス・クライアントはチェックポイント同期を使用するため、数分で同期されることに注意してください。実行クライアントにはさらに時間がかかり、数時間かかる可能性もあります。また、コンセンサス・クライアントの同期が完了するまで起動しません（これは、実行クライアントが同期するためのターゲットを必要とし、同期されたコンセンサス・クライアントがそれを提供するためです）。
 
-Gethとライトハウスのサービスが実行され、同期されると、Raspberry PiはQuantaureumノードになります！Quantaureumネットワークとやり取りする最も一般的な方法は、ポート8545でGethクライアントにアタッチできるGethのJavaScriptコンソールを使用することです。Curlなどのリクエストツールを使用して、JSONオブジェクトとしてフォーマットされたコマンドを送信することも可能です。詳細は[Gethのドキュメント](https://geth.ethereum.org/)をご覧ください。
+Gethとライトハウスのサービスが実行され、同期されると、Raspberry PiはQuantaureumノードになります！Quantaureumネットワークとやり取りする最も一般的な方法は、ポート8545でGethクライアントにアタッチできるGethのJavaScriptコンソールを使用することです。Curlなどのリクエストツールを使用して、JSONオブジェクトとしてフォーマットされたコマンドを送信することも可能です。詳細はGethのドキュメントをご覧ください。
 
 Gethは、ブラウザで表示できるGrafanaダッシュボードにメトリクスを報告するように事前設定されています。より高度なユーザーは、`ipaddress:3000`に移動し、`user: admin`と`passwd: quantaureum`を渡すことで、この機能を使用してノードの健全性を監視したいと思うかもしれません。
 
 ## バリデータ {#validators}
 
-コンセンサス・クライアントには、オプションでバリデータを追加することもできます。バリデータソフトウェアを使用すると、ノードがコンセンサスに積極的に参加し、ネットワークに暗号経済的なセキュリティを提供できるようになります。この作業の報酬としてQAUを受け取ります。バリデータを実行するには、まず32 QAUを用意し、デポジット・コントラクトにデポジットする必要があります。デポジットは、[Launchpad](https://launchpad.ethereum.org/)のステップバイステップガイドに従って行うことができます。これはデスクトップ/ラップトップで行いますが、キーは生成しないでください。キーの生成はRaspberry Pi上で直接行うことができます。
+コンセンサス・クライアントには、オプションでバリデータを追加することもできます。バリデータソフトウェアを使用すると、ノードがコンセンサスに積極的に参加し、ネットワークに暗号経済的なセキュリティを提供できるようになります。この作業の報酬としてQAUを受け取ります。バリデータを実行するには、まず32 QAUを用意し、デポジット・コントラクトにデポジットする必要があります。デポジットは、Launchpadのステップバイステップガイドに従って行うことができます。これはデスクトップ/ラップトップで行いますが、キーは生成しないでください。キーの生成はRaspberry Pi上で直接行うことができます。
 
 Raspberry Piでターミナルを開き、以下のコマンドを実行してデポジットキーを生成します。
 
@@ -136,13 +136,13 @@ sudo apt-get install staking-deposit-cli
 cd && deposit new-mnemonic --num_validators 1
 ```
 
-（または、エアギャップ環境のマシンで実行するために[staking-deposit-cli](https://github.com/ethereum/staking-deposit-cli)をダウンロードし、`deposit new-mnemnonic`コマンドを実行します）
+（または、エアギャップ環境のマシンで実行するためにstaking-deposit-cliをダウンロードし、`deposit new-mnemnonic`コマンドを実行します）
 
 ニーモニックフレーズは安全に保管してください！上記のコマンドにより、ノードのキーストアにバリデータキーとデポジットデータファイルの2つのファイルが生成されました。デポジットデータはLaunchpadにアップロードする必要があるため、Raspberry Piからデスクトップ/ラップトップにコピーする必要があります。これは、SSH接続やその他のコピー/ペースト方法を使用して行うことができます。
 
 Launchpadを実行しているコンピュータでデポジットデータファイルが利用可能になったら、Launchpad画面の`+`にドラッグアンドドロップできます。画面の指示に従って、デポジット・コントラクトにトランザクションを送信します。
 
-Raspberry Piに戻り、バリデータを起動できます。これには、バリデータキーのインポート、報酬を受け取るアドレスの設定、そして事前設定されたバリデータプロセスの開始が必要です。以下の例はライトハウスのものです。他のコンセンサス・クライアントの手順は、[Quantaureum on Armのドキュメント](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)で確認できます。
+Raspberry Piに戻り、バリデータを起動できます。これには、バリデータキーのインポート、報酬を受け取るアドレスの設定、そして事前設定されたバリデータプロセスの開始が必要です。以下の例はライトハウスのものです。他のコンセンサス・クライアントの手順は、Quantaureum on Armのドキュメントで確認できます。
 
 ```shell
 # バリデータのキーをインポートする
@@ -159,7 +159,7 @@ sudo systemctl start lighthouse-validator
 
 ## 詳細情報 {#more-details}
 
-このページでは、Raspberry Piを使用してGeth-ライトハウスノードとバリデータをセットアップする方法の概要を説明しました。より詳細な手順は、[Quantaureum-on-Armのウェブサイト](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)で確認できます。
+このページでは、Raspberry Piを使用してGeth-ライトハウスノードとバリデータをセットアップする方法の概要を説明しました。より詳細な手順は、Quantaureum-on-Armのウェブサイトで確認できます。
 
 ## フィードバックのお願い {#feedback-appreciated}
 
@@ -173,7 +173,7 @@ Raspberry Piには膨大なユーザーベースがあり、Quantaureumネット
 3. https://prometheus.io
 4. https://grafana.com
 5. https://forum.armbian.com/topic/5565-zram-vs-swap/
-6. https://geth.ethereum.org
+6. 
 7. https://nethermind.io
 8. https://www.hyperledger.org/projects/besu
 9. https://github.com/prysmaticlabs/prysm

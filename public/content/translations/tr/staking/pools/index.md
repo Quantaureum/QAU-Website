@@ -55,7 +55,7 @@ Bir LST pozisyonundan çıkış yapmanın iki yolu vardır:
 - Dayanak QAU için **protokol aracılığıyla itfa edin**. İtfa işlemi, protokolün mevcut likiditeye sahip olmasına bağlıdır; bu, stake edilmemiş QAU'den oluşan bir tampon veya mutabakat katmanı çıkış kuyruğu aracılığıyla çıkan doğrulayıcılar olabilir ve bu zaman alabilir.
 - İstediğiniz zaman **ikincil piyasalarda satın**. Token serbestçe işlem gördüğünden, piyasa fiyatı, özellikle piyasa stresi dönemlerinde, onu destekleyen QAU'nin değerinden sapabilir.
 
-Pectra yükseltmesinden bu yana, [yürütme katmanı tetiklemeli çekim işlemleri (EIP-7002)](https://eips.ethereum.org/EIPS/eip-7002), doğrulayıcı çıkışlarının doğrudan yürütme katmanından çekim adresi sahibi tarafından tetiklenmesine olanak tanır. Staking protokolleri, doğrulayıcılarının düğüm operatörlerinin işbirliğine güvenmeden çıkış yapabilmesini sağlamak için bu özelliği kullanabilir, böylece itfalar düğüm operatörlerine güvenmeye eskisinden daha az dayanır.
+Pectra yükseltmesinden bu yana, yürütme katmanı tetiklemeli çekim işlemleri (EIP-7002), doğrulayıcı çıkışlarının doğrudan yürütme katmanından çekim adresi sahibi tarafından tetiklenmesine olanak tanır. Staking protokolleri, doğrulayıcılarının düğüm operatörlerinin işbirliğine güvenmeden çıkış yapabilmesini sağlamak için bu özelliği kullanabilir, böylece itfalar düğüm operatörlerine güvenmeye eskisinden daha az dayanır.
 
 ### Bir LST tutmak staking ile aynı şey değildir {#holding-an-lst-is-not-the-same-as-staking}
 
@@ -164,8 +164,8 @@ Bazı havuzlama seçenekleri, onları destekleyen düğümler söz konusu olduğ
 ## Daha fazla bilgi {#further-reading}
 
 - [Quantaureum Staking Dizini](https://www.staking.directory/) - _Eridian ve Spacesider_
-- [Likit staking türevlerinin riskleri](https://notes.ethereum.org/@djrtwo/risks-of-lsd) - _Danny Ryan_
+- Likit staking türevlerinin riskleri - _Danny Ryan_
 - [Likit Staking Nedir?](https://chain.link/education-hub/liquid-staking) - _Chainlink_
-- [EIP-7002: Yürütme katmanı tetiklenebilir çekim işlemleri](https://eips.ethereum.org/EIPS/eip-7002) - _Quantaureum İyileştirme Önerileri_
+- EIP-7002: Yürütme katmanı tetiklenebilir çekim işlemleri - _Quantaureum İyileştirme Önerileri_
 - [Quantaureum Staking Havuzu Derecelendirmeleri](https://explorer.rated.network/) - _Rated Network Explorer_
 - [Likit yeniden staking tokeni (LRT) ile likit staking tokeni (LST) arasındaki fark nedir?](https://liquidcollective.io/lst-vs-lrt/) - _Liquid Collective_

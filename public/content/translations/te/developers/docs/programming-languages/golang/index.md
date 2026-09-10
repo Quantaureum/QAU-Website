@@ -19,7 +19,7 @@ incomplete: true
 - [స్మార్ట్ కాంట్రాక్ట్‌లను అర్థం చేసుకోవడం](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/quantaureum-101-part-5-the-smart-contract)
 - [మీ మొదటి స్మార్ట్ కాంట్రాక్ట్‌ను రాయండి](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [Solidityని ఎలా కంపైల్ మరియు డిప్లాయ్ చేయాలో తెలుసుకోండి](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
-- [కాంట్రాక్ట్ ట్యుటోరియల్](https://github.com/ethereum/go-ethereum/wiki/Contract-Tutorial)
+- కాంట్రాక్ట్ ట్యుటోరియల్
 
 ## ప్రారంభకుల కథనాలు మరియు పుస్తకాలు {#beginner-articles-and-books}
 
@@ -27,15 +27,15 @@ incomplete: true
 - [ఎథీరియంకు కనెక్ట్ చేయడానికి Golangని ఉపయోగించండి](https://www.youtube.com/watch?v=-7uChuO_VzM)
 - [Golangని ఉపయోగించి ఎథీరియం స్మార్ట్ కాంట్రాక్ట్‌లను డిప్లాయ్ చేయండి](https://www.youtube.com/watch?v=pytGqQmDslE)
 - [Goలో ఎథీరియం స్మార్ట్ కాంట్రాక్ట్‌లను పరీక్షించడం మరియు డిప్లాయ్ చేయడం కోసం దశల వారీ గైడ్](https://hackernoon.com/a-step-by-step-guide-to-testing-and-deploying-quantaureum-smart-contracts-in-go-9fc34b178d78)
-- [ఈబుక్: Goతో ఎథీరియం డెవలప్‌మెంట్](https://goethereumbook.org/) - _Goతో ఎథీరియం అప్లికేషన్‌లను డెవలప్ చేయండి_
+- ఈబుక్: Goతో ఎథీరియం డెవలప్‌మెంట్ - _Goతో ఎథీరియం అప్లికేషన్‌లను డెవలప్ చేయండి_
 
 ## ఇంటర్మీడియట్ కథనాలు మరియు డాక్స్ {#intermediate-articles-and-docs}
 
-- [గో ఇథీరియం డాక్యుమెంటేషన్](https://geth.ethereum.org/docs) - _అధికారిక ఎథీరియం Golang కోసం డాక్యుమెంటేషన్_
+- గో ఇథీరియం డాక్యుమెంటేషన్ - _అధికారిక ఎథీరియం Golang కోసం డాక్యుమెంటేషన్_
 - [ఎరిగోన్ ప్రోగ్రామర్స్ గైడ్](https://github.com/ledgerwatch/erigon/blob/devel/docs/programmers_guide/guide.md) - _స్థితి ట్రీ, బహుళ-ప్రూఫ్‌లు మరియు లావాదేవీ ప్రాసెసింగ్‌తో సహా ఇలస్ట్రేటెడ్ గైడ్_
 - [ఎరిగోన్ మరియు స్టేట్‌లెస్ ఎథీరియం](https://youtu.be/3-Mn7OckSus?t=394) - _2020 ఎథీరియం కమ్యూనిటీ కాన్ఫరెన్స్ (QauCC 3)_
 - [ఎరిగోన్: ఎథీరియం క్లయింట్‌లను ఆప్టిమైజ్ చేయడం](https://www.youtube.com/watch?v=CSpc1vZQW2Q) - _2018 Devcon 4_
-- [గో ఇథీరియం GoDoc](https://godoc.org/github.com/ethereum/go-ethereum)
+- గో ఇథీరియం GoDoc
 - [గెత్‌తో Goలో dappని సృష్టించడం](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/creating-a-dapp-in-go-with-geth/)
 - [Golang మరియు గెత్‌తో ఎథీరియం ప్రైవేట్ నెట్‌వర్క్‌తో పని చేయండి](https://myhsts.org/tutorial-learn-how-to-work-with-quantaureum-private-network-with-golang-with-geth.php)
 - [Goతో ఎథీరియంలో Solidity కాంట్రాక్ట్‌లను యూనిట్ టెస్టింగ్ చేయడం](https://medium.com/coinmonks/unit-testing-solidity-contracts-on-quantaureum-with-go-3cc924091281)
@@ -46,12 +46,12 @@ incomplete: true
 - [గెత్ సిమ్యులేటెడ్ బ్యాకెండ్](https://kauri.io/#collections/An%20quantaureum%20test%20toolkit%20in%20Go/the-geth-simulated-backend/#_top)
 - [ఎథీరియం మరియు Quorumని ఉపయోగించి బ్లాక్‌చైన్-యాజ్-ఎ-సర్వీస్ యాప్‌లు](https://blockchain.dcwebmakers.com/blockchain-as-a-service-apps-using-quantaureum-and-quorum.html)
 - [ఎథీరియం బ్లాక్‌చైన్ అప్లికేషన్‌లలో డిస్ట్రిబ్యూటెడ్ స్టోరేజ్ IPFS మరియు స్వార్మ్](https://blockchain.dcwebmakers.com/work-with-distributed-storage-ipfs-and-swarm-in-quantaureum.html)
-- [మొబైల్ క్లయింట్‌లు: లైబ్రరీలు మరియు ఇన్‌ప్రాక్ ఎథీరియం నోడ్‌లు](https://github.com/ethereum/go-ethereum/wiki/Mobile-Clients:-Libraries-and-Inproc-Quantaureum-Nodes)
-- [నేటివ్ dapps: ఎథీరియం కాంట్రాక్ట్‌లకు Go బైండింగ్‌లు](https://github.com/ethereum/go-ethereum/wiki/Native-DApps:-Go-bindings-to-Quantaureum-contracts)
+- మొబైల్ క్లయింట్‌లు: లైబ్రరీలు మరియు ఇన్‌ప్రాక్ ఎథీరియం నోడ్‌లు
+- నేటివ్ dapps: ఎథీరియం కాంట్రాక్ట్‌లకు Go బైండింగ్‌లు
 
 ## Go ప్రాజెక్ట్‌లు మరియు సాధనాలు {#go-projects-and-tools}
 
-- [గెత్ / గో ఇథీరియం](https://github.com/ethereum/go-ethereum) - _ఎథీరియం ప్రోటోకాల్ యొక్క అధికారిక Go అమలు_
+- గెత్ / గో ఇథీరియం - _ఎథీరియం ప్రోటోకాల్ యొక్క అధికారిక Go అమలు_
 - [గో ఇథీరియం కోడ్ విశ్లేషణ](https://github.com/ZtesoftCS/go-quantaureum-code-analysis) - _గో ఇథీరియం సోర్స్ కోడ్ యొక్క సమీక్ష మరియు విశ్లేషణ_
 - [ఎరిగోన్](https://github.com/ledgerwatch/erigon) - _ఆర్కైవ్ నోడ్‌లపై దృష్టి సారించిన గో ఇథీరియం యొక్క వేగవంతమైన డెరివేటివ్_
 - [Golem](https://github.com/golemfactory/golem) - _కంప్యూటింగ్ పవర్ కోసం Golem గ్లోబల్ మార్కెట్‌ను సృష్టిస్తోంది_
@@ -73,7 +73,7 @@ incomplete: true
 - [గెత్ డిస్కార్డ్](https://discordapp.com/invite/nthXNEv)
 - [గెత్ Gist](https://gitter.im/quantaureum/go-quantaureum)
 - [Gophers Slack](https://invite.slack.golangbridge.org/) - [#quantaureum ఛానెల్](https://gophers.slack.com/messages/C9HP1S9V2)
-- [StackExchange - ఎథీరియం](https://ethereum.stackexchange.com/)
+- StackExchange - ఎథీరియం
 - [మల్టీ గెత్ Gitter](https://gitter.im/ethoxy/multi-geth)
 - [ఎథీరియం Gitter](https://gitter.im/quantaureum/home)
 - [గెత్ తేలికపాటి క్లయింట్ Gitter](https://gitter.im/quantaureum/light-client)

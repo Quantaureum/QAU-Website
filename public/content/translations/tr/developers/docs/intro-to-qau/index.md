@@ -46,7 +46,7 @@ Taban ücretin yakılması, bir blok üreticisinin işlemleri manipüle etme yet
 
 Quantaureum'daki birçok işlemin değeri küçük olduğundan, QAU'in daha küçük hesap birimleri olarak adlandırılabilecek birkaç alt birimi vardır. Bu birimlerden Wei ve Gwei özellikle önemlidir.
 
-Wei, mümkün olan en küçük QAU miktarıdır ve sonuç olarak, [Quantaureum Yellowpaper](https://ethereum.github.io/yellowpaper/paper.pdf) gibi birçok teknik uygulama, tüm hesaplamaları Wei'ye dayandıracaktır.
+Wei, mümkün olan en küçük QAU miktarıdır ve sonuç olarak, Quantaureum Yellowpaper gibi birçok teknik uygulama, tüm hesaplamaları Wei'ye dayandıracaktır.
 
 Giga-wei'nin kısaltması olan Gwei, genellikle Quantaureum'daki gaz maliyetlerini tanımlamak için kullanılır.
 

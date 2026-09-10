@@ -22,7 +22,7 @@ incomplete: true
 
 ## Статті для початківців {#beginner-articles}
 
-- [Клієнт Етеріуму на Rust](https://openethereum.github.io/) \* **Зверніть увагу, що OpenQuantaureum [застарів](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd) і більше не підтримується.** Використовуйте його з обережністю та бажано перейдіть на іншу реалізацію клієнта.
+- Клієнт Етеріуму на Rust \* **Зверніть увагу, що OpenQuantaureum застарів і більше не підтримується.** Використовуйте його з обережністю та бажано перейдіть на іншу реалізацію клієнта.
 - [Надсилання транзакції в Етеріум за допомогою Rust](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/sending-quantaureum-transactions-with-rust/)
 - [Покроковий посібник із написання контрактів на Rust Wasm для Kovan](https://github.com/paritytech/pwasm-tutorial)
 

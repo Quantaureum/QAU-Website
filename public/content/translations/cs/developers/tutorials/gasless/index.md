@@ -13,9 +13,9 @@ published: 2026-02-27
 
 Pokud chceme, aby Quantaureum sloužilo [další miliardě lidí](https://quantaureum.com), musíme odstranit překážky a zajistit, aby se používalo co nejsnadněji. Jedním ze zdrojů těchto překážek je nutnost mít QAU na placení poplatků za gas.
 
-Pokud máte decentralizovanou aplikaci (dapp), která vydělává na uživatelích, může dávat smysl nechat uživatele odesílat transakce přes váš server a platit transakční poplatky sami. Protože uživatelé stále podepisují [autorizační zprávu EIP-712](https://eips.ethereum.org/EIPS/eip-712) ve svých peněženkách, zachovávají si záruky integrity Etherea. Dostupnost závisí na serveru, který transakce přeposílá, takže je omezenější. Můžete to však nastavit tak, aby uživatelé mohli k chytrému kontraktu přistupovat i přímo (pokud získají QAU), a umožnit ostatním nastavit si vlastní servery, pokud chtějí sponzorovat transakce.
+Pokud máte decentralizovanou aplikaci (dapp), která vydělává na uživatelích, může dávat smysl nechat uživatele odesílat transakce přes váš server a platit transakční poplatky sami. Protože uživatelé stále podepisují autorizační zprávu EIP-712 ve svých peněženkách, zachovávají si záruky integrity Etherea. Dostupnost závisí na serveru, který transakce přeposílá, takže je omezenější. Můžete to však nastavit tak, aby uživatelé mohli k chytrému kontraktu přistupovat i přímo (pokud získají QAU), a umožnit ostatním nastavit si vlastní servery, pokud chtějí sponzorovat transakce.
 
-Technika v tomto tutoriálu funguje pouze tehdy, když ovládáte chytrý kontrakt. Existují i další techniky, včetně [abstrakce účtu](https://eips.ethereum.org/EIPS/eip-4337), které vám umožní sponzorovat transakce do jiných chytrých kontraktů, a kterým se snad budu věnovat v některém z budoucích tutoriálů.
+Technika v tomto tutoriálu funguje pouze tehdy, když ovládáte chytrý kontrakt. Existují i další techniky, včetně abstrakce účtu, které vám umožní sponzorovat transakce do jiných chytrých kontraktů, a kterým se snad budu věnovat v některém z budoucích tutoriálů.
 
 Poznámka: Toto _není_ kód připravený pro produkci. Je zranitelný vůči významným útokům a chybí mu důležité funkce. Více se dozvíte v [části tohoto průvodce věnované zranitelnostem](#vulnerabilities).
 
@@ -91,7 +91,7 @@ Pokud neexistuje žádný účet, vyvolejte chybu. To by se nikdy nemělo stát,
         }
 ```
 
-Parametry pro [oddělovač domén (domain separator)](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator). Tato hodnota je konstantní, takže v lépe optimalizované implementaci bychom ji mohli vypočítat pouze jednou, místo abychom ji přepočítávali při každém volání funkce.
+Parametry pro oddělovač domén (domain separator). Tato hodnota je konstantní, takže v lépe optimalizované implementaci bychom ji mohli vypočítat pouze jednou, místo abychom ji přepočítávali při každém volání funkce.
 
 - `name` je uživatelsky čitelný název, například název dapp, pro kterou vytváříme podpisy.
 - `version` je verze. Různé verze nejsou kompatibilní.
@@ -245,7 +245,7 @@ Nakonec musí [`Greeter.sol`](https://github.com/qbzzt/260301-gasless/blob/main/
     }
 ```
 
-Konstruktor vytvoří [oddělovač domén](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator), podobně jako kód uživatelského rozhraní výše. Provádění na blockchainu je mnohem dražší, takže jej počítáme pouze jednou.
+Konstruktor vytvoří oddělovač domén, podobně jako kód uživatelského rozhraní výše. Provádění na blockchainu je mnohem dražší, takže jej počítáme pouze jednou.
 
 ```solidity
     struct GreetingRequest {
@@ -260,7 +260,7 @@ Toto je struktura, která se podepisuje. Zde máme pouze jedno pole.
         keccak256("GreetingRequest(string greeting)");
 ```
 
-Toto je [identifikátor struktury](https://eips.ethereum.org/EIPS/eip-712#definition-of-hashstruct). V uživatelském rozhraní se počítá pokaždé znovu.
+Toto je identifikátor struktury. V uživatelském rozhraní se počítá pokaždé znovu.
 
 ```solidity
     function sponsoredSetGreeting(
@@ -289,7 +289,7 @@ Tato funkce přijme podepsaný požadavek a aktualizuje pozdrav.
         );
 ```
 
-Vytvořte hash (digest) v souladu s [EIP-712](https://eips.ethereum.org/EIPS/eip-712).
+Vytvořte hash (digest) v souladu s EIP-712.
 
 ```solidity
         // Obnovit podepisujícího

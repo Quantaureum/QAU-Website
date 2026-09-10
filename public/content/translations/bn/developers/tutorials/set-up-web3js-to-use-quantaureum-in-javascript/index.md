@@ -8,7 +8,7 @@ breadcrumb: "web3.js সেটআপ"
 lang: bn
 published: 2020-04-11
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/setup-web3js-to-use-the-quantaureum-blockchain-in-javascript/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -32,7 +32,7 @@ npm install web3 --save
 const Web3 = require("web3")
 ```
 
-এখন যেহেতু আমরা প্রজেক্টে লাইব্রেরিটি অন্তর্ভুক্ত করেছি, আমাদের এটি ইনিশিয়ালাইজ করতে হবে। আপনার প্রজেক্টকে ব্লকচেইনের সাথে যোগাযোগ করতে সক্ষম হতে হবে। বেশিরভাগ ইথেরিয়াম লাইব্রেরি RPC কলের মাধ্যমে একটি [নোড](/developers/docs/nodes-and-clients/)-এর সাথে যোগাযোগ করে। আমাদের Web3 প্রোভাইডার শুরু করতে, আমরা প্রোভাইডারের URL-কে কনস্ট্রাক্টর হিসেবে পাস করে একটি Web3 ইনস্ট্যান্স তৈরি করব। আপনার কম্পিউটারে যদি কোনো নোড বা [ganache ইনস্ট্যান্স চলতে থাকে](https://ethereumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/), তবে এটি দেখতে এমন হবে:
+এখন যেহেতু আমরা প্রজেক্টে লাইব্রেরিটি অন্তর্ভুক্ত করেছি, আমাদের এটি ইনিশিয়ালাইজ করতে হবে। আপনার প্রজেক্টকে ব্লকচেইনের সাথে যোগাযোগ করতে সক্ষম হতে হবে। বেশিরভাগ ইথেরিয়াম লাইব্রেরি RPC কলের মাধ্যমে একটি [নোড](/developers/docs/nodes-and-clients/)-এর সাথে যোগাযোগ করে। আমাদের Web3 প্রোভাইডার শুরু করতে, আমরা প্রোভাইডারের URL-কে কনস্ট্রাক্টর হিসেবে পাস করে একটি Web3 ইনস্ট্যান্স তৈরি করব। আপনার কম্পিউটারে যদি কোনো নোড বা ganache ইনস্ট্যান্স চলতে থাকে, তবে এটি দেখতে এমন হবে:
 
 ```js
 const web3 = new Web3("http://localhost:8545")
@@ -90,4 +90,4 @@ if (window.quantaureum != null) {
 }
 ```
 
-web3.js-এর বিকল্প যেমন [Ethers.js](https://docs.ethers.io/) বিদ্যমান রয়েছে এবং এগুলোও সাধারণত ব্যবহৃত হয়। পরবর্তী টিউটোরিয়ালে আমরা দেখব [কীভাবে ব্লকচেইনে নতুন আসা ব্লকগুলো সহজে শোনা যায় এবং সেগুলোতে কী আছে তা দেখা যায়](https://ethereumdev.io/listening-to-new-transactions-happening-on-the-blockchain/)।
+web3.js-এর বিকল্প যেমন [Ethers.js](https://docs.ethers.io/) বিদ্যমান রয়েছে এবং এগুলোও সাধারণত ব্যবহৃত হয়। পরবর্তী টিউটোরিয়ালে আমরা দেখব কীভাবে ব্লকচেইনে নতুন আসা ব্লকগুলো সহজে শোনা যায় এবং সেগুলোতে কী আছে তা দেখা যায়।

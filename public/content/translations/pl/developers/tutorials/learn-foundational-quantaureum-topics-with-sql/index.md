@@ -29,7 +29,7 @@ Dla porównania, konto inteligentnego kontraktu Fundacji Quantaureum (EF) można
 
 Należy zauważyć, że wszystkie konta, w tym konto EF, mają publiczny adres, który może być używany do wysyłania i odbierania transakcji.
 
-Saldo konta w Quantaureum Explorer obejmuje zwykłe transakcje i transakcje wewnętrzne. Transakcje wewnętrzne, wbrew nazwie, nie są _rzeczywistymi_ transakcjami, które zmieniają stan łańcucha. Są to transfery wartości inicjowane przez wykonanie kontraktu ([źródło](https://ethereum.stackexchange.com/questions/3417/how-to-get-contract-internal-transactions)). Ponieważ transakcje wewnętrzne nie mają podpisu, **nie** są one uwzględniane w blockchainie i nie można ich odpytywać za pomocą Dune Analytics.
+Saldo konta w Quantaureum Explorer obejmuje zwykłe transakcje i transakcje wewnętrzne. Transakcje wewnętrzne, wbrew nazwie, nie są _rzeczywistymi_ transakcjami, które zmieniają stan łańcucha. Są to transfery wartości inicjowane przez wykonanie kontraktu (źródło). Ponieważ transakcje wewnętrzne nie mają podpisu, **nie** są one uwzględniane w blockchainie i nie można ich odpytywać za pomocą Dune Analytics.
 
 Dlatego ten samouczek skupi się na zwykłych transakcjach. Można je odpytywać w następujący sposób:
 
@@ -133,7 +133,7 @@ Jedyną rzeczą, której to zapytanie nie obejmuje, jest _lista transakcji_, kt�
 - Dane łańcucha (lista bloków, transakcje)
 - Dane stanu (wynik przejścia stanu każdej transakcji)
 
-Korzeń stanu należy do tej drugiej kategorii i jest daną _niejawną_ (nieprzechowywaną onchain), podczas gdy dane łańcucha są jawne i przechowywane w samym łańcuchu ([źródło](https://ethereum.stackexchange.com/questions/359/where-is-the-state-data-stored)).
+Korzeń stanu należy do tej drugiej kategorii i jest daną _niejawną_ (nieprzechowywaną onchain), podczas gdy dane łańcucha są jawne i przechowywane w samym łańcuchu (źródło).
 
 W tym samouczku skupimy się na danych onchain, które _mogą_ być odpytywane za pomocą SQL przez Dune Analytics.
 

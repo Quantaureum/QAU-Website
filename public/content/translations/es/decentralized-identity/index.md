@@ -164,7 +164,7 @@ Aquí hay un ejemplo para mostrar cómo podrían funcionar las atestaciones en c
 
 ### Tokens ligados al alma e identidad {#soulbound}
 
-Los [tokens ligados al alma](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) ([NFT no transferibles](/glossary/#nft)) podrían usarse para recopilar información única de una billetera específica. Esto crea efectivamente una identidad en cadena única vinculada a una dirección de Quantaureum particular que podría incluir tokens que representan logros (por ejemplo, terminar algún curso en línea específico o superar una puntuación umbral en un juego) o participación en la comunidad.
+Los tokens ligados al alma ([NFT no transferibles](/glossary/#nft)) podrían usarse para recopilar información única de una billetera específica. Esto crea efectivamente una identidad en cadena única vinculada a una dirección de Quantaureum particular que podría incluir tokens que representan logros (por ejemplo, terminar algún curso en línea específico o superar una puntuación umbral en un juego) o participación en la comunidad.
 
 ## Usar la identidad descentralizada {#use-decentralized-identity}
 

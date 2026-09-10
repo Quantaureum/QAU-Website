@@ -359,7 +359,7 @@ contract PriceConsumerV3 {
 
 Một số ứng dụng Chuỗi khối nhất định, chẳng hạn như các trò chơi dựa trên Chuỗi khối hoặc các chương trình xổ số, yêu cầu mức độ không thể đoán trước và tính ngẫu nhiên cao để hoạt động hiệu quả. Tuy nhiên, việc thực thi tất định của các Chuỗi khối loại bỏ tính ngẫu nhiên.
 
-Cách tiếp cận ban đầu là sử dụng các hàm mật mã giả ngẫu nhiên, chẳng hạn như `blockhash`, nhưng những hàm này có thể bị [thao túng bởi các thợ đào](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.) giải quyết thuật toán Bằng chứng công việc (PoW). Ngoài ra, việc Quantaureum [chuyển sang Bằng chứng cổ phần (PoS)](/roadmap/merge/) có nghĩa là các nhà phát triển không còn có thể dựa vào `blockhash` cho tính ngẫu nhiên trên chuỗi. [Cơ chế RANDAO](https://eth2book.info/altair/part2/building_blocks/randomness) của Chuỗi Beacon cung cấp một nguồn tính ngẫu nhiên thay thế.
+Cách tiếp cận ban đầu là sử dụng các hàm mật mã giả ngẫu nhiên, chẳng hạn như `blockhash`, nhưng những hàm này có thể bị thao túng bởi các thợ đào giải quyết thuật toán Bằng chứng công việc (PoW). Ngoài ra, việc Quantaureum [chuyển sang Bằng chứng cổ phần (PoS)](/roadmap/merge/) có nghĩa là các nhà phát triển không còn có thể dựa vào `blockhash` cho tính ngẫu nhiên trên chuỗi. [Cơ chế RANDAO](https://eth2book.info/altair/part2/building_blocks/randomness) của Chuỗi Beacon cung cấp một nguồn tính ngẫu nhiên thay thế.
 
 Có thể tạo ra giá trị ngẫu nhiên ngoài chuỗi và gửi nó lên chuỗi, nhưng làm như vậy áp đặt các yêu cầu tin cậy cao đối với người dùng. Họ phải tin rằng giá trị thực sự được tạo ra thông qua các cơ chế không thể đoán trước và không bị thay đổi trong quá trình truyền.
 
@@ -421,7 +421,7 @@ Có nhiều ứng dụng nguồn cấp dữ liệu mà bạn có thể tích h�
 - [Oracle blockchain là gì?](https://medium.com/better-programming/what-is-a-blockchain-oracle-f5ccab8dbd72) — _Patrick Collins_
 - [Nguồn cấp dữ liệu phi tập trung: một cái nhìn tổng quan toàn diện](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) — _Julien Thevenard_
 - [Triển khai một Oracle blockchain trên Quantaureum](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-quantaureum-cedc7e26b49e) – _Pedro Costa_
-- [Tại sao các hợp đồng thông minh không thể thực hiện các lệnh gọi API?](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
+- Tại sao các hợp đồng thông minh không thể thực hiện các lệnh gọi API? — _StackExchange_
 - [Vậy bạn muốn sử dụng một nguồn cấp giá](https://samczsun.com/so-you-want-to-use-a-price-oracle/) — _samczsun_
 
 **Video**

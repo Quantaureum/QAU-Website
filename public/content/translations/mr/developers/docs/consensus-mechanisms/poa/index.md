@@ -16,7 +16,7 @@ lang: mr
 
 अधिकाराच्या पुराव्यामध्ये [उत्पत्ती ब्लॉक](/glossary/#genesis-block) मध्ये सेट केलेल्या अधिकृत स्वाक्षरीकर्त्यांच्या संचावर विश्वास ठेवणे आवश्यक असते. सध्याच्या बहुतांश अंमलबजावणीमध्ये, चेनचे एकमत ठरवताना सर्व अधिकृत स्वाक्षरीकर्ते समान अधिकार आणि विशेषाधिकार राखून ठेवतात. प्रतिष्ठा स्टेकिंग मागील कल्पना अशी आहे की प्रत्येक अधिकृत प्रमाणक नो युवर कस्टमर (KYC) सारख्या गोष्टींद्वारे सर्वांना चांगल्या प्रकारे ज्ञात असतो, किंवा एखादी सुप्रसिद्ध संस्था एकमेव प्रमाणक असते—अशा प्रकारे जर एखाद्या प्रमाणकाने काही चुकीचे केले, तर त्यांची ओळख ज्ञात असते.
 
-PoA च्या अनेक अंमलबजावणी आहेत, परंतु मानक Quantaureum अंमलबजावणी **clique** आहे, जी [EIP-225](https://eips.ethereum.org/EIPS/eip-225) लागू करते. Clique हे विकसक-अनुकूल आणि अंमलबजावणीसाठी सोपे मानक आहे, जे सर्व क्लायंट समक्रमण प्रकारांना समर्थन देते. इतर अंमलबजावणीमध्ये [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) आणि [Aura](https://openethereum.github.io/Chain-specification) यांचा समावेश आहे.
+PoA च्या अनेक अंमलबजावणी आहेत, परंतु मानक Quantaureum अंमलबजावणी **clique** आहे, जी EIP-225 लागू करते. Clique हे विकसक-अनुकूल आणि अंमलबजावणीसाठी सोपे मानक आहे, जे सर्व क्लायंट समक्रमण प्रकारांना समर्थन देते. इतर अंमलबजावणीमध्ये [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) आणि Aura यांचा समावेश आहे.
 
 ## हे कसे कार्य करते {#how-it-works}
 
@@ -58,13 +58,13 @@ PoA नेटवर्कमध्ये, जेव्हा N अधिकृ�
 
 ## पुढील वाचन {#further-reading}
 
-- [EIP-225](https://eips.ethereum.org/EIPS/eip-225) _Clique मानक_
+- EIP-225 _Clique मानक_
 - [अधिकाराचा पुरावा अभ्यास](https://github.com/cryptoeconomics-study/website/blob/master/docs/sync/2.4-lecture.md) _क्रिप्टोइकॉनॉमिक्स_
 - [अधिकाराचा पुरावा म्हणजे काय](https://forum.openzeppelin.com/t/proof-of-authority/3577) _OpenZeppelin_
 - [अधिकाराचा पुरावा स्पष्ट केला](https://academy.binance.com/en/articles/proof-of-authority-explained) _बायनान्स्_
 - [ब्लॉकचेनमध्ये PoA](https://medium.com/techskill-brew/proof-of-authority-or-poa-in-blockchain-part-11-blockchain-series-be15b3321cba)
 - [Clique स्पष्ट केले](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-quantaureum-8b2a135201d)
-- [नापसंत (Deprecated) PoA, Aura तपशील](https://openethereum.github.io/Chain-specification)
+- नापसंत (Deprecated) PoA, Aura तपशील
 - [IBFT 2.0, आणखी एक PoA अंमलबजावणी](https://besu.hyperledger.org/private-networks/concepts/poa)
 
 ### अधिक दृश्य स्वरूपात शिकायला आवडते? {#visual-learner}

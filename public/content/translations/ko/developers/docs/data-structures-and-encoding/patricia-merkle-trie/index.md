@@ -251,13 +251,13 @@ else:
   value = TxType | encode(tx)
 ```
 
-이에 대한 자세한 내용은 [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718) 문서에서 확인할 수 있습니다.
+이에 대한 자세한 내용은 EIP-2718 문서에서 확인할 수 있습니다.
 
 ### 영수증 트라이 {#receipts-trie}
 
 모든 블록에는 자체 영수증 트라이가 있습니다. 여기서 `path`는 `rlp(transactionIndex)`입니다. `transactionIndex`는 해당 트랜잭션이 포함된 블록 내의 인덱스입니다. 영수증 트라이는 절대 업데이트되지 않습니다. 트랜잭션 트라이와 유사하게, 현재 및 레거시 영수증이 있습니다. 영수증 트라이에서 특정 영수증을 쿼리하려면 블록 내 트랜잭션의 인덱스, 영수증 페이로드 및 트랜잭션 유형이 필요합니다. 반환되는 영수증은 `TransactionType`와 `ReceiptPayload`의 연결로 정의되는 `Receipt` 유형이거나, `rlp([status, cumulativeGasUsed, logsBloom, logs])`로 정의되는 `LegacyReceipt` 유형일 수 있습니다.
 
-이에 대한 자세한 내용은 [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718) 문서에서 확인할 수 있습니다.
+이에 대한 자세한 내용은 EIP-2718 문서에서 확인할 수 있습니다.
 
 ## 더 읽을거리 {#further-reading}
 

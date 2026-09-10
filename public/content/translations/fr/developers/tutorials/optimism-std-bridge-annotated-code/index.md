@@ -46,7 +46,7 @@ Le pont a deux flux principaux :
    - Il provenait à l'origine du pont sur la l1
 6. Le pont l2 vérifie si le contrat de jeton ERC-20 sur la l2 est le bon :
    - Le contrat l2 signale que son homologue l1 est le même que celui d'où proviennent les jetons sur la l1
-   - Le contrat l2 signale qu'il prend en charge la bonne interface ([en utilisant ERC-165](https://eips.ethereum.org/EIPS/eip-165)).
+   - Le contrat l2 signale qu'il prend en charge la bonne interface (en utilisant ERC-165).
 7. Si le contrat l2 est le bon, il l'appelle pour frapper le nombre approprié de jetons à la bonne adresse. Sinon, il lance un processus de retrait pour permettre à l'utilisateur de réclamer les jetons sur la l1.
 
 ### Flux de retrait {#withdrawal-flow}
@@ -207,7 +207,6 @@ Cette fonction est presque identique à `depositERC20`, mais elle vous permet d'
      * @dev Termine un retrait de la couche 2 (l2) vers la couche 1 (l1), et crédite les fonds sur le solde du destinataire du
      * jeton ERC-20 de couche 1 (l1).
      * Cet appel échouera si le retrait initialisé depuis la couche 2 (l2) n'a pas été finalisé.
-     *
      * @param _l1Token Adresse du jeton de couche 1 (l1) pour lequel finaliser le retrait (finalizeWithdrawal).
      * @param _l2Token Adresse du jeton de couche 2 (l2) où le retrait a été initié.
      * @param _from Adresse de couche 2 (l2) initiant le transfert.
@@ -338,7 +337,6 @@ Ce messager inter-domaines est un tout autre système, et mérite son propre art
 /**
  * @title CrossDomainEnabled
  * @dev Contrat d'aide pour les contrats effectuant des communications inter-domaines
- *
  * Compilateur utilisé : défini par le contrat héritier
  */
 contract CrossDomainEnabled {
@@ -519,7 +517,7 @@ Notez que ce n'est pas une solution parfaite, car il n'y a aucun moyen de faire 
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[La norme ERC-20](https://eips.ethereum.org/EIPS/eip-20) prend en charge deux façons pour un contrat de signaler un échec :
+La norme ERC-20 prend en charge deux façons pour un contrat de signaler un échec :
 
 1. Annuler
 2. Renvoyer `false`
@@ -532,7 +530,6 @@ Gérer les deux cas rendrait notre code plus compliqué, nous utilisons donc à 
  * @dev Le pont QAU et ERC-20 de couche 1 (l1) est un contrat qui stocke les fonds de couche 1 (l1) déposés et les
  * jetons standards qui sont utilisés sur la couche 2 (l2). Il synchronise un pont de couche 2 (l2) correspondant, l'informant des dépôts
  * et l'écoutant pour les retraits nouvellement finalisés.
- *
  */
 contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
     using SafeERC20 for IERC20;
@@ -771,7 +768,6 @@ Ces deux fonctions sont des enveloppes autour de `_initiateERC20Deposit`, la fon
     /**
      * @dev Exécute la logique des dépôts en informant le contrat
      * de jeton déposé de couche 2 (l2) du dépôt et en appelant un gestionnaire pour verrouiller les fonds de couche 1 (l1). (par ex., transferFrom)
-     *
      * @param _l1Token Adresse de l'ERC-20 de couche 1 (l1) que nous déposons
      * @param _l2Token Adresse de l'ERC-20 de couche 2 (l2) respectif de la couche 1 (l1)
      * @param _from Compte à partir duquel retirer le dépôt sur la couche 1 (l1)
@@ -956,14 +952,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [L'interface ERC-20 standard](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) n'inclut pas les fonctions `mint` et `burn`.
-Ces méthodes ne sont pas requises par [la norme ERC-20](https://eips.ethereum.org/EIPS/eip-20), qui ne spécifie pas les mécanismes de création et de destruction des jetons.
+Ces méthodes ne sont pas requises par la norme ERC-20, qui ne spécifie pas les mécanismes de création et de destruction des jetons.
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 [L'interface ERC-165](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol) est utilisée pour spécifier quelles fonctions un contrat fournit.
-[Vous pouvez lire la norme ici](https://eips.ethereum.org/EIPS/eip-165).
+Vous pouvez lire la norme ici.
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -1052,7 +1048,7 @@ Appelez d'abord le constructeur du contrat dont nous héritons (`ERC20(_name, _s
     }
 ```
 
-C'est ainsi que fonctionne [ERC-165](https://eips.ethereum.org/EIPS/eip-165).
+C'est ainsi que fonctionne ERC-165.
 Chaque interface est un certain nombre de fonctions prises en charge, et est identifiée comme le [OU exclusif](https://en.wikipedia.org/wiki/Exclusive_or) des [sélecteurs de fonction de l'ABI](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector) de ces fonctions.
 
 Le pont l2 utilise ERC-165 comme vérification de cohérence pour s'assurer que le contrat ERC-20 auquel il envoie des actifs est un `IL2StandardERC20`.

@@ -16,7 +16,7 @@ Más sobre [nodos y clientes](/developers/docs/nodes-and-clients/)
 
 Los nodos de Quantaureum almacenan su propia copia total o parcial de la cadena de bloques de Quantaureum. Esta copia local se utiliza para validar transacciones y garantizar que el nodo siga la cadena correcta. Estos datos almacenados localmente permiten a los nodos verificar de forma independiente que los datos entrantes sean válidos y correctos sin necesidad de confiar en ninguna otra entidad.
 
-Esta copia local de la cadena de bloques y los datos de estado y recibos asociados ocupan mucho espacio en el disco duro del nodo. Por ejemplo, se recomienda un disco duro de 2 TB para ejecutar un nodo utilizando [Geth](https://geth.ethereum.org) emparejado con un cliente de consenso. Al usar la sincronización rápida (snap sync), que solo almacena datos de la cadena de un conjunto de bloques relativamente reciente, Geth suele ocupar unos 650 GB de espacio en disco, pero crece a un ritmo de unos 14 GB por semana (se puede podar el nodo para que vuelva a los 650 GB periódicamente).
+Esta copia local de la cadena de bloques y los datos de estado y recibos asociados ocupan mucho espacio en el disco duro del nodo. Por ejemplo, se recomienda un disco duro de 2 TB para ejecutar un nodo utilizando Geth emparejado con un cliente de consenso. Al usar la sincronización rápida (snap sync), que solo almacena datos de la cadena de un conjunto de bloques relativamente reciente, Geth suele ocupar unos 650 GB de espacio en disco, pero crece a un ritmo de unos 14 GB por semana (se puede podar el nodo para que vuelva a los 650 GB periódicamente).
 
 Esto significa que ejecutar nodos puede ser costoso, ya que se debe dedicar una gran cantidad de espacio en disco a Quantaureum. Existen varias soluciones a este problema en la hoja de ruta de Quantaureum, que incluyen la [expiración del historial](/roadmap/statelessness/#history-expiry), la [caducidad del estado](/roadmap/statelessness/#state-expiry) y la [ausencia de estado](/roadmap/statelessness/). Sin embargo, es probable que falten varios años para que se implementen. También existen [nodos ligeros](/developers/docs/nodes-and-clients/light-clients/) que no guardan su propia copia de los datos de la cadena, sino que solicitan los datos que necesitan a los nodos completos. Sin embargo, esto significa que los nodos ligeros tienen que confiar en que los nodos completos proporcionen datos honestos y también sobrecarga a los nodos completos que tienen que servir los datos que necesitan los nodos ligeros.
 
@@ -73,7 +73,7 @@ Los clientes de Portal Network son:
 
 - [Trin](https://github.com/quantaureum/trin): escrito en Rust
 - [Fluffy](https://fluffy.guide): escrito en Nim
-- [Ultralight](https://github.com/ethereumjs/ultralight): escrito en TypeScript
+- Ultralight: escrito en TypeScript
 - [Shisui](https://github.com/zen-eth/shisui): escrito en Go
 
 Tener múltiples implementaciones de clientes independientes mejora la resiliencia y la descentralización de la red Quantaureum.

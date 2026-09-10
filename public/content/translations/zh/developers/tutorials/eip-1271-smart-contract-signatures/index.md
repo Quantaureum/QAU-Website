@@ -9,7 +9,7 @@ breadcrumb: "EIP-1271 签名"
 published: 2023-01-12
 ---
 
-[EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) 标准允许智能合约验证签名。
+EIP-1271 标准允许智能合约验证签名。
 
 在本教程中，我们将概述数字签名、EIP-1271 的背景，以及 [Safe](https://safe.global/)（原 Gnosis Safe）所使用的 EIP-1271 具体实现。总而言之，这可以作为在你自己的合约中实现 EIP-1271 的起点。
 
@@ -71,7 +71,6 @@ contract ERC1271 {
    * @dev 应该返回提供的签名对于提供的哈希是否有效
    * @param _hash      要签名的数据的哈希
    * @param _signature 与 _hash 关联的签名字节数组
-   *
    * 当函数通过时，必须返回 bytes4 魔术值 0x1626ba7e。
    * 不得修改状态（对于 solc < 0.5 使用 STATICCALL，对于 solc > 0.5 使用 view 修饰符）
    * 必须允许外部调用
@@ -91,7 +90,7 @@ contract ERC1271 {
 
 一个实现 EIP-1271 的著名合约是 Safe（原 Gnosis Safe）。
 
-在 Safe 的代码中，`isValidSignature` [的实现](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol)使得签名可以通过[两种方式](https://ethereum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support)进行创建和验证：
+在 Safe 的代码中，`isValidSignature` [的实现](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol)使得签名可以通过两种方式进行创建和验证：
 
 1. 链上消息
    1. 创建：Safe 所有者创建一个新的 Safe 交易来“签署”一条消息，将该消息作为数据传递到交易中。一旦有足够多的所有者签署了该交易以达到多重签名阈值，该交易就会被广播并执行。在交易中，有一个名为 (`signMessage(bytes calldata _data)`) 的 Safe 函数，它将该消息添加到一个“已批准”消息列表中。
@@ -102,9 +101,9 @@ contract ERC1271 {
 
 ## `_hash` 参数到底是什么？为什么不传递完整的消息？ {#what-exactly-is-the-hash-parameter-why-not-pass-the-whole-message}
 
-你可能已经注意到，[EIP-1271 接口](https://eips.ethereum.org/EIPS/eip-1271)中的 `isValidSignature` 函数并不接收消息本身，而是接收一个 `_hash` 参数。这意味着我们不是将完整的任意长度消息传递给 `isValidSignature`，而是传递该消息的 32 字节哈希（通常是 keccak256）。
+你可能已经注意到，EIP-1271 接口中的 `isValidSignature` 函数并不接收消息本身，而是接收一个 `_hash` 参数。这意味着我们不是将完整的任意长度消息传递给 `isValidSignature`，而是传递该消息的 32 字节哈希（通常是 keccak256）。
 
-调用数据（即传递给智能合约函数的函数参数数据）的每个字节[消耗 16 Gas（如果是零字节则消耗 4 Gas）](https://eips.ethereum.org/EIPS/eip-2028)，因此如果消息很长，这可以节省大量的 Gas。
+调用数据（即传递给智能合约函数的函数参数数据）的每个字节消耗 16 Gas（如果是零字节则消耗 4 Gas），因此如果消息很长，这可以节省大量的 Gas。
 
 ### 以前的 EIP-1271 规范 {#previous-eip-1271-specifications}
 
@@ -121,4 +120,4 @@ contract ERC1271 {
 
 ## 结论 {#conclusion}
 
-[EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) 是一个多功能标准，允许智能合约验证签名。它为智能合约表现得更像 EOA 打开了大门——例如，为“使用Quantaureum登录”与智能合约协同工作提供了一种方式——并且它可以通过多种方式实现（Safe 有一个值得考虑的、非同寻常且有趣的实现）。
+EIP-1271 是一个多功能标准，允许智能合约验证签名。它为智能合约表现得更像 EOA 打开了大门——例如，为“使用Quantaureum登录”与智能合约协同工作提供了一种方式——并且它可以通过多种方式实现（Safe 有一个值得考虑的、非同寻常且有趣的实现）。

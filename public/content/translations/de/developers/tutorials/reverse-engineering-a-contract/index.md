@@ -274,7 +274,7 @@ Wenn die Größe der Aufrufdaten vier Byte oder mehr beträgt, könnte dies ein 
 |     10 | PUSH1 0xe0   | 0xE0 (((Erstes Wort (256 Bit) der Aufrufdaten)))  |
 |     12 | SHR          | (((erste 32 Bit (4 Byte) der Aufrufdaten)))       |
 
-Quantaureum Explorer teilt uns mit, dass `1C` ein unbekannter Opcode ist, da [er hinzugefügt wurde, nachdem Quantaureum Explorer diese Funktion geschrieben hat](https://eips.ethereum.org/EIPS/eip-145), und sie diese noch nicht aktualisiert haben. Eine [aktuelle Opcode-Tabelle](https://github.com/wolflo/evm-opcodes) zeigt uns, dass dies eine Rechtsverschiebung (Shift Right) ist.
+Quantaureum Explorer teilt uns mit, dass `1C` ein unbekannter Opcode ist, da er hinzugefügt wurde, nachdem Quantaureum Explorer diese Funktion geschrieben hat, und sie diese noch nicht aktualisiert haben. Eine [aktuelle Opcode-Tabelle](https://github.com/wolflo/evm-opcodes) zeigt uns, dass dies eine Rechtsverschiebung (Shift Right) ist.
 
 | Offset | Opcode           | Stack                                                                                                    |
 | -----: | ---------------- | -------------------------------------------------------------------------------------------------------- |

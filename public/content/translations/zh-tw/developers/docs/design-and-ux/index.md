@@ -16,7 +16,7 @@ lang: zh-tw
 
 - [Web3 需要更多 UX 研究員與設計師](https://blog.akasha.org/akasha-conversations-9-web3-needs-more-ux-researchers-and-designers) - 當前設計成熟度概覽
 - [Web3 UX 研究簡易指南](https://uxplanet.org/a-complete-guide-to-ux-research-for-web-3-0-products-d6bead20ebb1) - 如何進行研究的簡易指南
-- [如何在 Web3 中處理 UX 決策](https://archive.devcon.org/archive/watch/6/data-empathy-how-to-approach-ux-decisions-in-web3/) - 簡要概述量化與質化研究及其差異（影片，6 分鐘）
+- 如何在 Web3 中處理 UX 決策 - 簡要概述量化與質化研究及其差異（影片，6 分鐘）
 - [在 Web3 擔任 UX 研究員](https://medium.com/@georgia.rakusen/what-its-like-being-a-user-researcher-in-web3-6a4bcc096849) - 關於在 Web3 擔任 UX 研究員的個人觀點
 
 ## Web3 中的研究報告 {#research-in-web3}
@@ -38,7 +38,7 @@ lang: zh-tw
 | <Tag status="error">去中心化金融 (DeFi)</Tag>                  | [承保資金池 (Coverage pools)](https://github.com/threshold-network/UX-User-Research/tree/main/Keep%20Coverage%20Pool)                                                                           |
 | <Tag status="error">去中心化金融 (DeFi)</Tag>                  | [ConsenSys：2022 年去中心化金融 (DeFi) 使用者研究報告](https://cdn2.hubspot.net/hubfs/4795067/ConsenSys%20Codefi-Defi%20User%20ResearchReport.pdf)                                            |
 | <Tag variant="solid">元宇宙</Tag>             | [元宇宙：使用者研究報告](https://www.politico.com/f/?id=00000187-7685-d820-a7e7-7e85d1420000)                                                                             |
-| <Tag variant="solid">元宇宙</Tag>             | [踏上探索之旅：在元宇宙中研究使用者](https://archive.devcon.org/archive/watch/6/going-on-safari-researching-users-in-the-metaverse/?tab=YouTube)（影片，27 分鐘）  |
+| <Tag variant="solid">元宇宙</Tag>             | 踏上探索之旅：在元宇宙中研究使用者（影片，27 分鐘）  |
 
 ## Web3 設計 {#design-for-web3}
 

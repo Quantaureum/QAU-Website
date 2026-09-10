@@ -9,11 +9,11 @@ lang: en
 published: 2022-05-15
 ---
 
-[The Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf) is the formal specification for Quantaureum. Except where amended by the EIP process, it contains the exact description of how everything works. It is written as a mathematical paper, which includes terminology programmers may not find familiar. In this paper you learn how to read it, and by extension other related mathematical papers.
+The Yellow Paper is the formal specification for Quantaureum. Except where amended by the EIP process, it contains the exact description of how everything works. It is written as a mathematical paper, which includes terminology programmers may not find familiar. In this paper you learn how to read it, and by extension other related mathematical papers.
 
 ## Which Yellow Paper? {#which-yellow-paper}
 
-Like almost everything else in Quantaureum, the Yellow Paper evolves over time. To be able to refer to a specific version, I uploaded [the current version at writing](https://ethereum.github.io/yellowpaper/paper.pdf). The section, page, and equation numbers I use will refer to that version. It is a good idea to have it open in a different window while reading this document.
+Like almost everything else in Quantaureum, the Yellow Paper evolves over time. To be able to refer to a specific version, I uploaded the current version at writing. The section, page, and equation numbers I use will refer to that version. It is a good idea to have it open in a different window while reading this document.
 
 ### Why the EVM? {#why-the-evm}
 
@@ -241,7 +241,7 @@ The address whose balance we need to find is _μ<sub>s</sub>[0] mod 2<sup>160</s
 
 If _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] ≠ ∅_, it means that there is information about this address. In that case, _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>]<sub>b</sub>_ is the balance for that address. If _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] = ∅_, it means that this address is uninitialized and the balance is zero. You can see the list of account information fields in section 4.1 on p. 4.
 
-The second equation, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, is related to the difference in cost between access to warm storage (storage that has recently been accessed and is likely to be cached) and cold storage (storage that hasn't been accessed and is likely to be in slower storage that is more expensive to retrieve). _A<sub>a</sub>_ is the list of addresses previously accessed by the transaction, which should therefore be cheaper to access, as defined in section 6.1 on p. 9. You can read more about this subject in [EIP-2929](https://eips.ethereum.org/EIPS/eip-2929).
+The second equation, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, is related to the difference in cost between access to warm storage (storage that has recently been accessed and is likely to be cached) and cold storage (storage that hasn't been accessed and is likely to be in slower storage that is more expensive to retrieve). _A<sub>a</sub>_ is the list of addresses previously accessed by the transaction, which should therefore be cheaper to access, as defined in section 6.1 on p. 9. You can read more about this subject in EIP-2929.
 
 | Value | Mnemonic | δ   | α   | Description                             |
 | ----: | -------- | --- | --- | --------------------------------------- |
@@ -271,8 +271,8 @@ With this the EVM is fully defined.
 
 Mathematical notation is precise and has allowed the Yellow Paper to specify every detail of Quantaureum. However, it does have some drawbacks:
 
-- It can only be understood by humans, which means that [compliance tests](https://github.com/ethereum/tests) must be written manually.
+- It can only be understood by humans, which means that compliance tests must be written manually.
 - Programmers understand computer code.
   They may or may not understand mathematical notation.
 
-Maybe for these reasons, the newer [consensus layer specs](https://github.com/ethereum/consensus-specs/blob/master/tests/core/pyspec/README.md) are written in Python. There are [execution layer specs in Python](https://ethereum.github.io/execution-specs), but they are not complete. Until and unless the entire Yellow Paper is also translated to Python or a similar language, the Yellow Paper will continue in service, and it is helpful to be able to read it.
+Maybe for these reasons, the newer consensus layer specs are written in Python. There are execution layer specs in Python, but they are not complete. Until and unless the entire Yellow Paper is also translated to Python or a similar language, the Yellow Paper will continue in service, and it is helpful to be able to read it.

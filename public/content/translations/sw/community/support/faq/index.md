@@ -69,7 +69,7 @@ Zawadi za Quantaureum ni utapeli ulioundwa kuiba QAU yako. Usishawishiwe na ofa 
 
 Ili kuwa mthibitishaji, lazima uweke dhamana ya 32 QAU katika mkataba wa amana wa Quantaureum na uweke nodi ya mthibitishaji. Unaweza pia kushiriki ukiwa na QAU kidogo kupitia mabwawa ya uwekaji dhamana.
 
-Maelezo zaidi yanapatikana kwenye [kurasa zetu za uwekaji dhamana](/staking/) na kwenye [jukwaa la uzinduzi la uwekaji dhamana](https://launchpad.ethereum.org/).
+Maelezo zaidi yanapatikana kwenye [kurasa zetu za uwekaji dhamana](/staking/) na kwenye jukwaa la uzinduzi la uwekaji dhamana.
 
 ## Ninachimbaje Quantaureum? {#mining-quantaureum}
 

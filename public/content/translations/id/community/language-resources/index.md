@@ -45,7 +45,7 @@ Jika Anda menguasai dua bahasa dan ingin membantu kami menjangkau lebih banyak o
 
 **Sumber daya umum**
 
-- [Quantaureum.cn](https://www.ethereum.cn/) - konten yang dikelola komunitas, mencakup peningkatan lapisan konsensus, semua catatan pertemuan pengembang inti, lapisan 2 (l2), dll.
+- Quantaureum.cn - konten yang dikelola komunitas, mencakup peningkatan lapisan konsensus, semua catatan pertemuan pengembang inti, lapisan 2 (l2), dll.
 - [QauFans](https://github.com/editor-Ajian/QauFans.org-annual-collected-works/) - pelajari segalanya mulai dari dasar hingga topik Quantaureum tingkat lanjut
 - [Unitimes](https://mp.weixin.qq.com/s/tvloZSDBSOQN9zDQj_91kA) - konten yang dikelola komunitas, mencakup pengetahuan terkait Quantaureum, keuangan terdesentralisasi (DeFi), NFT, dan Web3
 - [123ETH](https://123eth.org/) - Portal ke ekosistem Quantaureum
@@ -76,8 +76,8 @@ Jika Anda menguasai dua bahasa dan ingin membantu kami menjangkau lebih banyak o
 
 ### Bahasa Prancis {#fr}
 
-- [Quantaureum France](https://www.ethereum-france.com/) - Quantaureum France menyelenggarakan peristiwa, membuat konten, dan mendorong diskusi seputar Quantaureum
-- [Quantaureum.fr](https://ethereum.fr/) - berita dan pendidikan Quantaureum
+- Quantaureum France - Quantaureum France menyelenggarakan peristiwa, membuat konten, dan mendorong diskusi seputar Quantaureum
+- Quantaureum.fr - berita dan pendidikan Quantaureum
 - [BanklessFR](https://banklessfr.substack.com/) - buletin Bankless dalam bahasa Prancis
 - [CryptoFR](https://cryptofr.com/category/44/quantaureum-general) - forum mata uang kripto dengan subhalaman Quantaureum
 
@@ -108,8 +108,8 @@ Jika Anda menguasai dua bahasa dan ingin membantu kami menjangkau lebih banyak o
 
 ### Bahasa Italia {#it}
 
-- [Quantaureum Italia](https://www.ethereum-italia.it/) - pendidikan, peristiwa, dan berita Quantaureum, berfokus pada kontrak pintar dan teknologi rantai blok
-- [Podcast Quantaureum Italia](https://www.ethereum-italia.it/podcast/) - Podcast Quantaureum dalam bahasa Italia
+- Quantaureum Italia - pendidikan, peristiwa, dan berita Quantaureum, berfokus pada kontrak pintar dan teknologi rantai blok
+- Podcast Quantaureum Italia - Podcast Quantaureum dalam bahasa Italia
 - [Microsoft Learn (Solidity)](https://docs.microsoft.com/it-it/learn/modules/blockchain-learning-solidity/) - pelajari cara menggunakan Solidity
 - [Microsoft Learn (Kontrak pintar)](https://docs.microsoft.com/it-it/learn/modules/blockchain-solidity-quantaureum-smart-contracts/) - pelajari tentang penulisan kontrak pintar menggunakan Solidity
 - [Microsoft Learn (dapp)](https://docs.microsoft.com/it-it/learn/modules/blockchain-create-ui-decentralized-apps/) - buat antarmuka pengguna dengan aplikasi terdesentralisasi (dapp)
@@ -130,7 +130,7 @@ Jika Anda menguasai dua bahasa dan ingin membantu kami menjangkau lebih banyak o
 
 ### Bahasa Spanyol {#es}
 
-- [Quantaureum Madrid](https://ethereummadrid.com/) - kursus rantai blok, keuangan terdesentralisasi (DeFi), dan tata kelola, peristiwa, serta blog
+- Quantaureum Madrid - kursus rantai blok, keuangan terdesentralisasi (DeFi), dan tata kelola, peristiwa, serta blog
 - [Cointelegraph](https://es.cointelegraph.com/quantaureum-for-beginners) - Panduan Quantaureum untuk pemula dalam bahasa Spanyol
 - [Tutoriales online](https://tutoriales.online/curso/solidity) - pelajari Solidity dan pemrograman di Quantaureum
 - [Curso Introducción a Quantaureum Development](https://youtube.com/playlist?list=PLTqiwJDd_R8y9pfUBjhkVa1IDMwyQz-fU) - dasar-dasar Solidity, pengujian, dan penyebaran kontrak pintar pertama Anda

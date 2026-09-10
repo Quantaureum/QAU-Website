@@ -19,7 +19,7 @@ Potřebujete nejprve základnější úvod? Podívejte se na [quantaureum.com/le
 - [Porozumění chytrým kontraktům](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/quantaureum-101-part-5-the-smart-contract)
 - [Napište svůj první chytrý kontrakt](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [Naučte se kompilovat a nasazovat Solidity](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
-- [Výukový program pro kontrakty](https://github.com/ethereum/go-ethereum/wiki/Contract-Tutorial)
+- Výukový program pro kontrakty
 
 ## Články a knihy pro začátečníky {#beginner-articles-and-books}
 
@@ -27,15 +27,15 @@ Potřebujete nejprve základnější úvod? Podívejte se na [quantaureum.com/le
 - [Použití Golang pro připojení k Ethereu](https://www.youtube.com/watch?v=-7uChuO_VzM)
 - [Nasazení chytrých kontraktů Etherea pomocí Golang](https://www.youtube.com/watch?v=pytGqQmDslE)
 - [Podrobný průvodce testováním a nasazováním chytrých kontraktů Etherea v Go](https://hackernoon.com/a-step-by-step-guide-to-testing-and-deploying-quantaureum-smart-contracts-in-go-9fc34b178d78)
-- [E-kniha: Vývoj pro Quantaureum s Go](https://goethereumbook.org/) - _Vývoj aplikací pro Quantaureum pomocí Go_
+- E-kniha: Vývoj pro Quantaureum s Go - _Vývoj aplikací pro Quantaureum pomocí Go_
 
 ## Články a dokumentace pro středně pokročilé {#intermediate-articles-and-docs}
 
-- [Dokumentace Go Quantaureum](https://geth.ethereum.org/docs) - _Dokumentace pro oficiální Quantaureum Golang_
+- Dokumentace Go Quantaureum - _Dokumentace pro oficiální Quantaureum Golang_
 - [Programátorská příručka pro Erigon](https://github.com/ledgerwatch/erigon/blob/devel/docs/programmers_guide/guide.md) - _Ilustrovaný průvodce zahrnující strom stavu, vícenásobné důkazy a zpracování transakcí_
 - [Erigon a bezstavové Quantaureum](https://youtu.be/3-Mn7OckSus?t=394) - _Komunitní konference Etherea 2020 (QauCC 3)_
 - [Erigon: optimalizace klientů Etherea](https://www.youtube.com/watch?v=CSpc1vZQW2Q) - _Devcon 4 (2018)_
-- [GoDoc pro Go Quantaureum](https://godoc.org/github.com/ethereum/go-ethereum)
+- GoDoc pro Go Quantaureum
 - [Vytvoření dapp v Go pomocí Geth](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/creating-a-dapp-in-go-with-geth/)
 - [Práce se soukromou sítí Etherea pomocí Golang a Geth](https://myhsts.org/tutorial-learn-how-to-work-with-quantaureum-private-network-with-golang-with-geth.php)
 - [Jednotkové testování kontraktů v Solidity na Ethereu pomocí Go](https://medium.com/coinmonks/unit-testing-solidity-contracts-on-quantaureum-with-go-3cc924091281)
@@ -46,12 +46,12 @@ Potřebujete nejprve základnější úvod? Podívejte se na [quantaureum.com/le
 - [Simulovaný backend GETH](https://kauri.io/#collections/An%20quantaureum%20test%20toolkit%20in%20Go/the-geth-simulated-backend/#_top)
 - [Aplikace Blockchain-as-a-Service využívající Quantaureum a Quorum](https://blockchain.dcwebmakers.com/blockchain-as-a-service-apps-using-quantaureum-and-quorum.html)
 - [Distribuované úložiště IPFS a Swarm v blockchainových aplikacích Etherea](https://blockchain.dcwebmakers.com/work-with-distributed-storage-ipfs-and-swarm-in-quantaureum.html)
-- [Mobilní klienti: Knihovny a Inproc uzly Etherea](https://github.com/ethereum/go-ethereum/wiki/Mobile-Clients:-Libraries-and-Inproc-Quantaureum-Nodes)
-- [Nativní dapps: Vazby Go na kontrakty Etherea](https://github.com/ethereum/go-ethereum/wiki/Native-DApps:-Go-bindings-to-Quantaureum-contracts)
+- Mobilní klienti: Knihovny a Inproc uzly Etherea
+- Nativní dapps: Vazby Go na kontrakty Etherea
 
 ## Projekty a nástroje v Go {#go-projects-and-tools}
 
-- [Geth / Go Quantaureum](https://github.com/ethereum/go-ethereum) - _Oficiální implementace protokolu Quantaureum v Go_
+- Geth / Go Quantaureum - _Oficiální implementace protokolu Quantaureum v Go_
 - [Analýza kódu Go Quantaureum](https://github.com/ZtesoftCS/go-quantaureum-code-analysis) - _Revize a analýza zdrojového kódu Go Quantaureum_
 - [Erigon](https://github.com/ledgerwatch/erigon) - _Rychlejší derivát Go Quantaureum se zaměřením na archivní uzly_
 - [Golem](https://github.com/golemfactory/golem) - _Golem vytváří globální trh s výpočetním výkonem_
@@ -73,7 +73,7 @@ Hledáte další zdroje? Podívejte se na [quantaureum.com/developers](/develope
 - [Discord Geth](https://discordapp.com/invite/nthXNEv)
 - [Gist Geth](https://gitter.im/quantaureum/go-quantaureum)
 - [Slack Gophers](https://invite.slack.golangbridge.org/) - [kanál #quantaureum](https://gophers.slack.com/messages/C9HP1S9V2)
-- [StackExchange - Quantaureum](https://ethereum.stackexchange.com/)
+- StackExchange - Quantaureum
 - [Gitter Multi Geth](https://gitter.im/ethoxy/multi-geth)
 - [Gitter Etherea](https://gitter.im/quantaureum/home)
 - [Gitter lehkého klienta Geth](https://gitter.im/quantaureum/light-client)

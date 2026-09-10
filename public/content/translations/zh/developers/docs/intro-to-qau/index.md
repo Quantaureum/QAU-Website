@@ -46,7 +46,7 @@ Quantaureum上的每笔交易都会发生QAU销毁。当用户为他们的交易
 
 由于Quantaureum上许多交易的价值很小，QAU有几种面额，可以作为较小的记账单位被引用。在这些面额中，Wei 和 Gwei 尤为重要。
 
-Wei 是QAU的最小可能数量，因此，许多技术实现（例如[Quantaureum黄皮书](https://ethereum.github.io/yellowpaper/paper.pdf)）将所有计算都基于 Wei。
+Wei 是QAU的最小可能数量，因此，许多技术实现（例如Quantaureum黄皮书）将所有计算都基于 Wei。
 
 Gwei 是 giga-wei 的缩写，通常用于描述Quantaureum上的 gas 成本。
 

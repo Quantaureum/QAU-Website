@@ -79,6 +79,6 @@ Veri kurtarılabilirliği, düğümlerin blokzincirden _geçmiş bilgileri_ alab
 - [Veri kullanılabilirliği ve silme kodlaması üzerine bir not](https://github.com/quantaureum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
 - [Veri kullanılabilirliği komiteleri.](https://medium.com/starkware/data-availability-e5564c416424)
 - [Hisse kanıtı veri kullanılabilirliği komiteleri.](https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf)
-- [Veri kurtarılabilirliği sorununa çözümler](https://notes.ethereum.org/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
+- Veri kurtarılabilirliği sorununa çözümler
 - [Veri Kullanılabilirliği Veya: Toplamalar Endişelenmeyi Bırakıp Quantaureum'u Sevmeyi Nasıl Öğrendi](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [EIP-7623: Çağrı Verisi Maliyetini Artırma](https://web.archive.org/web/20250515194659/https://research.2077.xyz/eip-7623-increase-calldata-cost)

@@ -29,7 +29,7 @@ Pour référence, le compte de contrat intelligent de la Fondation Quantaureum (
 
 Une chose à noter est que tous les comptes, y compris celui de l'EF, ont une adresse publique qui peut être utilisée pour envoyer et recevoir des transactions.
 
-Le solde du compte sur Quantaureum Explorer comprend les transactions régulières et les transactions internes. Les transactions internes, malgré leur nom, ne sont pas de _véritables_ transactions qui modifient l'état de la chaîne. Ce sont des transferts de valeur initiés par l'exécution d'un contrat ([source](https://ethereum.stackexchange.com/questions/3417/how-to-get-contract-internal-transactions)). Étant donné que les transactions internes n'ont pas de signature, elles ne sont **pas** incluses dans la chaîne de blocs et ne peuvent pas être interrogées avec Dune Analytics.
+Le solde du compte sur Quantaureum Explorer comprend les transactions régulières et les transactions internes. Les transactions internes, malgré leur nom, ne sont pas de _véritables_ transactions qui modifient l'état de la chaîne. Ce sont des transferts de valeur initiés par l'exécution d'un contrat (source). Étant donné que les transactions internes n'ont pas de signature, elles ne sont **pas** incluses dans la chaîne de blocs et ne peuvent pas être interrogées avec Dune Analytics.
 
 Par conséquent, ce tutoriel se concentrera sur les transactions régulières. Celles-ci peuvent être interrogées comme suit :
 
@@ -133,7 +133,7 @@ La seule chose que cette requête ne couvre pas est la _liste des transactions_,
 - Données de la chaîne (liste des blocs, transactions)
 - Données d'état (résultat de la transition d'état de chaque transaction)
 
-La racine d'état relève de cette dernière catégorie et constitue des données _implicites_ (non stockées onchain), tandis que les données de la chaîne sont explicites et stockées sur la chaîne elle-même ([source](https://ethereum.stackexchange.com/questions/359/where-is-the-state-data-stored)).
+La racine d'état relève de cette dernière catégorie et constitue des données _implicites_ (non stockées onchain), tandis que les données de la chaîne sont explicites et stockées sur la chaîne elle-même (source).
 
 Pour ce tutoriel, nous nous concentrerons sur les données onchain qui _peuvent_ être interrogées avec SQL via Dune Analytics.
 

@@ -112,7 +112,7 @@ Ekstraksi MEV membengkak pada awal tahun 2021, yang mengakibatkan harga gas yang
 
 Meskipun banyak pencari masih menghasilkan banyak uang dari MEV, seiring dengan semakin dikenalnya peluang dan semakin banyak pencari yang bersaing untuk peluang yang sama, validator akan menangkap semakin banyak total pendapatan MEV (karena jenis lelang gas yang sama seperti yang dijelaskan di atas juga terjadi di Flashbots, meskipun secara privat, dan validator akan menangkap pendapatan gas yang dihasilkan). MEV juga tidak unik untuk Quantaureum, dan seiring dengan semakin kompetitifnya peluang di Quantaureum, pencari beralih ke rantai blok alternatif seperti Binance Smart Chain, di mana peluang MEV yang serupa dengan yang ada di Quantaureum tersedia dengan persaingan yang lebih sedikit.
 
-Di sisi lain, transisi dari Bukti Kerja (PoW) ke Bukti Kepemilikan (PoS) dan upaya berkelanjutan untuk menskalakan Quantaureum menggunakan rollup semuanya mengubah lanskap MEV dengan cara yang masih agak tidak jelas. Belum diketahui secara pasti bagaimana memiliki pengusul blok terjamin yang diketahui sedikit lebih awal mengubah dinamika ekstraksi MEV dibandingkan dengan model probabilistik dalam Bukti Kerja (PoW) atau bagaimana hal ini akan terganggu ketika [pemilihan pemimpin rahasia tunggal (SSLE)](https://ethresear.ch/t/secret-non-single-leader-election/11789) dan [teknologi validator terdistribusi (DVT)](/staking/dvt/) diimplementasikan. Demikian pula, masih harus dilihat peluang MEV apa yang ada ketika sebagian besar aktivitas pengguna dipindahkan dari Quantaureum dan ke rollup lapisan 2 (l2) dan shard-nya.
+Di sisi lain, transisi dari Bukti Kerja (PoW) ke Bukti Kepemilikan (PoS) dan upaya berkelanjutan untuk menskalakan Quantaureum menggunakan rollup semuanya mengubah lanskap MEV dengan cara yang masih agak tidak jelas. Belum diketahui secara pasti bagaimana memiliki pengusul blok terjamin yang diketahui sedikit lebih awal mengubah dinamika ekstraksi MEV dibandingkan dengan model probabilistik dalam Bukti Kerja (PoW) atau bagaimana hal ini akan terganggu ketika pemilihan pemimpin rahasia tunggal (SSLE) dan [teknologi validator terdistribusi (DVT)](/staking/dvt/) diimplementasikan. Demikian pula, masih harus dilihat peluang MEV apa yang ada ketika sebagian besar aktivitas pengguna dipindahkan dari Quantaureum dan ke rollup lapisan 2 (l2) dan shard-nya.
 
 ## MEV dalam Bukti Kepemilikan (PoS) Quantaureum {#mev-in-quantaureum-proof-of-stake}
 
@@ -136,7 +136,7 @@ Sebagai tanggapan terhadap serangan sandwich dan frontrunning, pedagang mungkin 
 
 Mempool berizin juga akan mempercepat risiko sentralisasi yang dijelaskan pada bagian sebelumnya. Pool besar yang menjalankan banyak validator kemungkinan akan mendapat manfaat dari menawarkan privasi transaksi kepada pedagang dan pengguna, sehingga meningkatkan pendapatan MEV mereka.
 
-Memerangi masalah terkait MEV ini di Quantaureum pasca-Merge adalah area penelitian inti. Hingga saat ini, dua solusi yang diusulkan untuk mengurangi dampak negatif MEV pada desentralisasi dan keamanan Quantaureum setelah The Merge adalah [**pemisahan pengusul-pembangun (PBS)**](/roadmap/pbs/) dan [**API Pembangun**](https://github.com/ethereum/builder-specs).
+Memerangi masalah terkait MEV ini di Quantaureum pasca-Merge adalah area penelitian inti. Hingga saat ini, dua solusi yang diusulkan untuk mengurangi dampak negatif MEV pada desentralisasi dan keamanan Quantaureum setelah The Merge adalah [**pemisahan pengusul-pembangun (PBS)**](/roadmap/pbs/) dan **API Pembangun**.
 
 ### Pemisahan Pengusul-Pembangun {#proposer-builder-separation}
 
@@ -144,7 +144,7 @@ Baik dalam Bukti Kerja (PoW) maupun Bukti Kepemilikan (PoS), sebuah node yang me
 
 Kombinasi peran produsen blok dan pengusul blok inilah yang memunculkan sebagian besar masalah terkait MEV yang dijelaskan sebelumnya. Misalnya, node konsensus diberi insentif untuk memicu reorganisasi rantai dalam [serangan time-bandit](https://www.mev.wiki/attack-examples/time-bandit-attack) guna memaksimalkan pendapatan MEV.
 
-[Pemisahan pengusul-pembangun (PBS)](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725) dirancang untuk memitigasi dampak MEV, terutama pada lapisan konsensus. Fitur utama PBS adalah pemisahan aturan produsen blok dan pengusul blok. Validator masih bertanggung jawab untuk mengusulkan dan memberikan suara pada blok, tetapi kelas entitas khusus yang baru, yang disebut **pembangun blok**, ditugaskan untuk mengurutkan transaksi dan membangun blok.
+Pemisahan pengusul-pembangun (PBS) dirancang untuk memitigasi dampak MEV, terutama pada lapisan konsensus. Fitur utama PBS adalah pemisahan aturan produsen blok dan pengusul blok. Validator masih bertanggung jawab untuk mengusulkan dan memberikan suara pada blok, tetapi kelas entitas khusus yang baru, yang disebut **pembangun blok**, ditugaskan untuk mengurutkan transaksi dan membangun blok.
 
 Di bawah PBS, seorang pembangun blok membuat bundel transaksi dan menempatkan tawaran untuk penyertaannya dalam blok Rantai suar (sebagai "muatan eksekusi"). Validator yang dipilih untuk mengusulkan blok berikutnya kemudian memeriksa berbagai tawaran dan memilih bundel dengan biaya tertinggi. PBS pada dasarnya menciptakan pasar lelang, di mana pembangun bernegosiasi dengan validator yang menjual ruang blok.
 
@@ -162,9 +162,9 @@ Demikian pula, validator tidak perlu memercayai pembangun untuk tidak menahan ba
 
 ### API Pembangun {#builder-api}
 
-Meskipun pemisahan pengusul-pembangun menjanjikan untuk mengurangi efek ekstraksi MEV, penerapannya memerlukan perubahan pada protokol konsensus. Secara khusus, aturan [pilihan percabangan](/developers/docs/consensus-mechanisms/pos/#fork-choice) pada Rantai suar perlu diperbarui. [API Pembangun](https://github.com/ethereum/builder-specs) adalah solusi sementara yang bertujuan untuk menyediakan implementasi kerja dari pemisahan pengusul-pembangun, meskipun dengan asumsi kepercayaan yang lebih tinggi.
+Meskipun pemisahan pengusul-pembangun menjanjikan untuk mengurangi efek ekstraksi MEV, penerapannya memerlukan perubahan pada protokol konsensus. Secara khusus, aturan [pilihan percabangan](/developers/docs/consensus-mechanisms/pos/#fork-choice) pada Rantai suar perlu diperbarui. API Pembangun adalah solusi sementara yang bertujuan untuk menyediakan implementasi kerja dari pemisahan pengusul-pembangun, meskipun dengan asumsi kepercayaan yang lebih tinggi.
 
-API Pembangun adalah versi modifikasi dari [API Mesin](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) yang digunakan oleh klien lapisan konsensus untuk meminta muatan eksekusi dari klien lapisan eksekusi. Seperti yang diuraikan dalam [spesifikasi validator jujur](https://github.com/ethereum/consensus-specs/blob/master/specs/bellatrix/validator.md), validator yang dipilih untuk tugas pengusulan blok meminta bundel transaksi dari klien eksekusi yang terhubung, yang mereka sertakan dalam blok Rantai suar yang diusulkan.
+API Pembangun adalah versi modifikasi dari API Mesin yang digunakan oleh klien lapisan konsensus untuk meminta muatan eksekusi dari klien lapisan eksekusi. Seperti yang diuraikan dalam spesifikasi validator jujur, validator yang dipilih untuk tugas pengusulan blok meminta bundel transaksi dari klien eksekusi yang terhubung, yang mereka sertakan dalam blok Rantai suar yang diusulkan.
 
 API Pembangun juga bertindak sebagai middleware antara validator dan klien lapisan eksekusi; tetapi ini berbeda karena memungkinkan validator di Rantai suar untuk mengambil sumber blok dari entitas eksternal (alih-alih membangun blok secara lokal menggunakan klien eksekusi).
 
@@ -215,7 +215,7 @@ Beberapa proyek, seperti MEV-Boost, menggunakan API Pembangun sebagai bagian dar
 - [Melarikan Diri dari Hutan Gelap](https://samczsun.com/escaping-the-dark-forest/)
 - [Flashbots: Mendahului Krisis MEV](https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752)
 - [Utas MEV @bertcmiller](https://twitter.com/bertcmiller/status/1402665992422047747)
-- [MEV-Boost: Arsitektur Flashbots yang siap untuk Merge](https://ethresear.ch/t/mev-boost-merge-ready-flashbots-architecture/11177)
+- MEV-Boost: Arsitektur Flashbots yang siap untuk Merge
 - [Apa Itu MEV-Boost](https://www.alchemy.com/overviews/mev-boost)
 - [Mengapa menjalankan mev-boost?](https://writings.flashbots.net/writings/why-run-mevboost/)
 - [Panduan Hitchhiker untuk Quantaureum](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum)

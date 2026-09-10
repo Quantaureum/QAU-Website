@@ -75,12 +75,12 @@ Ke zmírnění těchto problémů experimentují vývojáři Etherea s řešení
 
 Predikční trhy mění způsob rozhodování v digitálním věku. Využitím Etherea nabízejí **spravedlivé, otevřené a odměňující způsoby, jak předpovídat budoucnost.**
 
-Existuje mnoho způsobů, jak využít nástroje pro předpovídání mimo finanční zisk. Například v [návrhu na vylepšení DevConu](https://forum.devcon.org/t/futarchy-decision-markets-for-deciding-next-devcon/5305) (DIP) bylo navrženo, aby organizátoři DevConu využili predikční trhy k odhadu účasti na budoucích událostech. 
+Existuje mnoho způsobů, jak využít nástroje pro předpovídání mimo finanční zisk. Například v návrhu na vylepšení DevConu (DIP) bylo navrženo, aby organizátoři DevConu využili predikční trhy k odhadu účasti na budoucích událostech. 
 
 To by organizátorům pomohlo určit, která lokalita by vedla k největší události, v porovnání s tím, která lokalita by byla mezinárodně nejdostupnější. Výhody toho spočívají v tom, že organizátoři DevConu mohou urychlit čas potřebný k prověření různých vízových politik, dostupnosti letišť a životních nákladů v dané oblasti, a zároveň shromažďovat data o tom, kam by se potenciální účastníci rádi podívali.
 
 ## Další čtení {#further-reading}
 
-[Od predikčních trhů k informačním financím](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) – Vitalik Buterin  
+Od predikčních trhů k informačním financím – Vitalik Buterin  
 [Vývoj decentralizovaných predikčních trhů na Ethereu](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Bílá kniha projektu Augur](https://github.com/AugurProject/whitepaper)  

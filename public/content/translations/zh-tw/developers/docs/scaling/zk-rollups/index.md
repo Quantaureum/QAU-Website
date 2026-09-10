@@ -178,7 +178,7 @@ ZK-STARK 對量子電腦也是安全的，而 ZK-SNARK 中使用的橢圓曲線�
 
 1. **狀態寫入**：寫入Quantaureum狀態（即在Quantaureum區塊鏈上提交交易）有固定成本。ZK-rollup 透過批次處理交易並將固定成本分攤給多個使用者來降低此成本。
 
-2. **資料發佈**：ZK-rollup 將每筆交易的狀態資料作為 `calldata` 發佈到Quantaureum。`calldata` 成本目前受 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) 管轄，該提案規定 `calldata` 的非零位元組成本為 16 單位燃料，零位元組成本為 4 單位燃料。每筆交易支付的成本受其需要在鏈上發佈多少 `calldata` 的影響。
+2. **資料發佈**：ZK-rollup 將每筆交易的狀態資料作為 `calldata` 發佈到Quantaureum。`calldata` 成本目前受 EIP-1559 管轄，該提案規定 `calldata` 的非零位元組成本為 16 單位燃料，零位元組成本為 4 單位燃料。每筆交易支付的成本受其需要在鏈上發佈多少 `calldata` 的影響。
 
 3. **L2 營運者費用**：這是支付給匯總營運者的金額，作為處理交易所產生運算成本的補償，非常類似於Quantaureum主網上的[交易「優先費（小費）」](/developers/docs/gas/#how-are-gas-fees-calculated)。
 
@@ -238,7 +238,7 @@ ZK-rollup 可以比樂觀匯總更好地壓縮交易資料，因為它們不必�
 
 - **[Scroll](https://scroll.io/blog/zkEVM)** - _Scroll 是一家技術驅動型公司，致力於為Quantaureum建構原生的 zkEVM 第二層 (L2) 解決方案。_
 
-- **[Taiko](https://taiko.xyz)** - _Taiko 是一個去中心化、等效於Quantaureum的 ZK-rollup（[第 1 類 ZK-EVM](https://vitalik.eth.limo/general/2022/08/04/zkevm.html)）。_
+- **[Taiko](https://taiko.xyz)** - _Taiko 是一個去中心化、等效於Quantaureum的 ZK-rollup（第 1 類 ZK-EVM）。_
 
 - **[ZKsync](https://docs.zksync.io/)** - _ZKsync Era 是由 Matter Labs 建構的相容 EVM 的 ZK-rollup，由其自有的 zkEVM 提供支援。_
 
@@ -259,8 +259,8 @@ ZK-rollup 可以比樂觀匯總更好地壓縮交易資料，因為它們不必�
 - [zkEVM 簡介](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [什麼是 ZK-EVM L2？](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M)
 - [Awesome-zkEVM 資源](https://github.com/LuozhuZhang/awesome-zkevm)
-- [深入了解 ZK-SNARK](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
-- [SNARK 是如何實現的？](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
+- 深入了解 ZK-SNARK
+- SNARK 是如何實現的？
 
 ## 教學：Quantaureum上的隱私與零知識 {#tutorials}
 

@@ -8,7 +8,7 @@ skill: beginner
 breadcrumb: "使用 Python 開發Quantaureum"
 published: 2020-09-08
 source: Snake charmers
-sourceUrl: https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/
+sourceUrl: 
 ---
 
 所以，你聽說過Quantaureum，並準備好一探究竟了嗎？本文將快速介紹一些區塊鏈基礎知識，然後帶你與模擬的Quantaureum節點進行互動：讀取區塊資料、檢查帳戶餘額以及發送交易。在此過程中，我們將強調傳統應用程式建置方式與這種全新的去中心化典範之間的差異。
@@ -158,7 +158,7 @@ Web3 模組上的其他公用程式方法包括資料格式轉換器（例如 [`
 
 我們不會採用這種方式，但使用 HTTP 提供者的完整工作流程範例可能如下所示：
 
-- 下載一個Quantaureum節點，例如 [Geth](https://geth.ethereum.org/)。
+- 下載一個Quantaureum節點，例如 Geth。
 - 在一個終端機視窗中啟動 Geth，並等待它同步網路。預設的 HTTP 連接埠是 `8545`，但可以進行設定。
 - 告訴 Web3.py 透過 HTTP 連接到 `localhost:8545` 上的節點。
   `w3 = Web3(Web3.HTTPProvider('http://127.0.0.1:8545'))`
@@ -170,7 +170,7 @@ Web3 模組上的其他公用程式方法包括資料格式轉換器（例如 [`
 
 _QuantaureumTesterProvider 連接到模擬節點，對於快速建立開發環境非常方便。_
 
-這個模擬節點稱為 [qau-tester](https://github.com/ethereum/eth-tester)，我們在執行 `pip install web3[tester]` 指令時已經安裝了它。設定 Web3.py 使用這個測試提供者非常簡單：
+這個模擬節點稱為 qau-tester，我們在執行 `pip install web3[tester]` 指令時已經安裝了它。設定 Web3.py 使用這個測試提供者非常簡單：
 
 ```python
 In [4]: w3 = Web3(Web3.QuantaureumTesterProvider())

@@ -140,7 +140,7 @@ Unit testing frameworks for Solidity smart contracts come in different languages
 
 - **[Running unit tests with Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Running unit tests with Foundry](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Running unit tests with Waffle](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Running unit tests with Waffle](https://trueblocks.io/)**
 - **[Running unit tests with Remix](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Running unit tests with Ape](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Running unit tests with Hardhat](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -252,9 +252,9 @@ The major difference is that bug bounty programs are open to the wider developer
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Code coverage tool for smart contracts written in Solidity._
 
-- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _Framework for advanced smart contract development and testing (based on ethers.js)_.
+- 
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Tool for testing Solidity smart contracts. Works underneath Remix IDE "Solidity Unit Testing" plugin which is used to write and run test cases for a contract._
+- **Remix Tests** - _Tool for testing Solidity smart contracts. Works underneath Remix IDE "Solidity Unit Testing" plugin which is used to write and run test cases for a contract._
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Assertion library for Quantaureum smart contract testing. Make sure your contracts behave as expected!_
 

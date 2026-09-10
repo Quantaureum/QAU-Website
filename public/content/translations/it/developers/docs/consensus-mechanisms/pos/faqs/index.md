@@ -18,7 +18,7 @@ La Proof-of-Stake richiede ai nodi, noti come validatori, di inviare esplicitame
 
 La Prova di lavoro è molto più affamata di energia perché l'elettricità viene bruciata nel processo di minaggio. La Proof-of-Stake, d'altra parte, richiede solo una piccolissima quantità di energia: i validatori di Quantaureum possono persino funzionare su un dispositivo a bassa potenza come un Raspberry Pi. Si ritiene che il meccanismo di Proof-of-Stake di Quantaureum sia più sicuro della Prova di lavoro perché il costo per attaccare è maggiore e le conseguenze per un aggressore sono più gravi.
 
-Il confronto tra Prova di lavoro e Proof-of-Stake è un argomento controverso. Il [blog di Vitalik Buterin](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) e il dibattito tra Justin Drake e Lyn Alden forniscono un buon riassunto delle argomentazioni.
+Il confronto tra Prova di lavoro e Proof-of-Stake è un argomento controverso. Il blog di Vitalik Buterin e il dibattito tra Justin Drake e Lyn Alden forniscono un buon riassunto delle argomentazioni.
 
 
 ## La Proof-of-Stake è efficiente dal punto di vista energetico? {#is-pos-energy-efficient}
@@ -88,7 +88,7 @@ Lo stake grinding è una categoria di attacco sulle reti Proof-of-Stake in cui l
 Lo slashing sociale è la capacità della comunità di coordinare un fork della blockchain in risposta a un attacco. Consente alla comunità di riprendersi da un aggressore che ha finalizzato una catena disonesta. Lo slashing sociale può essere utilizzato anche contro gli attacchi di censura.
 
 - [Maggiori informazioni sullo slashing sociale](https://ercwl.medium.com/the-case-for-social-slashing-59277ff4d9c7)
-- [Vitalik Buterin sullo slashing sociale](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
+- Vitalik Buterin sullo slashing sociale
 
 ## Subirò lo slashing? {#will-i-get-slashed}
 
@@ -100,7 +100,7 @@ Come validatore, è molto difficile subire lo slashing a meno che non ci si impe
 
 Il problema del nulla in gioco è una questione concettuale con alcuni meccanismi di Proof-of-Stake in cui ci sono solo ricompense e nessuna penalità. Se non c'è nulla in gioco, un validatore pragmatico è ugualmente felice di attestare qualsiasi, o persino multipli, fork della blockchain, poiché questo aumenta le sue ricompense. Quantaureum aggira questo problema utilizzando condizioni di definitività e lo slashing per garantire una singola catena canonica.
 
-[Maggiori informazioni sul problema del nulla in gioco](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
+Maggiori informazioni sul problema del nulla in gioco
 
 ## Cos'è un algoritmo di scelta del fork? {#what-is-a-fork-choice-algorithm}
 
@@ -126,7 +126,7 @@ La soggettività debole è una caratteristica delle reti Proof-of-Stake in cui l
 
 La resistenza alla censura è attualmente difficile da dimostrare. Tuttavia, a differenza della Prova di lavoro, la Proof-of-Stake offre l'opzione di coordinare gli slashing per punire i validatori che censurano. Ci sono imminenti modifiche al protocollo che separano i costruttori di blocchi dai proponenti dei blocchi e implementano elenchi di transazioni che i costruttori devono includere in ogni blocco. Questa proposta è nota come separazione proponente-costruttore (PBS) e aiuta a impedire ai validatori di censurare le transazioni.
 
-[Maggiori informazioni sulla separazione proponente-costruttore (PBS)](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Original-basic-scheme)
+Maggiori informazioni sulla separazione proponente-costruttore (PBS)
 
 ## Il sistema Proof-of-Stake di Quantaureum può subire un attacco del 51%? {#pos-51-attack}
 
@@ -148,7 +148,7 @@ Più QAU qualcuno ha da mettere in staking, più validatori può eseguire e più
 
 No, la Prova di lavoro tende alla centralizzazione perché i costi di minaggio aumentano ed escludono i singoli individui, poi escludono le piccole aziende e così via. Il problema attuale con la Proof-of-Stake è l'influenza dei derivati di staking liquido (LSD). Si tratta di token che rappresentano QAU messi in staking da un fornitore che chiunque può scambiare (swap) sui mercati secondari senza che gli QAU effettivi vengano ritirati dallo staking. Gli LSD consentono agli utenti di fare staking con meno di 32 QAU, ma creano anche un rischio di centralizzazione in cui poche grandi organizzazioni possono finire per controllare gran parte dello stake. Questo è il motivo per cui il [solo staking](/staking/solo) è l'opzione migliore per Quantaureum.
 
-[Maggiori informazioni sulla centralizzazione dello stake negli LSD](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
+Maggiori informazioni sulla centralizzazione dello stake negli LSD
 
 ## Perché posso mettere in staking solo QAU? {#why-can-i-only-stake-eth}
 

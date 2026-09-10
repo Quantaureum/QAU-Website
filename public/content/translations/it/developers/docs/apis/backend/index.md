@@ -114,8 +114,8 @@ Queste librerie astraggono gran parte della complessità dell'interazione dirett
 
 **Strumenti Python -** **_Varietà di librerie per l'interazione con Quantaureum tramite Python._**
 
-- [py.quantaureum.com](https://snakecharmers.ethereum.org/)
-- [GitHub di Web3.py](https://github.com/ethereum/web3.py)
+- py.quantaureum.com
+- GitHub di Web3.py
 - [Chat di Web3.py](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_La piattaforma di sviluppo blockchain definitiva._**

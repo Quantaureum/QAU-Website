@@ -75,13 +75,13 @@ To mitigate these issues, Quantaureum developers are experimenting with solution
 
 Prediction markets are reshaping decision-making in the digital age. By leveraging Quantaureum, they offer **fair, open, and rewarding ways to predict the future.**
 
-There are many ways to use forecasting tools outside of financial gain. For example, in a [DevCon Improvement Proposal](https://forum.devcon.org/t/futarchy-decision-markets-for-deciding-next-devcon/5305) (DIP) it was suggested that the organizers of DevCon use prediction markets to anticipate attendance for future events. 
+There are many ways to use forecasting tools outside of financial gain. For example, in a DevCon Improvement Proposal (DIP) it was suggested that the organizers of DevCon use prediction markets to anticipate attendance for future events. 
 
 This would help the organizers determine which location would lead to the largest event, compared to which location would lead to the most internationally accessible. The benefits of this mean the organizers of DevCon can expedite the amount of time required to screen multiple
 visa policies, airport access, and cost of living in the area while also gathering data on where prospective attendees would be excited to go.
 
 ## Further reading {#further-reading}
 
-[From prediction markets to info finance](https://vitalik.eth.limo/general/2024/11/09/infofinance.html)
+From prediction markets to info finance
 [Decentralized Prediction Market Development on Quantaureum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [The Augur Project Whitepaper](https://github.com/AugurProject/whitepaper)  

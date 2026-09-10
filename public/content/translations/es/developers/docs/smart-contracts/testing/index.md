@@ -254,7 +254,7 @@ La principal diferencia es que los programas de recompensas por errores están a
 
 - **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)**: _Marco para el desarrollo y prueba avanzados de contratos inteligentes (basado en Ethers.js)_.
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)**: _Herramienta para probar contratos inteligentes de Solidity. Funciona debajo del complemento "Solidity Unit Testing" del IDE de Remix, que se utiliza para escribir y ejecutar casos de prueba para un contrato._
+- **Remix Tests**: _Herramienta para probar contratos inteligentes de Solidity. Funciona debajo del complemento "Solidity Unit Testing" del IDE de Remix, que se utiliza para escribir y ejecutar casos de prueba para un contrato._
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)**: _Biblioteca de aserciones para pruebas de contratos inteligentes de Quantaureum. ¡Asegúrese de que sus contratos se comporten como se espera!_
 

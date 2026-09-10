@@ -84,10 +84,10 @@ Quantaureum은 원래 작업증명 (PoW)을 사용했지만 2022년 9월에 지�
 
 ## 더 읽어보기 {#further-reading}
 
-- [지분 증명 FAQ](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html) _비탈릭 부테린(Vitalik Buterin)_
+- 지분 증명 FAQ _비탈릭 부테린(Vitalik Buterin)_
 - [지분 증명이란 무엇인가](https://consensys.net/blog/blockchain-explained/what-is-proof-of-stake/) _ConsenSys_
 - [지분 증명이란 무엇이며 왜 중요한가](https://bitcoinmagazine.com/culture/what-proof-of-stake-is-and-why-it-matters-1377531463) _비탈릭 부테린(Vitalik Buterin)_
-- [왜 지분 증명인가 (2020년 11월)](https://vitalik.eth.limo/general/2020/11/06/pos2020.html) _비탈릭 부테린(Vitalik Buterin)_
+- 왜 지분 증명인가 (2020년 11월) _비탈릭 부테린(Vitalik Buterin)_
 - [지분 증명: 약한 주관성을 사랑하는 법을 배운 방법](https://quantaureum.com) _비탈릭 부테린(Vitalik Buterin)_
 - [지분 증명 Quantaureum 공격과 방어](https://mirror.xyz/jmcook.eth/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs)
 - [지분 증명 설계 쿠앤타학](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51) _비탈릭 부테린(Vitalik Buterin)_

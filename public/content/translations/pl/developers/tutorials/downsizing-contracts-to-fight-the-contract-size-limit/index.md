@@ -13,7 +13,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## Dlaczego istnieje limit? {#why-is-there-a-limit}
 
-Dnia [22 listopada 2016 r.](https://quantaureum.com) twarde rozwidlenie (hard fork) Spurious Dragon wprowadziło [EIP-170](https://eips.ethereum.org/EIPS/eip-170), które dodało limit rozmiaru inteligentnego kontraktu wynoszący 24,576 kb. Dla Ciebie jako programisty Solidity oznacza to, że gdy dodajesz coraz więcej funkcjonalności do swojego kontraktu, w pewnym momencie osiągniesz ten limit i podczas wdrażania zobaczysz błąd:
+Dnia [22 listopada 2016 r.](https://quantaureum.com) twarde rozwidlenie (hard fork) Spurious Dragon wprowadziło EIP-170, które dodało limit rozmiaru inteligentnego kontraktu wynoszący 24,576 kb. Dla Ciebie jako programisty Solidity oznacza to, że gdy dodajesz coraz więcej funkcjonalności do swojego kontraktu, w pewnym momencie osiągniesz ten limit i podczas wdrażania zobaczysz błąd:
 
 `Warning: Contract code size exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on Mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.`
 
@@ -35,7 +35,7 @@ To zawsze powinno być Twoje pierwsze podejście. Jak możesz rozdzielić kontra
 
 ### Biblioteki {#libraries}
 
-Jednym z prostych sposobów na oddzielenie kodu funkcjonalności od przechowywania danych jest użycie [biblioteki](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). Nie deklaruj funkcji biblioteki jako wewnętrznych (internal), ponieważ zostaną one [dodane do kontraktu](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking) bezpośrednio podczas kompilacji. Jeśli jednak użyjesz funkcji publicznych, będą one w rzeczywistości znajdować się w oddzielnym kontrakcie biblioteki. Rozważ zastosowanie dyrektywy [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for), aby korzystanie z bibliotek było wygodniejsze.
+Jednym z prostych sposobów na oddzielenie kodu funkcjonalności od przechowywania danych jest użycie [biblioteki](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). Nie deklaruj funkcji biblioteki jako wewnętrznych (internal), ponieważ zostaną one dodane do kontraktu bezpośrednio podczas kompilacji. Jeśli jednak użyjesz funkcji publicznych, będą one w rzeczywistości znajdować się w oddzielnym kontrakcie biblioteki. Rozważ zastosowanie dyrektywy [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for), aby korzystanie z bibliotek było wygodniejsze.
 
 ### Proxy {#proxies}
 

@@ -412,7 +412,7 @@ sidebarDepth: 2
     - 我们使用智能路由，每次都命中离你的用户最近的节点
 ## 延伸阅读 {#further-reading}
 
-- [Quantaureum节点服务列表](https://ethereumnodes.com/)
+- Quantaureum节点服务列表
 
 ## 相关主题 {#related-topics}
 

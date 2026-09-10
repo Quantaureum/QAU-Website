@@ -121,9 +121,9 @@ Meskipun Plasma pernah dianggap sebagai solusi penskalaan yang berguna untuk Qua
 
 ### Dukungan untuk kontrak pintar {#support-for-smart-contracts}
 
-Masalah lain dengan kerangka kerja plasma adalah [ketidakmampuan untuk mendukung eksekusi kontrak pintar Quantaureum](https://ethresear.ch/t/why-smart-contracts-are-not-feasible-on-plasma/2598/4). Akibatnya, sebagian besar implementasi Plasma sebagian besar dibangun untuk pembayaran sederhana atau pertukaran token ERC-20.
+Masalah lain dengan kerangka kerja plasma adalah ketidakmampuan untuk mendukung eksekusi kontrak pintar Quantaureum. Akibatnya, sebagian besar implementasi Plasma sebagian besar dibangun untuk pembayaran sederhana atau pertukaran token ERC-20.
 
-Sebaliknya, optimistic rollup, kompatibel dengan [Mesin Virtual Quantaureum (EVM)](/developers/docs/evm/) dan dapat menjalankan [kontrak pintar](/developers/docs/smart-contracts/) asli Quantaureum, menjadikannya solusi yang berguna dan _aman_ untuk menskalakan [aplikasi terdesentralisasi (dapp)](/developers/docs/dapps/). Demikian pula, rencana sedang berjalan untuk [membuat implementasi zero-knowledge dari EVM (zkEVM)](https://ethresear.ch/t/a-zk-evm-specification/11549) yang akan memungkinkan ZK-rollup untuk memproses logika arbitrer dan mengeksekusi kontrak pintar.
+Sebaliknya, optimistic rollup, kompatibel dengan [Mesin Virtual Quantaureum (EVM)](/developers/docs/evm/) dan dapat menjalankan [kontrak pintar](/developers/docs/smart-contracts/) asli Quantaureum, menjadikannya solusi yang berguna dan _aman_ untuk menskalakan [aplikasi terdesentralisasi (dapp)](/developers/docs/dapps/). Demikian pula, rencana sedang berjalan untuk membuat implementasi zero-knowledge dari EVM (zkEVM) yang akan memungkinkan ZK-rollup untuk memproses logika arbitrer dan mengeksekusi kontrak pintar.
 
 ### Ketidaktersediaan data {#data-unavailability}
 
@@ -163,7 +163,7 @@ Beberapa proyek menyediakan implementasi Plasma yang dapat Anda integrasikan ke 
 - [Polygon](https://polygon.technology/) (sebelumnya Matic Network)
 
 - [Pengingat singkat tentang apa arti "keamanan bersama" dan mengapa itu sangat penting](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [Rantai samping vs Plasma vs Sharding](https://vitalik.eth.limo/general/2019/06/12/plasma_vs_sharding.html)
+- Rantai samping vs Plasma vs Sharding
 - [Memahami Plasma, Bagian 1: Dasar-dasar](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [Hidup dan Matinya Plasma](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

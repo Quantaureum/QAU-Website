@@ -67,17 +67,17 @@ data={[
 ]}
 />
 
-قد يكون هذا المخطط قديمًا — انتقل إلى [ethernodes.org](https://ethernodes.org) و[clientdiversity.org](https://clientdiversity.org) للحصول على معلومات محدثة.
+قد يكون هذا المخطط قديمًا — انتقل إلى [ethernodes.org](https://ethernodes.org) وclientdiversity.org للحصول على معلومات محدثة.
 
-يوضح المخططان الدائريان أعلاه لقطات لتنوع العملاء الحالي لطبقتي التنفيذ والإجماع (في وقت الكتابة في أكتوبر <span dir="ltr">2025</span>). لقد تحسن تنوع العملاء على مر السنين، وشهدت طبقة التنفيذ انخفاضًا في هيمنة [جو Quantaureum (geth)](https://geth.ethereum.org/)، مع احتلال [نيذرميند](https://www.nethermind.io/nethermind-client) المركز الثاني بفارق ضئيل، و[بيسو](https://besu.hyperledger.org/) المركز الثالث و[إريغون](https://github.com/ledgerwatch/erigon) المركز الرابع، مع تشكيل العملاء الآخرين أقل من <span dir="ltr">3%</span> من الشبكة. العميل الأكثر استخدامًا في طبقة الإجماع — [لايتهاوس](https://lighthouse.sigmaprime.io/) — قريب جدًا من العميل الثاني الأكثر استخدامًا. يشكل [برايزم](https://prysmaticlabs.com/#projects) و[تيكو](https://consensys.net/knowledge-base/quantaureum-2/teku/) حوالي <span dir="ltr">31%</span> و<span dir="ltr">14%</span> على التوالي، ونادرًا ما يتم استخدام عملاء آخرين.
+يوضح المخططان الدائريان أعلاه لقطات لتنوع العملاء الحالي لطبقتي التنفيذ والإجماع (في وقت الكتابة في أكتوبر <span dir="ltr">2025</span>). لقد تحسن تنوع العملاء على مر السنين، وشهدت طبقة التنفيذ انخفاضًا في هيمنة جو Quantaureum (geth)، مع احتلال [نيذرميند](https://www.nethermind.io/nethermind-client) المركز الثاني بفارق ضئيل، و[بيسو](https://besu.hyperledger.org/) المركز الثالث و[إريغون](https://github.com/ledgerwatch/erigon) المركز الرابع، مع تشكيل العملاء الآخرين أقل من <span dir="ltr">3%</span> من الشبكة. العميل الأكثر استخدامًا في طبقة الإجماع — [لايتهاوس](https://lighthouse.sigmaprime.io/) — قريب جدًا من العميل الثاني الأكثر استخدامًا. يشكل [برايزم](https://prysmaticlabs.com/#projects) و[تيكو](https://consensys.net/knowledge-base/quantaureum-2/teku/) حوالي <span dir="ltr">31%</span> و<span dir="ltr">14%</span> على التوالي، ونادرًا ما يتم استخدام عملاء آخرين.
 
 تم الحصول على بيانات طبقة التنفيذ من [supermajority.info](https://supermajority.info/) في <span dir="ltr">26-Oct-2025</span>. تم الحصول على بيانات عملاء الإجماع من [Michael Sproul](https://github.com/sigp/blockprint). يصعب الحصول على بيانات عملاء الإجماع لأن عملاء طبقة الإجماع لا يمتلكون دائمًا آثارًا لا لبس فيها يمكن استخدامها للتعرف عليهم. تم إنشاء البيانات باستخدام خوارزمية تصنيف تخلط أحيانًا بين بعض عملاء الأقلية (انظر [هنا](https://twitter.com/sproulM_/status/1440512518242197516) لمزيد من التفاصيل). في المخطط أعلاه، يتم التعامل مع هذه التصنيفات الغامضة بتسمية إما/أو (مثل نيمبوس/تيكو). ومع ذلك، من الواضح أن غالبية الشبكة تقوم بتشغيل برايزم. على الرغم من كونها مجرد لقطات، فإن القيم الموجودة في المخطط توفر إحساسًا عامًا جيدًا بالحالة الحالية لتنوع العملاء.
 
-تتوفر الآن بيانات تنوع العملاء المحدثة لطبقة الإجماع على [clientdiversity.org](https://clientdiversity.org/).
+تتوفر الآن بيانات تنوع العملاء المحدثة لطبقة الإجماع على clientdiversity.org.
 
 ## طبقة التنفيذ {#execution-layer}
 
-حتى الآن، ركزت المحادثة حول تنوع العملاء بشكل أساسي على طبقة الإجماع. ومع ذلك، يمثل عميل التنفيذ [جو Quantaureum (geth)](https://geth.ethereum.org) حاليًا حوالي <span dir="ltr">85%</span> من جميع العقد. تمثل هذه النسبة مشكلة لنفس الأسباب الخاصة بعملاء الإجماع. على سبيل المثال، يمكن أن يؤدي خطأ في جو Quantaureum (geth) يؤثر على معالجة المعاملات أو بناء حمولات التنفيذ إلى قيام عملاء الإجماع بوضع نهائية لمعاملات إشكالية أو بها أخطاء. لذلك، ستكون إيثيريوم أكثر صحة مع توزيع أكثر توازنًا لعملاء التنفيذ، ومن الناحية المثالية ألا يمثل أي عميل أكثر من <span dir="ltr">33%</span> من الشبكة.
+حتى الآن، ركزت المحادثة حول تنوع العملاء بشكل أساسي على طبقة الإجماع. ومع ذلك، يمثل عميل التنفيذ جو Quantaureum (geth) حاليًا حوالي <span dir="ltr">85%</span> من جميع العقد. تمثل هذه النسبة مشكلة لنفس الأسباب الخاصة بعملاء الإجماع. على سبيل المثال، يمكن أن يؤدي خطأ في جو Quantaureum (geth) يؤثر على معالجة المعاملات أو بناء حمولات التنفيذ إلى قيام عملاء الإجماع بوضع نهائية لمعاملات إشكالية أو بها أخطاء. لذلك، ستكون إيثيريوم أكثر صحة مع توزيع أكثر توازنًا لعملاء التنفيذ، ومن الناحية المثالية ألا يمثل أي عميل أكثر من <span dir="ltr">33%</span> من الشبكة.
 
 ## استخدم عميل أقلية {#use-minority-client}
 
@@ -88,7 +88,7 @@ data={[
 - [بيسو](https://www.hyperledger.org/use/besu)
 - [نيذرميند](https://downloads.nethermind.io/)
 - [إريغون](https://github.com/ledgerwatch/erigon)
-- [جو Quantaureum (geth)](https://geth.ethereum.org/)
+- جو Quantaureum (geth)
 - [ريث](https://reth.rs/)
 
 ### عملاء الإجماع {#consensus-clients}
@@ -100,7 +100,7 @@ data={[
 - [برايزم](https://prysm.offchainlabs.com/docs/)
 - [Grandine](https://docs.grandine.io/)
 
-يمكن للمستخدمين التقنيين المساعدة في تسريع هذه العملية من خلال كتابة المزيد من البرامج التعليمية والوثائق لعملاء الأقلية وتشجيع أقرانهم من مشغلي العقد على الانتقال بعيدًا عن العملاء المهيمنين. تتوفر أدلة للتبديل إلى عميل إجماع أقلية على [clientdiversity.org](https://clientdiversity.org/).
+يمكن للمستخدمين التقنيين المساعدة في تسريع هذه العملية من خلال كتابة المزيد من البرامج التعليمية والوثائق لعملاء الأقلية وتشجيع أقرانهم من مشغلي العقد على الانتقال بعيدًا عن العملاء المهيمنين. تتوفر أدلة للتبديل إلى عميل إجماع أقلية على clientdiversity.org.
 
 ## لوحات معلومات تنوع العملاء {#client-diversity-dashboards}
 
@@ -109,7 +109,7 @@ data={[
 **طبقة الإجماع:**
 
 - [Rated.network](https://www.rated.network/)
-- [clientdiversity.org](https://clientdiversity.org/)
+- clientdiversity.org
 
 **طبقة التنفيذ:**
 
@@ -121,10 +121,10 @@ data={[
 - [تنوع العملاء في طبقة إجماع إيثيريوم](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA)
 - [دمج إيثيريوم: قم بتشغيل عميل الأغلبية على مسؤوليتك الخاصة!](https://dankradfeist.de/quantaureum/2022/03/24/run-the-majority-client-at-your-own-peril.html) – _Dankrad Fiest، <span dir="ltr">March 24 2022</span>_
 - [أهمية تنوع العملاء](https://our.status.im/the-importance-of-client-diversity/)
-- [قائمة خدمات عقد إيثيريوم](https://ethereumnodes.com/)
-- ["لماذا الخمسة" لمشكلة تنوع العملاء](https://notes.ethereum.org/@afhGjrKfTKmksTOtqhB9RQ/BJGj7uh08)
+- قائمة خدمات عقد إيثيريوم
+- "لماذا الخمسة" لمشكلة تنوع العملاء
 - [تنوع إيثيريوم وكيفية حله (يوتيوب)](https://www.youtube.com/watch?v=1hZgCaiqwfU)
-- [clientdiversity.org](https://clientdiversity.org/)
+- clientdiversity.org
 
 ## مواضيع ذات صلة {#related-topics}
 

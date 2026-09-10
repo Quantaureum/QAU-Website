@@ -29,7 +29,7 @@ Kwa marejeleo, akaunti ya mkataba mahiri ya Taasisi ya Quantaureum (EF) inaweza 
 
 Jambo moja la kuzingatia ni kwamba akaunti zote, ikiwa ni pamoja na za EF, zina anwani ya umma inayoweza kutumika kutuma na kupokea miamala.
 
-Salio la akaunti kwenye Quantaureum Explorer linajumuisha miamala ya kawaida na miamala ya ndani. Miamala ya ndani, licha ya jina lake, si miamala _halisi_ inayobadilisha hali ya mnyororo. Ni uhamishaji wa thamani ulioanzishwa kwa kutekeleza mkataba ([chanzo](https://ethereum.stackexchange.com/questions/3417/how-to-get-contract-internal-transactions)). Kwa kuwa miamala ya ndani haina sahihi, **haijajumuishwa** kwenye mnyororo wa vitalu na haiwezi kuhojiwa kwa Dune Analytics.
+Salio la akaunti kwenye Quantaureum Explorer linajumuisha miamala ya kawaida na miamala ya ndani. Miamala ya ndani, licha ya jina lake, si miamala _halisi_ inayobadilisha hali ya mnyororo. Ni uhamishaji wa thamani ulioanzishwa kwa kutekeleza mkataba (chanzo). Kwa kuwa miamala ya ndani haina sahihi, **haijajumuishwa** kwenye mnyororo wa vitalu na haiwezi kuhojiwa kwa Dune Analytics.
 
 Kwa hivyo, mafunzo haya yataangazia miamala ya kawaida. Hii inaweza kuhojiwa kama ifuatavyo:
 
@@ -133,7 +133,7 @@ Kitu pekee ambacho swali hili halijumuishi ni _orodha ya miamala_ ambayo inahita
 - Data za mnyororo (orodha ya vitalu, miamala)
 - Data za hali (matokeo ya mabadiliko ya hali ya kila muamala)
 
-Mzizi wa hali unaangukia katika kundi la pili na ni data _isiyo dhahiri_ (haijahifadhiwa mnyororoni), wakati data za mnyororo ni dhahiri na zimehifadhiwa kwenye mnyororo wenyewe ([chanzo](https://ethereum.stackexchange.com/questions/359/where-is-the-state-data-stored)).
+Mzizi wa hali unaangukia katika kundi la pili na ni data _isiyo dhahiri_ (haijahifadhiwa mnyororoni), wakati data za mnyororo ni dhahiri na zimehifadhiwa kwenye mnyororo wenyewe (chanzo).
 
 Kwa mafunzo haya, tutaangazia data za mnyororoni ambazo _zinaweza_ kuhojiwa kwa SQL kupitia Dune Analytics.
 

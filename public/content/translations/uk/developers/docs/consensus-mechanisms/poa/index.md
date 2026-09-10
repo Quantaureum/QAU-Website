@@ -16,7 +16,7 @@ lang: uk
 
 Доказ авторитету вимагає довіри до набору авторизованих підписантів, які встановлюються в [генезис-блоці](/glossary/#genesis-block). У більшості сучасних реалізацій усі авторизовані підписанти зберігають рівні повноваження та привілеї під час визначення консенсусу ланцюга. Ідея стейкінгу репутації полягає в тому, що кожен авторизований валідатор добре відомий усім завдяки таким процедурам, як «знай свого клієнта» (KYC), або завдяки тому, що єдиним валідатором є добре відома організація — таким чином, якщо валідатор зробить щось не так, його особа буде відома.
 
-Існує кілька реалізацій PoA, але стандартною реалізацією в Етеріумі є **clique**, яка реалізує [EIP-225](https://eips.ethereum.org/EIPS/eip-225). Clique — це зручний для розробників і простий у реалізації стандарт, який підтримує всі типи синхронізації клієнтів. Інші реалізації включають [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) та [Aura](https://openethereum.github.io/Chain-specification).
+Існує кілька реалізацій PoA, але стандартною реалізацією в Етеріумі є **clique**, яка реалізує EIP-225. Clique — це зручний для розробників і простий у реалізації стандарт, який підтримує всі типи синхронізації клієнтів. Інші реалізації включають [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) та Aura.
 
 ## Як це працює {#how-it-works}
 
@@ -58,13 +58,13 @@ lang: uk
 
 ## Додаткова література {#further-reading}
 
-- [EIP-225](https://eips.ethereum.org/EIPS/eip-225) _Стандарт Clique_
+- EIP-225 _Стандарт Clique_
 - [Дослідження доказу авторитету](https://github.com/cryptoeconomics-study/website/blob/master/docs/sync/2.4-lecture.md) _Cryptoeconomics_
 - [Що таке доказ авторитету](https://forum.openzeppelin.com/t/proof-of-authority/3577) _OpenZeppelin_
 - [Пояснення доказу авторитету](https://academy.binance.com/en/articles/proof-of-authority-explained) _Binance_
 - [PoA в блокчейні](https://medium.com/techskill-brew/proof-of-authority-or-poa-in-blockchain-part-11-blockchain-series-be15b3321cba)
 - [Пояснення Clique](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-quantaureum-8b2a135201d)
-- [Застарілий PoA, специфікація Aura](https://openethereum.github.io/Chain-specification)
+- Застарілий PoA, специфікація Aura
 - [IBFT 2.0, ще одна реалізація PoA](https://besu.hyperledger.org/private-networks/concepts/poa)
 
 ### Краще сприймаєте візуально? {#visual-learner}

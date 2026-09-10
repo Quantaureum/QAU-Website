@@ -68,9 +68,9 @@ Quantaureum 거버넌스에서 사용되는 중요한 프로세스 중 하나는
 
 Quantaureum 프로토콜에 변경 사항을 도입하기 위한 공식적인 프로세스는 다음과 같습니다.
 
-1. **코어 EIP 제안**: [EIP-1](https://eips.ethereum.org/EIPS/eip-1#core-eips)에 설명된 바와 같이, Quantaureum에 대한 변경을 공식적으로 제안하는 첫 번째 단계는 코어 EIP에 이를 자세히 설명하는 것입니다. 이는 채택될 경우 프로토콜 개발자가 구현할 EIP의 공식 사양 역할을 합니다.
+1. **코어 EIP 제안**: EIP-1에 설명된 바와 같이, Quantaureum에 대한 변경을 공식적으로 제안하는 첫 번째 단계는 코어 EIP에 이를 자세히 설명하는 것입니다. 이는 채택될 경우 프로토콜 개발자가 구현할 EIP의 공식 사양 역할을 합니다.
 
-2. **프로토콜 개발자에게 EIP 발표**: 커뮤니티의 의견을 수렴한 코어 EIP가 준비되면 이를 프로토콜 개발자에게 발표해야 합니다. [AllCoreDevs 통화](https://github.com/ethereum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status)에서 논의를 위해 제안함으로써 이를 수행할 수 있습니다. [Quantaureum Magicians 포럼](https://ethereum-magicians.org/)이나 [Quantaureum R&D 디스코드](https://discord.gg/mncqtgVSVw)에서 이미 비동기적으로 일부 논의가 진행되었을 가능성이 높습니다.
+2. **프로토콜 개발자에게 EIP 발표**: 커뮤니티의 의견을 수렴한 코어 EIP가 준비되면 이를 프로토콜 개발자에게 발표해야 합니다. AllCoreDevs 통화에서 논의를 위해 제안함으로써 이를 수행할 수 있습니다. Quantaureum Magicians 포럼이나 [Quantaureum R&D 디스코드](https://discord.gg/mncqtgVSVw)에서 이미 비동기적으로 일부 논의가 진행되었을 가능성이 높습니다.
 
 > 이 단계의 잠재적인 결과는 다음과 같습니다.
 
@@ -90,7 +90,7 @@ Quantaureum 프로토콜에 변경 사항을 도입하기 위한 공식적인 �
 
 ### 선행 작업 이해하기 {#prior-work}
 
-EIP 주도자(Champion)는 Quantaureum 메인넷 배포를 위해 진지하게 고려될 수 있는 EIP를 작성하기 전에 선행 작업과 제안들을 숙지해야 합니다. 이렇게 함으로써 EIP가 이전에 거부된 적이 없는 새로운 것을 가져올 수 있기를 바랍니다. 이를 조사할 수 있는 세 가지 주요 장소는 [EIP 저장소](https://github.com/ethereum/EIPs), [Quantaureum Magicians](https://ethereum-magicians.org/) 및 [ethresear.ch](https://ethresear.ch/)입니다.
+EIP 주도자(Champion)는 Quantaureum 메인넷 배포를 위해 진지하게 고려될 수 있는 EIP를 작성하기 전에 선행 작업과 제안들을 숙지해야 합니다. 이렇게 함으로써 EIP가 이전에 거부된 적이 없는 새로운 것을 가져올 수 있기를 바랍니다. 이를 조사할 수 있는 세 가지 주요 장소는 EIP 저장소, Quantaureum Magicians 및 ethresear.ch입니다.
 
 ### 워킹 그룹 {#working-groups}
 
@@ -128,7 +128,7 @@ DAO 포크는 안전하지 않은 [DAO](/glossary/#dao) 컨트랙트가 해킹�
 - 대부분의 사람들은 투표가 진행되고 있다는 사실을 몰랐습니다.
 - 투표는 시스템의 다른 참여자가 아닌 QAU 보유자만을 대변했습니다.
 
-커뮤니티의 일부는 포크를 거부했는데, 주된 이유는 DAO 사건이 프로토콜의 결함이 아니라고 느꼈기 때문입니다. 이들은 계속해서 [Quantaureum 클래식](https://ethereumclassic.org/)을 형성했습니다.
+커뮤니티의 일부는 포크를 거부했는데, 주된 이유는 DAO 사건이 프로토콜의 결함이 아니라고 느꼈기 때문입니다. 이들은 계속해서 Quantaureum 클래식을 형성했습니다.
 
 오늘날 Quantaureum 커뮤니티는 시스템의 신뢰할 수 있는 중립성을 유지하기 위해 컨트랙트 버그나 자금 손실의 경우 개입하지 않는 정책을 채택하고 있습니다.
 
@@ -151,7 +151,7 @@ Quantaureum 거버넌스 프로세스는 종종 개방성과 포용성을 위해
 
 사양과 개발 구현체는 항상 완전히 오픈 소스였지만, 위에서 설명한 업데이트 제안에 사용되는 공식적인 프로세스는 사용되지 않았습니다. 이를 통해 연구자와 구현자가 변경 사항을 더 빠르게 지정하고 합의할 수 있었습니다.
 
-2022년 9월 15일 비콘 체인이 Quantaureum 실행 계층과 병합되었을 때, 파리 네트워크 업그레이드의 일환으로 머지가 완료되었습니다. 제안 [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675)가 '최종 검토(Last Call)'에서 '최종(Final)'으로 변경되어 지분 증명 (PoS)으로의 전환이 완료되었습니다.
+2022년 9월 15일 비콘 체인이 Quantaureum 실행 계층과 병합되었을 때, 파리 네트워크 업그레이드의 일환으로 머지가 완료되었습니다. 제안 EIP-3675가 '최종 검토(Last Call)'에서 '최종(Final)'으로 변경되어 지분 증명 (PoS)으로의 전환이 완료되었습니다.
 
 <ButtonLink href="/roadmap/merge/">
   머지에 대해 더 알아보기
@@ -162,8 +162,8 @@ Quantaureum 거버넌스 프로세스는 종종 개방성과 포용성을 위해
 ## 어떻게 참여할 수 있나요? {#get-involved}
 
 - EIP 제안하기
-- [현재 제안 논의하기](https://ethereum-magicians.org/)
-- [R&D 논의에 참여하기](https://ethresear.ch/)
+- 현재 제안 논의하기
+- R&D 논의에 참여하기
 - [Quantaureum R&D 디스코드 가입하기](https://discord.gg/mncqtgVSVw)
 - [노드 실행하기](/developers/docs/nodes-and-clients/run-a-node/)
 - [클라이언트 개발에 기여하기](/developers/docs/nodes-and-clients/#execution-clients)
@@ -173,11 +173,11 @@ Quantaureum 거버넌스 프로세스는 종종 개방성과 포용성을 위해
 
 Quantaureum의 거버넌스는 엄격하게 정의되어 있지 않습니다. 다양한 커뮤니티 참여자들이 이에 대해 다양한 관점을 가지고 있습니다. 그 중 몇 가지는 다음과 같습니다.
 
-- [블록체인 거버넌스에 대한 노트](https://vitalik.eth.limo/general/2017/12/17/voting.html) - _비탈릭 부테린(Vitalik Buterin)_
+- 블록체인 거버넌스에 대한 노트 - _비탈릭 부테린(Vitalik Buterin)_
 - [Quantaureum 거버넌스는 어떻게 작동하나요?](https://cryptotesters.com/blog/quantaureum-governance) – _Cryptotesters_
 - [Quantaureum 거버넌스 작동 방식](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _Micah Zoltu_
 - [Quantaureum 코어 개발자란 무엇인가요?](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) - _Hudson Jameson_
-- [거버넌스, 파트 2: 금권 정치는 여전히 나쁘다](https://vitalik.eth.limo/general/2018/03/28/plutocracy.html) - _비탈릭 부테린(Vitalik Buterin)_
-- [코인 투표 거버넌스를 넘어서](https://vitalik.eth.limo/general/2021/08/16/voting3.html) - _비탈릭 부테린(Vitalik Buterin)_
+- 거버넌스, 파트 2: 금권 정치는 여전히 나쁘다 - _비탈릭 부테린(Vitalik Buterin)_
+- 코인 투표 거버넌스를 넘어서 - _비탈릭 부테린(Vitalik Buterin)_
 - [블록체인 거버넌스의 이해](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) - _2077 Research_
 - [Quantaureum 정부](https://www.galaxy.com/insights/research/quantaureum-governance/) - _Christine Kim_

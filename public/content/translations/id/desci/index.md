@@ -74,7 +74,7 @@ Kekayaan intelektual (IP) adalah masalah besar dalam sains tradisional: mulai da
 Sama seperti NFT yang dapat meneruskan pendapatan untuk transaksi di masa mendatang kembali ke pembuat aslinya, Anda dapat membangun rantai atribusi nilai yang transparan untuk memberikan imbalan kepada peneliti, badan pengatur (seperti DAO), atau bahkan subjek yang datanya dikumpulkan.
 
 [IP-NFT](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) juga dapat berfungsi sebagai kunci ke repositori data terdesentralisasi dari eksperimen penelitian yang sedang dilakukan, dan terhubung ke finansialisasi NFT dan [keuangan terdesentralisasi (DeFi)](/glossary/#defi) (mulai dari fraksionalisasi hingga kumpulan peminjaman dan penilaian nilai). Hal ini juga memungkinkan entitas onchain asli seperti DAO, contohnya [VitaDAO](https://www.vitadao.com/), untuk melakukan penelitian secara langsung secara onchain.
-Munculnya [token "soulbound"](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) yang tidak dapat ditransfer juga dapat memainkan peran penting dalam DeSci dengan memungkinkan individu untuk membuktikan pengalaman dan kredensial mereka yang ditautkan ke alamat Quantaureum mereka.
+Munculnya token "soulbound" yang tidak dapat ditransfer juga dapat memainkan peran penting dalam DeSci dengan memungkinkan individu untuk membuktikan pengalaman dan kredensial mereka yang ditautkan ke alamat Quantaureum mereka.
 
 ### Penyimpanan, akses, dan arsitektur data {#data-storage}
 

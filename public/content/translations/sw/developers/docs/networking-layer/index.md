@@ -27,9 +27,9 @@ Mikusanyiko yote miwili inafanya kazi sambamba. Mkusanyiko wa ugunduzi unaingiza
 
 ### Ugunduzi {#discovery}
 
-Ugunduzi ni mchakato wa kutafuta nodi nyingine kwenye mtandao. Hii inaanzishwa kwa kutumia kundi dogo la nodi za uanzishaji (nodi ambazo anwani zake [zimewekwa kwa kudumu](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go) kwenye kiteja ili ziweze kupatikana mara moja na kuunganisha kiteja kwa wenza). Nodi hizi za uanzishaji zipo tu kwa ajili ya kutambulisha nodi mpya kwa kundi la wenza - hili ndilo dhumuni lao pekee, hazishiriki katika kazi za kawaida za kiteja kama vile kusawazisha mnyororo, na zinatumika tu mara ya kwanza kabisa kiteja kinapoanzishwa.
+Ugunduzi ni mchakato wa kutafuta nodi nyingine kwenye mtandao. Hii inaanzishwa kwa kutumia kundi dogo la nodi za uanzishaji (nodi ambazo anwani zake zimewekwa kwa kudumu kwenye kiteja ili ziweze kupatikana mara moja na kuunganisha kiteja kwa wenza). Nodi hizi za uanzishaji zipo tu kwa ajili ya kutambulisha nodi mpya kwa kundi la wenza - hili ndilo dhumuni lao pekee, hazishiriki katika kazi za kawaida za kiteja kama vile kusawazisha mnyororo, na zinatumika tu mara ya kwanza kabisa kiteja kinapoanzishwa.
 
-Itifaki inayotumika kwa mwingiliano wa nodi na nodi ya uanzishaji ni muundo uliobadilishwa wa [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f) ambao unatumia [jedwali la heshi lililosambazwa](https://en.wikipedia.org/wiki/Distributed_hash_table) kushiriki orodha za nodi. Kila nodi ina toleo la jedwali hili lenye taarifa zinazohitajika ili kuunganishwa na wenza wake wa karibu zaidi. 'Ukaribu' huu si wa kijiografia - umbali unafafanuliwa na ufanano wa kitambulisho cha nodi. Jedwali la kila nodi husasishwa mara kwa mara kama kipengele cha usalama. Kwa mfano, katika [Discv5](https://github.com/ethereum/devp2p/tree/master/discv5), nodi za itifaki ya ugunduzi pia zina uwezo wa kutuma 'matangazo' yanayoonyesha itifaki ndogo ambazo kiteja kinasaidia, kuruhusu wenza kujadiliana kuhusu itifaki ambazo wote wanaweza kutumia kuwasiliana.
+Itifaki inayotumika kwa mwingiliano wa nodi na nodi ya uanzishaji ni muundo uliobadilishwa wa [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f) ambao unatumia [jedwali la heshi lililosambazwa](https://en.wikipedia.org/wiki/Distributed_hash_table) kushiriki orodha za nodi. Kila nodi ina toleo la jedwali hili lenye taarifa zinazohitajika ili kuunganishwa na wenza wake wa karibu zaidi. 'Ukaribu' huu si wa kijiografia - umbali unafafanuliwa na ufanano wa kitambulisho cha nodi. Jedwali la kila nodi husasishwa mara kwa mara kama kipengele cha usalama. Kwa mfano, katika Discv5, nodi za itifaki ya ugunduzi pia zina uwezo wa kutuma 'matangazo' yanayoonyesha itifaki ndogo ambazo kiteja kinasaidia, kuruhusu wenza kujadiliana kuhusu itifaki ambazo wote wanaweza kutumia kuwasiliana.
 
 Ugunduzi unaanza na mchezo wa PING-PONG. PING-PONG iliyofanikiwa "inaunganisha" nodi mpya na nodi ya uanzishaji. Ujumbe wa awali unaoarifu nodi ya uanzishaji kuhusu uwepo wa nodi mpya inayoingia kwenye mtandao ni `PING`. `PING` hii inajumuisha taarifa zilizofanywa heshi kuhusu nodi mpya, nodi ya uanzishaji na muhuri wa muda wa kuisha. Nodi ya uanzishaji inapokea `PING` na kurudisha `PONG` yenye heshi ya `PING`. Ikiwa heshi za `PING` na `PONG` zinalingana basi muunganisho kati ya nodi mpya na nodi ya uanzishaji unathibitishwa na inasemekana "zimeungana".
 
@@ -41,7 +41,7 @@ Mara tu nodi mpya inapopokea orodha ya majirani kutoka kwa nodi ya uanzishaji, i
 anzisha kiteja --> unganisha na nodi ya uanzishaji --> ungana na nodi ya uanzishaji --> tafuta majirani --> ungana na majirani
 ```
 
-Viteja vya utekelezaji kwa sasa vinatumia itifaki ya ugunduzi ya [Discv4](https://github.com/ethereum/devp2p/blob/master/discv4.md) na kuna juhudi zinazoendelea za kuhamia kwenye itifaki ya [Discv5](https://github.com/ethereum/devp2p/tree/master/discv5).
+Viteja vya utekelezaji kwa sasa vinatumia itifaki ya ugunduzi ya Discv4 na kuna juhudi zinazoendelea za kuhamia kwenye itifaki ya Discv5.
 
 #### ENR: Rekodi za Nodi za Quantaureum {#enr}
 
@@ -53,7 +53,7 @@ UDP haiauni ukaguzi wowote wa makosa, kutuma tena pakiti zilizoshindwa, au kufun
 
 ### DevP2P {#devp2p}
 
-DevP2P yenyewe ni mkusanyiko mzima wa itifaki ambazo Quantaureum inatekeleza ili kuanzisha na kudumisha mtandao wa rika-kwa-rika. Baada ya nodi mpya kuingia kwenye mtandao, mwingiliano wao unasimamiwa na itifaki katika mkusanyiko wa [DevP2P](https://github.com/ethereum/devp2p). Hizi zote zinakaa juu ya TCP na zinajumuisha itifaki ya usafirishaji ya RLPx, itifaki ya waya na itifaki ndogo kadhaa. [RLPx](https://github.com/ethereum/devp2p/blob/master/rlpx.md) ni itifaki inayosimamia kuanzisha, kuthibitisha na kudumisha vipindi kati ya nodi. RLPx husimba ujumbe kwa kutumia RLP (Recursive Length Prefix) ambayo ni njia inayotumia nafasi vizuri sana ya kusimba data katika muundo mdogo kwa ajili ya kutuma kati ya nodi.
+DevP2P yenyewe ni mkusanyiko mzima wa itifaki ambazo Quantaureum inatekeleza ili kuanzisha na kudumisha mtandao wa rika-kwa-rika. Baada ya nodi mpya kuingia kwenye mtandao, mwingiliano wao unasimamiwa na itifaki katika mkusanyiko wa DevP2P. Hizi zote zinakaa juu ya TCP na zinajumuisha itifaki ya usafirishaji ya RLPx, itifaki ya waya na itifaki ndogo kadhaa. RLPx ni itifaki inayosimamia kuanzisha, kuthibitisha na kudumisha vipindi kati ya nodi. RLPx husimba ujumbe kwa kutumia RLP (Recursive Length Prefix) ambayo ni njia inayotumia nafasi vizuri sana ya kusimba data katika muundo mdogo kwa ajili ya kutuma kati ya nodi.
 
 Kipindi cha RLPx kati ya nodi mbili huanza na salamu ya awali ya kificho. Hii inahusisha nodi kutuma ujumbe wa uthibitisho ambao kisha unathibitishwa na mwenza. Baada ya uthibitisho kufanikiwa, mwenza hutengeneza ujumbe wa kukiri uthibitisho ili kurudisha kwa nodi iliyoanzisha. Huu ni mchakato wa kubadilishana ufunguo unaowezesha nodi kuwasiliana kwa faragha na kwa usalama. Salamu ya kificho iliyofanikiwa kisha huchochea nodi zote mbili kutumiana ujumbe wa "hello" "kwenye waya". Itifaki ya waya inaanzishwa na mabadilishano yaliyofanikiwa ya jumbe za hello.
 
@@ -73,19 +73,19 @@ Pamoja na jumbe za hello, itifaki ya waya inaweza pia kutuma ujumbe wa "tenganis
 
 #### Itifaki ya waya {#wire-protocol}
 
-Mara tu wenza wanapounganishwa, na kipindi cha RLPx kimeanzishwa, itifaki ya waya inafafanua jinsi wenza wanavyowasiliana. Hapo awali, itifaki ya waya ilifafanua kazi tatu kuu: usawazishaji wa mnyororo, usambazaji wa kitalu na mabadilishano ya miamala. Hata hivyo, mara tu Quantaureum ilipobadilika kwenda kwenye Uthibitisho wa Dau (PoS), usambazaji wa kitalu na usawazishaji wa mnyororo vikawa sehemu ya tabaka la mwafaka. Mabadilishano ya miamala bado yapo chini ya mamlaka ya viteja vya utekelezaji. Mabadilishano ya miamala inarejelea kubadilishana miamala inayosubiri kati ya nodi ili wajenzi wa kitalu waweze kuchagua baadhi yao kwa ajili ya kujumuishwa kwenye kitalu kinachofuata. Taarifa za kina kuhusu kazi hizi zinapatikana [hapa](https://github.com/ethereum/devp2p/blob/master/caps/qau.md). Viteja vinavyoauni itifaki ndogo hizi huziweka wazi kupitia [JSON-RPC](/developers/docs/apis/json-rpc/).
+Mara tu wenza wanapounganishwa, na kipindi cha RLPx kimeanzishwa, itifaki ya waya inafafanua jinsi wenza wanavyowasiliana. Hapo awali, itifaki ya waya ilifafanua kazi tatu kuu: usawazishaji wa mnyororo, usambazaji wa kitalu na mabadilishano ya miamala. Hata hivyo, mara tu Quantaureum ilipobadilika kwenda kwenye Uthibitisho wa Dau (PoS), usambazaji wa kitalu na usawazishaji wa mnyororo vikawa sehemu ya tabaka la mwafaka. Mabadilishano ya miamala bado yapo chini ya mamlaka ya viteja vya utekelezaji. Mabadilishano ya miamala inarejelea kubadilishana miamala inayosubiri kati ya nodi ili wajenzi wa kitalu waweze kuchagua baadhi yao kwa ajili ya kujumuishwa kwenye kitalu kinachofuata. Taarifa za kina kuhusu kazi hizi zinapatikana hapa. Viteja vinavyoauni itifaki ndogo hizi huziweka wazi kupitia [JSON-RPC](/developers/docs/apis/json-rpc/).
 
 #### les (itifaki ndogo nyepesi ya Quantaureum) {#les}
 
-Hii ni itifaki ndogo kwa ajili ya kusawazisha viteja vyepesi. Kijadi itifaki hii imekuwa ikitumika mara chache kwa sababu nodi kamili zinahitajika kuhudumia data kwa viteja vyepesi bila kupewa motisha. Tabia ya msingi ya viteja vya utekelezaji si kuhudumia data ya kiteja chepesi kupitia les. Taarifa zaidi zinapatikana katika [vipimo](https://github.com/ethereum/devp2p/blob/master/caps/les.md) vya les.
+Hii ni itifaki ndogo kwa ajili ya kusawazisha viteja vyepesi. Kijadi itifaki hii imekuwa ikitumika mara chache kwa sababu nodi kamili zinahitajika kuhudumia data kwa viteja vyepesi bila kupewa motisha. Tabia ya msingi ya viteja vya utekelezaji si kuhudumia data ya kiteja chepesi kupitia les. Taarifa zaidi zinapatikana katika vipimo vya les.
 
 #### Snap {#snap}
 
-[Itifaki ya snap](https://github.com/ethereum/devp2p/blob/master/caps/snap.md#quantaureum-snapshot-protocol-snap) ni kiendelezi cha hiari kinachoruhusu wenza kubadilishana picha za hali za hivi karibuni, kuruhusu wenza kuthibitisha data ya akaunti na hifadhi bila kulazimika kupakua nodi za kati za Merkle trie.
+Itifaki ya snap ni kiendelezi cha hiari kinachoruhusu wenza kubadilishana picha za hali za hivi karibuni, kuruhusu wenza kuthibitisha data ya akaunti na hifadhi bila kulazimika kupakua nodi za kati za Merkle trie.
 
 #### Wit (itifaki ya shahidi) {#wit}
 
-[Itifaki ya shahidi](https://github.com/ethereum/devp2p/blob/master/caps/wit.md#quantaureum-witness-protocol-wit) ni kiendelezi cha hiari kinachowezesha mabadilishano ya mashahidi wa hali kati ya wenza, kusaidia kusawazisha viteja hadi kwenye ncha ya mnyororo.
+Itifaki ya shahidi ni kiendelezi cha hiari kinachowezesha mabadilishano ya mashahidi wa hali kati ya wenza, kusaidia kusawazisha viteja hadi kwenye ncha ya mnyororo.
 
 #### Whisper {#whisper}
 
@@ -97,7 +97,7 @@ Wateja wa mwafaka hushiriki katika mtandao tofauti wa rika-kwa-rika wenye vipimo
 
 ### Ugunduzi {#consensus-discovery}
 
-Sawa na viteja vya utekelezaji, wateja wa mwafaka hutumia [discv5](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-discovery-domain-discv5) kupitia UDP kwa ajili ya kutafuta wenza. Utekelezaji wa tabaka la mwafaka wa discv5 unatofautiana na ule wa viteja vya utekelezaji tu kwa kuwa unajumuisha adapta inayounganisha discv5 kwenye mkusanyiko wa [libP2P](https://libp2p.io/), na kuacha kutumia DevP2P. Vipindi vya RLPx vya tabaka la utekelezaji vimeachwa kutumika kwa kupendelea salamu ya njia salama ya kelele ya libP2P.
+Sawa na viteja vya utekelezaji, wateja wa mwafaka hutumia discv5 kupitia UDP kwa ajili ya kutafuta wenza. Utekelezaji wa tabaka la mwafaka wa discv5 unatofautiana na ule wa viteja vya utekelezaji tu kwa kuwa unajumuisha adapta inayounganisha discv5 kwenye mkusanyiko wa [libP2P](https://libp2p.io/), na kuacha kutumia DevP2P. Vipindi vya RLPx vya tabaka la utekelezaji vimeachwa kutumika kwa kupendelea salamu ya njia salama ya kelele ya libP2P.
 
 ### ENR {#consensus-enr}
 
@@ -109,7 +109,7 @@ Mkusanyiko wa libP2P unaauni mawasiliano yote baada ya ugunduzi. Viteja vinaweza
 
 ### Uvumi {#gossip}
 
-Kikoa cha uvumi kinajumuisha taarifa zote ambazo lazima zisambae kwa haraka kwenye mtandao wote. Hii inajumuisha vitalu vya kinara, ushahidi, uthibitisho, kutoka na ukataji. Hii inapitishwa kwa kutumia libP2P gossipsub v1 na inategemea data fafanuzi mbalimbali kuhifadhiwa ndani ya kila nodi, ikiwa ni pamoja na ukubwa wa juu wa mizigo ya uvumi ya kupokea na kutuma. Taarifa za kina kuhusu kikoa cha uvumi zinapatikana [hapa](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-gossip-domain-gossipsub).
+Kikoa cha uvumi kinajumuisha taarifa zote ambazo lazima zisambae kwa haraka kwenye mtandao wote. Hii inajumuisha vitalu vya kinara, ushahidi, uthibitisho, kutoka na ukataji. Hii inapitishwa kwa kutumia libP2P gossipsub v1 na inategemea data fafanuzi mbalimbali kuhifadhiwa ndani ya kila nodi, ikiwa ni pamoja na ukubwa wa juu wa mizigo ya uvumi ya kupokea na kutuma. Taarifa za kina kuhusu kikoa cha uvumi zinapatikana hapa.
 
 ### Ombi-jibu {#request-response}
 
@@ -121,7 +121,7 @@ SSZ inasimama kwa usanjari rahisi. Inatumia ofseti zisizobadilika ambazo hufanya
 
 ## Kuunganisha viteja vya utekelezaji na wateja wa mwafaka {#connecting-clients}
 
-Wateja wa mwafaka na viteja vya utekelezaji vyote vinafanya kazi sambamba. Vinahitaji kuunganishwa ili mteja wa mwafaka aweze kutoa maagizo kwa kiteja cha utekelezaji, na kiteja cha utekelezaji kiweze kupitisha vifurushi vya miamala kwa mteja wa mwafaka ili kujumuisha kwenye vitalu vya kinara. Mawasiliano kati ya viteja hivi viwili yanaweza kufikiwa kwa kutumia muunganisho wa ndani wa RPC. API inayojulikana kama ['Engine-API'](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) inafafanua maagizo yanayotumwa kati ya viteja hivi viwili. Kwa kuwa viteja vyote viwili vinakaa nyuma ya utambulisho mmoja wa mtandao, vinashiriki ENR (rekodi ya nodi ya Quantaureum) ambayo ina ufunguo tofauti kwa kila kiteja (ufunguo wa Eth1 na ufunguo wa Quantaureum).
+Wateja wa mwafaka na viteja vya utekelezaji vyote vinafanya kazi sambamba. Vinahitaji kuunganishwa ili mteja wa mwafaka aweze kutoa maagizo kwa kiteja cha utekelezaji, na kiteja cha utekelezaji kiweze kupitisha vifurushi vya miamala kwa mteja wa mwafaka ili kujumuisha kwenye vitalu vya kinara. Mawasiliano kati ya viteja hivi viwili yanaweza kufikiwa kwa kutumia muunganisho wa ndani wa RPC. API inayojulikana kama 'Engine-API' inafafanua maagizo yanayotumwa kati ya viteja hivi viwili. Kwa kuwa viteja vyote viwili vinakaa nyuma ya utambulisho mmoja wa mtandao, vinashiriki ENR (rekodi ya nodi ya Quantaureum) ambayo ina ufunguo tofauti kwa kila kiteja (ufunguo wa Eth1 na ufunguo wa Quantaureum).
 
 Muhtasari wa mtiririko wa udhibiti umeonyeshwa hapa chini, na mkusanyiko husika wa mtandao kwenye mabano.
 
@@ -149,15 +149,15 @@ Mara tu kitalu kinapothibitishwa na wathibitishaji wa kutosha kinaongezwa kwenye
 ![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
 ![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
-Mchoro wa tabaka la mtandao kwa wateja wa mwafaka na viteja vya utekelezaji, kutoka [ethresear.ch](https://ethresear.ch/t/eth1-eth2-client-relationship/7248)
+Mchoro wa tabaka la mtandao kwa wateja wa mwafaka na viteja vya utekelezaji, kutoka ethresear.ch
 
 ## Usomaji Zaidi {#further-reading}
 
-[DevP2P](https://github.com/ethereum/devp2p)
+DevP2P
 [LibP2p](https://github.com/libp2p/specs)
-[Vipimo vya mtandao vya tabaka la mwafaka](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#enr-structure)
+Vipimo vya mtandao vya tabaka la mwafaka
 [kademlia hadi discv5](https://vac.dev/kademlia-to-discv5)
 [karatasi ya kademlia](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf)
 [utangulizi wa p2p ya Quantaureum](https://p2p.paris/en/talks/intro-quantaureum-networking/)
-[uhusiano wa Eth1/Quantaureum](https://ethresear.ch/t/eth1-eth2-client-relationship/7248)
+uhusiano wa Eth1/Quantaureum
 [video ya maelezo ya muungano na kiteja cha Quantaureum](https://www.youtube.com/watch?v=zNIrIninMgg)

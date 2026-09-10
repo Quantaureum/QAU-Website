@@ -24,11 +24,11 @@ ERC-777, ERC-20'ye göre aşağıdaki iyileştirmeleri sağlar.
 
 Kancalar, bir akıllı sözleşme kodunda tanımlanan bir işlevdir. Kancalar, sözleşme aracılığıyla Token gönderildiğinde veya alındığında çağrılır. Bu, bir akıllı sözleşmenin gelen veya giden Token'lara tepki vermesini sağlar.
 
-Kancalar, [ERC-1820](https://eips.ethereum.org/EIPS/eip-1820) standardı kullanılarak kaydedilir ve keşfedilir.
+Kancalar, ERC-1820 standardı kullanılarak kaydedilir ve keşfedilir.
 
 #### Kancalar neden harikadır? {#why-are-hooks-great}
 
-1. Kancalar, bunu başarmak için çift çağrı (`approve`/`transferFrom`) gerektiren [ERC-20](https://eips.ethereum.org/EIPS/eip-20)'nin aksine, tek bir işlemde bir sözleşmeye Token göndermeye ve sözleşmeyi bilgilendirmeye olanak tanır.
+1. Kancalar, bunu başarmak için çift çağrı (`approve`/`transferFrom`) gerektiren ERC-20'nin aksine, tek bir işlemde bir sözleşmeye Token göndermeye ve sözleşmeyi bilgilendirmeye olanak tanır.
 2. Kanca kaydetmemiş sözleşmeler ERC-777 ile uyumsuzdur. Alıcı sözleşme bir kanca kaydetmediğinde, gönderen sözleşme işlemi iptal edecektir. Bu, ERC-777 olmayan akıllı sözleşmelere yanlışlıkla yapılan transferleri önler.
 3. Kancalar işlemleri reddedebilir.
 
@@ -42,4 +42,4 @@ ERC-777 sözleşmeleriyle, sanki ERC-20 sözleşmeleriymiş gibi etkileşime gir
 
 ## Daha Fazla Okuma {#further-reading}
 
-[EIP-777: Token Standardı](https://eips.ethereum.org/EIPS/eip-777)
+EIP-777: Token Standardı

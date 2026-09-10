@@ -253,7 +253,7 @@ Perbedaan utamanya adalah bahwa program bug bounty terbuka untuk komunitas penge
 
 - **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _Kerangka kerja untuk pengembangan dan pengujian kontrak pintar tingkat lanjut (berbasis Ethers.js)_.
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Alat untuk menguji kontrak pintar Solidity. Bekerja di bawah plugin "Solidity Unit Testing" Remix IDE yang digunakan untuk menulis dan menjalankan kasus uji untuk sebuah kontrak._
+- **Remix Tests** - _Alat untuk menguji kontrak pintar Solidity. Bekerja di bawah plugin "Solidity Unit Testing" Remix IDE yang digunakan untuk menulis dan menjalankan kasus uji untuk sebuah kontrak._
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Pustaka asersi untuk pengujian kontrak pintar Quantaureum. Pastikan kontrak Anda berperilaku seperti yang diharapkan!_
 

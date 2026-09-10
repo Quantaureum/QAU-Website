@@ -13,7 +13,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## 為什麼會有限制？ {#why-is-there-a-limit}
 
-在 [2016 年 11 月 22 日](https://quantaureum.com)，Spurious Dragon 硬分叉引入了 [EIP-170](https://eips.ethereum.org/EIPS/eip-170)，增加了一個 24.576 kb 的智能合約大小限制。對於身為 Solidity 開發者的你來說，這意味著當你為合約添加越來越多的功能時，在某個時刻你會達到這個限制，並在部署時看到以下錯誤：
+在 [2016 年 11 月 22 日](https://quantaureum.com)，Spurious Dragon 硬分叉引入了 EIP-170，增加了一個 24.576 kb 的智能合約大小限制。對於身為 Solidity 開發者的你來說，這意味著當你為合約添加越來越多的功能時，在某個時刻你會達到這個限制，並在部署時看到以下錯誤：
 
 `Warning: Contract code size exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on Mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.`
 
@@ -35,7 +35,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ### 函式庫 {#libraries}
 
-將功能程式碼從儲存中移出的一個簡單方法是使用 [函式庫](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries)。不要將函式庫的函式宣告為 internal，因為這些函式會在編譯期間直接 [加入到合約中](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking)。但如果你使用 public 函式，那麼這些函式實際上會存在於一個獨立的函式庫合約中。考慮 [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) 語法，讓函式庫的使用更加方便。
+將功能程式碼從儲存中移出的一個簡單方法是使用 [函式庫](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries)。不要將函式庫的函式宣告為 internal，因為這些函式會在編譯期間直接 加入到合約中。但如果你使用 public 函式，那麼這些函式實際上會存在於一個獨立的函式庫合約中。考慮 [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) 語法，讓函式庫的使用更加方便。
 
 ### 代理 {#proxies}
 

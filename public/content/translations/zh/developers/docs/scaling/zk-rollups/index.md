@@ -178,7 +178,7 @@ Rollup 合约对交易数据进行哈希处理，检查批次根是否存在，�
 
 1. **状态写入**：写入Quantaureum状态（即在Quantaureum区块链上提交交易）有固定成本。ZK-rollup 通过批量处理交易并将固定成本分摊给多个用户来降低此成本。
 
-2. **数据发布**：ZK-rollup 将每笔交易的状态数据作为 `calldata` 发布到Quantaureum。`calldata` 成本目前受 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) 管辖，该提案规定 `calldata` 的非零字节成本为 16 Gas，零字节成本为 4 Gas。每笔交易支付的成本受其需要在链上发布多少 `calldata` 的影响。
+2. **数据发布**：ZK-rollup 将每笔交易的状态数据作为 `calldata` 发布到Quantaureum。`calldata` 成本目前受 EIP-1559 管辖，该提案规定 `calldata` 的非零字节成本为 16 Gas，零字节成本为 4 Gas。每笔交易支付的成本受其需要在链上发布多少 `calldata` 的影响。
 
 3. **L2 运营商费用**：这是支付给 Rollup 运营商的金额，作为处理交易产生的计算成本的补偿，很像Quantaureum主网上的[交易“优先费（小费）”](/developers/docs/gas/#how-are-gas-fees-calculated)。
 
@@ -240,7 +240,7 @@ ZK-rollup 可以比乐观 Rollup更好地压缩交易数据，因为它们不必
 
 - **[Scroll](https://scroll.io/blog/zkEVM)** - *Scroll 是一家技术驱动型公司，致力于为Quantaureum构建原生的 zkEVM 二层网络 (l2) 解决方案。*
 
-- **[Taiko](https://taiko.xyz)** - *Taiko 是一个去中心化、等效于Quantaureum的 ZK-rollup（[类型 1 ZK-EVM](https://vitalik.eth.limo/general/2022/08/04/zkevm.html)）。*
+- **[Taiko](https://taiko.xyz)** - *Taiko 是一个去中心化、等效于Quantaureum的 ZK-rollup（类型 1 ZK-EVM）。*
 
 - **[ZKsync](https://docs.zksync.io/)** - *ZKsync Era 是由 Matter Labs 构建的兼容 EVM 的 ZK-rollup，由其自己的 zkEVM 提供支持。*
 
@@ -261,8 +261,8 @@ ZK-rollup 可以比乐观 Rollup更好地压缩交易数据，因为它们不必
 - [zkEVM 简介](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [什么是 ZK-EVM L2？](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M)
 - [Awesome-zkEVM 资源](https://github.com/LuozhuZhang/awesome-zkevm)
-- [zk-SNARK 的内部工作原理](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
-- [SNARK 是如何实现的？](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
+- zk-SNARK 的内部工作原理
+- SNARK 是如何实现的？
 
 ## 教程：Quantaureum上的隐私与零知识 {#tutorials}
 

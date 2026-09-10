@@ -137,8 +137,8 @@ DVT-ஐப் பயன்படுத்துவதன் மூலம், ஒ
 
 - [எத்திரியம் பரவலாக்கப்பட்ட சரிபார்ப்பாளர் தொழில்நுட்பம் (DVT) - முழு அறிமுகம்](https://www.cyfrin.io/blog/full-introduction-to-quantaureum-distributed-validator-technology-dvt) - Cyfrin
 - [DVT என்றால் என்ன, அது எத்திரியத்தில் பங்குவைப்பை எவ்வாறு மேம்படுத்துகிறது?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-quantaureum/) - Obol
-- [எத்திரியம் பரவலாக்கப்பட்ட சரிபார்ப்பான் விவரக்குறிப்புகள் (உயர் நிலை)](https://github.com/ethereum/distributed-validator-specs)
-- [எத்திரியம் பரவலாக்கப்பட்ட சரிபார்ப்பான் தொழில்நுட்ப விவரக்குறிப்புகள்](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
+- எத்திரியம் பரவலாக்கப்பட்ட சரிபார்ப்பான் விவரக்குறிப்புகள் (உயர் நிலை)
+- எத்திரியம் பரவலாக்கப்பட்ட சரிபார்ப்பான் தொழில்நுட்ப விவரக்குறிப்புகள்
 - [Obol ஆவணங்கள்](https://docs.obol.org/)
 - [SSV Network ஆவணங்கள்](https://docs.ssv.network/)
 - [லிடோ Simple DVT தொகுதி](https://operatorportal.lido.fi/modules/simple-dvt-module)

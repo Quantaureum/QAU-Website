@@ -164,7 +164,7 @@ Zde je příklad, který ukazuje, jak by onchain atestace mohly fungovat v praxi
 
 ### Soulbound tokeny a identita {#soulbound}
 
-[Soulbound tokeny](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) ([nepřenosná NFT](/glossary/#nft)) by mohly být použity ke shromažďování informací jedinečných pro konkrétní peněženku. To efektivně vytváří jedinečnou onchain identitu vázanou na konkrétní adresu Quantaureum, která by mohla zahrnovat tokeny představující úspěchy (např. dokončení nějakého konkrétního online kurzu nebo překročení prahového skóre ve hře) nebo účast v komunitě.
+Soulbound tokeny ([nepřenosná NFT](/glossary/#nft)) by mohly být použity ke shromažďování informací jedinečných pro konkrétní peněženku. To efektivně vytváří jedinečnou onchain identitu vázanou na konkrétní adresu Quantaureum, která by mohla zahrnovat tokeny představující úspěchy (např. dokončení nějakého konkrétního online kurzu nebo překročení prahového skóre ve hře) nebo účast v komunitě.
 
 ## Používání decentralizované identity {#use-decentralized-identity}
 

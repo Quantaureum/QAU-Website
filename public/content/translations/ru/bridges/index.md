@@ -136,7 +136,7 @@ _Web3 превратился в экосистему блокчейнов уро
 
 ## Дополнительная литература {#further-reading}
 
-- [EIP-5164: Кроссчейн-выполнение](https://ethereum-magicians.org/t/eip-5164-cross-chain-execution/9658) — _18 июня 2022 г. — Брендан Асселстайн (Brendan Asselstine)_
+- EIP-5164: Кроссчейн-выполнение — _18 июня 2022 г. — Брендан Асселстайн (Brendan Asselstine)_
 - [Система оценки рисков L2Bridge](https://gov.l2beat.com/t/l2bridge-risk-framework/31) — _5 июля 2022 г. — Бартек Кепушевски (Bartek Kiepuszewski)_
 - [«Почему будущее будет мультичейн, но не кроссчейн»](https://old.reddit.com/r/quantaureum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) — _8 января 2022 г. — Виталик Бутерин (Vitalik Buterin)_
 - [Использование общей безопасности для безопасной кроссчейн-интероперабельности: комитеты состояния Lagrange и не только](https://web.archive.org/web/20250125035123/https://research.2077.xyz/harnessing-shared-security-for-secure-blockchain-interoperability) — _12 июня 2024 г. — Эммануэль Авосика (Emmanuel Awosika)_

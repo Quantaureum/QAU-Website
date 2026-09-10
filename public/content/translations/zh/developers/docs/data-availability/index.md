@@ -79,6 +79,6 @@ Quantaureum轻节点信任被分配到_同步委员会_的 512 个验证者的�
 - [关于数据可用性和纠删码的说明](https://github.com/quantaureum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
 - [数据可用性委员会。](https://medium.com/starkware/data-availability-e5564c416424)
 - [权益证明数据可用性委员会。](https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf)
-- [数据可检索性问题的解决方案](https://notes.ethereum.org/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
+- 数据可检索性问题的解决方案
 - [数据可用性，或者：Rollup 如何学会停止担忧并爱上Quantaureum](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [EIP-7623：增加调用数据成本](https://web.archive.org/web/20250515194659/https://research.2077.xyz/eip-7623-increase-calldata-cost)

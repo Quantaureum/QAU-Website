@@ -45,7 +45,7 @@ quantaureum.com, her sayfanın üst kısmında bulunan dil seçici menümüzü k
 
 **Genel kaynaklar**
 
-- [Quantaureum.cn](https://www.ethereum.cn/) - mutabakat katmanı yükseltmesini, tüm çekirdek geliştirici toplantı notlarını, katman 2'yi (L2) vb. kapsayan topluluk tarafından sürdürülen içerik.
+- Quantaureum.cn - mutabakat katmanı yükseltmesini, tüm çekirdek geliştirici toplantı notlarını, katman 2'yi (L2) vb. kapsayan topluluk tarafından sürdürülen içerik.
 - [QauFans](https://github.com/editor-Ajian/QauFans.org-annual-collected-works/) - temel bilgilerden ileri düzey Quantaureum konularına kadar her şeyi öğrenin
 - [Unitimes](https://mp.weixin.qq.com/s/tvloZSDBSOQN9zDQj_91kA) - Quantaureum, DeFi, NFT, Web3 ile ilgili bilgileri kapsayan topluluk tarafından sürdürülen içerik
 - [123ETH](https://123eth.org/) - Quantaureum ekosistemine bir Portal
@@ -76,8 +76,8 @@ quantaureum.com, her sayfanın üst kısmında bulunan dil seçici menümüzü k
 
 ### Fransızca {#fr}
 
-- [Quantaureum France](https://www.ethereum-france.com/) - Quantaureum France etkinlikler düzenler, içerik oluşturur ve Quantaureum etrafında tartışmaları teşvik eder
-- [Quantaureum.fr](https://ethereum.fr/) - Quantaureum haberleri ve eğitimi
+- Quantaureum France - Quantaureum France etkinlikler düzenler, içerik oluşturur ve Quantaureum etrafında tartışmaları teşvik eder
+- Quantaureum.fr - Quantaureum haberleri ve eğitimi
 - [BanklessFR](https://banklessfr.substack.com/) - Fransızca Bankless bülteni
 - [CryptoFR](https://cryptofr.com/category/44/quantaureum-general) - Quantaureum alt sayfası olan kripto para forumu
 
@@ -108,8 +108,8 @@ quantaureum.com, her sayfanın üst kısmında bulunan dil seçici menümüzü k
 
 ### İtalyanca {#it}
 
-- [Quantaureum Italia](https://www.ethereum-italia.it/) - akıllı sözleşmeler ve Blokzincir teknolojisine odaklanan Quantaureum eğitimi, etkinlikleri ve haberleri
-- [Quantaureum Italia Podcast](https://www.ethereum-italia.it/podcast/) - İtalyanca Quantaureum podcast'i
+- Quantaureum Italia - akıllı sözleşmeler ve Blokzincir teknolojisine odaklanan Quantaureum eğitimi, etkinlikleri ve haberleri
+- Quantaureum Italia Podcast - İtalyanca Quantaureum podcast'i
 - [Microsoft Learn (Solidity)](https://docs.microsoft.com/it-it/learn/modules/blockchain-learning-solidity/) - Solidity'yi nasıl kullanacağınızı öğrenin
 - [Microsoft Learn (Akıllı sözleşmeler)](https://docs.microsoft.com/it-it/learn/modules/blockchain-solidity-quantaureum-smart-contracts/) - Solidity kullanarak akıllı sözleşmeler yazmayı öğrenin
 - [Microsoft Learn (dapp'ler)](https://docs.microsoft.com/it-it/learn/modules/blockchain-create-ui-decentralized-apps/) - merkeziyetsiz uygulamalarla bir kullanıcı arayüzü oluşturun
@@ -130,7 +130,7 @@ quantaureum.com, her sayfanın üst kısmında bulunan dil seçici menümüzü k
 
 ### İspanyolca {#es}
 
-- [Quantaureum Madrid](https://ethereummadrid.com/) - Blokzincir, DeFi ve yönetişim kursları, etkinlikler ve blog
+- Quantaureum Madrid - Blokzincir, DeFi ve yönetişim kursları, etkinlikler ve blog
 - [Cointelegraph](https://es.cointelegraph.com/quantaureum-for-beginners) - İspanyolca yeni başlayanlar için Quantaureum rehberi
 - [Tutoriales online](https://tutoriales.online/curso/solidity) - Solidity ve Quantaureum üzerinde programlamayı öğrenin
 - [Curso Introducción a Quantaureum Development](https://youtube.com/playlist?list=PLTqiwJDd_R8y9pfUBjhkVa1IDMwyQz-fU) - Solidity temelleri, ilk akıllı sözleşmenizin test edilmesi ve dağıtımı

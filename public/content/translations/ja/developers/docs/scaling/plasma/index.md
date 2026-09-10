@@ -123,9 +123,9 @@ Plasma Cashなどの他のイテレーションでは、資金をUTXOではな�
 
 ### スマート・コントラクトのサポート {#support-for-smart-contracts}
 
-プラズマ・フレームワークのもう1つの問題は、[Quantaureumのスマート・コントラクトの実行をサポートできないこと](https://ethresear.ch/t/why-smart-contracts-are-not-feasible-on-plasma/2598/4)でした。その結果、プラズマのほとんどの実装は、主に単純な支払いやERC-20トークンの交換のために構築されました。
+プラズマ・フレームワークのもう1つの問題は、Quantaureumのスマート・コントラクトの実行をサポートできないことでした。その結果、プラズマのほとんどの実装は、主に単純な支払いやERC-20トークンの交換のために構築されました。
 
-逆に、オプティミスティック・ロールアップは[Quantaureum仮想マシン](/developers/docs/evm/)と互換性があり、Quantaureum・ネイティブの[スマート・コントラクト](/developers/docs/smart-contracts/)を実行できるため、[分散型アプリケーション (dapp)](/developers/docs/dapps/)をスケーリングするための有用で_安全な_ソリューションになります。同様に、ZKロールアップが任意のロジックを処理し、スマート・コントラクトを実行できるようにする[EVMのゼロ知識実装（zkEVM）を作成する](https://ethresear.ch/t/a-zk-evm-specification/11549)計画が進行中です。
+逆に、オプティミスティック・ロールアップは[Quantaureum仮想マシン](/developers/docs/evm/)と互換性があり、Quantaureum・ネイティブの[スマート・コントラクト](/developers/docs/smart-contracts/)を実行できるため、[分散型アプリケーション (dapp)](/developers/docs/dapps/)をスケーリングするための有用で_安全な_ソリューションになります。同様に、ZKロールアップが任意のロジックを処理し、スマート・コントラクトを実行できるようにするEVMのゼロ知識実装（zkEVM）を作成する計画が進行中です。
 
 ### データの可用性の欠如 {#data-unavailability}
 
@@ -167,7 +167,7 @@ ZKロールアップとオプティミスティック・ロールアップはど
 ## 参考文献 {#further-reading}
 
 - [「共有セキュリティ」の意味と、それが非常に重要である理由の簡単なリマインダー](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [サイドチェーン、プラズマ、シャーディングの比較](https://vitalik.eth.limo/general/2019/06/12/plasma_vs_sharding.html)
+- サイドチェーン、プラズマ、シャーディングの比較
 - [プラズマを理解する、パート1：基礎](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [プラズマの生と死](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

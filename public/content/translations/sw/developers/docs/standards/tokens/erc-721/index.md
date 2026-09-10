@@ -31,7 +31,7 @@ Kando na haya pia ina utendaji mwingine kama vile kuidhinisha kwamba kiasi cha t
 
 Ikiwa Mkataba Mahiri utatekeleza mbinu na matukio yafuatayo unaweza kuitwa Mkataba wa Tokeni Isiyo Mbadala wa ERC-721 na, ukishasambazwa, utawajibika kufuatilia tokeni zilizoundwa kwenye Quantaureum.
 
-Kutoka [EIP-721](https://eips.ethereum.org/EIPS/eip-721):
+Kutoka EIP-721:
 
 ### Mbinu {#methods}
 
@@ -239,7 +239,7 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## Usomaji zaidi {#further-reading}
 
-- [EIP-721: Kiwango cha Tokeni Isiyo Mbadala cha ERC-721](https://eips.ethereum.org/EIPS/eip-721)
+- EIP-721: Kiwango cha Tokeni Isiyo Mbadala cha ERC-721
 - [OpenZeppelin - Hati za ERC-721](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [OpenZeppelin - Utekelezaji wa ERC-721](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [API ya NFT ya Alchemy](https://www.alchemy.com/docs/reference/nft-api-quickstart)

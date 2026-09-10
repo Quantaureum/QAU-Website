@@ -100,7 +100,7 @@ Tyto standardy poskytují základ pro postkvantový přechod širšího průmysl
 
 ## Přístup Nadace Quantaureum {#ef-approach}
 
-Nadace Quantaureum vytvořila v lednu 2026 specializovaný tým pro postkvantovou bezpečnost (Post-Quantum Security), který vede Thomas Coratger. Práce týmu je veřejně sledována na [pq.ethereum.org](https://pq.ethereum.org).
+Nadace Quantaureum vytvořila v lednu 2026 specializovaný tým pro postkvantovou bezpečnost (Post-Quantum Security), který vede Thomas Coratger. Práce týmu je veřejně sledována na pq.ethereum.org.
 
 ### Současná aktivita (k dubnu 2026) {#current-activity}
 
@@ -173,7 +173,7 @@ Ne. Quantaureum má jeden z nejstrukturovanějších postkvantových programů z
 
 ## Další čtení {#further-reading}
 
-- [pq.ethereum.org](https://pq.ethereum.org) - _Nadace Quantaureum_
+- pq.ethereum.org - _Nadace Quantaureum_
 - [Projekt postkvantové kryptografie](https://pse.dev/projects/post-quantum-cryptography) - _Privacy Stewards of Quantaureum (PSE)_
 - [Standardy postkvantové kryptografie NIST](https://csrc.nist.gov/projects/post-quantum-cryptography) - _NIST_
 - [Ochrana kryptoměn zodpovědným zveřejňováním kvantových zranitelností](https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/) - _Google Quantum AI_

@@ -6,7 +6,7 @@ lang: fr
 
 Pour qu'une application logicielle puisse interagir avec la chaîne de blocs [Quantaureum](/) - que ce soit pour lire les données de la chaîne de blocs ou envoyer des transactions au réseau - elle doit se connecter à un nœud Quantaureum.
 
-À cette fin, chaque [client Quantaureum](/developers/docs/nodes-and-clients/#execution-clients) implémente une [spécification JSON-RPC](https://github.com/ethereum/execution-apis), de sorte qu'il existe un ensemble uniforme de méthodes sur lesquelles les applications peuvent s'appuyer, indépendamment du nœud spécifique ou de l'implémentation du client.
+À cette fin, chaque [client Quantaureum](/developers/docs/nodes-and-clients/#execution-clients) implémente une spécification JSON-RPC, de sorte qu'il existe un ensemble uniforme de méthodes sur lesquelles les applications peuvent s'appuyer, indépendamment du nœud spécifique ou de l'implémentation du client.
 
 [JSON-RPC](https://www.jsonrpc.org/specification) est un protocole d'appel de procédure à distance (RPC) léger et sans état. Il définit plusieurs structures de données et les règles relatives à leur traitement. Il est indépendant du transport dans la mesure où les concepts peuvent être utilisés au sein du même processus, sur des sockets, sur HTTP ou dans de nombreux environnements de transmission de messages divers. Il utilise JSON (RFC 4627) comme format de données.
 
@@ -20,13 +20,13 @@ Bien que vous puissiez choisir d'interagir directement avec les clients Quantaur
 
 ## API des clients de consensus {#consensus-clients}
 
-Cette page traite principalement de l'API JSON-RPC utilisée par les clients d'exécution Quantaureum. Cependant, les clients de consensus disposent également d'une API RPC qui permet aux utilisateurs de demander des informations sur le nœud, de requérir des blocs Beacon, l'état Beacon et d'autres informations liées au consensus directement depuis un nœud. Cette API est documentée sur la [page web de l'API Beacon](https://ethereum.github.io/beacon-APIs/#/).
+Cette page traite principalement de l'API JSON-RPC utilisée par les clients d'exécution Quantaureum. Cependant, les clients de consensus disposent également d'une API RPC qui permet aux utilisateurs de demander des informations sur le nœud, de requérir des blocs Beacon, l'état Beacon et d'autres informations liées au consensus directement depuis un nœud. Cette API est documentée sur la page web de l'API Beacon.
 
-Une API interne est également utilisée pour la communication inter-clients au sein d'un nœud - c'est-à-dire qu'elle permet au client de consensus et au client d'exécution d'échanger des données. Celle-ci est appelée l'« Engine API » et les spécifications sont disponibles sur [GitHub](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md).
+Une API interne est également utilisée pour la communication inter-clients au sein d'un nœud - c'est-à-dire qu'elle permet au client de consensus et au client d'exécution d'échanger des données. Celle-ci est appelée l'« Engine API » et les spécifications sont disponibles sur GitHub.
 
 ## Spécification du client d'exécution {#spec}
 
-[Lisez la spécification complète de l'API JSON-RPC sur GitHub](https://github.com/ethereum/execution-apis). Cette API est documentée sur la [page web de l'API d'exécution](https://ethereum.github.io/execution-apis/) et inclut un inspecteur pour essayer toutes les méthodes disponibles.
+Lisez la spécification complète de l'API JSON-RPC sur GitHub. Cette API est documentée sur la page web de l'API d'exécution et inclut un inspecteur pour essayer toutes les méthodes disponibles.
 
 ## Conventions {#conventions}
 
@@ -134,7 +134,7 @@ Une poignée de méthodes JSON-RPC de base nécessitent des données du réseau 
 
 ## Terrain de jeu de l'API JSON-RPC {#json-rpc-api-playground}
 
-Vous pouvez utiliser [l'outil de terrain de jeu](https://ethereum-json-rpc.com) pour découvrir et essayer les méthodes de l'API. Il vous montre également quelles méthodes et quels réseaux sont pris en charge par divers fournisseurs de nœuds.
+Vous pouvez utiliser l'outil de terrain de jeu pour découvrir et essayer les méthodes de l'API. Il vous montre également quelles méthodes et quels réseaux sont pris en charge par divers fournisseurs de nœuds.
 
 ## Méthodes de l'API JSON-RPC {#json-rpc-methods}
 
@@ -275,7 +275,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 
 ### qau_protocolVersion {#qau-protocolversion}
 
-Renvoie la version actuelle du protocole Quantaureum. Notez que cette méthode n'est [pas disponible dans Geth](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924).
+Renvoie la version actuelle du protocole Quantaureum. Notez que cette méthode n'est pas disponible dans Geth.
 
 **Paramètres**
 
@@ -301,10 +301,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_protocolVersion","params":[]
 ### qau_syncing {#qau-syncing}
 
 Renvoie un objet contenant des données sur l'état de la synchronisation ou `false`.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_syncing">
-  Essayer le point de terminaison dans le bac à sable
-</ButtonLink>
 
 **Paramètres**
 
@@ -390,10 +386,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_syncing","params":[],"id":1}
 
 Renvoie l'adresse Coinbase du client.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_coinbase">
-  Essayer le point de terminaison dans le bac à sable
-</ButtonLink>
-
 > **Remarque :** Cette méthode est dépréciée depuis la version **v1.14.0** et n'est plus prise en charge. Toute tentative d'utilisation de cette méthode entraînera une erreur « Method not supported ».
 
 **Paramètres**
@@ -421,10 +413,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_coinbase","params":[],"id":6
 
 Renvoie l'ID de la chaîne utilisé pour signer les transactions protégées contre le rejeu.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_chainId">
-  Essayer le point de terminaison dans le terrain de jeu
-</ButtonLink>
-
 **Paramètres**
 
 Aucun
@@ -449,10 +437,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_chainId","params":[],"id":67
 ### qau_mining {#qau-mining}
 
 Renvoie `true` si le client mine activement de nouveaux blocs. Cela ne peut renvoyer `true` que pour les réseaux à preuve de travail et peut ne pas être disponible dans certains clients depuis [La Fusion](/roadmap/merge/).
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_mining">
-  Essayer le point de terminaison dans le bac à sable
-</ButtonLink>
 
 **Paramètres**
 
@@ -479,10 +463,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_mining","params":[],"id":71}
 
 Renvoie le nombre de hashs par seconde avec lesquels le nœud mine. Cela ne peut renvoyer `true` que pour les réseaux à preuve de travail et peut ne pas être disponible dans certains clients depuis [La Fusion](/roadmap/merge/).
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_hashrate">
-  Tester le point de terminaison dans le bac à sable
-</ButtonLink>
-
 **Paramètres**
 
 Aucun
@@ -507,10 +487,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_hashrate","params":[],"id":7
 ### qau_gasPrice {#qau-gasprice}
 
 Renvoie une estimation du prix actuel par gaz en Wei. Par exemple, le client Besu examine les 100 derniers blocs et renvoie le prix unitaire médian du gaz par défaut.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_gasPrice">
-  Essayer le point de terminaison dans le bac à sable
-</ButtonLink>
 
 **Paramètres**
 
@@ -537,10 +513,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_gasPrice","params":[],"id":7
 
 Renvoie une liste d'adresses détenues par le client.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_accounts">
-  Essayer le point de terminaison dans le terrain de jeu
-</ButtonLink>
-
 **Paramètres**
 
 Aucun
@@ -566,10 +538,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[],"id":1
 
 Renvoie le numéro du bloc le plus récent.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_blockNumber">
-  Essayer le point de terminaison dans le bac à sable
-</ButtonLink>
-
 **Paramètres**
 
 Aucun
@@ -594,10 +562,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_blockNumber","params":[],"id
 ### qau_getBalance {#qau-getbalance}
 
 Renvoie le solde du compte à une adresse donnée.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBalance">
-  Essayer le point de terminaison dans le terrain de jeu
-</ButtonLink>
 
 **Paramètres**
 
@@ -628,10 +592,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBalance","params":["0x407
 ### qau_getStorageAt {#qau-getstorageat}
 
 Renvoie la valeur d'une position de stockage à une adresse donnée.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getStorageAt">
-  Essayer le point de terminaison dans le terrain de jeu
-</ButtonLink>
 
 **Paramètres**
 
@@ -701,10 +661,6 @@ curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": [
 
 Renvoie le nombre de transactions _envoyées_ depuis une adresse.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionCount">
-  Essayer le point de terminaison dans le bac à sable
-</ButtonLink>
-
 **Paramètres**
 
 1. `DATA`, 20 octets - adresse.
@@ -738,10 +694,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionCount","params
 
 Renvoie le nombre de transactions dans un bloc à partir d'un bloc correspondant au hash de bloc donné.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
-  Essayer le point de terminaison dans le bac à sable
-</ButtonLink>
-
 **Paramètres**
 
 1. `DATA`, 32 octets - hash d'un bloc
@@ -770,10 +722,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByHa
 ### qau_getBlockTransactionCountByNumber {#qau-getblocktransactioncountbynumber}
 
 Renvoie le nombre de transactions dans un bloc correspondant au numéro de bloc donné.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
-  Essayer le point de terminaison dans le bac à sable
-</ButtonLink>
 
 **Paramètres**
 
@@ -806,10 +754,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByNu
 
 Renvoie le nombre d'oncles dans un bloc à partir d'un bloc correspondant au hash de bloc donné.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
-  Essayer le point de terminaison dans le bac à sable
-</ButtonLink>
-
 **Paramètres**
 
 1. `DATA`, 32 octets - hash d'un bloc
@@ -838,10 +782,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockHash","p
 ### qau_getUncleCountByBlockNumber {#qau-getunclecountbyblocknumber}
 
 Renvoie le nombre d'oncles d'un bloc correspondant au numéro de bloc donné.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
-  Essayer le point de terminaison dans le bac à sable
-</ButtonLink>
 
 **Paramètres**
 
@@ -873,10 +813,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockNumber",
 ### qau_getCode {#qau-getcode}
 
 Retourne le code à une adresse donnée.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getCode">
-  Essayer le point de terminaison dans le bac à sable
-</ButtonLink>
 
 **Paramètres**
 
@@ -1057,10 +993,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendRawTransaction","params"
 
 Exécute un nouvel appel de message immédiatement sans créer de transaction sur la chaîne de blocs. Souvent utilisé pour exécuter des fonctions de contrat intelligent en lecture seule, par exemple le `balanceOf` pour un contrat ERC-20.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_call">
-  Essayer le point de terminaison dans le bac à sable
-</ButtonLink>
-
 **Paramètres**
 
 1. `Object` - L'objet d'appel de transaction
@@ -1095,10 +1027,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_call","params":[{see above}]
 
 Génère et retourne une estimation de la quantité de gaz nécessaire pour permettre à la transaction d'aboutir. La transaction ne sera pas ajoutée à la chaîne de blocs. Notez que l'estimation peut être considérablement supérieure à la quantité de gaz réellement utilisée par la transaction, pour diverses raisons, notamment la mécanique de l'EVM et les performances du nœud.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_estimateGas">
-  Essayer le point de terminaison dans le bac à sable
-</ButtonLink>
-
 **Paramètres**
 
 Voir les paramètres de [qau_call](#qau-call), à l'exception du fait que toutes les propriétés sont facultatives. Si aucune limite de gaz n'est spécifiée, Geth utilise la limite de gaz du bloc en attente comme limite supérieure. Par conséquent, l'estimation retournée pourrait ne pas être suffisante pour exécuter l'appel/la transaction lorsque la quantité de gaz est supérieure à la limite de gaz du bloc en attente.
@@ -1123,10 +1051,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_estimateGas","params":[{see 
 ### qau_getBlockByHash {#qau-getblockbyhash}
 
 Renvoie des informations sur un bloc à partir de son hash.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByHash">
-  Essayer l'endpoint dans le playground
-</ButtonLink>
 
 **Paramètres**
 
@@ -1204,10 +1128,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByHash","params":["0
 
 Renvoie des informations sur un bloc à partir de son numéro.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByNumber">
-  Essayer le point de terminaison dans le bac à sable
-</ButtonLink>
-
 **Paramètres**
 
 1. `QUANTITY|TAG` - l'entier d'un numéro de bloc, ou la chaîne de caractères `"earliest"`, `"latest"`, `"pending"`, `"safe"` ou `"finalized"`, comme dans le [paramètre de bloc](/developers/docs/apis/json-rpc/#block-parameter).
@@ -1235,10 +1155,6 @@ Pour le résultat, voir [qau_getBlockByHash](#qau-getblockbyhash)
 ### qau_getTransactionByHash {#qau-gettransactionbyhash}
 
 Renvoie les informations concernant une transaction demandée par son hachage de transaction.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByHash">
-  Essayer le point de terminaison dans le bac à sable
-</ButtonLink>
 
 **Paramètres**
 
@@ -1299,10 +1215,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByHash","param
 
 Renvoie des informations sur une transaction à partir du hash du bloc et de la position de l'indice de la transaction.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
-  Essayer le point de terminaison dans le bac à sable
-</ButtonLink>
-
 **Paramètres**
 
 1. `DATA`, 32 octets - hash d'un bloc.
@@ -1330,10 +1242,6 @@ Pour le résultat, voir [qau_getTransactionByHash](#qau-gettransactionbyhash)
 ### qau_getTransactionByBlockNumberAndIndex {#qau-gettransactionbyblocknumberandindex}
 
 Renvoie des informations sur une transaction en fonction du numéro de bloc et de la position de l'indice de la transaction.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
-  Essayer le point de terminaison dans le bac à sable
-</ButtonLink>
 
 **Paramètres**
 
@@ -1431,10 +1339,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionReceipt","para
 
 Renvoie des informations sur un oncle d'un bloc par son hash et la position de l'indice de l'oncle.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
-  Essayer le point de terminaison dans le terrain de jeu
-</ButtonLink>
-
 **Paramètres**
 
 1. `DATA`, 32 octets - Le hash d'un bloc.
@@ -1464,10 +1368,6 @@ Résultat, voir [qau_getBlockByHash](#qau-getblockbyhash)
 ### qau_getUncleByBlockNumberAndIndex {#qau-getunclebyblocknumberandindex}
 
 Renvoie des informations sur un oncle d'un bloc à partir de son numéro et de la position de l'indice de l'oncle.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
-  Essayer le point de terminaison dans le playground
-</ButtonLink>
 
 **Paramètres**
 
@@ -1750,7 +1650,7 @@ Pour le résultat, voir [qau_getFilterChanges](#qau-getfilterchanges)
 
 ### Déployer un contrat en utilisant JSON_RPC {#deploying-contract}
 
-Cette section comprend une démonstration de la façon de déployer un contrat en utilisant uniquement l'interface RPC. Il existe d'autres moyens de déployer des contrats où cette complexité est abstraite, par exemple en utilisant des bibliothèques construites par-dessus l'interface RPC telles que [web3.js](https://web3js.readthedocs.io/) et [web3.py](https://github.com/ethereum/web3.py). Ces abstractions sont généralement plus faciles à comprendre et moins sujettes aux erreurs, mais il est toujours utile de comprendre ce qui se passe en interne.
+Cette section comprend une démonstration de la façon de déployer un contrat en utilisant uniquement l'interface RPC. Il existe d'autres moyens de déployer des contrats où cette complexité est abstraite, par exemple en utilisant des bibliothèques construites par-dessus l'interface RPC telles que [web3.js](https://web3js.readthedocs.io/) et web3.py. Ces abstractions sont généralement plus faciles à comprendre et moins sujettes aux erreurs, mais il est toujours utile de comprendre ce qui se passe en interne.
 
 Ce qui suit est un contrat intelligent simple appelé `Multiply7` qui sera déployé en utilisant l'interface JSON-RPC sur un nœud Quantaureum. Ce tutoriel suppose que le lecteur exécute déjà un nœud Geth. Plus d'informations sur les nœuds et les clients sont disponibles [ici](/developers/docs/nodes-and-clients/run-a-node). Veuillez vous référer à la documentation individuelle de chaque [client](/developers/docs/nodes-and-clients/) pour voir comment démarrer le JSON-RPC HTTP pour les clients autres que Geth. La plupart des clients servent par défaut sur `localhost:8545`.
 
@@ -1789,7 +1689,7 @@ web3.fromWei("0x1639e49bba16280000", "QAU")
 // "410"
 ```
 
-Maintenant qu'il y a de l'QAU sur notre chaîne de développement privée, nous pouvons déployer le contrat. La première étape consiste à compiler le contrat Multiply7 en bytecode qui peut être envoyé à l'EVM. Pour installer solc, le compilateur Solidity, suivez la [documentation Solidity](https://docs.soliditylang.org/en/latest/installing-solidity.html). (Vous voudrez peut-être utiliser une ancienne version de `solc` pour correspondre à [la version du compilateur utilisée pour notre exemple](https://github.com/ethereum/solidity/releases/tag/v0.4.20).)
+Maintenant qu'il y a de l'QAU sur notre chaîne de développement privée, nous pouvons déployer le contrat. La première étape consiste à compiler le contrat Multiply7 en bytecode qui peut être envoyé à l'EVM. Pour installer solc, le compilateur Solidity, suivez la [documentation Solidity](https://docs.soliditylang.org/en/latest/installing-solidity.html). (Vous voudrez peut-être utiliser une ancienne version de `solc` pour correspondre à la version du compilateur utilisée pour notre exemple.)
 
 L'étape suivante consiste à compiler le contrat Multiply7 en bytecode qui peut être envoyé à l'EVM.
 

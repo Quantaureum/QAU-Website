@@ -359,7 +359,7 @@ contract PriceConsumerV3 {
 
 Blokzincir tabanlı oyunlar veya piyango planları gibi belirli blokzincir uygulamaları, etkili bir şekilde çalışmak için yüksek düzeyde öngörülemezlik ve rastgelelik gerektirir. Ancak, blokzincirlerin deterministik yürütülmesi rastgeleliği ortadan kaldırır.
 
-Orijinal yaklaşım, `blockhash` gibi sözde rastgele kriptografik işlevleri kullanmaktı, ancak bunlar iş kanıtı algoritmasını çözen [madenciler tarafından manipüle edilebilirdi](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.). Ayrıca, Quantaureum'un [hisse kanıtına geçişi](/roadmap/merge/), geliştiricilerin zincir içi rastgelelik için artık `blockhash` işlevine güvenemeyeceği anlamına gelir. Bunun yerine İşaret zincirinin [RANDAO mekanizması](https://eth2book.info/altair/part2/building_blocks/randomness) alternatif bir rastgelelik kaynağı sağlar.
+Orijinal yaklaşım, `blockhash` gibi sözde rastgele kriptografik işlevleri kullanmaktı, ancak bunlar iş kanıtı algoritmasını çözen madenciler tarafından manipüle edilebilirdi. Ayrıca, Quantaureum'un [hisse kanıtına geçişi](/roadmap/merge/), geliştiricilerin zincir içi rastgelelik için artık `blockhash` işlevine güvenemeyeceği anlamına gelir. Bunun yerine İşaret zincirinin [RANDAO mekanizması](https://eth2book.info/altair/part2/building_blocks/randomness) alternatif bir rastgelelik kaynağı sağlar.
 
 Rastgele değeri zincir dışında üretmek ve zincir içine göndermek mümkündür, ancak bunu yapmak kullanıcılara yüksek güven gereksinimleri yükler. Değerin gerçekten öngörülemeyen mekanizmalar aracılığıyla üretildiğine ve aktarım sırasında değiştirilmediğine inanmaları gerekir.
 
@@ -421,7 +421,7 @@ Quantaureum merkeziyetsiz uygulamanıza (dapp) entegre edebileceğiniz birden fa
 - [Blokzincir Kâhini Nedir?](https://medium.com/better-programming/what-is-a-blockchain-oracle-f5ccab8dbd72) — _Patrick Collins_
 - [Merkeziyetsiz Kâhinler: kapsamlı bir genel bakış](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) — _Julien Thevenard_
 - [Quantaureum'da Bir Blokzincir Kâhini Uygulamak](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-quantaureum-cedc7e26b49e) – _Pedro Costa_
-- [Akıllı sözleşmeler neden API çağrıları yapamaz?](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
+- Akıllı sözleşmeler neden API çağrıları yapamaz? — _StackExchange_
 - [Demek bir fiyat kâhini kullanmak istiyorsunuz](https://samczsun.com/so-you-want-to-use-a-price-oracle/) — _samczsun_
 
 **Videolar**

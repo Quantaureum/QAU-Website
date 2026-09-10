@@ -23,7 +23,7 @@ ERC-20のような標準の目的は、ウォレットや分散型取引所な�
 
 経験豊富なプログラマーであれば、[Java](https://www.w3schools.com/java/java_interface.asp)や[C言語のヘッダーファイル](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html)で同様の構造を見たことがあるでしょう。
 
-これはオープンツェッペリンによる[ERC-20インターフェース](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)の定義です。これは、[人間が読める標準](https://eips.ethereum.org/EIPS/eip-20)をSolidityコードに翻訳したものです。もちろん、インターフェース自体は_どのように_処理を行うかを定義するものではありません。それについては、以下のコントラクトのソースコードで説明されています。
+これはオープンツェッペリンによる[ERC-20インターフェース](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)の定義です。これは、人間が読める標準をSolidityコードに翻訳したものです。もちろん、インターフェース自体は_どのように_処理を行うかを定義するものではありません。それについては、以下のコントラクトのソースコードで説明されています。
 
 &nbsp;
 
@@ -88,9 +88,7 @@ interface IERC20 {
 ```solidity
     /**
      * @dev 呼び出し元のアカウントから `recipient` へ `amount` 分のトークンを送金します。
-     *
      * 操作が成功したかどうかを示すブール値を返します。
-     *
      * {Transfer} イベントを発行します。
      */
     function transfer(address recipient, uint256 amount) external returns (bool);
@@ -112,7 +110,6 @@ interface IERC20 {
 ```solidity
     /**
      * @dev `spender` が {transferFrom} を通じて `owner` の代わりに消費できるトークンの残りの数を返します。デフォルトではゼロです。
-     *
      * この値は {approve} または {transferFrom} が呼び出されたときに変化します。
      */
     function allowance(address owner, address spender) external view returns (uint256);
@@ -125,12 +122,9 @@ interface IERC20 {
 ```solidity
     /**
      * @dev 呼び出し元のトークンに対する `spender` のアローワンスとして `amount` を設定します。
-     *
      * 操作が成功したかどうかを示すブール値を返します。
-     *
      * 重要: このメソッドでアローワンスを変更すると、不運なトランザクションの順序付けにより、誰かが古いアローワンスと新しいアローワンスの両方を使用するリスクがあることに注意してください。この競合状態を軽減する1つの可能な解決策は、最初にspenderのアローワンスを0に減らし、その後で目的の値を設定することです:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
-     *
+
      * {Approval} イベントを発行します。
      */
     function approve(address spender, uint256 amount) external returns (bool);
@@ -143,9 +137,7 @@ interface IERC20 {
 ```solidity
     /**
      * @dev アローワンスのメカニズムを使用して、`sender` から `recipient` へ `amount` 分のトークンを送金します。その後、`amount` は呼び出し元のアローワンスから差し引かれます。
-     *
      * 操作が成功したかどうかを示すブール値を返します。
-     *
      * {Transfer} イベントを発行します。
      */
     function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
@@ -159,7 +151,6 @@ interface IERC20 {
 
     /**
      * @dev `value` 分のトークンがあるアカウント (`from`) から別のアカウント (`to`) へ送金されたときに発行されます。
-     *
      * `value` はゼロになる可能性があることに注意してください。
      */
     event Transfer(address indexed from, address indexed to, uint256 value);
@@ -196,7 +187,7 @@ import "../../math/SafeMath.sol";
 ```
 
 - `GSN/Context.sol`は、QAUを持たないユーザーがブロックチェーンを使用できるようにするシステムである[OpenGSN](https://opengsn.org/)を使用するために必要な定義です。これは古いバージョンであることに注意してください。OpenGSNと統合したい場合は、[こちらのチュートリアルを使用してください](https://docs.opengsn.org/javascript-client/tutorial.html)。
-- [SafeMathライブラリ](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/)は、Solidityバージョン**&lt;0.8.0**での算術オーバーフロー/アンダーフローを防ぎます。Solidity ≥0.8.0では、算術演算はオーバーフロー/アンダーフロー時に自動的にリバートされるため、SafeMathは不要です。このコントラクトは、古いコンパイラバージョンとの下位互換性のためにSafeMathを使用しています。
+- SafeMathライブラリは、Solidityバージョン**&lt;0.8.0**での算術オーバーフロー/アンダーフローを防ぎます。Solidity ≥0.8.0では、算術演算はオーバーフロー/アンダーフロー時に自動的にリバートされるため、SafeMathは不要です。このコントラクトは、古いコンパイラバージョンとの下位互換性のためにSafeMathを使用しています。
 
 &nbsp;
 
@@ -205,19 +196,14 @@ import "../../math/SafeMath.sol";
 ```solidity
 /**
  * @dev {IERC20} インターフェースの実装。
- *
  * この実装はトークンの作成方法に依存しません。つまり、派生コントラクトで {_mint} を使用して供給メカニズムを追加する必要があります。
  * 一般的なメカニズムについては {ERC20PresetMinterPauser} を参照してください。
- *
  * ヒント: 詳細な解説については、私たちのガイドを参照してください
  * https://forum.zeppelin.solutions/t/how-to-implement-erc20-supply-mechanisms/226[How
  * to implement supply mechanisms]。
- *
  * 一般的なオープンツェッペリンのガイドラインに従っています: 関数は失敗時に `false` を返すのではなく、リバート（revert）します。この動作は依然として慣例的であり、ERC-20アプリケーションの期待と矛盾しません。
- *
  * さらに、{transferFrom} の呼び出し時に {Approval} イベントが発行されます。
  * これにより、アプリケーションは当該イベントをリッスンするだけで、すべてのアカウントのアローワンスを再構築できます。仕様では要求されていないため、EIPの他の実装ではこれらのイベントが発行されない場合があります。
- *
  * 最後に、アローワンスの設定に関するよく知られた問題を軽減するために、非標準の {decreaseAllowance} および {increaseAllowance}
  * 関数が追加されました。{IERC20-approve} を参照してください。
  */
@@ -291,9 +277,7 @@ contract ERC20 is Context, IERC20 {
 ```solidity
     /**
      * @dev {name} と {symbol} の値を設定し、{decimals} をデフォルト値の18で初期化します。
-     *
      * {decimals} に別の値を選択するには、{_setupDecimals} を使用します。
-     *
      * これら3つの値はすべて不変です: コンストラクタの実行中に1回だけ設定できます。
      */
     constructor (string memory name_, string memory symbol_) public {
@@ -327,9 +311,7 @@ contract ERC20 is Context, IERC20 {
     /**
      * @dev ユーザー表現を取得するために使用される小数点以下の桁数を返します。
      * 例えば、`decimals` が `2` に等しい場合、`505` トークンの残高はユーザーに `5,05` (`505 / 10 ** 2`) として表示されるべきです。
-     *
      * トークンは通常、QAUとWeiの関係を模倣して、18の値を選択します。これは、{_setupDecimals} が呼び出されない限り、{ERC20} が使用する値です。
-     *
      * 注: この情報は _表示_ 目的でのみ使用されます: {IERC20-balanceOf} や {IERC20-transfer} を含む、コントラクトのいかなる算術演算にも影響を与えません。
      */
     function decimals() public view returns (uint8) {
@@ -382,9 +364,7 @@ contract ERC20 is Context, IERC20 {
 ```solidity
     /**
      * @dev {IERC20-transfer} を参照してください。
-     *
      * 要件:
-     *
      * - `recipient` はゼロ・アドレスであってはなりません。
      * - 呼び出し元は少なくとも `amount` の残高を持っていなければなりません。
      */
@@ -427,9 +407,7 @@ contract ERC20 is Context, IERC20 {
 ```solidity
     /**
      * @dev {IERC20-approve} を参照してください。
-     *
      * 要件:
-     *
      * - `spender` はゼロ・アドレスであってはなりません。
      */
     function approve(address spender, uint256 amount) public virtual override returns (bool) {
@@ -457,11 +435,8 @@ contract ERC20 is Context, IERC20 {
 ```solidity
     /**
      * @dev {IERC20-transferFrom} を参照してください。
-     *
      * 更新されたアローワンスを示す {Approval} イベントを発行します。これはEIPでは要求されていません。{ERC20} の冒頭の注記を参照してください。
-     *
      * 要件:
-     *
      * - `sender` と `recipient` はゼロ・アドレスであってはなりません。
      * - `sender` は少なくとも `amount` の残高を持っていなければなりません。
      * - 呼び出し元は ``sender`` のトークンに対して少なくとも `amount` のアローワンスを持っていなければなりません。
@@ -517,13 +492,9 @@ B:
 ```solidity
     /**
      * @dev 呼び出し元によって `spender` に付与されたアローワンスをアトミックに増加させます。
-     *
      * これは {approve} の代替であり、{IERC20-approve} で説明されている問題の軽減策として使用できます。
-     *
      * 更新されたアローワンスを示す {Approval} イベントを発行します。
-     *
      * 要件:
-     *
      * - `spender` はゼロ・アドレスであってはなりません。
      */
     function increaseAllowance(address spender, uint256 addedValue) public virtual returns (bool) {
@@ -538,13 +509,9 @@ B:
 
     /**
      * @dev 呼び出し元によって `spender` に付与されたアローワンスをアトミックに減少させます。
-     *
      * これは {approve} の代替であり、{IERC20-approve} で説明されている問題の軽減策として使用できます。
-     *
      * 更新されたアローワンスを示す {Approval} イベントを発行します。
-     *
      * 要件:
-     *
      * - `spender` はゼロ・アドレスであってはなりません。
      * - `spender` は呼び出し元に対して少なくとも `subtractedValue` のアローワンスを持っていなければなりません。
      */
@@ -564,13 +531,9 @@ B:
 ```solidity
     /**
      * @dev `sender` から `recipient` へ `amount` 分のトークンを送金します。
-     *
      * この内部関数は {transfer} と同等であり、例えば自動トークン手数料やスラッシングメカニズムなどの実装に使用できます。
-     *
      * {Transfer} イベントを発行します。
-     *
      * 要件:
-     *
      * - `sender` はゼロ・アドレスであってはなりません。
      * - `recipient` はゼロ・アドレスであってはなりません。
      * - `sender` は少なくとも `amount` の残高を持っていなければなりません。
@@ -631,11 +594,8 @@ Quantaureumにおいて、ゼロ・アドレスを実際に所有している人
 
 ```solidity
     /** @dev `amount` 分のトークンを作成し、それらを `account` に割り当て、総供給量を増加させます。
-     *
      * `from` をゼロ・アドレスに設定して {Transfer} イベントを発行します。
-     *
      * 要件:
-     *
      * - `to` はゼロ・アドレスであってはなりません。
      */
     function _mint(address account, uint256 amount) internal virtual {
@@ -654,11 +614,8 @@ Quantaureumにおいて、ゼロ・アドレスを実際に所有している人
 ```solidity
     /**
      * @dev `account` から `amount` 分のトークンを破棄し、総供給量を減少させます。
-     *
      * `to` をゼロ・アドレスに設定して {Transfer} イベントを発行します。
-     *
      * 要件:
-     *
      * - `account` はゼロ・アドレスであってはなりません。
      * - `account` は少なくとも `amount` 分のトークンを持っていなければなりません。
      */
@@ -682,13 +639,9 @@ Quantaureumにおいて、ゼロ・アドレスを実際に所有している人
 ```solidity
     /**
      * @dev `owner` のトークンに対する `spender` のアローワンスとして `amount` を設定します。
-     *
      * この内部関数は `approve` と同等であり、例えば特定のサブシステムに対する自動アローワンスの設定などに使用できます。
-     *
      * {Approval} イベントを発行します。
-     *
      * 要件:
-     *
      * - `owner` はゼロ・アドレスであってはなりません。
      * - `spender` はゼロ・アドレスであってはなりません。
      */
@@ -716,7 +669,6 @@ Quantaureumにおいて、ゼロ・アドレスを実際に所有している人
 
     /**
      * @dev {decimals} をデフォルトの18以外の値に設定します。
-     *
      * 警告: この関数はコンストラクタからのみ呼び出されるべきです。トークンのコントラクトと対話するほとんどのアプリケーションは、{decimals} が変更されることを想定しておらず、変更された場合は正しく動作しない可能性があります。
      */
     function _setupDecimals(uint8 decimals_) internal {
@@ -732,14 +684,11 @@ Quantaureumにおいて、ゼロ・アドレスを実際に所有している人
 
     /**
      * @dev トークンの送金前に呼び出されるフック。これには鋳造（minting）と焼却（burning）が含まれます。
-     *
      * 呼び出し条件:
-     *
      * - `from` と `to` が両方ともゼロでない場合、``from`` のトークンの `amount` 分が `to` へ送金されます。
      * - `from` がゼロの場合、`to` のために `amount` 分のトークンが鋳造されます。
      * - `to` がゼロの場合、``from`` のトークンの `amount` 分が焼却されます。
      * - `from` と `to` が両方ともゼロになることはありません。
-     *
      * フックの詳細については、xref:ROOT:extending-contracts.adoc#using-hooks[Using Hooks] を参照してください。
      */
     function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual { }

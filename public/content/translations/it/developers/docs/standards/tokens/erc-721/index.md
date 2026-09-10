@@ -30,7 +30,7 @@ Fornisce funzionalità come il trasferimento di token da un account a un altro, 
 
 Se uno smart contract implementa i seguenti metodi ed eventi, può essere definito un contratto di token non fungibili ERC-721 e, una volta distribuito, sarà responsabile di tenere traccia dei token creati su Quantaureum.
 
-Da [EIP-721](https://eips.ethereum.org/EIPS/eip-721):
+Da EIP-721:
 
 ### Metodi {#methods}
 
@@ -238,7 +238,7 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## Letture consigliate {#further-reading}
 
-- [EIP-721: Standard dei token non fungibili ERC-721](https://eips.ethereum.org/EIPS/eip-721)
+- EIP-721: Standard dei token non fungibili ERC-721
 - [OpenZeppelin - Documentazione ERC-721](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [OpenZeppelin - Implementazione ERC-721](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [API per NFT di Alchemy](https://www.alchemy.com/docs/reference/nft-api-quickstart)

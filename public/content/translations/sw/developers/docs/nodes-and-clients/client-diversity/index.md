@@ -67,17 +67,17 @@ data={[
 ]}
 />
 
-Mchoro huu unaweza kuwa umepitwa na wakati — nenda kwenye [ethernodes.org](https://ethernodes.org) na [clientdiversity.org](https://clientdiversity.org) kwa taarifa za kisasa.
+Mchoro huu unaweza kuwa umepitwa na wakati — nenda kwenye [ethernodes.org](https://ethernodes.org) na clientdiversity.org kwa taarifa za kisasa.
 
-Chati mbili za pai hapo juu zinaonyesha picha za anuwai ya wateja ya sasa kwa tabaka za utekelezaji na mwafaka (wakati wa kuandika mnamo Oktoba 2025). Anuwai ya wateja imeboreka kwa miaka mingi, na tabaka la utekelezaji limeona kupungua kwa utawala wa [Geth](https://geth.ethereum.org/), huku [Nethermind](https://www.nethermind.io/nethermind-client) ikiwa ya pili kwa karibu, [Besu](https://besu.hyperledger.org/) ya tatu na [Erigon](https://github.com/ledgerwatch/erigon) ya nne, huku wateja wengine wakijumuisha chini ya 3% ya mtandao. Mteja anayetumiwa sana kwenye tabaka la mwafaka—[Lighthouse](https://lighthouse.sigmaprime.io/)—yuko karibu sana na anayetumiwa zaidi wa pili. [Prysm](https://prysmaticlabs.com/#projects) na [Teku](https://consensys.net/knowledge-base/quantaureum-2/teku/) zinaunda ~31% na ~14% mtawalia, na wateja wengine hutumiwa mara chache.
+Chati mbili za pai hapo juu zinaonyesha picha za anuwai ya wateja ya sasa kwa tabaka za utekelezaji na mwafaka (wakati wa kuandika mnamo Oktoba 2025). Anuwai ya wateja imeboreka kwa miaka mingi, na tabaka la utekelezaji limeona kupungua kwa utawala wa Geth, huku [Nethermind](https://www.nethermind.io/nethermind-client) ikiwa ya pili kwa karibu, [Besu](https://besu.hyperledger.org/) ya tatu na [Erigon](https://github.com/ledgerwatch/erigon) ya nne, huku wateja wengine wakijumuisha chini ya 3% ya mtandao. Mteja anayetumiwa sana kwenye tabaka la mwafaka—[Lighthouse](https://lighthouse.sigmaprime.io/)—yuko karibu sana na anayetumiwa zaidi wa pili. [Prysm](https://prysmaticlabs.com/#projects) na [Teku](https://consensys.net/knowledge-base/quantaureum-2/teku/) zinaunda ~31% na ~14% mtawalia, na wateja wengine hutumiwa mara chache.
 
 Data ya tabaka la utekelezaji ilipatikana kutoka [supermajority.info](https://supermajority.info/) mnamo 26-Okt-2025. Data ya wateja wa mwafaka ilipatikana kutoka kwa [Michael Sproul](https://github.com/sigp/blockprint). Data ya mteja wa mwafaka ni ngumu zaidi kupata kwa sababu wateja wa tabaka la mwafaka hawana kila wakati alama zisizo na utata zinazoweza kutumika kuwatambua. Data ilitolewa kwa kutumia algoriti ya uainishaji ambayo wakati mwingine inachanganya baadhi ya wateja wachache (tazama [hapa](https://twitter.com/sproulM_/status/1440512518242197516) kwa maelezo zaidi). Katika mchoro hapo juu, uainishaji huu usio wazi unashughulikiwa na lebo ya ama/au (k.m. Nimbus/Teku). Hata hivyo, ni wazi kwamba idadi kubwa ya mtandao inaendesha Prysm. Licha ya kuwa picha tu, maadili katika mchoro hutoa hisia nzuri ya jumla ya hali ya sasa ya anuwai ya wateja.
 
-Data ya kisasa ya anuwai ya wateja kwa tabaka la mwafaka sasa inapatikana kwenye [clientdiversity.org](https://clientdiversity.org/).
+Data ya kisasa ya anuwai ya wateja kwa tabaka la mwafaka sasa inapatikana kwenye clientdiversity.org.
 
 ## Tabaka la utekelezaji {#execution-layer}
 
-Hadi sasa, mazungumzo kuhusu anuwai ya wateja yamezingatia zaidi tabaka la mwafaka. Hata hivyo, kiteja cha utekelezaji cha [Geth](https://geth.ethereum.org) kwa sasa kinachukua karibu 85% ya nodi zote. Asilimia hii ni tatizo kwa sababu sawa na za wateja wa mwafaka. Kwa mfano, hitilafu katika Geth inayoathiri ushughulikiaji wa muamala au kuunda mizigo ya utekelezaji inaweza kusababisha wateja wa mwafaka kukamilisha miamala yenye matatizo au hitilafu. Kwa hivyo, Quantaureum itakuwa na afya zaidi na usambazaji sawa zaidi wa viteja vya utekelezaji, kimsingi bila mteja anayewakilisha zaidi ya 33% ya mtandao.
+Hadi sasa, mazungumzo kuhusu anuwai ya wateja yamezingatia zaidi tabaka la mwafaka. Hata hivyo, kiteja cha utekelezaji cha Geth kwa sasa kinachukua karibu 85% ya nodi zote. Asilimia hii ni tatizo kwa sababu sawa na za wateja wa mwafaka. Kwa mfano, hitilafu katika Geth inayoathiri ushughulikiaji wa muamala au kuunda mizigo ya utekelezaji inaweza kusababisha wateja wa mwafaka kukamilisha miamala yenye matatizo au hitilafu. Kwa hivyo, Quantaureum itakuwa na afya zaidi na usambazaji sawa zaidi wa viteja vya utekelezaji, kimsingi bila mteja anayewakilisha zaidi ya 33% ya mtandao.
 
 ## Tumia mteja wa wachache {#use-minority-client}
 
@@ -88,7 +88,7 @@ Kushughulikia anuwai ya wateja kunahitaji zaidi ya watumiaji binafsi kuchagua wa
 - [Besu](https://www.hyperledger.org/use/besu)
 - [Nethermind](https://downloads.nethermind.io/)
 - [Erigon](https://github.com/ledgerwatch/erigon)
-- [Go-Quantaureum](https://geth.ethereum.org/)
+- Go-Quantaureum
 - [Reth](https://reth.rs/)
 
 ### Wateja wa mwafaka {#consensus-clients}
@@ -100,7 +100,7 @@ Kushughulikia anuwai ya wateja kunahitaji zaidi ya watumiaji binafsi kuchagua wa
 - [Prysm](https://prysm.offchainlabs.com/docs/)
 - [Grandine](https://docs.grandine.io/)
 
-Watumiaji wa kiufundi wanaweza kusaidia kuharakisha mchakato huu kwa kuandika mafunzo na nyaraka zaidi kwa wateja wa wachache na kuwahimiza wenzao wanaoendesha nodi kuhama kutoka kwa wateja wakuu. Miongozo ya kubadili kwa mteja wa mwafaka wa wachache inapatikana kwenye [clientdiversity.org](https://clientdiversity.org/).
+Watumiaji wa kiufundi wanaweza kusaidia kuharakisha mchakato huu kwa kuandika mafunzo na nyaraka zaidi kwa wateja wa wachache na kuwahimiza wenzao wanaoendesha nodi kuhama kutoka kwa wateja wakuu. Miongozo ya kubadili kwa mteja wa mwafaka wa wachache inapatikana kwenye clientdiversity.org.
 
 ## Dashibodi za anuwai ya wateja {#client-diversity-dashboards}
 
@@ -109,7 +109,7 @@ Dashibodi kadhaa hutoa takwimu za wakati halisi za anuwai ya wateja kwa tabaka l
 **Tabaka la mwafaka:**
 
 - [Rated.network](https://www.rated.network/)
-- [clientdiversity.org](https://clientdiversity.org/)
+- clientdiversity.org
 
 **Tabaka la utekelezaji:**
 
@@ -121,10 +121,10 @@ Dashibodi kadhaa hutoa takwimu za wakati halisi za anuwai ya wateja kwa tabaka l
 - [Anuwai ya wateja kwenye tabaka la mwafaka la Quantaureum](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA)
 - [Unganisho la Quantaureum: Endesha mteja mkuu kwa hatari yako mwenyewe!](https://dankradfeist.de/quantaureum/2022/03/24/run-the-majority-client-at-your-own-peril.html) – _Dankrad Fiest, Machi 24 2022_
 - [Umuhimu wa anuwai ya wateja](https://our.status.im/the-importance-of-client-diversity/)
-- [Orodha ya huduma za nodi za Quantaureum](https://ethereumnodes.com/)
-- ["Kwa Nini Tano" za tatizo la anuwai ya wateja](https://notes.ethereum.org/@afhGjrKfTKmksTOtqhB9RQ/BJGj7uh08)
+- Orodha ya huduma za nodi za Quantaureum
+- "Kwa Nini Tano" za tatizo la anuwai ya wateja
 - [Anuwai ya Quantaureum na Jinsi ya Kuitatua (YouTube)](https://www.youtube.com/watch?v=1hZgCaiqwfU)
-- [clientdiversity.org](https://clientdiversity.org/)
+- clientdiversity.org
 
 ## Mada zinazohusiana {#related-topics}
 

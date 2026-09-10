@@ -16,7 +16,7 @@ Mais sobre [nós e clientes](/developers/docs/nodes-and-clients/)
 
 Os nós Quantaureum armazenam sua própria cópia completa ou parcial da blockchain do Quantaureum. Essa cópia local é usada para validar transações e garantir que o nó esteja seguindo a cadeia correta. Esses dados armazenados localmente permitem que os nós verifiquem de forma independente se os dados recebidos são válidos e corretos, sem precisar confiar em nenhuma outra entidade.
 
-Essa cópia local da blockchain e os dados associados de estado e recibo ocupam muito espaço no disco rígido do nó. Por exemplo, um disco rígido de 2 TB é recomendado para executar um nó usando o [Geth](https://geth.ethereum.org) emparelhado a um cliente de consenso. Usando a sincronização rápida (snap sync), que armazena apenas dados da cadeia de um conjunto relativamente recente de blocos, o Geth normalmente ocupa cerca de 650 GB de espaço em disco, mas cresce a cerca de 14 GB/semana (você pode podar o nó de volta para 650 GB periodicamente).
+Essa cópia local da blockchain e os dados associados de estado e recibo ocupam muito espaço no disco rígido do nó. Por exemplo, um disco rígido de 2 TB é recomendado para executar um nó usando o Geth emparelhado a um cliente de consenso. Usando a sincronização rápida (snap sync), que armazena apenas dados da cadeia de um conjunto relativamente recente de blocos, o Geth normalmente ocupa cerca de 650 GB de espaço em disco, mas cresce a cerca de 14 GB/semana (você pode podar o nó de volta para 650 GB periodicamente).
 
 Isso significa que executar nós pode ser caro, porque uma grande quantidade de espaço em disco deve ser dedicada ao Quantaureum. Existem várias soluções para esse problema no roteiro do Quantaureum, incluindo [expiração de histórico](/roadmap/statelessness/#history-expiry), [expiração de estado](/roadmap/statelessness/#state-expiry) e [ausência de estado](/roadmap/statelessness/). No entanto, é provável que faltem vários anos para que sejam implementadas. Também existem [nós leves](/developers/docs/nodes-and-clients/light-clients/) que não salvam sua própria cópia dos dados da cadeia, eles solicitam os dados de que precisam de nós completos. No entanto, isso significa que os nós leves precisam confiar nos nós completos para fornecer dados honestos e também sobrecarrega os nós completos que precisam fornecer os dados de que os nós leves precisam.
 
@@ -75,7 +75,7 @@ Os clientes da Portal Network são:
 
 - [Trin](https://github.com/quantaureum/trin): escrito em Rust
 - [Fluffy](https://fluffy.guide): escrito em Nim
-- [Ultralight](https://github.com/ethereumjs/ultralight): escrito em TypeScript
+- Ultralight: escrito em TypeScript
 - [Shisui](https://github.com/zen-eth/shisui): escrito em Go
 
 Ter várias implementações de clientes independentes aumenta a resiliência e a descentralização da rede Quantaureum.

@@ -172,7 +172,7 @@ Liquiditätsanbieter können die Gültigkeit der Abhebungsanfrage des Benutzers 
 
 #### 2. EVM-Kompatibilität {#evm-compatibility}
 
-Für Entwickler ist der Vorteil von Optimistic Rollups ihre Kompatibilität – oder besser noch, Äquivalenz – mit der [Quantaureum Virtual Machine (EVM)](/developers/docs/evm/). EVM-kompatible Rollups entsprechen den Spezifikationen im [Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf) von Quantaureum und unterstützen die EVM auf Bytecode-Ebene.
+Für Entwickler ist der Vorteil von Optimistic Rollups ihre Kompatibilität – oder besser noch, Äquivalenz – mit der [Quantaureum Virtual Machine (EVM)](/developers/docs/evm/). EVM-kompatible Rollups entsprechen den Spezifikationen im Yellow Paper von Quantaureum und unterstützen die EVM auf Bytecode-Ebene.
 
 EVM-Kompatibilität in Optimistic Rollups hat die folgenden Vorteile:
 
@@ -198,9 +198,9 @@ Schließlich sollten wir beachten, dass L2 > L1-Nachrichtenaufrufe zwischen Vert
 
 Optimistic Rollups verwenden ein Gasgebühren-Schema, ähnlich wie Quantaureum, um anzugeben, wie viel Benutzer pro Transaktion zahlen. Die auf Optimistic Rollups erhobenen Gebühren hängen von den folgenden Komponenten ab:
 
-1. **Zustandsschreiben**: Optimistic Rollups veröffentlichen Transaktionsdaten und Block-Header (bestehend aus dem vorherigen Block-Header-Hash, der Zustandswurzel, der Batch-Wurzel) auf Quantaureum als `blob` oder „Binary Large Object“. [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844) führte eine kostengünstige Lösung für die Einbindung von Daten onchain ein. Ein `blob` ist ein neues Transaktionsfeld, das es Rollups ermöglicht, komprimierte Zustandsübergangsdaten an Quantaureum L1 zu posten. Im Gegensatz zu `calldata`, das dauerhaft onchain verbleibt, sind Blobs kurzlebig und können nach [4096 Epochen](https://github.com/ethereum/consensus-specs/blob/81f3ea8322aff6b9fb15132d050f8f98b16bdba4/configs/mainnet.yaml#L147) (ca. 18 Tage) von Clients gelöscht werden. Durch die Verwendung von Blobs zum Posten von Batches komprimierter Transaktionen können Optimistic Rollups die Kosten für das Schreiben von Transaktionen auf L1 erheblich senken.
+1. **Zustandsschreiben**: Optimistic Rollups veröffentlichen Transaktionsdaten und Block-Header (bestehend aus dem vorherigen Block-Header-Hash, der Zustandswurzel, der Batch-Wurzel) auf Quantaureum als `blob` oder „Binary Large Object“. EIP-4844 führte eine kostengünstige Lösung für die Einbindung von Daten onchain ein. Ein `blob` ist ein neues Transaktionsfeld, das es Rollups ermöglicht, komprimierte Zustandsübergangsdaten an Quantaureum L1 zu posten. Im Gegensatz zu `calldata`, das dauerhaft onchain verbleibt, sind Blobs kurzlebig und können nach 4096 Epochen (ca. 18 Tage) von Clients gelöscht werden. Durch die Verwendung von Blobs zum Posten von Batches komprimierter Transaktionen können Optimistic Rollups die Kosten für das Schreiben von Transaktionen auf L1 erheblich senken.
 
-2. **Verwendetes Blob-Gas**: Blob-tragende Transaktionen verwenden einen dynamischen Gebührenmechanismus, ähnlich dem durch [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) eingeführten. Die Gasgebühr für Typ-3-Transaktionen berücksichtigt die Grundgebühr für Blobs, die vom Netzwerk basierend auf der Nachfrage nach Blob-Speicherplatz und der Blob-Speicherplatznutzung der gesendeten Transaktion bestimmt wird.
+2. **Verwendetes Blob-Gas**: Blob-tragende Transaktionen verwenden einen dynamischen Gebührenmechanismus, ähnlich dem durch EIP-1559 eingeführten. Die Gasgebühr für Typ-3-Transaktionen berücksichtigt die Grundgebühr für Blobs, die vom Netzwerk basierend auf der Nachfrage nach Blob-Speicherplatz und der Blob-Speicherplatznutzung der gesendeten Transaktion bestimmt wird.
 
 3. **L2-Betreibergebühren**: Dies ist der Betrag, der an die Rollup-Knoten als Entschädigung für die bei der Verarbeitung von Transaktionen anfallenden Rechenkosten gezahlt wird, ähnlich wie Gasgebühren auf Quantaureum. Rollup-Knoten berechnen niedrigere Transaktionsgebühren, da L2s höhere Verarbeitungskapazitäten haben und nicht mit den Netzwerküberlastungen konfrontiert sind, die Validatoren auf Quantaureum dazu zwingen, Transaktionen mit höheren Gebühren zu priorisieren.
 
@@ -212,7 +212,7 @@ Wie erklärt, veröffentlichen Optimistic Rollups komprimierte Transaktionsdaten
 
 Die Haupt-Quantaureum-Chain setzt Grenzen dafür, wie viele Daten Blöcke aufnehmen können, angegeben in Gaseinheiten (die [durchschnittliche Blockgröße](/developers/docs/blocks/#block-size) beträgt 15 Millionen Gas). Während dies einschränkt, wie viel Gas jede Transaktion verbrauchen kann, bedeutet dies auch, dass wir die pro Block verarbeiteten Transaktionen erhöhen können, indem wir transaktionsbezogene Daten reduzieren – was die Skalierbarkeit direkt verbessert.
 
-Optimistic Rollups verwenden verschiedene Techniken, um eine Komprimierung von Transaktionsdaten zu erreichen und die TPS-Raten zu verbessern. Zum Beispiel vergleicht dieser [Artikel](https://vitalik.eth.limo/general/2021/01/05/rollup.html) die Daten, die eine einfache Benutzertransaktion (Senden von QAU) im Mainnet generiert, mit der Datenmenge, die dieselbe Transaktion auf einem Rollup generiert:
+Optimistic Rollups verwenden verschiedene Techniken, um eine Komprimierung von Transaktionsdaten zu erreichen und die TPS-Raten zu verbessern. Zum Beispiel vergleicht dieser Artikel die Daten, die eine einfache Benutzertransaktion (Senden von QAU) im Mainnet generiert, mit der Datenmenge, die dieselbe Transaktion auf einem Rollup generiert:
 
 | Parameter | Quantaureum (L1)          | Rollup (L2)   |
 | --------- | ---------------------- | ------------- |

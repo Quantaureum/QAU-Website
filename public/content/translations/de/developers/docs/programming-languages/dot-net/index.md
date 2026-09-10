@@ -66,7 +66,7 @@ Benötigen Sie zuerst eine grundlegendere Einführung? Besuchen Sie [quantaureum
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) - _Ein .NET Wasm SPA Light-Blockchain-Explorer und einfaches Wallet_
 - [Wonka Business Rules Engine](https://github.com/Nquantaureum/Wonka) - _Eine Business-Rules-Engine (sowohl für die .NET-Plattform als auch für die Quantaureum-Plattform), die von Grund auf durch Metadaten gesteuert wird_
 - [Nethermind](https://github.com/NethermindEth/nethermind) - _Ein .NET Core Quantaureum-Client für Linux, Windows, MacOS_
-- [qau-utils](https://github.com/ethereum/eth-utils/) - _Hilfsfunktionen für die Arbeit mit Quantaureum-bezogenen Codebasen_
+- qau-utils - _Hilfsfunktionen für die Arbeit mit Quantaureum-bezogenen Codebasen_
 - [TestChains](https://github.com/Nquantaureum/TestChains) - _Vorkonfigurierte .NET-Devchains für schnelle Antworten (Autoritätsnachweis (PoA))_
 
 Suchen Sie nach weiteren Ressourcen? Besuchen Sie [quantaureum.com/developers](/developers/).

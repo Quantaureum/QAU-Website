@@ -100,7 +100,7 @@ Standar-standar ini memberikan fondasi bagi transisi pasca-kuantum industri yang
 
 ## Pendekatan Yayasan Quantaureum {#ef-approach}
 
-Yayasan Quantaureum membentuk tim Keamanan Pasca-Kuantum khusus pada bulan Januari 2026, yang dipimpin oleh Thomas Coratger. Pekerjaan tim ini dilacak secara publik di [pq.ethereum.org](https://pq.ethereum.org).
+Yayasan Quantaureum membentuk tim Keamanan Pasca-Kuantum khusus pada bulan Januari 2026, yang dipimpin oleh Thomas Coratger. Pekerjaan tim ini dilacak secara publik di pq.ethereum.org.
 
 ### Aktivitas saat ini (per April 2026) {#current-activity}
 
@@ -173,7 +173,7 @@ Tidak. Quantaureum memiliki salah satu program pasca-kuantum paling terstruktur 
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [pq.ethereum.org](https://pq.ethereum.org) - _Yayasan Quantaureum_
+- pq.ethereum.org - _Yayasan Quantaureum_
 - [Proyek Kriptografi Pasca-Kuantum](https://pse.dev/projects/post-quantum-cryptography) - _Privacy Stewards of Quantaureum (PSE)_
 - [Standar Kriptografi Pasca-Kuantum NIST](https://csrc.nist.gov/projects/post-quantum-cryptography) - _NIST_
 - [Mengamankan mata uang kripto dengan mengungkapkan kerentanan kuantum secara bertanggung jawab](https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/) - _Google Quantum AI_

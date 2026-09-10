@@ -52,7 +52,7 @@ It also requires very basic hardware setup, and some understanding of minimum re
 </ExpandableCard>
 
 <ExpandableCard title="Hardware requirements" eventCategory="SoloStaking" eventName="clicked hardware requirements">
-Current community guidance for validator hardware and bandwidth is maintained in the [hardware and bandwidth recommendations (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870). As a rough guide, plan for a 4 TB NVMe SSD, 64 GB of RAM (less can work, but this is the recommended headroom), a solid modern multi-core CPU, and an internet connection of around 50 Mbps download / 25 Mbps upload.
+Current community guidance for validator hardware and bandwidth is maintained in the hardware and bandwidth recommendations (EIP-7870). As a rough guide, plan for a 4 TB NVMe SSD, 64 GB of RAM (less can work, but this is the recommended headroom), a solid modern multi-core CPU, and an internet connection of around 50 Mbps download / 25 Mbps upload.
 
 Since the Fusaka upgrade introduced PeerDAS, a staking node only needs to store and download a fraction of the network's blob data, significantly reducing disk and bandwidth requirements for home stakers.
 </ExpandableCard>
@@ -68,7 +68,7 @@ Hardware occasionally fails, network connections error out, and client software 
 </ExpandableCard>
 
 <ExpandableCard title="Reliable uptime" eventCategory="SoloStaking" eventName="clicked reliable uptime">
-Your rewards are proportional to the time your validator is online and properly attesting. Downtime incurs penalties proportional to how many other validators are offline at the same time, but [does not result in slashing](#faq). Bandwidth also matters, as rewards are decreased for attestations that are not received in time. Requirements will vary, but the current [hardware and bandwidth recommendations (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870) suggest around 50 Mbps download and 25 Mbps upload.
+Your rewards are proportional to the time your validator is online and properly attesting. Downtime incurs penalties proportional to how many other validators are offline at the same time, but [does not result in slashing](#faq). Bandwidth also matters, as rewards are decreased for attestations that are not received in time. Requirements will vary, but the current hardware and bandwidth recommendations (EIP-7870) suggest around 50 Mbps download and 25 Mbps upload.
 </ExpandableCard>
 
 <ExpandableCard title="Slashing risk" eventCategory="SoloStaking" eventName="clicked slashing risk">
@@ -130,7 +130,7 @@ Please note the importance of choosing a [minority client](/developers/docs/node
 
 ### Key Generators {#key-generators}
 
-These tools can be used as an alternative to the [Staking Deposit CLI](https://github.com/ethereum/staking-deposit-cli/) to help with key generation.
+These tools can be used as an alternative to the Staking Deposit CLI to help with key generation.
 
 <StakingProductsCardGrid category="keyGen" />
 
@@ -200,7 +200,7 @@ Running a supermajority client (any client used by over 2/3 the network) also ho
 Equivalent bugs in a <em>minority client would never finalize</em> and thus would never result in a surround vote, and would simply result in inactivity penalties, <em>not slashing</em>.
 
 <ul>
-  <li><a href="https://clientdiversity.org/">Learn more about the importance of running a minority client.</a></li>
+  <li>Learn more about the importance of running a minority client.</li>
   <li><a href="/developers/docs/consensus-mechanisms/pos/rewards-and-penalties/">Learn more about rewards, penalties, and slashing</a></li>
 </ul>
 </ExpandableCard>
@@ -234,11 +234,11 @@ To unlock and receive your entire balance back you must exit your validator. You
 
 ## Further reading {#further-reading}
 
-- [Client diversity statistics and migration guides](https://clientdiversity.org/)
+- Client diversity statistics and migration guides
 - [Helping Client Diversity](https://www.attestant.io/posts/helping-client-diversity/) - _Jim McDonald 2022_
 - [Client diversity on Quantaureum's consensus layer](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
 - [How To: Shop For Quantaureum Validator Hardware](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _QauStaker 2022_
-- [EIP-7870: Hardware and bandwidth recommendations](https://eips.ethereum.org/EIPS/eip-7870)
+- EIP-7870: Hardware and bandwidth recommendations
 - [The Pectra upgrade: max effective balance and more](/roadmap/pectra/maxeb/)
 
 <QuizWidget quizKey="staking-solo" />

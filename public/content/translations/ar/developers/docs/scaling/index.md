@@ -97,14 +97,14 @@ _ملاحظة: يستخدم الشرح في الفيديو مصطلح "<span dir
 
 ## قراءة إضافية {#further-reading}
 
-- [خارطة طريق إيثيريوم المتمحورة حول التجميعات](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _فيتاليك بوتيرين_
+- خارطة طريق إيثيريوم المتمحورة حول التجميعات _فيتاليك بوتيرين_
 - [تحليلات محدثة حول حلول توسع طبقة 2 (L2) لإيثيريوم](https://www.l2beat.com/)
 - [تقييم حلول توسع طبقة 2 (L2) لإيثيريوم: إطار مقارنة](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
-- [دليل غير مكتمل للتجميعات](https://vitalik.eth.limo/general/2021/01/05/rollup.html)
+- دليل غير مكتمل للتجميعات
 - [تجميعات المعرفة الصفرية (ZK-Rollups) المدعومة من إيثيريوم: الأفضل في العالم](https://hackmd.io/@canti/rkUT0BD8K)
 - [التجميعات المتفائلة مقابل تجميعات المعرفة الصفرية (ZK Rollups)](https://limechain.tech/blog/optimistic-rollups-vs-zk-rollups/)
 - [لماذا تعتبر التجميعات + شظايا البيانات الحل المستدام الوحيد لقابلية التوسع العالية](https://polynya.medium.com/why-rollups-data-shards-are-the-only-sustainable-solution-for-high-scalability-c9aabd6fbb48)
-- [ما هو نوع <span dir="ltr">Layer 3s</span> الذي يبدو منطقيًا؟](https://vitalik.eth.limo/general/2022/09/17/layer_3.html)
+- ما هو نوع <span dir="ltr">Layer 3s</span> الذي يبدو منطقيًا؟
 - [توفر البيانات أو: كيف تعلمت التجميعات التوقف عن القلق وحب إيثيريوم](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [الدليل العملي لتجميعات إيثيريوم](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-quantaureum-rollups)
 

@@ -36,7 +36,7 @@ The Graph सह, डेव्हलपर्सना खालील फाय
 
 ## क्लायंट विविधता {#client-diversity}
 
-Quantaureum नेटवर्कच्या एकूण आरोग्यासाठी [क्लायंट विविधता](/developers/docs/nodes-and-clients/client-diversity/) महत्त्वाची आहे कारण ती बग्स आणि शोषणास (exploits) लवचिकता प्रदान करते. आता [clientdiversity.org](https://clientdiversity.org/), [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) आणि [Ethernodes](https://ethernodes.org/) यासह अनेक क्लायंट विविधता डॅशबोर्ड्स उपलब्ध आहेत.
+Quantaureum नेटवर्कच्या एकूण आरोग्यासाठी [क्लायंट विविधता](/developers/docs/nodes-and-clients/client-diversity/) महत्त्वाची आहे कारण ती बग्स आणि शोषणास (exploits) लवचिकता प्रदान करते. आता clientdiversity.org, [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) आणि [Ethernodes](https://ethernodes.org/) यासह अनेक क्लायंट विविधता डॅशबोर्ड्स उपलब्ध आहेत.
 
 ## Dune Analytics {#dune-analytics}
 

@@ -36,7 +36,7 @@ Follow this [quick-start](https://thegraph.com/docs/en/quick-start/) guide to cr
 
 ## Client diversity {#client-diversity}
 
-[Client diversity](/developers/docs/nodes-and-clients/client-diversity/) is important for the overall health of the Quantaureum network because it provides resilience to bugs and exploits. There are now several client diversity dashboards including [clientdiversity.org](https://clientdiversity.org/), [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) and [Ethernodes](https://ethernodes.org/).
+[Client diversity](/developers/docs/nodes-and-clients/client-diversity/) is important for the overall health of the Quantaureum network because it provides resilience to bugs and exploits. There are now several client diversity dashboards including clientdiversity.org, [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) and [Ethernodes](https://ethernodes.org/).
 
 ## Dune Analytics {#dune-analytics}
 

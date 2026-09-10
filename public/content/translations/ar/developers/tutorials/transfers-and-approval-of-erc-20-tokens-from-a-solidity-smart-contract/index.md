@@ -8,7 +8,7 @@ breadcrumb: "تحويلات ⁦ERC-20⁩"
 lang: ar
 published: 2020-04-07
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -201,7 +201,7 @@ function sell(uint256 amount) public {
 
 من خلال هذا البرنامج التعليمي، رأينا كيفية التحقق من الرصيد والسماحية لرمز مميز <span dir="ltr">ERC-20</span> وأيضًا كيفية استدعاء `Transfer` و `TransferFrom` لعقد ذكي <span dir="ltr">ERC20</span> باستخدام الواجهة.
 
-بمجرد إجراء معاملة، لدينا برنامج تعليمي بلغة <span dir="ltr">JavaScript</span> [للانتظار والحصول على تفاصيل حول المعاملات](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/) التي تم إجراؤها على عقدك و[برنامج تعليمي لفك تشفير الأحداث الناتجة عن تحويلات الرموز المميزة أو أي أحداث أخرى](https://ethereumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/) طالما أن لديك واجهة التطبيق الثنائية (ABI).
+بمجرد إجراء معاملة، لدينا برنامج تعليمي بلغة <span dir="ltr">JavaScript</span> للانتظار والحصول على تفاصيل حول المعاملات التي تم إجراؤها على عقدك وبرنامج تعليمي لفك تشفير الأحداث الناتجة عن تحويلات الرموز المميزة أو أي أحداث أخرى طالما أن لديك واجهة التطبيق الثنائية (ABI).
 
 إليك الكود الكامل للبرنامج التعليمي:
 

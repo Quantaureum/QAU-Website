@@ -65,9 +65,9 @@ l2에서 스토리지에 32바이트 워드를 쓰는 최대 비용은 22100 가
 설명:
 
 - **함수 선택자**: 컨트랙트의 함수가 256개 미만이므로 1바이트만으로 구분할 수 있습니다.
-  이 바이트들은 일반적으로 0이 아니므로 [16 가스의 비용이 듭니다](https://eips.ethereum.org/EIPS/eip-2028).
+  이 바이트들은 일반적으로 0이 아니므로 16 가스의 비용이 듭니다.
 - **0 (Zeroes)**: 20바이트 주소를 담는 데 32바이트 워드가 필요하지 않으므로 이 바이트들은 항상 0입니다.
-  0을 담고 있는 바이트는 4 가스의 비용이 듭니다([황서](https://ethereum.github.io/yellowpaper/paper.pdf) 부록 G,
+  0을 담고 있는 바이트는 4 가스의 비용이 듭니다(황서 부록 G,
   27페이지의 `G`<sub>`txdatazero`</sub> 값 참조).
 - **수량**: 이 컨트랙트에서 `decimals`가 18(일반적인 값)이고 전송할 토큰의 최대 수량이 10<sup>18</sup>이라고 가정하면, 최대 수량은 10<sup>36</sup>이 됩니다.
   256<sup>15</sup> &gt; 10<sup>36</sup>이므로 15바이트면 충분합니다.
@@ -202,7 +202,7 @@ Solidity 컨트랙트에 대한 호출이 어떤 함수 서명과도 일치하�
 2. [`msg.sender`](https://docs.soliditylang.org/en/v0.8.12/units-and-global-variables.html#block-and-transaction-properties)에 의존하는 함수.
    `msg.sender`의 값은 호출자가 아니라 `CalldataInterpreter`의 주소가 됩니다.
 
-안타깝게도 [ERC-20 사양을 살펴보면](https://eips.ethereum.org/EIPS/eip-20), 남는 함수는 `transfer` 하나뿐입니다.
+안타깝게도 ERC-20 사양을 살펴보면, 남는 함수는 `transfer` 하나뿐입니다.
 결과적으로 우리에게는 두 가지 함수만 남게 됩니다. `transfer`(`transferFrom`를 호출할 수 있기 때문)와 `faucet`(우리를 호출한 사람에게 토큰을 다시 전송할 수 있기 때문)입니다.
 
 ```solidity

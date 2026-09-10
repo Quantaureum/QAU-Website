@@ -82,7 +82,7 @@ Les développeurs utilisent généralement une bibliothèque JavaScript/TypeScri
 
 - **[ethers.js](https://docs.ethers.org/)** - Fonctionne également dans Node.js pour les scripts côté serveur et les bots
 - **[Web3.py](https://web3py.readthedocs.io/)** - Bibliothèque Python pour l'interaction avec Quantaureum
-- **[go-quantaureum](https://geth.ethereum.org/docs/interact-with-geth)** - Bibliothèque Go officielle de l'équipe Geth
+- **go-quantaureum** - Bibliothèque Go officielle de l'équipe Geth
 
 ### Exemple : lire le solde d'un jeton avec Viem {#example-viem}
 

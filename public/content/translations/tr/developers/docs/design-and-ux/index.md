@@ -16,7 +16,7 @@ Etkili tasarım, görsel olarak çekici kullanıcı arayüzleri oluşturmanın �
 
 - [Web3'ün daha fazla UX Araştırmacısına ve Tasarımcısına ihtiyacı var](https://blog.akasha.org/akasha-conversations-9-web3-needs-more-ux-researchers-and-designers) - Mevcut tasarım olgunluğuna genel bir bakış
 - [Web3'te UX Araştırması için basit bir rehber](https://uxplanet.org/a-complete-guide-to-ux-research-for-web-3-0-products-d6bead20ebb1) - Araştırmanın nasıl yapılacağına dair basit bir rehber
-- [Web3'te UX Kararlarına Nasıl Yaklaşılır](https://archive.devcon.org/archive/watch/6/data-empathy-how-to-approach-ux-decisions-in-web3/) - Nicel ve nitel araştırmalara ve ikisi arasındaki farklara kısa bir genel bakış (video, 6 dk)
+- Web3'te UX Kararlarına Nasıl Yaklaşılır - Nicel ve nitel araştırmalara ve ikisi arasındaki farklara kısa bir genel bakış (video, 6 dk)
 - [Web3'te bir UX araştırmacısı olmak](https://medium.com/@georgia.rakusen/what-its-like-being-a-user-researcher-in-web3-6a4bcc096849) - Web3'te bir UX araştırmacısı olmanın nasıl bir şey olduğuna dair kişisel bir bakış
 
 ## Web3'teki araştırma çalışmaları {#research-in-web3}
@@ -38,7 +38,7 @@ Bu, tasarım ve ürün kararlarına yardımcı olabilecek veya kendi çalışman
 | <Tag status="error">DeFi</Tag>                  | [Kapsama havuzları](https://github.com/threshold-network/UX-User-Research/tree/main/Keep%20Coverage%20Pool)                                                                           |
 | <Tag status="error">DeFi</Tag>                  | [ConsenSys: Merkeziyetsiz Finans (DeFi) Kullanıcı Araştırma Raporu 2022](https://cdn2.hubspot.net/hubfs/4795067/ConsenSys%20Codefi-Defi%20User%20ResearchReport.pdf)                                            |
 | <Tag variant="solid">Metaverse</Tag>             | [Metaverse: Kullanıcı Araştırma Raporu](https://www.politico.com/f/?id=00000187-7685-d820-a7e7-7e85d1420000)                                                                             |
-| <Tag variant="solid">Metaverse</Tag>             | [Safari'ye Çıkmak: Metaverse'te Kullanıcıları Araştırmak](https://archive.devcon.org/archive/watch/6/going-on-safari-researching-users-in-the-metaverse/?tab=YouTube) (video, 27 dk)  |
+| <Tag variant="solid">Metaverse</Tag>             | Safari'ye Çıkmak: Metaverse'te Kullanıcıları Araştırmak (video, 27 dk)  |
 
 ## Web3 için tasarım {#design-for-web3}
 

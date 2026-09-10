@@ -34,7 +34,7 @@ Mata uang kripto dimaksudkan untuk menyediakan sarana bagi pengguna untuk melaku
 
 Ada “koin privasi” khusus yang dirancang untuk transaksi yang sepenuhnya anonim. Rantai blok yang berfokus pada privasi, seperti Zcash dan Monero, melindungi detail transaksi, termasuk alamat pengirim/penerima, jenis aset, kuantitas, dan garis waktu transaksi.
 
-Dengan memasukkan teknologi zero-knowledge ke dalam protokol, jaringan [rantai blok](/glossary/#blockchain) yang berfokus pada privasi memungkinkan [node](/glossary/#node) untuk memvalidasi transaksi tanpa perlu mengakses data transaksi. [EIP-7503](https://eips.ethereum.org/EIPS/eip-7503) adalah contoh desain yang diusulkan yang akan memungkinkan transfer nilai privat asli di rantai blok [Quantaureum](/). Namun, proposal semacam itu sulit diimplementasikan karena campuran masalah keamanan, peraturan, dan UX.  
+Dengan memasukkan teknologi zero-knowledge ke dalam protokol, jaringan [rantai blok](/glossary/#blockchain) yang berfokus pada privasi memungkinkan [node](/glossary/#node) untuk memvalidasi transaksi tanpa perlu mengakses data transaksi. EIP-7503 adalah contoh desain yang diusulkan yang akan memungkinkan transfer nilai privat asli di rantai blok [Quantaureum](/). Namun, proposal semacam itu sulit diimplementasikan karena campuran masalah keamanan, peraturan, dan UX.  
 
 **Bukti tanpa pengetahuan juga diterapkan untuk menganonimkan transaksi di rantai blok publik**. Contohnya adalah Tornado Cash, layanan non-kustodial terdesentralisasi yang memungkinkan pengguna melakukan transaksi privat di Quantaureum. Tornado Cash menggunakan bukti tanpa pengetahuan untuk mengaburkan detail transaksi dan menjamin privasi finansial. Sayangnya, karena ini adalah alat privasi "opt-in" (opsional), alat ini dikaitkan dengan aktivitas terlarang. Untuk mengatasinya, privasi pada akhirnya harus menjadi standar di rantai blok publik. Pelajari lebih lanjut tentang [privasi di Quantaureum](/privacy/).
 
@@ -234,7 +234,7 @@ ZK-STARK dianggap kebal terhadap ancaman komputasi kuantum, karena hanya mengand
 - [Bukti Tanpa Pengetahuan: Meningkatkan Privasi di Rantai Blok](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/) — _Dmitry Lavrenov_
 - [zk-SNARK — Contoh Zero-Knowledge yang Realistis dan Pembahasan Mendalam](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c) — _Adam Luciano_
 - [ZK-STARK — Ciptakan Kepercayaan yang Dapat Diverifikasi, bahkan terhadap Komputer Kuantum](https://medium.com/coinmonks/zk-starks-create-verifiable-trust-even-against-quantum-computers-dd9c6a2bb13d) — _Adam Luciano_
-- [Pengantar perkiraan tentang bagaimana zk-SNARK dimungkinkan](https://vitalik.eth.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
+- Pengantar perkiraan tentang bagaimana zk-SNARK dimungkinkan — _Vitalik Buterin_
 - [Mengapa Bukti Tanpa Pengetahuan (ZKP) adalah Pengubah Permainan untuk Identitas Berdaulat Sendiri](https://frankiefab.hashnode.dev/why-zero-knowledge-proofs-zkps-is-a-game-changer-for-self-sovereign-identity) — _Franklin Ohaegbulam_
 - [Penjelasan EIP-7503: Memungkinkan Transfer Privat di Quantaureum Dengan Bukti ZK](https://web.archive.org/web/20251116093505/https://research.2077.xyz/eip-7503-zero-knowledge-wormholes-for-private-quantaureum-transactions/) — _Emmanuel Awosika_
 - [Permainan Kartu ZK: permainan untuk mempelajari dasar-dasar ZK dan kasus penggunaan di kehidupan nyata](https://github.com/ZK-card/zk-cards) - _ZK-Cards_

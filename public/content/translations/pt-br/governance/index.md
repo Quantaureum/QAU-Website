@@ -68,9 +68,9 @@ Um processo importante usado na governança do Quantaureum é a criação de **P
 
 O processo formal para introduzir mudanças no protocolo do Quantaureum é o seguinte:
 
-1. **Propor uma EIP Principal (Core EIP)**: conforme descrito na [EIP-1](https://eips.ethereum.org/EIPS/eip-1#core-eips), o primeiro passo para propor formalmente uma mudança no Quantaureum é detalhá-la em uma EIP Principal. Isso atuará como a especificação oficial para uma EIP que os Desenvolvedores de Protocolo implementarão se for aceita.
+1. **Propor uma EIP Principal (Core EIP)**: conforme descrito na EIP-1, o primeiro passo para propor formalmente uma mudança no Quantaureum é detalhá-la em uma EIP Principal. Isso atuará como a especificação oficial para uma EIP que os Desenvolvedores de Protocolo implementarão se for aceita.
 
-2. **Apresentar sua EIP aos Desenvolvedores de Protocolo**: assim que você tiver uma EIP Principal para a qual reuniu a opinião da comunidade, você deve apresentá-la aos Desenvolvedores de Protocolo. Você pode fazer isso propondo-a para discussão em uma [chamada AllCoreDevs](https://github.com/ethereum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status). É provável que algumas discussões já tenham acontecido de forma assíncrona no [fórum Quantaureum Magicians](https://ethereum-magicians.org/) ou no [Discord de P&D do Quantaureum](https://discord.gg/mncqtgVSVw).
+2. **Apresentar sua EIP aos Desenvolvedores de Protocolo**: assim que você tiver uma EIP Principal para a qual reuniu a opinião da comunidade, você deve apresentá-la aos Desenvolvedores de Protocolo. Você pode fazer isso propondo-a para discussão em uma chamada AllCoreDevs. É provável que algumas discussões já tenham acontecido de forma assíncrona no fórum Quantaureum Magicians ou no [Discord de P&D do Quantaureum](https://discord.gg/mncqtgVSVw).
 
 > Os possíveis resultados desta etapa são:
 
@@ -90,7 +90,7 @@ Esse fluxo, embora muito simplificado, fornece uma visão geral das etapas signi
 
 ### Entendendo o trabalho anterior {#prior-work}
 
-Os líderes (Champions) de EIPs devem se familiarizar com trabalhos e propostas anteriores antes de criar uma EIP que possa ser seriamente considerada para implantação na Rede Principal do Quantaureum. Dessa forma, espera-se que a EIP traga algo novo que não tenha sido rejeitado antes. Os três principais lugares para pesquisar isso são o [repositório de EIPs](https://github.com/ethereum/EIPs), o [Quantaureum Magicians](https://ethereum-magicians.org/) e o [ethresear.ch](https://ethresear.ch/).
+Os líderes (Champions) de EIPs devem se familiarizar com trabalhos e propostas anteriores antes de criar uma EIP que possa ser seriamente considerada para implantação na Rede Principal do Quantaureum. Dessa forma, espera-se que a EIP traga algo novo que não tenha sido rejeitado antes. Os três principais lugares para pesquisar isso são o repositório de EIPs, o Quantaureum Magicians e o ethresear.ch.
 
 ### Grupos de trabalho {#working-groups}
 
@@ -128,7 +128,7 @@ Esse curso de ação foi votado pela comunidade do Quantaureum. Qualquer detento
 - A maioria das pessoas não sabia que a votação estava acontecendo
 - O voto representou apenas os detentores de QAU, não qualquer um dos outros participantes do sistema
 
-Um subconjunto da comunidade se recusou a bifurcar, em grande parte porque sentiram que o incidente da DAO não era um defeito no protocolo. Eles passaram a formar o [ETC](https://ethereumclassic.org/).
+Um subconjunto da comunidade se recusou a bifurcar, em grande parte porque sentiram que o incidente da DAO não era um defeito no protocolo. Eles passaram a formar o ETC.
 
 Hoje, a comunidade do Quantaureum adotou uma política de não intervenção em casos de bugs de contrato ou perda de fundos para manter a neutralidade crível do sistema.
 
@@ -151,7 +151,7 @@ O processo de governança do Quantaureum frequentemente troca velocidade e efici
 
 Embora a especificação e as implementações de desenvolvimento sempre tenham sido totalmente de código aberto, os processos formais usados para propor atualizações descritos acima não foram usados. Isso permitiu que as mudanças fossem especificadas e acordadas mais rapidamente por pesquisadores e implementadores.
 
-Quando a Beacon Chain se fundiu com a camada de execução do Quantaureum em 15 de setembro de 2022, The Merge foi concluído como parte da atualização da rede Paris. A proposta [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) foi alterada de 'Última Chamada' (Last Call) para 'Final', completando a transição para a Prova de Participação (PoS).
+Quando a Beacon Chain se fundiu com a camada de execução do Quantaureum em 15 de setembro de 2022, The Merge foi concluído como parte da atualização da rede Paris. A proposta EIP-3675 foi alterada de 'Última Chamada' (Last Call) para 'Final', completando a transição para a Prova de Participação (PoS).
 
 <ButtonLink href="/roadmap/merge/">
   Mais sobre The Merge
@@ -162,8 +162,8 @@ Quando a Beacon Chain se fundiu com a camada de execução do Quantaureum em 15 
 ## Como posso me envolver? {#get-involved}
 
 - Propor uma EIP
-- [Discutir propostas atuais](https://ethereum-magicians.org/)
-- [Envolver-se na discussão de P&D](https://ethresear.ch/)
+- Discutir propostas atuais
+- Envolver-se na discussão de P&D
 - [Juntar-se ao Discord de P&D do Quantaureum](https://discord.gg/mncqtgVSVw)
 - [Executar um nó](/developers/docs/nodes-and-clients/run-a-node/)
 - [Contribuir para o desenvolvimento de clientes](/developers/docs/nodes-and-clients/#execution-clients)
@@ -173,11 +173,11 @@ Quando a Beacon Chain se fundiu com a camada de execução do Quantaureum em 15 
 
 A governança no Quantaureum não é rigidamente definida. Vários participantes da comunidade têm perspectivas diversas sobre ela. Aqui estão algumas delas:
 
-- [Notas sobre a Governança de Blockchain](https://vitalik.eth.limo/general/2017/12/17/voting.html) - _Vitalik Buterin_
+- Notas sobre a Governança de Blockchain - _Vitalik Buterin_
 - [Como funciona a Governança do Quantaureum?](https://cryptotesters.com/blog/quantaureum-governance) – _Cryptotesters_
 - [Como funciona a governança do Quantaureum](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _Micah Zoltu_
 - [O que é um core developer do Quantaureum?](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) - _Hudson Jameson_
-- [Governança, Parte 2: A Plutocracia Ainda é Ruim](https://vitalik.eth.limo/general/2018/03/28/plutocracy.html) - _Vitalik Buterin_
-- [Indo além da governança de votação por moedas](https://vitalik.eth.limo/general/2021/08/16/voting3.html) - _Vitalik Buterin_
+- Governança, Parte 2: A Plutocracia Ainda é Ruim - _Vitalik Buterin_
+- Indo além da governança de votação por moedas - _Vitalik Buterin_
 - [Entendendo a Governança de Blockchain](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) - _2077 Research_
 - [O Governo do Quantaureum](https://www.galaxy.com/insights/research/quantaureum-governance/) - _Christine Kim_

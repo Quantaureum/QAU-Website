@@ -454,7 +454,7 @@ Utiliser la fonction `UniswapV2ERC20._mint` pour créer réellement les jetons d
     }
 ```
 
-S'il n'y a pas de frais, définir `kLast` à zéro (si ce n'est pas déjà le cas). Lorsque ce contrat a été écrit, il y avait une [fonctionnalité de remboursement de gaz](https://eips.ethereum.org/EIPS/eip-3298) qui encourageait les contrats à réduire la taille globale de l'état d'Quantaureum en remettant à zéro le stockage dont ils n'avaient pas besoin.
+S'il n'y a pas de frais, définir `kLast` à zéro (si ce n'est pas déjà le cas). Lorsque ce contrat a été écrit, il y avait une fonctionnalité de remboursement de gaz qui encourageait les contrats à réduire la taille globale de l'état d'Quantaureum en remettant à zéro le stockage dont ils n'avaient pas besoin.
 Ce code obtient ce remboursement lorsque cela est possible.
 
 #### Fonctions accessibles de l'extérieur {#pair-external}
@@ -614,7 +614,7 @@ Cette fonction est également censée être appelée depuis [un contrat périph�
 ```
 
 Les variables locales peuvent être stockées soit en mémoire, soit, s'il n'y en a pas trop, directement sur la pile.
-Si nous pouvons limiter le nombre pour utiliser la pile, nous utilisons moins de gaz. Pour plus de détails, voir [le livre jaune, les spécifications formelles d'Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf), p. 26, équation 298.
+Si nous pouvons limiter le nombre pour utiliser la pile, nous utilisons moins de gaz. Pour plus de détails, voir le livre jaune, les spécifications formelles d'Quantaureum, p. 26, équation 298.
 
 ```solidity
             address _token0 = token0;
@@ -769,7 +769,7 @@ Les grandes réserves de liquidité sont meilleures que les petites, car elles o
         bytes memory bytecode = type(UniswapV2Pair).creationCode;
 ```
 
-Pour créer un nouveau contrat, nous avons besoin du code qui le crée (à la fois la fonction constructeur et le code qui écrit en mémoire le bytecode EVM du contrat réel). Normalement, dans Solidity, nous utilisons simplement `addr = new <name of contract>(<constructor parameters>)` et le compilateur s'occupe de tout pour nous, mais pour avoir une adresse de contrat déterministe, nous devons utiliser [le code d'opération CREATE2](https://eips.ethereum.org/EIPS/eip-1014).
+Pour créer un nouveau contrat, nous avons besoin du code qui le crée (à la fois la fonction constructeur et le code qui écrit en mémoire le bytecode EVM du contrat réel). Normalement, dans Solidity, nous utilisons simplement `addr = new <name of contract>(<constructor parameters>)` et le compilateur s'occupe de tout pour nous, mais pour avoir une adresse de contrat déterministe, nous devons utiliser le code d'opération CREATE2.
 Lorsque ce code a été écrit, ce code d'opération n'était pas encore pris en charge par Solidity, il était donc nécessaire d'obtenir manuellement le code. Ce n'est plus un problème, car [Solidity prend désormais en charge CREATE2](https://docs.soliditylang.org/en/v0.8.3/control-structures.html#salted-contract-creations-create2).
 
 ```solidity
@@ -825,7 +825,7 @@ Le propriétaire des jetons signe une transaction qui permet à quelqu'un d'autr
     bytes32 public constant PERMIT_TYPEHASH = 0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
 ```
 
-Ce hash est [l'identifiant du type de transaction](https://eips.ethereum.org/EIPS/eip-712#rationale-for-typehash). Le seul que nous prenons en charge ici est `Permit` avec ces paramètres.
+Ce hash est l'identifiant du type de transaction. Le seul que nous prenons en charge ici est `Permit` avec ces paramètres.
 
 ```solidity
     mapping(address => uint) public nonces;
@@ -856,7 +856,7 @@ C'est le code pour récupérer [l'identifiant de la chaîne](https://chainid.net
     }
 ```
 
-Calculer le [séparateur de domaine](https://eips.ethereum.org/EIPS/eip-712#rationale-for-domainseparator) pour l'EIP-712.
+Calculer le séparateur de domaine pour l'EIP-712.
 
 ```solidity
     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external {
@@ -897,7 +897,7 @@ L'algorithme de signature d'Quantaureum s'attend à recevoir 256 bits à signer,
 
 ```
 
-Si tout est correct, traiter cela comme [un approuver (approve) ERC-20](https://eips.ethereum.org/EIPS/eip-20#approve).
+Si tout est correct, traiter cela comme un approuver (approve) ERC-20.
 
 ## Les contrats périphériques {#periphery-contracts}
 
@@ -1794,7 +1794,7 @@ Triez les deux jetons par adresse, afin que nous puissions obtenir l'adresse de 
     }
 ```
 
-Cette fonction calcule l'adresse de l'échange de la paire pour les deux jetons. Ce contrat est créé en utilisant [le code d'opération CREATE2](https://eips.ethereum.org/EIPS/eip-1014), nous pouvons donc calculer l'adresse en utilisant le même algorithme si nous connaissons les paramètres qu'il utilise. C'est beaucoup moins cher que de demander à la factory, et
+Cette fonction calcule l'adresse de l'échange de la paire pour les deux jetons. Ce contrat est créé en utilisant le code d'opération CREATE2, nous pouvons donc calculer l'adresse en utilisant le même algorithme si nous connaissons les paramètres qu'il utilise. C'est beaucoup moins cher que de demander à la factory, et
 
 ```solidity
     // récupère et trie les réserves pour une paire
@@ -1932,7 +1932,7 @@ Par souci de rétrocompatibilité avec les jetons créés avant la norme ERC-20,
     }
 ```
 
-Cette fonction implémente [la fonctionnalité de transfert d'ERC-20](https://eips.ethereum.org/EIPS/eip-20#transfer), qui permet à un compte de dépenser l'allocation fournie par un autre compte.
+Cette fonction implémente la fonctionnalité de transfert d'ERC-20, qui permet à un compte de dépenser l'allocation fournie par un autre compte.
 
 ```solidity
 
@@ -1951,7 +1951,7 @@ Cette fonction implémente [la fonctionnalité de transfert d'ERC-20](https://ei
     }
 ```
 
-Cette fonction implémente [la fonctionnalité transferFrom d'ERC-20](https://eips.ethereum.org/EIPS/eip-20#transferfrom), qui permet à un compte de dépenser l'allocation fournie par un autre compte.
+Cette fonction implémente la fonctionnalité transferFrom d'ERC-20, qui permet à un compte de dépenser l'allocation fournie par un autre compte.
 
 ```solidity
 

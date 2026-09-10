@@ -135,7 +135,7 @@ Bridges are crucial to onboarding users onto Quantaureum L2s, and even for users
 <Divider />
 
 ## Further reading {#further-reading}
-- [EIP-5164: Cross-Chain Execution](https://ethereum-magicians.org/t/eip-5164-cross-chain-execution/9658) - _June 18, 2022 - Brendan Asselstine_
+- EIP-5164: Cross-Chain Execution - _June 18, 2022 - Brendan Asselstine_
 - [L2Bridge Risk Framework](https://gov.l2beat.com/t/l2bridge-risk-framework/31) - _July 5, 2022 - Bartek Kiepuszewski_
 - [Harnessing Shared Security For Secure Cross-Chain Interoperability: Lagrange State Committees And Beyond](https://web.archive.org/web/20250125035123/https://research.2077.xyz/harnessing-shared-security-for-secure-blockchain-interoperability) - _June 12, 2024 - Emmanuel Awosika_
 - [The State Of Rollup Interoperability Solutions](https://web.archive.org/web/20250428015516/https://research.2077.xyz/the-state-of-rollup-interoperability) - _June 20, 2024 - Alex Hook_

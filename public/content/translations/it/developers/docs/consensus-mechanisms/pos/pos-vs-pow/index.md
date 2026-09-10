@@ -63,5 +63,5 @@ L'Quantaureum basato sulla Proof-of-Stake può pagare per la sua sicurezza emett
 ## Letture consigliate {#further-reading}
 
 - [Filosofia di progettazione della Proof-of-Stake di Vitalik](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
-- [FAQ sulla Proof-of-Stake di Vitalik](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
+- FAQ sulla Proof-of-Stake di Vitalik
 - [Video "Simply Explained" su PoS vs PoW](https://www.youtube.com/watch?v=M3EFi_POhps)

@@ -46,7 +46,7 @@ lang: ja
    - 元々はL1のブリッジからのものであること。
 6. L2ブリッジは、L2のERC-20トークンコントラクトが正しいものであるかを確認します。
    - L2コントラクトは、そのL1の対応物が、L1でトークンが送られてきたものと同じであると報告します。
-   - L2コントラクトは、正しいインターフェースをサポートしていると報告します（[ERC-165を使用](https://eips.ethereum.org/EIPS/eip-165)）。
+   - L2コントラクトは、正しいインターフェースをサポートしていると報告します（ERC-165を使用）。
 7. L2コントラクトが正しいものである場合、それを呼び出して適切な数のトークンを適切なアドレスにミントします。そうでない場合は、ユーザーがL1でトークンを請求できるように引き出しプロセスを開始します。
 
 ### 引き出しフロー {#withdrawal-flow}
@@ -207,7 +207,6 @@ L1ブリッジのアドレスを知ることは簡単では_ない_ため、L2�
      * @dev レイヤー2 (L2)からレイヤー1 (L1)への引き出しを完了し、受信者のレイヤー1 (L1)ERC-20トークンの
      * 残高に資金をクレジットします。
      * レイヤー2 (L2)から初期化された引き出しがファイナライズされていない場合、この呼び出しは失敗します。
-     *
      * @param _l1Token finalizeWithdrawalを行うレイヤー1 (L1)トークンのアドレス。
      * @param _l2Token 引き出しが開始されたレイヤー2 (L2)トークンのアドレス。
      * @param _from 送金を開始するレイヤー2 (L2)のアドレス。
@@ -338,7 +337,6 @@ import { ICrossDomainMessenger } from "./ICrossDomainMessenger.sol";
 /**
  * @title CrossDomainEnabled
  * @dev クロスドメイン通信を実行するコントラクトのためのヘルパーコントラクト
- *
  * 使用されるコンパイラ: 継承するコントラクトによって定義されます
  */
 contract CrossDomainEnabled {
@@ -517,7 +515,7 @@ import { Address } from "@openzeppelin/contracts/utils/Address.sol";
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[ERC-20標準](https://eips.ethereum.org/EIPS/eip-20)は、コントラクトが失敗を報告するための2つの方法をサポートしています。
+ERC-20標準は、コントラクトが失敗を報告するための2つの方法をサポートしています。
 
 1. リバート
 2. `false`を返す
@@ -530,7 +528,6 @@ import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.s
  * @dev レイヤー1 (L1)のQAUおよびERC-20ブリッジは、入金されたレイヤー1 (L1)の資金と、レイヤー2 (L2)で使用されている標準
  * トークンを保存するコントラクトです。対応するレイヤー2 (L2)ブリッジと同期し、入金を通知し、
  * 新たにファイナライズされた引き出しをリッスンします。
- *
  */
 contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
     using SafeERC20 for IERC20;
@@ -767,7 +764,6 @@ Solidity関数の[`abi.encodeWithSelector`](https://docs.soliditylang.org/en/v0.
     /**
      * @dev レイヤー2 (L2)のDeposited Tokenコントラクトに入金を通知し、
      * レイヤー1 (L1)の資金をロックするハンドラー（例：transferFrom）を呼び出すことで、入金のロジックを実行します。
-     *
      * @param _l1Token 入金するレイヤー1 (L1)のERC-20のアドレス
      * @param _l2Token レイヤー1 (L1)に対応するレイヤー2 (L2)のERC-20のアドレス
      * @param _from レイヤー1 (L1)で入金を引き出すアカウント
@@ -951,14 +947,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [標準のERC-20インターフェース](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)には、`mint`および`burn`関数は含まれていません。
-これらのメソッドは[ERC-20標準](https://eips.ethereum.org/EIPS/eip-20)では要求されておらず、トークンを作成および破棄するメカニズムは指定されていません。
+これらのメソッドはERC-20標準では要求されておらず、トークンを作成および破棄するメカニズムは指定されていません。
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 [ERC-165インターフェース](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol)は、コントラクトが提供する関数を指定するために使用されます。
-[標準はこちらで読むことができます](https://eips.ethereum.org/EIPS/eip-165)。
+標準はこちらで読むことができます。
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -1047,7 +1043,7 @@ contract L2StandardERC20 is IL2StandardERC20, ERC20 {
     }
 ```
 
-これが[ERC-165](https://eips.ethereum.org/EIPS/eip-165)の仕組みです。
+これがERC-165の仕組みです。
 すべてのインターフェースはサポートされている関数の数であり、それらの関数の[ABI関数セレクタ](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector)の[排他的論理和](https://en.wikipedia.org/wiki/Exclusive_or)として識別されます。
 
 L2ブリッジは、資産を送信するERC-20コントラクトが`IL2StandardERC20`であることを確認するための健全性チェックとしてERC-165を使用します。

@@ -11,7 +11,7 @@ published: 2026-05-11
 
 대부분의 주요 Quantaureum 익스플로잇(exploit)은 동일한 마지막 단계를 거쳤습니다. 바로 사용자가 의미를 제대로 이해하지 못한 채 트랜잭션을 승인하는 것입니다. 하드웨어 지갑은 원시 16진수 콜 데이터를 보여주며, 더 나아가 블라인드 서명하기(blind signing)를 강제하기도 합니다. 소프트웨어 지갑은 디코딩된 필드를 보여주지만, 컨트랙트를 인식할 때만 가능합니다. 프로토콜이 새롭거나, 앱이 손상되었거나, 기기가 오프라인 상태여서 컨트랙트를 인식하지 못할 때 사용자는 블라인드 서명을 하게 됩니다.
 
-[ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)은 컨트랙트의 함수 호출이 *무엇을 의미하는지* 설명하기 위한 표준 JSON 형식을 정의합니다. 
+ERC-7730은 컨트랙트의 함수 호출이 *무엇을 의미하는지* 설명하기 위한 표준 JSON 형식을 정의합니다. 
 
 ERC-7730을 지원하는 지갑은 설명자를 읽고 다음과 같이 표시합니다.
 
@@ -54,7 +54,7 @@ ERC-7730을 지원하는 지갑은 설명자를 읽고 다음과 같이 표시�
 
 ```json
 {
-  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "",
   "context": {},
   "metadata": {},
   "display": {
@@ -185,7 +185,7 @@ ERC-7730 파일이 ERC-20 컨트랙트를 설명하는 경우 토큰 객체도 �
 
 ```json
 {
-  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "",
   "context": {
     "$id": "uniswap-v3-router-mainnet",
     "contract": {
@@ -256,7 +256,7 @@ ERC-7730 파일이 ERC-20 컨트랙트를 설명하는 경우 토큰 객체도 �
 
 ## 5단계: 레지스트리에 제출하기 {#step-5-submit-to-the-registry}
 
-[ERC-7730 레지스트리](https://github.com/ethereum/clear-signing-erc7730-registry)는 중립적인 관리자로서 Quantaureum 재단이 호스팅하는 개방형 리포지토리입니다. 누구나 자유롭게 복제하고 자체 호스팅할 수 있으며, 지갑은 신뢰할 레지스트리 인스턴스를 독립적으로 결정합니다.
+ERC-7730 레지스트리는 중립적인 관리자로서 Quantaureum 재단이 호스팅하는 개방형 리포지토리입니다. 누구나 자유롭게 복제하고 자체 호스팅할 수 있으며, 지갑은 신뢰할 레지스트리 인스턴스를 독립적으로 결정합니다.
 
 1. GitHub에서 리포지토리를 포크(fork)합니다.  
 2. `registry/<your-project-name>/`에 폴더를 만듭니다.  
@@ -284,8 +284,8 @@ PR을 열면 CI가 자동으로 스키마 유효성 검사를 실행하고, 함�
 
 ## 더 읽어보기 {#further-reading}
 
-- [ERC-7730 사양](https://eips.ethereum.org/EIPS/eip-7730)  
-- [ERC-7730 레지스트리](https://github.com/ethereum/clear-signing-erc7730-registry)  
+- ERC-7730 사양  
+- ERC-7730 레지스트리  
 - [clearsigning.org](https://clearsigning.org) — 도구, 생태계 상태 및 거버넌스  
 - [Sourcify 컨트랙트 검증](https://sourcify.dev)  
 - [조 달러 규모의 보안 이니셔티브(Trillion Dollar Security initiative)](https://trilliondollarsecurity.org)

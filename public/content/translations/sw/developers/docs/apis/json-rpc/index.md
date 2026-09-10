@@ -6,7 +6,7 @@ lang: sw
 
 Ili programu tumizi iweze kuingiliana na mnyororo wa vitalu wa [Quantaureum](/) - iwe kwa kusoma data ya mnyororo wa vitalu au kutuma miamala kwenye mtandao - ni lazima iunganishwe kwenye nodi ya Quantaureum.
 
-Kwa madhumuni haya, kila [kiteja cha Quantaureum](/developers/docs/nodes-and-clients/#execution-clients) hutekeleza [ubainifu wa JSON-RPC](https://github.com/ethereum/execution-apis), kwa hivyo kuna seti sawa ya mbinu ambazo programu tumizi zinaweza kutegemea bila kujali utekelezaji maalum wa nodi au kiteja.
+Kwa madhumuni haya, kila [kiteja cha Quantaureum](/developers/docs/nodes-and-clients/#execution-clients) hutekeleza ubainifu wa JSON-RPC, kwa hivyo kuna seti sawa ya mbinu ambazo programu tumizi zinaweza kutegemea bila kujali utekelezaji maalum wa nodi au kiteja.
 
 [JSON-RPC](https://www.jsonrpc.org/specification) ni itifaki isiyo na hali, nyepesi ya wito wa utaratibu wa mbali (RPC). Inafafanua miundo kadhaa ya data na sheria zinazohusu uchakataji wake. Haitegemei njia ya usafirishaji kwa kuwa dhana zinaweza kutumika ndani ya mchakato huo huo, kupitia soketi, kupitia HTTP, au katika mazingira mengi mbalimbali ya kupitisha ujumbe. Inatumia JSON (RFC 4627) kama umbizo la data.
 
@@ -20,13 +20,13 @@ Ingawa unaweza kuchagua kuingiliana moja kwa moja na viteja vya Quantaureum kupi
 
 ## API za mteja wa mwafaka {#consensus-clients}
 
-Ukurasa huu unahusika zaidi na API ya JSON-RPC inayotumiwa na viteja vya utekelezaji vya Quantaureum. Hata hivyo, wateja wa mwafaka pia wana API ya RPC inayoruhusu watumiaji kuuliza taarifa kuhusu nodi, kuomba vitalu vya Beacon, hali ya Beacon, na taarifa nyingine zinazohusiana na mwafaka moja kwa moja kutoka kwenye nodi. API hii imeandikwa kwenye [ukurasa wa wavuti wa API ya Beacon](https://ethereum.github.io/beacon-APIs/#/).
+Ukurasa huu unahusika zaidi na API ya JSON-RPC inayotumiwa na viteja vya utekelezaji vya Quantaureum. Hata hivyo, wateja wa mwafaka pia wana API ya RPC inayoruhusu watumiaji kuuliza taarifa kuhusu nodi, kuomba vitalu vya Beacon, hali ya Beacon, na taarifa nyingine zinazohusiana na mwafaka moja kwa moja kutoka kwenye nodi. API hii imeandikwa kwenye ukurasa wa wavuti wa API ya Beacon.
 
-API ya ndani pia inatumika kwa mawasiliano kati ya wateja ndani ya nodi - yaani, inawezesha mteja wa mwafaka na kiteja cha utekelezaji kubadilishana data. Hii inaitwa 'Engine API' na vipimo vyake vinapatikana kwenye [GitHub](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md).
+API ya ndani pia inatumika kwa mawasiliano kati ya wateja ndani ya nodi - yaani, inawezesha mteja wa mwafaka na kiteja cha utekelezaji kubadilishana data. Hii inaitwa 'Engine API' na vipimo vyake vinapatikana kwenye GitHub.
 
 ## Maelezo maalum ya kiteja cha utekelezaji {#spec}
 
-[Soma maelezo maalum kamili ya API ya JSON-RPC kwenye GitHub](https://github.com/ethereum/execution-apis). API hii imeandikwa kwenye [ukurasa wa wavuti wa API ya Utekelezaji](https://ethereum.github.io/execution-apis/) na inajumuisha Kikaguzi ili kujaribu mbinu zote zinazopatikana.
+Soma maelezo maalum kamili ya API ya JSON-RPC kwenye GitHub. API hii imeandikwa kwenye ukurasa wa wavuti wa API ya Utekelezaji na inajumuisha Kikaguzi ili kujaribu mbinu zote zinazopatikana.
 
 ## Taratibu {#conventions}
 
@@ -134,7 +134,7 @@ Baadhi ya mbinu kuu za JSON-RPC zinahitaji data kutoka kwenye mtandao wa Quantau
 
 ## Uwanja wa Majaribio wa API ya JSON-RPC {#json-rpc-api-playground}
 
-Unaweza kutumia [zana ya uwanja wa majaribio](https://ethereum-json-rpc.com) kugundua na kujaribu mbinu za API. Pia inakuonyesha ni mbinu na mitandao ipi inayoungwa mkono na watoa huduma mbalimbali wa nodi.
+Unaweza kutumia zana ya uwanja wa majaribio kugundua na kujaribu mbinu za API. Pia inakuonyesha ni mbinu na mitandao ipi inayoungwa mkono na watoa huduma mbalimbali wa nodi.
 
 ## Mbinu za API ya JSON-RPC {#json-rpc-methods}
 
@@ -275,7 +275,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 
 ### qau_protocolVersion {#qau-protocolversion}
 
-Hurejesha toleo la sasa la itifaki ya Quantaureum. Kumbuka kwamba mbinu hii [haipatikani katika Geth](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924).
+Hurejesha toleo la sasa la itifaki ya Quantaureum. Kumbuka kwamba mbinu hii haipatikani katika Geth.
 
 **Vigezo**
 
@@ -301,10 +301,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_protocolVersion","params":[]
 ### qau_syncing {#qau-syncing}
 
 Hurejesha kipengee chenye data kuhusu hali ya usawazishaji au `false`.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_syncing">
-  Jaribu endpoint kwenye uwanja wa majaribio
-</ButtonLink>
 
 **Vigezo**
 
@@ -390,10 +386,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_syncing","params":[],"id":1}
 
 Inarejesha anwani ya coinbase ya kiteja.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_coinbase">
-  Jaribu kifikio kwenye uwanja wa majaribio
-</ButtonLink>
-
 > **Kumbuka:** Mbinu hii imeachwa kutumika kuanzia **v1.14.0** na haitumiki tena. Kujaribu kutumia mbinu hii kutasababisha hitilafu ya "Method not supported".
 
 **Vigezo**
@@ -421,10 +413,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_coinbase","params":[],"id":6
 
 Hurejesha kitambulisho cha mnyororo kinachotumika kusaini miamala iliyolindwa dhidi ya marudio.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_chainId">
-  Jaribu kifikio katika uwanja wa majaribio
-</ButtonLink>
-
 **Vigezo**
 
 Hakuna
@@ -449,10 +437,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_chainId","params":[],"id":67
 ### qau_mining {#qau-mining}
 
 Inarudisha `true` ikiwa kiteja kinachimba vitalu vipya kikamilifu. Hii inaweza tu kurudisha `true` kwa mitandao ya Uthibitisho wa Kazi (PoW) na inaweza isipatikane katika baadhi ya viteja tangu [Unganisho](/roadmap/merge/).
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_mining">
-  Jaribu endpoint katika uwanja wa majaribio
-</ButtonLink>
 
 **Vigezo**
 
@@ -479,10 +463,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_mining","params":[],"id":71}
 
 Inarejesha idadi ya heshi kwa sekunde ambazo nodi inatumia kuchimba. Hii inaweza tu kurejesha `true` kwa mitandao ya Uthibitisho wa Kazi (PoW) na inaweza isipatikane katika baadhi ya viteja tangu [Unganisho](/roadmap/merge/).
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_hashrate">
-  Jaribu kituo cha mwisho kwenye uwanja wa majaribio
-</ButtonLink>
-
 **Vigezo**
 
 Hakuna
@@ -507,10 +487,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_hashrate","params":[],"id":7
 ### qau_gasPrice {#qau-gasprice}
 
 Hurejesha makadirio ya bei ya sasa kwa kila gesi katika Wei. Kwa mfano, kiteja cha Besu huchunguza vitalu 100 vya mwisho na kurejesha bei ya wastani ya uniti ya gesi kwa chaguo-msingi.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_gasPrice">
-  Jaribu endpoint katika uwanja wa majaribio
-</ButtonLink>
 
 **Vigezo**
 
@@ -537,10 +513,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_gasPrice","params":[],"id":7
 
 Hurejesha orodha ya anwani zinazomilikiwa na kiteja.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_accounts">
-  Jaribu endpoint kwenye uwanja wa majaribio
-</ButtonLink>
-
 **Vigezo**
 
 Hakuna
@@ -566,10 +538,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[],"id":1
 
 Inarejesha nambari ya kitalu cha hivi karibuni zaidi.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_blockNumber">
-  Jaribu kituo kwenye uwanja wa majaribio
-</ButtonLink>
-
 **Vigezo**
 
 Hakuna
@@ -594,10 +562,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_blockNumber","params":[],"id
 ### qau_getBalance {#qau-getbalance}
 
 Inarejesha salio la akaunti kwenye anwani iliyotolewa.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBalance">
-  Jaribu endpoint kwenye uwanja wa majaribio
-</ButtonLink>
 
 **Vigezo**
 
@@ -628,10 +592,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBalance","params":["0x407
 ### qau_getStorageAt {#qau-getstorageat}
 
 Inarejesha thamani kutoka kwenye nafasi ya hifadhi katika anwani iliyotolewa.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getStorageAt">
-  Jaribu endpoint kwenye uwanja wa majaribio
-</ButtonLink>
 
 **Vigezo**
 
@@ -701,10 +661,6 @@ curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": [
 
 Inarudisha idadi ya miamala _iliyotumwa_ kutoka kwenye anwani.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionCount">
-  Jaribu endpoint katika uwanja wa majaribio
-</ButtonLink>
-
 **Vigezo**
 
 1. `DATA`, Baiti 20 - anwani.
@@ -738,10 +694,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionCount","params
 
 Hurejesha idadi ya miamala katika kitalu kutoka kwenye kitalu kinacholingana na heshi ya kitalu iliyotolewa.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
-  Jaribu endpoint kwenye uwanja wa majaribio
-</ButtonLink>
-
 **Vigezo**
 
 1. `DATA`, Baiti 32 - heshi ya kitalu
@@ -770,10 +722,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByHa
 ### qau_getBlockTransactionCountByNumber {#qau-getblocktransactioncountbynumber}
 
 Hurejesha idadi ya miamala katika kitalu kinacholingana na nambari ya kitalu iliyotolewa.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
-  Jaribu kituo katika uwanja wa majaribio
-</ButtonLink>
 
 **Vigezo**
 
@@ -806,10 +754,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByNu
 
 Hurejesha idadi ya wajomba katika kitalu kutoka kwenye kitalu kinacholingana na heshi ya kitalu iliyotolewa.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
-  Jaribu endpoint katika uwanja wa majaribio
-</ButtonLink>
-
 **Vigezo**
 
 1. `DATA`, Baiti 32 - heshi ya kitalu
@@ -838,10 +782,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockHash","p
 ### qau_getUncleCountByBlockNumber {#qau-getunclecountbyblocknumber}
 
 Hurejesha idadi ya wajomba katika kitalu kutoka kwenye kitalu kinacholingana na nambari ya kitalu iliyotolewa.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
-  Jaribu kifikio katika uwanja wa majaribio
-</ButtonLink>
 
 **Vigezo**
 
@@ -873,10 +813,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockNumber",
 ### qau_getCode {#qau-getcode}
 
 Hurejesha msimbo kwenye anwani iliyotolewa.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getCode">
-  Jaribu kituo cha mwisho katika uwanja wa majaribio
-</ButtonLink>
 
 **Vigezo**
 
@@ -1057,10 +993,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendRawTransaction","params"
 
 Hutekeleza mwito wa ujumbe mpya mara moja bila kuunda muamala kwenye mnyororo wa vitalu. Mara nyingi hutumika kutekeleza vitendaji vya kusoma tu vya mkataba mahiri, kwa mfano `balanceOf` kwa mkataba wa ERC-20.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_call">
-  Jaribu kituo cha mwisho kwenye uwanja wa majaribio
-</ButtonLink>
-
 **Vigezo**
 
 1. `Object` - Kipengee cha mwito wa muamala
@@ -1095,10 +1027,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_call","params":[{see above}]
 
 Inazalisha na kurudisha makadirio ya kiasi gani cha gesi kinahitajika ili kuruhusu muamala kukamilika. Muamala hautaongezwa kwenye mnyororo wa vitalu. Kumbuka kwamba makadirio yanaweza kuwa makubwa zaidi kuliko kiasi cha gesi kilichotumiwa hasa na muamala, kwa sababu mbalimbali ikiwa ni pamoja na mitambo ya EVM na utendaji wa nodi.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_estimateGas">
-  Jaribu endpoint katika uwanja wa majaribio
-</ButtonLink>
-
 **Vigezo**
 
 Tazama vigezo vya [qau_call](#qau-call), isipokuwa kwamba sifa zote ni za hiari. Ikiwa hakuna kikomo cha gesi kilichobainishwa geth hutumia kikomo cha gesi cha kitalu kutoka kwenye kitalu kinachosubiri kama kikomo cha juu. Kutokana na hili, makadirio yaliyorejeshwa yanaweza yasiwe ya kutosha kutekeleza mwito/muamala wakati kiasi cha gesi ni kikubwa kuliko kikomo cha gesi cha kitalu kinachosubiri.
@@ -1123,10 +1051,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_estimateGas","params":[{see 
 ### qau_getBlockByHash {#qau-getblockbyhash}
 
 Inarudisha taarifa kuhusu kitalu kwa heshi.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByHash">
-  Jaribu kituo kwenye uwanja wa majaribio
-</ButtonLink>
 
 **Vigezo**
 
@@ -1204,10 +1128,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByHash","params":["0
 
 Hurejesha taarifa kuhusu kitalu kwa nambari ya kitalu.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByNumber">
-  Jaribu kikomo katika uwanja wa majaribio
-</ButtonLink>
-
 **Vigezo**
 
 1. `QUANTITY|TAG` - nambari kamili ya nambari ya kitalu, au tungo `"earliest"`, `"latest"`, `"pending"`, `"safe"` au `"finalized"`, kama ilivyo katika [kigezo cha kitalu](/developers/docs/apis/json-rpc/#block-parameter).
@@ -1235,10 +1155,6 @@ Matokeo tazama [qau_getBlockByHash](#qau-getblockbyhash)
 ### qau_getTransactionByHash {#qau-gettransactionbyhash}
 
 Inarudisha taarifa kuhusu muamala ulioombwa kwa heshi ya muamala.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByHash">
-  Jaribu endpoint katika uwanja wa majaribio
-</ButtonLink>
 
 **Vigezo**
 
@@ -1299,10 +1215,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByHash","param
 
 Inarejesha taarifa kuhusu muamala kwa heshi ya kitalu na nafasi ya faharisi ya muamala.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
-  Jaribu endpoint katika uwanja wa majaribio
-</ButtonLink>
-
 **Vigezo**
 
 1. `DATA`, Baiti 32 - heshi ya kitalu.
@@ -1330,10 +1242,6 @@ Matokeo tazama [qau_getTransactionByHash](#qau-gettransactionbyhash)
 ### qau_getTransactionByBlockNumberAndIndex {#qau-gettransactionbyblocknumberandindex}
 
 Hurejesha maelezo kuhusu muamala kwa nambari ya kitalu na nafasi ya faharisi ya muamala.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
-  Jaribu kituo cha mwisho katika uwanja wa majaribio
-</ButtonLink>
 
 **Vigezo**
 
@@ -1431,10 +1339,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionReceipt","para
 
 Hurejesha taarifa kuhusu mjomba wa kitalu kwa heshi na nafasi ya faharisi ya mjomba.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
-  Jaribu kifikio katika uwanja wa majaribio
-</ButtonLink>
-
 **Vigezo**
 
 1. `DATA`, Baiti 32 - Heshi ya kitalu.
@@ -1464,10 +1368,6 @@ Kwa matokeo tazama [qau_getBlockByHash](#qau-getblockbyhash)
 ### qau_getUncleByBlockNumberAndIndex {#qau-getunclebyblocknumberandindex}
 
 Hurejesha maelezo kuhusu mjomba wa kitalu kwa nambari na nafasi ya faharisi ya mjomba.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
-  Jaribu kifikio kwenye uwanja wa majaribio
-</ButtonLink>
 
 **Vigezo**
 
@@ -1750,7 +1650,7 @@ Kwa matokeo tazama [qau_getFilterChanges](#qau-getfilterchanges)
 
 ### Kusambaza mkataba kwa kutumia JSON_RPC {#deploying-contract}
 
-Sehemu hii inajumuisha onyesho la jinsi ya kusambaza mkataba kwa kutumia kiolesura cha RPC pekee. Kuna njia mbadala za kusambaza mikataba ambapo ugumu huu unafichwa—kwa mfano, kutumia maktaba zilizojengwa juu ya kiolesura cha RPC kama vile [web3.js](https://web3js.readthedocs.io/) na [web3.py](https://github.com/ethereum/web3.py). Ufichaji huu kwa ujumla ni rahisi kueleweka na hauna uwezekano mkubwa wa makosa, lakini bado ni muhimu kuelewa jinsi inavyofanya kazi kiufundi.
+Sehemu hii inajumuisha onyesho la jinsi ya kusambaza mkataba kwa kutumia kiolesura cha RPC pekee. Kuna njia mbadala za kusambaza mikataba ambapo ugumu huu unafichwa—kwa mfano, kutumia maktaba zilizojengwa juu ya kiolesura cha RPC kama vile [web3.js](https://web3js.readthedocs.io/) na web3.py. Ufichaji huu kwa ujumla ni rahisi kueleweka na hauna uwezekano mkubwa wa makosa, lakini bado ni muhimu kuelewa jinsi inavyofanya kazi kiufundi.
 
 Ufuatao ni mkataba mahiri wa moja kwa moja unaoitwa `Multiply7` ambao utasambazwa kwa kutumia kiolesura cha JSON-RPC kwenye nodi ya Quantaureum. Mafunzo haya yanachukulia kuwa msomaji tayari anaendesha nodi ya Geth. Maelezo zaidi kuhusu nodi na wateja yanapatikana [hapa](/developers/docs/nodes-and-clients/run-a-node). Tafadhali rejelea nyaraka za kila [kiteja](/developers/docs/nodes-and-clients/) ili kuona jinsi ya kuanzisha HTTP JSON-RPC kwa viteja ambavyo si vya Geth. Viteja vingi kwa chaguo-msingi huhudumia kwenye `localhost:8545`.
 
@@ -1789,7 +1689,7 @@ web3.fromWei("0x1639e49bba16280000", "QAU")
 // "410"
 ```
 
-Kwa kuwa sasa kuna Etha kwenye mnyororo wetu wa kibinafsi wa maendeleo, tunaweza kusambaza mkataba. Hatua ya kwanza ni kukusanya mkataba wa Multiply7 kuwa msimbo wa baiti ambao unaweza kutumwa kwa EVM. Ili kusakinisha solc, kikusanyaji cha Solidity, fuata [nyaraka za Solidity](https://docs.soliditylang.org/en/latest/installing-solidity.html). (Unaweza kutaka kutumia toleo la zamani la `solc` ili lilingane na [toleo la kikusanyaji lililotumika kwa mfano wetu](https://github.com/ethereum/solidity/releases/tag/v0.4.20).)
+Kwa kuwa sasa kuna Etha kwenye mnyororo wetu wa kibinafsi wa maendeleo, tunaweza kusambaza mkataba. Hatua ya kwanza ni kukusanya mkataba wa Multiply7 kuwa msimbo wa baiti ambao unaweza kutumwa kwa EVM. Ili kusakinisha solc, kikusanyaji cha Solidity, fuata [nyaraka za Solidity](https://docs.soliditylang.org/en/latest/installing-solidity.html). (Unaweza kutaka kutumia toleo la zamani la `solc` ili lilingane na toleo la kikusanyaji lililotumika kwa mfano wetu.)
 
 Hatua inayofuata ni kukusanya mkataba wa Multiply7 kuwa msimbo wa baiti ambao unaweza kutumwa kwa EVM.
 

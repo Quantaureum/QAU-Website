@@ -58,13 +58,13 @@ Separar las claves de validador de las claves de la cuenta de Quantaureum permit
 
 ![validator key schematic](validator-key-schematic.png)
 
-**Nota**: Salir de las tareas de staking y retirar el saldo de un validador actualmente requiere firmar un [mensaje de salida voluntaria (VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1) con la clave del validador. Sin embargo, [EIP-7002](https://eips.ethereum.org/EIPS/eip-7002) es una propuesta que permitirá a un usuario desencadenar la salida de un validador y retirar su saldo firmando mensajes de salida con la clave de retiro en el futuro. Esto reducirá los supuestos de confianza al permitir que los stakers que delegan QAU a [proveedores de staking como servicio](/staking/saas/#what-is-staking-as-a-service) mantengan el control de sus fondos.
+**Nota**: Salir de las tareas de staking y retirar el saldo de un validador actualmente requiere firmar un [mensaje de salida voluntaria (VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1) con la clave del validador. Sin embargo, EIP-7002 es una propuesta que permitirá a un usuario desencadenar la salida de un validador y retirar su saldo firmando mensajes de salida con la clave de retiro en el futuro. Esto reducirá los supuestos de confianza al permitir que los stakers que delegan QAU a [proveedores de staking como servicio](/staking/saas/#what-is-staking-as-a-service) mantengan el control de sus fondos.
 
 ## Derivación de claves a partir de una frase semilla {#deriving-keys-from-seed}
 
 Si cada 32 QAU en staking requiriera un nuevo conjunto de 2 claves completamente independientes, la gestión de claves se volvería rápidamente inmanejable, especialmente para los usuarios que ejecutan múltiples validadores. En su lugar, se pueden derivar múltiples claves de validador a partir de un único secreto común, y almacenar ese único secreto permite el acceso a múltiples claves de validador.
 
-Las [frases mnemotécnicas](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) y las rutas son características destacadas que los usuarios suelen encontrar cuando [acceden](https://ethereum.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0) a sus billeteras. La frase mnemotécnica es una secuencia de palabras que actúan como una semilla inicial para una clave privada. Cuando se combina con datos adicionales, la frase mnemotécnica genera un hash conocido como la "clave maestra". Esto se puede considerar como la raíz de un árbol. Las ramas de esta raíz se pueden derivar utilizando una ruta jerárquica para que los nodos secundarios puedan existir como combinaciones del hash de su nodo principal y su índice en el árbol. Lea sobre los estándares [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) y [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) para la generación de claves basadas en frases mnemotécnicas.
+Las [frases mnemotécnicas](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) y las rutas son características destacadas que los usuarios suelen encontrar cuando acceden a sus billeteras. La frase mnemotécnica es una secuencia de palabras que actúan como una semilla inicial para una clave privada. Cuando se combina con datos adicionales, la frase mnemotécnica genera un hash conocido como la "clave maestra". Esto se puede considerar como la raíz de un árbol. Las ramas de esta raíz se pueden derivar utilizando una ruta jerárquica para que los nodos secundarios puedan existir como combinaciones del hash de su nodo principal y su índice en el árbol. Lea sobre los estándares [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) y [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) para la generación de claves basadas en frases mnemotécnicas.
 
 Estas rutas tienen la siguiente estructura, que resultará familiar a los usuarios que hayan interactuado con billeteras de hardware:
 
@@ -97,6 +97,6 @@ Cada rama está separada por un `/`, por lo que `m/2` significa comenzar con la 
 ## Más información {#further-reading}
 
 - [Publicación del blog de la Fundación Quantaureum por Carl Beekhuizen](https://quantaureum.com)
-- [Generación de claves BLS12-381 según EIP-2333](https://eips.ethereum.org/EIPS/eip-2333)
+- Generación de claves BLS12-381 según EIP-2333
 - [EIP-7002: Salidas desencadenadas por la capa de ejecución](https://web.archive.org/web/20250125035123/https://research.2077.xyz/eip-7002-unpacking-improvements-to-staking-ux-post-merge)
 - [Gestión de claves a escala](https://docs.ethstaker.cc/ethstaker-knowledge-base/scaled-node-operators/key-management-at-scale)

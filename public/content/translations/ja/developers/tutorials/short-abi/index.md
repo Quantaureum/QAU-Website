@@ -65,9 +65,9 @@ L2で32バイトのワードをストレージに書き込む最大コストは2
 説明：
 
 - **関数セレクタ**: コントラクトの関数は256個未満であるため、1バイトで区別できます。
-  これらのバイトは通常ゼロではないため、[16ガスのコストがかかります](https://eips.ethereum.org/EIPS/eip-2028)。
+  これらのバイトは通常ゼロではないため、16ガスのコストがかかります。
 - **ゼロ**: 20バイトのアドレスを保持するのに32バイトのワードは必要ないため、これらのバイトは常にゼロになります。
-  ゼロを保持するバイトは4ガスのコストがかかります（[イエロー・ペーパー](https://ethereum.github.io/yellowpaper/paper.pdf)の付録G、27ページ、`G`<sub>`txdatazero`</sub>の値を参照）。
+  ゼロを保持するバイトは4ガスのコストがかかります（イエロー・ペーパーの付録G、27ページ、`G`<sub>`txdatazero`</sub>の値を参照）。
 - **金額**: このコントラクトで`decimals`が18（通常の値）であり、送金するトークンの最大量が10<sup>18</sup>であると仮定すると、最大量は10<sup>36</sup>になります。
   256<sup>15</sup> &gt; 10<sup>36</sup>であるため、15バイトで十分です。
 
@@ -200,7 +200,7 @@ Solidityコントラクトへの呼び出しがどの関数シグネチャとも
 2. [`msg.sender`](https://docs.soliditylang.org/en/v0.8.12/units-and-global-variables.html#block-and-transaction-properties)に依存する関数。
    `msg.sender`の値は、呼び出し元ではなく`CalldataInterpreter`のアドレスになります。
 
-残念ながら、[ERC-20の仕様を見ると](https://eips.ethereum.org/EIPS/eip-20)、残る関数は`transfer`の1つだけです。
+残念ながら、ERC-20の仕様を見ると、残る関数は`transfer`の1つだけです。
 これにより、残る関数は2つだけになります。`transfer`（`transferFrom`を呼び出せるため）と`faucet`（呼び出し元にトークンを送金し直すことができるため）です。
 
 ```solidity

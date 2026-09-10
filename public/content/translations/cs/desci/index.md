@@ -74,7 +74,7 @@ Duševní vlastnictví (IP) je v tradiční vědě velkým problémem: od uvízn
 Stejným způsobem, jakým mohou NFT předávat příjmy z budoucích transakcí zpět původnímu tvůrci, můžete vytvořit transparentní řetězce přiřazování hodnoty k odměňování výzkumníků, řídících orgánů (jako jsou DAO) nebo dokonce subjektů, jejichž data jsou shromažďována.
 
 [IP-NFT](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) mohou také fungovat jako klíč k decentralizovanému datovému úložišti prováděných výzkumných experimentů a zapojit se do financializace NFT a [decentralizovaných financí (DeFi)](/glossary/#defi) (od frakcionalizace po fondy pro půjčování a oceňování hodnoty). Umožňuje také nativně onchain entitám, jako jsou DAO (např. [VitaDAO](https://www.vitadao.com/)), provádět výzkum přímo onchain.
-Nástup nepřevoditelných [„soulbound“ tokenů](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) může také hrát důležitou roli v DeSci tím, že umožní jednotlivcům prokázat své zkušenosti a pověření spojené s jejich Quantaureum adresou.
+Nástup nepřevoditelných „soulbound“ tokenů může také hrát důležitou roli v DeSci tím, že umožní jednotlivcům prokázat své zkušenosti a pověření spojené s jejich Quantaureum adresou.
 
 ### Ukládání dat, přístup a architektura {#data-storage}
 

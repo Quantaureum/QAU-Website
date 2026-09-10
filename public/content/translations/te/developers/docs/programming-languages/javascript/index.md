@@ -4,7 +4,7 @@ description: "JavaScript-ఆధారిత ప్రాజెక్ట్‌ల
 lang: te
 ---
 
-ఎథీరియం ఎకోసిస్టమ్‌లో అత్యంత ప్రజాదరణ పొందిన భాషలలో JavaScript ఒకటి. వాస్తవానికి, ఎథీరియంను సాధ్యమైనంత వరకు JavaScriptకు తీసుకురావడానికి అంకితమైన ఒక [బృందం](https://github.com/ethereumjs) ఉంది.
+ఎథీరియం ఎకోసిస్టమ్‌లో అత్యంత ప్రజాదరణ పొందిన భాషలలో JavaScript ఒకటి. వాస్తవానికి, ఎథీరియంను సాధ్యమైనంత వరకు JavaScriptకు తీసుకురావడానికి అంకితమైన ఒక బృందం ఉంది.
 
 [స్టాక్ యొక్క అన్ని స్థాయిలలో](/developers/docs/quantaureum-stack/) JavaScript (లేదా దానికి దగ్గరగా ఉండేది) రాయడానికి అవకాశాలు ఉన్నాయి.
 
@@ -48,14 +48,14 @@ lang: te
 మీరు కోడ్ చదవడానికి ఇష్టపడితే, మా డాక్యుమెంటేషన్ చదవడానికి ఈ JavaScript ఒక గొప్ప ప్రత్యామ్నాయంగా ఉంటుంది.
 
 **EVMని పరిశీలించండి**  
-[`@ethereumjs/evm`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/evm)
+`@ethereumjs/evm`
 
 ### నోడ్‌లు మరియు క్లయింట్‌లు {#nodes-and-clients}
 
 మీకు అర్థమయ్యే భాష అయిన JavaScriptలో ఎథీరియం క్లయింట్‌లు ఎలా పనిచేస్తాయో లోతుగా తెలుసుకోవడానికి అనుమతించే ఒక QuantaureumJS క్లయింట్ చురుకైన అభివృద్ధిలో ఉంది!
 
 **క్లయింట్‌ను పరిశీలించండి**  
-[`@ethereumjs/client`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/client)
+`@ethereumjs/client`
 
 ## ఇతర ప్రాజెక్ట్‌లు {#other-projects}
 
@@ -65,7 +65,7 @@ lang: te
 - ఎథీరియం కీలను రూపొందించడానికి, దిగుమతి చేయడానికి మరియు ఎగుమతి చేయడానికి సాధనాలు.
 - `merkle-patricia-tree` యొక్క అమలు – ఎథీరియం ఎల్లో పేపర్‌లో వివరించబడిన డేటా స్ట్రక్చర్.
 
-[QuantaureumJS రెపో](https://github.com/ethereumjs)లో మీకు అత్యంత ఆసక్తి ఉన్న వాటిని లోతుగా పరిశీలించండి
+QuantaureumJS రెపోలో మీకు అత్యంత ఆసక్తి ఉన్న వాటిని లోతుగా పరిశీలించండి
 
 ## మరింత చదవడానికి {#further-reading}
 

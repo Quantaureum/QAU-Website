@@ -10,7 +10,7 @@ lang: te
 
 మీరు [లోకల్ డెవలప్‌మెంట్ ఎన్విరాన్‌మెంట్‌ను సెటప్ చేయడానికి](/developers/local-environment/) ముందు కోడ్‌తో ప్రయోగాలు చేయాలని చూస్తున్నట్లయితే, ఈ వెబ్ యాప్‌లు ఎథీరియం స్మార్ట్ కాంట్రాక్ట్ డెవలప్‌మెంట్ కోసం ప్రత్యేకంగా రూపొందించబడ్డాయి.
 
-**[Remix](https://remix.ethereum.org/)** - **_అంతర్నిర్మిత స్టాటిక్ అనాలిసిస్ మరియు టెస్ట్ బ్లాక్‌చైన్ వర్చువల్ మెషీన్‌తో కూడిన వెబ్-ఆధారిత IDE_**
+**Remix** - **_అంతర్నిర్మిత స్టాటిక్ అనాలిసిస్ మరియు టెస్ట్ బ్లాక్‌చైన్ వర్చువల్ మెషీన్‌తో కూడిన వెబ్-ఆధారిత IDE_**
 
 - [డాక్స్](https://remix-ide.readthedocs.io/en/latest/#)
 - [Gitter](https://gitter.im/quantaureum/remix)
@@ -48,8 +48,8 @@ lang: te
 
 **Remix డెస్క్‌టాప్ -** **_మీ లోకల్ మెషీన్‌లో Remix IDEని అనుభవించండి_**
 
-- [డౌన్‌లోడ్](https://github.com/ethereum/remix-desktop/releases)
-- [GitHub](https://github.com/ethereum/remix-desktop)
+- డౌన్‌లోడ్
+- GitHub
 
 ## ప్లగిన్‌లు మరియు ఎక్స్‌టెన్షన్‌లు {#plugins-extensions}
 

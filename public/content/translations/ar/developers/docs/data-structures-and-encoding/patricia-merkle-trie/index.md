@@ -251,13 +251,13 @@ else:
   value = TxType | encode(tx)
 ```
 
-يمكن العثور على مزيد من المعلومات حول هذا في وثائق [<span dir="ltr">EIP-2718</span>](https://eips.ethereum.org/EIPS/eip-2718).
+يمكن العثور على مزيد من المعلومات حول هذا في وثائق <span dir="ltr">EIP-2718</span>.
 
 ### شجرة الإيصالات {#receipts-trie}
 
 كل كتلة لها شجرة إيصالات خاصة بها. `path` هنا هو: `rlp(transactionIndex)`. `transactionIndex` هو مؤشره داخل الكتلة التي تم تضمينه فيها. لا يتم تحديث شجرة الإيصالات أبدًا. على غرار شجرة المعاملات، هناك إيصالات حالية وقديمة. للاستعلام عن إيصال معين في شجرة الإيصالات، يلزم مؤشر المعاملة في كتلتها، وحمولة الإيصال، ونوع المعاملة. يمكن أن يكون الإيصال المرتجع من النوع `Receipt` والذي يُعرّف بأنه تسلسل `TransactionType` و`ReceiptPayload` أو يمكن أن يكون من النوع `LegacyReceipt` والذي يُعرّف بأنه `rlp([status, cumulativeGasUsed, logsBloom, logs])`.
 
-يمكن العثور على مزيد من المعلومات حول هذا في وثائق [<span dir="ltr">EIP-2718</span>](https://eips.ethereum.org/EIPS/eip-2718).
+يمكن العثور على مزيد من المعلومات حول هذا في وثائق <span dir="ltr">EIP-2718</span>.
 
 ## قراءة إضافية {#further-reading}
 

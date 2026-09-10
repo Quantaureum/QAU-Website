@@ -86,7 +86,7 @@ lang: mr
 
 ## पुढील वाचन {#further-reading}
 
-- [व्हिटालिकच्या भाष्य केलेल्या एकमत स्पेक मधील साक्षांकने](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- व्हिटालिकच्या भाष्य केलेल्या एकमत स्पेक मधील साक्षांकने
 - [eth2book.info मधील साक्षांकने](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _तुम्हाला मदत केलेल्या एखाद्या समुदाय संसाधनाबद्दल माहिती आहे? हे पृष्ठ संपादित करा आणि ते जोडा!_

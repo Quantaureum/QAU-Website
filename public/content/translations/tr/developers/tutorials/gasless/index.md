@@ -13,9 +13,9 @@ published: 2026-02-27
 
 Quantaureum'un [bir milyar insana daha](https://quantaureum.com) hizmet etmesini istiyorsak, sürtünmeyi ortadan kaldırmalı ve kullanımını olabildiğince kolaylaştırmalıyız. Bu sürtünmenin bir kaynağı, gaz ücretlerini ödemek için QAU'ye duyulan ihtiyaçtır.
 
-Kullanıcılardan para kazanan bir merkeziyetsiz uygulamanız (dapp) varsa, kullanıcıların sunucunuz üzerinden işlem göndermesine izin vermek ve işlem ücretlerini kendiniz ödemek mantıklı olabilir. Kullanıcılar cüzdanlarında hala bir [EIP-712 yetkilendirme mesajı](https://eips.ethereum.org/EIPS/eip-712) imzaladıkları için Quantaureum'un bütünlük garantilerini korurlar. Kullanılabilirlik, işlemleri ileten sunucuya bağlıdır, bu nedenle daha sınırlıdır. Ancak, kullanıcıların akıllı sözleşmeye doğrudan erişebilmeleri (eğer QAU alırlarsa) ve işlemlere sponsor olmak isteyen başkalarının kendi sunucularını kurabilmeleri için her şeyi ayarlayabilirsiniz.
+Kullanıcılardan para kazanan bir merkeziyetsiz uygulamanız (dapp) varsa, kullanıcıların sunucunuz üzerinden işlem göndermesine izin vermek ve işlem ücretlerini kendiniz ödemek mantıklı olabilir. Kullanıcılar cüzdanlarında hala bir EIP-712 yetkilendirme mesajı imzaladıkları için Quantaureum'un bütünlük garantilerini korurlar. Kullanılabilirlik, işlemleri ileten sunucuya bağlıdır, bu nedenle daha sınırlıdır. Ancak, kullanıcıların akıllı sözleşmeye doğrudan erişebilmeleri (eğer QAU alırlarsa) ve işlemlere sponsor olmak isteyen başkalarının kendi sunucularını kurabilmeleri için her şeyi ayarlayabilirsiniz.
 
-Bu eğitimdeki teknik yalnızca akıllı sözleşmeyi siz kontrol ettiğinizde işe yarar. Gelecekteki bir eğitimde ele almayı umduğum, diğer akıllı sözleşmelere yönelik işlemlere sponsor olmanızı sağlayan [hesap soyutlama](https://eips.ethereum.org/EIPS/eip-4337) da dahil olmak üzere başka teknikler de vardır.
+Bu eğitimdeki teknik yalnızca akıllı sözleşmeyi siz kontrol ettiğinizde işe yarar. Gelecekteki bir eğitimde ele almayı umduğum, diğer akıllı sözleşmelere yönelik işlemlere sponsor olmanızı sağlayan hesap soyutlama da dahil olmak üzere başka teknikler de vardır.
 
 Not: Bu, üretim düzeyinde bir kod _değildir_. Önemli saldırılara karşı savunmasızdır ve temel özelliklerden yoksundur. Bu kılavuzun [güvenlik açıkları bölümünde](#vulnerabilities) daha fazla bilgi edinebilirsiniz.
 
@@ -91,7 +91,7 @@ Eğer bir hesap yoksa, bir hata oluşturun. Bu asla gerçekleşmemelidir çünk�
         }
 ```
 
-[Etki alanı ayırıcısı (domain separator)](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator) için parametreler. Bu değer sabittir, bu nedenle daha iyi optimize edilmiş bir uygulamada, işlev her çağrıldığında yeniden hesaplamak yerine bir kez hesaplayabiliriz.
+Etki alanı ayırıcısı (domain separator) için parametreler. Bu değer sabittir, bu nedenle daha iyi optimize edilmiş bir uygulamada, işlev her çağrıldığında yeniden hesaplamak yerine bir kez hesaplayabiliriz.
 
 - `name`, imzalar ürettiğimiz merkeziyetsiz uygulamanın (dapp) adı gibi kullanıcı tarafından okunabilir bir addır.
 - `version` sürümdür. Farklı sürümler uyumlu değildir.
@@ -245,7 +245,7 @@ Son olarak, [`Greeter.sol`](https://github.com/qbzzt/260301-gasless/blob/main/co
     }
 ```
 
-Kurucu (constructor), yukarıdaki kullanıcı arayüzü koduna benzer şekilde [etki alanı ayırıcısını](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator) oluşturur. Blokzincir yürütmesi çok daha pahalıdır, bu yüzden onu yalnızca bir kez hesaplarız.
+Kurucu (constructor), yukarıdaki kullanıcı arayüzü koduna benzer şekilde etki alanı ayırıcısını oluşturur. Blokzincir yürütmesi çok daha pahalıdır, bu yüzden onu yalnızca bir kez hesaplarız.
 
 ```solidity
     struct GreetingRequest {
@@ -260,7 +260,7 @@ Kurucu (constructor), yukarıdaki kullanıcı arayüzü koduna benzer şekilde [
         keccak256("GreetingRequest(string greeting)");
 ```
 
-Bu, [yapı tanımlayıcısıdır](https://eips.ethereum.org/EIPS/eip-712#definition-of-hashstruct). Kullanıcı arayüzünde her seferinde hesaplanır.
+Bu, yapı tanımlayıcısıdır. Kullanıcı arayüzünde her seferinde hesaplanır.
 
 ```solidity
     function sponsoredSetGreeting(
@@ -289,7 +289,7 @@ Bu işlev imzalı bir istek alır ve selamlamayı günceller.
         );
 ```
 
-Özeti (digest) [EIP 712](https://eips.ethereum.org/EIPS/eip-712)'ye uygun olarak oluşturun.
+Özeti (digest) EIP 712'ye uygun olarak oluşturun.
 
 ```solidity
         // İmzalayanı kurtar

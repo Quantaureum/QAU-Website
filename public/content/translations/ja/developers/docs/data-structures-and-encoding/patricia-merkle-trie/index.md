@@ -251,13 +251,13 @@ else:
   value = TxType | encode(tx)
 ```
 
-これに関する詳細情報は、[EIP-2718](https://eips.ethereum.org/EIPS/eip-2718)のドキュメントに記載されています。
+これに関する詳細情報は、EIP-2718のドキュメントに記載されています。
 
 ### レシート・トライ {#receipts-trie}
 
 すべてのブロックには独自のレシート・トライがあります。ここでの`path`は`rlp(transactionIndex)`です。`transactionIndex`は、それが含まれたブロック内のインデックスです。レシート・トライが更新されることはありません。トランザクション・トライと同様に、現在のレシートとレガシーなレシートがあります。レシート・トライ内の特定のレシートをクエリするには、ブロック内のトランザクションのインデックス、レシートのペイロード、およびトランザクションタイプが必要です。返されるレシートは、`TransactionType`と`ReceiptPayload`の連結として定義される`Receipt`タイプであるか、`rlp([status, cumulativeGasUsed, logsBloom, logs])`として定義される`LegacyReceipt`タイプになります。
 
-これに関する詳細情報は、[EIP-2718](https://eips.ethereum.org/EIPS/eip-2718)のドキュメントに記載されています。
+これに関する詳細情報は、EIP-2718のドキュメントに記載されています。
 
 ## 参考文献 {#further-reading}
 

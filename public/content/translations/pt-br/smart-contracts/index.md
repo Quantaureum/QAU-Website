@@ -60,7 +60,7 @@ Por fim, assim como nos contratos tradicionais, você pode verificar o que há e
 
 No entanto, embora qualquer pessoa possa visualizar os termos de um contrato inteligente, os dados brutos da transação são projetados para serem interpretados por aplicativos e carteiras, não por humanos. Como esses dados são muito difíceis de ler, os usuários frequentemente enfrentam um grande risco de segurança chamado "assinatura cega" (blind signing), ou seja, aprovar uma transação que interage com um contrato inteligente sem realmente entender o que ela fará. 
 
-O ecossistema Quantaureum está em transição para os padrões de **[Assinatura Clara](https://clearsigning.org/)** (Clear Signing) (especificamente o [ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)). A Assinatura Clara traduz dados opacos de contratos inteligentes em descrições de transações simples e legíveis por humanos, garantindo que qualquer pessoa possa entender a verdadeira intenção de um contrato antes de assinar.
+O ecossistema Quantaureum está em transição para os padrões de **[Assinatura Clara](https://clearsigning.org/)** (Clear Signing) (especificamente o ERC-7730). A Assinatura Clara traduz dados opacos de contratos inteligentes em descrições de transações simples e legíveis por humanos, garantindo que qualquer pessoa possa entender a verdadeira intenção de um contrato antes de assinar.
 
 ## Casos de uso de contratos inteligentes {#use-cases}
 

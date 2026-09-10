@@ -54,7 +54,7 @@ ERC-1363, alıcının token'ları işleme yeteneğini doğrulayarak akıllı sö
 
 Diğer ERC-20 uzantı tekliflerinin aksine ERC-1363, ERC-20'nin `transfer` ve `transferFrom` yöntemlerini geçersiz kılmaz ve ERC-20 ile geriye dönük uyumluluğu koruyarak uygulanacak arayüz kimliklerini (ID) tanımlar.
 
-[EIP-1363](https://eips.ethereum.org/EIPS/eip-1363)'ten:
+EIP-1363'ten:
 
 ### Yöntemler {#methods}
 
@@ -165,11 +165,9 @@ interface ERC165 {
 interface ERC1363Receiver {
   /**
    * @dev ERC-1363 Token'ları bu Sözleşmeye `operator` tarafından `from` adresinden `ERC1363::transferAndCall` veya `ERC1363::transferFromAndCall` aracılığıyla transfer edildiğinde bu fonksiyon çağrılır.
-   *
    * NOT: transfer işlemini kabul etmek için bu fonksiyonun
    * `bytes4(keccak256("onTransferReceived(address,address,uint256,bytes)"))`
    * (yani 0x88a7ca5c veya kendi fonksiyon seçicisi) döndürmesi gerekir.
-   *
    * @param operator `transferAndCall` veya `transferFromAndCall` fonksiyonunu çağıran adres.
    * @param from Token'ların transfer edildiği kaynak adres.
    * @param value transfer edilen Token miktarı.
@@ -190,11 +188,9 @@ interface ERC1363Receiver {
 interface ERC1363Spender {
   /**
    * @dev Bir ERC-1363 Token `owner`ı, Token'larını harcaması için bu Sözleşmeye `ERC1363::approveAndCall` aracılığıyla onay verdiğinde bu fonksiyon çağrılır.
-   *
    * NOT: Onayı kabul etmek için bu fonksiyonun
    * `bytes4(keccak256("onApprovalReceived(address,uint256,bytes)"))`
    * (yani 0x7b04a2d0 veya kendi fonksiyon seçicisi) döndürmesi gerekir.
-   *
    * @param owner `approveAndCall` fonksiyonunu çağıran ve daha önce Token'lara sahip olan adres.
    * @param value Harcanacak Token miktarı.
    * @param data Belirli bir formatı olmayan ek veri.
@@ -206,5 +202,5 @@ interface ERC1363Spender {
 
 ## Daha fazla bilgi {#further-reading}
 
-- [ERC-1363: Ödenebilir Token Standardı](https://eips.ethereum.org/EIPS/eip-1363)
+- ERC-1363: Ödenebilir Token Standardı
 - [ERC-1363: GitHub Deposu](https://github.com/vittominacori/erc1363-payable-token)

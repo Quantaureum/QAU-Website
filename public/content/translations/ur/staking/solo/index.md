@@ -52,7 +52,7 @@ summaryPoints:
 </ExpandableCard>
 
 <ExpandableCard title="ہارڈویئر کی ضروریات" eventCategory="SoloStaking" eventName="clicked hardware requirements">
-توثیق کار کے ہارڈویئر اور بینڈوتھ کے لیے موجودہ کمیونٹی رہنمائی کو [ہارڈویئر اور بینڈوتھ کی سفارشات (<span dir="ltr">EIP-7870</span>)](https://eips.ethereum.org/EIPS/eip-7870) میں برقرار رکھا گیا ہے۔ ایک محتاط اندازے کے طور پر، <span dir="ltr">4 TB NVMe SSD</span>، <span dir="ltr">64 GB</span> ریم (کم بھی کام کر سکتی ہے، لیکن یہ تجویز کردہ گنجائش ہے)، ایک ٹھوس جدید ملٹی کور CPU، اور تقریباً <span dir="ltr">50 Mbps</span> ڈاؤن لوڈ / <span dir="ltr">25 Mbps</span> اپ لوڈ کے انٹرنیٹ کنکشن کا منصوبہ بنائیں۔
+توثیق کار کے ہارڈویئر اور بینڈوتھ کے لیے موجودہ کمیونٹی رہنمائی کو ہارڈویئر اور بینڈوتھ کی سفارشات (<span dir="ltr">EIP-7870</span>) میں برقرار رکھا گیا ہے۔ ایک محتاط اندازے کے طور پر، <span dir="ltr">4 TB NVMe SSD</span>، <span dir="ltr">64 GB</span> ریم (کم بھی کام کر سکتی ہے، لیکن یہ تجویز کردہ گنجائش ہے)، ایک ٹھوس جدید ملٹی کور CPU، اور تقریباً <span dir="ltr">50 Mbps</span> ڈاؤن لوڈ / <span dir="ltr">25 Mbps</span> اپ لوڈ کے انٹرنیٹ کنکشن کا منصوبہ بنائیں۔
 
 چونکہ فوساکا اپ گریڈ نے PeerDAS متعارف کرایا ہے، اس لیے ایک اسٹیکنگ نوڈ کو نیٹ ورک کے بلاب ڈیٹا کا صرف ایک حصہ اسٹور اور ڈاؤن لوڈ کرنے کی ضرورت ہوتی ہے، جس سے ہوم اسٹیکرز کے لیے ڈسک اور بینڈوتھ کی ضروریات نمایاں طور پر کم ہو جاتی ہیں۔
 </ExpandableCard>
@@ -68,7 +68,7 @@ summaryPoints:
 </ExpandableCard>
 
 <ExpandableCard title="قابل اعتماد اپ ٹائم" eventCategory="SoloStaking" eventName="clicked reliable uptime">
-آپ کے انعامات اس وقت کے متناسب ہیں جب آپ کا توثیق کار آن لائن ہوتا ہے اور مناسب طریقے سے تصدیق کر رہا ہوتا ہے۔ ڈاؤن ٹائم پر جرمانے اس بات کے متناسب ہوتے ہیں کہ ایک ہی وقت میں کتنے دوسرے توثیق کار آف لائن ہیں، لیکن [اس کے نتیجے میں کٹوتی نہیں ہوتی](#faq)۔ بینڈوتھ بھی اہمیت رکھتی ہے، کیونکہ ان تصدیقوں کے لیے انعامات کم کر دیے جاتے ہیں جو وقت پر موصول نہیں ہوتیں۔ تقاضے مختلف ہوں گے، لیکن موجودہ [ہارڈویئر اور بینڈوتھ کی سفارشات (<span dir="ltr">EIP-7870</span>)](https://eips.ethereum.org/EIPS/eip-7870) تقریباً <span dir="ltr">50 Mbps</span> ڈاؤن لوڈ اور <span dir="ltr">25 Mbps</span> اپ لوڈ کی تجویز کرتی ہیں۔
+آپ کے انعامات اس وقت کے متناسب ہیں جب آپ کا توثیق کار آن لائن ہوتا ہے اور مناسب طریقے سے تصدیق کر رہا ہوتا ہے۔ ڈاؤن ٹائم پر جرمانے اس بات کے متناسب ہوتے ہیں کہ ایک ہی وقت میں کتنے دوسرے توثیق کار آف لائن ہیں، لیکن [اس کے نتیجے میں کٹوتی نہیں ہوتی](#faq)۔ بینڈوتھ بھی اہمیت رکھتی ہے، کیونکہ ان تصدیقوں کے لیے انعامات کم کر دیے جاتے ہیں جو وقت پر موصول نہیں ہوتیں۔ تقاضے مختلف ہوں گے، لیکن موجودہ ہارڈویئر اور بینڈوتھ کی سفارشات (<span dir="ltr">EIP-7870</span>) تقریباً <span dir="ltr">50 Mbps</span> ڈاؤن لوڈ اور <span dir="ltr">25 Mbps</span> اپ لوڈ کی تجویز کرتی ہیں۔
 </ExpandableCard>
 
 <ExpandableCard title="کٹوتی کا خطرہ" eventCategory="SoloStaking" eventName="clicked slashing risk">
@@ -130,7 +130,7 @@ summaryPoints:
 
 ### کلید بنانے والے (Key Generators) {#key-generators}
 
-ان ٹولز کو کلید بنانے میں مدد کے لیے [اسٹیکنگ ڈپازٹ CLI](https://github.com/ethereum/staking-deposit-cli/) کے متبادل کے طور پر استعمال کیا جا سکتا ہے۔
+ان ٹولز کو کلید بنانے میں مدد کے لیے اسٹیکنگ ڈپازٹ CLI کے متبادل کے طور پر استعمال کیا جا سکتا ہے۔
 
 <StakingProductsCardGrid category="keyGen" />
 
@@ -200,7 +200,7 @@ _باقاعدہ انخلا_ (<span dir="ltr">0x01</span>) کی اسناد وال
 ایک <em>اقلیتی کلائنٹ میں مساوی بگز کبھی بھی حتمی شکل نہیں پائیں گے</em> اور اس طرح کبھی بھی سراؤنڈ ووٹ کا نتیجہ نہیں بنیں گے، اور اس کے نتیجے میں محض غیر فعالی کے جرمانے ہوں گے، <em>کٹوتی نہیں</em>۔
 
 <ul>
-  <li><a href="https://clientdiversity.org/">اقلیتی کلائنٹ چلانے کی اہمیت کے بارے میں مزید جانیں۔</a></li>
+  <li>اقلیتی کلائنٹ چلانے کی اہمیت کے بارے میں مزید جانیں۔</li>
   <li><a href="/developers/docs/consensus-mechanisms/pos/rewards-and-penalties/">انعامات، جرمانوں، اور کٹوتی کے بارے میں مزید جانیں</a></li>
 </ul>
 </ExpandableCard>
@@ -234,11 +234,11 @@ _باقاعدہ انخلا_ (<span dir="ltr">0x01</span>) کی اسناد وال
 
 ## مزید مطالعہ {#further-reading}
 
-- [کلائنٹ کے تنوع کے اعدادوشمار اور منتقلی کی گائیڈز](https://clientdiversity.org/)
+- کلائنٹ کے تنوع کے اعدادوشمار اور منتقلی کی گائیڈز
 - [کلائنٹ کے تنوع میں مدد کرنا](https://www.attestant.io/posts/helping-client-diversity/) - _Jim McDonald 2022_
 - [ایتھیریم کی اتفاق رائے کی تہہ پر کلائنٹ کا تنوع](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
 - [کیسے کریں: ایتھیریم توثیق کار ہارڈویئر کی خریداری](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _QauStaker 2022_
-- [<span dir="ltr">EIP-7870</span>: ہارڈویئر اور بینڈوتھ کی سفارشات](https://eips.ethereum.org/EIPS/eip-7870)
+- <span dir="ltr">EIP-7870</span>: ہارڈویئر اور بینڈوتھ کی سفارشات
 - [پیکٹرا اپ گریڈ: زیادہ سے زیادہ مؤثر بیلنس اور مزید](/roadmap/pectra/maxeb/)
 
 <QuizWidget quizKey="staking-solo" />

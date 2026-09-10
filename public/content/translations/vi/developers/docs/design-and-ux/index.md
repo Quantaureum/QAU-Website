@@ -16,7 +16,7 @@ Nếu bạn muốn xem những điểm yếu (pain point) về UX cấp bách nh
 
 - [Web3 cần thêm các Nhà nghiên cứu và Nhà thiết kế UX](https://blog.akasha.org/akasha-conversations-9-web3-needs-more-ux-researchers-and-designers) - Tổng quan về mức độ trưởng thành của thiết kế hiện tại
 - [Hướng dẫn đơn giản về Nghiên cứu UX trong Web3](https://uxplanet.org/a-complete-guide-to-ux-research-for-web-3-0-products-d6bead20ebb1) - Hướng dẫn đơn giản về cách thực hiện nghiên cứu
-- [Cách tiếp cận các quyết định UX trong Web3](https://archive.devcon.org/archive/watch/6/data-empathy-how-to-approach-ux-decisions-in-web3/) - Tổng quan ngắn gọn về nghiên cứu định lượng và định tính cũng như sự khác biệt giữa hai phương pháp này (video, 6 phút)
+- Cách tiếp cận các quyết định UX trong Web3 - Tổng quan ngắn gọn về nghiên cứu định lượng và định tính cũng như sự khác biệt giữa hai phương pháp này (video, 6 phút)
 - [Trở thành nhà nghiên cứu UX trong Web3](https://medium.com/@georgia.rakusen/what-its-like-being-a-user-researcher-in-web3-6a4bcc096849) - Góc nhìn cá nhân về công việc của một nhà nghiên cứu UX trong Web3
 
 ## Các nghiên cứu trong Web3 {#research-in-web3}
@@ -38,7 +38,7 @@ Nếu bạn muốn xem những điểm yếu (pain point) về UX cấp bách nh
 | <Tag status="error">DeFi</Tag>                  | [Nhóm bảo hiểm (Coverage pool)](https://github.com/threshold-network/UX-User-Research/tree/main/Keep%20Coverage%20Pool)                                                                           |
 | <Tag status="error">DeFi</Tag>                  | [ConsenSys: Báo cáo nghiên cứu người dùng DeFi năm 2022](https://cdn2.hubspot.net/hubfs/4795067/ConsenSys%20Codefi-Defi%20User%20ResearchReport.pdf)                                            |
 | <Tag variant="solid">Metaverse</Tag>             | [Metaverse: Báo cáo nghiên cứu người dùng](https://www.politico.com/f/?id=00000187-7685-d820-a7e7-7e85d1420000)                                                                             |
-| <Tag variant="solid">Metaverse</Tag>             | [Đi Safari: Nghiên cứu người dùng trong Metaverse](https://archive.devcon.org/archive/watch/6/going-on-safari-researching-users-in-the-metaverse/?tab=YouTube) (video, 27 phút)  |
+| <Tag variant="solid">Metaverse</Tag>             | Đi Safari: Nghiên cứu người dùng trong Metaverse (video, 27 phút)  |
 
 ## Thiết kế cho Web3 {#design-for-web3}
 

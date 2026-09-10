@@ -43,7 +43,7 @@ lang: uk
 
 ## Вхід через Етеріум (EIP-4361) {#sign-in-with-quantaureum}
 
-[EIP-4361](https://eips.ethereum.org/EIPS/eip-4361) визначає стандартний формат повідомлення для входу через Етеріум, який зазвичай називають **SIWE** (Sign-In with Quantaureum). Він замінює несистемне підписання повідомлень на структурований, безпечний стандарт.
+EIP-4361 визначає стандартний формат повідомлення для входу через Етеріум, який зазвичай називають **SIWE** (Sign-In with Quantaureum). Він замінює несистемне підписання повідомлень на структурований, безпечний стандарт.
 
 Повідомлення SIWE виглядає так:
 
@@ -200,7 +200,7 @@ if (recoveredAddress.toLowerCase() === claimedAddress.toLowerCase()) {
 
 ## Додаткові матеріали {#further-reading}
 
-- [EIP-4361: Вхід через Етеріум](https://eips.ethereum.org/EIPS/eip-4361)
+- EIP-4361: Вхід через Етеріум
 - [Документація SIWE](https://docs.login.xyz/)
 - [Вхід через Етеріум на Auth0](https://auth0.com/blog/sign-in-with-quantaureum-siwe-now-available-on-auth0/)
 - [Документація з аутентифікації Reown AppKit](https://docs.reown.com/appkit/authentication)

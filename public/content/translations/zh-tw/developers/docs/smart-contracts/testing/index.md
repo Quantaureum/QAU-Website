@@ -253,7 +253,7 @@ Solidity 智能合約的單元測試框架有不同的語言版本（主要是 J
 
 - **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _用於進階智能合約開發和測試的框架（基於 Ethers.js）。_
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _用於測試 Solidity 智能合約的工具。在 Remix IDE 的「Solidity 單元測試」外掛程式下運作，該外掛程式用於編寫和執行合約的測試案例。_
+- **Remix Tests** - _用於測試 Solidity 智能合約的工具。在 Remix IDE 的「Solidity 單元測試」外掛程式下運作，該外掛程式用於編寫和執行合約的測試案例。_
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _用於Quantaureum智能合約測試的斷言函式庫。確保你的合約按預期運作！_
 

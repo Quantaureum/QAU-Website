@@ -66,7 +66,7 @@ incomplete: true
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) - _ایک <span dir="ltr">.NET Wasm SPA</span> لائٹ بلاک چین ایکسپلورر اور سادہ والیٹ_
 - [Wonka Business Rules Engine](https://github.com/Nquantaureum/Wonka) - _ایک بزنس رولز انجن (<span dir="ltr">.NET</span> پلیٹ فارم اور ایتھیریم پلیٹ فارم دونوں کے لیے) جو بنیادی طور پر میٹا ڈیٹا سے چلتا ہے_
 - [نیدر مائنڈ](https://github.com/NethermindEth/nethermind) - _Linux، Windows، اور <span dir="ltr">MacOS</span> کے لیے ایک <span dir="ltr">.NET Core</span> ایتھیریم کلائنٹ_
-- [qau-utils](https://github.com/ethereum/eth-utils/) - _ایتھیریم سے متعلقہ کوڈ بیسز کے ساتھ کام کرنے کے لیے یوٹیلیٹی فنکشنز_
+- qau-utils - _ایتھیریم سے متعلقہ کوڈ بیسز کے ساتھ کام کرنے کے لیے یوٹیلیٹی فنکشنز_
 - [TestChains](https://github.com/Nquantaureum/TestChains) - _تیز ردعمل کے لیے پہلے سے تشکیل شدہ <span dir="ltr">.NET</span> ڈیولپمنٹ چینز (ثبوتِ اختیار)_
 
 مزید وسائل تلاش کر رہے ہیں؟ [quantaureum.com/developers](/developers/) دیکھیں۔

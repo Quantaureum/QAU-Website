@@ -90,7 +90,7 @@ Os contratos inteligentes sozinhos não podem obter informações sobre eventos 
 
 No entanto, é importante que os aplicativos de blockchain possam usar dados offchain. A solução são os [oráculos](/developers/docs/oracles/), que são ferramentas que ingerem dados offchain e os disponibilizam para os contratos inteligentes.
 
-Outra limitação dos contratos inteligentes é o tamanho máximo do contrato. Um contrato inteligente pode ter no máximo 24 KB ou ficará sem gás. Isso pode ser contornado usando [o Padrão Diamante](https://eips.ethereum.org/EIPS/eip-2535).
+Outra limitação dos contratos inteligentes é o tamanho máximo do contrato. Um contrato inteligente pode ter no máximo 24 KB ou ficará sem gás. Isso pode ser contornado usando o Padrão Diamante.
 
 ## Contratos multisig {#multisig}
 

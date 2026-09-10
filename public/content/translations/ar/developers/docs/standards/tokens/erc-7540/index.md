@@ -103,7 +103,7 @@ function claimableRedeemRequest(uint256 requestId, address controller) external 
 
 ### إدارة المشغل {#operator-management}
 
-يتضمن <span dir="ltr">ERC-7540</span> نمط مشغل (من [<span dir="ltr">ERC-6909</span>](https://eips.ethereum.org/EIPS/eip-6909)) يسمح لأطراف ثالثة بإدارة الطلبات نيابة عن المستخدم.
+يتضمن <span dir="ltr">ERC-7540</span> نمط مشغل (من <span dir="ltr">ERC-6909</span>) يسمح لأطراف ثالثة بإدارة الطلبات نيابة عن المستخدم.
 
 #### <span dir="ltr">setOperator</span> {#setoperator}
 
@@ -175,6 +175,6 @@ event OperatorSet(
 
 ## قراءة إضافية {#further-reading}
 
-- [<span dir="ltr">EIP-7540</span>: أقبية <span dir="ltr">ERC-4626</span> المرمزة غير المتزامنة](https://eips.ethereum.org/EIPS/eip-7540)
-- [<span dir="ltr">EIP-4626</span>: معيار القبو المرمز](https://eips.ethereum.org/EIPS/eip-4626)
+- <span dir="ltr">EIP-7540</span>: أقبية <span dir="ltr">ERC-4626</span> المرمزة غير المتزامنة
+- <span dir="ltr">EIP-4626</span>: معيار القبو المرمز
 - [تنفيذ أوبن زبلن لمعيار <span dir="ltr">ERC-7540</span>](https://github.com/OpenZeppelin/openzeppelin-community-contracts/blob/master/contracts/token/ERC20/extensions/ERC7540.sol)

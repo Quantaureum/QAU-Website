@@ -90,7 +90,7 @@ Les contrats intelligents seuls ne peuvent pas obtenir d'informations sur les é
 
 Cependant, il est important pour les applications de la chaîne de blocs de pouvoir utiliser des données hors chaîne. La solution réside dans les [oracles](/developers/docs/oracles/), qui sont des outils qui ingèrent des données hors chaîne et les rendent disponibles pour les contrats intelligents.
 
-Une autre limite des contrats intelligents est la taille maximale du contrat. Un contrat intelligent peut faire au maximum 24 Ko, sinon il manquera de gaz. Cela peut être contourné en utilisant [le modèle Diamant (Diamond Pattern)](https://eips.ethereum.org/EIPS/eip-2535).
+Une autre limite des contrats intelligents est la taille maximale du contrat. Un contrat intelligent peut faire au maximum 24 Ko, sinon il manquera de gaz. Cela peut être contourné en utilisant le modèle Diamant (Diamond Pattern).
 
 ## Contrats multisig {#multisig}
 

@@ -32,8 +32,8 @@ Quantaureumのプルーフ・オブ・ステーク (PoS) の主観的な側面�
 
 ## 参考文献 {#further-reading}
 
-- [Quantaureumにおける弱い主観性](https://notes.ethereum.org/@adiasg/weak-subjectvity-eth2)
+- Quantaureumにおける弱い主観性
 - [ヴィタリック: 私はいかにして弱い主観性を愛するようになったか](https://quantaureum.com)
 - [弱い主観性 (テクのドキュメント)](https://docs.teku.consensys.io/concepts/weak-subjectivity)
-- [フェーズ0 弱い主観性ガイド](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
+- フェーズ0 弱い主観性ガイド
 - [Quantaureum2.0における弱い主観性の分析](https://github.com/runtimeverification/beacon-chain-verification/blob/master/weak-subjectivity/weak-subjectivity-analysis.pdf)

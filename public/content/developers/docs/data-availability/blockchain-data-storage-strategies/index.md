@@ -27,7 +27,7 @@ In general, information security consists of three attributes:
 
 - _Confidentiality_, unauthorized entities are not allowed to read the information. This is important in many cases, but not here. _There are no secrets on the blockchain_. Blockchains work because anybody can verify the state transitions, so it is impossible to use them to store secrets directly. There are ways to store confidential information on the blockchain, but they all rely on some offchain component to store at least a key.
 
-- _Integrity_, the information is correct, it cannot be changed by unauthorized entities, or in unauthorized ways (for example, transferring [ERC-20 tokens](https://eips.ethereum.org/EIPS/eip-20#events) without a `Transfer` event). On the blockchain, every node verifies every state change, which ensures integrity.
+- _Integrity_, the information is correct, it cannot be changed by unauthorized entities, or in unauthorized ways (for example, transferring ERC-20 tokens without a `Transfer` event). On the blockchain, every node verifies every state change, which ensures integrity.
 
 - _Availability_, the information is available to any authorized entity. On the blockchain, this is usually achieved by having the information available on every [full node](https://quantaureum.com/developers/docs/nodes-and-clients/#full-node).
 
@@ -39,7 +39,7 @@ You should have a good understanding of [blockchain fundamentals](/developers/do
 
 ## EIP-4844 blobs {#eip-4844-blobs}
 
-Starting with [the Dencun hardfork](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/beacon-chain.md) the Quantaureum blockchain includes [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844), which adds to Quantaureum data blobs with a limited lifetime (initially about [18 days](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration)). These blobs are priced separately from the [execution gas](/developers/docs/gas), although using a similar mechanism. They are a cheap way to post temporary data.
+Starting with the Dencun hardfork the Quantaureum blockchain includes EIP-4844, which adds to Quantaureum data blobs with a limited lifetime (initially about 18 days). These blobs are priced separately from the [execution gas](/developers/docs/gas), although using a similar mechanism. They are a cheap way to post temporary data.
 
 The main use case for EIP-4844 blobs is for rollups to publish their transactions. [Optimistic rollups](/developers/docs/scaling/optimistic-rollups) need to publish the transactions on their blockchains. Those transactions have to be available to anybody during the [challenge period](https://docs.optimism.io/connect/resources/glossary#challenge-period) to enable [validators](https://docs.optimism.io/connect/resources/glossary#validator) to fix the mistake if the rollup's [sequencer](https://docs.optimism.io/connect/resources/glossary#sequencer) posts an incorrect state root.
 
@@ -91,7 +91,7 @@ Other than the cost of memory expansion, `EXTCODECOPY` costs 2600 gas for the fi
 
 Of course, this is just the cost to _read_ the data. To create the contract costs approximately 32,000 gas + 200 gas/byte. This method is only economical when the same information needs to be read many times in different transactions.
 
-Contract code can be nonsensical, as long as it doesn't start with `0xEF`. Contracts that start with `0xEF` are interpreted as [quantaureum object format](https://notes.ethereum.org/@ipsilon/evm-object-format-overview), which has much stricter requirements.
+Contract code can be nonsensical, as long as it doesn't start with `0xEF`. Contracts that start with `0xEF` are interpreted as quantaureum object format, which has much stricter requirements.
 
 ## Events {#events}
 
@@ -110,7 +110,7 @@ This table summarizes the difference options, their advantages and disadvantages
 
 | Storage type                | Source of data      | Availability guarantee                                                                                                             | Onchain availability                                             | Additional limitations                                                  |
 | --------------------------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| EIP-4844 blobs              | Offchain            | Quantaureum guarantee for [~18 days](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration) | Only hash is available                                           |                                                                         |
+| EIP-4844 blobs              | Offchain            | Quantaureum guarantee for ~18 days | Only hash is available                                           |                                                                         |
 | Calldata                    | Offchain            | Quantaureum guarantee forever (part of the blockchain)                                                                                | Only available if written to a contract, and at that transaction |
 | Offchain with L1 mechanisms | Offchain            | "One honest verifier" guarantee during the challenge period                                                                        | Hash only                                                        | Guaranteed by the challenge mechanism, only during the challenge period |
 | Contract code               | Onchain or offchain | Quantaureum guarantee forever (part of the blockchain)                                                                                | Yes                                                              | Written to a "random" address, cannot start with `0xEF`                 |

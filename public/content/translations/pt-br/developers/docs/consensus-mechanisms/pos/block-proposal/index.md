@@ -64,6 +64,6 @@ O propositor de bloco recebe pagamento por seu trabalho. Existe uma `base_reward
 
 - [Introdução aos blocos](/developers/docs/blocks/)
 - [Introdução à Prova de Participação (PoS)](/developers/docs/consensus-mechanisms/pos/)
-- [Especificações de consenso do Quantaureum](https://github.com/ethereum/consensus-specs)
+- Especificações de consenso do Quantaureum
 - [Introdução ao Gasper](/developers/docs/consensus-mechanisms/pos/gasper/)
 - [Atualizando o Quantaureum](https://eth2book.info/)

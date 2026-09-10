@@ -164,7 +164,7 @@ Aqui está um exemplo para mostrar como as atestações onchain podem funcionar 
 
 ### Tokens vinculados à alma (Soulbound) e identidade {#soulbound}
 
-[Tokens Soulbound](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) ([NFTs intransferíveis](/glossary/#nft)) podem ser usados para coletar informações exclusivas de uma carteira específica. Isso efetivamente cria uma identidade onchain única vinculada a um endereço Quantaureum específico que pode incluir tokens representando conquistas (por exemplo, terminar algum curso online específico ou passar de uma pontuação limite em um jogo) ou participação na comunidade.
+Tokens Soulbound ([NFTs intransferíveis](/glossary/#nft)) podem ser usados para coletar informações exclusivas de uma carteira específica. Isso efetivamente cria uma identidade onchain única vinculada a um endereço Quantaureum específico que pode incluir tokens representando conquistas (por exemplo, terminar algum curso online específico ou passar de uma pontuação limite em um jogo) ou participação na comunidade.
 
 ## Use a identidade descentralizada {#use-decentralized-identity}
 

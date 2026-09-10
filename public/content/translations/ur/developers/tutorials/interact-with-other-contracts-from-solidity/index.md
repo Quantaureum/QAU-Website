@@ -8,11 +8,11 @@ breadcrumb: "کنٹریکٹ کے تعاملات"
 lang: ur
 published: 2020-04-05
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/interact-with-other-contracts-from-solidity/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-پچھلے ٹیوٹوریلز میں ہم نے بہت کچھ سیکھا کہ [اپنا پہلا سمارٹ کنٹریکٹ کیسے تعینات کریں](/developers/tutorials/deploying-your-first-smart-contract/) اور اس میں کچھ خصوصیات کیسے شامل کریں جیسے [موڈیفائرز کے ساتھ رسائی کو کنٹرول کرنا](https://ethereumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) یا [Solidity میں ایرر ہینڈلنگ](https://ethereumdev.io/handle-errors-in-solidity-with-require-and-revert/)۔ اس ٹیوٹوریل میں ہم سیکھیں گے کہ موجودہ کنٹریکٹ سے سمارٹ کنٹریکٹ کو کیسے تعینات کیا جائے اور اس کے ساتھ کیسے تعامل کیا جائے۔
+پچھلے ٹیوٹوریلز میں ہم نے بہت کچھ سیکھا کہ [اپنا پہلا سمارٹ کنٹریکٹ کیسے تعینات کریں](/developers/tutorials/deploying-your-first-smart-contract/) اور اس میں کچھ خصوصیات کیسے شامل کریں جیسے موڈیفائرز کے ساتھ رسائی کو کنٹرول کرنا یا Solidity میں ایرر ہینڈلنگ۔ اس ٹیوٹوریل میں ہم سیکھیں گے کہ موجودہ کنٹریکٹ سے سمارٹ کنٹریکٹ کو کیسے تعینات کیا جائے اور اس کے ساتھ کیسے تعامل کیا جائے۔
 
 ہم ایک ایسا کنٹریکٹ بنائیں گے جو کسی کو بھی اس کے لیے ایک فیکٹری بنا کر اپنا `Counter` سمارٹ کنٹریکٹ رکھنے کے قابل بناتا ہے، اس کا نام `CounterFactory` ہوگا۔ سب سے پہلے یہاں ہمارے ابتدائی `Counter` سمارٹ کنٹریکٹ کا کوڈ ہے:
 
@@ -99,7 +99,7 @@ function increment() public {
   }
 ```
 
-نوٹ کریں کہ اگر بہت زیادہ بار کال کیا جائے تو ہمارا کاؤنٹر ممکنہ طور پر اوور فلو کا شکار ہو سکتا ہے۔ اس ممکنہ صورتحال سے بچنے کے لیے آپ کو زیادہ سے زیادہ [SafeMath لائبریری](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/) کا استعمال کرنا چاہیے۔
+نوٹ کریں کہ اگر بہت زیادہ بار کال کیا جائے تو ہمارا کاؤنٹر ممکنہ طور پر اوور فلو کا شکار ہو سکتا ہے۔ اس ممکنہ صورتحال سے بچنے کے لیے آپ کو زیادہ سے زیادہ SafeMath لائبریری کا استعمال کرنا چاہیے۔
 
 ہمارے کنٹریکٹ کو تعینات کرنے کے لیے، آپ کو `CounterFactory` اور `Counter` دونوں کا کوڈ فراہم کرنے کی ضرورت ہوگی۔ مثال کے طور پر Remix میں تعینات کرتے وقت آپ کو CounterFactory کو منتخب کرنے کی ضرورت ہوگی۔
 

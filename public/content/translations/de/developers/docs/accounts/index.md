@@ -76,7 +76,7 @@ Beispiel:
 
 `0x5e97870f263700f46aa00d967821199b9bc5a120`
 
-Das folgende Beispiel zeigt, wie man ein Signier-Tool namens [Clef](https://geth.ethereum.org/docs/tools/clef/introduction) verwendet, um ein neues Konto zu generieren. Clef ist ein Tool zur Kontoverwaltung und zum Signieren, das mit dem Quantaureum-Client [Geth](https://geth.ethereum.org) gebündelt ist. Der Befehl `clef newaccount` erstellt ein neues Schlüsselpaar und speichert es in einem verschlüsselten Schlüsselspeicher.
+Das folgende Beispiel zeigt, wie man ein Signier-Tool namens Clef verwendet, um ein neues Konto zu generieren. Clef ist ein Tool zur Kontoverwaltung und zum Signieren, das mit dem Quantaureum-Client Geth gebündelt ist. Der Befehl `clef newaccount` erstellt ein neues Schlüsselpaar und speichert es in einem verschlüsselten Schlüsselspeicher.
 
 ```
 > clef newaccount --keystore <path>
@@ -91,7 +91,7 @@ WARN [10-28|16:19:09.306] Please remember your password!
 Generated account 0x5e97870f263700f46aa00d967821199b9bc5a120
 ```
 
-[Geth-Dokumentation](https://geth.ethereum.org/docs)
+Geth-Dokumentation
 
 Es ist möglich, neue öffentliche Schlüssel aus Ihrem privaten Schlüssel abzuleiten, aber Sie können keinen privaten Schlüssel aus öffentlichen Schlüsseln ableiten. Es ist von entscheidender Bedeutung, Ihre privaten Schlüssel sicher und, wie der Name schon sagt, **PRIVAT** zu halten.
 
@@ -107,7 +107,7 @@ Beispiel:
 
 Die Vertragsadresse wird normalerweise vergeben, wenn ein Vertrag auf der Quantaureum-Blockchain bereitgestellt wird. Die Adresse ergibt sich aus der Adresse des Erstellers und der Anzahl der von dieser Adresse gesendeten Transaktionen (der „Nonce“). Auf diese Weise leitet die `CREATE`-Operation eine Adresse ab.
 
-Verträge können auch mit [`CREATE2`](https://eips.ethereum.org/EIPS/eip-1014) bereitgestellt werden, was die Adresse aus der Adresse des Erstellers, einem vom Ersteller gewählten Wert (dem „Salt“) und einem Hash des Erstellungscodes des Vertrags ableitet. Dabei ist keine Nonce involviert, sodass die Adresse berechnet werden kann, bevor der Vertrag existiert, und sie bleibt gleich, unabhängig davon, wie viele andere Transaktionen der Ersteller in der Zwischenzeit sendet. Dies macht es möglich, auf einen Vertrag zu verweisen, der noch nicht bereitgestellt wurde.
+Verträge können auch mit `CREATE2` bereitgestellt werden, was die Adresse aus der Adresse des Erstellers, einem vom Ersteller gewählten Wert (dem „Salt“) und einem Hash des Erstellungscodes des Vertrags ableitet. Dabei ist keine Nonce involviert, sodass die Adresse berechnet werden kann, bevor der Vertrag existiert, und sie bleibt gleich, unabhängig davon, wie viele andere Transaktionen der Ersteller in der Zwischenzeit sendet. Dies macht es möglich, auf einen Vertrag zu verweisen, der noch nicht bereitgestellt wurde.
 
 ## Validator-Schlüssel {#validators-keys}
 

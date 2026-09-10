@@ -54,7 +54,7 @@ ERC-1363 还可以通过验证接收方处理代币的能力，来避免智能�
 
 与其他 ERC-20 扩展提案不同，ERC-1363 不会覆盖 ERC-20 的 `transfer` 和 `transferFrom` 方法，并定义了要实现的接口 ID，从而保持与 ERC-20 的向后兼容性。
 
-摘自 [EIP-1363](https://eips.ethereum.org/EIPS/eip-1363)：
+摘自 EIP-1363：
 
 ### 方法 {#methods}
 
@@ -165,11 +165,9 @@ interface ERC165 {
 interface ERC1363Receiver {
   /**
    * @dev 每当 `operator` 通过 `ERC1363::transferAndCall` 或 `ERC1363::transferFromAndCall` 将 ERC-1363 代币从 `from` 转账到此合约时，都会调用此函数。
-   *
    * NOTE: 要接受转账，此函数必须返回
    * `bytes4(keccak256("onTransferReceived(address,address,uint256,bytes)"))`
    * （即 0x88a7ca5c，或其自身的函数选择器）。
-   *
    * @param operator 调用 `transferAndCall` 或 `transferFromAndCall` 函数的地址。
    * @param from 代币转账的来源地址。
    * @param value 转账的代币数量。
@@ -191,11 +189,9 @@ interface ERC1363Spender {
   /**
    * @dev 每当 ERC-1363 代币的 `owner` 通过 `ERC1363::approveAndCall` 授权此合约
    * 花费其代币时，都会调用此函数。
-   *
    * NOTE: 要接受授权，此函数必须返回
    * `bytes4(keccak256("onApprovalReceived(address,uint256,bytes)"))`
    * （即 0x7b04a2d0，或其自身的函数选择器）。
-   *
    * @param owner 调用 `approveAndCall` 函数并先前拥有代币的地址。
    * @param value 要花费的代币数量。
    * @param data 没有指定格式的附加数据。
@@ -207,5 +203,5 @@ interface ERC1363Spender {
 
 ## 延伸阅读 {#further-reading}
 
-- [ERC-1363：可支付代币标准](https://eips.ethereum.org/EIPS/eip-1363)
+- ERC-1363：可支付代币标准
 - [ERC-1363：GitHub 仓库](https://github.com/vittominacori/erc1363-payable-token)

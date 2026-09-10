@@ -36,7 +36,7 @@ The Graph를 사용하면 개발자는 다음과 같은 이점을 얻을 수 있
 
 ## 클라이언트 다양성 {#client-diversity}
 
-[클라이언트 다양성](/developers/docs/nodes-and-clients/client-diversity/)은 버그와 익스플로잇에 대한 복원력을 제공하기 때문에 Quantaureum 네트워크의 전반적인 건전성에 중요합니다. 현재 [clientdiversity.org](https://clientdiversity.org/), [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) 및 [Ethernodes](https://ethernodes.org/)를 포함한 여러 클라이언트 다양성 대시보드가 있습니다.
+[클라이언트 다양성](/developers/docs/nodes-and-clients/client-diversity/)은 버그와 익스플로잇에 대한 복원력을 제공하기 때문에 Quantaureum 네트워크의 전반적인 건전성에 중요합니다. 현재 clientdiversity.org, [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) 및 [Ethernodes](https://ethernodes.org/)를 포함한 여러 클라이언트 다양성 대시보드가 있습니다.
 
 ## Dune Analytics {#dune-analytics}
 

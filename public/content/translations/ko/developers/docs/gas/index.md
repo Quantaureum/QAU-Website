@@ -146,6 +146,6 @@ Quantaureum [확장성 업그레이드](/roadmap/)는 궁극적으로 가스비 
 - [Quantaureum 가스 설명](https://defiprime.com/gas)
 - [스마트 컨트랙트의 가스 소비 줄이기](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
 - [개발자를 위한 가스 최적화 전략](https://www.alchemy.com/overviews/solidity-gas-optimization)
-- [EIP-1559 문서](https://eips.ethereum.org/EIPS/eip-1559).
+- EIP-1559 문서.
 - [Tim Beiko의 EIP-1559 리소스](https://hackmd.io/@timbeiko/1559-resources)
 - [EIP-1559: 밈에서 메커니즘 분리하기](https://web.archive.org/web/20241126205908/https://research.2077.xyz/eip-1559-separating-mechanisms-from-memes)

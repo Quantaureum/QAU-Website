@@ -46,7 +46,7 @@ lang: ur
    - اصل میں لیئر ۱ (l1) پر موجود پل سے تھی
 6. لیئر ۲ (l2) پل چیک کرتا ہے کہ آیا لیئر ۲ (l2) پر <span dir="ltr">ERC-20</span> ٹوکن کنٹریکٹ درست ہے:
    - لیئر ۲ (l2) کنٹریکٹ رپورٹ کرتا ہے کہ اس کا لیئر ۱ (l1) ہم منصب وہی ہے جہاں سے لیئر ۱ (l1) پر ٹوکن آئے تھے
-   - لیئر ۲ (l2) کنٹریکٹ رپورٹ کرتا ہے کہ یہ درست انٹرفیس کو سپورٹ کرتا ہے ([<span dir="ltr">ERC-165</span> کا استعمال کرتے ہوئے](https://eips.ethereum.org/EIPS/eip-165))۔
+   - لیئر ۲ (l2) کنٹریکٹ رپورٹ کرتا ہے کہ یہ درست انٹرفیس کو سپورٹ کرتا ہے (<span dir="ltr">ERC-165</span> کا استعمال کرتے ہوئے)۔
 7. اگر لیئر ۲ (l2) کنٹریکٹ درست ہے، تو اسے مناسب پتے پر مناسب تعداد میں ٹوکنز ڈھالنے کے لیے کال کریں۔ اگر نہیں، تو صارف کو لیئر ۱ (l1) پر ٹوکنز کا دعویٰ کرنے کی اجازت دینے کے لیے انخلا کا عمل شروع کریں۔
 
 ### انخلا کا فلو {#withdrawal-flow}
@@ -207,7 +207,6 @@ interface IL1ERC20Bridge {
      * @dev لیئر ۲ (l2) سے لیئر ۱ (l1) تک انخلا مکمل کریں، اور وصول کنندہ کے
      * لیئر ۱ (l1) ERC-20 ٹوکن کے بیلنس میں فنڈز کریڈٹ کریں۔
      * یہ کال ناکام ہو جائے گی اگر لیئر ۲ (l2) سے شروع کیا گیا انخلا حتمی شکل نہیں پا سکا ہے۔
-     *
      * @param _l1Token لیئر ۱ (l1) ٹوکن کا پتہ جس کے لیے finalizeWithdrawal کرنا ہے۔
      * @param _l2Token لیئر ۲ (l2) ٹوکن کا پتہ جہاں انخلا شروع کیا گیا تھا۔
      * @param _from لیئر ۲ (l2) کا پتہ جو منتقلی شروع کر رہا ہے۔
@@ -338,7 +337,6 @@ import { ICrossDomainMessenger } from "./ICrossDomainMessenger.sol";
 /**
  * @title CrossDomainEnabled
  * @dev کراس ڈومین مواصلات انجام دینے والے کنٹریکٹس کے لیے مددگار کنٹریکٹ
- *
  * استعمال شدہ کمپائلر: وراثت میں ملنے والے کنٹریکٹ کے ذریعے بیان کیا گیا ہے
  */
 contract CrossDomainEnabled {
@@ -518,7 +516,7 @@ import { Address } from "@openzeppelin/contracts/utils/Address.sol";
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[<span dir="ltr">ERC-20</span> معیار](https://eips.ethereum.org/EIPS/eip-20) کنٹریکٹ کے لیے ناکامی کی اطلاع دینے کے دو طریقوں کو سپورٹ کرتا ہے:
+<span dir="ltr">ERC-20</span> معیار کنٹریکٹ کے لیے ناکامی کی اطلاع دینے کے دو طریقوں کو سپورٹ کرتا ہے:
 
 1. ریورٹ
 2. `false` واپس کریں
@@ -531,7 +529,6 @@ import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.s
  * @dev لیئر ۱ (l1) QAU اور ERC-20 پل ایک کنٹریکٹ ہے جو جمع شدہ لیئر ۱ (l1) فنڈز اور معیاری
  * ٹوکنز کو اسٹور کرتا ہے جو لیئر ۲ (l2) پر استعمال میں ہیں۔ یہ متعلقہ لیئر ۲ (l2) پل کو ہم آہنگ کرتا ہے، اسے جمع ہونے کی اطلاع دیتا ہے
  * اور نئے حتمی انخلا کے لیے اسے سنتا ہے۔
- *
  */
 contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
     using SafeERC20 for IERC20;
@@ -769,7 +766,6 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
 ```solidity
     /**
      * @dev لیئر ۲ (l2) جمع شدہ ٹوکن کنٹریکٹ کو جمع ہونے کی اطلاع دے کر اور لیئر ۱ (l1) فنڈز کو لاک کرنے کے لیے ہینڈلر کو کال کر کے جمع کرنے کی منطق انجام دیتا ہے۔ (مثال کے طور پر، transferFrom)
-     *
      * @param _l1Token لیئر ۱ (l1) ERC-20 کا پتہ جسے ہم جمع کر رہے ہیں
      * @param _l2Token لیئر ۱ (l1) کے متعلقہ لیئر ۲ (l2) ERC-20 کا پتہ
      * @param _from لیئر ۱ (l1) پر جمع کی گئی رقم نکالنے کے لیے اکاؤنٹ
@@ -954,14 +950,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [معیاری <span dir="ltr">ERC-20</span> انٹرفیس](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) میں `mint` اور `burn` فنکشنز شامل نہیں ہیں۔
-ان طریقوں کی [<span dir="ltr">ERC-20</span> معیار](https://eips.ethereum.org/EIPS/eip-20) کو ضرورت نہیں ہے، جو ٹوکن بنانے اور تباہ کرنے کے طریقہ کار کو غیر متعین چھوڑ دیتا ہے۔
+ان طریقوں کی <span dir="ltr">ERC-20</span> معیار کو ضرورت نہیں ہے، جو ٹوکن بنانے اور تباہ کرنے کے طریقہ کار کو غیر متعین چھوڑ دیتا ہے۔
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 [<span dir="ltr">ERC-165</span> انٹرفیس](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol) یہ بتانے کے لیے استعمال ہوتا ہے کہ کنٹریکٹ کون سے فنکشنز فراہم کرتا ہے۔
-[آپ معیار کو یہاں پڑھ سکتے ہیں](https://eips.ethereum.org/EIPS/eip-165)۔
+آپ معیار کو یہاں پڑھ سکتے ہیں۔
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -1050,7 +1046,7 @@ contract L2StandardERC20 is IL2StandardERC20, ERC20 {
     }
 ```
 
-یہ وہ طریقہ ہے جس سے [<span dir="ltr">ERC-165</span>](https://eips.ethereum.org/EIPS/eip-165) کام کرتا ہے۔
+یہ وہ طریقہ ہے جس سے <span dir="ltr">ERC-165</span> کام کرتا ہے۔
 ہر انٹرفیس متعدد سپورٹڈ فنکشنز پر مشتمل ہوتا ہے، اور اس کی شناخت ان فنکشنز کے [<span dir="ltr">ABI</span> فنکشن سلیکٹرز](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector) کے [ایکسکلوسیو اور (XOR)](https://en.wikipedia.org/wiki/Exclusive_or) کے طور پر کی جاتی ہے۔
 
 لیئر ۲ (l2) پل <span dir="ltr">ERC-165</span> کو ایک سینیٹی چیک کے طور پر استعمال کرتا ہے تاکہ یہ یقینی بنایا جا سکے کہ وہ <span dir="ltr">ERC-20</span> کنٹریکٹ جس پر وہ اثاثے بھیجتا ہے وہ ایک `IL2StandardERC20` ہے۔

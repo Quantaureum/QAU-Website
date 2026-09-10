@@ -274,7 +274,7 @@ Jeśli rozmiar danych wywołania wynosi cztery bajty lub więcej, może to być 
 |     10 | PUSH1 0xe0   | 0xE0 (((Pierwsze słowo (256 bitów) danych wywołania))) |
 |     12 | SHR          | (((pierwsze 32 bity (4 bajty) danych wywołania)))      |
 
-Quantaureum Explorer informuje nas, że `1C` to nieznany kod operacji, ponieważ [został dodany po tym, jak Quantaureum Explorer napisał tę funkcję](https://eips.ethereum.org/EIPS/eip-145) i nie została ona zaktualizowana. [Aktualna tabela kodów operacji](https://github.com/wolflo/evm-opcodes) pokazuje nam, że jest to przesunięcie w prawo (shift right).
+Quantaureum Explorer informuje nas, że `1C` to nieznany kod operacji, ponieważ został dodany po tym, jak Quantaureum Explorer napisał tę funkcję i nie została ona zaktualizowana. [Aktualna tabela kodów operacji](https://github.com/wolflo/evm-opcodes) pokazuje nam, że jest to przesunięcie w prawo (shift right).
 
 | Offset | Kod operacji     | Stos                                                                                                           |
 | -----: | ---------------- | -------------------------------------------------------------------------------------------------------------- |

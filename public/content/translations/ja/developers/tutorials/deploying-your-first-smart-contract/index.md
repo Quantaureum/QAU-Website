@@ -8,7 +8,7 @@ breadcrumb: "初めてのコントラクトのデプロイ"
 lang: ja
 published: 2020-04-03
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -18,7 +18,7 @@ Quantaureumブロックチェーン上で初めての[スマート・コント�
 
 ## コントラクトの作成 {#writing-our-contract}
 
-最初のステップは、[Remixにアクセス](https://remix.ethereum.org/)して新しいファイルを作成することです。Remixインターフェースの左上部分で新しいファイルを追加し、任意のファイル名を入力します。
+最初のステップは、Remixにアクセスして新しいファイルを作成することです。Remixインターフェースの左上部分で新しいファイルを追加し、任意のファイル名を入力します。
 
 ![Adding a new file in the Remix interface](./remix.png)
 

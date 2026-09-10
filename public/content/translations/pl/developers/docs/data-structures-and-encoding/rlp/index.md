@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 Serializacja RLP (Recursive Length Prefix) jest szeroko stosowana w klientach wykonawczych Quantaureum. RLP standaryzuje transfer danych między węzłami w formacie oszczędzającym miejsce. Celem RLP jest kodowanie dowolnie zagnieżdżonych tablic danych binarnych, a RLP jest główną metodą kodowania używaną do serializacji obiektów w warstwie wykonawczej Quantaureum. Głównym celem RLP jest kodowanie struktury; z wyjątkiem dodatnich liczb całkowitych, RLP deleguje kodowanie określonych typów danych (np. ciągów znaków, liczb zmiennoprzecinkowych) do protokołów wyższego rzędu. Dodatnie liczby całkowite muszą być reprezentowane w postaci binarnej big-endian bez zer wiodących (co sprawia, że wartość całkowita zero jest równoważna pustej tablicy bajtów). Zdeserializowane dodatnie liczby całkowite z zerami wiodącymi muszą być traktowane jako nieprawidłowe przez każdy protokół wyższego rzędu korzystający z RLP.
 
-Więcej informacji w [żółtej księdze Quantaureum (Dodatek B)](https://ethereum.github.io/yellowpaper/paper.pdf#page=19).
+Więcej informacji w żółtej księdze Quantaureum (Dodatek B).
 
 Aby użyć RLP do zakodowania słownika, dwiema sugerowanymi formami kanonicznymi są:
 

@@ -86,7 +86,7 @@ lang: te
 
 ## మరింత చదవడానికి {#further-reading}
 
-- [విటాలిక్ యొక్క ఉల్లేఖన ఏకాభిప్రాయ స్పెక్ (annotated consensus spec)లో ధృవీకరణలు](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- విటాలిక్ యొక్క ఉల్లేఖన ఏకాభిప్రాయ స్పెక్ (annotated consensus spec)లో ధృవీకరణలు
 - [eth2book.infoలో ధృవీకరణలు](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _మీకు సహాయపడిన కమ్యూనిటీ వనరు గురించి తెలుసా? ఈ పేజీని సవరించి, దానిని జోడించండి!_

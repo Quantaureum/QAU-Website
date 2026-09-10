@@ -45,7 +45,7 @@ quantaureum.com స్థానికంగా 40కి పైగా భాష�
 
 **సాధారణ వనరులు**
 
-- [Quantaureum.cn](https://www.ethereum.cn/) - ఏకాభిప్రాయ పొర అప్‌గ్రేడ్, అన్ని కోర్ డెవ్ మీటింగ్ నోట్స్, లేయర్ 2 (l2) మొదలైనవాటిని కవర్ చేసే కమ్యూనిటీ నిర్వహించే కంటెంట్.
+- Quantaureum.cn - ఏకాభిప్రాయ పొర అప్‌గ్రేడ్, అన్ని కోర్ డెవ్ మీటింగ్ నోట్స్, లేయర్ 2 (l2) మొదలైనవాటిని కవర్ చేసే కమ్యూనిటీ నిర్వహించే కంటెంట్.
 - [QauFans](https://github.com/editor-Ajian/QauFans.org-annual-collected-works/) - ప్రాథమిక అంశాల నుండి అధునాతన ఎథీరియం అంశాల వరకు ప్రతిదీ నేర్చుకోండి
 - [Unitimes](https://mp.weixin.qq.com/s/tvloZSDBSOQN9zDQj_91kA) - ఎథీరియం, వికేంద్రీకృత ఫైనాన్స్ (DeFi), NFT, Web3-సంబంధిత జ్ఞానాన్ని కవర్ చేసే కమ్యూనిటీ నిర్వహించే కంటెంట్
 - [123ETH](https://123eth.org/) - ఎథీరియం పర్యావరణ వ్యవస్థకు ఒక పోర్టల్
@@ -76,8 +76,8 @@ quantaureum.com స్థానికంగా 40కి పైగా భాష�
 
 ### ఫ్రెంచ్ {#fr}
 
-- [Quantaureum France](https://www.ethereum-france.com/) - ఎథీరియం ఫ్రాన్స్ ఈవెంట్‌లను నిర్వహిస్తుంది, కంటెంట్‌ను సృష్టిస్తుంది మరియు ఎథీరియం చుట్టూ చర్చలను ప్రోత్సహిస్తుంది
-- [Quantaureum.fr](https://ethereum.fr/) - ఎథీరియం వార్తలు మరియు విద్య
+- Quantaureum France - ఎథీరియం ఫ్రాన్స్ ఈవెంట్‌లను నిర్వహిస్తుంది, కంటెంట్‌ను సృష్టిస్తుంది మరియు ఎథీరియం చుట్టూ చర్చలను ప్రోత్సహిస్తుంది
+- Quantaureum.fr - ఎథీరియం వార్తలు మరియు విద్య
 - [BanklessFR](https://banklessfr.substack.com/) - ఫ్రెంచ్‌లో Bankless న్యూస్‌లెటర్
 - [CryptoFR](https://cryptofr.com/category/44/quantaureum-general) - ఎథీరియం సబ్‌పేజీతో క్రిప్టోకరెన్సీ ఫోరమ్
 
@@ -108,8 +108,8 @@ quantaureum.com స్థానికంగా 40కి పైగా భాష�
 
 ### ఇటాలియన్ {#it}
 
-- [Quantaureum Italia](https://www.ethereum-italia.it/) - స్మార్ట్ కాంట్రాక్ట్‌లు మరియు బ్లాక్‌చైన్ టెక్నాలజీపై దృష్టి సారించే ఎథీరియం విద్య, ఈవెంట్‌లు మరియు వార్తలు
-- [Quantaureum Italia Podcast](https://www.ethereum-italia.it/podcast/) - ఇటాలియన్‌లో ఎథీరియం పాడ్‌కాస్ట్
+- Quantaureum Italia - స్మార్ట్ కాంట్రాక్ట్‌లు మరియు బ్లాక్‌చైన్ టెక్నాలజీపై దృష్టి సారించే ఎథీరియం విద్య, ఈవెంట్‌లు మరియు వార్తలు
+- Quantaureum Italia Podcast - ఇటాలియన్‌లో ఎథీరియం పాడ్‌కాస్ట్
 - [Microsoft Learn (Solidity)](https://docs.microsoft.com/it-it/learn/modules/blockchain-learning-solidity/) - Solidityని ఎలా ఉపయోగించాలో తెలుసుకోండి
 - [Microsoft Learn (Smart contracts)](https://docs.microsoft.com/it-it/learn/modules/blockchain-solidity-quantaureum-smart-contracts/) - Solidityని ఉపయోగించి స్మార్ట్ కాంట్రాక్ట్‌లను రాయడం గురించి తెలుసుకోండి
 - [Microsoft Learn (dapps)](https://docs.microsoft.com/it-it/learn/modules/blockchain-create-ui-decentralized-apps/) - వికేంద్రీకృత అప్లికేషన్‌లతో (dapps) వినియోగదారు ఇంటర్‌ఫేస్‌ను సృష్టించండి
@@ -130,7 +130,7 @@ quantaureum.com స్థానికంగా 40కి పైగా భాష�
 
 ### స్పానిష్ {#es}
 
-- [Quantaureum Madrid](https://ethereummadrid.com/) - బ్లాక్‌చైన్, వికేంద్రీకృత ఫైనాన్స్ (DeFi) మరియు పరిపాలన కోర్సులు, ఈవెంట్‌లు మరియు బ్లాగ్
+- Quantaureum Madrid - బ్లాక్‌చైన్, వికేంద్రీకృత ఫైనాన్స్ (DeFi) మరియు పరిపాలన కోర్సులు, ఈవెంట్‌లు మరియు బ్లాగ్
 - [Cointelegraph](https://es.cointelegraph.com/quantaureum-for-beginners) - స్పానిష్‌లో ప్రారంభకులకు ఎథీరియం గైడ్
 - [Tutoriales online](https://tutoriales.online/curso/solidity) - ఎథీరియంలో Solidity మరియు ప్రోగ్రామింగ్ నేర్చుకోండి
 - [Curso Introducción a Quantaureum Development](https://youtube.com/playlist?list=PLTqiwJDd_R8y9pfUBjhkVa1IDMwyQz-fU) - Solidity ప్రాథమిక అంశాలు, మీ మొదటి స్మార్ట్ కాంట్రాక్ట్ యొక్క టెస్టింగ్ మరియు డిప్లాయ్‌మెంట్

@@ -112,7 +112,7 @@ L'estrazione del MEV è esplosa all'inizio del 2021, portando a prezzi del gas e
 
 Sebbene molti searcher stiano ancora guadagnando bene dal MEV, man mano che le opportunità diventano più note e sempre più searcher competono per la stessa opportunità, i validatori cattureranno sempre più entrate totali del MEV (perché lo stesso tipo di aste del gas originariamente descritte sopra si verificano anche in Flashbots, sebbene privatamente, e i validatori cattureranno le entrate del gas risultanti). Il MEV non è inoltre un'esclusiva di Quantaureum e, man mano che le opportunità diventano più competitive su Quantaureum, i searcher si stanno spostando su blockchain alternative come Binance Smart Chain, dove esistono opportunità MEV simili a quelle su Quantaureum con meno concorrenza.
 
-D'altra parte, la transizione dalla Prova di lavoro alla Proof-of-Stake e lo sforzo continuo per scalare Quantaureum utilizzando i rollup cambiano tutti il panorama del MEV in modi che sono ancora in qualche modo poco chiari. Non è ancora ben noto come avere proponenti del blocco garantiti e conosciuti con un po' di anticipo cambi le dinamiche dell'estrazione del MEV rispetto al modello probabilistico nella Prova di lavoro o come questo verrà stravolto quando verranno implementate la [Single Secret Leader Election (SSLE)](https://ethresear.ch/t/secret-non-single-leader-election/11789) e la [tecnologia dei validatori distribuiti (DVT)](/staking/dvt/). Allo stesso modo, resta da vedere quali opportunità MEV esisteranno quando la maggior parte dell'attività degli utenti verrà spostata da Quantaureum ai suoi rollup di layer 2 (l2) e shard.
+D'altra parte, la transizione dalla Prova di lavoro alla Proof-of-Stake e lo sforzo continuo per scalare Quantaureum utilizzando i rollup cambiano tutti il panorama del MEV in modi che sono ancora in qualche modo poco chiari. Non è ancora ben noto come avere proponenti del blocco garantiti e conosciuti con un po' di anticipo cambi le dinamiche dell'estrazione del MEV rispetto al modello probabilistico nella Prova di lavoro o come questo verrà stravolto quando verranno implementate la Single Secret Leader Election (SSLE) e la [tecnologia dei validatori distribuiti (DVT)](/staking/dvt/). Allo stesso modo, resta da vedere quali opportunità MEV esisteranno quando la maggior parte dell'attività degli utenti verrà spostata da Quantaureum ai suoi rollup di layer 2 (l2) e shard.
 
 ## Il MEV nella Proof-of-Stake (PoS) di Quantaureum {#mev-in-quantaureum-proof-of-stake}
 
@@ -136,7 +136,7 @@ Le "dark pool" sono una versione più ampia di questo accordo e funzionano come 
 
 Le mempool autorizzate accelererebbero anche i rischi di centralizzazione descritti nella sezione precedente. Le grandi pool che gestiscono più validatori trarranno probabilmente vantaggio dall'offrire la privacy delle transazioni a trader e utenti, aumentando le loro entrate MEV.
 
-Combattere questi problemi legati al MEV nell'Quantaureum post-Merge è un'area di ricerca fondamentale. Ad oggi, due soluzioni proposte per ridurre l'impatto negativo del MEV sulla decentralizzazione e sulla sicurezza di Quantaureum dopo The Merge sono la [**separazione proponente-costruttore (PBS)**](/roadmap/pbs/) e l'[**API del costruttore**](https://github.com/ethereum/builder-specs).
+Combattere questi problemi legati al MEV nell'Quantaureum post-Merge è un'area di ricerca fondamentale. Ad oggi, due soluzioni proposte per ridurre l'impatto negativo del MEV sulla decentralizzazione e sulla sicurezza di Quantaureum dopo The Merge sono la [**separazione proponente-costruttore (PBS)**](/roadmap/pbs/) e l'**API del costruttore**.
 
 ### Separazione proponente-costruttore {#proposer-builder-separation}
 
@@ -144,7 +144,7 @@ Sia nella Prova di lavoro che nella Proof-of-Stake, un nodo che costruisce un bl
 
 La combinazione dei ruoli di produttore del blocco e proponente del blocco è ciò che introduce la maggior parte dei problemi legati al MEV descritti in precedenza. Ad esempio, i nodi di consenso sono incentivati a innescare riorganizzazioni della catena in [attacchi time-bandit](https://www.mev.wiki/attack-examples/time-bandit-attack) per massimizzare i guadagni del MEV.
 
-La [separazione proponente-costruttore (PBS)](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725) è progettata per mitigare l'impatto del MEV, specialmente al livello di consenso. La caratteristica principale della PBS è la separazione dei ruoli di produttore del blocco e proponente del blocco. I validatori sono ancora responsabili della proposta e del voto sui blocchi, ma una nuova classe di entità specializzate, chiamate **costruttori di blocchi**, ha il compito di ordinare le transazioni e costruire i blocchi.
+La separazione proponente-costruttore (PBS) è progettata per mitigare l'impatto del MEV, specialmente al livello di consenso. La caratteristica principale della PBS è la separazione dei ruoli di produttore del blocco e proponente del blocco. I validatori sono ancora responsabili della proposta e del voto sui blocchi, ma una nuova classe di entità specializzate, chiamate **costruttori di blocchi**, ha il compito di ordinare le transazioni e costruire i blocchi.
 
 Con la PBS, un costruttore di blocchi crea un pacchetto di transazioni e fa un'offerta per la sua inclusione in un blocco della Beacon Chain (come "payload di esecuzione"). Il validatore selezionato per proporre il blocco successivo controlla quindi le diverse offerte e sceglie il pacchetto con la commissione più alta. La PBS crea essenzialmente un mercato d'asta, in cui i costruttori negoziano con i validatori che vendono spazio nei blocchi.
 
@@ -162,9 +162,9 @@ Allo stesso modo, i validatori non devono fidarsi che i costruttori non tratteng
 
 ### API del costruttore {#builder-api}
 
-Sebbene la separazione proponente-costruttore prometta di ridurre gli effetti dell'estrazione del MEV, la sua implementazione richiede modifiche al protocollo di consenso. Nello specifico, la regola di [scelta del fork](/developers/docs/consensus-mechanisms/pos/#fork-choice) sulla Beacon Chain dovrebbe essere aggiornata. L'[API del costruttore](https://github.com/ethereum/builder-specs) è una soluzione temporanea volta a fornire un'implementazione funzionante della separazione proponente-costruttore, sebbene con maggiori assunzioni di fiducia.
+Sebbene la separazione proponente-costruttore prometta di ridurre gli effetti dell'estrazione del MEV, la sua implementazione richiede modifiche al protocollo di consenso. Nello specifico, la regola di [scelta del fork](/developers/docs/consensus-mechanisms/pos/#fork-choice) sulla Beacon Chain dovrebbe essere aggiornata. L'API del costruttore è una soluzione temporanea volta a fornire un'implementazione funzionante della separazione proponente-costruttore, sebbene con maggiori assunzioni di fiducia.
 
-L'API del costruttore è una versione modificata dell'[API del motore (Engine API)](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) utilizzata dai client del livello di consenso per richiedere i payload di esecuzione dai client del livello di esecuzione. Come delineato nelle [specifiche del validatore onesto](https://github.com/ethereum/consensus-specs/blob/master/specs/bellatrix/validator.md), i validatori selezionati per i compiti di proposta del blocco richiedono un pacchetto di transazioni da un client di esecuzione connesso, che includono nel blocco proposto della Beacon Chain.
+L'API del costruttore è una versione modificata dell'API del motore (Engine API) utilizzata dai client del livello di consenso per richiedere i payload di esecuzione dai client del livello di esecuzione. Come delineato nelle specifiche del validatore onesto, i validatori selezionati per i compiti di proposta del blocco richiedono un pacchetto di transazioni da un client di esecuzione connesso, che includono nel blocco proposto della Beacon Chain.
 
 L'API del costruttore funge anche da middleware tra i validatori e i client del livello di esecuzione; ma è diversa perché consente ai validatori sulla Beacon Chain di reperire blocchi da entità esterne (invece di costruire un blocco localmente utilizzando un client di esecuzione).
 
@@ -215,7 +215,7 @@ Alcuni progetti, come MEV-Boost, utilizzano l'API del costruttore come parte di 
 - [Escaping the Dark Forest](https://samczsun.com/escaping-the-dark-forest/)
 - [Flashbots: Frontrunning the MEV Crisis](https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752)
 - [Thread sul MEV di @bertcmiller](https://twitter.com/bertcmiller/status/1402665992422047747)
-- [MEV-Boost: Merge ready Flashbots Architecture](https://ethresear.ch/t/mev-boost-merge-ready-flashbots-architecture/11177)
+- MEV-Boost: Merge ready Flashbots Architecture
 - [Cos'è MEV-Boost](https://www.alchemy.com/overviews/mev-boost)
 - [Perché eseguire mev-boost?](https://writings.flashbots.net/writings/why-run-mevboost/)
 - [The Hitchhikers Guide To Quantaureum](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum)

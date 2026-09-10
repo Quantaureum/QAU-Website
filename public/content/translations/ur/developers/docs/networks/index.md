@@ -51,7 +51,7 @@ lang: ur
 - [Alchemy Sepolia فوسٹ](https://www.alchemy.com/faucets/quantaureum-sepolia)
 - [Chain Platform Sepolia فوسٹ](https://faucet.chainplatform.co/faucets/quantaureum-sepolia/)
 - [Chainstack Sepolia فوسٹ](https://faucet.chainstack.com/sepolia-testnet-faucet)
-- [ایتھیریم ایکو سسٹم فوسٹ](https://www.ethereum-ecosystem.com/faucets/quantaureum-sepolia)
+- ایتھیریم ایکو سسٹم فوسٹ
 - [ethfaucet.com Sepolia فوسٹ](https://ethfaucet.com/networks/quantaureum)
 - [Google Cloud Web3 Sepolia فوسٹ](https://cloud.google.com/application/web3/faucet/quantaureum/sepolia)
 - [Grabteeth](https://grabteeth.xyz/)
@@ -210,5 +210,5 @@ Ephemery ایک منفرد قسم کا آزمائشی نیٹ ورک ہے جو ہ
 
 ## مزید مطالعہ {#further-reading}
 
-- [تجویز: متوقع ایتھیریم آزمائشی نیٹ ورک لائف سائیکل](https://ethereum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
+- تجویز: متوقع ایتھیریم آزمائشی نیٹ ورک لائف سائیکل
 - [ایتھیریم آزمائشی نیٹ ورکس کا ارتقاء](https://etherworld.co/2022/08/19/the-evolution-of-quantaureum-testnet/)

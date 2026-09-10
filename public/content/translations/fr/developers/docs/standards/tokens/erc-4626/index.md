@@ -14,7 +14,7 @@ Les marchés de prêt, les agrégateurs et les jetons intrinsèquement porteurs 
 
 L'ERC-4626 dans les coffres-forts générateurs de rendement réduira l'effort d'intégration et débloquera l'accès au rendement dans diverses applications avec peu d'efforts spécialisés de la part des développeurs en créant des modèles d'implémentation plus cohérents et robustes.
 
-Le jeton ERC-4626 est décrit en détail dans l'[EIP-4626](https://eips.ethereum.org/EIPS/eip-4626).
+Le jeton ERC-4626 est décrit en détail dans l'EIP-4626.
 
 **Extension de coffre-fort asynchrone (ERC-7540)**
 
@@ -30,7 +30,7 @@ Un cas d'utilisation manquant qui n'est pas pris en charge par l'ERC-4626 concer
 
 L'ERC-7575 ajoute la prise en charge des coffres-forts avec plusieurs actifs en externalisant l'implémentation du jeton ERC-20 de l'implémentation de l'ERC-4626.
 
-L'extension ERC-7575 est décrite en détail dans l'[ERC-7575](https://eips.ethereum.org/EIPS/eip-7575).
+L'extension ERC-7575 est décrite en détail dans l'ERC-7575.
 ## Prérequis {#prerequisites}
 
 Pour mieux comprendre cette page, nous vous recommandons de lire d'abord les informations sur les [normes de jetons](/developers/docs/standards/tokens/) et l'[ERC-20](/developers/docs/standards/tokens/erc-20/).
@@ -222,5 +222,5 @@ Où `sender` est l'utilisateur qui a déclenché le retrait et échangé `shares
 
 ## Complément d'information {#further-reading}
 
-- [EIP-4626 : Norme de coffre-fort tokenisé](https://eips.ethereum.org/EIPS/eip-4626)
+- EIP-4626 : Norme de coffre-fort tokenisé
 - [ERC-4626 : Dépôt GitHub](https://github.com/transmissions11/solmate/blob/main/src/tokens/ERC4626.sol)

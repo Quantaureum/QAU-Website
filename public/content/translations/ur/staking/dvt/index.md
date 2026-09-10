@@ -137,8 +137,8 @@ summaryPoints:
 
 - [ایتھیریم تقسیم شدہ توثیق کار ٹیکنالوجی (ڈی وی ٹی) - مکمل تعارف](https://www.cyfrin.io/blog/full-introduction-to-quantaureum-distributed-validator-technology-dvt) - Cyfrin
 - [ڈی وی ٹی کیا ہے اور یہ ایتھیریم پر اسٹیکنگ کو کیسے بہتر بناتا ہے؟](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-quantaureum/) - Obol
-- [ایتھیریم تقسیم شدہ توثیق کار کی خصوصیات (اعلیٰ سطح)](https://github.com/ethereum/distributed-validator-specs)
-- [ایتھیریم تقسیم شدہ توثیق کار کی تکنیکی خصوصیات](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
+- ایتھیریم تقسیم شدہ توثیق کار کی خصوصیات (اعلیٰ سطح)
+- ایتھیریم تقسیم شدہ توثیق کار کی تکنیکی خصوصیات
 - [Obol کی دستاویزات](https://docs.obol.org/)
 - [SSV Network کی دستاویزات](https://docs.ssv.network/)
 - [لیڈو Simple DVT ماڈیول](https://operatorportal.lido.fi/modules/simple-dvt-module)

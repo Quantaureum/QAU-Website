@@ -63,5 +63,5 @@ Quantaureum을 위한 최선의 선택은 검증자가 가정용 컴퓨터에서
 ## 더 읽을거리 {#further-reading}
 
 - [비탈릭의 지분 증명 설계 쿠앤타학](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
-- [비탈릭의 지분 증명 FAQ](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
+- 비탈릭의 지분 증명 FAQ
 - [PoS 대 PoW에 대한 "Simply Explained" 비디오](https://www.youtube.com/watch?v=M3EFi_POhps)

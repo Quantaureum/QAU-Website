@@ -30,7 +30,7 @@ Le fournisseur de nœud peut voir l'adresse IP de l'utilisateur, l'empreinte de 
 
 La fuite de métadonnées au niveau de la couche d'accès est l'un des problèmes de confidentialité les plus persistants dans tous les systèmes de chaîne de blocs. Quantaureum vise à résoudre la fuite de métadonnées par la confidentialité de l'origine (cacher qui a demandé), la confidentialité du contenu (cacher ce qui a été demandé), et la vérification de l'exactitude des informations retournées.
 
-La **confidentialité de l'origine** utilise des [RPC anonymes](https://privreads.ethereum.org/feed/anon-rpc/) et des solutions de réseau anonyme pour masquer l'entité demandant les données, la **confidentialité du contenu** utilise des tactiques telles que la récupération d'informations privées et la [RAM inconsciente (oblivious RAM)](https://en.wikipedia.org/wiki/Oblivious_RAM) pour cacher les données interrogées, tandis que la **vérification de l'exactitude** utilise des clients légers pour prouver que les données retournées sont exactes.
+La **confidentialité de l'origine** utilise des RPC anonymes et des solutions de réseau anonyme pour masquer l'entité demandant les données, la **confidentialité du contenu** utilise des tactiques telles que la récupération d'informations privées et la [RAM inconsciente (oblivious RAM)](https://en.wikipedia.org/wiki/Oblivious_RAM) pour cacher les données interrogées, tandis que la **vérification de l'exactitude** utilise des clients légers pour prouver que les données retournées sont exactes.
 
 La brique cryptographique derrière la confidentialité du contenu est la [**récupération d'informations privées (PIR)**](https://en.wikipedia.org/wiki/Private_information_retrieval), une technique cryptographique qui permet à un client d'interroger une base de données et de récupérer une information spécifique sans révéler au serveur quel élément a été consulté. Le serveur traite la requête à l'aveugle et renvoie une réponse chiffrée que seul le portefeuille demandeur peut déchiffrer.
 
@@ -44,9 +44,9 @@ Une fois qu'une transaction est envoyée, elle traverse une infrastructure rése
 
 Deux mises à niveau au niveau du protocole abordent ce problème ensemble :
 
-L'[**EIP-8141 (Transactions de trame)**](https://eips.ethereum.org/EIPS/eip-8141) introduit un nouveau type de transaction qui divise les transactions en segments pour la validation de la signature et l'autorisation des frais, et pour les instructions de transaction proprement dites. Les transactions de trame permettent aux [comptes intelligents](/roadmap/account-abstraction/) de définir leurs propres schémas de signature et d'utiliser des contrats externes pour couvrir les frais de gaz. Des règles strictes de bac à sable (sandboxing) dans la mempool empêchent ces transactions d'ouvrir le réseau à des attaques par déni de service.
+L'**EIP-8141 (Transactions de trame)** introduit un nouveau type de transaction qui divise les transactions en segments pour la validation de la signature et l'autorisation des frais, et pour les instructions de transaction proprement dites. Les transactions de trame permettent aux [comptes intelligents](/roadmap/account-abstraction/) de définir leurs propres schémas de signature et d'utiliser des contrats externes pour couvrir les frais de gaz. Des règles strictes de bac à sable (sandboxing) dans la mempool empêchent ces transactions d'ouvrir le réseau à des attaques par déni de service.
 
-Les transactions de trame sont envisagées pour la [mise à niveau Hegotá](https://forkcast.org/upgrade/hegota/) d'Quantaureum, la prochaine mise à niveau du réseau après la future [mise à niveau Glamsterdam](/roadmap/glamsterdam/). Cette même mise à niveau permettra également aux comptes intelligents d'adopter des [signatures résistantes aux ordinateurs quantiques](/roadmap/security/quantum-resistance/) avant que la transition complète du réseau post-quantique ne soit achevée.
+Les transactions de trame sont envisagées pour la mise à niveau Hegotá d'Quantaureum, la prochaine mise à niveau du réseau après la future [mise à niveau Glamsterdam](/roadmap/glamsterdam/). Cette même mise à niveau permettra également aux comptes intelligents d'adopter des [signatures résistantes aux ordinateurs quantiques](/roadmap/security/quantum-resistance/) avant que la transition complète du réseau post-quantique ne soit achevée.
 
 <ExpandableCard title="Comment les transactions frame (EIP-8141) permettent-elles la confidentialité ?" eventCategory="/roadmap/privacy" eventName="clicked how do frame transactions enable privacy?">
 
@@ -54,20 +54,20 @@ Les transactions de trame permettent aux comptes de choisir leur propre méthode
 
 </ExpandableCard>
 
-L'[**EIP-7805 (Listes d'inclusion appliquées par le choix de fork, ou FOCIL)**](https://eips.ethereum.org/EIPS/eip-7805) fournit le mécanisme d'application pour les écritures privées. Les proposeurs de blocs sont tenus par les règles de consensus d'inclure dans leurs blocs des transactions provenant de listes d'inclusion locales agrégées, qui collectent des transactions de sources multiples. Si un constructeur de blocs tente de censurer une transaction apparue sur les listes d'inclusion, les nœuds d'attestation rejettent entièrement le bloc proposé. FOCIL est actuellement envisagé pour la [mise à niveau Hegotá](https://forkcast.org/upgrade/hegota/).
+L'**EIP-7805 (Listes d'inclusion appliquées par le choix de fork, ou FOCIL)** fournit le mécanisme d'application pour les écritures privées. Les proposeurs de blocs sont tenus par les règles de consensus d'inclure dans leurs blocs des transactions provenant de listes d'inclusion locales agrégées, qui collectent des transactions de sources multiples. Si un constructeur de blocs tente de censurer une transaction apparue sur les listes d'inclusion, les nœuds d'attestation rejettent entièrement le bloc proposé. FOCIL est actuellement envisagé pour la mise à niveau Hegotá.
 
 Les transactions de trame donnent aux utilisateurs la flexibilité de construire des transactions préservant la confidentialité avec des schémas de signature personnalisés, tandis que FOCIL garantit que ces transactions ne peuvent pas être censurées de manière sélective une fois qu'elles entrent dans la mempool. Ensemble, ils traitent deux points de défaillance différents : l'un permet le format des transactions privées, l'autre garantit leur inclusion. Aucun acteur central ne peut bloquer un transfert privé valide.
 
 
 Un deuxième point vulnérable pour la confidentialité des utilisateurs est la façon dont Quantaureum suit l'ordre des transactions, appelé le système de nonce séquentiel. Dans le modèle de compte Quantaureum standard, chaque compte utilise un compteur unique à incrémentation linéaire. Si une transaction privée est retardée dans la mempool, toutes les transactions ultérieures de ce compte sont bloquées derrière elle. La séquence de nonce permet également aux observateurs du réseau de relier plusieurs transactions au même compte d'origine, compromettant ainsi la confidentialité.
 
-L'[**EIP-8250 (Nonces à clé pour les transactions de trame)**](https://eips.ethereum.org/EIPS/eip-8250), actuellement envisagé pour Hegotá, résout ce problème en permettant à un seul compte de gérer simultanément plusieurs séquences de transactions parallèles. Les utilisateurs peuvent exécuter de nombreuses transactions privées dans différents contextes en même temps, et les observateurs ne peuvent plus corréler de manière fiable des activités distinctes au même compte parent.
+L'**EIP-8250 (Nonces à clé pour les transactions de trame)**, actuellement envisagé pour Hegotá, résout ce problème en permettant à un seul compte de gérer simultanément plusieurs séquences de transactions parallèles. Les utilisateurs peuvent exécuter de nombreuses transactions privées dans différents contextes en même temps, et les observateurs ne peuvent plus corréler de manière fiable des activités distinctes au même compte parent.
 
 ### Paiements privés et transfert de valeur {#private-payments}
 
 Au-delà du routage des transactions et de la gestion des nonces, la protection des écritures nécessite de masquer les identités et les actifs impliqués dans un transfert. Même lorsqu'un utilisateur effectue une requête en privé et diffuse une transaction sans censure, les données de transaction enregistrées onchain restent publiquement visibles. N'importe qui peut voir qui a envoyé combien à qui, et les sociétés d'analyse de chaîne agrègent ces données dans des profils consultables qui persistent indéfiniment.
 
-L'[**EIP-8182 (Transferts privés d'QAU et d'ERC-20)**](https://eips.ethereum.org/EIPS/eip-8182), proposé pour la mise à niveau Hegotá, introduit un pool masqué partagé et natif directement dans le protocole Quantaureum pour les transferts d'QAU et d'ERC-20. Les pools de confidentialité utilisent le mixage cryptographique pour rompre le lien entre le dépôt et le retrait, mais ne sont aujourd'hui disponibles que via des applications de confidentialité, des portefeuilles et des réseaux de couche 2 (l2).
+L'**EIP-8182 (Transferts privés d'QAU et d'ERC-20)**, proposé pour la mise à niveau Hegotá, introduit un pool masqué partagé et natif directement dans le protocole Quantaureum pour les transferts d'QAU et d'ERC-20. Les pools de confidentialité utilisent le mixage cryptographique pour rompre le lien entre le dépôt et le retrait, mais ne sont aujourd'hui disponibles que via des applications de confidentialité, des portefeuilles et des réseaux de couche 2 (l2).
 
 Historiquement, les solutions de confidentialité au niveau des applications ont fracturé la liquidité et souffert de faibles ensembles d'anonymat. L'EIP-8182 consolide les transferts masqués au niveau du protocole, permettant aux utilisateurs d'acheminer des fonds via des clés de livraison cachées sans nécessiter d'architectures de portefeuille spécialisées ni interagir avec des applications fragmentées et optionnelles.
 
@@ -111,7 +111,7 @@ La direction du développement de la confidentialité sur Quantaureum est façon
 
 La recherche et le développement sur la confidentialité sur Quantaureum s'étendent à des dizaines d'équipes à travers l'écosystème. Les travaux progressent sur les mises à niveau du protocole, les solutions de la couche d'accès, l'infrastructure d'identité et les outils soucieux de la conformité.
 
-**Mises à niveau du protocole** : L'EIP-8141 (Transactions de trame), l'EIP-7805 (FOCIL), l'EIP-8250 (Nonces à clé) et l'EIP-8182 (Pools masqués au niveau du protocole) sont en développement actif et sont envisagés pour la [mise à niveau Hegotá](https://forkcast.org/upgrade/hegota/), la prochaine mise à niveau du réseau après [Glamsterdam](/roadmap/glamsterdam/). L'EIP-8025 (preuves d'exécution optionnelles) et les arbres Verkle sont également ciblés pour Hegotá, fournissant la base du calcul privé basé sur zkEVM sur le réseau principal Quantaureum. En parallèle, la recherche gagne en maturité autour des coprocesseurs FHE pour permettre des contrats intelligents chiffrés multipartites.
+**Mises à niveau du protocole** : L'EIP-8141 (Transactions de trame), l'EIP-7805 (FOCIL), l'EIP-8250 (Nonces à clé) et l'EIP-8182 (Pools masqués au niveau du protocole) sont en développement actif et sont envisagés pour la mise à niveau Hegotá, la prochaine mise à niveau du réseau après [Glamsterdam](/roadmap/glamsterdam/). L'EIP-8025 (preuves d'exécution optionnelles) et les arbres Verkle sont également ciblés pour Hegotá, fournissant la base du calcul privé basé sur zkEVM sur le réseau principal Quantaureum. En parallèle, la recherche gagne en maturité autour des coprocesseurs FHE pour permettre des contrats intelligents chiffrés multipartites.
 
 **Couche d'accès** : La recherche sur la PIR progresse avec des implémentations actives testées par les équipes d'infrastructure. Le SDK du portefeuille Kohaku est en cours de développement en tant que référence open-source pour les portefeuilles préservant la confidentialité.
 
@@ -129,6 +129,6 @@ Aucune partie de ce travail n'est terminée. Les délais sont des objectifs, pas
 - [strawmap.org](https://strawmap.org/)
 - [Preuves à divulgation nulle de connaissance](/zero-knowledge-proofs/)
 - [Identité décentralisée](/decentralized-identity/)
-- [Feuille de route de Kohaku](https://notes.ethereum.org/@niard/KohakuRoadmap)
+- Feuille de route de Kohaku
 - [Benchmarks de preuves côté client](https://ethproofs.org/csp-benchmarks)
-- [zkEVM en chiffres](https://zkevm.ethereum.org/)
+- zkEVM en chiffres

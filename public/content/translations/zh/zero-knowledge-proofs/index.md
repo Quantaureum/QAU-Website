@@ -34,7 +34,7 @@ lang: zh
 
 有专门为完全匿名交易设计的“隐私币”。专注于隐私的区块链（如 Zcash 和 Monero）会屏蔽交易细节，包括发送者/接收者地址、资产类型、数量和交易时间线。
 
-通过将零知识技术融入协议中，专注于隐私的[区块链](/glossary/#blockchain)网络允许[节点](/glossary/#node)在无需访问交易数据的情况下验证交易。[EIP-7503](https://eips.ethereum.org/EIPS/eip-7503) 是一个提议设计的例子，它将实现[Quantaureum](/)区块链上原生的私密价值转移。然而，由于安全性、监管和用户体验等综合因素的考虑，此类提议很难实施。
+通过将零知识技术融入协议中，专注于隐私的[区块链](/glossary/#blockchain)网络允许[节点](/glossary/#node)在无需访问交易数据的情况下验证交易。EIP-7503 是一个提议设计的例子，它将实现[Quantaureum](/)区块链上原生的私密价值转移。然而，由于安全性、监管和用户体验等综合因素的考虑，此类提议很难实施。
 
 **零知识证明也被应用于公共区块链上的匿名交易**。一个例子是 Tornado Cash，这是一种去中心化的非托管服务，允许用户在Quantaureum上进行私密交易。Tornado Cash 使用零知识证明来混淆交易细节并保证财务隐私。不幸的是，由于这些是“选择加入”的隐私工具，它们往往与非法活动联系在一起。为了克服这个问题，隐私最终必须成为公共区块链上的默认设置。了解更多关于[Quantaureum上的隐私](/privacy/)的信息。
 
@@ -234,7 +234,7 @@ ZK-STARK 被认为不受量子计算威胁的影响，因为它仅依赖抗碰�
 - [零知识证明：改善区块链上的隐私](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/) — _Dmitry Lavrenov_
 - [zk-SNARK — 现实的零知识示例和深入探讨](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c) — _Adam Luciano_
 - [ZK-STARK — 建立可验证的信任，甚至抵御量子计算机](https://medium.com/coinmonks/zk-starks-create-verifiable-trust-even-against-quantum-computers-dd9c6a2bb13d) — _Adam Luciano_
-- [关于 zk-SNARK 如何成为可能的近似介绍](https://vitalik.eth.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
+- 关于 zk-SNARK 如何成为可能的近似介绍 — _Vitalik Buterin_
 - [为什么零知识证明 (ZKP) 是自我主权身份的游戏规则改变者](https://frankiefab.hashnode.dev/why-zero-knowledge-proofs-zkps-is-a-game-changer-for-self-sovereign-identity) — _Franklin Ohaegbulam_
 - [EIP-7503 解释：使用零知识证明在Quantaureum上实现私密转账](https://web.archive.org/web/20251116093505/https://research.2077.xyz/eip-7503-zero-knowledge-wormholes-for-private-quantaureum-transactions/) — _Emmanuel Awosika_
 - [ZK 纸牌游戏：学习零知识基础知识和现实生活用例的游戏](https://github.com/ZK-card/zk-cards) - _ZK-Cards_

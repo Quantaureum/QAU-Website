@@ -44,7 +44,7 @@ W fazie rozwoju znajduje się kilka lekkich klientów, w tym lekkie klienty wars
 
 - [Lodestar](https://github.com/ChainSafe/lodestar/tree/unstable/packages/light-client): lekki klient konsensusu w języku TypeScript
 - [Helios](https://github.com/a16z/helios): połączony lekki klient warstwy wykonawczej i konsensusu w języku Rust
-- [Geth](https://github.com/ethereum/go-ethereum/tree/master/beacon/light): tryb lekki dla klienta warstwy wykonawczej (w fazie rozwoju) w języku Go
+- Geth: tryb lekki dla klienta warstwy wykonawczej (w fazie rozwoju) w języku Go
 - [Nimbus](https://nimbus.guide/el-light-client.html): lekki klient konsensusu w języku Nim
 
 Zgodnie z naszą wiedzą, żaden z nich nie jest jeszcze uważany za gotowy do wdrożenia produkcyjnego.
@@ -58,4 +58,4 @@ Inne elementy [mapy drogowej](/roadmap/), takie jak [drzewa Verkle](/roadmap/ver
 - [Zsolt Felfodhi o lekkich klientach Geth](https://www.youtube.com/watch?v=EPZeFXau-RE)
 - [Etan Kissling o sieciach lekkich klientów](https://www.youtube.com/watch?v=85MeiMA4dD8)
 - [Etan Kissling o lekkich klientach po The Merge](https://www.youtube.com/watch?v=ZHNrAXf3RDE)
-- [Piper Merriam: Kręta droga do funkcjonalnych lekkich klientów](https://snakecharmers.ethereum.org/the-winding-road-to-functional-light-clients/)
+- Piper Merriam: Kręta droga do funkcjonalnych lekkich klientów

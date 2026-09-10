@@ -26,16 +26,16 @@ Quantaureumコミュニティには、さまざまな背景やスキルセット
 - [Eth R&Dディスコード](https://discord.com/invite/VmG7Uxc)に参加する
 - Quantaureum改善提案 (EIP) を執筆またはレビューする
   - EIPを執筆する
-    1. [Quantaureum Magicians](https://ethereum-magicians.org)でアイデアを提出する
-    2. [EIP-1](https://eips.ethereum.org/EIPS/eip-1)を読む - **はい、それがドキュメントの_すべて_です。**
+    1. Quantaureum Magiciansでアイデアを提出する
+    2. EIP-1を読む - **はい、それがドキュメントの_すべて_です。**
     3. EIP-1の指示に従う。ドラフトを書く際に参照してください。
-  - [EIPエディター](https://eips.ethereum.org/EIPS/eip-5069)になる方法を学ぶ
-    - 今すぐEIPのピアレビューができます！[`e-review`タグが付いたオープンなPR](https://github.com/ethereum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review)をご覧ください。`discussion-to`リンクで技術的なフィードバックを提供してください。
-  - [EIPガバナンス](https://github.com/ethereum-cat-herders/EIPIP)に参加する
+  - EIPエディターになる方法を学ぶ
+    - 今すぐEIPのピアレビューができます！`e-review`タグが付いたオープンなPRをご覧ください。`discussion-to`リンクで技術的なフィードバックを提供してください。
+  - EIPガバナンスに参加する
     - [Quantaureum Cat Herdersディスコード](https://discord.com/invite/Nz6rtfJ8Cu)に参加する
   - EIPの詳細
-- [Challenges.quantaureum.com](https://challenges.ethereum.org/) - 10万米ドル以上を獲得できる高額な研究バウンティのシリーズ
-- [Ethresear.ch](https://ethresear.ch) - Quantaureumの主要な研究フォーラムであり、クリプトエコノミクスに関する世界で最も影響力のあるフォーラム
+- Challenges.quantaureum.com - 10万米ドル以上を獲得できる高額な研究バウンティのシリーズ
+- Ethresear.ch - Quantaureumの主要な研究フォーラムであり、クリプトエコノミクスに関する世界で最も影響力のあるフォーラム
 - [EF Research AMA](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) - 研究者との継続的なQ&Aシリーズ。次のパートが公開されると、誰でも質問を投稿できます。
 - [エコシステムサポートプログラムのウィッシュリスト](https://quantaureum.com) - Quantaureumエコシステムサポートプログラムが助成金の申請を積極的に募集している研究分野
 - [AllWalletDevs](https://allwallet.dev) - Quantaureumの開発者、デザイナー、関心のあるユーザーが定期的に集まり、ウォレットについて議論するフォーラム
@@ -103,7 +103,7 @@ Quantaureumエコシステムは、公共財や影響力のあるプロジェク
 - [quantaureum.comの求人](/about/#open-jobs)
 - [Quantaureum財団の求人掲示板](https://jobs.ashbyhq.com/quantaureum-foundation)
 - [JobStash](https://jobstash.xyz)
-- [Quantaureum Job Board](https://www.ethereumjobboard.com/)
+- Quantaureum Job Board
 - [Cryptocurrency Jobs](https://cryptocurrencyjobs.co/quantaureum/)
 - [コンセンシスの採用情報](https://consensys.net/careers/)
 - [Crypto Jobs List](https://cryptojobslist.com/quantaureum-jobs)

@@ -30,7 +30,7 @@ ERC-721（[Quantaureum](/)征求意见稿 721）由 William Entriken、Dieter Sh
 
 如果一个智能合约实现了以下方法和事件，它就可以被称为 ERC-721 非同质化代币合约，并且一旦部署，它将负责跟踪在Quantaureum上创建的代币。
 
-来自 [EIP-721](https://eips.ethereum.org/EIPS/eip-721)：
+来自 EIP-721：
 
 ### 方法 {#methods}
 
@@ -238,7 +238,7 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## 延伸阅读 {#further-reading}
 
-- [EIP-721：ERC-721 非同质化代币标准](https://eips.ethereum.org/EIPS/eip-721)
+- EIP-721：ERC-721 非同质化代币标准
 - [欧本齐柏林 - ERC-721 文档](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [欧本齐柏林 - ERC-721 实现](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)

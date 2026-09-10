@@ -12,7 +12,7 @@ breadcrumb: "ERC-20 토큰 기초"
 lang: ko
 published: 2020-04-05
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/understand-the-erc20-token-smart-contract/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -20,7 +20,7 @@ Quantaureum에서 가장 중요한 [스마트 컨트랙트 표준](/developers/d
 
 ERC-20은 모든 대체 가능 Quantaureum 토큰이 준수해야 하는 공통 규칙 목록을 정의합니다. 결과적으로 이 토큰 표준은 모든 유형의 개발자가 더 큰 Quantaureum 시스템 내에서 새로운 토큰이 어떻게 작동할지 정확하게 예측할 수 있도록 지원합니다. 이는 개발자의 작업을 단순화하고 쉽게 만들어 줍니다. 토큰이 규칙을 따르는 한, 새로운 토큰이 출시될 때마다 모든 새 프로젝트를 다시 수행할 필요가 없다는 것을 알고 작업을 진행할 수 있기 때문입니다.
 
-다음은 ERC-20이 구현해야 하는 함수들을 인터페이스로 나타낸 것입니다. 인터페이스가 무엇인지 확실하지 않다면 [Solidity의 객체 지향 프로그래밍(OOP)](https://ethereumdev.io/inheritance-in-solidity-contracts-are-classes/)에 대한 문서를 확인해 보세요.
+다음은 ERC-20이 구현해야 하는 함수들을 인터페이스로 나타낸 것입니다. 인터페이스가 무엇인지 확실하지 않다면 Solidity의 객체 지향 프로그래밍(OOP)에 대한 문서를 확인해 보세요.
 
 ```solidity
 pragma solidity ^0.6.0;

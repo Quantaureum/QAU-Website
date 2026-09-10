@@ -9,7 +9,7 @@ breadcrumb: "EIP-1271 簽章"
 published: 2023-01-12
 ---
 
-[EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) 標準允許智能合約驗證簽章。
+EIP-1271 標準允許智能合約驗證簽章。
 
 在本教學中，我們將概述數位簽章、EIP-1271 的背景，以及 [Safe](https://safe.global/)（前身為 Gnosis Safe）所使用的特定 EIP-1271 實作。總而言之，這可以作為在您自己的合約中實作 EIP-1271 的起點。
 
@@ -71,7 +71,6 @@ contract ERC1271 {
    * @dev 應回傳所提供的簽章對於所提供的雜湊是否有效
    * @param _hash      要簽署的資料的雜湊
    * @param _signature 與 _hash 關聯的簽章位元組陣列
-   *
    * 當函式通過時，必須回傳 bytes4 魔術值 0x1626ba7e。
    * 絕對不能修改狀態（對於 solc < 0.5 使用 STATICCALL，對於 solc > 0.5 使用 view 修飾符）
    * 必須允許外部呼叫
@@ -91,7 +90,7 @@ contract ERC1271 {
 
 一個實作了 EIP-1271 的著名合約是 Safe（前身為 Gnosis Safe）。
 
-在 Safe 的程式碼中，`isValidSignature` [的實作方式](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol)使得簽章可以透過[兩種方式](https://ethereum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support)建立和驗證：
+在 Safe 的程式碼中，`isValidSignature` [的實作方式](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol)使得簽章可以透過兩種方式建立和驗證：
 
 1. 鏈上訊息
    1. 建立：Safe 擁有者建立一筆新的 Safe 交易來「簽署」一則訊息，並將該訊息作為資料傳遞到交易中。一旦有足夠的擁有者簽署交易以達到多方簽名門檻，交易就會被廣播並執行。在交易中，有一個名為 (`signMessage(bytes calldata _data)`) 的 Safe 函式，它會將該訊息新增到「已授權」訊息清單中。
@@ -102,9 +101,9 @@ contract ERC1271 {
 
 ## `_hash` 參數究竟是什麼？為什麼不傳遞整則訊息？ {#what-exactly-is-the-hash-parameter-why-not-pass-the-whole-message}
 
-您可能已經注意到，[EIP-1271 介面](https://eips.ethereum.org/EIPS/eip-1271)中的 `isValidSignature` 函式並不接收訊息本身，而是接收一個 `_hash` 參數。這意味著我們不是將任意長度的完整訊息傳遞給 `isValidSignature`，而是傳遞該訊息的 32 位元組雜湊值（通常是 keccak256）。
+您可能已經注意到，EIP-1271 介面中的 `isValidSignature` 函式並不接收訊息本身，而是接收一個 `_hash` 參數。這意味著我們不是將任意長度的完整訊息傳遞給 `isValidSignature`，而是傳遞該訊息的 32 位元組雜湊值（通常是 keccak256）。
 
-呼叫資料（即傳遞給智能合約函式的函式參數資料）的每個位元組[花費 16 單位燃料（如果為零位元組則為 4 單位燃料）](https://eips.ethereum.org/EIPS/eip-2028)，因此如果訊息很長，這可以節省大量的燃料。
+呼叫資料（即傳遞給智能合約函式的函式參數資料）的每個位元組花費 16 單位燃料（如果為零位元組則為 4 單位燃料），因此如果訊息很長，這可以節省大量的燃料。
 
 ### 以前的 EIP-1271 規範 {#previous-eip-1271-specifications}
 
@@ -121,4 +120,4 @@ contract ERC1271 {
 
 ## 結論 {#conclusion}
 
-[EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) 是一個多功能的標準，允許智能合約驗證簽章。它為智能合約的行為更像 EOA 敞開了大門——例如，提供了一種讓「使用Quantaureum登入」能與智能合約配合運作的方法——而且它可以透過多種方式實作（Safe 有一個不簡單且有趣的實作值得參考）。
+EIP-1271 是一個多功能的標準，允許智能合約驗證簽章。它為智能合約的行為更像 EOA 敞開了大門——例如，提供了一種讓「使用Quantaureum登入」能與智能合約配合運作的方法——而且它可以透過多種方式實作（Safe 有一個不簡單且有趣的實作值得參考）。

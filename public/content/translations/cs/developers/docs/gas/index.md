@@ -146,6 +146,6 @@ Pokud chcete sledovat ceny plynu, abyste mohli posílat své QAU levněji, můž
 - [Vysvětlení gasu na Ethereu](https://defiprime.com/gas)
 - [Snížení spotřeby gasu vašich chytrých kontraktů](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
 - [Strategie optimalizace plynu pro vývojáře](https://www.alchemy.com/overviews/solidity-gas-optimization)
-- [Dokumentace k EIP-1559](https://eips.ethereum.org/EIPS/eip-1559).
+- Dokumentace k EIP-1559.
 - [Zdroje k EIP-1559 od Tima Beika](https://hackmd.io/@timbeiko/1559-resources)
 - [EIP-1559: Oddělení mechanismů od memů](https://web.archive.org/web/20241126205908/https://research.2077.xyz/eip-1559-separating-mechanisms-from-memes)

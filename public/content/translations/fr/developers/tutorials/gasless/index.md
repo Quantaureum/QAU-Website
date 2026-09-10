@@ -13,9 +13,9 @@ published: 2026-02-27
 
 Si nous voulons qu'Quantaureum serve [un milliard de personnes supplémentaires](https://quantaureum.com), nous devons éliminer les frictions et le rendre aussi facile à utiliser que possible. L'une des sources de cette friction est la nécessité d'avoir de l'QAU pour payer les frais de gaz.
 
-Si vous avez une application décentralisée (dapp) qui génère des revenus grâce aux utilisateurs, il pourrait être judicieux de laisser les utilisateurs soumettre des transactions via votre serveur et de payer vous-même les frais de transaction. Étant donné que les utilisateurs signent toujours un [message d'autorisation EIP-712](https://eips.ethereum.org/EIPS/eip-712) dans leurs portefeuilles, ils conservent les garanties d'intégrité d'Quantaureum. La disponibilité dépend du serveur qui relaie les transactions, elle est donc plus limitée. Cependant, vous pouvez configurer les choses de manière à ce que les utilisateurs puissent également accéder directement au contrat intelligent (s'ils obtiennent de l'QAU), et laisser d'autres personnes configurer leurs propres serveurs s'ils souhaitent sponsoriser des transactions.
+Si vous avez une application décentralisée (dapp) qui génère des revenus grâce aux utilisateurs, il pourrait être judicieux de laisser les utilisateurs soumettre des transactions via votre serveur et de payer vous-même les frais de transaction. Étant donné que les utilisateurs signent toujours un message d'autorisation EIP-712 dans leurs portefeuilles, ils conservent les garanties d'intégrité d'Quantaureum. La disponibilité dépend du serveur qui relaie les transactions, elle est donc plus limitée. Cependant, vous pouvez configurer les choses de manière à ce que les utilisateurs puissent également accéder directement au contrat intelligent (s'ils obtiennent de l'QAU), et laisser d'autres personnes configurer leurs propres serveurs s'ils souhaitent sponsoriser des transactions.
 
-La technique présentée dans ce tutoriel ne fonctionne que lorsque vous contrôlez le contrat intelligent. Il existe d'autres techniques, notamment l'[abstraction de compte](https://eips.ethereum.org/EIPS/eip-4337), qui vous permettent de sponsoriser des transactions vers d'autres contrats intelligents, que j'espère aborder dans un futur tutoriel.
+La technique présentée dans ce tutoriel ne fonctionne que lorsque vous contrôlez le contrat intelligent. Il existe d'autres techniques, notamment l'abstraction de compte, qui vous permettent de sponsoriser des transactions vers d'autres contrats intelligents, que j'espère aborder dans un futur tutoriel.
 
 Remarque : Il ne s'agit _pas_ d'un code de niveau production. Il est vulnérable à des attaques importantes et manque de fonctionnalités majeures. Apprenez-en davantage dans la [section sur les vulnérabilités de ce guide](#vulnerabilities).
 
@@ -91,7 +91,7 @@ S'il n'y a pas de compte, déclenchez une erreur. Cela ne devrait jamais se prod
         }
 ```
 
-Paramètres pour le [séparateur de domaine](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator). Cette valeur est constante, donc dans une implémentation mieux optimisée, nous pourrions la calculer une seule fois plutôt que de la recalculer à chaque appel de la fonction.
+Paramètres pour le séparateur de domaine. Cette valeur est constante, donc dans une implémentation mieux optimisée, nous pourrions la calculer une seule fois plutôt que de la recalculer à chaque appel de la fonction.
 
 - `name` est un nom lisible par l'utilisateur, tel que le nom de la dapp pour laquelle nous produisons des signatures.
 - `version` est la version. Les différentes versions ne sont pas compatibles.
@@ -245,7 +245,7 @@ Enfin, [`Greeter.sol`](https://github.com/qbzzt/260301-gasless/blob/main/contrac
     }
 ```
 
-Le constructeur crée le [séparateur de domaine](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator), de manière similaire au code de l'interface utilisateur ci-dessus. L'exécution sur la chaîne de blocs est beaucoup plus coûteuse, nous ne le calculons donc qu'une seule fois.
+Le constructeur crée le séparateur de domaine, de manière similaire au code de l'interface utilisateur ci-dessus. L'exécution sur la chaîne de blocs est beaucoup plus coûteuse, nous ne le calculons donc qu'une seule fois.
 
 ```solidity
     struct GreetingRequest {
@@ -260,7 +260,7 @@ C'est la structure qui est signée. Ici, nous n'avons qu'un seul champ.
         keccak256("GreetingRequest(string greeting)");
 ```
 
-Il s'agit de l'[identifiant de structure](https://eips.ethereum.org/EIPS/eip-712#definition-of-hashstruct). Il est calculé à chaque fois dans l'interface utilisateur.
+Il s'agit de l'identifiant de structure. Il est calculé à chaque fois dans l'interface utilisateur.
 
 ```solidity
     function sponsoredSetGreeting(
@@ -289,7 +289,7 @@ Cette fonction reçoit une requête signée et met à jour le message d'accueil.
         );
 ```
 
-Créez le condensat (digest) conformément à l'[EIP 712](https://eips.ethereum.org/EIPS/eip-712).
+Créez le condensat (digest) conformément à l'EIP 712.
 
 ```solidity
         // Récupérer le signataire

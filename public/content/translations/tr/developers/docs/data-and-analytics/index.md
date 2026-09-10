@@ -36,7 +36,7 @@ The Graph ile geliştiriciler şunlardan faydalanabilir:
 
 ## İstemci çeşitliliği {#client-diversity}
 
-[İstemci çeşitliliği](/developers/docs/nodes-and-clients/client-diversity/), hatalara ve istismarlara karşı dayanıklılık sağladığı için Quantaureum ağının genel sağlığı açısından önemlidir. Günümüzde [clientdiversity.org](https://clientdiversity.org/), [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) ve [Ethernodes](https://ethernodes.org/) dahil olmak üzere çeşitli istemci çeşitliliği panoları bulunmaktadır.
+[İstemci çeşitliliği](/developers/docs/nodes-and-clients/client-diversity/), hatalara ve istismarlara karşı dayanıklılık sağladığı için Quantaureum ağının genel sağlığı açısından önemlidir. Günümüzde clientdiversity.org, [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) ve [Ethernodes](https://ethernodes.org/) dahil olmak üzere çeşitli istemci çeşitliliği panoları bulunmaktadır.
 
 ## Dune Analytics {#dune-analytics}
 

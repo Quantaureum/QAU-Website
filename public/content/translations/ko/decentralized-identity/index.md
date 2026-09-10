@@ -164,7 +164,7 @@ Quantaureum 기반 신원 생태계에서 증명 정보가 저장되고 검색�
 
 ### 소울바운드 토큰과 신원 {#soulbound}
 
-[소울바운드 토큰(Soulbound tokens)](https://vitalik.eth.limo/general/2022/01/26/soulbound.html)([양도 불가능한 NFT](/glossary/#nft))은 특정 지갑에 고유한 정보를 수집하는 데 사용될 수 있습니다. 이는 특정 Quantaureum 주소에 귀속된 고유한 온체인 신원을 효과적으로 생성하며, 여기에는 성취(예: 특정 온라인 과정 수료 또는 게임에서 기준 점수 통과)나 커뮤니티 참여를 나타내는 토큰이 포함될 수 있습니다.
+소울바운드 토큰(Soulbound tokens)([양도 불가능한 NFT](/glossary/#nft))은 특정 지갑에 고유한 정보를 수집하는 데 사용될 수 있습니다. 이는 특정 Quantaureum 주소에 귀속된 고유한 온체인 신원을 효과적으로 생성하며, 여기에는 성취(예: 특정 온라인 과정 수료 또는 게임에서 기준 점수 통과)나 커뮤니티 참여를 나타내는 토큰이 포함될 수 있습니다.
 
 ## 탈중앙화 신원증명 사용하기 {#use-decentralized-identity}
 

@@ -87,7 +87,7 @@ Os validiums diferem em sua abordagem para o gerenciamento de disponibilidade de
 
 Para garantir a disponibilidade de dados offchain, algumas soluções de validium nomeiam um grupo de entidades confiáveis, conhecidas coletivamente como um comitê de disponibilidade de dados (DAC), para armazenar cópias do estado e fornecer prova de disponibilidade de dados. Os DACs são mais fáceis de implementar e exigem menos coordenação, já que o número de membros é baixo.
 
-No entanto, os usuários devem confiar no DAC para disponibilizar os dados quando necessário (por exemplo, para gerar provas de Merkle). Existe a possibilidade de membros de comitês de disponibilidade de dados [serem comprometidos por um ator malicioso](https://notes.ethereum.org/DD7GyItYQ02d0ax_X-UbWg?view) que pode então reter dados offchain.
+No entanto, os usuários devem confiar no DAC para disponibilizar os dados quando necessário (por exemplo, para gerar provas de Merkle). Existe a possibilidade de membros de comitês de disponibilidade de dados serem comprometidos por um ator malicioso que pode então reter dados offchain.
 
 [Mais sobre comitês de disponibilidade de dados em validiums](https://medium.com/starkware/data-availability-e5564c416424).
 

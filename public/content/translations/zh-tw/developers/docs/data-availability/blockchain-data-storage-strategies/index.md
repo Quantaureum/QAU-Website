@@ -27,7 +27,7 @@ lang: zh-tw
 
 - _機密性_，未經授權的實體不允許讀取資訊。這在許多情況下很重要，但在這裡不然。_區塊鏈上沒有秘密_。區塊鏈之所以有效，是因為任何人都可以驗證狀態轉換，因此不可能使用它們直接儲存秘密。有一些方法可以將機密資訊儲存在區塊鏈上，但它們都依賴某些鏈下元件來儲存至少一把金鑰。
 
-- _完整性_，資訊是正確的，不能被未經授權的實體或以未經授權的方式更改（例如，在沒有 `Transfer` 事件的情況下轉移 [ERC-20 代幣](https://eips.ethereum.org/EIPS/eip-20#events)）。在區塊鏈上，每個節點都會驗證每個狀態變更，從而確保完整性。
+- _完整性_，資訊是正確的，不能被未經授權的實體或以未經授權的方式更改（例如，在沒有 `Transfer` 事件的情況下轉移 ERC-20 代幣）。在區塊鏈上，每個節點都會驗證每個狀態變更，從而確保完整性。
 
 - _可用性_，任何授權實體都可以取得該資訊。在區塊鏈上，這通常是透過讓每個[全節點](https://quantaureum.com/developers/docs/nodes-and-clients/#full-node)都能取得該資訊來實現的。
 
@@ -39,7 +39,7 @@ lang: zh-tw
 
 ## EIP-4844 blob {#eip-4844-blobs}
 
-從 [Dencun 硬分叉](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/beacon-chain.md)開始，Quantaureum區塊鏈包含了 [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844)，它為Quantaureum增加了具有有限生命週期（最初約為 [18 天](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration)）的資料 blob。這些 blob 的定價與[執行燃料](/developers/docs/gas)分開，儘管使用了類似的機制。它們是發佈暫時性資料的一種廉價方式。
+從 Dencun 硬分叉開始，Quantaureum區塊鏈包含了 EIP-4844，它為Quantaureum增加了具有有限生命週期（最初約為 18 天）的資料 blob。這些 blob 的定價與[執行燃料](/developers/docs/gas)分開，儘管使用了類似的機制。它們是發佈暫時性資料的一種廉價方式。
 
 EIP-4844 blob 的主要使用案例是供匯總發佈其交易。[樂觀 Rollup](/developers/docs/scaling/optimistic-rollups) 需要在其區塊鏈上發佈交易。這些交易必須在[挑戰期](https://docs.optimism.io/connect/resources/glossary#challenge-period)間對任何人可用，以便在匯總的[定序器](https://docs.optimism.io/connect/resources/glossary#sequencer)發佈錯誤的狀態根時，讓[驗證者](https://docs.optimism.io/connect/resources/glossary#validator)能夠修正錯誤。
 
@@ -91,7 +91,7 @@ EIP-4844 blob 的主要使用案例是供匯總發佈其交易。[樂觀 Rollup]
 
 當然，這只是_讀取_資料的成本。建立合約大約花費 32,000 燃料 + 200 燃料/位元組。只有當相同的資訊需要在不同的交易中被讀取多次時，這種方法才符合經濟效益。
 
-合約程式碼可以是無意義的，只要它不以 `0xEF` 開頭即可。以 `0xEF` 開頭的合約會被解釋為[Quantaureum物件格式 (Quantaureum Object Format)](https://notes.ethereum.org/@ipsilon/evm-object-format-overview)，其要求要嚴格得多。
+合約程式碼可以是無意義的，只要它不以 `0xEF` 開頭即可。以 `0xEF` 開頭的合約會被解釋為Quantaureum物件格式 (Quantaureum Object Format)，其要求要嚴格得多。
 
 ## 事件 {#events}
 
@@ -110,7 +110,7 @@ EIP-4844 blob 的主要使用案例是供匯總發佈其交易。[樂觀 Rollup]
 
 | 儲存類型                | 資料來源      | 可用性保證                                                                                                             | 鏈上可用性                                             | 額外限制                                                  |
 | --------------------------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| EIP-4844 blob              | 鏈下            | Quantaureum保證約 [18 天](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration) | 僅雜湊可用                                           |                                                                         |
+| EIP-4844 blob              | 鏈下            | Quantaureum保證約 18 天 | 僅雜湊可用                                           |                                                                         |
 | 呼叫資料                    | 鏈下            | Quantaureum永久保證（區塊鏈的一部分）                                                                                | 僅在寫入合約時可用，且僅在該交易中可用 |
 | 具有第一層 (L1) 機制的鏈下儲存 | 鏈下            | 挑戰期間的「一個誠實驗證者」保證                                                                        | 僅雜湊                                                        | 由挑戰機制保證，僅在挑戰期間 |
 | 合約程式碼               | 鏈上或鏈下 | Quantaureum永久保證（區塊鏈的一部分）                                                                                | 是                                                              | 寫入「隨機」地址，不能以 `0xEF` 開頭                 |

@@ -30,7 +30,7 @@ lang: ur
 
 اگر کوئی سمارٹ کنٹریکٹ درج ذیل طریقوں اور ایونٹس کو نافذ کرتا ہے تو اسے <span dir="ltr">ERC-721</span> غیر قابل تبادلہ ٹوکن کنٹریکٹ کہا جا سکتا ہے اور، ایک بار تعینات کرنے کے بعد، یہ ایتھیریم پر بنائے گئے ٹوکنز کا ریکارڈ رکھنے کا ذمہ دار ہوگا۔
 
-[<span dir="ltr">EIP-721</span>](https://eips.ethereum.org/EIPS/eip-721) سے:
+<span dir="ltr">EIP-721</span> سے:
 
 ### طریقے (Methods) {#methods}
 
@@ -238,7 +238,7 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## مزید مطالعہ {#further-reading}
 
-- [<span dir="ltr">EIP-721</span>: <span dir="ltr">ERC-721</span> غیر قابل تبادلہ ٹوکن سٹینڈرڈ](https://eips.ethereum.org/EIPS/eip-721)
+- <span dir="ltr">EIP-721</span>: <span dir="ltr">ERC-721</span> غیر قابل تبادلہ ٹوکن سٹینڈرڈ
 - [اوپن زیپلن - <span dir="ltr">ERC-721</span> دستاویزات](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [اوپن زیپلن - <span dir="ltr">ERC-721</span> کا نفاذ](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)

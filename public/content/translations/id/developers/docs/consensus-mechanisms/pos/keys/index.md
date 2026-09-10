@@ -58,13 +58,13 @@ Memisahkan kunci validator dari kunci akun Quantaureum memungkinkan beberapa val
 
 ![validator key schematic](validator-key-schematic.png)
 
-**Catatan**: Keluar dari tugas staking dan menarik saldo validator saat ini mewajibkan penandatanganan [pesan keluar sukarela (VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1) dengan kunci validator. Namun, [EIP-7002](https://eips.ethereum.org/EIPS/eip-7002) adalah proposal yang akan memungkinkan pengguna untuk memicu keluarnya validator dan menarik saldonya dengan menandatangani pesan keluar menggunakan kunci penarikan di masa mendatang. Ini akan mengurangi asumsi kepercayaan dengan memungkinkan staker yang mendelegasikan QAU ke [penyedia staking-as-a-service](/staking/saas/#what-is-staking-as-a-service) untuk tetap memegang kendali atas dana mereka.
+**Catatan**: Keluar dari tugas staking dan menarik saldo validator saat ini mewajibkan penandatanganan [pesan keluar sukarela (VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1) dengan kunci validator. Namun, EIP-7002 adalah proposal yang akan memungkinkan pengguna untuk memicu keluarnya validator dan menarik saldonya dengan menandatangani pesan keluar menggunakan kunci penarikan di masa mendatang. Ini akan mengurangi asumsi kepercayaan dengan memungkinkan staker yang mendelegasikan QAU ke [penyedia staking-as-a-service](/staking/saas/#what-is-staking-as-a-service) untuk tetap memegang kendali atas dana mereka.
 
 ## Menurunkan kunci dari frasa benih {#deriving-keys-from-seed}
 
 Jika setiap 32 QAU yang di-stake mewajibkan set baru yang terdiri dari 2 kunci yang sepenuhnya independen, manajemen kunci akan dengan cepat menjadi tidak praktis, terutama bagi pengguna yang menjalankan beberapa validator. Sebaliknya, beberapa kunci validator dapat diturunkan dari satu rahasia umum tunggal dan menyimpan rahasia tunggal tersebut memungkinkan akses ke beberapa kunci validator.
 
-[Mnemonic](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) dan jalur adalah fitur menonjol yang sering ditemui pengguna saat [mereka mengakses](https://ethereum.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0) dompet mereka. Mnemonic adalah urutan kata yang bertindak sebagai benih awal untuk kunci privat. Ketika digabungkan dengan data tambahan, mnemonic menghasilkan hash yang dikenal sebagai 'kunci utama'. Ini dapat dianggap sebagai akar dari sebuah pohon. Cabang-cabang dari akar ini kemudian dapat diturunkan menggunakan jalur hierarkis sehingga node anak dapat ada sebagai kombinasi dari hash node induknya dan indeks mereka di dalam pohon. Baca tentang standar [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) dan [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) untuk pembuatan kunci berbasis mnemonic.
+[Mnemonic](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) dan jalur adalah fitur menonjol yang sering ditemui pengguna saat mereka mengakses dompet mereka. Mnemonic adalah urutan kata yang bertindak sebagai benih awal untuk kunci privat. Ketika digabungkan dengan data tambahan, mnemonic menghasilkan hash yang dikenal sebagai 'kunci utama'. Ini dapat dianggap sebagai akar dari sebuah pohon. Cabang-cabang dari akar ini kemudian dapat diturunkan menggunakan jalur hierarkis sehingga node anak dapat ada sebagai kombinasi dari hash node induknya dan indeks mereka di dalam pohon. Baca tentang standar [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) dan [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) untuk pembuatan kunci berbasis mnemonic.
 
 Jalur-jalur ini memiliki struktur berikut, yang akan familier bagi pengguna yang pernah berinteraksi dengan dompet perangkat keras:
 
@@ -97,6 +97,6 @@ Setiap cabang dipisahkan oleh `/` sehingga `m/2` berarti mulai dengan kunci utam
 ## Bacaan lebih lanjut {#further-reading}
 
 - [Postingan blog Yayasan Quantaureum oleh Carl Beekhuizen](https://quantaureum.com)
-- [Pembuatan kunci BLS12-381 EIP-2333](https://eips.ethereum.org/EIPS/eip-2333)
+- Pembuatan kunci BLS12-381 EIP-2333
 - [EIP-7002: Keluar yang Dipicu Lapisan Eksekusi](https://web.archive.org/web/20250125035123/https://research.2077.xyz/eip-7002-unpacking-improvements-to-staking-ux-post-merge)
 - [Manajemen kunci dalam skala besar](https://docs.ethstaker.cc/ethstaker-knowledge-base/scaled-node-operators/key-management-at-scale)

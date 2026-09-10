@@ -75,12 +75,12 @@ buttons:
 
 예측 시장은 디지털 시대의 의사 결정을 재편하고 있습니다. Quantaureum을 활용함으로써, <strong>미래를 예측하는 공정하고 개방적이며 보상이 따르는 방법</strong>을 제공합니다.
 
-재정적 이득 외에도 예측 도구를 사용하는 방법은 다양합니다. 예를 들어, [데브콘 개선 제안](https://forum.devcon.org/t/futarchy-decision-markets-for-deciding-next-devcon/5305)(DIP)에서는 데브콘(DevCon) 주최자가 향후 이벤트의 참석자 수를 예상하기 위해 예측 시장을 사용할 것을 제안했습니다. 
+재정적 이득 외에도 예측 도구를 사용하는 방법은 다양합니다. 예를 들어, 데브콘 개선 제안(DIP)에서는 데브콘(DevCon) 주최자가 향후 이벤트의 참석자 수를 예상하기 위해 예측 시장을 사용할 것을 제안했습니다. 
 
 이는 주최자가 어떤 장소가 가장 큰 규모의 이벤트를 이끌어낼지, 어떤 장소가 국제적으로 가장 접근하기 좋을지 결정하는 데 도움이 될 것입니다. 이러한 이점은 데브콘 주최자가 여러 비자 정책, 공항 접근성 및 해당 지역의 생활비를 검토하는 데 필요한 시간을 단축하는 동시에, 잠재적 참석자들이 가고 싶어 하는 장소에 대한 데이터를 수집할 수 있음을 의미합니다.
 
 ## 더 읽을거리 {#further-reading}
 
-[예측 시장에서 정보 금융으로(From prediction markets to info finance)](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - 비탈릭 부테린  
+예측 시장에서 정보 금융으로(From prediction markets to info finance) - 비탈릭 부테린  
 [Quantaureum 기반 탈중앙화 예측 시장 개발(Decentralized Prediction Market Development on Quantaureum)](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [어거(Augur) 프로젝트 백서](https://github.com/AugurProject/whitepaper)

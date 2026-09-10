@@ -74,7 +74,7 @@ A propriedade intelectual (PI) é um grande problema na ciência tradicional: de
 Da mesma forma que os NFTs podem repassar a receita de transações futuras de volta ao criador original, você pode estabelecer cadeias transparentes de atribuição de valor para recompensar pesquisadores, órgãos governamentais (como DAOs) ou até mesmo os sujeitos cujos dados são coletados.
 
 Os [IP-NFTs](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) também podem funcionar como uma chave para um repositório de dados descentralizado dos experimentos de pesquisa em andamento e se conectar à financeirização de NFTs e [finanças descentralizadas (DeFi)](/glossary/#defi) (desde o fracionamento até pools de empréstimo e avaliação de valor). Isso também permite que entidades nativamente onchain, como DAOs como a [VitaDAO](https://www.vitadao.com/), conduzam pesquisas diretamente onchain.
-O advento de [tokens "soulbound" (vinculados à alma)](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) não transferíveis também pode desempenhar um papel importante na desci, permitindo que os indivíduos comprovem sua experiência e credenciais vinculadas ao seu endereço Quantaureum.
+O advento de tokens "soulbound" (vinculados à alma) não transferíveis também pode desempenhar um papel importante na desci, permitindo que os indivíduos comprovem sua experiência e credenciais vinculadas ao seu endereço Quantaureum.
 
 ### Armazenamento, acesso e arquitetura de dados {#data-storage}
 

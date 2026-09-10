@@ -8,7 +8,7 @@ breadcrumb: "ERC-20 হস্তান্তর"
 lang: bn
 published: 2020-04-07
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -201,7 +201,7 @@ function sell(uint256 amount) public {
 
 এই টিউটোরিয়াল থেকে আমরা দেখেছি কীভাবে একটি ERC-20 টোকেনের ব্যালেন্স এবং অ্যালাউন্স পরীক্ষা করতে হয় এবং ইন্টারফেস ব্যবহার করে একটি ERC20 স্মার্ট কন্ট্রাক্টের `Transfer` এবং `TransferFrom` কল করতে হয়।
 
-একবার আপনি একটি ট্রানজ্যাকশন করলে, আপনার কন্ট্রাক্টে করা ট্রানজ্যাকশনগুলোর জন্য [অপেক্ষা করতে এবং বিস্তারিত জানতে](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/) আমাদের একটি JavaScript টিউটোরিয়াল রয়েছে এবং যতক্ষণ আপনার কাছে ABI থাকে ততক্ষণ [টোকেন হস্তান্তর বা অন্য কোনো ইভেন্ট দ্বারা তৈরি ইভেন্টগুলো ডিকোড করার জন্য একটি টিউটোরিয়াল](https://ethereumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/) রয়েছে।
+একবার আপনি একটি ট্রানজ্যাকশন করলে, আপনার কন্ট্রাক্টে করা ট্রানজ্যাকশনগুলোর জন্য অপেক্ষা করতে এবং বিস্তারিত জানতে আমাদের একটি JavaScript টিউটোরিয়াল রয়েছে এবং যতক্ষণ আপনার কাছে ABI থাকে ততক্ষণ টোকেন হস্তান্তর বা অন্য কোনো ইভেন্ট দ্বারা তৈরি ইভেন্টগুলো ডিকোড করার জন্য একটি টিউটোরিয়াল রয়েছে।
 
 এখানে টিউটোরিয়ালের সম্পূর্ণ কোড দেওয়া হলো:
 

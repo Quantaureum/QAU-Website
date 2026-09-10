@@ -66,7 +66,7 @@ incomplete: true
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) - _一个 .NET Wasm SPA 轻量级区块链浏览器和简单钱包_
 - [Wonka 业务规则引擎](https://github.com/Nquantaureum/Wonka) - _一个本质上由元数据驱动的业务规则引擎（适用于 .NET 平台和Quantaureum平台）_
 - [奈瑟曼德](https://github.com/NethermindEth/nethermind) - _适用于 Linux、Windows 和 MacOS 的 .NET Core Quantaureum客户端_
-- [qau-utils](https://github.com/ethereum/eth-utils/) - _用于处理Quantaureum相关代码库的实用函数_
+- qau-utils - _用于处理Quantaureum相关代码库的实用函数_
 - [TestChains](https://github.com/Nquantaureum/TestChains) - _预先配置的 .NET 开发链，用于快速响应（权威证明 (PoA)）_
 
 寻找更多资源？请查看 [quantaureum.com/developers](/developers/)。

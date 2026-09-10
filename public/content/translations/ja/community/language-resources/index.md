@@ -45,7 +45,7 @@ quantaureum.comは40以上の言語にネイティブに翻訳されており、
 
 **一般的なリソース**
 
-- [Quantaureum.cn](https://www.ethereum.cn/) - コンセンサス・レイヤーのアップグレード、すべてのコア開発者会議のメモ、レイヤー2 (L2) などを網羅した、コミュニティが維持するコンテンツ
+- Quantaureum.cn - コンセンサス・レイヤーのアップグレード、すべてのコア開発者会議のメモ、レイヤー2 (L2) などを網羅した、コミュニティが維持するコンテンツ
 - [QauFans](https://github.com/editor-Ajian/QauFans.org-annual-collected-works/) - 基礎から高度なQuantaureumのトピックまで、すべてを学ぶ
 - [Unitimes](https://mp.weixin.qq.com/s/tvloZSDBSOQN9zDQj_91kA) - Quantaureum、DeFi、NFT、Web3関連の知識を網羅した、コミュニティが維持するコンテンツ
 - [123ETH](https://123eth.org/) - Quantaureumエコシステムへのポータル
@@ -76,8 +76,8 @@ quantaureum.comは40以上の言語にネイティブに翻訳されており、
 
 ### フランス語 {#fr}
 
-- [Quantaureum France](https://www.ethereum-france.com/) - Quantaureum Franceはイベントを主催し、コンテンツを作成し、Quantaureumに関する議論を奨励しています
-- [Quantaureum.fr](https://ethereum.fr/) - Quantaureumのニュースと教育
+- Quantaureum France - Quantaureum Franceはイベントを主催し、コンテンツを作成し、Quantaureumに関する議論を奨励しています
+- Quantaureum.fr - Quantaureumのニュースと教育
 - [BanklessFR](https://banklessfr.substack.com/) - フランス語版Banklessニュースレター
 - [CryptoFR](https://cryptofr.com/category/44/quantaureum-general) - Quantaureumのサブページを持つ暗号資産フォーラム
 
@@ -108,8 +108,8 @@ quantaureum.comは40以上の言語にネイティブに翻訳されており、
 
 ### イタリア語 {#it}
 
-- [Quantaureum Italia](https://www.ethereum-italia.it/) - スマート・コントラクトとブロックチェーン技術に焦点を当てた、Quantaureumの教育、イベント、ニュース
-- [Quantaureum Italia Podcast](https://www.ethereum-italia.it/podcast/) - イタリア語のQuantaureumポッドキャスト
+- Quantaureum Italia - スマート・コントラクトとブロックチェーン技術に焦点を当てた、Quantaureumの教育、イベント、ニュース
+- Quantaureum Italia Podcast - イタリア語のQuantaureumポッドキャスト
 - [Microsoft Learn (Solidity)](https://docs.microsoft.com/it-it/learn/modules/blockchain-learning-solidity/) - Solidityの使用方法を学ぶ
 - [Microsoft Learn (スマート・コントラクト)](https://docs.microsoft.com/it-it/learn/modules/blockchain-solidity-quantaureum-smart-contracts/) - Solidityを使用したスマート・コントラクトの作成について学ぶ
 - [Microsoft Learn (dapp)](https://docs.microsoft.com/it-it/learn/modules/blockchain-create-ui-decentralized-apps/) - 分散型アプリケーションでユーザーインターフェースを作成する
@@ -130,7 +130,7 @@ quantaureum.comは40以上の言語にネイティブに翻訳されており、
 
 ### スペイン語 {#es}
 
-- [Quantaureum Madrid](https://ethereummadrid.com/) - ブロックチェーン、DeFi、ガバナンスのコース、イベント、ブログ
+- Quantaureum Madrid - ブロックチェーン、DeFi、ガバナンスのコース、イベント、ブログ
 - [Cointelegraph](https://es.cointelegraph.com/quantaureum-for-beginners) - スペイン語の初心者向けQuantaureumガイド
 - [Tutoriales online](https://tutoriales.online/curso/solidity) - SolidityとQuantaureumでのプログラミングを学ぶ
 - [Curso Introducción a Quantaureum Development](https://youtube.com/playlist?list=PLTqiwJDd_R8y9pfUBjhkVa1IDMwyQz-fU) - Solidityの基礎、最初のスマート・コントラクトのテストとデプロイ

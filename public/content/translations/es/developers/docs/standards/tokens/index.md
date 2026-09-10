@@ -27,7 +27,7 @@ Estos son algunos de los estándares de tokens más populares en Quantaureum:
 - [ERC-721](/developers/docs/standards/tokens/erc-721/): una interfaz estándar para tokens no fungibles, como la escritura de una obra de arte o una canción.
 - [ERC-1155](/developers/docs/standards/tokens/erc-1155/): ERC-1155 permite realizar intercambios más eficientes y agrupar transacciones, lo que ahorra costos. Este estándar de token permite crear tanto tokens de utilidad (como $BNB o $BAT) como tokens no fungibles como CryptoPunks.
 
-La lista completa de propuestas de [ERC](https://eips.ethereum.org/erc).
+La lista completa de propuestas de ERC.
 
 ## Lecturas adicionales
 

@@ -23,7 +23,7 @@ Celem standardu takiego jak ERC-20 jest umożliwienie wielu implementacji token�
 
 Jeśli jesteś doświadczonym programistą, prawdopodobnie pamiętasz podobne konstrukcje w [Javie](https://www.w3schools.com/java/java_interface.asp) lub nawet w [plikach nagłówkowych C](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html).
 
-To jest definicja [interfejsu ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) od OpenZeppelin. Jest to tłumaczenie [czytelnego dla człowieka standardu](https://eips.ethereum.org/EIPS/eip-20) na kod Solidity. Oczywiście sam interfejs nie definiuje _jak_ cokolwiek zrobić. Zostało to wyjaśnione w kodzie źródłowym kontraktu poniżej.
+To jest definicja [interfejsu ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) od OpenZeppelin. Jest to tłumaczenie czytelnego dla człowieka standardu na kod Solidity. Oczywiście sam interfejs nie definiuje _jak_ cokolwiek zrobić. Zostało to wyjaśnione w kodzie źródłowym kontraktu poniżej.
 
 &nbsp;
 
@@ -88,9 +88,7 @@ Jak sama nazwa wskazuje, `balanceOf` zwraca saldo konta. Konta Quantaureum są i
 ```solidity
     /**
      * @dev Przenosi `amount` tokenów z konta wywołującego do `recipient`.
-     *
      * Zwraca wartość logiczną wskazującą, czy operacja się powiodła.
-     *
      * Emituje zdarzenie {Transfer}.
      */
     function transfer(address recipient, uint256 amount) external returns (bool);
@@ -114,7 +112,6 @@ Limity wydatków pozwalają kontu na wydanie pewnej ilości tokenów należącyc
      * @dev Zwraca pozostałą liczbę tokenów, które `spender` będzie
      * mógł wydać w imieniu `owner` poprzez {transferFrom}. Domyślnie wynosi
      * zero.
-     *
      * Ta wartość zmienia się, gdy wywoływane są {approve} lub {transferFrom}.
      */
     function allowance(address owner, address spender) external view returns (uint256);
@@ -127,16 +124,13 @@ Funkcja `allowance` pozwala każdemu sprawdzić, jaki jest limit wydatków, któ
 ```solidity
     /**
      * @dev Ustawia `amount` jako limit wydatków dla `spender` na tokenach wywołującego.
-     *
      * Zwraca wartość logiczną wskazującą, czy operacja się powiodła.
-     *
      * WAŻNE: Należy pamiętać, że zmiana limitu wydatków za pomocą tej metody niesie ze sobą ryzyko,
      * że ktoś może wykorzystać zarówno stary, jak i nowy limit wydatków z powodu niefortunnej
      * kolejności transakcji. Jednym z możliwych rozwiązań łagodzących ten problem
      * jest najpierw zmniejszenie limitu wydatków dla `spender` do 0, a następnie ustawienie
      * żądanej wartości:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
-     *
+
      * Emituje zdarzenie {Approval}.
      */
     function approve(address spender, uint256 amount) external returns (bool);
@@ -151,9 +145,7 @@ Funkcja `approve` tworzy limit wydatków. Koniecznie przeczytaj wiadomość o ty
      * @dev Przenosi `amount` tokenów od `sender` do `recipient` przy użyciu
      * mechanizmu limitu wydatków. `amount` jest następnie odejmowane od limitu wydatków
      * wywołującego.
-     *
      * Zwraca wartość logiczną wskazującą, czy operacja się powiodła.
-     *
      * Emituje zdarzenie {Transfer}.
      */
     function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
@@ -168,7 +160,6 @@ Na koniec, `transferFrom` jest używane przez wydającego do faktycznego wydania
     /**
      * @dev Emitowane, gdy `value` tokenów zostaje przeniesionych z jednego konta (`from`) na
      * drugie (`to`).
-     *
      * Należy pamiętać, że `value` może wynosić zero.
      */
     event Transfer(address indexed from, address indexed to, uint256 value);
@@ -206,7 +197,7 @@ import "../../math/SafeMath.sol";
 ```
 
 - `GSN/Context.sol` to definicje wymagane do korzystania z [OpenGSN](https://opengsn.org/), systemu, który pozwala użytkownikom bez etheru na korzystanie z blockchaina. Zauważ, że jest to stara wersja, jeśli chcesz zintegrować się z OpenGSN, [skorzystaj z tego samouczka](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [Biblioteka SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), która zapobiega przepełnieniom arytmetycznym (overflow/underflow) dla wersji Solidity **&lt;0.8.0**. W Solidity ≥0.8.0 operacje arytmetyczne automatycznie powodują wycofanie w przypadku przepełnienia, co czyni SafeMath niepotrzebnym. Ten kontrakt używa SafeMath dla kompatybilności wstecznej ze starszymi wersjami kompilatora.
+- Biblioteka SafeMath, która zapobiega przepełnieniom arytmetycznym (overflow/underflow) dla wersji Solidity **&lt;0.8.0**. W Solidity ≥0.8.0 operacje arytmetyczne automatycznie powodują wycofanie w przypadku przepełnienia, co czyni SafeMath niepotrzebnym. Ten kontrakt używa SafeMath dla kompatybilności wstecznej ze starszymi wersjami kompilatora.
 
 &nbsp;
 
@@ -215,24 +206,19 @@ Ten komentarz wyjaśnia cel kontraktu.
 ```solidity
 /**
  * @dev Implementacja interfejsu {IERC20}.
- *
  * Ta implementacja jest niezależna od sposobu tworzenia tokenów. Oznacza to,
  * że mechanizm podaży musi zostać dodany w kontrakcie pochodnym przy użyciu {_mint}.
  * Ogólny mechanizm można znaleźć w {ERC20PresetMinterPauser}.
- *
  * WSKAZÓWKA: Szczegółowy opis znajduje się w naszym przewodniku
  * https://forum.zeppelin.solutions/t/how-to-implement-erc20-supply-mechanisms/226[How
  * to implement supply mechanisms].
- *
  * Postępowaliśmy zgodnie z ogólnymi wytycznymi OpenZeppelin: funkcje wycofują zmiany (revert) zamiast
  * zwracać `false` w przypadku niepowodzenia. To zachowanie jest jednak konwencjonalne
  * i nie koliduje z oczekiwaniami aplikacji ERC-20.
- *
  * Dodatkowo, zdarzenie {Approval} jest emitowane przy wywołaniach {transferFrom}.
  * Pozwala to aplikacjom na zrekonstruowanie limitu wydatków dla wszystkich kont tylko
  * poprzez nasłuchiwanie tych zdarzeń. Inne implementacje EIP mogą nie emitować
  * tych zdarzeń, ponieważ nie jest to wymagane przez specyfikację.
- *
  * Na koniec dodano niestandardowe funkcje {decreaseAllowance} i {increaseAllowance},
  * aby złagodzić dobrze znane problemy związane z ustawianiem
  * limitów wydatków. Zobacz {IERC20-approve}.
@@ -308,9 +294,7 @@ Aplikacje muszą wiedzieć, jak wyświetlić saldo tokenów. Jeśli użytkownik 
     /**
      * @dev Ustawia wartości dla {name} i {symbol}, inicjuje {decimals}
      * domyślną wartością 18.
-     *
      * Aby wybrać inną wartość dla {decimals}, użyj {_setupDecimals}.
-     *
      * Wszystkie trzy z tych wartości są niezmienne: mogą zostać ustawione tylko raz w
      * konstruktorze.
      */
@@ -347,11 +331,9 @@ Konstruktor jest wywoływany przy pierwszym tworzeniu kontraktu. Zgodnie z konwe
      * @dev Zwraca liczbę miejsc po przecinku używaną do uzyskania reprezentacji dla użytkownika.
      * Na przykład, jeśli `decimals` wynosi `2`, saldo `505` tokenów powinno
      * zostać wyświetlone użytkownikowi jako `5,05` (`505 / 10 ** 2`).
-     *
      * Tokeny zazwyczaj przyjmują wartość 18, naśladując relację między
      * etherem a wei. Jest to wartość, której używa {ERC20}, chyba że wywołano
      * {_setupDecimals}.
-     *
      * UWAGA: Ta informacja jest używana tylko do celów _wyświetlania_: w
      * żaden sposób nie wpływa na arytmetykę kontraktu, w tym
      * {IERC20-balanceOf} i {IERC20-transfer}.
@@ -406,9 +388,7 @@ Odczyt salda konta. Zauważ, że każdy może uzyskać saldo konta dowolnej inne
 ```solidity
     /**
      * @dev Zobacz {IERC20-transfer}.
-     *
      * Wymagania:
-     *
      * - `recipient` nie może być adresem zerowym.
      * - wywołujący musi posiadać saldo wynoszące co najmniej `amount`.
      */
@@ -451,9 +431,7 @@ Funkcja `allowance` pozwala każdemu sprawdzić dowolny limit wydatków.
 ```solidity
     /**
      * @dev Zobacz {IERC20-approve}.
-     *
      * Wymagania:
-     *
      * - `spender` nie może być adresem zerowym.
      */
     function approve(address spender, uint256 amount) public virtual override returns (bool) {
@@ -481,12 +459,9 @@ Jest to funkcja, którą wywołuje wydający, aby wydać limit wydatków. Wymaga
 ```solidity
     /**
      * @dev Zobacz {IERC20-transferFrom}.
-     *
      * Emituje zdarzenie {Approval} wskazujące zaktualizowany limit wydatków. Nie jest to
      * wymagane przez EIP. Zobacz notatkę na początku {ERC20}.
-     *
      * Wymagania:
-     *
      * - `sender` i `recipient` nie mogą być adresem zerowym.
      * - `sender` musi posiadać saldo wynoszące co najmniej `amount`.
      * - wywołujący musi posiadać limit wydatków dla tokenów ``sender`` wynoszący co najmniej
@@ -543,14 +518,10 @@ B:
 ```solidity
     /**
      * @dev Atomicznie zwiększa limit wydatków przyznany `spender` przez wywołującego.
-     *
      * Jest to alternatywa dla {approve}, która może być użyta jako środek zaradczy na
      * problemy opisane w {IERC20-approve}.
-     *
      * Emituje zdarzenie {Approval} wskazujące zaktualizowany limit wydatków.
-     *
      * Wymagania:
-     *
      * - `spender` nie może być adresem zerowym.
      */
     function increaseAllowance(address spender, uint256 addedValue) public virtual returns (bool) {
@@ -565,14 +536,10 @@ Funkcja `a.add(b)` to bezpieczne dodawanie. W mało prawdopodobnym przypadku, gd
 
     /**
      * @dev Atomicznie zmniejsza limit wydatków przyznany `spender` przez wywołującego.
-     *
      * Jest to alternatywa dla {approve}, która może być użyta jako środek zaradczy na
      * problemy opisane w {IERC20-approve}.
-     *
      * Emituje zdarzenie {Approval} wskazujące zaktualizowany limit wydatków.
-     *
      * Wymagania:
-     *
      * - `spender` nie może być adresem zerowym.
      * - `spender` musi posiadać limit wydatków dla wywołującego wynoszący co najmniej
      * `subtractedValue`.
@@ -593,14 +560,10 @@ Oto cztery funkcje, które wykonują właściwą pracę: `_transfer`, `_mint`, `
 ```solidity
     /**
      * @dev Przenosi `amount` tokenów od `sender` do `recipient`.
-     *
      * Ta wewnętrzna funkcja jest odpowiednikiem {transfer} i może być użyta do
      * np. implementacji automatycznych opłat w tokenach, mechanizmów slashingu itp.
-     *
      * Emituje zdarzenie {Transfer}.
-     *
      * Wymagania:
-     *
      * - `sender` nie może być adresem zerowym.
      * - `recipient` nie może być adresem zerowym.
      * - `sender` musi posiadać saldo wynoszące co najmniej `amount`.
@@ -662,11 +625,8 @@ Te dwie funkcje (`_mint` i `_burn`) modyfikują całkowitą podaż tokenów. Są
 ```solidity
     /** @dev Tworzy `amount` tokenów i przypisuje je do `account`, zwiększając
      * całkowitą podaż.
-     *
      * Emituje zdarzenie {Transfer} z `from` ustawionym na adres zerowy.
-     *
      * Wymagania:
-     *
      * - `to` nie może być adresem zerowym.
      */
     function _mint(address account, uint256 amount) internal virtual {
@@ -686,11 +646,8 @@ Pamiętaj, aby zaktualizować `_totalSupply`, gdy zmieni się całkowita liczba 
     /**
      * @dev Niszczy `amount` tokenów z `account`, zmniejszając
      * całkowitą podaż.
-     *
      * Emituje zdarzenie {Transfer} z `to` ustawionym na adres zerowy.
-     *
      * Wymagania:
-     *
      * - `account` nie może być adresem zerowym.
      * - `account` musi posiadać co najmniej `amount` tokenów.
      */
@@ -714,14 +671,10 @@ Jest to funkcja, która faktycznie określa limity wydatków. Zauważ, że pozwa
 ```solidity
     /**
      * @dev Ustawia `amount` jako limit wydatków dla `spender` na tokenach `owner`.
-     *
      * Ta wewnętrzna funkcja jest odpowiednikiem `approve` i może być użyta do
      * np. ustawiania automatycznych limitów wydatków dla pewnych podsystemów itp.
-     *
      * Emituje zdarzenie {Approval}.
-     *
      * Wymagania:
-     *
      * - `owner` nie może być adresem zerowym.
      * - `spender` nie może być adresem zerowym.
      */
@@ -749,7 +702,6 @@ Wyemituj zdarzenie `Approval`. W zależności od tego, jak napisana jest aplikac
 
     /**
      * @dev Ustawia {decimals} na wartość inną niż domyślne 18.
-     *
      * OSTRZEŻENIE: Ta funkcja powinna być wywoływana tylko z konstruktora. Większość
      * aplikacji, które wchodzą w interakcję z kontraktami tokenów, nie będzie oczekiwać,
      * że {decimals} kiedykolwiek się zmieni, i może działać nieprawidłowo, jeśli tak się stanie.
@@ -768,15 +720,12 @@ Ta funkcja modyfikuje zmienną `_decimals`, która służy do informowania inter
     /**
      * @dev Hook, który jest wywoływany przed każdym transferem tokenów. Obejmuje to
      * wybijanie (minting) i palenie (burning).
-     *
      * Warunki wywołania:
-     *
      * - gdy `from` i `to` są różne od zera, `amount` tokenów ``from``
      * zostanie przetransferowane do `to`.
      * - gdy `from` wynosi zero, `amount` tokenów zostanie wybitych dla `to`.
      * - gdy `to` wynosi zero, `amount` tokenów ``from`` zostanie spalonych.
      * - `from` i `to` nigdy nie są jednocześnie zerem.
-     *
      * Aby dowiedzieć się więcej o hookach, przejdź do xref:ROOT:extending-contracts.adoc#using-hooks[Using Hooks].
      */
     function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual { }

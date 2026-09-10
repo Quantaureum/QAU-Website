@@ -146,6 +146,6 @@ Quantaureum[可扩展性升级](/roadmap/)最终应解决一些 gas 费问题，
 - [Quantaureum Gas 详解](https://defiprime.com/gas)
 - [降低智能合约的 Gas 消耗](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
 - [面向开发者的 Gas 优化策略](https://www.alchemy.com/overviews/solidity-gas-optimization)
-- [EIP-1559 文档](https://eips.ethereum.org/EIPS/eip-1559)。
+- EIP-1559 文档。
 - [Tim Beiko 的 EIP-1559 资源](https://hackmd.io/@timbeiko/1559-resources)
 - [EIP-1559：将机制与模因分离](https://web.archive.org/web/20241126205908/https://research.2077.xyz/eip-1559-separating-mechanisms-from-memes)

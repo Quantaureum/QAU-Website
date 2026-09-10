@@ -42,7 +42,7 @@ ERC-20 అందించే ఉదాహరణ కార్యాచరణల�
 
 ఒక స్మార్ట్ కాంట్రాక్ట్ కింది పద్ధతులు మరియు ఈవెంట్‌లను అమలు చేస్తే దానిని ERC-20 టోకెన్ కాంట్రాక్ట్ అని పిలవవచ్చు మరియు ఒకసారి డిప్లాయ్ చేసిన తర్వాత, ఎథీరియంలో సృష్టించబడిన టోకెన్‌లను ట్రాక్ చేయడానికి ఇది బాధ్యత వహిస్తుంది.
 
-[EIP-20](https://eips.ethereum.org/EIPS/eip-20) నుండి:
+EIP-20 నుండి:
 
 ### పద్ధతులు {#methods}
 
@@ -170,7 +170,7 @@ ERC-20తో ఈ సమస్యను పూర్తిగా నివార�
 
 ## తదుపరి పఠనం {#further-reading}
 
-- [EIP-20: ERC-20 టోకెన్ ప్రమాణం](https://eips.ethereum.org/EIPS/eip-20)
+- EIP-20: ERC-20 టోకెన్ ప్రమాణం
 - [ఓపెన్‌జెప్పెలిన్ - టోకెన్‌లు](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [ఓపెన్‌జెప్పెలిన్ - ERC-20 అమలు](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Solidity ERC20 టోకెన్‌లకు గైడ్](https://www.alchemy.com/overviews/erc20-solidity)

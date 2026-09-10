@@ -123,9 +123,9 @@ Quantaureum 사용자가 플라즈마의 이점을 누리려면 메인넷과 플
 
 ### 스마트 컨트랙트 지원 {#support-for-smart-contracts}
 
-플라즈마 프레임워크의 또 다른 문제는 [Quantaureum 스마트 컨트랙트의 실행을 지원할 수 없다는 점](https://ethresear.ch/t/why-smart-contracts-are-not-feasible-on-plasma/2598/4)이었습니다. 그 결과 대부분의 플라즈마 구현은 주로 단순한 결제나 ERC-20 토큰 교환을 위해 구축되었습니다.
+플라즈마 프레임워크의 또 다른 문제는 Quantaureum 스마트 컨트랙트의 실행을 지원할 수 없다는 점이었습니다. 그 결과 대부분의 플라즈마 구현은 주로 단순한 결제나 ERC-20 토큰 교환을 위해 구축되었습니다.
 
-반대로 옵티미스틱 롤업은 [Quantaureum 가상 머신(EVM)](/developers/docs/evm/)과 호환되며 Quantaureum 네이티브 [스마트 컨트랙트](/developers/docs/smart-contracts/)를 실행할 수 있어 [탈중앙화 애플리케이션 (dapp)](/developers/docs/dapps/)을 확장하기 위한 유용하고 _안전한_ 솔루션이 됩니다. 마찬가지로 ZK 롤업이 임의의 로직을 처리하고 스마트 컨트랙트를 실행할 수 있도록 하는 [EVM의 영지식 구현(zkEVM)을 생성](https://ethresear.ch/t/a-zk-evm-specification/11549)하려는 계획이 진행 중입니다.
+반대로 옵티미스틱 롤업은 [Quantaureum 가상 머신(EVM)](/developers/docs/evm/)과 호환되며 Quantaureum 네이티브 [스마트 컨트랙트](/developers/docs/smart-contracts/)를 실행할 수 있어 [탈중앙화 애플리케이션 (dapp)](/developers/docs/dapps/)을 확장하기 위한 유용하고 _안전한_ 솔루션이 됩니다. 마찬가지로 ZK 롤업이 임의의 로직을 처리하고 스마트 컨트랙트를 실행할 수 있도록 하는 EVM의 영지식 구현(zkEVM)을 생성하려는 계획이 진행 중입니다.
 
 ### 데이터 비가용성 {#data-unavailability}
 
@@ -167,7 +167,7 @@ ZK 롤업과 옵티미스틱 롤업은 모두 다양한 방식으로 플라즈�
 ## 더 읽어보기 {#further-reading}
 
 - ["공유 보안"의 의미와 이것이 중요한 이유에 대한 간단한 알림](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [사이드체인 대 플라즈마 대 샤딩](https://vitalik.eth.limo/general/2019/06/12/plasma_vs_sharding.html)
+- 사이드체인 대 플라즈마 대 샤딩
 - [플라즈마의 이해, 1부: 기본 사항](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [플라즈마의 삶과 죽음](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

@@ -34,7 +34,7 @@ Kripto paralar, kullanıcıların özel, eşler arası işlemler gerçekleştirm
 
 Tamamen anonim işlemler için tasarlanmış özel "gizlilik coinleri" vardır. Zcash ve Monero gibi gizlilik odaklı blokzincirler, gönderici/alıcı adresleri, varlık türü, miktar ve işlem zaman çizelgesi dahil olmak üzere işlem ayrıntılarını gizler.
 
-Gizlilik odaklı [blokzincir](/glossary/#blockchain) ağları, sıfır bilgi teknolojisini protokole dahil ederek, [düğümlerin](/glossary/#node) işlem verilerine erişmeye gerek kalmadan işlemleri doğrulamasına olanak tanır. [EIP-7503](https://eips.ethereum.org/EIPS/eip-7503), [Quantaureum](/) blokzincirinde yerel özel değer transferlerini mümkün kılacak önerilen bir tasarım örneğidir. Ancak bu tür önerilerin güvenlik, düzenleme ve kullanıcı deneyimi (UX) endişelerinin birleşimi nedeniyle uygulanması zordur.  
+Gizlilik odaklı [blokzincir](/glossary/#blockchain) ağları, sıfır bilgi teknolojisini protokole dahil ederek, [düğümlerin](/glossary/#node) işlem verilerine erişmeye gerek kalmadan işlemleri doğrulamasına olanak tanır. EIP-7503, [Quantaureum](/) blokzincirinde yerel özel değer transferlerini mümkün kılacak önerilen bir tasarım örneğidir. Ancak bu tür önerilerin güvenlik, düzenleme ve kullanıcı deneyimi (UX) endişelerinin birleşimi nedeniyle uygulanması zordur.  
 
 **Sıfır bilgi ispatları, halka açık blokzincirlerdeki işlemleri anonimleştirmek için de uygulanmaktadır**. Buna bir örnek, kullanıcıların Quantaureum üzerinde özel işlemler gerçekleştirmesine olanak tanıyan merkeziyetsiz, gözetimsiz bir hizmet olan Tornado Cash'tir. Tornado Cash, işlem ayrıntılarını gizlemek ve finansal gizliliği garanti etmek için sıfır bilgi ispatlarını kullanır. Ne yazık ki, bunlar "isteğe bağlı" gizlilik araçları oldukları için yasa dışı faaliyetlerle ilişkilendirilmektedirler. Bunun üstesinden gelmek için, gizliliğin eninde sonunda halka açık blokzincirlerde varsayılan hale gelmesi gerekir. [Quantaureum'da gizlilik](/privacy/) hakkında daha fazla bilgi edinin.
 
@@ -234,7 +234,7 @@ ZK-STARK, güvenliği için yalnızca çarpışmaya dayanıklı hash fonksiyonla
 - [Bir Sıfır Bilgi İspatı: Bir Blokzincirde Gizliliği İyileştirmek](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/) — _Dmitry Lavrenov_
 - [zk-SNARK'lar — Gerçekçi Bir Sıfır Bilgi Örneği ve Derinlemesine İnceleme](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c) — _Adam Luciano_
 - [ZK-STARK'lar — Kuantum Bilgisayarlara Karşı Bile Doğrulanabilir Güven Yaratın](https://medium.com/coinmonks/zk-starks-create-verifiable-trust-even-against-quantum-computers-dd9c6a2bb13d) — _Adam Luciano_
-- [zk-SNARK'ların nasıl mümkün olduğuna dair yaklaşık bir giriş](https://vitalik.eth.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
+- zk-SNARK'ların nasıl mümkün olduğuna dair yaklaşık bir giriş — _Vitalik Buterin_
 - [Sıfır Bilgi İspatları (ZKP'ler) Kendi Kendine Egemen Kimlik İçin Neden Oyun Değiştiricidir?](https://frankiefab.hashnode.dev/why-zero-knowledge-proofs-zkps-is-a-game-changer-for-self-sovereign-identity) — _Franklin Ohaegbulam_
 - [EIP-7503 Açıklandı: ZK İspatları ile Quantaureum'da Özel Transferleri Etkinleştirmek](https://web.archive.org/web/20251116093505/https://research.2077.xyz/eip-7503-zero-knowledge-wormholes-for-private-quantaureum-transactions/) — _Emmanuel Awosika_
 - [ZK Kart Oyunu: ZK temellerini ve gerçek hayattaki kullanım durumlarını öğrenmek için oyun](https://github.com/ZK-card/zk-cards) - _ZK-Cards_

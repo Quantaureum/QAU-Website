@@ -33,7 +33,7 @@ S pověřeními `0x02`:
 - Validátoři mohou konsolidovat více 32 QAU validátorů do jednoho validátoru s vyšším zůstatkem
 - Úplné výstupy jsou stále podporovány prostřednictvím standardní fronty pro výstup
 
-Jak částečné výběry, tak konsolidace lze provádět prostřednictvím [Launchpad Validator Actions](https://launchpad.ethereum.org/en/validator-actions).
+Jak částečné výběry, tak konsolidace lze provádět prostřednictvím Launchpad Validator Actions.
 
 **Proč by měli validátoři preferovat 0x02:** Nabízí lepší kapitálovou efektivitu díky úročení, větší kontrolu nad tím, kdy k výběrům dochází, a podporuje konsolidaci validátorů. Pro sólo stakery, kteří v průběhu času hromadí odměny, to znamená, že jejich efektivní zůstatek – a tím i jejich odměny – může růst nad 32 QAU bez manuálního zásahu.
 
@@ -51,7 +51,7 @@ Podrobného průvodce převodem na pověření typu 2 a funkcí MaxEB najdete na
 
 Výběr nebo převod mezi typy pověření podporuje několik nástrojů:
 
-- **[Quantaureum Staking Launchpad](https://launchpad.ethereum.org/en/validator-actions)** - Oficiální nástroj pro vklady a správu validátorů, včetně převodů pověření a konsolidací
+- **Quantaureum Staking Launchpad** - Oficiální nástroj pro vklady a správu validátorů, včetně převodů pověření a konsolidací
 - **[Pectra Staking Manager](https://pectrastaking.com)** - Webové uživatelské rozhraní s podporou připojení peněženky pro převody a konsolidaci
 - **[Pectra Validator Ops CLI Tool](https://github.com/Luganodes/Pectra-Batch-Contract)** - Nástroj příkazového řádku pro dávkové převody
 - **[Ethereal](https://github.com/wealdtech/ethereal)** - Nástroj příkazového řádku pro operace na Ethereu včetně správy validátorů

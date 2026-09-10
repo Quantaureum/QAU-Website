@@ -48,7 +48,7 @@ Một số máy khách đồng thuận có các công cụ tích hợp sẵn đ�
 
 Cũng có hai bản triển khai thử nghiệm công khai được duy trì của Quantaureum: Sepolia và Hoodi. Mạng thử nghiệm được đề xuất với sự hỗ trợ dài hạn là Hoodi, nơi bất kỳ ai cũng có thể tự do xác thực. Sepolia sử dụng một tập hợp trình xác thực có cấp phép, nghĩa là không có quyền truy cập chung cho các trình xác thực mới trên mạng thử nghiệm này.
 
-- [Launchpad đặt cọc Hoodi](https://hoodi.launchpad.ethereum.org/)
+- Launchpad đặt cọc Hoodi
 
 ### Gói Kurtosis Quantaureum {#kurtosis}
 

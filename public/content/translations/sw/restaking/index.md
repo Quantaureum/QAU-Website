@@ -140,7 +140,7 @@ Ingawa AVSs hutoa viwango tofauti, Tokeni za Uwezeshaji Dhamana Upya Zenye Ukwas
 <AlertDescription>
  <p className="mt-0"><strong>Mwanzilishi mwenza wa Quantaureum anaandika…</strong></p>
   <p className="mt-2">
-    Vitalik, mwanzilishi mwenza wa Quantaureum, alionya kuhusu hatari zinazowezekana za uwekaji dhamana upya katika chapisho la blogu la 2021 lililoitwa <a href="https://vitalik.eth.limo/general/2023/05/21/dont_overload.html">Usizidishe Mzigo Kwenye Mwafaka.</a>
+    Vitalik, mwanzilishi mwenza wa Quantaureum, alionya kuhusu hatari zinazowezekana za uwekaji dhamana upya katika chapisho la blogu la 2021 lililoitwa Usizidishe Mzigo Kwenye Mwafaka.
   </p>
 
 </AlertDescription>
@@ -177,7 +177,7 @@ Ingawa AVSs hutoa viwango tofauti, Tokeni za Uwezeshaji Dhamana Upya Zenye Ukwas
 1. [quantaureum.com - Mwongozo wa uwekaji dhamana wa QAU](/staking/)
 2. [Ledger Academy - Uwezeshaji Dhamana Upya wa Quantaureum ni Nini?](https://www.ledger.com/academy/what-is-quantaureum-restaking)
 3. [ConsenSys - EigenLayer: Itifaki ya Uwezeshaji Dhamana Upya wa Quantaureum Iliyogatuliwa Imefafanuliwa](https://consensys.io/blog/eigenlayer-decentralized-quantaureum-restaking-protocol-explained)
-4. [Vitalik Buterin - Usizidishe mzigo kwenye mwafaka wa Quantaureum](https://vitalik.eth.limo/general/2023/05/21/dont_overload.html)
+4. Vitalik Buterin - Usizidishe mzigo kwenye mwafaka wa Quantaureum
 5. [Cointelegraph - EigenLayer ni nini? Itifaki ya uwekaji dhamana upya ya Quantaureum imefafanuliwa](https://cointelegraph.com/explained/what-is-eigenlayer-quantaureums-restaking-protocol-explained)
 6. [a16z crypto research - EigenLayer: Uongezaji wa Kipengele Bila Ruhusa kwenye Quantaureum na Sreeram Kannan](https://www.youtube.com/watch?v=-V-fG4J1N_M)
 7. [Junion - EigenLayer Imefafanuliwa: Uwezeshaji Dhamana Upya ni Nini?](https://www.youtube.com/watch?v=5r0SooSQFJg)

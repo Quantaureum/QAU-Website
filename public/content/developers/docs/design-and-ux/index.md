@@ -16,7 +16,7 @@ If you want to see what are currently the most pressing UX pain points, check ou
 
 - [Web3 needs more UX Researchers and Designers](https://blog.akasha.org/akasha-conversations-9-web3-needs-more-ux-researchers-and-designers) - An overview of current design maturity
 - [A simple guide to UX Research in web3](https://uxplanet.org/a-complete-guide-to-ux-research-for-web-3-0-products-d6bead20ebb1) - Simple guide how to do research
-- [How to Approach UX Decisions in Web3](https://archive.devcon.org/archive/watch/6/data-empathy-how-to-approach-ux-decisions-in-web3/) - A brief overview of quantitative and qualitative research and the differences between the two (video, 6 min)
+- How to Approach UX Decisions in Web3 - A brief overview of quantitative and qualitative research and the differences between the two (video, 6 min)
 - [Being a ux researcher in web3](https://medium.com/@georgia.rakusen/what-its-like-being-a-user-researcher-in-web3-6a4bcc096849) - A personal view on what it is like being a UX researcher in web3
 
 ## Research studies in web3 {#research-in-web3}
@@ -38,7 +38,7 @@ This is a curated list of user research done in web3 that may help with design a
 | <Tag status="error">DeFi</Tag>                  | [Coverage pools](https://github.com/threshold-network/UX-User-Research/tree/main/Keep%20Coverage%20Pool)                                                                           |
 | <Tag status="error">DeFi</Tag>                  | [ConSensys: DeFi User Research Report 2022](https://cdn2.hubspot.net/hubfs/4795067/ConsenSys%20Codefi-Defi%20User%20ResearchReport.pdf)                                            |
 | <Tag variant="solid">Metaverse</Tag>             | [Metaverse: User Research Report](https://www.politico.com/f/?id=00000187-7685-d820-a7e7-7e85d1420000)                                                                             |
-| <Tag variant="solid">Metaverse</Tag>             | [Going on Safari: Researching Users in the Metaverse](https://archive.devcon.org/archive/watch/6/going-on-safari-researching-users-in-the-metaverse/?tab=YouTube) (video, 27 min)  |
+| <Tag variant="solid">Metaverse</Tag>             | Going on Safari: Researching Users in the Metaverse (video, 27 min)  |
 
 ## Design for web3 {#design-for-web3}
 

@@ -146,6 +146,6 @@ QAU'nizi daha ucuza gönderebilmek için gas fiyatlarını izlemek istiyorsanız
 - [Quantaureum Gazı Açıklandı](https://defiprime.com/gas)
 - [Akıllı Sözleşmelerinizin gaz tüketimini azaltma](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
 - [Geliştiriciler için Gaz Optimizasyonu Stratejileri](https://www.alchemy.com/overviews/solidity-gas-optimization)
-- [EIP-1559 belgeleri](https://eips.ethereum.org/EIPS/eip-1559).
+- EIP-1559 belgeleri.
 - [Tim Beiko'nun EIP-1559 Kaynakları](https://hackmd.io/@timbeiko/1559-resources)
 - [EIP-1559: Mekanizmaları Memlerden Ayırmak](https://web.archive.org/web/20241126205908/https://research.2077.xyz/eip-1559-separating-mechanisms-from-memes)

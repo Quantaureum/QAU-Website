@@ -54,7 +54,7 @@ O ERC-1363 também é útil para evitar a perda de tokens ou o bloqueio de token
 
 Diferente de outras propostas de extensão do ERC-20, o ERC-1363 não substitui os métodos `transfer` e `transferFrom` do ERC-20 e define os IDs de interfaces a serem implementados mantendo a compatibilidade com versões anteriores do ERC-20.
 
-Do [EIP-1363](https://eips.ethereum.org/EIPS/eip-1363):
+Do EIP-1363:
 
 ### Métodos {#methods}
 
@@ -167,11 +167,9 @@ interface ERC1363Receiver {
   /**
    * @dev Sempre que tokens ERC-1363 são transferidos para este contrato via `ERC1363::transferAndCall` ou `ERC1363::transferFromAndCall`
    * por `operator` a partir de `from`, esta função é chamada.
-   *
    * NOTA: Para aceitar a transferência, isso deve retornar
    * `bytes4(keccak256("onTransferReceived(address,address,uint256,bytes)"))`
    * (ou seja, 0x88a7ca5c, ou seu próprio seletor de função).
-   *
    * @param operator O endereço que chamou a função `transferAndCall` ou `transferFromAndCall`.
    * @param from O endereço do qual os tokens são transferidos.
    * @param value A quantidade de tokens transferida.
@@ -193,11 +191,9 @@ interface ERC1363Spender {
   /**
    * @dev Sempre que um `owner` de tokens ERC-1363 aprova este contrato via `ERC1363::approveAndCall`
    * para gastar seus tokens, esta função é chamada.
-   *
    * NOTA: Para aceitar a aprovação, isso deve retornar
    * `bytes4(keccak256("onApprovalReceived(address,uint256,bytes)"))`
    * (ou seja, 0x7b04a2d0, ou seu próprio seletor de função).
-   *
    * @param owner O endereço que chamou a função `approveAndCall` e anteriormente possuía os tokens.
    * @param value A quantidade de tokens a ser gasta.
    * @param data Dados adicionais sem formato especificado.
@@ -209,5 +205,5 @@ interface ERC1363Spender {
 
 ## Leitura adicional {#further-reading}
 
-- [ERC-1363: Padrão de Token Pagável](https://eips.ethereum.org/EIPS/eip-1363)
+- ERC-1363: Padrão de Token Pagável
 - [ERC-1363: Repositório no GitHub](https://github.com/vittominacori/erc1363-payable-token)

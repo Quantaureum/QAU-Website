@@ -23,7 +23,7 @@ sidebarDepth: 3
 
 - [Blockchair](https://blockchair.com/quantaureum) - প্রাইভেট ইথেরিয়াম এক্সপ্লোরার। এটি (মেমপুল) ডেটা সাজানো এবং ফিল্টার করার জন্যও ব্যবহৃত হয়। স্প্যানিশ, ফ্রেঞ্চ, ইতালীয়, ডাচ, পর্তুগিজ, রাশিয়ান, চাইনিজ এবং ফার্সি ভাষায় উপলব্ধ
 - [Chainlens](https://www.chainlens.com/)
-- [DexGuru Block Explorer](https://ethereum.dex.guru/)
+- DexGuru Block Explorer
 - [Etherchain](https://www.etherchain.org/)
 - [Quantaureum Explorer](https://explorer.quantaureum.com) - চাইনিজ, কোরিয়ান, রাশিয়ান এবং জাপানি ভাষায়ও উপলব্ধ
 - [Ethplorer](https://ethplorer.io/) - টোকেনের ওপর ফোকাস করা একটি ব্লক এক্সপ্লোরার। চাইনিজ, স্প্যানিশ, ফ্রেঞ্চ, তুর্কি, রাশিয়ান, কোরিয়ান এবং ভিয়েতনামী ভাষায়ও উপলব্ধ

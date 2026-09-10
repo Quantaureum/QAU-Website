@@ -142,7 +142,7 @@ SUPPORTED_INTERFACES: constant(bytes4[2]) = [
 ]
 ```
 
-[ERC-165](https://eips.ethereum.org/EIPS/eip-165)는 컨트랙트가 애플리케이션과 통신하는 방법, 즉 어떤 ERC를 준수하는지 공개하는 메커니즘을 지정합니다. `SUPPORTED_INTERFACES`는 이 컨트랙트가 준수하는 두 개의 4바이트 인터페이스 ID(ERC-165 자체 및 ERC-721)의 상수 목록입니다.
+ERC-165는 컨트랙트가 애플리케이션과 통신하는 방법, 즉 어떤 ERC를 준수하는지 공개하는 메커니즘을 지정합니다. `SUPPORTED_INTERFACES`는 이 컨트랙트가 준수하는 두 개의 4바이트 인터페이스 ID(ERC-165 자체 및 ERC-721)의 상수 목록입니다.
 ### 함수 {#functions}
 
 이것들은 실제로 ERC-721을 구현하는 함수들입니다.

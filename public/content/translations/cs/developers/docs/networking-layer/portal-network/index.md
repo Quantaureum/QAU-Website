@@ -16,7 +16,7 @@ Více o [uzlech a klientech](/developers/docs/nodes-and-clients/)
 
 Uzly Etherea ukládají svou vlastní úplnou nebo částečnou kopii blockchainu Etherea. Tato lokální kopie se používá k ověřování transakcí a zajištění toho, že uzel sleduje správný řetězec. Tato lokálně uložená data umožňují uzlům nezávisle ověřit, že příchozí data jsou platná a správná, aniž by musely důvěřovat jakémukoli jinému subjektu.
 
-Tato lokální kopie blockchainu a související data o stavu a stvrzenkách zabírají na pevném disku uzlu spoustu místa. Například pro provoz uzlu pomocí [Geth](https://geth.ethereum.org) spárovaného s konsensuálním klientem se doporučuje 2TB pevný disk. Při použití synchronizace snap (snap sync), která ukládá pouze data řetězce z relativně nedávné sady bloků, Geth obvykle zabírá asi 650 GB místa na disku, ale roste rychlostí přibližně 14 GB za týden (uzel můžete pravidelně prořezávat zpět na 650 GB).
+Tato lokální kopie blockchainu a související data o stavu a stvrzenkách zabírají na pevném disku uzlu spoustu místa. Například pro provoz uzlu pomocí Geth spárovaného s konsensuálním klientem se doporučuje 2TB pevný disk. Při použití synchronizace snap (snap sync), která ukládá pouze data řetězce z relativně nedávné sady bloků, Geth obvykle zabírá asi 650 GB místa na disku, ale roste rychlostí přibližně 14 GB za týden (uzel můžete pravidelně prořezávat zpět na 650 GB).
 
 To znamená, že provozování uzlů může být drahé, protože Ethereu musí být vyhrazeno velké množství místa na disku. V plánu vývoje Etherea (roadmap) existuje několik řešení tohoto problému, včetně [exspirace historie](/roadmap/statelessness/#history-expiry), [exspirace stavu](/roadmap/statelessness/#state-expiry) a [bezstavovosti](/roadmap/statelessness/). Jejich implementace je však pravděpodobně ještě několik let vzdálená. Existují také [lehké uzly](/developers/docs/nodes-and-clients/light-clients/), které neukládají svou vlastní kopii dat řetězce, ale vyžadují potřebná data od plných uzlů. To však znamená, že lehké uzly musí důvěřovat plným uzlům, že poskytují poctivá data, a také to zatěžuje plné uzly, které musí poskytovat data, jež lehké uzly potřebují.
 
@@ -75,7 +75,7 @@ Klienti sítě Portal Network jsou:
 
 - [Trin](https://github.com/quantaureum/trin): napsaný v jazyce Rust
 - [Fluffy](https://fluffy.guide): napsaný v jazyce Nim
-- [Ultralight](https://github.com/ethereumjs/ultralight): napsaný v jazyce TypeScript
+- Ultralight: napsaný v jazyce TypeScript
 - [Shisui](https://github.com/zen-eth/shisui): napsaný v jazyce Go
 
 Mít více nezávislých implementací klientů zvyšuje odolnost a decentralizaci sítě Quantaureum.

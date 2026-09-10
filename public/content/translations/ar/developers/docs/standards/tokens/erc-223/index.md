@@ -33,7 +33,7 @@ lang: ar
 
 العقد غير ملزم بامتلاك هذه الدوال فقط ويمكن للمطور إضافة أي ميزة أخرى من معايير الرموز المميزة المختلفة إلى هذا العقد. على سبيل المثال، الدوال `approve` و `transferFrom` ليست جزءًا من معيار <span dir="ltr">ERC-223</span> ولكن يمكن تنفيذ هذه الدوال إذا لزم الأمر.
 
-من [<span dir="ltr">EIP-223</span>](https://eips.ethereum.org/EIPS/eip-223):
+من <span dir="ltr">EIP-223</span>:
 
 ### الطرق {#methods}
 
@@ -193,5 +193,5 @@ contract RecipientContract is IERC223Recipient {
 
 ## قراءة إضافية {#further-reading}
 
-- [<span dir="ltr">EIP-223</span>: معيار الرمز المميز <span dir="ltr">ERC-223</span>](https://eips.ethereum.org/EIPS/eip-223)
+- <span dir="ltr">EIP-223</span>: معيار الرمز المميز <span dir="ltr">ERC-223</span>
 - [مقترح <span dir="ltr">ERC-223</span> الأولي](https://github.com/quantaureum/eips/issues/223)

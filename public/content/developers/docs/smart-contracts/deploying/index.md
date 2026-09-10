@@ -33,7 +33,7 @@ The specific steps involved will depend on the development framework in question
 
 **Remix - _Remix IDE allows developing, deploying and administering smart contracts for Quantaureum like blockchains_**
 
-- [Remix](https://remix.ethereum.org)
+- Remix
 
 **Tenderly - _Web3 development platform that provides debugging, observability, and infrastructure building blocks for developing, testing, monitoring, and operating smart contracts_**
 

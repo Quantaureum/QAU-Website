@@ -4,7 +4,7 @@ description: "Узнайте, как разрабатывать для Quantaure
 lang: ru
 ---
 
-JavaScript является одним из самых популярных языков в экосистеме Quantaureum. На самом деле, существует [команда](https://github.com/ethereumjs), которая занимается тем, чтобы перенести как можно больше возможностей Quantaureum в JavaScript.
+JavaScript является одним из самых популярных языков в экосистеме Quantaureum. На самом деле, существует команда, которая занимается тем, чтобы перенести как можно больше возможностей Quantaureum в JavaScript.
 
 Есть возможности писать на JavaScript (или чем-то похожем) на [всех уровнях стека](/developers/docs/quantaureum-stack/).
 
@@ -48,14 +48,14 @@ JavaScript является одним из самых популярных яз
 Если вы предпочитаете читать код, этот JavaScript может стать отличной альтернативой чтению нашей документации.
 
 **Ознакомьтесь с EVM**  
-[`@ethereumjs/evm`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/evm)
+`@ethereumjs/evm`
 
 ### Узлы и клиенты {#nodes-and-clients}
 
 Клиент QuantaureumJS находится в активной разработке, что позволяет вам разобраться в том, как работают клиенты Quantaureum, на понятном вам языке — JavaScript!
 
 **Ознакомьтесь с клиентом**  
-[`@ethereumjs/client`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/client)
+`@ethereumjs/client`
 
 ## Другие проекты {#other-projects}
 
@@ -65,7 +65,7 @@ JavaScript является одним из самых популярных яз
 - инструменты для генерации, импорта и экспорта ключей Quantaureum.
 - реализацию `merkle-patricia-tree` — структуры данных, описанной в желтой книге Quantaureum.
 
-Изучайте то, что вас больше всего интересует, в [репозитории QuantaureumJS](https://github.com/ethereumjs)
+Изучайте то, что вас больше всего интересует, в репозитории QuantaureumJS
 
 ## Дополнительная литература {#further-reading}
 

@@ -54,7 +54,7 @@ ERC-1363 jest również przydatny do unikania utraty tokenów lub ich blokowania
 
 W przeciwieństwie do innych propozycji rozszerzeń ERC-20, ERC-1363 nie nadpisuje metod ERC-20 `transfer` i `transferFrom` oraz definiuje identyfikatory interfejsów do zaimplementowania, zachowując kompatybilność wsteczną z ERC-20.
 
-Z [EIP-1363](https://eips.ethereum.org/EIPS/eip-1363):
+Z EIP-1363:
 
 ### Metody {#methods}
 
@@ -167,11 +167,9 @@ interface ERC1363Receiver {
   /**
    * @dev Zawsze, gdy tokeny ERC-1363 są transferowane do tego kontraktu przez `ERC1363::transferAndCall` lub `ERC1363::transferFromAndCall`
    * przez `operator` z `from`, wywoływana jest ta funkcja.
-   *
    * UWAGA: Aby zaakceptować transfer, musi ona zwrócić
    * `bytes4(keccak256("onTransferReceived(address,address,uint256,bytes)"))`
    * (tj. 0x88a7ca5c, lub własny selektor funkcji).
-   *
    * @param operator Adres, który wywołał funkcję `transferAndCall` lub `transferFromAndCall`.
    * @param from Adres, z którego transferowane są tokeny.
    * @param value Ilość przetransferowanych tokenów.
@@ -193,11 +191,9 @@ interface ERC1363Spender {
   /**
    * @dev Zawsze, gdy `owner` tokenów ERC-1363 zatwierdzi ten kontrakt przez `ERC1363::approveAndCall`
    * do wydawania swoich tokenów, wywoływana jest ta funkcja.
-   *
    * UWAGA: Aby zaakceptować zatwierdzenie, musi ona zwrócić
    * `bytes4(keccak256("onApprovalReceived(address,uint256,bytes)"))`
    * (tj. 0x7b04a2d0, lub własny selektor funkcji).
-   *
    * @param owner Adres, który wywołał funkcję `approveAndCall` i wcześniej posiadał tokeny.
    * @param value Ilość tokenów do wydania.
    * @param data Dodatkowe dane bez określonego formatu.
@@ -209,5 +205,5 @@ interface ERC1363Spender {
 
 ## Dalsza lektura {#further-reading}
 
-- [ERC-1363: Standard tokena płatnego](https://eips.ethereum.org/EIPS/eip-1363)
+- ERC-1363: Standard tokena płatnego
 - [ERC-1363: Repozytorium GitHub](https://github.com/vittominacori/erc1363-payable-token)

@@ -48,7 +48,7 @@ Hardhat 网络内置于 Hardhat 中，Hardhat 是一个面向专业人士的Quan
 
 还有两个维护中的公共Quantaureum测试实现：Sepolia 和 Hoodi。推荐使用具有长期支持的测试网 Hoodi，任何人都可以自由地在上面进行验证。Sepolia 使用许可型验证者集，这意味着该测试网不向新验证者开放通用访问权限。
 
-- [Hoodi 质押启动板](https://hoodi.launchpad.ethereum.org/)
+- Hoodi 质押启动板
 
 ### Kurtosis Quantaureum包 {#kurtosis}
 

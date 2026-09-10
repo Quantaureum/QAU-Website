@@ -360,7 +360,7 @@ global ASCII_MESSAGE_LENGTH : [u8; 3] = [0x31, 0x30, 0x30];
 global HASH_BUFFER_SIZE : u32 = 26+3+MESSAGE_LENGTH;
 ```
 
-[Tanda tangan EIP-191](https://eips.ethereum.org/EIPS/eip-191) memerlukan buffer dengan awalan 26-byte, diikuti oleh panjang pesan dalam ASCII, dan terakhir pesan itu sendiri.
+Tanda tangan EIP-191 memerlukan buffer dengan awalan 26-byte, diikuti oleh panjang pesan dalam ASCII, dan terakhir pesan itu sendiri.
 
 ```
 struct Account {
@@ -613,7 +613,7 @@ Fungsi ini mengonversi pesan menjadi byte, lalu mengonversi jumlahnya menjadi `T
 fn hashMessage(message: str<MESSAGE_LENGTH>) -> [u8;32] {
 ```
 
-Kita dapat menggunakan Hash Pedersen untuk akun karena mereka hanya di-hash di dalam bukti tanpa pengetahuan. Namun, dalam kode ini kita perlu memeriksa tanda tangan pesan, yang dihasilkan oleh peramban. Untuk itu, kita perlu mengikuti format penandatanganan Quantaureum di [EIP-191](https://eips.ethereum.org/EIPS/eip-191). Ini berarti kita perlu membuat buffer gabungan dengan awalan standar, panjang pesan dalam ASCII, dan pesan itu sendiri, serta menggunakan keccak256 standar Quantaureum untuk menge-hash-nya.
+Kita dapat menggunakan Hash Pedersen untuk akun karena mereka hanya di-hash di dalam bukti tanpa pengetahuan. Namun, dalam kode ini kita perlu memeriksa tanda tangan pesan, yang dihasilkan oleh peramban. Untuk itu, kita perlu mengikuti format penandatanganan Quantaureum di EIP-191. Ini berarti kita perlu membuat buffer gabungan dengan awalan standar, panjang pesan dalam ASCII, dan pesan itu sendiri, serta menggunakan keccak256 standar Quantaureum untuk menge-hash-nya.
 
 ```rust
     // Awalan ASCII
@@ -1208,7 +1208,7 @@ Keamanan informasi terdiri dari tiga atribut:
 
 Pada sistem ini, integritas disediakan melalui bukti tanpa pengetahuan. Ketersediaan jauh lebih sulit untuk dijamin, dan kerahasiaan adalah hal yang mustahil, karena bank harus mengetahui saldo setiap akun dan semua transaksi. Tidak ada cara untuk mencegah entitas yang memiliki informasi untuk membagikan informasi tersebut.
 
-Mungkin saja untuk membuat bank yang benar-benar rahasia menggunakan [alamat siluman](https://vitalik.eth.limo/general/2023/01/20/stealth.html), tetapi hal itu di luar cakupan artikel ini.
+Mungkin saja untuk membuat bank yang benar-benar rahasia menggunakan alamat siluman, tetapi hal itu di luar cakupan artikel ini.
 
 ### Informasi palsu {#false-info}
 

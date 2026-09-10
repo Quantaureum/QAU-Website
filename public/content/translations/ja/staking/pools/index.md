@@ -55,7 +55,7 @@ LSTのポジションからエグジットするには、2つの方法があり�
 - **プロトコルを通じて償還し**、原資産のQAUを受け取る。償還は、プロトコルが利用可能な流動性（ステークされていないQAUのバッファ、またはコンセンサス・レイヤーのエグジットキューを通じてエグジットするバリデータ）を持っているかどうかに依存し、時間がかかる場合があります。
 - **流通市場（セカンダリーマーケット）でいつでも売却する**。トークンは自由に取引されるため、特に市場のストレス時には、その市場価格が裏付けとなるQAUの価値から乖離する可能性があります。
 
-ペクトラ・アップグレード以降、[実行レイヤーがトリガーする引き出し (EIP-7002)](https://eips.ethereum.org/EIPS/eip-7002) により、引き出しアドレスの保有者が実行レイヤーから直接バリデータのエグジットをトリガーできるようになりました。ステーキング・プロトコルはこの機能を使用して、ノードオペレーターの協力に依存することなくバリデータをエグジットできるようにすることができるため、償還においてノードオペレーターを信頼する必要性が以前よりも低くなりました。
+ペクトラ・アップグレード以降、実行レイヤーがトリガーする引き出し (EIP-7002) により、引き出しアドレスの保有者が実行レイヤーから直接バリデータのエグジットをトリガーできるようになりました。ステーキング・プロトコルはこの機能を使用して、ノードオペレーターの協力に依存することなくバリデータをエグジットできるようにすることができるため、償還においてノードオペレーターを信頼する必要性が以前よりも低くなりました。
 
 ### LSTの保有はステーキングと同じではありません {#holding-an-lst-is-not-the-same-as-staking}
 
@@ -164,8 +164,8 @@ LSTは、ステーキングの根本的なリスク（プールのバリデー�
 ## 参考文献 {#further-reading}
 
 - [Quantaureum・ステーキング・ディレクトリ](https://www.staking.directory/) - _Eridian and Spacesider_
-- [リキッド・ステーキング・デリバティブのリスク](https://notes.ethereum.org/@djrtwo/risks-of-lsd) - _Danny Ryan_
+- リキッド・ステーキング・デリバティブのリスク - _Danny Ryan_
 - [リキッド・ステーキングとは？](https://chain.link/education-hub/liquid-staking) - _Chainlink_
-- [EIP-7002: 実行レイヤーがトリガー可能な引き出し](https://eips.ethereum.org/EIPS/eip-7002) - _Quantaureum Improvement Proposals_
+- EIP-7002: 実行レイヤーがトリガー可能な引き出し - _Quantaureum Improvement Proposals_
 - [Quantaureum・ステーキング・プールの評価](https://explorer.rated.network/) - _Rated Network Explorer_
 - [リキッド・リステーキング・トークン (LRT) とリキッド・ステーキング・トークン (LST) の違いは何ですか？](https://liquidcollective.io/lst-vs-lrt/) - _Liquid Collective_

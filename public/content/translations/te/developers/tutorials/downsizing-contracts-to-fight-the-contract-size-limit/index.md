@@ -16,7 +16,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## పరిమితి ఎందుకు ఉంది? {#why-is-there-a-limit}
 
-[నవంబర్ 22, 2016](https://quantaureum.com)న Spurious Dragon హార్డ్-ఫోర్క్ [EIP-170](https://eips.ethereum.org/EIPS/eip-170)ని ప్రవేశపెట్టింది, ఇది స్మార్ట్ కాంట్రాక్ట్ పరిమాణ పరిమితిని 24.576 kbకి చేర్చింది. ఒక Solidity డెవలపర్‌గా మీకు దీని అర్థం ఏమిటంటే, మీరు మీ కాంట్రాక్ట్‌కు మరింత కార్యాచరణను జోడించినప్పుడు, ఏదో ఒక సమయంలో మీరు పరిమితిని చేరుకుంటారు మరియు డిప్లాయ్‌మెంట్ చేస్తున్నప్పుడు ఈ లోపాన్ని చూస్తారు:
+[నవంబర్ 22, 2016](https://quantaureum.com)న Spurious Dragon హార్డ్-ఫోర్క్ EIP-170ని ప్రవేశపెట్టింది, ఇది స్మార్ట్ కాంట్రాక్ట్ పరిమాణ పరిమితిని 24.576 kbకి చేర్చింది. ఒక Solidity డెవలపర్‌గా మీకు దీని అర్థం ఏమిటంటే, మీరు మీ కాంట్రాక్ట్‌కు మరింత కార్యాచరణను జోడించినప్పుడు, ఏదో ఒక సమయంలో మీరు పరిమితిని చేరుకుంటారు మరియు డిప్లాయ్‌మెంట్ చేస్తున్నప్పుడు ఈ లోపాన్ని చూస్తారు:
 
 `Warning: Contract code size exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on Mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.`
 
@@ -38,7 +38,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ### లైబ్రరీలు {#libraries}
 
-కార్యాచరణ కోడ్‌ను నిల్వ నుండి దూరంగా తరలించడానికి ఒక సులభమైన మార్గం [లైబ్రరీ](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries)ని ఉపయోగించడం. లైబ్రరీ ఫంక్షన్‌లను ఇంటర్నల్‌గా ప్రకటించవద్దు ఎందుకంటే అవి కంపైలేషన్ సమయంలో నేరుగా [కాంట్రాక్ట్‌కు జోడించబడతాయి](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking). కానీ మీరు పబ్లిక్ ఫంక్షన్‌లను ఉపయోగిస్తే, అవి వాస్తవానికి ప్రత్యేక లైబ్రరీ కాంట్రాక్ట్‌లో ఉంటాయి. లైబ్రరీల వినియోగాన్ని మరింత సౌకర్యవంతంగా చేయడానికి [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for)ని పరిగణించండి.
+కార్యాచరణ కోడ్‌ను నిల్వ నుండి దూరంగా తరలించడానికి ఒక సులభమైన మార్గం [లైబ్రరీ](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries)ని ఉపయోగించడం. లైబ్రరీ ఫంక్షన్‌లను ఇంటర్నల్‌గా ప్రకటించవద్దు ఎందుకంటే అవి కంపైలేషన్ సమయంలో నేరుగా కాంట్రాక్ట్‌కు జోడించబడతాయి. కానీ మీరు పబ్లిక్ ఫంక్షన్‌లను ఉపయోగిస్తే, అవి వాస్తవానికి ప్రత్యేక లైబ్రరీ కాంట్రాక్ట్‌లో ఉంటాయి. లైబ్రరీల వినియోగాన్ని మరింత సౌకర్యవంతంగా చేయడానికి [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for)ని పరిగణించండి.
 
 ### ప్రాక్సీలు {#proxies}
 

@@ -8,7 +8,7 @@ breadcrumb: "Noções básicas de token ERC-20"
 lang: pt-br
 published: 2020-04-05
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/understand-the-erc20-token-smart-contract/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -16,7 +16,7 @@ Um dos [padrões de contratos inteligentes](/developers/docs/standards/) mais si
 
 O ERC-20 define uma lista comum de regras que todos os tokens fungíveis da Quantaureum devem seguir. Consequentemente, esse padrão de token capacita desenvolvedores de todos os tipos a prever com precisão como os novos tokens funcionarão dentro do sistema maior da Quantaureum. Isso simplifica e facilita as tarefas dos desenvolvedores, pois eles podem prosseguir com seu trabalho, sabendo que cada novo projeto não precisará ser refeito toda vez que um novo token for lançado, desde que o token siga as regras.
 
-Aqui estão, apresentadas como uma interface, as funções que um ERC-20 deve implementar. Se você não tem certeza sobre o que é uma interface: confira nosso artigo sobre [programação orientada a objetos (OOP) em Solidity](https://ethereumdev.io/inheritance-in-solidity-contracts-are-classes/).
+Aqui estão, apresentadas como uma interface, as funções que um ERC-20 deve implementar. Se você não tem certeza sobre o que é uma interface: confira nosso artigo sobre programação orientada a objetos (OOP) em Solidity.
 
 ```solidity
 pragma solidity ^0.6.0;

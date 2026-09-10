@@ -93,7 +93,7 @@ contract UserProxy {
     bytes32 immutable DOMAIN_SEPARATOR;
 ```
 
-[EIP-712 서명](https://eips.ethereum.org/EIPS/eip-712)을 검증하는 데 필요한 정보입니다.
+EIP-712 서명을 검증하는 데 필요한 정보입니다.
 
 ```solidity
     constructor(address owner_) {
@@ -117,7 +117,7 @@ contract UserProxy {
     }
 ```
 
-[도메인 구분자(domain separator)](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator)입니다. 체인 ID와 컨트랙트 주소에 따라 달라지므로 컴파일 타임에 계산할 수 없습니다. 이로 인해 UserProxy가 다른 프록시를 위해 준비된 메시지에 속는 것을 불가능하게 만듭니다.
+도메인 구분자(domain separator)입니다. 체인 ID와 컨트랙트 주소에 따라 달라지므로 컴파일 타임에 계산할 수 없습니다. 이로 인해 UserProxy가 다른 프록시를 위해 준비된 메시지에 속는 것을 불가능하게 만듭니다.
 
 ```solidity
     event CallResult(address target, bytes returnData);

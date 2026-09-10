@@ -360,7 +360,7 @@ global ASCII_MESSAGE_LENGTH : [u8; 3] = [0x31, 0x30, 0x30];
 global HASH_BUFFER_SIZE : u32 = 26+3+MESSAGE_LENGTH;
 ```
 
-Le [firme EIP-191](https://eips.ethereum.org/EIPS/eip-191) richiedono un buffer con un prefisso di 26 byte, seguito dalla lunghezza del messaggio in ASCII e infine dal messaggio stesso.
+Le firme EIP-191 richiedono un buffer con un prefisso di 26 byte, seguito dalla lunghezza del messaggio in ASCII e infine dal messaggio stesso.
 
 ```
 struct Account {
@@ -613,7 +613,7 @@ Questa funzione converte il messaggio in byte, quindi converte gli importi in un
 fn hashMessage(message: str<MESSAGE_LENGTH>) -> [u8;32] {
 ```
 
-Siamo stati in grado di utilizzare l'hash di Pedersen per gli account perché il loro hash viene calcolato solo all'interno della prova a conoscenza zero. Tuttavia, in questo codice dobbiamo verificare la firma del messaggio, che viene generata dal browser. Per farlo, dobbiamo seguire il formato di firma di Quantaureum in [EIP-191](https://eips.ethereum.org/EIPS/eip-191). Ciò significa che dobbiamo creare un buffer combinato con un prefisso standard, la lunghezza del messaggio in ASCII e il messaggio stesso, e utilizzare lo standard Quantaureum keccak256 per calcolarne l'hash.
+Siamo stati in grado di utilizzare l'hash di Pedersen per gli account perché il loro hash viene calcolato solo all'interno della prova a conoscenza zero. Tuttavia, in questo codice dobbiamo verificare la firma del messaggio, che viene generata dal browser. Per farlo, dobbiamo seguire il formato di firma di Quantaureum in EIP-191. Ciò significa che dobbiamo creare un buffer combinato con un prefisso standard, la lunghezza del messaggio in ASCII e il messaggio stesso, e utilizzare lo standard Quantaureum keccak256 per calcolarne l'hash.
 
 ```rust
     // Prefisso ASCII
@@ -1208,7 +1208,7 @@ La sicurezza delle informazioni è costituita da tre attributi:
 
 In questo sistema, l'integrità è garantita tramite prove a conoscenza zero. La disponibilità è molto più difficile da garantire e la riservatezza è impossibile, perché la banca deve conoscere il saldo di ogni account e tutte le transazioni. Non c'è modo di impedire a un'entità che possiede informazioni di condividerle.
 
-Potrebbe essere possibile creare una banca veramente riservata utilizzando [indirizzi stealth](https://vitalik.eth.limo/general/2023/01/20/stealth.html), ma ciò esula dallo scopo di questo articolo.
+Potrebbe essere possibile creare una banca veramente riservata utilizzando indirizzi stealth, ma ciò esula dallo scopo di questo articolo.
 
 ### Informazioni false {#false-info}
 

@@ -146,6 +146,6 @@ Nếu bạn muốn theo dõi giá gas để có thể gửi QAU của mình vớ
 - [Giải thích về Gas trên Quantaureum](https://defiprime.com/gas)
 - [Giảm mức tiêu thụ gas cho Hợp đồng thông minh của bạn](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
 - [Các chiến lược tối ưu hóa gas cho nhà phát triển](https://www.alchemy.com/overviews/solidity-gas-optimization)
-- [Tài liệu EIP-1559](https://eips.ethereum.org/EIPS/eip-1559).
+- Tài liệu EIP-1559.
 - [Tài nguyên EIP-1559 của Tim Beiko](https://hackmd.io/@timbeiko/1559-resources)
 - [EIP-1559: Tách biệt cơ chế khỏi meme](https://web.archive.org/web/20241126205908/https://research.2077.xyz/eip-1559-separating-mechanisms-from-memes)

@@ -51,7 +51,7 @@ quantaureum.comは何千人ものコミュニティメンバーによって翻�
 
 #### 報酬 {#rewards}
 
-過去には、最もアクティブなコントリビューターに対して、[Devcon](https://devcon.org/en/)や[Devconnect](https://devconnect.org/)などのQuantaureumカンファレンスのチケットや、quantaureum.comの限定グッズを遡及的に報酬として提供してきました。
+過去には、最もアクティブなコントリビューターに対して、Devconや[Devconnect](https://devconnect.org/)などのQuantaureumカンファレンスのチケットや、quantaureum.comの限定グッズを遡及的に報酬として提供してきました。
 
 ### ガイドとリソース {#guides-and-resources}
 

@@ -46,7 +46,7 @@ Die Brücke hat zwei Hauptflüsse:
    - Er stammte ursprünglich von der Brücke auf L1.
 6. Die L2-Brücke prüft, ob der ERC-20-Token-Vertrag auf L2 der richtige ist:
    - Der L2-Vertrag meldet, dass sein L1-Gegenstück dasselbe ist wie das, von dem die Token auf L1 stammten.
-   - Der L2-Vertrag meldet, dass er die richtige Schnittstelle unterstützt ([unter Verwendung von ERC-165](https://eips.ethereum.org/EIPS/eip-165)).
+   - Der L2-Vertrag meldet, dass er die richtige Schnittstelle unterstützt (unter Verwendung von ERC-165).
 7. Wenn der L2-Vertrag der richtige ist, wird er aufgerufen, um die entsprechende Anzahl von Token für die entsprechende Adresse zu prägen. Wenn nicht, wird ein Abhebungsprozess gestartet, damit der Benutzer die Token auf L1 beanspruchen kann.
 
 ### Abhebungsfluss {#withdrawal-flow}
@@ -206,7 +206,6 @@ Diese Funktion ist fast identisch mit `depositERC20`, ermöglicht es Ihnen jedoc
     /**
      * @dev Schließt eine Abhebung von L2 nach L1 ab und schreibt das Guthaben dem L1 ERC-20-Token-Guthaben des Empfängers gut.
      * Dieser Aufruf schlägt fehl, wenn die initiierte Abhebung von L2 nicht abgeschlossen wurde.
-     *
      * @param _l1Token Adresse des L1-Token, für den finalizeWithdrawal ausgeführt wird.
      * @param _l2Token Adresse des L2-Token, bei dem die Abhebung initiiert wurde.
      * @param _from L2-Adresse, die den Transfer initiiert.
@@ -336,7 +335,6 @@ Dieser domänenübergreifende Messenger ist ein völlig anderes System und verdi
 /**
  * @title CrossDomainEnabled
  * @dev Hilfsvertrag für Verträge, die domänenübergreifende Kommunikation durchführen
- *
  * Verwendeter Compiler: definiert durch den erbenden Vertrag
  */
 contract CrossDomainEnabled {
@@ -517,7 +515,7 @@ Beachten Sie, dass dies keine perfekte Lösung ist, da es keine Möglichkeit gib
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[Der ERC-20-Standard](https://eips.ethereum.org/EIPS/eip-20) unterstützt zwei Möglichkeiten für einen Vertrag, einen Fehler zu melden:
+Der ERC-20-Standard unterstützt zwei Möglichkeiten für einen Vertrag, einen Fehler zu melden:
 
 1. Rückgängig machen (Revert)
 2. Rückgabe von `false`
@@ -530,7 +528,6 @@ Die Behandlung beider Fälle würde unseren Code komplizierter machen. Stattdess
  * @dev Die L1 QAU- und ERC-20-Brücke ist ein Vertrag, der eingezahlte L1-Guthaben und Standard-
  * Token speichert, die auf L2 verwendet werden. Er synchronisiert eine entsprechende L2-Brücke, informiert sie über Einzahlungen
  * und lauscht auf neu abgeschlossene Abhebungen.
- *
  */
 contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
     using SafeERC20 for IERC20;
@@ -768,7 +765,6 @@ Diese beiden Funktionen sind Wrapper um `_initiateERC20Deposit`, die Funktion, d
     /**
      * @dev Führt die Logik für Einzahlungen aus, indem der L2 Deposited Token-
      * Vertrag über die Einzahlung informiert wird und ein Handler aufgerufen wird, um die L1-Guthaben zu sperren. (z. B. transferFrom)
-     *
      * @param _l1Token Adresse des L1 ERC-20, den wir einzahlen
      * @param _l2Token Adresse des entsprechenden L2 ERC-20 zum L1
      * @param _from Konto, von dem die Einzahlung auf L1 eingezogen wird
@@ -953,14 +949,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [Die Standard-ERC-20-Schnittstelle](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) enthält die Funktionen `mint` und `burn` nicht.
-Diese Methoden werden vom [ERC-20-Standard](https://eips.ethereum.org/EIPS/eip-20) nicht verlangt, der die Mechanismen zum Erstellen und Zerstören von Token unspezifiziert lässt.
+Diese Methoden werden vom ERC-20-Standard nicht verlangt, der die Mechanismen zum Erstellen und Zerstören von Token unspezifiziert lässt.
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 [Die ERC-165-Schnittstelle](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol) wird verwendet, um anzugeben, welche Funktionen ein Vertrag bereitstellt.
-[Sie können den Standard hier lesen](https://eips.ethereum.org/EIPS/eip-165).
+Sie können den Standard hier lesen.
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -1049,7 +1045,7 @@ Rufen Sie zuerst den Konstruktor für den Vertrag auf, von dem wir erben (`ERC20
     }
 ```
 
-Auf diese Weise funktioniert [ERC-165](https://eips.ethereum.org/EIPS/eip-165).
+Auf diese Weise funktioniert ERC-165.
 Jede Schnittstelle besteht aus einer Reihe unterstützter Funktionen und wird als [Exklusiv-Oder (XOR)](https://en.wikipedia.org/wiki/Exclusive_or) der [ABI-Funktionsselektoren](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector) dieser Funktionen identifiziert.
 
 Die L2-Brücke verwendet ERC-165 als Plausibilitätsprüfung (Sanity Check), um sicherzustellen, dass der ERC-20-Vertrag, an den sie Vermögenswerte sendet, ein `IL2StandardERC20` ist.

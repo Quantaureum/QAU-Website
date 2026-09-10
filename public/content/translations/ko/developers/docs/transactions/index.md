@@ -134,7 +134,7 @@ ABI 사양에 따르면 정수 값(예: 20바이트 정수인 주소)은 ABI에�
 
 ### 트랜잭션 설명자 {#transaction-descriptors}
 
-데이터 필드에는 불투명한 16진수 바이트가 포함되어 있기 때문에 트랜잭션이 실제로 어떤 작업을 수행할지 확인하는 것은 매우 어려울 수 있습니다. 이러한 "블라인드 서명(blind signing)" 취약점은 (ERC-7730에 정의된) [트랜잭션 설명자](https://eips.ethereum.org/EIPS/eip-7730)를 사용하는 <strong>[클리어 서명(Clear Signing)](https://clearsigning.org/)</strong>을 통해 해결됩니다.  
+데이터 필드에는 불투명한 16진수 바이트가 포함되어 있기 때문에 트랜잭션이 실제로 어떤 작업을 수행할지 확인하는 것은 매우 어려울 수 있습니다. 이러한 "블라인드 서명(blind signing)" 취약점은 (ERC-7730에 정의된) 트랜잭션 설명자를 사용하는 <strong>[클리어 서명(Clear Signing)](https://clearsigning.org/)</strong>을 통해 해결됩니다.  
 
 ERC-7730 사양은 트랜잭션 설명자(종종 JSON 파일로 구성됨)를 사용하여 ABI 및 구조화된 메시지(예: EVM 트랜잭션 콜 데이터, EIP-712 메시지 및 EIP-4337 User Operations)에 있는 데이터를 보강합니다. 개발자는 이러한 설명자를 사용하여 특정 트랜잭션 변수를 포맷 템플릿에 직접 매핑함으로써 기본 데이터가 애플리케이션에서 기계 판독 가능한 상태로 유지되도록 합니다.
 
@@ -203,9 +203,9 @@ Quantaureum은 원래 트랜잭션에 대해 하나의 형식을 가지고 있�
 
 `RLP([nonce, gasPrice, gasLimit, to, value, data, v, r, s])`
 
-Quantaureum은 레거시 트랜잭션 형식에 영향을 주지 않고 액세스 목록 및 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559)와 같은 새로운 기능을 구현할 수 있도록 여러 유형의 트랜잭션을 지원하도록 발전했습니다.
+Quantaureum은 레거시 트랜잭션 형식에 영향을 주지 않고 액세스 목록 및 EIP-1559와 같은 새로운 기능을 구현할 수 있도록 여러 유형의 트랜잭션을 지원하도록 발전했습니다.
 
-[EIP-2718](https://eips.ethereum.org/EIPS/eip-2718)은 이러한 동작을 허용하는 것입니다. 트랜잭션은 다음과 같이 해석됩니다.
+EIP-2718은 이러한 동작을 허용하는 것입니다. 트랜잭션은 다음과 같이 해석됩니다.
 
 `TransactionType || TransactionPayload`
 
@@ -216,19 +216,19 @@ Quantaureum은 레거시 트랜잭션 형식에 영향을 주지 않고 액세�
 
 `TransactionType` 값을 기반으로 트랜잭션은 다음과 같이 분류될 수 있습니다.
 
-1. **유형 0 (레거시) 트랜잭션:** Quantaureum 출시 이후 사용된 원래 트랜잭션 형식입니다. 동적 가스비 계산이나 스마트 컨트랙트용 액세스 목록과 같은 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559)의 기능은 포함하지 않습니다. 레거시 트랜잭션은 직렬화된 형태에서 유형을 나타내는 특정 접두사가 없으며, [RLP(Recursive Length Prefix)](/developers/docs/data-structures-and-encoding/rlp) 인코딩을 사용할 때 `0xf8` 바이트로 시작합니다. 이러한 트랜잭션의 TransactionType 값은 `0x0`입니다.
+1. **유형 0 (레거시) 트랜잭션:** Quantaureum 출시 이후 사용된 원래 트랜잭션 형식입니다. 동적 가스비 계산이나 스마트 컨트랙트용 액세스 목록과 같은 EIP-1559의 기능은 포함하지 않습니다. 레거시 트랜잭션은 직렬화된 형태에서 유형을 나타내는 특정 접두사가 없으며, [RLP(Recursive Length Prefix)](/developers/docs/data-structures-and-encoding/rlp) 인코딩을 사용할 때 `0xf8` 바이트로 시작합니다. 이러한 트랜잭션의 TransactionType 값은 `0x0`입니다.
 
-2. **유형 1 트랜잭션:** Quantaureum의 베를린 업그레이드의 일부로 [EIP-2930](https://eips.ethereum.org/EIPS/eip-2930)에 도입된 이 트랜잭션에는 `accessList` 매개변수가 포함됩니다. 이 목록은 트랜잭션이 액세스할 것으로 예상되는 주소와 스토리지 키를 지정하여 스마트 컨트랙트가 포함된 복잡한 트랜잭션의 [가스](/developers/docs/gas/) 비용을 잠재적으로 줄이는 데 도움을 줍니다. EIP-1559 수수료 시장 변경 사항은 유형 1 트랜잭션에 포함되지 않습니다. 유형 1 트랜잭션에는 secp256k1 서명의 y값 패리티를 나타내는 `0x0` 또는 `0x1`가 될 수 있는 `yParity` 매개변수도 포함됩니다. 이들은 `0x01` 바이트로 시작하여 식별되며, TransactionType 값은 `0x1`입니다.
+2. **유형 1 트랜잭션:** Quantaureum의 베를린 업그레이드의 일부로 EIP-2930에 도입된 이 트랜잭션에는 `accessList` 매개변수가 포함됩니다. 이 목록은 트랜잭션이 액세스할 것으로 예상되는 주소와 스토리지 키를 지정하여 스마트 컨트랙트가 포함된 복잡한 트랜잭션의 [가스](/developers/docs/gas/) 비용을 잠재적으로 줄이는 데 도움을 줍니다. EIP-1559 수수료 시장 변경 사항은 유형 1 트랜잭션에 포함되지 않습니다. 유형 1 트랜잭션에는 secp256k1 서명의 y값 패리티를 나타내는 `0x0` 또는 `0x1`가 될 수 있는 `yParity` 매개변수도 포함됩니다. 이들은 `0x01` 바이트로 시작하여 식별되며, TransactionType 값은 `0x1`입니다.
 
-3. **유형 2 트랜잭션:** 일반적으로 EIP-1559 트랜잭션이라고 불리며, Quantaureum의 런던 업그레이드에서 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559)에 도입된 트랜잭션입니다. 이들은 Quantaureum 네트워크의 표준 트랜잭션 유형이 되었습니다. 이 트랜잭션은 트랜잭션 수수료를 기본 수수료와 우선순위 수수료로 분리하여 예측 가능성을 향상시키는 새로운 수수료 시장 메커니즘을 도입합니다. 이들은 `0x02` 바이트로 시작하며 `maxPriorityFeePerGas` 및 `maxFeePerGas`와 같은 필드를 포함합니다. 유형 2 트랜잭션은 유연성과 효율성 덕분에 현재 기본값이 되었으며, 특히 네트워크 혼잡도가 높은 기간에 사용자가 트랜잭션 수수료를 더 예측 가능하게 관리할 수 있도록 도와주어 선호됩니다. 이러한 트랜잭션의 TransactionType 값은 `0x2`입니다.
+3. **유형 2 트랜잭션:** 일반적으로 EIP-1559 트랜잭션이라고 불리며, Quantaureum의 런던 업그레이드에서 EIP-1559에 도입된 트랜잭션입니다. 이들은 Quantaureum 네트워크의 표준 트랜잭션 유형이 되었습니다. 이 트랜잭션은 트랜잭션 수수료를 기본 수수료와 우선순위 수수료로 분리하여 예측 가능성을 향상시키는 새로운 수수료 시장 메커니즘을 도입합니다. 이들은 `0x02` 바이트로 시작하며 `maxPriorityFeePerGas` 및 `maxFeePerGas`와 같은 필드를 포함합니다. 유형 2 트랜잭션은 유연성과 효율성 덕분에 현재 기본값이 되었으며, 특히 네트워크 혼잡도가 높은 기간에 사용자가 트랜잭션 수수료를 더 예측 가능하게 관리할 수 있도록 도와주어 선호됩니다. 이러한 트랜잭션의 TransactionType 값은 `0x2`입니다.
 
-4. **유형 3 (블롭) 트랜잭션:** Quantaureum의 덴쿤 업그레이드의 일부로 [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844)에 도입되었습니다. 이 트랜잭션은 "블롭" 데이터(Binary Large Objects)를 더 효율적으로 처리하도록 설계되었으며, 특히 더 낮은 비용으로 Quantaureum 네트워크에 데이터를 게시할 수 있는 방법을 제공하여 레이어 2 롤업에 이점을 줍니다. 블롭 트랜잭션에는 `blobVersionedHashes`, `maxFeePerBlobGas` 및 `blobGasPrice`와 같은 추가 필드가 포함됩니다. 이들은 `0x03` 바이트로 시작하며, TransactionType 값은 `0x3`입니다. 블롭 트랜잭션은 Quantaureum의 데이터 가용성 및 확장 기능에서 상당한 개선을 나타냅니다.
+4. **유형 3 (블롭) 트랜잭션:** Quantaureum의 덴쿤 업그레이드의 일부로 EIP-4844에 도입되었습니다. 이 트랜잭션은 "블롭" 데이터(Binary Large Objects)를 더 효율적으로 처리하도록 설계되었으며, 특히 더 낮은 비용으로 Quantaureum 네트워크에 데이터를 게시할 수 있는 방법을 제공하여 레이어 2 롤업에 이점을 줍니다. 블롭 트랜잭션에는 `blobVersionedHashes`, `maxFeePerBlobGas` 및 `blobGasPrice`와 같은 추가 필드가 포함됩니다. 이들은 `0x03` 바이트로 시작하며, TransactionType 값은 `0x3`입니다. 블롭 트랜잭션은 Quantaureum의 데이터 가용성 및 확장 기능에서 상당한 개선을 나타냅니다.
 
-5. **유형 4 트랜잭션:** Quantaureum의 [펙트라 업그레이드](/roadmap/pectra/)의 일부로 [EIP-7702](https://eips.ethereum.org/EIPS/eip-7702)에 도입되었습니다. 이 트랜잭션은 계정 추상화와 상위 호환되도록 설계되었습니다. 이를 통해 EOA는 원래 기능을 손상시키지 않으면서 일시적으로 스마트 컨트랙트 계정처럼 작동할 수 있습니다. 여기에는 EOA가 권한을 위임할 스마트 컨트랙트를 지정하는 `authorization_list` 매개변수가 포함됩니다. 트랜잭션 후 EOA의 코드 필드에는 위임된 스마트 컨트랙트의 주소가 포함됩니다.
+5. **유형 4 트랜잭션:** Quantaureum의 [펙트라 업그레이드](/roadmap/pectra/)의 일부로 EIP-7702에 도입되었습니다. 이 트랜잭션은 계정 추상화와 상위 호환되도록 설계되었습니다. 이를 통해 EOA는 원래 기능을 손상시키지 않으면서 일시적으로 스마트 컨트랙트 계정처럼 작동할 수 있습니다. 여기에는 EOA가 권한을 위임할 스마트 컨트랙트를 지정하는 `authorization_list` 매개변수가 포함됩니다. 트랜잭션 후 EOA의 코드 필드에는 위임된 스마트 컨트랙트의 주소가 포함됩니다.
 
 ## 더 읽어보기 {#further-reading}
 
-- [EIP-2718: 타입이 지정된 트랜잭션 봉투](https://eips.ethereum.org/EIPS/eip-2718)
+- EIP-2718: 타입이 지정된 트랜잭션 봉투
 
 _도움이 된 커뮤니티 리소스를 알고 계신가요? 이 페이지를 편집하고 추가해 주세요!_
 

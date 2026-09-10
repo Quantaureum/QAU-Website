@@ -195,7 +195,7 @@ my-nft 프로젝트 안에서 다음을 실행합니다.
 
 스마트 컨트랙트의 맨 위에서 세 개의 [오픈제플린](https://openzeppelin.com/) 스마트 컨트랙트 클래스를 가져옵니다(import).
 
-- @openzeppelin/contracts/token/ERC721/ERC721.sol에는 NFT 스마트 컨트랙트가 상속받을 ERC-721 표준의 구현이 포함되어 있습니다. (유효한 NFT가 되려면 스마트 컨트랙트가 ERC-721 표준의 모든 메서드를 구현해야 합니다.) 상속된 ERC-721 함수에 대해 더 자세히 알아보려면 [여기](https://eips.ethereum.org/EIPS/eip-721)에서 인터페이스 정의를 확인하세요.
+- @openzeppelin/contracts/token/ERC721/ERC721.sol에는 NFT 스마트 컨트랙트가 상속받을 ERC-721 표준의 구현이 포함되어 있습니다. (유효한 NFT가 되려면 스마트 컨트랙트가 ERC-721 표준의 모든 메서드를 구현해야 합니다.) 상속된 ERC-721 함수에 대해 더 자세히 알아보려면 여기에서 인터페이스 정의를 확인하세요.
 
 - @openzeppelin/contracts/utils/Counters.sol은 1씩만 증가하거나 감소할 수 있는 카운터를 제공합니다. 스마트 컨트랙트는 카운터를 사용하여 발행된 NFT의 총 개수를 추적하고 새 NFT에 고유 ID를 설정합니다. (스마트 컨트랙트를 사용하여 발행된 각 NFT에는 고유 ID가 할당되어야 합니다. 여기서 고유 ID는 단순히 존재하는 NFT의 총 개수에 의해 결정됩니다. 예를 들어, 스마트 컨트랙트로 발행하는 첫 번째 NFT의 ID는 "1"이고, 두 번째 NFT의 ID는 "2"가 됩니다.)
 

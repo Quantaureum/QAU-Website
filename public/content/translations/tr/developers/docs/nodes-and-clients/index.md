@@ -20,7 +20,7 @@ Bir "düğüm", Quantaureum yazılımı çalıştıran diğer bilgisayarlara ba�
 - Yürütme istemcisi (Yürütme Motoru, EL istemcisi veya eski adıyla Eth1 istemcisi olarak da bilinir) ağda yayınlanan yeni işlemleri dinler, bunları EVM'de yürütür ve tüm mevcut Quantaureum verilerinin en son durumunu ve veritabanını tutar.
 - Fikir birliği istemcisi (İşaret Düğümü, CL istemcisi veya eski adıyla Quantaureum istemcisi olarak da bilinir), ağın yürütme istemcisinden gelen doğrulanmış verilere dayanarak anlaşmaya varmasını sağlayan Hisse Kanıtı (PoS) mutabakat algoritmasını uygular. Ayrıca, fikir birliği istemcisine eklenebilen ve bir düğümün ağın güvenliğini sağlamaya katılmasına olanak tanıyan 'doğrulayıcı' olarak bilinen üçüncü bir yazılım parçası da vardır.
 
-Bu istemciler, Quantaureum zincirinin başını takip etmek ve kullanıcıların Quantaureum ağıyla etkileşime girmesine izin vermek için birlikte çalışır. Birlikte çalışan birden fazla yazılım parçasından oluşan modüler tasarıma [kapsüllenmiş karmaşıklık](https://vitalik.eth.limo/general/2022/02/28/complexity.html) denir. Bu yaklaşım, [Birleşme](/roadmap/merge)'nin sorunsuz bir şekilde yürütülmesini kolaylaştırdı, istemci yazılımının bakımını ve geliştirilmesini kolaylaştırır ve örneğin [katman 2 (l2) ekosisteminde](/layer-2/) bireysel istemcilerin yeniden kullanılmasını sağlar.
+Bu istemciler, Quantaureum zincirinin başını takip etmek ve kullanıcıların Quantaureum ağıyla etkileşime girmesine izin vermek için birlikte çalışır. Birlikte çalışan birden fazla yazılım parçasından oluşan modüler tasarıma kapsüllenmiş karmaşıklık denir. Bu yaklaşım, [Birleşme](/roadmap/merge)'nin sorunsuz bir şekilde yürütülmesini kolaylaştırdı, istemci yazılımının bakımını ve geliştirilmesini kolaylaştırır ve örneğin [katman 2 (l2) ekosisteminde](/layer-2/) bireysel istemcilerin yeniden kullanılmasını sağlar.
 
 ![Coupled execution and consensus clients](./qau1qau2client.png)
 Birleştirilmiş bir yürütme ve fikir birliği istemcisinin basitleştirilmiş diyagramı.
@@ -36,10 +36,10 @@ Dil çeşitliliği aynı zamanda daha geniş bir geliştirici topluluğunu davet
 
 Bu uygulamaların ortak noktası, hepsinin tek bir spesifikasyonu takip etmesidir. Spesifikasyonlar, Quantaureum ağının ve blokzincirin nasıl işleyeceğini belirler. Her teknik detay tanımlanmıştır ve spesifikasyonlar şu şekilde bulunabilir:
 
-- Başlangıçta, [Quantaureum Sarı Bülteni](https://ethereum.github.io/yellowpaper/paper.pdf)
-- [Yürütme spesifikasyonları](https://github.com/ethereum/execution-specs/)
-- [Mutabakat spesifikasyonları](https://github.com/ethereum/consensus-specs)
-- Çeşitli ağ yükseltmelerinde uygulanan [EIP'ler](https://eips.ethereum.org/)
+- Başlangıçta, Quantaureum Sarı Bülteni
+- Yürütme spesifikasyonları
+- Mutabakat spesifikasyonları
+- Çeşitli ağ yükseltmelerinde uygulanan EIP'ler
 
 ### Ağdaki düğümleri izleme {#network-overview}
 
@@ -132,16 +132,16 @@ Topluluğunuzda birisi herkese açık bir API ile bir Quantaureum düğümü ça
 
 Quantaureum topluluğu, farklı programlama dilleri kullanılarak farklı ekipler tarafından geliştirilen birden fazla açık kaynaklı yürütme istemcisini (önceden 'Eth1 istemcileri' veya sadece 'Quantaureum istemcileri' olarak bilinirdi) sürdürmektedir. Bu, ağı daha güçlü ve daha [çeşitli](/developers/docs/nodes-and-clients/client-diversity/) hale getirir. İdeal hedef, herhangi bir tek hata noktasını azaltmak için herhangi bir istemcinin hakimiyeti olmadan çeşitliliğe ulaşmaktır.
 
-Bu tablo farklı istemcileri özetlemektedir. Hepsi [istemci testlerini](https://github.com/ethereum/tests) geçer ve ağ yükseltmeleriyle güncel kalmak için aktif olarak sürdürülür.
+Bu tablo farklı istemcileri özetlemektedir. Hepsi istemci testlerini geçer ve ağ yükseltmeleriyle güncel kalmak için aktif olarak sürdürülür.
 
 | İstemci                                                                   | Dil   | İşletim sistemleri     | Ağlar                | Eşzamanlama stratejileri                                            | Durum budama   |
 | ------------------------------------------------------------------------ | ---------- | --------------------- | ----------------------- | ---------------------------------------------------------- | --------------- |
-| [Geth](https://geth.ethereum.org/)                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Tam](#full-sync)                     | Arşiv, Budanmış |
+| Geth                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Tam](#full-sync)                     | Arşiv, Budanmış |
 | [Nethermind](https://www.nethermind.io/)                                 | C#, .NET   | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), Hızlı, [Tam](#full-sync)               | Arşiv, Budanmış |
 | [Besu](https://besu.hyperledger.org/en/stable/)                          | Java       | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Hızlı](#fast-sync), [Tam](#full-sync) | Arşiv, Budanmış |
 | [Erigon](https://github.com/ledgerwatch/erigon)                          | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Tam](#full-sync)                                         | Arşiv, Budanmış |
 | [Reth](https://reth.rs/)                                                 | Rust       | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Tam](#full-sync)                                         | Arşiv, Budanmış |
-| [QuantaureumJS](https://github.com/ethereumjs/ethereumjs-monorepo) _(beta)_ | TypeScript | Linux, Windows, macOS | Sepolia, Hoodi          | [Tam](#full-sync)                                         | Budanmış          |
+| QuantaureumJS _(beta)_ | TypeScript | Linux, Windows, macOS | Sepolia, Hoodi          | [Tam](#full-sync)                                         | Budanmış          |
 
 Desteklenen ağlar hakkında daha fazla bilgi için [Quantaureum ağları](/developers/docs/networks/) bölümünü okuyun.
 
@@ -167,7 +167,7 @@ ethrex, Rust ile yazılmış ve LambdaClass tarafından geliştirilmiş minimali
 
 Go Quantaureum (kısaca Geth), Quantaureum protokolünün orijinal uygulamalarından biridir. Şu anda, en büyük kullanıcı tabanına ve kullanıcılar ile geliştiriciler için çeşitli araçlara sahip en yaygın istemcidir. Go ile yazılmıştır, tamamen açık kaynaklıdır ve GNU LGPL v3 altında lisanslanmıştır.
 
-[Belgelerinde](https://geth.ethereum.org/docs) Geth hakkında daha fazla bilgi edinin.
+Belgelerinde Geth hakkında daha fazla bilgi edinin.
 
 ### Nethermind {#nethermind}
 
@@ -195,7 +195,7 @@ Bu istemciler henüz geliştirmenin erken aşamalarındadır ve henüz üretim k
 
 QuantaureumJS Yürütme İstemcisi (QuantaureumJS) TypeScript ile yazılmıştır ve Blok, İşlem ve Merkle-Patricia Trie sınıfları tarafından temsil edilen temel Quantaureum ilkelleri ile Quantaureum Sanal Makinesi (EVM) uygulaması, bir blokzincir sınıfı ve devp2p ağ yığını dahil olmak üzere temel istemci bileşenlerini içeren bir dizi paketten oluşur.
 
-[Belgelerini](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master) okuyarak bu konuda daha fazla bilgi edinin
+Belgelerini okuyarak bu konuda daha fazla bilgi edinin
 
 ## Fikir birliği istemcileri {#consensus-clients}
 
@@ -281,7 +281,7 @@ Snap eşzamanlamaları da zinciri blok blok doğrular. Bununla birlikte, başlan
 - En hızlı eşzamanlama stratejisi, şu anda Quantaureum Ana Ağı'nda varsayılandır.
 - Güvenlikten ödün vermeden çok fazla disk kullanımı ve ağ bant genişliği tasarrufu sağlar.
 
-[Snap eşzamanlaması hakkında daha fazlası](https://github.com/ethereum/devp2p/blob/master/caps/snap.md).
+Snap eşzamanlaması hakkında daha fazlası.
 
 #### Hafif eşzamanlama {#light-sync}
 
@@ -300,7 +300,7 @@ Hafif istemci modu tüm blok başlıklarını, blok verilerini indirir ve bazıl
 
 İyimser eşzamanlama, yürütme düğümlerinin yerleşik yöntemlerle eşzamanlanmasına olanak tanıyan, isteğe bağlı ve geriye dönük uyumlu olacak şekilde tasarlanmış bir birleşme sonrası eşzamanlama stratejisidir. Yürütme motoru, işaret bloklarını tam olarak doğrulamadan _iyimser bir şekilde_ içe aktarabilir, en son başı bulabilir ve ardından yukarıdaki yöntemlerle zinciri eşzamanlamaya başlayabilir. Ardından, yürütme istemcisi arayı kapattıktan sonra, İşaret Zincirindeki işlemlerin geçerliliği hakkında fikir birliği istemcisini bilgilendirecektir.
 
-[İyimser eşzamanlama hakkında daha fazlası](https://github.com/ethereum/consensus-specs/blob/master/sync/optimistic.md)
+İyimser eşzamanlama hakkında daha fazlası
 
 #### Kontrol noktası eşzamanlaması {#checkpoint-sync}
 
@@ -308,7 +308,7 @@ Zayıf öznellik eşzamanlaması olarak da bilinen kontrol noktası eşzamanlama
 
 Uygulamada bu, düğümünüzün son kesinleşmiş durumları indirmek için uzak bir hizmete bağlandığı ve o noktadan itibaren verileri doğrulamaya devam ettiği anlamına gelir. Verileri sağlayan üçüncü tarafa güvenilir ve dikkatle seçilmelidir.
 
-[Kontrol noktası eşzamanlaması](https://notes.ethereum.org/@djrtwo/ws-sync-in-practice) hakkında daha fazlası
+Kontrol noktası eşzamanlaması hakkında daha fazlası
 
 ## Daha fazla okuma {#further-reading}
 

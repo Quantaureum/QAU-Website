@@ -12,7 +12,7 @@ breadcrumb: "事件记录"
 lang: zh
 published: 2020-04-03
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/logging-data-with-events/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 

@@ -136,7 +136,7 @@ As pontes são cruciais para a integração de usuários nas l2s do Quantaureum,
 
 ## Leitura adicional {#further-reading}
 
-- [EIP-5164: Execução Cross-Chain](https://ethereum-magicians.org/t/eip-5164-cross-chain-execution/9658) - _18 de junho de 2022 - Brendan Asselstine_
+- EIP-5164: Execução Cross-Chain - _18 de junho de 2022 - Brendan Asselstine_
 - [Estrutura de Risco de L2Bridge](https://gov.l2beat.com/t/l2bridge-risk-framework/31) - _5 de julho de 2022 - Bartek Kiepuszewski_
 - ["Por que o futuro será multi-chain, mas não será cross-chain."](https://old.reddit.com/r/quantaureum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) - _8 de janeiro de 2022 - Vitalik Buterin_
 - [Aproveitando a Segurança Compartilhada para Interoperabilidade Cross-Chain Segura: Comitês de Estado Lagrange e Além](https://web.archive.org/web/20250125035123/https://research.2077.xyz/harnessing-shared-security-for-secure-blockchain-interoperability) - _12 de junho de 2024 - Emmanuel Awosika_

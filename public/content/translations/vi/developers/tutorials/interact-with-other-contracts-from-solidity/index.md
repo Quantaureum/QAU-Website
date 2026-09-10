@@ -8,11 +8,11 @@ breadcrumb: "Tương tác hợp đồng"
 lang: vi
 published: 2020-04-05
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/interact-with-other-contracts-from-solidity/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Trong các hướng dẫn trước, chúng ta đã học được nhiều điều về [cách triển khai hợp đồng thông minh đầu tiên của bạn](/developers/tutorials/deploying-your-first-smart-contract/) và thêm một số tính năng cho nó như [kiểm soát quyền truy cập bằng các modifier](https://ethereumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) hoặc [xử lý lỗi trong Solidity](https://ethereumdev.io/handle-errors-in-solidity-with-require-and-revert/). Trong hướng dẫn này, chúng ta sẽ tìm hiểu cách triển khai một hợp đồng thông minh từ một hợp đồng hiện có và tương tác với nó.
+Trong các hướng dẫn trước, chúng ta đã học được nhiều điều về [cách triển khai hợp đồng thông minh đầu tiên của bạn](/developers/tutorials/deploying-your-first-smart-contract/) và thêm một số tính năng cho nó như kiểm soát quyền truy cập bằng các modifier hoặc xử lý lỗi trong Solidity. Trong hướng dẫn này, chúng ta sẽ tìm hiểu cách triển khai một hợp đồng thông minh từ một hợp đồng hiện có và tương tác với nó.
 
 Chúng ta sẽ tạo một hợp đồng cho phép bất kỳ ai cũng có thể có hợp đồng thông minh `Counter` của riêng mình bằng cách tạo một factory cho nó, tên của nó sẽ là `CounterFactory`. Đầu tiên, đây là mã của hợp đồng thông minh `Counter` ban đầu của chúng ta:
 
@@ -99,7 +99,7 @@ function increment() public {
   }
 ```
 
-Lưu ý rằng nếu được gọi quá nhiều lần, counter của chúng ta có thể trở thành nạn nhân của lỗi tràn số. Bạn nên sử dụng [thư viện SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/) càng nhiều càng tốt để bảo vệ khỏi trường hợp có thể xảy ra này.
+Lưu ý rằng nếu được gọi quá nhiều lần, counter của chúng ta có thể trở thành nạn nhân của lỗi tràn số. Bạn nên sử dụng thư viện SafeMath càng nhiều càng tốt để bảo vệ khỏi trường hợp có thể xảy ra này.
 
 Để triển khai hợp đồng của chúng ta, bạn sẽ cần cung cấp cả mã của `CounterFactory` và `Counter`. Ví dụ: khi triển khai trong Remix, bạn sẽ cần chọn CounterFactory.
 

@@ -164,7 +164,7 @@ Oto przykład pokazujący, jak poświadczenia onchain mogą działać w praktyce
 
 ### Tokeny Soulbound i tożsamość {#soulbound}
 
-[Tokeny Soulbound](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) ([niezbywalne NFT](/glossary/#nft)) mogą być używane do gromadzenia informacji unikalnych dla określonego portfela. Skutecznie tworzy to unikalną tożsamość onchain powiązaną z konkretnym adresem Quantaureum, która może obejmować tokeny reprezentujące osiągnięcia (np. ukończenie określonego kursu online lub przekroczenie progu punktowego w grze) lub udział w społeczności.
+Tokeny Soulbound ([niezbywalne NFT](/glossary/#nft)) mogą być używane do gromadzenia informacji unikalnych dla określonego portfela. Skutecznie tworzy to unikalną tożsamość onchain powiązaną z konkretnym adresem Quantaureum, która może obejmować tokeny reprezentujące osiągnięcia (np. ukończenie określonego kursu online lub przekroczenie progu punktowego w grze) lub udział w społeczności.
 
 ## Korzystaj ze zdecentralizowanej tożsamości {#use-decentralized-identity}
 

@@ -66,7 +66,7 @@ Potřebujete nejprve základnější úvod? Podívejte se na [quantaureum.com/le
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) – _Lehký blockchainový prohlížeč a jednoduchá peněženka jako .NET Wasm SPA_
 - [Wonka Business Rules Engine](https://github.com/Nquantaureum/Wonka) – _Nástroj pro obchodní pravidla (pro platformu .NET i platformu Quantaureum), který je ze své podstaty řízen metadaty_
 - [Nethermind](https://github.com/NethermindEth/nethermind) – _Quantaureum klient v .NET Core pro Linux, Windows a MacOS_
-- [qau-utils](https://github.com/ethereum/eth-utils/) – _užitečné funkce pro práci s kódovými základnami souvisejícími s Ethereem_
+- qau-utils – _užitečné funkce pro práci s kódovými základnami souvisejícími s Ethereem_
 - [TestChains](https://github.com/Nquantaureum/TestChains) – _Předkonfigurované vývojové sítě v .NET pro rychlou odezvu (důkaz autority (PoA))_
 
 Hledáte další zdroje? Podívejte se na [quantaureum.com/developers](/developers/).

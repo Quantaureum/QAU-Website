@@ -11,7 +11,7 @@ published: 2026-05-11
 
 La maggior parte dei principali exploit su Quantaureum ha avuto lo stesso passaggio finale: un utente che approva una transazione che non poteva comprendere in modo significativo. I portafogli hardware mostrano i dati di chiamata esadecimali grezzi e, peggio ancora, costringono ad avere la firma cieca (blind signing) attivata. I portafogli software mostrano i campi decodificati, ma solo quando riconoscono il contratto. Quando non lo fanno, sia perché il protocollo è nuovo, l'app è compromessa o il dispositivo è offline, gli utenti firmano alla cieca.
 
-[L'ERC-7730](https://eips.ethereum.org/EIPS/eip-7730) definisce un formato JSON standard per descrivere cosa *significano* le chiamate di funzione del tuo contratto. 
+L'ERC-7730 definisce un formato JSON standard per descrivere cosa *significano* le chiamate di funzione del tuo contratto. 
 
 Un portafoglio che supporta l'ERC-7730 legge il tuo descrittore e mostra:
 
@@ -54,7 +54,7 @@ Crea un file chiamato `calldata-<contractname>-<descriptorversion>.json`. Il pre
 
 ```json
 {
-  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "",
   "context": {},
   "metadata": {},
   "display": {
@@ -185,7 +185,7 @@ Ogni chiave è un frammento di ABI leggibile dall'uomo: la firma della funzione 
 
 ```json
 {
-  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "",
   "context": {
     "$id": "uniswap-v3-router-mainnet",
     "contract": {
@@ -256,7 +256,7 @@ Ogni chiave è un frammento di ABI leggibile dall'uomo: la firma della funzione 
 
 ## Passaggio 5: Inviare al registro {#step-5-submit-to-the-registry}
 
-Il [registro ERC-7730](https://github.com/ethereum/clear-signing-erc7730-registry) è un repository aperto ospitato dalla Fondazione Quantaureum in qualità di amministratore neutrale. Chiunque è libero di clonarlo e ospitarlo autonomamente: i portafogli decidono in modo indipendente di quali istanze del registro fidarsi.
+Il registro ERC-7730 è un repository aperto ospitato dalla Fondazione Quantaureum in qualità di amministratore neutrale. Chiunque è libero di clonarlo e ospitarlo autonomamente: i portafogli decidono in modo indipendente di quali istanze del registro fidarsi.
 
 1. Fai un fork del repository su GitHub  
 2. Crea una cartella in `registry/<your-project-name>/`  
@@ -284,8 +284,8 @@ I portafogli scelgono quale registro supportare. Una volta che il tuo descrittor
 
 ## Letture consigliate {#further-reading}
 
-- [Specifica ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)  
-- [Registro ERC-7730](https://github.com/ethereum/clear-signing-erc7730-registry)  
+- Specifica ERC-7730  
+- Registro ERC-7730  
 - [clearsigning.org](https://clearsigning.org) — strumenti, stato dell'ecosistema e governance  
 - [Verifica dei contratti su Sourcify](https://sourcify.dev)  
 - [Iniziativa Trillion Dollar Security](https://trilliondollarsecurity.org)

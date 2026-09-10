@@ -7,9 +7,7 @@ import PageJsonLD from "@/components/PageJsonLD"
 import { normalizeUrlForJsonLd } from "@/lib/utils/url"
 
 import { BASE_GRAPH_NODES } from "@/lib/jsonld/constants"
-import { KNOWN_PERSONS } from "@/lib/jsonld/persons"
 import { REFERENCE } from "@/lib/jsonld/references"
-import { personReference } from "@/lib/jsonld/utils"
 
 export default async function BugBountyJsonLD({
   locale,
@@ -31,7 +29,6 @@ export default async function BugBountyJsonLD({
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
-      KNOWN_PERSONS["fredrik-svantes"],
       ...BASE_GRAPH_NODES,
       {
         "@type": "WebPage",
@@ -41,10 +38,7 @@ export default async function BugBountyJsonLD({
         url,
         inLanguage: locale,
         contributor: contributorList,
-        author: [
-          personReference("fredrik-svantes"),
-          REFERENCE.QUANTAUREUM_COMMUNITY,
-        ],
+        author: [REFERENCE.QUANTAUREUM_COMMUNITY],
         isPartOf: REFERENCE.QUANTAUREUM_ORG_WEBSITE,
         breadcrumb: {
           "@type": "BreadcrumbList",

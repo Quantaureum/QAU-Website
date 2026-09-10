@@ -71,7 +71,7 @@ x402 mengubah Quantaureum menjadi lapisan ekonomi yang dapat diprogram untuk age
 
 Agen otonom membutuhkan pagar pembatas. Quantaureum menyediakannya di tingkat dompet dan kontrak:
 
-- [Akun pintar (EIP-4337)](https://eips.ethereum.org/EIPS/eip-4337) memungkinkan pengembang untuk memberlakukan batas pengeluaran, daftar putih (whitelist), kunci sesi, dan izin terperinci
+- Akun pintar (EIP-4337) memungkinkan pengembang untuk memberlakukan batas pengeluaran, daftar putih (whitelist), kunci sesi, dan izin terperinci
 - Batasan yang diprogram dalam kontrak pintar dapat membatasi apa yang diizinkan untuk dilakukan oleh agen
 - Batasan berbasis inferensi (misalnya, memerlukan bukti zkML sebelum mengeksekusi tindakan berisiko tinggi) menambahkan lapisan keamanan lain
 
@@ -79,7 +79,7 @@ Kontrol ini memungkinkan penyebaran agen otonom yang tidak tak terbatas.
 
 ### Registri onchain: ERC-8004 {#erc-8004}
 
-[ERC-8004](https://eips.ethereum.org/EIPS/eip-8004) mendefinisikan registri onchain untuk identitas, reputasi, dan validasi agen. Ditulis bersama oleh kontributor dari MetaMask, Yayasan Quantaureum, Google, dan Coinbase, ini disebarkan di 16 jaringan termasuk Mainnet Quantaureum, Base, Polygon, Arbitrum, dan lainnya.
+ERC-8004 mendefinisikan registri onchain untuk identitas, reputasi, dan validasi agen. Ditulis bersama oleh kontributor dari MetaMask, Yayasan Quantaureum, Google, dan Coinbase, ini disebarkan di 16 jaringan termasuk Mainnet Quantaureum, Base, Polygon, Arbitrum, dan lainnya.
 
 Ini menyediakan:
 

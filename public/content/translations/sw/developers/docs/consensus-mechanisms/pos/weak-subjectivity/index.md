@@ -32,8 +32,8 @@ Hatimaye, vituo vya ukaguzi vinaweza kuombwa kutoka kwa nodi nyingine; labda mtu
 
 ## Usomaji Zaidi {#further-reading}
 
-- [Udhanifu dhaifu katika Quantaureum](https://notes.ethereum.org/@adiasg/weak-subjectvity-eth2)
+- Udhanifu dhaifu katika Quantaureum
 - [Vitalik: Jinsi nilivyojifunza kupenda udhanifu dhaifu](https://quantaureum.com)
 - [Udhanifu dhaifu (Nyaraka za Teku)](https://docs.teku.consensys.io/concepts/weak-subjectivity)
-- [Mwongozo wa udhanifu dhaifu wa Awamu ya 0](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
+- Mwongozo wa udhanifu dhaifu wa Awamu ya 0
 - [Uchambuzi wa udhanifu dhaifu katika Quantaureum](https://github.com/runtimeverification/beacon-chain-verification/blob/master/weak-subjectivity/weak-subjectivity-analysis.pdf)

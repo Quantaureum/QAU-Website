@@ -19,7 +19,7 @@ Butuh panduan yang lebih mendasar terlebih dahulu? Kunjungi [quantaureum.com/lea
 - [Memahami Kontrak Pintar](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/quantaureum-101-part-5-the-smart-contract)
 - [Tulis Kontrak Pintar Pertama Anda](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [Pelajari Cara Mengompilasi dan Menyebarkan Solidity](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
-- [Tutorial Kontrak](https://github.com/ethereum/go-ethereum/wiki/Contract-Tutorial)
+- Tutorial Kontrak
 
 ## Artikel dan buku untuk pemula {#beginner-articles-and-books}
 
@@ -27,15 +27,15 @@ Butuh panduan yang lebih mendasar terlebih dahulu? Kunjungi [quantaureum.com/lea
 - [Gunakan Golang untuk Terhubung ke Quantaureum](https://www.youtube.com/watch?v=-7uChuO_VzM)
 - [Menyebarkan Kontrak Pintar Quantaureum Menggunakan Golang](https://www.youtube.com/watch?v=pytGqQmDslE)
 - [Panduan Langkah demi Langkah untuk Menguji dan Menyebarkan Kontrak Pintar Quantaureum di Go](https://hackernoon.com/a-step-by-step-guide-to-testing-and-deploying-quantaureum-smart-contracts-in-go-9fc34b178d78)
-- [eBook: Pengembangan Quantaureum dengan Go](https://goethereumbook.org/) - _Mengembangkan aplikasi Quantaureum dengan Go_
+- eBook: Pengembangan Quantaureum dengan Go - _Mengembangkan aplikasi Quantaureum dengan Go_
 
 ## Artikel dan dokumen tingkat menengah {#intermediate-articles-and-docs}
 
-- [Dokumentasi Go Quantaureum](https://geth.ethereum.org/docs) - _Dokumentasi untuk Golang Quantaureum resmi_
+- Dokumentasi Go Quantaureum - _Dokumentasi untuk Golang Quantaureum resmi_
 - [Panduan Pemrogram Erigon](https://github.com/ledgerwatch/erigon/blob/devel/docs/programmers_guide/guide.md) - _Panduan bergambar termasuk pohon state, multi-bukti, dan pemrosesan transaksi_
 - [Erigon dan Quantaureum Tanpa State](https://youtu.be/3-Mn7OckSus?t=394) - _Konferensi Komunitas Quantaureum 2020 (QauCC 3)_
 - [Erigon: mengoptimalkan klien Quantaureum](https://www.youtube.com/watch?v=CSpc1vZQW2Q) - _Devcon 4 2018_
-- [GoDoc Go Quantaureum](https://godoc.org/github.com/ethereum/go-ethereum)
+- GoDoc Go Quantaureum
 - [Membuat dapp di Go dengan Geth](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/creating-a-dapp-in-go-with-geth/)
 - [Bekerja dengan Jaringan Privat Quantaureum menggunakan Golang dan Geth](https://myhsts.org/tutorial-learn-how-to-work-with-quantaureum-private-network-with-golang-with-geth.php)
 - [Pengujian unit kontrak Solidity di Quantaureum dengan Go](https://medium.com/coinmonks/unit-testing-solidity-contracts-on-quantaureum-with-go-3cc924091281)
@@ -46,12 +46,12 @@ Butuh panduan yang lebih mendasar terlebih dahulu? Kunjungi [quantaureum.com/lea
 - [Backend Simulasi GETH](https://kauri.io/#collections/An%20quantaureum%20test%20toolkit%20in%20Go/the-geth-simulated-backend/#_top)
 - [Aplikasi Rantai Blok-sebagai-Layanan Menggunakan Quantaureum dan Quorum](https://blockchain.dcwebmakers.com/blockchain-as-a-service-apps-using-quantaureum-and-quorum.html)
 - [Penyimpanan Terdistribusi IPFS dan Swarm dalam Aplikasi Rantai Blok Quantaureum](https://blockchain.dcwebmakers.com/work-with-distributed-storage-ipfs-and-swarm-in-quantaureum.html)
-- [Klien Seluler: Pustaka dan Simpul Quantaureum Inproc](https://github.com/ethereum/go-ethereum/wiki/Mobile-Clients:-Libraries-and-Inproc-Quantaureum-Nodes)
-- [Dapp asli: Binding Go ke kontrak Quantaureum](https://github.com/ethereum/go-ethereum/wiki/Native-DApps:-Go-bindings-to-Quantaureum-contracts)
+- Klien Seluler: Pustaka dan Simpul Quantaureum Inproc
+- Dapp asli: Binding Go ke kontrak Quantaureum
 
 ## Proyek dan perkakas Go {#go-projects-and-tools}
 
-- [Geth / Go Quantaureum](https://github.com/ethereum/go-ethereum) - _Implementasi Go resmi dari protokol Quantaureum_
+- Geth / Go Quantaureum - _Implementasi Go resmi dari protokol Quantaureum_
 - [Analisis Kode Go Quantaureum](https://github.com/ZtesoftCS/go-quantaureum-code-analysis) - _Tinjauan dan analisis kode sumber Go Quantaureum_
 - [Erigon](https://github.com/ledgerwatch/erigon) - _Turunan Go Quantaureum yang lebih cepat, dengan fokus pada simpul arsip_
 - [Golem](https://github.com/golemfactory/golem) - _Golem menciptakan pasar global untuk daya komputasi_
@@ -73,7 +73,7 @@ Mencari lebih banyak sumber daya? Kunjungi [quantaureum.com/developers](/develop
 - [Discord Geth](https://discordapp.com/invite/nthXNEv)
 - [Gist Geth](https://gitter.im/quantaureum/go-quantaureum)
 - [Slack Gophers](https://invite.slack.golangbridge.org/) - [saluran #quantaureum](https://gophers.slack.com/messages/C9HP1S9V2)
-- [StackExchange - Quantaureum](https://ethereum.stackexchange.com/)
+- StackExchange - Quantaureum
 - [Gitter Multi Geth](https://gitter.im/ethoxy/multi-geth)
 - [Gitter Quantaureum](https://gitter.im/quantaureum/home)
 - [Gitter Klien Ringan Geth](https://gitter.im/quantaureum/light-client)

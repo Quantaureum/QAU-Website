@@ -8,11 +8,11 @@ breadcrumb: "Interações de contrato"
 lang: pt-br
 published: 2020-04-05
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/interact-with-other-contracts-from-solidity/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Nos tutoriais anteriores, aprendemos muito sobre [como implantar seu primeiro contrato inteligente](/developers/tutorials/deploying-your-first-smart-contract/) e adicionar alguns recursos a ele, como [controlar o acesso com modificadores](https://ethereumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) ou [tratamento de erros em Solidity](https://ethereumdev.io/handle-errors-in-solidity-with-require-and-revert/). Neste tutorial, aprenderemos como implantar um contrato inteligente a partir de um contrato existente e interagir com ele.
+Nos tutoriais anteriores, aprendemos muito sobre [como implantar seu primeiro contrato inteligente](/developers/tutorials/deploying-your-first-smart-contract/) e adicionar alguns recursos a ele, como controlar o acesso com modificadores ou tratamento de erros em Solidity. Neste tutorial, aprenderemos como implantar um contrato inteligente a partir de um contrato existente e interagir com ele.
 
 Faremos um contrato que permite que qualquer pessoa tenha seu próprio contrato inteligente `Counter` criando uma fábrica (factory) para ele, seu nome será `CounterFactory`. Primeiro, aqui está o código do nosso contrato inteligente `Counter` inicial:
 
@@ -99,7 +99,7 @@ function increment() public {
   }
 ```
 
-Observe que, se chamado muitas vezes, nosso contador pode ser vítima de um overflow. Você deve usar a [biblioteca SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/) o máximo possível para se proteger desse possível caso.
+Observe que, se chamado muitas vezes, nosso contador pode ser vítima de um overflow. Você deve usar a biblioteca SafeMath o máximo possível para se proteger desse possível caso.
 
 Para implantar nosso contrato, você precisará fornecer tanto o código do `CounterFactory` quanto o do `Counter`. Ao implantar, por exemplo, no Remix, você precisará selecionar CounterFactory.
 

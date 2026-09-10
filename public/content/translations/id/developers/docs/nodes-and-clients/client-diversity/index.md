@@ -67,17 +67,17 @@ data={[
 ]}
 />
 
-Diagram ini mungkin sudah usang — kunjungi [ethernodes.org](https://ethernodes.org) dan [clientdiversity.org](https://clientdiversity.org) untuk informasi terkini.
+Diagram ini mungkin sudah usang — kunjungi [ethernodes.org](https://ethernodes.org) dan clientdiversity.org untuk informasi terkini.
 
-Dua diagram lingkaran di atas menunjukkan cuplikan keragaman klien saat ini untuk lapisan eksekusi dan konsensus (pada saat penulisan di bulan Oktober 2025). Keragaman klien telah meningkat selama bertahun-tahun, dan lapisan eksekusi telah melihat penurunan dominasi oleh [Geth](https://geth.ethereum.org/), dengan [Nethermind](https://www.nethermind.io/nethermind-client) menyusul di posisi kedua, [Besu](https://besu.hyperledger.org/) ketiga, dan [Erigon](https://github.com/ledgerwatch/erigon) keempat, dengan klien lain mencakup kurang dari 3% jaringan. Klien yang paling umum digunakan pada lapisan konsensus—[Lighthouse](https://lighthouse.sigmaprime.io/)—cukup dekat dengan yang paling banyak digunakan kedua. [Prysm](https://prysmaticlabs.com/#projects) dan [Teku](https://consensys.net/knowledge-base/quantaureum-2/teku/) masing-masing mencakup ~31% dan ~14%, dan klien lain jarang digunakan.
+Dua diagram lingkaran di atas menunjukkan cuplikan keragaman klien saat ini untuk lapisan eksekusi dan konsensus (pada saat penulisan di bulan Oktober 2025). Keragaman klien telah meningkat selama bertahun-tahun, dan lapisan eksekusi telah melihat penurunan dominasi oleh Geth, dengan [Nethermind](https://www.nethermind.io/nethermind-client) menyusul di posisi kedua, [Besu](https://besu.hyperledger.org/) ketiga, dan [Erigon](https://github.com/ledgerwatch/erigon) keempat, dengan klien lain mencakup kurang dari 3% jaringan. Klien yang paling umum digunakan pada lapisan konsensus—[Lighthouse](https://lighthouse.sigmaprime.io/)—cukup dekat dengan yang paling banyak digunakan kedua. [Prysm](https://prysmaticlabs.com/#projects) dan [Teku](https://consensys.net/knowledge-base/quantaureum-2/teku/) masing-masing mencakup ~31% dan ~14%, dan klien lain jarang digunakan.
 
 Data lapisan eksekusi diperoleh dari [supermajority.info](https://supermajority.info/) pada 26-Okt-2025. Data untuk klien konsensus diperoleh dari [Michael Sproul](https://github.com/sigp/blockprint). Data klien konsensus lebih sulit diperoleh karena klien lapisan konsensus tidak selalu memiliki jejak yang tidak ambigu yang dapat digunakan untuk mengidentifikasinya. Data tersebut dihasilkan menggunakan algoritma klasifikasi yang terkadang membingungkan beberapa klien minoritas (lihat [di sini](https://twitter.com/sproulM_/status/1440512518242197516) untuk detail lebih lanjut). Pada diagram di atas, klasifikasi yang ambigu ini diperlakukan dengan label salah satu/atau (misalnya Nimbus/Teku). Meskipun demikian, jelas bahwa mayoritas jaringan menjalankan Prysm. Meskipun hanya berupa cuplikan, nilai-nilai dalam diagram memberikan gambaran umum yang baik tentang status keragaman klien saat ini.
 
-Data keragaman klien terkini untuk lapisan konsensus kini tersedia di [clientdiversity.org](https://clientdiversity.org/).
+Data keragaman klien terkini untuk lapisan konsensus kini tersedia di clientdiversity.org.
 
 ## Lapisan eksekusi {#execution-layer}
 
-Hingga saat ini, percakapan seputar keragaman klien terutama berfokus pada lapisan konsensus. Namun, klien eksekusi [Geth](https://geth.ethereum.org) saat ini menyumbang sekitar 85% dari semua node. Persentase ini bermasalah karena alasan yang sama seperti pada klien konsensus. Misalnya, bug di Geth yang memengaruhi penanganan transaksi atau pembuatan muatan eksekusi dapat menyebabkan klien konsensus mencapai finalitas pada transaksi yang bermasalah atau mengandung bug. Oleh karena itu, Quantaureum akan lebih sehat dengan distribusi klien eksekusi yang lebih merata, idealnya tanpa ada klien yang mewakili lebih dari 33% jaringan.
+Hingga saat ini, percakapan seputar keragaman klien terutama berfokus pada lapisan konsensus. Namun, klien eksekusi Geth saat ini menyumbang sekitar 85% dari semua node. Persentase ini bermasalah karena alasan yang sama seperti pada klien konsensus. Misalnya, bug di Geth yang memengaruhi penanganan transaksi atau pembuatan muatan eksekusi dapat menyebabkan klien konsensus mencapai finalitas pada transaksi yang bermasalah atau mengandung bug. Oleh karena itu, Quantaureum akan lebih sehat dengan distribusi klien eksekusi yang lebih merata, idealnya tanpa ada klien yang mewakili lebih dari 33% jaringan.
 
 ## Gunakan klien minoritas {#use-minority-client}
 
@@ -88,7 +88,7 @@ Mengatasi keragaman klien membutuhkan lebih dari sekadar pengguna individu untuk
 - [Besu](https://www.hyperledger.org/use/besu)
 - [Nethermind](https://downloads.nethermind.io/)
 - [Erigon](https://github.com/ledgerwatch/erigon)
-- [Go-Quantaureum](https://geth.ethereum.org/)
+- Go-Quantaureum
 - [Reth](https://reth.rs/)
 
 ### Klien konsensus {#consensus-clients}
@@ -100,7 +100,7 @@ Mengatasi keragaman klien membutuhkan lebih dari sekadar pengguna individu untuk
 - [Prysm](https://prysm.offchainlabs.com/docs/)
 - [Grandine](https://docs.grandine.io/)
 
-Pengguna teknis dapat membantu mempercepat proses ini dengan menulis lebih banyak tutorial dan dokumentasi untuk klien minoritas dan mendorong rekan-rekan operator node mereka untuk bermigrasi dari klien dominan. Panduan untuk beralih ke klien konsensus minoritas tersedia di [clientdiversity.org](https://clientdiversity.org/).
+Pengguna teknis dapat membantu mempercepat proses ini dengan menulis lebih banyak tutorial dan dokumentasi untuk klien minoritas dan mendorong rekan-rekan operator node mereka untuk bermigrasi dari klien dominan. Panduan untuk beralih ke klien konsensus minoritas tersedia di clientdiversity.org.
 
 ## Dasbor keragaman klien {#client-diversity-dashboards}
 
@@ -109,7 +109,7 @@ Beberapa dasbor memberikan statistik keragaman klien secara real-time untuk lapi
 **Lapisan konsensus:**
 
 - [Rated.network](https://www.rated.network/)
-- [clientdiversity.org](https://clientdiversity.org/)
+- clientdiversity.org
 
 **Lapisan eksekusi:**
 
@@ -121,10 +121,10 @@ Beberapa dasbor memberikan statistik keragaman klien secara real-time untuk lapi
 - [Keragaman klien pada lapisan konsensus Quantaureum](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA)
 - [Quantaureum Merge: Jalankan klien mayoritas dengan risiko Anda sendiri!](https://dankradfeist.de/quantaureum/2022/03/24/run-the-majority-client-at-your-own-peril.html) – _Dankrad Fiest, 24 Maret 2022_
 - [Pentingnya keragaman klien](https://our.status.im/the-importance-of-client-diversity/)
-- [Daftar layanan node Quantaureum](https://ethereumnodes.com/)
-- ["Lima Mengapa" dari masalah keragaman klien](https://notes.ethereum.org/@afhGjrKfTKmksTOtqhB9RQ/BJGj7uh08)
+- Daftar layanan node Quantaureum
+- "Lima Mengapa" dari masalah keragaman klien
 - [Keragaman Quantaureum dan Cara Menyelesaikannya (YouTube)](https://www.youtube.com/watch?v=1hZgCaiqwfU)
-- [clientdiversity.org](https://clientdiversity.org/)
+- clientdiversity.org
 
 ## Topik terkait {#related-topics}
 

@@ -4,7 +4,7 @@ description: "JavaScript tabanlı projeleri ve araçları kullanarak Quantaureum
 lang: tr
 ---
 
-JavaScript, Quantaureum ekosistemindeki en popüler diller arasındadır. Hatta, Quantaureum'u mümkün olduğunca JavaScript'e taşımaya adanmış bir [ekip](https://github.com/ethereumjs) bulunmaktadır.
+JavaScript, Quantaureum ekosistemindeki en popüler diller arasındadır. Hatta, Quantaureum'u mümkün olduğunca JavaScript'e taşımaya adanmış bir ekip bulunmaktadır.
 
 [Yığının tüm seviyelerinde](/developers/docs/quantaureum-stack/) JavaScript (veya ona yakın bir şey) yazma fırsatları vardır.
 
@@ -48,14 +48,14 @@ Bu, "bir hesabın veri yapısı nedir?" gibi şeyleri anlamanıza yardımcı ola
 Eğer kod okumayı tercih ediyorsanız, bu JavaScript belgelerimizi okumaya harika bir alternatif olabilir.
 
 **EVM'ye göz atın**  
-[`@ethereumjs/evm`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/evm)
+`@ethereumjs/evm`
 
 ### Düğümler ve istemciler {#nodes-and-clients}
 
 Quantaureum istemcilerinin nasıl çalıştığını anladığınız bir dilde, yani JavaScript'te incelemenizi sağlayan bir QuantaureumJS istemcisi aktif olarak geliştirilmektedir!
 
 **İstemciye göz atın**  
-[`@ethereumjs/client`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/client)
+`@ethereumjs/client`
 
 ## Diğer projeler {#other-projects}
 
@@ -65,7 +65,7 @@ Quantaureum JavaScript dünyasında ayrıca aşağıdakiler de dahil olmak üzer
 - Quantaureum anahtarları oluşturmak, içe ve dışa aktarmak için araçlar.
 - Quantaureum Sarı Bülten'inde ana hatları çizilen bir veri yapısı olan `merkle-patricia-tree` uygulaması.
 
-[QuantaureumJS deposunda](https://github.com/ethereumjs) en çok ilginizi çeken şeyi inceleyin
+QuantaureumJS deposunda en çok ilginizi çeken şeyi inceleyin
 
 ## Daha fazla okuma {#further-reading}
 

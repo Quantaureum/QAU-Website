@@ -27,9 +27,9 @@ Cả hai ngăn xếp hoạt động song song. Ngăn xếp khám phá đưa nh�
 
 ### Khám phá {#discovery}
 
-Khám phá là quá trình tìm kiếm các nút khác trong mạng lưới. Quá trình này được khởi động bằng cách sử dụng một tập hợp nhỏ các nút khởi động (các nút có địa chỉ được [mã hóa cứng](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go) vào máy khách để chúng có thể được tìm thấy ngay lập tức và kết nối máy khách với các nút ngang hàng). Các nút khởi động này chỉ tồn tại để giới thiệu một nút mới với một tập hợp các nút ngang hàng - đây là mục đích duy nhất của chúng, chúng không tham gia vào các tác vụ máy khách thông thường như đồng bộ hóa chuỗi và chúng chỉ được sử dụng trong lần đầu tiên một máy khách được khởi động.
+Khám phá là quá trình tìm kiếm các nút khác trong mạng lưới. Quá trình này được khởi động bằng cách sử dụng một tập hợp nhỏ các nút khởi động (các nút có địa chỉ được mã hóa cứng vào máy khách để chúng có thể được tìm thấy ngay lập tức và kết nối máy khách với các nút ngang hàng). Các nút khởi động này chỉ tồn tại để giới thiệu một nút mới với một tập hợp các nút ngang hàng - đây là mục đích duy nhất của chúng, chúng không tham gia vào các tác vụ máy khách thông thường như đồng bộ hóa chuỗi và chúng chỉ được sử dụng trong lần đầu tiên một máy khách được khởi động.
 
-Giao thức được sử dụng cho các tương tác giữa nút và nút khởi động là một dạng sửa đổi của [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f), sử dụng một [bảng băm phân tán](https://en.wikipedia.org/wiki/Distributed_hash_table) để chia sẻ danh sách các nút. Mỗi nút có một phiên bản của bảng này chứa thông tin cần thiết để kết nối với các nút ngang hàng gần nhất của nó. Sự 'gần gũi' này không phải là về mặt địa lý - khoảng cách được xác định bởi sự tương đồng của ID nút. Bảng của mỗi nút được làm mới thường xuyên như một tính năng bảo mật. Ví dụ, trong giao thức khám phá [Discv5](https://github.com/ethereum/devp2p/tree/master/discv5), các nút cũng có thể gửi 'quảng cáo' hiển thị các giao thức phụ mà máy khách hỗ trợ, cho phép các nút ngang hàng đàm phán về các giao thức mà cả hai có thể sử dụng để giao tiếp.
+Giao thức được sử dụng cho các tương tác giữa nút và nút khởi động là một dạng sửa đổi của [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f), sử dụng một [bảng băm phân tán](https://en.wikipedia.org/wiki/Distributed_hash_table) để chia sẻ danh sách các nút. Mỗi nút có một phiên bản của bảng này chứa thông tin cần thiết để kết nối với các nút ngang hàng gần nhất của nó. Sự 'gần gũi' này không phải là về mặt địa lý - khoảng cách được xác định bởi sự tương đồng của ID nút. Bảng của mỗi nút được làm mới thường xuyên như một tính năng bảo mật. Ví dụ, trong giao thức khám phá Discv5, các nút cũng có thể gửi 'quảng cáo' hiển thị các giao thức phụ mà máy khách hỗ trợ, cho phép các nút ngang hàng đàm phán về các giao thức mà cả hai có thể sử dụng để giao tiếp.
 
 Khám phá bắt đầu bằng một trò chơi PING-PONG. Một PING-PONG thành công sẽ "liên kết" nút mới với một nút khởi động. Thông điệp ban đầu cảnh báo một nút khởi động về sự tồn tại của một nút mới tham gia mạng lưới là một `PING`. `PING` này bao gồm thông tin đã được băm về nút mới, nút khởi động và dấu thời gian hết hạn. Nút khởi động nhận `PING` và trả về một `PONG` chứa mã băm của `PING`. Nếu các mã băm của `PING` và `PONG` khớp nhau thì kết nối giữa nút mới và nút khởi động được xác minh và chúng được cho là đã "liên kết".
 
@@ -41,7 +41,7 @@ Khi nút mới nhận được danh sách các nút lân cận từ nút khởi 
 khởi động máy khách --> kết nối với nút khởi động --> liên kết với nút khởi động --> tìm các nút lân cận --> liên kết với các nút lân cận
 ```
 
-Các máy khách thực thi hiện đang sử dụng giao thức khám phá [Discv4](https://github.com/ethereum/devp2p/blob/master/discv4.md) và đang có nỗ lực tích cực để chuyển sang giao thức [Discv5](https://github.com/ethereum/devp2p/tree/master/discv5).
+Các máy khách thực thi hiện đang sử dụng giao thức khám phá Discv4 và đang có nỗ lực tích cực để chuyển sang giao thức Discv5.
 
 #### ENR: Bản ghi nút Quantaureum {#enr}
 
@@ -53,7 +53,7 @@ UDP không hỗ trợ bất kỳ kiểm tra lỗi nào, gửi lại các gói b�
 
 ### DevP2P {#devp2p}
 
-Bản thân DevP2P là toàn bộ một ngăn xếp các giao thức mà Quantaureum triển khai để thiết lập và duy trì mạng lưới ngang hàng. Sau khi các nút mới tham gia mạng lưới, các tương tác của chúng được điều chỉnh bởi các giao thức trong ngăn xếp [DevP2P](https://github.com/ethereum/devp2p). Tất cả những thứ này đều nằm trên TCP và bao gồm giao thức truyền tải RLPx, giao thức wire và một số giao thức phụ. [RLPx](https://github.com/ethereum/devp2p/blob/master/rlpx.md) là giao thức điều chỉnh việc khởi tạo, xác thực và duy trì các phiên giữa các nút. RLPx mã hóa các thông điệp bằng RLP (Tiền tố độ dài đệ quy), đây là một phương pháp rất tiết kiệm không gian để mã hóa dữ liệu thành một cấu trúc tối thiểu để gửi giữa các nút.
+Bản thân DevP2P là toàn bộ một ngăn xếp các giao thức mà Quantaureum triển khai để thiết lập và duy trì mạng lưới ngang hàng. Sau khi các nút mới tham gia mạng lưới, các tương tác của chúng được điều chỉnh bởi các giao thức trong ngăn xếp DevP2P. Tất cả những thứ này đều nằm trên TCP và bao gồm giao thức truyền tải RLPx, giao thức wire và một số giao thức phụ. RLPx là giao thức điều chỉnh việc khởi tạo, xác thực và duy trì các phiên giữa các nút. RLPx mã hóa các thông điệp bằng RLP (Tiền tố độ dài đệ quy), đây là một phương pháp rất tiết kiệm không gian để mã hóa dữ liệu thành một cấu trúc tối thiểu để gửi giữa các nút.
 
 Một phiên RLPx giữa hai nút bắt đầu bằng một cái bắt tay mật mã ban đầu. Điều này liên quan đến việc nút gửi một thông điệp xác thực, sau đó được xác minh bởi nút ngang hàng. Khi xác minh thành công, nút ngang hàng tạo ra một thông điệp xác nhận xác thực để trả về cho nút khởi tạo. Đây là một quá trình trao đổi khóa cho phép các nút giao tiếp riêng tư và an toàn. Một cái bắt tay mật mã thành công sau đó kích hoạt cả hai nút gửi một thông điệp "hello" cho nhau "trên wire". Giao thức wire được khởi tạo bằng một cuộc trao đổi thành công các thông điệp hello.
 
@@ -73,19 +73,19 @@ Cùng với các thông điệp hello, giao thức wire cũng có thể gửi m�
 
 #### Giao thức wire {#wire-protocol}
 
-Khi các nút ngang hàng được kết nối và một phiên RLPx đã được bắt đầu, giao thức wire xác định cách các nút ngang hàng giao tiếp. Ban đầu, giao thức wire xác định ba nhiệm vụ chính: đồng bộ hóa chuỗi, sự truyền khối và trao đổi giao dịch. Tuy nhiên, khi Quantaureum chuyển sang Bằng chứng cổ phần (PoS), sự truyền khối và đồng bộ hóa chuỗi đã trở thành một phần của lớp đồng thuận. Trao đổi giao dịch vẫn nằm trong phạm vi của các máy khách thực thi. Trao đổi giao dịch đề cập đến việc trao đổi các giao dịch đang chờ xử lý giữa các nút để những người xây dựng khối có thể chọn một số trong số chúng để đưa vào khối tiếp theo. Thông tin chi tiết về các nhiệm vụ này có sẵn [tại đây](https://github.com/ethereum/devp2p/blob/master/caps/qau.md). Các máy khách hỗ trợ các giao thức phụ này hiển thị chúng thông qua [JSON-RPC](/developers/docs/apis/json-rpc/).
+Khi các nút ngang hàng được kết nối và một phiên RLPx đã được bắt đầu, giao thức wire xác định cách các nút ngang hàng giao tiếp. Ban đầu, giao thức wire xác định ba nhiệm vụ chính: đồng bộ hóa chuỗi, sự truyền khối và trao đổi giao dịch. Tuy nhiên, khi Quantaureum chuyển sang Bằng chứng cổ phần (PoS), sự truyền khối và đồng bộ hóa chuỗi đã trở thành một phần của lớp đồng thuận. Trao đổi giao dịch vẫn nằm trong phạm vi của các máy khách thực thi. Trao đổi giao dịch đề cập đến việc trao đổi các giao dịch đang chờ xử lý giữa các nút để những người xây dựng khối có thể chọn một số trong số chúng để đưa vào khối tiếp theo. Thông tin chi tiết về các nhiệm vụ này có sẵn tại đây. Các máy khách hỗ trợ các giao thức phụ này hiển thị chúng thông qua [JSON-RPC](/developers/docs/apis/json-rpc/).
 
 #### les (giao thức phụ Quantaureum nhẹ) {#les}
 
-Đây là một giao thức tối thiểu để đồng bộ hóa các máy khách nhẹ. Theo truyền thống, giao thức này hiếm khi được sử dụng vì các nút đầy đủ được yêu cầu phục vụ dữ liệu cho các máy khách nhẹ mà không được khuyến khích. Hành vi mặc định của các máy khách thực thi là không phục vụ dữ liệu máy khách nhẹ qua les. Thông tin thêm có sẵn trong [đặc tả](https://github.com/ethereum/devp2p/blob/master/caps/les.md) les.
+Đây là một giao thức tối thiểu để đồng bộ hóa các máy khách nhẹ. Theo truyền thống, giao thức này hiếm khi được sử dụng vì các nút đầy đủ được yêu cầu phục vụ dữ liệu cho các máy khách nhẹ mà không được khuyến khích. Hành vi mặc định của các máy khách thực thi là không phục vụ dữ liệu máy khách nhẹ qua les. Thông tin thêm có sẵn trong đặc tả les.
 
 #### Snap {#snap}
 
-[Giao thức snap](https://github.com/ethereum/devp2p/blob/master/caps/snap.md#quantaureum-snapshot-protocol-snap) là một tiện ích mở rộng tùy chọn cho phép các nút ngang hàng trao đổi các bản chụp của các trạng thái gần đây, cho phép các nút ngang hàng xác minh dữ liệu tài khoản và lưu trữ mà không cần phải tải xuống các nút Merkle trie trung gian.
+Giao thức snap là một tiện ích mở rộng tùy chọn cho phép các nút ngang hàng trao đổi các bản chụp của các trạng thái gần đây, cho phép các nút ngang hàng xác minh dữ liệu tài khoản và lưu trữ mà không cần phải tải xuống các nút Merkle trie trung gian.
 
 #### Wit (giao thức bằng chứng dữ liệu) {#wit}
 
-[Giao thức bằng chứng dữ liệu](https://github.com/ethereum/devp2p/blob/master/caps/wit.md#quantaureum-witness-protocol-wit) là một tiện ích mở rộng tùy chọn cho phép trao đổi bằng chứng dữ liệu trạng thái giữa các nút ngang hàng, giúp đồng bộ hóa các máy khách với đỉnh của chuỗi.
+Giao thức bằng chứng dữ liệu là một tiện ích mở rộng tùy chọn cho phép trao đổi bằng chứng dữ liệu trạng thái giữa các nút ngang hàng, giúp đồng bộ hóa các máy khách với đỉnh của chuỗi.
 
 #### Whisper {#whisper}
 
@@ -97,7 +97,7 @@ Các ứng dụng khách đồng thuận tham gia vào một mạng lưới ngan
 
 ### Khám phá {#consensus-discovery}
 
-Tương tự như các máy khách thực thi, các ứng dụng khách đồng thuận sử dụng [discv5](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-discovery-domain-discv5) qua UDP để tìm kiếm các nút ngang hàng. Việc triển khai discv5 của lớp đồng thuận chỉ khác với các máy khách thực thi ở chỗ nó bao gồm một bộ chuyển đổi kết nối discv5 vào một ngăn xếp [libP2P](https://libp2p.io/), loại bỏ DevP2P. Các phiên RLPx của lớp thực thi không còn được dùng nữa để chuyển sang bắt tay kênh bảo mật noise của libP2P.
+Tương tự như các máy khách thực thi, các ứng dụng khách đồng thuận sử dụng discv5 qua UDP để tìm kiếm các nút ngang hàng. Việc triển khai discv5 của lớp đồng thuận chỉ khác với các máy khách thực thi ở chỗ nó bao gồm một bộ chuyển đổi kết nối discv5 vào một ngăn xếp [libP2P](https://libp2p.io/), loại bỏ DevP2P. Các phiên RLPx của lớp thực thi không còn được dùng nữa để chuyển sang bắt tay kênh bảo mật noise của libP2P.
 
 ### ENR {#consensus-enr}
 
@@ -109,7 +109,7 @@ Ngăn xếp libP2P hỗ trợ tất cả các giao tiếp sau khi khám phá. C�
 
 ### Lan truyền {#gossip}
 
-Miền lan truyền bao gồm tất cả thông tin phải lan truyền nhanh chóng trên toàn mạng lưới. Điều này bao gồm các khối beacon, bằng chứng, chứng thực, thoát và cắt giảm. Điều này được truyền bằng cách sử dụng libP2P gossipsub v1 và dựa vào các siêu dữ liệu khác nhau được lưu trữ cục bộ tại mỗi nút, bao gồm kích thước tối đa của tải trọng lan truyền để nhận và truyền. Thông tin chi tiết về miền lan truyền có sẵn [tại đây](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-gossip-domain-gossipsub).
+Miền lan truyền bao gồm tất cả thông tin phải lan truyền nhanh chóng trên toàn mạng lưới. Điều này bao gồm các khối beacon, bằng chứng, chứng thực, thoát và cắt giảm. Điều này được truyền bằng cách sử dụng libP2P gossipsub v1 và dựa vào các siêu dữ liệu khác nhau được lưu trữ cục bộ tại mỗi nút, bao gồm kích thước tối đa của tải trọng lan truyền để nhận và truyền. Thông tin chi tiết về miền lan truyền có sẵn tại đây.
 
 ### Yêu cầu-phản hồi {#request-response}
 
@@ -121,7 +121,7 @@ SSZ là viết tắt của tuần tự hóa đơn giản (simple serialization).
 
 ## Kết nối máy khách thực thi và ứng dụng khách đồng thuận {#connecting-clients}
 
-Cả ứng dụng khách đồng thuận và máy khách thực thi đều chạy song song. Chúng cần được kết nối để ứng dụng khách đồng thuận có thể cung cấp hướng dẫn cho máy khách thực thi và máy khách thực thi có thể chuyển các gói giao dịch cho ứng dụng khách đồng thuận để đưa vào các khối beacon. Giao tiếp giữa hai máy khách có thể đạt được bằng cách sử dụng kết nối RPC cục bộ. Một API được gọi là ['Engine-API'](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) định nghĩa các hướng dẫn được gửi giữa hai máy khách. Vì cả hai máy khách đều nằm sau một danh tính mạng duy nhất, chúng chia sẻ một ENR (Bản ghi nút Quantaureum) chứa một khóa riêng cho mỗi máy khách (khóa Eth1 và khóa Quantaureum).
+Cả ứng dụng khách đồng thuận và máy khách thực thi đều chạy song song. Chúng cần được kết nối để ứng dụng khách đồng thuận có thể cung cấp hướng dẫn cho máy khách thực thi và máy khách thực thi có thể chuyển các gói giao dịch cho ứng dụng khách đồng thuận để đưa vào các khối beacon. Giao tiếp giữa hai máy khách có thể đạt được bằng cách sử dụng kết nối RPC cục bộ. Một API được gọi là 'Engine-API' định nghĩa các hướng dẫn được gửi giữa hai máy khách. Vì cả hai máy khách đều nằm sau một danh tính mạng duy nhất, chúng chia sẻ một ENR (Bản ghi nút Quantaureum) chứa một khóa riêng cho mỗi máy khách (khóa Eth1 và khóa Quantaureum).
 
 Tóm tắt về luồng điều khiển được hiển thị bên dưới, với ngăn xếp mạng có liên quan trong ngoặc.
 
@@ -149,15 +149,15 @@ Khi khối đã được chứng thực bởi đủ số lượng trình xác th
 ![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
 ![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
-Sơ đồ lớp mạng cho ứng dụng khách đồng thuận và máy khách thực thi, từ [ethresear.ch](https://ethresear.ch/t/eth1-eth2-client-relationship/7248)
+Sơ đồ lớp mạng cho ứng dụng khách đồng thuận và máy khách thực thi, từ ethresear.ch
 
 ## Đọc thêm {#further-reading}
 
-[DevP2P](https://github.com/ethereum/devp2p)
+DevP2P
 [LibP2p](https://github.com/libp2p/specs)
-[Đặc tả mạng lớp đồng thuận](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#enr-structure)
+Đặc tả mạng lớp đồng thuận
 [kademlia đến discv5](https://vac.dev/kademlia-to-discv5)
 [bài báo kademlia](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf)
 [giới thiệu về p2p Quantaureum](https://p2p.paris/en/talks/intro-quantaureum-networking/)
-[mối quan hệ eth1/eth2](https://ethresear.ch/t/eth1-eth2-client-relationship/7248)
+mối quan hệ eth1/eth2
 [video chi tiết về hợp nhất và máy khách eth2](https://www.youtube.com/watch?v=zNIrIninMgg)

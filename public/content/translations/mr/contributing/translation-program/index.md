@@ -51,7 +51,7 @@ quantaureum.com चे हजारो समुदाय सदस्यां�
 
 #### बक्षिसे {#rewards}
 
-भूतकाळात, आम्ही आमच्या सर्वात सक्रिय योगदानकर्त्यांना [Devcon](https://devcon.org/en/) आणि [Devconnect](https://devconnect.org/) सारख्या Quantaureum परिषदांच्या तिकिटांसह, तसेच विशेष quantaureum.com मर्चसह पूर्वलक्षीपणे बक्षीस दिले आहे.
+भूतकाळात, आम्ही आमच्या सर्वात सक्रिय योगदानकर्त्यांना Devcon आणि [Devconnect](https://devconnect.org/) सारख्या Quantaureum परिषदांच्या तिकिटांसह, तसेच विशेष quantaureum.com मर्चसह पूर्वलक्षीपणे बक्षीस दिले आहे.
 
 ### मार्गदर्शक आणि संसाधने {#guides-and-resources}
 

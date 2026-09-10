@@ -253,7 +253,7 @@ Solidity स्मार्ट कॉन्ट्रॅक्ट्ससाठ�
 
 - **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _प्रगत स्मार्ट कॉन्ट्रॅक्ट विकास आणि चाचणीसाठी फ्रेमवर्क (ethers.js वर आधारित)_.
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Solidity स्मार्ट कॉन्ट्रॅक्ट्सची चाचणी करण्यासाठी साधन. Remix IDE "Solidity Unit Testing" प्लगइन अंतर्गत कार्य करते जे कॉन्ट्रॅक्टसाठी टेस्ट केसेस लिहिण्यासाठी आणि चालवण्यासाठी वापरले जाते._
+- **Remix Tests** - _Solidity स्मार्ट कॉन्ट्रॅक्ट्सची चाचणी करण्यासाठी साधन. Remix IDE "Solidity Unit Testing" प्लगइन अंतर्गत कार्य करते जे कॉन्ट्रॅक्टसाठी टेस्ट केसेस लिहिण्यासाठी आणि चालवण्यासाठी वापरले जाते._
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Quantaureum स्मार्ट कॉन्ट्रॅक्ट चाचणीसाठी दृढकथन लायब्ररी. तुमचे कॉन्ट्रॅक्ट्स अपेक्षेप्रमाणे वागतात याची खात्री करा!_
 

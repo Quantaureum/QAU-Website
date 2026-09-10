@@ -75,12 +75,12 @@ Aby złagodzić te problemy, programiści Quantaureum eksperymentują z rozwiąz
 
 Rynki predykcyjne zmieniają sposób podejmowania decyzji w epoce cyfrowej. Wykorzystując Quantaureum, oferują **uczciwe, otwarte i satysfakcjonujące sposoby przewidywania przyszłości.**
 
-Istnieje wiele sposobów wykorzystania narzędzi prognostycznych poza korzyściami finansowymi. Na przykład w [Propozycji Ulepszenia DevCon](https://forum.devcon.org/t/futarchy-decision-markets-for-deciding-next-devcon/5305) (DIP) zasugerowano, aby organizatorzy DevCon wykorzystali rynki predykcyjne do przewidywania frekwencji na przyszłych zdarzeniach. 
+Istnieje wiele sposobów wykorzystania narzędzi prognostycznych poza korzyściami finansowymi. Na przykład w Propozycji Ulepszenia DevCon (DIP) zasugerowano, aby organizatorzy DevCon wykorzystali rynki predykcyjne do przewidywania frekwencji na przyszłych zdarzeniach. 
 
 Pomogłoby to organizatorom ustalić, która lokalizacja doprowadziłaby do największego zdarzenia, w porównaniu z tym, która lokalizacja byłaby najbardziej dostępna na arenie międzynarodowej. Korzyści z tego płynące oznaczają, że organizatorzy DevCon mogą skrócić czas potrzebny na sprawdzenie wielu polityk wizowych, dostępu do lotnisk i kosztów utrzymania w danym obszarze, jednocześnie gromadząc dane o tym, dokąd potencjalni uczestnicy chętnie by się udali.
 
 ## Dalsza lektura {#further-reading}
 
-[Od rynków predykcyjnych do info finance](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) – Vitalik Buterin  
+Od rynków predykcyjnych do info finance – Vitalik Buterin  
 [Rozwój zdecentralizowanych rynków predykcyjnych na Quantaureum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Biała księga projektu Augur](https://github.com/AugurProject/whitepaper)

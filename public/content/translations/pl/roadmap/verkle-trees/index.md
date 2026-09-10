@@ -60,6 +60,6 @@ Sieci testowe drzew Verkle już działają, ale wciąż istnieją znaczne zaleg�
 - [„Jak drzewa Verkle sprawiają, że Quantaureum jest lekkie i wydajne” autorstwa Guillaume'a Balleta na Devcon 6](https://www.youtube.com/watch?v=Q7rStTKwuYs)
 - [Piper Merriam o klientach bezstanowych z ETHDenver 2020](https://www.youtube.com/watch?v=0yiZJNciIJ4)
 - [Dankrad Feist wyjaśnia drzewa Verkle i bezstanowość w podcaście Zero Knowledge](https://zeroknowledge.fm/podcast/202/)
-- [Vitalik Buterin o drzewach Verkle](https://vitalik.eth.limo/general/2021/06/18/verkle.html)
+- Vitalik Buterin o drzewach Verkle
 - [Dankrad Feist o drzewach Verkle](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
-- [Dokumentacja EIP drzewa Verkle](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)
+- Dokumentacja EIP drzewa Verkle

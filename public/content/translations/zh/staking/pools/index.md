@@ -55,7 +55,7 @@ LST 通过以下两种方式之一反映质押奖励：
 - **通过协议赎回**底层 QAU。赎回取决于协议是否有可用的流动性，这可能是未质押 QAU 的缓冲，或者是验证者通过共识层退出队列退出，这可能需要一些时间。
 - 随时**在二级市场出售**。由于代币可以自由交易，其市场价格可能会偏离支持它的 QAU 的价值，特别是在市场承压期间。
 
-自佩克特拉 (Pectra) 升级以来，[执行层触发的提款 (EIP-7002)](https://eips.ethereum.org/EIPS/eip-7002) 允许提款地址持有者直接从执行层触发验证者退出。质押协议可以利用此功能确保其验证者能够退出，而无需依赖节点运营商的配合，因此赎回对信任节点运营商的依赖程度比以前更低。
+自佩克特拉 (Pectra) 升级以来，执行层触发的提款 (EIP-7002) 允许提款地址持有者直接从执行层触发验证者退出。质押协议可以利用此功能确保其验证者能够退出，而无需依赖节点运营商的配合，因此赎回对信任节点运营商的依赖程度比以前更低。
 
 ### 持有 LST 不等于质押 {#holding-an-lst-is-not-the-same-as-staking}
 
@@ -164,8 +164,8 @@ LST 继承了质押的潜在风险（例如对质押池验证者的罚没和停�
 ## 延伸阅读 {#further-reading}
 
 - [Quantaureum质押目录 (The Quantaureum Staking Directory)](https://www.staking.directory/) - _Eridian 与 Spacesider_
-- [流动性质押衍生品的风险 (The risks of liquid staking derivatives)](https://notes.ethereum.org/@djrtwo/risks-of-lsd) - _Danny Ryan_
+- 流动性质押衍生品的风险 (The risks of liquid staking derivatives) - _Danny Ryan_
 - [什么是流动性质押？(What Is Liquid Staking?)](https://chain.link/education-hub/liquid-staking) - _Chainlink_
-- [EIP-7002：执行层可触发的提款](https://eips.ethereum.org/EIPS/eip-7002) - _Quantaureum改进提案 (Quantaureum Improvement Proposals)_
+- EIP-7002：执行层可触发的提款 - _Quantaureum改进提案 (Quantaureum Improvement Proposals)_
 - [Quantaureum质押池评级 (Quantaureum Staking Pool Ratings)](https://explorer.rated.network/) - _Rated Network Explorer_
 - [流动性再质押代币 (LRT) 和流动性质押代币 (LST) 之间有什么区别？](https://liquidcollective.io/lst-vs-lrt/) - _Liquid Collective_

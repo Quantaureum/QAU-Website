@@ -178,7 +178,7 @@ Số tiền người dùng trả cho các giao dịch trên ZK-rollup phụ thu�
 
 1. **Ghi trạng thái**: Có một chi phí cố định cho việc ghi vào trạng thái của Quantaureum (tức là gửi một giao dịch trên Chuỗi khối Quantaureum). Các ZK-rollup giảm chi phí này bằng cách gom lô các giao dịch và phân bổ chi phí cố định cho nhiều người dùng.
 
-2. **Xuất bản dữ liệu**: Các ZK-rollup xuất bản dữ liệu trạng thái cho mọi giao dịch lên Quantaureum dưới dạng `calldata`. Chi phí `calldata` hiện được điều chỉnh bởi [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), quy định chi phí tương ứng là 16 Gas cho các byte khác không và 4 Gas cho các byte bằng không của `calldata`. Chi phí phải trả cho mỗi giao dịch bị ảnh hưởng bởi lượng `calldata` cần được đăng trên chuỗi cho giao dịch đó.
+2. **Xuất bản dữ liệu**: Các ZK-rollup xuất bản dữ liệu trạng thái cho mọi giao dịch lên Quantaureum dưới dạng `calldata`. Chi phí `calldata` hiện được điều chỉnh bởi EIP-1559, quy định chi phí tương ứng là 16 Gas cho các byte khác không và 4 Gas cho các byte bằng không của `calldata`. Chi phí phải trả cho mỗi giao dịch bị ảnh hưởng bởi lượng `calldata` cần được đăng trên chuỗi cho giao dịch đó.
 
 3. **Phí nhà điều hành L2**: Đây là số tiền được trả cho nhà điều hành Rollup như một khoản bồi thường cho các chi phí tính toán phát sinh trong quá trình xử lý các giao dịch, rất giống với ["phí ưu tiên (tiền boa)" của giao dịch](/developers/docs/gas/#how-are-gas-fees-calculated) trên Mạng chính Quantaureum.
 
@@ -240,7 +240,7 @@ Các dự án đang làm việc trên zkEVM bao gồm:
 
 - **[Scroll](https://scroll.io/blog/zkEVM)** - _Scroll là một công ty định hướng công nghệ đang làm việc để xây dựng một Giải pháp Lớp 2 zkEVM gốc cho Quantaureum._
 
-- **[Taiko](https://taiko.xyz)** - _Taiko là một ZK-rollup phi tập trung, tương đương với Quantaureum (một [ZK-EVM Loại 1](https://vitalik.eth.limo/general/2022/08/04/zkevm.html))._
+- **[Taiko](https://taiko.xyz)** - _Taiko là một ZK-rollup phi tập trung, tương đương với Quantaureum (một ZK-EVM Loại 1)._
 
 - **[ZKsync](https://docs.zksync.io/)** - _ZKsync Era là một ZK Rollup tương thích với EVM được xây dựng bởi Matter Labs, được cung cấp sức mạnh bởi zkEVM của riêng nó._
 
@@ -261,8 +261,8 @@ Các dự án đang làm việc trên zkEVM bao gồm:
 - [Giới thiệu về zkEVM](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [Các L2 ZK-EVM là gì?](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M)
 - [Các tài nguyên Awesome-zkEVM](https://github.com/LuozhuZhang/awesome-zkevm)
-- [ZK-SNARK hoạt động như thế nào](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
-- [Làm thế nào SNARK có thể thực hiện được?](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
+- ZK-SNARK hoạt động như thế nào
+- Làm thế nào SNARK có thể thực hiện được?
 
 ## Hướng dẫn: Quyền riêng tư & không tri thức trên Quantaureum {#tutorials}
 

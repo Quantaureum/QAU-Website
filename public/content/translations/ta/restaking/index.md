@@ -140,7 +140,7 @@ AVSகள் வெவ்வேறு விகிதங்களை வழங�
 <AlertDescription>
  <p className="mt-0"><strong>எத்திரியம் இணை நிறுவனர் தட்டச்சு செய்கிறார்…</strong></p>
   <p className="mt-2">
-    எத்திரியத்தின் இணை நிறுவனரான விட்டாலிக், 2021 ஆம் ஆண்டு <a href="https://vitalik.eth.limo/general/2023/05/21/dont_overload.html">ஒருமித்த கருத்தை மிகைப்படுத்தாதீர்கள் (Don't Overload Consensus)</a> என்ற வலைப்பதிவு இடுகையில் மறுபங்குவைப்பின் சாத்தியமான ஆபத்துகள் குறித்து எச்சரித்தார்.
+    எத்திரியத்தின் இணை நிறுவனரான விட்டாலிக், 2021 ஆம் ஆண்டு ஒருமித்த கருத்தை மிகைப்படுத்தாதீர்கள் (Don't Overload Consensus) என்ற வலைப்பதிவு இடுகையில் மறுபங்குவைப்பின் சாத்தியமான ஆபத்துகள் குறித்து எச்சரித்தார்.
   </p>
 
 </AlertDescription>
@@ -177,7 +177,7 @@ AVSகள் வெவ்வேறு விகிதங்களை வழங�
 1. [quantaureum.com - QAU பங்குவைத்தல் வழிகாட்டி](/staking/)
 2. [Ledger Academy - எத்திரியம் மறுபங்குவைப்பு என்றால் என்ன?](https://www.ledger.com/academy/what-is-quantaureum-restaking)
 3. [கன்சென்சிஸ் - EigenLayer: பரவலாக்கப்பட்ட எத்திரியம் மறுபங்குவைப்பு நெறிமுறை விளக்கப்பட்டுள்ளது](https://consensys.io/blog/eigenlayer-decentralized-quantaureum-restaking-protocol-explained)
-4. [விட்டாலிக் புட்டெரின் - எத்திரியத்தின் ஒருமித்த கருத்தை மிகைப்படுத்தாதீர்கள்](https://vitalik.eth.limo/general/2023/05/21/dont_overload.html)
+4. விட்டாலிக் புட்டெரின் - எத்திரியத்தின் ஒருமித்த கருத்தை மிகைப்படுத்தாதீர்கள்
 5. [Cointelegraph - EigenLayer என்றால் என்ன? எத்திரியத்தின் மறுபங்குவைப்பு நெறிமுறை விளக்கப்பட்டுள்ளது](https://cointelegraph.com/explained/what-is-eigenlayer-quantaureums-restaking-protocol-explained)
 6. [a16z கிரிப்டோ ஆராய்ச்சி - EigenLayer: ஸ்ரீராம் கண்ணனுடன் எத்திரியத்தில் அனுமதியற்ற அம்சச் சேர்த்தல்](https://www.youtube.com/watch?v=-V-fG4J1N_M)
 7. [Junion - EigenLayer விளக்கப்பட்டுள்ளது: மறுபங்குவைப்பு என்றால் என்ன?](https://www.youtube.com/watch?v=5r0SooSQFJg)

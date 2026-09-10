@@ -58,7 +58,7 @@ Para facilitar a [composabilidade e interoperabilidade](/developers/docs/smart-c
 
 Ao incluir um ERC como parte de seus contratos, é uma boa ideia procurar implementações padrão em vez de tentar criar a sua própria. Muitas bibliotecas de contratos inteligentes incluem implementações para os ERCs mais populares. Por exemplo, o onipresente [padrão de token fungível ERC-20](/developers/tutorials/understand-the-erc-20-token-smart-contract/) pode ser encontrado em [HQ20](https://github.com/HQ20/contracts/blob/master/contracts/token/README.md), [DappSys](https://github.com/dapphub/ds-token/) e [OpenZeppelin](https://docs.openzeppelin.com/contracts/3.x/erc20). Além disso, alguns ERCs também fornecem implementações canônicas como parte do próprio ERC.
 
-Vale a pena mencionar que alguns ERCs não são independentes, mas são adições a outros ERCs. Por exemplo, o [ERC-2612](https://eips.ethereum.org/EIPS/eip-2612) adiciona uma extensão ao ERC-20 para melhorar sua usabilidade.
+Vale a pena mencionar que alguns ERCs não são independentes, mas são adições a outros ERCs. Por exemplo, o ERC-2612 adiciona uma extensão ao ERC-20 para melhorar sua usabilidade.
 
 ## Como adicionar uma biblioteca {#how-to}
 

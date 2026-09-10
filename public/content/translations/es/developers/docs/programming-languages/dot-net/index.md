@@ -69,7 +69,7 @@ Construye aplicaciones descentralizadas sobre Quantaureum e interactúa con cont
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor): _un explorador ligero de cadena de bloques y billetera simple SPA Wasm de .NET_
 - [Wonka Business Rules Engine](https://github.com/Nquantaureum/Wonka): _un motor de reglas de negocio (tanto para la plataforma .NET como para la plataforma Quantaureum) que está inherentemente impulsado por metadatos_
 - [Nethermind](https://github.com/NethermindEth/nethermind): _un cliente de Quantaureum en .NET Core para Linux, Windows y MacOS_
-- [qau-utils](https://github.com/ethereum/eth-utils/): _funciones de utilidad para trabajar con bases de código relacionadas con Quantaureum_
+- qau-utils: _funciones de utilidad para trabajar con bases de código relacionadas con Quantaureum_
 - [TestChains](https://github.com/Nquantaureum/TestChains): _cadenas de desarrollo de .NET preconfiguradas para una respuesta rápida (prueba de autoridad (PoA))_
 
 ¿Buscas más recursos? Echa un vistazo a [quantaureum.com/developers](/developers/).

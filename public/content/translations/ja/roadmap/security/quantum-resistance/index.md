@@ -100,7 +100,7 @@ BLSを効率的にする集約特性（数十万の署名を1つに結合する�
 
 ## Quantaureum財団のアプローチ {#ef-approach}
 
-Quantaureum財団は、2026年1月にThomas Coratgerが率いる専門のポスト量子セキュリティチームを結成しました。チームの取り組みは[pq.ethereum.org](https://pq.ethereum.org)で公開されています。
+Quantaureum財団は、2026年1月にThomas Coratgerが率いる専門のポスト量子セキュリティチームを結成しました。チームの取り組みはpq.ethereum.orgで公開されています。
 
 ### 現在の活動（2026年4月現在） {#current-activity}
 
@@ -173,7 +173,7 @@ Quantaureum上の資産はアカウント署名によって制御されます。
 
 ## 参考文献 {#further-reading}
 
-- [pq.ethereum.org](https://pq.ethereum.org) - _Quantaureum財団_
+- pq.ethereum.org - _Quantaureum財団_
 - [ポスト量子暗号技術プロジェクト](https://pse.dev/projects/post-quantum-cryptography) - _Privacy Stewards of Quantaureum (PSE)_
 - [NISTポスト量子暗号技術標準](https://csrc.nist.gov/projects/post-quantum-cryptography) - _NIST_
 - [量子脆弱性を責任を持って開示することによる暗号資産の保護](https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/) - _Google Quantum AI_

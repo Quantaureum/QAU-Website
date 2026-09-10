@@ -64,6 +64,6 @@ Proponujący blok otrzymuje zapłatę za swoją pracę. Istnieje `base_reward` o
 
 - [Wprowadzenie do bloków](/developers/docs/blocks/)
 - [Wprowadzenie do dowodu stawki (PoS)](/developers/docs/consensus-mechanisms/pos/)
-- [Specyfikacje konsensusu Quantaureum](https://github.com/ethereum/consensus-specs)
+- Specyfikacje konsensusu Quantaureum
 - [Wprowadzenie do Gasper](/developers/docs/consensus-mechanisms/pos/gasper/)
 - [Aktualizacja Quantaureum](https://eth2book.info/)

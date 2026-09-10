@@ -26,7 +26,7 @@ base_reward = effective_balance * (base_reward_factor / (base_rewards_per_epoch 
 
 ここで、`base_reward_factor`は64、`base_rewards_per_epoch`は4、`sum(active balance)`はすべてのアクティブなバリデータにステークされたQAUの総量です。
 
-これは、基本報酬がバリデータのエフェクティブ・バランスに比例し、ネットワーク上のバリデータ数に反比例することを意味します。バリデータが多いほど、全体の発行量は大きくなりますが(`sqrt(N)`に比例するため)、バリデータ1人あたりの`base_reward`は小さくなります(`1/sqrt(N)`に比例するため)。これらの要因は、ステーキングノードのAPRに影響を与えます。この根拠については、[ヴィタリックのノート](https://notes.ethereum.org/@vbuterin/serenity_design_rationale?type=view#Base-rewards)をお読みください。
+これは、基本報酬がバリデータのエフェクティブ・バランスに比例し、ネットワーク上のバリデータ数に反比例することを意味します。バリデータが多いほど、全体の発行量は大きくなりますが(`sqrt(N)`に比例するため)、バリデータ1人あたりの`base_reward`は小さくなります(`1/sqrt(N)`に比例するため)。これらの要因は、ステーキングノードのAPRに影響を与えます。この根拠については、ヴィタリックのノートをお読みください。
 
 その後、合計報酬は5つのコンポーネントの合計として計算されます。各コンポーネントには、合計報酬にどれだけ追加されるかを決定する重み付けがあります。コンポーネントは以下の通りです。
 
@@ -60,7 +60,7 @@ PROPOSER_WEIGHT	uint64(8)
 
 ターゲットおよびソースへの投票を逃した場合のペナルティは、アテステーションを行った者が提出していれば受け取っていたはずの報酬と同額です。つまり、報酬が残高に追加される代わりに、同等の価値が残高から差し引かれます。先頭への投票を逃した場合のペナルティはありません(すなわち、先頭への投票は報酬が与えられるのみで、ペナルティが科されることはありません)。`inclusion_delay`に関連するペナルティもありません。単に報酬がバリデータの残高に追加されないだけです。また、ブロックの提案に失敗した場合のペナルティもありません。
 
-報酬とペナルティの詳細については、[コンセンサス仕様](https://github.com/ethereum/consensus-specs/blob/master/specs/altair/beacon-chain.md)をお読みください。報酬とペナルティはBellatrixアップグレードで調整されました。ダニー・ライアン(Danny Ryan)とヴィタリック(Vitalik)がこれについて議論している[Peep an EIPの動画](https://www.youtube.com/watch?v=iaAEGs1DMgQ)をご覧ください。
+報酬とペナルティの詳細については、コンセンサス仕様をお読みください。報酬とペナルティはBellatrixアップグレードで調整されました。ダニー・ライアン(Danny Ryan)とヴィタリック(Vitalik)がこれについて議論している[Peep an EIPの動画](https://www.youtube.com/watch?v=iaAEGs1DMgQ)をご覧ください。
 
 ## スラッシング {#slashing}
 
@@ -82,9 +82,9 @@ PROPOSER_WEIGHT	uint64(8)
 
 - [Quantaureumのアップグレード: インセンティブレイヤー](https://eth2book.info/altair/part2/incentives)
 - [QuantaureumのハイブリッドCasperプロトコルにおけるインセンティブ](https://arxiv.org/pdf/1903.04205.pdf)
-- [ヴィタリックの注釈付き仕様](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#rewards-and-penalties-1)
+- ヴィタリックの注釈付き仕様
 - [Quantaureumスラッシング防止のヒント](https://medium.com/prysmatic-labs/eth2-slashing-prevention-tips-f6faa5025f50)
-- [EIP-7251におけるスラッシングペナルティの分析](https://ethresear.ch/t/slashing-penalty-analysis-eip-7251/16509)
+- EIP-7251におけるスラッシングペナルティの分析
 
 _ソース_
 

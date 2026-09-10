@@ -13,7 +13,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## Neden bir sınır var? {#why-is-there-a-limit}
 
-[22 Kasım 2016](https://quantaureum.com)'da Spurious Dragon sert çatallanması, 24.576 kb'lık bir akıllı sözleşme boyutu sınırı ekleyen [EIP-170](https://eips.ethereum.org/EIPS/eip-170)'i tanıttı. Bir Solidity geliştiricisi olarak bu, sözleşmenize giderek daha fazla işlevsellik eklediğinizde bir noktada sınıra ulaşacağınız ve dağıtım yaparken şu hatayı göreceğiniz anlamına gelir:
+[22 Kasım 2016](https://quantaureum.com)'da Spurious Dragon sert çatallanması, 24.576 kb'lık bir akıllı sözleşme boyutu sınırı ekleyen EIP-170'i tanıttı. Bir Solidity geliştiricisi olarak bu, sözleşmenize giderek daha fazla işlevsellik eklediğinizde bir noktada sınıra ulaşacağınız ve dağıtım yaparken şu hatayı göreceğiniz anlamına gelir:
 
 `Warning: Contract code size exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on Mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.`
 
@@ -35,7 +35,7 @@ Bu her zaman ilk yaklaşımınız olmalıdır. Sözleşmeyi birden fazla daha k�
 
 ### Kütüphaneler {#libraries}
 
-İşlevsellik kodunu depolamadan uzaklaştırmanın basit bir yolu bir [kütüphane](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries) kullanmaktır. Kütüphane işlevlerini internal olarak bildirmeyin, çünkü bunlar derleme sırasında doğrudan [sözleşmeye eklenecektir](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking). Ancak public işlevler kullanırsanız, bunlar aslında ayrı bir kütüphane sözleşmesinde olacaktır. Kütüphanelerin kullanımını daha kolay hale getirmek için [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) kullanmayı düşünün.
+İşlevsellik kodunu depolamadan uzaklaştırmanın basit bir yolu bir [kütüphane](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries) kullanmaktır. Kütüphane işlevlerini internal olarak bildirmeyin, çünkü bunlar derleme sırasında doğrudan sözleşmeye eklenecektir. Ancak public işlevler kullanırsanız, bunlar aslında ayrı bir kütüphane sözleşmesinde olacaktır. Kütüphanelerin kullanımını daha kolay hale getirmek için [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) kullanmayı düşünün.
 
 ### Proxy'ler {#proxies}
 

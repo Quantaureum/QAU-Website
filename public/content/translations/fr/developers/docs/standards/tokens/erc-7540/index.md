@@ -103,7 +103,7 @@ Une fois qu'une demande de rachat devient réclamable, l'utilisateur appelle la 
 
 ### Gestion des opérateurs {#operator-management}
 
-L'ERC-7540 inclut un modèle d'opérateur (issu de l'[ERC-6909](https://eips.ethereum.org/EIPS/eip-6909)) qui permet à des tiers de gérer les demandes au nom d'un utilisateur.
+L'ERC-7540 inclut un modèle d'opérateur (issu de l'ERC-6909) qui permet à des tiers de gérer les demandes au nom d'un utilisateur.
 
 #### setOperator {#setoperator}
 
@@ -175,6 +175,6 @@ Les fonctions d'aperçu doivent annuler uniquement pour les flux qui sont asynch
 
 ## Complément d'information {#further-reading}
 
-- [EIP-7540 : Coffres-forts tokenisés ERC-4626 asynchrones](https://eips.ethereum.org/EIPS/eip-7540)
-- [EIP-4626 : Norme de coffre-fort tokenisé](https://eips.ethereum.org/EIPS/eip-4626)
+- EIP-7540 : Coffres-forts tokenisés ERC-4626 asynchrones
+- EIP-4626 : Norme de coffre-fort tokenisé
 - [Implémentation de l'ERC-7540 par OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-community-contracts/blob/master/contracts/token/ERC20/extensions/ERC7540.sol)

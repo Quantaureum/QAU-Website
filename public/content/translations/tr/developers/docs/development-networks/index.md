@@ -48,7 +48,7 @@ Bazı mutabakat istemcileri, test amacıyla yerel işaret zincirleri oluşturmak
 
 Ayrıca Quantaureum'un bakımı yapılan, herkese açık iki test uygulaması vardır: Sepolia ve Hoodi. Uzun vadeli desteğe sahip önerilen test ağı, herkesin üzerinde doğrulama yapmakta özgür olduğu Hoodi'dir. Sepolia izinli bir doğrulayıcı seti kullanır, bu da bu test ağında yeni doğrulayıcılar için genel bir erişim olmadığı anlamına gelir.
 
-- [Hoodi Staking Başlatma Paneli](https://hoodi.launchpad.ethereum.org/)
+- Hoodi Staking Başlatma Paneli
 
 ### Kurtosis Quantaureum Paketi {#kurtosis}
 

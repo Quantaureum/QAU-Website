@@ -251,13 +251,13 @@ else:
   value = TxType | encode(tx)
 ```
 
-有关此内容的更多信息，请参阅 [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718) 文档。
+有关此内容的更多信息，请参阅 EIP-2718 文档。
 
 ### 收据树 {#receipts-trie}
 
 每个区块都有自己的收据树。这里的 `path` 是：`rlp(transactionIndex)`。`transactionIndex` 是它在包含它的区块中的索引。收据树永远不会更新。与交易树类似，有当前收据和传统收据。要在收据树中查询特定收据，需要交易在其区块中的索引、收据有效负载和交易类型。返回的收据可以是 `Receipt` 类型，它被定义为 `TransactionType` 和 `ReceiptPayload` 的串联，或者它可以是 `LegacyReceipt` 类型，它被定义为 `rlp([status, cumulativeGasUsed, logsBloom, logs])`。
 
-有关此内容的更多信息，请参阅 [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718) 文档。
+有关此内容的更多信息，请参阅 EIP-2718 文档。
 
 ## 延伸阅读 {#further-reading}
 

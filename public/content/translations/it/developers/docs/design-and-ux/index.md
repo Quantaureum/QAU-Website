@@ -16,7 +16,7 @@ Se vuoi vedere quali sono attualmente i punti deboli più urgenti della UX, dai 
 
 - [Il Web3 ha bisogno di più ricercatori e designer UX](https://blog.akasha.org/akasha-conversations-9-web3-needs-more-ux-researchers-and-designers) - Una panoramica dell'attuale maturità del design
 - [Una guida semplice alla ricerca UX nel Web3](https://uxplanet.org/a-complete-guide-to-ux-research-for-web-3-0-products-d6bead20ebb1) - Guida semplice su come fare ricerca
-- [Come affrontare le decisioni UX nel Web3](https://archive.devcon.org/archive/watch/6/data-empathy-how-to-approach-ux-decisions-in-web3/) - Una breve panoramica della ricerca quantitativa e qualitativa e delle differenze tra le due (video, 6 min)
+- Come affrontare le decisioni UX nel Web3 - Una breve panoramica della ricerca quantitativa e qualitativa e delle differenze tra le due (video, 6 min)
 - [Essere un ricercatore UX nel Web3](https://medium.com/@georgia.rakusen/what-its-like-being-a-user-researcher-in-web3-6a4bcc096849) - Una visione personale su come sia essere un ricercatore UX nel Web3
 
 ## Studi di ricerca nel Web3 {#research-in-web3}
@@ -38,7 +38,7 @@ Questa è una lista curata di ricerche sugli utenti effettuate nel Web3 che poss
 | <Tag status="error">DeFi</Tag>                  | [Pool di copertura](https://github.com/threshold-network/UX-User-Research/tree/main/Keep%20Coverage%20Pool)                                                                           |
 | <Tag status="error">DeFi</Tag>                  | [ConsenSys: Report di ricerca sugli utenti della DeFi 2022](https://cdn2.hubspot.net/hubfs/4795067/ConsenSys%20Codefi-Defi%20User%20ResearchReport.pdf)                                            |
 | <Tag variant="solid">Metaverso</Tag>             | [Metaverso: Report di ricerca sugli utenti](https://www.politico.com/f/?id=00000187-7685-d820-a7e7-7e85d1420000)                                                                             |
-| <Tag variant="solid">Metaverso</Tag>             | [Andare in Safari: Ricerca sugli utenti nel Metaverso](https://archive.devcon.org/archive/watch/6/going-on-safari-researching-users-in-the-metaverse/?tab=YouTube) (video, 27 min)  |
+| <Tag variant="solid">Metaverso</Tag>             | Andare in Safari: Ricerca sugli utenti nel Metaverso (video, 27 min)  |
 
 ## Design per il Web3 {#design-for-web3}
 

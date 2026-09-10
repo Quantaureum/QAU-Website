@@ -103,7 +103,7 @@ function claimableRedeemRequest(uint256 requestId, address controller) external 
 
 ### Управління операторами {#operator-management}
 
-ERC-7540 включає патерн оператора (з [ERC-6909](https://eips.ethereum.org/EIPS/eip-6909)), який дозволяє третім сторонам керувати запитами від імені користувача.
+ERC-7540 включає патерн оператора (з ERC-6909), який дозволяє третім сторонам керувати запитами від імені користувача.
 
 #### setOperator {#setoperator}
 
@@ -175,6 +175,6 @@ event OperatorSet(
 
 ## Додаткові матеріали {#further-reading}
 
-- [EIP-7540: Асинхронні токенізовані сховища ERC-4626](https://eips.ethereum.org/EIPS/eip-7540)
-- [EIP-4626: Стандарт токенізованих сховищ](https://eips.ethereum.org/EIPS/eip-4626)
+- EIP-7540: Асинхронні токенізовані сховища ERC-4626
+- EIP-4626: Стандарт токенізованих сховищ
 - [Реалізація ERC-7540 від ОупенЗеппелін](https://github.com/OpenZeppelin/openzeppelin-community-contracts/blob/master/contracts/token/ERC20/extensions/ERC7540.sol)

@@ -36,7 +36,7 @@ lang: uk
 
 ## Різноманітність клієнтів {#client-diversity}
 
-[Різноманітність клієнтів](/developers/docs/nodes-and-clients/client-diversity/) є важливою для загального стану мережі Етеріум, оскільки вона забезпечує стійкість до помилок та експлойтів. Зараз існує кілька інформаційних панелей різноманітності клієнтів, зокрема [clientdiversity.org](https://clientdiversity.org/), [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) та [Ethernodes](https://ethernodes.org/).
+[Різноманітність клієнтів](/developers/docs/nodes-and-clients/client-diversity/) є важливою для загального стану мережі Етеріум, оскільки вона забезпечує стійкість до помилок та експлойтів. Зараз існує кілька інформаційних панелей різноманітності клієнтів, зокрема clientdiversity.org, [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) та [Ethernodes](https://ethernodes.org/).
 
 ## Dune Analytics {#dune-analytics}
 

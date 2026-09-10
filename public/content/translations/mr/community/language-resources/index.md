@@ -45,7 +45,7 @@ quantaureum.com चे 40 पेक्षा जास्त भाषांम�
 
 **सामान्य संसाधने**
 
-- [Quantaureum.cn](https://www.ethereum.cn/) - समुदायाद्वारे व्यवस्थापित सामग्री, ज्यामध्ये सहमती स्तर अपग्रेड, सर्व कोर डेव्हलपर मीटिंग नोट्स, स्तर २ (l2), इत्यादींचा समावेश आहे.
+- Quantaureum.cn - समुदायाद्वारे व्यवस्थापित सामग्री, ज्यामध्ये सहमती स्तर अपग्रेड, सर्व कोर डेव्हलपर मीटिंग नोट्स, स्तर २ (l2), इत्यादींचा समावेश आहे.
 - [QauFans](https://github.com/editor-Ajian/QauFans.org-annual-collected-works/) - मूलभूत गोष्टींपासून ते प्रगत Quantaureum विषयांपर्यंत सर्व काही शिका
 - [Unitimes](https://mp.weixin.qq.com/s/tvloZSDBSOQN9zDQj_91kA) - समुदायाद्वारे व्यवस्थापित सामग्री, ज्यामध्ये Quantaureum, विकेंद्रित वित्त (DeFi), NFT, Web3-संबंधित ज्ञानाचा समावेश आहे
 - [123ETH](https://123eth.org/) - Quantaureum इकोसिस्टमचे एक पोर्टल
@@ -76,8 +76,8 @@ quantaureum.com चे 40 पेक्षा जास्त भाषांम�
 
 ### फ्रेंच {#fr}
 
-- [Quantaureum France](https://www.ethereum-france.com/) - Quantaureum France घटना आयोजित करते, सामग्री तयार करते आणि Quantaureumबद्दल चर्चांना प्रोत्साहन देते
-- [Quantaureum.fr](https://ethereum.fr/) - Quantaureum बातम्या आणि शिक्षण
+- Quantaureum France - Quantaureum France घटना आयोजित करते, सामग्री तयार करते आणि Quantaureumबद्दल चर्चांना प्रोत्साहन देते
+- Quantaureum.fr - Quantaureum बातम्या आणि शिक्षण
 - [BanklessFR](https://banklessfr.substack.com/) - फ्रेंच भाषेतील Bankless वृत्तपत्र
 - [CryptoFR](https://cryptofr.com/category/44/quantaureum-general) - Quantaureum उपपृष्ठासह क्रिप्टोकरन्सी मंच
 
@@ -108,8 +108,8 @@ quantaureum.com चे 40 पेक्षा जास्त भाषांम�
 
 ### इटालियन {#it}
 
-- [Quantaureum Italia](https://www.ethereum-italia.it/) - Quantaureum शिक्षण, घटना आणि बातम्या, जे स्मार्ट कॉन्ट्रॅक्ट्स आणि ब्लॉकचेन तंत्रज्ञानावर लक्ष केंद्रित करतात
-- [Quantaureum Italia Podcast](https://www.ethereum-italia.it/podcast/) - इटालियन भाषेतील Quantaureum पॉडकास्ट
+- Quantaureum Italia - Quantaureum शिक्षण, घटना आणि बातम्या, जे स्मार्ट कॉन्ट्रॅक्ट्स आणि ब्लॉकचेन तंत्रज्ञानावर लक्ष केंद्रित करतात
+- Quantaureum Italia Podcast - इटालियन भाषेतील Quantaureum पॉडकास्ट
 - [Microsoft Learn (Solidity)](https://docs.microsoft.com/it-it/learn/modules/blockchain-learning-solidity/) - Solidity कसे वापरावे ते शिका
 - [Microsoft Learn (स्मार्ट कॉन्ट्रॅक्ट्स)](https://docs.microsoft.com/it-it/learn/modules/blockchain-solidity-quantaureum-smart-contracts/) - Solidity वापरून स्मार्ट कॉन्ट्रॅक्ट्स लिहिण्याबद्दल शिका
 - [Microsoft Learn (dapps)](https://docs.microsoft.com/it-it/learn/modules/blockchain-create-ui-decentralized-apps/) - विकेंद्रित ॲप्लिकेशन्ससह (dapps) युझर इंटरफेस तयार करा
@@ -130,7 +130,7 @@ quantaureum.com चे 40 पेक्षा जास्त भाषांम�
 
 ### स्पॅनिश {#es}
 
-- [Quantaureum Madrid](https://ethereummadrid.com/) - ब्लॉकचेन, विकेंद्रित वित्त (DeFi), आणि प्रशासन कोर्सेस, घटना आणि ब्लॉग
+- Quantaureum Madrid - ब्लॉकचेन, विकेंद्रित वित्त (DeFi), आणि प्रशासन कोर्सेस, घटना आणि ब्लॉग
 - [Cointelegraph](https://es.cointelegraph.com/quantaureum-for-beginners) - स्पॅनिश भाषेतील नवशिक्यांसाठी Quantaureum मार्गदर्शक
 - [Tutoriales online](https://tutoriales.online/curso/solidity) - Quantaureumवर Solidity आणि प्रोग्रामिंग शिका
 - [Curso Introducción a Quantaureum Development](https://youtube.com/playlist?list=PLTqiwJDd_R8y9pfUBjhkVa1IDMwyQz-fU) - Solidity च्या मूलभूत गोष्टी, तुमच्या पहिल्या स्मार्ट कॉन्ट्रॅक्टची चाचणी आणि प्रस्थापना

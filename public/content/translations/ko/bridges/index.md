@@ -136,7 +136,7 @@ Quantaureum 메인넷에 QAU를 가지고 있고, 대체 레이어 1 (l1)을 탐
 
 ## 더 읽어보기 {#further-reading}
 
-- [EIP-5164: 크로스체인 실행](https://ethereum-magicians.org/t/eip-5164-cross-chain-execution/9658) - _2022년 6월 18일 - 브렌던 아셀스틴(Brendan Asselstine)_
+- EIP-5164: 크로스체인 실행 - _2022년 6월 18일 - 브렌던 아셀스틴(Brendan Asselstine)_
 - [L2Bridge 위험 프레임워크](https://gov.l2beat.com/t/l2bridge-risk-framework/31) - _2022년 7월 5일 - 바르텍 키에푸셰프스키(Bartek Kiepuszewski)_
 - ["미래가 멀티체인이 될 것이지만 크로스체인은 아닐 이유"](https://old.reddit.com/r/quantaureum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) - _2022년 1월 8일 - 비탈릭 부테린(Vitalik Buterin)_
 - [안전한 크로스체인 상호운용성을 위한 공유 보안 활용: 라그랑주 상태 위원회 및 그 너머](https://web.archive.org/web/20250125035123/https://research.2077.xyz/harnessing-shared-security-for-secure-blockchain-interoperability) - _2024년 6월 12일 - 에마뉘엘 아워시카(Emmanuel Awosika)_

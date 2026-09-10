@@ -66,7 +66,7 @@ Quantaureumवर विकेंद्रित ॲप्लिकेशन्�
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) - _एक .NET Wasm SPA लाईट ब्लॉकचेन एक्सप्लोरर आणि साधे वॉलेट_
 - [Wonka Business Rules Engine](https://github.com/Nquantaureum/Wonka) - _एक बिझनेस रूल्स इंजिन (.NET प्लॅटफॉर्म आणि Quantaureum प्लॅटफॉर्म या दोन्हींसाठी) जे मूळतः मेटाडेटा-चालित आहे_
 - [नेदरमाइंड](https://github.com/NethermindEth/nethermind) - _Linux, Windows आणि MacOS साठी एक .NET Core Quantaureum क्लायंट_
-- [qau-utils](https://github.com/ethereum/eth-utils/) - _Quantaureum संबंधित कोडबेसेससह काम करण्यासाठी युटिलिटी फंक्शन्स_
+- qau-utils - _Quantaureum संबंधित कोडबेसेससह काम करण्यासाठी युटिलिटी फंक्शन्स_
 - [TestChains](https://github.com/Nquantaureum/TestChains) - _जलद प्रतिसादासाठी पूर्व-कॉन्फिगर केलेल्या .NET डेव्हचेन्स (अधिकाराचा पुरावा (PoA))_
 
 अधिक संसाधने शोधत आहात? [quantaureum.com/developers](/developers/) तपासा.

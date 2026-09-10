@@ -16,7 +16,7 @@ lang: uk
 
 - [Web3 потребує більше UX-дослідників та дизайнерів](https://blog.akasha.org/akasha-conversations-9-web3-needs-more-ux-researchers-and-designers) — Огляд поточної зрілості дизайну
 - [Простий посібник з UX-досліджень у Web3](https://uxplanet.org/a-complete-guide-to-ux-research-for-web-3-0-products-d6bead20ebb1) — Простий посібник про те, як проводити дослідження
-- [Як підходити до UX-рішень у Web3](https://archive.devcon.org/archive/watch/6/data-empathy-how-to-approach-ux-decisions-in-web3/) — Короткий огляд кількісних та якісних досліджень і відмінностей між ними (відео, 6 хв)
+- Як підходити до UX-рішень у Web3 — Короткий огляд кількісних та якісних досліджень і відмінностей між ними (відео, 6 хв)
 - [Бути UX-дослідником у Web3](https://medium.com/@georgia.rakusen/what-its-like-being-a-user-researcher-in-web3-6a4bcc096849) — Особистий погляд на те, як це — бути UX-дослідником у Web3
 
 ## Дослідження у Web3 {#research-in-web3}
@@ -38,7 +38,7 @@ lang: uk
 | <Tag status="error">DeFi</Tag>                  | [Пули покриття](https://github.com/threshold-network/UX-User-Research/tree/main/Keep%20Coverage%20Pool)                                                                           |
 | <Tag status="error">DeFi</Tag>                  | [ConsenSys: Звіт про дослідження користувачів DeFi 2022](https://cdn2.hubspot.net/hubfs/4795067/ConsenSys%20Codefi-Defi%20User%20ResearchReport.pdf)                                            |
 | <Tag variant="solid">Метавсесвіт</Tag>             | [Метавсесвіт: Звіт про дослідження користувачів](https://www.politico.com/f/?id=00000187-7685-d820-a7e7-7e85d1420000)                                                                             |
-| <Tag variant="solid">Метавсесвіт</Tag>             | [На сафарі: Дослідження користувачів у метавсесвіті](https://archive.devcon.org/archive/watch/6/going-on-safari-researching-users-in-the-metaverse/?tab=YouTube) (відео, 27 хв)  |
+| <Tag variant="solid">Метавсесвіт</Tag>             | На сафарі: Дослідження користувачів у метавсесвіті (відео, 27 хв)  |
 
 ## Дизайн для Web3 {#design-for-web3}
 

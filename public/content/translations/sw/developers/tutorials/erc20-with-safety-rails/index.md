@@ -17,7 +17,7 @@ Kumbuka kwamba ingawa tutatumia [mkataba wa tokeni wa ERC-20 wa OpenZeppelin](ht
 
 Ikiwa unataka kuona msimbo kamili wa chanzo:
 
-1. Fungua [Remix IDE](https://remix.ethereum.org/).
+1. Fungua Remix IDE.
 2. Bofya ikoni ya kuiga ya GitHub (![clone github icon](icon-clone.png)).
 3. Iga hazina ya GitHub `https://github.com/qbzzt/20220815-erc20-safety-rails`.
 4. Fungua **contracts > erc20-safety-rails.sol**.
@@ -40,7 +40,7 @@ Kabla ya kuongeza utendakazi wa miongozo ya usalama tunahitaji mkataba wa ERC-20
 
 3. Sogeza juu na ubofye **Open in Remix** (kwa Remix) au **Download** ili kutumia mazingira tofauti. Nitachukulia kuwa unatumia Remix, ikiwa unatumia kitu kingine fanya tu mabadiliko yanayofaa.
 4. Sasa tuna mkataba wa ERC-20 unaofanya kazi kikamilifu. Unaweza kupanua `.deps` > `npm` ili kuona msimbo ulioingizwa.
-5. Kusanya, sambaza, na ucheze na mkataba ili kuona kwamba unafanya kazi kama mkataba wa ERC-20. Ikiwa unahitaji kujifunza jinsi ya kutumia Remix, [tumia mafunzo haya](https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth).
+5. Kusanya, sambaza, na ucheze na mkataba ili kuona kwamba unafanya kazi kama mkataba wa ERC-20. Ikiwa unahitaji kujifunza jinsi ya kutumia Remix, tumia mafunzo haya.
 
 ## Makosa ya kawaida {#common-mistakes}
 
@@ -185,7 +185,7 @@ Kufungia na kufungua mikataba kunahitaji mabadiliko kadhaa:
 
 ### Usafishaji wa mali {#asset-cleanup}
 
-Ili kutoa tokeni za ERC-20 zinazoshikiliwa na mkataba huu tunahitaji kuita chaguo la kukokotoa kwenye mkataba wa tokeni ambazo ni zake, ama [`transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer) au [`approve`](https://eips.ethereum.org/EIPS/eip-20#approve). Hakuna haja ya kupoteza gesi katika kesi hii kwenye posho, tunaweza pia kufanya hamisho moja kwa moja.
+Ili kutoa tokeni za ERC-20 zinazoshikiliwa na mkataba huu tunahitaji kuita chaguo la kukokotoa kwenye mkataba wa tokeni ambazo ni zake, ama `transfer` au `approve`. Hakuna haja ya kupoteza gesi katika kesi hii kwenye posho, tunaweza pia kufanya hamisho moja kwa moja.
 
 ```solidity
     function cleanupERC20(

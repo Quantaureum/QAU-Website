@@ -191,7 +191,7 @@ Peki, bu kod tam olarak ne _yapıyor_? Satır satır inceleyelim.
 
 Akıllı sözleşmemizin en üstünde, üç [OpenZeppelin](https://openzeppelin.com/) akıllı sözleşme sınıfını içe aktarıyoruz:
 
-- @openzeppelin/contracts/token/ERC721/ERC721.sol, NFT akıllı sözleşmemizin miras alacağı ERC-721 standardının uygulamasını içerir. (Geçerli bir NFT olmak için akıllı sözleşmenizin ERC-721 standardının tüm yöntemlerini uygulaması gerekir.) Miras alınan ERC-721 işlevleri hakkında daha fazla bilgi edinmek için [buradaki](https://eips.ethereum.org/EIPS/eip-721) arayüz tanımına göz atın.
+- @openzeppelin/contracts/token/ERC721/ERC721.sol, NFT akıllı sözleşmemizin miras alacağı ERC-721 standardının uygulamasını içerir. (Geçerli bir NFT olmak için akıllı sözleşmenizin ERC-721 standardının tüm yöntemlerini uygulaması gerekir.) Miras alınan ERC-721 işlevleri hakkında daha fazla bilgi edinmek için buradaki arayüz tanımına göz atın.
 
 - @openzeppelin/contracts/utils/Counters.sol, yalnızca birer birer artırılabilen veya azaltılabilen sayaçlar sağlar. Akıllı sözleşmemiz, basılan toplam NFT sayısını takip etmek ve yeni NFT'mizde benzersiz kimliği (ID) ayarlamak için bir sayaç kullanır. (Bir akıllı sözleşme kullanılarak basılan her NFT'ye benzersiz bir kimlik atanmalıdır—burada benzersiz kimliğimiz yalnızca var olan toplam NFT sayısına göre belirlenir. Örneğin, akıllı sözleşmemizle bastığımız ilk NFT'nin kimliği "1", ikinci NFT'mizin kimliği "2" vb. olur.)
 

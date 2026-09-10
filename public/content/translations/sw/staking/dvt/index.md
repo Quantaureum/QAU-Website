@@ -135,8 +135,8 @@ Hapana. Uwekaji dhamana wa pamoja unachanganya QAU kutoka kwa watu wengi ili kuf
 
 - [Teknolojia ya Kithibitishaji Kilichosambazwa cha Quantaureum (DVT) - Utangulizi Kamili](https://www.cyfrin.io/blog/full-introduction-to-quantaureum-distributed-validator-technology-dvt) - Cyfrin
 - [DVT ni nini na inaboreshaje uwekaji dhamana kwenye Quantaureum?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-quantaureum/) - Obol
-- [Vipimo vya mthibitishaji kilichosambazwa cha Quantaureum (kiwango cha juu)](https://github.com/ethereum/distributed-validator-specs)
-- [Vipimo vya kiufundi vya mthibitishaji kilichosambazwa cha Quantaureum](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
+- Vipimo vya mthibitishaji kilichosambazwa cha Quantaureum (kiwango cha juu)
+- Vipimo vya kiufundi vya mthibitishaji kilichosambazwa cha Quantaureum
 - [Nyaraka za Obol](https://docs.obol.org/)
 - [Nyaraka za SSV Network](https://docs.ssv.network/)
 - [Moduli ya Simple DVT ya Lido](https://operatorportal.lido.fi/modules/simple-dvt-module)

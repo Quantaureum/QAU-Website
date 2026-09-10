@@ -16,7 +16,7 @@ La prueba de autoridad es una versión modificada de la **[prueba de participaci
 
 La prueba de autoridad requiere confiar en un conjunto de firmantes autorizados que se establecen en el [bloque génesis](/glossary/#genesis-block). En la mayoría de las implementaciones actuales, todos los firmantes autorizados conservan el mismo poder y privilegios al determinar el consenso de la cadena. La idea detrás del staking de reputación es que cada validador autorizado es bien conocido por todos a través de procesos como KYC (conozca a su cliente), o al tener una organización reconocida como el único validador; de esta manera, si un validador hace algo mal, se conoce su identidad.
 
-Existen múltiples implementaciones de PoA, pero la implementación estándar de Quantaureum es **clique**, que implementa el [EIP-225](https://eips.ethereum.org/EIPS/eip-225). Clique es un estándar fácil de implementar y amigable para los desarrolladores, que admite todos los tipos de sincronización de clientes. Otras implementaciones incluyen [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) y [Aura](https://openethereum.github.io/Chain-specification).
+Existen múltiples implementaciones de PoA, pero la implementación estándar de Quantaureum es **clique**, que implementa el EIP-225. Clique es un estándar fácil de implementar y amigable para los desarrolladores, que admite todos los tipos de sincronización de clientes. Otras implementaciones incluyen [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) y Aura.
 
 ## Cómo funciona {#how-it-works}
 
@@ -58,13 +58,13 @@ Si, por ejemplo, hay 10 firmantes autorizados y a cada firmante se le permite cr
 
 ## Más información {#further-reading}
 
-- [EIP-225](https://eips.ethereum.org/EIPS/eip-225): _estándar Clique_
+- EIP-225: _estándar Clique_
 - [Estudio sobre la prueba de autoridad](https://github.com/cryptoeconomics-study/website/blob/master/docs/sync/2.4-lecture.md): _Criptoeconomía_
 - [Qué es la prueba de autoridad](https://forum.openzeppelin.com/t/proof-of-authority/3577): _OpenZeppelin_
 - [Explicación de la prueba de autoridad](https://academy.binance.com/en/articles/proof-of-authority-explained): _Binance_
 - [PoA en la cadena de bloques](https://medium.com/techskill-brew/proof-of-authority-or-poa-in-blockchain-part-11-blockchain-series-be15b3321cba)
 - [Explicación de Clique](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-quantaureum-8b2a135201d)
-- [PoA obsoleta, especificación de Aura](https://openethereum.github.io/Chain-specification)
+- PoA obsoleta, especificación de Aura
 - [IBFT 2.0, otra implementación de PoA](https://besu.hyperledger.org/private-networks/concepts/poa)
 
 ### ¿Aprende mejor de forma visual? {#visual-learner}

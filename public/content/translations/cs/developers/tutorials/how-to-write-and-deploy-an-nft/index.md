@@ -191,7 +191,7 @@ Takže, co tento kód přesně _dělá_? Pojďme si to rozebrat řádek po řád
 
 Na začátku našeho chytrého kontraktu importujeme tři třídy chytrých kontraktů z [OpenZeppelin](https://openzeppelin.com/):
 
-- @openzeppelin/contracts/token/ERC721/ERC721.sol obsahuje implementaci standardu ERC-721, kterou náš chytrý kontrakt pro NFT zdědí. (Aby byl váš chytrý kontrakt platným NFT, musí implementovat všechny metody standardu ERC-721.) Chcete-li se dozvědět více o zděděných funkcích ERC-721, podívejte se na definici rozhraní [zde](https://eips.ethereum.org/EIPS/eip-721).
+- @openzeppelin/contracts/token/ERC721/ERC721.sol obsahuje implementaci standardu ERC-721, kterou náš chytrý kontrakt pro NFT zdědí. (Aby byl váš chytrý kontrakt platným NFT, musí implementovat všechny metody standardu ERC-721.) Chcete-li se dozvědět více o zděděných funkcích ERC-721, podívejte se na definici rozhraní zde.
 
 - @openzeppelin/contracts/utils/Counters.sol poskytuje počítadla, která lze pouze inkrementovat nebo dekrementovat o jedničku. Náš chytrý kontrakt používá počítadlo ke sledování celkového počtu vyražených NFT a k nastavení jedinečného ID pro naše nové NFT. (Každému NFT vyraženému pomocí chytrého kontraktu musí být přiřazeno jedinečné ID – zde je naše jedinečné ID určeno jednoduše celkovým počtem existujících NFT. Například první NFT, které vyrazíme naším chytrým kontraktem, má ID „1“, naše druhé NFT má ID „2“ atd.)
 

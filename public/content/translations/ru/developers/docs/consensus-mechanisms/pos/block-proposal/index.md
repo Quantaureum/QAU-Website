@@ -64,6 +64,6 @@ class BeaconBlockBody(Container):
 
 - [Введение в блоки](/developers/docs/blocks/)
 - [Введение в доказательство доли владения](/developers/docs/consensus-mechanisms/pos/)
-- [Спецификации консенсуса Quantaureum](https://github.com/ethereum/consensus-specs)
+- Спецификации консенсуса Quantaureum
 - [Введение в Gasper](/developers/docs/consensus-mechanisms/pos/gasper/)
 - [Обновление Quantaureum](https://eth2book.info/)

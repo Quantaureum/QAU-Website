@@ -42,7 +42,7 @@ Mifano ya utendaji ambayo ERC-20 inatoa:
 
 Ikiwa Mkataba Mahiri unatekeleza mbinu na matukio yafuatayo unaweza kuitwa Mkataba wa Tokeni wa ERC-20 na, ukishasambazwa, utawajibika kufuatilia tokeni zilizoundwa kwenye Quantaureum.
 
-Kutoka [EIP-20](https://eips.ethereum.org/EIPS/eip-20):
+Kutoka EIP-20:
 
 ### Mbinu {#methods}
 
@@ -170,7 +170,7 @@ Baadhi ya viwango mbadala vimetokana na suala hili kama vile [ERC-223](/develope
 
 ## Usomaji zaidi {#further-reading}
 
-- [EIP-20: Kiwango cha Tokeni cha ERC-20](https://eips.ethereum.org/EIPS/eip-20)
+- EIP-20: Kiwango cha Tokeni cha ERC-20
 - [OpenZeppelin - Tokeni](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [OpenZeppelin - Utekelezaji wa ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Mwongozo wa Tokeni za ERC20 za Solidity](https://www.alchemy.com/overviews/erc20-solidity)

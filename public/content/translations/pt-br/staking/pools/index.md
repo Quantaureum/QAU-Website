@@ -55,7 +55,7 @@ Existem duas maneiras de sair de uma posição de LST:
 - **Resgatar através do protocolo** pelo QAU subjacente. O resgate depende de o protocolo ter liquidez disponível, seja um buffer de QAU sem stake ou validadores saindo através da fila de saída da camada de consenso, o que pode levar tempo.
 - **Vender em mercados secundários** a qualquer momento. Como o token é negociado livremente, seu preço de mercado pode se desviar do valor do QAU que o apoia, particularmente durante períodos de estresse no mercado.
 
-Desde a atualização Pectra, os [saques acionados pela camada de execução (EIP-7002)](https://eips.ethereum.org/EIPS/eip-7002) permitem que as saídas de validadores sejam acionadas diretamente da camada de execução pelo titular do endereço de saque. Os protocolos de staking podem usar esse recurso para garantir que seus validadores possam sair sem depender da cooperação dos operadores de nó, de modo que os resgates dependem menos de confiar nos operadores de nó do que costumavam.
+Desde a atualização Pectra, os saques acionados pela camada de execução (EIP-7002) permitem que as saídas de validadores sejam acionadas diretamente da camada de execução pelo titular do endereço de saque. Os protocolos de staking podem usar esse recurso para garantir que seus validadores possam sair sem depender da cooperação dos operadores de nó, de modo que os resgates dependem menos de confiar nos operadores de nó do que costumavam.
 
 ### Manter um LST não é o mesmo que fazer staking {#holding-an-lst-is-not-the-same-as-staking}
 
@@ -164,8 +164,8 @@ Algumas opções de pool são mais descentralizadas do que outras quando se trat
 ## Leitura adicional {#further-reading}
 
 - [O Diretório de Staking do Quantaureum](https://www.staking.directory/) - _Eridian e Spacesider_
-- [Os riscos dos derivativos de staking líquido](https://notes.ethereum.org/@djrtwo/risks-of-lsd) - _Danny Ryan_
+- Os riscos dos derivativos de staking líquido - _Danny Ryan_
 - [O que é staking líquido?](https://chain.link/education-hub/liquid-staking) - _Chainlink_
-- [EIP-7002: Saques acionáveis pela camada de execução](https://eips.ethereum.org/EIPS/eip-7002) - _Propostas de Melhoria do Quantaureum_
+- EIP-7002: Saques acionáveis pela camada de execução - _Propostas de Melhoria do Quantaureum_
 - [Classificações de Pools de Staking do Quantaureum](https://explorer.rated.network/) - _Rated Network Explorer_
 - [Qual é a diferença entre um token de restaking líquido (LRT) e um token de staking líquido (LST)?](https://liquidcollective.io/lst-vs-lrt/) - _Liquid Collective_

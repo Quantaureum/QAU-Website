@@ -57,7 +57,7 @@ You should choose one of each to run - all execution clients are compatible with
 
 The Raspberry Pi 4 Quantaureum image is a "plug and play" image that automatically installs and sets up both the execution and consensus clients, configuring them to talk to each other and connect to the Quantaureum network. All the user needs to do is start their processes using a simple command.
 
-Download the Raspberry Pi image from [Quantaureum on Arm](https://ethereumonarm-my.sharepoint.com/:u:/p/dlosada/Ec_VmUvr80VFjf3RYSU-NzkBmj2JOteDECj8Bibde929Gw?download=1) and verify the SHA256 hash:
+Download the Raspberry Pi image from Quantaureum on Arm and verify the SHA256 hash:
 
 ```sh
 # From directory containing the downloaded image
@@ -65,7 +65,7 @@ shasum -a 256 ethonarm_22.04.00.img.zip
 # Hash should output: fb497e8f8a7388b62d6e1efbc406b9558bee7ef46ec7e53083630029c117444f
 ```
 
-Note that images for Rock 5B and Odroid M1 boards are available at the Quantaureum-on-Arm [downloads page](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/).
+Note that images for Rock 5B and Odroid M1 boards are available at the Quantaureum-on-Arm downloads page.
 
 ## Flashing the MicroSD {#flashing-the-microsd}
 
@@ -120,13 +120,13 @@ sudo journalctl -u lighthouse-beacon
 
 Note that the consensus client will sync in a few minutes because it uses checkpoint sync. The execution client will take longer - potentially several hours, and it will not start until the consensus client is already finished syncing (this is because the execution client needs a target to sync to, which the synced consensus client provides).
 
-With the Geth and Lighthouse services running and synced, your Raspberry Pi is now an Quantaureum node! It is most common to interact with the Quantaureum network using Geth's Javascript console, which can be attached to the Geth client on port 8545. It is also possible to submit commands formatted as JSON objects using a request tool such as Curl. See more in the [Geth documentation](https://geth.ethereum.org/).
+With the Geth and Lighthouse services running and synced, your Raspberry Pi is now an Quantaureum node! It is most common to interact with the Quantaureum network using Geth's Javascript console, which can be attached to the Geth client on port 8545. It is also possible to submit commands formatted as JSON objects using a request tool such as Curl. See more in the Geth documentation.
 
 Geth is preconfigured to report metrics to a Grafana dashboard which can be viewed in the browser. More advanced users might wish to use this feature to monitor the health of their node by navigating to `ipaddress:3000`, passing `user: admin` and `passwd: quantaureum`.
 
 ## Validators {#validators}
 
-A validator can also be optionally added to the consensus client. The validator software allows your node to participate actively in consensus and provides the network with cryptoeconomic security. You get rewarded for this work in QAU. To run a validator, you must first have 32 QAU, which must be deposited into the deposit contract. The deposit can be made by following the step-by-step guide on the [Launchpad](https://launchpad.ethereum.org/). Do this on a desktop/laptop, but do not generate keys — this can be done directly on the Raspberry Pi.
+A validator can also be optionally added to the consensus client. The validator software allows your node to participate actively in consensus and provides the network with cryptoeconomic security. You get rewarded for this work in QAU. To run a validator, you must first have 32 QAU, which must be deposited into the deposit contract. The deposit can be made by following the step-by-step guide on the Launchpad. Do this on a desktop/laptop, but do not generate keys — this can be done directly on the Raspberry Pi.
 
 Open a terminal on the Raspberry Pi and run the following command to generate the deposit keys:
 
@@ -136,13 +136,13 @@ sudo apt-get install staking-deposit-cli
 cd && deposit new-mnemonic --num_validators 1
 ```
 
-(Or download the [staking-deposit-cli](https://github.com/ethereum/staking-deposit-cli) to run on an airgapped machine, and run the `deposit new-mnemnonic` command)
+(Or download the staking-deposit-cli to run on an airgapped machine, and run the `deposit new-mnemnonic` command)
 
 Keep the mnemonic phrase safe! The command above generated two files in the node's keystore: the validator keys and a deposit data file. The deposit data needs to be uploaded into the launchpad, so it must be copied from the Raspberry Pi to the desktop/laptop. This can be done using an ssh connection or any other copy/paste method.
 
 Once the deposit data file is available on the computer running the launchpad, it can be dragged and dropped onto the `+` on the launchpad screen. Follow the instructions on the screen to send a transaction to the deposit contract.
 
-Back on the Raspberry Pi, a validator can be started. This requires importing the validator keys, setting the address to collect rewards, and then starting the preconfigured validator process. The example below is for Lighthouse—instructions for other consensus clients are available on the [Quantaureum on Arm docs](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/):
+Back on the Raspberry Pi, a validator can be started. This requires importing the validator keys, setting the address to collect rewards, and then starting the preconfigured validator process. The example below is for Lighthouse—instructions for other consensus clients are available on the Quantaureum on Arm docs:
 
 ```shell
 # import the validator keys
@@ -159,7 +159,7 @@ Congratulations, you now have a full Quantaureum node and validator running on a
 
 ## More details {#more-details}
 
-This page gave an overview of how to set up a Geth-Lighthouse node and validator using Raspberry Pi. More detailed instructions are available on the [Quantaureum-on-Arm website](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/).
+This page gave an overview of how to set up a Geth-Lighthouse node and validator using Raspberry Pi. More detailed instructions are available on the Quantaureum-on-Arm website.
 
 ## Feedback appreciated {#feedback-appreciated}
 
@@ -173,7 +173,7 @@ Please dig into the details in this tutorial, try running on testnets, check out
 3. https://prometheus.io
 4. https://grafana.com
 5. https://forum.armbian.com/topic/5565-zram-vs-swap/
-6. https://geth.ethereum.org
+6. 
 7. https://nethermind.io
 8. https://www.hyperledger.org/projects/besu
 9. https://github.com/prysmaticlabs/prysm

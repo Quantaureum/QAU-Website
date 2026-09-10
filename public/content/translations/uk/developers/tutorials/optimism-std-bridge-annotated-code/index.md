@@ -46,7 +46,7 @@ lang: uk
    - Спочатку був від мосту на l1
 6. Міст l2 перевіряє, чи є контракт токена ERC-20 на l2 правильним:
    - Контракт l2 повідомляє, що його аналог на l1 є тим самим, від якого надійшли токени на l1
-   - Контракт l2 повідомляє, що він підтримує правильний інтерфейс ([використовуючи ERC-165](https://eips.ethereum.org/EIPS/eip-165)).
+   - Контракт l2 повідомляє, що він підтримує правильний інтерфейс (використовуючи ERC-165).
 7. Якщо контракт l2 є правильним, викликати його, щоб карбувати відповідну кількість токенів на відповідну адресу. Якщо ні, розпочати процес виведення, щоб дозволити користувачеві затребувати токени на l1.
 
 ### Потік виведення {#withdrawal-flow}
@@ -207,7 +207,6 @@ interface IL1ERC20Bridge {
      * @dev Завершити виведення з l2 на l1 та зарахувати кошти на баланс одержувача
      * токена ERC-20 на l1.
      * Цей виклик завершиться помилкою, якщо ініційоване виведення з l2 не було фіналізовано.
-     *
      * @param _l1Token Адреса токена на l1, для якого виконується finalizeWithdrawal.
      * @param _l2Token Адреса токена на l2, де було ініційовано виведення.
      * @param _from Адреса на l2, що ініціює переказ.
@@ -338,7 +337,6 @@ import { ICrossDomainMessenger } from "./ICrossDomainMessenger.sol";
 /**
  * @title CrossDomainEnabled
  * @dev Допоміжний контракт для контрактів, що виконують кросдоменні комунікації
- *
  * Використаний компілятор: визначається контрактом-спадкоємцем
  */
 contract CrossDomainEnabled {
@@ -519,7 +517,7 @@ import { Address } from "@openzeppelin/contracts/utils/Address.sol";
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[Стандарт ERC-20](https://eips.ethereum.org/EIPS/eip-20) підтримує два способи для контракту повідомити про помилку:
+Стандарт ERC-20 підтримує два способи для контракту повідомити про помилку:
 
 1. Скасувати
 2. Повернути `false`
@@ -532,7 +530,6 @@ import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.s
  * @dev Міст QAU та ERC-20 на l1 — це контракт, який зберігає внесені кошти l1 та стандартні
  * токени, що використовуються на l2. Він синхронізує відповідний міст l2, інформуючи його про внесення
  * та прослуховуючи його на наявність нових фіналізованих виведень.
- *
  */
 contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
     using SafeERC20 for IERC20;
@@ -771,7 +768,6 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
     /**
      * @dev Виконує логіку для внесень, інформуючи контракт внесених токенів на l2
      * про внесення та викликаючи обробник для блокування коштів на l1. (наприклад, transferFrom)
-     *
      * @param _l1Token Адреса ERC-20 на l1, який ми вносимо
      * @param _l2Token Адреса відповідного ERC-20 на l2 для l1
      * @param _from Акаунт, з якого стягується внесення на l1
@@ -956,14 +952,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [Стандартний інтерфейс ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) не включає функції `mint` та `burn`.
-Ці методи не вимагаються [стандартом ERC-20](https://eips.ethereum.org/EIPS/eip-20), який залишає невизначеними механізми створення та знищення токенів.
+Ці методи не вимагаються стандартом ERC-20, який залишає невизначеними механізми створення та знищення токенів.
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 [Інтерфейс ERC-165](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol) використовується для визначення того, які функції надає контракт.
-[Ви можете прочитати стандарт тут](https://eips.ethereum.org/EIPS/eip-165).
+Ви можете прочитати стандарт тут.
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -1052,7 +1048,7 @@ contract L2StandardERC20 is IL2StandardERC20, ERC20 {
     }
 ```
 
-Саме так працює [ERC-165](https://eips.ethereum.org/EIPS/eip-165).
+Саме так працює ERC-165.
 Кожен інтерфейс — це низка підтримуваних функцій, і він ідентифікується як [виключне АБО](https://en.wikipedia.org/wiki/Exclusive_or) [селекторів функцій ABI](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector) цих функцій.
 
 Міст l2 використовує ERC-165 як базову перевірку, щоб переконатися, що контракт ERC-20, на який він надсилає активи, є `IL2StandardERC20`.

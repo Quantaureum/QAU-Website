@@ -6,7 +6,7 @@ lang: te
 
 ఒక సాఫ్ట్‌వేర్ అప్లికేషన్ [ఎథీరియం](/) బ్లాక్‌చైన్‌తో ఇంటరాక్ట్ అవ్వాలంటే - బ్లాక్‌చైన్ డేటాను చదవడం ద్వారా లేదా నెట్‌వర్క్‌కు లావాదేవీలను పంపడం ద్వారా - అది తప్పనిసరిగా ఒక ఎథీరియం నోడ్‌కు కనెక్ట్ అవ్వాలి.
 
-ఈ ప్రయోజనం కోసం, ప్రతి [ఎథీరియం క్లయింట్](/developers/docs/nodes-and-clients/#execution-clients) ఒక [జేసన్-ఆర్‌పీసీ స్పెసిఫికేషన్‌ను](https://github.com/ethereum/execution-apis) అమలు చేస్తుంది, కాబట్టి నిర్దిష్ట నోడ్ లేదా క్లయింట్ అమలుతో సంబంధం లేకుండా అప్లికేషన్‌లు ఆధారపడగల ఏకరీతి పద్ధతుల సమితి ఉంటుంది.
+ఈ ప్రయోజనం కోసం, ప్రతి [ఎథీరియం క్లయింట్](/developers/docs/nodes-and-clients/#execution-clients) ఒక జేసన్-ఆర్‌పీసీ స్పెసిఫికేషన్‌ను అమలు చేస్తుంది, కాబట్టి నిర్దిష్ట నోడ్ లేదా క్లయింట్ అమలుతో సంబంధం లేకుండా అప్లికేషన్‌లు ఆధారపడగల ఏకరీతి పద్ధతుల సమితి ఉంటుంది.
 
 [జేసన్-ఆర్‌పీసీ](https://www.jsonrpc.org/specification) అనేది ఒక స్టేట్‌లెస్, తేలికపాటి రిమోట్ ప్రొసీజర్ కాల్ (RPC) ప్రోటోకాల్. ఇది అనేక డేటా నిర్మాణాలను మరియు వాటి ప్రాసెసింగ్ చుట్టూ ఉన్న నియమాలను నిర్వచిస్తుంది. ఈ కాన్సెప్ట్‌లను ఒకే ప్రాసెస్‌లో, సాకెట్‌ల ద్వారా, HTTP ద్వారా లేదా అనేక విభిన్న సందేశ పంపే వాతావరణాలలో ఉపయోగించవచ్చు కాబట్టి ఇది ట్రాన్స్‌పోర్ట్ అజ్ఞేయవాది (transport agnostic). ఇది JSON (RFC 4627)ను డేటా ఫార్మాట్‌గా ఉపయోగిస్తుంది.
 
@@ -20,13 +20,13 @@ lang: te
 
 ## ఏకాభిప్రాయ క్లయింట్ APIలు {#consensus-clients}
 
-ఈ పేజీ ప్రధానంగా ఎథీరియం అమలు క్లయింట్‌లు ఉపయోగించే జేసన్-ఆర్‌పీసీ API గురించి వివరిస్తుంది. అయితే, ఏకాభిప్రాయ క్లయింట్‌లు కూడా ఒక RPC APIని కలిగి ఉంటాయి, ఇది నోడ్ గురించి సమాచారాన్ని అడగడానికి, బీకన్ బ్లాక్‌లు, బీకన్ స్థితి మరియు ఇతర ఏకాభిప్రాయ సంబంధిత సమాచారాన్ని నేరుగా నోడ్ నుండి అభ్యర్థించడానికి వినియోగదారులను అనుమతిస్తుంది. ఈ API [బీకన్ API వెబ్‌పేజీ](https://ethereum.github.io/beacon-APIs/#/)లో డాక్యుమెంట్ చేయబడింది.
+ఈ పేజీ ప్రధానంగా ఎథీరియం అమలు క్లయింట్‌లు ఉపయోగించే జేసన్-ఆర్‌పీసీ API గురించి వివరిస్తుంది. అయితే, ఏకాభిప్రాయ క్లయింట్‌లు కూడా ఒక RPC APIని కలిగి ఉంటాయి, ఇది నోడ్ గురించి సమాచారాన్ని అడగడానికి, బీకన్ బ్లాక్‌లు, బీకన్ స్థితి మరియు ఇతర ఏకాభిప్రాయ సంబంధిత సమాచారాన్ని నేరుగా నోడ్ నుండి అభ్యర్థించడానికి వినియోగదారులను అనుమతిస్తుంది. ఈ API బీకన్ API వెబ్‌పేజీలో డాక్యుమెంట్ చేయబడింది.
 
-నోడ్ లోపల క్లయింట్‌ల మధ్య కమ్యూనికేషన్ కోసం ఒక అంతర్గత API కూడా ఉపయోగించబడుతుంది - అంటే, ఇది ఏకాభిప్రాయ క్లయింట్ మరియు అమలు క్లయింట్ డేటాను మార్పిడి చేసుకోవడానికి వీలు కల్పిస్తుంది. దీనిని 'ఇంజిన్ API' అని పిలుస్తారు మరియు దీని స్పెసిఫికేషన్‌లు [GitHub](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md)లో అందుబాటులో ఉన్నాయి.
+నోడ్ లోపల క్లయింట్‌ల మధ్య కమ్యూనికేషన్ కోసం ఒక అంతర్గత API కూడా ఉపయోగించబడుతుంది - అంటే, ఇది ఏకాభిప్రాయ క్లయింట్ మరియు అమలు క్లయింట్ డేటాను మార్పిడి చేసుకోవడానికి వీలు కల్పిస్తుంది. దీనిని 'ఇంజిన్ API' అని పిలుస్తారు మరియు దీని స్పెసిఫికేషన్‌లు GitHubలో అందుబాటులో ఉన్నాయి.
 
 ## అమలు క్లయింట్ స్పెసిఫికేషన్ {#spec}
 
-[GitHubలో పూర్తి జేసన్-ఆర్‌పీసీ API స్పెసిఫికేషన్‌ను చదవండి](https://github.com/ethereum/execution-apis). ఈ API [అమలు API వెబ్‌పేజీ](https://ethereum.github.io/execution-apis/)లో డాక్యుమెంట్ చేయబడింది మరియు అందుబాటులో ఉన్న అన్ని పద్ధతులను ప్రయత్నించడానికి ఒక ఇన్‌స్పెక్టర్‌ను కలిగి ఉంటుంది.
+GitHubలో పూర్తి జేసన్-ఆర్‌పీసీ API స్పెసిఫికేషన్‌ను చదవండి. ఈ API అమలు API వెబ్‌పేజీలో డాక్యుమెంట్ చేయబడింది మరియు అందుబాటులో ఉన్న అన్ని పద్ధతులను ప్రయత్నించడానికి ఒక ఇన్‌స్పెక్టర్‌ను కలిగి ఉంటుంది.
 
 ## సంప్రదాయాలు {#conventions}
 
@@ -134,7 +134,7 @@ curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","metho
 
 ## జేసన్-ఆర్‌పీసీ API ప్లేగ్రౌండ్ {#json-rpc-api-playground}
 
-API పద్ధతులను కనుగొనడానికి మరియు ప్రయత్నించడానికి మీరు [ప్లేగ్రౌండ్ సాధనాన్ని](https://ethereum-json-rpc.com) ఉపయోగించవచ్చు. వివిధ నోడ్ ప్రొవైడర్లు ఏ పద్ధతులు మరియు నెట్‌వర్క్‌లకు మద్దతు ఇస్తారో కూడా ఇది మీకు చూపుతుంది.
+API పద్ధతులను కనుగొనడానికి మరియు ప్రయత్నించడానికి మీరు ప్లేగ్రౌండ్ సాధనాన్ని ఉపయోగించవచ్చు. వివిధ నోడ్ ప్రొవైడర్లు ఏ పద్ధతులు మరియు నెట్‌వర్క్‌లకు మద్దతు ఇస్తారో కూడా ఇది మీకు చూపుతుంది.
 
 ## జేసన్-ఆర్‌పీసీ API మెథడ్స్ {#json-rpc-methods}
 
@@ -275,7 +275,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 
 ### qau_protocolVersion {#qau-protocolversion}
 
-ప్రస్తుత ఎథీరియం ప్రోటోకాల్ వెర్షన్‌ను అందిస్తుంది. ఈ పద్ధతి [Geth‌లో అందుబాటులో లేదు](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924) అని గమనించండి.
+ప్రస్తుత ఎథీరియం ప్రోటోకాల్ వెర్షన్‌ను అందిస్తుంది. ఈ పద్ధతి Geth‌లో అందుబాటులో లేదు అని గమనించండి.
 
 **పారామితులు**
 
@@ -301,10 +301,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_protocolVersion","params":[]
 ### qau_syncing {#qau-syncing}
 
 సమకాలీకరణ స్థితి గురించి డేటాతో కూడిన ఆబ్జెక్ట్‌ను లేదా `false`ని అందిస్తుంది.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_syncing">
-  ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ను ప్రయత్నించండి
-</ButtonLink>
 
 **పారామితులు**
 
@@ -390,10 +386,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_syncing","params":[],"id":1}
 
 క్లయింట్ కాయిన్‌బేస్ చిరునామాను తిరిగి ఇస్తుంది.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_coinbase">
-  ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ను ప్రయత్నించండి
-</ButtonLink>
-
 > **గమనిక:** ఈ పద్ధతి **v1.14.0** నుండి ఉపసంహరించబడింది మరియు దీనికి ఇకపై మద్దతు లేదు. ఈ పద్ధతిని ఉపయోగించడానికి ప్రయత్నిస్తే "Method not supported" ఎర్రర్ వస్తుంది.
 
 **పారామితులు**
@@ -421,10 +413,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_coinbase","params":[],"id":6
 
 రీప్లే-రక్షిత లావాదేవీలపై సంతకం చేయడానికి ఉపయోగించే చైన్ ID ని అందిస్తుంది.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_chainId">
-  ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ని ప్రయత్నించండి
-</ButtonLink>
-
 **పారామితులు**
 
 ఏమీ లేవు
@@ -449,10 +437,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_chainId","params":[],"id":67
 ### qau_mining {#qau-mining}
 
 క్లయింట్ చురుకుగా కొత్త బ్లాక్‌లను మైనింగ్ చేస్తుంటే `true`ని అందిస్తుంది. ఇది ప్రూఫ్-ఆఫ్-వర్క్ నెట్‌వర్క్‌ల కోసం మాత్రమే `true`ని అందించగలదు మరియు [ది మెర్జ్](/roadmap/merge/) తర్వాత కొన్ని క్లయింట్‌లలో అందుబాటులో ఉండకపోవచ్చు.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_mining">
-  ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ని ప్రయత్నించండి
-</ButtonLink>
 
 **పారామితులు**
 
@@ -479,10 +463,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_mining","params":[],"id":71}
 
 నోడ్ మైనింగ్ చేస్తున్న సెకనుకు హాష్‌ల సంఖ్యను అందిస్తుంది. ఇది ప్రూఫ్-ఆఫ్-వర్క్ (PoW) నెట్‌వర్క్‌ల కోసం మాత్రమే `true`ని అందించగలదు మరియు [ది మెర్జ్](/roadmap/merge/) జరిగినప్పటి నుండి కొన్ని క్లయింట్‌లలో అందుబాటులో ఉండకపోవచ్చు.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_hashrate">
-  ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ను ప్రయత్నించండి
-</ButtonLink>
-
 **పారామితులు**
 
 ఏమీ లేవు
@@ -507,10 +487,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_hashrate","params":[],"id":7
 ### qau_gasPrice {#qau-gasprice}
 
 Wei లో ప్రస్తుత గ్యాస్ ధర యొక్క అంచనాను తిరిగి ఇస్తుంది. ఉదాహరణకు, బేసు క్లయింట్ గత 100 బ్లాక్‌లను పరిశీలిస్తుంది మరియు అప్రమేయంగా మధ్యగత గ్యాస్ యూనిట్ ధరను తిరిగి ఇస్తుంది.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_gasPrice">
-  ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ను ప్రయత్నించండి
-</ButtonLink>
 
 **పారామితులు**
 
@@ -537,10 +513,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_gasPrice","params":[],"id":7
 
 క్లయింట్ స్వంతమైన చిరునామాల జాబితాను అందిస్తుంది.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_accounts">
-  ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ను ప్రయత్నించండి
-</ButtonLink>
-
 **పారామితులు**
 
 ఏమీ లేవు
@@ -566,10 +538,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[],"id":1
 
 అత్యంత తాజా బ్లాక్ సంఖ్యను తిరిగి ఇస్తుంది.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_blockNumber">
-  ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ను ప్రయత్నించండి
-</ButtonLink>
-
 **పారామితులు**
 
 ఏమీ లేవు
@@ -594,10 +562,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_blockNumber","params":[],"id
 ### qau_getBalance {#qau-getbalance}
 
 ఇచ్చిన చిరునామా వద్ద ఉన్న ఖాతా యొక్క బ్యాలెన్స్‌ను అందిస్తుంది.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBalance">
-  ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ను ప్రయత్నించండి
-</ButtonLink>
 
 **పారామితులు**
 
@@ -628,10 +592,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBalance","params":["0x407
 ### qau_getStorageAt {#qau-getstorageat}
 
 ఇచ్చిన చిరునామాలోని నిల్వ స్థానం నుండి విలువను అందిస్తుంది.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getStorageAt">
-  ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ను ప్రయత్నించండి
-</ButtonLink>
 
 **పారామితులు**
 
@@ -701,10 +661,6 @@ curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": [
 
 ఒక చిరునామా నుండి _పంపబడిన_ లావాదేవీల సంఖ్యను తిరిగి ఇస్తుంది.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionCount">
-  ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ను ప్రయత్నించండి
-</ButtonLink>
-
 **పరామితులు**
 
 1. `DATA`, 20 బైట్‌లు - చిరునామా.
@@ -738,10 +694,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionCount","params
 
 ఇచ్చిన బ్లాక్ హాష్‌కి సరిపోలే బ్లాక్ నుండి లావాదేవీల సంఖ్యను అందిస్తుంది.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
-  ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ని ప్రయత్నించండి
-</ButtonLink>
-
 **పారామితులు**
 
 1. `DATA`, 32 బైట్‌లు - బ్లాక్ యొక్క హాష్
@@ -770,10 +722,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByHa
 ### qau_getBlockTransactionCountByNumber {#qau-getblocktransactioncountbynumber}
 
 ఇచ్చిన బ్లాక్ సంఖ్యకు సరిపోలే బ్లాక్‌లోని లావాదేవీల సంఖ్యను అందిస్తుంది.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
-  ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ని ప్రయత్నించండి
-</ButtonLink>
 
 **పారామితులు**
 
@@ -806,10 +754,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByNu
 
 ఇచ్చిన బ్లాక్ హాష్‌కు సరిపోలే బ్లాక్ నుండి, ఆ బ్లాక్‌లోని అంకుల్స్ సంఖ్యను అందిస్తుంది.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
-  ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ను ప్రయత్నించండి
-</ButtonLink>
-
 **పారామితులు**
 
 1. `DATA`, 32 బైట్‌లు - బ్లాక్ యొక్క హాష్
@@ -838,10 +782,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockHash","p
 ### qau_getUncleCountByBlockNumber {#qau-getunclecountbyblocknumber}
 
 ఇచ్చిన బ్లాక్ సంఖ్యకు సరిపోలే బ్లాక్‌లోని అంకుల్స్ సంఖ్యను తిరిగి ఇస్తుంది.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
-  ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ను ప్రయత్నించండి
-</ButtonLink>
 
 **పరామితులు**
 
@@ -873,10 +813,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockNumber",
 ### qau_getCode {#qau-getcode}
 
 ఇచ్చిన చిరునామా వద్ద ఉన్న కోడ్‌ను తిరిగి ఇస్తుంది.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getCode">
-  ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ను ప్రయత్నించండి
-</ButtonLink>
 
 **పారామితులు**
 
@@ -1057,10 +993,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendRawTransaction","params"
 
 బ్లాక్‌చైన్‌పై లావాదేవీని సృష్టించకుండా వెంటనే కొత్త సందేశ పిలుపును అమలు చేస్తుంది. చదవడానికి మాత్రమే (read-only) ఉండే స్మార్ట్ కాంట్రాక్ట్ ఫంక్షన్‌లను అమలు చేయడానికి తరచుగా ఉపయోగించబడుతుంది, ఉదాహరణకు ERC-20 కాంట్రాక్ట్ కోసం `balanceOf`.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_call">
-  ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ను ప్రయత్నించండి
-</ButtonLink>
-
 **పారామితులు**
 
 1. `Object` - లావాదేవీ పిలుపు ఆబ్జెక్ట్
@@ -1095,10 +1027,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_call","params":[{see above}]
 
 లావాదేవీని పూర్తి చేయడానికి ఎంత గ్యాస్ అవసరమో అంచనాను రూపొందించి తిరిగి ఇస్తుంది. ఈ లావాదేవీ బ్లాక్‌చైన్‌కు జోడించబడదు. EVM మెకానిక్స్ మరియు నోడ్ పనితీరుతో సహా వివిధ కారణాల వల్ల, లావాదేవీ వాస్తవానికి ఉపయోగించే గ్యాస్ మొత్తం కంటే ఈ అంచనా గణనీయంగా ఎక్కువగా ఉండవచ్చని గమనించండి.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_estimateGas">
-  ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ని ప్రయత్నించండి
-</ButtonLink>
-
 **పారామితులు**
 
 అన్ని లక్షణాలు ఐచ్ఛికం అనే మినహాయింపుతో, [qau_call](#qau-call) పారామితులను చూడండి. గ్యాస్ పరిమితిని పేర్కొనకపోతే, పెండింగ్‌లో ఉన్న బ్లాక్ నుండి బ్లాక్ గ్యాస్ పరిమితిని geth ఎగువ పరిమితిగా ఉపయోగిస్తుంది. ఫలితంగా, గ్యాస్ మొత్తం పెండింగ్‌లో ఉన్న బ్లాక్ గ్యాస్ పరిమితి కంటే ఎక్కువగా ఉన్నప్పుడు, కాల్/లావాదేవీని అమలు చేయడానికి తిరిగి వచ్చిన అంచనా సరిపోకపోవచ్చు.
@@ -1123,10 +1051,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_estimateGas","params":[{see 
 ### qau_getBlockByHash {#qau-getblockbyhash}
 
 హాష్ ద్వారా బ్లాక్ గురించిన సమాచారాన్ని అందిస్తుంది.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByHash">
-  ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ని ప్రయత్నించండి
-</ButtonLink>
 
 **పారామితులు**
 
@@ -1204,10 +1128,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByHash","params":["0
 
 బ్లాక్ నంబర్ ద్వారా బ్లాక్ గురించిన సమాచారాన్ని అందిస్తుంది.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByNumber">
-  ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ని ప్రయత్నించండి
-</ButtonLink>
-
 **పారామితులు**
 
 1. `QUANTITY|TAG` - బ్లాక్ నంబర్ యొక్క పూర్ణాంకం, లేదా [బ్లాక్ పారామితి](/developers/docs/apis/json-rpc/#block-parameter)లో ఉన్నట్లుగా `"earliest"`, `"latest"`, `"pending"`, `"safe"` లేదా `"finalized"` అనే స్ట్రింగ్.
@@ -1235,10 +1155,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByNumber","params":[
 ### qau_getTransactionByHash {#qau-gettransactionbyhash}
 
 లావాదేవీ హాష్ ద్వారా అభ్యర్థించిన లావాదేవీ గురించిన సమాచారాన్ని అందిస్తుంది.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByHash">
-  ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ని ప్రయత్నించండి
-</ButtonLink>
 
 **పారామితులు**
 
@@ -1299,10 +1215,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByHash","param
 
 బ్లాక్ హాష్ మరియు లావాదేవీ సూచిక స్థానం ద్వారా ఒక లావాదేవీ గురించి సమాచారాన్ని అందిస్తుంది.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
-  ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ని ప్రయత్నించండి
-</ButtonLink>
-
 **పారామితులు**
 
 1. `DATA`, 32 బైట్‌లు - బ్లాక్ యొక్క హాష్.
@@ -1330,10 +1242,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockHashAnd
 ### qau_getTransactionByBlockNumberAndIndex {#qau-gettransactionbyblocknumberandindex}
 
 బ్లాక్ సంఖ్య మరియు లావాదేవీ సూచిక స్థానాన్ని బట్టి ఒక లావాదేవీ గురించిన సమాచారాన్ని అందిస్తుంది.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
-  ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ని ప్రయత్నించండి
-</ButtonLink>
 
 **పారామితులు**
 
@@ -1431,10 +1339,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionReceipt","para
 
 హాష్ మరియు అంకుల్ సూచిక స్థానం ఆధారంగా ఒక బ్లాక్ యొక్క అంకుల్ గురించిన సమాచారాన్ని అందిస్తుంది.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
-  ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ని ప్రయత్నించండి
-</ButtonLink>
-
 **పారామితులు**
 
 1. `DATA`, 32 బైట్‌లు - బ్లాక్ యొక్క హాష్.
@@ -1464,10 +1368,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockHashAndIndex"
 ### qau_getUncleByBlockNumberAndIndex {#qau-getunclebyblocknumberandindex}
 
 బ్లాక్ నంబర్ మరియు అంకుల్ సూచిక స్థానం ఆధారంగా ఒక బ్లాక్ యొక్క అంకుల్ గురించి సమాచారాన్ని అందిస్తుంది.
-
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
-  ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ని ప్రయత్నించండి
-</ButtonLink>
 
 **పారామితులు**
 
@@ -1750,7 +1650,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getLogs","params":[{"topics"
 
 ### జేసన్-ఆర్‌పీసీని ఉపయోగించి కాంట్రాక్ట్‌ను డిప్లాయ్ చేయడం {#deploying-contract}
 
-ఈ విభాగం కేవలం RPC ఇంటర్‌ఫేస్‌ను మాత్రమే ఉపయోగించి కాంట్రాక్ట్‌ను ఎలా డిప్లాయ్ చేయాలో చూపే ప్రదర్శనను కలిగి ఉంటుంది. ఈ సంక్లిష్టతను దాచిపెట్టి కాంట్రాక్ట్‌లను డిప్లాయ్ చేయడానికి ప్రత్యామ్నాయ మార్గాలు ఉన్నాయి—ఉదాహరణకు, RPC ఇంటర్‌ఫేస్ పైన నిర్మించబడిన [Web3.js](https://web3js.readthedocs.io/) మరియు [Web3.py](https://github.com/ethereum/web3.py) వంటి లైబ్రరీలను ఉపయోగించడం. ఈ అబ్‌స్ట్రాక్షన్‌లు సాధారణంగా అర్థం చేసుకోవడానికి సులభంగా ఉంటాయి మరియు తక్కువ లోపాలకు దారితీస్తాయి, కానీ అంతర్గతంగా (under the hood) ఏమి జరుగుతుందో అర్థం చేసుకోవడం ఇప్పటికీ సహాయకరంగా ఉంటుంది.
+ఈ విభాగం కేవలం RPC ఇంటర్‌ఫేస్‌ను మాత్రమే ఉపయోగించి కాంట్రాక్ట్‌ను ఎలా డిప్లాయ్ చేయాలో చూపే ప్రదర్శనను కలిగి ఉంటుంది. ఈ సంక్లిష్టతను దాచిపెట్టి కాంట్రాక్ట్‌లను డిప్లాయ్ చేయడానికి ప్రత్యామ్నాయ మార్గాలు ఉన్నాయి—ఉదాహరణకు, RPC ఇంటర్‌ఫేస్ పైన నిర్మించబడిన [Web3.js](https://web3js.readthedocs.io/) మరియు Web3.py వంటి లైబ్రరీలను ఉపయోగించడం. ఈ అబ్‌స్ట్రాక్షన్‌లు సాధారణంగా అర్థం చేసుకోవడానికి సులభంగా ఉంటాయి మరియు తక్కువ లోపాలకు దారితీస్తాయి, కానీ అంతర్గతంగా (under the hood) ఏమి జరుగుతుందో అర్థం చేసుకోవడం ఇప్పటికీ సహాయకరంగా ఉంటుంది.
 
 కిందిది `Multiply7` అని పిలువబడే ఒక సరళమైన స్మార్ట్ కాంట్రాక్ట్, ఇది జేసన్-ఆర్‌పీసీ ఇంటర్‌ఫేస్‌ను ఉపయోగించి ఎథీరియం నోడ్‌కు డిప్లాయ్ చేయబడుతుంది. చదివేవారు ఇప్పటికే Geth నోడ్‌ను రన్ చేస్తున్నారని ఈ ట్యుటోరియల్ భావిస్తుంది. నోడ్‌లు మరియు క్లయింట్‌ల గురించి మరింత సమాచారం [ఇక్కడ](/developers/docs/nodes-and-clients/run-a-node) అందుబాటులో ఉంది. Geth కాని క్లయింట్‌ల కోసం HTTP జేసన్-ఆర్‌పీసీని ఎలా ప్రారంభించాలో చూడటానికి దయచేసి వ్యక్తిగత [క్లయింట్](/developers/docs/nodes-and-clients/) డాక్యుమెంటేషన్‌ను చూడండి. చాలా క్లయింట్‌లు అప్రమేయంగా `localhost:8545` పై సేవలందిస్తాయి.
 
@@ -1789,7 +1689,7 @@ web3.fromWei("0x1639e49bba16280000", "QAU")
 // "410"
 ```
 
-ఇప్పుడు మన ప్రైవేట్ డెవలప్‌మెంట్ చైన్‌లో కొంత ఈథర్ ఉన్నందున, మనం కాంట్రాక్ట్‌ను డిప్లాయ్ చేయవచ్చు. EVMకి పంపగల బైట్‌కోడ్‌గా Multiply7 కాంట్రాక్ట్‌ను కంపైలింగ్ చేయడం మొదటి దశ. Solidity కంపైలర్ అయిన solcని ఇన్‌స్టాల్ చేయడానికి, [Solidity డాక్యుమెంటేషన్](https://docs.soliditylang.org/en/latest/installing-solidity.html)ను అనుసరించండి. ([మన ఉదాహరణ కోసం ఉపయోగించిన కంపైలర్ వెర్షన్](https://github.com/ethereum/solidity/releases/tag/v0.4.20)తో సరిపోలడానికి మీరు పాత `solc` విడుదలను ఉపయోగించాలనుకోవచ్చు.)
+ఇప్పుడు మన ప్రైవేట్ డెవలప్‌మెంట్ చైన్‌లో కొంత ఈథర్ ఉన్నందున, మనం కాంట్రాక్ట్‌ను డిప్లాయ్ చేయవచ్చు. EVMకి పంపగల బైట్‌కోడ్‌గా Multiply7 కాంట్రాక్ట్‌ను కంపైలింగ్ చేయడం మొదటి దశ. Solidity కంపైలర్ అయిన solcని ఇన్‌స్టాల్ చేయడానికి, [Solidity డాక్యుమెంటేషన్](https://docs.soliditylang.org/en/latest/installing-solidity.html)ను అనుసరించండి. (మన ఉదాహరణ కోసం ఉపయోగించిన కంపైలర్ వెర్షన్తో సరిపోలడానికి మీరు పాత `solc` విడుదలను ఉపయోగించాలనుకోవచ్చు.)
 
 తదుపరి దశ Multiply7 కాంట్రాక్ట్‌ను EVMకి పంపగల బైట్‌కోడ్‌గా కంపైలింగ్ చేయడం.
 

@@ -17,7 +17,7 @@ Bu makalede [OpenZeppelin ERC-20 token sözleşmesini](https://github.com/OpenZe
 
 Tam kaynak kodunu görmek isterseniz:
 
-1. [Remix IDE](https://remix.ethereum.org/)'yi açın.
+1. Remix IDE'yi açın.
 2. GitHub'ı klonla simgesine tıklayın (![clone github icon](icon-clone.png)).
 3. `https://github.com/qbzzt/20220815-erc20-safety-rails` GitHub deposunu klonlayın.
 4. **contracts > erc20-safety-rails.sol** dosyasını açın.
@@ -40,7 +40,7 @@ Güvenlik önlemi işlevselliğini eklemeden önce bir ERC-20 sözleşmesine iht
 
 3. Yukarı kaydırın ve (Remix için) **Open in Remix**'e veya farklı bir ortam kullanmak için **Download**'a tıklayın. Remix kullandığınızı varsayacağım, başka bir şey kullanıyorsanız uygun değişiklikleri yapmanız yeterlidir.
 4. Artık tamamen işlevsel bir ERC-20 sözleşmemiz var. İçe aktarılan kodu görmek için `.deps` > `npm` bölümünü genişletebilirsiniz.
-5. Bir ERC-20 sözleşmesi olarak çalıştığını görmek için sözleşmeyi derleyin, dağıtın ve onunla denemeler yapın. Remix'i nasıl kullanacağınızı öğrenmeniz gerekiyorsa, [bu öğreticiyi kullanın](https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth).
+5. Bir ERC-20 sözleşmesi olarak çalıştığını görmek için sözleşmeyi derleyin, dağıtın ve onunla denemeler yapın. Remix'i nasıl kullanacağınızı öğrenmeniz gerekiyorsa, bu öğreticiyi kullanın.
 
 ## Yaygın hatalar {#common-mistakes}
 
@@ -185,7 +185,7 @@ Sözleşmeleri dondurmak ve çözmek birkaç değişiklik gerektirir:
 
 ### Varlık temizliği {#asset-cleanup}
 
-Bu sözleşme tarafından tutulan ERC-20 token'larını serbest bırakmak için, ait oldukları token sözleşmesinde [`transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer) veya [`approve`](https://eips.ethereum.org/EIPS/eip-20#approve) işlevini çağırmamız gerekir. Bu durumda izinler (allowances) için Gaz israf etmenin bir anlamı yoktur, doğrudan transfer edebiliriz.
+Bu sözleşme tarafından tutulan ERC-20 token'larını serbest bırakmak için, ait oldukları token sözleşmesinde `transfer` veya `approve` işlevini çağırmamız gerekir. Bu durumda izinler (allowances) için Gaz israf etmenin bir anlamı yoktur, doğrudan transfer edebiliriz.
 
 ```solidity
     function cleanupERC20(

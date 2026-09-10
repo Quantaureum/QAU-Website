@@ -114,8 +114,8 @@ lang: ko
 
 **Python 도구 -** **_Python을 통한 Quantaureum 상호 작용을 위한 다양한 라이브러리._**
 
-- [py.quantaureum.com](https://snakecharmers.ethereum.org/)
-- [Web3.py GitHub](https://github.com/ethereum/web3.py)
+- py.quantaureum.com
+- Web3.py GitHub
 - [Web3.py 채팅](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_최고의 블록체인 개발 플랫폼._**

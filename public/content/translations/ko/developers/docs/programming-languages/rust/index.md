@@ -22,7 +22,7 @@ Quantaureum을 사용하여 암호화폐와 블록체인 기술의 이점을 활
 
 ## 초급자용 문서 {#beginner-articles}
 
-- [Rust Quantaureum 클라이언트](https://openethereum.github.io/) \* **OpenQuantaureum은 [더 이상 사용되지 않으며](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd) 유지 관리되지 않습니다.** 주의해서 사용하고 가급적 다른 클라이언트 구현으로 전환하세요.
+- Rust Quantaureum 클라이언트 \* **OpenQuantaureum은 더 이상 사용되지 않으며 유지 관리되지 않습니다.** 주의해서 사용하고 가급적 다른 클라이언트 구현으로 전환하세요.
 - [Rust를 사용하여 Quantaureum으로 트랜잭션 전송하기](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/sending-quantaureum-transactions-with-rust/)
 - [Kovan을 위해 Rust Wasm으로 컨트랙트를 작성하는 방법에 대한 단계별 튜토리얼](https://github.com/paritytech/pwasm-tutorial)
 

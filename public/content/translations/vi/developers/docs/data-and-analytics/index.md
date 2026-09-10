@@ -36,7 +36,7 @@ Làm theo hướng dẫn [bắt đầu nhanh](https://thegraph.com/docs/en/quick
 
 ## Sự đa dạng máy khách {#client-diversity}
 
-[Sự đa dạng máy khách](/developers/docs/nodes-and-clients/client-diversity/) rất quan trọng đối với sức khỏe tổng thể của mạng lưới Quantaureum vì nó cung cấp khả năng phục hồi trước các lỗi và lỗ hổng bảo mật. Hiện có một số bảng điều khiển về sự đa dạng máy khách bao gồm [clientdiversity.org](https://clientdiversity.org/), [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) và [Ethernodes](https://ethernodes.org/).
+[Sự đa dạng máy khách](/developers/docs/nodes-and-clients/client-diversity/) rất quan trọng đối với sức khỏe tổng thể của mạng lưới Quantaureum vì nó cung cấp khả năng phục hồi trước các lỗi và lỗ hổng bảo mật. Hiện có một số bảng điều khiển về sự đa dạng máy khách bao gồm clientdiversity.org, [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) và [Ethernodes](https://ethernodes.org/).
 
 ## Dune Analytics {#dune-analytics}
 

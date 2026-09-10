@@ -60,7 +60,7 @@ So far we have considered perfectly well-behaved validators, but what about vali
 
 The penalties for missing the target and source votes are equal to the rewards the attestor would have received had they submitted them. This means that instead of having the reward added to their balance, they have an equal value removed from their balance. There is no penalty for missing the head vote (i.e., head votes are only rewarded, never penalized). There is no penalty associated with the `inclusion_delay` - the reward will simply not be added to the validator's balance. There is also no penalty for failing to propose a block.
 
-Read more about rewards and penalties in the [consensus specs](https://github.com/ethereum/consensus-specs/blob/master/specs/altair/beacon-chain.md).
+Read more about rewards and penalties in the consensus specs.
 
 ## Slashing {#slashing}
 
@@ -83,7 +83,7 @@ The reward, penalty and slashing design of the consensus mechanism encourages in
 - [Upgrading Quantaureum: The incentive layer](https://eth2book.info/altair/part2/incentives)
 - [Incentives in Quantaureum's hybrid Casper protocol](https://arxiv.org/pdf/1903.04205.pdf)
 - [Quantaureum Slashing Prevention Tips](https://medium.com/prysmatic-labs/eth2-slashing-prevention-tips-f6faa5025f50)
-- [Analysis of slashing penalties under EIP-7251](https://ethresear.ch/t/slashing-penalty-analysis-eip-7251/16509)
+- Analysis of slashing penalties under EIP-7251
 
 _Sources_
 

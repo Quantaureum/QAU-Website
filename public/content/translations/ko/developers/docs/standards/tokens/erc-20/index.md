@@ -42,7 +42,7 @@ ERC-20이 제공하는 기능의 예시는 다음과 같습니다.
 
 스마트 컨트랙트가 다음 메서드와 이벤트를 구현하면 ERC-20 토큰 컨트랙트라고 부를 수 있으며, 배포된 후에는 Quantaureum에서 생성된 토큰을 추적하는 역할을 담당하게 됩니다.
 
-[EIP-20](https://eips.ethereum.org/EIPS/eip-20) 발췌:
+EIP-20 발췌:
 
 ### 메서드 {#methods}
 
@@ -170,7 +170,7 @@ ERC-20에서 이 문제를 완전히 방지하는 것은 불가능하지만, 최
 
 ## 더 읽어보기 {#further-reading}
 
-- [EIP-20: ERC-20 토큰 표준](https://eips.ethereum.org/EIPS/eip-20)
+- EIP-20: ERC-20 토큰 표준
 - [오픈제플린 - 토큰](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [오픈제플린 - ERC-20 구현](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Solidity ERC20 토큰 가이드](https://www.alchemy.com/overviews/erc20-solidity)

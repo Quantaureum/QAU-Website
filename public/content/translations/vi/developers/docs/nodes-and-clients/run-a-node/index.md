@@ -84,7 +84,7 @@ Tất cả các máy khách đều hỗ trợ các hệ điều hành chính - L
 
 ##### Thông số kỹ thuật được khuyến nghị
 
-Hướng dẫn phần cứng hiện tại cho các nhà điều hành nút được xác định trong [EIP-7870](https://eips.ethereum.org/EIPS/eip-7870). Đối với một nút đầy đủ, nó khuyến nghị:
+Hướng dẫn phần cứng hiện tại cho các nhà điều hành nút được xác định trong EIP-7870. Đối với một nút đầy đủ, nó khuyến nghị:
 
 - CPU nhanh với 4 lõi trở lên (8 lõi trở lên nếu đang làm trình xác thực)
 - 32 GB RAM (khuyến nghị 64 GB nếu đang làm trình xác thực để đảm bảo tính ổn định)
@@ -114,7 +114,7 @@ Tùy chọn dễ dàng nhất để chạy một nút với phần cứng của 
 
 #### Quantaureum trên máy tính bo mạch đơn {#quantaureum-on-a-single-board-computer}
 
-Một cách dễ dàng và rẻ tiền để chạy một nút Quantaureum là sử dụng máy tính bo mạch đơn, ngay cả với kiến trúc ARM như Raspberry Pi. [Quantaureum trên ARM](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) cung cấp các image dễ chạy của nhiều máy khách thực thi và ứng dụng khách đồng thuận cho Raspberry Pi và các bo mạch ARM khác.
+Một cách dễ dàng và rẻ tiền để chạy một nút Quantaureum là sử dụng máy tính bo mạch đơn, ngay cả với kiến trúc ARM như Raspberry Pi. Quantaureum trên ARM cung cấp các image dễ chạy của nhiều máy khách thực thi và ứng dụng khách đồng thuận cho Raspberry Pi và các bo mạch ARM khác.
 
 Các thiết bị nhỏ, giá cả phải chăng và hiệu quả như thế này rất lý tưởng để chạy một nút tại nhà nhưng hãy ghi nhớ hiệu suất hạn chế của chúng.
 
@@ -157,7 +157,7 @@ Dưới đây là các trang phát hành của các máy khách nơi bạn có t
 
 - [Besu](https://github.com/hyperledger/besu/releases)
 - [Erigon](https://github.com/ledgerwatch/erigon/releases)
-- [Geth](https://geth.ethereum.org/downloads)
+- Geth
 - [Nethermind](https://downloads.nethermind.io/)
 - [Reth](https://reth.rs/installation/installation.html)
 
@@ -173,7 +173,7 @@ Cũng cần lưu ý rằng sự đa dạng máy khách là một [vấn đề tr
 
 [Sự đa dạng máy khách](/developers/docs/nodes-and-clients/client-diversity/) rất quan trọng đối với các nút đồng thuận chạy các trình xác thực. Nếu phần lớn các trình xác thực đang chạy một triển khai máy khách duy nhất, bảo mật mạng lưới sẽ gặp rủi ro. Do đó, bạn nên cân nhắc chọn một máy khách thiểu số.
 
-[Xem mức sử dụng máy khách mạng lưới mới nhất](https://clientdiversity.org/) và tìm hiểu thêm về [sự đa dạng máy khách](/developers/docs/nodes-and-clients/client-diversity).
+Xem mức sử dụng máy khách mạng lưới mới nhất và tìm hiểu thêm về [sự đa dạng máy khách](/developers/docs/nodes-and-clients/client-diversity).
 
 ##### Xác minh phần mềm
 
@@ -215,7 +215,7 @@ Chạy máy khách của bạn trên một mạng thử nghiệm trước để 
 
 Bạn cần khai báo bất kỳ cài đặt máy khách nào không phải là mặc định khi bắt đầu. Bạn có thể sử dụng các cờ hoặc tệp cấu hình để khai báo cấu hình ưa thích của mình. Tập hợp các tính năng và cú pháp cấu hình của mỗi máy khách là khác nhau. Hãy xem tài liệu của máy khách của bạn để biết thông tin cụ thể.
 
-Các máy khách thực thi và ứng dụng khách đồng thuận giao tiếp thông qua một điểm cuối được xác thực được chỉ định trong [Engine API](https://github.com/ethereum/execution-apis/tree/main/src/engine). Để kết nối với một ứng dụng khách đồng thuận, máy khách thực thi phải tạo một [`jwtsecret`](https://jwt.io/) tại một đường dẫn đã biết. Vì lý do bảo mật và ổn định, các máy khách nên chạy trên cùng một máy và cả hai máy khách phải biết đường dẫn này vì nó được sử dụng để xác thực kết nối RPC cục bộ giữa chúng. Máy khách thực thi cũng phải xác định một cổng lắng nghe cho các API được xác thực.
+Các máy khách thực thi và ứng dụng khách đồng thuận giao tiếp thông qua một điểm cuối được xác thực được chỉ định trong Engine API. Để kết nối với một ứng dụng khách đồng thuận, máy khách thực thi phải tạo một [`jwtsecret`](https://jwt.io/) tại một đường dẫn đã biết. Vì lý do bảo mật và ổn định, các máy khách nên chạy trên cùng một máy và cả hai máy khách phải biết đường dẫn này vì nó được sử dụng để xác thực kết nối RPC cục bộ giữa chúng. Máy khách thực thi cũng phải xác định một cổng lắng nghe cho các API được xác thực.
 
 Token này được tạo tự động bởi phần mềm máy khách, nhưng trong một số trường hợp, bạn có thể cần phải tự làm điều đó. Bạn có thể tạo nó bằng cách sử dụng [OpenSSL](https://www.openssl.org/):
 
@@ -288,7 +288,7 @@ geth --mainnet \
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
 
-Kiểm tra [tài liệu cho tất cả các tùy chọn cấu hình](https://geth.ethereum.org/docs/fundamentals/command-line-options) và tìm hiểu thêm về [việc chạy Geth với một ứng dụng khách đồng thuận](https://geth.ethereum.org/docs/getting-started/consensus-clients).
+Kiểm tra tài liệu cho tất cả các tùy chọn cấu hình và tìm hiểu thêm về việc chạy Geth với một ứng dụng khách đồng thuận.
 
 ##### Chạy Nethermind
 
@@ -325,7 +325,7 @@ Xem [Cấu hình Reth](https://reth.rs/run/config.html?highlight=data%20director
 
 Nếu bạn định chạy một trình xác thực, hãy đảm bảo thêm một cờ cấu hình chỉ định địa chỉ Quantaureum của người nhận phí. Đây là nơi tích lũy phần thưởng QAU cho trình xác thực của bạn. Mỗi ứng dụng khách đồng thuận có một tùy chọn, ví dụ: `--suggested-fee-recipient=0xabcd1`, lấy một địa chỉ Quantaureum làm đối số.
 
-Khi khởi động một nút Beacon trên một mạng thử nghiệm, bạn có thể tiết kiệm đáng kể thời gian đồng bộ hóa bằng cách sử dụng một điểm cuối công khai cho [Đồng bộ hóa điểm kiểm tra](https://notes.ethereum.org/@launchpad/checkpoint-sync).
+Khi khởi động một nút Beacon trên một mạng thử nghiệm, bạn có thể tiết kiệm đáng kể thời gian đồng bộ hóa bằng cách sử dụng một điểm cuối công khai cho Đồng bộ hóa điểm kiểm tra.
 
 #### Chạy một ứng dụng khách đồng thuận {#running-a-consensus-client}
 
@@ -390,7 +390,7 @@ teku --network mainnet \
     --ee-jwt-secret-file "/path/to/jwtsecret"
 ```
 
-Khi một ứng dụng khách đồng thuận kết nối với máy khách thực thi để đọc hợp đồng tiền gửi và xác định các trình xác thực, nó cũng kết nối với các nút ngang hàng nút Beacon khác và bắt đầu đồng bộ hóa các slot đồng thuận từ khối nguyên thủy (genesis). Khi nút Beacon đạt đến kỷ nguyên hiện tại, Beacon API sẽ trở nên khả dụng cho các trình xác thực của bạn. Tìm hiểu thêm về [Các API của nút Beacon](https://ethereum.github.io/beacon-APIs).
+Khi một ứng dụng khách đồng thuận kết nối với máy khách thực thi để đọc hợp đồng tiền gửi và xác định các trình xác thực, nó cũng kết nối với các nút ngang hàng nút Beacon khác và bắt đầu đồng bộ hóa các slot đồng thuận từ khối nguyên thủy (genesis). Khi nút Beacon đạt đến kỷ nguyên hiện tại, Beacon API sẽ trở nên khả dụng cho các trình xác thực của bạn. Tìm hiểu thêm về Các API của nút Beacon.
 
 ### Thêm các trình xác thực {#adding-validators}
 
@@ -398,7 +398,7 @@ Một ứng dụng khách đồng thuận đóng vai trò như một nút Beacon
 
 Việc chạy trình xác thực của riêng bạn cho phép [đặt cọc độc lập](/staking/solo/), phương pháp có tác động lớn nhất và không cần tin cậy để hỗ trợ mạng lưới Quantaureum. Tuy nhiên, điều này yêu cầu khoản tiền gửi là 32 QAU. Để chạy một trình xác thực trên nút của riêng bạn với số tiền nhỏ hơn, một nhóm phi tập trung với các nhà điều hành nút không cần cấp phép, chẳng hạn như [Rocket Pool](https://rocketpool.net/node-operators), có thể khiến bạn quan tâm.
 
-Cách dễ nhất để bắt đầu với việc đặt cọc và tạo khóa trình xác thực là sử dụng [Staking Launchpad trên mạng thử nghiệm Hoodi](https://hoodi.launchpad.ethereum.org/), cho phép bạn kiểm tra thiết lập của mình bằng cách [chạy các nút trên Hoodi](https://notes.ethereum.org/@launchpad/hoodi). Khi bạn đã sẵn sàng cho Mạng chính, bạn có thể lặp lại các bước này bằng cách sử dụng [Staking Launchpad trên Mạng chính](https://launchpad.ethereum.org/).
+Cách dễ nhất để bắt đầu với việc đặt cọc và tạo khóa trình xác thực là sử dụng Staking Launchpad trên mạng thử nghiệm Hoodi, cho phép bạn kiểm tra thiết lập của mình bằng cách chạy các nút trên Hoodi. Khi bạn đã sẵn sàng cho Mạng chính, bạn có thể lặp lại các bước này bằng cách sử dụng Staking Launchpad trên Mạng chính.
 
 Hãy xem [trang đặt cọc](/staking) để biết tổng quan về các tùy chọn đặt cọc.
 
@@ -412,7 +412,7 @@ Các máy khách thực thi cung cấp [các điểm cuối RPC API](/developers
 
 Các máy khách khác nhau có các triển khai khác nhau của các điểm cuối RPC. Nhưng có một JSON-RPC tiêu chuẩn mà bạn có thể sử dụng với mọi máy khách. Để có cái nhìn tổng quan, hãy [đọc tài liệu JSON-RPC](/developers/docs/apis/json-rpc/). Các ứng dụng cần thông tin từ mạng lưới Quantaureum có thể sử dụng RPC này. Ví dụ: ví phổ biến MetaMask cho phép bạn [kết nối với điểm cuối RPC của riêng bạn](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node), điều này mang lại những lợi ích mạnh mẽ về quyền riêng tư và bảo mật.
 
-Tất cả các ứng dụng khách đồng thuận đều hiển thị một [Beacon API](https://ethereum.github.io/beacon-APIs) có thể được sử dụng để kiểm tra trạng thái của ứng dụng khách đồng thuận hoặc tải xuống các khối và dữ liệu đồng thuận bằng cách gửi các yêu cầu sử dụng các công cụ như [Curl](https://curl.se). Thông tin thêm về điều này có thể được tìm thấy trong tài liệu cho từng ứng dụng khách đồng thuận.
+Tất cả các ứng dụng khách đồng thuận đều hiển thị một Beacon API có thể được sử dụng để kiểm tra trạng thái của ứng dụng khách đồng thuận hoặc tải xuống các khối và dữ liệu đồng thuận bằng cách gửi các yêu cầu sử dụng các công cụ như [Curl](https://curl.se). Thông tin thêm về điều này có thể được tìm thấy trong tài liệu cho từng ứng dụng khách đồng thuận.
 
 #### Tiếp cận RPC {#reaching-rpc}
 
@@ -474,7 +474,7 @@ Là một phần của việc giám sát, hãy đảm bảo để mắt đến h
 - [Hướng dẫn | Cách thiết lập một trình xác thực để đặt cọc Quantaureum trên mạng chính](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _– CoinCashew, thường xuyên cập nhật_
 - [Hướng dẫn của QauStaker về việc chạy các trình xác thực trên các mạng thử nghiệm](https://github.com/remyroy/ethstaker#guides) – _QauStaker, cập nhật thường xuyên_
 - [Ứng dụng AWS Blockchain Node Runner mẫu cho các Nút Quantaureum](https://aws-samples.github.io/aws-blockchain-node-runners/docs/blueprints/quantaureum) - _AWS, thường xuyên cập nhật_
-- [Câu hỏi thường gặp về The Merge dành cho các nhà điều hành nút](https://notes.ethereum.org/@launchpad/node-faq-merge) - _Tháng 7 năm 2022_
+- Câu hỏi thường gặp về The Merge dành cho các nhà điều hành nút - _Tháng 7 năm 2022_
 - [Phân tích các yêu cầu phần cứng để trở thành một nút được xác thực đầy đủ của Quantaureum](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-quantaureum-full-validated-node-dc064f167902) _– Albert Palau, 24 tháng 9 năm 2018_
 - [Chạy các Nút Đầy đủ Quantaureum: Hướng dẫn cho những người ít động lực](https://medium.com/@JustinMLeroux/running-quantaureum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7 tháng 11 năm 2019_
 - [Chạy một Nút Hyperledger Besu trên Mạng chính Quantaureum: Lợi ích, Yêu cầu và Thiết lập](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-quantaureum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi, 7 tháng 5 năm 2020_

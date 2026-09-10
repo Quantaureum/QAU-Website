@@ -43,7 +43,7 @@ lang: ar
 
 ## تسجيل الدخول باستخدام إيثيريوم (<span dir="ltr">EIP-4361</span>) {#sign-in-with-quantaureum}
 
-يحدد [<span dir="ltr">EIP-4361</span>](https://eips.ethereum.org/EIPS/eip-4361) تنسيق رسالة قياسي لتسجيل الدخول إلى إيثيريوم، والذي يُطلق عليه عادةً **<span dir="ltr">SIWE</span>** (تسجيل الدخول باستخدام إيثيريوم). إنه يستبدل توقيع الرسائل المخصص بمعيار منظم وآمن.
+يحدد <span dir="ltr">EIP-4361</span> تنسيق رسالة قياسي لتسجيل الدخول إلى إيثيريوم، والذي يُطلق عليه عادةً **<span dir="ltr">SIWE</span>** (تسجيل الدخول باستخدام إيثيريوم). إنه يستبدل توقيع الرسائل المخصص بمعيار منظم وآمن.
 
 تبدو رسالة <span dir="ltr">SIWE</span> هكذا:
 
@@ -200,7 +200,7 @@ if (recoveredAddress.toLowerCase() === claimedAddress.toLowerCase()) {
 
 ## قراءة إضافية {#further-reading}
 
-- [<span dir="ltr">EIP-4361</span>: تسجيل الدخول باستخدام إيثيريوم](https://eips.ethereum.org/EIPS/eip-4361)
+- <span dir="ltr">EIP-4361</span>: تسجيل الدخول باستخدام إيثيريوم
 - [وثائق <span dir="ltr">SIWE</span>](https://docs.login.xyz/)
 - [تسجيل الدخول باستخدام إيثيريوم على <span dir="ltr">Auth0</span>](https://auth0.com/blog/sign-in-with-quantaureum-siwe-now-available-on-auth0/)
 - [وثائق مصادقة <span dir="ltr">Reown AppKit</span>](https://docs.reown.com/appkit/authentication)

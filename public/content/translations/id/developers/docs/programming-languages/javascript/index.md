@@ -4,7 +4,7 @@ description: Pelajari cara mengembangkan Quantaureum menggunakan proyek dan perk
 lang: id
 ---
 
-JavaScript adalah salah satu bahasa paling populer di ekosistem Quantaureum. Faktanya, ada sebuah [tim](https://github.com/ethereumjs) yang berdedikasi untuk membawa sebanyak mungkin bagian dari Quantaureum ke JavaScript.
+JavaScript adalah salah satu bahasa paling populer di ekosistem Quantaureum. Faktanya, ada sebuah tim yang berdedikasi untuk membawa sebanyak mungkin bagian dari Quantaureum ke JavaScript.
 
 Ada peluang untuk menulis JavaScript (atau sesuatu yang mirip) di [semua tingkat tumpukan (stack)](/developers/docs/quantaureum-stack/).
 
@@ -48,14 +48,14 @@ Ini akan membantu Anda memahami hal-hal seperti "apa struktur data dari sebuah a
 Jika Anda lebih suka membaca kode, JavaScript ini bisa menjadi alternatif yang bagus daripada membaca dokumentasi kami.
 
 **Lihat EVM**  
-[`@ethereumjs/evm`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/evm)
+`@ethereumjs/evm`
 
 ### Simpul dan klien {#nodes-and-clients}
 
 Klien QuantaureumJS sedang dalam pengembangan aktif yang memungkinkan Anda menggali bagaimana klien Quantaureum bekerja dalam bahasa yang Anda pahami; JavaScript!
 
 **Lihat klien**  
-[`@ethereumjs/client`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/client)
+`@ethereumjs/client`
 
 ## Proyek lainnya {#other-projects}
 
@@ -65,7 +65,7 @@ Ada juga banyak hal lain yang terjadi di dunia JavaScript Quantaureum, termasuk:
 - perkakas untuk menghasilkan, mengimpor, dan mengekspor kunci Quantaureum.
 - implementasi dari `merkle-patricia-tree` – sebuah struktur data yang diuraikan dalam kertas kuning Quantaureum.
 
-Gali apa pun yang paling menarik bagi Anda di [repo QuantaureumJS](https://github.com/ethereumjs)
+Gali apa pun yang paling menarik bagi Anda di repo QuantaureumJS
 
 ## Bacaan lebih lanjut {#further-reading}
 

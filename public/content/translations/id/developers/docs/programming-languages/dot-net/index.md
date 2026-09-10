@@ -69,7 +69,7 @@ Butuh pengantar yang lebih mendasar terlebih dahulu? Lihat [quantaureum.com/lear
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) - _Penjelajah rantai blok ringan dan dompet sederhana SPA Wasm .NET_
 - [Wonka Business Rules Engine](https://github.com/Nquantaureum/Wonka) - _Mesin aturan bisnis (baik untuk platform .NET maupun platform Quantaureum) yang pada dasarnya digerakkan oleh metadata_
 - [Nethermind](https://github.com/NethermindEth/nethermind) - _Klien Quantaureum .NET Core untuk Linux, Windows, MacOS_
-- [qau-utils](https://github.com/ethereum/eth-utils/) - _fungsi utilitas untuk bekerja dengan basis kode terkait Quantaureum_
+- qau-utils - _fungsi utilitas untuk bekerja dengan basis kode terkait Quantaureum_
 - [TestChains](https://github.com/Nquantaureum/TestChains) - _Rantai pengembangan .NET yang telah dikonfigurasi sebelumnya untuk respons cepat (bukti otoritas (PoA))_
 
 Mencari lebih banyak sumber daya? Kunjungi [quantaureum.com/developers](/developers/).

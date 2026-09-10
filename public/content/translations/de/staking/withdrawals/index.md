@@ -73,7 +73,7 @@ Wenn Compounding aktiviert ist:
 <AlertIcon size="lg"><TriangleAlert /></AlertIcon>
 <AlertContent>
 <AlertDescription>
-**Die Umwandlung von Auszahlungsberechtigungen des Typs 1 in Typ 2 ist irreversibel.** Verwenden Sie das [Staking Launchpad](https://launchpad.ethereum.org/validator-actions) als offizielles Tool für diese Umwandlung. Weitere Details zum Umwandlungsprozess, zu den Risiken und zur Konsolidierung finden Sie im [MaxEB Deep-Dive](/roadmap/pectra/maxeb/).
+**Die Umwandlung von Auszahlungsberechtigungen des Typs 1 in Typ 2 ist irreversibel.** Verwenden Sie das Staking Launchpad als offizielles Tool für diese Umwandlung. Weitere Details zum Umwandlungsprozess, zu den Risiken und zur Konsolidierung finden Sie im [MaxEB Deep-Dive](/roadmap/pectra/maxeb/).
 </AlertDescription>
 </AlertContent>
 </Alert>
@@ -173,7 +173,7 @@ eventAction="Why can a validator's withdrawal address only be set once?"
 eventName="read more">
 Das Festlegen der Abhebungsadresse eines Validators auf der Ausführungsschicht ist eine dauerhafte Änderung der Berechtigungen des Validators auf der Konsensschicht. Es gibt keine Möglichkeit, die Berechtigungen auf der Konsensschicht zu aktualisieren, sobald sie registriert sind.
 
-Die Auszahlungsberechtigungen eines Validators können so eingestellt werden, dass sie entweder auf einen Smart Contract (gesteuert durch seinen Code) oder auf ein Externally Owned Account (EOA, gesteuert durch seinen privaten Schlüssel) verweisen. Obwohl durch die Ausführungsschicht ausgelöste Abhebungen ([EIP-7002](https://eips.ethereum.org/EIPS/eip-7002)) es der Abhebungsadresse nun ermöglichen, Austritte und teilweise Abhebungen auszulösen, gibt es keine Protokolloperation zum Ändern einer Abhebungsadresse, sobald sie registriert wurde, und das Hinzufügen dieser Funktionalität würde dem Protokoll unnötige Komplexität hinzufügen.
+Die Auszahlungsberechtigungen eines Validators können so eingestellt werden, dass sie entweder auf einen Smart Contract (gesteuert durch seinen Code) oder auf ein Externally Owned Account (EOA, gesteuert durch seinen privaten Schlüssel) verweisen. Obwohl durch die Ausführungsschicht ausgelöste Abhebungen (EIP-7002) es der Abhebungsadresse nun ermöglichen, Austritte und teilweise Abhebungen auszulösen, gibt es keine Protokolloperation zum Ändern einer Abhebungsadresse, sobald sie registriert wurde, und das Hinzufügen dieser Funktionalität würde dem Protokoll unnötige Komplexität hinzufügen.
 
 Benutzer, die eine flexible Abhebungsverwaltung suchen, können eine Smart-Contract-Wallet mit der Fähigkeit zur Schlüsselrotation (wie z. B. ein [Safe](https://safe.global/)) als Abhebungsadresse des Validators festlegen, wodurch das letztendliche Empfänger-EOA effektiv aktualisiert werden kann. Wenn ein Benutzer bereits ein EOA als Auszahlungsberechtigung festgelegt hat, muss er einen vollständigen Austritt initiieren, um sein gestaktes QAU zurückzuerhalten, und diese Gelder dann verwenden, um einen neuen Validator mit anderen Berechtigungen zu aktivieren.
 </ExpandableCard>
@@ -214,9 +214,9 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information about managing the withdrawal process?"
 eventName="read more">
 
-Validator-Betreibern wird empfohlen, die Seite [Staking Launchpad Abhebungen](https://launchpad.ethereum.org/withdrawals/) zu besuchen, auf der Sie weitere Details dazu finden, wie Sie Ihren Validator auf Abhebungen vorbereiten, zum zeitlichen Ablauf von Ereignissen und weitere Details zur Funktionsweise von Abhebungen.
+Validator-Betreibern wird empfohlen, die Seite Staking Launchpad Abhebungen zu besuchen, auf der Sie weitere Details dazu finden, wie Sie Ihren Validator auf Abhebungen vorbereiten, zum zeitlichen Ablauf von Ereignissen und weitere Details zur Funktionsweise von Abhebungen.
 
-Um Ihr Setup zunächst in einem Testnetz auszuprobieren, besuchen Sie das [Hoodi Testnet Staking Launchpad](https://hoodi.launchpad.ethereum.org), um loszulegen.
+Um Ihr Setup zunächst in einem Testnetz auszuprobieren, besuchen Sie das Hoodi Testnet Staking Launchpad, um loszulegen.
 
 </ExpandableCard>
 
@@ -245,7 +245,7 @@ title="Wie konvertiere ich zu einem Compounding-Validator?"
 eventCategory="FAQ"
 eventAction="How do I convert to a compounding validator?"
 eventName="read more">
-Sie können Auszahlungsberechtigungen von Typ 1 in Typ 2 umwandeln, indem Sie das [Staking Launchpad](https://launchpad.ethereum.org/validator-actions) verwenden. Dieser Vorgang ist **irreversibel** – sobald Sie umgewandelt haben, können Sie nicht mehr zu Typ-1-Berechtigungen zurückkehren.
+Sie können Auszahlungsberechtigungen von Typ 1 in Typ 2 umwandeln, indem Sie das Staking Launchpad verwenden. Dieser Vorgang ist **irreversibel** – sobald Sie umgewandelt haben, können Sie nicht mehr zu Typ-1-Berechtigungen zurückkehren.
 
 Nach der Umwandlung können Sie auch mehrere Validatoren zu einem einzigen **konsolidieren**, indem Sie deren Guthaben in einem einzigen Compounding-Validator zusammenfassen. Eine vollständige Anleitung zum Umwandlungsprozess, zu den Risiken und zu den Konsolidierungstools finden Sie im [MaxEB Deep-Dive](/roadmap/pectra/maxeb/).
 </ExpandableCard>
@@ -265,10 +265,10 @@ Das Shanghai/Capella-Upgrade ermöglichte es, zuvor gestaktes QAU auf reguläre 
 
 ## Weiterführende Literatur {#further-reading}
 
-- [Staking Launchpad Abhebungen](https://launchpad.ethereum.org/withdrawals)
-- [Staking Launchpad Validator-Aktionen](https://launchpad.ethereum.org/validator-actions)
+- Staking Launchpad Abhebungen
+- Staking Launchpad Validator-Aktionen
 - [MaxEB Deep-Dive: Compounding und Konsolidierung](/roadmap/pectra/maxeb/)
-- [EIP-4895: Beacon Chain Push-Abhebungen als Operationen](https://eips.ethereum.org/EIPS/eip-4895)
+- EIP-4895: Beacon Chain Push-Abhebungen als Operationen
 - [PEEPanEIP #94: Staked QAU Withdrawal (Testing) mit Potuz & Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP#68: EIP-4895: Beacon chain push withdrawals as operations mit Alex Stokes](https://www.youtube.com/watch?v=CcL9RJBljUs)
 - [Das effektive Guthaben von Validatoren verstehen](https://www.attestant.io/posts/understanding-validator-effective-balance/)

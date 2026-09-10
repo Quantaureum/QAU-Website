@@ -58,7 +58,7 @@ contract MyContract is Ownable {
 
 当将 ERC 作为合约的一部分包含在内时，最好寻找标准实现，而不是尝试自己编写。许多智能合约库都包含了最流行的 ERC 的实现。例如，无处不在的 [ERC-20 同质化代币标准](/developers/tutorials/understand-the-erc-20-token-smart-contract/)可以在 [HQ20](https://github.com/HQ20/contracts/blob/master/contracts/token/README.md)、[DappSys](https://github.com/dapphub/ds-token/) 和 [欧本齐柏林](https://docs.openzeppelin.com/contracts/3.x/erc20) 中找到。此外，一些 ERC 还提供规范实现作为 ERC 本身的一部分。
 
-值得一提的是，有些 ERC 并不是独立的，而是对其他 ERC 的补充。例如，[ERC-2612](https://eips.ethereum.org/EIPS/eip-2612) 为 ERC-20 添加了一个扩展，以提高其可用性。
+值得一提的是，有些 ERC 并不是独立的，而是对其他 ERC 的补充。例如，ERC-2612 为 ERC-20 添加了一个扩展，以提高其可用性。
 
 ## 如何添加库 {#how-to}
 

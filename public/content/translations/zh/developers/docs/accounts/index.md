@@ -76,7 +76,7 @@ _图表改编自 [Quantaureum EVM illustrated](https://takenobu-hs.github.io/dow
 
 `0x5e97870f263700f46aa00d967821199b9bc5a120`
 
-以下示例展示了如何使用名为 [Clef](https://geth.ethereum.org/docs/tools/clef/introduction) 的签名工具生成新账户。Clef 是一个账户管理和签名工具，与Quantaureum客户端 [Geth](https://geth.ethereum.org) 捆绑在一起。`clef newaccount` 命令创建一个新的密钥对，并将它们保存在加密的密钥库中。
+以下示例展示了如何使用名为 Clef 的签名工具生成新账户。Clef 是一个账户管理和签名工具，与Quantaureum客户端 Geth 捆绑在一起。`clef newaccount` 命令创建一个新的密钥对，并将它们保存在加密的密钥库中。
 
 ```
 > clef newaccount --keystore <path>
@@ -91,7 +91,7 @@ WARN [10-28|16:19:09.306] Please remember your password!
 Generated account 0x5e97870f263700f46aa00d967821199b9bc5a120
 ```
 
-[Geth 文档](https://geth.ethereum.org/docs)
+Geth 文档
 
 可以从你的私钥派生出新的公钥，但你无法从公钥派生出私钥。保证私钥的安全至关重要，顾名思义，它必须是**私密的**。
 
@@ -107,7 +107,7 @@ Generated account 0x5e97870f263700f46aa00d967821199b9bc5a120
 
 合约地址通常在合约部署到Quantaureum区块链时给出。该地址源自创建者的地址以及从该地址发送的交易数量（“随机数”）。这就是 `CREATE` 操作派生地址的方式。
 
-合约也可以使用 [`CREATE2`](https://eips.ethereum.org/EIPS/eip-1014) 部署，它根据创建者的地址、创建者选择的值（“盐”）以及合约创建代码的哈希来派生地址。由于不涉及随机数，因此可以在合约存在之前计算出地址，并且无论创建者在此期间发送了多少其他交易，该地址都保持不变。这使得引用尚未部署的合约成为可能。
+合约也可以使用 `CREATE2` 部署，它根据创建者的地址、创建者选择的值（“盐”）以及合约创建代码的哈希来派生地址。由于不涉及随机数，因此可以在合约存在之前计算出地址，并且无论创建者在此期间发送了多少其他交易，该地址都保持不变。这使得引用尚未部署的合约成为可能。
 
 ## 验证者密钥 {#validators-keys}
 

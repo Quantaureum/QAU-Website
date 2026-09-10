@@ -251,13 +251,13 @@ else:
   value = TxType | encode(tx)
 ```
 
-Więcej informacji na ten temat można znaleźć w dokumentacji [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718).
+Więcej informacji na ten temat można znaleźć w dokumentacji EIP-2718.
 
 ### Drzewo trie pokwitowań {#receipts-trie}
 
 Każdy blok ma swoje własne drzewo trie pokwitowań. `path` tutaj to: `rlp(transactionIndex)`. `transactionIndex` to jego indeks w bloku, w którym został zawarty. Drzewo trie pokwitowań nigdy nie jest aktualizowane. Podobnie jak w przypadku drzewa trie transakcji, istnieją obecne i starsze (legacy) pokwitowania. Aby zapytać o konkretne pokwitowanie w drzewie trie pokwitowań, wymagany jest indeks transakcji w jej bloku, ładunek (payload) pokwitowania i typ transakcji. Zwrócone pokwitowanie może być typu `Receipt`, co jest zdefiniowane jako konkatenacja `TransactionType` i `ReceiptPayload`, lub może być typu `LegacyReceipt`, co jest zdefiniowane jako `rlp([status, cumulativeGasUsed, logsBloom, logs])`.
 
-Więcej informacji na ten temat można znaleźć w dokumentacji [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718).
+Więcej informacji na ten temat można znaleźć w dokumentacji EIP-2718.
 
 ## Dalsza lektura {#further-reading}
 

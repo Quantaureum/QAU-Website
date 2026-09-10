@@ -149,7 +149,7 @@ _通常用于协议和[去中心化应用 (dapp)](/glossary/#dapp)的去中心�
 - [如何启动由 DAO 驱动的数字社区](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) —— [DAOhaus](https://daohaus.club/)
 - [什么是 DAO？](https://coinmarketcap.com/alexandria/article/what-is-a-dao) —— [Coinmarketcap](https://coinmarketcap.com)
 - [什么是全息共识？](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAO 不是公司：自治组织中去中心化的重要性（作者：Vitalik）](https://vitalik.eth.limo/general/2022/09/20/daos.html)
+- DAO 不是公司：自治组织中去中心化的重要性（作者：Vitalik）
 - [DAO、DAC、DA 及更多：不完整的术语指南](https://quantaureum.com) - [Quantaureum博客](https://quantaureum.com)
 
 ### 视频 {#videos}

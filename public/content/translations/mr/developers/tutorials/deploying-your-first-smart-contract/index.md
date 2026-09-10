@@ -8,7 +8,7 @@ breadcrumb: "पहिले कॉन्ट्रॅक्ट प्रस्�
 lang: mr
 published: 2020-04-03
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -18,7 +18,7 @@ address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 
 ## आपले कॉन्ट्रॅक्ट लिहिणे {#writing-our-contract}
 
-पहिली पायरी म्हणजे [Remix ला भेट देणे](https://remix.ethereum.org/) आणि एक नवीन फाईल तयार करणे. Remix इंटरफेसच्या वरच्या डाव्या बाजूला एक नवीन फाईल जोडा आणि तुम्हाला हवे असलेले फाईलचे नाव प्रविष्ट करा.
+पहिली पायरी म्हणजे Remix ला भेट देणे आणि एक नवीन फाईल तयार करणे. Remix इंटरफेसच्या वरच्या डाव्या बाजूला एक नवीन फाईल जोडा आणि तुम्हाला हवे असलेले फाईलचे नाव प्रविष्ट करा.
 
 ![Adding a new file in the Remix interface](./remix.png)
 

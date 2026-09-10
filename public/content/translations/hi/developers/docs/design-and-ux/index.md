@@ -16,7 +16,7 @@ lang: hi
 
 - [Web3 को अधिक UX शोधकर्ताओं और डिज़ाइनरों की आवश्यकता है](https://blog.akasha.org/akasha-conversations-9-web3-needs-more-ux-researchers-and-designers) - वर्तमान डिज़ाइन परिपक्वता का अवलोकन
 - [Web3 में UX रिसर्च के लिए एक सरल मार्गदर्शिका](https://uxplanet.org/a-complete-guide-to-ux-research-for-web-3-0-products-d6bead20ebb1) - रिसर्च कैसे करें, इसकी सरल मार्गदर्शिका
-- [Web3 में UX निर्णयों के लिए दृष्टिकोण कैसे अपनाएं](https://archive.devcon.org/archive/watch/6/data-empathy-how-to-approach-ux-decisions-in-web3/) - मात्रात्मक और गुणात्मक रिसर्च का संक्षिप्त अवलोकन और दोनों के बीच अंतर (वीडियो, 6 मिनट)
+- Web3 में UX निर्णयों के लिए दृष्टिकोण कैसे अपनाएं - मात्रात्मक और गुणात्मक रिसर्च का संक्षिप्त अवलोकन और दोनों के बीच अंतर (वीडियो, 6 मिनट)
 - [Web3 में एक UX शोधकर्ता होना](https://medium.com/@georgia.rakusen/what-its-like-being-a-user-researcher-in-web3-6a4bcc096849) - Web3 में एक UX शोधकर्ता होने का व्यक्तिगत दृष्टिकोण
 
 ## Web3 में रिसर्च अध्ययन {#research-in-web3}
@@ -38,7 +38,7 @@ lang: hi
 | <Tag status="error">DeFi</Tag>                  | [कवरेज पूल](https://github.com/threshold-network/UX-User-Research/tree/main/Keep%20Coverage%20Pool)                                                                           |
 | <Tag status="error">DeFi</Tag>                  | [कॉन्सेन्सिस: DeFi यूज़र रिसर्च रिपोर्ट 2022](https://cdn2.hubspot.net/hubfs/4795067/ConsenSys%20Codefi-Defi%20User%20ResearchReport.pdf)                                            |
 | <Tag variant="solid">मेटावर्स</Tag>             | [मेटावर्स: यूज़र रिसर्च रिपोर्ट](https://www.politico.com/f/?id=00000187-7685-d820-a7e7-7e85d1420000)                                                                             |
-| <Tag variant="solid">मेटावर्स</Tag>             | [गोइंग ऑन सफारी: मेटावर्स में यूज़र्स पर रिसर्च करना](https://archive.devcon.org/archive/watch/6/going-on-safari-researching-users-in-the-metaverse/?tab=YouTube) (वीडियो, 27 मिनट)  |
+| <Tag variant="solid">मेटावर्स</Tag>             | गोइंग ऑन सफारी: मेटावर्स में यूज़र्स पर रिसर्च करना (वीडियो, 27 मिनट)  |
 
 ## Web3 के लिए डिज़ाइन {#design-for-web3}
 

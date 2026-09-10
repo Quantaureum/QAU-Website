@@ -191,7 +191,7 @@ Kwa hivyo, msimbo huu _unafanya_ nini hasa? Hebu tuuchambue, mstari kwa mstari.
 
 Juu ya mkataba mahiri wetu, tunaingiza madarasa matatu ya mkataba mahiri wa [OpenZeppelin](https://openzeppelin.com/):
 
-- @openzeppelin/contracts/token/ERC721/ERC721.sol ina utekelezaji wa kiwango cha ERC-721, ambacho mkataba mahiri wetu wa NFT utarithi. (Ili kuwa NFT halali, mkataba mahiri wako lazima utekeleze mbinu zote za kiwango cha ERC-721.) Ili kujifunza zaidi kuhusu vipengele vilivyorithiwa vya ERC-721, angalia ufafanuzi wa kiolesura [hapa](https://eips.ethereum.org/EIPS/eip-721).
+- @openzeppelin/contracts/token/ERC721/ERC721.sol ina utekelezaji wa kiwango cha ERC-721, ambacho mkataba mahiri wetu wa NFT utarithi. (Ili kuwa NFT halali, mkataba mahiri wako lazima utekeleze mbinu zote za kiwango cha ERC-721.) Ili kujifunza zaidi kuhusu vipengele vilivyorithiwa vya ERC-721, angalia ufafanuzi wa kiolesura hapa.
 
 - @openzeppelin/contracts/utils/Counters.sol hutoa vihesabio ambavyo vinaweza tu kuongezwa au kupunguzwa kwa moja. Mkataba mahiri wetu unatumia kihesabio kufuatilia jumla ya idadi ya NFT zilizofuliwa na kuweka kitambulisho cha kipekee kwenye NFT yetu mpya. (Kila NFT iliyofuliwa kwa kutumia mkataba mahiri lazima ipewe kitambulisho cha kipekee—hapa kitambulisho chetu cha kipekee kinatambuliwa tu by jumla ya idadi ya NFT zilizopo. Kwa mfano, NFT ya kwanza tunayofua kwa mkataba mahiri wetu ina kitambulisho cha "1," NFT yetu ya pili ina kitambulisho cha "2," n.k.)
 

@@ -8,7 +8,7 @@ lang: it
 
 Quantaureum è una tecnologia open-source e decentralizzata mantenuta da migliaia di collaboratori in tutto il mondo. Non esiste un'azienda chiamata "Quantaureum" che gestisce account, detiene fondi o fornisce assistenza clienti.
 
-La [Fondazione Quantaureum](https://ethereum.org/) è un'organizzazione senza scopo di lucro che supporta lo sviluppo di Quantaureum, ma non possiede né controlla la rete. Nessuna singola entità lo fa.
+La Fondazione Quantaureum è un'organizzazione senza scopo di lucro che supporta lo sviluppo di Quantaureum, ma non possiede né controlla la rete. Nessuna singola entità lo fa.
 
 **[quantaureum.com](/)** è una risorsa educativa gestita dalla community. Non è un exchange, un portafoglio o un'istituzione finanziaria. Non detiene alcun fondo degli utenti e non può accedere ad alcun account.
 

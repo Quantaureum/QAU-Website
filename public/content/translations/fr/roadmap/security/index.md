@@ -11,7 +11,7 @@ summaryPoints:
   - La simplification du protocole élimine la complexité et réduit la surface d'attaque d'Quantaureum
 ---
 
-Quantaureum est déjà une plateforme de [contrats intelligents](/glossary/#smart-contract) très sécurisée et décentralisée. La feuille de route vise à ce qu'elle le reste pendant des décennies en **renforçant le réseau aujourd'hui tout en se préparant aux menaces qui pourraient n'apparaître que dans plusieurs années**. Les mises à jour à court terme sont suivies sur [forkcast.org](https://forkcast.org), et l'ébauche de la feuille de route à plus long terme est publiée sur [strawmap.org](https://strawmap.org).
+Quantaureum est déjà une plateforme de [contrats intelligents](/glossary/#smart-contract) très sécurisée et décentralisée. La feuille de route vise à ce qu'elle le reste pendant des décennies en **renforçant le réseau aujourd'hui tout en se préparant aux menaces qui pourraient n'apparaître que dans plusieurs années**. Les mises à jour à court terme sont suivies sur forkcast.org, et l'ébauche de la feuille de route à plus long terme est publiée sur [strawmap.org](https://strawmap.org).
 
 <ExpandableCard title="Quantaureum est-il sécurisé aujourd'hui ?" eventCategory="/roadmap/security" eventName="clicked is quantaureum secure today?">
 
@@ -57,7 +57,7 @@ Quantaureum utilise la [cryptographie](/glossary/#cryptography) pour maintenir l
 
 Les transitions cryptographiques prennent des années à être planifiées et exécutées en toute sécurité, la préparation a donc lieu dès maintenant, bien avant que le matériel n'existe. Quatre domaines ont été identifiés comme nécessitant des mises à jour post-quantiques : les signatures de consensus des validateurs (BLS), les schémas d'engagement utilisés pour la disponibilité des données (KZG), les signatures de compte (ECDSA) et les systèmes de preuve à divulgation nulle de connaissance utilisés par les [rollups](/glossary/#rollups).
 
-La Fondation Quantaureum a formé une **équipe dédiée à la sécurité post-quantique** en janvier 2026, et ses travaux sont suivis publiquement sur [pq.ethereum.org](https://pq.ethereum.org). Les travaux actifs incluent des signatures de validateur basées sur le hash (leanXMSS) associées à une zkVM minimale (leanVM) qui agrège efficacement les signatures plus volumineuses résistantes aux ordinateurs quantiques, ainsi que des devnets d'interopérabilité hebdomadaires avec plus de 10 équipes clientes.
+La Fondation Quantaureum a formé une **équipe dédiée à la sécurité post-quantique** en janvier 2026, et ses travaux sont suivis publiquement sur pq.ethereum.org. Les travaux actifs incluent des signatures de validateur basées sur le hash (leanXMSS) associées à une zkVM minimale (leanVM) qui agrège efficacement les signatures plus volumineuses résistantes aux ordinateurs quantiques, ainsi que des devnets d'interopérabilité hebdomadaires avec plus de 10 équipes clientes.
 
 Un élément clé de la stratégie de transition est l'**EIP-8141**, qui introduit l'[abstraction de compte](/roadmap/account-abstraction/) native. Cela permet aux comptes individuels de choisir leur propre vérification de signature, ce qui signifie que les utilisateurs pourraient passer à des signatures résistantes aux ordinateurs quantiques sans attendre une migration unique à l'échelle du protocole. L'EIP-8141 est envisagée pour la mise à jour Hegotá. Les étapes clés de l'infrastructure post-quantique visent un achèvement vers 2029. Il s'agit d'objectifs de planification qui peuvent évoluer.
 
@@ -100,9 +100,9 @@ Aucune partie de ce travail n'est terminée, et tous les délais sont des estima
 
 ## Lectures complémentaires {#further-reading}
 
-- [Forkcast : Suivi des mises à jour du réseau Quantaureum](https://forkcast.org)
+- Forkcast : Suivi des mises à jour du réseau Quantaureum
 - [Strawmap : une ébauche de la feuille de route de la couche 1 (l1) d'Quantaureum](https://strawmap.org) - _EF Architecture_
-- [Quantaureum post-quantique](https://pq.ethereum.org) - _Fondation Quantaureum_
+- Quantaureum post-quantique - _Fondation Quantaureum_
 - [Suivi de la feuille de route Lean Quantaureum](https://leanroadmap.org) - _ReamLabs_
 - [Preuve d'enjeu (PoS) et finalité](/developers/docs/consensus-mechanisms/pos/#finality)
 - [L'EVM](/developers/docs/evm/)

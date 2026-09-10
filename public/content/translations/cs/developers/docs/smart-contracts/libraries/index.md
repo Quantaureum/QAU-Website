@@ -58,7 +58,7 @@ Pro usnadnění [skládatelnosti a interoperability](/developers/docs/smart-cont
 
 Při začleňování ERC do vašich kontraktů je dobré hledat standardní implementace, spíše než se snažit vytvořit vlastní. Mnoho knihoven chytrých kontraktů obsahuje implementace pro nejpopulárnější ERC. Například všudypřítomný [standard pro zaměnitelný token ERC-20](/developers/tutorials/understand-the-erc-20-token-smart-contract/) lze nalézt v [HQ20](https://github.com/HQ20/contracts/blob/master/contracts/token/README.md), [DappSys](https://github.com/dapphub/ds-token/) a [OpenZeppelin](https://docs.openzeppelin.com/contracts/3.x/erc20). Některé ERC navíc poskytují kanonické implementace jako součást samotného ERC.
 
-Stojí za zmínku, že některé ERC nejsou samostatné, ale jsou doplňky k jiným ERC. Například [ERC-2612](https://eips.ethereum.org/EIPS/eip-2612) přidává rozšíření k ERC-20 pro zlepšení jeho použitelnosti.
+Stojí za zmínku, že některé ERC nejsou samostatné, ale jsou doplňky k jiným ERC. Například ERC-2612 přidává rozšíření k ERC-20 pro zlepšení jeho použitelnosti.
 
 ## Jak přidat knihovnu {#how-to}
 

@@ -23,7 +23,7 @@ L'objectif d'un standard comme l'ERC-20 est de permettre de nombreuses implémen
 
 Si vous êtes un programmeur expérimenté, vous vous souvenez probablement avoir vu des constructions similaires en [Java](https://www.w3schools.com/java/java_interface.asp) ou même dans des [fichiers d'en-tête C](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html).
 
-Voici une définition de l'[interface ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) d'OpenZeppelin. Il s'agit d'une traduction du [standard lisible par l'homme](https://eips.ethereum.org/EIPS/eip-20) en code Solidity. Bien sûr, l'interface elle-même ne définit pas _comment_ faire quoi que ce soit. Cela est expliqué dans le code source du contrat ci-dessous.
+Voici une définition de l'[interface ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) d'OpenZeppelin. Il s'agit d'une traduction du standard lisible par l'homme en code Solidity. Bien sûr, l'interface elle-même ne définit pas _comment_ faire quoi que ce soit. Cela est expliqué dans le code source du contrat ci-dessous.
 
 &nbsp;
 
@@ -89,9 +89,7 @@ Comme son nom l'indique, `balanceOf` renvoie le solde d'un compte. Les comptes Q
 ```solidity
     /**
      * @dev Déplace `amount` jetons du compte de l'appelant vers `recipient`.
-     *
      * Retourne une valeur booléenne indiquant si l'opération a réussi.
-     *
      * Émet un événement {Transfer}.
      */
     function transfer(address recipient, uint256 amount) external returns (bool);
@@ -115,7 +113,6 @@ Les allocations permettent à un compte de dépenser des jetons qui appartiennen
      * @dev Retourne le nombre restant de jetons que `spender` sera
      * autorisé à dépenser au nom de `owner` via {transferFrom}. Ceci est
      * zéro par défaut.
-     *
      * Cette valeur change lorsque {approve} ou {transferFrom} sont appelés.
      */
     function allowance(address owner, address spender) external view returns (uint256);
@@ -128,16 +125,13 @@ La fonction `allowance` permet à quiconque de demander quelle est l'allocation 
 ```solidity
     /**
      * @dev Définit `amount` comme l'allocation de `spender` sur les jetons de l'appelant.
-     *
      * Retourne une valeur booléenne indiquant si l'opération a réussi.
-     *
      * IMPORTANT : Attention, changer une allocation avec cette méthode comporte le risque
      * que quelqu'un puisse utiliser à la fois l'ancienne et la nouvelle allocation suite à un ordre
      * de transaction malheureux. Une solution possible pour atténuer cette condition
      * de concurrence est de d'abord réduire l'allocation du dépensier à 0 puis de définir la
      * valeur désirée ensuite :
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
-     *
+
      * Émet un événement {Approval}.
      */
     function approve(address spender, uint256 amount) external returns (bool);
@@ -152,9 +146,7 @@ La fonction `approve` crée une allocation. Assurez-vous de lire le message sur 
      * @dev Déplace `amount` jetons de `sender` vers `recipient` en utilisant le
      * mécanisme d'allocation. `amount` est ensuite déduit de l'allocation
      * de l'appelant.
-     *
      * Retourne une valeur booléenne indiquant si l'opération a réussi.
-     *
      * Émet un événement {Transfer}.
      */
     function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
@@ -169,7 +161,6 @@ Enfin, `transferFrom` est utilisée par le dépensier pour dépenser réellement
     /**
      * @dev Émis lorsque `value` jetons sont déplacés d'un compte (`from`) vers
      * un autre (`to`).
-     *
      * Notez que `value` peut être zéro.
      */
     event Transfer(address indexed from, address indexed to, uint256 value);
@@ -207,7 +198,7 @@ import "../../math/SafeMath.sol";
 ```
 
 - `GSN/Context.sol` contient les définitions requises pour utiliser [OpenGSN](https://opengsn.org/), un système qui permet aux utilisateurs sans QAU d'utiliser la chaîne de blocs. Notez qu'il s'agit d'une ancienne version, si vous souhaitez vous intégrer à OpenGSN, [utilisez ce tutoriel](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [La bibliothèque SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), qui empêche les dépassements de capacité arithmétiques (overflows/underflows) pour les versions de Solidity **&lt;0.8.0**. Dans Solidity ≥0.8.0, les opérations arithmétiques s'annulent automatiquement en cas de dépassement de capacité, rendant SafeMath inutile. Ce contrat utilise SafeMath pour la rétrocompatibilité avec les anciennes versions du compilateur.
+- La bibliothèque SafeMath, qui empêche les dépassements de capacité arithmétiques (overflows/underflows) pour les versions de Solidity **&lt;0.8.0**. Dans Solidity ≥0.8.0, les opérations arithmétiques s'annulent automatiquement en cas de dépassement de capacité, rendant SafeMath inutile. Ce contrat utilise SafeMath pour la rétrocompatibilité avec les anciennes versions du compilateur.
 
 &nbsp;
 
@@ -216,24 +207,19 @@ Ce commentaire explique l'objectif du contrat.
 ```solidity
 /**
  * @dev Implémentation de l'interface {IERC20}.
- *
  * Cette implémentation est agnostique quant à la façon dont les jetons sont créés. Cela signifie
  * qu'un mécanisme d'approvisionnement doit être ajouté dans un contrat dérivé en utilisant {_mint}.
  * Pour un mécanisme générique, voir {ERC20PresetMinterPauser}.
- *
  * ASTUCE : Pour une description détaillée, consultez notre guide
  * https://forum.zeppelin.solutions/t/how-to-implement-erc20-supply-mechanisms/226[How
  * to implement supply mechanisms].
- *
  * Nous avons suivi les directives générales d'OpenZeppelin : les fonctions s'annulent au lieu
  * de retourner `false` en cas d'échec. Ce comportement est néanmoins conventionnel
  * et n'entre pas en conflit avec les attentes des applications ERC-20.
- *
  * De plus, un événement {Approval} est émis lors des appels à {transferFrom}.
  * Cela permet aux applications de reconstruire l'allocation pour tous les comptes simplement
  * en écoutant lesdits événements. D'autres implémentations de l'EIP peuvent ne pas émettre
  * ces événements, car ce n'est pas requis par la spécification.
- *
  * Enfin, les fonctions non standard {decreaseAllowance} et {increaseAllowance}
  * ont été ajoutées pour atténuer les problèmes bien connus autour de la définition
  * des allocations. Voir {IERC20-approve}.
@@ -309,9 +295,7 @@ Les applications doivent savoir comment afficher le solde du jeton. Si un utilis
     /**
      * @dev Définit les valeurs pour {name} et {symbol}, initialise {decimals} avec
      * une valeur par défaut de 18.
-     *
      * Pour sélectionner une valeur différente pour {decimals}, utilisez {_setupDecimals}.
-     *
      * Ces trois valeurs sont immuables : elles ne peuvent être définies qu'une seule fois pendant
      * la construction.
      */
@@ -348,11 +332,9 @@ Le constructeur est appelé lors de la première création du contrat. Par conve
      * @dev Retourne le nombre de décimales utilisées pour obtenir sa représentation utilisateur.
      * Par exemple, si `decimals` vaut `2`, un solde de `505` jetons devrait
      * être affiché à un utilisateur comme `5,05` (`505 / 10 ** 2`).
-     *
      * Les jetons optent généralement pour une valeur de 18, imitant la relation entre
      * QAU et Wei. C'est la valeur qu'utilise {ERC20}, à moins que {_setupDecimals} ne soit
      * appelé.
-     *
      * REMARQUE : Cette information est uniquement utilisée à des fins d'_affichage_ : elle
      * n'affecte en rien l'arithmétique du contrat, y compris
      * {IERC20-balanceOf} et {IERC20-transfer}.
@@ -407,9 +389,7 @@ Lire le solde d'un compte. Notez que n'importe qui est autorisé à obtenir le s
 ```solidity
     /**
      * @dev Voir {IERC20-transfer}.
-     *
      * Exigences :
-     *
      * - `recipient` ne peut pas être l'adresse zéro.
      * - l'appelant doit avoir un solde d'au moins `amount`.
      */
@@ -452,9 +432,7 @@ La fonction `allowance` permet à tout le monde de vérifier n'importe quelle al
 ```solidity
     /**
      * @dev Voir {IERC20-approve}.
-     *
      * Exigences :
-     *
      * - `spender` ne peut pas être l'adresse zéro.
      */
     function approve(address spender, uint256 amount) public virtual override returns (bool) {
@@ -482,12 +460,9 @@ C'est la fonction qu'un dépensier appelle pour dépenser une allocation. Cela n
 ```solidity
     /**
      * @dev Voir {IERC20-transferFrom}.
-     *
      * Émet un événement {Approval} indiquant l'allocation mise à jour. Ce n'est pas
      * requis par l'EIP. Voir la note au début de {ERC20}.
-     *
      * Exigences :
-     *
      * - `sender` et `recipient` ne peuvent pas être l'adresse zéro.
      * - `sender` doit avoir un solde d'au moins `amount`.
      * - l'appelant doit avoir une allocation pour les jetons de ``sender`` d'au moins
@@ -544,14 +519,10 @@ B :
 ```solidity
     /**
      * @dev Augmente de manière atomique l'allocation accordée à `spender` par l'appelant.
-     *
      * C'est une alternative à {approve} qui peut être utilisée comme atténuation pour
      * les problèmes décrits dans {IERC20-approve}.
-     *
      * Émet un événement {Approval} indiquant l'allocation mise à jour.
-     *
      * Exigences :
-     *
      * - `spender` ne peut pas être l'adresse zéro.
      */
     function increaseAllowance(address spender, uint256 addedValue) public virtual returns (bool) {
@@ -566,14 +537,10 @@ La fonction `a.add(b)` est une addition sécurisée. Dans le cas peu probable o�
 
     /**
      * @dev Diminue de manière atomique l'allocation accordée à `spender` par l'appelant.
-     *
      * C'est une alternative à {approve} qui peut être utilisée comme atténuation pour
      * les problèmes décrits dans {IERC20-approve}.
-     *
      * Émet un événement {Approval} indiquant l'allocation mise à jour.
-     *
      * Exigences :
-     *
      * - `spender` ne peut pas être l'adresse zéro.
      * - `spender` doit avoir une allocation pour l'appelant d'au moins
      * `subtractedValue`.
@@ -594,14 +561,10 @@ Ce sont les quatre fonctions qui font le travail réel : `_transfer`, `_mint`, `
 ```solidity
     /**
      * @dev Déplace `amount` jetons de `sender` vers `recipient`.
-     *
      * Cette fonction interne est équivalente à {transfer}, et peut être utilisée pour
      * par ex., implémenter des frais de jeton automatiques, des mécanismes de réduction, etc.
-     *
      * Émet un événement {Transfer}.
-     *
      * Exigences :
-     *
      * - `sender` ne peut pas être l'adresse zéro.
      * - `recipient` ne peut pas être l'adresse zéro.
      * - `sender` doit avoir un solde d'au moins `amount`.
@@ -663,11 +626,8 @@ Ces deux fonctions (`_mint` et `_burn`) modifient l'offre totale de jetons. Elle
 ```solidity
     /** @dev Crée `amount` jetons et les assigne à `account`, augmentant
      * l'offre totale.
-     *
      * Émet un événement {Transfer} avec `from` défini sur l'adresse zéro.
-     *
      * Exigences :
-     *
      * - `to` ne peut pas être l'adresse zéro.
      */
     function _mint(address account, uint256 amount) internal virtual {
@@ -687,11 +647,8 @@ Assurez-vous de mettre à jour `_totalSupply` lorsque le nombre total de jetons 
     /**
      * @dev Détruit `amount` jetons de `account`, réduisant
      * l'offre totale.
-     *
      * Émet un événement {Transfer} avec `to` défini sur l'adresse zéro.
-     *
      * Exigences :
-     *
      * - `account` ne peut pas être l'adresse zéro.
      * - `account` doit avoir au moins `amount` jetons.
      */
@@ -715,14 +672,10 @@ C'est la fonction qui spécifie réellement les allocations. Notez qu'elle perme
 ```solidity
     /**
      * @dev Définit `amount` comme l'allocation de `spender` sur les jetons de `owner`.
-     *
      * Cette fonction interne est équivalente à `approve`, et peut être utilisée pour
      * par ex., définir des allocations automatiques pour certains sous-systèmes, etc.
-     *
      * Émet un événement {Approval}.
-     *
      * Exigences :
-     *
      * - `owner` ne peut pas être l'adresse zéro.
      * - `spender` ne peut pas être l'adresse zéro.
      */
@@ -750,7 +703,6 @@ C'est la fonction qui spécifie réellement les allocations. Notez qu'elle perme
 
     /**
      * @dev Définit {decimals} à une valeur autre que celle par défaut de 18.
-     *
      * AVERTISSEMENT : Cette fonction ne devrait être appelée que depuis le constructeur. La plupart
      * des applications qui interagissent avec les contrats de jeton ne s'attendront pas
      * à ce que {decimals} change un jour, et pourraient fonctionner de manière incorrecte si c'est le cas.
@@ -769,15 +721,12 @@ Cette fonction modifie la variable `_decimals` qui est utilisée pour indiquer a
     /**
      * @dev Hook qui est appelé avant tout transfert de jetons. Cela inclut
      * la création et la destruction.
-     *
      * Conditions d'appel :
-     *
      * - quand `from` et `to` sont tous deux non nuls, `amount` des jetons de ``from``
      * seront transférés à `to`.
      * - quand `from` est zéro, `amount` jetons seront créés pour `to`.
      * - quand `to` est zéro, `amount` des jetons de ``from`` seront détruits.
      * - `from` et `to` ne sont jamais tous les deux zéro.
-     *
      * Pour en savoir plus sur les hooks, consultez xref:ROOT:extending-contracts.adoc#using-hooks[Using Hooks].
      */
     function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual { }

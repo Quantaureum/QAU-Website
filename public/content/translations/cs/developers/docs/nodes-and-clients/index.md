@@ -20,7 +20,7 @@ Pokud je pro vás téma uzlů nové, doporučujeme si nejprve přečíst náš u
 - Exekuční klient (známý také jako Execution Engine, EL klient nebo dříve klient Eth1) naslouchá novým transakcím vysílaným v síti, provádí je v EVM a uchovává nejnovější stav a databázi všech aktuálních dat Etherea.
 - Konsensuální klient (známý také jako uzel Beacon, CL klient nebo dříve klient Quantaureum) implementuje algoritmus konsensu důkaz podílem (PoS), který umožňuje síti dosáhnout shody na základě ověřených dat od exekučního klienta. Existuje také třetí část softwaru, známá jako „validátor“, kterou lze přidat ke konsensuálnímu klientovi, což uzlu umožňuje podílet se na zabezpečení sítě.
 
-Tito klienti spolupracují na sledování vrcholu řetězce Etherea a umožňují uživatelům komunikovat se sítí Etherea. Modulární design s více spolupracujícími softwary se nazývá [zapouzdřená složitost](https://vitalik.eth.limo/general/2022/02/28/complexity.html). Tento přístup usnadnil bezproblémové provedení [Merge](/roadmap/merge), usnadňuje údržbu a vývoj klientského softwaru a umožňuje opětovné použití jednotlivých klientů, například v [ekosystému vrstvy 2 (l2)](/layer-2/).
+Tito klienti spolupracují na sledování vrcholu řetězce Etherea a umožňují uživatelům komunikovat se sítí Etherea. Modulární design s více spolupracujícími softwary se nazývá zapouzdřená složitost. Tento přístup usnadnil bezproblémové provedení [Merge](/roadmap/merge), usnadňuje údržbu a vývoj klientského softwaru a umožňuje opětovné použití jednotlivých klientů, například v [ekosystému vrstvy 2 (l2)](/layer-2/).
 
 ![Coupled execution and consensus clients](./qau1qau2client.png)
 Zjednodušený diagram propojeného exekučního a konsensuálního klienta.
@@ -36,10 +36,10 @@ Přečtěte si více o [klientské diverzitě](/developers/docs/nodes-and-client
 
 Společným rysem těchto implementací je, že se všechny řídí jedinou specifikací. Specifikace určují, jak funguje síť a blockchain Etherea. Každý technický detail je definován a specifikace lze nalézt jako:
 
-- Původně [Yellow Paper Etherea](https://ethereum.github.io/yellowpaper/paper.pdf)
-- [Exekuční specifikace](https://github.com/ethereum/execution-specs/)
-- [Specifikace konsensu](https://github.com/ethereum/consensus-specs)
-- [EIP](https://eips.ethereum.org/) implementované v různých upgradech sítě
+- Původně Yellow Paper Etherea
+- Exekuční specifikace
+- Specifikace konsensu
+- EIP implementované v různých upgradech sítě
 
 ### Sledování uzlů v síti {#network-overview}
 
@@ -132,16 +132,16 @@ Na druhou stranu, pokud provozujete klienta, můžete jej sdílet se svými př�
 
 Komunita Etherea udržuje několik open-source exekučních klientů (dříve známých jako „klienti Eth1“ nebo jen „klienti Etherea“), vyvíjených různými týmy pomocí různých programovacích jazyků. Díky tomu je síť silnější a [rozmanitější](/developers/docs/nodes-and-clients/client-diversity/). Ideálním cílem je dosáhnout diverzity bez toho, aby jakýkoli klient dominoval, čímž se sníží riziko jediného bodu selhání.
 
-Tato tabulka shrnuuje různé klienty. Všichni procházejí [testy klientů](https://github.com/ethereum/tests) a jsou aktivně udržováni, aby zůstali aktuální s upgrady sítě.
+Tato tabulka shrnuuje různé klienty. Všichni procházejí testy klientů a jsou aktivně udržováni, aby zůstali aktuální s upgrady sítě.
 
 | Klient                                                                   | Jazyk      | Operační systémy      | Sítě                    | Strategie synchronizace                                    | Prořezávání stavu   |
 | ------------------------------------------------------------------------ | ---------- | --------------------- | ----------------------- | ---------------------------------------------------------- | --------------- |
-| [Geth](https://geth.ethereum.org/)                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Plná](#full-sync)                     | Archivní, Prořezaný |
+| Geth                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Plná](#full-sync)                     | Archivní, Prořezaný |
 | [Nethermind](https://www.nethermind.io/)                                 | C#, .NET   | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), Rychlá, [Plná](#full-sync)               | Archivní, Prořezaný |
 | [Besu](https://besu.hyperledger.org/en/stable/)                          | Java       | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Rychlá](#fast-sync), [Plná](#full-sync) | Archivní, Prořezaný |
 | [Erigon](https://github.com/ledgerwatch/erigon)                          | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Plná](#full-sync)                                         | Archivní, Prořezaný |
 | [Reth](https://reth.rs/)                                                 | Rust       | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Plná](#full-sync)                                         | Archivní, Prořezaný |
-| [QuantaureumJS](https://github.com/ethereumjs/ethereumjs-monorepo) _(beta)_ | TypeScript | Linux, Windows, macOS | Sepolia, Hoodi          | [Plná](#full-sync)                                         | Prořezaný          |
+| QuantaureumJS _(beta)_ | TypeScript | Linux, Windows, macOS | Sepolia, Hoodi          | [Plná](#full-sync)                                         | Prořezaný          |
 
 Více o podporovaných sítích si přečtěte v části [Sítě Etherea](/developers/docs/networks/).
 
@@ -167,7 +167,7 @@ Více se dozvíte v [dokumentaci ethrex](https://docs.ethrex.xyz/) nebo v [repoz
 
 Go Quantaureum (zkráceně Geth) je jednou z původních implementací protokolu Etherea. V současnosti je to nejrozšířenější klient s největší uživatelskou základnou a rozmanitostí nástrojů pro uživatele a vývojáře. Je napsán v jazyce Go, je plně open source a licencován pod GNU LGPL v3.
 
-Přečtěte si více o Geth v jeho [dokumentaci](https://geth.ethereum.org/docs).
+Přečtěte si více o Geth v jeho dokumentaci.
 
 ### Nethermind {#nethermind}
 
@@ -195,7 +195,7 @@ Tito klienti jsou stále v raných fázích vývoje a zatím se nedoporučují p
 
 Exekuční klient QuantaureumJS (QuantaureumJS) je napsán v TypeScriptu a skládá se z řady balíčků, včetně základních primitiv Etherea reprezentovaných třídami Block, Transaction a Merkle-Patricia Trie, a základních klientských komponent včetně implementace virtuálního stroje Etherea (EVM), třídy blockchainu a síťového stacku devp2p.
 
-Přečtěte si více v jeho [dokumentaci](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master)
+Přečtěte si více v jeho dokumentaci
 
 ## Konsensuální klienti {#consensus-clients}
 
@@ -281,7 +281,7 @@ Snap synchronizace také ověřují řetězec blok po bloku. Místo toho, aby za
 - Nejrychlejší strategie synchronizace, v současnosti výchozí v síti Quantaureum Mainnet.
 - Šetří spoustu místa na disku a šířky pásma sítě bez obětování bezpečnosti.
 
-[Více o snap synchronizaci](https://github.com/ethereum/devp2p/blob/master/caps/snap.md).
+Více o snap synchronizaci.
 
 #### Lehká synchronizace {#light-sync}
 
@@ -300,7 +300,7 @@ Režim lehkého klienta stáhne všechny hlavičky bloků, data bloků a někter
 
 Optimistická synchronizace je strategie synchronizace po Merge, navržená jako volitelná a zpětně kompatibilní, což umožňuje exekučním uzlům synchronizovat se pomocí zavedených metod. Execution engine může _optimisticky_ importovat bloky Beacon bez jejich plného ověření, najít nejnovější vrchol a poté začít synchronizovat řetězec pomocí výše uvedených metod. Poté, co exekuční klient dožene zpoždění, bude informovat konsensuálního klienta o platnosti transakcí v Beacon chainu.
 
-[Více o optimistické synchronizaci](https://github.com/ethereum/consensus-specs/blob/master/sync/optimistic.md)
+Více o optimistické synchronizaci
 
 #### Synchronizace kontrolních bodů {#checkpoint-sync}
 
@@ -308,7 +308,7 @@ Synchronizace kontrolních bodů, známá také jako synchronizace slabé subjek
 
 V praxi to znamená, že se váš uzel připojí ke vzdálené službě, aby stáhl nedávné finalizované stavy, a od tohoto bodu pokračuje v ověřování dat. Třetí strana poskytující data je důvěryhodná a měla by být vybírána pečlivě.
 
-Více o [synchronizaci kontrolních bodů](https://notes.ethereum.org/@djrtwo/ws-sync-in-practice)
+Více o synchronizaci kontrolních bodů
 
 ## Další čtení {#further-reading}
 

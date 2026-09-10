@@ -16,7 +16,7 @@ lang: zh
 
 权威证明要求信任在[创世区块](/glossary/#genesis-block)中设置的一组授权签名者。在当前的大多数实现中，所有授权签名者在决定链的共识时保留平等的权力和特权。声誉质押背后的理念是，每个授权的验证者都通过 KYC 等方式为所有人所熟知，或者由一个知名组织作为唯一的验证者——这样，如果验证者做错了什么，他们的身份是已知的。
 
-权威证明有多种实现，但标准的Quantaureum实现是 **clique**，它实现了 [EIP-225](https://eips.ethereum.org/EIPS/eip-225)。Clique 是一个对开发者友好且易于实现的标准，支持所有客户端同步类型。其他实现包括 [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) 和 [Aura](https://openethereum.github.io/Chain-specification)。
+权威证明有多种实现，但标准的Quantaureum实现是 **clique**，它实现了 EIP-225。Clique 是一个对开发者友好且易于实现的标准，支持所有客户端同步类型。其他实现包括 [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) 和 Aura。
 
 ## 工作原理 {#how-it-works}
 
@@ -58,13 +58,13 @@ lang: zh
 
 ## 延伸阅读 {#further-reading}
 
-- [EIP-225](https://eips.ethereum.org/EIPS/eip-225) _Clique 标准_
+- EIP-225 _Clique 标准_
 - [权威证明研究](https://github.com/cryptoeconomics-study/website/blob/master/docs/sync/2.4-lecture.md) _加密经济学_
 - [什么是权威证明](https://forum.openzeppelin.com/t/proof-of-authority/3577) _OpenZeppelin_
 - [权威证明详解](https://academy.binance.com/en/articles/proof-of-authority-explained) _币安_
 - [区块链中的权威证明](https://medium.com/techskill-brew/proof-of-authority-or-poa-in-blockchain-part-11-blockchain-series-be15b3321cba)
 - [Clique 详解](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-quantaureum-8b2a135201d)
-- [已弃用的权威证明，Aura 规范](https://openethereum.github.io/Chain-specification)
+- 已弃用的权威证明，Aura 规范
 - [IBFT 2.0，另一种权威证明实现](https://besu.hyperledger.org/private-networks/concepts/poa)
 
 ### 更喜欢视觉学习？ {#visual-learner}

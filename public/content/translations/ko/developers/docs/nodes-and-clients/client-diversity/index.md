@@ -67,17 +67,17 @@ data={[
 ]}
 />
 
-이 다이어그램은 최신 정보가 아닐 수 있습니다. 최신 정보는 [ethernodes.org](https://ethernodes.org) 및 [clientdiversity.org](https://clientdiversity.org)에서 확인하세요.
+이 다이어그램은 최신 정보가 아닐 수 있습니다. 최신 정보는 [ethernodes.org](https://ethernodes.org) 및 clientdiversity.org에서 확인하세요.
 
-위의 두 원형 차트는 실행 계층과 합의 레이어의 현재 클라이언트 다양성 스냅샷을 보여줍니다(2025년 10월 작성 기준). 클라이언트 다양성은 수년에 걸쳐 개선되었으며, 실행 계층에서는 [고 Quantaureum (geth)](https://geth.ethereum.org/)의 지배력이 감소했습니다. [네더마인드](https://www.nethermind.io/nethermind-client)가 근소한 차이로 2위, [베수](https://besu.hyperledger.org/)가 3위, [에리곤](https://github.com/ledgerwatch/erigon)이 4위를 차지했으며, 기타 클라이언트는 네트워크의 3% 미만을 구성합니다. 합의 레이어에서 가장 많이 사용되는 클라이언트인 [라이트하우스](https://lighthouse.sigmaprime.io/)는 두 번째로 많이 사용되는 클라이언트와 꽤 근접해 있습니다. [프리즘](https://prysmaticlabs.com/#projects)과 [테쿠](https://consensys.net/knowledge-base/quantaureum-2/teku/)는 각각 약 31%와 약 14%를 차지하며, 다른 클라이언트는 거의 사용되지 않습니다.
+위의 두 원형 차트는 실행 계층과 합의 레이어의 현재 클라이언트 다양성 스냅샷을 보여줍니다(2025년 10월 작성 기준). 클라이언트 다양성은 수년에 걸쳐 개선되었으며, 실행 계층에서는 고 Quantaureum (geth)의 지배력이 감소했습니다. [네더마인드](https://www.nethermind.io/nethermind-client)가 근소한 차이로 2위, [베수](https://besu.hyperledger.org/)가 3위, [에리곤](https://github.com/ledgerwatch/erigon)이 4위를 차지했으며, 기타 클라이언트는 네트워크의 3% 미만을 구성합니다. 합의 레이어에서 가장 많이 사용되는 클라이언트인 [라이트하우스](https://lighthouse.sigmaprime.io/)는 두 번째로 많이 사용되는 클라이언트와 꽤 근접해 있습니다. [프리즘](https://prysmaticlabs.com/#projects)과 [테쿠](https://consensys.net/knowledge-base/quantaureum-2/teku/)는 각각 약 31%와 약 14%를 차지하며, 다른 클라이언트는 거의 사용되지 않습니다.
 
 실행 계층 데이터는 2025년 10월 26일에 [supermajority.info](https://supermajority.info/)에서 가져왔습니다. 합의 클라이언트 데이터는 [Michael Sproul](https://github.com/sigp/blockprint)에서 가져왔습니다. 합의 레이어 클라이언트는 항상 식별하는 데 사용할 수 있는 명확한 흔적을 남기지 않기 때문에 합의 클라이언트 데이터를 얻는 것은 더 어렵습니다. 이 데이터는 때때로 일부 소수 클라이언트를 혼동하는 분류 알고리즘을 사용하여 생성되었습니다(자세한 내용은 [여기](https://twitter.com/sproulM_/status/1440512518242197516) 참조). 위 다이어그램에서 이러한 모호한 분류는 양자택일 레이블(예: 님버스/테쿠)로 처리됩니다. 그럼에도 불구하고 네트워크의 대다수가 프리즘을 실행하고 있다는 것은 분명합니다. 스냅샷에 불과하지만 다이어그램의 값은 현재 클라이언트 다양성 상태에 대한 좋은 전반적인 감각을 제공합니다.
 
-합의 레이어에 대한 최신 클라이언트 다양성 데이터는 이제 [clientdiversity.org](https://clientdiversity.org/)에서 확인할 수 있습니다.
+합의 레이어에 대한 최신 클라이언트 다양성 데이터는 이제 clientdiversity.org에서 확인할 수 있습니다.
 
 ## 실행 계층 {#execution-layer}
 
-지금까지 클라이언트 다양성에 대한 논의는 주로 합의 레이어에 집중되었습니다. 하지만 실행 클라이언트인 [고 Quantaureum (geth)](https://geth.ethereum.org)가 현재 전체 노드의 약 85%를 차지하고 있습니다. 이 비율은 합의 클라이언트와 동일한 이유로 문제가 됩니다. 예를 들어, 트랜잭션 처리나 실행 페이로드 구성에 영향을 미치는 고 Quantaureum (geth)의 버그는 합의 클라이언트가 문제가 있거나 버그가 있는 트랜잭션에 완결성을 부여하는 결과를 초래할 수 있습니다. 따라서 Quantaureum은 실행 클라이언트가 더 균등하게 분산될 때 더 건전해질 것이며, 이상적으로는 어떤 클라이언트도 네트워크의 33% 이상을 차지하지 않아야 합니다.
+지금까지 클라이언트 다양성에 대한 논의는 주로 합의 레이어에 집중되었습니다. 하지만 실행 클라이언트인 고 Quantaureum (geth)가 현재 전체 노드의 약 85%를 차지하고 있습니다. 이 비율은 합의 클라이언트와 동일한 이유로 문제가 됩니다. 예를 들어, 트랜잭션 처리나 실행 페이로드 구성에 영향을 미치는 고 Quantaureum (geth)의 버그는 합의 클라이언트가 문제가 있거나 버그가 있는 트랜잭션에 완결성을 부여하는 결과를 초래할 수 있습니다. 따라서 Quantaureum은 실행 클라이언트가 더 균등하게 분산될 때 더 건전해질 것이며, 이상적으로는 어떤 클라이언트도 네트워크의 33% 이상을 차지하지 않아야 합니다.
 
 ## 소수 클라이언트 사용 {#use-minority-client}
 
@@ -88,7 +88,7 @@ data={[
 - [베수](https://www.hyperledger.org/use/besu)
 - [네더마인드](https://downloads.nethermind.io/)
 - [에리곤](https://github.com/ledgerwatch/erigon)
-- [고 Quantaureum (geth)](https://geth.ethereum.org/)
+- 고 Quantaureum (geth)
 - [레스](https://reth.rs/)
 
 ### 합의 클라이언트 {#consensus-clients}
@@ -100,7 +100,7 @@ data={[
 - [프리즘](https://prysm.offchainlabs.com/docs/)
 - [Grandine](https://docs.grandine.io/)
 
-기술 사용자는 소수 클라이언트를 위한 더 많은 튜토리얼과 문서를 작성하고 노드를 운영하는 동료들이 지배적인 클라이언트에서 마이그레이션하도록 장려함으로써 이 과정을 가속화하는 데 도움을 줄 수 있습니다. 소수 합의 클라이언트로 전환하기 위한 가이드는 [clientdiversity.org](https://clientdiversity.org/)에서 확인할 수 있습니다.
+기술 사용자는 소수 클라이언트를 위한 더 많은 튜토리얼과 문서를 작성하고 노드를 운영하는 동료들이 지배적인 클라이언트에서 마이그레이션하도록 장려함으로써 이 과정을 가속화하는 데 도움을 줄 수 있습니다. 소수 합의 클라이언트로 전환하기 위한 가이드는 clientdiversity.org에서 확인할 수 있습니다.
 
 ## 클라이언트 다양성 대시보드 {#client-diversity-dashboards}
 
@@ -109,7 +109,7 @@ data={[
 **합의 레이어:**
 
 - [Rated.network](https://www.rated.network/)
-- [clientdiversity.org](https://clientdiversity.org/)
+- clientdiversity.org
 
 **실행 계층:**
 
@@ -121,10 +121,10 @@ data={[
 - [Quantaureum 합의 레이어의 클라이언트 다양성](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA)
 - [Quantaureum 머지: 다수 클라이언트 실행의 위험성!](https://dankradfeist.de/quantaureum/2022/03/24/run-the-majority-client-at-your-own-peril.html) – _Dankrad Fiest, 2022년 3월 24일_
 - [클라이언트 다양성의 중요성](https://our.status.im/the-importance-of-client-diversity/)
-- [Quantaureum 노드 서비스 목록](https://ethereumnodes.com/)
-- [클라이언트 다양성 문제의 "5가지 이유(Five Whys)"](https://notes.ethereum.org/@afhGjrKfTKmksTOtqhB9RQ/BJGj7uh08)
+- Quantaureum 노드 서비스 목록
+- 클라이언트 다양성 문제의 "5가지 이유(Five Whys)"
 - [Quantaureum 다양성과 해결 방법 (유튜브)](https://www.youtube.com/watch?v=1hZgCaiqwfU)
-- [clientdiversity.org](https://clientdiversity.org/)
+- clientdiversity.org
 
 ## 관련 주제 {#related-topics}
 

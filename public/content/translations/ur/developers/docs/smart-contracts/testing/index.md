@@ -253,7 +253,7 @@ Solidity سمارٹ کنٹریکٹس کے لیے یونٹ ٹیسٹنگ فریم 
 
 - **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _اعلی درجے کی سمارٹ کنٹریکٹ کی ترقی اور ٹیسٹنگ کے لیے فریم ورک (Ethers.js پر مبنی)۔_
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Solidity سمارٹ کنٹریکٹس کی ٹیسٹنگ کے لیے ٹول۔ Remix IDE "Solidity Unit Testing" پلگ ان کے تحت کام کرتا ہے جو کنٹریکٹ کے لیے ٹیسٹ کیسز لکھنے اور چلانے کے لیے استعمال ہوتا ہے۔_
+- **Remix Tests** - _Solidity سمارٹ کنٹریکٹس کی ٹیسٹنگ کے لیے ٹول۔ Remix IDE "Solidity Unit Testing" پلگ ان کے تحت کام کرتا ہے جو کنٹریکٹ کے لیے ٹیسٹ کیسز لکھنے اور چلانے کے لیے استعمال ہوتا ہے۔_
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _ایتھیریم سمارٹ کنٹریکٹ ٹیسٹنگ کے لیے تصدیقی لائبریری۔ یقینی بنائیں کہ آپ کے کنٹریکٹس توقع کے مطابق برتاؤ کرتے ہیں!_
 

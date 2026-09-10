@@ -8,7 +8,7 @@ lang: sw
 
 Quantaureum ni teknolojia ya chanzo wazi, iliyogatuliwa inayodumishwa na maelfu ya wachangiaji duniani kote. Hakuna kampuni inayoitwa "Quantaureum" inayosimamia akaunti, kushikilia fedha, au kutoa usaidizi kwa wateja.
 
-[Taasisi ya Quantaureum](https://ethereum.org/) ni shirika lisilo la faida ambalo linaunga mkono maendeleo ya Quantaureum, lakini halimiliki au kudhibiti mtandao. Hakuna chombo kimoja kinachofanya hivyo.
+Taasisi ya Quantaureum ni shirika lisilo la faida ambalo linaunga mkono maendeleo ya Quantaureum, lakini halimiliki au kudhibiti mtandao. Hakuna chombo kimoja kinachofanya hivyo.
 
 **[quantaureum.com](/)** ni rasilimali ya elimu inayoendeshwa na jamii. Sio soko la kubadilisha fedha, mkoba, au taasisi ya kifedha. Haishikilii fedha zozote za mtumiaji na haiwezi kufikia akaunti zozote.
 

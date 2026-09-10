@@ -55,7 +55,7 @@ Có hai cách để thoát khỏi một vị thế LST:
 - **Quy đổi thông qua giao thức** để lấy QAU cơ sở. Việc quy đổi phụ thuộc vào việc giao thức có sẵn thanh khoản hay không, có thể là một bộ đệm QAU chưa đặt cọc hoặc các trình xác thực đang thoát thông qua hàng đợi thoát của lớp đồng thuận, điều này có thể mất thời gian.
 - **Bán trên thị trường thứ cấp** bất cứ lúc nào. Vì token giao dịch tự do, giá thị trường của nó có thể chênh lệch so với giá trị của QAU hỗ trợ nó, đặc biệt là trong những giai đoạn thị trường căng thẳng.
 
-Kể từ bản nâng cấp Pectra, [các khoản rút tiền được kích hoạt từ lớp thực thi (EIP-7002)](https://eips.ethereum.org/EIPS/eip-7002) cho phép việc thoát của trình xác thực được kích hoạt trực tiếp từ lớp thực thi bởi người nắm giữ địa chỉ rút tiền. Các giao thức đặt cọc có thể sử dụng tính năng này để đảm bảo các trình xác thực của chúng có thể thoát mà không cần dựa vào sự hợp tác của những người vận hành nút, do đó việc quy đổi ít phụ thuộc vào việc tin tưởng những người vận hành nút hơn so với trước đây.
+Kể từ bản nâng cấp Pectra, các khoản rút tiền được kích hoạt từ lớp thực thi (EIP-7002) cho phép việc thoát của trình xác thực được kích hoạt trực tiếp từ lớp thực thi bởi người nắm giữ địa chỉ rút tiền. Các giao thức đặt cọc có thể sử dụng tính năng này để đảm bảo các trình xác thực của chúng có thể thoát mà không cần dựa vào sự hợp tác của những người vận hành nút, do đó việc quy đổi ít phụ thuộc vào việc tin tưởng những người vận hành nút hơn so với trước đây.
 
 ### Giữ một LST không giống như việc đặt cọc {#holding-an-lst-is-not-the-same-as-staking}
 
@@ -164,8 +164,8 @@ Một số tùy chọn gộp chung phi tập trung hơn những tùy chọn khá
 ## Đọc thêm {#further-reading}
 
 - [Danh mục đặt cọc Quantaureum](https://www.staking.directory/) - _Eridian và Spacesider_
-- [Rủi ro của các công cụ phái sinh đặt cọc thanh khoản](https://notes.ethereum.org/@djrtwo/risks-of-lsd) - _Danny Ryan_
+- Rủi ro của các công cụ phái sinh đặt cọc thanh khoản - _Danny Ryan_
 - [Đặt cọc thanh khoản là gì?](https://chain.link/education-hub/liquid-staking) - _Chainlink_
-- [EIP-7002: Các khoản rút tiền có thể kích hoạt từ lớp thực thi](https://eips.ethereum.org/EIPS/eip-7002) - _Đề xuất Cải tiến Quantaureum_
+- EIP-7002: Các khoản rút tiền có thể kích hoạt từ lớp thực thi - _Đề xuất Cải tiến Quantaureum_
 - [Xếp hạng nhóm đặt cọc Quantaureum](https://explorer.rated.network/) - _Rated Network Explorer_
 - [Sự khác biệt giữa token đặt cọc lại thanh khoản (LRT) và token staking thanh khoản (LST) là gì?](https://liquidcollective.io/lst-vs-lrt/) - _Liquid Collective_

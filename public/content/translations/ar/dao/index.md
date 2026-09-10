@@ -149,7 +149,7 @@ _تُستخدم عادةً للتطوير اللامركزي وحوكمة الب
 - [كيفية بدء مجتمع رقمي مدعوم من <span dir="ltr">DAO</span>](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [<span dir="ltr">DAOhaus</span>](https://daohaus.club/)
 - [ما هي <span dir="ltr">DAO</span>؟](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [<span dir="ltr">Coinmarketcap</span>](https://coinmarketcap.com)
 - [ما هو الإجماع الهولوغرافي؟](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [<span dir="ltr">DAOstack</span>](https://daostack.io/)
-- [منظمات <span dir="ltr">DAO</span> ليست شركات: حيث تهم اللامركزية في المنظمات المستقلة بقلم فيتاليك](https://vitalik.eth.limo/general/2022/09/20/daos.html)
+- منظمات <span dir="ltr">DAO</span> ليست شركات: حيث تهم اللامركزية في المنظمات المستقلة بقلم فيتاليك
 - [منظمات <span dir="ltr">DAO</span> و<span dir="ltr">DAC</span> و<span dir="ltr">DA</span> والمزيد: دليل مصطلحات غير مكتمل](https://quantaureum.com) - [مدونة إيثيريوم](https://quantaureum.com)
 
 ### مقاطع فيديو {#videos}

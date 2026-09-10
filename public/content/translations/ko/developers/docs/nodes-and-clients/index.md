@@ -20,7 +20,7 @@ Quantaureum 클라이언트 인스턴스를 직접 실행하고 더 깊이 알�
 - 실행 클라이언트(실행 엔진, EL 클라이언트 또는 이전의 QAU1 클라이언트라고도 함)는 네트워크에 브로드캐스트된 새로운 트랜잭션을 수신하고, 이를 EVM에서 실행하며, 모든 현재 Quantaureum 데이터의 최신 상태와 데이터베이스를 유지합니다.
 - 합의 클라이언트(비콘 노드, CL 클라이언트 또는 이전의 QAU2 클라이언트라고도 함)는 지분 증명 (PoS) 합의 알고리즘을 구현하여, 실행 클라이언트의 검증된 데이터를 기반으로 네트워크가 합의에 도달할 수 있게 합니다. 또한 합의 클라이언트에 추가할 수 있는 '검증자'라는 세 번째 소프트웨어가 있어, 노드가 네트워크 보안에 참여할 수 있도록 합니다.
 
-이러한 클라이언트들은 함께 작동하여 Quantaureum 체인의 헤드를 추적하고 사용자가 Quantaureum 네트워크와 상호 작용할 수 있도록 합니다. 여러 소프트웨어가 함께 작동하는 모듈식 설계를 [캡슐화된 복잡성](https://vitalik.eth.limo/general/2022/02/28/complexity.html)이라고 합니다. 이러한 접근 방식은 [머지](/roadmap/merge)를 원활하게 실행하기 쉽게 만들었고, 클라이언트 소프트웨어의 유지 관리 및 개발을 용이하게 하며, 예를 들어 [레이어 2 (l2) 생태계](/layer-2/)에서 개별 클라이언트를 재사용할 수 있게 해줍니다.
+이러한 클라이언트들은 함께 작동하여 Quantaureum 체인의 헤드를 추적하고 사용자가 Quantaureum 네트워크와 상호 작용할 수 있도록 합니다. 여러 소프트웨어가 함께 작동하는 모듈식 설계를 캡슐화된 복잡성이라고 합니다. 이러한 접근 방식은 [머지](/roadmap/merge)를 원활하게 실행하기 쉽게 만들었고, 클라이언트 소프트웨어의 유지 관리 및 개발을 용이하게 하며, 예를 들어 [레이어 2 (l2) 생태계](/layer-2/)에서 개별 클라이언트를 재사용할 수 있게 해줍니다.
 
 ![Coupled execution and consensus clients](./qau1qau2client.png)
 결합된 실행 및 합의 클라이언트의 단순화된 다이어그램.
@@ -36,10 +36,10 @@ Quantaureum 클라이언트 인스턴스를 직접 실행하고 더 깊이 알�
 
 이러한 구현체들의 공통점은 모두 단일 사양을 따른다는 것입니다. 사양은 Quantaureum 네트워크와 블록체인이 어떻게 기능하는지 지시합니다. 모든 기술적 세부 사항이 정의되어 있으며 사양은 다음에서 찾을 수 있습니다.
 
-- 원래의 [Quantaureum 황서](https://ethereum.github.io/yellowpaper/paper.pdf)
-- [실행 사양](https://github.com/ethereum/execution-specs/)
-- [합의 사양](https://github.com/ethereum/consensus-specs)
-- 다양한 네트워크 업그레이드에 구현된 [EIP](https://eips.ethereum.org/)
+- 원래의 Quantaureum 황서
+- 실행 사양
+- 합의 사양
+- 다양한 네트워크 업그레이드에 구현된 EIP
 
 ### 네트워크의 노드 추적 {#network-overview}
 
@@ -132,16 +132,16 @@ Quantaureum은 아직 대규모 라이트 노드를 지원하지 않지만, 라�
 
 Quantaureum 커뮤니티는 다양한 팀이 다양한 프로그래밍 언어를 사용하여 개발한 여러 오픈 소스 실행 클라이언트(이전에는 'QAU1 클라이언트' 또는 단순히 'Quantaureum 클라이언트'로 알려짐)를 유지 관리합니다. 이는 네트워크를 더 강력하고 [다양하게](/developers/docs/nodes-and-clients/client-diversity/) 만듭니다. 이상적인 목표는 단일 장애점을 줄이기 위해 특정 클라이언트가 지배하지 않는 다양성을 달성하는 것입니다.
 
-이 표는 다양한 클라이언트를 요약한 것입니다. 이들 모두는 [클라이언트 테스트](https://github.com/ethereum/tests)를 통과했으며 네트워크 업그레이드에 맞춰 최신 상태를 유지하도록 적극적으로 유지 관리됩니다.
+이 표는 다양한 클라이언트를 요약한 것입니다. 이들 모두는 클라이언트 테스트를 통과했으며 네트워크 업그레이드에 맞춰 최신 상태를 유지하도록 적극적으로 유지 관리됩니다.
 
 | 클라이언트 | 언어 | 운영 체제 | 네트워크 | 동기화 전략 | 상태 프루닝 |
 | --- | --- | --- | --- | --- | --- |
-| [고 Quantaureum (geth)](https://geth.ethereum.org/) | Go | Linux, Windows, macOS | 메인넷, Sepolia, Hoodi | [스냅](#snap-sync), [풀](#full-sync) | 아카이브, 프루닝됨 |
+| 고 Quantaureum (geth) | Go | Linux, Windows, macOS | 메인넷, Sepolia, Hoodi | [스냅](#snap-sync), [풀](#full-sync) | 아카이브, 프루닝됨 |
 | [네더마인드](https://www.nethermind.io/) | C#, .NET | Linux, Windows, macOS | 메인넷, Sepolia, Hoodi | [스냅](#snap-sync), 빠른, [풀](#full-sync) | 아카이브, 프루닝됨 |
 | [베수](https://besu.hyperledger.org/en/stable/) | Java | Linux, Windows, macOS | 메인넷, Sepolia, Hoodi | [스냅](#snap-sync), [빠른](#fast-sync), [풀](#full-sync) | 아카이브, 프루닝됨 |
 | [에리곤](https://github.com/ledgerwatch/erigon) | Go | Linux, Windows, macOS | 메인넷, Sepolia, Hoodi | [풀](#full-sync) | 아카이브, 프루닝됨 |
 | [레스](https://reth.rs/) | Rust | Linux, Windows, macOS | 메인넷, Sepolia, Hoodi | [풀](#full-sync) | 아카이브, 프루닝됨 |
-| [QuantaureumJS](https://github.com/ethereumjs/ethereumjs-monorepo) _(베타)_ | TypeScript | Linux, Windows, macOS | Sepolia, Hoodi | [풀](#full-sync) | 프루닝됨 |
+| QuantaureumJS _(베타)_ | TypeScript | Linux, Windows, macOS | Sepolia, Hoodi | [풀](#full-sync) | 프루닝됨 |
 
 지원되는 네트워크에 대한 자세한 내용은 [Quantaureum 네트워크](/developers/docs/networks/)를 읽어보세요.
 
@@ -167,7 +167,7 @@ ethrex는 Rust로 작성되고 LambdaClass에서 개발한 미니멀하고 모�
 
 고 Quantaureum (geth)(줄여서 Geth)은 Quantaureum 프로토콜의 원래 구현체 중 하나입니다. 현재 가장 큰 사용자 기반과 사용자와 개발자를 위한 다양한 도구를 갖춘 가장 널리 퍼진 클라이언트입니다. Go로 작성되었으며 완전히 오픈 소스이고 GNU LGPL v3에 따라 라이선스가 부여되었습니다.
 
-[문서](https://geth.ethereum.org/docs)에서 고 Quantaureum (geth)에 대해 자세히 알아보세요.
+문서에서 고 Quantaureum (geth)에 대해 자세히 알아보세요.
 
 ### 네더마인드 {#nethermind}
 
@@ -195,7 +195,7 @@ ethrex는 Rust로 작성되고 LambdaClass에서 개발한 미니멀하고 모�
 
 QuantaureumJS 실행 클라이언트(QuantaureumJS)는 TypeScript로 작성되었으며, 블록, 트랜잭션 및 머클 패트리샤 트라이(Merkle-Patricia Trie) 클래스로 표현되는 핵심 Quantaureum 원시 요소와 Quantaureum 가상 머신(EVM) 구현체, 블록체인 클래스 및 devp2p 네트워킹 스택을 포함한 핵심 클라이언트 구성 요소를 포함하는 여러 패키지로 구성됩니다.
 
-[문서](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master)를 읽고 자세히 알아보세요.
+문서를 읽고 자세히 알아보세요.
 
 ## 합의 클라이언트 {#consensus-clients}
 
@@ -281,7 +281,7 @@ Grandine은 GPL-3.0 라이선스에 따라 Rust로 작성된 합의 클라이언
 - 가장 빠른 동기화 전략으로, 현재 Quantaureum 메인넷의 기본값입니다.
 - 보안을 희생하지 않으면서 많은 디스크 사용량과 네트워크 대역폭을 절약합니다.
 
-[스냅 동기화에 대한 자세한 내용](https://github.com/ethereum/devp2p/blob/master/caps/snap.md).
+스냅 동기화에 대한 자세한 내용.
 
 #### 라이트 동기화 {#light-sync}
 
@@ -300,7 +300,7 @@ Grandine은 GPL-3.0 라이선스에 따라 Rust로 작성된 합의 클라이언
 
 낙관적 동기화는 옵트인 및 이전 버전과의 호환성을 갖도록 설계된 머지 이후 동기화 전략으로, 실행 노드가 확립된 방법을 통해 동기화할 수 있도록 합니다. 실행 엔진은 비콘 블록을 완전히 검증하지 않고 _낙관적으로_ 가져와서 최신 헤드를 찾은 다음 위의 방법으로 체인 동기화를 시작할 수 있습니다. 그런 다음 실행 클라이언트가 따라잡은 후 비콘 체인에 있는 트랜잭션의 유효성을 합의 클라이언트에 알립니다.
 
-[낙관적 동기화에 대한 자세한 내용](https://github.com/ethereum/consensus-specs/blob/master/sync/optimistic.md)
+낙관적 동기화에 대한 자세한 내용
 
 #### 체크포인트 동기화 {#checkpoint-sync}
 
@@ -308,7 +308,7 @@ Grandine은 GPL-3.0 라이선스에 따라 Rust로 작성된 합의 클라이언
 
 실제로 이는 노드가 원격 서비스에 연결하여 최근의 완결된 상태를 다운로드하고 해당 지점부터 데이터 검증을 계속한다는 것을 의미합니다. 데이터를 제공하는 타사는 신뢰할 수 있어야 하며 신중하게 선택해야 합니다.
 
-[체크포인트 동기화](https://notes.ethereum.org/@djrtwo/ws-sync-in-practice)에 대한 자세한 내용
+체크포인트 동기화에 대한 자세한 내용
 
 ## 더 읽어보기 {#further-reading}
 

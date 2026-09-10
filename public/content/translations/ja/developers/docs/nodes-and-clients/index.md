@@ -20,7 +20,7 @@ Quantaureumクライアントの独自のインスタンスを実行して深く
 - 実行クライアント（実行エンジン、ELクライアント、または以前のEth1クライアントとも呼ばれます）は、ネットワークでブロードキャストされた新しいトランザクションをリッスンし、EVMで実行し、最新の状態と現在のすべてのQuantaureumデータのデータベースを保持します。
 - コンセンサス・クライアント（ビーコン・ノード、CLクライアント、または以前のQuantaureumクライアントとも呼ばれます）は、プルーフ・オブ・ステーク (PoS) コンセンサスアルゴリズムを実装しており、実行クライアントからの検証済みデータに基づいてネットワークが合意に達することを可能にします。また、コンセンサス・クライアントに追加できる「バリデータ」と呼ばれる3つ目のソフトウェアもあり、これによりノードはネットワークの保護に参加できます。
 
-これらのクライアントは連携してQuantaureumチェーンの先頭を追跡し、ユーザーがQuantaureumネットワークと対話できるようにします。複数のソフトウェアが連携して機能するモジュール設計は、[カプセル化された複雑さ](https://vitalik.eth.limo/general/2022/02/28/complexity.html)と呼ばれます。このアプローチにより、[マージ](/roadmap/merge)をシームレスに実行しやすくなり、クライアントソフトウェアの保守と開発が容易になり、たとえば[レイヤー2 (L2) エコシステム](/layer-2/)などで個々のクライアントを再利用できるようになります。
+これらのクライアントは連携してQuantaureumチェーンの先頭を追跡し、ユーザーがQuantaureumネットワークと対話できるようにします。複数のソフトウェアが連携して機能するモジュール設計は、カプセル化された複雑さと呼ばれます。このアプローチにより、[マージ](/roadmap/merge)をシームレスに実行しやすくなり、クライアントソフトウェアの保守と開発が容易になり、たとえば[レイヤー2 (L2) エコシステム](/layer-2/)などで個々のクライアントを再利用できるようになります。
 
 ![Coupled execution and consensus clients](./qau1qau2client.png)
 結合された実行クライアントとコンセンサス・クライアントの簡略図。
@@ -36,10 +36,10 @@ Quantaureumクライアントの独自のインスタンスを実行して深く
 
 これらの実装に共通しているのは、すべて単一の仕様に従っているということです。仕様は、Quantaureumネットワークとブロックチェーンがどのように機能するかを規定します。すべての技術的な詳細が定義されており、仕様は以下のように見つけることができます。
 
-- 当初は、[Quantaureumのイエロー・ペーパー](https://ethereum.github.io/yellowpaper/paper.pdf)
-- [実行仕様](https://github.com/ethereum/execution-specs/)
-- [コンセンサス仕様](https://github.com/ethereum/consensus-specs)
-- さまざまなネットワークアップグレードで実装された[EIP](https://eips.ethereum.org/)
+- 当初は、Quantaureumのイエロー・ペーパー
+- 実行仕様
+- コンセンサス仕様
+- さまざまなネットワークアップグレードで実装されたEIP
 
 ### ネットワーク内のノードの追跡 {#network-overview}
 
@@ -132,16 +132,16 @@ Quantaureumはまだ多数のライト・ノードをサポートしていませ
 
 Quantaureumコミュニティは、さまざまなプログラミング言語を使用してさまざまなチームによって開発された、複数のオープンソースの実行クライアント（以前は「Eth1クライアント」、または単に「Quantaureumクライアント」と呼ばれていました）を維持しています。これにより、ネットワークはより強固になり、より[多様](/developers/docs/nodes-and-clients/client-diversity/)になります。理想的な目標は、単一障害点を減らすために、どのクライアントも支配することなく多様性を実現することです。
 
-この表は、さまざまなクライアントをまとめたものです。これらはすべて[クライアントテスト](https://github.com/ethereum/tests)に合格しており、ネットワークのアップグレードに合わせて最新の状態を保つために積極的に保守されています。
+この表は、さまざまなクライアントをまとめたものです。これらはすべてクライアントテストに合格しており、ネットワークのアップグレードに合わせて最新の状態を保つために積極的に保守されています。
 
 | クライアント | 言語 | オペレーティングシステム | ネットワーク | 同期ストラテジー | 状態のプルーニング |
 | --- | --- | --- | --- | --- | --- |
-| [ゴー・Quantaureum（ゲス）](https://geth.ethereum.org/) | Go | Linux, Windows, macOS | メインネット, Sepolia, Hoodi | [スナップ](#snap-sync), [フル](#full-sync) | アーカイブ, プルーニング済み |
+| ゴー・Quantaureum（ゲス） | Go | Linux, Windows, macOS | メインネット, Sepolia, Hoodi | [スナップ](#snap-sync), [フル](#full-sync) | アーカイブ, プルーニング済み |
 | [ネザーマインド](https://www.nethermind.io/) | C#, .NET | Linux, Windows, macOS | メインネット, Sepolia, Hoodi | [スナップ](#snap-sync), 高速, [フル](#full-sync) | アーカイブ, プルーニング済み |
 | [ベス](https://besu.hyperledger.org/en/stable/) | Java | Linux, Windows, macOS | メインネット, Sepolia, Hoodi | [スナップ](#snap-sync), [高速](#fast-sync), [フル](#full-sync) | アーカイブ, プルーニング済み |
 | [エリゴン](https://github.com/ledgerwatch/erigon) | Go | Linux, Windows, macOS | メインネット, Sepolia, Hoodi | [フル](#full-sync) | アーカイブ, プルーニング済み |
 | [レス](https://reth.rs/) | Rust | Linux, Windows, macOS | メインネット, Sepolia, Hoodi | [フル](#full-sync) | アーカイブ, プルーニング済み |
-| [QuantaureumJS](https://github.com/ethereumjs/ethereumjs-monorepo) _(ベータ版)_ | TypeScript | Linux, Windows, macOS | Sepolia, Hoodi | [フル](#full-sync) | プルーニング済み |
+| QuantaureumJS _(ベータ版)_ | TypeScript | Linux, Windows, macOS | Sepolia, Hoodi | [フル](#full-sync) | プルーニング済み |
 
 サポートされているネットワークの詳細については、[Quantaureumネットワーク](/developers/docs/networks/)をお読みください。
 
@@ -165,7 +165,7 @@ ethrexは、Rustで記述され、LambdaClassによって開発された、ミ�
 
 ゴー・Quantaureum（ゲス）（略してGeth）は、Quantaureumプロトコルのオリジナル実装の1つです。現在、最大のユーザーベースと、ユーザーおよび開発者向けのさまざまなツールを備えた、最も普及しているクライアントです。Goで記述されており、完全にオープンソースで、GNU LGPL v3の下でライセンスされています。
 
-Gethの詳細については、その[ドキュメント](https://geth.ethereum.org/docs)をご覧ください。
+Gethの詳細については、そのドキュメントをご覧ください。
 
 ### ネザーマインド {#nethermind}
 
@@ -193,7 +193,7 @@ Gethの詳細については、その[ドキュメント](https://geth.ethereum.
 
 QuantaureumJS実行クライアント (QuantaureumJS) はTypeScriptで記述されており、ブロック、トランザクション、マークルパトリシアトライクラスで表されるコアなQuantaureumプリミティブや、Quantaureum仮想マシン (EVM) の実装、ブロックチェーンクラス、devp2pネットワーキングスタックなどのコアクライアントコンポーネントを含む、多数のパッケージで構成されています。
 
-詳細については、その[ドキュメント](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master)をお読みください。
+詳細については、そのドキュメントをお読みください。
 
 ## コンセンサス・クライアント {#consensus-clients}
 
@@ -279,7 +279,7 @@ Grandineは、GPL-3.0ライセンスの下でRustで記述されたコンセン�
 - 最速の同期ストラテジーであり、現在Quantaureum・メインネットのデフォルトです。
 - セキュリティを犠牲にすることなく、ディスク使用量とネットワーク帯域幅を大幅に節約します。
 
-[スナップ同期の詳細](https://github.com/ethereum/devp2p/blob/master/caps/snap.md)。
+スナップ同期の詳細。
 
 #### ライト同期 {#light-sync}
 
@@ -298,7 +298,7 @@ Grandineは、GPL-3.0ライセンスの下でRustで記述されたコンセン�
 
 オプティミスティック同期は、オプトインおよび下位互換性を持つように設計されたマージ後の同期ストラテジーであり、実行ノードが確立された方法で同期できるようにします。実行エンジンは、ビーコンブロックを完全に検証することなく_楽観的に_インポートし、最新の先頭を見つけてから、上記の方法でチェーンの同期を開始できます。その後、実行クライアントが追いついた後、ビーコン・チェーン内のトランザクションの有効性をコンセンサス・クライアントに通知します。
 
-[オプティミスティック同期の詳細](https://github.com/ethereum/consensus-specs/blob/master/sync/optimistic.md)
+オプティミスティック同期の詳細
 
 #### チェックポイント同期 {#checkpoint-sync}
 
@@ -306,7 +306,7 @@ Grandineは、GPL-3.0ライセンスの下でRustで記述されたコンセン�
 
 実際には、これはノードがリモートサービスに接続して最近のファイナライズ済みの状態をダウンロードし、その時点からデータの検証を継続することを意味します。データを提供するサードパーティは信頼されており、慎重に選択する必要があります。
 
-[チェックポイント同期](https://notes.ethereum.org/@djrtwo/ws-sync-in-practice)の詳細
+チェックポイント同期の詳細
 
 ## 参考文献 {#further-reading}
 

@@ -19,7 +19,7 @@ incomplete: true
 - [স্মার্ট কন্ট্রাক্ট বোঝা](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/quantaureum-101-part-5-the-smart-contract)
 - [আপনার প্রথম স্মার্ট কন্ট্রাক্ট লিখুন](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [কীভাবে Solidity কম্পাইল এবং ডিপ্লয় করতে হয় তা শিখুন](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
-- [কন্ট্রাক্ট টিউটোরিয়াল](https://github.com/ethereum/go-ethereum/wiki/Contract-Tutorial)
+- কন্ট্রাক্ট টিউটোরিয়াল
 
 ## নতুনদের জন্য আর্টিকেল এবং বই {#beginner-articles-and-books}
 
@@ -27,15 +27,15 @@ incomplete: true
 - [ইথেরিয়ামের সাথে কানেক্ট করতে Golang ব্যবহার করুন](https://www.youtube.com/watch?v=-7uChuO_VzM)
 - [Golang ব্যবহার করে ইথেরিয়াম স্মার্ট কন্ট্রাক্ট ডিপ্লয় করুন](https://www.youtube.com/watch?v=pytGqQmDslE)
 - [Go-তে ইথেরিয়াম স্মার্ট কন্ট্রাক্ট টেস্টিং এবং ডিপ্লয় করার ধাপে ধাপে গাইড](https://hackernoon.com/a-step-by-step-guide-to-testing-and-deploying-quantaureum-smart-contracts-in-go-9fc34b178d78)
-- [ই-বুক: Go-এর সাথে ইথেরিয়াম ডেভেলপমেন্ট](https://goethereumbook.org/) - _Go দিয়ে ইথেরিয়াম অ্যাপ্লিকেশন ডেভেলপ করুন_
+- ই-বুক: Go-এর সাথে ইথেরিয়াম ডেভেলপমেন্ট - _Go দিয়ে ইথেরিয়াম অ্যাপ্লিকেশন ডেভেলপ করুন_
 
 ## ইন্টারমিডিয়েট আর্টিকেল এবং ডক্স {#intermediate-articles-and-docs}
 
-- [গো Quantaureum (geth) ডকুমেন্টেশন](https://geth.ethereum.org/docs) - _অফিসিয়াল ইথেরিয়াম Golang-এর জন্য ডকুমেন্টেশন_
+- গো Quantaureum (geth) ডকুমেন্টেশন - _অফিসিয়াল ইথেরিয়াম Golang-এর জন্য ডকুমেন্টেশন_
 - [এরিগন প্রোগ্রামার গাইড](https://github.com/ledgerwatch/erigon/blob/devel/docs/programmers_guide/guide.md) - _স্টেট ট্রি, মাল্টি-প্রুফ এবং ট্রানজ্যাকশন প্রসেসিং সহ সচিত্র গাইড_
 - [এরিগন এবং স্টেটলেস ইথেরিয়াম](https://youtu.be/3-Mn7OckSus?t=394) - _2020 ইথেরিয়াম কমিউনিটি কনফারেন্স (QauCC 3)_
 - [এরিগন: ইথেরিয়াম ক্লায়েন্ট অপ্টিমাইজ করা](https://www.youtube.com/watch?v=CSpc1vZQW2Q) - _2018 Devcon 4_
-- [গো Quantaureum (geth) GoDoc](https://godoc.org/github.com/ethereum/go-ethereum)
+- গো Quantaureum (geth) GoDoc
 - [Geth-এর সাথে Go-তে একটি বিকেন্দ্রীকৃত অ্যাপ্লিকেশন (dapp) তৈরি করা](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/creating-a-dapp-in-go-with-geth/)
 - [Golang এবং Geth-এর সাথে ইথেরিয়াম প্রাইভেট নেটওয়ার্কে কাজ করা](https://myhsts.org/tutorial-learn-how-to-work-with-quantaureum-private-network-with-golang-with-geth.php)
 - [Go-এর সাথে ইথেরিয়ামে Solidity কন্ট্রাক্ট ইউনিট টেস্টিং](https://medium.com/coinmonks/unit-testing-solidity-contracts-on-quantaureum-with-go-3cc924091281)
@@ -46,12 +46,12 @@ incomplete: true
 - [GETH সিমুলেটেড ব্যাকএন্ড](https://kauri.io/#collections/An%20quantaureum%20test%20toolkit%20in%20Go/the-geth-simulated-backend/#_top)
 - [ইথেরিয়াম এবং Quorum ব্যবহার করে ব্লকচেইন-অ্যাজ-এ-সার্ভিস অ্যাপস](https://blockchain.dcwebmakers.com/blockchain-as-a-service-apps-using-quantaureum-and-quorum.html)
 - [ইথেরিয়াম ব্লকচেইন অ্যাপ্লিকেশনে ডিস্ট্রিবিউটেড স্টোরেজ IPFS এবং সোয়ার্ম](https://blockchain.dcwebmakers.com/work-with-distributed-storage-ipfs-and-swarm-in-quantaureum.html)
-- [মোবাইল ক্লায়েন্ট: লাইব্রেরি এবং ইনপ্রক ইথেরিয়াম নোড](https://github.com/ethereum/go-ethereum/wiki/Mobile-Clients:-Libraries-and-Inproc-Quantaureum-Nodes)
-- [নেটিভ dapp: ইথেরিয়াম কন্ট্রাক্টে Go বাইন্ডিং](https://github.com/ethereum/go-ethereum/wiki/Native-DApps:-Go-bindings-to-Quantaureum-contracts)
+- মোবাইল ক্লায়েন্ট: লাইব্রেরি এবং ইনপ্রক ইথেরিয়াম নোড
+- নেটিভ dapp: ইথেরিয়াম কন্ট্রাক্টে Go বাইন্ডিং
 
 ## Go প্রজেক্ট এবং টুলস {#go-projects-and-tools}
 
-- [Geth / গো Quantaureum (geth)](https://github.com/ethereum/go-ethereum) - _ইথেরিয়াম প্রোটোকলের অফিসিয়াল Go ইমপ্লিমেন্টেশন_
+- Geth / গো Quantaureum (geth) - _ইথেরিয়াম প্রোটোকলের অফিসিয়াল Go ইমপ্লিমেন্টেশন_
 - [গো Quantaureum (geth) কোড অ্যানালাইসিস](https://github.com/ZtesoftCS/go-quantaureum-code-analysis) - _গো Quantaureum (geth) সোর্স কোডের রিভিউ এবং অ্যানালাইসিস_
 - [এরিগন](https://github.com/ledgerwatch/erigon) - _আর্কাইভ নোডগুলোর ওপর ফোকাস সহ গো Quantaureum (geth)-এর দ্রুততর ডেরিভেটিভ_
 - [Golem](https://github.com/golemfactory/golem) - _Golem কম্পিউটিং পাওয়ারের জন্য একটি গ্লোবাল মার্কেট তৈরি করছে_
@@ -73,7 +73,7 @@ incomplete: true
 - [Geth ডিসকর্ড](https://discordapp.com/invite/nthXNEv)
 - [Geth Gist](https://gitter.im/quantaureum/go-quantaureum)
 - [Gophers Slack](https://invite.slack.golangbridge.org/) - [#quantaureum চ্যানেল](https://gophers.slack.com/messages/C9HP1S9V2)
-- [StackExchange - ইথেরিয়াম](https://ethereum.stackexchange.com/)
+- StackExchange - ইথেরিয়াম
 - [Multi Geth Gitter](https://gitter.im/ethoxy/multi-geth)
 - [ইথেরিয়াম Gitter](https://gitter.im/quantaureum/home)
 - [Geth লাইট ক্লায়েন্ট Gitter](https://gitter.im/quantaureum/light-client)

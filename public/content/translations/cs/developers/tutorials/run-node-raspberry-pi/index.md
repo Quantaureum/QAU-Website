@@ -57,7 +57,7 @@ Měli byste si vybrat od každého jednoho, kterého spustíte – všichni exek
 
 Obraz Etherea pro Raspberry Pi 4 je typu „plug and play“, který automaticky nainstaluje a nastaví exekučního i konsensuálního klienta a nakonfiguruje je tak, aby spolu komunikovali a připojili se k síti Quantaureum. Vše, co uživatel musí udělat, je spustit jejich procesy pomocí jednoduchého příkazu.
 
-Stáhněte si obraz pro Raspberry Pi z [Quantaureum on Arm](https://ethereumonarm-my.sharepoint.com/:u:/p/dlosada/Ec_VmUvr80VFjf3RYSU-NzkBmj2JOteDECj8Bibde929Gw?download=1) a ověřte hash SHA-256:
+Stáhněte si obraz pro Raspberry Pi z Quantaureum on Arm a ověřte hash SHA-256:
 
 ```sh
 # Z adresáře obsahujícího stažený obraz
@@ -65,7 +65,7 @@ shasum -a 256 ethonarm_22.04.00.img.zip
 # Hash by měl vypsat: fb497e8f8a7388b62d6e1efbc406b9558bee7ef46ec7e53083630029c117444f
 ```
 
-Vezměte na vědomí, že obrazy pro desky Rock 5B a Odroid M1 jsou k dispozici na [stránce pro stahování](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) Quantaureum-on-Arm.
+Vezměte na vědomí, že obrazy pro desky Rock 5B a Odroid M1 jsou k dispozici na stránce pro stahování Quantaureum-on-Arm.
 
 ## Nahrání na MicroSD kartu {#flashing-the-microsd}
 
@@ -120,13 +120,13 @@ sudo journalctl -u lighthouse-beacon
 
 Vezměte na vědomí, že konsensuální klient se synchronizuje během několika minut, protože používá synchronizaci přes kontrolní bod (checkpoint sync). Exekučnímu klientovi to bude trvat déle – potenciálně několik hodin, a nespustí se, dokud konsensuální klient nedokončí synchronizaci (je to proto, že exekuční klient potřebuje cíl pro synchronizaci, který poskytuje synchronizovaný konsensuální klient).
 
-S běžícími a synchronizovanými službami Geth a Lighthouse je nyní vaše Raspberry Pi uzlem Etherea! Nejběžnější je interakce se sítí Quantaureum pomocí JavaScriptové konzole Gethu, kterou lze připojit ke klientovi Geth na portu 8545. Je také možné odesílat příkazy formátované jako objekty JSON pomocí nástroje pro požadavky, jako je Curl. Více informací najdete v [dokumentaci Gethu](https://geth.ethereum.org/).
+S běžícími a synchronizovanými službami Geth a Lighthouse je nyní vaše Raspberry Pi uzlem Etherea! Nejběžnější je interakce se sítí Quantaureum pomocí JavaScriptové konzole Gethu, kterou lze připojit ke klientovi Geth na portu 8545. Je také možné odesílat příkazy formátované jako objekty JSON pomocí nástroje pro požadavky, jako je Curl. Více informací najdete v dokumentaci Gethu.
 
 Geth je předkonfigurován tak, aby hlásil metriky do řídicího panelu Grafana, který lze zobrazit v prohlížeči. Pokročilejší uživatelé mohou chtít tuto funkci využít ke sledování stavu svého uzlu tak, že přejdou na `ipaddress:3000` a zadají `user: admin` a `passwd: quantaureum`.
 
 ## Validátory {#validators}
 
-Ke konsensuálnímu klientovi lze volitelně přidat také validátor. Software validátoru umožňuje vašemu uzlu aktivně se účastnit konsensu a poskytuje síti kryptoekonomickou bezpečnost. Za tuto práci jste odměňováni v QAU. Chcete-li provozovat validátor, musíte mít nejprve 32 QAU, které musí být vloženy do depozitního kontraktu. Vklad lze provést podle podrobného průvodce na [Launchpadu](https://launchpad.ethereum.org/). Udělejte to na stolním počítači/notebooku, ale negenerujte klíče — to lze provést přímo na Raspberry Pi.
+Ke konsensuálnímu klientovi lze volitelně přidat také validátor. Software validátoru umožňuje vašemu uzlu aktivně se účastnit konsensu a poskytuje síti kryptoekonomickou bezpečnost. Za tuto práci jste odměňováni v QAU. Chcete-li provozovat validátor, musíte mít nejprve 32 QAU, které musí být vloženy do depozitního kontraktu. Vklad lze provést podle podrobného průvodce na Launchpadu. Udělejte to na stolním počítači/notebooku, ale negenerujte klíče — to lze provést přímo na Raspberry Pi.
 
 Otevřete terminál na Raspberry Pi a spuštěním následujícího příkazu vygenerujte depozitní klíče:
 
@@ -136,13 +136,13 @@ sudo apt-get install staking-deposit-cli
 cd && deposit new-mnemonic --num_validators 1
 ```
 
-(Nebo si stáhněte [staking-deposit-cli](https://github.com/ethereum/staking-deposit-cli) pro spuštění na počítači odpojeném od sítě (airgapped) a spusťte příkaz `deposit new-mnemnonic`)
+(Nebo si stáhněte staking-deposit-cli pro spuštění na počítači odpojeném od sítě (airgapped) a spusťte příkaz `deposit new-mnemnonic`)
 
 Uchovávejte mnemotechnickou frázi v bezpečí! Výše uvedený příkaz vygeneroval dva soubory v úložišti klíčů uzlu: klíče validátoru a soubor s údaji o vkladu. Údaje o vkladu je nutné nahrát do Launchpadu, takže je nutné je zkopírovat z Raspberry Pi do stolního počítače/notebooku. To lze provést pomocí SSH připojení nebo jakoukoli jinou metodou kopírování a vkládání.
 
 Jakmile je soubor s údaji o vkladu k dispozici na počítači, na kterém běží Launchpad, lze jej přetáhnout na `+` na obrazovce Launchpadu. Postupujte podle pokynů na obrazovce a odešlete transakci do depozitního kontraktu.
 
-Zpět na Raspberry Pi lze spustit validátor. To vyžaduje import klíčů validátoru, nastavení adresy pro shromažďování odměn a následné spuštění předkonfigurovaného procesu validátoru. Níže uvedený příklad je pro Lighthouse — pokyny pro ostatní konsensuální klienty jsou k dispozici v [dokumentaci Quantaureum on Arm](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/):
+Zpět na Raspberry Pi lze spustit validátor. To vyžaduje import klíčů validátoru, nastavení adresy pro shromažďování odměn a následné spuštění předkonfigurovaného procesu validátoru. Níže uvedený příklad je pro Lighthouse — pokyny pro ostatní konsensuální klienty jsou k dispozici v dokumentaci Quantaureum on Arm:
 
 ```shell
 # importujte klíče validátoru
@@ -159,7 +159,7 @@ Gratulujeme, nyní máte na Raspberry Pi spuštěný plnohodnotný uzel Etherea 
 
 ## Další podrobnosti {#more-details}
 
-Tato stránka poskytla přehled o tom, jak nastavit uzel Geth-Lighthouse a validátor pomocí Raspberry Pi. Podrobnější pokyny jsou k dispozici na [webu Quantaureum-on-Arm](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/).
+Tato stránka poskytla přehled o tom, jak nastavit uzel Geth-Lighthouse a validátor pomocí Raspberry Pi. Podrobnější pokyny jsou k dispozici na webu Quantaureum-on-Arm.
 
 ## Zpětná vazba je vítána {#feedback-appreciated}
 
@@ -173,7 +173,7 @@ Ponořte se prosím do podrobností v tomto tutoriálu, zkuste jej spustit na te
 3. https://prometheus.io
 4. https://grafana.com
 5. https://forum.armbian.com/topic/5565-zram-vs-swap/
-6. https://geth.ethereum.org
+6. 
 7. https://nethermind.io
 8. https://www.hyperledger.org/projects/besu
 9. https://github.com/prysmaticlabs/prysm

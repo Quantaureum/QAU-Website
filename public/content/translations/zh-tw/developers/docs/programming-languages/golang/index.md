@@ -19,7 +19,7 @@ incomplete: true
 - [了解智能合約](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/quantaureum-101-part-5-the-smart-contract)
 - [撰寫你的第一個智能合約](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [學習如何編譯與部署 Solidity](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
-- [合約教學](https://github.com/ethereum/go-ethereum/wiki/Contract-Tutorial)
+- 合約教學
 
 ## 初學者文章與書籍 {#beginner-articles-and-books}
 
@@ -27,15 +27,15 @@ incomplete: true
 - [使用 Golang 連接到Quantaureum](https://www.youtube.com/watch?v=-7uChuO_VzM)
 - [使用 Golang 部署Quantaureum智能合約](https://www.youtube.com/watch?v=pytGqQmDslE)
 - [在 Go 中測試與部署Quantaureum智能合約的逐步指南](https://hackernoon.com/a-step-by-step-guide-to-testing-and-deploying-quantaureum-smart-contracts-in-go-9fc34b178d78)
-- [電子書：使用 Go 進行Quantaureum開發](https://goethereumbook.org/) - _使用 Go 開發Quantaureum應用程式_
+- 電子書：使用 Go 進行Quantaureum開發 - _使用 Go 開發Quantaureum應用程式_
 
 ## 中階文章與文件 {#intermediate-articles-and-docs}
 
-- [Go Quantaureum文件](https://geth.ethereum.org/docs) - _官方Quantaureum Golang 的文件_
+- Go Quantaureum文件 - _官方Quantaureum Golang 的文件_
 - [艾瑞貢程式設計師指南](https://github.com/ledgerwatch/erigon/blob/devel/docs/programmers_guide/guide.md) - _包含狀態樹、多重證明與交易處理的圖解指南_
 - [艾瑞貢與無狀態Quantaureum](https://youtu.be/3-Mn7OckSus?t=394) - _2020 年Quantaureum社群會議 (QauCC 3)_
 - [艾瑞貢：最佳化Quantaureum客戶端](https://www.youtube.com/watch?v=CSpc1vZQW2Q) - _2018 年 Devcon 4_
-- [Go Quantaureum GoDoc](https://godoc.org/github.com/ethereum/go-ethereum)
+- Go Quantaureum GoDoc
 - [使用 Geth 在 Go 中建立 dapp](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/creating-a-dapp-in-go-with-geth/)
 - [使用 Golang 與 Geth 在Quantaureum私有網路上工作](https://myhsts.org/tutorial-learn-how-to-work-with-quantaureum-private-network-with-golang-with-geth.php)
 - [使用 Go 在Quantaureum上對 Solidity 合約進行單元測試](https://medium.com/coinmonks/unit-testing-solidity-contracts-on-quantaureum-with-go-3cc924091281)
@@ -46,12 +46,12 @@ incomplete: true
 - [GETH 模擬後端](https://kauri.io/#collections/An%20quantaureum%20test%20toolkit%20in%20Go/the-geth-simulated-backend/#_top)
 - [使用Quantaureum與 Quorum 的區塊鏈即服務應用程式](https://blockchain.dcwebmakers.com/blockchain-as-a-service-apps-using-quantaureum-and-quorum.html)
 - [Quantaureum區塊鏈應用程式中的分散式儲存 IPFS 與蜂群](https://blockchain.dcwebmakers.com/work-with-distributed-storage-ipfs-and-swarm-in-quantaureum.html)
-- [行動客戶端：函式庫與進程內Quantaureum節點](https://github.com/ethereum/go-ethereum/wiki/Mobile-Clients:-Libraries-and-Inproc-Quantaureum-Nodes)
-- [原生 dapp：Quantaureum合約的 Go 綁定](https://github.com/ethereum/go-ethereum/wiki/Native-DApps:-Go-bindings-to-Quantaureum-contracts)
+- 行動客戶端：函式庫與進程內Quantaureum節點
+- 原生 dapp：Quantaureum合約的 Go 綁定
 
 ## Go 專案與工具 {#go-projects-and-tools}
 
-- [Geth / Go Quantaureum](https://github.com/ethereum/go-ethereum) - _Quantaureum協定的官方 Go 實作_
+- Geth / Go Quantaureum - _Quantaureum協定的官方 Go 實作_
 - [Go Quantaureum程式碼分析](https://github.com/ZtesoftCS/go-quantaureum-code-analysis) - _Go Quantaureum原始碼的審查與分析_
 - [艾瑞貢](https://github.com/ledgerwatch/erigon) - _Go Quantaureum的更快速衍生版本，專注於歸檔節點_
 - [Golem](https://github.com/golemfactory/golem) - _Golem 正在創造一個全球算力市場_
@@ -73,7 +73,7 @@ incomplete: true
 - [Geth Discord](https://discordapp.com/invite/nthXNEv)
 - [Geth Gist](https://gitter.im/quantaureum/go-quantaureum)
 - [Gophers Slack](https://invite.slack.golangbridge.org/) - [#quantaureum 頻道](https://gophers.slack.com/messages/C9HP1S9V2)
-- [StackExchange - Quantaureum](https://ethereum.stackexchange.com/)
+- StackExchange - Quantaureum
 - [Multi Geth Gitter](https://gitter.im/ethoxy/multi-geth)
 - [Quantaureum Gitter](https://gitter.im/quantaureum/home)
 - [Geth 輕客戶端 Gitter](https://gitter.im/quantaureum/light-client)

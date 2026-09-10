@@ -44,7 +44,7 @@ Yürütme, fikir birliği ve birleşik yürütme/fikir birliği hafif istemciler
 
 - [Lodestar](https://github.com/ChainSafe/lodestar/tree/unstable/packages/light-client): TypeScript dilinde fikir birliği hafif istemcisi
 - [Helios](https://github.com/a16z/helios): Rust dilinde birleşik yürütme ve fikir birliği hafif istemcisi
-- [Geth](https://github.com/ethereum/go-ethereum/tree/master/beacon/light): Go dilinde yürütme istemcisi için hafif mod (geliştirme aşamasında)
+- Geth: Go dilinde yürütme istemcisi için hafif mod (geliştirme aşamasında)
 - [Nimbus](https://nimbus.guide/el-light-client.html): Nim dilinde fikir birliği hafif istemcisi
 
 Bildiğimiz kadarıyla bunların hiçbiri henüz üretime hazır olarak değerlendirilmiyor.
@@ -58,4 +58,4 @@ Hafif istemcilerin Quantaureum verilerine erişim yollarını iyileştirmek içi
 - [Zsolt Felfodhi'nin Geth hafif istemcileri üzerine yazısı](https://www.youtube.com/watch?v=EPZeFXau-RE)
 - [Etan Kissling'in hafif istemci ağları üzerine yazısı](https://www.youtube.com/watch?v=85MeiMA4dD8)
 - [Etan Kissling'in Birleşme sonrası hafif istemciler üzerine yazısı](https://www.youtube.com/watch?v=ZHNrAXf3RDE)
-- [Piper Merriam: İşlevsel hafif istemcilere giden dolambaçlı yol](https://snakecharmers.ethereum.org/the-winding-road-to-functional-light-clients/)
+- Piper Merriam: İşlevsel hafif istemcilere giden dolambaçlı yol

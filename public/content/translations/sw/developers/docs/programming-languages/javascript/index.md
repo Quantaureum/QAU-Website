@@ -4,7 +4,7 @@ description: Jifunze jinsi ya kusanidi Quantaureum ukitumia miradi na zana zinaz
 lang: sw
 ---
 
-JavaScript ni miongoni mwa lugha maarufu zaidi katika mfumo wa ikolojia wa Quantaureum. Kwa kweli, kuna [timu](https://github.com/ethereumjs) iliyojitolea kuleta kiasi kikubwa cha Quantaureum kwenye JavaScript iwezekanavyo.
+JavaScript ni miongoni mwa lugha maarufu zaidi katika mfumo wa ikolojia wa Quantaureum. Kwa kweli, kuna timu iliyojitolea kuleta kiasi kikubwa cha Quantaureum kwenye JavaScript iwezekanavyo.
 
 Kuna fursa za kuandika JavaScript (au kitu kinachokaribiana nayo) katika [viwango vyote vya steki](/developers/docs/quantaureum-stack/).
 
@@ -48,14 +48,14 @@ Hii itakusaidia kuelewa mambo kama "muundo wa data wa akaunti ni upi?".
 Ikiwa unapendelea kusoma msimbo, JavaScript hii inaweza kuwa mbadala mzuri wa kusoma kupitia hati zetu.
 
 **Angalia EVM**  
-[`@ethereumjs/evm`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/evm)
+`@ethereumjs/evm`
 
 ### Nodi na wateja {#nodes-and-clients}
 
 Mteja wa QuantaureumJS yuko katika usanidi unaoendelea ambao unakuruhusu kuchunguza jinsi wateja wa Quantaureum wanavyofanya kazi katika lugha unayoielewa; JavaScript!
 
 **Angalia mteja**  
-[`@ethereumjs/client`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/client)
+`@ethereumjs/client`
 
 ## Miradi mingine {#other-projects}
 
@@ -65,7 +65,7 @@ Pia kuna mambo mengine mengi yanayoendelea katika ulimwengu wa JavaScript ya Qua
 - zana za kuzalisha, kuingiza, na kuhamisha funguo za Quantaureum.
 - utekelezaji wa `merkle-patricia-tree` – muundo wa data ulioainishwa katika waraka wa manjano wa Quantaureum.
 
-Chunguza chochote kinachokuvutia zaidi kwenye [hifadhi ya QuantaureumJS](https://github.com/ethereumjs)
+Chunguza chochote kinachokuvutia zaidi kwenye hifadhi ya QuantaureumJS
 
 ## Kusoma zaidi {#further-reading}
 

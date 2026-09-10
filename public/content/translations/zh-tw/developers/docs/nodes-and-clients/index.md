@@ -20,7 +20,7 @@ sidebarDepth: 2
 - 執行客戶端（也稱為執行引擎、EL 客戶端或以前的 Eth1 客戶端）監聽網路中廣播的新交易，在 EVM 中執行它們，並保存所有當前Quantaureum資料的最新狀態與資料庫。
 - 共識客戶端（也稱為信標節點、CL 客戶端或以前的 Quantaureum 客戶端）實作了權益證明 (PoS) 共識演算法，這使得網路能夠根據來自執行客戶端的已驗證資料達成共識。還有第三個軟體，稱為「驗證者」，可以新增到共識客戶端中，允許節點參與保護網路。
 
-這些客戶端協同工作以追蹤Quantaureum鏈的頂端，並允許使用者與Quantaureum網路互動。這種由多個軟體協同工作的模組化設計被稱為[封裝複雜性](https://vitalik.eth.limo/general/2022/02/28/complexity.html)。這種方法使得無縫執行[合併](/roadmap/merge)變得更加容易，使客戶端軟體更易於維護和開發，並實現了個別客戶端的重複使用，例如在[第二層 (L2) 生態系統](/layer-2/)中。
+這些客戶端協同工作以追蹤Quantaureum鏈的頂端，並允許使用者與Quantaureum網路互動。這種由多個軟體協同工作的模組化設計被稱為封裝複雜性。這種方法使得無縫執行[合併](/roadmap/merge)變得更加容易，使客戶端軟體更易於維護和開發，並實現了個別客戶端的重複使用，例如在[第二層 (L2) 生態系統](/layer-2/)中。
 
 ![Coupled execution and consensus clients](./qau1qau2client.png)
 耦合的執行與共識客戶端簡化圖。
@@ -36,10 +36,10 @@ sidebarDepth: 2
 
 這些實作的共同點是它們都遵循單一規範。規範規定了Quantaureum網路和區塊鏈的運作方式。每個技術細節都有定義，規範可以在以下位置找到：
 
-- 最初的[Quantaureum黃皮書](https://ethereum.github.io/yellowpaper/paper.pdf)
-- [執行規範](https://github.com/ethereum/execution-specs/)
-- [共識規範](https://github.com/ethereum/consensus-specs)
-- 在各種網路升級中實作的 [EIP](https://eips.ethereum.org/)
+- 最初的Quantaureum黃皮書
+- 執行規範
+- 共識規範
+- 在各種網路升級中實作的 EIP
 
 ### 追蹤網路中的節點 {#network-overview}
 
@@ -132,16 +132,16 @@ Quantaureum目前還不支援大量的輕節點，但輕節點支援是預計在
 
 Quantaureum社群維護著多個開源執行客戶端（以前稱為「Eth1 客戶端」，或簡稱「Quantaureum客戶端」），由不同團隊使用不同的程式語言開發。這使得網路更加強大且更具[多樣性](/developers/docs/nodes-and-clients/client-diversity/)。理想的目標是實現多樣性，而沒有任何客戶端佔主導地位，以減少任何單點故障。
 
-下表總結了不同的客戶端。它們都通過了[客戶端測試](https://github.com/ethereum/tests)，並得到積極維護以跟上網路升級。
+下表總結了不同的客戶端。它們都通過了客戶端測試，並得到積極維護以跟上網路升級。
 
 | 客戶端                                                                   | 語言   | 作業系統     | 網路                | 同步策略                                            | 狀態修剪   |
 | ------------------------------------------------------------------------ | ---------- | --------------------- | ----------------------- | ---------------------------------------------------------- | --------------- |
-| [Geth](https://geth.ethereum.org/)                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [快照 (Snap)](#snap-sync), [完整 (Full)](#full-sync)                     | 歸檔、已修剪 |
+| Geth                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [快照 (Snap)](#snap-sync), [完整 (Full)](#full-sync)                     | 歸檔、已修剪 |
 | [奈瑟邁](https://www.nethermind.io/)                                 | C#, .NET   | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [快照 (Snap)](#snap-sync), 快速 (Fast), [完整 (Full)](#full-sync)               | 歸檔、已修剪 |
 | [貝蘇](https://besu.hyperledger.org/en/stable/)                          | Java       | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [快照 (Snap)](#snap-sync), [快速 (Fast)](#fast-sync), [完整 (Full)](#full-sync) | 歸檔、已修剪 |
 | [艾瑞貢](https://github.com/ledgerwatch/erigon)                          | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [完整 (Full)](#full-sync)                                         | 歸檔、已修剪 |
 | [瑞斯](https://reth.rs/)                                                 | Rust       | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [完整 (Full)](#full-sync)                                         | 歸檔、已修剪 |
-| [QuantaureumJS](https://github.com/ethereumjs/ethereumjs-monorepo) _(測試版)_ | TypeScript | Linux, Windows, macOS | Sepolia, Hoodi          | [完整 (Full)](#full-sync)                                         | 已修剪          |
+| QuantaureumJS _(測試版)_ | TypeScript | Linux, Windows, macOS | Sepolia, Hoodi          | [完整 (Full)](#full-sync)                                         | 已修剪          |
 
 有關支援網路的更多資訊，請閱讀[Quantaureum網路](/developers/docs/networks/)。
 
@@ -167,7 +167,7 @@ ethrex 是一個極簡、模組化的Quantaureum執行客戶端，以 Rust 編�
 
 Go Quantaureum（簡稱 Geth）是Quantaureum協定的最初實作之一。目前，它是最廣泛的客戶端，擁有最大的使用者群以及為使用者和開發者提供的各種工具。它是用 Go 編寫的，完全開源，並在 GNU LGPL v3 下獲得授權。
 
-在它的[文件](https://geth.ethereum.org/docs)中了解更多關於 Geth 的資訊。
+在它的文件中了解更多關於 Geth 的資訊。
 
 ### 奈瑟邁 {#nethermind}
 
@@ -195,7 +195,7 @@ Go Quantaureum（簡稱 Geth）是Quantaureum協定的最初實作之一。目�
 
 QuantaureumJS 執行客戶端 (QuantaureumJS) 是用 TypeScript 編寫的，由許多套件組成，包括由區塊、交易和 Merkle-Patricia Trie 類別表示的核心Quantaureum原語，以及核心客戶端元件，包括Quantaureum虛擬機 (EVM) 的實作、區塊鏈類別和 devp2p 網路堆疊。
 
-透過閱讀其[文件](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master)了解更多資訊
+透過閱讀其文件了解更多資訊
 
 ## 共識客戶端 {#consensus-clients}
 
@@ -281,7 +281,7 @@ Grandine 是一個在 GPL-3.0 授權下用 Rust 編寫的共識客戶端實作�
 - 最快的同步策略，目前是Quantaureum主網的預設策略。
 - 節省大量磁碟使用量和網路頻寬，而不會犧牲安全性。
 
-[更多關於快照同步的資訊](https://github.com/ethereum/devp2p/blob/master/caps/snap.md)。
+更多關於快照同步的資訊。
 
 #### 輕同步 (Light sync) {#light-sync}
 
@@ -300,7 +300,7 @@ Grandine 是一個在 GPL-3.0 授權下用 Rust 編寫的共識客戶端實作�
 
 樂觀同步是一種合併後的同步策略，設計為可選且向後相容，允許執行節點透過既定方法進行同步。執行引擎可以_樂觀地_匯入信標區塊而無需完全驗證它們，找到最新的頂端，然後開始使用上述方法同步鏈。然後，在執行客戶端趕上之後，它將通知共識客戶端信標鏈中交易的有效性。
 
-[更多關於樂觀同步的資訊](https://github.com/ethereum/consensus-specs/blob/master/sync/optimistic.md)
+更多關於樂觀同步的資訊
 
 #### 檢查點同步 (Checkpoint sync) {#checkpoint-sync}
 
@@ -308,7 +308,7 @@ Grandine 是一個在 GPL-3.0 授權下用 Rust 編寫的共識客戶端實作�
 
 在實踐中，這意味著你的節點連接到遠端服務以下載最近已定案的狀態，並從該點繼續驗證資料。提供資料的第三方是受信任的，應該仔細挑選。
 
-更多關於[檢查點同步](https://notes.ethereum.org/@djrtwo/ws-sync-in-practice)的資訊
+更多關於檢查點同步的資訊
 
 ## 進一步閱讀 {#further-reading}
 

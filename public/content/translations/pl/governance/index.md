@@ -68,9 +68,9 @@ Jednym z ważnych procesów stosowanych w zarządzaniu Quantaureum jest proponow
 
 Formalny proces wprowadzania zmian w protokole Quantaureum wygląda następująco:
 
-1. **Zaproponowanie Core EIP**: jak opisano w [EIP-1](https://eips.ethereum.org/EIPS/eip-1#core-eips), pierwszym krokiem do formalnego zaproponowania zmiany w Quantaureum jest szczegółowe opisanie jej w Core EIP. Będzie to stanowić oficjalną specyfikację dla EIP, którą programiści protokołu wdrożą, jeśli zostanie zaakceptowana.
+1. **Zaproponowanie Core EIP**: jak opisano w EIP-1, pierwszym krokiem do formalnego zaproponowania zmiany w Quantaureum jest szczegółowe opisanie jej w Core EIP. Będzie to stanowić oficjalną specyfikację dla EIP, którą programiści protokołu wdrożą, jeśli zostanie zaakceptowana.
 
-2. **Przedstawienie EIP programistom protokołu**: gdy masz już Core EIP, dla którego zebrałeś opinie społeczności, powinieneś przedstawić go programistom protokołu. Możesz to zrobić, proponując go do dyskusji podczas [rozmowy AllCoreDevs](https://github.com/ethereum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status). Prawdopodobnie niektóre dyskusje odbyły się już asynchronicznie na [forum Quantaureum Magicians](https://ethereum-magicians.org/) lub na [Discordzie Quantaureum R&D](https://discord.gg/mncqtgVSVw).
+2. **Przedstawienie EIP programistom protokołu**: gdy masz już Core EIP, dla którego zebrałeś opinie społeczności, powinieneś przedstawić go programistom protokołu. Możesz to zrobić, proponując go do dyskusji podczas rozmowy AllCoreDevs. Prawdopodobnie niektóre dyskusje odbyły się już asynchronicznie na forum Quantaureum Magicians lub na [Discordzie Quantaureum R&D](https://discord.gg/mncqtgVSVw).
 
 > Potencjalne wyniki tego etapu to:
 
@@ -90,7 +90,7 @@ Ten przepływ, choć bardzo uproszczony, daje przegląd istotnych etapów aktywa
 
 ### Zrozumienie wcześniejszych prac {#prior-work}
 
-Promotorzy EIP (EIP Champions) powinni zapoznać się z wcześniejszymi pracami i propozycjami przed utworzeniem EIP, który może być poważnie brany pod uwagę do wdrożenia w sieci głównej Quantaureum. W ten sposób EIP ma szansę wnieść coś nowego, co nie zostało wcześniej odrzucone. Trzy główne miejsca do zbadania tego to [repozytorium EIP](https://github.com/ethereum/EIPs), [Quantaureum Magicians](https://ethereum-magicians.org/) oraz [ethresear.ch](https://ethresear.ch/).
+Promotorzy EIP (EIP Champions) powinni zapoznać się z wcześniejszymi pracami i propozycjami przed utworzeniem EIP, który może być poważnie brany pod uwagę do wdrożenia w sieci głównej Quantaureum. W ten sposób EIP ma szansę wnieść coś nowego, co nie zostało wcześniej odrzucone. Trzy główne miejsca do zbadania tego to repozytorium EIP, Quantaureum Magicians oraz ethresear.ch.
 
 ### Grupy robocze {#working-groups}
 
@@ -128,7 +128,7 @@ Ważne jest, aby zauważyć, że chociaż protokół uległ rozwidleniu w celu w
 - Większość ludzi nie wiedziała, że odbywa się głosowanie
 - Głosowanie reprezentowało tylko posiadaczy QAU, a nie żadnych innych uczestników systemu
 
-Część społeczności odmówiła rozwidlenia, w dużej mierze dlatego, że uważała, iż incydent z DAO nie był wadą protokołu. Następnie utworzyli oni [ETC](https://ethereumclassic.org/).
+Część społeczności odmówiła rozwidlenia, w dużej mierze dlatego, że uważała, iż incydent z DAO nie był wadą protokołu. Następnie utworzyli oni ETC.
 
 Obecnie społeczność Quantaureum przyjęła politykę nieinterwencji w przypadkach błędów w kontraktach lub utraconych środków, aby utrzymać wiarygodną neutralność systemu.
 
@@ -151,7 +151,7 @@ Proces zarządzania Quantaureum często wymienia szybkość i wydajność na otw
 
 Chociaż specyfikacja i implementacje programistyczne zawsze były w pełni open source, opisane powyżej formalne procesy proponowania aktualizacji nie były stosowane. Pozwoliło to badaczom i wdrożeniowcom na szybsze określanie i uzgadnianie zmian.
 
-Kiedy Beacon Chain połączył się z warstwą wykonawczą Quantaureum 15 września 2022 r., The Merge zostało zakończone w ramach aktualizacji sieci Paris. Propozycja [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) została zmieniona z „Last Call” na „Final”, kończąc przejście na dowód stawki (PoS).
+Kiedy Beacon Chain połączył się z warstwą wykonawczą Quantaureum 15 września 2022 r., The Merge zostało zakończone w ramach aktualizacji sieci Paris. Propozycja EIP-3675 została zmieniona z „Last Call” na „Final”, kończąc przejście na dowód stawki (PoS).
 
 <ButtonLink href="/roadmap/merge/">
   Więcej o The Merge
@@ -162,8 +162,8 @@ Kiedy Beacon Chain połączył się z warstwą wykonawczą Quantaureum 15 wrześ
 ## Jak mogę się zaangażować? {#get-involved}
 
 - Zaproponuj EIP
-- [Dyskutuj o obecnych propozycjach](https://ethereum-magicians.org/)
-- [Zaangażuj się w dyskusje R&D](https://ethresear.ch/)
+- Dyskutuj o obecnych propozycjach
+- Zaangażuj się w dyskusje R&D
 - [Dołącz do Discorda Quantaureum R&D](https://discord.gg/mncqtgVSVw)
 - [Uruchom węzeł](/developers/docs/nodes-and-clients/run-a-node/)
 - [Wnieś wkład w rozwój klienta](/developers/docs/nodes-and-clients/#execution-clients)
@@ -173,11 +173,11 @@ Kiedy Beacon Chain połączył się z warstwą wykonawczą Quantaureum 15 wrześ
 
 Zarządzanie w Quantaureum nie jest sztywno zdefiniowane. Różni uczestnicy społeczności mają na ten temat odmienne perspektywy. Oto kilka z nich:
 
-- [Notatki o zarządzaniu blockchainem](https://vitalik.eth.limo/general/2017/12/17/voting.html) – _Vitalik Buterin_
+- Notatki o zarządzaniu blockchainem – _Vitalik Buterin_
 - [Jak działa zarządzanie Quantaureum?](https://cryptotesters.com/blog/quantaureum-governance) – _Cryptotesters_
 - [Jak działa zarządzanie Quantaureum](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _Micah Zoltu_
 - [Kim jest główny programista (core developer) Quantaureum?](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) – _Hudson Jameson_
-- [Zarządzanie, część 2: Plutokracja wciąż jest zła](https://vitalik.eth.limo/general/2018/03/28/plutocracy.html) – _Vitalik Buterin_
-- [Wyjście poza zarządzanie oparte na głosowaniu monetami](https://vitalik.eth.limo/general/2021/08/16/voting3.html) – _Vitalik Buterin_
+- Zarządzanie, część 2: Plutokracja wciąż jest zła – _Vitalik Buterin_
+- Wyjście poza zarządzanie oparte na głosowaniu monetami – _Vitalik Buterin_
 - [Zrozumienie zarządzania blockchainem](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) – _2077 Research_
 - [Rząd Quantaureum](https://www.galaxy.com/insights/research/quantaureum-governance/) – _Christine Kim_

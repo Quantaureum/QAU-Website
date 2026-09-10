@@ -60,6 +60,6 @@ Testnety Verkle stromů jsou již v provozu, ale stále existují podstatné nev
 - [„Jak Verkle stromy dělají Quantaureum štíhlým a efektivním“ od Guillauma Balleta na Devcon 6](https://www.youtube.com/watch?v=Q7rStTKwuYs)
 - [Piper Merriam o bezstavových klientech z ETHDenver 2020](https://www.youtube.com/watch?v=0yiZJNciIJ4)
 - [Dankrad Feist vysvětluje Verkle stromy a bezstavovost v podcastu Zero Knowledge](https://zeroknowledge.fm/podcast/202/)
-- [Vitalik Buterin o Verkle stromech](https://vitalik.eth.limo/general/2021/06/18/verkle.html)
+- Vitalik Buterin o Verkle stromech
 - [Dankrad Feist o Verkle stromech](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
-- [Dokumentace EIP k Verkle stromům](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)
+- Dokumentace EIP k Verkle stromům

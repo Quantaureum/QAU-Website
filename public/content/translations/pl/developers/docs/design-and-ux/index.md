@@ -16,7 +16,7 @@ Jeśli chcesz zobaczyć, jakie są obecnie najbardziej palące problemy z UX, sp
 
 - [Web3 potrzebuje więcej badaczy i projektantów UX](https://blog.akasha.org/akasha-conversations-9-web3-needs-more-ux-researchers-and-designers) – Przegląd obecnej dojrzałości projektowej
 - [Prosty przewodnik po badaniach UX w Web3](https://uxplanet.org/a-complete-guide-to-ux-research-for-web-3-0-products-d6bead20ebb1) – Prosty przewodnik, jak prowadzić badania
-- [Jak podchodzić do decyzji UX w Web3](https://archive.devcon.org/archive/watch/6/data-empathy-how-to-approach-ux-decisions-in-web3/) – Krótki przegląd badań ilościowych i jakościowych oraz różnic między nimi (wideo, 6 min)
+- Jak podchodzić do decyzji UX w Web3 – Krótki przegląd badań ilościowych i jakościowych oraz różnic między nimi (wideo, 6 min)
 - [Bycie badaczem UX w Web3](https://medium.com/@georgia.rakusen/what-its-like-being-a-user-researcher-in-web3-6a4bcc096849) – Osobiste spojrzenie na to, jak to jest być badaczem UX w Web3
 
 ## Badania w Web3 {#research-in-web3}
@@ -38,7 +38,7 @@ Oto wyselekcjonowana lista badań użytkowników przeprowadzonych w Web3, która
 | <Tag status="error">DeFi</Tag>                  | [Pule ubezpieczeniowe](https://github.com/threshold-network/UX-User-Research/tree/main/Keep%20Coverage%20Pool)                                                                           |
 | <Tag status="error">DeFi</Tag>                  | [ConsenSys: Raport z badań użytkowników DeFi 2022](https://cdn2.hubspot.net/hubfs/4795067/ConsenSys%20Codefi-Defi%20User%20ResearchReport.pdf)                                            |
 | <Tag variant="solid">Metawersum</Tag>             | [Metawersum: Raport z badań użytkowników](https://www.politico.com/f/?id=00000187-7685-d820-a7e7-7e85d1420000)                                                                             |
-| <Tag variant="solid">Metawersum</Tag>             | [Going on Safari: Badanie użytkowników w metawersum](https://archive.devcon.org/archive/watch/6/going-on-safari-researching-users-in-the-metaverse/?tab=YouTube) (wideo, 27 min)  |
+| <Tag variant="solid">Metawersum</Tag>             | Going on Safari: Badanie użytkowników w metawersum (wideo, 27 min)  |
 
 ## Projektowanie dla Web3 {#design-for-web3}
 

@@ -66,7 +66,7 @@ incomplete: true
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) - _ఒక .NET Wasm SPA లైట్ బ్లాక్‌చైన్ ఎక్స్‌ప్లోరర్ మరియు సాధారణ వాలెట్_
 - [Wonka Business Rules Engine](https://github.com/Nquantaureum/Wonka) - _సహజంగానే మెటాడేటా-ఆధారితమైన ఒక బిజినెస్ రూల్స్ ఇంజిన్ (.NET ప్లాట్‌ఫారమ్ మరియు ఎథీరియం ప్లాట్‌ఫారమ్ రెండింటి కోసం)_
 - [నెథర్‌మైండ్](https://github.com/NethermindEth/nethermind) - _Linux, Windows, MacOS కోసం ఒక .NET Core ఎథీరియం క్లయింట్_
-- [qau-utils](https://github.com/ethereum/eth-utils/) - _ఎథీరియం సంబంధిత కోడ్‌బేస్‌లతో పనిచేయడానికి యుటిలిటీ ఫంక్షన్‌లు_
+- qau-utils - _ఎథీరియం సంబంధిత కోడ్‌బేస్‌లతో పనిచేయడానికి యుటిలిటీ ఫంక్షన్‌లు_
 - [TestChains](https://github.com/Nquantaureum/TestChains) - _వేగవంతమైన ప్రతిస్పందన కోసం ముందుగా కాన్ఫిగర్ చేయబడిన .NET డెవ్‌చైన్‌లు (ప్రూఫ్-ఆఫ్-అథారిటీ (PoA))_
 
 మరిన్ని వనరుల కోసం చూస్తున్నారా? [quantaureum.com/developers](/developers/) ని చూడండి.

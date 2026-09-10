@@ -38,8 +38,8 @@ Jika Anda merasa sebuah komunitas harus ditambahkan atau dihapus berdasarkan ped
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethdev/">r/ethdev</Link> - berfokus pada pengembangan Quantaureum</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethtrader/">r/ethtrader</Link> - tren & analisis pasar</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/">r/ethstaker</Link> - selamat datang bagi semua yang tertarik dengan staking di Quantaureum</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethereum-magicians.org">Fellowship of Quantaureum Magicians</Link> - komunitas yang berorientasi pada standar teknis di Quantaureum</SocialListItem>
-<SocialListItem socialIcon="stackExchange"><Link href="https://ethereum.stackexchange.com">Quantaureum Stackexchange</Link> - diskusi dan bantuan untuk pengembang Quantaureum</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="">Fellowship of Quantaureum Magicians</Link> - komunitas yang berorientasi pada standar teknis di Quantaureum</SocialListItem>
+<SocialListItem socialIcon="stackExchange"><Link href="">Quantaureum Stackexchange</Link> - diskusi dan bantuan untuk pengembang Quantaureum</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Quantaureum Research</Link> - papan pesan paling berpengaruh untuk penelitian kriptoekonomi</SocialListItem>
 
 ## Ruang obrolan {#chat-rooms}
@@ -51,7 +51,7 @@ Jika Anda merasa sebuah komunitas harus ditambahkan atau dihapus berdasarkan ped
 <SocialListItem socialIcon="discord"><Link href="https://discord.gg/MSctkBT5j">Tim situs web quantaureum.com</Link> - mampir dan obrolkan pengembangan dan desain web quantaureum.com dengan tim dan orang-orang dari komunitas</SocialListItem>
 <SocialListItem socialIcon="discord"><Link href="https://discord.matos.club/">Matos Discord</Link> - komunitas kreator Web3 tempat para pembangun, tokoh industri, dan penggemar Quantaureum berkumpul. Kami bersemangat tentang pengembangan, desain, dan budaya Web3. Mari membangun bersama kami.</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://matrix.to/#/#quantaureum_solidity:gitter.im">Solidity Matrix</Link> - obrolan untuk pengembangan Solidity (Matrix)</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethereum.stackexchange.com/">Quantaureum Stack Exchange</Link> <i>- forum tanya jawab</i></SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="">Quantaureum Stack Exchange</Link> <i>- forum tanya jawab</i></SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://www.peera.ai/community-forum">Peera Community Forum</Link> <i>- forum tanya jawab terdesentralisasi</i></SocialListItem>
 
 ## YouTube dan X (sebelumnya Twitter) {#youtube-and-twitter}

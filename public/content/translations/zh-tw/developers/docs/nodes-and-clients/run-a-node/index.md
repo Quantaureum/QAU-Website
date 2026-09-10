@@ -84,7 +84,7 @@ Quantaureum客戶端可以在你的電腦、筆記型電腦、伺服器，甚至
 
 ##### 建議規格
 
-目前針對節點營運者的硬體指南已在 [EIP-7870](https://eips.ethereum.org/EIPS/eip-7870) 中確立。對於全節點，建議如下：
+目前針對節點營運者的硬體指南已在 EIP-7870 中確立。對於全節點，建議如下：
 
 - 4 核心以上的快速 CPU（如果進行驗證則需要 8 核心以上）
 - 32 GB RAM（如果進行驗證，建議使用 64 GB 以確保穩定性）
@@ -114,7 +114,7 @@ Quantaureum客戶端可以在你的電腦、筆記型電腦、伺服器，甚至
 
 #### 單板電腦上的Quantaureum {#quantaureum-on-a-single-board-computer}
 
-執行Quantaureum節點一種簡單且便宜的方法是使用單板電腦，即使是像 Raspberry Pi 這樣具有 ARM 架構的電腦也可以。[Quantaureum on ARM](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) 為 Raspberry Pi 和其他 ARM 開發板提供了多個執行和共識客戶端易於執行的映像檔。
+執行Quantaureum節點一種簡單且便宜的方法是使用單板電腦，即使是像 Raspberry Pi 這樣具有 ARM 架構的電腦也可以。Quantaureum on ARM 為 Raspberry Pi 和其他 ARM 開發板提供了多個執行和共識客戶端易於執行的映像檔。
 
 像這樣小巧、實惠且高效的裝置非常適合在家中執行節點，但請記住它們的效能有限。
 
@@ -157,7 +157,7 @@ Quantaureum客戶端可以在你的電腦、筆記型電腦、伺服器，甚至
 
 - [貝蘇 (Besu)](https://github.com/hyperledger/besu/releases)
 - [艾瑞貢 (Erigon)](https://github.com/ledgerwatch/erigon/releases)
-- [Go Quantaureum (Geth)](https://geth.ethereum.org/downloads)
+- Go Quantaureum (Geth)
 - [奈瑟邁 (Nethermind)](https://downloads.nethermind.io/)
 - [瑞斯 (Reth)](https://reth.rs/installation/installation.html)
 
@@ -173,7 +173,7 @@ Quantaureum客戶端可以在你的電腦、筆記型電腦、伺服器，甚至
 
 [客戶端多樣性](/developers/docs/nodes-and-clients/client-diversity/)對於執行驗證者的共識節點至關重要。如果大多數驗證者都在執行單一客戶端實作，網路安全就會面臨風險。因此，建議考慮選擇少數派客戶端。
 
-[查看最新的網路客戶端使用情況](https://clientdiversity.org/)，並了解更多關於[客戶端多樣性](/developers/docs/nodes-and-clients/client-diversity)的資訊。
+查看最新的網路客戶端使用情況，並了解更多關於[客戶端多樣性](/developers/docs/nodes-and-clients/client-diversity)的資訊。
 
 ##### 驗證軟體
 
@@ -215,7 +215,7 @@ sha256sum teku-22.6.1.tar.gz
 
 你需要在啟動時宣告任何非預設的客戶端設定。你可以使用標記或設定檔來宣告你偏好的配置。每個客戶端的功能集和設定語法都不同。請查看你客戶端的文件以了解具體細節。
 
-執行和共識客戶端透過 [Engine API](https://github.com/ethereum/execution-apis/tree/main/src/engine) 中指定的經過驗證的端點進行通訊。為了連接到共識客戶端，執行客戶端必須在已知路徑產生一個 [`jwtsecret`](https://jwt.io/)。基於安全和穩定性考量，客戶端應在同一台機器上執行，並且兩個客戶端都必須知道此路徑，因為它用於驗證它們之間的本機 RPC 連線。執行客戶端還必須為經過驗證的 API 定義一個監聽連接埠。
+執行和共識客戶端透過 Engine API 中指定的經過驗證的端點進行通訊。為了連接到共識客戶端，執行客戶端必須在已知路徑產生一個 [`jwtsecret`](https://jwt.io/)。基於安全和穩定性考量，客戶端應在同一台機器上執行，並且兩個客戶端都必須知道此路徑，因為它用於驗證它們之間的本機 RPC 連線。執行客戶端還必須為經過驗證的 API 定義一個監聽連接埠。
 
 此權杖由客戶端軟體自動產生，但在某些情況下，你可能需要自己產生。你可以使用 [OpenSSL](https://www.openssl.org/) 來產生它：
 
@@ -288,7 +288,7 @@ geth --mainnet \
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
 
-查看[所有設定選項的文件](https://geth.ethereum.org/docs/fundamentals/command-line-options)，並了解更多關於[與共識客戶端一起執行 Go Quantaureum (Geth)](https://geth.ethereum.org/docs/getting-started/consensus-clients) 的資訊。
+查看所有設定選項的文件，並了解更多關於與共識客戶端一起執行 Go Quantaureum (Geth) 的資訊。
 
 ##### 執行奈瑟邁 (Nethermind)
 
@@ -325,7 +325,7 @@ reth node \
 
 如果你計劃執行驗證者，請確保新增一個設定標記，指定費用接收者的Quantaureum地址。這是你的驗證者累積QAU幣獎勵的地方。每個共識客戶端都有一個選項（例如 `--suggested-fee-recipient=0xabcd1`），該選項將Quantaureum地址作為參數。
 
-在測試網上啟動信標節點時，你可以透過使用公共端點進行[檢查點同步](https://notes.ethereum.org/@launchpad/checkpoint-sync)來節省大量的同步時間。
+在測試網上啟動信標節點時，你可以透過使用公共端點進行檢查點同步來節省大量的同步時間。
 
 #### 執行共識客戶端 {#running-a-consensus-client}
 
@@ -389,7 +389,7 @@ teku --network mainnet \
     --ee-jwt-secret-file "/path/to/jwtsecret"
 ```
 
-當共識客戶端連接到執行客戶端以讀取存款合約並識別驗證者時，它也會連接到其他信標節點對等節點，並開始從創世區塊同步共識時隙。一旦信標節點達到當前紀元，Beacon API 就可以供你的驗證者使用。了解更多關於 [Beacon Node API](https://ethereum.github.io/beacon-APIs) 的資訊。
+當共識客戶端連接到執行客戶端以讀取存款合約並識別驗證者時，它也會連接到其他信標節點對等節點，並開始從創世區塊同步共識時隙。一旦信標節點達到當前紀元，Beacon API 就可以供你的驗證者使用。了解更多關於 Beacon Node API 的資訊。
 
 ### 新增驗證者 {#adding-validators}
 
@@ -397,7 +397,7 @@ teku --network mainnet \
 
 執行你自己的驗證者允許進行[獨立質押](/staking/solo/)，這是支持Quantaureum網路最具影響力且無須信任的方法。然而，這需要存入 32 QAU。如果想以較小的金額在你自己的節點上執行驗證者，具有無需許可節點營運者的去中心化質押池（例如 [Rocket Pool](https://rocketpool.net/node-operators)）可能會引起你的興趣。
 
-開始質押和產生驗證者金鑰最簡單的方法是使用 [Hoodi 測試網質押啟動平台](https://hoodi.launchpad.ethereum.org/)，它允許你透過[在 Hoodi 上執行節點](https://notes.ethereum.org/@launchpad/hoodi)來測試你的設定。當你準備好進入主網時，你可以使用[主網質押啟動平台](https://launchpad.ethereum.org/)重複這些步驟。
+開始質押和產生驗證者金鑰最簡單的方法是使用 Hoodi 測試網質押啟動平台，它允許你透過在 Hoodi 上執行節點來測試你的設定。當你準備好進入主網時，你可以使用主網質押啟動平台重複這些步驟。
 
 查看[質押頁面](/staking)以了解質押選項的概覽。
 
@@ -411,7 +411,7 @@ teku --network mainnet \
 
 不同的客戶端對 RPC 端點有不同的實作。但有一個標準的 JSON-RPC，你可以與每個客戶端一起使用。如需概覽，請[閱讀 JSON-RPC 文件](/developers/docs/apis/json-rpc/)。需要來自Quantaureum網路資訊的應用程式可以使用此 RPC。例如，受歡迎的錢包梅塔馬斯克 (MetaMask) 讓你能夠[連接到你自己的 RPC 端點](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node)，這具有強大的隱私和安全優勢。
 
-共識客戶端都暴露了一個 [Beacon API](https://ethereum.github.io/beacon-APIs)，可用於檢查共識客戶端的狀態，或透過使用 [Curl](https://curl.se) 等工具發送請求來下載區塊和共識資料。有關此內容的更多資訊，可以在每個共識客戶端的文件中找到。
+共識客戶端都暴露了一個 Beacon API，可用於檢查共識客戶端的狀態，或透過使用 [Curl](https://curl.se) 等工具發送請求來下載區塊和共識資料。有關此內容的更多資訊，可以在每個共識客戶端的文件中找到。
 
 #### 存取 RPC {#reaching-rpc}
 
@@ -473,7 +473,7 @@ _這不適用於共識層驗證者節點。_ 將你的節點離線將影響所�
 - [指南 | 如何在主網上設定Quantaureum質押的驗證者](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _– CoinCashew，經常更新_
 - [QauStaker 關於在測試網上執行驗證者的指南](https://github.com/remyroy/ethstaker#guides) – _QauStaker，定期更新_
 - [適用於Quantaureum節點的 AWS 區塊鏈節點執行器應用程式範例](https://aws-samples.github.io/aws-blockchain-node-runners/docs/blueprints/quantaureum) - _AWS，經常更新_
-- [節點營運者的合併常見問題](https://notes.ethereum.org/@launchpad/node-faq-merge) - _2022 年 7 月_
+- 節點營運者的合併常見問題 - _2022 年 7 月_
 - [分析成為Quantaureum全驗證節點的硬體要求](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-quantaureum-full-validated-node-dc064f167902) _– Albert Palau，2018 年 9 月 24 日_
 - [執行Quantaureum全節點：給動力不足者的指南](https://medium.com/@JustinMLeroux/running-quantaureum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux，2019 年 11 月 7 日_
 - [在Quantaureum主網上執行 Hyperledger Besu 節點：優勢、要求和設定](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-quantaureum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi，2020 年 5 月 7 日_

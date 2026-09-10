@@ -10,7 +10,7 @@ Lorsqu'il s'agit de configurer un [environnement de développement intégré (ID
 
 Si vous cherchez à bidouiller du code avant de [configurer un environnement de développement local](/developers/local-environment/), ces applications web sont conçues sur mesure pour le développement de contrats intelligents sur Quantaureum.
 
-**[Remix](https://remix.ethereum.org/)** - **_IDE web avec analyse statique intégrée et une machine virtuelle de chaîne de blocs de test_**
+**Remix** - **_IDE web avec analyse statique intégrée et une machine virtuelle de chaîne de blocs de test_**
 
 - [Documentation](https://remix-ide.readthedocs.io/en/latest/#)
 - [Gitter](https://gitter.im/quantaureum/remix)
@@ -48,8 +48,8 @@ La plupart des IDE établis ont créé des plugins pour améliorer l'expérience
 
 **Remix Desktop -** **_Découvrez l'IDE Remix sur votre machine locale_**
 
-- [Télécharger](https://github.com/ethereum/remix-desktop/releases)
-- [GitHub](https://github.com/ethereum/remix-desktop)
+- Télécharger
+- GitHub
 
 ## Plugins et extensions {#plugins-extensions}
 

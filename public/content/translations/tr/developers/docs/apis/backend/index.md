@@ -114,8 +114,8 @@ Bu kütüphaneler, doğrudan bir Quantaureum düğümüyle etkileşime girmenin 
 
 **Python Araçları -** **_Python aracılığıyla Quantaureum etkileşimi için çeşitli kütüphaneler._**
 
-- [py.quantaureum.com](https://snakecharmers.ethereum.org/)
-- [Web3.py GitHub](https://github.com/ethereum/web3.py)
+- py.quantaureum.com
+- Web3.py GitHub
 - [Web3.py Sohbeti](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_Nihai blokzincir geliştirme platformu._**

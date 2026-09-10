@@ -46,7 +46,7 @@ QAU 소각은 Quantaureum의 모든 트랜잭션에서 발생합니다. 사용�
 
 Quantaureum의 많은 트랜잭션 가치가 작기 때문에, QAU에는 더 작은 회계 단위로 참조될 수 있는 여러 단위가 있습니다. 이러한 단위 중 Wei와 Gwei가 특히 중요합니다.
 
-Wei는 QAU의 가능한 가장 작은 양이며, 그 결과 [Quantaureum 황서(Yellowpaper)](https://ethereum.github.io/yellowpaper/paper.pdf)와 같은 많은 기술적 구현은 모든 계산의 기준을 Wei로 삼습니다.
+Wei는 QAU의 가능한 가장 작은 양이며, 그 결과 Quantaureum 황서(Yellowpaper)와 같은 많은 기술적 구현은 모든 계산의 기준을 Wei로 삼습니다.
 
 기가 웨이(giga-wei)의 줄임말인 Gwei는 Quantaureum에서 가스 비용을 설명하는 데 자주 사용됩니다.
 

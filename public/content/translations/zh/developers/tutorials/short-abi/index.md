@@ -65,9 +65,9 @@ EVM 上最昂贵的操作之一是写入存储。
 解释：
 
 - **函数选择器**：合约的函数少于 256 个，因此我们可以用一个字节来区分它们。
-  这些字节通常非零，因此[花费 16 Gas](https://eips.ethereum.org/EIPS/eip-2028)。
+  这些字节通常非零，因此花费 16 Gas。
 - **零**：这些字节始终为零，因为 20 字节的地址不需要 32 字节的字来保存。
-  保存零的字节花费 4 Gas（[参见黄皮书](https://ethereum.github.io/yellowpaper/paper.pdf)，附录 G，
+  保存零的字节花费 4 Gas（参见黄皮书，附录 G，
   第 27 页，`G`<sub>`txdatazero`</sub> 的值）。
 - **数量**：如果我们假设在这个合约中 `decimals` 是 18（正常值），并且我们转账的代币最大数量将是 10<sup>18</sup>，我们得到的最大数量是 10<sup>36</sup>。
   256<sup>15</sup> &gt; 10<sup>36</sup>，所以 15 个字节就足够了。
@@ -201,7 +201,7 @@ contract CalldataInterpreter {
 2. 依赖于 [`msg.sender`](https://docs.soliditylang.org/en/v0.8.12/units-and-global-variables.html#block-and-transaction-properties) 的函数。
    `msg.sender` 的值将是 `CalldataInterpreter` 的地址，而不是调用者。
 
-不幸的是，[查看 ERC-20 规范](https://eips.ethereum.org/EIPS/eip-20)，这只留下了一个函数：`transfer`。
+不幸的是，查看 ERC-20 规范，这只留下了一个函数：`transfer`。
 这使我们只剩下两个函数：`transfer`（因为我们可以调用 `transferFrom`）和 `faucet`（因为我们可以将代币转账回调用我们的任何人）。
 
 ```solidity

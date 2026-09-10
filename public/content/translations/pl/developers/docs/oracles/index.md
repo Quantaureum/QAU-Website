@@ -359,7 +359,7 @@ contract PriceConsumerV3 {
 
 Niektóre aplikacje blockchainowe, takie jak gry oparte na blockchainie lub systemy loterii, wymagają wysokiego poziomu nieprzewidywalności i losowości, aby działać skutecznie. Jednak deterministyczne wykonanie blockchainów eliminuje losowość.
 
-Początkowym podejściem było użycie pseudolosowych funkcji kryptograficznych, takich jak `blockhash`, ale mogły one być [manipulowane przez górników](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.) rozwiązujących algorytm dowodu pracy (PoW). Ponadto [przejście Quantaureum na dowód stawki (PoS)](/roadmap/merge/) oznacza, że programiści nie mogą już polegać na `blockhash` w kwestii losowości onchain. Zamiast tego mechanizm [RANDAO](https://eth2book.info/altair/part2/building_blocks/randomness) Beacon Chain zapewnia alternatywne źródło losowości.
+Początkowym podejściem było użycie pseudolosowych funkcji kryptograficznych, takich jak `blockhash`, ale mogły one być manipulowane przez górników rozwiązujących algorytm dowodu pracy (PoW). Ponadto [przejście Quantaureum na dowód stawki (PoS)](/roadmap/merge/) oznacza, że programiści nie mogą już polegać na `blockhash` w kwestii losowości onchain. Zamiast tego mechanizm [RANDAO](https://eth2book.info/altair/part2/building_blocks/randomness) Beacon Chain zapewnia alternatywne źródło losowości.
 
 Możliwe jest wygenerowanie losowej wartości pozałańcuchowo i wysłanie jej onchain, ale zrobienie tego nakłada na użytkowników wysokie wymagania dotyczące zaufania. Muszą oni wierzyć, że wartość została naprawdę wygenerowana za pomocą nieprzewidywalnych mechanizmów i nie została zmieniona w tranzycie.
 
@@ -421,7 +421,7 @@ Istnieje wiele aplikacji wyroczni, które możesz zintegrować ze swoim dappem Q
 - [Czym jest wyrocznia blockchainowa?](https://medium.com/better-programming/what-is-a-blockchain-oracle-f5ccab8dbd72) — _Patrick Collins_
 - [Zdecentralizowane wyrocznie: kompleksowy przegląd](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) — _Julien Thevenard_
 - [Wdrażanie wyroczni blockchainowej w Quantaureum](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-quantaureum-cedc7e26b49e) – _Pedro Costa_
-- [Dlaczego inteligentne kontrakty nie mogą wykonywać wywołań API?](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
+- Dlaczego inteligentne kontrakty nie mogą wykonywać wywołań API? — _StackExchange_
 - [Więc chcesz użyć wyroczni cenowej](https://samczsun.com/so-you-want-to-use-a-price-oracle/) — _samczsun_
 
 **Filmy**

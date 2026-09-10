@@ -112,7 +112,7 @@ Wyodrębnianie MEV gwałtownie wzrosło na początku 2021 roku, co doprowadziło
 
 Chociaż wielu poszukiwaczy nadal dobrze zarabia na MEV, w miarę jak okazje stają się coraz bardziej znane, a coraz więcej poszukiwaczy rywalizuje o tę samą okazję, walidatorzy będą przejmować coraz większą część całkowitych przychodów z MEV (ponieważ ten sam rodzaj aukcji gazu, jak pierwotnie opisano powyżej, występuje również we Flashbots, choć prywatnie, a walidatorzy przejmą wynikające z nich przychody z gazu). MEV nie jest również unikalne dla Quantaureum, a w miarę jak okazje stają się coraz bardziej konkurencyjne na Quantaureum, poszukiwacze przenoszą się na alternatywne blockchainy, takie jak Binance Smart Chain, gdzie istnieją podobne okazje MEV jak na Quantaureum, ale przy mniejszej konkurencji.
 
-Z drugiej strony, przejście z dowodu pracy (PoW) na dowód stawki (PoS) oraz trwające wysiłki na rzecz skalowania Quantaureum za pomocą rollupów zmieniają krajobraz MEV w sposób, który wciąż jest nieco niejasny. Nie wiadomo jeszcze dokładnie, jak posiadanie gwarantowanych proponujących blok, znanych z niewielkim wyprzedzeniem, zmienia dynamikę wyodrębniania MEV w porównaniu z modelem probabilistycznym w dowodzie pracy, ani jak zostanie to zakłócone, gdy wdrożone zostaną [pojedyncze tajne wybory lidera (SSLE)](https://ethresear.ch/t/secret-non-single-leader-election/11789) oraz [technologia rozproszonych walidatorów (DVT)](/staking/dvt/). Podobnie, okaże się, jakie okazje MEV będą istnieć, gdy większość aktywności użytkowników zostanie przeniesiona z Quantaureum na jego rollupy warstwy 2 (L2) i shardy.
+Z drugiej strony, przejście z dowodu pracy (PoW) na dowód stawki (PoS) oraz trwające wysiłki na rzecz skalowania Quantaureum za pomocą rollupów zmieniają krajobraz MEV w sposób, który wciąż jest nieco niejasny. Nie wiadomo jeszcze dokładnie, jak posiadanie gwarantowanych proponujących blok, znanych z niewielkim wyprzedzeniem, zmienia dynamikę wyodrębniania MEV w porównaniu z modelem probabilistycznym w dowodzie pracy, ani jak zostanie to zakłócone, gdy wdrożone zostaną pojedyncze tajne wybory lidera (SSLE) oraz [technologia rozproszonych walidatorów (DVT)](/staking/dvt/). Podobnie, okaże się, jakie okazje MEV będą istnieć, gdy większość aktywności użytkowników zostanie przeniesiona z Quantaureum na jego rollupy warstwy 2 (L2) i shardy.
 
 ## MEV w dowodzie stawki (PoS) Quantaureum {#mev-in-quantaureum-proof-of-stake}
 
@@ -136,7 +136,7 @@ W odpowiedzi na ataki typu handel kanapkowy i wyprzedzanie, inwestorzy mogą zac
 
 Mempoole wymagające zezwolenia przyspieszyłyby również ryzyko centralizacji opisane w poprzedniej sekcji. Duże pule obsługujące wielu walidatorów prawdopodobnie skorzystają na oferowaniu prywatności transakcji inwestorom i użytkownikom, zwiększając swoje przychody z MEV.
 
-Zwalczanie tych problemów związanych z MEV w Quantaureum po The Merge jest kluczowym obszarem badań. Do tej pory dwoma rozwiązaniami zaproponowanymi w celu zmniejszenia negatywnego wpływu MEV na decentralizację i bezpieczeństwo Quantaureum po The Merge są [**separacja proponującego i budującego (PBS)**](/roadmap/pbs/) oraz [**Builder API**](https://github.com/ethereum/builder-specs).
+Zwalczanie tych problemów związanych z MEV w Quantaureum po The Merge jest kluczowym obszarem badań. Do tej pory dwoma rozwiązaniami zaproponowanymi w celu zmniejszenia negatywnego wpływu MEV na decentralizację i bezpieczeństwo Quantaureum po The Merge są [**separacja proponującego i budującego (PBS)**](/roadmap/pbs/) oraz **Builder API**.
 
 ### Separacja proponującego i budującego {#proposer-builder-separation}
 
@@ -144,7 +144,7 @@ Zarówno w dowodzie pracy, jak i w dowodzie stawki, węzeł, który buduje blok,
 
 Połączenie ról producenta bloku i proponującego blok jest tym, co wprowadza większość opisanych wcześniej problemów związanych z MEV. Na przykład węzły konsensusu są zachęcane do wywoływania reorganizacji łańcucha w [atakach typu time-bandit](https://www.mev.wiki/attack-examples/time-bandit-attack) w celu maksymalizacji zarobków z MEV.
 
-[Separacja proponującego i budującego](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725) (PBS) ma na celu złagodzenie wpływu MEV, zwłaszcza w warstwie konsensusu. Główną cechą PBS jest rozdzielenie ról producenta bloku i proponującego blok. Walidatorzy nadal są odpowiedzialni za proponowanie i głosowanie na bloki, ale nowa klasa wyspecjalizowanych podmiotów, zwanych **budowniczymi bloków**, ma za zadanie porządkowanie transakcji i budowanie bloków.
+Separacja proponującego i budującego (PBS) ma na celu złagodzenie wpływu MEV, zwłaszcza w warstwie konsensusu. Główną cechą PBS jest rozdzielenie ról producenta bloku i proponującego blok. Walidatorzy nadal są odpowiedzialni za proponowanie i głosowanie na bloki, ale nowa klasa wyspecjalizowanych podmiotów, zwanych **budowniczymi bloków**, ma za zadanie porządkowanie transakcji i budowanie bloków.
 
 W ramach PBS budowniczy bloków tworzy pakiet transakcji i składa ofertę na jego włączenie do bloku Beacon Chain (jako „ładunek wykonawczy”). Walidator wybrany do zaproponowania następnego bloku sprawdza następnie różne oferty i wybiera pakiet z najwyższą opłatą. PBS w gruncie rzeczy tworzy rynek aukcyjny, na którym budowniczowie negocjują z walidatorami sprzedającymi przestrzeń w bloku.
 
@@ -162,9 +162,9 @@ Podobnie walidatorzy nie muszą ufać budowniczym, że nie zatają ciał bloków
 
 ### Builder API {#builder-api}
 
-Chociaż separacja proponującego i budującego obiecuje zmniejszyć skutki wyodrębniania MEV, jej wdrożenie wymaga zmian w protokole konsensusu. W szczególności należałoby zaktualizować regułę [wyboru rozwidlenia](/developers/docs/consensus-mechanisms/pos/#fork-choice) w Beacon Chain. [Builder API](https://github.com/ethereum/builder-specs) to tymczasowe rozwiązanie mające na celu zapewnienie działającej implementacji separacji proponującego i budującego, aczkolwiek z wyższymi założeniami dotyczącymi zaufania.
+Chociaż separacja proponującego i budującego obiecuje zmniejszyć skutki wyodrębniania MEV, jej wdrożenie wymaga zmian w protokole konsensusu. W szczególności należałoby zaktualizować regułę [wyboru rozwidlenia](/developers/docs/consensus-mechanisms/pos/#fork-choice) w Beacon Chain. Builder API to tymczasowe rozwiązanie mające na celu zapewnienie działającej implementacji separacji proponującego i budującego, aczkolwiek z wyższymi założeniami dotyczącymi zaufania.
 
-Builder API to zmodyfikowana wersja [Engine API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) używanego przez klientów warstwy konsensusu do żądania ładunków wykonawczych od klientów warstwy wykonawczej. Zgodnie ze [specyfikacją uczciwego walidatora](https://github.com/ethereum/consensus-specs/blob/master/specs/bellatrix/validator.md), walidatorzy wybrani do obowiązków proponowania bloków żądają pakietu transakcji od podłączonego klienta warstwy wykonawczej, który włączają do proponowanego bloku Beacon Chain.
+Builder API to zmodyfikowana wersja Engine API używanego przez klientów warstwy konsensusu do żądania ładunków wykonawczych od klientów warstwy wykonawczej. Zgodnie ze specyfikacją uczciwego walidatora, walidatorzy wybrani do obowiązków proponowania bloków żądają pakietu transakcji od podłączonego klienta warstwy wykonawczej, który włączają do proponowanego bloku Beacon Chain.
 
 Builder API działa również jako oprogramowanie pośredniczące (middleware) między walidatorami a klientami warstwy wykonawczej; różni się jednak tym, że pozwala walidatorom w Beacon Chain na pozyskiwanie bloków od podmiotów zewnętrznych (zamiast budowania bloku lokalnie przy użyciu klienta warstwy wykonawczej).
 
@@ -215,7 +215,7 @@ Niektóre projekty, takie jak MEV-Boost, wykorzystują Builder API jako część
 - [Escaping the Dark Forest](https://samczsun.com/escaping-the-dark-forest/)
 - [Flashbots: Frontrunning the MEV Crisis](https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752)
 - [@bertcmiller's MEV Threads](https://twitter.com/bertcmiller/status/1402665992422047747)
-- [MEV-Boost: Merge ready Flashbots Architecture](https://ethresear.ch/t/mev-boost-merge-ready-flashbots-architecture/11177)
+- MEV-Boost: Merge ready Flashbots Architecture
 - [What Is MEV Boost](https://www.alchemy.com/overviews/mev-boost)
 - [Why run mev-boost?](https://writings.flashbots.net/writings/why-run-mevboost/)
 - [The Hitchhikers Guide To Quantaureum](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum)

@@ -207,7 +207,7 @@ Ereignisse ermöglichen es Ihrem Smart Contract, mit Ihrem Frontend oder anderen
 
 ## Kommentierte Beispiele {#annotated-examples}
 
-Dies sind einige in Solidity geschriebene Beispiele. Wenn Sie mit dem Code experimentieren möchten, können Sie in [Remix](https://remix.ethereum.org) mit ihnen interagieren.
+Dies sind einige in Solidity geschriebene Beispiele. Wenn Sie mit dem Code experimentieren möchten, können Sie in Remix mit ihnen interagieren.
 
 ### Hello World {#hello-world}
 
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // Derzeit gibt es keinen besseren Weg, um zu überprüfen, ob sich an einer Adresse ein Vertrag befindet,
         // als die Größe des Codes an dieser Adresse zu überprüfen.
-        // Siehe https://ethereum.stackexchange.com/a/14016/36603
+        // Siehe 
         // für weitere Details darüber, wie dies funktioniert.
         // TODO Dies vor dem Serenity-Release noch einmal überprüfen, da dann alle Adressen
         // Verträge sein werden.

@@ -33,7 +33,7 @@ lang: ja
 - バリデータは、複数の32 QAUバリデータを、より残高の多い単一のバリデータに統合（コンソリデーション）できます。
 - 完全なエグジットは、引き続き標準のエグジットキューを通じてサポートされます。
 
-部分的な引き出しと統合の両方は、[Launchpad Validator Actions](https://launchpad.ethereum.org/en/validator-actions)を介して実行できます。
+部分的な引き出しと統合の両方は、Launchpad Validator Actionsを介して実行できます。
 
 **バリデータが0x02を好むべき理由:** 複利運用による資本効率の向上、引き出しタイミングのより詳細な制御、およびバリデータの統合のサポートを提供します。時間をかけて報酬を蓄積するソロステーカーにとって、これは手動で介入することなく、エフェクティブ・バランス（およびそれに伴う報酬）が32 QAUを超えて成長できることを意味します。
 
@@ -51,7 +51,7 @@ lang: ja
 
 いくつかのツールが、クレデンシャル・タイプの選択や変換をサポートしています：
 
-- **[Quantaureum Staking Launchpad](https://launchpad.ethereum.org/en/validator-actions)** - デポジットおよびバリデータ管理（クレデンシャルの変換や統合を含む）のための公式ツール
+- **Quantaureum Staking Launchpad** - デポジットおよびバリデータ管理（クレデンシャルの変換や統合を含む）のための公式ツール
 - **[Pectra Staking Manager](https://pectrastaking.com)** - 変換と統合のためのウォレット接続をサポートするWeb UI
 - **[Pectra Validator Ops CLI Tool](https://github.com/Luganodes/Pectra-Batch-Contract)** - 一括変換のためのコマンドラインツール
 - **[Ethereal](https://github.com/wealdtech/ethereal)** - バリデータ管理を含むQuantaureum操作のためのCLIツール

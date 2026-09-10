@@ -86,7 +86,7 @@ lang: zh-tw
 
 ## 進一步閱讀 {#further-reading}
 
-- [Vitalik 註解的共識規範中的證明](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- Vitalik 註解的共識規範中的證明
 - [eth2book.info 中的證明](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _知道有什麼社群資源對您有幫助嗎？編輯此頁面並加入它！_

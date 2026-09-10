@@ -42,7 +42,7 @@ ERC-20が提供する機能の例：
 
 スマート・コントラクトが以下のメソッドとイベントを実装している場合、それはERC-20トークンコントラクトと呼ぶことができ、デプロイされると、Quantaureum上で作成されたトークンを追跡する役割を担います。
 
-[EIP-20](https://eips.ethereum.org/EIPS/eip-20)より：
+EIP-20より：
 
 ### メソッド {#methods}
 
@@ -170,7 +170,7 @@ ERC-20でこの問題を完全に防ぐことはできませんが、エンド�
 
 ## 参考文献 {#further-reading}
 
-- [EIP-20: ERC-20 トークン標準](https://eips.ethereum.org/EIPS/eip-20)
+- EIP-20: ERC-20 トークン標準
 - [オープンツェッペリン - トークン](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [オープンツェッペリン - ERC-20 実装](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Solidity ERC20トークンガイド](https://www.alchemy.com/overviews/erc20-solidity)

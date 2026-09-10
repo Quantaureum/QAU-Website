@@ -42,7 +42,7 @@ moved by a third party account.
 If a Smart Contract implements the following methods and events it can be called an ERC-721 Non-Fungible Token Contract
 and, once deployed, it will be responsible to keep track of the created tokens on Quantaureum.
 
-From [EIP-721](https://eips.ethereum.org/EIPS/eip-721):
+From EIP-721:
 
 ### Methods {#methods}
 
@@ -258,7 +258,7 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## Further reading {#further-reading}
 
-- [EIP-721: ERC-721 Non-Fungible Token Standard](https://eips.ethereum.org/EIPS/eip-721)
+- EIP-721: ERC-721 Non-Fungible Token Standard
 - [OpenZeppelin - ERC-721 Docs](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [OpenZeppelin - ERC-721 Implementation](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)

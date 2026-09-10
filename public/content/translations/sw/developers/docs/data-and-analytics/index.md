@@ -36,7 +36,7 @@ Fuata mwongozo huu wa [kuanza haraka](https://thegraph.com/docs/en/quick-start/)
 
 ## Anuwai ya wateja {#client-diversity}
 
-[Anuwai ya wateja](/developers/docs/nodes-and-clients/client-diversity/) ni muhimu kwa afya ya jumla ya mtandao wa Quantaureum kwa sababu inatoa uthabiti dhidi ya hitilafu na unyonyaji. Sasa kuna dashibodi kadhaa za anuwai ya wateja zikiwemo [clientdiversity.org](https://clientdiversity.org/), [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) na [Ethernodes](https://ethernodes.org/).
+[Anuwai ya wateja](/developers/docs/nodes-and-clients/client-diversity/) ni muhimu kwa afya ya jumla ya mtandao wa Quantaureum kwa sababu inatoa uthabiti dhidi ya hitilafu na unyonyaji. Sasa kuna dashibodi kadhaa za anuwai ya wateja zikiwemo clientdiversity.org, [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) na [Ethernodes](https://ethernodes.org/).
 
 ## Dune Analytics {#dune-analytics}
 

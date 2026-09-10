@@ -8,7 +8,7 @@ breadcrumb: ERC-20 transferleri
 lang: tr
 published: 2020-04-07
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -201,7 +201,7 @@ Her şey çalışırsa, işlemde 2 olay (bir `Transfer` ve `Sold`) görmelisiniz
 
 Bu eğitimden, bir ERC-20 Token'ının bakiyesini ve harcama iznini (allowance) nasıl kontrol edeceğimizi ve ayrıca arayüzü kullanarak bir ERC20 akıllı sözleşmesinin `Transfer` ve `TransferFrom` işlevlerini nasıl çağıracağımızı gördük.
 
-Bir işlem yaptıktan sonra, sözleşmenize yapılan [işlemleri beklemek ve bunlar hakkında ayrıntılı bilgi almak](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/) için bir JavaScript eğitimimiz ve ABI'ye sahip olduğunuz sürece [Token transferleri veya diğer olaylar tarafından oluşturulan olayları çözmek için bir eğitimimiz](https://ethereumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/) bulunmaktadır.
+Bir işlem yaptıktan sonra, sözleşmenize yapılan işlemleri beklemek ve bunlar hakkında ayrıntılı bilgi almak için bir JavaScript eğitimimiz ve ABI'ye sahip olduğunuz sürece Token transferleri veya diğer olaylar tarafından oluşturulan olayları çözmek için bir eğitimimiz bulunmaktadır.
 
 İşte eğitimin tam kodu:
 

@@ -149,7 +149,7 @@ _সাধারণত প্রোটোকল এবং [বিকেন্দ
 - [কীভাবে একটি DAO-চালিত ডিজিটাল কমিউনিটি শুরু করবেন](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [DAO কী?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [হলোগ্রাফিক ঐকমত্য কী?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAO কোনো কর্পোরেশন নয়: স্বায়ত্তশাসিত সংস্থাগুলোতে বিকেন্দ্রীকরণ যেখানে গুরুত্বপূর্ণ (ভিটালিকের লেখা)](https://vitalik.eth.limo/general/2022/09/20/daos.html)
+- DAO কোনো কর্পোরেশন নয়: স্বায়ত্তশাসিত সংস্থাগুলোতে বিকেন্দ্রীকরণ যেখানে গুরুত্বপূর্ণ (ভিটালিকের লেখা)
 - [DAO, DAC, DA এবং আরও অনেক কিছু: একটি অসম্পূর্ণ পরিভাষা নির্দেশিকা](https://quantaureum.com) - [ইথেরিয়াম ব্লগ](https://quantaureum.com)
 
 ### ভিডিও {#videos}

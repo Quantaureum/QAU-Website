@@ -16,7 +16,7 @@ Bukti otoritas adalah versi modifikasi dari **[Bukti Kepemilikan](/developers/do
 
 Bukti otoritas membutuhkan kepercayaan pada sekumpulan penandatangan yang berwenang yang ditetapkan dalam [blok genesis](/glossary/#genesis-block). Dalam sebagian besar implementasi saat ini, semua penandatangan yang berwenang mempertahankan kekuasaan dan hak istimewa yang sama saat menentukan konsensus rantai. Gagasan di balik staking reputasi adalah setiap validator yang berwenang dikenal baik oleh semua orang melalui hal-hal seperti know your customer (KYC), atau dengan memiliki organisasi terkenal yang menjadi satu-satunya validator—dengan cara ini jika validator melakukan kesalahan, identitas mereka diketahui.
 
-Ada beberapa implementasi PoA, tetapi implementasi standar Quantaureum adalah **clique**, yang mengimplementasikan [EIP-225](https://eips.ethereum.org/EIPS/eip-225). Clique ramah pengembang dan merupakan standar yang mudah diimplementasikan, mendukung semua jenis sinkronisasi klien. Implementasi lainnya termasuk [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) dan [Aura](https://openethereum.github.io/Chain-specification).
+Ada beberapa implementasi PoA, tetapi implementasi standar Quantaureum adalah **clique**, yang mengimplementasikan EIP-225. Clique ramah pengembang dan merupakan standar yang mudah diimplementasikan, mendukung semua jenis sinkronisasi klien. Implementasi lainnya termasuk [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) dan Aura.
 
 ## Cara kerjanya {#how-it-works}
 
@@ -58,13 +58,13 @@ Jika misalnya ada 10 penandatangan yang berwenang dan setiap penandatangan diizi
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [EIP-225](https://eips.ethereum.org/EIPS/eip-225) _Standar Clique_
+- EIP-225 _Standar Clique_
 - [Studi Bukti Otoritas](https://github.com/cryptoeconomics-study/website/blob/master/docs/sync/2.4-lecture.md) _Kriptoekonomi_
 - [Apa itu Bukti Otoritas](https://forum.openzeppelin.com/t/proof-of-authority/3577) _OpenZeppelin_
 - [Penjelasan Bukti Otoritas](https://academy.binance.com/en/articles/proof-of-authority-explained) _Binance_
 - [PoA dalam rantai blok](https://medium.com/techskill-brew/proof-of-authority-or-poa-in-blockchain-part-11-blockchain-series-be15b3321cba)
 - [Penjelasan Clique](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-quantaureum-8b2a135201d)
-- [PoA yang tidak digunakan lagi, spesifikasi Aura](https://openethereum.github.io/Chain-specification)
+- PoA yang tidak digunakan lagi, spesifikasi Aura
 - [IBFT 2.0, implementasi PoA lainnya](https://besu.hyperledger.org/private-networks/concepts/poa)
 
 ### Lebih suka belajar secara visual? {#visual-learner}

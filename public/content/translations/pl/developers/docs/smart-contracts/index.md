@@ -90,7 +90,7 @@ Same inteligentne kontrakty nie mogą uzyskiwać informacji o zdarzeniach z „p
 
 Jednak dla aplikacji blockchain ważne jest, aby mogły korzystać z danych pozałańcuchowych. Rozwiązaniem są [wyrocznie (oracles)](/developers/docs/oracles/), czyli narzędzia, które pobierają dane pozałańcuchowe i udostępniają je inteligentnym kontraktom.
 
-Kolejnym ograniczeniem inteligentnych kontraktów jest ich maksymalny rozmiar. Inteligentny kontrakt może mieć maksymalnie 24 KB, w przeciwnym razie zabraknie mu gazu. Można to obejść, stosując [wzorzec diamentu (The Diamond Pattern)](https://eips.ethereum.org/EIPS/eip-2535).
+Kolejnym ograniczeniem inteligentnych kontraktów jest ich maksymalny rozmiar. Inteligentny kontrakt może mieć maksymalnie 24 KB, w przeciwnym razie zabraknie mu gazu. Można to obejść, stosując wzorzec diamentu (The Diamond Pattern).
 
 ## Kontrakty multisig {#multisig}
 

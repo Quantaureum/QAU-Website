@@ -54,7 +54,7 @@ ERC-1363 pia ni muhimu kwa kuepuka upotezaji wa tokeni au kufungwa kwa tokeni ka
 
 Tofauti na mapendekezo mengine ya upanuzi wa ERC-20, ERC-1363 haibatilishi mbinu za ERC-20 za `transfer` na `transferFrom` na inafafanua vitambulisho vya violesura (interfaces IDs) vitakavyotekelezwa huku ikidumisha utangamano wa nyuma na ERC-20.
 
-Kutoka [EIP-1363](https://eips.ethereum.org/EIPS/eip-1363):
+Kutoka EIP-1363:
 
 ### Mbinu {#methods}
 
@@ -167,11 +167,9 @@ interface ERC1363Receiver {
   /**
    * @dev Kila wakati tokeni za ERC-1363 zinapohamishiwa kwenye mkataba huu kupitia `ERC1363::transferAndCall` au `ERC1363::transferFromAndCall`
    * na `operator` kutoka `from`, chaguo hili la kukokotoa (function) linaitwa.
-   *
    * KUMBUKA: Ili kukubali hamisho, hii lazima irudishe
    * `bytes4(keccak256("onTransferReceived(address,address,uint256,bytes)"))`
    * (yaani 0x88a7ca5c, au kiteuzi chake cha chaguo la kukokotoa).
-   *
    * @param operator Anwani iliyoita chaguo la kukokotoa la `transferAndCall` au `transferFromAndCall`.
    * @param from Anwani ambayo tokeni zinahamishwa kutoka.
    * @param value Kiasi cha tokeni zilizohamishwa.
@@ -193,11 +191,9 @@ interface ERC1363Spender {
   /**
    * @dev Kila wakati `owner` wa tokeni za ERC-1363 anapoidhinisha mkataba huu kupitia `ERC1363::approveAndCall`
    * kutumia tokeni zao, chaguo hili la kukokotoa (function) linaitwa.
-   *
    * KUMBUKA: Ili kukubali idhini, hii lazima irudishe
    * `bytes4(keccak256("onApprovalReceived(address,uint256,bytes)"))`
    * (yaani 0x7b04a2d0, au kiteuzi chake cha chaguo la kukokotoa).
-   *
    * @param owner Anwani iliyoita chaguo la kukokotoa la `approveAndCall` na iliyomiliki tokeni hapo awali.
    * @param value Kiasi cha tokeni zinazopaswa kutumika.
    * @param data Data ya ziada isiyo na umbizo maalum.
@@ -209,5 +205,5 @@ interface ERC1363Spender {
 
 ## Usomaji zaidi {#further-reading}
 
-- [ERC-1363: Kiwango cha Tokeni Inayolipwa](https://eips.ethereum.org/EIPS/eip-1363)
+- ERC-1363: Kiwango cha Tokeni Inayolipwa
 - [ERC-1363: Hifadhi ya GitHub](https://github.com/vittominacori/erc1363-payable-token)

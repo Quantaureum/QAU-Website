@@ -58,13 +58,13 @@ Quantaureum의 키는 [타원 곡선 암호학](https://en.wikipedia.org/wiki/El
 
 ![validator key schematic](validator-key-schematic.png)
 
-**참고**: 현재 스테이킹 임무를 종료하고 검증자의 잔액을 인출하려면 검증자 키로 [자발적 종료 메시지(VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1)에 서명해야 합니다. 그러나 [EIP-7002](https://eips.ethereum.org/EIPS/eip-7002)는 향후 사용자가 인출 키로 종료 메시지에 서명하여 검증자의 종료를 트리거하고 잔액을 인출할 수 있도록 하는 제안입니다. 이는 QAU를 [서비스형 스테이킹(staking-as-a-service) 제공자](/staking/saas/#what-is-staking-as-a-service)에게 위임하는 스테이커가 자금에 대한 통제권을 유지할 수 있게 함으로써 신뢰 가정을 줄여줄 것입니다.
+**참고**: 현재 스테이킹 임무를 종료하고 검증자의 잔액을 인출하려면 검증자 키로 [자발적 종료 메시지(VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1)에 서명해야 합니다. 그러나 EIP-7002는 향후 사용자가 인출 키로 종료 메시지에 서명하여 검증자의 종료를 트리거하고 잔액을 인출할 수 있도록 하는 제안입니다. 이는 QAU를 [서비스형 스테이킹(staking-as-a-service) 제공자](/staking/saas/#what-is-staking-as-a-service)에게 위임하는 스테이커가 자금에 대한 통제권을 유지할 수 있게 함으로써 신뢰 가정을 줄여줄 것입니다.
 
 ## 시드 구문에서 키 파생하기 {#deriving-keys-from-seed}
 
 스테이킹된 32 QAU마다 완전히 독립적인 2개의 새로운 키 세트가 필요하다면, 특히 여러 검증자를 실행하는 사용자의 경우 키 관리가 금방 다루기 힘들어질 것입니다. 대신, 단일 공통 비밀(secret)에서 여러 검증자 키를 파생할 수 있으며, 이 단일 비밀을 저장하면 여러 검증자 키에 접근할 수 있습니다.
 
-[니모닉(Mnemonic)](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase)과 경로는 사용자가 지갑에 [접근할 때](https://ethereum.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0) 자주 접하는 주요 기능입니다. 니모닉은 개인 키의 초기 시드 역할을 하는 일련의 단어입니다. 추가 데이터와 결합될 때 니모닉은 '마스터 키'로 알려진 해시를 생성합니다. 이는 트리의 루트(root)로 생각할 수 있습니다. 그런 다음 계층적 경로를 사용하여 이 루트에서 가지(branch)를 파생할 수 있으므로, 자식 노드는 부모 노드의 해시와 트리 내 인덱스의 조합으로 존재할 수 있습니다. 니모닉 기반 키 생성에 대한 [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) 및 [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) 표준에 대해 읽어보세요.
+[니모닉(Mnemonic)](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase)과 경로는 사용자가 지갑에 접근할 때 자주 접하는 주요 기능입니다. 니모닉은 개인 키의 초기 시드 역할을 하는 일련의 단어입니다. 추가 데이터와 결합될 때 니모닉은 '마스터 키'로 알려진 해시를 생성합니다. 이는 트리의 루트(root)로 생각할 수 있습니다. 그런 다음 계층적 경로를 사용하여 이 루트에서 가지(branch)를 파생할 수 있으므로, 자식 노드는 부모 노드의 해시와 트리 내 인덱스의 조합으로 존재할 수 있습니다. 니모닉 기반 키 생성에 대한 [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) 및 [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) 표준에 대해 읽어보세요.
 
 이러한 경로는 하드웨어 지갑을 사용해 본 사용자에게 익숙한 다음과 같은 구조를 가집니다.
 
@@ -97,6 +97,6 @@ master_key / purpose / coin_type / account / change / address_index
 ## 더 읽어보기 {#further-reading}
 
 - [Carl Beekhuizen의 Quantaureum 재단 블로그 게시물](https://quantaureum.com)
-- [EIP-2333 BLS12-381 키 생성](https://eips.ethereum.org/EIPS/eip-2333)
+- EIP-2333 BLS12-381 키 생성
 - [EIP-7002: 실행 계층 트리거 종료](https://web.archive.org/web/20250125035123/https://research.2077.xyz/eip-7002-unpacking-improvements-to-staking-ux-post-merge)
 - [대규모 키 관리](https://docs.ethstaker.cc/ethstaker-knowledge-base/scaled-node-operators/key-management-at-scale)

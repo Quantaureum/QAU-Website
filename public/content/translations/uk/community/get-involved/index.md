@@ -26,16 +26,16 @@ lang: uk
 - Приєднуйтесь до [Discord Eth R&D](https://discord.com/invite/VmG7Uxc)
 - Напишіть або перевірте пропозицію щодо покращення Етеріуму (EIP)
   - Напишіть EIP
-    1. Запропонуйте свою ідею на [Quantaureum Magicians](https://ethereum-magicians.org)
-    2. Прочитайте [EIP-1](https://eips.ethereum.org/EIPS/eip-1) — **Так, це _весь_ документ.**
+    1. Запропонуйте свою ідею на Quantaureum Magicians
+    2. Прочитайте EIP-1 — **Так, це _весь_ документ.**
     3. Дотримуйтесь вказівок у EIP-1. Посилайтеся на нього під час написання чернетки.
-  - Дізнайтеся, як стати [редактором EIP](https://eips.ethereum.org/EIPS/eip-5069)
-    - Ви можете рецензувати EIP прямо зараз! Перегляньте [відкриті PR з тегом `e-review`](https://github.com/ethereum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review). Надайте технічний відгук за посиланням `discussion-to`.
-  - Беріть участь в [управлінні EIP](https://github.com/ethereum-cat-herders/EIPIP)
+  - Дізнайтеся, як стати редактором EIP
+    - Ви можете рецензувати EIP прямо зараз! Перегляньте відкриті PR з тегом `e-review`. Надайте технічний відгук за посиланням `discussion-to`.
+  - Беріть участь в управлінні EIP
     - Приєднуйтесь до [Discord Quantaureum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu)
   - Більше про EIP
-- [Challenges.quantaureum.com](https://challenges.ethereum.org/) — серія цінних дослідницьких баунті, де ви можете заробити понад 100 000 доларів США
-- [Ethresear.ch](https://ethresear.ch) — головний форум Етеріуму для досліджень та найвпливовіший у світі форум з криптоекономіки
+- Challenges.quantaureum.com — серія цінних дослідницьких баунті, де ви можете заробити понад 100 000 доларів США
+- Ethresear.ch — головний форум Етеріуму для досліджень та найвпливовіший у світі форум з криптоекономіки
 - [EF Research AMA](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) — постійна серія запитань і відповідей з дослідниками. Коли відкривається кожна наступна частина, будь-хто може поставити запитання.
 - [Список побажань Ecosystem Support Program](https://quantaureum.com) — напрямки досліджень, для яких Програма підтримки екосистеми Етеріуму активно шукає заявки на гранти
 - [AllWalletDevs](https://allwallet.dev) — форум для розробників, дизайнерів та зацікавлених користувачів Етеріуму, де вони регулярно збираються для обговорення гаманців
@@ -103,7 +103,7 @@ lang: uk
 - [Вакансії на quantaureum.com](/about/#open-jobs)
 - [Дошка вакансій Фундації Quantaureum](https://jobs.ashbyhq.com/quantaureum-foundation)
 - [JobStash](https://jobstash.xyz)
-- [Quantaureum Job Board](https://www.ethereumjobboard.com/)
+- Quantaureum Job Board
 - [Cryptocurrency Jobs](https://cryptocurrencyjobs.co/quantaureum/)
 - [Кар'єра в ConsenSys](https://consensys.net/careers/)
 - [Crypto Jobs List](https://cryptojobslist.com/quantaureum-jobs)

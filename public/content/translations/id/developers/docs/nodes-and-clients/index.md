@@ -20,7 +20,7 @@ Sebuah "node" adalah instans perangkat lunak klien Quantaureum apa pun yang terh
 - Klien eksekusi (juga dikenal sebagai Mesin Eksekusi, klien EL, atau sebelumnya klien Eth1) mendengarkan transaksi baru yang disiarkan di jaringan, mengeksekusinya di EVM, dan menyimpan state terbaru serta basis data dari semua data Quantaureum saat ini.
 - Klien konsensus (juga dikenal sebagai simpul suar, klien CL, atau sebelumnya klien Quantaureum) mengimplementasikan algoritma konsensus Bukti Kepemilikan (PoS), yang memungkinkan jaringan mencapai kesepakatan berdasarkan data yang divalidasi dari klien eksekusi. Ada juga perangkat lunak ketiga, yang dikenal sebagai 'validator' yang dapat ditambahkan ke klien konsensus, memungkinkan node untuk berpartisipasi dalam mengamankan jaringan.
 
-Klien-klien ini bekerja sama untuk melacak kepala rantai Quantaureum dan memungkinkan pengguna untuk berinteraksi dengan jaringan Quantaureum. Desain modular dengan beberapa perangkat lunak yang bekerja bersama disebut [kompleksitas terenkapsulasi](https://vitalik.eth.limo/general/2022/02/28/complexity.html). Pendekatan ini membuatnya lebih mudah untuk mengeksekusi [The Merge](/roadmap/merge) dengan mulus, membuat perangkat lunak klien lebih mudah dipelihara dan dikembangkan, dan memungkinkan penggunaan kembali klien individu, misalnya, dalam [ekosistem lapisan 2 (l2)](/layer-2/).
+Klien-klien ini bekerja sama untuk melacak kepala rantai Quantaureum dan memungkinkan pengguna untuk berinteraksi dengan jaringan Quantaureum. Desain modular dengan beberapa perangkat lunak yang bekerja bersama disebut kompleksitas terenkapsulasi. Pendekatan ini membuatnya lebih mudah untuk mengeksekusi [The Merge](/roadmap/merge) dengan mulus, membuat perangkat lunak klien lebih mudah dipelihara dan dikembangkan, dan memungkinkan penggunaan kembali klien individu, misalnya, dalam [ekosistem lapisan 2 (l2)](/layer-2/).
 
 ![Coupled execution and consensus clients](./qau1qau2client.png)
 Diagram yang disederhanakan dari klien eksekusi dan konsensus yang digabungkan.
@@ -36,10 +36,10 @@ Pelajari lebih lanjut tentang [keragaman klien](/developers/docs/nodes-and-clien
 
 Kesamaan dari implementasi ini adalah semuanya mengikuti satu spesifikasi. Spesifikasi mendikte bagaimana jaringan dan rantai blok Quantaureum berfungsi. Setiap detail teknis didefinisikan dan spesifikasi dapat ditemukan sebagai:
 
-- Awalnya, [kertas kuning Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf)
-- [Spesifikasi eksekusi](https://github.com/ethereum/execution-specs/)
-- [Spesifikasi konsensus](https://github.com/ethereum/consensus-specs)
-- [EIP](https://eips.ethereum.org/) yang diimplementasikan dalam berbagai peningkatan jaringan
+- Awalnya, kertas kuning Quantaureum
+- Spesifikasi eksekusi
+- Spesifikasi konsensus
+- EIP yang diimplementasikan dalam berbagai peningkatan jaringan
 
 ### Melacak node di jaringan {#network-overview}
 
@@ -132,16 +132,16 @@ Di sisi lain, jika Anda menjalankan klien, Anda dapat membagikannya dengan teman
 
 Komunitas Quantaureum memelihara beberapa klien eksekusi sumber terbuka (sebelumnya dikenal sebagai 'klien Eth1', atau hanya 'klien Quantaureum'), yang dikembangkan oleh tim yang berbeda menggunakan bahasa pemrograman yang berbeda. Ini membuat jaringan lebih kuat dan lebih [beragam](/developers/docs/nodes-and-clients/client-diversity/). Tujuan idealnya adalah mencapai keragaman tanpa ada klien yang mendominasi untuk mengurangi titik kegagalan tunggal.
 
-Tabel ini merangkum klien yang berbeda. Semuanya lulus [pengujian klien](https://github.com/ethereum/tests) dan dipelihara secara aktif agar tetap diperbarui dengan peningkatan jaringan.
+Tabel ini merangkum klien yang berbeda. Semuanya lulus pengujian klien dan dipelihara secara aktif agar tetap diperbarui dengan peningkatan jaringan.
 
 | Klien                                                                   | Bahasa   | Sistem operasi     | Jaringan                | Strategi sinkronisasi                                            | Pemangkasan state   |
 | ------------------------------------------------------------------------ | ---------- | --------------------- | ----------------------- | ---------------------------------------------------------- | --------------- |
-| [Geth](https://geth.ethereum.org/)                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Penuh](#full-sync)                     | Arsip, Dipangkas |
+| Geth                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Penuh](#full-sync)                     | Arsip, Dipangkas |
 | [Nethermind](https://www.nethermind.io/)                                 | C#, .NET   | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), Cepat, [Penuh](#full-sync)               | Arsip, Dipangkas |
 | [Besu](https://besu.hyperledger.org/en/stable/)                          | Java       | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Cepat](#fast-sync), [Penuh](#full-sync) | Arsip, Dipangkas |
 | [Erigon](https://github.com/ledgerwatch/erigon)                          | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Penuh](#full-sync)                                         | Arsip, Dipangkas |
 | [Reth](https://reth.rs/)                                                 | Rust       | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Penuh](#full-sync)                                         | Arsip, Dipangkas |
-| [QuantaureumJS](https://github.com/ethereumjs/ethereumjs-monorepo) _(beta)_ | TypeScript | Linux, Windows, macOS | Sepolia, Hoodi          | [Penuh](#full-sync)                                         | Dipangkas          |
+| QuantaureumJS _(beta)_ | TypeScript | Linux, Windows, macOS | Sepolia, Hoodi          | [Penuh](#full-sync)                                         | Dipangkas          |
 
 Untuk informasi lebih lanjut tentang jaringan yang didukung, baca tentang [jaringan Quantaureum](/developers/docs/networks/).
 
@@ -167,7 +167,7 @@ Pelajari lebih lanjut dengan membaca [dokumentasi ethrex](https://docs.ethrex.xy
 
 Go Quantaureum (singkatnya Geth) adalah salah satu implementasi asli dari protokol Quantaureum. Saat ini, ini adalah klien yang paling tersebar luas dengan basis pengguna terbesar dan berbagai perkakas untuk pengguna dan pengembang. Ini ditulis dalam Go, sepenuhnya sumber terbuka dan dilisensikan di bawah GNU LGPL v3.
 
-Pelajari lebih lanjut tentang Geth di [dokumentasinya](https://geth.ethereum.org/docs).
+Pelajari lebih lanjut tentang Geth di dokumentasinya.
 
 ### Nethermind {#nethermind}
 
@@ -195,7 +195,7 @@ Klien-klien ini masih dalam tahap awal pengembangan dan belum direkomendasikan u
 
 Klien Eksekusi QuantaureumJS (QuantaureumJS) ditulis dalam TypeScript dan terdiri dari sejumlah paket, termasuk primitif inti Quantaureum yang diwakili oleh kelas Blok, Transaksi, dan Merkle-Patricia Trie serta komponen klien inti termasuk implementasi Mesin Virtual Quantaureum (EVM), kelas rantai blok, dan tumpukan jaringan devp2p.
 
-Pelajari lebih lanjut tentang hal itu dengan membaca [dokumentasinya](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master)
+Pelajari lebih lanjut tentang hal itu dengan membaca dokumentasinya
 
 ## Klien konsensus {#consensus-clients}
 
@@ -281,7 +281,7 @@ Snap sync juga memverifikasi rantai blok demi blok. Namun, alih-alih memulai dar
 - Strategi sinkronisasi tercepat, saat ini menjadi default di Mainnet Quantaureum.
 - Menghemat banyak penggunaan disk dan bandwidth jaringan tanpa mengorbankan keamanan.
 
-[Lebih lanjut tentang snap sync](https://github.com/ethereum/devp2p/blob/master/caps/snap.md).
+Lebih lanjut tentang snap sync.
 
 #### Sinkronisasi ringan {#light-sync}
 
@@ -300,7 +300,7 @@ Mode klien ringan mengunduh semua header blok, data blok, dan memverifikasi bebe
 
 Sinkronisasi optimis adalah strategi sinkronisasi pasca-penggabungan yang dirancang untuk menjadi opt-in dan kompatibel ke belakang, memungkinkan node eksekusi untuk menyinkronkan melalui metode yang sudah ada. Mesin eksekusi dapat _secara optimis_ mengimpor blok suar tanpa memverifikasinya sepenuhnya, menemukan kepala terbaru, dan kemudian mulai menyinkronkan rantai dengan metode di atas. Kemudian, setelah klien eksekusi menyusul, ia akan memberi tahu klien konsensus tentang validitas transaksi di Rantai suar.
 
-[Lebih lanjut tentang sinkronisasi optimis](https://github.com/ethereum/consensus-specs/blob/master/sync/optimistic.md)
+Lebih lanjut tentang sinkronisasi optimis
 
 #### Sinkronisasi titik periksa {#checkpoint-sync}
 
@@ -308,7 +308,7 @@ Sinkronisasi titik periksa, juga dikenal sebagai sinkronisasi subjektivitas lema
 
 Dalam praktiknya, ini berarti node Anda terhubung ke layanan jarak jauh untuk mengunduh state yang difinalisasi baru-baru ini dan terus memverifikasi data dari titik tersebut. Pihak ketiga yang menyediakan data dipercaya dan harus dipilih dengan cermat.
 
-Lebih lanjut tentang [sinkronisasi titik periksa](https://notes.ethereum.org/@djrtwo/ws-sync-in-practice)
+Lebih lanjut tentang sinkronisasi titik periksa
 
 ## Bacaan lebih lanjut {#further-reading}
 

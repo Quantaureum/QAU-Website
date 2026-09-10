@@ -8,7 +8,7 @@ breadcrumb: Sambaza mkataba wa kwanza
 lang: sw
 published: 2020-04-03
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -18,7 +18,7 @@ Usiwe na wasiwasi, kwa kuwa ni mkataba mahiri wetu wa kwanza, tutausambaza kweny
 
 ## Kuandika mkataba wetu {#writing-our-contract}
 
-Hatua ya kwanza ni [kutembelea Remix](https://remix.ethereum.org/) na kuunda faili jipya. Kwenye sehemu ya juu kushoto ya kiolesura cha Remix ongeza faili jipya na uweke jina la faili unalotaka.
+Hatua ya kwanza ni kutembelea Remix na kuunda faili jipya. Kwenye sehemu ya juu kushoto ya kiolesura cha Remix ongeza faili jipya na uweke jina la faili unalotaka.
 
 ![Adding a new file in the Remix interface](./remix.png)
 

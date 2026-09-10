@@ -146,6 +146,6 @@ Ikiwa unataka kufuatilia bei za gesi, ili uweze kutuma QAU yako kwa bei nafuu, u
 - [Gesi ya Quantaureum Imefafanuliwa](https://defiprime.com/gas)
 - [Kupunguza matumizi ya gesi ya Mikataba yako Mahiri](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
 - [Mikakati ya Matumizi Bora ya Gesi kwa Wasanidi Programu](https://www.alchemy.com/overviews/solidity-gas-optimization)
-- [Nyaraka za EIP-1559](https://eips.ethereum.org/EIPS/eip-1559).
+- Nyaraka za EIP-1559.
 - [Rasilimali za EIP-1559 za Tim Beiko](https://hackmd.io/@timbeiko/1559-resources)
 - [EIP-1559: Kutenganisha Taratibu na Meme](https://web.archive.org/web/20241126205908/https://research.2077.xyz/eip-1559-separating-mechanisms-from-memes)

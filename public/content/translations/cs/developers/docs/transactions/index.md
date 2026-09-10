@@ -134,7 +134,7 @@ Takže víme, že adresa `to` je [`4f6742badb049791cd9a37ea913f2bac38d01279`](ht
 
 ### Deskriptory transakcí {#transaction-descriptors}
 
-Protože datové pole obsahuje neprůhledné hexadecimální bajty, může být extrémně obtížné ověřit, jakou akci transakce skutečně provede. Tuto zranitelnost „slepého podepisování“ (blind signing) řeší **[jasné podepisování (Clear Signing)](https://clearsigning.org/)** pomocí [deskriptorů transakcí](https://eips.ethereum.org/EIPS/eip-7730) (definovaných v ERC-7730).  
+Protože datové pole obsahuje neprůhledné hexadecimální bajty, může být extrémně obtížné ověřit, jakou akci transakce skutečně provede. Tuto zranitelnost „slepého podepisování“ (blind signing) řeší **[jasné podepisování (Clear Signing)](https://clearsigning.org/)** pomocí deskriptorů transakcí (definovaných v ERC-7730).  
 
 Specifikace ERC-7730 používá deskriptory transakcí (často strukturované jako soubory JSON) k obohacení dat nalezených v ABI a strukturovaných zprávách, jako jsou data volání (calldata) transakcí EVM, zprávy EIP-712 a uživatelské operace (User Operations) EIP-4337. Vývojáři používají tyto deskriptory k mapování specifických proměnných transakce přímo do formátovacích šablon, čímž zajišťují, že podkladová data zůstanou pro aplikace strojově čitelná.
 
@@ -203,9 +203,9 @@ Quantaureum mělo původně jeden formát pro transakce. Každá transakce obsah
 
 `RLP([nonce, gasPrice, gasLimit, to, value, data, v, r, s])`
 
-Quantaureum se vyvinulo tak, aby podporovalo více typů transakcí, což umožňuje implementaci nových funkcí, jako jsou seznamy přístupů (access lists) a [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), aniž by to ovlivnilo starší formáty transakcí.
+Quantaureum se vyvinulo tak, aby podporovalo více typů transakcí, což umožňuje implementaci nových funkcí, jako jsou seznamy přístupů (access lists) a EIP-1559, aniž by to ovlivnilo starší formáty transakcí.
 
-Toto chování umožňuje [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718). Transakce jsou interpretovány jako:
+Toto chování umožňuje EIP-2718. Transakce jsou interpretovány jako:
 
 `TransactionType || TransactionPayload`
 
@@ -216,19 +216,19 @@ Kde jsou pole definována jako:
 
 Na základě hodnoty `TransactionType` lze transakci klasifikovat jako:
 
-1. **Transakce typu 0 (Legacy):** Původní formát transakcí používaný od spuštění Etherea. Neobsahují funkce z [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), jako jsou dynamické výpočty poplatků za gas nebo seznamy přístupů pro chytré kontrakty. Starší (legacy) transakce postrádají specifickou předponu označující jejich typ v serializované podobě a při použití kódování [Recursive Length Prefix (RLP)](/developers/docs/data-structures-and-encoding/rlp) začínají bajtem `0xf8`. Hodnota TransactionType pro tyto transakce je `0x0`.
+1. **Transakce typu 0 (Legacy):** Původní formát transakcí používaný od spuštění Etherea. Neobsahují funkce z EIP-1559, jako jsou dynamické výpočty poplatků za gas nebo seznamy přístupů pro chytré kontrakty. Starší (legacy) transakce postrádají specifickou předponu označující jejich typ v serializované podobě a při použití kódování [Recursive Length Prefix (RLP)](/developers/docs/data-structures-and-encoding/rlp) začínají bajtem `0xf8`. Hodnota TransactionType pro tyto transakce je `0x0`.
 
-2. **Transakce typu 1:** Tyto transakce, představené v [EIP-2930](https://eips.ethereum.org/EIPS/eip-2930) jako součást aktualizace Berlín na Ethereu, obsahují parametr `accessList`. Tento seznam specifikuje adresy a klíče úložiště, ke kterým transakce očekává přístup, což pomáhá potenciálně snížit náklady na [gas](/developers/docs/gas/) u složitých transakcí zahrnujících chytré kontrakty. Změny trhu s poplatky podle EIP-1559 nejsou v transakcích typu 1 zahrnuty. Transakce typu 1 také obsahují parametr `yParity`, který může být buď `0x0` nebo `0x1`, což indikuje paritu hodnoty y podpisu secp256k1. Jsou identifikovány tím, že začínají bajtem `0x01`, a jejich hodnota TransactionType je `0x1`.
+2. **Transakce typu 1:** Tyto transakce, představené v EIP-2930 jako součást aktualizace Berlín na Ethereu, obsahují parametr `accessList`. Tento seznam specifikuje adresy a klíče úložiště, ke kterým transakce očekává přístup, což pomáhá potenciálně snížit náklady na [gas](/developers/docs/gas/) u složitých transakcí zahrnujících chytré kontrakty. Změny trhu s poplatky podle EIP-1559 nejsou v transakcích typu 1 zahrnuty. Transakce typu 1 také obsahují parametr `yParity`, který může být buď `0x0` nebo `0x1`, což indikuje paritu hodnoty y podpisu secp256k1. Jsou identifikovány tím, že začínají bajtem `0x01`, a jejich hodnota TransactionType je `0x1`.
 
-3. **Transakce typu 2**, běžně označované jako transakce EIP-1559, jsou transakce představené v [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) v rámci aktualizace London na Ethereu. Staly se standardním typem transakcí v síti Quantaureum. Tyto transakce zavádějí nový mechanismus trhu s poplatky, který zlepšuje předvídatelnost rozdělením transakčního poplatku na základní poplatek a prioritní poplatek. Začínají bajtem `0x02` a obsahují pole jako `maxPriorityFeePerGas` a `maxFeePerGas`. Transakce typu 2 jsou nyní výchozí díky své flexibilitě a efektivitě, a jsou obzvláště oblíbené v obdobích vysokého přetížení sítě pro svou schopnost pomoci uživatelům předvídatelněji spravovat transakční poplatky. Hodnota TransactionType pro tyto transakce je `0x2`.
+3. **Transakce typu 2**, běžně označované jako transakce EIP-1559, jsou transakce představené v EIP-1559 v rámci aktualizace London na Ethereu. Staly se standardním typem transakcí v síti Quantaureum. Tyto transakce zavádějí nový mechanismus trhu s poplatky, který zlepšuje předvídatelnost rozdělením transakčního poplatku na základní poplatek a prioritní poplatek. Začínají bajtem `0x02` a obsahují pole jako `maxPriorityFeePerGas` a `maxFeePerGas`. Transakce typu 2 jsou nyní výchozí díky své flexibilitě a efektivitě, a jsou obzvláště oblíbené v obdobích vysokého přetížení sítě pro svou schopnost pomoci uživatelům předvídatelněji spravovat transakční poplatky. Hodnota TransactionType pro tyto transakce je `0x2`.
 
-4. **Transakce typu 3 (Blob)** byly představeny v [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844) jako součást aktualizace Dencun na Ethereu. Tyto transakce jsou navrženy tak, aby efektivněji zpracovávaly data typu „blob“ (Binary Large Objects), což přináší výhody zejména pro rollupy na vrstvě 2 (L2) tím, že poskytují způsob, jak odesílat data do sítě Quantaureum s nižšími náklady. Blob transakce obsahují další pole, jako jsou `blobVersionedHashes`, `maxFeePerBlobGas` a `blobGasPrice`. Začínají bajtem `0x03` a jejich hodnota TransactionType je `0x3`. Blob transakce představují významné zlepšení v dostupnosti dat a možnostech škálování Etherea.
+4. **Transakce typu 3 (Blob)** byly představeny v EIP-4844 jako součást aktualizace Dencun na Ethereu. Tyto transakce jsou navrženy tak, aby efektivněji zpracovávaly data typu „blob“ (Binary Large Objects), což přináší výhody zejména pro rollupy na vrstvě 2 (L2) tím, že poskytují způsob, jak odesílat data do sítě Quantaureum s nižšími náklady. Blob transakce obsahují další pole, jako jsou `blobVersionedHashes`, `maxFeePerBlobGas` a `blobGasPrice`. Začínají bajtem `0x03` a jejich hodnota TransactionType je `0x3`. Blob transakce představují významné zlepšení v dostupnosti dat a možnostech škálování Etherea.
 
-5. **Transakce typu 4** byly představeny v [EIP-7702](https://eips.ethereum.org/EIPS/eip-7702) jako součást aktualizace [Pectra](/roadmap/pectra/) na Ethereu. Tyto transakce jsou navrženy tak, aby byly dopředně kompatibilní s abstrakcí účtu. Umožňují EOA dočasně se chovat jako kontraktové účty, aniž by byla ohrožena jejich původní funkčnost. Obsahují parametr `authorization_list`, který specifikuje chytrý kontrakt, na který EOA deleguje svou autoritu. Po transakci bude mít pole kódu EOA adresu delegovaného chytrého kontraktu.
+5. **Transakce typu 4** byly představeny v EIP-7702 jako součást aktualizace [Pectra](/roadmap/pectra/) na Ethereu. Tyto transakce jsou navrženy tak, aby byly dopředně kompatibilní s abstrakcí účtu. Umožňují EOA dočasně se chovat jako kontraktové účty, aniž by byla ohrožena jejich původní funkčnost. Obsahují parametr `authorization_list`, který specifikuje chytrý kontrakt, na který EOA deleguje svou autoritu. Po transakci bude mít pole kódu EOA adresu delegovaného chytrého kontraktu.
 
 ## Další čtení {#further-reading}
 
-- [EIP-2718: Typed Transaction Envelope](https://eips.ethereum.org/EIPS/eip-2718)
+- EIP-2718: Typed Transaction Envelope
 
 _Víte o komunitním zdroji, který vám pomohl? Upravte tuto stránku a přidejte ho!_
 

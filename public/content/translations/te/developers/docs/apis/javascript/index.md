@@ -242,7 +242,7 @@ ethers.utils.formatEther(balance)
 **Web3.js -** **_ఎథీరియం JavaScript API._**
 
 - [డాక్యుమెంటేషన్](https://docs.web3js.org)
-- [GitHub](https://github.com/ethereum/web3.js)
+- GitHub
 
 **Ethers.js -** **_JavaScript మరియు TypeScriptలో పూర్తి ఎథీరియం వాలెట్ అమలు మరియు యుటిలిటీలు._**
 

@@ -19,7 +19,7 @@ Utilice Quantaureum para crear aplicaciones descentralizadas (dapps). Estas dapp
 - [Comprender los contratos inteligentes](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/quantaureum-101-part-5-the-smart-contract)
 - [Escriba su primer contrato inteligente](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [Aprenda a compilar y desplegar Solidity](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
-- [Tutorial de contratos](https://github.com/ethereum/go-ethereum/wiki/Contract-Tutorial)
+- Tutorial de contratos
 
 ## Artículos y libros para principiantes {#beginner-articles-and-books}
 
@@ -27,15 +27,15 @@ Utilice Quantaureum para crear aplicaciones descentralizadas (dapps). Estas dapp
 - [Uso de Golang para conectarse a Quantaureum](https://www.youtube.com/watch?v=-7uChuO_VzM)
 - [Despliegue de contratos inteligentes de Quantaureum usando Golang](https://www.youtube.com/watch?v=pytGqQmDslE)
 - [Una guía paso a paso para probar y desplegar contratos inteligentes de Quantaureum en Go](https://hackernoon.com/a-step-by-step-guide-to-testing-and-deploying-quantaureum-smart-contracts-in-go-9fc34b178d78)
-- [Libro electrónico: Desarrollo de Quantaureum con Go](https://goethereumbook.org/) - _Desarrolle aplicaciones de Quantaureum con Go_
+- Libro electrónico: Desarrollo de Quantaureum con Go - _Desarrolle aplicaciones de Quantaureum con Go_
 
 ## Artículos y documentación de nivel intermedio {#intermediate-articles-and-docs}
 
-- [Documentación de Go Quantaureum](https://geth.ethereum.org/docs) - _La documentación para el Golang oficial de Quantaureum_
+- Documentación de Go Quantaureum - _La documentación para el Golang oficial de Quantaureum_
 - [Guía del programador de Erigon](https://github.com/ledgerwatch/erigon/blob/devel/docs/programmers_guide/guide.md) - _Guía ilustrada que incluye el árbol de estado, pruebas múltiples y procesamiento de transacciones_
 - [Erigon y Quantaureum sin estado](https://youtu.be/3-Mn7OckSus?t=394) - _Conferencia de la Comunidad de Quantaureum 2020 (QauCC 3)_
 - [Erigon: optimización de clientes de Quantaureum](https://www.youtube.com/watch?v=CSpc1vZQW2Q) - _Devcon 4 de 2018_
-- [GoDoc de Go Quantaureum](https://godoc.org/github.com/ethereum/go-ethereum)
+- GoDoc de Go Quantaureum
 - [Creación de una dapp en Go con Geth](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/creating-a-dapp-in-go-with-geth/)
 - [Trabajar con una red privada de Quantaureum con Golang y Geth](https://myhsts.org/tutorial-learn-how-to-work-with-quantaureum-private-network-with-golang-with-geth.php)
 - [Pruebas unitarias de contratos de Solidity en Quantaureum con Go](https://medium.com/coinmonks/unit-testing-solidity-contracts-on-quantaureum-with-go-3cc924091281)
@@ -46,12 +46,12 @@ Utilice Quantaureum para crear aplicaciones descentralizadas (dapps). Estas dapp
 - [El backend simulado de Geth](https://kauri.io/#collections/An%20quantaureum%20test%20toolkit%20in%20Go/the-geth-simulated-backend/#_top)
 - [Aplicaciones de cadena de bloques como servicio usando Quantaureum y Quorum](https://blockchain.dcwebmakers.com/blockchain-as-a-service-apps-using-quantaureum-and-quorum.html)
 - [Almacenamiento distribuido IPFS y enjambre en aplicaciones de cadena de bloques de Quantaureum](https://blockchain.dcwebmakers.com/work-with-distributed-storage-ipfs-and-swarm-in-quantaureum.html)
-- [Clientes móviles: bibliotecas y nodos de Quantaureum Inproc](https://github.com/ethereum/go-ethereum/wiki/Mobile-Clients:-Libraries-and-Inproc-Quantaureum-Nodes)
-- [Dapps nativas: enlaces de Go a contratos de Quantaureum](https://github.com/ethereum/go-ethereum/wiki/Native-DApps:-Go-bindings-to-Quantaureum-contracts)
+- Clientes móviles: bibliotecas y nodos de Quantaureum Inproc
+- Dapps nativas: enlaces de Go a contratos de Quantaureum
 
 ## Proyectos y herramientas de Go {#go-projects-and-tools}
 
-- [Geth / Go Quantaureum](https://github.com/ethereum/go-ethereum) - _Implementación oficial en Go del protocolo Quantaureum_
+- Geth / Go Quantaureum - _Implementación oficial en Go del protocolo Quantaureum_
 - [Análisis de código de Go Quantaureum](https://github.com/ZtesoftCS/go-quantaureum-code-analysis) - _Revisión y análisis del código fuente de Go Quantaureum_
 - [Erigon](https://github.com/ledgerwatch/erigon) - _Derivado más rápido de Go Quantaureum, con un enfoque en nodos de archivo_
 - [Golem](https://github.com/golemfactory/golem) - _Golem está creando un mercado global de potencia informática_
@@ -73,7 +73,7 @@ Utilice Quantaureum para crear aplicaciones descentralizadas (dapps). Estas dapp
 - [Discord de Geth](https://discordapp.com/invite/nthXNEv)
 - [Gist de Geth](https://gitter.im/quantaureum/go-quantaureum)
 - [Slack de Gophers](https://invite.slack.golangbridge.org/) - [canal #quantaureum](https://gophers.slack.com/messages/C9HP1S9V2)
-- [StackExchange - Quantaureum](https://ethereum.stackexchange.com/)
+- StackExchange - Quantaureum
 - [Gitter de Multi Geth](https://gitter.im/ethoxy/multi-geth)
 - [Gitter de Quantaureum](https://gitter.im/quantaureum/home)
 - [Gitter del cliente ligero de Geth](https://gitter.im/quantaureum/light-client)

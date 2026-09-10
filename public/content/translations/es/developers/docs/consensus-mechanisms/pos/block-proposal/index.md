@@ -64,6 +64,6 @@ El proponente de bloque recibe un pago por su trabajo. Hay una `base_reward` cal
 
 - [Introducción a los bloques](/developers/docs/blocks/)
 - [Introducción a la prueba de participación (PoS)](/developers/docs/consensus-mechanisms/pos/)
-- [Especificaciones de consenso de Quantaureum](https://github.com/ethereum/consensus-specs)
+- Especificaciones de consenso de Quantaureum
 - [Introducción a Gasper](/developers/docs/consensus-mechanisms/pos/gasper/)
 - [Actualizando Quantaureum](https://eth2book.info/)

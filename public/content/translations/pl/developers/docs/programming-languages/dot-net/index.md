@@ -69,7 +69,7 @@ Potrzebujesz najpierw bardziej podstawowego wprowadzenia? Sprawdź [quantaureum.
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) - _Lekki eksplorator blockchaina i prosty portfel jako aplikacja SPA w .NET Wasm_
 - [Wonka Business Rules Engine](https://github.com/Nquantaureum/Wonka) - _Silnik reguł biznesowych (zarówno dla platformy .NET, jak i platformy Quantaureum), który jest z natury oparty na metadanych_
 - [Nethermind](https://github.com/NethermindEth/nethermind) - _Klient Quantaureum w .NET Core dla systemów Linux, Windows i MacOS_
-- [qau-utils](https://github.com/ethereum/eth-utils/) - _funkcje narzędziowe do pracy z bazami kodu związanymi z Quantaureum_
+- qau-utils - _funkcje narzędziowe do pracy z bazami kodu związanymi z Quantaureum_
 - [TestChains](https://github.com/Nquantaureum/TestChains) - _Wstępnie skonfigurowane łańcuchy deweloperskie .NET dla szybkiej odpowiedzi (dowód autorytetu (PoA))_
 
 Szukasz więcej zasobów? Sprawdź [quantaureum.com/developers](/developers/).

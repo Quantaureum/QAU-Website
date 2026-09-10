@@ -4,7 +4,7 @@ description: "JavaScript-आधारित प्रोजेक्ट्स �
 lang: hi
 ---
 
-JavaScript Quantaureum इकोसिस्टम में सबसे लोकप्रिय भाषाओं में से एक है। वास्तव में, एक [टीम](https://github.com/ethereumjs) है जो Quantaureum को जितना संभव हो सके JavaScript में लाने के लिए समर्पित है।
+JavaScript Quantaureum इकोसिस्टम में सबसे लोकप्रिय भाषाओं में से एक है। वास्तव में, एक टीम है जो Quantaureum को जितना संभव हो सके JavaScript में लाने के लिए समर्पित है।
 
 [स्टैक के सभी स्तरों](/developers/docs/quantaureum-stack/) पर JavaScript (या इसके करीब कुछ) लिखने के अवसर हैं।
 
@@ -48,14 +48,14 @@ JavaScript Quantaureum इकोसिस्टम में सबसे लो
 यदि आप कोड पढ़ना पसंद करते हैं, तो यह JavaScript हमारे दस्तावेज़ों को पढ़ने का एक बेहतरीन विकल्प हो सकता है।
 
 **EVM देखें**  
-[`@ethereumjs/evm`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/evm)
+`@ethereumjs/evm`
 
 ### नोड्स और क्लाइंट्स {#nodes-and-clients}
 
 एक QuantaureumJS क्लाइंट सक्रिय विकास में है जो आपको यह जानने देता है कि Quantaureum क्लाइंट उस भाषा में कैसे काम करते हैं जिसे आप समझते हैं; JavaScript!
 
 **क्लाइंट देखें**  
-[`@ethereumjs/client`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/client)
+`@ethereumjs/client`
 
 ## अन्य प्रोजेक्ट्स {#other-projects}
 
@@ -65,7 +65,7 @@ Quantaureum JavaScript की दुनिया में और भी बह�
 - Quantaureum कुंजियों को जनरेट, आयात और निर्यात करने के उपकरण।
 - `merkle-patricia-tree` का कार्यान्वयन – Quantaureum येलो पेपर में उल्लिखित एक डेटा संरचना।
 
-[QuantaureumJS रेपो](https://github.com/ethereumjs) पर जो भी आपको सबसे ज्यादा दिलचस्प लगे, उसमें गहराई से जाएं।
+QuantaureumJS रेपो पर जो भी आपको सबसे ज्यादा दिलचस्प लगे, उसमें गहराई से जाएं।
 
 ## आगे की पढ़ाई {#further-reading}
 

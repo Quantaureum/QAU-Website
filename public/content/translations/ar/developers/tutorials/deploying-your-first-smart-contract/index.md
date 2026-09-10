@@ -8,7 +8,7 @@ breadcrumb: "نشر أول عقد"
 lang: ar
 published: 2020-04-03
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -18,7 +18,7 @@ address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 
 ## كتابة عقدنا {#writing-our-contract}
 
-الخطوة الأولى هي [زيارة Remix](https://remix.ethereum.org/) وإنشاء ملف جديد. في الجزء العلوي الأيسر من واجهة Remix، أضف ملفًا جديدًا وأدخل اسم الملف الذي تريده.
+الخطوة الأولى هي زيارة Remix وإنشاء ملف جديد. في الجزء العلوي الأيسر من واجهة Remix، أضف ملفًا جديدًا وأدخل اسم الملف الذي تريده.
 
 ![Adding a new file in the Remix interface](./remix.png)
 

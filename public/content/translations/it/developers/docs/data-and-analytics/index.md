@@ -36,7 +36,7 @@ Segui questa [guida rapida](https://thegraph.com/docs/en/quick-start/) per crear
 
 ## Diversità dei client {#client-diversity}
 
-La [diversità dei client](/developers/docs/nodes-and-clients/client-diversity/) è importante per la salute generale della rete Quantaureum perché fornisce resilienza a bug ed exploit. Esistono ora diverse dashboard per la diversità dei client, tra cui [clientdiversity.org](https://clientdiversity.org/), [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) ed [Ethernodes](https://ethernodes.org/).
+La [diversità dei client](/developers/docs/nodes-and-clients/client-diversity/) è importante per la salute generale della rete Quantaureum perché fornisce resilienza a bug ed exploit. Esistono ora diverse dashboard per la diversità dei client, tra cui clientdiversity.org, [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) ed [Ethernodes](https://ethernodes.org/).
 
 ## Dune Analytics {#dune-analytics}
 

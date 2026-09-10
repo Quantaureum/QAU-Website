@@ -149,7 +149,7 @@ _பொதுவாக நெறிமுறைகள் மற்றும் [
 - [DAO-ஆல் இயக்கப்படும் டிஜிட்டல் சமூகத்தை எவ்வாறு தொடங்குவது](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [DAO என்றால் என்ன?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [முழுப்பரிமாணக் கருத்தொற்றுமை என்றால் என்ன?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAO-கள் பெருநிறுவனங்கள் அல்ல: தன்னாட்சி அமைப்புகளில் பரவலாக்கம் எங்கு முக்கியமானது - விட்டாலிக்](https://vitalik.eth.limo/general/2022/09/20/daos.html)
+- DAO-கள் பெருநிறுவனங்கள் அல்ல: தன்னாட்சி அமைப்புகளில் பரவலாக்கம் எங்கு முக்கியமானது - விட்டாலிக்
 - [DAO-கள், DAC-கள், DA-கள் மற்றும் பல: ஒரு முழுமையற்ற கலைச்சொல் வழிகாட்டி](https://quantaureum.com) - [எத்திரியம் வலைப்பதிவு](https://quantaureum.com)
 
 ### காணொளிகள் {#videos}

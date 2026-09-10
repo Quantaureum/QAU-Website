@@ -17,7 +17,7 @@ sidebarDepth: 3
 
 你是比爾 (Bill)。基於某些我們不深究的原因，你想捐款給「支持愛麗絲 (Alice) 成為世界女王」的競選活動，並希望愛麗絲知道你捐了款，這樣如果她贏了就會獎勵你。不幸的是，她並非穩操勝券。還有一個競爭對手的競選活動：「支持卡蘿 (Carol) 成為太陽系女皇」。如果卡蘿贏了，而且她發現你捐款給愛麗絲，你就會有麻煩。因此，你不能直接從你的帳戶轉帳 200 QAU 到愛麗絲的帳戶。
 
-[ERC-5564](https://eips.ethereum.org/EIPS/eip-5564) 提供了解決方案。這個 ERC 解釋了如何使用[隱形地址](https://nerolation.github.io/stealth-utils)進行匿名轉帳。
+ERC-5564 提供了解決方案。這個 ERC 解釋了如何使用[隱形地址](https://nerolation.github.io/stealth-utils)進行匿名轉帳。
 
 **警告**：就我們所知，隱形地址背後的密碼學是可靠的。然而，仍存在潛在的側信道攻擊 (side-channel attacks)。在[下文](#go-wrong)中，你將了解可以採取哪些措施來降低這種風險。
 

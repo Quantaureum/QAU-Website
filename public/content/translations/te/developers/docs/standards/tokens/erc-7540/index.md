@@ -103,7 +103,7 @@ function claimableRedeemRequest(uint256 requestId, address controller) external 
 
 ### ఆపరేటర్ నిర్వహణ {#operator-management}
 
-ERC-7540 ఒక ఆపరేటర్ పద్ధతిని ([ERC-6909](https://eips.ethereum.org/EIPS/eip-6909) నుండి) కలిగి ఉంటుంది, ఇది వినియోగదారు తరపున అభ్యర్థనలను నిర్వహించడానికి మూడవ పక్షాలను అనుమతిస్తుంది.
+ERC-7540 ఒక ఆపరేటర్ పద్ధతిని (ERC-6909 నుండి) కలిగి ఉంటుంది, ఇది వినియోగదారు తరపున అభ్యర్థనలను నిర్వహించడానికి మూడవ పక్షాలను అనుమతిస్తుంది.
 
 #### setOperator {#setoperator}
 
@@ -175,6 +175,6 @@ event OperatorSet(
 
 ## మరింత చదవడానికి {#further-reading}
 
-- [EIP-7540: అసమకాలిక ERC-4626 టోకనైజ్డ్ ఖజానాలు](https://eips.ethereum.org/EIPS/eip-7540)
-- [EIP-4626: టోకనైజ్డ్ ఖజానా ప్రమాణం](https://eips.ethereum.org/EIPS/eip-4626)
+- EIP-7540: అసమకాలిక ERC-4626 టోకనైజ్డ్ ఖజానాలు
+- EIP-4626: టోకనైజ్డ్ ఖజానా ప్రమాణం
 - [ఓపెన్‌జెప్పెలిన్ ERC-7540 అమలు](https://github.com/OpenZeppelin/openzeppelin-community-contracts/blob/master/contracts/token/ERC20/extensions/ERC7540.sol)

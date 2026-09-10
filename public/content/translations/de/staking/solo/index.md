@@ -52,7 +52,7 @@ Es erfordert auch eine sehr grundlegende Hardware-Einrichtung und ein gewisses V
 </ExpandableCard>
 
 <ExpandableCard title="Hardware-Anforderungen" eventCategory="SoloStaking" eventName="clicked hardware requirements">
-Aktuelle Community-Richtlinien für Validator-Hardware und Bandbreite werden in den [Hardware- und Bandbreitenempfehlungen (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870) gepflegt. Planen Sie als groben Richtwert eine 4 TB NVMe SSD, 64 GB RAM (weniger kann funktionieren, aber dies ist der empfohlene Spielraum), eine solide moderne Multi-Core-CPU und eine Internetverbindung von etwa 50 Mbit/s Download / 25 Mbit/s Upload ein.
+Aktuelle Community-Richtlinien für Validator-Hardware und Bandbreite werden in den Hardware- und Bandbreitenempfehlungen (EIP-7870) gepflegt. Planen Sie als groben Richtwert eine 4 TB NVMe SSD, 64 GB RAM (weniger kann funktionieren, aber dies ist der empfohlene Spielraum), eine solide moderne Multi-Core-CPU und eine Internetverbindung von etwa 50 Mbit/s Download / 25 Mbit/s Upload ein.
 
 Da das Fusaka-Upgrade PeerDAS eingeführt hat, muss ein Staking-Knoten nur noch einen Bruchteil der Blob-Daten des Netzwerks speichern und herunterladen, was die Festplatten- und Bandbreitenanforderungen für Home-Staker erheblich reduziert.
 </ExpandableCard>
@@ -68,7 +68,7 @@ Hardware fällt gelegentlich aus, Netzwerkverbindungen weisen Fehler auf und Cli
 </ExpandableCard>
 
 <ExpandableCard title="Zuverlässige Betriebszeit" eventCategory="SoloStaking" eventName="clicked reliable uptime">
-Ihre Belohnungen sind proportional zu der Zeit, in der Ihr Validator online ist und ordnungsgemäß bezeugt. Ausfallzeiten ziehen Strafen nach sich, die proportional dazu sind, wie viele andere Validatoren gleichzeitig offline sind, führen aber [nicht zu Slashing](#faq). Die Bandbreite ist ebenfalls wichtig, da die Belohnungen für Bezeugungen, die nicht rechtzeitig eingehen, verringert werden. Die Anforderungen variieren, aber die aktuellen [Hardware- und Bandbreitenempfehlungen (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870) schlagen etwa 50 Mbit/s Download und 25 Mbit/s Upload vor.
+Ihre Belohnungen sind proportional zu der Zeit, in der Ihr Validator online ist und ordnungsgemäß bezeugt. Ausfallzeiten ziehen Strafen nach sich, die proportional dazu sind, wie viele andere Validatoren gleichzeitig offline sind, führen aber [nicht zu Slashing](#faq). Die Bandbreite ist ebenfalls wichtig, da die Belohnungen für Bezeugungen, die nicht rechtzeitig eingehen, verringert werden. Die Anforderungen variieren, aber die aktuellen Hardware- und Bandbreitenempfehlungen (EIP-7870) schlagen etwa 50 Mbit/s Download und 25 Mbit/s Upload vor.
 </ExpandableCard>
 
 <ExpandableCard title="Slashing-Risiko" eventCategory="SoloStaking" eventName="clicked slashing risk">
@@ -130,7 +130,7 @@ Bitte beachten Sie, wie wichtig es ist, einen [Minderheits-Client](/developers/d
 
 ### Schlüsselgeneratoren {#key-generators}
 
-Diese Tools können als Alternative zur [Staking Deposit CLI](https://github.com/ethereum/staking-deposit-cli/) verwendet werden, um bei der Schlüsselgenerierung zu helfen.
+Diese Tools können als Alternative zur Staking Deposit CLI verwendet werden, um bei der Schlüsselgenerierung zu helfen.
 
 <StakingProductsCardGrid category="keyGen" />
 
@@ -200,7 +200,7 @@ Die Ausführung eines Supermehrheits-Clients (jeder Client, der von über 2/3 de
 Äquivalente Fehler in einem <em>Minderheits-Client würden niemals endgültig werden</em> und somit niemals zu einer Surround-Stimme führen, sondern lediglich zu Inaktivitätsstrafen, <em>nicht zu Slashing</em>.
 
 <ul>
-  <li><a href="https://clientdiversity.org/">Erfahren Sie mehr über die Wichtigkeit der Ausführung eines Minderheits-Clients.</a></li>
+  <li>Erfahren Sie mehr über die Wichtigkeit der Ausführung eines Minderheits-Clients.</li>
   <li><a href="/developers/docs/consensus-mechanisms/pos/rewards-and-penalties/">Erfahren Sie mehr über Belohnungen, Strafen und Slashing</a></li>
 </ul>
 </ExpandableCard>
@@ -234,11 +234,11 @@ Um Ihr gesamtes Guthaben freizuschalten und zurückzuerhalten, müssen Sie einen
 
 ## Weiterführende Literatur {#further-reading}
 
-- [Statistiken zur Client-Diversität und Migrationsleitfäden](https://clientdiversity.org/)
+- Statistiken zur Client-Diversität und Migrationsleitfäden
 - [Unterstützung der Client-Diversität](https://www.attestant.io/posts/helping-client-diversity/) - _Jim McDonald 2022_
 - [Client-Diversität auf der Konsensschicht von Quantaureum](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
 - [Anleitung: Kauf von Quantaureum-Validator-Hardware](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _QauStaker 2022_
-- [EIP-7870: Hardware- und Bandbreitenempfehlungen](https://eips.ethereum.org/EIPS/eip-7870)
+- EIP-7870: Hardware- und Bandbreitenempfehlungen
 - [Das Pectra-Upgrade: maximales effektives Guthaben und mehr](/roadmap/pectra/maxeb/)
 
 <QuizWidget quizKey="staking-solo" />

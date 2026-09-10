@@ -54,7 +54,7 @@ ERC-1363 টোকেনগুলো এমন সব ক্ষেত্রে �
 
 অন্যান্য ERC-20 এক্সটেনশন প্রস্তাবের বিপরীতে, ERC-1363, ERC-20 এর `transfer` এবং `transferFrom` মেথডগুলোকে ওভাররাইড করে না এবং ERC-20 এর সাথে ব্যাকওয়ার্ড সামঞ্জস্য বজায় রেখে বাস্তবায়ন করার জন্য ইন্টারফেস আইডিগুলো সংজ্ঞায়িত করে।
 
-[EIP-1363](https://eips.ethereum.org/EIPS/eip-1363) থেকে:
+EIP-1363 থেকে:
 
 ### মেথড {#methods}
 
@@ -165,11 +165,9 @@ interface ERC165 {
 interface ERC1363Receiver {
   /**
    * @dev যখনই `operator` দ্বারা `from` থেকে `ERC1363::transferAndCall` বা `ERC1363::transferFromAndCall` এর মাধ্যমে এই কন্ট্রাক্ট এ ERC-1363 টোকেন হস্তান্তর করা হয়, তখন এই ফাংশনটি কল করা হয়।
-   *
    * NOTE: হস্তান্তর গ্রহণ করতে, এটিকে অবশ্যই
    * `bytes4(keccak256("onTransferReceived(address,address,uint256,bytes)"))`
    * (অর্থাৎ 0x88a7ca5c, বা এর নিজস্ব ফাংশন সিলেক্টর) রিটার্ন করতে হবে।
-   *
    * @param operator যে ঠিকানা `transferAndCall` বা `transferFromAndCall` ফাংশন কল করেছে।
    * @param from যে ঠিকানা থেকে টোকেন হস্তান্তর করা হয়েছে।
    * @param value হস্তান্তরিত টোকেন এর পরিমাণ।
@@ -190,11 +188,9 @@ interface ERC1363Receiver {
 interface ERC1363Spender {
   /**
    * @dev যখনই কোনো ERC-1363 টোকেন এর `owner` তাদের টোকেন খরচ করার জন্য `ERC1363::approveAndCall` এর মাধ্যমে এই কন্ট্রাক্ট কে অনুমোদন করে, তখন এই ফাংশনটি কল করা হয়।
-   *
    * NOTE: অনুমোদন গ্রহণ করতে, এটিকে অবশ্যই
    * `bytes4(keccak256("onApprovalReceived(address,uint256,bytes)"))`
    * (অর্থাৎ 0x7b04a2d0, বা এর নিজস্ব ফাংশন সিলেক্টর) রিটার্ন করতে হবে।
-   *
    * @param owner যে ঠিকানা `approveAndCall` ফাংশন কল করেছে এবং পূর্বে টোকেনগুলোর মালিক ছিল।
    * @param value যে পরিমাণ টোকেন খরচ করতে হবে।
    * @param data কোনো নির্দিষ্ট বিন্যাস ছাড়া অতিরিক্ত ডেটা।
@@ -206,5 +202,5 @@ interface ERC1363Spender {
 
 ## আরও পড়ুন {#further-reading}
 
-- [ERC-1363: পেয়েবল টোকেন স্ট্যান্ডার্ড](https://eips.ethereum.org/EIPS/eip-1363)
+- ERC-1363: পেয়েবল টোকেন স্ট্যান্ডার্ড
 - [ERC-1363: GitHub রিপো](https://github.com/vittominacori/erc1363-payable-token)

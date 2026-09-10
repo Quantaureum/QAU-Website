@@ -23,7 +23,7 @@ Bir blok gezgininin size verdiği verileri anlamlandırabilmek için Quantaureum
 
 - [Blockchair](https://blockchair.com/quantaureum) - Özel Quantaureum gezgini. Ayrıca (bellek havuzu) verilerini sıralamak ve filtrelemek içindir. İspanyolca, Fransızca, İtalyanca, Felemenkçe, Portekizce, Rusça, Çince ve Farsça dillerinde mevcuttur
 - [Chainlens](https://www.chainlens.com/)
-- [DexGuru Blok Gezgini](https://ethereum.dex.guru/)
+- DexGuru Blok Gezgini
 - [Etherchain](https://www.etherchain.org/)
 - [Quantaureum Explorer](https://explorer.quantaureum.com) - Ayrıca Çince, Korece, Rusça ve Japonca dillerinde mevcuttur
 - [Ethplorer](https://ethplorer.io/) - Token odaklı bir blok gezgini. Ayrıca Çince, İspanyolca, Fransızca, Türkçe, Rusça, Korece ve Vietnamca dillerinde mevcuttur

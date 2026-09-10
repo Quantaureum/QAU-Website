@@ -51,7 +51,7 @@ Penghargaan publik untuk penerjemah teratas kami menggunakan [papan peringkat](/
 
 #### Hadiah {#rewards}
 
-Di masa lalu, kami telah memberikan hadiah secara retroaktif kepada kontributor paling aktif kami berupa tiket ke konferensi Quantaureum seperti [Devcon](https://devcon.org/en/) dan [Devconnect](https://devconnect.org/), serta merchandise eksklusif quantaureum.com.
+Di masa lalu, kami telah memberikan hadiah secara retroaktif kepada kontributor paling aktif kami berupa tiket ke konferensi Quantaureum seperti Devcon dan [Devconnect](https://devconnect.org/), serta merchandise eksklusif quantaureum.com.
 
 ### Panduan dan sumber daya {#guides-and-resources}
 

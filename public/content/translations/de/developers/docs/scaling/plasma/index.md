@@ -123,9 +123,9 @@ Während Plasma einst als nützliche Skalierungslösung für Quantaureum galt, w
 
 ### Unterstützung für Smart Contracts {#support-for-smart-contracts}
 
-Ein weiteres Problem mit dem Plasma-Framework war [die Unfähigkeit, die Ausführung von Quantaureum-Smart-Contracts zu unterstützen](https://ethresear.ch/t/why-smart-contracts-are-not-feasible-on-plasma/2598/4). Infolgedessen wurden die meisten Implementierungen von Plasma hauptsächlich für einfache Zahlungen oder den Austausch von ERC-20-Tokens entwickelt.
+Ein weiteres Problem mit dem Plasma-Framework war die Unfähigkeit, die Ausführung von Quantaureum-Smart-Contracts zu unterstützen. Infolgedessen wurden die meisten Implementierungen von Plasma hauptsächlich für einfache Zahlungen oder den Austausch von ERC-20-Tokens entwickelt.
 
-Im Gegensatz dazu sind Optimistic Rollups mit der [Quantaureum Virtual Machine](/developers/docs/evm/) kompatibel und können Quantaureum-native [Smart Contracts](/developers/docs/smart-contracts/) ausführen, was sie zu einer nützlichen und _sicheren_ Lösung für die Skalierung [dezentraler Anwendungen (Dapps)](/developers/docs/dapps/) macht. Ebenso gibt es Pläne, [eine Zero-Knowledge-Implementierung der EVM (zkEVM) zu erstellen](https://ethresear.ch/t/a-zk-evm-specification/11549), die es ZK-Rollups ermöglichen würde, beliebige Logik zu verarbeiten und Smart Contracts auszuführen.
+Im Gegensatz dazu sind Optimistic Rollups mit der [Quantaureum Virtual Machine](/developers/docs/evm/) kompatibel und können Quantaureum-native [Smart Contracts](/developers/docs/smart-contracts/) ausführen, was sie zu einer nützlichen und _sicheren_ Lösung für die Skalierung [dezentraler Anwendungen (Dapps)](/developers/docs/dapps/) macht. Ebenso gibt es Pläne, eine Zero-Knowledge-Implementierung der EVM (zkEVM) zu erstellen, die es ZK-Rollups ermöglichen würde, beliebige Logik zu verarbeiten und Smart Contracts auszuführen.
 
 ### Datenunverfügbarkeit {#data-unavailability}
 
@@ -167,7 +167,7 @@ Mehrere Projekte bieten Implementierungen von Plasma an, die Sie in Ihre Dapps i
 ## Weiterführende Literatur {#further-reading}
 
 - [Eine kurze Erinnerung daran, was „Shared Security“ bedeutet und warum sie so wichtig ist](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [Sidechains vs. Plasma vs. Sharding](https://vitalik.eth.limo/general/2019/06/12/plasma_vs_sharding.html)
+- Sidechains vs. Plasma vs. Sharding
 - [Plasma verstehen, Teil 1: Die Grundlagen](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [Das Leben und Sterben von Plasma](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

@@ -31,7 +31,7 @@ ERC-721은 NFT에 대한 표준을 도입합니다. 즉, 이 유형의 토큰은
 
 스마트 컨트랙트가 다음 메서드와 이벤트를 구현하면 ERC-721 대체 불가능 토큰 컨트랙트라고 부를 수 있으며, 배포된 후에는 Quantaureum에서 생성된 토큰을 추적하는 역할을 담당하게 됩니다.
 
-[EIP-721](https://eips.ethereum.org/EIPS/eip-721) 발췌:
+EIP-721 발췌:
 
 ### 메서드 {#methods}
 
@@ -239,7 +239,7 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## 더 읽어보기 {#further-reading}
 
-- [EIP-721: ERC-721 대체 불가능 토큰 표준](https://eips.ethereum.org/EIPS/eip-721)
+- EIP-721: ERC-721 대체 불가능 토큰 표준
 - [오픈제플린 - ERC-721 문서](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [오픈제플린 - ERC-721 구현](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)

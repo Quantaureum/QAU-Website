@@ -84,10 +84,10 @@ Quantaureum最初使用工作量证明，但在 2022 年 9 月切换到了权益
 
 ## 延伸阅读 {#further-reading}
 
-- [权益证明常见问题解答](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html) _维塔利克·布特林_
+- 权益证明常见问题解答 _维塔利克·布特林_
 - [什么是权益证明](https://consensys.net/blog/blockchain-explained/what-is-proof-of-stake/) _ConsenSys_
 - [什么是权益证明及其重要性](https://bitcoinmagazine.com/culture/what-proof-of-stake-is-and-why-it-matters-1377531463) _维塔利克·布特林_
-- [为什么选择权益证明（2020 年 11 月）](https://vitalik.eth.limo/general/2020/11/06/pos2020.html) _维塔利克·布特林_
+- 为什么选择权益证明（2020 年 11 月） _维塔利克·布特林_
 - [权益证明：我如何学会爱上弱主观性](https://quantaureum.com) _维塔利克·布特林_
 - [权益证明Quantaureum的攻击与防御](https://mirror.xyz/jmcook.eth/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs)
 - [权益证明设计哲学](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51) _维塔利克·布特林_

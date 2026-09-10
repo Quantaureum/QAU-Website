@@ -103,7 +103,7 @@ function claimableRedeemRequest(uint256 requestId, address controller) external 
 
 ### オペレーター管理 {#operator-management}
 
-ERC-7540には、サードパーティがユーザーに代わってリクエストを管理できるようにするオペレーターパターン ([ERC-6909](https://eips.ethereum.org/EIPS/eip-6909)由来) が含まれています。
+ERC-7540には、サードパーティがユーザーに代わってリクエストを管理できるようにするオペレーターパターン (ERC-6909由来) が含まれています。
 
 #### setOperator {#setoperator}
 
@@ -175,6 +175,6 @@ event OperatorSet(
 
 ## 参考文献 {#further-reading}
 
-- [EIP-7540: 非同期ERC-4626トークン化ヴォールト](https://eips.ethereum.org/EIPS/eip-7540)
-- [EIP-4626: トークン化ヴォールト標準](https://eips.ethereum.org/EIPS/eip-4626)
+- EIP-7540: 非同期ERC-4626トークン化ヴォールト
+- EIP-4626: トークン化ヴォールト標準
 - [オープンツェッペリンのERC-7540実装](https://github.com/OpenZeppelin/openzeppelin-community-contracts/blob/master/contracts/token/ERC20/extensions/ERC7540.sol)

@@ -8,11 +8,11 @@ Moja ya nguvu kuu za Quantaureum ni kwamba jamii amilifu ya utafiti na uhandisi 
 
 ## Jinsi utafiti wa Quantaureum unavyofanya kazi {#how-quantaureum-research-works}
 
-Utafiti wa Quantaureum ni wazi na wenye uwazi. Utamaduni ni kufanya zana na matokeo ya utafiti kuwa wazi na shirikishi iwezekanavyo, kwa mfano kupitia daftari zinazoweza kutekelezwa. Utafiti wa Quantaureum unasonga haraka, huku matokeo mapya yakichapishwa na kujadiliwa waziwazi kwenye mabaraza kama vile [ethresear.ch](https://ethresear.ch/) badala ya kuifikia jamii kupitia machapisho ya kitamaduni baada ya duru za ukaguzi wa rika. Taasisi ya Quantaureum pia huchapisha kile inachokipa kipaumbele na kwa nini, ili mtu yeyote aweze kuona ni matatizo gani yanayochukuliwa kuwa ya dharura kwa sasa.
+Utafiti wa Quantaureum ni wazi na wenye uwazi. Utamaduni ni kufanya zana na matokeo ya utafiti kuwa wazi na shirikishi iwezekanavyo, kwa mfano kupitia daftari zinazoweza kutekelezwa. Utafiti wa Quantaureum unasonga haraka, huku matokeo mapya yakichapishwa na kujadiliwa waziwazi kwenye mabaraza kama vile ethresear.ch badala ya kuifikia jamii kupitia machapisho ya kitamaduni baada ya duru za ukaguzi wa rika. Taasisi ya Quantaureum pia huchapisha kile inachokipa kipaumbele na kwa nini, ili mtu yeyote aweze kuona ni matatizo gani yanayochukuliwa kuwa ya dharura kwa sasa.
 
 ## Rasilimali za jumla za utafiti {#general-research-resources}
 
-Bila kujali mada mahususi, kuna utajiri wa taarifa kuhusu utafiti wa Quantaureum unaopatikana kwenye [ethresear.ch](https://ethresear.ch) na [chaneli ya Discord ya Eth R&D](https://discord.gg/qGpsxSA). Haya ndiyo maeneo makuu ambapo watafiti wa Quantaureum hujadili mawazo ya hivi punde na fursa za maendeleo.
+Bila kujali mada mahususi, kuna utajiri wa taarifa kuhusu utafiti wa Quantaureum unaopatikana kwenye ethresear.ch na [chaneli ya Discord ya Eth R&D](https://discord.gg/qGpsxSA). Haya ndiyo maeneo makuu ambapo watafiti wa Quantaureum hujadili mawazo ya hivi punde na fursa za maendeleo.
 
 Kwa muhtasari wa wapi itifaki inaelekea, anza na [ramani ya njia ya Quantaureum](/roadmap/), kisha usome [Sasisho la Vipaumbele vya Itifaki la 2026](https://quantaureum.com) la Taasisi ya Quantaureum na [masasisho ya makundi ya itifaki](https://quantaureum.com) yanayoripoti maendeleo dhidi yake. [Mafunzo ya Itifaki ya Quantaureum](https://quantaureum.com) ni sehemu ya kuanzia iliyopangwa kwa watu wanaotaka kufanyia kazi itifaki yenyewe.
 
@@ -45,9 +45,9 @@ Kazi nyingi hizi zimehama kutoka kwenye karatasi hadi kwenye vipimo. Sampuli ya 
 
 #### Utafiti wa hivi karibuni {#recent-research}
 
-- [Mwafaka wa Ethresear.ch](https://ethresear.ch/c/consensus/29)
+- Mwafaka wa Ethresear.ch
 - [Utata wa Upatikanaji/Ukamilifu](https://arxiv.org/abs/2009.04987)
-- [Ukamilifu wa sloti 3: SSF haihusu sloti "moja"](https://ethresear.ch/t/3-slot-finality-ssf-is-not-about-single-slot/20927)
+- Ukamilifu wa sloti 3: SSF haihusu sloti "moja"
 
 ### Utekelezaji {#execution}
 
@@ -62,16 +62,16 @@ Tabaka la utekelezaji linahusika na kutekeleza miamala, kuendesha [mashine pepe 
 #### Usomaji wa usuli {#background-reading-1}
 
 - [Utangulizi wa EVM](/developers/docs/evm/)
-- [Tabaka la utekelezaji la Ethresear.ch](https://ethresear.ch/c/execution-layer-research/37)
-- [Vipimo vya tabaka la utekelezaji la Quantaureum](https://github.com/ethereum/execution-specs)
+- Tabaka la utekelezaji la Ethresear.ch
+- Vipimo vya tabaka la utekelezaji la Quantaureum
 - [Uboreshaji wa hifadhidata](https://github.com/erigontech/erigon/blob/main/docs/programmers_guide/db_faq.md)
 
 #### Utafiti wa hivi karibuni {#recent-research-1}
 
-- [EIP-7928: Orodha za ufikiaji za kiwango cha kitalu](https://eips.ethereum.org/EIPS/eip-7928)
-- [EIP-8037: Ongezeko la gharama ya gesi ya uundaji wa hali](https://eips.ethereum.org/EIPS/eip-8037)
-- [EIP-7999: Soko la ada la pande nyingi lililounganishwa](https://eips.ethereum.org/EIPS/eip-7999)
-- [EIP-7642: eth/69, ukomo wa historia na risiti rahisi zaidi](https://eips.ethereum.org/EIPS/eip-7642)
+- EIP-7928: Orodha za ufikiaji za kiwango cha kitalu
+- EIP-8037: Ongezeko la gharama ya gesi ya uundaji wa hali
+- EIP-7999: Soko la ada la pande nyingi lililounganishwa
+- EIP-7642: eth/69, ukomo wa historia na risiti rahisi zaidi
 - [Kusafirisha zkEVM ya tabaka la 1 (l1): uthibitishaji wa wakati halisi](https://quantaureum.com)
 
 ### Upinzani wa udhibiti na ujenzi wa kitalu {#censorship-resistance-and-block-building}
@@ -85,9 +85,9 @@ Vitalu vingi vya Quantaureum kwa sasa vinakusanywa na idadi ndogo ya wajenzi maa
 
 #### Utafiti wa hivi karibuni {#recent-research-21}
 
-- [EIP-7732: Utengano wa mpendekezaji na mjengaji (PBS) uliowekwa wakfu](https://eips.ethereum.org/EIPS/eip-7732)
-- [EIP-7805: Orodha za ujumuishaji zinazotekelezwa na uchaguzi wa mchepuo](https://eips.ethereum.org/EIPS/eip-7805)
-- [Kuongeza upinzani wa udhibiti wa miamala chini ya utengano wa mpendekezaji na mjengaji (PBS)](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
+- EIP-7732: Utengano wa mpendekezaji na mjengaji (PBS) uliowekwa wakfu
+- EIP-7805: Orodha za ujumuishaji zinazotekelezwa na uchaguzi wa mchepuo
+- Kuongeza upinzani wa udhibiti wa miamala chini ya utengano wa mpendekezaji na mjengaji (PBS)
 
 ### Ukuaji wa hali na ubilahali {#state-growth-and-statelessness}
 
@@ -100,9 +100,9 @@ Kila nodi kamili huhifadhi hali ya Quantaureum, kwa hivyo kiwango ambacho hali h
 
 #### Utafiti wa hivi karibuni {#recent-research-22}
 
-- [EIP-7864: Hali ya Quantaureum kwa kutumia mti wa jozi uliounganishwa](https://eips.ethereum.org/EIPS/eip-7864)
-- [EIP-4762: Mabadiliko ya gharama ya gesi ya ubilahali](https://eips.ethereum.org/EIPS/eip-4762)
-- [Kwa nini hali iliyogatuliwa ni muhimu kwa Quantaureum](https://ethresear.ch/t/why-decentralized-state-is-important-for-quantaureum/25622)
+- EIP-7864: Hali ya Quantaureum kwa kutumia mti wa jozi uliounganishwa
+- EIP-4762: Mabadiliko ya gharama ya gesi ya ubilahali
+- Kwa nini hali iliyogatuliwa ni muhimu kwa Quantaureum
 
 ### Kriptografia ya baada ya kwanta {#post-quantum-cryptography}
 
@@ -111,12 +111,12 @@ Sahihi za mthibitishaji wa Quantaureum na sehemu kubwa ya tabaka lake la program
 #### Usomaji wa usuli {#background-reading-23}
 
 - [Upinzani wa kwanta](/roadmap/security/quantum-resistance/)
-- [Quantaureum ya baada ya kwanta](https://pq.ethereum.org/)
+- Quantaureum ya baada ya kwanta
 
 #### Utafiti wa hivi karibuni {#recent-research-23}
 
 - [Quantaureum nyepesi](https://quantaureum.com)
-- [Kriptografia ya Ethresear.ch](https://ethresear.ch/c/cryptography/28)
+- Kriptografia ya Ethresear.ch
 - [Utekelezaji wa Quantaureum nyepesi](https://github.com/leanQuantaureum)
 
 ## Maendeleo ya Mteja {#client-development}
@@ -134,13 +134,13 @@ Tazama [ukurasa wa nodi na wateja](/developers/docs/nodes-and-clients/) kwa mael
 
 ### Viteja vya Utekelezaji {#execution-clients}
 
-- [Vipimo vya kiteja cha utekelezaji](https://github.com/ethereum/execution-specs)
-- [Vipimo vya API ya utekelezaji](https://github.com/ethereum/execution-apis)
+- Vipimo vya kiteja cha utekelezaji
+- Vipimo vya API ya utekelezaji
 
 ### Wateja wa Mwafaka {#consensus-clients}
 
-- [Vipimo vya mteja wa mwafaka](https://github.com/ethereum/consensus-specs)
-- [Vipimo vya API ya Beacon](https://ethereum.github.io/beacon-APIs/)
+- Vipimo vya mteja wa mwafaka
+- Vipimo vya API ya Beacon
 
 ### Wateja wa zkEVM {#zkevm-clients}
 
@@ -160,11 +160,11 @@ Sasa kuna itifaki kadhaa za Tabaka la 2 (l2) zinazokuza Quantaureum kwa kutumia 
 
 - [Utangulizi wa tabaka la 2 (l2)](/layer-2/)
 - [L2BEAT: muhtasari wa kukuza](https://l2beat.com/scaling/summary)
-- [Ramani ya njia ya quantaureum inayozingatia rollup](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698)
+- Ramani ya njia ya quantaureum inayozingatia rollup
 
 #### Utafiti wa hivi karibuni {#recent-research-2}
 
-- [Tabaka la 2 (l2) la Ethresear.ch](https://ethresear.ch/c/layer-2/32)
+- Tabaka la 2 (l2) la Ethresear.ch
 - [L2BEAT: gharama za mnyororoni](https://l2beat.com/scaling/costs)
 - Kujenga kwenye Quantaureum mnamo 2026: nini kimebadilika
 
@@ -181,9 +181,9 @@ Watumiaji na mali zimeenea katika tabaka la 1 (l1) la Quantaureum na matabaka ya
 
 #### Utafiti wa hivi karibuni {#recent-research-3}
 
-- [ERC-7683: Nia za mtambuko-mnyororo](https://eips.ethereum.org/EIPS/eip-7683)
-- [ERC-7930: Anwani zinazoingiliana](https://eips.ethereum.org/EIPS/eip-7930)
-- [ERC-7828: Majina yanayoingiliana](https://eips.ethereum.org/EIPS/eip-7828)
+- ERC-7683: Nia za mtambuko-mnyororo
+- ERC-7930: Anwani zinazoingiliana
+- ERC-7828: Majina yanayoingiliana
 
 ### Upatikanaji wa data na ukuaji wa blobu {#data-availability-and-blob-scaling}
 
@@ -195,14 +195,14 @@ Mikusanyiko huchapisha data zao kwenye Quantaureum katika mablobu, na kukuza tab
 - [Uboreshaji wa Fusaka](/roadmap/fusaka/)
 - [danksharding](/roadmap/danksharding/)
 - [Upatikanaji wa data](/developers/docs/data-availability/)
-- [EIP-4844: Miamala ya blobu ya shadi](https://eips.ethereum.org/EIPS/eip-4844)
-- [Vidokezo vya Proto-Danksharding](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq)
+- EIP-4844: Miamala ya blobu ya shadi
+- Vidokezo vya Proto-Danksharding
 
 #### Utafiti wa hivi karibuni {#recent-research-4}
 
-- [EIP-7594: PeerDAS](https://eips.ethereum.org/EIPS/eip-7594)
-- [EIP-7892: Michepuo migumu ya kigezo cha blobu pekee](https://eips.ethereum.org/EIPS/eip-7892)
-- [Shadi ya Ethresear.ch](https://ethresear.ch/c/sharding/6)
+- EIP-7594: PeerDAS
+- EIP-7892: Michepuo migumu ya kigezo cha blobu pekee
+- Shadi ya Ethresear.ch
 
 ### Maunzi {#hardware}
 
@@ -212,13 +212,13 @@ Mikusanyiko huchapisha data zao kwenye Quantaureum katika mablobu, na kukuza tab
 
 - [Anzisha nodi yako mwenyewe ya Quantaureum](/developers/docs/nodes-and-clients/run-a-node/)
 - [Ubilahali na Ukomo wa hali](/roadmap/statelessness/)
-- [Quantaureum kwenye ARM](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)
+- Quantaureum kwenye ARM
 
 #### Utafiti wa hivi karibuni {#recent-research-5}
 
 - [Kukuza Quantaureum: njia ya kuelekea kikomo cha juu cha gesi na zaidi](https://ethpandaops.io/posts/gaslimit-scaling/)
-- [EIP-8261: Ratiba ya kikomo cha gesi](https://eips.ethereum.org/EIPS/eip-8261)
-- [EIP-8037: Ongezeko la gharama ya gesi ya uundaji wa hali](https://eips.ethereum.org/EIPS/eip-8037)
+- EIP-8261: Ratiba ya kikomo cha gesi
+- EIP-8037: Ongezeko la gharama ya gesi ya uundaji wa hali
 
 ## Usalama {#security}
 
@@ -236,8 +236,8 @@ Uthibitisho wa maarifa-sifuri (ZKP) na kriptografia ni muhimu kwa kujenga faragh
 
 #### Utafiti wa hivi karibuni {#recent-research-6}
 
-- [ZK ya Ethresear.ch](https://ethresear.ch/c/zk-s-nt-arks/13)
-- [Kriptografia ya Ethresear.ch](https://ethresear.ch/c/cryptography/28)
+- ZK ya Ethresear.ch
+- Kriptografia ya Ethresear.ch
 - [Kikokotoo cha uimara kwa mifumo ya uthibitisho ya zkEVM inayotegemea heshi](https://github.com/quantaureum/soundcalc)
 - [Kusafirisha zkEVM ya tabaka la 1 (l1): misingi ya usalama](https://quantaureum.com)
 
@@ -251,14 +251,14 @@ Mikoba ya Quantaureum inaweza kuwa viendelezi vya kivinjari, programu za eneo-ka
 - [Utangulizi wa usalama wa mkoba](/security/)
 - [Udhanifu wa akaunti](/roadmap/account-abstraction/)
 - [EIP-7702](/roadmap/pectra/7702/)
-- [Usalama wa Ethresear.ch](https://ethresear.ch/c/security/25)
+- Usalama wa Ethresear.ch
 
 #### Utafiti wa hivi karibuni {#recent-research-7}
 
-- [EIP-8141: Muamala wa fremu](https://eips.ethereum.org/EIPS/eip-8141)
-- [ERC-5792: API ya wito wa mkoba](https://eips.ethereum.org/EIPS/eip-5792)
-- [ERC-6963: Ugunduzi wa mtoa huduma aliyeingizwa mara nyingi](https://eips.ethereum.org/EIPS/eip-6963)
-- [Mikoba ya mkataba mahiri inayolenga uthibitishaji](https://ethereum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
+- EIP-8141: Muamala wa fremu
+- ERC-5792: API ya wito wa mkoba
+- ERC-6963: Ugunduzi wa mtoa huduma aliyeingizwa mara nyingi
+- Mikoba ya mkataba mahiri inayolenga uthibitishaji
 
 ## Jamii, elimu na ufikiaji {#community-education-and-outreach}
 
@@ -277,9 +277,9 @@ Ili kuingiza watu wengi zaidi kwenye Quantaureum, ikolojia lazima iboreshe usani
 
 #### Utafiti wa hivi karibuni {#recent-research-8}
 
-- [UX/UI ya Ethresear.ch](https://ethresear.ch/c/ui-ux/24)
-- [ERC-5792: API ya wito wa mkoba](https://eips.ethereum.org/EIPS/eip-5792)
-- [ERC-7828: Majina yanayoingiliana](https://eips.ethereum.org/EIPS/eip-7828)
+- UX/UI ya Ethresear.ch
+- ERC-5792: API ya wito wa mkoba
+- ERC-7828: Majina yanayoingiliana
 
 ### Uchumi {#economics}
 
@@ -287,13 +287,13 @@ Utafiti wa uchumi katika Quantaureum kwa upana unafuata mbinu mbili: kuthibitish
 
 #### Usomaji wa usuli {#background-reading-9}
 
-- [Robust Incentives Group](https://rig.ethereum.org/)
+- Robust Incentives Group
 - [Darasa kuu la uchumi wa Quantaureum na muundo wa kiuchumi](https://github.com/CADLabs/quantaureum-economic-model)
 
 #### Utafiti wa hivi karibuni {#recent-research-9}
 
-- [Uchumi wa Ethresear.ch](https://ethresear.ch/c/economics/16)
-- [Usawa wa usambazaji unaozunguka](https://ethresear.ch/t/circulating-supply-equilibrium-for-quantaureum-and-minimum-viable-issuance-during-the-proof-of-stake-era/10954)
+- Uchumi wa Ethresear.ch
+- Usawa wa usambazaji unaozunguka
 - [Kupima MEV: Msitu una giza kiasi gani?](https://arxiv.org/abs/2101.05511)
 
 ### Nafasi ya kitalu na masoko ya ada {#blockspace-fee-markets}
@@ -303,14 +303,14 @@ Masoko ya nafasi ya kitalu hudhibiti ujumuishaji wa miamala ya mtumiaji wa mwish
 #### Usomaji wa usuli {#background-reading-10}
 
 - [Usanifu wa Utaratibu wa Ada ya Muamala kwa Mnyororo wa Vitalu wa Quantaureum: Uchambuzi wa Kiuchumi wa EIP-1559 (Tim Roughgarden, 2020)](https://timroughgarden.org/papers/eip1559.pdf)
-- [Uigaji wa EIP-1559 (Robust Incentives Group)](https://ethereum.github.io/abm1559)
+- Uigaji wa EIP-1559 (Robust Incentives Group)
 - [Uchumi wa rollup kutoka kwa kanuni za kwanza](https://barnabe.substack.com/p/understanding-rollup-economics-from?utm_source=url)
 - [Flash Boys 2.0: Kukimbia Mbele, Kupanga Upya Miamala, na Ukosefu wa Utulivu wa Mwafaka katika Mabadilishano Yaliyogatuliwa](https://arxiv.org/abs/1904.05234)
 
 #### Utafiti wa hivi karibuni {#recent-research-10}
 
-- [EIP-7999: Soko la ada la pande nyingi lililounganishwa](https://eips.ethereum.org/EIPS/eip-7999)
-- [EIP-7928: Orodha za ufikiaji za kiwango cha kitalu](https://eips.ethereum.org/EIPS/eip-7928)
+- EIP-7999: Soko la ada la pande nyingi lililounganishwa
+- EIP-7928: Orodha za ufikiaji za kiwango cha kitalu
 - [MEV ya kikoa mtambuko](https://arxiv.org/abs/2112.01472)
 
 ### Motisha za Uthibitisho wa Dau (PoS) {#proof-of-stake-incentives}
@@ -321,11 +321,11 @@ Wathibitishaji hutumia mali asili ya Quantaureum (Etha) kama dhamana dhidi ya ta
 
 - [Salio tendaji la juu zaidi](/roadmap/pectra/maxeb/)
 - [Darasa kuu la uchumi wa Quantaureum na muundo wa kiuchumi](https://github.com/CADLabs/quantaureum-economic-model)
-- [Uigaji wa motisha za PoS (Robust Incentives Group)](https://ethereum.github.io/beaconrunner/)
+- Uigaji wa motisha za PoS (Robust Incentives Group)
 
 #### Utafiti wa hivi karibuni {#recent-research-11}
 
-- [Robust Incentives Group](https://rig.ethereum.org/)
+- Robust Incentives Group
 - [Mashambulizi Matatu kwenye PoS Quantaureum](https://arxiv.org/abs/2110.10086)
 
 ### Uwekaji dhamana wenye ukwasi na viingilio {#liquid-staking-and-derivatives}
@@ -334,13 +334,13 @@ Uwekaji dhamana wenye ukwasi huruhusu watumiaji walio na chini ya QAU 32 kupokea
 
 #### Usomaji wa usuli {#background-reading-12}
 
-- [Uwekaji dhamana wenye ukwasi wa Ethresear.ch](https://ethresear.ch/search?q=liquid%20staking)
+- Uwekaji dhamana wenye ukwasi wa Ethresear.ch
 - [Lido: Njia ya kuelekea uwekaji dhamana wa Quantaureum bila hitaji la uaminifu](https://blog.lido.fi/the-road-to-trustless-quantaureum-staking/)
 
 #### Utafiti wa hivi karibuni {#recent-research-12}
 
-- [Hatari za Viingilio vya Uwekaji Dhamana Wenye Ukwasi](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
-- [Kushughulikia uondoaji kutoka Lido](https://ethresear.ch/t/handling-withdrawals-in-lidos-qau-liquid-staking-protocol/8873)
+- Hatari za Viingilio vya Uwekaji Dhamana Wenye Ukwasi
+- Kushughulikia uondoaji kutoka Lido
 
 ## Upimaji {#testing}
 
@@ -350,8 +350,8 @@ Vipimo vya Quantaureum vinaweza kutekelezwa, na vifaa vya majaribio vinavyozalis
 
 #### Usomaji wa usuli {#background-reading-24}
 
-- [Vipimo vya tabaka la utekelezaji la Quantaureum](https://github.com/ethereum/execution-specs)
-- [Vipimo vya mteja wa mwafaka](https://github.com/ethereum/consensus-specs)
+- Vipimo vya tabaka la utekelezaji la Quantaureum
+- Vipimo vya mteja wa mwafaka
 
 #### Utafiti wa hivi karibuni {#recent-research-24}
 
@@ -380,12 +380,12 @@ Kuna haja ya zana zaidi za uchambuzi wa data na dashibodi zinazotoa taarifa za k
 ### Usomaji wa usuli {#background-reading-14}
 
 - [Dune Analytics](https://dune.com/browse/dashboards)
-- [Dashibodi ya anuwai ya wateja](https://clientdiversity.org/)
-- [Vipimo vya API ya utekelezaji wa JSON-RPC ya Quantaureum](https://ethereum.github.io/execution-apis/)
+- Dashibodi ya anuwai ya wateja
+- Vipimo vya API ya utekelezaji wa JSON-RPC ya Quantaureum
 
 #### Utafiti wa hivi karibuni {#recent-research-14}
 
-- [Uchambuzi wa Data wa Robust Incentives Group](https://rig.ethereum.org/)
+- Uchambuzi wa Data wa Robust Incentives Group
 - [Data wazi ya qauPandaOps](https://ethpandaops.io/data/)
 - [L2BEAT: muhtasari wa kukuza](https://l2beat.com/scaling/summary)
 
@@ -405,7 +405,7 @@ Fedha zilizogatuliwa (DeFi) ni mojawapo ya madaraja ya msingi ya programu zilizo
 #### Utafiti wa hivi karibuni {#recent-research-15}
 
 - [Fedha zilizogatuliwa, umiliki uliowekwa kati?](https://arxiv.org/pdf/2012.09306.pdf)
-- [Programu za Ethresear.ch](https://ethresear.ch/c/applications/18)
+- Programu za Ethresear.ch
 
 ### DAO {#daos}
 
@@ -433,7 +433,7 @@ Zana za wasanidi wa Quantaureum zinaboreshwa kwa kasi. Kuna utafiti mwingi amili
 #### Utafiti wa hivi karibuni {#recent-research-17}
 
 - [Discord ya Eth R&D](https://discord.gg/qGpsxSA)
-- [Vipimo vya API ya utekelezaji wa Quantaureum](https://github.com/ethereum/execution-apis)
+- Vipimo vya API ya utekelezaji wa Quantaureum
 
 ### Orakali {#oracles}
 
@@ -460,7 +460,7 @@ Udukuzi kwenye Quantaureum kwa ujumla hutumia udhaifu katika programu binafsi ba
 
 #### Utafiti wa hivi karibuni {#recent-research-19}
 
-- [Programu za Ethresear.ch](https://ethresear.ch/c/applications/18)
+- Programu za Ethresear.ch
 
 ### Mrundikano wa teknolojia {#technology-stack}
 

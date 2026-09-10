@@ -54,7 +54,7 @@ ERC-1363 juga berguna untuk menghindari kehilangan token atau penguncian token d
 
 Tidak seperti usulan ekstensi ERC-20 lainnya, ERC-1363 tidak menimpa metode `transfer` dan `transferFrom` dari ERC-20 dan mendefinisikan ID antarmuka yang akan diimplementasikan dengan mempertahankan kompatibilitas ke belakang dengan ERC-20.
 
-Dari [EIP-1363](https://eips.ethereum.org/EIPS/eip-1363):
+Dari EIP-1363:
 
 ### Metode {#methods}
 
@@ -167,11 +167,9 @@ interface ERC1363Receiver {
   /**
    * @dev Kapan pun token ERC-1363 ditransfer ke kontrak ini melalui `ERC1363::transferAndCall` atau `ERC1363::transferFromAndCall`
    * oleh `operator` dari `from`, fungsi ini dipanggil.
-   *
    * CATATAN: Untuk menerima transfer, ini harus mengembalikan
    * `bytes4(keccak256("onTransferReceived(address,address,uint256,bytes)"))`
    * (yaitu 0x88a7ca5c, atau pemilih fungsinya sendiri).
-   *
    * @param operator Alamat yang memanggil fungsi `transferAndCall` atau `transferFromAndCall`.
    * @param from Alamat asal transfer token.
    * @param value Jumlah token yang ditransfer.
@@ -193,11 +191,9 @@ interface ERC1363Spender {
   /**
    * @dev Kapan pun `owner` token ERC-1363 menyetujui kontrak ini melalui `ERC1363::approveAndCall`
    * untuk membelanjakan token mereka, fungsi ini dipanggil.
-   *
    * CATATAN: Untuk menerima persetujuan, ini harus mengembalikan
    * `bytes4(keccak256("onApprovalReceived(address,uint256,bytes)"))`
    * (yaitu 0x7b04a2d0, atau pemilih fungsinya sendiri).
-   *
    * @param owner Alamat yang memanggil fungsi `approveAndCall` dan sebelumnya memiliki token tersebut.
    * @param value Jumlah token yang akan dibelanjakan.
    * @param data Data tambahan tanpa format yang ditentukan.
@@ -209,5 +205,5 @@ interface ERC1363Spender {
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [ERC-1363: Standar Token Payable](https://eips.ethereum.org/EIPS/eip-1363)
+- ERC-1363: Standar Token Payable
 - [ERC-1363: Repositori GitHub](https://github.com/vittominacori/erc1363-payable-token)

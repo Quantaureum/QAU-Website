@@ -253,7 +253,7 @@ Tofauti kubwa ni kwamba programu za zawadi za hitilafu ziko wazi kwa jamii pana 
 
 - **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _Mfumo wa maendeleo na majaribio ya hali ya juu ya mkataba mahiri (kulingana na Ethers.js)_.
 
-- **[Majaribio ya Remix](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Zana ya kujaribu mikataba mahiri ya Solidity. Inafanya kazi chini ya programu-jalizi ya Remix IDE "Solidity Unit Testing" ambayo inatumika kuandika na kuendesha matukio ya majaribio kwa mkataba._
+- **Majaribio ya Remix** - _Zana ya kujaribu mikataba mahiri ya Solidity. Inafanya kazi chini ya programu-jalizi ya Remix IDE "Solidity Unit Testing" ambayo inatumika kuandika na kuendesha matukio ya majaribio kwa mkataba._
 
 - **[Wasaidizi wa Majaribio wa OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Maktaba ya madai kwa majaribio ya mkataba mahiri wa Quantaureum. Hakikisha mikataba yako inafanya kazi kama inavyotarajiwa!_
 

@@ -46,7 +46,7 @@ Jembatan ini memiliki dua alur utama:
    - Awalnya berasal dari jembatan di l1
 6. Jembatan l2 memeriksa apakah kontrak token ERC-20 di l2 adalah yang benar:
    - Kontrak l2 melaporkan bahwa pasangannya di l1 sama dengan asal token di l1
-   - Kontrak l2 melaporkan bahwa ia mendukung antarmuka yang benar ([menggunakan ERC-165](https://eips.ethereum.org/EIPS/eip-165)).
+   - Kontrak l2 melaporkan bahwa ia mendukung antarmuka yang benar (menggunakan ERC-165).
 7. Jika kontrak l2 adalah yang benar, panggil kontrak tersebut untuk mencetak jumlah token yang sesuai ke alamat yang sesuai. Jika tidak, mulai proses penarikan untuk memungkinkan pengguna mengklaim token di l1.
 
 ### Alur penarikan {#withdrawal-flow}
@@ -207,7 +207,6 @@ Fungsi ini hampir identik dengan `depositERC20`, tetapi memungkinkan Anda mengir
      * @dev Selesaikan penarikan dari l2 ke l1, dan kreditkan dana ke saldo penerima dari
      * token ERC-20 l1.
      * Panggilan ini akan gagal jika penarikan yang diinisialisasi dari l2 belum diselesaikan.
-     *
      * @param _l1Token Alamat token l1 untuk finalizeWithdrawal.
      * @param _l2Token Alamat token l2 tempat penarikan diinisialisasi.
      * @param _from alamat l2 yang menginisialisasi transfer.
@@ -338,7 +337,6 @@ Pengirim pesan lintas domain ini adalah sistem yang sama sekali berbeda, dan lay
 /**
  * @title CrossDomainEnabled
  * @dev Kontrak pembantu untuk kontrak yang melakukan komunikasi lintas domain
- *
  * Kompilator yang digunakan: ditentukan oleh kontrak yang mewarisi
  */
 contract CrossDomainEnabled {
@@ -519,7 +517,7 @@ Perhatikan bahwa ini bukanlah solusi yang sempurna, karena tidak ada cara untuk 
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[Standar ERC-20](https://eips.ethereum.org/EIPS/eip-20) mendukung dua cara bagi kontrak untuk melaporkan kegagalan:
+Standar ERC-20 mendukung dua cara bagi kontrak untuk melaporkan kegagalan:
 
 1. Mengembalikan
 2. Mengembalikan `false`
@@ -532,7 +530,6 @@ Menangani kedua kasus tersebut akan membuat kode kita lebih rumit, jadi sebagai 
  * @dev Jembatan QAU dan ERC-20 l1 adalah kontrak yang menyimpan dana l1 yang didepositkan dan standar
  * token yang digunakan di l2. Ini menyinkronkan jembatan l2 yang sesuai, menginformasikannya tentang deposit
  * dan mendengarkannya untuk penarikan yang baru saja diselesaikan.
- *
  */
 contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
     using SafeERC20 for IERC20;
@@ -771,7 +768,6 @@ Kedua fungsi ini adalah pembungkus di sekitar `_initiateERC20Deposit`, fungsi ya
     /**
      * @dev Melakukan logika untuk deposit dengan menginformasikan kontrak Token yang Didepositkan l2
      * tentang deposit tersebut dan memanggil penangan untuk mengunci dana l1. (misalnya, transferFrom)
-     *
      * @param _l1Token Alamat dari ERC-20 l1 yang kita depositkan
      * @param _l2Token Alamat dari ERC-20 l2 yang sesuai dengan l1
      * @param _from Akun untuk menarik deposit dari l1
@@ -956,14 +952,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [Antarmuka ERC-20 standar](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) tidak menyertakan fungsi `mint` dan `burn`.
-Metode tersebut tidak diwajibkan oleh [standar ERC-20](https://eips.ethereum.org/EIPS/eip-20), yang membiarkan mekanisme untuk membuat dan menghancurkan token tidak ditentukan.
+Metode tersebut tidak diwajibkan oleh standar ERC-20, yang membiarkan mekanisme untuk membuat dan menghancurkan token tidak ditentukan.
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 [Antarmuka ERC-165](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol) digunakan untuk menentukan fungsi apa yang disediakan oleh kontrak.
-[Anda dapat membaca standarnya di sini](https://eips.ethereum.org/EIPS/eip-165).
+Anda dapat membaca standarnya di sini.
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -1052,7 +1048,7 @@ Pertama panggil konstruktor untuk kontrak yang kita warisi (`ERC20(_name, _symbo
     }
 ```
 
-Inilah cara kerja [ERC-165](https://eips.ethereum.org/EIPS/eip-165).
+Inilah cara kerja ERC-165.
 Setiap antarmuka adalah sejumlah fungsi yang didukung, dan diidentifikasi sebagai [exclusive or](https://en.wikipedia.org/wiki/Exclusive_or) dari [pemilih fungsi ABI](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector) dari fungsi-fungsi tersebut.
 
 Jembatan l2 menggunakan ERC-165 sebagai pemeriksaan kewarasan untuk memastikan bahwa kontrak ERC-20 tempat ia mengirim aset adalah `IL2StandardERC20`.

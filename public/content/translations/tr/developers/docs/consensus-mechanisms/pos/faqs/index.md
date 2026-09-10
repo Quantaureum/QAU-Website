@@ -18,7 +18,7 @@ Hisse kanıtı, doğrulayıcı olarak bilinen düğümlerin bir akıllı sözle�
 
 İş kanıtı çok daha fazla enerjiye açtır çünkü madencilik sürecinde elektrik yakılır. Hisse kanıtı ise yalnızca çok küçük bir miktar enerji gerektirir; Quantaureum doğrulayıcıları Raspberry Pi gibi düşük güçlü bir cihazda bile çalışabilir. Quantaureum'un hisse kanıtı mekanizmasının iş kanıtından daha güvenli olduğu düşünülmektedir çünkü saldırmanın maliyeti daha yüksektir ve bir saldırgan için sonuçları daha ağırdır.
 
-İş kanıtı ile hisse kanıtı karşılaştırması tartışmalı bir konudur. [Vitalik Buterin'in blogu](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) ile Justin Drake ve Lyn Alden arasındaki tartışma, argümanların iyi bir özetini sunmaktadır.
+İş kanıtı ile hisse kanıtı karşılaştırması tartışmalı bir konudur. Vitalik Buterin'in blogu ile Justin Drake ve Lyn Alden arasındaki tartışma, argümanların iyi bir özetini sunmaktadır.
 
 
 ## Hisse kanıtı (PoS) enerji açısından verimli midir? {#is-pos-energy-efficient}
@@ -88,7 +88,7 @@ Stake öğütme, saldırganın doğrulayıcı seçimi algoritmasını kendi doğ
 Sosyal kesinti, topluluğun bir saldırıya yanıt olarak blokzincirin bir çatallanmasını koordine etme yeteneğidir. Topluluğun, dürüst olmayan bir zinciri kesinleştiren bir saldırgandan kurtulmasını sağlar. Sosyal kesinti, sansür saldırılarına karşı da kullanılabilir.
 
 - [Sosyal kesinti hakkında daha fazla bilgi](https://ercwl.medium.com/the-case-for-social-slashing-59277ff4d9c7)
-- [Vitalik Buterin'in sosyal kesinti hakkındaki görüşleri](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
+- Vitalik Buterin'in sosyal kesinti hakkındaki görüşleri
 
 ## Ceza kesintisine uğrayacak mıyım? {#will-i-get-slashed}
 
@@ -100,7 +100,7 @@ Bir doğrulayıcı olarak, kasıtlı olarak kötü niyetli bir davranışta bulu
 
 Kaybedecek bir şey yok problemi, yalnızca ödüllerin olduğu ve cezaların olmadığı bazı hisse kanıtı mekanizmalarındaki kavramsal bir sorundur. Eğer kaybedecek bir şey yoksa, pragmatik bir doğrulayıcı blokzincirin herhangi bir çatallanmasını, hatta birden fazla çatallanmasını onaylamaktan eşit derecede mutlu olur, çünkü bu onların ödüllerini artırır. Quantaureum, tek bir kurallı zincir sağlamak için kesinlik koşullarını ve ceza kesintisini kullanarak bu sorunu aşar.
 
-[Kaybedecek bir şey yok problemi hakkında daha fazla bilgi](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
+Kaybedecek bir şey yok problemi hakkında daha fazla bilgi
 
 ## Çatallanma seçimi algoritması nedir? {#what-is-a-fork-choice-algorithm}
 
@@ -126,7 +126,7 @@ Zayıf öznellik, blokzincirin mevcut durumunu doğrulamak için sosyal bilgiler
 
 Sansüre dirençli olmayı şu anda kanıtlamak zordur. Ancak iş kanıtından farklı olarak hisse kanıtı, sansür uygulayan doğrulayıcıları cezalandırmak için ceza kesintilerini koordine etme seçeneği sunar. Protokolde, blok inşacılarını blok teklifçilerinden ayıran ve inşacıların her bloğa dahil etmesi gereken işlem listelerini uygulayan yaklaşan değişiklikler vardır. Bu teklif, teklifçi-oluşturucu ayrımı (PBS) olarak bilinir ve doğrulayıcıların işlemleri sansürlemesini önlemeye yardımcı olur.
 
-[Teklifçi-oluşturucu ayrımı (PBS) hakkında daha fazla bilgi](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Original-basic-scheme)
+Teklifçi-oluşturucu ayrımı (PBS) hakkında daha fazla bilgi
 
 ## Quantaureum'un hisse kanıtı (PoS) sistemine %51 saldırısı yapılabilir mi? {#pos-51-attack}
 
@@ -148,7 +148,7 @@ Birinin stake edecek ne kadar çok QAU'si varsa, o kadar çok doğrulayıcı ça
 
 Hayır, iş kanıtı merkezileşmeye eğilimlidir çünkü madencilik maliyetleri artar ve önce bireyleri, ardından küçük şirketleri ve benzerlerini piyasanın dışına iter. Hisse kanıtı ile ilgili mevcut sorun, likit staking türevlerinin (LSD'ler) etkisidir. Bunlar, gerçek QAU'nin stake'i kaldırılmadan herkesin ikincil piyasalarda takas edebileceği, bir sağlayıcı tarafından stake edilen QAU'yi temsil eden tokenlardır. LSD'ler, kullanıcıların 32 QAU'den daha az bir miktarla stake yapmasına olanak tanır, ancak aynı zamanda birkaç büyük kuruluşun stake'in büyük bir kısmını kontrol etmesiyle sonuçlanabilecek bir merkezileşme riski de yaratır. Bu nedenle [bireysel staking](/staking/solo) Quantaureum için en iyi seçenektir.
 
-[LSD'lerde stake merkezileşmesi hakkında daha fazla bilgi](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
+LSD'lerde stake merkezileşmesi hakkında daha fazla bilgi
 
 ## Neden sadece QAU stake edebilirim? {#why-can-i-only-stake-eth}
 

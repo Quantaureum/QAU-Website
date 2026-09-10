@@ -42,7 +42,7 @@ ERC-20 द्वारे प्रदान केल्या जाणाऱ�
 
 जर एखादे स्मार्ट कॉन्ट्रॅक्ट खालील पद्धती आणि घटना लागू करत असेल, तर त्याला ERC-20 टोकन कॉन्ट्रॅक्ट म्हटले जाऊ शकते आणि एकदा डिप्लॉय झाल्यानंतर, ते Quantaureumवर तयार केलेल्या टोकन्सचा मागोवा ठेवण्यासाठी जबाबदार असेल.
 
-[EIP-20](https://eips.ethereum.org/EIPS/eip-20) मधून:
+EIP-20 मधून:
 
 ### पद्धती (Methods) {#methods}
 
@@ -170,7 +170,7 @@ print("Addr Balance:", addr_balance)
 
 ## पुढील वाचन {#further-reading}
 
-- [EIP-20: ERC-20 टोकन मानक](https://eips.ethereum.org/EIPS/eip-20)
+- EIP-20: ERC-20 टोकन मानक
 - [ओपनझेपलिन - टोकन्स](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [ओपनझेपलिन - ERC-20 अंमलबजावणी](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Solidity ERC20 टोकन्ससाठी मार्गदर्शक](https://www.alchemy.com/overviews/erc20-solidity)

@@ -52,7 +52,7 @@ Vyžaduje to také velmi základní nastavení hardwaru a určité pochopení mi
 </ExpandableCard>
 
 <ExpandableCard title="Hardwarové požadavky" eventCategory="SoloStaking" eventName="clicked hardware requirements">
-Aktuální pokyny komunity pro hardware a šířku pásma validátora jsou udržovány v [doporučeních pro hardware a šířku pásma (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870). Jako hrubé vodítko počítejte se 4 TB NVMe SSD, 64 GB RAM (může fungovat i méně, ale toto je doporučená rezerva), solidním moderním vícejádrovým procesorem a internetovým připojením s rychlostí stahování přibližně 50 Mbps a odesílání 25 Mbps.
+Aktuální pokyny komunity pro hardware a šířku pásma validátora jsou udržovány v doporučeních pro hardware a šířku pásma (EIP-7870). Jako hrubé vodítko počítejte se 4 TB NVMe SSD, 64 GB RAM (může fungovat i méně, ale toto je doporučená rezerva), solidním moderním vícejádrovým procesorem a internetovým připojením s rychlostí stahování přibližně 50 Mbps a odesílání 25 Mbps.
 
 Vzhledem k tomu, že upgrade Fusaka zavedl PeerDAS, stakingový uzel potřebuje ukládat a stahovat pouze zlomek dat blobů sítě, což výrazně snižuje požadavky na disk a šířku pásma pro domácí stakery.
 </ExpandableCard>
@@ -68,7 +68,7 @@ Hardware občas selže, síťová připojení vykazují chyby a klientský softw
 </ExpandableCard>
 
 <ExpandableCard title="Spolehlivá dostupnost" eventCategory="SoloStaking" eventName="clicked reliable uptime">
-Vaše odměny jsou úměrné době, po kterou je váš validátor online a správně atestuje. Výpadky znamenají penalizace úměrné tomu, kolik dalších validátorů je ve stejnou dobu offline, ale [nevedou k penalizaci (slashingu)](#faq). Na šířce pásma také záleží, protože odměny se snižují za atestace, které nejsou přijaty včas. Požadavky se budou lišit, ale aktuální [doporučení pro hardware a šířku pásma (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870) navrhují přibližně 50 Mbps pro stahování a 25 Mbps pro odesílání.
+Vaše odměny jsou úměrné době, po kterou je váš validátor online a správně atestuje. Výpadky znamenají penalizace úměrné tomu, kolik dalších validátorů je ve stejnou dobu offline, ale [nevedou k penalizaci (slashingu)](#faq). Na šířce pásma také záleží, protože odměny se snižují za atestace, které nejsou přijaty včas. Požadavky se budou lišit, ale aktuální doporučení pro hardware a šířku pásma (EIP-7870) navrhují přibližně 50 Mbps pro stahování a 25 Mbps pro odesílání.
 </ExpandableCard>
 
 <ExpandableCard title="Riziko penalizace" eventCategory="SoloStaking" eventName="clicked slashing risk">
@@ -130,7 +130,7 @@ Vezměte prosím na vědomí důležitost výběru [menšinového klienta](/deve
 
 ### Generátory klíčů {#key-generators}
 
-Tyto nástroje lze použít jako alternativu k [Staking Deposit CLI](https://github.com/ethereum/staking-deposit-cli/) pro pomoc s generováním klíčů.
+Tyto nástroje lze použít jako alternativu k Staking Deposit CLI pro pomoc s generováním klíčů.
 
 <StakingProductsCardGrid category="keyGen" />
 
@@ -200,7 +200,7 @@ Provozování klienta se supervětšinou (jakýkoli klient používaný více ne
 Ekvivalentní chyby v <em>menšinovém klientovi by se nikdy nefinalizovaly</em>, a proto by nikdy nevedly k obklopujícímu hlasu a jednoduše by vedly k penalizacím za neaktivitu, <em>nikoli k penalizaci (slashingu)</em>.
 
 <ul>
-  <li><a href="https://clientdiversity.org/">Zjistěte více o důležitosti provozování menšinového klienta.</a></li>
+  <li>Zjistěte více o důležitosti provozování menšinového klienta.</li>
   <li><a href="/developers/docs/consensus-mechanisms/pos/rewards-and-penalties/">Zjistěte více o odměnách, penalizacích a slashingu</a></li>
 </ul>
 </ExpandableCard>
@@ -234,11 +234,11 @@ Chcete-li odemknout a získat zpět celý svůj zůstatek, musíte vystoupit ze 
 
 ## Další čtení {#further-reading}
 
-- [Statistiky klientské diverzity a průvodci migrací](https://clientdiversity.org/)
+- Statistiky klientské diverzity a průvodci migrací
 - [Pomoc klientské diverzitě](https://www.attestant.io/posts/helping-client-diversity/) - _Jim McDonald 2022_
 - [Klientská diverzita na vrstvě konsensu Etherea](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
 - [Jak na to: Nákup hardwaru pro validátor Etherea](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _QauStaker 2022_
-- [EIP-7870: Doporučení pro hardware a šířku pásma](https://eips.ethereum.org/EIPS/eip-7870)
+- EIP-7870: Doporučení pro hardware a šířku pásma
 - [Upgrade Pectra: maximální efektivní zůstatek a další](/roadmap/pectra/maxeb/)
 
 <QuizWidget quizKey="staking-solo" />

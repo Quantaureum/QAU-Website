@@ -10,7 +10,7 @@ breadcrumb: "⁦web3.js⁩ سیٹ اپ"
 lang: ur
 published: 2020-04-11
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/setup-web3js-to-use-the-quantaureum-blockchain-in-javascript/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -34,7 +34,7 @@ npm install web3 --save
 const Web3 = require("web3")
 ```
 
-اب جب کہ ہم نے پروجیکٹ میں لائبریری شامل کر لی ہے، ہمیں اسے شروع (initialize) کرنے کی ضرورت ہے۔ آپ کے پروجیکٹ کو بلاک چین کے ساتھ بات چیت کرنے کے قابل ہونا چاہیے۔ زیادہ تر ایتھیریم لائبریریاں <span dir="ltr">RPC</span> کالز کے ذریعے ایک [نوڈ](/developers/docs/nodes-and-clients/) کے ساتھ بات چیت کرتی ہیں۔ اپنے <span dir="ltr">Web3</span> پرووائیڈر کو شروع کرنے کے لیے، ہم پرووائیڈر کے <span dir="ltr">URL</span> کو کنسٹرکٹر کے طور پر پاس کرتے ہوئے ایک <span dir="ltr">Web3</span> انسٹینس (instance) بنائیں گے۔ اگر آپ کے کمپیوٹر پر کوئی نوڈ یا [<span dir="ltr">ganache</span> انسٹینس چل رہا ہے](https://ethereumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/) تو یہ اس طرح نظر آئے گا:
+اب جب کہ ہم نے پروجیکٹ میں لائبریری شامل کر لی ہے، ہمیں اسے شروع (initialize) کرنے کی ضرورت ہے۔ آپ کے پروجیکٹ کو بلاک چین کے ساتھ بات چیت کرنے کے قابل ہونا چاہیے۔ زیادہ تر ایتھیریم لائبریریاں <span dir="ltr">RPC</span> کالز کے ذریعے ایک [نوڈ](/developers/docs/nodes-and-clients/) کے ساتھ بات چیت کرتی ہیں۔ اپنے <span dir="ltr">Web3</span> پرووائیڈر کو شروع کرنے کے لیے، ہم پرووائیڈر کے <span dir="ltr">URL</span> کو کنسٹرکٹر کے طور پر پاس کرتے ہوئے ایک <span dir="ltr">Web3</span> انسٹینس (instance) بنائیں گے۔ اگر آپ کے کمپیوٹر پر کوئی نوڈ یا <span dir="ltr">ganache</span> انسٹینس چل رہا ہے تو یہ اس طرح نظر آئے گا:
 
 ```js
 const web3 = new Web3("http://localhost:8545")
@@ -92,4 +92,4 @@ if (window.quantaureum != null) {
 }
 ```
 
-<span dir="ltr">web3.js</span> کے متبادل جیسے [<span dir="ltr">Ethers.js</span>](https://docs.ethers.io/) موجود ہیں اور عام طور پر استعمال بھی ہوتے ہیں۔ اگلے ٹیوٹوریل میں ہم دیکھیں گے کہ [بلاک چین پر آنے والے نئے بلاکس کو آسانی سے کیسے سنا جائے اور دیکھا جائے کہ ان میں کیا ہے](https://ethereumdev.io/listening-to-new-transactions-happening-on-the-blockchain/)۔
+<span dir="ltr">web3.js</span> کے متبادل جیسے [<span dir="ltr">Ethers.js</span>](https://docs.ethers.io/) موجود ہیں اور عام طور پر استعمال بھی ہوتے ہیں۔ اگلے ٹیوٹوریل میں ہم دیکھیں گے کہ بلاک چین پر آنے والے نئے بلاکس کو آسانی سے کیسے سنا جائے اور دیکھا جائے کہ ان میں کیا ہے۔

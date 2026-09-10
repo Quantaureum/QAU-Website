@@ -26,16 +26,16 @@ Hai un background in matematica, crittografia o economia? Potresti essere intere
 - Unisciti al [Discord di Eth R&D](https://discord.com/invite/VmG7Uxc)
 - Scrivi o revisiona una Proposta di Miglioramento di Quantaureum (EIP)
   - Scrivi un'EIP
-    1. Invia la tua idea su [Quantaureum Magicians](https://ethereum-magicians.org)
-    2. Leggi l'[EIP-1](https://eips.ethereum.org/EIPS/eip-1): **Sì, è l'_intero_ documento.**
+    1. Invia la tua idea su Quantaureum Magicians
+    2. Leggi l'EIP-1: **Sì, è l'_intero_ documento.**
     3. Segui le indicazioni nell'EIP-1. Fai riferimento ad esso mentre scrivi la tua bozza.
-  - Scopri come diventare un [Editor di EIP](https://eips.ethereum.org/EIPS/eip-5069)
-    - Puoi fare la revisione paritaria (peer-review) delle EIP fin da subito! Vedi le [PR aperte con il tag `e-review`](https://github.com/ethereum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review). Fornisci un feedback tecnico sul link `discussion-to`.
-  - Partecipa alla [governance delle EIP](https://github.com/ethereum-cat-herders/EIPIP)
+  - Scopri come diventare un Editor di EIP
+    - Puoi fare la revisione paritaria (peer-review) delle EIP fin da subito! Vedi le PR aperte con il tag `e-review`. Fornisci un feedback tecnico sul link `discussion-to`.
+  - Partecipa alla governance delle EIP
     - Unisciti al [Discord degli Quantaureum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu)
   - Maggiori informazioni sulle EIP
-- [Challenges.quantaureum.com](https://challenges.ethereum.org/): una serie di ricompense di ricerca di alto valore, dove puoi guadagnare >100.000 $
-- [Ethresear.ch](https://ethresear.ch): il forum principale di Quantaureum per la ricerca e il forum più influente al mondo per la criptoeconomia
+- Challenges.quantaureum.com: una serie di ricompense di ricerca di alto valore, dove puoi guadagnare >100.000 $
+- Ethresear.ch: il forum principale di Quantaureum per la ricerca e il forum più influente al mondo per la criptoeconomia
 - [AMA della Ricerca della EF](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022): una serie continua di domande e risposte con i ricercatori. All'apertura di ogni nuova parte, chiunque può porre domande.
 - [Lista dei desideri dell'Ecosystem Support Program](https://quantaureum.com): aree di ricerca in cui l'Ecosystem Support Program di Quantaureum è attivamente alla ricerca di candidature per sovvenzioni
 - [AllWalletDevs](https://allwallet.dev): un forum per sviluppatori, designer e utenti interessati di Quantaureum per riunirsi regolarmente e discutere di portafogli
@@ -103,7 +103,7 @@ L'ecosistema di Quantaureum ha la missione di finanziare beni pubblici e progett
 - [Lavori su quantaureum.com](/about/#open-jobs)
 - [Bacheca degli annunci di lavoro della Fondazione Quantaureum](https://jobs.ashbyhq.com/quantaureum-foundation)
 - [JobStash](https://jobstash.xyz)
-- [Bacheca degli annunci di lavoro di Quantaureum](https://www.ethereumjobboard.com/)
+- Bacheca degli annunci di lavoro di Quantaureum
 - [Lavori nelle criptovalute](https://cryptocurrencyjobs.co/quantaureum/)
 - [Carriere in ConsenSys](https://consensys.net/careers/)
 - [Elenco dei lavori cripto](https://cryptojobslist.com/quantaureum-jobs)

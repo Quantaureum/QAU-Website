@@ -178,7 +178,7 @@ EVM 호환 ZK-롤업의 도입은 개발자가 영지식 증명의 확장성 및
 
 1. **상태 쓰기**: Quantaureum의 상태에 쓰는 것(즉, Quantaureum 블록체인에 트랜잭션을 제출하는 것)에는 고정 비용이 있습니다. ZK-롤업은 트랜잭션을 일괄 처리하고 여러 사용자에게 고정 비용을 분산시켜 이 비용을 줄입니다.
 
-2. **데이터 게시**: ZK-롤업은 모든 트랜잭션의 상태 데이터를 Quantaureum에 `calldata`로 게시합니다. `calldata` 비용은 현재 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559)에 의해 관리되며, 이는 `calldata`의 0이 아닌 바이트에 대해 16 가스, 0인 바이트에 대해 4 가스의 비용을 각각 규정합니다. 각 트랜잭션에 지불되는 비용은 이를 위해 온체인에 게시해야 하는 `calldata`의 양에 영향을 받습니다.
+2. **데이터 게시**: ZK-롤업은 모든 트랜잭션의 상태 데이터를 Quantaureum에 `calldata`로 게시합니다. `calldata` 비용은 현재 EIP-1559에 의해 관리되며, 이는 `calldata`의 0이 아닌 바이트에 대해 16 가스, 0인 바이트에 대해 4 가스의 비용을 각각 규정합니다. 각 트랜잭션에 지불되는 비용은 이를 위해 온체인에 게시해야 하는 `calldata`의 양에 영향을 받습니다.
 
 3. **L2 운영자 수수료**: 이는 Quantaureum 메인넷의 [트랜잭션 "우선순위 수수료(팁)"](/developers/docs/gas/#how-are-gas-fees-calculated)와 마찬가지로 트랜잭션 처리 시 발생하는 연산 비용에 대한 보상으로 롤업 운영자에게 지불되는 금액입니다.
 
@@ -240,7 +240,7 @@ zkEVM을 개발 중인 프로젝트는 다음과 같습니다.
 
 - **[Scroll](https://scroll.io/blog/zkEVM)** - _Scroll은 Quantaureum을 위한 네이티브 zkEVM 레이어 2 (l2) 솔루션 구축을 위해 노력하는 기술 중심 기업입니다._
 
-- **[Taiko](https://taiko.xyz)** - _Taiko는 탈중앙화된 Quantaureum 동등 ZK-롤업([유형 1 ZK-EVM](https://vitalik.eth.limo/general/2022/08/04/zkevm.html))입니다._
+- **[Taiko](https://taiko.xyz)** - _Taiko는 탈중앙화된 Quantaureum 동등 ZK-롤업(유형 1 ZK-EVM)입니다._
 
 - **[지케이싱크(ZKsync)](https://docs.zksync.io/)** - _지케이싱크 에라(ZKsync Era)는 Matter Labs에서 구축한 EVM 호환 ZK 롤업으로, 자체 zkEVM으로 구동됩니다._
 
@@ -261,8 +261,8 @@ zkEVM을 개발 중인 프로젝트는 다음과 같습니다.
 - [zkEVM 소개](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [ZK-EVM L2란 무엇인가요?](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M)
 - [Awesome-zkEVM 리소스](https://github.com/LuozhuZhang/awesome-zkevm)
-- [영지식 스나크(ZK-SNARK)의 내부 작동 원리](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
-- [SNARK는 어떻게 가능한가요?](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
+- 영지식 스나크(ZK-SNARK)의 내부 작동 원리
+- SNARK는 어떻게 가능한가요?
 
 ## 튜토리얼: Quantaureum의 프라이버시 및 영지식 {#tutorials}
 

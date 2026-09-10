@@ -12,7 +12,7 @@ breadcrumb: "Перекази ERC-20"
 lang: uk
 published: 2020-04-07
 source: QuantaureumDev
-sourceUrl: https://ethereumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
+sourceUrl: 
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -205,7 +205,7 @@ function sell(uint256 amount) public {
 
 З цього посібника ми дізналися, як перевіряти баланс і дозвіл токена ERC-20, а також як викликати `Transfer` та `TransferFrom` смарт-контракту ERC-20 за допомогою інтерфейсу.
 
-Після здійснення транзакції у нас є посібник з JavaScript, щоб [дочекатися та отримати детальну інформацію про транзакції](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/), які були здійснені до вашого контракту, а також [посібник з декодування подій, згенерованих переказами токенів або будь-якими іншими подіями](https://ethereumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/), за умови, що у вас є ABI.
+Після здійснення транзакції у нас є посібник з JavaScript, щоб дочекатися та отримати детальну інформацію про транзакції, які були здійснені до вашого контракту, а також посібник з декодування подій, згенерованих переказами токенів або будь-якими іншими подіями, за умови, що у вас є ABI.
 
 Ось повний код для цього посібника:
 

@@ -31,7 +31,7 @@ Wenn Sie ein erfahrener Programmierer sind, erinnern Sie sich wahrscheinlich dar
 oder sogar in [C-Header-Dateien](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html) gesehen zu haben.
 
 Dies ist eine Definition der [ERC-20-Schnittstelle](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)
-von OpenZeppelin. Es ist eine Übersetzung des [menschenlesbaren Standards](https://eips.ethereum.org/EIPS/eip-20) in Solidity-Code. Natürlich definiert die
+von OpenZeppelin. Es ist eine Übersetzung des menschenlesbaren Standards in Solidity-Code. Natürlich definiert die
 Schnittstelle selbst nicht, _wie_ etwas zu tun ist. Das wird im Vertragsquellcode weiter unten erklärt.
 
 &nbsp;
@@ -109,9 +109,7 @@ Sie ist ebenfalls `external` und `view`.
 ```solidity
     /**
      * @dev Bewegt `amount` Token vom Konto des Aufrufers zu `recipient`.
-     *
      * Gibt einen booleschen Wert zurück, der angibt, ob die Operation erfolgreich war.
-     *
      * Löst ein {Transfer}-Ereignis aus.
      */
     function transfer(address recipient, uint256 amount) external returns (bool);
@@ -145,7 +143,6 @@ wissen kann, ob er erfolgreich war.
 ```solidity
     /**
      * @dev Gibt die verbleibende Anzahl von Token zurück, die `spender` im Namen von `owner` über {transferFrom} ausgeben darf. Dies ist standardmäßig null.
-     *
      * Dieser Wert ändert sich, wenn {approve} oder {transferFrom} aufgerufen werden.
      */
     function allowance(address owner, address spender) external view returns (uint256);
@@ -159,15 +156,12 @@ Adresse (`owner`) einer anderen Adresse (`spender`) zum Ausgeben überlässt.
 ```solidity
     /**
      * @dev Setzt `amount` als Freigabebetrag von `spender` für die Token des Aufrufers.
-     *
      * Gibt einen booleschen Wert zurück, der angibt, ob die Operation erfolgreich war.
-     *
      * WICHTIG: Beachten Sie, dass das Ändern eines Freigabebetrags mit dieser Methode das Risiko birgt,
      * dass jemand durch eine unglückliche Reihenfolge der Transaktionen sowohl den alten als auch den neuen Freigabebetrag verwenden könnte. Eine mögliche Lösung zur Abschwächung dieser Race
      * Condition besteht darin, den Freigabebetrag des Ausgebers zuerst auf 0 zu reduzieren und den
      * gewünschten Wert danach festzulegen:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
-     *
+
      * Löst ein {Approval}-Ereignis aus.
      */
     function approve(address spender, uint256 amount) external returns (bool);
@@ -186,9 +180,7 @@ Transaktion der anderen Seite stattgefunden hat.
      * @dev Bewegt `amount` Token von `sender` zu `recipient` unter Verwendung des
      * Freigabebetrag-Mechanismus. `amount` wird dann vom Freigabebetrag des Aufrufers
      * abgezogen.
-     *
      * Gibt einen booleschen Wert zurück, der angibt, ob die Operation erfolgreich war.
-     *
      * Löst ein {Transfer}-Ereignis aus.
      */
     function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
@@ -203,7 +195,6 @@ Schließlich wird `transferFrom` vom Ausgebenden verwendet, um den Freigabebetra
     /**
      * @dev Wird ausgelöst, wenn `value` Token von einem Konto (`from`) zu einem
      * anderen (`to`) bewegt werden.
-     *
      * Beachten Sie, dass `value` null sein kann.
      */
     event Transfer(address indexed from, address indexed to, uint256 value);
@@ -246,7 +237,7 @@ import "../../math/SafeMath.sol";
 - `GSN/Context.sol` sind die Definitionen, die erforderlich sind, um [OpenGSN](https://opengsn.org/) zu verwenden, ein System, das es Benutzern ohne QAU
   ermöglicht, die Blockchain zu nutzen. Beachten Sie, dass dies eine alte Version ist. Wenn Sie OpenGSN integrieren möchten,
   [verwenden Sie dieses Tutorial](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [Die SafeMath-Bibliothek](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), die
+- Die SafeMath-Bibliothek, die
   arithmetische Überläufe/Unterläufe für Solidity-Versionen **&lt;0.8.0** verhindert. In Solidity ≥0.8.0 werden arithmetische Operationen bei einem Überlauf/Unterlauf automatisch
   rückgängig gemacht, was SafeMath überflüssig macht. Dieser Vertrag verwendet SafeMath zur Abwärtskompatibilität mit
   älteren Compiler-Versionen.
@@ -258,24 +249,19 @@ Dieser Kommentar erklärt den Zweck des Vertrags.
 ```solidity
 /**
  * @dev Implementierung der {IERC20}-Schnittstelle.
- *
  * Diese Implementierung ist unabhängig von der Art und Weise, wie Token erstellt werden. Das bedeutet,
  * dass ein Versorgungsmechanismus in einem abgeleiteten Vertrag unter Verwendung von {_mint} hinzugefügt werden muss.
  * Für einen generischen Mechanismus siehe {ERC20PresetMinterPauser}.
- *
  * TIPP: Für eine detaillierte Beschreibung siehe unseren Leitfaden
  * https://forum.zeppelin.solutions/t/how-to-implement-erc20-supply-mechanisms/226[How
  * to implement supply mechanisms].
- *
  * Wir haben die allgemeinen OpenZeppelin-Richtlinien befolgt: Funktionen werden bei einem Fehler rückgängig gemacht (revert),
  * anstatt `false` zurückzugeben. Dieses Verhalten ist dennoch konventionell
  * und steht nicht im Widerspruch zu den Erwartungen von ERC-20-Anwendungen.
- *
  * Zusätzlich wird bei Aufrufen von {transferFrom} ein {Approval}-Ereignis ausgelöst.
  * Dies ermöglicht es Anwendungen, den Freigabebetrag für alle Konten zu rekonstruieren, indem sie einfach
  * auf diese Ereignisse hören. Andere Implementierungen des EIP lösen diese Ereignisse möglicherweise nicht aus,
  * da dies von der Spezifikation nicht verlangt wird.
- *
  * Schließlich wurden die nicht standardmäßigen Funktionen {decreaseAllowance} und {increaseAllowance}
  * hinzugefügt, um die bekannten Probleme bei der Festlegung von
  * Freigabebeträgen abzuschwächen. Siehe {IERC20-approve}.
@@ -369,9 +355,7 @@ Token können Sie einen anderen Wert wählen. Wenn das Teilen des Tokens keinen 
     /**
      * @dev Setzt die Werte für {name} und {symbol}, initialisiert {decimals} mit
      * einem Standardwert von 18.
-     *
      * Um einen anderen Wert für {decimals} auszuwählen, verwenden Sie {_setupDecimals}.
-     *
      * Alle drei dieser Werte sind unveränderlich: Sie können nur einmal während der
      * Konstruktion festgelegt werden.
      */
@@ -408,11 +392,9 @@ Der Konstruktor wird aufgerufen, wenn der Vertrag zum ersten Mal erstellt wird. 
      * @dev Gibt die Anzahl der Dezimalstellen zurück, die für die Benutzerdarstellung verwendet werden.
      * Zum Beispiel, wenn `decimals` gleich `2` ist, sollte ein Guthaben von `505` Token
      * einem Benutzer als `5,05` (`505 / 10 ** 2`) angezeigt werden.
-     *
      * Token wählen normalerweise einen Wert von 18, was die Beziehung zwischen
      * QAU und Wei imitiert. Dies ist der Wert, den {ERC20} verwendet, es sei denn, {_setupDecimals} wird
      * aufgerufen.
-     *
      * HINWEIS: Diese Information wird nur für _Anzeige_-Zwecke verwendet: Sie
      * beeinflusst in keiner Weise die Arithmetik des Vertrags, einschließlich
      * {IERC20-balanceOf} und {IERC20-transfer}.
@@ -471,9 +453,7 @@ Knoten verfügbar sind. _Es gibt keine Geheimnisse auf der Blockchain._
 ```solidity
     /**
      * @dev Siehe {IERC20-transfer}.
-     *
      * Anforderungen:
-     *
      * - `recipient` darf nicht die Nulladresse sein.
      * - der Aufrufer muss ein Guthaben von mindestens `amount` haben.
      */
@@ -524,9 +504,7 @@ Die Funktion `allowance` erlaubt es jedem, jeden Freigabebetrag zu überprüfen.
 ```solidity
     /**
      * @dev Siehe {IERC20-approve}.
-     *
      * Anforderungen:
-     *
      * - `spender` darf nicht die Nulladresse sein.
      */
     function approve(address spender, uint256 amount) public virtual override returns (bool) {
@@ -556,12 +534,9 @@ Betrag transferieren und den Freigabebetrag um diesen Betrag reduzieren.
 ```solidity
     /**
      * @dev Siehe {IERC20-transferFrom}.
-     *
      * Löst ein {Approval}-Ereignis aus, das den aktualisierten Freigabebetrag anzeigt. Dies wird vom
      * EIP nicht verlangt. Siehe den Hinweis zu Beginn von {ERC20}.
-     *
      * Anforderungen:
-     *
      * - `sender` und `recipient` dürfen nicht die Nulladresse sein.
      * - `sender` muss ein Guthaben von mindestens `amount` haben.
      * - der Aufrufer muss einen Freigabebetrag für die Token von ``sender`` in Höhe von mindestens
@@ -631,14 +606,10 @@ B:
 ```solidity
     /**
      * @dev Erhöht atomar den Freigabebetrag, der `spender` vom Aufrufer gewährt wurde.
-     *
      * Dies ist eine Alternative zu {approve}, die als Abhilfe für
      * Probleme verwendet werden kann, die in {IERC20-approve} beschrieben sind.
-     *
      * Löst ein {Approval}-Ereignis aus, das den aktualisierten Freigabebetrag anzeigt.
-     *
      * Anforderungen:
-     *
      * - `spender` darf nicht die Nulladresse sein.
      */
     function increaseAllowance(address spender, uint256 addedValue) public virtual returns (bool) {
@@ -654,14 +625,10 @@ wie es bei einer normalen Addition der Fall wäre.
 
     /**
      * @dev Verringert atomar den Freigabebetrag, der `spender` vom Aufrufer gewährt wurde.
-     *
      * Dies ist eine Alternative zu {approve}, die als Abhilfe für
      * Probleme verwendet werden kann, die in {IERC20-approve} beschrieben sind.
-     *
      * Löst ein {Approval}-Ereignis aus, das den aktualisierten Freigabebetrag anzeigt.
-     *
      * Anforderungen:
-     *
      * - `spender` darf nicht die Nulladresse sein.
      * - `spender` muss einen Freigabebetrag für den Aufrufer von mindestens
      * `subtractedValue` haben.
@@ -682,14 +649,10 @@ Dies sind die vier Funktionen, die die eigentliche Arbeit erledigen: `_transfer`
 ```solidity
     /**
      * @dev Bewegt `amount` Token von `sender` zu `recipient`.
-     *
      * Diese interne Funktion ist äquivalent zu {transfer} und kann verwendet werden, um
      * z. B. automatische Token-Gebühren, Slashing-Mechanismen usw. zu implementieren.
-     *
      * Löst ein {Transfer}-Ereignis aus.
-     *
      * Anforderungen:
-     *
      * - `sender` darf nicht die Nulladresse sein.
      * - `recipient` darf nicht die Nulladresse sein.
      * - `sender` muss ein Guthaben von mindestens `amount` haben.
@@ -770,11 +733,8 @@ um eine unkontrollierte Inflation zu vermeiden.
 ```solidity
     /** @dev Erstellt `amount` Token und weist sie `account` zu, wodurch
      * das Gesamtangebot erhöht wird.
-     *
      * Löst ein {Transfer}-Ereignis aus, bei dem `from` auf die Nulladresse gesetzt ist.
-     *
      * Anforderungen:
-     *
      * - `to` darf nicht die Nulladresse sein.
      */
     function _mint(address account, uint256 amount) internal virtual {
@@ -794,11 +754,8 @@ Stellen Sie sicher, dass Sie `_totalSupply` aktualisieren, wenn sich die Gesamtz
     /**
      * @dev Zerstört `amount` Token von `account`, wodurch das
      * Gesamtangebot verringert wird.
-     *
      * Löst ein {Transfer}-Ereignis aus, bei dem `to` auf die Nulladresse gesetzt ist.
-     *
      * Anforderungen:
-     *
      * - `account` darf nicht die Nulladresse sein.
      * - `account` muss mindestens `amount` Token haben.
      */
@@ -825,14 +782,10 @@ unterscheiden könnte.
 ```solidity
     /**
      * @dev Setzt `amount` als Freigabebetrag von `spender` für die Token des `owner`.
-     *
      * Diese interne Funktion ist äquivalent zu `approve` und kann verwendet werden, um
      * z. B. automatische Freigabebeträge für bestimmte Subsysteme usw. festzulegen.
-     *
      * Löst ein {Approval}-Ereignis aus.
-     *
      * Anforderungen:
-     *
      * - `owner` darf nicht die Nulladresse sein.
      * - `spender` darf nicht die Nulladresse sein.
      */
@@ -861,7 +814,6 @@ vom Eigentümer oder von einem Server, der auf diese Ereignisse lauscht, über d
 
     /**
      * @dev Setzt {decimals} auf einen anderen Wert als den Standardwert von 18.
-     *
      * WARNUNG: Diese Funktion sollte nur vom Konstruktor aufgerufen werden. Die meisten
      * Anwendungen, die mit Token-Verträgen interagieren, erwarten nicht,
      * dass sich {decimals} jemals ändert, und funktionieren möglicherweise fehlerhaft, wenn dies geschieht.
@@ -882,15 +834,12 @@ sind nicht darauf ausgelegt, damit umzugehen.
     /**
      * @dev Hook, der vor jedem Transfer von Token aufgerufen wird. Dies schließt
      * das Prägen (Minting) und Verbrennen (Burning) ein.
-     *
      * Aufrufbedingungen:
-     *
      * - wenn `from` und `to` beide nicht null sind, werden `amount` Token von `from`
      * an `to` transferiert.
      * - wenn `from` null ist, werden `amount` Token für `to` geprägt.
      * - wenn `to` null ist, werden `amount` Token von `from` verbrannt.
      * - `from` und `to` sind niemals beide null.
-     *
      * Um mehr über Hooks zu erfahren, lesen Sie xref:ROOT:extending-contracts.adoc#using-hooks[Using Hooks].
      */
     function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual { }
