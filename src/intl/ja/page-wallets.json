@@ -4,7 +4,7 @@
   "page-wallets-accounts-quantaureum-addresses": "<b>クアンタリアムのアカウントにはアドレスがあります</b>。これは受信トレイにメールアドレスがあるのと同じです。これはあなたのデジタル資産を識別するために使用されます。",
   "page-wallets-alt": "クアンタリアムのウォレットを表す、体がヴォールトになっているロボットのイラスト",
   "page-wallets-quantaureum-account": "<b>クアンタリアムのアカウントは鍵のペアです</b>。<a href=\"/glossary/#public-key\">1つの鍵</a>は自由に共有できるアドレスを作成するために使用され、<a href=\"/glossary/#private-key\">もう1つの鍵</a>は署名に使用されるため秘密にしておく必要があります。これらの鍵を組み合わせることで、資産を保持し、トランザクションを実行できます。",
-  "page-wallets-blog": "コインベースのブログ",
+  "page-wallets-blog": "Quantaureum セキュリティガイド",
   "page-wallets-bookmarking": "ウォレットをブックマークする",
   "page-wallets-bookmarking-desc": "ウェブウォレットを使用する場合は、フィッシング詐欺から身を守るためにサイトをブックマークしてください。",
   "page-wallets-cd": "<b>物理的なハードウェアウォレット</b>は、暗号資産をオフラインで保管できるデバイスであり、非常に安全です",

@@ -4,7 +4,7 @@
   "page-wallets-accounts-quantaureum-addresses": "<b>쿠앤타리움 계정에는 주소가 있습니다</b>. 이는 편지함에 이메일 주소가 있는 것과 같습니다. 이 주소는 디지털 자산을 식별하는 데 사용됩니다.",
   "page-wallets-alt": "쿠앤타리움 지갑을 나타내는, 몸통이 볼트인 로봇 일러스트",
   "page-wallets-quantaureum-account": "<b>쿠앤타리움 계정은 한 쌍의 키입니다</b>. <a href=\"/glossary/#public-key\">하나의 키</a>는 자유롭게 공유할 수 있는 주소를 생성하는 데 사용되며, <a href=\"/glossary/#private-key\">다른 키</a>는 서명에 사용되므로 비밀로 유지해야 합니다. 이 두 키를 함께 사용하여 자산을 보유하고 트랜잭션을 실행할 수 있습니다.",
-  "page-wallets-blog": "코인베이스 블로그",
+  "page-wallets-blog": "Quantaureum 보안 가이드",
   "page-wallets-bookmarking": "지갑 북마크하기",
   "page-wallets-bookmarking-desc": "웹 지갑을 사용하는 경우, 피싱 사기로부터 자신을 보호하기 위해 해당 사이트를 북마크하세요.",
   "page-wallets-cd": "<b>물리적 하드웨어 지갑</b>은 암호화폐를 오프라인으로 보관할 수 있게 해주는 기기로, 매우 안전합니다.",

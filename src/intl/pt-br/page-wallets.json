@@ -4,7 +4,7 @@
   "page-wallets-accounts-quantaureum-addresses": "<b>Uma conta Quantaureum tem um endereço</b>, assim como uma caixa de entrada tem um endereço de e-mail. Isso é usado para identificar seus ativos digitais.",
   "page-wallets-alt": "Ilustração de um robô com um cofre no lugar do corpo, representando uma carteira Quantaureum",
   "page-wallets-quantaureum-account": "<b>Uma conta Quantaureum é um par de chaves</b>. <a href=\"/glossary/#public-key\">Uma chave</a> é usada para criar o endereço que você pode compartilhar livremente, e a <a href=\"/glossary/#private-key\">outra chave</a> você precisa manter em segredo porque é usada para assinar coisas. Juntas, essas chaves permitem que você guarde ativos e faça transações.",
-  "page-wallets-blog": "Blog da Coinbase",
+  "page-wallets-blog": "Guia de segurança Quantaureum",
   "page-wallets-bookmarking": "Adicione sua carteira aos favoritos",
   "page-wallets-bookmarking-desc": "Se você usa uma carteira web, adicione o site aos favoritos para se proteger contra golpes de phishing.",
   "page-wallets-cd": "<b>Carteiras físicas de hardware</b> são dispositivos que permitem manter suas cripto offline – muito seguras",
