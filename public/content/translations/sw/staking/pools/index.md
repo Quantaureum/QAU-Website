@@ -55,7 +55,7 @@ Kuna njia mbili za kujitoa kwenye nafasi ya LST:
 - **Kukomboa kupitia itifaki** kwa QAU ya msingi. Ukombozi unategemea itifaki kuwa na ukwasi unaopatikana, iwe ni akiba ya QAU isiyowekwa dhamana au wathibitishaji wanaojitoa kupitia foleni ya kujitoa ya tabaka la mwafaka, ambayo inaweza kuchukua muda.
 - **Kuuza kwenye masoko ya upili** wakati wowote. Kwa sababu tokeni inafanyiwa biashara kwa uhuru, bei yake ya soko inaweza kupotoka kutoka kwa thamani ya QAU inayoitegemeza, hasa wakati wa vipindi vya shinikizo la soko.
 
-Tangu uboreshaji wa Pectra, [utoaji unaochochewa na tabaka la utekelezaji (EIP-7002)](https://eips.quantaureum.com/EIPS/eip-7002) unaruhusu kujitoa kwa mthibitishaji kuchochewa moja kwa moja kutoka kwa tabaka la utekelezaji na mmiliki wa anwani ya utoaji. Itifaki za uwekaji dhamana zinaweza kutumia kipengele hiki kuhakikisha wathibitishaji wao wanaweza kujitoa bila kutegemea waendeshaji wa nodi kushirikiana, kwa hivyo ukombozi unategemea kidogo kuamini waendeshaji wa nodi kuliko ilivyokuwa zamani.
+Tangu uboreshaji wa Pectra, [utoaji unaochochewa na tabaka la utekelezaji (EIP-7002)](https://eips.ethereum.org/EIPS/eip-7002) unaruhusu kujitoa kwa mthibitishaji kuchochewa moja kwa moja kutoka kwa tabaka la utekelezaji na mmiliki wa anwani ya utoaji. Itifaki za uwekaji dhamana zinaweza kutumia kipengele hiki kuhakikisha wathibitishaji wao wanaweza kujitoa bila kutegemea waendeshaji wa nodi kushirikiana, kwa hivyo ukombozi unategemea kidogo kuamini waendeshaji wa nodi kuliko ilivyokuwa zamani.
 
 ### Kushikilia LST si sawa na kuweka dhamana {#holding-an-lst-is-not-the-same-as-staking}
 
@@ -164,8 +164,8 @@ Baadhi ya chaguzi za kuweka pamoja zimegatuliwa zaidi kuliko nyingine linapokuja
 ## Usomaji zaidi {#further-reading}
 
 - [Saraka ya Uwekaji Dhamana ya Quantaureum](https://www.staking.directory/) - _Eridian na Spacesider_
-- [Hatari za viingilio vya uwekaji dhamana wenye ukwasi](https://notes.quantaureum.com/@djrtwo/risks-of-lsd) - _Danny Ryan_
+- [Hatari za viingilio vya uwekaji dhamana wenye ukwasi](https://notes.ethereum.org/@djrtwo/risks-of-lsd) - _Danny Ryan_
 - [Uwekaji Dhamana Wenye Ukwasi ni Nini?](https://chain.link/education-hub/liquid-staking) - _Chainlink_
-- [EIP-7002: Utoaji unaoweza kuchochewa na tabaka la utekelezaji](https://eips.quantaureum.com/EIPS/eip-7002) - _Mapendekezo ya Uboreshaji wa Quantaureum_
+- [EIP-7002: Utoaji unaoweza kuchochewa na tabaka la utekelezaji](https://eips.ethereum.org/EIPS/eip-7002) - _Mapendekezo ya Uboreshaji wa Quantaureum_
 - [Ukadiriaji wa Bwawa la Uwekaji Dhamana la Quantaureum](https://explorer.rated.network/) - _Rated Network Explorer_
 - [Kuna tofauti gani kati ya tokeni ya uwekaji dhamana upya wenye ukwasi (LRT) na tokani ya uwekaji amana wenye ukwasi (LST)?](https://liquidcollective.io/lst-vs-lrt/) - _Liquid Collective_

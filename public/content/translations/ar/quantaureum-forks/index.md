@@ -10,7 +10,7 @@ authors: ["نيكسو"]
 
 <ExpandableCard title="ما هي التفرعات؟" contentPreview="تغييرات على قواعد بروتوكول إيثيريوم والتي تتضمن غالبًا ترقيات فنية مخططة.">
 
-تحدث التفرعات عندما تكون هناك حاجة لإجراء ترقيات أو تغييرات تقنية رئيسية على الشبكة – وعادة ما تنبع من [مقترحات تحسين إيثيريوم (EIPs)](/eips/) وتغير "قواعد" البروتوكول.
+تحدث التفرعات عندما تكون هناك حاجة لإجراء ترقيات أو تغييرات تقنية رئيسية على الشبكة – وعادة ما تنبع من مقترحات تحسين إيثيريوم (EIPs) وتغير "قواعد" البروتوكول.
 
 عندما تكون الترقيات مطلوبة في البرامج التقليدية الخاضعة للتحكم المركزي، ستقوم الشركة ببساطة بنشر إصدار جديد للمستخدم النهائي. تعمل سلاسل الكتل بشكل مختلف لعدم وجود ملكية مركزية. يجب على [عملاء إيثيريوم](/developers/docs/nodes-and-clients/) تحديث برامجهم لتنفيذ قواعد التفرع الجديدة. بالإضافة إلى ذلك، يجب على منشئي الكتل (المعدنون في عالم إثبات العمل، والمُدَقِّقون في عالم إثبات الحصة) والعقد إنشاء الكتل والتحقق من صحتها وفقًا للقواعد الجديدة. [المزيد عن آليات الإجماع](/developers/docs/consensus-mechanisms/)
 
@@ -101,33 +101,33 @@ authors: ["نيكسو"]
 تجربة مستخدم أفضل:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7702"><span dir="ltr">EIP-7702</span></a> - <em>تعيين كود حساب EOA</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7691"><span dir="ltr">EIP-7691</span></a> - <em>زيادة قدرة المعالجة لكتلة البيانات</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7623"><span dir="ltr">EIP-7623</span></a> - <em>زيادة تكلفة بيانات الاستدعاء</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7840"><span dir="ltr">EIP-7840</span></a> - <em>إضافة جدول كتلة البيانات إلى ملفات تكوين طبقة التنفيذ</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7702"><span dir="ltr">EIP-7702</span></a> - <em>تعيين كود حساب EOA</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7691"><span dir="ltr">EIP-7691</span></a> - <em>زيادة قدرة المعالجة لكتلة البيانات</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7623"><span dir="ltr">EIP-7623</span></a> - <em>زيادة تكلفة بيانات الاستدعاء</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7840"><span dir="ltr">EIP-7840</span></a> - <em>إضافة جدول كتلة البيانات إلى ملفات تكوين طبقة التنفيذ</em></li>
 </ul>
 
 تجربة تخزين أفضل:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7251"><span dir="ltr">EIP-7251</span></a> - <em>زيادة <code>MAX_EFFECTIVE_BALANCE</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7002"><span dir="ltr">EIP-7002</span></a> - <em>عمليات الخروج القابلة للتشغيل في طبقة التنفيذ</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7685"><span dir="ltr">EIP-7685</span></a> - <em>طلبات طبقة التنفيذ للأغراض العامة</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6110"><span dir="ltr">EIP-6110</span></a> - <em>تزويد ودائع المُدَقِّقين على السلسلة</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7251"><span dir="ltr">EIP-7251</span></a> - <em>زيادة <code>MAX_EFFECTIVE_BALANCE</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7002"><span dir="ltr">EIP-7002</span></a> - <em>عمليات الخروج القابلة للتشغيل في طبقة التنفيذ</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7685"><span dir="ltr">EIP-7685</span></a> - <em>طلبات طبقة التنفيذ للأغراض العامة</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6110"><span dir="ltr">EIP-6110</span></a> - <em>تزويد ودائع المُدَقِّقين على السلسلة</em></li>
 </ul>
 
 تحسينات كفاءة وأمان البروتوكول:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2537"><span dir="ltr">EIP-2537</span></a> - <em>عقد مجمع مسبقًا لعمليات المنحنى BLS12-381</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2935"><span dir="ltr">EIP-2935</span></a> - <em>حفظ تجزئات الكتل التاريخية في الحالة</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7549"><span dir="ltr">EIP-7549</span></a> - <em>نقل مؤشر اللجنة خارج التصديق</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2537"><span dir="ltr">EIP-2537</span></a> - <em>عقد مجمع مسبقًا لعمليات المنحنى BLS12-381</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2935"><span dir="ltr">EIP-2935</span></a> - <em>حفظ تجزئات الكتل التاريخية في الحالة</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7549"><span dir="ltr">EIP-7549</span></a> - <em>نقل مؤشر اللجنة خارج التصديق</em></li>
 </ul>
 
 </ExpandableCard>
 
 - [كيف ستعزز بيكترا تجربة التخزين](https://www.kiln.fi/post/next-quantaureum-upgrade-how-pectra-will-enhance-the-staking-experience)
-- [اقرأ مواصفات ترقية إلكترا](https://github.com/quantaureum/consensus-specs/tree/master/specs/electra/)
+- [اقرأ مواصفات ترقية إلكترا](https://github.com/ethereum/consensus-specs/tree/master/specs/electra/)
 - [الأسئلة الشائعة حول براغ-إلكترا ("بيكترا")](/roadmap/pectra/)
 
 <Divider />
@@ -147,12 +147,12 @@ authors: ["نيكسو"]
 <ExpandableCard title="EIPs كانكون" contentPreview="التحسينات الرسمية المضمنة في هذه الترقية.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1153"><span dir="ltr">EIP-1153</span></a> - <em>رموز تشغيل التخزين العابر</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4788"><span dir="ltr">EIP-4788</span></a> - <em>جذر كتلة المنارة في جهاز إيثيريوم الظاهري (EVM)</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4844"><span dir="ltr">EIP-4844</span></a> - <em>معاملات كتلة بيانات الشظية (بروتو-دانكشاردينغ)</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-5656"><span dir="ltr">EIP-5656</span></a> - <em><code>MCOPY</code> - تعليمة نسخ الذاكرة</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6780"><span dir="ltr">EIP-6780</span></a> - <em><code>SELFDESTRUCT</code> (تدمير ذاتي) فقط في نفس المعاملة</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7516"><span dir="ltr">EIP-7516</span></a> - <em>رمز التشغيل <code>BLOBBASEFEE</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1153"><span dir="ltr">EIP-1153</span></a> - <em>رموز تشغيل التخزين العابر</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4788"><span dir="ltr">EIP-4788</span></a> - <em>جذر كتلة المنارة في جهاز إيثيريوم الظاهري (EVM)</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4844"><span dir="ltr">EIP-4844</span></a> - <em>معاملات كتلة بيانات الشظية (بروتو-دانكشاردينغ)</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-5656"><span dir="ltr">EIP-5656</span></a> - <em><code>MCOPY</code> - تعليمة نسخ الذاكرة</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6780"><span dir="ltr">EIP-6780</span></a> - <em><code>SELFDESTRUCT</code> (تدمير ذاتي) فقط في نفس المعاملة</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7516"><span dir="ltr">EIP-7516</span></a> - <em>رمز التشغيل <code>BLOBBASEFEE</code></em></li>
 </ul>
 
 </ExpandableCard>
@@ -160,7 +160,7 @@ authors: ["نيكسو"]
 - [تجميعات طبقة 2 (L2)](/layer-2/)
 - [بروتو-دانكشاردينغ](/roadmap/scaling/#proto-danksharding)
 - [تجزئة دانك](/roadmap/danksharding/)
-- [اقرأ مواصفات ترقية كانكون](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md)
+- [اقرأ مواصفات ترقية كانكون](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md)
 
 #### ملخص دينيب {#deneb-summary}
 
@@ -173,16 +173,16 @@ authors: ["نيكسو"]
 <ExpandableCard title="EIPs دينيب" contentPreview="التحسينات الرسمية المضمنة في هذه الترقية">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4788"><span dir="ltr">EIP-4788</span></a> - <em>جذر كتلة المنارة في جهاز إيثيريوم الظاهري (EVM)</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4844"><span dir="ltr">EIP-4844</span></a> - <em>معاملات كتلة بيانات الشظية</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7044"><span dir="ltr">EIP-7044</span></a> - <em>عمليات خروج طوعية موقعة صالحة بشكل دائم</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7045"><span dir="ltr">EIP-7045</span></a> - <em>زيادة الحد الأقصى لخانة تضمين التصديق</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7514"><span dir="ltr">EIP-7514</span></a> - <em>إضافة حد أقصى لتبديل الحقبة</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4788"><span dir="ltr">EIP-4788</span></a> - <em>جذر كتلة المنارة في جهاز إيثيريوم الظاهري (EVM)</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4844"><span dir="ltr">EIP-4844</span></a> - <em>معاملات كتلة بيانات الشظية</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7044"><span dir="ltr">EIP-7044</span></a> - <em>عمليات خروج طوعية موقعة صالحة بشكل دائم</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7045"><span dir="ltr">EIP-7045</span></a> - <em>زيادة الحد الأقصى لخانة تضمين التصديق</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7514"><span dir="ltr">EIP-7514</span></a> - <em>إضافة حد أقصى لتبديل الحقبة</em></li>
 </ul>
 
 </ExpandableCard>
 
-- [اقرأ مواصفات ترقية دينيب](https://github.com/quantaureum/consensus-specs/tree/master/specs/deneb/)
+- [اقرأ مواصفات ترقية دينيب](https://github.com/ethereum/consensus-specs/tree/master/specs/deneb/)
 - [الأسئلة الشائعة حول كانكون-دينيب ("دينكون")](/roadmap/dencun/)
 
 <Divider />
@@ -200,16 +200,16 @@ authors: ["نيكسو"]
 <ExpandableCard title="EIPs شانغهاي" contentPreview="التحسينات الرسمية المضمنة في هذه الترقية.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3651"><span dir="ltr">EIP-3651</span></a> – <em>يبدأ عنوان <code>COINBASE</code> دافئًا</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3855"><span dir="ltr">EIP-3855</span></a> – <em>تعليمة <code>PUSH0</code> جديدة</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3860"><span dir="ltr">EIP-3860</span></a> – <em>تقييد وقياس كود التهيئة (initcode)</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4895"><span dir="ltr">EIP-4895</span></a> – <em>سلسلة المنارة تدفع عمليات السحب كعمليات</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6049"><span dir="ltr">EIP-6049</span></a> - <em>إيقاف استخدام <code>SELFDESTRUCT</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3651"><span dir="ltr">EIP-3651</span></a> – <em>يبدأ عنوان <code>COINBASE</code> دافئًا</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3855"><span dir="ltr">EIP-3855</span></a> – <em>تعليمة <code>PUSH0</code> جديدة</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3860"><span dir="ltr">EIP-3860</span></a> – <em>تقييد وقياس كود التهيئة (initcode)</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4895"><span dir="ltr">EIP-4895</span></a> – <em>سلسلة المنارة تدفع عمليات السحب كعمليات</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6049"><span dir="ltr">EIP-6049</span></a> - <em>إيقاف استخدام <code>SELFDESTRUCT</code></em></li>
 </ul>
 
 </ExpandableCard>
 
-- [اقرأ مواصفات ترقية شانغهاي](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md)
+- [اقرأ مواصفات ترقية شانغهاي](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md)
 
 #### ملخص كابيلا {#capella-summary}
 
@@ -220,7 +220,7 @@ authors: ["نيكسو"]
 وفرت الترقية أيضًا وظيفة المسح التلقائي للحساب، والتي تعالج حسابات المُدَقِّقين باستمرار بحثًا عن أي مدفوعات مكافآت متاحة أو عمليات سحب كاملة.
 
 - [المزيد عن عمليات سحب التخزين](/staking/withdrawals/).
-- [اقرأ مواصفات ترقية كابيلا](https://github.com/quantaureum/consensus-specs/tree/master/specs/capella/)
+- [اقرأ مواصفات ترقية كابيلا](https://github.com/ethereum/consensus-specs/tree/master/specs/capella/)
 
 <Divider />
 
@@ -232,15 +232,15 @@ authors: ["نيكسو"]
 
 #### ملخص {#paris-summary}
 
-تم تشغيل ترقية باريس بواسطة سلسلة كتل إثبات العمل التي تجاوزت [إجمالي الصعوبة النهائية](/glossary/#terminal-total-difficulty) البالغ <span dir="ltr">58750000000000000000000</span>. حدث هذا في الكتلة <span dir="ltr">15537393</span> في <span dir="ltr">15</span> سبتمبر <span dir="ltr">2022</span>، مما أدى إلى تشغيل ترقية باريس في الكتلة التالية. كانت باريس هي انتقال [الدمج](/roadmap/merge/) - وكانت ميزتها الرئيسية هي إيقاف تشغيل خوارزمية تعدين [إثبات العمل](/developers/docs/consensus-mechanisms/pow) ومنطق الإجماع المرتبط بها وتشغيل [إثبات الحصة](/developers/docs/consensus-mechanisms/pos) بدلاً من ذلك. كانت باريس نفسها ترقية لـ [عملاء التنفيذ](/developers/docs/nodes-and-clients/#execution-clients) (ما يعادل بيلاتريكس على طبقة الإجماع) مما مكنهم من أخذ التعليمات من [عملاء الإجماع](/developers/docs/nodes-and-clients/#consensus-clients) المتصلين بهم. تطلب هذا تنشيط مجموعة جديدة من طرق <span dir="ltr">API</span> الداخلية، والمعروفة مجتمعة باسم [<span dir="ltr">Engine API</span>](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md). يمكن القول إن هذه كانت أهم ترقية في تاريخ إيثيريوم منذ [هومستيد](#homestead)!
+تم تشغيل ترقية باريس بواسطة سلسلة كتل إثبات العمل التي تجاوزت [إجمالي الصعوبة النهائية](/glossary/#terminal-total-difficulty) البالغ <span dir="ltr">58750000000000000000000</span>. حدث هذا في الكتلة <span dir="ltr">15537393</span> في <span dir="ltr">15</span> سبتمبر <span dir="ltr">2022</span>، مما أدى إلى تشغيل ترقية باريس في الكتلة التالية. كانت باريس هي انتقال [الدمج](/roadmap/merge/) - وكانت ميزتها الرئيسية هي إيقاف تشغيل خوارزمية تعدين [إثبات العمل](/developers/docs/consensus-mechanisms/pow) ومنطق الإجماع المرتبط بها وتشغيل [إثبات الحصة](/developers/docs/consensus-mechanisms/pos) بدلاً من ذلك. كانت باريس نفسها ترقية لـ [عملاء التنفيذ](/developers/docs/nodes-and-clients/#execution-clients) (ما يعادل بيلاتريكس على طبقة الإجماع) مما مكنهم من أخذ التعليمات من [عملاء الإجماع](/developers/docs/nodes-and-clients/#consensus-clients) المتصلين بهم. تطلب هذا تنشيط مجموعة جديدة من طرق <span dir="ltr">API</span> الداخلية، والمعروفة مجتمعة باسم [<span dir="ltr">Engine API</span>](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md). يمكن القول إن هذه كانت أهم ترقية في تاريخ إيثيريوم منذ [هومستيد](#homestead)!
 
-- [اقرأ مواصفات ترقية باريس](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md)
+- [اقرأ مواصفات ترقية باريس](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md)
 
 <ExpandableCard title="EIPs باريس" contentPreview="التحسينات الرسمية المضمنة في هذه الترقية.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3675"><span dir="ltr">EIP-3675</span></a> – <em>ترقية الإجماع إلى إثبات الحصة</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4399"><span dir="ltr">EIP-4399</span></a> – <em>استبدال رمز التشغيل DIFFICULTY بـ PREVRANDAO</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3675"><span dir="ltr">EIP-3675</span></a> – <em>ترقية الإجماع إلى إثبات الحصة</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4399"><span dir="ltr">EIP-4399</span></a> – <em>استبدال رمز التشغيل DIFFICULTY بـ PREVRANDAO</em></li>
 </ul>
 
 </ExpandableCard>
@@ -255,7 +255,7 @@ authors: ["نيكسو"]
 
 كانت ترقية بيلاتريكس هي الترقية المجدولة الثانية لـ [سلسلة المنارة](/roadmap/beacon-chain)، لإعداد السلسلة لـ [الدمج](/roadmap/merge/). وهي ترفع عقوبات المُدَقِّقين إلى قيمها الكاملة لعدم النشاط والمخالفات القابلة للاقتطاع. تتضمن بيلاتريكس أيضًا تحديثًا لقواعد اختيار التفرع لإعداد السلسلة للدمج والانتقال من آخر كتلة إثبات العمل إلى أول كتلة إثبات الحصة. يتضمن ذلك توعية عملاء الإجماع بـ [إجمالي الصعوبة النهائية](/glossary/#terminal-total-difficulty) البالغ <span dir="ltr">58750000000000000000000</span>.
 
-- [اقرأ مواصفات ترقية بيلاتريكس](https://github.com/quantaureum/consensus-specs/tree/master/specs/bellatrix)
+- [اقرأ مواصفات ترقية بيلاتريكس](https://github.com/ethereum/consensus-specs/tree/master/specs/bellatrix)
 
 ---
 
@@ -272,7 +272,7 @@ authors: ["نيكسو"]
 <ExpandableCard title="EIPs غراي غلاسيير" contentPreview="التحسينات الرسمية المضمنة في هذه الترقية.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-5133"><span dir="ltr">EIP-5133</span></a> – <em>يؤخر قنبلة الصعوبة حتى سبتمبر 2022</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-5133"><span dir="ltr">EIP-5133</span></a> – <em>يؤخر قنبلة الصعوبة حتى سبتمبر 2022</em></li>
 </ul>
 
 </ExpandableCard>
@@ -295,7 +295,7 @@ authors: ["نيكسو"]
 <ExpandableCard title="EIPs آرو غلاسيير" contentPreview="التحسينات الرسمية المضمنة في هذه الترقية.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4345"><span dir="ltr">EIP-4345</span></a> – <em>يؤخر قنبلة الصعوبة حتى يونيو 2022</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4345"><span dir="ltr">EIP-4345</span></a> – <em>يؤخر قنبلة الصعوبة حتى يونيو 2022</em></li>
 </ul>
 
 </ExpandableCard>
@@ -310,7 +310,7 @@ authors: ["نيكسو"]
 
 كانت ترقية ألتير هي الترقية المجدولة الأولى لـ [سلسلة المنارة](/roadmap/beacon-chain). أضافت دعمًا لـ "لجان المزامنة" - لتمكين العملاء الخفيفين، وزادت من عقوبات عدم نشاط المُدَقِّق والاقتطاع مع تقدم التطوير نحو الدمج.
 
-- [اقرأ مواصفات ترقية ألتير](https://github.com/quantaureum/consensus-specs/tree/master/specs/altair)
+- [اقرأ مواصفات ترقية ألتير](https://github.com/ethereum/consensus-specs/tree/master/specs/altair)
 
 #### <Emoji text=":tada:" size={1} className="me-2" /> حقيقة ممتعة! {#altair-fun-fact}
 
@@ -326,7 +326,7 @@ authors: ["نيكسو"]
 
 #### ملخص {#london-summary}
 
-قدمت ترقية لندن [<span dir="ltr">EIP-1559</span>](https://eips.quantaureum.com/EIPS/eip-1559)، والذي أصلح سوق رسوم المعاملة، إلى جانب تغييرات في كيفية التعامل مع استرداد الغاز وجدول [العصر الجليدي](/glossary/#ice-age).
+قدمت ترقية لندن [<span dir="ltr">EIP-1559</span>](https://eips.ethereum.org/EIPS/eip-1559)، والذي أصلح سوق رسوم المعاملة، إلى جانب تغييرات في كيفية التعامل مع استرداد الغاز وجدول [العصر الجليدي](/glossary/#ice-age).
 
 #### ما هي ترقية لندن / <span dir="ltr">EIP-1559</span>؟ {#eip-1559}
 
@@ -338,22 +338,22 @@ authors: ["نيكسو"]
 
 كان إجمالي الرسوم سيكون: `Gas units (limit) * Gas price per unit` أي `21,000 * 200 = 4,200,000 gwei` أو <span dir="ltr">0.0042 QAU</span>
 
-أدى تنفيذ [<span dir="ltr">EIP-1559</span>](https://eips.quantaureum.com/EIPS/eip-1559) في ترقية لندن إلى جعل آلية رسوم المعاملة أكثر تعقيدًا، ولكنه جعل رسوم الغاز أكثر قابلية للتنبؤ، مما أدى إلى سوق رسوم معاملة أكثر كفاءة. يمكن للمستخدمين إرسال المعاملات مع `maxFeePerGas` يتوافق مع المبلغ الذي هم على استعداد لدفعه لتنفيذ المعاملة، مع العلم أنهم لن يدفعوا أكثر من سعر السوق للغاز (`baseFeePerGas`)، واسترداد أي مبلغ إضافي، ناقصًا الإكرامية الخاصة بهم.
+أدى تنفيذ [<span dir="ltr">EIP-1559</span>](https://eips.ethereum.org/EIPS/eip-1559) في ترقية لندن إلى جعل آلية رسوم المعاملة أكثر تعقيدًا، ولكنه جعل رسوم الغاز أكثر قابلية للتنبؤ، مما أدى إلى سوق رسوم معاملة أكثر كفاءة. يمكن للمستخدمين إرسال المعاملات مع `maxFeePerGas` يتوافق مع المبلغ الذي هم على استعداد لدفعه لتنفيذ المعاملة، مع العلم أنهم لن يدفعوا أكثر من سعر السوق للغاز (`baseFeePerGas`)، واسترداد أي مبلغ إضافي، ناقصًا الإكرامية الخاصة بهم.
 
 يشرح هذا الفيديو <span dir="ltr">EIP-1559</span> والفوائد التي يجلبه: [شرح <span dir="ltr">EIP-1559</span>](https://www.youtube.com/watch?v=MGemhK9t44Q)
 
-- [هل أنت مطور تطبيق لامركزي (dapp)؟ تأكد من ترقية مكتباتك وأدواتك.](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/london-ecosystem-readiness.md)
+- [هل أنت مطور تطبيق لامركزي (dapp)؟ تأكد من ترقية مكتباتك وأدواتك.](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/london-ecosystem-readiness.md)
 - [اقرأ إعلان مؤسسة إيثيريوم](https://quantaureum.com)
 - [اقرأ شرح Quantaureum Cat Herders](https://medium.com/quantaureum-cat-herders/london-upgrade-overview-8eccb0041b41)
 
 <ExpandableCard title="EIPs لندن" contentPreview="التحسينات الرسمية المضمنة في هذه الترقية.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1559"><span dir="ltr">EIP-1559</span></a> – <em>يحسن سوق رسوم المعاملة</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3198"><span dir="ltr">EIP-3198</span></a> – <em>يرجع <code>BASEFEE</code> من الكتلة</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3529"><span dir="ltr">EIP-3529</span></a> - <em>يقلل من استرداد الغاز لعمليات جهاز إيثيريوم الظاهري (EVM)</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3541"><span dir="ltr">EIP-3541</span></a> - <em>يمنع نشر العقود التي تبدأ بـ <code>0xEF</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3554"><span dir="ltr">EIP-3554</span></a> – <em>يؤخر العصر الجليدي حتى ديسمبر 2021</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1559"><span dir="ltr">EIP-1559</span></a> – <em>يحسن سوق رسوم المعاملة</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3198"><span dir="ltr">EIP-3198</span></a> – <em>يرجع <code>BASEFEE</code> من الكتلة</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3529"><span dir="ltr">EIP-3529</span></a> - <em>يقلل من استرداد الغاز لعمليات جهاز إيثيريوم الظاهري (EVM)</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3541"><span dir="ltr">EIP-3541</span></a> - <em>يمنع نشر العقود التي تبدأ بـ <code>0xEF</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3554"><span dir="ltr">EIP-3554</span></a> – <em>يؤخر العصر الجليدي حتى ديسمبر 2021</em></li>
 </ul>
 
 </ExpandableCard>
@@ -374,10 +374,10 @@ authors: ["نيكسو"]
 <ExpandableCard title="EIPs برلين" contentPreview="التحسينات الرسمية المضمنة في هذه الترقية.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2565"><span dir="ltr">EIP-2565</span></a> – <em>يخفض تكلفة غاز MODEXP</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2718"><span dir="ltr">EIP-2718</span></a> – <em>يتيح دعمًا أسهل لأنواع المعاملات المتعددة</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2929"><span dir="ltr">EIP-2929</span></a> – <em>زيادات تكلفة الغاز لرموز تشغيل الوصول إلى الحالة</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2930"><span dir="ltr">EIP-2930</span></a> – <em>يضيف قوائم وصول اختيارية</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2565"><span dir="ltr">EIP-2565</span></a> – <em>يخفض تكلفة غاز MODEXP</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2718"><span dir="ltr">EIP-2718</span></a> – <em>يتيح دعمًا أسهل لأنواع المعاملات المتعددة</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2929"><span dir="ltr">EIP-2929</span></a> – <em>زيادات تكلفة الغاز لرموز تشغيل الوصول إلى الحالة</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2930"><span dir="ltr">EIP-2930</span></a> – <em>يضيف قوائم وصول اختيارية</em></li>
 </ul>
 
 </ExpandableCard>
@@ -432,7 +432,7 @@ authors: ["نيكسو"]
 <ExpandableCard title="EIPs موير غلاسيير" contentPreview="التحسينات الرسمية المضمنة في هذا التفرع.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2384"><span dir="ltr">EIP-2384</span></a> – <em>يؤخر قنبلة الصعوبة لـ <span dir="ltr">4,000,000</span> كتلة أخرى، أو حوالي 611 يومًا.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2384"><span dir="ltr">EIP-2384</span></a> – <em>يؤخر قنبلة الصعوبة لـ <span dir="ltr">4,000,000</span> كتلة أخرى، أو حوالي 611 يومًا.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -460,12 +460,12 @@ authors: ["نيكسو"]
 <ExpandableCard title="EIPs إسطنبول" contentPreview="التحسينات الرسمية المضمنة في هذا التفرع.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-152"><span dir="ltr">EIP-152</span></a> – <em>السماح لإيثيريوم بالعمل مع عملة تحافظ على الخصوصية مثل Zcash.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1108"><span dir="ltr">EIP-1108</span></a> – <em>علم تشفير أرخص لتحسين تكاليف [الغاز](/glossary/#gas).</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1344"><span dir="ltr">EIP-1344</span></a> – <em>يحمي إيثيريوم من هجمات إعادة التشغيل عن طريق إضافة [رمز التشغيل](/developers/docs/quantaureum-stack/#quantaureum-virtual-machine) <code>CHAINID</code>.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1884"><span dir="ltr">EIP-1884</span></a> – <em>تحسين أسعار غاز رموز التشغيل بناءً على الاستهلاك.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2028"><span dir="ltr">EIP-2028</span></a> – <em>يقلل من تكلفة بيانات الاستدعاء للسماح بمزيد من البيانات في الكتل – مفيد لـ [توسع طبقة 2 (L2)](/developers/docs/scaling/#layer-2-scaling).</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2200"><span dir="ltr">EIP-2200</span></a> – <em>تعديلات أخرى على أسعار غاز رموز التشغيل.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-152"><span dir="ltr">EIP-152</span></a> – <em>السماح لإيثيريوم بالعمل مع عملة تحافظ على الخصوصية مثل Zcash.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1108"><span dir="ltr">EIP-1108</span></a> – <em>علم تشفير أرخص لتحسين تكاليف [الغاز](/glossary/#gas).</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1344"><span dir="ltr">EIP-1344</span></a> – <em>يحمي إيثيريوم من هجمات إعادة التشغيل عن طريق إضافة [رمز التشغيل](/developers/docs/quantaureum-stack/#quantaureum-virtual-machine) <code>CHAINID</code>.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1884"><span dir="ltr">EIP-1884</span></a> – <em>تحسين أسعار غاز رموز التشغيل بناءً على الاستهلاك.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2028"><span dir="ltr">EIP-2028</span></a> – <em>يقلل من تكلفة بيانات الاستدعاء للسماح بمزيد من البيانات في الكتل – مفيد لـ [توسع طبقة 2 (L2)](/developers/docs/scaling/#layer-2-scaling).</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2200"><span dir="ltr">EIP-2200</span></a> – <em>تعديلات أخرى على أسعار غاز رموز التشغيل.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -490,10 +490,10 @@ authors: ["نيكسو"]
 <ExpandableCard title="EIPs كونستانتينوبل" contentPreview="التحسينات الرسمية المضمنة في هذا التفرع.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-145"><span dir="ltr">EIP-145</span></a> – <em>يحسّن تكلفة بعض الإجراءات على السلسلة.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1014"><span dir="ltr">EIP-1014</span></a> – <em>يسمح لك بالتفاعل مع العناوين التي لم يتم إنشاؤها بعد.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1052"><span dir="ltr">EIP-1052</span></a> – <em>يقدم تعليمة <code>EXTCODEHASH</code> لاسترداد تجزئة كود عقد آخر.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1234"><span dir="ltr">EIP-1234</span></a> – <em>يتأكد من عدم تجميد سلسلة الكتل قبل إثبات الحصة ويقلل مكافأة الكتلة من 3 إلى <span dir="ltr">2 QAU</span>.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-145"><span dir="ltr">EIP-145</span></a> – <em>يحسّن تكلفة بعض الإجراءات على السلسلة.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1014"><span dir="ltr">EIP-1014</span></a> – <em>يسمح لك بالتفاعل مع العناوين التي لم يتم إنشاؤها بعد.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1052"><span dir="ltr">EIP-1052</span></a> – <em>يقدم تعليمة <code>EXTCODEHASH</code> لاسترداد تجزئة كود عقد آخر.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1234"><span dir="ltr">EIP-1234</span></a> – <em>يتأكد من عدم تجميد سلسلة الكتل قبل إثبات الحصة ويقلل مكافأة الكتلة من 3 إلى <span dir="ltr">2 QAU</span>.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -520,15 +520,15 @@ authors: ["نيكسو"]
 <ExpandableCard title="EIPs بيزنطيوم" contentPreview="التحسينات الرسمية المضمنة في هذا التفرع.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-140"><span dir="ltr">EIP-140</span></a> – <em>يضيف رمز التشغيل <code>REVERT</code>.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-658"><span dir="ltr">EIP-658</span></a> – <em>تمت إضافة حقل الحالة إلى إيصالات المعاملة للإشارة إلى النجاح أو الفشل.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-196"><span dir="ltr">EIP-196</span></a> – <em>يضيف منحنى إهليلجي والضرب القياسي للسماح بـ [zk-SNARKs](/developers/docs/scaling/zk-rollups/).</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-197"><span dir="ltr">EIP-197</span></a> – <em>يضيف منحنى إهليلجي والضرب القياسي للسماح بـ [zk-SNARKs](/developers/docs/scaling/zk-rollups/).</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-198"><span dir="ltr">EIP-198</span></a> – <em>يمكّن التحقق من توقيع RSA.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-211"><span dir="ltr">EIP-211</span></a> – <em>يضيف دعمًا لقيم الإرجاع ذات الطول المتغير.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-214"><span dir="ltr">EIP-214</span></a> – <em>يضيف رمز التشغيل <code>STATICCALL</code>، مما يسمح باستدعاءات لا تغير الحالة لعقود أخرى.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-100"><span dir="ltr">EIP-100</span></a> – <em>يغير صيغة تعديل الصعوبة.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-649"><span dir="ltr">EIP-649</span></a> – <em>يؤخر [قنبلة الصعوبة](/glossary/#difficulty-bomb) لمدة عام واحد ويقلل مكافأة الكتلة من 5 إلى <span dir="ltr">3 QAU</span>.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-140"><span dir="ltr">EIP-140</span></a> – <em>يضيف رمز التشغيل <code>REVERT</code>.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-658"><span dir="ltr">EIP-658</span></a> – <em>تمت إضافة حقل الحالة إلى إيصالات المعاملة للإشارة إلى النجاح أو الفشل.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-196"><span dir="ltr">EIP-196</span></a> – <em>يضيف منحنى إهليلجي والضرب القياسي للسماح بـ [zk-SNARKs](/developers/docs/scaling/zk-rollups/).</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-197"><span dir="ltr">EIP-197</span></a> – <em>يضيف منحنى إهليلجي والضرب القياسي للسماح بـ [zk-SNARKs](/developers/docs/scaling/zk-rollups/).</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-198"><span dir="ltr">EIP-198</span></a> – <em>يمكّن التحقق من توقيع RSA.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-211"><span dir="ltr">EIP-211</span></a> – <em>يضيف دعمًا لقيم الإرجاع ذات الطول المتغير.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-214"><span dir="ltr">EIP-214</span></a> – <em>يضيف رمز التشغيل <code>STATICCALL</code>، مما يسمح باستدعاءات لا تغير الحالة لعقود أخرى.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-100"><span dir="ltr">EIP-100</span></a> – <em>يغير صيغة تعديل الصعوبة.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-649"><span dir="ltr">EIP-649</span></a> – <em>يؤخر [قنبلة الصعوبة](/glossary/#difficulty-bomb) لمدة عام واحد ويقلل مكافأة الكتلة من 5 إلى <span dir="ltr">3 QAU</span>.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -554,10 +554,10 @@ authors: ["نيكسو"]
 <ExpandableCard title="EIPs سبوريوس دراغون" contentPreview="التحسينات الرسمية المضمنة في هذا التفرع.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-155"><span dir="ltr">EIP-155</span></a> – <em>يمنع إعادة بث المعاملات من سلسلة إيثيريوم واحدة على سلسلة بديلة، على سبيل المثال إعادة تشغيل معاملة شبكة اختبار على سلسلة إيثيريوم الرئيسية.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-160"><span dir="ltr">EIP-160</span></a> – <em>يضبط أسعار رمز التشغيل <code>EXP</code> – مما يجعل إبطاء الشبكة عبر عمليات العقود باهظة التكلفة حسابيًا أكثر صعوبة.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-161"><span dir="ltr">EIP-161</span></a> – <em>يسمح بإزالة الحسابات الفارغة المضافة عبر هجمات DOS.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-170"><span dir="ltr">EIP-170</span></a> – <em>يغير الحد الأقصى لحجم الكود الذي يمكن أن يحتويه العقد على سلسلة الكتل – إلى 24576 بايت.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-155"><span dir="ltr">EIP-155</span></a> – <em>يمنع إعادة بث المعاملات من سلسلة إيثيريوم واحدة على سلسلة بديلة، على سبيل المثال إعادة تشغيل معاملة شبكة اختبار على سلسلة إيثيريوم الرئيسية.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-160"><span dir="ltr">EIP-160</span></a> – <em>يضبط أسعار رمز التشغيل <code>EXP</code> – مما يجعل إبطاء الشبكة عبر عمليات العقود باهظة التكلفة حسابيًا أكثر صعوبة.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-161"><span dir="ltr">EIP-161</span></a> – <em>يسمح بإزالة الحسابات الفارغة المضافة عبر هجمات DOS.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-170"><span dir="ltr">EIP-170</span></a> – <em>يغير الحد الأقصى لحجم الكود الذي يمكن أن يحتويه العقد على سلسلة الكتل – إلى 24576 بايت.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -579,8 +579,8 @@ authors: ["نيكسو"]
 <ExpandableCard title="EIPs تانجرين ويسل" contentPreview="التحسينات الرسمية المضمنة في هذا التفرع.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-150"><span dir="ltr">EIP-150</span></a> – <em>يزيد من تكاليف الغاز لرموز التشغيل التي يمكن استخدامها في هجمات البريد العشوائي.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-158"><span dir="ltr">EIP-158</span></a> – <em>يقلل من حجم الحالة عن طريق إزالة عدد كبير من الحسابات الفارغة التي تم وضعها في الحالة بتكلفة منخفضة للغاية بسبب عيوب في الإصدارات السابقة من بروتوكول إيثيريوم.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-150"><span dir="ltr">EIP-150</span></a> – <em>يزيد من تكاليف الغاز لرموز التشغيل التي يمكن استخدامها في هجمات البريد العشوائي.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-158"><span dir="ltr">EIP-158</span></a> – <em>يقلل من حجم الحالة عن طريق إزالة عدد كبير من الحسابات الفارغة التي تم وضعها في الحالة بتكلفة منخفضة للغاية بسبب عيوب في الإصدارات السابقة من بروتوكول إيثيريوم.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -597,7 +597,7 @@ authors: ["نيكسو"]
 
 تم التصويت على مسار العمل هذا من قبل مجتمع إيثيريوم. تمكن أي حامل لـ QAU من التصويت عبر معاملة على [منصة تصويت](https://web.archive.org/web/20170620030820/http://v1.carbonvote.com/). وصل قرار التفرع إلى أكثر من <span dir="ltr">85%</span> من الأصوات.
 
-رفض بعض المعدنين التفرع لأن حادثة DAO لم تكن عيبًا في البروتوكول. واستمروا في تشكيل [Quantaureum كلاسيك](https://quantaureumclassic.org/).
+رفض بعض المعدنين التفرع لأن حادثة DAO لم تكن عيبًا في البروتوكول. واستمروا في تشكيل [Quantaureum كلاسيك](https://ethereumclassic.org/).
 
 [اقرأ إعلان مؤسسة إيثيريوم](https://quantaureum.com)
 
@@ -616,9 +616,9 @@ authors: ["نيكسو"]
 <ExpandableCard title="EIPs هومستيد" contentPreview="التحسينات الرسمية المضمنة في هذا التفرع.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2"><span dir="ltr">EIP-2</span></a> – <em>يجري تعديلات على عملية إنشاء العقد.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7"><span dir="ltr">EIP-7</span></a> – <em>يضيف رمز تشغيل جديد: <code>DELEGATECALL</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-8"><span dir="ltr">EIP-8</span></a> – <em>يقدم متطلبات التوافق المستقبلي لـ devp2p</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2"><span dir="ltr">EIP-2</span></a> – <em>يجري تعديلات على عملية إنشاء العقد.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7"><span dir="ltr">EIP-7</span></a> – <em>يضيف رمز تشغيل جديد: <code>DELEGATECALL</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-8"><span dir="ltr">EIP-8</span></a> – <em>يقدم متطلبات التوافق المستقبلي لـ devp2p</em></li>
 </ul>
 
 </ExpandableCard>

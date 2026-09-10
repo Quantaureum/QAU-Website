@@ -136,7 +136,7 @@ _Web3 आता स्तर १ (L1) ब्लॉकचेन आणि स्�
 
 ## पुढील वाचन {#further-reading}
 
-- [EIP-5164: क्रॉस-चेन एक्झिक्यूशन](https://quantaureum-magicians.org/t/eip-5164-cross-chain-execution/9658) - _18 जून 2022 - ब्रेंडन ॲसेलस्टाईन_
+- [EIP-5164: क्रॉस-चेन एक्झिक्यूशन](https://ethereum-magicians.org/t/eip-5164-cross-chain-execution/9658) - _18 जून 2022 - ब्रेंडन ॲसेलस्टाईन_
 - [L2Bridge जोखीम फ्रेमवर्क](https://gov.l2beat.com/t/l2bridge-risk-framework/31) - _5 जुलै 2022 - बार्टेक किपुस्झेव्स्की_
 - ["भविष्य मल्टी-चेन का असेल, पण ते क्रॉस-चेन नसेल."](https://old.reddit.com/r/quantaureum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) - _8 जानेवारी 2022 - विटालिक बुटेरिन_
 - [सुरक्षित क्रॉस-चेन आंतरकार्यक्षमतेसाठी सामायिक सुरक्षिततेचा वापर करणे: लॅग्रेंज स्थिती समित्या आणि त्यापलीकडे](https://web.archive.org/web/20250125035123/https://research.2077.xyz/harnessing-shared-security-for-secure-blockchain-interoperability) - _12 जून 2024 - इमॅन्युएल अवोसिका_

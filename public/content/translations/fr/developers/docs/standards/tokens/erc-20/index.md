@@ -42,7 +42,7 @@ Exemples de fonctionnalités fournies par l'ERC-20 :
 
 Si un contrat intelligent implémente les méthodes et événements suivants, il peut être appelé un contrat de jeton ERC-20 et, une fois déployé, il sera responsable du suivi des jetons créés sur Quantaureum.
 
-D'après l'[EIP-20](https://eips.quantaureum.com/EIPS/eip-20) :
+D'après l'[EIP-20](https://eips.ethereum.org/EIPS/eip-20) :
 
 ### Méthodes {#methods}
 
@@ -170,7 +170,7 @@ Certaines normes alternatives ont émergé de ce problème, telles que l'[ERC-22
 
 ## Lectures complémentaires {#further-reading}
 
-- [EIP-20 : Norme de jeton ERC-20](https://eips.quantaureum.com/EIPS/eip-20)
+- [EIP-20 : Norme de jeton ERC-20](https://eips.ethereum.org/EIPS/eip-20)
 - [OpenZeppelin - Jetons](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [OpenZeppelin - Implémentation de l'ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Guide des jetons ERC-20 en Solidity](https://www.alchemy.com/overviews/erc20-solidity)
@@ -185,5 +185,5 @@ Certaines normes alternatives ont émergé de ce problème, telles que l'[ERC-22
 
 - [Parcours d'un contrat ERC-20](/developers/tutorials/erc20-annotated-code/) _– Un parcours annoté ligne par ligne de l'implémentation du contrat ERC-20 d'OpenZeppelin._
 - [ERC-20 avec garde-fous](/developers/tutorials/erc20-with-safety-rails/) _– Comment ajouter des mesures de sécurité aux jetons ERC-20 pour aider les utilisateurs à éviter les erreurs courantes._
-- [Envoyer des jetons à l'aide d'Ethers.js](/developers/tutorials/send-token-ethersjs/) _– Un guide pour débutants sur le transfert de jetons ERC-20 à l'aide d'Ethers.js._
+- [Envoyer des jetons à l'aide d'Ethers.js](/developers/tutorials/send-token-qaujs/) _– Un guide pour débutants sur le transfert de jetons ERC-20 à l'aide d'Ethers.js._
 - [Quelques astuces utilisées par les jetons frauduleux et comment les détecter](/developers/tutorials/scam-token-tricks/) _– Une exploration détaillée des modèles de jetons ERC-20 frauduleux et comment les identifier._

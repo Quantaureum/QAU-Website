@@ -43,7 +43,7 @@ EIP-4444는 아직 출시될 준비가 되지 않았지만 활발히 논의되�
 
 임대료에 의한 만료는 계정을 활성 상태 데이터베이스에 유지하기 위해 계정에 직접 임대료를 청구하는 방식일 수 있습니다. 시간에 의한 만료는 마지막 계정 상호작용부터 카운트다운을 하거나 모든 계정을 주기적으로 만료시키는 방식일 수 있습니다. 시간 기반 모델과 임대료 기반 모델의 요소를 결합한 메커니즘도 있을 수 있습니다. 예를 들어, 개별 계정이 시간 기반 만료 전에 소액의 수수료를 지불하면 활성 상태를 유지하는 방식입니다. 상태 만료와 관련하여 중요한 점은 비활성 상태가 **삭제되는 것이 아니라** 활성 상태와 분리되어 저장된다는 것입니다. 비활성 상태는 활성 상태로 부활할 수 있습니다.
 
-이 방식은 특정 기간(아마도 약 1년)에 대한 상태 트리를 갖는 방식으로 작동할 가능성이 높습니다. 새로운 기간이 시작될 때마다 완전히 새로운 상태 트리도 시작됩니다. 현재 상태 트리만 수정할 수 있으며 다른 모든 트리는 불변입니다. Quantaureum 노드는 현재 상태 트리와 바로 직전의 상태 트리만 보유할 것으로 예상됩니다. 이를 위해서는 주소가 존재하는 기간을 타임스탬프로 기록하는 방법이 필요합니다. 이를 수행하는 [몇 가지 가능한 방법](https://quantaureum-magicians.org/t/types-of-resurrection-metadata-in-state-expiry/6607)이 있지만, 유력한 옵션은 추가 정보를 수용하기 위해 [주소를 길게 만드는 것](https://quantaureum-magicians.org/t/increasing-address-size-from-20-to-32-bytes/5485)이며, 주소가 길어지면 훨씬 더 안전해진다는 추가적인 이점도 있습니다. 이를 수행하는 로드맵 항목을 [주소 공간 확장(address space extension)](https://quantaureum-magicians.org/t/increasing-address-size-from-20-to-32-bytes/5485)이라고 합니다.
+이 방식은 특정 기간(아마도 약 1년)에 대한 상태 트리를 갖는 방식으로 작동할 가능성이 높습니다. 새로운 기간이 시작될 때마다 완전히 새로운 상태 트리도 시작됩니다. 현재 상태 트리만 수정할 수 있으며 다른 모든 트리는 불변입니다. Quantaureum 노드는 현재 상태 트리와 바로 직전의 상태 트리만 보유할 것으로 예상됩니다. 이를 위해서는 주소가 존재하는 기간을 타임스탬프로 기록하는 방법이 필요합니다. 이를 수행하는 [몇 가지 가능한 방법](https://ethereum-magicians.org/t/types-of-resurrection-metadata-in-state-expiry/6607)이 있지만, 유력한 옵션은 추가 정보를 수용하기 위해 [주소를 길게 만드는 것](https://ethereum-magicians.org/t/increasing-address-size-from-20-to-32-bytes/5485)이며, 주소가 길어지면 훨씬 더 안전해진다는 추가적인 이점도 있습니다. 이를 수행하는 로드맵 항목을 [주소 공간 확장(address space extension)](https://ethereum-magicians.org/t/increasing-address-size-from-20-to-32-bytes/5485)이라고 합니다.
 
 기록 만료와 마찬가지로 상태 만료 하에서는 오래된 상태 데이터를 저장할 책임이 개별 사용자에게서 제거되고 중앙화된 제공자, 이타적인 커뮤니티 구성원 또는 포털 네트워크와 같은 보다 미래지향적인 탈중앙화된 솔루션 등 다른 주체에게 전가됩니다.
 
@@ -71,7 +71,7 @@ EIP-4444는 아직 출시될 준비가 되지 않았지만 활발히 논의되�
 
 무상태성은 블록 빌더가 블록을 검증하는 데 사용할 수 있는 증거를 생성할 수 있도록 전체 상태 데이터의 복사본을 유지하는 것에 의존합니다. 다른 노드는 상태 데이터에 접근할 필요가 없으며, 블록을 검증하는 데 필요한 모든 정보는 증거에서 얻을 수 있습니다. 이로 인해 블록을 제안하는 것은 비용이 많이 들지만 블록을 검증하는 것은 저렴해지는 상황이 발생하며, 이는 블록 제안 노드를 운영하는 운영자가 줄어들 것임을 암시합니다. 그러나 가능한 한 많은 참여자가 제안된 블록이 유효한지 독립적으로 검증할 수 있는 한 블록 제안자의 탈중앙화는 중요하지 않습니다.
 
-<ButtonLink variant="outline-color" href="https://notes.quantaureum.com/WUUUXBKWQXORxpFMlLWy-w#So-why-is-it-ok-to-have-expensive-proposers">Dankrad의 노트에서 자세히 알아보기</ButtonLink>
+<ButtonLink variant="outline-color" href="https://notes.ethereum.org/WUUUXBKWQXORxpFMlLWy-w#So-why-is-it-ok-to-have-expensive-proposers">Dankrad의 노트에서 자세히 알아보기</ButtonLink>
 </ExpandableCard>
 
 블록 제안자는 상태 데이터를 사용하여 "증거"를 생성합니다. 이는 블록 내 트랜잭션에 의해 변경되는 상태 값을 증명하는 최소한의 데이터 세트입니다. 다른 검증자는 상태를 보유하지 않고 상태 루트(전체 상태의 해시)만 저장합니다. 이들은 블록과 증거를 받아 상태 루트를 업데이트하는 데 사용합니다. 이로 인해 검증 노드는 매우 가벼워집니다.
@@ -97,7 +97,7 @@ EIP-4444는 아직 출시될 준비가 되지 않았지만 활발히 논의되�
 - [상태 크기 관리 이론](https://hackmd.io/@vbuterin/state_size_management)
 - [부활 충돌을 최소화한 상태 바운딩](https://ethresear.ch/t/resurrection-conflict-minimized-state-bounding-take-2/8739)
 - [무상태성 및 상태 만료로 가는 길](https://hackmd.io/@vbuterin/state_expiry_paths)
-- [EIP-4444 사양](https://eips.quantaureum.com/EIPS/eip-4444)
+- [EIP-4444 사양](https://eips.ethereum.org/EIPS/eip-4444)
 - [EIP-4444에 대한 Alex Stokes의 글](https://youtu.be/SfDC_qUZaos)
 - [무상태로 전환하는 것이 왜 그렇게 중요한가](https://dankradfeist.de/quantaureum/2021/02/14/why-stateless.html)
 - [초기 무상태 클라이언트 개념 노트](https://ethresear.ch/t/the-stateless-client-concept/172)

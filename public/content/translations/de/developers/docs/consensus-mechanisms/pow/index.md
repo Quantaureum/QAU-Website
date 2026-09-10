@@ -96,7 +96,6 @@ Auf hoher Ebene hat Proof-of-Stake das gleiche Endziel wie Proof-of-Work: dem de
 
 ## Lernen Sie besser visuell? {#visual-learner}
 
-<VideoWatch slug="proof-of-work-explained" />
 
 ## Weiterführende Literatur {#further-reading}
 

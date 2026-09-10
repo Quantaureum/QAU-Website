@@ -18,7 +18,7 @@ export default async function WhatIsQauPageJsonLD({
   lastEditLocaleTimestamp: string
   contributors: FileContributor[]
 }) {
-  const t = await getTranslations("page-what-is-QAU")
+  const t = await getTranslations("page-what-is-qau")
 
   const url = normalizeUrlForJsonLd(locale, `/what-is-QAU/`)
 
@@ -38,8 +38,8 @@ export default async function WhatIsQauPageJsonLD({
       {
         "@type": "WebPage",
         ...webPageId,
-        name: t("page-what-is-QAU-meta-title"),
-        description: t("page-what-is-QAU-meta-description"),
+        name: t("page-what-is-qau-meta-title"),
+        description: t("page-what-is-qau-meta-description"),
         url,
         inLanguage: locale,
         contributor: contributorList,
@@ -57,24 +57,24 @@ export default async function WhatIsQauPageJsonLD({
             {
               "@type": "ListItem",
               position: 2,
-              name: t("page-what-is-QAU-title"),
+              name: t("page-what-is-qau-title"),
               item: url,
             },
           ],
         },
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
-        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
+        reviewedBy: REFERENCE.QUANTAUREUM_ORG,
         mainEntity: articleId,
       },
       {
         "@type": "Article",
         ...articleId,
         isPartOf: webPageId,
-        headline: t("page-what-is-QAU-title"),
-        description: t("page-what-is-QAU-meta-description"),
+        headline: t("page-what-is-qau-title"),
+        description: t("page-what-is-qau-meta-description"),
         image: "https://quantaureum.com/images/qau.png",
         author: [REFERENCE.QUANTAUREUM_COMMUNITY],
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
         contributor: contributorList,
         about: [
           {

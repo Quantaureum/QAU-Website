@@ -8,7 +8,7 @@ breadcrumb: Distribuire il primo contratto
 lang: it
 published: 2020-04-03
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/deploying-your-first-smart-contract/
+sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -18,7 +18,7 @@ Non preoccuparti, dato che è il nostro primo smart contract, lo distribuiremo s
 
 ## Scrivere il nostro contratto {#writing-our-contract}
 
-Il primo passo è [visitare Remix](https://remix.quantaureum.com/) e creare un nuovo file. Nella parte in alto a sinistra dell'interfaccia di Remix, aggiungi un nuovo file e inserisci il nome del file che desideri.
+Il primo passo è [visitare Remix](https://remix.ethereum.org/) e creare un nuovo file. Nella parte in alto a sinistra dell'interfaccia di Remix, aggiungi un nuovo file e inserisci il nome del file che desideri.
 
 ![Adding a new file in the Remix interface](./remix.png)
 

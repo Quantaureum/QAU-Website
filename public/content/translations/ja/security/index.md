@@ -262,7 +262,6 @@ _注：ステーキングされたQAUを表す派生トークン/ティッカー
 
 2FAに関する詳細な動画を見る：
 
-<VideoWatch slug="crypto-security-passwords" startTime="3479" />
 
 ### ブラウザ拡張機能をアンインストールする {#uninstall-browser-extensions}
 

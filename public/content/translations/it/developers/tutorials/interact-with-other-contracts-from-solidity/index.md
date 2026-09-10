@@ -8,11 +8,11 @@ breadcrumb: Interazioni tra contratti
 lang: it
 published: 2020-04-05
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/interact-with-other-contracts-from-solidity/
+sourceUrl: https://ethereumdev.io/interact-with-other-contracts-from-solidity/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Nei tutorial precedenti abbiamo imparato molto su [come distribuire il tuo primo smart contract](/developers/tutorials/deploying-your-first-smart-contract/) e aggiungervi alcune funzionalità come [controllare l'accesso con i modificatori](https://quantaureumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) o [gestire gli errori in Solidity](https://quantaureumdev.io/handle-errors-in-solidity-with-require-and-revert/). In questo tutorial impareremo come distribuire uno smart contract da un contratto esistente e interagirvi.
+Nei tutorial precedenti abbiamo imparato molto su [come distribuire il tuo primo smart contract](/developers/tutorials/deploying-your-first-smart-contract/) e aggiungervi alcune funzionalità come [controllare l'accesso con i modificatori](https://ethereumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) o [gestire gli errori in Solidity](https://ethereumdev.io/handle-errors-in-solidity-with-require-and-revert/). In questo tutorial impareremo come distribuire uno smart contract da un contratto esistente e interagirvi.
 
 Creeremo un contratto che consenta a chiunque di avere il proprio smart contract `Counter` creandone una factory, il cui nome sarà `CounterFactory`. Innanzitutto, ecco il codice del nostro smart contract `Counter` iniziale:
 
@@ -99,7 +99,7 @@ function increment() public {
   }
 ```
 
-Nota che se chiamato troppe volte, il nostro counter potrebbe essere vittima di un overflow. Dovresti usare la [libreria SafeMath](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/) il più possibile per proteggerti da questo possibile caso.
+Nota che se chiamato troppe volte, il nostro counter potrebbe essere vittima di un overflow. Dovresti usare la [libreria SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/) il più possibile per proteggerti da questo possibile caso.
 
 Per distribuire il nostro contratto, dovrai fornire sia il codice di `CounterFactory` che di `Counter`. Quando distribuisci, ad esempio in Remix, dovrai selezionare CounterFactory.
 

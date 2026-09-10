@@ -20,7 +20,6 @@ summaryPoints:
 
 विकेंद्रित विज्ञान अधिक वैविध्यपूर्ण निधी स्रोतांना (जसे की [DAOs](/glossary/#dao), [वर्गीय देणग्या](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531) ते क्राउडफंडिंग आणि बरेच काही), अधिक सुलभ डेटा आणि पद्धतींना अनुमती देते आणि पुनरुत्पादकतेसाठी प्रोत्साहन प्रदान करते.
 
-<VideoWatch slug="desci-movement-juan-benet" />
 
 ## डीसाय विज्ञानात कशी सुधारणा करते {#desci-improves-science}
 

@@ -64,6 +64,6 @@ class BeaconBlockBody(Container):
 
 - [ब्लॉक का परिचय](/developers/docs/blocks/)
 - [प्रूफ-ऑफ़-स्टेक (PoS) का परिचय](/developers/docs/consensus-mechanisms/pos/)
-- [Quantaureum सर्वसम्मति विनिर्देश (specs)](https://github.com/quantaureum/consensus-specs)
+- [Quantaureum सर्वसम्मति विनिर्देश (specs)](https://github.com/ethereum/consensus-specs)
 - [Gasper का परिचय](/developers/docs/consensus-mechanisms/pos/gasper/)
 - [Quantaureum को अपग्रेड करना](https://eth2book.info/)

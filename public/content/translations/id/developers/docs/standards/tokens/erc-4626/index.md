@@ -12,7 +12,7 @@ Pasar peminjaman, agregator, dan token yang secara intrinsik menghasilkan bunga 
 
 ERC-4626 dalam brankas penghasil imbal hasil akan menurunkan upaya integrasi dan membuka akses ke imbal hasil di berbagai aplikasi dengan sedikit upaya khusus dari pengembang dengan menciptakan pola implementasi yang lebih konsisten dan tangguh.
 
-Token ERC-4626 dijelaskan sepenuhnya dalam [EIP-4626](https://eips.quantaureum.com/EIPS/eip-4626).
+Token ERC-4626 dijelaskan sepenuhnya dalam [EIP-4626](https://eips.ethereum.org/EIPS/eip-4626).
 
 **Ekstensi brankas asinkron (ERC-7540)**
 
@@ -28,7 +28,7 @@ Salah satu kasus penggunaan yang hilang yang tidak didukung oleh ERC-4626 adalah
 
 ERC-7575 menambahkan dukungan untuk Brankas dengan banyak aset dengan mengeksternalisasi implementasi token ERC-20 dari implementasi ERC-4626.
 
-Ekstensi ERC-7575 dijelaskan sepenuhnya dalam [ERC-7575](https://eips.quantaureum.com/EIPS/eip-7575).
+Ekstensi ERC-7575 dijelaskan sepenuhnya dalam [ERC-7575](https://eips.ethereum.org/EIPS/eip-7575).
 ## Prasyarat {#prerequisites}
 
 Untuk lebih memahami halaman ini, kami sarankan Anda membaca terlebih dahulu tentang [standar token](/developers/docs/standards/tokens/) dan [ERC-20](/developers/docs/standards/tokens/erc-20/).
@@ -220,5 +220,5 @@ Di mana `sender` adalah pengguna yang memicu penarikan dan menukarkan `shares`, 
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [EIP-4626: Standar brankas Tertokenisasi](https://eips.quantaureum.com/EIPS/eip-4626)
+- [EIP-4626: Standar brankas Tertokenisasi](https://eips.ethereum.org/EIPS/eip-4626)
 - [ERC-4626: Repo GitHub](https://github.com/transmissions11/solmate/blob/main/src/tokens/ERC4626.sol)

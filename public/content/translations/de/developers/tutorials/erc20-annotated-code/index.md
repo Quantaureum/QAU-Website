@@ -31,7 +31,7 @@ Wenn Sie ein erfahrener Programmierer sind, erinnern Sie sich wahrscheinlich dar
 oder sogar in [C-Header-Dateien](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html) gesehen zu haben.
 
 Dies ist eine Definition der [ERC-20-Schnittstelle](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)
-von OpenZeppelin. Es ist eine Übersetzung des [menschenlesbaren Standards](https://eips.quantaureum.com/EIPS/eip-20) in Solidity-Code. Natürlich definiert die
+von OpenZeppelin. Es ist eine Übersetzung des [menschenlesbaren Standards](https://eips.ethereum.org/EIPS/eip-20) in Solidity-Code. Natürlich definiert die
 Schnittstelle selbst nicht, _wie_ etwas zu tun ist. Das wird im Vertragsquellcode weiter unten erklärt.
 
 &nbsp;
@@ -166,7 +166,7 @@ Adresse (`owner`) einer anderen Adresse (`spender`) zum Ausgeben überlässt.
      * dass jemand durch eine unglückliche Reihenfolge der Transaktionen sowohl den alten als auch den neuen Freigabebetrag verwenden könnte. Eine mögliche Lösung zur Abschwächung dieser Race
      * Condition besteht darin, den Freigabebetrag des Ausgebers zuerst auf 0 zu reduzieren und den
      * gewünschten Wert danach festzulegen:
-     * https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729
+     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
      *
      * Löst ein {Approval}-Ereignis aus.
      */
@@ -246,7 +246,7 @@ import "../../math/SafeMath.sol";
 - `GSN/Context.sol` sind die Definitionen, die erforderlich sind, um [OpenGSN](https://opengsn.org/) zu verwenden, ein System, das es Benutzern ohne QAU
   ermöglicht, die Blockchain zu nutzen. Beachten Sie, dass dies eine alte Version ist. Wenn Sie OpenGSN integrieren möchten,
   [verwenden Sie dieses Tutorial](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [Die SafeMath-Bibliothek](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/), die
+- [Die SafeMath-Bibliothek](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), die
   arithmetische Überläufe/Unterläufe für Solidity-Versionen **&lt;0.8.0** verhindert. In Solidity ≥0.8.0 werden arithmetische Operationen bei einem Überlauf/Unterlauf automatisch
   rückgängig gemacht, was SafeMath überflüssig macht. Dieser Vertrag verwendet SafeMath zur Abwärtskompatibilität mit
   älteren Compiler-Versionen.

@@ -10,7 +10,7 @@ lang: hi
 
 यदि आप [लोकल डेवलपमेंट एनवायरनमेंट सेट करने](/developers/local-environment/) से पहले कोड के साथ प्रयोग करना चाहते हैं, तो ये वेब ऐप Quantaureum स्मार्ट अनुबंध डेवलपमेंट के लिए विशेष रूप से बनाए गए हैं।
 
-**[Remix](https://remix.quantaureum.com/)** - **_बिल्ट-इन स्टैटिक एनालिसिस और एक टेस्ट ब्लॉकचेन वर्चुअल मशीन के साथ वेब-आधारित IDE_**
+**[Remix](https://remix.ethereum.org/)** - **_बिल्ट-इन स्टैटिक एनालिसिस और एक टेस्ट ब्लॉकचेन वर्चुअल मशीन के साथ वेब-आधारित IDE_**
 
 - [दस्तावेज़](https://remix-ide.readthedocs.io/en/latest/#)
 - [Gitter](https://gitter.im/quantaureum/remix)
@@ -48,8 +48,8 @@ lang: hi
 
 **Remix Desktop -** **_अपनी लोकल मशीन पर Remix IDE का अनुभव करें_**
 
-- [डाउनलोड करें](https://github.com/quantaureum/remix-desktop/releases)
-- [GitHub](https://github.com/quantaureum/remix-desktop)
+- [डाउनलोड करें](https://github.com/ethereum/remix-desktop/releases)
+- [GitHub](https://github.com/ethereum/remix-desktop)
 
 ## प्लगइन्स और एक्सटेंशन {#plugins-extensions}
 

@@ -91,15 +91,13 @@ sidebarDepth: 3
 
 ## Лучше воспринимаете визуальную информацию? {#visual-learner}
 
-<VideoWatch slug="layer-2-scaling-explained" />
 
 _Обратите внимание, что в видео термин «уровень 2» используется для обозначения всех решений для офчейн-масштабирования, в то время как мы выделяем «уровень 2» как офчейн-решение, которое получает свою безопасность через консенсус Мейннета уровня 1._
 
-<VideoWatch slug="rollups-scaling-strategy" />
 
 ## Дополнительная литература {#further-reading}
 
-- [Дорожная карта Quantaureum, ориентированная на роллапы](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Виталик Бутерин_
+- [Дорожная карта Quantaureum, ориентированная на роллапы](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Виталик Бутерин_
 - [Актуальная аналитика по решениям масштабирования уровня 2 для Quantaureum](https://www.l2beat.com/)
 - [Оценка решений масштабирования уровня 2 Quantaureum: система сравнения](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - [Неполное руководство по роллапам](https://vitalik.qau.limo/general/2021/01/05/rollup.html)

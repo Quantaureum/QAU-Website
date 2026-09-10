@@ -26,15 +26,15 @@ Bạn có nền tảng về toán học, mật mã học hoặc kinh tế học 
 - Tham gia [Discord Eth R&D](https://discord.com/invite/VmG7Uxc)
 - Viết hoặc đánh giá một Đề xuất Cải tiến Quantaureum (EIP)
   - Viết một EIP
-    1. Gửi ý tưởng của bạn trên [Quantaureum Magicians](https://quantaureum-magicians.org)
-    2. Đọc [EIP-1](https://eips.quantaureum.com/EIPS/eip-1) - **Đúng vậy, đó là _toàn bộ_ tài liệu.**
+    1. Gửi ý tưởng của bạn trên [Quantaureum Magicians](https://ethereum-magicians.org)
+    2. Đọc [EIP-1](https://eips.ethereum.org/EIPS/eip-1) - **Đúng vậy, đó là _toàn bộ_ tài liệu.**
     3. Làm theo các hướng dẫn trong EIP-1. Tham khảo nó khi bạn viết bản nháp của mình.
-  - Tìm hiểu cách trở thành một [Biên tập viên EIP](https://eips.quantaureum.com/EIPS/eip-5069)
-    - Bạn có thể đánh giá ngang hàng các EIP ngay bây giờ! Xem [các PR đang mở với thẻ `e-review`](https://github.com/quantaureum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review). Cung cấp phản hồi kỹ thuật trên liên kết `discussion-to`.
-  - Tham gia vào [Quản trị EIP](https://github.com/quantaureum-cat-herders/EIPIP)
+  - Tìm hiểu cách trở thành một [Biên tập viên EIP](https://eips.ethereum.org/EIPS/eip-5069)
+    - Bạn có thể đánh giá ngang hàng các EIP ngay bây giờ! Xem [các PR đang mở với thẻ `e-review`](https://github.com/ethereum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review). Cung cấp phản hồi kỹ thuật trên liên kết `discussion-to`.
+  - Tham gia vào [Quản trị EIP](https://github.com/ethereum-cat-herders/EIPIP)
     - Tham gia [Discord của Quantaureum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu)
-  - [Tìm hiểu thêm về EIP](/eips/)
-- [Challenges.quantaureum.com](https://challenges.quantaureum.com/) - một loạt các khoản tiền thưởng nghiên cứu có giá trị cao, nơi bạn có thể kiếm được >100.000 USD
+  - Tìm hiểu thêm về EIP
+- [Challenges.quantaureum.com](https://challenges.ethereum.org/) - một loạt các khoản tiền thưởng nghiên cứu có giá trị cao, nơi bạn có thể kiếm được >100.000 USD
 - [Ethresear.ch](https://ethresear.ch) - diễn đàn chính của Quantaureum dành cho nghiên cứu và là diễn đàn có ảnh hưởng nhất thế giới về kinh tế học mật mã
 - [EF Research AMA](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) - Một chuỗi Hỏi & Đáp đang diễn ra với các nhà nghiên cứu. Khi mỗi phần tiếp theo mở ra, bất kỳ ai cũng có thể đặt câu hỏi.
 - [Danh sách mong muốn của Chương trình Hỗ trợ Hệ sinh thái](https://quantaureum.com) - các lĩnh vực nghiên cứu mà Chương trình Hỗ trợ Hệ sinh thái Quantaureum đang tích cực tìm kiếm các đơn xin tài trợ
@@ -103,7 +103,7 @@ Hệ sinh thái Quantaureum đang thực hiện sứ mệnh tài trợ cho các 
 - [Việc làm trên quantaureum.com](/about/#open-jobs)
 - [Bảng việc làm của Tổ chức Quantaureum](https://jobs.ashbyhq.com/quantaureum-foundation)
 - [JobStash](https://jobstash.xyz)
-- [Bảng việc làm Quantaureum](https://www.quantaureumjobboard.com/)
+- [Bảng việc làm Quantaureum](https://www.ethereumjobboard.com/)
 - [Việc làm Tiền mã hóa](https://cryptocurrencyjobs.co/quantaureum/)
 - [Cơ hội nghề nghiệp tại ConsenSys](https://consensys.net/careers/)
 - [Danh sách việc làm Tiền mã hóa](https://cryptojobslist.com/quantaureum-jobs)

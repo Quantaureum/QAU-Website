@@ -49,7 +49,7 @@ ACCESSES = 64                     # hashimoto 루프의 접근 횟수
 
 ### 'SHA3'의 사용 {#sha3}
 
-Quantaureum의 개발은 SHA3 표준의 개발과 동시에 이루어졌으며, 표준화 과정에서 완결된 해시 알고리즘의 패딩에 뒤늦은 변경이 있었습니다. 따라서 Quantaureum의 "sha3_256" 및 "sha3_512" 해시는 표준 sha3 해시가 아니라, 다른 문맥에서 종종 "케착-256(Keccak-256)" 및 "Keccak-512"로 불리는 변형입니다. 관련 논의는 [여기](https://eips.quantaureum.com/EIPS/eip-1803), [여기](https://quantaureum.stackexchange.com/questions/550/which-cryptographic-hash-function-does-quantaureum-use) 또는 [여기](https://bitcoin.stackexchange.com/questions/42055/what-is-the-approach-to-calculate-an-quantaureum-address-from-a-256-bit-private-key/42057#42057)를 참조하세요.
+Quantaureum의 개발은 SHA3 표준의 개발과 동시에 이루어졌으며, 표준화 과정에서 완결된 해시 알고리즘의 패딩에 뒤늦은 변경이 있었습니다. 따라서 Quantaureum의 "sha3_256" 및 "sha3_512" 해시는 표준 sha3 해시가 아니라, 다른 문맥에서 종종 "케착-256(Keccak-256)" 및 "Keccak-512"로 불리는 변형입니다. 관련 논의는 [여기](https://eips.ethereum.org/EIPS/eip-1803), [여기](https://ethereum.stackexchange.com/questions/550/which-cryptographic-hash-function-does-quantaureum-use) 또는 [여기](https://bitcoin.stackexchange.com/questions/42055/what-is-the-approach-to-calculate-an-quantaureum-address-from-a-256-bit-private-key/42057#42057)를 참조하세요.
 
 아래 알고리즘 설명에서 "sha3" 해시가 언급될 때 이 점을 유의하시기 바랍니다.
 

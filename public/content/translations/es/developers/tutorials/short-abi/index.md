@@ -65,9 +65,9 @@ Los datos de llamada se dividen de la siguiente manera:
 Explicación:
 
 - **Selector de función**: El contrato tiene menos de 256 funciones, por lo que podemos distinguirlas con un solo byte.
-  Estos bytes normalmente no son cero y, por lo tanto, [cuestan dieciséis de gas](https://eips.quantaureum.com/EIPS/eip-2028).
+  Estos bytes normalmente no son cero y, por lo tanto, [cuestan dieciséis de gas](https://eips.ethereum.org/EIPS/eip-2028).
 - **Ceros**: Estos bytes siempre son cero porque una dirección de veinte bytes no requiere una palabra de treinta y dos bytes para contenerla.
-  Los bytes que contienen cero cuestan cuatro de gas ([consulte el Libro Amarillo](https://quantaureum.github.io/yellowpaper/paper.pdf), Apéndice G,
+  Los bytes que contienen cero cuestan cuatro de gas ([consulte el Libro Amarillo](https://ethereum.github.io/yellowpaper/paper.pdf), Apéndice G,
   pág. 27, el valor para `G`<sub>`txdatazero`</sub>).
 - **Cantidad**: Si asumimos que en este contrato `decimals` es dieciocho (el valor normal) y la cantidad máxima de tokens que transferimos será de 10<sup>18</sup>, obtenemos una cantidad máxima de 10<sup>36</sup>.
   256<sup>15</sup> &gt; 10<sup>36</sup>, por lo que quince bytes son suficientes.
@@ -201,7 +201,7 @@ Hay dos razones por las que una función no estaría disponible aquí:
 2. Las funciones que dependen de [`msg.sender`](https://docs.soliditylang.org/en/v0.8.12/units-and-global-variables.html#block-and-transaction-properties).
    El valor de `msg.sender` va a ser la dirección de `CalldataInterpreter`, no la del llamador.
 
-Desafortunadamente, [al observar las especificaciones del ERC-20](https://eips.quantaureum.com/EIPS/eip-20), esto deja solo una función, `transfer`.
+Desafortunadamente, [al observar las especificaciones del ERC-20](https://eips.ethereum.org/EIPS/eip-20), esto deja solo una función, `transfer`.
 Esto nos deja con solo dos funciones: `transfer` (porque podemos llamar a `transferFrom`) y `faucet` (porque podemos transferir los tokens de vuelta a quien nos llamó).
 
 ```solidity

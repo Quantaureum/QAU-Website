@@ -138,9 +138,9 @@ Chất lượng của các công cụ được sử dụng trong việc chạy c
 
 Các khuôn khổ thử nghiệm đơn vị cho hợp đồng thông minh Solidity có sẵn bằng nhiều ngôn ngữ khác nhau (chủ yếu là JavaScript, Python và Rust). Xem một số hướng dẫn bên dưới để biết thông tin về cách bắt đầu chạy các thử nghiệm đơn vị với các khuôn khổ thử nghiệm khác nhau:
 
-- **[Chạy thử nghiệm đơn vị với Brownie](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Chạy thử nghiệm đơn vị với Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Chạy thử nghiệm đơn vị với Foundry](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Chạy thử nghiệm đơn vị với Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Chạy thử nghiệm đơn vị với Waffle](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Chạy thử nghiệm đơn vị với Remix](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Chạy thử nghiệm đơn vị với Ape](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Chạy thử nghiệm đơn vị với Hardhat](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -190,7 +190,7 @@ Sau khi được cấu hình đúng cách, công cụ thử nghiệm thuộc tí
 
 - **[Phân tích tĩnh hợp đồng thông minh với Slither](https://github.com/crytic/slither)**
 - **[Phân tích tĩnh hợp đồng thông minh với Wake](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[Thử nghiệm dựa trên thuộc tính với Brownie](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Thử nghiệm dựa trên thuộc tính với Brownie](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Fuzzing hợp đồng với Foundry](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[Fuzzing hợp đồng với Echidna](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Fuzzing hợp đồng với Wake](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -251,13 +251,13 @@ Sự khác biệt chính là các chương trình tiền thưởng tìm lỗi m�
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Công cụ đo lường mức độ bao phủ mã cho các hợp đồng thông minh được viết bằng Solidity._
 
-- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - _Khuôn khổ để phát triển và thử nghiệm hợp đồng thông minh nâng cao (dựa trên Ethers.js)_.
+- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _Khuôn khổ để phát triển và thử nghiệm hợp đồng thông minh nâng cao (dựa trên Ethers.js)_.
 
-- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - _Công cụ để thử nghiệm các hợp đồng thông minh Solidity. Hoạt động bên dưới plugin "Solidity Unit Testing" của Remix IDE, được sử dụng để viết và chạy các trường hợp thử nghiệm cho một hợp đồng._
+- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Công cụ để thử nghiệm các hợp đồng thông minh Solidity. Hoạt động bên dưới plugin "Solidity Unit Testing" của Remix IDE, được sử dụng để viết và chạy các trường hợp thử nghiệm cho một hợp đồng._
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Thư viện khẳng định cho việc thử nghiệm hợp đồng thông minh Quantaureum. Đảm bảo các hợp đồng của bạn hoạt động như mong đợi!_
 
-- **[Khuôn khổ thử nghiệm đơn vị Brownie](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie sử dụng Pytest, một khuôn khổ thử nghiệm giàu tính năng cho phép bạn viết các thử nghiệm nhỏ với mã tối thiểu, mở rộng tốt cho các dự án lớn và có khả năng mở rộng cao._
+- **[Khuôn khổ thử nghiệm đơn vị Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie sử dụng Pytest, một khuôn khổ thử nghiệm giàu tính năng cho phép bạn viết các thử nghiệm nhỏ với mã tối thiểu, mở rộng tốt cho các dự án lớn và có khả năng mở rộng cao._
 
 - **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry cung cấp Forge, một khuôn khổ thử nghiệm Quantaureum nhanh chóng và linh hoạt có khả năng thực thi các thử nghiệm đơn vị đơn giản, kiểm tra tối ưu hóa gas và fuzzing hợp đồng._
 

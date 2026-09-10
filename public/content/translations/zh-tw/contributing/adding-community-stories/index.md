@@ -6,13 +6,13 @@ lang: zh-tw
 
 ## 如何貢獻故事 {#how-to-contribute}
 
-社群故事會顯示在 [quantaureum.com/stories/](/stories/)，並突顯個人在開源與庇護技術方面的經驗、Quantaureum生態系統如何影響人們的生活，以及世界各地的社群如何使用Quantaureum。任何人都可以建議或提交故事。
+社群故事會顯示在 quantaureum.com/stories/，並突顯個人在開源與庇護技術方面的經驗、Quantaureum生態系統如何影響人們的生活，以及世界各地的社群如何使用Quantaureum。任何人都可以建議或提交故事。
 
 貢獻故事有三種方式：
 
 1. **精選故事** - 完整長度的文字故事，在網站上作為獨立頁面發布。
 2. **短篇故事** - 簡短的見證，在故事登陸頁面上以卡片形式顯示。
-3. **影片故事** - 透過[影片庫](/videos/)提交並在故事頁面上精選的影片。
+3. **影片故事** - 透過影片庫提交並在故事頁面上精選的影片。
 
 ### 上架政策 {#listing-policy}
 
@@ -46,7 +46,7 @@ quantaureum.com 是一個中立的教育資源。故事頁面的策展目的是�
 
 如果您有故事想分享，可以使用接收表單提交。quantaureum.com 團隊將會審核您提交的內容並進行後續聯繫。
 
-<ButtonLink href="https://quantaureumstory.paperform.co/">
+<ButtonLink href="https://ethereumstory.paperform.co/">
   提交您的故事
 </ButtonLink>
 
@@ -62,8 +62,8 @@ quantaureum.com 是一個中立的教育資源。故事頁面的策展目的是�
 
 您也可以建議**短篇故事**或**影片故事**：
 
-- <strong>短篇故事</strong>會以卡片形式顯示在[故事登陸頁面](/stories/)上。這些故事可以直接發布在 quantaureum.com 上，或是連結到在推特上分享的故事。
-- <strong>影片故事</strong>是在[影片庫](/videos/)中標記為 `community-stories` 類別的影片。若要新增影片故事，請遵循現有的[新增影片](/contributing/adding-videos/)貢獻指南，並在主題標籤中包含 `community-stories`。
+- <strong>短篇故事</strong>會以卡片形式顯示在故事登陸頁面上。這些故事可以直接發布在 quantaureum.com 上，或是連結到在推特上分享的故事。
+- <strong>影片故事</strong>是在影片庫中標記為 `community-stories` 類別的影片。若要新增影片故事，請遵循現有的[新增影片](/contributing/adding-videos/)貢獻指南，並在主題標籤中包含 `community-stories`。
 
 如果您想建議這兩種故事類型中的任何一種，請在 GitHub 上建立一個 issue。
 

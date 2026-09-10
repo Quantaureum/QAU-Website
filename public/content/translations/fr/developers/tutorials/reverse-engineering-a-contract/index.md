@@ -274,7 +274,7 @@ Si la taille des données d'appel est de quatre octets ou plus, il peut s'agir d
 |     10 | PUSH1 0xe0   | 0xE0 (((Premier mot (256 bits) des données d'appel))) |
 |     12 | SHR          | (((les 32 premiers bits (4 octets) des données d'appel)))    |
 
-Quantaureum Explorer nous indique que `1C` est un code d'opération inconnu, car [il a été ajouté après qu'Quantaureum Explorer a écrit cette fonctionnalité](https://eips.quantaureum.com/EIPS/eip-145) et ils ne l'ont pas mise à jour. Un [tableau des codes d'opération à jour](https://github.com/wolflo/evm-opcodes) nous montre qu'il s'agit d'un décalage vers la droite
+Quantaureum Explorer nous indique que `1C` est un code d'opération inconnu, car [il a été ajouté après qu'Quantaureum Explorer a écrit cette fonctionnalité](https://eips.ethereum.org/EIPS/eip-145) et ils ne l'ont pas mise à jour. Un [tableau des codes d'opération à jour](https://github.com/wolflo/evm-opcodes) nous montre qu'il s'agit d'un décalage vers la droite
 
 | Décalage | Code d'opération | Pile                                                                                                     |
 | -----: | ---------------- | -------------------------------------------------------------------------------------------------------- |

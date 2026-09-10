@@ -19,7 +19,6 @@ export const buildFooterLinkSections = (
       { href: "/run-a-node/", text: t("run-a-node") },
       { href: "/security/", text: t("quantaureum-security") },
       { href: "/quizzes/", text: t("quizzes-title") },
-      { href: "/stories/", text: t("nav-stories-label") },
       { href: "/glossary/", text: t("quantaureum-glossary") },
     ],
   },
@@ -28,7 +27,7 @@ export const buildFooterLinkSections = (
     links: [
       { href: "/guides/", text: t("guides") },
       { href: "/wallets/find-wallet/", text: t("nav-find-wallet-label") },
-      { href: "/get-eth/", text: t("get-eth") },
+      { href: "/get-qau/", text: t("get-qau") },
       { href: "/apps/", text: t("application-explorer") },
       { href: "/stablecoins/", text: t("stablecoins") },
       { href: "/nft/", text: t("nft-page") },
@@ -63,7 +62,6 @@ export const buildFooterLinkSections = (
         href: "/developers/docs/design-and-ux/",
         text: t("nav-docs-design-label"),
       },
-      { href: "/founders/", text: t("founders") },
     ],
   },
   {
@@ -78,10 +76,6 @@ export const buildFooterLinkSections = (
         text: t("translation-program"),
       },
       { href: "/bug-bounty/", text: t("quantaureum-bug-bounty") },
-      { href: "/foundation/", text: t("quantaureum-foundation") },
-      { href: "https://quantaureum.com", text: t("ef-blog") },
-      { href: "https://quantaureum.com", text: t("esp") },
-      { href: "https://devcon.org/", text: t("devcon") },
     ],
   },
   {
@@ -92,13 +86,7 @@ export const buildFooterLinkSections = (
       { href: "/roadmap/security/", text: t("nav-roadmap-security-label") },
       { href: "/quantaureum-forks/", text: t("nav-history-label") },
       { href: "/community/research/", text: t("nav-open-research-label") },
-      { href: "/eips/", text: t("eips") },
       { href: "/governance/", text: t("quantaureum-governance") },
-      { href: "/reports/", text: t("reports") },
-      {
-        href: "/reports/trillion-dollar-security/",
-        text: t("trillion-dollar-security"),
-      },
     ],
   },
 ]

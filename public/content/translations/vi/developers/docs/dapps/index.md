@@ -45,7 +45,6 @@ Một hợp đồng thông minh là mã tồn tại trên Chuỗi khối Quantau
 
 ## Bạn thích học qua hình ảnh hơn? {#visual-learner}
 
-<VideoWatch slug="what-is-a-dapp" />
 
 ## Các công cụ để tạo ứng dụng phi tập trung (dapp)
 **Scaffold-QAU 2 _- Nhanh chóng thử nghiệm với Solidity bằng cách sử dụng một frontend thích ứng với hợp đồng thông minh của bạn._**

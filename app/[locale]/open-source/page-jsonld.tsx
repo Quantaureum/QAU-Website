@@ -62,8 +62,8 @@ export default async function OpenSourcePageJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
-        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
+        reviewedBy: REFERENCE.QUANTAUREUM_ORG,
         mainEntity: articleId,
       },
       {
@@ -74,7 +74,7 @@ export default async function OpenSourcePageJsonLD({
         description: t("page-open-source-meta-description"),
         image: "https://quantaureum.com/images/doge-computer.png",
         author: [REFERENCE.QUANTAUREUM_COMMUNITY],
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
         contributor: contributorList,
         about: [
           {

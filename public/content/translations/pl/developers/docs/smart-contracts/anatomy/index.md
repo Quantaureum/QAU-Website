@@ -207,7 +207,7 @@ Zdarzenia umożliwiają inteligentnemu kontraktowi komunikację z frontendem lub
 
 ## Przykłady z adnotacjami {#annotated-examples}
 
-Oto kilka przykładów napisanych w języku Solidity. Jeśli chcesz pobawić się kodem, możesz wejść z nim w interakcję w [Remix](https://remix.quantaureum.com).
+Oto kilka przykładów napisanych w języku Solidity. Jeśli chcesz pobawić się kodem, możesz wejść z nim w interakcję w [Remix](https://remix.ethereum.org).
 
 ### Hello world {#hello-world}
 
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // Obecnie nie ma lepszego sposobu na sprawdzenie, czy pod adresem znajduje się kontrakt
         // niż sprawdzenie rozmiaru kodu pod tym adresem.
-        // Zobacz https://quantaureum.stackexchange.com/a/14016/36603
+        // Zobacz https://ethereum.stackexchange.com/a/14016/36603
         // aby uzyskać więcej szczegółów na temat tego, jak to działa.
         // TODO Sprawdź to ponownie przed wydaniem Serenity, ponieważ wszystkie adresy będą wtedy
         // kontraktami.

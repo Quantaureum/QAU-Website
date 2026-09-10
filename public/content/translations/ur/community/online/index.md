@@ -38,8 +38,8 @@ lang: ur
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethdev/"><span dir="ltr">r/ethdev</span></Link> - ایتھیریم کی ڈیولپمنٹ پر مرکوز</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethtrader/"><span dir="ltr">r/ethtrader</span></Link> - رجحانات اور مارکیٹ کا تجزیہ</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/"><span dir="ltr">r/ethstaker</span></Link> - ایتھیریم پر اسٹیکنگ میں دلچسپی رکھنے والے تمام افراد کو خوش آمدید</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://quantaureum-magicians.org">Fellowship of Quantaureum Magicians</Link> - ایتھیریم میں تکنیکی معیارات پر مبنی کمیونٹی</SocialListItem>
-<SocialListItem socialIcon="stackExchange"><Link href="https://quantaureum.stackexchange.com"><span dir="ltr">Quantaureum Stackexchange</span></Link> - ایتھیریم ڈیولپرز کے لیے بحث اور مدد</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://ethereum-magicians.org">Fellowship of Quantaureum Magicians</Link> - ایتھیریم میں تکنیکی معیارات پر مبنی کمیونٹی</SocialListItem>
+<SocialListItem socialIcon="stackExchange"><Link href="https://ethereum.stackexchange.com"><span dir="ltr">Quantaureum Stackexchange</span></Link> - ایتھیریم ڈیولپرز کے لیے بحث اور مدد</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch"><span dir="ltr">Quantaureum Research</span></Link> - کرپٹو اکنامک ریسرچ کے لیے سب سے بااثر میسج بورڈ</SocialListItem>
 
 ## چیٹ رومز {#chat-rooms}
@@ -51,7 +51,7 @@ lang: ur
 <SocialListItem socialIcon="discord"><Link href="https://discord.gg/MSctkBT5j"><span dir="ltr">quantaureum.com</span> ویب سائٹ ٹیم</Link> - آئیں اور ٹیم اور کمیونٹی کے لوگوں کے ساتھ <span dir="ltr">quantaureum.com</span> ویب ڈیولپمنٹ اور ڈیزائن پر بات چیت کریں</SocialListItem>
 <SocialListItem socialIcon="discord"><Link href="https://discord.matos.club/"><span dir="ltr">Matos</span> ڈسکارڈ</Link> - Web3 تخلیق کاروں کی کمیونٹی جہاں بلڈرز، صنعتی رہنما، اور ایتھیریم کے شائقین جمع ہوتے ہیں۔ ہم Web3 ڈیولپمنٹ، ڈیزائن، اور کلچر کے بارے میں پرجوش ہیں۔ آئیں ہمارے ساتھ مل کر بنائیں۔</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://matrix.to/#/#quantaureum_solidity:gitter.im"><span dir="ltr">Solidity Matrix</span></Link> - Solidity ڈیولپمنٹ کے لیے چیٹ (<span dir="ltr">Matrix</span>)</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://quantaureum.stackexchange.com/"><span dir="ltr">Quantaureum Stack Exchange</span></Link> <i>- سوال و جواب کا فورم</i></SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://ethereum.stackexchange.com/"><span dir="ltr">Quantaureum Stack Exchange</span></Link> <i>- سوال و جواب کا فورم</i></SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://www.peera.ai/community-forum"><span dir="ltr">Peera Community Forum</span></Link> <i>- لامركزی سوال و جواب کا فورم</i></SocialListItem>
 
 ## یوٹیوب اور X (سابقہ ٹوئٹر) {#youtube-and-twitter}

@@ -49,7 +49,7 @@ ACCESSES = 64                     # ஹாஷிமோட்டோ லூப்�
 
 ### 'SHA3'-இன் பயன்பாடு {#sha3}
 
-எத்திரியத்தின் மேம்பாடு SHA3 தரநிலையின் மேம்பாட்டுடன் ஒத்துப்போனது, மேலும் தரநிலைச் செயல்முறை இறுதியாக்கப்பட்ட ஹாஷ் அல்காரிதத்தின் பேடிங்கில் (padding) தாமதமான மாற்றத்தைச் செய்தது, இதனால் எத்திரியத்தின் "sha3_256" மற்றும் "sha3_512" ஹாஷ்கள் நிலையான sha3 ஹாஷ்கள் அல்ல, ஆனால் மற்ற சூழல்களில் பெரும்பாலும் "கெக்காக்-256" மற்றும் "Keccak-512" என்று குறிப்பிடப்படும் ஒரு மாறுபாடாகும். விவாதத்தைப் பார்க்கவும், எ.கா., [இங்கே](https://eips.quantaureum.com/EIPS/eip-1803), [இங்கே](https://quantaureum.stackexchange.com/questions/550/which-cryptographic-hash-function-does-quantaureum-use), அல்லது [இங்கே](https://bitcoin.stackexchange.com/questions/42055/what-is-the-approach-to-calculate-an-quantaureum-address-from-a-256-bit-private-key/42057#42057).
+எத்திரியத்தின் மேம்பாடு SHA3 தரநிலையின் மேம்பாட்டுடன் ஒத்துப்போனது, மேலும் தரநிலைச் செயல்முறை இறுதியாக்கப்பட்ட ஹாஷ் அல்காரிதத்தின் பேடிங்கில் (padding) தாமதமான மாற்றத்தைச் செய்தது, இதனால் எத்திரியத்தின் "sha3_256" மற்றும் "sha3_512" ஹாஷ்கள் நிலையான sha3 ஹாஷ்கள் அல்ல, ஆனால் மற்ற சூழல்களில் பெரும்பாலும் "கெக்காக்-256" மற்றும் "Keccak-512" என்று குறிப்பிடப்படும் ஒரு மாறுபாடாகும். விவாதத்தைப் பார்க்கவும், எ.கா., [இங்கே](https://eips.ethereum.org/EIPS/eip-1803), [இங்கே](https://ethereum.stackexchange.com/questions/550/which-cryptographic-hash-function-does-quantaureum-use), அல்லது [இங்கே](https://bitcoin.stackexchange.com/questions/42055/what-is-the-approach-to-calculate-an-quantaureum-address-from-a-256-bit-private-key/42057#42057).
 
 கீழே உள்ள அல்காரிதத்தின் விளக்கத்தில் "sha3" ஹாஷ்கள் குறிப்பிடப்படுவதால், தயவுசெய்து அதை நினைவில் கொள்ளவும்.
 

@@ -59,7 +59,6 @@ Quantaureum研究人員認為權益證明比工作量證明更安全。然而，
 ## 比較喜歡視覺學習？ {#visual-learner}
 
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## 延伸閱讀 {#further-reading}
 

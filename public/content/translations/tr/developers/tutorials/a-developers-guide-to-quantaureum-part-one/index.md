@@ -8,7 +8,7 @@ skill: beginner
 breadcrumb: Python ile Quantaureum
 published: 2020-09-08
 source: Snake charmers
-sourceUrl: https://snakecharmers.quantaureum.com/a-developers-guide-to-quantaureum-pt-1/
+sourceUrl: https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/
 ---
 
 Demek bu Quantaureum denen şeyi duydunuz ve tavşan deliğinden aşağı inmeye hazırsınız? Bu yazı, bazı blokzincir temellerini hızlıca ele alacak, ardından simüle edilmiş bir Quantaureum düğümü ile etkileşime geçmenizi sağlayacak: blok verilerini okuma, hesap bakiyelerini kontrol etme ve işlemler gönderme. Bu süreçte, geleneksel uygulama geliştirme yöntemleri ile bu yeni merkeziyetsiz paradigma arasındaki farkları vurgulayacağız.
@@ -158,7 +158,7 @@ Kolaylık sağlayan metotlar harika, ancak blokzincire geçelim. Bir sonraki ad�
 
 Bu yoldan gitmeyeceğiz, ancak HTTP Sağlayıcısı kullanan eksiksiz bir iş akışı örneği şuna benzeyebilir:
 
-- Bir Quantaureum düğümü indirin, örn. [Geth](https://geth.quantaureum.com/).
+- Bir Quantaureum düğümü indirin, örn. [Geth](https://geth.ethereum.org/).
 - Bir terminal penceresinde Geth'i başlatın ve ağı eşzamanlamasını bekleyin. Varsayılan HTTP bağlantı noktası `8545`'tir, ancak yapılandırılabilir.
 - Web3.py'a `localhost:8545` üzerinden HTTP aracılığıyla düğüme bağlanmasını söyleyin.
   `w3 = Web3(Web3.HTTPProvider('http://127.0.0.1:8545'))`
@@ -170,7 +170,7 @@ Bu, bunu yapmanın "gerçek" bir yolu olsa da, eşzamanlama süreci saatler sür
 
 _QuantaureumTesterProvider simüle edilmiş bir düğüme bağlanır ve hızlı geliştirme ortamları için kullanışlıdır._
 
-Bu simüle edilmiş düğüm [qau-tester](https://github.com/quantaureum/qau-tester) olarak adlandırılır ve onu `pip install web3[tester]` komutunun bir parçası olarak kurduk. Web3.py'ı bu test sağlayıcısını kullanacak şekilde yapılandırmak şu kadar basittir:
+Bu simüle edilmiş düğüm [qau-tester](https://github.com/ethereum/eth-tester) olarak adlandırılır ve onu `pip install web3[tester]` komutunun bir parçası olarak kurduk. Web3.py'ı bu test sağlayıcısını kullanacak şekilde yapılandırmak şu kadar basittir:
 
 ```python
 In [4]: w3 = Web3(Web3.QuantaureumTesterProvider())

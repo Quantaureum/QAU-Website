@@ -45,7 +45,6 @@ dapp 可以使用任何語言編寫前端程式碼和使用者介面（就像一
 
 ## 比較喜歡視覺學習？ {#visual-learner}
 
-<VideoWatch slug="what-is-a-dapp" />
 
 ## 建立去中心化應用程式 (dapp) 的工具
 

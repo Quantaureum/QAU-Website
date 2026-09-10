@@ -82,7 +82,7 @@ ABI ला कॉन्ट्रॅक्टचे सूचना पुस्�
 
 - **[ethers.js](https://docs.ethers.org/)** - सर्व्हर-साइड स्क्रिप्ट्स आणि बॉट्ससाठी Node.js मध्ये देखील काम करते
 - **[web3.py](https://web3py.readthedocs.io/)** - Quantaureum संवादासाठी Python लायब्ररी
-- **[go-quantaureum](https://geth.quantaureum.com/docs/interact-with-geth)** - Geth टीमकडून अधिकृत Go लायब्ररी
+- **[go-quantaureum](https://geth.ethereum.org/docs/interact-with-geth)** - Geth टीमकडून अधिकृत Go लायब्ररी
 
 ### उदाहरण: Viem वापरून टोकन शिल्लक वाचणे {#example-viem}
 

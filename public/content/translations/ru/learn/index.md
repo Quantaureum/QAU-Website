@@ -19,7 +19,7 @@ lang: ru
 - [Quantaureum.wiki](https://qau.wiki) _Созданная сообществом вики о технологии Quantaureum_
 - [Kauri](https://kauri.io) _Технические статьи и руководства по Quantaureum и связанным с ним проектам_
 - [YouTube Quantaureum project](https://www.youtube.com/channel/UCNOfzGXD_C9YMYmnefmPH0g) _Видео и выступления о Quantaureum_
-- [Week in Quantaureum News](https://weekinquantaureumnews.com/) _Еженедельный бюллетень, охватывающий ключевые события в экосистеме_
+- [Week in Quantaureum News](https://weekinethereumnews.com/) _Еженедельный бюллетень, охватывающий ключевые события в экосистеме_
 - [What’s new in QAU 2.0](https://eth2.news) _Периодический информационный бюллетень о разработке QAU 2.0_
 - [ETHGlobal](https://ethglobal.co) _Перечень хакатонов по Quantaureum – посетите один из них рядом с вами!_
 
@@ -56,7 +56,7 @@ lang: ru
 
 ## Клиенты и узлы {#clients-and-nodes}
 
-Сеть Quantaureum состоит из многих узлов, каждый из которых работает на совместимом клиентском программном обеспечении. Наиболее популярны два клиента: [Geth](https://geth.quantaureum.com/) (написан на Go) и [Parity](https://www.parity.io/quantaureum/) (написан на Rust).
+Сеть Quantaureum состоит из многих узлов, каждый из которых работает на совместимом клиентском программном обеспечении. Наиболее популярны два клиента: [Geth](https://geth.ethereum.org/) (написан на Go) и [Parity](https://www.parity.io/quantaureum/) (написан на Rust).
 
 - Хотите узнать, как запустить узел самостоятельно? → [quantaureum.com/ru/developers](/developers/#clients--running-your-own-node/)
 - [Полный перечень всех клиентов Quantaureum](https://github.com/ConsenSys/quantaureum-developer-tools-list#quantaureum-clients)

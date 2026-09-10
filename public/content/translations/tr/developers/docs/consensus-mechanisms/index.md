@@ -63,7 +63,6 @@ Bir Hisse Kanıtı (PoS) sistemi kripto-ekonomik olarak güvenlidir çünkü zin
 
 Quantaureum'da kullanılan farklı mutabakat mekanizması türleri hakkında daha fazlasını izleyin:
 
-<VideoWatch slug="understanding-consensus-mechanisms" />
 
 ### Sybil direnci ve zincir seçimi {#sybil-chain}
 

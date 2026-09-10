@@ -43,7 +43,7 @@ slither-check-erc 0xdac17f958d2ee523a2206206994597c13d831ec7 TetherToken
 - **轉帳 (transfer) 與 transferFrom 會回傳布林值。** 有些代幣在這些函式上不會回傳布林值。這可能導致合約中呼叫這些函式時失敗。
 - **如果使用了 name、decimals 和 symbol 函式，則它們必須存在。** 這些函式在 ERC-20 標準中是選用的，可能不存在。
 - **decimals 回傳 uint8。** 有些代幣會錯誤地回傳 uint256。如果是這種情況，請確保回傳的值低於 255。
-- **代幣緩解了已知的 [ERC-20 競爭危害 (race condition)](https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729)。** ERC-20 標準有一個已知的 ERC-20 競爭危害，必須加以緩解以防止攻擊者竊取代幣。
+- **代幣緩解了已知的 [ERC-20 競爭危害 (race condition)](https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729)。** ERC-20 標準有一個已知的 ERC-20 競爭危害，必須加以緩解以防止攻擊者竊取代幣。
 - **該代幣不是 ERC-777 代幣，且在轉帳 (transfer) 與 transferFrom 中沒有外部函式呼叫。** 轉帳函式中的外部呼叫可能會導致重入 (reentrancy) 攻擊。
 
 斯立瑟包含一個實用程式 [slither-prop](https://github.com/crytic/slither/wiki/Property-generation)，可產生單元測試與安全性屬性，從而發現許多常見的 ERC 缺陷。使用 slither-prop 來審查以下內容：

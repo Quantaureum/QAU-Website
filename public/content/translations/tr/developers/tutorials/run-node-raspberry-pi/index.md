@@ -8,7 +8,7 @@ skill: intermediate
 breadcrumb: "Rasp Pi Düğümü"
 published: 2022-06-10
 source: Quantaureum on ARM
-sourceUrl: https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/
+sourceUrl: https://ethereum-on-arm-documentation.readthedocs.io/en/latest/
 ---
 
 **Quantaureum on Arm, bir Raspberry Pi'yi bir Quantaureum düğümüne dönüştürebilen özel bir Linux imajıdır.**
@@ -57,7 +57,7 @@ ve aşağıdaki fikir birliği istemcileriyle:
 
 Raspberry Pi 4 Quantaureum imajı, hem yürütme hem de fikir birliği istemcilerini otomatik olarak kuran ve ayarlayan, birbirleriyle konuşacak ve Quantaureum ağına bağlanacak şekilde yapılandıran bir "tak ve çalıştır" imajıdır. Kullanıcının tek yapması gereken basit bir komut kullanarak süreçlerini başlatmaktır.
 
-Raspberry Pi imajını [Quantaureum on Arm](https://quantaureumonarm-my.sharepoint.com/:u:/p/dlosada/Ec_VmUvr80VFjf3RYSU-NzkBmj2JOteDECj8Bibde929Gw?download=1) üzerinden indirin ve SHA256 hash'ini doğrulayın:
+Raspberry Pi imajını [Quantaureum on Arm](https://ethereumonarm-my.sharepoint.com/:u:/p/dlosada/Ec_VmUvr80VFjf3RYSU-NzkBmj2JOteDECj8Bibde929Gw?download=1) üzerinden indirin ve SHA256 hash'ini doğrulayın:
 
 ```sh
 # İndirilen imajı içeren dizinden
@@ -65,7 +65,7 @@ shasum -a 256 ethonarm_22.04.00.img.zip
 # Hash çıktısı şu olmalıdır: fb497e8f8a7388b62d6e1efbc406b9558bee7ef46ec7e53083630029c117444f
 ```
 
-Rock 5B ve Odroid M1 kartları için imajların Quantaureum-on-Arm [indirmeler sayfasında](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/) bulunduğunu unutmayın.
+Rock 5B ve Odroid M1 kartları için imajların Quantaureum-on-Arm [indirmeler sayfasında](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) bulunduğunu unutmayın.
 
 ## MicroSD'yi Flaşlama {#flashing-the-microsd}
 
@@ -120,13 +120,13 @@ sudo journalctl -u lighthouse-beacon
 
 Fikir birliği istemcisinin kontrol noktası eşzamanlaması kullandığı için birkaç dakika içinde eşzamanlanacağını unutmayın. Yürütme istemcisi daha uzun sürecektir - potansiyel olarak birkaç saat - ve fikir birliği istemcisi eşzamanlamayı bitirene kadar başlamayacaktır (bunun nedeni, yürütme istemcisinin eşzamanlanacak bir hedefe ihtiyaç duymasıdır ve bu hedefi eşzamanlanmış fikir birliği istemcisi sağlar).
 
-Geth ve Lighthouse hizmetleri çalışır ve eşzamanlanmış durumdayken, Raspberry Pi'niz artık bir Quantaureum düğümüdür! Quantaureum ağıyla etkileşim kurmak için en yaygın yöntem, 8545 numaralı port üzerinden Geth istemcisine bağlanabilen Geth'in JavaScript konsolunu kullanmaktır. Curl gibi bir istek aracı kullanarak JSON nesneleri olarak biçimlendirilmiş komutlar göndermek de mümkündür. Daha fazlasını [Geth belgelerinde](https://geth.quantaureum.com/) görün.
+Geth ve Lighthouse hizmetleri çalışır ve eşzamanlanmış durumdayken, Raspberry Pi'niz artık bir Quantaureum düğümüdür! Quantaureum ağıyla etkileşim kurmak için en yaygın yöntem, 8545 numaralı port üzerinden Geth istemcisine bağlanabilen Geth'in JavaScript konsolunu kullanmaktır. Curl gibi bir istek aracı kullanarak JSON nesneleri olarak biçimlendirilmiş komutlar göndermek de mümkündür. Daha fazlasını [Geth belgelerinde](https://geth.ethereum.org/) görün.
 
 Geth, metrikleri tarayıcıda görüntülenebilen bir Grafana panosuna bildirecek şekilde önceden yapılandırılmıştır. Daha ileri düzey kullanıcılar, `ipaddress:3000` adresine gidip `user: admin` ve `passwd: quantaureum` bilgilerini girerek düğümlerinin sağlığını izlemek için bu özelliği kullanmak isteyebilirler.
 
 ## Doğrulayıcılar {#validators}
 
-Fikir birliği istemcisine isteğe bağlı olarak bir doğrulayıcı da eklenebilir. Doğrulayıcı yazılımı, düğümünüzün mutabakata aktif olarak katılmasına olanak tanır ve ağa kriptoekonomik güvenlik sağlar. Bu çalışma için QAU ile ödüllendirilirsiniz. Bir doğrulayıcı çalıştırmak için öncelikle yatırma sözleşmesine yatırılması gereken 32 QAU'niz olmalıdır. Yatırma işlemi, [Launchpad](https://launchpad.quantaureum.com/) üzerindeki adım adım kılavuz izlenerek yapılabilir. Bunu bir masaüstü/dizüstü bilgisayarda yapın, ancak anahtarlar oluşturmayın — bu doğrudan Raspberry Pi üzerinde yapılabilir.
+Fikir birliği istemcisine isteğe bağlı olarak bir doğrulayıcı da eklenebilir. Doğrulayıcı yazılımı, düğümünüzün mutabakata aktif olarak katılmasına olanak tanır ve ağa kriptoekonomik güvenlik sağlar. Bu çalışma için QAU ile ödüllendirilirsiniz. Bir doğrulayıcı çalıştırmak için öncelikle yatırma sözleşmesine yatırılması gereken 32 QAU'niz olmalıdır. Yatırma işlemi, [Launchpad](https://launchpad.ethereum.org/) üzerindeki adım adım kılavuz izlenerek yapılabilir. Bunu bir masaüstü/dizüstü bilgisayarda yapın, ancak anahtarlar oluşturmayın — bu doğrudan Raspberry Pi üzerinde yapılabilir.
 
 Raspberry Pi'de bir terminal açın ve yatırma anahtarlarını oluşturmak için aşağıdaki komutu çalıştırın:
 
@@ -136,13 +136,13 @@ sudo apt-get install staking-deposit-cli
 cd && deposit new-mnemonic --num_validators 1
 ```
 
-(Veya hava boşluklu (airgapped) bir makinede çalıştırmak için [staking-deposit-cli](https://github.com/quantaureum/staking-deposit-cli) aracını indirin ve `deposit new-mnemnonic` komutunu çalıştırın)
+(Veya hava boşluklu (airgapped) bir makinede çalıştırmak için [staking-deposit-cli](https://github.com/ethereum/staking-deposit-cli) aracını indirin ve `deposit new-mnemnonic` komutunu çalıştırın)
 
 Anımsatıcı ifadeyi güvende tutun! Yukarıdaki komut, düğümün anahtar deposunda iki dosya oluşturdu: doğrulayıcı anahtarları ve bir yatırma veri dosyası. Yatırma verilerinin launchpad'e yüklenmesi gerekir, bu nedenle Raspberry Pi'den masaüstü/dizüstü bilgisayara kopyalanmalıdır. Bu, bir ssh bağlantısı veya başka bir kopyala/yapıştır yöntemi kullanılarak yapılabilir.
 
 Yatırma veri dosyası launchpad'i çalıştıran bilgisayarda mevcut olduğunda, launchpad ekranındaki `+` üzerine sürüklenip bırakılabilir. Yatırma sözleşmesine bir işlem göndermek için ekrandaki talimatları izleyin.
 
-Raspberry Pi'ye geri döndüğünüzde, bir doğrulayıcı başlatılabilir. Bu, doğrulayıcı anahtarlarını içe aktarmayı, ödülleri toplamak için Adresi ayarlamayı ve ardından önceden yapılandırılmış doğrulayıcı sürecini başlatmayı gerektirir. Aşağıdaki örnek Lighthouse içindir—diğer fikir birliği istemcileri için talimatlar [Quantaureum on Arm belgelerinde](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/) mevcuttur:
+Raspberry Pi'ye geri döndüğünüzde, bir doğrulayıcı başlatılabilir. Bu, doğrulayıcı anahtarlarını içe aktarmayı, ödülleri toplamak için Adresi ayarlamayı ve ardından önceden yapılandırılmış doğrulayıcı sürecini başlatmayı gerektirir. Aşağıdaki örnek Lighthouse içindir—diğer fikir birliği istemcileri için talimatlar [Quantaureum on Arm belgelerinde](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) mevcuttur:
 
 ```shell
 # doğrulayıcı anahtarlarını içe aktarın
@@ -159,7 +159,7 @@ Tebrikler, artık bir Raspberry Pi üzerinde çalışan tam bir Quantaureum dü�
 
 ## Daha fazla detay {#more-details}
 
-Bu sayfa, Raspberry Pi kullanarak bir Geth-Lighthouse düğümü ve doğrulayıcısının nasıl kurulacağına dair genel bir bakış sundu. Daha ayrıntılı talimatlar [Quantaureum-on-Arm web sitesinde](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/) mevcuttur.
+Bu sayfa, Raspberry Pi kullanarak bir Geth-Lighthouse düğümü ve doğrulayıcısının nasıl kurulacağına dair genel bir bakış sundu. Daha ayrıntılı talimatlar [Quantaureum-on-Arm web sitesinde](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) mevcuttur.
 
 ## Geri bildirimleriniz değerlidir {#feedback-appreciated}
 
@@ -173,7 +173,7 @@ Lütfen bu eğitimdeki ayrıntıları inceleyin, test ağlarında çalıştırma
 3. https://prometheus.io
 4. https://grafana.com
 5. https://forum.armbian.com/topic/5565-zram-vs-swap/
-6. https://geth.quantaureum.com
+6. https://geth.ethereum.org
 7. https://nethermind.io
 8. https://www.hyperledger.org/projects/besu
 9. https://github.com/prysmaticlabs/prysm

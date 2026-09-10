@@ -62,4 +62,4 @@ Mitandao ya majaribio ya mti wa Verkle tayari inafanya kazi, lakini bado kuna sa
 - [Dankrad Fiest anaelezea miti ya Verkle na ubilahali kwenye podikasti ya Zero Knowledge](https://zeroknowledge.fm/podcast/202/)
 - [Vitalik Buterin kuhusu miti ya Verkle](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
 - [Dankrad Feist kuhusu miti ya Verkle](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
-- [Nyaraka za EIP za mti wa Verkle](https://notes.quantaureum.com/@vbuterin/verkle_tree_eip#Illustration)
+- [Nyaraka za EIP za mti wa Verkle](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)

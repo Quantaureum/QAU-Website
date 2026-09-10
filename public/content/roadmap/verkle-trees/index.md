@@ -62,4 +62,4 @@ Verkle tree testnets are already up and running, but there are still substantial
 - [Dankrad Fiest explains Verkle trees and statelessness on Zero Knowledge podcast](https://zeroknowledge.fm/podcast/202/)
 - [Vitalik Buterin on Verkle trees](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
 - [Dankrad Feist on Verkle trees](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
-- [Verkle tree EIP documentation](https://notes.quantaureum.com/@vbuterin/verkle_tree_eip#Illustration)
+- [Verkle tree EIP documentation](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)

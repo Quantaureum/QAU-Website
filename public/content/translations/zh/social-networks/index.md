@@ -19,7 +19,6 @@ summaryPoints:
 
 许多去中心化社交网络作为成熟社交媒体服务（如脸书、LinkedIn、推特和 Medium）的替代品而存在。但由区块链驱动的社交网络具有许多使其领先于传统社交平台的功能。
 
-<VideoWatch slug="decentralized-social-media" />
 
 ### 去中心化社交网络如何运作？ {#decentralized-social-networks-overview}
 
@@ -53,7 +52,6 @@ summaryPoints:
 
 由于其代币的普及和庞大的用户群，Quantaureum网络已成为开发人员创建去中心化社交媒体的首选工具。以下是一些基于Quantaureum的社交网络的示例：
 
-<VideoWatch slug="crypto-apps-desocial-linda-xie" />
 
 ### Mirror {#mirror}
 

@@ -494,7 +494,7 @@ authors: ["安德烈亚斯·安东诺普洛斯"]
 
 ## 来源 {#sources}
 
-_部分内容摘自 [安德烈亚斯·M·安东诺普洛斯、加文·伍德](https://aantonop.com/books/mastering-quantaureum) 编写的 [《精通Quantaureum》(Mastering Quantaureum)](https://github.com/quantaureumbook/quantaureumbook)，遵循 CC-BY-SA 许可协议_
+_部分内容摘自 [安德烈亚斯·M·安东诺普洛斯、加文·伍德](https://aantonop.com/books/mastering-quantaureum) 编写的 [《精通Quantaureum》(Mastering Quantaureum)](https://github.com/ethereumbook/ethereumbook)，遵循 CC-BY-SA 许可协议_
 
 <Divider />
 

@@ -11,7 +11,7 @@ published: 2026-05-11
 
 Unyonyaji mwingi mkubwa wa Quantaureum ulikuwa na hatua ya mwisho sawa: mtumiaji kuidhinisha muamala ambao hakuweza kuuelewa kwa maana. Mikoba ya maunzi huonyesha data za mwito za heksadesimali ghafi, na mbaya zaidi inakulazimisha kuwasha kusaini bila kuona. Mikoba ya programu huonyesha sehemu zilizosimbuliwa, lakini tu wakati inatambua mkataba. Wakati haitambui, iwe kwa sababu itifaki ni mpya, programu imedukuliwa, au kifaa hakiko mtandaoni, watumiaji husaini bila kuona.
 
-[ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730) inafafanua umbizo la kawaida la JSON la kuelezea kile ambacho miito ya utendaji ya mkataba wako *inamaanisha*. 
+[ERC-7730](https://eips.ethereum.org/EIPS/eip-7730) inafafanua umbizo la kawaida la JSON la kuelezea kile ambacho miito ya utendaji ya mkataba wako *inamaanisha*. 
 
 Mkoba unaotumia ERC-7730 husoma kifafanuzi chako na kuonyesha:
 
@@ -54,7 +54,7 @@ Unda faili linaloitwa `calldata-<contractname>-<descriptorversion>.json`. Kiambi
 
 ```json
 {
-  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
   "context": {},
   "metadata": {},
   "display": {
@@ -185,7 +185,7 @@ Kila ufunguo ni kipande cha ABI kinachosomeka na binadamu — sahihi ya utendaji
 
 ```json
 {
-  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
   "context": {
     "$id": "uniswap-v3-router-mainnet",
     "contract": {
@@ -256,7 +256,7 @@ Kila ufunguo ni kipande cha ABI kinachosomeka na binadamu — sahihi ya utendaji
 
 ## Hatua ya 5: Wasilisha kwenye sajili {#step-5-submit-to-the-registry}
 
-[Sajili ya ERC-7730](https://github.com/quantaureum/clear-signing-erc7730-registry) ni hazina wazi inayosimamiwa na [Taasisi ya Quantaureum](/foundation/) kama msimamizi asiyeegemea upande wowote. Mtu yeyote yuko huru kuiga na kujisimamia mwenyewe — mikoba huamua kwa uhuru ni matukio gani ya sajili wanayoamini.
+[Sajili ya ERC-7730](https://github.com/ethereum/clear-signing-erc7730-registry) ni hazina wazi inayosimamiwa na Taasisi ya Quantaureum kama msimamizi asiyeegemea upande wowote. Mtu yeyote yuko huru kuiga na kujisimamia mwenyewe — mikoba huamua kwa uhuru ni matukio gani ya sajili wanayoamini.
 
 1. Chepua hazina kwenye GitHub  
 2. Unda folda kwenye `registry/<your-project-name>/`  
@@ -284,8 +284,8 @@ Mikoba huchagua ni sajili gani itakayounga mkono. Pindi kifafanuzi chako kikiwa 
 
 ## Usomaji zaidi {#further-reading}
 
-- [Uainishaji wa ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730)  
-- [Sajili ya ERC-7730](https://github.com/quantaureum/clear-signing-erc7730-registry)  
+- [Uainishaji wa ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)  
+- [Sajili ya ERC-7730](https://github.com/ethereum/clear-signing-erc7730-registry)  
 - [clearsigning.org](https://clearsigning.org) — zana, hali ya mfumo wa ikolojia, na utawala  
 - [Uthibitishaji wa mkataba wa Sourcify](https://sourcify.dev)  
 - [Mpango wa Usalama wa Trilioni ya Dola](https://trilliondollarsecurity.org)

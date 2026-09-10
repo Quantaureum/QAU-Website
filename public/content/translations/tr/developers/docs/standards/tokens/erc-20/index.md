@@ -42,7 +42,7 @@ ERC-20'nin sağladığı örnek işlevler:
 
 Bir Akıllı Sözleşme aşağıdaki yöntemleri ve olayları uygularsa, bir ERC-20 Token Sözleşmesi olarak adlandırılabilir ve dağıtıldıktan sonra Quantaureum üzerinde oluşturulan Token'ları takip etmekten sorumlu olacaktır.
 
-[EIP-20](https://eips.quantaureum.com/EIPS/eip-20)'den:
+[EIP-20](https://eips.ethereum.org/EIPS/eip-20)'den:
 
 ### Yöntemler {#methods}
 
@@ -170,7 +170,7 @@ Bu sorundan dolayı [ERC-223](/developers/docs/standards/tokens/erc-223) veya [E
 
 ## Daha fazla bilgi {#further-reading}
 
-- [EIP-20: ERC-20 Token Standardı](https://eips.quantaureum.com/EIPS/eip-20)
+- [EIP-20: ERC-20 Token Standardı](https://eips.ethereum.org/EIPS/eip-20)
 - [OpenZeppelin - Token'lar](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [OpenZeppelin - ERC-20 Uygulaması](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Solidity ERC20 Token'ları Rehberi](https://www.alchemy.com/overviews/erc20-solidity)
@@ -185,5 +185,5 @@ Bu sorundan dolayı [ERC-223](/developers/docs/standards/tokens/erc-223) veya [E
 
 - [ERC-20 Sözleşmesi İncelemesi](/developers/tutorials/erc20-annotated-code/) _– OpenZeppelin ERC-20 sözleşme uygulamasının satır satır açıklamalı bir incelemesi._
 - [Güvenlik Korkulukları ile ERC-20](/developers/tutorials/erc20-with-safety-rails/) _– Kullanıcıların yaygın hatalardan kaçınmasına yardımcı olmak için ERC-20 Token'larına nasıl korumalar ekleneceği._
-- [Ethers.js Kullanarak Token Gönderme](/developers/tutorials/send-token-ethersjs/) _– Ethers.js kullanarak ERC-20 Token'larını transfer etmeye yönelik başlangıç dostu bir rehber._
+- [Ethers.js Kullanarak Token Gönderme](/developers/tutorials/send-token-qaujs/) _– Ethers.js kullanarak ERC-20 Token'larını transfer etmeye yönelik başlangıç dostu bir rehber._
 - [Dolandırıcı Token'lar tarafından kullanılan bazı hileler ve bunların nasıl tespit edileceği](/developers/tutorials/scam-token-tricks/) _– Dolandırıcı ERC-20 Token modellerine ve bunların nasıl belirleneceğine dair detaylı bir inceleme._

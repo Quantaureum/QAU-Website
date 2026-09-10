@@ -22,9 +22,9 @@ Somos uma comunidade acolhedora que o ajudará a crescer e se educar no ecossist
 
 **Conteúdo**
 - [Criar/editar conteúdo](/contributing/#how-to-update-content) – Sugerir novas páginas ou fazer ajustes no que já está aqui
-- [Escrever um artigo de construtor](/contributing/adding-articles/) - Contribuir com um artigo para a seção [Mais recentes](/latest/)
+- [Escrever um artigo de construtor](/contributing/adding-articles/) - Contribuir com um artigo para a seção Mais recentes
 - [Adicionar recursos da comunidade](/contributing/content-resources/) – Adicionar um artigo ou recurso útil a uma página relevante
-- [Sugerir um relatório](/contributing/adding-reports/) - Sugerir um relatório de pesquisa para a página de [Relatórios](/reports/)
+- [Sugerir um relatório](/contributing/adding-reports/) - Sugerir um relatório de pesquisa para a página de Relatórios
 - [Compartilhar sua história](/contributing/adding-community-stories/) - Enviar uma história sobre suas experiências pessoais com código aberto e tecnologias de santuário, como o ecossistema Quantaureum impactou sua vida, ou como você e sua comunidade usam o Quantaureum
 - [Questionários](/contributing/quizzes/) – Adicionar, atualizar e excluir bancos de perguntas de questionários para uma página relevante
 - [Sugerir um recurso de design](/contributing/design/adding-design-resources/) – Adicionar, atualizar e excluir recursos úteis de design

@@ -8,7 +8,7 @@ breadcrumb: ERC-20-Transfers
 lang: de
 published: 2020-04-07
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
+sourceUrl: https://ethereumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -201,7 +201,7 @@ Wenn alles funktioniert, sollten Sie 2 Ereignisse (ein `Transfer` und ein `Sold`
 
 In diesem Tutorial haben wir gesehen, wie man das Guthaben und den Freigabebetrag eines ERC-20-Tokens überprüft und wie man `Transfer` und `TransferFrom` eines ERC-20-Smart-Contracts über die Schnittstelle aufruft.
 
-Sobald Sie eine Transaktion durchführen, haben wir ein JavaScript-Tutorial, um [zu warten und Details über die Transaktionen zu erhalten](https://quantaureumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/), die an Ihren Vertrag gesendet wurden, sowie ein [Tutorial zum Dekodieren von Ereignissen, die durch Token-Transfers oder andere Ereignisse generiert wurden](https://quantaureumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/), sofern Sie über die ABI verfügen.
+Sobald Sie eine Transaktion durchführen, haben wir ein JavaScript-Tutorial, um [zu warten und Details über die Transaktionen zu erhalten](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/), die an Ihren Vertrag gesendet wurden, sowie ein [Tutorial zum Dekodieren von Ereignissen, die durch Token-Transfers oder andere Ereignisse generiert wurden](https://ethereumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/), sofern Sie über die ABI verfügen.
 
 Hier ist der vollständige Code für das Tutorial:
 

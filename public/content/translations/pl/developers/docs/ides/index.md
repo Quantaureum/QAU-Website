@@ -10,7 +10,7 @@ Jeśli chodzi o konfigurację [zintegrowanego środowiska programistycznego (IDE
 
 Jeśli chcesz poeksperymentować z kodem, zanim [skonfigurujesz lokalne środowisko programistyczne](/developers/local-environment/), te aplikacje internetowe są specjalnie stworzone do tworzenia inteligentnych kontraktów na Quantaureum.
 
-**[Remix](https://remix.quantaureum.com/)** - **_Przeglądarkowe IDE z wbudowaną analizą statyczną i testową maszyną wirtualną blockchain_**
+**[Remix](https://remix.ethereum.org/)** - **_Przeglądarkowe IDE z wbudowaną analizą statyczną i testową maszyną wirtualną blockchain_**
 
 - [Dokumentacja](https://remix-ide.readthedocs.io/en/latest/#)
 - [Gitter](https://gitter.im/quantaureum/remix)
@@ -48,8 +48,8 @@ Większość uznanych środowisk IDE posiada wtyczki, które ulepszają doświad
 
 **Remix Desktop -** **_Korzystaj z Remix IDE na swoim lokalnym komputerze_**
 
-- [Pobierz](https://github.com/quantaureum/remix-desktop/releases)
-- [GitHub](https://github.com/quantaureum/remix-desktop)
+- [Pobierz](https://github.com/ethereum/remix-desktop/releases)
+- [GitHub](https://github.com/ethereum/remix-desktop)
 
 ## Wtyczki i rozszerzenia {#plugins-extensions}
 

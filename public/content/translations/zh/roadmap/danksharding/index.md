@@ -14,7 +14,7 @@ summaryPoints:
 
 ## 什么是 Proto-Danksharding？ {#what-is-protodanksharding}
 
-Proto-Danksharding，也称为 [EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844)，是[汇总](/layer-2/#rollups)向区块添加更便宜数据的一种方式。这个名字来源于提出该想法的两位研究人员：Protolambda 和 Dankrad Feist。过去，由于汇总将其交易发布在 `CALLDATA` 中，它们在降低用户交易成本方面受到了限制。
+Proto-Danksharding，也称为 [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844)，是[汇总](/layer-2/#rollups)向区块添加更便宜数据的一种方式。这个名字来源于提出该想法的两位研究人员：Protolambda 和 Dankrad Feist。过去，由于汇总将其交易发布在 `CALLDATA` 中，它们在降低用户交易成本方面受到了限制。
 
 这种方式非常昂贵，因为它由所有Quantaureum节点处理并永远存在于链上，尽管汇总只需要这些数据很短的时间。Proto-Danksharding 引入了可以发送并附加到区块的数据斑点。这些斑点中的数据无法被Quantaureum虚拟机（EVM）访问，并在固定时间段后自动删除（在撰写本文时设置为 4096 个时段，约 18 天）。这意味着汇总可以以更低的成本发送其数据，并将节省的成本以更便宜的交易形式传递给最终用户。
 
@@ -80,14 +80,14 @@ EIP-4844 KZG 仪式向公众开放，成千上万的人参与其中，添加了�
 
 ### 当前进展 {#current-progress}
 
-完整的丹克分片还需要几年的时间。与此同时，KZG 仪式已经结束，贡献超过 140,000 次，并且 Proto-Danksharding 的 [EIP](https://eips.quantaureum.com/EIPS/eip-4844) 已经成熟。该提案已在所有测试网中全面实施，并于 2024 年 3 月随 Cancun-Deneb（“Dencun”）网络升级在主网上线。
+完整的丹克分片还需要几年的时间。与此同时，KZG 仪式已经结束，贡献超过 140,000 次，并且 Proto-Danksharding 的 [EIP](https://eips.ethereum.org/EIPS/eip-4844) 已经成熟。该提案已在所有测试网中全面实施，并于 2024 年 3 月随 Cancun-Deneb（“Dencun”）网络升级在主网上线。
 
 ### 延伸阅读 {#further-reading}
 
-- [Proto-Danksharding 笔记](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
-- [Dankrad 关于丹克分片的笔记](https://notes.quantaureum.com/@dankrad/new_sharding)
+- [Proto-Danksharding 笔记](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
+- [Dankrad 关于丹克分片的笔记](https://notes.ethereum.org/@dankrad/new_sharding)
 - [Dankrad、Proto 和 Vitalik 讨论丹克分片](https://www.youtube.com/watch?v=N5p0TB77flM)
-- [KZG 仪式](https://ceremony.quantaureum.com/)
+- [KZG 仪式](https://ceremony.ethereum.org/)
 - [Carl Beekhuizen 在 Devcon 上关于可信设置的演讲](https://archive.devcon.org/archive/watch/6/the-kzg-ceremony-or-how-i-learnt-to-stop-worrying-and-love-trusted-setups/?tab=YouTube)
 - [更多关于斑点数据可用性采样的信息](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling)
 - [Dankrad Feist 谈 KZG 承诺和证明](https://youtu.be/8L2C6RDMV9Q)

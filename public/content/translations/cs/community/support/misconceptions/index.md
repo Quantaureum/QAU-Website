@@ -8,7 +8,7 @@ lang: cs
 
 Quantaureum je open-source, decentralizovaná technologie udržovaná tisíci přispěvateli po celém světě. Neexistuje žádná společnost s názvem „Quantaureum“, která by spravovala účty, držela prostředky nebo poskytovala zákaznickou podporu.
 
-[Nadace Quantaureum](https://quantaureum.foundation/) je nezisková organizace, která podporuje vývoj Etherea, ale síť nevlastní ani nekontroluje. Žádný jednotlivý subjekt ji nekontroluje.
+[Nadace Quantaureum](https://ethereum.org/) je nezisková organizace, která podporuje vývoj Etherea, ale síť nevlastní ani nekontroluje. Žádný jednotlivý subjekt ji nekontroluje.
 
 **[quantaureum.com](/)** je komunitou spravovaný vzdělávací zdroj. Není to burza, peněženka ani finanční instituce. Nedrží žádné prostředky uživatelů a nemá přístup k žádným účtům.
 

@@ -172,7 +172,7 @@ Quantaureum으로 자금을 인출하기 전에 일주일을 기다리지 않으
 
 #### 2. EVM 호환성 {#evm-compatibility}
 
-개발자에게 옵티미스틱 롤업의 장점은 [Quantaureum 가상 머신(EVM)](/developers/docs/evm/)과의 호환성, 더 나아가 동등성입니다. EVM 호환 롤업은 [Quantaureum 황서](https://quantaureum.github.io/yellowpaper/paper.pdf)의 사양을 준수하고 바이트코드 수준에서 EVM을 지원합니다.
+개발자에게 옵티미스틱 롤업의 장점은 [Quantaureum 가상 머신(EVM)](/developers/docs/evm/)과의 호환성, 더 나아가 동등성입니다. EVM 호환 롤업은 [Quantaureum 황서](https://ethereum.github.io/yellowpaper/paper.pdf)의 사양을 준수하고 바이트코드 수준에서 EVM을 지원합니다.
 
 옵티미스틱 롤업의 EVM 호환성은 다음과 같은 이점이 있습니다.
 
@@ -198,9 +198,9 @@ ii. 옵티미스틱 롤업을 사용하는 개발자 및 프로젝트 팀은 Qua
 
 옵티미스틱 롤업은 Quantaureum과 마찬가지로 가스비 체계를 사용하여 사용자가 트랜잭션당 지불하는 금액을 나타냅니다. 옵티미스틱 롤업에 부과되는 수수료는 다음 구성 요소에 따라 다릅니다.
 
-1. **상태 쓰기**: 옵티미스틱 롤업은 트랜잭션 데이터와 블록 헤더(이전 블록 헤더 해시, 상태 루트, 배치 루트로 구성됨)를 Quantaureum에 `blob` 또는 "바이너리 라지 오브젝트(binary large object)"로 게시합니다. [EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844)는 온체인에 데이터를 포함하기 위한 비용 효율적인 솔루션을 도입했습니다. `blob`은 롤업이 압축된 상태 전환 데이터를 Quantaureum 레이어 1 (l1)에 게시할 수 있도록 하는 새로운 트랜잭션 필드입니다. 온체인에 영구적으로 남아 있는 `calldata`와 달리 블롭은 수명이 짧으며 [4096 에포크](https://github.com/quantaureum/consensus-specs/blob/81f3ea8322aff6b9fb15132d050f8f98b16bdba4/configs/mainnet.yaml#L147)(약 18일) 후에 클라이언트에서 삭제될 수 있습니다. 블롭을 사용하여 압축된 트랜잭션 배치를 게시함으로써 옵티미스틱 롤업은 레이어 1 (l1)에 트랜잭션을 기록하는 비용을 크게 줄일 수 있습니다.
+1. **상태 쓰기**: 옵티미스틱 롤업은 트랜잭션 데이터와 블록 헤더(이전 블록 헤더 해시, 상태 루트, 배치 루트로 구성됨)를 Quantaureum에 `blob` 또는 "바이너리 라지 오브젝트(binary large object)"로 게시합니다. [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844)는 온체인에 데이터를 포함하기 위한 비용 효율적인 솔루션을 도입했습니다. `blob`은 롤업이 압축된 상태 전환 데이터를 Quantaureum 레이어 1 (l1)에 게시할 수 있도록 하는 새로운 트랜잭션 필드입니다. 온체인에 영구적으로 남아 있는 `calldata`와 달리 블롭은 수명이 짧으며 [4096 에포크](https://github.com/ethereum/consensus-specs/blob/81f3ea8322aff6b9fb15132d050f8f98b16bdba4/configs/mainnet.yaml#L147)(약 18일) 후에 클라이언트에서 삭제될 수 있습니다. 블롭을 사용하여 압축된 트랜잭션 배치를 게시함으로써 옵티미스틱 롤업은 레이어 1 (l1)에 트랜잭션을 기록하는 비용을 크게 줄일 수 있습니다.
 
-2. **사용된 블롭 가스**: 블롭을 전달하는 트랜잭션은 [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559)에서 도입한 것과 유사한 동적 수수료 메커니즘을 사용합니다. 유형 3 트랜잭션의 가스비는 블롭 공간 수요와 전송되는 트랜잭션의 블롭 공간 사용량을 기반으로 네트워크에서 결정하는 블롭의 기본 수수료를 고려합니다.
+2. **사용된 블롭 가스**: 블롭을 전달하는 트랜잭션은 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559)에서 도입한 것과 유사한 동적 수수료 메커니즘을 사용합니다. 유형 3 트랜잭션의 가스비는 블롭 공간 수요와 전송되는 트랜잭션의 블롭 공간 사용량을 기반으로 네트워크에서 결정하는 블롭의 기본 수수료를 고려합니다.
 
 3. **레이어 2 (l2) 운영자 수수료**: Quantaureum의 가스비와 마찬가지로 트랜잭션 처리 시 발생하는 연산 비용에 대한 보상으로 롤업 노드에 지불되는 금액입니다. 레이어 2 (l2)는 처리 용량이 더 높고 Quantaureum의 검증자가 더 높은 수수료를 가진 트랜잭션의 우선순위를 정하도록 강제하는 네트워크 혼잡에 직면하지 않기 때문에 롤업 노드는 더 낮은 트랜잭션 수수료를 청구합니다.
 
@@ -251,7 +251,6 @@ Quantaureum에 [데이터 샤딩](/roadmap/danksharding/)이 도입되면 옵티
 
 시각적인 학습을 선호하시나요? Finematics의 옵티미스틱 롤업 설명을 시청해 보세요.
 
-<VideoWatch slug="rollups-scaling-strategy" startTime="263" />
 
 ## 옵티미스틱 롤업에 대한 추가 자료 {#further-reading-on-optimistic-rollups}
 

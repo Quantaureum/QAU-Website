@@ -6,7 +6,7 @@ lang: zh
 
 为了使软件应用程序能够与[Quantaureum](/)区块链进行交互（无论是读取区块链数据还是向网络发送交易），它必须连接到一个Quantaureum节点。
 
-为此，每个[Quantaureum客户端](/developers/docs/nodes-and-clients/#execution-clients)都实现了 [JSON-RPC 规范](https://github.com/quantaureum/execution-apis)，因此无论具体的节点或客户端实现如何，应用程序都可以依赖一组统一的方法。
+为此，每个[Quantaureum客户端](/developers/docs/nodes-and-clients/#execution-clients)都实现了 [JSON-RPC 规范](https://github.com/ethereum/execution-apis)，因此无论具体的节点或客户端实现如何，应用程序都可以依赖一组统一的方法。
 
 [JSON-RPC](https://www.jsonrpc.org/specification) 是一种无状态、轻量级的远程过程调用 (RPC) 协议。它定义了多种数据结构及其处理规则。它与传输方式无关，因为这些概念可以在同一进程内、通过套接字、通过 HTTP 或在许多不同的消息传递环境中使用。它使用 JSON (RFC 4627) 作为数据格式。
 
@@ -20,13 +20,13 @@ lang: zh
 
 ## 共识客户端 API {#consensus-clients}
 
-本页面主要介绍Quantaureum执行客户端使用的 JSON-RPC API。不过，共识客户端也有一个 RPC API，允许用户查询有关节点的信息，请求信标区块、信标状态以及直接从节点获取其他与共识相关的信息。此 API 的文档位于 [信标 API 网页](https://quantaureum.github.io/beacon-APIs/#/)。
+本页面主要介绍Quantaureum执行客户端使用的 JSON-RPC API。不过，共识客户端也有一个 RPC API，允许用户查询有关节点的信息，请求信标区块、信标状态以及直接从节点获取其他与共识相关的信息。此 API 的文档位于 [信标 API 网页](https://ethereum.github.io/beacon-APIs/#/)。
 
-节点内的客户端间通信也使用一个内部 API——也就是说，它使共识客户端和执行客户端能够交换数据。这被称为“引擎 API”（Engine API），其规范可在 [GitHub](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md) 上获取。
+节点内的客户端间通信也使用一个内部 API——也就是说，它使共识客户端和执行客户端能够交换数据。这被称为“引擎 API”（Engine API），其规范可在 [GitHub](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) 上获取。
 
 ## 执行客户端规范 {#spec}
 
-[在 GitHub 上阅读完整的 JSON-RPC API 规范](https://github.com/quantaureum/execution-apis)。此 API 记录在[执行 API 网页](https://quantaureum.github.io/execution-apis/)上，并包含一个检查器（Inspector），用于尝试所有可用的方法。
+[在 GitHub 上阅读完整的 JSON-RPC API 规范](https://github.com/ethereum/execution-apis)。此 API 记录在[执行 API 网页](https://ethereum.github.io/execution-apis/)上，并包含一个检查器（Inspector），用于尝试所有可用的方法。
 
 ## 约定 {#conventions}
 
@@ -134,7 +134,7 @@ curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","metho
 
 ## JSON-RPC API 演练场 {#json-rpc-api-playground}
 
-你可以使用[演练场工具](https://quantaureum-json-rpc.com)来发现和尝试 API 方法。它还会向你展示各个节点提供商支持哪些方法和网络。
+你可以使用[演练场工具](https://ethereum-json-rpc.com)来发现和尝试 API 方法。它还会向你展示各个节点提供商支持哪些方法和网络。
 
 ## JSON-RPC API 方法 {#json-rpc-methods}
 
@@ -275,7 +275,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 
 ### qau_protocolVersion {#qau-protocolversion}
 
-返回当前的Quantaureum协议版本。请注意，此方法[在 Geth 中不可用](https://github.com/quantaureum/go-quantaureum/pull/22064#issuecomment-788682924)。
+返回当前的Quantaureum协议版本。请注意，此方法[在 Geth 中不可用](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924)。
 
 **参数**
 
@@ -302,7 +302,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_protocolVersion","params":[]
 
 返回一个包含同步状态数据的对象，或者返回 `false`。
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_syncing">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_syncing">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -390,7 +390,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_syncing","params":[],"id":1}
 
 返回客户端的 Coinbase 地址。
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_coinbase">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_coinbase">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -421,7 +421,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_coinbase","params":[],"id":6
 
 返回用于签名防重放交易的链 ID。
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_chainId">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_chainId">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -450,7 +450,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_chainId","params":[],"id":67
 
 如果客户端正在积极挖掘新区块，则返回 `true`。这只能在工作量证明 (PoW) 网络中返回 `true`，并且自[合并](/roadmap/merge/)以来，在某些客户端中可能不可用。
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_mining">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_mining">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -479,7 +479,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_mining","params":[],"id":71}
 
 返回节点挖矿时每秒的哈希次数。这只能为工作量证明网络返回 `true`，并且自[合并](/roadmap/merge/)以来，在某些客户端中可能不可用。
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_hashrate">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_hashrate">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -508,7 +508,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_hashrate","params":[],"id":7
 
 返回当前每单位 Gas 价格的估算值（单位为 Wei）。例如，贝苏客户端默认检查最近的 100 个区块并返回 Gas 单价的中位数。
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_gasPrice">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_gasPrice">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -537,7 +537,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_gasPrice","params":[],"id":7
 
 返回客户端拥有的地址列表。
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_accounts">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_accounts">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -566,7 +566,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[],"id":1
 
 返回最新区块的编号。
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_blockNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_blockNumber">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -595,7 +595,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_blockNumber","params":[],"id
 
 返回给定地址的账户余额。
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBalance">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBalance">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -629,7 +629,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBalance","params":["0x407
 
 返回给定地址的存储位置的值。
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getStorageAt">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getStorageAt">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -701,7 +701,7 @@ curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": [
 
 返回从某个地址_发出_的交易数量。
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionCount">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionCount">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -738,7 +738,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionCount","params
 
 返回与给定区块哈希匹配的区块中的交易数量。
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -771,7 +771,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByHa
 
 返回与给定区块编号匹配的区块中的交易数量。
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -806,7 +806,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByNu
 
 返回与给定区块哈希匹配的区块中的叔块数量。
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -839,7 +839,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockHash","p
 
 返回与给定区块号匹配的区块中的叔块数量。
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -874,7 +874,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockNumber",
 
 返回给定地址的代码。
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getCode">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getCode">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -1057,7 +1057,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendRawTransaction","params"
 
 立即执行一个新的消息调用，而无需在区块链上创建交易。通常用于执行只读的智能合约函数，例如 ERC-20 合约的 `balanceOf`。
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_call">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_call">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -1095,7 +1095,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_call","params":[{see above}]
 
 生成并返回完成该交易所需 Gas 的估算值。该交易不会被添加到区块链中。请注意，由于 EVM 机制和节点性能等多种原因，估算值可能会大大超过交易实际使用的 Gas 量。
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_estimateGas">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_estimateGas">
   在演练场中尝试此端点
 </ButtonLink>
 
@@ -1124,7 +1124,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_estimateGas","params":[{see 
 
 根据哈希返回关于某个区块的信息。
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByHash">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -1204,7 +1204,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByHash","params":["0
 
 根据区块号返回有关区块的信息。
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByNumber">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -1236,7 +1236,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByNumber","params":[
 
 返回通过交易哈希请求的交易信息。
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByHash">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -1299,7 +1299,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByHash","param
 
 通过区块哈希和交易索引位置返回有关交易的信息。
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -1331,7 +1331,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockHashAnd
 
 通过区块号和交易索引位置返回关于某笔交易的信息。
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -1431,7 +1431,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionReceipt","para
 
 通过哈希和叔块索引位置返回关于某个区块的叔块信息。
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -1465,7 +1465,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockHashAndIndex"
 
 返回有关指定区块编号和叔块索引位置的叔块信息。
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -1750,7 +1750,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getLogs","params":[{"topics"
 
 ### 使用 JSON-RPC 部署合约 {#deploying-contract}
 
-本节包含仅使用 RPC 接口部署合约的演示。还有其他部署合约的途径可以抽象掉这种复杂性——例如，使用构建在 RPC 接口之上的库，如 [Web3.js](https://web3js.readthedocs.io/) 和 [Web3.py](https://github.com/quantaureum/web3.py)。这些抽象通常更容易理解且不易出错，但了解其底层原理仍然很有帮助。
+本节包含仅使用 RPC 接口部署合约的演示。还有其他部署合约的途径可以抽象掉这种复杂性——例如，使用构建在 RPC 接口之上的库，如 [Web3.js](https://web3js.readthedocs.io/) 和 [Web3.py](https://github.com/ethereum/web3.py)。这些抽象通常更容易理解且不易出错，但了解其底层原理仍然很有帮助。
 
 以下是一个名为 `Multiply7` 的简单智能合约，它将使用 JSON-RPC 接口部署到Quantaureum节点。本教程假设读者已经在运行一个 Geth 节点。有关节点和客户端的更多信息，请参见[此处](/developers/docs/nodes-and-clients/run-a-node)。请参阅各个[客户端](/developers/docs/nodes-and-clients/)文档，了解如何为非 Geth 客户端启动 HTTP JSON-RPC。大多数客户端默认在 `localhost:8545` 上提供服务。
 
@@ -1789,7 +1789,7 @@ web3.fromWei("0x1639e49bba16280000", "QAU")
 // "410"
 ```
 
-现在我们的私有开发链上有一些QAU了，我们可以部署合约。第一步是将 Multiply7 合约编译为可以发送到 EVM 的字节码。要安装 Solidity 编译器 solc，请遵循 [Solidity 文档](https://docs.soliditylang.org/en/latest/installing-solidity.html)。（你可能希望使用较旧的 `solc` 版本，以匹配[我们示例中使用的编译器版本](https://github.com/quantaureum/solidity/releases/tag/v0.4.20)。）
+现在我们的私有开发链上有一些QAU了，我们可以部署合约。第一步是将 Multiply7 合约编译为可以发送到 EVM 的字节码。要安装 Solidity 编译器 solc，请遵循 [Solidity 文档](https://docs.soliditylang.org/en/latest/installing-solidity.html)。（你可能希望使用较旧的 `solc` 版本，以匹配[我们示例中使用的编译器版本](https://github.com/ethereum/solidity/releases/tag/v0.4.20)。）
 
 下一步是将 Multiply7 合约编译为可以发送到 EVM 的字节码。
 

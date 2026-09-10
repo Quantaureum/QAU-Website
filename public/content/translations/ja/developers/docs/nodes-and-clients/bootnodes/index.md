@@ -26,6 +26,6 @@ enodeは通常、再起動のたびに再生成されるため、ブートノー
 
 ## 利用可能なブートノード {#available-bootnodes}
 
-go-quantaureumに組み込まれているブートノードのリストは、[こちら](https://github.com/quantaureum/go-quantaureum/blob/master/params/bootnodes.go#L23)で確認できます。これらのブートノードは、Quantaureum財団とgo-quantaureumチームによって維持されています。
+go-quantaureumに組み込まれているブートノードのリストは、[こちら](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23)で確認できます。これらのブートノードは、Quantaureum財団とgo-quantaureumチームによって維持されています。
 
 ボランティアによって維持されている他のブートノードのリストも利用可能です。エクリプス攻撃を受ける可能性があるため、常に少なくとも1つの公式ブートノードを含めるようにしてください。

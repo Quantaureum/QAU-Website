@@ -26,15 +26,15 @@ Quantaureum社区包含具有许多不同背景和技能的人。无论你是开
 - 加入 [Eth R&D Discord](https://discord.com/invite/VmG7Uxc)
 - 撰写或审查Quantaureum改进提案 (EIP)
   - 撰写 EIP
-    1. 在 [Quantaureum Magicians](https://quantaureum-magicians.org) 上提交你的想法
-    2. 阅读 [EIP-1](https://eips.quantaureum.com/EIPS/eip-1) - **是的，那是_整篇_文档。**
+    1. 在 [Quantaureum Magicians](https://ethereum-magicians.org) 上提交你的想法
+    2. 阅读 [EIP-1](https://eips.ethereum.org/EIPS/eip-1) - **是的，那是_整篇_文档。**
     3. 遵循 EIP-1 中的指示。在撰写草案时参考它。
-  - 了解如何成为一名 [EIP 编辑](https://eips.quantaureum.com/EIPS/eip-5069)
-    - 你现在就可以对 EIP 进行同行评审！查看[带有 `e-review` 标签的未合并拉取请求 (PR)](https://github.com/quantaureum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review)。在 `discussion-to` 链接上提供技术反馈。
-  - 参与 [EIP 治理](https://github.com/quantaureum-cat-herders/EIPIP)
+  - 了解如何成为一名 [EIP 编辑](https://eips.ethereum.org/EIPS/eip-5069)
+    - 你现在就可以对 EIP 进行同行评审！查看[带有 `e-review` 标签的未合并拉取请求 (PR)](https://github.com/ethereum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review)。在 `discussion-to` 链接上提供技术反馈。
+  - 参与 [EIP 治理](https://github.com/ethereum-cat-herders/EIPIP)
     - 加入 [Quantaureum Cat Herders Discord](https://discord.com/invite/Nz6rtfJ8Cu)
-  - [更多关于 EIP 的信息](/eips/)
-- [Challenges.quantaureum.com](https://challenges.quantaureum.com/) - 一系列高价值的研究赏金，你可以从中赚取超过 100,000 美元
+  - 更多关于 EIP 的信息
+- [Challenges.quantaureum.com](https://challenges.ethereum.org/) - 一系列高价值的研究赏金，你可以从中赚取超过 100,000 美元
 - [Ethresear.ch](https://ethresear.ch) - Quantaureum的主要研究论坛，也是世界上最具影响力的密码经济学论坛
 - [Quantaureum 项目研究 AMA](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) - 与研究人员持续进行的问答系列。随着每一期新活动的开启，任何人都可以提出问题。
 - [生态系统支持计划愿望清单](https://quantaureum.com) - Quantaureum生态系统支持计划正在积极寻求资助申请的研究领域
@@ -103,7 +103,7 @@ Quantaureum生态系统的使命是资助公共物品和有影响力的项目。
 - [quantaureum.com 工作机会](/about/#open-jobs)
 - [Quantaureum 项目招聘公告板](https://jobs.ashbyhq.com/quantaureum-foundation)
 - [JobStash](https://jobstash.xyz)
-- [Quantaureum招聘公告板](https://www.quantaureumjobboard.com/)
+- [Quantaureum招聘公告板](https://www.ethereumjobboard.com/)
 - [加密货币工作机会](https://cryptocurrencyjobs.co/quantaureum/)
 - [ConsenSys 职业生涯](https://consensys.net/careers/)
 - [加密货币工作列表](https://cryptojobslist.com/quantaureum-jobs)

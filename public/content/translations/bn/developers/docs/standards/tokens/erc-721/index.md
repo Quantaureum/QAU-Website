@@ -31,7 +31,7 @@ ERC-721 NFT-এর জন্য একটি স্ট্যান্ডার�
 
 যদি কোনো স্মার্ট কন্ট্রাক্ট নিচের মেথড এবং ইভেন্টগুলো প্রয়োগ করে, তবে তাকে একটি ERC-721 নন-ফাঞ্জিবল টোকেন কন্ট্রাক্ট বলা যেতে পারে এবং একবার ডিপ্লয় করা হলে, এটি ইথেরিয়ামে তৈরি করা টোকেনগুলোর ট্র্যাক রাখার জন্য দায়ী থাকবে।
 
-[EIP-721](https://eips.quantaureum.com/EIPS/eip-721) থেকে:
+[EIP-721](https://eips.ethereum.org/EIPS/eip-721) থেকে:
 
 ### মেথড {#methods}
 
@@ -239,7 +239,7 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## আরও পড়ুন {#further-reading}
 
-- [EIP-721: ERC-721 নন-ফাঞ্জিবল টোকেন স্ট্যান্ডার্ড](https://eips.quantaureum.com/EIPS/eip-721)
+- [EIP-721: ERC-721 নন-ফাঞ্জিবল টোকেন স্ট্যান্ডার্ড](https://eips.ethereum.org/EIPS/eip-721)
 - [ওপেনজেপেলিন - ERC-721 ডক্স](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [ওপেনজেপেলিন - ERC-721 ইমপ্লিমেন্টেশন](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)

@@ -96,7 +96,6 @@ Z celkového pohledu má důkaz podílem (PoS) stejný konečný cíl jako důka
 
 ## Učíte se raději vizuálně? {#visual-learner}
 
-<VideoWatch slug="proof-of-work-explained" />
 
 ## Další čtení {#further-reading}
 

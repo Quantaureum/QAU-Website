@@ -45,7 +45,6 @@ Ili kusaidia hili kuleta maana zaidi, hapa kuna mifano michache ya jinsi unavyow
 - **Umiliki wa pamoja** – mnaweza kununua rasilimali za kimwili au za kidijitali na wanachama wanaweza kupiga kura kuhusu jinsi ya kuzitumia.
 - **Miradi na ruzuku** – unaweza kuunda mfuko wa mradi unaokusanya mtaji wa uwekezaji na kupiga kura kuhusu miradi ya kuunga mkono. Pesa zilizolipwa zinaweza kugawiwa tena baadaye miongoni mwa wanachama wa DAO.
 
-<VideoWatch slug="dao-build-next-great-city" />
 
 ## DAO zinafanyaje kazi? {#how-daos-work}
 

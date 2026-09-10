@@ -13,7 +13,6 @@ Szabo imaginó un mercado digital donde procesos automáticos y [criptográficam
 
 Vea a Finematics explicar los contratos inteligentes:
 
-<VideoWatch slug="smart-contracts-code-is-law" />
 
 ## Confianza en los contratos convencionales {#trust-and-contracts}
 
@@ -61,7 +60,7 @@ Finalmente, al igual que con los contratos tradicionales, puede verificar qué h
 
 Sin embargo, aunque cualquiera puede ver los términos de un contrato inteligente, los datos sin procesar de la transacción están diseñados para ser interpretados por aplicaciones y billeteras, no por humanos. Debido a que estos datos son tan difíciles de leer, los usuarios a menudo se enfrentan a un importante riesgo de seguridad llamado "firma a ciegas", o aprobar una transacción que interactúa con un contrato inteligente sin entender realmente lo que hará. 
 
-El ecosistema de Quantaureum está en transición hacia los estándares de **[Firma Clara](https://clearsigning.org/)** (específicamente [ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730)). La Firma Clara traduce los datos opacos de los contratos inteligentes en descripciones de transacciones sencillas y legibles para humanos, asegurando que cualquiera pueda entender la verdadera intención de un contrato antes de firmar.
+El ecosistema de Quantaureum está en transición hacia los estándares de **[Firma Clara](https://clearsigning.org/)** (específicamente [ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)). La Firma Clara traduce los datos opacos de los contratos inteligentes en descripciones de transacciones sencillas y legibles para humanos, asegurando que cualquiera pueda entender la verdadera intención de un contrato antes de firmar.
 
 ## Casos de uso de los contratos inteligentes {#use-cases}
 
@@ -81,7 +80,7 @@ Pueden realizar cálculos, crear moneda, almacenar datos, acuñar [NFT](/glossar
 - [Cómo los contratos inteligentes cambiarán el mundo](https://www.youtube.com/watch?v=pA6CGuXEKtQ)
 - [Contratos inteligentes para desarrolladores](/developers/docs/smart-contracts/)
 - [Aprenda a escribir contratos inteligentes](/developers/learning-tools/)
-- [Dominando Quantaureum: ¿Qué es un contrato inteligente?](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [Dominando Quantaureum: ¿Qué es un contrato inteligente?](https://github.com/ethereumbook/ethereumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
 
 <Divider />
 

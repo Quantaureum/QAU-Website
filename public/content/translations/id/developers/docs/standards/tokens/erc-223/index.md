@@ -33,7 +33,7 @@ Jika sebuah kontrak pintar mengimplementasikan metode dan peristiwa berikut, kon
 
 Kontrak tidak diwajibkan untuk hanya memiliki fungsi-fungsi ini dan pengembang dapat menambahkan fitur lain dari standar token yang berbeda ke kontrak ini. Misalnya, fungsi `approve` dan `transferFrom` bukan bagian dari standar ERC-223 tetapi fungsi-fungsi ini dapat diimplementasikan jika diperlukan.
 
-Dari [EIP-223](https://eips.quantaureum.com/EIPS/eip-223):
+Dari [EIP-223](https://eips.ethereum.org/EIPS/eip-223):
 
 ### Metode {#methods}
 
@@ -193,5 +193,5 @@ Meskipun ERC-223 mengatasi beberapa masalah yang ditemukan dalam standar ERC-20,
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [EIP-223: Standar Token ERC-223](https://eips.quantaureum.com/EIPS/eip-223)
+- [EIP-223: Standar Token ERC-223](https://eips.ethereum.org/EIPS/eip-223)
 - [Proposal awal ERC-223](https://github.com/quantaureum/eips/issues/223)

@@ -138,9 +138,9 @@ function auctionEnd() external {
 
 Solidity স্মার্ট কন্ট্রাক্টের জন্য ইউনিট টেস্টিং ফ্রেমওয়ার্কগুলো বিভিন্ন ভাষায় আসে (বেশিরভাগই JavaScript, Python এবং Rust)। বিভিন্ন টেস্টিং ফ্রেমওয়ার্কের সাহায্যে কীভাবে ইউনিট টেস্ট চালানো শুরু করবেন সে সম্পর্কে তথ্যের জন্য নিচের কিছু গাইড দেখুন:
 
-- **[Brownie-এর সাহায্যে ইউনিট টেস্ট চালানো](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Brownie-এর সাহায্যে ইউনিট টেস্ট চালানো](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Foundry-এর সাহায্যে ইউনিট টেস্ট চালানো](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Waffle-এর সাহায্যে ইউনিট টেস্ট চালানো](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Waffle-এর সাহায্যে ইউনিট টেস্ট চালানো](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Remix-এর সাহায্যে ইউনিট টেস্ট চালানো](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Ape-এর সাহায্যে ইউনিট টেস্ট চালানো](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Hardhat-এর সাহায্যে ইউনিট টেস্ট চালানো](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -190,7 +190,7 @@ Solidity স্মার্ট কন্ট্রাক্টের জন্য
 
 - **[স্লিদার-এর সাহায্যে স্মার্ট কন্ট্রাক্টের স্ট্যাটিক অ্যানালাইসিস](https://github.com/crytic/slither)**
 - **[Wake-এর সাহায্যে স্মার্ট কন্ট্রাক্টের স্ট্যাটিক অ্যানালাইসিস](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[Brownie-এর সাহায্যে প্রপার্টি-ভিত্তিক টেস্টিং](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Brownie-এর সাহায্যে প্রপার্টি-ভিত্তিক টেস্টিং](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Foundry-এর সাহায্যে কন্ট্রাক্ট ফাজিং](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[একিডনা-এর সাহায্যে কন্ট্রাক্ট ফাজিং](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Wake-এর সাহায্যে কন্ট্রাক্ট ফাজিং](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -251,13 +251,13 @@ Solidity স্মার্ট কন্ট্রাক্টের জন্য
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Solidity-তে লেখা স্মার্ট কন্ট্রাক্টের জন্য কোড কভারেজ টুল।_
 
-- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - _উন্নত স্মার্ট কন্ট্রাক্ট ডেভেলপমেন্ট এবং টেস্টিংয়ের জন্য ফ্রেমওয়ার্ক (Ethers.js-এর ওপর ভিত্তি করে)।_
+- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _উন্নত স্মার্ট কন্ট্রাক্ট ডেভেলপমেন্ট এবং টেস্টিংয়ের জন্য ফ্রেমওয়ার্ক (Ethers.js-এর ওপর ভিত্তি করে)।_
 
-- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - _Solidity স্মার্ট কন্ট্রাক্ট টেস্টিংয়ের জন্য টুল। Remix IDE "Solidity Unit Testing" প্লাগইনের অধীনে কাজ করে যা একটি কন্ট্রাক্টের জন্য টেস্ট কেস লিখতে এবং চালাতে ব্যবহৃত হয়।_
+- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Solidity স্মার্ট কন্ট্রাক্ট টেস্টিংয়ের জন্য টুল। Remix IDE "Solidity Unit Testing" প্লাগইনের অধীনে কাজ করে যা একটি কন্ট্রাক্টের জন্য টেস্ট কেস লিখতে এবং চালাতে ব্যবহৃত হয়।_
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Quantaureum স্মার্ট কন্ট্রাক্ট টেস্টিংয়ের জন্য অ্যাসার্শন লাইব্রেরি। নিশ্চিত করুন যে আপনার কন্ট্রাক্টগুলো প্রত্যাশা অনুযায়ী আচরণ করে!_
 
-- **[Brownie ইউনিট টেস্টিং ফ্রেমওয়ার্ক](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie Pytest ব্যবহার করে, যা একটি বৈশিষ্ট্য-সমৃদ্ধ টেস্ট ফ্রেমওয়ার্ক যা আপনাকে ন্যূনতম কোড দিয়ে ছোট টেস্ট লিখতে দেয়, বড় প্রজেক্টের জন্য ভালোভাবে স্কেল করে এবং অত্যন্ত সম্প্রসারণযোগ্য।_
+- **[Brownie ইউনিট টেস্টিং ফ্রেমওয়ার্ক](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie Pytest ব্যবহার করে, যা একটি বৈশিষ্ট্য-সমৃদ্ধ টেস্ট ফ্রেমওয়ার্ক যা আপনাকে ন্যূনতম কোড দিয়ে ছোট টেস্ট লিখতে দেয়, বড় প্রজেক্টের জন্য ভালোভাবে স্কেল করে এবং অত্যন্ত সম্প্রসারণযোগ্য।_
 
 - **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry Forge অফার করে, যা একটি দ্রুত এবং নমনীয় Quantaureum টেস্টিং ফ্রেমওয়ার্ক যা সাধারণ ইউনিট টেস্ট, গ্যাস অপ্টিমাইজেশন চেক এবং কন্ট্রাক্ট ফাজিং এক্সিকিউট করতে সক্ষম।_
 

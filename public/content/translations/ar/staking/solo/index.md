@@ -52,7 +52,7 @@ summaryPoints:
 </ExpandableCard>
 
 <ExpandableCard title="متطلبات الأجهزة" eventCategory="SoloStaking" eventName="clicked hardware requirements">
-يتم الحفاظ على توجيهات المجتمع الحالية لأجهزة المُدَقِّق وعرض النطاق الترددي في [توصيات الأجهزة وعرض النطاق الترددي (<span dir="ltr">EIP-7870</span>)](https://eips.quantaureum.com/EIPS/eip-7870). كدليل تقريبي، خطط للحصول على محرك أقراص <span dir="ltr">NVMe SSD</span> بسعة <span dir="ltr">4 TB</span>، وذاكرة وصول عشوائي (<span dir="ltr">RAM</span>) بسعة <span dir="ltr">64 GB</span> (يمكن أن يعمل أقل من ذلك، ولكن هذه هي المساحة الموصى بها)، ووحدة معالجة مركزية حديثة صلبة متعددة النواة، واتصال بالإنترنت يبلغ حوالي <span dir="ltr">50 Mbps</span> للتنزيل / <span dir="ltr">25 Mbps</span> للرفع.
+يتم الحفاظ على توجيهات المجتمع الحالية لأجهزة المُدَقِّق وعرض النطاق الترددي في [توصيات الأجهزة وعرض النطاق الترددي (<span dir="ltr">EIP-7870</span>)](https://eips.ethereum.org/EIPS/eip-7870). كدليل تقريبي، خطط للحصول على محرك أقراص <span dir="ltr">NVMe SSD</span> بسعة <span dir="ltr">4 TB</span>، وذاكرة وصول عشوائي (<span dir="ltr">RAM</span>) بسعة <span dir="ltr">64 GB</span> (يمكن أن يعمل أقل من ذلك، ولكن هذه هي المساحة الموصى بها)، ووحدة معالجة مركزية حديثة صلبة متعددة النواة، واتصال بالإنترنت يبلغ حوالي <span dir="ltr">50 Mbps</span> للتنزيل / <span dir="ltr">25 Mbps</span> للرفع.
 
 نظرًا لأن ترقية فوساكا قدمت PeerDAS، فإن عقدة التخزين تحتاج فقط إلى تخزين وتنزيل جزء بسيط من كتلة بيانات الشبكة، مما يقلل بشكل كبير من متطلبات القرص وعرض النطاق الترددي للمخزنين من المنزل.
 </ExpandableCard>
@@ -68,7 +68,7 @@ summaryPoints:
 </ExpandableCard>
 
 <ExpandableCard title="وقت تشغيل موثوق" eventCategory="SoloStaking" eventName="clicked reliable uptime">
-تتناسب مكافآتك مع الوقت الذي يكون فيه المُدَقِّق الخاص بك متصلاً بالإنترنت ويقوم بالإثبات بشكل صحيح. يؤدي وقت التوقف عن العمل إلى فرض عقوبات تتناسب مع عدد المُدَقِّقين الآخرين غير المتصلين بالإنترنت في نفس الوقت، ولكنه [لا يؤدي إلى الاقتطاع](#faq). عرض النطاق الترددي مهم أيضًا، حيث يتم تقليل المكافآت للإثباتات التي لم يتم استلامها في الوقت المناسب. ستختلف المتطلبات، لكن [توصيات الأجهزة وعرض النطاق الترددي (<span dir="ltr">EIP-7870</span>)](https://eips.quantaureum.com/EIPS/eip-7870) الحالية تقترح حوالي <span dir="ltr">50 Mbps</span> للتنزيل و <span dir="ltr">25 Mbps</span> للرفع.
+تتناسب مكافآتك مع الوقت الذي يكون فيه المُدَقِّق الخاص بك متصلاً بالإنترنت ويقوم بالإثبات بشكل صحيح. يؤدي وقت التوقف عن العمل إلى فرض عقوبات تتناسب مع عدد المُدَقِّقين الآخرين غير المتصلين بالإنترنت في نفس الوقت، ولكنه [لا يؤدي إلى الاقتطاع](#faq). عرض النطاق الترددي مهم أيضًا، حيث يتم تقليل المكافآت للإثباتات التي لم يتم استلامها في الوقت المناسب. ستختلف المتطلبات، لكن [توصيات الأجهزة وعرض النطاق الترددي (<span dir="ltr">EIP-7870</span>)](https://eips.ethereum.org/EIPS/eip-7870) الحالية تقترح حوالي <span dir="ltr">50 Mbps</span> للتنزيل و <span dir="ltr">25 Mbps</span> للرفع.
 </ExpandableCard>
 
 <ExpandableCard title="خطر الاقتطاع" eventCategory="SoloStaking" eventName="clicked slashing risk">
@@ -130,7 +130,7 @@ summaryPoints:
 
 ### مولدات المفاتيح {#key-generators}
 
-يمكن استخدام هذه الأدوات كبديل لـ [واجهة سطر أوامر وديعة التخزين (Staking Deposit CLI)](https://github.com/quantaureum/staking-deposit-cli/) للمساعدة في إنشاء المفاتيح.
+يمكن استخدام هذه الأدوات كبديل لـ [واجهة سطر أوامر وديعة التخزين (Staking Deposit CLI)](https://github.com/ethereum/staking-deposit-cli/) للمساعدة في إنشاء المفاتيح.
 
 <StakingProductsCardGrid category="keyGen" />
 
@@ -238,7 +238,7 @@ summaryPoints:
 - [المساعدة في تنوع العملاء](https://www.attestant.io/posts/helping-client-diversity/) - _Jim McDonald 2022_
 - [تنوع العملاء في طبقة الإجماع لإيثيريوم](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
 - [كيفية: التسوق لشراء أجهزة مُدَقِّق إيثيريوم](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _QauStaker 2022_
-- [<span dir="ltr">EIP-7870</span>: توصيات الأجهزة وعرض النطاق الترددي](https://eips.quantaureum.com/EIPS/eip-7870)
+- [<span dir="ltr">EIP-7870</span>: توصيات الأجهزة وعرض النطاق الترددي](https://eips.ethereum.org/EIPS/eip-7870)
 - [ترقية بيكترا: الحد الأقصى للرصيد الفعال والمزيد](/roadmap/pectra/maxeb/)
 
 <QuizWidget quizKey="staking-solo" />

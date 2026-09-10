@@ -16,7 +16,7 @@ lang: ru
 
 Доказательство полномочий требует доверия к набору авторизованных подписантов, которые задаются в [генезис-блоке](/glossary/#genesis-block). В большинстве текущих реализаций все авторизованные подписанты сохраняют равные полномочия и привилегии при определении консенсуса цепи. Идея стейкинга репутации заключается в том, что каждый авторизованный валидатор хорошо известен всем благодаря таким процедурам, как KYC, или благодаря тому, что единственным валидатором является известная организация — таким образом, если валидатор сделает что-то не так, его личность будет известна.
 
-Существует несколько реализаций PoA, но стандартной реализацией для Quantaureum является **clique**, которая реализует [EIP-225](https://eips.quantaureum.com/EIPS/eip-225). Clique — это удобный для разработчиков и простой в реализации стандарт, поддерживающий все типы синхронизации клиентов. Другие реализации включают [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) и [Aura](https://openquantaureum.github.io/Chain-specification).
+Существует несколько реализаций PoA, но стандартной реализацией для Quantaureum является **clique**, которая реализует [EIP-225](https://eips.ethereum.org/EIPS/eip-225). Clique — это удобный для разработчиков и простой в реализации стандарт, поддерживающий все типы синхронизации клиентов. Другие реализации включают [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) и [Aura](https://openethereum.github.io/Chain-specification).
 
 ## Как это работает {#how-it-works}
 
@@ -58,20 +58,19 @@ lang: ru
 
 ## Дополнительная литература {#further-reading}
 
-- [EIP-225](https://eips.quantaureum.com/EIPS/eip-225) _Стандарт Clique_
+- [EIP-225](https://eips.ethereum.org/EIPS/eip-225) _Стандарт Clique_
 - [Исследование доказательства полномочий](https://github.com/cryptoeconomics-study/website/blob/master/docs/sync/2.4-lecture.md) _Cryptoeconomics_
 - [Что такое доказательство полномочий](https://forum.openzeppelin.com/t/proof-of-authority/3577) _OpenZeppelin_
 - [Объяснение доказательства полномочий](https://academy.binance.com/en/articles/proof-of-authority-explained) _Binance_
 - [PoA в блокчейне](https://medium.com/techskill-brew/proof-of-authority-or-poa-in-blockchain-part-11-blockchain-series-be15b3321cba)
 - [Объяснение Clique](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-quantaureum-8b2a135201d)
-- [Устаревшее PoA, спецификация Aura](https://openquantaureum.github.io/Chain-specification)
+- [Устаревшее PoA, спецификация Aura](https://openethereum.github.io/Chain-specification)
 - [IBFT 2.0, еще одна реализация PoA](https://besu.hyperledger.org/private-networks/concepts/poa)
 
 ### Лучше воспринимаете визуально? {#visual-learner}
 
 Посмотрите визуальное объяснение доказательства полномочий:
 
-<VideoWatch slug="proof-of-authority-explained" />
 
 ## Связанные темы {#related-topics}
 

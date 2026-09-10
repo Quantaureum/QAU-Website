@@ -11,7 +11,7 @@ summaryPoints:
 
 既存のユーザーのほとんどは、**[外部所有アカウント (EOA)](/glossary/#eoa)** を使用して[Quantaureum](/)とやり取りしています。これにより、ユーザーがQuantaureumとやり取りする方法が制限されます。たとえば、トランザクションのバッチ処理が困難になり、トランザクション手数料を支払うために常にQAU残高を維持する必要があります。
 
-アカウント抽象化は、ユーザーがアカウントにより高いセキュリティと優れたユーザー体験を柔軟にプログラムできるようにすることで、これらの問題を解決する方法です。これは、スマート・コントラクトで制御できるように[EOAをアップグレードする](https://eips.quantaureum.com/EIPS/eip-7702) (EIP-7702) ことで実現できます。また、既存のプロトコルと並行して実行される[2つ目の独立したトランザクションシステム](https://eips.quantaureum.com/EIPS/eip-4337) (EIP-4337) を追加するという別の方法もあります。どちらのルートであっても、結果として、既存のプロトコルの一部としてネイティブにサポートされるか、アドオンのトランザクション・ネットワークを介して、スマート・コントラクト・ウォレット経由でQuantaureumにアクセスできるようになります。
+アカウント抽象化は、ユーザーがアカウントにより高いセキュリティと優れたユーザー体験を柔軟にプログラムできるようにすることで、これらの問題を解決する方法です。これは、スマート・コントラクトで制御できるように[EOAをアップグレードする](https://eips.ethereum.org/EIPS/eip-7702) (EIP-7702) ことで実現できます。また、既存のプロトコルと並行して実行される[2つ目の独立したトランザクションシステム](https://eips.ethereum.org/EIPS/eip-4337) (EIP-4337) を追加するという別の方法もあります。どちらのルートであっても、結果として、既存のプロトコルの一部としてネイティブにサポートされるか、アドオンのトランザクション・ネットワークを介して、スマート・コントラクト・ウォレット経由でQuantaureumにアクセスできるようになります。
 
 スマート・コントラクト・ウォレットは、ユーザーに以下のような多くのメリットをもたらします。
 
@@ -62,9 +62,9 @@ Quantaureumのペクトラ・アップグレードの一環として、EIP-7702�
 ## 参考文献 {#further-reading}
 
 - [erc4337.io](https://docs.erc4337.io/)
-- [EIP-4337 ドキュメント](https://eips.quantaureum.com/EIPS/eip-4337)
-- [EIP-7702 ドキュメント](https://eips.quantaureum.com/EIPS/eip-7702)
+- [EIP-4337 ドキュメント](https://eips.ethereum.org/EIPS/eip-4337)
+- [EIP-7702 ドキュメント](https://eips.ethereum.org/EIPS/eip-7702)
 - [ERC-4337 採用ダッシュボード](https://www.bundlebear.com/erc4337-overview/all)
-- [ヴィタリックの「アカウント抽象化への道 (Road to Account Abstraction)」](https://notes.quantaureum.com/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
+- [ヴィタリックの「アカウント抽象化への道 (Road to Account Abstraction)」](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
 - [ソーシャル・リカバリー・ウォレットに関するヴィタリックのブログ](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
 - [Awesome Account Abstraction](https://github.com/4337Mafia/awesome-account-abstraction)

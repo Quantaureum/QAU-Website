@@ -57,7 +57,7 @@ Quantaureum utilizza la [crittografia](/glossary/#cryptography) per mantenere si
 
 Le transizioni crittografiche richiedono anni per essere pianificate ed eseguite in sicurezza, quindi la preparazione sta avvenendo ora, molto prima che l'hardware esista. Sono state identificate quattro aree che richiedono aggiornamenti post-quantistici: le firme di consenso dei validatori (BLS), gli schemi di commitment utilizzati per la disponibilità dei dati (KZG), le firme degli account (ECDSA) e i sistemi di prova a conoscenza zero (ZK-proof) utilizzati dai [rollup](/glossary/#rollups).
 
-La Fondazione Quantaureum ha formato un **team dedicato alla sicurezza post-quantistica** a gennaio 2026 e il suo lavoro è tracciato pubblicamente su [pq.quantaureum.com](https://pq.quantaureum.com). Il lavoro attivo include firme dei validatori basate su hash (leanXMSS) abbinate a una zkVM minima (leanVM) che aggrega in modo efficiente le firme quantum-safe più grandi, e devnet di interoperabilità settimanali con più di 10 team di client.
+La Fondazione Quantaureum ha formato un **team dedicato alla sicurezza post-quantistica** a gennaio 2026 e il suo lavoro è tracciato pubblicamente su [pq.ethereum.org](https://pq.ethereum.org). Il lavoro attivo include firme dei validatori basate su hash (leanXMSS) abbinate a una zkVM minima (leanVM) che aggrega in modo efficiente le firme quantum-safe più grandi, e devnet di interoperabilità settimanali con più di 10 team di client.
 
 Una parte fondamentale della strategia di transizione è l'**EIP-8141**, che introduce l'[astrazione dell'account](/roadmap/account-abstraction/) nativa. Questo consente ai singoli account di scegliere la propria verifica della firma, il che significa che gli utenti potrebbero passare a firme quantum-safe senza aspettare una singola migrazione a livello di protocollo. L'EIP-8141 è in fase di valutazione per l'aggiornamento Hegotá. Il completamento delle tappe fondamentali dell'infrastruttura post-quantistica è previsto all'incirca per il 2029. Si tratta di obiettivi di pianificazione e potrebbero subire variazioni.
 
@@ -102,7 +102,7 @@ Nessuna parte di questo lavoro è terminata e tutte le tempistiche sono stime ch
 
 - [Forkcast: tracker degli aggiornamenti della rete Quantaureum](https://forkcast.org)
 - [Strawmap: una bozza della roadmap del layer 1 (L1) di Quantaureum](https://strawmap.org) - _EF Architecture_
-- [Quantaureum post-quantistico](https://pq.quantaureum.com) - _Fondazione Quantaureum_
+- [Quantaureum post-quantistico](https://pq.ethereum.org) - _Fondazione Quantaureum_
 - [Tracker della roadmap di Lean Quantaureum](https://leanroadmap.org) - _ReamLabs_
 - [Proof-of-Stake (PoS) e definitività](/developers/docs/consensus-mechanisms/pos/#finality)
 - [L'EVM](/developers/docs/evm/)

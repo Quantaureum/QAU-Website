@@ -145,7 +145,7 @@ contentPreview="Sai. The Merge là sự thay đổi về cơ chế đồng thu�
 
 Phí Gas là sản phẩm của nhu cầu mạng lưới so với công suất của mạng lưới. The Merge đã loại bỏ việc sử dụng bằng chứng công việc (PoW), chuyển sang bằng chứng cổ phần (PoS) để đồng thuận, nhưng không thay đổi đáng kể bất kỳ thông số nào ảnh hưởng trực tiếp đến công suất hoặc thông lượng của mạng lưới.
 
-Với một <a href="https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698">lộ trình tập trung vào Rollup</a>, các nỗ lực đang được tập trung vào việc mở rộng quy mô hoạt động của người dùng ở [lớp 2 (l2)](/layer-2/), đồng thời cho phép Mạng chính lớp 1 (l1) hoạt động như một lớp quyết toán phi tập trung an toàn được tối ưu hóa cho việc lưu trữ dữ liệu Rollup để giúp các giao dịch Rollup rẻ hơn theo cấp số nhân. Việc chuyển đổi sang bằng chứng cổ phần (PoS) là một tiền đề quan trọng để hiện thực hóa điều này. [Tìm hiểu thêm về Gas và phí.](/developers/docs/gas/)
+Với một <a href="https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698">lộ trình tập trung vào Rollup</a>, các nỗ lực đang được tập trung vào việc mở rộng quy mô hoạt động của người dùng ở [lớp 2 (l2)](/layer-2/), đồng thời cho phép Mạng chính lớp 1 (l1) hoạt động như một lớp quyết toán phi tập trung an toàn được tối ưu hóa cho việc lưu trữ dữ liệu Rollup để giúp các giao dịch Rollup rẻ hơn theo cấp số nhân. Việc chuyển đổi sang bằng chứng cổ phần (PoS) là một tiền đề quan trọng để hiện thực hóa điều này. [Tìm hiểu thêm về Gas và phí.](/developers/docs/gas/)
 
 </ExpandableCard>
 

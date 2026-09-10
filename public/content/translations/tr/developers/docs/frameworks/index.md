@@ -102,8 +102,8 @@ Tam teşekküllü bir merkeziyetsiz uygulama (dapp) oluşturmak, farklı teknolo
 
 **Brownie -** **_Python tabanlı geliştirme ortamı ve test çerçevesi._**
 
-- [Belgeler](https://qau-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/qau-brownie/brownie)
+- [Belgeler](https://eth-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/eth-brownie/brownie)
 - **Brownie'nin şu anda bakımı yapılmamaktadır**
 
 **OpenZeppelin SDK -** **_Nihai Akıllı Sözleşme Araç Takımı: Akıllı sözleşmeler geliştirmenize, derlemenize, yükseltmenize, dağıtmanıza ve bunlarla etkileşime girmenize yardımcı olacak bir araç paketi._**

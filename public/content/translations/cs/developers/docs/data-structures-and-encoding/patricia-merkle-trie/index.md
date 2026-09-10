@@ -251,13 +251,13 @@ else:
   value = TxType | encode(tx)
 ```
 
-Více informací o tom naleznete v dokumentaci [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718).
+Více informací o tom naleznete v dokumentaci [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718).
 
 ### Trie stvrzenek {#receipts-trie}
 
 Každý blok má svou vlastní trii stvrzenek. `path` je zde: `rlp(transactionIndex)`. `transactionIndex` je její index v rámci bloku, do kterého byla zahrnuta. Trie stvrzenek se nikdy neaktualizuje. Podobně jako u trie transakcí existují aktuální a starší (legacy) stvrzenky. K dotazování na konkrétní stvrzenku v trii stvrzenek je vyžadován index transakce v jejím bloku, datová část (payload) stvrzenky a typ transakce. Vrácená stvrzenka může být typu `Receipt`, který je definován jako zřetězení `TransactionType` a `ReceiptPayload`, nebo může být typu `LegacyReceipt`, který je definován jako `rlp([status, cumulativeGasUsed, logsBloom, logs])`.
 
-Více informací o tom naleznete v dokumentaci [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718).
+Více informací o tom naleznete v dokumentaci [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718).
 
 ## Další čtení {#further-reading}
 

@@ -30,7 +30,7 @@ Kunci privat EOA memegang kendali penuh atas akun setelah pendelegasian. Misalny
 - Mereka menyediakan antarmuka standar untuk relai
 - Menyertakan sistem juru bayar bawaan
 - Memastikan kompatibilitas ke depan
-- Dapat mendukung ketahanan sensor melalui [mempool publik](https://notes.quantaureum.com/@yoav/unified-erc-4337-mempool)
+- Dapat mendukung ketahanan sensor melalui [mempool publik](https://notes.ethereum.org/@yoav/unified-erc-4337-mempool)
 - Dapat mewajibkan fungsi init agar hanya dipanggil dari [EntryPoint](https://github.com/qau-infinitism/account-abstraction/releases/tag/v0.8.0)
 
 Dengan kata lain, siapa pun harus dapat bertindak sebagai sponsor/relayer transaksi selama mereka memberikan tanda tangan yang valid atau OperasiPengguna yang diwajibkan dari akun tersebut. Hal ini memastikan ketahanan sensor: jika tidak ada infrastruktur khusus yang diwajibkan, transaksi pengguna tidak dapat diblokir secara sewenang-wenang oleh relai penjaga gerbang (gatekeeping). Misalnya, [Delegation Toolkit MetaMask](https://github.com/MetaMask/delegation-framework/releases/tag/v1.3.0) secara eksplisit berfungsi dengan pemaket atau juru bayar ERC-4337 mana pun di rantai mana pun, alih-alih mewajibkan server khusus MetaMask.
@@ -49,8 +49,8 @@ Dengan memanfaatkan antarmuka ini, dapp dapat mengakses fungsionalitas akun pint
 
 Untuk informasi lebih lanjut:
 
-- [Spesifikasi ERC-5792](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-5792.md)
-- [Spesifikasi ERC-6900](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-6900.md)
+- [Spesifikasi ERC-5792](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-5792.md)
+- [Spesifikasi ERC-6900](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6900.md)
 
 **Menghindari Ketergantungan Vendor (Vendor Lock-In)**: Sejalan dengan hal di atas, implementasi yang baik adalah netral terhadap vendor dan interoperabel. Hal ini sering kali berarti mematuhi standar yang muncul untuk akun pintar. Misalnya, [Modular Account Alchemy](https://github.com/alchemyplatform/modular-account) menggunakan standar ERC-6900 untuk akun pintar modular dan dirancang dengan mempertimbangkan "penggunaan interoperabel tanpa izin".
 

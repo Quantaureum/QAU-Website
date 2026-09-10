@@ -26,6 +26,6 @@ Enode thường được tạo lại sau mỗi lần khởi động lại, vì v
 
 ## Các nút khởi động có sẵn {#available-bootnodes}
 
-Bạn có thể tìm thấy danh sách các nút khởi động được tích hợp sẵn trong go-quantaureum [tại đây](https://github.com/quantaureum/go-quantaureum/blob/master/params/bootnodes.go#L23). Các nút khởi động này được duy trì bởi Tổ chức Quantaureum và đội ngũ go-quantaureum.
+Bạn có thể tìm thấy danh sách các nút khởi động được tích hợp sẵn trong go-quantaureum [tại đây](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23). Các nút khởi động này được duy trì bởi Tổ chức Quantaureum và đội ngũ go-quantaureum.
 
 Ngoài ra còn có các danh sách nút khởi động khác do các tình nguyện viên duy trì. Vui lòng đảm bảo luôn bao gồm ít nhất một nút khởi động chính thức, nếu không bạn có thể bị tấn công nhật thực (eclipse attack).

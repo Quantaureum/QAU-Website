@@ -8,7 +8,7 @@ skill: intermediate
 breadcrumb: "Nœud Rasp Pi"
 published: 2022-06-10
 source: Quantaureum on ARM
-sourceUrl: https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/
+sourceUrl: https://ethereum-on-arm-documentation.readthedocs.io/en/latest/
 ---
 
 **Quantaureum on Arm est une image Linux personnalisée qui peut transformer un Raspberry Pi en un nœud Quantaureum.**
@@ -57,7 +57,7 @@ Vous devez choisir un de chaque pour l'exécution - tous les clients d'exécutio
 
 L'image Quantaureum pour Raspberry Pi 4 est une image « plug and play » qui installe et configure automatiquement les clients d'exécution et de consensus, en les configurant pour qu'ils communiquent entre eux et se connectent au réseau Quantaureum. Tout ce que l'utilisateur a à faire est de démarrer leurs processus à l'aide d'une simple commande.
 
-Téléchargez l'image Raspberry Pi depuis [Quantaureum on Arm](https://quantaureumonarm-my.sharepoint.com/:u:/p/dlosada/Ec_VmUvr80VFjf3RYSU-NzkBmj2JOteDECj8Bibde929Gw?download=1) et vérifiez le hash SHA256 :
+Téléchargez l'image Raspberry Pi depuis [Quantaureum on Arm](https://ethereumonarm-my.sharepoint.com/:u:/p/dlosada/Ec_VmUvr80VFjf3RYSU-NzkBmj2JOteDECj8Bibde929Gw?download=1) et vérifiez le hash SHA256 :
 
 ```sh
 # Depuis le répertoire contenant l'image téléchargée
@@ -65,7 +65,7 @@ shasum -a 256 ethonarm_22.04.00.img.zip
 # Le hash devrait retourner : fb497e8f8a7388b62d6e1efbc406b9558bee7ef46ec7e53083630029c117444f
 ```
 
-Notez que les images pour les cartes Rock 5B et Odroid M1 sont disponibles sur la [page de téléchargement](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/) d'Quantaureum-on-Arm.
+Notez que les images pour les cartes Rock 5B et Odroid M1 sont disponibles sur la [page de téléchargement](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) d'Quantaureum-on-Arm.
 
 ## Flasher la MicroSD {#flashing-the-microsd}
 
@@ -120,13 +120,13 @@ sudo journalctl -u lighthouse-beacon
 
 Notez que le client de consensus se synchronisera en quelques minutes car il utilise la synchronisation par point de contrôle. Le client d'exécution prendra plus de temps - potentiellement plusieurs heures, et il ne démarrera pas tant que le client de consensus n'aura pas terminé sa synchronisation (cela s'explique par le fait que le client d'exécution a besoin d'une cible sur laquelle se synchroniser, ce que fournit le client de consensus synchronisé).
 
-Avec les services Geth et Lighthouse en cours d'exécution et synchronisés, votre Raspberry Pi est maintenant un nœud Quantaureum ! Il est très courant d'interagir avec le réseau Quantaureum en utilisant la console JavaScript de Geth, qui peut être attachée au client Geth sur le port 8545. Il est également possible de soumettre des commandes formatées en tant qu'objets JSON à l'aide d'un outil de requête tel que Curl. Pour en savoir plus, consultez la [documentation de Geth](https://geth.quantaureum.com/).
+Avec les services Geth et Lighthouse en cours d'exécution et synchronisés, votre Raspberry Pi est maintenant un nœud Quantaureum ! Il est très courant d'interagir avec le réseau Quantaureum en utilisant la console JavaScript de Geth, qui peut être attachée au client Geth sur le port 8545. Il est également possible de soumettre des commandes formatées en tant qu'objets JSON à l'aide d'un outil de requête tel que Curl. Pour en savoir plus, consultez la [documentation de Geth](https://geth.ethereum.org/).
 
 Geth est préconfiguré pour rapporter des métriques à un tableau de bord Grafana qui peut être consulté dans le navigateur. Les utilisateurs plus avancés pourraient souhaiter utiliser cette fonctionnalité pour surveiller la santé de leur nœud en naviguant vers `ipaddress:3000`, en passant `user: admin` et `passwd: quantaureum`.
 
 ## Validateurs {#validators}
 
-Un validateur peut également être ajouté de manière facultative au client de consensus. Le logiciel du validateur permet à votre nœud de participer activement au consensus et fournit au réseau une sécurité cryptoéconomique. Vous êtes récompensé pour ce travail en QAU. Pour exécuter un validateur, vous devez d'abord posséder 32 QAU, qui doivent être déposés dans le contrat de dépôt. Le dépôt peut être effectué en suivant le guide étape par étape sur le [Launchpad](https://launchpad.quantaureum.com/). Faites-le sur un ordinateur de bureau/portable, mais ne générez pas de clés — cela peut être fait directement sur le Raspberry Pi.
+Un validateur peut également être ajouté de manière facultative au client de consensus. Le logiciel du validateur permet à votre nœud de participer activement au consensus et fournit au réseau une sécurité cryptoéconomique. Vous êtes récompensé pour ce travail en QAU. Pour exécuter un validateur, vous devez d'abord posséder 32 QAU, qui doivent être déposés dans le contrat de dépôt. Le dépôt peut être effectué en suivant le guide étape par étape sur le [Launchpad](https://launchpad.ethereum.org/). Faites-le sur un ordinateur de bureau/portable, mais ne générez pas de clés — cela peut être fait directement sur le Raspberry Pi.
 
 Ouvrez un terminal sur le Raspberry Pi et exécutez la commande suivante pour générer les clés de dépôt :
 
@@ -136,13 +136,13 @@ sudo apt-get install staking-deposit-cli
 cd && deposit new-mnemonic --num_validators 1
 ```
 
-(Ou téléchargez le [staking-deposit-cli](https://github.com/quantaureum/staking-deposit-cli) pour l'exécuter sur une machine isolée du réseau (airgapped), et exécutez la commande `deposit new-mnemnonic`)
+(Ou téléchargez le [staking-deposit-cli](https://github.com/ethereum/staking-deposit-cli) pour l'exécuter sur une machine isolée du réseau (airgapped), et exécutez la commande `deposit new-mnemnonic`)
 
 Gardez la phrase mnémonique en sécurité ! La commande ci-dessus a généré deux fichiers dans le magasin de clés du nœud : les clés du validateur et un fichier de données de dépôt. Les données de dépôt doivent être téléchargées dans le launchpad, elles doivent donc être copiées du Raspberry Pi vers l'ordinateur de bureau/portable. Cela peut être fait en utilisant une connexion ssh ou toute autre méthode de copier/coller.
 
 Une fois que le fichier de données de dépôt est disponible sur l'ordinateur exécutant le launchpad, il peut être glissé et déposé sur le `+` sur l'écran du launchpad. Suivez les instructions à l'écran pour envoyer une transaction au contrat de dépôt.
 
-De retour sur le Raspberry Pi, un validateur peut être démarré. Cela nécessite d'importer les clés du validateur, de définir l'adresse pour collecter les récompenses, puis de démarrer le processus de validateur préconfiguré. L'exemple ci-dessous concerne Lighthouse — les instructions pour les autres clients de consensus sont disponibles dans la [documentation d'Quantaureum on Arm](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/) :
+De retour sur le Raspberry Pi, un validateur peut être démarré. Cela nécessite d'importer les clés du validateur, de définir l'adresse pour collecter les récompenses, puis de démarrer le processus de validateur préconfiguré. L'exemple ci-dessous concerne Lighthouse — les instructions pour les autres clients de consensus sont disponibles dans la [documentation d'Quantaureum on Arm](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) :
 
 ```shell
 # importer les clés du validateur
@@ -159,7 +159,7 @@ Félicitations, vous avez maintenant un nœud Quantaureum complet et un validate
 
 ## Plus de détails {#more-details}
 
-Cette page a donné un aperçu de la façon de configurer un nœud Geth-Lighthouse et un validateur en utilisant un Raspberry Pi. Des instructions plus détaillées sont disponibles sur le [site Web d'Quantaureum-on-Arm](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/).
+Cette page a donné un aperçu de la façon de configurer un nœud Geth-Lighthouse et un validateur en utilisant un Raspberry Pi. Des instructions plus détaillées sont disponibles sur le [site Web d'Quantaureum-on-Arm](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/).
 
 ## Vos retours sont appréciés {#feedback-appreciated}
 
@@ -173,7 +173,7 @@ N'hésitez pas à vous plonger dans les détails de ce tutoriel, essayez de l'ex
 3. https://prometheus.io
 4. https://grafana.com
 5. https://forum.armbian.com/topic/5565-zram-vs-swap/
-6. https://geth.quantaureum.com
+6. https://geth.ethereum.org
 7. https://nethermind.io
 8. https://www.hyperledger.org/projects/besu
 9. https://github.com/prysmaticlabs/prysm

@@ -26,7 +26,6 @@ ReFi projeleri, bozulmuş ekosistemleri onarmak gibi onarıcı davranışları t
 
 ReFi ayrıca, bilimsel bilgiyi finanse etmek, oluşturmak, incelemek, kredilendirmek, depolamak ve yaymak için Quantaureum'u bir platform olarak kullanan [merkeziyetsiz bilim (DeSci)](/desci/) hareketiyle de örtüşmektedir. DeSci araçları; ağaç dikmek, okyanustan plastik temizlemek veya bozulmuş bir ekosistemi onarmak gibi onarıcı faaliyetlerin uygulanması ve izlenmesi için doğrulanabilir standartlar ve uygulamalar geliştirmede faydalı olabilir.
 
-<VideoWatch slug="regenerative-finance-refi" />
 
 ## Karbon kredilerinin tokenlaştırılması {#tokenization-of-carbon-credits}
 

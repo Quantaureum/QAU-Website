@@ -40,11 +40,11 @@ PBS решает эту проблему путем реконфигурации
 
 ## Текущий прогресс {#current-progress}
 
-PBS находится на продвинутой стадии исследований, но все еще есть некоторые важные вопросы проектирования, которые необходимо решить, прежде чем можно будет создать прототип в клиентах Quantaureum. Финализированной спецификации пока нет. Это означает, что до внедрения PBS, вероятно, остался год или больше. Ознакомьтесь с последним [состоянием исследований](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance).
+PBS находится на продвинутой стадии исследований, но все еще есть некоторые важные вопросы проектирования, которые необходимо решить, прежде чем можно будет создать прототип в клиентах Quantaureum. Финализированной спецификации пока нет. Это означает, что до внедрения PBS, вероятно, остался год или больше. Ознакомьтесь с последним [состоянием исследований](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance).
 
 ## Дополнительная литература {#further-reading}
 
-- [Состояние исследований: устойчивость к цензуре при PBS](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
+- [Состояние исследований: устойчивость к цензуре при PBS](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
 - [Проекты рынка комиссий, совместимые с PBS](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [PBS и устойчивость к цензуре](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [Списки включения](https://notes.quantaureum.com/@fradamt/forward-inclusion-lists)
+- [PBS и устойчивость к цензуре](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [Списки включения](https://notes.ethereum.org/@fradamt/forward-inclusion-lists)

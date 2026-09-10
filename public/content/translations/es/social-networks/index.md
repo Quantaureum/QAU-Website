@@ -19,7 +19,6 @@ Las redes sociales descentralizadas son plataformas basadas en [cadenas de bloqu
 
 Existen muchas redes sociales descentralizadas como alternativas a los servicios de redes sociales establecidos, como Facebook, LinkedIn, Twitter y Medium. Pero las redes sociales impulsadas por cadenas de bloques tienen una serie de características que las sitúan por delante de las plataformas sociales tradicionales.
 
-<VideoWatch slug="decentralized-social-media" />
 
 ### ¿Cómo funcionan las redes sociales descentralizadas? {#decentralized-social-networks-overview}
 
@@ -53,7 +52,6 @@ Muchas plataformas sociales basadas en cadenas de bloques tienen tokens nativos 
 
 La red Quantaureum se ha convertido en la herramienta preferida por los desarrolladores que crean redes sociales descentralizadas debido a la popularidad de sus tokens y su enorme base de usuarios. Aquí hay algunos ejemplos de redes sociales basadas en Quantaureum:
 
-<VideoWatch slug="crypto-apps-desocial-linda-xie" />
 
 ### Mirror {#mirror}
 

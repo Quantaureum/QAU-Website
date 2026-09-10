@@ -19,7 +19,6 @@ Les NFT sont des jetons qui sont **individuellement uniques**. Chaque NFT possè
 
 Le caractère unique de chaque NFT permet la tokenisation de choses comme l'art, les objets de collection ou même l'immobilier, où un NFT unique spécifique représente un élément numérique ou du monde réel unique et spécifique. La propriété d'un actif est publiquement vérifiable sur la [chaîne de blocs](/glossary/#blockchain) Quantaureum.
 
-<VideoWatch slug="learn-nfts-and-defi" />
 
 ## L'internet des actifs {#internet-of-assets}
 

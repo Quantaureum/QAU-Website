@@ -19,7 +19,6 @@ Bản nâng cấp Fusaka chỉ là một bước tiến duy nhất trong các m�
 </AlertContent>
 </Alert>
 
-<VideoWatch slug="fusaka-upgrade-explained" />
 
 ## Các cải tiến trong Fusaka {#improvements-in-fusaka}
 
@@ -29,7 +28,7 @@ Bản nâng cấp Fusaka chỉ là một bước tiến duy nhất trong các m�
 
 Đây là _điểm nhấn chính_ của Phân nhánh Fusaka, tính năng chính được thêm vào trong bản nâng cấp này. Các lớp 2 (l2) hiện tại đăng dữ liệu của chúng lên Quantaureum dưới dạng các khối dữ liệu, loại dữ liệu tạm thời được tạo riêng cho các lớp 2 (l2). Trước Fusaka, mọi nút đầy đủ phải lưu trữ mọi khối dữ liệu để đảm bảo rằng dữ liệu đó tồn tại. Khi thông lượng khối dữ liệu tăng lên, việc phải tải xuống tất cả dữ liệu này trở nên tiêu tốn tài nguyên một cách không thể duy trì được.
 
-Với [việc lấy mẫu tính khả dụng của dữ liệu](https://notes.quantaureum.com/@fradamt/das-fork-choice), thay vì phải lưu trữ toàn bộ dữ liệu của khối dữ liệu, mỗi nút sẽ chịu trách nhiệm cho một tập hợp con của dữ liệu khối dữ liệu. Các khối dữ liệu được phân phối ngẫu nhiên đồng đều trên các nút trong mạng lưới với mỗi nút đầy đủ chỉ giữ 1/8 dữ liệu, do đó cho phép mở rộng quy mô theo lý thuyết lên đến 8 lần. Để đảm bảo tính khả dụng của dữ liệu, bất kỳ phần dữ liệu nào cũng có thể được tái tạo lại từ bất kỳ 50% dữ liệu hiện có nào của toàn bộ dữ liệu bằng các phương pháp giúp giảm xác suất dữ liệu sai hoặc bị thiếu xuống mức không đáng kể về mặt mật mã học (~một phần 10<sup>20</sup> đến một phần 10<sup>24</sup>).
+Với [việc lấy mẫu tính khả dụng của dữ liệu](https://notes.ethereum.org/@fradamt/das-fork-choice), thay vì phải lưu trữ toàn bộ dữ liệu của khối dữ liệu, mỗi nút sẽ chịu trách nhiệm cho một tập hợp con của dữ liệu khối dữ liệu. Các khối dữ liệu được phân phối ngẫu nhiên đồng đều trên các nút trong mạng lưới với mỗi nút đầy đủ chỉ giữ 1/8 dữ liệu, do đó cho phép mở rộng quy mô theo lý thuyết lên đến 8 lần. Để đảm bảo tính khả dụng của dữ liệu, bất kỳ phần dữ liệu nào cũng có thể được tái tạo lại từ bất kỳ 50% dữ liệu hiện có nào của toàn bộ dữ liệu bằng các phương pháp giúp giảm xác suất dữ liệu sai hoặc bị thiếu xuống mức không đáng kể về mặt mật mã học (~một phần 10<sup>20</sup> đến một phần 10<sup>24</sup>).
 
 Điều này giữ cho các yêu cầu về phần cứng và băng thông đối với các nút ở mức có thể duy trì được trong khi cho phép mở rộng khối dữ liệu, dẫn đến quy mô lớn hơn với mức phí nhỏ hơn cho các lớp 2 (l2).
 
@@ -37,7 +36,7 @@ Với [việc lấy mẫu tính khả dụng của dữ liệu](https://notes.qu
 
 **Tài nguyên**:
 
-- [Đặc tả kỹ thuật EIP-7594](https://eips.quantaureum.com/EIPS/eip-7594)
+- [Đặc tả kỹ thuật EIP-7594](https://eips.ethereum.org/EIPS/eip-7594)
 - [DappLion nói về PeerDAS: Mở rộng Quantaureum hôm nay | ETHSofia 2024](https://youtu.be/bONWd1x2TjQ?t=328)
 - [Học thuật: Tài liệu về PeerDAS của Quantaureum (PDF)](https://eprint.iacr.org/2024/1362.pdf)
 
@@ -57,7 +56,7 @@ Khi các khối dữ liệu lần đầu tiên được thêm vào mạng lướ
 
 Nguồn biểu đồ: [Quantaureum Blobs - @hildobby, Dune Analytics](https://dune.com/hildobby/blobs)
 
-**Tài nguyên**: [Đặc tả kỹ thuật EIP-7892](https://eips.quantaureum.com/EIPS/eip-7892)
+**Tài nguyên**: [Đặc tả kỹ thuật EIP-7892](https://eips.ethereum.org/EIPS/eip-7892)
 
 #### Phí cơ sở của khối dữ liệu bị giới hạn bởi chi phí thực thi {#blob-base-fee-bounded-by-execution-costs}
 
@@ -71,8 +70,8 @@ EIP-7918 ghim một mức giá dự trữ theo tỷ lệ dưới mỗi khối d�
 
 **Tài nguyên**:
 
-- [Đặc tả kỹ thuật EIP-7918](https://eips.quantaureum.com/EIPS/eip-7918)
-- [Giải thích trên Storybook](https://notes.quantaureum.com/@anderselowsson/AIG)
+- [Đặc tả kỹ thuật EIP-7918](https://eips.ethereum.org/EIPS/eip-7918)
+- [Giải thích trên Storybook](https://notes.ethereum.org/@anderselowsson/AIG)
 
 ### Mở rộng lớp 1 (l1) {#scale-l1}
 
@@ -82,21 +81,21 @@ Vào tháng 7 năm 2025, các máy khách thực thi của Quantaureum [đã b�
 
 EIP này nằm trong một phần tách biệt với "Các EIP cốt lõi" vì Phân nhánh không thực sự triển khai bất kỳ thay đổi nào - đó là một thông báo rằng các nhóm máy khách phải hỗ trợ hết hạn lịch sử trước bản nâng cấp Fusaka. Trên thực tế, các máy khách có thể triển khai điều này bất cứ lúc nào nhưng việc thêm nó vào bản nâng cấp đã cụ thể hóa nó vào danh sách việc cần làm của họ và cho phép họ thử nghiệm các thay đổi của Fusaka kết hợp với tính năng này.
 
-**Tài nguyên**: [Đặc tả kỹ thuật EIP-7642](https://eips.quantaureum.com/EIPS/eip-7642)
+**Tài nguyên**: [Đặc tả kỹ thuật EIP-7642](https://eips.ethereum.org/EIPS/eip-7642)
 
 #### Đặt giới hạn trên cho MODEXP {#set-upper-bounds-for-modexp}
 
 Cho đến nay, hợp đồng tiền biên dịch MODEXP đã chấp nhận các con số ở hầu hết mọi kích thước. Điều đó khiến nó khó kiểm tra, dễ bị lạm dụng và rủi ro đối với sự ổn định của máy khách. EIP-7823 đặt ra một giới hạn rõ ràng: mỗi số đầu vào có thể dài tối đa 8192 bit (1024 byte). Bất kỳ thứ gì lớn hơn đều bị từ chối, Gas của giao dịch bị đốt cháy và không có thay đổi trạng thái nào xảy ra. Nó đáp ứng rất thoải mái các nhu cầu trong thế giới thực trong khi loại bỏ các trường hợp cực đoan làm phức tạp việc lập kế hoạch giới hạn gas và đánh giá bảo mật. Thay đổi này cung cấp khả năng bảo mật và bảo vệ chống DoS tốt hơn mà không ảnh hưởng đến trải nghiệm của người dùng hoặc nhà phát triển.
 
-**Tài nguyên**: [Đặc tả kỹ thuật EIP-7823](https://eips.quantaureum.com/EIPS/eip-7823)
+**Tài nguyên**: [Đặc tả kỹ thuật EIP-7823](https://eips.ethereum.org/EIPS/eip-7823)
 
 #### Mức trần giới hạn gas của giao dịch {#transaction-gas-limit-cap}
 
-EIP-[7825](https://eips.quantaureum.com/EIPS/eip-7825) thêm mức trần 16.777.216 (2^24) Gas cho mỗi giao dịch. Đây là biện pháp củng cố chủ động chống DoS bằng cách giới hạn chi phí trong trường hợp xấu nhất của bất kỳ giao dịch đơn lẻ nào khi chúng ta tăng giới hạn gas của khối. Nó làm cho việc xác minh và truyền bá dễ dàng lập mô hình hơn để cho phép chúng ta giải quyết vấn đề mở rộng quy mô thông qua việc tăng giới hạn gas.
+EIP-[7825](https://eips.ethereum.org/EIPS/eip-7825) thêm mức trần 16.777.216 (2^24) Gas cho mỗi giao dịch. Đây là biện pháp củng cố chủ động chống DoS bằng cách giới hạn chi phí trong trường hợp xấu nhất của bất kỳ giao dịch đơn lẻ nào khi chúng ta tăng giới hạn gas của khối. Nó làm cho việc xác minh và truyền bá dễ dàng lập mô hình hơn để cho phép chúng ta giải quyết vấn đề mở rộng quy mô thông qua việc tăng giới hạn gas.
 
 Tại sao chính xác là 2^24 Gas? Nó nhỏ hơn một cách thoải mái so với giới hạn gas hiện nay, đủ lớn cho các đợt triển khai hợp đồng thực tế & các hợp đồng tiền biên dịch nặng, và lũy thừa của 2 giúp dễ dàng triển khai trên các máy khách. Kích thước giao dịch tối đa mới này tương tự như kích thước khối trung bình trước Pectra, khiến nó trở thành một giới hạn hợp lý cho bất kỳ hoạt động nào trên Quantaureum.
 
-**Tài nguyên**: [Đặc tả kỹ thuật EIP-7825](https://eips.quantaureum.com/EIPS/eip-7825)
+**Tài nguyên**: [Đặc tả kỹ thuật EIP-7825](https://eips.ethereum.org/EIPS/eip-7825)
 
 #### Tăng chi phí Gas của `MODEXP` {#modexp-gas-cost-increase}
 
@@ -112,7 +111,7 @@ EIP này thay đổi việc định giá để phù hợp với chi phí tính t
 
 Bằng cách đối chiếu chi phí tốt hơn với thời gian xử lý thực tế, MODEXP không còn có thể khiến một khối mất quá nhiều thời gian để xác minh. Thay đổi này là một trong số những thay đổi nhằm đảm bảo an toàn cho việc tăng giới hạn gas của khối Quantaureum trong tương lai.
 
-**Tài nguyên**: [Đặc tả kỹ thuật EIP-7883](https://eips.quantaureum.com/EIPS/eip-7883)
+**Tài nguyên**: [Đặc tả kỹ thuật EIP-7883](https://eips.ethereum.org/EIPS/eip-7883)
 
 #### Giới hạn kích thước khối thực thi RLP {#rlp-execution-block-size-limit}
 
@@ -131,7 +130,7 @@ và từ chối bất kỳ khối thực thi nào có tải trọng RLP vượt 
 
 Mục tiêu là giới hạn thời gian truyền bá/xác minh trong trường hợp xấu nhất và điều chỉnh phù hợp với hành vi gossip của lớp đồng thuận, giảm rủi ro tổ chức lại chuỗi/DoS mà không thay đổi việc hạch toán Gas.
 
-**Tài nguyên**: [Đặc tả kỹ thuật EIP-7934](https://eips.quantaureum.com/EIPS/eip-7934)
+**Tài nguyên**: [Đặc tả kỹ thuật EIP-7934](https://eips.ethereum.org/EIPS/eip-7934)
 
 #### Đặt giới hạn gas mặc định thành 60 triệu {#set-default-gas-limit-to-60-million}
 
@@ -141,7 +140,7 @@ EIP-7935 điều phối các nhóm máy khách lớp thực thi (EL) để tăng
 
 Kế hoạch trên mạng phát triển nhắm mục tiêu thử nghiệm sức chịu đựng ở mức ~60 triệu (các khối đầy đủ với tải tổng hợp) và các đợt tăng lặp đi lặp lại; nghiên cứu cho thấy các bệnh lý về kích thước khối trong trường hợp xấu nhất không nên bị ràng buộc dưới mức ~150 triệu. Việc triển khai nên được kết hợp với mức trần giới hạn gas của giao dịch (EIP-7825) để không có giao dịch đơn lẻ nào có thể chiếm ưu thế khi các giới hạn tăng lên.
 
-**Tài nguyên**: [Đặc tả kỹ thuật EIP-7935](https://eips.quantaureum.com/EIPS/eip-7935)
+**Tài nguyên**: [Đặc tả kỹ thuật EIP-7935](https://eips.ethereum.org/EIPS/eip-7935)
 
 ### Cải thiện UX {#improve-ux}
 
@@ -151,13 +150,13 @@ Với EIP-7917, Chuỗi Beacon sẽ nhận biết được những người đ�
 
 Tính năng này mang lại lợi ích cho việc triển khai máy khách và bảo mật của mạng lưới vì nó ngăn chặn các trường hợp ngoại lệ trong đó các trình xác thực có thể thao túng lịch trình của người đề xuất. Việc dự đoán trước cũng cho phép giảm bớt độ phức tạp của việc triển khai.
 
-**Tài nguyên**: [Đặc tả kỹ thuật EIP-7917](https://eips.quantaureum.com/EIPS/eip-7917)
+**Tài nguyên**: [Đặc tả kỹ thuật EIP-7917](https://eips.ethereum.org/EIPS/eip-7917)
 
 #### Mã lệnh đếm số không ở đầu (CLZ) {#count-leading-zeros-opcode}
 
 Tính năng này thêm một lệnh EVM nhỏ, **đếm số không ở đầu (CLZ)**. Hầu hết mọi thứ trong EVM đều được biểu diễn dưới dạng giá trị 256-bit—mã lệnh mới này trả về số lượng bit không ở phía trước. Đây là một tính năng phổ biến trong nhiều kiến trúc tập lệnh vì nó cho phép các phép toán số học hiệu quả hơn. Trên thực tế, điều này thu gọn các thao tác quét bit thủ công hiện nay thành một bước, do đó việc tìm bit được thiết lập đầu tiên, quét các byte hoặc phân tích cú pháp các trường bit trở nên đơn giản và rẻ hơn. Mã lệnh này có chi phí cố định, thấp và đã được đo chuẩn để ngang bằng với một phép cộng cơ bản, giúp cắt giảm mã byte và tiết kiệm Gas cho cùng một công việc.
 
-**Tài nguyên**: [Đặc tả kỹ thuật EIP-7939](https://eips.quantaureum.com/EIPS/eip-7939)
+**Tài nguyên**: [Đặc tả kỹ thuật EIP-7939](https://eips.ethereum.org/EIPS/eip-7939)
 
 #### Hợp đồng tiền biên dịch hỗ trợ đường cong secp256r1 {#secp256r1-precompile}
 
@@ -169,7 +168,7 @@ Nâng cấp UX! Đối với người dùng, điều này mở khóa việc ký 
 
 **Tài nguyên**:
 
-- [Đặc tả kỹ thuật EIP-7951](https://eips.quantaureum.com/EIPS/eip-7951)
+- [Đặc tả kỹ thuật EIP-7951](https://eips.ethereum.org/EIPS/eip-7951)
 - [Tìm hiểu thêm về RIP-7212](https://www.alchemy.com/blog/what-is-rip-7212) _(Lưu ý rằng EIP-7951 đã thay thế RIP-7212)_
 
 ### Siêu dữ liệu {#meta}
@@ -184,7 +183,7 @@ Các ảnh chụp nhanh bao gồm: `chainId`, `forkId`, thời gian kích hoạt
 
 EIP này nằm trong một phần tách biệt với "Các EIP cốt lõi" vì Phân nhánh không thực sự triển khai bất kỳ thay đổi nào - đó là một thông báo rằng các nhóm máy khách phải triển khai phương thức JSON-RPC này trước bản nâng cấp Fusaka.
 
-**Tài nguyên**: [Đặc tả kỹ thuật EIP-7910](https://eips.quantaureum.com/EIPS/eip-7910)
+**Tài nguyên**: [Đặc tả kỹ thuật EIP-7910](https://eips.ethereum.org/EIPS/eip-7910)
 
 ## Câu hỏi thường gặp {#faq}
 
@@ -243,7 +242,7 @@ Thay đổi này không làm thay đổi cách thức hoạt động của máy 
 
 PeerDAS tạo ra một sự thay đổi đáng kể trong cách các nút truyền dữ liệu khối dữ liệu. Tất cả dữ liệu được chia thành các phần gọi là các cột trên 128 mạng con với các nút chỉ đăng ký một số trong số chúng. Số lượng các cột mạng con mà các nút phải lưu giữ phụ thuộc vào cấu hình của chúng và số lượng trình xác thực được kết nối. Các yêu cầu về băng thông thực tế sẽ phụ thuộc vào số lượng khối dữ liệu được phép trong mạng lưới và loại nút. Tại thời điểm kích hoạt Fusaka, mục tiêu khối dữ liệu vẫn giữ nguyên như trước, nhưng với PeerDAS, các nhà điều hành nút có thể thấy sự sụt giảm trong việc sử dụng ổ đĩa của các khối dữ liệu và lưu lượng mạng lưới. Khi các BPO cấu hình số lượng khối dữ liệu cao hơn trong mạng lưới, băng thông cần thiết sẽ tăng lên với mỗi BPO.
 
-Các yêu cầu của nút vẫn nằm trong [các giới hạn được khuyến nghị](https://eips.quantaureum.com/EIPS/eip-7870) ngay cả sau các BPO của Fusaka.
+Các yêu cầu của nút vẫn nằm trong [các giới hạn được khuyến nghị](https://eips.ethereum.org/EIPS/eip-7870) ngay cả sau các BPO của Fusaka.
 
 #### Nút đầy đủ {#full-nodes}
 
@@ -267,13 +266,13 @@ Số lượng mạng con được đăng ký tăng lên khi có nhiều số dư
 
 Fusaka củng cố EVM với các thay đổi và tính năng nhỏ mới.
 
-- Để bảo mật trong khi mở rộng quy mô, kích thước tối đa của một giao dịch đơn lẻ sẽ bị [giới hạn ở mức 16,7 triệu](https://eips.quantaureum.com/EIPS/eip-7825) đơn vị Gas.
-- [Mã lệnh mới đếm số không ở đầu (CLZ)](https://eips.quantaureum.com/EIPS/eip-7939) được thêm vào EVM và sẽ cho phép các ngôn ngữ hợp đồng thông minh thực hiện một số hoạt động nhất định hiệu quả hơn.
-- [Chi phí của hợp đồng tiền biên dịch `ModExp` sẽ được tăng lên](https://eips.quantaureum.com/EIPS/eip-7883)—các hợp đồng sử dụng nó sẽ tính phí Gas cao hơn cho việc thực thi.
+- Để bảo mật trong khi mở rộng quy mô, kích thước tối đa của một giao dịch đơn lẻ sẽ bị [giới hạn ở mức 16,7 triệu](https://eips.ethereum.org/EIPS/eip-7825) đơn vị Gas.
+- [Mã lệnh mới đếm số không ở đầu (CLZ)](https://eips.ethereum.org/EIPS/eip-7939) được thêm vào EVM và sẽ cho phép các ngôn ngữ hợp đồng thông minh thực hiện một số hoạt động nhất định hiệu quả hơn.
+- [Chi phí của hợp đồng tiền biên dịch `ModExp` sẽ được tăng lên](https://eips.ethereum.org/EIPS/eip-7883)—các hợp đồng sử dụng nó sẽ tính phí Gas cao hơn cho việc thực thi.
 
 ### Giới hạn gas 16 triệu mới ảnh hưởng như thế nào đến các nhà phát triển hợp đồng? {#how-does-new-16m-gas-limit-affects-contract-developers}
 
-Fusaka giới thiệu một giới hạn đối với [kích thước tối đa của một giao dịch đơn lẻ là 16,7 triệu](https://eips.quantaureum.com/EIPS/eip-7825) (2^24) đơn vị Gas. Đây gần bằng kích thước trước đây của một khối trung bình, khiến nó đủ lớn để chứa các giao dịch phức tạp có thể tiêu tốn toàn bộ một khối. Giới hạn này tạo ra sự bảo vệ cho các máy khách, ngăn chặn các cuộc tấn công DoS tiềm ẩn trong tương lai với giới hạn gas của khối cao hơn. Mục tiêu của việc mở rộng quy mô là cho phép nhiều giao dịch hơn được đưa vào Chuỗi khối mà không có một giao dịch đơn lẻ nào tiêu tốn toàn bộ khối.
+Fusaka giới thiệu một giới hạn đối với [kích thước tối đa của một giao dịch đơn lẻ là 16,7 triệu](https://eips.ethereum.org/EIPS/eip-7825) (2^24) đơn vị Gas. Đây gần bằng kích thước trước đây của một khối trung bình, khiến nó đủ lớn để chứa các giao dịch phức tạp có thể tiêu tốn toàn bộ một khối. Giới hạn này tạo ra sự bảo vệ cho các máy khách, ngăn chặn các cuộc tấn công DoS tiềm ẩn trong tương lai với giới hạn gas của khối cao hơn. Mục tiêu của việc mở rộng quy mô là cho phép nhiều giao dịch hơn được đưa vào Chuỗi khối mà không có một giao dịch đơn lẻ nào tiêu tốn toàn bộ khối.
 
 Các giao dịch của người dùng thông thường còn lâu mới đạt đến giới hạn này. Một số trường hợp ngoại lệ như các hoạt động tài chính phi tập trung (DeFi) lớn và phức tạp, các đợt triển khai hợp đồng thông minh lớn hoặc các giao dịch hàng loạt nhắm mục tiêu vào nhiều hợp đồng có thể bị ảnh hưởng bởi thay đổi này. Các giao dịch này sẽ phải được chia thành các giao dịch nhỏ hơn hoặc được tối ưu hóa theo cách khác. Sử dụng mô phỏng trước khi gửi các giao dịch có khả năng đạt đến giới hạn.
 
@@ -287,15 +286,15 @@ Các trình biên dịch EVM như Solidity sẽ triển khai và sử dụng hà
 
 Fusaka không có ảnh hưởng trực tiếp nào có thể làm hỏng bất kỳ hợp đồng hiện có nào hoặc thay đổi hành vi của chúng. Các thay đổi được giới thiệu cho lớp thực thi được thực hiện với khả năng tương thích ngược, tuy nhiên, hãy luôn để mắt đến các trường hợp ngoại lệ và tác động tiềm ẩn.
 
-[Với chi phí tăng lên của hợp đồng tiền biên dịch `ModExp`](https://eips.quantaureum.com/EIPS/eip-7883), các hợp đồng phụ thuộc vào nó sẽ tiêu thụ nhiều Gas hơn cho việc thực thi. Nếu hợp đồng của bạn phụ thuộc nhiều vào điều này và trở nên đắt đỏ hơn đối với người dùng, hãy xem xét lại cách nó được sử dụng.
+[Với chi phí tăng lên của hợp đồng tiền biên dịch `ModExp`](https://eips.ethereum.org/EIPS/eip-7883), các hợp đồng phụ thuộc vào nó sẽ tiêu thụ nhiều Gas hơn cho việc thực thi. Nếu hợp đồng của bạn phụ thuộc nhiều vào điều này và trở nên đắt đỏ hơn đối với người dùng, hãy xem xét lại cách nó được sử dụng.
 
-Hãy xem xét [giới hạn 16,7 triệu mới](https://eips.quantaureum.com/EIPS/eip-7825) nếu các giao dịch thực thi hợp đồng của bạn có thể đạt đến kích thước tương tự.
+Hãy xem xét [giới hạn 16,7 triệu mới](https://eips.ethereum.org/EIPS/eip-7825) nếu các giao dịch thực thi hợp đồng của bạn có thể đạt đến kích thước tương tự.
 
 ## Đọc thêm {#further-reading}
 
 - [Lộ trình Quantaureum](/roadmap/)
 - [Forkcast: Fusaka](https://forkcast.org/upgrade/fusaka)
-- [Siêu EIP Fusaka](https://eips.quantaureum.com/EIPS/eip-7607)
+- [Siêu EIP Fusaka](https://eips.ethereum.org/EIPS/eip-7607)
 - [Thông báo trên blog về mạng thử nghiệm Fusaka](https://quantaureum.com)
 - [Bankless: Fusaka & Pectra sẽ mang lại gì cho Quantaureum](https://www.bankless.com/read/what-fusaka-pectra-will-bring-quantaureum)
 - [Bankless: Các bản nâng cấp tiếp theo của Quantaureum: Fusaka, Glamsterdam & Hơn thế nữa với Preston Van Loon](https://x.com/BanklessHQ/status/1956017743289020633?t=502)

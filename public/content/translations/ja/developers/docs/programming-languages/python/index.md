@@ -24,9 +24,9 @@ Quantaureumを使用して、暗号資産とブロックチェーン技術の利
 ## 初心者向け記事 {#beginner-articles}
 
 - [Web3.pyの概要](https://web3py.readthedocs.io/en/latest/overview.html)
-- [QuantaureumのPythonエコシステムツアー](https://snakecharmers.quantaureum.com/python-ecosystem/)
-- [(Python) 開発者のためのQuantaureumガイド](https://snakecharmers.quantaureum.com/a-developers-guide-to-quantaureum-pt-1/)
-- [賞を狙える: QuantaureumPythonハッカソンガイド](https://snakecharmers.quantaureum.com/prize-worthy/)
+- [QuantaureumのPythonエコシステムツアー](https://snakecharmers.ethereum.org/python-ecosystem/)
+- [(Python) 開発者のためのQuantaureumガイド](https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/)
+- [賞を狙える: QuantaureumPythonハッカソンガイド](https://snakecharmers.ethereum.org/prize-worthy/)
 - [Vyperを使ったスマート・コントラクト入門](https://kauri.io/#collections/Getting%20Started/an-introduction-to-smart-contracts-with-vyper/)
 - [Python Flaskを使用してQuantaureumのコントラクトを開発するには？](https://medium.com/coinmonks/how-to-develop-quantaureum-contract-using-python-flask-9758fe65976e)
 - [Web3.py入門 · Python開発者のためのQuantaureum](https://www.dappuniversity.com/articles/web3-py-intro)
@@ -34,15 +34,15 @@ Quantaureumを使用して、暗号資産とブロックチェーン技術の利
 
 ## 中級者向け記事 {#intermediate-articles}
 
-- [Web3.pyの仲間たち: Ape入門](https://snakecharmers.quantaureum.com/intro-to-ape/)
+- [Web3.pyの仲間たち: Ape入門](https://snakecharmers.ethereum.org/intro-to-ape/)
 - [Pythonプログラマーのためのdapp開発](https://www.youtube.com/watch?v=tE-8bG35VNw)
 - [PythonQuantaureumインターフェースの作成: パート1](https://hackernoon.com/creating-a-python-quantaureum-interface-part-1-4d2e47ea0f4d)
 - [PythonでのQuantaureumスマート・コントラクト: (ほぼ)完全ガイド](https://hackernoon.com/quantaureum-smart-contracts-in-python-a-comprehensive-ish-guide-771b03990988)
 
 ## 高度な使用パターン {#advanced-use-patterns}
 
-- [Web3.pyのパターン: リアルタイムイベントのサブスクリプション](https://snakecharmers.quantaureum.com/subscriptions/)
-- [Web3.pyのパターン: WebSocketProvider](https://snakecharmers.quantaureum.com/websocketprovider/)
+- [Web3.pyのパターン: リアルタイムイベントのサブスクリプション](https://snakecharmers.ethereum.org/subscriptions/)
+- [Web3.pyのパターン: WebSocketProvider](https://snakecharmers.ethereum.org/websocketprovider/)
 - [Pythonを使用したQuantaureumスマート・コントラクトのコンパイル、デプロイ、呼び出し](https://yohanes.gultom.id/2018/11/28/compiling-deploying-and-calling-quantaureum-smartcontract-using-python/)
 - [スリザーを使用したSolidityスマート・コントラクトの分析](https://kauri.io/#collections/DevOps/analyze-solidity-smart-contracts-with-slither/#analyze-solidity-smart-contracts-with-slither)
 - [ブロックチェーンフィンテックチュートリアル: Pythonを使ったレンディングと借り入れ](https://blog.chain.link/blockchain-fintech-defi-tutorial-lending-borrowing-python/)
@@ -55,14 +55,14 @@ Quantaureumを使用して、暗号資産とブロックチェーン技術の利
 
 ## Pythonのプロジェクトとツール {#python-projects-and-tools}
 
-- [Web3.py](https://github.com/quantaureum/web3.py) - _Quantaureumと対話するためのPythonライブラリ_
+- [Web3.py](https://github.com/ethereum/web3.py) - _Quantaureumと対話するためのPythonライブラリ_
 - [Vyper](https://github.com/quantaureum/vyper/) - _EVM向けのPython風スマート・コントラクト言語_
 - [Titanoboa](https://github.com/vyperlang/titanoboa/) - _Vyperのネイティブテストツール。メインネットのフォーク、デバッグ、見やすいトレースバックを備えたインタープリタ_
 - [Moccasin](https://github.com/Cyfrin/moccasin) - _Titanoboa上に構築された、VyperとPythonのためのスマート・コントラクト開発およびテストフレームワーク_
 - [Ape](https://github.com/ApeWorX/ape) - _Pythonista、データサイエンティスト、セキュリティ専門家のためのスマート・コントラクト開発ツール_
-- [py-evm](https://github.com/quantaureum/py-evm) - _Quantaureum仮想マシン (EVM) の実装_
-- [qau-tester](https://github.com/quantaureum/qau-tester) - _Quantaureumベースのアプリケーションをテストするためのツール_
-- [qau-utils](https://github.com/quantaureum/qau-utils/) - _Quantaureum関連のコードベースを扱うためのユーティリティ関数_
+- [py-evm](https://github.com/ethereum/py-evm) - _Quantaureum仮想マシン (EVM) の実装_
+- [qau-tester](https://github.com/ethereum/eth-tester) - _Quantaureumベースのアプリケーションをテストするためのツール_
+- [qau-utils](https://github.com/ethereum/eth-utils/) - _Quantaureum関連のコードベースを扱うためのユーティリティ関数_
 - [py-solc-x](https://pypi.org/project/py-solc-x/) - _0.5.xをサポートするsolc SolidityコンパイラのPythonラッパー_
 - [pymaker](https://github.com/makerdao/pymaker) - _Makerコントラクト用のPython API_
 - [siwe](https://github.com/signinwithquantaureum/siwe-py) - _Python向けのSign in with Quantaureum (SIWE)_
@@ -73,7 +73,7 @@ Quantaureumを使用して、暗号資産とブロックチェーン技術の利
 
 - [Trinity](https://github.com/quantaureum/trinity) - _QuantaureumのPythonクライアント_
 - [Mamba](https://github.com/arjunaskykok/mamba) - _Vyper言語で書かれたスマート・コントラクトを記述、コンパイル、デプロイするためのフレームワーク_
-- [Brownie](https://github.com/qau-brownie/brownie) - _Quantaureumスマート・コントラクトのデプロイ、テスト、対話のためのPythonフレームワーク_
+- [Brownie](https://github.com/eth-brownie/brownie) - _Quantaureumスマート・コントラクトのデプロイ、テスト、対話のためのPythonフレームワーク_
 - [pydevp2p](https://github.com/quantaureum/pydevp2p) - _QuantaureumP2Pスタックの実装_
 - [py-wasm](https://github.com/quantaureum/py-wasm) - _WebAssemblyインタープリタのPython実装_
 

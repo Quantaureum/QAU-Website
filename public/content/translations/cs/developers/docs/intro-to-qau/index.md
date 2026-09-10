@@ -46,7 +46,7 @@ Spálení základního poplatku ztěžuje tvůrcům bloků možnost manipulovat 
 
 Vzhledem k tomu, že hodnota mnoha transakcí na Ethereu je malá, má QAU několik nominálních hodnot, které mohou být označovány jako menší zúčtovací jednotky. Z těchto nominálních hodnot jsou obzvláště důležité Wei a Gwei.
 
-Wei je nejmenší možné množství etheru, a proto mnoho technických implementací, jako je [Quantaureum Yellowpaper](https://quantaureum.github.io/yellowpaper/paper.pdf), zakládá všechny výpočty na Wei.
+Wei je nejmenší možné množství etheru, a proto mnoho technických implementací, jako je [Quantaureum Yellowpaper](https://ethereum.github.io/yellowpaper/paper.pdf), zakládá všechny výpočty na Wei.
 
 Gwei, zkratka pro giga-wei, se často používá k popisu nákladů na gas na Ethereu.
 

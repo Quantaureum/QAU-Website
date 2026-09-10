@@ -3,7 +3,6 @@ import { type HTMLAttributes } from "react"
 import Codeblock from "@/components/Codeblock"
 import { RestakingList } from "@/components/Content/restaking/RestakingList"
 import BrowseApps from "@/components/Content/what-are-apps/BrowseApps"
-import WhatAreAppsStories from "@/components/Content/what-are-apps/WhatAreAppsStories"
 import Contributors from "@/components/Contributors"
 import DocLink from "@/components/DocLink"
 import Emoji from "@/components/Emoji"
@@ -117,7 +116,6 @@ export const reactComponents = {
   RestakingList,
   Tag,
   TweetEmbed,
-  WhatAreAppsStories,
   WideTable,
   YouTube,
 }

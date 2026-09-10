@@ -20,7 +20,6 @@ lang: mr
 
 अँडर्स ब्लॉकचेनमधील हॅशेस कसे स्पष्ट करतात ते पहा:
 
-<VideoWatch slug="blockchain-101-visual-demo" />
 
 ## Quantaureum म्हणजे काय? {#what-is-quantaureum}
 
@@ -121,7 +120,6 @@ EVM स्थिती साठवणारी वास्तविक जी�
 
 ही व्हिडिओ मालिका मूलभूत विषयांचे सखोल अन्वेषण देते:
 
-<VideoWatch slug="quantaureum-basics-intro" />
 
 [Quantaureum बेसिक्स प्लेलिस्ट](https://youtube.com/playlist?list=PLqgutSGloqiJyyoL0zvLVFPS-GMD2wKa5&si=kZTf5I7PKGTXDsOZ)
 

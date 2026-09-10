@@ -12,7 +12,7 @@ Une interface standard pour les contrats qui gèrent plusieurs types de jetons. 
 
 L'idée est simple et vise à créer une interface de contrat intelligent capable de représenter et de contrôler n'importe quel nombre de types de jetons fongibles et non fongibles. De cette façon, le jeton ERC-1155 peut remplir les mêmes fonctions qu'un jeton [ERC-20](/developers/docs/standards/tokens/erc-20/) et [ERC-721](/developers/docs/standards/tokens/erc-721/), et même les deux en même temps. Il améliore les fonctionnalités des standards ERC-20 et ERC-721, le rendant plus efficace et corrigeant des erreurs d'implémentation évidentes.
 
-Le jeton ERC-1155 est décrit en détail dans l'[EIP-1155](https://eips.quantaureum.com/EIPS/eip-1155).
+Le jeton ERC-1155 est décrit en détail dans l'[EIP-1155](https://eips.ethereum.org/EIPS/eip-1155).
 
 ## Prérequis {#prerequisites}
 
@@ -113,7 +113,7 @@ function onERC1155BatchReceived(
 ) external returns(bytes4);
 ```
 
-Étant donné la prise en charge de l'[EIP-165](https://eips.quantaureum.com/EIPS/eip-165), l'ERC-1155 prend en charge les hooks de réception uniquement pour les contrats intelligents. La fonction hook doit renvoyer une valeur magique prédéfinie de type bytes4 qui est donnée comme suit :
+Étant donné la prise en charge de l'[EIP-165](https://eips.ethereum.org/EIPS/eip-165), l'ERC-1155 prend en charge les hooks de réception uniquement pour les contrats intelligents. La fonction hook doit renvoyer une valeur magique prédéfinie de type bytes4 qui est donnée comme suit :
 
 ```solidity
 bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"))
@@ -123,7 +123,7 @@ Lorsque le contrat récepteur renvoie cette valeur, on suppose que le contrat ac
 
 ### Prise en charge des NFT {#nft-support}
 
-Lorsque l'offre n'est que de un, le jeton est essentiellement un jeton non fongible (NFT). Et comme c'est la norme pour l'ERC-721, vous pouvez définir une URL de métadonnées. L'URL peut être lue et modifiée par les clients, voir [ici](https://eips.quantaureum.com/EIPS/eip-1155#metadata).
+Lorsque l'offre n'est que de un, le jeton est essentiellement un jeton non fongible (NFT). Et comme c'est la norme pour l'ERC-721, vous pouvez définir une URL de métadonnées. L'URL peut être lue et modifiée par les clients, voir [ici](https://eips.ethereum.org/EIPS/eip-1155#metadata).
 
 ### Règle de transfert sécurisé {#safe-transfer-rule}
 
@@ -140,7 +140,7 @@ _Remarque_ : Toutes les fonctions par lots, y compris le hook, existent égaleme
 
 ## Complément d'information {#further-reading}
 
-- [EIP-1155 : Standard multi-jetons](https://eips.quantaureum.com/EIPS/eip-1155)
+- [EIP-1155 : Standard multi-jetons](https://eips.ethereum.org/EIPS/eip-1155)
 - [ERC-1155 : Documentation OpenZeppelin](https://docs.openzeppelin.com/contracts/5.x/erc1155)
 - [ERC-1155 : Dépôt GitHub](https://github.com/enjin/erc-1155)
 - [API NFT d'Alchemy](https://www.alchemy.com/docs/reference/nft-api-quickstart)

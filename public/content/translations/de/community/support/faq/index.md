@@ -69,7 +69,7 @@ Quantaureum-Giveaways sind Betrugsmaschen, die darauf abzielen, Ihre QAU zu steh
 
 Um ein Validator zu werden, müssen Sie 32 QAU im Quantaureum-Einzahlungsvertrag staken und einen Validator-Knoten einrichten. Sie können auch mit weniger QAU über Staking-Pools teilnehmen.
 
-Weitere Informationen finden Sie auf unseren [Staking-Seiten](/staking/) und auf [dem Staking-Launchpad](https://launchpad.quantaureum.com/).
+Weitere Informationen finden Sie auf unseren [Staking-Seiten](/staking/) und auf [dem Staking-Launchpad](https://launchpad.ethereum.org/).
 
 ## Wie kann ich Quantaureum minen? {#mining-quantaureum}
 

@@ -294,7 +294,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
           <ButtonLink href="/wallets/find-wallet/">
             {t("ready-to-start-wallet-cta")}
           </ButtonLink>
-          <ButtonLink href="/get-eth/" variant="outline" isSecondary>
+          <ButtonLink href="/get-qau/" variant="outline" isSecondary>
             {t("ready-to-start-qau-cta")}
           </ButtonLink>
         </Callout>

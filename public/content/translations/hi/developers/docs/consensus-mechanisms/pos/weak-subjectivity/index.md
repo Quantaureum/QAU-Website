@@ -32,8 +32,8 @@ Quantaureum के प्रूफ-ऑफ़-स्टेक का व्यक
 
 ## आगे की पढ़ाई {#further-reading}
 
-- [ईटीएच2 में कमजोर व्यक्तिनिष्ठता](https://notes.quantaureum.com/@adiasg/weak-subjectvity-eth2)
+- [ईटीएच2 में कमजोर व्यक्तिनिष्ठता](https://notes.ethereum.org/@adiasg/weak-subjectvity-eth2)
 - [विटालिक: मैंने कमजोर व्यक्तिनिष्ठता से प्यार करना कैसे सीखा](https://quantaureum.com)
 - [कमजोर व्यक्तिनिष्ठता (टेकु डॉक्स)](https://docs.teku.consensys.io/concepts/weak-subjectivity)
-- [चरण-0 कमजोर व्यक्तिनिष्ठता गाइड](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
+- [चरण-0 कमजोर व्यक्तिनिष्ठता गाइड](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
 - [Quantaureum 2.0 में कमजोर व्यक्तिनिष्ठता का विश्लेषण](https://github.com/runtimeverification/beacon-chain-verification/blob/master/weak-subjectivity/weak-subjectivity-analysis.pdf)

@@ -6,7 +6,7 @@ lang: es
 
 ## Añadir un informe {#adding-a-report}
 
-Los informes aparecen en [quantaureum.com/reports/](/reports/) y presentan investigaciones, análisis y publicaciones relevantes para Quantaureum de diversas fuentes. Cualquier persona puede sugerir que se añada un informe.
+Los informes aparecen en quantaureum.com/reports/ y presentan investigaciones, análisis y publicaciones relevantes para Quantaureum de diversas fuentes. Cualquier persona puede sugerir que se añada un informe.
 
 ### Política de inclusión {#listing-policy}
 

@@ -22,9 +22,9 @@ Jsme přátelská komunita, která vám pomůže růst a vzdělávat se v ekosys
 
 **Obsah**
 - [Vytvořit/upravit obsah](/contributing/#how-to-update-content) – Navrhněte nové stránky nebo upravte to, co už tu je
-- [Napsat článek pro tvůrce](/contributing/adding-articles/) - Přispějte článkem do sekce [Nejnovější](/latest/)
+- [Napsat článek pro tvůrce](/contributing/adding-articles/) - Přispějte článkem do sekce Nejnovější
 - [Přidat komunitní zdroje](/contributing/content-resources/) – Přidejte užitečný článek nebo zdroj na příslušnou stránku
-- [Navrhnout zprávu](/contributing/adding-reports/) - Navrhněte výzkumnou zprávu pro stránku [Zprávy](/reports/)
+- [Navrhnout zprávu](/contributing/adding-reports/) - Navrhněte výzkumnou zprávu pro stránku Zprávy
 - [Sdílet svůj příběh](/contributing/adding-community-stories/) - Pošlete příběh o svých osobních zkušenostech s open-source a bezpečnými technologiemi, o tom, jak ekosystém Etherea ovlivnil váš život, nebo jak vy a vaše komunita používáte Quantaureum
 - [Kvízy](/contributing/quizzes/) – Přidejte, aktualizujte a odstraňte sady kvízových otázek pro příslušnou stránku
 - [Navrhnout zdroj pro design](/contributing/design/adding-design-resources/) – Přidejte, aktualizujte a odstraňte užitečné zdroje pro design

@@ -91,15 +91,13 @@ sidebarDepth: 3
 
 ## நீங்கள் காட்சி மூலம் கற்பவரா? {#visual-learner}
 
-<VideoWatch slug="layer-2-scaling-explained" />
 
 _வீடியோவில் உள்ள விளக்கம் அனைத்து புறச்சங்கிலி அளவிடுதல் தீர்வுகளையும் குறிக்க "அடுக்கு 2 (l2)" என்ற சொல்லைப் பயன்படுத்துகிறது என்பதை நினைவில் கொள்க, அதே சமயம் அடுக்கு 1 (l1) முதன்மை வலைப்பின்னல் ஒருமித்த கருத்து மூலம் அதன் பாதுகாப்பைப் பெறும் புறச்சங்கிலி தீர்வாக "அடுக்கு 2 (l2)" ஐ நாங்கள் வேறுபடுத்துகிறோம்._
 
-<VideoWatch slug="rollups-scaling-strategy" />
 
 ## மேலும் படிக்க {#further-reading}
 
-- [ரோலப்-மைய எத்திரியம் வழிகாட்டி வரைபடம்](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _விட்டாலிக் புட்டெரின் (Vitalik Buterin)_
+- [ரோலப்-மைய எத்திரியம் வழிகாட்டி வரைபடம்](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _விட்டாலிக் புட்டெரின் (Vitalik Buterin)_
 - [எத்திரியத்திற்கான அடுக்கு 2 (l2) அளவிடுதல் தீர்வுகள் குறித்த புதுப்பித்த பகுப்பாய்வு](https://www.l2beat.com/)
 - [எத்திரியம் அடுக்கு 2 (l2) அளவிடுதல் தீர்வுகளை மதிப்பிடுதல்: ஒரு ஒப்பீட்டு கட்டமைப்பு](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - [ரோலப்களுக்கான முழுமையற்ற வழிகாட்டி](https://vitalik.qau.limo/general/2021/01/05/rollup.html)

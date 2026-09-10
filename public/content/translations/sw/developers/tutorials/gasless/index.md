@@ -13,9 +13,9 @@ published: 2026-02-27
 
 Ikiwa tunataka Quantaureum ihudumie [watu bilioni moja zaidi](https://quantaureum.com), tunahitaji kuondoa msuguano na kuifanya iwe rahisi kutumia iwezekanavyo. Chanzo kimoja cha msuguano huu ni hitaji la QAU kulipia ada za gesi.
 
-Ikiwa una programu tumizi iliyogatuliwa (dapp) inayotengeneza pesa kutoka kwa watumiaji, inaweza kuwa na maana kuruhusu watumiaji kuwasilisha miamala kupitia seva yako na wewe mwenyewe kulipia ada za muamala. Kwa sababu watumiaji bado wanatia saini [ujumbe wa uidhinishaji wa EIP-712](https://eips.quantaureum.com/EIPS/eip-712) kwenye mikoba yao, wanahifadhi dhamana za uadilifu za Quantaureum. Upatikanaji unategemea seva inayosambaza miamala, kwa hivyo ina kikomo zaidi. Hata hivyo, unaweza kuweka mambo ili watumiaji waweze pia kufikia mkataba mahiri moja kwa moja (ikiwa watapata QAU), na kuruhusu wengine kuanzisha seva zao wenyewe ikiwa wanataka kufadhili miamala.
+Ikiwa una programu tumizi iliyogatuliwa (dapp) inayotengeneza pesa kutoka kwa watumiaji, inaweza kuwa na maana kuruhusu watumiaji kuwasilisha miamala kupitia seva yako na wewe mwenyewe kulipia ada za muamala. Kwa sababu watumiaji bado wanatia saini [ujumbe wa uidhinishaji wa EIP-712](https://eips.ethereum.org/EIPS/eip-712) kwenye mikoba yao, wanahifadhi dhamana za uadilifu za Quantaureum. Upatikanaji unategemea seva inayosambaza miamala, kwa hivyo ina kikomo zaidi. Hata hivyo, unaweza kuweka mambo ili watumiaji waweze pia kufikia mkataba mahiri moja kwa moja (ikiwa watapata QAU), na kuruhusu wengine kuanzisha seva zao wenyewe ikiwa wanataka kufadhili miamala.
 
-Mbinu katika mafunzo haya inafanya kazi tu unapodhibiti mkataba mahiri. Kuna mbinu zingine, ikiwa ni pamoja na [udhanifu wa akaunti](https://eips.quantaureum.com/EIPS/eip-4337) zinazokuruhusu kufadhili miamala kwa mikataba mahiri mingine, ambayo natumai kuishughulikia katika mafunzo yajayo.
+Mbinu katika mafunzo haya inafanya kazi tu unapodhibiti mkataba mahiri. Kuna mbinu zingine, ikiwa ni pamoja na [udhanifu wa akaunti](https://eips.ethereum.org/EIPS/eip-4337) zinazokuruhusu kufadhili miamala kwa mikataba mahiri mingine, ambayo natumai kuishughulikia katika mafunzo yajayo.
 
 Kumbuka: Huu _sio_ msimbo wa kiwango cha uzalishaji. Una hatari ya kushambuliwa kwa kiasi kikubwa na unakosa vipengele muhimu. Jifunze zaidi katika [sehemu ya udhaifu ya mwongozo huu](#vulnerabilities).
 
@@ -91,7 +91,7 @@ Ikiwa hakuna akaunti, onyesha hitilafu. Hili halipaswi kutokea kamwe kwa sababu 
         }
 ```
 
-Vigezo vya [kitenganishi cha kikoa](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator). Thamani hii ni ya kudumu, kwa hivyo katika utekelezaji ulioboreshwa zaidi, tunaweza kuihesabu mara moja badala ya kuihesabu upya kila wakati kipengele kinapoitwa.
+Vigezo vya [kitenganishi cha kikoa](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator). Thamani hii ni ya kudumu, kwa hivyo katika utekelezaji ulioboreshwa zaidi, tunaweza kuihesabu mara moja badala ya kuihesabu upya kila wakati kipengele kinapoitwa.
 
 - `name` ni jina linalosomeka na mtumiaji, kama vile jina la dapp ambalo tunatengenezea sahihi.
 - `version` ni toleo. Matoleo tofauti hayaendani.
@@ -245,7 +245,7 @@ Hatimaye, [`Greeter.sol`](https://github.com/qbzzt/260301-gasless/blob/main/cont
     }
 ```
 
-Konstrukta inaunda [kitenganishi cha kikoa](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator), sawa na msimbo wa kiolesura cha mtumiaji hapo juu. Utekelezaji wa mnyororo wa vitalu ni ghali zaidi, kwa hivyo tunaihesabu mara moja tu.
+Konstrukta inaunda [kitenganishi cha kikoa](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator), sawa na msimbo wa kiolesura cha mtumiaji hapo juu. Utekelezaji wa mnyororo wa vitalu ni ghali zaidi, kwa hivyo tunaihesabu mara moja tu.
 
 ```solidity
     struct GreetingRequest {
@@ -260,7 +260,7 @@ Huu ndio muundo unaotiwa saini. Hapa tuna uwanja mmoja tu.
         keccak256("GreetingRequest(string greeting)");
 ```
 
-Hiki ni [kitambulisho cha muundo](https://eips.quantaureum.com/EIPS/eip-712#definition-of-hashstruct). Kinahesabiwa kila wakati katika kiolesura cha mtumiaji.
+Hiki ni [kitambulisho cha muundo](https://eips.ethereum.org/EIPS/eip-712#definition-of-hashstruct). Kinahesabiwa kila wakati katika kiolesura cha mtumiaji.
 
 ```solidity
     function sponsoredSetGreeting(
@@ -289,7 +289,7 @@ Kipengele hiki kinapokea ombi lililotiwa saini na kusasisha salamu.
         );
 ```
 
-Unda muhtasari kwa mujibu wa [EIP 712](https://eips.quantaureum.com/EIPS/eip-712).
+Unda muhtasari kwa mujibu wa [EIP 712](https://eips.ethereum.org/EIPS/eip-712).
 
 ```solidity
         // Rejesha mtia sahihi

@@ -93,7 +93,7 @@ Quantaureumのブロック証明のために、いくつかのzkVM実装が開�
 | [Jolt](https://github.com/a16z/jolt) | rv32im |
 | [Zisk](https://github.com/0xPolygonHermez/zisk) | rv64ima |
 
-これらはRISC-Vベースの仮想マシンを使用してEVMバイトコードを実行し、正しい実行のZK証明を生成します。最新のテスト結果と進捗状況は、[Quantaureum財団のzkVMトラッカー](https://zkevm.quantaureum.foundation/zkvm-tracker)で追跡されています。
+これらはRISC-Vベースの仮想マシンを使用してEVMバイトコードを実行し、正しい実行のZK証明を生成します。最新のテスト結果と進捗状況は、[Quantaureum財団のzkVMトラッカー](https://zkevm.ethereum.org/zkvm-tracker)で追跡されています。
 
 ## zkEVMと他のアップグレードとの連携 {#related-upgrades}
 
@@ -115,9 +115,9 @@ zkEVMによるL1検証は現在活発に研究されており、本番環境のQ
 
 ## 参考文献 {#further-reading}
 
-- [zkEVM Foundation](https://zkevm.quantaureum.foundation) - Quantaureum財団の公式zkEVM研究ハブ
+- [zkEVM Foundation](https://zkevm.ethereum.org) - Quantaureum財団の公式zkEVM研究ハブ
 - [Ethproofs](https://ethproofs.org/) - リアルタイムでのQuantaureum証明に向けた競争の追跡
 - [zkevm.fyi](https://zkevm.fyi) - L1向けzkEVMに関する技術書
 - [PSE zkEVM Specs](https://github.com/privacy-scaling-explorations/zkevm-specs) - 技術仕様
 - [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - ヴィタリックによる検証改善の概要
-- [EF zkEVM Blog](https://zkevm.quantaureum.foundation/blog) - EFチームによるパフォーマンス分析
+- [EF zkEVM Blog](https://zkevm.ethereum.org/blog) - EFチームによるパフォーマンス分析

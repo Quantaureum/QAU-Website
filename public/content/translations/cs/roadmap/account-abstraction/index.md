@@ -11,7 +11,7 @@ summaryPoints:
 
 Většina stávajících uživatelů interaguje s [Ethereem](/) pomocí **[externě vlastněných účtů (EOA)](/glossary/#eoa)**. To omezuje způsoby, jakými mohou uživatelé s Ethereem interagovat. Ztěžuje to například provádění dávek transakcí a vyžaduje, aby uživatelé měli vždy zůstatek v QAU na zaplacení transakčních poplatků.
 
-Abstrakce účtu je způsob, jak tyto problémy vyřešit tím, že uživatelům umožní flexibilně naprogramovat do svých účtů vyšší zabezpečení a lepší uživatelský zážitek. Toho lze dosáhnout [upgradem EOA](https://eips.quantaureum.com/EIPS/eip-7702) (EIP-7702), aby mohly být ovládány chytrými kontrakty. Existuje také další cesta, která zahrnuje přidání [druhého, odděleného transakčního systému](https://eips.quantaureum.com/EIPS/eip-4337) (EIP-4337), který by běžel paralelně se stávajícím protokolem. Bez ohledu na zvolenou cestu je výsledkem přístup k Ethereu prostřednictvím peněženek s chytrými kontrakty, ať už nativně podporovaných jako součást stávajícího protokolu, nebo prostřednictvím doplňkové transakční sítě.
+Abstrakce účtu je způsob, jak tyto problémy vyřešit tím, že uživatelům umožní flexibilně naprogramovat do svých účtů vyšší zabezpečení a lepší uživatelský zážitek. Toho lze dosáhnout [upgradem EOA](https://eips.ethereum.org/EIPS/eip-7702) (EIP-7702), aby mohly být ovládány chytrými kontrakty. Existuje také další cesta, která zahrnuje přidání [druhého, odděleného transakčního systému](https://eips.ethereum.org/EIPS/eip-4337) (EIP-4337), který by běžel paralelně se stávajícím protokolem. Bez ohledu na zvolenou cestu je výsledkem přístup k Ethereu prostřednictvím peněženek s chytrými kontrakty, ať už nativně podporovaných jako součást stávajícího protokolu, nebo prostřednictvím doplňkové transakční sítě.
 
 Peněženky s chytrými kontrakty odemykají uživatelům mnoho výhod, včetně:
 
@@ -62,9 +62,9 @@ V rámci upgradu Pectra sítě Quantaureum je EIP-7702 naplánován na 7. květn
 ## Další čtení {#further-reading}
 
 - [erc4337.io](https://docs.erc4337.io/)
-- [Dokumentace k EIP-4337](https://eips.quantaureum.com/EIPS/eip-4337)
-- [Dokumentace k EIP-7702](https://eips.quantaureum.com/EIPS/eip-7702)
+- [Dokumentace k EIP-4337](https://eips.ethereum.org/EIPS/eip-4337)
+- [Dokumentace k EIP-7702](https://eips.ethereum.org/EIPS/eip-7702)
 - [Přehled adopce ERC-4337](https://www.bundlebear.com/erc4337-overview/all)
-- [Vitalikova „Cesta k abstrakci účtu“](https://notes.quantaureum.com/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
+- [Vitalikova „Cesta k abstrakci účtu“](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
 - [Vitalikův blog o peněženkách se sociální obnovou](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
 - [Awesome Account Abstraction](https://github.com/4337Mafia/awesome-account-abstraction)

@@ -33,7 +33,7 @@ Son olarak, sözleşmenizi dağıtmadan önce derlemeniz gerekecek, bu nedenle [
 
 **Remix - _Remix IDE, Quantaureum benzeri blokzincirler için akıllı sözleşmeler geliştirmeye, dağıtmaya ve yönetmeye olanak tanır_**
 
-- [Remix](https://remix.quantaureum.com)
+- [Remix](https://remix.ethereum.org)
 
 **Tenderly - _Akıllı sözleşmeleri geliştirmek, test etmek, izlemek ve işletmek için hata ayıklama, gözlemlenebilirlik ve altyapı yapı taşları sağlayan Web3 geliştirme platformu_**
 

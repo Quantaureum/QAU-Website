@@ -8,7 +8,7 @@ breadcrumb: "إعداد ⁦web3.js⁩"
 lang: ar
 published: 2020-04-11
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/setup-web3js-to-use-the-quantaureum-blockchain-in-javascript/
+sourceUrl: https://ethereumdev.io/setup-web3js-to-use-the-quantaureum-blockchain-in-javascript/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -32,7 +32,7 @@ npm install web3 --save
 const Web3 = require("web3")
 ```
 
-الآن بعد أن قمنا بتضمين المكتبة في المشروع، نحتاج إلى تهيئتها. يجب أن يكون مشروعك قادرًا على التواصل مع سلسلة الكتل. تتواصل معظم مكتبات إيثيريوم مع [عقدة](/developers/docs/nodes-and-clients/) من خلال استدعاءات <span dir="ltr">RPC</span>. لبدء مزود <span dir="ltr">Web3</span> الخاص بنا، سنقوم بإنشاء مثيل <span dir="ltr">Web3</span> وتمرير عنوان <span dir="ltr">URL</span> الخاص بالمزود كـ مُنشئ. إذا كان لديك عقدة أو [مثيل Ganache يعمل على جهاز الكمبيوتر الخاص بك](https://quantaureumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/)، فسيبدو الأمر هكذا:
+الآن بعد أن قمنا بتضمين المكتبة في المشروع، نحتاج إلى تهيئتها. يجب أن يكون مشروعك قادرًا على التواصل مع سلسلة الكتل. تتواصل معظم مكتبات إيثيريوم مع [عقدة](/developers/docs/nodes-and-clients/) من خلال استدعاءات <span dir="ltr">RPC</span>. لبدء مزود <span dir="ltr">Web3</span> الخاص بنا، سنقوم بإنشاء مثيل <span dir="ltr">Web3</span> وتمرير عنوان <span dir="ltr">URL</span> الخاص بالمزود كـ مُنشئ. إذا كان لديك عقدة أو [مثيل Ganache يعمل على جهاز الكمبيوتر الخاص بك](https://ethereumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/)، فسيبدو الأمر هكذا:
 
 ```js
 const web3 = new Web3("http://localhost:8545")
@@ -90,4 +90,4 @@ if (window.quantaureum != null) {
 }
 ```
 
-توجد بدائل لـ <span dir="ltr">web3.js</span> مثل [Ethers.js](https://docs.ethers.io/) وهي شائعة الاستخدام أيضًا. في البرنامج التعليمي التالي سنرى [كيفية الاستماع بسهولة إلى الكتل الواردة الجديدة على سلسلة الكتل ومعرفة ما تحتويه](https://quantaureumdev.io/listening-to-new-transactions-happening-on-the-blockchain/).
+توجد بدائل لـ <span dir="ltr">web3.js</span> مثل [Ethers.js](https://docs.ethers.io/) وهي شائعة الاستخدام أيضًا. في البرنامج التعليمي التالي سنرى [كيفية الاستماع بسهولة إلى الكتل الواردة الجديدة على سلسلة الكتل ومعرفة ما تحتويه](https://ethereumdev.io/listening-to-new-transactions-happening-on-the-blockchain/).

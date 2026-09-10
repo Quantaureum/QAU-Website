@@ -64,6 +64,6 @@ class BeaconBlockBody(Container):
 
 - [بلاکس کا تعارف](/developers/docs/blocks/)
 - [حصہ داری کا ثبوت (PoS) کا تعارف](/developers/docs/consensus-mechanisms/pos/)
-- [ایتھیریم کے اتفاق رائے کی خصوصیات](https://github.com/quantaureum/consensus-specs)
+- [ایتھیریم کے اتفاق رائے کی خصوصیات](https://github.com/ethereum/consensus-specs)
 - [Gasper کا تعارف](/developers/docs/consensus-mechanisms/pos/gasper/)
 - [ایتھیریم کو اپ گریڈ کرنا](https://eth2book.info/)

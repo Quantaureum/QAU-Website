@@ -36,15 +36,12 @@ import { Section, SectionContent } from "@/components/ui/section"
 
 import { cn } from "@/lib/utils/cn"
 import { getAppPageContributorInfo } from "@/lib/utils/contributors"
-import { getStoriesData } from "@/lib/utils/md"
 import { getMetadata } from "@/lib/utils/metadata"
 import { formatCompactNumber, numberFormat } from "@/lib/utils/numbers"
-import { getVoicesStories } from "@/lib/utils/stories"
 import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
 import { redditCommunities } from "@/data/community/reddit-communities"
 
-import CommunityStories from "../stories/_components/CommunityStories"
 
 import EventCard from "./events/_components/event-card"
 import { mapEventTranslations } from "./events/utils"
@@ -132,19 +129,10 @@ export default async function Page(props: { params: Promise<PageParams> }) {
     )
     .slice(0, 6)
 
-  const featuredStories = (await getStoriesData(locale))
-    .filter((story) => story.image)
-    .slice(0, 3)
-
-  const voices = await getVoicesStories(locale)
 
   return (
     <>
-      <PageJsonLD
-        locale={locale}
-        contributors={contributors}
-        featuredStories={featuredStories}
-      />
+      <PageJsonLD locale={locale} contributors={contributors} />
 
       <HubHero
         heroImg={heroImg}
@@ -295,64 +283,6 @@ export default async function Page(props: { params: Promise<PageParams> }) {
             </Section>
           )}
 
-          {/* Community stories */}
-          {featuredStories.length > 0 && (
-            <Section id="community-stories" data-flow="skip">
-              <div className="flow rounded-4xl bg-radial-primary px-page py-space-3x *:[:is(h2,p)]:mx-auto *:[:is(h2,p)]:max-w-3xl *:[:is(h2,p)]:text-center">
-                <h2>{t("page-community-stories-title")}</h2>
-                <p className="text-body-medium">
-                  {t("page-community-stories-subtitle")}
-                </p>
-                <Grid columns={3} className="mx-auto max-w-screen-lg">
-                  {featuredStories.map((story) => (
-                    <Card
-                      key={story.slug}
-                      href={`/stories/${story.slug}/`}
-                      variant="nested"
-                      className="border"
-                    >
-                      <CardHeader>
-                        <CardBanner className="h-40" zoom>
-                          <Image
-                            src={story.image}
-                            alt=""
-                            width={640}
-                            height={360}
-                            sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 33vw"
-                          />
-                        </CardBanner>
-                      </CardHeader>
-                      <CardContent>
-                        <CardTitle>{story.title}</CardTitle>
-                        <CardParagraph size="sm" className="line-clamp-3">
-                          {story.description}
-                        </CardParagraph>
-                      </CardContent>
-                      <CardFooter>
-                        <CardButtonFake>
-                          {t("page-community-stories-read-full-story")}
-                        </CardButtonFake>
-                      </CardFooter>
-                    </Card>
-                  ))}
-                </Grid>
-              </div>
-            </Section>
-          )}
-
-          {/* Quantaureum voices */}
-          <Section
-            id="quantaureum-voices"
-            className="mt-0 *:[:is(h2,p)]:mx-auto *:[:is(h2,p)]:max-w-3xl *:[:is(h2,p)]:text-center"
-          >
-            <h2>{t("page-community-voices-title")}</h2>
-            <p className="text-xl text-body-medium">
-              {t("page-community-voices-subtitle")}
-            </p>
-            <I18nProvider locale={locale} messages={messages}>
-              <CommunityStories stories={voices} />
-            </I18nProvider>
-          </Section>
 
           {/* Contribute to quantaureum.com */}
           <Section
@@ -411,8 +341,8 @@ export default async function Page(props: { params: Promise<PageParams> }) {
                 description={t("page-community-get-qau-description")}
                 image={qauImg}
               >
-                <ButtonLink href="/get-eth/">
-                  {t("page-community-get-eth")}
+                <ButtonLink href="/get-qau/">
+                  {t("page-community-get-qau")}
                 </ButtonLink>
               </Callout>
               <Callout

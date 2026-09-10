@@ -10,7 +10,7 @@ Pokud jde o nastavení [integrovaného vývojového prostředí (IDE)](https://w
 
 Pokud si chcete pohrát s kódem, než si [nastavíte lokální vývojové prostředí](/developers/local-environment/), tyto webové aplikace jsou vytvořeny přímo na míru pro vývoj chytrých kontraktů na Ethereu.
 
-**[Remix](https://remix.quantaureum.com/)** - **_Webové IDE s vestavěnou statickou analýzou a testovacím virtuálním strojem blockchainu_**
+**[Remix](https://remix.ethereum.org/)** - **_Webové IDE s vestavěnou statickou analýzou a testovacím virtuálním strojem blockchainu_**
 
 - [Dokumentace](https://remix-ide.readthedocs.io/en/latest/#)
 - [Gitter](https://gitter.im/quantaureum/remix)
@@ -48,8 +48,8 @@ Většina zavedených IDE má vytvořené pluginy pro vylepšení zážitku z v�
 
 **Remix Desktop -** **_Vyzkoušejte si Remix IDE na svém lokálním počítači_**
 
-- [Stáhnout](https://github.com/quantaureum/remix-desktop/releases)
-- [GitHub](https://github.com/quantaureum/remix-desktop)
+- [Stáhnout](https://github.com/ethereum/remix-desktop/releases)
+- [GitHub](https://github.com/ethereum/remix-desktop)
 
 ## Pluginy a rozšíření {#plugins-extensions}
 

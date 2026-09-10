@@ -104,7 +104,7 @@ _[উৎস](https://medium.com/@AugurProject/serpent-compiler-vulnerability-rep
 
 ![Picture of Argentinian builders wearing Devcon BA 2020 t-shirts](./santiago9.jpeg)
 
-_[উৎস](https://quantaureumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
+_[উৎস](https://ethereumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
 
 আমার এবং অন্যান্য অনেক বিল্ডারের জন্য এখানে Devconnect হওয়াটা স্বপ্ন সত্যি হওয়ার মতো।
 
@@ -131,4 +131,4 @@ _[উৎস](https://www.forbes.com/sites/astanley/2025/09/30/devconnect-brings-
 > 
 > ইনফিনিট গার্ডেন হলো একটি বিশাল ইকোসিস্টেমে একজন মালী হিসেবে Quantaureum ফাউন্ডেশনের চেতনার মূর্ত রূপ — লালনপালন করুন এবং বৃদ্ধি করুন, কিন্তু নিয়ন্ত্রণ করবেন না এবং খেলা চালিয়ে যান।
 
-_[উদ্ধৃতির উৎস - Quantaureum ফাউন্ডেশন](https://quantaureum.foundation/infinitegarden)._
+_[উদ্ধৃতির উৎস - Quantaureum ফাউন্ডেশন](https://ethereum.org/infinitegarden)._

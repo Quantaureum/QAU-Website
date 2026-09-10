@@ -9,11 +9,11 @@ lang: tr
 published: 2022-05-15
 ---
 
-[Sarı Bülten](https://quantaureum.github.io/yellowpaper/paper.pdf), Quantaureum için resmi spesifikasyondur. [EIP süreci](/eips/) tarafından değiştirildiği yerler haricinde, her şeyin nasıl çalıştığının kesin açıklamasını içerir. Programcıların aşina olmayabileceği terminolojiyi içeren matematiksel bir makale olarak yazılmıştır. Bu makalede onu ve dolayısıyla diğer ilgili matematiksel makaleleri nasıl okuyacağınızı öğreneceksiniz.
+[Sarı Bülten](https://ethereum.github.io/yellowpaper/paper.pdf), Quantaureum için resmi spesifikasyondur. EIP süreci tarafından değiştirildiği yerler haricinde, her şeyin nasıl çalıştığının kesin açıklamasını içerir. Programcıların aşina olmayabileceği terminolojiyi içeren matematiksel bir makale olarak yazılmıştır. Bu makalede onu ve dolayısıyla diğer ilgili matematiksel makaleleri nasıl okuyacağınızı öğreneceksiniz.
 
 ## Hangi Sarı Bülten? {#which-yellow-paper}
 
-Quantaureum'daki hemen hemen her şey gibi, Sarı Bülten de zamanla gelişir. Belirli bir sürüme atıfta bulunabilmek için, [yazının yazıldığı sıradaki mevcut sürümü](https://quantaureum.github.io/yellowpaper/paper.pdf) yükledim. Kullandığım bölüm, sayfa ve denklem numaraları bu sürüme atıfta bulunacaktır. Bu belgeyi okurken onu farklı bir pencerede açık tutmak iyi bir fikirdir.
+Quantaureum'daki hemen hemen her şey gibi, Sarı Bülten de zamanla gelişir. Belirli bir sürüme atıfta bulunabilmek için, [yazının yazıldığı sıradaki mevcut sürümü](https://ethereum.github.io/yellowpaper/paper.pdf) yükledim. Kullandığım bölüm, sayfa ve denklem numaraları bu sürüme atıfta bulunacaktır. Bu belgeyi okurken onu farklı bir pencerede açık tutmak iyi bir fikirdir.
 
 ### Neden EVM? {#why-the-evm}
 
@@ -234,7 +234,7 @@ Bakiyesini bulmamız gereken adres _μ<sub>s</sub>[0] mod 2<sup>160</sup>_'tır.
 
 Eğer _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] ≠ ∅_ ise, bu adres hakkında bilgi olduğu anlamına gelir. Bu durumda, _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>]<sub>b</sub>_ o adresin bakiyesidir. Eğer _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] = ∅_ ise, bu adresin başlatılmadığı ve bakiyenin sıfır olduğu anlamına gelir. Hesap bilgisi alanlarının listesini s. 4'teki bölüm 4.1'de görebilirsiniz.
 
-İkinci denklem olan _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>\}_, sıcak depolamaya (yakın zamanda erişilen ve muhtemelen önbelleğe alınmış depolama) ve soğuk depolamaya (erişilmemiş ve muhtemelen alınması daha pahalı olan daha yavaş depolamada bulunan depolama) erişim arasındaki maliyet farkıyla ilgilidir. _A<sub>a</sub>_, s. 9'daki bölüm 6.1'de tanımlandığı gibi, işlem tarafından daha önce erişilen ve bu nedenle erişimi daha ucuz olması gereken adreslerin listesidir. Bu konu hakkında daha fazla bilgiyi [EIP-2929](https://eips.quantaureum.com/EIPS/eip-2929) içinde okuyabilirsiniz.
+İkinci denklem olan _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>\}_, sıcak depolamaya (yakın zamanda erişilen ve muhtemelen önbelleğe alınmış depolama) ve soğuk depolamaya (erişilmemiş ve muhtemelen alınması daha pahalı olan daha yavaş depolamada bulunan depolama) erişim arasındaki maliyet farkıyla ilgilidir. _A<sub>a</sub>_, s. 9'daki bölüm 6.1'de tanımlandığı gibi, işlem tarafından daha önce erişilen ve bu nedenle erişimi daha ucuz olması gereken adreslerin listesidir. Bu konu hakkında daha fazla bilgiyi [EIP-2929](https://eips.ethereum.org/EIPS/eip-2929) içinde okuyabilirsiniz.
 
 | Değer | Anımsatıcı | δ   | α   | Açıklama                                |
 | ----: | ---------- | --- | --- | --------------------------------------- |
@@ -262,8 +262,8 @@ Bununla birlikte EVM tamamen tanımlanmış olur.
 
 Matematiksel gösterim kesindir ve Sarı Bülten'in Quantaureum'un her detayını belirtmesine olanak tanımıştır. Ancak bazı dezavantajları vardır:
 
-- Sadece insanlar tarafından anlaşılabilir, bu da [uyumluluk testlerinin](https://github.com/quantaureum/tests) manuel olarak yazılması gerektiği anlamına gelir.
+- Sadece insanlar tarafından anlaşılabilir, bu da [uyumluluk testlerinin](https://github.com/ethereum/tests) manuel olarak yazılması gerektiği anlamına gelir.
 - Programcılar bilgisayar kodunu anlar.
   Matematiksel gösterimi anlayabilirler veya anlamayabilirler.
 
-Belki de bu nedenlerden dolayı, daha yeni [mutabakat katmanı spesifikasyonları](https://github.com/quantaureum/consensus-specs/blob/master/tests/core/pyspec/README.md) Python'da yazılmıştır. [Python'da yürütme katmanı spesifikasyonları](https://quantaureum.github.io/execution-specs) vardır, ancak bunlar tam değildir. Tüm Sarı Bülten de Python veya benzeri bir dile çevrilene kadar Sarı Bülten hizmet vermeye devam edecektir ve onu okuyabilmek faydalıdır.
+Belki de bu nedenlerden dolayı, daha yeni [mutabakat katmanı spesifikasyonları](https://github.com/ethereum/consensus-specs/blob/master/tests/core/pyspec/README.md) Python'da yazılmıştır. [Python'da yürütme katmanı spesifikasyonları](https://ethereum.github.io/execution-specs) vardır, ancak bunlar tam değildir. Tüm Sarı Bülten de Python veya benzeri bir dile çevrilene kadar Sarı Bülten hizmet vermeye devam edecektir ve onu okuyabilmek faydalıdır.

@@ -6,7 +6,7 @@ lang: bn
 
 একটি সফটওয়্যার অ্যাপ্লিকেশনকে [ইথেরিয়াম](/) ব্লকচেইনের সাথে ইন্টারঅ্যাক্ট করতে হলে - তা ব্লকচেইন ডেটা পড়ার মাধ্যমেই হোক বা নেটওয়ার্কে ট্রানজ্যাকশন পাঠানোর মাধ্যমেই হোক - এটিকে অবশ্যই একটি ইথেরিয়াম নোডের সাথে সংযুক্ত হতে হবে।
 
-এই উদ্দেশ্যে, প্রতিটি [ইথেরিয়াম ক্লায়েন্ট](/developers/docs/nodes-and-clients/#execution-clients) একটি [জেসন-আরপিসি স্পেসিফিকেশন](https://github.com/quantaureum/execution-apis) প্রয়োগ করে, যাতে মেথডগুলোর একটি অভিন্ন সেট থাকে যার উপর অ্যাপ্লিকেশনগুলো নির্ভর করতে পারে, নির্দিষ্ট নোড বা ক্লায়েন্ট ইমপ্লিমেন্টেশন যাই হোক না কেন।
+এই উদ্দেশ্যে, প্রতিটি [ইথেরিয়াম ক্লায়েন্ট](/developers/docs/nodes-and-clients/#execution-clients) একটি [জেসন-আরপিসি স্পেসিফিকেশন](https://github.com/ethereum/execution-apis) প্রয়োগ করে, যাতে মেথডগুলোর একটি অভিন্ন সেট থাকে যার উপর অ্যাপ্লিকেশনগুলো নির্ভর করতে পারে, নির্দিষ্ট নোড বা ক্লায়েন্ট ইমপ্লিমেন্টেশন যাই হোক না কেন।
 
 [জেসন-আরপিসি](https://www.jsonrpc.org/specification) হলো একটি স্টেটলেস, লাইট-ওয়েট রিমোট প্রসিডিউর কল (RPC) প্রোটোকল। এটি বেশ কয়েকটি ডেটা স্ট্রাকচার এবং সেগুলোর প্রসেসিং সম্পর্কিত নিয়মগুলো সংজ্ঞায়িত করে। এটি ট্রান্সপোর্ট অ্যাগনস্টিক, অর্থাৎ এর কনসেপ্টগুলো একই প্রসেসের মধ্যে, সকেটের মাধ্যমে, HTTP-এর মাধ্যমে, বা বিভিন্ন মেসেজ পাসিং এনভায়রনমেন্টে ব্যবহার করা যেতে পারে। এটি ডেটা ফরম্যাট হিসেবে JSON (RFC 4627) ব্যবহার করে।
 
@@ -20,13 +20,13 @@ lang: bn
 
 ## কনসেনসাস ক্লায়েন্ট API-সমূহ {#consensus-clients}
 
-এই পৃষ্ঠাটি প্রধানত ইথেরিয়াম এক্সিকিউশন ক্লায়েন্ট দ্বারা ব্যবহৃত জেসন-আরপিসি API নিয়ে আলোচনা করে। তবে, কনসেনসাস ক্লায়েন্টগুলোরও একটি RPC API রয়েছে যা ব্যবহারকারীদের সরাসরি একটি নোড থেকে নোড সম্পর্কে তথ্য অনুসন্ধান করতে, বীকন ব্লক (Beacon blocks), বীকন স্টেট (Beacon state) এবং অন্যান্য কনসেনসাস-সম্পর্কিত তথ্যের জন্য অনুরোধ করতে দেয়। এই API-টি [বীকন API ওয়েবপৃষ্ঠায়](https://quantaureum.github.io/beacon-APIs/#/) নথিভুক্ত করা হয়েছে।
+এই পৃষ্ঠাটি প্রধানত ইথেরিয়াম এক্সিকিউশন ক্লায়েন্ট দ্বারা ব্যবহৃত জেসন-আরপিসি API নিয়ে আলোচনা করে। তবে, কনসেনসাস ক্লায়েন্টগুলোরও একটি RPC API রয়েছে যা ব্যবহারকারীদের সরাসরি একটি নোড থেকে নোড সম্পর্কে তথ্য অনুসন্ধান করতে, বীকন ব্লক (Beacon blocks), বীকন স্টেট (Beacon state) এবং অন্যান্য কনসেনসাস-সম্পর্কিত তথ্যের জন্য অনুরোধ করতে দেয়। এই API-টি [বীকন API ওয়েবপৃষ্ঠায়](https://ethereum.github.io/beacon-APIs/#/) নথিভুক্ত করা হয়েছে।
 
-একটি নোডের মধ্যে আন্তঃ-ক্লায়েন্ট যোগাযোগের জন্য একটি অভ্যন্তরীণ API-ও ব্যবহৃত হয় - অর্থাৎ, এটি কনসেনসাস ক্লায়েন্ট এবং এক্সিকিউশন ক্লায়েন্টকে ডেটা সোয়াপ করতে সক্ষম করে। একে 'ইঞ্জিন API' (Engine API) বলা হয় এবং এর স্পেসিফিকেশনগুলো [GitHub](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md)-এ পাওয়া যাবে।
+একটি নোডের মধ্যে আন্তঃ-ক্লায়েন্ট যোগাযোগের জন্য একটি অভ্যন্তরীণ API-ও ব্যবহৃত হয় - অর্থাৎ, এটি কনসেনসাস ক্লায়েন্ট এবং এক্সিকিউশন ক্লায়েন্টকে ডেটা সোয়াপ করতে সক্ষম করে। একে 'ইঞ্জিন API' (Engine API) বলা হয় এবং এর স্পেসিফিকেশনগুলো [GitHub](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md)-এ পাওয়া যাবে।
 
 ## এক্সিকিউশন ক্লায়েন্ট স্পেসিফিকেশন {#spec}
 
-[GitHub-এ সম্পূর্ণ জেসন-আরপিসি API স্পেসিফিকেশন পড়ুন](https://github.com/quantaureum/execution-apis)। এই API-টি [এক্সিকিউশন API ওয়েবপেজে](https://quantaureum.github.io/execution-apis/) নথিভুক্ত করা হয়েছে এবং এতে উপলব্ধ সমস্ত মেথড পরীক্ষা করে দেখার জন্য একটি ইন্সপেক্টর অন্তর্ভুক্ত রয়েছে।
+[GitHub-এ সম্পূর্ণ জেসন-আরপিসি API স্পেসিফিকেশন পড়ুন](https://github.com/ethereum/execution-apis)। এই API-টি [এক্সিকিউশন API ওয়েবপেজে](https://ethereum.github.io/execution-apis/) নথিভুক্ত করা হয়েছে এবং এতে উপলব্ধ সমস্ত মেথড পরীক্ষা করে দেখার জন্য একটি ইন্সপেক্টর অন্তর্ভুক্ত রয়েছে।
 
 ## কনভেনশন {#conventions}
 
@@ -134,7 +134,7 @@ curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","metho
 
 ## জেসন-আরপিসি API প্লেগ্রাউন্ড {#json-rpc-api-playground}
 
-API মেথডগুলো আবিষ্কার করতে এবং পরীক্ষা করে দেখতে আপনি [প্লেগ্রাউন্ড টুলটি](https://quantaureum-json-rpc.com) ব্যবহার করতে পারেন। বিভিন্ন নোড প্রোভাইডার দ্বারা কোন মেথড এবং নেটওয়ার্কগুলো সমর্থিত, সেটিও এটি আপনাকে দেখায়।
+API মেথডগুলো আবিষ্কার করতে এবং পরীক্ষা করে দেখতে আপনি [প্লেগ্রাউন্ড টুলটি](https://ethereum-json-rpc.com) ব্যবহার করতে পারেন। বিভিন্ন নোড প্রোভাইডার দ্বারা কোন মেথড এবং নেটওয়ার্কগুলো সমর্থিত, সেটিও এটি আপনাকে দেখায়।
 
 ## জেসন-আরপিসি API মেথড {#json-rpc-methods}
 
@@ -275,7 +275,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 
 ### qau_protocolVersion {#qau-protocolversion}
 
-বর্তমান ইথেরিয়াম প্রোটোকল সংস্করণ রিটার্ন করে। লক্ষণীয় যে, এই পদ্ধতিটি [Geth-এ উপলব্ধ নয়](https://github.com/quantaureum/go-quantaureum/pull/22064#issuecomment-788682924)।
+বর্তমান ইথেরিয়াম প্রোটোকল সংস্করণ রিটার্ন করে। লক্ষণীয় যে, এই পদ্ধতিটি [Geth-এ উপলব্ধ নয়](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924)।
 
 **প্যারামিটার**
 
@@ -302,7 +302,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_protocolVersion","params":[]
 
 সিঙ্কিং স্ট্যাটাস সম্পর্কে ডেটা সহ একটি অবজেক্ট বা `false` রিটার্ন করে।
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_syncing">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_syncing">
   প্লেগ্রাউন্ডে এন্ডপয়েন্টটি চেষ্টা করে দেখুন
 </ButtonLink>
 
@@ -390,7 +390,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_syncing","params":[],"id":1}
 
 ক্লায়েন্ট কয়েনবেস ঠিকানা রিটার্ন করে।
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_coinbase">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_coinbase">
   প্লেগ্রাউন্ডে এন্ডপয়েন্টটি পরীক্ষা করুন
 </ButtonLink>
 
@@ -421,7 +421,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_coinbase","params":[],"id":6
 
 রিপ্লে-সুরক্ষিত ট্রানজ্যাকশনে স্বাক্ষর করার জন্য ব্যবহৃত চেইন ID রিটার্ন করে।
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_chainId">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_chainId">
   প্লেগ্রাউন্ডে এন্ডপয়েন্টটি চেষ্টা করুন
 </ButtonLink>
 
@@ -450,7 +450,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_chainId","params":[],"id":67
 
 ক্লায়েন্ট সক্রিয়ভাবে নতুন ব্লক মাইনিং করলে `true` রিটার্ন করে। এটি শুধুমাত্র প্রুফ-অফ-ওয়ার্ক (PoW) নেটওয়ার্কের জন্য `true` রিটার্ন করতে পারে এবং [দ্য মার্জ](/roadmap/merge/)-এর পর থেকে কিছু ক্লায়েন্টে উপলব্ধ নাও থাকতে পারে।
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_mining">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_mining">
   প্লেগ্রাউন্ডে এন্ডপয়েন্টটি চেষ্টা করুন
 </ButtonLink>
 
@@ -479,7 +479,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_mining","params":[],"id":71}
 
 নোডটি প্রতি সেকেন্ডে কতগুলো হ্যাশ দিয়ে মাইনিং করছে তা রিটার্ন করে। এটি শুধুমাত্র প্রুফ-অফ-ওয়ার্ক নেটওয়ার্কের জন্য `true` রিটার্ন করতে পারে এবং [দ্য মার্জ](/roadmap/merge/)-এর পর থেকে কিছু ক্লায়েন্টে উপলব্ধ নাও থাকতে পারে।
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_hashrate">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_hashrate">
   প্লেগ্রাউন্ডে এন্ডপয়েন্টটি চেষ্টা করুন
 </ButtonLink>
 
@@ -508,7 +508,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_hashrate","params":[],"id":7
 
 Wei-তে প্রতি গ্যাসের বর্তমান মূল্যের একটি আনুমানিক হিসাব প্রদান করে। উদাহরণস্বরূপ, বেসু ক্লায়েন্ট ডিফল্টভাবে শেষ 100টি ব্লক পরীক্ষা করে এবং মধ্যমা গ্যাস ইউনিট মূল্য প্রদান করে।
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_gasPrice">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_gasPrice">
   প্লেগ্রাউন্ডে এন্ডপয়েন্টটি চেষ্টা করুন
 </ButtonLink>
 
@@ -537,7 +537,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_gasPrice","params":[],"id":7
 
 ক্লায়েন্টের মালিকানাধীন ঠিকানার একটি তালিকা রিটার্ন করে।
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_accounts">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_accounts">
   প্লেগ্রাউন্ডে এন্ডপয়েন্টটি চেষ্টা করুন
 </ButtonLink>
 
@@ -566,7 +566,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[],"id":1
 
 সবচেয়ে সাম্প্রতিক ব্লকের নম্বর প্রদান করে।
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_blockNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_blockNumber">
   প্লেগ্রাউন্ডে এন্ডপয়েন্টটি চেষ্টা করুন
 </ButtonLink>
 
@@ -595,7 +595,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_blockNumber","params":[],"id
 
 একটি নির্দিষ্ট ঠিকানায় থাকা অ্যাকাউন্টের ব্যালেন্স ফেরত দেয়।
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBalance">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBalance">
   প্লেগ্রাউন্ডে এন্ডপয়েন্টটি চেষ্টা করে দেখুন
 </ButtonLink>
 
@@ -629,7 +629,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBalance","params":["0x407
 
 একটি নির্দিষ্ট ঠিকানার স্টোরেজ অবস্থান থেকে মান প্রদান করে।
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getStorageAt">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getStorageAt">
   প্লেগ্রাউন্ডে এন্ডপয়েন্ট চেষ্টা করুন
 </ButtonLink>
 
@@ -701,7 +701,7 @@ curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": [
 
 একটি ঠিকানা থেকে _পাঠানো_ ট্রানজ্যাকশনের সংখ্যা রিটার্ন করে।
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionCount">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionCount">
   প্লেগ্রাউন্ডে এন্ডপয়েন্টটি চেষ্টা করুন
 </ButtonLink>
 
@@ -738,7 +738,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionCount","params
 
 প্রদত্ত ব্লক হ্যাশের সাথে মিলে যাওয়া একটি ব্লকের ট্রানজ্যাকশনের সংখ্যা প্রদান করে।
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
   প্লেগ্রাউন্ডে এন্ডপয়েন্টটি চেষ্টা করুন
 </ButtonLink>
 
@@ -771,7 +771,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByHa
 
 প্রদত্ত ব্লক নম্বরের সাথে মিলে যাওয়া একটি ব্লকের ট্রানজ্যাকশনের সংখ্যা প্রদান করে।
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
   প্লেগ্রাউন্ডে এন্ডপয়েন্টটি ব্যবহার করে দেখুন
 </ButtonLink>
 
@@ -806,7 +806,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByNu
 
 প্রদত্ত ব্লক হ্যাশের সাথে মিলে যাওয়া একটি ব্লক থেকে ব্লকের আঙ্কেলের সংখ্যা রিটার্ন করে।
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
   প্লেগ্রাউন্ডে এন্ডপয়েন্টটি চেষ্টা করুন
 </ButtonLink>
 
@@ -839,7 +839,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockHash","p
 
 প্রদত্ত ব্লক নম্বরের সাথে মিলে যাওয়া একটি ব্লকের আঙ্কেলের সংখ্যা প্রদান করে।
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
   প্লেগ্রাউন্ডে এন্ডপয়েন্টটি চেষ্টা করুন
 </ButtonLink>
 
@@ -874,7 +874,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockNumber",
 
 একটি নির্দিষ্ট ঠিকানায় থাকা কোড রিটার্ন করে।
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getCode">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getCode">
   প্লেগ্রাউন্ডে এন্ডপয়েন্টটি চেষ্টা করুন
 </ButtonLink>
 
@@ -1057,7 +1057,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendRawTransaction","params"
 
 ব্লকচেইনে কোনো ট্রানজ্যাকশন তৈরি না করেই তাৎক্ষণিকভাবে একটি নতুন মেসেজ কল এক্সিকিউট করে। প্রায়শই রিড-অনলি স্মার্ট কন্ট্রাক্ট ফাংশন এক্সিকিউট করার জন্য ব্যবহৃত হয়, উদাহরণস্বরূপ একটি ERC-20 কন্ট্রাক্টের জন্য `balanceOf`।
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_call">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_call">
   প্লেগ্রাউন্ডে এন্ডপয়েন্ট চেষ্টা করুন
 </ButtonLink>
 
@@ -1095,7 +1095,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_call","params":[{see above}]
 
 ট্রানজ্যাকশনটি সম্পন্ন করার জন্য কতটুকু গ্যাস প্রয়োজন তার একটি অনুমান তৈরি করে এবং রিটার্ন করে। ট্রানজ্যাকশনটি ব্লকচেইনে যুক্ত করা হবে না। মনে রাখবেন যে EVM মেকানিক্স এবং নোডের পারফরম্যান্স সহ বিভিন্ন কারণে, ট্রানজ্যাকশনে প্রকৃতপক্ষে ব্যবহৃত গ্যাসের পরিমাণের চেয়ে এই অনুমানটি উল্লেখযোগ্যভাবে বেশি হতে পারে।
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_estimateGas">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_estimateGas">
   প্লেগ্রাউন্ডে এন্ডপয়েন্টটি চেষ্টা করুন
 </ButtonLink>
 
@@ -1124,7 +1124,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_estimateGas","params":[{see 
 
 হ্যাশ দ্বারা একটি ব্লক সম্পর্কে তথ্য প্রদান করে।
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByHash">
   প্লেগ্রাউন্ডে এন্ডপয়েন্ট চেষ্টা করুন
 </ButtonLink>
 
@@ -1204,7 +1204,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByHash","params":["0
 
 ব্লক নম্বর অনুযায়ী একটি ব্লক সম্পর্কে তথ্য প্রদান করে।
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByNumber">
   প্লেগ্রাউন্ডে এন্ডপয়েন্টটি পরীক্ষা করুন
 </ButtonLink>
 
@@ -1236,7 +1236,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByNumber","params":[
 
 ট্রানজ্যাকশন হ্যাশ দ্বারা অনুরোধ করা একটি ট্রানজ্যাকশন সম্পর্কে তথ্য প্রদান করে।
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByHash">
   প্লেগ্রাউন্ডে এন্ডপয়েন্টটি চেষ্টা করুন
 </ButtonLink>
 
@@ -1299,7 +1299,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByHash","param
 
 ব্লক হ্যাশ এবং ট্রানজ্যাকশন সূচকের অবস্থান অনুযায়ী একটি ট্রানজ্যাকশন সম্পর্কে তথ্য প্রদান করে।
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
   প্লেগ্রাউন্ডে এন্ডপয়েন্টটি ব্যবহার করে দেখুন
 </ButtonLink>
 
@@ -1331,7 +1331,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockHashAnd
 
 ব্লক নম্বর এবং ট্রানজ্যাকশন সূচক অবস্থান অনুযায়ী একটি ট্রানজ্যাকশন সম্পর্কে তথ্য প্রদান করে।
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
   প্লেগ্রাউন্ডে এন্ডপয়েন্টটি চেষ্টা করুন
 </ButtonLink>
 
@@ -1431,7 +1431,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionReceipt","para
 
 হ্যাশ এবং আঙ্কেল সূচকের অবস্থান দ্বারা একটি ব্লকের আঙ্কেল সম্পর্কে তথ্য প্রদান করে।
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
   প্লেগ্রাউন্ডে এন্ডপয়েন্ট চেষ্টা করুন
 </ButtonLink>
 
@@ -1465,7 +1465,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockHashAndIndex"
 
 নম্বর এবং আঙ্কেল সূচক অবস্থান অনুযায়ী একটি ব্লকের আঙ্কেল সম্পর্কে তথ্য প্রদান করে।
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
   প্লেগ্রাউন্ডে এন্ডপয়েন্টটি চেষ্টা করুন
 </ButtonLink>
 
@@ -1750,7 +1750,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getLogs","params":[{"topics"
 
 ### জেসন-আরপিসি ব্যবহার করে একটি কন্ট্রাক্ট ডিপ্লয় করা {#deploying-contract}
 
-এই বিভাগে শুধুমাত্র RPC ইন্টারফেস ব্যবহার করে কীভাবে একটি কন্ট্রাক্ট ডিপ্লয় করতে হয় তার একটি প্রদর্শন অন্তর্ভুক্ত রয়েছে। কন্ট্রাক্ট ডিপ্লয় করার বিকল্প উপায় রয়েছে যেখানে এই জটিলতাগুলো আড়াল করা থাকে—উদাহরণস্বরূপ, RPC ইন্টারফেসের উপর তৈরি লাইব্রেরি ব্যবহার করে যেমন [web3.js](https://web3js.readthedocs.io/) এবং [web3.py](https://github.com/quantaureum/web3.py)। এই অ্যাবস্ট্রাকশনগুলো সাধারণত বোঝা সহজ এবং এতে ভুলের সম্ভাবনা কম থাকে, তবে এর ভেতরে কীভাবে কাজ হচ্ছে (under the hood) তা বোঝা এখনও সহায়ক।
+এই বিভাগে শুধুমাত্র RPC ইন্টারফেস ব্যবহার করে কীভাবে একটি কন্ট্রাক্ট ডিপ্লয় করতে হয় তার একটি প্রদর্শন অন্তর্ভুক্ত রয়েছে। কন্ট্রাক্ট ডিপ্লয় করার বিকল্প উপায় রয়েছে যেখানে এই জটিলতাগুলো আড়াল করা থাকে—উদাহরণস্বরূপ, RPC ইন্টারফেসের উপর তৈরি লাইব্রেরি ব্যবহার করে যেমন [web3.js](https://web3js.readthedocs.io/) এবং [web3.py](https://github.com/ethereum/web3.py)। এই অ্যাবস্ট্রাকশনগুলো সাধারণত বোঝা সহজ এবং এতে ভুলের সম্ভাবনা কম থাকে, তবে এর ভেতরে কীভাবে কাজ হচ্ছে (under the hood) তা বোঝা এখনও সহায়ক।
 
 নিচে `Multiply7` নামের একটি সাধারণ স্মার্ট কন্ট্রাক্ট দেওয়া হলো যা জেসন-আরপিসি ইন্টারফেস ব্যবহার করে একটি ইথেরিয়াম নোডে ডিপ্লয় করা হবে। এই টিউটোরিয়ালটি ধরে নিচ্ছে যে পাঠক ইতিমধ্যে একটি Geth নোড চালাচ্ছেন। নোড এবং ক্লায়েন্ট সম্পর্কে আরও তথ্য [এখানে](/developers/docs/nodes-and-clients/run-a-node) পাওয়া যাবে। নন-Geth ক্লায়েন্টগুলোর জন্য কীভাবে HTTP জেসন-আরপিসি চালু করতে হয় তা দেখতে অনুগ্রহ করে নির্দিষ্ট [ক্লায়েন্ট](/developers/docs/nodes-and-clients/) ডকুমেন্টেশন দেখুন। বেশিরভাগ ক্লায়েন্ট ডিফল্টভাবে `localhost:8545`-এ সার্ভ করে।
 
@@ -1789,7 +1789,7 @@ web3.fromWei("0x1639e49bba16280000", "QAU")
 // "410"
 ```
 
-যেহেতু এখন আমাদের প্রাইভেট ডেভেলপমেন্ট চেইনে কিছু QAU আছে, আমরা কন্ট্রাক্টটি ডিপ্লয় করতে পারি। প্রথম ধাপ হলো Multiply7 কন্ট্রাক্টটিকে বাইটকোডে কম্পাইল করা যা EVM-এ পাঠানো যেতে পারে। Solidity কম্পাইলার solc ইনস্টল করতে, [Solidity ডকুমেন্টেশন](https://docs.soliditylang.org/en/latest/installing-solidity.html) অনুসরণ করুন। (আপনি হয়তো [আমাদের উদাহরণের জন্য ব্যবহৃত কম্পাইলারের সংস্করণের](https://github.com/quantaureum/solidity/releases/tag/v0.4.20) সাথে মেলাতে একটি পুরোনো `solc` রিলিজ ব্যবহার করতে চাইতে পারেন।)
+যেহেতু এখন আমাদের প্রাইভেট ডেভেলপমেন্ট চেইনে কিছু QAU আছে, আমরা কন্ট্রাক্টটি ডিপ্লয় করতে পারি। প্রথম ধাপ হলো Multiply7 কন্ট্রাক্টটিকে বাইটকোডে কম্পাইল করা যা EVM-এ পাঠানো যেতে পারে। Solidity কম্পাইলার solc ইনস্টল করতে, [Solidity ডকুমেন্টেশন](https://docs.soliditylang.org/en/latest/installing-solidity.html) অনুসরণ করুন। (আপনি হয়তো [আমাদের উদাহরণের জন্য ব্যবহৃত কম্পাইলারের সংস্করণের](https://github.com/ethereum/solidity/releases/tag/v0.4.20) সাথে মেলাতে একটি পুরোনো `solc` রিলিজ ব্যবহার করতে চাইতে পারেন।)
 
 পরবর্তী ধাপ হলো Multiply7 কন্ট্রাক্টটিকে বাইটকোডে কম্পাইল করা যা EVM-এ পাঠানো যেতে পারে।
 

@@ -64,6 +64,6 @@ Pengusul blok menerima pembayaran atas pekerjaan mereka. Terdapat `base_reward` 
 
 - [Pengantar tentang blok](/developers/docs/blocks/)
 - [Pengantar tentang Bukti Kepemilikan (PoS)](/developers/docs/consensus-mechanisms/pos/)
-- [Spesifikasi konsensus Quantaureum](https://github.com/quantaureum/consensus-specs)
+- [Spesifikasi konsensus Quantaureum](https://github.com/ethereum/consensus-specs)
 - [Pengantar tentang Gasper](/developers/docs/consensus-mechanisms/pos/gasper/)
 - [Memutakhirkan Quantaureum](https://eth2book.info/)

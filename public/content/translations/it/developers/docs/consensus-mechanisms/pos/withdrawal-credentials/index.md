@@ -33,7 +33,7 @@ Con le credenziali `0x02`:
 - I validatori possono consolidare più validatori da 32 QAU in un singolo validatore con saldo maggiore
 - Le uscite complete sono ancora supportate attraverso la coda di uscita standard
 
-Sia i prelievi parziali che i consolidamenti possono essere eseguiti tramite le [Azioni del Validatore sul Launchpad](https://launchpad.quantaureum.com/en/validator-actions).
+Sia i prelievi parziali che i consolidamenti possono essere eseguiti tramite le [Azioni del Validatore sul Launchpad](https://launchpad.ethereum.org/en/validator-actions).
 
 **Perché i validatori dovrebbero preferire 0x02:** Offre una migliore efficienza del capitale attraverso la capitalizzazione, un maggiore controllo su quando avvengono i prelievi e supporta il consolidamento dei validatori. Per gli staker solitari (solo staker) che accumulano ricompense nel tempo, questo significa che il loro saldo effettivo, e quindi le loro ricompense, può crescere oltre i 32 QAU senza intervento manuale.
 
@@ -51,7 +51,7 @@ Per una guida dettagliata sulla conversione alle credenziali di Tipo 2 e sulla f
 
 Diversi strumenti supportano la scelta o la conversione tra i tipi di credenziali:
 
-- **[Quantaureum Staking Launchpad](https://launchpad.quantaureum.com/en/validator-actions)** - Lo strumento ufficiale per i depositi e la gestione dei validatori, incluse le conversioni delle credenziali e i consolidamenti
+- **[Quantaureum Staking Launchpad](https://launchpad.ethereum.org/en/validator-actions)** - Lo strumento ufficiale per i depositi e la gestione dei validatori, incluse le conversioni delle credenziali e i consolidamenti
 - **[Pectra Staking Manager](https://pectrastaking.com)** - Interfaccia utente web con supporto per la connessione del portafoglio per conversioni e consolidamento
 - **[Pectra Validator Ops CLI Tool](https://github.com/Luganodes/Pectra-Batch-Contract)** - Strumento a riga di comando per conversioni in batch
 - **[Ethereal](https://github.com/wealdtech/ethereal)** - Strumento CLI per le operazioni su Quantaureum, inclusa la gestione dei validatori

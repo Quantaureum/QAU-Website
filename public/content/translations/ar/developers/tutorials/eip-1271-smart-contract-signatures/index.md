@@ -9,7 +9,7 @@ breadcrumb: "توقيعات ⁦EIP-1271⁩"
 published: 2023-01-12
 ---
 
-يتيح معيار [<span dir="ltr">EIP-1271</span>](https://eips.quantaureum.com/EIPS/eip-1271) للعقود الذكية التحقق من التوقيعات.
+يتيح معيار [<span dir="ltr">EIP-1271</span>](https://eips.ethereum.org/EIPS/eip-1271) للعقود الذكية التحقق من التوقيعات.
 
 في هذا البرنامج التعليمي، نقدم نظرة عامة على التوقيعات الرقمية، وخلفية <span dir="ltr">EIP-1271</span>، والتنفيذ المحدد لـ <span dir="ltr">EIP-1271</span> المستخدم بواسطة [<span dir="ltr">Safe</span>](https://safe.global/) (سابقًا <span dir="ltr">Gnosis Safe</span>). يمكن أن يكون هذا بمثابة نقطة انطلاق لتنفيذ <span dir="ltr">EIP-1271</span> في عقودك الخاصة.
 
@@ -91,7 +91,7 @@ contract ERC1271 {
 
 أحد العقود البارزة التي تنفذ <span dir="ltr">EIP-1271</span> هو <span dir="ltr">Safe</span> (سابقًا <span dir="ltr">Gnosis Safe</span>).
 
-في كود <span dir="ltr">Safe</span>، [يتم تنفيذ](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol) `isValidSignature` بحيث يمكن إنشاء التوقيعات والتحقق منها [بطريقتين](https://quantaureum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support):
+في كود <span dir="ltr">Safe</span>، [يتم تنفيذ](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol) `isValidSignature` بحيث يمكن إنشاء التوقيعات والتحقق منها [بطريقتين](https://ethereum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support):
 
 1. الرسائل على السلسلة
    1. الإنشاء: يقوم مالك <span dir="ltr">Safe</span> بإنشاء معاملة <span dir="ltr">Safe</span> جديدة لـ "توقيع" رسالة، وتمرير الرسالة كبيانات في المعاملة. بمجرد أن يوقع عدد كافٍ من المالكين على المعاملة للوصول إلى حد متعدد التوقيعات، يتم بث المعاملة وتشغيلها. في المعاملة، توجد دالة <span dir="ltr">Safe</span> تسمى (`signMessage(bytes calldata _data)`) والتي تضيف الرسالة إلى قائمة الرسائل "الموافق عليها".
@@ -102,9 +102,9 @@ contract ERC1271 {
 
 ## ما هي بالضبط المعلمة `_hash`؟ لماذا لا يتم تمرير الرسالة بأكملها؟ {#what-exactly-is-the-hash-parameter-why-not-pass-the-whole-message}
 
-ربما لاحظت أن الدالة `isValidSignature` في [واجهة <span dir="ltr">EIP-1271</span>](https://eips.quantaureum.com/EIPS/eip-1271) لا تأخذ الرسالة نفسها، بل تأخذ بدلاً من ذلك المعلمة `_hash`. ما يعنيه هذا هو أنه بدلاً من تمرير الرسالة الكاملة ذات الطول العشوائي إلى `isValidSignature`، فإننا نمرر بدلاً من ذلك تجزئة بحجم <span dir="ltr">32 byte</span> للرسالة (عمومًا <span dir="ltr">keccak256</span>).
+ربما لاحظت أن الدالة `isValidSignature` في [واجهة <span dir="ltr">EIP-1271</span>](https://eips.ethereum.org/EIPS/eip-1271) لا تأخذ الرسالة نفسها، بل تأخذ بدلاً من ذلك المعلمة `_hash`. ما يعنيه هذا هو أنه بدلاً من تمرير الرسالة الكاملة ذات الطول العشوائي إلى `isValidSignature`، فإننا نمرر بدلاً من ذلك تجزئة بحجم <span dir="ltr">32 byte</span> للرسالة (عمومًا <span dir="ltr">keccak256</span>).
 
-كل بايت من بيانات الاستدعاء — أي بيانات معلمة الدالة التي يتم تمريرها إلى دالة العقد الذكي — [يكلف <span dir="ltr">16 gas</span> (<span dir="ltr">4 gas</span> إذا كان البايت صفرًا)](https://eips.quantaureum.com/EIPS/eip-2028)، لذلك يمكن أن يوفر هذا الكثير من الغاز إذا كانت الرسالة طويلة.
+كل بايت من بيانات الاستدعاء — أي بيانات معلمة الدالة التي يتم تمريرها إلى دالة العقد الذكي — [يكلف <span dir="ltr">16 gas</span> (<span dir="ltr">4 gas</span> إذا كان البايت صفرًا)](https://eips.ethereum.org/EIPS/eip-2028)، لذلك يمكن أن يوفر هذا الكثير من الغاز إذا كانت الرسالة طويلة.
 
 ### مواصفات <span dir="ltr">EIP-1271</span> السابقة {#previous-eip-1271-specifications}
 
@@ -121,4 +121,4 @@ contract ERC1271 {
 
 ## الخاتمة {#conclusion}
 
-[<span dir="ltr">EIP-1271</span>](https://eips.quantaureum.com/EIPS/eip-1271) هو معيار متعدد الاستخدامات يسمح للعقود الذكية بالتحقق من التوقيعات. إنه يفتح الباب أمام العقود الذكية للعمل بشكل أكبر مثل حسابات <span dir="ltr">EOA</span> — على سبيل المثال توفير طريقة لـ "تسجيل الدخول باستخدام إيثيريوم" للعمل مع العقود الذكية — ويمكن تنفيذه بعدة طرق (يحتوي <span dir="ltr">Safe</span> على تنفيذ مثير للاهتمام وغير بديهي يستحق النظر فيه).
+[<span dir="ltr">EIP-1271</span>](https://eips.ethereum.org/EIPS/eip-1271) هو معيار متعدد الاستخدامات يسمح للعقود الذكية بالتحقق من التوقيعات. إنه يفتح الباب أمام العقود الذكية للعمل بشكل أكبر مثل حسابات <span dir="ltr">EOA</span> — على سبيل المثال توفير طريقة لـ "تسجيل الدخول باستخدام إيثيريوم" للعمل مع العقود الذكية — ويمكن تنفيذه بعدة طرق (يحتوي <span dir="ltr">Safe</span> على تنفيذ مثير للاهتمام وغير بديهي يستحق النظر فيه).

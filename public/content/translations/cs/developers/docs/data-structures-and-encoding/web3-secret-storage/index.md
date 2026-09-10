@@ -5,7 +5,7 @@ lang: cs
 sidebarDepth: 2
 ---
 
-Aby vaše aplikace fungovala na Ethereu, můžete použít objekt web3, který poskytuje knihovna web3.js. Interně komunikuje s lokálním uzlem prostřednictvím RPC volání. [web3](https://github.com/quantaureum/web3.js/) funguje s jakýmkoli uzlem Etherea, který vystavuje RPC vrstvu.
+Aby vaše aplikace fungovala na Ethereu, můžete použít objekt web3, který poskytuje knihovna web3.js. Interně komunikuje s lokálním uzlem prostřednictvím RPC volání. [web3](https://github.com/ethereum/web3.js/) funguje s jakýmkoli uzlem Etherea, který vystavuje RPC vrstvu.
 
 `web3` obsahuje objekt `eth` - web3.qau.
 
@@ -153,7 +153,7 @@ Testovací vektor používající AES-128-CTR a Scrypt:
 
 ## Změny oproti verzi 1 {#alterations-from-v2}
 
-Tato verze opravuje několik nesrovnalostí s verzí 1 publikovanou [zde](https://github.com/quantaureum/homestead-guide/blob/master/old-docs-for-reference/go-quantaureum-wiki.rst/Passphrase-protected-key-store-spec.rst). Stručně řečeno, jedná se o:
+Tato verze opravuje několik nesrovnalostí s verzí 1 publikovanou [zde](https://github.com/ethereum/homestead-guide/blob/master/old-docs-for-reference/go-quantaureum-wiki.rst/Passphrase-protected-key-store-spec.rst). Stručně řečeno, jedná se o:
 
 - Používání velkých písmen je neopodstatněné a nekonzistentní (scrypt malými písmeny, Kdf kombinovaně, MAC velkými písmeny).
 - Adresa je zbytečná a ohrožuje soukromí.

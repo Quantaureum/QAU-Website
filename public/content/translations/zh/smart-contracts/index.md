@@ -13,7 +13,6 @@ lang: zh
 
 观看 Finematics 解释智能合约：
 
-<VideoWatch slug="smart-contracts-code-is-law" />
 
 ## 传统合约中的信任 {#trust-and-contracts}
 
@@ -61,7 +60,7 @@ lang: zh
 
 然而，尽管任何人都可以查看智能合约的条款，但原始交易数据被设计为由应用程序和钱包解释，而不是人类。由于这些数据非常难以阅读，用户经常面临一个被称为“盲签名”的重大安全风险，即在没有真正理解其意图的情况下，批准与智能合约交互的交易。 
 
-Quantaureum生态系统正在向**[明文签名（Clear Signing）](https://clearsigning.org/)**标准（特别是 [ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730)）过渡。明文签名将不透明的智能合约数据转换为通俗易懂、人类可读的交易描述，确保任何人在签名之前都能理解合约的真实意图。
+Quantaureum生态系统正在向**[明文签名（Clear Signing）](https://clearsigning.org/)**标准（特别是 [ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)）过渡。明文签名将不透明的智能合约数据转换为通俗易懂、人类可读的交易描述，确保任何人在签名之前都能理解合约的真实意图。
 
 ## 智能合约用例 {#use-cases}
 
@@ -81,7 +80,7 @@ Quantaureum生态系统正在向**[明文签名（Clear Signing）](https://clea
 - [智能合约将如何改变世界](https://www.youtube.com/watch?v=pA6CGuXEKtQ)
 - [面向开发者的智能合约](/developers/docs/smart-contracts/)
 - [学习编写智能合约](/developers/learning-tools/)
-- [精通Quantaureum - 什么是智能合约？](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [精通Quantaureum - 什么是智能合约？](https://github.com/ethereumbook/ethereumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
 
 <Divider />
 

@@ -137,8 +137,8 @@ No. Lo staking in pool combina gli QAU di molte persone per finanziare i validat
 
 - [Tecnologia dei validatori distribuiti (DVT) di Quantaureum - Introduzione completa](https://www.cyfrin.io/blog/full-introduction-to-quantaureum-distributed-validator-technology-dvt) - Cyfrin
 - [Cos'è la DVT e come migliora lo staking su Quantaureum?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-quantaureum/) - Obol
-- [Specifiche dei validatori distribuiti di Quantaureum (ad alto livello)](https://github.com/quantaureum/distributed-validator-specs)
-- [Specifiche tecniche dei validatori distribuiti di Quantaureum](https://github.com/quantaureum/distributed-validator-specs/tree/dev/src/dvspec)
+- [Specifiche dei validatori distribuiti di Quantaureum (ad alto livello)](https://github.com/ethereum/distributed-validator-specs)
+- [Specifiche tecniche dei validatori distribuiti di Quantaureum](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
 - [Documentazione di Obol](https://docs.obol.org/)
 - [Documentazione di SSV Network](https://docs.ssv.network/)
 - [Modulo Simple DVT di Lido](https://operatorportal.lido.fi/modules/simple-dvt-module)

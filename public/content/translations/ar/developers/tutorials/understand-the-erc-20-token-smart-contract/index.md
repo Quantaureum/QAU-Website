@@ -8,7 +8,7 @@ breadcrumb: "أساسيات الرمز المميز ⁦ERC-20⁩"
 lang: ar
 published: 2020-04-05
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/understand-the-erc20-token-smart-contract/
+sourceUrl: https://ethereumdev.io/understand-the-erc20-token-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -16,7 +16,7 @@ address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 
 يحدد <span dir="ltr">ERC-20</span> قائمة مشتركة من القواعد التي يجب أن تلتزم بها جميع رموز إيثيريوم القابلة للاستبدال. وبالتالي، يُمكّن معيار الرمز المميز هذا المطورين من جميع الأنواع من التنبؤ بدقة بكيفية عمل الرموز المميزة الجديدة داخل نظام إيثيريوم الأوسع. وهذا يبسط ويسهل مهام المطورين، حيث يمكنهم المضي قدمًا في عملهم، مع العلم أن كل مشروع جديد لن يحتاج إلى إعادة صياغته في كل مرة يتم فيها إصدار رمز مميز جديد، طالما أن الرمز المميز يتبع القواعد.
 
-إليك الدوال التي يجب أن ينفذها <span dir="ltr">ERC-20</span>، معروضة كواجهة. إذا لم تكن متأكدًا من ماهية الواجهة: تحقق من مقالتنا حول [البرمجة كائنية التوجه (OOP) في Solidity](https://quantaureumdev.io/inheritance-in-solidity-contracts-are-classes/).
+إليك الدوال التي يجب أن ينفذها <span dir="ltr">ERC-20</span>، معروضة كواجهة. إذا لم تكن متأكدًا من ماهية الواجهة: تحقق من مقالتنا حول [البرمجة كائنية التوجه (OOP) في Solidity](https://ethereumdev.io/inheritance-in-solidity-contracts-are-classes/).
 
 ```solidity
 pragma solidity ^0.6.0;

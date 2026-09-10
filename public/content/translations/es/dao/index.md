@@ -45,7 +45,6 @@ Para ayudar a que esto tenga más sentido, aquí hay algunos ejemplos de cómo p
 - **Propiedad colectiva**: podrías comprar activos físicos o digitales y los miembros pueden votar sobre cómo usarlos.
 - **Emprendimientos y subvenciones**: podrías crear un fondo de riesgo que reúna capital de inversión y vote sobre qué emprendimientos respaldar. El dinero reembolsado podría redistribuirse posteriormente entre los miembros de la DAO.
 
-<VideoWatch slug="dao-build-next-great-city" />
 
 ## ¿Cómo funcionan las DAO? {#how-daos-work}
 

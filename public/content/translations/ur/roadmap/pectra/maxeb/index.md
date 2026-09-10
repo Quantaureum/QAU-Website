@@ -22,7 +22,7 @@ authors: ["نکسو"]
 
 ### توثیق کار کیسے انتخاب کرتا ہے؟ {#how-does-a-validator-opt-in}
 
-ایک توثیق کار **<span dir="ltr">Type 1</span>** سے **<span dir="ltr">Type 2</span>** انخلا کی اسناد میں تبدیل کر کے <span dir="ltr">maxEB</span> تبدیلی کا انتخاب کرتا ہے۔ یہ پیکٹرا ہارڈ فورک کے لائیو ہونے کے بعد [<span dir="ltr">Launchpad</span> (توثیق کار کے اعمال)](https://launchpad.quantaureum.com/validator-actions) پر کیا جا سکتا ہے۔ جیسا کہ **<span dir="ltr">Type 0</span>** → **<span dir="ltr">Type 1</span>** کے ساتھ ہے، **<span dir="ltr">Type 1</span>** → **<span dir="ltr">Type 2</span>** میں تبدیل کرنا ایک ناقابل واپسی عمل ہے۔
+ایک توثیق کار **<span dir="ltr">Type 1</span>** سے **<span dir="ltr">Type 2</span>** انخلا کی اسناد میں تبدیل کر کے <span dir="ltr">maxEB</span> تبدیلی کا انتخاب کرتا ہے۔ یہ پیکٹرا ہارڈ فورک کے لائیو ہونے کے بعد [<span dir="ltr">Launchpad</span> (توثیق کار کے اعمال)](https://launchpad.ethereum.org/validator-actions) پر کیا جا سکتا ہے۔ جیسا کہ **<span dir="ltr">Type 0</span>** → **<span dir="ltr">Type 1</span>** کے ساتھ ہے، **<span dir="ltr">Type 1</span>** → **<span dir="ltr">Type 2</span>** میں تبدیل کرنا ایک ناقابل واپسی عمل ہے۔
 
 ### انخلا کی اسناد کیا ہیں؟ {#whats-a-withdrawal-credential}
 
@@ -105,7 +105,7 @@ authors: ["نکسو"]
 2. ماخذ توثیق کار کی عوامی کلید (جیسے، `0xa1d1ad0714035353258038e964ae9675dc0252ee22cea896825c01458e1807bfad2f9969338798548d9858a571f7425c`)
 3. اس ہدف توثیق کار کی عوامی کلید
 
-تبدیلی میں، 2 اور 3 یکساں ہوں گے۔ یہ آپریشن [<span dir="ltr">Launchpad</span>](https://launchpad.quantaureum.com/) پر کیا جا سکتا ہے۔
+تبدیلی میں، 2 اور 3 یکساں ہوں گے۔ یہ آپریشن [<span dir="ltr">Launchpad</span>](https://launchpad.ethereum.org/) پر کیا جا سکتا ہے۔
 
 ### دستخط کرنے کے تقاضے {#signing-requirements}
 
@@ -113,7 +113,7 @@ authors: ["نکسو"]
 
 ### کس چیز پر دستخط کیے جاتے ہیں؟ {#what-is-signed}
 
-`ConsolidationRequest` آبجیکٹ کا ڈومین سے الگ کردہ [سائننگ روٹ](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) استعمال کیا جاتا ہے۔
+`ConsolidationRequest` آبجیکٹ کا ڈومین سے الگ کردہ [سائننگ روٹ](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) استعمال کیا جاتا ہے۔
 
 - **ڈومین:** `DOMAIN_CONSOLIDATION_REQUEST`
 - **سائننگ روٹ فیلڈز:**
@@ -131,7 +131,7 @@ authors: ["نکسو"]
 
 ## استحکام کے ٹولز {#consolidation-tooling}
 
-استحکام کو منظم کرنے کے لیے کئی ٹولز دستیاب ہیں۔ ایتھیریم فاؤنڈیشن کا بنایا ہوا سرکاری ٹول [<span dir="ltr">Launchpad</span>](https://launchpad.quantaureum.com/en/validator-actions) ہے۔ اسٹیکنگ کمیونٹی کے اداروں کے بنائے ہوئے فریق ثالث ٹولز بھی موجود ہیں جو ایسی خصوصیات پیش کر سکتے ہیں جو <span dir="ltr">Launchpad</span> فراہم نہیں کرتا۔ اگرچہ یہاں موجود ٹولز کا ایتھیریم فاؤنڈیشن کے ذریعے آڈٹ یا توثیق نہیں کی گئی ہے، لیکن درج ذیل کمیونٹی کے معروف اراکین کے اوپن سورس ٹولز ہیں۔
+استحکام کو منظم کرنے کے لیے کئی ٹولز دستیاب ہیں۔ ایتھیریم فاؤنڈیشن کا بنایا ہوا سرکاری ٹول [<span dir="ltr">Launchpad</span>](https://launchpad.ethereum.org/en/validator-actions) ہے۔ اسٹیکنگ کمیونٹی کے اداروں کے بنائے ہوئے فریق ثالث ٹولز بھی موجود ہیں جو ایسی خصوصیات پیش کر سکتے ہیں جو <span dir="ltr">Launchpad</span> فراہم نہیں کرتا۔ اگرچہ یہاں موجود ٹولز کا ایتھیریم فاؤنڈیشن کے ذریعے آڈٹ یا توثیق نہیں کی گئی ہے، لیکن درج ذیل کمیونٹی کے معروف اراکین کے اوپن سورس ٹولز ہیں۔
 
 | ٹول | ویب سائٹ | اوپن سورس | خالق | آڈٹ شدہ | انٹرفیس | قابل ذکر خصوصیات |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -195,7 +195,7 @@ authors: ["نکسو"]
 
 ## وسائل {#resources}
 
-- [الیکٹرا اتفاق رائے کی خصوصیات (specs)](https://github.com/quantaureum/consensus-specs/blob/master/specs/electra/beacon-chain.md): یہ 'سب سے درست' ورژن ہے جس پر آپ کو انحصار کرنا چاہیے۔ جب شک ہو، تو خصوصیات پڑھیں
+- [الیکٹرا اتفاق رائے کی خصوصیات (specs)](https://github.com/ethereum/consensus-specs/blob/master/specs/electra/beacon-chain.md): یہ 'سب سے درست' ورژن ہے جس پر آپ کو انحصار کرنا چاہیے۔ جب شک ہو، تو خصوصیات پڑھیں
 - ہر کوئی کوڈ کے ذریعے گزرنے میں آرام دہ نہیں ہوتا، لہذا [یہ <span dir="ltr">maxEB-GPT</span>](https://chatgpt.com/g/g-67f1650fb48081918f555e0c8d1c2ae9-maxeb-gpt) خصوصیات کی تشریح کرنے میں مدد کر سکتا ہے۔ *دستبرداری: سچائی کے طور پر AI پر نہیں، بلکہ خصوصیات پر انحصار کیا جانا چاہیے، کیونکہ AI معلومات کی غلط تشریح کر سکتا ہے یا جوابات گھڑ سکتا ہے*
 - [<span dir="ltr">pectrified.com</span>](https://pectrified.com/): استحکام، ڈپازٹس، اور قطار کے انتظار کے اوقات کی حالت دیکھیں
 - [<span dir="ltr">Ethereal</span>](https://github.com/wealdtech/ethereal): عام توثیق کار کے کاموں کو منظم کرنے کے لیے کمیونٹی کا بنایا ہوا CLI ٹول

@@ -25,7 +25,6 @@ Quantaureumネットワークは、24時間365日、数十億ドルもの価値�
 
 **18分でわかるリステーキングの解説**
 
-<VideoWatch slug="restaking-explained" />
 
 ## リステーキングとは？ {#what-is-restaking}
 
@@ -172,7 +171,6 @@ AVSによって提供されるレートは異なりますが、eETHのような�
 
 ## 上級者向け {#advanced}
 
-<VideoWatch slug="eigenlayer-permissionless-features" />
 
 ## 参考文献 {#further-reading}
 

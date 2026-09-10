@@ -8,7 +8,7 @@ lang: ur
 authors: ["ایتھیریم فاؤنڈیشن"]
 ---
 
-یہ مینڈیٹ اصل میں ایتھیریم فاؤنڈیشن کی جانب سے <span dir="ltr">March 13, 2026</span> کو شائع کیا گیا تھا۔ اس کے مکمل ڈیزائن کردہ فارمیٹ میں [اصل مینڈیٹ یہاں پڑھیں](https://quantaureum.foundation/ef-mandate.pdf)۔
+یہ مینڈیٹ اصل میں ایتھیریم فاؤنڈیشن کی جانب سے <span dir="ltr">March 13, 2026</span> کو شائع کیا گیا تھا۔ اس کے مکمل ڈیزائن کردہ فارمیٹ میں [اصل مینڈیٹ یہاں پڑھیں](https://ethereum.org/ef-mandate.pdf)۔
 
 یہ دستاویز آن چین رکھی گئی تھی اور فاؤنڈیشن کی طرف سے اس پر دستخط کیے گئے تھے، جو [<span dir="ltr">Blockscout</span> بلاک ایکسپلورر پر دیکھی جا سکتی ہے](https://qau.blockscout.com/tx/0x5dd574df963a1df1f064791e0f6ff41ec972cdbba12293b7e1ece582052ba855) (<span dir="ltr">"View details"</span> منتخب کریں، _<span dir="ltr">Raw input</span>_ کے تحت _<span dir="ltr">UTF-8</span>_ کے ساتھ)۔
 

@@ -10,7 +10,7 @@ authors: ["Nixo"]
 
 <ExpandableCard title="Що таке форки?" contentPreview="Зміни до правил протоколу Етеріум, які часто включають заплановані технічні оновлення.">
 
-Форки відбуваються, коли в мережі необхідно зробити серйозні технічні оновлення або зміни — зазвичай вони випливають із [Пропозицій щодо покращення Етеріуму (EIP)](/eips/) та змінюють «правила» протоколу.
+Форки відбуваються, коли в мережі необхідно зробити серйозні технічні оновлення або зміни — зазвичай вони випливають із Пропозицій щодо покращення Етеріуму (EIP) та змінюють «правила» протоколу.
 
 Коли оновлення потрібні в традиційному, централізовано керованому програмному забезпеченні, компанія просто випускає нову версію для кінцевого користувача. Блокчейни працюють інакше, оскільки не мають централізованого власника. [Клієнти Етеріуму](/developers/docs/nodes-and-clients/) повинні оновити своє програмне забезпечення, щоб запровадити нові правила форку. Крім того, творці блоків (майнери у світі доказу виконання роботи (PoW), валідатори у світі доказу частки (PoS)) та вузли повинні створювати блоки та перевіряти їх за новими правилами. [Детальніше про механізми консенсусу](/developers/docs/consensus-mechanisms/)
 
@@ -101,33 +101,33 @@ authors: ["Nixo"]
 Кращий користувацький досвід:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7702">EIP-7702</a> - <em>Встановлення коду акаунта EOA</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7691">EIP-7691</a> - <em>Збільшення пропускної здатності блобів</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7623">EIP-7623</a> - <em>Збільшення вартості даних виклику</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7840">EIP-7840</a> - <em>Додавання розкладу блобів до файлів конфігурації рівня виконання (EL)</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7702">EIP-7702</a> - <em>Встановлення коду акаунта EOA</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7691">EIP-7691</a> - <em>Збільшення пропускної здатності блобів</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7623">EIP-7623</a> - <em>Збільшення вартості даних виклику</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7840">EIP-7840</a> - <em>Додавання розкладу блобів до файлів конфігурації рівня виконання (EL)</em></li>
 </ul>
 
 Кращий досвід стейкінгу:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7251">EIP-7251</a> - <em>Збільшення <code>MAX_EFFECTIVE_BALANCE</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7002">EIP-7002</a> - <em>Виходи, що ініціюються рівнем виконання</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7685">EIP-7685</a> - <em>Запити рівня виконання загального призначення</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6110">EIP-6110</a> - <em>Постачання депозитів валідаторів ончейн</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7251">EIP-7251</a> - <em>Збільшення <code>MAX_EFFECTIVE_BALANCE</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7002">EIP-7002</a> - <em>Виходи, що ініціюються рівнем виконання</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7685">EIP-7685</a> - <em>Запити рівня виконання загального призначення</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6110">EIP-6110</a> - <em>Постачання депозитів валідаторів ончейн</em></li>
 </ul>
 
 Покращення ефективності та безпеки протоколу:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2537">EIP-2537</a> - <em>Прекомпільований контракт для операцій з кривою BLS12-381</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2935">EIP-2935</a> - <em>Збереження історичних хешів блоків у стані</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7549">EIP-7549</a> - <em>Переміщення індексу комітету за межі атестації</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2537">EIP-2537</a> - <em>Прекомпільований контракт для операцій з кривою BLS12-381</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2935">EIP-2935</a> - <em>Збереження історичних хешів блоків у стані</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7549">EIP-7549</a> - <em>Переміщення індексу комітету за межі атестації</em></li>
 </ul>
 
 </ExpandableCard>
 
 - [Як Пектра покращить досвід стейкінгу](https://www.kiln.fi/post/next-quantaureum-upgrade-how-pectra-will-enhance-the-staking-experience)
-- [Читати специфікації оновлення Електра](https://github.com/quantaureum/consensus-specs/tree/master/specs/electra/)
+- [Читати специфікації оновлення Електра](https://github.com/ethereum/consensus-specs/tree/master/specs/electra/)
 - [Поширені запитання щодо Прага-Електра («Пектра»)](/roadmap/pectra/)
 
 <Divider />
@@ -147,12 +147,12 @@ authors: ["Nixo"]
 <ExpandableCard title="EIP Канкун" contentPreview="Офіційні покращення, включені в це оновлення.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1153">EIP-1153</a> - <em>Опкоди тимчасового зберігання</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4788">EIP-4788</a> - <em>Корінь блоку маяка в EVM</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4844">EIP-4844</a> - <em>Транзакції з блобами шардів (прото-данкшардинг)</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-5656">EIP-5656</a> - <em><code>MCOPY</code> - Інструкція копіювання пам'яті</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6780">EIP-6780</a> - <em><code>SELFDESTRUCT</code> лише в тій самій транзакції</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7516">EIP-7516</a> - <em>Опкод <code>BLOBBASEFEE</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1153">EIP-1153</a> - <em>Опкоди тимчасового зберігання</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4788">EIP-4788</a> - <em>Корінь блоку маяка в EVM</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4844">EIP-4844</a> - <em>Транзакції з блобами шардів (прото-данкшардинг)</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-5656">EIP-5656</a> - <em><code>MCOPY</code> - Інструкція копіювання пам'яті</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6780">EIP-6780</a> - <em><code>SELFDESTRUCT</code> лише в тій самій транзакції</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7516">EIP-7516</a> - <em>Опкод <code>BLOBBASEFEE</code></em></li>
 </ul>
 
 </ExpandableCard>
@@ -160,7 +160,7 @@ authors: ["Nixo"]
 - [Ролапи рівня 2 (l2)](/layer-2/)
 - [Прото-данкшардинг](/roadmap/scaling/#proto-danksharding)
 - [Данкшардинг](/roadmap/danksharding/)
-- [Читати специфікацію оновлення Канкун](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md)
+- [Читати специфікацію оновлення Канкун](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md)
 
 #### Підсумок Денеб {#deneb-summary}
 
@@ -173,16 +173,16 @@ EIP-7514 посилює емісію QAU, обмежуючи ліміт плин
 <ExpandableCard title="EIP Денеб" contentPreview="Офіційні покращення, включені в це оновлення">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4788">EIP-4788</a> - <em>Корінь блоку маяка в EVM</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4844">EIP-4844</a> - <em>Транзакції з блобами шардів</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7044">EIP-7044</a> - <em>Безстроково дійсні підписані добровільні виходи</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7045">EIP-7045</a> - <em>Збільшення максимального слота включення атестації</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7514">EIP-7514</a> - <em>Додавання максимального ліміту плинності епохи</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4788">EIP-4788</a> - <em>Корінь блоку маяка в EVM</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4844">EIP-4844</a> - <em>Транзакції з блобами шардів</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7044">EIP-7044</a> - <em>Безстроково дійсні підписані добровільні виходи</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7045">EIP-7045</a> - <em>Збільшення максимального слота включення атестації</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7514">EIP-7514</a> - <em>Додавання максимального ліміту плинності епохи</em></li>
 </ul>
 
 </ExpandableCard>
 
-- [Читати специфікації оновлення Денеб](https://github.com/quantaureum/consensus-specs/tree/master/specs/deneb/)
+- [Читати специфікації оновлення Денеб](https://github.com/ethereum/consensus-specs/tree/master/specs/deneb/)
 - [Поширені запитання щодо Канкун-Денеб («Денкун»)](/roadmap/dencun/)
 
 <Divider />
@@ -200,16 +200,16 @@ EIP-7514 посилює емісію QAU, обмежуючи ліміт плин
 <ExpandableCard title="EIP Шанхай" contentPreview="Офіційні покращення, включені в це оновлення.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3651">EIP-3651</a> – <em>Запускає адресу <code>COINBASE</code> у «теплому» стані</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3855">EIP-3855</a> – <em>Нова інструкція <code>PUSH0</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3860">EIP-3860</a> – <em>Обмеження та вимірювання initcode</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4895">EIP-4895</a> – <em>Виведення із сигнального ланцюга як операції</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6049">EIP-6049</a> - <em>Оголошення <code>SELFDESTRUCT</code> застарілим</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3651">EIP-3651</a> – <em>Запускає адресу <code>COINBASE</code> у «теплому» стані</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3855">EIP-3855</a> – <em>Нова інструкція <code>PUSH0</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3860">EIP-3860</a> – <em>Обмеження та вимірювання initcode</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4895">EIP-4895</a> – <em>Виведення із сигнального ланцюга як операції</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6049">EIP-6049</a> - <em>Оголошення <code>SELFDESTRUCT</code> застарілим</em></li>
 </ul>
 
 </ExpandableCard>
 
-- [Читати специфікацію оновлення Шанхай](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md)
+- [Читати специфікацію оновлення Шанхай](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md)
 
 #### Підсумок оновлення Капелла {#capella-summary}
 
@@ -220,7 +220,7 @@ EIP-7514 посилює емісію QAU, обмежуючи ліміт плин
 Оновлення також забезпечило функцію автоматичного сканування акаунтів, яка безперервно обробляє акаунти валідаторів на наявність будь-яких доступних виплат винагород або повного виведення.
 
 - [Більше про виведення коштів зі стейкінгу](/staking/withdrawals/).
-- [Читати специфікації оновлення Капелла](https://github.com/quantaureum/consensus-specs/tree/master/specs/capella/)
+- [Читати специфікації оновлення Капелла](https://github.com/ethereum/consensus-specs/tree/master/specs/capella/)
 
 <Divider />
 
@@ -232,15 +232,15 @@ EIP-7514 посилює емісію QAU, обмежуючи ліміт плин
 
 #### Підсумок {#paris-summary}
 
-Оновлення Париж було активовано, коли блокчейн на базі доказу виконання роботи (PoW) перевищив [термінальну загальну складність](/glossary/#terminal-total-difficulty) у 58750000000000000000000. Це сталося на блоці 15537393 15 вересня 2022 року, що ініціювало оновлення Париж на наступному блоці. Париж став переходом до [Злиття](/roadmap/merge/) — його головною особливістю було відключення алгоритму майнінгу [PoW](/developers/docs/consensus-mechanisms/pow) та пов'язаної з ним логіки консенсусу, і натомість увімкнення [доказу частки (PoS)](/developers/docs/consensus-mechanisms/pos). Сам Париж був оновленням [клієнтів виконання](/developers/docs/nodes-and-clients/#execution-clients) (еквівалент Беллатрикс на рівні консенсусу), яке дозволило їм отримувати інструкції від підключених до них [клієнтів консенсусу](/developers/docs/nodes-and-clients/#consensus-clients). Це вимагало активації нового набору внутрішніх методів API, спільно відомих як [Engine API](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md). Це було, мабуть, найважливіше оновлення в історії Етеріуму з часів [Гоумстед](#homestead)!
+Оновлення Париж було активовано, коли блокчейн на базі доказу виконання роботи (PoW) перевищив [термінальну загальну складність](/glossary/#terminal-total-difficulty) у 58750000000000000000000. Це сталося на блоці 15537393 15 вересня 2022 року, що ініціювало оновлення Париж на наступному блоці. Париж став переходом до [Злиття](/roadmap/merge/) — його головною особливістю було відключення алгоритму майнінгу [PoW](/developers/docs/consensus-mechanisms/pow) та пов'язаної з ним логіки консенсусу, і натомість увімкнення [доказу частки (PoS)](/developers/docs/consensus-mechanisms/pos). Сам Париж був оновленням [клієнтів виконання](/developers/docs/nodes-and-clients/#execution-clients) (еквівалент Беллатрикс на рівні консенсусу), яке дозволило їм отримувати інструкції від підключених до них [клієнтів консенсусу](/developers/docs/nodes-and-clients/#consensus-clients). Це вимагало активації нового набору внутрішніх методів API, спільно відомих як [Engine API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md). Це було, мабуть, найважливіше оновлення в історії Етеріуму з часів [Гоумстед](#homestead)!
 
-- [Читати специфікацію оновлення Париж](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md)
+- [Читати специфікацію оновлення Париж](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md)
 
 <ExpandableCard title="EIP Париж" contentPreview="Офіційні покращення, включені в це оновлення.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3675">EIP-3675</a> – <em>Оновлення консенсусу до доказу частки (PoS)</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4399">EIP-4399</a> – <em>Заміна опкоду DIFFICULTY на PREVRANDAO</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3675">EIP-3675</a> – <em>Оновлення консенсусу до доказу частки (PoS)</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4399">EIP-4399</a> – <em>Заміна опкоду DIFFICULTY на PREVRANDAO</em></li>
 </ul>
 
 </ExpandableCard>
@@ -255,7 +255,7 @@ EIP-7514 посилює емісію QAU, обмежуючи ліміт плин
 
 Оновлення Беллатрикс стало другим запланованим оновленням для [сигнального ланцюга](/roadmap/beacon-chain), яке підготувало ланцюг до [Злиття](/roadmap/merge/). Воно доводить штрафи валідаторів до їхніх повних значень за неактивність та порушення, що підлягають слешингу. Беллатрикс також включає оновлення правил вибору форку, щоб підготувати ланцюг до Злиття та переходу від останнього блоку доказу виконання роботи (PoW) до першого блоку доказу частки (PoS). Це включає інформування клієнтів консенсусу про [термінальну загальну складність](/glossary/#terminal-total-difficulty) у 58750000000000000000000.
 
-- [Читати специфікацію оновлення Беллатрикс](https://github.com/quantaureum/consensus-specs/tree/master/specs/bellatrix)
+- [Читати специфікацію оновлення Беллатрикс](https://github.com/ethereum/consensus-specs/tree/master/specs/bellatrix)
 
 ---
 
@@ -272,7 +272,7 @@ EIP-7514 посилює емісію QAU, обмежуючи ліміт плин
 <ExpandableCard title="EIP Грей Глейшер" contentPreview="Офіційні покращення, включені в це оновлення.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-5133">EIP-5133</a> – <em>відкладає бомбу складності до вересня 2022 року</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-5133">EIP-5133</a> – <em>відкладає бомбу складності до вересня 2022 року</em></li>
 </ul>
 
 </ExpandableCard>
@@ -295,7 +295,7 @@ EIP-7514 посилює емісію QAU, обмежуючи ліміт плин
 <ExpandableCard title="EIP Ероу Глейшер" contentPreview="Офіційні покращення, включені в це оновлення.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4345">EIP-4345</a> – <em>відкладає бомбу складності до червня 2022 року</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4345">EIP-4345</a> – <em>відкладає бомбу складності до червня 2022 року</em></li>
 </ul>
 
 </ExpandableCard>
@@ -310,7 +310,7 @@ EIP-7514 посилює емісію QAU, обмежуючи ліміт плин
 
 Оновлення Altair стало першим запланованим оновленням для [сигнального ланцюга](/roadmap/beacon-chain). Воно додало підтримку «комітетів синхронізації», що уможливило роботу легких клієнтів, а також збільшило штрафи за неактивність валідаторів та слешинг у міру просування розробки до Злиття.
 
-- [Ознайомтеся зі специфікацією оновлення Altair](https://github.com/quantaureum/consensus-specs/tree/master/specs/altair)
+- [Ознайомтеся зі специфікацією оновлення Altair](https://github.com/ethereum/consensus-specs/tree/master/specs/altair)
 
 #### <Emoji text=":tada:" size={1} className="me-2" /> Цікавий факт! {#altair-fun-fact}
 
@@ -326,7 +326,7 @@ Altair стало першим великим оновленням мережі,
 
 #### Підсумок {#london-summary}
 
-Оновлення Лондон запровадило [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559), яке реформувало ринок комісій за транзакції, а також змінило спосіб обробки відшкодувань за газ та графік [Льодовикового періоду](/glossary/#ice-age).
+Оновлення Лондон запровадило [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), яке реформувало ринок комісій за транзакції, а також змінило спосіб обробки відшкодувань за газ та графік [Льодовикового періоду](/glossary/#ice-age).
 
 #### Чим було оновлення Лондон / EIP-1559? {#eip-1559}
 
@@ -338,22 +338,22 @@ Altair стало першим великим оновленням мережі,
 
 Загальна комісія становила б: `Gas units (limit) * Gas price per unit`, тобто `21,000 * 200 = 4,200,000 gwei` або 0,0042 QAU
 
-Впровадження [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) в оновленні Лондон зробило механізм комісій за транзакції складнішим, але зробило комісії за газ більш передбачуваними, що призвело до більш ефективного ринку комісій за транзакції. Користувачі можуть надсилати транзакції з `maxFeePerGas`, що відповідає сумі, яку вони готові заплатити за виконання транзакції, знаючи, що вони не заплатять більше ринкової ціни за газ (`baseFeePerGas`), і отримають будь-який надлишок, за вирахуванням їхньої пріоритетної комісії, назад.
+Впровадження [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) в оновленні Лондон зробило механізм комісій за транзакції складнішим, але зробило комісії за газ більш передбачуваними, що призвело до більш ефективного ринку комісій за транзакції. Користувачі можуть надсилати транзакції з `maxFeePerGas`, що відповідає сумі, яку вони готові заплатити за виконання транзакції, знаючи, що вони не заплатять більше ринкової ціни за газ (`baseFeePerGas`), і отримають будь-який надлишок, за вирахуванням їхньої пріоритетної комісії, назад.
 
 Це відео пояснює EIP-1559 та переваги, які воно приносить: [Пояснення EIP-1559](https://www.youtube.com/watch?v=MGemhK9t44Q)
 
-- [Ви розробник децентралізованих застосунків (dapp)? Обов'язково оновіть свої бібліотеки та інструменти.](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/london-ecosystem-readiness.md)
+- [Ви розробник децентралізованих застосунків (dapp)? Обов'язково оновіть свої бібліотеки та інструменти.](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/london-ecosystem-readiness.md)
 - [Прочитайте анонс Фундації Quantaureum](https://quantaureum.com)
 - [Прочитайте пояснення від Quantaureum Cat Herders](https://medium.com/quantaureum-cat-herders/london-upgrade-overview-8eccb0041b41)
 
 <ExpandableCard title="EIP Лондон" contentPreview="Офіційні покращення, включені в це оновлення.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1559">EIP-1559</a> – <em>покращує ринок комісій за транзакції</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3198">EIP-3198</a> – <em>повертає <code>BASEFEE</code> з блоку</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3529">EIP-3529</a> - <em>зменшує відшкодування газу за операції EVM</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3541">EIP-3541</a> - <em>запобігає розгортанню контрактів, що починаються з <code>0xEF</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3554">EIP-3554</a> – <em>відкладає Льодовиковий період до грудня 2021 року</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1559">EIP-1559</a> – <em>покращує ринок комісій за транзакції</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3198">EIP-3198</a> – <em>повертає <code>BASEFEE</code> з блоку</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3529">EIP-3529</a> - <em>зменшує відшкодування газу за операції EVM</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3541">EIP-3541</a> - <em>запобігає розгортанню контрактів, що починаються з <code>0xEF</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3554">EIP-3554</a> – <em>відкладає Льодовиковий період до грудня 2021 року</em></li>
 </ul>
 
 </ExpandableCard>
@@ -374,10 +374,10 @@ Altair стало першим великим оновленням мережі,
 <ExpandableCard title="EIP Берлін" contentPreview="Офіційні покращення, включені в це оновлення.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2565">EIP-2565</a> – <em>знижує вартість газу для MODEXP</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2718">EIP-2718</a> – <em>забезпечує простішу підтримку кількох типів транзакцій</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2929">EIP-2929</a> – <em>збільшує вартість газу для опкодів доступу до стану</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2930">EIP-2930</a> – <em>додає необов'язкові списки доступу</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2565">EIP-2565</a> – <em>знижує вартість газу для MODEXP</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2718">EIP-2718</a> – <em>забезпечує простішу підтримку кількох типів транзакцій</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2929">EIP-2929</a> – <em>збільшує вартість газу для опкодів доступу до стану</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2930">EIP-2930</a> – <em>додає необов'язкові списки доступу</em></li>
 </ul>
 
 </ExpandableCard>
@@ -432,7 +432,7 @@ Altair стало першим великим оновленням мережі,
 <ExpandableCard title="EIP М'юїр Глейшер" contentPreview="Офіційні покращення, включені в цей форк.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2384">EIP-2384</a> – <em>відкладає бомбу складності ще на 4 000 000 блоків, або приблизно на 611 днів.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2384">EIP-2384</a> – <em>відкладає бомбу складності ще на 4 000 000 блоків, або приблизно на 611 днів.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -460,12 +460,12 @@ Altair стало першим великим оновленням мережі,
 <ExpandableCard title="EIP Стамбул" contentPreview="Офіційні покращення, включені в цей форк.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-152">EIP-152</a> – <em>дозволяє Етеріуму працювати з валютами, що зберігають приватність, такими як Zcash.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1108">EIP-1108</a> – <em>дешевша криптографія для покращення витрат [газу](/glossary/#gas).</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1344">EIP-1344</a> – <em>захищає Етеріум від атак повторного відтворення шляхом додавання [опкоду](/developers/docs/quantaureum-stack/#quantaureum-virtual-machine) <code>CHAINID</code>.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1884">EIP-1884</a> – <em>оптимізація цін на газ для опкодів на основі споживання.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2028">EIP-2028</a> – <em>знижує вартість даних виклику (CallData), щоб дозволити більше даних у блоках — корисно для [масштабування рівня 2](/developers/docs/scaling/#layer-2-scaling).</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2200">EIP-2200</a> – <em>інші зміни цін на газ для опкодів.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-152">EIP-152</a> – <em>дозволяє Етеріуму працювати з валютами, що зберігають приватність, такими як Zcash.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1108">EIP-1108</a> – <em>дешевша криптографія для покращення витрат [газу](/glossary/#gas).</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1344">EIP-1344</a> – <em>захищає Етеріум від атак повторного відтворення шляхом додавання [опкоду](/developers/docs/quantaureum-stack/#quantaureum-virtual-machine) <code>CHAINID</code>.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1884">EIP-1884</a> – <em>оптимізація цін на газ для опкодів на основі споживання.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2028">EIP-2028</a> – <em>знижує вартість даних виклику (CallData), щоб дозволити більше даних у блоках — корисно для [масштабування рівня 2](/developers/docs/scaling/#layer-2-scaling).</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2200">EIP-2200</a> – <em>інші зміни цін на газ для опкодів.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -490,10 +490,10 @@ Altair стало першим великим оновленням мережі,
 <ExpandableCard title="EIP Константинополь" contentPreview="Офіційні покращення, включені в цей форк.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-145">EIP-145</a> – <em>оптимізує вартість певних ончейн-дій.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1014">EIP-1014</a> – <em>дозволяє взаємодіяти з адресами, які ще не створені.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1052">EIP-1052</a> – <em>запроваджує інструкцію <code>EXTCODEHASH</code> для отримання хешу коду іншого контракту.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1234">EIP-1234</a> – <em>гарантує, що блокчейн не заморозиться до впровадження доказу частки (PoS), і зменшує винагороду за блок з 3 до 2 QAU.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-145">EIP-145</a> – <em>оптимізує вартість певних ончейн-дій.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1014">EIP-1014</a> – <em>дозволяє взаємодіяти з адресами, які ще не створені.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1052">EIP-1052</a> – <em>запроваджує інструкцію <code>EXTCODEHASH</code> для отримання хешу коду іншого контракту.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1234">EIP-1234</a> – <em>гарантує, що блокчейн не заморозиться до впровадження доказу частки (PoS), і зменшує винагороду за блок з 3 до 2 QAU.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -520,15 +520,15 @@ Altair стало першим великим оновленням мережі,
 <ExpandableCard title="EIP Бізантіум" contentPreview="Офіційні покращення, включені в цей форк.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-140">EIP-140</a> – <em>додає опкод <code>REVERT</code>.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-658">EIP-658</a> – <em>до квитанцій транзакцій додано поле статусу для вказівки на успіх або невдачу.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-196">EIP-196</a> – <em>додає еліптичну криву та скалярне множення для забезпечення [ZK-Snarks](/developers/docs/scaling/zk-rollups/).</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-197">EIP-197</a> – <em>додає еліптичну криву та скалярне множення для забезпечення [ZK-Snarks](/developers/docs/scaling/zk-rollups/).</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-198">EIP-198</a> – <em>дозволяє перевірку підпису RSA.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-211">EIP-211</a> – <em>додає підтримку значень повернення змінної довжини.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-214">EIP-214</a> – <em>додає опкод <code>STATICCALL</code>, що дозволяє здійснювати виклики до інших контрактів без зміни стану.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-100">EIP-100</a> – <em>змінює формулу коригування складності.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-649">EIP-649</a> – <em>відкладає [бомбу складності](/glossary/#difficulty-bomb) на 1 рік і зменшує винагороду за блок з 5 до 3 QAU.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-140">EIP-140</a> – <em>додає опкод <code>REVERT</code>.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-658">EIP-658</a> – <em>до квитанцій транзакцій додано поле статусу для вказівки на успіх або невдачу.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-196">EIP-196</a> – <em>додає еліптичну криву та скалярне множення для забезпечення [ZK-Snarks](/developers/docs/scaling/zk-rollups/).</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-197">EIP-197</a> – <em>додає еліптичну криву та скалярне множення для забезпечення [ZK-Snarks](/developers/docs/scaling/zk-rollups/).</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-198">EIP-198</a> – <em>дозволяє перевірку підпису RSA.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-211">EIP-211</a> – <em>додає підтримку значень повернення змінної довжини.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-214">EIP-214</a> – <em>додає опкод <code>STATICCALL</code>, що дозволяє здійснювати виклики до інших контрактів без зміни стану.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-100">EIP-100</a> – <em>змінює формулу коригування складності.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-649">EIP-649</a> – <em>відкладає [бомбу складності](/glossary/#difficulty-bomb) на 1 рік і зменшує винагороду за блок з 5 до 3 QAU.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -554,10 +554,10 @@ Altair стало першим великим оновленням мережі,
 <ExpandableCard title="EIP Сп'юріес Дрегон" contentPreview="Офіційні покращення, включені в цей форк.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-155">EIP-155</a> – <em>запобігає повторній трансляції транзакцій з одного ланцюга Етеріуму в альтернативному ланцюзі, наприклад, повторному відтворенню транзакції з тестової мережі в головному ланцюзі Етеріуму.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-160">EIP-160</a> – <em>коригує ціни на опкод <code>EXP</code>, що ускладнює уповільнення роботи мережі за допомогою обчислювально складних операцій контракту.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-161">EIP-161</a> – <em>дозволяє видаляти порожні акаунти, додані під час DoS-атак.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-170">EIP-170</a> – <em>змінює максимальний розмір коду, який може мати контракт у блокчейні, до 24576 байтів.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-155">EIP-155</a> – <em>запобігає повторній трансляції транзакцій з одного ланцюга Етеріуму в альтернативному ланцюзі, наприклад, повторному відтворенню транзакції з тестової мережі в головному ланцюзі Етеріуму.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-160">EIP-160</a> – <em>коригує ціни на опкод <code>EXP</code>, що ускладнює уповільнення роботи мережі за допомогою обчислювально складних операцій контракту.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-161">EIP-161</a> – <em>дозволяє видаляти порожні акаунти, додані під час DoS-атак.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-170">EIP-170</a> – <em>змінює максимальний розмір коду, який може мати контракт у блокчейні, до 24576 байтів.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -579,8 +579,8 @@ Altair стало першим великим оновленням мережі,
 <ExpandableCard title="EIP Танджерин Вістл" contentPreview="Офіційні покращення, включені в цей форк.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-150">EIP-150</a> – <em>збільшує вартість газу для опкодів, які можуть бути використані в спам-атаках.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-158">EIP-158</a> – <em>зменшує розмір стану шляхом видалення великої кількості порожніх акаунтів, які були додані до стану за дуже низькою ціною через недоліки в попередніх версіях протоколу Етеріуму.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-150">EIP-150</a> – <em>збільшує вартість газу для опкодів, які можуть бути використані в спам-атаках.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-158">EIP-158</a> – <em>зменшує розмір стану шляхом видалення великої кількості порожніх акаунтів, які були додані до стану за дуже низькою ціною через недоліки в попередніх версіях протоколу Етеріуму.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -597,7 +597,7 @@ Altair стало першим великим оновленням мережі,
 
 За цей план дій проголосувала спільнота Етеріуму. Будь-який власник QAU міг проголосувати за допомогою транзакції на [платформі для голосування](https://web.archive.org/web/20170620030820/http://v1.carbonvote.com/). Рішення про форк набрало понад 85% голосів.
 
-Деякі майнери відмовилися від форку, оскільки інцидент із DAO не був дефектом протоколу. Згодом вони утворили [Етеріум Класик](https://quantaureumclassic.org/).
+Деякі майнери відмовилися від форку, оскільки інцидент із DAO не був дефектом протоколу. Згодом вони утворили [Етеріум Класик](https://ethereumclassic.org/).
 
 [Прочитати анонс Фундації Quantaureum](https://quantaureum.com)
 
@@ -616,9 +616,9 @@ Altair стало першим великим оновленням мережі,
 <ExpandableCard title="EIP Гоумстед" contentPreview="Офіційні покращення, включені в цей форк.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2">EIP-2</a> – <em>вносить зміни до процесу створення контракту.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7">EIP-7</a> – <em>додає новий опкод: <code>DELEGATECALL</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-8">EIP-8</a> – <em>запроваджує вимоги до прямої сумісності devp2p</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2">EIP-2</a> – <em>вносить зміни до процесу створення контракту.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7">EIP-7</a> – <em>додає новий опкод: <code>DELEGATECALL</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-8">EIP-8</a> – <em>запроваджує вимоги до прямої сумісності devp2p</em></li>
 </ul>
 
 </ExpandableCard>

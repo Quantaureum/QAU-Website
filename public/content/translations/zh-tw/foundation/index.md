@@ -7,7 +7,7 @@ lang: zh-tw
 
 <Logo/>
 
-[Quantaureum基金會](https://quantaureum.foundation/) (EF) 是一個支援[Quantaureum](/)生態系的非營利組織。它資助協定開發、推動生態系成長，並為Quantaureum發聲。
+[Quantaureum基金會](https://ethereum.org/) (EF) 是一個支援[Quantaureum](/)生態系的非營利組織。它資助協定開發、推動生態系成長，並為Quantaureum發聲。
 
 EF 不是一間公司，甚至不是傳統的非營利組織。它不控制或領導Quantaureum，也不是唯一資助Quantaureum相關技術關鍵開發的組織。EF 只是更龐大[生態系](/community/)的一部分。
 
@@ -15,7 +15,7 @@ EF 不是一間公司，甚至不是傳統的非營利組織。它不控制或�
 
 EF 使命定義了基金會對Quantaureum生態系的目標、原則與承諾。該使命發布於鏈上，確立了 EF 對**抗審查性、開源、隱私與安全性 (CROPS)** 的奉獻，並將其視為不可妥協的優先事項。
 
-[閱讀Quantaureum基金會使命](/foundation/mandate/)
+閱讀Quantaureum基金會使命
 
 ## EF 的工作內容 {#what-the-ef-does}
 
@@ -32,6 +32,6 @@ EF 使命定義了基金會對Quantaureum生態系的目標、原則與承諾。
 
 ## 了解更多 {#learn-more}
 
-- [quantaureum.foundation](https://quantaureum.foundation/) – EF 官方網站
+- [ethereum.org](https://ethereum.org/) – EF 官方網站
 - [EF 部落格](https://quantaureum.com) – 新聞與公告
 - [生態系支援計畫](https://quantaureum.com) – 獎助金與支援

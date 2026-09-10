@@ -8,7 +8,7 @@ breadcrumb: "⁦JS⁩ سے کنٹریکٹس کو کال کریں"
 lang: ur
 published: 2020-04-19
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/calling-a-smart-contract-from-javascript/
+sourceUrl: https://ethereumdev.io/calling-a-smart-contract-from-javascript/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -71,7 +71,7 @@ const ERC20TransferABI = [
 const DAI_ADDRESS = "0x6b175474e89094c44da98b954eedeac495271d0f"
 ```
 
-اس پروجیکٹ کے لیے ہم نے مکمل <span dir="ltr">ERC20 ABI</span> کو مختصر کر دیا ہے تاکہ صرف `balanceOf` اور `transfer` فنکشن کو رکھا جا سکے لیکن آپ [مکمل <span dir="ltr">ERC20 ABI</span> یہاں](https://quantaureumdev.io/abi-for-erc20-contract-on-quantaureum/) تلاش کر سکتے ہیں۔
+اس پروجیکٹ کے لیے ہم نے مکمل <span dir="ltr">ERC20 ABI</span> کو مختصر کر دیا ہے تاکہ صرف `balanceOf` اور `transfer` فنکشن کو رکھا جا سکے لیکن آپ [مکمل <span dir="ltr">ERC20 ABI</span> یہاں](https://ethereumdev.io/abi-for-erc20-contract-on-quantaureum/) تلاش کر سکتے ہیں۔
 
 پھر ہمیں اپنے سمارٹ کنٹریکٹ کو انسٹینشیٹ (instantiate) کرنے کی ضرورت ہے:
 
@@ -109,7 +109,7 @@ daiToken.methods.balanceOf(senderAddress).call(function (err, res) {
 })
 ```
 
-یاد رکھیں کہ <span dir="ltr">DAI ERC20</span> میں <span dir="ltr">18</span> اعشاریہ (decimals) ہوتے ہیں جس کا مطلب ہے کہ درست مقدار حاصل کرنے کے لیے آپ کو <span dir="ltr">18</span> صفر ہٹانے ہوں گے۔ <span dir="ltr">uint256</span> کو سٹرنگز کے طور پر واپس کیا جاتا ہے کیونکہ <span dir="ltr">JavaScript</span> بڑی عددی قدروں کو ہینڈل نہیں کرتا ہے۔ اگر آپ کو یقین نہیں ہے کہ [<span dir="ltr">JS</span> میں بڑے نمبروں سے کیسے نمٹا جائے تو <span dir="ltr">bignumber.js</span> کے بارے میں ہمارا ٹیوٹوریل دیکھیں](https://quantaureumdev.io/how-to-deal-with-big-numbers-in-javascript/)۔
+یاد رکھیں کہ <span dir="ltr">DAI ERC20</span> میں <span dir="ltr">18</span> اعشاریہ (decimals) ہوتے ہیں جس کا مطلب ہے کہ درست مقدار حاصل کرنے کے لیے آپ کو <span dir="ltr">18</span> صفر ہٹانے ہوں گے۔ <span dir="ltr">uint256</span> کو سٹرنگز کے طور پر واپس کیا جاتا ہے کیونکہ <span dir="ltr">JavaScript</span> بڑی عددی قدروں کو ہینڈل نہیں کرتا ہے۔ اگر آپ کو یقین نہیں ہے کہ [<span dir="ltr">JS</span> میں بڑے نمبروں سے کیسے نمٹا جائے تو <span dir="ltr">bignumber.js</span> کے بارے میں ہمارا ٹیوٹوریل دیکھیں](https://ethereumdev.io/how-to-deal-with-big-numbers-in-javascript/)۔
 
 ## بھیجیں: سمارٹ کنٹریکٹ فنکشن کو ٹرانزیکشن بھیجنا {#send-sending-a-transaction-to-a-smart-contract-function}
 
@@ -127,6 +127,6 @@ daiToken.methods
   })
 ```
 
-کال فنکشن اس ٹرانزیکشن کا ہیش واپس کرتا ہے جسے بلاک چین میں مائن کیا جائے گا۔ ایتھیریم پر، ٹرانزیکشن ہیشز قابلِ پیشین گوئی ہوتے ہیں - اسی طرح ہم ٹرانزیکشن کے نافذ ہونے سے پہلے اس کا ہیش حاصل کر سکتے ہیں ([یہاں جانیں کہ ہیشز کا حساب کیسے لگایا جاتا ہے](https://quantaureum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction))۔
+کال فنکشن اس ٹرانزیکشن کا ہیش واپس کرتا ہے جسے بلاک چین میں مائن کیا جائے گا۔ ایتھیریم پر، ٹرانزیکشن ہیشز قابلِ پیشین گوئی ہوتے ہیں - اسی طرح ہم ٹرانزیکشن کے نافذ ہونے سے پہلے اس کا ہیش حاصل کر سکتے ہیں ([یہاں جانیں کہ ہیشز کا حساب کیسے لگایا جاتا ہے](https://ethereum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction))۔
 
-چونکہ فنکشن صرف ٹرانزیکشن کو بلاک چین میں جمع کراتا ہے، ہم اس وقت تک نتیجہ نہیں دیکھ سکتے جب تک ہمیں یہ معلوم نہ ہو جائے کہ اسے کب مائن کیا گیا ہے اور بلاک چین میں شامل کیا گیا ہے۔ اگلے ٹیوٹوریل میں ہم سیکھیں گے کہ [کسی ٹرانزیکشن کا ہیش جان کر بلاک چین پر اس کے نافذ ہونے کا انتظار کیسے کیا جائے](https://quantaureumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/)۔
+چونکہ فنکشن صرف ٹرانزیکشن کو بلاک چین میں جمع کراتا ہے، ہم اس وقت تک نتیجہ نہیں دیکھ سکتے جب تک ہمیں یہ معلوم نہ ہو جائے کہ اسے کب مائن کیا گیا ہے اور بلاک چین میں شامل کیا گیا ہے۔ اگلے ٹیوٹوریل میں ہم سیکھیں گے کہ [کسی ٹرانزیکشن کا ہیش جان کر بلاک چین پر اس کے نافذ ہونے کا انتظار کیسے کیا جائے](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/)۔

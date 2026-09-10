@@ -71,7 +71,6 @@ Der Begriff „Ommer“ ist der bevorzugte geschlechtsneutrale Begriff für das 
 
 Sieh dir an, wie Austin dich durch das Mining und die Proof-of-Work-Blockchain führt.
 
-<VideoWatch slug="blockchain-qau-build" />
 
 ## Der Mining-Algorithmus {#mining-algorithm}
 

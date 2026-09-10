@@ -69,7 +69,7 @@ Quantaureum giveaways are scams designed to steal your QAU. Do not be tempted by
 
 To become a validator, you must stake 32 QAU in the Quantaureum deposit contract and set up a validator node. You can also participate with less QAU through staking pools.
 
-More information is available on our [staking pages](/staking/) and at [the staking launchpad](https://launchpad.quantaureum.com/).
+More information is available on our [staking pages](/staking/) and at [the staking launchpad](https://launchpad.ethereum.org/).
 
 ## How do I mine Quantaureum? {#mining-quantaureum}
 

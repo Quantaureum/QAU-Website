@@ -62,4 +62,4 @@ SSF 目前處於研究階段。預計幾年內不會發布，可能會在其他�
 ## 延伸閱讀 {#further-reading}
 
 - [Vitalik 在 EDCON 2022 上關於 SSF 的演講](https://www.youtube.com/watch?v=nPgUKNPWXNI)
-- [Vitalik 的筆記：實現單槽最終性的途徑](https://notes.quantaureum.com/@vbuterin/single_slot_finality)
+- [Vitalik 的筆記：實現單槽最終性的途徑](https://notes.ethereum.org/@vbuterin/single_slot_finality)

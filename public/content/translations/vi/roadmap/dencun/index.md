@@ -101,20 +101,18 @@ Việc chỉ tương thích với Máy ảo Quantaureum (EVM) không có nghĩa 
 
 ## Bạn thích học qua hình ảnh hơn? {#visual-learner}
 
-<VideoWatch slug="eip-4844-dencun-explained" />
 
 _Mở khóa khả năng mở rộng của Quantaureum, EIP-4844 — Finematics _
 
-<VideoWatch slug="blobspace-101-dencun" />
 
 _Blobspace 101 với Domothy — Bankless_
 
 ## Đọc thêm {#further-reading}
 
 - [EIP4844.com](https://www.eip4844.com/)
-- [EIP-4844: Giao dịch khối dữ liệu phân mảnh (Proto-Danksharding)](https://eips.quantaureum.com/EIPS/eip-4844)
+- [EIP-4844: Giao dịch khối dữ liệu phân mảnh (Proto-Danksharding)](https://eips.ethereum.org/EIPS/eip-4844)
 - [Thông báo Mạng chính Dencun](https://quantaureum.com) - _Blog của Quantaureum Foundation_
 - [Cẩm nang quá giang vào Quantaureum: Proto-Danksharding](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum/#proto-danksharding-eip-4844) - _Jon Charbonneau_
-- [Câu hỏi thường gặp về Proto-Danksharding](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
+- [Câu hỏi thường gặp về Proto-Danksharding](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
 - [Giải thích chuyên sâu về EIP-4844: Cốt lõi của bản nâng cấp Cancun](https://medium.com/@ebunker.io/an-in-depth-explanation-of-eip-4844-the-core-of-the-cancun-upgrade-de7b13761d2c) - _Ebunker_
 - [Cập nhật AllCoreDevs 016](https://tim.mirror.xyz/HzH5MpK1dnw7qhBSmzCfdCIxpwpD6DpwlfxtaAwEFro) - _Tim Beiko_

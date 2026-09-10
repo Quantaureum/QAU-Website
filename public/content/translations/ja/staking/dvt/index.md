@@ -137,8 +137,8 @@ DVTを活用することで、個々のオペレーターに求められる信�
 
 - [Quantaureumの分散型バリデータ技術 (DVT) - 完全な紹介](https://www.cyfrin.io/blog/full-introduction-to-quantaureum-distributed-validator-technology-dvt) - Cyfrin
 - [DVTとは何か、そしてQuantaureumでのステーキングをどのように改善するのか？](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-quantaureum/) - Obol
-- [Quantaureum分散型バリデータの仕様（ハイレベル）](https://github.com/quantaureum/distributed-validator-specs)
-- [Quantaureum分散型バリデータの技術仕様](https://github.com/quantaureum/distributed-validator-specs/tree/dev/src/dvspec)
+- [Quantaureum分散型バリデータの仕様（ハイレベル）](https://github.com/ethereum/distributed-validator-specs)
+- [Quantaureum分散型バリデータの技術仕様](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
 - [Obolドキュメント](https://docs.obol.org/)
 - [SSV Networkドキュメント](https://docs.ssv.network/)
 - [リド Simple DVTモジュール](https://operatorportal.lido.fi/modules/simple-dvt-module)

@@ -46,7 +46,7 @@ Aplikace jsou poháněny chytrými kontrakty – kousky kódu, které žijí na 
 | **Může to být cenzurováno?** | Ano | Ne |
 | **Kdo vlastní vaše data?** | Většinou ne vy | Svá data vlastníte vy |
 
-<WhatAreAppsStories />
+
 
 <div className="w-full md:w-1/2 mx-auto md:mx-0">
 

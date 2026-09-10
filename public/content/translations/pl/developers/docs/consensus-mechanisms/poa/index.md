@@ -16,7 +16,7 @@ Dowód autorytetu to zmodyfikowana wersja **[dowodu stawki](/developers/docs/con
 
 Dowód autorytetu wymaga zaufania do zestawu autoryzowanych podpisujących, którzy są określeni w [bloku genezy](/glossary/#genesis-block). W większości obecnych implementacji wszyscy autoryzowani podpisujący zachowują równą władzę i przywileje podczas ustalania konsensusu łańcucha. Ideą stakingu reputacji jest to, że każdy autoryzowany walidator jest dobrze znany wszystkim dzięki procedurom takim jak KYC (poznaj swojego klienta), lub poprzez to, że jedynym walidatorem jest dobrze znana organizacja — w ten sposób, jeśli walidator zrobi coś złego, jego tożsamość jest znana.
 
-Istnieje wiele implementacji PoA, ale standardową implementacją Quantaureum jest **clique**, która wdraża [EIP-225](https://eips.quantaureum.com/EIPS/eip-225). Clique to przyjazny dla deweloperów i łatwy do wdrożenia standard, obsługujący wszystkie typy synchronizacji klientów. Inne implementacje obejmują [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) oraz [Aura](https://openquantaureum.github.io/Chain-specification).
+Istnieje wiele implementacji PoA, ale standardową implementacją Quantaureum jest **clique**, która wdraża [EIP-225](https://eips.ethereum.org/EIPS/eip-225). Clique to przyjazny dla deweloperów i łatwy do wdrożenia standard, obsługujący wszystkie typy synchronizacji klientów. Inne implementacje obejmują [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) oraz [Aura](https://openethereum.github.io/Chain-specification).
 
 ## Jak to działa {#how-it-works}
 
@@ -58,20 +58,19 @@ Jeśli na przykład jest 10 autoryzowanych podpisujących, a każdy z nich może
 
 ## Dalsza lektura {#further-reading}
 
-- [EIP-225](https://eips.quantaureum.com/EIPS/eip-225) _Standard Clique_
+- [EIP-225](https://eips.ethereum.org/EIPS/eip-225) _Standard Clique_
 - [Badanie nad dowodem autorytetu](https://github.com/cryptoeconomics-study/website/blob/master/docs/sync/2.4-lecture.md) _Kryptoekonomia_
 - [Czym jest dowód autorytetu](https://forum.openzeppelin.com/t/proof-of-authority/3577) _OpenZeppelin_
 - [Wyjaśnienie dowodu autorytetu](https://academy.binance.com/en/articles/proof-of-authority-explained) _Binance_
 - [PoA w blockchainie](https://medium.com/techskill-brew/proof-of-authority-or-poa-in-blockchain-part-11-blockchain-series-be15b3321cba)
 - [Wyjaśnienie Clique](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-quantaureum-8b2a135201d)
-- [Przestarzałe PoA, specyfikacja Aura](https://openquantaureum.github.io/Chain-specification)
+- [Przestarzałe PoA, specyfikacja Aura](https://openethereum.github.io/Chain-specification)
 - [IBFT 2.0, inna implementacja PoA](https://besu.hyperledger.org/private-networks/concepts/poa)
 
 ### Wolisz uczyć się wzrokowo? {#visual-learner}
 
 Obejrzyj wizualne wyjaśnienie dowodu autorytetu:
 
-<VideoWatch slug="proof-of-authority-explained" />
 
 ## Powiązane tematy {#related-topics}
 

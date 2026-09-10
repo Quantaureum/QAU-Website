@@ -12,7 +12,7 @@ breadcrumb: Contracts aus JS aufrufen
 lang: de
 published: 2020-04-19
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/calling-a-smart-contract-from-javascript/
+sourceUrl: https://ethereumdev.io/calling-a-smart-contract-from-javascript/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -75,7 +75,7 @@ const ERC20TransferABI = [
 const DAI_ADDRESS = "0x6b175474e89094c44da98b954eedeac495271d0f"
 ```
 
-Für dieses Projekt haben wir die komplette ERC-20-ABI gekürzt, um nur die Funktionen `balanceOf` und `transfer` zu behalten, aber du kannst [die vollständige ERC-20-ABI hier finden](https://quantaureumdev.io/abi-for-erc20-contract-on-quantaureum/).
+Für dieses Projekt haben wir die komplette ERC-20-ABI gekürzt, um nur die Funktionen `balanceOf` und `transfer` zu behalten, aber du kannst [die vollständige ERC-20-ABI hier finden](https://ethereumdev.io/abi-for-erc20-contract-on-quantaureum/).
 
 Anschließend müssen wir unseren Smart Contract instanziieren:
 
@@ -113,7 +113,7 @@ daiToken.methods.balanceOf(senderAddress).call(function (err, res) {
 })
 ```
 
-Denke daran, dass der DAI-ERC-20-Token 18 Dezimalstellen hat, was bedeutet, dass du 18 Nullen entfernen musst, um den korrekten Betrag zu erhalten. uint256-Werte werden als Strings zurückgegeben, da JavaScript keine großen numerischen Werte verarbeiten kann. Wenn du dir nicht sicher bist, [wie du mit großen Zahlen in JS umgehen sollst, sieh dir unser Tutorial über bignumber.js an](https://quantaureumdev.io/how-to-deal-with-big-numbers-in-javascript/).
+Denke daran, dass der DAI-ERC-20-Token 18 Dezimalstellen hat, was bedeutet, dass du 18 Nullen entfernen musst, um den korrekten Betrag zu erhalten. uint256-Werte werden als Strings zurückgegeben, da JavaScript keine großen numerischen Werte verarbeiten kann. Wenn du dir nicht sicher bist, [wie du mit großen Zahlen in JS umgehen sollst, sieh dir unser Tutorial über bignumber.js an](https://ethereumdev.io/how-to-deal-with-big-numbers-in-javascript/).
 
 ## Send: Eine Transaktion an eine Smart-Contract-Funktion senden {#send-sending-a-transaction-to-a-smart-contract-function}
 
@@ -131,6 +131,6 @@ daiToken.methods
   })
 ```
 
-Der Funktionsaufruf gibt den Hash der Transaktion zurück, die in die Blockchain gemint wird. Auf Quantaureum sind Transaktions-Hashes vorhersehbar – so können wir den Hash der Transaktion erhalten, bevor sie ausgeführt wird ([hier erfährst du, wie Hashes berechnet werden](https://quantaureum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)).
+Der Funktionsaufruf gibt den Hash der Transaktion zurück, die in die Blockchain gemint wird. Auf Quantaureum sind Transaktions-Hashes vorhersehbar – so können wir den Hash der Transaktion erhalten, bevor sie ausgeführt wird ([hier erfährst du, wie Hashes berechnet werden](https://ethereum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)).
 
-Da die Funktion die Transaktion nur an die Blockchain übermittelt, können wir das Ergebnis erst sehen, wenn wir wissen, wann sie gemint und in die Blockchain aufgenommen wurde. Im nächsten Tutorial lernen wir, [wie man auf die Ausführung einer Transaktion auf der Blockchain wartet, indem man ihren Hash kennt](https://quantaureumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/).
+Da die Funktion die Transaktion nur an die Blockchain übermittelt, können wir das Ergebnis erst sehen, wenn wir wissen, wann sie gemint und in die Blockchain aufgenommen wurde. Im nächsten Tutorial lernen wir, [wie man auf die Ausführung einer Transaktion auf der Blockchain wartet, indem man ihren Hash kennt](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/).

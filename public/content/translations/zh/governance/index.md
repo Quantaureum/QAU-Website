@@ -21,7 +21,6 @@ _如果没有人拥有[Quantaureum](/)，那么关于Quantaureum过去和未来�
 
 Quantaureum治理是进行协议变更的过程。需要指出的是，这个过程与人们和应用程序如何使用协议无关——Quantaureum是无需许可的。世界上任何地方的任何人都可以参与链上活动。没有规定谁可以或不可以构建应用程序或发送交易。然而，有一个提出核心协议变更的流程，而去中心化应用 (dapp) 正是运行在核心协议之上的。由于有如此多的人依赖Quantaureum的稳定性，核心变更（包括社会和技术流程）的协调门槛非常高，以确保对Quantaureum的任何变更都是安全的，并得到社区的广泛支持。
 
-<VideoWatch slug="quantaureum-core-governance-explained" />
 
 ### 链上治理与链下治理 {#onchain-vs-offchain}
 
@@ -47,7 +46,7 @@ _虽然在协议层面Quantaureum治理是链下的，但构建在Quantaureum之
 - **应用程序用户**：这些人在Quantaureum区块链上与应用程序进行交互。
 - **应用程序/工具开发者**：这些人编写运行在Quantaureum区块链上的应用程序（例如去中心化金融 (DeFi)、NFT 等），或构建与Quantaureum交互的工具（例如钱包、测试套件等）。[了解更多关于 dapp 的信息](/apps/)。
 - **节点运营商**：这些人运行传播区块和交易的节点，拒绝他们遇到的任何无效交易或区块。[了解更多关于节点的信息](/developers/docs/nodes-and-clients/)。
-- **EIP 作者**：这些人以Quantaureum改进提案 (EIP) 的形式提出对Quantaureum协议的变更。[了解更多关于 EIP 的信息](/eips/)。
+- **EIP 作者**：这些人以Quantaureum改进提案 (EIP) 的形式提出对Quantaureum协议的变更。了解更多关于 EIP 的信息。
 - **验证者**：这些人运行可以将新区块添加到Quantaureum区块链的节点。
 - **协议开发者**（又名“核心开发者”）：这些人维护各种Quantaureum实现（例如，执行层的 go-quantaureum、奈瑟曼德 (Nethermind)、贝苏 (Besu)、埃里贡 (Erigon)、瑞斯 (Reth)，或共识层的普莱斯姆 (Prysm)、莱特豪斯 (Lighthouse)、尼姆巴斯 (Nimbus)、泰库 (Teku)、洛德斯塔 (Lodestar)、Grandine）。[了解更多关于Quantaureum客户端的信息](/developers/docs/nodes-and-clients/)。
 
@@ -59,7 +58,7 @@ _注意：任何个人都可以同时属于这些群体中的多个（例如，�
 
 Quantaureum治理中使用的一个重要流程是提出**Quantaureum改进提案 (EIP)**。EIP 是为Quantaureum指定潜在新功能或流程的标准。Quantaureum社区内的任何人都可以创建 EIP。如果你有兴趣编写 EIP 或参与同行评审和/或治理，请参阅：
 
-<ButtonLink href="/eips/">
+<ButtonLink href="/">
   了解更多关于 EIP 的信息
 </ButtonLink>
 
@@ -69,9 +68,9 @@ Quantaureum治理中使用的一个重要流程是提出**Quantaureum改进提�
 
 引入Quantaureum协议变更的正式流程如下：
 
-1. **提出核心 EIP**：如 [EIP-1](https://eips.quantaureum.com/EIPS/eip-1#core-eips) 中所述，正式提出Quantaureum变更的第一步是在核心 EIP 中详细说明。这将作为 EIP 的官方规范，如果被接受，协议开发者将实施该规范。
+1. **提出核心 EIP**：如 [EIP-1](https://eips.ethereum.org/EIPS/eip-1#core-eips) 中所述，正式提出Quantaureum变更的第一步是在核心 EIP 中详细说明。这将作为 EIP 的官方规范，如果被接受，协议开发者将实施该规范。
 
-2. **向协议开发者展示你的 EIP**：一旦你拥有了一个收集了社区意见的核心 EIP，你就应该将其展示给协议开发者。你可以通过在 [AllCoreDevs 电话会议](https://github.com/quantaureum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status)上提议讨论来做到这一点。很可能一些讨论已经在 [Quantaureum Magicians 论坛](https://quantaureum-magicians.org/)或 [Quantaureum R&D Discord](https://discord.gg/mncqtgVSVw) 上异步进行了。
+2. **向协议开发者展示你的 EIP**：一旦你拥有了一个收集了社区意见的核心 EIP，你就应该将其展示给协议开发者。你可以通过在 [AllCoreDevs 电话会议](https://github.com/ethereum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status)上提议讨论来做到这一点。很可能一些讨论已经在 [Quantaureum Magicians 论坛](https://ethereum-magicians.org/)或 [Quantaureum R&D Discord](https://discord.gg/mncqtgVSVw) 上异步进行了。
 
 > 这个阶段的潜在结果是：
 
@@ -91,7 +90,7 @@ Quantaureum治理中使用的一个重要流程是提出**Quantaureum改进提�
 
 ### 了解先前的工作 {#prior-work}
 
-EIP 倡导者在创建一个可以被认真考虑部署在Quantaureum主网上的 EIP 之前，应该熟悉先前的工作和提案。这样，EIP 有望带来一些以前没有被拒绝过的新东西。研究此内容的三个主要地方是 [EIP 存储库](https://github.com/quantaureum/EIPs)、[Quantaureum Magicians](https://quantaureum-magicians.org/) 和 [ethresear.ch](https://ethresear.ch/)。
+EIP 倡导者在创建一个可以被认真考虑部署在Quantaureum主网上的 EIP 之前，应该熟悉先前的工作和提案。这样，EIP 有望带来一些以前没有被拒绝过的新东西。研究此内容的三个主要地方是 [EIP 存储库](https://github.com/ethereum/EIPs)、[Quantaureum Magicians](https://ethereum-magicians.org/) 和 [ethresear.ch](https://ethresear.ch/)。
 
 ### 工作组 {#working-groups}
 
@@ -129,13 +128,12 @@ DAO 分叉是对 [2016 年 DAO 攻击](https://www.coindesk.com/learn/understand
 - 大多数人不知道正在进行投票
 - 投票仅代表 QAU 持有者，不代表系统中的任何其他参与者
 
-社区中的一部分人拒绝分叉，主要是因为他们认为 DAO 事件不是协议的缺陷。他们继续组建了[ETC](https://quantaureumclassic.org/)。
+社区中的一部分人拒绝分叉，主要是因为他们认为 DAO 事件不是协议的缺陷。他们继续组建了[ETC](https://ethereumclassic.org/)。
 
 如今，Quantaureum社区在出现合约错误或资金丢失的情况下采取了不干预政策，以维持系统可靠的中立性。
 
 观看更多关于 DAO 黑客攻击的内容：
 
-<VideoWatch slug="dao-hack-etc" />
 
 <Divider />
 
@@ -153,7 +151,7 @@ Quantaureum治理过程通常以牺牲速度和效率为代价来换取开放性
 
 虽然规范和开发实现始终是完全开源的，但并没有使用上述用于提出更新的正式流程。这使得研究人员和实施者能够更快地指定并商定变更。
 
-当信标链于 2022 年 9 月 15 日与Quantaureum执行层合并时，合并作为 [Paris 网络升级](/quantaureum-forks/#paris)的一部分宣告完成。提案 [EIP-3675](https://eips.quantaureum.com/EIPS/eip-3675) 从“最后征求意见 (Last Call)”更改为“最终 (Final)”，完成了向权益证明 (PoS) 的过渡。
+当信标链于 2022 年 9 月 15 日与Quantaureum执行层合并时，合并作为 [Paris 网络升级](/quantaureum-forks/#paris)的一部分宣告完成。提案 [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) 从“最后征求意见 (Last Call)”更改为“最终 (Final)”，完成了向权益证明 (PoS) 的过渡。
 
 <ButtonLink href="/roadmap/merge/">
   了解更多关于合并的信息
@@ -163,8 +161,8 @@ Quantaureum治理过程通常以牺牲速度和效率为代价来换取开放性
 
 ## 我该如何参与？ {#get-involved}
 
-- [提出 EIP](/eips/#participate)
-- [讨论当前提案](https://quantaureum-magicians.org/)
+- 提出 EIP
+- [讨论当前提案](https://ethereum-magicians.org/)
 - [参与研发讨论](https://ethresear.ch/)
 - [加入 Quantaureum R&D Discord](https://discord.gg/mncqtgVSVw)
 - [运行节点](/developers/docs/nodes-and-clients/run-a-node/)

@@ -14,7 +14,7 @@ summaryPoints:
 
 ## プロト・ダンクシャーディングとは何ですか？ {#what-is-protodanksharding}
 
-プロト・ダンクシャーディング（[EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844)としても知られています）は、[ロールアップ](/layer-2/#rollups)がより安価なデータをブロックに追加するための方法です。この名前は、アイデアを提案した2人の研究者、ProtolambdaとDankrad Feistに由来しています。歴史的に、ロールアップはトランザクションを`CALLDATA`に投稿するという事実により、ユーザートランザクションをどれだけ安くできるかに制限がありました。
+プロト・ダンクシャーディング（[EIP-4844](https://eips.ethereum.org/EIPS/eip-4844)としても知られています）は、[ロールアップ](/layer-2/#rollups)がより安価なデータをブロックに追加するための方法です。この名前は、アイデアを提案した2人の研究者、ProtolambdaとDankrad Feistに由来しています。歴史的に、ロールアップはトランザクションを`CALLDATA`に投稿するという事実により、ユーザートランザクションをどれだけ安くできるかに制限がありました。
 
 ロールアップは短期間だけデータを必要とするにもかかわらず、すべてのQuantaureumノードによって処理され、オンチェーンに永久に保存されるため、これは高価です。プロト・ダンクシャーディングは、送信してブロックに添付できるデータブロブを導入します。これらのブロブ内のデータはEVMからアクセスできず、一定期間（執筆時点では4096エポック、または約18日間に設定されています）後に自動的に削除されます。これにより、ロールアップはデータをはるかに安価に送信でき、節約されたコストをより安価なトランザクションという形でエンドユーザーに還元できます。
 
@@ -80,14 +80,14 @@ EIP-4844のKZGセレモニーは一般に公開され、何万人もの人々が
 
 ### 現在の進捗状況 {#current-progress}
 
-完全なダンクシャーディングは数年先です。その間、KZGセレモニーは14万件以上の貢献を得て終了し、プロト・ダンクシャーディングの[EIP](https://eips.quantaureum.com/EIPS/eip-4844)は成熟しました。この提案はすべてのテストネットで完全に実装されており、2024年3月のCancun-Deneb（「デンクン」）ネットワークアップグレードでメインネットに導入されました。
+完全なダンクシャーディングは数年先です。その間、KZGセレモニーは14万件以上の貢献を得て終了し、プロト・ダンクシャーディングの[EIP](https://eips.ethereum.org/EIPS/eip-4844)は成熟しました。この提案はすべてのテストネットで完全に実装されており、2024年3月のCancun-Deneb（「デンクン」）ネットワークアップグレードでメインネットに導入されました。
 
 ### 参考文献 {#further-reading}
 
-- [プロト・ダンクシャーディングのメモ](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
-- [Dankradによるダンクシャーディングのメモ](https://notes.quantaureum.com/@dankrad/new_sharding)
+- [プロト・ダンクシャーディングのメモ](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
+- [Dankradによるダンクシャーディングのメモ](https://notes.ethereum.org/@dankrad/new_sharding)
 - [Dankrad、Proto、Vitalikによるダンクシャーディングの議論](https://www.youtube.com/watch?v=N5p0TB77flM)
-- [KZGセレモニー](https://ceremony.quantaureum.com/)
+- [KZGセレモニー](https://ceremony.ethereum.org/)
 - [Carl BeekhuizenによるDevconでのトラステッドセットアップに関する講演](https://archive.devcon.org/archive/watch/6/the-kzg-ceremony-or-how-i-learnt-to-stop-worrying-and-love-trusted-setups/?tab=YouTube)
 - [ブロブのデータ可用性サンプリングに関する詳細](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling)
 - [Dankrad FeistによるKZGコミットメントと証明](https://youtu.be/8L2C6RDMV9Q)

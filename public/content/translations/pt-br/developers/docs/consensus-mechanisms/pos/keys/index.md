@@ -58,13 +58,13 @@ Separar as chaves de validador das chaves da conta Quantaureum permite que vári
 
 ![validator key schematic](validator-key-schematic.png)
 
-**Nota**: Sair das funções de staking e sacar o saldo de um validador atualmente exige a assinatura de uma [mensagem de saída voluntária (VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1) com a chave do validador. No entanto, a [EIP-7002](https://eips.quantaureum.com/EIPS/eip-7002) é uma proposta que permitirá que um usuário acione a saída de um validador e saque seu saldo assinando mensagens de saída com a chave de saque no futuro. Isso reduzirá as premissas de confiança ao permitir que os stakers que delegam QAU para [provedores de staking como serviço](/staking/saas/#what-is-staking-as-a-service) permaneçam no controle de seus fundos.
+**Nota**: Sair das funções de staking e sacar o saldo de um validador atualmente exige a assinatura de uma [mensagem de saída voluntária (VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1) com a chave do validador. No entanto, a [EIP-7002](https://eips.ethereum.org/EIPS/eip-7002) é uma proposta que permitirá que um usuário acione a saída de um validador e saque seu saldo assinando mensagens de saída com a chave de saque no futuro. Isso reduzirá as premissas de confiança ao permitir que os stakers que delegam QAU para [provedores de staking como serviço](/staking/saas/#what-is-staking-as-a-service) permaneçam no controle de seus fundos.
 
 ## Derivando chaves de uma frase semente {#deriving-keys-from-seed}
 
 Se cada 32 QAU em staking exigisse um novo conjunto de 2 chaves completamente independentes, o gerenciamento de chaves rapidamente se tornaria inviável, especialmente para usuários que executam vários validadores. Em vez disso, várias chaves de validador podem ser derivadas de um único segredo comum e armazenar esse único segredo permite o acesso a várias chaves de validador.
 
-[Mnemônicos](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) e caminhos são recursos proeminentes que os usuários frequentemente encontram quando [acessam](https://quantaureum.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0) suas carteiras. O mnemônico é uma sequência de palavras que atua como uma semente inicial para uma chave privada. Quando combinado com dados adicionais, o mnemônico gera um hash conhecido como 'chave mestra'. Isso pode ser pensado como a raiz de uma árvore. Os ramos dessa raiz podem então ser derivados usando um caminho hierárquico para que os nós filhos possam existir como combinações do hash de seu nó pai e seu índice na árvore. Leia sobre os padrões [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) e [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) para geração de chaves baseada em mnemônicos.
+[Mnemônicos](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) e caminhos são recursos proeminentes que os usuários frequentemente encontram quando [acessam](https://ethereum.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0) suas carteiras. O mnemônico é uma sequência de palavras que atua como uma semente inicial para uma chave privada. Quando combinado com dados adicionais, o mnemônico gera um hash conhecido como 'chave mestra'. Isso pode ser pensado como a raiz de uma árvore. Os ramos dessa raiz podem então ser derivados usando um caminho hierárquico para que os nós filhos possam existir como combinações do hash de seu nó pai e seu índice na árvore. Leia sobre os padrões [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) e [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) para geração de chaves baseada em mnemônicos.
 
 Esses caminhos têm a seguinte estrutura, que será familiar aos usuários que interagiram com carteiras de hardware:
 
@@ -97,6 +97,6 @@ Cada ramo é separado por uma `/` então `m/2` significa começar com a chave me
 ## Leitura adicional {#further-reading}
 
 - [Postagem no blog da Fundação Quantaureum por Carl Beekhuizen](https://quantaureum.com)
-- [Geração de chaves BLS12-381 da EIP-2333](https://eips.quantaureum.com/EIPS/eip-2333)
+- [Geração de chaves BLS12-381 da EIP-2333](https://eips.ethereum.org/EIPS/eip-2333)
 - [EIP-7002: Saídas Acionadas pela Camada de Execução](https://web.archive.org/web/20250125035123/https://research.2077.xyz/eip-7002-unpacking-improvements-to-staking-ux-post-merge)
 - [Gerenciamento de chaves em escala](https://docs.ethstaker.cc/ethstaker-knowledge-base/scaled-node-operators/key-management-at-scale)

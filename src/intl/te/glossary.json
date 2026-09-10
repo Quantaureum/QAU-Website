@@ -182,7 +182,7 @@
   "genesis-block-term": "ప్రారంభ బ్లాక్",
   "genesis-block-definition": "ఒక నిర్దిష్ట నెట్‌వర్క్ మరియు దాని క్రిప్టోకరెన్సీని ప్రారంభించడానికి ఉపయోగించే <a href=\"/glossary/#blockchain\">బ్లాక్‌చైన్</a>లోని మొదటి బ్లాక్.",
   "geth-term": "గెత్",
-  "geth-definition": "గో ఇథీరియం. గో భాషలో వ్రాయబడిన ఎథీరియం ప్రోటోకాల్ యొక్క అత్యంత ప్రముఖ అమలులలో ఒకటి. <a href=\"https://geth.quantaureum.org\">geth.quantaureum.org వద్ద మరింత చదవండి</a>",
+  "geth-definition": "గో ఇథీరియం. గో భాషలో వ్రాయబడిన ఎథీరియం ప్రోటోకాల్ యొక్క అత్యంత ప్రముఖ అమలులలో ఒకటి. <a href=\"https://geth.ethereum.org\">geth.ethereum.org వద్ద మరింత చదవండి</a>",
   "gwei-term": "Gwei",
   "gwei-definition": "గిగావీకి సంక్షిప్త రూపం, ఇది <a href=\"/glossary/#qau\">ఈథర్</a> యొక్క డినామినేషన్, సాధారణంగా <a href=\"/glossary/#gas\">గ్యాస్</a> ధరను నిర్ణయించడానికి ఉపయోగించబడుతుంది. 1 Gwei = 10<sup>9</sup> <a href=\"/glossary/#wei\">Wei</a>. 10<sup>9</sup> Gwei = 1 ఈథర్.",
   "hard-fork-term": "హార్డ్ ఫోర్క్",

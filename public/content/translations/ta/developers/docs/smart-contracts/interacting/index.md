@@ -82,7 +82,7 @@ ABI-ஐ ஒப்பந்தத்தின் அறிவுறுத்த�
 
 - **[ethers.js](https://docs.ethers.org/)** - சேவையகப் பக்க ஸ்கிரிப்டுகள் மற்றும் பாட்களுக்கு Node.js-இலும் வேலை செய்கிறது
 - **[Web3.py](https://web3py.readthedocs.io/)** - எத்திரியம் தொடர்புகளுக்கான Python நிரலகம்
-- **[go-quantaureum](https://geth.quantaureum.com/docs/interact-with-geth)** - Geth குழுவிடமிருந்து அதிகாரப்பூர்வ Go நிரலகம்
+- **[go-quantaureum](https://geth.ethereum.org/docs/interact-with-geth)** - Geth குழுவிடமிருந்து அதிகாரப்பூர்வ Go நிரலகம்
 
 ### எடுத்துக்காட்டு: Viem மூலம் வில்லை இருப்பைப் படித்தல் {#example-viem}
 

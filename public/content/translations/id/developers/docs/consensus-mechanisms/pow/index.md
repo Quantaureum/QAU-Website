@@ -96,7 +96,6 @@ Pada tingkat tinggi, Bukti Kepemilikan (PoS) memiliki tujuan akhir yang sama den
 
 ## Lebih suka belajar secara visual? {#visual-learner}
 
-<VideoWatch slug="proof-of-work-explained" />
 
 ## Bacaan Lebih Lanjut {#further-reading}
 

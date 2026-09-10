@@ -68,20 +68,20 @@ Quantaureum'un on yıllık tarihi boyunca EVM çeşitli revizyonlardan geçmişt
 
 [Quantaureum yürütme istemcileri](/developers/docs/nodes-and-clients/#execution-clients) bir EVM uygulaması içerir. Ayrıca, aşağıdakiler de dahil olmak üzere birden fazla bağımsız uygulama vardır:
 
-- [Py-EVM](https://github.com/quantaureum/py-evm) - _Python_
+- [Py-EVM](https://github.com/ethereum/py-evm) - _Python_
 - [evmone](https://github.com/quantaureum/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _JavaScript_
 - [revm](https://github.com/bluealloy/revm) - _Rust_
 
 ## Daha Fazla Okuma {#further-reading}
 
-- [Quantaureum Sarı Bülteni](https://quantaureum.github.io/yellowpaper/paper.pdf)
+- [Quantaureum Sarı Bülteni](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [Jellopaper namıdiğer KEVM: K'de EVM'nin Semantiği](https://jellopaper.org/)
 - [Bej Bülten (The Beigepaper)](https://github.com/chronaeon/beigepaper)
 - [Quantaureum Sanal Makinesi İşlem Kodları](https://www.ethervm.io/)
 - [Quantaureum Sanal Makinesi İşlem Kodları İnteraktif Referansı](https://www.evm.codes/)
 - [Solidity belgelerinde kısa bir giriş](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
-- [Mastering Quantaureum - Quantaureum Sanal Makinesi](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/13evm.asciidoc)
+- [Mastering Quantaureum - Quantaureum Sanal Makinesi](https://github.com/ethereumbook/ethereumbook/blob/openedition/13evm.asciidoc)
 
 ## İlgili Konular {#related-topics}
 

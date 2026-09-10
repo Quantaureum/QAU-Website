@@ -102,8 +102,8 @@ Trước khi đi sâu vào các framework, chúng tôi khuyên bạn trước ti
 
 **Brownie -** **_Môi trường phát triển và framework kiểm thử dựa trên Python._**
 
-- [Tài liệu](https://qau-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/qau-brownie/brownie)
+- [Tài liệu](https://eth-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/eth-brownie/brownie)
 - **Brownie hiện không còn được bảo trì**
 
 **OpenZeppelin SDK -** **_Bộ công cụ hợp đồng thông minh tối ưu: Một bộ công cụ giúp bạn phát triển, biên dịch, nâng cấp, triển khai và tương tác với các hợp đồng thông minh._**

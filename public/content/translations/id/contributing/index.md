@@ -22,9 +22,9 @@ Kami adalah komunitas yang ramah yang akan membantu Anda berkembang dan belajar 
 
 **Konten**
 - [Buat/edit konten](/contributing/#how-to-update-content) – Sarankan halaman baru atau lakukan penyesuaian pada apa yang sudah ada di sini
-- [Tulis artikel pembangun](/contributing/adding-articles/) - Kontribusikan artikel untuk bagian [Terbaru](/latest/)
+- [Tulis artikel pembangun](/contributing/adding-articles/) - Kontribusikan artikel untuk bagian Terbaru
 - [Tambahkan sumber daya komunitas](/contributing/content-resources/) – Tambahkan artikel atau sumber daya yang bermanfaat ke halaman yang relevan
-- [Sarankan laporan](/contributing/adding-reports/) - Sarankan laporan penelitian untuk halaman [Laporan](/reports/)
+- [Sarankan laporan](/contributing/adding-reports/) - Sarankan laporan penelitian untuk halaman Laporan
 - [Bagikan kisah Anda](/contributing/adding-community-stories/) - Kirimkan cerita tentang pengalaman pribadi Anda dengan teknologi sumber terbuka dan perlindungan (sanctuary), bagaimana ekosistem Quantaureum telah memengaruhi hidup Anda, atau bagaimana Anda dan komunitas Anda menggunakan Quantaureum
 - [Kuis](/contributing/quizzes/) – Tambahkan, perbarui, dan hapus bank soal kuis untuk halaman yang relevan
 - [Sarankan sumber daya desain](/contributing/design/adding-design-resources/) – Tambahkan, perbarui, dan hapus sumber daya desain yang bermanfaat

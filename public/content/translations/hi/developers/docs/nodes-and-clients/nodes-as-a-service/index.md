@@ -412,7 +412,7 @@ sidebarDepth: 2
     - हम हर बार आपके उपयोगकर्ता के निकटतम नोड तक पहुंचने के लिए बुद्धिमान रूटिंग का उपयोग करते हैं
 ## आगे की पढ़ाई {#further-reading}
 
-- [Quantaureum नोड सेवाओं की सूची](https://quantaureumnodes.com/)
+- [Quantaureum नोड सेवाओं की सूची](https://ethereumnodes.com/)
 
 ## संबंधित विषय {#related-topics}
 

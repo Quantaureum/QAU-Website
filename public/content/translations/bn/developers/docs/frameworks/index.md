@@ -102,8 +102,8 @@ lang: bn
 
 **Brownie -** **_Python-ভিত্তিক ডেভেলপমেন্ট এনভায়রনমেন্ট এবং টেস্টিং ফ্রেমওয়ার্ক।_**
 
-- [ডকুমেন্টেশন](https://qau-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/qau-brownie/brownie)
+- [ডকুমেন্টেশন](https://eth-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/eth-brownie/brownie)
 - **Brownie বর্তমানে রক্ষণাবেক্ষণ করা হচ্ছে না**
 
 **ওপেনজেপেলিন SDK -** **_চূড়ান্ত স্মার্ট কন্ট্রাক্ট টুলকিট: স্মার্ট কন্ট্রাক্টগুলো ডেভেলপ, কম্পাইল, আপগ্রেড, ডিপ্লয় করা এবং সেগুলোর সাথে ইন্টারঅ্যাক্ট করতে সাহায্য করার জন্য টুলের একটি স্যুট।_**

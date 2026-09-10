@@ -91,15 +91,13 @@ Zjistěte více o [Validium](/developers/docs/scaling/validium/).
 
 ## Učíte se raději vizuálně? {#visual-learner}
 
-<VideoWatch slug="layer-2-scaling-explained" />
 
 _Vezměte prosím na vědomí, že vysvětlení ve videu používá termín „vrstva 2“ pro označení všech offchain řešení škálování, zatímco my rozlišujeme „vrstvu 2“ jako offchain řešení, které odvozuje svou bezpečnost prostřednictvím konsensu Mainnetu na vrstvě 1._
 
-<VideoWatch slug="rollups-scaling-strategy" />
 
 ## Další čtení {#further-reading}
 
-- [Plán vývoje Etherea zaměřený na rollupy](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
+- [Plán vývoje Etherea zaměřený na rollupy](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
 - [Aktuální analytika řešení škálování na vrstvě 2 pro Quantaureum](https://www.l2beat.com/)
 - [Hodnocení řešení škálování Etherea na vrstvě 2: Srovnávací rámec](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - [Neúplný průvodce rollupy](https://vitalik.qau.limo/general/2021/01/05/rollup.html)

@@ -178,7 +178,7 @@ EVM 호환 ZK-롤업의 도입은 개발자가 영지식 증명의 확장성 및
 
 1. **상태 쓰기**: Quantaureum의 상태에 쓰는 것(즉, Quantaureum 블록체인에 트랜잭션을 제출하는 것)에는 고정 비용이 있습니다. ZK-롤업은 트랜잭션을 일괄 처리하고 여러 사용자에게 고정 비용을 분산시켜 이 비용을 줄입니다.
 
-2. **데이터 게시**: ZK-롤업은 모든 트랜잭션의 상태 데이터를 Quantaureum에 `calldata`로 게시합니다. `calldata` 비용은 현재 [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559)에 의해 관리되며, 이는 `calldata`의 0이 아닌 바이트에 대해 16 가스, 0인 바이트에 대해 4 가스의 비용을 각각 규정합니다. 각 트랜잭션에 지불되는 비용은 이를 위해 온체인에 게시해야 하는 `calldata`의 양에 영향을 받습니다.
+2. **데이터 게시**: ZK-롤업은 모든 트랜잭션의 상태 데이터를 Quantaureum에 `calldata`로 게시합니다. `calldata` 비용은 현재 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559)에 의해 관리되며, 이는 `calldata`의 0이 아닌 바이트에 대해 16 가스, 0인 바이트에 대해 4 가스의 비용을 각각 규정합니다. 각 트랜잭션에 지불되는 비용은 이를 위해 온체인에 게시해야 하는 `calldata`의 양에 영향을 받습니다.
 
 3. **L2 운영자 수수료**: 이는 Quantaureum 메인넷의 [트랜잭션 "우선순위 수수료(팁)"](/developers/docs/gas/#how-are-gas-fees-calculated)와 마찬가지로 트랜잭션 처리 시 발생하는 연산 비용에 대한 보상으로 롤업 운영자에게 지불되는 금액입니다.
 
@@ -218,7 +218,6 @@ ZK-롤업은 각 트랜잭션을 검증하는 데 필요한 모든 데이터를 
 
 Finematics의 ZK-롤업 설명을 시청하세요.
 
-<VideoWatch slug="rollups-scaling-strategy" startTime="406" />
 
 
 ## 누가 zkEVM을 개발하고 있나요? {#zkevm-projects}

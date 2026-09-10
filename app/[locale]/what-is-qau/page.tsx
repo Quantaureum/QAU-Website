@@ -43,7 +43,7 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
   const { locale } = params
   setRequestLocale(locale)
 
-  const t = await getTranslations("page-what-is-QAU")
+  const t = await getTranslations("page-what-is-qau")
 
   const [
     { contributors, lastEditLocaleTimestamp },
@@ -61,34 +61,34 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
       : null
 
   const tocItems: ToCItem[] = [
-    { title: t("page-what-is-QAU-title"), url: "#what-is-QAU" },
-    { title: t("page-what-is-QAU-how-to-buy-eth"), url: "#how-to-buy-eth" },
+    { title: t("page-what-is-qau-title"), url: "#what-is-QAU" },
+    { title: t("page-what-is-qau-how-to-buy-eth"), url: "#how-to-buy-eth" },
     {
-      title: t("page-what-is-QAU-how-to-send-and-receive-eth"),
+      title: t("page-what-is-qau-how-to-send-and-receive-eth"),
       url: "#how-to-send-and-receive-eth",
     },
     {
-      title: t("page-what-is-QAU-how-long-does-it-take-to-send-eth"),
+      title: t("page-what-is-qau-how-long-does-it-take-to-send-eth"),
       url: "#how-long-does-it-take-to-send-eth",
     },
     {
-      title: t("page-what-is-QAU-how-much-does-it-cost-to-send-eth"),
+      title: t("page-what-is-qau-how-much-does-it-cost-to-send-eth"),
       url: "#how-much-does-it-cost-to-send-eth",
     },
     {
-      title: t("page-what-is-QAU-what-is-the-qau-supply"),
+      title: t("page-what-is-qau-what-is-the-qau-supply"),
       url: "#what-is-the-qau-supply",
     },
     {
-      title: t("page-what-is-QAU-what-is-the-distribution-of-eth"),
+      title: t("page-what-is-qau-what-is-the-distribution-of-eth"),
       url: "#what-is-the-distribution-of-eth",
     },
     {
-      title: t("page-what-is-QAU-what-makes-qau-valuable"),
+      title: t("page-what-is-qau-what-makes-qau-valuable"),
       url: "#what-makes-qau-valuable",
     },
     {
-      title: t("page-what-is-QAU-what-is-wrapping-eth"),
+      title: t("page-what-is-qau-what-is-wrapping-eth"),
       url: "#what-is-wrapping-eth",
     },
   ]
@@ -109,8 +109,8 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
               startDepth: 1,
             }}
             heroImg={heroImg}
-            title={t("page-what-is-QAU-title")}
-            description={t("page-what-is-QAU-hero-description-1")}
+            title={t("page-what-is-qau-title")}
+            description={t("page-what-is-qau-hero-description-1")}
           />
         }
         tocItems={tocItems}
@@ -119,22 +119,22 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
         variant="narrow"
       >
         <Section id={getIdFromHash(tocItems[0].url)}>
-          <p>{t("page-what-is-QAU-what-is-QAU-description-1")}</p>
+          <p>{t("page-what-is-qau-what-is-QAU-description-1")}</p>
           <p>
-            {t.rich("page-what-is-QAU-what-is-QAU-description-2", {
+            {t.rich("page-what-is-qau-what-is-QAU-description-2", {
               strong: Strong,
             })}
           </p>
           <OrderedList>
             <ListItem>
-              {t("page-what-is-QAU-what-is-QAU-description-3")}
+              {t("page-what-is-qau-what-is-QAU-description-3")}
             </ListItem>
             <ListItem>
-              {t("page-what-is-QAU-what-is-QAU-description-4")}
+              {t("page-what-is-qau-what-is-QAU-description-4")}
             </ListItem>
           </OrderedList>
           <p>
-            {t.rich("page-what-is-QAU-what-is-QAU-description-5", {
+            {t.rich("page-what-is-qau-what-is-QAU-description-5", {
               assets: (chunks) => (
                 <Link href="https://companiesmarketcap.com/assets-by-market-cap/">
                   {chunks}
@@ -149,10 +149,10 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
               </IconBox>
               <CardContent spacing="md">
                 <CardTitle>
-                  {t("page-what-is-QAU-what-is-QAU-description-6")}
+                  {t("page-what-is-qau-what-is-QAU-description-6")}
                 </CardTitle>
                 <CardParagraph>
-                  {t("page-what-is-QAU-what-is-QAU-description-7")}
+                  {t("page-what-is-qau-what-is-QAU-description-7")}
                 </CardParagraph>
               </CardContent>
             </HighlightCard>
@@ -162,10 +162,10 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
               </IconBox>
               <CardContent spacing="md">
                 <CardTitle>
-                  {t("page-what-is-QAU-what-is-QAU-description-8")}
+                  {t("page-what-is-qau-what-is-QAU-description-8")}
                 </CardTitle>
                 <CardParagraph>
-                  {t("page-what-is-QAU-what-is-QAU-description-9")}
+                  {t("page-what-is-qau-what-is-QAU-description-9")}
                 </CardParagraph>
               </CardContent>
             </HighlightCard>
@@ -175,48 +175,48 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
               </IconBox>
               <CardContent spacing="md">
                 <CardTitle>
-                  {t("page-what-is-QAU-what-is-QAU-description-10")}
+                  {t("page-what-is-qau-what-is-QAU-description-10")}
                 </CardTitle>
                 <CardParagraph>
-                  {t("page-what-is-QAU-what-is-QAU-description-11")}
+                  {t("page-what-is-qau-what-is-QAU-description-11")}
                 </CardParagraph>
               </CardContent>
             </HighlightCard>
           </HighlightStack>
           <LinkWithArrow href="/staking/">
-            {t("page-what-is-QAU-what-is-QAU-description-12")}
+            {t("page-what-is-qau-what-is-QAU-description-12")}
           </LinkWithArrow>
         </Section>
 
         <Section id={getIdFromHash(tocItems[1].url)}>
           <h2>{tocItems[1].title}</h2>
           <p>
-            {t.rich("page-what-is-QAU-how-to-buy-qau-description-1", {
+            {t.rich("page-what-is-qau-how-to-buy-qau-description-1", {
               strong: Strong,
             })}
           </p>
-          <p>{t("page-what-is-QAU-how-to-buy-qau-description-2")}</p>
+          <p>{t("page-what-is-qau-how-to-buy-qau-description-2")}</p>
           <Alert variant="warning">
             <AlertEmoji text="💡" />
             <AlertContent>
               <AlertTitle>
-                {t.rich("page-what-is-QAU-how-to-buy-qau-description-3", {
+                {t.rich("page-what-is-qau-how-to-buy-qau-description-3", {
                   strong: Strong,
                 })}
               </AlertTitle>
               <p className="mt-2">
-                {t.rich("page-what-is-QAU-how-to-buy-qau-description-4", {
+                {t.rich("page-what-is-qau-how-to-buy-qau-description-4", {
                   strong: Strong,
                 })}
               </p>
               <UnorderedList className="mt-2 mb-0 [&>li]:mb-0.5">
                 <ListItem>
-                  {t.rich("page-what-is-QAU-how-to-buy-qau-description-5", {
+                  {t.rich("page-what-is-qau-how-to-buy-qau-description-5", {
                     strong: Strong,
                   })}
                 </ListItem>
                 <ListItem>
-                  {t.rich("page-what-is-QAU-how-to-buy-qau-description-6", {
+                  {t.rich("page-what-is-qau-how-to-buy-qau-description-6", {
                     strong: Strong,
                   })}
                 </ListItem>
@@ -225,55 +225,55 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
           </Alert>
           <p className="text-xl">
             <strong>
-              {t("page-what-is-QAU-how-to-buy-qau-description-7")}
+              {t("page-what-is-qau-how-to-buy-qau-description-7")}
             </strong>
           </p>
           <UnorderedList>
             <ListItem>
-              {t.rich("page-what-is-QAU-how-to-buy-qau-description-8", {
+              {t.rich("page-what-is-qau-how-to-buy-qau-description-8", {
                 strong: Strong,
               })}
             </ListItem>
             <ListItem>
-              {t.rich("page-what-is-QAU-how-to-buy-qau-description-9", {
+              {t.rich("page-what-is-qau-how-to-buy-qau-description-9", {
                 strong: Strong,
               })}
             </ListItem>
             <ListItem>
-              {t.rich("page-what-is-QAU-how-to-buy-qau-description-10", {
+              {t.rich("page-what-is-qau-how-to-buy-qau-description-10", {
                 strong: Strong,
               })}
             </ListItem>
           </UnorderedList>
           <p>
-            {t.rich("page-what-is-QAU-how-to-buy-qau-description-11", {
+            {t.rich("page-what-is-qau-how-to-buy-qau-description-11", {
               strong: Strong,
             })}
           </p>
           <p className="text-xl">
             <strong>
-              {t("page-what-is-QAU-how-to-buy-qau-description-12")}
+              {t("page-what-is-qau-how-to-buy-qau-description-12")}
             </strong>
           </p>
           <UnorderedList>
             <ListItem>
-              {t.rich("page-what-is-QAU-how-to-buy-qau-description-13", {
+              {t.rich("page-what-is-qau-how-to-buy-qau-description-13", {
                 strong: Strong,
               })}
             </ListItem>
             <ListItem>
-              {t.rich("page-what-is-QAU-how-to-buy-qau-description-14", {
+              {t.rich("page-what-is-qau-how-to-buy-qau-description-14", {
                 strong: Strong,
               })}
             </ListItem>
             <ListItem>
-              {t.rich("page-what-is-QAU-how-to-buy-qau-description-15", {
+              {t.rich("page-what-is-qau-how-to-buy-qau-description-15", {
                 strong: Strong,
               })}
             </ListItem>
           </UnorderedList>
-          <LinkWithArrow href="/get-eth/">
-            {t("page-what-is-QAU-how-to-buy-qau-description-16")}
+          <LinkWithArrow href="/get-qau/">
+            {t("page-what-is-qau-how-to-buy-qau-description-16")}
           </LinkWithArrow>
         </Section>
 
@@ -287,7 +287,7 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
           <h2 id={getIdFromHash(tocItems[2].url)}>{tocItems[2].title}</h2>
           <p>
             {t.rich(
-              "page-what-is-QAU-how-to-send-and-receive-qau-description-1",
+              "page-what-is-qau-how-to-send-and-receive-qau-description-1",
               {
                 strong: Strong,
               }
@@ -295,7 +295,7 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
           </p>
           <p>
             {t.rich(
-              "page-what-is-QAU-how-to-send-and-receive-qau-description-2",
+              "page-what-is-qau-how-to-send-and-receive-qau-description-2",
               {
                 strong: Strong,
               }
@@ -303,7 +303,7 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
           </p>
           <p>
             {t.rich(
-              "page-what-is-QAU-how-to-send-and-receive-qau-description-3",
+              "page-what-is-qau-how-to-send-and-receive-qau-description-3",
               {
                 strong: Strong,
                 howToUseWallet: (chunks) => (
@@ -316,20 +316,20 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
             <AlertEmoji text="💡" />
             <AlertContent>
               <AlertTitle>
-                {t.rich("page-what-is-QAU-how-to-buy-qau-description-3", {
+                {t.rich("page-what-is-qau-how-to-buy-qau-description-3", {
                   strong: Strong,
                 })}
               </AlertTitle>
               <p>
-                {t("page-what-is-QAU-how-to-send-and-receive-qau-callout")}
+                {t("page-what-is-qau-how-to-send-and-receive-qau-callout")}
               </p>
             </AlertContent>
           </Alert>
           <p>
-            {t("page-what-is-QAU-how-to-send-and-receive-qau-description-7")}
+            {t("page-what-is-qau-how-to-send-and-receive-qau-description-7")}
           </p>
           <LinkWithArrow href="/what-is-quantaureum/">
-            {t("page-what-is-QAU-how-to-send-and-receive-qau-description-8")}
+            {t("page-what-is-qau-how-to-send-and-receive-qau-description-8")}
           </LinkWithArrow>
         </Section>
 
@@ -337,17 +337,17 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
           <h2>{tocItems[3].title}</h2>
           <p>
             {t(
-              "page-what-is-QAU-how-long-does-it-take-to-send-qau-description-1"
+              "page-what-is-qau-how-long-does-it-take-to-send-qau-description-1"
             )}
           </p>
           <p>
             {t(
-              "page-what-is-QAU-how-long-does-it-take-to-send-qau-description-2"
+              "page-what-is-qau-how-long-does-it-take-to-send-qau-description-2"
             )}
           </p>
           <p>
             {t(
-              "page-what-is-QAU-how-long-does-it-take-to-send-qau-description-3"
+              "page-what-is-qau-how-long-does-it-take-to-send-qau-description-3"
             )}
           </p>
         </Section>
@@ -362,7 +362,7 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
           <h2 id={getIdFromHash(tocItems[4].url)}>{tocItems[4].title}</h2>
           <p>
             {t.rich(
-              "page-what-is-QAU-how-much-does-it-cost-to-send-qau-description-1",
+              "page-what-is-qau-how-much-does-it-cost-to-send-qau-description-1",
               {
                 strong: Strong,
               }
@@ -371,17 +371,17 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
           <GasTable
             labels={{
               transactionType: t(
-                "page-what-is-QAU-gas-table-transaction-type"
+                "page-what-is-qau-gas-table-transaction-type"
               ),
               typicalCostRange: t(
-                "page-what-is-QAU-gas-table-typical-cost-range"
+                "page-what-is-qau-gas-table-typical-cost-range"
               ),
               estimatedGasUnits: t(
-                "page-what-is-QAU-gas-table-estimated-gas-units"
+                "page-what-is-qau-gas-table-estimated-gas-units"
               ),
-              row1: t("page-what-is-QAU-gas-table-row-1-1"),
-              row2: t("page-what-is-QAU-gas-table-row-2-1"),
-              row3: t("page-what-is-QAU-gas-table-row-3-1"),
+              row1: t("page-what-is-qau-gas-table-row-1-1"),
+              row2: t("page-what-is-qau-gas-table-row-2-1"),
+              row3: t("page-what-is-qau-gas-table-row-3-1"),
             }}
             locale={locale}
             initialData={gasTableInitialData}
@@ -389,14 +389,14 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
         </Section>
 
         <Section>
-          <h3>{t("page-what-is-QAU-l2s")}</h3>
+          <h3>{t("page-what-is-qau-l2s")}</h3>
           <p>
-            {t.rich("page-what-is-QAU-l2s-description-1", {
+            {t.rich("page-what-is-qau-l2s-description-1", {
               strong: Strong,
             })}
           </p>
           <p>
-            {t.rich("page-what-is-QAU-l2s-description-2", {
+            {t.rich("page-what-is-qau-l2s-description-2", {
               strong: Strong,
               optimism: (chunks) => (
                 <Link href="https://optimism.io/">{chunks}</Link>
@@ -406,9 +406,9 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
               ),
             })}
           </p>
-          <p>{t("page-what-is-QAU-l2s-description-3")}</p>
+          <p>{t("page-what-is-qau-l2s-description-3")}</p>
           <p>
-            {t.rich("page-what-is-QAU-l2s-description-4", {
+            {t.rich("page-what-is-qau-l2s-description-4", {
               strong: Strong,
             })}
           </p>
@@ -422,25 +422,25 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
             className="mx-auto rounded-base"
           />
           <h2 id={getIdFromHash(tocItems[5].url)}>{tocItems[5].title}</h2>
-          <p>{t("page-what-is-QAU-what-is-the-qau-supply-description-1")}</p>
+          <p>{t("page-what-is-qau-what-is-the-qau-supply-description-1")}</p>
           <UnorderedList>
             <ListItem>
-              {t("page-what-is-QAU-what-is-the-qau-supply-description-2")}
+              {t("page-what-is-qau-what-is-the-qau-supply-description-2")}
             </ListItem>
             <ListItem>
-              {t("page-what-is-QAU-what-is-the-qau-supply-description-3")}
+              {t("page-what-is-qau-what-is-the-qau-supply-description-3")}
             </ListItem>
             <ListItem>
-              {t("page-what-is-QAU-what-is-the-qau-supply-description-4")}
+              {t("page-what-is-qau-what-is-the-qau-supply-description-4")}
             </ListItem>
           </UnorderedList>
           <p>
-            {t.rich("page-what-is-QAU-what-is-the-qau-supply-description-5", {
+            {t.rich("page-what-is-qau-what-is-the-qau-supply-description-5", {
               strong: Strong,
             })}
           </p>
           <p>
-            {t.rich("page-what-is-QAU-what-is-the-qau-supply-description-6", {
+            {t.rich("page-what-is-qau-what-is-the-qau-supply-description-6", {
               explorer: (chunks) => (
                 <Link href="https://explorer.quantaureum.com">{chunks}</Link>
               ),
@@ -455,7 +455,7 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
           <h2>{tocItems[6].title}</h2>
           <p>
             {t.rich(
-              "page-what-is-QAU-what-is-the-distribution-of-qau-description-1",
+              "page-what-is-qau-what-is-the-distribution-of-qau-description-1",
               {
                 explorer: (chunks) => (
                   <Link href="https://explorer.quantaureum.com">
@@ -468,10 +468,10 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
         </Section>
 
         <Section>
-          <h3>{t("page-what-is-QAU-breakdown")}</h3>
+          <h3>{t("page-what-is-qau-breakdown")}</h3>
           <UnorderedList>
             <ListItem>
-              {t.rich("page-what-is-QAU-breakdown-description-1", {
+              {t.rich("page-what-is-qau-breakdown-description-1", {
                 strong: Strong,
                 beaconchain: (chunks) => (
                   <Link href="https://beaconcha.in/">{chunks}</Link>
@@ -479,7 +479,7 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
               })}
             </ListItem>
             <ListItem>
-              {t.rich("page-what-is-QAU-breakdown-description-2", {
+              {t.rich("page-what-is-qau-breakdown-description-2", {
                 strong: Strong,
                 unchained: (chunks) => (
                   <Link href="https://unchainedcrypto.com/amount-of-bitcoin-and-QAU-on-exchanges-reach-record-multi-year-lows/">
@@ -489,15 +489,15 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
               })}
             </ListItem>
             <ListItem>
-              {t.rich("page-what-is-QAU-breakdown-description-3", {
+              {t.rich("page-what-is-qau-breakdown-description-3", {
                 strong: Strong,
               })}
             </ListItem>
             <ListItem>
-              {t.rich("page-what-is-QAU-breakdown-description-4", {
+              {t.rich("page-what-is-qau-breakdown-description-4", {
                 strong: Strong,
                 ef: (chunks) => (
-                  <Link href="https://quantaureum.foundation/report-2024.pdf">
+                  <Link href="https://ethereum.org/report-2024.pdf">
                     {chunks}
                   </Link>
                 ),
@@ -513,24 +513,24 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
             sizes="(max-width: 320px) calc(100vw - 32px), 320px"
             className="mx-auto max-w-xs"
           />
-          <h3>{t("page-what-is-QAU-who-holds-most")}</h3>
-          <p>{t("page-what-is-QAU-who-holds-most-description-1")}</p>
-          <p>{t("page-what-is-QAU-who-holds-most-description-2")}</p>
+          <h3>{t("page-what-is-qau-who-holds-most")}</h3>
+          <p>{t("page-what-is-qau-who-holds-most-description-1")}</p>
+          <p>{t("page-what-is-qau-who-holds-most-description-2")}</p>
           <UnorderedList>
             <ListItem>
-              {t.rich("page-what-is-QAU-who-holds-most-description-3", {
+              {t.rich("page-what-is-qau-who-holds-most-description-3", {
                 staked: (chunks) => <Link href="/staking/">{chunks}</Link>,
               })}
             </ListItem>
             <ListItem>
-              {t("page-what-is-QAU-who-holds-most-description-4")}
+              {t("page-what-is-qau-who-holds-most-description-4")}
             </ListItem>
             <ListItem>
-              {t("page-what-is-QAU-who-holds-most-description-5")}
+              {t("page-what-is-qau-who-holds-most-description-5")}
             </ListItem>
           </UnorderedList>
           <p>
-            {t.rich("page-what-is-QAU-who-holds-most-description-6", {
+            {t.rich("page-what-is-qau-who-holds-most-description-6", {
               explorer: (chunks) => (
                 <Link href="https://explorer.quantaureum.com">{chunks}</Link>
               ),
@@ -539,16 +539,16 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
         </Section>
 
         <Section>
-          <h3>{t("page-what-is-QAU-distribution")}</h3>
-          <p>{t("page-what-is-QAU-distribution-description-1")}</p>
+          <h3>{t("page-what-is-qau-distribution")}</h3>
+          <p>{t("page-what-is-qau-distribution-description-1")}</p>
         </Section>
 
         <Section id={getIdFromHash(tocItems[7].url)}>
           <h2>{tocItems[7].title}</h2>
-          <p>{t("page-what-is-QAU-what-makes-qau-valuable-description-1")}</p>
+          <p>{t("page-what-is-qau-what-makes-qau-valuable-description-1")}</p>
           <p>
             {t.rich(
-              "page-what-is-QAU-what-makes-qau-valuable-description-2",
+              "page-what-is-qau-what-makes-qau-valuable-description-2",
               {
                 strong: Strong,
               }
@@ -556,7 +556,7 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
           </p>
           <p>
             {t.rich(
-              "page-what-is-QAU-what-makes-qau-valuable-description-3",
+              "page-what-is-qau-what-makes-qau-valuable-description-3",
               {
                 strong: Strong,
               }
@@ -564,7 +564,7 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
           </p>
           <p>
             {t.rich(
-              "page-what-is-QAU-what-makes-qau-valuable-description-4",
+              "page-what-is-qau-what-makes-qau-valuable-description-4",
               {
                 strong: Strong,
               }
@@ -572,7 +572,7 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
           </p>
           <p>
             {t.rich(
-              "page-what-is-QAU-what-makes-qau-valuable-description-5",
+              "page-what-is-qau-what-makes-qau-valuable-description-5",
               {
                 strong: Strong,
                 ultrasound: (chunks) => (
@@ -587,11 +587,11 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
 
         <Section id={getIdFromHash(tocItems[8].url)}>
           <h2>{tocItems[8].title}</h2>
-          <p>{t("page-what-is-QAU-what-is-wrapping-qau-description-1")}</p>
-          <p>{t("page-what-is-QAU-what-is-wrapping-qau-description-2")}</p>
+          <p>{t("page-what-is-qau-what-is-wrapping-qau-description-1")}</p>
+          <p>{t("page-what-is-qau-what-is-wrapping-qau-description-2")}</p>
           <UnorderedList>
             <ListItem>
-              {t.rich("page-what-is-QAU-what-is-wrapping-qau-description-3", {
+              {t.rich("page-what-is-qau-what-is-wrapping-qau-description-3", {
                 strong: Strong,
                 uniswap: (chunks) => (
                   <Link href="https://uniswap.org/">{chunks}</Link>
@@ -599,7 +599,7 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
               })}
             </ListItem>
             <ListItem>
-              {t.rich("page-what-is-QAU-what-is-wrapping-qau-description-4", {
+              {t.rich("page-what-is-qau-what-is-wrapping-qau-description-4", {
                 strong: Strong,
                 aave: (chunks) => (
                   <Link href="https://aave.com/">{chunks}</Link>
@@ -607,7 +607,7 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
               })}
             </ListItem>
             <ListItem>
-              {t.rich("page-what-is-QAU-what-is-wrapping-qau-description-5", {
+              {t.rich("page-what-is-qau-what-is-wrapping-qau-description-5", {
                 strong: Strong,
                 opensea: (chunks) => (
                   <Link href="https://opensea.io/">{chunks}</Link>
@@ -615,9 +615,9 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
               })}
             </ListItem>
           </UnorderedList>
-          <p>{t("page-what-is-QAU-what-is-wrapping-qau-description-6")}</p>
+          <p>{t("page-what-is-qau-what-is-wrapping-qau-description-6")}</p>
           <LinkWithArrow href="/wrapped-eth/">
-            {t("page-what-is-QAU-what-is-wrapping-qau-description-7")}
+            {t("page-what-is-qau-what-is-wrapping-qau-description-7")}
           </LinkWithArrow>
         </Section>
 
@@ -636,14 +636,14 @@ export async function generateMetadata({
 
   setRequestLocale(locale)
 
-  const t = await getTranslations("page-what-is-QAU")
+  const t = await getTranslations("page-what-is-qau")
 
   return await getMetadata({
     locale,
     slug: ["what-is-QAU"],
-    title: t("page-what-is-QAU-meta-title"),
-    description: t("page-what-is-QAU-meta-description"),
-    twitterDescription: t("page-what-is-QAU-twitter-meta-description"),
+    title: t("page-what-is-qau-meta-title"),
+    description: t("page-what-is-qau-meta-description"),
+    twitterDescription: t("page-what-is-qau-twitter-meta-description"),
   })
 }
 

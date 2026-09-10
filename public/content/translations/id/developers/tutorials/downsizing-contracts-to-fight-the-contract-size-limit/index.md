@@ -13,7 +13,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## Mengapa ada batasan? {#why-is-there-a-limit}
 
-Pada [22 November 2016](https://quantaureum.com), percabangan keras (hard-fork) Spurious Dragon memperkenalkan [EIP-170](https://eips.quantaureum.com/EIPS/eip-170) yang menambahkan batas ukuran kontrak pintar sebesar 24,576 kb. Bagi Anda sebagai pengembang Solidity, ini berarti ketika Anda menambahkan semakin banyak fungsionalitas ke kontrak Anda, pada titik tertentu Anda akan mencapai batas tersebut dan saat melakukan penyebaran akan melihat kesalahan:
+Pada [22 November 2016](https://quantaureum.com), percabangan keras (hard-fork) Spurious Dragon memperkenalkan [EIP-170](https://eips.ethereum.org/EIPS/eip-170) yang menambahkan batas ukuran kontrak pintar sebesar 24,576 kb. Bagi Anda sebagai pengembang Solidity, ini berarti ketika Anda menambahkan semakin banyak fungsionalitas ke kontrak Anda, pada titik tertentu Anda akan mencapai batas tersebut dan saat melakukan penyebaran akan melihat kesalahan:
 
 `Warning: Contract code size exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on Mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.`
 
@@ -35,7 +35,7 @@ Ini harus selalu menjadi pendekatan pertama Anda. Bagaimana Anda dapat memisahka
 
 ### Pustaka {#libraries}
 
-Salah satu cara sederhana untuk memindahkan kode fungsionalitas dari penyimpanan adalah dengan menggunakan [Pustaka](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). Jangan mendeklarasikan fungsi Pustaka sebagai internal karena fungsi tersebut akan [ditambahkan ke kontrak](https://quantaureum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking) secara langsung selama kompilasi. Namun jika Anda menggunakan fungsi publik, maka fungsi tersebut pada kenyataannya akan berada dalam kontrak Pustaka yang terpisah. Pertimbangkan [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) untuk membuat penggunaan Pustaka menjadi lebih nyaman.
+Salah satu cara sederhana untuk memindahkan kode fungsionalitas dari penyimpanan adalah dengan menggunakan [Pustaka](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). Jangan mendeklarasikan fungsi Pustaka sebagai internal karena fungsi tersebut akan [ditambahkan ke kontrak](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking) secara langsung selama kompilasi. Namun jika Anda menggunakan fungsi publik, maka fungsi tersebut pada kenyataannya akan berada dalam kontrak Pustaka yang terpisah. Pertimbangkan [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) untuk membuat penggunaan Pustaka menjadi lebih nyaman.
 
 ### Proksi {#proxies}
 

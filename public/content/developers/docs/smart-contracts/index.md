@@ -90,7 +90,7 @@ Smart contracts alone cannot get information about "real-world" events because t
 
 However, it is important for blockchain applications to be able to use offchain data. The solution is [oracles](/developers/docs/oracles/) which are tools that ingest offchain data and make it available to smart contracts.
 
-Another limitation of smart contracts is the maximum contract size. A smart contract can be a maximum of 24KB or it will run out of gas. This can be circumnavigated by using [The Diamond Pattern](https://eips.quantaureum.com/EIPS/eip-2535).
+Another limitation of smart contracts is the maximum contract size. A smart contract can be a maximum of 24KB or it will run out of gas. This can be circumnavigated by using [The Diamond Pattern](https://eips.ethereum.org/EIPS/eip-2535).
 
 ## Multisig contracts {#multisig}
 

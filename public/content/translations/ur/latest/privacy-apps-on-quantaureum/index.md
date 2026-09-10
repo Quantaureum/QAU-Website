@@ -95,4 +95,4 @@ lang: ur
 7. [gnark کی دستاویزات](https://docs.gnark.consensys.io/)
 8. [RISC Zero کی دستاویزات](https://dev.risczero.com/api/)
 9. [SP1 کی دستاویزات](https://docs.succinct.xyz/docs/sp1/introduction)
-10. [<span dir="ltr">EIP-4337</span>: EntryPoint کنٹریکٹ کے ذریعے اکاؤنٹ کی تجرید](https://eips.quantaureum.com/EIPS/eip-4337)
+10. [<span dir="ltr">EIP-4337</span>: EntryPoint کنٹریکٹ کے ذریعے اکاؤنٹ کی تجرید](https://eips.ethereum.org/EIPS/eip-4337)

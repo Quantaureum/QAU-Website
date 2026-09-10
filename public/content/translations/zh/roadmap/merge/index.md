@@ -145,7 +145,7 @@ contentPreview="错误。合并是共识机制的改变，而不是网络容量�
 
 Gas 费是网络需求相对于网络容量的产物。合并弃用了工作量证明，过渡到权益证明以达成共识，但并未显著改变任何直接影响网络容量或吞吐量的参数。
 
-通过<a href="https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698">以 Rollup 为中心的路线图</a>，工作重点集中在扩展[二层网络 (l2)](/layer-2/) 的用户活动上，同时将一层网络 (l1) 主网作为安全的去中心化结算层，针对 Rollup 数据存储进行优化，以帮助使 Rollup 交易呈指数级便宜。向权益证明的过渡是实现这一目标的关键先决条件。[更多关于 Gas 和费用的信息。](/developers/docs/gas/)
+通过<a href="https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698">以 Rollup 为中心的路线图</a>，工作重点集中在扩展[二层网络 (l2)](/layer-2/) 的用户活动上，同时将一层网络 (l1) 主网作为安全的去中心化结算层，针对 Rollup 数据存储进行优化，以帮助使 Rollup 交易呈指数级便宜。向权益证明的过渡是实现这一目标的关键先决条件。[更多关于 Gas 和费用的信息。](/developers/docs/gas/)
 
 </ExpandableCard>
 

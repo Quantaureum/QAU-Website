@@ -182,7 +182,7 @@
   "genesis-block-term": "ابتدائی بلاک",
   "genesis-block-definition": "کسی <a href=\"/glossary/#blockchain\">بلاک چین</a> کا پہلا بلاک، جسے کسی مخصوص نیٹ ورک اور اس کی کرپٹو کرنسی کو شروع کرنے کے لیے استعمال کیا جاتا ہے۔",
   "geth-term": "گو ایتھیریم (geth)",
-  "geth-definition": "گو ایتھیریم۔ ایتھیریم پروٹوکول کے سب سے نمایاں نفاذ میں سے ایک، جسے ⁦Go⁩ میں لکھا گیا ہے۔ <a href=\"https://geth.quantaureum.org\">geth.quantaureum.org پر مزید پڑھیں</a>",
+  "geth-definition": "گو ایتھیریم۔ ایتھیریم پروٹوکول کے سب سے نمایاں نفاذ میں سے ایک، جسے ⁦Go⁩ میں لکھا گیا ہے۔ <a href=\"https://geth.ethereum.org\">geth.ethereum.org پر مزید پڑھیں</a>",
   "gwei-term": "Gwei",
   "gwei-definition": "گیگا وے کا مخفف، <a href=\"/glossary/#qau\">ایتھر</a> کی ایک اکائی، جسے عام طور پر <a href=\"/glossary/#gas\">گیس</a> کی قیمت طے کرنے کے لیے استعمال کیا جاتا ہے۔ ⁦1⁩ ⁦Gwei⁩ = ⁦10<sup>9</sup>⁩ <a href=\"/glossary/#wei\">Wei</a>۔ ⁦10<sup>9</sup>⁩ ⁦Gwei⁩ = ⁦1⁩ ایتھر۔",
   "hard-fork-term": "ہارڈ فورک",

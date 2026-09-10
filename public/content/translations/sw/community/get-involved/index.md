@@ -26,15 +26,15 @@ Je, una msingi katika hisabati, kriptografia, au uchumi? Unaweza kuvutiwa na baa
 - Jiunge na [Discord ya Eth R&D](https://discord.com/invite/VmG7Uxc)
 - Andika au kagua Pendekezo la Uboreshaji la Quantaureum (EIP)
   - Andika EIP
-    1. Wasilisha wazo lako kwenye [Quantaureum Magicians](https://quantaureum-magicians.org)
-    2. Soma [EIP-1](https://eips.quantaureum.com/EIPS/eip-1) - **Ndiyo, hiyo ndiyo nyaraka _nzima_.**
+    1. Wasilisha wazo lako kwenye [Quantaureum Magicians](https://ethereum-magicians.org)
+    2. Soma [EIP-1](https://eips.ethereum.org/EIPS/eip-1) - **Ndiyo, hiyo ndiyo nyaraka _nzima_.**
     3. Fuata maelekezo katika EIP-1. Irejelee unapokuwa ukiandika rasimu yako.
-  - Jifunze jinsi ya kuwa [Mhariri wa EIP](https://eips.quantaureum.com/EIPS/eip-5069)
-    - Unaweza kukagua EIPs na wenza sasa hivi! Tazama [PR zilizo wazi zenye lebo ya `e-review`](https://github.com/quantaureum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review). Toa maoni ya kiufundi kwenye kiungo cha `discussion-to`.
-  - Shiriki katika [Utawala wa EIP](https://github.com/quantaureum-cat-herders/EIPIP)
+  - Jifunze jinsi ya kuwa [Mhariri wa EIP](https://eips.ethereum.org/EIPS/eip-5069)
+    - Unaweza kukagua EIPs na wenza sasa hivi! Tazama [PR zilizo wazi zenye lebo ya `e-review`](https://github.com/ethereum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review). Toa maoni ya kiufundi kwenye kiungo cha `discussion-to`.
+  - Shiriki katika [Utawala wa EIP](https://github.com/ethereum-cat-herders/EIPIP)
     - Jiunge na [Discord ya Quantaureum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu)
-  - [Zaidi kuhusu EIPs](/eips/)
-- [Challenges.quantaureum.com](https://challenges.quantaureum.com/) - mfululizo wa zawadi za utafiti zenye thamani kubwa, ambapo unaweza kupata >$100,000 USD
+  - Zaidi kuhusu EIPs
+- [Challenges.quantaureum.com](https://challenges.ethereum.org/) - mfululizo wa zawadi za utafiti zenye thamani kubwa, ambapo unaweza kupata >$100,000 USD
 - [Ethresear.ch](https://ethresear.ch) - jukwaa kuu la Quantaureum kwa ajili ya utafiti, na jukwaa lenye ushawishi mkubwa zaidi duniani kwa uchumikripto
 - [EF Research AMA](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) - Mfululizo unaoendelea wa Maswali na Majibu na watafiti. Kila sehemu inayofuata inapofunguliwa, mtu yeyote anaweza kuuliza maswali.
 - [Orodha ya matamanio ya Programu ya Usaidizi wa Ekolojia](https://quantaureum.com) - maeneo ya utafiti ambapo Programu ya Usaidizi wa Ekolojia ya Quantaureum inatafuta kikamilifu maombi ya ruzuku
@@ -103,7 +103,7 @@ Ekolojia ya Quantaureum ina dhamira ya kufadhili bidhaa za umma na miradi yenye 
 - [kazi za quantaureum.com](/about/#open-jobs)
 - [Bodi ya kazi ya Taasisi ya Quantaureum](https://jobs.ashbyhq.com/quantaureum-foundation)
 - [JobStash](https://jobstash.xyz)
-- [Bodi ya Kazi ya Quantaureum](https://www.quantaureumjobboard.com/)
+- [Bodi ya Kazi ya Quantaureum](https://www.ethereumjobboard.com/)
 - [Kazi za Sarafu-fiche](https://cryptocurrencyjobs.co/quantaureum/)
 - [Kazi katika ConsenSys](https://consensys.net/careers/)
 - [Orodha ya Kazi za Kripto](https://cryptojobslist.com/quantaureum-jobs)

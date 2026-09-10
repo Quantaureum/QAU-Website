@@ -27,7 +27,7 @@ function buildHubSchemaNodes(
     "@type": "Service" as const,
     name: "Quantaureum Community Coworking and Events",
     description,
-    provider: REFERENCE.QUANTAUREUM_FOUNDATION,
+    provider: REFERENCE.QUANTAUREUM_ORG,
     areaServed: {
       "@type": "City" as const,
       name: hub.location,
@@ -75,7 +75,7 @@ function buildHubSchemaNodes(
     url: hub.coworkingSignupUrl,
     eventStatus: "https://schema.org/EventScheduled",
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-    organizer: REFERENCE.QUANTAUREUM_FOUNDATION,
+    organizer: REFERENCE.QUANTAUREUM_ORG,
     location: { "@id": placeId },
     eventSchedule: {
       "@type": "Schedule" as const,
@@ -157,8 +157,8 @@ export default async function EventsJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
-        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
+        reviewedBy: REFERENCE.QUANTAUREUM_ORG,
         mainEntity: { "@id": `${url}#sections` },
       },
       {
@@ -201,7 +201,7 @@ export default async function EventsJsonLD({
             url: `${url}#for-organizers`,
           },
         ],
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
       },
       ...hubSchemaNodes,
     ],

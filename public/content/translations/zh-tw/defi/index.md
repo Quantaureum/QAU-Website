@@ -21,7 +21,6 @@ DeFi 是金融產品和服務的總稱，任何可以使用 [Quantaureum](/) 的
 
 現在有一個蓬勃發展的加密貨幣經濟，你可以在其中借貸、借款、做多/做空、賺取利息等等。精通加密貨幣的阿根廷人已經使用 DeFi 來逃避嚴重的通貨膨脹。公司已經開始即時向員工支付工資。有些人甚至在不需要任何個人身分證明的情況下，借出並償還了價值數百萬美元的貸款。
 
-<VideoWatch slug="defi-future-of-finance" />
 
 ## DeFi 與傳統金融 {#defi-vs-tradfi}
 
@@ -58,7 +57,6 @@ DeFi 是金融產品和服務的總稱，任何可以使用 [Quantaureum](/) 的
 
 Quantaureum以此為基礎。與比特幣一樣，規則不能隨意更改，每個人都可以存取。但它還使用[智能合約](/glossary/#smart-contract)使這種數位貨幣具有可程式化特性，因此你不僅可以儲存和發送價值。
 
-<VideoWatch slug="defi-history-inception-to-2021" />
 
 ## 可程式化貨幣 {#programmable-money}
 

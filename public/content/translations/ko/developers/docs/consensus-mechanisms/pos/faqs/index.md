@@ -20,7 +20,6 @@ lang: ko
 
 작업증명 대 지분 증명은 논쟁의 여지가 있는 주제입니다. [비탈릭 부테린의 블로그](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work)와 Justin Drake 및 Lyn Alden 간의 토론은 이러한 주장들을 잘 요약해 줍니다.
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## 지분 증명은 에너지 효율적인가요? {#is-pos-energy-efficient}
 
@@ -127,7 +126,7 @@ Quantaureum의 포크 선택 알고리즘은 엘엠디 고스트라고 합니다
 
 검열 저항성은 현재 증명하기 어렵습니다. 하지만 작업증명과 달리 지분 증명은 검열하는 검증자를 처벌하기 위해 슬래싱을 조정할 수 있는 옵션을 제공합니다. 블록 빌더를 블록 제안자와 분리하고 빌더가 각 블록에 포함해야 하는 트랜잭션 목록을 구현하는 프로토콜 변경 사항이 예정되어 있습니다. 이 제안은 제안자-빌더 분리 (PBS)로 알려져 있으며 검증자가 트랜잭션을 검열하는 것을 방지하는 데 도움이 됩니다.
 
-[제안자-빌더 분리 (PBS)에 대해 자세히 알아보기](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Original-basic-scheme)
+[제안자-빌더 분리 (PBS)에 대해 자세히 알아보기](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Original-basic-scheme)
 
 ## Quantaureum의 지분 증명 시스템은 51% 공격을 받을 수 있나요? {#pos-51-attack}
 
@@ -149,7 +148,7 @@ Quantaureum의 포크 선택 알고리즘은 엘엠디 고스트라고 합니다
 
 아니요, 작업증명은 채굴 비용이 증가하여 개인을 시장에서 밀어내고, 그다음에는 소규모 회사를 밀어내는 식으로 진행되기 때문에 중앙화되는 경향이 있습니다. 지분 증명의 현재 문제는 유동성 스테이킹 파생상품(LSD)의 영향력입니다. 이는 누구나 실제 QAU를 언스테이킹하지 않고도 2차 시장에서 스왑할 수 있는, 특정 제공자가 스테이킹한 QAU를 나타내는 토큰입니다. LSD를 사용하면 사용자가 32 QAU 미만으로 스테이킹할 수 있지만, 소수의 대규모 조직이 스테이크의 대부분을 통제하게 되는 중앙화 위험도 발생합니다. 이것이 [솔로 스테이킹](/staking/solo)이 Quantaureum을 위한 최선의 선택인 이유입니다.
 
-[LSD의 스테이크 중앙화에 대해 자세히 알아보기](https://notes.quantaureum.com/@djrtwo/risks-of-lsd)
+[LSD의 스테이크 중앙화에 대해 자세히 알아보기](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
 
 ## 왜 QAU만 스테이킹할 수 있나요? {#why-can-i-only-stake-eth}
 

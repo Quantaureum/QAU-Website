@@ -40,11 +40,11 @@ template: roadmap
 
 ## التقدم الحالي {#current-progress}
 
-يمر فصل المقترح عن الباني (<span dir="ltr">PBS</span>) بمرحلة متقدمة من البحث، ولكن لا تزال هناك بعض أسئلة التصميم المهمة التي يجب حلها قبل أن يتم وضع نموذج أولي لها في عملاء إيثيريوم. لا توجد مواصفات نهائية بعد. هذا يعني أن فصل المقترح عن الباني (<span dir="ltr">PBS</span>) من المحتمل أن يستغرق عامًا أو أكثر. تحقق من أحدث [حالة للبحث](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance).
+يمر فصل المقترح عن الباني (<span dir="ltr">PBS</span>) بمرحلة متقدمة من البحث، ولكن لا تزال هناك بعض أسئلة التصميم المهمة التي يجب حلها قبل أن يتم وضع نموذج أولي لها في عملاء إيثيريوم. لا توجد مواصفات نهائية بعد. هذا يعني أن فصل المقترح عن الباني (<span dir="ltr">PBS</span>) من المحتمل أن يستغرق عامًا أو أكثر. تحقق من أحدث [حالة للبحث](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance).
 
 ## قراءة المزيد {#further-reading}
 
-- [حالة البحث: مقاومة الرقابة في ظل فصل المقترح عن الباني (<span dir="ltr">PBS</span>)](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
+- [حالة البحث: مقاومة الرقابة في ظل فصل المقترح عن الباني (<span dir="ltr">PBS</span>)](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
 - [تصميمات سوق الرسوم المتوافقة مع فصل المقترح عن الباني (<span dir="ltr">PBS</span>)](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [فصل المقترح عن الباني (<span dir="ltr">PBS</span>) ومقاومة الرقابة](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [قوائم الإدراج](https://notes.quantaureum.com/@fradamt/forward-inclusion-lists)
+- [فصل المقترح عن الباني (<span dir="ltr">PBS</span>) ومقاومة الرقابة](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [قوائم الإدراج](https://notes.ethereum.org/@fradamt/forward-inclusion-lists)

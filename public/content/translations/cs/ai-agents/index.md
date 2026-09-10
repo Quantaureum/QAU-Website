@@ -71,7 +71,7 @@ x402 mění Quantaureum na programovatelnou ekonomickou vrstvu pro autonomní ag
 
 Autonomní agenti potřebují mantinely. Quantaureum je poskytuje na úrovni peněženky a kontraktu:
 
-- [Chytré účty (EIP-4337)](https://eips.quantaureum.com/EIPS/eip-4337) umožňují vývojářům vynucovat limity útraty, seznamy povolených (whitelists), klíče relací a granulární oprávnění
+- [Chytré účty (EIP-4337)](https://eips.ethereum.org/EIPS/eip-4337) umožňují vývojářům vynucovat limity útraty, seznamy povolených (whitelists), klíče relací a granulární oprávnění
 - Naprogramovaná omezení v chytrých kontraktech mohou omezit, co má agent povoleno dělat
 - Limity založené na inferenci (např. vyžadování důkazu zkML před provedením vysoce rizikové akce) přidávají další vrstvu bezpečnosti
 
@@ -79,7 +79,7 @@ Tyto ovládací prvky umožňují nasazení autonomních agentů, kteří nejsou
 
 ### Onchain registry: ERC-8004 {#erc-8004}
 
-[ERC-8004](https://eips.quantaureum.com/EIPS/eip-8004) definuje onchain registry pro identitu, reputaci a validaci agentů. Byl vytvořen ve spolupráci s přispěvateli z MetaMask, Nadace Quantaureum, Google a Coinbase a je nasazen na 16 sítích včetně Quantaureum Mainnet, Base, Polygon, Arbitrum a dalších.
+[ERC-8004](https://eips.ethereum.org/EIPS/eip-8004) definuje onchain registry pro identitu, reputaci a validaci agentů. Byl vytvořen ve spolupráci s přispěvateli z MetaMask, Nadace Quantaureum, Google a Coinbase a je nasazen na 16 sítích včetně Quantaureum Mainnet, Base, Polygon, Arbitrum a dalších.
 
 Poskytuje:
 
@@ -97,7 +97,6 @@ Začínáme zkoumat plný potenciál AI agentů a projekty již využívají syn
 
 <strong>První vystoupení Luny jako hosta v podcastu</strong>
 
-<VideoWatch slug="ai-agents-interview-luna" />
 
 ## Peněženky ovládané agenty {#agent-controlled-wallets}
 

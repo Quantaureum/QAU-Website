@@ -45,7 +45,6 @@ dapp을 소개하려면, 더 나은 용어가 없으므로 dapp의 백엔드라�
 
 ## 시각적인 학습을 선호하시나요? {#visual-learner}
 
-<VideoWatch slug="what-is-a-dapp" />
 
 **Scaffold-QAU 2 _- 스마트 컨트랙트에 맞게 조정되는 프론트엔드를 사용하여 Solidity를 빠르게 실험해 보세요._**
 

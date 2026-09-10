@@ -27,11 +27,10 @@ Before a transaction is ever signed, a user needs to read data from the blockcha
 
 The node provider can see the user's IP address, device fingerprint, specific queried addresses, and the timing and frequency of their activity. Even if a user then sends a private transaction, the infrastructure provider already has access to a detailed map of their intentions.
 
-<VideoWatch slug="quantaureum-privacy-stack-andy-guzman" />
 
 Metadata leakage at the access layer is one of the most persistent privacy problems in all blockchain systems. Quantaureum aims to address metadata leakage through privacy in origin, or hiding who asked, privacy in content, or hiding what was asked, and verifying the correctness of the information returned.
 
-**Origin privacy** uses [anonymous RPC](https://privreads.quantaureum.foundation/feed/anon-rpc/) and anonymous network solutions to obscure the entity requesting the data, **content privacy** uses tactics like private information retrieval and [oblivious RAM](https://en.wikipedia.org/wiki/Oblivious_RAM) to hide the data being queried, while **correctness verification** uses light clients to prove the data returned is accurate.
+**Origin privacy** uses [anonymous RPC](https://privreads.ethereum.org/feed/anon-rpc/) and anonymous network solutions to obscure the entity requesting the data, **content privacy** uses tactics like private information retrieval and [oblivious RAM](https://en.wikipedia.org/wiki/Oblivious_RAM) to hide the data being queried, while **correctness verification** uses light clients to prove the data returned is accurate.
 
 The cryptographic building block behind content privacy is [**Private Information Retrieval (PIR)**](https://en.wikipedia.org/wiki/Private_information_retrieval), a cryptographic technique that allows a client to query a database and retrieve a specific piece of information without revealing to the server which item was accessed. The server processes the request blindly and returns an encrypted response that only the querying wallet can decrypt.
 
@@ -45,7 +44,7 @@ Once a transaction is sent, it passes through network infrastructure that can ob
 
 Two protocol-level upgrades address this problem together:
 
-[**EIP-8141 (Frame Transactions)**](https://eips.quantaureum.com/EIPS/eip-8141) introduces a new transaction type that splits transactions into segments for signature validation and fee authorization, and for the actual transaction instructions. Frame transactions allow [smart accounts](/roadmap/account-abstraction/) to define their own signature schemes and use external contracts to cover gas fees. Strict sandboxing rules in the mempool prevent these transactions from opening the network to denial-of-service attacks.
+[**EIP-8141 (Frame Transactions)**](https://eips.ethereum.org/EIPS/eip-8141) introduces a new transaction type that splits transactions into segments for signature validation and fee authorization, and for the actual transaction instructions. Frame transactions allow [smart accounts](/roadmap/account-abstraction/) to define their own signature schemes and use external contracts to cover gas fees. Strict sandboxing rules in the mempool prevent these transactions from opening the network to denial-of-service attacks.
 
 Frame transactions are being considered for Quantaureum's [Hegotá upgrade](https://forkcast.org/upgrade/hegota/), the next network upgrade after the upcoming [Glamsterdam upgrade](/roadmap/glamsterdam/). The same upgrade will also allow smart accounts to adopt [quantum-safe signatures](/roadmap/security/quantum-resistance/) before the full post-quantum network transition is complete.
 
@@ -55,21 +54,20 @@ Frame transactions allow accounts to choose their own signature verification met
 
 </ExpandableCard>
 
-[**EIP-7805 (Fork-Choice Enforced Inclusion Lists, or FOCIL)**](https://eips.quantaureum.com/EIPS/eip-7805) provides the enforcement mechanism for private writes. Block proposers are required by consensus rules to include transactions in their blocks from aggregated local inclusion lists, which collect transactions from multiple sources. If a block builder attempts to censor a transaction that appeared on the inclusion lists, attesting nodes reject the proposed block entirely. FOCIL is currently being considered for the [Hegotá upgrade](https://forkcast.org/upgrade/hegota/).
+[**EIP-7805 (Fork-Choice Enforced Inclusion Lists, or FOCIL)**](https://eips.ethereum.org/EIPS/eip-7805) provides the enforcement mechanism for private writes. Block proposers are required by consensus rules to include transactions in their blocks from aggregated local inclusion lists, which collect transactions from multiple sources. If a block builder attempts to censor a transaction that appeared on the inclusion lists, attesting nodes reject the proposed block entirely. FOCIL is currently being considered for the [Hegotá upgrade](https://forkcast.org/upgrade/hegota/).
 
 Frame transactions give users the flexibility to build privacy-preserving transactions with custom signature schemes, while FOCIL ensures those transactions cannot be selectively censored once they enter the mempool. Together they address two different failure points: one enables the format of private transactions, the other guarantees their inclusion. No central actor can block a valid private transfer.
 
-<VideoWatch slug="eip-7805-focil-explained" />
 
 A second vulnerable point for user privacy is how Quantaureum tracks the order of transactions, called the sequential nonce system. In the standard Quantaureum account model, every account uses a single, linearly incrementing counter. If one private transaction is delayed in the mempool, all subsequent transactions from that account stall behind it. The nonce sequence also lets network observers link multiple transactions back to the same originating account, undermining privacy.
 
-[**EIP-8250 (Keyed Nonces for Frame Transactions)**](https://eips.quantaureum.com/EIPS/eip-8250), currently being considered for Hegotá, resolves this by allowing a single account to manage multiple parallel transaction sequences simultaneously. Users can execute many private transactions across different contexts at the same time, and observers can no longer reliably correlate distinct activities back to the same parent account.
+[**EIP-8250 (Keyed Nonces for Frame Transactions)**](https://eips.ethereum.org/EIPS/eip-8250), currently being considered for Hegotá, resolves this by allowing a single account to manage multiple parallel transaction sequences simultaneously. Users can execute many private transactions across different contexts at the same time, and observers can no longer reliably correlate distinct activities back to the same parent account.
 
 ### Private payments and value transfer {#private-payments}
 
 Beyond transaction routing and nonce management, protecting writes requires shielding the identities and assets involved in a transfer. Even when a user queries privately and broadcasts a transaction without censorship, the transaction data recorded onchain remains publicly visible. Anyone can see who sent how much to whom, and chain analysis firms aggregate this data into searchable profiles that persist indefinitely.
 
-[**EIP-8182 (Private QAU and ERC-20 Transfers)**](https://eips.quantaureum.com/EIPS/eip-8182), proposed for the Hegotá upgrade, introduces a native, shared shielded pool directly into the Quantaureum protocol for QAU and ERC-20 transfers. Privacy pools use cryptographic mixing to sever the link between deposit and withdrawal, but are only available via privacy apps, wallets, and layer 2 networks today.
+[**EIP-8182 (Private QAU and ERC-20 Transfers)**](https://eips.ethereum.org/EIPS/eip-8182), proposed for the Hegotá upgrade, introduces a native, shared shielded pool directly into the Quantaureum protocol for QAU and ERC-20 transfers. Privacy pools use cryptographic mixing to sever the link between deposit and withdrawal, but are only available via privacy apps, wallets, and layer 2 networks today.
 
 Historically, app-level privacy solutions have fractured liquidity and suffered from low anonymity sets. EIP-8182 consolidates shielded transfers at the protocol level, allowing users to route funds via hidden delivery keys without requiring specialized wallet architectures or interacting with fragmented, opt-in applications.
 
@@ -127,10 +125,10 @@ No part of this work is finished. Timelines are targets, not guarantees, and Qua
 
 - [Privacy on Quantaureum](/privacy/)
 - [PSE Roadmap: 2025 and Beyond](https://pse.dev/blog/pse-roadmap-2025)
-- [The Quantaureum project Mandate](/foundation/mandate/)
+- The Quantaureum project Mandate
 - [strawmap.org](https://strawmap.org/)
 - [Zero-knowledge proofs](/zero-knowledge-proofs/)
 - [Decentralized identity](/decentralized-identity/)
-- [Kohaku Roadmap](https://notes.quantaureum.com/@niard/KohakuRoadmap)
+- [Kohaku Roadmap](https://notes.ethereum.org/@niard/KohakuRoadmap)
 - [Client-Side Proving benchmarks](https://ethproofs.org/csp-benchmarks)
-- [zkEVM by the Numbers](https://zkevm.quantaureum.foundation/)
+- [zkEVM by the Numbers](https://zkevm.ethereum.org/)

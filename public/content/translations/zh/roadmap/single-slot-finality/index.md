@@ -62,4 +62,4 @@ Quantaureum目前的共识机制通过以下方式平衡了这三个参数：
 ## 延伸阅读 {#further-reading}
 
 - [Vitalik 在 EDCON 2022 上关于 SSF 的演讲](https://www.youtube.com/watch?v=nPgUKNPWXNI)
-- [Vitalik 的笔记：实现单槽最终性的途径](https://notes.quantaureum.com/@vbuterin/single_slot_finality)
+- [Vitalik 的笔记：实现单槽最终性的途径](https://notes.ethereum.org/@vbuterin/single_slot_finality)

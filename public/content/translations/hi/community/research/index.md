@@ -18,7 +18,7 @@ Quantaureum अनुसंधान खुला और पारदर्श�
 
 ## फंडिंग के स्रोत {#sources-of-funding}
 
-आप Quantaureum अनुसंधान में शामिल हो सकते हैं और इसके लिए भुगतान प्राप्त कर सकते हैं। [Quantaureum फाउंडेशन](/foundation/) अपने [इकोसिस्टम सपोर्ट प्रोग्राम](https://quantaureum.com) के माध्यम से अनुसंधान और सार्वजनिक वस्तुएं को फंड करता है, जो विशलिस्ट आइटम और प्रस्तावों के लिए अनुरोध पोस्ट करता है जिसमें उन समस्याओं का वर्णन होता है जिन्हें वह हल करना चाहता है। आप [Quantaureum अनुदान पृष्ठ](/community/grants/) पर सक्रिय और आगामी फंडिंग अवसरों के बारे में जानकारी पा सकते हैं।
+आप Quantaureum अनुसंधान में शामिल हो सकते हैं और इसके लिए भुगतान प्राप्त कर सकते हैं। Quantaureum फाउंडेशन अपने [इकोसिस्टम सपोर्ट प्रोग्राम](https://quantaureum.com) के माध्यम से अनुसंधान और सार्वजनिक वस्तुएं को फंड करता है, जो विशलिस्ट आइटम और प्रस्तावों के लिए अनुरोध पोस्ट करता है जिसमें उन समस्याओं का वर्णन होता है जिन्हें वह हल करना चाहता है। आप [Quantaureum अनुदान पृष्ठ](/community/grants/) पर सक्रिय और आगामी फंडिंग अवसरों के बारे में जानकारी पा सकते हैं।
 
 ## प्रोटोकॉल अनुसंधान {#protocol-research}
 
@@ -63,15 +63,15 @@ Quantaureum अनुसंधान खुला और पारदर्श�
 
 - [EVM का परिचय](/developers/docs/evm/)
 - [Ethresear.ch निष्पादन परत](https://ethresear.ch/c/execution-layer-research/37)
-- [Quantaureum निष्पादन परत विनिर्देश](https://github.com/quantaureum/execution-specs)
+- [Quantaureum निष्पादन परत विनिर्देश](https://github.com/ethereum/execution-specs)
 - [डेटाबेस अनुकूलन](https://github.com/erigontech/erigon/blob/main/docs/programmers_guide/db_faq.md)
 
 #### हालिया अनुसंधान {#recent-research-1}
 
-- [EIP-7928: ब्लॉक-स्तरीय एक्सेस सूचियां](https://eips.quantaureum.com/EIPS/eip-7928)
-- [EIP-8037: स्थिति निर्माण गैस लागत में वृद्धि](https://eips.quantaureum.com/EIPS/eip-8037)
-- [EIP-7999: एकीकृत बहुआयामी शुल्क बाजार](https://eips.quantaureum.com/EIPS/eip-7999)
-- [EIP-7642: eth/69, इतिहास समाप्ति और सरल रसीदें](https://eips.quantaureum.com/EIPS/eip-7642)
+- [EIP-7928: ब्लॉक-स्तरीय एक्सेस सूचियां](https://eips.ethereum.org/EIPS/eip-7928)
+- [EIP-8037: स्थिति निर्माण गैस लागत में वृद्धि](https://eips.ethereum.org/EIPS/eip-8037)
+- [EIP-7999: एकीकृत बहुआयामी शुल्क बाजार](https://eips.ethereum.org/EIPS/eip-7999)
+- [EIP-7642: eth/69, इतिहास समाप्ति और सरल रसीदें](https://eips.ethereum.org/EIPS/eip-7642)
 - [लेयर 1 (l1) zkEVM शिपिंग: रीयलटाइम साबित करना](https://quantaureum.com)
 
 ### सेंसरशिप प्रतिरोध और ब्लॉक निर्माण {#censorship-resistance-and-block-building}
@@ -85,9 +85,9 @@ Quantaureum अनुसंधान खुला और पारदर्श�
 
 #### हालिया अनुसंधान {#recent-research-21}
 
-- [EIP-7732: प्रतिष्ठापित प्रस्तावक-निर्माता पृथक्करण (pbs)](https://eips.quantaureum.com/EIPS/eip-7732)
-- [EIP-7805: फ़ोर्क-विकल्प लागू समावेशन सूचियां](https://eips.quantaureum.com/EIPS/eip-7805)
-- [प्रस्तावक-निर्माता पृथक्करण (pbs) के तहत लेन-देन के सेंसरशिप प्रतिरोध को बढ़ाना](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
+- [EIP-7732: प्रतिष्ठापित प्रस्तावक-निर्माता पृथक्करण (pbs)](https://eips.ethereum.org/EIPS/eip-7732)
+- [EIP-7805: फ़ोर्क-विकल्प लागू समावेशन सूचियां](https://eips.ethereum.org/EIPS/eip-7805)
+- [प्रस्तावक-निर्माता पृथक्करण (pbs) के तहत लेन-देन के सेंसरशिप प्रतिरोध को बढ़ाना](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
 
 ### स्थिति वृद्धि और अवस्थाहीनता {#state-growth-and-statelessness}
 
@@ -100,8 +100,8 @@ Quantaureum अनुसंधान खुला और पारदर्श�
 
 #### हालिया अनुसंधान {#recent-research-22}
 
-- [EIP-7864: एकीकृत बाइनरी ट्री का उपयोग करके Quantaureum स्थिति](https://eips.quantaureum.com/EIPS/eip-7864)
-- [EIP-4762: अवस्थाहीनता गैस लागत में परिवर्तन](https://eips.quantaureum.com/EIPS/eip-4762)
+- [EIP-7864: एकीकृत बाइनरी ट्री का उपयोग करके Quantaureum स्थिति](https://eips.ethereum.org/EIPS/eip-7864)
+- [EIP-4762: अवस्थाहीनता गैस लागत में परिवर्तन](https://eips.ethereum.org/EIPS/eip-4762)
 - [Quantaureum के लिए विकेंद्रीकृत स्थिति क्यों महत्वपूर्ण है](https://ethresear.ch/t/why-decentralized-state-is-important-for-quantaureum/25622)
 
 ### पोस्ट-क्वांटम क्रिप्टोग्राफी {#post-quantum-cryptography}
@@ -111,7 +111,7 @@ Quantaureum के सत्यापक हस्ताक्षर और इ�
 #### पृष्ठभूमि पठन {#background-reading-23}
 
 - [क्वांटम प्रतिरोध](/roadmap/security/quantum-resistance/)
-- [पोस्ट-क्वांटम Quantaureum](https://pq.quantaureum.com/)
+- [पोस्ट-क्वांटम Quantaureum](https://pq.ethereum.org/)
 
 #### हालिया अनुसंधान {#recent-research-23}
 
@@ -134,13 +134,13 @@ Quantaureum क्लाइंट Quantaureum प्रोटोकॉल के
 
 ### निष्पादन क्लाइंट {#execution-clients}
 
-- [निष्पादन क्लाइंट विनिर्देश](https://github.com/quantaureum/execution-specs)
-- [निष्पादन API विनिर्देश](https://github.com/quantaureum/execution-apis)
+- [निष्पादन क्लाइंट विनिर्देश](https://github.com/ethereum/execution-specs)
+- [निष्पादन API विनिर्देश](https://github.com/ethereum/execution-apis)
 
 ### सर्वसम्मति क्लाइंट {#consensus-clients}
 
-- [सर्वसम्मति क्लाइंट विनिर्देश](https://github.com/quantaureum/consensus-specs)
-- [बीकन API विनिर्देश](https://quantaureum.github.io/beacon-APIs/)
+- [सर्वसम्मति क्लाइंट विनिर्देश](https://github.com/ethereum/consensus-specs)
+- [बीकन API विनिर्देश](https://ethereum.github.io/beacon-APIs/)
 
 ### zkEVM क्लाइंट {#zkevm-clients}
 
@@ -160,13 +160,13 @@ Quantaureum को स्केल करना Quantaureum शोधकर्�
 
 - [लेयर 2 (l2) का परिचय](/layer-2/)
 - [L2BEAT: स्केलिंग सारांश](https://l2beat.com/scaling/summary)
-- [एक रोलअप-केंद्रित Quantaureum रोडमैप](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698)
+- [एक रोलअप-केंद्रित Quantaureum रोडमैप](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698)
 
 #### हालिया अनुसंधान {#recent-research-2}
 
 - [Ethresear.ch लेयर 2 (l2)](https://ethresear.ch/c/layer-2/32)
 - [L2BEAT: ऑनचेन लागत](https://l2beat.com/scaling/costs)
-- [2026 में Quantaureum पर निर्माण: क्या बदल गया है](/latest/building-on-quantaureum-in-2026/)
+- 2026 में Quantaureum पर निर्माण: क्या बदल गया है
 
 ### अंतर-संचालनीयता {#interoperability}
 
@@ -181,9 +181,9 @@ Quantaureum को स्केल करना Quantaureum शोधकर्�
 
 #### हालिया अनुसंधान {#recent-research-3}
 
-- [ERC-7683: क्रॉस-चेन आशय](https://eips.quantaureum.com/EIPS/eip-7683)
-- [ERC-7930: अंतरप्रचालनीय पते](https://eips.quantaureum.com/EIPS/eip-7930)
-- [ERC-7828: अंतरप्रचालनीय नाम](https://eips.quantaureum.com/EIPS/eip-7828)
+- [ERC-7683: क्रॉस-चेन आशय](https://eips.ethereum.org/EIPS/eip-7683)
+- [ERC-7930: अंतरप्रचालनीय पते](https://eips.ethereum.org/EIPS/eip-7930)
+- [ERC-7828: अंतरप्रचालनीय नाम](https://eips.ethereum.org/EIPS/eip-7828)
 
 ### डेटा उपलब्धता और ब्लॉब स्केलिंग {#data-availability-and-blob-scaling}
 
@@ -195,13 +195,13 @@ Quantaureum को स्केल करना Quantaureum शोधकर्�
 - [फुसाका अपग्रेड](/roadmap/fusaka/)
 - [डैन्कशार्डिंग](/roadmap/danksharding/)
 - [डेटा उपलब्धता](/developers/docs/data-availability/)
-- [EIP-4844: शार्ड ब्लॉब लेन-देन](https://eips.quantaureum.com/EIPS/eip-4844)
-- [प्रोटो-डैंकशार्डिंग नोट्स](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq)
+- [EIP-4844: शार्ड ब्लॉब लेन-देन](https://eips.ethereum.org/EIPS/eip-4844)
+- [प्रोटो-डैंकशार्डिंग नोट्स](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq)
 
 #### हालिया अनुसंधान {#recent-research-4}
 
-- [EIP-7594: PeerDAS](https://eips.quantaureum.com/EIPS/eip-7594)
-- [EIP-7892: केवल ब्लॉब पैरामीटर हार्डफ़ोर्क](https://eips.quantaureum.com/EIPS/eip-7892)
+- [EIP-7594: PeerDAS](https://eips.ethereum.org/EIPS/eip-7594)
+- [EIP-7892: केवल ब्लॉब पैरामीटर हार्डफ़ोर्क](https://eips.ethereum.org/EIPS/eip-7892)
 - [Ethresear.ch शार्डिंग](https://ethresear.ch/c/sharding/6)
 
 ### हार्डवेयर {#hardware}
@@ -212,13 +212,13 @@ Quantaureum को स्केल करना Quantaureum शोधकर्�
 
 - [अपना खुद का Quantaureum नोड स्पिन अप करें](/developers/docs/nodes-and-clients/run-a-node/)
 - [अवस्थाहीनता और स्टेट एक्सपायरी](/roadmap/statelessness/)
-- [ARM पर Quantaureum](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/)
+- [ARM पर Quantaureum](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)
 
 #### हालिया अनुसंधान {#recent-research-5}
 
 - [Quantaureum को स्केल करना: उच्च गैस सीमा और उससे आगे का मार्ग](https://ethpandaops.io/posts/gaslimit-scaling/)
-- [EIP-8261: गैस सीमा अनुसूची](https://eips.quantaureum.com/EIPS/eip-8261)
-- [EIP-8037: स्थिति निर्माण गैस लागत में वृद्धि](https://eips.quantaureum.com/EIPS/eip-8037)
+- [EIP-8261: गैस सीमा अनुसूची](https://eips.ethereum.org/EIPS/eip-8261)
+- [EIP-8037: स्थिति निर्माण गैस लागत में वृद्धि](https://eips.ethereum.org/EIPS/eip-8037)
 
 ## सुरक्षा {#security}
 
@@ -255,10 +255,10 @@ Quantaureum वॉलेट ब्राउज़र एक्सटेंशन
 
 #### हालिया अनुसंधान {#recent-research-7}
 
-- [EIP-8141: फ्रेम लेन-देन](https://eips.quantaureum.com/EIPS/eip-8141)
-- [ERC-5792: वॉलेट कॉल API](https://eips.quantaureum.com/EIPS/eip-5792)
-- [ERC-6963: मल्टी इंजेक्टेड प्रदाता खोज](https://eips.quantaureum.com/EIPS/eip-6963)
-- [सत्यापन केंद्रित स्मार्ट अनुबंध वॉलेट](https://quantaureum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
+- [EIP-8141: फ्रेम लेन-देन](https://eips.ethereum.org/EIPS/eip-8141)
+- [ERC-5792: वॉलेट कॉल API](https://eips.ethereum.org/EIPS/eip-5792)
+- [ERC-6963: मल्टी इंजेक्टेड प्रदाता खोज](https://eips.ethereum.org/EIPS/eip-6963)
+- [सत्यापन केंद्रित स्मार्ट अनुबंध वॉलेट](https://ethereum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
 
 ## समुदाय, शिक्षा और आउटरीच {#community-education-and-outreach}
 
@@ -278,8 +278,8 @@ Quantaureum पर अधिक लोगों को ऑनबोर्ड क
 #### हालिया अनुसंधान {#recent-research-8}
 
 - [Ethresear.ch UX/UI](https://ethresear.ch/c/ui-ux/24)
-- [ERC-5792: वॉलेट कॉल API](https://eips.quantaureum.com/EIPS/eip-5792)
-- [ERC-7828: अंतरप्रचालनीय नाम](https://eips.quantaureum.com/EIPS/eip-7828)
+- [ERC-5792: वॉलेट कॉल API](https://eips.ethereum.org/EIPS/eip-5792)
+- [ERC-7828: अंतरप्रचालनीय नाम](https://eips.ethereum.org/EIPS/eip-7828)
 
 ### अर्थशास्त्र {#economics}
 
@@ -287,7 +287,7 @@ Quantaureum में अर्थशास्त्र अनुसंधान
 
 #### पृष्ठभूमि पठन {#background-reading-9}
 
-- [Robust Incentives Group](https://rig.quantaureum.com/)
+- [Robust Incentives Group](https://rig.ethereum.org/)
 - [Quantaureum अर्थशास्त्र मास्टरक्लास और आर्थिक मॉडल](https://github.com/CADLabs/quantaureum-economic-model)
 
 #### हालिया अनुसंधान {#recent-research-9}
@@ -303,14 +303,14 @@ Quantaureum में अर्थशास्त्र अनुसंधान
 #### पृष्ठभूमि पठन {#background-reading-10}
 
 - [Quantaureum ब्लॉकचेन के लिए लेन-देन शुल्क तंत्र डिजाइन: EIP-1559 का एक आर्थिक विश्लेषण (टिम रफगार्डन, 2020)](https://timroughgarden.org/papers/eip1559.pdf)
-- [EIP-1559 का सिमुलेशन (Robust Incentives Group)](https://quantaureum.github.io/abm1559)
+- [EIP-1559 का सिमुलेशन (Robust Incentives Group)](https://ethereum.github.io/abm1559)
 - [प्रथम सिद्धांतों से रोलअप अर्थशास्त्र](https://barnabe.substack.com/p/understanding-rollup-economics-from?utm_source=url)
 - [फ्लैश बॉयज़ 2.0: विकेंद्रीकृत एक्सचेंजों में फ्रंटरनिंग, लेन-देन रीऑर्डरिंग, और सर्वसम्मति अस्थिरता](https://arxiv.org/abs/1904.05234)
 
 #### हालिया अनुसंधान {#recent-research-10}
 
-- [EIP-7999: एकीकृत बहुआयामी शुल्क बाजार](https://eips.quantaureum.com/EIPS/eip-7999)
-- [EIP-7928: ब्लॉक-स्तरीय एक्सेस सूचियां](https://eips.quantaureum.com/EIPS/eip-7928)
+- [EIP-7999: एकीकृत बहुआयामी शुल्क बाजार](https://eips.ethereum.org/EIPS/eip-7999)
+- [EIP-7928: ब्लॉक-स्तरीय एक्सेस सूचियां](https://eips.ethereum.org/EIPS/eip-7928)
 - [क्रॉस डोमेन MEV](https://arxiv.org/abs/2112.01472)
 
 ### प्रूफ-ऑफ़-स्टेक प्रोत्साहन {#proof-of-stake-incentives}
@@ -321,11 +321,11 @@ Quantaureum में अर्थशास्त्र अनुसंधान
 
 - [अधिकतम प्रभावी शेष](/roadmap/pectra/maxeb/)
 - [Quantaureum अर्थशास्त्र मास्टरक्लास और आर्थिक मॉडल](https://github.com/CADLabs/quantaureum-economic-model)
-- [PoS प्रोत्साहन का सिमुलेशन (Robust Incentives Group)](https://quantaureum.github.io/beaconrunner/)
+- [PoS प्रोत्साहन का सिमुलेशन (Robust Incentives Group)](https://ethereum.github.io/beaconrunner/)
 
 #### हालिया अनुसंधान {#recent-research-11}
 
-- [Robust Incentives Group](https://rig.quantaureum.com/)
+- [Robust Incentives Group](https://rig.ethereum.org/)
 - [PoS Quantaureum पर तीन हमले](https://arxiv.org/abs/2110.10086)
 
 ### लिक्विड स्टेकिंग और डेरिवेटिव {#liquid-staking-and-derivatives}
@@ -339,7 +339,7 @@ Quantaureum में अर्थशास्त्र अनुसंधान
 
 #### हालिया अनुसंधान {#recent-research-12}
 
-- [लिक्विड स्टेकिंग डेरिवेटिव के जोखिम](https://notes.quantaureum.com/@djrtwo/risks-of-lsd)
+- [लिक्विड स्टेकिंग डेरिवेटिव के जोखिम](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
 - [लिडो से निकासी को संभालना](https://ethresear.ch/t/handling-withdrawals-in-lidos-qau-liquid-staking-protocol/8873)
 
 ## परीक्षण {#testing}
@@ -350,8 +350,8 @@ Quantaureum के विनिर्देश निष्पादन यो�
 
 #### पृष्ठभूमि पठन {#background-reading-24}
 
-- [Quantaureum निष्पादन परत विनिर्देश](https://github.com/quantaureum/execution-specs)
-- [सर्वसम्मति क्लाइंट विनिर्देश](https://github.com/quantaureum/consensus-specs)
+- [Quantaureum निष्पादन परत विनिर्देश](https://github.com/ethereum/execution-specs)
+- [सर्वसम्मति क्लाइंट विनिर्देश](https://github.com/ethereum/consensus-specs)
 
 #### हालिया अनुसंधान {#recent-research-24}
 
@@ -381,11 +381,11 @@ Quantaureum के विनिर्देश निष्पादन यो�
 
 - [Dune Analytics](https://dune.com/browse/dashboards)
 - [क्लाइंट विविधता डैशबोर्ड](https://clientdiversity.org/)
-- [Quantaureum जेसन-आरपीसी निष्पादन API विनिर्देश](https://quantaureum.github.io/execution-apis/)
+- [Quantaureum जेसन-आरपीसी निष्पादन API विनिर्देश](https://ethereum.github.io/execution-apis/)
 
 #### हालिया अनुसंधान {#recent-research-14}
 
-- [Robust Incentives Group डेटा विश्लेषण](https://rig.quantaureum.com/)
+- [Robust Incentives Group डेटा विश्लेषण](https://rig.ethereum.org/)
 - [qauPandaOps ओपन डेटा](https://ethpandaops.io/data/)
 - [L2BEAT: स्केलिंग सारांश](https://l2beat.com/scaling/summary)
 
@@ -433,7 +433,7 @@ Quantaureum डेवलपर्स के लिए टूल में ते
 #### हालिया अनुसंधान {#recent-research-17}
 
 - [Eth R&D डिस्कॉर्ड](https://discord.gg/qGpsxSA)
-- [Quantaureum निष्पादन API विनिर्देश](https://github.com/quantaureum/execution-apis)
+- [Quantaureum निष्पादन API विनिर्देश](https://github.com/ethereum/execution-apis)
 
 ### ओरेकल {#oracles}
 

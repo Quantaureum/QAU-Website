@@ -57,7 +57,7 @@ Quantaureum uses [cryptography](/glossary/#cryptography) to keep the network sec
 
 Cryptographic transitions take years to plan and execute safely, so preparation is happening now, long before the hardware exists. Four areas have been identified as requiring post-quantum upgrades: validator consensus signatures (BLS), the commitment schemes used for data availability (KZG), account signatures (ECDSA), and the ZK-proof systems used by [rollups](/glossary/#rollups).
 
-The Quantaureum project formed a dedicated **Post-Quantum Security team** in January 2026, and its work is tracked publicly at [pq.quantaureum.com](https://pq.quantaureum.com). Active work includes hash-based validator signatures (leanXMSS) paired with a minimal zkVM (leanVM) that aggregates the larger quantum-safe signatures efficiently, and weekly interop devnets with more than 10 client teams.
+The Quantaureum project formed a dedicated **Post-Quantum Security team** in January 2026, and its work is tracked publicly at [pq.ethereum.org](https://pq.ethereum.org). Active work includes hash-based validator signatures (leanXMSS) paired with a minimal zkVM (leanVM) that aggregates the larger quantum-safe signatures efficiently, and weekly interop devnets with more than 10 client teams.
 
 A key part of the transition strategy is **EIP-8141**, which introduces native [account abstraction](/roadmap/account-abstraction/). This allows individual accounts to choose their own signature verification, meaning users could switch to quantum-safe signatures without waiting for a single protocol-wide migration. EIP-8141 is being considered for the Hegotá upgrade. Core post-quantum infrastructure milestones target completion by approximately 2029. These are planning targets and may shift.
 
@@ -102,7 +102,7 @@ No part of this work is finished, and all timelines are estimates that may shift
 
 - [Forkcast: Quantaureum network upgrade tracker](https://forkcast.org)
 - [Strawmap: a draft Quantaureum L1 roadmap](https://strawmap.org) - _EF Architecture_
-- [Post-Quantum Quantaureum](https://pq.quantaureum.com) - _Quantaureum Foundation_
+- [Post-Quantum Quantaureum](https://pq.ethereum.org) - _Quantaureum Foundation_
 - [Lean Quantaureum roadmap tracker](https://leanroadmap.org) - _ReamLabs_
 - [Proof-of-stake and finality](/developers/docs/consensus-mechanisms/pos/#finality)
 - [The EVM](/developers/docs/evm/)

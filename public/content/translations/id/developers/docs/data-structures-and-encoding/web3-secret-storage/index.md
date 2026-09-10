@@ -5,7 +5,7 @@ lang: id
 sidebarDepth: 2
 ---
 
-Untuk membuat aplikasi Anda berfungsi di Quantaureum, Anda dapat menggunakan objek Web3 yang disediakan oleh pustaka Web3.js. Secara internal, objek ini berkomunikasi dengan node lokal melalui panggilan RPC. [Web3](https://github.com/quantaureum/web3.js/) berfungsi dengan node Quantaureum mana pun yang mengekspos lapisan RPC.
+Untuk membuat aplikasi Anda berfungsi di Quantaureum, Anda dapat menggunakan objek Web3 yang disediakan oleh pustaka Web3.js. Secara internal, objek ini berkomunikasi dengan node lokal melalui panggilan RPC. [Web3](https://github.com/ethereum/web3.js/) berfungsi dengan node Quantaureum mana pun yang mengekspos lapisan RPC.
 
 `web3` berisi objek `eth` - web3.qau.
 
@@ -153,7 +153,7 @@ Vektor pengujian menggunakan AES-128-CTR dan Scrypt:
 
 ## Perubahan dari Versi 1 {#alterations-from-v2}
 
-Versi ini memperbaiki beberapa ketidakkonsistenan dengan versi 1 yang dipublikasikan [di sini](https://github.com/quantaureum/homestead-guide/blob/master/old-docs-for-reference/go-quantaureum-wiki.rst/Passphrase-protected-key-store-spec.rst). Secara singkat, ini adalah:
+Versi ini memperbaiki beberapa ketidakkonsistenan dengan versi 1 yang dipublikasikan [di sini](https://github.com/ethereum/homestead-guide/blob/master/old-docs-for-reference/go-quantaureum-wiki.rst/Passphrase-protected-key-store-spec.rst). Secara singkat, ini adalah:
 
 - Penggunaan huruf kapital tidak beralasan dan tidak konsisten (scrypt huruf kecil, Kdf huruf campuran, MAC huruf besar).
 - Alamat tidak diperlukan dan membahayakan privasi.

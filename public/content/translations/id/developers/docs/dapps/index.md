@@ -45,7 +45,6 @@ Kontrak pintar adalah kode yang hidup di rantai blok Quantaureum dan berjalan pe
 
 ## Lebih suka belajar secara visual? {#visual-learner}
 
-<VideoWatch slug="what-is-a-dapp" />
 
 ## Alat untuk membuat dapp
 

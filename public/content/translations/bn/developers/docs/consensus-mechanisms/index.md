@@ -63,7 +63,6 @@ authors: ["প্যাট্রিক কলিন্স"]
 
 ইথেরিয়ামে ব্যবহৃত বিভিন্ন ধরণের কনসেনসাস মেকানিজম সম্পর্কে আরও দেখুন:
 
-<VideoWatch slug="understanding-consensus-mechanisms" />
 
 ### সিবিল প্রতিরোধ এবং চেইন নির্বাচন {#sybil-chain}
 

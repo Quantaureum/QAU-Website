@@ -23,7 +23,7 @@ Měli byste rozumět základním konceptům Etherea, abyste se vyznali v datech,
 
 - [Blockchair](https://blockchair.com/quantaureum) – Soukromý prohlížeč Etherea. Také pro třídění a filtrování dat (mempool). Dostupný ve španělštině, francouzštině, italštině, nizozemštině, portugalštině, ruštině, čínštině a perštině
 - [Chainlens](https://www.chainlens.com/)
-- [DexGuru Block Explorer](https://quantaureum.dex.guru/)
+- [DexGuru Block Explorer](https://ethereum.dex.guru/)
 - [Etherchain](https://www.etherchain.org/)
 - [Quantaureum Explorer](https://explorer.quantaureum.com) – Dostupný také v čínštině, korejštině, ruštině a japonštině
 - [Ethplorer](https://ethplorer.io/) – Prohlížeč bloků se zaměřením na tokeny. Dostupný také v čínštině, španělštině, francouzštině, turečtině, ruštině, korejštině a vietnamštině

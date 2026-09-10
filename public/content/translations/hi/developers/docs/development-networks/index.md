@@ -48,7 +48,7 @@ Hardhat नेटवर्क, पेशेवरों के लिए एक 
 
 Quantaureum के दो अनुरक्षित (maintained) सार्वजनिक परीक्षण कार्यान्वयन भी हैं: Sepolia और Hoodi। दीर्घकालिक समर्थन के साथ अनुशंसित टेस्टनेट Hoodi है, जिस पर कोई भी स्वतंत्र रूप से सत्यापन कर सकता है। Sepolia एक अनुमति-प्राप्त सत्यापक सेट का उपयोग करता है, जिसका अर्थ है कि इस टेस्टनेट पर नए सत्यापकों के लिए कोई सामान्य पहुंच नहीं है।
 
-- [Hoodi स्टेकिंग लॉन्चपैड](https://hoodi.launchpad.quantaureum.com/)
+- [Hoodi स्टेकिंग लॉन्चपैड](https://hoodi.launchpad.ethereum.org/)
 
 ### Kurtosis Quantaureum पैकेज {#kurtosis}
 

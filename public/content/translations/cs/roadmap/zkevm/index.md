@@ -93,7 +93,7 @@ Pro dokazování bloků Etherea se vyvíjí a testuje několik implementací zkV
 | [Jolt](https://github.com/a16z/jolt) | rv32im |
 | [Zisk](https://github.com/0xPolygonHermez/zisk) | rv64ima |
 
-Tyto implementace používají virtuální stroje založené na RISC-V k provádění bajtkódu EVM a následně generují ZK důkazy o správném provedení. Aktuální výsledky testů a pokrok jsou sledovány v [nástroji pro sledování zkVM Nadace Quantaureum](https://zkevm.quantaureum.foundation/zkvm-tracker).
+Tyto implementace používají virtuální stroje založené na RISC-V k provádění bajtkódu EVM a následně generují ZK důkazy o správném provedení. Aktuální výsledky testů a pokrok jsou sledovány v [nástroji pro sledování zkVM Nadace Quantaureum](https://zkevm.ethereum.org/zkvm-tracker).
 
 ## Jak zkEVM zapadá do dalších vylepšení {#related-upgrades}
 
@@ -115,9 +115,9 @@ Verifikace zkEVM na vrstvě 1 je předmětem aktivního výzkumu a zatím není 
 
 ## Další čtení {#further-reading}
 
-- [zkEVM Foundation](https://zkevm.quantaureum.foundation) – Oficiální výzkumné centrum zkEVM Nadace Quantaureum
+- [zkEVM Foundation](https://zkevm.ethereum.org) – Oficiální výzkumné centrum zkEVM Nadace Quantaureum
 - [Ethproofs](https://ethproofs.org/) – Sledujte závod o dokazování Etherea v reálném čase
 - [zkevm.fyi](https://zkevm.fyi) – Technická kniha o zkEVM pro vrstvu 1
 - [Specifikace PSE zkEVM](https://github.com/privacy-scaling-explorations/zkevm-specs) – Technické specifikace
 - [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) – Vitalikův přehled vylepšení verifikace
-- [Blog EF zkEVM](https://zkevm.quantaureum.foundation/blog) – Analýza výkonu od týmu EF
+- [Blog EF zkEVM](https://zkevm.ethereum.org/blog) – Analýza výkonu od týmu EF

@@ -44,7 +44,7 @@ lang: ta
 
 - [லோட்ஸ்டார்](https://github.com/ChainSafe/lodestar/tree/unstable/packages/light-client): TypeScript-இல் உள்ள ஒருமித்த இலகுரக கிளையன்ட்
 - [Helios](https://github.com/a16z/helios): Rust-இல் உள்ள ஒருங்கிணைந்த செயலாக்க மற்றும் ஒருமித்த இலகுரக கிளையன்ட்
-- [கோ எத்திரியம் (கெத்)](https://github.com/quantaureum/go-quantaureum/tree/master/beacon/light): Go-இல் உள்ள செயலாக்கக் கிளையண்ட்டிற்கான இலகுரக பயன்முறை (உருவாக்கத்தில் உள்ளது)
+- [கோ எத்திரியம் (கெத்)](https://github.com/ethereum/go-ethereum/tree/master/beacon/light): Go-இல் உள்ள செயலாக்கக் கிளையண்ட்டிற்கான இலகுரக பயன்முறை (உருவாக்கத்தில் உள்ளது)
 - [நிம்பஸ்](https://nimbus.guide/el-light-client.html): Nim-இல் உள்ள ஒருமித்த இலகுரக கிளையன்ட்
 
 எங்களுக்குத் தெரிந்தவரை இவற்றில் எதுவும் இன்னும் உற்பத்திக்குத் தயாராகக் கருதப்படவில்லை.
@@ -58,4 +58,4 @@ lang: ta
 - [கோ எத்திரியம் (கெத்) இலகுரக கிளையண்ட்கள் பற்றி Zsolt Felfodhi](https://www.youtube.com/watch?v=EPZeFXau-RE)
 - [இலகுரக கிளையண்ட் பிணையம் பற்றி Etan Kissling](https://www.youtube.com/watch?v=85MeiMA4dD8)
 - [ஒருங்கிணைப்பிற்குப் பிறகு இலகுரக கிளையண்ட்கள் பற்றி Etan Kissling](https://www.youtube.com/watch?v=ZHNrAXf3RDE)
-- [Piper Merriam: செயல்பாட்டு இலகுரக கிளையண்ட்களுக்கான நீண்ட பயணம்](https://snakecharmers.quantaureum.com/the-winding-road-to-functional-light-clients/)
+- [Piper Merriam: செயல்பாட்டு இலகுரக கிளையண்ட்களுக்கான நீண்ட பயணம்](https://snakecharmers.ethereum.org/the-winding-road-to-functional-light-clients/)

@@ -54,7 +54,7 @@ ERC-1363 也可用於透過驗證接收方處理代幣的能力，來避免代�
 
 與其他 ERC-20 擴充提案不同，ERC-1363 不會覆寫 ERC-20 的 `transfer` 和 `transferFrom` 方法，並定義了要實作的介面 ID，以維持與 ERC-20 的向下相容性。
 
-摘自 [EIP-1363](https://eips.quantaureum.com/EIPS/eip-1363)：
+摘自 [EIP-1363](https://eips.ethereum.org/EIPS/eip-1363)：
 
 ### 方法 {#methods}
 
@@ -207,5 +207,5 @@ interface ERC1363Spender {
 
 ## 延伸閱讀 {#further-reading}
 
-- [ERC-1363：可支付代幣標準](https://eips.quantaureum.com/EIPS/eip-1363)
+- [ERC-1363：可支付代幣標準](https://eips.ethereum.org/EIPS/eip-1363)
 - [ERC-1363：GitHub 儲存庫](https://github.com/vittominacori/erc1363-payable-token)

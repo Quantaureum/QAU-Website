@@ -12,7 +12,7 @@ ERC-4626 यील्ड-बियरिंग (उपज देने वाल
 
 यील्ड-बियरिंग वॉल्ट में ERC-4626 अधिक सुसंगत और मजबूत कार्यान्वयन पैटर्न बनाकर एकीकरण के प्रयास को कम करेगा और डेवलपर्स के थोड़े से विशेष प्रयास के साथ विभिन्न एप्लिकेशन में यील्ड तक पहुंच को अनलॉक करेगा।
 
-ERC-4626 टोकन का पूरी तरह से [EIP-4626](https://eips.quantaureum.com/EIPS/eip-4626) में वर्णन किया गया है।
+ERC-4626 टोकन का पूरी तरह से [EIP-4626](https://eips.ethereum.org/EIPS/eip-4626) में वर्णन किया गया है।
 
 **एसिंक्रोनस वॉल्ट एक्सटेंशन (ERC-7540)**
 
@@ -28,7 +28,7 @@ ERC-7540 एसिंक्रोनस उपयोग के मामलो�
 
 ERC-7575, ERC-4626 कार्यान्वयन से ERC-20 टोकन कार्यान्वयन को बाहरी बनाकर कई एसेट वाले वॉल्ट के लिए समर्थन जोड़ता है।
 
-ERC-7575 एक्सटेंशन का पूरी तरह से [ERC-7575](https://eips.quantaureum.com/EIPS/eip-7575) में वर्णन किया गया है।
+ERC-7575 एक्सटेंशन का पूरी तरह से [ERC-7575](https://eips.ethereum.org/EIPS/eip-7575) में वर्णन किया गया है।
 ## पूर्वापेक्षाएँ {#prerequisites}
 
 इस पृष्ठ को बेहतर ढंग से समझने के लिए, हम अनुशंसा करते हैं कि आप पहले [टोकन मानकों](/developers/docs/standards/tokens/) और [ERC-20](/developers/docs/standards/tokens/erc-20/) के बारे में पढ़ें।
@@ -220,5 +220,5 @@ event Withdraw(
 
 ## आगे की जानकारी {#further-reading}
 
-- [EIP-4626: टोकनाइज़्ड वॉल्ट मानक](https://eips.quantaureum.com/EIPS/eip-4626)
+- [EIP-4626: टोकनाइज़्ड वॉल्ट मानक](https://eips.ethereum.org/EIPS/eip-4626)
 - [ERC-4626: GitHub रेपो](https://github.com/transmissions11/solmate/blob/main/src/tokens/ERC4626.sol)

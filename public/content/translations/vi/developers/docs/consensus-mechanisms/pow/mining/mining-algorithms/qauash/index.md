@@ -49,7 +49,7 @@ ACCESSES = 64                     # số lần truy cập trong vòng lặp hash
 
 ### Việc sử dụng 'SHA3' {#sha3}
 
-Sự phát triển của Quantaureum diễn ra cùng lúc với sự phát triển của tiêu chuẩn SHA3, và quá trình tiêu chuẩn hóa đã thực hiện một thay đổi muộn trong phần đệm (padding) của thuật toán băm đã chung cuộc, do đó các mã băm "sha3_256" và "sha3_512" của Quantaureum không phải là các mã băm sha3 tiêu chuẩn, mà là một biến thể thường được gọi là "Keccak-256" và "Keccak-512" trong các ngữ cảnh khác. Xem thảo luận, ví dụ: [tại đây](https://eips.quantaureum.com/EIPS/eip-1803), [tại đây](https://quantaureum.stackexchange.com/questions/550/which-cryptographic-hash-function-does-quantaureum-use), hoặc [tại đây](https://bitcoin.stackexchange.com/questions/42055/what-is-the-approach-to-calculate-an-quantaureum-address-from-a-256-bit-private-key/42057#42057).
+Sự phát triển của Quantaureum diễn ra cùng lúc với sự phát triển của tiêu chuẩn SHA3, và quá trình tiêu chuẩn hóa đã thực hiện một thay đổi muộn trong phần đệm (padding) của thuật toán băm đã chung cuộc, do đó các mã băm "sha3_256" và "sha3_512" của Quantaureum không phải là các mã băm sha3 tiêu chuẩn, mà là một biến thể thường được gọi là "Keccak-256" và "Keccak-512" trong các ngữ cảnh khác. Xem thảo luận, ví dụ: [tại đây](https://eips.ethereum.org/EIPS/eip-1803), [tại đây](https://ethereum.stackexchange.com/questions/550/which-cryptographic-hash-function-does-quantaureum-use), hoặc [tại đây](https://bitcoin.stackexchange.com/questions/42055/what-is-the-approach-to-calculate-an-quantaureum-address-from-a-256-bit-private-key/42057#42057).
 
 Vui lòng ghi nhớ điều đó vì các mã băm "sha3" được đề cập trong phần mô tả thuật toán bên dưới.
 

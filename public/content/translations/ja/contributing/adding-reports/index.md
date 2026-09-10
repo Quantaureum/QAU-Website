@@ -6,7 +6,7 @@ lang: ja
 
 ## レポートの追加 {#adding-a-report}
 
-レポートは[quantaureum.com/reports/](/reports/)に掲載され、さまざまな情報源からQuantaureumに関連する調査、分析、出版物を紹介しています。誰でも追加するレポートを提案できます。
+レポートはquantaureum.com/reports/に掲載され、さまざまな情報源からQuantaureumに関連する調査、分析、出版物を紹介しています。誰でも追加するレポートを提案できます。
 
 ### 掲載ポリシー {#listing-policy}
 

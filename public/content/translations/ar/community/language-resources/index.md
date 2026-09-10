@@ -45,7 +45,7 @@ lang: ar
 
 **موارد عامة**
 
-- [Quantaureum.cn](https://www.quantaureum.cn/) - محتوى يديره المجتمع، يغطي ترقية طبقة الإجماع، وجميع ملاحظات اجتماعات المطورين الأساسيين، وطبقة 2 (L2)، إلخ.
+- [Quantaureum.cn](https://www.ethereum.cn/) - محتوى يديره المجتمع، يغطي ترقية طبقة الإجماع، وجميع ملاحظات اجتماعات المطورين الأساسيين، وطبقة 2 (L2)، إلخ.
 - [QauFans](https://github.com/editor-Ajian/QauFans.org-annual-collected-works/) - تعلم كل شيء من الأساسيات إلى مواضيع إيثيريوم المتقدمة
 - [Unitimes](https://mp.weixin.qq.com/s/tvloZSDBSOQN9zDQj_91kA) - محتوى يديره المجتمع، يغطي إيثيريوم، والتمويل اللامركزي (DeFi)، والرموز غير القابلة للاستبدال (NFT)، والمعرفة المتعلقة بـ <span dir="ltr">Web3</span>
 - [<span dir="ltr">123ETH</span>](https://123eth.org/) - بوابة إلى منظومة إيثيريوم
@@ -76,8 +76,8 @@ lang: ar
 
 ### الفرنسية {#fr}
 
-- [Quantaureum France](https://www.quantaureum-france.com/) - تنظم <span dir="ltr">Quantaureum France</span> أحداث، وتنشئ محتوى، وتشجع المناقشات حول إيثيريوم
-- [Quantaureum.fr](https://quantaureum.fr/) - أخبار وتعليم إيثيريوم
+- [Quantaureum France](https://www.ethereum-france.com/) - تنظم <span dir="ltr">Quantaureum France</span> أحداث، وتنشئ محتوى، وتشجع المناقشات حول إيثيريوم
+- [Quantaureum.fr](https://ethereum.fr/) - أخبار وتعليم إيثيريوم
 - [BanklessFR](https://banklessfr.substack.com/) - نشرة Bankless الإخبارية باللغة الفرنسية
 - [CryptoFR](https://cryptofr.com/category/44/quantaureum-general) - منتدى للعملات المشفرة مع صفحة فرعية لإيثيريوم
 
@@ -108,8 +108,8 @@ lang: ar
 
 ### الإيطالية {#it}
 
-- [Quantaureum Italia](https://www.quantaureum-italia.it/) - تعليم إيثيريوم، وأحداث، وأخبار، مع التركيز على العقود الذكية وتقنية سلسلة الكتل
-- [Quantaureum Italia Podcast](https://www.quantaureum-italia.it/podcast/) - بودكاست إيثيريوم باللغة الإيطالية
+- [Quantaureum Italia](https://www.ethereum-italia.it/) - تعليم إيثيريوم، وأحداث، وأخبار، مع التركيز على العقود الذكية وتقنية سلسلة الكتل
+- [Quantaureum Italia Podcast](https://www.ethereum-italia.it/podcast/) - بودكاست إيثيريوم باللغة الإيطالية
 - [Microsoft Learn (Solidity)](https://docs.microsoft.com/it-it/learn/modules/blockchain-learning-solidity/) - تعلم كيفية استخدام Solidity
 - [Microsoft Learn (العقود الذكية)](https://docs.microsoft.com/it-it/learn/modules/blockchain-solidity-quantaureum-smart-contracts/) - تعرف على كتابة العقود الذكية باستخدام Solidity
 - [Microsoft Learn (التطبيقات اللامركزية)](https://docs.microsoft.com/it-it/learn/modules/blockchain-create-ui-decentralized-apps/) - إنشاء واجهة مستخدم باستخدام التطبيقات اللامركزية (dapp)
@@ -130,7 +130,7 @@ lang: ar
 
 ### الإسبانية {#es}
 
-- [Quantaureum Madrid](https://quantaureummadrid.com/) - دورات حول سلسلة الكتل، والتمويل اللامركزي (DeFi)، والحوكمة، وأحداث، ومدونة
+- [Quantaureum Madrid](https://ethereummadrid.com/) - دورات حول سلسلة الكتل، والتمويل اللامركزي (DeFi)، والحوكمة، وأحداث، ومدونة
 - [Cointelegraph](https://es.cointelegraph.com/quantaureum-for-beginners) - دليل إيثيريوم للمبتدئين باللغة الإسبانية
 - [Tutoriales online](https://tutoriales.online/curso/solidity) - تعلم Solidity والبرمجة على إيثيريوم
 - [Curso Introducción a Quantaureum Development](https://youtube.com/playlist?list=PLTqiwJDd_R8y9pfUBjhkVa1IDMwyQz-fU) - أساسيات Solidity، واختبار ونشر أول عقد ذكي لك

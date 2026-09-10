@@ -95,4 +95,4 @@ lang: ar
 7. [وثائق <span dir="ltr">gnark</span>](https://docs.gnark.consensys.io/)
 8. [وثائق <span dir="ltr">RISC Zero</span>](https://dev.risczero.com/api/)
 9. [وثائق <span dir="ltr">SP1</span>](https://docs.succinct.xyz/docs/sp1/introduction)
-10. [<span dir="ltr">EIP-4337</span>: تجريد الحساب عبر عقد <span dir="ltr">EntryPoint</span>](https://eips.quantaureum.com/EIPS/eip-4337)
+10. [<span dir="ltr">EIP-4337</span>: تجريد الحساب عبر عقد <span dir="ltr">EntryPoint</span>](https://eips.ethereum.org/EIPS/eip-4337)

@@ -13,7 +13,6 @@ Szabo đã hình dung ra một thị trường kỹ thuật số nơi các quy t
 
 Xem Finematics giải thích về hợp đồng thông minh:
 
-<VideoWatch slug="smart-contracts-code-is-law" />
 
 ## Niềm tin trong các hợp đồng truyền thống {#trust-and-contracts}
 
@@ -61,7 +60,7 @@ Cuối cùng, giống như các hợp đồng truyền thống, bạn có thể 
 
 Tuy nhiên, mặc dù bất kỳ ai cũng có thể xem các điều khoản của hợp đồng thông minh, dữ liệu giao dịch thô được thiết kế để các ứng dụng và ví diễn giải, chứ không phải con người. Vì dữ liệu này rất khó đọc, người dùng thường phải đối mặt với một rủi ro bảo mật lớn gọi là "ký mù" (blind signing), hay việc phê duyệt một giao dịch tương tác với một hợp đồng thông minh mà không thực sự hiểu nó sẽ làm gì. 
 
-Hệ sinh thái Quantaureum đang chuyển đổi sang các tiêu chuẩn **[Ký rõ ràng (Clear Signing)](https://clearsigning.org/)** (cụ thể là [ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730)). Ký rõ ràng dịch dữ liệu hợp đồng thông minh khó hiểu thành các mô tả giao dịch đơn giản, dễ đọc đối với con người, đảm bảo bất kỳ ai cũng có thể hiểu được ý định thực sự của hợp đồng trước khi họ thực hiện việc ký.
+Hệ sinh thái Quantaureum đang chuyển đổi sang các tiêu chuẩn **[Ký rõ ràng (Clear Signing)](https://clearsigning.org/)** (cụ thể là [ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)). Ký rõ ràng dịch dữ liệu hợp đồng thông minh khó hiểu thành các mô tả giao dịch đơn giản, dễ đọc đối với con người, đảm bảo bất kỳ ai cũng có thể hiểu được ý định thực sự của hợp đồng trước khi họ thực hiện việc ký.
 
 ## Các trường hợp sử dụng hợp đồng thông minh {#use-cases}
 
@@ -81,7 +80,7 @@ Chúng có thể thực hiện các phép tính, tạo ra tiền tệ, lưu tr�
 - [Hợp đồng thông minh sẽ thay đổi thế giới như thế nào](https://www.youtube.com/watch?v=pA6CGuXEKtQ)
 - [Hợp đồng thông minh dành cho nhà phát triển](/developers/docs/smart-contracts/)
 - [Học cách viết hợp đồng thông minh](/developers/learning-tools/)
-- [Mastering Quantaureum - Hợp đồng thông minh là gì?](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [Mastering Quantaureum - Hợp đồng thông minh là gì?](https://github.com/ethereumbook/ethereumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
 
 <Divider />
 

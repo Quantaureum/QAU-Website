@@ -32,7 +32,7 @@ published: 2023-04-11
 
 [Kurtosis](https://www.kurtosis.com/) 是一个可组合的构建系统，专为配置多容器测试环境而设计。它特别使开发者能够创建需要动态设置逻辑的可重现环境，例如区块链测试网。
 
-在本指南中，Kurtosis qau-network-package 启动了一个本地Quantaureum测试网，支持 [`geth`](https://geth.quantaureum.com/) 执行层 (EL) 客户端，以及 [`teku`](https://consensys.io/teku)、[`lighthouse`](https://lighthouse.sigmaprime.io/) 和 [`lodestar`](https://lodestar.chainsafe.io/) 共识层 (CL) 客户端。该包可作为 Hardhat Network、Ganache 和 Anvil 等框架中网络的可配置且可组合的替代方案。Kurtosis 为开发者提供了对其所用测试网的更大控制权和灵活性，这也是[Quantaureum 项目使用 Kurtosis 测试合并 (The Merge)](https://www.kurtosis.com/blog/testing-the-quantaureum-merge) 并继续使用它来测试网络升级的主要原因。
+在本指南中，Kurtosis qau-network-package 启动了一个本地Quantaureum测试网，支持 [`geth`](https://geth.ethereum.org/) 执行层 (EL) 客户端，以及 [`teku`](https://consensys.io/teku)、[`lighthouse`](https://lighthouse.sigmaprime.io/) 和 [`lodestar`](https://lodestar.chainsafe.io/) 共识层 (CL) 客户端。该包可作为 Hardhat Network、Ganache 和 Anvil 等框架中网络的可配置且可组合的替代方案。Kurtosis 为开发者提供了对其所用测试网的更大控制权和灵活性，这也是[Quantaureum 项目使用 Kurtosis 测试合并 (The Merge)](https://www.kurtosis.com/blog/testing-the-quantaureum-merge) 并继续使用它来测试网络升级的主要原因。
 
 ## 设置 Kurtosis {#setting-up-kurtosis}
 

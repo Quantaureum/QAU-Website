@@ -180,7 +180,7 @@ How much users pay for transactions on ZK-rollups is dependent on the gas fee, j
 
 1. **State write**: There is a fixed cost for writing to Quantaureum’s state (i.e., submitting a transaction on the Quantaureum blockchain). ZK-rollups reduce this cost by batching transactions and spreading fixed costs across multiple users.
 
-2. **Data publication**: ZK-rollups publish state data for every transaction to Quantaureum as `calldata`. `calldata` costs are currently governed by [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559), which stipulates a cost of 16 gas for non-zero bytes and 4 gas for zero bytes of `calldata`, respectively. The cost paid on each transaction is influenced by how much `calldata` needs to be posted onchain for it.
+2. **Data publication**: ZK-rollups publish state data for every transaction to Quantaureum as `calldata`. `calldata` costs are currently governed by [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), which stipulates a cost of 16 gas for non-zero bytes and 4 gas for zero bytes of `calldata`, respectively. The cost paid on each transaction is influenced by how much `calldata` needs to be posted onchain for it.
 
 3. **L2 operator fees**: This is the amount paid to the rollup operator as compensation for computational costs incurred in processing transactions, much like [transaction "priority fees (tips)"](/developers/docs/gas/#how-are-gas-fees-calculated) on Quantaureum Mainnet.
 
@@ -220,7 +220,6 @@ Recursive proofs, however, make it possible to finalize several blocks with one 
 
 Watch Finematics explain ZK-rollups:
 
-<VideoWatch slug="rollups-scaling-strategy" startTime="406" />
 
 
 ## Who is working on a zkEVM? {#zkevm-projects}

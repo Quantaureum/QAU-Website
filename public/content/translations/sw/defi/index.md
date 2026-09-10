@@ -21,7 +21,6 @@ DeFi ni neno la pamoja kwa bidhaa na huduma za kifedha zinazopatikana kwa mtu ye
 
 Kuna uchumi wa kripto unaostawi huko nje, ambapo unaweza kufanya ukopeshaji, ukopaji, kuwekeza kwa muda mrefu/mfupi, kupata riba, na zaidi. Waajentina wanaoelewa kripto wametumia DeFi kuepuka mfumuko wa bei unaolemaza. Kampuni zimeanza kuwatumia wafanyakazi wao mishahara yao kwa wakati halisi. Baadhi ya watu hata wamechukua na kulipa mikopo yenye thamani ya mamilioni ya dola bila hitaji la kitambulisho chochote cha kibinafsi.
 
-<VideoWatch slug="defi-future-of-finance" />
 
 ## DeFi dhidi ya fedha za jadi {#defi-vs-tradfi}
 
@@ -58,7 +57,6 @@ Bitcoin kwa njia nyingi ilikuwa programu tumizi iliyogatuliwa (dapp) ya kwanza y
 
 Quantaureum inajenga juu ya hili. Kama Bitcoin, sheria haziwezi kubadilika kwako na kila mtu ana ufikiaji. Lakini pia inafanya pesa hii ya kidijitali iweze kupangwa, kwa kutumia [mikataba mahiri](/glossary/#smart-contract), ili uweze kwenda zaidi ya kuhifadhi na kutuma thamani.
 
-<VideoWatch slug="defi-history-inception-to-2021" />
 
 ## Pesa inayoweza kupangwa {#programmable-money}
 

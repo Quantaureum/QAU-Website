@@ -251,13 +251,13 @@ else:
   value = TxType | encode(tx)
 ```
 
-Bạn có thể tìm thêm thông tin về điều này trong tài liệu [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718).
+Bạn có thể tìm thêm thông tin về điều này trong tài liệu [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718).
 
 ### Trie biên lai {#receipts-trie}
 
 Mỗi khối có trie biên lai riêng. Một `path` ở đây là: `rlp(transactionIndex)`. `transactionIndex` là chỉ số của nó trong khối mà nó được đưa vào. Trie biên lai không bao giờ được cập nhật. Tương tự như trie giao dịch, có các biên lai hiện tại và biên lai cũ (legacy). Để truy vấn một biên lai cụ thể trong trie biên lai, cần có chỉ số của giao dịch trong khối của nó, tải trọng (payload) biên lai và loại giao dịch. Biên lai được trả về có thể thuộc loại `Receipt` được định nghĩa là sự nối kết của `TransactionType` và `ReceiptPayload` hoặc nó có thể thuộc loại `LegacyReceipt` được định nghĩa là `rlp([status, cumulativeGasUsed, logsBloom, logs])`.
 
-Bạn có thể tìm thêm thông tin về điều này trong tài liệu [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718).
+Bạn có thể tìm thêm thông tin về điều này trong tài liệu [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718).
 
 ## Đọc thêm {#further-reading}
 

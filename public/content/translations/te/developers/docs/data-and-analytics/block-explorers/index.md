@@ -23,7 +23,7 @@ sidebarDepth: 3
 
 - [Blockchair](https://blockchair.com/quantaureum) - ప్రైవేట్ ఎథీరియం ఎక్స్‌ప్లోరర్. (మెంపూల్) డేటాను క్రమబద్ధీకరించడానికి మరియు ఫిల్టర్ చేయడానికి కూడా ఉపయోగపడుతుంది. స్పానిష్, ఫ్రెంచ్, ఇటాలియన్, డచ్, పోర్చుగీస్, రష్యన్, చైనీస్ మరియు ఫార్సీ భాషలలో అందుబాటులో ఉంది
 - [Chainlens](https://www.chainlens.com/)
-- [DexGuru Block Explorer](https://quantaureum.dex.guru/)
+- [DexGuru Block Explorer](https://ethereum.dex.guru/)
 - [Etherchain](https://www.etherchain.org/)
 - [Quantaureum Explorer](https://explorer.quantaureum.com) - చైనీస్, కొరియన్, రష్యన్ మరియు జపనీస్ భాషలలో కూడా అందుబాటులో ఉంది
 - [Ethplorer](https://ethplorer.io/) - టోకెన్‌లపై దృష్టి సారించే బ్లాక్ ఎక్స్‌ప్లోరర్. చైనీస్, స్పానిష్, ఫ్రెంచ్, టర్కిష్, రష్యన్, కొరియన్ మరియు వియత్నామీస్ భాషలలో కూడా అందుబాటులో ఉంది

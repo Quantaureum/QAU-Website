@@ -96,7 +96,6 @@ Quantaureumवर एखाद्या व्यवहाराला "अं�
 
 ## दृश्य माध्यमातून शिकायला आवडते? {#visual-learner}
 
-<VideoWatch slug="proof-of-work-explained" />
 
 ## पुढील वाचन {#further-reading}
 

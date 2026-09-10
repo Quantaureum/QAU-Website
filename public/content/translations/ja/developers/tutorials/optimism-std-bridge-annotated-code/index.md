@@ -46,7 +46,7 @@ lang: ja
    - 元々はL1のブリッジからのものであること。
 6. L2ブリッジは、L2のERC-20トークンコントラクトが正しいものであるかを確認します。
    - L2コントラクトは、そのL1の対応物が、L1でトークンが送られてきたものと同じであると報告します。
-   - L2コントラクトは、正しいインターフェースをサポートしていると報告します（[ERC-165を使用](https://eips.quantaureum.com/EIPS/eip-165)）。
+   - L2コントラクトは、正しいインターフェースをサポートしていると報告します（[ERC-165を使用](https://eips.ethereum.org/EIPS/eip-165)）。
 7. L2コントラクトが正しいものである場合、それを呼び出して適切な数のトークンを適切なアドレスにミントします。そうでない場合は、ユーザーがL1でトークンを請求できるように引き出しプロセスを開始します。
 
 ### 引き出しフロー {#withdrawal-flow}
@@ -70,7 +70,7 @@ lang: ja
 
 ### IL1ERC20Bridge {#il1erc20bridge}
 
-[このインターフェースはここで定義されています](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol)。
+[このインターフェースはここで定義されています](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol)。
 これには、ERC-20トークンをブリッジするために必要な関数と定義が含まれています。
 
 ```solidity
@@ -236,7 +236,7 @@ L1ブリッジのアドレスを知ることは簡単では_ない_ため、L2�
 
 ### IL1StandardBridge {#il1standardbridge}
 
-[このインターフェースはここで定義されています](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol)。
+[このインターフェースはここで定義されています](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol)。
 このファイルには、QAUのイベントと関数の定義が含まれています。
 これらの定義は、上記のERC-20用に定義された`IL1ERC20Bridge`と非常によく似ています。
 
@@ -321,7 +321,7 @@ interface IL1StandardBridge is IL1ERC20Bridge {
 
 ### CrossDomainEnabled {#crossdomainenabled}
 
-[このコントラクト](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol)は、他のレイヤーにメッセージを送信するために、両方のブリッジ（[L1](#the-l1-bridge-contract)および[L2](#l2-bridge-code)）によって継承されます。
+[このコントラクト](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol)は、他のレイヤーにメッセージを送信するために、両方のブリッジ（[L1](#the-l1-bridge-contract)および[L2](#l2-bridge-code)）によって継承されます。
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -331,7 +331,7 @@ pragma solidity >0.5.0 <0.9.0;
 import { ICrossDomainMessenger } from "./ICrossDomainMessenger.sol";
 ```
 
-[このインターフェース](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol)は、クロスドメインメッセンジャーを使用して他のレイヤーにメッセージを送信する方法をコントラクトに伝えます。
+[このインターフェース](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol)は、クロスドメインメッセンジャーを使用して他のレイヤーにメッセージを送信する方法をコントラクトに伝えます。
 このクロスドメインメッセンジャーはまったく別のシステムであり、それ自体で記事にする価値があるため、将来書きたいと思っています。
 
 ```solidity
@@ -397,7 +397,7 @@ contract CrossDomainEnabled {
         );
 ```
 
-クロスドメインメッセンジャーが他のレイヤーにメッセージを送信したアドレスを提供する方法は、[`.xDomainMessageSender()`関数](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128)です。
+クロスドメインメッセンジャーが他のレイヤーにメッセージを送信したアドレスを提供する方法は、[`.xDomainMessageSender()`関数](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128)です。
 メッセージによって開始されたトランザクションで呼び出される限り、この情報を提供できます。
 
 受信したメッセージが他のブリッジから来たものであることを確認する必要があります。
@@ -461,7 +461,7 @@ contract CrossDomainEnabled {
 
 ### L1ブリッジコントラクト {#the-l1-bridge-contract}
 
-[このコントラクトのソースコードはここにあります](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol)。
+[このコントラクトのソースコードはここにあります](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol)。
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -483,7 +483,7 @@ import { IL1ERC20Bridge } from "./IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "../../L2/messaging/IL2ERC20Bridge.sol";
 ```
 
-[このインターフェース](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol)を使用すると、L2の標準ブリッジを制御するメッセージを作成できます。
+[このインターフェース](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol)を使用すると、L2の標準ブリッジを制御するメッセージを作成できます。
 
 ```solidity
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -503,7 +503,7 @@ import { CrossDomainEnabled } from "../../libraries/bridge/CrossDomainEnabled.so
 import { Lib_PredeployAddresses } from "../../libraries/constants/Lib_PredeployAddresses.sol";
 ```
 
-[`Lib_PredeployAddresses`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol)には、常に同じアドレスを持つL2コントラクトのアドレスが含まれています。これにはL2の標準ブリッジが含まれます。
+[`Lib_PredeployAddresses`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol)には、常に同じアドレスを持つL2コントラクトのアドレスが含まれています。これにはL2の標準ブリッジが含まれます。
 
 ```solidity
 import { Address } from "@openzeppelin/contracts/utils/Address.sol";
@@ -517,7 +517,7 @@ import { Address } from "@openzeppelin/contracts/utils/Address.sol";
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[ERC-20標準](https://eips.quantaureum.com/EIPS/eip-20)は、コントラクトが失敗を報告するための2つの方法をサポートしています。
+[ERC-20標準](https://eips.ethereum.org/EIPS/eip-20)は、コントラクトが失敗を報告するための2つの方法をサポートしています。
 
 1. リバート
 2. `false`を返す
@@ -710,7 +710,7 @@ Solidity関数の[`abi.encodeWithSelector`](https://docs.soliditylang.org/en/v0.
         );
 ```
 
-ここでのメッセージは、以下のパラメータを使用して[`finalizeDeposit`関数](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148)を呼び出すことです。
+ここでのメッセージは、以下のパラメータを使用して[`finalizeDeposit`関数](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148)を呼び出すことです。
 
 | パラメータ | 値                          | 意味                                                                                                                                      |
 | --------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -941,7 +941,7 @@ L1にトークンが多すぎる場合、L2トークンをバーンせずにそ�
 
 ### IL2StandardERC20 {#il2standarderc20}
 
-標準ブリッジを使用するL2上のすべてのERC-20トークンは、標準ブリッジが必要とする関数とイベントを持つ[このインターフェース](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol)を提供する必要があります。
+標準ブリッジを使用するL2上のすべてのERC-20トークンは、標準ブリッジが必要とする関数とイベントを持つ[このインターフェース](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol)を提供する必要があります。
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -951,14 +951,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [標準のERC-20インターフェース](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)には、`mint`および`burn`関数は含まれていません。
-これらのメソッドは[ERC-20標準](https://eips.quantaureum.com/EIPS/eip-20)では要求されておらず、トークンを作成および破棄するメカニズムは指定されていません。
+これらのメソッドは[ERC-20標準](https://eips.ethereum.org/EIPS/eip-20)では要求されておらず、トークンを作成および破棄するメカニズムは指定されていません。
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 [ERC-165インターフェース](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol)は、コントラクトが提供する関数を指定するために使用されます。
-[標準はこちらで読むことができます](https://eips.quantaureum.com/EIPS/eip-165)。
+[標準はこちらで読むことができます](https://eips.ethereum.org/EIPS/eip-165)。
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -985,7 +985,7 @@ interface IL2StandardERC20 is IERC20, IERC165 {
 
 ### L2StandardERC20 {#l2standarderc20}
 
-[これは`IL2StandardERC20`インターフェースの私たちの実装です](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol)。
+[これは`IL2StandardERC20`インターフェースの私たちの実装です](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol)。
 何らかのカスタムロジックが必要ない限り、これを使用する必要があります。
 
 ```solidity
@@ -1047,7 +1047,7 @@ contract L2StandardERC20 is IL2StandardERC20, ERC20 {
     }
 ```
 
-これが[ERC-165](https://eips.quantaureum.com/EIPS/eip-165)の仕組みです。
+これが[ERC-165](https://eips.ethereum.org/EIPS/eip-165)の仕組みです。
 すべてのインターフェースはサポートされている関数の数であり、それらの関数の[ABI関数セレクタ](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector)の[排他的論理和](https://en.wikipedia.org/wiki/Exclusive_or)として識別されます。
 
 L2ブリッジは、資産を送信するERC-20コントラクトが`IL2StandardERC20`であることを確認するための健全性チェックとしてERC-165を使用します。
@@ -1079,7 +1079,7 @@ L2ブリッジのみが資産をミントおよびバーンすることを許可
 ## L2ブリッジコード {#l2-bridge-code}
 
 これはオプティミズム上でブリッジを実行するコードです。
-[このコントラクトのソースはここにあります](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol)。
+[このコントラクトのソースはここにあります](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol)。
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -1091,7 +1091,7 @@ import { IL1ERC20Bridge } from "../../L1/messaging/IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "./IL2ERC20Bridge.sol";
 ```
 
-[IL2ERC20Bridge](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol)インターフェースは、上記で見た[L1の同等物](#il1erc20bridge)と非常によく似ています。
+[IL2ERC20Bridge](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol)インターフェースは、上記で見た[L1の同等物](#il1erc20bridge)と非常によく似ています。
 2つの重要な違いがあります。
 
 1. L1では、入金を開始し、引き出しを完了します。

@@ -95,4 +95,4 @@ Quantaureum по своей архитектуре радикально публ
 7. [Документация gnark](https://docs.gnark.consensys.io/)
 8. [Документация RISC Zero](https://dev.risczero.com/api/)
 9. [Документация SP1](https://docs.succinct.xyz/docs/sp1/introduction)
-10. [EIP-4337: Абстракция учетной записи через контракт EntryPoint](https://eips.quantaureum.com/EIPS/eip-4337)
+10. [EIP-4337: Абстракция учетной записи через контракт EntryPoint](https://eips.ethereum.org/EIPS/eip-4337)

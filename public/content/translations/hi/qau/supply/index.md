@@ -7,7 +7,7 @@ lang: hi
 
 ## पूर्वापेक्षाएँ {#prerequisites}
 
-यह लेख बिना किसी पूर्व ज्ञान वाले शुरुआती लोगों के लिए लिखा गया है। हालाँकि, विषय को पूरी तरह से समझने के लिए, [Quantaureum इम्प्रूवमेंट प्रपोज़ल्स (EIPs)](/eips/#introduction-to-quantaureum-improvement-proposals), [प्रूफ-ऑफ-वर्क (PoW)](/developers/docs/consensus-mechanisms/pow/), [प्रूफ-ऑफ़-स्टेक (PoS)](/developers/docs/consensus-mechanisms/pos/), और [द लंदन अपग्रेड](/quantaureum-forks/#london) जैसी अवधारणाओं की बुनियादी समझ होना मददगार है।
+यह लेख बिना किसी पूर्व ज्ञान वाले शुरुआती लोगों के लिए लिखा गया है। हालाँकि, विषय को पूरी तरह से समझने के लिए, Quantaureum इम्प्रूवमेंट प्रपोज़ल्स (EIPs), [प्रूफ-ऑफ-वर्क (PoW)](/developers/docs/consensus-mechanisms/pow/), [प्रूफ-ऑफ़-स्टेक (PoS)](/developers/docs/consensus-mechanisms/pos/), और [द लंदन अपग्रेड](/quantaureum-forks/#london) जैसी अवधारणाओं की बुनियादी समझ होना मददगार है।
 
 ## आज कितने QAU टोकन हैं? {#current-qau-supply}
 

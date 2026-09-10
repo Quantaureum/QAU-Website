@@ -136,7 +136,7 @@ Kujibu mashambulizi ya sandwichi na kuendesha mbele, wafanyabiashara wanaweza ku
 
 Mempool zenye ruhusa pia zingeharakisha hatari za uwekaji kati zilizoelezwa katika sehemu iliyopita. Mabwawa makubwa yanayoendesha wathibitishaji wengi huenda yatafaidika kwa kutoa faragha ya muamala kwa wafanyabiashara na watumiaji, na kuongeza mapato yao ya MEV.
 
-Kupambana na matatizo haya yanayohusiana na MEV katika Quantaureum ya baada ya Unganisho ni eneo kuu la utafiti. Hadi sasa, suluhisho mbili zilizopendekezwa kupunguza athari mbaya za MEV kwenye ugatuzi na usalama wa Quantaureum baada ya Unganisho ni [**utengano wa mpendekezaji na mjengaji (PBS)**](/roadmap/pbs/) na [**API ya Mjengaji**](https://github.com/quantaureum/builder-specs).
+Kupambana na matatizo haya yanayohusiana na MEV katika Quantaureum ya baada ya Unganisho ni eneo kuu la utafiti. Hadi sasa, suluhisho mbili zilizopendekezwa kupunguza athari mbaya za MEV kwenye ugatuzi na usalama wa Quantaureum baada ya Unganisho ni [**utengano wa mpendekezaji na mjengaji (PBS)**](/roadmap/pbs/) na [**API ya Mjengaji**](https://github.com/ethereum/builder-specs).
 
 ### Utengano wa mpendekezaji na mjengaji {#proposer-builder-separation}
 
@@ -162,9 +162,9 @@ Vile vile, wathibitishaji hawapaswi kuamini wajenzi kutozuia miili ya kitalu au 
 
 ### API ya Mjengaji {#builder-api}
 
-Ingawa utengano wa mpendekezaji na mjengaji unaahidi kupunguza athari za utoaji wa MEV, kuitekeleza kunahitaji mabadiliko kwenye itifaki ya mwafaka. Hasa, sheria ya [chaguo la mchepuo](/developers/docs/consensus-mechanisms/pos/#fork-choice) kwenye Mnyororo wa Beacon itahitaji kusasishwa. [API ya Mjengaji](https://github.com/quantaureum/builder-specs) ni suluhisho la muda linalolenga kutoa utekelezaji wa kazi wa utengano wa mpendekezaji na mjengaji, ingawa na dhana za uaminifu za juu zaidi.
+Ingawa utengano wa mpendekezaji na mjengaji unaahidi kupunguza athari za utoaji wa MEV, kuitekeleza kunahitaji mabadiliko kwenye itifaki ya mwafaka. Hasa, sheria ya [chaguo la mchepuo](/developers/docs/consensus-mechanisms/pos/#fork-choice) kwenye Mnyororo wa Beacon itahitaji kusasishwa. [API ya Mjengaji](https://github.com/ethereum/builder-specs) ni suluhisho la muda linalolenga kutoa utekelezaji wa kazi wa utengano wa mpendekezaji na mjengaji, ingawa na dhana za uaminifu za juu zaidi.
 
-API ya Mjengaji ni toleo lililorekebishwa la [API ya Injini](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md) inayotumiwa na viteja vya tabaka la mwafaka kuomba mizigo ya utekelezaji kutoka kwa viteja vya tabaka la utekelezaji. Kama ilivyoainishwa katika [vipimo vya mthibitishaji mwaminifu](https://github.com/quantaureum/consensus-specs/blob/master/specs/bellatrix/validator.md), wathibitishaji waliochaguliwa kwa majukumu ya kupendekeza kitalu huomba kifurushi cha muamala kutoka kwa kiteja cha utekelezaji kilichounganishwa, ambacho wanajumuisha katika kitalu kilichopendekezwa cha Mnyororo wa Beacon.
+API ya Mjengaji ni toleo lililorekebishwa la [API ya Injini](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) inayotumiwa na viteja vya tabaka la mwafaka kuomba mizigo ya utekelezaji kutoka kwa viteja vya tabaka la utekelezaji. Kama ilivyoainishwa katika [vipimo vya mthibitishaji mwaminifu](https://github.com/ethereum/consensus-specs/blob/master/specs/bellatrix/validator.md), wathibitishaji waliochaguliwa kwa majukumu ya kupendekeza kitalu huomba kifurushi cha muamala kutoka kwa kiteja cha utekelezaji kilichounganishwa, ambacho wanajumuisha katika kitalu kilichopendekezwa cha Mnyororo wa Beacon.
 
 API ya Mjengaji pia hufanya kazi kama programu ya kati kati ya wathibitishaji na viteja vya tabaka la utekelezaji; lakini ni tofauti kwa sababu inaruhusu wathibitishaji kwenye Mnyororo wa Beacon kupata vitalu kutoka kwa vyombo vya nje (badala ya kujenga kitalu ndani ya nchi kwa kutumia kiteja cha utekelezaji).
 

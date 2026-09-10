@@ -19,7 +19,6 @@ authors: ["Nixo", "Mario Havel"]
 </AlertContent>
 </Alert>
 
-<VideoWatch slug="fusaka-upgrade-explained" />
 
 ## 弗萨卡升级的改进 {#improvements-in-fusaka}
 
@@ -29,7 +28,7 @@ authors: ["Nixo", "Mario Havel"]
 
 这是弗萨卡分叉的_重头戏_，也是本次升级中添加的主要功能。二层网络 (l2) 目前以斑点的形式将其数据发布到Quantaureum，斑点是专门为二层网络 (l2) 创建的临时数据类型。在弗萨卡之前，每个全节点都必须存储每个斑点以确保数据存在。随着斑点吞吐量的上升，必须下载所有这些数据变得极其消耗资源，令人难以承受。
 
-借助[数据可用性采样](https://notes.quantaureum.com/@fradamt/das-fork-choice)，每个节点将只负责斑点数据的一个子集，而无需存储所有斑点数据。斑点在网络中的节点之间均匀随机分布，每个全节点仅保存 1/8 的数据，从而在理论上实现了高达 8 倍的扩展。为了确保数据的可用性，可以使用将错误或丢失数据的概率降低到密码学上可忽略的水平（约 10<sup>20</sup> 分之一到 10<sup>24</sup> 分之一）的方法，从任何现有的 50% 整体数据中重建任何部分的数据。
+借助[数据可用性采样](https://notes.ethereum.org/@fradamt/das-fork-choice)，每个节点将只负责斑点数据的一个子集，而无需存储所有斑点数据。斑点在网络中的节点之间均匀随机分布，每个全节点仅保存 1/8 的数据，从而在理论上实现了高达 8 倍的扩展。为了确保数据的可用性，可以使用将错误或丢失数据的概率降低到密码学上可忽略的水平（约 10<sup>20</sup> 分之一到 10<sup>24</sup> 分之一）的方法，从任何现有的 50% 整体数据中重建任何部分的数据。
 
 这使得节点的硬件和带宽要求保持在合理范围内，同时实现了斑点扩展，从而为二层网络 (l2) 带来更大的扩展性和更低的费用。
 
@@ -37,7 +36,7 @@ authors: ["Nixo", "Mario Havel"]
 
 **资源**：
 
-- [EIP-7594 技术规范](https://eips.quantaureum.com/EIPS/eip-7594)
+- [EIP-7594 技术规范](https://eips.ethereum.org/EIPS/eip-7594)
 - [DappLion 谈 PeerDAS：今日扩展Quantaureum | ETHSofia 2024](https://youtu.be/bONWd1x2TjQ?t=328)
 - [学术：Quantaureum PeerDAS 文档 (PDF)](https://eprint.iacr.org/2024/1362.pdf)
 
@@ -57,7 +56,7 @@ authors: ["Nixo", "Mario Havel"]
 
 图表来源：[Quantaureum Blobs - @hildobby, Dune Analytics](https://dune.com/hildobby/blobs)
 
-**资源**：[EIP-7892 技术规范](https://eips.quantaureum.com/EIPS/eip-7892)
+**资源**：[EIP-7892 技术规范](https://eips.ethereum.org/EIPS/eip-7892)
 
 #### 受执行成本限制的 blob 基础费用 {#blob-base-fee-bounded-by-execution-costs}
 
@@ -71,8 +70,8 @@ EIP-7918 在每个斑点下固定了一个成比例的保留价格。当保留�
 
 **资源**：
 
-- [EIP-7918 技术规范](https://eips.quantaureum.com/EIPS/eip-7918)
-- [Storybook 讲解](https://notes.quantaureum.com/@anderselowsson/AIG)
+- [EIP-7918 技术规范](https://eips.ethereum.org/EIPS/eip-7918)
+- [Storybook 讲解](https://notes.ethereum.org/@anderselowsson/AIG)
 
 ### 扩展一层网络 (l1) {#scale-l1}
 
@@ -82,21 +81,21 @@ EIP-7918 在每个斑点下固定了一个成比例的保留价格。当保留�
 
 此 EIP 位于“核心 EIP”之外的部分，因为该分叉实际上并未实施任何更改——它是一个通知，要求客户端团队必须在弗萨卡升级前支持历史数据过期。实际上，客户端可以随时实施此功能，但将其添加到升级中具体地将其列入了他们的待办事项列表，并使他们能够结合此功能测试弗萨卡的更改。
 
-**资源**：[EIP-7642 技术规范](https://eips.quantaureum.com/EIPS/eip-7642)
+**资源**：[EIP-7642 技术规范](https://eips.ethereum.org/EIPS/eip-7642)
 
 #### 为 MODEXP 设置上限 {#set-upper-bounds-for-modexp}
 
 到目前为止，MODEXP 预编译合约几乎接受任何大小的数字。这使得它难以测试、容易被滥用，并对客户端稳定性构成风险。EIP-7823 设定了明确的限制：每个输入数字最长只能是 8192 位（1024 字节）。任何更大的数字都会被拒绝，交易的 Gas 会被销毁，并且不会发生任何状态更改。它非常轻松地满足了现实世界的需求，同时消除了使 gas 上限规划和安全审查复杂化的极端情况。此更改提供了更高的安全性和 DoS 保护，而不会影响用户或开发者体验。
 
-**资源**：[EIP-7823 技术规范](https://eips.quantaureum.com/EIPS/eip-7823)
+**资源**：[EIP-7823 技术规范](https://eips.ethereum.org/EIPS/eip-7823)
 
 #### 交易 gas 上限封顶 {#transaction-gas-limit-cap}
 
-EIP-[7825](https://eips.quantaureum.com/EIPS/eip-7825) 增加了每笔交易 16,777,216 (2^24) Gas 的上限。这是主动的 DoS 加固，通过在我们提高区块 gas 上限时限制任何单笔交易的最坏情况成本来实现。它使验证和传播更容易建模，从而允许我们通过提高 gas 上限来解决扩展问题。
+EIP-[7825](https://eips.ethereum.org/EIPS/eip-7825) 增加了每笔交易 16,777,216 (2^24) Gas 的上限。这是主动的 DoS 加固，通过在我们提高区块 gas 上限时限制任何单笔交易的最坏情况成本来实现。它使验证和传播更容易建模，从而允许我们通过提高 gas 上限来解决扩展问题。
 
 为什么恰好是 2^24 Gas？它远小于今天的 gas 上限，足以满足实际合约部署和繁重的预编译合约需求，而且 2 的幂使其易于在各个客户端中实现。这个新的最大交易大小类似于佩克特拉之前的平均区块大小，使其成为Quantaureum上任何操作的合理限制。
 
-**资源**：[EIP-7825 技术规范](https://eips.quantaureum.com/EIPS/eip-7825)
+**资源**：[EIP-7825 技术规范](https://eips.ethereum.org/EIPS/eip-7825)
 
 #### `MODEXP` Gas 成本增加 {#modexp-gas-cost-increase}
 
@@ -112,7 +111,7 @@ MODEXP 是一个预编译合约内置函数，用于计算模幂运算，这是�
 
 通过更好地将成本与实际处理时间相匹配，MODEXP 不再会导致区块验证时间过长。此更改是旨在确保未来安全提高Quantaureum区块 gas 上限的几项更改之一。
 
-**资源**：[EIP-7883 技术规范](https://eips.quantaureum.com/EIPS/eip-7883)
+**资源**：[EIP-7883 技术规范](https://eips.ethereum.org/EIPS/eip-7883)
 
 #### RLP 执行区块大小限制 {#rlp-execution-block-size-limit}
 
@@ -131,7 +130,7 @@ MODEXP 是一个预编译合约内置函数，用于计算模幂运算，这是�
 
 目标是限制最坏情况下的传播/验证时间，并与共识层 gossip 行为保持一致，在不改变 Gas 记账的情况下降低重组/DoS 风险。
 
-**资源**：[EIP-7934 技术规范](https://eips.quantaureum.com/EIPS/eip-7934)
+**资源**：[EIP-7934 技术规范](https://eips.ethereum.org/EIPS/eip-7934)
 
 #### 将默认 gas 上限设置为 6000 万 {#set-default-gas-limit-to-60-million}
 
@@ -141,7 +140,7 @@ EIP-7935 协调执行层 (EL) 客户端团队，在弗萨卡升级中将默认 g
 
 开发网规划的目标是约 6000 万的压力（具有合成负载的满区块）和迭代提升；研究表明，最坏情况下的区块大小病态不应在约 1.5 亿以下受到限制。推出应与交易 gas 上限封顶 (EIP-7825) 相结合，以便在上限提高时，没有任何单笔交易可以占据主导地位。
 
-**资源**：[EIP-7935 技术规范](https://eips.quantaureum.com/EIPS/eip-7935)
+**资源**：[EIP-7935 技术规范](https://eips.ethereum.org/EIPS/eip-7935)
 
 ### 改善用户体验 (UX) {#improve-ux}
 
@@ -151,13 +150,13 @@ EIP-7935 协调执行层 (EL) 客户端团队，在弗萨卡升级中将默认 g
 
 此功能有利于客户端实现和网络安全，因为它防止了验证者可能操纵提议者时间表的边缘情况。前瞻还降低了实现的复杂性。
 
-**资源**：[EIP-7917 技术规范](https://eips.quantaureum.com/EIPS/eip-7917)
+**资源**：[EIP-7917 技术规范](https://eips.ethereum.org/EIPS/eip-7917)
 
 #### 计算前导零 (CLZ) 操作码 {#count-leading-zeros-opcode}
 
 此功能添加了一个小型的 EVM 指令：**计算前导零 (CLZ)**。EVM 中的几乎所有内容都表示为 256 位值——这个新的操作码返回前面有多少个零位。这是许多指令集架构中的常见功能，因为它能够实现更高效的算术运算。在实践中，这将当今手动编写的位扫描折叠为一个步骤，因此查找第一个设置位、扫描字节或解析位段变得更简单、更便宜。该操作码成本低且固定，经基准测试与基本加法相当，这削减了字节码并为相同的工作节省了 Gas。
 
-**资源**：[EIP-7939 技术规范](https://eips.quantaureum.com/EIPS/eip-7939)
+**资源**：[EIP-7939 技术规范](https://eips.ethereum.org/EIPS/eip-7939)
 
 #### 支持 secp256r1 曲线的预编译合约 {#secp256r1-precompile}
 
@@ -169,7 +168,7 @@ EIP-7935 协调执行层 (EL) 客户端团队，在弗萨卡升级中将默认 g
 
 **资源**：
 
-- [EIP-7951 技术规范](https://eips.quantaureum.com/EIPS/eip-7951)
+- [EIP-7951 技术规范](https://eips.ethereum.org/EIPS/eip-7951)
 - [关于 RIP-7212 的更多信息](https://www.alchemy.com/blog/what-is-rip-7212) _（请注意，EIP-7951 已取代 RIP-7212）_
 
 ### 元数据 (Meta) {#meta}
@@ -184,7 +183,7 @@ EIP-7935 协调执行层 (EL) 客户端团队，在弗萨卡升级中将默认 g
 
 此 EIP 位于“核心 EIP”之外的部分，因为该分叉实际上并未实施任何更改——它是一个通知，要求客户端团队必须在弗萨卡升级前实现此 JSON-RPC 方法。
 
-**资源**：[EIP-7910 技术规范](https://eips.quantaureum.com/EIPS/eip-7910)
+**资源**：[EIP-7910 技术规范](https://eips.ethereum.org/EIPS/eip-7910)
 
 ## 常见问题解答 {#faq}
 
@@ -243,7 +242,7 @@ BPO 更新的确切时间表将随弗萨卡版本一起确定。请关注[协议
 
 PeerDAS 对节点传输斑点数据的方式进行了重大更改。所有数据被分成称为列的片段，分布在 128 个子网中，节点仅订阅其中一些子网。节点必须托管的子网列数量取决于其配置和连接的验证者数量。实际的带宽要求将取决于网络中允许的斑点数量和节点类型。在弗萨卡激活时，斑点目标保持与以前相同，但借助 PeerDAS，节点运营商可以看到其斑点的磁盘使用量和网络流量有所减少。随着 BPO 在网络中配置更多数量的斑点，所需的带宽将随着每个 BPO 的增加而增加。
 
-即使在弗萨卡 BPO 之后，节点要求仍处于[推荐的范围内](https://eips.quantaureum.com/EIPS/eip-7870)。
+即使在弗萨卡 BPO 之后，节点要求仍处于[推荐的范围内](https://eips.ethereum.org/EIPS/eip-7870)。
 
 #### 全节点 {#full-nodes}
 
@@ -267,13 +266,13 @@ PeerDAS 对节点传输斑点数据的方式进行了重大更改。所有数据
 
 弗萨卡通过新的微小更改和功能巩固了 EVM。
 
-- 为了在扩展时保证安全，单笔交易的最大大小将[限制为 1670 万](https://eips.quantaureum.com/EIPS/eip-7825) Gas 单位。
-- EVM 中添加了[新的操作码计算前导零 (CLZ)](https://eips.quantaureum.com/EIPS/eip-7939)，这将使智能合约语言能够更高效地执行某些操作。
-- [`ModExp` 预编译合约的成本将增加](https://eips.quantaureum.com/EIPS/eip-7883)——使用它的合约在执行时将收取更多 Gas。
+- 为了在扩展时保证安全，单笔交易的最大大小将[限制为 1670 万](https://eips.ethereum.org/EIPS/eip-7825) Gas 单位。
+- EVM 中添加了[新的操作码计算前导零 (CLZ)](https://eips.ethereum.org/EIPS/eip-7939)，这将使智能合约语言能够更高效地执行某些操作。
+- [`ModExp` 预编译合约的成本将增加](https://eips.ethereum.org/EIPS/eip-7883)——使用它的合约在执行时将收取更多 Gas。
 
 ### 新的 1600 万 gas 上限如何影响合约开发者？ {#how-does-new-16m-gas-limit-affects-contract-developers}
 
-弗萨卡引入了将[单笔交易的最大大小限制为 1670 万](https://eips.quantaureum.com/EIPS/eip-7825) (2^24) Gas 单位的限制。这大致是以前平均区块的大小，这使其足够大，可以容纳会消耗整个区块的复杂交易。此限制为客户端提供了保护，防止未来在更高的区块 gas 上限下发生潜在的 DoS 攻击。扩展的目标是使更多交易进入区块链，而不会出现单笔交易消耗整个区块的情况。
+弗萨卡引入了将[单笔交易的最大大小限制为 1670 万](https://eips.ethereum.org/EIPS/eip-7825) (2^24) Gas 单位的限制。这大致是以前平均区块的大小，这使其足够大，可以容纳会消耗整个区块的复杂交易。此限制为客户端提供了保护，防止未来在更高的区块 gas 上限下发生潜在的 DoS 攻击。扩展的目标是使更多交易进入区块链，而不会出现单笔交易消耗整个区块的情况。
 
 普通用户交易远未达到此限制。某些边缘情况，如庞大且复杂的去中心化金融 (DeFi) 操作、大型智能合约部署或针对多个合约的批量交易，可能会受到此更改的影响。这些交易将必须被划分为更小的交易或以其他方式进行优化。在提交可能达到限制的交易之前，请使用模拟。
 
@@ -287,15 +286,15 @@ RPC 方法 `qau_call` 不受限制，将允许模拟比实际区块链限制更�
 
 弗萨卡没有会破坏任何现有合约或改变其行为的直接影响。引入执行层的更改具有向后兼容性，但是，请始终关注边缘情况和潜在影响。
 
-[随着 `ModExp` 预编译合约成本的增加](https://eips.quantaureum.com/EIPS/eip-7883)，依赖它的合约在执行时将消耗更多 Gas。如果您的合约严重依赖于此并且对用户来说变得更加昂贵，请重新考虑如何利用它。
+[随着 `ModExp` 预编译合约成本的增加](https://eips.ethereum.org/EIPS/eip-7883)，依赖它的合约在执行时将消耗更多 Gas。如果您的合约严重依赖于此并且对用户来说变得更加昂贵，请重新考虑如何利用它。
 
-如果执行您合约的交易可能达到类似大小，请考虑[新的 1670 万限制](https://eips.quantaureum.com/EIPS/eip-7825)。
+如果执行您合约的交易可能达到类似大小，请考虑[新的 1670 万限制](https://eips.ethereum.org/EIPS/eip-7825)。
 
 ## 延伸阅读 {#further-reading}
 
 - [Quantaureum路线图](/roadmap/)
 - [Forkcast：弗萨卡](https://forkcast.org/upgrade/fusaka)
-- [弗萨卡元数据 EIP](https://eips.quantaureum.com/EIPS/eip-7607)
+- [弗萨卡元数据 EIP](https://eips.ethereum.org/EIPS/eip-7607)
 - [弗萨卡测试网博客公告](https://quantaureum.com)
 - [Bankless：弗萨卡和佩克特拉将为Quantaureum带来什么](https://www.bankless.com/read/what-fusaka-pectra-will-bring-quantaureum)
 - [Bankless：Quantaureum的下一次升级：弗萨卡、格拉姆斯特丹及更远未来（与 Preston Van Loon 访谈）](https://x.com/BanklessHQ/status/1956017743289020633?t=502)

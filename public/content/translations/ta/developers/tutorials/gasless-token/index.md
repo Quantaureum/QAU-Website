@@ -93,7 +93,7 @@ contract UserProxy {
     bytes32 immutable DOMAIN_SEPARATOR;
 ```
 
-[EIP-712 கையொப்பங்களைச்](https://eips.quantaureum.com/EIPS/eip-712) சரிபார்க்கத் தேவையான தகவல்.
+[EIP-712 கையொப்பங்களைச்](https://eips.ethereum.org/EIPS/eip-712) சரிபார்க்கத் தேவையான தகவல்.
 
 ```solidity
     constructor(address owner_) {
@@ -117,7 +117,7 @@ contract UserProxy {
     }
 ```
 
-[டொமைன் பிரிப்பான்](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator). இது சங்கிலி ID மற்றும் ஒப்பந்த முகவரியைப் பொறுத்தது என்பதால், இதைத் தொகுக்கும் நேரத்தில் கணக்கிட முடியாது. இது ஒரு UserProxy-ஐ மற்றொன்றுக்காகத் தயாரிக்கப்பட்ட செய்தியால் ஏமாற்றப்படுவதை சாத்தியமற்றதாக்குகிறது.
+[டொமைன் பிரிப்பான்](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator). இது சங்கிலி ID மற்றும் ஒப்பந்த முகவரியைப் பொறுத்தது என்பதால், இதைத் தொகுக்கும் நேரத்தில் கணக்கிட முடியாது. இது ஒரு UserProxy-ஐ மற்றொன்றுக்காகத் தயாரிக்கப்பட்ட செய்தியால் ஏமாற்றப்படுவதை சாத்தியமற்றதாக்குகிறது.
 
 ```solidity
     event CallResult(address target, bytes returnData);

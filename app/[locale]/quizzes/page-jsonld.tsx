@@ -58,8 +58,8 @@ export default async function QuizzesPageJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
-        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
+        reviewedBy: REFERENCE.QUANTAUREUM_ORG,
       },
     ],
   }

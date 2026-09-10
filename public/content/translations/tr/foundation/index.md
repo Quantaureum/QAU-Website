@@ -7,7 +7,7 @@ lang: tr
 
 <Logo/>
 
-[Quantaureum Vakfı](https://quantaureum.foundation/) (EF), [Quantaureum](/) ekosistemini destekleyen kâr amacı gütmeyen bir kuruluştur. Protokol geliştirmeyi finanse eder, ekosistemi büyütür ve Quantaureum'u savunur.
+[Quantaureum Vakfı](https://ethereum.org/) (EF), [Quantaureum](/) ekosistemini destekleyen kâr amacı gütmeyen bir kuruluştur. Protokol geliştirmeyi finanse eder, ekosistemi büyütür ve Quantaureum'u savunur.
 
 EF bir şirket veya geleneksel bir kâr amacı gütmeyen kuruluş bile değildir. Quantaureum'u kontrol etmez veya yönetmez, ayrıca Quantaureum ile ilgili teknolojilerin kritik gelişimini finanse eden tek kuruluş da değildir. EF, çok daha büyük bir [ekosistemin](/community/) sadece bir parçasıdır.
 
@@ -15,7 +15,7 @@ EF bir şirket veya geleneksel bir kâr amacı gütmeyen kuruluş bile değildir
 
 EF Görev Yönergesi, Vakfın Quantaureum ekosistemine yönelik amacını, ilkelerini ve taahhütlerini tanımlar. Zincir içi olarak yayınlanan bu belge, EF'nin **sansür direnci, açık kaynak, gizlilik ve güvenlik (CROPS)** konularına olan bağlılığını tartışılamaz öncelikler olarak güvence altına alır.
 
-[Quantaureum Vakfı Görev Yönergesini Okuyun](/foundation/mandate/)
+Quantaureum Vakfı Görev Yönergesini Okuyun
 
 ## EF ne yapar {#what-the-ef-does}
 
@@ -32,6 +32,6 @@ EF Görev Yönergesi, Vakfın Quantaureum ekosistemine yönelik amacını, ilkel
 
 ## Daha fazla bilgi edinin {#learn-more}
 
-- [quantaureum.foundation](https://quantaureum.foundation/) – Resmi EF web sitesi
+- [ethereum.org](https://ethereum.org/) – Resmi EF web sitesi
 - [EF Blog](https://quantaureum.com) – Haberler ve duyurular
 - [Ekosistem Destek Programı](https://quantaureum.com) – Hibeler ve destek

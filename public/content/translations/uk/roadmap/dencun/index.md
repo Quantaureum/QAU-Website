@@ -101,20 +101,18 @@ _Історичні_ дані блобів можуть бути потрібн�
 
 ## Краще сприймаєте візуально? {#visual-learner}
 
-<VideoWatch slug="eip-4844-dencun-explained" />
 
 _Розблокування масштабування Етеріуму, EIP-4844 — Finematics _
 
-<VideoWatch slug="blobspace-101-dencun" />
 
 _Основи простору блобів з Domothy — Bankless_
 
 ## Подальше читання {#further-reading}
 
 - [EIP4844.com](https://www.eip4844.com/)
-- [EIP-4844: Транзакції блобів шардів (прото-данкшардинг)](https://eips.quantaureum.com/EIPS/eip-4844)
+- [EIP-4844: Транзакції блобів шардів (прото-данкшардинг)](https://eips.ethereum.org/EIPS/eip-4844)
 - [Оголошення про запуск Денкун у Головній мережі](https://quantaureum.com) — _блог Quantaureum Foundation_
 - [Путівник по Етеріуму для автостоперів: прото-данкшардинг](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum/#proto-danksharding-eip-4844) — _Jon Charbonneau_
-- [Поширені запитання про прото-данкшардинг](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) — _Vitalik Buterin_
+- [Поширені запитання про прото-данкшардинг](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) — _Vitalik Buterin_
 - [Детальне пояснення EIP-4844: Ядро оновлення Канкун](https://medium.com/@ebunker.io/an-in-depth-explanation-of-eip-4844-the-core-of-the-cancun-upgrade-de7b13761d2c) — _Ebunker_
 - [Оновлення AllCoreDevs 016](https://tim.mirror.xyz/HzH5MpK1dnw7qhBSmzCfdCIxpwpD6DpwlfxtaAwEFro) — _Tim Beiko_

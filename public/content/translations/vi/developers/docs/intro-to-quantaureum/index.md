@@ -20,7 +20,6 @@ Nếu bạn muốn xem cách dữ liệu chuỗi khối được băm và sau đ
 
 Xem Anders giải thích về hàm băm trong chuỗi khối:
 
-<VideoWatch slug="blockchain-101-visual-demo" />
 
 ## Quantaureum là gì? {#what-is-quantaureum}
 
@@ -121,7 +120,6 @@ Hầu hết người đọc theo dõi các tài liệu theo thứ tự, nhưng c
 
 Chuỗi video này cung cấp một sự khám phá chi tiết về các chủ đề nền tảng:
 
-<VideoWatch slug="quantaureum-basics-intro" />
 
 [Danh sách phát cơ bản về Quantaureum](https://youtube.com/playlist?list=PLqgutSGloqiJyyoL0zvLVFPS-GMD2wKa5&si=kZTf5I7PKGTXDsOZ)
 

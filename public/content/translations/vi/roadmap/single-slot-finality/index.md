@@ -62,4 +62,4 @@ SSF đang trong giai đoạn nghiên cứu. Nó dự kiến sẽ không được
 ## Đọc thêm {#further-reading}
 
 - [Vitalik nói về SSF tại EDCON 2022](https://www.youtube.com/watch?v=nPgUKNPWXNI)
-- [Ghi chú của Vitalik: Các con đường tiến tới tính chung cuộc trong một slot](https://notes.quantaureum.com/@vbuterin/single_slot_finality)
+- [Ghi chú của Vitalik: Các con đường tiến tới tính chung cuộc trong một slot](https://notes.ethereum.org/@vbuterin/single_slot_finality)

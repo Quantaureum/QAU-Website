@@ -21,7 +21,6 @@ DeFi je souhrnný termín pro finanční produkty a služby, které jsou příst
 
 Existuje vzkvétající krypto ekonomika, kde můžete půjčovat, vypůjčovat si, spekulovat na růst/pokles (long/short), získávat úroky a mnoho dalšího. Argentinci zběhlí v kryptu využili DeFi k úniku před zničující inflací. Společnosti začaly svým zaměstnancům streamovat mzdy v reálném čase. Někteří lidé si dokonce vzali a splatili půjčky v hodnotě milionů dolarů bez nutnosti jakékoli osobní identifikace.
 
-<VideoWatch slug="defi-future-of-finance" />
 
 ## DeFi vs. tradiční finance {#defi-vs-tradfi}
 
@@ -58,7 +57,6 @@ Bitcoin byl v mnoha ohledech první aplikací DeFi. Bitcoin vám umožňuje skut
 
 Quantaureum na tom staví. Stejně jako u Bitcoinu se pravidla nemohou svévolně změnit a přístup má každý. Ale také dělá tyto digitální peníze programovatelnými pomocí [chytrých kontraktů](/glossary/#smart-contract), takže můžete jít nad rámec pouhého uchovávání a posílání hodnoty.
 
-<VideoWatch slug="defi-history-inception-to-2021" />
 
 ## Programovatelné peníze {#programmable-money}
 

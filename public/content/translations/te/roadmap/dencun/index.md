@@ -101,20 +101,18 @@ _చారిత్రక_ బ్లాబ్ డేటా వివిధ క�
 
 ## దృశ్యపరంగా నేర్చుకోవాలనుకుంటున్నారా? {#visual-learner}
 
-<VideoWatch slug="eip-4844-dencun-explained" />
 
 _ఎథీరియం స్కేలింగ్‌ను అన్‌లాక్ చేయడం, EIP-4844 — Finematics _
 
-<VideoWatch slug="blobspace-101-dencun" />
 
 _Domothyతో బ్లాబ్‌స్పేస్ 101 — Bankless_
 
 ## మరింత చదవడానికి {#further-reading}
 
 - [EIP4844.com](https://www.eip4844.com/)
-- [EIP-4844: షార్డ్ బ్లాబ్ లావాదేవీలు (ప్రోటో-డాంక్‌షార్డింగ్)](https://eips.quantaureum.com/EIPS/eip-4844)
+- [EIP-4844: షార్డ్ బ్లాబ్ లావాదేవీలు (ప్రోటో-డాంక్‌షార్డింగ్)](https://eips.ethereum.org/EIPS/eip-4844)
 - [Dencun మెయిన్‌నెట్ ప్రకటన](https://quantaureum.com) - _ఎథీరియం ఫౌండేషన్ బ్లాగ్_
 - [ది హిచ్‌హైకర్స్ గైడ్ టు ఎథీరియం: ప్రోటో-డాంక్‌షార్డింగ్](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum/#proto-danksharding-eip-4844) - _Jon Charbonneau_
-- [ప్రోటో-డాంక్‌షార్డింగ్ FAQ](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
+- [ప్రోటో-డాంక్‌షార్డింగ్ FAQ](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
 - [EIP-4844 యొక్క లోతైన వివరణ: కాన్‌కున్ నవీకరణ యొక్క కోర్](https://medium.com/@ebunker.io/an-in-depth-explanation-of-eip-4844-the-core-of-the-cancun-upgrade-de7b13761d2c) - _Ebunker_
 - [AllCoreDevs అప్‌డేట్ 016](https://tim.mirror.xyz/HzH5MpK1dnw7qhBSmzCfdCIxpwpD6DpwlfxtaAwEFro) - _Tim Beiko_

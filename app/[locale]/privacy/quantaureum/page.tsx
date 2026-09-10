@@ -20,7 +20,6 @@ import { Card, CardContent, CardTitle } from "@/components/ui/card"
 import Link, { LinkWithArrow } from "@/components/ui/Link"
 import { ListItem, UnorderedList } from "@/components/ui/list"
 import { Section } from "@/components/ui/section"
-import VideoWatch from "@/components/Videos/VideoWatch"
 
 import { getAppPageContributorInfo } from "@/lib/utils/contributors"
 import { getMetadata } from "@/lib/utils/metadata"
@@ -65,7 +64,7 @@ const READING_LINKS: { key: string; href: string }[] = [
   },
   {
     key: "page-privacy-quantaureum-reading-8",
-    href: "https://quantaureum-magicians.org/t/pse-roadmap-2025-and-beyond/25423",
+    href: "https://ethereum-magicians.org/t/pse-roadmap-2025-and-beyond/25423",
   },
   {
     key: "page-privacy-quantaureum-reading-9",
@@ -244,7 +243,6 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
               ),
             })}
           </p>
-          <VideoWatch slug="privacy-is-existential" />
           <p>{t("page-privacy-quantaureum-challenge-description-3")}</p>
           <p>
             {t.rich("page-privacy-quantaureum-challenge-description-4", {
@@ -284,7 +282,6 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
           <ButtonLink href="/roadmap/privacy/" size="lg">
             {t("page-privacy-quantaureum-transition-roadmap-cta")}
           </ButtonLink>
-          <VideoWatch slug="quantaureum-privacy-roadmap-andy-guzman" />
         </Section>
 
         {/* Umbrella section: the app categories below are h3 subsections of this h2 */}
@@ -316,7 +313,6 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
             })}
           </p>
           {/* // TODO: QuarkID video -- transcript to be added separately */}
-          <VideoWatch slug="quarkid-south-america-ssi" />
           <Alert variant="update">
             <AlertIcon size="xl">
               <Handshake />
@@ -431,7 +427,7 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
             {t.rich("page-privacy-quantaureum-stealth-description-3", {
               strong: Strong,
               erc5564: (chunks) => (
-                <Link href="https://eips.quantaureum.com/EIPS/eip-5564">
+                <Link href="https://eips.ethereum.org/EIPS/eip-5564">
                   {chunks}
                 </Link>
               ),
@@ -484,7 +480,6 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
             })}
           </p>
           {/* // TODO: "How to make a guerilla L2" (Web3Privacy Now) */}
-          <VideoWatch slug="how-to-make-a-guerilla-l2" />
           <p>
             {t.rich("page-privacy-quantaureum-l2-description-3", {
               strong: Strong,

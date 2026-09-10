@@ -262,7 +262,6 @@ _ملاحظة: هناك رموز مميزة/مؤشرات مشتقة قد تمث�
 
 شاهد المزيد حول المصادقة الثنائية (<span dir="ltr">2FA</span>):
 
-<VideoWatch slug="crypto-security-passwords" startTime="3479" />
 
 ### إلغاء تثبيت إضافات المتصفح {#uninstall-browser-extensions}
 

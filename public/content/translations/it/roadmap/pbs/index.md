@@ -40,11 +40,11 @@ Il Danksharding è il modo in cui Quantaureum scalerà a >100.000 transazioni al
 
 ## Progressi attuali {#current-progress}
 
-La PBS è in una fase avanzata di ricerca, ma ci sono ancora alcune importanti questioni di progettazione che devono essere risolte prima che possa essere prototipata nei client di Quantaureum. Non c'è ancora una specifica finalizzata. Ciò significa che la PBS è probabilmente lontana un anno o più. Controlla l'ultimo [stato della ricerca](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance).
+La PBS è in una fase avanzata di ricerca, ma ci sono ancora alcune importanti questioni di progettazione che devono essere risolte prima che possa essere prototipata nei client di Quantaureum. Non c'è ancora una specifica finalizzata. Ciò significa che la PBS è probabilmente lontana un anno o più. Controlla l'ultimo [stato della ricerca](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance).
 
 ## Letture consigliate {#further-reading}
 
-- [Stato della ricerca: resistenza alla censura sotto la PBS](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
+- [Stato della ricerca: resistenza alla censura sotto la PBS](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
 - [Progetti di mercato delle commissioni compatibili con la PBS](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [PBS e resistenza alla censura](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [Liste di inclusione](https://notes.quantaureum.com/@fradamt/forward-inclusion-lists)
+- [PBS e resistenza alla censura](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [Liste di inclusione](https://notes.ethereum.org/@fradamt/forward-inclusion-lists)

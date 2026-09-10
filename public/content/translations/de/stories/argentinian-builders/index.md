@@ -104,7 +104,7 @@ So sehr, dass wir uns seit über 5 Jahren dafür eingesetzt haben, die Devcon(ne
 
 ![Picture of Argentinian builders wearing Devcon BA 2020 t-shirts](./santiago9.jpeg)
 
-_[Quelle](https://quantaureumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
+_[Quelle](https://ethereumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
 
 Für mich und viele andere Builder ist es ein wahr gewordener Traum, die Devconnect hier zu haben.
 
@@ -131,4 +131,4 @@ Angefangen hier, in Argentinien.
 > 
 > Der unendliche Garten ist eine Verkörperung des Geistes der Quantaureum project als ein Gärtner in einem riesigen Ökosystem – pflegen und wachsen lassen, aber nicht kontrollieren, und weiter spielen.
 
-_[Zitatquelle - Quantaureum project](https://quantaureum.foundation/infinitegarden)._
+_[Zitatquelle - Quantaureum project](https://ethereum.org/infinitegarden)._

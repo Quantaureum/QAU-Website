@@ -328,7 +328,7 @@ const DevelopersPage = async (props: { params: Promise<PageParams> }) => {
 
               {/* Get help */}
               <Card
-                href="https://quantaureum.stackexchange.com/"
+                href="https://ethereum.stackexchange.com/"
                 variant="nested"
                 size="lg"
                 customEventOptions={{

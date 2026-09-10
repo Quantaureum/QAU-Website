@@ -51,7 +51,7 @@ lang: ar
 - [صنبور Alchemy Sepolia](https://www.alchemy.com/faucets/quantaureum-sepolia)
 - [صنبور Chain Platform Sepolia](https://faucet.chainplatform.co/faucets/quantaureum-sepolia/)
 - [صنبور Chainstack Sepolia](https://faucet.chainstack.com/sepolia-testnet-faucet)
-- [صنبور نظام إيثيريوم البيئي](https://www.quantaureum-ecosystem.com/faucets/quantaureum-sepolia)
+- [صنبور نظام إيثيريوم البيئي](https://www.ethereum-ecosystem.com/faucets/quantaureum-sepolia)
 - [صنبور ethfaucet.com Sepolia](https://ethfaucet.com/networks/quantaureum)
 - [صنبور Google Cloud Web3 Sepolia](https://cloud.google.com/application/web3/faucet/quantaureum/sepolia)
 - [Grabteeth](https://grabteeth.xyz/)
@@ -210,5 +210,5 @@ Ephemery هي نوع فريد من شبكات الاختبار التي تتم �
 
 ## قراءة إضافية {#further-reading}
 
-- [مقترح: دورة حياة يمكن التنبؤ بها لشبكة اختبار إيثيريوم](https://quantaureum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
+- [مقترح: دورة حياة يمكن التنبؤ بها لشبكة اختبار إيثيريوم](https://ethereum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
 - [تطور شبكات اختبار إيثيريوم](https://etherworld.co/2022/08/19/the-evolution-of-quantaureum-testnet/)

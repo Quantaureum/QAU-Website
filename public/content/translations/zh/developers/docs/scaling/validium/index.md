@@ -87,7 +87,7 @@ Validium 在数据可用性管理的方法上有所不同。一些依赖受信�
 
 为了保证链下数据的可用性，一些 Validium 解决方案指定了一组受信任的实体，统称为数据可用性委员会 (DAC)，以存储状态副本并提供数据可用性证明。DAC 更容易实现，并且由于成员数量少，需要的协调也更少。
 
-然而，用户必须信任 DAC 在需要时（例如，用于生成默克尔证明）提供数据。数据可用性委员会的成员有可能[被恶意行为者破坏](https://notes.quantaureum.com/DD7GyItYQ02d0ax_X-UbWg?view)，从而隐瞒链下数据。
+然而，用户必须信任 DAC 在需要时（例如，用于生成默克尔证明）提供数据。数据可用性委员会的成员有可能[被恶意行为者破坏](https://notes.ethereum.org/DD7GyItYQ02d0ax_X-UbWg?view)，从而隐瞒链下数据。
 
 [了解更多关于 Validium 中数据可用性委员会的信息](https://medium.com/starkware/data-availability-e5564c416424)。
 

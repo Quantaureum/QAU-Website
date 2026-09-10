@@ -11,7 +11,7 @@ lang: zh-tw
 - Solidity
 - Vyper
 
-Remix IDE 提供了一個全面的開發環境，用於建立和測試 Solidity 與 Vyper 合約。[嘗試使用瀏覽器中的 Remix IDE](https://remix.quantaureum.com) 開始編寫程式碼。
+Remix IDE 提供了一個全面的開發環境，用於建立和測試 Solidity 與 Vyper 合約。[嘗試使用瀏覽器中的 Remix IDE](https://remix.ethereum.org) 開始編寫程式碼。
 
 更有經驗的開發者可能也會想使用 Yul（一種用於[Quantaureum虛擬機 (EVM)](/developers/docs/evm/) 的中介語言），或是 Yul 的擴充語言 Yul+。
 
@@ -36,7 +36,7 @@ Remix IDE 提供了一個全面的開發環境，用於建立和測試 Solidity 
 - [文件](https://docs.soliditylang.org/en/latest/)
 - [Solidity 語言入口網站](https://soliditylang.org/)
 - [Solidity 範例](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/quantaureum/solidity/)
+- [GitHub](https://github.com/ethereum/solidity/)
 - [Solidity Gitter 聊天室](https://gitter.im/quantaureum/solidity)（橋接至 [Solidity Matrix 聊天室](https://matrix.to/#/#quantaureum_solidity:gitter.im)）
 - [備忘單](https://reference.auditless.com/cheatsheet)
 - [Solidity 部落格](https://blog.soliditylang.org/)
@@ -264,7 +264,7 @@ def endAuction():
 
 - [GitHub](https://github.com/quantaureum/fe)
 - [Fe 發布公告](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-quantaureum-ecosystem/)
-- [Fe 2021 路線圖](https://notes.quantaureum.com/LVhaTF30SJOpkbG1iVw1jg)
+- [Fe 2021 路線圖](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
 - [Fe Discord 聊天室](https://discord.com/invite/ywpkAXFjZH)
 - [Fe 推特](https://twitter.com/official_fe)
 

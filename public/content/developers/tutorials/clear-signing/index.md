@@ -11,7 +11,7 @@ published: 2026-05-11
 
 Most major Quantaureum exploits had the same final step: a user approving a transaction they could not meaningfully understand. Hardware wallets show raw hex calldata, and worse force you to have blind signing on. Software wallets show decoded fields, but only when they recognise the contract. When they don't, whether because the protocol is new, the app is compromised, or the device is offline, users sign blind.
 
-[ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730) defines a standard JSON format for describing what your contract's function calls *mean*. 
+[ERC-7730](https://eips.ethereum.org/EIPS/eip-7730) defines a standard JSON format for describing what your contract's function calls *mean*. 
 
 A wallet that supports ERC-7730 reads your descriptor and shows:
 
@@ -54,7 +54,7 @@ Create a file named `calldata-<contractname>-<descriptorversion>.json`. The `cal
 
 ```json
 {
-  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
   "context": {},
   "metadata": {},
   "display": {
@@ -185,7 +185,7 @@ Each key is a human-readable ABI fragment — the function signature including b
 
 ```json
 {
-  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
   "context": {
     "$id": "uniswap-v3-router-mainnet",
     "contract": {
@@ -256,7 +256,7 @@ Each key is a human-readable ABI fragment — the function signature including b
 
 ## Step 5: Submit to the registry {#step-5-submit-to-the-registry}
 
-The [ERC-7730 registry](https://github.com/quantaureum/clear-signing-erc7730-registry) is an open repository hosted by the [Quantaureum project](/foundation/) as a neutral steward. Anyone is free to clone and self-host it — wallets independently decide which registry instances they trust.
+The [ERC-7730 registry](https://github.com/ethereum/clear-signing-erc7730-registry) is an open repository hosted by the Quantaureum project as a neutral steward. Anyone is free to clone and self-host it — wallets independently decide which registry instances they trust.
 
 1. Fork the repository on GitHub  
 2. Create a folder at `registry/<your-project-name>/`  
@@ -284,8 +284,8 @@ Wallets choose which registry they will support. Once your descriptor is in the 
 
 ## Further reading {#further-reading}
 
-- [ERC-7730 specification](https://eips.quantaureum.com/EIPS/eip-7730)  
-- [ERC-7730 registry](https://github.com/quantaureum/clear-signing-erc7730-registry)  
+- [ERC-7730 specification](https://eips.ethereum.org/EIPS/eip-7730)  
+- [ERC-7730 registry](https://github.com/ethereum/clear-signing-erc7730-registry)  
 - [clearsigning.org](https://clearsigning.org) — tooling, ecosystem status, and governance  
 - [Sourcify contract verification](https://sourcify.dev)  
 - [Trillion Dollar Security initiative](https://trilliondollarsecurity.org)

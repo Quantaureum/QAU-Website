@@ -138,9 +138,9 @@ function auctionEnd() external {
 
 Solidity स्मार्ट अनुबंधों के लिए यूनिट परीक्षण फ्रेमवर्क विभिन्न भाषाओं (ज्यादातर JavaScript, Python, और Rust) में आते हैं। विभिन्न परीक्षण फ्रेमवर्क के साथ यूनिट परीक्षण चलाना कैसे शुरू करें, इस बारे में जानकारी के लिए नीचे दिए गए कुछ गाइड देखें:
 
-- **[Brownie के साथ यूनिट परीक्षण चलाना](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Brownie के साथ यूनिट परीक्षण चलाना](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Foundry के साथ यूनिट परीक्षण चलाना](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Waffle के साथ यूनिट परीक्षण चलाना](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Waffle के साथ यूनिट परीक्षण चलाना](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Remix के साथ यूनिट परीक्षण चलाना](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Ape के साथ यूनिट परीक्षण चलाना](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Hardhat के साथ यूनिट परीक्षण चलाना](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -190,7 +190,7 @@ Solidity स्मार्ट अनुबंधों के लिए यू�
 
 - **[स्लिथर के साथ स्मार्ट अनुबंधों का स्थैतिक विश्लेषण](https://github.com/crytic/slither)**
 - **[Wake के साथ स्मार्ट अनुबंधों का स्थैतिक विश्लेषण](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[Brownie के साथ संपत्ति-आधारित परीक्षण](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Brownie के साथ संपत्ति-आधारित परीक्षण](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Foundry के साथ अनुबंधों की फ़ज़िंग](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[एकिड्ना के साथ अनुबंधों की फ़ज़िंग](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Wake के साथ अनुबंधों की फ़ज़िंग](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -251,13 +251,13 @@ Solidity स्मार्ट अनुबंधों के लिए यू�
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Solidity में लिखे गए स्मार्ट अनुबंधों के लिए कोड कवरेज टूल।_
 
-- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - _उन्नत स्मार्ट अनुबंध विकास और परीक्षण के लिए फ्रेमवर्क (ethers.js पर आधारित)।_
+- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _उन्नत स्मार्ट अनुबंध विकास और परीक्षण के लिए फ्रेमवर्क (ethers.js पर आधारित)।_
 
-- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - _Solidity स्मार्ट अनुबंधों के परीक्षण के लिए टूल। Remix IDE "Solidity Unit Testing" प्लगइन के नीचे काम करता है जिसका उपयोग अनुबंध के लिए परीक्षण मामले लिखने और चलाने के लिए किया जाता है।_
+- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Solidity स्मार्ट अनुबंधों के परीक्षण के लिए टूल। Remix IDE "Solidity Unit Testing" प्लगइन के नीचे काम करता है जिसका उपयोग अनुबंध के लिए परीक्षण मामले लिखने और चलाने के लिए किया जाता है।_
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Quantaureum स्मार्ट अनुबंध परीक्षण के लिए दावा (Assertion) लाइब्रेरी। सुनिश्चित करें कि आपके अनुबंध अपेक्षानुसार व्यवहार करते हैं!_
 
-- **[Brownie यूनिट परीक्षण फ्रेमवर्क](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie Pytest का उपयोग करता है, जो एक सुविधा संपन्न परीक्षण फ्रेमवर्क है जो आपको न्यूनतम कोड के साथ छोटे परीक्षण लिखने देता है, बड़ी परियोजनाओं के लिए अच्छी तरह से स्केल करता है, और अत्यधिक विस्तार योग्य है।_
+- **[Brownie यूनिट परीक्षण फ्रेमवर्क](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie Pytest का उपयोग करता है, जो एक सुविधा संपन्न परीक्षण फ्रेमवर्क है जो आपको न्यूनतम कोड के साथ छोटे परीक्षण लिखने देता है, बड़ी परियोजनाओं के लिए अच्छी तरह से स्केल करता है, और अत्यधिक विस्तार योग्य है।_
 
 - **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry Forge प्रदान करता है, जो एक तेज़ और लचीला Quantaureum परीक्षण फ्रेमवर्क है जो सरल यूनिट परीक्षण, गैस अनुकूलन जाँच और अनुबंध फ़ज़िंग निष्पादित करने में सक्षम है।_
 

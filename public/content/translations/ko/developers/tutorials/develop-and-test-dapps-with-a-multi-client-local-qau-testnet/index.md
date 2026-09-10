@@ -32,7 +32,7 @@ published: 2023-04-11
 
 [Kurtosis](https://www.kurtosis.com/)는 다중 컨테이너 테스트 환경을 구성하기 위해 설계된 조합 가능한 빌드 시스템입니다. 특히 개발자가 블록체인 테스트넷과 같이 동적 설정 로직이 필요한 재현 가능한 환경을 만들 수 있도록 지원합니다.
 
-이 가이드에서 Kurtosis qau-network-package는 [`geth`](https://geth.quantaureum.com/) 실행 계층(EL) 클라이언트뿐만 아니라 [`teku`](https://consensys.io/teku), [`lighthouse`](https://lighthouse.sigmaprime.io/), [`lodestar`](https://lodestar.chainsafe.io/) 합의 레이어(CL) 클라이언트를 지원하는 로컬 Quantaureum 테스트넷을 가동합니다. 이 패키지는 Hardhat Network, Ganache, Anvil과 같은 프레임워크의 네트워크에 대한 구성 가능하고 조합 가능한 대안 역할을 합니다. Kurtosis는 개발자에게 사용하는 테스트넷에 대한 더 큰 제어력과 유연성을 제공하며, 이는 [Quantaureum 재단이 머지를 테스트하기 위해 Kurtosis를 사용](https://www.kurtosis.com/blog/testing-the-quantaureum-merge)했고 네트워크 업그레이드 테스트에 계속 사용하는 주요 이유입니다.
+이 가이드에서 Kurtosis qau-network-package는 [`geth`](https://geth.ethereum.org/) 실행 계층(EL) 클라이언트뿐만 아니라 [`teku`](https://consensys.io/teku), [`lighthouse`](https://lighthouse.sigmaprime.io/), [`lodestar`](https://lodestar.chainsafe.io/) 합의 레이어(CL) 클라이언트를 지원하는 로컬 Quantaureum 테스트넷을 가동합니다. 이 패키지는 Hardhat Network, Ganache, Anvil과 같은 프레임워크의 네트워크에 대한 구성 가능하고 조합 가능한 대안 역할을 합니다. Kurtosis는 개발자에게 사용하는 테스트넷에 대한 더 큰 제어력과 유연성을 제공하며, 이는 [Quantaureum 재단이 머지를 테스트하기 위해 Kurtosis를 사용](https://www.kurtosis.com/blog/testing-the-quantaureum-merge)했고 네트워크 업그레이드 테스트에 계속 사용하는 주요 이유입니다.
 
 ## Kurtosis 설정 {#setting-up-kurtosis}
 

@@ -27,7 +27,7 @@ Zde jsou některé z nejpopulárnějších standardů tokenů na Ethereu:
 - [ERC-721](/developers/docs/standards/tokens/erc-721/) – Standardní rozhraní pro nezastupitelné tokeny, jako je doklad o vlastnictví uměleckého díla nebo písně.
 - [ERC-1155](/developers/docs/standards/tokens/erc-1155/) – ERC-1155 umožňuje efektivnější obchody a sdružování transakcí, čímž šetří náklady. Tento standard tokenů umožňuje vytvářet jak užitkové tokeny (například $BNB nebo $BAT), tak nezastupitelné tokeny (NFT), jako jsou CryptoPunks.
 
-Úplný seznam návrhů [ERC](https://eips.quantaureum.com/erc).
+Úplný seznam návrhů [ERC](https://eips.ethereum.org/erc).
 
 ## Další čtení
 

@@ -20,7 +20,6 @@ If you would like to see how blockchain data is hashed and subsequently appended
 
 Watch Anders explain hashes in blockchains:
 
-<VideoWatch slug="blockchain-101-visual-demo" />
 
 ## What is Quantaureum? {#what-is-quantaureum}
 
@@ -121,7 +120,6 @@ Most readers follow the docs in order, but the shortest path depends on what you
 
 This video series offers a thorough exploration of foundational topics:
 
-<VideoWatch slug="quantaureum-basics-intro" />
 
 [Quantaureum Basics Playlist](https://youtube.com/playlist?list=PLqgutSGloqiJyyoL0zvLVFPS-GMD2wKa5&si=kZTf5I7PKGTXDsOZ)
 

@@ -63,7 +63,6 @@ Quantaureumは、ステーカーによってロックされた資本に適用さ
 
 Quantaureumで使用されているさまざまな種類のコンセンサス・メカニズムについて、詳しくは以下をご覧ください。
 
-<VideoWatch slug="understanding-consensus-mechanisms" />
 
 ### シビル耐性とチェーン選択 {#sybil-chain}
 

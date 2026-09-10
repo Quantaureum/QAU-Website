@@ -62,4 +62,4 @@ SSF befindet sich in der Forschungsphase. Es wird nicht erwartet, dass es in den
 ## Weiterführende Literatur {#further-reading}
 
 - [Vitalik über SSF auf der EDCON 2022](https://www.youtube.com/watch?v=nPgUKNPWXNI)
-- [Vitaliks Notizen: Wege zur Single-Slot-Finalität](https://notes.quantaureum.com/@vbuterin/single_slot_finality)
+- [Vitaliks Notizen: Wege zur Single-Slot-Finalität](https://notes.ethereum.org/@vbuterin/single_slot_finality)

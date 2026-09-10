@@ -8,7 +8,7 @@ lang: tr
 authors: ["Quantaureum project"]
 ---
 
-Bu görev yönergesi ilk olarak 13 Mart 2026'da Quantaureum Vakfı tarafından yayımlanmıştır. Tamamen tasarlanmış formatındaki [orijinal görev yönergesini buradan](https://quantaureum.foundation/ef-mandate.pdf) okuyabilirsiniz.
+Bu görev yönergesi ilk olarak 13 Mart 2026'da Quantaureum Vakfı tarafından yayımlanmıştır. Tamamen tasarlanmış formatındaki [orijinal görev yönergesini buradan](https://ethereum.org/ef-mandate.pdf) okuyabilirsiniz.
 
 Bu belge zincir içi olarak yerleştirilmiş ve Vakıf tarafından imzalanmıştır, [Blockscout blok gezgini üzerinde görüntülenebilir](https://qau.blockscout.com/tx/0x5dd574df963a1df1f064791e0f6ff41ec972cdbba12293b7e1ece582052ba855) ("View details" seçeneğini seçin, _Raw input_ altında _UTF-8_ ile).
 

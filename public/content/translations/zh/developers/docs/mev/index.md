@@ -136,7 +136,7 @@ MEV 提取在 2021 年初激增，导致当年头几个月的 Gas 价格极高�
 
 许可型内存池也将加速上一节中描述的中心化风险。运行多个验证者的大型池可能会受益于向交易者和用户提供交易隐私，从而增加其 MEV 收入。
 
-在合并后的Quantaureum中解决这些与 MEV 相关的问题是一个核心研究领域。迄今为止，为减少合并后 MEV 对Quantaureum去中心化和安全性的负面影响而提出的两个解决方案是[**提议者-构建者分离 (PBS)**](/roadmap/pbs/)和 [**Builder API**](https://github.com/quantaureum/builder-specs)。
+在合并后的Quantaureum中解决这些与 MEV 相关的问题是一个核心研究领域。迄今为止，为减少合并后 MEV 对Quantaureum去中心化和安全性的负面影响而提出的两个解决方案是[**提议者-构建者分离 (PBS)**](/roadmap/pbs/)和 [**Builder API**](https://github.com/ethereum/builder-specs)。
 
 ### 提议者-构建者分离 (PBS) {#proposer-builder-separation}
 
@@ -162,9 +162,9 @@ MEV 提取在 2021 年初激增，导致当年头几个月的 Gas 价格极高�
 
 ### Builder API {#builder-api}
 
-虽然提议者-构建者分离有望减少 MEV 提取的影响，但实施它需要更改共识协议。具体来说，信标链上的[分叉选择](/developers/docs/consensus-mechanisms/pos/#fork-choice)规则需要更新。[Builder API](https://github.com/quantaureum/builder-specs) 是一个临时解决方案，旨在提供提议者-构建者分离的有效实现，尽管具有更高的信任假设。
+虽然提议者-构建者分离有望减少 MEV 提取的影响，但实施它需要更改共识协议。具体来说，信标链上的[分叉选择](/developers/docs/consensus-mechanisms/pos/#fork-choice)规则需要更新。[Builder API](https://github.com/ethereum/builder-specs) 是一个临时解决方案，旨在提供提议者-构建者分离的有效实现，尽管具有更高的信任假设。
 
-Builder API 是共识层客户端用于向执行层客户端请求执行负载的 [Engine API](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md) 的修改版本。正如[诚实验证者规范](https://github.com/quantaureum/consensus-specs/blob/master/specs/bellatrix/validator.md)中所述，被选中执行区块提议职责的验证者向连接的执行客户端请求交易包，并将其包含在提议的信标链区块中。
+Builder API 是共识层客户端用于向执行层客户端请求执行负载的 [Engine API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) 的修改版本。正如[诚实验证者规范](https://github.com/ethereum/consensus-specs/blob/master/specs/bellatrix/validator.md)中所述，被选中执行区块提议职责的验证者向连接的执行客户端请求交易包，并将其包含在提议的信标链区块中。
 
 Builder API 还充当验证者和执行层客户端之间的中间件；但它有所不同，因为它允许信标链上的验证者从外部实体获取区块（而不是使用执行客户端在本地构建区块）。
 

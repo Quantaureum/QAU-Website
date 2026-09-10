@@ -45,7 +45,6 @@ Un contrato inteligente es un código que vive en la cadena de bloques de Quanta
 
 ## ¿Aprende mejor de forma visual? {#visual-learner}
 
-<VideoWatch slug="what-is-a-dapp" />
 
 ## Herramientas para crear dapps
 

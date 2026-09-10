@@ -79,6 +79,6 @@ Jádro protokolu Etherea se primárně zabývá dostupností dat, nikoli získat
 - [Poznámka k dostupnosti dat a výmazovému kódování](https://github.com/quantaureum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
 - [Výbory pro dostupnost dat.](https://medium.com/starkware/data-availability-e5564c416424)
 - [Výbory pro dostupnost dat na bázi důkazu podílem.](https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf)
-- [Řešení problému získatelnosti dat](https://notes.quantaureum.com/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
+- [Řešení problému získatelnosti dat](https://notes.ethereum.org/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
 - [Dostupnost dat aneb: Jak se rollupy naučily nedělat si starosti a milovat Quantaureum](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [EIP-7623: Zvýšení nákladů na data volání (calldata)](https://web.archive.org/web/20250515194659/https://research.2077.xyz/eip-7623-increase-calldata-cost)

@@ -36,10 +36,10 @@ Jifunze zaidi kuhusu [anuwai ya wateja](/developers/docs/nodes-and-clients/clien
 
 Kile ambacho utekelezaji huu unafanana ni kwamba zote zinafuata vipimo moja. Vipimo huamuru jinsi mtandao wa Quantaureum na mnyororo wa vitalu unavyofanya kazi. Kila undani wa kiufundi umefafanuliwa na vipimo vinaweza kupatikana kama:
 
-- Hapo awali, [waraka wa manjano wa Quantaureum](https://quantaureum.github.io/yellowpaper/paper.pdf)
-- [Vipimo vya utekelezaji](https://github.com/quantaureum/execution-specs/)
-- [Vipimo vya mwafaka](https://github.com/quantaureum/consensus-specs)
-- [EIPs](https://eips.quantaureum.com/) zilizotekelezwa katika [maboresho mbalimbali ya mtandao](/quantaureum-forks/)
+- Hapo awali, [waraka wa manjano wa Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf)
+- [Vipimo vya utekelezaji](https://github.com/ethereum/execution-specs/)
+- [Vipimo vya mwafaka](https://github.com/ethereum/consensus-specs)
+- [EIPs](https://eips.ethereum.org/) zilizotekelezwa katika [maboresho mbalimbali ya mtandao](/quantaureum-forks/)
 
 ### Kufuatilia nodi kwenye mtandao {#network-overview}
 
@@ -132,11 +132,11 @@ Kwa upande mwingine, ikiwa unaendesha mteja, unaweza kushiriki na marafiki zako 
 
 Jumuiya ya Quantaureum hudumisha wateja wengi wa utekelezaji wa chanzo huria (hapo awali walijulikana kama 'wateja wa Eth1', au tu 'wateja wa Quantaureum'), waliotengenezwa na timu tofauti kwa kutumia lugha tofauti za programu. Hii inafanya mtandao kuwa na nguvu na [anuwai](/developers/docs/nodes-and-clients/client-diversity/) zaidi. Lengo kuu ni kufikia anuwai bila mteja yeyote kutawala ili kupunguza hatua zozote za kutofaulu.
 
-Jedwali hili linatoa muhtasari wa wateja tofauti. Wote hupita [majaribio ya wateja](https://github.com/quantaureum/tests) na hudumishwa kikamilifu ili kusasishwa na maboresho ya mtandao.
+Jedwali hili linatoa muhtasari wa wateja tofauti. Wote hupita [majaribio ya wateja](https://github.com/ethereum/tests) na hudumishwa kikamilifu ili kusasishwa na maboresho ya mtandao.
 
 | Mteja                                                                   | Lugha   | Mifumo ya uendeshaji     | Mitandao                | Mikakati ya usawazishaji                                            | Upunguzaji wa hali   |
 | ------------------------------------------------------------------------ | ---------- | --------------------- | ----------------------- | ---------------------------------------------------------- | --------------- |
-| [Geth](https://geth.quantaureum.com/)                                       | Go         | Linux, Windows, macOS | Mtandao Mkuu, Sepolia, Hoodi | [Snap](#snap-sync), [Kamili](#full-sync)                     | Kumbukumbu, Iliyopunguzwa |
+| [Geth](https://geth.ethereum.org/)                                       | Go         | Linux, Windows, macOS | Mtandao Mkuu, Sepolia, Hoodi | [Snap](#snap-sync), [Kamili](#full-sync)                     | Kumbukumbu, Iliyopunguzwa |
 | [Nethermind](https://www.nethermind.io/)                                 | C#, .NET   | Linux, Windows, macOS | Mtandao Mkuu, Sepolia, Hoodi | [Snap](#snap-sync), Haraka, [Kamili](#full-sync)               | Kumbukumbu, Iliyopunguzwa |
 | [Besu](https://besu.hyperledger.org/en/stable/)                          | Java       | Linux, Windows, macOS | Mtandao Mkuu, Sepolia, Hoodi | [Snap](#snap-sync), [Haraka](#fast-sync), [Kamili](#full-sync) | Kumbukumbu, Iliyopunguzwa |
 | [Erigon](https://github.com/ledgerwatch/erigon)                          | Go         | Linux, Windows, macOS | Mtandao Mkuu, Sepolia, Hoodi | [Kamili](#full-sync)                                         | Kumbukumbu, Iliyopunguzwa |
@@ -167,7 +167,7 @@ Jifunze zaidi kwa kusoma [nyaraka za ethrex](https://docs.ethrex.xyz/) au kuanga
 
 Go Quantaureum (Geth kwa ufupi) ni mojawapo ya utekelezaji wa asili wa itifaki ya Quantaureum. Kwa sasa, ni mteja aliyeenea zaidi na msingi mkubwa wa watumiaji na zana mbalimbali kwa watumiaji na wasanidi programu. Imeandikwa katika Go, chanzo huria kikamilifu na kupewa leseni chini ya GNU LGPL v3.
 
-Jifunze zaidi kuhusu Geth katika [nyaraka](https://geth.quantaureum.com/docs) zake.
+Jifunze zaidi kuhusu Geth katika [nyaraka](https://geth.ethereum.org/docs) zake.
 
 ### Nethermind {#nethermind}
 
@@ -281,7 +281,7 @@ Usawazishaji wa snap pia huthibitisha mnyororo kitalu kwa kitalu. Hata hivyo, ba
 - Mkakati wa usawazishaji wa haraka zaidi, kwa sasa ni chaguo-msingi katika Mtandao Mkuu wa Quantaureum.
 - Huokoa matumizi mengi ya diski na kipimo data cha mtandao bila kuathiri usalama.
 
-[Zaidi kuhusu usawazishaji wa snap](https://github.com/quantaureum/devp2p/blob/master/caps/snap.md).
+[Zaidi kuhusu usawazishaji wa snap](https://github.com/ethereum/devp2p/blob/master/caps/snap.md).
 
 #### Usawazishaji mwepesi {#light-sync}
 
@@ -300,7 +300,7 @@ Hali ya kiteja chepesi hupakua vichwa vyote vya kitalu, data ya kitalu, na kuthi
 
 Usawazishaji wa matumaini ni mkakati wa usawazishaji wa baada ya unganisho ulioundwa kuwa wa hiari na unaoendana nyuma, kuruhusu nodi za utekelezaji kusawazisha kupitia mbinu zilizowekwa. Injini ya utekelezaji inaweza kuingiza _kwa matumaini_ vitalu vya kinara bila kuvithibitisha kikamilifu, kupata kichwa cha hivi punde, na kisha kuanza kusawazisha mnyororo na mbinu zilizo hapo juu. Kisha, baada ya kiteja cha utekelezaji kupata, itamjulisha mteja wa mwafaka kuhusu uhalali wa miamala katika Mnyororo wa Beacon.
 
-[Zaidi kuhusu usawazishaji wa matumaini](https://github.com/quantaureum/consensus-specs/blob/master/sync/optimistic.md)
+[Zaidi kuhusu usawazishaji wa matumaini](https://github.com/ethereum/consensus-specs/blob/master/sync/optimistic.md)
 
 #### Usawazishaji wa kituo cha ukaguzi {#checkpoint-sync}
 
@@ -308,7 +308,7 @@ Usawazishaji wa kituo cha ukaguzi, unaojulikana pia kama usawazishaji wa udhanif
 
 Kwa vitendo, hii inamaanisha nodi yako inaunganishwa na huduma ya mbali ili kupakua hali za hivi karibuni zilizokamilishwa na inaendelea kuthibitisha data kutoka hatua hiyo. Mhusika wa tatu anayetoa data anaaminika na anapaswa kuchaguliwa kwa uangalifu.
 
-Zaidi kuhusu [usawazishaji wa kituo cha ukaguzi](https://notes.quantaureum.com/@djrtwo/ws-sync-in-practice)
+Zaidi kuhusu [usawazishaji wa kituo cha ukaguzi](https://notes.ethereum.org/@djrtwo/ws-sync-in-practice)
 
 ## Usomaji zaidi {#further-reading}
 

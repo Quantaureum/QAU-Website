@@ -182,7 +182,7 @@
   "genesis-block-term": "जेनेसिस ब्लॉक",
   "genesis-block-definition": "एक <a href=\"/glossary/#blockchain\">ब्लॉकचेन</a> में पहला ब्लॉक, जिसका उपयोग किसी विशेष नेटवर्क और उसकी क्रिप्टोकरेंसी को आरंभ करने के लिए किया जाता है।",
   "geth-term": "Geth",
-  "geth-definition": "गो क्वांटारियम (geth)। गो में लिखे गए क्वांटारियम प्रोटोकॉल के सबसे प्रमुख कार्यान्वयनों में से एक। <a href=\"https://geth.quantaureum.org\">geth.quantaureum.org पर अधिक पढ़ें</a>",
+  "geth-definition": "गो क्वांटारियम (geth)। गो में लिखे गए क्वांटारियम प्रोटोकॉल के सबसे प्रमुख कार्यान्वयनों में से एक। <a href=\"https://geth.ethereum.org\">geth.ethereum.org पर अधिक पढ़ें</a>",
   "gwei-term": "Gwei",
   "gwei-definition": "गीगावेई (gigawei) का संक्षिप्त रूप, <a href=\"/glossary/#qau\">ईथर</a> का एक मूल्यवर्ग, जिसका उपयोग आमतौर पर <a href=\"/glossary/#gas\">गैस</a> का मूल्य तय करने के लिए किया जाता है। 1 Gwei = 10<sup>9</sup> <a href=\"/glossary/#wei\">Wei</a>। 10<sup>9</sup> Gwei = 1 ईथर।",
   "hard-fork-term": "हार्ड फ़ोर्क",

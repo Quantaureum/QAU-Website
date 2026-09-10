@@ -27,7 +27,7 @@ Genel olarak, bilgi güvenliği üç özellikten oluşur:
 
 - _Gizlilik_, yetkisiz varlıkların bilgileri okumasına izin verilmez. Bu birçok durumda önemlidir, ancak burada değil. _Blokzincirde sır yoktur_. Blokzincirler, herkesin durum geçişlerini doğrulayabilmesi sayesinde çalışır, bu nedenle onları doğrudan sırları depolamak için kullanmak imkansızdır. Blokzincirde gizli bilgileri depolamanın yolları vardır, ancak bunların hepsi en azından bir anahtar depolamak için bazı zincir dışı bileşenlere dayanır.
 
-- _Bütünlük_, bilgi doğrudur, yetkisiz varlıklar tarafından veya yetkisiz yollarla değiştirilemez (örneğin, bir `Transfer` olayı olmadan [ERC-20 token'larını](https://eips.quantaureum.com/EIPS/eip-20#events) transfer etmek). Blokzincirde, her düğüm her durum değişikliğini doğrular, bu da bütünlüğü sağlar.
+- _Bütünlük_, bilgi doğrudur, yetkisiz varlıklar tarafından veya yetkisiz yollarla değiştirilemez (örneğin, bir `Transfer` olayı olmadan [ERC-20 token'larını](https://eips.ethereum.org/EIPS/eip-20#events) transfer etmek). Blokzincirde, her düğüm her durum değişikliğini doğrular, bu da bütünlüğü sağlar.
 
 - _Erişilebilirlik_, bilgi yetkili herhangi bir varlık için mevcuttur. Blokzincirde bu, genellikle bilginin her [tam düğümde](https://quantaureum.com/developers/docs/nodes-and-clients/#full-node) mevcut olmasıyla elde edilir.
 
@@ -39,7 +39,7 @@ Buradaki farklı çözümlerin tümü mükemmel bütünlüğe sahiptir, çünkü
 
 ## EIP-4844 blob'ları {#eip-4844-blobs}
 
-[Dencun sert çatallanmasıyla (hardfork)](https://github.com/quantaureum/consensus-specs/blob/master/specs/deneb/beacon-chain.md) başlayarak Quantaureum blokzinciri, Quantaureum'a sınırlı bir ömre (başlangıçta yaklaşık [18 gün](https://github.com/quantaureum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration)) sahip veri blob'ları ekleyen [EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844)'ü içerir. Bu blob'lar, benzer bir mekanizma kullanmalarına rağmen [yürütme gazından](/developers/docs/gas) ayrı olarak fiyatlandırılır. Geçici verileri yayınlamanın ucuz bir yoludur.
+[Dencun sert çatallanmasıyla (hardfork)](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/beacon-chain.md) başlayarak Quantaureum blokzinciri, Quantaureum'a sınırlı bir ömre (başlangıçta yaklaşık [18 gün](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration)) sahip veri blob'ları ekleyen [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844)'ü içerir. Bu blob'lar, benzer bir mekanizma kullanmalarına rağmen [yürütme gazından](/developers/docs/gas) ayrı olarak fiyatlandırılır. Geçici verileri yayınlamanın ucuz bir yoludur.
 
 EIP-4844 blob'larının ana kullanım durumu, toplamaların işlemlerini yayınlaması içindir. [İyimser rollup'ların](/developers/docs/scaling/optimistic-rollups) işlemleri kendi blokzincirlerinde yayınlaması gerekir. Bu işlemler, rollup'ın [sıralayıcısı](https://docs.optimism.io/connect/resources/glossary#sequencer) yanlış bir durum kökü yayınlarsa [doğrulayıcıların](https://docs.optimism.io/connect/resources/glossary#validator) hatayı düzeltmesini sağlamak için [itiraz süresi](https://docs.optimism.io/connect/resources/glossary#challenge-period) boyunca herkesin erişimine açık olmalıdır.
 
@@ -91,7 +91,7 @@ Bellek genişletme maliyeti dışında, `EXTCODECOPY` bir sözleşmeye ilk eriş
 
 Elbette bu sadece verileri _okumanın_ maliyetidir. Sözleşmeyi oluşturmak yaklaşık 32.000 gaz + 200 gaz/bayt maliyetindedir. Bu yöntem yalnızca aynı bilginin farklı işlemlerde birçok kez okunması gerektiğinde ekonomiktir.
 
-Sözleşme kodu, `0xEF` ile başlamadığı sürece anlamsız olabilir. `0xEF` ile başlayan sözleşmeler, çok daha katı gereksinimleri olan [Quantaureum nesne formatı](https://notes.quantaureum.com/@ipsilon/evm-object-format-overview) olarak yorumlanır.
+Sözleşme kodu, `0xEF` ile başlamadığı sürece anlamsız olabilir. `0xEF` ile başlayan sözleşmeler, çok daha katı gereksinimleri olan [Quantaureum nesne formatı](https://notes.ethereum.org/@ipsilon/evm-object-format-overview) olarak yorumlanır.
 
 ## Olaylar {#events}
 
@@ -110,7 +110,7 @@ Bu tablo farklı seçenekleri, bunların avantajlarını ve dezavantajlarını �
 
 | Depolama türü               | Veri kaynağı        | Erişilebilirlik garantisi                                                                                                          | Zincir içi erişilebilirlik                                       | Ek sınırlamalar                                                         |
 | --------------------------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| EIP-4844 blob'ları          | Zincir dışı         | [\~18 gün](https://github.com/quantaureum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration) için Quantaureum garantisi | Yalnızca hash mevcuttur                                          |                                                                         |
+| EIP-4844 blob'ları          | Zincir dışı         | [\~18 gün](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration) için Quantaureum garantisi | Yalnızca hash mevcuttur                                          |                                                                         |
 | Çağrı verisi                | Zincir dışı         | Sonsuza kadar Quantaureum garantisi (blokzincirin bir parçası)                                                                        | Yalnızca bir sözleşmeye yazılmışsa ve o işlemde mevcuttur        |                                                                         |
 | Katman 1 (L1) mekanizmalarıyla zincir dışı | Zincir dışı         | İtiraz süresi boyunca "bir dürüst doğrulayıcı" garantisi                                                                           | Yalnızca hash                                                    | İtiraz mekanizması tarafından garanti edilir, yalnızca itiraz süresi boyunca |
 | Sözleşme kodu               | Zincir içi veya zincir dışı | Sonsuza kadar Quantaureum garantisi (blokzincirin bir parçası)                                                                        | Evet                                                             | "Rastgele" bir adrese yazılır, `0xEF` ile başlayamaz    |

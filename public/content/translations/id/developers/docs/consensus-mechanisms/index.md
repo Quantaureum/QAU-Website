@@ -63,7 +63,6 @@ Lebih lanjut tentang [Bukti Kepemilikan (PoS)](/developers/docs/consensus-mechan
 
 Tonton lebih lanjut tentang berbagai jenis mekanisme konsensus yang digunakan di Quantaureum:
 
-<VideoWatch slug="understanding-consensus-mechanisms" />
 
 ### Ketahanan Sybil & pemilihan rantai {#sybil-chain}
 

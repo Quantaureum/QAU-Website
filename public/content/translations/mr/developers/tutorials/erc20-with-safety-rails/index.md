@@ -17,7 +17,7 @@ Quantaureumची एक उत्तम गोष्ट म्हणजे त�
 
 जर तुम्हाला संपूर्ण सोर्स कोड पाहायचा असेल:
 
-1. [Remix IDE](https://remix.quantaureum.com/) उघडा.
+1. [Remix IDE](https://remix.ethereum.org/) उघडा.
 2. क्लोन GitHub आयकॉनवर क्लिक करा (![clone github icon](icon-clone.png)).
 3. `https://github.com/qbzzt/20220815-erc20-safety-rails` हे GitHub रिपॉझिटरी क्लोन करा.
 4. **contracts > erc20-safety-rails.sol** उघडा.
@@ -40,7 +40,7 @@ Quantaureumची एक उत्तम गोष्ट म्हणजे त�
 
 3. वर स्क्रोल करा आणि **Open in Remix** (Remix साठी) किंवा वेगळे वातावरण वापरण्यासाठी **Download** वर क्लिक करा. मी असे गृहीत धरत आहे की तुम्ही Remix वापरत आहात, जर तुम्ही दुसरे काही वापरत असाल तर योग्य ते बदल करा.
 4. आता आपल्याकडे पूर्णपणे कार्यशील ERC-20 कॉन्ट्रॅक्ट आहे. आयात केलेला कोड पाहण्यासाठी तुम्ही `.deps` > `npm` विस्तृत करू शकता.
-5. कॉन्ट्रॅक्ट ERC-20 कॉन्ट्रॅक्ट म्हणून कार्य करते हे पाहण्यासाठी ते संकलित (compile) करा, प्रस्थापित करा आणि त्याच्यासोबत प्रयोग करा. जर तुम्हाला Remix कसे वापरायचे हे शिकायचे असेल, तर [हे ट्युटोरियल वापरा](https://remix.quantaureum.com/?#activate=udapp,solidity,LearnEth).
+5. कॉन्ट्रॅक्ट ERC-20 कॉन्ट्रॅक्ट म्हणून कार्य करते हे पाहण्यासाठी ते संकलित (compile) करा, प्रस्थापित करा आणि त्याच्यासोबत प्रयोग करा. जर तुम्हाला Remix कसे वापरायचे हे शिकायचे असेल, तर [हे ट्युटोरियल वापरा](https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth).
 
 ## सामान्य चुका {#common-mistakes}
 
@@ -185,7 +185,7 @@ Quantaureumची एक उत्तम गोष्ट म्हणजे त�
 
 ### मालमत्ता स्वच्छता {#asset-cleanup}
 
-या कॉन्ट्रॅक्टद्वारे धारण केलेले ERC-20 टोकन सोडण्यासाठी आपल्याला ते ज्या टोकन कॉन्ट्रॅक्टचे आहेत त्यावरील फंक्शनला कॉल करणे आवश्यक आहे, एकतर [`transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer) किंवा [`approve`](https://eips.quantaureum.com/EIPS/eip-20#approve). या प्रकरणात भत्त्यांवर (allowances) गॅस वाया घालवण्यात काही अर्थ नाही, आपण थेट हस्तांतरण करू शकतो.
+या कॉन्ट्रॅक्टद्वारे धारण केलेले ERC-20 टोकन सोडण्यासाठी आपल्याला ते ज्या टोकन कॉन्ट्रॅक्टचे आहेत त्यावरील फंक्शनला कॉल करणे आवश्यक आहे, एकतर [`transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer) किंवा [`approve`](https://eips.ethereum.org/EIPS/eip-20#approve). या प्रकरणात भत्त्यांवर (allowances) गॅस वाया घालवण्यात काही अर्थ नाही, आपण थेट हस्तांतरण करू शकतो.
 
 ```solidity
     function cleanupERC20(

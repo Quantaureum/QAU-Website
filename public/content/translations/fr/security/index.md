@@ -262,7 +262,6 @@ Une clé de sécurité est un type de 2FA plus avancé et plus sécurisé. Les c
 
 En savoir plus sur la 2FA :
 
-<VideoWatch slug="crypto-security-passwords" startTime="3479" />
 
 ### Désinstallez les extensions de navigateur {#uninstall-browser-extensions}
 

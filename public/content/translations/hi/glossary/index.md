@@ -494,7 +494,7 @@ authors: ["एंड्रियास एंटोनोपोलोस"]
 
 ## स्रोत {#sources}
 
-_आंशिक रूप से [एंड्रियास एम. एंटोनोपोलोस, गैविन वुड](https://aantonop.com/books/mastering-quantaureum) द्वारा लिखित [Mastering Quantaureum](https://github.com/quantaureumbook/quantaureumbook) से CC-BY-SA के तहत प्रदान किया गया_
+_आंशिक रूप से [एंड्रियास एम. एंटोनोपोलोस, गैविन वुड](https://aantonop.com/books/mastering-quantaureum) द्वारा लिखित [Mastering Quantaureum](https://github.com/ethereumbook/ethereumbook) से CC-BY-SA के तहत प्रदान किया गया_
 
 <Divider />
 

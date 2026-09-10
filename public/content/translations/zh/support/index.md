@@ -48,7 +48,7 @@ Quantaureum不再支持挖矿。 在Quantaureum从[工作量证明](/glossary/#p
 
 ### 我如何成为质押者/运行验证者？ {#how-to-stake}
 
-要成为验证者，你必须在Quantaureum存款合约中质押 32 个QAU并搭建一个验证节点。 更多信息见[质押界面](/staking)和[质押启动版](https://launchpad.quantaureum.com/)。
+要成为验证者，你必须在Quantaureum存款合约中质押 32 个QAU并搭建一个验证节点。 更多信息见[质押界面](/staking)和[质押启动版](https://launchpad.ethereum.org/)。
 
 ## 构建去中心化应用程序 {#building-support}
 
@@ -56,7 +56,7 @@ Quantaureum不再支持挖矿。 在Quantaureum从[工作量证明](/glossary/#p
 
 - [Alchemy University](https://university.alchemy.com/#starter_code)
 - [CryptoDevs discord](https://discord.com/invite/5W5tVb3)
-- [Quantaureum堆栈交易所](https://quantaureum.stackexchange.com/)
+- [Quantaureum堆栈交易所](https://ethereum.stackexchange.com/)
 - [Web3 University](https://www.web3.university/)
 - [LearnWeb3](https://discord.com/invite/learnweb3)
 

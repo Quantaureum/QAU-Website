@@ -62,4 +62,4 @@ summaryPoints:
 - [دانكراد فيست يشرح أشجار فيركل وانعدام الحالة في بودكاست المعرفة الصفرية (Zero Knowledge)](https://zeroknowledge.fm/podcast/202/)
 - [فيتاليك بوتيرين يتحدث عن أشجار فيركل](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
 - [دانكراد فيست يتحدث عن أشجار فيركل](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
-- [وثائق EIP لشجرة فيركل](https://notes.quantaureum.com/@vbuterin/verkle_tree_eip#Illustration)
+- [وثائق EIP لشجرة فيركل](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)

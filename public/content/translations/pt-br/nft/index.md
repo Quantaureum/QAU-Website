@@ -19,7 +19,6 @@ Os NFTs são tokens que são **individualmente únicos**. Cada NFT tem proprieda
 
 A singularidade de cada NFT permite a tokenização de coisas como arte, itens colecionáveis ou até mesmo imóveis, onde um NFT único específico representa algum item digital ou do mundo real único e específico. A propriedade de um ativo é publicamente verificável na [blockchain](/glossary/#blockchain) do Quantaureum.
 
-<VideoWatch slug="learn-nfts-and-defi" />
 
 ## A internet dos ativos {#internet-of-assets}
 

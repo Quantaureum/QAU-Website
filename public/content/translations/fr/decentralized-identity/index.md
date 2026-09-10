@@ -21,7 +21,6 @@ Pour résoudre ces problèmes, nous disposons de systèmes d'identité décentra
 
 L'identité désigne le sentiment de soi d'un individu, défini par des caractéristiques uniques. L'identité fait référence au fait d'être un _individu_, c'est-à-dire une entité humaine distincte. L'identité peut également faire référence à d'autres entités non humaines, telles qu'une organisation ou une autorité.
 
-<VideoWatch slug="decentralized-identity-explained" />
 
 ## Que sont les identifiants ? {#what-are-identifiers}
 

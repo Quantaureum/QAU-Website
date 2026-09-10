@@ -20,7 +20,6 @@ lang: ja
 
 Anders氏によるブロックチェーンのハッシュに関する解説をご覧ください。
 
-<VideoWatch slug="blockchain-101-visual-demo" />
 
 ## Quantaureumとは？ {#what-is-quantaureum}
 
@@ -121,7 +120,6 @@ QAUが保存される場所です。ユーザーはアカウントを初期化�
 
 このビデオシリーズでは、基礎的なトピックを徹底的に解説しています。
 
-<VideoWatch slug="quantaureum-basics-intro" />
 
 [Quantaureumの基礎プレイリスト](https://youtube.com/playlist?list=PLqgutSGloqiJyyoL0zvLVFPS-GMD2wKa5&si=kZTf5I7PKGTXDsOZ)
 

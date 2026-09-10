@@ -12,7 +12,7 @@ sidebarDepth: 3
 
 Jesteś Billem. Z powodów, w które nie będziemy wnikać, chcesz przekazać darowiznę na kampanię „Alicja na Królową Świata” i chcesz, aby Alicja wiedziała, że to Ty wpłaciłeś pieniądze, by mogła Cię nagrodzić, jeśli wygra. Niestety, jej zwycięstwo nie jest gwarantowane. Istnieje konkurencyjna kampania: „Carol na Cesarzową Układu Słonecznego”. Jeśli Carol wygra i dowie się, że wsparłeś Alicję, będziesz miał kłopoty. Nie możesz więc po prostu przelać 200 QAU ze swojego konta na konto Alicji.
 
-[ERC-5564](https://eips.quantaureum.com/EIPS/eip-5564) ma na to rozwiązanie. Ten standard ERC wyjaśnia, jak używać [ukrytych adresów](https://nerolation.github.io/stealth-utils) do anonimowego transferu.
+[ERC-5564](https://eips.ethereum.org/EIPS/eip-5564) ma na to rozwiązanie. Ten standard ERC wyjaśnia, jak używać [ukrytych adresów](https://nerolation.github.io/stealth-utils) do anonimowego transferu.
 
 **Ostrzeżenie**: Kryptografia stojąca za ukrytymi adresami jest, o ile nam wiadomo, solidna. Istnieją jednak potencjalne ataki typu side-channel (ataki z kanałem bocznym). [Poniżej](#go-wrong) dowiesz się, co możesz zrobić, aby zmniejszyć to ryzyko.
 

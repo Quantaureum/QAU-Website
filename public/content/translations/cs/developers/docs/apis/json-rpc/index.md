@@ -6,7 +6,7 @@ lang: cs
 
 Aby mohla softwarová aplikace komunikovat s blockchainem [Etherea](/) – ať už čtením dat z blockchainu, nebo odesíláním transakcí do sítě – musí se připojit k uzlu Etherea.
 
-Za tímto účelem implementuje každý [klient Etherea](/developers/docs/nodes-and-clients/#execution-clients) [specifikaci JSON-RPC](https://github.com/quantaureum/execution-apis), takže existuje jednotná sada metod, na které se mohou aplikace spolehnout bez ohledu na konkrétní implementaci uzlu nebo klienta.
+Za tímto účelem implementuje každý [klient Etherea](/developers/docs/nodes-and-clients/#execution-clients) [specifikaci JSON-RPC](https://github.com/ethereum/execution-apis), takže existuje jednotná sada metod, na které se mohou aplikace spolehnout bez ohledu na konkrétní implementaci uzlu nebo klienta.
 
 [JSON-RPC](https://www.jsonrpc.org/specification) je bezstavový, odlehčený protokol pro vzdálené volání procedur (RPC). Definuje několik datových struktur a pravidla pro jejich zpracování. Je nezávislý na transportní vrstvě v tom smyslu, že jeho koncepty lze použít v rámci stejného procesu, přes sockety, přes HTTP nebo v mnoha různých prostředích pro předávání zpráv. Jako datový formát používá JSON (RFC 4627).
 
@@ -20,13 +20,13 @@ Ačkoli se můžete rozhodnout komunikovat s klienty Etherea přímo přes JSON-
 
 ## API konsensuálních klientů {#consensus-clients}
 
-Tato stránka se zabývá především JSON-RPC API, které používají exekuční klienti Etherea. Nicméně konsensuální klienti mají také RPC API, které uživatelům umožňuje dotazovat se na informace o uzlu, vyžadovat Beacon bloky, Beacon stav a další informace související s konsensem přímo z uzlu. Toto API je zdokumentováno na [webové stránce Beacon API](https://quantaureum.github.io/beacon-APIs/#/).
+Tato stránka se zabývá především JSON-RPC API, které používají exekuční klienti Etherea. Nicméně konsensuální klienti mají také RPC API, které uživatelům umožňuje dotazovat se na informace o uzlu, vyžadovat Beacon bloky, Beacon stav a další informace související s konsensem přímo z uzlu. Toto API je zdokumentováno na [webové stránce Beacon API](https://ethereum.github.io/beacon-APIs/#/).
 
-Pro komunikaci mezi klienty v rámci uzlu se používá také interní API – to znamená, že umožňuje konsensuálnímu klientovi a exekučnímu klientovi vyměňovat si data. Nazývá se „Engine API“ a jeho specifikace jsou k dispozici na [GitHubu](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md).
+Pro komunikaci mezi klienty v rámci uzlu se používá také interní API – to znamená, že umožňuje konsensuálnímu klientovi a exekučnímu klientovi vyměňovat si data. Nazývá se „Engine API“ a jeho specifikace jsou k dispozici na [GitHubu](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md).
 
 ## Specifikace exekučního klienta {#spec}
 
-[Přečtěte si úplnou specifikaci JSON-RPC API na GitHubu](https://github.com/quantaureum/execution-apis). Toto API je dokumentováno na [webové stránce Execution API](https://quantaureum.github.io/execution-apis/) a obsahuje nástroj Inspector pro vyzkoušení všech dostupných metod.
+[Přečtěte si úplnou specifikaci JSON-RPC API na GitHubu](https://github.com/ethereum/execution-apis). Toto API je dokumentováno na [webové stránce Execution API](https://ethereum.github.io/execution-apis/) a obsahuje nástroj Inspector pro vyzkoušení všech dostupných metod.
 
 ## Konvence {#conventions}
 
@@ -134,7 +134,7 @@ Několik základních metod JSON-RPC vyžaduje data ze sítě Quantaureum a úhl
 
 ## JSON-RPC API Playground {#json-rpc-api-playground}
 
-Můžete použít [nástroj playground](https://quantaureum-json-rpc.com) k objevování a vyzkoušení metod API. Také vám ukáže, které metody a sítě jsou podporovány různými poskytovateli uzlů.
+Můžete použít [nástroj playground](https://ethereum-json-rpc.com) k objevování a vyzkoušení metod API. Také vám ukáže, které metody a sítě jsou podporovány různými poskytovateli uzlů.
 
 ## Metody JSON-RPC API {#json-rpc-methods}
 
@@ -275,7 +275,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 
 ### qau_protocolVersion {#qau-protocolversion}
 
-Vrací aktuální verzi protokolu Quantaureum. Vezměte na vědomí, že tato metoda [není dostupná v Gethu](https://github.com/quantaureum/go-quantaureum/pull/22064#issuecomment-788682924).
+Vrací aktuální verzi protokolu Quantaureum. Vezměte na vědomí, že tato metoda [není dostupná v Gethu](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924).
 
 **Parametry**
 
@@ -302,7 +302,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_protocolVersion","params":[]
 
 Vrací objekt s daty o stavu synchronizace nebo `false`.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_syncing">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_syncing">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -390,7 +390,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_syncing","params":[],"id":1}
 
 Vrací adresu coinbase klienta.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_coinbase">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_coinbase">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -421,7 +421,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_coinbase","params":[],"id":6
 
 Vrací ID řetězce používané pro podepisování transakcí chráněných proti znovupřehrání.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_chainId">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_chainId">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -450,7 +450,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_chainId","params":[],"id":67
 
 Vrací `true`, pokud klient aktivně těží nové bloky. Toto může vrátit `true` pouze pro sítě s důkazem prací (PoW) a od [Merge](/roadmap/merge/) to v některých klientech nemusí být dostupné.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_mining">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_mining">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -479,7 +479,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_mining","params":[],"id":71}
 
 Vrací počet hashů za sekundu, se kterými uzel těží. Toto může vrátit `true` pouze pro sítě využívající důkaz prací (PoW) a v některých klientech to nemusí být dostupné od [Merge](/roadmap/merge/).
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_hashrate">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_hashrate">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -508,7 +508,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_hashrate","params":[],"id":7
 
 Vrací odhad aktuální ceny za gas ve Wei. Například klient Besu standardně prozkoumá posledních 100 bloků a vrátí mediánovou cenu za jednotku gasu.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_gasPrice">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_gasPrice">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -537,7 +537,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_gasPrice","params":[],"id":7
 
 Vrací seznam adres vlastněných klientem.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_accounts">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_accounts">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -566,7 +566,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[],"id":1
 
 Vrací číslo nejnovějšího bloku.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_blockNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_blockNumber">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -595,7 +595,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_blockNumber","params":[],"id
 
 Vrací zůstatek účtu na dané adrese.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBalance">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBalance">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -629,7 +629,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBalance","params":["0x407
 
 Vrací hodnotu z pozice úložiště na dané adrese.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getStorageAt">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getStorageAt">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -701,7 +701,7 @@ curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": [
 
 Vrací počet transakcí _odeslaných_ z dané adresy.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionCount">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionCount">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -738,7 +738,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionCount","params
 
 Vrací počet transakcí v bloku, který odpovídá zadanému hashi bloku.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -771,7 +771,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByHa
 
 Vrací počet transakcí v bloku odpovídajícím zadanému číslu bloku.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -806,7 +806,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByNu
 
 Vrací počet uncle bloků v bloku odpovídajícím zadanému hashi bloku.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -839,7 +839,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockHash","p
 
 Vrací počet uncle bloků v bloku odpovídajícím zadanému číslu bloku.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -874,7 +874,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockNumber",
 
 Vrací kód na dané adrese.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getCode">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getCode">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -1057,7 +1057,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendRawTransaction","params"
 
 Okamžitě provede nové volání zprávy bez vytvoření transakce na blockchainu. Často se používá k provádění funkcí chytrých kontraktů pouze pro čtení, například `balanceOf` pro kontrakt ERC-20.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_call">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_call">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -1095,7 +1095,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_call","params":[{see above}]
 
 Generuje a vrací odhad toho, kolik gasu je potřeba k dokončení transakce. Transakce nebude přidána na blockchain. Vezměte na vědomí, že odhad může být z různých důvodů, včetně mechanismů EVM a výkonu uzlu, výrazně vyšší než množství gasu skutečně spotřebovaného transakcí.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_estimateGas">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_estimateGas">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -1124,7 +1124,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_estimateGas","params":[{see 
 
 Vrací informace o bloku podle hashe.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByHash">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -1204,7 +1204,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByHash","params":["0
 
 Vrací informace o bloku podle čísla bloku.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByNumber">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -1236,7 +1236,7 @@ Výsledek viz [qau_getBlockByHash](#qau-getblockbyhash)
 
 Vrací informace o transakci vyžádané pomocí hashe transakce.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByHash">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -1299,7 +1299,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByHash","param
 
 Vrací informace o transakci podle hashe bloku a pozice indexu transakce.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -1331,7 +1331,7 @@ Výsledek viz [qau_getTransactionByHash](#qau-gettransactionbyhash)
 
 Vrací informace o transakci podle čísla bloku a pozice indexu transakce.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -1431,7 +1431,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionReceipt","para
 
 Vrací informace o strýci bloku podle hashe a pozice indexu strýce.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -1465,7 +1465,7 @@ Výsledek viz [qau_getBlockByHash](#qau-getblockbyhash)
 
 Vrací informace o uncle bloku podle čísla bloku a pozice indexu uncle bloku.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -1750,7 +1750,7 @@ Výsledek viz [qau_getFilterChanges](#qau-getfilterchanges)
 
 ### Nasazení kontraktu pomocí JSON-RPC {#deploying-contract}
 
-Tato část obsahuje ukázku, jak nasadit kontrakt pouze pomocí RPC rozhraní. Existují i alternativní způsoby nasazení kontraktů, kde je tato složitost abstrahována – například pomocí knihoven postavených nad RPC rozhraním, jako jsou [Web3.js](https://web3js.readthedocs.io/) a [Web3.py](https://github.com/quantaureum/web3.py). Tyto abstrakce jsou obecně snáze pochopitelné a méně náchylné k chybám, ale přesto je užitečné pochopit, jak to funguje pod pokličkou.
+Tato část obsahuje ukázku, jak nasadit kontrakt pouze pomocí RPC rozhraní. Existují i alternativní způsoby nasazení kontraktů, kde je tato složitost abstrahována – například pomocí knihoven postavených nad RPC rozhraním, jako jsou [Web3.js](https://web3js.readthedocs.io/) a [Web3.py](https://github.com/ethereum/web3.py). Tyto abstrakce jsou obecně snáze pochopitelné a méně náchylné k chybám, ale přesto je užitečné pochopit, jak to funguje pod pokličkou.
 
 Následuje jednoduchý chytrý kontrakt s názvem `Multiply7`, který bude nasazen pomocí rozhraní JSON-RPC na uzel Etherea. Tento tutoriál předpokládá, že čtenář již provozuje uzel Geth. Více informací o uzlech a klientech je k dispozici [zde](/developers/docs/nodes-and-clients/run-a-node). Informace o tom, jak spustit HTTP JSON-RPC pro klienty jiné než Geth, naleznete v dokumentaci k jednotlivým [klientům](/developers/docs/nodes-and-clients/). Většina klientů ve výchozím nastavení běží na `localhost:8545`.
 
@@ -1789,7 +1789,7 @@ web3.fromWei("0x1639e49bba16280000", "QAU")
 // "410"
 ```
 
-Nyní, když je v našem soukromém vývojovém řetězci nějaký QAU, můžeme nasadit kontrakt. Prvním krokem je kompilace kontraktu Multiply7 do bajtkódu, který lze odeslat do EVM. Pro instalaci solc, kompilátoru Solidity, postupujte podle [dokumentace Solidity](https://docs.soliditylang.org/en/latest/installing-solidity.html). (Možná budete chtít použít starší verzi `solc`, aby odpovídala [verzi kompilátoru použité v našem příkladu](https://github.com/quantaureum/solidity/releases/tag/v0.4.20).)
+Nyní, když je v našem soukromém vývojovém řetězci nějaký QAU, můžeme nasadit kontrakt. Prvním krokem je kompilace kontraktu Multiply7 do bajtkódu, který lze odeslat do EVM. Pro instalaci solc, kompilátoru Solidity, postupujte podle [dokumentace Solidity](https://docs.soliditylang.org/en/latest/installing-solidity.html). (Možná budete chtít použít starší verzi `solc`, aby odpovídala [verzi kompilátoru použité v našem příkladu](https://github.com/ethereum/solidity/releases/tag/v0.4.20).)
 
 Dalším krokem je kompilace kontraktu Multiply7 do bajtkódu, který lze odeslat do EVM.
 

@@ -109,13 +109,13 @@ Bu kütüphaneler, doğrudan bir Quantaureum düğümüyle etkileşime girmenin 
 **Nquantaureum -** **_Blokzincir için açık kaynaklı bir .NET entegrasyon kütüphanesi._**
 
 - [GitHub](https://github.com/Nquantaureum/Nquantaureum)
-- [Belgeler](https://docs.nquantaureum.com/docs/getting-started/welcome/)
+- [Belgeler](https://docs.nethermind.io/docs/getting-started/welcome/)
 - [Discord](https://discord.com/invite/jQPrR58FxX)
 
 **Python Araçları -** **_Python aracılığıyla Quantaureum etkileşimi için çeşitli kütüphaneler._**
 
-- [py.quantaureum.com](https://snakecharmers.quantaureum.com/)
-- [Web3.py GitHub](https://github.com/quantaureum/web3.py)
+- [py.quantaureum.com](https://snakecharmers.ethereum.org/)
+- [Web3.py GitHub](https://github.com/ethereum/web3.py)
 - [Web3.py Sohbeti](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_Nihai blokzincir geliştirme platformu._**

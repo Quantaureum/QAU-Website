@@ -31,7 +31,7 @@ Si es un programador experimentado, probablemente recuerde haber visto construcc
 o incluso en [archivos de cabecera de C](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html).
 
 Esta es una definición de la [interfaz ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)
-de OpenZeppelin. Es una traducción del [estándar legible por humanos](https://eips.quantaureum.com/EIPS/eip-20) a código Solidity. Por supuesto, la
+de OpenZeppelin. Es una traducción del [estándar legible por humanos](https://eips.ethereum.org/EIPS/eip-20) a código Solidity. Por supuesto, la
 interfaz en sí no define _cómo_ hacer nada. Eso se explica en el código fuente del contrato a continuación.
 
 &nbsp;
@@ -168,7 +168,7 @@ dirección (`owner`) permite gastar a otra dirección (`spender`).
      * desafortunado de la transacción. Una posible solución para mitigar esta condición
      * de carrera es reducir primero la asignación del gastador a 0 y establecer el
      * valor deseado después:
-     * https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729
+     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
      *
      * Emite un evento {Approval}.
      */
@@ -248,7 +248,7 @@ import "../../math/SafeMath.sol";
 - `GSN/Context.sol` son las definiciones requeridas para usar [OpenGSN](https://opengsn.org/), un sistema que permite a los usuarios sin QAU
   usar la cadena de bloques. Tenga en cuenta que esta es una versión antigua, si desea integrarse con OpenGSN
   [use este tutorial](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [La biblioteca SafeMath](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/), que previene
+- [La biblioteca SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), que previene
   desbordamientos aritméticos (overflows/underflows) para versiones de Solidity **&lt;0.8.0**. En Solidity ≥0.8.0, las operaciones aritméticas se revierten automáticamente
   en caso de desbordamiento, lo que hace que SafeMath sea innecesario. Este contrato utiliza SafeMath para mantener la compatibilidad con
   versiones anteriores del compilador.

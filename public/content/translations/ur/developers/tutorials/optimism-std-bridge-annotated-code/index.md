@@ -46,7 +46,7 @@ lang: ur
    - اصل میں لیئر ۱ (l1) پر موجود پل سے تھی
 6. لیئر ۲ (l2) پل چیک کرتا ہے کہ آیا لیئر ۲ (l2) پر <span dir="ltr">ERC-20</span> ٹوکن کنٹریکٹ درست ہے:
    - لیئر ۲ (l2) کنٹریکٹ رپورٹ کرتا ہے کہ اس کا لیئر ۱ (l1) ہم منصب وہی ہے جہاں سے لیئر ۱ (l1) پر ٹوکن آئے تھے
-   - لیئر ۲ (l2) کنٹریکٹ رپورٹ کرتا ہے کہ یہ درست انٹرفیس کو سپورٹ کرتا ہے ([<span dir="ltr">ERC-165</span> کا استعمال کرتے ہوئے](https://eips.quantaureum.com/EIPS/eip-165))۔
+   - لیئر ۲ (l2) کنٹریکٹ رپورٹ کرتا ہے کہ یہ درست انٹرفیس کو سپورٹ کرتا ہے ([<span dir="ltr">ERC-165</span> کا استعمال کرتے ہوئے](https://eips.ethereum.org/EIPS/eip-165))۔
 7. اگر لیئر ۲ (l2) کنٹریکٹ درست ہے، تو اسے مناسب پتے پر مناسب تعداد میں ٹوکنز ڈھالنے کے لیے کال کریں۔ اگر نہیں، تو صارف کو لیئر ۱ (l1) پر ٹوکنز کا دعویٰ کرنے کی اجازت دینے کے لیے انخلا کا عمل شروع کریں۔
 
 ### انخلا کا فلو {#withdrawal-flow}
@@ -70,7 +70,7 @@ lang: ur
 
 ### IL1ERC20Bridge {#il1erc20bridge}
 
-[اس انٹرفیس کی تعریف یہاں کی گئی ہے](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol)۔
+[اس انٹرفیس کی تعریف یہاں کی گئی ہے](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol)۔
 اس میں <span dir="ltr">ERC-20</span> ٹوکنز کو پل کرنے کے لیے درکار فنکشنز اور تعریفیں شامل ہیں۔
 
 ```solidity
@@ -236,7 +236,7 @@ interface IL1ERC20Bridge {
 
 ### IL1StandardBridge {#il1standardbridge}
 
-[اس انٹرفیس کی تعریف یہاں کی گئی ہے](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol)۔
+[اس انٹرفیس کی تعریف یہاں کی گئی ہے](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol)۔
 اس فائل میں <span dir="ltr">QAU</span> کے لیے ایونٹ اور فنکشن کی تعریفیں شامل ہیں۔
 یہ تعریفیں اوپر <span dir="ltr">ERC-20</span> کے لیے `IL1ERC20Bridge` میں بیان کردہ تعریفوں سے بہت ملتی جلتی ہیں۔
 
@@ -321,7 +321,7 @@ interface IL1StandardBridge is IL1ERC20Bridge {
 
 ### CrossDomainEnabled {#crossdomainenabled}
 
-[یہ کنٹریکٹ](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) دونوں پلوں ([لیئر ۱ (l1)](#the-l1-bridge-contract) اور [لیئر ۲ (l2)](#l2-bridge-code)) کو وراثت میں ملا ہے تاکہ دوسری لیئر کو پیغامات بھیجے جا سکیں۔
+[یہ کنٹریکٹ](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) دونوں پلوں ([لیئر ۱ (l1)](#the-l1-bridge-contract) اور [لیئر ۲ (l2)](#l2-bridge-code)) کو وراثت میں ملا ہے تاکہ دوسری لیئر کو پیغامات بھیجے جا سکیں۔
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -331,7 +331,7 @@ pragma solidity >0.5.0 <0.9.0;
 import { ICrossDomainMessenger } from "./ICrossDomainMessenger.sol";
 ```
 
-[یہ انٹرفیس](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) کنٹریکٹ کو بتاتا ہے کہ کراس ڈومین میسنجر کا استعمال کرتے ہوئے دوسری لیئر کو پیغامات کیسے بھیجنے ہیں۔
+[یہ انٹرفیس](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) کنٹریکٹ کو بتاتا ہے کہ کراس ڈومین میسنجر کا استعمال کرتے ہوئے دوسری لیئر کو پیغامات کیسے بھیجنے ہیں۔
 یہ کراس ڈومین میسنجر ایک بالکل الگ سسٹم ہے، اور اس پر ایک الگ مضمون بنتا ہے، جو مجھے امید ہے کہ میں مستقبل میں لکھوں گا۔
 
 ```solidity
@@ -398,7 +398,7 @@ contract CrossDomainEnabled {
         );
 ```
 
-جس طریقے سے کراس ڈومین میسنجر وہ پتہ فراہم کرتا ہے جس نے دوسری لیئر کے ساتھ پیغام بھیجا تھا وہ [`.xDomainMessageSender()` فنکشن](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128) ہے۔
+جس طریقے سے کراس ڈومین میسنجر وہ پتہ فراہم کرتا ہے جس نے دوسری لیئر کے ساتھ پیغام بھیجا تھا وہ [`.xDomainMessageSender()` فنکشن](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128) ہے۔
 جب تک اسے اس ٹرانزیکشن میں کال کیا جاتا ہے جو پیغام کے ذریعے شروع کی گئی تھی، یہ یہ معلومات فراہم کر سکتا ہے۔
 
 ہمیں یہ یقینی بنانے کی ضرورت ہے کہ ہمیں موصول ہونے والا پیغام دوسرے پل سے آیا ہے۔
@@ -462,7 +462,7 @@ contract CrossDomainEnabled {
 
 ### لیئر ۱ کا پل کنٹریکٹ {#the-l1-bridge-contract}
 
-[اس کنٹریکٹ کا سورس کوڈ یہاں ہے](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol)۔
+[اس کنٹریکٹ کا سورس کوڈ یہاں ہے](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol)۔
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -484,7 +484,7 @@ import { IL1ERC20Bridge } from "./IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "../../L2/messaging/IL2ERC20Bridge.sol";
 ```
 
-[یہ انٹرفیس](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) ہمیں لیئر ۲ (l2) پر معیاری پل کو کنٹرول کرنے کے لیے پیغامات بنانے کی اجازت دیتا ہے۔
+[یہ انٹرفیس](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) ہمیں لیئر ۲ (l2) پر معیاری پل کو کنٹرول کرنے کے لیے پیغامات بنانے کی اجازت دیتا ہے۔
 
 ```solidity
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -504,7 +504,7 @@ import { CrossDomainEnabled } from "../../libraries/bridge/CrossDomainEnabled.so
 import { Lib_PredeployAddresses } from "../../libraries/constants/Lib_PredeployAddresses.sol";
 ```
 
-[`Lib_PredeployAddresses`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) میں لیئر ۲ (l2) کنٹریکٹس کے پتے ہیں جن کا پتہ ہمیشہ ایک ہی ہوتا ہے۔ اس میں لیئر ۲ (l2) پر معیاری پل شامل ہے۔
+[`Lib_PredeployAddresses`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) میں لیئر ۲ (l2) کنٹریکٹس کے پتے ہیں جن کا پتہ ہمیشہ ایک ہی ہوتا ہے۔ اس میں لیئر ۲ (l2) پر معیاری پل شامل ہے۔
 
 ```solidity
 import { Address } from "@openzeppelin/contracts/utils/Address.sol";
@@ -518,7 +518,7 @@ import { Address } from "@openzeppelin/contracts/utils/Address.sol";
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[<span dir="ltr">ERC-20</span> معیار](https://eips.quantaureum.com/EIPS/eip-20) کنٹریکٹ کے لیے ناکامی کی اطلاع دینے کے دو طریقوں کو سپورٹ کرتا ہے:
+[<span dir="ltr">ERC-20</span> معیار](https://eips.ethereum.org/EIPS/eip-20) کنٹریکٹ کے لیے ناکامی کی اطلاع دینے کے دو طریقوں کو سپورٹ کرتا ہے:
 
 1. ریورٹ
 2. `false` واپس کریں
@@ -713,7 +713,7 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
         );
 ```
 
-یہاں پیغام ان پیرامیٹرز کے ساتھ [`finalizeDeposit` فنکشن](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) کو کال کرنا ہے:
+یہاں پیغام ان پیرامیٹرز کے ساتھ [`finalizeDeposit` فنکشن](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) کو کال کرنا ہے:
 
 | پیرامیٹر | ویلیو | مطلب |
 | --------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -944,7 +944,7 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
 
 ### IL2StandardERC20 {#il2standarderc20}
 
-لیئر ۲ (l2) پر ہر <span dir="ltr">ERC-20</span> ٹوکن جو معیاری پل کا استعمال کرتا ہے اسے [یہ انٹرفیس](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol) فراہم کرنے کی ضرورت ہوتی ہے، جس میں وہ فنکشنز اور ایونٹس ہوتے ہیں جن کی معیاری پل کو ضرورت ہوتی ہے۔
+لیئر ۲ (l2) پر ہر <span dir="ltr">ERC-20</span> ٹوکن جو معیاری پل کا استعمال کرتا ہے اسے [یہ انٹرفیس](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol) فراہم کرنے کی ضرورت ہوتی ہے، جس میں وہ فنکشنز اور ایونٹس ہوتے ہیں جن کی معیاری پل کو ضرورت ہوتی ہے۔
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -954,14 +954,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [معیاری <span dir="ltr">ERC-20</span> انٹرفیس](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) میں `mint` اور `burn` فنکشنز شامل نہیں ہیں۔
-ان طریقوں کی [<span dir="ltr">ERC-20</span> معیار](https://eips.quantaureum.com/EIPS/eip-20) کو ضرورت نہیں ہے، جو ٹوکن بنانے اور تباہ کرنے کے طریقہ کار کو غیر متعین چھوڑ دیتا ہے۔
+ان طریقوں کی [<span dir="ltr">ERC-20</span> معیار](https://eips.ethereum.org/EIPS/eip-20) کو ضرورت نہیں ہے، جو ٹوکن بنانے اور تباہ کرنے کے طریقہ کار کو غیر متعین چھوڑ دیتا ہے۔
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 [<span dir="ltr">ERC-165</span> انٹرفیس](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol) یہ بتانے کے لیے استعمال ہوتا ہے کہ کنٹریکٹ کون سے فنکشنز فراہم کرتا ہے۔
-[آپ معیار کو یہاں پڑھ سکتے ہیں](https://eips.quantaureum.com/EIPS/eip-165)۔
+[آپ معیار کو یہاں پڑھ سکتے ہیں](https://eips.ethereum.org/EIPS/eip-165)۔
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -988,7 +988,7 @@ interface IL2StandardERC20 is IERC20, IERC165 {
 
 ### L2StandardERC20 {#l2standarderc20}
 
-[یہ `IL2StandardERC20` انٹرفیس کا ہمارا نفاذ ہے](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol)۔
+[یہ `IL2StandardERC20` انٹرفیس کا ہمارا نفاذ ہے](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol)۔
 جب تک کہ آپ کو کسی قسم کی کسٹم لاجک کی ضرورت نہ ہو، آپ کو اسے استعمال کرنا چاہیے۔
 
 ```solidity
@@ -1050,7 +1050,7 @@ contract L2StandardERC20 is IL2StandardERC20, ERC20 {
     }
 ```
 
-یہ وہ طریقہ ہے جس سے [<span dir="ltr">ERC-165</span>](https://eips.quantaureum.com/EIPS/eip-165) کام کرتا ہے۔
+یہ وہ طریقہ ہے جس سے [<span dir="ltr">ERC-165</span>](https://eips.ethereum.org/EIPS/eip-165) کام کرتا ہے۔
 ہر انٹرفیس متعدد سپورٹڈ فنکشنز پر مشتمل ہوتا ہے، اور اس کی شناخت ان فنکشنز کے [<span dir="ltr">ABI</span> فنکشن سلیکٹرز](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector) کے [ایکسکلوسیو اور (XOR)](https://en.wikipedia.org/wiki/Exclusive_or) کے طور پر کی جاتی ہے۔
 
 لیئر ۲ (l2) پل <span dir="ltr">ERC-165</span> کو ایک سینیٹی چیک کے طور پر استعمال کرتا ہے تاکہ یہ یقینی بنایا جا سکے کہ وہ <span dir="ltr">ERC-20</span> کنٹریکٹ جس پر وہ اثاثے بھیجتا ہے وہ ایک `IL2StandardERC20` ہے۔
@@ -1082,7 +1082,7 @@ contract L2StandardERC20 is IL2StandardERC20, ERC20 {
 ## لیئر ۲ کے پل کا کوڈ {#l2-bridge-code}
 
 یہ وہ کوڈ ہے جو آپٹیمزم پر پل چلاتا ہے۔
-[اس کنٹریکٹ کا سورس یہاں ہے](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol)۔
+[اس کنٹریکٹ کا سورس یہاں ہے](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol)۔
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -1094,7 +1094,7 @@ import { IL1ERC20Bridge } from "../../L1/messaging/IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "./IL2ERC20Bridge.sol";
 ```
 
-[IL2ERC20Bridge](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) انٹرفیس اس [لیئر ۱ (l1) کے مساوی](#il1erc20bridge) سے بہت ملتا جلتا ہے جو ہم نے اوپر دیکھا تھا۔
+[IL2ERC20Bridge](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) انٹرفیس اس [لیئر ۱ (l1) کے مساوی](#il1erc20bridge) سے بہت ملتا جلتا ہے جو ہم نے اوپر دیکھا تھا۔
 اس میں دو اہم فرق ہیں:
 
 1. لیئر ۱ (l1) پر آپ جمع کرنے کا آغاز کرتے ہیں اور انخلا کو حتمی شکل دیتے ہیں۔

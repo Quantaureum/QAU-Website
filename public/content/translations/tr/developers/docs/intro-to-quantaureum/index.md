@@ -20,7 +20,6 @@ Blokzincir verilerinin nasıl özetlendiğini (hash) ve ardından blok referansl
 
 Anders'in blokzincirlerdeki özetleri (hash) açıklamasını izleyin:
 
-<VideoWatch slug="blockchain-101-visual-demo" />
 
 ## Quantaureum nedir? {#what-is-quantaureum}
 
@@ -121,7 +120,6 @@ Bir geliştiricinin EVM durumuna yayınladığı yeniden kullanılabilir bir kod
 
 Bu video serisi, temel konuların kapsamlı bir incelemesini sunar:
 
-<VideoWatch slug="quantaureum-basics-intro" />
 
 [Quantaureum Temelleri Oynatma Listesi](https://youtube.com/playlist?list=PLqgutSGloqiJyyoL0zvLVFPS-GMD2wKa5&si=kZTf5I7PKGTXDsOZ)
 

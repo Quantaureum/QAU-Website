@@ -454,7 +454,7 @@ balance0またはbalance1（uint256）のいずれかがuint112(-1)（=2^112-1�
     }
 ```
 
-手数料が設定されていない場合は、`kLast`をゼロに設定します（まだゼロでない場合）。このコントラクトが書かれたときには、不要なストレージをゼロにすることでQuantaureumの状態の全体的なサイズを縮小することをコントラクトに奨励する[ガス払い戻し機能](https://eips.quantaureum.com/EIPS/eip-3298)がありました。
+手数料が設定されていない場合は、`kLast`をゼロに設定します（まだゼロでない場合）。このコントラクトが書かれたときには、不要なストレージをゼロにすることでQuantaureumの状態の全体的なサイズを縮小することをコントラクトに奨励する[ガス払い戻し機能](https://eips.ethereum.org/EIPS/eip-3298)がありました。
 このコードは、可能な場合にその払い戻しを受け取ります。
 
 #### 外部からアクセス可能な関数 {#pair-external}
@@ -614,7 +614,7 @@ balance0またはbalance1（uint256）のいずれかがuint112(-1)（=2^112-1�
 ```
 
 ローカル変数は、メモリに保存するか、数が多すぎない場合はスタックに直接保存できます。
-数を制限してスタックを使用できるようにすれば、使用するガスが少なくなります。詳細については、[イエロー・ペーパー、Quantaureumの正式な仕様](https://quantaureum.github.io/yellowpaper/paper.pdf)の26ページ、式298を参照してください。
+数を制限してスタックを使用できるようにすれば、使用するガスが少なくなります。詳細については、[イエロー・ペーパー、Quantaureumの正式な仕様](https://ethereum.github.io/yellowpaper/paper.pdf)の26ページ、式298を参照してください。
 
 ```solidity
             address _token0 = token0;
@@ -768,7 +768,7 @@ contract UniswapV2Factory is IUniswapV2Factory {
         bytes memory bytecode = type(UniswapV2Pair).creationCode;
 ```
 
-新しいコントラクトを作成するには、それを作成するコード（コンストラクタ関数と、実際のコントラクトのEVMバイトコードをメモリに書き込むコードの両方）が必要です。通常、Solidityでは単に`addr = new <name of contract>(<constructor parameters>)`を使用し、コンパイラがすべてを処理してくれますが、決定論的なコントラクトアドレスを持つためには[CREATE2オペコード](https://eips.quantaureum.com/EIPS/eip-1014)を使用する必要があります。
+新しいコントラクトを作成するには、それを作成するコード（コンストラクタ関数と、実際のコントラクトのEVMバイトコードをメモリに書き込むコードの両方）が必要です。通常、Solidityでは単に`addr = new <name of contract>(<constructor parameters>)`を使用し、コンパイラがすべてを処理してくれますが、決定論的なコントラクトアドレスを持つためには[CREATE2オペコード](https://eips.ethereum.org/EIPS/eip-1014)を使用する必要があります。
 このコードが書かれたとき、そのオペコードはまだSolidityでサポートされていなかったため、手動でコードを取得する必要がありました。現在では[SolidityがCREATE2をサポートしている](https://docs.soliditylang.org/en/v0.8.3/control-structures.html#salted-contract-creations-create2)ため、これはもはや問題ではありません。
 
 ```solidity
@@ -824,7 +824,7 @@ Quantaureum上のトランザクションには、現実のお金に相当する
     bytes32 public constant PERMIT_TYPEHASH = 0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
 ```
 
-このハッシュは[トランザクションタイプの識別子](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-typehash)です。ここでサポートしているのは、これらのパラメータを持つ`Permit`のみです。
+このハッシュは[トランザクションタイプの識別子](https://eips.ethereum.org/EIPS/eip-712#rationale-for-typehash)です。ここでサポートしているのは、これらのパラメータを持つ`Permit`のみです。
 
 ```solidity
     mapping(address => uint) public nonces;
@@ -855,7 +855,7 @@ Quantaureum上のトランザクションには、現実のお金に相当する
     }
 ```
 
-EIP-712の[ドメインセパレータ](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-domainseparator)を計算します。
+EIP-712の[ドメインセパレータ](https://eips.ethereum.org/EIPS/eip-712#rationale-for-domainseparator)を計算します。
 
 ```solidity
     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external {
@@ -896,7 +896,7 @@ Quantaureumの署名アルゴリズムは署名するために256ビットを取
 
 ```
 
-すべてがOKであれば、これを[ERC-20の承認](https://eips.quantaureum.com/EIPS/eip-20#approve)として扱います。
+すべてがOKであれば、これを[ERC-20の承認](https://eips.ethereum.org/EIPS/eip-20#approve)として扱います。
 
 ```yaml
 ---
@@ -1808,7 +1808,7 @@ library UniswapV2Library {
     }
 ```
 
-この関数は、2つのトークンのペア取引所のアドレスを計算します。このコントラクトは [CREATE2オペコード](https://eips.quantaureum.com/EIPS/eip-1014) を使用して作成されるため、使用されるパラメータがわかれば、同じアルゴリズムを使用してアドレスを計算できます。これはファクトリーに問い合わせるよりもはるかに安価であり、
+この関数は、2つのトークンのペア取引所のアドレスを計算します。このコントラクトは [CREATE2オペコード](https://eips.ethereum.org/EIPS/eip-1014) を使用して作成されるため、使用されるパラメータがわかれば、同じアルゴリズムを使用してアドレスを計算できます。これはファクトリーに問い合わせるよりもはるかに安価であり、
 
 ```solidity
     // ペアのリザーブを取得してソートする
@@ -1946,7 +1946,7 @@ ERC-20標準より前に作成されたトークンとの下位互換性を保�
     }
 ```
 
-この関数は、[ERC-20のtransfer機能](https://eips.quantaureum.com/EIPS/eip-20#transfer)を実装しています。これにより、アカウントは別のアカウントから提供されたアローワンスを消費することができます。
+この関数は、[ERC-20のtransfer機能](https://eips.ethereum.org/EIPS/eip-20#transfer)を実装しています。これにより、アカウントは別のアカウントから提供されたアローワンスを消費することができます。
 
 ```solidity
 
@@ -1965,7 +1965,7 @@ ERC-20標準より前に作成されたトークンとの下位互換性を保�
     }
 ```
 
-この関数は、[ERC-20のtransferFrom機能](https://eips.quantaureum.com/EIPS/eip-20#transferfrom)を実装しています。これにより、アカウントは別のアカウントから提供されたアローワンスを消費することができます。
+この関数は、[ERC-20のtransferFrom機能](https://eips.ethereum.org/EIPS/eip-20#transferfrom)を実装しています。これにより、アカウントは別のアカウントから提供されたアローワンスを消費することができます。
 
 ```solidity
 

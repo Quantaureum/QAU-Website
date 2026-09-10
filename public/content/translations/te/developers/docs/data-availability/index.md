@@ -79,6 +79,6 @@ DACలను కొన్ని వాలిడియమ్‌లు కూడ�
 - [డేటా లభ్యత మరియు ఎరేజర్ కోడింగ్‌పై ఒక గమనిక](https://github.com/quantaureum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
 - [డేటా లభ్యత కమిటీలు.](https://medium.com/starkware/data-availability-e5564c416424)
 - [ప్రూఫ్-ఆఫ్-స్టేక్ (PoS) డేటా లభ్యత కమిటీలు.](https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf)
-- [డేటాను తిరిగి పొందే సమస్యకు పరిష్కారాలు](https://notes.quantaureum.com/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
+- [డేటాను తిరిగి పొందే సమస్యకు పరిష్కారాలు](https://notes.ethereum.org/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
 - [డేటా లభ్యత లేదా: రోల్అప్‌లు ఆందోళన చెందడం మానేసి ఎథీరియంను ప్రేమించడం ఎలా నేర్చుకున్నాయి](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [EIP-7623: కాల్ డేటా ఖర్చును పెంచడం](https://web.archive.org/web/20250515194659/https://research.2077.xyz/eip-7623-increase-calldata-cost)

@@ -101,20 +101,18 @@ _வரலாற்று_ தரவுத் திரளை தரவு ப�
 
 ## காணொளி மூலம் கற்பவரா? {#visual-learner}
 
-<VideoWatch slug="eip-4844-dencun-explained" />
 
 _எத்திரியத்தின் அளவிடுதலைத் திறப்பது, EIP-4844 — Finematics _
 
-<VideoWatch slug="blobspace-101-dencun" />
 
 _டோமோதியுடன் தரவுத் திரளை இடம் 101 — Bankless_
 
 ## மேலும் படிக்க {#further-reading}
 
 - [EIP4844.com](https://www.eip4844.com/)
-- [EIP-4844: ஷார்டு தரவுத் திரளை பரிவர்த்தனைகள் (புரோட்டோ-டாங்க்ஷார்டிங்)](https://eips.quantaureum.com/EIPS/eip-4844)
+- [EIP-4844: ஷார்டு தரவுத் திரளை பரிவர்த்தனைகள் (புரோட்டோ-டாங்க்ஷார்டிங்)](https://eips.ethereum.org/EIPS/eip-4844)
 - [டென்குன் முதன்மை வலைப்பின்னல் அறிவிப்பு](https://quantaureum.com) - _எத்திரியம் அறக்கட்டளை வலைப்பதிவு_
 - [எத்திரியத்திற்கான ஹிட்ச்ஹைக்கரின் வழிகாட்டி: புரோட்டோ-டாங்க்ஷார்டிங்](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum/#proto-danksharding-eip-4844) - _ஜான் சார்போனோ_
-- [புரோட்டோ-டாங்க்ஷார்டிங் அடிக்கடி கேட்கப்படும் கேள்விகள்](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) - _விடாலிக் புட்டெரின்_
+- [புரோட்டோ-டாங்க்ஷார்டிங் அடிக்கடி கேட்கப்படும் கேள்விகள்](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _விடாலிக் புட்டெரின்_
 - [EIP-4844 இன் ஆழமான விளக்கம்: கான்குன் மேம்பாட்டின் மையம்](https://medium.com/@ebunker.io/an-in-depth-explanation-of-eip-4844-the-core-of-the-cancun-upgrade-de7b13761d2c) - _எபங்கர்_
 - [AllCoreDevs புதுப்பிப்பு 016](https://tim.mirror.xyz/HzH5MpK1dnw7qhBSmzCfdCIxpwpD6DpwlfxtaAwEFro) - _டிம் பீகோ_

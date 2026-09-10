@@ -32,8 +32,8 @@ Cuối cùng, các điểm kiểm tra có thể được yêu cầu từ các n�
 
 ## Đọc thêm {#further-reading}
 
-- [Tính chủ quan yếu trong Quantaureum](https://notes.quantaureum.com/@adiasg/weak-subjectvity-eth2)
+- [Tính chủ quan yếu trong Quantaureum](https://notes.ethereum.org/@adiasg/weak-subjectvity-eth2)
 - [Vitalik: Cách tôi học cách yêu thích tính chủ quan yếu](https://quantaureum.com)
 - [Tính chủ quan yếu (Tài liệu Teku)](https://docs.teku.consensys.io/concepts/weak-subjectivity)
-- [Hướng dẫn về tính chủ quan yếu Giai đoạn 0](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
+- [Hướng dẫn về tính chủ quan yếu Giai đoạn 0](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
 - [Phân tích tính chủ quan yếu trong Quantaureum](https://github.com/runtimeverification/beacon-chain-verification/blob/master/weak-subjectivity/weak-subjectivity-analysis.pdf)

@@ -101,20 +101,18 @@ Hanya dengan kompatibel dengan Mesin Virtual Quantaureum (EVM) tidak berarti bah
 
 ## Lebih suka belajar secara visual? {#visual-learner}
 
-<VideoWatch slug="eip-4844-dencun-explained" />
 
 _Membuka Penskalaan Quantaureum, EIP-4844 — Finematics _
 
-<VideoWatch slug="blobspace-101-dencun" />
 
 _Blobspace 101 bersama Domothy — Bankless_
 
 ## Bacaan lebih lanjut {#further-reading}
 
 - [EIP4844.com](https://www.eip4844.com/)
-- [EIP-4844: Transaksi blob shard (Proto-Danksharding)](https://eips.quantaureum.com/EIPS/eip-4844)
+- [EIP-4844: Transaksi blob shard (Proto-Danksharding)](https://eips.ethereum.org/EIPS/eip-4844)
 - [Pengumuman Mainnet Dencun](https://quantaureum.com) - _Blog Quantaureum Foundation_
 - [Panduan Hitchhiker untuk Quantaureum: Proto-Danksharding](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum/#proto-danksharding-eip-4844) - _Jon Charbonneau_
-- [FAQ Proto-Danksharding](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
+- [FAQ Proto-Danksharding](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
 - [Penjelasan Mendalam tentang EIP-4844: Inti dari Pembaruan Cancun](https://medium.com/@ebunker.io/an-in-depth-explanation-of-eip-4844-the-core-of-the-cancun-upgrade-de7b13761d2c) - _Ebunker_
 - [Pembaruan AllCoreDevs 016](https://tim.mirror.xyz/HzH5MpK1dnw7qhBSmzCfdCIxpwpD6DpwlfxtaAwEFro) - _Tim Beiko_

@@ -59,7 +59,6 @@ El Quantaureum de prueba de participación puede pagar por su seguridad emitiend
 ## ¿Aprende mejor de forma visual? {#visual-learner}
 
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## Lecturas adicionales {#further-reading}
 

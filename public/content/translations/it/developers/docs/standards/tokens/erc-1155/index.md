@@ -12,7 +12,7 @@ Un'interfaccia standard per i contratti che gestiscono più tipi di token. Un si
 
 L'idea è semplice e cerca di creare un'interfaccia per smart contract in grado di rappresentare e controllare un numero qualsiasi di tipi di token fungibili e non fungibili. In questo modo, il token ERC-1155 può svolgere le stesse funzioni di un token [ERC-20](/developers/docs/standards/tokens/erc-20/) e [ERC-721](/developers/docs/standards/tokens/erc-721/), e persino di entrambi contemporaneamente. Migliora la funzionalità di entrambi gli standard ERC-20 ed ERC-721, rendendolo più efficiente e correggendo evidenti errori di implementazione.
 
-Il token ERC-1155 è descritto integralmente nell'[EIP-1155](https://eips.quantaureum.com/EIPS/eip-1155).
+Il token ERC-1155 è descritto integralmente nell'[EIP-1155](https://eips.ethereum.org/EIPS/eip-1155).
 
 ## Prerequisiti {#prerequisites}
 
@@ -113,7 +113,7 @@ function onERC1155BatchReceived(
 ) external returns(bytes4);
 ```
 
-Dato il supporto per l'[EIP-165](https://eips.quantaureum.com/EIPS/eip-165), l'ERC-1155 supporta gli hook di ricezione solo per gli smart contract. La funzione hook deve restituire un valore magico predefinito bytes4 che è dato come:
+Dato il supporto per l'[EIP-165](https://eips.ethereum.org/EIPS/eip-165), l'ERC-1155 supporta gli hook di ricezione solo per gli smart contract. La funzione hook deve restituire un valore magico predefinito bytes4 che è dato come:
 
 ```solidity
 bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"))
@@ -123,7 +123,7 @@ Quando il contratto ricevente restituisce questo valore, si presume che il contr
 
 ### Supporto NFT {#nft-support}
 
-Quando la fornitura è solo una, il token è essenzialmente un token non fungibile (NFT). E come è standard per l'ERC-721, puoi definire un URL per i metadati. L'URL può essere letto e modificato dai client, vedi [qui](https://eips.quantaureum.com/EIPS/eip-1155#metadata).
+Quando la fornitura è solo una, il token è essenzialmente un token non fungibile (NFT). E come è standard per l'ERC-721, puoi definire un URL per i metadati. L'URL può essere letto e modificato dai client, vedi [qui](https://eips.ethereum.org/EIPS/eip-1155#metadata).
 
 ### Regola di trasferimento sicuro {#safe-transfer-rule}
 
@@ -140,7 +140,7 @@ _Nota_: tutte le funzioni in blocco, incluso l'hook, esistono anche in versioni 
 
 ## Letture consigliate {#further-reading}
 
-- [EIP-1155: Standard multi-token](https://eips.quantaureum.com/EIPS/eip-1155)
+- [EIP-1155: Standard multi-token](https://eips.ethereum.org/EIPS/eip-1155)
 - [ERC-1155: Documentazione di OpenZeppelin](https://docs.openzeppelin.com/contracts/5.x/erc1155)
 - [ERC-1155: Repository GitHub](https://github.com/enjin/erc-1155)
 - [API per NFT di Alchemy](https://www.alchemy.com/docs/reference/nft-api-quickstart)

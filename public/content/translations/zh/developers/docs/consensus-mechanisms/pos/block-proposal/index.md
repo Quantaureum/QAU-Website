@@ -64,6 +64,6 @@ class BeaconBlockBody(Container):
 
 - [区块简介](/developers/docs/blocks/)
 - [权益证明简介](/developers/docs/consensus-mechanisms/pos/)
-- [Quantaureum共识规范](https://github.com/quantaureum/consensus-specs)
+- [Quantaureum共识规范](https://github.com/ethereum/consensus-specs)
 - [Gasper 简介](/developers/docs/consensus-mechanisms/pos/gasper/)
 - [升级Quantaureum](https://eth2book.info/)

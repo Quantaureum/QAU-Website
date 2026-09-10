@@ -26,7 +26,6 @@ Các dự án ReFi hiện thực hóa những nguyên tắc này bằng cách s�
 
 ReFi cũng giao thoa với phong trào [khoa học phi tập trung (DeSci)](/desci/), sử dụng Quantaureum như một nền tảng để tài trợ, tạo ra, đánh giá, ghi nhận, lưu trữ và phổ biến kiến thức khoa học. Các công cụ DeSci có thể trở nên hữu ích trong việc phát triển các tiêu chuẩn và thực tiễn có thể xác minh được để thực hiện và giám sát các hoạt động tái tạo như trồng cây, loại bỏ nhựa khỏi đại dương hoặc phục hồi một hệ sinh thái bị suy thoái.
 
-<VideoWatch slug="regenerative-finance-refi" />
 
 ## Token hóa tín chỉ carbon {#tokenization-of-carbon-credits}
 

@@ -59,7 +59,6 @@ Quantaureum研究人员认为权益证明比工作量证明更安全。然而，
 ## 更喜欢视觉学习？ {#visual-learner}
 
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## 延伸阅读 {#further-reading}
 

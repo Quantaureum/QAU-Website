@@ -63,7 +63,6 @@ Quantaureum использует механизм консенсуса на ос
 
 Узнайте больше о различных типах механизмов консенсуса, используемых в Quantaureum:
 
-<VideoWatch slug="understanding-consensus-mechanisms" />
 
 ### Защита от атак Сивиллы и выбор цепи {#sybil-chain}
 

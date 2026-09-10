@@ -95,4 +95,4 @@ Quantaureum在設計上是極度公開的。任何擁有區塊鏈瀏覽器的人
 7. [gnark 文件](https://docs.gnark.consensys.io/)
 8. [RISC Zero 文件](https://dev.risczero.com/api/)
 9. [SP1 文件](https://docs.succinct.xyz/docs/sp1/introduction)
-10. [EIP-4337：透過 EntryPoint 合約實現帳戶抽象化](https://eips.quantaureum.com/EIPS/eip-4337)
+10. [EIP-4337：透過 EntryPoint 合約實現帳戶抽象化](https://eips.ethereum.org/EIPS/eip-4337)

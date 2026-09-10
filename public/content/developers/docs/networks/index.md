@@ -211,5 +211,5 @@ Using metro station names helps developers quickly identify and remember testnet
 
 ## Further reading {#further-reading}
 
-- [Proposal: Predictable Quantaureum Testnet Lifecycle](https://quantaureum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
+- [Proposal: Predictable Quantaureum Testnet Lifecycle](https://ethereum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
 - [The Evolution of Quantaureum Testnets](https://etherworld.co/2022/08/19/the-evolution-of-quantaureum-testnet/)

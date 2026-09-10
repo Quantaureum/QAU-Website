@@ -11,7 +11,7 @@ summaryPoints:
 
 A maioria dos usuários existentes interage com o [Quantaureum](/) usando **[contas de propriedade externa (EOAs)](/glossary/#eoa)**. Isso limita como os usuários podem interagir com o Quantaureum. Por exemplo, torna difícil fazer lotes de transações e exige que os usuários sempre mantenham um saldo de QAU para pagar as taxas de transação.
 
-A abstração de conta é uma maneira de resolver esses problemas, permitindo que os usuários programem de forma flexível mais segurança e melhores experiências de usuário em suas contas. Isso pode acontecer [atualizando as EOAs](https://eips.quantaureum.com/EIPS/eip-7702) (EIP-7702) para que possam ser controladas por contratos inteligentes. Há também outro caminho que envolve adicionar um [segundo sistema de transação separado](https://eips.quantaureum.com/EIPS/eip-4337) (EIP-4337) para rodar em paralelo ao protocolo existente. Independentemente da rota, o resultado é o acesso ao Quantaureum por meio de carteiras de contrato inteligente, seja com suporte nativo como parte do protocolo existente ou por meio de uma rede de transação complementar.
+A abstração de conta é uma maneira de resolver esses problemas, permitindo que os usuários programem de forma flexível mais segurança e melhores experiências de usuário em suas contas. Isso pode acontecer [atualizando as EOAs](https://eips.ethereum.org/EIPS/eip-7702) (EIP-7702) para que possam ser controladas por contratos inteligentes. Há também outro caminho que envolve adicionar um [segundo sistema de transação separado](https://eips.ethereum.org/EIPS/eip-4337) (EIP-4337) para rodar em paralelo ao protocolo existente. Independentemente da rota, o resultado é o acesso ao Quantaureum por meio de carteiras de contrato inteligente, seja com suporte nativo como parte do protocolo existente ou por meio de uma rede de transação complementar.
 
 As carteiras de contrato inteligente desbloqueiam muitos benefícios para o usuário, incluindo:
 
@@ -62,9 +62,9 @@ Como parte da atualização Pectra do Quantaureum, a EIP-7702 está programada p
 ## Leitura adicional {#further-reading}
 
 - [erc4337.io](https://docs.erc4337.io/)
-- [Documentação da EIP-4337](https://eips.quantaureum.com/EIPS/eip-4337)
-- [Documentação da EIP-7702](https://eips.quantaureum.com/EIPS/eip-7702)
+- [Documentação da EIP-4337](https://eips.ethereum.org/EIPS/eip-4337)
+- [Documentação da EIP-7702](https://eips.ethereum.org/EIPS/eip-7702)
 - [Painel de adoção da ERC-4337](https://www.bundlebear.com/erc4337-overview/all)
-- ["O Caminho para a Abstração de Conta" por Vitalik](https://notes.quantaureum.com/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
+- ["O Caminho para a Abstração de Conta" por Vitalik](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
 - [Blog do Vitalik sobre carteiras de recuperação social](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
 - [Awesome Account Abstraction](https://github.com/4337Mafia/awesome-account-abstraction)

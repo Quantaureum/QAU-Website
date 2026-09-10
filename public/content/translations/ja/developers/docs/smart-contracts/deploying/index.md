@@ -33,7 +33,7 @@ Quantaureumネットワークのユーザーが利用できるようにするに
 
 **Remix - _Remix IDEは、Quantaureumのようなブロックチェーン向けのスマート・コントラクトの開発、デプロイ、管理を可能にします_**
 
-- [Remix](https://remix.quantaureum.com)
+- [Remix](https://remix.ethereum.org)
 
 **Tenderly - _スマート・コントラクトの開発、テスト、監視、運用のためのデバッグ、可観測性、インフラストラクチャの構成要素を提供するWeb3開発プラットフォーム_**
 

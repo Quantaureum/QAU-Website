@@ -191,7 +191,7 @@ Vậy, mã này _làm gì_ chính xác? Hãy chia nhỏ nó ra, từng dòng m�
 
 Ở đầu hợp đồng thông minh của chúng ta, chúng ta nhập ba lớp hợp đồng thông minh [OpenZeppelin](https://openzeppelin.com/):
 
-- @openzeppelin/contracts/token/ERC721/ERC721.sol chứa việc triển khai tiêu chuẩn ERC-721, mà hợp đồng thông minh NFT của chúng ta sẽ kế thừa. (Để trở thành một NFT hợp lệ, hợp đồng thông minh của bạn phải triển khai tất cả các phương thức của tiêu chuẩn ERC-721.) Để tìm hiểu thêm về các hàm ERC-721 được kế thừa, hãy xem định nghĩa giao diện [tại đây](https://eips.quantaureum.com/EIPS/eip-721).
+- @openzeppelin/contracts/token/ERC721/ERC721.sol chứa việc triển khai tiêu chuẩn ERC-721, mà hợp đồng thông minh NFT của chúng ta sẽ kế thừa. (Để trở thành một NFT hợp lệ, hợp đồng thông minh của bạn phải triển khai tất cả các phương thức của tiêu chuẩn ERC-721.) Để tìm hiểu thêm về các hàm ERC-721 được kế thừa, hãy xem định nghĩa giao diện [tại đây](https://eips.ethereum.org/EIPS/eip-721).
 
 - @openzeppelin/contracts/utils/Counters.sol cung cấp các bộ đếm chỉ có thể tăng hoặc giảm một đơn vị. Hợp đồng thông minh của chúng ta sử dụng một bộ đếm để theo dõi tổng số NFT đã được đúc và đặt ID duy nhất trên NFT mới của chúng ta. (Mỗi NFT được đúc bằng hợp đồng thông minh phải được gán một ID duy nhất—ở đây ID duy nhất của chúng ta chỉ được xác định bởi tổng số NFT đang tồn tại. Ví dụ: NFT đầu tiên chúng ta đúc bằng hợp đồng thông minh của mình có ID là "1", NFT thứ hai của chúng ta có ID là "2", v.v.)
 

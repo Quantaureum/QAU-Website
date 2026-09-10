@@ -10,7 +10,6 @@ import type { SlugPageParams } from "@/lib/types"
 
 import I18nProvider from "@/components/I18nProvider"
 import mdComponents from "@/components/MdComponents"
-import VideoWatch from "@/components/Videos/VideoWatch"
 
 import { dateToString } from "@/lib/utils/date"
 import { getLayoutFromSlug } from "@/lib/utils/layout"
@@ -51,7 +50,7 @@ export default async function Page(props: { params: Promise<SlugPageParams> }) {
   } = await getPageData({
     locale,
     slug,
-    baseComponents: { ...mdComponents, VideoWatch },
+    baseComponents: mdComponents,
     componentsMapping,
   })
 

@@ -46,7 +46,7 @@ lang: ta
    - முதலில் L1 இல் உள்ள பாலத்திலிருந்து வந்ததா
 6. L2 இல் உள்ள ERC-20 வில்லை ஒப்பந்தம் சரியானதா என்பதை L2 பாலம் சரிபார்க்கிறது:
    - L2 ஒப்பந்தம் அதன் L1 இணையானது L1 இல் வில்லைகள் வந்த அதே ஒப்பந்தம் என்று தெரிவிக்கிறது
-   - L2 ஒப்பந்தம் சரியான இடைமுகத்தை ஆதரிப்பதாகத் தெரிவிக்கிறது ([ERC-165 ஐப் பயன்படுத்தி](https://eips.quantaureum.com/EIPS/eip-165)).
+   - L2 ஒப்பந்தம் சரியான இடைமுகத்தை ஆதரிப்பதாகத் தெரிவிக்கிறது ([ERC-165 ஐப் பயன்படுத்தி](https://eips.ethereum.org/EIPS/eip-165)).
 7. L2 ஒப்பந்தம் சரியானதாக இருந்தால், பொருத்தமான முகவரிக்கு பொருத்தமான எண்ணிக்கையிலான வில்லைகளை அச்சிட அதை அழைக்கவும். இல்லையெனில், L1 இல் வில்லைகளை உரிமைக்கோர பயனரை அனுமதிக்க திரும்பப் பெறுதல் செயல்முறையைத் தொடங்கவும்.
 
 ### திரும்பப் பெறுதல் ஓட்டம் {#withdrawal-flow}
@@ -70,7 +70,7 @@ lang: ta
 
 ### IL1ERC20Bridge {#il1erc20bridge}
 
-[இந்த இடைமுகம் இங்கே வரையறுக்கப்பட்டுள்ளது](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol).
+[இந்த இடைமுகம் இங்கே வரையறுக்கப்பட்டுள்ளது](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol).
 இது ERC-20 வில்லைகளைப் பாலம் செய்வதற்குத் தேவையான செயல்பாடுகள் மற்றும் வரையறைகளை உள்ளடக்கியது.
 
 ```solidity
@@ -229,7 +229,7 @@ L2 பாலத்துடனான சமச்சீர்மைக்கா�
 
 ### IL1StandardBridge {#il1standardbridge}
 
-[இந்த இடைமுகம் இங்கே வரையறுக்கப்பட்டுள்ளது](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol).
+[இந்த இடைமுகம் இங்கே வரையறுக்கப்பட்டுள்ளது](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol).
 இந்தக் கோப்பு QAU க்கான நிகழ்வு மற்றும் செயல்பாட்டு வரையறைகளைக் கொண்டுள்ளது.
 இந்த வரையறைகள் ERC-20 க்காக மேலே `IL1ERC20Bridge` இல் வரையறுக்கப்பட்டவற்றுக்கு மிகவும் ஒத்தவை.
 
@@ -312,7 +312,7 @@ L1 மற்றும் L2 வில்லை முகவரிகள் இ�
 
 ### CrossDomainEnabled {#crossdomainenabled}
 
-மற்ற அடுக்குக்கு செய்திகளை அனுப்ப [இந்த ஒப்பந்தம்](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) இரு பாலங்களாலும் ([L1](#the-l1-bridge-contract) மற்றும் [L2](#l2-bridge-code)) மரபுரிமையாகப் பெறப்படுகிறது.
+மற்ற அடுக்குக்கு செய்திகளை அனுப்ப [இந்த ஒப்பந்தம்](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) இரு பாலங்களாலும் ([L1](#the-l1-bridge-contract) மற்றும் [L2](#l2-bridge-code)) மரபுரிமையாகப் பெறப்படுகிறது.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -322,7 +322,7 @@ pragma solidity >0.5.0 <0.9.0;
 import { ICrossDomainMessenger } from "./ICrossDomainMessenger.sol";
 ```
 
-குறுக்கு கள தூதரைப் பயன்படுத்தி மற்ற அடுக்குக்கு செய்திகளை எவ்வாறு அனுப்புவது என்பதை [இந்த இடைமுகம்](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) ஒப்பந்தத்திற்குச் சொல்கிறது.
+குறுக்கு கள தூதரைப் பயன்படுத்தி மற்ற அடுக்குக்கு செய்திகளை எவ்வாறு அனுப்புவது என்பதை [இந்த இடைமுகம்](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) ஒப்பந்தத்திற்குச் சொல்கிறது.
 இந்தக் குறுக்கு கள தூதர் முற்றிலும் வேறுபட்ட அமைப்பாகும், மேலும் இது தனக்கென ஒரு கட்டுரைக்குத் தகுதியானது, அதை நான் எதிர்காலத்தில் எழுதுவேன் என்று நம்புகிறேன்.
 
 ```solidity
@@ -388,7 +388,7 @@ contract CrossDomainEnabled {
         );
 ```
 
-குறுக்கு கள தூதர் மற்ற அடுக்குடன் ஒரு செய்தியை அனுப்பிய முகவரியை வழங்கும் விதம் [`.xDomainMessageSender()` செயல்பாடு](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128) ஆகும்.
+குறுக்கு கள தூதர் மற்ற அடுக்குடன் ஒரு செய்தியை அனுப்பிய முகவரியை வழங்கும் விதம் [`.xDomainMessageSender()` செயல்பாடு](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128) ஆகும்.
 செய்தியால் தொடங்கப்பட்ட பரிவர்த்தனையில் இது அழைக்கப்படும் வரை இந்தத் தகவலை வழங்க முடியும்.
 
 நாம் பெற்ற செய்தி மற்ற பாலத்திலிருந்து வந்ததா என்பதை உறுதிப்படுத்த வேண்டும்.
@@ -451,7 +451,7 @@ contract CrossDomainEnabled {
 
 ### L1 பாலம் ஒப்பந்தம் {#the-l1-bridge-contract}
 
-[இந்த ஒப்பந்தத்திற்கான மூலக் குறியீடு இங்கே உள்ளது](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol).
+[இந்த ஒப்பந்தத்திற்கான மூலக் குறியீடு இங்கே உள்ளது](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol).
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -473,7 +473,7 @@ import { IL1ERC20Bridge } from "./IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "../../L2/messaging/IL2ERC20Bridge.sol";
 ```
 
-L2 இல் நிலையான பாலத்தைக் கட்டுப்படுத்த செய்திகளை உருவாக்க [இந்த இடைமுகம்](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) நம்மை அனுமதிக்கிறது.
+L2 இல் நிலையான பாலத்தைக் கட்டுப்படுத்த செய்திகளை உருவாக்க [இந்த இடைமுகம்](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) நம்மை அனுமதிக்கிறது.
 
 ```solidity
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -493,7 +493,7 @@ import { CrossDomainEnabled } from "../../libraries/bridge/CrossDomainEnabled.so
 import { Lib_PredeployAddresses } from "../../libraries/constants/Lib_PredeployAddresses.sol";
 ```
 
-[`Lib_PredeployAddresses`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) எப்போதும் ஒரே முகவரியைக் கொண்ட L2 ஒப்பந்தங்களுக்கான முகவரிகளைக் கொண்டுள்ளது. இது L2 இல் உள்ள நிலையான பாலத்தையும் உள்ளடக்கியது.
+[`Lib_PredeployAddresses`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) எப்போதும் ஒரே முகவரியைக் கொண்ட L2 ஒப்பந்தங்களுக்கான முகவரிகளைக் கொண்டுள்ளது. இது L2 இல் உள்ள நிலையான பாலத்தையும் உள்ளடக்கியது.
 
 ```solidity
 import { Address } from "@openzeppelin/contracts/utils/Address.sol";
@@ -507,7 +507,7 @@ import { Address } from "@openzeppelin/contracts/utils/Address.sol";
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[ERC-20 தரநிலை](https://eips.quantaureum.com/EIPS/eip-20) ஒரு ஒப்பந்தம் தோல்வியைப் புகாரளிக்க இரண்டு வழிகளை ஆதரிக்கிறது:
+[ERC-20 தரநிலை](https://eips.ethereum.org/EIPS/eip-20) ஒரு ஒப்பந்தம் தோல்வியைப் புகாரளிக்க இரண்டு வழிகளை ஆதரிக்கிறது:
 
 1. மீளமை
 2. `false` ஐ வழங்கு
@@ -695,7 +695,7 @@ Solidity செயல்பாடு [`abi.encodeWithSelector`](https://docs.sol
         );
 ```
 
-இந்த அளவுருக்களுடன் [`finalizeDeposit` செயல்பாட்டை](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) அழைப்பதே இங்குள்ள செய்தியாகும்:
+இந்த அளவுருக்களுடன் [`finalizeDeposit` செயல்பாட்டை](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) அழைப்பதே இங்குள்ள செய்தியாகும்:
 
 | அளவுரு | மதிப்பு | பொருள் |
 | --------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -924,7 +924,7 @@ L1 இல் அதிக வில்லைகள் இருந்தால�
 
 ### IL2StandardERC20 {#il2standarderc20}
 
-நிலையான பாலத்தைப் பயன்படுத்தும் L2 இல் உள்ள ஒவ்வொரு ERC-20 வில்லையும் [இந்த இடைமுகத்தை](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol) வழங்க வேண்டும், இது நிலையான பாலத்திற்குத் தேவையான செயல்பாடுகள் மற்றும் நிகழ்வுகளைக் கொண்டுள்ளது.
+நிலையான பாலத்தைப் பயன்படுத்தும் L2 இல் உள்ள ஒவ்வொரு ERC-20 வில்லையும் [இந்த இடைமுகத்தை](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol) வழங்க வேண்டும், இது நிலையான பாலத்திற்குத் தேவையான செயல்பாடுகள் மற்றும் நிகழ்வுகளைக் கொண்டுள்ளது.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -934,14 +934,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [நிலையான ERC-20 இடைமுகம்](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) `mint` மற்றும் `burn` செயல்பாடுகளை உள்ளடக்கவில்லை.
-அந்த முறைகள் [ERC-20 தரநிலையால்](https://eips.quantaureum.com/EIPS/eip-20) கோரப்படவில்லை, இது வில்லைகளை உருவாக்குவதற்கும் அழிப்பதற்குமான வழிமுறைகளைக் குறிப்பிடாமல் விட்டுவிடுகிறது.
+அந்த முறைகள் [ERC-20 தரநிலையால்](https://eips.ethereum.org/EIPS/eip-20) கோரப்படவில்லை, இது வில்லைகளை உருவாக்குவதற்கும் அழிப்பதற்குமான வழிமுறைகளைக் குறிப்பிடாமல் விட்டுவிடுகிறது.
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 ஒரு ஒப்பந்தம் என்ன செயல்பாடுகளை வழங்குகிறது என்பதைக் குறிப்பிட [ERC-165 இடைமுகம்](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol) பயன்படுத்தப்படுகிறது.
-[நீங்கள் தரநிலையை இங்கே படிக்கலாம்](https://eips.quantaureum.com/EIPS/eip-165).
+[நீங்கள் தரநிலையை இங்கே படிக்கலாம்](https://eips.ethereum.org/EIPS/eip-165).
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -968,7 +968,7 @@ L2 ஆதரவு செயல்படுத்தப்பட்டபோத�
 
 ### L2StandardERC20 {#l2standarderc20}
 
-[இது `IL2StandardERC20` இடைமுகத்தின் எங்கள் செயலாக்கமாகும்](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol).
+[இது `IL2StandardERC20` இடைமுகத்தின் எங்கள் செயலாக்கமாகும்](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol).
 உங்களுக்கு ஏதேனும் தனிப்பயன் தர்க்கம் தேவைப்படாவிட்டால், நீங்கள் இதைப் பயன்படுத்த வேண்டும்.
 
 ```solidity
@@ -1030,7 +1030,7 @@ contract L2StandardERC20 is IL2StandardERC20, ERC20 {
     }
 ```
 
-[ERC-165](https://eips.quantaureum.com/EIPS/eip-165) செயல்படும் விதம் இதுதான்.
+[ERC-165](https://eips.ethereum.org/EIPS/eip-165) செயல்படும் விதம் இதுதான்.
 ஒவ்வொரு இடைமுகமும் ஆதரிக்கப்படும் செயல்பாடுகளின் எண்ணிக்கையாகும், மேலும் அந்தச் செயல்பாடுகளின் [ABI செயல்பாட்டுத் தேர்வாளர்களின்](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector) [பிரத்தியேக அல்லது (exclusive or)](https://en.wikipedia.org/wiki/Exclusive_or) என அடையாளம் காணப்படுகிறது.
 
 L2 பாலம் அது சொத்துகளை அனுப்பும் ERC-20 ஒப்பந்தம் ஒரு `IL2StandardERC20` என்பதை உறுதிப்படுத்த ERC-165 ஐ ஒரு பகுத்தறிவுச் சரிபார்ப்பாகப் பயன்படுத்துகிறது.
@@ -1062,7 +1062,7 @@ L2 பாலம் மட்டுமே சொத்துகளை அச்�
 ## L2 பாலம் குறியீடு {#l2-bridge-code}
 
 இது ஆப்டிமிசத்தில் பாலத்தை இயக்கும் குறியீடு.
-[இந்த ஒப்பந்தத்திற்கான ஆதாரம் இங்கே உள்ளது](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol).
+[இந்த ஒப்பந்தத்திற்கான ஆதாரம் இங்கே உள்ளது](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol).
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -1074,7 +1074,7 @@ import { IL1ERC20Bridge } from "../../L1/messaging/IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "./IL2ERC20Bridge.sol";
 ```
 
-[IL2ERC20Bridge](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) இடைமுகம் நாம் மேலே பார்த்த [L1 இணையானதற்கு](#il1erc20bridge) மிகவும் ஒத்திருக்கிறது.
+[IL2ERC20Bridge](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) இடைமுகம் நாம் மேலே பார்த்த [L1 இணையானதற்கு](#il1erc20bridge) மிகவும் ஒத்திருக்கிறது.
 இரண்டு குறிப்பிடத்தக்க வேறுபாடுகள் உள்ளன:
 
 1. L1 இல் நீங்கள் வைப்புகளைத் தொடங்கி திரும்பப் பெறுதல்களை இறுதி செய்கிறீர்கள்.

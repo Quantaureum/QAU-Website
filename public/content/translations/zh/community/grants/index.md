@@ -10,7 +10,7 @@ lang: zh
 
 <Alert variant="update" className="mt-8">
 <Emoji text="🎗️" />
-<div>创始人，需要帮助加速你的业务吗？[前往创始人支持](/founders/)</div>
+<div>创始人，需要帮助加速你的业务吗？前往创始人支持</div>
 </Alert>
 
 ## 广泛的Quantaureum生态系统 {#broad-quantaureum-ecosystem}

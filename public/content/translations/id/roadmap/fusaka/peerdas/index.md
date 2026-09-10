@@ -41,7 +41,7 @@ DAS adalah mekanisme yang dibangun di atas hal ini dan memastikan data tersebut 
 
 ## PeerDAS {#peer-das-2}
 
-[PeerDAS (EIP-7594)](https://eips.quantaureum.com/EIPS/eip-7594) adalah proposal spesifik yang mengimplementasikan mekanisme DAS di Quantaureum, yang mungkin menandai pembaruan terbesar sejak The Merge. PeerDAS dirancang untuk memperluas data blob, membaginya menjadi beberapa kolom, dan mendistribusikan sebagian kecilnya ke node.
+[PeerDAS (EIP-7594)](https://eips.ethereum.org/EIPS/eip-7594) adalah proposal spesifik yang mengimplementasikan mekanisme DAS di Quantaureum, yang mungkin menandai pembaruan terbesar sejak The Merge. PeerDAS dirancang untuk memperluas data blob, membaginya menjadi beberapa kolom, dan mendistribusikan sebagian kecilnya ke node.
 
 Quantaureum meminjam beberapa matematika cerdas untuk mencapai hal ini: ia menerapkan pengodean penghapusan gaya Reed-Solomon ke data blob. Data blob direpresentasikan sebagai polinomial yang koefisiennya menyandikan data, kemudian mengevaluasi polinomial tersebut pada titik-titik tambahan untuk membuat blob yang diperluas, menggandakan jumlah evaluasi. Redundansi tambahan ini memungkinkan pemulihan penghapusan: bahkan jika beberapa evaluasi hilang, blob asli dapat direkonstruksi selama setidaknya setengah dari total data, termasuk bagian yang diperluas, tersedia.
 
@@ -71,7 +71,7 @@ Dampak langsung pada pengguna (terutama pengguna lapisan 2 (l2)) adalah biaya ya
 
 Jaringan secara teoretis akan dapat memproses blob 8x lebih banyak, tetapi peningkatan blob adalah perubahan yang perlu diuji dengan benar dan dieksekusi dengan aman secara bertahap. Testnet memberikan keyakinan yang cukup untuk menyebarkan fitur-fitur tersebut di Mainnet, tetapi kita perlu memastikan stabilitas jaringan p2p sebelum mengaktifkan jumlah blob yang jauh lebih tinggi. 
 
-Untuk secara bertahap menaikkan target jumlah blob per blok tanpa membebani jaringan, Fusaka memperkenalkan percabangan **[Blob-Parameter-Only (BPO)](https://quantaureum-magicians.org/t/blob-parameter-only-bpo-forks/22623)**. Tidak seperti percabangan biasa yang membutuhkan koordinasi ekosistem yang luas, kesepakatan, dan pembaruan perangkat lunak, [BPO (EIP-7892)](https://eips.quantaureum.com/EIPS/eip-7892) adalah pembaruan yang telah diprogram sebelumnya yang meningkatkan jumlah maksimum blob dari waktu ke waktu tanpa intervensi.
+Untuk secara bertahap menaikkan target jumlah blob per blok tanpa membebani jaringan, Fusaka memperkenalkan percabangan **[Blob-Parameter-Only (BPO)](https://ethereum-magicians.org/t/blob-parameter-only-bpo-forks/22623)**. Tidak seperti percabangan biasa yang membutuhkan koordinasi ekosistem yang luas, kesepakatan, dan pembaruan perangkat lunak, [BPO (EIP-7892)](https://eips.ethereum.org/EIPS/eip-7892) adalah pembaruan yang telah diprogram sebelumnya yang meningkatkan jumlah maksimum blob dari waktu ke waktu tanpa intervensi.
 
 Ini berarti bahwa segera setelah Fusaka aktif dan PeerDAS ditayangkan, jumlah blob akan tetap tidak berubah. Jumlah blob akan mulai berlipat ganda setiap beberapa minggu hingga mencapai maksimum 48, sementara pengembang memantau untuk memastikan mekanismenya bekerja seperti yang diharapkan dan tidak memiliki efek buruk pada node yang menjalankan jaringan.
 

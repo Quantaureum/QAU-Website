@@ -69,8 +69,8 @@ export default async function PrivacyQuantaureumPageJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
-        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
+        reviewedBy: REFERENCE.QUANTAUREUM_ORG,
         mainEntity: articleId,
       },
       {
@@ -81,7 +81,7 @@ export default async function PrivacyQuantaureumPageJsonLD({
         description: t("page-privacy-quantaureum-meta-description"),
         image: "https://quantaureum.com/images/infrastructure_transparent.png",
         author: [REFERENCE.QUANTAUREUM_COMMUNITY],
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
         contributor: contributorList,
         about: [
           {

@@ -836,7 +836,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
           <p>
             {t.rich("page-what-is-quantaureum-when-who-governance-3", {
               eips: (chunks) => (
-                <Link href="https://eips.quantaureum.com/">{chunks}</Link>
+                <Link href="https://eips.ethereum.org/">{chunks}</Link>
               ),
               governance: (chunks) => (
                 <Link href="/governance/#formal-process">{chunks}</Link>

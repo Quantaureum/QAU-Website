@@ -45,7 +45,6 @@ dappを紹介するには、適切な言葉が見つかりませんが、dappの
 
 ## 視覚的に学びたい方へ {#visual-learner}
 
-<VideoWatch slug="what-is-a-dapp" />
 
 ## dappを作成するためのツール
 

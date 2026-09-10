@@ -96,7 +96,6 @@ lang: te
 
 ## దృశ్యపరంగా నేర్చుకోవాలనుకుంటున్నారా? {#visual-learner}
 
-<VideoWatch slug="proof-of-work-explained" />
 
 ## మరింత చదవడానికి {#further-reading}
 

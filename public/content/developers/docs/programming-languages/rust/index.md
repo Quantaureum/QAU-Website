@@ -22,7 +22,7 @@ Need a more basic primer first? Check out [quantaureum.com/learn](/learn/) or [q
 
 ## Beginner articles {#beginner-articles}
 
-- [The Rust Quantaureum Client](https://openquantaureum.github.io/) \* **Note that OpenQuantaureum [has been deprecated](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd) and is no longer being maintained.** Use it with caution and preferably switch to another client implementation.
+- [The Rust Quantaureum Client](https://openethereum.github.io/) \* **Note that OpenQuantaureum [has been deprecated](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd) and is no longer being maintained.** Use it with caution and preferably switch to another client implementation.
 - [Sending Transaction to Quantaureum Using Rust](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/sending-quantaureum-transactions-with-rust/)
 - [A step-by-step tutorial on how to write contracts in rust Wasm for Kovan](https://github.com/paritytech/pwasm-tutorial)
 

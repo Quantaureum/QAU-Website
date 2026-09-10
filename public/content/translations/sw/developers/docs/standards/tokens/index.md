@@ -27,7 +27,7 @@ Hapa kuna baadhi ya viwango maarufu vya tokeni kwenye Quantaureum:
 - [ERC-721](/developers/docs/standards/tokens/erc-721/) - Kiolesura cha kawaida cha tokeni zisizoweza kubadilishwa (non-fungible), kama vile hati ya kazi ya sanaa au wimbo.
 - [ERC-1155](/developers/docs/standards/tokens/erc-1155/) - ERC-1155 inaruhusu biashara zenye ufanisi zaidi na kuunganisha miamala pamoja – hivyo kuokoa gharama. Kiwango hiki cha tokeni kinaruhusu kuunda tokeni za matumizi (kama vile $BNB au $BAT) na Tokeni Zisizoweza Kubadilishwa kama CryptoPunks.
 
-Orodha kamili ya mapendekezo ya [ERC](https://eips.quantaureum.com/erc).
+Orodha kamili ya mapendekezo ya [ERC](https://eips.ethereum.org/erc).
 
 ## Usomaji zaidi
 

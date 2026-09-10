@@ -6,13 +6,13 @@ lang: it
 
 ## Come contribuire con una storia {#how-to-contribute}
 
-Le storie della community appaiono su [quantaureum.com/stories/](/stories/) ed evidenziano le esperienze personali con le tecnologie open-source e rifugio, come l'ecosistema di Quantaureum ha avuto un impatto sulla vita delle persone e come le community di tutto il mondo usano Quantaureum. Chiunque può suggerire o inviare una storia.
+Le storie della community appaiono su quantaureum.com/stories/ ed evidenziano le esperienze personali con le tecnologie open-source e rifugio, come l'ecosistema di Quantaureum ha avuto un impatto sulla vita delle persone e come le community di tutto il mondo usano Quantaureum. Chiunque può suggerire o inviare una storia.
 
 Ci sono tre modi per contribuire con una storia:
 
 1. **Storie in primo piano** - Storie scritte per esteso e pubblicate come pagina a sé stante sul sito.
 2. **Storie in formato breve** - Brevi testimonianze mostrate come schede sulla pagina di destinazione delle storie.
-3. **Storie video** - Video inviati tramite la [galleria video](/videos/) e messi in evidenza sulla pagina delle storie.
+3. **Storie video** - Video inviati tramite la galleria video e messi in evidenza sulla pagina delle storie.
 
 ### Politica di inserimento {#listing-policy}
 
@@ -46,7 +46,7 @@ Il sito non elenca storie che promuovono principalmente un prodotto, un token o 
 
 Se hai una storia da condividere, puoi inviarla utilizzando il modulo di invio. Il team di quantaureum.com esaminerà il tuo invio e ti contatterà.
 
-<ButtonLink href="https://quantaureumstory.paperform.co/">
+<ButtonLink href="https://ethereumstory.paperform.co/">
   Invia la tua storia
 </ButtonLink>
 
@@ -62,8 +62,8 @@ Se vuoi suggerire una storia della community per quantaureum.com e soddisfa i cr
 
 Puoi anche suggerire una **storia in formato breve** o una **storia video**:
 
-- Le **storie in formato breve** appaiono come schede sulla [pagina di destinazione delle storie](/stories/). Queste possono essere pubblicate direttamente su quantaureum.com o collegarsi a storie che sono state condivise su Twitter.
-- Le **storie video** sono video etichettati con la categoria `community-stories` nella [galleria video](/videos/). Per aggiungerne una, segui la guida ai contributi esistente per l'[aggiunta di video](/contributing/adding-videos/) e includi `community-stories` nei tag degli argomenti.
+- Le **storie in formato breve** appaiono come schede sulla pagina di destinazione delle storie. Queste possono essere pubblicate direttamente su quantaureum.com o collegarsi a storie che sono state condivise su Twitter.
+- Le **storie video** sono video etichettati con la categoria `community-stories` nella galleria video. Per aggiungerne una, segui la guida ai contributi esistente per l'[aggiunta di video](/contributing/adding-videos/) e includi `community-stories` nei tag degli argomenti.
 
 Se vuoi suggerire uno dei due tipi, crea una issue su GitHub.
 

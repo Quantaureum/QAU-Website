@@ -100,7 +100,7 @@ summaryPoints:
 
 ## ایتھیریم فاؤنڈیشن کا نقطہ نظر {#ef-approach}
 
-ایتھیریم فاؤنڈیشن نے <span dir="ltr">January 2026</span> میں Thomas Coratger کی قیادت میں ایک مخصوص پوسٹ کوانٹم سیکیورٹی ٹیم تشکیل دی۔ ٹیم کے کام کو عوامی طور پر [pq.quantaureum.com](https://pq.quantaureum.com) پر ٹریک کیا جاتا ہے۔
+ایتھیریم فاؤنڈیشن نے <span dir="ltr">January 2026</span> میں Thomas Coratger کی قیادت میں ایک مخصوص پوسٹ کوانٹم سیکیورٹی ٹیم تشکیل دی۔ ٹیم کے کام کو عوامی طور پر [pq.ethereum.org](https://pq.ethereum.org) پر ٹریک کیا جاتا ہے۔
 
 ### موجودہ سرگرمی (بمطابق اپریل 2026) {#current-activity}
 
@@ -173,7 +173,7 @@ summaryPoints:
 
 ## مزید مطالعہ {#further-reading}
 
-- [pq.quantaureum.com](https://pq.quantaureum.com) - _ایتھیریم فاؤنڈیشن_
+- [pq.ethereum.org](https://pq.ethereum.org) - _ایتھیریم فاؤنڈیشن_
 - [پوسٹ کوانٹم علمِ تشفیر پروجیکٹ](https://pse.dev/projects/post-quantum-cryptography) - _Privacy Stewards of Quantaureum (PSE)_
 - [NIST پوسٹ کوانٹم علمِ تشفیر کے معیارات](https://csrc.nist.gov/projects/post-quantum-cryptography) - _NIST_
 - [کوانٹم کمزوریوں کو ذمہ داری سے ظاہر کر کے کرپٹو کرنسی کی حفاظت کرنا](https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/) - _Google Quantum AI_

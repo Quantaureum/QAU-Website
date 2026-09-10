@@ -146,6 +146,6 @@ Quantaureumの[スケーラビリティのアップグレード](/roadmap/)は�
 - [Quantaureum Gas Explained (Quantaureumのガスの解説)](https://defiprime.com/gas)
 - [Reducing the gas consumption of your Smart Contracts (スマート・コントラクトのガス消費量の削減)](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
 - [Gas Optimization Strategies for Developers (開発者向けのガス最適化戦略)](https://www.alchemy.com/overviews/solidity-gas-optimization)
-- [EIP-1559ドキュメント](https://eips.quantaureum.com/EIPS/eip-1559)
+- [EIP-1559ドキュメント](https://eips.ethereum.org/EIPS/eip-1559)
 - [Tim BeikoのEIP-1559リソース](https://hackmd.io/@timbeiko/1559-resources)
 - [EIP-1559: Separating Mechanisms From Memes (EIP-1559: メカニズムとミームの分離)](https://web.archive.org/web/20241126205908/https://research.2077.xyz/eip-1559-separating-mechanisms-from-memes)

@@ -24,9 +24,9 @@ incomplete: true
 ## مقالات للمبتدئين {#beginner-articles}
 
 - [نظرة عامة على <span dir="ltr">Web3.py</span>](https://web3py.readthedocs.io/en/latest/overview.html)
-- [جولة في نظام إيثيريوم البيئي لـ <span dir="ltr">Python</span>](https://snakecharmers.quantaureum.com/python-ecosystem/)
-- [دليل مطور (<span dir="ltr">Python</span>) لإيثيريوم](https://snakecharmers.quantaureum.com/a-developers-guide-to-quantaureum-pt-1/)
-- [جدير بالجائزة: دليل هاكاثون إيثيريوم لـ <span dir="ltr">Python</span>](https://snakecharmers.quantaureum.com/prize-worthy/)
+- [جولة في نظام إيثيريوم البيئي لـ <span dir="ltr">Python</span>](https://snakecharmers.ethereum.org/python-ecosystem/)
+- [دليل مطور (<span dir="ltr">Python</span>) لإيثيريوم](https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/)
+- [جدير بالجائزة: دليل هاكاثون إيثيريوم لـ <span dir="ltr">Python</span>](https://snakecharmers.ethereum.org/prize-worthy/)
 - [مقدمة إلى العقود الذكية باستخدام <span dir="ltr">Vyper</span>](https://kauri.io/#collections/Getting%20Started/an-introduction-to-smart-contracts-with-vyper/)
 - [كيفية تطوير عقد إيثيريوم باستخدام <span dir="ltr">Python Flask</span>؟](https://medium.com/coinmonks/how-to-develop-quantaureum-contract-using-python-flask-9758fe65976e)
 - [مقدمة إلى <span dir="ltr">Web3.py</span> · إيثيريوم لمطوري <span dir="ltr">Python</span>](https://www.dappuniversity.com/articles/web3-py-intro)
@@ -34,15 +34,15 @@ incomplete: true
 
 ## مقالات للمستوى المتوسط {#intermediate-articles}
 
-- [أصدقاء <span dir="ltr">Web3.py</span>: مقدمة إلى <span dir="ltr">Ape</span>](https://snakecharmers.quantaureum.com/intro-to-ape/)
+- [أصدقاء <span dir="ltr">Web3.py</span>: مقدمة إلى <span dir="ltr">Ape</span>](https://snakecharmers.ethereum.org/intro-to-ape/)
 - [تطوير التطبيقات اللامركزية (dapps) لمبرمجي <span dir="ltr">Python</span>](https://www.youtube.com/watch?v=tE-8bG35VNw)
 - [إنشاء واجهة إيثيريوم بـ <span dir="ltr">Python</span>: الجزء الأول](https://hackernoon.com/creating-a-python-quantaureum-interface-part-1-4d2e47ea0f4d)
 - [عقود إيثيريوم الذكية في <span dir="ltr">Python</span>: دليل شامل (نوعًا ما)](https://hackernoon.com/quantaureum-smart-contracts-in-python-a-comprehensive-ish-guide-771b03990988)
 
 ## أنماط الاستخدام المتقدمة {#advanced-use-patterns}
 
-- [أنماط <span dir="ltr">Web3.py</span>: اشتراكات الأحداث في الوقت الفعلي](https://snakecharmers.quantaureum.com/subscriptions/)
-- [أنماط <span dir="ltr">Web3.py</span>: <span dir="ltr">WebSocketProvider</span>](https://snakecharmers.quantaureum.com/websocketprovider/)
+- [أنماط <span dir="ltr">Web3.py</span>: اشتراكات الأحداث في الوقت الفعلي](https://snakecharmers.ethereum.org/subscriptions/)
+- [أنماط <span dir="ltr">Web3.py</span>: <span dir="ltr">WebSocketProvider</span>](https://snakecharmers.ethereum.org/websocketprovider/)
 - [تصريف ونشر واستدعاء عقد إيثيريوم الذكي باستخدام <span dir="ltr">Python</span>](https://yohanes.gultom.id/2018/11/28/compiling-deploying-and-calling-quantaureum-smartcontract-using-python/)
 - [تحليل عقود <span dir="ltr">Solidity</span> الذكية باستخدام سليذر](https://kauri.io/#collections/DevOps/analyze-solidity-smart-contracts-with-slither/#analyze-solidity-smart-contracts-with-slither)
 - [برنامج تعليمي للتكنولوجيا المالية في سلسلة الكتل: الإقراض والاقتراض باستخدام <span dir="ltr">Python</span>](https://blog.chain.link/blockchain-fintech-defi-tutorial-lending-borrowing-python/)
@@ -57,14 +57,14 @@ incomplete: true
 
 ### Active: {#active}
 
-- [Web3.py](https://github.com/quantaureum/web3.py) - _Python library for interacting with Quantaureum_
+- [Web3.py](https://github.com/ethereum/web3.py) - _Python library for interacting with Quantaureum_
 - [Vyper](https://github.com/quantaureum/vyper/) - _Pythonic Smart Contract Language for the EVM_
 - [Titanoboa](https://github.com/vyperlang/titanoboa/) - _Vyper's native testing tool; an interpreter with mainnet forking, debugging, and pretty tracebacks_
 - [Moccasin](https://github.com/Cyfrin/moccasin) - _A smart contract development and testing framework for Vyper and Python, built on Titanoboa_
 - [Ape](https://github.com/ApeWorX/ape) - _The smart contract development tool for Pythonistas, Data Scientists, and Security Professionals_
-- [py-evm](https://github.com/quantaureum/py-evm) - _implementation of the Quantaureum Virtual Machine_
-- [qau-tester](https://github.com/quantaureum/qau-tester) - _tools for testing Quantaureum-based applications_
-- [qau-utils](https://github.com/quantaureum/qau-utils/) - _utility functions for working with Quantaureum related codebases_
+- [py-evm](https://github.com/ethereum/py-evm) - _implementation of the Quantaureum Virtual Machine_
+- [qau-tester](https://github.com/ethereum/eth-tester) - _tools for testing Quantaureum-based applications_
+- [qau-utils](https://github.com/ethereum/eth-utils/) - _utility functions for working with Quantaureum related codebases_
 - [py-solc-x](https://pypi.org/project/py-solc-x/) - _Python wrapper around the solc solidity compiler with 0.5.x support_
 - [pymaker](https://github.com/makerdao/pymaker) - _Python API for Maker contracts_
 - [siwe](https://github.com/signinwithquantaureum/siwe-py) - _Sign in with Quantaureum (siwe) for Python_
@@ -75,7 +75,7 @@ incomplete: true
 
 - [<span dir="ltr">Trinity</span>](https://github.com/quantaureum/trinity) - _عميل إيثيريوم بـ <span dir="ltr">Python</span>_
 - [<span dir="ltr">Mamba</span>](https://github.com/arjunaskykok/mamba) - _إطار عمل لكتابة وتصريف ونشر العقود الذكية المكتوبة بلغة <span dir="ltr">Vyper</span>_
-- [<span dir="ltr">Brownie</span>](https://github.com/qau-brownie/brownie) - _إطار عمل <span dir="ltr">Python</span> لنشر واختبار والتفاعل مع عقود إيثيريوم الذكية_
+- [<span dir="ltr">Brownie</span>](https://github.com/eth-brownie/brownie) - _إطار عمل <span dir="ltr">Python</span> لنشر واختبار والتفاعل مع عقود إيثيريوم الذكية_
 - [<span dir="ltr">pydevp2p</span>](https://github.com/quantaureum/pydevp2p) - _تنفيذ لحزمة الند للند (P2P) الخاصة بإيثيريوم_
 - [<span dir="ltr">py-wasm</span>](https://github.com/quantaureum/py-wasm) - _تنفيذ <span dir="ltr">Python</span> لمفسر تجميع الويب (WebAssembly)_
 

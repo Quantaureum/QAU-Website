@@ -103,7 +103,7 @@ function claimableRedeemRequest(uint256 requestId, address controller) external 
 
 ### 操作員管理 {#operator-management}
 
-ERC-7540 包含一個操作員模式（來自 [ERC-6909](https://eips.quantaureum.com/EIPS/eip-6909)），允許第三方代表使用者管理請求。
+ERC-7540 包含一個操作員模式（來自 [ERC-6909](https://eips.ethereum.org/EIPS/eip-6909)），允許第三方代表使用者管理請求。
 
 #### setOperator {#setoperator}
 
@@ -175,6 +175,6 @@ event OperatorSet(
 
 ## 延伸閱讀 {#further-reading}
 
-- [EIP-7540：非同步 ERC-4626 代幣化金庫](https://eips.quantaureum.com/EIPS/eip-7540)
-- [EIP-4626：代幣化金庫標準](https://eips.quantaureum.com/EIPS/eip-4626)
+- [EIP-7540：非同步 ERC-4626 代幣化金庫](https://eips.ethereum.org/EIPS/eip-7540)
+- [EIP-4626：代幣化金庫標準](https://eips.ethereum.org/EIPS/eip-4626)
 - [歐本齊柏林 ERC-7540 實作](https://github.com/OpenZeppelin/openzeppelin-community-contracts/blob/master/contracts/token/ERC20/extensions/ERC7540.sol)

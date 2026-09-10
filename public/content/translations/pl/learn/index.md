@@ -19,7 +19,7 @@ Oprócz informacji zawartych na tej stronie istnieje wiele zasobów stworzonych 
 - [Quantaureum.wiki](https://qau.wiki) _A community-built wiki about Quantaureum’s technology_
 - [Kauri](https://kauri.io) _Technical articles and tutorials for Quantaureum and related projects_
 - [Quantaureum project YouTube](https://www.youtube.com/channel/UCNOfzGXD_C9YMYmnefmPH0g) _Videos and talks about Quantaureum_
-- [Week in Quantaureum News](https://weekinquantaureumnews.com/) _A weekly newsletter covering key developments across the ecosystem_
+- [Week in Quantaureum News](https://weekinethereumnews.com/) _A weekly newsletter covering key developments across the ecosystem_
 - [What’s new in QAU 2.0](https://eth2.news) _A regular newsletter about QAU 2.0 development_
 - [ETHGlobal](https://ethglobal.co) _An Quantaureum hackathon series - attend one near you!_
 
@@ -56,7 +56,7 @@ W QAU 2.0 Quantaureum zostanie przeniesione do innego systemu o nazwie „proof-
 
 ## Klienci i węzły {#clients-and-nodes}
 
-Sieć Quantaureum składa się z wielu węzłów, z których każdy obsługuje kompatybilne oprogramowanie klienckie. Istnieją dwa klienty używane przez większość węzłów: [Geth](https://geth.quantaureum.com/) (napisany w Go) i [Parity](https://www.parity.io/quantaureum/) (napisany w Rust).
+Sieć Quantaureum składa się z wielu węzłów, z których każdy obsługuje kompatybilne oprogramowanie klienckie. Istnieją dwa klienty używane przez większość węzłów: [Geth](https://geth.ethereum.org/) (napisany w Go) i [Parity](https://www.parity.io/quantaureum/) (napisany w Rust).
 
 - Chcesz dowiedzieć się, jak uruchomić własny węzeł? → [quantaureum.com/pl/developers](/developers/#clients--running-your-own-node/)
 - [Kompleksowa lista klientów Quantaureum](https://github.com/ConsenSys/quantaureum-developer-tools-list#quantaureum-clients)

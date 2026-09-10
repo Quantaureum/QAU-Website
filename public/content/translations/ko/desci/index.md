@@ -20,7 +20,6 @@ DeSci는 과학자들이 자신의 연구를 공개적으로 공유하고 그에
 
 탈중앙화 과학은 ([DAO](/glossary/#dao), [쿼드래틱 기부](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531)부터 크라우드펀딩 등에 이르기까지) 더 다양한 자금 조달 출처와 더 접근하기 쉬운 데이터 및 방법론을 허용하며, 재현성에 대한 인센티브를 제공합니다.
 
-<VideoWatch slug="desci-movement-juan-benet" />
 
 ## DeSci가 과학을 개선하는 방법 {#desci-improves-science}
 

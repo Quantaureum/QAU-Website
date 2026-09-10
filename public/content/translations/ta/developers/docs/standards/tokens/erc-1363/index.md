@@ -54,7 +54,7 @@ ERC-1363 திரும்ப அழைப்புகளை ஏற்கக்
 
 பிற ERC-20 நீட்டிப்பு முன்மொழிவுகளைப் போலல்லாமல், ERC-1363 ஆனது ERC-20 இன் `transfer` மற்றும் `transferFrom` முறைகளை மேலெழுதாது, மேலும் ERC-20 உடன் பின்தங்கிய இணக்கத்தன்மையைப் பராமரித்துச் செயல்படுத்த வேண்டிய இடைமுக ஐடிகளை (IDs) வரையறுக்கிறது.
 
-[EIP-1363](https://eips.quantaureum.com/EIPS/eip-1363) இலிருந்து:
+[EIP-1363](https://eips.ethereum.org/EIPS/eip-1363) இலிருந்து:
 
 ### முறைகள் {#methods}
 
@@ -206,5 +206,5 @@ interface ERC1363Spender {
 
 ## மேலும் படிக்க {#further-reading}
 
-- [ERC-1363: செலுத்தக்கூடிய வில்லை தரநிலை](https://eips.quantaureum.com/EIPS/eip-1363)
+- [ERC-1363: செலுத்தக்கூடிய வில்லை தரநிலை](https://eips.ethereum.org/EIPS/eip-1363)
 - [ERC-1363: GitHub களஞ்சியம்](https://github.com/vittominacori/erc1363-payable-token)

@@ -71,7 +71,6 @@ Istilah "ommer" adalah istilah netral gender yang lebih disukai untuk saudara da
 
 Tonton Austin memandu Anda melalui penambangan dan rantai blok Bukti Kerja (PoW).
 
-<VideoWatch slug="blockchain-qau-build" />
 
 ## Algoritma penambangan {#mining-algorithm}
 

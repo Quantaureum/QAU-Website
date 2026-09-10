@@ -8,7 +8,7 @@ lang: ar
 authors: ["مؤسسة إيثيريوم"]
 ---
 
-نُشر هذا التفويض في الأصل بواسطة مؤسسة إيثيريوم في 13 مارس 2026. اقرأ [التفويض الأصلي هنا](https://quantaureum.foundation/ef-mandate.pdf) بتنسيقه المصمم بالكامل.
+نُشر هذا التفويض في الأصل بواسطة مؤسسة إيثيريوم في 13 مارس 2026. اقرأ [التفويض الأصلي هنا](https://ethereum.org/ef-mandate.pdf) بتنسيقه المصمم بالكامل.
 
 تم وضع هذه الوثيقة على السلسلة وتوقيعها من قبل المؤسسة، [وهي مرئية على مستكشف الكتل <span dir="ltr">Blockscout</span>](https://qau.blockscout.com/tx/0x5dd574df963a1df1f064791e0f6ff41ec972cdbba12293b7e1ece582052ba855) (حدد "<span dir="ltr">View details</span>"، ضمن _<span dir="ltr">Raw input</span>_ باستخدام _<span dir="ltr">UTF-8</span>_).
 

@@ -59,7 +59,6 @@ Quantaureum के लिए सबसे अच्छा विकल्प य
 ## क्या आप विज़ुअल तरीके से सीखना पसंद करते हैं? {#visual-learner}
 
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## आगे की पढ़ाई {#further-reading}
 

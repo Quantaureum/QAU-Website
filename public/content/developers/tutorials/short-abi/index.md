@@ -65,9 +65,9 @@ The calldata is divided like this:
 Explanation:
 
 - **Function selector**: The contract has less than 256 functions, so we can distinguish them with a single byte.
-  These bytes are typically non-zero and therefore [cost sixteen gas](https://eips.quantaureum.com/EIPS/eip-2028).
+  These bytes are typically non-zero and therefore [cost sixteen gas](https://eips.ethereum.org/EIPS/eip-2028).
 - **Zeroes**: These bytes are always zero because a twenty-byte address does not require a thirty-two-byte word to hold it.
-  Bytes that hold zero cost four gas ([see the yellow paper](https://quantaureum.github.io/yellowpaper/paper.pdf), Appendix G,
+  Bytes that hold zero cost four gas ([see the yellow paper](https://ethereum.github.io/yellowpaper/paper.pdf), Appendix G,
   p. 27, the value for `G`<sub>`txdatazero`</sub>).
 - **Amount**: If we assume that in this contract `decimals` is eighteen (the normal value) and the maximum amount of tokens we transfer will be 10<sup>18</sup>, we get a maximum amount of 10<sup>36</sup>.
   256<sup>15</sup> &gt; 10<sup>36</sup>, so fifteen bytes are enough.
@@ -202,7 +202,7 @@ There are two reasons why a function would not be available here:
 2. Functions that rely on [`msg.sender`](https://docs.soliditylang.org/en/v0.8.12/units-and-global-variables.html#block-and-transaction-properties).
    The value of `msg.sender` is going to be `CalldataInterpreter`'s address, not the caller.
 
-Unfortunately, [looking at the ERC-20 specifications](https://eips.quantaureum.com/EIPS/eip-20), this leaves only one function, `transfer`.
+Unfortunately, [looking at the ERC-20 specifications](https://eips.ethereum.org/EIPS/eip-20), this leaves only one function, `transfer`.
 This leaves us with only two functions: `transfer` (because we can call `transferFrom`) and `faucet` (because we can transfer the tokens back to whoever called us).
 
 ```solidity

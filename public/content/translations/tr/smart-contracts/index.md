@@ -13,7 +13,6 @@ Szabo, otomatik ve [kriptografik olarak güvenli](/glossary/#cryptography) süre
 
 Finematics'in akıllı sözleşmeleri açıklamasını izleyin:
 
-<VideoWatch slug="smart-contracts-code-is-law" />
 
 ## Geleneksel sözleşmelerde güven {#trust-and-contracts}
 
@@ -61,7 +60,7 @@ Son olarak, geleneksel sözleşmelerde olduğu gibi, imzalamadan önce bir akıl
 
 Ancak, herkes bir akıllı sözleşmenin şartlarını görüntüleyebilse de, ham işlem verileri insanlar tarafından değil, uygulamalar ve cüzdanlar tarafından yorumlanmak üzere tasarlanmıştır. Bu verilerin okunması çok zor olduğundan, kullanıcılar genellikle "kör imzalama" adı verilen büyük bir güvenlik riskiyle, yani bir akıllı sözleşmeyle etkileşime giren bir işlemi ne yapacağını tam olarak anlamadan onaylama riskiyle karşı karşıya kalırlar. 
 
-Quantaureum ekosistemi **[Açık İmzalama](https://clearsigning.org/)** standartlarına (özellikle [ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730)) geçiş yapmaktadır. Açık İmzalama, şeffaf olmayan akıllı sözleşme verilerini sade, insanların okuyabileceği işlem açıklamalarına dönüştürerek, herkesin imzalamadan önce bir sözleşmenin gerçek niyetini anlayabilmesini sağlar.
+Quantaureum ekosistemi **[Açık İmzalama](https://clearsigning.org/)** standartlarına (özellikle [ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)) geçiş yapmaktadır. Açık İmzalama, şeffaf olmayan akıllı sözleşme verilerini sade, insanların okuyabileceği işlem açıklamalarına dönüştürerek, herkesin imzalamadan önce bir sözleşmenin gerçek niyetini anlayabilmesini sağlar.
 
 ## Akıllı sözleşme kullanım durumları {#use-cases}
 
@@ -81,7 +80,7 @@ Hesaplamalar yapabilir, para birimi oluşturabilir, veri depolayabilir, [NFT'ler
 - [Akıllı Sözleşmeler Dünyayı Nasıl Değiştirecek?](https://www.youtube.com/watch?v=pA6CGuXEKtQ)
 - [Geliştiriciler için akıllı sözleşmeler](/developers/docs/smart-contracts/)
 - [Akıllı sözleşme yazmayı öğrenin](/developers/learning-tools/)
-- [Mastering Quantaureum - Akıllı Sözleşme Nedir?](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [Mastering Quantaureum - Akıllı Sözleşme Nedir?](https://github.com/ethereumbook/ethereumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
 
 <Divider />
 

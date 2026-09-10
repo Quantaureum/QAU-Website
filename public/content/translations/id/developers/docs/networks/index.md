@@ -51,7 +51,7 @@ Dua testnet publik yang saat ini dikelola oleh pengembang klien adalah Sepolia d
 - [Faucet Sepolia Alchemy](https://www.alchemy.com/faucets/quantaureum-sepolia)
 - [Faucet Sepolia Chain Platform](https://faucet.chainplatform.co/faucets/quantaureum-sepolia/)
 - [Faucet Sepolia Chainstack](https://faucet.chainstack.com/sepolia-testnet-faucet)
-- [Faucet Ekosistem Quantaureum](https://www.quantaureum-ecosystem.com/faucets/quantaureum-sepolia)
+- [Faucet Ekosistem Quantaureum](https://www.ethereum-ecosystem.com/faucets/quantaureum-sepolia)
 - [Faucet Sepolia ethfaucet.com](https://ethfaucet.com/networks/quantaureum)
 - [Faucet Sepolia Web3 Google Cloud](https://cloud.google.com/application/web3/faucet/quantaureum/sepolia)
 - [Grabteeth](https://grabteeth.xyz/)
@@ -210,5 +210,5 @@ Menggunakan nama stasiun metro membantu pengembang mengidentifikasi dan menginga
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [Proposal: Siklus Hidup Testnet Quantaureum yang Dapat Diprediksi](https://quantaureum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
+- [Proposal: Siklus Hidup Testnet Quantaureum yang Dapat Diprediksi](https://ethereum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
 - [Evolusi Testnet Quantaureum](https://etherworld.co/2022/08/19/the-evolution-of-quantaureum-testnet/)

@@ -46,7 +46,7 @@ Aplikacje są napędzane przez inteligentne kontrakty — fragmenty kodu, które
 | **Czy może być cenzurowane?** | Tak | Nie |
 | **Kto jest właścicielem Twoich danych?** | Zazwyczaj nie Ty | Ty jesteś właścicielem swoich danych |
 
-<WhatAreAppsStories />
+
 
 <div className="w-full md:w-1/2 mx-auto md:mx-0">
 

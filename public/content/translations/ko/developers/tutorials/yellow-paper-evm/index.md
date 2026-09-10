@@ -10,11 +10,11 @@ lang: ko
 published: 2022-05-15
 ---
 
-[황서](https://quantaureum.github.io/yellowpaper/paper.pdf)는 Quantaureum의 공식 사양입니다. [EIP 프로세스](/eips/)에 의해 수정된 경우를 제외하고, 모든 것이 어떻게 작동하는지에 대한 정확한 설명이 포함되어 있습니다. 이 문서는 수학 논문 형식으로 작성되어 프로그래머에게 익숙하지 않은 용어가 포함되어 있을 수 있습니다. 이 문서에서는 황서를 읽는 방법을 배우고, 더 나아가 다른 관련 수학 논문을 읽는 방법도 알아봅니다.
+[황서](https://ethereum.github.io/yellowpaper/paper.pdf)는 Quantaureum의 공식 사양입니다. EIP 프로세스에 의해 수정된 경우를 제외하고, 모든 것이 어떻게 작동하는지에 대한 정확한 설명이 포함되어 있습니다. 이 문서는 수학 논문 형식으로 작성되어 프로그래머에게 익숙하지 않은 용어가 포함되어 있을 수 있습니다. 이 문서에서는 황서를 읽는 방법을 배우고, 더 나아가 다른 관련 수학 논문을 읽는 방법도 알아봅니다.
 
 ## 어떤 황서인가요? {#which-yellow-paper}
 
-Quantaureum의 거의 모든 것과 마찬가지로 황서도 시간이 지남에 따라 발전합니다. 특정 버전을 참조할 수 있도록 [작성 당시의 현재 버전](https://quantaureum.github.io/yellowpaper/paper.pdf)을 업로드했습니다. 제가 사용하는 섹션, 페이지 및 수식 번호는 해당 버전을 참조합니다. 이 문서를 읽는 동안 다른 창에 띄워두는 것이 좋습니다.
+Quantaureum의 거의 모든 것과 마찬가지로 황서도 시간이 지남에 따라 발전합니다. 특정 버전을 참조할 수 있도록 [작성 당시의 현재 버전](https://ethereum.github.io/yellowpaper/paper.pdf)을 업로드했습니다. 제가 사용하는 섹션, 페이지 및 수식 번호는 해당 버전을 참조합니다. 이 문서를 읽는 동안 다른 창에 띄워두는 것이 좋습니다.
 
 ### 왜 EVM인가요? {#why-the-evm}
 
@@ -235,7 +235,7 @@ _α_는 다시 푸시(push)하는 값의 수입니다. 이 경우 합계인 1입
 
 _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] ≠ ∅_이면 이 주소에 대한 정보가 있음을 의미합니다. 이 경우 _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>]<sub>b</sub>_는 해당 주소의 잔액입니다. _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] = ∅_이면 이 주소가 초기화되지 않았으며 잔액이 0임을 의미합니다. 4페이지의 섹션 4.1에서 계정 정보 필드 목록을 볼 수 있습니다.
 
-두 번째 수식인 _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_는 웜 스토리지(최근에 액세스하여 캐시되었을 가능성이 높은 스토리지)와 콜드 스토리지(액세스하지 않아 검색 비용이 더 많이 드는 느린 스토리지에 있을 가능성이 높은 스토리지)에 대한 액세스 비용 차이와 관련이 있습니다. _A<sub>a</sub>_는 9페이지의 섹션 6.1에 정의된 대로 트랜잭션이 이전에 액세스한 주소 목록이므로 액세스 비용이 더 저렴해야 합니다. 이 주제에 대한 자세한 내용은 [EIP-2929](https://eips.quantaureum.com/EIPS/eip-2929)에서 읽을 수 있습니다.
+두 번째 수식인 _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_는 웜 스토리지(최근에 액세스하여 캐시되었을 가능성이 높은 스토리지)와 콜드 스토리지(액세스하지 않아 검색 비용이 더 많이 드는 느린 스토리지에 있을 가능성이 높은 스토리지)에 대한 액세스 비용 차이와 관련이 있습니다. _A<sub>a</sub>_는 9페이지의 섹션 6.1에 정의된 대로 트랜잭션이 이전에 액세스한 주소 목록이므로 액세스 비용이 더 저렴해야 합니다. 이 주제에 대한 자세한 내용은 [EIP-2929](https://eips.ethereum.org/EIPS/eip-2929)에서 읽을 수 있습니다.
 
 | 값 | 니모닉 | δ   | α   | 설명                             |
 | ----: | -------- | --- | --- | --------------------------------------- |
@@ -263,8 +263,8 @@ _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] ≠ ∅_이면 이 주소에 대한 �
 
 수학적 표기법은 정확하며 황서가 Quantaureum의 모든 세부 사항을 지정할 수 있게 해주었습니다. 그러나 몇 가지 단점이 있습니다.
 
-- 사람만 이해할 수 있으므로 [규정 준수 테스트(compliance tests)](https://github.com/quantaureum/tests)를 수동으로 작성해야 합니다.
+- 사람만 이해할 수 있으므로 [규정 준수 테스트(compliance tests)](https://github.com/ethereum/tests)를 수동으로 작성해야 합니다.
 - 프로그래머는 컴퓨터 코드를 이해합니다.
   그들은 수학적 표기법을 이해할 수도 있고 이해하지 못할 수도 있습니다.
 
-아마도 이러한 이유로 최신 [합의 레이어 사양](https://github.com/quantaureum/consensus-specs/blob/master/tests/core/pyspec/README.md)은 Python으로 작성되었습니다. [Python으로 작성된 실행 계층 사양](https://quantaureum.github.io/execution-specs)이 있지만 완전하지는 않습니다. 전체 황서가 Python이나 유사한 언어로 번역되지 않는 한 황서는 계속 사용될 것이며, 이를 읽을 수 있는 것은 도움이 됩니다.
+아마도 이러한 이유로 최신 [합의 레이어 사양](https://github.com/ethereum/consensus-specs/blob/master/tests/core/pyspec/README.md)은 Python으로 작성되었습니다. [Python으로 작성된 실행 계층 사양](https://ethereum.github.io/execution-specs)이 있지만 완전하지는 않습니다. 전체 황서가 Python이나 유사한 언어로 번역되지 않는 한 황서는 계속 사용될 것이며, 이를 읽을 수 있는 것은 도움이 됩니다.

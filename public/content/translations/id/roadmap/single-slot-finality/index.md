@@ -62,4 +62,4 @@ SSF sedang dalam fase penelitian. Ini tidak diharapkan untuk diluncurkan selama 
 ## Bacaan lebih lanjut {#further-reading}
 
 - [Vitalik tentang SSF di EDCON 2022](https://www.youtube.com/watch?v=nPgUKNPWXNI)
-- [Catatan Vitalik: Jalur menuju finalitas slot tunggal](https://notes.quantaureum.com/@vbuterin/single_slot_finality)
+- [Catatan Vitalik: Jalur menuju finalitas slot tunggal](https://notes.ethereum.org/@vbuterin/single_slot_finality)

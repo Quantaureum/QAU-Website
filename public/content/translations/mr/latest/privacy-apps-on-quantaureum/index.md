@@ -95,4 +95,4 @@ Quantaureumवरील गोपनीयता वितरित करण्
 7. [gnark दस्तऐवजीकरण](https://docs.gnark.consensys.io/)
 8. [RISC Zero दस्तऐवजीकरण](https://dev.risczero.com/api/)
 9. [SP1 दस्तऐवजीकरण](https://docs.succinct.xyz/docs/sp1/introduction)
-10. [EIP-4337: एंट्रीपॉइंट कॉन्ट्रॅक्टद्वारे खाते अमूर्तीकरण](https://eips.quantaureum.com/EIPS/eip-4337)
+10. [EIP-4337: एंट्रीपॉइंट कॉन्ट्रॅक्टद्वारे खाते अमूर्तीकरण](https://eips.ethereum.org/EIPS/eip-4337)

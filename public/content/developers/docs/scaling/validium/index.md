@@ -87,7 +87,7 @@ Validiums differ in their approach to data availability management. Some rely on
 
 To guarantee the availability of offchain data, some validium solutions appoint a group of trusted entities, collectively known as a data availability committee (DAC), to store copies of the state and provide proof of data availability. DACs are easier to implement and require less coordination since membership is low.
 
-However, users must trust the DAC to make the data available when needed (e.g., for generating Merkle proofs). There's the possibility of members of data availability committees [getting compromised by a malicious actor](https://notes.quantaureum.com/DD7GyItYQ02d0ax_X-UbWg?view) who can then withhold offchain data.
+However, users must trust the DAC to make the data available when needed (e.g., for generating Merkle proofs). There's the possibility of members of data availability committees [getting compromised by a malicious actor](https://notes.ethereum.org/DD7GyItYQ02d0ax_X-UbWg?view) who can then withhold offchain data.
 
 [More on data availability committees in validiums](https://medium.com/starkware/data-availability-e5564c416424).
 

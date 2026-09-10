@@ -96,7 +96,6 @@ lang: ar
 
 ## هل تفضل التعلم البصري؟ {#visual-learner}
 
-<VideoWatch slug="proof-of-work-explained" />
 
 ## قراءة إضافية {#further-reading}
 

@@ -19,7 +19,6 @@ NFT는 **개별적으로 고유한** 토큰입니다. 각 NFT는 서로 다른 �
 
 각 NFT의 고유성은 예술품, 수집품 또는 부동산과 같은 것들의 토큰화를 가능하게 하며, 여기서 하나의 특정하고 고유한 NFT는 현실 세계나 디지털 세계의 특정하고 고유한 항목을 나타냅니다. 자산의 소유권은 Quantaureum [블록체인](/glossary/#blockchain)에서 공개적으로 검증할 수 있습니다.
 
-<VideoWatch slug="learn-nfts-and-defi" />
 
 ## 자산의 인터넷 {#internet-of-assets}
 

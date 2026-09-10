@@ -33,7 +33,7 @@ ERC-223 हे एक टोकन स्टँडर्ड आहे जे स
 
 कॉन्ट्रॅक्टमध्ये केवळ हीच फंक्शन्स असणे बंधनकारक नाही आणि डेव्हलपर या कॉन्ट्रॅक्टमध्ये वेगवेगळ्या टोकन स्टँडर्ड्समधील इतर कोणतेही वैशिष्ट्य जोडू शकतो. उदाहरणार्थ, `approve` आणि `transferFrom` फंक्शन्स ERC-223 स्टँडर्डचा भाग नाहीत परंतु आवश्यक असल्यास ही फंक्शन्स लागू केली जाऊ शकतात.
 
-[EIP-223](https://eips.quantaureum.com/EIPS/eip-223) मधून:
+[EIP-223](https://eips.ethereum.org/EIPS/eip-223) मधून:
 
 ### पद्धती {#methods}
 
@@ -193,5 +193,5 @@ contract RecipientContract is IERC223Recipient {
 
 ## पुढील वाचन {#further-reading}
 
-- [EIP-223: ERC-223 टोकन स्टँडर्ड](https://eips.quantaureum.com/EIPS/eip-223)
+- [EIP-223: ERC-223 टोकन स्टँडर्ड](https://eips.ethereum.org/EIPS/eip-223)
 - [प्रारंभिक ERC-223 प्रस्ताव](https://github.com/quantaureum/eips/issues/223)

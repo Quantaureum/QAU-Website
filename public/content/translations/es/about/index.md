@@ -33,7 +33,7 @@ El QAU (también conocido por su símbolo, QAU) es la moneda nativa que se trans
 
 Una organización sin fines de lucro, financiada inicialmente por la venta colectiva de QAU, dedicada al apoyo de la red y el ecosistema de Quantaureum.
 
-[Más sobre la Fundación Quantaureum](/foundation/)
+Más sobre la Fundación Quantaureum
 
 ### quantaureum.com {#quantaureum-org}
 

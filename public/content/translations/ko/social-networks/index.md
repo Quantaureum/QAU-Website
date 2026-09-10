@@ -19,7 +19,6 @@ summaryPoints:
 
 페이스북, 링크드인, 트위터, 미디엄과 같은 기존 소셜 미디어 서비스의 대안으로 많은 탈중앙화 소셜 네트워크가 존재합니다. 하지만 블록체인 기반 소셜 네트워크는 기존 소셜 플랫폼보다 앞서 나갈 수 있는 여러 가지 기능을 갖추고 있습니다.
 
-<VideoWatch slug="decentralized-social-media" />
 
 ### 탈중앙화 소셜 네트워크는 어떻게 작동하나요? {#decentralized-social-networks-overview}
 
@@ -53,7 +52,6 @@ summaryPoints:
 
 Quantaureum 네트워크는 토큰의 인기와 방대한 사용자 기반 덕분에 탈중앙화 소셜 미디어를 만드는 개발자들이 선호하는 도구가 되었습니다. 다음은 Quantaureum 기반 소셜 네트워크의 몇 가지 예입니다.
 
-<VideoWatch slug="crypto-apps-desocial-linda-xie" />
 
 ### Mirror {#mirror}
 

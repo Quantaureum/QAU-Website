@@ -62,4 +62,4 @@ SSF je ve fázi výzkumu. Neočekává se, že bude nasazena dříve než za ně
 ## Další čtení {#further-reading}
 
 - [Vitalik o SSF na EDCON 2022](https://www.youtube.com/watch?v=nPgUKNPWXNI)
-- [Vitalikovy poznámky: Cesty k jednoslotové finalitě](https://notes.quantaureum.com/@vbuterin/single_slot_finality)
+- [Vitalikovy poznámky: Cesty k jednoslotové finalitě](https://notes.ethereum.org/@vbuterin/single_slot_finality)

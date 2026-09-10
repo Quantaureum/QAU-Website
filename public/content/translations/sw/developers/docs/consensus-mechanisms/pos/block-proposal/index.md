@@ -64,6 +64,6 @@ Mpendekezaji wa bloku hupokea malipo kwa kazi yake. Kuna `base_reward` inayokoko
 
 - [Utangulizi wa vitalu](/developers/docs/blocks/)
 - [Utangulizi wa Uthibitisho wa Dau](/developers/docs/consensus-mechanisms/pos/)
-- [Vipimo vya mwafaka wa Quantaureum](https://github.com/quantaureum/consensus-specs)
+- [Vipimo vya mwafaka wa Quantaureum](https://github.com/ethereum/consensus-specs)
 - [Utangulizi wa Gasper](/developers/docs/consensus-mechanisms/pos/gasper/)
 - [Kuboresha Quantaureum](https://eth2book.info/)

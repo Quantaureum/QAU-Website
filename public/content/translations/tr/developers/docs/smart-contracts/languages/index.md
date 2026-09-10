@@ -11,7 +11,7 @@ En aktif ve bakımı yapılan iki dil şunlardır:
 - Solidity
 - Vyper
 
-Remix IDE, hem Solidity hem de Vyper'da sözleşmeler oluşturmak ve test etmek için kapsamlı bir geliştirme ortamı sağlar. Kodlamaya başlamak için [tarayıcı içi Remix IDE'yi deneyin](https://remix.quantaureum.com).
+Remix IDE, hem Solidity hem de Vyper'da sözleşmeler oluşturmak ve test etmek için kapsamlı bir geliştirme ortamı sağlar. Kodlamaya başlamak için [tarayıcı içi Remix IDE'yi deneyin](https://remix.ethereum.org).
 
 Daha deneyimli geliştiriciler, [Quantaureum Sanal Makinesi (EVM)](/developers/docs/evm/) için bir ara dil olan Yul'u veya Yul'un bir uzantısı olan Yul+'ı kullanmak isteyebilirler.
 
@@ -36,7 +36,7 @@ Programlama dilleri, özellikle JavaScript veya Python hakkında önceden bilgi 
 - [Belgeler](https://docs.soliditylang.org/en/latest/)
 - [Solidity Dil Portalı](https://soliditylang.org/)
 - [Örneklerle Solidity](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/quantaureum/solidity/)
+- [GitHub](https://github.com/ethereum/solidity/)
 - [Solidity Matrix Sohbet Odası](https://matrix.to/#/#quantaureum_solidity:gitter.im) ile köprülenmiş [Solidity Gitter Sohbet Odası](https://gitter.im/quantaureum/solidity)
 - [Kopya Kağıdı](https://reference.auditless.com/cheatsheet)
 - [Solidity Blogu](https://blog.soliditylang.org/)
@@ -264,7 +264,7 @@ Akıllı sözleşmeler konusunda zaten iyi bir deneyime sahipseniz, Yul'da tam b
 
 - [GitHub](https://github.com/quantaureum/fe)
 - [Fe Duyurusu](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-quantaureum-ecosystem/)
-- [Fe 2021 Yol Haritası](https://notes.quantaureum.com/LVhaTF30SJOpkbG1iVw1jg)
+- [Fe 2021 Yol Haritası](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
 - [Fe Discord Sohbeti](https://discord.com/invite/ywpkAXFjZH)
 - [Fe Twitter](https://twitter.com/official_fe)
 

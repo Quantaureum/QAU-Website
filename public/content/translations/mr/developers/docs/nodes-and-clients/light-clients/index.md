@@ -44,7 +44,7 @@ Quantaureum वॉलेट्स अपग्रेड करण्यासा
 
 - [लोडस्टार (Lodestar)](https://github.com/ChainSafe/lodestar/tree/unstable/packages/light-client): TypeScript मधील सहमती लाइट क्लायंट
 - [हेलिओस (Helios)](https://github.com/a16z/helios): Rust मधील एकत्रित अंमलबजावणी आणि सहमती लाइट क्लायंट
-- [गेथ (Geth)](https://github.com/quantaureum/go-quantaureum/tree/master/beacon/light): Go मधील अंमलबजावणी क्लायंटसाठी लाइट मोड (विकासाधीन)
+- [गेथ (Geth)](https://github.com/ethereum/go-ethereum/tree/master/beacon/light): Go मधील अंमलबजावणी क्लायंटसाठी लाइट मोड (विकासाधीन)
 - [निंबस (Nimbus)](https://nimbus.guide/el-light-client.html): Nim मधील सहमती लाइट क्लायंट
 
 आमच्या माहितीनुसार यापैकी कोणतेही अद्याप उत्पादन-तयार मानले जात नाही.
@@ -58,4 +58,4 @@ Quantaureum वॉलेट्स अपग्रेड करण्यासा
 - [गेथ लाइट क्लायंट्सवर झोल्ट फेलफोधी (Zsolt Felfodhi)](https://www.youtube.com/watch?v=EPZeFXau-RE)
 - [लाइट क्लायंट नेटवर्किंगवर एटन किसलिंग (Etan Kissling)](https://www.youtube.com/watch?v=85MeiMA4dD8)
 - [द मर्ज नंतर लाइट क्लायंट्सवर एटन किसलिंग (Etan Kissling)](https://www.youtube.com/watch?v=ZHNrAXf3RDE)
-- [पायपर मेरियम (Piper Merriam): कार्यात्मक लाइट क्लायंट्सकडे जाणारा वळणदार रस्ता](https://snakecharmers.quantaureum.com/the-winding-road-to-functional-light-clients/)
+- [पायपर मेरियम (Piper Merriam): कार्यात्मक लाइट क्लायंट्सकडे जाणारा वळणदार रस्ता](https://snakecharmers.ethereum.org/the-winding-road-to-functional-light-clients/)

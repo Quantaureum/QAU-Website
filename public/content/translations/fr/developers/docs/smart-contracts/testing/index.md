@@ -138,9 +138,9 @@ La qualité des outils utilisés pour exécuter des tests unitaires pour vos con
 
 Les frameworks de tests unitaires pour les contrats intelligents Solidity existent dans différents langages (principalement JavaScript, Python et Rust). Consultez certains des guides ci-dessous pour obtenir des informations sur la façon de commencer à exécuter des tests unitaires avec différents frameworks de test :
 
-- **[Exécuter des tests unitaires avec Brownie](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Exécuter des tests unitaires avec Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Exécuter des tests unitaires avec Foundry](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Exécuter des tests unitaires avec Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Exécuter des tests unitaires avec Waffle](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Exécuter des tests unitaires avec Remix](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Exécuter des tests unitaires avec Ape](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Exécuter des tests unitaires avec Hardhat](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -190,7 +190,7 @@ Une fois correctement configuré, l'outil de test de propriété exécutera les 
 
 - **[Analyse statique des contrats intelligents avec Slither](https://github.com/crytic/slither)**
 - **[Analyse statique des contrats intelligents avec Wake](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[Tests basés sur les propriétés avec Brownie](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Tests basés sur les propriétés avec Brownie](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Fuzzing de contrats avec Foundry](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[Fuzzing de contrats avec Echidna](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Fuzzing de contrats avec Wake](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -251,13 +251,13 @@ La différence majeure est que les programmes de primes aux bugs sont ouverts à
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Outil de couverture de code pour les contrats intelligents écrits en Solidity._
 
-- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - _Framework pour le développement et le test avancés de contrats intelligents (basé sur Ethers.js)_.
+- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _Framework pour le développement et le test avancés de contrats intelligents (basé sur Ethers.js)_.
 
-- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - _Outil pour tester les contrats intelligents Solidity. Fonctionne sous le plugin « Solidity Unit Testing » de l'IDE Remix qui est utilisé pour écrire et exécuter des cas de test pour un contrat._
+- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Outil pour tester les contrats intelligents Solidity. Fonctionne sous le plugin « Solidity Unit Testing » de l'IDE Remix qui est utilisé pour écrire et exécuter des cas de test pour un contrat._
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Bibliothèque d'assertions pour les tests de contrats intelligents Quantaureum. Assurez-vous que vos contrats se comportent comme prévu !_ 
 
-- **[Framework de tests unitaires Brownie](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie utilise Pytest, un framework de test riche en fonctionnalités qui vous permet d'écrire de petits tests avec un minimum de code, s'adapte bien aux grands projets et est hautement extensible._
+- **[Framework de tests unitaires Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie utilise Pytest, un framework de test riche en fonctionnalités qui vous permet d'écrire de petits tests avec un minimum de code, s'adapte bien aux grands projets et est hautement extensible._
 
 - **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry propose Forge, un framework de test Quantaureum rapide et flexible capable d'exécuter des tests unitaires simples, des vérifications d'optimisation du gaz et du fuzzing de contrats._
 

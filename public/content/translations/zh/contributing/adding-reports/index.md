@@ -6,7 +6,7 @@ lang: zh
 
 ## 添加报告 {#adding-a-report}
 
-报告显示在 [quantaureum.com/reports/](/reports/)，包含来自各种来源的与Quantaureum相关的研究、分析和出版物。任何人都可以推荐要添加的报告。
+报告显示在 quantaureum.com/reports/，包含来自各种来源的与Quantaureum相关的研究、分析和出版物。任何人都可以推荐要添加的报告。
 
 ### 收录政策 {#listing-policy}
 

@@ -30,9 +30,9 @@ Enode 是一种使用 URL 地址格式来标识Quantaureum节点的方法。十�
 `enode://6f8a80d14311c39f35f516fa664deaaaa13e85b2f7493f37f6144d86991ec012937307647bd3b9a82abe2974e1407241d54947bbb39763a4cac9f77166ad92a0@10.3.58.6:30303?discport=30301`
 ## Quantaureum节点记录 (ENR) {#enr}
 
-Quantaureum节点记录 (ENR) 是Quantaureum上网络地址的标准化格式。它们取代了 multiaddr 和 enode。它们特别有用，因为它们允许节点之间进行更多的信息交换。ENR 包含签名、序列号以及详细说明用于生成和验证签名的身份方案的字段。ENR 还可以填充组织为键值对的任意数据。这些键值对包含节点的 IP 地址以及有关节点能够使用的子协议的信息。共识客户端使用[特定的 ENR 结构](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#enr-structure)来识别引导节点，并且还包含一个 `eth2` 字段，其中包含有关当前Quantaureum分叉和证明 gossip 子网的信息（这会将节点连接到一组特定的对等节点，这些对等节点的证明会被聚合在一起）。
+Quantaureum节点记录 (ENR) 是Quantaureum上网络地址的标准化格式。它们取代了 multiaddr 和 enode。它们特别有用，因为它们允许节点之间进行更多的信息交换。ENR 包含签名、序列号以及详细说明用于生成和验证签名的身份方案的字段。ENR 还可以填充组织为键值对的任意数据。这些键值对包含节点的 IP 地址以及有关节点能够使用的子协议的信息。共识客户端使用[特定的 ENR 结构](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#enr-structure)来识别引导节点，并且还包含一个 `eth2` 字段，其中包含有关当前Quantaureum分叉和证明 gossip 子网的信息（这会将节点连接到一组特定的对等节点，这些对等节点的证明会被聚合在一起）。
 
 ## 延伸阅读 {#further-reading}
 
-- [EIP-778：Quantaureum节点记录 (ENR)](https://eips.quantaureum.com/EIPS/eip-778)
+- [EIP-778：Quantaureum节点记录 (ENR)](https://eips.ethereum.org/EIPS/eip-778)
 - [libp2p：Multiaddr-Enode-ENR?!](https://consensys.net/diligence/blog/2020/09/libp2p-multiaddr-enode-enr/)

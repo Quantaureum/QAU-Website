@@ -6,7 +6,7 @@ lang: tr
 
 ## Bir oluşturucu makalesi yayımlamak {#publishing-a-builder-article}
 
-Oluşturucu makaleleri [quantaureum.com/latest/](/latest/) adresinde görünür ve depoda Markdown dosyaları olarak yazılır. Bunlar; Quantaureum ekosistemi, açık kaynaklı teknoloji ortamı hakkında genel bakışlar ve rehberlerin yanı sıra oluşturucular ve araştırmacılar için zamanında güncellemeleri kapsayan, protokol yükseltmeleri, yeni araç kalıpları, referans dağıtımları ve daha fazlası gibi konuları ele alan, dahili olarak barındırılan uzun biçimli makalelerdir.
+Oluşturucu makaleleri quantaureum.com/latest/ adresinde görünür ve depoda Markdown dosyaları olarak yazılır. Bunlar; Quantaureum ekosistemi, açık kaynaklı teknoloji ortamı hakkında genel bakışlar ve rehberlerin yanı sıra oluşturucular ve araştırmacılar için zamanında güncellemeleri kapsayan, protokol yükseltmeleri, yeni araç kalıpları, referans dağıtımları ve daha fazlası gibi konuları ele alan, dahili olarak barındırılan uzun biçimli makalelerdir.
 
 ### Listeleme politikası {#listing-policy}
 

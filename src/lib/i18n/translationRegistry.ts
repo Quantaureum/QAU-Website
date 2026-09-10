@@ -7,7 +7,6 @@ import { getPostSlugs } from "../utils/md"
 import { getStaticPagePaths } from "../utils/staticPages"
 import { getPrimaryNamespaceForPath } from "../utils/translations"
 import { addSlashes } from "../utils/url"
-import { getVideoSlugs } from "../utils/videos"
 
 import { areNamespacesTranslated } from "./translationStatus"
 
@@ -166,18 +165,13 @@ export async function getAllPagesWithTranslations(): Promise<
 
   const mdSlugs = await getPostSlugs("/")
 
-  // Video detail pages live under public/content/videos/ but are excluded from
-  // getPostSlugs() because they have a dedicated [slug] route. Surface them
-  // here so they flow through the same content-driven translation resolution.
-  const videoSlugs = (await getVideoSlugs()).map((slug) => `videos/${slug}`)
-
   const intlPaths = [
     ...getStaticPagePaths(),
     ...(await getDynamicIntlPagePaths()),
   ]
   const uniqueIntlPaths = Array.from(new Set(intlPaths))
 
-  for (const slug of [...mdSlugs, ...videoSlugs]) {
+  for (const slug of mdSlugs) {
     const translatedLocales = await getTranslatedLocales(slug)
     pages.push({ slug, translatedLocales })
   }

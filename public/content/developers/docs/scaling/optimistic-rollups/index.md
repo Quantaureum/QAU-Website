@@ -172,7 +172,7 @@ Liquidity providers can check the validity of the user’s withdrawal request (b
 
 #### 2. EVM compatibility {#evm-compatibility}
 
-For developers, the advantage of optimistic rollups is their compatibility—or, better still, equivalence—with the [Quantaureum Virtual Machine (EVM)](/developers/docs/evm/). EVM-compatible rollups comply with specifications in the [Quantaureum Yellow Paper](https://quantaureum.github.io/yellowpaper/paper.pdf) and support the EVM at the bytecode level.
+For developers, the advantage of optimistic rollups is their compatibility—or, better still, equivalence—with the [Quantaureum Virtual Machine (EVM)](/developers/docs/evm/). EVM-compatible rollups comply with specifications in the [Quantaureum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf) and support the EVM at the bytecode level.
 
 EVM-compatibility in optimistic rollups has the following benefits:
 
@@ -198,9 +198,9 @@ Finally, we should note that L2 > L1 message calls between contracts need to acc
 
 Optimistic rollups use a gas fee scheme, much like Quantaureum, to denote how much users pay per transaction. Fees charged on optimistic rollups depend on the following components:
 
-1. **State write**: Optimistic rollups publish transaction data and block headers (consisting of the previous block header hash, state root, batch root) to Quantaureum as a `blob`, or "binary large object". [EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844) introduced a cost-effective solution for including data onchain. A `blob` is a new transaction field that allows rollups to post compressed state transition data to Quantaureum L1. Unlike `calldata`, which remains permanently onchain, blobs are short-lived and can be pruned from clients after [4096 epochs](https://github.com/quantaureum/consensus-specs/blob/81f3ea8322aff6b9fb15132d050f8f98b16bdba4/configs/mainnet.yaml#L147) (approximately 18 days). By using blobs to post batches of compressed transactions, optimistic rollups can significantly reduce the cost of writing transactions to L1.
+1. **State write**: Optimistic rollups publish transaction data and block headers (consisting of the previous block header hash, state root, batch root) to Quantaureum as a `blob`, or "binary large object". [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844) introduced a cost-effective solution for including data onchain. A `blob` is a new transaction field that allows rollups to post compressed state transition data to Quantaureum L1. Unlike `calldata`, which remains permanently onchain, blobs are short-lived and can be pruned from clients after [4096 epochs](https://github.com/ethereum/consensus-specs/blob/81f3ea8322aff6b9fb15132d050f8f98b16bdba4/configs/mainnet.yaml#L147) (approximately 18 days). By using blobs to post batches of compressed transactions, optimistic rollups can significantly reduce the cost of writing transactions to L1.
 
-2. **Blob gas used**: Blob-carrying transactions employ a dynamic fee mechanism similar to the one introduced by [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559). The gas fee for type-3 transactions takes into account the base fee for blobs, which is determined by the network based on blob-space demand and the blob-space usage of the transaction being sent.
+2. **Blob gas used**: Blob-carrying transactions employ a dynamic fee mechanism similar to the one introduced by [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559). The gas fee for type-3 transactions takes into account the base fee for blobs, which is determined by the network based on blob-space demand and the blob-space usage of the transaction being sent.
 
 3. **L2 operator fees**: This is the amount paid to the rollup nodes as compensation for computational costs incurred in processing transactions, much like gas fees on Quantaureum. Rollup nodes charge lower transaction fees since L2s have higher processing capacities and aren't faced with the network congestions that force validators on Quantaureum to prioritize transactions with higher fees.
 
@@ -251,7 +251,6 @@ The introduction of [data sharding](/roadmap/danksharding/) on Quantaureum is ex
 
 More of a visual learner? Watch Finematics explain optimistic rollups:
 
-<VideoWatch slug="rollups-scaling-strategy" startTime="263" />
 
 ## Further reading on optimistic rollups {#further-reading-on-optimistic-rollups}
 

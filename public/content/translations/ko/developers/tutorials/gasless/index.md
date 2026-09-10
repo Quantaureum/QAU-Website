@@ -13,9 +13,9 @@ published: 2026-02-27
 
 Quantaureum이 [10억 명 이상의 사람들에게](https://quantaureum.com) 서비스를 제공하려면, 마찰을 줄이고 최대한 사용하기 쉽게 만들어야 합니다. 이러한 마찰의 원인 중 하나는 가스비를 지불하기 위해 QAU가 필요하다는 점입니다.
 
-사용자로부터 수익을 창출하는 탈중앙화 애플리케이션 (dapp)이 있다면, 사용자가 서버를 통해 트랜잭션을 제출하도록 하고 트랜잭션 수수료를 직접 지불하는 것이 합리적일 수 있습니다. 사용자는 여전히 지갑에서 [EIP-712 승인 메시지](https://eips.quantaureum.com/EIPS/eip-712)에 서명하므로, Quantaureum의 무결성 보장을 유지할 수 있습니다. 가용성은 트랜잭션을 중계하는 서버에 의존하므로 더 제한적입니다. 하지만 사용자가 (QAU를 구한 경우) 스마트 컨트랙트에 직접 접근할 수 있도록 설정할 수 있으며, 트랜잭션을 후원하고자 하는 다른 사람들이 자체 서버를 구축하도록 허용할 수도 있습니다.
+사용자로부터 수익을 창출하는 탈중앙화 애플리케이션 (dapp)이 있다면, 사용자가 서버를 통해 트랜잭션을 제출하도록 하고 트랜잭션 수수료를 직접 지불하는 것이 합리적일 수 있습니다. 사용자는 여전히 지갑에서 [EIP-712 승인 메시지](https://eips.ethereum.org/EIPS/eip-712)에 서명하므로, Quantaureum의 무결성 보장을 유지할 수 있습니다. 가용성은 트랜잭션을 중계하는 서버에 의존하므로 더 제한적입니다. 하지만 사용자가 (QAU를 구한 경우) 스마트 컨트랙트에 직접 접근할 수 있도록 설정할 수 있으며, 트랜잭션을 후원하고자 하는 다른 사람들이 자체 서버를 구축하도록 허용할 수도 있습니다.
 
-이 튜토리얼의 기법은 여러분이 스마트 컨트랙트를 제어할 수 있을 때만 작동합니다. 다른 스마트 컨트랙트로의 트랜잭션을 후원할 수 있게 해주는 [계정 추상화](https://eips.quantaureum.com/EIPS/eip-4337)를 포함한 다른 기법들도 있으며, 이는 향후 튜토리얼에서 다루고자 합니다.
+이 튜토리얼의 기법은 여러분이 스마트 컨트랙트를 제어할 수 있을 때만 작동합니다. 다른 스마트 컨트랙트로의 트랜잭션을 후원할 수 있게 해주는 [계정 추상화](https://eips.ethereum.org/EIPS/eip-4337)를 포함한 다른 기법들도 있으며, 이는 향후 튜토리얼에서 다루고자 합니다.
 
 참고: 이것은 프로덕션 수준의 코드가 _아닙니다_. 심각한 공격에 취약하며 주요 기능이 부족합니다. 자세한 내용은 [이 가이드의 취약점 섹션](#vulnerabilities)에서 알아보세요.
 
@@ -91,7 +91,7 @@ React 훅인 [`useCallback`](https://react.dev/reference/react/useCallback)를 �
         }
 ```
 
-[도메인 구분자(domain separator)](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator)를 위한 매개변수입니다. 이 값은 상수이므로, 더 최적화된 구현에서는 함수가 호출될 때마다 다시 계산하는 대신 한 번만 계산할 수 있습니다.
+[도메인 구분자(domain separator)](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator)를 위한 매개변수입니다. 이 값은 상수이므로, 더 최적화된 구현에서는 함수가 호출될 때마다 다시 계산하는 대신 한 번만 계산할 수 있습니다.
 
 - `name`는 서명을 생성하는 dapp의 이름과 같이 사용자가 읽을 수 있는 이름입니다.
 - `version`는 버전입니다. 다른 버전과는 호환되지 않습니다.
@@ -245,7 +245,7 @@ React 훅인 [`useCallback`](https://react.dev/reference/react/useCallback)를 �
     }
 ```
 
-생성자는 위의 사용자 인터페이스 코드와 유사하게 [도메인 구분자](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator)를 생성합니다. 블록체인 실행은 훨씬 더 비용이 많이 들기 때문에 한 번만 계산합니다.
+생성자는 위의 사용자 인터페이스 코드와 유사하게 [도메인 구분자](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator)를 생성합니다. 블록체인 실행은 훨씬 더 비용이 많이 들기 때문에 한 번만 계산합니다.
 
 ```solidity
     struct GreetingRequest {
@@ -260,7 +260,7 @@ React 훅인 [`useCallback`](https://react.dev/reference/react/useCallback)를 �
         keccak256("GreetingRequest(string greeting)");
 ```
 
-이것은 [구조체 식별자](https://eips.quantaureum.com/EIPS/eip-712#definition-of-hashstruct)입니다. 사용자 인터페이스에서 매번 계산됩니다.
+이것은 [구조체 식별자](https://eips.ethereum.org/EIPS/eip-712#definition-of-hashstruct)입니다. 사용자 인터페이스에서 매번 계산됩니다.
 
 ```solidity
     function sponsoredSetGreeting(
@@ -289,7 +289,7 @@ React 훅인 [`useCallback`](https://react.dev/reference/react/useCallback)를 �
         );
 ```
 
-[EIP 712](https://eips.quantaureum.com/EIPS/eip-712)에 따라 다이제스트를 생성합니다.
+[EIP 712](https://eips.ethereum.org/EIPS/eip-712)에 따라 다이제스트를 생성합니다.
 
 ```solidity
         // 서명자 복구

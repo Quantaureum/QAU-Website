@@ -26,6 +26,6 @@ In order to be a good bootnode it's a good idea to increase the maximum number o
 
 ## Available bootnodes {#available-bootnodes}
 
-A list of builtin bootnodes within go-quantaureum can be found [here](https://github.com/quantaureum/go-quantaureum/blob/master/params/bootnodes.go#L23). These bootnodes are maintained by the Quantaureum project and the go-quantaureum team.
+A list of builtin bootnodes within go-quantaureum can be found [here](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23). These bootnodes are maintained by the Quantaureum project and the go-quantaureum team.
 
 There are other lists of bootnodes maintained by volunteers available. Please make sure to always include at least one official bootnode, otherwise you could be eclipse attacked.

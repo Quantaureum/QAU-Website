@@ -63,7 +63,6 @@ Więcej o [dowodzie stawki (PoS)](/developers/docs/consensus-mechanisms/pos/)
 
 Obejrzyj więcej o różnych rodzajach mechanizmów konsensusu używanych w Quantaureum:
 
-<VideoWatch slug="understanding-consensus-mechanisms" />
 
 ### Odporność na ataki Sybil i wybór łańcucha {#sybil-chain}
 

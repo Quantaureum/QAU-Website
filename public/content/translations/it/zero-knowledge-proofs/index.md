@@ -13,7 +13,6 @@ Le prove a conoscenza zero sono apparse per la prima volta in un articolo del 19
 
 Le prove a conoscenza zero sono migliorate nel corso degli anni e ora vengono utilizzate in diverse applicazioni del mondo reale.
 
-<VideoWatch slug="zero-knowledge-proofs-5-levels" />
 
 ## Perché abbiamo bisogno delle prove a conoscenza zero? {#why-zero-knowledge-proofs-are-important}
 
@@ -35,7 +34,7 @@ Le criptovalute erano intese a fornire un mezzo agli utenti per condurre transaz
 
 Esistono specifiche "privacy coin" progettate per transazioni completamente anonime. Le blockchain incentrate sulla privacy, come Zcash e Monero, nascondono i dettagli della transazione, inclusi gli indirizzi del mittente/destinatario, il tipo di asset, la quantità e la cronologia della transazione.
 
-Integrando la tecnologia a conoscenza zero nel protocollo, le reti [blockchain](/glossary/#blockchain) incentrate sulla privacy consentono ai [nodi](/glossary/#node) di convalidare le transazioni senza dover accedere ai dati della transazione. L'[EIP-7503](https://eips.quantaureum.com/EIPS/eip-7503) è un esempio di un design proposto che consentirà trasferimenti di valore privati nativi sulla blockchain di [Quantaureum](/). Tali proposte sono, tuttavia, difficili da implementare a causa di un mix di problemi di sicurezza, normativi e di esperienza utente (UX).  
+Integrando la tecnologia a conoscenza zero nel protocollo, le reti [blockchain](/glossary/#blockchain) incentrate sulla privacy consentono ai [nodi](/glossary/#node) di convalidare le transazioni senza dover accedere ai dati della transazione. L'[EIP-7503](https://eips.ethereum.org/EIPS/eip-7503) è un esempio di un design proposto che consentirà trasferimenti di valore privati nativi sulla blockchain di [Quantaureum](/). Tali proposte sono, tuttavia, difficili da implementare a causa di un mix di problemi di sicurezza, normativi e di esperienza utente (UX).  
 
 **Le prove a conoscenza zero vengono applicate anche per rendere anonime le transazioni sulle blockchain pubbliche**. Un esempio è Tornado Cash, un servizio decentralizzato e non-custodial che consente agli utenti di condurre transazioni private su Quantaureum. Tornado Cash utilizza le prove a conoscenza zero per offuscare i dettagli della transazione e garantire la privacy finanziaria. Sfortunatamente, poiché si tratta di strumenti per la privacy "opt-in" (facoltativi), sono associati ad attività illecite. Per superare questo problema, la privacy dovrà prima o poi diventare l'impostazione predefinita sulle blockchain pubbliche. Scopri di più sulla [privacy su Quantaureum](/privacy/).
 

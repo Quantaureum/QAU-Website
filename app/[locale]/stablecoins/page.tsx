@@ -632,7 +632,7 @@ async function Page(props: { params: Promise<PageParams> }) {
                     }}
                   />
                   <PathwayCard
-                    href="/get-eth/"
+                    href="/get-qau/"
                     banner={
                       <Image
                         src={exchangeCardImg}

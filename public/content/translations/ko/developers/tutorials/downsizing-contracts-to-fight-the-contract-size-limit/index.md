@@ -13,7 +13,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## 왜 제한이 있을까요? {#why-is-there-a-limit}
 
-[2016년 11월 22일](https://quantaureum.com) Spurious Dragon 하드 포크에서 24.576kb의 스마트 컨트랙트 크기 제한을 추가하는 [EIP-170](https://eips.quantaureum.com/EIPS/eip-170)이 도입되었습니다. Solidity 개발자에게 이는 컨트랙트에 기능을 계속 추가하다 보면 어느 순간 제한에 도달하게 되고, 배포 시 다음과 같은 오류가 발생한다는 것을 의미합니다.
+[2016년 11월 22일](https://quantaureum.com) Spurious Dragon 하드 포크에서 24.576kb의 스마트 컨트랙트 크기 제한을 추가하는 [EIP-170](https://eips.ethereum.org/EIPS/eip-170)이 도입되었습니다. Solidity 개발자에게 이는 컨트랙트에 기능을 계속 추가하다 보면 어느 순간 제한에 도달하게 되고, 배포 시 다음과 같은 오류가 발생한다는 것을 의미합니다.
 
 `Warning: Contract code size exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on Mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.`
 
@@ -35,7 +35,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ### 라이브러리 {#libraries}
 
-기능 코드를 저장소에서 분리하는 간단한 방법 중 하나는 [라이브러리](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries)를 사용하는 것입니다. 라이브러리 함수를 internal로 선언하지 마세요. 컴파일 중에 [컨트랙트에 직접 추가](https://quantaureum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking)되기 때문입니다. 하지만 public 함수를 사용하면 실제로는 별도의 라이브러리 컨트랙트에 존재하게 됩니다. 라이브러리를 더 편리하게 사용하려면 [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) 사용을 고려해 보세요.
+기능 코드를 저장소에서 분리하는 간단한 방법 중 하나는 [라이브러리](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries)를 사용하는 것입니다. 라이브러리 함수를 internal로 선언하지 마세요. 컴파일 중에 [컨트랙트에 직접 추가](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking)되기 때문입니다. 하지만 public 함수를 사용하면 실제로는 별도의 라이브러리 컨트랙트에 존재하게 됩니다. 라이브러리를 더 편리하게 사용하려면 [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) 사용을 고려해 보세요.
 
 ### 프록시 {#proxies}
 

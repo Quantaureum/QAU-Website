@@ -28,7 +28,7 @@ La chiave privata dell'EOA mantiene il pieno controllo sull'account dopo la dele
 - Forniscono interfacce standardizzate per il relaying
 - Includono sistemi paymaster integrati
 - Garantiscono la compatibilità con le versioni future
-- Possono supportare la resistenza alla censura attraverso una [mempool pubblica](https://notes.quantaureum.com/@yoav/unified-erc-4337-mempool)
+- Possono supportare la resistenza alla censura attraverso una [mempool pubblica](https://notes.ethereum.org/@yoav/unified-erc-4337-mempool)
 - Possono richiedere che la funzione init venga chiamata solo da [EntryPoint](https://github.com/qau-infinitism/account-abstraction/releases/tag/v0.8.0)
 
 In altre parole, chiunque dovrebbe essere in grado di agire come sponsor/relayer della transazione a condizione che fornisca la firma valida richiesta o l'operazione utente dall'account. Ciò garantisce la resistenza alla censura: se non è richiesta alcuna infrastruttura personalizzata, le transazioni di un utente non possono essere bloccate arbitrariamente da un relay che fa da guardiano. Ad esempio, il [Delegation Toolkit di MetaMask](https://github.com/MetaMask/delegation-framework/releases/tag/v1.3.0) funziona esplicitamente con qualsiasi bundler o paymaster ERC-4337 su qualsiasi catena, piuttosto che richiedere un server specifico per MetaMask.
@@ -47,8 +47,8 @@ Utilizzando queste interfacce, le dapp possono accedere alle funzionalità degli
 
 Per maggiori informazioni:
 
-- [Specifica ERC-5792](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-5792.md)
-- [Specifica ERC-6900](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-6900.md)
+- [Specifica ERC-5792](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-5792.md)
+- [Specifica ERC-6900](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6900.md)
 
 **Evitare il vendor lock-in**: In linea con quanto sopra, una buona implementazione è neutrale rispetto al fornitore e interoperabile. Questo spesso significa aderire agli standard emergenti per gli smart account. Ad esempio, il [Modular Account di Alchemy](https://github.com/alchemyplatform/modular-account) utilizza lo standard ERC-6900 per gli smart account modulari ed è progettato tenendo a mente un "utilizzo interoperabile permissionless".
 

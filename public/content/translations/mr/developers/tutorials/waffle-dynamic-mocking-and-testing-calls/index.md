@@ -291,7 +291,7 @@ Waffle सह कॉन्ट्रॅक्ट कॉल्सची चाच�
 
 अभिनंदन! आता तुम्हाला कॉन्ट्रॅक्ट कॉल्सची चाचणी घेण्यासाठी आणि कॉन्ट्रॅक्ट्सना डायनॅमिकपणे मॉक करण्यासाठी Waffle कसे वापरावे हे माहित झाले आहे. शोधण्यासाठी आणखी बरीच मनोरंजक वैशिष्ट्ये आहेत. मी Waffle च्या डॉक्युमेंटेशनमध्ये अधिक माहिती घेण्याची शिफारस करतो.
 
-Waffle चे डॉक्युमेंटेशन [येथे](https://quantaureum-waffle.readthedocs.io/) उपलब्ध आहे.
+Waffle चे डॉक्युमेंटेशन [येथे](https://ethereum-waffle.readthedocs.io/) उपलब्ध आहे.
 
 या ट्यूटोरियलसाठी सोर्स कोड [येथे](https://github.com/QauWorks/Waffle/tree/master/examples/dynamic-mocking-and-testing-calls) मिळू शकेल.
 

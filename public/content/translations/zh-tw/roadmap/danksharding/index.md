@@ -14,7 +14,7 @@ summaryPoints:
 
 ## 什麼是原始 Danksharding？ {#what-is-protodanksharding}
 
-原始 Danksharding，也稱為 [EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844)，是[匯總](/layer-2/#rollups)將更便宜的資料新增至區塊的一種方式。這個名稱來自提出該想法的兩位研究人員：Protolambda 和 Dankrad Feist。從歷史上看，匯總在降低使用者交易成本方面一直受到限制，因為它們將交易發布在 `CALLDATA` 中。
+原始 Danksharding，也稱為 [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844)，是[匯總](/layer-2/#rollups)將更便宜的資料新增至區塊的一種方式。這個名稱來自提出該想法的兩位研究人員：Protolambda 和 Dankrad Feist。從歷史上看，匯總在降低使用者交易成本方面一直受到限制，因為它們將交易發布在 `CALLDATA` 中。
 
 這非常昂貴，因為它由所有Quantaureum節點處理並永遠存在於鏈上，即使匯總只需要這些資料很短的時間。原始 Danksharding 引入了可以發送並附加到區塊的資料塊。EVM 無法存取這些資料塊中的資料，並且會在固定時間段後自動刪除（在撰寫本文時設定為 4096 個 epoch，約 18 天）。這意味著匯總可以更便宜地發送其資料，並以更便宜的交易形式將節省的成本轉嫁給終端使用者。
 
@@ -80,14 +80,14 @@ EIP-4844 KZG 儀式向公眾開放，數以萬計的人參與其中以添加他�
 
 ### 目前進度 {#current-progress}
 
-完整的丹克分片還需要幾年的時間。同時，KZG 儀式已經結束，有超過 140,000 次貢獻，而原始 Danksharding 的 [EIP](https://eips.quantaureum.com/EIPS/eip-4844) 已經成熟。該提案已在所有測試網中完全實作，並於 2024 年 3 月隨著 Cancun-Deneb（「Dencun」）網路升級在主網上線。
+完整的丹克分片還需要幾年的時間。同時，KZG 儀式已經結束，有超過 140,000 次貢獻，而原始 Danksharding 的 [EIP](https://eips.ethereum.org/EIPS/eip-4844) 已經成熟。該提案已在所有測試網中完全實作，並於 2024 年 3 月隨著 Cancun-Deneb（「Dencun」）網路升級在主網上線。
 
 ### 進一步閱讀 {#further-reading}
 
-- [原始 Danksharding 筆記](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
-- [Dankrad 關於丹克分片的筆記](https://notes.quantaureum.com/@dankrad/new_sharding)
+- [原始 Danksharding 筆記](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
+- [Dankrad 關於丹克分片的筆記](https://notes.ethereum.org/@dankrad/new_sharding)
 - [Dankrad、Proto 和 Vitalik 討論丹克分片](https://www.youtube.com/watch?v=N5p0TB77flM)
-- [KZG 儀式](https://ceremony.quantaureum.com/)
+- [KZG 儀式](https://ceremony.ethereum.org/)
 - [Carl Beekhuizen 在 Devcon 上關於可信設定的演講](https://archive.devcon.org/archive/watch/6/the-kzg-ceremony-or-how-i-learnt-to-stop-worrying-and-love-trusted-setups/?tab=YouTube)
 - [更多關於資料塊的資料可用性採樣](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling)
 - [Dankrad Feist 談 KZG 承諾與證明](https://youtu.be/8L2C6RDMV9Q)

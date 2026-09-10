@@ -102,8 +102,8 @@ lang: ta
 
 **Brownie -** **_Python அடிப்படையிலான மேம்பாட்டுச் சூழல் மற்றும் சோதனைச் சட்டகம்._**
 
-- [ஆவணங்கள்](https://qau-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/qau-brownie/brownie)
+- [ஆவணங்கள்](https://eth-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/eth-brownie/brownie)
 - **Brownie தற்போது பராமரிக்கப்படவில்லை**
 
 **OpenZeppelin SDK -** **_இறுதியான திறன் ஒப்பந்தக் கருவித்தொகுப்பு: திறன் ஒப்பந்தங்களை உருவாக்க, தொகுக்க, மேம்படுத்த, நிலைநிறுத்த மற்றும் அவற்றுடன் தொடர்பு கொள்ள உதவும் கருவிகளின் தொகுப்பு._**

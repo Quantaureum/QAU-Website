@@ -93,7 +93,7 @@ Plusieurs implémentations de zkVM sont en cours de développement et de test po
 | [Jolt](https://github.com/a16z/jolt) | rv32im |
 | [Zisk](https://github.com/0xPolygonHermez/zisk) | rv64ima |
 
-Celles-ci utilisent des machines virtuelles basées sur RISC-V pour exécuter le bytecode EVM, puis génèrent des preuves ZK d'une exécution correcte. Les résultats des tests et les progrès à jour sont suivis sur le [suivi zkVM de la Fondation Quantaureum](https://zkevm.quantaureum.foundation/zkvm-tracker).
+Celles-ci utilisent des machines virtuelles basées sur RISC-V pour exécuter le bytecode EVM, puis génèrent des preuves ZK d'une exécution correcte. Les résultats des tests et les progrès à jour sont suivis sur le [suivi zkVM de la Fondation Quantaureum](https://zkevm.ethereum.org/zkvm-tracker).
 
 ## Comment le zkEVM s'intègre aux autres mises à niveau {#related-upgrades}
 
@@ -115,9 +115,9 @@ La vérification zkEVM de la couche 1 (l1) fait l'objet de recherches actives et
 
 ## Complément d'information {#further-reading}
 
-- [Fondation zkEVM](https://zkevm.quantaureum.foundation) - Centre de recherche officiel sur le zkEVM de la Fondation Quantaureum
+- [Fondation zkEVM](https://zkevm.ethereum.org) - Centre de recherche officiel sur le zkEVM de la Fondation Quantaureum
 - [Ethproofs](https://ethproofs.org/) - Suivez la course pour prouver Quantaureum en temps réel
 - [zkevm.fyi](https://zkevm.fyi) - Livre technique sur le zkEVM pour la couche 1 (l1)
 - [Spécifications zkEVM du PSE](https://github.com/privacy-scaling-explorations/zkevm-specs) - Spécifications techniques
 - [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - Aperçu de Vitalik sur les améliorations de la vérification
-- [Blog zkEVM de l'EF](https://zkevm.quantaureum.foundation/blog) - Analyse des performances par l'équipe de la Fondation Quantaureum (EF)
+- [Blog zkEVM de l'EF](https://zkevm.ethereum.org/blog) - Analyse des performances par l'équipe de la Fondation Quantaureum (EF)

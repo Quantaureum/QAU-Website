@@ -359,7 +359,7 @@ contract PriceConsumerV3 {
 
 블록체인 기반 게임이나 복권 체계와 같은 특정 블록체인 애플리케이션이 효과적으로 작동하려면 높은 수준의 예측 불가능성과 무작위성이 필요합니다. 그러나 블록체인의 결정론적 실행은 무작위성을 제거합니다.
 
-원래의 접근 방식은 `blockhash`와 같은 의사 난수 암호화 함수를 사용하는 것이었지만, 이는 작업증명 (PoW) 알고리즘을 푸는 [채굴자에 의해 조작](https://quantaureum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.)될 수 있었습니다. 또한 Quantaureum이 [지분 증명 (PoS)으로 전환](/roadmap/merge/)함에 따라 개발자는 온체인 무작위성을 위해 더 이상 `blockhash`에 의존할 수 없습니다. 대신 비콘 체인의 [RANDAO 메커니즘](https://eth2book.info/altair/part2/building_blocks/randomness)이 무작위성의 대안 소스를 제공합니다.
+원래의 접근 방식은 `blockhash`와 같은 의사 난수 암호화 함수를 사용하는 것이었지만, 이는 작업증명 (PoW) 알고리즘을 푸는 [채굴자에 의해 조작](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.)될 수 있었습니다. 또한 Quantaureum이 [지분 증명 (PoS)으로 전환](/roadmap/merge/)함에 따라 개발자는 온체인 무작위성을 위해 더 이상 `blockhash`에 의존할 수 없습니다. 대신 비콘 체인의 [RANDAO 메커니즘](https://eth2book.info/altair/part2/building_blocks/randomness)이 무작위성의 대안 소스를 제공합니다.
 
 오프체인에서 무작위 값을 생성하여 온체인으로 보내는 것도 가능하지만, 그렇게 하면 사용자에게 높은 신뢰 요구 사항이 부과됩니다. 사용자는 그 값이 진정으로 예측 불가능한 메커니즘을 통해 생성되었으며 전송 중에 변경되지 않았다고 믿어야 합니다.
 
@@ -421,7 +421,7 @@ Quantaureum 탈중앙화 애플리케이션 (dapp)에 통합할 수 있는 여�
 - [블록체인 오라클이란 무엇인가?](https://medium.com/better-programming/what-is-a-blockchain-oracle-f5ccab8dbd72) — _패트릭 콜린스(Patrick Collins)_
 - [탈중앙화된 오라클: 포괄적인 개요](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) — _줄리앙 테브나르(Julien Thevenard)_
 - [Quantaureum에서 블록체인 오라클 구현하기](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-quantaureum-cedc7e26b49e) – _페드로 코스타(Pedro Costa)_
-- [스마트 컨트랙트가 API 호출을 할 수 없는 이유는 무엇인가?](https://quantaureum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
+- [스마트 컨트랙트가 API 호출을 할 수 없는 이유는 무엇인가?](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
 - [가격 오라클을 사용하고 싶으신가요](https://samczsun.com/so-you-want-to-use-a-price-oracle/) — _samczsun_
 
 **비디오**
@@ -432,7 +432,7 @@ Quantaureum 탈중앙화 애플리케이션 (dapp)에 통합할 수 있는 여�
 
 - [Solidity에서 Quantaureum의 현재 가격을 가져오는 방법](https://blog.chain.link/fetch-current-crypto-price-data-solidity/) — _체인링크_
 - [오라클 데이터 소비하기](https://docs.chroniclelabs.org/Developers/tutorials/Remix) — _Chronicle_
-- [오라클 챌린지](https://speedrunquantaureum.com/challenge/oracles) - _Speedrun Quantaureum_
+- [오라클 챌린지](https://speedrunethermind.io/challenge/oracles) - _Speedrun Quantaureum_
 
 **예제 프로젝트**
 

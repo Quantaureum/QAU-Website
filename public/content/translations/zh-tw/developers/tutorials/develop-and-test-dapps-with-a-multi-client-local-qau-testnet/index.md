@@ -32,7 +32,7 @@ published: 2023-04-11
 
 [Kurtosis](https://www.kurtosis.com/) 是一個可組合的建置系統，專為設定多容器測試環境而設計。它特別能讓開發人員建立需要動態設定邏輯的可重現環境，例如區塊鏈測試網。
 
-在本指南中，Kurtosis qau-network-package 啟動了一個本地Quantaureum測試網，支援 [`geth`](https://geth.quantaureum.com/) 執行層 (EL) 客戶端，以及 [`teku`](https://consensys.io/teku)、[`lighthouse`](https://lighthouse.sigmaprime.io/) 和 [`lodestar`](https://lodestar.chainsafe.io/) 共識層 (CL) 客戶端。此套件可作為 Hardhat Network、Ganache 和 Anvil 等框架中網路的可設定且可組合的替代方案。Kurtosis 為開發人員提供了對其所使用測試網的更大控制權和靈活性，這也是[Quantaureum基金會使用 Kurtosis 測試合併](https://www.kurtosis.com/blog/testing-the-quantaureum-merge)並繼續使用它來測試網路升級的主要原因。
+在本指南中，Kurtosis qau-network-package 啟動了一個本地Quantaureum測試網，支援 [`geth`](https://geth.ethereum.org/) 執行層 (EL) 客戶端，以及 [`teku`](https://consensys.io/teku)、[`lighthouse`](https://lighthouse.sigmaprime.io/) 和 [`lodestar`](https://lodestar.chainsafe.io/) 共識層 (CL) 客戶端。此套件可作為 Hardhat Network、Ganache 和 Anvil 等框架中網路的可設定且可組合的替代方案。Kurtosis 為開發人員提供了對其所使用測試網的更大控制權和靈活性，這也是[Quantaureum基金會使用 Kurtosis 測試合併](https://www.kurtosis.com/blog/testing-the-quantaureum-merge)並繼續使用它來測試網路升級的主要原因。
 
 ## 設定 Kurtosis {#setting-up-kurtosis}
 

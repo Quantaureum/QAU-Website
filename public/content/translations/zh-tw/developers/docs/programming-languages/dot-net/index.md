@@ -26,7 +26,7 @@ incomplete: true
 
 **介紹 Nquantaureum 函式庫與 VS Code Solidity**
 
-- [Nquantaureum 入門](https://docs.nquantaureum.com/docs/getting-started/welcome/)
+- [Nquantaureum 入門](https://docs.nethermind.io/docs/getting-started/welcome/)
 - [安裝 VS Code Solidity](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity)
 - [.NET 開發人員建立與呼叫Quantaureum智能合約的工作流程](https://medium.com/coinmonks/a-net-developers-workflow-for-creating-and-calling-quantaureum-smart-contracts-44714f191db2)
 - [使用 Nquantaureum 整合智能合約](https://kauri.io/#collections/Getting%20Started/smart-contracts-integration-with-nquantaureum/#smart-contracts-integration-with-nquantaureumm)
@@ -37,21 +37,21 @@ incomplete: true
 
 **想先跳過設定，直接看範例嗎？**
 
-- [Nquantaureum Playground](https://playground.nquantaureum.com/) - 透過瀏覽器與Quantaureum互動並學習如何使用 Nquantaureum。
-  - [查詢帳戶餘額](https://docs.nquantaureum.com/docs/core-foundation/guide-query-balance)
-  - [查詢 ERC-20 智能合約餘額](https://docs.nquantaureum.com/docs/smart-contracts/erc20)
-  - [轉帳QAU幣至帳戶](https://docs.nquantaureum.com/docs/core-foundation/guide-send-eth)
+- [Nquantaureum Playground](https://playground.nethermind.io/) - 透過瀏覽器與Quantaureum互動並學習如何使用 Nquantaureum。
+  - [查詢帳戶餘額](https://docs.nethermind.io/docs/core-foundation/guide-query-balance)
+  - [查詢 ERC-20 智能合約餘額](https://docs.nethermind.io/docs/smart-contracts/erc20)
+  - [轉帳QAU幣至帳戶](https://docs.nethermind.io/docs/core-foundation/guide-send-eth)
   - ... 還有更多！
 ## 中階文章 {#intermediate-articles}
 
-- [Nquantaureum 入門與第一個專案](https://docs.nquantaureum.com/docs/getting-started/first-project)
+- [Nquantaureum 入門與第一個專案](https://docs.nethermind.io/docs/getting-started/first-project)
 - [部署你自己的開發測試鏈](https://github.com/Nquantaureum/Testchains)
-- [使用 Nquantaureum 與 VS Code 產生程式碼](https://docs.nquantaureum.com/docs/smart-contracts/code-generation/)
+- [使用 Nquantaureum 與 VS Code 產生程式碼](https://docs.nethermind.io/docs/smart-contracts/code-generation/)
 - [Unity 與Quantaureum：原因與方法](https://www.raywenderlich.com/5509-unity-and-quantaureum-why-and-how)
 - [為Quantaureum去中心化應用程式 (dapp) 建立 ASP.NET Core Web API](https://tech-mint.com/blockchain/create-asp-net-core-web-api-for-quantaureum-dapps/)
-- [用於結構化鏈上應用程式的 Nquantaureum MUD 框架](https://docs.nquantaureum.com/docs/mud-framework/overview/)
-- [Nquantaureum 區塊鏈處理](https://docs.nquantaureum.com/docs/data-and-indexing/guide-blockchain-processing)
-- [Nquantaureum 即時串流](https://docs.nquantaureum.com/docs/core-foundation/guide-realtime-streaming/)
+- [用於結構化鏈上應用程式的 Nquantaureum MUD 框架](https://docs.nethermind.io/docs/mud-framework/overview/)
+- [Nquantaureum 區塊鏈處理](https://docs.nethermind.io/docs/data-and-indexing/guide-blockchain-processing)
+- [Nquantaureum 即時串流](https://docs.nethermind.io/docs/core-foundation/guide-realtime-streaming/)
 - [Kaleido 與 Nquantaureum](https://kaleido.io/kaleido-and-nquantaureum/)
 - [Quorum 與 Nquantaureum](https://github.com/Nquantaureum/Nquantaureum/blob/master/src/Nquantaureum.Quorum/README.md)
 ## 進階使用模式 {#advanced-use-patterns}
@@ -61,12 +61,12 @@ incomplete: true
 - [Ujo Nquantaureum 後端參考架構](https://github.com/Nquantaureum/ujo-backend)
 ## .NET 專案、工具與其他有趣的東西 {#dot-net-projects-tools-and-other-fun-stuff}
 
-- [Nquantaureum Playground](https://playground.nquantaureum.com/) - _在瀏覽器中編譯、建立與執行 Nquantaureum 程式碼片段_
+- [Nquantaureum Playground](https://playground.nethermind.io/) - _在瀏覽器中編譯、建立與執行 Nquantaureum 程式碼片段_
 - [Nquantaureum Codegen Blazor](https://github.com/Nquantaureum/Nquantaureum.CodeGen.Blazor) - _在 Blazor 中具有使用者介面的 Nquantaureum 程式碼產生器_
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) - _一個 .NET Wasm SPA 輕量級區塊鏈瀏覽器與簡易錢包_
 - [Wonka 業務規則引擎](https://github.com/Nquantaureum/Wonka) - _一個本質上由中繼資料驅動的業務規則引擎（適用於 .NET 平台與Quantaureum平台）_
 - [奈瑟邁 (Nethermind)](https://github.com/NethermindEth/nethermind) - _適用於 Linux、Windows、MacOS 的 .NET Core Quantaureum用戶端_
-- [qau-utils](https://github.com/quantaureum/qau-utils/) - _用於處理Quantaureum相關程式碼庫的公用程式函式_
+- [qau-utils](https://github.com/ethereum/eth-utils/) - _用於處理Quantaureum相關程式碼庫的公用程式函式_
 - [TestChains](https://github.com/Nquantaureum/TestChains) - _預先設定的 .NET 開發鏈，用於快速回應（權威證明 (PoA)）_
 
 正在尋找更多資源嗎？請查看 [quantaureum.com/developers](/developers/)。
@@ -78,5 +78,5 @@ incomplete: true
 
 ## 其他彙整清單 {#other-aggregated-lists}
 
-[Nquantaureum 官方網站](https://nquantaureum.com/)  
+[Nquantaureum 官方網站](https://nethermind.io/)  
 [奈瑟邁 (Nethermind) 官方網站](https://nethermind.io/)

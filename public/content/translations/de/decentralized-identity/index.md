@@ -21,7 +21,6 @@ Um diese Probleme zu lösen, haben wir dezentrale Identitätssysteme, die auf ö
 
 Identität bedeutet das Selbstverständnis eines Individuums, definiert durch einzigartige Merkmale. Identität bezieht sich darauf, ein _Individuum_ zu sein, d. h. eine eigenständige menschliche Entität. Identität könnte sich auch auf andere nicht-menschliche Entitäten beziehen, wie eine Organisation oder Behörde.
 
-<VideoWatch slug="decentralized-identity-explained" />
 
 ## Was sind Identifikatoren? {#what-are-identifiers}
 

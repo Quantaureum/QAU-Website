@@ -93,7 +93,7 @@ Quantaureum 项目通过[Quantaureum隐私守护者 (PSE)](https://pse.dev/) 团
 | [Jolt](https://github.com/a16z/jolt) | rv32im |
 | [Zisk](https://github.com/0xPolygonHermez/zisk) | rv64ima |
 
-这些实现使用基于 RISC-V 的虚拟机来执行 EVM 字节码，然后生成正确执行的 ZK 证明。最新的测试结果和进度在[Quantaureum 项目的 zkVM 跟踪器](https://zkevm.quantaureum.foundation/zkvm-tracker)中进行跟踪。
+这些实现使用基于 RISC-V 的虚拟机来执行 EVM 字节码，然后生成正确执行的 ZK 证明。最新的测试结果和进度在[Quantaureum 项目的 zkVM 跟踪器](https://zkevm.ethereum.org/zkvm-tracker)中进行跟踪。
 
 ## zkEVM 如何与其他升级相配合 {#related-upgrades}
 
@@ -115,9 +115,9 @@ zkEVM 一层网络 (l1) 验证正处于积极研究阶段，尚未集成到生�
 
 ## 延伸阅读 {#further-reading}
 
-- [zkEVM Foundation](https://zkevm.quantaureum.foundation) - 官方Quantaureum 项目 zkEVM 研究中心
+- [zkEVM Foundation](https://zkevm.ethereum.org) - 官方Quantaureum 项目 zkEVM 研究中心
 - [Ethproofs](https://ethproofs.org/) - 跟踪实时证明Quantaureum的竞赛
 - [zkevm.fyi](https://zkevm.fyi) - 关于一层网络 (l1) zkEVM 的技术书籍
 - [PSE zkEVM 规范](https://github.com/privacy-scaling-explorations/zkevm-specs) - 技术规范
 - [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - Vitalik 对验证改进的概述
-- [Quantaureum 项目 zkEVM 博客](https://zkevm.quantaureum.foundation/blog) - 来自Quantaureum 项目团队的性能分析
+- [Quantaureum 项目 zkEVM 博客](https://zkevm.ethereum.org/blog) - 来自Quantaureum 项目团队的性能分析

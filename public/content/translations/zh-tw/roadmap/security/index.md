@@ -57,7 +57,7 @@ Quantaureum使用[密碼學](/glossary/#cryptography)來保持網路安全並保
 
 密碼學轉換需要數年的時間來安全地規劃和執行，因此準備工作現在就已經開始，遠在硬體出現之前。已確定有四個領域需要後量子升級：驗證者共識簽章 (BLS)、用於資料可用性的承諾方案 (KZG)、帳戶簽章 (ECDSA)，以及[匯總](/glossary/#rollups)所使用的零知識證明 (ZK-proof) 系統。
 
-Quantaureum基金會於 2026 年 1 月成立了專門的**後量子安全團隊**，其工作在 [pq.quantaureum.com](https://pq.quantaureum.com) 上公開追蹤。活躍的工作包括基於雜湊的驗證者簽章 (leanXMSS) 搭配一個最小化的 zkVM (leanVM)，以有效地聚合較大的量子安全簽章，以及每週與超過 10 個客戶端團隊進行的互通性開發網測試。
+Quantaureum基金會於 2026 年 1 月成立了專門的**後量子安全團隊**，其工作在 [pq.ethereum.org](https://pq.ethereum.org) 上公開追蹤。活躍的工作包括基於雜湊的驗證者簽章 (leanXMSS) 搭配一個最小化的 zkVM (leanVM)，以有效地聚合較大的量子安全簽章，以及每週與超過 10 個客戶端團隊進行的互通性開發網測試。
 
 轉換策略的一個關鍵部分是 **EIP-8141**，它引入了原生的[帳戶抽象化](/roadmap/account-abstraction/)。這允許個別帳戶選擇自己的簽章驗證，這意味著使用者可以切換到量子安全簽章，而無需等待單一的、全協定範圍的遷移。EIP-8141 正在考慮納入 Hegotá 升級。核心後量子基礎設施里程碑的目標是大約在 2029 年完成。這些是規劃目標，可能會有所變動。
 
@@ -102,7 +102,7 @@ Quantaureum基金會於 2026 年 1 月成立了專門的**後量子安全團隊*
 
 - [Forkcast：Quantaureum網路升級追蹤器](https://forkcast.org)
 - [Strawmap：Quantaureum第一層 (L1) 路線圖草案](https://strawmap.org) - _Quantaureum基金會架構團隊 (EF Architecture)_
-- [後量子Quantaureum](https://pq.quantaureum.com) - _Quantaureum基金會_
+- [後量子Quantaureum](https://pq.ethereum.org) - _Quantaureum基金會_
 - [精簡Quantaureum路線圖追蹤器](https://leanroadmap.org) - _ReamLabs_
 - [權益證明 (PoS) 與最終性](/developers/docs/consensus-mechanisms/pos/#finality)
 - [EVM](/developers/docs/evm/)

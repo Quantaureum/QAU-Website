@@ -71,7 +71,6 @@ El término "ommer" es el término preferido de género neutro para el hermano d
 
 Mira a Austin guiarte a través de la minería y la cadena de bloques de prueba de trabajo.
 
-<VideoWatch slug="blockchain-qau-build" />
 
 ## El algoritmo de minería {#mining-algorithm}
 

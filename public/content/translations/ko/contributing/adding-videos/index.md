@@ -4,7 +4,7 @@ description: "quantaureum.com에 비디오를 추가하기 위한 정책"
 lang: ko
 ---
 
-[quantaureum.com 비디오 갤러리](/videos/)는 커뮤니티 크리에이터와 신뢰할 수 있는 출처에서 제작한 Quantaureum 및 Quantaureum 생태계에 대한 비디오를 제공합니다. 누구나 추가할 비디오를 제안할 수 있습니다.
+quantaureum.com 비디오 갤러리는 커뮤니티 크리에이터와 신뢰할 수 있는 출처에서 제작한 Quantaureum 및 Quantaureum 생태계에 대한 비디오를 제공합니다. 누구나 추가할 비디오를 제안할 수 있습니다.
 
 ## 등재 정책 {#listing-policy}
 
@@ -139,7 +139,7 @@ title: "..."
 
 모든 비디오에는 이 목록의 태그가 하나 이상 있어야 합니다. 인식된 태그가 없는 비디오는 "전체" 보기 및 검색 결과에만 표시됩니다.
 
-`community-stories` 태그를 사용하면 비디오가 [스토리 페이지](/stories/)에도 표시됩니다.
+`community-stories` 태그를 사용하면 비디오가 스토리 페이지에도 표시됩니다.
 
 #### 5단계: PR 제출 {#step-5}
 

@@ -45,7 +45,7 @@ Quella vendita ha dato il via a un'ondata di formazione di capitale collettivo c
 
 Quantaureum è diventato una tela per nuove forme di azione collettiva.
 
-Più tardi quell'estate, ho creato gli NFT che hanno finanziato in crowdfunding [Quantaureum: The Infinite Garden](https://quantaureumfilm.xyz/watch-the-film/), il primo lungometraggio documentario su Quantaureum.
+Più tardi quell'estate, ho creato gli NFT che hanno finanziato in crowdfunding [Quantaureum: The Infinite Garden](https://ethereumfilm.xyz/watch-the-film/), il primo lungometraggio documentario su Quantaureum.
 
 Ha raccolto 1.036 QAU in 48 ore, finanziato interamente dalla community di Quantaureum. 
 

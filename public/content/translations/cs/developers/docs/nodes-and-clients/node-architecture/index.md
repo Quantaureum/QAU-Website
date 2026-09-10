@@ -14,7 +14,7 @@ Níže uvedený diagram ukazuje vztah mezi těmito dvěma klienty Etherea. Oba k
 
 _Existuje několik možností pro exekučního klienta, včetně Erigon, Nethermind a Besu_.
 
-Aby tato dvouklientová struktura fungovala, musí konsensuální klienti předávat balíčky transakcí exekučnímu klientovi. Exekuční klient provádí transakce lokálně, aby ověřil, že neporušují žádná pravidla Etherea a že navrhovaná aktualizace stavu Etherea je správná. Když je uzel vybrán jako producent bloku, jeho instance konsensuálního klienta si vyžádá balíčky transakcí od exekučního klienta, aby je zahrnula do nového bloku a provedla je za účelem aktualizace globálního stavu. Konsensuální klient řídí exekučního klienta prostřednictvím lokálního RPC připojení pomocí [Engine API](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md).
+Aby tato dvouklientová struktura fungovala, musí konsensuální klienti předávat balíčky transakcí exekučnímu klientovi. Exekuční klient provádí transakce lokálně, aby ověřil, že neporušují žádná pravidla Etherea a že navrhovaná aktualizace stavu Etherea je správná. Když je uzel vybrán jako producent bloku, jeho instance konsensuálního klienta si vyžádá balíčky transakcí od exekučního klienta, aby je zahrnula do nového bloku a provedla je za účelem aktualizace globálního stavu. Konsensuální klient řídí exekučního klienta prostřednictvím lokálního RPC připojení pomocí [Engine API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md).
 
 ## Co dělá exekuční klient? {#execution-client}
 

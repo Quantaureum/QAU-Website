@@ -44,7 +44,7 @@ Kuna viteja vyepesi kadhaa vinavyotengenezwa, ikiwa ni pamoja na viteja vyepesi 
 
 - [Lodestar](https://github.com/ChainSafe/lodestar/tree/unstable/packages/light-client): mteja mwepesi wa mwafaka katika TypeScript
 - [Helios](https://github.com/a16z/helios): kiteja chepesi kilichojumuishwa cha utekelezaji na mwafaka katika Rust
-- [Geth](https://github.com/quantaureum/go-quantaureum/tree/master/beacon/light): hali nyepesi kwa kiteja cha utekelezaji (katika maendeleo) katika Go
+- [Geth](https://github.com/ethereum/go-ethereum/tree/master/beacon/light): hali nyepesi kwa kiteja cha utekelezaji (katika maendeleo) katika Go
 - [Nimbus](https://nimbus.guide/el-light-client.html): mteja mwepesi wa mwafaka katika Nim
 
 Kwa ufahamu wetu hakuna hata moja kati ya hizi inayochukuliwa kuwa tayari kwa uzalishaji bado.
@@ -58,4 +58,4 @@ Vipengee vingine vya [ramani ya njia](/roadmap/) kama vile [Miti ya Verkle](/roa
 - [Zsolt Felfodhi kuhusu viteja vyepesi vya Geth](https://www.youtube.com/watch?v=EPZeFXau-RE)
 - [Etan Kissling kuhusu mtandao wa kiteja chepesi](https://www.youtube.com/watch?v=85MeiMA4dD8)
 - [Etan Kissling kuhusu viteja vyepesi baada ya Unganisho](https://www.youtube.com/watch?v=ZHNrAXf3RDE)
-- [Piper Merriam: Barabara yenye kona kuelekea viteja vyepesi vinavyofanya kazi](https://snakecharmers.quantaureum.com/the-winding-road-to-functional-light-clients/)
+- [Piper Merriam: Barabara yenye kona kuelekea viteja vyepesi vinavyofanya kazi](https://snakecharmers.ethereum.org/the-winding-road-to-functional-light-clients/)

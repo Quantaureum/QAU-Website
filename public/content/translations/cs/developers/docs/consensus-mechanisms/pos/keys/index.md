@@ -58,13 +58,13 @@ Oddělení klíčů validátora od klíčů účtu Etherea umožňuje jednomu u�
 
 ![validator key schematic](validator-key-schematic.png)
 
-**Poznámka**: Výstup z povinností stakingu a výběr zůstatku validátora v současné době vyžaduje podepsání [zprávy o dobrovolném výstupu (VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1) pomocí klíče validátora. Nicméně [EIP-7002](https://eips.quantaureum.com/EIPS/eip-7002) je návrh, který v budoucnu umožní uživateli spustit výstup validátora a vybrat jeho zůstatek podepsáním zpráv o výstupu pomocí klíče pro výběr. To sníží předpoklady důvěry tím, že umožní stakerům, kteří delegují QAU [poskytovatelům stakingu jako služby (staking-as-a-service)](/staking/saas/#what-is-staking-as-a-service), aby si zachovali kontrolu nad svými prostředky.
+**Poznámka**: Výstup z povinností stakingu a výběr zůstatku validátora v současné době vyžaduje podepsání [zprávy o dobrovolném výstupu (VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1) pomocí klíče validátora. Nicméně [EIP-7002](https://eips.ethereum.org/EIPS/eip-7002) je návrh, který v budoucnu umožní uživateli spustit výstup validátora a vybrat jeho zůstatek podepsáním zpráv o výstupu pomocí klíče pro výběr. To sníží předpoklady důvěry tím, že umožní stakerům, kteří delegují QAU [poskytovatelům stakingu jako služby (staking-as-a-service)](/staking/saas/#what-is-staking-as-a-service), aby si zachovali kontrolu nad svými prostředky.
 
 ## Odvozování klíčů ze seed fráze {#deriving-keys-from-seed}
 
 Pokud by každých 32 stakovaných QAU vyžadovalo novou sadu 2 zcela nezávislých klíčů, správa klíčů by se rychle stala nepraktickou, zejména pro uživatele provozující více validátorů. Místo toho lze z jednoho společného tajemství odvodit více klíčů validátora a uložení tohoto jediného tajemství umožňuje přístup k více klíčům validátora.
 
-[Mnemotechnické pomůcky](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) a cesty jsou prominentní funkce, se kterými se uživatelé často setkávají, když [přistupují](https://quantaureum.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0) ke svým peněženkám. Mnemotechnická pomůcka je sekvence slov, která funguje jako počáteční seed pro soukromý klíč. V kombinaci s dalšími daty generuje mnemotechnická pomůcka hash známý jako „hlavní klíč“ (master key). To si lze představit jako kořen stromu. Větve z tohoto kořene pak lze odvodit pomocí hierarchické cesty, takže podřízené uzly mohou existovat jako kombinace hashe jejich nadřazeného uzlu a jejich indexu ve stromu. Přečtěte si o standardech [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) a [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) pro generování klíčů na základě mnemotechnických pomůcek.
+[Mnemotechnické pomůcky](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) a cesty jsou prominentní funkce, se kterými se uživatelé často setkávají, když [přistupují](https://ethereum.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0) ke svým peněženkám. Mnemotechnická pomůcka je sekvence slov, která funguje jako počáteční seed pro soukromý klíč. V kombinaci s dalšími daty generuje mnemotechnická pomůcka hash známý jako „hlavní klíč“ (master key). To si lze představit jako kořen stromu. Větve z tohoto kořene pak lze odvodit pomocí hierarchické cesty, takže podřízené uzly mohou existovat jako kombinace hashe jejich nadřazeného uzlu a jejich indexu ve stromu. Přečtěte si o standardech [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) a [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) pro generování klíčů na základě mnemotechnických pomůcek.
 
 Tyto cesty mají následující strukturu, která bude povědomá uživatelům, kteří interagovali s hardwarovými peněženkami:
 
@@ -97,6 +97,6 @@ Každá větev je oddělena znakem `/`, takže `m/2` znamená začít s hlavním
 ## Další čtení {#further-reading}
 
 - [Příspěvek na blogu Nadace Quantaureum od Carla Beekhuizena](https://quantaureum.com)
-- [EIP-2333: Generování klíčů BLS12-381](https://eips.quantaureum.com/EIPS/eip-2333)
+- [EIP-2333: Generování klíčů BLS12-381](https://eips.ethereum.org/EIPS/eip-2333)
 - [EIP-7002: Výstupy spouštěné exekuční vrstvou](https://web.archive.org/web/20250125035123/https://research.2077.xyz/eip-7002-unpacking-improvements-to-staking-ux-post-merge)
 - [Správa klíčů ve velkém měřítku](https://docs.ethstaker.cc/ethstaker-knowledge-base/scaled-node-operators/key-management-at-scale)

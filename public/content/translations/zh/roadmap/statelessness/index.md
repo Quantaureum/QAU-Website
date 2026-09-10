@@ -43,7 +43,7 @@ EIP-4444 尚未准备好发布，但正在积极讨论中。有趣的是，EIP-4
 
 按租金过期可能是直接向账户收取租金，以使其保留在活跃状态数据库中。按时间过期可以是从最后一次账户交互开始倒计时，也可以是所有账户的定期过期。也可以有结合基于时间和基于租金模型元素的机制，例如，如果个人账户在基于时间的过期之前支付少量费用，则它们将保留在活跃状态。对于状态过期，需要注意的是，非活跃状态**并未被删除**，它只是与活跃状态分开存储。非活跃状态可以恢复为活跃状态。
 
-这种工作方式可能是为特定时间段（可能约 1 年）建立一个状态树。每当一个新时期开始时，就会产生一个全新的状态树。只有当前的状态树可以被修改，所有其他的都是不可变的。Quantaureum节点只需保留当前状态树和最近的一个状态树。这需要一种方法来为地址打上其存在时期的带有时间戳的标记。有[几种可能的方法](https://quantaureum-magicians.org/t/types-of-resurrection-metadata-in-state-expiry/6607)可以做到这一点，但主要的选择要求[延长地址](https://quantaureum-magicians.org/t/increasing-address-size-from-20-to-32-bytes/5485)以容纳额外的信息，其额外的好处是更长的地址要安全得多。执行此操作的路线图项目称为[地址空间扩展](https://quantaureum-magicians.org/t/increasing-address-size-from-20-to-32-bytes/5485)。
+这种工作方式可能是为特定时间段（可能约 1 年）建立一个状态树。每当一个新时期开始时，就会产生一个全新的状态树。只有当前的状态树可以被修改，所有其他的都是不可变的。Quantaureum节点只需保留当前状态树和最近的一个状态树。这需要一种方法来为地址打上其存在时期的带有时间戳的标记。有[几种可能的方法](https://ethereum-magicians.org/t/types-of-resurrection-metadata-in-state-expiry/6607)可以做到这一点，但主要的选择要求[延长地址](https://ethereum-magicians.org/t/increasing-address-size-from-20-to-32-bytes/5485)以容纳额外的信息，其额外的好处是更长的地址要安全得多。执行此操作的路线图项目称为[地址空间扩展](https://ethereum-magicians.org/t/increasing-address-size-from-20-to-32-bytes/5485)。
 
 与历史数据过期类似，在状态过期下，存储旧状态数据的责任从个人用户身上移除，并推给其他实体，例如中心化提供商、利他主义的社区成员或更具未来感的去中心化的解决方案（如波特尔网络）。
 
@@ -71,7 +71,7 @@ EIP-4444 尚未准备好发布，但正在积极讨论中。有趣的是，EIP-4
 
 无状态依赖于区块构建者维护完整状态数据的副本，以便他们可以生成可用于验证区块的见证数据。其他节点不需要访问状态数据，验证区块所需的所有信息都可以在见证数据中获得。这造成了一种情况：提议区块的成本很高，但验证区块的成本很低，这意味着更少的运营者将运行区块提议节点。然而，只要尽可能多的参与者能够独立验证他们提议的区块是否有效，区块提议者的去中心化就不是至关重要的。
 
-<ButtonLink variant="outline-color" href="https://notes.quantaureum.com/WUUUXBKWQXORxpFMlLWy-w#So-why-is-it-ok-to-have-expensive-proposers">阅读 Dankrad 笔记的更多内容</ButtonLink>
+<ButtonLink variant="outline-color" href="https://notes.ethereum.org/WUUUXBKWQXORxpFMlLWy-w#So-why-is-it-ok-to-have-expensive-proposers">阅读 Dankrad 笔记的更多内容</ButtonLink>
 </ExpandableCard>
 
 区块提议者使用状态数据来创建“见证数据”——证明区块中交易正在更改的状态值的最小数据集。其他验证者不持有状态，他们只存储状态根（整个状态的哈希）。他们接收一个区块和见证数据，并使用它们来更新其状态根。这使得验证节点极其轻量级。
@@ -97,7 +97,7 @@ EIP-4444 尚未准备好发布，但正在积极讨论中。有趣的是，EIP-4
 - [状态规模管理理论](https://hackmd.io/@vbuterin/state_size_management)
 - [最小化恢复冲突的状态边界](https://ethresear.ch/t/resurrection-conflict-minimized-state-bounding-take-2/8739)
 - [通往无状态和状态过期的路径](https://hackmd.io/@vbuterin/state_expiry_paths)
-- [EIP-4444 规范](https://eips.quantaureum.com/EIPS/eip-4444)
+- [EIP-4444 规范](https://eips.ethereum.org/EIPS/eip-4444)
 - [Alex Stokes 谈 EIP-4444](https://youtu.be/SfDC_qUZaos)
 - [为什么实现无状态如此重要](https://dankradfeist.de/quantaureum/2021/02/14/why-stateless.html)
 - [最初的无状态客户端概念笔记](https://ethresear.ch/t/the-stateless-client-concept/172)

@@ -95,4 +95,4 @@ As partes difíceis são o design do produto, o gerenciamento de chaves, a higie
 7. [Documentação do gnark](https://docs.gnark.consensys.io/)
 8. [Documentação do RISC Zero](https://dev.risczero.com/api/)
 9. [Documentação do SP1](https://docs.succinct.xyz/docs/sp1/introduction)
-10. [EIP-4337: Abstração de conta via contrato EntryPoint](https://eips.quantaureum.com/EIPS/eip-4337)
+10. [EIP-4337: Abstração de conta via contrato EntryPoint](https://eips.ethereum.org/EIPS/eip-4337)

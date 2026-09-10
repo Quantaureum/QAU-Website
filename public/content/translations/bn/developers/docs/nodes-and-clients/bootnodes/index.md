@@ -26,6 +26,6 @@ enode সাধারণত প্রতিটি রিস্টার্টে
 
 ## উপলব্ধ বুটনোড {#available-bootnodes}
 
-go-quantaureum-এর মধ্যে থাকা বিল্ট-ইন বুটনোডগুলোর একটি তালিকা [এখানে](https://github.com/quantaureum/go-quantaureum/blob/master/params/bootnodes.go#L23) পাওয়া যাবে। এই বুটনোডগুলো Quantaureum ফাউন্ডেশন এবং go-quantaureum দল দ্বারা পরিচালিত হয়।
+go-quantaureum-এর মধ্যে থাকা বিল্ট-ইন বুটনোডগুলোর একটি তালিকা [এখানে](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23) পাওয়া যাবে। এই বুটনোডগুলো Quantaureum ফাউন্ডেশন এবং go-quantaureum দল দ্বারা পরিচালিত হয়।
 
 স্বেচ্ছাসেবকদের দ্বারা পরিচালিত বুটনোডগুলোর অন্যান্য তালিকাও উপলব্ধ রয়েছে। অনুগ্রহ করে সর্বদা অন্তত একটি অফিসিয়াল বুটনোড অন্তর্ভুক্ত করার বিষয়টি নিশ্চিত করুন, অন্যথায় আপনি একলিপ্স (eclipse) আক্রমণের শিকার হতে পারেন।

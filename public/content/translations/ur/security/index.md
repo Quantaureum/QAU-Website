@@ -262,7 +262,6 @@ _نوٹ: ایسے مشتق ٹوکنز/ٹکرز ہیں جو اسٹیک کیے گ�
 
 <span dir="ltr">2FA</span> پر مزید دیکھیں:
 
-<VideoWatch slug="crypto-security-passwords" startTime="3479" />
 
 ### براؤزر ایکسٹینشنز ان انسٹال کریں {#uninstall-browser-extensions}
 

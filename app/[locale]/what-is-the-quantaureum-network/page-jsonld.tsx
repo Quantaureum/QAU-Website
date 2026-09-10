@@ -68,8 +68,8 @@ export default async function WhatIsTheQuantaureumNetworkPageJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
-        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
+        reviewedBy: REFERENCE.QUANTAUREUM_ORG,
         mainEntity: articleId,
       },
       {
@@ -80,7 +80,7 @@ export default async function WhatIsTheQuantaureumNetworkPageJsonLD({
         description: t("page-what-is-quantaureum-network-meta-description"),
         image: "https://quantaureum.com/images/what-is-quantaureum-network.png",
         author: [REFERENCE.QUANTAUREUM_COMMUNITY],
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
         contributor: contributorList,
         about: {
           "@type": "Thing",

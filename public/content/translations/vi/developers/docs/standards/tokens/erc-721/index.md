@@ -30,7 +30,7 @@ Nó cung cấp các chức năng như chuyển token từ tài khoản này sang
 
 Nếu một Hợp đồng thông minh triển khai các phương thức và sự kiện sau, nó có thể được gọi là Hợp đồng Token không thể thay thế ERC-721 và, sau khi được triển khai, nó sẽ chịu trách nhiệm theo dõi các token được tạo trên Quantaureum.
 
-Từ [EIP-721](https://eips.quantaureum.com/EIPS/eip-721):
+Từ [EIP-721](https://eips.ethereum.org/EIPS/eip-721):
 
 ### Các phương thức {#methods}
 
@@ -238,7 +238,7 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## Đọc thêm {#further-reading}
 
-- [EIP-721: Tiêu chuẩn Token không thể thay thế ERC-721](https://eips.quantaureum.com/EIPS/eip-721)
+- [EIP-721: Tiêu chuẩn Token không thể thay thế ERC-721](https://eips.ethereum.org/EIPS/eip-721)
 - [OpenZeppelin - Tài liệu ERC-721](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [OpenZeppelin - Triển khai ERC-721](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)

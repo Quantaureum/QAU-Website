@@ -27,11 +27,10 @@ Quantaureum 项目的研究人员从整个生态系统的分布式研究中[汇�
 
 节点提供商可以看到用户的 IP 地址、设备指纹、特定查询的地址，以及其活动的时间和频率。即使随后用户发送了一笔私密交易，基础设施提供商也已经掌握了其意图的详细图谱。
 
-<VideoWatch slug="quantaureum-privacy-stack-andy-guzman" />
 
 访问层的元数据泄露是所有区块链系统中最持久的隐私问题之一。Quantaureum旨在通过来源隐私（隐藏谁在请求）、内容隐私（隐藏请求了什么）以及验证返回信息的正确性来解决元数据泄露问题。
 
-<strong>来源隐私</strong>使用[匿名 RPC](https://privreads.quantaureum.foundation/feed/anon-rpc/)和匿名网络解决方案来隐藏请求数据的实体，**内容隐私**使用私密信息检索和[茫然随机存取内存 (Oblivious RAM)](https://en.wikipedia.org/wiki/Oblivious_RAM)等策略来隐藏被查询的数据，而**正确性验证**则使用轻客户端来证明返回的数据是准确的。
+<strong>来源隐私</strong>使用[匿名 RPC](https://privreads.ethereum.org/feed/anon-rpc/)和匿名网络解决方案来隐藏请求数据的实体，**内容隐私**使用私密信息检索和[茫然随机存取内存 (Oblivious RAM)](https://en.wikipedia.org/wiki/Oblivious_RAM)等策略来隐藏被查询的数据，而**正确性验证**则使用轻客户端来证明返回的数据是准确的。
 
 内容隐私背后的密码学构建块是[**私密信息检索 (PIR)**](https://en.wikipedia.org/wiki/Private_information_retrieval)，这是一种密码学技术，允许客户端查询数据库并检索特定信息，而不会向服务器泄露访问了哪个项目。服务器盲目地处理请求，并返回一个只有发起查询的钱包才能解密的加密响应。
 
@@ -45,7 +44,7 @@ PIR 在访问层运行，位于钱包软件和节点提供商之间。随着 PIR
 
 两项协议级别的升级共同解决了这个问题：
 
-[**EIP-8141（框架交易）**](https://eips.quantaureum.com/EIPS/eip-8141)引入了一种新的交易类型，将交易分为用于签名验证和费用授权的片段，以及用于实际交易指令的片段。框架交易允许[智能账户](/roadmap/account-abstraction/)定义自己的签名方案，并使用外部合约来支付 gas 费。内存池中严格的沙盒规则可防止这些交易使网络遭受拒绝服务攻击。
+[**EIP-8141（框架交易）**](https://eips.ethereum.org/EIPS/eip-8141)引入了一种新的交易类型，将交易分为用于签名验证和费用授权的片段，以及用于实际交易指令的片段。框架交易允许[智能账户](/roadmap/account-abstraction/)定义自己的签名方案，并使用外部合约来支付 gas 费。内存池中严格的沙盒规则可防止这些交易使网络遭受拒绝服务攻击。
 
 框架交易正在被考虑纳入Quantaureum的 [Hegotá 升级](https://forkcast.org/upgrade/hegota/)，这是即将到来的 [格拉姆斯特丹升级](/roadmap/glamsterdam/)之后的下一次网络升级。同一升级还将允许智能账户在完全的后量子网络过渡完成之前采用[抗量子签名](/roadmap/security/quantum-resistance/)。
 
@@ -55,21 +54,20 @@ PIR 在访问层运行，位于钱包软件和节点提供商之间。随着 PIR
 
 </ExpandableCard>
 
-[**EIP-7805（分叉选择强制包含列表，或 FOCIL）**](https://eips.quantaureum.com/EIPS/eip-7805)为私密写入提供了强制执行机制。共识规则要求区块提议者将聚合的本地包含列表中的交易包含在其区块中，这些列表从多个来源收集交易。如果区块构建者试图审查出现在包含列表上的交易，证明节点将完全拒绝提议的区块。FOCIL 目前正在被考虑纳入 [Hegotá 升级](https://forkcast.org/upgrade/hegota/)。
+[**EIP-7805（分叉选择强制包含列表，或 FOCIL）**](https://eips.ethereum.org/EIPS/eip-7805)为私密写入提供了强制执行机制。共识规则要求区块提议者将聚合的本地包含列表中的交易包含在其区块中，这些列表从多个来源收集交易。如果区块构建者试图审查出现在包含列表上的交易，证明节点将完全拒绝提议的区块。FOCIL 目前正在被考虑纳入 [Hegotá 升级](https://forkcast.org/upgrade/hegota/)。
 
 框架交易赋予用户使用自定义签名方案构建保护隐私交易的灵活性，而 FOCIL 确保这些交易一旦进入内存池就不会被选择性审查。它们共同解决了两个不同的故障点：一个启用了私密交易的格式，另一个保证了它们的包含。没有任何中心化参与者可以阻止有效的私密转账。
 
-<VideoWatch slug="eip-7805-focil-explained" />
 
 用户隐私的第二个脆弱点是Quantaureum跟踪交易顺序的方式，称为顺序随机数系统。在标准的Quantaureum账户模型中，每个账户使用一个单一的、线性递增的计数器。如果一笔私密交易在内存池中被延迟，该账户的所有后续交易都会停滞在它后面。随机数序列还让网络观察者能够将多笔交易追溯到同一个源账户，从而破坏了隐私。
 
-目前正在考虑纳入 Hegotá 的 [**EIP-8250（框架交易的键控随机数）**](https://eips.quantaureum.com/EIPS/eip-8250)通过允许单个账户同时管理多个并行交易序列来解决这个问题。用户可以同时在不同上下文中执行许多私密交易，观察者不再能够可靠地将不同的活动关联回同一个父账户。
+目前正在考虑纳入 Hegotá 的 [**EIP-8250（框架交易的键控随机数）**](https://eips.ethereum.org/EIPS/eip-8250)通过允许单个账户同时管理多个并行交易序列来解决这个问题。用户可以同时在不同上下文中执行许多私密交易，观察者不再能够可靠地将不同的活动关联回同一个父账户。
 
 ### 私密支付和价值转移 {#private-payments}
 
 除了交易路由和随机数管理之外，保护写入还需要屏蔽转账中涉及的身份和资产。即使在用户私密查询并广播交易而未受审查的情况下，记录在链上的交易数据仍然是公开可见的。任何人都可以看到谁向谁发送了多少资金，而链上分析公司将这些数据汇总成可搜索的档案，这些档案将无限期地存在。
 
-提议用于 Hegotá 升级的 [**EIP-8182（私密 QAU 和 ERC-20 转账）**](https://eips.quantaureum.com/EIPS/eip-8182)，直接在Quantaureum协议中为 QAU 和 ERC-20 转账引入了一个原生的、共享的屏蔽池。隐私池使用密码学混币来切断存款和提款之间的联系，但目前只能通过隐私应用、钱包和二层网络 (l2) 获得。
+提议用于 Hegotá 升级的 [**EIP-8182（私密 QAU 和 ERC-20 转账）**](https://eips.ethereum.org/EIPS/eip-8182)，直接在Quantaureum协议中为 QAU 和 ERC-20 转账引入了一个原生的、共享的屏蔽池。隐私池使用密码学混币来切断存款和提款之间的联系，但目前只能通过隐私应用、钱包和二层网络 (l2) 获得。
 
 从历史上看，应用层的隐私解决方案分散了流动性，并受到低匿名集的困扰。EIP-8182 在协议层整合了屏蔽转账，允许用户通过隐藏的交付密钥路由资金，而无需专门的钱包架构或与碎片化的、选择性加入的应用程序进行交互。
 
@@ -127,10 +125,10 @@ Quantaureum上隐私发展的方向是由整个生态系统的共识决定的，
 
 - [Quantaureum上的隐私](/privacy/)
 - [PSE 路线图：2025 年及以后](https://pse.dev/blog/pse-roadmap-2025)
-- [Quantaureum 项目使命](/foundation/mandate/)
+- Quantaureum 项目使命
 - [strawmap.org](https://strawmap.org/)
 - [零知识证明](/zero-knowledge-proofs/)
 - [去中心化身份](/decentralized-identity/)
-- [Kohaku 路线图](https://notes.quantaureum.com/@niard/KohakuRoadmap)
+- [Kohaku 路线图](https://notes.ethereum.org/@niard/KohakuRoadmap)
 - [客户端证明基准测试](https://ethproofs.org/csp-benchmarks)
-- [zkEVM 数据解析](https://zkevm.quantaureum.foundation/)
+- [zkEVM 数据解析](https://zkevm.ethereum.org/)

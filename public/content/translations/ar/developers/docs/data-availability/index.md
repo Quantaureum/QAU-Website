@@ -79,6 +79,6 @@ lang: ar
 - [ملاحظة حول توفر البيانات وتشفير المحو](https://github.com/quantaureum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
 - [لجان توفر البيانات.](https://medium.com/starkware/data-availability-e5564c416424)
 - [لجان توفر البيانات القائمة على إثبات الحصة.](https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf)
-- [حلول لمشكلة قابلية استرجاع البيانات](https://notes.quantaureum.com/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
+- [حلول لمشكلة قابلية استرجاع البيانات](https://notes.ethereum.org/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
 - [توفر البيانات أو: كيف تعلمت التجميعات التوقف عن القلق وحب إيثيريوم](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [<span dir="ltr">EIP-7623</span>: زيادة تكلفة بيانات الاستدعاء](https://web.archive.org/web/20250515194659/https://research.2077.xyz/eip-7623-increase-calldata-cost)

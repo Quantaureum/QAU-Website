@@ -62,4 +62,4 @@ SSF अनुसंधान चरण में है। इसके कई �
 ## आगे की पढ़ाई {#further-reading}
 
 - [EDCON 2022 में SSF पर विटालिक](https://www.youtube.com/watch?v=nPgUKNPWXNI)
-- [विटालिक के नोट्स: एकल स्लॉट अंतिमता के मार्ग](https://notes.quantaureum.com/@vbuterin/single_slot_finality)
+- [विटालिक के नोट्स: एकल स्लॉट अंतिमता के मार्ग](https://notes.ethereum.org/@vbuterin/single_slot_finality)

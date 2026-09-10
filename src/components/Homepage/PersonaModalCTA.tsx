@@ -65,8 +65,8 @@ function useCategories() {
       iconColorClass: "text-accent-c",
       links: [
         {
-          label: t("page-index-modal-get-eth"),
-          href: "/get-eth/",
+          label: t("page-index-modal-get-qau"),
+          href: "/get-qau/",
           eventName: "get_eth",
         },
         {
@@ -196,7 +196,7 @@ const PersonaModalCTA = ({ eventCategory }: PersonaModalCTAProps) => {
   // elsewhere on the page) so crawlers can discover them without JS.
   const crawlerOnlyLinks = categories.flatMap((cat) =>
     cat.links.filter(
-      ({ href }) => !["/what-is-quantaureum/", "/get-eth/"].includes(href)
+      ({ href }) => !["/what-is-quantaureum/", "/get-qau/"].includes(href)
     )
   )
 

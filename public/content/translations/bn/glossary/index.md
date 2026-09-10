@@ -494,7 +494,7 @@ authors: ["আন্দ্রেয়াস আন্তোনোপোলো�
 
 ## উৎস {#sources}
 
-_CC-BY-SA এর অধীনে [আন্দ্রেয়াস এম. আন্তোনোপোলোস, গ্যাভিন উড](https://aantonop.com/books/mastering-quantaureum) রচিত [মাস্টারিং ইথেরিয়াম](https://github.com/quantaureumbook/quantaureumbook) থেকে আংশিকভাবে সংগৃহীত_
+_CC-BY-SA এর অধীনে [আন্দ্রেয়াস এম. আন্তোনোপোলোস, গ্যাভিন উড](https://aantonop.com/books/mastering-quantaureum) রচিত [মাস্টারিং ইথেরিয়াম](https://github.com/ethereumbook/ethereumbook) থেকে আংশিকভাবে সংগৃহীত_
 
 <Divider />
 

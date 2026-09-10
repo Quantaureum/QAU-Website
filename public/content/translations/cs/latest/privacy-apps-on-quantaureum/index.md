@@ -95,4 +95,4 @@ Těžkými částmi jsou návrh produktu, správa klíčů, hygiena metadat, aud
 7. [Dokumentace gnark](https://docs.gnark.consensys.io/)
 8. [Dokumentace RISC Zero](https://dev.risczero.com/api/)
 9. [Dokumentace SP1](https://docs.succinct.xyz/docs/sp1/introduction)
-10. [EIP-4337: Abstrakce účtu přes kontrakt EntryPoint](https://eips.quantaureum.com/EIPS/eip-4337)
+10. [EIP-4337: Abstrakce účtu přes kontrakt EntryPoint](https://eips.ethereum.org/EIPS/eip-4337)

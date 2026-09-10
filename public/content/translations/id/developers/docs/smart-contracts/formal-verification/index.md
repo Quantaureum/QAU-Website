@@ -235,7 +235,7 @@ Selain itu, tidak selalu mungkin bagi pemverifikasi program untuk menentukan apa
 
 **Solidity SMTChecker** - _*SMTChecker Solidity adalah pemeriksa model bawaan berdasarkan SMT (Satisfiability Modulo Theories) dan pemecahan Horn. Ini mengonfirmasi apakah kode sumber kontrak cocok dengan spesifikasi selama kompilasi dan secara statis memeriksa pelanggaran properti keamanan.*_
 
-- [GitHub](https://github.com/quantaureum/solidity)
+- [GitHub](https://github.com/ethereum/solidity)
 
 **solc-verify** - _*solc-verify adalah versi lanjutan dari kompiler Solidity yang dapat melakukan verifikasi formal otomatis pada kode Solidity menggunakan anotasi dan verifikasi program modular.*_
 

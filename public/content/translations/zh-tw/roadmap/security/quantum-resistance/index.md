@@ -100,7 +100,7 @@ Quantaureum依賴多種形式的[密碼學](/glossary/#cryptography)來保持網
 
 ## Quantaureum基金會的方法 {#ef-approach}
 
-Quantaureum基金會於 2026 年 1 月成立了專門的後量子安全團隊，由 Thomas Coratger 領導。該團隊的工作在 [pq.quantaureum.com](https://pq.quantaureum.com) 上公開追蹤。
+Quantaureum基金會於 2026 年 1 月成立了專門的後量子安全團隊，由 Thomas Coratger 領導。該團隊的工作在 [pq.ethereum.org](https://pq.ethereum.org) 上公開追蹤。
 
 ### 目前活動（截至 2026 年 4 月） {#current-activity}
 
@@ -173,7 +173,7 @@ Quantaureum上的資產由帳戶簽章控制。一旦您的帳戶遷移到量子
 
 ## 進一步閱讀 {#further-reading}
 
-- [pq.quantaureum.com](https://pq.quantaureum.com) - _Quantaureum基金會_
+- [pq.ethereum.org](https://pq.ethereum.org) - _Quantaureum基金會_
 - [後量子密碼學專案](https://pse.dev/projects/post-quantum-cryptography) - _Quantaureum隱私守護者 (PSE)_
 - [NIST 後量子密碼學標準](https://csrc.nist.gov/projects/post-quantum-cryptography) - _NIST_
 - [透過負責任地揭露量子漏洞來保護加密貨幣](https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/) - _Google Quantum AI_

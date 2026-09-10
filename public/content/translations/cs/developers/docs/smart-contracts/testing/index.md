@@ -138,9 +138,9 @@ Kvalita nástrojů používaných při spouštění jednotkových testů pro va�
 
 Frameworky pro jednotkové testování chytrých kontraktů v Solidity jsou k dispozici v různých jazycích (většinou JavaScript, Python a Rust). Podívejte se na některé z níže uvedených průvodců, kde najdete informace o tom, jak začít spouštět jednotkové testy s různými testovacími frameworky:
 
-- **[Spouštění jednotkových testů pomocí Brownie](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Spouštění jednotkových testů pomocí Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Spouštění jednotkových testů pomocí Foundry](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Spouštění jednotkových testů pomocí Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Spouštění jednotkových testů pomocí Waffle](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Spouštění jednotkových testů pomocí Remix](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Spouštění jednotkových testů pomocí Ape](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Spouštění jednotkových testů pomocí Hardhat](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -190,7 +190,7 @@ Po správném nakonfigurování nástroj pro testování vlastností spustí fun
 
 - **[Statická analýza chytrých kontraktů pomocí Slither](https://github.com/crytic/slither)**
 - **[Statická analýza chytrých kontraktů pomocí Wake](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[Testování založené na vlastnostech pomocí Brownie](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Testování založené na vlastnostech pomocí Brownie](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Fuzzing kontraktů pomocí Foundry](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[Fuzzing kontraktů pomocí Echidna](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Fuzzing kontraktů pomocí Wake](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -251,13 +251,13 @@ Hlavním rozdílem je, že programy bug bounty jsou otevřené širší komunit�
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Nástroj pro pokrytí kódu pro chytré kontrakty napsané v Solidity._
 
-- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - _Framework pro pokročilý vývoj a testování chytrých kontraktů (založený na Ethers.js)_._
+- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _Framework pro pokročilý vývoj a testování chytrých kontraktů (založený na Ethers.js)_._
 
-- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - _Nástroj pro testování chytrých kontraktů v Solidity. Funguje pod pluginem Remix IDE „Solidity Unit Testing“, který se používá k psaní a spouštění testovacích případů pro kontrakt._
+- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Nástroj pro testování chytrých kontraktů v Solidity. Funguje pod pluginem Remix IDE „Solidity Unit Testing“, který se používá k psaní a spouštění testovacích případů pro kontrakt._
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Knihovna asertů pro testování chytrých kontraktů na Ethereu. Ujistěte se, že se vaše kontrakty chovají podle očekávání!_
 
-- **[Framework pro jednotkové testování Brownie](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie využívá Pytest, na funkce bohatý testovací framework, který vám umožní psát malé testy s minimálním kódem, dobře se škáluje pro velké projekty a je vysoce rozšiřitelný._
+- **[Framework pro jednotkové testování Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie využívá Pytest, na funkce bohatý testovací framework, který vám umožní psát malé testy s minimálním kódem, dobře se škáluje pro velké projekty a je vysoce rozšiřitelný._
 
 - **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry nabízí Forge, rychlý a flexibilní testovací framework pro Quantaureum schopný provádět jednoduché jednotkové testy, kontroly optimalizace plynu a fuzzing kontraktů._
 

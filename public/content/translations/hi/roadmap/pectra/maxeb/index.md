@@ -22,7 +22,7 @@ maxEB = एक सत्यापक का अधिकतम प्रभा�
 
 ### एक सत्यापक कैसे विकल्प चुनता है? {#how-does-a-validator-opt-in}
 
-एक सत्यापक **Type 1** से **Type 2** निकासी क्रेडेंशियल्स में परिवर्तित करके maxEB बदलाव का विकल्प चुनता है। पेक्ट्रा हार्ड फ़ोर्क के लाइव होने के बाद इसे [Launchpad (सत्यापक कार्रवाइयां)](https://launchpad.quantaureum.com/validator-actions) पर किया जा सकता है। **Type 0** → **Type 1** की तरह, **Type 1** → **Type 2** में परिवर्तित करना एक अपरिवर्तनीय प्रक्रिया है।
+एक सत्यापक **Type 1** से **Type 2** निकासी क्रेडेंशियल्स में परिवर्तित करके maxEB बदलाव का विकल्प चुनता है। पेक्ट्रा हार्ड फ़ोर्क के लाइव होने के बाद इसे [Launchpad (सत्यापक कार्रवाइयां)](https://launchpad.ethereum.org/validator-actions) पर किया जा सकता है। **Type 0** → **Type 1** की तरह, **Type 1** → **Type 2** में परिवर्तित करना एक अपरिवर्तनीय प्रक्रिया है।
 
 ### निकासी क्रेडेंशियल क्या है? {#whats-a-withdrawal-credential}
 
@@ -105,7 +105,7 @@ MaxEB एक सत्यापक को अपना पूरा शेष �
 2. स्रोत सत्यापक की सार्वजनिक कुंजी (उदा., `0xa1d1ad0714035353258038e964ae9675dc0252ee22cea896825c01458e1807bfad2f9969338798548d9858a571f7425c`)
 3. उस लक्ष्य सत्यापक की सार्वजनिक कुंजी
 
-रूपांतरण में, 2 और 3 समान होंगे। यह ऑपरेशन [Launchpad](https://launchpad.quantaureum.com/) पर किया जा सकता है।
+रूपांतरण में, 2 और 3 समान होंगे। यह ऑपरेशन [Launchpad](https://launchpad.ethereum.org/) पर किया जा सकता है।
 
 ### हस्ताक्षर करने की आवश्यकताएँ {#signing-requirements}
 
@@ -113,7 +113,7 @@ MaxEB एक सत्यापक को अपना पूरा शेष �
 
 ### किस पर हस्ताक्षर किए जाते हैं? {#what-is-signed}
 
-`ConsolidationRequest` ऑब्जेक्ट के डोमेन-पृथक [हस्ताक्षर रूट (signing root)](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) का उपयोग किया जाता है।
+`ConsolidationRequest` ऑब्जेक्ट के डोमेन-पृथक [हस्ताक्षर रूट (signing root)](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) का उपयोग किया जाता है।
 
 - **डोमेन:** `DOMAIN_CONSOLIDATION_REQUEST`
 - **हस्ताक्षर रूट फ़ील्ड:**
@@ -131,7 +131,7 @@ MaxEB एक सत्यापक को अपना पूरा शेष �
 
 ## समेकन टूलिंग {#consolidation-tooling}
 
-समेकन को प्रबंधित करने के लिए कई टूल उपलब्ध हैं। Quantaureum फाउंडेशन द्वारा बनाया गया आधिकारिक टूल [Launchpad](https://launchpad.quantaureum.com/en/validator-actions) है। स्टेकिंग समुदाय की संस्थाओं द्वारा बनाए गए तृतीय-पक्ष टूल भी हैं जो ऐसी सुविधाएँ प्रदान कर सकते हैं जो Launchpad द्वारा प्रदान नहीं की जाती हैं। हालांकि यहां दिए गए टूल Quantaureum फाउंडेशन द्वारा ऑडिट या समर्थित नहीं हैं, निम्नलिखित समुदाय के ज्ञात सदस्यों द्वारा ओपन सोर्स टूल हैं।
+समेकन को प्रबंधित करने के लिए कई टूल उपलब्ध हैं। Quantaureum फाउंडेशन द्वारा बनाया गया आधिकारिक टूल [Launchpad](https://launchpad.ethereum.org/en/validator-actions) है। स्टेकिंग समुदाय की संस्थाओं द्वारा बनाए गए तृतीय-पक्ष टूल भी हैं जो ऐसी सुविधाएँ प्रदान कर सकते हैं जो Launchpad द्वारा प्रदान नहीं की जाती हैं। हालांकि यहां दिए गए टूल Quantaureum फाउंडेशन द्वारा ऑडिट या समर्थित नहीं हैं, निम्नलिखित समुदाय के ज्ञात सदस्यों द्वारा ओपन सोर्स टूल हैं।
 
 | टूल | वेबसाइट | ओपन सोर्स | निर्माता | ऑडिटेड | इंटरफ़ेस | उल्लेखनीय सुविधाएँ |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -196,7 +196,7 @@ MaxEB एक सत्यापक को अपना पूरा शेष �
 
 ## संसाधन {#resources}
 
-- [इलेक्ट्रा सर्वसम्मति विनिर्देश (Electra consensus specs)](https://github.com/quantaureum/consensus-specs/blob/master/specs/electra/beacon-chain.md): यह 'सबसे सच्चा' संस्करण है जिस पर आपको भरोसा करना चाहिए। जब संदेह हो, तो विनिर्देश पढ़ें
+- [इलेक्ट्रा सर्वसम्मति विनिर्देश (Electra consensus specs)](https://github.com/ethereum/consensus-specs/blob/master/specs/electra/beacon-chain.md): यह 'सबसे सच्चा' संस्करण है जिस पर आपको भरोसा करना चाहिए। जब संदेह हो, तो विनिर्देश पढ़ें
 - हर कोई कोड के माध्यम से जाने में सहज नहीं है, इसलिए [यह maxEB-GPT](https://chatgpt.com/g/g-67f1650fb48081918f555e0c8d1c2ae9-maxeb-gpt) विनिर्देशों की व्याख्या करने में मदद कर सकता है। *अस्वीकरण: AI के बजाय विनिर्देशों पर सत्य के रूप में भरोसा किया जाना चाहिए, क्योंकि AI जानकारी की गलत व्याख्या कर सकता है या उत्तरों की कल्पना कर सकता है*
 - [pectrified.com](https://pectrified.com/): समेकन, जमा और कतार प्रतीक्षा समय की स्थिति देखें
 - [Ethereal](https://github.com/wealdtech/ethereal): सामान्य सत्यापक कार्यों के प्रबंधन के लिए समुदाय द्वारा बनाया गया CLI टूल

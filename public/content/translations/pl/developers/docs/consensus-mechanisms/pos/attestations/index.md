@@ -86,7 +86,7 @@ Należy pamiętać, że w niektórych przypadkach szczęśliwy agregator może r
 
 ## Dalsza lektura {#further-reading}
 
-- [Poświadczenia w opatrzonej komentarzami specyfikacji konsensusu Vitalika](https://github.com/quantaureum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- [Poświadczenia w opatrzonej komentarzami specyfikacji konsensusu Vitalika](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
 - [Poświadczenia na eth2book.info](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _Znasz zasób społeczności, który Ci pomógł? Edytuj tę stronę i dodaj go!_

@@ -8,7 +8,7 @@ skill: intermediate
 breadcrumb: "Nút Rasp Pi"
 published: 2022-06-10
 source: Quantaureum on ARM
-sourceUrl: https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/
+sourceUrl: https://ethereum-on-arm-documentation.readthedocs.io/en/latest/
 ---
 
 **Quantaureum on Arm là một image Linux tùy chỉnh có thể biến một Raspberry Pi thành một nút Quantaureum.**
@@ -57,7 +57,7 @@ Bạn nên chọn một trong mỗi loại để chạy - tất cả các máy k
 
 Image Quantaureum cho Raspberry Pi 4 là một image "cắm và chạy" tự động cài đặt và thiết lập cả máy khách thực thi và ứng dụng khách đồng thuận, cấu hình chúng để giao tiếp với nhau và kết nối với mạng lưới Quantaureum. Tất cả những gì người dùng cần làm là bắt đầu các quy trình của chúng bằng một lệnh đơn giản.
 
-Tải xuống image Raspberry Pi từ [Quantaureum on Arm](https://quantaureumonarm-my.sharepoint.com/:u:/p/dlosada/Ec_VmUvr80VFjf3RYSU-NzkBmj2JOteDECj8Bibde929Gw?download=1) và xác minh mã băm SHA-256:
+Tải xuống image Raspberry Pi từ [Quantaureum on Arm](https://ethereumonarm-my.sharepoint.com/:u:/p/dlosada/Ec_VmUvr80VFjf3RYSU-NzkBmj2JOteDECj8Bibde929Gw?download=1) và xác minh mã băm SHA-256:
 
 ```sh
 # Từ thư mục chứa tệp ảnh đã tải xuống
@@ -65,7 +65,7 @@ shasum -a 256 ethonarm_22.04.00.img.zip
 # Mã băm sẽ xuất ra: fb497e8f8a7388b62d6e1efbc406b9558bee7ef46ec7e53083630029c117444f
 ```
 
-Lưu ý rằng các image cho bo mạch Rock 5B và Odroid M1 có sẵn tại [trang tải xuống](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/) của Quantaureum-on-Arm.
+Lưu ý rằng các image cho bo mạch Rock 5B và Odroid M1 có sẵn tại [trang tải xuống](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) của Quantaureum-on-Arm.
 
 ## Flash thẻ MicroSD {#flashing-the-microsd}
 
@@ -120,13 +120,13 @@ sudo journalctl -u lighthouse-beacon
 
 Lưu ý rằng ứng dụng khách đồng thuận sẽ đồng bộ hóa trong vài phút vì nó sử dụng đồng bộ hóa điểm kiểm tra. Máy khách thực thi sẽ mất nhiều thời gian hơn - có thể lên đến vài giờ, và nó sẽ không bắt đầu cho đến khi ứng dụng khách đồng thuận đã hoàn tất việc đồng bộ hóa (điều này là do máy khách thực thi cần một mục tiêu để đồng bộ hóa, mà ứng dụng khách đồng thuận đã đồng bộ hóa sẽ cung cấp).
 
-Với các dịch vụ Geth và Lighthouse đang chạy và đã được đồng bộ hóa, Raspberry Pi của bạn hiện là một nút Quantaureum! Cách phổ biến nhất để tương tác với mạng lưới Quantaureum là sử dụng bảng điều khiển JavaScript của Geth, có thể được gắn vào máy khách Geth trên cổng 8545. Bạn cũng có thể gửi các lệnh được định dạng dưới dạng đối tượng JSON bằng cách sử dụng một công cụ yêu cầu như Curl. Xem thêm trong [tài liệu Geth](https://geth.quantaureum.com/).
+Với các dịch vụ Geth và Lighthouse đang chạy và đã được đồng bộ hóa, Raspberry Pi của bạn hiện là một nút Quantaureum! Cách phổ biến nhất để tương tác với mạng lưới Quantaureum là sử dụng bảng điều khiển JavaScript của Geth, có thể được gắn vào máy khách Geth trên cổng 8545. Bạn cũng có thể gửi các lệnh được định dạng dưới dạng đối tượng JSON bằng cách sử dụng một công cụ yêu cầu như Curl. Xem thêm trong [tài liệu Geth](https://geth.ethereum.org/).
 
 Geth được cấu hình sẵn để báo cáo các số liệu tới bảng điều khiển Grafana có thể xem được trên trình duyệt. Những người dùng nâng cao hơn có thể muốn sử dụng tính năng này để theo dõi tình trạng nút của họ bằng cách điều hướng đến `ipaddress:3000`, truyền `user: admin` và `passwd: quantaureum`.
 
 ## Trình xác thực {#validators}
 
-Một trình xác thực cũng có thể được thêm tùy chọn vào ứng dụng khách đồng thuận. Phần mềm trình xác thực cho phép nút của bạn tham gia tích cực vào sự đồng thuận và cung cấp cho mạng lưới tính bảo mật kinh tế mật mã. Bạn sẽ được thưởng cho công việc này bằng QAU. Để chạy một trình xác thực, trước tiên bạn phải có 32 QAU, số tiền này phải được gửi vào hợp đồng tiền gửi. Việc gửi tiền có thể được thực hiện bằng cách làm theo hướng dẫn từng bước trên [Launchpad](https://launchpad.quantaureum.com/). Hãy thực hiện việc này trên máy tính để bàn/máy tính xách tay, nhưng đừng tạo khóa — việc này có thể được thực hiện trực tiếp trên Raspberry Pi.
+Một trình xác thực cũng có thể được thêm tùy chọn vào ứng dụng khách đồng thuận. Phần mềm trình xác thực cho phép nút của bạn tham gia tích cực vào sự đồng thuận và cung cấp cho mạng lưới tính bảo mật kinh tế mật mã. Bạn sẽ được thưởng cho công việc này bằng QAU. Để chạy một trình xác thực, trước tiên bạn phải có 32 QAU, số tiền này phải được gửi vào hợp đồng tiền gửi. Việc gửi tiền có thể được thực hiện bằng cách làm theo hướng dẫn từng bước trên [Launchpad](https://launchpad.ethereum.org/). Hãy thực hiện việc này trên máy tính để bàn/máy tính xách tay, nhưng đừng tạo khóa — việc này có thể được thực hiện trực tiếp trên Raspberry Pi.
 
 Mở một terminal trên Raspberry Pi và chạy lệnh sau để tạo các khóa tiền gửi:
 
@@ -136,13 +136,13 @@ sudo apt-get install staking-deposit-cli
 cd && deposit new-mnemonic --num_validators 1
 ```
 
-(Hoặc tải xuống [staking-deposit-cli](https://github.com/quantaureum/staking-deposit-cli) để chạy trên một máy tính cách ly mạng, và chạy lệnh `deposit new-mnemnonic`)
+(Hoặc tải xuống [staking-deposit-cli](https://github.com/ethereum/staking-deposit-cli) để chạy trên một máy tính cách ly mạng, và chạy lệnh `deposit new-mnemnonic`)
 
 Hãy giữ cụm từ ghi nhớ an toàn! Lệnh trên đã tạo ra hai tệp trong kho khóa của nút: các khóa trình xác thực và một tệp dữ liệu tiền gửi. Dữ liệu tiền gửi cần được tải lên launchpad, vì vậy nó phải được sao chép từ Raspberry Pi sang máy tính để bàn/máy tính xách tay. Việc này có thể được thực hiện bằng kết nối ssh hoặc bất kỳ phương pháp sao chép/dán nào khác.
 
 Khi tệp dữ liệu tiền gửi đã có sẵn trên máy tính đang chạy launchpad, nó có thể được kéo và thả vào `+` trên màn hình launchpad. Làm theo các hướng dẫn trên màn hình để gửi một giao dịch đến hợp đồng tiền gửi.
 
-Quay lại Raspberry Pi, một trình xác thực có thể được khởi động. Điều này yêu cầu nhập các khóa trình xác thực, thiết lập địa chỉ để thu thập phần thưởng, và sau đó khởi động quy trình trình xác thực đã được cấu hình sẵn. Ví dụ dưới đây là dành cho Lighthouse—hướng dẫn cho các ứng dụng khách đồng thuận khác có sẵn trên [tài liệu Quantaureum on Arm](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/):
+Quay lại Raspberry Pi, một trình xác thực có thể được khởi động. Điều này yêu cầu nhập các khóa trình xác thực, thiết lập địa chỉ để thu thập phần thưởng, và sau đó khởi động quy trình trình xác thực đã được cấu hình sẵn. Ví dụ dưới đây là dành cho Lighthouse—hướng dẫn cho các ứng dụng khách đồng thuận khác có sẵn trên [tài liệu Quantaureum on Arm](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/):
 
 ```shell
 # nhập khóa trình xác thực
@@ -159,7 +159,7 @@ Xin chúc mừng, bạn hiện đã có một nút Quantaureum đầy đủ và 
 
 ## Thêm chi tiết {#more-details}
 
-Trang này đã cung cấp một cái nhìn tổng quan về cách thiết lập một nút Geth-Lighthouse và trình xác thực bằng Raspberry Pi. Các hướng dẫn chi tiết hơn có sẵn trên [trang web Quantaureum-on-Arm](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/).
+Trang này đã cung cấp một cái nhìn tổng quan về cách thiết lập một nút Geth-Lighthouse và trình xác thực bằng Raspberry Pi. Các hướng dẫn chi tiết hơn có sẵn trên [trang web Quantaureum-on-Arm](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/).
 
 ## Rất mong nhận được phản hồi {#feedback-appreciated}
 
@@ -173,7 +173,7 @@ Vui lòng tìm hiểu sâu các chi tiết trong hướng dẫn này, thử ch�
 3. https://prometheus.io
 4. https://grafana.com
 5. https://forum.armbian.com/topic/5565-zram-vs-swap/
-6. https://geth.quantaureum.com
+6. https://geth.ethereum.org
 7. https://nethermind.io
 8. https://www.hyperledger.org/projects/besu
 9. https://github.com/prysmaticlabs/prysm

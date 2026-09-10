@@ -10,7 +10,7 @@ Dòng thời gian của tất cả các cột mốc, đợt phân nhánh và b�
 
 <ExpandableCard title="Phân nhánh là gì?" contentPreview="Những thay đổi đối với các quy tắc của Giao thức Quantaureum thường bao gồm các bản nâng cấp kỹ thuật theo kế hoạch.">
 
-Phân nhánh là khi các bản nâng cấp hoặc thay đổi kỹ thuật lớn cần được thực hiện đối với mạng lưới – chúng thường bắt nguồn từ [Đề xuất Cải tiến Quantaureum (EIP)](/eips/) và thay đổi các "quy tắc" của giao thức.
+Phân nhánh là khi các bản nâng cấp hoặc thay đổi kỹ thuật lớn cần được thực hiện đối với mạng lưới – chúng thường bắt nguồn từ Đề xuất Cải tiến Quantaureum (EIP) và thay đổi các "quy tắc" của giao thức.
 
 Khi cần nâng cấp trong phần mềm truyền thống, được kiểm soát tập trung, công ty sẽ chỉ cần phát hành một phiên bản mới cho người dùng cuối. Chuỗi khối hoạt động khác biệt vì không có quyền sở hữu tập trung. [Các máy khách Quantaureum](/developers/docs/nodes-and-clients/) phải cập nhật phần mềm của họ để triển khai các quy tắc phân nhánh mới. Thêm vào đó, những người tạo khối (người khai thác trong thế giới Bằng chứng công việc (PoW), trình xác thực trong thế giới Bằng chứng cổ phần (PoS)) và các nút phải tạo khối và xác thực theo các quy tắc mới. [Tìm hiểu thêm về cơ chế đồng thuận](/developers/docs/consensus-mechanisms/)
 
@@ -101,33 +101,33 @@ Các phần khác của bản nâng cấp tập trung vào việc cải thiện 
 Trải nghiệm người dùng tốt hơn:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7702">EIP-7702</a> - <em>Thiết lập mã tài khoản EOA</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7691">EIP-7691</a> - <em>Tăng thông lượng khối dữ liệu</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7623">EIP-7623</a> - <em>Tăng chi phí dữ liệu lệnh gọi</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7840">EIP-7840</a> - <em>Thêm lịch trình khối dữ liệu vào các tệp cấu hình EL</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7702">EIP-7702</a> - <em>Thiết lập mã tài khoản EOA</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7691">EIP-7691</a> - <em>Tăng thông lượng khối dữ liệu</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7623">EIP-7623</a> - <em>Tăng chi phí dữ liệu lệnh gọi</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7840">EIP-7840</a> - <em>Thêm lịch trình khối dữ liệu vào các tệp cấu hình EL</em></li>
 </ul>
 
 Trải nghiệm đặt cọc tốt hơn:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7251">EIP-7251</a> - <em>Tăng <code>MAX_EFFECTIVE_BALANCE</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7002">EIP-7002</a> - <em>Các lệnh thoát có thể kích hoạt từ lớp thực thi</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7685">EIP-7685</a> - <em>Các yêu cầu lớp thực thi đa dụng</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6110">EIP-6110</a> - <em>Cung cấp các khoản tiền đặt cọc của trình xác thực trên chuỗi</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7251">EIP-7251</a> - <em>Tăng <code>MAX_EFFECTIVE_BALANCE</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7002">EIP-7002</a> - <em>Các lệnh thoát có thể kích hoạt từ lớp thực thi</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7685">EIP-7685</a> - <em>Các yêu cầu lớp thực thi đa dụng</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6110">EIP-6110</a> - <em>Cung cấp các khoản tiền đặt cọc của trình xác thực trên chuỗi</em></li>
 </ul>
 
 Các cải tiến về hiệu quả và bảo mật của giao thức:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2537">EIP-2537</a> - <em>Hợp đồng tiền biên dịch cho các hoạt động đường cong BLS12-381</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2935">EIP-2935</a> - <em>Lưu mã băm của các khối lịch sử trong trạng thái</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7549">EIP-7549</a> - <em>Di chuyển chỉ số ủy ban ra ngoài chứng thực</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2537">EIP-2537</a> - <em>Hợp đồng tiền biên dịch cho các hoạt động đường cong BLS12-381</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2935">EIP-2935</a> - <em>Lưu mã băm của các khối lịch sử trong trạng thái</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7549">EIP-7549</a> - <em>Di chuyển chỉ số ủy ban ra ngoài chứng thực</em></li>
 </ul>
 
 </ExpandableCard>
 
 - [Cách Pectra sẽ nâng cao trải nghiệm đặt cọc](https://www.kiln.fi/post/next-quantaureum-upgrade-how-pectra-will-enhance-the-staking-experience)
-- [Đọc thông số kỹ thuật của bản nâng cấp Electra](https://github.com/quantaureum/consensus-specs/tree/master/specs/electra/)
+- [Đọc thông số kỹ thuật của bản nâng cấp Electra](https://github.com/ethereum/consensus-specs/tree/master/specs/electra/)
 - [Câu hỏi thường gặp về Prague-Electra ("Pectra")](/roadmap/pectra/)
 
 <Divider />
@@ -147,12 +147,12 @@ Bản nâng cấp Cancun bao gồm một tập hợp các cải tiến đối v�
 <ExpandableCard title="Các EIP của Cancun" contentPreview="Các cải tiến chính thức được bao gồm trong bản nâng cấp này.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1153">EIP-1153</a> - <em>Các mã lệnh lưu trữ tạm thời</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4788">EIP-4788</a> - <em>Gốc khối beacon trong EVM</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4844">EIP-4844</a> - <em>Giao dịch khối dữ liệu phân mảnh (Proto-Danksharding)</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-5656">EIP-5656</a> - <em><code>MCOPY</code> - Lệnh sao chép bộ nhớ</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6780">EIP-6780</a> - <em><code>SELFDESTRUCT</code> chỉ trong cùng một giao dịch</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7516">EIP-7516</a> - <em>Mã lệnh <code>BLOBBASEFEE</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1153">EIP-1153</a> - <em>Các mã lệnh lưu trữ tạm thời</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4788">EIP-4788</a> - <em>Gốc khối beacon trong EVM</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4844">EIP-4844</a> - <em>Giao dịch khối dữ liệu phân mảnh (Proto-Danksharding)</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-5656">EIP-5656</a> - <em><code>MCOPY</code> - Lệnh sao chép bộ nhớ</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6780">EIP-6780</a> - <em><code>SELFDESTRUCT</code> chỉ trong cùng một giao dịch</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7516">EIP-7516</a> - <em>Mã lệnh <code>BLOBBASEFEE</code></em></li>
 </ul>
 
 </ExpandableCard>
@@ -160,7 +160,7 @@ Bản nâng cấp Cancun bao gồm một tập hợp các cải tiến đối v�
 - [Các bản cuộn lớp 2](/layer-2/)
 - [Proto-Danksharding](/roadmap/scaling/#proto-danksharding)
 - [Danksharding](/roadmap/danksharding/)
-- [Đọc thông số kỹ thuật của bản nâng cấp Cancun](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md)
+- [Đọc thông số kỹ thuật của bản nâng cấp Cancun](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md)
 
 #### Tóm tắt Deneb {#deneb-summary}
 
@@ -173,16 +173,16 @@ EIP-7514 mang đến sự thắt chặt đối với việc phát hành QAU bằ
 <ExpandableCard title="Các EIP của Deneb" contentPreview="Các cải tiến chính thức được bao gồm trong bản nâng cấp này">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4788">EIP-4788</a> - <em>Gốc khối beacon trong EVM</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4844">EIP-4844</a> - <em>Giao dịch khối dữ liệu phân mảnh</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7044">EIP-7044</a> - <em>Các lệnh tự nguyện thoát đã ký có hiệu lực vĩnh viễn</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7045">EIP-7045</a> - <em>Tăng khe bao gồm chứng thực tối đa</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7514">EIP-7514</a> - <em>Thêm giới hạn ra vào tối đa của Kỷ nguyên</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4788">EIP-4788</a> - <em>Gốc khối beacon trong EVM</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4844">EIP-4844</a> - <em>Giao dịch khối dữ liệu phân mảnh</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7044">EIP-7044</a> - <em>Các lệnh tự nguyện thoát đã ký có hiệu lực vĩnh viễn</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7045">EIP-7045</a> - <em>Tăng khe bao gồm chứng thực tối đa</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7514">EIP-7514</a> - <em>Thêm giới hạn ra vào tối đa của Kỷ nguyên</em></li>
 </ul>
 
 </ExpandableCard>
 
-- [Đọc thông số kỹ thuật của bản nâng cấp Deneb](https://github.com/quantaureum/consensus-specs/tree/master/specs/deneb/)
+- [Đọc thông số kỹ thuật của bản nâng cấp Deneb](https://github.com/ethereum/consensus-specs/tree/master/specs/deneb/)
 - [Câu hỏi thường gặp về Cancun-Deneb ("Dencun")](/roadmap/dencun/)
 
 <Divider />
@@ -200,16 +200,16 @@ Bản nâng cấp Thượng Hải đã mang tính năng rút tiền đặt cọc
 <ExpandableCard title="Các EIP của Thượng Hải" contentPreview="Các cải tiến chính thức được bao gồm trong bản nâng cấp này.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3651">EIP-3651</a> – <em>Khởi động ấm địa chỉ <code>COINBASE</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3855">EIP-3855</a> – <em>Lệnh <code>PUSH0</code> mới</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3860">EIP-3860</a> – <em>Giới hạn và đo lường initcode</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4895">EIP-4895</a> – <em>Chuỗi Beacon đẩy các khoản rút tiền dưới dạng hoạt động</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6049">EIP-6049</a> - <em>Ngừng sử dụng <code>SELFDESTRUCT</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3651">EIP-3651</a> – <em>Khởi động ấm địa chỉ <code>COINBASE</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3855">EIP-3855</a> – <em>Lệnh <code>PUSH0</code> mới</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3860">EIP-3860</a> – <em>Giới hạn và đo lường initcode</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4895">EIP-4895</a> – <em>Chuỗi Beacon đẩy các khoản rút tiền dưới dạng hoạt động</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6049">EIP-6049</a> - <em>Ngừng sử dụng <code>SELFDESTRUCT</code></em></li>
 </ul>
 
 </ExpandableCard>
 
-- [Đọc thông số kỹ thuật của bản nâng cấp Thượng Hải](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md)
+- [Đọc thông số kỹ thuật của bản nâng cấp Thượng Hải](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md)
 
 #### Tóm tắt Capella {#capella-summary}
 
@@ -220,7 +220,7 @@ Bản nâng cấp lớp đồng thuận này mang lại khả năng cho những 
 Bản nâng cấp cũng cung cấp chức năng quét tài khoản tự động, liên tục xử lý các tài khoản trình xác thực cho bất kỳ khoản thanh toán phần thưởng nào có sẵn hoặc rút tiền toàn bộ.
 
 - [Tìm hiểu thêm về việc rút tiền đặt cọc](/staking/withdrawals/).
-- [Đọc thông số kỹ thuật của bản nâng cấp Capella](https://github.com/quantaureum/consensus-specs/tree/master/specs/capella/)
+- [Đọc thông số kỹ thuật của bản nâng cấp Capella](https://github.com/ethereum/consensus-specs/tree/master/specs/capella/)
 
 <Divider />
 
@@ -232,15 +232,15 @@ Bản nâng cấp cũng cung cấp chức năng quét tài khoản tự động,
 
 #### Tóm tắt {#paris-summary}
 
-Bản nâng cấp Paris được kích hoạt khi Chuỗi khối Bằng chứng công việc (PoW) vượt qua [tổng độ khó cuối cùng](/glossary/#terminal-total-difficulty) là 58750000000000000000000. Điều này đã xảy ra tại khối 15537393 vào ngày 15 tháng 9 năm 2022, kích hoạt bản nâng cấp Paris ở khối tiếp theo. Paris là quá trình chuyển đổi [The Merge](/roadmap/merge/) - tính năng chính của nó là tắt thuật toán khai thác [Bằng chứng công việc (PoW)](/developers/docs/consensus-mechanisms/pow) cùng logic đồng thuận liên quan và thay vào đó là bật [Bằng chứng cổ phần (PoS)](/developers/docs/consensus-mechanisms/pos). Bản thân Paris là một bản nâng cấp cho các [ứng dụng khách thực thi](/developers/docs/nodes-and-clients/#execution-clients) (tương đương với Bellatrix trên lớp đồng thuận) cho phép chúng nhận lệnh từ các [ứng dụng khách đồng thuận](/developers/docs/nodes-and-clients/#consensus-clients) được kết nối. Điều này yêu cầu kích hoạt một tập hợp các phương thức API nội bộ mới, được gọi chung là [Engine API](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md). Đây được cho là bản nâng cấp quan trọng nhất trong lịch sử Quantaureum kể từ [Homestead](#homestead)!
+Bản nâng cấp Paris được kích hoạt khi Chuỗi khối Bằng chứng công việc (PoW) vượt qua [tổng độ khó cuối cùng](/glossary/#terminal-total-difficulty) là 58750000000000000000000. Điều này đã xảy ra tại khối 15537393 vào ngày 15 tháng 9 năm 2022, kích hoạt bản nâng cấp Paris ở khối tiếp theo. Paris là quá trình chuyển đổi [The Merge](/roadmap/merge/) - tính năng chính của nó là tắt thuật toán khai thác [Bằng chứng công việc (PoW)](/developers/docs/consensus-mechanisms/pow) cùng logic đồng thuận liên quan và thay vào đó là bật [Bằng chứng cổ phần (PoS)](/developers/docs/consensus-mechanisms/pos). Bản thân Paris là một bản nâng cấp cho các [ứng dụng khách thực thi](/developers/docs/nodes-and-clients/#execution-clients) (tương đương với Bellatrix trên lớp đồng thuận) cho phép chúng nhận lệnh từ các [ứng dụng khách đồng thuận](/developers/docs/nodes-and-clients/#consensus-clients) được kết nối. Điều này yêu cầu kích hoạt một tập hợp các phương thức API nội bộ mới, được gọi chung là [Engine API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md). Đây được cho là bản nâng cấp quan trọng nhất trong lịch sử Quantaureum kể từ [Homestead](#homestead)!
 
-- [Đọc thông số kỹ thuật của bản nâng cấp Paris](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md)
+- [Đọc thông số kỹ thuật của bản nâng cấp Paris](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md)
 
 <ExpandableCard title="Các EIP của Paris" contentPreview="Các cải tiến chính thức được bao gồm trong bản nâng cấp này.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3675">EIP-3675</a> – <em>Nâng cấp đồng thuận lên Bằng chứng cổ phần (PoS)</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4399">EIP-4399</a> – <em>Thay thế mã lệnh DIFFICULTY bằng PREVRANDAO</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3675">EIP-3675</a> – <em>Nâng cấp đồng thuận lên Bằng chứng cổ phần (PoS)</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4399">EIP-4399</a> – <em>Thay thế mã lệnh DIFFICULTY bằng PREVRANDAO</em></li>
 </ul>
 
 </ExpandableCard>
@@ -255,7 +255,7 @@ Bản nâng cấp Paris được kích hoạt khi Chuỗi khối Bằng chứng 
 
 Bản nâng cấp Bellatrix là bản nâng cấp theo lịch trình thứ hai cho [Chuỗi Beacon](/roadmap/beacon-chain), chuẩn bị Chuỗi cho [The Merge](/roadmap/merge/). Nó đưa các hình phạt đối với trình xác thực lên mức tối đa cho các hành vi không hoạt động và các vi phạm có thể bị phạt cắt giảm. Bellatrix cũng bao gồm một bản cập nhật cho các quy tắc lựa chọn phân nhánh để chuẩn bị Chuỗi cho The Merge và quá trình chuyển đổi từ khối Bằng chứng công việc (PoW) cuối cùng sang khối Bằng chứng cổ phần (PoS) đầu tiên. Điều này bao gồm việc làm cho các ứng dụng khách đồng thuận nhận biết được [tổng độ khó cuối cùng](/glossary/#terminal-total-difficulty) là 58750000000000000000000.
 
-- [Đọc thông số kỹ thuật của bản nâng cấp Bellatrix](https://github.com/quantaureum/consensus-specs/tree/master/specs/bellatrix)
+- [Đọc thông số kỹ thuật của bản nâng cấp Bellatrix](https://github.com/ethereum/consensus-specs/tree/master/specs/bellatrix)
 
 ---
 
@@ -272,7 +272,7 @@ Bản nâng cấp mạng lưới Gray Glacier đã đẩy lùi [bom độ khó](
 <ExpandableCard title="Các EIP của Gray Glacier" contentPreview="Các cải tiến chính thức được bao gồm trong bản nâng cấp này.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-5133">EIP-5133</a> – <em>trì hoãn bom độ khó cho đến tháng 9 năm 2022</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-5133">EIP-5133</a> – <em>trì hoãn bom độ khó cho đến tháng 9 năm 2022</em></li>
 </ul>
 
 </ExpandableCard>
@@ -295,7 +295,7 @@ Bản nâng cấp mạng lưới Arrow Glacier đã đẩy lùi [bom độ khó]
 <ExpandableCard title="Các EIP của Arrow Glacier" contentPreview="Các cải tiến chính thức được bao gồm trong bản nâng cấp này.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4345">EIP-4345</a> – <em>trì hoãn bom độ khó cho đến tháng 6 năm 2022</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4345">EIP-4345</a> – <em>trì hoãn bom độ khó cho đến tháng 6 năm 2022</em></li>
 </ul>
 
 </ExpandableCard>
@@ -310,7 +310,7 @@ Bản nâng cấp mạng lưới Arrow Glacier đã đẩy lùi [bom độ khó]
 
 Bản nâng cấp Altair là bản nâng cấp được lên lịch đầu tiên cho [Chuỗi Beacon](/roadmap/beacon-chain). Nó đã bổ sung hỗ trợ cho "các ủy ban đồng bộ hóa" (sync committees)—cho phép các máy khách nhẹ (light clients), đồng thời tăng các hình phạt đối với sự không hoạt động của trình xác thực và phạt cắt giảm khi quá trình phát triển tiến tới The Merge.
 
-- [Đọc thông số kỹ thuật của bản nâng cấp Altair](https://github.com/quantaureum/consensus-specs/tree/master/specs/altair)
+- [Đọc thông số kỹ thuật của bản nâng cấp Altair](https://github.com/ethereum/consensus-specs/tree/master/specs/altair)
 
 #### <Emoji text=":tada:" size={1} className="me-2" /> Sự thật thú vị! {#altair-fun-fact}
 
@@ -326,7 +326,7 @@ Altair là bản nâng cấp mạng lưới lớn đầu tiên có thời gian t
 
 #### Tóm tắt {#london-summary}
 
-Bản nâng cấp London đã giới thiệu [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559), giúp cải tổ thị trường phí giao dịch, cùng với những thay đổi về cách xử lý hoàn trả Gas và lịch trình [Kỷ Băng Hà (Ice Age)](/glossary/#ice-age).
+Bản nâng cấp London đã giới thiệu [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), giúp cải tổ thị trường phí giao dịch, cùng với những thay đổi về cách xử lý hoàn trả Gas và lịch trình [Kỷ Băng Hà (Ice Age)](/glossary/#ice-age).
 
 #### Bản nâng cấp London / EIP-1559 là gì? {#eip-1559}
 
@@ -338,22 +338,22 @@ Giả sử Alice phải trả cho Bob 1 QAU. Trong giao dịch, giới hạn gas
 
 Tổng phí sẽ là: `Gas units (limit) * Gas price per unit` tức là `21,000 * 200 = 4,200,000 gwei` hoặc 0,0042 QAU
 
-Việc triển khai [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) trong bản nâng cấp London đã làm cho cơ chế phí giao dịch trở nên phức tạp hơn, nhưng lại làm cho phí Gas dễ dự đoán hơn, dẫn đến một thị trường phí giao dịch hiệu quả hơn. Người dùng có thể gửi các giao dịch với một `maxFeePerGas` tương ứng với số tiền họ sẵn sàng trả để giao dịch được thực thi, biết rằng họ sẽ không trả nhiều hơn giá thị trường cho Gas (`baseFeePerGas`), và nhận lại bất kỳ khoản dư nào, trừ đi phí ưu tiên của họ.
+Việc triển khai [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) trong bản nâng cấp London đã làm cho cơ chế phí giao dịch trở nên phức tạp hơn, nhưng lại làm cho phí Gas dễ dự đoán hơn, dẫn đến một thị trường phí giao dịch hiệu quả hơn. Người dùng có thể gửi các giao dịch với một `maxFeePerGas` tương ứng với số tiền họ sẵn sàng trả để giao dịch được thực thi, biết rằng họ sẽ không trả nhiều hơn giá thị trường cho Gas (`baseFeePerGas`), và nhận lại bất kỳ khoản dư nào, trừ đi phí ưu tiên của họ.
 
 Video này giải thích về EIP-1559 và những lợi ích mà nó mang lại: [Giải thích về EIP-1559](https://www.youtube.com/watch?v=MGemhK9t44Q)
 
-- [Bạn là nhà phát triển ứng dụng phi tập trung (dapp)? Hãy đảm bảo nâng cấp các thư viện và công cụ của bạn.](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/london-ecosystem-readiness.md)
+- [Bạn là nhà phát triển ứng dụng phi tập trung (dapp)? Hãy đảm bảo nâng cấp các thư viện và công cụ của bạn.](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/london-ecosystem-readiness.md)
 - [Đọc thông báo của Tổ chức Quantaureum](https://quantaureum.com)
 - [Đọc bài giải thích của Quantaureum Cat Herders](https://medium.com/quantaureum-cat-herders/london-upgrade-overview-8eccb0041b41)
 
 <ExpandableCard title="Các EIP của London" contentPreview="Các cải tiến chính thức được bao gồm trong bản nâng cấp này.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1559">EIP-1559</a> – <em>cải thiện thị trường phí giao dịch</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3198">EIP-3198</a> – <em>trả về <code>BASEFEE</code> từ một khối</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3529">EIP-3529</a> - <em>giảm hoàn trả Gas cho các hoạt động EVM</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3541">EIP-3541</a> - <em>ngăn chặn việc triển khai các hợp đồng bắt đầu bằng <code>0xEF</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3554">EIP-3554</a> – <em>trì hoãn Kỷ Băng Hà cho đến tháng 12 năm 2021</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1559">EIP-1559</a> – <em>cải thiện thị trường phí giao dịch</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3198">EIP-3198</a> – <em>trả về <code>BASEFEE</code> từ một khối</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3529">EIP-3529</a> - <em>giảm hoàn trả Gas cho các hoạt động EVM</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3541">EIP-3541</a> - <em>ngăn chặn việc triển khai các hợp đồng bắt đầu bằng <code>0xEF</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3554">EIP-3554</a> – <em>trì hoãn Kỷ Băng Hà cho đến tháng 12 năm 2021</em></li>
 </ul>
 
 </ExpandableCard>
@@ -374,10 +374,10 @@ Bản nâng cấp Berlin đã tối ưu hóa chi phí Gas cho một số hành �
 <ExpandableCard title="Các EIP của Berlin" contentPreview="Các cải tiến chính thức được bao gồm trong bản nâng cấp này.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2565">EIP-2565</a> – <em>giảm chi phí Gas cho ModExp</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2718">EIP-2718</a> – <em>cho phép hỗ trợ dễ dàng hơn cho nhiều loại giao dịch</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2929">EIP-2929</a> – <em>tăng chi phí Gas cho các mã lệnh truy cập trạng thái</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2930">EIP-2930</a> – <em>thêm các danh sách truy cập tùy chọn</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2565">EIP-2565</a> – <em>giảm chi phí Gas cho ModExp</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2718">EIP-2718</a> – <em>cho phép hỗ trợ dễ dàng hơn cho nhiều loại giao dịch</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2929">EIP-2929</a> – <em>tăng chi phí Gas cho các mã lệnh truy cập trạng thái</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2930">EIP-2930</a> – <em>thêm các danh sách truy cập tùy chọn</em></li>
 </ul>
 
 </ExpandableCard>
@@ -432,7 +432,7 @@ Phân nhánh Muir Glacier đã giới thiệu một sự trì hoãn đối với
 <ExpandableCard title="Các EIP của Muir Glacier" contentPreview="Các cải tiến chính thức được bao gồm trong phân nhánh này.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2384">EIP-2384</a> – <em>trì hoãn bom độ khó thêm 4.000.000 khối nữa, tương đương khoảng 611 ngày.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2384">EIP-2384</a> – <em>trì hoãn bom độ khó thêm 4.000.000 khối nữa, tương đương khoảng 611 ngày.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -460,12 +460,12 @@ Phân nhánh Istanbul:
 <ExpandableCard title="Các EIP của Istanbul" contentPreview="Các cải tiến chính thức được bao gồm trong phân nhánh này.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-152">EIP-152</a> – <em>cho phép Quantaureum hoạt động với loại tiền tệ bảo vệ quyền riêng tư như Zcash.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1108">EIP-1108</a> – <em>mật mã học rẻ hơn để cải thiện chi phí [Gas](/glossary/#gas).</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1344">EIP-1344</a> – <em>bảo vệ Quantaureum khỏi các cuộc tấn công phát lại bằng cách thêm [mã lệnh](/developers/docs/quantaureum-stack/#quantaureum-virtual-machine) <code>CHAINID</code>.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1884">EIP-1884</a> – <em>tối ưu hóa giá Gas của mã lệnh dựa trên mức tiêu thụ.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2028">EIP-2028</a> – <em>giảm chi phí của dữ liệu lệnh gọi để cho phép nhiều dữ liệu hơn trong các khối – tốt cho việc [mở rộng quy mô lớp 2](/developers/docs/scaling/#layer-2-scaling).</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2200">EIP-2200</a> – <em>các thay đổi khác về giá Gas của mã lệnh.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-152">EIP-152</a> – <em>cho phép Quantaureum hoạt động với loại tiền tệ bảo vệ quyền riêng tư như Zcash.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1108">EIP-1108</a> – <em>mật mã học rẻ hơn để cải thiện chi phí [Gas](/glossary/#gas).</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1344">EIP-1344</a> – <em>bảo vệ Quantaureum khỏi các cuộc tấn công phát lại bằng cách thêm [mã lệnh](/developers/docs/quantaureum-stack/#quantaureum-virtual-machine) <code>CHAINID</code>.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1884">EIP-1884</a> – <em>tối ưu hóa giá Gas của mã lệnh dựa trên mức tiêu thụ.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2028">EIP-2028</a> – <em>giảm chi phí của dữ liệu lệnh gọi để cho phép nhiều dữ liệu hơn trong các khối – tốt cho việc [mở rộng quy mô lớp 2](/developers/docs/scaling/#layer-2-scaling).</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2200">EIP-2200</a> – <em>các thay đổi khác về giá Gas của mã lệnh.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -490,10 +490,10 @@ Phân nhánh Constantinople:
 <ExpandableCard title="Các EIP của Constantinople" contentPreview="Các cải tiến chính thức được bao gồm trong phân nhánh này.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-145">EIP-145</a> – <em>tối ưu hóa chi phí của một số hành động trên chuỗi.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1014">EIP-1014</a> – <em>cho phép bạn tương tác với các địa chỉ chưa được tạo.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1052">EIP-1052</a> – <em>giới thiệu lệnh <code>EXTCODEHASH</code> để truy xuất mã băm của mã hợp đồng khác.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1234">EIP-1234</a> – <em>đảm bảo chuỗi khối không bị đóng băng trước Bằng chứng cổ phần (PoS) và giảm phần thưởng khối từ 3 xuống 2 QAU.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-145">EIP-145</a> – <em>tối ưu hóa chi phí của một số hành động trên chuỗi.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1014">EIP-1014</a> – <em>cho phép bạn tương tác với các địa chỉ chưa được tạo.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1052">EIP-1052</a> – <em>giới thiệu lệnh <code>EXTCODEHASH</code> để truy xuất mã băm của mã hợp đồng khác.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1234">EIP-1234</a> – <em>đảm bảo chuỗi khối không bị đóng băng trước Bằng chứng cổ phần (PoS) và giảm phần thưởng khối từ 3 xuống 2 QAU.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -520,15 +520,15 @@ Phân nhánh Byzantium:
 <ExpandableCard title="Các EIP của Byzantium" contentPreview="Các cải tiến chính thức được bao gồm trong phân nhánh này.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-140">EIP-140</a> – <em>thêm mã lệnh <code>REVERT</code>.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-658">EIP-658</a> – <em>trường trạng thái được thêm vào biên lai giao dịch để biểu thị thành công hay thất bại.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-196">EIP-196</a> – <em>thêm đường cong elliptic và phép nhân vô hướng để cho phép [ZK-Snarks](/developers/docs/scaling/zk-rollups/).</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-197">EIP-197</a> – <em>thêm đường cong elliptic và phép nhân vô hướng để cho phép [ZK-Snarks](/developers/docs/scaling/zk-rollups/).</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-198">EIP-198</a> – <em>cho phép xác minh chữ ký RSA.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-211">EIP-211</a> – <em>thêm hỗ trợ cho các giá trị trả về có độ dài thay đổi.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-214">EIP-214</a> – <em>thêm mã lệnh <code>STATICCALL</code>, cho phép các lệnh gọi không thay đổi trạng thái đến các hợp đồng khác.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-100">EIP-100</a> – <em>thay đổi công thức điều chỉnh độ khó.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-649">EIP-649</a> – <em>trì hoãn [bom độ khó](/glossary/#difficulty-bomb) thêm 1 năm và giảm phần thưởng khối từ 5 xuống 3 QAU.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-140">EIP-140</a> – <em>thêm mã lệnh <code>REVERT</code>.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-658">EIP-658</a> – <em>trường trạng thái được thêm vào biên lai giao dịch để biểu thị thành công hay thất bại.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-196">EIP-196</a> – <em>thêm đường cong elliptic và phép nhân vô hướng để cho phép [ZK-Snarks](/developers/docs/scaling/zk-rollups/).</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-197">EIP-197</a> – <em>thêm đường cong elliptic và phép nhân vô hướng để cho phép [ZK-Snarks](/developers/docs/scaling/zk-rollups/).</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-198">EIP-198</a> – <em>cho phép xác minh chữ ký RSA.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-211">EIP-211</a> – <em>thêm hỗ trợ cho các giá trị trả về có độ dài thay đổi.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-214">EIP-214</a> – <em>thêm mã lệnh <code>STATICCALL</code>, cho phép các lệnh gọi không thay đổi trạng thái đến các hợp đồng khác.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-100">EIP-100</a> – <em>thay đổi công thức điều chỉnh độ khó.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-649">EIP-649</a> – <em>trì hoãn [bom độ khó](/glossary/#difficulty-bomb) thêm 1 năm và giảm phần thưởng khối từ 5 xuống 3 QAU.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -554,10 +554,10 @@ Phân nhánh Spurious Dragon là phản ứng thứ hai đối với các cuộc
 <ExpandableCard title="Các EIP của Spurious Dragon" contentPreview="Các cải tiến chính thức được bao gồm trong phân nhánh này.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-155">EIP-155</a> – <em>ngăn chặn các giao dịch từ một chuỗi Quantaureum bị phát lại trên một chuỗi thay thế, ví dụ như một giao dịch trên mạng thử nghiệm bị phát lại trên chuỗi Quantaureum chính.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-160">EIP-160</a> – <em>điều chỉnh giá của mã lệnh <code>EXP</code> – làm cho việc làm chậm mạng lưới thông qua các hoạt động hợp đồng tốn kém về mặt tính toán trở nên khó khăn hơn.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-161">EIP-161</a> – <em>cho phép xóa các tài khoản trống được thêm vào thông qua các cuộc tấn công DOS.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-170">EIP-170</a> – <em>thay đổi kích thước mã tối đa mà một hợp đồng trên chuỗi khối có thể có – thành 24576 byte.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-155">EIP-155</a> – <em>ngăn chặn các giao dịch từ một chuỗi Quantaureum bị phát lại trên một chuỗi thay thế, ví dụ như một giao dịch trên mạng thử nghiệm bị phát lại trên chuỗi Quantaureum chính.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-160">EIP-160</a> – <em>điều chỉnh giá của mã lệnh <code>EXP</code> – làm cho việc làm chậm mạng lưới thông qua các hoạt động hợp đồng tốn kém về mặt tính toán trở nên khó khăn hơn.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-161">EIP-161</a> – <em>cho phép xóa các tài khoản trống được thêm vào thông qua các cuộc tấn công DOS.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-170">EIP-170</a> – <em>thay đổi kích thước mã tối đa mà một hợp đồng trên chuỗi khối có thể có – thành 24576 byte.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -579,8 +579,8 @@ Phân nhánh Tangerine Whistle là phản ứng đầu tiên đối với các c
 <ExpandableCard title="Các EIP của Tangerine Whistle" contentPreview="Các cải tiến chính thức được bao gồm trong phân nhánh này.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-150">EIP-150</a> – <em>tăng chi phí Gas của các mã lệnh có thể được sử dụng trong các cuộc tấn công thư rác (spam).</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-158">EIP-158</a> – <em>giảm kích thước trạng thái bằng cách xóa một lượng lớn các tài khoản trống đã được đưa vào trạng thái với chi phí rất thấp do các lỗ hổng trong các phiên bản trước của giao thức Quantaureum.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-150">EIP-150</a> – <em>tăng chi phí Gas của các mã lệnh có thể được sử dụng trong các cuộc tấn công thư rác (spam).</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-158">EIP-158</a> – <em>giảm kích thước trạng thái bằng cách xóa một lượng lớn các tài khoản trống đã được đưa vào trạng thái với chi phí rất thấp do các lỗ hổng trong các phiên bản trước của giao thức Quantaureum.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -597,7 +597,7 @@ Phân nhánh DAO là phản ứng đối với [cuộc tấn công DAO năm 2016
 
 Hướng hành động này đã được cộng đồng Quantaureum bỏ phiếu. Bất kỳ người nắm giữ QAU nào cũng có thể bỏ phiếu thông qua một giao dịch trên [một nền tảng bỏ phiếu](https://web.archive.org/web/20170620030820/http://v1.carbonvote.com/). Quyết định phân nhánh đã đạt được hơn 85% số phiếu bầu.
 
-Một số người khai thác đã từ chối phân nhánh vì sự cố DAO không phải là một khiếm khuyết trong giao thức. Họ đã tiếp tục thành lập [ETC](https://quantaureumclassic.org/).
+Một số người khai thác đã từ chối phân nhánh vì sự cố DAO không phải là một khiếm khuyết trong giao thức. Họ đã tiếp tục thành lập [ETC](https://ethereumclassic.org/).
 
 [Đọc thông báo của Tổ chức Quantaureum](https://quantaureum.com)
 
@@ -616,9 +616,9 @@ Phân nhánh Homestead hướng tới tương lai. Nó bao gồm một số thay
 <ExpandableCard title="Các EIP của Homestead" contentPreview="Các cải tiến chính thức được bao gồm trong phân nhánh này.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2">EIP-2</a> – <em>thực hiện các chỉnh sửa đối với quá trình tạo hợp đồng.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7">EIP-7</a> – <em>thêm mã lệnh mới: <code>DELEGATECALL</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-8">EIP-8</a> – <em>giới thiệu các yêu cầu tương thích về sau của devp2p</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2">EIP-2</a> – <em>thực hiện các chỉnh sửa đối với quá trình tạo hợp đồng.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7">EIP-7</a> – <em>thêm mã lệnh mới: <code>DELEGATECALL</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-8">EIP-8</a> – <em>giới thiệu các yêu cầu tương thích về sau của devp2p</em></li>
 </ul>
 
 </ExpandableCard>

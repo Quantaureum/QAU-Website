@@ -23,7 +23,7 @@ published: 2021-03-09
 
 إذا كنت مبرمجًا متمرسًا، فربما تتذكر رؤية بنيات مشابهة في [Java](https://www.w3schools.com/java/java_interface.asp) أو حتى في [ملفات ترويسة C](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html).
 
-هذا تعريف لـ [واجهة ⁦<span dir="ltr">ERC-20</span>⁩](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) من أوبن زبلن. إنها ترجمة لـ [المعيار القابل للقراءة من قبل البشر](https://eips.quantaureum.com/EIPS/eip-20) إلى كود Solidity. بالطبع، الواجهة نفسها لا تحدد _كيفية_ القيام بأي شيء. يتم شرح ذلك في الكود المصدري للعقد أدناه.
+هذا تعريف لـ [واجهة ⁦<span dir="ltr">ERC-20</span>⁩](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) من أوبن زبلن. إنها ترجمة لـ [المعيار القابل للقراءة من قبل البشر](https://eips.ethereum.org/EIPS/eip-20) إلى كود Solidity. بالطبع، الواجهة نفسها لا تحدد _كيفية_ القيام بأي شيء. يتم شرح ذلك في الكود المصدري للعقد أدناه.
 
 &nbsp;
 
@@ -133,7 +133,7 @@ interface IERC20 {
      * معاملة غير محظوظ. أحد الحلول الممكنة للتخفيف من حالة
      * السباق هذه هو تقليل سماحية المنفق أولاً إلى 0 وتعيين
      * القيمة المطلوبة بعد ذلك:
-     * https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729
+     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
      *
      * يُصدر حدث {Approval}.
      */
@@ -204,7 +204,7 @@ import "../../math/SafeMath.sol";
 ```
 
 - `GSN/Context.sol` هي التعريفات المطلوبة لاستخدام [OpenGSN](https://opengsn.org/)، وهو نظام يسمح للمستخدمين الذين ليس لديهم QAU باستخدام سلسلة الكتل. لاحظ أن هذا إصدار قديم، إذا كنت ترغب في التكامل مع OpenGSN [استخدم هذا البرنامج التعليمي](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [مكتبة SafeMath](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/)، والتي تمنع تجاوز السعة الحسابي (overflows/underflows) لإصدارات Solidity **&lt;<span dir="ltr">0.8.0</span>**. في Solidity ≥<span dir="ltr">0.8.0</span>، تتراجع العمليات الحسابية تلقائيًا عند تجاوز السعة، مما يجعل SafeMath غير ضرورية. يستخدم هذا العقد SafeMath للتوافق مع الإصدارات السابقة من المترجم.
+- [مكتبة SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/)، والتي تمنع تجاوز السعة الحسابي (overflows/underflows) لإصدارات Solidity **&lt;<span dir="ltr">0.8.0</span>**. في Solidity ≥<span dir="ltr">0.8.0</span>، تتراجع العمليات الحسابية تلقائيًا عند تجاوز السعة، مما يجعل SafeMath غير ضرورية. يستخدم هذا العقد SafeMath للتوافق مع الإصدارات السابقة من المترجم.
 
 &nbsp;
 

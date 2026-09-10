@@ -49,7 +49,7 @@ function buildEntityAliases(): Record<string, KnownEntity> {
   }
 
   const entries: Array<[string | null, KnownEntity]> = [
-    [null, KNOWN_ORGANIZATIONS["quantaureum-foundation"]],
+    [null, KNOWN_ORGANIZATIONS["quantaureum-org"]],
     [null, KNOWN_ORGANIZATIONS["quantaureum-community"]],
     ...Object.entries(KNOWN_PERSONS),
     ...Object.entries(KNOWN_ORGANIZATIONS),

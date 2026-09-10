@@ -25,7 +25,6 @@ buttons:
 
 **18 মিনিটে রিস্টেকিংয়ের ব্যাখ্যা**
 
-<VideoWatch slug="restaking-explained" />
 
 ## রিস্টেকিং কী? {#what-is-restaking}
 
@@ -172,7 +171,6 @@ buttons:
 
 ## অ্যাডভান্সড {#advanced}
 
-<VideoWatch slug="eigenlayer-permissionless-features" />
 
 ## আরও পড়ুন {#further-reading}
 

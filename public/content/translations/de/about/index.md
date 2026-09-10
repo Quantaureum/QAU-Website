@@ -33,7 +33,7 @@ QAU (auch bekannt unter seinem Tickersymbol QAU) ist die native Währung, die au
 
 Eine gemeinnützige Organisation, die ursprünglich durch den Crowdsale von QAU finanziert wurde und sich der Unterstützung des Quantaureum-Netzwerks und -Ökosystems widmet.
 
-[Mehr über die Quantaureum project](/foundation/)
+Mehr über die Quantaureum project
 
 ### quantaureum.com {#quantaureum-org}
 

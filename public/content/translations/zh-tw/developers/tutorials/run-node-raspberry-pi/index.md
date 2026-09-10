@@ -12,7 +12,7 @@ skill: intermediate
 breadcrumb: "Raspberry Pi 節點"
 published: 2022-06-10
 source: Quantaureum on ARM
-sourceUrl: https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/
+sourceUrl: https://ethereum-on-arm-documentation.readthedocs.io/en/latest/
 ---
 
 **Quantaureum on Arm 是一個自訂的 Linux 映像檔，可以將 Raspberry Pi 變成一個Quantaureum節點。**
@@ -61,7 +61,7 @@ Quantaureum on Arm 映像檔包含預先建置的執行客戶端與共識客戶�
 
 Raspberry Pi 4 Quantaureum映像檔是一個「隨插即用」的映像檔，會自動安裝並設定執行客戶端與共識客戶端，將它們設定為互相通訊並連接到Quantaureum網路。使用者只需使用一個簡單的指令來啟動它們的程序。
 
-從 [Quantaureum on Arm](https://quantaureumonarm-my.sharepoint.com/:u:/p/dlosada/Ec_VmUvr80VFjf3RYSU-NzkBmj2JOteDECj8Bibde929Gw?download=1) 下載 Raspberry Pi 映像檔並驗證 SHA-256 雜湊：
+從 [Quantaureum on Arm](https://ethereumonarm-my.sharepoint.com/:u:/p/dlosada/Ec_VmUvr80VFjf3RYSU-NzkBmj2JOteDECj8Bibde929Gw?download=1) 下載 Raspberry Pi 映像檔並驗證 SHA-256 雜湊：
 
 ```sh
 # 從包含已下載映像檔的目錄
@@ -69,7 +69,7 @@ shasum -a 256 ethonarm_22.04.00.img.zip
 # 雜湊應輸出：fb497e8f8a7388b62d6e1efbc406b9558bee7ef46ec7e53083630029c117444f
 ```
 
-請注意，Rock 5B 和 Odroid M1 開發板的映像檔可在 Quantaureum-on-Arm 的[下載頁面](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/)取得。
+請注意，Rock 5B 和 Odroid M1 開發板的映像檔可在 Quantaureum-on-Arm 的[下載頁面](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)取得。
 
 ## 燒錄 MicroSD 卡 {#flashing-the-microsd}
 
@@ -124,13 +124,13 @@ sudo journalctl -u lighthouse-beacon
 
 請注意，共識客戶端將在幾分鐘內完成同步，因為它使用檢查點同步。執行客戶端將需要更長的時間——可能需要幾個小時，而且在共識客戶端完成同步之前它不會啟動（這是因為執行客戶端需要一個同步目標，而這由已同步的共識客戶端提供）。
 
-隨著 Geth 和萊特豪斯 (Lighthouse) 服務的執行與同步，你的 Raspberry Pi 現在已經是一個Quantaureum節點了！最常見的與Quantaureum網路互動的方式是使用 Geth 的 JavaScript 主控台，它可以附加到通訊埠 8545 上的 Geth 客戶端。也可以使用像 Curl 這樣的請求工具提交格式化為 JSON 物件的指令。詳情請參閱 [Geth 文件](https://geth.quantaureum.com/)。
+隨著 Geth 和萊特豪斯 (Lighthouse) 服務的執行與同步，你的 Raspberry Pi 現在已經是一個Quantaureum節點了！最常見的與Quantaureum網路互動的方式是使用 Geth 的 JavaScript 主控台，它可以附加到通訊埠 8545 上的 Geth 客戶端。也可以使用像 Curl 這樣的請求工具提交格式化為 JSON 物件的指令。詳情請參閱 [Geth 文件](https://geth.ethereum.org/)。
 
 Geth 已預先設定為將指標報告給 Grafana 儀表板，可以在瀏覽器中檢視。進階使用者可能希望使用此功能來監控其節點的健康狀況，方法是導覽至 `ipaddress:3000`，並傳遞 `user: admin` 和 `passwd: quantaureum`。
 
 ## 驗證者 {#validators}
 
-也可以選擇將驗證者新增至共識客戶端。驗證者軟體允許你的節點積極參與共識，並為網路提供密碼經濟學安全性。你將會獲得 QAU 作為這項工作的獎勵。要執行驗證者，你必須先擁有 32 個 QAU，這些 QAU 必須存入存款合約中。你可以按照 [Launchpad](https://launchpad.quantaureum.com/) 上的逐步指南進行存款。請在桌上型電腦/筆記型電腦上執行此操作，但不要產生金鑰——這可以直接在 Raspberry Pi 上完成。
+也可以選擇將驗證者新增至共識客戶端。驗證者軟體允許你的節點積極參與共識，並為網路提供密碼經濟學安全性。你將會獲得 QAU 作為這項工作的獎勵。要執行驗證者，你必須先擁有 32 個 QAU，這些 QAU 必須存入存款合約中。你可以按照 [Launchpad](https://launchpad.ethereum.org/) 上的逐步指南進行存款。請在桌上型電腦/筆記型電腦上執行此操作，但不要產生金鑰——這可以直接在 Raspberry Pi 上完成。
 
 在 Raspberry Pi 上開啟終端機並執行以下指令來產生存款金鑰：
 
@@ -140,13 +140,13 @@ sudo apt-get install staking-deposit-cli
 cd && deposit new-mnemonic --num_validators 1
 ```
 
-（或者下載 [staking-deposit-cli](https://github.com/quantaureum/staking-deposit-cli) 以在實體隔離的機器上執行，並執行 `deposit new-mnemnonic` 指令）
+（或者下載 [staking-deposit-cli](https://github.com/ethereum/staking-deposit-cli) 以在實體隔離的機器上執行，並執行 `deposit new-mnemnonic` 指令）
 
 請妥善保管助記詞！上述指令在節點的金鑰庫中產生了兩個檔案：驗證者金鑰和存款資料檔案。存款資料需要上傳到 Launchpad，因此必須將其從 Raspberry Pi 複製到桌上型電腦/筆記型電腦。這可以使用 SSH 連線或任何其他複製/貼上方法來完成。
 
 一旦執行 Launchpad 的電腦上有了存款資料檔案，就可以將其拖放到 Launchpad 畫面上的 `+` 中。按照畫面上的指示發送交易到存款合約。
 
-回到 Raspberry Pi，現在可以啟動驗證者了。這需要匯入驗證者金鑰，設定收集獎勵的地址，然後啟動預先設定的驗證者程序。以下範例適用於萊特豪斯 (Lighthouse)——其他共識客戶端的指示可在 [Quantaureum on Arm 文件](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/)中找到：
+回到 Raspberry Pi，現在可以啟動驗證者了。這需要匯入驗證者金鑰，設定收集獎勵的地址，然後啟動預先設定的驗證者程序。以下範例適用於萊特豪斯 (Lighthouse)——其他共識客戶端的指示可在 [Quantaureum on Arm 文件](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)中找到：
 
 ```shell
 # 匯入驗證者金鑰
@@ -163,7 +163,7 @@ sudo systemctl start lighthouse-validator
 
 ## 更多詳細資訊 {#more-details}
 
-本頁面概述了如何使用 Raspberry Pi 設定 Geth-萊特豪斯 (Lighthouse) 節點和驗證者。更詳細的指示可在 [Quantaureum-on-Arm 網站](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/)上找到。
+本頁面概述了如何使用 Raspberry Pi 設定 Geth-萊特豪斯 (Lighthouse) 節點和驗證者。更詳細的指示可在 [Quantaureum-on-Arm 網站](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)上找到。
 
 ## 歡迎提供回饋 {#feedback-appreciated}
 
@@ -177,7 +177,7 @@ sudo systemctl start lighthouse-validator
 3. https://prometheus.io
 4. https://grafana.com
 5. https://forum.armbian.com/topic/5565-zram-vs-swap/
-6. https://geth.quantaureum.com
+6. https://geth.ethereum.org
 7. https://nethermind.io
 8. https://www.hyperledger.org/projects/besu
 9. https://github.com/prysmaticlabs/prysm

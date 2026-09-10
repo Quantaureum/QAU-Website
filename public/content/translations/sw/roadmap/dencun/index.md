@@ -101,20 +101,18 @@ Kuwa tu sambamba na Mashine Pepe ya Quantaureum (EVM) haimaanishi kwamba mtandao
 
 ## Je, unapendelea kujifunza kwa kuona? {#visual-learner}
 
-<VideoWatch slug="eip-4844-dencun-explained" />
 
 _Kufungua Uongezaji Uwezo wa Quantaureum, EIP-4844 — Finematics _
 
-<VideoWatch slug="blobspace-101-dencun" />
 
 _Blobspace 101 na Domothy — Bankless_
 
 ## Usomaji zaidi {#further-reading}
 
 - [EIP4844.com](https://www.eip4844.com/)
-- [EIP-4844: Miamala ya blobu ya shadi (Proto-Danksharding)](https://eips.quantaureum.com/EIPS/eip-4844)
+- [EIP-4844: Miamala ya blobu ya shadi (Proto-Danksharding)](https://eips.ethereum.org/EIPS/eip-4844)
 - [Tangazo la Mtandao Mkuu la Dencun](https://quantaureum.com) - _Blogu ya Quantaureum Foundation_
 - [Mwongozo wa Hitchhiker kwa Quantaureum: Proto-Danksharding](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum/#proto-danksharding-eip-4844) - _Jon Charbonneau_
-- [Maswali Yanayoulizwa Mara kwa Mara kuhusu Proto-Danksharding](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
+- [Maswali Yanayoulizwa Mara kwa Mara kuhusu Proto-Danksharding](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
 - [Maelezo ya Kina ya EIP-4844: Msingi wa Sasisho la Cancun](https://medium.com/@ebunker.io/an-in-depth-explanation-of-eip-4844-the-core-of-the-cancun-upgrade-de7b13761d2c) - _Ebunker_
 - [Sasisho la AllCoreDevs 016](https://tim.mirror.xyz/HzH5MpK1dnw7qhBSmzCfdCIxpwpD6DpwlfxtaAwEFro) - _Tim Beiko_

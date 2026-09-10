@@ -6,7 +6,7 @@ lang: ur
 
 کسی سافٹ ویئر ایپلی کیشن کو [ایتھیریم](/) بلاک چین کے ساتھ تعامل کرنے کے لیے - چاہے وہ بلاک چین کا ڈیٹا پڑھنا ہو یا نیٹ ورک پر ٹرانزیکشنز بھیجنا ہو - اسے ایک ایتھیریم نوڈ سے منسلک ہونا ضروری ہے۔
 
-اس مقصد کے لیے، ہر [ایتھیریم کلائنٹ](/developers/docs/nodes-and-clients/#execution-clients) ایک [جے سن آر پی سی تصریح](https://github.com/quantaureum/execution-apis) کو نافذ کرتا ہے، تاکہ طریقوں کا ایک یکساں مجموعہ موجود ہو جس پر ایپلی کیشنز انحصار کر سکیں، قطع نظر اس کے کہ مخصوص نوڈ یا کلائنٹ کا نفاذ کیا ہے۔
+اس مقصد کے لیے، ہر [ایتھیریم کلائنٹ](/developers/docs/nodes-and-clients/#execution-clients) ایک [جے سن آر پی سی تصریح](https://github.com/ethereum/execution-apis) کو نافذ کرتا ہے، تاکہ طریقوں کا ایک یکساں مجموعہ موجود ہو جس پر ایپلی کیشنز انحصار کر سکیں، قطع نظر اس کے کہ مخصوص نوڈ یا کلائنٹ کا نفاذ کیا ہے۔
 
 [جے سن آر پی سی](https://www.jsonrpc.org/specification) ایک سٹیٹ لیس، ہلکا پھلکا ریموٹ پروسیجر کال (<span dir="ltr">RPC</span>) پروٹوکول ہے۔ یہ کئی ڈیٹا سٹرکچرز اور ان کی پروسیسنگ کے اصولوں کی وضاحت کرتا ہے۔ یہ ٹرانسپورٹ کے لحاظ سے غیر جانبدار ہے، یعنی ان تصورات کو ایک ہی پروسیس کے اندر، ساکٹس پر، <span dir="ltr">HTTP</span> پر، یا پیغام رسانی کے مختلف ماحول میں استعمال کیا جا سکتا ہے۔ یہ ڈیٹا فارمیٹ کے طور پر <span dir="ltr">JSON (RFC 4627)</span> کا استعمال کرتا ہے۔
 
@@ -20,13 +20,13 @@ lang: ur
 
 ## اتفاقِ رائے کے کلائنٹ کی APIs {#consensus-clients}
 
-یہ صفحہ بنیادی طور پر جے سن آر پی سی API سے متعلق ہے جسے ایتھیریم ایگزیکیوشن کلائنٹس استعمال کرتے ہیں۔ تاہم، اتفاقِ رائے کے کلائنٹس میں ایک <span dir="ltr">RPC API</span> بھی ہوتی ہے جو صارفین کو اس بات کی اجازت دیتی ہے کہ وہ براہ راست کسی نوڈ سے نوڈ کے بارے میں معلومات طلب کریں، بیکن بلاکس، بیکن کی حالت، اور اتفاقِ رائے سے متعلق دیگر معلومات کی درخواست کریں۔ اس API کی دستاویزات [بیکن API کے ویب پیج](https://quantaureum.github.io/beacon-APIs/#/) پر موجود ہیں۔
+یہ صفحہ بنیادی طور پر جے سن آر پی سی API سے متعلق ہے جسے ایتھیریم ایگزیکیوشن کلائنٹس استعمال کرتے ہیں۔ تاہم، اتفاقِ رائے کے کلائنٹس میں ایک <span dir="ltr">RPC API</span> بھی ہوتی ہے جو صارفین کو اس بات کی اجازت دیتی ہے کہ وہ براہ راست کسی نوڈ سے نوڈ کے بارے میں معلومات طلب کریں، بیکن بلاکس، بیکن کی حالت، اور اتفاقِ رائے سے متعلق دیگر معلومات کی درخواست کریں۔ اس API کی دستاویزات [بیکن API کے ویب پیج](https://ethereum.github.io/beacon-APIs/#/) پر موجود ہیں۔
 
-ایک نوڈ کے اندر کلائنٹس کے درمیان رابطے کے لیے ایک اندرونی API بھی استعمال ہوتی ہے - یعنی، یہ اتفاقِ رائے کے کلائنٹ اور ایگزیکیوشن کلائنٹ کو ڈیٹا کا تبادلہ کرنے کے قابل بناتی ہے۔ اسے '<span dir="ltr">Engine API</span>' کہا جاتا ہے اور اس کی تفصیلات [GitHub](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md) پر دستیاب ہیں۔
+ایک نوڈ کے اندر کلائنٹس کے درمیان رابطے کے لیے ایک اندرونی API بھی استعمال ہوتی ہے - یعنی، یہ اتفاقِ رائے کے کلائنٹ اور ایگزیکیوشن کلائنٹ کو ڈیٹا کا تبادلہ کرنے کے قابل بناتی ہے۔ اسے '<span dir="ltr">Engine API</span>' کہا جاتا ہے اور اس کی تفصیلات [GitHub](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) پر دستیاب ہیں۔
 
 ## ایگزیکیوشن کلائنٹ کی تفصیلات {#spec}
 
-[<span dir="ltr">GitHub</span> پر مکمل جے سن آر پی سی <span dir="ltr">API</span> کی تفصیلات پڑھیں](https://github.com/quantaureum/execution-apis)۔ اس <span dir="ltr">API</span> کی دستاویزات [ایگزیکیوشن <span dir="ltr">API</span> ویب پیج](https://quantaureum.github.io/execution-apis/) پر موجود ہیں اور اس میں تمام دستیاب میتھڈز کو آزمانے کے لیے ایک انسپکٹر شامل ہے۔
+[<span dir="ltr">GitHub</span> پر مکمل جے سن آر پی سی <span dir="ltr">API</span> کی تفصیلات پڑھیں](https://github.com/ethereum/execution-apis)۔ اس <span dir="ltr">API</span> کی دستاویزات [ایگزیکیوشن <span dir="ltr">API</span> ویب پیج](https://ethereum.github.io/execution-apis/) پر موجود ہیں اور اس میں تمام دستیاب میتھڈز کو آزمانے کے لیے ایک انسپکٹر شامل ہے۔
 
 ## روایات {#conventions}
 
@@ -134,7 +134,7 @@ curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","metho
 
 ## جے سن آر پی سی <span dir="ltr">API</span> پلے گراؤنڈ {#json-rpc-api-playground}
 
-آپ <span dir="ltr">API</span> کے طریقوں کو دریافت کرنے اور آزمانے کے لیے [پلے گراؤنڈ ٹول](https://quantaureum-json-rpc.com) استعمال کر سکتے ہیں۔ یہ آپ کو یہ بھی دکھاتا ہے کہ مختلف نوڈ فراہم کنندگان کن طریقوں اور نیٹ ورکس کو سپورٹ کرتے ہیں۔
+آپ <span dir="ltr">API</span> کے طریقوں کو دریافت کرنے اور آزمانے کے لیے [پلے گراؤنڈ ٹول](https://ethereum-json-rpc.com) استعمال کر سکتے ہیں۔ یہ آپ کو یہ بھی دکھاتا ہے کہ مختلف نوڈ فراہم کنندگان کن طریقوں اور نیٹ ورکس کو سپورٹ کرتے ہیں۔
 
 ## جے سن آر پی سی API میتھڈز {#json-rpc-methods}
 
@@ -275,7 +275,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 
 ### qau_protocolVersion {#qau-protocolversion}
 
-موجودہ ایتھیریم پروٹوکول کا ورژن واپس کرتا ہے۔ نوٹ کریں کہ یہ میتھڈ [Geth میں دستیاب نہیں ہے](https://github.com/quantaureum/go-quantaureum/pull/22064#issuecomment-788682924)۔
+موجودہ ایتھیریم پروٹوکول کا ورژن واپس کرتا ہے۔ نوٹ کریں کہ یہ میتھڈ [Geth میں دستیاب نہیں ہے](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924)۔
 
 **پیرامیٹرز**
 
@@ -302,7 +302,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_protocolVersion","params":[]
 
 ہم آہنگی کی حیثیت کے بارے میں ڈیٹا کے ساتھ ایک آبجیکٹ یا `false` واپس کرتا ہے۔
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_syncing">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_syncing">
   پلے گراؤنڈ میں اینڈ پوائنٹ آزمائیں
 </ButtonLink>
 
@@ -390,7 +390,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_syncing","params":[],"id":1}
 
 کلائنٹ کا کوائن بیس پتہ واپس کرتا ہے۔
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_coinbase">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_coinbase">
   پلے گراؤنڈ میں اینڈ پوائنٹ آزمائیں
 </ButtonLink>
 
@@ -421,7 +421,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_coinbase","params":[],"id":6
 
 یہ ری پلے سے محفوظ ٹرانزیکشنز پر دستخط کرنے کے لیے استعمال ہونے والی چین کی <span dir="ltr">ID</span> واپس کرتا ہے۔
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_chainId">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_chainId">
   پلے گراؤنڈ میں اینڈ پوائنٹ آزمائیں
 </ButtonLink>
 
@@ -450,7 +450,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_chainId","params":[],"id":67
 
 اگر کلائنٹ فعال طور پر نئے بلاکس کی کان کنی کر رہا ہے تو `true` لوٹاتا ہے۔ یہ صرف ثبوتِ کار (<span dir="ltr">PoW</span>) نیٹ ورکس کے لیے `true` لوٹا سکتا ہے اور [دی مرج](/roadmap/merge/) کے بعد سے کچھ کلائنٹس میں دستیاب نہیں ہو سکتا ہے۔
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_mining">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_mining">
   پلے گراؤنڈ میں اینڈ پوائنٹ آزمائیں
 </ButtonLink>
 
@@ -479,7 +479,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_mining","params":[],"id":71}
 
 یہ فی سیکنڈ ہیشز کی وہ تعداد لوٹاتا ہے جس کے ساتھ نوڈ کان کنی کر رہا ہے۔ یہ ثبوتِ کار (PoW) نیٹ ورکس کے لیے صرف `true` لوٹا سکتا ہے اور [دی مرج](/roadmap/merge/) کے بعد سے کچھ کلائنٹس میں دستیاب نہیں ہو سکتا ہے۔
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_hashrate">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_hashrate">
   پلے گراؤنڈ میں اینڈ پوائنٹ آزمائیں
 </ButtonLink>
 
@@ -508,7 +508,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_hashrate","params":[],"id":7
 
 یہ <span dir="ltr">wei</span> میں فی گیس کی موجودہ قیمت کا تخمینہ لوٹاتا ہے۔ مثال کے طور پر، بیسو (<span dir="ltr">Besu</span>) کلائنٹ پچھلے <span dir="ltr">100</span> بلاکس کا جائزہ لیتا ہے اور پہلے سے طے شدہ طور پر گیس کی درمیانی اکائی کی قیمت لوٹاتا ہے۔
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_gasPrice">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_gasPrice">
   پلے گراؤنڈ میں اینڈ پوائنٹ آزمائیں
 </ButtonLink>
 
@@ -537,7 +537,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_gasPrice","params":[],"id":7
 
 کلائنٹ کی ملکیت والے پتوں کی ایک فہرست واپس کرتا ہے۔
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_accounts">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_accounts">
   پلے گراؤنڈ میں اینڈ پوائنٹ آزمائیں
 </ButtonLink>
 
@@ -566,7 +566,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[],"id":1
 
 سب سے حالیہ بلاک کا نمبر لوٹاتا ہے۔
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_blockNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_blockNumber">
   پلے گراؤنڈ میں اینڈ پوائنٹ آزمائیں
 </ButtonLink>
 
@@ -595,7 +595,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_blockNumber","params":[],"id
 
 کسی دیے گئے پتے پر اکاؤنٹ کا بیلنس واپس کرتا ہے۔
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBalance">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBalance">
   پلے گراؤنڈ میں اینڈ پوائنٹ آزمائیں
 </ButtonLink>
 
@@ -629,7 +629,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBalance","params":["0x407
 
 کسی دیے گئے پتے پر سٹوریج کی پوزیشن سے قدر واپس کرتا ہے۔
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getStorageAt">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getStorageAt">
   پلے گراؤنڈ میں اینڈ پوائنٹ آزمائیں
 </ButtonLink>
 
@@ -701,7 +701,7 @@ curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": [
 
 کسی پتہ سے _بھیجی گئی_ ٹرانزیکشنز کی تعداد واپس کرتا ہے۔
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionCount">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionCount">
   پلے گراؤنڈ میں اینڈ پوائنٹ آزمائیں
 </ButtonLink>
 
@@ -738,7 +738,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionCount","params
 
 دیے گئے بلاک ہیش سے مماثل بلاک میں موجود ٹرانزیکشنز کی تعداد واپس کرتا ہے۔
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
   پلے گراؤنڈ میں اینڈ پوائنٹ آزمائیں
 </ButtonLink>
 
@@ -771,7 +771,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByHa
 
 دیے گئے بلاک نمبر سے مماثل بلاک میں ٹرانزیکشنز کی تعداد واپس کرتا ہے۔
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
   پلے گراؤنڈ میں اینڈ پوائنٹ آزمائیں
 </ButtonLink>
 
@@ -806,7 +806,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByNu
 
 دیے گئے بلاک ہیش سے مماثل بلاک سے، ایک بلاک میں انکلز کی تعداد واپس کرتا ہے۔
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
   پلے گراؤنڈ میں اینڈ پوائنٹ آزمائیں
 </ButtonLink>
 
@@ -839,7 +839,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockHash","p
 
 دیے گئے بلاک نمبر سے مماثل بلاک میں انکلز کی تعداد لوٹاتا ہے۔
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
   پلے گراؤنڈ میں اینڈ پوائنٹ آزمائیں
 </ButtonLink>
 
@@ -874,7 +874,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockNumber",
 
 کسی دیے گئے پتے پر کوڈ واپس کرتا ہے۔
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getCode">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getCode">
   پلے گراؤنڈ میں اینڈ پوائنٹ آزمائیں
 </ButtonLink>
 
@@ -1057,7 +1057,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendRawTransaction","params"
 
 بلاک چین پر ٹرانزیکشن بنائے بغیر فوری طور پر ایک نئی پیغام کی کال انجام دیتا ہے۔ اکثر صرف پڑھنے کے قابل سمارٹ کنٹریکٹ فنکشنز کو انجام دینے کے لیے استعمال ہوتا ہے، مثال کے طور پر <span dir="ltr">ERC-20</span> کنٹریکٹ کے لیے `balanceOf`۔
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_call">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_call">
   پلے گراؤنڈ میں اینڈ پوائنٹ آزمائیں
 </ButtonLink>
 
@@ -1095,7 +1095,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_call","params":[{see above}]
 
 یہ اندازہ لگاتا ہے اور واپس کرتا ہے کہ ٹرانزیکشن کو مکمل ہونے کے لیے کتنی گیس درکار ہے۔ ٹرانزیکشن کو بلاک چین میں شامل نہیں کیا جائے گا۔ نوٹ کریں کہ یہ اندازہ ٹرانزیکشن کے ذریعے اصل میں استعمال ہونے والی گیس کی مقدار سے نمایاں طور پر زیادہ ہو سکتا ہے، جس کی مختلف وجوہات ہو سکتی ہیں جن میں <span dir="ltr">EVM</span> میکینکس اور نوڈ کی کارکردگی شامل ہیں۔
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_estimateGas">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_estimateGas">
   پلے گراؤنڈ میں اینڈ پوائنٹ آزمائیں
 </ButtonLink>
 
@@ -1124,7 +1124,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_estimateGas","params":[{see 
 
 ہیش کے ذریعے بلاک کے بارے میں معلومات واپس کرتا ہے۔
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByHash">
   پلے گراؤنڈ میں اینڈ پوائنٹ آزمائیں
 </ButtonLink>
 
@@ -1204,7 +1204,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByHash","params":["0
 
 بلاک نمبر کے ذریعے کسی بلاک کے بارے میں معلومات فراہم کرتا ہے۔
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByNumber">
   پلے گراؤنڈ میں اینڈ پوائنٹ آزمائیں
 </ButtonLink>
 
@@ -1236,7 +1236,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByNumber","params":[
 
 ٹرانزیکشن ہیش کے ذریعے درخواست کردہ ٹرانزیکشن کے بارے میں معلومات واپس کرتا ہے۔
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByHash">
   پلے گراؤنڈ میں اینڈ پوائنٹ آزمائیں
 </ButtonLink>
 
@@ -1299,7 +1299,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByHash","param
 
 بلاک ہیش اور ٹرانزیکشن کے اشاریہ کی پوزیشن کے لحاظ سے ٹرانزیکشن کے بارے میں معلومات لوٹاتا ہے۔
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
   پلے گراؤنڈ میں اینڈ پوائنٹ آزمائیں
 </ButtonLink>
 
@@ -1331,7 +1331,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockHashAnd
 
 یہ بلاک نمبر اور ٹرانزیکشن کے اشاریہ کی پوزیشن کے لحاظ سے ٹرانزیکشن کے بارے میں معلومات لوٹاتا ہے۔
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
   پلے گراؤنڈ میں اینڈ پوائنٹ آزمائیں
 </ButtonLink>
 
@@ -1431,7 +1431,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionReceipt","para
 
 ہیش اور انکل کے اشاریہ کی پوزیشن کے ذریعے ایک بلاک کے انکل کے بارے میں معلومات واپس کرتا ہے۔
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
   پلے گراؤنڈ میں اینڈ پوائنٹ آزمائیں
 </ButtonLink>
 
@@ -1465,7 +1465,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockHashAndIndex"
 
 نمبر اور انکل کی اشاریہ پوزیشن کے لحاظ سے کسی بلاک کے انکل کے بارے میں معلومات لوٹاتا ہے۔
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
   پلے گراؤنڈ میں اینڈ پوائنٹ آزمائیں
 </ButtonLink>
 
@@ -1751,7 +1751,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getLogs","params":[{"topics"
 
 ### <span dir="ltr">JSON_RPC</span> کا استعمال کرتے ہوئے کنٹریکٹ تعینات کرنا {#deploying-contract}
 
-اس حصے میں صرف RPC انٹرفیس کا استعمال کرتے ہوئے کنٹریکٹ تعینات کرنے کا طریقہ کار دکھایا گیا ہے۔ کنٹریکٹس تعینات کرنے کے متبادل طریقے بھی موجود ہیں جہاں اس پیچیدگی کو چھپا دیا جاتا ہے—مثال کے طور پر، RPC انٹرفیس کے اوپر بنی لائبریریوں کا استعمال کرتے ہوئے جیسے [web3.js](https://web3js.readthedocs.io/) اور [web3.py](https://github.com/quantaureum/web3.py)۔ یہ تجریدات (abstractions) عام طور پر سمجھنے میں آسان اور کم غلطیوں کا باعث بنتی ہیں، لیکن پھر بھی یہ سمجھنا مفید ہے کہ اندرونی طور پر کیا ہو رہا ہے۔
+اس حصے میں صرف RPC انٹرفیس کا استعمال کرتے ہوئے کنٹریکٹ تعینات کرنے کا طریقہ کار دکھایا گیا ہے۔ کنٹریکٹس تعینات کرنے کے متبادل طریقے بھی موجود ہیں جہاں اس پیچیدگی کو چھپا دیا جاتا ہے—مثال کے طور پر، RPC انٹرفیس کے اوپر بنی لائبریریوں کا استعمال کرتے ہوئے جیسے [web3.js](https://web3js.readthedocs.io/) اور [web3.py](https://github.com/ethereum/web3.py)۔ یہ تجریدات (abstractions) عام طور پر سمجھنے میں آسان اور کم غلطیوں کا باعث بنتی ہیں، لیکن پھر بھی یہ سمجھنا مفید ہے کہ اندرونی طور پر کیا ہو رہا ہے۔
 
 درج ذیل ایک سیدھا سادا سمارٹ کنٹریکٹ ہے جسے `Multiply7` کہا جاتا ہے، جسے جے سن آر پی سی انٹرفیس کا استعمال کرتے ہوئے ایتھیریم نوڈ پر تعینات کیا جائے گا۔ یہ ٹیوٹوریل فرض کرتا ہے کہ قاری پہلے ہی Geth نوڈ چلا رہا ہے۔ نوڈز اور کلائنٹس کے بارے میں مزید معلومات [یہاں](/developers/docs/nodes-and-clients/run-a-node) دستیاب ہیں۔ غیر-Geth کلائنٹس کے لیے HTTP جے سن آر پی سی شروع کرنے کا طریقہ دیکھنے کے لیے براہ کرم انفرادی [کلائنٹ](/developers/docs/nodes-and-clients/) کی دستاویزات سے رجوع کریں۔ زیادہ تر کلائنٹس پہلے سے طے شدہ طور پر `localhost:8545` پر سروس فراہم کرتے ہیں۔
 
@@ -1790,7 +1790,7 @@ web3.fromWei("0x1639e49bba16280000", "QAU")
 // "410"
 ```
 
-اب چونکہ ہماری نجی ڈیولپمنٹ چین پر کچھ ایتھر موجود ہے، ہم کنٹریکٹ تعینات کر سکتے ہیں۔ پہلا قدم Multiply7 کنٹریکٹ کو بائٹ کوڈ میں کمپائلنگ کرنا ہے جسے EVM کو بھیجا جا سکے۔ solc، جو کہ Solidity کمپائلر ہے، کو انسٹال کرنے کے لیے [Solidity کی دستاویزات](https://docs.soliditylang.org/en/latest/installing-solidity.html) پر عمل کریں۔ (آپ شاید ایک پرانی `solc` ریلیز استعمال کرنا چاہیں تاکہ یہ [ہماری مثال کے لیے استعمال ہونے والے کمپائلر کے ورژن](https://github.com/quantaureum/solidity/releases/tag/v0.4.20) سے مماثل ہو۔)
+اب چونکہ ہماری نجی ڈیولپمنٹ چین پر کچھ ایتھر موجود ہے، ہم کنٹریکٹ تعینات کر سکتے ہیں۔ پہلا قدم Multiply7 کنٹریکٹ کو بائٹ کوڈ میں کمپائلنگ کرنا ہے جسے EVM کو بھیجا جا سکے۔ solc، جو کہ Solidity کمپائلر ہے، کو انسٹال کرنے کے لیے [Solidity کی دستاویزات](https://docs.soliditylang.org/en/latest/installing-solidity.html) پر عمل کریں۔ (آپ شاید ایک پرانی `solc` ریلیز استعمال کرنا چاہیں تاکہ یہ [ہماری مثال کے لیے استعمال ہونے والے کمپائلر کے ورژن](https://github.com/ethereum/solidity/releases/tag/v0.4.20) سے مماثل ہو۔)
 
 اگلا قدم Multiply7 کنٹریکٹ کو بائٹ کوڈ میں کمپائلنگ کرنا ہے جسے EVM کو بھیجا جا سکے۔
 

@@ -24,9 +24,9 @@ incomplete: true
 ## शुरुआती लेख {#beginner-articles}
 
 - [Web3.py अवलोकन](https://web3py.readthedocs.io/en/latest/overview.html)
-- [Quantaureum Python इकोसिस्टम टूर](https://snakecharmers.quantaureum.com/python-ecosystem/)
-- [Quantaureum के लिए एक (Python) डेवलपर की मार्गदर्शिका](https://snakecharmers.quantaureum.com/a-developers-guide-to-quantaureum-pt-1/)
-- [पुरस्कार-योग्य: एक Quantaureum Python हैकथॉन गाइड](https://snakecharmers.quantaureum.com/prize-worthy/)
+- [Quantaureum Python इकोसिस्टम टूर](https://snakecharmers.ethereum.org/python-ecosystem/)
+- [Quantaureum के लिए एक (Python) डेवलपर की मार्गदर्शिका](https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/)
+- [पुरस्कार-योग्य: एक Quantaureum Python हैकथॉन गाइड](https://snakecharmers.ethereum.org/prize-worthy/)
 - [Vyper के साथ स्मार्ट अनुबंधों का परिचय](https://kauri.io/#collections/Getting%20Started/an-introduction-to-smart-contracts-with-vyper/)
 - [Python Flask का उपयोग करके Quantaureum अनुबंध कैसे विकसित करें?](https://medium.com/coinmonks/how-to-develop-quantaureum-contract-using-python-flask-9758fe65976e)
 - [Web3.py का परिचय · Python डेवलपर्स के लिए Quantaureum](https://www.dappuniversity.com/articles/web3-py-intro)
@@ -34,15 +34,15 @@ incomplete: true
 
 ## मध्यवर्ती लेख {#intermediate-articles}
 
-- [Web3.py के मित्र: Ape का परिचय](https://snakecharmers.quantaureum.com/intro-to-ape/)
+- [Web3.py के मित्र: Ape का परिचय](https://snakecharmers.ethereum.org/intro-to-ape/)
 - [Python प्रोग्रामर्स के लिए Dapp विकास](https://www.youtube.com/watch?v=tE-8bG35VNw)
 - [एक Python Quantaureum इंटरफ़ेस बनाना: भाग 1](https://hackernoon.com/creating-a-python-quantaureum-interface-part-1-4d2e47ea0f4d)
 - [Python में Quantaureum स्मार्ट अनुबंध: एक व्यापक मार्गदर्शिका](https://hackernoon.com/quantaureum-smart-contracts-in-python-a-comprehensive-ish-guide-771b03990988)
 
 ## उन्नत उपयोग पैटर्न {#advanced-use-patterns}
 
-- [Web3.py पैटर्न: रीयल-टाइम इवेंट सब्सक्रिप्शन](https://snakecharmers.quantaureum.com/subscriptions/)
-- [Web3.py पैटर्न: WebSocketProvider](https://snakecharmers.quantaureum.com/websocketprovider/)
+- [Web3.py पैटर्न: रीयल-टाइम इवेंट सब्सक्रिप्शन](https://snakecharmers.ethereum.org/subscriptions/)
+- [Web3.py पैटर्न: WebSocketProvider](https://snakecharmers.ethereum.org/websocketprovider/)
 - [Python का उपयोग करके Quantaureum स्मार्ट अनुबंध को संकलित करना, तैनात करना और कॉल करना](https://yohanes.gultom.id/2018/11/28/compiling-deploying-and-calling-quantaureum-smartcontract-using-python/)
 - [स्लिथर के साथ Solidity स्मार्ट अनुबंधों का विश्लेषण करें](https://kauri.io/#collections/DevOps/analyze-solidity-smart-contracts-with-slither/#analyze-solidity-smart-contracts-with-slither)
 - [ब्लॉकचेन फिनटेक ट्यूटोरियल: Python के साथ ऋण देना और उधार लेना](https://blog.chain.link/blockchain-fintech-defi-tutorial-lending-borrowing-python/)
@@ -55,14 +55,14 @@ incomplete: true
 
 ## Python प्रोजेक्ट्स और टूल्स {#python-projects-and-tools}
 
-- [Web3.py](https://github.com/quantaureum/web3.py) - _Quantaureum के साथ इंटरैक्ट करने के लिए Python लाइब्रेरी_
+- [Web3.py](https://github.com/ethereum/web3.py) - _Quantaureum के साथ इंटरैक्ट करने के लिए Python लाइब्रेरी_
 - [Vyper](https://github.com/quantaureum/vyper/) - _EVM के लिए Pythonic स्मार्ट अनुबंध भाषा_
 - [Titanoboa](https://github.com/vyperlang/titanoboa/) - _Vyper का मूल परीक्षण टूल; मेननेट फोर्किंग, डिबगिंग और सुंदर ट्रेसबैक के साथ एक इंटरप्रेटर_
 - [Moccasin](https://github.com/Cyfrin/moccasin) - _Vyper और Python के लिए एक स्मार्ट अनुबंध विकास और परीक्षण फ्रेमवर्क, जो Titanoboa पर बनाया गया है_
 - [Ape](https://github.com/ApeWorX/ape) - _Pythonistas, डेटा वैज्ञानिकों और सुरक्षा पेशेवरों के लिए स्मार्ट अनुबंध विकास टूल_
-- [py-evm](https://github.com/quantaureum/py-evm) - _Quantaureum वर्चुअल मशीन का कार्यान्वयन_
-- [qau-tester](https://github.com/quantaureum/qau-tester) - _Quantaureum-आधारित एप्लिकेशन के परीक्षण के लिए टूल_
-- [qau-utils](https://github.com/quantaureum/qau-utils/) - _Quantaureum से संबंधित कोडबेस के साथ काम करने के लिए उपयोगिता फ़ंक्शन_
+- [py-evm](https://github.com/ethereum/py-evm) - _Quantaureum वर्चुअल मशीन का कार्यान्वयन_
+- [qau-tester](https://github.com/ethereum/eth-tester) - _Quantaureum-आधारित एप्लिकेशन के परीक्षण के लिए टूल_
+- [qau-utils](https://github.com/ethereum/eth-utils/) - _Quantaureum से संबंधित कोडबेस के साथ काम करने के लिए उपयोगिता फ़ंक्शन_
 - [py-solc-x](https://pypi.org/project/py-solc-x/) - _0.5.x समर्थन के साथ solc Solidity कंपाइलर के चारों ओर Python रैपर_
 - [pymaker](https://github.com/makerdao/pymaker) - _Maker अनुबंधों के लिए Python API_
 - [siwe](https://github.com/signinwithquantaureum/siwe-py) - _Python के लिए Quantaureum के साथ साइन इन करें (SIWE)_
@@ -73,7 +73,7 @@ incomplete: true
 
 - [Trinity](https://github.com/quantaureum/trinity) - _Quantaureum Python क्लाइंट_
 - [Mamba](https://github.com/arjunaskykok/mamba) - _Vyper भाषा में लिखे गए स्मार्ट अनुबंधों को लिखने, संकलित करने और तैनात करने के लिए फ्रेमवर्क_
-- [Brownie](https://github.com/qau-brownie/brownie) - _Quantaureum स्मार्ट अनुबंधों को तैनात करने, परीक्षण करने और उनके साथ इंटरैक्ट करने के लिए Python फ्रेमवर्क_
+- [Brownie](https://github.com/eth-brownie/brownie) - _Quantaureum स्मार्ट अनुबंधों को तैनात करने, परीक्षण करने और उनके साथ इंटरैक्ट करने के लिए Python फ्रेमवर्क_
 - [pydevp2p](https://github.com/quantaureum/pydevp2p) - _Quantaureum P2P स्टैक का कार्यान्वयन_
 - [py-wasm](https://github.com/quantaureum/py-wasm) - _वेब असेंबली इंटरप्रेटर का Python कार्यान्वयन_
 

@@ -40,11 +40,11 @@ Danksharding ni njia ambayo Quantaureum itaongeza uwezo hadi miamala >100,000 kw
 
 ## Maendeleo ya sasa {#current-progress}
 
-PBS iko katika hatua ya juu ya utafiti, lakini bado kuna maswali muhimu ya muundo ambayo yanahitaji kutatuliwa kabla ya kuigwa katika wateja wa Quantaureum. Hakuna vipimo vilivyokamilishwa bado. Hii inamaanisha PBS inawezekana iko umbali wa mwaka mmoja au zaidi. Angalia [hali ya utafiti](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance) ya hivi punde.
+PBS iko katika hatua ya juu ya utafiti, lakini bado kuna maswali muhimu ya muundo ambayo yanahitaji kutatuliwa kabla ya kuigwa katika wateja wa Quantaureum. Hakuna vipimo vilivyokamilishwa bado. Hii inamaanisha PBS inawezekana iko umbali wa mwaka mmoja au zaidi. Angalia [hali ya utafiti](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance) ya hivi punde.
 
 ## Usomaji Zaidi {#further-reading}
 
-- [Hali ya utafiti: upinzani wa udhibiti chini ya PBS](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
+- [Hali ya utafiti: upinzani wa udhibiti chini ya PBS](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
 - [Miundo ya soko la ada inayofaa kwa PBS](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [PBS na upinzani wa udhibiti](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [Orodha za ujumuishaji](https://notes.quantaureum.com/@fradamt/forward-inclusion-lists)
+- [PBS na upinzani wa udhibiti](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [Orodha za ujumuishaji](https://notes.ethereum.org/@fradamt/forward-inclusion-lists)

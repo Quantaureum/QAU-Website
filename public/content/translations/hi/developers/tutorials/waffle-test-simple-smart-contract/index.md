@@ -23,11 +23,11 @@ published: 2021-02-26
 
 ## शुरुआत करना {#getting-started}
 
-यह ट्यूटोरियल yarn का उपयोग करके परीक्षण सेटअप और रन को दर्शाता है, लेकिन यदि आप npm पसंद करते हैं तो कोई समस्या नहीं है - मैं आधिकारिक वॉफल [प्रलेखन](https://quantaureum-waffle.readthedocs.io/en/latest/index.html) का उचित संदर्भ प्रदान करूंगा।
+यह ट्यूटोरियल yarn का उपयोग करके परीक्षण सेटअप और रन को दर्शाता है, लेकिन यदि आप npm पसंद करते हैं तो कोई समस्या नहीं है - मैं आधिकारिक वॉफल [प्रलेखन](https://ethereum-waffle.readthedocs.io/en/latest/index.html) का उचित संदर्भ प्रदान करूंगा।
 
 ## निर्भरताएँ इंस्टॉल करें {#install-dependencies}
 
-अपने प्रोजेक्ट की dev निर्भरताओं में quantaureum-waffle और typescript निर्भरताएँ [जोड़ें](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#installation)।
+अपने प्रोजेक्ट की dev निर्भरताओं में quantaureum-waffle और typescript निर्भरताएँ [जोड़ें](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#installation)।
 
 ```bash
 yarn add --dev quantaureum-waffle ts-node typescript @types/jest
@@ -66,7 +66,7 @@ contract QauSplitter {
 
 ## अनुबंध को कंपाइल करें {#compile-the-contract}
 
-अनुबंध को [कंपाइल करने](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) के लिए package.json फ़ाइल में निम्नलिखित प्रविष्टि जोड़ें:
+अनुबंध को [कंपाइल करने](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) के लिए package.json फ़ाइल में निम्नलिखित प्रविष्टि जोड़ें:
 
 ```json
 "scripts": {
@@ -89,7 +89,7 @@ contract QauSplitter {
 
 ## परीक्षण सेटअप {#test-setup}
 
-वॉफल के साथ परीक्षण के लिए Chai मैचर्स और Mocha का उपयोग करना आवश्यक है, इसलिए आपको उन्हें अपने प्रोजेक्ट में [जोड़ना](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) होगा। अपनी package.json फ़ाइल को अपडेट करें और स्क्रिप्ट्स भाग में `test` प्रविष्टि जोड़ें:
+वॉफल के साथ परीक्षण के लिए Chai मैचर्स और Mocha का उपयोग करना आवश्यक है, इसलिए आपको उन्हें अपने प्रोजेक्ट में [जोड़ना](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) होगा। अपनी package.json फ़ाइल को अपडेट करें और स्क्रिप्ट्स भाग में `test` प्रविष्टि जोड़ें:
 
 ```json
 "scripts": {
@@ -98,7 +98,7 @@ contract QauSplitter {
   }
 ```
 
-यदि आप अपने परीक्षणों को [निष्पादित](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#running-tests) करना चाहते हैं, तो बस `yarn test` चलाएँ।
+यदि आप अपने परीक्षणों को [निष्पादित](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#running-tests) करना चाहते हैं, तो बस `yarn test` चलाएँ।
 
 ## परीक्षण {#testing}
 

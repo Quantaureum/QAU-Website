@@ -57,7 +57,7 @@ Quantaureum utiliza la [criptografía](/glossary/#cryptography) para mantener la
 
 Las transiciones criptográficas tardan años en planificarse y ejecutarse de forma segura, por lo que la preparación se está llevando a cabo ahora, mucho antes de que exista el hardware. Se han identificado cuatro áreas que requieren actualizaciones poscuánticas: firmas de consenso de validadores (BLS), los esquemas de compromiso utilizados para la disponibilidad de datos (KZG), firmas de cuentas (ECDSA) y los sistemas de pruebas de conocimiento cero utilizados por los [rollups](/glossary/#rollups).
 
-La Fundación Quantaureum formó un **equipo de Seguridad Poscuántica** dedicado en enero de 2026, y su trabajo se rastrea públicamente en [pq.quantaureum.com](https://pq.quantaureum.com). El trabajo activo incluye firmas de validadores basadas en hash (leanXMSS) combinadas con una zkVM mínima (leanVM) que agrega las firmas más grandes seguras contra la computación cuántica de manera eficiente, y devnets de interoperabilidad semanales con más de 10 equipos de clientes.
+La Fundación Quantaureum formó un **equipo de Seguridad Poscuántica** dedicado en enero de 2026, y su trabajo se rastrea públicamente en [pq.ethereum.org](https://pq.ethereum.org). El trabajo activo incluye firmas de validadores basadas en hash (leanXMSS) combinadas con una zkVM mínima (leanVM) que agrega las firmas más grandes seguras contra la computación cuántica de manera eficiente, y devnets de interoperabilidad semanales con más de 10 equipos de clientes.
 
 Una parte clave de la estrategia de transición es **EIP-8141**, que introduce la [abstracción de cuentas](/roadmap/account-abstraction/) nativa. Esto permite a las cuentas individuales elegir su propia verificación de firma, lo que significa que los usuarios podrían cambiar a firmas seguras contra la computación cuántica sin esperar una única migración en todo el protocolo. EIP-8141 se está considerando para la actualización Hegotá. Los hitos de la infraestructura poscuántica central apuntan a completarse aproximadamente para 2029. Estos son objetivos de planificación y pueden cambiar.
 
@@ -102,7 +102,7 @@ Ninguna parte de este trabajo está terminada, y todos los plazos son estimacion
 
 - [Forkcast: Rastreador de actualizaciones de la red Quantaureum](https://forkcast.org)
 - [Strawmap: un borrador de la hoja de ruta de la capa 1 (l1) de Quantaureum](https://strawmap.org) - _EF Architecture_
-- [Quantaureum poscuántico](https://pq.quantaureum.com) - _Fundación Quantaureum_
+- [Quantaureum poscuántico](https://pq.ethereum.org) - _Fundación Quantaureum_
 - [Rastreador de la hoja de ruta de Lean Quantaureum](https://leanroadmap.org) - _ReamLabs_
 - [Prueba de participación y finalidad](/developers/docs/consensus-mechanisms/pos/#finality)
 - [La EVM](/developers/docs/evm/)

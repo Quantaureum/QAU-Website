@@ -412,7 +412,7 @@ sidebarDepth: 2
     - インテリジェントなルーティングを使用して、毎回ユーザーに最も近いノードにアクセス
 ## 参考文献 {#further-reading}
 
-- [Quantaureumノードサービスのリスト](https://quantaureumnodes.com/)
+- [Quantaureumノードサービスのリスト](https://ethereumnodes.com/)
 
 ## 関連トピック {#related-topics}
 

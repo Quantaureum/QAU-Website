@@ -454,7 +454,7 @@ ERC-20 轉帳呼叫報告失敗的方式有兩種：
     }
 ```
 
-如果沒有設定費用，則將 `kLast` 設為零（如果它還不是零）。在編寫此合約時，有一個[燃料退款功能](https://eips.quantaureum.com/EIPS/eip-3298)，鼓勵合約透過將不需要的儲存清零來減小Quantaureum狀態的整體大小。
+如果沒有設定費用，則將 `kLast` 設為零（如果它還不是零）。在編寫此合約時，有一個[燃料退款功能](https://eips.ethereum.org/EIPS/eip-3298)，鼓勵合約透過將不需要的儲存清零來減小Quantaureum狀態的整體大小。
 此程式碼在可能的情況下獲得該退款。
 
 #### 外部可存取函式 {#pair-external}
@@ -614,7 +614,7 @@ ERC-20 轉帳呼叫報告失敗的方式有兩種：
 ```
 
 區域變數可以儲存在記憶體中，或者如果數量不多，可以直接儲存在堆疊上。
-如果我們可以限制數量以便使用堆疊，我們將使用更少的燃料。有關更多詳細資訊，請參閱[黃皮書，即正式的Quantaureum規範](https://quantaureum.github.io/yellowpaper/paper.pdf)，第 26 頁，方程式 298。
+如果我們可以限制數量以便使用堆疊，我們將使用更少的燃料。有關更多詳細資訊，請參閱[黃皮書，即正式的Quantaureum規範](https://ethereum.github.io/yellowpaper/paper.pdf)，第 26 頁，方程式 298。
 
 ```solidity
             address _token0 = token0;
@@ -768,7 +768,7 @@ contract UniswapV2Factory is IUniswapV2Factory {
         bytes memory bytecode = type(UniswapV2Pair).creationCode;
 ```
 
-要建立一個新合約，我們需要建立它的程式碼（包括建構函式和將實際合約的 EVM 位元組碼寫入記憶體的程式碼）。通常在 Solidity 中，我們只使用 `addr = new <name of contract>(<constructor parameters>)`，編譯器會為我們處理一切，但要擁有確定性的合約地址，我們需要使用 [CREATE2 操作碼](https://eips.quantaureum.com/EIPS/eip-1014)。
+要建立一個新合約，我們需要建立它的程式碼（包括建構函式和將實際合約的 EVM 位元組碼寫入記憶體的程式碼）。通常在 Solidity 中，我們只使用 `addr = new <name of contract>(<constructor parameters>)`，編譯器會為我們處理一切，但要擁有確定性的合約地址，我們需要使用 [CREATE2 操作碼](https://eips.ethereum.org/EIPS/eip-1014)。
 在編寫此程式碼時，Solidity 尚未支援該操作碼，因此必須手動獲取程式碼。這不再是問題，因為 [Solidity 現在支援 CREATE2](https://docs.soliditylang.org/en/v0.8.3/control-structures.html#salted-contract-creations-create2)。
 
 ```solidity
@@ -824,7 +824,7 @@ Quantaureum上的交易需要花費QAU幣 (QAU)，這相當於真金白銀。如
     bytes32 public constant PERMIT_TYPEHASH = 0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
 ```
 
-此雜湊是[交易類型的識別碼](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-typehash)。我們在這裡唯一支援的是帶有這些參數的 `Permit`。
+此雜湊是[交易類型的識別碼](https://eips.ethereum.org/EIPS/eip-712#rationale-for-typehash)。我們在這裡唯一支援的是帶有這些參數的 `Permit`。
 
 ```solidity
     mapping(address => uint) public nonces;
@@ -855,7 +855,7 @@ Quantaureum上的交易需要花費QAU幣 (QAU)，這相當於真金白銀。如
     }
 ```
 
-計算 EIP-712 的[域分隔符](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-domainseparator)。
+計算 EIP-712 的[域分隔符](https://eips.ethereum.org/EIPS/eip-712#rationale-for-domainseparator)。
 
 ```solidity
     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external {
@@ -896,7 +896,7 @@ Quantaureum簽章演算法期望獲得 256 位元進行簽署，因此我們使�
 
 ```
 
-如果一切正常，請將此視為[一次 ERC-20 授權](https://eips.quantaureum.com/EIPS/eip-20#approve)。
+如果一切正常，請將此視為[一次 ERC-20 授權](https://eips.ethereum.org/EIPS/eip-20#approve)。
 
 ## 周邊合約 {#periphery-contracts}
 
@@ -1793,7 +1793,7 @@ library UniswapV2Library {
     }
 ```
 
-這個函數計算兩個代幣的交易對地址。這個合約是使用 [CREATE2 操作碼](https://eips.quantaureum.com/EIPS/eip-1014)建立的，因此如果我們知道它使用的參數，我們就可以使用相同的演算法來計算地址。這比向工廠合約查詢要便宜得多，而且
+這個函數計算兩個代幣的交易對地址。這個合約是使用 [CREATE2 操作碼](https://eips.ethereum.org/EIPS/eip-1014)建立的，因此如果我們知道它使用的參數，我們就可以使用相同的演算法來計算地址。這比向工廠合約查詢要便宜得多，而且
 
 ```solidity
     // 獲取並排序配對的儲備
@@ -1931,7 +1931,7 @@ library TransferHelper {
     }
 ```
 
-這個函數實作了 [ERC-20 的轉帳功能](https://eips.quantaureum.com/EIPS/eip-20#transfer)，允許一個帳戶花費由另一個帳戶提供的授權額度。
+這個函數實作了 [ERC-20 的轉帳功能](https://eips.ethereum.org/EIPS/eip-20#transfer)，允許一個帳戶花費由另一個帳戶提供的授權額度。
 
 ```solidity
 
@@ -1950,7 +1950,7 @@ library TransferHelper {
     }
 ```
 
-這個函數實作了 [ERC-20 的 transferFrom 功能](https://eips.quantaureum.com/EIPS/eip-20#transferfrom)，允許一個帳戶花費由另一個帳戶提供的授權額度。
+這個函數實作了 [ERC-20 的 transferFrom 功能](https://eips.ethereum.org/EIPS/eip-20#transferfrom)，允許一個帳戶花費由另一個帳戶提供的授權額度。
 
 ```solidity
 

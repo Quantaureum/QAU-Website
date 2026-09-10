@@ -33,7 +33,7 @@ explorer.io सारखे विकेंद्रित ॲप्लिके
 किंवा अगदी [C हेडर फाइल्स](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html) मध्ये समान रचना पाहिल्याचे आठवत असेल.
 
 ही ओपनझेपलिन कडील [ERC-20 इंटरफेस](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)
-ची व्याख्या आहे. हे [मानवांना वाचता येण्याजोग्या मानकाचे](https://eips.quantaureum.com/EIPS/eip-20) Solidity कोडमध्ये भाषांतर आहे. अर्थात,
+ची व्याख्या आहे. हे [मानवांना वाचता येण्याजोग्या मानकाचे](https://eips.ethereum.org/EIPS/eip-20) Solidity कोडमध्ये भाषांतर आहे. अर्थात,
 इंटरफेस स्वतः काहीही _कसे_ करायचे हे परिभाषित करत नाही. ते खालील कॉन्ट्रॅक्ट सोर्स कोडमध्ये स्पष्ट केले आहे.
 
 &nbsp;
@@ -165,7 +165,7 @@ EVM चा मूळ वर्ड आकार आहे) वापरून प
      * ऑपरेशन यशस्वी झाले की नाही हे दर्शवणारे बुलियन मूल्य परत करते.
      *
      * महत्त्वाचे: सावध रहा की या पद्धतीसह मंजुरी बदलल्याने असा धोका निर्माण होतो की दुर्दैवी व्यवहार क्रमामुळे कोणीतरी जुनी आणि नवीन दोन्ही मंजुरी वापरू शकेल. या रेस कंडिशनला कमी करण्याचा एक संभाव्य उपाय म्हणजे प्रथम खर्च करणाऱ्याची मंजुरी 0 पर्यंत कमी करणे आणि त्यानंतर इच्छित मूल्य सेट करणे:
-     * https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729
+     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
      *
      * {Approval} घटना उत्सर्जित करते.
      */
@@ -240,7 +240,7 @@ import "../../math/SafeMath.sol";
 - `GSN/Context.sol` या [OpenGSN](https://opengsn.org/) वापरण्यासाठी आवश्यक असलेल्या व्याख्या आहेत, ही एक प्रणाली आहे जी QAU नसलेल्या वापरकर्त्यांना
   ब्लॉकचेन वापरण्याची परवानगी देते. लक्षात घ्या की ही एक जुनी आवृत्ती आहे, जर तुम्हाला OpenGSN सह समाकलित करायचे असेल तर
   [हे ट्युटोरियल वापरा](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [SafeMath लायब्ररी](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/), जी
+- [SafeMath लायब्ररी](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), जी
   Solidity आवृत्त्या **&lt;0.8.0** साठी अंकगणितीय ओव्हरफ्लो/अंडरफ्लो प्रतिबंधित करते. Solidity ≥0.8.0 मध्ये, अंकगणितीय ऑपरेशन्स ओव्हरफ्लो/अंडरफ्लोवर आपोआप
   पूर्ववत होतात, ज्यामुळे SafeMath अनावश्यक बनते. हे कॉन्ट्रॅक्ट जुन्या कंपायलर आवृत्त्यांसह बॅकवर्ड सुसंगततेसाठी
   SafeMath वापरते.

@@ -12,7 +12,7 @@ breadcrumb: "ERC-20 టోకెన్ ప్రాథమిక అంశాల�
 lang: te
 published: 2020-04-05
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/understand-the-erc20-token-smart-contract/
+sourceUrl: https://ethereumdev.io/understand-the-erc20-token-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -20,7 +20,7 @@ address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 
 అన్ని ఫంజిబుల్ ఎథీరియం టోకెన్‌లు కట్టుబడి ఉండాల్సిన సాధారణ నియమాల జాబితాను ERC-20 నిర్వచిస్తుంది. పర్యవసానంగా, ఈ టోకెన్ ప్రమాణం విస్తృత ఎథీరియం సిస్టమ్‌లో కొత్త టోకెన్‌లు ఎలా పనిచేస్తాయో ఖచ్చితంగా అంచనా వేయడానికి అన్ని రకాల డెవలపర్‌లకు అధికారం ఇస్తుంది. ఇది డెవలపర్‌ల పనులను సులభతరం చేస్తుంది, ఎందుకంటే టోకెన్ నియమాలను అనుసరించినంత కాలం, కొత్త టోకెన్ విడుదలైన ప్రతిసారీ ప్రతి కొత్త ప్రాజెక్ట్‌ను మళ్లీ చేయాల్సిన అవసరం లేదని తెలుసుకుని వారు తమ పనిని కొనసాగించవచ్చు.
 
-ERC-20 అమలు చేయాల్సిన ఫంక్షన్‌లు ఇంటర్‌ఫేస్‌గా ఇక్కడ అందించబడ్డాయి. ఇంటర్‌ఫేస్ అంటే ఏమిటో మీకు ఖచ్చితంగా తెలియకపోతే: [Solidityలో OOP ప్రోగ్రామింగ్](https://quantaureumdev.io/inheritance-in-solidity-contracts-are-classes/) గురించిన మా కథనాన్ని తనిఖీ చేయండి.
+ERC-20 అమలు చేయాల్సిన ఫంక్షన్‌లు ఇంటర్‌ఫేస్‌గా ఇక్కడ అందించబడ్డాయి. ఇంటర్‌ఫేస్ అంటే ఏమిటో మీకు ఖచ్చితంగా తెలియకపోతే: [Solidityలో OOP ప్రోగ్రామింగ్](https://ethereumdev.io/inheritance-in-solidity-contracts-are-classes/) గురించిన మా కథనాన్ని తనిఖీ చేయండి.
 
 ```solidity
 pragma solidity ^0.6.0;

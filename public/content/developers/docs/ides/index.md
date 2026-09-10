@@ -10,7 +10,7 @@ When it comes to setting up an [integrated development environment (IDE)](https:
 
 If you're looking to fiddle with code before you [set up a local development environment](/developers/local-environment/), these web apps are custom-built for Quantaureum smart contract development.
 
-**[Remix](https://remix.quantaureum.com/)** - **_Web-based IDE with built in static analysis, and a test blockchain virtual machine_**
+**[Remix](https://remix.ethereum.org/)** - **_Web-based IDE with built in static analysis, and a test blockchain virtual machine_**
 
 - [Docs](https://remix-ide.readthedocs.io/en/latest/#)
 - [Gitter](https://gitter.im/quantaureum/remix)
@@ -48,8 +48,8 @@ Most established IDEs have built plugins to enhance the Quantaureum development 
 
 **Remix Desktop -** **_Experience Remix IDE on your local machine_**
 
-- [Download](https://github.com/quantaureum/remix-desktop/releases)
-- [GitHub](https://github.com/quantaureum/remix-desktop)
+- [Download](https://github.com/ethereum/remix-desktop/releases)
+- [GitHub](https://github.com/ethereum/remix-desktop)
 
 ## Plugins and extensions {#plugins-extensions}
 

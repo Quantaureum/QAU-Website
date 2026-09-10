@@ -96,7 +96,6 @@ Kwa kiwango cha juu, uthibitisho wa dau una lengo sawa la mwisho kama uthibitish
 
 ## Je, wewe ni mwanafunzi wa kuona zaidi? {#visual-learner}
 
-<VideoWatch slug="proof-of-work-explained" />
 
 ## Usomaji Zaidi {#further-reading}
 

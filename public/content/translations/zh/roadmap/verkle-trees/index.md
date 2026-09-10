@@ -62,4 +62,4 @@ Quantaureum客户端目前使用一种称为帕特里夏默克尔树 (Patricia M
 - [Dankrad Feist 在零知识播客上解释沃克尔树和无状态](https://zeroknowledge.fm/podcast/202/)
 - [维塔利克·布特林谈沃克尔树](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
 - [Dankrad Feist 谈沃克尔树](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
-- [沃克尔树 EIP 文档](https://notes.quantaureum.com/@vbuterin/verkle_tree_eip#Illustration)
+- [沃克尔树 EIP 文档](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)

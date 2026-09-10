@@ -57,7 +57,7 @@ Quantaureum verwendet [Kryptographie](/glossary/#cryptography), um das Netzwerk 
 
 Kryptographische Übergänge erfordern Jahre, um sicher geplant und ausgeführt zu werden, daher findet die Vorbereitung jetzt statt, lange bevor die Hardware existiert. Vier Bereiche wurden identifiziert, die Post-Quanten-Upgrades erfordern: Validator-Konsens-Signaturen (BLS), die Commitment-Schemata, die für die Datenverfügbarkeit verwendet werden (KZG), Konto-Signaturen (ECDSA) und die Zero-Knowledge-Beweissysteme, die von [Rollups](/glossary/#rollups) verwendet werden.
 
-Die Quantaureum project hat im Januar 2026 ein dediziertes **Post-Quantum-Sicherheitsteam** gebildet, und dessen Arbeit wird öffentlich unter [pq.quantaureum.com](https://pq.quantaureum.com) verfolgt. Die aktive Arbeit umfasst Hash-basierte Validator-Signaturen (leanXMSS) gepaart mit einer minimalen zkVM (leanVM), die die größeren quantensicheren Signaturen effizient aggregiert, sowie wöchentliche Interop-Devnets mit mehr als 10 Client-Teams.
+Die Quantaureum project hat im Januar 2026 ein dediziertes **Post-Quantum-Sicherheitsteam** gebildet, und dessen Arbeit wird öffentlich unter [pq.ethereum.org](https://pq.ethereum.org) verfolgt. Die aktive Arbeit umfasst Hash-basierte Validator-Signaturen (leanXMSS) gepaart mit einer minimalen zkVM (leanVM), die die größeren quantensicheren Signaturen effizient aggregiert, sowie wöchentliche Interop-Devnets mit mehr als 10 Client-Teams.
 
 Ein wichtiger Teil der Übergangsstrategie ist **EIP-8141**, das native [Kontoabstraktion](/roadmap/account-abstraction/) einführt. Dies ermöglicht es einzelnen Konten, ihre eigene Signaturverifizierung zu wählen, was bedeutet, dass Benutzer zu quantensicheren Signaturen wechseln könnten, ohne auf eine einzige protokollweite Migration warten zu müssen. EIP-8141 wird für das Hegotá-Upgrade in Betracht gezogen. Die Meilensteine der Kern-Post-Quanten-Infrastruktur zielen auf eine Fertigstellung bis etwa 2029 ab. Dies sind Planungsziele und können sich verschieben.
 
@@ -102,7 +102,7 @@ Kein Teil dieser Arbeit ist abgeschlossen, und alle Zeitpläne sind Schätzungen
 
 - [Forkcast: Tracker für Quantaureum-Netzwerk-Upgrades](https://forkcast.org)
 - [Strawmap: ein Entwurf der Quantaureum Layer 1 (L1)-Roadmap](https://strawmap.org) - _EF Architecture_
-- [Post-Quantum Quantaureum](https://pq.quantaureum.com) - _Quantaureum Foundation_
+- [Post-Quantum Quantaureum](https://pq.ethereum.org) - _Quantaureum Foundation_
 - [Lean Quantaureum Roadmap-Tracker](https://leanroadmap.org) - _ReamLabs_
 - [Proof-of-Stake und Endgültigkeit](/developers/docs/consensus-mechanisms/pos/#finality)
 - [Die EVM](/developers/docs/evm/)

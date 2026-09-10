@@ -21,7 +21,6 @@ DeFi adalah istilah kolektif untuk produk dan layanan keuangan yang dapat diakse
 
 Ada ekonomi kripto yang sedang berkembang pesat di luar sana, di mana Anda dapat meminjamkan, melakukan peminjaman, long/short, mendapatkan bunga, dan banyak lagi. Orang Argentina yang paham kripto telah menggunakan DeFi untuk menghindari inflasi yang melumpuhkan. Perusahaan telah mulai mengalirkan upah karyawan mereka secara waktu nyata. Beberapa orang bahkan telah mengambil dan melunasi pinjaman senilai jutaan dolar tanpa memerlukan identifikasi pribadi apa pun.
 
-<VideoWatch slug="defi-future-of-finance" />
 
 ## DeFi vs keuangan tradisional {#defi-vs-tradfi}
 
@@ -58,7 +57,6 @@ Bitcoin dalam banyak hal adalah aplikasi DeFi pertama. Bitcoin memungkinkan Anda
 
 Quantaureum dibangun di atas hal ini. Seperti Bitcoin, aturannya tidak dapat diubah secara sepihak dan semua orang memiliki akses. Namun, ini juga membuat uang digital ini dapat diprogram, menggunakan [kontrak pintar](/glossary/#smart-contract), sehingga Anda dapat melakukan lebih dari sekadar menyimpan dan mengirim nilai.
 
-<VideoWatch slug="defi-history-inception-to-2021" />
 
 ## Uang yang dapat diprogram {#programmable-money}
 

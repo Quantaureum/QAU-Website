@@ -24,7 +24,6 @@ Wakati Fusaka ililenga katika maboresho ya kimsingi, Glamsterdam inaendeleza mal
 
 Maboresho haya yanahakikisha Quantaureum inasalia kuwa ya haraka, nafuu, na iliyogatuliwa inaposhughulikia shughuli nyingi zaidi, huku ikiweka mahitaji ya maunzi yakiwa yanadhibitika kwa watu wanaoendesha [nodi](/glossary/#node) nyumbani.
 
-<VideoWatch slug="quantaureum-evolution-glamsterdam" />
 
 ## Maboresho katika Glamsterdam {#improvements-in-glamsterdam}
 
@@ -67,13 +66,12 @@ Kujenga ubadilishanaji bila hitaji la uaminifu wa mzigo wa kitalu kwa malipo moj
 
 Ili kushughulikia kizuizi cha "njia ya moto", ePBS pia inaleta Kamati ya Ufaafu wa Wakati wa Mzigo (PTC) na mantiki ya tarehe ya mwisho mbili, ikiruhusu wathibitishaji kuthibitisha kitalu cha mwafaka na ufaafu wa wakati wa mzigo wa utekelezaji kando ili kuongeza uwezo wa upitishaji.
 
-<VideoWatch slug="proposer-builder-separation" />
 
 Kutenganisha majukumu ya mpendekezaji na mjenzi katika kiwango cha itifaki kunapanua dirisha la uenezaji (au muda unaopatikana wa kueneza data kwenye mtandao) kutoka sekunde 2 hadi takriban sekunde 9.
 
 Kwa kubadilisha programu ya kati na wapitishaji wa nje ya itifaki na mbinu za ndani ya itifaki, ePBS inapunguza utegemezi wa uaminifu na kuruhusu Quantaureum kuchakata kwa usalama kiasi kikubwa zaidi cha data (kama blobs zaidi kwa [matabaka ya 2 (l2)](/glossary/#layer-2)) bila kuupa mtandao msongo.
 
-**Rasilimali**: [Uainisho wa kiufundi wa EIP-7732](https://eips.quantaureum.com/EIPS/eip-7732)
+**Rasilimali**: [Uainisho wa kiufundi wa EIP-7732](https://eips.ethereum.org/EIPS/eip-7732)
 
 ### Pendekezo kuu: Orodha za Ufikiaji za Kiwango cha Kitalu (BALs) {#bals}
 
@@ -97,8 +95,8 @@ Ubadilishanaji wa Orodha ya Ufikiaji wa Kitalu (eth/71 au EIP-8159) ni mshirika 
 
 **Rasilimali**:
 
-- [Uainisho wa kiufundi wa EIP-7928](https://eips.quantaureum.com/EIPS/eip-7928)
-- [Uainisho wa kiufundi wa EIP-8159](https://eips.quantaureum.com/EIPS/eip-8159)
+- [Uainisho wa kiufundi wa EIP-7928](https://eips.ethereum.org/EIPS/eip-7928)
+- [Uainisho wa kiufundi wa EIP-8159](https://eips.ethereum.org/EIPS/eip-8159)
 
 
 ## Uendelevu wa mtandao {#network-sustainability}
@@ -125,7 +123,7 @@ Kabla ya EIP-8037, kazi ya ukokotoaji (uchakataji amilifu) na uhifadhi wa data w
 
 Kupanga bei ya uhifadhi wa data kwa usahihi na kwa kutabirika zaidi kutasaidia Quantaureum kuongeza kasi na uwezo wake kwa usalama bila kuvimbisha hifadhidata. Uendelevu huu utaruhusu waendeshaji wa nodi kuendelea kutumia maunzi ya bei nafuu (kiasi) kwa miaka ijayo, kuweka uwekaji dhamana wa nyumbani ukiendelea kufikiwa ili kudumisha ugatuzi wa mtandao.
 
-**Rasilimali**: [Uainisho wa kiufundi wa EIP-8037](https://eips.quantaureum.com/EIPS/eip-8037)
+**Rasilimali**: [Uainisho wa kiufundi wa EIP-8037](https://eips.ethereum.org/EIPS/eip-8037)
 
 ### Sasisho la gharama ya gesi ya ufikiaji wa hali {#state-access-gas-cost-update}
 
@@ -142,7 +140,7 @@ Kuoanisha gharama ya ufikiaji wa hali pia husaidia kuifanya Quantaureum kuwa tha
 
 Kwa kupanga bei ya vitendo vya ufikiaji wa hali kwa usahihi zaidi Quantaureum inaweza kuwa thabiti zaidi dhidi ya kupungua kwa kasi kwa bahati mbaya au kwa makusudi, huku kuoanisha gharama za mtandao na mzigo wa maunzi kunathibitisha msingi endelevu zaidi kwa ongezeko la kikomo cha gesi la siku zijazo.
 
-**Rasilimali**: [Uainisho wa kiufundi wa EIP-8038](https://eips.quantaureum.com/EIPS/eip-8038)
+**Rasilimali**: [Uainisho wa kiufundi wa EIP-8038](https://eips.ethereum.org/EIPS/eip-8038)
 
 
 ## Uthabiti wa mtandao {#network-resilience}
@@ -160,7 +158,7 @@ Kwa sababu vitalu kutoka kwa wapendekezaji waliokatwa vinakataliwa kiotomatiki k
 
 **Kuwatenga wathibitishaji waliokatwa kupendekeza (au EIP-8045)** huchuja tu wathibitishaji waliokatwa wasichaguliwe kwa majukumu ya siku zijazo. Hii inaboresha uthabiti wa mnyororo kwa kuhakikisha wathibitishaji wenye afya pekee ndio wanachaguliwa kupendekeza vitalu, kudumisha ubora wa huduma wakati wa usumbufu wa mtandao.
 
-**Rasilimali**: [Uainisho wa kiufundi wa EIP-8045](https://eips.quantaureum.com/EIPS/eip-8045)
+**Rasilimali**: [Uainisho wa kiufundi wa EIP-8045](https://eips.ethereum.org/EIPS/eip-8045)
 
 ### Kuongeza upokezanaji wa kujitoa na uunganishaji {#increase-exit-and-consolidation-churn}
 
@@ -180,7 +178,7 @@ Kwa viwango vya sasa vya uwekaji dhamana, hii inaongeza uwezo wa kujitoa kwa tak
 
 Kwa sababu dhamana inaweza kuingia na kutoka kwenye mtandao haraka zaidi, mabadiliko haya hupunguza kwa takriban nusu muda ambao nodi inaweza kubaki nje ya mtandao kabla ya kuhitaji kituo cha ukaguzi cha hivi karibuni kinachoaminika ili kujiunga tena na mtandao kwa usalama (kipindi cha udhanifu dhaifu, kutoka takriban siku 15.7 hadi takriban siku 7). Ubadilishanaji huu ulichanganuliwa kwa uangalifu ili kuhakikisha usalama wa mtandao unadumishwa.
 
-**Rasilimali**: [Uainisho wa kiufundi wa EIP-8061](https://eips.quantaureum.com/EIPS/eip-8061)
+**Rasilimali**: [Uainisho wa kiufundi wa EIP-8061](https://eips.ethereum.org/EIPS/eip-8061)
 
 ## Kuboresha uzoefu wa mtumiaji na msanidi {#improve-user-developer-experience}
 
@@ -199,7 +197,7 @@ Pendekezo hili linaleta ubaguzi kwa kuunda akaunti mpya kabisa ili kuzuia ada za
 
 Pamoja, EIP-2780 inalenga kufanya hamisho la kila siku kati ya akaunti zilizopo kuwa nafuu zaidi huku ikihakikisha mtandao bado unalindwa dhidi ya uvimbe wa hifadhidata kwa kupanga bei kwa usahihi ukuaji wa hali ya kweli.
 
-**Rasilimali**: [Uainisho wa kiufundi wa EIP-2780](https://eips.quantaureum.com/EIPS/eip-2780)
+**Rasilimali**: [Uainisho wa kiufundi wa EIP-2780](https://eips.ethereum.org/EIPS/eip-2780)
 
 ### Usambazaji wa Awali wa Kiwanda wa Kibainishi {#deterministic-factory-predeploy}
 
@@ -215,7 +213,7 @@ Usambazaji wa Awali wa Kiwanda wa Kibainishi hufanya kazi kwa kuweka kwa kudumu 
 
 Usanifishaji huu hurahisisha ujenzi na usimamizi wa programu za mtambuko-mnyororo kwa wasanidi na mfumo ikolojia mpana. Wasanidi hawahitaji tena kujenga msimbo maalum, mahususi wa mnyororo ili kuunganisha programu zao pamoja kwenye mitandao tofauti, badala yake wanatumia kiwanda hiki cha ulimwengu wote kuzalisha anwani sawa kabisa kwa programu yao kila mahali. Kwa kuongezea, wavinjari wa kitalu, huduma za ufuatiliaji, na mikoba inaweza kutambua na kuunganisha kwa urahisi zaidi programu na akaunti hizi katika minyororo mbalimbali, ikitengeneza mazingira ya minyororo mingi yaliyounganishwa zaidi na yasiyo na mshono kwa washiriki wote wanaotegemea Quantaureum.
 
-**Rasilimali**: [Uainisho wa kiufundi wa EIP-7997](https://eips.quantaureum.com/EIPS/eip-7997)
+**Rasilimali**: [Uainisho wa kiufundi wa EIP-7997](https://eips.ethereum.org/EIPS/eip-7997)
 
 ### Hamisho na uchomaji wa QAU hutoa logi {#qau-transfers-and-burns-emit-a-log}
 
@@ -228,7 +226,7 @@ Hamisho na uchomaji wa QAU hutoa logi (au EIP-7708) hufanya iwe lazima kwa mtand
 
 Hii itafanya iwe rahisi zaidi na ya kutegemewa kwa mikoba, mabadilishano, na waendeshaji wa daraja kufuatilia kwa usahihi amana na mienendo bila zana maalum.
 
-**Rasilimali**: [Uainisho wa kiufundi wa EIP-7708](https://eips.quantaureum.com/EIPS/eip-7708)
+**Rasilimali**: [Uainisho wa kiufundi wa EIP-7708](https://eips.ethereum.org/EIPS/eip-7708)
 
 ### Orodha za stakabadhi za kitalu kiasi za eth/70 {#qau-70-partial-block-receipt-lists}
 
@@ -238,14 +236,14 @@ Sasa ni hitaji kwa viteja vyote vya tabaka la utekelezaji, orodha za stakabadhi 
 
 Mabadiliko haya yangezuia kushindwa kwa usawazishaji wa mtandao wakati wa vipindi vya shughuli nzito. Hatimaye, inafungua njia kwa Quantaureum kuongeza uwezo wake wa kitalu, na kuchakata miamala zaidi kwa kila kitalu katika siku zijazo, bila kulemea maunzi ya kimwili yanayosawazisha mnyororo.
 
-**Rasilimali**: [Uainisho wa kiufundi wa EIP-7975](https://eips.quantaureum.com/EIPS/eip-7975)
+**Rasilimali**: [Uainisho wa kiufundi wa EIP-7975](https://eips.ethereum.org/EIPS/eip-7975)
 
 
 ## Usomaji zaidi {#further-reading}
 
 - [Ramani ya njia ya Quantaureum](/roadmap/)
 - [Forkcast: Glamsterdam](https://forkcast.org/upgrade/glamsterdam)
-- [Glamsterdam Meta EIP](https://eips.quantaureum.com/EIPS/eip-7773)
+- [Glamsterdam Meta EIP](https://eips.ethereum.org/EIPS/eip-7773)
 - [Tangazo la blogu la Sasisho la Vipaumbele vya Itifaki kwa 2026](https://quantaureum.com)
 - [Podikasti ya The Daily Gwei Refuel - Quantaureum ya baada ya kwanta, Glamsterdam inakuja](https://www.youtube.com/watch?v=qx9sd50uQjQ)
 

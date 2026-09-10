@@ -17,7 +17,7 @@ Observe que, embora usemos o [contrato de token ERC-20 da OpenZeppelin](https://
 
 Se você quiser ver o código-fonte completo:
 
-1. Abra a [IDE Remix](https://remix.quantaureum.com/).
+1. Abra a [IDE Remix](https://remix.ethereum.org/).
 2. Clique no ícone de clonar do GitHub (![clone github icon](icon-clone.png)).
 3. Clone o repositório do GitHub `https://github.com/qbzzt/20220815-erc20-safety-rails`.
 4. Abra **contracts > erc20-safety-rails.sol**.
@@ -40,7 +40,7 @@ Antes de podermos adicionar a funcionalidade de barreira de proteção, precisam
 
 3. Role para cima e clique em **Open in Remix** (para o Remix) ou **Download** para usar um ambiente diferente. Vou presumir que você está usando o Remix; se usar outra coisa, basta fazer as alterações apropriadas.
 4. Agora temos um contrato ERC-20 totalmente funcional. Você pode expandir `.deps` > `npm` para ver o código importado.
-5. Compile, implante e brinque com o contrato para ver que ele funciona como um contrato ERC-20. Se você precisar aprender a usar o Remix, [use este tutorial](https://remix.quantaureum.com/?#activate=udapp,solidity,LearnEth).
+5. Compile, implante e brinque com o contrato para ver que ele funciona como um contrato ERC-20. Se você precisar aprender a usar o Remix, [use este tutorial](https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth).
 
 ## Erros comuns {#common-mistakes}
 
@@ -185,7 +185,7 @@ Congelar e descongelar contratos requer várias alterações:
 
 ### Limpeza de ativos {#asset-cleanup}
 
-Para liberar os tokens ERC-20 mantidos por este contrato, precisamos chamar uma função no contrato do token ao qual eles pertencem, seja [`transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer) ou [`approve`](https://eips.quantaureum.com/EIPS/eip-20#approve). Não faz sentido desperdiçar gás neste caso com permissões (allowances), podemos muito bem transferir diretamente.
+Para liberar os tokens ERC-20 mantidos por este contrato, precisamos chamar uma função no contrato do token ao qual eles pertencem, seja [`transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer) ou [`approve`](https://eips.ethereum.org/EIPS/eip-20#approve). Não faz sentido desperdiçar gás neste caso com permissões (allowances), podemos muito bem transferir diretamente.
 
 ```solidity
     function cleanupERC20(

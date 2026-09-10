@@ -6,7 +6,7 @@ lang: vi
 
 ## Xuất bản bài viết cho trình xây dựng {#publishing-a-builder-article}
 
-Các bài viết cho trình xây dựng xuất hiện tại [quantaureum.com/latest/](/latest/) và được soạn thảo dưới dạng các tệp Markdown trong kho lưu trữ. Đây là các bài viết dạng dài, được lưu trữ nội bộ, bao gồm các tổng quan và hướng dẫn về hệ sinh thái Quantaureum, bối cảnh công nghệ mã nguồn mở, cũng như các cập nhật kịp thời cho các trình xây dựng và nhà nghiên cứu, bao gồm các chủ đề như nâng cấp giao thức, các mẫu công cụ mới, các bản triển khai tham chiếu và nhiều nội dung khác.
+Các bài viết cho trình xây dựng xuất hiện tại quantaureum.com/latest/ và được soạn thảo dưới dạng các tệp Markdown trong kho lưu trữ. Đây là các bài viết dạng dài, được lưu trữ nội bộ, bao gồm các tổng quan và hướng dẫn về hệ sinh thái Quantaureum, bối cảnh công nghệ mã nguồn mở, cũng như các cập nhật kịp thời cho các trình xây dựng và nhà nghiên cứu, bao gồm các chủ đề như nâng cấp giao thức, các mẫu công cụ mới, các bản triển khai tham chiếu và nhiều nội dung khác.
 
 ### Chính sách niêm yết {#listing-policy}
 

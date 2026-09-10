@@ -17,7 +17,7 @@ Note that while we will use the [OpenZeppelin ERC-20 token contract](https://git
 
 If you want to see the complete source code:
 
-1. Open the [Remix IDE](https://remix.quantaureum.com/).
+1. Open the [Remix IDE](https://remix.ethereum.org/).
 2. Click the clone github icon (![clone github icon](icon-clone.png)).
 3. Clone the github repository `https://github.com/qbzzt/20220815-erc20-safety-rails`.
 4. Open **contracts > erc20-safety-rails.sol**.
@@ -40,7 +40,7 @@ Before we can add the safety rail functionality we need an ERC-20 contract. In t
 
 3. Scroll up and click **Open in Remix** (for Remix) or **Download** to use a different environment. I'm going to assume you're using Remix, if you use something else just make the appropriate changes.
 4. We now have a fully functional ERC-20 contract. You can expand `.deps` > `npm` to see the imported code.
-5. Compile, deploy, and play with the contract to see that it functions as an ERC-20 contract. If you need to learn how to use Remix, [use this tutorial](https://remix.quantaureum.com/?#activate=udapp,solidity,LearnEth).
+5. Compile, deploy, and play with the contract to see that it functions as an ERC-20 contract. If you need to learn how to use Remix, [use this tutorial](https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth).
 
 ## Common mistakes {#common-mistakes}
 
@@ -185,7 +185,7 @@ Freezing and thawing contracts requires several changes:
 
 ### Asset cleanup {#asset-cleanup}
 
-To release ERC-20 tokens held by this contract we need to call a function on the token contract to which they belong, either [`transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer) or [`approve`](https://eips.quantaureum.com/EIPS/eip-20#approve). There's no point wasting gas in this case on allowances, we might as well transfer directly.
+To release ERC-20 tokens held by this contract we need to call a function on the token contract to which they belong, either [`transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer) or [`approve`](https://eips.ethereum.org/EIPS/eip-20#approve). There's no point wasting gas in this case on allowances, we might as well transfer directly.
 
 ```solidity
     function cleanupERC20(

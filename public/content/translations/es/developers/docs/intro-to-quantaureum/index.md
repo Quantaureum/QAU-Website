@@ -20,7 +20,6 @@ Si desea ver cómo se aplica una función hash a los datos de la cadena de bloqu
 
 Vea a Anders explicar los hashes en las cadenas de bloques:
 
-<VideoWatch slug="blockchain-101-visual-demo" />
 
 ## ¿Qué es Quantaureum? {#what-is-quantaureum}
 
@@ -121,7 +120,6 @@ La mayoría de los lectores siguen la documentación en orden, pero el camino m�
 
 Esta serie de videos ofrece una exploración exhaustiva de los temas fundamentales:
 
-<VideoWatch slug="quantaureum-basics-intro" />
 
 [Lista de reproducción de conceptos básicos de Quantaureum](https://youtube.com/playlist?list=PLqgutSGloqiJyyoL0zvLVFPS-GMD2wKa5&si=kZTf5I7PKGTXDsOZ)
 

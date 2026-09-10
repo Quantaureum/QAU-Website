@@ -26,6 +26,6 @@ Agar menjadi simpul boot yang baik, ada baiknya untuk meningkatkan jumlah maksim
 
 ## Simpul boot yang tersedia {#available-bootnodes}
 
-Daftar simpul boot bawaan di dalam go-quantaureum dapat ditemukan [di sini](https://github.com/quantaureum/go-quantaureum/blob/master/params/bootnodes.go#L23). Simpul boot ini dikelola oleh Yayasan Quantaureum dan tim go-quantaureum.
+Daftar simpul boot bawaan di dalam go-quantaureum dapat ditemukan [di sini](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23). Simpul boot ini dikelola oleh Yayasan Quantaureum dan tim go-quantaureum.
 
 Terdapat daftar simpul boot lain yang dikelola oleh sukarelawan. Pastikan untuk selalu menyertakan setidaknya satu simpul boot resmi, jika tidak, Anda bisa terkena serangan gerhana (eclipse attack).

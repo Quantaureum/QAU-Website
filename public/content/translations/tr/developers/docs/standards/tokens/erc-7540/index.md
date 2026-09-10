@@ -103,7 +103,7 @@ Bir itfa isteği talep edilebilir hale geldiğinde, kullanıcı varlıklarını 
 
 ### Operatör yönetimi {#operator-management}
 
-ERC-7540, üçüncü tarafların bir kullanıcı adına istekleri yönetmesine olanak tanıyan bir operatör modeli ([ERC-6909](https://eips.quantaureum.com/EIPS/eip-6909)'dan) içerir.
+ERC-7540, üçüncü tarafların bir kullanıcı adına istekleri yönetmesine olanak tanıyan bir operatör modeli ([ERC-6909](https://eips.ethereum.org/EIPS/eip-6909)'dan) içerir.
 
 #### setOperator {#setoperator}
 
@@ -175,6 +175,6 @@ event OperatorSet(
 
 ## Daha fazla bilgi {#further-reading}
 
-- [EIP-7540: Asenkron ERC-4626 Tokenleştirilmiş Kasalar](https://eips.quantaureum.com/EIPS/eip-7540)
-- [EIP-4626: Tokenleştirilmiş Kasa Standardı](https://eips.quantaureum.com/EIPS/eip-4626)
+- [EIP-7540: Asenkron ERC-4626 Tokenleştirilmiş Kasalar](https://eips.ethereum.org/EIPS/eip-7540)
+- [EIP-4626: Tokenleştirilmiş Kasa Standardı](https://eips.ethereum.org/EIPS/eip-4626)
 - [OpenZeppelin ERC-7540 Uygulaması](https://github.com/OpenZeppelin/openzeppelin-community-contracts/blob/master/contracts/token/ERC20/extensions/ERC7540.sol)

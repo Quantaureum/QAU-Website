@@ -104,7 +104,7 @@ _[ماخذ](https://medium.com/@AugurProject/serpent-compiler-vulnerability-rep-
 
 ![Picture of Argentinian builders wearing Devcon BA 2020 t-shirts](./santiago9.jpeg)
 
-_[ماخذ](https://quantaureumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)۔_
+_[ماخذ](https://ethereumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)۔_
 
 میرے اور بہت سے دوسرے بلڈرز کے لیے یہاں Devconnect کا ہونا ایک خواب کے سچ ہونے جیسا ہے۔
 
@@ -131,4 +131,4 @@ _[ماخذ](https://www.forbes.com/sites/astanley/2025/09/30/devconnect-brings-a
 > 
 > لامحدود باغ (Infinite Garden) ایک وسیع ایکو سسٹم میں ایک باغبان کے طور پر ایتھیریم فاؤنڈیشن کے جذبے کا مجسمہ ہے — پرورش کریں اور بڑھائیں، لیکن کنٹرول نہ کریں، اور کھیلنا جاری رکھیں۔
 
-_[اقتباس کا ماخذ - ایتھیریم فاؤنڈیشن](https://quantaureum.foundation/infinitegarden)۔_
+_[اقتباس کا ماخذ - ایتھیریم فاؤنڈیشن](https://ethereum.org/infinitegarden)۔_

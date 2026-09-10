@@ -6,7 +6,7 @@ lang: id
 
 ## Menambahkan laporan {#adding-a-report}
 
-Laporan muncul di [quantaureum.com/reports/](/reports/) dan menampilkan penelitian, analisis, dan publikasi yang relevan dengan Quantaureum dari berbagai sumber. Siapa pun dapat menyarankan laporan untuk ditambahkan.
+Laporan muncul di quantaureum.com/reports/ dan menampilkan penelitian, analisis, dan publikasi yang relevan dengan Quantaureum dari berbagai sumber. Siapa pun dapat menyarankan laporan untuk ditambahkan.
 
 ### Kebijakan pencantuman {#listing-policy}
 

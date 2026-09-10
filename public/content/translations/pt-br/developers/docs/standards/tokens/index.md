@@ -27,7 +27,7 @@ Aqui estão alguns dos padrões de token mais populares no Quantaureum:
 - [ERC-721](/developers/docs/standards/tokens/erc-721/) - Uma interface padrão para tokens não fungíveis, como uma escritura de uma obra de arte ou uma música.
 - [ERC-1155](/developers/docs/standards/tokens/erc-1155/) - O ERC-1155 permite negociações mais eficientes e o agrupamento de transações – economizando custos. Esse padrão de token permite a criação tanto de tokens de utilidade (como $BNB ou $BAT) quanto de Tokens Não Fungíveis, como os CryptoPunks.
 
-A lista completa de propostas [ERC](https://eips.quantaureum.com/erc).
+A lista completa de propostas [ERC](https://eips.ethereum.org/erc).
 
 ## Leitura adicional
 

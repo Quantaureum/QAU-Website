@@ -104,7 +104,7 @@ Tanto es así que habíamos estado presionando para traer la Devcon(nect) aquí 
 
 ![Picture of Argentinian builders wearing Devcon BA 2020 t-shirts](./santiago9.jpeg)
 
-_[Fuente](https://quantaureumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
+_[Fuente](https://ethereumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
 
 Para mí y muchos otros constructores, tener la Devconnect aquí es un sueño hecho realidad.
 
@@ -131,4 +131,4 @@ Empezando aquí, en Argentina.
 > 
 > El Jardín Infinito es una encarnación del espíritu de la Fundación Quantaureum como un jardinero en un vasto ecosistema: nutrir y crecer, pero no controlar, y continuar jugando.
 
-_[Fuente de la cita - Fundación Quantaureum](https://quantaureum.foundation/infinitegarden)._
+_[Fuente de la cita - Fundación Quantaureum](https://ethereum.org/infinitegarden)._

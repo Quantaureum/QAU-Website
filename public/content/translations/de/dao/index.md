@@ -45,7 +45,6 @@ Damit dies verständlicher wird, sind hier einige Beispiele, wie man eine DAO nu
 - **Kollektiver Besitz** – man könnte physische oder digitale Vermögenswerte erwerben und die Mitglieder können darüber abstimmen, wie diese genutzt werden sollen.
 - **Unternehmen und Zuschüsse** – man könnte einen Risikokapitalfonds gründen, der Investitionskapital bündelt und darüber abstimmt, welche Unternehmen unterstützt werden sollen. Zurückgezahltes Geld könnte später unter den DAO-Mitgliedern neu verteilt werden.
 
-<VideoWatch slug="dao-build-next-great-city" />
 
 ## Wie funktionieren DAOs? {#how-daos-work}
 

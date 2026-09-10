@@ -251,13 +251,13 @@ else:
   value = TxType | encode(tx)
 ```
 
-Bu konuda daha fazla bilgi [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718) belgelerinde bulunabilir.
+Bu konuda daha fazla bilgi [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718) belgelerinde bulunabilir.
 
 ### Makbuzlar Trie'si {#receipts-trie}
 
 Her bloğun kendi Makbuzlar trie'si vardır. Buradaki bir `path` şöyledir: `rlp(transactionIndex)`. `transactionIndex`, dahil edildiği blok içindeki endeksidir. Makbuzlar trie'si asla güncellenmez. İşlemler trie'sine benzer şekilde, mevcut ve eski makbuzlar vardır. Makbuzlar trie'sinde belirli bir makbuzu sorgulamak için, işlemin bloğundaki endeksi, makbuz yükü ve işlem türü gereklidir. Döndürülen makbuz, `TransactionType` ve `ReceiptPayload`'nin birleştirilmesi olarak tanımlanan `Receipt` türünde olabilir veya `rlp([status, cumulativeGasUsed, logsBloom, logs])` olarak tanımlanan `LegacyReceipt` türünde olabilir.
 
-Bu konuda daha fazla bilgi [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718) belgelerinde bulunabilir.
+Bu konuda daha fazla bilgi [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718) belgelerinde bulunabilir.
 
 ## Daha Fazla Okuma {#further-reading}
 

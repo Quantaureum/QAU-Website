@@ -138,9 +138,9 @@ function auctionEnd() external {
 
 Solidity 스마트 컨트랙트를 위한 단위 테스트 프레임워크는 다양한 언어(주로 JavaScript, Python 및 Rust)로 제공됩니다. 다양한 테스트 프레임워크로 단위 테스트를 실행하는 방법에 대한 정보는 아래 가이드 중 일부를 참조하세요.
 
-- **[Brownie로 단위 테스트 실행하기](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Brownie로 단위 테스트 실행하기](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Foundry로 단위 테스트 실행하기](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Waffle로 단위 테스트 실행하기](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Waffle로 단위 테스트 실행하기](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Remix로 단위 테스트 실행하기](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Ape로 단위 테스트 실행하기](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Hardhat으로 단위 테스트 실행하기](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -190,7 +190,7 @@ Solidity 스마트 컨트랙트를 위한 단위 테스트 프레임워크는 �
 
 - **[슬리더를 사용한 스마트 컨트랙트 정적 분석](https://github.com/crytic/slither)**
 - **[Wake를 사용한 스마트 컨트랙트 정적 분석](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[Brownie를 사용한 속성 기반 테스트](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Brownie를 사용한 속성 기반 테스트](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Foundry를 사용한 컨트랙트 퍼징](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[에키드나를 사용한 컨트랙트 퍼징](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Wake를 사용한 컨트랙트 퍼징](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -251,13 +251,13 @@ Solidity 스마트 컨트랙트를 위한 단위 테스트 프레임워크는 �
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Solidity로 작성된 스마트 컨트랙트를 위한 코드 커버리지 도구입니다._
 
-- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - _고급 스마트 컨트랙트 개발 및 테스트를 위한 프레임워크입니다(Ethers.js 기반)._
+- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _고급 스마트 컨트랙트 개발 및 테스트를 위한 프레임워크입니다(Ethers.js 기반)._
 
-- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - _Solidity 스마트 컨트랙트를 테스트하기 위한 도구입니다. 컨트랙트의 테스트 케이스를 작성하고 실행하는 데 사용되는 Remix IDE "Solidity Unit Testing" 플러그인 아래에서 작동합니다._
+- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Solidity 스마트 컨트랙트를 테스트하기 위한 도구입니다. 컨트랙트의 테스트 케이스를 작성하고 실행하는 데 사용되는 Remix IDE "Solidity Unit Testing" 플러그인 아래에서 작동합니다._
 
 - **[오픈제플린 테스트 헬퍼(OpenZeppelin Test Helpers)](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Quantaureum 스마트 컨트랙트 테스트를 위한 단언 라이브러리입니다. 컨트랙트가 예상대로 작동하는지 확인하세요!_
 
-- **[Brownie 단위 테스트 프레임워크](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie는 최소한의 코드로 작은 테스트를 작성할 수 있고, 대규모 프로젝트에 맞게 잘 확장되며, 확장성이 뛰어난 기능이 풍부한 테스트 프레임워크인 Pytest를 활용합니다._
+- **[Brownie 단위 테스트 프레임워크](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie는 최소한의 코드로 작은 테스트를 작성할 수 있고, 대규모 프로젝트에 맞게 잘 확장되며, 확장성이 뛰어난 기능이 풍부한 테스트 프레임워크인 Pytest를 활용합니다._
 
 - **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry는 간단한 단위 테스트, 가스 최적화 확인 및 컨트랙트 퍼징을 실행할 수 있는 빠르고 유연한 Quantaureum 테스트 프레임워크인 Forge를 제공합니다._
 

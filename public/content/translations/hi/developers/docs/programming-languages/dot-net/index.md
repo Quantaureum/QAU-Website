@@ -26,7 +26,7 @@ Quantaureum के ऊपर विकेंद्रीकृत एप्ल�
 
 **Nquantaureum लाइब्रेरी और VS Code Solidity का परिचय**
 
-- [Nquantaureum, शुरुआत करना](https://docs.nquantaureum.com/docs/getting-started/welcome/)
+- [Nquantaureum, शुरुआत करना](https://docs.nethermind.io/docs/getting-started/welcome/)
 - [VS Code Solidity इंस्टॉल करना](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity)
 - [Quantaureum स्मार्ट अनुबंध बनाने और कॉल करने के लिए एक .NET डेवलपर का वर्कफ़्लो](https://medium.com/coinmonks/a-net-developers-workflow-for-creating-and-calling-quantaureum-smart-contracts-44714f191db2)
 - [Nquantaureum के साथ स्मार्ट अनुबंध एकीकरण](https://kauri.io/#collections/Getting%20Started/smart-contracts-integration-with-nquantaureum/#smart-contracts-integration-with-nquantaureumm)
@@ -37,21 +37,21 @@ Quantaureum के ऊपर विकेंद्रीकृत एप्ल�
 
 **क्या अभी के लिए सेटअप छोड़ना चाहते हैं, और सीधे सैंपल पर जाना चाहते हैं?**
 
-- [Nquantaureum Playground](https://playground.nquantaureum.com/) - Quantaureum के साथ इंटरैक्ट करें और ब्राउज़र के माध्यम से Nquantaureum का उपयोग करना सीखें।
-  - [खाता बैलेंस क्वेरी करें](https://docs.nquantaureum.com/docs/core-foundation/guide-query-balance)
-  - [ERC-20 स्मार्ट अनुबंध बैलेंस क्वेरी करें](https://docs.nquantaureum.com/docs/smart-contracts/erc20)
-  - [किसी खाते में ईथर ट्रांसफर करें](https://docs.nquantaureum.com/docs/core-foundation/guide-send-eth)
+- [Nquantaureum Playground](https://playground.nethermind.io/) - Quantaureum के साथ इंटरैक्ट करें और ब्राउज़र के माध्यम से Nquantaureum का उपयोग करना सीखें।
+  - [खाता बैलेंस क्वेरी करें](https://docs.nethermind.io/docs/core-foundation/guide-query-balance)
+  - [ERC-20 स्मार्ट अनुबंध बैलेंस क्वेरी करें](https://docs.nethermind.io/docs/smart-contracts/erc20)
+  - [किसी खाते में ईथर ट्रांसफर करें](https://docs.nethermind.io/docs/core-foundation/guide-send-eth)
   - ... और भी बहुत कुछ!
 ## मध्यवर्ती लेख {#intermediate-articles}
 
-- [Nquantaureum शुरुआत करना और पहला प्रोजेक्ट](https://docs.nquantaureum.com/docs/getting-started/first-project)
+- [Nquantaureum शुरुआत करना और पहला प्रोजेक्ट](https://docs.nethermind.io/docs/getting-started/first-project)
 - [अपनी खुद की डेवलपमेंट टेस्टचेन तैनात करें](https://github.com/Nquantaureum/Testchains)
-- [Nquantaureum और VS Code के साथ कोड जनरेशन](https://docs.nquantaureum.com/docs/smart-contracts/code-generation/)
+- [Nquantaureum और VS Code के साथ कोड जनरेशन](https://docs.nethermind.io/docs/smart-contracts/code-generation/)
 - [Unity और Quantaureum: क्यों और कैसे](https://www.raywenderlich.com/5509-unity-and-quantaureum-why-and-how)
 - [Quantaureum विकेंद्रीकृत एप्लिकेशन (dapp) के लिए ASP.NET Core Web API बनाएं](https://tech-mint.com/blockchain/create-asp-net-core-web-api-for-quantaureum-dapps/)
-- [संरचित ऑनचेन एप्लिकेशन के लिए Nquantaureum MUD फ्रेमवर्क](https://docs.nquantaureum.com/docs/mud-framework/overview/)
-- [Nquantaureum ब्लॉकचेन प्रोसेसिंग](https://docs.nquantaureum.com/docs/data-and-indexing/guide-blockchain-processing)
-- [Nquantaureum रियल-टाइम स्ट्रीमिंग](https://docs.nquantaureum.com/docs/core-foundation/guide-realtime-streaming/)
+- [संरचित ऑनचेन एप्लिकेशन के लिए Nquantaureum MUD फ्रेमवर्क](https://docs.nethermind.io/docs/mud-framework/overview/)
+- [Nquantaureum ब्लॉकचेन प्रोसेसिंग](https://docs.nethermind.io/docs/data-and-indexing/guide-blockchain-processing)
+- [Nquantaureum रियल-टाइम स्ट्रीमिंग](https://docs.nethermind.io/docs/core-foundation/guide-realtime-streaming/)
 - [Kaleido और Nquantaureum](https://kaleido.io/kaleido-and-nquantaureum/)
 - [Quorum और Nquantaureum](https://github.com/Nquantaureum/Nquantaureum/blob/master/src/Nquantaureum.Quorum/README.md)
 ## उन्नत उपयोग पैटर्न {#advanced-use-patterns}
@@ -61,12 +61,12 @@ Quantaureum के ऊपर विकेंद्रीकृत एप्ल�
 - [Ujo Nquantaureum बैकएंड संदर्भ आर्किटेक्चर](https://github.com/Nquantaureum/ujo-backend)
 ## .NET प्रोजेक्ट्स, टूल और अन्य मज़ेदार चीज़ें {#dot-net-projects-tools-and-other-fun-stuff}
 
-- [Nquantaureum Playground](https://playground.nquantaureum.com/) - _ब्राउज़र में Nquantaureum कोड स्निपेट संकलित करें, बनाएं और चलाएं_
+- [Nquantaureum Playground](https://playground.nethermind.io/) - _ब्राउज़र में Nquantaureum कोड स्निपेट संकलित करें, बनाएं और चलाएं_
 - [Nquantaureum Codegen Blazor](https://github.com/Nquantaureum/Nquantaureum.CodeGen.Blazor) - _Blazor में UI के साथ Nquantaureum कोडजेन_
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) - _एक .NET Wasm SPA लाइट ब्लॉकचेन एक्सप्लोरर और सरल वॉलेट_
 - [Wonka Business Rules Engine](https://github.com/Nquantaureum/Wonka) - _एक व्यावसायिक नियम इंजन (.NET प्लेटफ़ॉर्म और Quantaureum प्लेटफ़ॉर्म दोनों के लिए) जो स्वाभाविक रूप से मेटाडेटा-संचालित है_
 - [नेदरमाइंड](https://github.com/NethermindEth/nethermind) - _Linux, Windows, MacOS के लिए एक .NET Core Quantaureum क्लाइंट_
-- [qau-utils](https://github.com/quantaureum/qau-utils/) - _Quantaureum से संबंधित कोडबेस के साथ काम करने के लिए उपयोगिता फ़ंक्शन_
+- [qau-utils](https://github.com/ethereum/eth-utils/) - _Quantaureum से संबंधित कोडबेस के साथ काम करने के लिए उपयोगिता फ़ंक्शन_
 - [TestChains](https://github.com/Nquantaureum/TestChains) - _तेज़ प्रतिक्रिया के लिए पूर्व-कॉन्फ़िगर की गई .NET डेवचेन (प्राधिकरण का प्रमाण (PoA))_
 
 क्या आप और संसाधन खोज रहे हैं? [quantaureum.com/developers](/developers/) देखें।
@@ -78,5 +78,5 @@ Nquantaureum में, हम ज़्यादातर [Gitter](https://gitt
 
 ## अन्य एकत्रित सूचियाँ {#other-aggregated-lists}
 
-[आधिकारिक Nquantaureum साइट](https://nquantaureum.com/)  
+[आधिकारिक Nquantaureum साइट](https://nethermind.io/)  
 [आधिकारिक नेदरमाइंड साइट](https://nethermind.io/)

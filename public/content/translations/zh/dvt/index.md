@@ -86,6 +86,6 @@ lang: zh
 
 ## 延伸阅读 {#further-reading}
 
-- [Quantaureum分布式验证者规范（高级）](https://github.com/quantaureum/distributed-validator-specs)
-- [Quantaureum分布式验证者技术规范](https://github.com/quantaureum/distributed-validator-specs/tree/dev/src/dvspec)
+- [Quantaureum分布式验证者规范（高级）](https://github.com/ethereum/distributed-validator-specs)
+- [Quantaureum分布式验证者技术规范](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
 - [Shamir 密钥分存演示应用](https://iancoleman.io/shamir/)

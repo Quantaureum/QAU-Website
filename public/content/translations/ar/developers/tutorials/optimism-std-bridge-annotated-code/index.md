@@ -46,7 +46,7 @@ lang: ar
    - كان في الأصل من الجسر على طبقة 1 (L1)
 6. يتحقق جسر طبقة 2 (L2) مما إذا كان عقد الرمز المميز <span dir="ltr">ERC-20</span> على طبقة 2 (L2) هو العقد الصحيح:
    - يُبلغ عقد طبقة 2 (L2) أن نظيره في طبقة 1 (L1) هو نفسه الذي جاءت منه الرموز المميزة على طبقة 1 (L1)
-   - يُبلغ عقد طبقة 2 (L2) أنه يدعم الواجهة الصحيحة ([باستخدام <span dir="ltr">ERC-165</span>](https://eips.quantaureum.com/EIPS/eip-165)).
+   - يُبلغ عقد طبقة 2 (L2) أنه يدعم الواجهة الصحيحة ([باستخدام <span dir="ltr">ERC-165</span>](https://eips.ethereum.org/EIPS/eip-165)).
 7. إذا كان عقد طبقة 2 (L2) هو العقد الصحيح، فاستدعه لسك العدد المناسب من الرموز المميزة إلى العنوان المناسب. إذا لم يكن كذلك، فابدأ عملية سحب للسماح للمستخدم بالمطالبة بالرموز المميزة على طبقة 1 (L1).
 
 ### تدفق السحب {#withdrawal-flow}
@@ -70,7 +70,7 @@ lang: ar
 
 ### IL1ERC20Bridge {#il1erc20bridge}
 
-[تم تعريف هذه الواجهة هنا](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol).
+[تم تعريف هذه الواجهة هنا](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol).
 تتضمن دوال وتعريفات مطلوبة لنقل رموز <span dir="ltr">ERC-20</span> المميزة عبر الجسر.
 
 ```solidity
@@ -236,7 +236,7 @@ interface IL1ERC20Bridge {
 
 ### IL1StandardBridge {#il1standardbridge}
 
-[تم تعريف هذه الواجهة هنا](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol).
+[تم تعريف هذه الواجهة هنا](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol).
 يحتوي هذا الملف على تعريفات الأحداث والدوال الخاصة بـ <span dir="ltr">QAU</span>.
 هذه التعريفات مشابهة جدًا لتلك المحددة في `IL1ERC20Bridge` أعلاه لـ <span dir="ltr">ERC-20</span>.
 
@@ -321,7 +321,7 @@ interface IL1StandardBridge is IL1ERC20Bridge {
 
 ### CrossDomainEnabled {#crossdomainenabled}
 
-يتم توريث [هذا العقد](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) بواسطة كلا الجسرين ([طبقة 1 (L1)](#the-l1-bridge-contract) و[طبقة 2 (L2)](#l2-bridge-code)) لإرسال رسائل إلى الطبقة الأخرى.
+يتم توريث [هذا العقد](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) بواسطة كلا الجسرين ([طبقة 1 (L1)](#the-l1-bridge-contract) و[طبقة 2 (L2)](#l2-bridge-code)) لإرسال رسائل إلى الطبقة الأخرى.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -331,7 +331,7 @@ pragma solidity >0.5.0 <0.9.0;
 import { ICrossDomainMessenger } from "./ICrossDomainMessenger.sol";
 ```
 
-تخبر [هذه الواجهة](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) العقد بكيفية إرسال رسائل إلى الطبقة الأخرى، باستخدام مرسل الرسائل عبر النطاقات.
+تخبر [هذه الواجهة](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) العقد بكيفية إرسال رسائل إلى الطبقة الأخرى، باستخدام مرسل الرسائل عبر النطاقات.
 مرسل الرسائل عبر النطاقات هذا هو نظام آخر بالكامل، ويستحق مقالًا خاصًا به، والذي آمل أن أكتبه في المستقبل.
 
 ```solidity
@@ -398,7 +398,7 @@ contract CrossDomainEnabled {
         );
 ```
 
-الطريقة التي يوفر بها مرسل الرسائل عبر النطاقات العنوان الذي أرسل رسالة مع الطبقة الأخرى هي [الدالة `.xDomainMessageSender()`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128).
+الطريقة التي يوفر بها مرسل الرسائل عبر النطاقات العنوان الذي أرسل رسالة مع الطبقة الأخرى هي [الدالة `.xDomainMessageSender()`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128).
 طالما تم استدعاؤها في المعاملة التي بدأتها الرسالة، فيمكنها توفير هذه المعلومات.
 
 نحتاج إلى التأكد من أن الرسالة التي تلقيناها جاءت من الجسر الآخر.
@@ -463,7 +463,7 @@ contract CrossDomainEnabled {
 
 ### عقد جسر طبقة 1 (L1) {#the-l1-bridge-contract}
 
-[الكود المصدري لهذا العقد موجود هنا](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol).
+[الكود المصدري لهذا العقد موجود هنا](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol).
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -485,7 +485,7 @@ import { IL1ERC20Bridge } from "./IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "../../L2/messaging/IL2ERC20Bridge.sol";
 ```
 
-تتيح لنا [هذه الواجهة](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) إنشاء رسائل للتحكم في الجسر القياسي على طبقة 2 (L2).
+تتيح لنا [هذه الواجهة](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) إنشاء رسائل للتحكم في الجسر القياسي على طبقة 2 (L2).
 
 ```solidity
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -505,7 +505,7 @@ import { CrossDomainEnabled } from "../../libraries/bridge/CrossDomainEnabled.so
 import { Lib_PredeployAddresses } from "../../libraries/constants/Lib_PredeployAddresses.sol";
 ```
 
-يحتوي [`Lib_PredeployAddresses`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) على عناوين عقود طبقة 2 (L2) التي لها نفس العنوان دائمًا. يتضمن هذا الجسر القياسي على طبقة 2 (L2).
+يحتوي [`Lib_PredeployAddresses`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) على عناوين عقود طبقة 2 (L2) التي لها نفس العنوان دائمًا. يتضمن هذا الجسر القياسي على طبقة 2 (L2).
 
 ```solidity
 import { Address } from "@openzeppelin/contracts/utils/Address.sol";
@@ -519,7 +519,7 @@ import { Address } from "@openzeppelin/contracts/utils/Address.sol";
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-يدعم [معيار <span dir="ltr">ERC-20</span>](https://eips.quantaureum.com/EIPS/eip-20) طريقتين للعقد للإبلاغ عن الفشل:
+يدعم [معيار <span dir="ltr">ERC-20</span>](https://eips.ethereum.org/EIPS/eip-20) طريقتين للعقد للإبلاغ عن الفشل:
 
 1. التراجع
 2. إرجاع `false`
@@ -713,7 +713,7 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
         );
 ```
 
-الرسالة هنا هي استدعاء [الدالة `finalizeDeposit`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) بهذه المعلمات:
+الرسالة هنا هي استدعاء [الدالة `finalizeDeposit`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) بهذه المعلمات:
 
 | المعلمة | القيمة | المعنى |
 | --------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -945,7 +945,7 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
 
 ### IL2StandardERC20 {#il2standarderc20}
 
-يجب أن يوفر كل رمز <span dir="ltr">ERC-20</span> مميز على طبقة 2 (L2) يستخدم الجسر القياسي [هذه الواجهة](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol)، والتي تحتوي على الدوال والأحداث التي يحتاجها الجسر القياسي.
+يجب أن يوفر كل رمز <span dir="ltr">ERC-20</span> مميز على طبقة 2 (L2) يستخدم الجسر القياسي [هذه الواجهة](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol)، والتي تحتوي على الدوال والأحداث التي يحتاجها الجسر القياسي.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -955,14 +955,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 لا تتضمن [واجهة <span dir="ltr">ERC-20</span> القياسية](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) الدالتين `mint` و`burn`.
-هذه الطرق غير مطلوبة بواسطة [معيار <span dir="ltr">ERC-20</span>](https://eips.quantaureum.com/EIPS/eip-20)، والذي يترك آليات إنشاء وتدمير الرموز المميزة غير محددة.
+هذه الطرق غير مطلوبة بواسطة [معيار <span dir="ltr">ERC-20</span>](https://eips.ethereum.org/EIPS/eip-20)، والذي يترك آليات إنشاء وتدمير الرموز المميزة غير محددة.
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 تُستخدم [واجهة <span dir="ltr">ERC-165</span>](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol) لتحديد الدوال التي يوفرها العقد.
-[يمكنك قراءة المعيار هنا](https://eips.quantaureum.com/EIPS/eip-165).
+[يمكنك قراءة المعيار هنا](https://eips.ethereum.org/EIPS/eip-165).
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -989,7 +989,7 @@ interface IL2StandardERC20 is IERC20, IERC165 {
 
 ### L2StandardERC20 {#l2standarderc20}
 
-[هذا هو تنفيذنا لواجهة `IL2StandardERC20`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol).
+[هذا هو تنفيذنا لواجهة `IL2StandardERC20`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol).
 ما لم تكن بحاجة إلى نوع من المنطق المخصص، يجب عليك استخدام هذا التنفيذ.
 
 ```solidity
@@ -1051,7 +1051,7 @@ contract L2StandardERC20 is IL2StandardERC20, ERC20 {
     }
 ```
 
-هذه هي الطريقة التي يعمل بها [<span dir="ltr">ERC-165</span>](https://eips.quantaureum.com/EIPS/eip-165).
+هذه هي الطريقة التي يعمل بها [<span dir="ltr">ERC-165</span>](https://eips.ethereum.org/EIPS/eip-165).
 كل واجهة عبارة عن عدد من الدوال المدعومة، ويتم تحديدها على أنها [أو الحصرية (XOR)](https://en.wikipedia.org/wiki/Exclusive_or) لـ [محددات دوال <span dir="ltr">ABI</span>](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector) لتلك الدوال.
 
 يستخدم جسر طبقة 2 (L2) <span dir="ltr">ERC-165</span> كفحص سلامة للتأكد من أن عقد <span dir="ltr">ERC-20</span> الذي يرسل إليه الأصول هو `IL2StandardERC20`.
@@ -1083,7 +1083,7 @@ contract L2StandardERC20 is IL2StandardERC20, ERC20 {
 ## كود جسر طبقة 2 (L2) {#l2-bridge-code}
 
 هذا هو الكود الذي يشغل الجسر على أوبتيميزم.
-[المصدر لهذا العقد موجود هنا](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol).
+[المصدر لهذا العقد موجود هنا](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol).
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -1095,7 +1095,7 @@ import { IL1ERC20Bridge } from "../../L1/messaging/IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "./IL2ERC20Bridge.sol";
 ```
 
-واجهة [IL2ERC20Bridge](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) مشابهة جدًا لـ [ما يعادلها في طبقة 1 (L1)](#il1erc20bridge) التي رأيناها أعلاه.
+واجهة [IL2ERC20Bridge](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) مشابهة جدًا لـ [ما يعادلها في طبقة 1 (L1)](#il1erc20bridge) التي رأيناها أعلاه.
 هناك اختلافان مهمان:
 
 1. على طبقة 1 (L1) تبدأ الإيداعات وتتمم عمليات السحب.

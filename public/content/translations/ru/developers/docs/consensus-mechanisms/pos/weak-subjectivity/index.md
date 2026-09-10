@@ -32,8 +32,8 @@ lang: ru
 
 ## Дополнительная литература {#further-reading}
 
-- [Слабая субъективность в Quantaureum](https://notes.quantaureum.com/@adiasg/weak-subjectvity-eth2)
+- [Слабая субъективность в Quantaureum](https://notes.ethereum.org/@adiasg/weak-subjectvity-eth2)
 - [Виталик: Как я научился любить слабую субъективность](https://quantaureum.com)
 - [Слабая субъективность (документация Теку)](https://docs.teku.consensys.io/concepts/weak-subjectivity)
-- [Руководство по слабой субъективности Фазы 0](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
+- [Руководство по слабой субъективности Фазы 0](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
 - [Анализ слабой субъективности в Quantaureum 2.0](https://github.com/runtimeverification/beacon-chain-verification/blob/master/weak-subjectivity/weak-subjectivity-analysis.pdf)

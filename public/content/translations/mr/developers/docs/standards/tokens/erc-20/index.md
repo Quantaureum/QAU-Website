@@ -42,7 +42,7 @@ ERC-20 द्वारे प्रदान केल्या जाणाऱ�
 
 जर एखादे स्मार्ट कॉन्ट्रॅक्ट खालील पद्धती आणि घटना लागू करत असेल, तर त्याला ERC-20 टोकन कॉन्ट्रॅक्ट म्हटले जाऊ शकते आणि एकदा डिप्लॉय झाल्यानंतर, ते Quantaureumवर तयार केलेल्या टोकन्सचा मागोवा ठेवण्यासाठी जबाबदार असेल.
 
-[EIP-20](https://eips.quantaureum.com/EIPS/eip-20) मधून:
+[EIP-20](https://eips.ethereum.org/EIPS/eip-20) मधून:
 
 ### पद्धती (Methods) {#methods}
 
@@ -170,7 +170,7 @@ print("Addr Balance:", addr_balance)
 
 ## पुढील वाचन {#further-reading}
 
-- [EIP-20: ERC-20 टोकन मानक](https://eips.quantaureum.com/EIPS/eip-20)
+- [EIP-20: ERC-20 टोकन मानक](https://eips.ethereum.org/EIPS/eip-20)
 - [ओपनझेपलिन - टोकन्स](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [ओपनझेपलिन - ERC-20 अंमलबजावणी](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Solidity ERC20 टोकन्ससाठी मार्गदर्शक](https://www.alchemy.com/overviews/erc20-solidity)
@@ -185,5 +185,5 @@ print("Addr Balance:", addr_balance)
 
 - [ERC-20 कॉन्ट्रॅक्ट वॉक-थ्रू](/developers/tutorials/erc20-annotated-code/) _– ओपनझेपलिन ERC-20 कॉन्ट्रॅक्ट अंमलबजावणीचे ओळीनुसार स्पष्टीकरणात्मक वॉकथ्रू._
 - [सुरक्षा रेलसह ERC-20](/developers/tutorials/erc20-with-safety-rails/) _– वापरकर्त्यांना सामान्य चुका टाळण्यास मदत करण्यासाठी ERC-20 टोकन्समध्ये सुरक्षा उपाय कसे जोडावेत._
-- [Ethers.js वापरून टोकन्स पाठवणे](/developers/tutorials/send-token-ethersjs/) _– Ethers.js वापरून ERC-20 टोकन्स हस्तांतरित करण्यासाठी नवशिक्यांसाठी अनुकूल मार्गदर्शक._
+- [Ethers.js वापरून टोकन्स पाठवणे](/developers/tutorials/send-token-qaujs/) _– Ethers.js वापरून ERC-20 टोकन्स हस्तांतरित करण्यासाठी नवशिक्यांसाठी अनुकूल मार्गदर्शक._
 - [स्कॅम टोकन्सद्वारे वापरल्या जाणाऱ्या काही युक्त्या आणि त्या कशा ओळखाव्या](/developers/tutorials/scam-token-tricks/) _– स्कॅम ERC-20 टोकन पॅटर्न आणि ते कसे ओळखावे याबद्दल सविस्तर माहिती._

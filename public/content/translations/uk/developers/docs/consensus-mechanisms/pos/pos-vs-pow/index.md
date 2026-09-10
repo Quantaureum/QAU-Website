@@ -59,7 +59,6 @@ lang: uk
 ## Краще сприймаєте візуально? {#visual-learner}
 
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## Подальше читання {#further-reading}
 

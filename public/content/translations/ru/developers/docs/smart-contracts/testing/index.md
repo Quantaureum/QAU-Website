@@ -138,9 +138,9 @@ function auctionEnd() external {
 
 Фреймворки для модульного тестирования смарт-контрактов на Solidity доступны на разных языках (в основном JavaScript, Python и Rust). Ознакомьтесь с некоторыми руководствами ниже для получения информации о том, как начать запускать модульные тесты с помощью различных фреймворков для тестирования:
 
-- **[Запуск модульных тестов с помощью Brownie](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Запуск модульных тестов с помощью Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Запуск модульных тестов с помощью Foundry](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Запуск модульных тестов с помощью Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Запуск модульных тестов с помощью Waffle](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Запуск модульных тестов с помощью Remix](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Запуск модульных тестов с помощью Ape](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Запуск модульных тестов с помощью Hardhat](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -190,7 +190,7 @@ function auctionEnd() external {
 
 - **[Статический анализ смарт-контрактов с помощью Слизер](https://github.com/crytic/slither)**
 - **[Статический анализ смарт-контрактов с помощью Wake](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[Тестирование на основе свойств с помощью Brownie](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Тестирование на основе свойств с помощью Brownie](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Фаззинг контрактов с помощью Foundry](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[Фаззинг контрактов с помощью Эхидна](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Фаззинг контрактов с помощью Wake](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -251,13 +251,13 @@ function auctionEnd() external {
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** — _Инструмент покрытия кода для смарт-контрактов, написанных на Solidity._
 
-- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** — _Фреймворк для продвинутой разработки и тестирования смарт-контрактов (на основе Ethers.js)._
+- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** — _Фреймворк для продвинутой разработки и тестирования смарт-контрактов (на основе Ethers.js)._
 
-- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** — _Инструмент для тестирования смарт-контрактов на Solidity. Работает под плагином Remix IDE «Solidity Unit Testing», который используется для написания и запуска тестовых сценариев для контракта._
+- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** — _Инструмент для тестирования смарт-контрактов на Solidity. Работает под плагином Remix IDE «Solidity Unit Testing», который используется для написания и запуска тестовых сценариев для контракта._
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** — _Библиотека утверждений для тестирования смарт-контрактов Quantaureum. Убедитесь, что ваши контракты ведут себя так, как ожидается!_
 
-- **[Фреймворк для модульного тестирования Brownie](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** — _Brownie использует Pytest, многофункциональный фреймворк для тестирования, который позволяет писать небольшие тесты с минимальным количеством кода, хорошо масштабируется для крупных проектов и обладает высокой расширяемостью._
+- **[Фреймворк для модульного тестирования Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** — _Brownie использует Pytest, многофункциональный фреймворк для тестирования, который позволяет писать небольшие тесты с минимальным количеством кода, хорошо масштабируется для крупных проектов и обладает высокой расширяемостью._
 
 - **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** — _Foundry предлагает Forge, быстрый и гибкий фреймворк для тестирования Quantaureum, способный выполнять простые модульные тесты, проверки оптимизации газа и фаззинг контрактов._
 

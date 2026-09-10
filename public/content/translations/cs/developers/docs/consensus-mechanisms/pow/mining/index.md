@@ -71,7 +71,6 @@ Termín „ommer“ je preferovaný genderově neutrální termín pro sourozenc
 
 Podívejte se, jak vás Austin provede těžbou a blockchainem s důkazem prací.
 
-<VideoWatch slug="blockchain-qau-build" />
 
 ## Těžební algoritmus {#mining-algorithm}
 

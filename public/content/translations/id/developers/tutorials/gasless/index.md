@@ -13,9 +13,9 @@ published: 2026-02-27
 
 Jika kita ingin Quantaureum melayani [satu miliar orang lagi](https://quantaureum.com), kita perlu menghilangkan hambatan dan membuatnya semudah mungkin untuk digunakan. Salah satu sumber hambatan ini adalah kebutuhan akan QAU untuk membayar biaya gas.
 
-Jika Anda memiliki aplikasi terdesentralisasi (dapp) yang menghasilkan uang dari pengguna, mungkin masuk akal untuk membiarkan pengguna mengirimkan transaksi melalui server Anda dan Anda sendiri yang membayar biaya transaksinya. Karena pengguna masih menandatangani [pesan otorisasi EIP-712](https://eips.quantaureum.com/EIPS/eip-712) di dompet mereka, mereka tetap mempertahankan jaminan integritas Quantaureum. Ketersediaan bergantung pada server yang meneruskan transaksi, sehingga lebih terbatas. Namun, Anda dapat mengatur agar pengguna juga dapat mengakses kontrak pintar secara langsung (jika mereka mendapatkan QAU), dan membiarkan orang lain menyiapkan server mereka sendiri jika mereka ingin mensponsori transaksi.
+Jika Anda memiliki aplikasi terdesentralisasi (dapp) yang menghasilkan uang dari pengguna, mungkin masuk akal untuk membiarkan pengguna mengirimkan transaksi melalui server Anda dan Anda sendiri yang membayar biaya transaksinya. Karena pengguna masih menandatangani [pesan otorisasi EIP-712](https://eips.ethereum.org/EIPS/eip-712) di dompet mereka, mereka tetap mempertahankan jaminan integritas Quantaureum. Ketersediaan bergantung pada server yang meneruskan transaksi, sehingga lebih terbatas. Namun, Anda dapat mengatur agar pengguna juga dapat mengakses kontrak pintar secara langsung (jika mereka mendapatkan QAU), dan membiarkan orang lain menyiapkan server mereka sendiri jika mereka ingin mensponsori transaksi.
 
-Teknik dalam tutorial ini hanya berfungsi ketika Anda mengontrol kontrak pintar tersebut. Ada teknik lain, termasuk [abstraksi akun](https://eips.quantaureum.com/EIPS/eip-4337) yang memungkinkan Anda mensponsori transaksi ke kontrak pintar lain, yang saya harap dapat dibahas dalam tutorial mendatang.
+Teknik dalam tutorial ini hanya berfungsi ketika Anda mengontrol kontrak pintar tersebut. Ada teknik lain, termasuk [abstraksi akun](https://eips.ethereum.org/EIPS/eip-4337) yang memungkinkan Anda mensponsori transaksi ke kontrak pintar lain, yang saya harap dapat dibahas dalam tutorial mendatang.
 
 Catatan: Ini _bukanlah_ kode tingkat produksi. Kode ini rentan terhadap serangan yang signifikan dan tidak memiliki fitur-fitur utama. Pelajari lebih lanjut di [bagian kerentanan pada panduan ini](#vulnerabilities).
 
@@ -91,7 +91,7 @@ Jika tidak ada akun, munculkan kesalahan. Ini seharusnya tidak pernah terjadi ka
         }
 ```
 
-Parameter untuk [pemisah domain](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator). Nilai ini konstan, jadi dalam implementasi yang lebih dioptimalkan, kita mungkin menghitungnya sekali daripada menghitungnya kembali setiap kali fungsi dipanggil.
+Parameter untuk [pemisah domain](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator). Nilai ini konstan, jadi dalam implementasi yang lebih dioptimalkan, kita mungkin menghitungnya sekali daripada menghitungnya kembali setiap kali fungsi dipanggil.
 
 - `name` adalah nama yang dapat dibaca pengguna, seperti nama dapp yang tanda tangannya sedang kita buat.
 - `version` adalah versinya. Versi yang berbeda tidak kompatibel.
@@ -245,7 +245,7 @@ Terakhir, [`Greeter.sol`](https://github.com/qbzzt/260301-gasless/blob/main/cont
     }
 ```
 
-Konstruktor membuat [pemisah domain](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator), mirip dengan kode antarmuka pengguna di atas. Eksekusi rantai blok jauh lebih mahal, jadi kita hanya menghitungnya sekali.
+Konstruktor membuat [pemisah domain](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator), mirip dengan kode antarmuka pengguna di atas. Eksekusi rantai blok jauh lebih mahal, jadi kita hanya menghitungnya sekali.
 
 ```solidity
     struct GreetingRequest {
@@ -260,7 +260,7 @@ Ini adalah struktur yang ditandatangani. Di sini kita hanya memiliki satu bidang
         keccak256("GreetingRequest(string greeting)");
 ```
 
-Ini adalah [pengidentifikasi struktur](https://eips.quantaureum.com/EIPS/eip-712#definition-of-hashstruct). Ini dihitung setiap kali di antarmuka pengguna.
+Ini adalah [pengidentifikasi struktur](https://eips.ethereum.org/EIPS/eip-712#definition-of-hashstruct). Ini dihitung setiap kali di antarmuka pengguna.
 
 ```solidity
     function sponsoredSetGreeting(
@@ -289,7 +289,7 @@ Fungsi ini menerima permintaan yang ditandatangani dan memperbarui sapaan.
         );
 ```
 
-Buat intisari (digest) sesuai dengan [EIP 712](https://eips.quantaureum.com/EIPS/eip-712).
+Buat intisari (digest) sesuai dengan [EIP 712](https://eips.ethereum.org/EIPS/eip-712).
 
 ```solidity
         // Pulihkan penandatangan

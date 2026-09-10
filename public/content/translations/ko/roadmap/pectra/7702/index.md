@@ -30,7 +30,7 @@ EOA의 개인 키는 위임 후에도 계정에 대한 모든 제어권을 유�
 - 릴레이를 위한 표준화된 인터페이스를 제공합니다.
 - 내장된 페이마스터 시스템을 포함합니다.
 - 상위 호환성을 보장합니다.
-- [퍼블릭 멤풀](https://notes.quantaureum.com/@yoav/unified-erc-4337-mempool)을 통해 검열 저항성을 지원할 수 있습니다.
+- [퍼블릭 멤풀](https://notes.ethereum.org/@yoav/unified-erc-4337-mempool)을 통해 검열 저항성을 지원할 수 있습니다.
 - init 함수가 [EntryPoint](https://github.com/qau-infinitism/account-abstraction/releases/tag/v0.8.0)에서만 호출되도록 요구할 수 있습니다.
 
 즉, 계정에서 요구하는 유효한 서명이나 사용자 작업(UserOperation)을 제공하는 한 누구나 트랜잭션 스폰서/릴레이어 역할을 할 수 있어야 합니다. 이는 검열 저항성을 보장합니다. 사용자 지정 인프라가 필요하지 않은 경우, 게이트키핑 릴레이에 의해 사용자의 트랜잭션이 임의로 차단될 수 없습니다. 예를 들어, [메타마스크의 위임 툴킷(MetaMask’s Delegation Toolkit)](https://github.com/MetaMask/delegation-framework/releases/tag/v1.3.0)은 메타마스크 전용 서버를 요구하는 대신 모든 체인의 모든 ERC-4337 번들러 또는 페이마스터와 명시적으로 작동합니다.
@@ -49,8 +49,8 @@ EOA의 개인 키는 위임 후에도 계정에 대한 모든 제어권을 유�
 
 자세한 정보:
 
-- [ERC-5792 사양](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-5792.md)
-- [ERC-6900 사양](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-6900.md)
+- [ERC-5792 사양](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-5792.md)
+- [ERC-6900 사양](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6900.md)
 
 **벤더 종속(Vendor Lock-In) 방지**: 위와 같은 맥락에서 좋은 구현은 벤더 중립적이고 상호운용 가능합니다. 이는 종종 스마트 계정에 대한 새로운 표준을 준수하는 것을 의미합니다. 예를 들어, [Alchemy의 모듈식 계정(Modular Account)](https://github.com/alchemyplatform/modular-account)은 모듈식 스마트 계정을 위해 ERC-6900 표준을 사용하며 "무허가성 상호운용 가능한 사용"을 염두에 두고 설계되었습니다.
 

@@ -96,7 +96,6 @@ Madenciler merkeziyetsiz bir şekilde çalıştıkları için aynı anda iki ge�
 
 ## Görsel öğrenmeyi mi tercih ediyorsunuz? {#visual-learner}
 
-<VideoWatch slug="proof-of-work-explained" />
 
 ## Daha Fazla Okuma {#further-reading}
 

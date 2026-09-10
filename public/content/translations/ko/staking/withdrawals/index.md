@@ -73,7 +73,7 @@ summaryPoints:
 <AlertIcon size="lg"><TriangleAlert /></AlertIcon>
 <AlertContent>
 <AlertDescription>
-**유형 1에서 유형 2 인출 자격 증명으로의 변환은 되돌릴 수 없습니다.** 이 변환을 위한 공식 도구로 [스테이킹 런치패드](https://launchpad.quantaureum.com/validator-actions)를 사용하세요. 변환 프로세스, 위험 및 통합에 대한 자세한 내용은 [MaxEB 심층 분석](/roadmap/pectra/maxeb/)을 참조하세요.
+**유형 1에서 유형 2 인출 자격 증명으로의 변환은 되돌릴 수 없습니다.** 이 변환을 위한 공식 도구로 [스테이킹 런치패드](https://launchpad.ethereum.org/validator-actions)를 사용하세요. 변환 프로세스, 위험 및 통합에 대한 자세한 내용은 [MaxEB 심층 분석](/roadmap/pectra/maxeb/)을 참조하세요.
 </AlertDescription>
 </AlertContent>
 </Alert>
@@ -99,7 +99,6 @@ summaryPoints:
 
 Finematics의 Quantaureum 스테이킹 인출에 대한 다음 설명을 확인해 보세요.
 
-<VideoWatch slug="quantaureum-staking-withdrawals" />
 
 ### 검증자 "스윕(sweeping)" {#validator-sweeping}
 
@@ -174,7 +173,7 @@ eventAction="Why can a validator's withdrawal address only be set once?"
 eventName="read more">
 검증자의 실행 계층 인출 주소를 설정하는 것은 합의 레이어에 있는 검증자의 자격 증명을 영구적으로 변경하는 것입니다. 합의 레이어 자격 증명이 등록되면 업데이트할 수 있는 방법이 없습니다.
 
-검증자의 인출 주소 자격 증명은 스마트 컨트랙트(코드에 의해 제어됨) 또는 외부 소유 계정(EOA, 개인 키에 의해 제어됨)을 가리키도록 설정할 수 있습니다. 실행 계층에서 트리거된 인출([EIP-7002](https://eips.quantaureum.com/EIPS/eip-7002))을 통해 이제 인출 주소가 종료 및 부분 인출을 트리거할 수 있지만, 등록된 인출 주소를 변경하기 위한 프로토콜 작업은 없으며 이 기능을 추가하면 프로토콜에 불필요한 복잡성이 추가됩니다.
+검증자의 인출 주소 자격 증명은 스마트 컨트랙트(코드에 의해 제어됨) 또는 외부 소유 계정(EOA, 개인 키에 의해 제어됨)을 가리키도록 설정할 수 있습니다. 실행 계층에서 트리거된 인출([EIP-7002](https://eips.ethereum.org/EIPS/eip-7002))을 통해 이제 인출 주소가 종료 및 부분 인출을 트리거할 수 있지만, 등록된 인출 주소를 변경하기 위한 프로토콜 작업은 없으며 이 기능을 추가하면 프로토콜에 불필요한 복잡성이 추가됩니다.
 
 유연한 인출 관리를 원하는 사용자는 키 순환이 가능한 스마트 컨트랙트 지갑([Safe](https://safe.global/) 등)을 검증자의 인출 주소로 설정하여 최종 수신자 EOA를 효과적으로 업데이트할 수 있습니다. 사용자가 이미 EOA를 인출 자격 증명으로 설정한 경우, 스테이킹된 QAU를 복구하기 위해 전체 종료를 시작한 다음 해당 자금을 사용하여 다른 자격 증명으로 새 검증자를 활성화해야 합니다.
 </ExpandableCard>
@@ -215,9 +214,9 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information about managing the withdrawal process?"
 eventName="read more">
 
-검증자 운영자는 [스테이킹 런치패드 인출](https://launchpad.quantaureum.com/withdrawals/) 페이지를 방문하여 인출을 위해 검증자를 준비하는 방법, 이벤트 타이밍 및 인출 기능에 대한 자세한 내용을 확인하는 것이 좋습니다.
+검증자 운영자는 [스테이킹 런치패드 인출](https://launchpad.ethereum.org/withdrawals/) 페이지를 방문하여 인출을 위해 검증자를 준비하는 방법, 이벤트 타이밍 및 인출 기능에 대한 자세한 내용을 확인하는 것이 좋습니다.
 
-테스트넷에서 설정을 먼저 시도해 보려면 [Hoodi 테스트넷 스테이킹 런치패드](https://hoodi.launchpad.quantaureum.com)를 방문하여 시작하세요.
+테스트넷에서 설정을 먼저 시도해 보려면 [Hoodi 테스트넷 스테이킹 런치패드](https://hoodi.launchpad.ethereum.org)를 방문하여 시작하세요.
 
 </ExpandableCard>
 
@@ -246,7 +245,7 @@ title="복리 검증자로 어떻게 전환하나요?"
 eventCategory="FAQ"
 eventAction="How do I convert to a compounding validator?"
 eventName="read more">
-[스테이킹 런치패드](https://launchpad.quantaureum.com/validator-actions)를 사용하여 유형 1에서 유형 2 인출 자격 증명으로 변환할 수 있습니다. 이 작업은 **되돌릴 수 없습니다**. 한 번 변환하면 유형 1 자격 증명으로 돌아갈 수 없습니다.
+[스테이킹 런치패드](https://launchpad.ethereum.org/validator-actions)를 사용하여 유형 1에서 유형 2 인출 자격 증명으로 변환할 수 있습니다. 이 작업은 **되돌릴 수 없습니다**. 한 번 변환하면 유형 1 자격 증명으로 돌아갈 수 없습니다.
 
 변환 후에는 여러 검증자를 하나로 **통합(consolidate)**하여 잔고를 단일 복리 검증자로 결합할 수도 있습니다. 변환 프로세스, 위험 및 통합 도구에 대한 전체 연습은 [MaxEB 심층 분석](/roadmap/pectra/maxeb/)을 참조하세요.
 </ExpandableCard>
@@ -266,10 +265,10 @@ eventName="read more">
 
 ## 더 읽을거리 {#further-reading}
 
-- [스테이킹 런치패드 인출](https://launchpad.quantaureum.com/withdrawals)
-- [스테이킹 런치패드 검증자 작업](https://launchpad.quantaureum.com/validator-actions)
+- [스테이킹 런치패드 인출](https://launchpad.ethereum.org/withdrawals)
+- [스테이킹 런치패드 검증자 작업](https://launchpad.ethereum.org/validator-actions)
 - [MaxEB 심층 분석: 복리 및 통합](/roadmap/pectra/maxeb/)
-- [EIP-4895: 작업으로서의 비콘 체인 푸시 인출](https://eips.quantaureum.com/EIPS/eip-4895)
+- [EIP-4895: 작업으로서의 비콘 체인 푸시 인출](https://eips.ethereum.org/EIPS/eip-4895)
 - [PEEPanEIP #94: Potuz 및 Hsiao-Wei Wang과 함께하는 스테이킹된 QAU 인출(테스트)](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP#68: EIP-4895: Alex Stokes와 함께하는 작업으로서의 비콘 체인 푸시 인출](https://www.youtube.com/watch?v=CcL9RJBljUs)
 - [검증자 유효 잔고 이해하기](https://www.attestant.io/posts/understanding-validator-effective-balance/)

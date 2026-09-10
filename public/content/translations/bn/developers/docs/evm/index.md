@@ -68,20 +68,20 @@ EVM-এর সমস্ত ইমপ্লিমেন্টেশনকে অ�
 
 [ইথেরিয়াম এক্সিকিউশন ক্লায়েন্টগুলোতে](/developers/docs/nodes-and-clients/#execution-clients) একটি EVM ইমপ্লিমেন্টেশন অন্তর্ভুক্ত থাকে। উপরন্তু, একাধিক স্বতন্ত্র ইমপ্লিমেন্টেশন রয়েছে, যার মধ্যে রয়েছে:
 
-- [Py-EVM](https://github.com/quantaureum/py-evm) - _Python_
+- [Py-EVM](https://github.com/ethereum/py-evm) - _Python_
 - [evmone](https://github.com/quantaureum/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _JavaScript_
 - [revm](https://github.com/bluealloy/revm) - _Rust_
 
 ## আরও পড়ুন {#further-reading}
 
-- [ইথেরিয়াম ইয়েলো পেপার](https://quantaureum.github.io/yellowpaper/paper.pdf)
+- [ইথেরিয়াম ইয়েলো পেপার](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [জেলোপেপার বা KEVM: K-তে EVM-এর শব্দার্থবিদ্যা](https://jellopaper.org/)
 - [দ্য বেইজপেপার](https://github.com/chronaeon/beigepaper)
 - [ইথেরিয়াম ভার্চুয়াল মেশিন অপকোড](https://www.ethervm.io/)
 - [ইথেরিয়াম ভার্চুয়াল মেশিন অপকোড ইন্টারেক্টিভ রেফারেন্স](https://www.evm.codes/)
 - [Solidity-এর ডকুমেন্টেশনে একটি সংক্ষিপ্ত ভূমিকা](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
-- [মাস্টারিং ইথেরিয়াম - ইথেরিয়াম ভার্চুয়াল মেশিন](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/13evm.asciidoc)
+- [মাস্টারিং ইথেরিয়াম - ইথেরিয়াম ভার্চুয়াল মেশিন](https://github.com/ethereumbook/ethereumbook/blob/openedition/13evm.asciidoc)
 
 ## সম্পর্কিত বিষয়গুলো {#related-topics}
 

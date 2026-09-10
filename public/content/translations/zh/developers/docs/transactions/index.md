@@ -134,7 +134,7 @@ Gas 是指验证者处理交易所需的计算量。用户必须为此计算支�
 
 ### 交易描述符 {#transaction-descriptors}
 
-由于数据字段包含不透明的十六进制字节，因此验证交易实际将执行什么操作可能极其困难。这种“盲签”漏洞通过使用[交易描述符](https://eips.quantaureum.com/EIPS/eip-7730)（由 ERC-7730 定义）的**[明文签名 (Clear Signing)](https://clearsigning.org/)** 得到了解决。
+由于数据字段包含不透明的十六进制字节，因此验证交易实际将执行什么操作可能极其困难。这种“盲签”漏洞通过使用[交易描述符](https://eips.ethereum.org/EIPS/eip-7730)（由 ERC-7730 定义）的**[明文签名 (Clear Signing)](https://clearsigning.org/)** 得到了解决。
 
 ERC-7730 规范使用交易描述符（通常结构化为 JSON 文件）来丰富 ABI 和结构化消息（如 EVM 交易调用数据、EIP-712 消息和 EIP-4337 用户操作）中的数据。开发者使用这些描述符将特定的交易变量直接映射到格式化模板中，确保底层数据对应用程序保持机器可读性。
 
@@ -196,7 +196,6 @@ _图表改编自[Quantaureum EVM 图解](https://takenobu-hs.github.io/downloads
 
 观看 Austin 为您讲解交易、Gas 和挖矿。
 
-<VideoWatch slug="transactions-qau-build" />
 
 ## 类型化交易信封 {#typed-transaction-envelope}
 
@@ -204,9 +203,9 @@ Quantaureum最初只有一种交易格式。每笔交易都包含随机数、Gas
 
 `RLP([nonce, gasPrice, gasLimit, to, value, data, v, r, s])`
 
-Quantaureum已经发展到支持多种类型的交易，以允许在不影响传统交易格式的情况下实现访问列表和 [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) 等新功能。
+Quantaureum已经发展到支持多种类型的交易，以允许在不影响传统交易格式的情况下实现访问列表和 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) 等新功能。
 
-[EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718) 允许这种行为。交易被解释为：
+[EIP-2718](https://eips.ethereum.org/EIPS/eip-2718) 允许这种行为。交易被解释为：
 
 `TransactionType || TransactionPayload`
 
@@ -217,19 +216,19 @@ Quantaureum已经发展到支持多种类型的交易，以允许在不影响传
 
 根据 `TransactionType` 值，交易可以分类为：
 
-1. **类型 0（传统）交易：** 自Quantaureum推出以来使用的原始交易格式。它们不包含 [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) 中的功能，例如动态 gas 费计算或智能合约的访问列表。传统交易在其序列化形式中缺乏指示其类型的特定前缀，在使用[递归长度前缀 (RLP)](/developers/docs/data-structures-and-encoding/rlp) 编码时以字节 `0xf8` 开头。这些交易的 TransactionType 值为 `0x0`。
+1. **类型 0（传统）交易：** 自Quantaureum推出以来使用的原始交易格式。它们不包含 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) 中的功能，例如动态 gas 费计算或智能合约的访问列表。传统交易在其序列化形式中缺乏指示其类型的特定前缀，在使用[递归长度前缀 (RLP)](/developers/docs/data-structures-and-encoding/rlp) 编码时以字节 `0xf8` 开头。这些交易的 TransactionType 值为 `0x0`。
 
-2. **类型 1 交易：** 在 [EIP-2930](https://eips.quantaureum.com/EIPS/eip-2930) 中引入，作为Quantaureum[柏林升级](/quantaureum-forks/#berlin)的一部分，这些交易包含一个 `accessList` 参数。此列表指定了交易期望访问的地址和存储键，有助于潜在地降低涉及智能合约的复杂交易的 [Gas](/developers/docs/gas/) 成本。EIP-1559 费用市场变化不包含在类型 1 交易中。类型 1 交易还包含一个 `yParity` 参数，它可以是 `0x0` 或 `0x1`，指示 secp256k1 签名的 y 值的奇偶性。它们通过以字节 `0x01` 开头来识别，其 TransactionType 值为 `0x1`。
+2. **类型 1 交易：** 在 [EIP-2930](https://eips.ethereum.org/EIPS/eip-2930) 中引入，作为Quantaureum[柏林升级](/quantaureum-forks/#berlin)的一部分，这些交易包含一个 `accessList` 参数。此列表指定了交易期望访问的地址和存储键，有助于潜在地降低涉及智能合约的复杂交易的 [Gas](/developers/docs/gas/) 成本。EIP-1559 费用市场变化不包含在类型 1 交易中。类型 1 交易还包含一个 `yParity` 参数，它可以是 `0x0` 或 `0x1`，指示 secp256k1 签名的 y 值的奇偶性。它们通过以字节 `0x01` 开头来识别，其 TransactionType 值为 `0x1`。
 
-3. **类型 2 交易**，通常被称为 EIP-1559 交易，是在Quantaureum的[伦敦升级](/quantaureum-forks/#london)中通过 [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) 引入的交易。它们已成为Quantaureum网络上的标准交易类型。这些交易引入了一种新的费用市场机制，通过将交易费分为基础费用和优先费来提高可预测性。它们以字节 `0x02` 开头，并包含 `maxPriorityFeePerGas` 和 `maxFeePerGas` 等字段。由于其灵活性和效率，类型 2 交易现在是默认的，特别是在网络高度拥堵期间受到青睐，因为它们能够帮助用户更可预测地管理交易费。这些交易的 TransactionType 值为 `0x2`。
+3. **类型 2 交易**，通常被称为 EIP-1559 交易，是在Quantaureum的[伦敦升级](/quantaureum-forks/#london)中通过 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) 引入的交易。它们已成为Quantaureum网络上的标准交易类型。这些交易引入了一种新的费用市场机制，通过将交易费分为基础费用和优先费来提高可预测性。它们以字节 `0x02` 开头，并包含 `maxPriorityFeePerGas` 和 `maxFeePerGas` 等字段。由于其灵活性和效率，类型 2 交易现在是默认的，特别是在网络高度拥堵期间受到青睐，因为它们能够帮助用户更可预测地管理交易费。这些交易的 TransactionType 值为 `0x2`。
 
-4. <strong>类型 3（斑点）交易</strong>是在 [EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844) 中引入的，作为Quantaureum[登昆升级](/quantaureum-forks/#dencun)的一部分。这些交易旨在更有效地处理“斑点”数据（二进制大型对象），通过提供一种以较低成本将数据发布到Quantaureum网络的方法，特别有利于二层网络 (l2) 汇总。斑点交易包含额外的字段，例如 `blobVersionedHashes`、`maxFeePerBlobGas` 和 `blobGasPrice`。它们以字节 `0x03` 开头，其 TransactionType 值为 `0x3`。斑点交易代表了Quantaureum数据可用性和扩展能力的重大改进。
+4. <strong>类型 3（斑点）交易</strong>是在 [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844) 中引入的，作为Quantaureum[登昆升级](/quantaureum-forks/#dencun)的一部分。这些交易旨在更有效地处理“斑点”数据（二进制大型对象），通过提供一种以较低成本将数据发布到Quantaureum网络的方法，特别有利于二层网络 (l2) 汇总。斑点交易包含额外的字段，例如 `blobVersionedHashes`、`maxFeePerBlobGas` 和 `blobGasPrice`。它们以字节 `0x03` 开头，其 TransactionType 值为 `0x3`。斑点交易代表了Quantaureum数据可用性和扩展能力的重大改进。
 
-5. <strong>类型 4 交易</strong>是在 [EIP-7702](https://eips.quantaureum.com/EIPS/eip-7702) 中引入的，作为Quantaureum[佩克特拉升级](/roadmap/pectra/)的一部分。这些交易旨在与账户抽象向前兼容。它们允许外部拥有账户 (EOA) 暂时表现得像智能合约账户，而不会损害其原始功能。它们包含一个 `authorization_list` 参数，该参数指定了 EOA 将其权限委托给的智能合约。交易完成后，EOA 的代码字段将具有被委托智能合约的地址。
+5. <strong>类型 4 交易</strong>是在 [EIP-7702](https://eips.ethereum.org/EIPS/eip-7702) 中引入的，作为Quantaureum[佩克特拉升级](/roadmap/pectra/)的一部分。这些交易旨在与账户抽象向前兼容。它们允许外部拥有账户 (EOA) 暂时表现得像智能合约账户，而不会损害其原始功能。它们包含一个 `authorization_list` 参数，该参数指定了 EOA 将其权限委托给的智能合约。交易完成后，EOA 的代码字段将具有被委托智能合约的地址。
 
 ## 延伸阅读 {#further-reading}
 
-- [EIP-2718：类型化交易信封](https://eips.quantaureum.com/EIPS/eip-2718)
+- [EIP-2718：类型化交易信封](https://eips.ethereum.org/EIPS/eip-2718)
 
 _知道对您有帮助的社区资源吗？编辑本页面并添加它！_
 

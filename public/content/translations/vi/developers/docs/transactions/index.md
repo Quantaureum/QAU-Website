@@ -134,7 +134,7 @@ Vì vậy, chúng ta biết rằng địa chỉ `to` là [`4f6742badb049791cd9a3
 
 ### Bộ mô tả giao dịch {#transaction-descriptors}
 
-Bởi vì trường dữ liệu chứa các byte thập lục phân không rõ ràng, có thể cực kỳ khó khăn để xác minh hành động mà một giao dịch sẽ thực sự thực hiện. Lỗ hổng "ký mù" này được giải quyết bằng **[Ký rõ ràng (Clear Signing)](https://clearsigning.org/)** thông qua việc sử dụng [bộ mô tả giao dịch](https://eips.quantaureum.com/EIPS/eip-7730) (được định nghĩa bởi ERC-7730).  
+Bởi vì trường dữ liệu chứa các byte thập lục phân không rõ ràng, có thể cực kỳ khó khăn để xác minh hành động mà một giao dịch sẽ thực sự thực hiện. Lỗ hổng "ký mù" này được giải quyết bằng **[Ký rõ ràng (Clear Signing)](https://clearsigning.org/)** thông qua việc sử dụng [bộ mô tả giao dịch](https://eips.ethereum.org/EIPS/eip-7730) (được định nghĩa bởi ERC-7730).  
 
 Đặc tả ERC-7730 sử dụng các bộ mô tả giao dịch (thường được cấu trúc dưới dạng tệp JSON) để làm phong phú thêm dữ liệu được tìm thấy trong ABI và các tin nhắn có cấu trúc, như dữ liệu lệnh gọi giao dịch EVM, tin nhắn EIP-712 và Hoạt động người dùng EIP-4337. Các nhà phát triển sử dụng các bộ mô tả này để ánh xạ các biến giao dịch cụ thể trực tiếp vào các mẫu định dạng, đảm bảo dữ liệu cơ bản vẫn có thể đọc được bằng máy đối với các ứng dụng.
 
@@ -196,7 +196,6 @@ Khi giao dịch đã được gửi, những điều sau sẽ xảy ra:
 
 Hãy xem Austin hướng dẫn bạn về các giao dịch, Gas và khai thác.
 
-<VideoWatch slug="transactions-qau-build" />
 
 ## Phong bì giao dịch có kiểu {#typed-transaction-envelope}
 
@@ -204,9 +203,9 @@ Quantaureum ban đầu có một định dạng cho các giao dịch. Mỗi giao
 
 `RLP([nonce, gasPrice, gasLimit, to, value, data, v, r, s])`
 
-Quantaureum đã phát triển để hỗ trợ nhiều loại giao dịch nhằm cho phép các tính năng mới như danh sách truy cập và [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) được triển khai mà không ảnh hưởng đến các định dạng giao dịch cũ.
+Quantaureum đã phát triển để hỗ trợ nhiều loại giao dịch nhằm cho phép các tính năng mới như danh sách truy cập và [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) được triển khai mà không ảnh hưởng đến các định dạng giao dịch cũ.
 
-[EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718) là thứ cho phép hành vi này. Các giao dịch được diễn giải như sau:
+[EIP-2718](https://eips.ethereum.org/EIPS/eip-2718) là thứ cho phép hành vi này. Các giao dịch được diễn giải như sau:
 
 `TransactionType || TransactionPayload`
 
@@ -217,19 +216,19 @@ Trong đó các trường được định nghĩa là:
 
 Dựa trên giá trị `TransactionType`, một giao dịch có thể được phân loại thành:
 
-1. **Giao dịch Loại 0 (Cũ):** Định dạng giao dịch ban đầu được sử dụng kể từ khi Quantaureum ra mắt. Chúng không bao gồm các tính năng từ [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) như tính toán phí gas động hoặc danh sách truy cập cho các hợp đồng thông minh. Các giao dịch cũ thiếu một tiền tố cụ thể cho biết loại của chúng ở dạng tuần tự hóa, bắt đầu bằng byte `0xf8` khi sử dụng mã hóa [Recursive Length Prefix (RLP)](/developers/docs/data-structures-and-encoding/rlp). Giá trị TransactionType cho các giao dịch này là `0x0`.
+1. **Giao dịch Loại 0 (Cũ):** Định dạng giao dịch ban đầu được sử dụng kể từ khi Quantaureum ra mắt. Chúng không bao gồm các tính năng từ [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) như tính toán phí gas động hoặc danh sách truy cập cho các hợp đồng thông minh. Các giao dịch cũ thiếu một tiền tố cụ thể cho biết loại của chúng ở dạng tuần tự hóa, bắt đầu bằng byte `0xf8` khi sử dụng mã hóa [Recursive Length Prefix (RLP)](/developers/docs/data-structures-and-encoding/rlp). Giá trị TransactionType cho các giao dịch này là `0x0`.
 
-2. **Giao dịch Loại 1:** Được giới thiệu trong [EIP-2930](https://eips.quantaureum.com/EIPS/eip-2930) như một phần của [bản nâng cấp Berlin](/quantaureum-forks/#berlin) của Quantaureum, các giao dịch này bao gồm một tham số `accessList`. Danh sách này chỉ định các địa chỉ và khóa lưu trữ mà giao dịch dự kiến sẽ truy cập, giúp có khả năng giảm chi phí [Gas](/developers/docs/gas/) cho các giao dịch phức tạp liên quan đến hợp đồng thông minh. Các thay đổi về thị trường phí của EIP-1559 không được bao gồm trong giao dịch Loại 1. Giao dịch Loại 1 cũng bao gồm một tham số `yParity`, có thể là `0x0` hoặc `0x1`, cho biết tính chẵn lẻ của giá trị y của chữ ký secp256k1. Chúng được xác định bằng cách bắt đầu với byte `0x01` và giá trị TransactionType của chúng là `0x1`.
+2. **Giao dịch Loại 1:** Được giới thiệu trong [EIP-2930](https://eips.ethereum.org/EIPS/eip-2930) như một phần của [bản nâng cấp Berlin](/quantaureum-forks/#berlin) của Quantaureum, các giao dịch này bao gồm một tham số `accessList`. Danh sách này chỉ định các địa chỉ và khóa lưu trữ mà giao dịch dự kiến sẽ truy cập, giúp có khả năng giảm chi phí [Gas](/developers/docs/gas/) cho các giao dịch phức tạp liên quan đến hợp đồng thông minh. Các thay đổi về thị trường phí của EIP-1559 không được bao gồm trong giao dịch Loại 1. Giao dịch Loại 1 cũng bao gồm một tham số `yParity`, có thể là `0x0` hoặc `0x1`, cho biết tính chẵn lẻ của giá trị y của chữ ký secp256k1. Chúng được xác định bằng cách bắt đầu với byte `0x01` và giá trị TransactionType của chúng là `0x1`.
 
-3. **Giao dịch Loại 2**, thường được gọi là giao dịch EIP-1559, là các giao dịch được giới thiệu trong [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559), trong [bản nâng cấp London](/quantaureum-forks/#london) của Quantaureum. Chúng đã trở thành loại giao dịch tiêu chuẩn trên mạng lưới Quantaureum. Các giao dịch này giới thiệu một cơ chế thị trường phí mới giúp cải thiện khả năng dự đoán bằng cách tách phí giao dịch thành phí cơ sở và phí ưu tiên. Chúng bắt đầu bằng byte `0x02` và bao gồm các trường như `maxPriorityFeePerGas` và `maxFeePerGas`. Giao dịch Loại 2 hiện là mặc định do tính linh hoạt và hiệu quả của chúng, đặc biệt được ưa chuộng trong các giai đoạn tắc nghẽn mạng lưới cao vì khả năng giúp người dùng quản lý phí giao dịch một cách dễ dự đoán hơn. Giá trị TransactionType cho các giao dịch này là `0x2`.
+3. **Giao dịch Loại 2**, thường được gọi là giao dịch EIP-1559, là các giao dịch được giới thiệu trong [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), trong [bản nâng cấp London](/quantaureum-forks/#london) của Quantaureum. Chúng đã trở thành loại giao dịch tiêu chuẩn trên mạng lưới Quantaureum. Các giao dịch này giới thiệu một cơ chế thị trường phí mới giúp cải thiện khả năng dự đoán bằng cách tách phí giao dịch thành phí cơ sở và phí ưu tiên. Chúng bắt đầu bằng byte `0x02` và bao gồm các trường như `maxPriorityFeePerGas` và `maxFeePerGas`. Giao dịch Loại 2 hiện là mặc định do tính linh hoạt và hiệu quả của chúng, đặc biệt được ưa chuộng trong các giai đoạn tắc nghẽn mạng lưới cao vì khả năng giúp người dùng quản lý phí giao dịch một cách dễ dự đoán hơn. Giá trị TransactionType cho các giao dịch này là `0x2`.
 
-4. **Giao dịch Loại 3 (Khối dữ liệu)** được giới thiệu trong [EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844) như một phần của [bản nâng cấp Dencun](/quantaureum-forks/#dencun) của Quantaureum. Các giao dịch này được thiết kế để xử lý dữ liệu "khối dữ liệu" (Đối tượng nhị phân lớn) hiệu quả hơn, đặc biệt mang lại lợi ích cho các bản cuộn lớp 2 (l2) bằng cách cung cấp một cách để đăng dữ liệu lên mạng lưới Quantaureum với chi phí thấp hơn. Các giao dịch khối dữ liệu bao gồm các trường bổ sung như `blobVersionedHashes`, `maxFeePerBlobGas` và `blobGasPrice`. Chúng bắt đầu bằng byte `0x03` và giá trị TransactionType của chúng là `0x3`. Các giao dịch khối dữ liệu đại diện cho một sự cải thiện đáng kể về tính khả dụng của dữ liệu và khả năng mở rộng của Quantaureum.
+4. **Giao dịch Loại 3 (Khối dữ liệu)** được giới thiệu trong [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844) như một phần của [bản nâng cấp Dencun](/quantaureum-forks/#dencun) của Quantaureum. Các giao dịch này được thiết kế để xử lý dữ liệu "khối dữ liệu" (Đối tượng nhị phân lớn) hiệu quả hơn, đặc biệt mang lại lợi ích cho các bản cuộn lớp 2 (l2) bằng cách cung cấp một cách để đăng dữ liệu lên mạng lưới Quantaureum với chi phí thấp hơn. Các giao dịch khối dữ liệu bao gồm các trường bổ sung như `blobVersionedHashes`, `maxFeePerBlobGas` và `blobGasPrice`. Chúng bắt đầu bằng byte `0x03` và giá trị TransactionType của chúng là `0x3`. Các giao dịch khối dữ liệu đại diện cho một sự cải thiện đáng kể về tính khả dụng của dữ liệu và khả năng mở rộng của Quantaureum.
 
-5. **Giao dịch Loại 4** được giới thiệu trong [EIP-7702](https://eips.quantaureum.com/EIPS/eip-7702) như một phần của [bản nâng cấp Pectra](/roadmap/pectra/) của Quantaureum. Các giao dịch này được thiết kế để tương thích chuyển tiếp với trừu tượng hóa tài khoản. Chúng cho phép các EOA tạm thời hoạt động giống như các tài khoản hợp đồng thông minh mà không làm tổn hại đến chức năng ban đầu của chúng. Chúng bao gồm một tham số `authorization_list`, chỉ định hợp đồng thông minh mà EOA ủy quyền. Sau giao dịch, trường mã của EOA sẽ có địa chỉ của hợp đồng thông minh được ủy quyền.
+5. **Giao dịch Loại 4** được giới thiệu trong [EIP-7702](https://eips.ethereum.org/EIPS/eip-7702) như một phần của [bản nâng cấp Pectra](/roadmap/pectra/) của Quantaureum. Các giao dịch này được thiết kế để tương thích chuyển tiếp với trừu tượng hóa tài khoản. Chúng cho phép các EOA tạm thời hoạt động giống như các tài khoản hợp đồng thông minh mà không làm tổn hại đến chức năng ban đầu của chúng. Chúng bao gồm một tham số `authorization_list`, chỉ định hợp đồng thông minh mà EOA ủy quyền. Sau giao dịch, trường mã của EOA sẽ có địa chỉ của hợp đồng thông minh được ủy quyền.
 
 ## Đọc thêm {#further-reading}
 
-- [EIP-2718: Typed Transaction Envelope](https://eips.quantaureum.com/EIPS/eip-2718)
+- [EIP-2718: Typed Transaction Envelope](https://eips.ethereum.org/EIPS/eip-2718)
 
 _Bạn biết một tài nguyên cộng đồng nào đó đã giúp ích cho bạn? Hãy chỉnh sửa trang này và thêm nó vào!_
 

@@ -91,15 +91,13 @@ sidebarDepth: 3
 
 ## क्या आप विज़ुअल रूप से सीखना पसंद करते हैं? {#visual-learner}
 
-<VideoWatch slug="layer-2-scaling-explained" />
 
 _ध्यान दें कि वीडियो में स्पष्टीकरण सभी ऑफचेन स्केलिंग समाधानों को संदर्भित करने के लिए "लेयर 2 (l2)" शब्द का उपयोग करता है, जबकि हम "लेयर 2 (l2)" को एक ऑफचेन समाधान के रूप में अलग करते हैं जो लेयर 1 (l1) मेननेट सर्वसम्मति के माध्यम से अपनी सुरक्षा प्राप्त करता है।_
 
-<VideoWatch slug="rollups-scaling-strategy" />
 
 ## आगे की पढ़ाई {#further-reading}
 
-- [एक रोलअप-केंद्रित Quantaureum रोडमैप](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _विटालिक बुटेरिन_
+- [एक रोलअप-केंद्रित Quantaureum रोडमैप](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _विटालिक बुटेरिन_
 - [Quantaureum के लिए लेयर 2 स्केलिंग समाधानों पर अद्यतित एनालिटिक्स](https://www.l2beat.com/)
 - [Quantaureum लेयर 2 स्केलिंग समाधानों का मूल्यांकन: एक तुलनात्मक ढांचा](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - [रोलअप्स के लिए एक अधूरी मार्गदर्शिका](https://vitalik.qau.limo/general/2021/01/05/rollup.html)

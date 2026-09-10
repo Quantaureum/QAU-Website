@@ -24,7 +24,6 @@ Trong khi Fusaka tập trung vào các tinh chỉnh nền tảng, Glamsterdam th
 
 Những cải tiến này đảm bảo Quantaureum vẫn nhanh chóng, giá cả phải chăng và phi tập trung khi nó xử lý nhiều hoạt động hơn, đồng thời giữ cho các yêu cầu phần cứng ở mức có thể quản lý được đối với những người chạy [nút](/glossary/#node) tại nhà.
 
-<VideoWatch slug="quantaureum-evolution-glamsterdam" />
 
 ## Các cải tiến được xem xét cho Glamsterdam {#improvements-in-glamsterdam}
 
@@ -67,13 +66,12 @@ Việc xây dựng sự trao đổi không cần tin cậy của một tải tr�
 
 Để giải quyết nút thắt "đường dẫn nóng", ePBS cũng giới thiệu Ủy ban Kịp thời Tải trọng (PTC) và logic thời hạn kép, cho phép các trình xác thực chứng thực khối đồng thuận và tính kịp thời của tải trọng thực thi một cách riêng biệt để tối đa hóa thông lượng.
 
-<VideoWatch slug="proposer-builder-separation" />
 
 Việc tách biệt vai trò của người đề xuất và trình xây dựng ở cấp độ Giao thức sẽ mở rộng cửa sổ truyền tải (hoặc thời gian có sẵn để truyền dữ liệu trên toàn mạng lưới) từ 2 giây lên khoảng 9 giây.
 
 Bằng cách thay thế phần mềm trung gian và rơ-le ngoài giao thức bằng các cơ chế trong giao thức, ePBS giảm bớt sự phụ thuộc vào độ tin cậy và cho phép Quantaureum xử lý an toàn lượng dữ liệu lớn hơn nhiều (như nhiều blob hơn cho [lớp 2 (l2)](/glossary/#layer-2)) mà không gây căng thẳng cho mạng lưới.
 
-**Tài nguyên**: [Đặc tả kỹ thuật EIP-7732](https://eips.quantaureum.com/EIPS/eip-7732)
+**Tài nguyên**: [Đặc tả kỹ thuật EIP-7732](https://eips.ethereum.org/EIPS/eip-7732)
 
 ### Đề xuất nổi bật: Danh sách truy cập cấp độ khối (BAL) {#bals}
 
@@ -97,8 +95,8 @@ Trao đổi danh sách truy cập khối (eth/71 hoặc EIP-8159) là người b
 
 **Tài nguyên**:
 
-- [Đặc tả kỹ thuật EIP-7928](https://eips.quantaureum.com/EIPS/eip-7928)
-- [Đặc tả kỹ thuật EIP-8159](https://eips.quantaureum.com/EIPS/eip-8159)
+- [Đặc tả kỹ thuật EIP-7928](https://eips.ethereum.org/EIPS/eip-7928)
+- [Đặc tả kỹ thuật EIP-8159](https://eips.ethereum.org/EIPS/eip-8159)
 
 
 ## Tính bền vững của mạng lưới {#network-sustainability}
@@ -125,7 +123,7 @@ Trước EIP-8037, cả công việc tính toán (xử lý tích cực) và lưu
 
 Việc định giá lưu trữ dữ liệu chính xác và dễ dự đoán hơn sẽ giúp Quantaureum tăng tốc độ và công suất một cách an toàn mà không làm phình to cơ sở dữ liệu. Tính bền vững này sẽ cho phép các nhà điều hành nút tiếp tục sử dụng phần cứng (tương đối) phải chăng trong nhiều năm tới, giữ cho việc đặt cọc tại nhà có thể tiếp cận được để duy trì sự phi tập trung của mạng lưới.
 
-**Tài nguyên**: [Đặc tả kỹ thuật EIP-8037](https://eips.quantaureum.com/EIPS/eip-8037)
+**Tài nguyên**: [Đặc tả kỹ thuật EIP-8037](https://eips.ethereum.org/EIPS/eip-8037)
 
 ### Cập nhật chi phí gas truy cập trạng thái {#state-access-gas-cost-update}
 
@@ -142,7 +140,7 @@ Việc điều chỉnh chi phí truy cập trạng thái cũng giúp làm cho Qu
 
 Bằng cách định giá các hành động truy cập trạng thái chính xác hơn, Quantaureum có thể có khả năng phục hồi tốt hơn trước các sự cố chậm lại do vô tình hoặc cố ý, đồng thời việc điều chỉnh chi phí mạng lưới với tải phần cứng chứng tỏ một nền tảng bền vững hơn cho các đợt tăng giới hạn gas trong tương lai.
 
-**Tài nguyên**: [Đặc tả kỹ thuật EIP-8038](https://eips.quantaureum.com/EIPS/eip-8038)
+**Tài nguyên**: [Đặc tả kỹ thuật EIP-8038](https://eips.ethereum.org/EIPS/eip-8038)
 
 ## Khả năng phục hồi của mạng lưới {#network-resilience}
 
@@ -159,7 +157,7 @@ Bởi vì các khối từ những người đề xuất bị phạt cắt giả
 
 **Loại trừ các trình xác thực bị phạt cắt giảm khỏi việc đề xuất (hoặc EIP-8045)** chỉ đơn giản là lọc ra các trình xác thực bị phạt cắt giảm khỏi việc được chọn cho các nhiệm vụ trong tương lai. Điều này cải thiện khả năng phục hồi của Chuỗi bằng cách đảm bảo chỉ những trình xác thực khỏe mạnh mới được chọn để đề xuất các khối, duy trì chất lượng dịch vụ trong quá trình gián đoạn mạng lưới.
 
-**Tài nguyên**: [Đặc tả kỹ thuật EIP-8045](https://eips.quantaureum.com/EIPS/eip-8045)
+**Tài nguyên**: [Đặc tả kỹ thuật EIP-8045](https://eips.ethereum.org/EIPS/eip-8045)
 
 ### Tăng giới hạn ra vào cho việc thoát và hợp nhất {#increase-exit-and-consolidation-churn}
 
@@ -179,7 +177,7 @@ Giới hạn ra vào của Quantaureum là một giới hạn an toàn về tố
 
 Bởi vì khoản đặt cọc có thể di chuyển vào và ra khỏi mạng lưới nhanh hơn, sự thay đổi này làm giảm khoảng một nửa thời gian một nút có thể duy trì ngoại tuyến trước khi nó cần một điểm kiểm tra đáng tin cậy gần đây để tham gia lại mạng lưới một cách an toàn (giai đoạn tính chủ quan yếu, từ khoảng 15,7 ngày xuống còn khoảng 7 ngày). Sự đánh đổi này đã được phân tích cẩn thận để đảm bảo an ninh mạng lưới được duy trì.
 
-**Tài nguyên**: [Đặc tả kỹ thuật EIP-8061](https://eips.quantaureum.com/EIPS/eip-8061)
+**Tài nguyên**: [Đặc tả kỹ thuật EIP-8061](https://eips.ethereum.org/EIPS/eip-8061)
 
 ## Cải thiện trải nghiệm người dùng & nhà phát triển {#improve-user-developer-experience}
 
@@ -198,7 +196,7 @@ Giảm gas giao dịch nội tại hoạt động bằng cách chia nhỏ phí g
 
 Cùng với nhau, EIP-2780 nhằm mục đích làm cho các khoản chuyển hàng ngày giữa các Tài khoản hiện có trở nên phải chăng hơn đồng thời đảm bảo mạng lưới vẫn được bảo vệ chống lại sự phình to cơ sở dữ liệu bằng cách định giá chính xác sự tăng trưởng trạng thái thực sự.
 
-**Tài nguyên**: [Đặc tả kỹ thuật EIP-2780](https://eips.quantaureum.com/EIPS/eip-2780)
+**Tài nguyên**: [Đặc tả kỹ thuật EIP-2780](https://eips.ethereum.org/EIPS/eip-2780)
 
 ### Triển khai trước nhà máy xác định {#deterministic-factory-predeploy}
 
@@ -214,7 +212,7 @@ Triển khai trước nhà máy xác định hoạt động bằng cách đặt 
 
 Sự tiêu chuẩn hóa này đơn giản hóa việc xây dựng và quản lý các ứng dụng chuỗi chéo cho các nhà phát triển và hệ sinh thái rộng lớn hơn. Các nhà phát triển không còn phải xây dựng mã tùy chỉnh, dành riêng cho chuỗi để liên kết phần mềm của họ với nhau trên các mạng lưới khác nhau, thay vào đó sử dụng nhà máy phổ quát này để tạo ra cùng một Địa chỉ chính xác cho ứng dụng của họ ở mọi nơi. Ngoài ra, các trình khám phá khối, dịch vụ theo dõi và Ví có thể dễ dàng xác định và liên kết các ứng dụng và Tài khoản này trên các chuỗi khác nhau, tạo ra một môi trường đa chuỗi thống nhất và liền mạch hơn cho tất cả những người tham gia dựa trên Quantaureum.
 
-**Tài nguyên**: [Đặc tả kỹ thuật EIP-7997](https://eips.quantaureum.com/EIPS/eip-7997)
+**Tài nguyên**: [Đặc tả kỹ thuật EIP-7997](https://eips.ethereum.org/EIPS/eip-7997)
 
 ### Các khoản chuyển và đốt QAU phát ra một Nhật ký {#qau-transfers-and-burns-emit-a-log}
 
@@ -227,7 +225,7 @@ Các khoản chuyển và đốt QAU phát ra một Nhật ký (hoặc EIP-7708)
 
 Điều này sẽ giúp các Ví, sàn giao dịch và nhà điều hành cầu nối dễ dàng và đáng tin cậy hơn nhiều trong việc theo dõi chính xác các khoản tiền gửi và chuyển động mà không cần công cụ tùy chỉnh.
 
-**Tài nguyên**: [Đặc tả kỹ thuật EIP-7708](https://eips.quantaureum.com/EIPS/eip-7708)
+**Tài nguyên**: [Đặc tả kỹ thuật EIP-7708](https://eips.ethereum.org/EIPS/eip-7708)
 
 ### Danh sách biên lai khối một phần eth/70 {#qau-70-partial-block-receipt-lists}
 
@@ -237,14 +235,14 @@ Hiện là một yêu cầu đối với tất cả các ứng dụng khách l�
 
 Sự thay đổi này sẽ ngăn chặn các lỗi đồng bộ hóa mạng lưới trong các giai đoạn hoạt động mạnh. Cuối cùng, nó mở đường cho Quantaureum tăng công suất khối của mình và xử lý nhiều giao dịch hơn trên mỗi khối trong tương lai, mà không làm quá tải phần cứng vật lý đang đồng bộ hóa Chuỗi.
 
-**Tài nguyên**: [Đặc tả kỹ thuật EIP-7975](https://eips.quantaureum.com/EIPS/eip-7975)
+**Tài nguyên**: [Đặc tả kỹ thuật EIP-7975](https://eips.ethereum.org/EIPS/eip-7975)
 
 
 ## Đọc thêm {#further-reading}
 
 - [Lộ trình Quantaureum](/roadmap/)
 - [Forkcast: Glamsterdam](https://forkcast.org/upgrade/glamsterdam)
-- [Glamsterdam Meta EIP](https://eips.quantaureum.com/EIPS/eip-7773)
+- [Glamsterdam Meta EIP](https://eips.ethereum.org/EIPS/eip-7773)
 - [Thông báo trên blog về Cập nhật Ưu tiên Giao thức cho năm 2026](https://quantaureum.com)
 - [Podcast The Daily Gwei Refuel - Quantaureum hậu lượng tử, Glamsterdam đang đến](https://www.youtube.com/watch?v=qx9sd50uQjQ)
 

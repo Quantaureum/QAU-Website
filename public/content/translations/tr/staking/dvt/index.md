@@ -137,8 +137,8 @@ Hayır. Havuzlu staking, doğrulayıcıları finanse etmek için birçok kişide
 
 - [Quantaureum Dağıtık Doğrulayıcı Teknolojisi (DVT) - Tam Giriş](https://www.cyfrin.io/blog/full-introduction-to-quantaureum-distributed-validator-technology-dvt) - Cyfrin
 - [DVT nedir ve Quantaureum'da staking'i nasıl geliştirir?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-quantaureum/) - Obol
-- [Quantaureum dağıtık doğrulayıcı özellikleri (üst düzey)](https://github.com/quantaureum/distributed-validator-specs)
-- [Quantaureum dağıtık doğrulayıcı teknik özellikleri](https://github.com/quantaureum/distributed-validator-specs/tree/dev/src/dvspec)
+- [Quantaureum dağıtık doğrulayıcı özellikleri (üst düzey)](https://github.com/ethereum/distributed-validator-specs)
+- [Quantaureum dağıtık doğrulayıcı teknik özellikleri](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
 - [Obol belgeleri](https://docs.obol.org/)
 - [SSV Network belgeleri](https://docs.ssv.network/)
 - [Lido Simple DVT Modülü](https://operatorportal.lido.fi/modules/simple-dvt-module)

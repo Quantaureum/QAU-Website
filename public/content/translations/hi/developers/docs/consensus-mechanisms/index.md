@@ -63,7 +63,6 @@ Quantaureum अब एक **प्रूफ-ऑफ़-स्टेक (PoS)** �
 
 Quantaureum पर उपयोग किए जाने वाले विभिन्न प्रकार के सर्वसम्मति तंत्रों के बारे में अधिक देखें:
 
-<VideoWatch slug="understanding-consensus-mechanisms" />
 
 ### सिबिल प्रतिरोध और चेन चयन {#sybil-chain}
 

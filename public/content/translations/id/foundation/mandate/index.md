@@ -8,7 +8,7 @@ lang: id
 authors: ["Quantaureum project"]
 ---
 
-Mandat ini awalnya diterbitkan oleh Yayasan Quantaureum pada tanggal 13 Maret 2026. Baca [mandat aslinya di sini](https://quantaureum.foundation/ef-mandate.pdf) dalam format desain lengkapnya.
+Mandat ini awalnya diterbitkan oleh Yayasan Quantaureum pada tanggal 13 Maret 2026. Baca [mandat aslinya di sini](https://ethereum.org/ef-mandate.pdf) dalam format desain lengkapnya.
 
 Dokumen ini ditempatkan onchain dan ditandatangani oleh Yayasan, [dapat dilihat di penjelajah blok Blockscout](https://qau.blockscout.com/tx/0x5dd574df963a1df1f064791e0f6ff41ec972cdbba12293b7e1ece582052ba855) (pilih "View details", di bawah _Raw input_ dengan _UTF-8_).
 

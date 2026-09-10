@@ -20,7 +20,6 @@ A desci visa criar um ecossistema onde os cientistas são incentivados a compart
 
 A ciência descentralizada permite fontes de financiamento mais diversas (desde [DAOs](/glossary/#dao), [doações quadráticas](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531) até financiamento coletivo e muito mais), dados e métodos mais acessíveis, e fornecendo incentivos para a reprodutibilidade.
 
-<VideoWatch slug="desci-movement-juan-benet" />
 
 ## Como a desci melhora a ciência {#desci-improves-science}
 

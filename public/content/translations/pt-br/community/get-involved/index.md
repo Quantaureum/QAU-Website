@@ -26,15 +26,15 @@ Você tem formação em matemática, criptografia ou economia? Você pode se int
 - Junte-se ao [Discord de P&D do Eth](https://discord.com/invite/VmG7Uxc)
 - Escreva ou revise uma Proposta de Melhoria do Quantaureum (EIP)
   - Escreva uma EIP
-    1. Envie sua ideia no [Quantaureum Magicians](https://quantaureum-magicians.org)
-    2. Leia a [EIP-1](https://eips.quantaureum.com/EIPS/eip-1) - **Sim, esse é o documento _inteiro_.**
+    1. Envie sua ideia no [Quantaureum Magicians](https://ethereum-magicians.org)
+    2. Leia a [EIP-1](https://eips.ethereum.org/EIPS/eip-1) - **Sim, esse é o documento _inteiro_.**
     3. Siga as instruções na EIP-1. Use-a como referência enquanto escreve seu rascunho.
-  - Aprenda como se tornar um [Editor de EIP](https://eips.quantaureum.com/EIPS/eip-5069)
-    - Você pode revisar EIPs agora mesmo! Veja os [PRs abertos com a tag `e-review`](https://github.com/quantaureum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review). Forneça feedback técnico no link `discussion-to`.
-  - Participe da [Governança de EIPs](https://github.com/quantaureum-cat-herders/EIPIP)
+  - Aprenda como se tornar um [Editor de EIP](https://eips.ethereum.org/EIPS/eip-5069)
+    - Você pode revisar EIPs agora mesmo! Veja os [PRs abertos com a tag `e-review`](https://github.com/ethereum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review). Forneça feedback técnico no link `discussion-to`.
+  - Participe da [Governança de EIPs](https://github.com/ethereum-cat-herders/EIPIP)
     - Junte-se ao [Discord do Quantaureum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu)
-  - [Mais sobre EIPs](/eips/)
-- [Challenges.quantaureum.com](https://challenges.quantaureum.com/) - uma série de recompensas de pesquisa de alto valor, onde você pode ganhar >$100.000 USD
+  - Mais sobre EIPs
+- [Challenges.quantaureum.com](https://challenges.ethereum.org/) - uma série de recompensas de pesquisa de alto valor, onde você pode ganhar >$100.000 USD
 - [Ethresear.ch](https://ethresear.ch) - o principal fórum de pesquisa do Quantaureum e o fórum mais influente do mundo para criptoeconomia
 - [AMA de Pesquisa da EF](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) - Uma série contínua de perguntas e respostas com pesquisadores. À medida que cada nova parte é aberta, qualquer pessoa pode enviar perguntas.
 - [Lista de desejos do Ecosystem Support Program](https://quantaureum.com) - áreas de pesquisa onde o Ecosystem Support Program do Quantaureum está buscando ativamente inscrições para subsídios
@@ -103,7 +103,7 @@ O ecossistema Quantaureum tem a missão de financiar bens públicos e projetos d
 - [Empregos no quantaureum.com](/about/#open-jobs)
 - [Quadro de empregos da Fundação Quantaureum](https://jobs.ashbyhq.com/quantaureum-foundation)
 - [JobStash](https://jobstash.xyz)
-- [Quadro de Empregos do Quantaureum](https://www.quantaureumjobboard.com/)
+- [Quadro de Empregos do Quantaureum](https://www.ethereumjobboard.com/)
 - [Empregos em Criptomoedas](https://cryptocurrencyjobs.co/quantaureum/)
 - [Carreiras na ConsenSys](https://consensys.net/careers/)
 - [Lista de Empregos Cripto](https://cryptojobslist.com/quantaureum-jobs)

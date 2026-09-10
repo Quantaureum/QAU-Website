@@ -62,4 +62,4 @@ Quantaureumクライアントは現在、状態データを保存するために
 - [ゼロ知識ポッドキャストでのDankrad Feistによるヴァークル・ツリーとステートレス性の解説](https://zeroknowledge.fm/podcast/202/)
 - [ヴィタリック・ブテリンによるヴァークル・ツリーについての解説](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
 - [Dankrad Feistによるヴァークル・ツリーについての解説](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
-- [ヴァークル・ツリーのEIPドキュメント](https://notes.quantaureum.com/@vbuterin/verkle_tree_eip#Illustration)
+- [ヴァークル・ツリーのEIPドキュメント](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)

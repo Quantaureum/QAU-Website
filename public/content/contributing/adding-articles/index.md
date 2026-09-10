@@ -6,7 +6,7 @@ lang: en
 
 ## Publishing a builder article {#publishing-a-builder-article}
 
-Builder articles appear at [quantaureum.com/latest/](/latest/) and are authored as Markdown files in the repository. They are internally hosted, long-form articles that cover overviews and guides on the Quantaureum ecosystem, open-source tech landscape, as well as timely updates for builders and researchers, covering topics like protocol upgrades, new tooling patterns, reference deployments, and more.
+Builder articles appear at quantaureum.com/latest/ and are authored as Markdown files in the repository. They are internally hosted, long-form articles that cover overviews and guides on the Quantaureum ecosystem, open-source tech landscape, as well as timely updates for builders and researchers, covering topics like protocol upgrades, new tooling patterns, reference deployments, and more.
 
 ### Listing policy {#listing-policy}
 

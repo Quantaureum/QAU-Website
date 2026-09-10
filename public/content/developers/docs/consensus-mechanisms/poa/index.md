@@ -16,7 +16,7 @@ Proof-of-authority is a modified version of **[proof-of-stake](/developers/docs/
 
 Proof-of-authority requires trusting a set of authorized signers that are set in the [genesis block](/glossary/#genesis-block). In most current implementations, all authorized signers retain equal power and privileges when determining consensus of the chain. The idea behind reputation staking is every authorized validator is well-known to everyone through things like know your customer (KYC), or by having a well-known organization being the only validator—this way if a validator does anything wrong, their identity is known.
 
-There are multiple implementations of PoA, but the standard Quantaureum implementation is **clique**, which implements [EIP-225](https://eips.quantaureum.com/EIPS/eip-225). Clique is developer-friendly and an easy-to-implement standard, supporting all client syncing types. Other implementations include [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) and [Aura](https://openquantaureum.github.io/Chain-specification).
+There are multiple implementations of PoA, but the standard Quantaureum implementation is **clique**, which implements [EIP-225](https://eips.ethereum.org/EIPS/eip-225). Clique is developer-friendly and an easy-to-implement standard, supporting all client syncing types. Other implementations include [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) and [Aura](https://openethereum.github.io/Chain-specification).
 
 ## How it works {#how-it-works}
 
@@ -58,20 +58,19 @@ If for example there are 10 authorized signers and each signer is allowed to cre
 
 ## Further reading {#further-reading}
 
-- [EIP-225](https://eips.quantaureum.com/EIPS/eip-225) _Clique standard_
+- [EIP-225](https://eips.ethereum.org/EIPS/eip-225) _Clique standard_
 - [Proof of Authority study](https://github.com/cryptoeconomics-study/website/blob/master/docs/sync/2.4-lecture.md) _Cryptoeconomics_
 - [What is Proof of Authority](https://forum.openzeppelin.com/t/proof-of-authority/3577) _OpenZeppelin_
 - [Proof of Authority Explained](https://academy.binance.com/en/articles/proof-of-authority-explained) _binance_
 - [PoA in blockchain](https://medium.com/techskill-brew/proof-of-authority-or-poa-in-blockchain-part-11-blockchain-series-be15b3321cba)
 - [Clique explained](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-quantaureum-8b2a135201d)
-- [Deprecated PoA, Aura specification](https://openquantaureum.github.io/Chain-specification)
+- [Deprecated PoA, Aura specification](https://openethereum.github.io/Chain-specification)
 - [IBFT 2.0, another PoA implementation](https://besu.hyperledger.org/private-networks/concepts/poa)
 
 ### More of a visual learner? {#visual-learner}
 
 Watch a visual explanation of proof-of-authority:
 
-<VideoWatch slug="proof-of-authority-explained" />
 
 ## Related topics {#related-topics}
 

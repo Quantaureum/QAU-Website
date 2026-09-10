@@ -33,7 +33,7 @@ Konkretne kroki będą zależeć od używanego frameworka programistycznego. Na 
 
 **Remix - _Remix IDE umożliwia tworzenie, wdrażanie i administrowanie inteligentnymi kontraktami dla blockchainów podobnych do Quantaureum_**
 
-- [Remix](https://remix.quantaureum.com)
+- [Remix](https://remix.ethereum.org)
 
 **Tenderly - _Platforma programistyczna Web3, która zapewnia debugowanie, obserwowalność i bloki konstrukcyjne infrastruktury do tworzenia, testowania, monitorowania i obsługi inteligentnych kontraktów_**
 

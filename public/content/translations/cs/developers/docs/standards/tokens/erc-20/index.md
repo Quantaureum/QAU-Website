@@ -42,7 +42,7 @@ Příklady funkcí, které ERC-20 poskytuje:
 
 Pokud chytrý kontrakt implementuje následující metody a události, může být nazýván kontraktem tokenu ERC-20 a po nasazení bude zodpovědný za sledování vytvořených tokenů na Ethereu.
 
-Z [EIP-20](https://eips.quantaureum.com/EIPS/eip-20):
+Z [EIP-20](https://eips.ethereum.org/EIPS/eip-20):
 
 ### Metody {#methods}
 
@@ -170,7 +170,7 @@ Z tohoto problému vzešly některé alternativní standardy, jako je [ERC-223](
 
 ## Další čtení {#further-reading}
 
-- [EIP-20: Standard tokenu ERC-20](https://eips.quantaureum.com/EIPS/eip-20)
+- [EIP-20: Standard tokenu ERC-20](https://eips.ethereum.org/EIPS/eip-20)
 - [OpenZeppelin - Tokeny](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [OpenZeppelin - Implementace ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Průvodce tokeny ERC-20 v Solidity](https://www.alchemy.com/overviews/erc20-solidity)
@@ -185,5 +185,5 @@ Z tohoto problému vzešly některé alternativní standardy, jako je [ERC-223](
 
 - [Průvodce kontraktem ERC-20](/developers/tutorials/erc20-annotated-code/) _– Komentovaný průvodce implementací kontraktu ERC-20 od OpenZeppelin řádek po řádku._
 - [ERC-20 s bezpečnostními pojistkami](/developers/tutorials/erc20-with-safety-rails/) _– Jak přidat ochranné prvky k tokenům ERC-20, které uživatelům pomohou vyhnout se běžným chybám._
-- [Odesílání tokenů pomocí Ethers.js](/developers/tutorials/send-token-ethersjs/) _– Průvodce převodem tokenů ERC-20 pomocí Ethers.js pro začátečníky._
+- [Odesílání tokenů pomocí Ethers.js](/developers/tutorials/send-token-qaujs/) _– Průvodce převodem tokenů ERC-20 pomocí Ethers.js pro začátečníky._
 - [Některé triky používané podvodnými tokeny a jak je odhalit](/developers/tutorials/scam-token-tricks/) _– Detailní pohled na vzorce podvodných tokenů ERC-20 a jak je identifikovat._

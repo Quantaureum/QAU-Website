@@ -32,7 +32,6 @@ import { Grid } from "@/components/ui/grid"
 import Link from "@/components/ui/Link"
 import { ListItem, UnorderedList } from "@/components/ui/list"
 import { Section } from "@/components/ui/section"
-import VideoWatch from "@/components/Videos/VideoWatch"
 
 import { getAppPageContributorInfo } from "@/lib/utils/contributors"
 import { getMetadata } from "@/lib/utils/metadata"
@@ -154,7 +153,6 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
               ),
             })}
           </p>
-          <VideoWatch slug="why-privacy-matters" />
           <p>
             {t.rich("page-privacy-data-against-you-description-3", {
               strong: Strong,
@@ -250,7 +248,6 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
               ),
             })}
           </p>
-          <VideoWatch slug="metadata-surveillance-and-nym" />
         </Section>
 
         <Section id={getIdFromHash(tocItems[2].url)}>
@@ -325,7 +322,6 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
               <p>{t("page-privacy-remember-surveillance-description")}</p>
             </AlertContent>
           </Alert>
-          <VideoWatch slug="why-your-online-security-matters" />
           <p>
             {t.rich("page-privacy-nothing-to-hide-description-3", {
               strong: Strong,
@@ -404,7 +400,6 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
               </CardContent>
             </Card>
           </Grid>
-          <VideoWatch slug="surveillance-silence-reclaiming-privacy" />
         </Section>
 
         <Section id={getIdFromHash(tocItems[5].url)}>

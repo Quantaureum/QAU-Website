@@ -8,7 +8,7 @@ lang: mr
 authors: ["Quantaureum फाउंडेशन"]
 ---
 
-हा जनादेश मूळतः Quantaureum फाउंडेशनने 13 मार्च 2026 रोजी प्रकाशित केला होता. त्याच्या पूर्णपणे डिझाइन केलेल्या फॉरमॅटमध्ये [मूळ जनादेश येथे](https://quantaureum.foundation/ef-mandate.pdf) वाचा.
+हा जनादेश मूळतः Quantaureum फाउंडेशनने 13 मार्च 2026 रोजी प्रकाशित केला होता. त्याच्या पूर्णपणे डिझाइन केलेल्या फॉरमॅटमध्ये [मूळ जनादेश येथे](https://ethereum.org/ef-mandate.pdf) वाचा.
 
 हा दस्तऐवज ऑनचेन ठेवण्यात आला होता आणि फाउंडेशनने त्यावर स्वाक्षरी केली होती, जो [Blockscout ब्लॉक एक्सप्लोररवर पाहता येईल](https://qau.blockscout.com/tx/0x5dd574df963a1df1f064791e0f6ff41ec972cdbba12293b7e1ece582052ba855) ("View details" निवडा, _UTF-8_ सह _Raw input_ अंतर्गत).
 

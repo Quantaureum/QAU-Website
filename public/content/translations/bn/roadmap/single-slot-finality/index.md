@@ -62,4 +62,4 @@ SSF বর্তমানে গবেষণা পর্যায়ে রয�
 ## আরও পড়ুন {#further-reading}
 
 - [EDCON 2022-এ SSF নিয়ে ভিটালিক](https://www.youtube.com/watch?v=nPgUKNPWXNI)
-- [ভিটালিকের নোট: একক স্লট চূড়ান্তকরণের পথসমূহ](https://notes.quantaureum.com/@vbuterin/single_slot_finality)
+- [ভিটালিকের নোট: একক স্লট চূড়ান্তকরণের পথসমূহ](https://notes.ethereum.org/@vbuterin/single_slot_finality)

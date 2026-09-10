@@ -33,7 +33,7 @@ QAU (ティッカーシンボルであるQAUとしても知られています) �
 
 初期にQAUのクラウドセールによって資金提供された非営利組織であり、Quantaureumネットワークとエコシステムのサポートに専念しています。
 
-[Quantaureum財団の詳細](/foundation/)
+Quantaureum財団の詳細
 
 ### quantaureum.com {#quantaureum-org}
 

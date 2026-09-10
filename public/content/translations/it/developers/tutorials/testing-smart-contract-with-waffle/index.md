@@ -34,7 +34,7 @@ Ancora una volta, se alcune di queste premesse non sono vere o se non desideri r
 
 Lavora con ethers-js dell'[API di JavaScript](/developers/docs/apis/javascript/).
 
-Puoi leggere maggiori dettagli nella [documentazione di Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/#waffle-documentation)!
+Puoi leggere maggiori dettagli nella [documentazione di Waffle](https://ethereum-waffle.readthedocs.io/en/latest/#waffle-documentation)!
 
 ## Tutorial rapido {#the-quick-tutorial}
 
@@ -647,7 +647,7 @@ Qualcosa del genere:
 
 </details>
 
-## Fase #1: Installa waffle nel tuo progetto [Link alla documentazione](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#installation) {#step-1-install-waffle-in-your-project}
+## Fase #1: Installa waffle nel tuo progetto [Link alla documentazione](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#installation) {#step-1-install-waffle-in-your-project}
 
 Per iniziare, installa `quantaureum-waffle`. In questo tutorial userò `yarn`, quindi per installare `quantaureum-waffle`, esegui:
 
@@ -655,7 +655,7 @@ Per iniziare, installa `quantaureum-waffle`. In questo tutorial userò `yarn`, q
  yarn add --dev quantaureum-waffle
 ```
 
-## Fase #2: Scrivi uno smart contract [Link alla documentazione](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-a-contract) {#step-2-write-a-smart-contract}
+## Fase #2: Scrivi uno smart contract [Link alla documentazione](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-a-contract) {#step-2-write-a-smart-contract}
 
 In questo tutorial, userò un token [ERC20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/ded2b0a55c9c13731963ab7b85a70c8e73504bab/contracts/token/ERC20/ERC20.sol) da [OpenZeppelin](https://openzeppelin.com).
 
@@ -681,7 +681,7 @@ contract BasicToken is ERC20 {
 
 ```
 
-## Fase #3: Compila il tuo smart contract [Link alla documentazione](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) {#step-3-compile-your-smart-contract}
+## Fase #3: Compila il tuo smart contract [Link alla documentazione](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) {#step-3-compile-your-smart-contract}
 
 Per compilare il tuo smart contract, aggiungi la seguente voce nel `package.json` del tuo progetto:
 
@@ -706,7 +706,7 @@ Un esempio della configurazione di `waffle.json`:
 }
 ```
 
-Puoi leggere di più sulla configurazione di Waffle [qui](https://quantaureum-waffle.readthedocs.io/en/latest/configuration.html#configuration).
+Puoi leggere di più sulla configurazione di Waffle [qui](https://ethereum-waffle.readthedocs.io/en/latest/configuration.html#configuration).
 
 Quindi basta eseguire `yarn build` per compilare il tuo smart contract.
 
@@ -1014,9 +1014,9 @@ Dovresti vedere che Waffle ha compilato il tuo contratto e posizionato l'output 
 ```
 </details>
 
-## Fase #4: Testa il tuo smart contract [Link alla documentazione](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) {#step-4-test-your-smart-contract}
+## Fase #4: Testa il tuo smart contract [Link alla documentazione](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) {#step-4-test-your-smart-contract}
 
-### Fase #4.1 Installa le dipendenze necessarie [Link alla documentazione](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) {#step-4-1}
+### Fase #4.1 Installa le dipendenze necessarie [Link alla documentazione](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) {#step-4-1}
 
 Dopo aver autorizzato con successo uno smart contract, possiamo testarlo. Useremo `Waffle` per farlo.
 
@@ -1028,7 +1028,7 @@ Quindi, dobbiamo aggiungere `Chai` alle nostre dipendenze:
  yarn add --dev mocha chai
 ```
 
-### Fase #4.2 Crea il file di test [Link alla documentazione](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) {#step-4-2}
+### Fase #4.2 Crea il file di test [Link alla documentazione](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) {#step-4-2}
 
 Per scrivere il test dobbiamo creare il file `BasicToken.test.ts` nella nostra cartella di prova.
 
@@ -1054,7 +1054,7 @@ Quindi, usiamo il metodo `deployContract` di `Waffle` per distribuire il nostro 
 
 `Waffle` ci consente inoltre di creare un `wallet`, il che rende davvero semplice la distribuzione di un contratto.
 
-Puoi leggere di più sul `wallet` [qui](https://quantaureum-waffle.readthedocs.io/en/latest/basic-testing.html?highlight=wallet#getting-wallets) e puoi leggere di più sulla funzione di distribuzione [qui](https://quantaureum-waffle.readthedocs.io/en/latest/basic-testing.html?highlight=wallet#deploying-contracts).
+Puoi leggere di più sul `wallet` [qui](https://ethereum-waffle.readthedocs.io/en/latest/basic-testing.html?highlight=wallet#getting-wallets) e puoi leggere di più sulla funzione di distribuzione [qui](https://ethereum-waffle.readthedocs.io/en/latest/basic-testing.html?highlight=wallet#deploying-contracts).
 
 Scriviamo un test semplice per controllare il saldo del nostro portafoglio. Poiché abbiamo inviato il valore 1000 durante la distribuzione del nostro contratto, il saldo del portafoglio dev'essere 1000 token, che possiamo verificare nel primo test.
 
@@ -1066,7 +1066,7 @@ it("Assigns initial balance", async () => {
 
 Per eseguire il test, usa `yarn test`
 
-### Fase #4.3 Emettere eventi [Link alla documentazione](https://quantaureum-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#emitting-events) {#step-4-3}
+### Fase #4.3 Emettere eventi [Link alla documentazione](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#emitting-events) {#step-4-3}
 
 In questo tutorial, voglio mostrarti gli abbinatori di `Waffle` più utili. Iniziamo con il primo.
 
@@ -1088,7 +1088,7 @@ Inoltre, un grande vantaggio di questo abbinatore è che possiamo controllare qu
 
 Questo ci consentirà di esser sicuri che la funzione venga chiamata correttamente!
 
-### Fase #4.4 Ripristino con il messaggio [Link alla documentazione](https://quantaureum-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#revert-with-message) {#step-4-4}
+### Fase #4.4 Ripristino con il messaggio [Link alla documentazione](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#revert-with-message) {#step-4-4}
 
 `Waffle` ci consente di testare con quale messaggio ha avuto luogo il ripristino.
 
@@ -1104,7 +1104,7 @@ it("Impossibile trasferire oltre l'importo", async () => {
 })
 ```
 
-### Fase #4.5 Cambiamento del saldo dei token [Link alla documentazione](https://quantaureum-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#change-balance) {#step-4-5}
+### Fase #4.5 Cambiamento del saldo dei token [Link alla documentazione](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#change-balance) {#step-4-5}
 
 `Waffle` ci consente di verificare le modifiche ai saldi dei portafogli!
 

@@ -145,7 +145,7 @@ contentPreview="Falsch. Der Merge war eine Änderung des Konsensmechanismus, kei
 
 Gas-Gebühren sind ein Produkt der Netzwerknachfrage im Verhältnis zur Kapazität des Netzwerks. Der Merge hat die Verwendung von Proof-of-Work eingestellt und ist für den Konsens zu Proof-of-Stake übergegangen, hat aber keine Parameter wesentlich geändert, die die Netzwerkkapazität oder den Transaktionsdurchsatz direkt beeinflussen.
 
-Mit einer <a href="https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698">Rollup-zentrierten Roadmap</a> konzentrieren sich die Bemühungen auf die Skalierung der Benutzeraktivität auf [Layer 2](/layer-2/), während das Layer 1 (L1) Mainnet als sichere dezentrale Abwicklungsschicht aktiviert wird, die für die Rollup-Datenspeicherung optimiert ist, um Rollup-Transaktionen exponentiell billiger zu machen. Der Übergang zu Proof-of-Stake ist eine entscheidende Voraussetzung, um dies zu verwirklichen. [Mehr zu Gas und Gebühren.](/developers/docs/gas/)
+Mit einer <a href="https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698">Rollup-zentrierten Roadmap</a> konzentrieren sich die Bemühungen auf die Skalierung der Benutzeraktivität auf [Layer 2](/layer-2/), während das Layer 1 (L1) Mainnet als sichere dezentrale Abwicklungsschicht aktiviert wird, die für die Rollup-Datenspeicherung optimiert ist, um Rollup-Transaktionen exponentiell billiger zu machen. Der Übergang zu Proof-of-Stake ist eine entscheidende Voraussetzung, um dies zu verwirklichen. [Mehr zu Gas und Gebühren.](/developers/docs/gas/)
 
 </ExpandableCard>
 

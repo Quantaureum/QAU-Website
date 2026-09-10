@@ -27,11 +27,10 @@ Bevor eine Transaktion jemals signiert wird, muss ein Benutzer Daten aus der Blo
 
 Der Knoten-Anbieter kann die IP-Adresse des Benutzers, den Geräte-Fingerabdruck, spezifische abgefragte Adressen sowie den Zeitpunkt und die Häufigkeit seiner Aktivitäten sehen. Selbst wenn ein Benutzer danach eine private Transaktion sendet, hat der Infrastrukturanbieter bereits Zugriff auf eine detaillierte Karte seiner Absichten.
 
-<VideoWatch slug="quantaureum-privacy-stack-andy-guzman" />
 
 Das Durchsickern von Metadaten auf der Zugriffsebene ist eines der hartnäckigsten Privatsphäre-Probleme in allen Blockchain-Systemen. Quantaureum zielt darauf ab, das Durchsickern von Metadaten durch Privatsphäre beim Ursprung (Verbergen, wer gefragt hat), Privatsphäre beim Inhalt (Verbergen, was gefragt wurde) und die Verifizierung der Richtigkeit der zurückgegebenen Informationen zu beheben.
 
-**Ursprungs-Privatsphäre (Origin privacy)** nutzt [anonyme RPCs](https://privreads.quantaureum.foundation/feed/anon-rpc/) und anonyme Netzwerklösungen, um die Entität zu verschleiern, die die Daten anfordert. **Inhalts-Privatsphäre (Content privacy)** verwendet Taktiken wie Private Information Retrieval und [Oblivious RAM](https://en.wikipedia.org/wiki/Oblivious_RAM), um die abgefragten Daten zu verbergen, während die **Verifizierung der Richtigkeit** Light Clients verwendet, um zu beweisen, dass die zurückgegebenen Daten korrekt sind.
+**Ursprungs-Privatsphäre (Origin privacy)** nutzt [anonyme RPCs](https://privreads.ethereum.org/feed/anon-rpc/) und anonyme Netzwerklösungen, um die Entität zu verschleiern, die die Daten anfordert. **Inhalts-Privatsphäre (Content privacy)** verwendet Taktiken wie Private Information Retrieval und [Oblivious RAM](https://en.wikipedia.org/wiki/Oblivious_RAM), um die abgefragten Daten zu verbergen, während die **Verifizierung der Richtigkeit** Light Clients verwendet, um zu beweisen, dass die zurückgegebenen Daten korrekt sind.
 
 Der kryptographische Baustein hinter der Inhalts-Privatsphäre ist [**Private Information Retrieval (PIR)**](https://en.wikipedia.org/wiki/Private_information_retrieval), eine kryptographische Technik, die es einem Client ermöglicht, eine Datenbank abzufragen und eine spezifische Information abzurufen, ohne dem Server preiszugeben, auf welches Element zugegriffen wurde. Der Server verarbeitet die Anfrage blind und gibt eine verschlüsselte Antwort zurück, die nur die abfragende Wallet entschlüsseln kann.
 
@@ -45,7 +44,7 @@ Sobald eine Transaktion gesendet wird, durchläuft sie die Netzwerkinfrastruktur
 
 Zwei Upgrades auf Protokollebene gehen dieses Problem gemeinsam an:
 
-[**EIP-8141 (Frame-Transaktionen)**](https://eips.quantaureum.com/EIPS/eip-8141) führt einen neuen Transaktionstyp ein, der Transaktionen in Segmente für die Signaturvalidierung und Gebührenautorisierung sowie für die eigentlichen Transaktionsanweisungen aufteilt. Frame-Transaktionen ermöglichen es [Smart Accounts](/roadmap/account-abstraction/), ihre eigenen Signaturschemata zu definieren und externe Smart Contracts zu nutzen, um Gasgebühren zu decken. Strenge Sandboxing-Regeln im Mempool verhindern, dass diese Transaktionen das Netzwerk für Denial-of-Service-Angriffe öffnen.
+[**EIP-8141 (Frame-Transaktionen)**](https://eips.ethereum.org/EIPS/eip-8141) führt einen neuen Transaktionstyp ein, der Transaktionen in Segmente für die Signaturvalidierung und Gebührenautorisierung sowie für die eigentlichen Transaktionsanweisungen aufteilt. Frame-Transaktionen ermöglichen es [Smart Accounts](/roadmap/account-abstraction/), ihre eigenen Signaturschemata zu definieren und externe Smart Contracts zu nutzen, um Gasgebühren zu decken. Strenge Sandboxing-Regeln im Mempool verhindern, dass diese Transaktionen das Netzwerk für Denial-of-Service-Angriffe öffnen.
 
 Frame-Transaktionen werden für Quantaureums [Hegotá-Upgrade](https://forkcast.org/upgrade/hegota/) in Betracht gezogen, das nächste Netzwerk-Upgrade nach dem bevorstehenden [Glamsterdam-Upgrade](/roadmap/glamsterdam/). Dasselbe Upgrade wird es Smart Accounts auch ermöglichen, [quantensichere Signaturen](/roadmap/security/quantum-resistance/) zu übernehmen, bevor der vollständige Post-Quanten-Netzwerkübergang abgeschlossen ist.
 
@@ -55,21 +54,20 @@ Frame-Transaktionen ermöglichen es Konten, ihre eigene Signaturverifizierungsme
 
 </ExpandableCard>
 
-[**EIP-7805 (Fork-Choice Enforced Inclusion Lists, oder FOCIL)**](https://eips.quantaureum.com/EIPS/eip-7805) bietet den Durchsetzungsmechanismus für private Schreibzugriffe. Block-Proposer sind durch Konsensregeln verpflichtet, Transaktionen aus aggregierten lokalen Inklusionslisten, die Transaktionen aus mehreren Quellen sammeln, in ihre Blöcke aufzunehmen. Wenn ein Block-Builder versucht, eine Transaktion zu zensieren, die auf den Inklusionslisten stand, lehnen attestierende Knoten den vorgeschlagenen Block vollständig ab. FOCIL wird derzeit für das [Hegotá-Upgrade](https://forkcast.org/upgrade/hegota/) in Betracht gezogen.
+[**EIP-7805 (Fork-Choice Enforced Inclusion Lists, oder FOCIL)**](https://eips.ethereum.org/EIPS/eip-7805) bietet den Durchsetzungsmechanismus für private Schreibzugriffe. Block-Proposer sind durch Konsensregeln verpflichtet, Transaktionen aus aggregierten lokalen Inklusionslisten, die Transaktionen aus mehreren Quellen sammeln, in ihre Blöcke aufzunehmen. Wenn ein Block-Builder versucht, eine Transaktion zu zensieren, die auf den Inklusionslisten stand, lehnen attestierende Knoten den vorgeschlagenen Block vollständig ab. FOCIL wird derzeit für das [Hegotá-Upgrade](https://forkcast.org/upgrade/hegota/) in Betracht gezogen.
 
 Frame-Transaktionen geben Benutzern die Flexibilität, privatsphäreschonende Transaktionen mit benutzerdefinierten Signaturschemata zu erstellen, während FOCIL sicherstellt, dass diese Transaktionen nicht selektiv zensiert werden können, sobald sie in den Mempool gelangen. Zusammen adressieren sie zwei verschiedene Fehlerpunkte: Der eine ermöglicht das Format privater Transaktionen, der andere garantiert deren Aufnahme. Kein zentraler Akteur kann einen gültigen privaten Transfer blockieren.
 
-<VideoWatch slug="eip-7805-focil-explained" />
 
 Ein zweiter anfälliger Punkt für die Privatsphäre der Benutzer ist die Art und Weise, wie Quantaureum die Reihenfolge von Transaktionen verfolgt, das sogenannte sequentielle Nonce-System. Im standardmäßigen Quantaureum-Kontomodell verwendet jedes Konto einen einzigen, linear inkrementierenden Zähler. Wenn sich eine private Transaktion im Mempool verzögert, stauen sich alle nachfolgenden Transaktionen von diesem Konto dahinter. Die Nonce-Sequenz ermöglicht es Netzwerkbeobachtern auch, mehrere Transaktionen auf dasselbe Ursprungskonto zurückzuführen, was die Privatsphäre untergräbt.
 
-[**EIP-8250 (Keyed Nonces für Frame-Transaktionen)**](https://eips.quantaureum.com/EIPS/eip-8250), das derzeit für Hegotá in Betracht gezogen wird, löst dies, indem es einem einzigen Konto ermöglicht, mehrere parallele Transaktionssequenzen gleichzeitig zu verwalten. Benutzer können viele private Transaktionen über verschiedene Kontexte hinweg zur gleichen Zeit ausführen, und Beobachter können unterschiedliche Aktivitäten nicht mehr zuverlässig mit demselben übergeordneten Konto korrelieren.
+[**EIP-8250 (Keyed Nonces für Frame-Transaktionen)**](https://eips.ethereum.org/EIPS/eip-8250), das derzeit für Hegotá in Betracht gezogen wird, löst dies, indem es einem einzigen Konto ermöglicht, mehrere parallele Transaktionssequenzen gleichzeitig zu verwalten. Benutzer können viele private Transaktionen über verschiedene Kontexte hinweg zur gleichen Zeit ausführen, und Beobachter können unterschiedliche Aktivitäten nicht mehr zuverlässig mit demselben übergeordneten Konto korrelieren.
 
 ### Private Zahlungen und Werttransfers {#private-payments}
 
 Über das Transaktionsrouting und das Nonce-Management hinaus erfordert der Schutz von Schreibzugriffen die Abschirmung der an einem Transfer beteiligten Identitäten und Vermögenswerte. Selbst wenn ein Benutzer privat abfragt und eine Transaktion ohne Zensur sendet, bleiben die Onchain aufgezeichneten Transaktionsdaten öffentlich sichtbar. Jeder kann sehen, wer wie viel an wen gesendet hat, und Chain-Analysefirmen aggregieren diese Daten zu durchsuchbaren Profilen, die auf unbestimmte Zeit bestehen bleiben.
 
-[**EIP-8182 (Private QAU- und ERC-20-Transfers)**](https://eips.quantaureum.com/EIPS/eip-8182), das für das Hegotá-Upgrade vorgeschlagen wurde, führt einen nativen, gemeinsamen abgeschirmten Pool (Shielded Pool) direkt in das Quantaureum-Protokoll für QAU- und ERC-20-Transfers ein. Privacy Pools nutzen kryptographisches Mischen, um die Verbindung zwischen Einzahlung und Abhebung zu trennen, sind heute jedoch nur über Privatsphäre-Apps, Wallets und Layer-2-Netzwerke verfügbar.
+[**EIP-8182 (Private QAU- und ERC-20-Transfers)**](https://eips.ethereum.org/EIPS/eip-8182), das für das Hegotá-Upgrade vorgeschlagen wurde, führt einen nativen, gemeinsamen abgeschirmten Pool (Shielded Pool) direkt in das Quantaureum-Protokoll für QAU- und ERC-20-Transfers ein. Privacy Pools nutzen kryptographisches Mischen, um die Verbindung zwischen Einzahlung und Abhebung zu trennen, sind heute jedoch nur über Privatsphäre-Apps, Wallets und Layer-2-Netzwerke verfügbar.
 
 In der Vergangenheit haben Privatsphäre-Lösungen auf App-Ebene die Liquidität fragmentiert und unter kleinen Anonymitätsmengen (Anonymity Sets) gelitten. EIP-8182 konsolidiert abgeschirmte Transfers auf Protokollebene und ermöglicht es Benutzern, Gelder über verborgene Zustellungsschlüssel (Delivery Keys) weiterzuleiten, ohne spezielle Wallet-Architekturen zu benötigen oder mit fragmentierten Opt-in-Anwendungen interagieren zu müssen.
 
@@ -127,10 +125,10 @@ Kein Teil dieser Arbeit ist abgeschlossen. Zeitpläne sind Ziele, keine Garantie
 
 - [Privatsphäre auf Quantaureum](/privacy/)
 - [PSE-Roadmap: 2025 und darüber hinaus](https://pse.dev/blog/pse-roadmap-2025)
-- [Das Mandat der Quantaureum project](/foundation/mandate/)
+- Das Mandat der Quantaureum project
 - [strawmap.org](https://strawmap.org/)
 - [Zero-Knowledge-Beweise](/zero-knowledge-proofs/)
 - [Dezentrale Identität](/decentralized-identity/)
-- [Kohaku-Roadmap](https://notes.quantaureum.com/@niard/KohakuRoadmap)
+- [Kohaku-Roadmap](https://notes.ethereum.org/@niard/KohakuRoadmap)
 - [Client-Side Proving-Benchmarks](https://ethproofs.org/csp-benchmarks)
-- [zkEVM in Zahlen](https://zkevm.quantaureum.foundation/)
+- [zkEVM in Zahlen](https://zkevm.ethereum.org/)

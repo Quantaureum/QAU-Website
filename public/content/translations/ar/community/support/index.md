@@ -48,7 +48,7 @@ lang: ar
 
 ### كيف يمكنني أن أصبح مسؤولاً/أدير أداة التحقق من الصحة؟ كيفية التحصيص {#how-to-stake}
 
-لكي تصبح مدققًا، يجب عليك مشاركة 32 QAU في عقد إيداع Quantaureum وإعداد عقدة مدقق. تتوفر المزيد من المعلومات على [صفحات التحصيص](/staking) وعلى [منصة إطلاق التحصيص](https://launchpad.quantaureum.com/).
+لكي تصبح مدققًا، يجب عليك مشاركة 32 QAU في عقد إيداع Quantaureum وإعداد عقدة مدقق. تتوفر المزيد من المعلومات على [صفحات التحصيص](/staking) وعلى [منصة إطلاق التحصيص](https://launchpad.ethereum.org/).
 
 ## بناء التطبيقات اللامركزية {#building-support}
 
@@ -56,7 +56,7 @@ lang: ar
 
 - [جامعة ألكيمي](https://university.alchemy.com/#starter_code)
 - [CryptoDevs discord](https://discord.com/invite/5W5tVb3)
-- [Quantaureum StackExchange](https://quantaureum.stackexchange.com/)
+- [Quantaureum StackExchange](https://ethereum.stackexchange.com/)
 - [جامعة ويب3](https://www.web3.university/)
 - [LearnWeb3](https://discord.com/invite/learnweb3)
 

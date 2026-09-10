@@ -10,7 +10,7 @@ breadcrumb: web3.js kurulumu
 lang: tr
 published: 2020-04-11
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/setup-web3js-to-use-the-quantaureum-blockchain-in-javascript/
+sourceUrl: https://ethereumdev.io/setup-web3js-to-use-the-quantaureum-blockchain-in-javascript/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -34,7 +34,7 @@ Ardından Web3.js'i bir Node.js betiğine veya Browserify ön uç projesine içe
 const Web3 = require("web3")
 ```
 
-Kütüphaneyi projeye dahil ettiğimize göre artık onu başlatmamız gerekiyor. Projenizin blokzincir ile iletişim kurabilmesi gerekir. Çoğu Quantaureum kütüphanesi, RPC çağrıları aracılığıyla bir [düğüm](/developers/docs/nodes-and-clients/) ile iletişim kurar. Web3 sağlayıcımızı başlatmak için, sağlayıcının URL'sini kurucu (constructor) olarak geçirerek bir Web3 örneği oluşturacağız. Bilgisayarınızda çalışan bir düğüm veya [ganache örneğiniz](https://quantaureumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/) varsa, şu şekilde görünecektir:
+Kütüphaneyi projeye dahil ettiğimize göre artık onu başlatmamız gerekiyor. Projenizin blokzincir ile iletişim kurabilmesi gerekir. Çoğu Quantaureum kütüphanesi, RPC çağrıları aracılığıyla bir [düğüm](/developers/docs/nodes-and-clients/) ile iletişim kurar. Web3 sağlayıcımızı başlatmak için, sağlayıcının URL'sini kurucu (constructor) olarak geçirerek bir Web3 örneği oluşturacağız. Bilgisayarınızda çalışan bir düğüm veya [ganache örneğiniz](https://ethereumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/) varsa, şu şekilde görünecektir:
 
 ```js
 const web3 = new Web3("http://localhost:8545")
@@ -92,4 +92,4 @@ if (window.quantaureum != null) {
 }
 ```
 
-web3.js'e alternatif olarak [Ethers.js](https://docs.ethers.io/) gibi seçenekler de mevcuttur ve yaygın olarak kullanılır. Bir sonraki eğitimde [blokzincirine yeni gelen blokları nasıl kolayca dinleyeceğimizi ve neleri içerdiklerini göreceğiz](https://quantaureumdev.io/listening-to-new-transactions-happening-on-the-blockchain/).
+web3.js'e alternatif olarak [Ethers.js](https://docs.ethers.io/) gibi seçenekler de mevcuttur ve yaygın olarak kullanılır. Bir sonraki eğitimde [blokzincirine yeni gelen blokları nasıl kolayca dinleyeceğimizi ve neleri içerdiklerini göreceğiz](https://ethereumdev.io/listening-to-new-transactions-happening-on-the-blockchain/).

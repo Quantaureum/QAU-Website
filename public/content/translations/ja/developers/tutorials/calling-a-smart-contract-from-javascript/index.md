@@ -12,7 +12,7 @@ breadcrumb: "JSからコントラクトを呼び出す"
 lang: ja
 published: 2020-04-19
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/calling-a-smart-contract-from-javascript/
+sourceUrl: https://ethereumdev.io/calling-a-smart-contract-from-javascript/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -75,7 +75,7 @@ const ERC20TransferABI = [
 const DAI_ADDRESS = "0x6b175474e89094c44da98b954eedeac495271d0f"
 ```
 
-このプロジェクトでは、完全なERC-20のABIを削り、`balanceOf`と`transfer`関数のみを保持していますが、[完全なERC-20のABIはこちら](https://quantaureumdev.io/abi-for-erc20-contract-on-quantaureum/)で確認できます。
+このプロジェクトでは、完全なERC-20のABIを削り、`balanceOf`と`transfer`関数のみを保持していますが、[完全なERC-20のABIはこちら](https://ethereumdev.io/abi-for-erc20-contract-on-quantaureum/)で確認できます。
 
 次に、スマート・コントラクトをインスタンス化する必要があります。
 
@@ -113,7 +113,7 @@ daiToken.methods.balanceOf(senderAddress).call(function (err, res) {
 })
 ```
 
-DAIのERC-20は18桁の小数部を持つため、正しい量を取得するにはゼロを18個取り除く必要があることを覚えておいてください。JavaScriptは大きな数値を処理できないため、uint256は文字列として返されます。[JSで大きな数値を扱う方法](https://quantaureumdev.io/how-to-deal-with-big-numbers-in-javascript/)がわからない場合は、bignumber.jsに関するチュートリアルを確認してください。
+DAIのERC-20は18桁の小数部を持つため、正しい量を取得するにはゼロを18個取り除く必要があることを覚えておいてください。JavaScriptは大きな数値を処理できないため、uint256は文字列として返されます。[JSで大きな数値を扱う方法](https://ethereumdev.io/how-to-deal-with-big-numbers-in-javascript/)がわからない場合は、bignumber.jsに関するチュートリアルを確認してください。
 
 ## Send: スマート・コントラクトの関数へのトランザクションの送信 {#send-sending-a-transaction-to-a-smart-contract-function}
 
@@ -131,6 +131,6 @@ daiToken.methods
   })
 ```
 
-呼び出し関数は、ブロックチェーンにマイニングされるトランザクションのハッシュを返します。Quantaureumでは、トランザクションのハッシュは予測可能です。そのため、実行される前にトランザクションのハッシュを取得することができます（[ハッシュの計算方法についてはこちらをご覧ください](https://quantaureum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)）。
+呼び出し関数は、ブロックチェーンにマイニングされるトランザクションのハッシュを返します。Quantaureumでは、トランザクションのハッシュは予測可能です。そのため、実行される前にトランザクションのハッシュを取得することができます（[ハッシュの計算方法についてはこちらをご覧ください](https://ethereum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)）。
 
-この関数はトランザクションをブロックチェーンに送信するだけなので、それがマイニングされてブロックチェーンに含まれるタイミングがわかるまで、結果を見ることはできません。次のチュートリアルでは、[ハッシュを知ることで、ブロックチェーン上でトランザクションが実行されるのを待つ方法](https://quantaureumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/)を学びます。
+この関数はトランザクションをブロックチェーンに送信するだけなので、それがマイニングされてブロックチェーンに含まれるタイミングがわかるまで、結果を見ることはできません。次のチュートリアルでは、[ハッシュを知ることで、ブロックチェーン上でトランザクションが実行されるのを待つ方法](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/)を学びます。

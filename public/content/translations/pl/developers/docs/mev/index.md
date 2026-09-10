@@ -136,7 +136,7 @@ W odpowiedzi na ataki typu handel kanapkowy i wyprzedzanie, inwestorzy mogą zac
 
 Mempoole wymagające zezwolenia przyspieszyłyby również ryzyko centralizacji opisane w poprzedniej sekcji. Duże pule obsługujące wielu walidatorów prawdopodobnie skorzystają na oferowaniu prywatności transakcji inwestorom i użytkownikom, zwiększając swoje przychody z MEV.
 
-Zwalczanie tych problemów związanych z MEV w Quantaureum po The Merge jest kluczowym obszarem badań. Do tej pory dwoma rozwiązaniami zaproponowanymi w celu zmniejszenia negatywnego wpływu MEV na decentralizację i bezpieczeństwo Quantaureum po The Merge są [**separacja proponującego i budującego (PBS)**](/roadmap/pbs/) oraz [**Builder API**](https://github.com/quantaureum/builder-specs).
+Zwalczanie tych problemów związanych z MEV w Quantaureum po The Merge jest kluczowym obszarem badań. Do tej pory dwoma rozwiązaniami zaproponowanymi w celu zmniejszenia negatywnego wpływu MEV na decentralizację i bezpieczeństwo Quantaureum po The Merge są [**separacja proponującego i budującego (PBS)**](/roadmap/pbs/) oraz [**Builder API**](https://github.com/ethereum/builder-specs).
 
 ### Separacja proponującego i budującego {#proposer-builder-separation}
 
@@ -162,9 +162,9 @@ Podobnie walidatorzy nie muszą ufać budowniczym, że nie zatają ciał bloków
 
 ### Builder API {#builder-api}
 
-Chociaż separacja proponującego i budującego obiecuje zmniejszyć skutki wyodrębniania MEV, jej wdrożenie wymaga zmian w protokole konsensusu. W szczególności należałoby zaktualizować regułę [wyboru rozwidlenia](/developers/docs/consensus-mechanisms/pos/#fork-choice) w Beacon Chain. [Builder API](https://github.com/quantaureum/builder-specs) to tymczasowe rozwiązanie mające na celu zapewnienie działającej implementacji separacji proponującego i budującego, aczkolwiek z wyższymi założeniami dotyczącymi zaufania.
+Chociaż separacja proponującego i budującego obiecuje zmniejszyć skutki wyodrębniania MEV, jej wdrożenie wymaga zmian w protokole konsensusu. W szczególności należałoby zaktualizować regułę [wyboru rozwidlenia](/developers/docs/consensus-mechanisms/pos/#fork-choice) w Beacon Chain. [Builder API](https://github.com/ethereum/builder-specs) to tymczasowe rozwiązanie mające na celu zapewnienie działającej implementacji separacji proponującego i budującego, aczkolwiek z wyższymi założeniami dotyczącymi zaufania.
 
-Builder API to zmodyfikowana wersja [Engine API](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md) używanego przez klientów warstwy konsensusu do żądania ładunków wykonawczych od klientów warstwy wykonawczej. Zgodnie ze [specyfikacją uczciwego walidatora](https://github.com/quantaureum/consensus-specs/blob/master/specs/bellatrix/validator.md), walidatorzy wybrani do obowiązków proponowania bloków żądają pakietu transakcji od podłączonego klienta warstwy wykonawczej, który włączają do proponowanego bloku Beacon Chain.
+Builder API to zmodyfikowana wersja [Engine API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) używanego przez klientów warstwy konsensusu do żądania ładunków wykonawczych od klientów warstwy wykonawczej. Zgodnie ze [specyfikacją uczciwego walidatora](https://github.com/ethereum/consensus-specs/blob/master/specs/bellatrix/validator.md), walidatorzy wybrani do obowiązków proponowania bloków żądają pakietu transakcji od podłączonego klienta warstwy wykonawczej, który włączają do proponowanego bloku Beacon Chain.
 
 Builder API działa również jako oprogramowanie pośredniczące (middleware) między walidatorami a klientami warstwy wykonawczej; różni się jednak tym, że pozwala walidatorom w Beacon Chain na pozyskiwanie bloków od podmiotów zewnętrznych (zamiast budowania bloku lokalnie przy użyciu klienta warstwy wykonawczej).
 

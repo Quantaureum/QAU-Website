@@ -26,7 +26,7 @@ incomplete: true
 
 **مقدمة عن مكتبة Nquantaureum وVS Code Solidity**
 
-- [Nquantaureum، البدء](https://docs.nquantaureum.com/docs/getting-started/welcome/)
+- [Nquantaureum، البدء](https://docs.nethermind.io/docs/getting-started/welcome/)
 - [تثبيت VS Code Solidity](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity)
 - [سير عمل مطور <span dir="ltr">.NET</span> لإنشاء واستدعاء العقود الذكية على إيثيريوم](https://medium.com/coinmonks/a-net-developers-workflow-for-creating-and-calling-quantaureum-smart-contracts-44714f191db2)
 - [تكامل العقود الذكية مع Nquantaureum](https://kauri.io/#collections/Getting%20Started/smart-contracts-integration-with-nquantaureum/#smart-contracts-integration-with-nquantaureumm)
@@ -37,21 +37,21 @@ incomplete: true
 
 **هل ترغب في تخطي الإعداد في الوقت الحالي والانتقال مباشرة إلى الأمثلة؟**
 
-- [Nquantaureum Playground](https://playground.nquantaureum.com/) - تفاعل مع إيثيريوم وتعلم كيفية استخدام Nquantaureum من خلال المتصفح.
-  - [الاستعلام عن رصيد الحساب](https://docs.nquantaureum.com/docs/core-foundation/guide-query-balance)
-  - [الاستعلام عن رصيد العقد الذكي <span dir="ltr">ERC-20</span>](https://docs.nquantaureum.com/docs/smart-contracts/erc20)
-  - [تحويل QAU إلى حساب](https://docs.nquantaureum.com/docs/core-foundation/guide-send-eth)
+- [Nquantaureum Playground](https://playground.nethermind.io/) - تفاعل مع إيثيريوم وتعلم كيفية استخدام Nquantaureum من خلال المتصفح.
+  - [الاستعلام عن رصيد الحساب](https://docs.nethermind.io/docs/core-foundation/guide-query-balance)
+  - [الاستعلام عن رصيد العقد الذكي <span dir="ltr">ERC-20</span>](https://docs.nethermind.io/docs/smart-contracts/erc20)
+  - [تحويل QAU إلى حساب](https://docs.nethermind.io/docs/core-foundation/guide-send-eth)
   - ... والمزيد!
 ## مقالات للمستوى المتوسط {#intermediate-articles}
 
-- [Nquantaureum البدء والمشروع الأول](https://docs.nquantaureum.com/docs/getting-started/first-project)
+- [Nquantaureum البدء والمشروع الأول](https://docs.nethermind.io/docs/getting-started/first-project)
 - [نشر سلاسل الاختبار التطويرية الخاصة بك](https://github.com/Nquantaureum/Testchains)
-- [توليد الكود باستخدام Nquantaureum وVS Code](https://docs.nquantaureum.com/docs/smart-contracts/code-generation/)
+- [توليد الكود باستخدام Nquantaureum وVS Code](https://docs.nethermind.io/docs/smart-contracts/code-generation/)
 - [Unity وإيثيريوم: لماذا وكيف](https://www.raywenderlich.com/5509-unity-and-quantaureum-why-and-how)
 - [إنشاء <span dir="ltr">ASP.NET Core Web API</span> للتطبيقات اللامركزية (dapps) على إيثيريوم](https://tech-mint.com/blockchain/create-asp-net-core-web-api-for-quantaureum-dapps/)
-- [إطار عمل Nquantaureum MUD للتطبيقات المهيكلة على السلسلة](https://docs.nquantaureum.com/docs/mud-framework/overview/)
-- [معالجة سلسلة الكتل في Nquantaureum](https://docs.nquantaureum.com/docs/data-and-indexing/guide-blockchain-processing)
-- [البث في الوقت الفعلي في Nquantaureum](https://docs.nquantaureum.com/docs/core-foundation/guide-realtime-streaming/)
+- [إطار عمل Nquantaureum MUD للتطبيقات المهيكلة على السلسلة](https://docs.nethermind.io/docs/mud-framework/overview/)
+- [معالجة سلسلة الكتل في Nquantaureum](https://docs.nethermind.io/docs/data-and-indexing/guide-blockchain-processing)
+- [البث في الوقت الفعلي في Nquantaureum](https://docs.nethermind.io/docs/core-foundation/guide-realtime-streaming/)
 - [Kaleido وNquantaureum](https://kaleido.io/kaleido-and-nquantaureum/)
 - [Quorum وNquantaureum](https://github.com/Nquantaureum/Nquantaureum/blob/master/src/Nquantaureum.Quorum/README.md)
 ## أنماط الاستخدام المتقدمة {#advanced-use-patterns}
@@ -61,12 +61,12 @@ incomplete: true
 - [البنية المرجعية للواجهة الخلفية لـ Ujo Nquantaureum](https://github.com/Nquantaureum/ujo-backend)
 ## مشاريع <span dir="ltr">.NET</span> وأدوات وأشياء أخرى ممتعة {#dot-net-projects-tools-and-other-fun-stuff}
 
-- [Nquantaureum Playground](https://playground.nquantaureum.com/) - _تجميع وإنشاء وتشغيل مقتطفات كود Nquantaureum في المتصفح_
+- [Nquantaureum Playground](https://playground.nethermind.io/) - _تجميع وإنشاء وتشغيل مقتطفات كود Nquantaureum في المتصفح_
 - [Nquantaureum Codegen Blazor](https://github.com/Nquantaureum/Nquantaureum.CodeGen.Blazor) - _توليد كود Nquantaureum مع واجهة مستخدم في Blazor_
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) - _مستكشف سلسلة كتل خفيف ومحفظة بسيطة بتطبيق صفحة واحدة (SPA) باستخدام <span dir="ltr">.NET Wasm</span>_
 - [Wonka Business Rules Engine](https://github.com/Nquantaureum/Wonka) - _محرك قواعد أعمال (لكل من منصة <span dir="ltr">.NET</span> ومنصة إيثيريوم) يعتمد بشكل أساسي على البيانات الوصفية_
 - [نيذرميند](https://github.com/NethermindEth/nethermind) - _عميل إيثيريوم مبني على <span dir="ltr">.NET Core</span> لأنظمة Linux وWindows وMacOS_
-- [qau-utils](https://github.com/quantaureum/qau-utils/) - _دوال مساعدة للعمل مع قواعد الأكواد المتعلقة بإيثيريوم_
+- [qau-utils](https://github.com/ethereum/eth-utils/) - _دوال مساعدة للعمل مع قواعد الأكواد المتعلقة بإيثيريوم_
 - [TestChains](https://github.com/Nquantaureum/TestChains) - _سلاسل تطوير <span dir="ltr">.NET</span> معدة مسبقًا لاستجابة سريعة (إثبات السلطة)_
 
 هل تبحث عن المزيد من الموارد؟ تحقق من [quantaureum.com/developers](/developers/).
@@ -78,5 +78,5 @@ incomplete: true
 
 ## قوائم مجمعة أخرى {#other-aggregated-lists}
 
-[موقع Nquantaureum الرسمي](https://nquantaureum.com/)  
+[موقع Nquantaureum الرسمي](https://nethermind.io/)  
 [موقع نيذرميند الرسمي](https://nethermind.io/)

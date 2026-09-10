@@ -65,9 +65,9 @@ Les calldata sont divisées ainsi :
 Explication :
 
 - **Sélecteur de fonction** : Le contrat a moins de 256 fonctions, nous pouvons donc les distinguer avec un seul octet.
-  Ces octets sont généralement non nuls et par conséquent [coûtent seize gaz](https://eips.quantaureum.com/EIPS/eip-2028).
+  Ces octets sont généralement non nuls et par conséquent [coûtent seize gaz](https://eips.ethereum.org/EIPS/eip-2028).
 - **Zéros** : Ces octets sont toujours nuls car une adresse de vingt octets ne nécessite pas un mot de trente-deux octets pour la contenir.
-  Les octets contenant un zéro coûtent quatre gaz ([voir le livre jaune](https://quantaureum.github.io/yellowpaper/paper.pdf), Annexe G,
+  Les octets contenant un zéro coûtent quatre gaz ([voir le livre jaune](https://ethereum.github.io/yellowpaper/paper.pdf), Annexe G,
   p. 27, la valeur pour `G`<sub>`txdatazero`</sub>).
 - **Montant** : Si nous supposons que dans ce contrat `decimals` est de dix-huit (la valeur normale) et que le montant maximum de jetons que nous transférons sera de 10<sup>18</sup>, nous obtenons un montant maximum de 10<sup>36</sup>.
   256<sup>15</sup> &gt; 10<sup>36</sup>, donc quinze octets suffisent.
@@ -201,7 +201,7 @@ Il y a deux raisons pour lesquelles une fonction ne serait pas disponible ici :
 2. Les fonctions qui s'appuient sur [`msg.sender`](https://docs.soliditylang.org/en/v0.8.12/units-and-global-variables.html#block-and-transaction-properties).
    La valeur de `msg.sender` sera l'adresse de `CalldataInterpreter`, et non celle de l'appelant.
 
-Malheureusement, [en regardant les spécifications ERC-20](https://eips.quantaureum.com/EIPS/eip-20), cela ne laisse qu'une seule fonction, `transfer`.
+Malheureusement, [en regardant les spécifications ERC-20](https://eips.ethereum.org/EIPS/eip-20), cela ne laisse qu'une seule fonction, `transfer`.
 Cela ne nous laisse que deux fonctions : `transfer` (car nous pouvons appeler `transferFrom`) et `faucet` (car nous pouvons transférer les jetons en retour à celui qui nous a appelés).
 
 ```solidity

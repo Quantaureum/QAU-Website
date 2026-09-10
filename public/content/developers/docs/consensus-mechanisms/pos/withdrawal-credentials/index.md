@@ -33,7 +33,7 @@ With `0x02` credentials:
 - Validators can consolidate multiple 32 QAU validators into a single higher-balance validator
 - Full exits are still supported through the standard exit queue
 
-Both partial withdrawals and consolidations can be performed via the [Launchpad Validator Actions](https://launchpad.quantaureum.com/en/validator-actions).
+Both partial withdrawals and consolidations can be performed via the [Launchpad Validator Actions](https://launchpad.ethereum.org/en/validator-actions).
 
 **Why validators should prefer 0x02:** It offers better capital efficiency through compounding, more control over when withdrawals happen, and supports validator consolidation. For solo stakers who accumulate rewards over time, this means their effective balance—and thus their rewards—can grow beyond 32 QAU without manual intervention.
 
@@ -51,7 +51,7 @@ For a detailed guide on converting to Type 2 credentials and the MaxEB feature, 
 
 Several tools support choosing or converting between credential types:
 
-- **[Quantaureum Staking Launchpad](https://launchpad.quantaureum.com/en/validator-actions)** - The official tool for deposits and validator management, including credential conversions and consolidations
+- **[Quantaureum Staking Launchpad](https://launchpad.ethereum.org/en/validator-actions)** - The official tool for deposits and validator management, including credential conversions and consolidations
 - **[Pectra Staking Manager](https://pectrastaking.com)** - Web UI with wallet-connect support for conversions and consolidation
 - **[Pectra Validator Ops CLI Tool](https://github.com/Luganodes/Pectra-Batch-Contract)** - Command-line tool for batch conversions
 - **[Ethereal](https://github.com/wealdtech/ethereal)** - CLI tool for Quantaureum operations including validator management

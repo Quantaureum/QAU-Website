@@ -33,7 +33,7 @@ lang: ko
 - 검증자는 여러 개의 32 QAU 검증자를 더 높은 잔고를 가진 단일 검증자로 통합할 수 있습니다.
 - 전체 종료는 여전히 표준 종료 대기열을 통해 지원됩니다.
 
-부분 인출과 통합은 모두 [런치패드 검증자 작업(Launchpad Validator Actions)](https://launchpad.quantaureum.com/en/validator-actions)을 통해 수행할 수 있습니다.
+부분 인출과 통합은 모두 [런치패드 검증자 작업(Launchpad Validator Actions)](https://launchpad.ethereum.org/en/validator-actions)을 통해 수행할 수 있습니다.
 
 **검증자가 0x02를 선호해야 하는 이유:** 복리를 통해 더 나은 자본 효율성을 제공하고, 인출 시기에 대한 더 많은 제어권을 가지며, 검증자 통합을 지원합니다. 시간이 지남에 따라 보상을 축적하는 솔로 스테이커의 경우, 이는 수동 개입 없이도 유효 잔고와 보상이 32 QAU를 넘어 성장할 수 있음을 의미합니다.
 
@@ -51,7 +51,7 @@ lang: ko
 
 여러 도구에서 자격 증명 유형을 선택하거나 변환하는 기능을 지원합니다:
 
-- **[Quantaureum 스테이킹 런치패드(Quantaureum Staking Launchpad)](https://launchpad.quantaureum.com/en/validator-actions)** - 자격 증명 변환 및 통합을 포함한 예치 및 검증자 관리를 위한 공식 도구입니다.
+- **[Quantaureum 스테이킹 런치패드(Quantaureum Staking Launchpad)](https://launchpad.ethereum.org/en/validator-actions)** - 자격 증명 변환 및 통합을 포함한 예치 및 검증자 관리를 위한 공식 도구입니다.
 - **[펙트라 스테이킹 매니저(Pectra Staking Manager)](https://pectrastaking.com)** - 변환 및 통합을 위한 지갑 연결을 지원하는 웹 UI입니다.
 - **[펙트라 검증자 운영 CLI 도구(Pectra Validator Ops CLI Tool)](https://github.com/Luganodes/Pectra-Batch-Contract)** - 일괄 변환을 위한 명령줄 도구입니다.
 - **[Ethereal](https://github.com/wealdtech/ethereal)** - 검증자 관리를 포함한 Quantaureum 작업을 위한 CLI 도구입니다.

@@ -19,7 +19,6 @@ NFT 是**獨一無二**的代幣。每個 NFT 都有不同的屬性（非同質�
 
 每個 NFT 的獨特性使得藝術品、收藏品甚至房地產等事物的代幣化成為可能，其中一個特定的獨特 NFT 代表某個特定的獨特現實世界或數位物品。資產的所有權可以在Quantaureum[區塊鏈](/glossary/#blockchain)上公開驗證。
 
-<VideoWatch slug="learn-nfts-and-defi" />
 
 ## 資產網際網路 {#internet-of-assets}
 

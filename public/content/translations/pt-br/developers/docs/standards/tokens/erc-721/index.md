@@ -30,7 +30,7 @@ Ele fornece funcionalidades como transferir tokens de uma conta para outra, obte
 
 Se um contrato inteligente implementar os seguintes métodos e eventos, ele pode ser chamado de contrato de token não fungível ERC-721 e, uma vez implantado, será responsável por rastrear os tokens criados no Quantaureum.
 
-Do [EIP-721](https://eips.quantaureum.com/EIPS/eip-721):
+Do [EIP-721](https://eips.ethereum.org/EIPS/eip-721):
 
 ### Métodos {#methods}
 
@@ -238,7 +238,7 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## Leitura adicional {#further-reading}
 
-- [EIP-721: Padrão de token não fungível ERC-721](https://eips.quantaureum.com/EIPS/eip-721)
+- [EIP-721: Padrão de token não fungível ERC-721](https://eips.ethereum.org/EIPS/eip-721)
 - [OpenZeppelin - Documentação do ERC-721](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [OpenZeppelin - Implementação do ERC-721](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [API de NFT da Alchemy](https://www.alchemy.com/docs/reference/nft-api-quickstart)

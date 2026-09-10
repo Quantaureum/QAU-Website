@@ -30,7 +30,7 @@ Klucz prywatny EOA zachowuje pełną kontrolę nad kontem po delegowaniu. Na prz
 - Zapewniają ustandaryzowane interfejsy do przekazywania
 - Zawierają wbudowane systemy paymaster
 - Zapewniają kompatybilność w przód
-- Mogą wspierać odporność na cenzurę poprzez [publiczny mempool](https://notes.quantaureum.com/@yoav/unified-erc-4337-mempool)
+- Mogą wspierać odporność na cenzurę poprzez [publiczny mempool](https://notes.ethereum.org/@yoav/unified-erc-4337-mempool)
 - Mogą wymagać, aby funkcja inicjująca (init) była wywoływana tylko z [EntryPoint](https://github.com/qau-infinitism/account-abstraction/releases/tag/v0.8.0)
 
 Innymi słowy, każdy powinien móc działać jako sponsor/przekaźnik transakcji, o ile dostarczy wymagany ważny podpis lub operację użytkownika (UserOperation) z konta. Zapewnia to odporność na cenzurę: jeśli nie jest wymagana żadna niestandardowa infrastruktura, transakcje użytkownika nie mogą być arbitralnie blokowane przez przekaźnik pełniący rolę strażnika (gatekeeper). Na przykład [Delegation Toolkit od MetaMask](https://github.com/MetaMask/delegation-framework/releases/tag/v1.3.0) jawnie współpracuje z dowolnym bundlerem lub paymasterem ERC-4337 na dowolnym łańcuchu, zamiast wymagać serwera specyficznego dla MetaMask.
@@ -49,8 +49,8 @@ Wykorzystując te interfejsy, zdecentralizowane aplikacje (dapp) mogą uzyskać 
 
 Więcej informacji:
 
-- [Specyfikacja ERC-5792](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-5792.md)
-- [Specyfikacja ERC-6900](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-6900.md)
+- [Specyfikacja ERC-5792](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-5792.md)
+- [Specyfikacja ERC-6900](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6900.md)
 
 **Unikanie uzależnienia od dostawcy (Vendor Lock-In)**: Zgodnie z powyższym, dobra implementacja jest neutralna dla dostawcy i interoperacyjna. Często oznacza to przestrzeganie pojawiających się standardów dla inteligentnych kont. Na przykład [Modular Account od Alchemy](https://github.com/alchemyplatform/modular-account) wykorzystuje standard ERC-6900 dla modułowych inteligentnych kont i jest zaprojektowane z myślą o „niewymagającym pozwoleń, interoperacyjnym użyciu”.
 

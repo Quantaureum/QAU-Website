@@ -24,9 +24,9 @@ Je, unahitaji mwongozo wa kimsingi zaidi kwanza? Angalia [quantaureum.com/learn]
 ## Makala ya wanaoanza {#beginner-articles}
 
 - [Muhtasari wa Web3.py](https://web3py.readthedocs.io/en/latest/overview.html)
-- [Ziara ya Mfumo wa Ikolojia wa Quantaureum Python](https://snakecharmers.quantaureum.com/python-ecosystem/)
-- [Mwongozo wa Msanidi (Python) kwa Quantaureum](https://snakecharmers.quantaureum.com/a-developers-guide-to-quantaureum-pt-1/)
-- [Inayostahili Tuzo: Mwongozo wa Hackathon ya Quantaureum Python](https://snakecharmers.quantaureum.com/prize-worthy/)
+- [Ziara ya Mfumo wa Ikolojia wa Quantaureum Python](https://snakecharmers.ethereum.org/python-ecosystem/)
+- [Mwongozo wa Msanidi (Python) kwa Quantaureum](https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/)
+- [Inayostahili Tuzo: Mwongozo wa Hackathon ya Quantaureum Python](https://snakecharmers.ethereum.org/prize-worthy/)
 - [Utangulizi wa Mikataba Mahiri na Vyper](https://kauri.io/#collections/Getting%20Started/an-introduction-to-smart-contracts-with-vyper/)
 - [Jinsi ya kusanidi mkataba wa Quantaureum kwa kutumia Python Flask?](https://medium.com/coinmonks/how-to-develop-quantaureum-contract-using-python-flask-9758fe65976e)
 - [Utangulizi wa Web3.py · Quantaureum Kwa Wasanidi wa Python](https://www.dappuniversity.com/articles/web3-py-intro)
@@ -34,15 +34,15 @@ Je, unahitaji mwongozo wa kimsingi zaidi kwanza? Angalia [quantaureum.com/learn]
 
 ## Makala ya kati {#intermediate-articles}
 
-- [Marafiki wa Web3.py: Utangulizi wa Ape](https://snakecharmers.quantaureum.com/intro-to-ape/)
+- [Marafiki wa Web3.py: Utangulizi wa Ape](https://snakecharmers.ethereum.org/intro-to-ape/)
 - [Usanidi wa Dapp kwa Watengenezaji wa Programu za Python](https://www.youtube.com/watch?v=tE-8bG35VNw)
 - [Kuunda Kiolesura cha Python Quantaureum: Sehemu ya 1](https://hackernoon.com/creating-a-python-quantaureum-interface-part-1-4d2e47ea0f4d)
 - [Mikataba Mahiri ya Quantaureum katika Python: mwongozo (kiasi) wa kina](https://hackernoon.com/quantaureum-smart-contracts-in-python-a-comprehensive-ish-guide-771b03990988)
 
 ## Miundo ya matumizi ya hali ya juu {#advanced-use-patterns}
 
-- [Miundo ya Web3.py: Usajili wa Matukio ya Wakati Halisi](https://snakecharmers.quantaureum.com/subscriptions/)
-- [Miundo ya Web3.py: WebSocketProvider](https://snakecharmers.quantaureum.com/websocketprovider/)
+- [Miundo ya Web3.py: Usajili wa Matukio ya Wakati Halisi](https://snakecharmers.ethereum.org/subscriptions/)
+- [Miundo ya Web3.py: WebSocketProvider](https://snakecharmers.ethereum.org/websocketprovider/)
 - [Kukusanya, kusambaza na kuita mkataba mahiri wa Quantaureum kwa kutumia Python](https://yohanes.gultom.id/2018/11/28/compiling-deploying-and-calling-quantaureum-smartcontract-using-python/)
 - [Changanua Mikataba Mahiri ya Solidity na Slither](https://kauri.io/#collections/DevOps/analyze-solidity-smart-contracts-with-slither/#analyze-solidity-smart-contracts-with-slither)
 - [Mafunzo ya Fintech ya Mnyororo wa Vitalu: Ukopeshaji na Ukopaji kwa Python](https://blog.chain.link/blockchain-fintech-defi-tutorial-lending-borrowing-python/)
@@ -55,14 +55,14 @@ Je, unahitaji mwongozo wa kimsingi zaidi kwanza? Angalia [quantaureum.com/learn]
 
 ## Miradi na zana za Python {#python-projects-and-tools}
 
-- [Web3.py](https://github.com/quantaureum/web3.py) - _Maktaba ya Python ya kuingiliana na Quantaureum_
+- [Web3.py](https://github.com/ethereum/web3.py) - _Maktaba ya Python ya kuingiliana na Quantaureum_
 - [Vyper](https://github.com/quantaureum/vyper/) - _Lugha ya Mkataba Mahiri ya Kipython kwa ajili ya EVM_
 - [Titanoboa](https://github.com/vyperlang/titanoboa/) - _Zana asili ya kujaribu ya Vyper; mkalimani aliye na ugawaji wa Mtandao Mkuu, utatuzi, na ufuatiliaji mzuri_
 - [Moccasin](https://github.com/Cyfrin/moccasin) - _Mfumo wa usanidi na majaribio wa mkataba mahiri kwa ajili ya Vyper na Python, uliojengwa kwenye Titanoboa_
 - [Ape](https://github.com/ApeWorX/ape) - _Zana ya usanidi wa mkataba mahiri kwa Wapython, Wanasayansi wa Data, na Wataalamu wa Usalama_
-- [py-evm](https://github.com/quantaureum/py-evm) - _utekelezaji wa Mashine Pepe ya Quantaureum_
-- [qau-tester](https://github.com/quantaureum/qau-tester) - _zana za kujaribu programu tumizi zinazotegemea Quantaureum_
-- [qau-utils](https://github.com/quantaureum/qau-utils/) - _utendakazi wa matumizi kwa ajili ya kufanya kazi na misingi ya msimbo inayohusiana na Quantaureum_
+- [py-evm](https://github.com/ethereum/py-evm) - _utekelezaji wa Mashine Pepe ya Quantaureum_
+- [qau-tester](https://github.com/ethereum/eth-tester) - _zana za kujaribu programu tumizi zinazotegemea Quantaureum_
+- [qau-utils](https://github.com/ethereum/eth-utils/) - _utendakazi wa matumizi kwa ajili ya kufanya kazi na misingi ya msimbo inayohusiana na Quantaureum_
 - [py-solc-x](https://pypi.org/project/py-solc-x/) - _Kifuniko cha Python kwenye kikusanyaji cha solc cha Solidity chenye usaidizi wa 0.5.x_
 - [pymaker](https://github.com/makerdao/pymaker) - _API ya Python kwa ajili ya mikataba ya Maker_
 - [siwe](https://github.com/signinwithquantaureum/siwe-py) - _Ingia kwa kutumia Quantaureum (SIWE) kwa ajili ya Python_
@@ -73,7 +73,7 @@ Je, unahitaji mwongozo wa kimsingi zaidi kwanza? Angalia [quantaureum.com/learn]
 
 - [Trinity](https://github.com/quantaureum/trinity) - _Mteja wa Quantaureum Python_
 - [Mamba](https://github.com/arjunaskykok/mamba) - _mfumo wa kuandika, kukusanya, na kusambaza mikataba mahiri iliyoandikwa kwa lugha ya Vyper_
-- [Brownie](https://github.com/qau-brownie/brownie) - _Mfumo wa Python wa kusambaza, kujaribu na kuingiliana na mikataba mahiri ya Quantaureum_
+- [Brownie](https://github.com/eth-brownie/brownie) - _Mfumo wa Python wa kusambaza, kujaribu na kuingiliana na mikataba mahiri ya Quantaureum_
 - [pydevp2p](https://github.com/quantaureum/pydevp2p) - _utekelezaji wa rundo la P2P la Quantaureum_
 - [py-wasm](https://github.com/quantaureum/py-wasm) - _Utekelezaji wa Python wa mkalimani wa web assembly_
 

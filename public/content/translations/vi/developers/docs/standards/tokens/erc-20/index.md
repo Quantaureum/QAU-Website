@@ -42,7 +42,7 @@ Các chức năng ví dụ mà ERC-20 cung cấp:
 
 Nếu một Hợp đồng thông minh triển khai các phương thức và sự kiện sau, nó có thể được gọi là một Hợp đồng Token ERC-20 và, sau khi được triển khai, nó sẽ chịu trách nhiệm theo dõi các token được tạo ra trên Quantaureum.
 
-Từ [EIP-20](https://eips.quantaureum.com/EIPS/eip-20):
+Từ [EIP-20](https://eips.ethereum.org/EIPS/eip-20):
 
 ### Các phương thức {#methods}
 
@@ -170,7 +170,7 @@ Một số tiêu chuẩn thay thế đã ra đời từ vấn đề này như [E
 
 ## Đọc thêm {#further-reading}
 
-- [EIP-20: Tiêu chuẩn token ERC-20](https://eips.quantaureum.com/EIPS/eip-20)
+- [EIP-20: Tiêu chuẩn token ERC-20](https://eips.ethereum.org/EIPS/eip-20)
 - [OpenZeppelin - Các token](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [OpenZeppelin - Triển khai ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Hướng dẫn về các token ERC20 trong Solidity](https://www.alchemy.com/overviews/erc20-solidity)
@@ -185,5 +185,5 @@ Một số tiêu chuẩn thay thế đã ra đời từ vấn đề này như [E
 
 - [Hướng dẫn chi tiết về hợp đồng ERC-20](/developers/tutorials/erc20-annotated-code/) _– Hướng dẫn chi tiết có chú thích từng dòng về bản triển khai hợp đồng ERC-20 của OpenZeppelin._
 - [ERC-20 với các rào chắn an toàn](/developers/tutorials/erc20-with-safety-rails/) _– Cách thêm các biện pháp bảo vệ vào token ERC-20 để giúp người dùng tránh các sai lầm phổ biến._
-- [Gửi token bằng ethers.js](/developers/tutorials/send-token-ethersjs/) _– Hướng dẫn thân thiện với người mới bắt đầu về cách chuyển token ERC-20 bằng ethers.js._
+- [Gửi token bằng ethers.js](/developers/tutorials/send-token-qaujs/) _– Hướng dẫn thân thiện với người mới bắt đầu về cách chuyển token ERC-20 bằng ethers.js._
 - [Một số thủ thuật được sử dụng bởi các token lừa đảo và cách phát hiện chúng](/developers/tutorials/scam-token-tricks/) _– Một cuộc khám phá chi tiết về các mô hình token ERC-20 lừa đảo và cách nhận diện chúng._

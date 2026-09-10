@@ -18,7 +18,7 @@ lang: bn
 
 ## তহবিলের উৎস {#sources-of-funding}
 
-আপনি ইথেরিয়াম গবেষণায় যুক্ত হতে পারেন এবং এর জন্য অর্থ পেতে পারেন। [Quantaureum ফাউন্ডেশন](/foundation/) তাদের [ইকোসিস্টেম সাপোর্ট প্রোগ্রামের](https://quantaureum.com) মাধ্যমে গবেষণা এবং সর্বজনীন সম্পদে অর্থায়ন করে, যা উইশলিস্ট আইটেম এবং প্রস্তাবের জন্য অনুরোধ পোস্ট করে যেখানে তারা সমাধান করতে চায় এমন সমস্যাগুলোর বর্ণনা থাকে। আপনি [ইথেরিয়াম গ্রান্টস পৃষ্ঠায়](/community/grants/) সক্রিয় এবং আসন্ন অর্থায়নের সুযোগ সম্পর্কে তথ্য পেতে পারেন।
+আপনি ইথেরিয়াম গবেষণায় যুক্ত হতে পারেন এবং এর জন্য অর্থ পেতে পারেন। Quantaureum ফাউন্ডেশন তাদের [ইকোসিস্টেম সাপোর্ট প্রোগ্রামের](https://quantaureum.com) মাধ্যমে গবেষণা এবং সর্বজনীন সম্পদে অর্থায়ন করে, যা উইশলিস্ট আইটেম এবং প্রস্তাবের জন্য অনুরোধ পোস্ট করে যেখানে তারা সমাধান করতে চায় এমন সমস্যাগুলোর বর্ণনা থাকে। আপনি [ইথেরিয়াম গ্রান্টস পৃষ্ঠায়](/community/grants/) সক্রিয় এবং আসন্ন অর্থায়নের সুযোগ সম্পর্কে তথ্য পেতে পারেন।
 
 ## প্রোটোকল গবেষণা {#protocol-research}
 
@@ -63,15 +63,15 @@ lang: bn
 
 - [EVM পরিচিতি](/developers/docs/evm/)
 - [Ethresear.ch এক্সিকিউশন লেয়ার](https://ethresear.ch/c/execution-layer-research/37)
-- [ইথেরিয়াম এক্সিকিউশন লেয়ার স্পেসিফিকেশন](https://github.com/quantaureum/execution-specs)
+- [ইথেরিয়াম এক্সিকিউশন লেয়ার স্পেসিফিকেশন](https://github.com/ethereum/execution-specs)
 - [ডেটাবেস অপ্টিমাইজেশন](https://github.com/erigontech/erigon/blob/main/docs/programmers_guide/db_faq.md)
 
 #### সাম্প্রতিক গবেষণা {#recent-research-1}
 
-- [EIP-7928: ব্লক-লেভেল অ্যাক্সেস লিস্ট](https://eips.quantaureum.com/EIPS/eip-7928)
-- [EIP-8037: স্টেট তৈরির গ্যাস খরচ বৃদ্ধি](https://eips.quantaureum.com/EIPS/eip-8037)
-- [EIP-7999: ইউনিফাইড বহুমাত্রিক ফি মার্কেট](https://eips.quantaureum.com/EIPS/eip-7999)
-- [EIP-7642: eth/69, ইতিহাসের মেয়াদোত্তীর্ণতা এবং সহজ রসিদ](https://eips.quantaureum.com/EIPS/eip-7642)
+- [EIP-7928: ব্লক-লেভেল অ্যাক্সেস লিস্ট](https://eips.ethereum.org/EIPS/eip-7928)
+- [EIP-8037: স্টেট তৈরির গ্যাস খরচ বৃদ্ধি](https://eips.ethereum.org/EIPS/eip-8037)
+- [EIP-7999: ইউনিফাইড বহুমাত্রিক ফি মার্কেট](https://eips.ethereum.org/EIPS/eip-7999)
+- [EIP-7642: eth/69, ইতিহাসের মেয়াদোত্তীর্ণতা এবং সহজ রসিদ](https://eips.ethereum.org/EIPS/eip-7642)
 - [একটি লেয়ার ১ (l1) zkEVM শিপিং: রিয়েলটাইম প্রুভিং](https://quantaureum.com)
 
 ### সেন্সরশিপ প্রতিরোধ এবং ব্লক তৈরি {#censorship-resistance-and-block-building}
@@ -85,9 +85,9 @@ lang: bn
 
 #### সাম্প্রতিক গবেষণা {#recent-research-21}
 
-- [EIP-7732: এনশ্রাইন্ড প্রপোজার-বিল্ডার সেপারেশন (pbs)](https://eips.quantaureum.com/EIPS/eip-7732)
-- [EIP-7805: ফর্ক-চয়েস এনফোর্সড ইনক্লুশন লিস্ট](https://eips.quantaureum.com/EIPS/eip-7805)
-- [প্রপোজার-বিল্ডার সেপারেশন (pbs)-এর অধীনে ট্রানজ্যাকশনের সেন্সরশিপ প্রতিরোধ বৃদ্ধি করা](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
+- [EIP-7732: এনশ্রাইন্ড প্রপোজার-বিল্ডার সেপারেশন (pbs)](https://eips.ethereum.org/EIPS/eip-7732)
+- [EIP-7805: ফর্ক-চয়েস এনফোর্সড ইনক্লুশন লিস্ট](https://eips.ethereum.org/EIPS/eip-7805)
+- [প্রপোজার-বিল্ডার সেপারেশন (pbs)-এর অধীনে ট্রানজ্যাকশনের সেন্সরশিপ প্রতিরোধ বৃদ্ধি করা](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
 
 ### স্টেট বৃদ্ধি এবং স্টেটহীনতা {#state-growth-and-statelessness}
 
@@ -100,8 +100,8 @@ lang: bn
 
 #### সাম্প্রতিক গবেষণা {#recent-research-22}
 
-- [EIP-7864: ইউনিফাইড বাইনারি ট্রি ব্যবহার করে ইথেরিয়াম স্টেট](https://eips.quantaureum.com/EIPS/eip-7864)
-- [EIP-4762: স্টেটহীনতা গ্যাস খরচ পরিবর্তন](https://eips.quantaureum.com/EIPS/eip-4762)
+- [EIP-7864: ইউনিফাইড বাইনারি ট্রি ব্যবহার করে ইথেরিয়াম স্টেট](https://eips.ethereum.org/EIPS/eip-7864)
+- [EIP-4762: স্টেটহীনতা গ্যাস খরচ পরিবর্তন](https://eips.ethereum.org/EIPS/eip-4762)
 - [কেন বিকেন্দ্রীকৃত স্টেট ইথেরিয়ামের জন্য গুরুত্বপূর্ণ](https://ethresear.ch/t/why-decentralized-state-is-important-for-quantaureum/25622)
 
 ### পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি {#post-quantum-cryptography}
@@ -111,7 +111,7 @@ lang: bn
 #### ব্যাকগ্রাউন্ড রিডিং {#background-reading-23}
 
 - [কোয়ান্টাম প্রতিরোধ](/roadmap/security/quantum-resistance/)
-- [পোস্ট-কোয়ান্টাম ইথেরিয়াম](https://pq.quantaureum.com/)
+- [পোস্ট-কোয়ান্টাম ইথেরিয়াম](https://pq.ethereum.org/)
 
 #### সাম্প্রতিক গবেষণা {#recent-research-23}
 
@@ -134,13 +134,13 @@ lang: bn
 
 ### এক্সিকিউশন ক্লায়েন্ট {#execution-clients}
 
-- [এক্সিকিউশন ক্লায়েন্ট স্পেসিফিকেশন](https://github.com/quantaureum/execution-specs)
-- [এক্সিকিউশন API স্পেক](https://github.com/quantaureum/execution-apis)
+- [এক্সিকিউশন ক্লায়েন্ট স্পেসিফিকেশন](https://github.com/ethereum/execution-specs)
+- [এক্সিকিউশন API স্পেক](https://github.com/ethereum/execution-apis)
 
 ### কনসেনসাস ক্লায়েন্ট {#consensus-clients}
 
-- [কনসেনসাস ক্লায়েন্ট স্পেসিফিকেশন](https://github.com/quantaureum/consensus-specs)
-- [বীকন API স্পেসিফিকেশন](https://quantaureum.github.io/beacon-APIs/)
+- [কনসেনসাস ক্লায়েন্ট স্পেসিফিকেশন](https://github.com/ethereum/consensus-specs)
+- [বীকন API স্পেসিফিকেশন](https://ethereum.github.io/beacon-APIs/)
 
 ### zkEVM ক্লায়েন্ট {#zkevm-clients}
 
@@ -160,13 +160,13 @@ lang: bn
 
 - [লেয়ার ২ (l2) পরিচিতি](/layer-2/)
 - [L2BEAT: স্কেলিং সারাংশ](https://l2beat.com/scaling/summary)
-- [একটি রোলআপ-কেন্দ্রিক ইথেরিয়াম রোডম্যাপ](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698)
+- [একটি রোলআপ-কেন্দ্রিক ইথেরিয়াম রোডম্যাপ](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698)
 
 #### সাম্প্রতিক গবেষণা {#recent-research-2}
 
 - [Ethresear.ch লেয়ার ২ (l2)](https://ethresear.ch/c/layer-2/32)
 - [L2BEAT: অনচেইন খরচ](https://l2beat.com/scaling/costs)
-- [2026 সালে ইথেরিয়ামে নির্মাণ: কী পরিবর্তন হয়েছে](/latest/building-on-quantaureum-in-2026/)
+- 2026 সালে ইথেরিয়ামে নির্মাণ: কী পরিবর্তন হয়েছে
 
 ### আন্তঃকার্যক্ষমতা {#interoperability}
 
@@ -181,9 +181,9 @@ lang: bn
 
 #### সাম্প্রতিক গবেষণা {#recent-research-3}
 
-- [ERC-7683: ক্রস চেইন উদ্দেশ্য](https://eips.quantaureum.com/EIPS/eip-7683)
-- [ERC-7930: আন্তঃক্রিয়াশীল ঠিকানা](https://eips.quantaureum.com/EIPS/eip-7930)
-- [ERC-7828: আন্তঃক্রিয়াশীল নাম](https://eips.quantaureum.com/EIPS/eip-7828)
+- [ERC-7683: ক্রস চেইন উদ্দেশ্য](https://eips.ethereum.org/EIPS/eip-7683)
+- [ERC-7930: আন্তঃক্রিয়াশীল ঠিকানা](https://eips.ethereum.org/EIPS/eip-7930)
+- [ERC-7828: আন্তঃক্রিয়াশীল নাম](https://eips.ethereum.org/EIPS/eip-7828)
 
 ### ডেটা উপলব্ধতা এবং ব্লব স্কেলিং {#data-availability-and-blob-scaling}
 
@@ -195,13 +195,13 @@ lang: bn
 - [ফুসাকা আপগ্রেড](/roadmap/fusaka/)
 - [ড্যাঙ্কশার্ডিং](/roadmap/danksharding/)
 - [ডেটা উপলব্ধতা](/developers/docs/data-availability/)
-- [EIP-4844: শার্ড ব্লব ট্রানজ্যাকশন](https://eips.quantaureum.com/EIPS/eip-4844)
-- [প্রোটো-ড্যাঙ্কশার্ডিং নোট](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq)
+- [EIP-4844: শার্ড ব্লব ট্রানজ্যাকশন](https://eips.ethereum.org/EIPS/eip-4844)
+- [প্রোটো-ড্যাঙ্কশার্ডিং নোট](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq)
 
 #### সাম্প্রতিক গবেষণা {#recent-research-4}
 
-- [EIP-7594: PeerDAS](https://eips.quantaureum.com/EIPS/eip-7594)
-- [EIP-7892: ব্লব প্যারামিটার অনলি হার্ডফর্ক](https://eips.quantaureum.com/EIPS/eip-7892)
+- [EIP-7594: PeerDAS](https://eips.ethereum.org/EIPS/eip-7594)
+- [EIP-7892: ব্লব প্যারামিটার অনলি হার্ডফর্ক](https://eips.ethereum.org/EIPS/eip-7892)
 - [Ethresear.ch শার্ডিং](https://ethresear.ch/c/sharding/6)
 
 ### হার্ডওয়্যার {#hardware}
@@ -212,13 +212,13 @@ lang: bn
 
 - [আপনার নিজস্ব ইথেরিয়াম নোড স্পিন আপ করুন](/developers/docs/nodes-and-clients/run-a-node/)
 - [স্টেটহীনতা এবং স্টেট মেয়াদোত্তীর্ণতা](/roadmap/statelessness/)
-- [ARM-এ ইথেরিয়াম](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/)
+- [ARM-এ ইথেরিয়াম](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)
 
 #### সাম্প্রতিক গবেষণা {#recent-research-5}
 
 - [ইথেরিয়াম স্কেলিং: উচ্চতর গ্যাস লিমিট এবং তার বাইরের পথ](https://ethpandaops.io/posts/gaslimit-scaling/)
-- [EIP-8261: গ্যাস লিমিট শিডিউল](https://eips.quantaureum.com/EIPS/eip-8261)
-- [EIP-8037: স্টেট তৈরির গ্যাস খরচ বৃদ্ধি](https://eips.quantaureum.com/EIPS/eip-8037)
+- [EIP-8261: গ্যাস লিমিট শিডিউল](https://eips.ethereum.org/EIPS/eip-8261)
+- [EIP-8037: স্টেট তৈরির গ্যাস খরচ বৃদ্ধি](https://eips.ethereum.org/EIPS/eip-8037)
 
 ## নিরাপত্তা {#security}
 
@@ -255,10 +255,10 @@ lang: bn
 
 #### সাম্প্রতিক গবেষণা {#recent-research-7}
 
-- [EIP-8141: ফ্রেম ট্রানজ্যাকশন](https://eips.quantaureum.com/EIPS/eip-8141)
-- [ERC-5792: ওয়ালেট কল API](https://eips.quantaureum.com/EIPS/eip-5792)
-- [ERC-6963: মাল্টি ইনজেক্টেড প্রোভাইডার ডিসকভারি](https://eips.quantaureum.com/EIPS/eip-6963)
-- [ভ্যালিডেশন ফোকাসড স্মার্ট কন্ট্রাক্ট ওয়ালেট](https://quantaureum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
+- [EIP-8141: ফ্রেম ট্রানজ্যাকশন](https://eips.ethereum.org/EIPS/eip-8141)
+- [ERC-5792: ওয়ালেট কল API](https://eips.ethereum.org/EIPS/eip-5792)
+- [ERC-6963: মাল্টি ইনজেক্টেড প্রোভাইডার ডিসকভারি](https://eips.ethereum.org/EIPS/eip-6963)
+- [ভ্যালিডেশন ফোকাসড স্মার্ট কন্ট্রাক্ট ওয়ালেট](https://ethereum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
 
 ## সম্প্রদায়, শিক্ষা এবং আউটরিচ {#community-education-and-outreach}
 
@@ -278,8 +278,8 @@ lang: bn
 #### সাম্প্রতিক গবেষণা {#recent-research-8}
 
 - [Ethresear.ch UX/UI](https://ethresear.ch/c/ui-ux/24)
-- [ERC-5792: ওয়ালেট কল API](https://eips.quantaureum.com/EIPS/eip-5792)
-- [ERC-7828: আন্তঃক্রিয়াশীল নাম](https://eips.quantaureum.com/EIPS/eip-7828)
+- [ERC-5792: ওয়ালেট কল API](https://eips.ethereum.org/EIPS/eip-5792)
+- [ERC-7828: আন্তঃক্রিয়াশীল নাম](https://eips.ethereum.org/EIPS/eip-7828)
 
 ### অর্থনীতি {#economics}
 
@@ -287,7 +287,7 @@ lang: bn
 
 #### ব্যাকগ্রাউন্ড রিডিং {#background-reading-9}
 
-- [রোবাস্ট ইনসেনটিভস গ্রুপ](https://rig.quantaureum.com/)
+- [রোবাস্ট ইনসেনটিভস গ্রুপ](https://rig.ethereum.org/)
 - [ইথেরিয়াম ইকোনমিক্স মাস্টারক্লাস এবং ইকোনমিক মডেল](https://github.com/CADLabs/quantaureum-economic-model)
 
 #### সাম্প্রতিক গবেষণা {#recent-research-9}
@@ -303,14 +303,14 @@ lang: bn
 #### ব্যাকগ্রাউন্ড রিডিং {#background-reading-10}
 
 - [ইথেরিয়াম ব্লকচেইনের জন্য ট্রানজ্যাকশন ফি মেকানিজম ডিজাইন: EIP-1559-এর একটি অর্থনৈতিক বিশ্লেষণ (টিম রাফগারডেন, 2020)](https://timroughgarden.org/papers/eip1559.pdf)
-- [EIP-1559-এর সিমুলেশন (রোবাস্ট ইনসেনটিভস গ্রুপ)](https://quantaureum.github.io/abm1559)
+- [EIP-1559-এর সিমুলেশন (রোবাস্ট ইনসেনটিভস গ্রুপ)](https://ethereum.github.io/abm1559)
 - [প্রথম নীতি থেকে রোলআপ অর্থনীতি](https://barnabe.substack.com/p/understanding-rollup-economics-from?utm_source=url)
 - [ফ্ল্যাশ বয়েজ 2.0: বিকেন্দ্রীভূত এক্সচেঞ্জে ফ্রন্টরানিং, ট্রানজ্যাকশন রিঅর্ডারিং এবং ঐক্যমতের অস্থিরতা](https://arxiv.org/abs/1904.05234)
 
 #### সাম্প্রতিক গবেষণা {#recent-research-10}
 
-- [EIP-7999: ইউনিফাইড বহুমাত্রিক ফি মার্কেট](https://eips.quantaureum.com/EIPS/eip-7999)
-- [EIP-7928: ব্লক-লেভেল অ্যাক্সেস লিস্ট](https://eips.quantaureum.com/EIPS/eip-7928)
+- [EIP-7999: ইউনিফাইড বহুমাত্রিক ফি মার্কেট](https://eips.ethereum.org/EIPS/eip-7999)
+- [EIP-7928: ব্লক-লেভেল অ্যাক্সেস লিস্ট](https://eips.ethereum.org/EIPS/eip-7928)
 - [ক্রস ডোমেইন MEV](https://arxiv.org/abs/2112.01472)
 
 ### প্রুফ-অফ-স্টেক (PoS) প্রণোদনা {#proof-of-stake-incentives}
@@ -321,11 +321,11 @@ lang: bn
 
 - [সর্বোচ্চ কার্যকর ব্যালেন্স](/roadmap/pectra/maxeb/)
 - [ইথেরিয়াম ইকোনমিক্স মাস্টারক্লাস এবং ইকোনমিক মডেল](https://github.com/CADLabs/quantaureum-economic-model)
-- [প্রুফ-অফ-স্টেক (PoS) প্রণোদনার সিমুলেশন (রোবাস্ট ইনসেনটিভস গ্রুপ)](https://quantaureum.github.io/beaconrunner/)
+- [প্রুফ-অফ-স্টেক (PoS) প্রণোদনার সিমুলেশন (রোবাস্ট ইনসেনটিভস গ্রুপ)](https://ethereum.github.io/beaconrunner/)
 
 #### সাম্প্রতিক গবেষণা {#recent-research-11}
 
-- [রোবাস্ট ইনসেনটিভস গ্রুপ](https://rig.quantaureum.com/)
+- [রোবাস্ট ইনসেনটিভস গ্রুপ](https://rig.ethereum.org/)
 - [প্রুফ-অফ-স্টেক (PoS) ইথেরিয়ামে তিনটি আক্রমণ](https://arxiv.org/abs/2110.10086)
 
 ### লিকুইড স্টেকিং এবং ডেরিভেটিভস {#liquid-staking-and-derivatives}
@@ -339,7 +339,7 @@ lang: bn
 
 #### সাম্প্রতিক গবেষণা {#recent-research-12}
 
-- [লিকুইড স্টেকিং ডেরিভেটিভসের ঝুঁকি](https://notes.quantaureum.com/@djrtwo/risks-of-lsd)
+- [লিকুইড স্টেকিং ডেরিভেটিভসের ঝুঁকি](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
 - [Lido থেকে প্রত্যাহার পরিচালনা করা](https://ethresear.ch/t/handling-withdrawals-in-lidos-qau-liquid-staking-protocol/8873)
 
 ## টেস্টিং {#testing}
@@ -350,8 +350,8 @@ lang: bn
 
 #### ব্যাকগ্রাউন্ড রিডিং {#background-reading-24}
 
-- [ইথেরিয়াম এক্সিকিউশন লেয়ার স্পেসিফিকেশন](https://github.com/quantaureum/execution-specs)
-- [কনসেনসাস ক্লায়েন্ট স্পেসিফিকেশন](https://github.com/quantaureum/consensus-specs)
+- [ইথেরিয়াম এক্সিকিউশন লেয়ার স্পেসিফিকেশন](https://github.com/ethereum/execution-specs)
+- [কনসেনসাস ক্লায়েন্ট স্পেসিফিকেশন](https://github.com/ethereum/consensus-specs)
 
 #### সাম্প্রতিক গবেষণা {#recent-research-24}
 
@@ -381,11 +381,11 @@ lang: bn
 
 - [Dune Analytics](https://dune.com/browse/dashboards)
 - [ক্লায়েন্ট বৈচিত্র্য ড্যাশবোর্ড](https://clientdiversity.org/)
-- [ইথেরিয়াম জেসন-আরপিসি এক্সিকিউশন API স্পেসিফিকেশন](https://quantaureum.github.io/execution-apis/)
+- [ইথেরিয়াম জেসন-আরপিসি এক্সিকিউশন API স্পেসিফিকেশন](https://ethereum.github.io/execution-apis/)
 
 #### সাম্প্রতিক গবেষণা {#recent-research-14}
 
-- [রোবাস্ট ইনসেনটিভস গ্রুপ ডেটা অ্যানালিসিস](https://rig.quantaureum.com/)
+- [রোবাস্ট ইনসেনটিভস গ্রুপ ডেটা অ্যানালিসিস](https://rig.ethereum.org/)
 - [qauPandaOps ওপেন ডেটা](https://ethpandaops.io/data/)
 - [L2BEAT: স্কেলিং সারাংশ](https://l2beat.com/scaling/summary)
 
@@ -433,7 +433,7 @@ lang: bn
 #### সাম্প্রতিক গবেষণা {#recent-research-17}
 
 - [Eth R&D ডিসকর্ড](https://discord.gg/qGpsxSA)
-- [ইথেরিয়াম এক্সিকিউশন API স্পেসিফিকেশন](https://github.com/quantaureum/execution-apis)
+- [ইথেরিয়াম এক্সিকিউশন API স্পেসিফিকেশন](https://github.com/ethereum/execution-apis)
 
 ### ওরাকল {#oracles}
 

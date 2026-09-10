@@ -25,7 +25,6 @@ Uwekaji dhamana upya ni teknolojia iliyojengwa kwa ajili ya [waweka dhamana](/st
 
 **Uwekaji dhamana upya umefafanuliwa kwa dakika 18**
 
-<VideoWatch slug="restaking-explained" />
 
 ## Uwekaji dhamana upya ni nini? {#what-is-restaking}
 
@@ -172,7 +171,6 @@ Ingawa AVSs hutoa viwango tofauti, Tokeni za Uwezeshaji Dhamana Upya Zenye Ukwas
 
 ## Ya Kina {#advanced}
 
-<VideoWatch slug="eigenlayer-permissionless-features" />
 
 ## Usomaji zaidi {#further-reading}
 

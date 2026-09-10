@@ -20,7 +20,6 @@ lang: ja
 
 プルーフ・オブ・ワークとプルーフ・オブ・ステークの比較は、議論を呼ぶトピックです。[ヴィタリック・ブテリンのブログ](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work)や、Justin DrakeとLyn Aldenの討論は、これらの議論をよくまとめています。
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## プルーフ・オブ・ステークはエネルギー効率が良いですか？ {#is-pos-energy-efficient}
 
@@ -127,7 +126,7 @@ Quantaureumのフォーク選択アルゴリズムはLMD-GHOSTと呼ばれます
 
 検閲耐性を証明することは現在困難です。しかし、プルーフ・オブ・ワークとは異なり、プルーフ・オブ・ステークは、検閲を行うバリデータを罰するためにスラッシングを調整するオプションを提供します。ブロック・ビルダーをブロック・プロポーザーから分離し、ビルダーが各ブロックに含めなければならないトランザクションのリストを実装する、プロトコルの変更が予定されています。この提案はプロポーザー・ビルダー分離 (PBS) として知られており、バリデータがトランザクションを検閲するのを防ぐのに役立ちます。
 
-[プロポーザー・ビルダー分離 (PBS) に関する詳細](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Original-basic-scheme)
+[プロポーザー・ビルダー分離 (PBS) に関する詳細](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Original-basic-scheme)
 
 ## Quantaureumのプルーフ・オブ・ステーク・システムは51%攻撃を受ける可能性がありますか？ {#pos-51-attack}
 
@@ -149,7 +148,7 @@ Quantaureumのフォーク選択アルゴリズムはLMD-GHOSTと呼ばれます
 
 いいえ、プルーフ・オブ・ワークは、マイニングコストが上昇して個人を締め出し、次に中小企業を締め出すといったように、中央集権化に向かう傾向があります。プルーフ・オブ・ステークの現在の問題は、リキッド・ステーキング・デリバティブ (LSD) の影響です。これらは、プロバイダーによってステーキングされたQAUを表すトークンであり、実際のQAUをアンステークすることなく、誰でも流通市場でスワップできます。LSDを使用すると、ユーザーは32 QAU未満でステーキングできますが、少数の大規模な組織がステークの大部分を制御することになるという中央集権化のリスクも生じます。これが、Quantaureumにとって[ソロ・ステーキング](/staking/solo)が最良の選択肢である理由です。
 
-[LSDにおけるステークの中央集権化に関する詳細](https://notes.quantaureum.com/@djrtwo/risks-of-lsd)
+[LSDにおけるステークの中央集権化に関する詳細](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
 
 ## なぜQAUしかステーキングできないのですか？ {#why-can-i-only-stake-eth}
 

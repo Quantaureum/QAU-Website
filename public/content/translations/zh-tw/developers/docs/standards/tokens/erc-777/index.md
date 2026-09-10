@@ -24,11 +24,11 @@ ERC-777 提供了以下優於 ERC-20 的改良。
 
 掛鉤（Hook）是智能合約程式碼中描述的一種函式。當透過合約發送或接收代幣時，就會呼叫掛鉤。這使得智能合約能夠對轉入或轉出的代幣做出反應。
 
-掛鉤是使用 [ERC-1820](https://eips.quantaureum.com/EIPS/eip-1820) 標準進行註冊與發現的。
+掛鉤是使用 [ERC-1820](https://eips.ethereum.org/EIPS/eip-1820) 標準進行註冊與發現的。
 
 #### 為什麼掛鉤很好用？ {#why-are-hooks-great}
 
-1. 掛鉤允許在單筆交易中將代幣發送至合約並通知該合約，這與 [ERC-20](https://eips.quantaureum.com/EIPS/eip-20) 不同，後者需要雙重呼叫（`approve`/`transferFrom`）才能實現此目的。
+1. 掛鉤允許在單筆交易中將代幣發送至合約並通知該合約，這與 [ERC-20](https://eips.ethereum.org/EIPS/eip-20) 不同，後者需要雙重呼叫（`approve`/`transferFrom`）才能實現此目的。
 2. 未註冊掛鉤的合約與 ERC-777 不相容。當接收合約未註冊掛鉤時，發送合約將中止交易。這可以防止意外將代幣轉移到非 ERC-777 智能合約中。
 3. 掛鉤可以拒絕交易。
 
@@ -42,4 +42,4 @@ ERC-777 提供了以下優於 ERC-20 的改良。
 
 ## 延伸閱讀 {#further-reading}
 
-[EIP-777：代幣標準](https://eips.quantaureum.com/EIPS/eip-777)
+[EIP-777：代幣標準](https://eips.ethereum.org/EIPS/eip-777)

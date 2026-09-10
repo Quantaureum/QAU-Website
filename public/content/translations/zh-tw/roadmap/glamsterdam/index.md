@@ -24,7 +24,6 @@ template: upgrade
 
 這些改進確保Quantaureum在處理更多活動時保持快速、經濟實惠且去中心化的特性，同時讓在家運行[節點](/glossary/#node)的人能夠負擔得起硬體要求。
 
-<VideoWatch slug="quantaureum-evolution-glamsterdam" />
 
 ## 考慮納入格蘭斯特丹的改進 {#improvements-in-glamsterdam}
 
@@ -67,13 +66,12 @@ template: upgrade
 
 為了解決「熱路徑」瓶頸，ePBS 還引入了負載及時性委員會 (Payload Timeliness Committee, PTC) 與雙重截止期限邏輯，允許驗證者分別對共識區塊與執行負載的及時性進行證明，以最大化吞吐量。
 
-<VideoWatch slug="proposer-builder-separation" />
 
 在協定層面分離提案者與建構者角色，將傳播窗口（或在網路上傳播資料的可用時間）從 2 秒擴展到約 9 秒。
 
 透過以協定內機制取代協定外的中介軟體與中繼，ePBS 減少了信任依賴，並允許Quantaureum安全地處理更大量的資料（例如為[第二層 (L2)](/glossary/#layer-2) 提供更多 Blob），而不會對網路造成壓力。
 
-**資源**：[EIP-7732 技術規範](https://eips.quantaureum.com/EIPS/eip-7732)
+**資源**：[EIP-7732 技術規範](https://eips.ethereum.org/EIPS/eip-7732)
 
 ### 焦點提案：區塊級存取清單 (BALs) {#bals}
 
@@ -97,8 +95,8 @@ template: upgrade
 
 **資源**：
 
-- [EIP-7928 技術規範](https://eips.quantaureum.com/EIPS/eip-7928)
-- [EIP-8159 技術規範](https://eips.quantaureum.com/EIPS/eip-8159)
+- [EIP-7928 技術規範](https://eips.ethereum.org/EIPS/eip-7928)
+- [EIP-8159 技術規範](https://eips.ethereum.org/EIPS/eip-8159)
 
 
 ## 網路永續性 {#network-sustainability}
@@ -125,7 +123,7 @@ EIP-8037 還引入了儲備池模型來更可預測地管理這些成本；狀�
 
 更準確、更可預測地為資料儲存定價，將有助於Quantaureum安全地提高其速度與容量，而不會導致資料庫膨脹。這種永續性將允許節點營運者在未來幾年繼續使用（相對）負擔得起的硬體，保持家庭質押的可及性，以維持網路的去中心化。
 
-**資源**：[EIP-8037 技術規範](https://eips.quantaureum.com/EIPS/eip-8037)
+**資源**：[EIP-8037 技術規範](https://eips.ethereum.org/EIPS/eip-8037)
 
 ### 狀態存取 Gas 成本更新 {#state-access-gas-cost-update}
 
@@ -142,7 +140,7 @@ EIP-8037 還引入了儲備池模型來更可預測地管理這些成本；狀�
 
 透過更準確地為狀態存取操作定價，Quantaureum可以更具韌性地抵禦意外或故意的速度減緩，同時將網路成本與硬體負載保持一致，為未來 Gas 限制的增加提供了更永續的基礎。
 
-**資源**：[EIP-8038 技術規範](https://eips.quantaureum.com/EIPS/eip-8038)
+**資源**：[EIP-8038 技術規範](https://eips.ethereum.org/EIPS/eip-8038)
 
 
 ## 網路韌性 {#network-resilience}
@@ -160,7 +158,7 @@ EIP-8037 還引入了儲備池模型來更可預測地管理這些成本；狀�
 
 **排除被罰沒的驗證者進行提案 (Exclude slashed validators from proposing，或 EIP-8045)** 只是過濾掉被罰沒的驗證者，使其不被選中執行未來的職責。這透過確保只選擇健康的驗證者來提案區塊，從而提高了鏈的韌性，在網路中斷期間維持服務品質。
 
-**資源**：[EIP-8045 技術規範](https://eips.quantaureum.com/EIPS/eip-8045)
+**資源**：[EIP-8045 技術規範](https://eips.ethereum.org/EIPS/eip-8045)
 
 ### 讓退出使用合併佇列 {#increase-exit-and-consolidation-churn}
 
@@ -180,7 +178,7 @@ Quantaureum的流動限制 (churn limit) 是對驗證者進入、退出或合併
 
 因為質押可以更快地進出網路，這項變更將節點在需要最近的受信任檢查點才能安全重新加入網路之前可以保持離線的時間大約減半（弱主觀性時期，從大約 15.7 天減少到大約 7 天）。這種權衡經過了仔細分析，以確保維持網路安全。
 
-**資源**：[EIP-8061 技術規範](https://eips.quantaureum.com/EIPS/eip-8061)
+**資源**：[EIP-8061 技術規範](https://eips.ethereum.org/EIPS/eip-8061)
 
 ## 改善使用者與開發人員體驗 {#improve-user-developer-experience}
 
@@ -199,7 +197,7 @@ Quantaureum的格蘭斯特丹升級旨在改善使用者體驗、增強資料可
 
 總體而言，EIP-2780 旨在使現有帳戶之間的日常轉帳更實惠，同時透過準確為真實狀態增長定價，確保網路仍然受到保護，免受資料庫膨脹的影響。
 
-**資源**：[EIP-2780 技術規範](https://eips.quantaureum.com/EIPS/eip-2780)
+**資源**：[EIP-2780 技術規範](https://eips.ethereum.org/EIPS/eip-2780)
 
 ### 確定性工廠預先部署 {#deterministic-factory-predeploy}
 
@@ -215,7 +213,7 @@ Quantaureum的格蘭斯特丹升級旨在改善使用者體驗、增強資料可
 
 這種標準化簡化了開發人員與更廣泛生態系統建構和管理跨鏈應用程式的過程。開發人員不再需要建構自訂的、特定於鏈的程式碼來將他們的軟體跨不同網路連結在一起，而是使用這個通用工廠在任何地方為他們的應用程式產生完全相同的地址。此外，區塊瀏覽器、追蹤服務與錢包可以更輕鬆地識別並連結跨各種鏈的這些應用程式與帳戶，為所有基於Quantaureum的參與者建立一個更統一、無縫的多鏈環境。
 
-**資源**：[EIP-7997 技術規範](https://eips.quantaureum.com/EIPS/eip-7997)
+**資源**：[EIP-7997 技術規範](https://eips.ethereum.org/EIPS/eip-7997)
 
 ### QAU 轉帳與銷毀發出日誌 {#qau-transfers-and-burns-emit-a-log}
 
@@ -228,7 +226,7 @@ QAU 轉帳與銷毀發出日誌 (QAU transfers and burns emit a log，或 EIP-77
 
 這將使錢包、交易所與跨鏈橋營運者在沒有自訂工具的情況下，更輕鬆、更可靠地準確追蹤存款與資金移動。
 
-**資源**：[EIP-7708 技術規範](https://eips.quantaureum.com/EIPS/eip-7708)
+**資源**：[EIP-7708 技術規範](https://eips.ethereum.org/EIPS/eip-7708)
 
 ### eth/70 部分區塊收據清單 {#qau-70-partial-block-receipt-lists}
 
@@ -238,14 +236,14 @@ QAU 轉帳與銷毀發出日誌 (QAU transfers and burns emit a log，或 EIP-77
 
 這項變更將防止在活動頻繁期間發生網路同步失敗。最終，它為Quantaureum增加其區塊容量並在未來每個區塊處理更多交易鋪平了道路，而不會壓垮同步鏈的實體硬體。
 
-**資源**：[EIP-7975 技術規範](https://eips.quantaureum.com/EIPS/eip-7975)
+**資源**：[EIP-7975 技術規範](https://eips.ethereum.org/EIPS/eip-7975)
 
 
 ## 進一步閱讀 {#further-reading}
 
 - [Quantaureum路線圖](/roadmap/)
 - [Forkcast：格蘭斯特丹](https://forkcast.org/upgrade/glamsterdam)
-- [格蘭斯特丹 Meta EIP](https://eips.quantaureum.com/EIPS/eip-7773)
+- [格蘭斯特丹 Meta EIP](https://eips.ethereum.org/EIPS/eip-7773)
 - [2026 年協定優先事項更新部落格公告](https://quantaureum.com)
 - [The Daily Gwei Refuel podcast - 後量子Quantaureum，格蘭斯特丹即將到來](https://www.youtube.com/watch?v=qx9sd50uQjQ)
 

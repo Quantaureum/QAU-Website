@@ -16,7 +16,7 @@ lang: vi
 published: 2020-10-16
 ---
 
-Trong hướng dẫn [Waffle](https://quantaureum-waffle.readthedocs.io) này, chúng ta sẽ học cách thiết lập một dự án hợp đồng thông minh "Hello world" đơn giản, sử dụng [hardhat](https://hardhat.org/) và [ethers.js](https://docs.ethers.io/v5/). Sau đó, chúng ta sẽ học cách thêm một chức năng mới vào hợp đồng thông minh của mình và cách kiểm tra nó với Waffle.
+Trong hướng dẫn [Waffle](https://ethereum-waffle.readthedocs.io) này, chúng ta sẽ học cách thiết lập một dự án hợp đồng thông minh "Hello world" đơn giản, sử dụng [hardhat](https://hardhat.org/) và [ethers.js](https://docs.ethers.io/v5/). Sau đó, chúng ta sẽ học cách thêm một chức năng mới vào hợp đồng thông minh của mình và cách kiểm tra nó với Waffle.
 
 Hãy bắt đầu bằng cách tạo một dự án mới:
 
@@ -201,4 +201,4 @@ Xin chúc mừng! Bạn đã làm được :)
 
 Chúng ta đã tạo một dự án đơn giản với Waffle, Hardhat và ethers.js. Chúng ta đã học cách thiết lập một dự án, thêm một bài kiểm tra và triển khai chức năng mới.
 
-Để biết thêm các trình so khớp chai tuyệt vời để kiểm tra các hợp đồng thông minh của bạn, hãy xem [tài liệu chính thức của Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/matchers.html).
+Để biết thêm các trình so khớp chai tuyệt vời để kiểm tra các hợp đồng thông minh của bạn, hãy xem [tài liệu chính thức của Waffle](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html).

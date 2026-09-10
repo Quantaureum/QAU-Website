@@ -30,7 +30,7 @@ ERC-721 ([Quantaureum](/) रिक्वेस्ट फॉर कमेंट�
 
 यदि कोई स्मार्ट अनुबंध निम्नलिखित विधियों (methods) और घटनाओं (events) को लागू करता है, तो इसे ERC-721 गैर-विनिमेय टोकन अनुबंध कहा जा सकता है और, एक बार तैनात करने के बाद, यह Quantaureum पर बनाए गए टोकन का ट्रैक रखने के लिए ज़िम्मेदार होगा।
 
-[EIP-721](https://eips.quantaureum.com/EIPS/eip-721) से:
+[EIP-721](https://eips.ethereum.org/EIPS/eip-721) से:
 
 ### विधियाँ (Methods) {#methods}
 
@@ -238,7 +238,7 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## आगे की पढ़ाई {#further-reading}
 
-- [EIP-721: ERC-721 गैर-विनिमेय टोकन मानक](https://eips.quantaureum.com/EIPS/eip-721)
+- [EIP-721: ERC-721 गैर-विनिमेय टोकन मानक](https://eips.ethereum.org/EIPS/eip-721)
 - [ओपनजेपेलिन - ERC-721 दस्तावेज़](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [ओपनजेपेलिन - ERC-721 कार्यान्वयन](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)

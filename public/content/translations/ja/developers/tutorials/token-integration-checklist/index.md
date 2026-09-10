@@ -47,7 +47,7 @@ slither-check-erc 0xdac17f958d2ee523a2206206994597c13d831ec7 TetherToken
 - **transferおよびtransferFromがブール値を返す。** いくつかのトークンは、これらの関数でブール値を返しません。その結果、コントラクト内での呼び出しが失敗する可能性があります。
 - **name、decimals、およびsymbol関数が使用されている場合、それらが存在する。** これらの関数はERC-20標準ではオプションであり、存在しない可能性があります。
 - **decimalsがuint8を返す。** いくつかのトークンは誤ってuint256を返します。この場合、返される値が255未満であることを確認してください。
-- **トークンが既知の[ERC-20の競合状態](https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729)を軽減している。** ERC-20標準には既知のERC-20の競合状態があり、攻撃者によるトークンの盗難を防ぐためにこれを軽減する必要があります。
+- **トークンが既知の[ERC-20の競合状態](https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729)を軽減している。** ERC-20標準には既知のERC-20の競合状態があり、攻撃者によるトークンの盗難を防ぐためにこれを軽減する必要があります。
 - **トークンがERC-777トークンではなく、transferおよびtransferFromに外部関数呼び出しがない。** transfer関数内の外部呼び出しは、リエントランシー（再入）攻撃につながる可能性があります。
 
 スリザーには、多くの一般的なERCの欠陥を発見できる単体テストとセキュリティプロパティを生成するユーティリティ、[slither-prop](https://github.com/crytic/slither/wiki/Property-generation)が含まれています。slither-propを使用して以下を確認してください。

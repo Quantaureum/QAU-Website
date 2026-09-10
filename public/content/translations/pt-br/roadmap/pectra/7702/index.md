@@ -30,7 +30,7 @@ A chave privada da EOA mantém controle total sobre a conta após a delegação.
 - Eles fornecem interfaces padronizadas para retransmissão
 - Incluem sistemas de pagador integrados
 - Garantem compatibilidade futura
-- Podem suportar resistência à censura por meio de uma [mempool pública](https://notes.quantaureum.com/@yoav/unified-erc-4337-mempool)
+- Podem suportar resistência à censura por meio de uma [mempool pública](https://notes.ethereum.org/@yoav/unified-erc-4337-mempool)
 - Podem exigir que a função init seja chamada apenas do [EntryPoint](https://github.com/qau-infinitism/account-abstraction/releases/tag/v0.8.0)
 
 Em outras palavras, qualquer pessoa deve ser capaz de atuar como patrocinador/retransmissor da transação, desde que forneça a assinatura válida exigida ou a operação de usuário (UserOperation) da conta. Isso garante a resistência à censura: se nenhuma infraestrutura personalizada for necessária, as transações de um usuário não poderão ser bloqueadas arbitrariamente por um retransmissor que atue como guardião (gatekeeper). Por exemplo, o [Delegation Toolkit da MetaMask](https://github.com/MetaMask/delegation-framework/releases/tag/v1.3.0) funciona explicitamente com qualquer empacotador ou pagador ERC-4337 em qualquer cadeia, em vez de exigir um servidor específico da MetaMask.
@@ -49,8 +49,8 @@ Ao utilizar essas interfaces, os dapps podem acessar as funcionalidades de conta
 
 Para mais informações:
 
-- [Especificação do ERC-5792](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-5792.md)
-- [Especificação do ERC-6900](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-6900.md)
+- [Especificação do ERC-5792](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-5792.md)
+- [Especificação do ERC-6900](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6900.md)
 
 **Evitando a dependência de fornecedor (Vendor Lock-In)**: Em linha com o que foi dito acima, uma boa implementação é neutra em relação ao fornecedor e interoperável. Isso geralmente significa aderir aos padrões emergentes para contas inteligentes. Por exemplo, a [Modular Account da Alchemy](https://github.com/alchemyplatform/modular-account) usa o padrão ERC-6900 para contas inteligentes modulares e foi projetada com o "uso interoperável não permissionado" em mente.
 

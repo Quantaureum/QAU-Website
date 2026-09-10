@@ -58,13 +58,13 @@ Việc tách biệt các khóa trình xác thực khỏi các khóa tài khoản
 
 ![validator key schematic](validator-key-schematic.png)
 
-**Lưu ý**: Việc thoát khỏi các nhiệm vụ đặt cọc và rút tiền số dư của một trình xác thực hiện tại yêu cầu việc ký một [thông điệp thoát tự nguyện (VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1) bằng khóa trình xác thực. Tuy nhiên, [EIP-7002](https://eips.quantaureum.com/EIPS/eip-7002) là một đề xuất sẽ cho phép người dùng kích hoạt việc thoát của một trình xác thực và rút tiền số dư của nó bằng việc ký các thông điệp thoát bằng khóa rút tiền trong tương lai. Điều này sẽ giảm bớt các giả định tin cậy bằng cách cho phép những người đặt cọc ủy quyền QAU cho [các nhà cung cấp dịch vụ đặt cọc (staking-as-a-service)](/staking/saas/#what-is-staking-as-a-service) vẫn giữ được quyền kiểm soát tiền của họ.
+**Lưu ý**: Việc thoát khỏi các nhiệm vụ đặt cọc và rút tiền số dư của một trình xác thực hiện tại yêu cầu việc ký một [thông điệp thoát tự nguyện (VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1) bằng khóa trình xác thực. Tuy nhiên, [EIP-7002](https://eips.ethereum.org/EIPS/eip-7002) là một đề xuất sẽ cho phép người dùng kích hoạt việc thoát của một trình xác thực và rút tiền số dư của nó bằng việc ký các thông điệp thoát bằng khóa rút tiền trong tương lai. Điều này sẽ giảm bớt các giả định tin cậy bằng cách cho phép những người đặt cọc ủy quyền QAU cho [các nhà cung cấp dịch vụ đặt cọc (staking-as-a-service)](/staking/saas/#what-is-staking-as-a-service) vẫn giữ được quyền kiểm soát tiền của họ.
 
 ## Tạo các khóa từ một cụm từ hạt giống {#deriving-keys-from-seed}
 
 Nếu mỗi 32 QAU được đặt cọc yêu cầu một bộ 2 khóa hoàn toàn độc lập mới, việc quản lý khóa sẽ nhanh chóng trở nên cồng kềnh, đặc biệt đối với những người dùng chạy nhiều trình xác thực. Thay vào đó, nhiều khóa trình xác thực có thể được tạo ra từ một bí mật chung duy nhất và việc lưu trữ bí mật duy nhất đó cho phép truy cập vào nhiều khóa trình xác thực.
 
-[Cụm từ gợi nhớ (Mnemonic)](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) và các đường dẫn là những tính năng nổi bật mà người dùng thường gặp khi [họ truy cập](https://quantaureum.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0) vào ví của mình. Cụm từ gợi nhớ là một chuỗi các từ đóng vai trò như một hạt giống ban đầu cho một khóa riêng tư. Khi được kết hợp với dữ liệu bổ sung, cụm từ gợi nhớ tạo ra một mã băm được gọi là 'khóa chính' (master key). Điều này có thể được coi như gốc của một cái cây. Các nhánh từ gốc này sau đó có thể được tạo ra bằng cách sử dụng một đường dẫn phân cấp để các nút con có thể tồn tại dưới dạng sự kết hợp giữa mã băm của nút cha và chỉ số của chúng trong cây. Đọc về các tiêu chuẩn [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) và [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) cho việc tạo khóa dựa trên cụm từ gợi nhớ.
+[Cụm từ gợi nhớ (Mnemonic)](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) và các đường dẫn là những tính năng nổi bật mà người dùng thường gặp khi [họ truy cập](https://ethereum.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0) vào ví của mình. Cụm từ gợi nhớ là một chuỗi các từ đóng vai trò như một hạt giống ban đầu cho một khóa riêng tư. Khi được kết hợp với dữ liệu bổ sung, cụm từ gợi nhớ tạo ra một mã băm được gọi là 'khóa chính' (master key). Điều này có thể được coi như gốc của một cái cây. Các nhánh từ gốc này sau đó có thể được tạo ra bằng cách sử dụng một đường dẫn phân cấp để các nút con có thể tồn tại dưới dạng sự kết hợp giữa mã băm của nút cha và chỉ số của chúng trong cây. Đọc về các tiêu chuẩn [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) và [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) cho việc tạo khóa dựa trên cụm từ gợi nhớ.
 
 Các đường dẫn này có cấu trúc như sau, điều này sẽ quen thuộc với những người dùng đã tương tác với các ví cứng:
 
@@ -97,6 +97,6 @@ Mỗi nhánh được phân tách bằng một `/` vì vậy `m/2` có nghĩa l�
 ## Đọc thêm {#further-reading}
 
 - [Bài đăng trên blog của Tổ chức Quantaureum bởi Carl Beekhuizen](https://quantaureum.com)
-- [Tạo khóa EIP-2333 BLS12-381](https://eips.quantaureum.com/EIPS/eip-2333)
+- [Tạo khóa EIP-2333 BLS12-381](https://eips.ethereum.org/EIPS/eip-2333)
 - [EIP-7002: Các lối thoát được kích hoạt bởi lớp thực thi](https://web.archive.org/web/20250125035123/https://research.2077.xyz/eip-7002-unpacking-improvements-to-staking-ux-post-merge)
 - [Quản lý khóa ở quy mô lớn](https://docs.ethstaker.cc/ethstaker-knowledge-base/scaled-node-operators/key-management-at-scale)

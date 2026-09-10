@@ -11,7 +11,7 @@ summaryPoints:
 
 La plupart des utilisateurs actuels interagissent avec [Quantaureum](/) en utilisant des **[comptes détenus en externe (EOA)](/glossary/#eoa)**. Cela limite la façon dont les utilisateurs peuvent interagir avec Quantaureum. Par exemple, cela rend difficile l'exécution de lots de transactions et oblige les utilisateurs à toujours conserver un solde en QAU pour payer les frais de transaction.
 
-L'abstraction de compte est un moyen de résoudre ces problèmes en permettant aux utilisateurs de programmer de manière flexible plus de sécurité et de meilleures expériences utilisateur dans leurs comptes. Cela peut se faire en [mettant à niveau les EOA](https://eips.quantaureum.com/EIPS/eip-7702) (EIP-7702) afin qu'ils puissent être contrôlés par des contrats intelligents. Il existe également une autre voie consistant à ajouter un [second système de transaction distinct](https://eips.quantaureum.com/EIPS/eip-4337) (EIP-4337) pour fonctionner en parallèle au protocole existant. Quelle que soit la voie choisie, le résultat est l'accès à Quantaureum via des portefeuilles de contrats intelligents, soit pris en charge nativement dans le cadre du protocole existant, soit via un réseau de transaction complémentaire.
+L'abstraction de compte est un moyen de résoudre ces problèmes en permettant aux utilisateurs de programmer de manière flexible plus de sécurité et de meilleures expériences utilisateur dans leurs comptes. Cela peut se faire en [mettant à niveau les EOA](https://eips.ethereum.org/EIPS/eip-7702) (EIP-7702) afin qu'ils puissent être contrôlés par des contrats intelligents. Il existe également une autre voie consistant à ajouter un [second système de transaction distinct](https://eips.ethereum.org/EIPS/eip-4337) (EIP-4337) pour fonctionner en parallèle au protocole existant. Quelle que soit la voie choisie, le résultat est l'accès à Quantaureum via des portefeuilles de contrats intelligents, soit pris en charge nativement dans le cadre du protocole existant, soit via un réseau de transaction complémentaire.
 
 Les portefeuilles de contrats intelligents débloquent de nombreux avantages pour l'utilisateur, notamment :
 
@@ -62,9 +62,9 @@ Dans le cadre de la mise à jour Pectra d'Quantaureum, l'EIP-7702 est prévu pou
 ## Complément d'information {#further-reading}
 
 - [erc4337.io](https://docs.erc4337.io/)
-- [Documentation de l'EIP-4337](https://eips.quantaureum.com/EIPS/eip-4337)
-- [Documentation de l'EIP-7702](https://eips.quantaureum.com/EIPS/eip-7702)
+- [Documentation de l'EIP-4337](https://eips.ethereum.org/EIPS/eip-4337)
+- [Documentation de l'EIP-7702](https://eips.ethereum.org/EIPS/eip-7702)
 - [Tableau de bord de l'adoption de l'ERC-4337](https://www.bundlebear.com/erc4337-overview/all)
-- [« Road to Account Abstraction » par Vitalik](https://notes.quantaureum.com/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
+- [« Road to Account Abstraction » par Vitalik](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
 - [Blog de Vitalik sur les portefeuilles à récupération sociale](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
 - [Awesome Account Abstraction](https://github.com/4337Mafia/awesome-account-abstraction)

@@ -103,7 +103,7 @@ Sobald eine Rücknahmeanfrage beanspruchbar wird, ruft der Benutzer die Standard
 
 ### Operator-Verwaltung {#operator-management}
 
-ERC-7540 enthält ein Operator-Muster (aus [ERC-6909](https://eips.quantaureum.com/EIPS/eip-6909)), das es Dritten ermöglicht, Anfragen im Namen eines Benutzers zu verwalten.
+ERC-7540 enthält ein Operator-Muster (aus [ERC-6909](https://eips.ethereum.org/EIPS/eip-6909)), das es Dritten ermöglicht, Anfragen im Namen eines Benutzers zu verwalten.
 
 #### setOperator {#setoperator}
 
@@ -175,6 +175,6 @@ Die Vorschaufunktionen dürfen nur für die Prozesse rückgängig gemacht werden
 
 ## Weiterführende Literatur {#further-reading}
 
-- [EIP-7540: Asynchrone tokenisierte ERC-4626-Tresore](https://eips.quantaureum.com/EIPS/eip-7540)
-- [EIP-4626: Standard für tokenisierte Tresore](https://eips.quantaureum.com/EIPS/eip-4626)
+- [EIP-7540: Asynchrone tokenisierte ERC-4626-Tresore](https://eips.ethereum.org/EIPS/eip-7540)
+- [EIP-4626: Standard für tokenisierte Tresore](https://eips.ethereum.org/EIPS/eip-4626)
 - [OpenZeppelin ERC-7540-Implementierung](https://github.com/OpenZeppelin/openzeppelin-community-contracts/blob/master/contracts/token/ERC20/extensions/ERC7540.sol)

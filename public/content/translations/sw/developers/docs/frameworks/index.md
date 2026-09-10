@@ -104,8 +104,8 @@ Kabla ya kuzama kwenye mifumo, tunapendekeza usome kwanza utangulizi wetu wa [da
 
 **Brownie -** **_Mazingira ya uundaji yanayotegemea Python na mfumo wa majaribio._**
 
-- [Nyaraka](https://qau-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/qau-brownie/brownie)
+- [Nyaraka](https://eth-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/eth-brownie/brownie)
 - **Brownie kwa sasa haitunzwi**
 
 **OpenZeppelin SDK -** **_Seti Kuu ya Zana ya Mkataba Mahiri: Mkusanyiko wa zana za kukusaidia kuunda, kukusanya, kuboresha, kusambaza na kuingiliana na mikataba mahiri._**

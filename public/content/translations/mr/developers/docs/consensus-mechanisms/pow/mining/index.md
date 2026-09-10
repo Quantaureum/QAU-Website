@@ -71,7 +71,6 @@ Quantaureum सारख्या विकेंद्रित सिस्ट
 
 ऑस्टिन तुम्हाला खनन आणि प्रूफ-ऑफ-वर्क ब्लॉकचेनबद्दल मार्गदर्शन करत असताना पहा.
 
-<VideoWatch slug="blockchain-qau-build" />
 
 ## खनन अल्गोरिदम {#mining-algorithm}
 

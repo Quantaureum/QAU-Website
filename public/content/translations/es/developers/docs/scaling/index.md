@@ -91,15 +91,13 @@ Obtenga más información sobre [Validium](/developers/docs/scaling/validium/).
 
 ## ¿Aprende mejor de forma visual? {#visual-learner}
 
-<VideoWatch slug="layer-2-scaling-explained" />
 
 _Tenga en cuenta que la explicación en el video usa el término "Capa 2" para referirse a todas las soluciones de escalabilidad fuera de la cadena, mientras que nosotros diferenciamos la "Capa 2" como una solución fuera de la cadena que deriva su seguridad a través del consenso de la Red principal de capa 1._
 
-<VideoWatch slug="rollups-scaling-strategy" />
 
 ## Lecturas adicionales {#further-reading}
 
-- [Una hoja de ruta de Quantaureum centrada en rollups](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
+- [Una hoja de ruta de Quantaureum centrada en rollups](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
 - [Análisis actualizados sobre las soluciones de escalabilidad de capa 2 para Quantaureum](https://www.l2beat.com/)
 - [Evaluación de las soluciones de escalabilidad de capa 2 de Quantaureum: un marco de comparación](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - [Una guía incompleta sobre los rollups](https://vitalik.qau.limo/general/2021/01/05/rollup.html)

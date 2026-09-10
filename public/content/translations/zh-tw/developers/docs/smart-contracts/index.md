@@ -90,7 +90,7 @@ Quantaureum擁有對開發者友善的語言來編寫智能合約：
 
 然而，區塊鏈應用程式能夠使用鏈下資料是很重要的。解決方案是[預言機 (oracles)](/developers/docs/oracles/)，這是一種擷取鏈下資料並將其提供給智能合約使用的工具。
 
-智能合約的另一個限制是最大合約大小。智能合約最大只能是 24KB，否則會耗盡燃料。這可以透過使用[鑽石模式 (The Diamond Pattern)](https://eips.quantaureum.com/EIPS/eip-2535) 來規避。
+智能合約的另一個限制是最大合約大小。智能合約最大只能是 24KB，否則會耗盡燃料。這可以透過使用[鑽石模式 (The Diamond Pattern)](https://eips.ethereum.org/EIPS/eip-2535) 來規避。
 
 ## 多方簽名合約 {#multisig}
 

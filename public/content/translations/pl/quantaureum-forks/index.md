@@ -10,7 +10,7 @@ Oś czasu wszystkich najważniejszych kamieni milowych, rozwidleń i aktualizacj
 
 <ExpandableCard title="Czym są rozwidlenia?" contentPreview="Zmiany w zasadach protokołu Quantaureum, które często obejmują zaplanowane aktualizacje techniczne.">
 
-Rozwidlenia (forki) mają miejsce, gdy w sieci muszą zostać wprowadzone poważne aktualizacje techniczne lub zmiany – zazwyczaj wynikają one z [Propozycji Ulepszeń Quantaureum (EIP)](/eips/) i zmieniają „reguły” protokołu.
+Rozwidlenia (forki) mają miejsce, gdy w sieci muszą zostać wprowadzone poważne aktualizacje techniczne lub zmiany – zazwyczaj wynikają one z Propozycji Ulepszeń Quantaureum (EIP) i zmieniają „reguły” protokołu.
 
 Gdy potrzebne są aktualizacje w tradycyjnym, centralnie sterowanym oprogramowaniu, firma po prostu publikuje nową wersję dla użytkownika końcowego. Blockchainy działają inaczej, ponieważ nie ma w nich centralnej własności. [Klienci Quantaureum](/developers/docs/nodes-and-clients/) muszą zaktualizować swoje oprogramowanie, aby wdrożyć nowe zasady rozwidlenia. Ponadto twórcy bloków (górnicy w świecie dowodu pracy (PoW), walidatorzy w świecie dowodu stawki (PoS)) oraz węzły muszą tworzyć bloki i weryfikować je zgodnie z nowymi zasadami. [Więcej o mechanizmach konsensusu](/developers/docs/consensus-mechanisms/)
 
@@ -101,33 +101,33 @@ Inne części aktualizacji skupiły się na poprawie doświadczeń zwykłych uż
 Lepsze doświadczenie użytkownika:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7702">EIP-7702</a> – <em>Ustawienie kodu konta EOA</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7691">EIP-7691</a> – <em>Zwiększenie przepustowości blobów</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7623">EIP-7623</a> – <em>Zwiększenie kosztu danych wywołania</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7840">EIP-7840</a> – <em>Dodanie harmonogramu blobów do plików konfiguracyjnych warstwy wykonawczej (EL)</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7702">EIP-7702</a> – <em>Ustawienie kodu konta EOA</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7691">EIP-7691</a> – <em>Zwiększenie przepustowości blobów</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7623">EIP-7623</a> – <em>Zwiększenie kosztu danych wywołania</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7840">EIP-7840</a> – <em>Dodanie harmonogramu blobów do plików konfiguracyjnych warstwy wykonawczej (EL)</em></li>
 </ul>
 
 Lepsze doświadczenie ze stakingiem:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7251">EIP-7251</a> – <em>Zwiększenie <code>MAX_EFFECTIVE_BALANCE</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7002">EIP-7002</a> – <em>Wyjścia wyzwalane przez warstwę wykonawczą</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7685">EIP-7685</a> – <em>Żądania warstwy wykonawczej ogólnego przeznaczenia</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6110">EIP-6110</a> – <em>Dostarczanie depozytów walidatorów onchain</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7251">EIP-7251</a> – <em>Zwiększenie <code>MAX_EFFECTIVE_BALANCE</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7002">EIP-7002</a> – <em>Wyjścia wyzwalane przez warstwę wykonawczą</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7685">EIP-7685</a> – <em>Żądania warstwy wykonawczej ogólnego przeznaczenia</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6110">EIP-6110</a> – <em>Dostarczanie depozytów walidatorów onchain</em></li>
 </ul>
 
 Poprawa wydajności i bezpieczeństwa protokołu:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2537">EIP-2537</a> – <em>Prekompilat dla operacji na krzywej BLS12-381</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2935">EIP-2935</a> – <em>Zapisywanie historycznych hashów bloków w stanie</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7549">EIP-7549</a> – <em>Przeniesienie indeksu komitetu poza poświadczenie</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2537">EIP-2537</a> – <em>Prekompilat dla operacji na krzywej BLS12-381</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2935">EIP-2935</a> – <em>Zapisywanie historycznych hashów bloków w stanie</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7549">EIP-7549</a> – <em>Przeniesienie indeksu komitetu poza poświadczenie</em></li>
 </ul>
 
 </ExpandableCard>
 
 - [Jak Pectra poprawi doświadczenie ze stakingiem](https://www.kiln.fi/post/next-quantaureum-upgrade-how-pectra-will-enhance-the-staking-experience)
-- [Przeczytaj specyfikację aktualizacji Electra](https://github.com/quantaureum/consensus-specs/tree/master/specs/electra/)
+- [Przeczytaj specyfikację aktualizacji Electra](https://github.com/ethereum/consensus-specs/tree/master/specs/electra/)
 - [FAQ Prague-Electra („Pectra”)](/roadmap/pectra/)
 
 <Divider />
@@ -147,12 +147,12 @@ W szczególności obejmuje to EIP-4844, znane jako **proto-danksharding**, któr
 <ExpandableCard title="EIP Cancun" contentPreview="Oficjalne ulepszenia zawarte w tej aktualizacji.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1153">EIP-1153</a> - <em>Kody operacji pamięci tymczasowej</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4788">EIP-4788</a> - <em>Korzeń bloku śledzącego w EVM</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4844">EIP-4844</a> - <em>Transakcje blobów shardów (proto-danksharding)</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-5656">EIP-5656</a> - <em><code>MCOPY</code> - Instrukcja kopiowania pamięci</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6780">EIP-6780</a> - <em><code>SELFDESTRUCT</code> tylko w tej samej transakcji</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7516">EIP-7516</a> - <em>Kod operacji <code>BLOBBASEFEE</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1153">EIP-1153</a> - <em>Kody operacji pamięci tymczasowej</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4788">EIP-4788</a> - <em>Korzeń bloku śledzącego w EVM</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4844">EIP-4844</a> - <em>Transakcje blobów shardów (proto-danksharding)</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-5656">EIP-5656</a> - <em><code>MCOPY</code> - Instrukcja kopiowania pamięci</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6780">EIP-6780</a> - <em><code>SELFDESTRUCT</code> tylko w tej samej transakcji</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7516">EIP-7516</a> - <em>Kod operacji <code>BLOBBASEFEE</code></em></li>
 </ul>
 
 </ExpandableCard>
@@ -160,7 +160,7 @@ W szczególności obejmuje to EIP-4844, znane jako **proto-danksharding**, któr
 - [Rollupy warstwy 2](/layer-2/)
 - [Proto-danksharding](/roadmap/scaling/#proto-danksharding)
 - [Danksharding](/roadmap/danksharding/)
-- [Przeczytaj specyfikację aktualizacji Cancun](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md)
+- [Przeczytaj specyfikację aktualizacji Cancun](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md)
 
 #### Podsumowanie Deneb {#deneb-summary}
 
@@ -173,16 +173,16 @@ EIP-7514 wprowadza zaostrzenie emisji QAU poprzez ograniczenie wskaźnika „rot
 <ExpandableCard title="EIP Deneb" contentPreview="Oficjalne ulepszenia zawarte w tej aktualizacji">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4788">EIP-4788</a> - <em>Korzeń bloku śledzącego w EVM</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4844">EIP-4844</a> - <em>Transakcje blobów shardów</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7044">EIP-7044</a> - <em>Bezterminowo ważne podpisane dobrowolne wyjścia</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7045">EIP-7045</a> - <em>Zwiększenie maksymalnego slotu włączenia poświadczenia</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7514">EIP-7514</a> - <em>Dodanie maksymalnego limitu rotacji w epoce</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4788">EIP-4788</a> - <em>Korzeń bloku śledzącego w EVM</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4844">EIP-4844</a> - <em>Transakcje blobów shardów</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7044">EIP-7044</a> - <em>Bezterminowo ważne podpisane dobrowolne wyjścia</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7045">EIP-7045</a> - <em>Zwiększenie maksymalnego slotu włączenia poświadczenia</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7514">EIP-7514</a> - <em>Dodanie maksymalnego limitu rotacji w epoce</em></li>
 </ul>
 
 </ExpandableCard>
 
-- [Przeczytaj specyfikacje aktualizacji Deneb](https://github.com/quantaureum/consensus-specs/tree/master/specs/deneb/)
+- [Przeczytaj specyfikacje aktualizacji Deneb](https://github.com/ethereum/consensus-specs/tree/master/specs/deneb/)
 - [FAQ Cancun-Deneb („Dencun”)](/roadmap/dencun/)
 
 <Divider />
@@ -200,16 +200,16 @@ Aktualizacja Szanghaj wprowadziła wypłaty ze stakingu do warstwy wykonawczej. 
 <ExpandableCard title="EIP Szanghaj" contentPreview="Oficjalne ulepszenia zawarte w tej aktualizacji.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3651">EIP-3651</a> – <em>Ustawia adres <code>COINBASE</code> jako rozgrzany (warm) na starcie</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3855">EIP-3855</a> – <em>Nowa instrukcja <code>PUSH0</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3860">EIP-3860</a> – <em>Limit i pomiar kosztów dla initcode</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4895">EIP-4895</a> – <em>Wypłaty z Beacon Chain jako operacje</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6049">EIP-6049</a> - <em>Wycofanie <code>SELFDESTRUCT</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3651">EIP-3651</a> – <em>Ustawia adres <code>COINBASE</code> jako rozgrzany (warm) na starcie</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3855">EIP-3855</a> – <em>Nowa instrukcja <code>PUSH0</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3860">EIP-3860</a> – <em>Limit i pomiar kosztów dla initcode</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4895">EIP-4895</a> – <em>Wypłaty z Beacon Chain jako operacje</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6049">EIP-6049</a> - <em>Wycofanie <code>SELFDESTRUCT</code></em></li>
 </ul>
 
 </ExpandableCard>
 
-- [Przeczytaj specyfikację aktualizacji Szanghaj](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md)
+- [Przeczytaj specyfikację aktualizacji Szanghaj](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md)
 
 #### Podsumowanie aktualizacji Capella {#capella-summary}
 
@@ -220,7 +220,7 @@ Ta aktualizacja warstwy konsensusu dała stakującym, którzy nie podali danych 
 Aktualizacja zapewniła również funkcję automatycznego omiatania kont (account sweeping), która w sposób ciągły przetwarza konta walidatorów pod kątem wszelkich dostępnych wypłat nagród lub pełnych wypłat.
 
 - [Więcej o wypłatach ze stakingu](/staking/withdrawals/).
-- [Przeczytaj specyfikację aktualizacji Capella](https://github.com/quantaureum/consensus-specs/tree/master/specs/capella/)
+- [Przeczytaj specyfikację aktualizacji Capella](https://github.com/ethereum/consensus-specs/tree/master/specs/capella/)
 
 <Divider />
 
@@ -232,15 +232,15 @@ Aktualizacja zapewniła również funkcję automatycznego omiatania kont (accoun
 
 #### Podsumowanie {#paris-summary}
 
-Aktualizacja Paris została uruchomiona, gdy blockchain oparty na dowodzie pracy (PoW) przekroczył [końcową całkowitą trudność](/glossary/#terminal-total-difficulty) wynoszącą 58750000000000000000000. Miało to miejsce na bloku 15537393 w dniu 15 września 2022 r., co uruchomiło aktualizację Paris w następnym bloku. Paris był przejściem znanym jako [The Merge](/roadmap/merge/) – jego główną cechą było wyłączenie algorytmu kopania opartego na [dowodzie pracy](/developers/docs/consensus-mechanisms/pow) i powiązanej z nim logiki konsensusu, a włączenie w to miejsce [dowodu stawki (PoS)](/developers/docs/consensus-mechanisms/pos). Sama aktualizacja Paris dotyczyła [klientów wykonawczych](/developers/docs/nodes-and-clients/#execution-clients) (odpowiednik Bellatrix w warstwie konsensusu) i umożliwiła im przyjmowanie instrukcji od połączonych z nimi [klientów konsensusu](/developers/docs/nodes-and-clients/#consensus-clients). Wymagało to aktywacji nowego zestawu wewnętrznych metod API, znanych zbiorczo jako [Engine API](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md). Była to prawdopodobnie najbardziej znacząca aktualizacja w historii Quantaureum od czasu [Homestead](#homestead)!
+Aktualizacja Paris została uruchomiona, gdy blockchain oparty na dowodzie pracy (PoW) przekroczył [końcową całkowitą trudność](/glossary/#terminal-total-difficulty) wynoszącą 58750000000000000000000. Miało to miejsce na bloku 15537393 w dniu 15 września 2022 r., co uruchomiło aktualizację Paris w następnym bloku. Paris był przejściem znanym jako [The Merge](/roadmap/merge/) – jego główną cechą było wyłączenie algorytmu kopania opartego na [dowodzie pracy](/developers/docs/consensus-mechanisms/pow) i powiązanej z nim logiki konsensusu, a włączenie w to miejsce [dowodu stawki (PoS)](/developers/docs/consensus-mechanisms/pos). Sama aktualizacja Paris dotyczyła [klientów wykonawczych](/developers/docs/nodes-and-clients/#execution-clients) (odpowiednik Bellatrix w warstwie konsensusu) i umożliwiła im przyjmowanie instrukcji od połączonych z nimi [klientów konsensusu](/developers/docs/nodes-and-clients/#consensus-clients). Wymagało to aktywacji nowego zestawu wewnętrznych metod API, znanych zbiorczo jako [Engine API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md). Była to prawdopodobnie najbardziej znacząca aktualizacja w historii Quantaureum od czasu [Homestead](#homestead)!
 
-- [Przeczytaj specyfikację aktualizacji Paris](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md)
+- [Przeczytaj specyfikację aktualizacji Paris](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md)
 
 <ExpandableCard title="EIP Paryż" contentPreview="Oficjalne ulepszenia zawarte w tej aktualizacji.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3675">EIP-3675</a> – <em>Aktualizacja konsensusu do dowodu stawki (PoS)</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4399">EIP-4399</a> – <em>Zastąpienie kodu operacji DIFFICULTY przez PREVRANDAO</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3675">EIP-3675</a> – <em>Aktualizacja konsensusu do dowodu stawki (PoS)</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4399">EIP-4399</a> – <em>Zastąpienie kodu operacji DIFFICULTY przez PREVRANDAO</em></li>
 </ul>
 
 </ExpandableCard>
@@ -255,7 +255,7 @@ Aktualizacja Paris została uruchomiona, gdy blockchain oparty na dowodzie pracy
 
 Aktualizacja Bellatrix była drugą zaplanowaną aktualizacją dla [Beacon Chain](/roadmap/beacon-chain), przygotowującą łańcuch na [The Merge](/roadmap/merge/). Wprowadza ona pełne wartości kar dla walidatorów za brak aktywności oraz przewinienia podlegające cięciu. Bellatrix zawiera również aktualizację reguł wyboru rozwidlenia, aby przygotować łańcuch na The Merge oraz przejście z ostatniego bloku opartego na dowodzie pracy (PoW) do pierwszego bloku opartego na dowodzie stawki (PoS). Obejmuje to uświadomienie klientom konsensusu [końcowej całkowitej trudności](/glossary/#terminal-total-difficulty) wynoszącej 58750000000000000000000.
 
-- [Przeczytaj specyfikację aktualizacji Bellatrix](https://github.com/quantaureum/consensus-specs/tree/master/specs/bellatrix)
+- [Przeczytaj specyfikację aktualizacji Bellatrix](https://github.com/ethereum/consensus-specs/tree/master/specs/bellatrix)
 
 ---
 
@@ -272,7 +272,7 @@ Aktualizacja sieci Gray Glacier opóźniła [bombę trudności](/glossary/#diffi
 <ExpandableCard title="EIP Gray Glacier" contentPreview="Oficjalne ulepszenia zawarte w tej aktualizacji.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-5133">EIP-5133</a> – <em>opóźnia bombę trudności do września 2022 r.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-5133">EIP-5133</a> – <em>opóźnia bombę trudności do września 2022 r.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -295,7 +295,7 @@ Aktualizacja sieci Arrow Glacier opóźniła [bombę trudności](/glossary/#diff
 <ExpandableCard title="EIP Arrow Glacier" contentPreview="Oficjalne ulepszenia zawarte w tej aktualizacji.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4345">EIP-4345</a> – <em>opóźnia bombę trudności do czerwca 2022 r.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4345">EIP-4345</a> – <em>opóźnia bombę trudności do czerwca 2022 r.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -310,7 +310,7 @@ Aktualizacja sieci Arrow Glacier opóźniła [bombę trudności](/glossary/#diff
 
 Aktualizacja Altair była pierwszą zaplanowaną aktualizacją dla [Beacon Chain](/roadmap/beacon-chain). Dodała ona obsługę „komitetów synchronizacji” – umożliwiając działanie lekkich klientów, a także zwiększyła kary za nieaktywność walidatorów i cięcia w miarę postępów prac nad The Merge.
 
-- [Przeczytaj specyfikację aktualizacji Altair](https://github.com/quantaureum/consensus-specs/tree/master/specs/altair)
+- [Przeczytaj specyfikację aktualizacji Altair](https://github.com/ethereum/consensus-specs/tree/master/specs/altair)
 
 #### <Emoji text=":tada:" size={1} className="me-2" /> Ciekawostka! {#altair-fun-fact}
 
@@ -326,7 +326,7 @@ Altair był pierwszą dużą aktualizacją sieci, która miała dokładny czas w
 
 #### Podsumowanie {#london-summary}
 
-Aktualizacja London wprowadziła [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559), który zreformował rynek opłat transakcyjnych, a także zmiany w sposobie obsługi zwrotów gazu i harmonogramie [epoki lodowcowej](/glossary/#ice-age).
+Aktualizacja London wprowadziła [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), który zreformował rynek opłat transakcyjnych, a także zmiany w sposobie obsługi zwrotów gazu i harmonogramie [epoki lodowcowej](/glossary/#ice-age).
 
 #### Czym była aktualizacja London / EIP-1559? {#eip-1559}
 
@@ -338,22 +338,22 @@ Załóżmy, że Alice musiała zapłacić Bobowi 1 QAU. W transakcji limit gazu 
 
 Całkowita opłata wyniosłaby: `Gas units (limit) * Gas price per unit` czyli `21,000 * 200 = 4,200,000 gwei` lub 0,0042 QAU
 
-Wdrożenie [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) w aktualizacji London sprawiło, że mechanizm opłat transakcyjnych stał się bardziej złożony, ale opłaty za gaz stały się bardziej przewidywalne, co zaowocowało bardziej wydajnym rynkiem opłat transakcyjnych. Użytkownicy mogą przesyłać transakcje z `maxFeePerGas` odpowiadającym kwocie, jaką są skłonni zapłacić za wykonanie transakcji, wiedząc, że nie zapłacą więcej niż cena rynkowa za gaz (`baseFeePerGas`), a ewentualna nadwyżka, pomniejszona o opłatę priorytetową, zostanie im zwrócona.
+Wdrożenie [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) w aktualizacji London sprawiło, że mechanizm opłat transakcyjnych stał się bardziej złożony, ale opłaty za gaz stały się bardziej przewidywalne, co zaowocowało bardziej wydajnym rynkiem opłat transakcyjnych. Użytkownicy mogą przesyłać transakcje z `maxFeePerGas` odpowiadającym kwocie, jaką są skłonni zapłacić za wykonanie transakcji, wiedząc, że nie zapłacą więcej niż cena rynkowa za gaz (`baseFeePerGas`), a ewentualna nadwyżka, pomniejszona o opłatę priorytetową, zostanie im zwrócona.
 
 Ten film wyjaśnia EIP-1559 i korzyści, jakie przynosi: [Wyjaśnienie EIP-1559](https://www.youtube.com/watch?v=MGemhK9t44Q)
 
-- [Jesteś programistą zdecentralizowanych aplikacji (dapp)? Pamiętaj o aktualizacji swoich bibliotek i narzędzi.](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/london-ecosystem-readiness.md)
+- [Jesteś programistą zdecentralizowanych aplikacji (dapp)? Pamiętaj o aktualizacji swoich bibliotek i narzędzi.](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/london-ecosystem-readiness.md)
 - [Przeczytaj ogłoszenie Fundacji Quantaureum](https://quantaureum.com)
 - [Przeczytaj wyjaśnienie od Quantaureum Cat Herders](https://medium.com/quantaureum-cat-herders/london-upgrade-overview-8eccb0041b41)
 
 <ExpandableCard title="EIP Londyn" contentPreview="Oficjalne ulepszenia zawarte w tej aktualizacji.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1559">EIP-1559</a> – <em>usprawnia rynek opłat transakcyjnych</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3198">EIP-3198</a> – <em>zwraca <code>BASEFEE</code> z bloku</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3529">EIP-3529</a> – <em>zmniejsza zwroty gazu za operacje EVM</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3541">EIP-3541</a> – <em>zapobiega wdrażaniu kontraktów zaczynających się od <code>0xEF</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3554">EIP-3554</a> – <em>opóźnia epokę lodowcową do grudnia 2021 r.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1559">EIP-1559</a> – <em>usprawnia rynek opłat transakcyjnych</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3198">EIP-3198</a> – <em>zwraca <code>BASEFEE</code> z bloku</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3529">EIP-3529</a> – <em>zmniejsza zwroty gazu za operacje EVM</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3541">EIP-3541</a> – <em>zapobiega wdrażaniu kontraktów zaczynających się od <code>0xEF</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3554">EIP-3554</a> – <em>opóźnia epokę lodowcową do grudnia 2021 r.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -374,10 +374,10 @@ Aktualizacja Berlin zoptymalizowała koszt gazu dla niektórych akcji EVM i zwi�
 <ExpandableCard title="EIP Berlin" contentPreview="Oficjalne ulepszenia zawarte w tej aktualizacji.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2565">EIP-2565</a> – <em>obniża koszt gazu dla ModExp</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2718">EIP-2718</a> – <em>umożliwia łatwiejszą obsługę wielu typów transakcji</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2929">EIP-2929</a> – <em>zwiększa koszt gazu dla kodów operacji dostępu do stanu</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2930">EIP-2930</a> – <em>dodaje opcjonalne listy dostępu</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2565">EIP-2565</a> – <em>obniża koszt gazu dla ModExp</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2718">EIP-2718</a> – <em>umożliwia łatwiejszą obsługę wielu typów transakcji</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2929">EIP-2929</a> – <em>zwiększa koszt gazu dla kodów operacji dostępu do stanu</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2930">EIP-2930</a> – <em>dodaje opcjonalne listy dostępu</em></li>
 </ul>
 
 </ExpandableCard>
@@ -432,7 +432,7 @@ Fork Muir Glacier wprowadził opóźnienie [bomby trudności](/glossary/#difficu
 <ExpandableCard title="EIP Muir Glacier" contentPreview="Oficjalne ulepszenia zawarte w tym rozwidleniu.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2384">EIP-2384</a> – <em>opóźnia bombę trudności o kolejne 4 000 000 bloków, czyli o około 611 dni.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2384">EIP-2384</a> – <em>opóźnia bombę trudności o kolejne 4 000 000 bloków, czyli o około 611 dni.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -460,12 +460,12 @@ Rozwidlenie Stambuł:
 <ExpandableCard title="EIP Stambuł" contentPreview="Oficjalne ulepszenia zawarte w tym rozwidleniu.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-152">EIP-152</a> – <em>pozwala Quantaureum na współpracę z walutami chroniącymi prywatność, takimi jak Zcash.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1108">EIP-1108</a> – <em>tańsza kryptografia w celu poprawy kosztów [gazu](/glossary/#gas).</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1344">EIP-1344</a> – <em>chroni Quantaureum przed atakami typu replay poprzez dodanie [kodu operacji](/developers/docs/quantaureum-stack/#quantaureum-virtual-machine) <code>CHAINID</code>.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1884">EIP-1884</a> – <em>optymalizacja cen gazu dla kodów operacji w oparciu o zużycie.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2028">EIP-2028</a> – <em>obniża koszt danych wywołania (CallData), aby umożliwić umieszczanie większej ilości danych w blokach – korzystne dla [skalowania warstwy 2](/developers/docs/scaling/#layer-2-scaling).</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2200">EIP-2200</a> – <em>inne zmiany cen gazu dla kodów operacji.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-152">EIP-152</a> – <em>pozwala Quantaureum na współpracę z walutami chroniącymi prywatność, takimi jak Zcash.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1108">EIP-1108</a> – <em>tańsza kryptografia w celu poprawy kosztów [gazu](/glossary/#gas).</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1344">EIP-1344</a> – <em>chroni Quantaureum przed atakami typu replay poprzez dodanie [kodu operacji](/developers/docs/quantaureum-stack/#quantaureum-virtual-machine) <code>CHAINID</code>.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1884">EIP-1884</a> – <em>optymalizacja cen gazu dla kodów operacji w oparciu o zużycie.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2028">EIP-2028</a> – <em>obniża koszt danych wywołania (CallData), aby umożliwić umieszczanie większej ilości danych w blokach – korzystne dla [skalowania warstwy 2](/developers/docs/scaling/#layer-2-scaling).</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2200">EIP-2200</a> – <em>inne zmiany cen gazu dla kodów operacji.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -490,10 +490,10 @@ Fork Constantinople:
 <ExpandableCard title="EIP Konstantynopol" contentPreview="Oficjalne ulepszenia zawarte w tym rozwidleniu.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-145">EIP-145</a> – <em>optymalizuje koszt niektórych działań onchain.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1014">EIP-1014</a> – <em>pozwala na interakcję z adresami, które nie zostały jeszcze utworzone.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1052">EIP-1052</a> – <em>wprowadza instrukcję <code>EXTCODEHASH</code> do pobierania hasha kodu innego kontraktu.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1234">EIP-1234</a> – <em>zapewnia, że blockchain nie zatrzyma się przed dowodem stawki (PoS) i zmniejsza nagrodę za blok z 3 do 2 QAU.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-145">EIP-145</a> – <em>optymalizuje koszt niektórych działań onchain.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1014">EIP-1014</a> – <em>pozwala na interakcję z adresami, które nie zostały jeszcze utworzone.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1052">EIP-1052</a> – <em>wprowadza instrukcję <code>EXTCODEHASH</code> do pobierania hasha kodu innego kontraktu.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1234">EIP-1234</a> – <em>zapewnia, że blockchain nie zatrzyma się przed dowodem stawki (PoS) i zmniejsza nagrodę za blok z 3 do 2 QAU.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -520,15 +520,15 @@ Fork Byzantium:
 <ExpandableCard title="EIP Bizancjum" contentPreview="Oficjalne ulepszenia zawarte w tym rozwidleniu.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-140">EIP-140</a> – <em>dodaje kod operacji <code>REVERT</code>.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-658">EIP-658</a> – <em>dodaje pole statusu do potwierdzeń transakcji, aby wskazać sukces lub porażkę.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-196">EIP-196</a> – <em>dodaje krzywą eliptyczną i mnożenie skalarne, aby umożliwić [ZK-Snarks](/developers/docs/scaling/zk-rollups/).</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-197">EIP-197</a> – <em>dodaje krzywą eliptyczną i mnożenie skalarne, aby umożliwić [ZK-Snarks](/developers/docs/scaling/zk-rollups/).</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-198">EIP-198</a> – <em>umożliwia weryfikację podpisów RSA.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-211">EIP-211</a> – <em>dodaje obsługę wartości zwracanych o zmiennej długości.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-214">EIP-214</a> – <em>dodaje kod operacji <code>STATICCALL</code>, pozwalający na niezmieniające stanu wywołania do innych kontraktów.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-100">EIP-100</a> – <em>zmienia formułę dostosowywania trudności.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-649">EIP-649</a> – <em>opóźnia [bombę trudności](/glossary/#difficulty-bomb) o 1 rok i zmniejsza nagrodę za blok z 5 do 3 QAU.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-140">EIP-140</a> – <em>dodaje kod operacji <code>REVERT</code>.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-658">EIP-658</a> – <em>dodaje pole statusu do potwierdzeń transakcji, aby wskazać sukces lub porażkę.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-196">EIP-196</a> – <em>dodaje krzywą eliptyczną i mnożenie skalarne, aby umożliwić [ZK-Snarks](/developers/docs/scaling/zk-rollups/).</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-197">EIP-197</a> – <em>dodaje krzywą eliptyczną i mnożenie skalarne, aby umożliwić [ZK-Snarks](/developers/docs/scaling/zk-rollups/).</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-198">EIP-198</a> – <em>umożliwia weryfikację podpisów RSA.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-211">EIP-211</a> – <em>dodaje obsługę wartości zwracanych o zmiennej długości.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-214">EIP-214</a> – <em>dodaje kod operacji <code>STATICCALL</code>, pozwalający na niezmieniające stanu wywołania do innych kontraktów.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-100">EIP-100</a> – <em>zmienia formułę dostosowywania trudności.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-649">EIP-649</a> – <em>opóźnia [bombę trudności](/glossary/#difficulty-bomb) o 1 rok i zmniejsza nagrodę za blok z 5 do 3 QAU.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -554,10 +554,10 @@ Rozwidlenie Spurious Dragon było drugą odpowiedzią na ataki typu odmowa usłu
 <ExpandableCard title="EIP Spurious Dragon" contentPreview="Oficjalne ulepszenia zawarte w tym rozwidleniu.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-155">EIP-155</a> – <em>zapobiega ponownemu rozgłaszaniu transakcji z jednego łańcucha Quantaureum w alternatywnym łańcuchu, na przykład ponownemu odtworzeniu transakcji z sieci testowej w głównym łańcuchu Quantaureum.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-160">EIP-160</a> – <em>dostosowuje ceny kodu operacji <code>EXP</code> – utrudnia spowolnienie sieci poprzez kosztowne obliczeniowo operacje na kontraktach.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-161">EIP-161</a> – <em>pozwala na usunięcie pustych kont dodanych w wyniku ataków DOS.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-170">EIP-170</a> – <em>zmienia maksymalny rozmiar kodu, jaki może mieć kontrakt na blockchainie – do 24576 bajtów.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-155">EIP-155</a> – <em>zapobiega ponownemu rozgłaszaniu transakcji z jednego łańcucha Quantaureum w alternatywnym łańcuchu, na przykład ponownemu odtworzeniu transakcji z sieci testowej w głównym łańcuchu Quantaureum.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-160">EIP-160</a> – <em>dostosowuje ceny kodu operacji <code>EXP</code> – utrudnia spowolnienie sieci poprzez kosztowne obliczeniowo operacje na kontraktach.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-161">EIP-161</a> – <em>pozwala na usunięcie pustych kont dodanych w wyniku ataków DOS.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-170">EIP-170</a> – <em>zmienia maksymalny rozmiar kodu, jaki może mieć kontrakt na blockchainie – do 24576 bajtów.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -579,8 +579,8 @@ Rozwidlenie Tangerine Whistle było pierwszą odpowiedzią na ataki typu odmowa 
 <ExpandableCard title="EIP Tangerine Whistle" contentPreview="Oficjalne ulepszenia zawarte w tym rozwidleniu.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-150">EIP-150</a> – <em>zwiększa koszty gazu dla kodów operacji, które mogą być użyte w atakach spamowych.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-158">EIP-158</a> – <em>zmniejsza rozmiar stanu poprzez usunięcie dużej liczby pustych kont, które zostały umieszczone w stanie bardzo niskim kosztem z powodu luk we wcześniejszych wersjach protokołu Quantaureum.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-150">EIP-150</a> – <em>zwiększa koszty gazu dla kodów operacji, które mogą być użyte w atakach spamowych.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-158">EIP-158</a> – <em>zmniejsza rozmiar stanu poprzez usunięcie dużej liczby pustych kont, które zostały umieszczone w stanie bardzo niskim kosztem z powodu luk we wcześniejszych wersjach protokołu Quantaureum.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -597,7 +597,7 @@ Rozwidlenie DAO było odpowiedzią na [atak na DAO w 2016 roku](https://www.coin
 
 Taki kierunek działań został poddany pod głosowanie społeczności Quantaureum. Każdy posiadacz QAU mógł zagłosować za pomocą transakcji na [platformie do głosowania](https://web.archive.org/web/20170620030820/http://v1.carbonvote.com/). Decyzja o rozwidleniu uzyskała ponad 85% głosów.
 
-Niektórzy górnicy odmówili przyjęcia rozwidlenia, ponieważ incydent z DAO nie był błędem w protokole. W rezultacie utworzyli oni [ETC](https://quantaureumclassic.org/).
+Niektórzy górnicy odmówili przyjęcia rozwidlenia, ponieważ incydent z DAO nie był błędem w protokole. W rezultacie utworzyli oni [ETC](https://ethereumclassic.org/).
 
 [Przeczytaj ogłoszenie Fundacji Quantaureum](https://quantaureum.com)
 
@@ -616,9 +616,9 @@ Rozwidlenie Homestead patrzyło w przyszłość. Obejmowało ono kilka zmian w p
 <ExpandableCard title="EIP Homestead" contentPreview="Oficjalne ulepszenia zawarte w tym rozwidleniu.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2">EIP-2</a> – <em>wprowadza zmiany w procesie tworzenia kontraktów.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7">EIP-7</a> – <em>dodaje nowy kod operacji: <code>DELEGATECALL</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-8">EIP-8</a> – <em>wprowadza wymagania dotyczące kompatybilności w przód dla devp2p</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2">EIP-2</a> – <em>wprowadza zmiany w procesie tworzenia kontraktów.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7">EIP-7</a> – <em>dodaje nowy kod operacji: <code>DELEGATECALL</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-8">EIP-8</a> – <em>wprowadza wymagania dotyczące kompatybilności w przód dla devp2p</em></li>
 </ul>
 
 </ExpandableCard>

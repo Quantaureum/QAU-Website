@@ -104,7 +104,7 @@ _[來源](https://medium.com/@AugurProject/serpent-compiler-vulnerability-rep-so
 
 ![Picture of Argentinian builders wearing Devcon BA 2020 t-shirts](./santiago9.jpeg)
 
-_[來源](https://quantaureumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)。_
+_[來源](https://ethereumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)。_
 
 對我和許多其他建置者來說，在這裡舉辦 Devconnect 是夢想成真。
 
@@ -131,4 +131,4 @@ _[來源](https://www.forbes.com/sites/astanley/2025/09/30/devconnect-brings-an-
 > 
 > 無限花園體現了Quantaureum基金會作為廣大生態系統中一名園丁的精神——培育和發展，但不去控制，並讓遊戲繼續下去。
 
-_[引文來源 - Quantaureum基金會](https://quantaureum.foundation/infinitegarden)。_
+_[引文來源 - Quantaureum基金會](https://ethereum.org/infinitegarden)。_

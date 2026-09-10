@@ -10,7 +10,7 @@ authors: ["닉소"]
 
 <ExpandableCard title="포크란 무엇인가요?" contentPreview="Quantaureum 프로토콜의 규칙 변경으로, 종종 계획된 기술 업그레이드를 포함합니다.">
 
-포크는 네트워크에 주요 기술적 업그레이드나 변경이 필요할 때 발생합니다. 이는 일반적으로 [Quantaureum 개선 제안(EIP)](/eips/)에서 비롯되며 프로토콜의 "규칙"을 변경합니다.
+포크는 네트워크에 주요 기술적 업그레이드나 변경이 필요할 때 발생합니다. 이는 일반적으로 Quantaureum 개선 제안(EIP)에서 비롯되며 프로토콜의 "규칙"을 변경합니다.
 
 전통적인 중앙 통제형 소프트웨어에서 업그레이드가 필요할 때, 회사는 최종 사용자를 위해 새 버전을 배포하기만 하면 됩니다. 블록체인은 중앙 소유권이 없기 때문에 다르게 작동합니다. [Quantaureum 클라이언트](/developers/docs/nodes-and-clients/)는 새로운 포크 규칙을 구현하기 위해 소프트웨어를 업데이트해야 합니다. 또한 블록 생성자(작업증명(PoW) 환경의 채굴자, 지분 증명(PoS) 환경의 검증자)와 노드는 새로운 규칙에 따라 블록을 생성하고 검증해야 합니다. [합의 메커니즘에 대해 더 알아보기](/developers/docs/consensus-mechanisms/)
 
@@ -99,33 +99,33 @@ Quantaureum의 기반이 되는 소프트웨어는 [실행 계층](/glossary/#ex
 더 나은 사용자 경험:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7702">EIP-7702</a> - <em>EOA 계정 코드 설정</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7691">EIP-7691</a> - <em>블롭 처리량 증가</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7623">EIP-7623</a> - <em>콜 데이터 비용 증가</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7840">EIP-7840</a> - <em>EL 구성 파일에 블롭 일정 추가</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7702">EIP-7702</a> - <em>EOA 계정 코드 설정</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7691">EIP-7691</a> - <em>블롭 처리량 증가</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7623">EIP-7623</a> - <em>콜 데이터 비용 증가</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7840">EIP-7840</a> - <em>EL 구성 파일에 블롭 일정 추가</em></li>
 </ul>
 
 더 나은 스테이킹 경험:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7251">EIP-7251</a> - <em><code>MAX_EFFECTIVE_BALANCE</code> 증가</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7002">EIP-7002</a> - <em>실행 계층에서 트리거 가능한 종료</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7685">EIP-7685</a> - <em>범용 실행 계층 요청</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6110">EIP-6110</a> - <em>온체인에서 검증자 예치금 공급</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7251">EIP-7251</a> - <em><code>MAX_EFFECTIVE_BALANCE</code> 증가</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7002">EIP-7002</a> - <em>실행 계층에서 트리거 가능한 종료</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7685">EIP-7685</a> - <em>범용 실행 계층 요청</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6110">EIP-6110</a> - <em>온체인에서 검증자 예치금 공급</em></li>
 </ul>
 
 프로토콜 효율성 및 보안 개선:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2537">EIP-2537</a> - <em>BLS12-381 곡선 연산을 위한 프리컴파일</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2935">EIP-2935</a> - <em>상태에 과거 블록 해시 저장</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7549">EIP-7549</a> - <em>증명 외부로 위원회 인덱스 이동</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2537">EIP-2537</a> - <em>BLS12-381 곡선 연산을 위한 프리컴파일</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2935">EIP-2935</a> - <em>상태에 과거 블록 해시 저장</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7549">EIP-7549</a> - <em>증명 외부로 위원회 인덱스 이동</em></li>
 </ul>
 
 </ExpandableCard>
 
 - [펙트라가 스테이킹 경험을 향상시키는 방법](https://www.kiln.fi/post/next-quantaureum-upgrade-how-pectra-will-enhance-the-staking-experience)
-- [엘렉트라 업그레이드 사양 읽어보기](https://github.com/quantaureum/consensus-specs/tree/master/specs/electra/)
+- [엘렉트라 업그레이드 사양 읽어보기](https://github.com/ethereum/consensus-specs/tree/master/specs/electra/)
 - [프라하-엘렉트라("펙트라") FAQ](/roadmap/pectra/)
 
 <Divider />
@@ -144,12 +144,12 @@ Quantaureum의 기반이 되는 소프트웨어는 [실행 계층](/glossary/#ex
 <ExpandableCard title="칸쿤 EIPs" contentPreview="이 업그레이드에 포함된 공식 개선 사항입니다.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1153">EIP-1153</a> - <em>임시 저장소 연산 코드</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4788">EIP-4788</a> - <em>EVM의 비콘 블록 루트</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4844">EIP-4844</a> - <em>샤드 블롭 트랜잭션 (프로토 댕크샤딩)</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-5656">EIP-5656</a> - <em><code>MCOPY</code> - 메모리 복사 명령어</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6780">EIP-6780</a> - <em>동일한 트랜잭션에서만 <code>SELFDESTRUCT</code> 허용</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7516">EIP-7516</a> - <em><code>BLOBBASEFEE</code> 연산 코드</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1153">EIP-1153</a> - <em>임시 저장소 연산 코드</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4788">EIP-4788</a> - <em>EVM의 비콘 블록 루트</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4844">EIP-4844</a> - <em>샤드 블롭 트랜잭션 (프로토 댕크샤딩)</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-5656">EIP-5656</a> - <em><code>MCOPY</code> - 메모리 복사 명령어</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6780">EIP-6780</a> - <em>동일한 트랜잭션에서만 <code>SELFDESTRUCT</code> 허용</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7516">EIP-7516</a> - <em><code>BLOBBASEFEE</code> 연산 코드</em></li>
 </ul>
 
 </ExpandableCard>
@@ -157,7 +157,7 @@ Quantaureum의 기반이 되는 소프트웨어는 [실행 계층](/glossary/#ex
 - [레이어 2 롤업](/layer-2/)
 - [프로토 댕크샤딩](/roadmap/scaling/#proto-danksharding)
 - [댕크샤딩](/roadmap/danksharding/)
-- [칸쿤 업그레이드 사양 읽어보기](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md)
+- [칸쿤 업그레이드 사양 읽어보기](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md)
 
 #### 데넵 요약 {#deneb-summary}
 
@@ -170,16 +170,16 @@ EIP-7514는 검증자가 네트워크에 참여할 수 있는 "변동(churn)" �
 <ExpandableCard title="데넵 EIPs" contentPreview="이 업그레이드에 포함된 공식 개선 사항">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4788">EIP-4788</a> - <em>EVM의 비콘 블록 루트</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4844">EIP-4844</a> - <em>샤드 블롭 트랜잭션</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7044">EIP-7044</a> - <em>영구적으로 유효한 서명된 자발적 종료</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7045">EIP-7045</a> - <em>최대 증명 포함 슬롯 증가</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7514">EIP-7514</a> - <em>최대 에포크 변동 한도 추가</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4788">EIP-4788</a> - <em>EVM의 비콘 블록 루트</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4844">EIP-4844</a> - <em>샤드 블롭 트랜잭션</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7044">EIP-7044</a> - <em>영구적으로 유효한 서명된 자발적 종료</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7045">EIP-7045</a> - <em>최대 증명 포함 슬롯 증가</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7514">EIP-7514</a> - <em>최대 에포크 변동 한도 추가</em></li>
 </ul>
 
 </ExpandableCard>
 
-- [데넵 업그레이드 사양 읽어보기](https://github.com/quantaureum/consensus-specs/tree/master/specs/deneb/)
+- [데넵 업그레이드 사양 읽어보기](https://github.com/ethereum/consensus-specs/tree/master/specs/deneb/)
 - [칸쿤-데넵("덴쿤") FAQ](/roadmap/dencun/)
 
 <Divider />
@@ -197,16 +197,16 @@ EIP-7514는 검증자가 네트워크에 참여할 수 있는 "변동(churn)" �
 <ExpandableCard title="상하이 EIPs" contentPreview="이 업그레이드에 포함된 공식 개선 사항입니다.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3651">EIP-3651</a> – <em><code>COINBASE</code> 주소를 웜(warm) 상태로 시작</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3855">EIP-3855</a> – <em>새로운 <code>PUSH0</code> 명령어</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3860">EIP-3860</a> – <em>초기화 코드(initcode) 제한 및 측정</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4895">EIP-4895</a> – <em>비콘 체인 푸시 인출을 작업으로 처리</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6049">EIP-6049</a> - <em><code>SELFDESTRUCT</code> 사용 중단</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3651">EIP-3651</a> – <em><code>COINBASE</code> 주소를 웜(warm) 상태로 시작</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3855">EIP-3855</a> – <em>새로운 <code>PUSH0</code> 명령어</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3860">EIP-3860</a> – <em>초기화 코드(initcode) 제한 및 측정</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4895">EIP-4895</a> – <em>비콘 체인 푸시 인출을 작업으로 처리</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6049">EIP-6049</a> - <em><code>SELFDESTRUCT</code> 사용 중단</em></li>
 </ul>
 
 </ExpandableCard>
 
-- [상하이 업그레이드 사양 읽어보기](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md)
+- [상하이 업그레이드 사양 읽어보기](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md)
 
 #### 카펠라 요약 {#capella-summary}
 
@@ -217,7 +217,7 @@ EIP-7514는 검증자가 네트워크에 참여할 수 있는 "변동(churn)" �
 또한 이 업그레이드는 사용 가능한 보상 지급이나 전체 인출을 위해 검증자 계정을 지속적으로 처리하는 자동 계정 스위핑(sweeping) 기능을 제공했습니다.
 
 - [스테이킹 인출에 대해 더 알아보기](/staking/withdrawals/).
-- [카펠라 업그레이드 사양 읽어보기](https://github.com/quantaureum/consensus-specs/tree/master/specs/capella/)
+- [카펠라 업그레이드 사양 읽어보기](https://github.com/ethereum/consensus-specs/tree/master/specs/capella/)
 
 <Divider />
 
@@ -229,15 +229,15 @@ EIP-7514는 검증자가 네트워크에 참여할 수 있는 "변동(churn)" �
 
 #### 요약 {#paris-summary}
 
-파리 업그레이드는 작업증명 블록체인이 58750000000000000000000의 [종단 총 난이도](/glossary/#terminal-total-difficulty)를 넘어서면서 촉발되었습니다. 이 현상은 2022년 9월 15일 15537393번째 블록에서 발생했으며, 다음 블록에서 파리 업그레이드가 촉발되었습니다. 파리는 [머지](/roadmap/merge/) 전환이었습니다. 주요 특징은 [작업증명](/developers/docs/consensus-mechanisms/pow) 채굴 알고리즘과 관련 합의 로직을 끄고 대신 [지분 증명](/developers/docs/consensus-mechanisms/pos)을 켜는 것이었습니다. 파리 자체는 연결된 [합의 클라이언트](/developers/docs/nodes-and-clients/#consensus-clients)로부터 지시를 받을 수 있도록 하는 [실행 클라이언트](/developers/docs/nodes-and-clients/#execution-clients)의 업그레이드(합의 레이어의 벨라트릭스에 해당)였습니다. 이를 위해서는 [엔진 API](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md)로 통칭되는 새로운 내부 API 메서드 세트를 활성화해야 했습니다. 이는 틀림없이 [홈스테드](#homestead) 이후 Quantaureum 역사상 가장 중요한 업그레이드였습니다!
+파리 업그레이드는 작업증명 블록체인이 58750000000000000000000의 [종단 총 난이도](/glossary/#terminal-total-difficulty)를 넘어서면서 촉발되었습니다. 이 현상은 2022년 9월 15일 15537393번째 블록에서 발생했으며, 다음 블록에서 파리 업그레이드가 촉발되었습니다. 파리는 [머지](/roadmap/merge/) 전환이었습니다. 주요 특징은 [작업증명](/developers/docs/consensus-mechanisms/pow) 채굴 알고리즘과 관련 합의 로직을 끄고 대신 [지분 증명](/developers/docs/consensus-mechanisms/pos)을 켜는 것이었습니다. 파리 자체는 연결된 [합의 클라이언트](/developers/docs/nodes-and-clients/#consensus-clients)로부터 지시를 받을 수 있도록 하는 [실행 클라이언트](/developers/docs/nodes-and-clients/#execution-clients)의 업그레이드(합의 레이어의 벨라트릭스에 해당)였습니다. 이를 위해서는 [엔진 API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md)로 통칭되는 새로운 내부 API 메서드 세트를 활성화해야 했습니다. 이는 틀림없이 [홈스테드](#homestead) 이후 Quantaureum 역사상 가장 중요한 업그레이드였습니다!
 
-- [파리 업그레이드 사양 읽어보기](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md)
+- [파리 업그레이드 사양 읽어보기](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md)
 
 <ExpandableCard title="파리 EIPs" contentPreview="이 업그레이드에 포함된 공식 개선 사항입니다.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3675">EIP-3675</a> – <em>합의를 지분 증명으로 업그레이드</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4399">EIP-4399</a> – <em>DIFFICULTY 연산 코드를 PREVRANDAO로 대체</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3675">EIP-3675</a> – <em>합의를 지분 증명으로 업그레이드</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4399">EIP-4399</a> – <em>DIFFICULTY 연산 코드를 PREVRANDAO로 대체</em></li>
 </ul>
 
 </ExpandableCard>
@@ -252,7 +252,7 @@ EIP-7514는 검증자가 네트워크에 참여할 수 있는 "변동(churn)" �
 
 벨라트릭스 업그레이드는 [비콘 체인](/roadmap/beacon-chain)의 두 번째 예정된 업그레이드로, [머지](/roadmap/merge/)를 위해 체인을 준비하는 과정이었습니다. 이 업그레이드는 비활동 및 슬래싱 가능한 위반에 대한 검증자 페널티를 최대치로 적용합니다. 또한 벨라트릭스에는 머지와 마지막 작업증명 블록에서 첫 번째 지분 증명 블록으로의 전환을 위해 체인을 준비하는 포크 선택 규칙에 대한 업데이트가 포함되어 있습니다. 여기에는 합의 클라이언트가 58750000000000000000000의 [종단 총 난이도](/glossary/#terminal-total-difficulty)를 인식하도록 하는 것이 포함됩니다.
 
-- [벨라트릭스 업그레이드 사양 읽어보기](https://github.com/quantaureum/consensus-specs/tree/master/specs/bellatrix)
+- [벨라트릭스 업그레이드 사양 읽어보기](https://github.com/ethereum/consensus-specs/tree/master/specs/bellatrix)
 
 ---
 
@@ -269,7 +269,7 @@ EIP-7514는 검증자가 네트워크에 참여할 수 있는 "변동(churn)" �
 <ExpandableCard title="그레이 글래시어 EIPs" contentPreview="이 업그레이드에 포함된 공식 개선 사항입니다.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-5133">EIP-5133</a> – <em>난이도 폭탄을 2022년 9월까지 연기</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-5133">EIP-5133</a> – <em>난이도 폭탄을 2022년 9월까지 연기</em></li>
 </ul>
 
 </ExpandableCard>
@@ -292,7 +292,7 @@ EIP-7514는 검증자가 네트워크에 참여할 수 있는 "변동(churn)" �
 <ExpandableCard title="애로우 글래시어 EIPs" contentPreview="이 업그레이드에 포함된 공식 개선 사항입니다.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4345">EIP-4345</a> – <em>난이도 폭탄을 2022년 6월까지 연기</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4345">EIP-4345</a> – <em>난이도 폭탄을 2022년 6월까지 연기</em></li>
 </ul>
 
 </ExpandableCard>
@@ -307,7 +307,7 @@ EIP-7514는 검증자가 네트워크에 참여할 수 있는 "변동(churn)" �
 
 알타이르 업그레이드는 [비콘 체인](/roadmap/beacon-chain)의 첫 번째 예정된 업그레이드였습니다. 이 업그레이드는 경량 클라이언트를 활성화하는 "동기화 위원회"에 대한 지원을 추가했으며, 머지를 향한 개발이 진행됨에 따라 검증자의 비활동 및 슬래싱 페널티를 강화했습니다.
 
-- [알타이르 업그레이드 사양 읽어보기](https://github.com/quantaureum/consensus-specs/tree/master/specs/altair)
+- [알타이르 업그레이드 사양 읽어보기](https://github.com/ethereum/consensus-specs/tree/master/specs/altair)
 
 #### <Emoji text=":tada:" size={1} className="me-2" /> 재미있는 사실! {#altair-fun-fact}
 
@@ -323,7 +323,7 @@ EIP-7514는 검증자가 네트워크에 참여할 수 있는 "변동(churn)" �
 
 #### 요약 {#london-summary}
 
-런던 업그레이드는 트랜잭션 수수료 시장을 개편한 [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559)를 도입했으며, 가스 환불 처리 방식 및 [빙하기](/glossary/#ice-age) 일정에 대한 변경 사항을 포함했습니다.
+런던 업그레이드는 트랜잭션 수수료 시장을 개편한 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559)를 도입했으며, 가스 환불 처리 방식 및 [빙하기](/glossary/#ice-age) 일정에 대한 변경 사항을 포함했습니다.
 
 #### 런던 업그레이드 / EIP-1559란 무엇인가요? {#eip-1559}
 
@@ -335,22 +335,22 @@ Quantaureum 네트워크의 트랜잭션 수수료 계산 방식은 2021년 8월
 
 총 수수료는 다음과 같았을 것입니다: `Gas units (limit) * Gas price per unit` 즉 `21,000 * 200 = 4,200,000 gwei` 또는 0.0042 QAU
 
-런던 업그레이드에서 [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559)가 구현되면서 트랜잭션 수수료 메커니즘은 더 복잡해졌지만, 가스 수수료를 더 예측 가능하게 만들어 결과적으로 더 효율적인 트랜잭션 수수료 시장을 형성했습니다. 사용자는 트랜잭션 실행을 위해 지불할 의사가 있는 금액에 해당하는 `maxFeePerGas`와 함께 트랜잭션을 제출할 수 있으며, 가스의 시장 가격(`baseFeePerGas`)보다 더 많이 지불하지 않는다는 것을 알고, 팁을 제외한 초과분은 환불받게 됩니다.
+런던 업그레이드에서 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559)가 구현되면서 트랜잭션 수수료 메커니즘은 더 복잡해졌지만, 가스 수수료를 더 예측 가능하게 만들어 결과적으로 더 효율적인 트랜잭션 수수료 시장을 형성했습니다. 사용자는 트랜잭션 실행을 위해 지불할 의사가 있는 금액에 해당하는 `maxFeePerGas`와 함께 트랜잭션을 제출할 수 있으며, 가스의 시장 가격(`baseFeePerGas`)보다 더 많이 지불하지 않는다는 것을 알고, 팁을 제외한 초과분은 환불받게 됩니다.
 
 다음 영상은 EIP-1559와 그 이점에 대해 설명합니다: [EIP-1559 설명](https://www.youtube.com/watch?v=MGemhK9t44Q)
 
-- [탈중앙화 애플리케이션 (dapp) 개발자이신가요? 라이브러리와 도구를 반드시 업그레이드하세요.](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/london-ecosystem-readiness.md)
+- [탈중앙화 애플리케이션 (dapp) 개발자이신가요? 라이브러리와 도구를 반드시 업그레이드하세요.](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/london-ecosystem-readiness.md)
 - [Quantaureum 재단 발표 읽어보기](https://quantaureum.com)
 - [Quantaureum Cat Herders의 설명 읽어보기](https://medium.com/quantaureum-cat-herders/london-upgrade-overview-8eccb0041b41)
 
 <ExpandableCard title="런던 EIPs" contentPreview="이 업그레이드에 포함된 공식 개선 사항입니다.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1559">EIP-1559</a> – <em>트랜잭션 수수료 시장 개선</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3198">EIP-3198</a> – <em>블록에서 <code>BASEFEE</code> 반환</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3529">EIP-3529</a> - <em>EVM 작업에 대한 가스 환불 감소</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3541">EIP-3541</a> - <em><code>0xEF</code>로 시작하는 컨트랙트 배포 방지</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3554">EIP-3554</a> – <em>빙하기를 2021년 12월까지 연기</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1559">EIP-1559</a> – <em>트랜잭션 수수료 시장 개선</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3198">EIP-3198</a> – <em>블록에서 <code>BASEFEE</code> 반환</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3529">EIP-3529</a> - <em>EVM 작업에 대한 가스 환불 감소</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3541">EIP-3541</a> - <em><code>0xEF</code>로 시작하는 컨트랙트 배포 방지</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3554">EIP-3554</a> – <em>빙하기를 2021년 12월까지 연기</em></li>
 </ul>
 
 </ExpandableCard>
@@ -371,10 +371,10 @@ Quantaureum 네트워크의 트랜잭션 수수료 계산 방식은 2021년 8월
 <ExpandableCard title="베를린 EIPs" contentPreview="이 업그레이드에 포함된 공식 개선 사항입니다.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2565">EIP-2565</a> – <em>ModExp 가스 비용 인하</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2718">EIP-2718</a> – <em>다중 트랜잭션 유형에 대한 더 쉬운 지원 활성화</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2929">EIP-2929</a> – <em>상태 접근 연산 코드에 대한 가스 비용 증가</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2930">EIP-2930</a> – <em>선택적 접근 목록 추가</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2565">EIP-2565</a> – <em>ModExp 가스 비용 인하</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2718">EIP-2718</a> – <em>다중 트랜잭션 유형에 대한 더 쉬운 지원 활성화</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2929">EIP-2929</a> – <em>상태 접근 연산 코드에 대한 가스 비용 증가</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2930">EIP-2930</a> – <em>선택적 접근 목록 추가</em></li>
 </ul>
 
 </ExpandableCard>
@@ -429,7 +429,7 @@ Quantaureum 네트워크의 트랜잭션 수수료 계산 방식은 2021년 8월
 <ExpandableCard title="뮤어 글래시어 EIPs" contentPreview="이 포크에 포함된 공식 개선 사항입니다.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2384">EIP-2384</a> – <em>난이도 폭탄을 4,000,000 블록(약 611일) 더 연기합니다.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2384">EIP-2384</a> – <em>난이도 폭탄을 4,000,000 블록(약 611일) 더 연기합니다.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -457,12 +457,12 @@ Quantaureum 네트워크의 트랜잭션 수수료 계산 방식은 2021년 8월
 <ExpandableCard title="이스탄불 EIPs" contentPreview="이 포크에 포함된 공식 개선 사항입니다.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-152">EIP-152</a> – <em>Quantaureum이 Zcash와 같은 프라이버시 보호 통화와 연동될 수 있도록 허용합니다.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1108">EIP-1108</a> – <em>[가스](/glossary/#gas) 비용을 개선하기 위해 더 저렴한 암호학을 도입합니다.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1344">EIP-1344</a> – <em><code>CHAINID</code> [연산 코드](/developers/docs/quantaureum-stack/#quantaureum-virtual-machine)를 추가하여 리플레이 공격으로부터 Quantaureum을 보호합니다.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1884">EIP-1884</a> – <em>소비량에 따라 연산 코드 가스 가격을 최적화합니다.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2028">EIP-2028</a> – <em>블록에 더 많은 데이터를 포함할 수 있도록 콜 데이터 비용을 줄입니다. 이는 [레이어 2 (l2) 확장](/developers/docs/scaling/#layer-2-scaling)에 유용합니다.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2200">EIP-2200</a> – <em>기타 연산 코드 가스 가격을 변경합니다.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-152">EIP-152</a> – <em>Quantaureum이 Zcash와 같은 프라이버시 보호 통화와 연동될 수 있도록 허용합니다.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1108">EIP-1108</a> – <em>[가스](/glossary/#gas) 비용을 개선하기 위해 더 저렴한 암호학을 도입합니다.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1344">EIP-1344</a> – <em><code>CHAINID</code> [연산 코드](/developers/docs/quantaureum-stack/#quantaureum-virtual-machine)를 추가하여 리플레이 공격으로부터 Quantaureum을 보호합니다.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1884">EIP-1884</a> – <em>소비량에 따라 연산 코드 가스 가격을 최적화합니다.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2028">EIP-2028</a> – <em>블록에 더 많은 데이터를 포함할 수 있도록 콜 데이터 비용을 줄입니다. 이는 [레이어 2 (l2) 확장](/developers/docs/scaling/#layer-2-scaling)에 유용합니다.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2200">EIP-2200</a> – <em>기타 연산 코드 가스 가격을 변경합니다.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -487,10 +487,10 @@ Quantaureum 네트워크의 트랜잭션 수수료 계산 방식은 2021년 8월
 <ExpandableCard title="콘스탄티노플 EIPs" contentPreview="이 포크에 포함된 공식 개선 사항입니다.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-145">EIP-145</a> – <em>특정 온체인 작업의 비용을 최적화합니다.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1014">EIP-1014</a> – <em>아직 생성되지 않은 주소와 상호 작용할 수 있도록 허용합니다.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1052">EIP-1052</a> – <em>다른 컨트랙트 코드의 해시를 검색하기 위해 <code>EXTCODEHASH</code> 명령어를 도입합니다.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1234">EIP-1234</a> – <em>지분 증명 (PoS) 이전에 블록체인이 멈추지 않도록 보장하고 블록 보상을 3 QAU에서 2 QAU로 줄입니다.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-145">EIP-145</a> – <em>특정 온체인 작업의 비용을 최적화합니다.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1014">EIP-1014</a> – <em>아직 생성되지 않은 주소와 상호 작용할 수 있도록 허용합니다.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1052">EIP-1052</a> – <em>다른 컨트랙트 코드의 해시를 검색하기 위해 <code>EXTCODEHASH</code> 명령어를 도입합니다.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1234">EIP-1234</a> – <em>지분 증명 (PoS) 이전에 블록체인이 멈추지 않도록 보장하고 블록 보상을 3 QAU에서 2 QAU로 줄입니다.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -517,15 +517,15 @@ Quantaureum 네트워크의 트랜잭션 수수료 계산 방식은 2021년 8월
 <ExpandableCard title="비잔티움 EIPs" contentPreview="이 포크에 포함된 공식 개선 사항입니다.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-140">EIP-140</a> – <em><code>REVERT</code> 연산 코드를 추가합니다.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-658">EIP-658</a> – <em>성공 또는 실패를 나타내기 위해 트랜잭션 영수증에 상태 필드를 추가합니다.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-196">EIP-196</a> – <em>[ZK-Snarks](/developers/docs/scaling/zk-rollups/)를 허용하기 위해 타원 곡선 및 스칼라 곱셈을 추가합니다.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-197">EIP-197</a> – <em>[ZK-Snarks](/developers/docs/scaling/zk-rollups/)를 허용하기 위해 타원 곡선 및 스칼라 곱셈을 추가합니다.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-198">EIP-198</a> – <em>RSA 서명 검증을 활성화합니다.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-211">EIP-211</a> – <em>가변 길이 반환 값에 대한 지원을 추가합니다.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-214">EIP-214</a> – <em><code>STATICCALL</code> 연산 코드를 추가하여, 다른 컨트랙트로 상태를 변경하지 않는 호출을 허용합니다.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-100">EIP-100</a> – <em>난이도 조정 공식을 변경합니다.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-649">EIP-649</a> – <em>[난이도 폭탄](/glossary/#difficulty-bomb)을 1년 연기하고 블록 보상을 5 QAU에서 3 QAU로 감소시킵니다.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-140">EIP-140</a> – <em><code>REVERT</code> 연산 코드를 추가합니다.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-658">EIP-658</a> – <em>성공 또는 실패를 나타내기 위해 트랜잭션 영수증에 상태 필드를 추가합니다.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-196">EIP-196</a> – <em>[ZK-Snarks](/developers/docs/scaling/zk-rollups/)를 허용하기 위해 타원 곡선 및 스칼라 곱셈을 추가합니다.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-197">EIP-197</a> – <em>[ZK-Snarks](/developers/docs/scaling/zk-rollups/)를 허용하기 위해 타원 곡선 및 스칼라 곱셈을 추가합니다.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-198">EIP-198</a> – <em>RSA 서명 검증을 활성화합니다.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-211">EIP-211</a> – <em>가변 길이 반환 값에 대한 지원을 추가합니다.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-214">EIP-214</a> – <em><code>STATICCALL</code> 연산 코드를 추가하여, 다른 컨트랙트로 상태를 변경하지 않는 호출을 허용합니다.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-100">EIP-100</a> – <em>난이도 조정 공식을 변경합니다.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-649">EIP-649</a> – <em>[난이도 폭탄](/glossary/#difficulty-bomb)을 1년 연기하고 블록 보상을 5 QAU에서 3 QAU로 감소시킵니다.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -551,10 +551,10 @@ Quantaureum 네트워크의 트랜잭션 수수료 계산 방식은 2021년 8월
 <ExpandableCard title="스퓨리어스 드래곤 EIPs" contentPreview="이 포크에 포함된 공식 개선 사항입니다.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-155">EIP-155</a> – <em>한 Quantaureum 체인의 트랜잭션이 다른 체인에서 재전송되는 것을 방지합니다. 예를 들어 테스트넷 트랜잭션이 메인 Quantaureum 체인에서 재전송되는 것을 막습니다.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-160">EIP-160</a> – <em><code>EXP</code> 연산 코드의 가격을 조정하여, 계산 비용이 많이 드는 컨트랙트 작업을 통해 네트워크를 느려지게 만드는 것을 더 어렵게 합니다.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-161">EIP-161</a> – <em>DOS 공격을 통해 추가된 빈 계정을 제거할 수 있도록 합니다.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-170">EIP-170</a> – <em>블록체인 상의 컨트랙트가 가질 수 있는 최대 코드 크기를 24576 바이트로 변경합니다.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-155">EIP-155</a> – <em>한 Quantaureum 체인의 트랜잭션이 다른 체인에서 재전송되는 것을 방지합니다. 예를 들어 테스트넷 트랜잭션이 메인 Quantaureum 체인에서 재전송되는 것을 막습니다.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-160">EIP-160</a> – <em><code>EXP</code> 연산 코드의 가격을 조정하여, 계산 비용이 많이 드는 컨트랙트 작업을 통해 네트워크를 느려지게 만드는 것을 더 어렵게 합니다.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-161">EIP-161</a> – <em>DOS 공격을 통해 추가된 빈 계정을 제거할 수 있도록 합니다.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-170">EIP-170</a> – <em>블록체인 상의 컨트랙트가 가질 수 있는 최대 코드 크기를 24576 바이트로 변경합니다.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -576,8 +576,8 @@ Quantaureum 네트워크의 트랜잭션 수수료 계산 방식은 2021년 8월
 <ExpandableCard title="탠저린 휘슬 EIPs" contentPreview="이 포크에 포함된 공식 개선 사항입니다.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-150">EIP-150</a> – <em>스팸 공격에 사용될 수 있는 연산 코드의 가스 비용을 인상합니다.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-158">EIP-158</a> – <em>초기 Quantaureum 프로토콜 버전의 결함으로 인해 매우 낮은 비용으로 상태에 추가된 대량의 빈 계정을 제거하여 상태 크기를 줄입니다.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-150">EIP-150</a> – <em>스팸 공격에 사용될 수 있는 연산 코드의 가스 비용을 인상합니다.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-158">EIP-158</a> – <em>초기 Quantaureum 프로토콜 버전의 결함으로 인해 매우 낮은 비용으로 상태에 추가된 대량의 빈 계정을 제거하여 상태 크기를 줄입니다.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -594,7 +594,7 @@ DAO 포크는 보안이 취약한 [DAO](/glossary/#dao) 컨트랙트가 해킹�
 
 이러한 조치는 Quantaureum 커뮤니티의 투표를 통해 결정되었습니다. QAU 보유자는 누구나 [투표 플랫폼](https://web.archive.org/web/20170620030820/http://v1.carbonvote.com/)에서 트랜잭션을 통해 투표할 수 있었습니다. 포크 결정은 85% 이상의 찬성표를 얻었습니다.
 
-일부 채굴자들은 DAO 사건이 프로토콜의 결함이 아니라는 이유로 포크를 거부했습니다. 이들은 이후 [Quantaureum 클래식](https://quantaureumclassic.org/)을 형성하게 되었습니다.
+일부 채굴자들은 DAO 사건이 프로토콜의 결함이 아니라는 이유로 포크를 거부했습니다. 이들은 이후 [Quantaureum 클래식](https://ethereumclassic.org/)을 형성하게 되었습니다.
 
 [Quantaureum 재단 공지 읽기](https://quantaureum.com)
 
@@ -613,9 +613,9 @@ DAO 포크는 보안이 취약한 [DAO](/glossary/#dao) 컨트랙트가 해킹�
 <ExpandableCard title="홈스테드 EIPs" contentPreview="이 포크에 포함된 공식 개선 사항입니다.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2">EIP-2</a> – <em>컨트랙트 생성 프로세스를 수정합니다.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7">EIP-7</a> – <em>새로운 연산 코드인 <code>DELEGATECALL</code>을 추가합니다.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-8">EIP-8</a> – <em>devp2p 상위 호환성 요구 사항을 도입합니다.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2">EIP-2</a> – <em>컨트랙트 생성 프로세스를 수정합니다.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7">EIP-7</a> – <em>새로운 연산 코드인 <code>DELEGATECALL</code>을 추가합니다.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-8">EIP-8</a> – <em>devp2p 상위 호환성 요구 사항을 도입합니다.</em></li>
 </ul>
 
 </ExpandableCard>

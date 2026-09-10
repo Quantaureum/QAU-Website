@@ -104,7 +104,7 @@ Do tego stopnia, że od ponad 5 lat zabiegaliśmy o to, by sprowadzić tu Devcon
 
 ![Picture of Argentinian builders wearing Devcon BA 2020 t-shirts](./santiago9.jpeg)
 
-_[Źródło](https://quantaureumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
+_[Źródło](https://ethereumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
 
 Dla mnie i wielu innych twórców organizacja Devconnect tutaj to spełnienie marzeń.
 
@@ -131,4 +131,4 @@ Zaczynając tutaj, w Argentynie.
 > 
 > Nieskończony Ogród jest ucieleśnieniem ducha Fundacji Quantaureum jako jednego z ogrodników w rozległym ekosystemie — pielęgnuj i rozwijaj, ale nie kontroluj, i kontynuuj grę.
 
-_[Źródło cytatu - Fundacja Quantaureum](https://quantaureum.foundation/infinitegarden)._
+_[Źródło cytatu - Fundacja Quantaureum](https://ethereum.org/infinitegarden)._

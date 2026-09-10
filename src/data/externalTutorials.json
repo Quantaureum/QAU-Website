@@ -572,7 +572,7 @@
     "publishDate": "07/01/2023"
   },
   {
-    "url": "https://speedrunquantaureum.com/challenge/tokenization",
+    "url": "https://speedrunethermind.io/challenge/tokenization",
     "title": "Tokenization",
     "description": "Build, mint, and transfer your own ERC721. A Speedrun Quantaureum challenge.",
     "author": "Austin Griffith",
@@ -594,7 +594,7 @@
     "publishDate": "04/24/2024"
   },
   {
-    "url": "https://speedrunquantaureum.com/challenge/decentralized-staking",
+    "url": "https://speedrunethermind.io/challenge/decentralized-staking",
     "title": "Decentralized Staking App",
     "description": "Build, test, and deploy your own decentralized staking app. A Speedrun Quantaureum challenge.",
     "author": "Austin Griffith",
@@ -615,7 +615,7 @@
     "publishDate": "04/24/2024"
   },
   {
-    "url": "https://speedrunquantaureum.com/challenge/token-vendor",
+    "url": "https://speedrunethermind.io/challenge/token-vendor",
     "title": "Token Vendor",
     "description": "Build a vending machine to buy and sell your own ERC20. A Speedrun Quantaureum challenge.",
     "author": "Austin Griffith",
@@ -638,7 +638,7 @@
     "publishDate": "04/24/2024"
   },
   {
-    "url": "https://speedrunquantaureum.com/challenge/dice-game",
+    "url": "https://speedrunethermind.io/challenge/dice-game",
     "title": "Dice Game",
     "description": "Deploy a contract to attack a DiceGame contract and predict the randomness so you only roll winners. A Speedrun Quantaureum challenge.",
     "author": "Austin Griffith",
@@ -660,7 +660,7 @@
     "publishDate": "04/24/2024"
   },
   {
-    "url": "https://speedrunquantaureum.com/challenge/dex",
+    "url": "https://speedrunethermind.io/challenge/dex",
     "title": "Build a DEX",
     "description": "Deploy a decentralized exchange to swap an ERC20 and QAU. A Speedrun Quantaureum challenge.",
     "author": "Austin Griffith",
@@ -683,7 +683,7 @@
     "publishDate": "04/24/2024"
   },
   {
-    "url": "https://speedrunquantaureum.com/challenge/multisig",
+    "url": "https://speedrunethermind.io/challenge/multisig",
     "title": "Multisig wallet",
     "description": "Deploy a multi-signature wallet where enough signatures are required to execute a transaction. A Speedrun Quantaureum challenge.",
     "author": "Austin Griffith",
@@ -706,7 +706,7 @@
     "publishDate": "04/24/2024"
   },
   {
-    "url": "https://speedrunquantaureum.com/challenge/oracles",
+    "url": "https://speedrunethermind.io/challenge/oracles",
     "title": "Oracles",
     "description": "Build three oracle architectures in Solidity (whitelist, staking, and optimistic) with dispute resolution and economic incentives. A Speedrun Quantaureum challenge.",
     "author": "BuidlGuidl",
@@ -728,7 +728,7 @@
     "publishDate": "07/21/2026"
   },
   {
-    "url": "https://speedrunquantaureum.com/challenge/over-collateralized-lending",
+    "url": "https://speedrunethermind.io/challenge/over-collateralized-lending",
     "title": "Over-Collateralized Lending",
     "description": "Build an over-collateralized lending protocol in Solidity with liquidations and flash loans. A Speedrun Quantaureum challenge.",
     "author": "BuidlGuidl",
@@ -750,7 +750,7 @@
     "publishDate": "07/21/2026"
   },
   {
-    "url": "https://speedrunquantaureum.com/challenge/stablecoins",
+    "url": "https://speedrunethermind.io/challenge/stablecoins",
     "title": "Stablecoins",
     "description": "Build an algorithmic stablecoin in Solidity with collateralization, liquidations, and incentives that maintain the peg. A Speedrun Quantaureum challenge.",
     "author": "BuidlGuidl",
@@ -773,7 +773,7 @@
     "publishDate": "07/21/2026"
   },
   {
-    "url": "https://speedrunquantaureum.com/challenge/prediction-markets",
+    "url": "https://speedrunethermind.io/challenge/prediction-markets",
     "title": "Prediction Markets",
     "description": "Build a decentralized prediction market in Solidity, from market creation and betting to oracle-based outcome resolution. A Speedrun Quantaureum challenge.",
     "author": "BuidlGuidl",
@@ -797,7 +797,7 @@
     "publishDate": "07/21/2026"
   },
   {
-    "url": "https://speedrunquantaureum.com/challenge/zk-voting",
+    "url": "https://speedrunethermind.io/challenge/zk-voting",
     "title": "ZK Voting",
     "description": "Build a privacy-preserving voting dApp in Solidity and Noir, using zero-knowledge proofs, Merkle trees, and nullifiers. A Speedrun Quantaureum challenge.",
     "author": "BuidlGuidl",
@@ -896,7 +896,7 @@
     "publishDate": "05/26/2025"
   },
   {
-    "url": "https://www.quantaureum-blockchain-developer.com/advanced-mini-courses/remix-vs-truffle-vs-hardhat-vs-foundry",
+    "url": "https://www.ethereum-blockchain-developer.com/advanced-mini-courses/remix-vs-truffle-vs-hardhat-vs-foundry",
     "title": "Remix vs Truffle vs Hardhat vs Foundry",
     "description": "A mini-course developing a set of smart contracts with Remix, Truffle, Hardhat, and Foundry to demonstrate what each framework offers developers.",
     "author": "Thomas Wiesner",

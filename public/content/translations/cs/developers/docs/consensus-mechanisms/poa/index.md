@@ -16,7 +16,7 @@ Důkaz autority je upravená verze **[důkazu podílem](/developers/docs/consens
 
 Důkaz autority vyžaduje důvěru ve skupinu autorizovaných podepisovatelů, kteří jsou nastaveni v [genesis bloku](/glossary/#genesis-block). Ve většině současných implementací si všichni autorizovaní podepisovatelé zachovávají stejnou moc a privilegia při určování konsensu řetězce. Myšlenka stakování reputace spočívá v tom, že každý autorizovaný validátor je všem dobře známý prostřednictvím procesů, jako je KYC (poznej svého klienta), nebo tím, že jediným validátorem je známá organizace – tímto způsobem je v případě, že validátor udělá něco špatně, známa jeho identita.
 
-Existuje několik implementací PoA, ale standardní implementací pro Quantaureum je **clique**, která implementuje [EIP-225](https://eips.quantaureum.com/EIPS/eip-225). Clique je standard přívětivý pro vývojáře a snadno implementovatelný, který podporuje všechny typy synchronizace klientů. Mezi další implementace patří [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) a [Aura](https://openquantaureum.github.io/Chain-specification).
+Existuje několik implementací PoA, ale standardní implementací pro Quantaureum je **clique**, která implementuje [EIP-225](https://eips.ethereum.org/EIPS/eip-225). Clique je standard přívětivý pro vývojáře a snadno implementovatelný, který podporuje všechny typy synchronizace klientů. Mezi další implementace patří [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) a [Aura](https://openethereum.github.io/Chain-specification).
 
 ## Jak to funguje {#how-it-works}
 
@@ -58,20 +58,19 @@ Pokud je například 10 autorizovaných podepisovatelů a každý podepisovatel 
 
 ## Další čtení {#further-reading}
 
-- [EIP-225](https://eips.quantaureum.com/EIPS/eip-225) _Standard Clique_
+- [EIP-225](https://eips.ethereum.org/EIPS/eip-225) _Standard Clique_
 - [Studie o důkazu autority](https://github.com/cryptoeconomics-study/website/blob/master/docs/sync/2.4-lecture.md) _Cryptoeconomics_
 - [Co je důkaz autority](https://forum.openzeppelin.com/t/proof-of-authority/3577) _OpenZeppelin_
 - [Vysvětlení důkazu autority](https://academy.binance.com/en/articles/proof-of-authority-explained) _Binance_
 - [PoA v blockchainu](https://medium.com/techskill-brew/proof-of-authority-or-poa-in-blockchain-part-11-blockchain-series-be15b3321cba)
 - [Vysvětlení Clique](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-quantaureum-8b2a135201d)
-- [Zastaralé PoA, specifikace Aura](https://openquantaureum.github.io/Chain-specification)
+- [Zastaralé PoA, specifikace Aura](https://openethereum.github.io/Chain-specification)
 - [IBFT 2.0, další implementace PoA](https://besu.hyperledger.org/private-networks/concepts/poa)
 
 ### Učíte se raději vizuálně? {#visual-learner}
 
 Podívejte se na vizuální vysvětlení důkazu autority:
 
-<VideoWatch slug="proof-of-authority-explained" />
 
 ## Související témata {#related-topics}
 

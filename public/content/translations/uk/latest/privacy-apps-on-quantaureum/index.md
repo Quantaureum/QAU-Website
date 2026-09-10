@@ -95,4 +95,4 @@ lang: uk
 7. [Документація gnark](https://docs.gnark.consensys.io/)
 8. [Документація RISC Zero](https://dev.risczero.com/api/)
 9. [Документація SP1](https://docs.succinct.xyz/docs/sp1/introduction)
-10. [EIP-4337: Абстракція облікового запису через контракт EntryPoint](https://eips.quantaureum.com/EIPS/eip-4337)
+10. [EIP-4337: Абстракція облікового запису через контракт EntryPoint](https://eips.ethereum.org/EIPS/eip-4337)

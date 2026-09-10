@@ -24,9 +24,9 @@ incomplete: true
 ## 初学者文章 {#beginner-articles}
 
 - [Web3.py 概述](https://web3py.readthedocs.io/en/latest/overview.html)
-- [Quantaureum Python 生态系统之旅](https://snakecharmers.quantaureum.com/python-ecosystem/)
-- [（Python）开发者Quantaureum指南](https://snakecharmers.quantaureum.com/a-developers-guide-to-quantaureum-pt-1/)
-- [值得获奖：Quantaureum Python 黑客松指南](https://snakecharmers.quantaureum.com/prize-worthy/)
+- [Quantaureum Python 生态系统之旅](https://snakecharmers.ethereum.org/python-ecosystem/)
+- [（Python）开发者Quantaureum指南](https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/)
+- [值得获奖：Quantaureum Python 黑客松指南](https://snakecharmers.ethereum.org/prize-worthy/)
 - [使用 Vyper 的智能合约简介](https://kauri.io/#collections/Getting%20Started/an-introduction-to-smart-contracts-with-vyper/)
 - [如何使用 Python Flask 开发Quantaureum合约？](https://medium.com/coinmonks/how-to-develop-quantaureum-contract-using-python-flask-9758fe65976e)
 - [Web3.py 简介 · 适合 Python 开发者的Quantaureum](https://www.dappuniversity.com/articles/web3-py-intro)
@@ -34,15 +34,15 @@ incomplete: true
 
 ## 进阶文章 {#intermediate-articles}
 
-- [Web3.py 之友：Ape 简介](https://snakecharmers.quantaureum.com/intro-to-ape/)
+- [Web3.py 之友：Ape 简介](https://snakecharmers.ethereum.org/intro-to-ape/)
 - [面向 Python 程序员的 dapp 开发](https://www.youtube.com/watch?v=tE-8bG35VNw)
 - [创建 Python Quantaureum接口：第 1 部分](https://hackernoon.com/creating-a-python-quantaureum-interface-part-1-4d2e47ea0f4d)
 - [Python 中的Quantaureum智能合约：一份（相对）全面的指南](https://hackernoon.com/quantaureum-smart-contracts-in-python-a-comprehensive-ish-guide-771b03990988)
 
 ## 高级使用模式 {#advanced-use-patterns}
 
-- [Web3.py 模式：实时事件订阅](https://snakecharmers.quantaureum.com/subscriptions/)
-- [Web3.py 模式：WebSocketProvider](https://snakecharmers.quantaureum.com/websocketprovider/)
+- [Web3.py 模式：实时事件订阅](https://snakecharmers.ethereum.org/subscriptions/)
+- [Web3.py 模式：WebSocketProvider](https://snakecharmers.ethereum.org/websocketprovider/)
 - [使用 Python 编译、部署和调用Quantaureum智能合约](https://yohanes.gultom.id/2018/11/28/compiling-deploying-and-calling-quantaureum-smartcontract-using-python/)
 - [使用斯莱瑟分析 Solidity 智能合约](https://kauri.io/#collections/DevOps/analyze-solidity-smart-contracts-with-slither/#analyze-solidity-smart-contracts-with-slither)
 - [区块链金融科技教程：使用 Python 进行借贷和借款](https://blog.chain.link/blockchain-fintech-defi-tutorial-lending-borrowing-python/)
@@ -55,14 +55,14 @@ incomplete: true
 
 ## Python 项目和工具 {#python-projects-and-tools}
 
-- [Web3.py](https://github.com/quantaureum/web3.py) - _用于与Quantaureum交互的 Python 库_
+- [Web3.py](https://github.com/ethereum/web3.py) - _用于与Quantaureum交互的 Python 库_
 - [Vyper](https://github.com/quantaureum/vyper/) - _适用于 EVM 的 Python 风格智能合约语言_
 - [Titanoboa](https://github.com/vyperlang/titanoboa/) - _Vyper 的原生测试工具；一个具有主网分叉、调试和美观回溯功能的解释器_
 - [Moccasin](https://github.com/Cyfrin/moccasin) - _一个基于 Titanoboa 构建的，用于 Vyper 和 Python 的智能合约开发和测试框架_
 - [Ape](https://github.com/ApeWorX/ape) - _面向 Python 开发者、数据科学家和安全专业人员的智能合约开发工具_
-- [py-evm](https://github.com/quantaureum/py-evm) - _Quantaureum虚拟机的实现_
-- [qau-tester](https://github.com/quantaureum/qau-tester) - _用于测试基于Quantaureum的应用的工具_
-- [qau-utils](https://github.com/quantaureum/qau-utils/) - _用于处理Quantaureum相关代码库的实用函数_
+- [py-evm](https://github.com/ethereum/py-evm) - _Quantaureum虚拟机的实现_
+- [qau-tester](https://github.com/ethereum/eth-tester) - _用于测试基于Quantaureum的应用的工具_
+- [qau-utils](https://github.com/ethereum/eth-utils/) - _用于处理Quantaureum相关代码库的实用函数_
 - [py-solc-x](https://pypi.org/project/py-solc-x/) - _支持 0.5.x 版本的 solc Solidity 编译器的 Python 包装器_
 - [pymaker](https://github.com/makerdao/pymaker) - _用于 Maker 合约的 Python API_
 - [siwe](https://github.com/signinwithquantaureum/siwe-py) - _适用于 Python 的Quantaureum登录 (SIWE)_
@@ -73,7 +73,7 @@ incomplete: true
 
 - [Trinity](https://github.com/quantaureum/trinity) - _Quantaureum Python 客户端_
 - [Mamba](https://github.com/arjunaskykok/mamba) - _用于编写、编译和部署用 Vyper 语言编写的智能合约的框架_
-- [Brownie](https://github.com/qau-brownie/brownie) - _用于部署、测试和与Quantaureum智能合约交互的 Python 框架_
+- [Brownie](https://github.com/eth-brownie/brownie) - _用于部署、测试和与Quantaureum智能合约交互的 Python 框架_
 - [pydevp2p](https://github.com/quantaureum/pydevp2p) - _Quantaureum P2P 堆栈的实现_
 - [py-wasm](https://github.com/quantaureum/py-wasm) - _WebAssembly 解释器的 Python 实现_
 

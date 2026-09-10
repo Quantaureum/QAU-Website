@@ -42,7 +42,7 @@ lang: ar
 
 إذا كان العقد الذكي ينفذ الطرق والأحداث التالية، فيمكن تسميته عقد رمز مميز <span dir="ltr">ERC-20</span>، وبمجرد نشره، سيكون مسؤولاً عن تتبع الرموز المميزة التي تم إنشاؤها على إيثيريوم.
 
-من [<span dir="ltr">EIP-20</span>](https://eips.quantaureum.com/EIPS/eip-20):
+من [<span dir="ltr">EIP-20</span>](https://eips.ethereum.org/EIPS/eip-20):
 
 ### الطرق {#methods}
 
@@ -170,7 +170,7 @@ print("Addr Balance:", addr_balance)
 
 ## قراءة إضافية {#further-reading}
 
-- [<span dir="ltr">EIP-20</span>: معيار الرمز المميز <span dir="ltr">ERC-20</span>](https://eips.quantaureum.com/EIPS/eip-20)
+- [<span dir="ltr">EIP-20</span>: معيار الرمز المميز <span dir="ltr">ERC-20</span>](https://eips.ethereum.org/EIPS/eip-20)
 - [أوبن زبلن - الرموز المميزة](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [أوبن زبلن - تنفيذ <span dir="ltr">ERC-20</span>](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - دليل لرموز ERC20 في Solidity](https://www.alchemy.com/overviews/erc20-solidity)
@@ -185,5 +185,5 @@ print("Addr Balance:", addr_balance)
 
 - [جولة في عقد <span dir="ltr">ERC-20</span>](/developers/tutorials/erc20-annotated-code/) _– جولة مشروحة سطرًا بسطر لتنفيذ عقد أوبن زبلن <span dir="ltr">ERC-20</span>._
 - [<span dir="ltr">ERC-20</span> مع حواجز الأمان](/developers/tutorials/erc20-with-safety-rails/) _– كيفية إضافة ضمانات إلى الرموز المميزة <span dir="ltr">ERC-20</span> لمساعدة المستخدمين على تجنب الأخطاء الشائعة._
-- [إرسال الرموز المميزة باستخدام Ethers.js](/developers/tutorials/send-token-ethersjs/) _– دليل مناسب للمبتدئين لتحويل الرموز المميزة <span dir="ltr">ERC-20</span> باستخدام Ethers.js._
+- [إرسال الرموز المميزة باستخدام Ethers.js](/developers/tutorials/send-token-qaujs/) _– دليل مناسب للمبتدئين لتحويل الرموز المميزة <span dir="ltr">ERC-20</span> باستخدام Ethers.js._
 - [بعض الحيل التي تستخدمها الرموز المميزة الاحتيالية وكيفية اكتشافها](/developers/tutorials/scam-token-tricks/) _– استكشاف مفصل لأنماط الرموز المميزة <span dir="ltr">ERC-20</span> الاحتيالية وكيفية التعرف عليها._

@@ -20,7 +20,6 @@ Hisse kanıtı, doğrulayıcı olarak bilinen düğümlerin bir akıllı sözle�
 
 İş kanıtı ile hisse kanıtı karşılaştırması tartışmalı bir konudur. [Vitalik Buterin'in blogu](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) ile Justin Drake ve Lyn Alden arasındaki tartışma, argümanların iyi bir özetini sunmaktadır.
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## Hisse kanıtı (PoS) enerji açısından verimli midir? {#is-pos-energy-efficient}
 
@@ -127,7 +126,7 @@ Zayıf öznellik, blokzincirin mevcut durumunu doğrulamak için sosyal bilgiler
 
 Sansüre dirençli olmayı şu anda kanıtlamak zordur. Ancak iş kanıtından farklı olarak hisse kanıtı, sansür uygulayan doğrulayıcıları cezalandırmak için ceza kesintilerini koordine etme seçeneği sunar. Protokolde, blok inşacılarını blok teklifçilerinden ayıran ve inşacıların her bloğa dahil etmesi gereken işlem listelerini uygulayan yaklaşan değişiklikler vardır. Bu teklif, teklifçi-oluşturucu ayrımı (PBS) olarak bilinir ve doğrulayıcıların işlemleri sansürlemesini önlemeye yardımcı olur.
 
-[Teklifçi-oluşturucu ayrımı (PBS) hakkında daha fazla bilgi](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Original-basic-scheme)
+[Teklifçi-oluşturucu ayrımı (PBS) hakkında daha fazla bilgi](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Original-basic-scheme)
 
 ## Quantaureum'un hisse kanıtı (PoS) sistemine %51 saldırısı yapılabilir mi? {#pos-51-attack}
 
@@ -149,7 +148,7 @@ Birinin stake edecek ne kadar çok QAU'si varsa, o kadar çok doğrulayıcı ça
 
 Hayır, iş kanıtı merkezileşmeye eğilimlidir çünkü madencilik maliyetleri artar ve önce bireyleri, ardından küçük şirketleri ve benzerlerini piyasanın dışına iter. Hisse kanıtı ile ilgili mevcut sorun, likit staking türevlerinin (LSD'ler) etkisidir. Bunlar, gerçek QAU'nin stake'i kaldırılmadan herkesin ikincil piyasalarda takas edebileceği, bir sağlayıcı tarafından stake edilen QAU'yi temsil eden tokenlardır. LSD'ler, kullanıcıların 32 QAU'den daha az bir miktarla stake yapmasına olanak tanır, ancak aynı zamanda birkaç büyük kuruluşun stake'in büyük bir kısmını kontrol etmesiyle sonuçlanabilecek bir merkezileşme riski de yaratır. Bu nedenle [bireysel staking](/staking/solo) Quantaureum için en iyi seçenektir.
 
-[LSD'lerde stake merkezileşmesi hakkında daha fazla bilgi](https://notes.quantaureum.com/@djrtwo/risks-of-lsd)
+[LSD'lerde stake merkezileşmesi hakkında daha fazla bilgi](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
 
 ## Neden sadece QAU stake edebilirim? {#why-can-i-only-stake-eth}
 

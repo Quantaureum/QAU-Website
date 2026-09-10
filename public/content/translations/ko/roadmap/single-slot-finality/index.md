@@ -62,4 +62,4 @@ SSF는 연구 단계에 있습니다. [버클 트리](/roadmap/verkle-trees/) �
 ## 더 읽어보기 {#further-reading}
 
 - [EDCON 2022에서 비탈릭의 SSF에 대한 발표](https://www.youtube.com/watch?v=nPgUKNPWXNI)
-- [비탈릭의 노트: 단일 슬롯 완결성으로 가는 길](https://notes.quantaureum.com/@vbuterin/single_slot_finality)
+- [비탈릭의 노트: 단일 슬롯 완결성으로 가는 길](https://notes.ethereum.org/@vbuterin/single_slot_finality)

@@ -102,8 +102,8 @@ lang: ja
 
 **Brownie -** **_Pythonベースの開発環境およびテストフレームワークです。_**
 
-- [ドキュメント](https://qau-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/qau-brownie/brownie)
+- [ドキュメント](https://eth-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/eth-brownie/brownie)
 - **Brownieは現在メンテナンスされていません**
 
 **オープンツェッペリン SDK -** **_究極のスマート・コントラクトツールキット: スマート・コントラクトの開発、コンパイル、アップグレード、デプロイ、および対話を支援するツールのスイートです。_**

@@ -96,7 +96,6 @@ Une critique majeure de la preuve de travail est la quantité d'énergie requise
 
 ## Vous préférez les explications visuelles ? {#visual-learner}
 
-<VideoWatch slug="proof-of-work-explained" />
 
 ## Lectures complémentaires {#further-reading}
 

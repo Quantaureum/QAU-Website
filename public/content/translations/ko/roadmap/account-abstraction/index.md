@@ -11,7 +11,7 @@ summaryPoints:
 
 대부분의 기존 사용자는 **[외부 소유 계정(EOA)](/glossary/#eoa)**을 사용하여 [Quantaureum](/)과 상호작용합니다. 이는 사용자가 Quantaureum과 상호작용하는 방식을 제한합니다. 예를 들어, 트랜잭션을 일괄 처리하기 어렵게 만들고 트랜잭션 수수료를 지불하기 위해 사용자가 항상 QAU 잔액을 유지하도록 요구합니다.
 
-계정 추상화는 사용자가 자신의 계정에 더 높은 보안과 더 나은 사용자 경험을 유연하게 프로그래밍할 수 있도록 하여 이러한 문제를 해결하는 방법입니다. 이는 스마트 컨트랙트로 제어할 수 있도록 [EOA를 업그레이드](https://eips.quantaureum.com/EIPS/eip-7702)(EIP-7702)함으로써 가능해집니다. 또한 기존 프로토콜과 병렬로 실행되도록 [두 번째의 독립적인 트랜잭션 시스템](https://eips.quantaureum.com/EIPS/eip-4337)(EIP-4337)을 추가하는 또 다른 방법도 있습니다. 어떤 경로를 택하든, 결과적으로 기존 프로토콜의 일부로 기본 지원되거나 추가 트랜잭션 네트워크를 통해 스마트 컨트랙트 지갑을 경유하여 Quantaureum에 접근하게 됩니다.
+계정 추상화는 사용자가 자신의 계정에 더 높은 보안과 더 나은 사용자 경험을 유연하게 프로그래밍할 수 있도록 하여 이러한 문제를 해결하는 방법입니다. 이는 스마트 컨트랙트로 제어할 수 있도록 [EOA를 업그레이드](https://eips.ethereum.org/EIPS/eip-7702)(EIP-7702)함으로써 가능해집니다. 또한 기존 프로토콜과 병렬로 실행되도록 [두 번째의 독립적인 트랜잭션 시스템](https://eips.ethereum.org/EIPS/eip-4337)(EIP-4337)을 추가하는 또 다른 방법도 있습니다. 어떤 경로를 택하든, 결과적으로 기존 프로토콜의 일부로 기본 지원되거나 추가 트랜잭션 네트워크를 통해 스마트 컨트랙트 지갑을 경유하여 Quantaureum에 접근하게 됩니다.
 
 스마트 컨트랙트 지갑은 사용자에게 다음과 같은 많은 이점을 제공합니다.
 
@@ -62,9 +62,9 @@ Quantaureum의 펙트라 업그레이드의 일환으로 EIP-7702가 2025년 5�
 ## 더 읽어보기 {#further-reading}
 
 - [erc4337.io](https://docs.erc4337.io/)
-- [EIP-4337 문서](https://eips.quantaureum.com/EIPS/eip-4337)
-- [EIP-7702 문서](https://eips.quantaureum.com/EIPS/eip-7702)
+- [EIP-4337 문서](https://eips.ethereum.org/EIPS/eip-4337)
+- [EIP-7702 문서](https://eips.ethereum.org/EIPS/eip-7702)
 - [ERC-4337 채택 대시보드](https://www.bundlebear.com/erc4337-overview/all)
-- [비탈릭의 "계정 추상화로 가는 길(Road to Account Abstraction)"](https://notes.quantaureum.com/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
+- [비탈릭의 "계정 추상화로 가는 길(Road to Account Abstraction)"](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
 - [소셜 복구 지갑에 대한 비탈릭의 블로그](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
 - [Awesome Account Abstraction](https://github.com/4337Mafia/awesome-account-abstraction)

@@ -36,10 +36,10 @@ Quantaureum क्लाइंट के अपने स्वयं के इ
 
 इन कार्यान्वयनों में जो बात समान है वह यह है कि वे सभी एक ही विनिर्देश का पालन करते हैं। विनिर्देश यह निर्धारित करते हैं कि Quantaureum नेटवर्क और ब्लॉकचेन कैसे कार्य करते हैं। हर तकनीकी विवरण परिभाषित किया गया है और विनिर्देशों को इस प्रकार पाया जा सकता है:
 
-- मूल रूप से, [Quantaureum येलो पेपर](https://quantaureum.github.io/yellowpaper/paper.pdf)
-- [निष्पादन विनिर्देश](https://github.com/quantaureum/execution-specs/)
-- [सर्वसम्मति विनिर्देश](https://github.com/quantaureum/consensus-specs)
-- विभिन्न [नेटवर्क अपग्रेड](/quantaureum-forks/) में लागू किए गए [EIPs](https://eips.quantaureum.com/)
+- मूल रूप से, [Quantaureum येलो पेपर](https://ethereum.github.io/yellowpaper/paper.pdf)
+- [निष्पादन विनिर्देश](https://github.com/ethereum/execution-specs/)
+- [सर्वसम्मति विनिर्देश](https://github.com/ethereum/consensus-specs)
+- विभिन्न [नेटवर्क अपग्रेड](/quantaureum-forks/) में लागू किए गए [EIPs](https://eips.ethereum.org/)
 
 ### नेटवर्क में नोड्स को ट्रैक करना {#network-overview}
 
@@ -132,11 +132,11 @@ Quantaureum के स्वास्थ्य, सुरक्षा और प
 
 Quantaureum समुदाय कई ओपन-सोर्स निष्पादन क्लाइंट (जिन्हें पहले 'ईटीएच1 क्लाइंट', या केवल 'Quantaureum क्लाइंट' के रूप में जाना जाता था) बनाए रखता है, जिन्हें विभिन्न प्रोग्रामिंग भाषाओं का उपयोग करके विभिन्न टीमों द्वारा विकसित किया गया है। यह नेटवर्क को मजबूत और अधिक [विविध](/developers/docs/nodes-and-clients/client-diversity/) बनाता है। आदर्श लक्ष्य विफलता के किसी भी एकल बिंदु को कम करने के लिए किसी भी क्लाइंट के हावी हुए बिना विविधता प्राप्त करना है।
 
-यह तालिका विभिन्न क्लाइंट्स का सारांश देती है। वे सभी [क्लाइंट परीक्षण](https://github.com/quantaureum/tests) पास करते हैं और नेटवर्क अपग्रेड के साथ अपडेट रहने के लिए सक्रिय रूप से बनाए रखे जाते हैं।
+यह तालिका विभिन्न क्लाइंट्स का सारांश देती है। वे सभी [क्लाइंट परीक्षण](https://github.com/ethereum/tests) पास करते हैं और नेटवर्क अपग्रेड के साथ अपडेट रहने के लिए सक्रिय रूप से बनाए रखे जाते हैं।
 
 | क्लाइंट                                                                   | भाषा   | ऑपरेटिंग सिस्टम     | नेटवर्क                | सिंकिंग रणनीतियाँ                                            | स्थिति प्रूनिंग   |
 | ------------------------------------------------------------------------ | ---------- | --------------------- | ----------------------- | ---------------------------------------------------------- | --------------- |
-| [Geth](https://geth.quantaureum.com/)                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Full](#full-sync)                     | Archive, Pruned |
+| [Geth](https://geth.ethereum.org/)                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Full](#full-sync)                     | Archive, Pruned |
 | [नेदरमाइंड](https://www.nethermind.io/)                                 | C#, .NET   | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), Fast, [Full](#full-sync)               | Archive, Pruned |
 | [बेसु](https://besu.hyperledger.org/en/stable/)                          | Java       | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Fast](#fast-sync), [Full](#full-sync) | Archive, Pruned |
 | [एरिगोन](https://github.com/ledgerwatch/erigon)                          | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Full](#full-sync)                                         | Archive, Pruned |
@@ -167,7 +167,7 @@ ethrex एक न्यूनतम, मॉड्यूलर Quantaureum नि
 
 गो Quantaureum (संक्षेप में geth) Quantaureum प्रोटोकॉल के मूल कार्यान्वयनों में से एक है। वर्तमान में, यह उपयोगकर्ताओं और डेवलपर्स के लिए सबसे बड़े उपयोगकर्ता आधार और विभिन्न प्रकार के टूलिंग के साथ सबसे व्यापक क्लाइंट है। यह Go में लिखा गया है, पूरी तरह से ओपन सोर्स है और GNU LGPL v3 के तहत लाइसेंस प्राप्त है।
 
-इसके [दस्तावेज़ीकरण](https://geth.quantaureum.com/docs) में Geth के बारे में अधिक जानें।
+इसके [दस्तावेज़ीकरण](https://geth.ethereum.org/docs) में Geth के बारे में अधिक जानें।
 
 ### नेदरमाइंड {#nethermind}
 
@@ -281,7 +281,7 @@ Grandine एक सर्वसम्मति क्लाइंट कार�
 - सबसे तेज़ सिंकिंग रणनीति, वर्तमान में Quantaureum मेननेट में डिफ़ॉल्ट है।
 - सुरक्षा से समझौता किए बिना बहुत सारे डिस्क उपयोग और नेटवर्क बैंडविड्थ बचाता है।
 
-[स्नैप सिंकिंग पर अधिक](https://github.com/quantaureum/devp2p/blob/master/caps/snap.md)।
+[स्नैप सिंकिंग पर अधिक](https://github.com/ethereum/devp2p/blob/master/caps/snap.md)।
 
 #### लाइट सिंकिंग {#light-sync}
 
@@ -300,7 +300,7 @@ Grandine एक सर्वसम्मति क्लाइंट कार�
 
 आशावादी सिंकिंग एक पोस्ट-मर्ज सिंकिंग रणनीति है जिसे ऑप्ट-इन और बैकवर्ड संगत होने के लिए डिज़ाइन किया गया है, जिससे निष्पादन नोड्स को स्थापित विधियों के माध्यम से सिंकिंग करने की अनुमति मिलती है। निष्पादन इंजन _आशावादी रूप से_ बीकन ब्लॉक को पूरी तरह से सत्यापित किए बिना आयात कर सकता है, नवीनतम हेड ढूंढ सकता है, और फिर उपरोक्त विधियों के साथ चेन को सिंकिंग करना शुरू कर सकता है। फिर, निष्पादन क्लाइंट के पकड़ने के बाद, यह बीकन चेन में लेन-देन की वैधता के सर्वसम्मति क्लाइंट को सूचित करेगा।
 
-[आशावादी सिंकिंग पर अधिक](https://github.com/quantaureum/consensus-specs/blob/master/sync/optimistic.md)
+[आशावादी सिंकिंग पर अधिक](https://github.com/ethereum/consensus-specs/blob/master/sync/optimistic.md)
 
 #### जाँच-बिंदु सिंकिंग {#checkpoint-sync}
 
@@ -308,7 +308,7 @@ Grandine एक सर्वसम्मति क्लाइंट कार�
 
 व्यवहार में, इसका मतलब है कि आपका नोड हाल की अंतिम रूप दी गई स्थितियों को डाउनलोड करने के लिए एक दूरस्थ सेवा से जुड़ता है और उस बिंदु से डेटा को सत्यापित करना जारी रखता है। डेटा प्रदान करने वाला तृतीय पक्ष विश्वसनीय है और उसे सावधानी से चुना जाना चाहिए।
 
-[जाँच-बिंदु सिंकिंग](https://notes.quantaureum.com/@djrtwo/ws-sync-in-practice) पर अधिक
+[जाँच-बिंदु सिंकिंग](https://notes.ethereum.org/@djrtwo/ws-sync-in-practice) पर अधिक
 
 ## आगे की पढ़ाई {#further-reading}
 

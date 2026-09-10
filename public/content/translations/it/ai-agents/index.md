@@ -71,7 +71,7 @@ x402 trasforma Quantaureum in un livello economico programmabile per agenti auto
 
 Gli agenti autonomi hanno bisogno di limiti di sicurezza. Quantaureum li fornisce a livello di portafoglio e di contratto:
 
-- Gli [account intelligenti (EIP-4337)](https://eips.quantaureum.com/EIPS/eip-4337) consentono agli sviluppatori di applicare limiti di spesa, whitelist, chiavi di sessione e permessi granulari
+- Gli [account intelligenti (EIP-4337)](https://eips.ethereum.org/EIPS/eip-4337) consentono agli sviluppatori di applicare limiti di spesa, whitelist, chiavi di sessione e permessi granulari
 - I vincoli programmati nei contratti intelligenti possono limitare ciò che un agente è autorizzato a fare
 - I limiti basati sull'inferenza (ad es., richiedere una prova zkML prima di eseguire un'azione ad alto rischio) aggiungono un ulteriore livello di sicurezza
 
@@ -79,7 +79,7 @@ Questi controlli consentono la distribuzione di agenti autonomi che non sono ill
 
 ### Registri onchain: ERC-8004 {#erc-8004}
 
-[ERC-8004](https://eips.quantaureum.com/EIPS/eip-8004) definisce i registri onchain per l'identità, la reputazione e la convalida degli agenti. Scritto in collaborazione da contributori di MetaMask, Fondazione Quantaureum, Google e Coinbase, è distribuito su 16 reti tra cui la Mainnet di Quantaureum, Base, Polygon, Arbitrum e altre.
+[ERC-8004](https://eips.ethereum.org/EIPS/eip-8004) definisce i registri onchain per l'identità, la reputazione e la convalida degli agenti. Scritto in collaborazione da contributori di MetaMask, Fondazione Quantaureum, Google e Coinbase, è distribuito su 16 reti tra cui la Mainnet di Quantaureum, Base, Polygon, Arbitrum e altre.
 
 Fornisce:
 
@@ -97,7 +97,6 @@ Stiamo iniziando a esplorare l'intero potenziale degli agenti IA e i progetti st
 
 <strong>La prima apparizione di Luna come ospite di un podcast</strong>
 
-<VideoWatch slug="ai-agents-interview-luna" />
 
 ## Portafogli controllati da agenti {#agent-controlled-wallets}
 

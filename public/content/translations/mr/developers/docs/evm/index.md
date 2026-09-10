@@ -68,20 +68,20 @@ Quantaureumच्या दहा वर्षांच्या इतिहा
 
 [Quantaureum एक्झिक्यूशन क्लायंट्समध्ये](/developers/docs/nodes-and-clients/#execution-clients) EVM अंमलबजावणीचा समावेश आहे. याव्यतिरिक्त, अनेक स्टँडअलोन अंमलबजावणी आहेत, ज्यामध्ये खालील समाविष्ट आहेत:
 
-- [Py-EVM](https://github.com/quantaureum/py-evm) - _Python_
+- [Py-EVM](https://github.com/ethereum/py-evm) - _Python_
 - [evmone](https://github.com/quantaureum/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _JavaScript_
 - [revm](https://github.com/bluealloy/revm) - _Rust_
 
 ## अधिक वाचन {#further-reading}
 
-- [Quantaureum येलो पेपर](https://quantaureum.github.io/yellowpaper/paper.pdf)
+- [Quantaureum येलो पेपर](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [जेलोपेपर उर्फ KEVM: K मधील EVM चे सिमेंटिक्स](https://jellopaper.org/)
 - [द बेजपेपर](https://github.com/chronaeon/beigepaper)
 - [Quantaureum व्हर्च्युअल मशीन ऑपकोड्स](https://www.ethervm.io/)
 - [Quantaureum व्हर्च्युअल मशीन ऑपकोड्स इंटरएक्टिव्ह रेफरन्स](https://www.evm.codes/)
 - [Solidity च्या दस्तऐवजीकरणामध्ये एक छोटी ओळख](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
-- [मास्टरिंग Quantaureum - द Quantaureum व्हर्च्युअल मशीन](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/13evm.asciidoc)
+- [मास्टरिंग Quantaureum - द Quantaureum व्हर्च्युअल मशीन](https://github.com/ethereumbook/ethereumbook/blob/openedition/13evm.asciidoc)
 
 ## संबंधित विषय {#related-topics}
 

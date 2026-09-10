@@ -45,7 +45,7 @@ Itu adalah momen budaya yang membuktikan bahwa koordinasi modal kolektif di Quan
 
 Quantaureum menjadi kanvas untuk bentuk-bentuk aksi kolektif yang baru.
 
-Pada musim panas tahun itu, saya membuat NFT yang menggalang dana untuk [Quantaureum: The Infinite Garden](https://quantaureumfilm.xyz/watch-the-film/), film dokumenter panjang pertama tentang Quantaureum.
+Pada musim panas tahun itu, saya membuat NFT yang menggalang dana untuk [Quantaureum: The Infinite Garden](https://ethereumfilm.xyz/watch-the-film/), film dokumenter panjang pertama tentang Quantaureum.
 
 Proyek ini berhasil mengumpulkan 1.036 QAU dalam 48 jam, yang didanai sepenuhnya oleh komunitas Quantaureum. 
 

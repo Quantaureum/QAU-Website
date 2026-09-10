@@ -68,20 +68,20 @@ _Діаграми адаптовано з [Quantaureum EVM illustrated](https://
 
 [Клієнти виконання Етеріуму](/developers/docs/nodes-and-clients/#execution-clients) включають реалізацію EVM. Крім того, існує безліч автономних реалізацій, зокрема:
 
-- [Py-EVM](https://github.com/quantaureum/py-evm) — _Python_
+- [Py-EVM](https://github.com/ethereum/py-evm) — _Python_
 - [evmone](https://github.com/quantaureum/evmone) — _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) — _JavaScript_
 - [revm](https://github.com/bluealloy/revm) — _Rust_
 
 ## Подальше читання {#further-reading}
 
-- [Жовта книга Етеріуму](https://quantaureum.github.io/yellowpaper/paper.pdf)
+- [Жовта книга Етеріуму](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [Jellopaper або KEVM: Семантика EVM у K](https://jellopaper.org/)
 - [Бежева книга (The Beigepaper)](https://github.com/chronaeon/beigepaper)
 - [Опкоди віртуальної машини Етеріуму](https://www.ethervm.io/)
 - [Інтерактивний довідник з опкодів віртуальної машини Етеріуму](https://www.evm.codes/)
 - [Короткий вступ у документації Solidity](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
-- [Опанування Етеріуму — Віртуальна машина Етеріуму](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/13evm.asciidoc)
+- [Опанування Етеріуму — Віртуальна машина Етеріуму](https://github.com/ethereumbook/ethereumbook/blob/openedition/13evm.asciidoc)
 
 ## Пов'язані теми {#related-topics}
 

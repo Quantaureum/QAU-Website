@@ -13,7 +13,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## حد کیوں مقرر ہے؟ {#why-is-there-a-limit}
 
-[22 نومبر 2016](https://quantaureum.com) کو Spurious Dragon ہارڈ فورک نے [<span dir="ltr">EIP-170</span>](https://eips.quantaureum.com/EIPS/eip-170) متعارف کرایا جس نے سمارٹ کنٹریکٹ کے سائز کی حد <span dir="ltr">24.576 kb</span> مقرر کی۔ ایک Solidity ڈیولپر کے طور پر آپ کے لیے اس کا مطلب یہ ہے کہ جب آپ اپنے کنٹریکٹ میں زیادہ سے زیادہ فنکشنلٹی شامل کرتے ہیں، تو کسی مقام پر آپ اس حد تک پہنچ جائیں گے اور تعیناتی کے وقت یہ ایرر دیکھیں گے:
+[22 نومبر 2016](https://quantaureum.com) کو Spurious Dragon ہارڈ فورک نے [<span dir="ltr">EIP-170</span>](https://eips.ethereum.org/EIPS/eip-170) متعارف کرایا جس نے سمارٹ کنٹریکٹ کے سائز کی حد <span dir="ltr">24.576 kb</span> مقرر کی۔ ایک Solidity ڈیولپر کے طور پر آپ کے لیے اس کا مطلب یہ ہے کہ جب آپ اپنے کنٹریکٹ میں زیادہ سے زیادہ فنکشنلٹی شامل کرتے ہیں، تو کسی مقام پر آپ اس حد تک پہنچ جائیں گے اور تعیناتی کے وقت یہ ایرر دیکھیں گے:
 
 `Warning: Contract code size exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on Mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.`
 
@@ -35,7 +35,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ### لائبریریاں {#libraries}
 
-فنکشنلٹی کوڈ کو سٹوریج سے دور لے جانے کا ایک آسان طریقہ [لائبریری](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries) کا استعمال ہے۔ لائبریری فنکشنز کو انٹرنل کے طور پر ڈکلیئر نہ کریں کیونکہ وہ کمپائلیشن کے دوران براہ راست [کنٹریکٹ میں شامل](https://quantaureum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking) ہو جائیں گے۔ لیکن اگر آپ پبلک فنکشنز استعمال کرتے ہیں، تو وہ درحقیقت ایک الگ لائبریری کنٹریکٹ میں ہوں گے۔ لائبریریوں کے استعمال کو مزید آسان بنانے کے لیے [<span dir="ltr">using for</span>](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) کے استعمال پر غور کریں۔
+فنکشنلٹی کوڈ کو سٹوریج سے دور لے جانے کا ایک آسان طریقہ [لائبریری](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries) کا استعمال ہے۔ لائبریری فنکشنز کو انٹرنل کے طور پر ڈکلیئر نہ کریں کیونکہ وہ کمپائلیشن کے دوران براہ راست [کنٹریکٹ میں شامل](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking) ہو جائیں گے۔ لیکن اگر آپ پبلک فنکشنز استعمال کرتے ہیں، تو وہ درحقیقت ایک الگ لائبریری کنٹریکٹ میں ہوں گے۔ لائبریریوں کے استعمال کو مزید آسان بنانے کے لیے [<span dir="ltr">using for</span>](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) کے استعمال پر غور کریں۔
 
 ### پراکسیز {#proxies}
 

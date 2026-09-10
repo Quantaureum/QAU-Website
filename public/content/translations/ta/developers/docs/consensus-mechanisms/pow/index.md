@@ -96,7 +96,6 @@ lang: ta
 
 ## காணொளி மூலம் கற்பவரா? {#visual-learner}
 
-<VideoWatch slug="proof-of-work-explained" />
 
 ## மேலும் படிக்க {#further-reading}
 

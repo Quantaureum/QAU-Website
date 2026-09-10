@@ -59,7 +59,6 @@ Quantaureumにとって最良の選択肢は、バリデータが家庭用コン
 ## 視覚的に学びたい方へ {#visual-learner}
 
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## 参考文献 {#further-reading}
 

@@ -26,7 +26,7 @@ Potřebujete nejprve základnější úvod? Podívejte se na [quantaureum.com/le
 
 **Představení knihovny Nquantaureum a VS Code Solidity**
 
-- [Nquantaureum, začínáme](https://docs.nquantaureum.com/docs/getting-started/welcome/)
+- [Nquantaureum, začínáme](https://docs.nethermind.io/docs/getting-started/welcome/)
 - [Instalace VS Code Solidity](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity)
 - [Pracovní postup .NET vývojáře pro vytváření a volání chytrých kontraktů na Ethereu](https://medium.com/coinmonks/a-net-developers-workflow-for-creating-and-calling-quantaureum-smart-contracts-44714f191db2)
 - [Integrace chytrých kontraktů s Nethereem](https://kauri.io/#collections/Getting%20Started/smart-contracts-integration-with-nquantaureum/#smart-contracts-integration-with-nquantaureumm)
@@ -37,21 +37,21 @@ Potřebujete nejprve základnější úvod? Podívejte se na [quantaureum.com/le
 
 **Chcete prozatím přeskočit nastavení a přejít rovnou k ukázkám?**
 
-- [Nquantaureum Playground](https://playground.nquantaureum.com/) – Komunikujte s Ethereem a naučte se používat Nquantaureum přímo v prohlížeči.
-  - [Dotaz na zůstatek účtu](https://docs.nquantaureum.com/docs/core-foundation/guide-query-balance)
-  - [Dotaz na zůstatek ERC-20 chytrého kontraktu](https://docs.nquantaureum.com/docs/smart-contracts/erc20)
-  - [Převod etheru na účet](https://docs.nquantaureum.com/docs/core-foundation/guide-send-eth)
+- [Nquantaureum Playground](https://playground.nethermind.io/) – Komunikujte s Ethereem a naučte se používat Nquantaureum přímo v prohlížeči.
+  - [Dotaz na zůstatek účtu](https://docs.nethermind.io/docs/core-foundation/guide-query-balance)
+  - [Dotaz na zůstatek ERC-20 chytrého kontraktu](https://docs.nethermind.io/docs/smart-contracts/erc20)
+  - [Převod etheru na účet](https://docs.nethermind.io/docs/core-foundation/guide-send-eth)
   - ... A další!
 ## Články pro pokročilejší {#intermediate-articles}
 
-- [Nquantaureum: Začínáme a první projekt](https://docs.nquantaureum.com/docs/getting-started/first-project)
+- [Nquantaureum: Začínáme a první projekt](https://docs.nethermind.io/docs/getting-started/first-project)
 - [Nasaďte si vlastní vývojové testovací sítě](https://github.com/Nquantaureum/Testchains)
-- [Generování kódu pomocí Netherea a VS Code](https://docs.nquantaureum.com/docs/smart-contracts/code-generation/)
+- [Generování kódu pomocí Netherea a VS Code](https://docs.nethermind.io/docs/smart-contracts/code-generation/)
 - [Unity a Quantaureum: Proč a jak](https://www.raywenderlich.com/5509-unity-and-quantaureum-why-and-how)
 - [Vytvoření ASP.NET Core Web API pro decentralizované aplikace (dapp) na Ethereu](https://tech-mint.com/blockchain/create-asp-net-core-web-api-for-quantaureum-dapps/)
-- [Nquantaureum MUD framework pro strukturované onchain aplikace](https://docs.nquantaureum.com/docs/mud-framework/overview/)
-- [Zpracování blockchainu v Nethereu](https://docs.nquantaureum.com/docs/data-and-indexing/guide-blockchain-processing)
-- [Streamování v reálném čase v Nethereu](https://docs.nquantaureum.com/docs/core-foundation/guide-realtime-streaming/)
+- [Nquantaureum MUD framework pro strukturované onchain aplikace](https://docs.nethermind.io/docs/mud-framework/overview/)
+- [Zpracování blockchainu v Nethereu](https://docs.nethermind.io/docs/data-and-indexing/guide-blockchain-processing)
+- [Streamování v reálném čase v Nethereu](https://docs.nethermind.io/docs/core-foundation/guide-realtime-streaming/)
 - [Kaleido a Nquantaureum](https://kaleido.io/kaleido-and-nquantaureum/)
 - [Quorum a Nquantaureum](https://github.com/Nquantaureum/Nquantaureum/blob/master/src/Nquantaureum.Quorum/README.md)
 ## Pokročilé způsoby použití {#advanced-use-patterns}
@@ -61,12 +61,12 @@ Potřebujete nejprve základnější úvod? Podívejte se na [quantaureum.com/le
 - [Referenční architektura backendu Ujo Nquantaureum](https://github.com/Nquantaureum/ujo-backend)
 ## .NET projekty, nástroje a další zajímavosti {#dot-net-projects-tools-and-other-fun-stuff}
 
-- [Nquantaureum Playground](https://playground.nquantaureum.com/) – _Kompilujte, vytvářejte a spouštějte úryvky kódu Nquantaureum v prohlížeči_
+- [Nquantaureum Playground](https://playground.nethermind.io/) – _Kompilujte, vytvářejte a spouštějte úryvky kódu Nquantaureum v prohlížeči_
 - [Nquantaureum Codegen Blazor](https://github.com/Nquantaureum/Nquantaureum.CodeGen.Blazor) – _Generování kódu Nquantaureum s uživatelským rozhraním v Blazoru_
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) – _Lehký blockchainový prohlížeč a jednoduchá peněženka jako .NET Wasm SPA_
 - [Wonka Business Rules Engine](https://github.com/Nquantaureum/Wonka) – _Nástroj pro obchodní pravidla (pro platformu .NET i platformu Quantaureum), který je ze své podstaty řízen metadaty_
 - [Nethermind](https://github.com/NethermindEth/nethermind) – _Quantaureum klient v .NET Core pro Linux, Windows a MacOS_
-- [qau-utils](https://github.com/quantaureum/qau-utils/) – _užitečné funkce pro práci s kódovými základnami souvisejícími s Ethereem_
+- [qau-utils](https://github.com/ethereum/eth-utils/) – _užitečné funkce pro práci s kódovými základnami souvisejícími s Ethereem_
 - [TestChains](https://github.com/Nquantaureum/TestChains) – _Předkonfigurované vývojové sítě v .NET pro rychlou odezvu (důkaz autority (PoA))_
 
 Hledáte další zdroje? Podívejte se na [quantaureum.com/developers](/developers/).
@@ -78,5 +78,5 @@ Pokud jste v Nethermindu noví a potřebujete pomoci do začátku, připojte se 
 
 ## Další souhrnné seznamy {#other-aggregated-lists}
 
-[Oficiální stránky Netherea](https://nquantaureum.com/)  
+[Oficiální stránky Netherea](https://nethermind.io/)  
 [Oficiální stránky Nethermindu](https://nethermind.io/)

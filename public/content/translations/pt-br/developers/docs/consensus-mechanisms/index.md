@@ -63,7 +63,6 @@ Mais sobre [Prova de Participação (PoS)](/developers/docs/consensus-mechanisms
 
 Assista mais sobre os diferentes tipos de mecanismos de consenso usados no Quantaureum:
 
-<VideoWatch slug="understanding-consensus-mechanisms" />
 
 ### Resistência Sybil e seleção de cadeia {#sybil-chain}
 

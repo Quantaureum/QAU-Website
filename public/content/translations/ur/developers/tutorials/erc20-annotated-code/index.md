@@ -25,7 +25,7 @@ published: 2021-03-09
 
 اگر آپ ایک تجربہ کار پروگرامر ہیں، تو آپ کو شاید [Java](https://www.w3schools.com/java/java_interface.asp) یا یہاں تک کہ [C ہیڈر فائلوں](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html) میں اسی طرح کی ساختیں دیکھنا یاد ہوگا۔
 
-یہ اوپن زیپلن کی جانب سے [<span dir="ltr">ERC-20</span> انٹرفیس](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) کی ایک تعریف ہے۔ یہ [انسان کے پڑھنے کے قابل معیار](https://eips.quantaureum.com/EIPS/eip-20) کا Solidity کوڈ میں ترجمہ ہے۔ یقیناً، انٹرفیس بذات خود یہ واضح نہیں کرتا کہ کوئی کام _کیسے_ کرنا ہے۔ اس کی وضاحت ذیل میں کنٹریکٹ کے سورس کوڈ میں کی گئی ہے۔
+یہ اوپن زیپلن کی جانب سے [<span dir="ltr">ERC-20</span> انٹرفیس](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) کی ایک تعریف ہے۔ یہ [انسان کے پڑھنے کے قابل معیار](https://eips.ethereum.org/EIPS/eip-20) کا Solidity کوڈ میں ترجمہ ہے۔ یقیناً، انٹرفیس بذات خود یہ واضح نہیں کرتا کہ کوئی کام _کیسے_ کرنا ہے۔ اس کی وضاحت ذیل میں کنٹریکٹ کے سورس کوڈ میں کی گئی ہے۔
 
 &nbsp;
 
@@ -132,7 +132,7 @@ interface IERC20 {
      * ایک بولین ویلیو واپس کرتا ہے جو بتاتی ہے کہ آیا آپریشن کامیاب ہوا۔
      *
      * اہم: ہوشیار رہیں کہ اس طریقے سے الاؤنس کو تبدیل کرنے سے یہ خطرہ پیدا ہوتا ہے کہ کوئی بدقسمت ٹرانزیکشن کی ترتیب کی وجہ سے پرانے اور نئے دونوں الاؤنس استعمال کر سکتا ہے۔ اس ریس کنڈیشن کو کم کرنے کا ایک ممکنہ حل یہ ہے کہ پہلے خرچ کرنے والے کا الاؤنس 0 کر دیا جائے اور اس کے بعد مطلوبہ ویلیو سیٹ کی جائے:
-     * https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729
+     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
      *
      * ایک {Approval} ایونٹ خارج کرتا ہے۔
      */
@@ -199,7 +199,7 @@ import "../../math/SafeMath.sol";
 ```
 
 - `GSN/Context.sol` وہ تعریفیں ہیں جو [OpenGSN](https://opengsn.org/) استعمال کرنے کے لیے درکار ہیں، یہ ایک ایسا نظام ہے جو ایتھر کے بغیر صارفین کو بلاک چین استعمال کرنے کی اجازت دیتا ہے۔ نوٹ کریں کہ یہ ایک پرانا ورژن ہے، اگر آپ OpenGSN کے ساتھ انضمام کرنا چاہتے ہیں تو [یہ ٹیوٹوریل استعمال کریں](https://docs.opengsn.org/javascript-client/tutorial.html)۔
-- [SafeMath لائبریری](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/)، جو Solidity کے **<span dir="ltr">&lt;0.8.0</span>** ورژنز کے لیے حسابی اوور فلو/انڈر فلو کو روکتی ہے۔ Solidity <span dir="ltr">≥0.8.0</span> میں، حسابی کارروائیاں اوور فلو/انڈر فلو پر خود بخود ریورٹ ہو جاتی ہیں، جس سے SafeMath غیر ضروری ہو جاتا ہے۔ یہ کنٹریکٹ پرانے کمپائلر ورژنز کے ساتھ پچھلی مطابقت (backward compatibility) کے لیے SafeMath کا استعمال کرتا ہے۔
+- [SafeMath لائبریری](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/)، جو Solidity کے **<span dir="ltr">&lt;0.8.0</span>** ورژنز کے لیے حسابی اوور فلو/انڈر فلو کو روکتی ہے۔ Solidity <span dir="ltr">≥0.8.0</span> میں، حسابی کارروائیاں اوور فلو/انڈر فلو پر خود بخود ریورٹ ہو جاتی ہیں، جس سے SafeMath غیر ضروری ہو جاتا ہے۔ یہ کنٹریکٹ پرانے کمپائلر ورژنز کے ساتھ پچھلی مطابقت (backward compatibility) کے لیے SafeMath کا استعمال کرتا ہے۔
 
 &nbsp;
 

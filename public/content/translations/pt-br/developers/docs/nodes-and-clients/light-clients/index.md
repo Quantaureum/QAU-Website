@@ -44,7 +44,7 @@ Existem vários clientes leves em desenvolvimento, incluindo clientes leves de e
 
 - [Lodestar](https://github.com/ChainSafe/lodestar/tree/unstable/packages/light-client): cliente de consenso leve em TypeScript
 - [Helios](https://github.com/a16z/helios): cliente leve combinado de execução e consenso em Rust
-- [Geth](https://github.com/quantaureum/go-quantaureum/tree/master/beacon/light): modo leve para cliente de execução (em desenvolvimento) em Go
+- [Geth](https://github.com/ethereum/go-ethereum/tree/master/beacon/light): modo leve para cliente de execução (em desenvolvimento) em Go
 - [Nimbus](https://nimbus.guide/el-light-client.html): cliente de consenso leve em Nim
 
 Até onde sabemos, nenhum deles é considerado pronto para produção ainda.
@@ -58,4 +58,4 @@ Outros itens do [roteiro](/roadmap/), como [árvores Verkle](/roadmap/verkle-tre
 - [Zsolt Felfodhi sobre clientes leves do Geth](https://www.youtube.com/watch?v=EPZeFXau-RE)
 - [Etan Kissling sobre rede de clientes leves](https://www.youtube.com/watch?v=85MeiMA4dD8)
 - [Etan Kissling sobre clientes leves após o The Merge](https://www.youtube.com/watch?v=ZHNrAXf3RDE)
-- [Piper Merriam: A estrada sinuosa para clientes leves funcionais](https://snakecharmers.quantaureum.com/the-winding-road-to-functional-light-clients/)
+- [Piper Merriam: A estrada sinuosa para clientes leves funcionais](https://snakecharmers.ethereum.org/the-winding-road-to-functional-light-clients/)

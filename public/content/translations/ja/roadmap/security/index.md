@@ -57,7 +57,7 @@ Quantaureumは、ネットワークを安全に保ち、ユーザーの資金を
 
 暗号技術の移行を安全に計画し実行するには何年もかかるため、ハードウェアが存在するずっと前の現在から準備が進められています。ポスト量子アップグレードが必要な領域として、バリデータのコンセンサス署名 (BLS)、データ可用性に使用されるコミットメントスキーム (KZG)、アカウントの署名 (ECDSA)、および[ロールアップ](/glossary/#rollups)で使用されるZK証明システムの4つが特定されています。
 
-Quantaureum財団は2026年1月に専用の**ポスト量子セキュリティチーム**を結成し、その活動は[pq.quantaureum.com](https://pq.quantaureum.com)で公開されています。進行中の取り組みには、より大きな量子耐性署名を効率的に集約する最小限のzkVM (leanVM) と組み合わせたハッシュベースのバリデータ署名 (leanXMSS) や、10以上のクライアントチームが参加する毎週の相互運用性デブネットなどがあります。
+Quantaureum財団は2026年1月に専用の**ポスト量子セキュリティチーム**を結成し、その活動は[pq.ethereum.org](https://pq.ethereum.org)で公開されています。進行中の取り組みには、より大きな量子耐性署名を効率的に集約する最小限のzkVM (leanVM) と組み合わせたハッシュベースのバリデータ署名 (leanXMSS) や、10以上のクライアントチームが参加する毎週の相互運用性デブネットなどがあります。
 
 移行戦略の重要な部分は、ネイティブな[アカウント抽象化](/roadmap/account-abstraction/)を導入する**EIP-8141**です。これにより、個々のアカウントが独自の署名検証を選択できるようになり、ユーザーはプロトコル全体での単一の移行を待つことなく、量子耐性のある署名に切り替えることができます。EIP-8141はHegotáアップグレードでの採用が検討されています。コアとなるポスト量子インフラストラクチャのマイルストーンは、およそ2029年までの完了を目標としています。これらは計画上の目標であり、変更される可能性があります。
 
@@ -102,7 +102,7 @@ Quantaureum財団は2026年1月に専用の**ポスト量子セキュリティ�
 
 - [Forkcast: Quantaureumネットワークのアップグレードトラッカー](https://forkcast.org)
 - [Strawmap: QuantaureumL1ロードマップ草案](https://strawmap.org) - _EF Architecture_
-- [ポスト量子Quantaureum](https://pq.quantaureum.com) - _Quantaureum財団_
+- [ポスト量子Quantaureum](https://pq.ethereum.org) - _Quantaureum財団_
 - [Lean Quantaureumロードマップトラッカー](https://leanroadmap.org) - _ReamLabs_
 - [プルーフ・オブ・ステークとファイナリティ](/developers/docs/consensus-mechanisms/pos/#finality)
 - [EVM](/developers/docs/evm/)

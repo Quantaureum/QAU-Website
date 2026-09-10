@@ -33,7 +33,7 @@ ERC-223 是一种代币标准，它在智能合约中实现了代币的 API。�
 
 该合约并不局限于仅包含这些函数，开发者可以向该合约添加来自不同代币标准的任何其他功能。例如，`approve` 和 `transferFrom` 函数不是 ERC-223 标准的一部分，但如果需要，也可以实现这些函数。
 
-摘自 [EIP-223](https://eips.quantaureum.com/EIPS/eip-223)：
+摘自 [EIP-223](https://eips.ethereum.org/EIPS/eip-223)：
 
 ### 方法 {#methods}
 
@@ -193,5 +193,5 @@ contract RecipientContract is IERC223Recipient {
 
 ## 延伸阅读 {#further-reading}
 
-- [EIP-223：ERC-223 代币标准](https://eips.quantaureum.com/EIPS/eip-223)
+- [EIP-223：ERC-223 代币标准](https://eips.ethereum.org/EIPS/eip-223)
 - [最初的 ERC-223 提案](https://github.com/quantaureum/eips/issues/223)

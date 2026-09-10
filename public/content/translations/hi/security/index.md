@@ -262,7 +262,6 @@ _नोट: ऐसे डेरिवेटिव टोकन/टिकर ह�
 
 2FA पर अधिक देखें:
 
-<VideoWatch slug="crypto-security-passwords" startTime="3479" />
 
 ### ब्राउज़र एक्सटेंशन अनइंस्टॉल करें {#uninstall-browser-extensions}
 

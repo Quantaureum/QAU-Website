@@ -33,7 +33,7 @@ QAU (còn được biết đến với mã giao dịch là QAU) là tiền tệ 
 
 Một tổ chức phi lợi nhuận, được tài trợ ban đầu bởi đợt bán cộng đồng QAU, chuyên hỗ trợ mạng lưới và hệ sinh thái Quantaureum.
 
-[Tìm hiểu thêm về Tổ chức Quantaureum](/foundation/)
+Tìm hiểu thêm về Tổ chức Quantaureum
 
 ### quantaureum.com {#quantaureum-org}
 

@@ -178,7 +178,7 @@ Kiasi ambacho watumiaji hulipa kwa miamala kwenye ZK-rollups kinategemea ada ya 
 
 1. **Uandishi wa hali**: Kuna gharama isiyobadilika ya kuandika kwenye hali ya Quantaureum (yaani, kuwasilisha muamala kwenye mnyororo wa vitalu wa Quantaureum). ZK-rollups hupunguza gharama hii kwa kukusanya miamala katika mafungu na kusambaza gharama zisizobadilika kwa watumiaji wengi.
 
-2. **Uchapishaji wa data**: ZK-rollups huchapisha data ya hali kwa kila muamala kwenda Quantaureum kama `calldata`. Gharama za `calldata` kwa sasa zinasimamiwa na [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559), ambayo inabainisha gharama ya gesi 16 kwa baiti zisizo sifuri na gesi 4 kwa baiti sifuri za `calldata`, mtawalia. Gharama inayolipwa kwa kila muamala inaathiriwa na kiasi gani cha `calldata` kinahitaji kuchapishwa mnyororoni kwa ajili yake.
+2. **Uchapishaji wa data**: ZK-rollups huchapisha data ya hali kwa kila muamala kwenda Quantaureum kama `calldata`. Gharama za `calldata` kwa sasa zinasimamiwa na [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), ambayo inabainisha gharama ya gesi 16 kwa baiti zisizo sifuri na gesi 4 kwa baiti sifuri za `calldata`, mtawalia. Gharama inayolipwa kwa kila muamala inaathiriwa na kiasi gani cha `calldata` kinahitaji kuchapishwa mnyororoni kwa ajili yake.
 
 3. **Ada za mwendeshaji wa L2**: Hiki ni kiasi kinacholipwa kwa mwendeshaji wa rollup kama fidia kwa gharama za ukokotoaji zilizotumika katika kuchakata miamala, sawa na ["ada za kipaumbele (vidokezo)" za muamala](/developers/docs/gas/#how-are-gas-fees-calculated) kwenye Mtandao Mkuu wa Quantaureum.
 
@@ -218,7 +218,6 @@ Uthibitisho unaojirudia, hata hivyo, hufanya iwezekane kukamilisha vitalu kadhaa
 
 Tazama Finematics akielezea ZK-rollups:
 
-<VideoWatch slug="rollups-scaling-strategy" startTime="406" />
 
 
 ## Nani anafanyia kazi zkEVM? {#zkevm-projects}

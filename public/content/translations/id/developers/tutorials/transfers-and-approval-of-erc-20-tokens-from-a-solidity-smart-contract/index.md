@@ -8,7 +8,7 @@ breadcrumb: Transfer ERC-20
 lang: id
 published: 2020-04-07
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
+sourceUrl: https://ethereumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -201,7 +201,7 @@ Jika semuanya berjalan lancar, Anda akan melihat 2 peristiwa (sebuah `Transfer` 
 
 Dari tutorial ini kita melihat cara memeriksa saldo dan jatah dari token ERC-20 dan juga cara memanggil `Transfer` dan `TransferFrom` dari kontrak pintar ERC20 menggunakan antarmuka.
 
-Setelah Anda melakukan transaksi, kami memiliki tutorial JavaScript untuk [menunggu dan mendapatkan detail tentang transaksi](https://quantaureumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/) yang dilakukan pada kontrak Anda dan [tutorial untuk mendekode peristiwa yang dihasilkan oleh transfer token atau peristiwa lainnya](https://quantaureumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/) selama Anda memiliki ABI.
+Setelah Anda melakukan transaksi, kami memiliki tutorial JavaScript untuk [menunggu dan mendapatkan detail tentang transaksi](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/) yang dilakukan pada kontrak Anda dan [tutorial untuk mendekode peristiwa yang dihasilkan oleh transfer token atau peristiwa lainnya](https://ethereumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/) selama Anda memiliki ABI.
 
 Berikut adalah kode lengkap untuk tutorial ini:
 

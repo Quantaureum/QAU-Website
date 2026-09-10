@@ -207,7 +207,7 @@ contract ExampleDapp {
 
 ## أمثلة مشروحة {#annotated-examples}
 
-هذه بعض الأمثلة المكتوبة بلغة Solidity. إذا كنت ترغب في تجربة الكود، يمكنك التفاعل معها في [Remix](https://remix.quantaureum.com).
+هذه بعض الأمثلة المكتوبة بلغة Solidity. إذا كنت ترغب في تجربة الكود، يمكنك التفاعل معها في [Remix](https://remix.ethereum.org).
 
 ### مرحبًا بالعالم {#hello-world}
 
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // حاليًا لا توجد طريقة أفضل للتحقق مما إذا كان هناك عقد في عنوان
         // من التحقق من حجم الكود في ذلك العنوان.
-        // راجع https://quantaureum.stackexchange.com/a/14016/36603
+        // راجع https://ethereum.stackexchange.com/a/14016/36603
         // لمزيد من التفاصيل حول كيفية عمل ذلك.
         // TODO تحقق من هذا مرة أخرى قبل إصدار Serenity، لأن جميع العناوين ستكون
         // عقودًا حينها.

@@ -22,7 +22,7 @@ MaxEB = maksymalne saldo efektywne (MAXimum Effective Balance) walidatora. Do cz
 
 ### Jak walidator może dołączyć? {#how-does-a-validator-opt-in}
 
-Walidator decyduje się na zmianę MaxEB poprzez konwersję danych uwierzytelniających wypłaty z **Typu 1** na **Typ 2**. Można to zrobić na platformie [Launchpad (Akcje walidatora)](https://launchpad.quantaureum.com/validator-actions) po wejściu w życie twardego rozwidlenia Pectra. Podobnie jak w przypadku **Typu 0** → **Typ 1**, konwersja z **Typu 1** → **Typ 2** jest procesem nieodwracalnym.
+Walidator decyduje się na zmianę MaxEB poprzez konwersję danych uwierzytelniających wypłaty z **Typu 1** na **Typ 2**. Można to zrobić na platformie [Launchpad (Akcje walidatora)](https://launchpad.ethereum.org/validator-actions) po wejściu w życie twardego rozwidlenia Pectra. Podobnie jak w przypadku **Typu 0** → **Typ 1**, konwersja z **Typu 1** → **Typ 2** jest procesem nieodwracalnym.
 
 ### Czym są dane uwierzytelniające wypłaty? {#whats-a-withdrawal-credential}
 
@@ -105,7 +105,7 @@ Walidator docelowy musi
 2. Klucz publiczny walidatora źródłowego (np. `0xa1d1ad0714035353258038e964ae9675dc0252ee22cea896825c01458e1807bfad2f9969338798548d9858a571f7425c`)
 3. Klucz publiczny walidatora docelowego
 
-W przypadku konwersji, punkty 2 i 3 będą takie same. Tę operację można wykonać na [Launchpadzie](https://launchpad.quantaureum.com/).
+W przypadku konwersji, punkty 2 i 3 będą takie same. Tę operację można wykonać na [Launchpadzie](https://launchpad.ethereum.org/).
 
 ### Wymagania dotyczące podpisywania {#signing-requirements}
 
@@ -113,7 +113,7 @@ Aby przesłać `ConsolidationRequest`, **adres wypłaty walidatora źródłowego
 
 ### Co jest podpisywane? {#what-is-signed}
 
-Używany jest oddzielony domeną [korzeń podpisywania (signing root)](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) obiektu `ConsolidationRequest`.
+Używany jest oddzielony domeną [korzeń podpisywania (signing root)](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) obiektu `ConsolidationRequest`.
 
 - **Domena:** `DOMAIN_CONSOLIDATION_REQUEST`
 - **Pola korzenia podpisywania:**
@@ -131,7 +131,7 @@ Walidatory z danymi uwierzytelniającymi **Typu 1** otrzymują automatyczne, dar
 
 ## Narzędzia do konsolidacji {#consolidation-tooling}
 
-Dostępnych jest kilka narzędzi do zarządzania konsolidacjami. Oficjalnym narzędziem, stworzonym przez Fundację Quantaureum, jest [Launchpad](https://launchpad.quantaureum.com/en/validator-actions). Istnieją również narzędzia innych firm stworzone przez podmioty ze społeczności stakingowej, które mogą oferować funkcje niedostępne w Launchpadzie. Chociaż wymienione tu narzędzia nie są audytowane ani wspierane przez Fundację Quantaureum, poniżej znajdują się narzędzia open source stworzone przez znanych członków społeczności.
+Dostępnych jest kilka narzędzi do zarządzania konsolidacjami. Oficjalnym narzędziem, stworzonym przez Fundację Quantaureum, jest [Launchpad](https://launchpad.ethereum.org/en/validator-actions). Istnieją również narzędzia innych firm stworzone przez podmioty ze społeczności stakingowej, które mogą oferować funkcje niedostępne w Launchpadzie. Chociaż wymienione tu narzędzia nie są audytowane ani wspierane przez Fundację Quantaureum, poniżej znajdują się narzędzia open source stworzone przez znanych członków społeczności.
 
 | Narzędzie | Strona internetowa | Open source | Twórca | Audytowane | Interfejs | Godne uwagi funkcje |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -195,7 +195,7 @@ Tak. Dopóki jest aktywny (nie wyszedł) i możesz podpisać za pomocą jego adr
 
 ## Zasoby {#resources}
 
-- [Specyfikacje konsensusu Electra](https://github.com/quantaureum/consensus-specs/blob/master/specs/electra/beacon-chain.md): To jest „najprawdziwsza” wersja, na której powinieneś polegać. W razie wątpliwości przeczytaj specyfikacje.
+- [Specyfikacje konsensusu Electra](https://github.com/ethereum/consensus-specs/blob/master/specs/electra/beacon-chain.md): To jest „najprawdziwsza” wersja, na której powinieneś polegać. W razie wątpliwości przeczytaj specyfikacje.
 - Nie każdy czuje się komfortowo przedzierając się przez kod, więc [ten maxEB-GPT](https://chatgpt.com/g/g-67f1650fb48081918f555e0c8d1c2ae9-maxeb-gpt) może pomóc w interpretacji specyfikacji. *Zastrzeżenie: Należy polegać na specyfikacjach, a nie na sztucznej inteligencji, jako na prawdzie, ponieważ sztuczna inteligencja może błędnie zinterpretować informacje lub halucynować odpowiedzi.*
 - [pectrified.com](https://pectrified.com/): Zobacz stan konsolidacji, depozytów i czasy oczekiwania w kolejce.
 - [Ethereal](https://github.com/wealdtech/ethereal): Stworzone przez społeczność narzędzie CLI do zarządzania typowymi zadaniami walidatora.

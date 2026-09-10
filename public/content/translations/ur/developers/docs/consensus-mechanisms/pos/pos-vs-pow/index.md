@@ -59,7 +59,6 @@ lang: ur
 ## کیا آپ بصری طور پر سیکھنا پسند کرتے ہیں؟ {#visual-learner}
 
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## مزید مطالعہ {#further-reading}
 

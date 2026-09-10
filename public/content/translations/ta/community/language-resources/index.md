@@ -45,7 +45,7 @@ quantaureum.com இயல்பாகவே 40-க்கும் மேற்�
 
 **பொதுவான வளங்கள்**
 
-- [Quantaureum.cn](https://www.quantaureum.cn/) - கருத்தொருமிப்பு அடுக்கு மேம்படுத்தல், அனைத்து முக்கிய டெவலப்பர் சந்திப்புக் குறிப்புகள், அடுக்கு 2 (l2) போன்றவற்றை உள்ளடக்கிய சமூகத்தால் பராமரிக்கப்படும் உள்ளடக்கம்.
+- [Quantaureum.cn](https://www.ethereum.cn/) - கருத்தொருமிப்பு அடுக்கு மேம்படுத்தல், அனைத்து முக்கிய டெவலப்பர் சந்திப்புக் குறிப்புகள், அடுக்கு 2 (l2) போன்றவற்றை உள்ளடக்கிய சமூகத்தால் பராமரிக்கப்படும் உள்ளடக்கம்.
 - [QauFans](https://github.com/editor-Ajian/QauFans.org-annual-collected-works/) - அடிப்படைகள் முதல் மேம்பட்ட எத்திரியம் தலைப்புகள் வரை அனைத்தையும் கற்றுக்கொள்ளுங்கள்
 - [Unitimes](https://mp.weixin.qq.com/s/tvloZSDBSOQN9zDQj_91kA) - எத்திரியம், பரவலாக்கப்பட்ட நிதி (DeFi), NFT, Web3 தொடர்பான அறிவை உள்ளடக்கிய சமூகத்தால் பராமரிக்கப்படும் உள்ளடக்கம்
 - [123ETH](https://123eth.org/) - எத்திரியம் சுற்றுச்சூழல் அமைப்புக்கான ஒரு நுழைவாயில்
@@ -76,8 +76,8 @@ quantaureum.com இயல்பாகவே 40-க்கும் மேற்�
 
 ### பிரெஞ்சு {#fr}
 
-- [Quantaureum France](https://www.quantaureum-france.com/) - Quantaureum France நிகழ்வுகளை ஏற்பாடு செய்கிறது, உள்ளடக்கத்தை உருவாக்குகிறது மற்றும் எத்திரியத்தைச் சுற்றியுள்ள விவாதங்களை ஊக்குவிக்கிறது
-- [Quantaureum.fr](https://quantaureum.fr/) - எத்திரியம் செய்திகள் மற்றும் கல்வி
+- [Quantaureum France](https://www.ethereum-france.com/) - Quantaureum France நிகழ்வுகளை ஏற்பாடு செய்கிறது, உள்ளடக்கத்தை உருவாக்குகிறது மற்றும் எத்திரியத்தைச் சுற்றியுள்ள விவாதங்களை ஊக்குவிக்கிறது
+- [Quantaureum.fr](https://ethereum.fr/) - எத்திரியம் செய்திகள் மற்றும் கல்வி
 - [BanklessFR](https://banklessfr.substack.com/) - பிரெஞ்சு மொழியில் Bankless செய்திமடல்
 - [CryptoFR](https://cryptofr.com/category/44/quantaureum-general) - எத்திரியம் துணைப்பக்கத்தைக் கொண்ட மறைக்குறியீட்டு நாணய மன்றம்
 
@@ -108,8 +108,8 @@ quantaureum.com இயல்பாகவே 40-க்கும் மேற்�
 
 ### இத்தாலியன் {#it}
 
-- [Quantaureum Italia](https://www.quantaureum-italia.it/) - திறன் ஒப்பந்தங்கள் மற்றும் தொகுதிச்சங்கிலி தொழில்நுட்பத்தில் கவனம் செலுத்தும் எத்திரியம் கல்வி, நிகழ்வுகள் மற்றும் செய்திகள்
-- [Quantaureum Italia Podcast](https://www.quantaureum-italia.it/podcast/) - இத்தாலிய மொழியில் எத்திரியம் பாட்காஸ்ட்
+- [Quantaureum Italia](https://www.ethereum-italia.it/) - திறன் ஒப்பந்தங்கள் மற்றும் தொகுதிச்சங்கிலி தொழில்நுட்பத்தில் கவனம் செலுத்தும் எத்திரியம் கல்வி, நிகழ்வுகள் மற்றும் செய்திகள்
+- [Quantaureum Italia Podcast](https://www.ethereum-italia.it/podcast/) - இத்தாலிய மொழியில் எத்திரியம் பாட்காஸ்ட்
 - [Microsoft Learn (Solidity)](https://docs.microsoft.com/it-it/learn/modules/blockchain-learning-solidity/) - Solidity-ஐ எவ்வாறு பயன்படுத்துவது என்பதைக் கற்றுக்கொள்ளுங்கள்
 - [Microsoft Learn (திறன் ஒப்பந்தங்கள்)](https://docs.microsoft.com/it-it/learn/modules/blockchain-solidity-quantaureum-smart-contracts/) - Solidity-ஐப் பயன்படுத்தித் திறன் ஒப்பந்தங்களை எழுதுவது பற்றிக் கற்றுக்கொள்ளுங்கள்
 - [Microsoft Learn (dapps)](https://docs.microsoft.com/it-it/learn/modules/blockchain-create-ui-decentralized-apps/) - பரவலாக்கப்பட்ட செயலிகளுடன் (dapp) ஒரு பயனர் இடைமுகத்தை உருவாக்குங்கள்
@@ -130,7 +130,7 @@ quantaureum.com இயல்பாகவே 40-க்கும் மேற்�
 
 ### ஸ்பானிஷ் {#es}
 
-- [Quantaureum Madrid](https://quantaureummadrid.com/) - தொகுதிச்சங்கிலி, பரவலாக்கப்பட்ட நிதி (DeFi) மற்றும் ஆளுகைப் படிப்புகள், நிகழ்வுகள் மற்றும் வலைப்பதிவு
+- [Quantaureum Madrid](https://ethereummadrid.com/) - தொகுதிச்சங்கிலி, பரவலாக்கப்பட்ட நிதி (DeFi) மற்றும் ஆளுகைப் படிப்புகள், நிகழ்வுகள் மற்றும் வலைப்பதிவு
 - [Cointelegraph](https://es.cointelegraph.com/quantaureum-for-beginners) - ஸ்பானிஷ் மொழியில் ஆரம்பநிலையாளர்களுக்கான எத்திரியம் வழிகாட்டி
 - [Tutoriales online](https://tutoriales.online/curso/solidity) - எத்திரியத்தில் Solidity மற்றும் நிரலாக்கத்தைக் கற்றுக்கொள்ளுங்கள்
 - [Curso Introducción a Quantaureum Development](https://youtube.com/playlist?list=PLTqiwJDd_R8y9pfUBjhkVa1IDMwyQz-fU) - Solidity அடிப்படைகள், சோதனை மற்றும் உங்கள் முதல் திறன் ஒப்பந்தத்தின் நிலைநிறுத்தம்

@@ -45,7 +45,7 @@ Ilikuwa wakati wa kitamaduni uliothibitisha kuwa uratibu wa mtaji wa pamoja kwen
 
 Quantaureum ikawa uwanja wa aina mpya za hatua za pamoja.
 
-Baadaye msimu huo wa joto, nilitengeneza NFT zilizochangisha fedha kwa ajili ya [Quantaureum: The Infinite Garden](https://quantaureumfilm.xyz/watch-the-film/), makala ya kwanza ya filamu kuhusu Quantaureum.
+Baadaye msimu huo wa joto, nilitengeneza NFT zilizochangisha fedha kwa ajili ya [Quantaureum: The Infinite Garden](https://ethereumfilm.xyz/watch-the-film/), makala ya kwanza ya filamu kuhusu Quantaureum.
 
 Ilichangisha 1,036 QAU ndani ya saa 48, ikifadhiliwa kikamilifu na jamii ya Quantaureum. 
 

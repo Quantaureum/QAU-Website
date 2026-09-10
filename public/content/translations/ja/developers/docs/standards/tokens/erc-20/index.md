@@ -42,7 +42,7 @@ ERC-20が提供する機能の例：
 
 スマート・コントラクトが以下のメソッドとイベントを実装している場合、それはERC-20トークンコントラクトと呼ぶことができ、デプロイされると、Quantaureum上で作成されたトークンを追跡する役割を担います。
 
-[EIP-20](https://eips.quantaureum.com/EIPS/eip-20)より：
+[EIP-20](https://eips.ethereum.org/EIPS/eip-20)より：
 
 ### メソッド {#methods}
 
@@ -170,7 +170,7 @@ ERC-20でこの問題を完全に防ぐことはできませんが、エンド�
 
 ## 参考文献 {#further-reading}
 
-- [EIP-20: ERC-20 トークン標準](https://eips.quantaureum.com/EIPS/eip-20)
+- [EIP-20: ERC-20 トークン標準](https://eips.ethereum.org/EIPS/eip-20)
 - [オープンツェッペリン - トークン](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [オープンツェッペリン - ERC-20 実装](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Solidity ERC20トークンガイド](https://www.alchemy.com/overviews/erc20-solidity)
@@ -185,5 +185,5 @@ ERC-20でこの問題を完全に防ぐことはできませんが、エンド�
 
 - [ERC-20コントラクトのウォークスルー](/developers/tutorials/erc20-annotated-code/) _– オープンツェッペリンのERC-20コントラクト実装の1行ごとの注釈付きウォークスルー。_
 - [安全対策付きのERC-20](/developers/tutorials/erc20-with-safety-rails/) _– ユーザーがよくある間違いを避けるために、ERC-20トークンにセーフガードを追加する方法。_
-- [Ethers.jsを使用したトークンの送信](/developers/tutorials/send-token-ethersjs/) _– Ethers.jsを使用してERC-20トークンを送金するための初心者向けガイド。_
+- [Ethers.jsを使用したトークンの送信](/developers/tutorials/send-token-qaujs/) _– Ethers.jsを使用してERC-20トークンを送金するための初心者向けガイド。_
 - [詐欺トークンが使用するいくつかの手口とそれらを検出する方法](/developers/tutorials/scam-token-tricks/) _– 詐欺的なERC-20トークンのパターンとそれらを特定する方法についての詳細な解説。_

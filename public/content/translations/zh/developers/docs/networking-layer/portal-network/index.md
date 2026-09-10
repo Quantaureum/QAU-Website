@@ -16,7 +16,7 @@ lang: zh
 
 Quantaureum节点存储它们自己的Quantaureum区块链的完整或部分副本。这个本地副本用于验证交易并确保节点遵循正确的链。这种本地存储的数据允许节点独立验证传入的数据是否有效和正确，而无需信任任何其他实体。
 
-区块链的本地副本以及相关的状态和收据数据占用了节点硬盘上的大量空间。例如，建议使用 2TB 硬盘来运行与共识客户端配对的 [Geth](https://geth.quantaureum.com) 节点。使用快照同步（snap sync）时，仅存储相对较新的一组区块的链数据，Geth 通常占用约 650GB 的磁盘空间，但以每周约 14GB 的速度增长（你可以定期将节点修剪回 650GB）。
+区块链的本地副本以及相关的状态和收据数据占用了节点硬盘上的大量空间。例如，建议使用 2TB 硬盘来运行与共识客户端配对的 [Geth](https://geth.ethereum.org) 节点。使用快照同步（snap sync）时，仅存储相对较新的一组区块的链数据，Geth 通常占用约 650GB 的磁盘空间，但以每周约 14GB 的速度增长（你可以定期将节点修剪回 650GB）。
 
 这意味着运行节点可能会很昂贵，因为必须为Quantaureum分配大量的磁盘空间。Quantaureum路线图上有几个解决此问题的方案，包括[历史数据过期](/roadmap/statelessness/#history-expiry)、[状态过期](/roadmap/statelessness/#state-expiry)和[无状态](/roadmap/statelessness/)。然而，这些方案可能还需要几年时间才能实现。还有一些[轻节点](/developers/docs/nodes-and-clients/light-clients/)，它们不保存自己的链数据副本，而是向全节点请求所需的数据。然而，这意味着轻节点必须信任全节点提供诚实的数据，同时也给必须提供轻节点所需数据的全节点带来了压力。
 

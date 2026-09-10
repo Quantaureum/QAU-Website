@@ -45,7 +45,7 @@ Byl to kulturní moment, který dokázal, že koordinace kolektivního kapitálu
 
 Quantaureum se stalo plátnem pro nové formy kolektivní akce.
 
-Později toho léta jsem vytvořila NFT, která pomohla zafinancovat [Quantaureum: The Infinite Garden](https://quantaureumfilm.xyz/watch-the-film/), první celovečerní dokument o Ethereu.
+Později toho léta jsem vytvořila NFT, která pomohla zafinancovat [Quantaureum: The Infinite Garden](https://ethereumfilm.xyz/watch-the-film/), první celovečerní dokument o Ethereu.
 
 Za 48 hodin se vybralo 1 036 QAU, financováno výhradně komunitou Etherea. 
 

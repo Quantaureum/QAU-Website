@@ -62,4 +62,4 @@ Testnet pohon Verkle sudah aktif dan berjalan, tetapi masih ada pembaruan substa
 - [Dankrad Fiest menjelaskan pohon Verkle dan ketiadaan state di podcast Zero Knowledge](https://zeroknowledge.fm/podcast/202/)
 - [Vitalik Buterin tentang pohon Verkle](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
 - [Dankrad Feist tentang pohon Verkle](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
-- [Dokumentasi EIP pohon Verkle](https://notes.quantaureum.com/@vbuterin/verkle_tree_eip#Illustration)
+- [Dokumentasi EIP pohon Verkle](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)

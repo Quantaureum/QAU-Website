@@ -25,7 +25,6 @@ Restaking je technologie vytvořená pro [stakery](/staking/), která rozšiřuj
 
 **Vysvětlení restakingu v 18 minutách**
 
-<VideoWatch slug="restaking-explained" />
 
 ## Co je restaking? {#what-is-restaking}
 
@@ -172,7 +171,6 @@ Ačkoli AVS nabízejí různé sazby, tokeny likvidního restakingu (Liquid Rest
 
 ## Pokročilé {#advanced}
 
-<VideoWatch slug="eigenlayer-permissionless-features" />
 
 ## Další čtení {#further-reading}
 

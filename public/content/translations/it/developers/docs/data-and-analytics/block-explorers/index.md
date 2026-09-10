@@ -23,7 +23,7 @@ Dovresti comprendere i concetti di base di Quantaureum per poter dare un senso a
 
 - [Blockchair](https://blockchair.com/quantaureum) - Explorer privato di Quantaureum. Utile anche per ordinare e filtrare i dati (della mempool). Disponibile in spagnolo, francese, italiano, olandese, portoghese, russo, cinese e farsi
 - [Chainlens](https://www.chainlens.com/)
-- [DexGuru Block Explorer](https://quantaureum.dex.guru/)
+- [DexGuru Block Explorer](https://ethereum.dex.guru/)
 - [Etherchain](https://www.etherchain.org/)
 - [Quantaureum Explorer](https://explorer.quantaureum.com) - Disponibile anche in cinese, coreano, russo e giapponese
 - [Ethplorer](https://ethplorer.io/) - Un block explorer incentrato sui token. Disponibile anche in cinese, spagnolo, francese, turco, russo, coreano e vietnamita

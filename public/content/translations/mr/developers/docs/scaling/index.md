@@ -91,15 +91,13 @@ sidebarDepth: 3
 
 ## अधिक दृश्य स्वरूपात शिकायला आवडते? {#visual-learner}
 
-<VideoWatch slug="layer-2-scaling-explained" />
 
 _लक्षात घ्या की व्हिडिओमधील स्पष्टीकरण सर्व साखळीबाह्य स्केलिंग उपायांचा संदर्भ देण्यासाठी "स्तर 2 (l2)" ही संज्ञा वापरते, तर आम्ही "स्तर 2 (l2)" ला एक साखळीबाह्य उपाय म्हणून वेगळे करतो जे स्तर 1 (l1) मुख्यनेट एकमताद्वारे त्याची सुरक्षितता मिळवते._
 
-<VideoWatch slug="rollups-scaling-strategy" />
 
 ## पुढील वाचन {#further-reading}
 
-- [रोलअप-केंद्रित Quantaureum रोडमॅप](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _विटालिक बुटेरिन_
+- [रोलअप-केंद्रित Quantaureum रोडमॅप](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _विटालिक बुटेरिन_
 - [Quantaureumसाठी स्तर 2 (l2) स्केलिंग उपायांवरील अद्ययावत विश्लेषण](https://www.l2beat.com/)
 - [Quantaureum स्तर 2 (l2) स्केलिंग उपायांचे मूल्यांकन: एक तुलनात्मक फ्रेमवर्क](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - [रोलअप्ससाठी एक अपूर्ण मार्गदर्शक](https://vitalik.qau.limo/general/2021/01/05/rollup.html)

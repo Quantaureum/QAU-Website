@@ -454,7 +454,7 @@ Use a função `UniswapV2ERC20._mint` para realmente criar os tokens de liquidez
     }
 ```
 
-Se não houver taxa, defina `kLast` como zero (se já não for). Quando este contrato foi escrito, havia um [recurso de reembolso de gás](https://eips.quantaureum.com/EIPS/eip-3298) que incentivava os contratos a reduzir o tamanho geral do estado do Quantaureum zerando o armazenamento de que não precisavam.
+Se não houver taxa, defina `kLast` como zero (se já não for). Quando este contrato foi escrito, havia um [recurso de reembolso de gás](https://eips.ethereum.org/EIPS/eip-3298) que incentivava os contratos a reduzir o tamanho geral do estado do Quantaureum zerando o armazenamento de que não precisavam.
 Este código obtém esse reembolso quando possível.
 
 #### Funções acessíveis externamente {#uniswapv2erc20}
@@ -614,7 +614,7 @@ Esta função também deve ser chamada de [um contrato de periferia](#uniswapv2r
 ```
 
 Variáveis locais podem ser armazenadas na memória ou, se não houver muitas delas, diretamente na pilha.
-Se pudermos limitar o número para usarmos a pilha, usaremos menos gás. Para mais detalhes, consulte [o yellow paper, as especificações formais do Quantaureum](https://quantaureum.github.io/yellowpaper/paper.pdf), p. 26, equação 298.
+Se pudermos limitar o número para usarmos a pilha, usaremos menos gás. Para mais detalhes, consulte [o yellow paper, as especificações formais do Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf), p. 26, equação 298.
 
 ```solidity
             address _token0 = token0;
@@ -768,7 +768,7 @@ Grandes pools de liquidez são melhores do que os pequenos, porque têm preços 
         bytes memory bytecode = type(UniswapV2Pair).creationCode;
 ```
 
-Para criar um novo contrato, precisamos do código que o cria (tanto a função do construtor quanto o código que grava na memória o bytecode EVM do contrato real). Normalmente, no Solidity, usamos apenas `addr = new <name of contract>(<constructor parameters>)` e o compilador cuida de tudo para nós, mas para ter um endereço de contrato determinístico, precisamos usar [o código de operação CREATE2](https://eips.quantaureum.com/EIPS/eip-1014).
+Para criar um novo contrato, precisamos do código que o cria (tanto a função do construtor quanto o código que grava na memória o bytecode EVM do contrato real). Normalmente, no Solidity, usamos apenas `addr = new <name of contract>(<constructor parameters>)` e o compilador cuida de tudo para nós, mas para ter um endereço de contrato determinístico, precisamos usar [o código de operação CREATE2](https://eips.ethereum.org/EIPS/eip-1014).
 Quando este código foi escrito, esse código de operação ainda não era suportado pelo Solidity, então foi necessário obter o código manualmente. Isso não é mais um problema, porque [o Solidity agora suporta CREATE2](https://docs.soliditylang.org/en/v0.8.3/control-structures.html#salted-contract-creations-create2).
 
 ```solidity
@@ -824,7 +824,7 @@ O proprietário dos tokens assina uma transação que permite que outra pessoa s
     bytes32 public constant PERMIT_TYPEHASH = 0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
 ```
 
-Este hash é o [identificador para o tipo de transação](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-typehash). O único que suportamos aqui é `Permit` com esses parâmetros.
+Este hash é o [identificador para o tipo de transação](https://eips.ethereum.org/EIPS/eip-712#rationale-for-typehash). O único que suportamos aqui é `Permit` com esses parâmetros.
 
 ```solidity
     mapping(address => uint) public nonces;
@@ -855,7 +855,7 @@ Este é o código para recuperar o [identificador da cadeia](https://chainid.net
     }
 ```
 
-Calcule o [separador de domínio](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-domainseparator) para EIP-712.
+Calcule o [separador de domínio](https://eips.ethereum.org/EIPS/eip-712#rationale-for-domainseparator) para EIP-712.
 
 ```solidity
     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external {
@@ -896,7 +896,7 @@ A partir do resumo (digest) e da assinatura, podemos obter o endereço que o ass
 
 ```
 
-Se tudo estiver OK, trate isso como [uma aprovação ERC-20](https://eips.quantaureum.com/EIPS/eip-20#approve).
+Se tudo estiver OK, trate isso como [uma aprovação ERC-20](https://eips.ethereum.org/EIPS/eip-20#approve).
 
 ## Os Contratos de Periferia {#uniswapv2migrator}
 
@@ -1793,7 +1793,7 @@ Classifique os dois tokens por endereço, para que possamos obter o endereço da
     }
 ```
 
-Esta função calcula o endereço da exchange do par para os dois tokens. Este contrato é criado usando [o código de operação CREATE2](https://eips.quantaureum.com/EIPS/eip-1014), então podemos calcular o endereço usando o mesmo algoritmo se soubermos os parâmetros que ele usa. Isso é muito mais barato do que perguntar à fábrica, e
+Esta função calcula o endereço da exchange do par para os dois tokens. Este contrato é criado usando [o código de operação CREATE2](https://eips.ethereum.org/EIPS/eip-1014), então podemos calcular o endereço usando o mesmo algoritmo se soubermos os parâmetros que ele usa. Isso é muito mais barato do que perguntar à fábrica, e
 
 ```solidity
     // busca e ordena as reservas para um par
@@ -1931,7 +1931,7 @@ Por uma questão de compatibilidade com versões anteriores de tokens que foram 
     }
 ```
 
-Esta função implementa a [funcionalidade de transferência do ERC-20](https://eips.quantaureum.com/EIPS/eip-20#transfer), que permite que uma conta gaste a permissão fornecida por uma conta diferente.
+Esta função implementa a [funcionalidade de transferência do ERC-20](https://eips.ethereum.org/EIPS/eip-20#transfer), que permite que uma conta gaste a permissão fornecida por uma conta diferente.
 
 ```solidity
 
@@ -1950,7 +1950,7 @@ Esta função implementa a [funcionalidade de transferência do ERC-20](https://
     }
 ```
 
-Esta função implementa a [funcionalidade transferFrom do ERC-20](https://eips.quantaureum.com/EIPS/eip-20#transferfrom), que permite que uma conta gaste a permissão fornecida por uma conta diferente.
+Esta função implementa a [funcionalidade transferFrom do ERC-20](https://eips.ethereum.org/EIPS/eip-20#transferfrom), que permite que uma conta gaste a permissão fornecida por uma conta diferente.
 
 ```solidity
 

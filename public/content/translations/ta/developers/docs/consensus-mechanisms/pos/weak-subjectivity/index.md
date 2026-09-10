@@ -32,8 +32,8 @@ lang: ta
 
 ## மேலும் படிக்க {#further-reading}
 
-- [எத்2-இல் பலவீனமான அகநிலை](https://notes.quantaureum.com/@adiasg/weak-subjectvity-eth2)
+- [எத்2-இல் பலவீனமான அகநிலை](https://notes.ethereum.org/@adiasg/weak-subjectvity-eth2)
 - [விட்டாலிக்: பலவீனமான அகநிலையை நான் எப்படி நேசிக்கக் கற்றுக்கொண்டேன்](https://quantaureum.com)
 - [பலவீனமான அகநிலை (டெகு ஆவணங்கள்)](https://docs.teku.consensys.io/concepts/weak-subjectivity)
-- [கட்டம்-0 பலவீனமான அகநிலை வழிகாட்டி](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
+- [கட்டம்-0 பலவீனமான அகநிலை வழிகாட்டி](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
 - [எத்திரியம் 2.0-இல் பலவீனமான அகநிலையின் பகுப்பாய்வு](https://github.com/runtimeverification/beacon-chain-verification/blob/master/weak-subjectivity/weak-subjectivity-analysis.pdf)

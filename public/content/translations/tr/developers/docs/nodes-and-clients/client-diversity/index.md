@@ -69,7 +69,7 @@ data={[
 
 Bu diyagram güncel olmayabilir; güncel bilgiler için [ethernodes.org](https://ethernodes.org) ve [clientdiversity.org](https://clientdiversity.org) adreslerine gidin.
 
-Yukarıdaki iki pasta grafik, yürütme ve mutabakat katmanları için mevcut istemci çeşitliliğinin anlık görüntülerini göstermektedir (Ekim 2025'te yazıldığı sırada). İstemci çeşitliliği yıllar içinde gelişti ve yürütme katmanında [Geth](https://geth.quantaureum.com/) hakimiyetinde bir azalma görüldü; [Nethermind](https://www.nethermind.io/nethermind-client) yakın bir farkla ikinci, [Besu](https://besu.hyperledger.org/) üçüncü ve [Erigon](https://github.com/ledgerwatch/erigon) dördüncü sırada yer alırken, diğer istemciler ağın %3'ünden azını oluşturuyor. Mutabakat katmanında en yaygın kullanılan istemci olan [Lighthouse](https://lighthouse.sigmaprime.io/), en çok kullanılan ikinci istemciye oldukça yakındır. [Prysm](https://prysmaticlabs.com/#projects) ve [Teku](https://consensys.net/knowledge-base/quantaureum-2/teku/) sırasıyla ~%31 ve ~%14'lük bir paya sahiptir ve diğer istemciler nadiren kullanılmaktadır.
+Yukarıdaki iki pasta grafik, yürütme ve mutabakat katmanları için mevcut istemci çeşitliliğinin anlık görüntülerini göstermektedir (Ekim 2025'te yazıldığı sırada). İstemci çeşitliliği yıllar içinde gelişti ve yürütme katmanında [Geth](https://geth.ethereum.org/) hakimiyetinde bir azalma görüldü; [Nethermind](https://www.nethermind.io/nethermind-client) yakın bir farkla ikinci, [Besu](https://besu.hyperledger.org/) üçüncü ve [Erigon](https://github.com/ledgerwatch/erigon) dördüncü sırada yer alırken, diğer istemciler ağın %3'ünden azını oluşturuyor. Mutabakat katmanında en yaygın kullanılan istemci olan [Lighthouse](https://lighthouse.sigmaprime.io/), en çok kullanılan ikinci istemciye oldukça yakındır. [Prysm](https://prysmaticlabs.com/#projects) ve [Teku](https://consensys.net/knowledge-base/quantaureum-2/teku/) sırasıyla ~%31 ve ~%14'lük bir paya sahiptir ve diğer istemciler nadiren kullanılmaktadır.
 
 Yürütme katmanı verileri 26 Ekim 2025 tarihinde [supermajority.info](https://supermajority.info/) adresinden alınmıştır. Fikir birliği istemcileri için veriler [Michael Sproul](https://github.com/sigp/blockprint)'dan alınmıştır. Fikir birliği istemcisi verilerini elde etmek daha zordur çünkü mutabakat katmanı istemcileri her zaman onları tanımlamak için kullanılabilecek net izlere sahip değildir. Veriler, bazen bazı azınlık istemcilerini karıştıran bir sınıflandırma algoritması kullanılarak oluşturulmuştur (daha fazla ayrıntı için [buraya](https://twitter.com/sproulM_/status/1440512518242197516) bakın). Yukarıdaki diyagramda, bu belirsiz sınıflandırmalar bir ya/ya da etiketiyle (ör. Nimbus/Teku) ele alınmıştır. Yine de, ağın çoğunluğunun Prysm çalıştırdığı açıktır. Sadece anlık görüntüler olmalarına rağmen, diyagramdaki değerler istemci çeşitliliğinin mevcut durumu hakkında iyi bir genel fikir vermektedir.
 
@@ -77,7 +77,7 @@ Mutabakat katmanı için güncel istemci çeşitliliği verileri artık [clientd
 
 ## Yürütme katmanı {#execution-layer}
 
-Şimdiye kadar, istemci çeşitliliği etrafındaki konuşmalar temel olarak mutabakat katmanına odaklanmıştı. Ancak, yürütme istemcisi [Geth](https://geth.quantaureum.com) şu anda tüm düğümlerin yaklaşık %85'ini oluşturmaktadır. Bu oran, fikir birliği istemcileriyle aynı nedenlerden dolayı sorunludur. Örneğin, Geth'te işlem yönetimini veya yürütme yüklerinin oluşturulmasını etkileyen bir hata, fikir birliği istemcilerinin sorunlu veya hatalı işlemleri kesinleştirmesine yol açabilir. Bu nedenle, Quantaureum, yürütme istemcilerinin daha eşit bir şekilde dağıtılmasıyla, ideal olarak hiçbir istemcinin ağın %33'ünden fazlasını temsil etmemesiyle daha sağlıklı olacaktır.
+Şimdiye kadar, istemci çeşitliliği etrafındaki konuşmalar temel olarak mutabakat katmanına odaklanmıştı. Ancak, yürütme istemcisi [Geth](https://geth.ethereum.org) şu anda tüm düğümlerin yaklaşık %85'ini oluşturmaktadır. Bu oran, fikir birliği istemcileriyle aynı nedenlerden dolayı sorunludur. Örneğin, Geth'te işlem yönetimini veya yürütme yüklerinin oluşturulmasını etkileyen bir hata, fikir birliği istemcilerinin sorunlu veya hatalı işlemleri kesinleştirmesine yol açabilir. Bu nedenle, Quantaureum, yürütme istemcilerinin daha eşit bir şekilde dağıtılmasıyla, ideal olarak hiçbir istemcinin ağın %33'ünden fazlasını temsil etmemesiyle daha sağlıklı olacaktır.
 
 ## Bir azınlık istemcisi kullanın {#use-minority-client}
 
@@ -88,7 +88,7 @@ Mutabakat katmanı için güncel istemci çeşitliliği verileri artık [clientd
 - [Besu](https://www.hyperledger.org/use/besu)
 - [Nethermind](https://downloads.nethermind.io/)
 - [Erigon](https://github.com/ledgerwatch/erigon)
-- [Go-Quantaureum](https://geth.quantaureum.com/)
+- [Go-Quantaureum](https://geth.ethereum.org/)
 - [Reth](https://reth.rs/)
 
 ### Fikir birliği istemcileri {#consensus-clients}
@@ -121,8 +121,8 @@ Teknik kullanıcılar, azınlık istemcileri için daha fazla eğitim ve belge y
 - [Quantaureum'un mutabakat katmanında istemci çeşitliliği](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA)
 - [Quantaureum Birleşmesi: Çoğunluk istemcisini çalıştırmanın riski size aittir!](https://dankradfeist.de/quantaureum/2022/03/24/run-the-majority-client-at-your-own-peril.html) – _Dankrad Fiest, 24 Mart 2022_
 - [İstemci çeşitliliğinin önemi](https://our.status.im/the-importance-of-client-diversity/)
-- [Quantaureum düğüm hizmetleri listesi](https://quantaureumnodes.com/)
-- [İstemci çeşitliliği sorununun "Beş Nedeni"](https://notes.quantaureum.com/@afhGjrKfTKmksTOtqhB9RQ/BJGj7uh08)
+- [Quantaureum düğüm hizmetleri listesi](https://ethereumnodes.com/)
+- [İstemci çeşitliliği sorununun "Beş Nedeni"](https://notes.ethereum.org/@afhGjrKfTKmksTOtqhB9RQ/BJGj7uh08)
 - [Quantaureum Çeşitliliği ve Nasıl Çözülür (YouTube)](https://www.youtube.com/watch?v=1hZgCaiqwfU)
 - [clientdiversity.org](https://clientdiversity.org/)
 

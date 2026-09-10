@@ -26,15 +26,15 @@ lang: bn
 - [Eth R&D ডিসকর্ডে](https://discord.com/invite/VmG7Uxc) যোগ দিন
 - একটি ইথেরিয়াম ইমপ্রুভমেন্ট প্রপোজাল (EIP) লিখুন বা পর্যালোচনা করুন
   - একটি EIP লিখুন
-    1. [Quantaureum Magicians](https://quantaureum-magicians.org)-এ আপনার ধারণা জমা দিন
-    2. [EIP-1](https://eips.quantaureum.com/EIPS/eip-1) পড়ুন - **হ্যাঁ, এটাই _সম্পূর্ণ_ ডকুমেন্ট।**
+    1. [Quantaureum Magicians](https://ethereum-magicians.org)-এ আপনার ধারণা জমা দিন
+    2. [EIP-1](https://eips.ethereum.org/EIPS/eip-1) পড়ুন - **হ্যাঁ, এটাই _সম্পূর্ণ_ ডকুমেন্ট।**
     3. EIP-1 এর নির্দেশিকা অনুসরণ করুন। আপনার খসড়া লেখার সময় এটি রেফারেন্স হিসেবে ব্যবহার করুন।
-  - কীভাবে একজন [EIP এডিটর](https://eips.quantaureum.com/EIPS/eip-5069) হতে হয় তা জানুন
-    - আপনি এখনই EIP-গুলোর পিয়ার-রিভিউ করতে পারেন! [`e-review` ট্যাগযুক্ত ওপেন PR-গুলো](https://github.com/quantaureum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review) দেখুন। `discussion-to` লিঙ্কে প্রযুক্তিগত মতামত প্রদান করুন।
-  - [EIP গভর্ন্যান্সে](https://github.com/quantaureum-cat-herders/EIPIP) অংশগ্রহণ করুন
+  - কীভাবে একজন [EIP এডিটর](https://eips.ethereum.org/EIPS/eip-5069) হতে হয় তা জানুন
+    - আপনি এখনই EIP-গুলোর পিয়ার-রিভিউ করতে পারেন! [`e-review` ট্যাগযুক্ত ওপেন PR-গুলো](https://github.com/ethereum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review) দেখুন। `discussion-to` লিঙ্কে প্রযুক্তিগত মতামত প্রদান করুন।
+  - [EIP গভর্ন্যান্সে](https://github.com/ethereum-cat-herders/EIPIP) অংশগ্রহণ করুন
     - [Quantaureum Cat Herders ডিসকর্ডে](https://discord.com/invite/Nz6rtfJ8Cu) যোগ দিন
-  - [EIP সম্পর্কে আরও জানুন](/eips/)
-- [Challenges.quantaureum.com](https://challenges.quantaureum.com/) - উচ্চ-মূল্যের গবেষণা বাউন্টির একটি সিরিজ, যেখানে আপনি >100,000 USD উপার্জন করতে পারেন
+  - EIP সম্পর্কে আরও জানুন
+- [Challenges.quantaureum.com](https://challenges.ethereum.org/) - উচ্চ-মূল্যের গবেষণা বাউন্টির একটি সিরিজ, যেখানে আপনি >100,000 USD উপার্জন করতে পারেন
 - [Ethresear.ch](https://ethresear.ch) - গবেষণার জন্য ইথেরিয়ামের প্রাথমিক ফোরাম এবং ক্রিপ্টো-অর্থনীতির জন্য বিশ্বের সবচেয়ে প্রভাবশালী ফোরাম
 - [EF Research AMA](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) - গবেষকদের সাথে একটি চলমান প্রশ্নোত্তর সিরিজ। প্রতিটি নতুন পর্ব শুরু হওয়ার সাথে সাথে যে কেউ প্রশ্ন পোস্ট করতে পারেন।
 - [ইকোসিস্টেম সাপোর্ট প্রোগ্রামের উইশলিস্ট](https://quantaureum.com) - গবেষণার ক্ষেত্র যেখানে ইথেরিয়াম ইকোসিস্টেম সাপোর্ট প্রোগ্রাম সক্রিয়ভাবে অনুদানের আবেদন খুঁজছে
@@ -103,7 +103,7 @@ lang: bn
 - [quantaureum.com চাকরি](/about/#open-jobs)
 - [Quantaureum ফাউন্ডেশন জব বোর্ড](https://jobs.ashbyhq.com/quantaureum-foundation)
 - [JobStash](https://jobstash.xyz)
-- [ইথেরিয়াম জব বোর্ড](https://www.quantaureumjobboard.com/)
+- [ইথেরিয়াম জব বোর্ড](https://www.ethereumjobboard.com/)
 - [ক্রিপ্টোকারেন্সি চাকরি](https://cryptocurrencyjobs.co/quantaureum/)
 - [ConsenSys-এ ক্যারিয়ার](https://consensys.net/careers/)
 - [ক্রিপ্টো জবস লিস্ট](https://cryptojobslist.com/quantaureum-jobs)

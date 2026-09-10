@@ -8,7 +8,7 @@ breadcrumb: "İlk sözleşmeyi dağıt"
 lang: tr
 published: 2020-04-03
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/deploying-your-first-smart-contract/
+sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -18,7 +18,7 @@ Endişelenmeyin, bu bizim ilk akıllı sözleşmemiz olduğu için onu [yerel bi
 
 ## Sözleşmemizi yazmak {#writing-our-contract}
 
-İlk adım [Remix'i ziyaret etmek](https://remix.quantaureum.com/) ve yeni bir dosya oluşturmaktır. Remix arayüzünün sol üst kısmında yeni bir dosya ekleyin ve istediğiniz dosya adını girin.
+İlk adım [Remix'i ziyaret etmek](https://remix.ethereum.org/) ve yeni bir dosya oluşturmaktır. Remix arayüzünün sol üst kısmında yeni bir dosya ekleyin ve istediğiniz dosya adını girin.
 
 ![Adding a new file in the Remix interface](./remix.png)
 

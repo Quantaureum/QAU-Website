@@ -36,10 +36,10 @@ Dowiedz się więcej o [różnorodności klientów](/developers/docs/nodes-and-c
 
 Tym, co łączy te implementacje, jest to, że wszystkie opierają się na jednej specyfikacji. Specyfikacje dyktują, jak funkcjonuje sieć i blockchain Quantaureum. Każdy szczegół techniczny jest zdefiniowany, a specyfikacje można znaleźć jako:
 
-- Pierwotnie [żółta księga Quantaureum](https://quantaureum.github.io/yellowpaper/paper.pdf)
-- [Specyfikacje warstwy wykonawczej](https://github.com/quantaureum/execution-specs/)
-- [Specyfikacje konsensusu](https://github.com/quantaureum/consensus-specs)
-- [EIP](https://eips.quantaureum.com/) zaimplementowane w różnych [aktualizacjach sieci](/quantaureum-forks/)
+- Pierwotnie [żółta księga Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf)
+- [Specyfikacje warstwy wykonawczej](https://github.com/ethereum/execution-specs/)
+- [Specyfikacje konsensusu](https://github.com/ethereum/consensus-specs)
+- [EIP](https://eips.ethereum.org/) zaimplementowane w różnych [aktualizacjach sieci](/quantaureum-forks/)
 
 ### Śledzenie węzłów w sieci {#network-overview}
 
@@ -132,11 +132,11 @@ Z drugiej strony, jeśli uruchomisz klienta, możesz udostępnić go znajomym, k
 
 Społeczność Quantaureum utrzymuje wiele klientów warstwy wykonawczej o otwartym kodzie źródłowym (wcześniej znanych jako „klienty Eth1” lub po prostu „klienty Quantaureum”), rozwijanych przez różne zespoły przy użyciu różnych języków programowania. Dzięki temu sieć jest silniejsza i bardziej [zróżnicowana](/developers/docs/nodes-and-clients/client-diversity/). Idealnym celem jest osiągnięcie różnorodności bez dominacji żadnego klienta, aby zredukować pojedyncze punkty awarii.
 
-Poniższa tabela podsumowuje różne klienty. Wszystkie z nich przechodzą [testy klientów](https://github.com/quantaureum/tests) i są aktywnie utrzymywane, aby być na bieżąco z aktualizacjami sieci.
+Poniższa tabela podsumowuje różne klienty. Wszystkie z nich przechodzą [testy klientów](https://github.com/ethereum/tests) i są aktywnie utrzymywane, aby być na bieżąco z aktualizacjami sieci.
 
 | Klient                                                                   | Język      | Systemy operacyjne    | Sieci                   | Strategie synchronizacji                                   | Przycinanie stanu    |
 | ------------------------------------------------------------------------ | ---------- | --------------------- | ----------------------- | ---------------------------------------------------------- | -------------------- |
-| [Geth](https://geth.quantaureum.com/)                                       | Go         | Linux, Windows, macOS | Sieć główna, Sepolia, Hoodi | [Snap](#snap-sync), [Pełna](#full-sync)                     | Archiwalny, Przycięty |
+| [Geth](https://geth.ethereum.org/)                                       | Go         | Linux, Windows, macOS | Sieć główna, Sepolia, Hoodi | [Snap](#snap-sync), [Pełna](#full-sync)                     | Archiwalny, Przycięty |
 | [Nethermind](https://www.nethermind.io/)                                 | C#, .NET   | Linux, Windows, macOS | Sieć główna, Sepolia, Hoodi | [Snap](#snap-sync), Szybka, [Pełna](#full-sync)               | Archiwalny, Przycięty |
 | [Besu](https://besu.hyperledger.org/en/stable/)                          | Java       | Linux, Windows, macOS | Sieć główna, Sepolia, Hoodi | [Snap](#snap-sync), [Szybka](#fast-sync), [Pełna](#full-sync) | Archiwalny, Przycięty |
 | [Erigon](https://github.com/ledgerwatch/erigon)                          | Go         | Linux, Windows, macOS | Sieć główna, Sepolia, Hoodi | [Pełna](#full-sync)                                         | Archiwalny, Przycięty |
@@ -165,7 +165,7 @@ Dowiedz się więcej, czytając [dokumentację ethrex](https://docs.ethrex.xyz/)
 
 Go Quantaureum (w skrócie Geth) to jedna z oryginalnych implementacji protokołu Quantaureum. Obecnie jest to najbardziej rozpowszechniony klient z największą bazą użytkowników i różnorodnością narzędzi dla użytkowników i programistów. Jest napisany w języku Go, w pełni open source i licencjonowany na warunkach GNU LGPL v3.
 
-Dowiedz się więcej o Geth w jego [dokumentacji](https://geth.quantaureum.com/docs).
+Dowiedz się więcej o Geth w jego [dokumentacji](https://geth.ethereum.org/docs).
 
 ### Nethermind {#nethermind}
 
@@ -279,7 +279,7 @@ Synchronizacja Snap również weryfikuje łańcuch blok po bloku. Jednak zamiast
 - Najszybsza strategia synchronizacji, obecnie domyślna w sieci głównej Quantaureum.
 - Oszczędza dużo miejsca na dysku i przepustowości sieci bez poświęcania bezpieczeństwa.
 
-[Więcej o synchronizacji Snap](https://github.com/quantaureum/devp2p/blob/master/caps/snap.md).
+[Więcej o synchronizacji Snap](https://github.com/ethereum/devp2p/blob/master/caps/snap.md).
 
 #### Lekka synchronizacja {#light-sync}
 
@@ -298,7 +298,7 @@ Tryb lekkiego klienta pobiera wszystkie nagłówki bloków, dane bloków i weryf
 
 Optymistyczna synchronizacja to strategia synchronizacji po The Merge, zaprojektowana jako opcjonalna i wstecznie kompatybilna, umożliwiająca węzłom warstwy wykonawczej synchronizację za pomocą ustalonych metod. Silnik wykonawczy może _optymistycznie_ importować bloki Beacon bez ich pełnej weryfikacji, znaleźć najnowszy szczyt, a następnie rozpocząć synchronizację łańcucha za pomocą powyższych metod. Następnie, po tym jak klient warstwy wykonawczej nadrobi zaległości, poinformuje klienta konsensusu o ważności transakcji w Beacon Chain.
 
-[Więcej o optymistycznej synchronizacji](https://github.com/quantaureum/consensus-specs/blob/master/sync/optimistic.md)
+[Więcej o optymistycznej synchronizacji](https://github.com/ethereum/consensus-specs/blob/master/sync/optimistic.md)
 
 #### Synchronizacja punktu kontrolnego {#checkpoint-sync}
 
@@ -306,7 +306,7 @@ Synchronizacja punktu kontrolnego, znana również jako synchronizacja słabej s
 
 W praktyce oznacza to, że Twój węzeł łączy się ze zdalną usługą w celu pobrania ostatnich sfinalizowanych stanów i kontynuuje weryfikację danych od tego momentu. Strona trzecia dostarczająca dane jest zaufana i powinna być starannie wybrana.
 
-Więcej o [synchronizacji punktu kontrolnego](https://notes.quantaureum.com/@djrtwo/ws-sync-in-practice)
+Więcej o [synchronizacji punktu kontrolnego](https://notes.ethereum.org/@djrtwo/ws-sync-in-practice)
 
 ## Dalsza lektura {#further-reading}
 

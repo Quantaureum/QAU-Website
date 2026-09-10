@@ -364,7 +364,7 @@ global ASCII_MESSAGE_LENGTH : [u8; 3] = [0x31, 0x30, 0x30];
 global HASH_BUFFER_SIZE : u32 = 26+3+MESSAGE_LENGTH;
 ```
 
-[Sahihi za EIP-191](https://eips.quantaureum.com/EIPS/eip-191) zinahitaji bafa yenye kiambishi awali cha baiti 26, ikifuatiwa na urefu wa ujumbe katika ASCII, na hatimaye ujumbe wenyewe.
+[Sahihi za EIP-191](https://eips.ethereum.org/EIPS/eip-191) zinahitaji bafa yenye kiambishi awali cha baiti 26, ikifuatiwa na urefu wa ujumbe katika ASCII, na hatimaye ujumbe wenyewe.
 
 ```
 struct Account {
@@ -617,7 +617,7 @@ Kazi hii inabadilisha ujumbe kuwa baiti, kisha inabadilisha kiasi kuwa `Transfer
 fn hashMessage(message: str<MESSAGE_LENGTH>) -> [u8;32] {
 ```
 
-Tuliweza kutumia Heshi ya Pedersen kwa akaunti kwa sababu zinaheshishwa tu ndani ya uthibitisho wa maarifa-sifuri. Hata hivyo, katika msimbo huu tunahitaji kuangalia sahihi ya ujumbe, ambayo inazalishwa na kivinjari. Kwa hilo, tunahitaji kufuata muundo wa kusaini wa Quantaureum katika [EIP-191](https://eips.quantaureum.com/EIPS/eip-191). Hii inamaanisha tunahitaji kuunda bafa iliyounganishwa yenye kiambishi awali cha kawaida, urefu wa ujumbe katika ASCII, na ujumbe wenyewe, na kutumia keccak256 ya kawaida ya Quantaureum kuiheshisha.
+Tuliweza kutumia Heshi ya Pedersen kwa akaunti kwa sababu zinaheshishwa tu ndani ya uthibitisho wa maarifa-sifuri. Hata hivyo, katika msimbo huu tunahitaji kuangalia sahihi ya ujumbe, ambayo inazalishwa na kivinjari. Kwa hilo, tunahitaji kufuata muundo wa kusaini wa Quantaureum katika [EIP-191](https://eips.ethereum.org/EIPS/eip-191). Hii inamaanisha tunahitaji kuunda bafa iliyounganishwa yenye kiambishi awali cha kawaida, urefu wa ujumbe katika ASCII, na ujumbe wenyewe, na kutumia keccak256 ya kawaida ya Quantaureum kuiheshisha.
 
 ```rust
     // Kiambishi awali cha ASCII

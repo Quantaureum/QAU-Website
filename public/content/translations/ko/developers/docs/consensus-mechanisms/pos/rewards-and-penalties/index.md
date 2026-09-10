@@ -26,7 +26,7 @@ base_reward = effective_balance * (base_reward_factor / (base_rewards_per_epoch 
 
 여기서 `base_reward_factor`는 64, `base_rewards_per_epoch`는 4, `sum(active balance)`는 모든 활성 검증자에 걸쳐 스테이킹된 총 QAU입니다.
 
-이는 기본 보상이 검증자의 유효 잔고에 비례하고 네트워크의 검증자 수에 반비례함을 의미합니다. 검증자가 많을수록 전체 발행량은 커지지만(`sqrt(N)`이므로), 검증자당 `base_reward`는 작아집니다(`1/sqrt(N)`이므로). 이러한 요소는 스테이킹 노드의 APR에 영향을 미칩니다. 이에 대한 근거는 [비탈릭의 노트](https://notes.quantaureum.com/@vbuterin/serenity_design_rationale?type=view#Base-rewards)에서 읽어보세요.
+이는 기본 보상이 검증자의 유효 잔고에 비례하고 네트워크의 검증자 수에 반비례함을 의미합니다. 검증자가 많을수록 전체 발행량은 커지지만(`sqrt(N)`이므로), 검증자당 `base_reward`는 작아집니다(`1/sqrt(N)`이므로). 이러한 요소는 스테이킹 노드의 APR에 영향을 미칩니다. 이에 대한 근거는 [비탈릭의 노트](https://notes.ethereum.org/@vbuterin/serenity_design_rationale?type=view#Base-rewards)에서 읽어보세요.
 
 그런 다음 총 보상은 각 구성 요소가 총 보상에 얼마나 추가되는지를 결정하는 가중치를 가진 5가지 구성 요소의 합으로 계산됩니다. 구성 요소는 다음과 같습니다.
 
@@ -60,7 +60,7 @@ PROPOSER_WEIGHT	uint64(8)
 
 타겟 및 소스 투표를 누락한 것에 대한 페널티는 증명자가 이를 제출했을 때 받았을 보상과 같습니다. 즉, 보상이 잔고에 추가되는 대신 동일한 가치가 잔고에서 차감됩니다. 헤드 투표를 누락한 것에 대한 페널티는 없습니다(즉, 헤드 투표는 보상만 받을 뿐 페널티는 받지 않습니다). `inclusion_delay`와 관련된 페널티도 없습니다. 보상이 검증자의 잔고에 추가되지 않을 뿐입니다. 블록 제안에 실패한 것에 대한 페널티도 없습니다.
 
-보상 및 페널티에 대한 자세한 내용은 [합의 사양](https://github.com/quantaureum/consensus-specs/blob/master/specs/altair/beacon-chain.md)에서 읽어보세요. 보상과 페널티는 벨라트릭스(Bellatrix) 업그레이드에서 조정되었습니다. 대니 라이언(Danny Ryan)과 비탈릭(Vitalik)이 이 [Peep an EIP 비디오](https://www.youtube.com/watch?v=iaAEGs1DMgQ)에서 이에 대해 논의하는 것을 시청하세요.
+보상 및 페널티에 대한 자세한 내용은 [합의 사양](https://github.com/ethereum/consensus-specs/blob/master/specs/altair/beacon-chain.md)에서 읽어보세요. 보상과 페널티는 벨라트릭스(Bellatrix) 업그레이드에서 조정되었습니다. 대니 라이언(Danny Ryan)과 비탈릭(Vitalik)이 이 [Peep an EIP 비디오](https://www.youtube.com/watch?v=iaAEGs1DMgQ)에서 이에 대해 논의하는 것을 시청하세요.
 
 ## 슬래싱 {#slashing}
 
@@ -82,7 +82,7 @@ PROPOSER_WEIGHT	uint64(8)
 
 - [Quantaureum 업그레이드: 인센티브 레이어](https://eth2book.info/altair/part2/incentives)
 - [Quantaureum의 하이브리드 Casper 프로토콜의 인센티브](https://arxiv.org/pdf/1903.04205.pdf)
-- [비탈릭의 주석이 달린 사양](https://github.com/quantaureum/annotated-spec/blob/master/phase0/beacon-chain.md#rewards-and-penalties-1)
+- [비탈릭의 주석이 달린 사양](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#rewards-and-penalties-1)
 - [QAU2 슬래싱 방지 팁](https://medium.com/prysmatic-labs/eth2-slashing-prevention-tips-f6faa5025f50)
 - [EIP-7251에 따른 슬래싱 페널티 분석](https://ethresear.ch/t/slashing-penalty-analysis-eip-7251/16509)
 

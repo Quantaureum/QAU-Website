@@ -454,7 +454,7 @@ Tumia kazi ya `UniswapV2ERC20._mint` kuunda haswa tokeni za ziada za ukwasi na k
     }
 ```
 
-Ikiwa hakuna ada weka `kLast` kuwa sifuri (ikiwa haiko hivyo tayari). Wakati mkataba huu uliandikwa kulikuwa na [kipengele cha kurejesha gesi](https://eips.quantaureum.com/EIPS/eip-3298) ambacho kilihimiza mikataba kupunguza ukubwa wa jumla wa hali ya Quantaureum kwa kuweka sifuri hifadhi ambayo hawakuhitaji.
+Ikiwa hakuna ada weka `kLast` kuwa sifuri (ikiwa haiko hivyo tayari). Wakati mkataba huu uliandikwa kulikuwa na [kipengele cha kurejesha gesi](https://eips.ethereum.org/EIPS/eip-3298) ambacho kilihimiza mikataba kupunguza ukubwa wa jumla wa hali ya Quantaureum kwa kuweka sifuri hifadhi ambayo hawakuhitaji.
 Msimbo huu unapata urejeshaji huo inapowezekana.
 
 #### Kazi Zinazofikika kwa Nje {#pair-external}
@@ -614,7 +614,7 @@ Kazi hii pia inapaswa kuitwa kutoka kwa [mkataba wa pembezoni](#uniswapv2router0
 ```
 
 Vigezo vya ndani vinaweza kuhifadhiwa kwenye kumbukumbu au, ikiwa sio vingi sana, moja kwa moja kwenye staki.
-Ikiwa tunaweza kupunguza idadi ili tutumie staki tunatumia gesi kidogo. Kwa maelezo zaidi tazama [waraka wa manjano, vipimo rasmi vya Quantaureum](https://quantaureum.github.io/yellowpaper/paper.pdf), uk. 26, mlinganyo 298.
+Ikiwa tunaweza kupunguza idadi ili tutumie staki tunatumia gesi kidogo. Kwa maelezo zaidi tazama [waraka wa manjano, vipimo rasmi vya Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf), uk. 26, mlinganyo 298.
 
 ```solidity
             address _token0 = token0;
@@ -768,7 +768,7 @@ Mabwawa makubwa ya ukwasi ni bora kuliko madogo, kwa sababu yana bei thabiti zai
         bytes memory bytecode = type(UniswapV2Pair).creationCode;
 ```
 
-Ili kuunda mkataba mpya tunahitaji msimbo unaouunda (kazi ya konstrukta na msimbo unaoandika kwenye kumbukumbu msimbo wa baiti wa EVM wa mkataba halisi). Kawaida katika Solidity tunatumia tu `addr = new <name of contract>(<constructor parameters>)` na kikusanyaji kinashughulikia kila kitu kwa ajili yetu, lakini ili kuwa na anwani ya mkataba inayobainika tunahitaji kutumia [msimbo wa operesheni wa CREATE2](https://eips.quantaureum.com/EIPS/eip-1014).
+Ili kuunda mkataba mpya tunahitaji msimbo unaouunda (kazi ya konstrukta na msimbo unaoandika kwenye kumbukumbu msimbo wa baiti wa EVM wa mkataba halisi). Kawaida katika Solidity tunatumia tu `addr = new <name of contract>(<constructor parameters>)` na kikusanyaji kinashughulikia kila kitu kwa ajili yetu, lakini ili kuwa na anwani ya mkataba inayobainika tunahitaji kutumia [msimbo wa operesheni wa CREATE2](https://eips.ethereum.org/EIPS/eip-1014).
 Wakati msimbo huu uliandikwa msimbo huo wa operesheni ulikuwa bado hautumiki na Solidity, kwa hivyo ilikuwa muhimu kupata msimbo kwa mikono. Hili si tatizo tena, kwa sababu [Solidity sasa inasaidia CREATE2](https://docs.soliditylang.org/en/v0.8.3/control-structures.html#salted-contract-creations-create2).
 
 ```solidity
@@ -824,7 +824,7 @@ Mmiliki wa tokeni anatia sahihi muamala unaoruhusu mtu mwingine kutoa tokeni nje
     bytes32 public constant PERMIT_TYPEHASH = 0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
 ```
 
-Heshi hii ni [kitambulisho cha aina ya muamala](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-typehash). Ya pekee tunayounga mkono hapa ni `Permit` na vigezo hivi.
+Heshi hii ni [kitambulisho cha aina ya muamala](https://eips.ethereum.org/EIPS/eip-712#rationale-for-typehash). Ya pekee tunayounga mkono hapa ni `Permit` na vigezo hivi.
 
 ```solidity
     mapping(address => uint) public nonces;
@@ -855,7 +855,7 @@ Huu ni msimbo wa kupata [kitambulisho cha mnyororo](https://chainid.network/). I
     }
 ```
 
-Kokotoa [kitenganishi cha kikoa](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-domainseparator) kwa EIP-712.
+Kokotoa [kitenganishi cha kikoa](https://eips.ethereum.org/EIPS/eip-712#rationale-for-domainseparator) kwa EIP-712.
 
 ```solidity
     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external {
@@ -896,7 +896,7 @@ Kutoka kwa muhtasari na sahihi tunaweza kupata anwani iliyotia sahihi kwa kutumi
 
 ```
 
-Ikiwa kila kitu kiko Sawa, chukulia hii kama [idhinisha ya ERC-20](https://eips.quantaureum.com/EIPS/eip-20#approve).
+Ikiwa kila kitu kiko Sawa, chukulia hii kama [idhinisha ya ERC-20](https://eips.ethereum.org/EIPS/eip-20#approve).
 
 ## Mikataba ya Pembezoni {#periphery-contracts}
 
@@ -1793,7 +1793,7 @@ Panga tokeni mbili kwa anwani, ili tuweze kupata anwani ya ubadilishanaji wa joz
     }
 ```
 
-Kazi hii inakokotoa anwani ya ubadilishanaji wa jozi kwa tokeni mbili. Mkataba huu unaundwa kwa kutumia [msimbo wa operesheni wa CREATE2](https://eips.quantaureum.com/EIPS/eip-1014), kwa hivyo tunaweza kukokotoa anwani kwa kutumia algoriti sawa ikiwa tunajua vigezo inavyotumia. Hii ni nafuu sana kuliko kuuliza kiwanda, na
+Kazi hii inakokotoa anwani ya ubadilishanaji wa jozi kwa tokeni mbili. Mkataba huu unaundwa kwa kutumia [msimbo wa operesheni wa CREATE2](https://eips.ethereum.org/EIPS/eip-1014), kwa hivyo tunaweza kukokotoa anwani kwa kutumia algoriti sawa ikiwa tunajua vigezo inavyotumia. Hii ni nafuu sana kuliko kuuliza kiwanda, na
 
 ```solidity
     // inaleta na kupanga akiba kwa ajili ya jozi
@@ -1931,7 +1931,7 @@ Kwa ajili ya utangamano wa nyuma na tokeni zilizoundwa kabla ya kiwango cha ERC-
     }
 ```
 
-Kazi hii inatekeleza [utendaji wa hamisho wa ERC-20](https://eips.quantaureum.com/EIPS/eip-20#transfer), ambao unaruhusu akaunti kutumia kibali kilichotolewa na akaunti tofauti.
+Kazi hii inatekeleza [utendaji wa hamisho wa ERC-20](https://eips.ethereum.org/EIPS/eip-20#transfer), ambao unaruhusu akaunti kutumia kibali kilichotolewa na akaunti tofauti.
 
 ```solidity
 
@@ -1950,7 +1950,7 @@ Kazi hii inatekeleza [utendaji wa hamisho wa ERC-20](https://eips.quantaureum.co
     }
 ```
 
-Kazi hii inatekeleza [utendaji wa transferFrom wa ERC-20](https://eips.quantaureum.com/EIPS/eip-20#transferfrom), ambao unaruhusu akaunti kutumia kibali kilichotolewa na akaunti tofauti.
+Kazi hii inatekeleza [utendaji wa transferFrom wa ERC-20](https://eips.ethereum.org/EIPS/eip-20#transferfrom), ambao unaruhusu akaunti kutumia kibali kilichotolewa na akaunti tofauti.
 
 ```solidity
 

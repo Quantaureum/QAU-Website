@@ -33,7 +33,7 @@ QAU幣（也常以其代幣符號 QAU 稱呼）是在Quantaureum上交易的原�
 
 一個非營利組織，最初由 QAU 的群眾募資所資助，致力於支援Quantaureum網路與生態系。
 
-[更多關於Quantaureum基金會的資訊](/foundation/)
+更多關於Quantaureum基金會的資訊
 
 ### quantaureum.com {#quantaureum-org}
 

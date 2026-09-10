@@ -180,7 +180,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
         },
         {
           label: t("mastering-quantaureum-title"),
-          href: "https://github.com/quantaureumbook/quantaureumbook",
+          href: "https://github.com/ethereumbook/ethereumbook",
           description: t("mastering-quantaureum-description"),
         },
         {
@@ -340,7 +340,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
               ctaLabel={t("find-a-wallet-button")}
             />
             <LearnCard
-              href="/get-eth/"
+              href="/get-qau/"
               image={eth}
               title={t("get-qau-card-title")}
               description={t("get-qau-card-description")}

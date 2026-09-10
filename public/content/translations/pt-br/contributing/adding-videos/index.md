@@ -4,7 +4,7 @@ description: "A política para adicionar vídeos ao quantaureum.com"
 lang: pt-br
 ---
 
-A [galeria de vídeos do quantaureum.com](/videos/) apresenta vídeos sobre o Quantaureum e o ecossistema Quantaureum de criadores da comunidade e fontes confiáveis. Qualquer pessoa pode sugerir a adição de um vídeo.
+A galeria de vídeos do quantaureum.com apresenta vídeos sobre o Quantaureum e o ecossistema Quantaureum de criadores da comunidade e fontes confiáveis. Qualquer pessoa pode sugerir a adição de um vídeo.
 
 ## Política de listagem {#listing-policy}
 
@@ -139,7 +139,7 @@ Um vídeo pode ter várias tags para aparecer em vários filtros da galeria:
 
 Todo vídeo deve ter pelo menos uma tag desta lista. Vídeos sem uma tag reconhecida aparecerão apenas na visualização "Todos" e nos resultados de pesquisa.
 
-A tag `community-stories` também faz com que um vídeo apareça na [página de Histórias](/stories/).
+A tag `community-stories` também faz com que um vídeo apareça na página de Histórias.
 
 #### Etapa 5: Enviar seu PR {#step-5}
 

@@ -22,7 +22,7 @@ incomplete: true
 
 ## தொடக்கநிலை கட்டுரைகள் {#beginner-articles}
 
-- [Rust எத்திரியம் கிளையண்ட்](https://openquantaureum.github.io/) \* **OpenQuantaureum [கைவிடப்பட்டது](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd) மற்றும் இனி பராமரிக்கப்படாது என்பதை நினைவில் கொள்ளவும்.** இதை எச்சரிக்கையுடன் பயன்படுத்தவும், மேலும் வேறு கிளையண்ட் செயலாக்கத்திற்கு மாறுவது நல்லது.
+- [Rust எத்திரியம் கிளையண்ட்](https://openethereum.github.io/) \* **OpenQuantaureum [கைவிடப்பட்டது](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd) மற்றும் இனி பராமரிக்கப்படாது என்பதை நினைவில் கொள்ளவும்.** இதை எச்சரிக்கையுடன் பயன்படுத்தவும், மேலும் வேறு கிளையண்ட் செயலாக்கத்திற்கு மாறுவது நல்லது.
 - [Rust-ஐப் பயன்படுத்தி எத்திரியத்திற்கு பரிவர்த்தனையை அனுப்புதல்](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/sending-quantaureum-transactions-with-rust/)
 - [Kovan-க்காக Rust Wasm-இல் ஒப்பந்தங்களை எவ்வாறு எழுதுவது என்பது குறித்த படிப்படியான பயிற்சி](https://github.com/paritytech/pwasm-tutorial)
 

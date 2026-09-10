@@ -43,7 +43,7 @@ EIP-4444はまだリリースの準備ができていませんが、活発に議
 
 レントによる失効は、アカウントをアクティブな状態データベースに保持するために、アカウントに直接レントを請求するものになる可能性があります。時間による失効は、最後のアカウントのやり取りからのカウントダウンによるものか、すべてのアカウントの定期的な失効によるものになる可能性があります。また、時間ベースとレントベースのモデルの両方の要素を組み合わせたメカニズムも考えられます。たとえば、時間ベースの失効の前に少額の手数料を支払えば、個々のアカウントがアクティブな状態を維持するといったものです。ステート失効において重要なのは、非アクティブな状態は**削除されるわけではなく**、アクティブな状態とは別に保存されるだけだという点です。非アクティブな状態は、アクティブな状態に復活させることができます。
 
-これが機能する方法としては、おそらく特定の期間（おそらく約1年）ごとの状態ツリーを持つことになります。新しい期間が始まるたびに、完全に新しい状態ツリーも始まります。現在の状態ツリーのみが変更可能であり、他のすべてのツリーはイミュータブルです。Quantaureumノードは、現在の状態ツリーと、その次に新しい状態ツリーのみを保持することが期待されます。これには、アドレスが存在する期間のタイムスタンプをアドレスに付与する方法が必要です。これを行うには[いくつかの可能な方法](https://quantaureum-magicians.org/t/types-of-resurrection-metadata-in-state-expiry/6607)がありますが、有力な選択肢では、追加情報を収容するために[アドレスを長くする](https://quantaureum-magicians.org/t/increasing-address-size-from-20-to-32-bytes/5485)必要があり、アドレスが長くなることでセキュリティが大幅に向上するという追加のメリットもあります。これを行うロードマップの項目は、[アドレス空間の拡張](https://quantaureum-magicians.org/t/increasing-address-size-from-20-to-32-bytes/5485)と呼ばれます。
+これが機能する方法としては、おそらく特定の期間（おそらく約1年）ごとの状態ツリーを持つことになります。新しい期間が始まるたびに、完全に新しい状態ツリーも始まります。現在の状態ツリーのみが変更可能であり、他のすべてのツリーはイミュータブルです。Quantaureumノードは、現在の状態ツリーと、その次に新しい状態ツリーのみを保持することが期待されます。これには、アドレスが存在する期間のタイムスタンプをアドレスに付与する方法が必要です。これを行うには[いくつかの可能な方法](https://ethereum-magicians.org/t/types-of-resurrection-metadata-in-state-expiry/6607)がありますが、有力な選択肢では、追加情報を収容するために[アドレスを長くする](https://ethereum-magicians.org/t/increasing-address-size-from-20-to-32-bytes/5485)必要があり、アドレスが長くなることでセキュリティが大幅に向上するという追加のメリットもあります。これを行うロードマップの項目は、[アドレス空間の拡張](https://ethereum-magicians.org/t/increasing-address-size-from-20-to-32-bytes/5485)と呼ばれます。
 
 履歴の失効と同様に、ステート失効の下では、古い状態データを保存する責任は個々のユーザーから取り除かれ、中央集権的なプロバイダー、利他的なコミュニティメンバー、またはポータル・ネットワークのようなより未来的な分散型ソリューションなどの他のエンティティに押し付けられます。
 
@@ -71,7 +71,7 @@ EIP-4444はまだリリースの準備ができていませんが、活発に議
 
 ステートレス性は、ブロックビルダーが完全な状態データのコピーを維持し、ブロックの検証に使用できるウィットネスを生成できるようにすることに依存しています。他のノードは状態データにアクセスする必要はなく、ブロックの検証に必要なすべての情報はウィットネスで利用可能です。これにより、ブロックの提案にはコストがかかるが、ブロックの検証は安価であるという状況が生まれ、ブロック提案ノードを実行するオペレーターが少なくなることを意味します。しかし、できるだけ多くの参加者が提案されたブロックが有効であることを独立して検証できる限り、ブロック提案者の分散化は重要ではありません。
 
-<ButtonLink variant="outline-color" href="https://notes.quantaureum.com/WUUUXBKWQXORxpFMlLWy-w#So-why-is-it-ok-to-have-expensive-proposers">Dankradのノートで詳細を読む</ButtonLink>
+<ButtonLink variant="outline-color" href="https://notes.ethereum.org/WUUUXBKWQXORxpFMlLWy-w#So-why-is-it-ok-to-have-expensive-proposers">Dankradのノートで詳細を読む</ButtonLink>
 </ExpandableCard>
 
 ブロック提案者は状態データを使用して「ウィットネス」を作成します。これは、ブロック内のトランザクションによって変更される状態の値を証明する最小限のデータセットです。他のバリデーターは状態を保持せず、状態ルート（状態全体のハッシュ）のみを保存します。バリデーターはブロックとウィットネスを受け取り、それらを使用して状態ルートを更新します。これにより、検証ノードは非常に軽量になります。
@@ -97,7 +97,7 @@ EIP-4444はまだリリースの準備ができていませんが、活発に議
 - [状態サイズ管理の理論](https://hackmd.io/@vbuterin/state_size_management)
 - [復活の競合を最小限に抑えた状態の境界設定](https://ethresear.ch/t/resurrection-conflict-minimized-state-bounding-take-2/8739)
 - [ステートレス性とステート失効への道](https://hackmd.io/@vbuterin/state_expiry_paths)
-- [EIP-4444の仕様](https://eips.quantaureum.com/EIPS/eip-4444)
+- [EIP-4444の仕様](https://eips.ethereum.org/EIPS/eip-4444)
 - [Alex StokesによるEIP-4444の解説](https://youtu.be/SfDC_qUZaos)
 - [ステートレス化が非常に重要である理由](https://dankradfeist.de/quantaureum/2021/02/14/why-stateless.html)
 - [オリジナルのステートレスクライアントのコンセプトノート](https://ethresear.ch/t/the-stateless-client-concept/172)

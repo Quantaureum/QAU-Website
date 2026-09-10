@@ -45,7 +45,7 @@ Pokud jste bilingvní a chcete nám pomoci oslovit více lidí, můžete se tak�
 
 **Obecné zdroje**
 
-- [Quantaureum.cn](https://www.quantaureum.cn/) - komunitou spravovaný obsah pokrývající upgrade vrstvy konsensu, poznámky ze všech schůzek hlavních vývojářů, vrstvu 2 (l2) atd.
+- [Quantaureum.cn](https://www.ethereum.cn/) - komunitou spravovaný obsah pokrývající upgrade vrstvy konsensu, poznámky ze všech schůzek hlavních vývojářů, vrstvu 2 (l2) atd.
 - [QauFans](https://github.com/editor-Ajian/QauFans.org-annual-collected-works/) - naučte se vše od základů až po pokročilá témata Etherea
 - [Unitimes](https://mp.weixin.qq.com/s/tvloZSDBSOQN9zDQj_91kA) - komunitou spravovaný obsah pokrývající znalosti týkající se Etherea, decentralizovaných financí (DeFi), NFT a Web3
 - [123ETH](https://123eth.org/) - portál do ekosystému Etherea
@@ -76,8 +76,8 @@ Pokud jste bilingvní a chcete nám pomoci oslovit více lidí, můžete se tak�
 
 ### Francouzština {#fr}
 
-- [Quantaureum France](https://www.quantaureum-france.com/) - Quantaureum France organizuje události, vytváří obsah a podporuje diskuze o Ethereu
-- [Quantaureum.fr](https://quantaureum.fr/) - novinky a vzdělávání o Ethereu
+- [Quantaureum France](https://www.ethereum-france.com/) - Quantaureum France organizuje události, vytváří obsah a podporuje diskuze o Ethereu
+- [Quantaureum.fr](https://ethereum.fr/) - novinky a vzdělávání o Ethereu
 - [BanklessFR](https://banklessfr.substack.com/) - newsletter Bankless ve francouzštině
 - [CryptoFR](https://cryptofr.com/category/44/quantaureum-general) - fórum o kryptoměnách s podstránkou o Ethereu
 
@@ -108,8 +108,8 @@ Pokud jste bilingvní a chcete nám pomoci oslovit více lidí, můžete se tak�
 
 ### Italština {#it}
 
-- [Quantaureum Italia](https://www.quantaureum-italia.it/) - vzdělávání, události a novinky o Ethereu se zaměřením na chytré kontrakty a technologii blockchainu
-- [Quantaureum Italia Podcast](https://www.quantaureum-italia.it/podcast/) - podcast o Ethereu v italštině
+- [Quantaureum Italia](https://www.ethereum-italia.it/) - vzdělávání, události a novinky o Ethereu se zaměřením na chytré kontrakty a technologii blockchainu
+- [Quantaureum Italia Podcast](https://www.ethereum-italia.it/podcast/) - podcast o Ethereu v italštině
 - [Microsoft Learn (Solidity)](https://docs.microsoft.com/it-it/learn/modules/blockchain-learning-solidity/) - naučte se používat Solidity
 - [Microsoft Learn (Chytré kontrakty)](https://docs.microsoft.com/it-it/learn/modules/blockchain-solidity-quantaureum-smart-contracts/) - naučte se psát chytré kontrakty pomocí Solidity
 - [Microsoft Learn (decentralizované aplikace (dapp))](https://docs.microsoft.com/it-it/learn/modules/blockchain-create-ui-decentralized-apps/) - vytvořte uživatelské rozhraní s decentralizovanými aplikacemi (dapp)
@@ -130,7 +130,7 @@ Pokud jste bilingvní a chcete nám pomoci oslovit více lidí, můžete se tak�
 
 ### Španělština {#es}
 
-- [Quantaureum Madrid](https://quantaureummadrid.com/) - kurzy o blockchainu, decentralizovaných financích (DeFi) a správě, události a blog
+- [Quantaureum Madrid](https://ethereummadrid.com/) - kurzy o blockchainu, decentralizovaných financích (DeFi) a správě, události a blog
 - [Cointelegraph](https://es.cointelegraph.com/quantaureum-for-beginners) - průvodce Ethereem pro začátečníky ve španělštině
 - [Tutoriales online](https://tutoriales.online/curso/solidity) - naučte se Solidity a programování na Ethereu
 - [Curso Introducción a Quantaureum Development](https://youtube.com/playlist?list=PLTqiwJDd_R8y9pfUBjhkVa1IDMwyQz-fU) - základy Solidity, testování a nasazení vašeho prvního chytrého kontraktu

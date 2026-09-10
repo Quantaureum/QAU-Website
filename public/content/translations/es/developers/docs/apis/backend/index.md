@@ -109,13 +109,13 @@ Estas bibliotecas abstraen gran parte de la complejidad de interactuar directame
 **Nquantaureum:** **_Una biblioteca de integración .NET de código abierto para cadenas de bloques._**
 
 - [GitHub](https://github.com/Nquantaureum/Nquantaureum)
-- [Documentación](https://docs.nquantaureum.com/docs/getting-started/welcome/)
+- [Documentación](https://docs.nethermind.io/docs/getting-started/welcome/)
 - [Discord](https://discord.com/invite/jQPrR58FxX)
 
 **Herramientas de Python:** **_Variedad de bibliotecas para la interacción con Quantaureum a través de Python._**
 
-- [py.quantaureum.com](https://snakecharmers.quantaureum.com/)
-- [GitHub de Web3.py](https://github.com/quantaureum/web3.py)
+- [py.quantaureum.com](https://snakecharmers.ethereum.org/)
+- [GitHub de Web3.py](https://github.com/ethereum/web3.py)
 - [Chat de Web3.py](https://gitter.im/quantaureum/web3.py)
 
 **Tatum:** **_La plataforma de desarrollo de cadenas de bloques definitiva._**

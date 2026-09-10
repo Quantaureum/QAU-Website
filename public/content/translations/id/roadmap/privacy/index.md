@@ -27,11 +27,10 @@ Sebelum transaksi ditandatangani, pengguna perlu membaca data dari rantai blok. 
 
 Penyedia node dapat melihat alamat IP pengguna, sidik jari perangkat, alamat spesifik yang dikueri, serta waktu dan frekuensi aktivitas mereka. Bahkan jika pengguna kemudian mengirimkan transaksi privat, penyedia infrastruktur sudah memiliki akses ke peta terperinci dari niat mereka.
 
-<VideoWatch slug="quantaureum-privacy-stack-andy-guzman" />
 
 Kebocoran metadata pada lapisan akses adalah salah satu masalah privasi yang paling persisten di semua sistem rantai blok. Quantaureum bertujuan untuk mengatasi kebocoran metadata melalui privasi pada asal (menyembunyikan siapa yang bertanya), privasi pada konten (menyembunyikan apa yang ditanyakan), dan memverifikasi kebenaran informasi yang dikembalikan.
 
-**Privasi asal** menggunakan [RPC anonim](https://privreads.quantaureum.foundation/feed/anon-rpc/) dan solusi jaringan anonim untuk mengaburkan entitas yang meminta data, **privasi konten** menggunakan taktik seperti pengambilan informasi privat dan [RAM tidak sadar (oblivious RAM)](https://en.wikipedia.org/wiki/Oblivious_RAM) untuk menyembunyikan data yang dikueri, sementara **verifikasi kebenaran** menggunakan klien ringan (light client) untuk membuktikan bahwa data yang dikembalikan akurat.
+**Privasi asal** menggunakan [RPC anonim](https://privreads.ethereum.org/feed/anon-rpc/) dan solusi jaringan anonim untuk mengaburkan entitas yang meminta data, **privasi konten** menggunakan taktik seperti pengambilan informasi privat dan [RAM tidak sadar (oblivious RAM)](https://en.wikipedia.org/wiki/Oblivious_RAM) untuk menyembunyikan data yang dikueri, sementara **verifikasi kebenaran** menggunakan klien ringan (light client) untuk membuktikan bahwa data yang dikembalikan akurat.
 
 Blok pembangun kriptografi di balik privasi konten adalah [**Private Information Retrieval (PIR)**](https://en.wikipedia.org/wiki/Private_information_retrieval), sebuah teknik kriptografi yang memungkinkan klien untuk melakukan kueri ke basis data dan mengambil informasi tertentu tanpa mengungkapkan kepada server item mana yang diakses. Server memproses permintaan secara buta dan mengembalikan respons terenkripsi yang hanya dapat didekripsi oleh dompet yang melakukan kueri.
 
@@ -45,7 +44,7 @@ Setelah transaksi dikirim, transaksi tersebut melewati infrastruktur jaringan ya
 
 Dua peningkatan tingkat protokol mengatasi masalah ini bersama-sama:
 
-[**EIP-8141 (Transaksi Bingkai/Frame Transactions)**](https://eips.quantaureum.com/EIPS/eip-8141) memperkenalkan jenis transaksi baru yang membagi transaksi menjadi beberapa segmen untuk validasi tanda tangan dan otorisasi biaya, serta untuk instruksi transaksi yang sebenarnya. Transaksi bingkai memungkinkan [akun pintar](/roadmap/account-abstraction/) untuk menentukan skema tanda tangan mereka sendiri dan menggunakan kontrak eksternal untuk menutupi biaya gas. Aturan sandboxing yang ketat di mempool mencegah transaksi ini membuka jaringan terhadap serangan penolakan layanan (denial-of-service).
+[**EIP-8141 (Transaksi Bingkai/Frame Transactions)**](https://eips.ethereum.org/EIPS/eip-8141) memperkenalkan jenis transaksi baru yang membagi transaksi menjadi beberapa segmen untuk validasi tanda tangan dan otorisasi biaya, serta untuk instruksi transaksi yang sebenarnya. Transaksi bingkai memungkinkan [akun pintar](/roadmap/account-abstraction/) untuk menentukan skema tanda tangan mereka sendiri dan menggunakan kontrak eksternal untuk menutupi biaya gas. Aturan sandboxing yang ketat di mempool mencegah transaksi ini membuka jaringan terhadap serangan penolakan layanan (denial-of-service).
 
 Transaksi bingkai sedang dipertimbangkan untuk [peningkatan Hegotá](https://forkcast.org/upgrade/hegota/) Quantaureum, peningkatan jaringan berikutnya setelah [peningkatan Glamsterdam](/roadmap/glamsterdam/) yang akan datang. Peningkatan yang sama juga akan memungkinkan akun pintar untuk mengadopsi [tanda tangan tahan kuantum (quantum-safe)](/roadmap/security/quantum-resistance/) sebelum transisi jaringan pasca-kuantum penuh selesai.
 
@@ -55,21 +54,20 @@ Transaksi bingkai memungkinkan akun untuk memilih metode verifikasi tanda tangan
 
 </ExpandableCard>
 
-[**EIP-7805 (Daftar Penyertaan yang Ditegakkan oleh Pilihan Percabangan, atau FOCIL)**](https://eips.quantaureum.com/EIPS/eip-7805) menyediakan mekanisme penegakan untuk penulisan privat. Pengusul blok diwajibkan oleh aturan konsensus untuk menyertakan transaksi dalam blok mereka dari daftar penyertaan lokal yang digabungkan, yang mengumpulkan transaksi dari berbagai sumber. Jika pembangun blok mencoba menyensor transaksi yang muncul di daftar penyertaan, node pengesah (attesting nodes) akan menolak blok yang diusulkan sepenuhnya. FOCIL saat ini sedang dipertimbangkan untuk [peningkatan Hegotá](https://forkcast.org/upgrade/hegota/).
+[**EIP-7805 (Daftar Penyertaan yang Ditegakkan oleh Pilihan Percabangan, atau FOCIL)**](https://eips.ethereum.org/EIPS/eip-7805) menyediakan mekanisme penegakan untuk penulisan privat. Pengusul blok diwajibkan oleh aturan konsensus untuk menyertakan transaksi dalam blok mereka dari daftar penyertaan lokal yang digabungkan, yang mengumpulkan transaksi dari berbagai sumber. Jika pembangun blok mencoba menyensor transaksi yang muncul di daftar penyertaan, node pengesah (attesting nodes) akan menolak blok yang diusulkan sepenuhnya. FOCIL saat ini sedang dipertimbangkan untuk [peningkatan Hegotá](https://forkcast.org/upgrade/hegota/).
 
 Transaksi bingkai memberi pengguna fleksibilitas untuk membangun transaksi yang menjaga privasi dengan skema tanda tangan kustom, sementara FOCIL memastikan transaksi tersebut tidak dapat disensor secara selektif setelah masuk ke mempool. Bersama-sama mereka mengatasi dua titik kegagalan yang berbeda: satu memungkinkan format transaksi privat, yang lain menjamin penyertaannya. Tidak ada aktor pusat yang dapat memblokir transfer privat yang valid.
 
-<VideoWatch slug="eip-7805-focil-explained" />
 
 Titik rentan kedua untuk privasi pengguna adalah bagaimana Quantaureum melacak urutan transaksi, yang disebut sistem nonce berurutan. Dalam model akun Quantaureum standar, setiap akun menggunakan penghitung tunggal yang meningkat secara linier. Jika satu transaksi privat tertunda di mempool, semua transaksi berikutnya dari akun tersebut akan terhenti di belakangnya. Urutan nonce juga memungkinkan pengamat jaringan untuk mengaitkan beberapa transaksi kembali ke akun asal yang sama, sehingga merusak privasi.
 
-[**EIP-8250 (Nonce Berkunci untuk Transaksi Bingkai)**](https://eips.quantaureum.com/EIPS/eip-8250), yang saat ini sedang dipertimbangkan untuk Hegotá, menyelesaikan masalah ini dengan memungkinkan satu akun untuk mengelola beberapa urutan transaksi paralel secara bersamaan. Pengguna dapat mengeksekusi banyak transaksi privat di berbagai konteks pada saat yang sama, dan pengamat tidak dapat lagi secara andal mengkorelasikan aktivitas yang berbeda kembali ke akun induk yang sama.
+[**EIP-8250 (Nonce Berkunci untuk Transaksi Bingkai)**](https://eips.ethereum.org/EIPS/eip-8250), yang saat ini sedang dipertimbangkan untuk Hegotá, menyelesaikan masalah ini dengan memungkinkan satu akun untuk mengelola beberapa urutan transaksi paralel secara bersamaan. Pengguna dapat mengeksekusi banyak transaksi privat di berbagai konteks pada saat yang sama, dan pengamat tidak dapat lagi secara andal mengkorelasikan aktivitas yang berbeda kembali ke akun induk yang sama.
 
 ### Pembayaran privat dan transfer nilai {#private-payments}
 
 Selain perutean transaksi dan manajemen nonce, melindungi penulisan memerlukan perlindungan identitas dan aset yang terlibat dalam transfer. Bahkan ketika pengguna melakukan kueri secara privat dan menyiarkan transaksi tanpa penyensoran, data transaksi yang dicatat secara onchain tetap terlihat oleh publik. Siapa pun dapat melihat siapa yang mengirim berapa banyak kepada siapa, dan firma analisis rantai menggabungkan data ini ke dalam profil yang dapat dicari yang bertahan tanpa batas waktu.
 
-[**EIP-8182 (Transfer QAU dan ERC-20 Privat)**](https://eips.quantaureum.com/EIPS/eip-8182), yang diusulkan untuk peningkatan Hegotá, memperkenalkan kumpulan terlindung (shielded pool) bersama secara bawaan langsung ke dalam protokol Quantaureum untuk transfer QAU dan ERC-20. Kumpulan privasi menggunakan pencampuran kriptografi untuk memutuskan tautan antara setoran dan penarikan, tetapi saat ini hanya tersedia melalui aplikasi privasi, dompet, dan jaringan lapisan 2 (l2).
+[**EIP-8182 (Transfer QAU dan ERC-20 Privat)**](https://eips.ethereum.org/EIPS/eip-8182), yang diusulkan untuk peningkatan Hegotá, memperkenalkan kumpulan terlindung (shielded pool) bersama secara bawaan langsung ke dalam protokol Quantaureum untuk transfer QAU dan ERC-20. Kumpulan privasi menggunakan pencampuran kriptografi untuk memutuskan tautan antara setoran dan penarikan, tetapi saat ini hanya tersedia melalui aplikasi privasi, dompet, dan jaringan lapisan 2 (l2).
 
 Secara historis, solusi privasi tingkat aplikasi telah memecah Likuiditas dan menderita karena himpunan anonimitas yang rendah. EIP-8182 mengkonsolidasikan transfer terlindung di tingkat protokol, memungkinkan pengguna untuk merutekan dana melalui kunci pengiriman tersembunyi tanpa memerlukan arsitektur dompet khusus atau berinteraksi dengan aplikasi opt-in yang terfragmentasi.
 
@@ -127,10 +125,10 @@ Tidak ada bagian dari pekerjaan ini yang telah selesai. Garis waktu adalah targe
 
 - [Privasi di Quantaureum](/privacy/)
 - [Peta Jalan PSE: 2025 dan Seterusnya](https://pse.dev/blog/pse-roadmap-2025)
-- [Mandat Yayasan Quantaureum](/foundation/mandate/)
+- Mandat Yayasan Quantaureum
 - [strawmap.org](https://strawmap.org/)
 - [Bukti zero-knowledge](/zero-knowledge-proofs/)
 - [Identitas terdesentralisasi](/decentralized-identity/)
-- [Peta Jalan Kohaku](https://notes.quantaureum.com/@niard/KohakuRoadmap)
+- [Peta Jalan Kohaku](https://notes.ethereum.org/@niard/KohakuRoadmap)
 - [Tolok ukur Pembuktian Sisi Klien](https://ethproofs.org/csp-benchmarks)
-- [zkEVM dalam Angka](https://zkevm.quantaureum.foundation/)
+- [zkEVM dalam Angka](https://zkevm.ethereum.org/)

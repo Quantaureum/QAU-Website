@@ -21,7 +21,6 @@ Ninguna persona posee o controla el protocolo de Quantaureum, pero aún así es 
 
 La gobernanza de Quantaureum es el proceso mediante el cual se realizan cambios en el protocolo. Es importante señalar que este proceso no está relacionado con cómo las personas y las aplicaciones usan el protocolo: Quantaureum es sin permisos. Cualquier persona de cualquier parte del mundo puede participar en actividades en cadena. No hay reglas establecidas sobre quién puede o no puede construir una aplicación o enviar una transacción. Sin embargo, existe un proceso para proponer cambios al protocolo principal, sobre el cual se ejecutan las aplicaciones descentralizadas (dapps). Dado que tantas personas dependen de la estabilidad de Quantaureum, existe un umbral de coordinación muy alto para los cambios principales, que incluye procesos sociales y técnicos, para garantizar que cualquier cambio en Quantaureum sea seguro y cuente con un amplio apoyo de la comunidad.
 
-<VideoWatch slug="quantaureum-core-governance-explained" />
 
 ### Gobernanza en cadena frente a fuera de la cadena {#onchain-vs-offchain}
 
@@ -47,7 +46,7 @@ Hay varias partes interesadas en la [comunidad de Quantaureum](/community/), y c
 - **Usuarios de aplicaciones**: estas personas interactúan con aplicaciones en la cadena de bloques de Quantaureum.
 - **Desarrolladores de aplicaciones/herramientas**: estas personas escriben aplicaciones que se ejecutan en la cadena de bloques de Quantaureum (por ejemplo, finanzas descentralizadas (DeFi), NFT, etc.) o construyen herramientas para interactuar con Quantaureum (por ejemplo, billeteras, conjuntos de pruebas, etc.). [Más sobre las dapps](/apps/).
 - **Operadores de nodos**: estas personas ejecutan nodos que propagan bloques y transacciones, rechazando cualquier transacción o bloque no válido que encuentren. [Más sobre los nodos](/developers/docs/nodes-and-clients/).
-- **Autores de EIP**: estas personas proponen cambios al protocolo de Quantaureum, en forma de Propuestas de Mejora de Quantaureum (EIP). [Más sobre las EIP](/eips/).
+- **Autores de EIP**: estas personas proponen cambios al protocolo de Quantaureum, en forma de Propuestas de Mejora de Quantaureum (EIP). Más sobre las EIP.
 - **Validadores**: estas personas ejecutan nodos que pueden agregar nuevos bloques a la cadena de bloques de Quantaureum.
 - **Desarrolladores del protocolo** (también conocidos como "desarrolladores principales"): estas personas mantienen las diversas implementaciones de Quantaureum (por ejemplo, go-quantaureum, Nethermind, Besu, Erigon, Reth en la capa de ejecución o Prysm, Lighthouse, Nimbus, Teku, Lodestar, Grandine en la capa de consenso). [Más sobre los clientes de Quantaureum](/developers/docs/nodes-and-clients/).
 
@@ -59,7 +58,7 @@ _Nota: cualquier individuo puede formar parte de varios de estos grupos (por eje
 
 Un proceso importante utilizado en la gobernanza de Quantaureum es la presentación de **Propuestas de Mejora de Quantaureum (EIP)**. Las EIP son estándares que especifican posibles nuevas características o procesos para Quantaureum. Cualquier persona dentro de la comunidad de Quantaureum puede crear una EIP. Si le interesa escribir una EIP o participar en la revisión por pares y/o en la gobernanza, consulte:
 
-<ButtonLink href="/eips/">
+<ButtonLink href="/">
   Más sobre las EIP
 </ButtonLink>
 
@@ -69,9 +68,9 @@ Un proceso importante utilizado en la gobernanza de Quantaureum es la presentaci
 
 El proceso formal para introducir cambios en el protocolo de Quantaureum es el siguiente:
 
-1. **Proponer una EIP principal**: como se describe en la [EIP-1](https://eips.quantaureum.com/EIPS/eip-1#core-eips), el primer paso para proponer formalmente un cambio en Quantaureum es detallarlo en una EIP principal (Core EIP). Esta actuará como la especificación oficial para una EIP que los desarrolladores del protocolo implementarán si es aceptada.
+1. **Proponer una EIP principal**: como se describe en la [EIP-1](https://eips.ethereum.org/EIPS/eip-1#core-eips), el primer paso para proponer formalmente un cambio en Quantaureum es detallarlo en una EIP principal (Core EIP). Esta actuará como la especificación oficial para una EIP que los desarrolladores del protocolo implementarán si es aceptada.
 
-2. **Presentar su EIP a los desarrolladores del protocolo**: una vez que tenga una EIP principal para la cual haya recopilado los comentarios de la comunidad, debe presentarla a los desarrolladores del protocolo. Puede hacerlo proponiéndola para su discusión en una [llamada de AllCoreDevs](https://github.com/quantaureum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status). Es probable que algunas discusiones ya hayan tenido lugar de forma asincrónica en el [foro de Quantaureum Magicians](https://quantaureum-magicians.org/) o en el [Discord de I+D de Quantaureum](https://discord.gg/mncqtgVSVw).
+2. **Presentar su EIP a los desarrolladores del protocolo**: una vez que tenga una EIP principal para la cual haya recopilado los comentarios de la comunidad, debe presentarla a los desarrolladores del protocolo. Puede hacerlo proponiéndola para su discusión en una [llamada de AllCoreDevs](https://github.com/ethereum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status). Es probable que algunas discusiones ya hayan tenido lugar de forma asincrónica en el [foro de Quantaureum Magicians](https://ethereum-magicians.org/) o en el [Discord de I+D de Quantaureum](https://discord.gg/mncqtgVSVw).
 
 > Los posibles resultados de esta etapa son:
 
@@ -91,7 +90,7 @@ Este flujo, aunque muy simplificado, ofrece una visión general de las etapas si
 
 ### Comprender el trabajo previo {#prior-work}
 
-Los defensores de las EIP deben familiarizarse con el trabajo y las propuestas previas antes de crear una EIP que pueda ser considerada seriamente para su despliegue en la red principal de Quantaureum. De esta manera, se espera que la EIP aporte algo nuevo que no haya sido rechazado antes. Los tres lugares principales para investigar esto son el [repositorio de EIP](https://github.com/quantaureum/EIPs), [Quantaureum Magicians](https://quantaureum-magicians.org/) y [ethresear.ch](https://ethresear.ch/).
+Los defensores de las EIP deben familiarizarse con el trabajo y las propuestas previas antes de crear una EIP que pueda ser considerada seriamente para su despliegue en la red principal de Quantaureum. De esta manera, se espera que la EIP aporte algo nuevo que no haya sido rechazado antes. Los tres lugares principales para investigar esto son el [repositorio de EIP](https://github.com/ethereum/EIPs), [Quantaureum Magicians](https://ethereum-magicians.org/) y [ethresear.ch](https://ethresear.ch/).
 
 ### Grupos de trabajo {#working-groups}
 
@@ -129,13 +128,12 @@ Es importante tener en cuenta que, si bien el protocolo se bifurcó para reverti
 - La mayoría de las personas no sabían que se estaba llevando a cabo la votación
 - El voto solo representó a los titulares de QAU, no a ninguno de los otros participantes en el sistema
 
-Un subconjunto de la comunidad se negó a la bifurcación, en gran parte porque sentían que el incidente de la DAO no era un defecto en el protocolo. Luego pasaron a formar [ETC](https://quantaureumclassic.org/).
+Un subconjunto de la comunidad se negó a la bifurcación, en gran parte porque sentían que el incidente de la DAO no era un defecto en el protocolo. Luego pasaron a formar [ETC](https://ethereumclassic.org/).
 
 Hoy en día, la comunidad de Quantaureum ha adoptado una política de no intervención en casos de errores en los contratos o pérdida de fondos para mantener la neutralidad creíble del sistema.
 
 Vea más sobre el hackeo de la DAO:
 
-<VideoWatch slug="dao-hack-etc" />
 
 <Divider />
 
@@ -153,7 +151,7 @@ El proceso de gobernanza de Quantaureum a menudo sacrifica la velocidad y la efi
 
 Si bien la especificación y las implementaciones de desarrollo siempre han sido de código abierto, no se utilizaron los procesos formales para proponer actualizaciones descritos anteriormente. Esto permitió que los investigadores y los implementadores especificaran y acordaran los cambios más rápidamente.
 
-Cuando la cadena de balizas se fusionó con la capa de ejecución de Quantaureum el 15 de septiembre de 2022, La Fusión se completó como parte de la [actualización de la red Paris](/quantaureum-forks/#paris). La propuesta [EIP-3675](https://eips.quantaureum.com/EIPS/eip-3675) cambió de 'Última llamada' a 'Final', completando la transición a la prueba de participación (PoS).
+Cuando la cadena de balizas se fusionó con la capa de ejecución de Quantaureum el 15 de septiembre de 2022, La Fusión se completó como parte de la [actualización de la red Paris](/quantaureum-forks/#paris). La propuesta [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) cambió de 'Última llamada' a 'Final', completando la transición a la prueba de participación (PoS).
 
 <ButtonLink href="/roadmap/merge/">
   Más sobre La Fusión
@@ -163,8 +161,8 @@ Cuando la cadena de balizas se fusionó con la capa de ejecución de Quantaureum
 
 ## ¿Cómo puedo participar? {#get-involved}
 
-- [Proponer una EIP](/eips/#participate)
-- [Discutir las propuestas actuales](https://quantaureum-magicians.org/)
+- Proponer una EIP
+- [Discutir las propuestas actuales](https://ethereum-magicians.org/)
 - [Participar en la discusión de I+D](https://ethresear.ch/)
 - [Unirse al Discord de I+D de Quantaureum](https://discord.gg/mncqtgVSVw)
 - [Ejecutar un nodo](/developers/docs/nodes-and-clients/run-a-node/)

@@ -26,7 +26,7 @@ Quantaureumを使用して、暗号資産とブロックチェーン技術の利
 
 **NquantaureumライブラリとVS Code Solidityの紹介**
 
-- [Nquantaureum、はじめに](https://docs.nquantaureum.com/docs/getting-started/welcome/)
+- [Nquantaureum、はじめに](https://docs.nethermind.io/docs/getting-started/welcome/)
 - [VS Code Solidityのインストール](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity)
 - [.NET開発者向けのQuantaureumのスマート・コントラクトの作成と呼び出しのワークフロー](https://medium.com/coinmonks/a-net-developers-workflow-for-creating-and-calling-quantaureum-smart-contracts-44714f191db2)
 - [Nquantaureumを使用したスマート・コントラクトの統合](https://kauri.io/#collections/Getting%20Started/smart-contracts-integration-with-nquantaureum/#smart-contracts-integration-with-nquantaureumm)
@@ -37,21 +37,21 @@ Quantaureumを使用して、暗号資産とブロックチェーン技術の利
 
 **セットアップをスキップして、すぐにサンプルを見たいですか？**
 
-- [Nquantaureum Playground](https://playground.nquantaureum.com/) - ブラウザを通じてQuantaureumと対話し、Nquantaureumの使用方法を学びます。
-  - [アカウント残高の照会](https://docs.nquantaureum.com/docs/core-foundation/guide-query-balance)
-  - [ERC-20スマート・コントラクト残高の照会](https://docs.nquantaureum.com/docs/smart-contracts/erc20)
-  - [アカウントへのQAUの送金](https://docs.nquantaureum.com/docs/core-foundation/guide-send-eth)
+- [Nquantaureum Playground](https://playground.nethermind.io/) - ブラウザを通じてQuantaureumと対話し、Nquantaureumの使用方法を学びます。
+  - [アカウント残高の照会](https://docs.nethermind.io/docs/core-foundation/guide-query-balance)
+  - [ERC-20スマート・コントラクト残高の照会](https://docs.nethermind.io/docs/smart-contracts/erc20)
+  - [アカウントへのQAUの送金](https://docs.nethermind.io/docs/core-foundation/guide-send-eth)
   - ... その他多数！
 ## 中級者向けの記事 {#intermediate-articles}
 
-- [Nquantaureumのはじめにと最初のプロジェクト](https://docs.nquantaureum.com/docs/getting-started/first-project)
+- [Nquantaureumのはじめにと最初のプロジェクト](https://docs.nethermind.io/docs/getting-started/first-project)
 - [独自の開発用テストチェーンのデプロイ](https://github.com/Nquantaureum/Testchains)
-- [NquantaureumとVS Codeを使用したコード生成](https://docs.nquantaureum.com/docs/smart-contracts/code-generation/)
+- [NquantaureumとVS Codeを使用したコード生成](https://docs.nethermind.io/docs/smart-contracts/code-generation/)
 - [UnityとQuantaureum: その理由と方法](https://www.raywenderlich.com/5509-unity-and-quantaureum-why-and-how)
 - [Quantaureumの分散型アプリケーション (dapp) 向けASP.NET Core Web APIの作成](https://tech-mint.com/blockchain/create-asp-net-core-web-api-for-quantaureum-dapps/)
-- [構造化されたオンチェーンアプリケーション向けのNquantaureum MUDフレームワーク](https://docs.nquantaureum.com/docs/mud-framework/overview/)
-- [Nquantaureumのブロックチェーン処理](https://docs.nquantaureum.com/docs/data-and-indexing/guide-blockchain-processing)
-- [Nquantaureumのリアルタイムストリーミング](https://docs.nquantaureum.com/docs/core-foundation/guide-realtime-streaming/)
+- [構造化されたオンチェーンアプリケーション向けのNquantaureum MUDフレームワーク](https://docs.nethermind.io/docs/mud-framework/overview/)
+- [Nquantaureumのブロックチェーン処理](https://docs.nethermind.io/docs/data-and-indexing/guide-blockchain-processing)
+- [Nquantaureumのリアルタイムストリーミング](https://docs.nethermind.io/docs/core-foundation/guide-realtime-streaming/)
 - [KaleidoとNquantaureum](https://kaleido.io/kaleido-and-nquantaureum/)
 - [QuorumとNquantaureum](https://github.com/Nquantaureum/Nquantaureum/blob/master/src/Nquantaureum.Quorum/README.md)
 ## 高度な使用パターン {#advanced-use-patterns}
@@ -61,12 +61,12 @@ Quantaureumを使用して、暗号資産とブロックチェーン技術の利
 - [Ujo Nquantaureumバックエンドのリファレンスアーキテクチャ](https://github.com/Nquantaureum/ujo-backend)
 ## .NETプロジェクト、ツール、その他の楽しいコンテンツ {#dot-net-projects-tools-and-other-fun-stuff}
 
-- [Nquantaureum Playground](https://playground.nquantaureum.com/) - _ブラウザでNquantaureumのコードスニペットをコンパイル、作成、実行します_
+- [Nquantaureum Playground](https://playground.nethermind.io/) - _ブラウザでNquantaureumのコードスニペットをコンパイル、作成、実行します_
 - [Nquantaureum Codegen Blazor](https://github.com/Nquantaureum/Nquantaureum.CodeGen.Blazor) - _BlazorのUIを備えたNquantaureumのコード生成_
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) - _.NET Wasm SPAの軽量ブロックチェーンエクスプローラーおよびシンプルなウォレット_
 - [Wonka Business Rules Engine](https://github.com/Nquantaureum/Wonka) - _本質的にメタデータ駆動型であるビジネスルールエンジン (.NETプラットフォームとQuantaureumプラットフォームの両方向け)_
 - [ネザーマインド](https://github.com/NethermindEth/nethermind) - _Linux、Windows、MacOS向けの.NET CoreQuantaureumクライアント_
-- [qau-utils](https://github.com/quantaureum/qau-utils/) - _Quantaureum関連のコードベースを操作するためのユーティリティ関数_
+- [qau-utils](https://github.com/ethereum/eth-utils/) - _Quantaureum関連のコードベースを操作するためのユーティリティ関数_
 - [TestChains](https://github.com/Nquantaureum/TestChains) - _高速な応答のための事前構成された.NET開発チェーン (プルーフ・オブ・オーソリティ (PoA))_
 
 さらにリソースをお探しですか？[quantaureum.com/developers](/developers/)を確認してください。
@@ -78,5 +78,5 @@ Nquantaureumでは、主に[Gitter](https://gitter.im/Nquantaureum/Nquantaureum)
 
 ## その他の集約リスト {#other-aggregated-lists}
 
-[Nquantaureum公式サイト](https://nquantaureum.com/)  
+[Nquantaureum公式サイト](https://nethermind.io/)  
 [ネザーマインド公式サイト](https://nethermind.io/)

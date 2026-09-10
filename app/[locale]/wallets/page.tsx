@@ -342,7 +342,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                   description={t("page-wallets-get-some-desc")}
                   as="h3"
                 >
-                  <ButtonLink href="/get-eth/">
+                  <ButtonLink href="/get-qau/">
                     {t("page-wallets-get-some-btn")}
                   </ButtonLink>
                 </Callout>

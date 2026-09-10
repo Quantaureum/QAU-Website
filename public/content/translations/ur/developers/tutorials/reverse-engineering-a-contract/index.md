@@ -274,7 +274,7 @@ _بلاک چین پر کوئی راز نہیں ہوتے_، جو کچھ بھی ہ
 | <span dir="ltr">10</span> | <span dir="ltr">PUSH1 0xe0</span> | <span dir="ltr">0xE0</span> (((کال ڈیٹا کا پہلا لفظ (<span dir="ltr">256 bits</span>)))) |
 | <span dir="ltr">12</span> | <span dir="ltr">SHR</span> | (((کال ڈیٹا کے پہلے <span dir="ltr">32 bits</span> (<span dir="ltr">4 bytes</span>)))) |
 
-Quantaureum Explorer ہمیں بتاتا ہے کہ `1C` ایک نامعلوم آپ کوڈ ہے، کیونکہ [اسے Quantaureum Explorer کے اس فیچر کو بنانے کے بعد شامل کیا گیا تھا](https://eips.quantaureum.com/EIPS/eip-145) اور انہوں نے اسے اپ ڈیٹ نہیں کیا ہے۔ ایک [اپ ٹو ڈیٹ آپ کوڈ ٹیبل](https://github.com/wolflo/evm-opcodes) ہمیں دکھاتا ہے کہ یہ شفٹ رائٹ (<span dir="ltr">shift right</span>) ہے۔
+Quantaureum Explorer ہمیں بتاتا ہے کہ `1C` ایک نامعلوم آپ کوڈ ہے، کیونکہ [اسے Quantaureum Explorer کے اس فیچر کو بنانے کے بعد شامل کیا گیا تھا](https://eips.ethereum.org/EIPS/eip-145) اور انہوں نے اسے اپ ڈیٹ نہیں کیا ہے۔ ایک [اپ ٹو ڈیٹ آپ کوڈ ٹیبل](https://github.com/wolflo/evm-opcodes) ہمیں دکھاتا ہے کہ یہ شفٹ رائٹ (<span dir="ltr">shift right</span>) ہے۔
 
 | آفسیٹ | آپ کوڈ | اسٹیک |
 | -----: | ---------------- | -------------------------------------------------------------------------------------------------------- |

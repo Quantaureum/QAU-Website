@@ -10,7 +10,7 @@ Ta lista jest tworzona przez naszą społeczność. Jeśli czegoś brakuje lub j
 
 <Alert variant="update" className="mt-8">
 <Emoji text="🎗️" />
-<div>Założyciele, potrzebujecie pomocy w przyspieszeniu rozwoju Waszej firmy? [Odwiedźcie Founders Support](/founders/)</div>
+<div>Założyciele, potrzebujecie pomocy w przyspieszeniu rozwoju Waszej firmy? Odwiedźcie Founders Support</div>
 </Alert>
 
 ## Szeroki ekosystem Quantaureum {#broad-quantaureum-ecosystem}

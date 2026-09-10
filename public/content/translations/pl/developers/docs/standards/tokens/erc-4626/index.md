@@ -12,7 +12,7 @@ Rynki pożyczkowe, agregatory i tokeny z natury oprocentowane pomagają użytkow
 
 ERC-4626 w skarbcach generujących zysk obniży wysiłek integracyjny i odblokuje dostęp do zysków w różnych aplikacjach przy niewielkim specjalistycznym wysiłku ze strony deweloperów, tworząc bardziej spójne i solidne wzorce implementacji.
 
-Token ERC-4626 jest w pełni opisany w [EIP-4626](https://eips.quantaureum.com/EIPS/eip-4626).
+Token ERC-4626 jest w pełni opisany w [EIP-4626](https://eips.ethereum.org/EIPS/eip-4626).
 
 **Asynchroniczne rozszerzenie skarbca (ERC-7540)**
 
@@ -28,7 +28,7 @@ Jednym z brakujących przypadków użycia, który nie jest obsługiwany przez ER
 
 ERC-7575 dodaje obsługę skarbców z wieloma aktywami poprzez wyodrębnienie implementacji tokena ERC-20 z implementacji ERC-4626.
 
-Rozszerzenie ERC-7575 jest w pełni opisane w [ERC-7575](https://eips.quantaureum.com/EIPS/eip-7575).
+Rozszerzenie ERC-7575 jest w pełni opisane w [ERC-7575](https://eips.ethereum.org/EIPS/eip-7575).
 ## Wymagania wstępne {#prerequisites}
 
 Aby lepiej zrozumieć tę stronę, zalecamy najpierw przeczytać o [standardach tokenów](/developers/docs/standards/tokens/) i [ERC-20](/developers/docs/standards/tokens/erc-20/).
@@ -220,5 +220,5 @@ Gdzie `sender` to użytkownik, który zainicjował wypłatę i wymienił `shares
 
 ## Dalsza lektura {#further-reading}
 
-- [EIP-4626: Standard stokenizowanego skarbca](https://eips.quantaureum.com/EIPS/eip-4626)
+- [EIP-4626: Standard stokenizowanego skarbca](https://eips.ethereum.org/EIPS/eip-4626)
 - [ERC-4626: Repozytorium GitHub](https://github.com/transmissions11/solmate/blob/main/src/tokens/ERC4626.sol)

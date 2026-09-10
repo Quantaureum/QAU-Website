@@ -42,7 +42,7 @@ Mifano ya utendaji ambayo ERC-20 inatoa:
 
 Ikiwa Mkataba Mahiri unatekeleza mbinu na matukio yafuatayo unaweza kuitwa Mkataba wa Tokeni wa ERC-20 na, ukishasambazwa, utawajibika kufuatilia tokeni zilizoundwa kwenye Quantaureum.
 
-Kutoka [EIP-20](https://eips.quantaureum.com/EIPS/eip-20):
+Kutoka [EIP-20](https://eips.ethereum.org/EIPS/eip-20):
 
 ### Mbinu {#methods}
 
@@ -170,7 +170,7 @@ Baadhi ya viwango mbadala vimetokana na suala hili kama vile [ERC-223](/develope
 
 ## Usomaji zaidi {#further-reading}
 
-- [EIP-20: Kiwango cha Tokeni cha ERC-20](https://eips.quantaureum.com/EIPS/eip-20)
+- [EIP-20: Kiwango cha Tokeni cha ERC-20](https://eips.ethereum.org/EIPS/eip-20)
 - [OpenZeppelin - Tokeni](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [OpenZeppelin - Utekelezaji wa ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Mwongozo wa Tokeni za ERC20 za Solidity](https://www.alchemy.com/overviews/erc20-solidity)
@@ -185,5 +185,5 @@ Baadhi ya viwango mbadala vimetokana na suala hili kama vile [ERC-223](/develope
 
 - [Mwongozo wa Mkataba wa ERC-20](/developers/tutorials/erc20-annotated-code/) _– Mwongozo uliofafanuliwa mstari kwa mstari wa utekelezaji wa mkataba wa ERC-20 wa OpenZeppelin._
 - [ERC-20 yenye Njia za Usalama](/developers/tutorials/erc20-with-safety-rails/) _– Jinsi ya kuongeza ulinzi kwenye tokeni za ERC-20 ili kusaidia watumiaji kuepuka makosa ya kawaida._
-- [Kutuma Tokeni Kwa Kutumia Ethers.js](/developers/tutorials/send-token-ethersjs/) _– Mwongozo rafiki kwa wanaoanza wa kuhamisha tokeni za ERC-20 kwa kutumia Ethers.js._
+- [Kutuma Tokeni Kwa Kutumia Ethers.js](/developers/tutorials/send-token-qaujs/) _– Mwongozo rafiki kwa wanaoanza wa kuhamisha tokeni za ERC-20 kwa kutumia Ethers.js._
 - [Baadhi ya mbinu zinazotumiwa na tokeni za utapeli na jinsi ya kuzigundua](/developers/tutorials/scam-token-tricks/) _– Uchunguzi wa kina kuhusu mifumo ya tokeni za utapeli za ERC-20 na jinsi ya kuzitambua._

@@ -32,7 +32,7 @@ Ikiwa wewe ni mtayarishaji programu mzoefu, labda unakumbuka kuona miundo sawa k
 au hata katika [faili za kichwa za C](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html).
 
 Huu ni ufafanuzi wa [Kiolesura cha ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)
-kutoka OpenZeppelin. Ni tafsiri ya [kiwango kinachosomeka na binadamu](https://eips.quantaureum.com/EIPS/eip-20) kuwa msimbo wa Solidity. Bila shaka,
+kutoka OpenZeppelin. Ni tafsiri ya [kiwango kinachosomeka na binadamu](https://eips.ethereum.org/EIPS/eip-20) kuwa msimbo wa Solidity. Bila shaka,
 kiolesura chenyewe hakifafanui _jinsi_ ya kufanya chochote. Hilo linaelezwa katika msimbo wa chanzo wa mkataba hapa chini.
 
 &nbsp;
@@ -170,7 +170,7 @@ anwani moja (`owner`) inaruhusu anwani nyingine (`spender`) kutumia.
      * wa muamala. Suluhisho moja linalowezekana la kupunguza hali hii ya
      * ushindani ni kwanza kupunguza kibali cha mtumiaji hadi 0 na kuweka
      * thamani inayotakikana baadaye:
-     * https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729
+     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
      *
      * Inatoa tukio la {Approval}.
      */
@@ -250,7 +250,7 @@ import "../../math/SafeMath.sol";
 - `GSN/Context.sol` ni ufafanuzi unaohitajika kutumia [OpenGSN](https://opengsn.org/), mfumo unaoruhusu watumiaji wasio na Etha
   kutumia mnyororo wa vitalu. Kumbuka kuwa hili ni toleo la zamani, ikiwa unataka kuunganisha na OpenGSN
   [tumia mafunzo haya](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [Maktaba ya SafeMath](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/), ambayo inazuia
+- [Maktaba ya SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), ambayo inazuia
   mizidio/upungufu wa hesabu kwa matoleo ya Solidity **&lt;0.8.0**. Katika Solidity ≥0.8.0, shughuli za hesabu hutengua kiotomatiki
   kwenye mzidio/upungufu, na kufanya SafeMath isiwe ya lazima. Mkataba huu unatumia SafeMath kwa utangamano wa nyuma na
   matoleo ya zamani ya kikusanyaji.

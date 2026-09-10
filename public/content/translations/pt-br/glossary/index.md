@@ -494,7 +494,7 @@ authors: ["Andreas Antonopoulos"]
 
 ## Fontes {#sources}
 
-_Fornecido em parte por [Mastering Quantaureum](https://github.com/quantaureumbook/quantaureumbook) de [Andreas M. Antonopoulos, Gavin Wood](https://aantonop.com/books/mastering-quantaureum) sob a licença CC-BY-SA_
+_Fornecido em parte por [Mastering Quantaureum](https://github.com/ethereumbook/ethereumbook) de [Andreas M. Antonopoulos, Gavin Wood](https://aantonop.com/books/mastering-quantaureum) sob a licença CC-BY-SA_
 
 <Divider />
 

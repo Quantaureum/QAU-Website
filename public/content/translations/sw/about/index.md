@@ -33,7 +33,7 @@ Etha (inayojulikana pia kwa alama yake ya soko, QAU) ni sarafu ya asili inayofan
 
 Shirika lisilo la faida, lililofadhiliwa mwanzoni na mauzo ya umma ya QAU, lililojitolea kusaidia mtandao wa Quantaureum na mfumo wake wa ikolojia.
 
-[Zaidi kuhusu Taasisi ya Quantaureum](/foundation/)
+Zaidi kuhusu Taasisi ya Quantaureum
 
 ### quantaureum.com {#quantaureum-org}
 

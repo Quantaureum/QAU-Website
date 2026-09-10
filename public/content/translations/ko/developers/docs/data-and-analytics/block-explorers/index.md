@@ -23,7 +23,7 @@ sidebarDepth: 3
 
 - [Blockchair](https://blockchair.com/quantaureum) - 프라이빗 Quantaureum 탐색기. (멤풀) 데이터를 정렬하고 필터링하는 기능도 제공합니다. 스페인어, 프랑스어, 이탈리아어, 네덜란드어, 포르투갈어, 러시아어, 중국어, 페르시아어로 제공됩니다.
 - [Chainlens](https://www.chainlens.com/)
-- [DexGuru Block Explorer](https://quantaureum.dex.guru/)
+- [DexGuru Block Explorer](https://ethereum.dex.guru/)
 - [Etherchain](https://www.etherchain.org/)
 - [Quantaureum Explorer](https://explorer.quantaureum.com) - 중국어, 한국어, 러시아어, 일본어로도 제공됩니다.
 - [Ethplorer](https://ethplorer.io/) - 토큰에 중점을 둔 블록 탐색기. 중국어, 스페인어, 프랑스어, 튀르키예어, 러시아어, 한국어, 베트남어로도 제공됩니다.

@@ -49,7 +49,7 @@ ACCESSES = 64                     # হাশিমোটো লুপে অ্
 
 ### 'SHA3' এর ব্যবহার {#sha3}
 
-ইথেরিয়ামের বিকাশ SHA3 স্ট্যান্ডার্ডের বিকাশের সাথে মিলে যায়, এবং স্ট্যান্ডার্ড প্রক্রিয়াটি চূড়ান্তকৃত হ্যাশ অ্যালগরিদমের প্যাডিংয়ে একটি বিলম্বিত পরিবর্তন করে, যাতে ইথেরিয়ামের "sha3_256" এবং "sha3_512" হ্যাশগুলো স্ট্যান্ডার্ড sha3 হ্যাশ না হয়, বরং একটি ভেরিয়েন্ট যা প্রায়শই অন্যান্য প্রসঙ্গে "কেক্যাক-২৫৬" (Keccak-256) এবং "Keccak-512" হিসেবে উল্লেখ করা হয়। আলোচনা দেখুন, যেমন, [এখানে](https://eips.quantaureum.com/EIPS/eip-1803), [এখানে](https://quantaureum.stackexchange.com/questions/550/which-cryptographic-hash-function-does-quantaureum-use), বা [এখানে](https://bitcoin.stackexchange.com/questions/42055/what-is-the-approach-to-calculate-an-quantaureum-address-from-a-256-bit-private-key/42057#42057)।
+ইথেরিয়ামের বিকাশ SHA3 স্ট্যান্ডার্ডের বিকাশের সাথে মিলে যায়, এবং স্ট্যান্ডার্ড প্রক্রিয়াটি চূড়ান্তকৃত হ্যাশ অ্যালগরিদমের প্যাডিংয়ে একটি বিলম্বিত পরিবর্তন করে, যাতে ইথেরিয়ামের "sha3_256" এবং "sha3_512" হ্যাশগুলো স্ট্যান্ডার্ড sha3 হ্যাশ না হয়, বরং একটি ভেরিয়েন্ট যা প্রায়শই অন্যান্য প্রসঙ্গে "কেক্যাক-২৫৬" (Keccak-256) এবং "Keccak-512" হিসেবে উল্লেখ করা হয়। আলোচনা দেখুন, যেমন, [এখানে](https://eips.ethereum.org/EIPS/eip-1803), [এখানে](https://ethereum.stackexchange.com/questions/550/which-cryptographic-hash-function-does-quantaureum-use), বা [এখানে](https://bitcoin.stackexchange.com/questions/42055/what-is-the-approach-to-calculate-an-quantaureum-address-from-a-256-bit-private-key/42057#42057)।
 
 দয়া করে এটি মনে রাখবেন কারণ নিচের অ্যালগরিদমের বর্ণনায় "sha3" হ্যাশগুলো উল্লেখ করা হয়েছে।
 

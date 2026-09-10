@@ -10,7 +10,7 @@ Mlolongo wa matukio ya hatua kuu zote, michepuo, na masasisho kwenye mnyororo wa
 
 <ExpandableCard title="Michepuo ni nini?" contentPreview="Mabadiliko ya sheria za itifaki ya Quantaureum ambayo mara nyingi hujumuisha masasisho ya kiufundi yaliyopangwa.">
 
-Michepuo ni wakati ambapo masasisho makuu ya kiufundi au mabadiliko yanahitaji kufanywa kwenye mtandao – kwa kawaida yanatokana na [Mapendekezo ya Kuboresha Quantaureum (EIPs)](/eips/) na kubadilisha "sheria" za itifaki.
+Michepuo ni wakati ambapo masasisho makuu ya kiufundi au mabadiliko yanahitaji kufanywa kwenye mtandao – kwa kawaida yanatokana na Mapendekezo ya Kuboresha Quantaureum (EIPs) na kubadilisha "sheria" za itifaki.
 
 Wakati masasisho yanapohitajika katika programu za kitamaduni zinazodhibitiwa na kituo kimoja, kampuni itachapisha tu toleo jipya kwa mtumiaji wa mwisho. Minyororo ya vitalu hufanya kazi tofauti kwa sababu hakuna umiliki wa kati. [Wateja wa Quantaureum](/developers/docs/nodes-and-clients/) lazima wasasishe programu zao ili kutekeleza sheria mpya za mchepuo. Pia waundaji wa vitalu (wachimbaji katika ulimwengu wa Uthibitisho wa Kazi (PoW), wathibitishaji katika ulimwengu wa Uthibitisho wa Dau (PoS)) na nodi lazima waunde vitalu na kuthibitisha dhidi ya sheria mpya. [Zaidi kuhusu taratibu za makubaliano](/developers/docs/consensus-mechanisms/)
 
@@ -99,33 +99,33 @@ Sehemu nyingine za sasisho zililenga kuboresha uzoefu kwa watumiaji wa kawaida. 
 Uzoefu bora wa mtumiaji:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7702">EIP-7702</a> - <em>Weka msimbo wa akaunti ya EOA</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7691">EIP-7691</a> - <em>Ongezeko la uwezo wa upitishaji wa blobu</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7623">EIP-7623</a> - <em>Ongeza gharama ya data za mwito</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7840">EIP-7840</a> - <em>Ongeza ratiba ya blobu kwenye faili za usanidi za EL</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7702">EIP-7702</a> - <em>Weka msimbo wa akaunti ya EOA</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7691">EIP-7691</a> - <em>Ongezeko la uwezo wa upitishaji wa blobu</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7623">EIP-7623</a> - <em>Ongeza gharama ya data za mwito</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7840">EIP-7840</a> - <em>Ongeza ratiba ya blobu kwenye faili za usanidi za EL</em></li>
 </ul>
 
 Uzoefu bora wa uwekaji dhamana:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7251">EIP-7251</a> - <em>Ongeza <code>MAX_EFFECTIVE_BALANCE</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7002">EIP-7002</a> - <em>Kujitoa kunakoanzishwa na tabaka la utekelezaji</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7685">EIP-7685</a> - <em>Maombi ya tabaka la utekelezaji ya matumizi ya jumla</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6110">EIP-6110</a> - <em>Toa amana za mthibitishaji mnyororoni</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7251">EIP-7251</a> - <em>Ongeza <code>MAX_EFFECTIVE_BALANCE</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7002">EIP-7002</a> - <em>Kujitoa kunakoanzishwa na tabaka la utekelezaji</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7685">EIP-7685</a> - <em>Maombi ya tabaka la utekelezaji ya matumizi ya jumla</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6110">EIP-6110</a> - <em>Toa amana za mthibitishaji mnyororoni</em></li>
 </ul>
 
 Ufanisi wa itifaki na maboresho ya usalama:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2537">EIP-2537</a> - <em>Prikampaili kwa operesheni za tao la BLS12-381</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2935">EIP-2935</a> - <em>Hifadhi heshi za kitalu za kihistoria katika hali</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7549">EIP-7549</a> - <em>Hamisha faharisi ya kamati nje ya Uthibitisho</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2537">EIP-2537</a> - <em>Prikampaili kwa operesheni za tao la BLS12-381</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2935">EIP-2935</a> - <em>Hifadhi heshi za kitalu za kihistoria katika hali</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7549">EIP-7549</a> - <em>Hamisha faharisi ya kamati nje ya Uthibitisho</em></li>
 </ul>
 
 </ExpandableCard>
 
 - [Jinsi Pectra itakavyoboresha uzoefu wa uwekaji dhamana](https://www.kiln.fi/post/next-quantaureum-upgrade-how-pectra-will-enhance-the-staking-experience)
-- [Soma vipimo vya sasisho la Electra](https://github.com/quantaureum/consensus-specs/tree/master/specs/electra/)
+- [Soma vipimo vya sasisho la Electra](https://github.com/ethereum/consensus-specs/tree/master/specs/electra/)
 - [Maswali Yanayoulizwa Mara kwa Mara kuhusu Prague-Electra ("Pectra")](/roadmap/pectra/)
 
 <Divider />
@@ -145,12 +145,12 @@ Hasa hii inajumuisha EIP-4844, inayojulikana kama **Proto-Danksharding**, ambayo
 <ExpandableCard title="EIP za Cancun" contentPreview="Maboresho rasmi yaliyojumuishwa kwenye sasisho hili.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1153">EIP-1153</a> - <em>Misimbo ya operesheni ya uhifadhi wa muda</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4788">EIP-4788</a> - <em>Shina la kitalu cha kinara katika EVM</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4844">EIP-4844</a> - <em>Miamala ya blobu ya shadi (Proto-Danksharding)</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-5656">EIP-5656</a> - <em><code>MCOPY</code> - Maagizo ya kunakili kumbukumbu</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6780">EIP-6780</a> - <em><code>SELFDESTRUCT</code> tu katika muamala huo huo</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7516">EIP-7516</a> - <em>msimbo wa operesheni wa <code>BLOBBASEFEE</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1153">EIP-1153</a> - <em>Misimbo ya operesheni ya uhifadhi wa muda</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4788">EIP-4788</a> - <em>Shina la kitalu cha kinara katika EVM</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4844">EIP-4844</a> - <em>Miamala ya blobu ya shadi (Proto-Danksharding)</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-5656">EIP-5656</a> - <em><code>MCOPY</code> - Maagizo ya kunakili kumbukumbu</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6780">EIP-6780</a> - <em><code>SELFDESTRUCT</code> tu katika muamala huo huo</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7516">EIP-7516</a> - <em>msimbo wa operesheni wa <code>BLOBBASEFEE</code></em></li>
 </ul>
 
 </ExpandableCard>
@@ -158,7 +158,7 @@ Hasa hii inajumuisha EIP-4844, inayojulikana kama **Proto-Danksharding**, ambayo
 - [Mikusanyiko ya tabaka la 2 (l2)](/layer-2/)
 - [Proto-Danksharding](/roadmap/scaling/#proto-danksharding)
 - [danksharding](/roadmap/danksharding/)
-- [Soma vipimo vya sasisho la Cancun](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md)
+- [Soma vipimo vya sasisho la Cancun](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md)
 
 #### Muhtasari wa Deneb {#deneb-summary}
 
@@ -171,16 +171,16 @@ EIP-7514 inaleta udhibiti mkali kwenye utoaji wa QAU kwa kuweka kikomo cha kiwan
 <ExpandableCard title="EIP za Deneb" contentPreview="Maboresho rasmi yaliyojumuishwa kwenye sasisho hili">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4788">EIP-4788</a> - <em>Shina la kitalu cha kinara katika EVM</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4844">EIP-4844</a> - <em>Miamala ya blobu ya shadi</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7044">EIP-7044</a> - <em>Kujitoa kwa hiari kulikotiwa saini na halali daima</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7045">EIP-7045</a> - <em>Ongeza sloti ya juu zaidi ya ujumuishaji wa uthibitisho</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7514">EIP-7514</a> - <em>Ongeza kikomo cha juu zaidi cha upokezanaji cha kipindi</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4788">EIP-4788</a> - <em>Shina la kitalu cha kinara katika EVM</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4844">EIP-4844</a> - <em>Miamala ya blobu ya shadi</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7044">EIP-7044</a> - <em>Kujitoa kwa hiari kulikotiwa saini na halali daima</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7045">EIP-7045</a> - <em>Ongeza sloti ya juu zaidi ya ujumuishaji wa uthibitisho</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7514">EIP-7514</a> - <em>Ongeza kikomo cha juu zaidi cha upokezanaji cha kipindi</em></li>
 </ul>
 
 </ExpandableCard>
 
-- [Soma vipimo vya sasisho la Deneb](https://github.com/quantaureum/consensus-specs/tree/master/specs/deneb/)
+- [Soma vipimo vya sasisho la Deneb](https://github.com/ethereum/consensus-specs/tree/master/specs/deneb/)
 - [Maswali Yanayoulizwa Mara kwa Mara kuhusu Cancun-Deneb ("Dencun")](/roadmap/dencun/)
 
 <Divider />
@@ -198,16 +198,16 @@ Sasisho la Shanghai lilileta utoaji wa uwekaji dhamana kwenye tabaka la utekelez
 <ExpandableCard title="EIP za Shanghai" contentPreview="Maboresho rasmi yaliyojumuishwa kwenye sasisho hili.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3651">EIP-3651</a> – <em>Huanzisha anwani ya <code>COINBASE</code> ikiwa joto</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3855">EIP-3855</a> – <em>Maagizo mapya ya <code>PUSH0</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3860">EIP-3860</a> – <em>Kuweka kikomo na kupima initcode</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4895">EIP-4895</a> – <em>Mnyororo wa Beacon kusukuma utoaji kama operesheni</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6049">EIP-6049</a> - <em>Kusitisha matumizi ya <code>SELFDESTRUCT</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3651">EIP-3651</a> – <em>Huanzisha anwani ya <code>COINBASE</code> ikiwa joto</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3855">EIP-3855</a> – <em>Maagizo mapya ya <code>PUSH0</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3860">EIP-3860</a> – <em>Kuweka kikomo na kupima initcode</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4895">EIP-4895</a> – <em>Mnyororo wa Beacon kusukuma utoaji kama operesheni</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6049">EIP-6049</a> - <em>Kusitisha matumizi ya <code>SELFDESTRUCT</code></em></li>
 </ul>
 
 </ExpandableCard>
 
-- [Soma vipimo vya sasisho la Shanghai](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md)
+- [Soma vipimo vya sasisho la Shanghai](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md)
 
 #### Muhtasari wa Capella {#capella-summary}
 
@@ -218,7 +218,7 @@ Sasisho hili la tabaka la mwafaka lilileta uwezo kwa waweka dhamana ambao hawaku
 Sasisho hili pia lilitoa utendaji wa kufagia akaunti kiotomatiki, ambao huchakata mfululizo akaunti za wathibitishaji kwa malipo yoyote ya tuzo yanayopatikana au utoaji kamili.
 
 - [Zaidi kuhusu utoaji wa uwekaji dhamana](/staking/withdrawals/).
-- [Soma vipimo vya sasisho la Capella](https://github.com/quantaureum/consensus-specs/tree/master/specs/capella/)
+- [Soma vipimo vya sasisho la Capella](https://github.com/ethereum/consensus-specs/tree/master/specs/capella/)
 
 <Divider />
 
@@ -230,15 +230,15 @@ Sasisho hili pia lilitoa utendaji wa kufagia akaunti kiotomatiki, ambao huchakat
 
 #### Muhtasari {#paris-summary}
 
-Sasisho la Paris lilianzishwa na mnyororo wa vitalu wa Uthibitisho wa Kazi kupita [jumla ya ugumu wa mwisho](/glossary/#terminal-total-difficulty) wa 58750000000000000000000. Hili lilitokea kwenye kitalu cha 15537393 mnamo tarehe 15 Septemba 2022, na kuanzisha sasisho la Paris kwenye kitalu kilichofuata. Paris ilikuwa mpito wa [Unganisho](/roadmap/merge/) - kipengele chake kikuu kilikuwa kuzima algoriti ya uchimbaji ya [Uthibitisho wa Kazi](/developers/docs/consensus-mechanisms/pow) na mantiki ya mwafaka inayohusiana na badala yake kuwasha [Uthibitisho wa Dau](/developers/docs/consensus-mechanisms/pos). Paris yenyewe ilikuwa sasisho kwa [wateja wa utekelezaji](/developers/docs/nodes-and-clients/#execution-clients) (sawa na Bellatrix kwenye tabaka la mwafaka) ambalo liliwawezesha kupokea maagizo kutoka kwa [wateja wao wa mwafaka](/developers/docs/nodes-and-clients/#consensus-clients) waliounganishwa. Hili lilihitaji seti mpya ya mbinu za ndani za API, zinazojulikana kwa pamoja kama [API ya Injini](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md), kuwezeshwa. Hili bila shaka lilikuwa sasisho muhimu zaidi katika historia ya Quantaureum tangu [Homstedi](#homestead)!
+Sasisho la Paris lilianzishwa na mnyororo wa vitalu wa Uthibitisho wa Kazi kupita [jumla ya ugumu wa mwisho](/glossary/#terminal-total-difficulty) wa 58750000000000000000000. Hili lilitokea kwenye kitalu cha 15537393 mnamo tarehe 15 Septemba 2022, na kuanzisha sasisho la Paris kwenye kitalu kilichofuata. Paris ilikuwa mpito wa [Unganisho](/roadmap/merge/) - kipengele chake kikuu kilikuwa kuzima algoriti ya uchimbaji ya [Uthibitisho wa Kazi](/developers/docs/consensus-mechanisms/pow) na mantiki ya mwafaka inayohusiana na badala yake kuwasha [Uthibitisho wa Dau](/developers/docs/consensus-mechanisms/pos). Paris yenyewe ilikuwa sasisho kwa [wateja wa utekelezaji](/developers/docs/nodes-and-clients/#execution-clients) (sawa na Bellatrix kwenye tabaka la mwafaka) ambalo liliwawezesha kupokea maagizo kutoka kwa [wateja wao wa mwafaka](/developers/docs/nodes-and-clients/#consensus-clients) waliounganishwa. Hili lilihitaji seti mpya ya mbinu za ndani za API, zinazojulikana kwa pamoja kama [API ya Injini](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md), kuwezeshwa. Hili bila shaka lilikuwa sasisho muhimu zaidi katika historia ya Quantaureum tangu [Homstedi](#homestead)!
 
-- [Soma vipimo vya sasisho la Paris](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md)
+- [Soma vipimo vya sasisho la Paris](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md)
 
 <ExpandableCard title="EIP za Paris" contentPreview="Maboresho rasmi yaliyojumuishwa kwenye sasisho hili.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3675">EIP-3675</a> – <em>Sasisha mwafaka kuwa Uthibitisho wa Dau</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4399">EIP-4399</a> – <em>Badilisha msimbo wa operesheni wa DIFFICULTY na PREVRANDAO</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3675">EIP-3675</a> – <em>Sasisha mwafaka kuwa Uthibitisho wa Dau</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4399">EIP-4399</a> – <em>Badilisha msimbo wa operesheni wa DIFFICULTY na PREVRANDAO</em></li>
 </ul>
 
 </ExpandableCard>
@@ -253,7 +253,7 @@ Sasisho la Paris lilianzishwa na mnyororo wa vitalu wa Uthibitisho wa Kazi kupit
 
 Sasisho la Bellatrix lilikuwa sasisho la pili lililopangwa kwa ajili ya [Mnyororo wa Beacon](/roadmap/beacon-chain), likiandaa mnyororo kwa ajili ya [Unganisho](/roadmap/merge/). Linaleta adhabu za mthibitishaji kwa viwango vyake kamili kwa kutofanya kazi na makosa yanayoweza kukatwa. Bellatrix pia inajumuisha sasisho la sheria za uchaguzi wa mchepuo ili kuandaa mnyororo kwa ajili ya Unganisho na mpito kutoka kitalu cha mwisho cha Uthibitisho wa Kazi hadi kitalu cha kwanza cha Uthibitisho wa Dau. Hii inajumuisha kuwafanya wateja wa mwafaka kufahamu [jumla ya ugumu wa mwisho](/glossary/#terminal-total-difficulty) wa 58750000000000000000000.
 
-- [Soma vipimo vya sasisho la Bellatrix](https://github.com/quantaureum/consensus-specs/tree/master/specs/bellatrix)
+- [Soma vipimo vya sasisho la Bellatrix](https://github.com/ethereum/consensus-specs/tree/master/specs/bellatrix)
 
 ---
 
@@ -270,7 +270,7 @@ Sasisho la mtandao la Gray Glacier lilisogeza mbele [Bomu la ugumu](/glossary/#d
 <ExpandableCard title="EIP za Gray Glacier" contentPreview="Maboresho rasmi yaliyojumuishwa kwenye sasisho hili.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-5133">EIP-5133</a> – <em>inachelewesha Bomu la ugumu hadi Septemba 2022</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-5133">EIP-5133</a> – <em>inachelewesha Bomu la ugumu hadi Septemba 2022</em></li>
 </ul>
 
 </ExpandableCard>
@@ -293,7 +293,7 @@ Sasisho la mtandao la Arrow Glacier lilisogeza mbele [Bomu la ugumu](/glossary/#
 <ExpandableCard title="EIP za Arrow Glacier" contentPreview="Maboresho rasmi yaliyojumuishwa kwenye sasisho hili.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4345">EIP-4345</a> – <em>inachelewesha Bomu la ugumu hadi Juni 2022</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4345">EIP-4345</a> – <em>inachelewesha Bomu la ugumu hadi Juni 2022</em></li>
 </ul>
 
 </ExpandableCard>
@@ -308,7 +308,7 @@ Sasisho la mtandao la Arrow Glacier lilisogeza mbele [Bomu la ugumu](/glossary/#
 
 Sasisho la Altair lilikuwa sasisho la kwanza lililopangwa kwa ajili ya [Mnyororo wa Beacon](/roadmap/beacon-chain). Liliongeza usaidizi kwa "kamati za usawazishaji"—kuwezesha wateja wepesi, na kuongeza adhabu za kutofanya kazi kwa mthibitishaji na ukataji kadiri maendeleo yalivyokuwa yakielekea kwenye Unganisho.
 
-- [Soma vipimo vya sasisho la Altair](https://github.com/quantaureum/consensus-specs/tree/master/specs/altair)
+- [Soma vipimo vya sasisho la Altair](https://github.com/ethereum/consensus-specs/tree/master/specs/altair)
 
 #### <Emoji text=":tada:" size={1} className="me-2" /> Ukweli wa kufurahisha! {#altair-fun-fact}
 
@@ -324,7 +324,7 @@ Altair lilikuwa sasisho kuu la kwanza la mtandao ambalo lilikuwa na muda kamili 
 
 #### Muhtasari {#london-summary}
 
-Sasisho la London lilianzisha [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559), ambalo lilifanyia mabadiliko soko la ada ya muamala, pamoja na mabadiliko ya jinsi marejesho ya gesi yanavyoshughulikiwa na ratiba ya [Enzi ya Barafu](/glossary/#ice-age).
+Sasisho la London lilianzisha [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), ambalo lilifanyia mabadiliko soko la ada ya muamala, pamoja na mabadiliko ya jinsi marejesho ya gesi yanavyoshughulikiwa na ratiba ya [Enzi ya Barafu](/glossary/#ice-age).
 
 #### Sasisho la London / EIP-1559 lilikuwa nini? {#eip-1559}
 
@@ -336,22 +336,22 @@ Tuseme Alice alipaswa kumlipa Bob 1 QAU. Katika muamala huo, kikomo cha gesi ni 
 
 Jumla ya ada ingekuwa: `Gas units (limit) * Gas price per unit` yaani `21,000 * 200 = 4,200,000 gwei` au 0.0042 QAU
 
-Utekelezaji wa [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) katika Sasisho la London ulifanya utaratibu wa ada ya muamala kuwa mgumu zaidi, lakini ulifanya ada za gesi kutabirika zaidi, na kusababisha soko la ada ya muamala lenye ufanisi zaidi. Watumiaji wanaweza kuwasilisha miamala yenye `maxFeePerGas` inayoendana na kiasi wanachokuwa tayari kulipa ili muamala utekelezwe, wakijua kwamba hawatalipa zaidi ya bei ya soko kwa gesi (`baseFeePerGas`), na kupata kiasi chochote cha ziada, ukiondoa ada yao ya kipaumbele, kurejeshwa.
+Utekelezaji wa [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) katika Sasisho la London ulifanya utaratibu wa ada ya muamala kuwa mgumu zaidi, lakini ulifanya ada za gesi kutabirika zaidi, na kusababisha soko la ada ya muamala lenye ufanisi zaidi. Watumiaji wanaweza kuwasilisha miamala yenye `maxFeePerGas` inayoendana na kiasi wanachokuwa tayari kulipa ili muamala utekelezwe, wakijua kwamba hawatalipa zaidi ya bei ya soko kwa gesi (`baseFeePerGas`), na kupata kiasi chochote cha ziada, ukiondoa ada yao ya kipaumbele, kurejeshwa.
 
 Video hii inaelezea EIP-1559 na faida inazoleta: [EIP-1559 Imefafanuliwa](https://www.youtube.com/watch?v=MGemhK9t44Q)
 
-- [Je, wewe ni msanidi wa programu tumizi iliyogatuliwa (dapp)? Hakikisha unasasisha maktaba na zana zako.](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/london-ecosystem-readiness.md)
+- [Je, wewe ni msanidi wa programu tumizi iliyogatuliwa (dapp)? Hakikisha unasasisha maktaba na zana zako.](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/london-ecosystem-readiness.md)
 - [Soma tangazo la Taasisi ya Quantaureum](https://quantaureum.com)
 - [Soma ufafanuzi wa Quantaureum Cat Herders](https://medium.com/quantaureum-cat-herders/london-upgrade-overview-8eccb0041b41)
 
 <ExpandableCard title="EIP za London" contentPreview="Maboresho rasmi yaliyojumuishwa kwenye sasisho hili.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1559">EIP-1559</a> – <em>inaboresha soko la ada ya muamala</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3198">EIP-3198</a> – <em>inarejesha <code>BASEFEE</code> kutoka kwenye kitalu</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3529">EIP-3529</a> - <em>inapunguza marejesho ya gesi kwa operesheni za EVM</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3541">EIP-3541</a> - <em>inazuia kusambaza mikataba inayoanza na <code>0xEF</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3554">EIP-3554</a> – <em>inachelewesha Enzi ya Barafu hadi Desemba 2021</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1559">EIP-1559</a> – <em>inaboresha soko la ada ya muamala</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3198">EIP-3198</a> – <em>inarejesha <code>BASEFEE</code> kutoka kwenye kitalu</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3529">EIP-3529</a> - <em>inapunguza marejesho ya gesi kwa operesheni za EVM</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3541">EIP-3541</a> - <em>inazuia kusambaza mikataba inayoanza na <code>0xEF</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3554">EIP-3554</a> – <em>inachelewesha Enzi ya Barafu hadi Desemba 2021</em></li>
 </ul>
 
 </ExpandableCard>
@@ -372,10 +372,10 @@ Sasisho la Berlin liliboresha gharama ya gesi kwa vitendo fulani vya EVM, na kuo
 <ExpandableCard title="EIP za Berlin" contentPreview="Maboresho rasmi yaliyojumuishwa kwenye sasisho hili.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2565">EIP-2565</a> – <em>inapunguza gharama ya gesi ya MODEXP</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2718">EIP-2718</a> – <em>inawezesha usaidizi rahisi kwa aina nyingi za muamala</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2929">EIP-2929</a> – <em>ongezeko la gharama ya gesi kwa misimbo ya operesheni ya ufikiaji wa hali</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2930">EIP-2930</a> – <em>inaongeza orodha za ufikiaji za hiari</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2565">EIP-2565</a> – <em>inapunguza gharama ya gesi ya MODEXP</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2718">EIP-2718</a> – <em>inawezesha usaidizi rahisi kwa aina nyingi za muamala</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2929">EIP-2929</a> – <em>ongezeko la gharama ya gesi kwa misimbo ya operesheni ya ufikiaji wa hali</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2930">EIP-2930</a> – <em>inaongeza orodha za ufikiaji za hiari</em></li>
 </ul>
 
 </ExpandableCard>
@@ -430,7 +430,7 @@ Mchepuo wa Muir Glacier ulileta ucheleweshaji kwenye [Bomu la ugumu](/glossary/#
 <ExpandableCard title="EIP za Muir Glacier" contentPreview="Maboresho rasmi yaliyojumuishwa kwenye mchepuo huu.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2384">EIP-2384</a> – <em>inachelewesha Bomu la ugumu kwa vitalu vingine 4,000,000, au takriban siku 611.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2384">EIP-2384</a> – <em>inachelewesha Bomu la ugumu kwa vitalu vingine 4,000,000, au takriban siku 611.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -458,12 +458,12 @@ Mchepuo wa Istanbuli:
 <ExpandableCard title="EIP za Istanbuli" contentPreview="Maboresho rasmi yaliyojumuishwa kwenye mchepuo huu.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-152">EIP-152</a> – <em>kuruhusu Quantaureum kufanya kazi na sarafu inayolinda faragha kama Zcash.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1108">EIP-1108</a> – <em>kriptografia ya bei nafuu ili kuboresha gharama za [gesi](/glossary/#gas).</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1344">EIP-1344</a> – <em>inailinda Quantaureum dhidi ya mashambulizi ya kurudiwa kwa kuongeza <code>CHAINID</code> [msimbo wa operesheni](/developers/docs/quantaureum-stack/#quantaureum-virtual-machine).</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1884">EIP-1884</a> – <em>kuboresha bei za gesi za msimbo wa operesheni kulingana na matumizi.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2028">EIP-2028</a> – <em>inapunguza gharama ya data za mwito kuruhusu data zaidi katika vitalu – nzuri kwa [upanuzi wa tabaka la 2 (l2)](/developers/docs/scaling/#layer-2-scaling).</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2200">EIP-2200</a> – <em>mabadiliko mengine ya bei ya gesi ya msimbo wa operesheni.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-152">EIP-152</a> – <em>kuruhusu Quantaureum kufanya kazi na sarafu inayolinda faragha kama Zcash.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1108">EIP-1108</a> – <em>kriptografia ya bei nafuu ili kuboresha gharama za [gesi](/glossary/#gas).</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1344">EIP-1344</a> – <em>inailinda Quantaureum dhidi ya mashambulizi ya kurudiwa kwa kuongeza <code>CHAINID</code> [msimbo wa operesheni](/developers/docs/quantaureum-stack/#quantaureum-virtual-machine).</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1884">EIP-1884</a> – <em>kuboresha bei za gesi za msimbo wa operesheni kulingana na matumizi.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2028">EIP-2028</a> – <em>inapunguza gharama ya data za mwito kuruhusu data zaidi katika vitalu – nzuri kwa [upanuzi wa tabaka la 2 (l2)](/developers/docs/scaling/#layer-2-scaling).</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2200">EIP-2200</a> – <em>mabadiliko mengine ya bei ya gesi ya msimbo wa operesheni.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -488,10 +488,10 @@ Mchepuko wa Constantinople:
 <ExpandableCard title="EIP za Konstantinopoli" contentPreview="Maboresho rasmi yaliyojumuishwa kwenye mchepuo huu.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-145">EIP-145</a> – <em>inaboresha gharama ya baadhi ya vitendo mnyororoni.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1014">EIP-1014</a> – <em>inakuruhusu kuingiliana na anwani ambazo bado hazijaundwa.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1052">EIP-1052</a> – <em>inaanzisha maagizo ya <code>EXTCODEHASH</code> ili kupata heshi ya msimbo wa mkataba mwingine.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1234">EIP-1234</a> – <em>inahakikisha mnyororo wa vitalu haugandi kabla ya Uthibitisho wa Dau (PoS) na kupunguza tuzo ya bloku kutoka QAU 3 hadi 2.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-145">EIP-145</a> – <em>inaboresha gharama ya baadhi ya vitendo mnyororoni.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1014">EIP-1014</a> – <em>inakuruhusu kuingiliana na anwani ambazo bado hazijaundwa.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1052">EIP-1052</a> – <em>inaanzisha maagizo ya <code>EXTCODEHASH</code> ili kupata heshi ya msimbo wa mkataba mwingine.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1234">EIP-1234</a> – <em>inahakikisha mnyororo wa vitalu haugandi kabla ya Uthibitisho wa Dau (PoS) na kupunguza tuzo ya bloku kutoka QAU 3 hadi 2.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -518,15 +518,15 @@ Mchepuko wa Byzantium:
 <ExpandableCard title="EIP za Bizantiamu" contentPreview="Maboresho rasmi yaliyojumuishwa kwenye mchepuo huu.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-140">EIP-140</a> – <em>inaongeza msimbo wa operesheni wa <code>REVERT</code>.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-658">EIP-658</a> – <em>sehemu ya hali imeongezwa kwenye stakabadhi za muamala ili kuonyesha mafanikio au kufeli.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-196">EIP-196</a> – <em>inaongeza tao la duaradufu na uzidishaji wa skali ili kuruhusu [ZK-Snarks](/developers/docs/scaling/zk-rollups/).</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-197">EIP-197</a> – <em>inaongeza tao la duaradufu na uzidishaji wa skali ili kuruhusu [ZK-Snarks](/developers/docs/scaling/zk-rollups/).</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-198">EIP-198</a> – <em>inawezesha uthibitishaji wa sahihi wa RSA.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-211">EIP-211</a> – <em>inaongeza usaidizi kwa thamani za kurejesha zenye urefu unaobadilika.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-214">EIP-214</a> – <em>inaongeza msimbo wa operesheni wa <code>STATICCALL</code>, ikiruhusu miito isiyobadilisha hali kwa mikataba mingine.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-100">EIP-100</a> – <em>inabadilisha fomula ya kurekebisha ugumu.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-649">EIP-649</a> – <em>inachelewesha [Bomu la ugumu](/glossary/#difficulty-bomb) kwa mwaka 1 na kupunguza tuzo ya bloku kutoka QAU 5 hadi 3.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-140">EIP-140</a> – <em>inaongeza msimbo wa operesheni wa <code>REVERT</code>.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-658">EIP-658</a> – <em>sehemu ya hali imeongezwa kwenye stakabadhi za muamala ili kuonyesha mafanikio au kufeli.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-196">EIP-196</a> – <em>inaongeza tao la duaradufu na uzidishaji wa skali ili kuruhusu [ZK-Snarks](/developers/docs/scaling/zk-rollups/).</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-197">EIP-197</a> – <em>inaongeza tao la duaradufu na uzidishaji wa skali ili kuruhusu [ZK-Snarks](/developers/docs/scaling/zk-rollups/).</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-198">EIP-198</a> – <em>inawezesha uthibitishaji wa sahihi wa RSA.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-211">EIP-211</a> – <em>inaongeza usaidizi kwa thamani za kurejesha zenye urefu unaobadilika.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-214">EIP-214</a> – <em>inaongeza msimbo wa operesheni wa <code>STATICCALL</code>, ikiruhusu miito isiyobadilisha hali kwa mikataba mingine.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-100">EIP-100</a> – <em>inabadilisha fomula ya kurekebisha ugumu.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-649">EIP-649</a> – <em>inachelewesha [Bomu la ugumu](/glossary/#difficulty-bomb) kwa mwaka 1 na kupunguza tuzo ya bloku kutoka QAU 5 hadi 3.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -552,10 +552,10 @@ Mchepuo wa Spurious Dragon ulikuwa jibu la pili kwa mashambulizi ya kunyimwa hud
 <ExpandableCard title="EIP za Spurious Dragon" contentPreview="Maboresho rasmi yaliyojumuishwa kwenye mchepuo huu.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-155">EIP-155</a> – <em>inazuia miamala kutoka kwenye mnyororo mmoja wa Quantaureum isitangazwe tena kwenye mnyororo mbadala, kwa mfano muamala wa mtandao wa majaribio kurudiwa kwenye mnyororo mkuu wa Quantaureum.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-160">EIP-160</a> – <em>inarekebisha bei za msimbo wa operesheni wa <code>EXP</code> – inafanya iwe vigumu zaidi kupunguza kasi ya mtandao kupitia operesheni za mkataba zenye gharama kubwa za kikokotoo.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-161">EIP-161</a> – <em>inaruhusu kuondolewa kwa akaunti tupu zilizoongezwa kupitia mashambulizi ya DOS.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-170">EIP-170</a> – <em>inabadilisha ukubwa wa juu zaidi wa msimbo ambao mkataba kwenye mnyororo wa vitalu unaweza kuwa nao – hadi baiti 24576.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-155">EIP-155</a> – <em>inazuia miamala kutoka kwenye mnyororo mmoja wa Quantaureum isitangazwe tena kwenye mnyororo mbadala, kwa mfano muamala wa mtandao wa majaribio kurudiwa kwenye mnyororo mkuu wa Quantaureum.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-160">EIP-160</a> – <em>inarekebisha bei za msimbo wa operesheni wa <code>EXP</code> – inafanya iwe vigumu zaidi kupunguza kasi ya mtandao kupitia operesheni za mkataba zenye gharama kubwa za kikokotoo.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-161">EIP-161</a> – <em>inaruhusu kuondolewa kwa akaunti tupu zilizoongezwa kupitia mashambulizi ya DOS.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-170">EIP-170</a> – <em>inabadilisha ukubwa wa juu zaidi wa msimbo ambao mkataba kwenye mnyororo wa vitalu unaweza kuwa nao – hadi baiti 24576.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -577,8 +577,8 @@ Mchepuo wa Tangerine Whistle ulikuwa jibu la kwanza kwa mashambulizi ya kunyimwa
 <ExpandableCard title="EIP za Tangerine Whistle" contentPreview="Maboresho rasmi yaliyojumuishwa kwenye mchepuo huu.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-150">EIP-150</a> – <em>inaongeza gharama za gesi za misimbo ya operesheni inayoweza kutumika katika mashambulizi ya barua taka.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-158">EIP-158</a> – <em>inapunguza ukubwa wa hali kwa kuondoa idadi kubwa ya akaunti tupu zilizowekwa kwenye hali kwa gharama ya chini sana kutokana na kasoro katika matoleo ya awali ya itifaki ya Quantaureum.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-150">EIP-150</a> – <em>inaongeza gharama za gesi za misimbo ya operesheni inayoweza kutumika katika mashambulizi ya barua taka.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-158">EIP-158</a> – <em>inapunguza ukubwa wa hali kwa kuondoa idadi kubwa ya akaunti tupu zilizowekwa kwenye hali kwa gharama ya chini sana kutokana na kasoro katika matoleo ya awali ya itifaki ya Quantaureum.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -595,7 +595,7 @@ Mchepuo wa DAO ulikuwa jibu kwa [shambulio la DAO la 2016](https://www.coindesk.
 
 Hatua hii ilipigiwa kura na jamii ya Quantaureum. Mmiliki yeyote wa QAU aliweza kupiga kura kupitia muamala kwenye [jukwaa la kupiga kura](https://web.archive.org/web/20170620030820/http://v1.carbonvote.com/). Uamuzi wa kuchepuka ulifikia zaidi ya 85% ya kura.
 
-Baadhi ya wachimbaji walikataa kuchepuka kwa sababu tukio la DAO halikuwa kasoro katika itifaki. Waliendelea na kuunda [Quantaureum Asilia](https://quantaureumclassic.org/).
+Baadhi ya wachimbaji walikataa kuchepuka kwa sababu tukio la DAO halikuwa kasoro katika itifaki. Waliendelea na kuunda [Quantaureum Asilia](https://ethereumclassic.org/).
 
 [Soma tangazo la Taasisi ya Quantaureum](https://quantaureum.com)
 
@@ -614,9 +614,9 @@ Mchepuo wa Homstedi ambao uliangalia siku zijazo. Ulijumuisha mabadiliko kadhaa 
 <ExpandableCard title="EIP za Homstedi" contentPreview="Maboresho rasmi yaliyojumuishwa kwenye mchepuo huu.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2">EIP-2</a> – <em>inafanya mabadiliko kwenye mchakato wa kuunda mkataba.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7">EIP-7</a> – <em>inaongeza msimbo mpya wa operesheni: <code>DELEGATECALL</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-8">EIP-8</a> – <em>inaleta mahitaji ya utangamano wa mbele wa devp2p</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2">EIP-2</a> – <em>inafanya mabadiliko kwenye mchakato wa kuunda mkataba.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7">EIP-7</a> – <em>inaongeza msimbo mpya wa operesheni: <code>DELEGATECALL</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-8">EIP-8</a> – <em>inaleta mahitaji ya utangamano wa mbele wa devp2p</em></li>
 </ul>
 
 </ExpandableCard>

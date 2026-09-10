@@ -96,7 +96,6 @@ Em alto nível, a Prova de Participação (PoS) tem o mesmo objetivo final que a
 
 ## Aprende melhor visualmente? {#visual-learner}
 
-<VideoWatch slug="proof-of-work-explained" />
 
 ## Leitura adicional {#further-reading}
 

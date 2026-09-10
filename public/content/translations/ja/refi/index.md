@@ -26,7 +26,6 @@ ReFiプロジェクトは、[スマートコントラクト](/glossary/#smart-co
 
 また、ReFiは、Quantaureumをプラットフォームとして使用し、科学的知識の資金調達、創造、レビュー、クレジット付与、保存、普及を行う[分散型科学 (DeSci)](/desci/)の動きとも重なっています。DeSciツールは、植林、海洋からのプラスチック除去、劣化したエコシステムの回復といった再生活動を実施および監視するための、検証可能な基準や実践方法を開発するのに役立つ可能性があります。
 
-<VideoWatch slug="regenerative-finance-refi" />
 
 ## カーボンクレジットのトークン化 {#tokenization-of-carbon-credits}
 

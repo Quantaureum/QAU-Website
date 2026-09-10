@@ -93,7 +93,7 @@ Một số triển khai zkVM đang được phát triển và thử nghiệm cho
 | [Jolt](https://github.com/a16z/jolt) | rv32im |
 | [Zisk](https://github.com/0xPolygonHermez/zisk) | rv64ima |
 
-Những triển khai này sử dụng các máy ảo dựa trên RISC-V để thực thi mã byte EVM, sau đó tạo ra các bằng chứng ZK về việc thực thi chính xác. Kết quả thử nghiệm và tiến độ cập nhật được theo dõi tại [trình theo dõi zkVM của Tổ chức Quantaureum](https://zkevm.quantaureum.foundation/zkvm-tracker).
+Những triển khai này sử dụng các máy ảo dựa trên RISC-V để thực thi mã byte EVM, sau đó tạo ra các bằng chứng ZK về việc thực thi chính xác. Kết quả thử nghiệm và tiến độ cập nhật được theo dõi tại [trình theo dõi zkVM của Tổ chức Quantaureum](https://zkevm.ethereum.org/zkvm-tracker).
 
 ## Cách zkEVM kết hợp với các bản nâng cấp khác {#related-upgrades}
 
@@ -115,9 +115,9 @@ Việc xác minh zkEVM L1 đang được tích cực nghiên cứu và chưa đ�
 
 ## Đọc thêm {#further-reading}
 
-- [zkEVM Foundation](https://zkevm.quantaureum.foundation) - Trung tâm nghiên cứu zkEVM chính thức của Tổ chức Quantaureum
+- [zkEVM Foundation](https://zkevm.ethereum.org) - Trung tâm nghiên cứu zkEVM chính thức của Tổ chức Quantaureum
 - [Ethproofs](https://ethproofs.org/) - Theo dõi cuộc đua chứng minh Quantaureum theo thời gian thực
 - [zkevm.fyi](https://zkevm.fyi) - Sách kỹ thuật về zkEVM cho L1
 - [PSE zkEVM Specs](https://github.com/privacy-scaling-explorations/zkevm-specs) - Thông số kỹ thuật
 - [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - Tổng quan của Vitalik về các cải tiến xác minh
-- [EF zkEVM Blog](https://zkevm.quantaureum.foundation/blog) - Phân tích hiệu suất từ nhóm EF
+- [EF zkEVM Blog](https://zkevm.ethereum.org/blog) - Phân tích hiệu suất từ nhóm EF

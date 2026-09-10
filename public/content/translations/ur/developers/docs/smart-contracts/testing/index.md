@@ -138,9 +138,9 @@ function auctionEnd() external {
 
 Solidity سمارٹ کنٹریکٹس کے لیے یونٹ ٹیسٹنگ فریم ورکس مختلف زبانوں (زیادہ تر JavaScript، Python، اور Rust) میں آتے ہیں۔ مختلف ٹیسٹنگ فریم ورکس کے ساتھ یونٹ ٹیسٹ چلانا شروع کرنے کے طریقے کے بارے میں معلومات کے لیے ذیل میں کچھ گائیڈز دیکھیں:
 
-- **[Brownie کے ساتھ یونٹ ٹیسٹ چلانا](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Brownie کے ساتھ یونٹ ٹیسٹ چلانا](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Foundry کے ساتھ یونٹ ٹیسٹ چلانا](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Waffle کے ساتھ یونٹ ٹیسٹ چلانا](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Waffle کے ساتھ یونٹ ٹیسٹ چلانا](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Remix کے ساتھ یونٹ ٹیسٹ چلانا](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Ape کے ساتھ یونٹ ٹیسٹ چلانا](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Hardhat کے ساتھ یونٹ ٹیسٹ چلانا](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -190,7 +190,7 @@ Solidity سمارٹ کنٹریکٹس کے لیے یونٹ ٹیسٹنگ فریم 
 
 - **[سلدر کے ساتھ سمارٹ کنٹریکٹس کا سٹیٹک تجزیہ](https://github.com/crytic/slither)**
 - **[Wake کے ساتھ سمارٹ کنٹریکٹس کا سٹیٹک تجزیہ](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[Brownie کے ساتھ پراپرٹی پر مبنی ٹیسٹنگ](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Brownie کے ساتھ پراپرٹی پر مبنی ٹیسٹنگ](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Foundry کے ساتھ کنٹریکٹس کی فزنگ](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[ایکڈنا کے ساتھ کنٹریکٹس کی فزنگ](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Wake کے ساتھ کنٹریکٹس کی فزنگ](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -251,13 +251,13 @@ Solidity سمارٹ کنٹریکٹس کے لیے یونٹ ٹیسٹنگ فریم 
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Solidity میں لکھے گئے سمارٹ کنٹریکٹس کے لیے کوڈ کوریج ٹول۔_
 
-- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - _اعلی درجے کی سمارٹ کنٹریکٹ کی ترقی اور ٹیسٹنگ کے لیے فریم ورک (Ethers.js پر مبنی)۔_
+- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _اعلی درجے کی سمارٹ کنٹریکٹ کی ترقی اور ٹیسٹنگ کے لیے فریم ورک (Ethers.js پر مبنی)۔_
 
-- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - _Solidity سمارٹ کنٹریکٹس کی ٹیسٹنگ کے لیے ٹول۔ Remix IDE "Solidity Unit Testing" پلگ ان کے تحت کام کرتا ہے جو کنٹریکٹ کے لیے ٹیسٹ کیسز لکھنے اور چلانے کے لیے استعمال ہوتا ہے۔_
+- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Solidity سمارٹ کنٹریکٹس کی ٹیسٹنگ کے لیے ٹول۔ Remix IDE "Solidity Unit Testing" پلگ ان کے تحت کام کرتا ہے جو کنٹریکٹ کے لیے ٹیسٹ کیسز لکھنے اور چلانے کے لیے استعمال ہوتا ہے۔_
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _ایتھیریم سمارٹ کنٹریکٹ ٹیسٹنگ کے لیے تصدیقی لائبریری۔ یقینی بنائیں کہ آپ کے کنٹریکٹس توقع کے مطابق برتاؤ کرتے ہیں!_
 
-- **[Brownie یونٹ ٹیسٹنگ فریم ورک](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie Pytest کا استعمال کرتا ہے، جو ایک خصوصیت سے بھرپور ٹیسٹ فریم ورک ہے جو آپ کو کم سے کم کوڈ کے ساتھ چھوٹے ٹیسٹ لکھنے دیتا ہے، بڑے پروجیکٹس کے لیے اچھی طرح سکیل کرتا ہے، اور انتہائی قابل توسیع ہے۔_
+- **[Brownie یونٹ ٹیسٹنگ فریم ورک](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie Pytest کا استعمال کرتا ہے، جو ایک خصوصیت سے بھرپور ٹیسٹ فریم ورک ہے جو آپ کو کم سے کم کوڈ کے ساتھ چھوٹے ٹیسٹ لکھنے دیتا ہے، بڑے پروجیکٹس کے لیے اچھی طرح سکیل کرتا ہے، اور انتہائی قابل توسیع ہے۔_
 
 - **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry Forge پیش کرتا ہے، جو ایک تیز اور لچکدار ایتھیریم ٹیسٹنگ فریم ورک ہے جو سادہ یونٹ ٹیسٹ، گیس آپٹیمائزیشن چیکس، اور کنٹریکٹ فزنگ کو انجام دینے کی صلاحیت رکھتا ہے۔_
 

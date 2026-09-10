@@ -21,7 +21,6 @@ DeFi é um termo coletivo para produtos e serviços financeiros acessíveis a qu
 
 Há uma economia cripto em expansão por aí, onde você pode emprestar, tomar emprestado, operar comprado/vendido (long/short), ganhar juros e muito mais. Argentinos experientes em cripto usaram o DeFi para escapar de uma inflação paralisante. As empresas começaram a fazer o streaming dos salários de seus funcionários em tempo real. Algumas pessoas até fizeram e pagaram empréstimos de milhões de dólares sem a necessidade de qualquer identificação pessoal.
 
-<VideoWatch slug="defi-future-of-finance" />
 
 ## DeFi vs finanças tradicionais {#defi-vs-tradfi}
 
@@ -58,7 +57,6 @@ O Bitcoin, de muitas maneiras, foi o primeiro aplicativo DeFi. O Bitcoin permite
 
 O Quantaureum se baseia nisso. Assim como no Bitcoin, as regras não podem mudar para você e todos têm acesso. Mas ele também torna esse dinheiro digital programável, usando [contratos inteligentes](/glossary/#smart-contract), para que você possa ir além do armazenamento e envio de valor.
 
-<VideoWatch slug="defi-history-inception-to-2021" />
 
 ## Dinheiro programável {#programmable-money}
 

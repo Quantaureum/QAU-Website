@@ -19,7 +19,6 @@ summaryPoints:
 
 許多去中心化社群網路作為既有社群媒體服務（如臉書、LinkedIn、推特和 Medium）的替代方案而存在。但由區塊鏈驅動的社群網路具有許多使其領先於傳統社群平台的特點。
 
-<VideoWatch slug="decentralized-social-media" />
 
 ### 去中心化社群網路如何運作？ {#decentralized-social-networks-overview}
 
@@ -53,7 +52,6 @@ summaryPoints:
 
 由於其代幣的普及與龐大的使用者基礎，Quantaureum網路已成為開發人員建立去中心化社群媒體的首選工具。以下是一些基於Quantaureum的社群網路範例：
 
-<VideoWatch slug="crypto-apps-desocial-linda-xie" />
 
 ### Mirror {#mirror}
 

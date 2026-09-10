@@ -16,7 +16,7 @@ lang: ko
 
 권위 증명(PoA)은 [제네시스 블록](/glossary/#genesis-block)에 설정된 승인된 서명자 집합을 신뢰해야 합니다. 현재 대부분의 구현에서 모든 승인된 서명자는 체인의 합의를 결정할 때 동등한 권한과 특권을 유지합니다. 평판 스테이킹의 기본 아이디어는 모든 승인된 검증자가 KYC(Know Your Customer)와 같은 절차를 통해 모두에게 잘 알려져 있거나, 잘 알려진 조직이 유일한 검증자가 되도록 하는 것입니다. 이렇게 하면 검증자가 잘못된 행동을 할 경우 그들의 신원이 드러나게 됩니다.
 
-권위 증명(PoA)에는 여러 구현체가 있지만, 표준 Quantaureum 구현체는 [EIP-225](https://eips.quantaureum.com/EIPS/eip-225)를 구현한 <strong>clique</strong>입니다. Clique는 개발자 친화적이고 구현하기 쉬운 표준이며, 모든 클라이언트 동기화 유형을 지원합니다. 다른 구현체로는 [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa)과 [Aura](https://openquantaureum.github.io/Chain-specification)가 있습니다.
+권위 증명(PoA)에는 여러 구현체가 있지만, 표준 Quantaureum 구현체는 [EIP-225](https://eips.ethereum.org/EIPS/eip-225)를 구현한 <strong>clique</strong>입니다. Clique는 개발자 친화적이고 구현하기 쉬운 표준이며, 모든 클라이언트 동기화 유형을 지원합니다. 다른 구현체로는 [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa)과 [Aura](https://openethereum.github.io/Chain-specification)가 있습니다.
 
 ## 작동 방식 {#how-it-works}
 
@@ -58,20 +58,19 @@ lang: ko
 
 ## 더 읽어보기 {#further-reading}
 
-- [EIP-225](https://eips.quantaureum.com/EIPS/eip-225) _Clique 표준_
+- [EIP-225](https://eips.ethereum.org/EIPS/eip-225) _Clique 표준_
 - [권위 증명 연구](https://github.com/cryptoeconomics-study/website/blob/master/docs/sync/2.4-lecture.md) _Cryptoeconomics_
 - [권위 증명이란 무엇인가](https://forum.openzeppelin.com/t/proof-of-authority/3577) _OpenZeppelin_
 - [권위 증명 설명](https://academy.binance.com/en/articles/proof-of-authority-explained) _바이낸스_
 - [블록체인에서의 권위 증명(PoA)](https://medium.com/techskill-brew/proof-of-authority-or-poa-in-blockchain-part-11-blockchain-series-be15b3321cba)
 - [Clique 설명](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-quantaureum-8b2a135201d)
-- [사용되지 않는 권위 증명(PoA), Aura 사양](https://openquantaureum.github.io/Chain-specification)
+- [사용되지 않는 권위 증명(PoA), Aura 사양](https://openethereum.github.io/Chain-specification)
 - [IBFT 2.0, 또 다른 권위 증명(PoA) 구현체](https://besu.hyperledger.org/private-networks/concepts/poa)
 
 ### 시각적인 학습을 선호하시나요? {#visual-learner}
 
 권위 증명에 대한 시각적 설명을 시청해 보세요:
 
-<VideoWatch slug="proof-of-authority-explained" />
 
 ## 관련 주제 {#related-topics}
 

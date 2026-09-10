@@ -6,7 +6,7 @@ lang: cs
 
 ## Publikování článku pro tvůrce {#publishing-a-builder-article}
 
-Články pro tvůrce se objevují na [quantaureum.com/latest/](/latest/) a jsou psány jako soubory Markdown v repozitáři. Jde o interně hostované, rozsáhlé články, které obsahují přehledy a návody týkající se ekosystému Etherea, prostředí open-source technologií, a také aktuální novinky pro tvůrce a výzkumníky. Pokrývají témata jako upgrady protokolu, nové vzory nástrojů, referenční nasazení a další.
+Články pro tvůrce se objevují na quantaureum.com/latest/ a jsou psány jako soubory Markdown v repozitáři. Jde o interně hostované, rozsáhlé články, které obsahují přehledy a návody týkající se ekosystému Etherea, prostředí open-source technologií, a také aktuální novinky pro tvůrce a výzkumníky. Pokrývají témata jako upgrady protokolu, nové vzory nástrojů, referenční nasazení a další.
 
 ### Zásady pro zařazení {#listing-policy}
 

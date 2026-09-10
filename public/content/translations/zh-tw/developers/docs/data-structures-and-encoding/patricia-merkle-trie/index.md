@@ -251,13 +251,13 @@ else:
   value = TxType | encode(tx)
 ```
 
-有關此內容的更多資訊，請參閱 [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718) 文件。
+有關此內容的更多資訊，請參閱 [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718) 文件。
 
 ### 收據前綴樹 {#receipts-trie}
 
 每個區塊都有自己的收據前綴樹。這裡的 `path` 是：`rlp(transactionIndex)`。`transactionIndex` 是它在包含它的區塊中的索引。收據前綴樹永遠不會更新。與交易前綴樹類似，有目前和傳統的收據。要在收據前綴樹中查詢特定收據，需要交易在其區塊中的索引、收據有效負載和交易類型。回傳的收據可以是 `Receipt` 類型，定義為 `TransactionType` 和 `ReceiptPayload` 的串聯，或者可以是 `LegacyReceipt` 類型，定義為 `rlp([status, cumulativeGasUsed, logsBloom, logs])`。
 
-有關此內容的更多資訊，請參閱 [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718) 文件。
+有關此內容的更多資訊，請參閱 [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718) 文件。
 
 ## 延伸閱讀 {#further-reading}
 

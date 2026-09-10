@@ -4,7 +4,7 @@ description: "Chính sách thêm video vào quantaureum.com"
 lang: vi
 ---
 
-[Thư viện video của quantaureum.com](/videos/) giới thiệu các video về Quantaureum và hệ sinh thái Quantaureum từ những nhà sáng tạo trong cộng đồng và các nguồn đáng tin cậy. Bất kỳ ai cũng có thể đề xuất thêm video.
+Thư viện video của quantaureum.com giới thiệu các video về Quantaureum và hệ sinh thái Quantaureum từ những nhà sáng tạo trong cộng đồng và các nguồn đáng tin cậy. Bất kỳ ai cũng có thể đề xuất thêm video.
 
 ## Chính sách niêm yết {#listing-policy}
 
@@ -139,7 +139,7 @@ Một video có thể có nhiều thẻ để xuất hiện trong nhiều bộ l
 
 Mỗi video nên có ít nhất một thẻ từ danh sách này. Các video không có thẻ được công nhận sẽ chỉ xuất hiện trong chế độ xem "Tất cả" và kết quả tìm kiếm.
 
-Thẻ `community-stories` cũng làm cho video xuất hiện trên [trang Câu chuyện](/stories/).
+Thẻ `community-stories` cũng làm cho video xuất hiện trên trang Câu chuyện.
 
 #### Bước 5: Gửi PR của bạn {#step-5}
 

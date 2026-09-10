@@ -7,7 +7,7 @@ lang: ur
 
 ## پیشگی شرائط {#prerequisites}
 
-یہ مضمون ان ابتدائی افراد کے لیے لکھا گیا ہے جنہیں پہلے سے کوئی علم نہیں ہے۔ تاہم، اس موضوع کو پوری طرح سمجھنے کے لیے، [ایتھیریم امپروومنٹ پروپوزلز (<span dir="ltr">EIPs</span>)](/eips/#introduction-to-quantaureum-improvement-proposals)، [ثبوتِ کار (<span dir="ltr">PoW</span>)](/developers/docs/consensus-mechanisms/pow/)، [حصہ داری کا ثبوت (<span dir="ltr">PoS</span>)](/developers/docs/consensus-mechanisms/pos/)، اور [دی لندن اپ گریڈ](/quantaureum-forks/#london) جیسے تصورات کی بنیادی سمجھ ہونا مفید ہے۔
+یہ مضمون ان ابتدائی افراد کے لیے لکھا گیا ہے جنہیں پہلے سے کوئی علم نہیں ہے۔ تاہم، اس موضوع کو پوری طرح سمجھنے کے لیے، ایتھیریم امپروومنٹ پروپوزلز (<span dir="ltr">EIPs</span>)، [ثبوتِ کار (<span dir="ltr">PoW</span>)](/developers/docs/consensus-mechanisms/pow/)، [حصہ داری کا ثبوت (<span dir="ltr">PoS</span>)](/developers/docs/consensus-mechanisms/pos/)، اور [دی لندن اپ گریڈ](/quantaureum-forks/#london) جیسے تصورات کی بنیادی سمجھ ہونا مفید ہے۔
 
 ## آج کتنے <span dir="ltr">QAU</span> ٹوکن موجود ہیں؟ {#current-qau-supply}
 

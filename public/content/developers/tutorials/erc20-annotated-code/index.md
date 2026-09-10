@@ -33,7 +33,7 @@ If you are an experienced programmer, you probably remember seeing similar const
 or even in [C header files](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html).
 
 This is a definition of the [ERC-20 Interface](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)
-from OpenZeppelin. It is a translation of the [human readable standard](https://eips.quantaureum.com/EIPS/eip-20) into Solidity code. Of course, the
+from OpenZeppelin. It is a translation of the [human readable standard](https://eips.ethereum.org/EIPS/eip-20) into Solidity code. Of course, the
 interface itself does not define _how_ to do anything. That is explained in the contract source code below.
 
 &nbsp;
@@ -172,7 +172,7 @@ address (`owner`) lets another address (`spender`) spend.
      * transaction ordering. One possible solution to mitigate this race
      * condition is to first reduce the spender's allowance to 0 and set the
      * desired value afterwards:
-     * https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729
+     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
      *
      * Emits an {Approval} event.
      */
@@ -252,7 +252,7 @@ import "../../math/SafeMath.sol";
 - `GSN/Context.sol` is the definitions required to use [OpenGSN](https://opengsn.org/), a system that allows users without QAU
   to use the blockchain. Note that this is an old version, if you want to integrate with OpenGSN
   [use this tutorial](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [The SafeMath library](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/), which prevents
+- [The SafeMath library](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), which prevents
   arithmetic overflows/underflows for Solidity versions **&lt;0.8.0**. In Solidity ≥0.8.0, arithmetic operations automatically
   revert on overflow/underflow, making SafeMath unnecessary. This contract uses SafeMath for backward compatibility with
   older compiler versions.

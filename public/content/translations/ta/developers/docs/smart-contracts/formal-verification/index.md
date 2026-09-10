@@ -235,7 +235,7 @@ function safe_add(uint x, uint y) returns(uint z){
 
 **Solidity SMTChecker** - _*Solidity இன் SMTChecker என்பது SMT (Satisfiability Modulo Theories) மற்றும் ஹார்ன் தீர்வு (Horn solving) ஆகியவற்றை அடிப்படையாகக் கொண்ட ஒரு உள்ளமைக்கப்பட்ட மாதிரிச் சரிபார்ப்பாகும். தொகுப்பின் போது ஒரு ஒப்பந்தத்தின் மூலக் குறியீடு விவரக்குறிப்புகளுடன் பொருந்துகிறதா என்பதை இது உறுதிப்படுத்துகிறது மற்றும் பாதுகாப்புப் பண்புகளின் மீறல்களை நிலையாகச் சரிபார்க்கிறது.*_
 
-- [GitHub](https://github.com/quantaureum/solidity)
+- [GitHub](https://github.com/ethereum/solidity)
 
 **solc-verify** - _*solc-verify என்பது Solidity தொகுப்பியின் நீட்டிக்கப்பட்ட பதிப்பாகும், இது குறிப்புகள் மற்றும் மட்டு நிரல் சரிபார்ப்பைப் பயன்படுத்தி Solidity குறியீட்டில் தானியங்கு முறைசார் சரிபார்ப்பைச் செய்ய முடியும்.*_
 

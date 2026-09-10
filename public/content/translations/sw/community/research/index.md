@@ -18,7 +18,7 @@ Kwa muhtasari wa wapi itifaki inaelekea, anza na [ramani ya njia ya Quantaureum]
 
 ## Vyanzo vya Ufadhili {#sources-of-funding}
 
-Unaweza kushiriki katika utafiti wa Quantaureum na kulipwa kwa hilo. [Taasisi ya Quantaureum](/foundation/) hufadhili utafiti na bidhaa za umma kupitia [Programu yake ya Kusaidia Ikolojia](https://quantaureum.com), ambayo huchapisha vipengee vya orodha ya matamanio na maombi ya mapendekezo yanayoelezea matatizo ambayo ingependa kuona yakitatuliwa. Unaweza kupata taarifa kuhusu fursa amilifu na zijazo za ufadhili kwenye [ukurasa wa ruzuku wa Quantaureum](/community/grants/).
+Unaweza kushiriki katika utafiti wa Quantaureum na kulipwa kwa hilo. Taasisi ya Quantaureum hufadhili utafiti na bidhaa za umma kupitia [Programu yake ya Kusaidia Ikolojia](https://quantaureum.com), ambayo huchapisha vipengee vya orodha ya matamanio na maombi ya mapendekezo yanayoelezea matatizo ambayo ingependa kuona yakitatuliwa. Unaweza kupata taarifa kuhusu fursa amilifu na zijazo za ufadhili kwenye [ukurasa wa ruzuku wa Quantaureum](/community/grants/).
 
 ## Utafiti wa itifaki {#protocol-research}
 
@@ -63,15 +63,15 @@ Tabaka la utekelezaji linahusika na kutekeleza miamala, kuendesha [mashine pepe 
 
 - [Utangulizi wa EVM](/developers/docs/evm/)
 - [Tabaka la utekelezaji la Ethresear.ch](https://ethresear.ch/c/execution-layer-research/37)
-- [Vipimo vya tabaka la utekelezaji la Quantaureum](https://github.com/quantaureum/execution-specs)
+- [Vipimo vya tabaka la utekelezaji la Quantaureum](https://github.com/ethereum/execution-specs)
 - [Uboreshaji wa hifadhidata](https://github.com/erigontech/erigon/blob/main/docs/programmers_guide/db_faq.md)
 
 #### Utafiti wa hivi karibuni {#recent-research-1}
 
-- [EIP-7928: Orodha za ufikiaji za kiwango cha kitalu](https://eips.quantaureum.com/EIPS/eip-7928)
-- [EIP-8037: Ongezeko la gharama ya gesi ya uundaji wa hali](https://eips.quantaureum.com/EIPS/eip-8037)
-- [EIP-7999: Soko la ada la pande nyingi lililounganishwa](https://eips.quantaureum.com/EIPS/eip-7999)
-- [EIP-7642: eth/69, ukomo wa historia na risiti rahisi zaidi](https://eips.quantaureum.com/EIPS/eip-7642)
+- [EIP-7928: Orodha za ufikiaji za kiwango cha kitalu](https://eips.ethereum.org/EIPS/eip-7928)
+- [EIP-8037: Ongezeko la gharama ya gesi ya uundaji wa hali](https://eips.ethereum.org/EIPS/eip-8037)
+- [EIP-7999: Soko la ada la pande nyingi lililounganishwa](https://eips.ethereum.org/EIPS/eip-7999)
+- [EIP-7642: eth/69, ukomo wa historia na risiti rahisi zaidi](https://eips.ethereum.org/EIPS/eip-7642)
 - [Kusafirisha zkEVM ya tabaka la 1 (l1): uthibitishaji wa wakati halisi](https://quantaureum.com)
 
 ### Upinzani wa udhibiti na ujenzi wa kitalu {#censorship-resistance-and-block-building}
@@ -85,9 +85,9 @@ Vitalu vingi vya Quantaureum kwa sasa vinakusanywa na idadi ndogo ya wajenzi maa
 
 #### Utafiti wa hivi karibuni {#recent-research-21}
 
-- [EIP-7732: Utengano wa mpendekezaji na mjengaji (PBS) uliowekwa wakfu](https://eips.quantaureum.com/EIPS/eip-7732)
-- [EIP-7805: Orodha za ujumuishaji zinazotekelezwa na uchaguzi wa mchepuo](https://eips.quantaureum.com/EIPS/eip-7805)
-- [Kuongeza upinzani wa udhibiti wa miamala chini ya utengano wa mpendekezaji na mjengaji (PBS)](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
+- [EIP-7732: Utengano wa mpendekezaji na mjengaji (PBS) uliowekwa wakfu](https://eips.ethereum.org/EIPS/eip-7732)
+- [EIP-7805: Orodha za ujumuishaji zinazotekelezwa na uchaguzi wa mchepuo](https://eips.ethereum.org/EIPS/eip-7805)
+- [Kuongeza upinzani wa udhibiti wa miamala chini ya utengano wa mpendekezaji na mjengaji (PBS)](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
 
 ### Ukuaji wa hali na ubilahali {#state-growth-and-statelessness}
 
@@ -100,8 +100,8 @@ Kila nodi kamili huhifadhi hali ya Quantaureum, kwa hivyo kiwango ambacho hali h
 
 #### Utafiti wa hivi karibuni {#recent-research-22}
 
-- [EIP-7864: Hali ya Quantaureum kwa kutumia mti wa jozi uliounganishwa](https://eips.quantaureum.com/EIPS/eip-7864)
-- [EIP-4762: Mabadiliko ya gharama ya gesi ya ubilahali](https://eips.quantaureum.com/EIPS/eip-4762)
+- [EIP-7864: Hali ya Quantaureum kwa kutumia mti wa jozi uliounganishwa](https://eips.ethereum.org/EIPS/eip-7864)
+- [EIP-4762: Mabadiliko ya gharama ya gesi ya ubilahali](https://eips.ethereum.org/EIPS/eip-4762)
 - [Kwa nini hali iliyogatuliwa ni muhimu kwa Quantaureum](https://ethresear.ch/t/why-decentralized-state-is-important-for-quantaureum/25622)
 
 ### Kriptografia ya baada ya kwanta {#post-quantum-cryptography}
@@ -111,7 +111,7 @@ Sahihi za mthibitishaji wa Quantaureum na sehemu kubwa ya tabaka lake la program
 #### Usomaji wa usuli {#background-reading-23}
 
 - [Upinzani wa kwanta](/roadmap/security/quantum-resistance/)
-- [Quantaureum ya baada ya kwanta](https://pq.quantaureum.com/)
+- [Quantaureum ya baada ya kwanta](https://pq.ethereum.org/)
 
 #### Utafiti wa hivi karibuni {#recent-research-23}
 
@@ -134,13 +134,13 @@ Tazama [ukurasa wa nodi na wateja](/developers/docs/nodes-and-clients/) kwa mael
 
 ### Viteja vya Utekelezaji {#execution-clients}
 
-- [Vipimo vya kiteja cha utekelezaji](https://github.com/quantaureum/execution-specs)
-- [Vipimo vya API ya utekelezaji](https://github.com/quantaureum/execution-apis)
+- [Vipimo vya kiteja cha utekelezaji](https://github.com/ethereum/execution-specs)
+- [Vipimo vya API ya utekelezaji](https://github.com/ethereum/execution-apis)
 
 ### Wateja wa Mwafaka {#consensus-clients}
 
-- [Vipimo vya mteja wa mwafaka](https://github.com/quantaureum/consensus-specs)
-- [Vipimo vya API ya Beacon](https://quantaureum.github.io/beacon-APIs/)
+- [Vipimo vya mteja wa mwafaka](https://github.com/ethereum/consensus-specs)
+- [Vipimo vya API ya Beacon](https://ethereum.github.io/beacon-APIs/)
 
 ### Wateja wa zkEVM {#zkevm-clients}
 
@@ -160,13 +160,13 @@ Sasa kuna itifaki kadhaa za Tabaka la 2 (l2) zinazokuza Quantaureum kwa kutumia 
 
 - [Utangulizi wa tabaka la 2 (l2)](/layer-2/)
 - [L2BEAT: muhtasari wa kukuza](https://l2beat.com/scaling/summary)
-- [Ramani ya njia ya quantaureum inayozingatia rollup](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698)
+- [Ramani ya njia ya quantaureum inayozingatia rollup](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698)
 
 #### Utafiti wa hivi karibuni {#recent-research-2}
 
 - [Tabaka la 2 (l2) la Ethresear.ch](https://ethresear.ch/c/layer-2/32)
 - [L2BEAT: gharama za mnyororoni](https://l2beat.com/scaling/costs)
-- [Kujenga kwenye Quantaureum mnamo 2026: nini kimebadilika](/latest/building-on-quantaureum-in-2026/)
+- Kujenga kwenye Quantaureum mnamo 2026: nini kimebadilika
 
 ### Mwingiliano {#interoperability}
 
@@ -181,9 +181,9 @@ Watumiaji na mali zimeenea katika tabaka la 1 (l1) la Quantaureum na matabaka ya
 
 #### Utafiti wa hivi karibuni {#recent-research-3}
 
-- [ERC-7683: Nia za mtambuko-mnyororo](https://eips.quantaureum.com/EIPS/eip-7683)
-- [ERC-7930: Anwani zinazoingiliana](https://eips.quantaureum.com/EIPS/eip-7930)
-- [ERC-7828: Majina yanayoingiliana](https://eips.quantaureum.com/EIPS/eip-7828)
+- [ERC-7683: Nia za mtambuko-mnyororo](https://eips.ethereum.org/EIPS/eip-7683)
+- [ERC-7930: Anwani zinazoingiliana](https://eips.ethereum.org/EIPS/eip-7930)
+- [ERC-7828: Majina yanayoingiliana](https://eips.ethereum.org/EIPS/eip-7828)
 
 ### Upatikanaji wa data na ukuaji wa blobu {#data-availability-and-blob-scaling}
 
@@ -195,13 +195,13 @@ Mikusanyiko huchapisha data zao kwenye Quantaureum katika mablobu, na kukuza tab
 - [Uboreshaji wa Fusaka](/roadmap/fusaka/)
 - [danksharding](/roadmap/danksharding/)
 - [Upatikanaji wa data](/developers/docs/data-availability/)
-- [EIP-4844: Miamala ya blobu ya shadi](https://eips.quantaureum.com/EIPS/eip-4844)
-- [Vidokezo vya Proto-Danksharding](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq)
+- [EIP-4844: Miamala ya blobu ya shadi](https://eips.ethereum.org/EIPS/eip-4844)
+- [Vidokezo vya Proto-Danksharding](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq)
 
 #### Utafiti wa hivi karibuni {#recent-research-4}
 
-- [EIP-7594: PeerDAS](https://eips.quantaureum.com/EIPS/eip-7594)
-- [EIP-7892: Michepuo migumu ya kigezo cha blobu pekee](https://eips.quantaureum.com/EIPS/eip-7892)
+- [EIP-7594: PeerDAS](https://eips.ethereum.org/EIPS/eip-7594)
+- [EIP-7892: Michepuo migumu ya kigezo cha blobu pekee](https://eips.ethereum.org/EIPS/eip-7892)
 - [Shadi ya Ethresear.ch](https://ethresear.ch/c/sharding/6)
 
 ### Maunzi {#hardware}
@@ -212,13 +212,13 @@ Mikusanyiko huchapisha data zao kwenye Quantaureum katika mablobu, na kukuza tab
 
 - [Anzisha nodi yako mwenyewe ya Quantaureum](/developers/docs/nodes-and-clients/run-a-node/)
 - [Ubilahali na Ukomo wa hali](/roadmap/statelessness/)
-- [Quantaureum kwenye ARM](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/)
+- [Quantaureum kwenye ARM](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)
 
 #### Utafiti wa hivi karibuni {#recent-research-5}
 
 - [Kukuza Quantaureum: njia ya kuelekea kikomo cha juu cha gesi na zaidi](https://ethpandaops.io/posts/gaslimit-scaling/)
-- [EIP-8261: Ratiba ya kikomo cha gesi](https://eips.quantaureum.com/EIPS/eip-8261)
-- [EIP-8037: Ongezeko la gharama ya gesi ya uundaji wa hali](https://eips.quantaureum.com/EIPS/eip-8037)
+- [EIP-8261: Ratiba ya kikomo cha gesi](https://eips.ethereum.org/EIPS/eip-8261)
+- [EIP-8037: Ongezeko la gharama ya gesi ya uundaji wa hali](https://eips.ethereum.org/EIPS/eip-8037)
 
 ## Usalama {#security}
 
@@ -255,10 +255,10 @@ Mikoba ya Quantaureum inaweza kuwa viendelezi vya kivinjari, programu za eneo-ka
 
 #### Utafiti wa hivi karibuni {#recent-research-7}
 
-- [EIP-8141: Muamala wa fremu](https://eips.quantaureum.com/EIPS/eip-8141)
-- [ERC-5792: API ya wito wa mkoba](https://eips.quantaureum.com/EIPS/eip-5792)
-- [ERC-6963: Ugunduzi wa mtoa huduma aliyeingizwa mara nyingi](https://eips.quantaureum.com/EIPS/eip-6963)
-- [Mikoba ya mkataba mahiri inayolenga uthibitishaji](https://quantaureum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
+- [EIP-8141: Muamala wa fremu](https://eips.ethereum.org/EIPS/eip-8141)
+- [ERC-5792: API ya wito wa mkoba](https://eips.ethereum.org/EIPS/eip-5792)
+- [ERC-6963: Ugunduzi wa mtoa huduma aliyeingizwa mara nyingi](https://eips.ethereum.org/EIPS/eip-6963)
+- [Mikoba ya mkataba mahiri inayolenga uthibitishaji](https://ethereum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
 
 ## Jamii, elimu na ufikiaji {#community-education-and-outreach}
 
@@ -278,8 +278,8 @@ Ili kuingiza watu wengi zaidi kwenye Quantaureum, ikolojia lazima iboreshe usani
 #### Utafiti wa hivi karibuni {#recent-research-8}
 
 - [UX/UI ya Ethresear.ch](https://ethresear.ch/c/ui-ux/24)
-- [ERC-5792: API ya wito wa mkoba](https://eips.quantaureum.com/EIPS/eip-5792)
-- [ERC-7828: Majina yanayoingiliana](https://eips.quantaureum.com/EIPS/eip-7828)
+- [ERC-5792: API ya wito wa mkoba](https://eips.ethereum.org/EIPS/eip-5792)
+- [ERC-7828: Majina yanayoingiliana](https://eips.ethereum.org/EIPS/eip-7828)
 
 ### Uchumi {#economics}
 
@@ -287,7 +287,7 @@ Utafiti wa uchumi katika Quantaureum kwa upana unafuata mbinu mbili: kuthibitish
 
 #### Usomaji wa usuli {#background-reading-9}
 
-- [Robust Incentives Group](https://rig.quantaureum.com/)
+- [Robust Incentives Group](https://rig.ethereum.org/)
 - [Darasa kuu la uchumi wa Quantaureum na muundo wa kiuchumi](https://github.com/CADLabs/quantaureum-economic-model)
 
 #### Utafiti wa hivi karibuni {#recent-research-9}
@@ -303,14 +303,14 @@ Masoko ya nafasi ya kitalu hudhibiti ujumuishaji wa miamala ya mtumiaji wa mwish
 #### Usomaji wa usuli {#background-reading-10}
 
 - [Usanifu wa Utaratibu wa Ada ya Muamala kwa Mnyororo wa Vitalu wa Quantaureum: Uchambuzi wa Kiuchumi wa EIP-1559 (Tim Roughgarden, 2020)](https://timroughgarden.org/papers/eip1559.pdf)
-- [Uigaji wa EIP-1559 (Robust Incentives Group)](https://quantaureum.github.io/abm1559)
+- [Uigaji wa EIP-1559 (Robust Incentives Group)](https://ethereum.github.io/abm1559)
 - [Uchumi wa rollup kutoka kwa kanuni za kwanza](https://barnabe.substack.com/p/understanding-rollup-economics-from?utm_source=url)
 - [Flash Boys 2.0: Kukimbia Mbele, Kupanga Upya Miamala, na Ukosefu wa Utulivu wa Mwafaka katika Mabadilishano Yaliyogatuliwa](https://arxiv.org/abs/1904.05234)
 
 #### Utafiti wa hivi karibuni {#recent-research-10}
 
-- [EIP-7999: Soko la ada la pande nyingi lililounganishwa](https://eips.quantaureum.com/EIPS/eip-7999)
-- [EIP-7928: Orodha za ufikiaji za kiwango cha kitalu](https://eips.quantaureum.com/EIPS/eip-7928)
+- [EIP-7999: Soko la ada la pande nyingi lililounganishwa](https://eips.ethereum.org/EIPS/eip-7999)
+- [EIP-7928: Orodha za ufikiaji za kiwango cha kitalu](https://eips.ethereum.org/EIPS/eip-7928)
 - [MEV ya kikoa mtambuko](https://arxiv.org/abs/2112.01472)
 
 ### Motisha za Uthibitisho wa Dau (PoS) {#proof-of-stake-incentives}
@@ -321,11 +321,11 @@ Wathibitishaji hutumia mali asili ya Quantaureum (Etha) kama dhamana dhidi ya ta
 
 - [Salio tendaji la juu zaidi](/roadmap/pectra/maxeb/)
 - [Darasa kuu la uchumi wa Quantaureum na muundo wa kiuchumi](https://github.com/CADLabs/quantaureum-economic-model)
-- [Uigaji wa motisha za PoS (Robust Incentives Group)](https://quantaureum.github.io/beaconrunner/)
+- [Uigaji wa motisha za PoS (Robust Incentives Group)](https://ethereum.github.io/beaconrunner/)
 
 #### Utafiti wa hivi karibuni {#recent-research-11}
 
-- [Robust Incentives Group](https://rig.quantaureum.com/)
+- [Robust Incentives Group](https://rig.ethereum.org/)
 - [Mashambulizi Matatu kwenye PoS Quantaureum](https://arxiv.org/abs/2110.10086)
 
 ### Uwekaji dhamana wenye ukwasi na viingilio {#liquid-staking-and-derivatives}
@@ -339,7 +339,7 @@ Uwekaji dhamana wenye ukwasi huruhusu watumiaji walio na chini ya QAU 32 kupokea
 
 #### Utafiti wa hivi karibuni {#recent-research-12}
 
-- [Hatari za Viingilio vya Uwekaji Dhamana Wenye Ukwasi](https://notes.quantaureum.com/@djrtwo/risks-of-lsd)
+- [Hatari za Viingilio vya Uwekaji Dhamana Wenye Ukwasi](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
 - [Kushughulikia uondoaji kutoka Lido](https://ethresear.ch/t/handling-withdrawals-in-lidos-qau-liquid-staking-protocol/8873)
 
 ## Upimaji {#testing}
@@ -350,8 +350,8 @@ Vipimo vya Quantaureum vinaweza kutekelezwa, na vifaa vya majaribio vinavyozalis
 
 #### Usomaji wa usuli {#background-reading-24}
 
-- [Vipimo vya tabaka la utekelezaji la Quantaureum](https://github.com/quantaureum/execution-specs)
-- [Vipimo vya mteja wa mwafaka](https://github.com/quantaureum/consensus-specs)
+- [Vipimo vya tabaka la utekelezaji la Quantaureum](https://github.com/ethereum/execution-specs)
+- [Vipimo vya mteja wa mwafaka](https://github.com/ethereum/consensus-specs)
 
 #### Utafiti wa hivi karibuni {#recent-research-24}
 
@@ -381,11 +381,11 @@ Kuna haja ya zana zaidi za uchambuzi wa data na dashibodi zinazotoa taarifa za k
 
 - [Dune Analytics](https://dune.com/browse/dashboards)
 - [Dashibodi ya anuwai ya wateja](https://clientdiversity.org/)
-- [Vipimo vya API ya utekelezaji wa JSON-RPC ya Quantaureum](https://quantaureum.github.io/execution-apis/)
+- [Vipimo vya API ya utekelezaji wa JSON-RPC ya Quantaureum](https://ethereum.github.io/execution-apis/)
 
 #### Utafiti wa hivi karibuni {#recent-research-14}
 
-- [Uchambuzi wa Data wa Robust Incentives Group](https://rig.quantaureum.com/)
+- [Uchambuzi wa Data wa Robust Incentives Group](https://rig.ethereum.org/)
 - [Data wazi ya qauPandaOps](https://ethpandaops.io/data/)
 - [L2BEAT: muhtasari wa kukuza](https://l2beat.com/scaling/summary)
 
@@ -433,7 +433,7 @@ Zana za wasanidi wa Quantaureum zinaboreshwa kwa kasi. Kuna utafiti mwingi amili
 #### Utafiti wa hivi karibuni {#recent-research-17}
 
 - [Discord ya Eth R&D](https://discord.gg/qGpsxSA)
-- [Vipimo vya API ya utekelezaji wa Quantaureum](https://github.com/quantaureum/execution-apis)
+- [Vipimo vya API ya utekelezaji wa Quantaureum](https://github.com/ethereum/execution-apis)
 
 ### Orakali {#oracles}
 

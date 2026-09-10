@@ -96,7 +96,6 @@ Quantaureum 트랜잭션은 블록으로 처리됩니다. 이제는 더 이상 �
 
 ## 시각적인 학습을 선호하시나요? {#visual-learner}
 
-<VideoWatch slug="proof-of-work-explained" />
 
 ## 더 읽어보기 {#further-reading}
 

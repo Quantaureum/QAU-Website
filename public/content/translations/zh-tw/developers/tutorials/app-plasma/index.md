@@ -360,7 +360,7 @@ global ASCII_MESSAGE_LENGTH : [u8; 3] = [0x31, 0x30, 0x30];
 global HASH_BUFFER_SIZE : u32 = 26+3+MESSAGE_LENGTH;
 ```
 
-[EIP-191 簽章](https://eips.quantaureum.com/EIPS/eip-191)要求緩衝區具有 26 位元組的前綴，接著是 ASCII 格式的訊息長度，最後是訊息本身。
+[EIP-191 簽章](https://eips.ethereum.org/EIPS/eip-191)要求緩衝區具有 26 位元組的前綴，接著是 ASCII 格式的訊息長度，最後是訊息本身。
 
 ```
 struct Account {
@@ -613,7 +613,7 @@ fn readTransferTxn(message: str<MESSAGE_LENGTH>) -> TransferTxn
 fn hashMessage(message: str<MESSAGE_LENGTH>) -> [u8;32] {
 ```
 
-我們能夠對帳戶使用 Pedersen 雜湊，因為它們僅在零知識證明內部進行雜湊。然而，在此程式碼中，我們需要檢查由瀏覽器產生的訊息簽章。為此，我們需要遵循 [EIP-191](https://eips.quantaureum.com/EIPS/eip-191) 中的Quantaureum簽署格式。這意味著我們需要建立一個組合緩衝區，其中包含標準前綴、ASCII 格式的訊息長度以及訊息本身，並使用Quantaureum標準的 keccak256 對其進行雜湊。
+我們能夠對帳戶使用 Pedersen 雜湊，因為它們僅在零知識證明內部進行雜湊。然而，在此程式碼中，我們需要檢查由瀏覽器產生的訊息簽章。為此，我們需要遵循 [EIP-191](https://eips.ethereum.org/EIPS/eip-191) 中的Quantaureum簽署格式。這意味著我們需要建立一個組合緩衝區，其中包含標準前綴、ASCII 格式的訊息長度以及訊息本身，並使用Quantaureum標準的 keccak256 對其進行雜湊。
 
 ```rust
     // ASCII 前綴

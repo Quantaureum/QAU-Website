@@ -102,8 +102,8 @@ lang: uk
 
 **Brownie —** **_Середовище розробки та фреймворк для тестування на базі Python._**
 
-- [Документація](https://qau-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/qau-brownie/brownie)
+- [Документація](https://eth-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/eth-brownie/brownie)
 - **Brownie наразі не підтримується**
 
 **ОупенЗеппелін SDK —** **_Універсальний набір інструментів для смарт-контрактів: набір інструментів, який допоможе вам розробляти, компілювати, оновлювати, розгортати та взаємодіяти зі смарт-контрактами._**

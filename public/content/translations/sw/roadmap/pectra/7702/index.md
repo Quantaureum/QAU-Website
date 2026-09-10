@@ -32,7 +32,7 @@ Ufunguo wa siri wa EOA unabaki na udhibiti kamili wa akaunti baada ya ukaimishaj
 - Vinatoa miingiliano sanifu ya kupeleka taarifa
 - Vinajumuisha mifumo ya ndani ya mlipiaji
 - Vinahakikisha utangamano wa mbele
-- Vinaweza kusaidia ustahimilivu wa udhibiti kupitia [mempool ya umma](https://notes.quantaureum.com/@yoav/unified-erc-4337-mempool)
+- Vinaweza kusaidia ustahimilivu wa udhibiti kupitia [mempool ya umma](https://notes.ethereum.org/@yoav/unified-erc-4337-mempool)
 - Vinaweza kuhitaji kitendakazi cha init kiitwe pekee kutoka kwenye [EntryPoint](https://github.com/qau-infinitism/account-abstraction/releases/tag/v0.8.0)
 
 Kwa maneno mengine, mtu yeyote anapaswa kuwa na uwezo wa kufanya kama mfadhili/mpeleka-taarifa wa muamala mradi tu atoe sahihi halali inayohitajika au Operesheni ya Mtumiaji kutoka kwenye akaunti. Hii inahakikisha ustahimilivu wa udhibiti: ikiwa hakuna miundombinu maalum inayohitajika, miamala ya mtumiaji haiwezi kuzuiwa kiholela na mpeleka-taarifa anayedhibiti ufikiaji. Kwa mfano, [Zana za Ukaimishaji za MetaMask](https://github.com/MetaMask/delegation-framework/releases/tag/v1.3.0) zinafanya kazi waziwazi na kifungashaji chochote cha ERC-4337 au mlipiaji kwenye mnyororo wowote, badala ya kuhitaji seva maalum ya MetaMask.
@@ -51,8 +51,8 @@ Kwa kutumia miingiliano hii, dapps zinaweza kufikia utendaji wa akaunti janja un
 
 Kwa taarifa zaidi:
 
-- [Uainisho wa ERC-5792](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-5792.md)
-- [Uainisho wa ERC-6900](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-6900.md)
+- [Uainisho wa ERC-5792](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-5792.md)
+- [Uainisho wa ERC-6900](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6900.md)
 
 **Kuepuka Kufungwa na Mtoa Huduma**: Sambamba na hapo juu, utekelezaji mzuri haupendelei mtoa huduma yeyote na ni inayoingiliana. Hii mara nyingi inamaanisha kuzingatia viwango vinavyoibuka vya akaunti janja. Kwa mfano, [Akaunti ya Moduli ya Alchemy](https://github.com/alchemyplatform/modular-account) inatumia kiwango cha ERC-6900 kwa akaunti janja za moduli na imeundwa kwa kuzingatia "matumizi inayoingiliana bila ruhusa".
 

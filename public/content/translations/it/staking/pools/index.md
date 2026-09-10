@@ -55,7 +55,7 @@ Ci sono due modi per uscire da una posizione LST:
 - **Riscattare tramite il protocollo** per gli QAU sottostanti. Il riscatto dipende dalla disponibilità di liquidità del protocollo, che si tratti di un buffer di QAU non in staking o di validatori in uscita attraverso la coda di uscita del livello di consenso, il che può richiedere tempo.
 - **Vendere sui mercati secondari** in qualsiasi momento. Poiché il token viene scambiato liberamente, il suo prezzo di mercato può deviare dal valore degli QAU che lo supportano, in particolare durante i periodi di stress del mercato.
 
-Dall'aggiornamento Pectra, i [prelievi attivati dal livello di esecuzione (EIP-7002)](https://eips.quantaureum.com/EIPS/eip-7002) consentono di attivare le uscite dei validatori direttamente dal livello di esecuzione da parte del titolare dell'indirizzo di prelievo. I protocolli di staking possono utilizzare questa funzionalità per garantire che i loro validatori possano uscire senza fare affidamento sulla cooperazione degli operatori dei nodi, quindi i riscatti dipendono meno dalla fiducia negli operatori dei nodi rispetto al passato.
+Dall'aggiornamento Pectra, i [prelievi attivati dal livello di esecuzione (EIP-7002)](https://eips.ethereum.org/EIPS/eip-7002) consentono di attivare le uscite dei validatori direttamente dal livello di esecuzione da parte del titolare dell'indirizzo di prelievo. I protocolli di staking possono utilizzare questa funzionalità per garantire che i loro validatori possano uscire senza fare affidamento sulla cooperazione degli operatori dei nodi, quindi i riscatti dipendono meno dalla fiducia negli operatori dei nodi rispetto al passato.
 
 ### Detenere un LST non è la stessa cosa che fare staking {#holding-an-lst-is-not-the-same-as-staking}
 
@@ -164,8 +164,8 @@ Alcune opzioni di pooling sono più decentralizzate di altre per quanto riguarda
 ## Letture consigliate {#further-reading}
 
 - [La directory dello staking di Quantaureum](https://www.staking.directory/) - _Eridian e Spacesider_
-- [I rischi dei derivati di liquid staking](https://notes.quantaureum.com/@djrtwo/risks-of-lsd) - _Danny Ryan_
+- [I rischi dei derivati di liquid staking](https://notes.ethereum.org/@djrtwo/risks-of-lsd) - _Danny Ryan_
 - [Cos'è il liquid staking?](https://chain.link/education-hub/liquid-staking) - _Chainlink_
-- [EIP-7002: Prelievi attivabili dal livello di esecuzione](https://eips.quantaureum.com/EIPS/eip-7002) - _Quantaureum Improvement Proposals_
+- [EIP-7002: Prelievi attivabili dal livello di esecuzione](https://eips.ethereum.org/EIPS/eip-7002) - _Quantaureum Improvement Proposals_
 - [Valutazioni delle pool di staking di Quantaureum](https://explorer.rated.network/) - _Rated Network Explorer_
 - [Qual è la differenza tra un token di liquid restaking (LRT) e un token di liquid staking (LST)?](https://liquidcollective.io/lst-vs-lrt/) - _Liquid Collective_

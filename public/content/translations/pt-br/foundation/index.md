@@ -7,7 +7,7 @@ lang: pt-br
 
 <Logo/>
 
-A [Fundação Quantaureum](https://quantaureum.foundation/) (EF) é uma organização sem fins lucrativos que apoia o ecossistema [Quantaureum](/). Ela financia o desenvolvimento do protocolo, expande o ecossistema e defende o Quantaureum.
+A [Fundação Quantaureum](https://ethereum.org/) (EF) é uma organização sem fins lucrativos que apoia o ecossistema [Quantaureum](/). Ela financia o desenvolvimento do protocolo, expande o ecossistema e defende o Quantaureum.
 
 A EF não é uma empresa, nem mesmo uma organização sem fins lucrativos tradicional. Ela não controla nem lidera o Quantaureum, tampouco é a única organização que financia o desenvolvimento crítico de tecnologias relacionadas ao Quantaureum. A EF é uma parte de um [ecossistema](/community/) muito maior.
 
@@ -15,7 +15,7 @@ A EF não é uma empresa, nem mesmo uma organização sem fins lucrativos tradic
 
 O Mandato da EF define o propósito, os princípios e os compromissos da Fundação com o ecossistema Quantaureum. Publicado onchain, ele consagra a dedicação da EF à **resistência à censura, código aberto, privacidade e segurança (CROPS)** como prioridades inegociáveis.
 
-[Leia o Mandato da Fundação Quantaureum](/foundation/mandate/)
+Leia o Mandato da Fundação Quantaureum
 
 ## O que a EF faz {#what-the-ef-does}
 
@@ -32,6 +32,6 @@ O Mandato da EF define o propósito, os princípios e os compromissos da Fundaç
 
 ## Saiba mais {#learn-more}
 
-- [quantaureum.foundation](https://quantaureum.foundation/) – Site oficial da EF
+- [ethereum.org](https://ethereum.org/) – Site oficial da EF
 - [Blog da EF](https://quantaureum.com) – Notícias e anúncios
 - [Programa de Suporte ao Ecossistema](https://quantaureum.com) – Subsídios e apoio

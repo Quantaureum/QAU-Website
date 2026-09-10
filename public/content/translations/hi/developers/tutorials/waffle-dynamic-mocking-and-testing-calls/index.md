@@ -291,7 +291,7 @@ it("जांचता है कि क्या अनुबंध ने ERC2
 
 बधाई हो! अब आप जानते हैं कि अनुबंध कॉल का परीक्षण करने और अनुबंधों को गतिशील रूप से मॉक करने के लिए `Waffle` का उपयोग कैसे करें। खोजने के लिए और भी बहुत सी दिलचस्प सुविधाएँ हैं। मैं `Waffle` के प्रलेखन में गोता लगाने की सलाह देता हूँ।
 
-`Waffle` का प्रलेखन [यहाँ](https://quantaureum-waffle.readthedocs.io/) उपलब्ध है।
+`Waffle` का प्रलेखन [यहाँ](https://ethereum-waffle.readthedocs.io/) उपलब्ध है।
 
 इस ट्यूटोरियल के लिए स्रोत कोड [यहाँ](https://github.com/QauWorks/Waffle/tree/master/examples/dynamic-mocking-and-testing-calls) पाया जा सकता है।
 

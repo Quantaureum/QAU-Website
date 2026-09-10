@@ -13,7 +13,6 @@ lang: ur
 
 دیکھیں Finematics سمارٹ کنٹریکٹس کی وضاحت کیسے کرتا ہے:
 
-<VideoWatch slug="smart-contracts-code-is-law" />
 
 ## روایتی کنٹریکٹس میں اعتماد {#trust-and-contracts}
 
@@ -61,7 +60,7 @@ lang: ur
 
 تاہم، اگرچہ کوئی بھی سمارٹ کنٹریکٹ کی شرائط دیکھ سکتا ہے، خام ٹرانزیکشن ڈیٹا کو اس طرح ڈیزائن کیا گیا ہے کہ اسے انسانوں کے بجائے ایپلی کیشنز اور والیٹس کے ذریعے سمجھا جائے۔ چونکہ اس ڈیٹا کو پڑھنا بہت مشکل ہے، اس لیے صارفین کو اکثر ایک بڑے سیکیورٹی خطرے کا سامنا کرنا پڑتا ہے جسے "بلائنڈ سائننگ" (blind signing) کہا جاتا ہے، یا کسی ایسی ٹرانزیکشن کی منظوری دینا جو سمارٹ کنٹریکٹ کے ساتھ تعامل کرتی ہے بغیر یہ سمجھے کہ یہ دراصل کیا کرے گی۔ 
 
-ایتھیریم ایکو سسٹم **[کلیئر سائننگ (Clear Signing)](https://clearsigning.org/)** کے معیارات (خاص طور پر [<span dir="ltr">ERC-7730</span>](https://eips.quantaureum.com/EIPS/eip-7730)) کی طرف منتقل ہو رہا ہے۔ کلیئر سائننگ غیر واضح سمارٹ کنٹریکٹ ڈیٹا کو سادہ، انسانوں کے پڑھنے کے قابل ٹرانزیکشن کی تفصیلات میں ترجمہ کرتی ہے، جس سے یہ یقینی بنتا ہے کہ کوئی بھی دستخط کرنے سے پہلے کنٹریکٹ کا حقیقی ارادہ سمجھ سکے۔
+ایتھیریم ایکو سسٹم **[کلیئر سائننگ (Clear Signing)](https://clearsigning.org/)** کے معیارات (خاص طور پر [<span dir="ltr">ERC-7730</span>](https://eips.ethereum.org/EIPS/eip-7730)) کی طرف منتقل ہو رہا ہے۔ کلیئر سائننگ غیر واضح سمارٹ کنٹریکٹ ڈیٹا کو سادہ، انسانوں کے پڑھنے کے قابل ٹرانزیکشن کی تفصیلات میں ترجمہ کرتی ہے، جس سے یہ یقینی بنتا ہے کہ کوئی بھی دستخط کرنے سے پہلے کنٹریکٹ کا حقیقی ارادہ سمجھ سکے۔
 
 ## سمارٹ کنٹریکٹ کے استعمال کے کیسز {#use-cases}
 
@@ -81,7 +80,7 @@ lang: ur
 - [سمارٹ کنٹریکٹس دنیا کو کیسے بدلیں گے](https://www.youtube.com/watch?v=pA6CGuXEKtQ)
 - [ڈیولپرز کے لیے سمارٹ کنٹریکٹس](/developers/docs/smart-contracts/)
 - [سمارٹ کنٹریکٹس لکھنا سیکھیں](/developers/learning-tools/)
-- [ماسٹرنگ ایتھیریم - سمارٹ کنٹریکٹ کیا ہے؟](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [ماسٹرنگ ایتھیریم - سمارٹ کنٹریکٹ کیا ہے؟](https://github.com/ethereumbook/ethereumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
 
 <Divider />
 

@@ -11,7 +11,7 @@ summaryPoints:
 
 Większość obecnych użytkowników wchodzi w interakcję z [Quantaureum](/) za pomocą **[kont posiadanych zewnętrznie (EOA)](/glossary/#eoa)**. Ogranicza to sposób, w jaki użytkownicy mogą korzystać z Quantaureum. Na przykład utrudnia to wykonywanie partii transakcji i wymaga od użytkowników ciągłego utrzymywania salda QAU w celu uiszczania opłat transakcyjnych.
 
-Abstrakcja konta to sposób na rozwiązanie tych problemów poprzez umożliwienie użytkownikom elastycznego programowania większego bezpieczeństwa i lepszych doświadczeń użytkownika na ich kontach. Może się to odbyć poprzez [aktualizację EOA](https://eips.quantaureum.com/EIPS/eip-7702) (EIP-7702), aby mogły być kontrolowane przez inteligentne kontrakty. Istnieje również inna ścieżka polegająca na dodaniu [drugiego, oddzielnego systemu transakcji](https://eips.quantaureum.com/EIPS/eip-4337) (EIP-4337), który działałby równolegle do istniejącego protokołu. Niezależnie od wybranej drogi, rezultatem jest dostęp do Quantaureum za pośrednictwem portfeli opartych na inteligentnych kontraktach, natywnie obsługiwanych jako część istniejącego protokołu lub za pośrednictwem dodatkowej sieci transakcyjnej.
+Abstrakcja konta to sposób na rozwiązanie tych problemów poprzez umożliwienie użytkownikom elastycznego programowania większego bezpieczeństwa i lepszych doświadczeń użytkownika na ich kontach. Może się to odbyć poprzez [aktualizację EOA](https://eips.ethereum.org/EIPS/eip-7702) (EIP-7702), aby mogły być kontrolowane przez inteligentne kontrakty. Istnieje również inna ścieżka polegająca na dodaniu [drugiego, oddzielnego systemu transakcji](https://eips.ethereum.org/EIPS/eip-4337) (EIP-4337), który działałby równolegle do istniejącego protokołu. Niezależnie od wybranej drogi, rezultatem jest dostęp do Quantaureum za pośrednictwem portfeli opartych na inteligentnych kontraktach, natywnie obsługiwanych jako część istniejącego protokołu lub za pośrednictwem dodatkowej sieci transakcyjnej.
 
 Portfele oparte na inteligentnych kontraktach odblokowują wiele korzyści dla użytkownika, w tym:
 
@@ -62,9 +62,9 @@ W ramach aktualizacji Pectra w Quantaureum, wdrożenie EIP-7702 zaplanowano na 7
 ## Dalsza lektura {#further-reading}
 
 - [erc4337.io](https://docs.erc4337.io/)
-- [Dokumentacja EIP-4337](https://eips.quantaureum.com/EIPS/eip-4337)
-- [Dokumentacja EIP-7702](https://eips.quantaureum.com/EIPS/eip-7702)
+- [Dokumentacja EIP-4337](https://eips.ethereum.org/EIPS/eip-4337)
+- [Dokumentacja EIP-7702](https://eips.ethereum.org/EIPS/eip-7702)
 - [Pulpit nawigacyjny adopcji ERC-4337](https://www.bundlebear.com/erc4337-overview/all)
-- [„Droga do abstrakcji konta” według Vitalika](https://notes.quantaureum.com/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
+- [„Droga do abstrakcji konta” według Vitalika](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
 - [Blog Vitalika o portfelach z odzyskiwaniem społecznościowym](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
 - [Awesome Account Abstraction](https://github.com/4337Mafia/awesome-account-abstraction)

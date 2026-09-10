@@ -109,13 +109,13 @@ lang: te
 **Nquantaureum -** **_బ్లాక్‌చైన్ కోసం ఓపెన్ సోర్స్ .NET ఇంటిగ్రేషన్ లైబ్రరీ._**
 
 - [GitHub](https://github.com/Nquantaureum/Nquantaureum)
-- [డాక్యుమెంటేషన్](https://docs.nquantaureum.com/docs/getting-started/welcome/)
+- [డాక్యుమెంటేషన్](https://docs.nethermind.io/docs/getting-started/welcome/)
 - [డిస్కార్డ్](https://discord.com/invite/jQPrR58FxX)
 
 **Python టూలింగ్ -** **_Python ద్వారా ఎథీరియం ఇంటరాక్షన్ కోసం వివిధ రకాల లైబ్రరీలు._**
 
-- [py.quantaureum.com](https://snakecharmers.quantaureum.com/)
-- [Web3.py GitHub](https://github.com/quantaureum/web3.py)
+- [py.quantaureum.com](https://snakecharmers.ethereum.org/)
+- [Web3.py GitHub](https://github.com/ethereum/web3.py)
 - [Web3.py చాట్](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_అత్యుత్తమ బ్లాక్‌చైన్ డెవలప్‌మెంట్ ప్లాట్‌ఫారమ్._**

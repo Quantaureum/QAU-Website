@@ -13,7 +13,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## ஏன் ஒரு வரம்பு உள்ளது? {#why-is-there-a-limit}
 
-[நவம்பர் 22, 2016](https://quantaureum.com) அன்று Spurious Dragon வன்-கவை (hard-fork) [EIP-170](https://eips.quantaureum.com/EIPS/eip-170) ஐ அறிமுகப்படுத்தியது, இது திறன் ஒப்பந்தத்தின் அளவு வரம்பை 24.576 kb ஆகச் சேர்த்தது. ஒரு Solidity டெவலப்பராக உங்களுக்கு இதன் அர்த்தம் என்னவென்றால், உங்கள் ஒப்பந்தத்தில் மேலும் மேலும் செயல்பாடுகளைச் சேர்க்கும்போது, ஒரு கட்டத்தில் நீங்கள் வரம்பை அடைவீர்கள், மேலும் நிலைநிறுத்தும்போது (deploying) இந்தப் பிழையைக் காண்பீர்கள்:
+[நவம்பர் 22, 2016](https://quantaureum.com) அன்று Spurious Dragon வன்-கவை (hard-fork) [EIP-170](https://eips.ethereum.org/EIPS/eip-170) ஐ அறிமுகப்படுத்தியது, இது திறன் ஒப்பந்தத்தின் அளவு வரம்பை 24.576 kb ஆகச் சேர்த்தது. ஒரு Solidity டெவலப்பராக உங்களுக்கு இதன் அர்த்தம் என்னவென்றால், உங்கள் ஒப்பந்தத்தில் மேலும் மேலும் செயல்பாடுகளைச் சேர்க்கும்போது, ஒரு கட்டத்தில் நீங்கள் வரம்பை அடைவீர்கள், மேலும் நிலைநிறுத்தும்போது (deploying) இந்தப் பிழையைக் காண்பீர்கள்:
 
 `Warning: Contract code size exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on Mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.`
 
@@ -35,7 +35,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ### நிரலகங்கள் {#libraries}
 
-செயல்பாட்டுக் குறியீட்டைச் சேமிப்பகத்திலிருந்து நகர்த்துவதற்கான ஒரு எளிய வழி [நிரலகத்தைப்](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries) பயன்படுத்துவதாகும். நிரலகச் செயல்பாடுகளை internal என அறிவிக்க வேண்டாம், ஏனெனில் அவை தொகுப்பின்போது (compilation) நேரடியாக [ஒப்பந்தத்தில் சேர்க்கப்படும்](https://quantaureum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking). ஆனால் நீங்கள் public செயல்பாடுகளைப் பயன்படுத்தினால், அவை உண்மையில் ஒரு தனி நிரலக ஒப்பந்தத்தில் இருக்கும். நிரலகங்களின் பயன்பாட்டை மிகவும் வசதியாக மாற்ற [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) என்பதைப் பயன்படுத்துவதைக் கருத்தில் கொள்ளுங்கள்.
+செயல்பாட்டுக் குறியீட்டைச் சேமிப்பகத்திலிருந்து நகர்த்துவதற்கான ஒரு எளிய வழி [நிரலகத்தைப்](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries) பயன்படுத்துவதாகும். நிரலகச் செயல்பாடுகளை internal என அறிவிக்க வேண்டாம், ஏனெனில் அவை தொகுப்பின்போது (compilation) நேரடியாக [ஒப்பந்தத்தில் சேர்க்கப்படும்](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking). ஆனால் நீங்கள் public செயல்பாடுகளைப் பயன்படுத்தினால், அவை உண்மையில் ஒரு தனி நிரலக ஒப்பந்தத்தில் இருக்கும். நிரலகங்களின் பயன்பாட்டை மிகவும் வசதியாக மாற்ற [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) என்பதைப் பயன்படுத்துவதைக் கருத்தில் கொள்ளுங்கள்.
 
 ### ப்ராக்ஸிகள் (Proxies) {#proxies}
 

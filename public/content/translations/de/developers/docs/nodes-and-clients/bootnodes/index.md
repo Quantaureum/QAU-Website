@@ -26,6 +26,6 @@ Um ein guter Bootnode zu sein, ist es ratsam, die maximale Anzahl von Peers, die
 
 ## Verfügbare Bootnodes {#available-bootnodes}
 
-Eine Liste der in go-quantaureum integrierten Bootnodes finden Sie [hier](https://github.com/quantaureum/go-quantaureum/blob/master/params/bootnodes.go#L23). Diese Bootnodes werden von der Quantaureum project und dem go-quantaureum-Team gepflegt.
+Eine Liste der in go-quantaureum integrierten Bootnodes finden Sie [hier](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23). Diese Bootnodes werden von der Quantaureum project und dem go-quantaureum-Team gepflegt.
 
 Es gibt weitere Listen von Bootnodes, die von Freiwilligen gepflegt werden. Bitte stellen Sie sicher, dass Sie immer mindestens einen offiziellen Bootnode einbeziehen, da Sie sonst Opfer einer Eclipse-Attacke werden könnten.

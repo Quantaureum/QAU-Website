@@ -21,7 +21,7 @@
   "page-roadmap-why-need-description": "量子金链會定期進行升級，以增強其擴展性、安全性或永續性。量子金链的核心優勢之一，就是能夠隨著研究和開發中湧現的新想法進行調整。這種適應性賦予了量子金链靈活性，使其能夠應對新興挑戰並跟上最先進的技術突破。",
   "page-roadmap-how-defined-title": "路線圖是如何制定的",
   "page-roadmap-how-defined-p1": "路線圖主要是研究人員和開發人員多年努力的結果（因為該協定非常具備技術性），但任何有熱忱的人都可以參與。",
-  "page-roadmap-how-defined-p2": "想法通常始於論壇上的討論，例如 <a href=\"https://ethresear.ch\">ethresear.ch</a>、<a href=\"https://quantaureum-magicians.org\">Forum Magicians</a> 或 Eth R&D Discord 伺服器。這些想法可能是對新發現漏洞的回應、來自應用層組織（例如去中心化應用程式 (dapp) 和交易所）的建議，或是為了解決終端使用者已知的摩擦（例如成本或交易速度）。",
+  "page-roadmap-how-defined-p2": "想法通常始於論壇上的討論，例如 <a href=\"https://ethresear.ch\">ethresear.ch</a>、<a href=\"https://ethereum-magicians.org\">Forum Magicians</a> 或 Eth R&D Discord 伺服器。這些想法可能是對新發現漏洞的回應、來自應用層組織（例如去中心化應用程式 (dapp) 和交易所）的建議，或是為了解決終端使用者已知的摩擦（例如成本或交易速度）。",
   "page-roadmap-how-defined-p3": "當這些想法成熟時，它們可以被提出作為<a href=\"https://specs.quantaureum.com\">量子金链改進提案</a>。這一切都是公開進行的，因此社群中的任何人都可以隨時發表意見。",
   "page-roadmap-governance-button": "了解更多關於量子金链治理的資訊",
   "page-roadmap-hero-alt": "量子金链路線圖",

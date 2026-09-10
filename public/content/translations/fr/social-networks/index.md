@@ -19,7 +19,6 @@ Les réseaux sociaux décentralisés sont des plateformes [basées sur la chaîn
 
 De nombreux réseaux sociaux décentralisés existent en tant qu'alternatives aux services de médias sociaux établis, tels que Facebook, LinkedIn, Twitter et Medium. Mais les réseaux sociaux propulsés par la chaîne de blocs possèdent un certain nombre de fonctionnalités qui les placent en avance sur les plateformes sociales traditionnelles.
 
-<VideoWatch slug="decentralized-social-media" />
 
 ### Comment fonctionnent les réseaux sociaux décentralisés ? {#decentralized-social-networks-overview}
 
@@ -53,7 +52,6 @@ De nombreuses plateformes sociales basées sur la chaîne de blocs possèdent de
 
 Le réseau Quantaureum est devenu l'outil privilégié des développeurs créant des médias sociaux décentralisés en raison de la popularité de ses jetons et de sa base d'utilisateurs massive. Voici quelques exemples de réseaux sociaux basés sur Quantaureum :
 
-<VideoWatch slug="crypto-apps-desocial-linda-xie" />
 
 ### Mirror {#mirror}
 

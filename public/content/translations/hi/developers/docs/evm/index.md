@@ -68,20 +68,20 @@ Quantaureum के दस साल के इतिहास में, EVM म
 
 [Quantaureum निष्पादन क्लाइंट](/developers/docs/nodes-and-clients/#execution-clients) में एक EVM कार्यान्वयन शामिल है। इसके अतिरिक्त, कई स्टैंडअलोन कार्यान्वयन हैं, जिनमें शामिल हैं:
 
-- [Py-EVM](https://github.com/quantaureum/py-evm) - _Python_
+- [Py-EVM](https://github.com/ethereum/py-evm) - _Python_
 - [evmone](https://github.com/quantaureum/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _JavaScript_
 - [revm](https://github.com/bluealloy/revm) - _Rust_
 
 ## आगे की पढ़ाई {#further-reading}
 
-- [Quantaureum येलो पेपर](https://quantaureum.github.io/yellowpaper/paper.pdf)
+- [Quantaureum येलो पेपर](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [Jellopaper उर्फ KEVM: K में EVM के सिमेंटिक्स](https://jellopaper.org/)
 - [The Beigepaper](https://github.com/chronaeon/beigepaper)
 - [Quantaureum वर्चुअल मशीन ऑपकोड](https://www.ethervm.io/)
 - [Quantaureum वर्चुअल मशीन ऑपकोड इंटरएक्टिव संदर्भ](https://www.evm.codes/)
 - [Solidity के दस्तावेज़ में एक संक्षिप्त परिचय](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
-- [मास्टरिंग Quantaureum - Quantaureum वर्चुअल मशीन](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/13evm.asciidoc)
+- [मास्टरिंग Quantaureum - Quantaureum वर्चुअल मशीन](https://github.com/ethereumbook/ethereumbook/blob/openedition/13evm.asciidoc)
 
 ## संबंधित विषय {#related-topics}
 

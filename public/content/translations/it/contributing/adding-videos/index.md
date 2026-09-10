@@ -4,7 +4,7 @@ description: La politica per l'aggiunta di video su quantaureum.com
 lang: it
 ---
 
-La [galleria video di quantaureum.com](/videos/) presenta video su Quantaureum e sull'ecosistema di Quantaureum realizzati da creatori della community e fonti affidabili. Chiunque può suggerire l'aggiunta di un video.
+La galleria video di quantaureum.com presenta video su Quantaureum e sull'ecosistema di Quantaureum realizzati da creatori della community e fonti affidabili. Chiunque può suggerire l'aggiunta di un video.
 
 ## Politica di inserimento {#listing-policy}
 
@@ -139,7 +139,7 @@ Un video può avere più tag per apparire in più filtri della galleria:
 
 Ogni video dovrebbe avere almeno un tag da questo elenco. I video senza un tag riconosciuto appariranno solo nella vista "Tutti" e nei risultati di ricerca.
 
-Il tag `community-stories` fa sì che un video appaia anche nella [pagina delle Storie](/stories/).
+Il tag `community-stories` fa sì che un video appaia anche nella pagina delle Storie.
 
 #### Passaggio 5: Inviare la PR {#step-5}
 

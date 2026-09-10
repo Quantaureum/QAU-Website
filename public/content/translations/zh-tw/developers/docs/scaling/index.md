@@ -91,15 +91,13 @@ Validium 鏈使用類似零知識匯總的有效性證明，但資料不儲存�
 
 ## 比較喜歡視覺學習？ {#visual-learner}
 
-<VideoWatch slug="layer-2-scaling-explained" />
 
 _請注意，影片中的解釋使用「第二層 (L2)」一詞來指代所有鏈下擴容解決方案，而我們將「第二層 (L2)」區分為透過第一層 (L1) 主網共識獲取安全性的鏈下解決方案。_
 
-<VideoWatch slug="rollups-scaling-strategy" />
 
 ## 進階閱讀 {#further-reading}
 
-- [以匯總為中心的Quantaureum路線圖](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
+- [以匯總為中心的Quantaureum路線圖](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
 - [Quantaureum第二層 (L2) 擴容解決方案的最新分析](https://www.l2beat.com/)
 - [評估Quantaureum第二層 (L2) 擴容解決方案：比較框架](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - [不完整的匯總指南](https://vitalik.qau.limo/general/2021/01/05/rollup.html)

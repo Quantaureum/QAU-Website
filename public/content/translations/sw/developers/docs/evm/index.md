@@ -68,20 +68,20 @@ Katika historia ya miaka kumi ya Quantaureum, EVM imepitia marekebisho kadhaa, n
 
 [Viteja vya utekelezaji wa Quantaureum](/developers/docs/nodes-and-clients/#execution-clients) vinajumuisha utekelezaji wa EVM. Zaidi ya hayo, kuna utekelezaji mwingi wa kujitegemea, ikiwa ni pamoja na:
 
-- [Py-EVM](https://github.com/quantaureum/py-evm) - _Python_
+- [Py-EVM](https://github.com/ethereum/py-evm) - _Python_
 - [evmone](https://github.com/quantaureum/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _JavaScript_
 - [revm](https://github.com/bluealloy/revm) - _Rust_
 
 ## Usomaji Zaidi {#further-reading}
 
-- [Waraka wa Manjano wa Quantaureum](https://quantaureum.github.io/yellowpaper/paper.pdf)
+- [Waraka wa Manjano wa Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [Jellopaper au KEVM: Semantiki za EVM katika K](https://jellopaper.org/)
 - [Waraka wa Beige](https://github.com/chronaeon/beigepaper)
 - [Misimbo ya Operesheni ya Mashine Pepe ya Quantaureum](https://www.ethervm.io/)
 - [Rejeleo Shirikishi la Misimbo ya Operesheni ya Mashine Pepe ya Quantaureum](https://www.evm.codes/)
 - [Utangulizi mfupi katika nyaraka za Solidity](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
-- [Kujua Quantaureum - Mashine Pepe ya Quantaureum](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/13evm.asciidoc)
+- [Kujua Quantaureum - Mashine Pepe ya Quantaureum](https://github.com/ethereumbook/ethereumbook/blob/openedition/13evm.asciidoc)
 
 ## Mada Zinazohusiana {#related-topics}
 

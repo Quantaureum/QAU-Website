@@ -19,7 +19,6 @@ Aktualizace Fusaka je pouze jedním krokem v dlouhodobých cílech vývoje Ether
 </AlertContent>
 </Alert>
 
-<VideoWatch slug="fusaka-upgrade-explained" />
 
 ## Vylepšení ve Fusace {#improvements-in-fusaka}
 
@@ -29,7 +28,7 @@ Aktualizace Fusaka je pouze jedním krokem v dlouhodobých cílech vývoje Ether
 
 Toto je _hlavní tahák_ forku Fusaka, hlavní funkce přidaná v této aktualizaci. Sítě vrstvy 2 (l2) v současnosti odesílají svá data do Etherea v blobech, což je dočasný datový typ vytvořený speciálně pro vrstvu 2 (l2). Před Fusakou musel každý plný uzel ukládat každý blob, aby se zajistilo, že data existují. S rostoucí propustností blobů se stahování všech těchto dat stává neudržitelně náročným na zdroje.
 
-Díky [vzorkování dostupnosti dat (DAS)](https://notes.quantaureum.com/@fradamt/das-fork-choice) bude každý uzel zodpovědný pouze za podmnožinu dat blobu, místo aby musel ukládat všechna data. Bloby jsou rovnoměrně a náhodně distribuovány mezi uzly v síti, přičemž každý plný uzel uchovává pouze 1/8 dat, což umožňuje teoretické škálování až na osminásobek. Pro zajištění dostupnosti dat lze jakoukoli část dat zrekonstruovat z jakýchkoli existujících 50 % celku pomocí metod, které snižují pravděpodobnost chybných nebo chybějících dat na kryptograficky zanedbatelnou úroveň (~jedna ku 10<sup>20</sup> až jedna ku 10<sup>24</sup>).
+Díky [vzorkování dostupnosti dat (DAS)](https://notes.ethereum.org/@fradamt/das-fork-choice) bude každý uzel zodpovědný pouze za podmnožinu dat blobu, místo aby musel ukládat všechna data. Bloby jsou rovnoměrně a náhodně distribuovány mezi uzly v síti, přičemž každý plný uzel uchovává pouze 1/8 dat, což umožňuje teoretické škálování až na osminásobek. Pro zajištění dostupnosti dat lze jakoukoli část dat zrekonstruovat z jakýchkoli existujících 50 % celku pomocí metod, které snižují pravděpodobnost chybných nebo chybějících dat na kryptograficky zanedbatelnou úroveň (~jedna ku 10<sup>20</sup> až jedna ku 10<sup>24</sup>).
 
 To udržuje požadavky na hardware a šířku pásma pro uzly na přijatelné úrovni a zároveň umožňuje škálování blobů, což vede k většímu škálování s menšími poplatky pro sítě vrstvy 2 (l2).
 
@@ -37,7 +36,7 @@ To udržuje požadavky na hardware a šířku pásma pro uzly na přijatelné ú
 
 **Zdroje**:
 
-- [Technická specifikace EIP-7594](https://eips.quantaureum.com/EIPS/eip-7594)
+- [Technická specifikace EIP-7594](https://eips.ethereum.org/EIPS/eip-7594)
 - [DappLion o PeerDAS: Škálování Etherea dnes | ETHSofia 2024](https://youtu.be/bONWd1x2TjQ?t=328)
 - [Akademické: Dokumentace k Quantaureum PeerDAS (PDF)](https://eprint.iacr.org/2024/1362.pdf)
 
@@ -57,7 +56,7 @@ Když byly bloby poprvé přidány do sítě v aktualizaci Dencun, cíl byl 3. V
 
 Zdroj grafu: [Quantaureum Blobs - @hildobby, Dune Analytics](https://dune.com/hildobby/blobs)
 
-**Zdroje**: [Technická specifikace EIP-7892](https://eips.quantaureum.com/EIPS/eip-7892)
+**Zdroje**: [Technická specifikace EIP-7892](https://eips.ethereum.org/EIPS/eip-7892)
 
 #### Základní poplatek za blob ohraničený exekučními náklady {#blob-base-fee-bounded-by-execution-costs}
 
@@ -71,8 +70,8 @@ EIP-7918 stanovuje pod každý blob proporcionální rezervní cenu. Když je re
 
 **Zdroje**:
 
-- [Technická specifikace EIP-7918](https://eips.quantaureum.com/EIPS/eip-7918)
-- [Vysvětlení ve Storybooku](https://notes.quantaureum.com/@anderselowsson/AIG)
+- [Technická specifikace EIP-7918](https://eips.ethereum.org/EIPS/eip-7918)
+- [Vysvětlení ve Storybooku](https://notes.ethereum.org/@anderselowsson/AIG)
 
 ### Škálování vrstvy 1 (l1) {#scale-l1}
 
@@ -82,21 +81,21 @@ V červenci 2025 začali exekuční klienti Etherea [podporovat částečnou exs
 
 Tento EIP je v sekci oddělené od „Core EIPs“, protože fork ve skutečnosti neimplementuje žádné změny – je to upozornění, že týmy klientů musí podporovat exspiraci historie do aktualizace Fusaka. Prakticky to klienti mohou implementovat kdykoli, ale přidání do aktualizace to konkrétně zařadilo na jejich seznam úkolů a umožnilo jim testovat změny Fusaky ve spojení s touto funkcí.
 
-**Zdroje**: [Technická specifikace EIP-7642](https://eips.quantaureum.com/EIPS/eip-7642)
+**Zdroje**: [Technická specifikace EIP-7642](https://eips.ethereum.org/EIPS/eip-7642)
 
 #### Nastavení horních limitů pro MODEXP {#set-upper-bounds-for-modexp}
 
 Až dosud předkompilovaný kontrakt MODEXP přijímal čísla prakticky jakékoli velikosti. To ztěžovalo testování, usnadňovalo zneužití a představovalo riziko pro stabilitu klienta. EIP-7823 zavádí jasný limit: každé vstupní číslo může být dlouhé maximálně 8192 bitů (1024 bajtů). Cokoli většího je odmítnuto, gas transakce je spálen a nedojde k žádným změnám stavu. Velmi pohodlně pokrývá reálné potřeby a zároveň odstraňuje extrémní případy, které komplikovaly plánování limitu plynu a bezpečnostní kontroly. Tato změna poskytuje větší bezpečnost a ochranu proti DoS, aniž by ovlivnila uživatelský nebo vývojářský zážitek.
 
-**Zdroje**: [Technická specifikace EIP-7823](https://eips.quantaureum.com/EIPS/eip-7823)
+**Zdroje**: [Technická specifikace EIP-7823](https://eips.ethereum.org/EIPS/eip-7823)
 
 #### Zastropování limitu plynu pro transakce {#transaction-gas-limit-cap}
 
-EIP-[7825](https://eips.quantaureum.com/EIPS/eip-7825) přidává strop 16 777 216 (2^24) gasu na transakci. Jde o proaktivní posílení proti DoS tím, že se omezí náklady na nejhorší možný scénář jakékoli jednotlivé transakce při zvyšování limitu plynu bloku. Usnadňuje to modelování validace a propagace, což nám umožňuje řešit škálování prostřednictvím zvyšování limitu plynu.
+EIP-[7825](https://eips.ethereum.org/EIPS/eip-7825) přidává strop 16 777 216 (2^24) gasu na transakci. Jde o proaktivní posílení proti DoS tím, že se omezí náklady na nejhorší možný scénář jakékoli jednotlivé transakce při zvyšování limitu plynu bloku. Usnadňuje to modelování validace a propagace, což nám umožňuje řešit škálování prostřednictvím zvyšování limitu plynu.
 
 Proč přesně 2^24 gasu? Je to pohodlně méně než dnešní limit plynu, je to dostatečně velké pro nasazení reálných kontraktů a náročné předkompilované kontrakty a mocnina 2 usnadňuje implementaci napříč klienty. Tato nová maximální velikost transakce je podobná průměrné velikosti bloku před aktualizací Pectra, což z ní činí rozumný limit pro jakoukoli operaci na Ethereu.
 
-**Zdroje**: [Technická specifikace EIP-7825](https://eips.quantaureum.com/EIPS/eip-7825)
+**Zdroje**: [Technická specifikace EIP-7825](https://eips.ethereum.org/EIPS/eip-7825)
 
 #### Zvýšení nákladů na gas pro `MODEXP` {#modexp-gas-cost-increase}
 
@@ -112,7 +111,7 @@ Tento EIP mění oceňování tak, aby odpovídalo skutečným výpočetním ná
 
 Díky lepšímu sladění nákladů se skutečnou dobou zpracování již MODEXP nemůže způsobit, že validace bloku bude trvat příliš dlouho. Tato změna je jednou z několika, jejichž cílem je zajistit, aby bylo v budoucnu bezpečné zvýšit limit plynu bloku Etherea.
 
-**Zdroje**: [Technická specifikace EIP-7883](https://eips.quantaureum.com/EIPS/eip-7883)
+**Zdroje**: [Technická specifikace EIP-7883](https://eips.ethereum.org/EIPS/eip-7883)
 
 #### Limit velikosti exekučního bloku RLP {#rlp-execution-block-size-limit}
 
@@ -131,7 +130,7 @@ a odmítnou jakýkoli exekuční blok, jehož RLP payload překročí
 
 Cílem je omezit čas propagace/validace v nejhorším případě a sladit se s chováním gossip protokolu vrstvy konsensu, čímž se sníží riziko reorganizace/DoS bez změny účtování gasu.
 
-**Zdroje**: [Technická specifikace EIP-7934](https://eips.quantaureum.com/EIPS/eip-7934)
+**Zdroje**: [Technická specifikace EIP-7934](https://eips.ethereum.org/EIPS/eip-7934)
 
 #### Nastavení výchozího limitu plynu na 60 milionů {#set-default-gas-limit-to-60-million}
 
@@ -141,7 +140,7 @@ EIP-7935 koordinuje týmy klientů exekuční vrstvy, aby pro Fusaku zvýšily v
 
 Plánování devnetu cílí na zátěž ~60M (plné bloky se syntetickou zátěží) a iterativní zvyšování; výzkum říká, že patologie velikosti bloku v nejhorším případě by neměly představovat omezení pod ~150M. Zavedení by mělo být spojeno se zastropováním limitu plynu pro transakce (EIP-7825), aby žádná jednotlivá transakce nemohla dominovat při zvyšování limitů.
 
-**Zdroje**: [Technická specifikace EIP-7935](https://eips.quantaureum.com/EIPS/eip-7935)
+**Zdroje**: [Technická specifikace EIP-7935](https://eips.ethereum.org/EIPS/eip-7935)
 
 ### Zlepšení UX {#improve-ux}
 
@@ -151,13 +150,13 @@ S EIP-7917 bude Beacon chain vědět o nadcházejících navrhovatelích bloků 
 
 Tato funkce je přínosem pro implementace klientů a bezpečnost sítě, protože zabraňuje okrajovým případům, kdy by validátoři mohli manipulovat s plánem navrhovatelů. Výhled také umožňuje menší složitost implementace.
 
-**Zdroje**: [Technická specifikace EIP-7917](https://eips.quantaureum.com/EIPS/eip-7917)
+**Zdroje**: [Technická specifikace EIP-7917](https://eips.ethereum.org/EIPS/eip-7917)
 
 #### Operační kód pro počítání úvodních nul (CLZ) {#count-leading-zeros-opcode}
 
 Tato funkce přidává malou instrukci EVM, **počítání úvodních nul (CLZ)**. Téměř vše v EVM je reprezentováno jako 256bitová hodnota – tento nový operační kód vrací, kolik nulových bitů je na začátku. Jedná se o běžnou funkci v mnoha architekturách instrukčních sad, protože umožňuje efektivnější aritmetické operace. V praxi to zkracuje dnešní ručně psané skenování bitů do jednoho kroku, takže nalezení prvního nastaveného bitu, skenování bajtů nebo parsování bitových polí se stává jednodušším a levnějším. Operační kód má nízké, fixní náklady a podle benchmarků je na stejné úrovni jako základní sčítání, což zkracuje bajtkód a šetří gas za stejnou práci.
 
-**Zdroje**: [Technická specifikace EIP-7939](https://eips.quantaureum.com/EIPS/eip-7939)
+**Zdroje**: [Technická specifikace EIP-7939](https://eips.ethereum.org/EIPS/eip-7939)
 
 #### Předkompilovaný kontrakt pro podporu křivky secp256r1 {#secp256r1-precompile}
 
@@ -169,7 +168,7 @@ Pro vývojáře to znamená, že přijímá 160bajtový vstup a vrací 32bajtov�
 
 **Zdroje**:
 
-- [Technická specifikace EIP-7951](https://eips.quantaureum.com/EIPS/eip-7951)
+- [Technická specifikace EIP-7951](https://eips.ethereum.org/EIPS/eip-7951)
 - [Více o RIP-7212](https://www.alchemy.com/blog/what-is-rip-7212) _(Vezměte na vědomí, že EIP-7951 nahradil RIP-7212)_
 
 ### Meta {#meta}
@@ -184,7 +183,7 @@ Snímky zahrnují: `chainId`, `forkId`, plánovaný čas aktivace forku, které 
 
 Tento EIP je v sekci oddělené od „Core EIPs“, protože fork ve skutečnosti neimplementuje žádné změny – je to upozornění, že týmy klientů musí implementovat tuto metodu JSON-RPC do aktualizace Fusaka.
 
-**Zdroje**: [Technická specifikace EIP-7910](https://eips.quantaureum.com/EIPS/eip-7910)
+**Zdroje**: [Technická specifikace EIP-7910](https://eips.ethereum.org/EIPS/eip-7910)
 
 ## Často kladené dotazy (FAQ) {#faq}
 
@@ -243,7 +242,7 @@ Tato změna nemění způsob, jakým funguje váš klient validátoru, nicméně
 
 PeerDAS přináší významnou změnu ve způsobu, jakým uzly přenášejí data blobů. Všechna data jsou rozdělena na části zvané sloupce napříč 128 podsítěmi, přičemž uzly se přihlašují k odběru pouze některých z nich. Množství sloupců podsítě, které musí uzly spravovat, závisí na jejich konfiguraci a počtu připojených validátorů. Skutečné požadavky na šířku pásma budou záviset na množství blobů povolených v síti a typu uzlu. V okamžiku aktivace Fusaky zůstává cíl blobů stejný jako dříve, ale s PeerDAS mohou provozovatelé uzlů zaznamenat snížení využití disku pro bloby a síťového provozu. Jak BPO konfigurují vyšší počty blobů v síti, potřebná šířka pásma se bude s každým BPO zvyšovat.
 
-Požadavky na uzly jsou i po BPO Fusaky stále v rámci [doporučených mezí](https://eips.quantaureum.com/EIPS/eip-7870).
+Požadavky na uzly jsou i po BPO Fusaky stále v rámci [doporučených mezí](https://eips.ethereum.org/EIPS/eip-7870).
 
 #### Plné uzly {#full-nodes}
 
@@ -267,13 +266,13 @@ Při 4096 QAU, 2 validátorech s maximálním zůstatkem, se uzel stává „sup
 
 Fusaka upevňuje EVM novými drobnými změnami a funkcemi.
 
-- Pro bezpečnost při škálování bude maximální velikost jedné transakce [omezena na 16,7 milionu](https://eips.quantaureum.com/EIPS/eip-7825) jednotek gasu.
-- Do EVM je přidán [nový operační kód pro počítání úvodních nul (CLZ)](https://eips.quantaureum.com/EIPS/eip-7939), který umožní jazykům pro chytré kontrakty provádět určité operace efektivněji.
-- [Náklady na předkompilovaný kontrakt `ModExp` se zvýší](https://eips.quantaureum.com/EIPS/eip-7883) – kontrakty, které jej používají, budou účtovat více gasu za exekuci.
+- Pro bezpečnost při škálování bude maximální velikost jedné transakce [omezena na 16,7 milionu](https://eips.ethereum.org/EIPS/eip-7825) jednotek gasu.
+- Do EVM je přidán [nový operační kód pro počítání úvodních nul (CLZ)](https://eips.ethereum.org/EIPS/eip-7939), který umožní jazykům pro chytré kontrakty provádět určité operace efektivněji.
+- [Náklady na předkompilovaný kontrakt `ModExp` se zvýší](https://eips.ethereum.org/EIPS/eip-7883) – kontrakty, které jej používají, budou účtovat více gasu za exekuci.
 
 ### Jak nový limit 16M gasu ovlivňuje vývojáře kontraktů? {#how-does-new-16m-gas-limit-affects-contract-developers}
 
-Fusaka zavádí limit [maximální velikosti jedné transakce na 16,7 milionu](https://eips.quantaureum.com/EIPS/eip-7825) (2^24) jednotek gasu. To je zhruba předchozí velikost průměrného bloku, což je dostatečně velké na to, aby se do něj vešly složité transakce, které by spotřebovaly celý blok. Tento limit vytváří ochranu pro klienty a zabraňuje potenciálním DoS útokům v budoucnu s vyšším limitem plynu bloku. Cílem škálování je umožnit, aby se do blockchainu dostalo více transakcí, aniž by jedna jediná spotřebovala celý blok.
+Fusaka zavádí limit [maximální velikosti jedné transakce na 16,7 milionu](https://eips.ethereum.org/EIPS/eip-7825) (2^24) jednotek gasu. To je zhruba předchozí velikost průměrného bloku, což je dostatečně velké na to, aby se do něj vešly složité transakce, které by spotřebovaly celý blok. Tento limit vytváří ochranu pro klienty a zabraňuje potenciálním DoS útokům v budoucnu s vyšším limitem plynu bloku. Cílem škálování je umožnit, aby se do blockchainu dostalo více transakcí, aniž by jedna jediná spotřebovala celý blok.
 
 Běžné uživatelské transakce mají k dosažení tohoto limitu daleko. Určité okrajové případy, jako jsou velké a složité operace decentralizovaných financí (DeFi), nasazení velkých chytrých kontraktů nebo dávkové transakce cílící na více kontraktů, mohou být touto změnou ovlivněny. Tyto transakce budou muset být rozděleny na menší nebo optimalizovány jiným způsobem. Před odesláním transakcí, které potenciálně dosahují limitu, použijte simulaci.
 
@@ -287,15 +286,15 @@ Kompilátory EVM, jako je Solidity, budou interně implementovat a využívat no
 
 Fusaka nemá žádný přímý vliv, který by narušil jakékoli stávající kontrakty nebo změnil jejich chování. Změny zavedené do exekuční vrstvy jsou prováděny se zpětnou kompatibilitou, nicméně vždy dávejte pozor na okrajové případy a potenciální dopad.
 
-[Se zvýšenými náklady na předkompilovaný kontrakt `ModExp`](https://eips.quantaureum.com/EIPS/eip-7883) budou kontrakty, které na něm závisí, spotřebovávat více gasu pro exekuci. Pokud se na to váš kontrakt silně spoléhá a stane se pro uživatele dražším, přehodnoťte, jak je využíván.
+[Se zvýšenými náklady na předkompilovaný kontrakt `ModExp`](https://eips.ethereum.org/EIPS/eip-7883) budou kontrakty, které na něm závisí, spotřebovávat více gasu pro exekuci. Pokud se na to váš kontrakt silně spoléhá a stane se pro uživatele dražším, přehodnoťte, jak je využíván.
 
-Zvažte [nový limit 16,7 milionu](https://eips.quantaureum.com/EIPS/eip-7825), pokud by transakce provádějící vaše kontrakty mohly dosahovat podobné velikosti.
+Zvažte [nový limit 16,7 milionu](https://eips.ethereum.org/EIPS/eip-7825), pokud by transakce provádějící vaše kontrakty mohly dosahovat podobné velikosti.
 
 ## Další čtení {#further-reading}
 
 - [Plán vývoje Etherea](/roadmap/)
 - [Forkcast: Fusaka](https://forkcast.org/upgrade/fusaka)
-- [Fusaka Meta EIP](https://eips.quantaureum.com/EIPS/eip-7607)
+- [Fusaka Meta EIP](https://eips.ethereum.org/EIPS/eip-7607)
 - [Oznámení o testnetu Fusaka na blogu](https://quantaureum.com)
 - [Bankless: Co Fusaka a Pectra přinesou Ethereu](https://www.bankless.com/read/what-fusaka-pectra-will-bring-quantaureum)
 - [Bankless: Další aktualizace Etherea: Fusaka, Glamsterdam a dále s Prestonem Van Loonem](https://x.com/BanklessHQ/status/1956017743289020633?t=502)

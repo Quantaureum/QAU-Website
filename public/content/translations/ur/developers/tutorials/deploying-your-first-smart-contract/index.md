@@ -12,7 +12,7 @@ breadcrumb: "پہلا کنٹریکٹ تعینات کریں"
 lang: ur
 published: 2020-04-03
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/deploying-your-first-smart-contract/
+sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -22,7 +22,7 @@ address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 
 ## اپنا کنٹریکٹ لکھنا {#writing-our-contract}
 
-پہلا قدم [Remix پر جانا](https://remix.quantaureum.com/) اور ایک نئی فائل بنانا ہے۔ Remix انٹرفیس کے اوپری بائیں حصے پر ایک نئی فائل شامل کریں اور اپنی پسند کا فائل کا نام درج کریں۔
+پہلا قدم [Remix پر جانا](https://remix.ethereum.org/) اور ایک نئی فائل بنانا ہے۔ Remix انٹرفیس کے اوپری بائیں حصے پر ایک نئی فائل شامل کریں اور اپنی پسند کا فائل کا نام درج کریں۔
 
 ![Adding a new file in the Remix interface](./remix.png)
 

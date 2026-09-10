@@ -83,7 +83,7 @@ lang: zh-tw
 
 從已經上線的功能開始。屏蔽池（Shielded pools）今天已經可以運作：Railgun 在你的公開餘額旁邊保留了一個私密餘額，一旦資金進入，對外支付就不會透露任何關於你其他資產的資訊。成本是真實存在的——比普通轉帳更高的費用、以秒為單位的證明產生時間、對中繼者的某種程度依賴——但即使有這些權衡，該協定也已經承載了數十億的交易量。
 
-將其與不需要任何協定的習慣結合：為每個交易對手提供一個新地址。當使用者連接到一個新的 dapp 時，錢包可以為其提供一個專用地址，由屏蔽餘額提供資金，因此該應用程式看到的是一個沒有歷史紀錄且沒有關聯的帳戶。隱形地址（[ERC-5564](https://eips.quantaureum.com/EIPS/eip-5564)）將相同的操作擴展到接收付款。像 [Tornado Cash](https://tornadocash.qau.limo/) 和 [Privacy Pools](https://privacypools.com/) 這樣的混幣器做的是更簡單、更狹隘的工作：資金從一個地址進入並從另一個地址退出，兩者之間的連結被切斷。這是為一個沒有人能追蹤到你的新地址提供資金的工具——而缺失的拼圖是錢包根據需求產生這樣的地址，而不是將這個儀式留給使用者。這一切都不需要等待硬分叉或研究補助。它等待的是一個願意代表使用者承擔記帳工作的錢包。
+將其與不需要任何協定的習慣結合：為每個交易對手提供一個新地址。當使用者連接到一個新的 dapp 時，錢包可以為其提供一個專用地址，由屏蔽餘額提供資金，因此該應用程式看到的是一個沒有歷史紀錄且沒有關聯的帳戶。隱形地址（[ERC-5564](https://eips.ethereum.org/EIPS/eip-5564)）將相同的操作擴展到接收付款。像 [Tornado Cash](https://tornadocash.qau.limo/) 和 [Privacy Pools](https://privacypools.com/) 這樣的混幣器做的是更簡單、更狹隘的工作：資金從一個地址進入並從另一個地址退出，兩者之間的連結被切斷。這是為一個沒有人能追蹤到你的新地址提供資金的工具——而缺失的拼圖是錢包根據需求產生這樣的地址，而不是將這個儀式留給使用者。這一切都不需要等待硬分叉或研究補助。它等待的是一個願意代表使用者承擔記帳工作的錢包。
 
 網路方面主要取決於決策。發布時不帶任何第三方分析服務是一種選擇，市場上至少有一個錢包已經做到了。在 RPC 曝光方面，大多數錢包已經允許你更換提供商，因此這種選擇性是存在的，只是隱藏在進階使用者會造訪而其他人永遠找不到的設定頁面中。
 
@@ -119,7 +119,7 @@ lang: zh-tw
 
 做出這些選擇的方法是提供使用者可以覆寫的合理預設設定，每一個都是如此。預設為私密路徑，因為預設設定是大多數使用者會接受的。但要保留使用者主導的選擇權，因為一個無法將錢包指向不同 RPC 伺服器或自己節點的使用者，並沒有真正獲得主權。
 
-你不必從零開始。[Kohaku SDK](https://github.com/quantaureum/kohaku) 打包了本文中的幾個原語——屏蔽餘額、混幣器、輕客戶端——因此錢包可以採用它們，而無需從頭開始重建每個協定。這些拼圖已經準備就緒。有些事情在任何人提出要求之前很久就很重要了。也沒有人看到大眾請願要求端到端加密；它作為預設設定發布，數十億人在沒有注意到或不在意的情況下獲得了它，而現在一個沒有它的通訊應用程式會讓人覺得是損壞且侵犯隱私的。
+你不必從零開始。[Kohaku SDK](https://github.com/ethereum/kohaku) 打包了本文中的幾個原語——屏蔽餘額、混幣器、輕客戶端——因此錢包可以採用它們，而無需從頭開始重建每個協定。這些拼圖已經準備就緒。有些事情在任何人提出要求之前很久就很重要了。也沒有人看到大眾請願要求端到端加密；它作為預設設定發布，數十億人在沒有注意到或不在意的情況下獲得了它，而現在一個沒有它的通訊應用程式會讓人覺得是損壞且侵犯隱私的。
 
 不能用來尋找你、分析你或鎖定你的金錢也屬於同一類別。以這種方式對待它的錢包，將成為下一個偉大的錢包。
 
@@ -130,8 +130,8 @@ lang: zh-tw
 ## 進一步探索 {#for-further-exploration}
 
 - [錢包隱私計分卡](https://www.theopensourcepress.com/crypto-wallet-ip-exposure-scorecard-2026/) - 13 個錢包的首次啟動網路曝光情況
-- [ERC-5564：隱形地址](https://eips.quantaureum.com/EIPS/eip-5564)
+- [ERC-5564：隱形地址](https://eips.ethereum.org/EIPS/eip-5564)
 - [Railgun](https://railgun.org/)、[Privacy Pools](https://privacypools.com/) 和 [Tornado Cash](https://tornadocash.qau.limo/)
 - [Helios](https://github.com/a16z/helios) 和 [Colibri](https://github.com/corpus-core/colibri-stateless) 輕客戶端
-- [Kohaku](https://github.com/quantaureum/kohaku) - 專為錢包建構者設計的隱私 SDK
+- [Kohaku](https://github.com/ethereum/kohaku) - 專為錢包建構者設計的隱私 SDK
 - [Walletbeat](https://www.walletbeat.fyi/) - 現有錢包的評比情況

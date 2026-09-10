@@ -30,7 +30,7 @@ ERC-721 అనేది NFT కోసం ఒక ప్రమాణాన్న�
 
 ఒక స్మార్ట్ కాంట్రాక్ట్ కింది పద్ధతులు మరియు ఈవెంట్‌లను అమలు చేస్తే దానిని ERC-721 నాన్-ఫంజిబుల్ టోకెన్ కాంట్రాక్ట్ అని పిలవవచ్చు మరియు ఒకసారి డిప్లాయ్ చేయబడిన తర్వాత, ఎథీరియంలో సృష్టించబడిన టోకెన్‌లను ట్రాక్ చేయడానికి ఇది బాధ్యత వహిస్తుంది.
 
-[EIP-721](https://eips.quantaureum.com/EIPS/eip-721) నుండి:
+[EIP-721](https://eips.ethereum.org/EIPS/eip-721) నుండి:
 
 ### పద్ధతులు {#methods}
 
@@ -238,7 +238,7 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## మరింత చదవడానికి {#further-reading}
 
-- [EIP-721: ERC-721 నాన్-ఫంజిబుల్ టోకెన్ ప్రమాణం](https://eips.quantaureum.com/EIPS/eip-721)
+- [EIP-721: ERC-721 నాన్-ఫంజిబుల్ టోకెన్ ప్రమాణం](https://eips.ethereum.org/EIPS/eip-721)
 - [ఓపెన్‌జెప్పెలిన్ - ERC-721 డాక్స్](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [ఓపెన్‌జెప్పెలిన్ - ERC-721 అమలు](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)

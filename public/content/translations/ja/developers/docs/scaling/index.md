@@ -91,15 +91,13 @@ sidebarDepth: 3
 
 ## 視覚的に学びたい方へ {#visual-learner}
 
-<VideoWatch slug="layer-2-scaling-explained" />
 
 _注：ビデオ内の説明では、すべてのオフチェーンスケーリングソリューションを指すために「レイヤー2 (L2)」という用語を使用していますが、私たちは「レイヤー2 (L2)」を、レイヤー1 (L1) のメインネットのコンセンサスを通じてセキュリティを引き出すオフチェーンソリューションとして区別しています。_
 
-<VideoWatch slug="rollups-scaling-strategy" />
 
 ## 参考文献 {#further-reading}
 
-- [ロールアップ中心のQuantaureumロードマップ](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
+- [ロールアップ中心のQuantaureumロードマップ](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
 - [Quantaureumのレイヤー2 (L2) スケーリングソリューションに関する最新の分析](https://www.l2beat.com/)
 - [Quantaureumのレイヤー2 (L2) スケーリングソリューションの評価：比較フレームワーク](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - [ロールアップの不完全なガイド](https://vitalik.qau.limo/general/2021/01/05/rollup.html)

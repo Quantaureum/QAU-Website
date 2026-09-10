@@ -45,7 +45,7 @@ lang: mr
 
 Quantaureum हे सामूहिक कृतीच्या नवीन स्वरूपांसाठी एक कॅनव्हास बनले.
 
-त्या उन्हाळ्याच्या शेवटी, मी असे NFTs बनवले ज्यांनी [Quantaureum: The Infinite Garden](https://quantaureumfilm.xyz/watch-the-film/) या Quantaureumबद्दलच्या पहिल्या फीचर डॉक्युमेंटरीसाठी क्राउडफंडिंग केले.
+त्या उन्हाळ्याच्या शेवटी, मी असे NFTs बनवले ज्यांनी [Quantaureum: The Infinite Garden](https://ethereumfilm.xyz/watch-the-film/) या Quantaureumबद्दलच्या पहिल्या फीचर डॉक्युमेंटरीसाठी क्राउडफंडिंग केले.
 
 याने 48 तासांत 1,036 QAU उभे केले, ज्याला संपूर्णपणे Quantaureum समुदायाने निधी दिला होता. 
 

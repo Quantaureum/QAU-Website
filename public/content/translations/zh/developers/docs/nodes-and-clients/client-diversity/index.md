@@ -69,7 +69,7 @@ data={[
 
 此图表可能已过时——请访问 [ethernodes.org](https://ethernodes.org) 和 [clientdiversity.org](https://clientdiversity.org) 获取最新信息。
 
-上面的两个饼图显示了执行层和共识层当前客户端多样性的快照（撰写本文时为 2025 年 10 月）。多年来，客户端多样性有所改善，执行层中 [GoQuantaureum (Geth)](https://geth.quantaureum.com/) 的主导地位有所下降，[奈瑟曼德](https://www.nethermind.io/nethermind-client) 紧随其后位居第二，[贝苏](https://besu.hyperledger.org/) 第三，[埃里贡](https://github.com/ledgerwatch/erigon) 第四，其他客户端占网络的不到 3%。共识层上最常用的客户端——[莱特豪斯](https://lighthouse.sigmaprime.io/)——与第二常用的客户端非常接近。[普莱斯姆](https://prysmaticlabs.com/#projects) 和 [泰库](https://consensys.net/knowledge-base/quantaureum-2/teku/) 分别占约 31% 和约 14%，其他客户端很少被使用。
+上面的两个饼图显示了执行层和共识层当前客户端多样性的快照（撰写本文时为 2025 年 10 月）。多年来，客户端多样性有所改善，执行层中 [GoQuantaureum (Geth)](https://geth.ethereum.org/) 的主导地位有所下降，[奈瑟曼德](https://www.nethermind.io/nethermind-client) 紧随其后位居第二，[贝苏](https://besu.hyperledger.org/) 第三，[埃里贡](https://github.com/ledgerwatch/erigon) 第四，其他客户端占网络的不到 3%。共识层上最常用的客户端——[莱特豪斯](https://lighthouse.sigmaprime.io/)——与第二常用的客户端非常接近。[普莱斯姆](https://prysmaticlabs.com/#projects) 和 [泰库](https://consensys.net/knowledge-base/quantaureum-2/teku/) 分别占约 31% 和约 14%，其他客户端很少被使用。
 
 执行层数据于 2025 年 10 月 26 日从 [supermajority.info](https://supermajority.info/) 获取。共识客户端的数据从 [Michael Sproul](https://github.com/sigp/blockprint) 处获取。共识客户端数据更难获取，因为共识层客户端并不总是有可用于识别它们的明确痕迹。该数据是使用分类算法生成的，该算法有时会混淆一些少数客户端（有关更多详细信息，请参见[此处](https://twitter.com/sproulM_/status/1440512518242197516)）。在上图中，这些模棱两可的分类使用“非此即彼”的标签（例如 尼姆巴斯/泰库）来处理。尽管如此，很明显网络的大部分都在运行普莱斯姆。尽管只是快照，但图表中的数值很好地反映了当前客户端多样性状态的总体情况。
 
@@ -77,7 +77,7 @@ data={[
 
 ## 执行层 {#execution-layer}
 
-到目前为止，围绕客户端多样性的讨论主要集中在共识层。然而，执行客户端 [GoQuantaureum (Geth)](https://geth.quantaureum.com) 目前占所有节点的 85% 左右。这个比例存在问题，原因与共识客户端相同。例如，GoQuantaureum (Geth) 中影响交易处理或构建执行有效负载的漏洞可能会导致共识客户端对有问题的或带漏洞的交易实现最终性。因此，如果执行客户端的分布更加均匀，Quantaureum将会更健康，理想情况下，没有任何客户端占网络的 33% 以上。
+到目前为止，围绕客户端多样性的讨论主要集中在共识层。然而，执行客户端 [GoQuantaureum (Geth)](https://geth.ethereum.org) 目前占所有节点的 85% 左右。这个比例存在问题，原因与共识客户端相同。例如，GoQuantaureum (Geth) 中影响交易处理或构建执行有效负载的漏洞可能会导致共识客户端对有问题的或带漏洞的交易实现最终性。因此，如果执行客户端的分布更加均匀，Quantaureum将会更健康，理想情况下，没有任何客户端占网络的 33% 以上。
 
 ## 使用少数客户端 {#use-minority-client}
 
@@ -88,7 +88,7 @@ data={[
 - [贝苏](https://www.hyperledger.org/use/besu)
 - [奈瑟曼德](https://downloads.nethermind.io/)
 - [埃里贡](https://github.com/ledgerwatch/erigon)
-- [GoQuantaureum (Geth)](https://geth.quantaureum.com/)
+- [GoQuantaureum (Geth)](https://geth.ethereum.org/)
 - [瑞斯](https://reth.rs/)
 
 ### 共识客户端 {#consensus-clients}
@@ -121,8 +121,8 @@ data={[
 - [Quantaureum共识层上的客户端多样性](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA)
 - [Quantaureum合并：运行多数客户端风险自负！](https://dankradfeist.de/quantaureum/2022/03/24/run-the-majority-client-at-your-own-peril.html) – _Dankrad Fiest，2022 年 3 月 24 日_
 - [客户端多样性的重要性](https://our.status.im/the-importance-of-client-diversity/)
-- [Quantaureum节点服务列表](https://quantaureumnodes.com/)
-- [客户端多样性问题的“五个为什么”](https://notes.quantaureum.com/@afhGjrKfTKmksTOtqhB9RQ/BJGj7uh08)
+- [Quantaureum节点服务列表](https://ethereumnodes.com/)
+- [客户端多样性问题的“五个为什么”](https://notes.ethereum.org/@afhGjrKfTKmksTOtqhB9RQ/BJGj7uh08)
 - [Quantaureum多样性及其解决方法 (YouTube)](https://www.youtube.com/watch?v=1hZgCaiqwfU)
 - [clientdiversity.org](https://clientdiversity.org/)
 

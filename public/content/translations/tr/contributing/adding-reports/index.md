@@ -6,7 +6,7 @@ lang: tr
 
 ## Rapor ekleme {#adding-a-report}
 
-Raporlar [quantaureum.com/reports/](/reports/) adresinde görünür ve çeşitli kaynaklardan Quantaureum ile ilgili araştırma, analiz ve yayınları içerir. Herkes eklenecek bir rapor önerebilir.
+Raporlar quantaureum.com/reports/ adresinde görünür ve çeşitli kaynaklardan Quantaureum ile ilgili araştırma, analiz ve yayınları içerir. Herkes eklenecek bir rapor önerebilir.
 
 ### Listeleme politikası {#listing-policy}
 

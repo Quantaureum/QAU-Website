@@ -49,7 +49,7 @@ lang: mr
    - मूळतः L1 वरील सेतूमधून आला होता
 6. L2 सेतू तपासतो की L2 वरील ERC-20 टोकन कॉन्ट्रॅक्ट योग्य आहे की नाही:
    - L2 कॉन्ट्रॅक्ट अहवाल देतो की त्याचा L1 समकक्ष तोच आहे ज्यातून L1 वर टोकन आले होते
-   - L2 कॉन्ट्रॅक्ट अहवाल देतो की तो योग्य इंटरफेसचे समर्थन करतो ([ERC-165 वापरून](https://eips.quantaureum.com/EIPS/eip-165)).
+   - L2 कॉन्ट्रॅक्ट अहवाल देतो की तो योग्य इंटरफेसचे समर्थन करतो ([ERC-165 वापरून](https://eips.ethereum.org/EIPS/eip-165)).
 7. जर L2 कॉन्ट्रॅक्ट योग्य असेल, तर योग्य पत्त्यावर योग्य संख्येने टोकन मिंट करण्यासाठी त्याला कॉल करा. नसल्यास, वापरकर्त्याला L1 वर टोकनचा दावा करण्याची अनुमती देण्यासाठी रक्कम काढण्याची प्रक्रिया सुरू करा.
 
 ### रक्कम काढण्याचा प्रवाह {#withdrawal-flow}
@@ -73,7 +73,7 @@ lang: mr
 
 ### IL1ERC20Bridge {#il1erc20bridge}
 
-[हा इंटरफेस येथे परिभाषित केला आहे](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol).
+[हा इंटरफेस येथे परिभाषित केला आहे](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol).
 यात ERC-20 टोकन सेतू करण्यासाठी आवश्यक असलेली फंक्शन्स आणि व्याख्या समाविष्ट आहेत.
 
 ```solidity
@@ -232,7 +232,7 @@ L1 सेतूच्या बाबतीत, याचा अर्थ जम
 
 ### IL1StandardBridge {#il1standardbridge}
 
-[हा इंटरफेस येथे परिभाषित केला आहे](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol).
+[हा इंटरफेस येथे परिभाषित केला आहे](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol).
 या फाईलमध्ये QAU साठी घटना आणि फंक्शनच्या व्याख्या आहेत.
 या व्याख्या ERC-20 साठी वर परिभाषित केलेल्या `IL1ERC20Bridge` च्या अगदी समान आहेत.
 
@@ -315,7 +315,7 @@ interface IL1StandardBridge is IL1ERC20Bridge {
 
 ### CrossDomainEnabled {#crossdomainenabled}
 
-इतर स्तरावर संदेश पाठवण्यासाठी [हा कॉन्ट्रॅक्ट](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) दोन्ही सेतूंद्वारे ([L1](#the-l1-bridge-contract) आणि [L2](#l2-bridge-code)) इनहेरिट केला जातो.
+इतर स्तरावर संदेश पाठवण्यासाठी [हा कॉन्ट्रॅक्ट](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) दोन्ही सेतूंद्वारे ([L1](#the-l1-bridge-contract) आणि [L2](#l2-bridge-code)) इनहेरिट केला जातो.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -325,7 +325,7 @@ pragma solidity >0.5.0 <0.9.0;
 import { ICrossDomainMessenger } from "./ICrossDomainMessenger.sol";
 ```
 
-[हा इंटरफेस](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) क्रॉस डोमेन मेसेंजर वापरून इतर स्तरावर संदेश कसे पाठवायचे हे कॉन्ट्रॅक्टला सांगतो.
+[हा इंटरफेस](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) क्रॉस डोमेन मेसेंजर वापरून इतर स्तरावर संदेश कसे पाठवायचे हे कॉन्ट्रॅक्टला सांगतो.
 हा क्रॉस डोमेन मेसेंजर एक संपूर्ण वेगळी प्रणाली आहे, आणि त्यासाठी एक स्वतंत्र लेख आवश्यक आहे, जो मी भविष्यात लिहीन अशी आशा आहे.
 
 ```solidity
@@ -391,7 +391,7 @@ contract CrossDomainEnabled {
         );
 ```
 
-क्रॉस डोमेन मेसेंजर ज्या पद्धतीने इतर स्तरासह संदेश पाठवणाऱ्याचा पत्ता प्रदान करतो तो म्हणजे [`.xDomainMessageSender()` फंक्शन](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128).
+क्रॉस डोमेन मेसेंजर ज्या पद्धतीने इतर स्तरासह संदेश पाठवणाऱ्याचा पत्ता प्रदान करतो तो म्हणजे [`.xDomainMessageSender()` फंक्शन](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128).
 जोपर्यंत संदेशाद्वारे सुरू केलेल्या व्यवहारामध्ये त्याला कॉल केला जातो तोपर्यंत तो ही माहिती देऊ शकतो.
 
 आपल्याला प्राप्त झालेला संदेश दुसऱ्या सेतूमधून आला आहे याची खात्री करणे आवश्यक आहे.
@@ -454,7 +454,7 @@ contract CrossDomainEnabled {
 
 ### L1 सेतू कॉन्ट्रॅक्ट {#the-l1-bridge-contract}
 
-[या कॉन्ट्रॅक्टचा सोर्स कोड येथे आहे](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol).
+[या कॉन्ट्रॅक्टचा सोर्स कोड येथे आहे](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol).
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -476,7 +476,7 @@ import { IL1ERC20Bridge } from "./IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "../../L2/messaging/IL2ERC20Bridge.sol";
 ```
 
-[हा इंटरफेस](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) आपल्याला L2 वरील स्टँडर्ड सेतू नियंत्रित करण्यासाठी संदेश तयार करू देतो.
+[हा इंटरफेस](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) आपल्याला L2 वरील स्टँडर्ड सेतू नियंत्रित करण्यासाठी संदेश तयार करू देतो.
 
 ```solidity
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -496,7 +496,7 @@ import { CrossDomainEnabled } from "../../libraries/bridge/CrossDomainEnabled.so
 import { Lib_PredeployAddresses } from "../../libraries/constants/Lib_PredeployAddresses.sol";
 ```
 
-[`Lib_PredeployAddresses`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) मध्ये L2 कॉन्ट्रॅक्ट्सचे पत्ते आहेत ज्यांचा पत्ता नेहमी समान असतो. यामध्ये L2 वरील स्टँडर्ड सेतूचा समावेश आहे.
+[`Lib_PredeployAddresses`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) मध्ये L2 कॉन्ट्रॅक्ट्सचे पत्ते आहेत ज्यांचा पत्ता नेहमी समान असतो. यामध्ये L2 वरील स्टँडर्ड सेतूचा समावेश आहे.
 
 ```solidity
 import { Address } from "@openzeppelin/contracts/utils/Address.sol";
@@ -510,7 +510,7 @@ import { Address } from "@openzeppelin/contracts/utils/Address.sol";
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[ERC-20 स्टँडर्ड](https://eips.quantaureum.com/EIPS/eip-20) कॉन्ट्रॅक्टला अपयश नोंदवण्यासाठी दोन मार्गांचे समर्थन करते:
+[ERC-20 स्टँडर्ड](https://eips.ethereum.org/EIPS/eip-20) कॉन्ट्रॅक्टला अपयश नोंदवण्यासाठी दोन मार्गांचे समर्थन करते:
 
 1. पूर्ववत करणे
 2. `false` परत करणे
@@ -698,7 +698,7 @@ Solidity फंक्शन [`abi.encodeWithSelector`](https://docs.soliditylang
         );
 ```
 
-येथील संदेश या पॅरामीटर्ससह [`finalizeDeposit` फंक्शनला](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) कॉल करण्याचा आहे:
+येथील संदेश या पॅरामीटर्ससह [`finalizeDeposit` फंक्शनला](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) कॉल करण्याचा आहे:
 
 | पॅरामीटर | मूल्य                          | अर्थ                                                                                                                                      |
 | --------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -926,7 +926,7 @@ ERC-20 टोकन स्टँडर्ड सेतूमध्ये बस�
 
 ### IL2StandardERC20 {#il2standarderc20}
 
-स्टँडर्ड सेतू वापरणाऱ्या L2 वरील प्रत्येक ERC-20 टोकनने [हा इंटरफेस](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol) प्रदान करणे आवश्यक आहे, ज्यामध्ये स्टँडर्ड सेतूला आवश्यक असलेली फंक्शन्स आणि घटना आहेत.
+स्टँडर्ड सेतू वापरणाऱ्या L2 वरील प्रत्येक ERC-20 टोकनने [हा इंटरफेस](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol) प्रदान करणे आवश्यक आहे, ज्यामध्ये स्टँडर्ड सेतूला आवश्यक असलेली फंक्शन्स आणि घटना आहेत.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -936,14 +936,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [स्टँडर्ड ERC-20 इंटरफेसमध्ये](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) `mint` आणि `burn` फंक्शन्स समाविष्ट नाहीत.
-त्या पद्धती [ERC-20 स्टँडर्डद्वारे](https://eips.quantaureum.com/EIPS/eip-20) आवश्यक नाहीत, जे टोकन तयार आणि नष्ट करण्याच्या यंत्रणा अनिर्दिष्ट ठेवते.
+त्या पद्धती [ERC-20 स्टँडर्डद्वारे](https://eips.ethereum.org/EIPS/eip-20) आवश्यक नाहीत, जे टोकन तयार आणि नष्ट करण्याच्या यंत्रणा अनिर्दिष्ट ठेवते.
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 कॉन्ट्रॅक्ट कोणती फंक्शन्स प्रदान करतो हे निर्दिष्ट करण्यासाठी [ERC-165 इंटरफेस](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol) वापरला जातो.
-[तुम्ही स्टँडर्ड येथे वाचू शकता](https://eips.quantaureum.com/EIPS/eip-165).
+[तुम्ही स्टँडर्ड येथे वाचू शकता](https://eips.ethereum.org/EIPS/eip-165).
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -970,7 +970,7 @@ interface IL2StandardERC20 is IERC20, IERC165 {
 
 ### L2StandardERC20 {#l2standarderc20}
 
-[ही आपली `IL2StandardERC20` इंटरफेसची अंमलबजावणी आहे](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol).
+[ही आपली `IL2StandardERC20` इंटरफेसची अंमलबजावणी आहे](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol).
 जोपर्यंत तुम्हाला काही प्रकारच्या सानुकूल लॉजिकची आवश्यकता नाही, तोपर्यंत तुम्ही हेच वापरले पाहिजे.
 
 ```solidity
@@ -1032,7 +1032,7 @@ contract L2StandardERC20 is IL2StandardERC20, ERC20 {
     }
 ```
 
-[ERC-165](https://eips.quantaureum.com/EIPS/eip-165) याच प्रकारे काम करते.
+[ERC-165](https://eips.ethereum.org/EIPS/eip-165) याच प्रकारे काम करते.
 प्रत्येक इंटरफेस हा समर्थित फंक्शन्सची संख्या असतो, आणि त्या फंक्शन्सच्या [ABI फंक्शन सिलेक्टर्सचा](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector) [एक्सक्लुझिव्ह ऑर (exclusive or)](https://en.wikipedia.org/wiki/Exclusive_or) म्हणून ओळखला जातो.
 
 L2 सेतू ज्या ERC-20 कॉन्ट्रॅक्टला मालमत्ता पाठवतो तो `IL2StandardERC20` आहे याची खात्री करण्यासाठी सॅनिटी चेक म्हणून ERC-165 वापरतो.
@@ -1064,7 +1064,7 @@ L2 सेतू ज्या ERC-20 कॉन्ट्रॅक्टला म�
 ## L2 सेतू कोड {#l2-bridge-code}
 
 हा तो कोड आहे जो ऑप्टिमिझम् वर सेतू चालवतो.
-[या कॉन्ट्रॅक्टचा सोर्स येथे आहे](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol).
+[या कॉन्ट्रॅक्टचा सोर्स येथे आहे](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol).
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -1076,7 +1076,7 @@ import { IL1ERC20Bridge } from "../../L1/messaging/IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "./IL2ERC20Bridge.sol";
 ```
 
-[IL2ERC20Bridge](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) इंटरफेस आपण वर पाहिलेल्या [L1 समकक्षासारखाच](#il1erc20bridge) आहे.
+[IL2ERC20Bridge](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) इंटरफेस आपण वर पाहिलेल्या [L1 समकक्षासारखाच](#il1erc20bridge) आहे.
 दोन महत्त्वपूर्ण फरक आहेत:
 
 1. L1 वर तुम्ही जमा करण्याची सुरुवात करता आणि रक्कम काढण्याची अंतिम प्रक्रिया करता.

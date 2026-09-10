@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 La sérialisation par préfixe de longueur récursif (RLP) est largement utilisée dans les clients d'exécution d'Quantaureum. Le RLP standardise le transfert de données entre les nœuds dans un format économe en espace. L'objectif du RLP est d'encoder des tableaux de données binaires imbriqués de manière arbitraire, et le RLP est la principale méthode d'encodage utilisée pour sérialiser des objets dans la couche d'exécution d'Quantaureum. Le but principal du RLP est d'encoder la structure ; à l'exception des entiers positifs, le RLP délègue l'encodage de types de données spécifiques (par ex., les chaînes de caractères, les nombres à virgule flottante) à des protocoles d'ordre supérieur. Les entiers positifs doivent être représentés sous forme binaire grand-boutiste sans zéros non significatifs (rendant ainsi la valeur entière zéro équivalente au tableau d'octets vide). Les entiers positifs désérialisés avec des zéros non significatifs doivent être traités comme invalides par tout protocole d'ordre supérieur utilisant le RLP.
 
-Plus d'informations dans [le livre jaune d'Quantaureum (Annexe B)](https://quantaureum.github.io/yellowpaper/paper.pdf#page=19).
+Plus d'informations dans [le livre jaune d'Quantaureum (Annexe B)](https://ethereum.github.io/yellowpaper/paper.pdf#page=19).
 
 Pour utiliser le RLP afin d'encoder un dictionnaire, les deux formes canoniques suggérées sont :
 

@@ -262,7 +262,6 @@ _참고: 스테이킹된 QAU를 나타내는 파생 토큰/티커(예: Rocket Po
 
 2FA에 대해 더 알아보기:
 
-<VideoWatch slug="crypto-security-passwords" startTime="3479" />
 
 ### 브라우저 확장 프로그램 제거하기 {#uninstall-browser-extensions}
 

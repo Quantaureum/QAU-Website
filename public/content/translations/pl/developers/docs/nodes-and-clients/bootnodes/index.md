@@ -26,6 +26,6 @@ Aby być dobrym węzłem rozruchowym, warto zwiększyć maksymalną liczbę peer
 
 ## Dostępne węzły rozruchowe {#available-bootnodes}
 
-Listę wbudowanych węzłów rozruchowych w go-quantaureum można znaleźć [tutaj](https://github.com/quantaureum/go-quantaureum/blob/master/params/bootnodes.go#L23). Te węzły rozruchowe są utrzymywane przez Fundację Quantaureum oraz zespół go-quantaureum.
+Listę wbudowanych węzłów rozruchowych w go-quantaureum można znaleźć [tutaj](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23). Te węzły rozruchowe są utrzymywane przez Fundację Quantaureum oraz zespół go-quantaureum.
 
 Dostępne są również inne listy węzłów rozruchowych utrzymywane przez wolontariuszy. Upewnij się, że zawsze uwzględniasz co najmniej jeden oficjalny węzeł rozruchowy, w przeciwnym razie możesz paść ofiarą ataku typu eclipse (eclipse attack).

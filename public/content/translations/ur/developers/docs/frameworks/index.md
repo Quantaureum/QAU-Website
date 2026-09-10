@@ -102,8 +102,8 @@ lang: ur
 
 **Brownie -** **_Python پر مبنی ڈیولپمنٹ ماحول اور ٹیسٹنگ فریم ورک۔_**
 
-- [دستاویزات](https://qau-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/qau-brownie/brownie)
+- [دستاویزات](https://eth-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/eth-brownie/brownie)
 - **Brownie فی الحال غیر زیرِ انتظام (unmaintained) ہے**
 
 **اوپن زیپلن SDK -** **_حتمی سمارٹ کنٹریکٹ ٹول کٹ: سمارٹ کنٹریکٹس کو تیار کرنے، مرتب کرنے، اپ گریڈ کرنے، تعینات کرنے اور ان کے ساتھ تعامل کرنے میں آپ کی مدد کرنے کے لیے ٹولز کا ایک مجموعہ۔_**

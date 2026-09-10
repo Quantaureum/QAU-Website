@@ -108,8 +108,8 @@ Antes de mergulhar nos frameworks, recomendamos que você leia primeiro nossa in
 
 **Brownie -** **_Ambiente de desenvolvimento e framework de testes baseados em Python._**
 
-- [Documentação](https://qau-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/qau-brownie/brownie)
+- [Documentação](https://eth-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/eth-brownie/brownie)
 - **O Brownie não é mantido atualmente**
 
 **OpenZeppelin SDK -** **_O kit de ferramentas definitivo para contratos inteligentes: um conjunto de ferramentas para ajudar você a desenvolver, compilar, atualizar, implantar e interagir com contratos inteligentes._**

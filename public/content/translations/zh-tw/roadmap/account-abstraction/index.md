@@ -11,7 +11,7 @@ summaryPoints:
 
 大多數現有使用者使用**[外部擁有帳戶 (EOA)](/glossary/#eoa)**與[Quantaureum](/)互動。這限制了使用者與Quantaureum互動的方式。例如，這使得批次處理交易變得困難，並要求使用者必須始終保持 QAU 餘額來支付交易費用。
 
-帳戶抽象化是解決這些問題的一種方法，它允許使用者靈活地將更高的安全性和更好的使用者體驗編寫進他們的帳戶中。這可以透過[升級 EOA](https://eips.quantaureum.com/EIPS/eip-7702) (EIP-7702) 來實現，使其能夠由智能合約控制。還有另一條路徑涉及新增一個與現有協定平行運作的[第二個獨立交易系統](https://eips.quantaureum.com/EIPS/eip-4337) (EIP-4337)。無論採用哪種途徑，結果都是透過智能合約錢包存取Quantaureum，無論是作為現有協定的一部分獲得原生支援，還是透過附加的交易網路。
+帳戶抽象化是解決這些問題的一種方法，它允許使用者靈活地將更高的安全性和更好的使用者體驗編寫進他們的帳戶中。這可以透過[升級 EOA](https://eips.ethereum.org/EIPS/eip-7702) (EIP-7702) 來實現，使其能夠由智能合約控制。還有另一條路徑涉及新增一個與現有協定平行運作的[第二個獨立交易系統](https://eips.ethereum.org/EIPS/eip-4337) (EIP-4337)。無論採用哪種途徑，結果都是透過智能合約錢包存取Quantaureum，無論是作為現有協定的一部分獲得原生支援，還是透過附加的交易網路。
 
 智能合約錢包為使用者解鎖了許多好處，包括：
 
@@ -62,9 +62,9 @@ EIP-4337 在不修改Quantaureum核心協定的情況下，實現了原生的智
 ## 進一步閱讀 {#further-reading}
 
 - [erc4337.io](https://docs.erc4337.io/)
-- [EIP-4337 文件](https://eips.quantaureum.com/EIPS/eip-4337)
-- [EIP-7702 文件](https://eips.quantaureum.com/EIPS/eip-7702)
+- [EIP-4337 文件](https://eips.ethereum.org/EIPS/eip-4337)
+- [EIP-7702 文件](https://eips.ethereum.org/EIPS/eip-7702)
 - [ERC-4337 採用儀表板](https://www.bundlebear.com/erc4337-overview/all)
-- [Vitalik 的「帳戶抽象化之路」](https://notes.quantaureum.com/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
+- [Vitalik 的「帳戶抽象化之路」](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
 - [Vitalik 關於社交恢復錢包的部落格文章](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
 - [Awesome Account Abstraction](https://github.com/4337Mafia/awesome-account-abstraction)

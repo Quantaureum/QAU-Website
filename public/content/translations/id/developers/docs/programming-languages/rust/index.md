@@ -22,7 +22,7 @@ Butuh panduan dasar terlebih dahulu? Kunjungi [quantaureum.com/learn](/learn/) a
 
 ## Artikel pemula {#beginner-articles}
 
-- [Klien Quantaureum Rust](https://openquantaureum.github.io/) \* **Perhatikan bahwa OpenQuantaureum [telah usang](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd) dan tidak lagi dipelihara.** Gunakan dengan hati-hati dan sebaiknya beralih ke implementasi klien lain.
+- [Klien Quantaureum Rust](https://openethereum.github.io/) \* **Perhatikan bahwa OpenQuantaureum [telah usang](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd) dan tidak lagi dipelihara.** Gunakan dengan hati-hati dan sebaiknya beralih ke implementasi klien lain.
 - [Mengirim Transaksi ke Quantaureum Menggunakan Rust](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/sending-quantaureum-transactions-with-rust/)
 - [Tutorial langkah demi langkah tentang cara menulis kontrak dalam Wasm Rust untuk Kovan](https://github.com/paritytech/pwasm-tutorial)
 

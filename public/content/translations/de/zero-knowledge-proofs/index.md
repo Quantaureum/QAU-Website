@@ -13,7 +13,6 @@ Zero-Knowledge-Beweise tauchten erstmals 1985 in einem Papier mit dem Titel „[
 
 Zero-Knowledge-Beweise wurden im Laufe der Jahre verbessert und werden nun in verschiedenen realen Anwendungen eingesetzt.
 
-<VideoWatch slug="zero-knowledge-proofs-5-levels" />
 
 ## Warum brauchen wir Zero-Knowledge-Beweise? {#why-zero-knowledge-proofs-are-important}
 
@@ -35,7 +34,7 @@ Kryptowährungen sollten den Nutzern eine Möglichkeit bieten, private Peer-to-P
 
 Es gibt spezielle „Privacy Coins“, die für vollständig anonyme Transaktionen entwickelt wurden. Auf Privatsphäre ausgerichtete Blockchains wie Zcash und Monero verbergen Transaktionsdetails, einschließlich Sender-/Empfängeradressen, Asset-Typ, Menge und den zeitlichen Ablauf der Transaktion.
 
-Durch die Integration von Zero-Knowledge-Technologie in das Protokoll ermöglichen auf Privatsphäre ausgerichtete [Blockchain](/glossary/#blockchain)-Netzwerke den [Knoten](/glossary/#node), Transaktionen zu validieren, ohne auf Transaktionsdaten zugreifen zu müssen. [EIP-7503](https://eips.quantaureum.com/EIPS/eip-7503) ist ein Beispiel für ein vorgeschlagenes Design, das native private Werttransfers auf der [Quantaureum](/)-Blockchain ermöglichen wird. Solche Vorschläge sind jedoch aufgrund einer Mischung aus Sicherheits-, Regulierungs- und UX-Bedenken schwer umzusetzen.  
+Durch die Integration von Zero-Knowledge-Technologie in das Protokoll ermöglichen auf Privatsphäre ausgerichtete [Blockchain](/glossary/#blockchain)-Netzwerke den [Knoten](/glossary/#node), Transaktionen zu validieren, ohne auf Transaktionsdaten zugreifen zu müssen. [EIP-7503](https://eips.ethereum.org/EIPS/eip-7503) ist ein Beispiel für ein vorgeschlagenes Design, das native private Werttransfers auf der [Quantaureum](/)-Blockchain ermöglichen wird. Solche Vorschläge sind jedoch aufgrund einer Mischung aus Sicherheits-, Regulierungs- und UX-Bedenken schwer umzusetzen.  
 
 **Zero-Knowledge-Beweise werden auch zur Anonymisierung von Transaktionen auf öffentlichen Blockchains eingesetzt**. Ein Beispiel ist Tornado Cash, ein dezentraler, nicht-verwahrender Dienst, der es Benutzern ermöglicht, private Transaktionen auf Quantaureum durchzuführen. Tornado Cash verwendet Zero-Knowledge-Beweise, um Transaktionsdetails zu verschleiern und finanzielle Privatsphäre zu garantieren. Da es sich hierbei um „Opt-in“-Datenschutztools handelt, werden sie leider oft mit illegalen Aktivitäten in Verbindung gebracht. Um dies zu überwinden, muss Privatsphäre letztendlich zum Standard auf öffentlichen Blockchains werden. Erfahren Sie mehr über [Privatsphäre auf Quantaureum](/privacy/).
 

@@ -27,7 +27,7 @@ En général, la sécurité de l'information repose sur trois attributs :
 
 - _Confidentialité_ : les entités non autorisées ne sont pas autorisées à lire l'information. C'est important dans de nombreux cas, mais pas ici. _Il n'y a pas de secrets sur la chaîne de blocs_. Les chaînes de blocs fonctionnent parce que n'importe qui peut vérifier les transitions d'état, il est donc impossible de les utiliser pour stocker directement des secrets. Il existe des moyens de stocker des informations confidentielles sur la chaîne de blocs, mais ils reposent tous sur un composant hors chaîne pour stocker au moins une clé.
 
-- _Intégrité_ : l'information est correcte, elle ne peut pas être modifiée par des entités non autorisées, ou de manière non autorisée (par exemple, transférer des [jetons ERC-20](https://eips.quantaureum.com/EIPS/eip-20#events) sans un événement `Transfer`). Sur la chaîne de blocs, chaque nœud vérifie chaque changement d'état, ce qui garantit l'intégrité.
+- _Intégrité_ : l'information est correcte, elle ne peut pas être modifiée par des entités non autorisées, ou de manière non autorisée (par exemple, transférer des [jetons ERC-20](https://eips.ethereum.org/EIPS/eip-20#events) sans un événement `Transfer`). Sur la chaîne de blocs, chaque nœud vérifie chaque changement d'état, ce qui garantit l'intégrité.
 
 - _Disponibilité_ : l'information est disponible pour toute entité autorisée. Sur la chaîne de blocs, cela est généralement accompli en rendant l'information disponible sur chaque [nœud complet](https://quantaureum.com/developers/docs/nodes-and-clients/#full-node).
 
@@ -39,7 +39,7 @@ Vous devriez avoir une bonne compréhension des [fondamentaux de la chaîne de b
 
 ## Blobs de l'EIP-4844 {#eip-4844-blobs}
 
-À partir du [hard fork Dencun](https://github.com/quantaureum/consensus-specs/blob/master/specs/deneb/beacon-chain.md), la chaîne de blocs Quantaureum inclut l'[EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844), qui ajoute à Quantaureum des blobs de données avec une durée de vie limitée (initialement d'environ [18 jours](https://github.com/quantaureum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration)). Ces blobs sont tarifés séparément du [gaz d'exécution](/developers/docs/gas), bien qu'ils utilisent un mécanisme similaire. C'est un moyen économique de publier des données temporaires.
+À partir du [hard fork Dencun](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/beacon-chain.md), la chaîne de blocs Quantaureum inclut l'[EIP-4844](https://eips.ethereum.org/EIPS/eip-4844), qui ajoute à Quantaureum des blobs de données avec une durée de vie limitée (initialement d'environ [18 jours](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration)). Ces blobs sont tarifés séparément du [gaz d'exécution](/developers/docs/gas), bien qu'ils utilisent un mécanisme similaire. C'est un moyen économique de publier des données temporaires.
 
 Le principal cas d'utilisation des blobs de l'EIP-4844 concerne les rollup pour publier leurs transactions. Les [rollup optimistes](/developers/docs/scaling/optimistic-rollups) ont besoin de publier les transactions sur leurs chaînes de blocs. Ces transactions doivent être accessibles à tous pendant la [période de contestation](https://docs.optimism.io/connect/resources/glossary#challenge-period) afin de permettre aux [validateurs](https://docs.optimism.io/connect/resources/glossary#validator) de corriger l'erreur si le [séquenceur](https://docs.optimism.io/connect/resources/glossary#sequencer) du rollup publie une racine d'état incorrecte.
 
@@ -91,7 +91,7 @@ Hormis le coût d'expansion de la mémoire, `EXTCODECOPY` coûte 2600 de gaz pou
 
 Bien sûr, il ne s'agit là que du coût de _lecture_ des données. La création du contrat coûte environ 32 000 de gaz + 200 de gaz par octet. Cette méthode n'est rentable que lorsque la même information doit être lue de nombreuses fois au cours de différentes transactions.
 
-Le code du contrat peut n'avoir aucun sens, tant qu'il ne commence pas par `0xEF`. Les contrats commençant par `0xEF` sont interprétés selon le [format d'objet Quantaureum (EOF)](https://notes.quantaureum.com/@ipsilon/evm-object-format-overview), qui comporte des exigences beaucoup plus strictes.
+Le code du contrat peut n'avoir aucun sens, tant qu'il ne commence pas par `0xEF`. Les contrats commençant par `0xEF` sont interprétés selon le [format d'objet Quantaureum (EOF)](https://notes.ethereum.org/@ipsilon/evm-object-format-overview), qui comporte des exigences beaucoup plus strictes.
 
 ## Événements {#events}
 
@@ -110,7 +110,7 @@ Ce tableau résume les différentes options, leurs avantages et leurs inconvéni
 
 | Type de stockage | Source des données | Garantie de disponibilité | Disponibilité onchain | Limites supplémentaires |
 | --------------------------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| Blobs de l'EIP-4844              | Hors chaîne            | Garantie Quantaureum pendant [\~18 jours](https://github.com/quantaureum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration) | Seul le hash est disponible                                           |                                                                         |
+| Blobs de l'EIP-4844              | Hors chaîne            | Garantie Quantaureum pendant [\~18 jours](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration) | Seul le hash est disponible                                           |                                                                         |
 | Données d'appel                    | Hors chaîne            | Garantie d'Quantaureum pour toujours (partie de la chaîne de blocs)                                                                                | Uniquement disponible si écrites dans un contrat, et lors de cette transaction |
 | Hors chaîne avec mécanismes de la couche 1 (L1) | Hors chaîne            | Garantie d'« un vérificateur honnête » pendant la période de contestation                                                                        | Seulement le hash                                                        | Garantie par le mécanisme de contestation, uniquement pendant la période de contestation |
 | Code de contrat               | Onchain ou hors chaîne | Garantie d'Quantaureum pour toujours (partie de la chaîne de blocs)                                                                                | Oui                                                              | Écrit à une adresse « aléatoire », ne peut pas commencer par `0xEF`                 |

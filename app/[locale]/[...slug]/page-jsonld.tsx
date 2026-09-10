@@ -78,8 +78,8 @@ export default async function SlugJsonLD({
           "@type": "BreadcrumbList",
           itemListElement: breadcrumbItems,
         },
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
-        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
+        reviewedBy: REFERENCE.QUANTAUREUM_ORG,
         mainEntity: articleId,
       },
       {
@@ -93,7 +93,7 @@ export default async function SlugJsonLD({
           : undefined,
         author: authorIds,
         contributor: contributorList,
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
         dateModified: frontmatter.published,
         mainEntityOfPage: url,
         about: {

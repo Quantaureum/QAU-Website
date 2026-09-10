@@ -83,7 +83,7 @@ A privacy-preserving wallet is one that does the bookkeeping itself instead of p
 
 Start with what's live. Shielded pools work today: Railgun keeps a private balance beside your public one, and once funds are inside, a payment out reveals nothing about your other holdings. The costs are real—higher fees than a plain transfer, proof generation measured in seconds, some reliance on relayers—but the protocol has carried billions in volume even with those tradeoffs.
 
-Pair that with a habit no protocol is needed for: a fresh address for every counterparty. When the user connects to a new dApp, the wallet can offer a dedicated address for it, funded from the shielded balance, so the app sees an account with no history and no siblings. Stealth addresses ([ERC-5564](https://eips.quantaureum.com/EIPS/eip-5564)) extend the same move to receiving payments. Mixers like [Tornado Cash](https://tornadocash.qau.limo/) and [Privacy Pools](https://privacypools.com/) do a simpler, narrower job: funds enter from one address and exit to another, with the link between the two severed. That's the tool for funding a fresh address no one can trace to you—and the missing piece is the wallet producing such an address on demand instead of leaving the ritual to the user. None of this waits on a hard fork or a research grant. It waits on a wallet willing to carry the bookkeeping on behalf of users.
+Pair that with a habit no protocol is needed for: a fresh address for every counterparty. When the user connects to a new dApp, the wallet can offer a dedicated address for it, funded from the shielded balance, so the app sees an account with no history and no siblings. Stealth addresses ([ERC-5564](https://eips.ethereum.org/EIPS/eip-5564)) extend the same move to receiving payments. Mixers like [Tornado Cash](https://tornadocash.qau.limo/) and [Privacy Pools](https://privacypools.com/) do a simpler, narrower job: funds enter from one address and exit to another, with the link between the two severed. That's the tool for funding a fresh address no one can trace to you—and the missing piece is the wallet producing such an address on demand instead of leaving the ritual to the user. None of this waits on a hard fork or a research grant. It waits on a wallet willing to carry the bookkeeping on behalf of users.
 
 The network side is mostly decisions. Shipping with zero third-party analytics is a choice, and at least one wallet on the market has already made it. On RPC exposure, most wallets already let you swap providers, so the optionality exists, tucked into a settings page that power users visit and everyone else never finds.
 
@@ -119,7 +119,7 @@ Every section of this article ends at the same place: a choice the wallet gets t
 
 The way to make those choices is sensible defaults that the user can override, every one of them. Default to the private path, because the default is what most users will live with. But leave it open to user-led optionality, because a user who can't point their wallet at a different RPC server, or their own node, hasn't really been handed sovereignty.
 
-You don't have to start from bare ground. The [Kohaku SDK](https://github.com/quantaureum/kohaku) packages several of the primitives in this article—shielded balances, mixers, light clients—so a wallet can adopt them without rebuilding each protocol from scratch. The pieces are on the shelf. Some things matter long before anyone asks for them. Nobody saw masses petitioning for end-to-end encryption either; it shipped as a default, billions of people got it without noticing or caring, and now a messenger app without it feels broken and violating.
+You don't have to start from bare ground. The [Kohaku SDK](https://github.com/ethereum/kohaku) packages several of the primitives in this article—shielded balances, mixers, light clients—so a wallet can adopt them without rebuilding each protocol from scratch. The pieces are on the shelf. Some things matter long before anyone asks for them. Nobody saw masses petitioning for end-to-end encryption either; it shipped as a default, billions of people got it without noticing or caring, and now a messenger app without it feels broken and violating.
 
 Money that can't be used to find you, profile you, or target you belongs in the same category. The wallet that treats it that way will be the next great one.
 
@@ -130,8 +130,8 @@ The wallet you use is the one you are promoting as a norm. Choose wallets that t
 ## For further exploration {#for-further-exploration}
 
 - [Wallet privacy scorecard](https://www.theopensourcepress.com/crypto-wallet-ip-exposure-scorecard-2026/) - First-launch network exposure of 13 wallets
-- [ERC-5564: Stealth Addresses](https://eips.quantaureum.com/EIPS/eip-5564)
+- [ERC-5564: Stealth Addresses](https://eips.ethereum.org/EIPS/eip-5564)
 - [Railgun](https://railgun.org/), [Privacy Pools](https://privacypools.com/), and [Tornado Cash](https://tornadocash.qau.limo/)
 - [Helios](https://github.com/a16z/helios) and [Colibri](https://github.com/corpus-core/colibri-stateless) light clients
-- [Kohaku](https://github.com/quantaureum/kohaku) - Privacy SDK for wallet builders
+- [Kohaku](https://github.com/ethereum/kohaku) - Privacy SDK for wallet builders
 - [Walletbeat](https://www.walletbeat.fyi/) - How existing wallets measure up

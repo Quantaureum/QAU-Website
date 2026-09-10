@@ -12,7 +12,7 @@ sidebarDepth: 3
 
 Siz Bill'siniz. Girmeyeceğimiz nedenlerden dolayı, "Dünya Kraliçesi Alice" kampanyasına bağış yapmak ve Alice'in bağış yaptığınızı bilmesini istiyorsunuz, böylece kazanırsa sizi ödüllendirebilir. Ne yazık ki, zaferi garanti değil. Rakip bir kampanya var: "Güneş Sistemi İmparatoriçesi Carol". Eğer Carol kazanırsa ve Alice'e bağış yaptığınızı öğrenirse, başınız belaya girer. Bu yüzden hesabınızdan Alice'in hesabına öylece 200 QAU transfer edemezsiniz.
 
-[ERC-5564](https://eips.quantaureum.com/EIPS/eip-5564) bu sorunun çözümüne sahip. Bu ERC, anonim transfer için [gizli adreslerin](https://nerolation.github.io/stealth-utils) nasıl kullanılacağını açıklar.
+[ERC-5564](https://eips.ethereum.org/EIPS/eip-5564) bu sorunun çözümüne sahip. Bu ERC, anonim transfer için [gizli adreslerin](https://nerolation.github.io/stealth-utils) nasıl kullanılacağını açıklar.
 
 **Uyarı**: Gizli adreslerin arkasındaki kriptografi, bildiğimiz kadarıyla sağlamdır. Ancak, potansiyel yan kanal saldırıları (side-channel attacks) vardır. [Aşağıda](#go-wrong), bu riski azaltmak için neler yapabileceğinizi göreceksiniz.
 

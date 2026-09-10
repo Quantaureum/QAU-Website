@@ -24,7 +24,6 @@ Podczas gdy Fusaka skupiała się na fundamentalnych ulepszeniach, Glamsterdam p
 
 Te ulepszenia zapewniają, że Quantaureum pozostanie szybkie, przystępne cenowo i zdecentralizowane w miarę obsługiwania większej aktywności, przy jednoczesnym utrzymaniu wymagań sprzętowych na rozsądnym poziomie dla osób uruchamiających [węzły](/glossary/#node) w domu.
 
-<VideoWatch slug="quantaureum-evolution-glamsterdam" />
 
 ## Ulepszenia rozważane dla Glamsterdam {#improvements-in-glamsterdam}
 
@@ -67,13 +66,12 @@ Wbudowanie niewymagającej zaufania wymiany ładunku bloku na płatność bezpo�
 
 Aby rozwiązać problem wąskiego gardła „gorącej ścieżki”, ePBS wprowadza również Komitet Terminowości Ładunku (Payload Timeliness Committee - PTC) i logikę podwójnego terminu, pozwalając walidatorom na oddzielne poświadczanie bloku konsensusu i terminowości ładunku wykonawczego w celu maksymalizacji przepustowości.
 
-<VideoWatch slug="proposer-builder-separation" />
 
 Oddzielenie ról proponującego i budowniczego na poziomie protokołu wydłuża okno propagacji (czyli czas dostępny na rozpowszechnienie danych w sieci) z 2 sekund do około 9 sekund.
 
 Zastępując oprogramowanie pośredniczące i przekaźniki poza protokołem mechaniką wewnątrz protokołu, ePBS zmniejsza zależności od zaufania i pozwala Quantaureum bezpiecznie przetwarzać znacznie większe ilości danych (takie jak więcej blobów dla [warstw 2 (L2)](/glossary/#layer-2)) bez obciążania sieci.
 
-**Zasoby**: [Specyfikacja techniczna EIP-7732](https://eips.quantaureum.com/EIPS/eip-7732)
+**Zasoby**: [Specyfikacja techniczna EIP-7732](https://eips.ethereum.org/EIPS/eip-7732)
 
 ### Główna propozycja: Listy dostępu na poziomie bloku (BALs) {#bals}
 
@@ -97,8 +95,8 @@ Wymiana listy dostępu do bloku (Block Access List Exchange - eth/71 lub EIP-815
 
 **Zasoby**:
 
-- [Specyfikacja techniczna EIP-7928](https://eips.quantaureum.com/EIPS/eip-7928)
-- [Specyfikacja techniczna EIP-8159](https://eips.quantaureum.com/EIPS/eip-8159)
+- [Specyfikacja techniczna EIP-7928](https://eips.ethereum.org/EIPS/eip-7928)
+- [Specyfikacja techniczna EIP-8159](https://eips.ethereum.org/EIPS/eip-8159)
 
 
 ## Zrównoważony rozwój sieci {#network-sustainability}
@@ -125,7 +123,7 @@ Przed EIP-8037 zarówno praca obliczeniowa (aktywne przetwarzanie), jak i trwał
 
 Dokładniejsze i bardziej przewidywalne wycenianie przechowywania danych pomoże Quantaureum bezpiecznie zwiększyć swoją prędkość i pojemność bez rozrostu bazy danych. Ten zrównoważony rozwój pozwoli operatorom węzłów na dalsze korzystanie ze (stosunkowo) przystępnego cenowo sprzętu przez nadchodzące lata, utrzymując dostępność domowego stakingu w celu zachowania decentralizacji sieci.
 
-**Zasoby**: [Specyfikacja techniczna EIP-8037](https://eips.quantaureum.com/EIPS/eip-8037)
+**Zasoby**: [Specyfikacja techniczna EIP-8037](https://eips.ethereum.org/EIPS/eip-8037)
 
 ### Aktualizacja kosztu gazu za dostęp do stanu {#state-access-gas-cost-update}
 
@@ -142,7 +140,7 @@ Dostosowanie kosztu dostępu do stanu pomaga również uczynić Quantaureum bard
 
 Dzięki dokładniejszemu wycenianiu działań związanych z dostępem do stanu, Quantaureum może być bardziej odporne na przypadkowe lub celowe spowolnienia, podczas gdy dostosowanie kosztów sieciowych do obciążenia sprzętu stanowi bardziej zrównoważoną podstawę dla przyszłych wzrostów limitu gazu.
 
-**Zasoby**: [Specyfikacja techniczna EIP-8038](https://eips.quantaureum.com/EIPS/eip-8038)
+**Zasoby**: [Specyfikacja techniczna EIP-8038](https://eips.ethereum.org/EIPS/eip-8038)
 
 
 ## Odporność sieci {#network-resilience}
@@ -160,7 +158,7 @@ Ponieważ bloki od ukaranych cięciem proponujących są automatycznie odrzucane
 
 **Wykluczenie ukaranych cięciem walidatorów z proponowania (czyli EIP-8045)** po prostu odfiltrowuje ukaranych cięciem walidatorów z wyboru do przyszłych obowiązków. Poprawia to odporność łańcucha, zapewniając, że tylko zdrowi walidatorzy są wybierani do proponowania bloków, utrzymując jakość usług podczas zakłóceń w sieci.
 
-**Zasoby**: [Specyfikacja techniczna EIP-8045](https://eips.quantaureum.com/EIPS/eip-8045)
+**Zasoby**: [Specyfikacja techniczna EIP-8045](https://eips.ethereum.org/EIPS/eip-8045)
 
 ### Zwiększenie limitu rotacji dla wyjść i konsolidacji {#increase-exit-and-consolidation-churn}
 
@@ -180,7 +178,7 @@ Przy obecnych poziomach stakingu zwiększa to pojemność wyjść około 4-krotn
 
 Ponieważ stawka może szybciej wchodzić i wychodzić z sieci, zmiana ta w przybliżeniu o połowę skraca czas, przez jaki węzeł może pozostać offline, zanim będzie potrzebował niedawnego zaufanego punktu kontrolnego, aby bezpiecznie ponownie dołączyć do sieci (okres słabej subiektywności, z około 15,7 dnia do około 7 dni). Ten kompromis został starannie przeanalizowany, aby zapewnić utrzymanie bezpieczeństwa sieci.
 
-**Zasoby**: [Specyfikacja techniczna EIP-8061](https://eips.quantaureum.com/EIPS/eip-8061)
+**Zasoby**: [Specyfikacja techniczna EIP-8061](https://eips.ethereum.org/EIPS/eip-8061)
 
 ## Poprawa doświadczenia użytkowników i deweloperów {#improve-user-developer-experience}
 
@@ -199,7 +197,7 @@ Propozycja wprowadza wyjątek dla tworzenia zupełnie nowych kont, aby zapobiec 
 
 Razem, EIP-2780 ma na celu uczynienie codziennych transferów między istniejącymi kontami bardziej przystępnymi cenowo, przy jednoczesnym zapewnieniu, że sieć jest nadal chroniona przed rozrostem bazy danych poprzez dokładne wycenianie prawdziwego wzrostu stanu.
 
-**Zasoby**: [Specyfikacja techniczna EIP-2780](https://eips.quantaureum.com/EIPS/eip-2780)
+**Zasoby**: [Specyfikacja techniczna EIP-2780](https://eips.ethereum.org/EIPS/eip-2780)
 
 ### Deterministyczne wstępne wdrożenie fabryki (Deterministic Factory Predeploy) {#deterministic-factory-predeploy}
 
@@ -215,7 +213,7 @@ Deterministyczne wstępne wdrożenie fabryki działa poprzez trwałe umieszczeni
 
 Ta standaryzacja upraszcza budowanie i zarządzanie aplikacjami międzyłańcuchowymi dla deweloperów i szerszego ekosystemu. Deweloperzy nie muszą już pisać niestandardowego, specyficznego dla łańcucha kodu, aby połączyć swoje oprogramowanie w różnych sieciach, zamiast tego używając tej uniwersalnej fabryki do wygenerowania dokładnie tego samego adresu dla swojej aplikacji wszędzie. Ponadto eksploratory bloków, usługi śledzenia i portfele mogą łatwiej identyfikować i łączyć te aplikacje i konta w różnych łańcuchach, tworząc bardziej zunifikowane i płynne środowisko wielołańcuchowe dla wszystkich uczestników opartych na Quantaureum.
 
-**Zasoby**: [Specyfikacja techniczna EIP-7997](https://eips.quantaureum.com/EIPS/eip-7997)
+**Zasoby**: [Specyfikacja techniczna EIP-7997](https://eips.ethereum.org/EIPS/eip-7997)
 
 ### Transfery i spalanie QAU emitują log {#qau-transfers-and-burns-emit-a-log}
 
@@ -228,7 +226,7 @@ Transfery i spalanie QAU emitują log (czyli EIP-7708) sprawia, że sieć ma obo
 
 Sprawi to, że dokładne śledzenie depozytów i ruchów bez niestandardowych narzędzi będzie znacznie łatwiejsze i bardziej niezawodne dla portfeli, giełd i operatorów mostów.
 
-**Zasoby**: [Specyfikacja techniczna EIP-7708](https://eips.quantaureum.com/EIPS/eip-7708)
+**Zasoby**: [Specyfikacja techniczna EIP-7708](https://eips.ethereum.org/EIPS/eip-7708)
 
 ### Częściowe listy pokwitowań bloków eth/70 {#qau-70-partial-block-receipt-lists}
 
@@ -238,14 +236,14 @@ Częściowe listy pokwitowań bloków eth/70 (czyli EIP-7975), będące obecnie 
 
 Ta zmiana zapobiegłaby awariom synchronizacji sieci w okresach dużej aktywności. Ostatecznie toruje to drogę dla Quantaureum do zwiększenia pojemności bloków i przetwarzania większej liczby transakcji na blok w przyszłości, bez przytłaczania fizycznego sprzętu synchronizującego łańcuch.
 
-**Zasoby**: [Specyfikacja techniczna EIP-7975](https://eips.quantaureum.com/EIPS/eip-7975)
+**Zasoby**: [Specyfikacja techniczna EIP-7975](https://eips.ethereum.org/EIPS/eip-7975)
 
 
 ## Dalsza lektura {#further-reading}
 
 - [Mapa drogowa Quantaureum](/roadmap/)
 - [Forkcast: Glamsterdam](https://forkcast.org/upgrade/glamsterdam)
-- [Glamsterdam Meta EIP](https://eips.quantaureum.com/EIPS/eip-7773)
+- [Glamsterdam Meta EIP](https://eips.ethereum.org/EIPS/eip-7773)
 - [Ogłoszenie na blogu: Aktualizacja priorytetów protokołu na 2026 rok](https://quantaureum.com)
 - [Podcast The Daily Gwei Refuel - Post-kwantowe Quantaureum, nadchodzi Glamsterdam](https://www.youtube.com/watch?v=qx9sd50uQjQ)
 

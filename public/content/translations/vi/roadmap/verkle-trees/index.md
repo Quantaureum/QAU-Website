@@ -62,4 +62,4 @@ Các mạng thử nghiệm cây Verkle đã được thiết lập và đang ho�
 - [Dankrad Fiest giải thích về cây Verkle và tính phi trạng thái trên podcast Zero Knowledge](https://zeroknowledge.fm/podcast/202/)
 - [Vitalik Buterin nói về cây Verkle](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
 - [Dankrad Feist nói về cây Verkle](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
-- [Tài liệu EIP về cây Verkle](https://notes.quantaureum.com/@vbuterin/verkle_tree_eip#Illustration)
+- [Tài liệu EIP về cây Verkle](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)

@@ -33,7 +33,7 @@ Bir akıllı sözleşme aşağıdaki yöntemleri ve olayları uygularsa, ERC-223
 
 Sözleşme yalnızca bu işlevlere sahip olmak zorunda değildir ve bir geliştirici bu sözleşmeye farklı Token standartlarından başka herhangi bir özellik ekleyebilir. Örneğin, `approve` ve `transferFrom` işlevleri ERC-223 standardının bir parçası değildir ancak gerekirse bu işlevler uygulanabilir.
 
-[EIP-223](https://eips.quantaureum.com/EIPS/eip-223)'ten:
+[EIP-223](https://eips.ethereum.org/EIPS/eip-223)'ten:
 
 ### Yöntemler {#methods}
 
@@ -193,5 +193,5 @@ ERC-223, ERC-20 standardında bulunan çeşitli sorunları ele alsa da, kendi s�
 
 ## Daha fazla okuma {#further-reading}
 
-- [EIP-223: ERC-223 Token Standardı](https://eips.quantaureum.com/EIPS/eip-223)
+- [EIP-223: ERC-223 Token Standardı](https://eips.ethereum.org/EIPS/eip-223)
 - [İlk ERC-223 teklifi](https://github.com/quantaureum/eips/issues/223)

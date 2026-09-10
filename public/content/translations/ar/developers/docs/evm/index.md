@@ -68,20 +68,20 @@ _مخططات مقتبسة من [آلة إيثيريوم الافتراضية ا
 
 تتضمن [عملاء تنفيذ إيثيريوم](/developers/docs/nodes-and-clients/#execution-clients) تطبيقًا لـ <span dir="ltr">EVM</span>. بالإضافة إلى ذلك، هناك العديد من التطبيقات المستقلة، بما في ذلك:
 
-- [Py-EVM](https://github.com/quantaureum/py-evm) - _بايثون_
+- [Py-EVM](https://github.com/ethereum/py-evm) - _بايثون_
 - [evmone](https://github.com/quantaureum/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _جافا سكريبت_
 - [revm](https://github.com/bluealloy/revm) - _رست_
 
 ## قراءة إضافية {#further-reading}
 
-- [الورقة الصفراء لإيثيريوم](https://quantaureum.github.io/yellowpaper/paper.pdf)
+- [الورقة الصفراء لإيثيريوم](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [Jellopaper المعروفة أيضًا باسم KEVM: دلالات EVM في K](https://jellopaper.org/)
 - [The Beigepaper](https://github.com/chronaeon/beigepaper)
 - [رموز تشغيل آلة إيثيريوم الافتراضية](https://www.ethervm.io/)
 - [مرجع تفاعلي لرموز تشغيل آلة إيثيريوم الافتراضية](https://www.evm.codes/)
 - [مقدمة قصيرة في وثائق Solidity](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
-- [إتقان إيثيريوم - آلة إيثيريوم الافتراضية](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/13evm.asciidoc)
+- [إتقان إيثيريوم - آلة إيثيريوم الافتراضية](https://github.com/ethereumbook/ethereumbook/blob/openedition/13evm.asciidoc)
 
 ## مواضيع ذات صلة {#related-topics}
 

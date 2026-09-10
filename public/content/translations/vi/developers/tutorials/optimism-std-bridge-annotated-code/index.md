@@ -46,7 +46,7 @@ Cầu nối có hai luồng chính:
    - Ban đầu xuất phát từ cầu nối trên l1
 6. Cầu nối l2 kiểm tra xem hợp đồng token ERC-20 trên l2 có đúng không:
    - Hợp đồng l2 báo cáo rằng đối tác l1 của nó giống với đối tác mà các token xuất phát từ l1
-   - Hợp đồng l2 báo cáo rằng nó hỗ trợ đúng giao diện ([sử dụng ERC-165](https://eips.quantaureum.com/EIPS/eip-165)).
+   - Hợp đồng l2 báo cáo rằng nó hỗ trợ đúng giao diện ([sử dụng ERC-165](https://eips.ethereum.org/EIPS/eip-165)).
 7. Nếu hợp đồng l2 là hợp đồng đúng, hãy gọi nó để đúc số lượng token thích hợp đến địa chỉ thích hợp. Nếu không, hãy bắt đầu quá trình rút tiền để cho phép người dùng yêu cầu nhận các token trên l1.
 
 ### Luồng rút tiền {#withdrawal-flow}
@@ -70,7 +70,7 @@ Cầu nối có hai luồng chính:
 
 ### IL1ERC20Bridge {#il1erc20bridge}
 
-[Giao diện này được định nghĩa tại đây](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol).
+[Giao diện này được định nghĩa tại đây](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol).
 Nó bao gồm các hàm và định nghĩa cần thiết để chuyển token ERC-20 qua cầu nối.
 
 ```solidity
@@ -236,7 +236,7 @@ Việc rút tiền (và các thông điệp khác từ l2 sang l1) trong Optimis
 
 ### IL1StandardBridge {#il1standardbridge}
 
-[Giao diện này được định nghĩa tại đây](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol).
+[Giao diện này được định nghĩa tại đây](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol).
 Tệp này chứa các định nghĩa sự kiện và hàm cho QAU.
 Các định nghĩa này rất giống với các định nghĩa trong `IL1ERC20Bridge` ở trên cho ERC-20.
 
@@ -321,7 +321,7 @@ Sự kiện này gần như giống hệt với phiên bản ERC-20 (`ERC20Depos
 
 ### CrossDomainEnabled {#crossdomainenabled}
 
-[Hợp đồng này](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) được kế thừa bởi cả hai cầu nối ([l1](#the-l1-bridge-contract) và [l2](#l2-bridge-code)) để gửi thông điệp đến lớp kia.
+[Hợp đồng này](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) được kế thừa bởi cả hai cầu nối ([l1](#the-l1-bridge-contract) và [l2](#l2-bridge-code)) để gửi thông điệp đến lớp kia.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -331,7 +331,7 @@ pragma solidity >0.5.0 <0.9.0;
 import { ICrossDomainMessenger } from "./ICrossDomainMessenger.sol";
 ```
 
-[Giao diện này](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) cho hợp đồng biết cách gửi thông điệp đến lớp kia, sử dụng trình nhắn tin liên miền.
+[Giao diện này](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) cho hợp đồng biết cách gửi thông điệp đến lớp kia, sử dụng trình nhắn tin liên miền.
 Trình nhắn tin liên miền này là một hệ thống hoàn toàn khác và xứng đáng có một bài viết riêng, mà tôi hy vọng sẽ viết trong tương lai.
 
 ```solidity
@@ -398,7 +398,7 @@ Chỉ những thông điệp từ trình nhắn tin liên miền thích hợp (`
         );
 ```
 
-Cách trình nhắn tin liên miền cung cấp địa chỉ đã gửi thông điệp với lớp kia là [hàm `.xDomainMessageSender()`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128).
+Cách trình nhắn tin liên miền cung cấp địa chỉ đã gửi thông điệp với lớp kia là [hàm `.xDomainMessageSender()`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128).
 Miễn là nó được gọi trong giao dịch được khởi tạo bởi thông điệp, nó có thể cung cấp thông tin này.
 
 Chúng ta cần đảm bảo rằng thông điệp chúng ta nhận được đến từ cầu nối kia.
@@ -463,7 +463,7 @@ Trong trường hợp này, chúng ta không lo lắng về việc tái xâm nh�
 
 ### Hợp đồng cầu nối l1 {#the-l1-bridge-contract}
 
-[Mã nguồn cho hợp đồng này ở đây](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol).
+[Mã nguồn cho hợp đồng này ở đây](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol).
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -485,7 +485,7 @@ import { IL1ERC20Bridge } from "./IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "../../L2/messaging/IL2ERC20Bridge.sol";
 ```
 
-[Giao diện này](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) cho phép chúng ta tạo các thông điệp để điều khiển cầu nối tiêu chuẩn trên l2.
+[Giao diện này](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) cho phép chúng ta tạo các thông điệp để điều khiển cầu nối tiêu chuẩn trên l2.
 
 ```solidity
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -505,7 +505,7 @@ import { CrossDomainEnabled } from "../../libraries/bridge/CrossDomainEnabled.so
 import { Lib_PredeployAddresses } from "../../libraries/constants/Lib_PredeployAddresses.sol";
 ```
 
-[`Lib_PredeployAddresses`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) có các địa chỉ cho các hợp đồng l2 luôn có cùng một địa chỉ. Điều này bao gồm cầu nối tiêu chuẩn trên l2.
+[`Lib_PredeployAddresses`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) có các địa chỉ cho các hợp đồng l2 luôn có cùng một địa chỉ. Điều này bao gồm cầu nối tiêu chuẩn trên l2.
 
 ```solidity
 import { Address } from "@openzeppelin/contracts/utils/Address.sol";
@@ -519,7 +519,7 @@ Lưu ý rằng đây không phải là một giải pháp hoàn hảo, vì khôn
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[Tiêu chuẩn ERC-20](https://eips.quantaureum.com/EIPS/eip-20) hỗ trợ hai cách để một hợp đồng báo cáo lỗi:
+[Tiêu chuẩn ERC-20](https://eips.ethereum.org/EIPS/eip-20) hỗ trợ hai cách để một hợp đồng báo cáo lỗi:
 
 1. Hoàn nguyên
 2. Trả về `false`
@@ -714,7 +714,7 @@ Hàm Solidity [`abi.encodeWithSelector`](https://docs.soliditylang.org/en/v0.8.1
         );
 ```
 
-Thông điệp ở đây là gọi [hàm `finalizeDeposit`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) với các tham số này:
+Thông điệp ở đây là gọi [hàm `finalizeDeposit`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) với các tham số này:
 
 | Tham số | Giá trị | Ý nghĩa |
 | --------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -946,7 +946,7 @@ Nếu có quá nhiều token trên l1, một số token đó sẽ bị khóa vĩ
 
 ### IL2StandardERC20 {#il2standarderc20}
 
-Mọi token ERC-20 trên l2 sử dụng cầu nối tiêu chuẩn đều cần cung cấp [giao diện này](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol), giao diện này có các hàm và sự kiện mà cầu nối tiêu chuẩn cần.
+Mọi token ERC-20 trên l2 sử dụng cầu nối tiêu chuẩn đều cần cung cấp [giao diện này](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol), giao diện này có các hàm và sự kiện mà cầu nối tiêu chuẩn cần.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -956,14 +956,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [Giao diện ERC-20 tiêu chuẩn](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) không bao gồm các hàm `mint` và `burn`.
-Các phương thức đó không được yêu cầu bởi [tiêu chuẩn ERC-20](https://eips.quantaureum.com/EIPS/eip-20), tiêu chuẩn này không chỉ định các cơ chế để tạo và tiêu hủy token.
+Các phương thức đó không được yêu cầu bởi [tiêu chuẩn ERC-20](https://eips.ethereum.org/EIPS/eip-20), tiêu chuẩn này không chỉ định các cơ chế để tạo và tiêu hủy token.
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 [Giao diện ERC-165](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol) được sử dụng để chỉ định những hàm mà một hợp đồng cung cấp.
-[Bạn có thể đọc tiêu chuẩn tại đây](https://eips.quantaureum.com/EIPS/eip-165).
+[Bạn có thể đọc tiêu chuẩn tại đây](https://eips.ethereum.org/EIPS/eip-165).
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -990,7 +990,7 @@ Cầu nối phải là thực thể duy nhất có thể chạy các hàm này �
 
 ### L2StandardERC20 {#l2standarderc20}
 
-[Đây là bản triển khai của chúng tôi cho giao diện `IL2StandardERC20`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol).
+[Đây là bản triển khai của chúng tôi cho giao diện `IL2StandardERC20`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol).
 Trừ khi bạn cần một số loại logic tùy chỉnh, bạn nên sử dụng bản này.
 
 ```solidity
@@ -1052,7 +1052,7 @@ contract L2StandardERC20 is IL2StandardERC20, ERC20 {
     }
 ```
 
-Đây là cách [ERC-165](https://eips.quantaureum.com/EIPS/eip-165) hoạt động.
+Đây là cách [ERC-165](https://eips.ethereum.org/EIPS/eip-165) hoạt động.
 Mỗi giao diện là một số lượng các hàm được hỗ trợ và được xác định là [phép toán XOR (exclusive or)](https://en.wikipedia.org/wiki/Exclusive_or) của [các bộ chọn hàm ABI](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector) của các hàm đó.
 
 Cầu nối l2 sử dụng ERC-165 như một bước kiểm tra tính hợp lý để đảm bảo rằng hợp đồng ERC-20 mà nó gửi tài sản đến là một `IL2StandardERC20`.
@@ -1084,7 +1084,7 @@ Hợp đồng đó chỉ không hiển thị chúng ra bên ngoài, vì các đi
 ## Mã cầu nối Lớp 2 {#l2-bridge-code}
 
 Đây là mã chạy cầu nối trên Optimism.
-[Mã nguồn cho hợp đồng này ở đây](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol).
+[Mã nguồn cho hợp đồng này ở đây](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol).
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -1096,7 +1096,7 @@ import { IL1ERC20Bridge } from "../../L1/messaging/IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "./IL2ERC20Bridge.sol";
 ```
 
-Giao diện [IL2ERC20Bridge](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) rất giống với [phiên bản l1 tương đương](#il1erc20bridge) mà chúng ta đã thấy ở trên.
+Giao diện [IL2ERC20Bridge](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) rất giống với [phiên bản l1 tương đương](#il1erc20bridge) mà chúng ta đã thấy ở trên.
 Có hai điểm khác biệt đáng kể:
 
 1. Trên l1, bạn khởi tạo các khoản nạp tiền và hoàn tất các khoản rút tiền.

@@ -91,15 +91,13 @@ sidebarDepth: 3
 
 ## దృశ్యమానంగా నేర్చుకోవాలనుకుంటున్నారా? {#visual-learner}
 
-<VideoWatch slug="layer-2-scaling-explained" />
 
 _వీడియోలోని వివరణ అన్ని ఆఫ్‌చైన్ స్కేలింగ్ పరిష్కారాలను సూచించడానికి "లేయర్ 2 (l2)" అనే పదాన్ని ఉపయోగిస్తుందని గమనించండి, అయితే మేము "లేయర్ 2 (l2)"ను లేయర్ 1 (l1) మెయిన్‌నెట్ ఏకాభిప్రాయం ద్వారా దాని భద్రతను పొందే ఆఫ్‌చైన్ పరిష్కారంగా వేరు చేస్తాము._
 
-<VideoWatch slug="rollups-scaling-strategy" />
 
 ## మరింత చదవడానికి {#further-reading}
 
-- [రోలప్-కేంద్రీకృత ఎథీరియం రోడ్‌మ్యాప్](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _విటాలిక్ బుటెరిన్_
+- [రోలప్-కేంద్రీకృత ఎథీరియం రోడ్‌మ్యాప్](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _విటాలిక్ బుటెరిన్_
 - [ఎథీరియం కోసం లేయర్ 2 (l2) స్కేలింగ్ పరిష్కారాలపై తాజా విశ్లేషణలు](https://www.l2beat.com/)
 - [ఎథీరియం లేయర్ 2 (l2) స్కేలింగ్ పరిష్కారాలను మూల్యాంకనం చేయడం: ఒక పోలిక ఫ్రేమ్‌వర్క్](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - [రోల్అప్‌లకు అసంపూర్ణ మార్గదర్శి](https://vitalik.qau.limo/general/2021/01/05/rollup.html)

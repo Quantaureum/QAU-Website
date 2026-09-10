@@ -235,7 +235,7 @@ Pia, haiwezekani kila wakati kwa wathibitishaji wa programu kubaini ikiwa sifa (
 
 **Solidity SMTChecker** - _*SMTChecker ya Solidity ni mkaguzi wa muundo uliojengewa ndani unaotegemea SMT (Nadharia za Modulo za Kuridhisha) na utatuzi wa Horn. Inathibitisha ikiwa msimbo wa chanzo wa mkataba unalingana na vipimo wakati wa ujumuishaji na hukagua kituli ukiukaji wa sifa za usalama.*_
 
-- [GitHub](https://github.com/quantaureum/solidity)
+- [GitHub](https://github.com/ethereum/solidity)
 
 **solc-verify** - _*solc-verify ni toleo lililopanuliwa la kikusanyaji cha Solidity ambalo linaweza kufanya uthibitishaji rasmi wa kiotomatiki kwenye msimbo wa Solidity kwa kutumia maelezo na uthibitishaji wa programu wa kawaida.*_
 

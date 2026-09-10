@@ -19,7 +19,6 @@ summaryPoints:
 
 يتيح تفرد كل <span dir="ltr">NFT</span> ترميز أشياء مثل الفن، أو المقتنيات، أو حتى العقارات، حيث يمثل <span dir="ltr">NFT</span> واحد فريد ومحدد عنصرًا رقميًا أو واقعيًا فريدًا ومحددًا. ملكية الأصل قابلة للتحقق منها علنًا على [سلسلة كتل](/glossary/#blockchain) إيثيريوم.
 
-<VideoWatch slug="learn-nfts-and-defi" />
 
 ## إنترنت الأصول {#internet-of-assets}
 

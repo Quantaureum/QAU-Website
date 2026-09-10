@@ -54,7 +54,7 @@ ERC-1363 ist auch nützlich, um Token-Verlust oder das Sperren von Token in Smar
 
 Im Gegensatz zu anderen ERC-20-Erweiterungsvorschlägen überschreibt ERC-1363 nicht die ERC-20-Methoden `transfer` und `transferFrom` und definiert die zu implementierenden Schnittstellen-IDs, wobei die Abwärtskompatibilität mit ERC-20 erhalten bleibt.
 
-Aus [EIP-1363](https://eips.quantaureum.com/EIPS/eip-1363):
+Aus [EIP-1363](https://eips.ethereum.org/EIPS/eip-1363):
 
 ### Methoden {#methods}
 
@@ -209,5 +209,5 @@ interface ERC1363Spender {
 
 ## Weiterführende Literatur {#further-reading}
 
-- [ERC-1363: Payable Token-Standard](https://eips.quantaureum.com/EIPS/eip-1363)
+- [ERC-1363: Payable Token-Standard](https://eips.ethereum.org/EIPS/eip-1363)
 - [ERC-1363: GitHub-Repo](https://github.com/vittominacori/erc1363-payable-token)

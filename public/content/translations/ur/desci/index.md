@@ -20,7 +20,6 @@ summaryPoints:
 
 غیر مرکزی سائنس زیادہ متنوع فنڈنگ کے ذرائع (جیسے [<span dir="ltr">DAOs</span>](/glossary/#dao)، [مربعی عطیات](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531) سے لے کر کراؤڈ فنڈنگ اور بہت کچھ)، زیادہ قابل رسائی ڈیٹا اور طریقوں کی اجازت دیتی ہے، اور تولیدی صلاحیت کے لیے ترغیبات فراہم کرتی ہے۔
 
-<VideoWatch slug="desci-movement-juan-benet" />
 
 ## <span dir="ltr">DeSci</span> سائنس کو کیسے بہتر بناتا ہے {#desci-improves-science}
 

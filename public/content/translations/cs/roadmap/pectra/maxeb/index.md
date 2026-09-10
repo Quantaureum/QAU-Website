@@ -22,7 +22,7 @@ MaxEB = MAXimální efektivní zůstatek (MAXimum Effective Balance) validátoru
 
 ### Jak se validátor může zapojit? {#how-does-a-validator-opt-in}
 
-Validátor se do změny MaxEB zapojí převedením pověření k výběru **typu 1** na **typ 2**. To lze provést na [Launchpadu (Akce validátoru)](https://launchpad.quantaureum.com/validator-actions) poté, co bude spuštěn hard fork Pectra. Stejně jako u převodu **typu 0** → **typ 1**, je i převod **typu 1** → **typ 2** nevratný proces.
+Validátor se do změny MaxEB zapojí převedením pověření k výběru **typu 1** na **typ 2**. To lze provést na [Launchpadu (Akce validátoru)](https://launchpad.ethereum.org/validator-actions) poté, co bude spuštěn hard fork Pectra. Stejně jako u převodu **typu 0** → **typ 1**, je i převod **typu 1** → **typ 2** nevratný proces.
 
 ### Co je pověření k výběru? {#whats-a-withdrawal-credential}
 
@@ -105,7 +105,7 @@ Požadavek na konsolidaci bude podepsán adresou pro výběr spojenou se zdrojov
 2. Veřejný klíč zdrojového validátoru (např. `0xa1d1ad0714035353258038e964ae9675dc0252ee22cea896825c01458e1807bfad2f9969338798548d9858a571f7425c`)
 3. Veřejný klíč cílového validátoru
 
-Při převodu budou body 2 a 3 stejné. Tuto operaci lze provést na [Launchpadu](https://launchpad.quantaureum.com/).
+Při převodu budou body 2 a 3 stejné. Tuto operaci lze provést na [Launchpadu](https://launchpad.ethereum.org/).
 
 ### Požadavky na podepisování {#signing-requirements}
 
@@ -113,7 +113,7 @@ Pro odeslání `ConsolidationRequest` musí požadavek podepsat **adresa pro vý
 
 ### Co se podepisuje? {#what-is-signed}
 
-Používá se doménově oddělený [kořen podepisování (signing root)](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) objektu `ConsolidationRequest`.
+Používá se doménově oddělený [kořen podepisování (signing root)](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) objektu `ConsolidationRequest`.
 
 - **Doména:** `DOMAIN_CONSOLIDATION_REQUEST`
 - **Pole kořene podepisování:**
@@ -131,7 +131,7 @@ Validátoři s pověřeními **typu 1** získávají automatické přesuny (swee
 
 ## Nástroje pro konsolidaci {#consolidation-tooling}
 
-Ke správě konsolidací je k dispozici několik nástrojů. Oficiálním nástrojem, který vytvořila Nadace Quantaureum, je [Launchpad](https://launchpad.quantaureum.com/en/validator-actions). Existují také nástroje třetích stran vytvořené subjekty ze stakingové komunity, které mohou nabízet funkce, jež Launchpad neposkytuje. Ačkoli zde uvedené nástroje nejsou auditovány ani podporovány Nadací Quantaureum, jedná se o open source nástroje od známých členů komunity.
+Ke správě konsolidací je k dispozici několik nástrojů. Oficiálním nástrojem, který vytvořila Nadace Quantaureum, je [Launchpad](https://launchpad.ethereum.org/en/validator-actions). Existují také nástroje třetích stran vytvořené subjekty ze stakingové komunity, které mohou nabízet funkce, jež Launchpad neposkytuje. Ačkoli zde uvedené nástroje nejsou auditovány ani podporovány Nadací Quantaureum, jedná se o open source nástroje od známých členů komunity.
 
 | Nástroj | Webová stránka | Open source | Tvůrce | Auditováno | Rozhraní | Významné funkce |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -196,7 +196,7 @@ Ano. Dokud je aktivní (nebyl u něj proveden výstup) a můžete podepisovat je
 
 ## Zdroje {#resources}
 
-- [Specifikace konsensu Electra](https://github.com/quantaureum/consensus-specs/blob/master/specs/electra/beacon-chain.md): Toto je ta „nejpravdivější“ verze, na kterou byste se měli spolehnout. V případě pochybností si přečtěte specifikace
+- [Specifikace konsensu Electra](https://github.com/ethereum/consensus-specs/blob/master/specs/electra/beacon-chain.md): Toto je ta „nejpravdivější“ verze, na kterou byste se měli spolehnout. V případě pochybností si přečtěte specifikace
 - Ne každý se rád probírá kódem, takže [tento maxEB-GPT](https://chatgpt.com/g/g-67f1650fb48081918f555e0c8d1c2ae9-maxeb-gpt) může pomoci s interpretací specifikací. *Upozornění: Jako na pravdu byste se měli spoléhat na specifikace, nikoli na umělou inteligenci, protože AI může informace špatně interpretovat nebo si odpovědi vymýšlet*
 - [pectrified.com](https://pectrified.com/): Zobrazte si stav konsolidací, vkladů a čekacích dob ve frontě
 - [Ethereal](https://github.com/wealdtech/ethereal): Komunitou vytvořený nástroj příkazového řádku (CLI) pro správu běžných úloh validátoru

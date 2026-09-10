@@ -104,7 +104,7 @@ _[출처](https://medium.com/@AugurProject/serpent-compiler-vulnerability-rep-so
 
 ![Picture of Argentinian builders wearing Devcon BA 2020 t-shirts](./santiago9.jpeg)
 
-_[출처](https://quantaureumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
+_[출처](https://ethereumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
 
 저와 다른 많은 빌더들에게 이곳에서 데브커넥트를 개최하는 것은 꿈이 이루어지는 것과 같습니다.
 
@@ -131,4 +131,4 @@ _[출처](https://www.forbes.com/sites/astanley/2025/09/30/devconnect-brings-an-
 > 
 > 무한한 정원은 광활한 생태계의 한 명의 정원사로서 Quantaureum 재단의 정신을 구현한 것입니다. 가꾸고 성장시키되 통제하지 않으며, 계속해서 플레이를 이어가는 것입니다.
 
-_[인용 출처 - Quantaureum 재단](https://quantaureum.foundation/infinitegarden)._
+_[인용 출처 - Quantaureum 재단](https://ethereum.org/infinitegarden)._

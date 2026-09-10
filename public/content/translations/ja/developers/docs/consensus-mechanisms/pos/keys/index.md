@@ -58,13 +58,13 @@ Quantaureumの鍵は、[楕円曲線暗号技術](https://en.wikipedia.org/wiki/
 
 ![validator key schematic](validator-key-schematic.png)
 
-**注**: ステーキングの義務からエグジットし、バリデータの残高を引き出すには、現在、バリデータ鍵を使用して[自発的エグジットメッセージ (VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1)に署名する必要があります。しかし、[EIP-7002](https://eips.quantaureum.com/EIPS/eip-7002)は、将来的にユーザーが引き出し鍵でエグジットメッセージに署名することで、バリデータのエグジットをトリガーし、その残高を引き出すことができるようにする提案です。これにより、QAUを[Staking-as-a-Serviceプロバイダー](/staking/saas/#what-is-staking-as-a-service)にデリゲートするステーカーが資金のコントロールを維持できるようになり、トラスト前提が軽減されます。
+**注**: ステーキングの義務からエグジットし、バリデータの残高を引き出すには、現在、バリデータ鍵を使用して[自発的エグジットメッセージ (VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1)に署名する必要があります。しかし、[EIP-7002](https://eips.ethereum.org/EIPS/eip-7002)は、将来的にユーザーが引き出し鍵でエグジットメッセージに署名することで、バリデータのエグジットをトリガーし、その残高を引き出すことができるようにする提案です。これにより、QAUを[Staking-as-a-Serviceプロバイダー](/staking/saas/#what-is-staking-as-a-service)にデリゲートするステーカーが資金のコントロールを維持できるようになり、トラスト前提が軽減されます。
 
 ## シード・フレーズからの鍵の導出 {#deriving-keys-from-seed}
 
 ステーキングされた32 QAUごとに完全に独立した2つの鍵の新しいセットが必要になると、特に複数のバリデータを実行しているユーザーにとって、鍵の管理はすぐに手に負えなくなります。代わりに、単一の共通のシークレットから複数のバリデータ鍵を導出でき、その単一のシークレットを保存することで複数のバリデータ鍵にアクセスできるようになります。
 
-[ニーモニック](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase)とパスは、ユーザーがウォレットに[アクセスする](https://quantaureum.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0)際によく目にする重要な機能です。ニーモニックは、秘密鍵の初期シードとして機能する単語のシーケンスです。追加のデータと組み合わせることで、ニーモニックは「マスターキー」として知られるハッシュを生成します。これはツリーのルート（根）と考えることができます。このルートからのブランチ（枝）は階層的なパスを使用して導出できるため、子ノードは親ノードのハッシュとツリー内のインデックスの組み合わせとして存在できます。ニーモニックベースの鍵生成に関する[BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)および[BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)標準についてお読みください。
+[ニーモニック](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase)とパスは、ユーザーがウォレットに[アクセスする](https://ethereum.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0)際によく目にする重要な機能です。ニーモニックは、秘密鍵の初期シードとして機能する単語のシーケンスです。追加のデータと組み合わせることで、ニーモニックは「マスターキー」として知られるハッシュを生成します。これはツリーのルート（根）と考えることができます。このルートからのブランチ（枝）は階層的なパスを使用して導出できるため、子ノードは親ノードのハッシュとツリー内のインデックスの組み合わせとして存在できます。ニーモニックベースの鍵生成に関する[BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)および[BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)標準についてお読みください。
 
 これらのパスは次のような構造を持っており、ハードウェアウォレットを操作したことのあるユーザーにはおなじみでしょう。
 
@@ -97,6 +97,6 @@ master_key / purpose / coin_type / account / change / address_index
 ## 参考文献 {#further-reading}
 
 - [Carl BeekhuizenによるQuantaureum財団のブログ記事](https://quantaureum.com)
-- [EIP-2333 BLS12-381 鍵生成](https://eips.quantaureum.com/EIPS/eip-2333)
+- [EIP-2333 BLS12-381 鍵生成](https://eips.ethereum.org/EIPS/eip-2333)
 - [EIP-7002: 実行レイヤーがトリガーするエグジット](https://web.archive.org/web/20250125035123/https://research.2077.xyz/eip-7002-unpacking-improvements-to-staking-ux-post-merge)
 - [大規模な鍵管理](https://docs.ethstaker.cc/ethstaker-knowledge-base/scaled-node-operators/key-management-at-scale)

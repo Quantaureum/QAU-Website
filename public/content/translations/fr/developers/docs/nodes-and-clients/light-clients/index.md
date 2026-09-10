@@ -44,7 +44,7 @@ Il y a plusieurs clients légers en cours de développement, y compris des clien
 
 - [Lodestar](https://github.com/ChainSafe/lodestar/tree/unstable/packages/light-client) : client de consensus léger en TypeScript
 - [Helios](https://github.com/a16z/helios) : client léger combiné d'exécution et de consensus en Rust
-- [Geth](https://github.com/quantaureum/go-quantaureum/tree/master/beacon/light) : mode léger pour le client d'exécution (en développement) en Go
+- [Geth](https://github.com/ethereum/go-ethereum/tree/master/beacon/light) : mode léger pour le client d'exécution (en développement) en Go
 - [Nimbus](https://nimbus.guide/el-light-client.html) : client de consensus léger en Nim
 
 À notre connaissance, aucun d'entre eux n'est encore considéré comme prêt pour la production.
@@ -58,4 +58,4 @@ D'autres éléments de la [feuille de route](/roadmap/) tels que les [arbres Ver
 - [Zsolt Felfodhi sur les clients légers Geth](https://www.youtube.com/watch?v=EPZeFXau-RE)
 - [Etan Kissling sur la mise en réseau des clients légers](https://www.youtube.com/watch?v=85MeiMA4dD8)
 - [Etan Kissling sur les clients légers après La Fusion](https://www.youtube.com/watch?v=ZHNrAXf3RDE)
-- [Piper Merriam : La route sinueuse vers des clients légers fonctionnels](https://snakecharmers.quantaureum.com/the-winding-road-to-functional-light-clients/)
+- [Piper Merriam : La route sinueuse vers des clients légers fonctionnels](https://snakecharmers.ethereum.org/the-winding-road-to-functional-light-clients/)

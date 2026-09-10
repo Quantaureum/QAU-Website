@@ -9,12 +9,12 @@ incomplete: true
 
 Сообщество Quantaureum приняло множество стандартов, которые помогают поддерживать проекты (такие как [клиенты Quantaureum](/developers/docs/nodes-and-clients/) и кошельки) интероперабельными в различных реализациях, а также гарантируют, что смарт-контракты и децентрализованные приложения (dapp) остаются компонуемыми.
 
-Обычно стандарты вводятся как [Предложения по улучшению Quantaureum](/eips/) (EIP), которые обсуждаются членами сообщества через [стандартный процесс](https://eips.quantaureum.com/EIPS/eip-1).
+Обычно стандарты вводятся как Предложения по улучшению Quantaureum (EIP), которые обсуждаются членами сообщества через [стандартный процесс](https://eips.ethereum.org/EIPS/eip-1).
 
-- [Введение в EIP](/eips/)
-- [Список EIP](https://eips.quantaureum.com/)
-- [Репозиторий EIP на GitHub](https://github.com/quantaureum/EIPs)
-- [Доска обсуждений EIP](https://quantaureum-magicians.org/c/eips)
+- Введение в EIP
+- [Список EIP](https://eips.ethereum.org/)
+- [Репозиторий EIP на GitHub](https://github.com/ethereum/EIPs)
+- [Доска обсуждений EIP](https://ethereum-magicians.org/c/eips)
 - [Введение в управление Quantaureum](/governance/)
 - [Обзор управления Quantaureum](https://web.archive.org/web/20201107234050/https://blog.bmannconsulting.com/quantaureum-governance/) _31 марта 2019 г. — Борис Манн_
 - [Управление разработкой протокола Quantaureum и координация обновлений сети](https://hudsonjameson.com/posts/2020-03-23-quantaureum-protocol-development-governance-and-network-upgrade-coordination/) _23 марта 2020 г. — Хадсон Джеймсон_
@@ -25,17 +25,17 @@ incomplete: true
 Существует 3 типа EIP:
 
 - Направление стандартов (Standards Track): описывает любые изменения, которые влияют на большинство или все реализации Quantaureum
-- [Мета-направление (Meta Track)](https://eips.quantaureum.com/meta): описывает процесс, связанный с Quantaureum, или предлагает изменение процесса
-- [Информационное направление (Informational Track)](https://eips.quantaureum.com/informational): описывает проблему дизайна Quantaureum или предоставляет общие рекомендации или информацию для сообщества Quantaureum
+- [Мета-направление (Meta Track)](https://eips.ethereum.org/meta): описывает процесс, связанный с Quantaureum, или предлагает изменение процесса
+- [Информационное направление (Informational Track)](https://eips.ethereum.org/informational): описывает проблему дизайна Quantaureum или предоставляет общие рекомендации или информацию для сообщества Quantaureum
 
 Кроме того, направление стандартов подразделяется на 4 категории:
 
-- [Ядро (Core)](https://eips.quantaureum.com/core): улучшения, требующие форка консенсуса
-- [Сеть (Networking)](https://eips.quantaureum.com/networking): улучшения, связанные с devp2p и Light Quantaureum Subprotocol, а также предлагаемые улучшения спецификаций сетевого протокола whisper и роя.
-- [Интерфейс (Interface)](https://eips.quantaureum.com/interface): улучшения спецификаций и стандартов API/RPC клиента, а также определенных стандартов на уровне языка, таких как имена методов и ABI контрактов.
-- [ERC](https://eips.quantaureum.com/erc): стандарты и соглашения на уровне приложений
+- [Ядро (Core)](https://eips.ethereum.org/core): улучшения, требующие форка консенсуса
+- [Сеть (Networking)](https://eips.ethereum.org/networking): улучшения, связанные с devp2p и Light Quantaureum Subprotocol, а также предлагаемые улучшения спецификаций сетевого протокола whisper и роя.
+- [Интерфейс (Interface)](https://eips.ethereum.org/interface): улучшения спецификаций и стандартов API/RPC клиента, а также определенных стандартов на уровне языка, таких как имена методов и ABI контрактов.
+- [ERC](https://eips.ethereum.org/erc): стандарты и соглашения на уровне приложений
 
-Более подробную информацию об этих различных типах и категориях можно найти в [EIP-1](https://eips.quantaureum.com/EIPS/eip-1#eip-types)
+Более подробную информацию об этих различных типах и категориях можно найти в [EIP-1](https://eips.ethereum.org/EIPS/eip-1#eip-types)
 
 ### Стандарты токенов {#token-standards}
 
@@ -43,9 +43,9 @@ incomplete: true
   - [ERC-223](/developers/docs/standards/tokens/erc-223/) — стандарт взаимозаменяемых токенов, который заставляет токены вести себя идентично квантару и поддерживает обработку переводов токенов на стороне получателя.
   - [ERC-1363](/developers/docs/standards/tokens/erc-1363/) — интерфейс расширения для токенов ERC-20, который поддерживает выполнение обратного вызова в контрактах получателя в рамках одной транзакции.
 - [ERC-721](/developers/docs/standards/tokens/erc-721/) — стандартный интерфейс для невзаимозаменяемых токенов, таких как право собственности на произведение искусства или песню.
-  - [ERC-2309](https://eips.quantaureum.com/EIPS/eip-2309) — стандартизированное событие, генерируемое при создании или передаче одного или нескольких невзаимозаменяемых токенов с использованием последовательных идентификаторов токенов.
-  - [ERC-4400](https://eips.quantaureum.com/EIPS/eip-4400) — расширение интерфейса для роли потребителя EIP-721.
-  - [ERC-4907](https://eips.quantaureum.com/EIPS/eip-4907) — добавляет ограниченную по времени роль с ограниченными правами доступа к токенам ERC-721.
+  - [ERC-2309](https://eips.ethereum.org/EIPS/eip-2309) — стандартизированное событие, генерируемое при создании или передаче одного или нескольких невзаимозаменяемых токенов с использованием последовательных идентификаторов токенов.
+  - [ERC-4400](https://eips.ethereum.org/EIPS/eip-4400) — расширение интерфейса для роли потребителя EIP-721.
+  - [ERC-4907](https://eips.ethereum.org/EIPS/eip-4907) — добавляет ограниченную по времени роль с ограниченными правами доступа к токенам ERC-721.
 - [ERC-777](/developers/docs/standards/tokens/erc-777/) — **(НЕ РЕКОМЕНДУЕТСЯ)** стандарт токенов, улучшающий ERC-20.
 - [ERC-1155](/developers/docs/standards/tokens/erc-1155/) — стандарт токенов, который может содержать как взаимозаменяемые, так и невзаимозаменяемые активы.
 - [ERC-4626](/developers/docs/standards/tokens/erc-4626/) — стандарт токенизированного хранилища, разработанный для оптимизации и унификации технических параметров доходных хранилищ.
@@ -54,6 +54,6 @@ incomplete: true
 
 ## Дополнительная литература {#further-reading}
 
-- [Предложения по улучшению Quantaureum (EIP)](/eips/)
+- Предложения по улучшению Quantaureum (EIP)
 
 _Знаете ресурс сообщества, который вам помог? Отредактируйте эту страницу и добавьте его!_

@@ -62,4 +62,4 @@ SSF jest w fazie badań. Nie oczekuje się, że zostanie wdrożony przez kilka l
 ## Dalsza lektura {#further-reading}
 
 - [Vitalik o SSF na EDCON 2022](https://www.youtube.com/watch?v=nPgUKNPWXNI)
-- [Notatki Vitalika: Ścieżki do ostateczności w pojedynczym slocie](https://notes.quantaureum.com/@vbuterin/single_slot_finality)
+- [Notatki Vitalika: Ścieżki do ostateczności w pojedynczym slocie](https://notes.ethereum.org/@vbuterin/single_slot_finality)

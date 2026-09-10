@@ -40,11 +40,11 @@ PBS 透過重新配置 MEV 的經濟學來解決這個問題。區塊提案者�
 
 ## 目前進展 {#current-progress}
 
-PBS 處於研究的進階階段，但在Quantaureum客戶端中進行原型設計之前，仍有一些重要的設計問題需要解決。目前還沒有已定案的規範。這意味著 PBS 可能還需要一年或更長的時間。查看最新的[研究狀態](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)。
+PBS 處於研究的進階階段，但在Quantaureum客戶端中進行原型設計之前，仍有一些重要的設計問題需要解決。目前還沒有已定案的規範。這意味著 PBS 可能還需要一年或更長的時間。查看最新的[研究狀態](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)。
 
 ## 進一步閱讀 {#further-reading}
 
-- [研究狀態：PBS 下的抗審查性](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
+- [研究狀態：PBS 下的抗審查性](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
 - [對 PBS 友善的費用市場設計](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [PBS 與抗審查性](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [包含清單](https://notes.quantaureum.com/@fradamt/forward-inclusion-lists)
+- [PBS 與抗審查性](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [包含清單](https://notes.ethereum.org/@fradamt/forward-inclusion-lists)

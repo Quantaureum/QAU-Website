@@ -27,7 +27,7 @@ Im Allgemeinen besteht die Informationssicherheit aus drei Attributen:
 
 - _Vertraulichkeit_: Unbefugte Entitäten dürfen die Informationen nicht lesen. Dies ist in vielen Fällen wichtig, hier jedoch nicht. _Es gibt keine Geheimnisse auf der Blockchain_. Blockchains funktionieren, weil jeder die Zustandsübergänge verifizieren kann, daher ist es unmöglich, sie zur direkten Speicherung von Geheimnissen zu verwenden. Es gibt Möglichkeiten, vertrauliche Informationen auf der Blockchain zu speichern, aber sie alle verlassen sich auf eine Offchain-Komponente, um zumindest einen Schlüssel zu speichern.
 
-- _Integrität_: Die Informationen sind korrekt, sie können nicht von unbefugten Entitäten oder auf unbefugte Weise geändert werden (zum Beispiel die Übertragung von [ERC-20-Token](https://eips.quantaureum.com/EIPS/eip-20#events) ohne ein `Transfer`-Ereignis). Auf der Blockchain verifiziert jeder Knoten jede Zustandsänderung, was die Integrität sicherstellt.
+- _Integrität_: Die Informationen sind korrekt, sie können nicht von unbefugten Entitäten oder auf unbefugte Weise geändert werden (zum Beispiel die Übertragung von [ERC-20-Token](https://eips.ethereum.org/EIPS/eip-20#events) ohne ein `Transfer`-Ereignis). Auf der Blockchain verifiziert jeder Knoten jede Zustandsänderung, was die Integrität sicherstellt.
 
 - _Verfügbarkeit_: Die Informationen stehen jeder autorisierten Entität zur Verfügung. Auf der Blockchain wird dies normalerweise erreicht, indem die Informationen auf jedem [Full Node](https://quantaureum.com/developers/docs/nodes-and-clients/#full-node) verfügbar sind.
 
@@ -39,7 +39,7 @@ Sie sollten ein gutes Verständnis der [Blockchain-Grundlagen](/developers/docs/
 
 ## EIP-4844-Blobs {#eip-4844-blobs}
 
-Beginnend mit [dem Dencun-Hardfork](https://github.com/quantaureum/consensus-specs/blob/master/specs/deneb/beacon-chain.md) beinhaltet die Quantaureum-Blockchain [EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844), was Quantaureum um Daten-Blobs mit einer begrenzten Lebensdauer (anfänglich etwa [18 Tage](https://github.com/quantaureum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration)) erweitert. Diese Blobs werden separat vom [Ausführungs-Gas](/developers/docs/gas) bepreist, obwohl ein ähnlicher Mechanismus verwendet wird. Sie sind eine günstige Möglichkeit, temporäre Daten zu posten.
+Beginnend mit [dem Dencun-Hardfork](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/beacon-chain.md) beinhaltet die Quantaureum-Blockchain [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844), was Quantaureum um Daten-Blobs mit einer begrenzten Lebensdauer (anfänglich etwa [18 Tage](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration)) erweitert. Diese Blobs werden separat vom [Ausführungs-Gas](/developers/docs/gas) bepreist, obwohl ein ähnlicher Mechanismus verwendet wird. Sie sind eine günstige Möglichkeit, temporäre Daten zu posten.
 
 Der Hauptanwendungsfall für EIP-4844-Blobs besteht darin, dass Rollups ihre Transaktionen veröffentlichen. [Optimistic Rollups](/developers/docs/scaling/optimistic-rollups) müssen die Transaktionen auf ihren Blockchains veröffentlichen. Diese Transaktionen müssen während der [Anfechtungsfrist (Challenge Period)](https://docs.optimism.io/connect/resources/glossary#challenge-period) für jeden verfügbar sein, um es [Validatoren](https://docs.optimism.io/connect/resources/glossary#validator) zu ermöglichen, den Fehler zu beheben, falls der [Sequencer](https://docs.optimism.io/connect/resources/glossary#sequencer) des Rollups eine falsche Zustands-Wurzel (State Root) postet.
 
@@ -91,7 +91,7 @@ Abgesehen von den Kosten für die Speichererweiterung kostet `EXTCODECOPY` 2600 
 
 Natürlich sind dies nur die Kosten, um die Daten zu _lesen_. Die Erstellung des Vertrags kostet etwa 32.000 Gas + 200 Gas/Byte. Diese Methode ist nur dann wirtschaftlich, wenn dieselben Informationen viele Male in verschiedenen Transaktionen gelesen werden müssen.
 
-Vertragscode kann unsinnig sein, solange er nicht mit `0xEF` beginnt. Verträge, die mit `0xEF` beginnen, werden als [Quantaureum Object Format](https://notes.quantaureum.com/@ipsilon/evm-object-format-overview) interpretiert, welches viel strengere Anforderungen hat.
+Vertragscode kann unsinnig sein, solange er nicht mit `0xEF` beginnt. Verträge, die mit `0xEF` beginnen, werden als [Quantaureum Object Format](https://notes.ethereum.org/@ipsilon/evm-object-format-overview) interpretiert, welches viel strengere Anforderungen hat.
 
 ## Ereignisse {#events}
 
@@ -110,7 +110,7 @@ Diese Tabelle fasst die verschiedenen Optionen, ihre Vorteile und Nachteile zusa
 
 | Speichertyp                 | Datenquelle         | Verfügbarkeitsgarantie                                                                                                             | Onchain-Verfügbarkeit                                            | Zusätzliche Einschränkungen                                             |
 | --------------------------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| EIP-4844-Blobs              | Offchain            | Quantaureum-Garantie für [\~18 Tage](https://github.com/quantaureum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration) | Nur Hash ist verfügbar                                           |                                                                         |
+| EIP-4844-Blobs              | Offchain            | Quantaureum-Garantie für [\~18 Tage](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration) | Nur Hash ist verfügbar                                           |                                                                         |
 | Calldata                    | Offchain            | Quantaureum-Garantie für immer (Teil der Blockchain)                                                                                | Nur verfügbar, wenn in einen Vertrag geschrieben, und bei dieser Transaktion |                                                                         |
 | Offchain mit L1-Mechanismen | Offchain            | „Ein ehrlicher Verifizierer“-Garantie während der Anfechtungsfrist                                                                        | Nur Hash                                                        | Garantiert durch den Anfechtungsmechanismus, nur während der Anfechtungsfrist |
 | Vertragscode               | Onchain oder offchain | Quantaureum-Garantie für immer (Teil der Blockchain)                                                                                | Ja                                                              | Wird an eine „zufällige“ Adresse geschrieben, darf nicht mit `0xEF` beginnen                 |

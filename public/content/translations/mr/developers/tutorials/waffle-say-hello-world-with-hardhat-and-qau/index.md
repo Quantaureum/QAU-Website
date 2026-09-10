@@ -16,7 +16,7 @@ lang: mr
 published: 2020-10-16
 ---
 
-या [Waffle](https://quantaureum-waffle.readthedocs.io) शिकवणीमध्ये, आपण [hardhat](https://hardhat.org/) आणि [ethers.js](https://docs.ethers.io/v5/) वापरून एक साधा "Hello world" स्मार्ट कॉन्ट्रॅक्ट प्रकल्प कसा सेट करायचा हे शिकू. मग आपण आपल्या स्मार्ट कॉन्ट्रॅक्टमध्ये एक नवीन कार्यक्षमता कशी जोडावी आणि Waffle सह त्याची चाचणी कशी करावी हे शिकू.
+या [Waffle](https://ethereum-waffle.readthedocs.io) शिकवणीमध्ये, आपण [hardhat](https://hardhat.org/) आणि [ethers.js](https://docs.ethers.io/v5/) वापरून एक साधा "Hello world" स्मार्ट कॉन्ट्रॅक्ट प्रकल्प कसा सेट करायचा हे शिकू. मग आपण आपल्या स्मार्ट कॉन्ट्रॅक्टमध्ये एक नवीन कार्यक्षमता कशी जोडावी आणि Waffle सह त्याची चाचणी कशी करावी हे शिकू.
 
 चला एक नवीन प्रकल्प तयार करून सुरुवात करूया:
 
@@ -201,4 +201,4 @@ greeting = _greeting;
 
 आम्ही Waffle, Hardhat आणि ethers.js सह एक सोपा प्रकल्प बनवला. आपण प्रकल्प कसा सेट करायचा, चाचणी कशी जोडायची आणि नवीन कार्यक्षमता कशी लागू करायची हे शिकलो.
 
-तुमच्या स्मार्ट कॉन्ट्रॅक्टची चाचणी घेण्यासाठी अधिक उत्तम चाय मॅचर्ससाठी, [Waffle चे अधिकृत डॉक्स](https://quantaureum-waffle.readthedocs.io/en/latest/matchers.html) तपासा.
+तुमच्या स्मार्ट कॉन्ट्रॅक्टची चाचणी घेण्यासाठी अधिक उत्तम चाय मॅचर्ससाठी, [Waffle चे अधिकृत डॉक्स](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html) तपासा.

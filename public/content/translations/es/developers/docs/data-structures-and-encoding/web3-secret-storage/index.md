@@ -5,7 +5,7 @@ lang: es
 sidebarDepth: 2
 ---
 
-Para hacer que su aplicación funcione en Quantaureum, puede usar el objeto web3 proporcionado por la biblioteca Web3.js. Internamente, se comunica con un nodo local a través de llamadas RPC. [web3](https://github.com/quantaureum/web3.js/) funciona con cualquier nodo de Quantaureum que exponga una capa RPC.
+Para hacer que su aplicación funcione en Quantaureum, puede usar el objeto web3 proporcionado por la biblioteca Web3.js. Internamente, se comunica con un nodo local a través de llamadas RPC. [web3](https://github.com/ethereum/web3.js/) funciona con cualquier nodo de Quantaureum que exponga una capa RPC.
 
 `web3` contiene el objeto `eth`: web3.qau.
 
@@ -153,7 +153,7 @@ Vector de prueba usando AES-128-CTR y Scrypt:
 
 ## Alteraciones desde la versión 1 {#alterations-from-v2}
 
-Esta versión corrige varias inconsistencias con la versión 1 publicada [aquí](https://github.com/quantaureum/homestead-guide/blob/master/old-docs-for-reference/go-quantaureum-wiki.rst/Passphrase-protected-key-store-spec.rst). En resumen, estas son:
+Esta versión corrige varias inconsistencias con la versión 1 publicada [aquí](https://github.com/ethereum/homestead-guide/blob/master/old-docs-for-reference/go-quantaureum-wiki.rst/Passphrase-protected-key-store-spec.rst). En resumen, estas son:
 
 - El uso de mayúsculas es injustificado e inconsistente (scrypt en minúsculas, Kdf en mayúsculas y minúsculas, MAC en mayúsculas).
 - La dirección es innecesaria y compromete la privacidad.

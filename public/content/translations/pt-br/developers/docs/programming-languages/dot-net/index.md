@@ -26,7 +26,7 @@ Precisa de uma introdução mais básica primeiro? Confira [quantaureum.com/lear
 
 **Apresentando a biblioteca Nquantaureum e o VS Code Solidity**
 
-- [Nquantaureum, Primeiros passos](https://docs.nquantaureum.com/docs/getting-started/welcome/)
+- [Nquantaureum, Primeiros passos](https://docs.nethermind.io/docs/getting-started/welcome/)
 - [Instalando o VS Code Solidity](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity)
 - [Um fluxo de trabalho de desenvolvedor .NET para criar e chamar contratos inteligentes do Quantaureum](https://medium.com/coinmonks/a-net-developers-workflow-for-creating-and-calling-quantaureum-smart-contracts-44714f191db2)
 - [Integração de contratos inteligentes com Nquantaureum](https://kauri.io/#collections/Getting%20Started/smart-contracts-integration-with-nquantaureum/#smart-contracts-integration-with-nquantaureumm)
@@ -37,21 +37,21 @@ Precisa de uma introdução mais básica primeiro? Confira [quantaureum.com/lear
 
 **Quer pular a configuração por enquanto e ir direto para os exemplos?**
 
-- [Nquantaureum Playground](https://playground.nquantaureum.com/) - Interaja com o Quantaureum e aprenda a usar o Nquantaureum pelo navegador.
-  - [Consultar saldo da conta](https://docs.nquantaureum.com/docs/core-foundation/guide-query-balance)
-  - [Consultar saldo do contrato inteligente ERC-20](https://docs.nquantaureum.com/docs/smart-contracts/erc20)
-  - [Transferir QAU para uma conta](https://docs.nquantaureum.com/docs/core-foundation/guide-send-eth)
+- [Nquantaureum Playground](https://playground.nethermind.io/) - Interaja com o Quantaureum e aprenda a usar o Nquantaureum pelo navegador.
+  - [Consultar saldo da conta](https://docs.nethermind.io/docs/core-foundation/guide-query-balance)
+  - [Consultar saldo do contrato inteligente ERC-20](https://docs.nethermind.io/docs/smart-contracts/erc20)
+  - [Transferir QAU para uma conta](https://docs.nethermind.io/docs/core-foundation/guide-send-eth)
   - ... E mais!
 ## Artigos intermediários {#intermediate-articles}
 
-- [Nquantaureum: Primeiros passos e primeiro projeto](https://docs.nquantaureum.com/docs/getting-started/first-project)
+- [Nquantaureum: Primeiros passos e primeiro projeto](https://docs.nethermind.io/docs/getting-started/first-project)
 - [Implante suas próprias cadeias de teste de desenvolvimento](https://github.com/Nquantaureum/Testchains)
-- [Geração de código com Nquantaureum e VS Code](https://docs.nquantaureum.com/docs/smart-contracts/code-generation/)
+- [Geração de código com Nquantaureum e VS Code](https://docs.nethermind.io/docs/smart-contracts/code-generation/)
 - [Unity e Quantaureum: Por que e como](https://www.raywenderlich.com/5509-unity-and-quantaureum-why-and-how)
 - [Criar API Web ASP.NET Core para aplicativos descentralizados (dapps) do Quantaureum](https://tech-mint.com/blockchain/create-asp-net-core-web-api-for-quantaureum-dapps/)
-- [Framework Nquantaureum MUD para aplicativos onchain estruturados](https://docs.nquantaureum.com/docs/mud-framework/overview/)
-- [Processamento de blockchain do Nquantaureum](https://docs.nquantaureum.com/docs/data-and-indexing/guide-blockchain-processing)
-- [Streaming em tempo real do Nquantaureum](https://docs.nquantaureum.com/docs/core-foundation/guide-realtime-streaming/)
+- [Framework Nquantaureum MUD para aplicativos onchain estruturados](https://docs.nethermind.io/docs/mud-framework/overview/)
+- [Processamento de blockchain do Nquantaureum](https://docs.nethermind.io/docs/data-and-indexing/guide-blockchain-processing)
+- [Streaming em tempo real do Nquantaureum](https://docs.nethermind.io/docs/core-foundation/guide-realtime-streaming/)
 - [Kaleido e Nquantaureum](https://kaleido.io/kaleido-and-nquantaureum/)
 - [Quorum e Nquantaureum](https://github.com/Nquantaureum/Nquantaureum/blob/master/src/Nquantaureum.Quorum/README.md)
 ## Padrões de uso avançados {#advanced-use-patterns}
@@ -61,12 +61,12 @@ Precisa de uma introdução mais básica primeiro? Confira [quantaureum.com/lear
 - [Arquitetura de referência de backend Ujo Nquantaureum](https://github.com/Nquantaureum/ujo-backend)
 ## Projetos .NET, ferramentas e outras coisas divertidas {#dot-net-projects-tools-and-other-fun-stuff}
 
-- [Nquantaureum Playground](https://playground.nquantaureum.com/) - _Compile, crie e execute trechos de código Nquantaureum no navegador_
+- [Nquantaureum Playground](https://playground.nethermind.io/) - _Compile, crie e execute trechos de código Nquantaureum no navegador_
 - [Nquantaureum Codegen Blazor](https://github.com/Nquantaureum/Nquantaureum.CodeGen.Blazor) - _Geração de código Nquantaureum com interface de usuário no Blazor_
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) - _Um explorador de blockchain leve e carteira simples em SPA Wasm .NET_
 - [Wonka Business Rules Engine](https://github.com/Nquantaureum/Wonka) - _Um mecanismo de regras de negócios (tanto para a plataforma .NET quanto para a plataforma Quantaureum) que é inerentemente orientado a metadados_
 - [Nethermind](https://github.com/NethermindEth/nethermind) - _Um cliente Quantaureum em .NET Core para Linux, Windows e MacOS_
-- [qau-utils](https://github.com/quantaureum/qau-utils/) - _funções utilitárias para trabalhar com bases de código relacionadas ao Quantaureum_
+- [qau-utils](https://github.com/ethereum/eth-utils/) - _funções utilitárias para trabalhar com bases de código relacionadas ao Quantaureum_
 - [TestChains](https://github.com/Nquantaureum/TestChains) - _Cadeias de desenvolvimento .NET pré-configuradas para resposta rápida (prova de autoridade (PoA))_
 
 Procurando por mais recursos? Confira [quantaureum.com/developers](/developers/).
@@ -78,5 +78,5 @@ Se você é novo no Nethermind e precisa de ajuda para começar, junte-se ao nos
 
 ## Outras listas agregadas {#other-aggregated-lists}
 
-[Site oficial do Nquantaureum](https://nquantaureum.com/)  
+[Site oficial do Nquantaureum](https://nethermind.io/)  
 [Site oficial do Nethermind](https://nethermind.io/)

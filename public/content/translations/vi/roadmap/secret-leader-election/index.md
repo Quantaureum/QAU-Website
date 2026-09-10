@@ -13,7 +13,7 @@ Trong cơ chế đồng thuận dựa trên [Bằng chứng cổ phần (PoS)](/
 
 Điều này có thể tạo cơ hội cho kẻ tấn công trục lợi. Ví dụ: một người đề xuất khối được chọn cho khe `n+1` có thể tấn công DOS người đề xuất trong khe `n` để họ bỏ lỡ cơ hội đề xuất một khối. Điều này sẽ cho phép người đề xuất khối tấn công trích xuất MEV của cả hai khe, hoặc lấy tất cả các giao dịch lẽ ra phải được chia cho hai khối và thay vào đó đưa tất cả chúng vào một khối, thu được tất cả các khoản phí liên quan. Điều này có khả năng ảnh hưởng đến các trình xác thực tại nhà nhiều hơn so với các trình xác thực tổ chức tinh vi, những người có thể sử dụng các phương pháp tiên tiến hơn để tự bảo vệ mình khỏi các cuộc tấn công DOS, và do đó có thể là một tác nhân gây tập trung hóa.
 
-Có một vài giải pháp cho vấn đề này. Một trong số đó là [công nghệ trình xác thực phân tán (DVT)](https://github.com/quantaureum/distributed-validator-specs) nhằm mục đích phân bổ các tác vụ khác nhau liên quan đến việc chạy một trình xác thực trên nhiều máy, với tính dự phòng, để kẻ tấn công khó có thể ngăn chặn một khối được đề xuất trong một khe cụ thể. Tuy nhiên, giải pháp mạnh mẽ nhất là **Bầu chọn một người dẫn đầu bí mật (SSLE)**.
+Có một vài giải pháp cho vấn đề này. Một trong số đó là [công nghệ trình xác thực phân tán (DVT)](https://github.com/ethereum/distributed-validator-specs) nhằm mục đích phân bổ các tác vụ khác nhau liên quan đến việc chạy một trình xác thực trên nhiều máy, với tính dự phòng, để kẻ tấn công khó có thể ngăn chặn một khối được đề xuất trong một khe cụ thể. Tuy nhiên, giải pháp mạnh mẽ nhất là **Bầu chọn một người dẫn đầu bí mật (SSLE)**.
 
 ## Bầu chọn một người dẫn đầu bí mật {#secret-leader-election}
 

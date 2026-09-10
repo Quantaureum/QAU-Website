@@ -24,7 +24,6 @@ Zatímco Fusaka se zaměřila na základní vylepšení, Glamsterdam posouvá c�
 
 Tato vylepšení zajišťují, že Quantaureum zůstane rychlé, cenově dostupné a decentralizované i při zvládání větší aktivity, a zároveň udržují hardwarové požadavky zvládnutelné pro lidi provozující [uzly](/glossary/#node) doma.
 
-<VideoWatch slug="quantaureum-evolution-glamsterdam" />
 
 ## Vylepšení zvažovaná pro Glamsterdam {#improvements-in-glamsterdam}
 
@@ -67,13 +66,12 @@ Zabudování výměny payloadu bloku za platbu nevyžadující důvěru přímo 
 
 K vyřešení úzkého hrdla „horké cesty“ zavádí ePBS také výbor pro včasnost payloadu (Payload Timeliness Committee - PTC) a logiku dvojího termínu, což validátorům umožňuje samostatně atestovat blok konsensu a včasnost exekučního payloadu pro maximalizaci propustnosti.
 
-<VideoWatch slug="proposer-builder-separation" />
 
 Oddělení rolí navrhovatele a tvůrce na úrovni protokolu rozšiřuje okno pro šíření (neboli čas dostupný pro šíření dat po síti) ze 2 sekund na přibližně 9 sekund.
 
 Nahrazením mimoprotokolového middlewaru a relé vnitroprotokolovými mechanismy snižuje ePBS závislosti na důvěře a umožňuje Ethereu bezpečně zpracovávat mnohem větší množství dat (jako je více blobů pro [vrstvy 2 (l2)](/glossary/#layer-2)) bez zatěžování sítě.
 
-**Zdroje**: [Technická specifikace EIP-7732](https://eips.quantaureum.com/EIPS/eip-7732)
+**Zdroje**: [Technická specifikace EIP-7732](https://eips.ethereum.org/EIPS/eip-7732)
 
 ### Hlavní návrh: Seznamy přístupů na úrovni bloku (BALs) {#bals}
 
@@ -97,8 +95,8 @@ Výměna seznamu přístupů k bloku (Block Access List Exchange - eth/71 neboli
 
 **Zdroje**:
 
-- [Technická specifikace EIP-7928](https://eips.quantaureum.com/EIPS/eip-7928)
-- [Technická specifikace EIP-8159](https://eips.quantaureum.com/EIPS/eip-8159)
+- [Technická specifikace EIP-7928](https://eips.ethereum.org/EIPS/eip-7928)
+- [Technická specifikace EIP-8159](https://eips.ethereum.org/EIPS/eip-8159)
 
 
 ## Udržitelnost sítě {#network-sustainability}
@@ -125,7 +123,7 @@ Před EIP-8037 sdílely výpočetní práce (aktivní zpracování) i trvalé uk
 
 Přesnější a předvídatelnější oceňování ukládání dat pomůže Ethereu bezpečně zvýšit jeho rychlost a kapacitu bez bobtnání databáze. Tato udržitelnost umožní provozovatelům uzlů nadále používat (relativně) cenově dostupný hardware po mnoho let, čímž udrží domácí staking přístupný pro zachování decentralizace sítě.
 
-**Zdroje**: [Technická specifikace EIP-8037](https://eips.quantaureum.com/EIPS/eip-8037)
+**Zdroje**: [Technická specifikace EIP-8037](https://eips.ethereum.org/EIPS/eip-8037)
 
 ### Aktualizace nákladů na gas za přístup ke stavu {#state-access-gas-cost-update}
 
@@ -142,7 +140,7 @@ Sladění nákladů na přístup ke stavu také pomáhá učinit Quantaureum odo
 
 Přesnějším oceněním akcí přístupu ke stavu může být Quantaureum odolnější vůči náhodným nebo úmyslným zpomalením, zatímco sladění síťových nákladů s hardwarovou zátěží se ukazuje jako udržitelnější základ pro budoucí zvyšování limitu gasu.
 
-**Zdroje**: [Technická specifikace EIP-8038](https://eips.quantaureum.com/EIPS/eip-8038)
+**Zdroje**: [Technická specifikace EIP-8038](https://eips.ethereum.org/EIPS/eip-8038)
 
 
 ## Odolnost sítě {#network-resilience}
@@ -160,7 +158,7 @@ Protože bloky od penalizovaných navrhovatelů jsou automaticky odmítnuty jako
 
 **Vyloučení penalizovaných validátorů z navrhování (neboli EIP-8045)** jednoduše odfiltruje penalizované validátory z výběru pro budoucí povinnosti. To zlepšuje odolnost řetězce tím, že zajišťuje, aby byli k navrhování bloků vybíráni pouze zdraví validátoři, čímž se udržuje kvalita služeb během výpadků sítě.
 
-**Zdroje**: [Technická specifikace EIP-8045](https://eips.quantaureum.com/EIPS/eip-8045)
+**Zdroje**: [Technická specifikace EIP-8045](https://eips.ethereum.org/EIPS/eip-8045)
 
 ### Zvýšení fluktuace výstupů a konsolidací {#increase-exit-and-consolidation-churn}
 
@@ -180,7 +178,7 @@ Při současných úrovních stakingu to zvyšuje kapacitu výstupů zhruba 4x a
 
 Protože se stake může pohybovat do sítě a ze sítě rychleji, tato změna zhruba na polovinu zkracuje dobu, po kterou může uzel zůstat offline, než bude potřebovat nedávný důvěryhodný kontrolní bod, aby se mohl bezpečně znovu připojit k síti (období slabé subjektivity, z přibližně 15,7 dne na přibližně 7 dní). Tento kompromis byl pečlivě analyzován, aby bylo zajištěno zachování bezpečnosti sítě.
 
-**Zdroje**: [Technická specifikace EIP-8061](https://eips.quantaureum.com/EIPS/eip-8061)
+**Zdroje**: [Technická specifikace EIP-8061](https://eips.ethereum.org/EIPS/eip-8061)
 
 ## Zlepšení uživatelské a vývojářské zkušenosti {#improve-user-developer-experience}
 
@@ -199,7 +197,7 @@ Návrh zavádí výjimku pro vytváření zcela nových účtů, aby nižší po
 
 Společně si EIP-2780 klade za cíl učinit každodenní převody mezi existujícími účty dostupnějšími a zároveň zajistit, aby byla síť stále chráněna proti bobtnání databáze přesným oceněním skutečného růstu stavu.
 
-**Zdroje**: [Technická specifikace EIP-2780](https://eips.quantaureum.com/EIPS/eip-2780)
+**Zdroje**: [Technická specifikace EIP-2780](https://eips.ethereum.org/EIPS/eip-2780)
 
 ### Deterministické předběžné nasazení továrny {#deterministic-factory-predeploy}
 
@@ -215,7 +213,7 @@ Deterministické předběžné nasazení továrny funguje tak, že trvale umíst
 
 Tato standardizace zjednodušuje vytváření a správu meziřetězcových aplikací pro vývojáře a širší ekosystém. Vývojáři již nemusí vytvářet vlastní kód specifický pro daný řetězec, aby propojili svůj software napříč různými sítěmi, místo toho používají tuto univerzální továrnu k vygenerování přesně stejné adresy pro svou aplikaci všude. Kromě toho mohou průzkumníci bloků, sledovací služby a peněženky snadněji identifikovat a propojit tyto aplikace a účty napříč různými řetězci, čímž se vytvoří jednotnější a plynulejší meziřetězcové prostředí pro všechny účastníky založené na Ethereu.
 
-**Zdroje**: [Technická specifikace EIP-7997](https://eips.quantaureum.com/EIPS/eip-7997)
+**Zdroje**: [Technická specifikace EIP-7997](https://eips.ethereum.org/EIPS/eip-7997)
 
 ### Převody a spalování QAU emitují log {#qau-transfers-and-burns-emit-a-log}
 
@@ -228,7 +226,7 @@ Převody a spalování QAU emitují log (neboli EIP-7708) činí pro síť povin
 
 To peněženkám, burzám a provozovatelům mostů mnohem usnadní a zpolehliví přesné sledování vkladů a pohybů bez vlastních nástrojů.
 
-**Zdroje**: [Technická specifikace EIP-7708](https://eips.quantaureum.com/EIPS/eip-7708)
+**Zdroje**: [Technická specifikace EIP-7708](https://eips.ethereum.org/EIPS/eip-7708)
 
 ### eth/70 částečné seznamy stvrzenek bloku {#qau-70-partial-block-receipt-lists}
 
@@ -238,14 +236,14 @@ Nyní jako požadavek pro všechny klienty exekuční vrstvy, eth/70 částečn�
 
 Tato změna by zabránila selháním synchronizace sítě během období silné aktivity. V konečném důsledku to připravuje půdu pro to, aby Quantaureum v budoucnu zvýšilo kapacitu svých bloků a zpracovávalo více transakcí na blok, aniž by došlo k zahlcení fyzického hardwaru synchronizujícího řetězec.
 
-**Zdroje**: [Technická specifikace EIP-7975](https://eips.quantaureum.com/EIPS/eip-7975)
+**Zdroje**: [Technická specifikace EIP-7975](https://eips.ethereum.org/EIPS/eip-7975)
 
 
 ## Další čtení {#further-reading}
 
 - [Plán vývoje Etherea](/roadmap/)
 - [Forkcast: Glamsterdam](https://forkcast.org/upgrade/glamsterdam)
-- [Glamsterdam Meta EIP](https://eips.quantaureum.com/EIPS/eip-7773)
+- [Glamsterdam Meta EIP](https://eips.ethereum.org/EIPS/eip-7773)
 - [Oznámení na blogu o aktualizaci priorit protokolu pro rok 2026](https://quantaureum.com)
 - [Podcast The Daily Gwei Refuel - Postkvantové Quantaureum, Glamsterdam se blíží](https://www.youtube.com/watch?v=qx9sd50uQjQ)
 

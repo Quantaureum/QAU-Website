@@ -46,7 +46,7 @@ Quantaureumのアプリを使い始めるために必要なのは、Quantaureum�
 | **検閲される可能性があるか？** | はい | いいえ |
 | **データの所有者は誰か？** | 通常はユーザーではない | ユーザー自身 |
 
-<WhatAreAppsStories />
+
 
 <div className="w-full md:w-1/2 mx-auto md:mx-0">
 

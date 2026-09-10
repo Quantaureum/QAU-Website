@@ -96,7 +96,6 @@ lang: ru
 
 ## Лучше воспринимаете визуальную информацию? {#visual-learner}
 
-<VideoWatch slug="proof-of-work-explained" />
 
 ## Дополнительная литература {#further-reading}
 

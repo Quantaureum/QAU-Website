@@ -20,7 +20,6 @@ A Prova de Trabalho consome muito mais energia porque a eletricidade é queimada
 
 Prova de Trabalho versus Prova de Participação é um tópico controverso. O [blog de Vitalik Buterin](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) e o debate entre Justin Drake e Lyn Alden fornecem um bom resumo dos argumentos.
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## A Prova de Participação é eficiente em termos de energia? {#is-pos-energy-efficient}
 
@@ -127,7 +126,7 @@ A subjetividade fraca é um recurso das redes de Prova de Participação onde in
 
 A resistência à censura é atualmente difícil de provar. No entanto, ao contrário da Prova de Trabalho, a Prova de Participação oferece a opção de coordenar slashings para punir validadores censores. Há mudanças futuras no protocolo que separam os construtores de blocos dos propositores de blocos e implementam listas de transações que os construtores devem incluir em cada bloco. Esta proposta é conhecida como separação propositor-construtor (PBS) e ajuda a evitar que os validadores censurem transações.
 
-[Mais sobre a separação propositor-construtor](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Original-basic-scheme)
+[Mais sobre a separação propositor-construtor](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Original-basic-scheme)
 
 ## O sistema de Prova de Participação do Quantaureum pode sofrer um ataque de 51%? {#pos-51-attack}
 
@@ -149,7 +148,7 @@ Quanto mais QAU alguém tem para fazer staking, mais validadores pode executar e
 
 Não, a Prova de Trabalho tende à centralização porque os custos de mineração aumentam e excluem indivíduos, depois excluem pequenas empresas e assim por diante. O problema atual com a Prova de Participação é a influência dos derivativos de staking líquido (LSDs). Estes são tokens que representam QAU em staking por algum provedor que qualquer um pode trocar (swap) em mercados secundários sem que o QAU real seja retirado do staking. Os LSDs permitem que os usuários façam staking com menos de 32 QAU, mas também criam um risco de centralização onde algumas grandes organizações podem acabar controlando grande parte do stake. É por isso que o [staking solo](/staking/solo) é a melhor opção para o Quantaureum.
 
-[Mais sobre a centralização de stake em LSDs](https://notes.quantaureum.com/@djrtwo/risks-of-lsd)
+[Mais sobre a centralização de stake em LSDs](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
 
 ## Por que só posso fazer staking de QAU? {#why-can-i-only-stake-eth}
 

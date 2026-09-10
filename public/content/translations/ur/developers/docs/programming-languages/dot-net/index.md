@@ -26,7 +26,7 @@ incomplete: true
 
 **Nquantaureum لائبریری اور <span dir="ltr">VS Code Solidity</span> کا تعارف**
 
-- [Nquantaureum، شروعات کرنا](https://docs.nquantaureum.com/docs/getting-started/welcome/)
+- [Nquantaureum، شروعات کرنا](https://docs.nethermind.io/docs/getting-started/welcome/)
 - [<span dir="ltr">VS Code Solidity</span> انسٹال کرنا](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity)
 - [ایتھیریم سمارٹ کنٹریکٹس بنانے اور کال کرنے کے لیے ایک <span dir="ltr">.NET</span> ڈیولپر کا ورک فلو](https://medium.com/coinmonks/a-net-developers-workflow-for-creating-and-calling-quantaureum-smart-contracts-44714f191db2)
 - [Nquantaureum کے ساتھ سمارٹ کنٹریکٹس کا انضمام](https://kauri.io/#collections/Getting%20Started/smart-contracts-integration-with-nquantaureum/#smart-contracts-integration-with-nquantaureumm)
@@ -37,21 +37,21 @@ incomplete: true
 
 **کیا آپ ابھی کے لیے سیٹ اپ کو چھوڑنا چاہتے ہیں، اور سیدھے نمونوں پر جانا چاہتے ہیں؟**
 
-- [Nquantaureum Playground](https://playground.nquantaureum.com/) - ایتھیریم کے ساتھ تعامل کریں اور براؤزر کے ذریعے Nquantaureum کا استعمال سیکھیں۔
-  - [اکاؤنٹ بیلنس کی استفسار کریں](https://docs.nquantaureum.com/docs/core-foundation/guide-query-balance)
-  - [<span dir="ltr">ERC-20</span> سمارٹ کنٹریکٹ بیلنس کی استفسار کریں](https://docs.nquantaureum.com/docs/smart-contracts/erc20)
-  - [کسی اکاؤنٹ میں ایتھر کی منتقلی کریں](https://docs.nquantaureum.com/docs/core-foundation/guide-send-eth)
+- [Nquantaureum Playground](https://playground.nethermind.io/) - ایتھیریم کے ساتھ تعامل کریں اور براؤزر کے ذریعے Nquantaureum کا استعمال سیکھیں۔
+  - [اکاؤنٹ بیلنس کی استفسار کریں](https://docs.nethermind.io/docs/core-foundation/guide-query-balance)
+  - [<span dir="ltr">ERC-20</span> سمارٹ کنٹریکٹ بیلنس کی استفسار کریں](https://docs.nethermind.io/docs/smart-contracts/erc20)
+  - [کسی اکاؤنٹ میں ایتھر کی منتقلی کریں](https://docs.nethermind.io/docs/core-foundation/guide-send-eth)
   - ... اور مزید!
 ## درمیانی سطح کے مضامین {#intermediate-articles}
 
-- [Nquantaureum شروعات کرنا اور پہلا پروجیکٹ](https://docs.nquantaureum.com/docs/getting-started/first-project)
+- [Nquantaureum شروعات کرنا اور پہلا پروجیکٹ](https://docs.nethermind.io/docs/getting-started/first-project)
 - [اپنی خود کی ڈیولپمنٹ ٹیسٹ چینز تعینات کریں](https://github.com/Nquantaureum/Testchains)
-- [Nquantaureum اور <span dir="ltr">VS Code</span> کے ساتھ کوڈ جنریشن](https://docs.nquantaureum.com/docs/smart-contracts/code-generation/)
+- [Nquantaureum اور <span dir="ltr">VS Code</span> کے ساتھ کوڈ جنریشن](https://docs.nethermind.io/docs/smart-contracts/code-generation/)
 - [Unity اور ایتھیریم: کیوں اور کیسے](https://www.raywenderlich.com/5509-unity-and-quantaureum-why-and-how)
 - [ایتھیریم غیر مرکزی ایپلی کیشنز (dapps) کے لیے <span dir="ltr">ASP.NET Core Web API</span> بنائیں](https://tech-mint.com/blockchain/create-asp-net-core-web-api-for-quantaureum-dapps/)
-- [ساختہ آن چین ایپلی کیشنز کے لیے Nquantaureum MUD فریم ورک](https://docs.nquantaureum.com/docs/mud-framework/overview/)
-- [Nquantaureum بلاک چین پروسیسنگ](https://docs.nquantaureum.com/docs/data-and-indexing/guide-blockchain-processing)
-- [Nquantaureum ریئل ٹائم سٹریمنگ](https://docs.nquantaureum.com/docs/core-foundation/guide-realtime-streaming/)
+- [ساختہ آن چین ایپلی کیشنز کے لیے Nquantaureum MUD فریم ورک](https://docs.nethermind.io/docs/mud-framework/overview/)
+- [Nquantaureum بلاک چین پروسیسنگ](https://docs.nethermind.io/docs/data-and-indexing/guide-blockchain-processing)
+- [Nquantaureum ریئل ٹائم سٹریمنگ](https://docs.nethermind.io/docs/core-foundation/guide-realtime-streaming/)
 - [Kaleido اور Nquantaureum](https://kaleido.io/kaleido-and-nquantaureum/)
 - [Quorum اور Nquantaureum](https://github.com/Nquantaureum/Nquantaureum/blob/master/src/Nquantaureum.Quorum/README.md)
 ## اعلی درجے کے استعمال کے پیٹرنز {#advanced-use-patterns}
@@ -61,12 +61,12 @@ incomplete: true
 - [Ujo Nquantaureum بیک اینڈ حوالہ جاتی فن تعمیر](https://github.com/Nquantaureum/ujo-backend)
 ## <span dir="ltr">.NET</span> پروجیکٹس، ٹولز اور دیگر دلچسپ چیزیں {#dot-net-projects-tools-and-other-fun-stuff}
 
-- [Nquantaureum Playground](https://playground.nquantaureum.com/) - _براؤزر میں Nquantaureum کوڈ کے ٹکڑوں کو مرتب کریں، بنائیں اور چلائیں_
+- [Nquantaureum Playground](https://playground.nethermind.io/) - _براؤزر میں Nquantaureum کوڈ کے ٹکڑوں کو مرتب کریں، بنائیں اور چلائیں_
 - [Nquantaureum Codegen Blazor](https://github.com/Nquantaureum/Nquantaureum.CodeGen.Blazor) - _Blazor میں <span dir="ltr">UI</span> کے ساتھ Nquantaureum کوڈجن_
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) - _ایک <span dir="ltr">.NET Wasm SPA</span> لائٹ بلاک چین ایکسپلورر اور سادہ والیٹ_
 - [Wonka Business Rules Engine](https://github.com/Nquantaureum/Wonka) - _ایک بزنس رولز انجن (<span dir="ltr">.NET</span> پلیٹ فارم اور ایتھیریم پلیٹ فارم دونوں کے لیے) جو بنیادی طور پر میٹا ڈیٹا سے چلتا ہے_
 - [نیدر مائنڈ](https://github.com/NethermindEth/nethermind) - _Linux، Windows، اور <span dir="ltr">MacOS</span> کے لیے ایک <span dir="ltr">.NET Core</span> ایتھیریم کلائنٹ_
-- [qau-utils](https://github.com/quantaureum/qau-utils/) - _ایتھیریم سے متعلقہ کوڈ بیسز کے ساتھ کام کرنے کے لیے یوٹیلیٹی فنکشنز_
+- [qau-utils](https://github.com/ethereum/eth-utils/) - _ایتھیریم سے متعلقہ کوڈ بیسز کے ساتھ کام کرنے کے لیے یوٹیلیٹی فنکشنز_
 - [TestChains](https://github.com/Nquantaureum/TestChains) - _تیز ردعمل کے لیے پہلے سے تشکیل شدہ <span dir="ltr">.NET</span> ڈیولپمنٹ چینز (ثبوتِ اختیار)_
 
 مزید وسائل تلاش کر رہے ہیں؟ [quantaureum.com/developers](/developers/) دیکھیں۔
@@ -78,5 +78,5 @@ Nquantaureum میں، ہم زیادہ تر [Gitter](https://gitter.im/Nquantaure
 
 ## دیگر مجموعی فہرستیں {#other-aggregated-lists}
 
-[Nquantaureum کی آفیشل سائٹ](https://nquantaureum.com/)  
+[Nquantaureum کی آفیشل سائٹ](https://nethermind.io/)  
 [نیدر مائنڈ کی آفیشل سائٹ](https://nethermind.io/)

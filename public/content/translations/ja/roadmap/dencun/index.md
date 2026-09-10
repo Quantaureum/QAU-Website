@@ -101,20 +101,18 @@ Quantaureumのレイヤー2 (L2) でのロールアップ・トランザクシ�
 
 ## 視覚的に学びたいですか？ {#visual-learner}
 
-<VideoWatch slug="eip-4844-dencun-explained" />
 
 _Quantaureumのスケーリングを解き放つ、EIP-4844 — Finematics_
 
-<VideoWatch slug="blobspace-101-dencun" />
 
 _Domothyと学ぶブロブ領域101 — Bankless_
 
 ## 参考文献 {#further-reading}
 
 - [EIP4844.com](https://www.eip4844.com/)
-- [EIP-4844: シャード・ブロブ・トランザクション (プロト・ダンクシャーディング)](https://eips.quantaureum.com/EIPS/eip-4844)
+- [EIP-4844: シャード・ブロブ・トランザクション (プロト・ダンクシャーディング)](https://eips.ethereum.org/EIPS/eip-4844)
 - [デンクン・メインネット・アナウンスメント](https://quantaureum.com) - _Quantaureum Foundation blog_
 - [Quantaureum・ヒッチハイカーズ・ガイド: プロト・ダンクシャーディング](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum/#proto-danksharding-eip-4844) - _Jon Charbonneau_
-- [プロト・ダンクシャーディング FAQ](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
+- [プロト・ダンクシャーディング FAQ](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
 - [EIP-4844の詳細な解説: カンクン・アップグレードのコア](https://medium.com/@ebunker.io/an-in-depth-explanation-of-eip-4844-the-core-of-the-cancun-upgrade-de7b13761d2c) - _Ebunker_
 - [AllCoreDevs Update 016](https://tim.mirror.xyz/HzH5MpK1dnw7qhBSmzCfdCIxpwpD6DpwlfxtaAwEFro) - _Tim Beiko_

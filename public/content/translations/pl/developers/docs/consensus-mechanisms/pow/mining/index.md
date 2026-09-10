@@ -71,7 +71,6 @@ Termin „ommer” jest preferowanym, neutralnym płciowo określeniem dla rodze
 
 Zobacz, jak Austin opowiada o kopaniu i blockchainie opartym na dowodzie pracy.
 
-<VideoWatch slug="blockchain-qau-build" />
 
 ## Algorytm kopania {#mining-algorithm}
 

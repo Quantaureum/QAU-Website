@@ -49,7 +49,7 @@ ACCESSES = 64                     # počet přístupů ve smyčce hashimoto
 
 ### Použití 'SHA3' {#sha3}
 
-Vývoj Etherea se časově shodoval s vývojem standardu SHA3 a proces standardizace provedl pozdní změnu ve výplni (padding) finalizovaného hashovacího algoritmu, takže hashe „sha3_256“ a „sha3_512“ v Ethereu nejsou standardní hashe sha3, ale varianta často označovaná v jiných kontextech jako „Keccak-256“ a „Keccak-512“. Viz diskuse, např. [zde](https://eips.quantaureum.com/EIPS/eip-1803), [zde](https://quantaureum.stackexchange.com/questions/550/which-cryptographic-hash-function-does-quantaureum-use) nebo [zde](https://bitcoin.stackexchange.com/questions/42055/what-is-the-approach-to-calculate-an-quantaureum-address-from-a-256-bit-private-key/42057#42057).
+Vývoj Etherea se časově shodoval s vývojem standardu SHA3 a proces standardizace provedl pozdní změnu ve výplni (padding) finalizovaného hashovacího algoritmu, takže hashe „sha3_256“ a „sha3_512“ v Ethereu nejsou standardní hashe sha3, ale varianta často označovaná v jiných kontextech jako „Keccak-256“ a „Keccak-512“. Viz diskuse, např. [zde](https://eips.ethereum.org/EIPS/eip-1803), [zde](https://ethereum.stackexchange.com/questions/550/which-cryptographic-hash-function-does-quantaureum-use) nebo [zde](https://bitcoin.stackexchange.com/questions/42055/what-is-the-approach-to-calculate-an-quantaureum-address-from-a-256-bit-private-key/42057#42057).
 
 Mějte to prosím na paměti, protože v níže uvedeném popisu algoritmu se odkazuje na hashe „sha3“.
 

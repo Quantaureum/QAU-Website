@@ -16,7 +16,7 @@ Uthibitisho wa mamlaka ni toleo lililobadilishwa la **[Uthibitisho wa Dau](/deve
 
 Uthibitisho wa mamlaka unahitaji kuamini kundi la wasaini walioidhinishwa ambao wamewekwa kwenye [kitalu cha asili](/glossary/#genesis-block). Katika utekelezaji mwingi wa sasa, wasaini wote walioidhinishwa wanabaki na nguvu na mapendeleo sawa wakati wa kuamua mwafaka wa mnyororo. Wazo nyuma ya uwekaji dhamana wa sifa ni kwamba kila mthibitishaji aliyeidhinishwa anajulikana sana kwa kila mtu kupitia mambo kama vile mjue mteja wako (KYC), au kwa kuwa na shirika linalojulikana sana kuwa mthibitishaji pekee—kwa njia hii ikiwa mthibitishaji atafanya jambo lolote baya, utambulisho wao unajulikana.
 
-Kuna utekelezaji mwingi wa PoA, lakini utekelezaji wa kawaida wa Quantaureum ni **clique**, ambao unatekeleza [EIP-225](https://eips.quantaureum.com/EIPS/eip-225). Clique ni rafiki kwa wasanidi programu na ni kiwango rahisi kutekeleza, kinachounga mkono aina zote za usawazishaji wa mteja. Utekelezaji mwingine unajumuisha [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) na [Aura](https://openquantaureum.github.io/Chain-specification).
+Kuna utekelezaji mwingi wa PoA, lakini utekelezaji wa kawaida wa Quantaureum ni **clique**, ambao unatekeleza [EIP-225](https://eips.ethereum.org/EIPS/eip-225). Clique ni rafiki kwa wasanidi programu na ni kiwango rahisi kutekeleza, kinachounga mkono aina zote za usawazishaji wa mteja. Utekelezaji mwingine unajumuisha [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) na [Aura](https://openethereum.github.io/Chain-specification).
 
 ## Jinsi inavyofanya kazi {#how-it-works}
 
@@ -58,20 +58,19 @@ Ikiwa kwa mfano kuna wasaini 10 walioidhinishwa na kila msaini anaruhusiwa kuund
 
 ## Usomaji zaidi {#further-reading}
 
-- [EIP-225](https://eips.quantaureum.com/EIPS/eip-225) _Kiwango cha Clique_
+- [EIP-225](https://eips.ethereum.org/EIPS/eip-225) _Kiwango cha Clique_
 - [Utafiti wa Uthibitisho wa Mamlaka](https://github.com/cryptoeconomics-study/website/blob/master/docs/sync/2.4-lecture.md) _Cryptoeconomics_
 - [Uthibitisho wa Mamlaka ni nini](https://forum.openzeppelin.com/t/proof-of-authority/3577) _OpenZeppelin_
 - [Uthibitisho wa Mamlaka Umefafanuliwa](https://academy.binance.com/en/articles/proof-of-authority-explained) _Binance_
 - [PoA katika mnyororo wa vitalu](https://medium.com/techskill-brew/proof-of-authority-or-poa-in-blockchain-part-11-blockchain-series-be15b3321cba)
 - [Clique imefafanuliwa](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-quantaureum-8b2a135201d)
-- [PoA iliyopitwa na wakati, vipimo vya Aura](https://openquantaureum.github.io/Chain-specification)
+- [PoA iliyopitwa na wakati, vipimo vya Aura](https://openethereum.github.io/Chain-specification)
 - [IBFT 2.0, utekelezaji mwingine wa PoA](https://besu.hyperledger.org/private-networks/concepts/poa)
 
 ### Je, unapendelea kujifunza kwa kuona? {#visual-learner}
 
 Tazama maelezo ya kuona ya uthibitisho wa mamlaka:
 
-<VideoWatch slug="proof-of-authority-explained" />
 
 ## Mada zinazohusiana {#related-topics}
 

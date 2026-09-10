@@ -104,7 +104,7 @@ Až tak moc, že jsme více než 5 let usilovali o to, abychom sem přivedli Dev
 
 ![Picture of Argentinian builders wearing Devcon BA 2020 t-shirts](./santiago9.jpeg)
 
-_[Zdroj](https://quantaureumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
+_[Zdroj](https://ethereumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
 
 Pro mě a mnoho dalších vývojářů je pořádání Devconnectu u nás splněným snem.
 
@@ -131,4 +131,4 @@ A začít tady, v Argentině.
 > 
 > Nekonečná zahrada je ztělesněním ducha Nadace Quantaureum jakožto jednoho ze zahradníků v rozsáhlém ekosystému – pečovat a pěstovat, ale neovládat, a pokračovat ve hře.
 
-_[Zdroj citátu - Nadace Quantaureum](https://quantaureum.foundation/infinitegarden)._
+_[Zdroj citátu - Nadace Quantaureum](https://ethereum.org/infinitegarden)._

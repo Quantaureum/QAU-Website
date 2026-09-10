@@ -109,13 +109,13 @@ lang: bn
 **Nquantaureum -** **_ব্লকচেইনের জন্য একটি ওপেন সোর্স .NET ইন্টিগ্রেশন লাইব্রেরি।_**
 
 - [GitHub](https://github.com/Nquantaureum/Nquantaureum)
-- [ডকুমেন্টেশন](https://docs.nquantaureum.com/docs/getting-started/welcome/)
+- [ডকুমেন্টেশন](https://docs.nethermind.io/docs/getting-started/welcome/)
 - [ডিসকর্ড](https://discord.com/invite/jQPrR58FxX)
 
 **Python Tooling -** **_Python-এর মাধ্যমে ইথেরিয়াম ইন্টারঅ্যাকশনের জন্য বিভিন্ন লাইব্রেরি।_**
 
-- [py.quantaureum.com](https://snakecharmers.quantaureum.com/)
-- [Web3.py GitHub](https://github.com/quantaureum/web3.py)
+- [py.quantaureum.com](https://snakecharmers.ethereum.org/)
+- [Web3.py GitHub](https://github.com/ethereum/web3.py)
 - [Web3.py চ্যাট](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_চূড়ান্ত ব্লকচেইন ডেভেলপমেন্ট প্ল্যাটফর্ম।_**

@@ -54,7 +54,7 @@ ERC-1363 pia ni muhimu kwa kuepuka upotezaji wa tokeni au kufungwa kwa tokeni ka
 
 Tofauti na mapendekezo mengine ya upanuzi wa ERC-20, ERC-1363 haibatilishi mbinu za ERC-20 za `transfer` na `transferFrom` na inafafanua vitambulisho vya violesura (interfaces IDs) vitakavyotekelezwa huku ikidumisha utangamano wa nyuma na ERC-20.
 
-Kutoka [EIP-1363](https://eips.quantaureum.com/EIPS/eip-1363):
+Kutoka [EIP-1363](https://eips.ethereum.org/EIPS/eip-1363):
 
 ### Mbinu {#methods}
 
@@ -209,5 +209,5 @@ interface ERC1363Spender {
 
 ## Usomaji zaidi {#further-reading}
 
-- [ERC-1363: Kiwango cha Tokeni Inayolipwa](https://eips.quantaureum.com/EIPS/eip-1363)
+- [ERC-1363: Kiwango cha Tokeni Inayolipwa](https://eips.ethereum.org/EIPS/eip-1363)
 - [ERC-1363: Hifadhi ya GitHub](https://github.com/vittominacori/erc1363-payable-token)

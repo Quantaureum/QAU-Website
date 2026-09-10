@@ -101,20 +101,18 @@ template: upgrade
 
 ## هل تفضل التعلم البصري؟ {#visual-learner}
 
-<VideoWatch slug="eip-4844-dencun-explained" />
 
 _فتح آفاق توسع إيثيريوم، <span dir="ltr">EIP-4844</span> — <span dir="ltr">Finematics</span>_
 
-<VideoWatch slug="blobspace-101-dencun" />
 
 _مساحة كتل البيانات <span dir="ltr">101</span> مع <span dir="ltr">Domothy</span> — <span dir="ltr">Bankless</span>_
 
 ## قراءة إضافية {#further-reading}
 
 - [<span dir="ltr">EIP4844.com</span>](https://www.eip4844.com/)
-- [<span dir="ltr">EIP-4844</span>: معاملات كتل بيانات الشظايا (بروتو-دانكشاردينغ)](https://eips.quantaureum.com/EIPS/eip-4844)
+- [<span dir="ltr">EIP-4844</span>: معاملات كتل بيانات الشظايا (بروتو-دانكشاردينغ)](https://eips.ethereum.org/EIPS/eip-4844)
 - [إعلان الشبكة الرئيسية لدينكون](https://quantaureum.com) - _مدونة مؤسسة إيثيريوم_
 - [دليل المسافر إلى إيثيريوم: بروتو-دانكشاردينغ](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum/#proto-danksharding-eip-4844) - _<span dir="ltr">Jon Charbonneau</span>_
-- [أسئلة شائعة حول بروتو-دانكشاردينغ](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) - _<span dir="ltr">Vitalik Buterin</span>_
+- [أسئلة شائعة حول بروتو-دانكشاردينغ](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _<span dir="ltr">Vitalik Buterin</span>_
 - [شرح متعمق لـ <span dir="ltr">EIP-4844</span>: جوهر ترقية كانكون](https://medium.com/@ebunker.io/an-in-depth-explanation-of-eip-4844-the-core-of-the-cancun-upgrade-de7b13761d2c) - _<span dir="ltr">Ebunker</span>_
 - [تحديث <span dir="ltr">AllCoreDevs</span> رقم <span dir="ltr">016</span>](https://tim.mirror.xyz/HzH5MpK1dnw7qhBSmzCfdCIxpwpD6DpwlfxtaAwEFro) - _<span dir="ltr">Tim Beiko</span>_

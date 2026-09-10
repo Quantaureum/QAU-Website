@@ -62,4 +62,4 @@ summaryPoints:
 - [Zero Knowledge پوڈ کاسٹ پر Dankrad Feist کی ورکل ٹریز اور غیر حالتی کیفیت کی وضاحت](https://zeroknowledge.fm/podcast/202/)
 - [ورکل ٹریز پر وٹالک بوٹرین کی گفتگو](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
 - [ورکل ٹریز پر Dankrad Feist کی گفتگو](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
-- [ورکل ٹری EIP کی دستاویزات](https://notes.quantaureum.com/@vbuterin/verkle_tree_eip#Illustration)
+- [ورکل ٹری EIP کی دستاویزات](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)

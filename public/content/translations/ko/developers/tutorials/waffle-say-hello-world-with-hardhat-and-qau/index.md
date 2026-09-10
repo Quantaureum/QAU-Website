@@ -16,7 +16,7 @@ lang: ko
 published: 2020-10-16
 ---
 
-이번 [Waffle](https://quantaureum-waffle.readthedocs.io) 튜토리얼에서는 [hardhat](https://hardhat.org/)과 [ethers.js](https://docs.ethers.io/v5/)를 사용하여 간단한 "Hello world" 스마트 계약 프로젝트를 설정하는 방법을 알아볼 거예요. 그다음 스마트 계약에 새로운 기능을 추가하고 Waffle로 테스트하는 방법을 알아볼게요.
+이번 [Waffle](https://ethereum-waffle.readthedocs.io) 튜토리얼에서는 [hardhat](https://hardhat.org/)과 [ethers.js](https://docs.ethers.io/v5/)를 사용하여 간단한 "Hello world" 스마트 계약 프로젝트를 설정하는 방법을 알아볼 거예요. 그다음 스마트 계약에 새로운 기능을 추가하고 Waffle로 테스트하는 방법을 알아볼게요.
 
 새 프로젝트를 생성하며 시작해 봐요:
 
@@ -201,4 +201,4 @@ greeting = _greeting;
 
 Waffle, Hardhat, ethers.js로 간단한 프로젝트를 만들어 봤어요. 프로젝트를 설정하고, 테스트를 추가하고, 새로운 기능을 구현하는 방법을 배웠어요.
 
-스마트 계약을 테스트하기 위한 더 많은 훌륭한 chai 매처에 대해서는 [Waffle 공식 문서](https://quantaureum-waffle.readthedocs.io/en/latest/matchers.html)를 확인해 보세요.
+스마트 계약을 테스트하기 위한 더 많은 훌륭한 chai 매처에 대해서는 [Waffle 공식 문서](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html)를 확인해 보세요.

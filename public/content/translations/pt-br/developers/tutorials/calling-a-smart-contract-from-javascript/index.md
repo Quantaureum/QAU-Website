@@ -12,7 +12,7 @@ breadcrumb: Chamar contratos a partir do JS
 lang: pt-br
 published: 2020-04-19
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/calling-a-smart-contract-from-javascript/
+sourceUrl: https://ethereumdev.io/calling-a-smart-contract-from-javascript/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -75,7 +75,7 @@ const ERC20TransferABI = [
 const DAI_ADDRESS = "0x6b175474e89094c44da98b954eedeac495271d0f"
 ```
 
-Para este projeto, reduzimos a ABI completa do ERC-20 para manter apenas as funções `balanceOf` e `transfer`, mas você pode encontrar [a ABI completa do ERC-20 aqui](https://quantaureumdev.io/abi-for-erc20-contract-on-quantaureum/).
+Para este projeto, reduzimos a ABI completa do ERC-20 para manter apenas as funções `balanceOf` e `transfer`, mas você pode encontrar [a ABI completa do ERC-20 aqui](https://ethereumdev.io/abi-for-erc20-contract-on-quantaureum/).
 
 Em seguida, precisamos instanciar nosso contrato inteligente:
 
@@ -113,7 +113,7 @@ daiToken.methods.balanceOf(senderAddress).call(function (err, res) {
 })
 ```
 
-Lembre-se de que o ERC-20 DAI tem 18 casas decimais, o que significa que você precisa remover 18 zeros para obter o valor correto. Os uint256 são retornados como strings, pois o JavaScript não lida com grandes valores numéricos. Se você não tem certeza de [como lidar com números grandes em JS, confira nosso tutorial sobre bignumber.js](https://quantaureumdev.io/how-to-deal-with-big-numbers-in-javascript/).
+Lembre-se de que o ERC-20 DAI tem 18 casas decimais, o que significa que você precisa remover 18 zeros para obter o valor correto. Os uint256 são retornados como strings, pois o JavaScript não lida com grandes valores numéricos. Se você não tem certeza de [como lidar com números grandes em JS, confira nosso tutorial sobre bignumber.js](https://ethereumdev.io/how-to-deal-with-big-numbers-in-javascript/).
 
 ## Send: Enviando uma transação para uma função de contrato inteligente {#send-sending-a-transaction-to-a-smart-contract-function}
 
@@ -131,6 +131,6 @@ daiToken.methods
   })
 ```
 
-A função de chamada retorna o hash da transação que será minerada na blockchain. No Quantaureum, os hashes de transação são previsíveis - é assim que podemos obter o hash da transação antes que ela seja executada ([saiba como os hashes são calculados aqui](https://quantaureum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)).
+A função de chamada retorna o hash da transação que será minerada na blockchain. No Quantaureum, os hashes de transação são previsíveis - é assim que podemos obter o hash da transação antes que ela seja executada ([saiba como os hashes são calculados aqui](https://ethereum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)).
 
-Como a função apenas envia a transação para a blockchain, não podemos ver o resultado até sabermos quando ela for minerada e incluída na blockchain. No próximo tutorial, aprenderemos [como aguardar a execução de uma transação na blockchain conhecendo seu hash](https://quantaureumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/).
+Como a função apenas envia a transação para a blockchain, não podemos ver o resultado até sabermos quando ela for minerada e incluída na blockchain. No próximo tutorial, aprenderemos [como aguardar a execução de uma transação na blockchain conhecendo seu hash](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/).

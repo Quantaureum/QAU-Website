@@ -23,7 +23,7 @@ published: 2021-03-09
 
 Якщо ви досвідчений програміст, ви, ймовірно, пам'ятаєте подібні конструкції в [Java](https://www.w3schools.com/java/java_interface.asp) або навіть у [заголовних файлах C](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html).
 
-Це визначення [інтерфейсу ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) від ОупенЗеппелін. Це переклад [зрозумілого для людини стандарту](https://eips.quantaureum.com/EIPS/eip-20) у код Solidity. Звісно, сам інтерфейс не визначає, _як_ щось робити. Це пояснюється у вихідному коді контракту нижче.
+Це визначення [інтерфейсу ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) від ОупенЗеппелін. Це переклад [зрозумілого для людини стандарту](https://eips.ethereum.org/EIPS/eip-20) у код Solidity. Звісно, сам інтерфейс не визначає, _як_ щось робити. Це пояснюється у вихідному коді контракту нижче.
 
 &nbsp;
 
@@ -136,7 +136,7 @@ interface IERC20 {
      * впорядкування транзакцій. Одне з можливих рішень для пом'якшення цього стану
      * гонитви — спочатку зменшити дозвіл для spender до 0, а потім встановити
      * бажане значення:
-     * https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729
+     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
      *
      * Генерує подію {Approval}.
      */
@@ -207,7 +207,7 @@ import "../../math/SafeMath.sol";
 ```
 
 - `GSN/Context.sol` — це визначення, необхідні для використання [OpenGSN](https://opengsn.org/), системи, яка дозволяє користувачам без етеру використовувати блокчейн. Зверніть увагу, що це стара версія, якщо ви хочете інтегруватися з OpenGSN, [скористайтеся цим посібником](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [Бібліотека SafeMath](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/), яка запобігає арифметичним переповненням/втратам значущості для версій Solidity **&lt;0.8.0**. У Solidity ≥0.8.0 арифметичні операції автоматично скасовуються при переповненні/втраті значущості, що робить SafeMath непотрібною. Цей контракт використовує SafeMath для зворотної сумісності зі старішими версіями компілятора.
+- [Бібліотека SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), яка запобігає арифметичним переповненням/втратам значущості для версій Solidity **&lt;0.8.0**. У Solidity ≥0.8.0 арифметичні операції автоматично скасовуються при переповненні/втраті значущості, що робить SafeMath непотрібною. Цей контракт використовує SafeMath для зворотної сумісності зі старішими версіями компілятора.
 
 &nbsp;
 

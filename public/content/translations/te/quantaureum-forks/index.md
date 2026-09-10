@@ -10,7 +10,7 @@ authors: ["నిక్సో"]
 
 <ExpandableCard title="ఫోర్క్‌లు అంటే ఏమిటి?" contentPreview="ఎథీరియం ప్రోటోకాల్ నియమాలకు మార్పులు, వీటిలో తరచుగా ప్రణాళికాబద్ధమైన సాంకేతిక నవీకరణలు ఉంటాయి.">
 
-నెట్‌వర్క్‌కు ప్రధాన సాంకేతిక నవీకరణలు లేదా మార్పులు చేయవలసి వచ్చినప్పుడు ఫోర్క్‌లు జరుగుతాయి – ఇవి సాధారణంగా [ఎథీరియం మెరుగుదల ప్రతిపాదనల (EIPs)](/eips/) నుండి ఉద్భవిస్తాయి మరియు ప్రోటోకాల్ యొక్క "నియమాలను" మారుస్తాయి.
+నెట్‌వర్క్‌కు ప్రధాన సాంకేతిక నవీకరణలు లేదా మార్పులు చేయవలసి వచ్చినప్పుడు ఫోర్క్‌లు జరుగుతాయి – ఇవి సాధారణంగా ఎథీరియం మెరుగుదల ప్రతిపాదనల (EIPs) నుండి ఉద్భవిస్తాయి మరియు ప్రోటోకాల్ యొక్క "నియమాలను" మారుస్తాయి.
 
 సాంప్రదాయ, కేంద్రీకృత-నియంత్రిత సాఫ్ట్‌వేర్‌లో నవీకరణలు అవసరమైనప్పుడు, కంపెనీ తుది-వినియోగదారు కోసం కొత్త వెర్షన్‌ను ప్రచురిస్తుంది. బ్లాక్‌చైన్‌లు భిన్నంగా పనిచేస్తాయి ఎందుకంటే ఇక్కడ కేంద్ర యాజమాన్యం ఉండదు. కొత్త ఫోర్క్ నియమాలను అమలు చేయడానికి [ఎథీరియం క్లయింట్లు](/developers/docs/nodes-and-clients/) తమ సాఫ్ట్‌వేర్‌ను తప్పనిసరిగా నవీకరించాలి. అదనంగా బ్లాక్ సృష్టికర్తలు (ప్రూఫ్-ఆఫ్-వర్క్ ప్రపంచంలో మైనర్లు, ప్రూఫ్-ఆఫ్-స్టేక్ ప్రపంచంలో ధృవీకర్తలు) మరియు నోడ్‌లు కొత్త నియమాలకు అనుగుణంగా బ్లాక్‌లను సృష్టించాలి మరియు ధృవీకరించాలి. [ఏకాభిప్రాయ యంత్రాంగాల గురించి మరింత](/developers/docs/consensus-mechanisms/)
 
@@ -101,33 +101,33 @@ authors: ["నిక్సో"]
 మెరుగైన వినియోగదారు అనుభవం:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7702">EIP-7702</a> - <em>EOA ఖాతా కోడ్‌ను సెట్ చేయడం</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7691">EIP-7691</a> - <em>బ్లాబ్ లావాదేవీల సామర్థ్యం పెంపు</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7623">EIP-7623</a> - <em>కాల్ డేటా ఖర్చును పెంచడం</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7840">EIP-7840</a> - <em>EL కాన్ఫిగరేషన్ ఫైల్‌లకు బ్లాబ్ షెడ్యూల్‌ను జోడించడం</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7702">EIP-7702</a> - <em>EOA ఖాతా కోడ్‌ను సెట్ చేయడం</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7691">EIP-7691</a> - <em>బ్లాబ్ లావాదేవీల సామర్థ్యం పెంపు</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7623">EIP-7623</a> - <em>కాల్ డేటా ఖర్చును పెంచడం</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7840">EIP-7840</a> - <em>EL కాన్ఫిగరేషన్ ఫైల్‌లకు బ్లాబ్ షెడ్యూల్‌ను జోడించడం</em></li>
 </ul>
 
 మెరుగైన స్టేకింగ్ అనుభవం:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7251">EIP-7251</a> - <em><code>MAX_EFFECTIVE_BALANCE</code>ను పెంచడం</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7002">EIP-7002</a> - <em>అమలు పొర ప్రేరేపించగల నిష్క్రమణలు</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7685">EIP-7685</a> - <em>సాధారణ ప్రయోజన అమలు పొర అభ్యర్థనలు</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6110">EIP-6110</a> - <em>ఆన్‌చైన్‌లో ధృవీకర్త డిపాజిట్లను సరఫరా చేయడం</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7251">EIP-7251</a> - <em><code>MAX_EFFECTIVE_BALANCE</code>ను పెంచడం</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7002">EIP-7002</a> - <em>అమలు పొర ప్రేరేపించగల నిష్క్రమణలు</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7685">EIP-7685</a> - <em>సాధారణ ప్రయోజన అమలు పొర అభ్యర్థనలు</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6110">EIP-6110</a> - <em>ఆన్‌చైన్‌లో ధృవీకర్త డిపాజిట్లను సరఫరా చేయడం</em></li>
 </ul>
 
 ప్రోటోకాల్ సామర్థ్యం మరియు భద్రతా మెరుగుదలలు:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2537">EIP-2537</a> - <em>BLS12-381 వక్రరేఖ కార్యకలాపాల కోసం ప్రీకంపైల్</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2935">EIP-2935</a> - <em>చారిత్రక బ్లాక్ హాష్‌లను స్థితిలో సేవ్ చేయడం</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7549">EIP-7549</a> - <em>కమిటీ సూచికను ధృవీకరణ వెలుపలికి తరలించడం</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2537">EIP-2537</a> - <em>BLS12-381 వక్రరేఖ కార్యకలాపాల కోసం ప్రీకంపైల్</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2935">EIP-2935</a> - <em>చారిత్రక బ్లాక్ హాష్‌లను స్థితిలో సేవ్ చేయడం</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7549">EIP-7549</a> - <em>కమిటీ సూచికను ధృవీకరణ వెలుపలికి తరలించడం</em></li>
 </ul>
 
 </ExpandableCard>
 
 - [పెక్ట్రా స్టేకింగ్ అనుభవాన్ని ఎలా మెరుగుపరుస్తుంది](https://www.kiln.fi/post/next-quantaureum-upgrade-how-pectra-will-enhance-the-staking-experience)
-- [ఎలెక్ట్రా నవీకరణ స్పెసిఫికేషన్‌లను చదవండి](https://github.com/quantaureum/consensus-specs/tree/master/specs/electra/)
+- [ఎలెక్ట్రా నవీకరణ స్పెసిఫికేషన్‌లను చదవండి](https://github.com/ethereum/consensus-specs/tree/master/specs/electra/)
 - [ప్రేగ్-ఎలెక్ట్రా ("పెక్ట్రా") తరచుగా అడిగే ప్రశ్నలు](/roadmap/pectra/)
 
 <Divider />
@@ -147,12 +147,12 @@ authors: ["నిక్సో"]
 <ExpandableCard title="కాన్‌కున్ EIPలు" contentPreview="ఈ నవీకరణలో చేర్చబడిన అధికారిక మెరుగుదలలు.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1153">EIP-1153</a> - <em>తాత్కాలిక నిల్వ ఆప్‌కోడ్‌లు</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4788">EIP-4788</a> - <em>EVMలో బీకాన్ బ్లాక్ రూట్</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4844">EIP-4844</a> - <em>షార్డ్ బ్లాబ్ లావాదేవీలు (ప్రోటో-డాంక్‌షార్డింగ్)</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-5656">EIP-5656</a> - <em><code>MCOPY</code> - మెమరీ కాపీయింగ్ సూచన</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6780">EIP-6780</a> - <em>ఒకే లావాదేవీలో మాత్రమే <code>SELFDESTRUCT</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7516">EIP-7516</a> - <em><code>BLOBBASEFEE</code> ఆప్‌కోడ్</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1153">EIP-1153</a> - <em>తాత్కాలిక నిల్వ ఆప్‌కోడ్‌లు</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4788">EIP-4788</a> - <em>EVMలో బీకాన్ బ్లాక్ రూట్</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4844">EIP-4844</a> - <em>షార్డ్ బ్లాబ్ లావాదేవీలు (ప్రోటో-డాంక్‌షార్డింగ్)</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-5656">EIP-5656</a> - <em><code>MCOPY</code> - మెమరీ కాపీయింగ్ సూచన</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6780">EIP-6780</a> - <em>ఒకే లావాదేవీలో మాత్రమే <code>SELFDESTRUCT</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7516">EIP-7516</a> - <em><code>BLOBBASEFEE</code> ఆప్‌కోడ్</em></li>
 </ul>
 
 </ExpandableCard>
@@ -160,7 +160,7 @@ authors: ["నిక్సో"]
 - [లేయర్ 2 రోల్అప్‌లు](/layer-2/)
 - [ప్రోటో-డాంక్‌షార్డింగ్](/roadmap/scaling/#proto-danksharding)
 - [డాంక్‌షార్డింగ్](/roadmap/danksharding/)
-- [కాన్‌కున్ నవీకరణ స్పెసిఫికేషన్‌ను చదవండి](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md)
+- [కాన్‌కున్ నవీకరణ స్పెసిఫికేషన్‌ను చదవండి](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md)
 
 #### డెనెబ్ సారాంశం {#deneb-summary}
 
@@ -173,16 +173,16 @@ EIP-7514 నెట్‌వర్క్‌లో ధృవీకర్తలు 
 <ExpandableCard title="డెనెబ్ EIPలు" contentPreview="ఈ నవీకరణలో చేర్చబడిన అధికారిక మెరుగుదలలు">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4788">EIP-4788</a> - <em>EVMలో బీకాన్ బ్లాక్ రూట్</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4844">EIP-4844</a> - <em>షార్డ్ బ్లాబ్ లావాదేవీలు</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7044">EIP-7044</a> - <em>శాశ్వతంగా చెల్లుబాటు అయ్యే సంతకం చేసిన స్వచ్ఛంద నిష్క్రమణలు</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7045">EIP-7045</a> - <em>గరిష్ట ధృవీకరణ చేరిక స్లాట్‌ను పెంచడం</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7514">EIP-7514</a> - <em>గరిష్ట ఎపోక్ చర్న్ పరిమితిని జోడించడం</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4788">EIP-4788</a> - <em>EVMలో బీకాన్ బ్లాక్ రూట్</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4844">EIP-4844</a> - <em>షార్డ్ బ్లాబ్ లావాదేవీలు</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7044">EIP-7044</a> - <em>శాశ్వతంగా చెల్లుబాటు అయ్యే సంతకం చేసిన స్వచ్ఛంద నిష్క్రమణలు</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7045">EIP-7045</a> - <em>గరిష్ట ధృవీకరణ చేరిక స్లాట్‌ను పెంచడం</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7514">EIP-7514</a> - <em>గరిష్ట ఎపోక్ చర్న్ పరిమితిని జోడించడం</em></li>
 </ul>
 
 </ExpandableCard>
 
-- [డెనెబ్ నవీకరణ స్పెసిఫికేషన్‌లను చదవండి](https://github.com/quantaureum/consensus-specs/tree/master/specs/deneb/)
+- [డెనెబ్ నవీకరణ స్పెసిఫికేషన్‌లను చదవండి](https://github.com/ethereum/consensus-specs/tree/master/specs/deneb/)
 - [కాన్‌కున్-డెనెబ్ ("Dencun") తరచుగా అడిగే ప్రశ్నలు](/roadmap/dencun/)
 
 <Divider />
@@ -200,16 +200,16 @@ EIP-7514 నెట్‌వర్క్‌లో ధృవీకర్తలు 
 <ExpandableCard title="షాంఘై EIPలు" contentPreview="ఈ నవీకరణలో చేర్చబడిన అధికారిక మెరుగుదలలు.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3651">EIP-3651</a> – <em><code>COINBASE</code> చిరునామాను వార్మ్ (warm)గా ప్రారంభిస్తుంది</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3855">EIP-3855</a> – <em>కొత్త <code>PUSH0</code> సూచన</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3860">EIP-3860</a> – <em>initcode పరిమితి మరియు మీటర్</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4895">EIP-4895</a> – <em>బీకన్ చైన్ పుష్ ఉపసంహరణలు కార్యకలాపాలుగా</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6049">EIP-6049</a> - <em><code>SELFDESTRUCT</code>ను నిలిపివేయడం</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3651">EIP-3651</a> – <em><code>COINBASE</code> చిరునామాను వార్మ్ (warm)గా ప్రారంభిస్తుంది</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3855">EIP-3855</a> – <em>కొత్త <code>PUSH0</code> సూచన</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3860">EIP-3860</a> – <em>initcode పరిమితి మరియు మీటర్</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4895">EIP-4895</a> – <em>బీకన్ చైన్ పుష్ ఉపసంహరణలు కార్యకలాపాలుగా</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6049">EIP-6049</a> - <em><code>SELFDESTRUCT</code>ను నిలిపివేయడం</em></li>
 </ul>
 
 </ExpandableCard>
 
-- [షాంఘై నవీకరణ స్పెసిఫికేషన్‌ను చదవండి](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md)
+- [షాంఘై నవీకరణ స్పెసిఫికేషన్‌ను చదవండి](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md)
 
 #### కాపెల్లా సారాంశం {#capella-summary}
 
@@ -220,7 +220,7 @@ EIP-7514 నెట్‌వర్క్‌లో ధృవీకర్తలు 
 ఈ నవీకరణ ఆటోమేటిక్ ఖాతా స్వీపింగ్ కార్యాచరణను కూడా అందించింది, ఇది అందుబాటులో ఉన్న ఏవైనా బహుమతుల చెల్లింపులు లేదా పూర్తి ఉపసంహరణల కోసం ధృవీకర్త ఖాతాలను నిరంతరం ప్రాసెస్ చేస్తుంది.
 
 - [స్టేకింగ్ ఉపసంహరణల గురించి మరింత](/staking/withdrawals/).
-- [కాపెల్లా నవీకరణ స్పెసిఫికేషన్‌లను చదవండి](https://github.com/quantaureum/consensus-specs/tree/master/specs/capella/)
+- [కాపెల్లా నవీకరణ స్పెసిఫికేషన్‌లను చదవండి](https://github.com/ethereum/consensus-specs/tree/master/specs/capella/)
 
 <Divider />
 
@@ -232,15 +232,15 @@ EIP-7514 నెట్‌వర్క్‌లో ధృవీకర్తలు 
 
 #### సారాంశం {#paris-summary}
 
-ప్రూఫ్-ఆఫ్-వర్క్ (PoW) బ్లాక్‌చైన్ [టెర్మినల్ మొత్తం క్లిష్టత](/glossary/#terminal-total-difficulty) 58750000000000000000000 ను దాటడం ద్వారా పారిస్ నవీకరణ ప్రేరేపించబడింది. ఇది 15 సెప్టెంబర్ 2022న బ్లాక్ 15537393 వద్ద జరిగింది, తర్వాతి బ్లాక్‌లో పారిస్ నవీకరణను ప్రేరేపించింది. పారిస్ అనేది [ది మెర్జ్](/roadmap/merge/) పరివర్తన - దీని ప్రధాన లక్షణం [ప్రూఫ్-ఆఫ్-వర్క్](/developers/docs/consensus-mechanisms/pow) మైనింగ్ అల్గారిథమ్ మరియు దానికి సంబంధించిన ఏకాభిప్రాయ లాజిక్‌ను ఆపివేసి, దానికి బదులుగా [ప్రూఫ్-ఆఫ్-స్టేక్ (PoS)](/developers/docs/consensus-mechanisms/pos)ని ఆన్ చేయడం. పారిస్ అనేది [అమలు క్లయింట్‌ల](/developers/docs/nodes-and-clients/#execution-clients)కు (ఏకాభిప్రాయ పొరపై బెల్లాట్రిక్స్‌కు సమానం) ఒక నవీకరణ, ఇది వాటికి కనెక్ట్ చేయబడిన [ఏకాభిప్రాయ క్లయింట్‌ల](/developers/docs/nodes-and-clients/#consensus-clients) నుండి సూచనలను తీసుకోవడానికి వీలు కల్పించింది. దీని కోసం అంతర్గత API పద్ధతుల యొక్క కొత్త సెట్‌ను సక్రియం చేయడం అవసరం, వీటిని సమిష్టిగా [ఇంజిన్ API](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md) అని పిలుస్తారు. [హోమ్‌స్టెడ్](#homestead) తర్వాత ఎథీరియం చరిత్రలో ఇది అత్యంత ముఖ్యమైన నవీకరణ అని చెప్పవచ్చు!
+ప్రూఫ్-ఆఫ్-వర్క్ (PoW) బ్లాక్‌చైన్ [టెర్మినల్ మొత్తం క్లిష్టత](/glossary/#terminal-total-difficulty) 58750000000000000000000 ను దాటడం ద్వారా పారిస్ నవీకరణ ప్రేరేపించబడింది. ఇది 15 సెప్టెంబర్ 2022న బ్లాక్ 15537393 వద్ద జరిగింది, తర్వాతి బ్లాక్‌లో పారిస్ నవీకరణను ప్రేరేపించింది. పారిస్ అనేది [ది మెర్జ్](/roadmap/merge/) పరివర్తన - దీని ప్రధాన లక్షణం [ప్రూఫ్-ఆఫ్-వర్క్](/developers/docs/consensus-mechanisms/pow) మైనింగ్ అల్గారిథమ్ మరియు దానికి సంబంధించిన ఏకాభిప్రాయ లాజిక్‌ను ఆపివేసి, దానికి బదులుగా [ప్రూఫ్-ఆఫ్-స్టేక్ (PoS)](/developers/docs/consensus-mechanisms/pos)ని ఆన్ చేయడం. పారిస్ అనేది [అమలు క్లయింట్‌ల](/developers/docs/nodes-and-clients/#execution-clients)కు (ఏకాభిప్రాయ పొరపై బెల్లాట్రిక్స్‌కు సమానం) ఒక నవీకరణ, ఇది వాటికి కనెక్ట్ చేయబడిన [ఏకాభిప్రాయ క్లయింట్‌ల](/developers/docs/nodes-and-clients/#consensus-clients) నుండి సూచనలను తీసుకోవడానికి వీలు కల్పించింది. దీని కోసం అంతర్గత API పద్ధతుల యొక్క కొత్త సెట్‌ను సక్రియం చేయడం అవసరం, వీటిని సమిష్టిగా [ఇంజిన్ API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) అని పిలుస్తారు. [హోమ్‌స్టెడ్](#homestead) తర్వాత ఎథీరియం చరిత్రలో ఇది అత్యంత ముఖ్యమైన నవీకరణ అని చెప్పవచ్చు!
 
-- [పారిస్ నవీకరణ స్పెసిఫికేషన్‌ను చదవండి](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md)
+- [పారిస్ నవీకరణ స్పెసిఫికేషన్‌ను చదవండి](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md)
 
 <ExpandableCard title="పారిస్ EIPలు" contentPreview="ఈ నవీకరణలో చేర్చబడిన అధికారిక మెరుగుదలలు.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3675">EIP-3675</a> – <em>ఏకాభిప్రాయాన్ని ప్రూఫ్-ఆఫ్-స్టేక్‌కు నవీకరించడం</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4399">EIP-4399</a> – <em>DIFFICULTY ఆప్‌కోడ్‌ను PREVRANDAOతో భర్తీ చేయడం</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3675">EIP-3675</a> – <em>ఏకాభిప్రాయాన్ని ప్రూఫ్-ఆఫ్-స్టేక్‌కు నవీకరించడం</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4399">EIP-4399</a> – <em>DIFFICULTY ఆప్‌కోడ్‌ను PREVRANDAOతో భర్తీ చేయడం</em></li>
 </ul>
 
 </ExpandableCard>
@@ -255,7 +255,7 @@ EIP-7514 నెట్‌వర్క్‌లో ధృవీకర్తలు 
 
 బెల్లాట్రిక్స్ నవీకరణ అనేది [బీకన్ చైన్](/roadmap/beacon-chain) కోసం షెడ్యూల్ చేయబడిన రెండవ నవీకరణ, ఇది చైన్‌ను [ది మెర్జ్](/roadmap/merge/) కోసం సిద్ధం చేస్తుంది. ఇది నిష్క్రియాత్మకత మరియు స్లాషింగ్ చేయదగిన నేరాలకు ధృవీకర్త జరిమానాలను వాటి పూర్తి విలువలకు తీసుకువస్తుంది. ది మెర్జ్ కోసం చైన్‌ను సిద్ధం చేయడానికి మరియు చివరి ప్రూఫ్-ఆఫ్-వర్క్ (PoW) బ్లాక్ నుండి మొదటి ప్రూఫ్-ఆఫ్-స్టేక్ (PoS) బ్లాక్‌కు మారడానికి ఫోర్క్ ఎంపిక నియమాలకు నవీకరణను కూడా బెల్లాట్రిక్స్ కలిగి ఉంది. దీనిలో ఏకాభిప్రాయ క్లయింట్‌లకు 58750000000000000000000 యొక్క [టెర్మినల్ మొత్తం క్లిష్టత](/glossary/#terminal-total-difficulty) గురించి తెలియజేయడం కూడా ఉంటుంది.
 
-- [బెల్లాట్రిక్స్ నవీకరణ స్పెసిఫికేషన్‌ను చదవండి](https://github.com/quantaureum/consensus-specs/tree/master/specs/bellatrix)
+- [బెల్లాట్రిక్స్ నవీకరణ స్పెసిఫికేషన్‌ను చదవండి](https://github.com/ethereum/consensus-specs/tree/master/specs/bellatrix)
 
 ---
 
@@ -272,7 +272,7 @@ EIP-7514 నెట్‌వర్క్‌లో ధృవీకర్తలు 
 <ExpandableCard title="గ్రే గ్లేసియర్ EIPలు" contentPreview="ఈ నవీకరణలో చేర్చబడిన అధికారిక మెరుగుదలలు.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-5133">EIP-5133</a> – <em>సెప్టెంబర్ 2022 వరకు కాఠిన్యపు బాంబును ఆలస్యం చేస్తుంది</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-5133">EIP-5133</a> – <em>సెప్టెంబర్ 2022 వరకు కాఠిన్యపు బాంబును ఆలస్యం చేస్తుంది</em></li>
 </ul>
 
 </ExpandableCard>
@@ -295,7 +295,7 @@ EIP-7514 నెట్‌వర్క్‌లో ధృవీకర్తలు 
 <ExpandableCard title="ఆరో గ్లేసియర్ EIPలు" contentPreview="ఈ నవీకరణలో చేర్చబడిన అధికారిక మెరుగుదలలు.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4345">EIP-4345</a> – <em>జూన్ 2022 వరకు కాఠిన్యపు బాంబును ఆలస్యం చేస్తుంది</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4345">EIP-4345</a> – <em>జూన్ 2022 వరకు కాఠిన్యపు బాంబును ఆలస్యం చేస్తుంది</em></li>
 </ul>
 
 </ExpandableCard>
@@ -310,7 +310,7 @@ EIP-7514 నెట్‌వర్క్‌లో ధృవీకర్తలు 
 
 ఆల్టెయిర్ నవీకరణ అనేది [బీకన్ చైన్](/roadmap/beacon-chain) కోసం షెడ్యూల్ చేయబడిన మొదటి నవీకరణ. ఇది "సింక్ కమిటీలకు" మద్దతును జోడించింది—లైట్ క్లయింట్‌లను ప్రారంభించడం, మరియు ది మెర్జ్ వైపు అభివృద్ధి పురోగమిస్తున్న కొద్దీ ధృవీకర్త నిష్క్రియాత్మకత మరియు స్లాషింగ్ జరిమానాలను పెంచింది.
 
-- [ఆల్టెయిర్ నవీకరణ స్పెసిఫికేషన్‌ను చదవండి](https://github.com/quantaureum/consensus-specs/tree/master/specs/altair)
+- [ఆల్టెయిర్ నవీకరణ స్పెసిఫికేషన్‌ను చదవండి](https://github.com/ethereum/consensus-specs/tree/master/specs/altair)
 
 #### <Emoji text=":tada:" size={1} className="me-2" /> ఆసక్తికరమైన విషయం! {#altair-fun-fact}
 
@@ -326,7 +326,7 @@ EIP-7514 నెట్‌వర్క్‌లో ధృవీకర్తలు 
 
 #### సారాంశం {#london-summary}
 
-లండన్ నవీకరణ [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559)ను ప్రవేశపెట్టింది, ఇది లావాదేవీ రుసుము మార్కెట్‌ను సంస్కరించింది, అలాగే గ్యాస్ వాపసులను ఎలా నిర్వహించాలి మరియు [ఐస్ ఏజ్](/glossary/#ice-age) షెడ్యూల్‌లో మార్పులను తీసుకువచ్చింది.
+లండన్ నవీకరణ [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559)ను ప్రవేశపెట్టింది, ఇది లావాదేవీ రుసుము మార్కెట్‌ను సంస్కరించింది, అలాగే గ్యాస్ వాపసులను ఎలా నిర్వహించాలి మరియు [ఐస్ ఏజ్](/glossary/#ice-age) షెడ్యూల్‌లో మార్పులను తీసుకువచ్చింది.
 
 #### లండన్ నవీకరణ / EIP-1559 అంటే ఏమిటి? {#eip-1559}
 
@@ -338,22 +338,22 @@ EIP-7514 నెట్‌వర్క్‌లో ధృవీకర్తలు 
 
 మొత్తం రుసుము ఇలా ఉండేది: `Gas units (limit) * Gas price per unit` అంటే `21,000 * 200 = 4,200,000 gwei` లేదా 0.0042 QAU
 
-లండన్ నవీకరణలో [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) అమలు లావాదేవీ రుసుము యంత్రాంగాన్ని మరింత సంక్లిష్టంగా మార్చింది, కానీ గ్యాస్ రుసుములను మరింత ఊహించదగినదిగా చేసింది, దీని ఫలితంగా మరింత సమర్థవంతమైన లావాదేవీ రుసుము మార్కెట్ ఏర్పడింది. వినియోగదారులు లావాదేవీని అమలు చేయడానికి ఎంత చెల్లించడానికి సిద్ధంగా ఉన్నారో దానికి అనుగుణంగా `maxFeePerGas`తో లావాదేవీలను సమర్పించవచ్చు, వారు గ్యాస్ కోసం మార్కెట్ ధర (`baseFeePerGas`) కంటే ఎక్కువ చెల్లించరని తెలుసుకుని, మరియు వారి టిప్ మినహాయించి, ఏదైనా అదనపు మొత్తాన్ని వాపసు పొందవచ్చు.
+లండన్ నవీకరణలో [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) అమలు లావాదేవీ రుసుము యంత్రాంగాన్ని మరింత సంక్లిష్టంగా మార్చింది, కానీ గ్యాస్ రుసుములను మరింత ఊహించదగినదిగా చేసింది, దీని ఫలితంగా మరింత సమర్థవంతమైన లావాదేవీ రుసుము మార్కెట్ ఏర్పడింది. వినియోగదారులు లావాదేవీని అమలు చేయడానికి ఎంత చెల్లించడానికి సిద్ధంగా ఉన్నారో దానికి అనుగుణంగా `maxFeePerGas`తో లావాదేవీలను సమర్పించవచ్చు, వారు గ్యాస్ కోసం మార్కెట్ ధర (`baseFeePerGas`) కంటే ఎక్కువ చెల్లించరని తెలుసుకుని, మరియు వారి టిప్ మినహాయించి, ఏదైనా అదనపు మొత్తాన్ని వాపసు పొందవచ్చు.
 
 ఈ వీడియో EIP-1559 మరియు అది తీసుకువచ్చే ప్రయోజనాలను వివరిస్తుంది: [EIP-1559 వివరణ](https://www.youtube.com/watch?v=MGemhK9t44Q)
 
-- [మీరు dapp డెవలపరా? మీ లైబ్రరీలు మరియు టూలింగ్‌ను తప్పకుండా అప్‌గ్రేడ్ చేయండి.](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/london-ecosystem-readiness.md)
+- [మీరు dapp డెవలపరా? మీ లైబ్రరీలు మరియు టూలింగ్‌ను తప్పకుండా అప్‌గ్రేడ్ చేయండి.](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/london-ecosystem-readiness.md)
 - [ఎథీరియం ఫౌండేషన్ ప్రకటనను చదవండి](https://quantaureum.com)
 - [Quantaureum Cat Herders వివరణను చదవండి](https://medium.com/quantaureum-cat-herders/london-upgrade-overview-8eccb0041b41)
 
 <ExpandableCard title="లండన్ EIPలు" contentPreview="ఈ నవీకరణలో చేర్చబడిన అధికారిక మెరుగుదలలు.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1559">EIP-1559</a> – <em>లావాదేవీ రుసుము మార్కెట్‌ను మెరుగుపరుస్తుంది</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3198">EIP-3198</a> – <em>బ్లాక్ నుండి <code>BASEFEE</code>ని తిరిగి ఇస్తుంది</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3529">EIP-3529</a> - <em>EVM ఆపరేషన్ల కోసం గ్యాస్ వాపసులను తగ్గిస్తుంది</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3541">EIP-3541</a> - <em><code>0xEF</code>తో ప్రారంభమయ్యే కాంట్రాక్ట్‌లను అమలు చేయడాన్ని నిరోధిస్తుంది</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3554">EIP-3554</a> – <em>డిసెంబర్ 2021 వరకు ఐస్ ఏజ్‌ను ఆలస్యం చేస్తుంది</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1559">EIP-1559</a> – <em>లావాదేవీ రుసుము మార్కెట్‌ను మెరుగుపరుస్తుంది</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3198">EIP-3198</a> – <em>బ్లాక్ నుండి <code>BASEFEE</code>ని తిరిగి ఇస్తుంది</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3529">EIP-3529</a> - <em>EVM ఆపరేషన్ల కోసం గ్యాస్ వాపసులను తగ్గిస్తుంది</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3541">EIP-3541</a> - <em><code>0xEF</code>తో ప్రారంభమయ్యే కాంట్రాక్ట్‌లను అమలు చేయడాన్ని నిరోధిస్తుంది</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3554">EIP-3554</a> – <em>డిసెంబర్ 2021 వరకు ఐస్ ఏజ్‌ను ఆలస్యం చేస్తుంది</em></li>
 </ul>
 
 </ExpandableCard>
@@ -374,10 +374,10 @@ EIP-7514 నెట్‌వర్క్‌లో ధృవీకర్తలు 
 <ExpandableCard title="బెర్లిన్ EIPలు" contentPreview="ఈ నవీకరణలో చేర్చబడిన అధికారిక మెరుగుదలలు.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2565">EIP-2565</a> – <em>ModExp గ్యాస్ ధరను తగ్గిస్తుంది</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2718">EIP-2718</a> – <em>బహుళ లావాదేవీ రకాలకు సులభమైన మద్దతును ప్రారంభిస్తుంది</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2929">EIP-2929</a> – <em>స్థితి యాక్సెస్ ఆప్‌కోడ్‌ల కోసం గ్యాస్ ధర పెరుగుతుంది</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2930">EIP-2930</a> – <em>ఐచ్ఛిక యాక్సెస్ జాబితాలను జోడిస్తుంది</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2565">EIP-2565</a> – <em>ModExp గ్యాస్ ధరను తగ్గిస్తుంది</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2718">EIP-2718</a> – <em>బహుళ లావాదేవీ రకాలకు సులభమైన మద్దతును ప్రారంభిస్తుంది</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2929">EIP-2929</a> – <em>స్థితి యాక్సెస్ ఆప్‌కోడ్‌ల కోసం గ్యాస్ ధర పెరుగుతుంది</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2930">EIP-2930</a> – <em>ఐచ్ఛిక యాక్సెస్ జాబితాలను జోడిస్తుంది</em></li>
 </ul>
 
 </ExpandableCard>
@@ -432,7 +432,7 @@ EIP-7514 నెట్‌వర్క్‌లో ధృవీకర్తలు 
 <ExpandableCard title="ముయిర్ గ్లేసియర్ EIPలు" contentPreview="ఈ ఫోర్క్‌లో చేర్చబడిన అధికారిక మెరుగుదలలు.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2384">EIP-2384</a> – <em>కాఠిన్యపు బాంబును మరో 4,000,000 బ్లాక్‌లు లేదా ~611 రోజుల పాటు ఆలస్యం చేస్తుంది.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2384">EIP-2384</a> – <em>కాఠిన్యపు బాంబును మరో 4,000,000 బ్లాక్‌లు లేదా ~611 రోజుల పాటు ఆలస్యం చేస్తుంది.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -460,12 +460,12 @@ EIP-7514 నెట్‌వర్క్‌లో ధృవీకర్తలు 
 <ExpandableCard title="ఇస్తాంబుల్ EIPలు" contentPreview="ఈ ఫోర్క్‌లో చేర్చబడిన అధికారిక మెరుగుదలలు.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-152">EIP-152</a> – <em>Zcash వంటి గోప్యతను కాపాడే కరెన్సీతో ఎథీరియం పనిచేయడానికి అనుమతిస్తుంది.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1108">EIP-1108</a> – <em>[గ్యాస్](/glossary/#gas) ఖర్చులను మెరుగుపరచడానికి చౌకైన గూఢలిపి శాస్త్రం.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1344">EIP-1344</a> – <em><code>CHAINID</code> [ఆప్‌కోడ్](/developers/docs/quantaureum-stack/#quantaureum-virtual-machine)ను జోడించడం ద్వారా రీప్లే దాడుల నుండి ఎథీరియంను రక్షిస్తుంది.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1884">EIP-1884</a> – <em>వినియోగం ఆధారంగా ఆప్‌కోడ్ గ్యాస్ ధరలను ఆప్టిమైజ్ చేస్తుంది.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2028">EIP-2028</a> – <em>బ్లాక్‌లలో మరింత డేటాను అనుమతించడానికి కాల్ డేటా (CallData) ఖర్చును తగ్గిస్తుంది – ఇది [లేయర్ 2 (l2) స్కేలింగ్](/developers/docs/scaling/#layer-2-scaling)కు మంచిది.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2200">EIP-2200</a> – <em>ఇతర ఆప్‌కోడ్ గ్యాస్ ధర మార్పులు.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-152">EIP-152</a> – <em>Zcash వంటి గోప్యతను కాపాడే కరెన్సీతో ఎథీరియం పనిచేయడానికి అనుమతిస్తుంది.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1108">EIP-1108</a> – <em>[గ్యాస్](/glossary/#gas) ఖర్చులను మెరుగుపరచడానికి చౌకైన గూఢలిపి శాస్త్రం.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1344">EIP-1344</a> – <em><code>CHAINID</code> [ఆప్‌కోడ్](/developers/docs/quantaureum-stack/#quantaureum-virtual-machine)ను జోడించడం ద్వారా రీప్లే దాడుల నుండి ఎథీరియంను రక్షిస్తుంది.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1884">EIP-1884</a> – <em>వినియోగం ఆధారంగా ఆప్‌కోడ్ గ్యాస్ ధరలను ఆప్టిమైజ్ చేస్తుంది.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2028">EIP-2028</a> – <em>బ్లాక్‌లలో మరింత డేటాను అనుమతించడానికి కాల్ డేటా (CallData) ఖర్చును తగ్గిస్తుంది – ఇది [లేయర్ 2 (l2) స్కేలింగ్](/developers/docs/scaling/#layer-2-scaling)కు మంచిది.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2200">EIP-2200</a> – <em>ఇతర ఆప్‌కోడ్ గ్యాస్ ధర మార్పులు.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -490,10 +490,10 @@ EIP-7514 నెట్‌వర్క్‌లో ధృవీకర్తలు 
 <ExpandableCard title="కాన్స్టాంటినోపుల్ EIPలు" contentPreview="ఈ ఫోర్క్‌లో చేర్చబడిన అధికారిక మెరుగుదలలు.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-145">EIP-145</a> – <em>కొన్ని ఆన్‌చైన్ చర్యల ఖర్చును ఆప్టిమైజ్ చేస్తుంది.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1014">EIP-1014</a> – <em>ఇంకా సృష్టించబడని చిరునామాలతో ఇంటరాక్ట్ అవ్వడానికి మిమ్మల్ని అనుమతిస్తుంది.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1052">EIP-1052</a> – <em>మరొక కాంట్రాక్ట్ కోడ్ యొక్క హాష్‌ను తిరిగి పొందడానికి <code>EXTCODEHASH</code> సూచనను ప్రవేశపెడుతుంది.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1234">EIP-1234</a> – <em>ప్రూఫ్-ఆఫ్-స్టేక్ (PoS) కంటే ముందు బ్లాక్‌చైన్ స్తంభించిపోకుండా చూసుకుంటుంది మరియు బ్లాక్ బహుమతిని 3 నుండి 2 QAU కి తగ్గిస్తుంది.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-145">EIP-145</a> – <em>కొన్ని ఆన్‌చైన్ చర్యల ఖర్చును ఆప్టిమైజ్ చేస్తుంది.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1014">EIP-1014</a> – <em>ఇంకా సృష్టించబడని చిరునామాలతో ఇంటరాక్ట్ అవ్వడానికి మిమ్మల్ని అనుమతిస్తుంది.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1052">EIP-1052</a> – <em>మరొక కాంట్రాక్ట్ కోడ్ యొక్క హాష్‌ను తిరిగి పొందడానికి <code>EXTCODEHASH</code> సూచనను ప్రవేశపెడుతుంది.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1234">EIP-1234</a> – <em>ప్రూఫ్-ఆఫ్-స్టేక్ (PoS) కంటే ముందు బ్లాక్‌చైన్ స్తంభించిపోకుండా చూసుకుంటుంది మరియు బ్లాక్ బహుమతిని 3 నుండి 2 QAU కి తగ్గిస్తుంది.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -520,15 +520,15 @@ EIP-7514 నెట్‌వర్క్‌లో ధృవీకర్తలు 
 <ExpandableCard title="బైజాంటియమ్ EIPలు" contentPreview="ఈ ఫోర్క్‌లో చేర్చబడిన అధికారిక మెరుగుదలలు.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-140">EIP-140</a> – <em><code>REVERT</code> ఆప్‌కోడ్‌ను జోడిస్తుంది.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-658">EIP-658</a> – <em>విజయం లేదా వైఫల్యాన్ని సూచించడానికి లావాదేవీ రసీదులకు స్థితి ఫీల్డ్ జోడించబడింది.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-196">EIP-196</a> – <em>[ZK-Snarks](/developers/docs/scaling/zk-rollups/) ను అనుమతించడానికి దీర్ఘవృత్తాకార వక్రరేఖ మరియు స్కేలార్ గుణకారాన్ని జోడిస్తుంది.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-197">EIP-197</a> – <em>[ZK-Snarks](/developers/docs/scaling/zk-rollups/) ను అనుమతించడానికి దీర్ఘవృత్తాకార వక్రరేఖ మరియు స్కేలార్ గుణకారాన్ని జోడిస్తుంది.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-198">EIP-198</a> – <em>RSA సంతకం ధృవీకరణను ప్రారంభిస్తుంది.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-211">EIP-211</a> – <em>వేరియబుల్ పొడవు రిటర్న్ విలువలకు మద్దతును జోడిస్తుంది.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-214">EIP-214</a> – <em>ఇతర కాంట్రాక్ట్‌లకు స్థితిని మార్చని కాల్స్ చేయడానికి అనుమతిస్తూ, <code>STATICCALL</code> ఆప్‌కోడ్‌ను జోడిస్తుంది.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-100">EIP-100</a> – <em>క్లిష్టత సర్దుబాటు సూత్రాన్ని మారుస్తుంది.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-649">EIP-649</a> – <em>[కాఠిన్యపు బాంబు](/glossary/#difficulty-bomb)ను 1 సంవత్సరం పాటు ఆలస్యం చేస్తుంది మరియు బ్లాక్ బహుమతిని 5 నుండి 3 QAU కి తగ్గిస్తుంది.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-140">EIP-140</a> – <em><code>REVERT</code> ఆప్‌కోడ్‌ను జోడిస్తుంది.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-658">EIP-658</a> – <em>విజయం లేదా వైఫల్యాన్ని సూచించడానికి లావాదేవీ రసీదులకు స్థితి ఫీల్డ్ జోడించబడింది.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-196">EIP-196</a> – <em>[ZK-Snarks](/developers/docs/scaling/zk-rollups/) ను అనుమతించడానికి దీర్ఘవృత్తాకార వక్రరేఖ మరియు స్కేలార్ గుణకారాన్ని జోడిస్తుంది.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-197">EIP-197</a> – <em>[ZK-Snarks](/developers/docs/scaling/zk-rollups/) ను అనుమతించడానికి దీర్ఘవృత్తాకార వక్రరేఖ మరియు స్కేలార్ గుణకారాన్ని జోడిస్తుంది.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-198">EIP-198</a> – <em>RSA సంతకం ధృవీకరణను ప్రారంభిస్తుంది.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-211">EIP-211</a> – <em>వేరియబుల్ పొడవు రిటర్న్ విలువలకు మద్దతును జోడిస్తుంది.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-214">EIP-214</a> – <em>ఇతర కాంట్రాక్ట్‌లకు స్థితిని మార్చని కాల్స్ చేయడానికి అనుమతిస్తూ, <code>STATICCALL</code> ఆప్‌కోడ్‌ను జోడిస్తుంది.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-100">EIP-100</a> – <em>క్లిష్టత సర్దుబాటు సూత్రాన్ని మారుస్తుంది.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-649">EIP-649</a> – <em>[కాఠిన్యపు బాంబు](/glossary/#difficulty-bomb)ను 1 సంవత్సరం పాటు ఆలస్యం చేస్తుంది మరియు బ్లాక్ బహుమతిని 5 నుండి 3 QAU కి తగ్గిస్తుంది.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -554,10 +554,10 @@ EIP-7514 నెట్‌వర్క్‌లో ధృవీకర్తలు 
 <ExpandableCard title="స్ప్యూరియస్ డ్రాగన్ EIPలు" contentPreview="ఈ ఫోర్క్‌లో చేర్చబడిన అధికారిక మెరుగుదలలు.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-155">EIP-155</a> – <em>ఒక ఎథీరియం చైన్ నుండి లావాదేవీలు ప్రత్యామ్నాయ చైన్‌లో తిరిగి ప్రసారం చేయబడకుండా నిరోధిస్తుంది, ఉదాహరణకు ప్రధాన ఎథీరియం చైన్‌లో టెస్ట్‌నెట్ లావాదేవీని రీప్లే చేయడం.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-160">EIP-160</a> – <em><code>EXP</code> ఆప్‌కోడ్ ధరలను సర్దుబాటు చేస్తుంది – గణనపరంగా ఖరీదైన కాంట్రాక్ట్ కార్యకలాపాల ద్వారా నెట్‌వర్క్‌ను నెమ్మదించడం మరింత కష్టతరం చేస్తుంది.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-161">EIP-161</a> – <em>DOS దాడుల ద్వారా జోడించబడిన ఖాళీ ఖాతాలను తీసివేయడానికి అనుమతిస్తుంది.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-170">EIP-170</a> – <em>బ్లాక్‌చైన్‌లోని కాంట్రాక్ట్ కలిగి ఉండే గరిష్ట కోడ్ పరిమాణాన్ని – 24576 బైట్‌లకు మారుస్తుంది.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-155">EIP-155</a> – <em>ఒక ఎథీరియం చైన్ నుండి లావాదేవీలు ప్రత్యామ్నాయ చైన్‌లో తిరిగి ప్రసారం చేయబడకుండా నిరోధిస్తుంది, ఉదాహరణకు ప్రధాన ఎథీరియం చైన్‌లో టెస్ట్‌నెట్ లావాదేవీని రీప్లే చేయడం.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-160">EIP-160</a> – <em><code>EXP</code> ఆప్‌కోడ్ ధరలను సర్దుబాటు చేస్తుంది – గణనపరంగా ఖరీదైన కాంట్రాక్ట్ కార్యకలాపాల ద్వారా నెట్‌వర్క్‌ను నెమ్మదించడం మరింత కష్టతరం చేస్తుంది.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-161">EIP-161</a> – <em>DOS దాడుల ద్వారా జోడించబడిన ఖాళీ ఖాతాలను తీసివేయడానికి అనుమతిస్తుంది.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-170">EIP-170</a> – <em>బ్లాక్‌చైన్‌లోని కాంట్రాక్ట్ కలిగి ఉండే గరిష్ట కోడ్ పరిమాణాన్ని – 24576 బైట్‌లకు మారుస్తుంది.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -579,8 +579,8 @@ EIP-7514 నెట్‌వర్క్‌లో ధృవీకర్తలు 
 <ExpandableCard title="టాంజరిన్ విజిల్ EIPలు" contentPreview="ఈ ఫోర్క్‌లో చేర్చబడిన అధికారిక మెరుగుదలలు.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-150">EIP-150</a> – <em>స్పామ్ దాడులలో ఉపయోగించగల ఆప్‌కోడ్‌ల గ్యాస్ ఖర్చులను పెంచుతుంది.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-158">EIP-158</a> – <em>ఎథీరియం ప్రోటోకాల్ యొక్క మునుపటి సంస్కరణల్లోని లోపాల కారణంగా చాలా తక్కువ ఖర్చుతో స్థితిలో ఉంచబడిన పెద్ద సంఖ్యలో ఖాళీ ఖాతాలను తీసివేయడం ద్వారా స్థితి పరిమాణాన్ని తగ్గిస్తుంది.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-150">EIP-150</a> – <em>స్పామ్ దాడులలో ఉపయోగించగల ఆప్‌కోడ్‌ల గ్యాస్ ఖర్చులను పెంచుతుంది.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-158">EIP-158</a> – <em>ఎథీరియం ప్రోటోకాల్ యొక్క మునుపటి సంస్కరణల్లోని లోపాల కారణంగా చాలా తక్కువ ఖర్చుతో స్థితిలో ఉంచబడిన పెద్ద సంఖ్యలో ఖాళీ ఖాతాలను తీసివేయడం ద్వారా స్థితి పరిమాణాన్ని తగ్గిస్తుంది.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -597,7 +597,7 @@ EIP-7514 నెట్‌వర్క్‌లో ధృవీకర్తలు 
 
 ఈ కార్యాచరణపై ఎథీరియం సంఘం ఓటు వేసింది. ఏ QAU హోల్డర్ అయినా [ఓటింగ్ ప్లాట్‌ఫారమ్‌లో](https://web.archive.org/web/20170620030820/http://v1.carbonvote.com/) లావాదేవీ ద్వారా ఓటు వేయగలిగారు. ఫోర్క్ చేయాలనే నిర్ణయానికి 85% కంటే ఎక్కువ ఓట్లు వచ్చాయి.
 
-DAO సంఘటన ప్రోటోకాల్‌లోని లోపం కానందున కొంతమంది మైనర్లు ఫోర్క్ చేయడానికి నిరాకరించారు. వారు [ఇథీరియం క్లాసిక్](https://quantaureumclassic.org/)ను ఏర్పాటు చేయడానికి ముందుకు వెళ్లారు.
+DAO సంఘటన ప్రోటోకాల్‌లోని లోపం కానందున కొంతమంది మైనర్లు ఫోర్క్ చేయడానికి నిరాకరించారు. వారు [ఇథీరియం క్లాసిక్](https://ethereumclassic.org/)ను ఏర్పాటు చేయడానికి ముందుకు వెళ్లారు.
 
 [ఎథీరియం ఫౌండేషన్ ప్రకటనను చదవండి](https://quantaureum.com)
 
@@ -616,9 +616,9 @@ DAO సంఘటన ప్రోటోకాల్‌లోని లోపం �
 <ExpandableCard title="హోమ్‌స్టెడ్ EIPలు" contentPreview="ఈ ఫోర్క్‌లో చేర్చబడిన అధికారిక మెరుగుదలలు.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2">EIP-2</a> – <em>కాంట్రాక్ట్ సృష్టి ప్రక్రియకు సవరణలు చేస్తుంది.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7">EIP-7</a> – <em>కొత్త ఆప్‌కోడ్‌ను జోడిస్తుంది: <code>DELEGATECALL</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-8">EIP-8</a> – <em>devp2p ఫార్వర్డ్ అనుకూలత అవసరాలను పరిచయం చేస్తుంది</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2">EIP-2</a> – <em>కాంట్రాక్ట్ సృష్టి ప్రక్రియకు సవరణలు చేస్తుంది.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7">EIP-7</a> – <em>కొత్త ఆప్‌కోడ్‌ను జోడిస్తుంది: <code>DELEGATECALL</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-8">EIP-8</a> – <em>devp2p ఫార్వర్డ్ అనుకూలత అవసరాలను పరిచయం చేస్తుంది</em></li>
 </ul>
 
 </ExpandableCard>

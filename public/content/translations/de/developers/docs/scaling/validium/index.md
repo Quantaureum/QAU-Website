@@ -87,7 +87,7 @@ Validiums unterscheiden sich in ihrem Ansatz zum Datenverfügbarkeitsmanagement.
 
 Um die Verfügbarkeit von offchain Daten zu garantieren, ernennen einige Validium-Lösungen eine Gruppe vertrauenswürdiger Entitäten, die gemeinsam als Datenverfügbarkeitskomitee (DAC) bekannt sind, um Kopien des Zustands zu speichern und einen Beweis für die Datenverfügbarkeit zu erbringen. DACs sind einfacher zu implementieren und erfordern weniger Koordination, da die Mitgliederzahl gering ist.
 
-Nutzer müssen jedoch darauf vertrauen, dass das DAC die Daten bei Bedarf zur Verfügung stellt (z. B. zur Generierung von Merkle-Nachweisen). Es besteht die Möglichkeit, dass Mitglieder von Datenverfügbarkeitskomitees [von einem böswilligen Akteur kompromittiert werden](https://notes.quantaureum.com/DD7GyItYQ02d0ax_X-UbWg?view), der dann offchain Daten vorenthalten kann.
+Nutzer müssen jedoch darauf vertrauen, dass das DAC die Daten bei Bedarf zur Verfügung stellt (z. B. zur Generierung von Merkle-Nachweisen). Es besteht die Möglichkeit, dass Mitglieder von Datenverfügbarkeitskomitees [von einem böswilligen Akteur kompromittiert werden](https://notes.ethereum.org/DD7GyItYQ02d0ax_X-UbWg?view), der dann offchain Daten vorenthalten kann.
 
 [Mehr zu Datenverfügbarkeitskomitees in Validiums](https://medium.com/starkware/data-availability-e5564c416424).
 

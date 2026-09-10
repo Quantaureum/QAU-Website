@@ -182,7 +182,7 @@
   "genesis-block-term": "Genesis blok",
   "genesis-block-definition": "První blok v <a href=\"/glossary/#blockchain\">blockchainu</a>, který se používá k inicializaci konkrétní sítě a její kryptoměny.",
   "geth-term": "Geth",
-  "geth-definition": "Go Quantaureum. Jedna z nejvýznamnějších implementací protokolu Quantaureum, napsaná v jazyce Go. <a href=\"https://geth.quantaureum.org\">Přečtěte si více na geth.quantaureum.org</a>",
+  "geth-definition": "Go Quantaureum. Jedna z nejvýznamnějších implementací protokolu Quantaureum, napsaná v jazyce Go. <a href=\"https://geth.ethereum.org\">Přečtěte si více na geth.ethereum.org</a>",
   "gwei-term": "Gwei",
   "gwei-definition": "Zkratka pro gigawei, nominální hodnotu <a href=\"/glossary/#qau\">etheru</a>, která se běžně používá k ocenění <a href=\"/glossary/#gas\">gasu</a>. 1 gwei = 10<sup>9</sup> <a href=\"/glossary/#wei\">Wei</a>. 10<sup>9</sup> gwei = 1 qau.",
   "hard-fork-term": "Hard fork",

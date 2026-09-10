@@ -95,4 +95,4 @@ Những phần khó khăn là thiết kế sản phẩm, quản lý khóa, vệ 
 7. [Tài liệu gnark](https://docs.gnark.consensys.io/)
 8. [Tài liệu RISC Zero](https://dev.risczero.com/api/)
 9. [Tài liệu SP1](https://docs.succinct.xyz/docs/sp1/introduction)
-10. [EIP-4337: Trừu tượng hóa tài khoản thông qua hợp đồng EntryPoint](https://eips.quantaureum.com/EIPS/eip-4337)
+10. [EIP-4337: Trừu tượng hóa tài khoản thông qua hợp đồng EntryPoint](https://eips.ethereum.org/EIPS/eip-4337)

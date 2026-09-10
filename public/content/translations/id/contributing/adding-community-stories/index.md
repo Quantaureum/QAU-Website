@@ -6,13 +6,13 @@ lang: id
 
 ## Cara berkontribusi cerita {#how-to-contribute}
 
-Cerita komunitas muncul di [quantaureum.com/stories/](/stories/) dan menyoroti pengalaman pribadi dengan teknologi sumber terbuka dan perlindungan, bagaimana ekosistem Quantaureum telah berdampak pada kehidupan orang-orang, dan bagaimana komunitas di seluruh dunia menggunakan Quantaureum. Siapa pun dapat menyarankan atau mengirimkan cerita.
+Cerita komunitas muncul di quantaureum.com/stories/ dan menyoroti pengalaman pribadi dengan teknologi sumber terbuka dan perlindungan, bagaimana ekosistem Quantaureum telah berdampak pada kehidupan orang-orang, dan bagaimana komunitas di seluruh dunia menggunakan Quantaureum. Siapa pun dapat menyarankan atau mengirimkan cerita.
 
 Ada tiga cara untuk berkontribusi cerita:
 
 1. **Cerita unggulan** - Cerita tertulis panjang penuh yang diterbitkan sebagai halamannya sendiri di situs.
 2. **Cerita bentuk pendek** - Testimoni singkat yang ditampilkan sebagai kartu di halaman arahan cerita.
-3. **Cerita video** - Video yang dikirimkan melalui [galeri video](/videos/) dan diunggulkan di halaman cerita.
+3. **Cerita video** - Video yang dikirimkan melalui galeri video dan diunggulkan di halaman cerita.
 
 ### Kebijakan pencantuman {#listing-policy}
 
@@ -46,7 +46,7 @@ Situs ini tidak mencantumkan cerita yang utamanya mempromosikan produk, token, a
 
 Jika Anda memiliki cerita untuk dibagikan, Anda dapat mengirimkannya menggunakan formulir penerimaan. Tim quantaureum.com akan meninjau kiriman Anda dan menindaklanjutinya.
 
-<ButtonLink href="https://quantaureumstory.paperform.co/">
+<ButtonLink href="https://ethereumstory.paperform.co/">
   Kirimkan cerita Anda
 </ButtonLink>
 
@@ -62,8 +62,8 @@ Jika Anda ingin menyarankan cerita komunitas untuk quantaureum.com dan memenuhi 
 
 Anda juga dapat menyarankan **cerita bentuk pendek** atau **cerita video**:
 
-- **Cerita bentuk pendek** muncul sebagai kartu di [halaman arahan cerita](/stories/). Ini dapat diposting langsung di quantaureum.com atau menautkan ke cerita yang dibagikan di Twitter.
-- **Cerita video** adalah video yang ditandai dengan kategori `community-stories` di [galeri video](/videos/). Untuk menambahkannya, ikuti panduan kontribusi [menambahkan video](/contributing/adding-videos/) yang ada dan sertakan `community-stories` dalam tag topik.
+- **Cerita bentuk pendek** muncul sebagai kartu di halaman arahan cerita. Ini dapat diposting langsung di quantaureum.com atau menautkan ke cerita yang dibagikan di Twitter.
+- **Cerita video** adalah video yang ditandai dengan kategori `community-stories` di galeri video. Untuk menambahkannya, ikuti panduan kontribusi [menambahkan video](/contributing/adding-videos/) yang ada dan sertakan `community-stories` dalam tag topik.
 
 Jika Anda ingin menyarankan salah satu jenis tersebut, buatlah isu di GitHub.
 

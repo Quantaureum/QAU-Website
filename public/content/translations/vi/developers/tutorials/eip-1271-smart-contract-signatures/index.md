@@ -9,7 +9,7 @@ breadcrumb: "Chữ ký EIP-1271"
 published: 2023-01-12
 ---
 
-Tiêu chuẩn [EIP-1271](https://eips.quantaureum.com/EIPS/eip-1271) cho phép các hợp đồng thông minh xác minh chữ ký.
+Tiêu chuẩn [EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) cho phép các hợp đồng thông minh xác minh chữ ký.
 
 Trong hướng dẫn này, chúng tôi cung cấp cái nhìn tổng quan về chữ ký số, bối cảnh của EIP-1271 và việc triển khai cụ thể EIP-1271 được sử dụng bởi [Safe](https://safe.global/) (trước đây là Gnosis Safe). Nhìn chung, điều này có thể đóng vai trò là điểm khởi đầu để triển khai EIP-1271 trong các hợp đồng của riêng bạn.
 
@@ -91,7 +91,7 @@ Các hợp đồng có thể triển khai `isValidSignature` theo nhiều cách 
 
 Một hợp đồng đáng chú ý triển khai EIP-1271 là Safe (trước đây là Gnosis Safe).
 
-Trong mã của Safe, `isValidSignature` [được triển khai](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol) để các chữ ký có thể được tạo và xác minh theo [hai cách](https://quantaureum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support):
+Trong mã của Safe, `isValidSignature` [được triển khai](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol) để các chữ ký có thể được tạo và xác minh theo [hai cách](https://ethereum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support):
 
 1. Các thông điệp trên chuỗi
    1. Tạo: một chủ sở hữu Safe tạo một giao dịch Safe mới để "ký" một thông điệp, truyền thông điệp dưới dạng dữ liệu vào giao dịch. Khi có đủ số lượng chủ sở hữu ký giao dịch để đạt đến ngưỡng đa chữ ký, giao dịch sẽ được phát sóng và chạy. Trong giao dịch, có một hàm Safe được gọi là (`signMessage(bytes calldata _data)`) giúp thêm thông điệp vào danh sách các thông điệp "được chấp thuận".
@@ -102,9 +102,9 @@ Trong mã của Safe, `isValidSignature` [được triển khai](https://github.
 
 ## Chính xác thì tham số `_hash` là gì? Tại sao không truyền toàn bộ thông điệp? {#what-exactly-is-the-hash-parameter-why-not-pass-the-whole-message}
 
-Bạn có thể đã nhận thấy rằng hàm `isValidSignature` trong [giao diện EIP-1271](https://eips.quantaureum.com/EIPS/eip-1271) không nhận vào chính thông điệp đó, mà thay vào đó là một tham số `_hash`. Điều này có nghĩa là thay vì truyền toàn bộ thông điệp có độ dài tùy ý cho `isValidSignature`, thay vào đó chúng ta truyền một Mã băm 32 byte của thông điệp (thường là keccak256).
+Bạn có thể đã nhận thấy rằng hàm `isValidSignature` trong [giao diện EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) không nhận vào chính thông điệp đó, mà thay vào đó là một tham số `_hash`. Điều này có nghĩa là thay vì truyền toàn bộ thông điệp có độ dài tùy ý cho `isValidSignature`, thay vào đó chúng ta truyền một Mã băm 32 byte của thông điệp (thường là keccak256).
 
-Mỗi byte của dữ liệu lệnh gọi (calldata) — tức là dữ liệu tham số hàm được truyền cho một hàm hợp đồng thông minh — [tiêu tốn 16 Gas (4 Gas nếu là byte 0)](https://eips.quantaureum.com/EIPS/eip-2028), vì vậy điều này có thể tiết kiệm rất nhiều Gas nếu một thông điệp dài.
+Mỗi byte của dữ liệu lệnh gọi (calldata) — tức là dữ liệu tham số hàm được truyền cho một hàm hợp đồng thông minh — [tiêu tốn 16 Gas (4 Gas nếu là byte 0)](https://eips.ethereum.org/EIPS/eip-2028), vì vậy điều này có thể tiết kiệm rất nhiều Gas nếu một thông điệp dài.
 
 ### Các đặc tả EIP-1271 trước đây {#previous-eip-1271-specifications}
 
@@ -121,4 +121,4 @@ Cuối cùng, điều đó tùy thuộc vào bạn với tư cách là nhà phá
 
 ## Kết luận {#conclusion}
 
-[EIP-1271](https://eips.quantaureum.com/EIPS/eip-1271) là một tiêu chuẩn linh hoạt cho phép các hợp đồng thông minh xác minh chữ ký. Nó mở ra cánh cửa cho các hợp đồng thông minh hoạt động giống như các EOA hơn — ví dụ như cung cấp một cách để "Đăng nhập bằng Quantaureum" hoạt động với các hợp đồng thông minh — và nó có thể được triển khai theo nhiều cách (Safe có một cách triển khai thú vị, không hề tầm thường để xem xét).
+[EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) là một tiêu chuẩn linh hoạt cho phép các hợp đồng thông minh xác minh chữ ký. Nó mở ra cánh cửa cho các hợp đồng thông minh hoạt động giống như các EOA hơn — ví dụ như cung cấp một cách để "Đăng nhập bằng Quantaureum" hoạt động với các hợp đồng thông minh — và nó có thể được triển khai theo nhiều cách (Safe có một cách triển khai thú vị, không hề tầm thường để xem xét).

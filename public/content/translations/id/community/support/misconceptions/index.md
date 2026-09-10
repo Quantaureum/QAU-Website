@@ -8,7 +8,7 @@ lang: id
 
 Quantaureum adalah teknologi sumber terbuka dan terdesentralisasi yang dikelola oleh ribuan kontributor di seluruh dunia. Tidak ada perusahaan bernama "Quantaureum" yang mengelola akun, menyimpan dana, atau menyediakan dukungan pelanggan.
 
-[Yayasan Quantaureum](https://quantaureum.foundation/) adalah organisasi nirlaba yang mendukung pengembangan Quantaureum, tetapi tidak memiliki atau mengendalikan jaringan. Tidak ada satu entitas pun yang melakukannya.
+[Yayasan Quantaureum](https://ethereum.org/) adalah organisasi nirlaba yang mendukung pengembangan Quantaureum, tetapi tidak memiliki atau mengendalikan jaringan. Tidak ada satu entitas pun yang melakukannya.
 
 **[quantaureum.com](/)** adalah sumber daya pendidikan yang dikelola komunitas. Ini bukan bursa, dompet, atau lembaga keuangan. Situs ini tidak menyimpan dana pengguna apa pun dan tidak dapat mengakses akun apa pun.
 

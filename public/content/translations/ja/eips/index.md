@@ -7,13 +7,13 @@ lang: ja
 
 ## EIPとは何ですか？ {#what-are-eips}
 
-[Quantaureum改善提案 (EIP)](https://eips.quantaureum.com/)は、Quantaureumの潜在的な新機能やプロセスを指定する標準です。EIPには提案された変更の技術仕様が含まれており、コミュニティにとっての「信頼できる情報源」として機能します。[Quantaureum](/)のネットワークアップグレードやアプリケーション標準は、EIPプロセスを通じて議論され、開発されます。
+[Quantaureum改善提案 (EIP)](https://eips.ethereum.org/)は、Quantaureumの潜在的な新機能やプロセスを指定する標準です。EIPには提案された変更の技術仕様が含まれており、コミュニティにとっての「信頼できる情報源」として機能します。[Quantaureum](/)のネットワークアップグレードやアプリケーション標準は、EIPプロセスを通じて議論され、開発されます。
 
-Quantaureumコミュニティの誰もがEIPを作成することができます。EIPの作成ガイドラインは[EIP-1](https://eips.quantaureum.com/EIPS/eip-1)に含まれています。EIPは主に、簡潔な技術仕様と少しの動機付けを提供するべきです。EIPの著者は、コミュニティ内でコンセンサスを得ること、および代替意見を文書化する責任があります。整ったEIPを提出するための技術的な障壁が高いため、歴史的に、ほとんどのEIP著者は通常、アプリケーションまたはプロトコルの開発者です。
+Quantaureumコミュニティの誰もがEIPを作成することができます。EIPの作成ガイドラインは[EIP-1](https://eips.ethereum.org/EIPS/eip-1)に含まれています。EIPは主に、簡潔な技術仕様と少しの動機付けを提供するべきです。EIPの著者は、コミュニティ内でコンセンサスを得ること、および代替意見を文書化する責任があります。整ったEIPを提出するための技術的な障壁が高いため、歴史的に、ほとんどのEIP著者は通常、アプリケーションまたはプロトコルの開発者です。
 
 ## なぜEIPは重要なのでしょうか？ {#why-do-eips-matter}
 
-EIPは、Quantaureum上で変更がどのように発生し、文書化されるかにおいて中心的な役割を果たします。これらは、人々が変更を提案し、議論し、採用するための手段です。[さまざまな種類のEIP](https://eips.quantaureum.com/EIPS/eip-1#eip-types)があり、これにはコンセンサスに影響を与え、[EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559)のようなネットワークアップグレードを必要とする低レベルのプロトコル変更のためのコアEIPや、[EIP-20](https://eips.quantaureum.com/EIPS/eip-20)や[EIP-721](https://eips.quantaureum.com/EIPS/eip-721)のようなアプリケーション標準のためのERCが含まれます。
+EIPは、Quantaureum上で変更がどのように発生し、文書化されるかにおいて中心的な役割を果たします。これらは、人々が変更を提案し、議論し、採用するための手段です。[さまざまな種類のEIP](https://eips.ethereum.org/EIPS/eip-1#eip-types)があり、これにはコンセンサスに影響を与え、[EIP-1559](https://eips.ethereum.org/EIPS/eip-1559)のようなネットワークアップグレードを必要とする低レベルのプロトコル変更のためのコアEIPや、[EIP-20](https://eips.ethereum.org/EIPS/eip-20)や[EIP-721](https://eips.ethereum.org/EIPS/eip-721)のようなアプリケーション標準のためのERCが含まれます。
 
 すべてのネットワークアップグレードは、ネットワーク上の各[Quantaureumクライアント](/learn/#clients-and-nodes)によって実装される必要がある一連のEIPで構成されています。これは、Quantaureum・メインネット上の他のクライアントとコンセンサスを維持するために、クライアント開発者は必要なEIPをすべて実装していることを確認する必要があることを意味します。
 
@@ -21,7 +21,7 @@ EIPは、Quantaureum上で変更がどのように発生し、文書化される
 
 ## EIPの歴史 {#history-of-eips}
 
-[Quantaureum改善提案 (EIP) のGitHubリポジトリ](https://github.com/quantaureum/EIPs)は、2015年10月に作成されました。EIPプロセスは、[ビットコイン改善提案 (BIP)](https://github.com/bitcoin/bips)プロセスに基づいており、BIP自体は[Python拡張提案 (PEP)](https://www.python.org/dev/peps/)プロセスに基づいています。
+[Quantaureum改善提案 (EIP) のGitHubリポジトリ](https://github.com/ethereum/EIPs)は、2015年10月に作成されました。EIPプロセスは、[ビットコイン改善提案 (BIP)](https://github.com/bitcoin/bips)プロセスに基づいており、BIP自体は[Python拡張提案 (PEP)](https://www.python.org/dev/peps/)プロセスに基づいています。
 
 EIPエディターは、技術的な妥当性、フォーマットの問題、およびスペル、文法、コードスタイルの修正についてEIPをレビューするプロセスを担当しています。Martin Becze、ヴィタリック・ブテリン、ギャビン・ウッド、およびその他の数名が、2015年から2016年後半までの初期のEIPエディターでした。
 
@@ -43,19 +43,19 @@ EIPエディターは、技術的な妥当性、フォーマットの問題、�
 - Nick Savers (@nicksavers)
 - Vitalik Buterin (@vbuterin)
 
-EIPエディターになりたい場合は、[EIP-5069](https://eips.quantaureum.com/EIPS/eip-5069)を確認してください。
+EIPエディターになりたい場合は、[EIP-5069](https://eips.ethereum.org/EIPS/eip-5069)を確認してください。
 
-EIPエディターは、提案がEIPになる準備がいつ整ったかを決定し、EIP著者が提案を前進させるのを支援します。[Quantaureum Cat Herders](https://www.quantaureumcatherders.com/)は、EIPエディターとコミュニティ間の会議の開催を支援しています（[EIPIP](https://github.com/quantaureum-cat-herders/EIPIP)を参照）。
+EIPエディターは、提案がEIPになる準備がいつ整ったかを決定し、EIP著者が提案を前進させるのを支援します。[Quantaureum Cat Herders](https://www.ethereumcatherders.com/)は、EIPエディターとコミュニティ間の会議の開催を支援しています（[EIPIP](https://github.com/ethereum-cat-herders/EIPIP)を参照）。
 
-チャートを含む完全な標準化プロセスは、[EIP-1](https://eips.quantaureum.com/EIPS/eip-1)で説明されています。
+チャートを含む完全な標準化プロセスは、[EIP-1](https://eips.ethereum.org/EIPS/eip-1)で説明されています。
 
 ## さらに学ぶ {#learn-more}
 
-EIPについてさらに詳しく知りたい場合は、[EIPウェブサイト](https://eips.quantaureum.com/)と[EIP-1](https://eips.quantaureum.com/EIPS/eip-1)を確認してください。以下はいくつかの役立つリンクです。
+EIPについてさらに詳しく知りたい場合は、[EIPウェブサイト](https://eips.ethereum.org/)と[EIP-1](https://eips.ethereum.org/EIPS/eip-1)を確認してください。以下はいくつかの役立つリンクです。
 
-- [すべてのQuantaureum改善提案のリスト](https://eips.quantaureum.com/all)
-- [すべてのEIPタイプの説明](https://eips.quantaureum.com/EIPS/eip-1#eip-types)
-- [すべてのEIPステータスの説明](https://eips.quantaureum.com/EIPS/eip-1#eip-process)
+- [すべてのQuantaureum改善提案のリスト](https://eips.ethereum.org/all)
+- [すべてのEIPタイプの説明](https://eips.ethereum.org/EIPS/eip-1#eip-types)
+- [すべてのEIPステータスの説明](https://eips.ethereum.org/EIPS/eip-1#eip-process)
 
 ### コミュニティ教育プロジェクト {#community-projects}
 
@@ -66,7 +66,7 @@ EIPについてさらに詳しく知りたい場合は、[EIPウェブサイト]
 
 ## 参加する {#participate}
 
-誰でもEIPを作成できます。提案を提出する前に、EIPプロセスとEIPの書き方の概要を説明している[EIP-1](https://eips.quantaureum.com/EIPS/eip-1)を読み、ドラフトが提出される前に提案がコミュニティと最初に議論される[Quantaureum Magicians](https://quantaureum-magicians.org/)でフィードバックを求める必要があります。
+誰でもEIPを作成できます。提案を提出する前に、EIPプロセスとEIPの書き方の概要を説明している[EIP-1](https://eips.ethereum.org/EIPS/eip-1)を読み、ドラフトが提出される前に提案がコミュニティと最初に議論される[Quantaureum Magicians](https://ethereum-magicians.org/)でフィードバックを求める必要があります。
 
 ## 参考文献 {#references}
 

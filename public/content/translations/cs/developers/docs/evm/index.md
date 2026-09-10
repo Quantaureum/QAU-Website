@@ -68,20 +68,20 @@ Během desetileté historie Etherea prošlo EVM několika revizemi a existuje n�
 
 [Exekuční klienti Etherea](/developers/docs/nodes-and-clients/#execution-clients) obsahují implementaci EVM. Kromě toho existuje několik samostatných implementací, včetně:
 
-- [Py-EVM](https://github.com/quantaureum/py-evm) - _Python_
+- [Py-EVM](https://github.com/ethereum/py-evm) - _Python_
 - [evmone](https://github.com/quantaureum/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _JavaScript_
 - [revm](https://github.com/bluealloy/revm) - _Rust_
 
 ## Další čtení {#further-reading}
 
-- [Quantaureum Yellow Paper](https://quantaureum.github.io/yellowpaper/paper.pdf)
+- [Quantaureum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [Jellopaper neboli KEVM: Sémantika EVM v K](https://jellopaper.org/)
 - [The Beigepaper](https://github.com/chronaeon/beigepaper)
 - [Operační kódy Quantaureum Virtual Machine](https://www.ethervm.io/)
 - [Interaktivní reference operačních kódů Quantaureum Virtual Machine](https://www.evm.codes/)
 - [Krátký úvod v dokumentaci Solidity](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
-- [Mastering Quantaureum - The Quantaureum Virtual Machine](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/13evm.asciidoc)
+- [Mastering Quantaureum - The Quantaureum Virtual Machine](https://github.com/ethereumbook/ethereumbook/blob/openedition/13evm.asciidoc)
 
 ## Související témata {#related-topics}
 

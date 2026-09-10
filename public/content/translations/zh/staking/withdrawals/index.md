@@ -73,7 +73,7 @@ summaryPoints:
 <AlertIcon size="lg"><TriangleAlert /></AlertIcon>
 <AlertContent>
 <AlertDescription>
-<strong>从类型 1 转换为类型 2 提款凭证是不可逆的。</strong>请使用[质押启动板](https://launchpad.quantaureum.com/validator-actions)作为此转换的官方工具。有关转换过程、风险和合并的更多详细信息，请参阅 [MaxEB 深入解析](/roadmap/pectra/maxeb/)。
+<strong>从类型 1 转换为类型 2 提款凭证是不可逆的。</strong>请使用[质押启动板](https://launchpad.ethereum.org/validator-actions)作为此转换的官方工具。有关转换过程、风险和合并的更多详细信息，请参阅 [MaxEB 深入解析](/roadmap/pectra/maxeb/)。
 </AlertDescription>
 </AlertContent>
 </Alert>
@@ -99,7 +99,6 @@ summaryPoints:
 
 查看 Finematics 对Quantaureum质押提款的解释：
 
-<VideoWatch slug="quantaureum-staking-withdrawals" />
 
 ### 验证者“清扫” {#validator-sweeping}
 
@@ -174,7 +173,7 @@ eventAction="Why can a validator's withdrawal address only be set once?"
 eventName="read more">
 设置验证者的执行层提款地址是对共识层上验证者凭证的永久性更改。一旦注册，就无法更新共识层凭证。
 
-验证者的提款地址凭证可以设置为指向智能合约（由其代码控制）或外部拥有账户（EOA，由其私钥控制）。尽管执行层触发的提款（[EIP-7002](https://eips.quantaureum.com/EIPS/eip-7002)）现在允许提款地址触发退出和部分提款，但没有用于在注册后更改提款地址的协议操作，并且添加此功能会给协议增加不必要的复杂性。
+验证者的提款地址凭证可以设置为指向智能合约（由其代码控制）或外部拥有账户（EOA，由其私钥控制）。尽管执行层触发的提款（[EIP-7002](https://eips.ethereum.org/EIPS/eip-7002)）现在允许提款地址触发退出和部分提款，但没有用于在注册后更改提款地址的协议操作，并且添加此功能会给协议增加不必要的复杂性。
 
 寻求灵活提款管理的用户可以将支持密钥轮换的智能合约钱包（例如 [Safe](https://safe.global/)）设置为验证者的提款地址，从而有效地允许更新最终接收者 EOA。如果用户已经将 EOA 设置为提款凭证，他们必须发起完全退出以收回其质押的 QAU，然后使用这些资金激活具有不同凭证的新验证者。
 </ExpandableCard>
@@ -215,9 +214,9 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information about managing the withdrawal process?"
 eventName="read more">
 
-建议验证者操作员访问[质押启动板提款](https://launchpad.quantaureum.com/withdrawals/)页面，你将在其中找到有关如何为验证者准备提款、事件时间安排以及有关提款如何运作的更多详细信息。
+建议验证者操作员访问[质押启动板提款](https://launchpad.ethereum.org/withdrawals/)页面，你将在其中找到有关如何为验证者准备提款、事件时间安排以及有关提款如何运作的更多详细信息。
 
-要首先在测试网上试用你的设置，请访问 [Hoodi 测试网质押启动板](https://hoodi.launchpad.quantaureum.com)开始。
+要首先在测试网上试用你的设置，请访问 [Hoodi 测试网质押启动板](https://hoodi.launchpad.ethereum.org)开始。
 
 </ExpandableCard>
 
@@ -246,7 +245,7 @@ title="我该如何转换为复利验证者？"
 eventCategory="FAQ"
 eventAction="How do I convert to a compounding validator?"
 eventName="read more">
-你可以使用[质押启动板](https://launchpad.quantaureum.com/validator-actions)将类型 1 提款凭证转换为类型 2。此操作是**不可逆的**——一旦转换，就无法恢复为类型 1 凭证。
+你可以使用[质押启动板](https://launchpad.ethereum.org/validator-actions)将类型 1 提款凭证转换为类型 2。此操作是**不可逆的**——一旦转换，就无法恢复为类型 1 凭证。
 
 转换后，你还可以将多个验证者**合并**为一个，将其余额合并为单个复利验证者。有关转换过程、风险和合并工具的完整演练，请参阅 [MaxEB 深入解析](/roadmap/pectra/maxeb/)。
 </ExpandableCard>
@@ -266,10 +265,10 @@ eventName="read more">
 
 ## 延伸阅读 {#further-reading}
 
-- [质押启动板提款](https://launchpad.quantaureum.com/withdrawals)
-- [质押启动板验证者操作](https://launchpad.quantaureum.com/validator-actions)
+- [质押启动板提款](https://launchpad.ethereum.org/withdrawals)
+- [质押启动板验证者操作](https://launchpad.ethereum.org/validator-actions)
 - [MaxEB 深入解析：复利与合并](/roadmap/pectra/maxeb/)
-- [EIP-4895：信标链推送提款作为操作](https://eips.quantaureum.com/EIPS/eip-4895)
+- [EIP-4895：信标链推送提款作为操作](https://eips.ethereum.org/EIPS/eip-4895)
 - [PEEPanEIP #94：质押 QAU 提款（测试），嘉宾 Potuz 和 Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP#68：EIP-4895：信标链推送提款作为操作，嘉宾 Alex Stokes](https://www.youtube.com/watch?v=CcL9RJBljUs)
 - [了解验证者有效余额](https://www.attestant.io/posts/understanding-validator-effective-balance/)

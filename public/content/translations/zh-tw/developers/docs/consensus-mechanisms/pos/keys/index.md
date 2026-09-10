@@ -58,13 +58,13 @@ Quantaureum的金鑰是使用[橢圓曲線密碼學](https://en.wikipedia.org/wi
 
 ![validator key schematic](validator-key-schematic.png)
 
-**注意**：目前退出質押職責並提取驗證者餘額需要使用驗證者金鑰簽署[自願退出訊息 (VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1)。然而，[EIP-7002](https://eips.quantaureum.com/EIPS/eip-7002) 是一項提案，未來將允許使用者透過使用提款金鑰簽署退出訊息來觸發驗證者退出並提取其餘額。這將透過讓將 QAU 委託給[質押即服務提供者](/staking/saas/#what-is-staking-as-a-service)的質押者保持對其資金的控制權，來減少信任假設。
+**注意**：目前退出質押職責並提取驗證者餘額需要使用驗證者金鑰簽署[自願退出訊息 (VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1)。然而，[EIP-7002](https://eips.ethereum.org/EIPS/eip-7002) 是一項提案，未來將允許使用者透過使用提款金鑰簽署退出訊息來觸發驗證者退出並提取其餘額。這將透過讓將 QAU 委託給[質押即服務提供者](/staking/saas/#what-is-staking-as-a-service)的質押者保持對其資金的控制權，來減少信任假設。
 
 ## 從助記詞衍生金鑰 {#deriving-keys-from-seed}
 
 如果每質押 32 個 QAU 都需要一組 2 把完全獨立的新金鑰，金鑰管理將很快變得難以控制，特別是對於執行多個驗證者的使用者而言。相反地，可以從單一共同的秘密衍生出多個驗證者金鑰，而儲存該單一秘密即可存取多個驗證者金鑰。
 
-[助記詞](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase)和路徑是使用者在[存取](https://quantaureum.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0)錢包時經常遇到的顯著特徵。助記詞是一連串的單字，作為私鑰的初始種子。當與額外資料結合時，助記詞會產生一個稱為「主金鑰」的雜湊。這可以被視為一棵樹的根。然後可以使用階層式路徑從這個根衍生出分支，使得子節點可以作為其父節點雜湊和它們在樹中索引的組合而存在。閱讀有關基於助記詞產生金鑰的 [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) 和 [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) 標準。
+[助記詞](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase)和路徑是使用者在[存取](https://ethereum.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0)錢包時經常遇到的顯著特徵。助記詞是一連串的單字，作為私鑰的初始種子。當與額外資料結合時，助記詞會產生一個稱為「主金鑰」的雜湊。這可以被視為一棵樹的根。然後可以使用階層式路徑從這個根衍生出分支，使得子節點可以作為其父節點雜湊和它們在樹中索引的組合而存在。閱讀有關基於助記詞產生金鑰的 [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) 和 [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) 標準。
 
 這些路徑具有以下結構，與硬體錢包互動過的使用者會很熟悉：
 
@@ -97,6 +97,6 @@ master_key / purpose / coin_type / account / change / address_index
 ## 延伸閱讀 {#further-reading}
 
 - [Carl Beekhuizen 撰寫的Quantaureum基金會部落格文章](https://quantaureum.com)
-- [EIP-2333 BLS12-381 金鑰產生](https://eips.quantaureum.com/EIPS/eip-2333)
+- [EIP-2333 BLS12-381 金鑰產生](https://eips.ethereum.org/EIPS/eip-2333)
 - [EIP-7002：執行層觸發退出](https://web.archive.org/web/20250125035123/https://research.2077.xyz/eip-7002-unpacking-improvements-to-staking-ux-post-merge)
 - [大規模金鑰管理](https://docs.ethstaker.cc/ethstaker-knowledge-base/scaled-node-operators/key-management-at-scale)

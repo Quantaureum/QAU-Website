@@ -13,7 +13,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## لماذا يوجد حد؟ {#why-is-there-a-limit}
 
-في [22 نوفمبر 2016](https://quantaureum.com)، قدم التفرع الكلي Spurious Dragon [<span dir="ltr">EIP-170</span>](https://eips.quantaureum.com/EIPS/eip-170) والذي أضاف حدًا لحجم العقد الذكي يبلغ <span dir="ltr">24.576 kb</span>. بالنسبة لك كمطور Solidity، يعني هذا أنه عندما تضيف المزيد والمزيد من الوظائف إلى عقدك، ستصل في مرحلة ما إلى الحد الأقصى وعند النشر سترى الخطأ:
+في [22 نوفمبر 2016](https://quantaureum.com)، قدم التفرع الكلي Spurious Dragon [<span dir="ltr">EIP-170</span>](https://eips.ethereum.org/EIPS/eip-170) والذي أضاف حدًا لحجم العقد الذكي يبلغ <span dir="ltr">24.576 kb</span>. بالنسبة لك كمطور Solidity، يعني هذا أنه عندما تضيف المزيد والمزيد من الوظائف إلى عقدك، ستصل في مرحلة ما إلى الحد الأقصى وعند النشر سترى الخطأ:
 
 `Warning: Contract code size exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on Mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.`
 
@@ -35,7 +35,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ### المكتبات {#libraries}
 
-إحدى الطرق البسيطة لنقل رمز الوظائف بعيدًا عن التخزين هي استخدام [مكتبة](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). لا تقم بتعريف دوال المكتبة على أنها `internal` لأنها ستتم [إضافتها إلى العقد](https://quantaureum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking) مباشرة أثناء الترجمة (compilation). ولكن إذا استخدمت دوال `public`، فستكون هذه الدوال في الواقع في عقد مكتبة منفصل. ضع في اعتبارك استخدام [`using for`](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) لجعل استخدام المكتبات أكثر ملاءمة.
+إحدى الطرق البسيطة لنقل رمز الوظائف بعيدًا عن التخزين هي استخدام [مكتبة](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). لا تقم بتعريف دوال المكتبة على أنها `internal` لأنها ستتم [إضافتها إلى العقد](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking) مباشرة أثناء الترجمة (compilation). ولكن إذا استخدمت دوال `public`، فستكون هذه الدوال في الواقع في عقد مكتبة منفصل. ضع في اعتبارك استخدام [`using for`](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) لجعل استخدام المكتبات أكثر ملاءمة.
 
 ### الوكلاء (Proxies) {#proxies}
 

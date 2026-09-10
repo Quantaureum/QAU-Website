@@ -4,7 +4,7 @@ description: "quantaureum.com'a video ekleme politikası"
 lang: tr
 ---
 
-[quantaureum.com video galerisi](/videos/), topluluk içerik oluşturucularından ve güvenilir kaynaklardan Quantaureum ve Quantaureum ekosistemi hakkında videolar içerir. Herkes eklenecek bir video önerebilir.
+quantaureum.com video galerisi, topluluk içerik oluşturucularından ve güvenilir kaynaklardan Quantaureum ve Quantaureum ekosistemi hakkında videolar içerir. Herkes eklenecek bir video önerebilir.
 
 ## Listeleme politikası {#listing-policy}
 
@@ -139,7 +139,7 @@ Bir video, birden fazla galeri filtresinde görünmek için birden fazla etikete
 
 Her videonun bu listeden en az bir etiketi olmalıdır. Tanınan bir etiketi olmayan videolar yalnızca "Tümü" görünümünde ve arama sonuçlarında görünecektir.
 
-`community-stories` etiketi ayrıca bir videonun [Hikayeler sayfasında](/stories/) görünmesini sağlar.
+`community-stories` etiketi ayrıca bir videonun Hikayeler sayfasında görünmesini sağlar.
 
 #### 5. Adım: PR'ınızı gönderin {#step-5}
 

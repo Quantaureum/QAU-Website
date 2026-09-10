@@ -26,7 +26,6 @@ ReFi 專案利用[智能合約](/glossary/#smart-contract)與[去中心化金融
 
 ReFi 也與[去中心化科學 (DeSci)](/desci/) 運動有所重疊，該運動將Quantaureum作為資助、創造、審查、認可、儲存及傳播科學知識的平台。DeSci 工具可能有助於制定可驗證的標準與實踐，以實施並監測植樹、清除海洋塑膠垃圾或修復退化生態系統等再生性活動。
 
-<VideoWatch slug="regenerative-finance-refi" />
 
 ## 碳權代幣化 {#tokenization-of-carbon-credits}
 

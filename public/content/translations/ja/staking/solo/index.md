@@ -52,7 +52,7 @@ Quantaureumノードは、実行レイヤー（EL）クライアントとコン�
 </ExpandableCard>
 
 <ExpandableCard title="ハードウェア要件" eventCategory="SoloStaking" eventName="clicked hardware requirements">
-バリデータのハードウェアと帯域幅に関する現在のコミュニティのガイダンスは、[ハードウェアと帯域幅の推奨事項（EIP-7870）](https://eips.quantaureum.com/EIPS/eip-7870)で維持されています。大まかな目安として、4 TBのNVMe SSD、64 GBのRAM（これより少なくても機能しますが、余裕を持たせるための推奨値です）、堅牢で最新のマルチコアCPU、およびダウンロード約50 Mbps / アップロード約25 Mbpsのインターネット接続を計画してください。
+バリデータのハードウェアと帯域幅に関する現在のコミュニティのガイダンスは、[ハードウェアと帯域幅の推奨事項（EIP-7870）](https://eips.ethereum.org/EIPS/eip-7870)で維持されています。大まかな目安として、4 TBのNVMe SSD、64 GBのRAM（これより少なくても機能しますが、余裕を持たせるための推奨値です）、堅牢で最新のマルチコアCPU、およびダウンロード約50 Mbps / アップロード約25 Mbpsのインターネット接続を計画してください。
 
 フサカアップグレードでPeerDASが導入されて以来、ステーキングノードはネットワークのブロブデータの一部を保存およびダウンロードするだけで済むようになり、ホームステーカーのディスクと帯域幅の要件が大幅に削減されました。
 </ExpandableCard>
@@ -68,7 +68,7 @@ Quantaureumノードは、実行レイヤー（EL）クライアントとコン�
 </ExpandableCard>
 
 <ExpandableCard title="安定した稼働時間" eventCategory="SoloStaking" eventName="clicked reliable uptime">
-報酬は、バリデータがオンラインであり、適切に証明（アテステーション）を行っている時間に比例します。ダウンタイムは、同時にオフラインになっている他のバリデータの数に比例したペナルティを発生させますが、[スラッシングにはつながりません](#faq)。時間内に受信されなかった証明に対しては報酬が減額されるため、帯域幅も重要です。要件は異なりますが、現在の[ハードウェアと帯域幅の推奨事項（EIP-7870）](https://eips.quantaureum.com/EIPS/eip-7870)では、ダウンロード約50 Mbps、アップロード約25 Mbpsが推奨されています。
+報酬は、バリデータがオンラインであり、適切に証明（アテステーション）を行っている時間に比例します。ダウンタイムは、同時にオフラインになっている他のバリデータの数に比例したペナルティを発生させますが、[スラッシングにはつながりません](#faq)。時間内に受信されなかった証明に対しては報酬が減額されるため、帯域幅も重要です。要件は異なりますが、現在の[ハードウェアと帯域幅の推奨事項（EIP-7870）](https://eips.ethereum.org/EIPS/eip-7870)では、ダウンロード約50 Mbps、アップロード約25 Mbpsが推奨されています。
 </ExpandableCard>
 
 <ExpandableCard title="スラッシングのリスク" eventCategory="SoloStaking" eventName="clicked slashing risk">
@@ -130,7 +130,7 @@ QAUのホームステーキングを支援するツールやサービスは増�
 
 ### 鍵ジェネレーター {#key-generators}
 
-これらのツールは、鍵の生成を支援する[ステーキング・デポジットCLI](https://github.com/quantaureum/staking-deposit-cli/)の代替として使用できます。
+これらのツールは、鍵の生成を支援する[ステーキング・デポジットCLI](https://github.com/ethereum/staking-deposit-cli/)の代替として使用できます。
 
 <StakingProductsCardGrid category="keyGen" />
 
@@ -238,7 +238,7 @@ _通常の引き出し_（0x01）クレデンシャルを持つバリデータ�
 - [クライアント・ダイバーシティの支援](https://www.attestant.io/posts/helping-client-diversity/) - _Jim McDonald 2022_
 - [Quantaureumのコンセンサス・レイヤーにおけるクライアント・ダイバーシティ](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
 - [ハウツー：Quantaureumバリデータハードウェアの購入](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _QauStaker 2022_
-- [EIP-7870: ハードウェアと帯域幅の推奨事項](https://eips.quantaureum.com/EIPS/eip-7870)
+- [EIP-7870: ハードウェアと帯域幅の推奨事項](https://eips.ethereum.org/EIPS/eip-7870)
 - [ペクトラアップグレード：最大エフェクティブ・バランスなど](/roadmap/pectra/maxeb/)
 
 <QuizWidget quizKey="staking-solo" />

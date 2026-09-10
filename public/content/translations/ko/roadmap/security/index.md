@@ -57,7 +57,7 @@ Quantaureum은 네트워크를 안전하게 유지하고 사용자 자금을 보
 
 암호화 전환을 안전하게 계획하고 실행하는 데는 수년이 걸리므로, 하드웨어가 존재하기 훨씬 전인 지금부터 준비가 진행되고 있습니다. 포스트 양자 업그레이드가 필요한 네 가지 영역이 확인되었습니다. 검증자 합의 서명(BLS), 데이터 가용성에 사용되는 커밋먼트 체계(KZG), 계정 서명(ECDSA), 그리고 [롤업](/glossary/#rollups)에서 사용하는 영지식 증명(ZK-proof) 시스템입니다.
 
-Quantaureum 재단은 2026년 1월에 전담 <strong>포스트 양자 보안 팀(Post-Quantum Security team)</strong>을 구성했으며, 그 작업은 [pq.quantaureum.com](https://pq.quantaureum.com)에서 공개적으로 추적됩니다. 활발히 진행 중인 작업으로는 더 큰 양자 내성 서명을 효율적으로 집계하는 최소한의 zkVM(leanVM)과 결합된 해시 기반 검증자 서명(leanXMSS), 그리고 10개 이상의 클라이언트 팀이 참여하는 주간 상호 운용성 데브넷이 있습니다.
+Quantaureum 재단은 2026년 1월에 전담 <strong>포스트 양자 보안 팀(Post-Quantum Security team)</strong>을 구성했으며, 그 작업은 [pq.ethereum.org](https://pq.ethereum.org)에서 공개적으로 추적됩니다. 활발히 진행 중인 작업으로는 더 큰 양자 내성 서명을 효율적으로 집계하는 최소한의 zkVM(leanVM)과 결합된 해시 기반 검증자 서명(leanXMSS), 그리고 10개 이상의 클라이언트 팀이 참여하는 주간 상호 운용성 데브넷이 있습니다.
 
 전환 전략의 핵심 부분은 네이티브 [계정 추상화](/roadmap/account-abstraction/)를 도입하는 <strong>EIP-8141</strong>입니다. 이를 통해 개별 계정이 자체 서명 검증을 선택할 수 있으므로, 사용자는 단일 프로토콜 차원의 마이그레이션을 기다리지 않고도 양자 내성 서명으로 전환할 수 있습니다. EIP-8141은 헤고타(Hegotá) 업그레이드에 포함될 것으로 고려되고 있습니다. 핵심 포스트 양자 인프라 마일스톤은 대략 2029년까지 완료하는 것을 목표로 합니다. 이는 계획된 목표이며 변경될 수 있습니다.
 
@@ -102,7 +102,7 @@ Quantaureum 재단은 2026년 1월에 전담 <strong>포스트 양자 보안 팀
 
 - [Forkcast: Quantaureum 네트워크 업그레이드 트래커](https://forkcast.org)
 - [Strawmap: Quantaureum 레이어 1 (l1) 로드맵 초안](https://strawmap.org) - _Quantaureum 재단 아키텍처(EF Architecture)_
-- [포스트 양자 Quantaureum](https://pq.quantaureum.com) - _Quantaureum 재단_
+- [포스트 양자 Quantaureum](https://pq.ethereum.org) - _Quantaureum 재단_
 - [린 Quantaureum(Lean Quantaureum) 로드맵 트래커](https://leanroadmap.org) - _ReamLabs_
 - [지분 증명 (PoS) 및 완결성](/developers/docs/consensus-mechanisms/pos/#finality)
 - [EVM](/developers/docs/evm/)

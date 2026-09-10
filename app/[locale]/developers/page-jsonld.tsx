@@ -65,8 +65,8 @@ export default async function DevelopersPageJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
-        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
+        reviewedBy: REFERENCE.QUANTAUREUM_ORG,
         mainEntity: { "@id": `${url}#developers` },
       },
       {
@@ -99,7 +99,7 @@ export default async function DevelopersPageJsonLD({
             url: hackathon.link,
           })),
         ],
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
       },
     ],
   }

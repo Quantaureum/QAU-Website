@@ -145,7 +145,7 @@ contentPreview="Falso. La Fusión fue un cambio de mecanismo de consenso, no una
 
 Las tarifas de gas son un producto de la demanda de la red en relación con la capacidad de la red. La Fusión desaprobó el uso de la prueba de trabajo, haciendo la transición a la prueba de participación para el consenso, pero no cambió significativamente ningún parámetro que influya directamente en la capacidad de la red o la capacidad de procesamiento.
 
-Con una <a href="https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698">hoja de ruta centrada en los rollups</a>, los esfuerzos se centran en escalar la actividad del usuario en la [capa 2 (l2)](/layer-2/), al tiempo que se habilita la red principal de capa 1 (l1) como una capa de liquidación descentralizada segura optimizada para el almacenamiento de datos de rollup para ayudar a que las transacciones de rollup sean exponencialmente más baratas. La transición a la prueba de participación es un precursor crítico para lograr esto. [Más sobre el gas y las tarifas.](/developers/docs/gas/)
+Con una <a href="https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698">hoja de ruta centrada en los rollups</a>, los esfuerzos se centran en escalar la actividad del usuario en la [capa 2 (l2)](/layer-2/), al tiempo que se habilita la red principal de capa 1 (l1) como una capa de liquidación descentralizada segura optimizada para el almacenamiento de datos de rollup para ayudar a que las transacciones de rollup sean exponencialmente más baratas. La transición a la prueba de participación es un precursor crítico para lograr esto. [Más sobre el gas y las tarifas.](/developers/docs/gas/)
 
 </ExpandableCard>
 

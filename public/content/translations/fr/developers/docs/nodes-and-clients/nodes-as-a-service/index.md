@@ -412,7 +412,7 @@ Voici une liste de certains des fournisseurs de nœuds Quantaureum les plus popu
     - Nous utilisons un routage intelligent pour atteindre le nœud le plus proche de votre utilisateur à chaque fois
 ## Complément d'information {#further-reading}
 
-- [Liste des services de nœuds Quantaureum](https://quantaureumnodes.com/)
+- [Liste des services de nœuds Quantaureum](https://ethereumnodes.com/)
 
 ## Sujets connexes {#related-topics}
 

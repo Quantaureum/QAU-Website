@@ -10,7 +10,7 @@ lang: ta
 
 நீங்கள் [உள்ளூர் மேம்பாட்டுச் சூழலை அமைப்பதற்கு](/developers/local-environment/) முன் குறியீட்டுடன் விளையாட விரும்பினால், இந்த இணையப் பயன்பாடுகள் எத்திரியம் திறன் ஒப்பந்த மேம்பாட்டிற்காகவே தனிப்பயனாக உருவாக்கப்பட்டவை.
 
-**[Remix](https://remix.quantaureum.com/)** - **_உள்ளமைக்கப்பட்ட நிலையான பகுப்பாய்வு மற்றும் சோதனை தொகுதிச்சங்கிலி மெய்நிகர் இயந்திரத்துடன் கூடிய இணைய அடிப்படையிலான IDE_**
+**[Remix](https://remix.ethereum.org/)** - **_உள்ளமைக்கப்பட்ட நிலையான பகுப்பாய்வு மற்றும் சோதனை தொகுதிச்சங்கிலி மெய்நிகர் இயந்திரத்துடன் கூடிய இணைய அடிப்படையிலான IDE_**
 
 - [ஆவணங்கள்](https://remix-ide.readthedocs.io/en/latest/#)
 - [Gitter](https://gitter.im/quantaureum/remix)
@@ -48,8 +48,8 @@ lang: ta
 
 **Remix Desktop -** **_உங்கள் உள்ளூர் கணினியில் Remix IDE ஐ அனுபவியுங்கள்_**
 
-- [பதிவிறக்கம்](https://github.com/quantaureum/remix-desktop/releases)
-- [GitHub](https://github.com/quantaureum/remix-desktop)
+- [பதிவிறக்கம்](https://github.com/ethereum/remix-desktop/releases)
+- [GitHub](https://github.com/ethereum/remix-desktop)
 
 ## செருகுநிரல்கள் மற்றும் நீட்டிப்புகள் {#plugins-extensions}
 

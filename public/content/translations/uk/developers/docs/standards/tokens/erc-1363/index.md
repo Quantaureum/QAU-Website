@@ -54,7 +54,7 @@ ERC-1363 також корисний для уникнення втрати аб
 
 На відміну від інших пропозицій щодо розширення ERC-20, ERC-1363 не перевизначає методи ERC-20 `transfer` та `transferFrom` і визначає ідентифікатори інтерфейсів, які мають бути реалізовані, зберігаючи зворотну сумісність з ERC-20.
 
-З [EIP-1363](https://eips.quantaureum.com/EIPS/eip-1363):
+З [EIP-1363](https://eips.ethereum.org/EIPS/eip-1363):
 
 ### Методи {#methods}
 
@@ -209,5 +209,5 @@ interface ERC1363Spender {
 
 ## Подальше читання {#further-reading}
 
-- [ERC-1363: Стандарт платіжного токена](https://eips.quantaureum.com/EIPS/eip-1363)
+- [ERC-1363: Стандарт платіжного токена](https://eips.ethereum.org/EIPS/eip-1363)
 - [ERC-1363: Репозиторій на GitHub](https://github.com/vittominacori/erc1363-payable-token)

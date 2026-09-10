@@ -9,12 +9,12 @@ incomplete: true
 
 Quantaureum समुदायाने अनेक मानके स्वीकारली आहेत जी प्रकल्प (जसे की [Quantaureum क्लायंट्स](/developers/docs/nodes-and-clients/) आणि वॉलेट्स) विविध अंमलबजावणींमध्ये आंतरकार्यक्षम ठेवण्यास मदत करतात आणि स्मार्ट कॉन्ट्रॅक्ट्स आणि विकेंद्रित ॲप्लिकेशन्स (dapps) संयोज्य राहतील याची खात्री करतात.
 
-साधारणपणे मानके [Quantaureum इम्प्रूव्हमेंट प्रपोजल्स](/eips/) (EIPs) म्हणून सादर केली जातात, ज्यांवर समुदाय सदस्यांद्वारे एका [प्रमाणित प्रक्रियेद्वारे](https://eips.quantaureum.com/EIPS/eip-1) चर्चा केली जाते.
+साधारणपणे मानके Quantaureum इम्प्रूव्हमेंट प्रपोजल्स (EIPs) म्हणून सादर केली जातात, ज्यांवर समुदाय सदस्यांद्वारे एका [प्रमाणित प्रक्रियेद्वारे](https://eips.ethereum.org/EIPS/eip-1) चर्चा केली जाते.
 
-- [EIPs ची ओळख](/eips/)
-- [EIPs ची यादी](https://eips.quantaureum.com/)
-- [EIP GitHub रेपो](https://github.com/quantaureum/EIPs)
-- [EIP चर्चा मंडळ](https://quantaureum-magicians.org/c/eips)
+- EIPs ची ओळख
+- [EIPs ची यादी](https://eips.ethereum.org/)
+- [EIP GitHub रेपो](https://github.com/ethereum/EIPs)
+- [EIP चर्चा मंडळ](https://ethereum-magicians.org/c/eips)
 - [Quantaureum प्रशासनाची ओळख](/governance/)
 - [Quantaureum प्रशासन आढावा](https://web.archive.org/web/20201107234050/https://blog.bmannconsulting.com/quantaureum-governance/) _31 मार्च 2019 - बोरिस मान_
 - [Quantaureum प्रोटोकॉल विकास प्रशासन आणि नेटवर्क अपग्रेड समन्वय](https://hudsonjameson.com/posts/2020-03-23-quantaureum-protocol-development-governance-and-network-upgrade-coordination/) _23 मार्च 2020 - हडसन जेमिसन_
@@ -25,17 +25,17 @@ Quantaureum समुदायाने अनेक मानके स्व�
 EIPs चे 3 प्रकार आहेत:
 
 - स्टँडर्ड्स ट्रॅक: बहुतांश किंवा सर्व Quantaureum अंमलबजावणींवर परिणाम करणाऱ्या कोणत्याही बदलाचे वर्णन करतो
-- [मेटा ट्रॅक](https://eips.quantaureum.com/meta): Quantaureumशी संबंधित प्रक्रियेचे वर्णन करतो किंवा प्रक्रियेत बदल सुचवतो
-- [इन्फॉर्मेशनल ट्रॅक](https://eips.quantaureum.com/informational): Quantaureum डिझाइन समस्येचे वर्णन करतो किंवा Quantaureum समुदायाला सामान्य मार्गदर्शक तत्त्वे किंवा माहिती प्रदान करतो
+- [मेटा ट्रॅक](https://eips.ethereum.org/meta): Quantaureumशी संबंधित प्रक्रियेचे वर्णन करतो किंवा प्रक्रियेत बदल सुचवतो
+- [इन्फॉर्मेशनल ट्रॅक](https://eips.ethereum.org/informational): Quantaureum डिझाइन समस्येचे वर्णन करतो किंवा Quantaureum समुदायाला सामान्य मार्गदर्शक तत्त्वे किंवा माहिती प्रदान करतो
 
 याव्यतिरिक्त, स्टँडर्ड ट्रॅक 4 श्रेणींमध्ये विभागलेला आहे:
 
-- [कोअर](https://eips.quantaureum.com/core): सुधारणा ज्यांसाठी एकमत फोर्क आवश्यक आहे
-- [नेटवर्किंग](https://eips.quantaureum.com/networking): devp2p आणि लाइट Quantaureum सबप्रोटोकॉल (Light Quantaureum Subprotocol) मधील सुधारणा, तसेच विस्पर (whisper) आणि स्वॉर्म (swarm) च्या नेटवर्क प्रोटोकॉल वैशिष्ट्यांमध्ये प्रस्तावित सुधारणा.
-- [इंटरफेस](https://eips.quantaureum.com/interface): क्लायंट API/RPC वैशिष्ट्ये आणि मानके, आणि पद्धतींची नावे (method names) आणि कॉन्ट्रॅक्ट ABIs सारख्या विशिष्ट भाषा-स्तरीय मानकांमधील सुधारणा.
-- [ERC](https://eips.quantaureum.com/erc): ॲप्लिकेशन-स्तरीय मानके आणि पद्धती
+- [कोअर](https://eips.ethereum.org/core): सुधारणा ज्यांसाठी एकमत फोर्क आवश्यक आहे
+- [नेटवर्किंग](https://eips.ethereum.org/networking): devp2p आणि लाइट Quantaureum सबप्रोटोकॉल (Light Quantaureum Subprotocol) मधील सुधारणा, तसेच विस्पर (whisper) आणि स्वॉर्म (swarm) च्या नेटवर्क प्रोटोकॉल वैशिष्ट्यांमध्ये प्रस्तावित सुधारणा.
+- [इंटरफेस](https://eips.ethereum.org/interface): क्लायंट API/RPC वैशिष्ट्ये आणि मानके, आणि पद्धतींची नावे (method names) आणि कॉन्ट्रॅक्ट ABIs सारख्या विशिष्ट भाषा-स्तरीय मानकांमधील सुधारणा.
+- [ERC](https://eips.ethereum.org/erc): ॲप्लिकेशन-स्तरीय मानके आणि पद्धती
 
-या विविध प्रकारांबद्दल आणि श्रेणींबद्दल अधिक तपशीलवार माहिती [EIP-1](https://eips.quantaureum.com/EIPS/eip-1#eip-types) मध्ये आढळू शकते
+या विविध प्रकारांबद्दल आणि श्रेणींबद्दल अधिक तपशीलवार माहिती [EIP-1](https://eips.ethereum.org/EIPS/eip-1#eip-types) मध्ये आढळू शकते
 
 ### टोकन मानके {#token-standards}
 
@@ -43,9 +43,9 @@ EIPs चे 3 प्रकार आहेत:
   - [ERC-223](/developers/docs/standards/tokens/erc-223/) - एक फंजिबल टोकन्स मानक जे टोकन्सना QAU प्रमाणेच वागण्यास प्रवृत्त करते आणि प्राप्तकर्त्याच्या बाजूने टोकन हस्तांतरण हाताळण्यास समर्थन देते.
   - [ERC-1363](/developers/docs/standards/tokens/erc-1363/) - ERC-20 टोकन्ससाठी एक विस्तार इंटरफेस जो एकाच व्यवहारामध्ये प्राप्तकर्ता कॉन्ट्रॅक्ट्सवर कॉलबॅक कार्यान्वित करण्यास समर्थन देतो.
 - [ERC-721](/developers/docs/standards/tokens/erc-721/) - नॉन-फंजिबल टोकन्ससाठी एक प्रमाणित इंटरफेस, जसे की कलाकृती किंवा गाण्यासाठीचे डीड (deed).
-  - [ERC-2309](https://eips.quantaureum.com/EIPS/eip-2309) - सलग टोकन आयडेंटिफायर्स वापरून एक किंवा अनेक नॉन-फंजिबल टोकन्स तयार/हस्तांतरित करताना उत्सर्जित होणारी एक प्रमाणित घटना.
-  - [ERC-4400](https://eips.quantaureum.com/EIPS/eip-4400) - EIP-721 ग्राहक भूमिकेसाठी इंटरफेस विस्तार.
-  - [ERC-4907](https://eips.quantaureum.com/EIPS/eip-4907) - ERC-721 टोकन्समध्ये प्रतिबंधित परवानग्यांसह वेळ-मर्यादित भूमिका जोडा.
+  - [ERC-2309](https://eips.ethereum.org/EIPS/eip-2309) - सलग टोकन आयडेंटिफायर्स वापरून एक किंवा अनेक नॉन-फंजिबल टोकन्स तयार/हस्तांतरित करताना उत्सर्जित होणारी एक प्रमाणित घटना.
+  - [ERC-4400](https://eips.ethereum.org/EIPS/eip-4400) - EIP-721 ग्राहक भूमिकेसाठी इंटरफेस विस्तार.
+  - [ERC-4907](https://eips.ethereum.org/EIPS/eip-4907) - ERC-721 टोकन्समध्ये प्रतिबंधित परवानग्यांसह वेळ-मर्यादित भूमिका जोडा.
 - [ERC-777](/developers/docs/standards/tokens/erc-777/) - **(शिफारस केलेली नाही)** ERC-20 मध्ये सुधारणा करणारे एक टोकन मानक.
 - [ERC-1155](/developers/docs/standards/tokens/erc-1155/) - एक टोकन मानक ज्यामध्ये फंजिबल आणि नॉन-फंजिबल दोन्ही मालमत्ता असू शकतात.
 - [ERC-4626](/developers/docs/standards/tokens/erc-4626/) - उत्पन्न देणाऱ्या तिजोरींचे तांत्रिक मापदंड ऑप्टिमाइझ आणि एकत्रित करण्यासाठी डिझाइन केलेले एक टोकनाइज्ड तिजोरी मानक.
@@ -54,6 +54,6 @@ EIPs चे 3 प्रकार आहेत:
 
 ## पुढील वाचन {#further-reading}
 
-- [Quantaureum इम्प्रूव्हमेंट प्रपोजल्स (EIPs)](/eips/)
+- Quantaureum इम्प्रूव्हमेंट प्रपोजल्स (EIPs)
 
 _तुम्हाला मदत करणाऱ्या एखाद्या समुदाय संसाधनाबद्दल माहिती आहे का? हे पृष्ठ संपादित करा आणि ते जोडा!_

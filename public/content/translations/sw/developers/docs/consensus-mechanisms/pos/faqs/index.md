@@ -20,7 +20,6 @@ Uthibitisho wa Kazi unatumia nishati nyingi zaidi kwa sababu umeme unachomwa kat
 
 Uthibitisho wa Kazi dhidi ya Uthibitisho wa Dau ni mada yenye utata. [Blogu ya Vitalik Buterin](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) na mjadala kati ya Justin Drake na Lyn Alden inatoa muhtasari mzuri wa hoja hizo.
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## Je, Uthibitisho wa Dau unatumia nishati vizuri? {#is-pos-energy-efficient}
 
@@ -127,7 +126,7 @@ Udhanifu dhaifu ni kipengele cha mitandao ya Uthibitisho wa Dau ambapo taarifa z
 
 Kustahimili udhibiti kwa sasa ni vigumu kuthibitisha. Hata hivyo, tofauti na Uthibitisho wa Kazi, Uthibitisho wa Dau unatoa chaguo la kuratibu ukataji ili kuwaadhibu wathibitishaji wanaodhibiti. Kuna mabadiliko yajayo kwenye itifaki ambayo yanatenganisha wajenzi wa vitalu na wapendekezaji wa vitalu na kutekeleza orodha za miamala ambazo wajenzi lazima wajumuishe katika kila kitalu. Pendekezo hili linajulikana kama utengano wa mpendekezaji na mjengaji (PBS) na husaidia kuzuia wathibitishaji kudhibiti miamala.
 
-[Zaidi kuhusu utengano wa mpendekezaji na mjengaji (PBS)](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Original-basic-scheme)
+[Zaidi kuhusu utengano wa mpendekezaji na mjengaji (PBS)](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Original-basic-scheme)
 
 ## Je, mfumo wa Uthibitisho wa Dau wa Quantaureum unaweza kufanyiwa shambulio la asilimia 51? {#pos-51-attack}
 
@@ -149,7 +148,7 @@ Kadiri mtu anavyokuwa na QAU nyingi za kuweka dhamana, ndivyo anavyoweza kuendes
 
 Hapana, Uthibitisho wa Kazi unaelekea kwenye ujikataji kati kwa sababu gharama za uchimbaji zinaongezeka na kuwatoa watu binafsi, kisha kuwatoa kampuni ndogo, na kadhalika. Tatizo la sasa la Uthibitisho wa Dau ni ushawishi wa vitokanavyo na uwekaji dhamana wenye ukwasi (LSDs). Hizi ni tokeni zinazowakilisha QAU iliyowekwa dhamana na mtoa huduma fulani ambazo mtu yeyote anaweza kufanya badilishano kwenye masoko ya upili bila QAU halisi kutolewa dhamana. LSDs zinaruhusu watumiaji kuweka dhamana kwa chini ya 32 QAU, lakini pia zinaunda hatari ya ujikataji kati ambapo mashirika machache makubwa yanaweza kuishia kudhibiti sehemu kubwa ya dhamana. Hii ndiyo sababu [uwekaji dhamana wa kujitegemea](/staking/solo) ni chaguo bora zaidi kwa Quantaureum.
 
-[Zaidi kuhusu ujikataji kati wa dhamana katika LSDs](https://notes.quantaureum.com/@djrtwo/risks-of-lsd)
+[Zaidi kuhusu ujikataji kati wa dhamana katika LSDs](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
 
 ## Kwa nini ninaweza tu kuweka dhamana ya QAU? {#why-can-i-only-stake-eth}
 

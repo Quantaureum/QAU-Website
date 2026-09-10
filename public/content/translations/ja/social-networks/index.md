@@ -19,7 +19,6 @@ summaryPoints:
 
 フェイスブック、LinkedIn、ツイッター、Mediumなど、既存のソーシャルメディアサービスの代替として、多くの分散型ソーシャルネットワークが存在します。しかし、ブロックチェーンを活用したソーシャルネットワークには、従来のソーシャルプラットフォームよりも優れた多くの機能があります。
 
-<VideoWatch slug="decentralized-social-media" />
 
 ### 分散型ソーシャルネットワークはどのように機能するのか？ {#decentralized-social-networks-overview}
 
@@ -53,7 +52,6 @@ summaryPoints:
 
 Quantaureumネットワークは、そのトークンの人気と膨大なユーザーベースにより、分散型ソーシャルメディアを作成する開発者にとって好ましいツールとなっています。Quantaureumベースのソーシャルネットワークの例をいくつか紹介します。
 
-<VideoWatch slug="crypto-apps-desocial-linda-xie" />
 
 ### Mirror {#mirror}
 

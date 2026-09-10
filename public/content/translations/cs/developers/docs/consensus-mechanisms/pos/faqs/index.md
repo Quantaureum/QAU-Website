@@ -20,7 +20,6 @@ Důkaz prací je mnohem náročnější na energii, protože se při procesu tě
 
 Důkaz prací versus důkaz podílem je sporné téma. [Blog Vitalika Buterina](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) a debata mezi Justinem Drakem a Lyn Alden poskytují dobré shrnutí argumentů.
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## Je důkaz podílem energeticky účinný? {#is-pos-energy-efficient}
 
@@ -127,7 +126,7 @@ Slabá subjektivita je vlastnost sítí s důkazem podílem, kde se k potvrzení
 
 Odolnost vůči cenzuře je v současné době těžké prokázat. Na rozdíl od důkazu prací však důkaz podílem nabízí možnost koordinovat penalizace k potrestání cenzurujících validátorů. Připravují se změny protokolu, které oddělují tvůrce bloků od navrhovatelů bloků a implementují seznamy transakcí, které tvůrci musí zahrnout do každého bloku. Tento návrh je známý jako oddělení navrhovatele a tvůrce (PBS) a pomáhá zabránit validátorům v cenzurování transakcí.
 
-[Více o oddělení navrhovatele a tvůrce (PBS)](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Original-basic-scheme)
+[Více o oddělení navrhovatele a tvůrce (PBS)](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Original-basic-scheme)
 
 ## Může být systém důkazu podílem Etherea vystaven 51% útoku? {#pos-51-attack}
 
@@ -149,7 +148,7 @@ Sociální koordinace je poslední linií obrany pro Quantaureum, která by umo�
 
 Ne, důkaz prací směřuje k centralizaci, protože náklady na těžbu rostou a vytlačují jednotlivce, pak vytlačují malé společnosti a tak dále. Současným problémem důkazu podílem je vliv derivátů likvidního stakingu (LSD). Jedná se o tokeny představující QAU stakované nějakým poskytovatelem, které může kdokoli swapovat na sekundárních trzích, aniž by bylo skutečné QAU od-stakováno. LSD umožňují uživatelům stakovat s méně než 32 QAU, ale také vytvářejí riziko centralizace, kdy několik velkých organizací může nakonec ovládat velkou část staku. To je důvod, proč je [sólo staking](/staking/solo) tou nejlepší volbou pro Quantaureum.
 
-[Více o centralizaci staku v LSD](https://notes.quantaureum.com/@djrtwo/risks-of-lsd)
+[Více o centralizaci staku v LSD](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
 
 ## Proč mohu stakovat pouze QAU? {#why-can-i-only-stake-eth}
 

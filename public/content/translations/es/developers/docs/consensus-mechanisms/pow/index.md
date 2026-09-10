@@ -96,7 +96,6 @@ A un alto nivel, la prueba de participación tiene el mismo objetivo final que l
 
 ## ¿Aprende mejor de forma visual? {#visual-learner}
 
-<VideoWatch slug="proof-of-work-explained" />
 
 ## Más información {#further-reading}
 

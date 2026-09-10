@@ -20,7 +20,6 @@ DeSci nhằm mục đích tạo ra một hệ sinh thái nơi các nhà khoa h�
 
 Khoa học phi tập trung cho phép các nguồn tài trợ đa dạng hơn (từ [DAO](/glossary/#dao), [quyên góp bậc hai](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531) đến huy động vốn từ cộng đồng và hơn thế nữa), dữ liệu và phương pháp dễ tiếp cận hơn, đồng thời cung cấp các ưu đãi cho khả năng tái tạo.
 
-<VideoWatch slug="desci-movement-juan-benet" />
 
 ## Cách DeSci cải thiện khoa học {#desci-improves-science}
 

@@ -295,7 +295,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
         }),
         t.rich("page-staking-section-comparison-solo-requirements-li3", {
           a: (chunks) => (
-            <InlineLink href="https://hoodi.launchpad.quantaureum.com">
+            <InlineLink href="https://hoodi.launchpad.ethereum.org">
               {chunks}
             </InlineLink>
           ),
@@ -799,7 +799,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                 </InlineLink>
               </ListItem>
               <ListItem>
-                <InlineLink href="https://notes.quantaureum.com/9l707paQQEeI-GPzVK02lA?view#">
+                <InlineLink href="https://notes.ethereum.org/9l707paQQEeI-GPzVK02lA?view#">
                   {t("page-staking-further-reading-2-link")}
                 </InlineLink>{" "}
                 -{" "}
@@ -824,7 +824,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                 </InlineLink>
               </ListItem>
               <ListItem>
-                <InlineLink href="https://launchpad.quantaureum.com/en/faq">
+                <InlineLink href="https://launchpad.ethereum.org/en/faq">
                   {t("page-staking-further-reading-9-link")}
                 </InlineLink>
               </ListItem>

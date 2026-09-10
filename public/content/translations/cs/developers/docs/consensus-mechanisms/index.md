@@ -63,7 +63,6 @@ Více o [důkazu podílem (PoS)](/developers/docs/consensus-mechanisms/pos/)
 
 Podívejte se na další informace o různých typech mechanismů konsensu používaných v Ethereu:
 
-<VideoWatch slug="understanding-consensus-mechanisms" />
 
 ### Odolnost proti Sybil útokům a výběr řetězce {#sybil-chain}
 

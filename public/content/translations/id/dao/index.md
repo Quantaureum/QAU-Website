@@ -45,7 +45,6 @@ Agar lebih mudah dipahami, berikut adalah beberapa contoh bagaimana Anda dapat m
 - **Kepemilikan kolektif** – Anda dapat membeli aset fisik atau digital dan anggota dapat memberikan suara tentang cara menggunakannya.
 - **Ventura dan hibah** – Anda dapat membuat dana ventura yang mengumpulkan modal investasi dan memberikan suara pada ventura yang akan didukung. Uang yang dikembalikan nantinya dapat didistribusikan kembali di antara anggota DAO.
 
-<VideoWatch slug="dao-build-next-great-city" />
 
 ## Bagaimana cara kerja DAO? {#how-daos-work}
 

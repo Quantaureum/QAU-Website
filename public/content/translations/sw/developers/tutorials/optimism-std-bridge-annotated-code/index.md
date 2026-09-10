@@ -46,7 +46,7 @@ Daraja lina mitiririko miwili mikuu:
    - Ulitoka awali kwenye daraja la l1
 6. Daraja la l2 hukagua ikiwa mkataba wa tokeni ya ERC-20 kwenye l2 ndio sahihi:
    - Mkataba wa l2 unaripoti kuwa mwenzake wa l1 ni sawa na ule ambao tokeni zilitoka kwenye l1
-   - Mkataba wa l2 unaripoti kuwa unasaidia kiolesura sahihi ([kwa kutumia ERC-165](https://eips.quantaureum.com/EIPS/eip-165)).
+   - Mkataba wa l2 unaripoti kuwa unasaidia kiolesura sahihi ([kwa kutumia ERC-165](https://eips.ethereum.org/EIPS/eip-165)).
 7. Ikiwa mkataba wa l2 ndio sahihi, uite ili kufua idadi inayofaa ya tokeni kwenye anwani inayofaa. Ikiwa sivyo, anza mchakato wa utoaji ili kuruhusu mtumiaji kudai tokeni kwenye l1.
 
 ### Mtiririko wa utoaji {#withdrawal-flow}
@@ -70,7 +70,7 @@ Huu ndio msimbo unaoendeshwa kwenye l1, Mtandao Mkuu wa Quantaureum.
 
 ### IL1ERC20Bridge {#il1erc20bridge}
 
-[Kiolesura hiki kimefafanuliwa hapa](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol).
+[Kiolesura hiki kimefafanuliwa hapa](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol).
 Inajumuisha vipengele na ufafanuzi unaohitajika kwa ajili ya kuvusha tokeni za ERC-20.
 
 ```solidity
@@ -236,7 +236,7 @@ Utoaji (na jumbe zingine kutoka l2 hadi l1) katika Optimism ni mchakato wa hatua
 
 ### IL1StandardBridge {#il1standardbridge}
 
-[Kiolesura hiki kimefafanuliwa hapa](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol).
+[Kiolesura hiki kimefafanuliwa hapa](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol).
 Faili hili lina ufafanuzi wa tukio na kipengele kwa ajili ya QAU.
 Ufafanuzi huu unafanana sana na ule uliofafanuliwa katika `IL1ERC20Bridge` hapo juu kwa ERC-20.
 
@@ -321,7 +321,7 @@ Hali ni hiyo hiyo kwa matukio mengine na vipengele.
 
 ### CrossDomainEnabled {#crossdomainenabled}
 
-[Mkataba huu](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) unarithiwa na madaraja yote mawili ([l1](#the-l1-bridge-contract) na [l2](#l2-bridge-code)) ili kutuma jumbe kwenye tabaka lingine.
+[Mkataba huu](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) unarithiwa na madaraja yote mawili ([l1](#the-l1-bridge-contract) na [l2](#l2-bridge-code)) ili kutuma jumbe kwenye tabaka lingine.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -331,7 +331,7 @@ pragma solidity >0.5.0 <0.9.0;
 import { ICrossDomainMessenger } from "./ICrossDomainMessenger.sol";
 ```
 
-[Kiolesura hiki](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) huambia mkataba jinsi ya kutuma jumbe kwenye tabaka lingine, kwa kutumia mjumbe wa kuvuka kikoa.
+[Kiolesura hiki](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) huambia mkataba jinsi ya kutuma jumbe kwenye tabaka lingine, kwa kutumia mjumbe wa kuvuka kikoa.
 Mjumbe huyu wa kuvuka kikoa ni mfumo mwingine mzima, na unastahili makala yake yenyewe, ambayo natumai kuandika katika siku zijazo.
 
 ```solidity
@@ -398,7 +398,7 @@ Jumbe tu kutoka kwa mjumbe anayefaa wa kuvuka kikoa (`messenger`, kama unavyoona
         );
 ```
 
-Njia ambayo mjumbe wa kuvuka kikoa hutoa anwani iliyotuma ujumbe na tabaka lingine ni [kipengele cha `.xDomainMessageSender()`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128).
+Njia ambayo mjumbe wa kuvuka kikoa hutoa anwani iliyotuma ujumbe na tabaka lingine ni [kipengele cha `.xDomainMessageSender()`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128).
 Ilimradi inaitwa katika muamala ulioanzishwa na ujumbe inaweza kutoa taarifa hii.
 
 Tunahitaji kuhakikisha kuwa ujumbe tuliopokea ulitoka kwenye daraja lingine.
@@ -463,7 +463,7 @@ Katika hali hii hatuna wasiwasi kuhusu uingiaji upya tunajua `getCrossDomainMess
 
 ### Mkataba wa daraja la l1 {#the-l1-bridge-contract}
 
-[Msimbo wa chanzo wa mkataba huu uko hapa](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol).
+[Msimbo wa chanzo wa mkataba huu uko hapa](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol).
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -485,7 +485,7 @@ import { IL1ERC20Bridge } from "./IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "../../L2/messaging/IL2ERC20Bridge.sol";
 ```
 
-[Kiolesura hiki](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) kinaturuhusu kuunda jumbe za kudhibiti daraja la kawaida kwenye l2.
+[Kiolesura hiki](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) kinaturuhusu kuunda jumbe za kudhibiti daraja la kawaida kwenye l2.
 
 ```solidity
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -505,7 +505,7 @@ import { CrossDomainEnabled } from "../../libraries/bridge/CrossDomainEnabled.so
 import { Lib_PredeployAddresses } from "../../libraries/constants/Lib_PredeployAddresses.sol";
 ```
 
-[`Lib_PredeployAddresses`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) ina anwani za mikataba ya l2 ambayo huwa na anwani sawa kila wakati. Hii inajumuisha daraja la kawaida kwenye l2.
+[`Lib_PredeployAddresses`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) ina anwani za mikataba ya l2 ambayo huwa na anwani sawa kila wakati. Hii inajumuisha daraja la kawaida kwenye l2.
 
 ```solidity
 import { Address } from "@openzeppelin/contracts/utils/Address.sol";
@@ -519,7 +519,7 @@ Kumbuka kuwa hili sio suluhisho kamili, kwa sababu hakuna njia ya kutofautisha k
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[Kiwango cha ERC-20](https://eips.quantaureum.com/EIPS/eip-20) kinasaidia njia mbili kwa mkataba kuripoti kutofaulu:
+[Kiwango cha ERC-20](https://eips.ethereum.org/EIPS/eip-20) kinasaidia njia mbili kwa mkataba kuripoti kutofaulu:
 
 1. Tengua
 2. Rejesha `false`
@@ -714,7 +714,7 @@ Kipengele cha Solidity [`abi.encodeWithSelector`](https://docs.soliditylang.org/
         );
 ```
 
-Ujumbe hapa ni kuita [kipengele cha `finalizeDeposit`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) na vigezo hivi:
+Ujumbe hapa ni kuita [kipengele cha `finalizeDeposit`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) na vigezo hivi:
 
 | Kigezo | Thamani | Maana |
 | --------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -946,7 +946,7 @@ Ikiwa kuna tokeni nyingi sana kwenye l1, baadhi ya tokeni hizo zingebaki zimefun
 
 ### IL2StandardERC20 {#il2standarderc20}
 
-Kila tokeni ya ERC-20 kwenye l2 inayotumia daraja la kawaida inahitaji kutoa [kiolesura hiki](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol), ambacho kina vipengele na matukio ambayo daraja la kawaida linahitaji.
+Kila tokeni ya ERC-20 kwenye l2 inayotumia daraja la kawaida inahitaji kutoa [kiolesura hiki](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol), ambacho kina vipengele na matukio ambayo daraja la kawaida linahitaji.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -956,14 +956,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [Kiolesura cha kawaida cha ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) hakijumuishi vipengele vya `mint` na `burn`.
-Mbinu hizo hazihitajiki na [kiwango cha ERC-20](https://eips.quantaureum.com/EIPS/eip-20), ambacho huacha bila kubainishwa taratibu za kuunda na kuharibu tokeni.
+Mbinu hizo hazihitajiki na [kiwango cha ERC-20](https://eips.ethereum.org/EIPS/eip-20), ambacho huacha bila kubainishwa taratibu za kuunda na kuharibu tokeni.
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 [Kiolesura cha ERC-165](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol) kinatumika kubainisha ni vipengele gani mkataba unatoa.
-[Unaweza kusoma kiwango hapa](https://eips.quantaureum.com/EIPS/eip-165).
+[Unaweza kusoma kiwango hapa](https://eips.ethereum.org/EIPS/eip-165).
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -990,7 +990,7 @@ Daraja linapaswa kuwa chombo pekee kinachoweza kuendesha vipengele hivi ili kuha
 
 ### L2StandardERC20 {#l2standarderc20}
 
-[Huu ni utekelezaji wetu wa kiolesura cha `IL2StandardERC20`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol).
+[Huu ni utekelezaji wetu wa kiolesura cha `IL2StandardERC20`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol).
 Isipokuwa unahitaji aina fulani ya mantiki maalum, unapaswa kutumia hii.
 
 ```solidity
@@ -1052,7 +1052,7 @@ Kwanza ita konstrukta kwa mkataba tunaorithi kutoka (`ERC20(_name, _symbol)`) na
     }
 ```
 
-Hivi ndivyo [ERC-165](https://eips.quantaureum.com/EIPS/eip-165) inavyofanya kazi.
+Hivi ndivyo [ERC-165](https://eips.ethereum.org/EIPS/eip-165) inavyofanya kazi.
 Kila kiolesura ni idadi ya vipengele vinavyosaidiwa, na kinatambuliwa kama [au ya kipekee](https://en.wikipedia.org/wiki/Exclusive_or) ya [viteuzi vya kipengele cha ABI](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector) vya vipengele hivyo.
 
 Daraja la l2 hutumia ERC-165 kama ukaguzi wa uhalali ili kuhakikisha kuwa mkataba wa ERC-20 ambao inatuma rasilimali ni `IL2StandardERC20`.
@@ -1084,7 +1084,7 @@ Mkataba huo hauzionyeshi kwa nje, kwa sababu masharti ya kufua na kuteketeza tok
 ## Msimbo wa Daraja la L2 {#l2-bridge-code}
 
 Huu ni msimbo unaoendesha daraja kwenye Optimism.
-[Chanzo cha mkataba huu kiko hapa](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol).
+[Chanzo cha mkataba huu kiko hapa](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol).
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -1096,7 +1096,7 @@ import { IL1ERC20Bridge } from "../../L1/messaging/IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "./IL2ERC20Bridge.sol";
 ```
 
-Kiolesura cha [IL2ERC20Bridge](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) kinafanana sana na [sawa na l1](#il1erc20bridge) tuliyoona hapo juu.
+Kiolesura cha [IL2ERC20Bridge](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) kinafanana sana na [sawa na l1](#il1erc20bridge) tuliyoona hapo juu.
 Kuna tofauti mbili muhimu:
 
 1. Kwenye l1 unaanzisha uwekaji na kukamilisha utoaji.

@@ -95,4 +95,4 @@ Zor kısımlar ürün tasarımı, anahtar yönetimi, meta veri hijyeni, denetiml
 7. [gnark Belgeleri](https://docs.gnark.consensys.io/)
 8. [RISC Zero Belgeleri](https://dev.risczero.com/api/)
 9. [SP1 Belgeleri](https://docs.succinct.xyz/docs/sp1/introduction)
-10. [EIP-4337: EntryPoint Sözleşmesi Aracılığıyla Hesap Soyutlama](https://eips.quantaureum.com/EIPS/eip-4337)
+10. [EIP-4337: EntryPoint Sözleşmesi Aracılığıyla Hesap Soyutlama](https://eips.ethereum.org/EIPS/eip-4337)

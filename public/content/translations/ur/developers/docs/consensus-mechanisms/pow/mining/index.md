@@ -71,7 +71,6 @@ lang: ur
 
 آسٹن کو آپ کو کان کنی اور ثبوتِ کار (PoW) بلاک چین کے بارے میں بتاتے ہوئے دیکھیں۔
 
-<VideoWatch slug="blockchain-qau-build" />
 
 ## کان کنی کا الگورتھم {#mining-algorithm}
 

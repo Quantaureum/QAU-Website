@@ -17,7 +17,7 @@ published: 2022-08-15
 
 আপনি যদি সম্পূর্ণ সোর্স কোড দেখতে চান:
 
-1. [Remix IDE](https://remix.quantaureum.com/) খুলুন।
+1. [Remix IDE](https://remix.ethereum.org/) খুলুন।
 2. ক্লোন GitHub আইকনে ক্লিক করুন (![clone github icon](icon-clone.png))।
 3. GitHub রিপোজিটরি `https://github.com/qbzzt/20220815-erc20-safety-rails` ক্লোন করুন।
 4. **contracts > erc20-safety-rails.sol** খুলুন।
@@ -40,7 +40,7 @@ published: 2022-08-15
 
 3. উপরে স্ক্রোল করুন এবং **Open in Remix** (Remix এর জন্য) বা অন্য কোনো পরিবেশ ব্যবহার করতে **Download** এ ক্লিক করুন। আমি ধরে নিচ্ছি আপনি Remix ব্যবহার করছেন, যদি আপনি অন্য কিছু ব্যবহার করেন তবে শুধু উপযুক্ত পরিবর্তনগুলো করে নিন।
 4. এখন আমাদের কাছে একটি সম্পূর্ণ কার্যকরী ERC-20 কন্ট্রাক্ট আছে। ইমপোর্ট করা কোড দেখতে আপনি `.deps` > `npm` প্রসারিত করতে পারেন।
-5. এটি একটি ERC-20 কন্ট্রাক্ট হিসেবে কাজ করে কিনা তা দেখতে কন্ট্রাক্টটি কম্পাইল, ডিপ্লয় করা এবং পরীক্ষা করে দেখুন। আপনার যদি Remix ব্যবহার করা শিখতে হয়, তবে [এই টিউটোরিয়ালটি ব্যবহার করুন](https://remix.quantaureum.com/?#activate=udapp,solidity,LearnEth)।
+5. এটি একটি ERC-20 কন্ট্রাক্ট হিসেবে কাজ করে কিনা তা দেখতে কন্ট্রাক্টটি কম্পাইল, ডিপ্লয় করা এবং পরীক্ষা করে দেখুন। আপনার যদি Remix ব্যবহার করা শিখতে হয়, তবে [এই টিউটোরিয়ালটি ব্যবহার করুন](https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth)।
 
 ## সাধারণ ভুলগুলো {#common-mistakes}
 
@@ -185,7 +185,7 @@ published: 2022-08-15
 
 ### সম্পদ পরিষ্কার করা {#asset-cleanup}
 
-এই কন্ট্রাক্ট দ্বারা ধারণ করা ERC-20 টোকেনগুলো রিলিজ করার জন্য আমাদের সেই টোকেন কন্ট্রাক্ট এর একটি ফাংশন কল করতে হবে যার অন্তর্গত সেগুলো, হয় [`transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer) অথবা [`approve`](https://eips.quantaureum.com/EIPS/eip-20#approve)। এই ক্ষেত্রে অ্যালাউন্স এর উপর গ্যাস নষ্ট করার কোনো মানে নেই, আমরা সরাসরি হস্তান্তর করতে পারি।
+এই কন্ট্রাক্ট দ্বারা ধারণ করা ERC-20 টোকেনগুলো রিলিজ করার জন্য আমাদের সেই টোকেন কন্ট্রাক্ট এর একটি ফাংশন কল করতে হবে যার অন্তর্গত সেগুলো, হয় [`transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer) অথবা [`approve`](https://eips.ethereum.org/EIPS/eip-20#approve)। এই ক্ষেত্রে অ্যালাউন্স এর উপর গ্যাস নষ্ট করার কোনো মানে নেই, আমরা সরাসরি হস্তান্তর করতে পারি।
 
 ```solidity
     function cleanupERC20(

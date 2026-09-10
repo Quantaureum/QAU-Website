@@ -45,7 +45,6 @@ dapp 可以使用任何语言编写前端代码和用户界面（就像传统应
 
 ## 更喜欢通过视频学习？ {#visual-learner}
 
-<VideoWatch slug="what-is-a-dapp" />
 
 ## 创建去中心化应用 (dapp) 的工具
 **Scaffold-QAU 2 _- 使用可适应你的智能合约的前端快速试验 Solidity。_**

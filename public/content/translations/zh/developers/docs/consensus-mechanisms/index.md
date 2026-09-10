@@ -63,7 +63,6 @@ Quantaureum现在使用基于**权益证明 (PoS)** 的共识协议。
 
 观看更多关于Quantaureum上使用的不同类型共识机制的视频：
 
-<VideoWatch slug="understanding-consensus-mechanisms" />
 
 ### 女巫攻击抵抗与链选择 {#sybil-chain}
 

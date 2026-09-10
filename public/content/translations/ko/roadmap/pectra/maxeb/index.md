@@ -22,7 +22,7 @@ MaxEB = 검증자의 최대 유효 잔고(MAXimum Effective Balance)입니다. �
 
 ### 검증자는 어떻게 참여하나요? {#how-does-a-validator-opt-in}
 
-검증자는 **유형 1**에서 **유형 2** 인출 자격 증명으로 변환하여 MaxEB 변경 사항에 참여합니다. 이 작업은 펙트라 하드 포크가 활성화된 후 [런치패드(검증자 작업)](https://launchpad.quantaureum.com/validator-actions)에서 수행할 수 있습니다. **유형 0** → **유형 1**과 마찬가지로, **유형 1** → **유형 2**로의 변환은 되돌릴 수 없는 과정입니다.
+검증자는 **유형 1**에서 **유형 2** 인출 자격 증명으로 변환하여 MaxEB 변경 사항에 참여합니다. 이 작업은 펙트라 하드 포크가 활성화된 후 [런치패드(검증자 작업)](https://launchpad.ethereum.org/validator-actions)에서 수행할 수 있습니다. **유형 0** → **유형 1**과 마찬가지로, **유형 1** → **유형 2**로의 변환은 되돌릴 수 없는 과정입니다.
 
 ### 인출 자격 증명이란 무엇인가요? {#whats-a-withdrawal-credential}
 
@@ -105,7 +105,7 @@ MaxEB를 사용하면 검증자가 전체 잔고를 다른 검증자에게 보�
 2. 소스 검증자의 공개키(예: `0xa1d1ad0714035353258038e964ae9675dc0252ee22cea896825c01458e1807bfad2f9969338798548d9858a571f7425c`)
 3. 대상 검증자의 공개키
 
-변환의 경우 2번과 3번이 동일합니다. 이 작업은 [런치패드](https://launchpad.quantaureum.com/)에서 수행할 수 있습니다.
+변환의 경우 2번과 3번이 동일합니다. 이 작업은 [런치패드](https://launchpad.ethereum.org/)에서 수행할 수 있습니다.
 
 ### 서명 요구 사항 {#signing-requirements}
 
@@ -113,7 +113,7 @@ MaxEB를 사용하면 검증자가 전체 잔고를 다른 검증자에게 보�
 
 ### 무엇에 서명하나요? {#what-is-signed}
 
-`ConsolidationRequest` 객체의 도메인 분리된 [서명 루트(signing root)](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root)가 사용됩니다.
+`ConsolidationRequest` 객체의 도메인 분리된 [서명 루트(signing root)](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root)가 사용됩니다.
 
 - **도메인:** `DOMAIN_CONSOLIDATION_REQUEST`
 - **서명 루트 필드:**
@@ -131,7 +131,7 @@ MaxEB를 사용하면 검증자가 전체 잔고를 다른 검증자에게 보�
 
 ## 통합 도구 {#consolidation-tooling}
 
-통합을 관리하는 데 사용할 수 있는 여러 도구가 있습니다. Quantaureum 재단에서 만든 공식 도구는 [런치패드](https://launchpad.quantaureum.com/en/validator-actions)입니다. 스테이킹 커뮤니티의 주체들이 만든 서드파티 도구도 있으며, 런치패드에서 제공하지 않는 기능을 제공할 수 있습니다. 여기에 있는 도구들은 Quantaureum 재단의 감사를 받거나 보증되지 않았지만, 다음은 커뮤니티의 알려진 구성원들이 만든 오픈 소스 도구입니다.
+통합을 관리하는 데 사용할 수 있는 여러 도구가 있습니다. Quantaureum 재단에서 만든 공식 도구는 [런치패드](https://launchpad.ethereum.org/en/validator-actions)입니다. 스테이킹 커뮤니티의 주체들이 만든 서드파티 도구도 있으며, 런치패드에서 제공하지 않는 기능을 제공할 수 있습니다. 여기에 있는 도구들은 Quantaureum 재단의 감사를 받거나 보증되지 않았지만, 다음은 커뮤니티의 알려진 구성원들이 만든 오픈 소스 도구입니다.
 
 | 도구 | 웹사이트 | 오픈 소스 | 제작자 | 감사 여부 | 인터페이스 | 주요 기능 |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -196,7 +196,7 @@ MaxEB를 사용하면 검증자가 전체 잔고를 다른 검증자에게 보�
 
 ## 리소스 {#resources}
 
-- [일렉트라(Electra) 합의 사양](https://github.com/quantaureum/consensus-specs/blob/master/specs/electra/beacon-chain.md): 의존해야 할 가장 '정확한' 버전입니다. 의문이 생기면 사양을 읽어보세요.
+- [일렉트라(Electra) 합의 사양](https://github.com/ethereum/consensus-specs/blob/master/specs/electra/beacon-chain.md): 의존해야 할 가장 '정확한' 버전입니다. 의문이 생기면 사양을 읽어보세요.
 - 모든 사람이 코드를 살펴보는 것을 편안해하는 것은 아니므로, [이 maxEB-GPT](https://chatgpt.com/g/g-67f1650fb48081918f555e0c8d1c2ae9-maxeb-gpt)가 사양을 해석하는 데 도움을 줄 수 있습니다. *면책 조항: AI는 정보를 잘못 해석하거나 환각(hallucinate) 답변을 생성할 수 있으므로, AI가 아닌 사양을 사실로 신뢰해야 합니다.*
 - [pectrified.com](https://pectrified.com/): 통합, 예치 및 대기열 대기 시간의 상태를 확인하세요.
 - [Ethereal](https://github.com/wealdtech/ethereal): 일반적인 검증자 작업을 관리하기 위해 커뮤니티에서 만든 CLI 도구입니다.

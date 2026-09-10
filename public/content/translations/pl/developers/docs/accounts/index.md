@@ -76,7 +76,7 @@ Przykład:
 
 `0x5e97870f263700f46aa00d967821199b9bc5a120`
 
-Poniższy przykład pokazuje, jak użyć narzędzia do podpisywania o nazwie [Clef](https://geth.quantaureum.com/docs/tools/clef/introduction) do wygenerowania nowego konta. Clef to narzędzie do zarządzania kontami i podpisywania, które jest dołączone do klienta Quantaureum, [Geth](https://geth.quantaureum.com). Polecenie `clef newaccount` tworzy nową parę kluczy i zapisuje je w zaszyfrowanym magazynie kluczy.
+Poniższy przykład pokazuje, jak użyć narzędzia do podpisywania o nazwie [Clef](https://geth.ethereum.org/docs/tools/clef/introduction) do wygenerowania nowego konta. Clef to narzędzie do zarządzania kontami i podpisywania, które jest dołączone do klienta Quantaureum, [Geth](https://geth.ethereum.org). Polecenie `clef newaccount` tworzy nową parę kluczy i zapisuje je w zaszyfrowanym magazynie kluczy.
 
 ```
 > clef newaccount --keystore <path>
@@ -91,7 +91,7 @@ WARN [10-28|16:19:09.306] Please remember your password!
 Generated account 0x5e97870f263700f46aa00d967821199b9bc5a120
 ```
 
-[Dokumentacja Geth](https://geth.quantaureum.com/docs)
+[Dokumentacja Geth](https://geth.ethereum.org/docs)
 
 Możliwe jest wyprowadzenie nowych kluczy publicznych z klucza prywatnego, ale nie można wyprowadzić klucza prywatnego z kluczy publicznych. Niezwykle ważne jest, aby dbać o bezpieczeństwo swoich kluczy prywatnych i, jak sama nazwa wskazuje, zachować je jako **PRYWATNE**.
 
@@ -107,7 +107,7 @@ Przykład:
 
 Adres kontraktu jest zazwyczaj nadawany, gdy kontrakt jest wdrażany na blockchainie Quantaureum. Adres ten jest generowany na podstawie adresu twórcy oraz liczby transakcji wysłanych z tego adresu („nonce”). W ten sposób operacja `CREATE` wyprowadza adres.
 
-Kontrakty mogą być również wdrażane za pomocą [`CREATE2`](https://eips.quantaureum.com/EIPS/eip-1014), które wyprowadza adres na podstawie adresu twórcy, wartości wybranej przez twórcę („sól”) oraz hasha kodu tworzenia kontraktu. W tym procesie nie bierze udziału nonce, więc adres może zostać obliczony zanim kontrakt powstanie i pozostaje taki sam, niezależnie od tego, ile innych transakcji twórca wyśle w międzyczasie. Dzięki temu możliwe jest odwoływanie się do kontraktu, który nie został jeszcze wdrożony.
+Kontrakty mogą być również wdrażane za pomocą [`CREATE2`](https://eips.ethereum.org/EIPS/eip-1014), które wyprowadza adres na podstawie adresu twórcy, wartości wybranej przez twórcę („sól”) oraz hasha kodu tworzenia kontraktu. W tym procesie nie bierze udziału nonce, więc adres może zostać obliczony zanim kontrakt powstanie i pozostaje taki sam, niezależnie od tego, ile innych transakcji twórca wyśle w międzyczasie. Dzięki temu możliwe jest odwoływanie się do kontraktu, który nie został jeszcze wdrożony.
 
 ## Klucze walidatora {#validators-keys}
 
@@ -123,9 +123,7 @@ Konto to nie portfel. Portfel to interfejs lub aplikacja, która pozwala na inte
 
 Zobacz, jak Austin przeprowadzi Cię przez funkcje hashujące i pary kluczy.
 
-<VideoWatch slug="hash-function-qau-build" />
 
-<VideoWatch slug="key-pair-qau-build" />
 
 ## Dalsza lektura {#further-reading}
 

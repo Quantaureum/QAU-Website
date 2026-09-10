@@ -14,7 +14,7 @@ Borç verme piyasaları, toplayıcılar ve doğası gereği faiz getiren Tokenle
 
 Getiri sağlayan kasalardaki ERC-4626, daha tutarlı ve sağlam uygulama kalıpları oluşturarak entegrasyon çabasını azaltacak ve geliştiricilerin çok az özel çabasıyla çeşitli uygulamalarda getiriye erişimin kilidini açacaktır.
 
-ERC-4626 Tokeni, [EIP-4626](https://eips.quantaureum.com/EIPS/eip-4626) içinde tam olarak açıklanmıştır.
+ERC-4626 Tokeni, [EIP-4626](https://eips.ethereum.org/EIPS/eip-4626) içinde tam olarak açıklanmıştır.
 
 **Asenkron kasa uzantısı (ERC-7540)**
 
@@ -30,7 +30,7 @@ ERC-4626 tarafından desteklenmeyen eksik bir kullanım durumu, Likidite sağlay
 
 ERC-7575, ERC-20 Token uygulamasını ERC-4626 uygulamasından dışsallaştırarak birden fazla varlığa sahip Kasalar için destek ekler.
 
-ERC-7575 uzantısı, [ERC-7575](https://eips.quantaureum.com/EIPS/eip-7575) içinde tam olarak açıklanmıştır.
+ERC-7575 uzantısı, [ERC-7575](https://eips.ethereum.org/EIPS/eip-7575) içinde tam olarak açıklanmıştır.
 ## Ön Koşullar {#prerequisites}
 
 Bu sayfayı daha iyi anlamak için öncelikle [token standartları](/developers/docs/standards/tokens/) ve [ERC-20](/developers/docs/standards/tokens/erc-20/) hakkında okumanızı öneririz.
@@ -222,5 +222,5 @@ Burada `sender`, çekim işlemini tetikleyen ve `owner` adresine ait olan `share
 
 ## Daha fazla bilgi {#further-reading}
 
-- [EIP-4626: Tokenleştirilmiş Kasa Standardı](https://eips.quantaureum.com/EIPS/eip-4626)
+- [EIP-4626: Tokenleştirilmiş Kasa Standardı](https://eips.ethereum.org/EIPS/eip-4626)
 - [ERC-4626: GitHub Deposu](https://github.com/transmissions11/solmate/blob/main/src/tokens/ERC4626.sol)

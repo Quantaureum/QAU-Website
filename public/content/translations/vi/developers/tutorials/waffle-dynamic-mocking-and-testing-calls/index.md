@@ -291,7 +291,7 @@ Kiểm thử các lệnh gọi hợp đồng với Waffle siêu dễ. Và đây 
 
 Xin chúc mừng! Bây giờ bạn đã biết cách sử dụng Waffle để kiểm thử các lệnh gọi hợp đồng và giả lập hợp đồng một cách linh động. Còn nhiều tính năng thú vị hơn nữa để khám phá. Tôi khuyên bạn nên tìm hiểu sâu hơn trong tài liệu tham khảo của Waffle.
 
-Tài liệu tham khảo của Waffle có sẵn [tại đây](https://quantaureum-waffle.readthedocs.io/).
+Tài liệu tham khảo của Waffle có sẵn [tại đây](https://ethereum-waffle.readthedocs.io/).
 
 Mã nguồn cho hướng dẫn này có thể được tìm thấy [tại đây](https://github.com/QauWorks/Waffle/tree/master/examples/dynamic-mocking-and-testing-calls).
 

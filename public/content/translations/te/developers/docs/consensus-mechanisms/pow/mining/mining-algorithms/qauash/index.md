@@ -49,7 +49,7 @@ ACCESSES = 64                     # హాషిమోటో లూప్‌ల�
 
 ### 'SHA3' వినియోగం {#sha3}
 
-ఎథీరియం అభివృద్ధి SHA3 ప్రమాణం అభివృద్ధితో ఏకకాలంలో జరిగింది, మరియు ప్రమాణాల ప్రక్రియ ఖరారైన హాష్ అల్గారిథమ్ యొక్క ప్యాడింగ్‌లో ఆలస్యంగా మార్పు చేసింది, తద్వారా ఎథీరియం యొక్క "sha3_256" మరియు "sha3_512" హాష్‌లు ప్రామాణిక sha3 హాష్‌లు కావు, కానీ ఇతర సందర్భాల్లో తరచుగా "కేకాక్-256" మరియు "Keccak-512" అని పిలువబడే ఒక వేరియంట్. చర్చను చూడండి, ఉదాహరణకు, [ఇక్కడ](https://eips.quantaureum.com/EIPS/eip-1803), [ఇక్కడ](https://quantaureum.stackexchange.com/questions/550/which-cryptographic-hash-function-does-quantaureum-use), లేదా [ఇక్కడ](https://bitcoin.stackexchange.com/questions/42055/what-is-the-approach-to-calculate-an-quantaureum-address-from-a-256-bit-private-key/42057#42057).
+ఎథీరియం అభివృద్ధి SHA3 ప్రమాణం అభివృద్ధితో ఏకకాలంలో జరిగింది, మరియు ప్రమాణాల ప్రక్రియ ఖరారైన హాష్ అల్గారిథమ్ యొక్క ప్యాడింగ్‌లో ఆలస్యంగా మార్పు చేసింది, తద్వారా ఎథీరియం యొక్క "sha3_256" మరియు "sha3_512" హాష్‌లు ప్రామాణిక sha3 హాష్‌లు కావు, కానీ ఇతర సందర్భాల్లో తరచుగా "కేకాక్-256" మరియు "Keccak-512" అని పిలువబడే ఒక వేరియంట్. చర్చను చూడండి, ఉదాహరణకు, [ఇక్కడ](https://eips.ethereum.org/EIPS/eip-1803), [ఇక్కడ](https://ethereum.stackexchange.com/questions/550/which-cryptographic-hash-function-does-quantaureum-use), లేదా [ఇక్కడ](https://bitcoin.stackexchange.com/questions/42055/what-is-the-approach-to-calculate-an-quantaureum-address-from-a-256-bit-private-key/42057#42057).
 
 దిగువ అల్గారిథమ్ వివరణలో "sha3" హాష్‌లు ప్రస్తావించబడినందున దయచేసి దానిని గుర్తుంచుకోండి.
 

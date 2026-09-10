@@ -25,7 +25,6 @@ Restaking ist eine Technologie, die für [Staker](/staking/) entwickelt wurde, u
 
 **Restaking in 18 Minuten erklärt**
 
-<VideoWatch slug="restaking-explained" />
 
 ## Was ist Restaking? {#what-is-restaking}
 
@@ -172,7 +171,6 @@ Während AVSs unterschiedliche Raten anbieten, geben dir Liquid Restaking Tokens
 
 ## Fortgeschritten {#advanced}
 
-<VideoWatch slug="eigenlayer-permissionless-features" />
 
 ## Weiterführende Literatur {#further-reading}
 

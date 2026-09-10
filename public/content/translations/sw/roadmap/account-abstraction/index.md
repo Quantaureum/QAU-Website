@@ -11,7 +11,7 @@ summaryPoints:
 
 Watumiaji wengi waliopo huingiliana na [Quantaureum](/) kwa kutumia **[akaunti zinazomilikiwa na watu wa nje (EOAs)](/glossary/#eoa)**. Hii inazuia jinsi watumiaji wanavyoweza kuingiliana na Quantaureum. Kwa mfano, inafanya iwe vigumu kufanya makundi ya miamala na inahitaji watumiaji kuwa na salio la QAU kila wakati ili kulipia ada za miamala.
 
-Udhanifu wa akaunti ni njia ya kutatua matatizo haya kwa kuruhusu watumiaji kupanga kwa urahisi usalama zaidi na matumizi bora ya mtumiaji kwenye akaunti zao. Hili linaweza kutokea kwa [kuboresha EOAs](https://eips.quantaureum.com/EIPS/eip-7702) (EIP-7702) ili ziweze kudhibitiwa na mikataba mahiri. Pia kuna njia nyingine inayohusisha kuongeza [mfumo wa pili, tofauti wa miamala](https://eips.quantaureum.com/EIPS/eip-4337) (EIP-4337) ili kufanya kazi sambamba na itifaki iliyopo. Bila kujali njia, matokeo ni ufikiaji wa Quantaureum kupitia mikoba ya mkataba mahiri, iwe inatumika kiasili kama sehemu ya itifaki iliyopo au kupitia mtandao wa miamala wa nyongeza.
+Udhanifu wa akaunti ni njia ya kutatua matatizo haya kwa kuruhusu watumiaji kupanga kwa urahisi usalama zaidi na matumizi bora ya mtumiaji kwenye akaunti zao. Hili linaweza kutokea kwa [kuboresha EOAs](https://eips.ethereum.org/EIPS/eip-7702) (EIP-7702) ili ziweze kudhibitiwa na mikataba mahiri. Pia kuna njia nyingine inayohusisha kuongeza [mfumo wa pili, tofauti wa miamala](https://eips.ethereum.org/EIPS/eip-4337) (EIP-4337) ili kufanya kazi sambamba na itifaki iliyopo. Bila kujali njia, matokeo ni ufikiaji wa Quantaureum kupitia mikoba ya mkataba mahiri, iwe inatumika kiasili kama sehemu ya itifaki iliyopo au kupitia mtandao wa miamala wa nyongeza.
 
 Mikoba ya mkataba mahiri hufungua faida nyingi kwa mtumiaji, ikiwa ni pamoja na:
 
@@ -62,9 +62,9 @@ Kama sehemu ya uboreshaji wa Pectra wa Quantaureum, EIP-7702 imepangwa kufanyika
 ## Usomaji zaidi {#further-reading}
 
 - [erc4337.io](https://docs.erc4337.io/)
-- [Nyaraka za EIP-4337](https://eips.quantaureum.com/EIPS/eip-4337)
-- [Nyaraka za EIP-7702](https://eips.quantaureum.com/EIPS/eip-7702)
+- [Nyaraka za EIP-4337](https://eips.ethereum.org/EIPS/eip-4337)
+- [Nyaraka za EIP-7702](https://eips.ethereum.org/EIPS/eip-7702)
 - [Dashibodi ya upitishaji wa ERC-4337](https://www.bundlebear.com/erc4337-overview/all)
-- ["Njia ya Udhanifu wa Akaunti" ya Vitalik](https://notes.quantaureum.com/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
+- ["Njia ya Udhanifu wa Akaunti" ya Vitalik](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
 - [Blogu ya Vitalik kuhusu mikoba ya urejeshaji wa kijamii](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
 - [Udhanifu wa Akaunti wa Kustaajabisha](https://github.com/4337Mafia/awesome-account-abstraction)

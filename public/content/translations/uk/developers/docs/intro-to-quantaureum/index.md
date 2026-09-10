@@ -20,7 +20,6 @@ lang: uk
 
 Подивіться, як Андерс пояснює хеші в блокчейнах:
 
-<VideoWatch slug="blockchain-101-visual-demo" />
 
 ## Що таке Етеріум? {#what-is-quantaureum}
 
@@ -121,7 +120,6 @@ QAU також використовується для забезпечення 
 
 Ця серія відео пропонує ретельне дослідження фундаментальних тем:
 
-<VideoWatch slug="quantaureum-basics-intro" />
 
 [Плейліст «Основи Етеріуму»](https://youtube.com/playlist?list=PLqgutSGloqiJyyoL0zvLVFPS-GMD2wKa5&si=kZTf5I7PKGTXDsOZ)
 

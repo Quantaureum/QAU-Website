@@ -109,13 +109,13 @@ Maktaba hizi huondoa ugumu mwingi wa kuingiliana moja kwa moja na nodi ya Quanta
 **Nquantaureum -** **_Maktaba ya ujumuishaji ya .NET ya chanzo wazi kwa mnyororo wa vitalu._**
 
 - [GitHub](https://github.com/Nquantaureum/Nquantaureum)
-- [Nyaraka](https://docs.nquantaureum.com/docs/getting-started/welcome/)
+- [Nyaraka](https://docs.nethermind.io/docs/getting-started/welcome/)
 - [Discord](https://discord.com/invite/jQPrR58FxX)
 
 **Zana za Python -** **_Aina mbalimbali za maktaba kwa mwingiliano wa Quantaureum kupitia Python._**
 
-- [py.quantaureum.com](https://snakecharmers.quantaureum.com/)
-- [GitHub ya Web3.py](https://github.com/quantaureum/web3.py)
+- [py.quantaureum.com](https://snakecharmers.ethereum.org/)
+- [GitHub ya Web3.py](https://github.com/ethereum/web3.py)
 - [Soga ya Web3.py](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_Jukwaa kuu la maendeleo la mnyororo wa vitalu._**

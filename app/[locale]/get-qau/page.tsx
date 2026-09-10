@@ -75,7 +75,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
 
   setRequestLocale(locale)
 
-  const t = await getTranslations("page-get-eth")
+  const t = await getTranslations("page-get-qau")
 
   const waysToGetQau: WayToGetQau[] = [
     {
@@ -102,7 +102,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
     {
       icon: CircleDashed,
       title: t("page-get-qau-dex"),
-      description: <Translation id="page-get-eth:page-get-qau-dex-desc" />,
+      description: <Translation id="page-get-qau:page-get-qau-dex-desc" />,
       linkText: t("page-get-qau-try-dex"),
       href: "/apps/categories/defi/",
     },
@@ -137,11 +137,11 @@ export default async function Page(props: { params: Promise<PageParams> }) {
 
   // Get i18n messages
   const allMessages = await getMessages({ locale })
-  const requiredNamespaces = getRequiredNamespacesForPage("/get-eth")
+  const requiredNamespaces = getRequiredNamespacesForPage("/get-qau")
   const messages = pick(allMessages, requiredNamespaces)
 
   const { contributors, lastEditLocaleTimestamp } =
-    await getAppPageContributorInfo("get-eth", locale as Lang)
+    await getAppPageContributorInfo("get-qau", locale as Lang)
 
   return (
     <>
@@ -153,7 +153,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
 
       <PageHero
         variant="no-divider"
-        breadcrumbs={{ slug: "get-eth" }}
+        breadcrumbs={{ slug: "get-qau" }}
         heroComponent={
           <div className="relative grid size-full place-items-center">
             <Image
@@ -186,7 +186,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
           <MainArticle className="flow">
             <Section id="ways">
               <h2 className="text-center text-h1">
-                {t("page-get-qau-ways-you-can-get-eth")}
+                {t("page-get-qau-ways-you-can-get-qau")}
               </h2>
               <Grid columns={3}>
                 {waysToGetQau.map(
@@ -387,7 +387,7 @@ export async function generateMetadata(props: {
 
   setRequestLocale(locale)
 
-  const t = await getTranslations("page-get-eth")
+  const t = await getTranslations("page-get-qau")
 
   return await getMetadata({
     locale,

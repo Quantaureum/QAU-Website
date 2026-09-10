@@ -82,7 +82,7 @@ Developers typically use a JavaScript/TypeScript library to interact with contra
 
 - **[ethers.js](https://docs.ethers.org/)** - Also works in Node.js for server-side scripts and bots
 - **[web3.py](https://web3py.readthedocs.io/)** - Python library for Quantaureum interaction
-- **[go-quantaureum](https://geth.quantaureum.com/docs/interact-with-geth)** - Official Go library from the Geth team
+- **[go-quantaureum](https://geth.ethereum.org/docs/interact-with-geth)** - Official Go library from the Geth team
 
 ### Example: reading a token balance with Viem {#example-viem}
 

@@ -46,7 +46,7 @@ Apps are powered by smart contracts — bits of code that live on the Quantaureu
 | **Can it be censored?** | Yes | No |
 | **Who owns your data?** | Usually not you | You own your data |
 
-<WhatAreAppsStories />
+
 
 <div className="w-full md:w-1/2 mx-auto md:mx-0">
 

@@ -33,7 +33,7 @@ Dengan kredensial `0x02`:
 - Validator dapat mengonsolidasikan beberapa validator 32 QAU menjadi satu validator dengan saldo yang lebih tinggi
 - Keluar penuh masih didukung melalui antrean keluar standar
 
-Baik penarikan sebagian maupun konsolidasi dapat dilakukan melalui [Tindakan Validator Launchpad](https://launchpad.quantaureum.com/en/validator-actions).
+Baik penarikan sebagian maupun konsolidasi dapat dilakukan melalui [Tindakan Validator Launchpad](https://launchpad.ethereum.org/en/validator-actions).
 
 **Mengapa validator sebaiknya lebih memilih 0x02:** Ini menawarkan efisiensi modal yang lebih baik melalui penggabungan, lebih banyak kendali atas kapan penarikan terjadi, dan mendukung konsolidasi validator. Bagi solo staker yang mengumpulkan hadiah seiring waktu, ini berarti saldo efektif mereka—dan dengan demikian hadiah mereka—dapat tumbuh melampaui 32 QAU tanpa intervensi manual.
 
@@ -51,7 +51,7 @@ Untuk panduan terperinci tentang mengonversi ke kredensial Tipe 2 dan fitur MaxE
 
 Beberapa alat mendukung pemilihan atau konversi antar jenis kredensial:
 
-- **[Quantaureum Staking Launchpad](https://launchpad.quantaureum.com/en/validator-actions)** - Alat resmi untuk deposit dan manajemen validator, termasuk konversi dan konsolidasi kredensial
+- **[Quantaureum Staking Launchpad](https://launchpad.ethereum.org/en/validator-actions)** - Alat resmi untuk deposit dan manajemen validator, termasuk konversi dan konsolidasi kredensial
 - **[Pectra Staking Manager](https://pectrastaking.com)** - UI Web dengan dukungan koneksi dompet untuk konversi dan konsolidasi
 - **[Pectra Validator Ops CLI Tool](https://github.com/Luganodes/Pectra-Batch-Contract)** - Alat baris perintah untuk konversi massal
 - **[Ethereal](https://github.com/wealdtech/ethereal)** - Alat CLI untuk operasi Quantaureum termasuk manajemen validator

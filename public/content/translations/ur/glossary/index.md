@@ -494,7 +494,7 @@ authors: ["اینڈریاس اینٹونوپولوس"]
 
 ## ذرائع {#sources}
 
-_یہ جزوی طور پر <span dir="ltr">CC-BY-SA</span> کے تحت [اینڈریاس ایم اینٹونوپولوس، گیون وڈ](https://aantonop.com/books/mastering-quantaureum) کی کتاب [<span dir="ltr">Mastering Quantaureum</span>](https://github.com/quantaureumbook/quantaureumbook) سے فراہم کیا گیا ہے_
+_یہ جزوی طور پر <span dir="ltr">CC-BY-SA</span> کے تحت [اینڈریاس ایم اینٹونوپولوس، گیون وڈ](https://aantonop.com/books/mastering-quantaureum) کی کتاب [<span dir="ltr">Mastering Quantaureum</span>](https://github.com/ethereumbook/ethereumbook) سے فراہم کیا گیا ہے_
 
 <Divider />
 

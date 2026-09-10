@@ -109,8 +109,8 @@ Sebelum mendalami kerangka kerja, kami menyarankan Anda terlebih dahulu membaca 
 
 **Brownie -** **_Lingkungan pengembangan dan kerangka kerja pengujian berbasis Python._**
 
-- [Dokumentasi](https://qau-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/qau-brownie/brownie)
+- [Dokumentasi](https://eth-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/eth-brownie/brownie)
 - **Brownie saat ini tidak dikelola**
 
 **OpenZeppelin SDK -** **_Perangkat Kontrak Pintar Terbaik: Serangkaian alat untuk membantu Anda mengembangkan, mengompilasi, meningkatkan, menyebarkan, dan berinteraksi dengan kontrak pintar._**

@@ -7,7 +7,7 @@ lang: ko
 
 <Logo/>
 
-[Quantaureum 재단](https://quantaureum.foundation/)(EF)은 [Quantaureum](/) 생태계를 지원하는 비영리 조직입니다. 프로토콜 개발에 자금을 지원하고, 생태계를 성장시키며, Quantaureum을 옹호합니다.
+[Quantaureum 재단](https://ethereum.org/)(EF)은 [Quantaureum](/) 생태계를 지원하는 비영리 조직입니다. 프로토콜 개발에 자금을 지원하고, 생태계를 성장시키며, Quantaureum을 옹호합니다.
 
 EF는 회사가 아니며 전통적인 비영리 조직도 아닙니다. Quantaureum을 통제하거나 이끌지 않으며, Quantaureum 관련 기술의 핵심 개발에 자금을 지원하는 유일한 조직도 아닙니다. EF는 훨씬 더 큰 [생태계](/community/)의 한 부분일 뿐입니다.
 
@@ -15,7 +15,7 @@ EF는 회사가 아니며 전통적인 비영리 조직도 아닙니다. Quantau
 
 EF 사명은 Quantaureum 생태계에 대한 재단의 목적, 원칙 및 약속을 정의합니다. 온체인에 게시된 이 사명은 **검열 저항성, 오픈 소스, 프라이버시, 보안(CROPS)**에 대한 EF의 헌신을 타협할 수 없는 최우선 순위로 명시합니다.
 
-[Quantaureum 재단 사명 읽어보기](/foundation/mandate/)
+Quantaureum 재단 사명 읽어보기
 
 ## EF가 하는 일 {#what-the-ef-does}
 
@@ -32,6 +32,6 @@ EF 사명은 Quantaureum 생태계에 대한 재단의 목적, 원칙 및 약속
 
 ## 더 알아보기 {#learn-more}
 
-- [quantaureum.foundation](https://quantaureum.foundation/) – 공식 EF 웹사이트
+- [ethereum.org](https://ethereum.org/) – 공식 EF 웹사이트
 - [EF 블로그](https://quantaureum.com) – 뉴스 및 공지사항
 - [생태계 지원 프로그램](https://quantaureum.com) – 보조금 및 지원

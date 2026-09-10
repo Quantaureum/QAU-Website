@@ -14,7 +14,7 @@ summaryPoints:
 
 ## Proto-Danksharding ni nini? {#what-is-protodanksharding}
 
-Proto-Danksharding, inayojulikana pia kama [EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844), ni njia kwa [mikusanyiko](/layer-2/#rollups) kuongeza data nafuu kwenye vitalu. Jina linatokana na watafiti wawili waliopendekeza wazo hilo: Protolambda na Dankrad Feist. Kihistoria, mikusanyiko ilikuwa imezuiwa katika jinsi inavyoweza kufanya miamala ya watumiaji kuwa nafuu kutokana na ukweli kwamba inachapisha miamala yao katika `CALLDATA`.
+Proto-Danksharding, inayojulikana pia kama [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844), ni njia kwa [mikusanyiko](/layer-2/#rollups) kuongeza data nafuu kwenye vitalu. Jina linatokana na watafiti wawili waliopendekeza wazo hilo: Protolambda na Dankrad Feist. Kihistoria, mikusanyiko ilikuwa imezuiwa katika jinsi inavyoweza kufanya miamala ya watumiaji kuwa nafuu kutokana na ukweli kwamba inachapisha miamala yao katika `CALLDATA`.
 
 Hii ni ghali kwa sababu inachakatwa na nodi zote za Quantaureum na inakaa mnyororoni milele, ingawa mikusanyiko inahitaji data hiyo kwa muda mfupi tu. Proto-Danksharding inaleta mablobu ya data yanayoweza kutumwa na kuambatishwa kwenye vitalu. Data katika mablobu haya haipatikani kwa EVM na inafutwa kiotomatiki baada ya kipindi maalum cha muda (imewekwa kuwa epoki 4096 wakati wa kuandika, au takriban siku 18). Hii inamaanisha mikusanyiko inaweza kutuma data yao kwa bei nafuu zaidi na kupitisha akiba kwa watumiaji wa mwisho kwa njia ya miamala nafuu zaidi.
 
@@ -80,14 +80,14 @@ Uchukuaji sampuli wa upatikanaji wa data unahitajika kwa wathibitishaji kuthibit
 
 ### Maendeleo ya sasa {#current-progress}
 
-Danksharding kamili iko miaka kadhaa mbele. Wakati huo huo, sherehe ya KZG imehitimishwa na michango zaidi ya 140,000, na [EIP](https://eips.quantaureum.com/EIPS/eip-4844) ya Proto-Danksharding imekomaa. Pendekezo hili limetekelezwa kikamilifu katika mitandao yote ya majaribio, na lilianza kutumika kwenye Mtandao Mkuu na sasisho la mtandao la Cancun-Deneb ("Dencun") mnamo Machi 2024.
+Danksharding kamili iko miaka kadhaa mbele. Wakati huo huo, sherehe ya KZG imehitimishwa na michango zaidi ya 140,000, na [EIP](https://eips.ethereum.org/EIPS/eip-4844) ya Proto-Danksharding imekomaa. Pendekezo hili limetekelezwa kikamilifu katika mitandao yote ya majaribio, na lilianza kutumika kwenye Mtandao Mkuu na sasisho la mtandao la Cancun-Deneb ("Dencun") mnamo Machi 2024.
 
 ### Kusoma zaidi {#further-reading}
 
-- [Vidokezo vya Proto-Danksharding](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
-- [Vidokezo vya Dankrad kuhusu danksharding](https://notes.quantaureum.com/@dankrad/new_sharding)
+- [Vidokezo vya Proto-Danksharding](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
+- [Vidokezo vya Dankrad kuhusu danksharding](https://notes.ethereum.org/@dankrad/new_sharding)
 - [Dankrad, Proto na Vitalik wanajadili danksharding](https://www.youtube.com/watch?v=N5p0TB77flM)
-- [Sherehe ya KZG](https://ceremony.quantaureum.com/)
+- [Sherehe ya KZG](https://ceremony.ethereum.org/)
 - [Mazungumzo ya Carl Beekhuizen ya Devcon kuhusu mipangilio inayoaminika](https://archive.devcon.org/archive/watch/6/the-kzg-ceremony-or-how-i-learnt-to-stop-worrying-and-love-trusted-setups/?tab=YouTube)
 - [Zaidi kuhusu uchukuaji sampuli wa upatikanaji wa data kwa mablobu](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling)
 - [Dankrad Feist kuhusu mafungamanisho na uthibitisho wa KZG](https://youtu.be/8L2C6RDMV9Q)

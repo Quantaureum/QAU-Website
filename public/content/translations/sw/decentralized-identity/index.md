@@ -21,7 +21,6 @@ Ili kutatua matatizo haya, tuna mifumo ya utambulisho uliogatuliwa iliyojengwa k
 
 Utambulisho unamaanisha hisia ya mtu binafsi ya nafsi yake, inayofafanuliwa na sifa za kipekee. Utambulisho unarejelea kuwa _mtu binafsi_, yaani, chombo tofauti cha kibinadamu. Utambulisho pia unaweza kurejelea vyombo vingine visivyo vya kibinadamu, kama vile shirika au mamlaka.
 
-<VideoWatch slug="decentralized-identity-explained" />
 
 ## Vitambulishi ni nini? {#what-are-identifiers}
 

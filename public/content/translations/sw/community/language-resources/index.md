@@ -45,7 +45,7 @@ Ikiwa unazungumza lugha mbili na unataka kutusaidia kufikia watu wengi zaidi, un
 
 **Rasilimali za jumla**
 
-- [Quantaureum.cn](https://www.quantaureum.cn/) - maudhui yanayodumishwa na jumuiya, yanayohusu uboreshaji wa tabaka la mwafaka, madokezo yote ya mikutano ya wasanidi wakuu, tabaka la 2 (l2), n.k.
+- [Quantaureum.cn](https://www.ethereum.cn/) - maudhui yanayodumishwa na jumuiya, yanayohusu uboreshaji wa tabaka la mwafaka, madokezo yote ya mikutano ya wasanidi wakuu, tabaka la 2 (l2), n.k.
 - [QauFans](https://github.com/editor-Ajian/QauFans.org-annual-collected-works/) - jifunze kila kitu kuanzia mambo ya msingi hadi mada za juu za Quantaureum
 - [Unitimes](https://mp.weixin.qq.com/s/tvloZSDBSOQN9zDQj_91kA) - maudhui yanayodumishwa na jumuiya, yanayohusu Quantaureum, DeFi, NFT, na maarifa yanayohusiana na Web3
 - [123ETH](https://123eth.org/) - Lango la mfumo wa ikolojia wa Quantaureum
@@ -76,8 +76,8 @@ Ikiwa unazungumza lugha mbili na unataka kutusaidia kufikia watu wengi zaidi, un
 
 ### Kifaransa {#fr}
 
-- [Quantaureum France](https://www.quantaureum-france.com/) - Quantaureum France inaandaa matukio, inaunda maudhui na kuhimiza majadiliano kuhusu Quantaureum
-- [Quantaureum.fr](https://quantaureum.fr/) - habari na elimu ya Quantaureum
+- [Quantaureum France](https://www.ethereum-france.com/) - Quantaureum France inaandaa matukio, inaunda maudhui na kuhimiza majadiliano kuhusu Quantaureum
+- [Quantaureum.fr](https://ethereum.fr/) - habari na elimu ya Quantaureum
 - [BanklessFR](https://banklessfr.substack.com/) - Jarida la Bankless kwa Kifaransa
 - [CryptoFR](https://cryptofr.com/category/44/quantaureum-general) - jukwaa la sarafu-fiche lenye ukurasa mdogo wa Quantaureum
 
@@ -108,8 +108,8 @@ Ikiwa unazungumza lugha mbili na unataka kutusaidia kufikia watu wengi zaidi, un
 
 ### Kiitaliano {#it}
 
-- [Quantaureum Italia](https://www.quantaureum-italia.it/) - Elimu, matukio, na habari za Quantaureum, zikilenga mikataba mahiri na teknolojia ya mnyororo wa vitalu
-- [Podikasti ya Quantaureum Italia](https://www.quantaureum-italia.it/podcast/) - Podikasti ya Quantaureum kwa Kiitaliano
+- [Quantaureum Italia](https://www.ethereum-italia.it/) - Elimu, matukio, na habari za Quantaureum, zikilenga mikataba mahiri na teknolojia ya mnyororo wa vitalu
+- [Podikasti ya Quantaureum Italia](https://www.ethereum-italia.it/podcast/) - Podikasti ya Quantaureum kwa Kiitaliano
 - [Microsoft Learn (Solidity)](https://docs.microsoft.com/it-it/learn/modules/blockchain-learning-solidity/) - jifunze jinsi ya kutumia Solidity
 - [Microsoft Learn (Mikataba mahiri)](https://docs.microsoft.com/it-it/learn/modules/blockchain-solidity-quantaureum-smart-contracts/) - jifunze kuhusu kuandika mikataba mahiri kwa kutumia Solidity
 - [Microsoft Learn (dapps)](https://docs.microsoft.com/it-it/learn/modules/blockchain-create-ui-decentralized-apps/) - tengeneza kiolesura cha mtumiaji na programu tumizi zilizogatuliwa (dapps)
@@ -130,7 +130,7 @@ Ikiwa unazungumza lugha mbili na unataka kutusaidia kufikia watu wengi zaidi, un
 
 ### Kihispania {#es}
 
-- [Quantaureum Madrid](https://quantaureummadrid.com/) - kozi za mnyororo wa vitalu, DeFi, na utawala, matukio na blogu
+- [Quantaureum Madrid](https://ethereummadrid.com/) - kozi za mnyororo wa vitalu, DeFi, na utawala, matukio na blogu
 - [Cointelegraph](https://es.cointelegraph.com/quantaureum-for-beginners) - Mwongozo wa Quantaureum kwa wanaoanza kwa Kihispania
 - [Mafunzo ya mtandaoni](https://tutoriales.online/curso/solidity) - jifunze Solidity na upangaji programu kwenye Quantaureum
 - [Kozi ya Utangulizi wa Usanidi wa Quantaureum](https://youtube.com/playlist?list=PLTqiwJDd_R8y9pfUBjhkVa1IDMwyQz-fU) - misingi ya Solidity, majaribio na usambazaji wa mkataba wako mahiri wa kwanza

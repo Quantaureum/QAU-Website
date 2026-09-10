@@ -359,7 +359,7 @@ contract PriceConsumerV3 {
 
 బ్లాక్‌చైన్-ఆధారిత ఆటలు లేదా లాటరీ పథకాల వంటి కొన్ని బ్లాక్‌చైన్ అప్లికేషన్‌లు సమర్థవంతంగా పనిచేయడానికి అధిక స్థాయి అనూహ్యత మరియు యాదృచ్ఛికత అవసరం. అయితే, బ్లాక్‌చైన్‌ల నిర్ణయాత్మక అమలు యాదృచ్ఛికతను తొలగిస్తుంది.
 
-అసలు విధానం `blockhash` వంటి సూడోరాండమ్ క్రిప్టోగ్రాఫిక్ ఫంక్షన్‌లను ఉపయోగించడం, కానీ ప్రూఫ్-ఆఫ్-వర్క్ అల్గారిథమ్‌ను పరిష్కరించే [మైనర్‌ల ద్వారా వీటిని తారుమారు చేయవచ్చు](https://quantaureum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.). అలాగే, ఎథీరియం [ప్రూఫ్-ఆఫ్-స్టేక్‌కి మారడం](/roadmap/merge/) అంటే డెవలపర్‌లు ఆన్‌చైన్ యాదృచ్ఛికత కోసం ఇకపై `blockhash`పై ఆధారపడలేరు. బదులుగా బీకన్ చైన్ యొక్క [RANDAO యంత్రాంగం](https://eth2book.info/altair/part2/building_blocks/randomness) యాదృచ్ఛికతకు ప్రత్యామ్నాయ మూలాన్ని అందిస్తుంది.
+అసలు విధానం `blockhash` వంటి సూడోరాండమ్ క్రిప్టోగ్రాఫిక్ ఫంక్షన్‌లను ఉపయోగించడం, కానీ ప్రూఫ్-ఆఫ్-వర్క్ అల్గారిథమ్‌ను పరిష్కరించే [మైనర్‌ల ద్వారా వీటిని తారుమారు చేయవచ్చు](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.). అలాగే, ఎథీరియం [ప్రూఫ్-ఆఫ్-స్టేక్‌కి మారడం](/roadmap/merge/) అంటే డెవలపర్‌లు ఆన్‌చైన్ యాదృచ్ఛికత కోసం ఇకపై `blockhash`పై ఆధారపడలేరు. బదులుగా బీకన్ చైన్ యొక్క [RANDAO యంత్రాంగం](https://eth2book.info/altair/part2/building_blocks/randomness) యాదృచ్ఛికతకు ప్రత్యామ్నాయ మూలాన్ని అందిస్తుంది.
 
 యాదృచ్ఛిక విలువను ఆఫ్‌చైన్‌లో రూపొందించడం మరియు దానిని ఆన్‌చైన్‌కు పంపడం సాధ్యమే, కానీ అలా చేయడం వినియోగదారులపై అధిక విశ్వాస అవసరాలను విధిస్తుంది. అనూహ్య యంత్రాంగాల ద్వారా విలువ నిజంగా సృష్టించబడిందని మరియు రవాణాలో మార్చబడలేదని వారు నమ్మాలి.
 
@@ -421,7 +421,7 @@ contract PriceConsumerV3 {
 - [బ్లాక్‌చెయిన్ ఒరాకిల్ అంటే ఏమిటి?](https://medium.com/better-programming/what-is-a-blockchain-oracle-f5ccab8dbd72) — _పాట్రిక్ కాలిన్స్_
 - [వికేంద్రీకృత ఆరకిల్స్: సమగ్ర అవలోకనం](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) — _జూలియన్ థెవెనార్డ్_
 - [ఎథీరియంలో బ్లాక్‌చెయిన్ ఒరాకిల్‌ను అమలు చేయడం](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-quantaureum-cedc7e26b49e) – _పెడ్రో కోస్టా_
-- [స్మార్ట్ కాంట్రాక్ట్‌లు API కాల్స్ ఎందుకు చేయలేవు?](https://quantaureum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
+- [స్మార్ట్ కాంట్రాక్ట్‌లు API కాల్స్ ఎందుకు చేయలేవు?](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
 - [కాబట్టి మీరు ధరల ఆరకిల్‌ను ఉపయోగించాలనుకుంటున్నారు](https://samczsun.com/so-you-want-to-use-a-price-oracle/) — _samczsun_
 
 **వీడియోలు**
@@ -432,7 +432,7 @@ contract PriceConsumerV3 {
 
 - [Solidityలో ఎథీరియం ప్రస్తుత ధరను ఎలా పొందాలి](https://blog.chain.link/fetch-current-crypto-price-data-solidity/) — _చైన్‌లింక్_
 - [ఆరకిల్ డేటాను వినియోగించడం](https://docs.chroniclelabs.org/Developers/tutorials/Remix) — _Chronicle_
-- [ఆరకిల్స్ ఛాలెంజ్](https://speedrunquantaureum.com/challenge/oracles) - _స్పీడ్‌రన్ ఎథీరియం_
+- [ఆరకిల్స్ ఛాలెంజ్](https://speedrunethermind.io/challenge/oracles) - _స్పీడ్‌రన్ ఎథీరియం_
 
 **ఉదాహరణ ప్రాజెక్ట్‌లు**
 

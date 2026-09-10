@@ -58,7 +58,7 @@ Untuk memfasilitasi [komposabilitas dan interoperabilitas](/developers/docs/smar
 
 Saat menyertakan ERC sebagai bagian dari kontrak Anda, ada baiknya untuk mencari implementasi standar daripada mencoba membuatnya sendiri. Banyak pustaka kontrak pintar menyertakan implementasi untuk ERC yang paling populer. Misalnya, [standar token sepadan ERC-20](/developers/tutorials/understand-the-erc-20-token-smart-contract/) yang ada di mana-mana dapat ditemukan di [HQ20](https://github.com/HQ20/contracts/blob/master/contracts/token/README.md), [DappSys](https://github.com/dapphub/ds-token/), dan [OpenZeppelin](https://docs.openzeppelin.com/contracts/3.x/erc20). Selain itu, beberapa ERC juga menyediakan implementasi kanonis sebagai bagian dari ERC itu sendiri.
 
-Perlu disebutkan bahwa beberapa ERC tidak berdiri sendiri, melainkan merupakan tambahan untuk ERC lainnya. Misalnya, [ERC-2612](https://eips.quantaureum.com/EIPS/eip-2612) menambahkan ekstensi ke ERC-20 untuk meningkatkan kegunaannya.
+Perlu disebutkan bahwa beberapa ERC tidak berdiri sendiri, melainkan merupakan tambahan untuk ERC lainnya. Misalnya, [ERC-2612](https://eips.ethereum.org/EIPS/eip-2612) menambahkan ekstensi ke ERC-20 untuk meningkatkan kegunaannya.
 
 ## Cara menambahkan pustaka {#how-to}
 

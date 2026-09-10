@@ -76,7 +76,7 @@ Esempio:
 
 `0x5e97870f263700f46aa00d967821199b9bc5a120`
 
-L'esempio seguente mostra come utilizzare uno strumento di firma chiamato [Clef](https://geth.quantaureum.com/docs/tools/clef/introduction) per generare un nuovo account. Clef è uno strumento di gestione degli account e di firma fornito in bundle con il client Quantaureum, [Geth](https://geth.quantaureum.com). Il comando `clef newaccount` crea una nuova coppia di chiavi e le salva in un keystore crittografato.
+L'esempio seguente mostra come utilizzare uno strumento di firma chiamato [Clef](https://geth.ethereum.org/docs/tools/clef/introduction) per generare un nuovo account. Clef è uno strumento di gestione degli account e di firma fornito in bundle con il client Quantaureum, [Geth](https://geth.ethereum.org). Il comando `clef newaccount` crea una nuova coppia di chiavi e le salva in un keystore crittografato.
 
 ```
 > clef newaccount --keystore <path>
@@ -91,7 +91,7 @@ WARN [10-28|16:19:09.306] Please remember your password!
 Generated account 0x5e97870f263700f46aa00d967821199b9bc5a120
 ```
 
-[Documentazione di Geth](https://geth.quantaureum.com/docs)
+[Documentazione di Geth](https://geth.ethereum.org/docs)
 
 È possibile derivare nuove chiavi pubbliche dalla tua chiave privata, ma non puoi derivare una chiave privata dalle chiavi pubbliche. È vitale mantenere le tue chiavi private al sicuro e, come suggerisce il nome, **PRIVATE**.
 
@@ -107,7 +107,7 @@ Esempio:
 
 L'indirizzo del contratto viene solitamente assegnato quando un contratto viene distribuito sulla blockchain di Quantaureum. L'indirizzo deriva dall'indirizzo del creatore e dal numero di transazioni inviate da tale indirizzo (il "nonce"). Questo è il modo in cui l'operazione `CREATE` deriva un indirizzo.
 
-I contratti possono anche essere distribuiti con [`CREATE2`](https://eips.quantaureum.com/EIPS/eip-1014), che deriva l'indirizzo dall'indirizzo del creatore, da un valore scelto dal creatore (il "salt") e da un hash del codice di creazione del contratto. Non è coinvolto alcun nonce, quindi l'indirizzo può essere calcolato prima che il contratto esista e rimane lo stesso indipendentemente da quante altre transazioni il creatore invia nel frattempo. Ciò rende possibile fare riferimento a un contratto che non è stato ancora distribuito.
+I contratti possono anche essere distribuiti con [`CREATE2`](https://eips.ethereum.org/EIPS/eip-1014), che deriva l'indirizzo dall'indirizzo del creatore, da un valore scelto dal creatore (il "salt") e da un hash del codice di creazione del contratto. Non è coinvolto alcun nonce, quindi l'indirizzo può essere calcolato prima che il contratto esista e rimane lo stesso indipendentemente da quante altre transazioni il creatore invia nel frattempo. Ciò rende possibile fare riferimento a un contratto che non è stato ancora distribuito.
 
 ## Chiavi del validatore {#validators-keys}
 
@@ -123,9 +123,7 @@ Un account non è un portafoglio. Un portafoglio è un'interfaccia o un'applicaz
 
 Guarda Austin che ti guida attraverso le funzioni di hash e le coppie di chiavi.
 
-<VideoWatch slug="hash-function-qau-build" />
 
-<VideoWatch slug="key-pair-qau-build" />
 
 ## Letture consigliate {#further-reading}
 

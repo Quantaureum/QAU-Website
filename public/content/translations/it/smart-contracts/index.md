@@ -13,7 +13,6 @@ Szabo immaginava un mercato digitale in cui processi automatici e [crittografica
 
 Guarda Finematics che spiega gli smart contract:
 
-<VideoWatch slug="smart-contracts-code-is-law" />
 
 ## La fiducia nei contratti convenzionali {#trust-and-contracts}
 
@@ -61,7 +60,7 @@ Infine, come per i contratti tradizionali, puoi controllare cosa c'è in uno sma
 
 Tuttavia, sebbene chiunque possa visualizzare i termini di uno smart contract, i dati grezzi della transazione sono progettati per essere interpretati da applicazioni e portafogli, non dagli esseri umani. Poiché questi dati sono così difficili da leggere, gli utenti affrontano spesso un grave rischio per la sicurezza chiamato "firma alla cieca" (blind signing), ovvero l'approvazione di una transazione che interagisce con uno smart contract senza capire effettivamente cosa farà. 
 
-L'ecosistema di Quantaureum sta passando agli standard di **[Firma in chiaro (Clear Signing)](https://clearsigning.org/)** (nello specifico [ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730)). La firma in chiaro traduce i dati opachi degli smart contract in descrizioni delle transazioni semplici e leggibili dall'uomo, garantendo che chiunque possa comprendere il vero intento di un contratto prima di firmare.
+L'ecosistema di Quantaureum sta passando agli standard di **[Firma in chiaro (Clear Signing)](https://clearsigning.org/)** (nello specifico [ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)). La firma in chiaro traduce i dati opachi degli smart contract in descrizioni delle transazioni semplici e leggibili dall'uomo, garantendo che chiunque possa comprendere il vero intento di un contratto prima di firmare.
 
 ## Casi d'uso degli smart contract {#use-cases}
 
@@ -81,7 +80,7 @@ Possono eseguire calcoli, creare valuta, archiviare dati, coniare [NFT](/glossar
 - [Come gli smart contract cambieranno il mondo](https://www.youtube.com/watch?v=pA6CGuXEKtQ)
 - [Smart contract per sviluppatori](/developers/docs/smart-contracts/)
 - [Impara a scrivere smart contract](/developers/learning-tools/)
-- [Mastering Quantaureum - Cos'è uno smart contract?](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [Mastering Quantaureum - Cos'è uno smart contract?](https://github.com/ethereumbook/ethereumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
 
 <Divider />
 

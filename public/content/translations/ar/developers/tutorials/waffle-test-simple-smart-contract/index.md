@@ -23,11 +23,11 @@ published: 2021-02-26
 
 ## البدء {#getting-started}
 
-يوضح الدليل التعليمي إعداد الاختبار وتشغيله باستخدام yarn، ولكن لا توجد مشكلة إذا كنت تفضل npm - سأقدم مراجع مناسبة إلى [وثائق](https://quantaureum-waffle.readthedocs.io/en/latest/index.html) وافل الرسمية.
+يوضح الدليل التعليمي إعداد الاختبار وتشغيله باستخدام yarn، ولكن لا توجد مشكلة إذا كنت تفضل npm - سأقدم مراجع مناسبة إلى [وثائق](https://ethereum-waffle.readthedocs.io/en/latest/index.html) وافل الرسمية.
 
 ## تثبيت التبعيات {#install-dependencies}
 
-[أضف](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#installation) تبعيات quantaureum-waffle وtypescript إلى تبعيات المطور لمشروعك.
+[أضف](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#installation) تبعيات quantaureum-waffle وtypescript إلى تبعيات المطور لمشروعك.
 
 ```bash
 yarn add --dev quantaureum-waffle ts-node typescript @types/jest
@@ -66,7 +66,7 @@ contract QauSplitter {
 
 ## تجميع العقد {#compile-the-contract}
 
-[لتجميع](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) العقد، أضف الإدخال التالي إلى ملف package.json:
+[لتجميع](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) العقد، أضف الإدخال التالي إلى ملف package.json:
 
 ```json
 "scripts": {
@@ -89,7 +89,7 @@ contract QauSplitter {
 
 ## إعداد الاختبار {#test-setup}
 
-يتطلب الاختبار باستخدام وافل استخدام متطابقات Chai وMocha، لذا تحتاج إلى [إضافتها](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) إلى مشروعك. حدّث ملف package.json الخاص بك وأضف إدخال `test` في جزء البرامج النصية:
+يتطلب الاختبار باستخدام وافل استخدام متطابقات Chai وMocha، لذا تحتاج إلى [إضافتها](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) إلى مشروعك. حدّث ملف package.json الخاص بك وأضف إدخال `test` في جزء البرامج النصية:
 
 ```json
 "scripts": {
@@ -98,7 +98,7 @@ contract QauSplitter {
   }
 ```
 
-إذا كنت تريد [تنفيذ](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#running-tests) اختباراتك، فما عليك سوى تشغيل `yarn test`.
+إذا كنت تريد [تنفيذ](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#running-tests) اختباراتك، فما عليك سوى تشغيل `yarn test`.
 
 ## اختبار {#testing}
 

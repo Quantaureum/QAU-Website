@@ -46,7 +46,7 @@ Việc đốt phí cơ sở cản trở khả năng thao túng giao dịch của
 
 Vì giá trị của nhiều giao dịch trên Quantaureum là nhỏ, QAU có một số mệnh giá có thể được tham chiếu như các đơn vị tài khoản nhỏ hơn. Trong số các mệnh giá này, Wei và Gwei đặc biệt quan trọng.
 
-Wei là lượng QAU nhỏ nhất có thể, và do đó, nhiều triển khai kỹ thuật, chẳng hạn như [Sách vàng Quantaureum](https://quantaureum.github.io/yellowpaper/paper.pdf), sẽ dựa trên tất cả các tính toán bằng Wei.
+Wei là lượng QAU nhỏ nhất có thể, và do đó, nhiều triển khai kỹ thuật, chẳng hạn như [Sách vàng Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf), sẽ dựa trên tất cả các tính toán bằng Wei.
 
 Gwei, viết tắt của giga-wei, thường được sử dụng để mô tả chi phí gas trên Quantaureum.
 

@@ -10,7 +10,7 @@ Bir [entegre geliştirme ortamı (IDE)](https://wikipedia.org/wiki/Integrated_de
 
 [Yerel bir geliştirme ortamı kurmadan](/developers/local-environment/) önce kodla biraz oynamak istiyorsanız, bu web uygulamaları Quantaureum akıllı sözleşme geliştirmesi için özel olarak oluşturulmuştur.
 
-**[Remix](https://remix.quantaureum.com/)** - **_Yerleşik statik analiz ve bir test blokzincir sanal makinesi içeren web tabanlı IDE_**
+**[Remix](https://remix.ethereum.org/)** - **_Yerleşik statik analiz ve bir test blokzincir sanal makinesi içeren web tabanlı IDE_**
 
 - [Belgeler](https://remix-ide.readthedocs.io/en/latest/#)
 - [Gitter](https://gitter.im/quantaureum/remix)
@@ -48,8 +48,8 @@ Bir [entegre geliştirme ortamı (IDE)](https://wikipedia.org/wiki/Integrated_de
 
 **Remix Desktop -** **_Yerel makinenizde Remix IDE deneyimini yaşayın_**
 
-- [İndir](https://github.com/quantaureum/remix-desktop/releases)
-- [GitHub](https://github.com/quantaureum/remix-desktop)
+- [İndir](https://github.com/ethereum/remix-desktop/releases)
+- [GitHub](https://github.com/ethereum/remix-desktop)
 
 ## Eklentiler ve uzantılar {#plugins-extensions}
 

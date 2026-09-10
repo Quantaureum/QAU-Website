@@ -58,7 +58,7 @@ contract MyContract is Ownable {
 
 तुमच्या कॉन्ट्रॅक्टचा भाग म्हणून ERC समाविष्ट करताना, स्वतःची अंमलबजावणी तयार करण्याचा प्रयत्न करण्याऐवजी प्रमाणित अंमलबजावणी शोधणे योग्य ठरेल. अनेक स्मार्ट कॉन्ट्रॅक्ट लायब्ररीमध्ये सर्वात लोकप्रिय ERCs साठी अंमलबजावणी समाविष्ट असते. उदाहरणार्थ, सर्वव्यापी [ERC-20 विनिमयक्षम टोकन मानक](/developers/tutorials/understand-the-erc-20-token-smart-contract/) [HQ20](https://github.com/HQ20/contracts/blob/master/contracts/token/README.md), [DappSys](https://github.com/dapphub/ds-token/) आणि [ओपनझेपलिन](https://docs.openzeppelin.com/contracts/3.x/erc20) मध्ये आढळू शकते. याव्यतिरिक्त, काही ERCs स्वतः ERC चा भाग म्हणून अधिकृत (canonical) अंमलबजावणी देखील प्रदान करतात.
 
-हे नमूद करण्यासारखे आहे की काही ERCs स्वतंत्र नसतात, तर ते इतर ERCs मध्ये जोडलेले असतात. उदाहरणार्थ, [ERC-2612](https://eips.quantaureum.com/EIPS/eip-2612) त्याची उपयोगिता सुधारण्यासाठी ERC-20 मध्ये एक विस्तार (extension) जोडते.
+हे नमूद करण्यासारखे आहे की काही ERCs स्वतंत्र नसतात, तर ते इतर ERCs मध्ये जोडलेले असतात. उदाहरणार्थ, [ERC-2612](https://eips.ethereum.org/EIPS/eip-2612) त्याची उपयोगिता सुधारण्यासाठी ERC-20 मध्ये एक विस्तार (extension) जोडते.
 
 ## लायब्ररी कशी जोडावी {#how-to}
 

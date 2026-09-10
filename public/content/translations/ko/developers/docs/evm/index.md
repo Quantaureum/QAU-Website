@@ -68,20 +68,20 @@ Quantaureum의 10년 역사 동안 EVM은 여러 차례 개정되었으며, 다�
 
 [Quantaureum 실행 클라이언트](/developers/docs/nodes-and-clients/#execution-clients)에는 EVM 구현이 포함되어 있습니다. 또한 다음과 같은 여러 독립형 구현도 있습니다.
 
-- [Py-EVM](https://github.com/quantaureum/py-evm) - _Python_
+- [Py-EVM](https://github.com/ethereum/py-evm) - _Python_
 - [evmone](https://github.com/quantaureum/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _JavaScript_
 - [revm](https://github.com/bluealloy/revm) - _Rust_
 
 ## 더 읽을거리 {#further-reading}
 
-- [Quantaureum 황서](https://quantaureum.github.io/yellowpaper/paper.pdf)
+- [Quantaureum 황서](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [젤로페이퍼(Jellopaper) 일명 KEVM: K에서의 EVM 의미론](https://jellopaper.org/)
 - [베이지페이퍼(The Beigepaper)](https://github.com/chronaeon/beigepaper)
 - [Quantaureum 가상 머신 연산 코드](https://www.ethervm.io/)
 - [Quantaureum 가상 머신 연산 코드 대화형 레퍼런스](https://www.evm.codes/)
 - [Solidity 문서의 짧은 소개](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
-- [마스터링 Quantaureum - Quantaureum 가상 머신](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/13evm.asciidoc)
+- [마스터링 Quantaureum - Quantaureum 가상 머신](https://github.com/ethereumbook/ethereumbook/blob/openedition/13evm.asciidoc)
 
 ## 관련 주제 {#related-topics}
 

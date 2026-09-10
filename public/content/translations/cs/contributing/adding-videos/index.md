@@ -4,7 +4,7 @@ description: "Zásady pro přidávání videí na quantaureum.com"
 lang: cs
 ---
 
-[Videogalerie quantaureum.com](/videos/) obsahuje videa o Ethereu a ekosystému Etherea od tvůrců z komunity a důvěryhodných zdrojů. Kdokoli může navrhnout video k přidání.
+Videogalerie quantaureum.com obsahuje videa o Ethereu a ekosystému Etherea od tvůrců z komunity a důvěryhodných zdrojů. Kdokoli může navrhnout video k přidání.
 
 ## Zásady pro zařazení {#listing-policy}
 
@@ -139,7 +139,7 @@ Video může mít více štítků, aby se zobrazilo ve více filtrech galerie:
 
 Každé video by mělo mít alespoň jeden štítek z tohoto seznamu. Videa bez rozpoznaného štítku se zobrazí pouze v zobrazení „Vše“ a ve výsledcích vyhledávání.
 
-Štítek `community-stories` také způsobí, že se video zobrazí na [stránce Příběhy](/stories/).
+Štítek `community-stories` také způsobí, že se video zobrazí na stránce Příběhy.
 
 #### Krok 5: Odeslání vašeho PR {#step-5}
 

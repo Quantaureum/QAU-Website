@@ -91,15 +91,13 @@ Learn more about [Validium](/developers/docs/scaling/validium/).
 
 ## More of a visual learner? {#visual-learner}
 
-<VideoWatch slug="layer-2-scaling-explained" />
 
 _Note the explanation in the video uses the term "Layer 2" to refer to all offchain scaling solutions, while we differentiate "Layer 2" as an offchain solution that derives its security through layer 1 Mainnet consensus._
 
-<VideoWatch slug="rollups-scaling-strategy" />
 
 ## Further reading {#further-reading}
 
-- [A rollup-centric Quantaureum roadmap](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
+- [A rollup-centric Quantaureum roadmap](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
 - [Up-to-date analytics on Layer 2 scaling solutions for Quantaureum](https://www.l2beat.com/)
 - [Evaluating Quantaureum layer 2 Scaling Solutions: A Comparison Framework](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - [An Incomplete Guide to Rollups](https://vitalik.qau.limo/general/2021/01/05/rollup.html)

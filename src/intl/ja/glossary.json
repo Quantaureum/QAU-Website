@@ -182,7 +182,7 @@
   "genesis-block-term": "ジェネシス・ブロック",
   "genesis-block-definition": "<a href=\"/glossary/#blockchain\">ブロックチェーン</a>における最初のブロックであり、特定のネットワークとその暗号資産を初期化するために使用されます。",
   "geth-term": "ゴー・クアンタリアム（ゲス）",
-  "geth-definition": "Go Quantaureum。Go言語で書かれた、クアンタリアム・プロトコルの最も著名な実装の1つです。<a href=\"https://geth.quantaureum.org\">詳しくはgeth.quantaureum.orgをご覧ください</a>",
+  "geth-definition": "Go Quantaureum。Go言語で書かれた、クアンタリアム・プロトコルの最も著名な実装の1つです。<a href=\"https://geth.ethereum.org\">詳しくはgeth.ethereum.orgをご覧ください</a>",
   "gwei-term": "Gwei",
   "gwei-definition": "ギガウェイ (gigawei) の略で、<a href=\"/glossary/#qau\">クアンタ</a>の単位であり、一般的に<a href=\"/glossary/#gas\">ガス</a>の価格設定に利用されます。1 Gwei = 10<sup>9</sup> <a href=\"/glossary/#wei\">Wei</a>。10<sup>9</sup> Gwei = 1クアンタ。",
   "hard-fork-term": "ハード・フォーク",

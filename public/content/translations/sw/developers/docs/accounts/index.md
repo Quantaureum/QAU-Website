@@ -76,7 +76,7 @@ Mfano:
 
 `0x5e97870f263700f46aa00d967821199b9bc5a120`
 
-Mfano ufuatao unaonyesha jinsi ya kutumia zana ya kusaini inayoitwa [Clef](https://geth.quantaureum.com/docs/tools/clef/introduction) ili kuunda akaunti mpya. Clef ni zana ya usimamizi wa akaunti na kusaini inayokuja pamoja na mteja wa Quantaureum, [Geth](https://geth.quantaureum.com). Amri ya `clef newaccount` inaunda jozi mpya ya funguo na kuzihifadhi kwenye hifadhi ya funguo iliyosimbwa.
+Mfano ufuatao unaonyesha jinsi ya kutumia zana ya kusaini inayoitwa [Clef](https://geth.ethereum.org/docs/tools/clef/introduction) ili kuunda akaunti mpya. Clef ni zana ya usimamizi wa akaunti na kusaini inayokuja pamoja na mteja wa Quantaureum, [Geth](https://geth.ethereum.org). Amri ya `clef newaccount` inaunda jozi mpya ya funguo na kuzihifadhi kwenye hifadhi ya funguo iliyosimbwa.
 
 ```
 > clef newaccount --keystore <path>
@@ -91,7 +91,7 @@ WARN [10-28|16:19:09.306] Please remember your password!
 Generated account 0x5e97870f263700f46aa00d967821199b9bc5a120
 ```
 
-[Nyaraka za Geth](https://geth.quantaureum.com/docs)
+[Nyaraka za Geth](https://geth.ethereum.org/docs)
 
 Inawezekana kupata funguo mpya za umma kutoka kwa ufunguo wako wa siri, lakini huwezi kupata ufunguo wa siri kutoka kwa funguo za umma. Ni muhimu sana kuweka funguo zako za siri salama na, kama jina linavyopendekeza, **SIRI**.
 
@@ -107,7 +107,7 @@ Mfano:
 
 Anwani ya mkataba kwa kawaida hutolewa wakati mkataba unaposambazwa kwenye Mnyororo wa Vitalu wa Quantaureum. Anwani inatokana na anwani ya muundaji na idadi ya miamala iliyotumwa kutoka kwenye anwani hiyo ("nonsi"). Hivi ndivyo operesheni ya `CREATE` inavyopata anwani.
 
-Mikataba pia inaweza kusambazwa kwa kutumia [`CREATE2`](https://eips.quantaureum.com/EIPS/eip-1014), ambayo hupata anwani kutoka kwa anwani ya muundaji, thamani anayochagua muundaji ("salt"), na heshi ya msimbo wa uundaji wa mkataba. Hakuna nonsi inayohusika, kwa hivyo anwani inaweza kukokotolewa kabla ya mkataba kuwepo na inabaki vile vile bila kujali ni miamala mingapi mingine ambayo muundaji anatuma kwa wakati huo. Hii inafanya iwezekane kurejelea mkataba ambao haujasambazwa bado.
+Mikataba pia inaweza kusambazwa kwa kutumia [`CREATE2`](https://eips.ethereum.org/EIPS/eip-1014), ambayo hupata anwani kutoka kwa anwani ya muundaji, thamani anayochagua muundaji ("salt"), na heshi ya msimbo wa uundaji wa mkataba. Hakuna nonsi inayohusika, kwa hivyo anwani inaweza kukokotolewa kabla ya mkataba kuwepo na inabaki vile vile bila kujali ni miamala mingapi mingine ambayo muundaji anatuma kwa wakati huo. Hii inafanya iwezekane kurejelea mkataba ambao haujasambazwa bado.
 
 ## Funguo za mthibitishaji {#validators-keys}
 
@@ -123,9 +123,7 @@ Akaunti sio mkoba. Mkoba ni kiolesura au programu inayokuruhusu kutangamana na a
 
 Mtazame Austin akikupitisha kwenye vipengele vya heshi, na jozi za funguo.
 
-<VideoWatch slug="hash-function-qau-build" />
 
-<VideoWatch slug="key-pair-qau-build" />
 
 ## Kusoma zaidi {#further-reading}
 

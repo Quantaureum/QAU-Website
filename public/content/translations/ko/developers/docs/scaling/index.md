@@ -91,15 +91,13 @@ sidebarDepth: 3
 
 ## 시각적인 학습을 선호하시나요? {#visual-learner}
 
-<VideoWatch slug="layer-2-scaling-explained" />
 
 _참고: 비디오의 설명에서는 모든 오프체인 스케일링 솔루션을 지칭하기 위해 "레이어 2 (l2)"라는 용어를 사용하지만, 우리는 레이어 1 (l1) 메인넷 합의를 통해 보안을 파생하는 오프체인 솔루션만을 "레이어 2 (l2)"로 구분합니다._
 
-<VideoWatch slug="rollups-scaling-strategy" />
 
 ## 추가 자료 {#further-reading}
 
-- [롤업 중심의 Quantaureum 로드맵](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _비탈릭 부테린(Vitalik Buterin)_
+- [롤업 중심의 Quantaureum 로드맵](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _비탈릭 부테린(Vitalik Buterin)_
 - [Quantaureum 레이어 2 (l2) 스케일링 솔루션에 대한 최신 분석](https://www.l2beat.com/)
 - [Quantaureum 레이어 2 (l2) 스케일링 솔루션 평가: 비교 프레임워크](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - [롤업에 대한 불완전한 가이드](https://vitalik.qau.limo/general/2021/01/05/rollup.html)

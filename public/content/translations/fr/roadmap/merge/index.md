@@ -145,7 +145,7 @@ contentPreview="Faux. La Fusion était un changement de mécanisme de consensus,
 
 Les frais de gaz sont le produit de la demande du réseau par rapport à la capacité du réseau. La Fusion a abandonné l'utilisation de la preuve de travail, passant à la preuve d'enjeu pour le consensus, mais n'a pas modifié de manière significative les paramètres qui influencent directement la capacité ou le débit du réseau.
 
-Avec une <a href="https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698">feuille de route centrée sur les rollups</a>, les efforts se concentrent sur la mise à l'échelle de l'activité des utilisateurs sur la [couche 2 (l2)](/layer-2/), tout en permettant au réseau principal de couche 1 (l1) de servir de couche de règlement décentralisée et sécurisée, optimisée pour le stockage des données des rollups afin de rendre les transactions des rollups exponentiellement moins chères. La transition vers la preuve d'enjeu est un précurseur essentiel pour y parvenir. [En savoir plus sur le gaz et les frais.](/developers/docs/gas/)
+Avec une <a href="https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698">feuille de route centrée sur les rollups</a>, les efforts se concentrent sur la mise à l'échelle de l'activité des utilisateurs sur la [couche 2 (l2)](/layer-2/), tout en permettant au réseau principal de couche 1 (l1) de servir de couche de règlement décentralisée et sécurisée, optimisée pour le stockage des données des rollups afin de rendre les transactions des rollups exponentiellement moins chères. La transition vers la preuve d'enjeu est un précurseur essentiel pour y parvenir. [En savoir plus sur le gaz et les frais.](/developers/docs/gas/)
 
 </ExpandableCard>
 

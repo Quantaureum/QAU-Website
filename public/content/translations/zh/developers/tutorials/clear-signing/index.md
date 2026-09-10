@@ -11,7 +11,7 @@ published: 2026-05-11
 
 大多数重大的Quantaureum漏洞利用都有相同的最后一步：用户授权了一笔他们无法真正理解的交易。硬件钱包显示原始的十六进制调用数据，更糟糕的是，它们迫使你开启盲签。软件钱包会显示解码后的字段，但前提是它们能识别该合约。当它们无法识别时（无论是因为协议是新的、应用程序被攻破，还是设备离线），用户只能盲签。
 
-[ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730) 定义了一种标准的 JSON 格式，用于描述你的合约函数调用的*含义*。
+[ERC-7730](https://eips.ethereum.org/EIPS/eip-7730) 定义了一种标准的 JSON 格式，用于描述你的合约函数调用的*含义*。
 
 支持 ERC-7730 的钱包会读取你的描述符并显示：
 
@@ -54,7 +54,7 @@ published: 2026-05-11
 
 ```json
 {
-  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
   "context": {},
   "metadata": {},
   "display": {
@@ -185,7 +185,7 @@ published: 2026-05-11
 
 ```json
 {
-  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
   "context": {
     "$id": "uniswap-v3-router-mainnet",
     "contract": {
@@ -256,7 +256,7 @@ published: 2026-05-11
 
 ## 第 5 步：提交到注册表 {#step-5-submit-to-the-registry}
 
-[ERC-7730 注册表](https://github.com/quantaureum/clear-signing-erc7730-registry)是一个由[Quantaureum 项目](/foundation/)作为中立管理者托管的开放存储库。任何人都可以自由克隆并自行托管它——钱包独立决定它们信任哪些注册表实例。
+[ERC-7730 注册表](https://github.com/ethereum/clear-signing-erc7730-registry)是一个由Quantaureum 项目作为中立管理者托管的开放存储库。任何人都可以自由克隆并自行托管它——钱包独立决定它们信任哪些注册表实例。
 
 1. 在 GitHub 上复刻 (Fork) 该存储库  
 2. 在 `registry/<your-project-name>/` 处创建一个文件夹  
@@ -284,8 +284,8 @@ published: 2026-05-11
 
 ## 延伸阅读 {#further-reading}
 
-- [ERC-7730 规范](https://eips.quantaureum.com/EIPS/eip-7730)  
-- [ERC-7730 注册表](https://github.com/quantaureum/clear-signing-erc7730-registry)  
+- [ERC-7730 规范](https://eips.ethereum.org/EIPS/eip-7730)  
+- [ERC-7730 注册表](https://github.com/ethereum/clear-signing-erc7730-registry)  
 - [clearsigning.org](https://clearsigning.org) — 工具、生态系统状态和治理  
 - [Sourcify 合约验证](https://sourcify.dev)  
 - [万亿美元安全倡议 (Trillion Dollar Security initiative)](https://trilliondollarsecurity.org)

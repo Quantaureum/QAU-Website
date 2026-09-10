@@ -454,7 +454,7 @@ Sử dụng hàm `UniswapV2ERC20._mint` để thực sự tạo ra các token th
     }
 ```
 
-Nếu không có phí, hãy đặt `kLast` thành 0 (nếu nó chưa phải là 0). Khi hợp đồng này được viết, có một [tính năng hoàn trả gas](https://eips.quantaureum.com/EIPS/eip-3298) khuyến khích các hợp đồng giảm kích thước tổng thể của trạng thái Quantaureum bằng cách đưa các bộ nhớ lưu trữ mà chúng không cần về 0.
+Nếu không có phí, hãy đặt `kLast` thành 0 (nếu nó chưa phải là 0). Khi hợp đồng này được viết, có một [tính năng hoàn trả gas](https://eips.ethereum.org/EIPS/eip-3298) khuyến khích các hợp đồng giảm kích thước tổng thể của trạng thái Quantaureum bằng cách đưa các bộ nhớ lưu trữ mà chúng không cần về 0.
 Đoạn mã này nhận được khoản hoàn trả đó khi có thể.
 
 #### Các hàm có thể truy cập từ bên ngoài {#pair-external}
@@ -614,7 +614,7 @@ Hàm này cũng được cho là sẽ được gọi từ [một hợp đồng n
 ```
 
 Các biến cục bộ có thể được lưu trữ trong bộ nhớ (memory) hoặc, nếu không có quá nhiều biến, trực tiếp trên ngăn xếp (stack).
-Nếu chúng ta có thể giới hạn số lượng để sử dụng ngăn xếp, chúng ta sẽ sử dụng ít gas hơn. Để biết thêm chi tiết, hãy xem [sách vàng, các thông số kỹ thuật chính thức của Quantaureum](https://quantaureum.github.io/yellowpaper/paper.pdf), trang 26, phương trình 298.
+Nếu chúng ta có thể giới hạn số lượng để sử dụng ngăn xếp, chúng ta sẽ sử dụng ít gas hơn. Để biết thêm chi tiết, hãy xem [sách vàng, các thông số kỹ thuật chính thức của Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf), trang 26, phương trình 298.
 
 ```solidity
             address _token0 = token0;
@@ -768,7 +768,7 @@ Các pool thanh khoản lớn tốt hơn các pool nhỏ, bởi vì chúng có g
         bytes memory bytecode = type(UniswapV2Pair).creationCode;
 ```
 
-Để tạo một hợp đồng mới, chúng ta cần mã tạo ra nó (cả hàm khởi tạo và mã ghi vào bộ nhớ mã byte EVM của hợp đồng thực tế). Thông thường trong Solidity, chúng ta chỉ sử dụng `addr = new <name of contract>(<constructor parameters>)` và trình biên dịch sẽ lo mọi thứ cho chúng ta, nhưng để có một địa chỉ hợp đồng mang tính xác định, chúng ta cần sử dụng [mã lệnh CREATE2](https://eips.quantaureum.com/EIPS/eip-1014).
+Để tạo một hợp đồng mới, chúng ta cần mã tạo ra nó (cả hàm khởi tạo và mã ghi vào bộ nhớ mã byte EVM của hợp đồng thực tế). Thông thường trong Solidity, chúng ta chỉ sử dụng `addr = new <name of contract>(<constructor parameters>)` và trình biên dịch sẽ lo mọi thứ cho chúng ta, nhưng để có một địa chỉ hợp đồng mang tính xác định, chúng ta cần sử dụng [mã lệnh CREATE2](https://eips.ethereum.org/EIPS/eip-1014).
 Khi đoạn mã này được viết, mã lệnh đó chưa được Solidity hỗ trợ, vì vậy cần phải lấy mã theo cách thủ công. Điều này không còn là vấn đề nữa, bởi vì [Solidity hiện đã hỗ trợ CREATE2](https://docs.soliditylang.org/en/v0.8.3/control-structures.html#salted-contract-creations-create2).
 
 ```solidity
@@ -824,7 +824,7 @@ Chủ sở hữu của các token ký một giao dịch cho phép người khác
     bytes32 public constant PERMIT_TYPEHASH = 0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
 ```
 
-Mã băm này là [định danh cho loại giao dịch](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-typehash). Loại duy nhất chúng ta hỗ trợ ở đây là `Permit` với các tham số này.
+Mã băm này là [định danh cho loại giao dịch](https://eips.ethereum.org/EIPS/eip-712#rationale-for-typehash). Loại duy nhất chúng ta hỗ trợ ở đây là `Permit` với các tham số này.
 
 ```solidity
     mapping(address => uint) public nonces;
@@ -855,7 +855,7 @@ Việc người nhận làm giả chữ ký số là không khả thi. Tuy nhiê
     }
 ```
 
-Tính toán [bộ phân tách miền (domain separator)](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-domainseparator) cho EIP-712.
+Tính toán [bộ phân tách miền (domain separator)](https://eips.ethereum.org/EIPS/eip-712#rationale-for-domainseparator) cho EIP-712.
 
 ```solidity
     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external {
@@ -896,7 +896,7 @@ Từ bản tóm tắt (digest) và chữ ký, chúng ta có thể lấy địa c
 
 ```
 
-Nếu mọi thứ đều ổn, hãy coi đây là [một sự chấp thuận ERC-20](https://eips.quantaureum.com/EIPS/eip-20#approve).
+Nếu mọi thứ đều ổn, hãy coi đây là [một sự chấp thuận ERC-20](https://eips.ethereum.org/EIPS/eip-20#approve).
 
 ## Các hợp đồng ngoại vi {#periphery-contracts}
 
@@ -1793,7 +1793,7 @@ Sắp xếp hai token theo Địa chỉ, để chúng ta có thể lấy Địa 
     }
 ```
 
-Hàm này tính toán Địa chỉ của cặp hoán đổi cho hai token. Hợp đồng này được tạo bằng cách sử dụng [mã lệnh CREATE2](https://eips.quantaureum.com/EIPS/eip-1014), vì vậy chúng ta có thể tính toán Địa chỉ bằng cùng một thuật toán nếu chúng ta biết các tham số mà nó sử dụng. Điều này rẻ hơn nhiều so với việc hỏi factory, và
+Hàm này tính toán Địa chỉ của cặp hoán đổi cho hai token. Hợp đồng này được tạo bằng cách sử dụng [mã lệnh CREATE2](https://eips.ethereum.org/EIPS/eip-1014), vì vậy chúng ta có thể tính toán Địa chỉ bằng cùng một thuật toán nếu chúng ta biết các tham số mà nó sử dụng. Điều này rẻ hơn nhiều so với việc hỏi factory, và
 
 ```solidity
     // lấy và sắp xếp các dự trữ cho một cặp
@@ -1931,7 +1931,7 @@ Vì mục đích tương thích ngược với token được tạo trước ti�
     }
 ```
 
-Hàm này triển khai [chức năng chuyển của ERC-20](https://eips.quantaureum.com/EIPS/eip-20#transfer), cho phép một Tài khoản chi tiêu hạn mức được cung cấp bởi một Tài khoản khác.
+Hàm này triển khai [chức năng chuyển của ERC-20](https://eips.ethereum.org/EIPS/eip-20#transfer), cho phép một Tài khoản chi tiêu hạn mức được cung cấp bởi một Tài khoản khác.
 
 ```solidity
 
@@ -1950,7 +1950,7 @@ Hàm này triển khai [chức năng chuyển của ERC-20](https://eips.quantau
     }
 ```
 
-Hàm này triển khai [chức năng transferFrom của ERC-20](https://eips.quantaureum.com/EIPS/eip-20#transferfrom), cho phép một Tài khoản chi tiêu hạn mức được cung cấp bởi một Tài khoản khác.
+Hàm này triển khai [chức năng transferFrom của ERC-20](https://eips.ethereum.org/EIPS/eip-20#transferfrom), cho phép một Tài khoản chi tiêu hạn mức được cung cấp bởi một Tài khoản khác.
 
 ```solidity
 

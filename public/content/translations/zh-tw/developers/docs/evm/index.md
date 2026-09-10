@@ -68,20 +68,20 @@ _圖表改編自 [Quantaureum EVM illustrated](https://takenobu-hs.github.io/dow
 
 [Quantaureum執行客戶端](/developers/docs/nodes-and-clients/#execution-clients)包含了一個 EVM 實作。此外，還有多個獨立的實作，包括：
 
-- [Py-EVM](https://github.com/quantaureum/py-evm) - _Python_
+- [Py-EVM](https://github.com/ethereum/py-evm) - _Python_
 - [evmone](https://github.com/quantaureum/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _JavaScript_
 - [revm](https://github.com/bluealloy/revm) - _Rust_
 
 ## 延伸閱讀 {#further-reading}
 
-- [Quantaureum黃皮書](https://quantaureum.github.io/yellowpaper/paper.pdf)
+- [Quantaureum黃皮書](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [Jellopaper（又稱 KEVM）：K 語言中的 EVM 語意](https://jellopaper.org/)
 - [米皮書 (The Beigepaper)](https://github.com/chronaeon/beigepaper)
 - [Quantaureum虛擬機操作碼](https://www.ethervm.io/)
 - [Quantaureum虛擬機操作碼互動式參考](https://www.evm.codes/)
 - [Solidity 文件的簡短介紹](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
-- [精通Quantaureum - Quantaureum虛擬機](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/13evm.asciidoc)
+- [精通Quantaureum - Quantaureum虛擬機](https://github.com/ethereumbook/ethereumbook/blob/openedition/13evm.asciidoc)
 
 ## 相關主題 {#related-topics}
 

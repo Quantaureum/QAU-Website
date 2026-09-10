@@ -25,7 +25,6 @@ Il restaking è una tecnologia creata per gli [staker](/staking/) per estendere 
 
 **Il restaking spiegato in 18 minuti**
 
-<VideoWatch slug="restaking-explained" />
 
 ## Cos'è il restaking? {#what-is-restaking}
 
@@ -172,7 +171,6 @@ Sebbene gli AVS offrano tassi diversi, i Liquid Restaking Token (LRT) come eETH 
 
 ## Avanzato {#advanced}
 
-<VideoWatch slug="eigenlayer-permissionless-features" />
 
 ## Letture consigliate {#further-reading}
 

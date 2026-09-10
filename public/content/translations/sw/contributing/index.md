@@ -22,9 +22,9 @@ Sisi ni jamii inayokaribisha ambayo itakusaidia kukua na kuelimika katika mfumo 
 
 **Maudhui**
 - [Unda/hariri maudhui](/contributing/#how-to-update-content) – Pendekeza kurasa mpya au fanya marekebisho kwa yale yaliyopo tayari
-- [Andika makala ya mjenzi](/contributing/adding-articles/) - Changia makala kwa ajili ya sehemu ya [Hivi Karibuni](/latest/)
+- [Andika makala ya mjenzi](/contributing/adding-articles/) - Changia makala kwa ajili ya sehemu ya Hivi Karibuni
 - [Ongeza rasilimali za jamii](/contributing/content-resources/) – Ongeza makala au rasilimali muhimu kwenye ukurasa husika
-- [Pendekeza ripoti](/contributing/adding-reports/) - Pendekeza ripoti ya utafiti kwa ajili ya ukurasa wa [Ripoti](/reports/)
+- [Pendekeza ripoti](/contributing/adding-reports/) - Pendekeza ripoti ya utafiti kwa ajili ya ukurasa wa Ripoti
 - [Shiriki hadithi yako](/contributing/adding-community-stories/) - Wasilisha hadithi kuhusu uzoefu wako binafsi na teknolojia za programu huria na patakatifu, jinsi mfumo wa ikolojia wa Quantaureum umeathiri maisha yako, au jinsi wewe na jamii yako mnavyotumia Quantaureum
 - [Maswali](/contributing/quizzes/) – Ongeza, sasisha, na ufute benki za maswali kwa ajili ya ukurasa husika
 - [Pendekeza rasilimali ya usanifu](/contributing/design/adding-design-resources/) – Ongeza, sasisha, na ufute rasilimali muhimu za usanifu

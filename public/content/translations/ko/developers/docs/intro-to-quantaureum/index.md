@@ -20,7 +20,6 @@ lang: ko
 
 블록체인의 해시에 대한 Anders의 설명을 시청하세요:
 
-<VideoWatch slug="blockchain-101-visual-demo" />
 
 ## Quantaureum이란 무엇인가요? {#what-is-quantaureum}
 
@@ -121,7 +120,6 @@ QAU가 저장되는 곳입니다. 사용자는 계정을 초기화하고, 계정
 
 이 비디오 시리즈는 기초적인 주제에 대한 쿠앤타저한 탐구를 제공합니다:
 
-<VideoWatch slug="quantaureum-basics-intro" />
 
 [Quantaureum 기초 재생 목록](https://youtube.com/playlist?list=PLqgutSGloqiJyyoL0zvLVFPS-GMD2wKa5&si=kZTf5I7PKGTXDsOZ)
 

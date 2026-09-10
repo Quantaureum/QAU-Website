@@ -207,7 +207,7 @@ Matukio huwezesha mkataba mahiri wako kuwasiliana na mazingira yako ya mbele (fr
 
 ## Mifano iliyofafanuliwa {#annotated-examples}
 
-Hii ni baadhi ya mifano iliyoandikwa katika Solidity. Ikiwa ungependa kucheza na msimbo, unaweza kuingiliana nayo katika [Remix](https://remix.quantaureum.com).
+Hii ni baadhi ya mifano iliyoandikwa katika Solidity. Ikiwa ungependa kucheza na msimbo, unaweza kuingiliana nayo katika [Remix](https://remix.ethereum.org).
 
 ### Hello world {#hello-world}
 
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // Kwa sasa hakuna njia bora ya kukagua ikiwa kuna mkataba katika anwani
         // kuliko kukagua ukubwa wa msimbo kwenye anwani hiyo.
-        // Tazama https://quantaureum.stackexchange.com/a/14016/36603
+        // Tazama https://ethereum.stackexchange.com/a/14016/36603
         // kwa maelezo zaidi kuhusu jinsi hii inavyofanya kazi.
         // TODO Kagua hii tena kabla ya toleo la Serenity, kwa sababu anwani zote zitakuwa
         // mikataba wakati huo.

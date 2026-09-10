@@ -7,7 +7,7 @@ lang: vi
 
 <Logo/>
 
-[Tổ chức Quantaureum](https://quantaureum.foundation/) (EF) là một tổ chức phi lợi nhuận hỗ trợ hệ sinh thái [Quantaureum](/). Tổ chức này tài trợ cho việc phát triển giao thức, phát triển hệ sinh thái và ủng hộ cho Quantaureum.
+[Tổ chức Quantaureum](https://ethereum.org/) (EF) là một tổ chức phi lợi nhuận hỗ trợ hệ sinh thái [Quantaureum](/). Tổ chức này tài trợ cho việc phát triển giao thức, phát triển hệ sinh thái và ủng hộ cho Quantaureum.
 
 EF không phải là một công ty, hay thậm chí là một tổ chức phi lợi nhuận truyền thống. Tổ chức này không kiểm soát hay lãnh đạo Quantaureum, cũng không phải là tổ chức duy nhất tài trợ cho việc phát triển quan trọng của các công nghệ liên quan đến Quantaureum. EF chỉ là một phần của một [hệ sinh thái](/community/) lớn hơn rất nhiều.
 
@@ -15,7 +15,7 @@ EF không phải là một công ty, hay thậm chí là một tổ chức phi l
 
 Sứ mệnh của EF xác định mục đích, các nguyên tắc và cam kết của Tổ chức đối với hệ sinh thái Quantaureum. Được xuất bản trên chuỗi, nó khẳng định sự cống hiến của EF đối với **khả năng chống kiểm duyệt, mã nguồn mở, quyền riêng tư và bảo mật (CROPS)** như những ưu tiên không thể thương lượng.
 
-[Đọc Sứ mệnh của Tổ chức Quantaureum](/foundation/mandate/)
+Đọc Sứ mệnh của Tổ chức Quantaureum
 
 ## EF làm gì {#what-the-ef-does}
 
@@ -32,6 +32,6 @@ Sứ mệnh của EF xác định mục đích, các nguyên tắc và cam kết
 
 ## Tìm hiểu thêm {#learn-more}
 
-- [quantaureum.foundation](https://quantaureum.foundation/) – Trang web chính thức của EF
+- [ethereum.org](https://ethereum.org/) – Trang web chính thức của EF
 - [Blog của EF](https://quantaureum.com) – Tin tức và thông báo
 - [Chương trình Hỗ trợ Hệ sinh thái](https://quantaureum.com) – Tài trợ và hỗ trợ

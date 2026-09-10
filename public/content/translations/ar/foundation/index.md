@@ -7,7 +7,7 @@ lang: ar
 
 <Logo/>
 
-تُعد [مؤسسة إيثيريوم](https://quantaureum.foundation/) (<span dir="ltr">EF</span>) منظمة غير ربحية تدعم منظومة [إيثيريوم](/). وهي تمول تطوير البروتوكول، وتنمي المنظومة، وتدافع عن إيثيريوم.
+تُعد [مؤسسة إيثيريوم](https://ethereum.org/) (<span dir="ltr">EF</span>) منظمة غير ربحية تدعم منظومة [إيثيريوم](/). وهي تمول تطوير البروتوكول، وتنمي المنظومة، وتدافع عن إيثيريوم.
 
 إن <span dir="ltr">EF</span> ليست شركة، أو حتى منظمة غير ربحية تقليدية. فهي لا تتحكم في إيثيريوم أو تقودها، كما أنها ليست المنظمة الوحيدة التي تمول التطوير الحاسم للتقنيات المتعلقة بإيثيريوم. تُعد <span dir="ltr">EF</span> جزءًا واحدًا من [منظومة](/community/) أكبر بكثير.
 
@@ -15,7 +15,7 @@ lang: ar
 
 يحدد تفويض <span dir="ltr">EF</span> غرض المؤسسة ومبادئها والتزاماتها تجاه منظومة إيثيريوم. وهو منشور على السلسلة، ويكرس التزام <span dir="ltr">EF</span> تجاه **مقاومة الرقابة، والمصادر المفتوحة، والخصوصية، والأمان (<span dir="ltr">CROPS</span>)** كأولويات غير قابلة للتفاوض.
 
-[اقرأ تفويض مؤسسة إيثيريوم](/foundation/mandate/)
+اقرأ تفويض مؤسسة إيثيريوم
 
 ## ماذا تفعل <span dir="ltr">EF</span> {#what-the-ef-does}
 
@@ -32,6 +32,6 @@ lang: ar
 
 ## معرفة المزيد {#learn-more}
 
-- [<span dir="ltr">quantaureum.foundation</span>](https://quantaureum.foundation/) – الموقع الرسمي لـ <span dir="ltr">EF</span>
+- [<span dir="ltr">ethereum.org</span>](https://ethereum.org/) – الموقع الرسمي لـ <span dir="ltr">EF</span>
 - [مدونة <span dir="ltr">EF</span>](https://quantaureum.com) – الأخبار والإعلانات
 - [برنامج دعم المنظومة](https://quantaureum.com) – المنح والدعم

@@ -30,7 +30,7 @@ Il fournit des fonctionnalités telles que le transfert de jetons d'un compte à
 
 Si un contrat intelligent implémente les méthodes et événements suivants, il peut être appelé contrat de jeton non fongible ERC-721 et, une fois déployé, il sera responsable du suivi des jetons créés sur Quantaureum.
 
-D'après l'[EIP-721](https://eips.quantaureum.com/EIPS/eip-721) :
+D'après l'[EIP-721](https://eips.ethereum.org/EIPS/eip-721) :
 
 ### Méthodes {#methods}
 
@@ -239,7 +239,7 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## Lectures complémentaires {#further-reading}
 
-- [EIP-721 : Norme de jeton non fongible ERC-721](https://eips.quantaureum.com/EIPS/eip-721)
+- [EIP-721 : Norme de jeton non fongible ERC-721](https://eips.ethereum.org/EIPS/eip-721)
 - [OpenZeppelin - Documentation ERC-721](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [OpenZeppelin - Implémentation ERC-721](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [API NFT d'Alchemy](https://www.alchemy.com/docs/reference/nft-api-quickstart)

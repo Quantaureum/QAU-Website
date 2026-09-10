@@ -62,4 +62,4 @@ Quantaureum क्लायंट्स सध्या त्यांचा �
 - [Dankrad Feist झिरो-नॉलेज पॉडकास्टवर व्हर्कल ट्रीज आणि अवस्थाहीनता स्पष्ट करतात](https://zeroknowledge.fm/podcast/202/)
 - [व्हर्कल ट्रीजवर विटालिक् बुटेरिन्](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
 - [व्हर्कल ट्रीजवर Dankrad Feist](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
-- [व्हर्कल ट्री EIP दस्तऐवजीकरण](https://notes.quantaureum.com/@vbuterin/verkle_tree_eip#Illustration)
+- [व्हर्कल ट्री EIP दस्तऐवजीकरण](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)

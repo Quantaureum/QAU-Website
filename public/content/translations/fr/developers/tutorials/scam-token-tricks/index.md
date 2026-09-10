@@ -198,7 +198,7 @@ Cette restriction est tout à fait logique, car nous ne voudrions pas que des co
 
 Une fonction pour transférer d'un compte de pool vers un tableau de destinataires un tableau de montants est tout à fait logique. Il existe de nombreux cas d'utilisation dans lesquels vous voudrez distribuer des jetons d'une source unique vers plusieurs destinations, comme la paie, les airdrops, etc. Il est moins cher (en gaz) de le faire en une seule transaction au lieu d'émettre plusieurs transactions, ou même d'appeler l'ERC-20 plusieurs fois à partir d'un contrat différent dans le cadre de la même transaction.
 
-Cependant, `dropNewTokens` ne fait pas cela. Elle émet des [événements `Transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer-1), mais ne transfère en réalité aucun jeton. Il n'y a aucune raison légitime de semer la confusion dans les applications hors chaîne en leur signalant un transfert qui n'a pas vraiment eu lieu.
+Cependant, `dropNewTokens` ne fait pas cela. Elle émet des [événements `Transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer-1), mais ne transfère en réalité aucun jeton. Il n'y a aucune raison légitime de semer la confusion dans les applications hors chaîne en leur signalant un transfert qui n'a pas vraiment eu lieu.
 
 ### La fonction `Approve` pour brûler {#the-burning-approve-function}
 
@@ -240,7 +240,7 @@ Ces problèmes de qualité du code ne _prouvent_ pas que ce code est une escroqu
 
 #### La fonction `mount` {#the-mount-function}
 
-Bien que ce ne soit pas spécifié dans [la norme](https://eips.quantaureum.com/EIPS/eip-20), en règle générale, la fonction qui crée de nouveaux jetons est appelée [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn).
+Bien que ce ne soit pas spécifié dans [la norme](https://eips.ethereum.org/EIPS/eip-20), en règle générale, la fonction qui crée de nouveaux jetons est appelée [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn).
 
 Si nous regardons dans le constructeur `wARB`, nous voyons que la fonction de frappe a été renommée en `mount` pour une raison quelconque, et est appelée cinq fois avec un cinquième de l'offre initiale, au lieu d'une seule fois pour le montant total par souci d'efficacité.
 
@@ -316,7 +316,7 @@ Il existe quelques astuces que nous pouvons utiliser pour identifier qu'un jeton
 
 ## Événements `Approval` suspects {#suspicious-approval-events}
 
-Les [événements `Approval`](https://eips.quantaureum.com/EIPS/eip-20#approval) ne devraient se produire qu'avec une requête directe (contrairement aux [événements `Transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer-1) qui peuvent se produire à la suite d'une allocation). [Consultez la documentation de Solidity](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin) pour une explication détaillée de ce problème et pourquoi les requêtes doivent être directes, plutôt que médiées par un contrat.
+Les [événements `Approval`](https://eips.ethereum.org/EIPS/eip-20#approval) ne devraient se produire qu'avec une requête directe (contrairement aux [événements `Transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer-1) qui peuvent se produire à la suite d'une allocation). [Consultez la documentation de Solidity](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin) pour une explication détaillée de ce problème et pourquoi les requêtes doivent être directes, plutôt que médiées par un contrat.
 
 Cela signifie que les événements `Approval` qui approuvent les dépenses à partir d'un [compte détenu en externe](/developers/docs/accounts/#types-of-account) doivent provenir de transactions qui ont pour origine ce compte, et dont la destination est le contrat ERC-20. Tout autre type d'approbation provenant d'un compte détenu en externe est suspect.
 
@@ -425,7 +425,7 @@ Si l'approbation provient d'un compte détenu en externe, obtenez la transaction
 if (owner.toLowerCase() != txn.from.toLowerCase()) return ev
 ```
 
-Nous ne pouvons pas simplement vérifier l'égalité des chaînes de caractères car les adresses sont hexadécimales, elles contiennent donc des lettres. Parfois, par exemple dans `txn.from`, ces lettres sont toutes en minuscules. Dans d'autres cas, comme `ev.args._owner`, l'adresse est en [casse mixte pour l'identification des erreurs](https://eips.quantaureum.com/EIPS/eip-55).
+Nous ne pouvons pas simplement vérifier l'égalité des chaînes de caractères car les adresses sont hexadécimales, elles contiennent donc des lettres. Parfois, par exemple dans `txn.from`, ces lettres sont toutes en minuscules. Dans d'autres cas, comme `ev.args._owner`, l'adresse est en [casse mixte pour l'identification des erreurs](https://eips.ethereum.org/EIPS/eip-55).
 
 Mais si la transaction ne provient pas du propriétaire, et que ce propriétaire est détenu en externe, alors nous avons une transaction suspecte.
 

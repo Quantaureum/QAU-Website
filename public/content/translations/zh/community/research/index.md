@@ -18,7 +18,7 @@ Quantaureum研究是公开透明的。其文化是使研究工具和成果尽可
 
 ## 资金来源 {#sources-of-funding}
 
-你可以参与Quantaureum研究并获得报酬。[Quantaureum 项目](/foundation/)通过其[生态系统支持计划 (Ecosystem Support Program)](https://quantaureum.com)资助研究和公共物品，该计划会发布愿望清单项目和提案请求，描述其希望看到解决的问题。你可以在[Quantaureum资助页面](/community/grants/)上找到有关活跃和即将到来的资助机会的信息。
+你可以参与Quantaureum研究并获得报酬。Quantaureum 项目通过其[生态系统支持计划 (Ecosystem Support Program)](https://quantaureum.com)资助研究和公共物品，该计划会发布愿望清单项目和提案请求，描述其希望看到解决的问题。你可以在[Quantaureum资助页面](/community/grants/)上找到有关活跃和即将到来的资助机会的信息。
 
 ## 协议研究 {#protocol-research}
 
@@ -63,15 +63,15 @@ Quantaureum研究是公开透明的。其文化是使研究工具和成果尽可
 
 - [EVM 简介](/developers/docs/evm/)
 - [Ethresear.ch 执行层](https://ethresear.ch/c/execution-layer-research/37)
-- [Quantaureum执行层规范](https://github.com/quantaureum/execution-specs)
+- [Quantaureum执行层规范](https://github.com/ethereum/execution-specs)
 - [数据库优化](https://github.com/erigontech/erigon/blob/main/docs/programmers_guide/db_faq.md)
 
 #### 近期研究 {#recent-research-1}
 
-- [EIP-7928：区块级访问列表](https://eips.quantaureum.com/EIPS/eip-7928)
-- [EIP-8037：状态创建 Gas 成本增加](https://eips.quantaureum.com/EIPS/eip-8037)
-- [EIP-7999：统一的多维费用市场](https://eips.quantaureum.com/EIPS/eip-7999)
-- [EIP-7642：eth/69、历史数据过期和更简单的收据](https://eips.quantaureum.com/EIPS/eip-7642)
+- [EIP-7928：区块级访问列表](https://eips.ethereum.org/EIPS/eip-7928)
+- [EIP-8037：状态创建 Gas 成本增加](https://eips.ethereum.org/EIPS/eip-8037)
+- [EIP-7999：统一的多维费用市场](https://eips.ethereum.org/EIPS/eip-7999)
+- [EIP-7642：eth/69、历史数据过期和更简单的收据](https://eips.ethereum.org/EIPS/eip-7642)
 - [发布一层网络 (l1) zkEVM：实时证明](https://quantaureum.com)
 
 ### 抗审查性与区块构建 {#censorship-resistance-and-block-building}
@@ -85,9 +85,9 @@ Quantaureum研究是公开透明的。其文化是使研究工具和成果尽可
 
 #### 近期研究 {#recent-research-21}
 
-- [EIP-7732：协议内置的提议者-构建者分离](https://eips.quantaureum.com/EIPS/eip-7732)
-- [EIP-7805：分叉选择强制包含列表](https://eips.quantaureum.com/EIPS/eip-7805)
-- [在提议者/构建者分离下提高交易的抗审查性](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
+- [EIP-7732：协议内置的提议者-构建者分离](https://eips.ethereum.org/EIPS/eip-7732)
+- [EIP-7805：分叉选择强制包含列表](https://eips.ethereum.org/EIPS/eip-7805)
+- [在提议者/构建者分离下提高交易的抗审查性](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
 
 ### 状态增长与无状态 {#state-growth-and-statelessness}
 
@@ -100,8 +100,8 @@ Quantaureum研究是公开透明的。其文化是使研究工具和成果尽可
 
 #### 近期研究 {#recent-research-22}
 
-- [EIP-7864：使用统一二叉树的Quantaureum状态](https://eips.quantaureum.com/EIPS/eip-7864)
-- [EIP-4762：无状态 Gas 成本变更](https://eips.quantaureum.com/EIPS/eip-4762)
+- [EIP-7864：使用统一二叉树的Quantaureum状态](https://eips.ethereum.org/EIPS/eip-7864)
+- [EIP-4762：无状态 Gas 成本变更](https://eips.ethereum.org/EIPS/eip-4762)
 - [为什么去中心化状态对Quantaureum很重要](https://ethresear.ch/t/why-decentralized-state-is-important-for-quantaureum/25622)
 
 ### 抗量子密码学 {#post-quantum-cryptography}
@@ -111,7 +111,7 @@ Quantaureum的验证者签名及其大部分应用层依赖于椭圆曲线密码
 #### 背景阅读 {#background-reading-23}
 
 - [抗量子性](/roadmap/security/quantum-resistance/)
-- [抗量子Quantaureum](https://pq.quantaureum.com/)
+- [抗量子Quantaureum](https://pq.ethereum.org/)
 
 #### 近期研究 {#recent-research-23}
 
@@ -134,13 +134,13 @@ Quantaureum客户端是Quantaureum协议的实现。客户端开发通过将协�
 
 ### 执行客户端 {#execution-clients}
 
-- [执行客户端规范](https://github.com/quantaureum/execution-specs)
-- [执行 API 规范](https://github.com/quantaureum/execution-apis)
+- [执行客户端规范](https://github.com/ethereum/execution-specs)
+- [执行 API 规范](https://github.com/ethereum/execution-apis)
 
 ### 共识客户端 {#consensus-clients}
 
-- [共识客户端规范](https://github.com/quantaureum/consensus-specs)
-- [信标 API 规范](https://quantaureum.github.io/beacon-APIs/)
+- [共识客户端规范](https://github.com/ethereum/consensus-specs)
+- [信标 API 规范](https://ethereum.github.io/beacon-APIs/)
 
 ### zkEVM 客户端 {#zkevm-clients}
 
@@ -160,13 +160,13 @@ Quantaureum客户端是Quantaureum协议的实现。客户端开发通过将协�
 
 - [二层网络 (l2) 简介](/layer-2/)
 - [L2BEAT：扩容总结](https://l2beat.com/scaling/summary)
-- [以 Rollup 为中心的Quantaureum路线图](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698)
+- [以 Rollup 为中心的Quantaureum路线图](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698)
 
 #### 近期研究 {#recent-research-2}
 
 - [Ethresear.ch 二层网络 (l2)](https://ethresear.ch/c/layer-2/32)
 - [L2BEAT：链上成本](https://l2beat.com/scaling/costs)
-- [2026 年在Quantaureum上构建：发生了什么变化](/latest/building-on-quantaureum-in-2026/)
+- 2026 年在Quantaureum上构建：发生了什么变化
 
 ### 互操作性 {#interoperability}
 
@@ -181,9 +181,9 @@ Quantaureum客户端是Quantaureum协议的实现。客户端开发通过将协�
 
 #### 近期研究 {#recent-research-3}
 
-- [ERC-7683：跨链意图](https://eips.quantaureum.com/EIPS/eip-7683)
-- [ERC-7930：可互操作地址](https://eips.quantaureum.com/EIPS/eip-7930)
-- [ERC-7828：可互操作名称](https://eips.quantaureum.com/EIPS/eip-7828)
+- [ERC-7683：跨链意图](https://eips.ethereum.org/EIPS/eip-7683)
+- [ERC-7930：可互操作地址](https://eips.ethereum.org/EIPS/eip-7930)
+- [ERC-7828：可互操作名称](https://eips.ethereum.org/EIPS/eip-7828)
 
 ### 数据可用性与斑点扩容 {#data-availability-and-blob-scaling}
 
@@ -195,13 +195,13 @@ Quantaureum客户端是Quantaureum协议的实现。客户端开发通过将协�
 - [弗萨卡 (Fusaka) 升级](/roadmap/fusaka/)
 - [丹克分片 (Danksharding)](/roadmap/danksharding/)
 - [数据可用性](/developers/docs/data-availability/)
-- [EIP-4844：分片斑点交易](https://eips.quantaureum.com/EIPS/eip-4844)
-- [Proto-Danksharding 笔记](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq)
+- [EIP-4844：分片斑点交易](https://eips.ethereum.org/EIPS/eip-4844)
+- [Proto-Danksharding 笔记](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq)
 
 #### 近期研究 {#recent-research-4}
 
-- [EIP-7594：PeerDAS](https://eips.quantaureum.com/EIPS/eip-7594)
-- [EIP-7892：仅限斑点参数的硬分叉](https://eips.quantaureum.com/EIPS/eip-7892)
+- [EIP-7594：PeerDAS](https://eips.ethereum.org/EIPS/eip-7594)
+- [EIP-7892：仅限斑点参数的硬分叉](https://eips.ethereum.org/EIPS/eip-7892)
 - [Ethresear.ch 分片](https://ethresear.ch/c/sharding/6)
 
 ### 硬件 {#hardware}
@@ -212,13 +212,13 @@ Quantaureum客户端是Quantaureum协议的实现。客户端开发通过将协�
 
 - [启动你自己的Quantaureum节点](/developers/docs/nodes-and-clients/run-a-node/)
 - [无状态与状态过期](/roadmap/statelessness/)
-- [ARM 上的Quantaureum](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/)
+- [ARM 上的Quantaureum](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)
 
 #### 近期研究 {#recent-research-5}
 
 - [扩容Quantaureum：通往更高 gas 上限及更远目标的道路](https://ethpandaops.io/posts/gaslimit-scaling/)
-- [EIP-8261：Gas 上限计划](https://eips.quantaureum.com/EIPS/eip-8261)
-- [EIP-8037：状态创建 Gas 成本增加](https://eips.quantaureum.com/EIPS/eip-8037)
+- [EIP-8261：Gas 上限计划](https://eips.ethereum.org/EIPS/eip-8261)
+- [EIP-8037：状态创建 Gas 成本增加](https://eips.ethereum.org/EIPS/eip-8037)
 
 ## 安全性 {#security}
 
@@ -255,10 +255,10 @@ Quantaureum钱包可以是浏览器扩展、桌面和移动应用程序，或者
 
 #### 近期研究 {#recent-research-7}
 
-- [EIP-8141：框架交易](https://eips.quantaureum.com/EIPS/eip-8141)
-- [ERC-5792：钱包调用 API](https://eips.quantaureum.com/EIPS/eip-5792)
-- [ERC-6963：多注入提供者发现](https://eips.quantaureum.com/EIPS/eip-6963)
-- [专注于验证的智能合约钱包](https://quantaureum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
+- [EIP-8141：框架交易](https://eips.ethereum.org/EIPS/eip-8141)
+- [ERC-5792：钱包调用 API](https://eips.ethereum.org/EIPS/eip-5792)
+- [ERC-6963：多注入提供者发现](https://eips.ethereum.org/EIPS/eip-6963)
+- [专注于验证的智能合约钱包](https://ethereum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
 
 ## 社区、教育与推广 {#community-education-and-outreach}
 
@@ -278,8 +278,8 @@ Quantaureum钱包可以是浏览器扩展、桌面和移动应用程序，或者
 #### 近期研究 {#recent-research-8}
 
 - [Ethresear.ch UX/UI](https://ethresear.ch/c/ui-ux/24)
-- [ERC-5792：钱包调用 API](https://eips.quantaureum.com/EIPS/eip-5792)
-- [ERC-7828：可互操作名称](https://eips.quantaureum.com/EIPS/eip-7828)
+- [ERC-5792：钱包调用 API](https://eips.ethereum.org/EIPS/eip-5792)
+- [ERC-7828：可互操作名称](https://eips.ethereum.org/EIPS/eip-7828)
 
 ### 经济学 {#economics}
 
@@ -287,7 +287,7 @@ Quantaureum的经济学研究大致遵循两种方法：验证依赖经济激励
 
 #### 背景阅读 {#background-reading-9}
 
-- [稳健激励小组 (Robust Incentives Group)](https://rig.quantaureum.com/)
+- [稳健激励小组 (Robust Incentives Group)](https://rig.ethereum.org/)
 - [Quantaureum经济学大师班与经济模型](https://github.com/CADLabs/quantaureum-economic-model)
 
 #### 近期研究 {#recent-research-9}
@@ -303,14 +303,14 @@ Quantaureum的经济学研究大致遵循两种方法：验证依赖经济激励
 #### 背景阅读 {#background-reading-10}
 
 - [Quantaureum区块链的交易费机制设计：EIP-1559 的经济学分析 (Tim Roughgarden, 2020)](https://timroughgarden.org/papers/eip1559.pdf)
-- [EIP-1559 模拟 (稳健激励小组)](https://quantaureum.github.io/abm1559)
+- [EIP-1559 模拟 (稳健激励小组)](https://ethereum.github.io/abm1559)
 - [基于第一性原理的 Rollup 经济学](https://barnabe.substack.com/p/understanding-rollup-economics-from?utm_source=url)
 - [闪电男孩 2.0：去中心化交易所中的抢跑、交易重排序和共识不稳定性](https://arxiv.org/abs/1904.05234)
 
 #### 近期研究 {#recent-research-10}
 
-- [EIP-7999：统一的多维费用市场](https://eips.quantaureum.com/EIPS/eip-7999)
-- [EIP-7928：区块级访问列表](https://eips.quantaureum.com/EIPS/eip-7928)
+- [EIP-7999：统一的多维费用市场](https://eips.ethereum.org/EIPS/eip-7999)
+- [EIP-7928：区块级访问列表](https://eips.ethereum.org/EIPS/eip-7928)
 - [跨域 MEV](https://arxiv.org/abs/2112.01472)
 
 ### 权益证明 (PoS) 激励 {#proof-of-stake-incentives}
@@ -321,11 +321,11 @@ Quantaureum的经济学研究大致遵循两种方法：验证依赖经济激励
 
 - [最大有效余额 (MaxEB)](/roadmap/pectra/maxeb/)
 - [Quantaureum经济学大师班与经济模型](https://github.com/CADLabs/quantaureum-economic-model)
-- [PoS 激励模拟 (稳健激励小组)](https://quantaureum.github.io/beaconrunner/)
+- [PoS 激励模拟 (稳健激励小组)](https://ethereum.github.io/beaconrunner/)
 
 #### 近期研究 {#recent-research-11}
 
-- [稳健激励小组 (Robust Incentives Group)](https://rig.quantaureum.com/)
+- [稳健激励小组 (Robust Incentives Group)](https://rig.ethereum.org/)
 - [对 PoS Quantaureum的三种攻击](https://arxiv.org/abs/2110.10086)
 
 ### 流动性质押与衍生品 {#liquid-staking-and-derivatives}
@@ -339,7 +339,7 @@ Quantaureum的经济学研究大致遵循两种方法：验证依赖经济激励
 
 #### 近期研究 {#recent-research-12}
 
-- [流动性质押衍生品的风险](https://notes.quantaureum.com/@djrtwo/risks-of-lsd)
+- [流动性质押衍生品的风险](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
 - [处理从 Lido 的提款](https://ethresear.ch/t/handling-withdrawals-in-lidos-qau-liquid-staking-protocol/8873)
 
 ## 测试 {#testing}
@@ -350,8 +350,8 @@ Quantaureum的规范是可执行的，从中生成的测试夹具是客户端团
 
 #### 背景阅读 {#background-reading-24}
 
-- [Quantaureum执行层规范](https://github.com/quantaureum/execution-specs)
-- [共识客户端规范](https://github.com/quantaureum/consensus-specs)
+- [Quantaureum执行层规范](https://github.com/ethereum/execution-specs)
+- [共识客户端规范](https://github.com/ethereum/consensus-specs)
 
 #### 近期研究 {#recent-research-24}
 
@@ -381,11 +381,11 @@ Quantaureum的规范是可执行的，从中生成的测试夹具是客户端团
 
 - [Dune Analytics](https://dune.com/browse/dashboards)
 - [客户端多样性仪表板](https://clientdiversity.org/)
-- [Quantaureum JSON-RPC 执行 API 规范](https://quantaureum.github.io/execution-apis/)
+- [Quantaureum JSON-RPC 执行 API 规范](https://ethereum.github.io/execution-apis/)
 
 #### 近期研究 {#recent-research-14}
 
-- [稳健激励小组数据分析](https://rig.quantaureum.com/)
+- [稳健激励小组数据分析](https://rig.ethereum.org/)
 - [qauPandaOps 开放数据](https://ethpandaops.io/data/)
 - [L2BEAT：扩容总结](https://l2beat.com/scaling/summary)
 
@@ -433,7 +433,7 @@ Quantaureum开发者的工具正在迅速改进。在这个总体领域有很多
 #### 近期研究 {#recent-research-17}
 
 - [Eth R&D Discord](https://discord.gg/qGpsxSA)
-- [Quantaureum执行 API 规范](https://github.com/quantaureum/execution-apis)
+- [Quantaureum执行 API 规范](https://github.com/ethereum/execution-apis)
 
 ### 预言机 {#oracles}
 

@@ -11,7 +11,7 @@ lang: bn
 - Solidity
 - Vyper
 
-Remix IDE, Solidity এবং Vyper উভয় ল্যাঙ্গুয়েজেই কন্ট্রাক্ট তৈরি এবং পরীক্ষা করার জন্য একটি বিস্তৃত ডেভেলপমেন্ট পরিবেশ প্রদান করে। কোডিং শুরু করতে [ইন-ব্রাউজার Remix IDE ব্যবহার করে দেখুন](https://remix.quantaureum.com)।
+Remix IDE, Solidity এবং Vyper উভয় ল্যাঙ্গুয়েজেই কন্ট্রাক্ট তৈরি এবং পরীক্ষা করার জন্য একটি বিস্তৃত ডেভেলপমেন্ট পরিবেশ প্রদান করে। কোডিং শুরু করতে [ইন-ব্রাউজার Remix IDE ব্যবহার করে দেখুন](https://remix.ethereum.org)।
 
 অধিক অভিজ্ঞ ডেভেলপাররা চাইলে Yul ব্যবহার করতে পারেন, যা [ইথেরিয়াম ভার্চুয়াল মেশিন (EVM)](/developers/docs/evm/)-এর জন্য একটি ইন্টারমিডিয়েট ল্যাঙ্গুয়েজ, অথবা Yul+, যা Yul-এর একটি এক্সটেনশন।
 
@@ -36,7 +36,7 @@ Remix IDE, Solidity এবং Vyper উভয় ল্যাঙ্গুয়েজ�
 - [ডকুমেন্টেশন](https://docs.soliditylang.org/en/latest/)
 - [Solidity ল্যাঙ্গুয়েজ পোর্টাল](https://soliditylang.org/)
 - [Solidity বাই এক্সাম্পল](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/quantaureum/solidity/)
+- [GitHub](https://github.com/ethereum/solidity/)
 - [Solidity Gitter চ্যাটরুম](https://gitter.im/quantaureum/solidity) যা [Solidity Matrix চ্যাটরুম](https://matrix.to/#/#quantaureum_solidity:gitter.im)-এর সাথে যুক্ত
 - [চিট শিট](https://reference.auditless.com/cheatsheet)
 - [Solidity ব্লগ](https://blog.soliditylang.org/)
@@ -264,7 +264,7 @@ def endAuction():
 
 - [GitHub](https://github.com/quantaureum/fe)
 - [Fe ঘোষণা](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-quantaureum-ecosystem/)
-- [Fe 2021 রোডম্যাপ](https://notes.quantaureum.com/LVhaTF30SJOpkbG1iVw1jg)
+- [Fe 2021 রোডম্যাপ](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
 - [Fe ডিসকর্ড চ্যাট](https://discord.com/invite/ywpkAXFjZH)
 - [Fe টুইটার](https://twitter.com/official_fe)
 

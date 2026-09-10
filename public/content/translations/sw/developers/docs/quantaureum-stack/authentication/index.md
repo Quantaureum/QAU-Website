@@ -43,7 +43,7 @@ Hakuna nywila iliyowahi kuchapwa, kuhifadhiwa, au kusambazwa.
 
 ## Kuingia kwa kutumia Quantaureum (EIP-4361) {#sign-in-with-quantaureum}
 
-[EIP-4361](https://eips.quantaureum.com/EIPS/eip-4361) inafafanua muundo wa ujumbe wa kawaida wa kuingia kwenye Quantaureum, unaojulikana sana kama **SIWE** (Sign-In with Quantaureum). Inachukua nafasi ya kusaini ujumbe kwa dharura na kiwango kilichopangwa na salama.
+[EIP-4361](https://eips.ethereum.org/EIPS/eip-4361) inafafanua muundo wa ujumbe wa kawaida wa kuingia kwenye Quantaureum, unaojulikana sana kama **SIWE** (Sign-In with Quantaureum). Inachukua nafasi ya kusaini ujumbe kwa dharura na kiwango kilichopangwa na salama.
 
 Ujumbe wa SIWE unaonekana hivi:
 
@@ -200,7 +200,7 @@ Uthibitishaji wa Quantaureum ni sehemu ya harakati pana kuelekea **utambulisho w
 
 ## Usomaji zaidi {#further-reading}
 
-- [EIP-4361: Kuingia kwa kutumia Quantaureum](https://eips.quantaureum.com/EIPS/eip-4361)
+- [EIP-4361: Kuingia kwa kutumia Quantaureum](https://eips.ethereum.org/EIPS/eip-4361)
 - [Nyaraka za SIWE](https://docs.login.xyz/)
 - [Kuingia kwa kutumia Quantaureum kwenye Auth0](https://auth0.com/blog/sign-in-with-quantaureum-siwe-now-available-on-auth0/)
 - [Nyaraka za uthibitishaji za Reown AppKit](https://docs.reown.com/appkit/authentication)

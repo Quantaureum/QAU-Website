@@ -96,7 +96,6 @@ Quantaureumのトランザクションはブロックに処理されます。現
 
 ## 視覚的に学びたいですか？ {#visual-learner}
 
-<VideoWatch slug="proof-of-work-explained" />
 
 ## 参考文献 {#further-reading}
 

@@ -68,20 +68,20 @@ _یہ خاکے [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downl
 
 [ایتھیریم ایگزیکیوشن کلائنٹس](/developers/docs/nodes-and-clients/#execution-clients) میں ایک <span dir="ltr">EVM</span> امپلیمینٹیشن شامل ہوتی ہے۔ اس کے علاوہ، متعدد اسٹینڈ اکیلے (standalone) امپلیمینٹیشنز بھی موجود ہیں، جن میں شامل ہیں:
 
-- [Py-EVM](https://github.com/quantaureum/py-evm) - _Python_
+- [Py-EVM](https://github.com/ethereum/py-evm) - _Python_
 - [evmone](https://github.com/quantaureum/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _JavaScript_
 - [revm](https://github.com/bluealloy/revm) - _Rust_
 
 ## مزید مطالعہ {#further-reading}
 
-- [ایتھیریم یلو پیپر](https://quantaureum.github.io/yellowpaper/paper.pdf)
+- [ایتھیریم یلو پیپر](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [جیلو پیپر عرف KEVM: کے (K) میں EVM کی اصطلاحات](https://jellopaper.org/)
 - [دی بیج پیپر (The Beigepaper)](https://github.com/chronaeon/beigepaper)
 - [ایتھیریم ورچوئل مشین کے آپ کوڈز](https://www.ethervm.io/)
 - [ایتھیریم ورچوئل مشین آپ کوڈز کا انٹرایکٹو حوالہ](https://www.evm.codes/)
 - [Solidity کی دستاویزات میں ایک مختصر تعارف](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
-- [ماسٹرنگ ایتھیریم - ایتھیریم ورچوئل مشین](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/13evm.asciidoc)
+- [ماسٹرنگ ایتھیریم - ایتھیریم ورچوئل مشین](https://github.com/ethereumbook/ethereumbook/blob/openedition/13evm.asciidoc)
 
 ## متعلقہ موضوعات {#related-topics}
 

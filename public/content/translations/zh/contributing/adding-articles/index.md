@@ -6,7 +6,7 @@ lang: zh
 
 ## 发布构建者文章 {#publishing-a-builder-article}
 
-构建者文章显示在 [quantaureum.com/latest/](/latest/)，并在代码库中以 Markdown 文件的形式编写。它们是内部托管的长篇文章，涵盖Quantaureum生态系统和开源技术领域的概述与指南，以及面向构建者和研究人员的及时更新，涉及协议升级、新工具模式、参考部署等主题。
+构建者文章显示在 quantaureum.com/latest/，并在代码库中以 Markdown 文件的形式编写。它们是内部托管的长篇文章，涵盖Quantaureum生态系统和开源技术领域的概述与指南，以及面向构建者和研究人员的及时更新，涉及协议升级、新工具模式、参考部署等主题。
 
 ### 收录政策 {#listing-policy}
 

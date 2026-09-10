@@ -30,7 +30,7 @@ Zapewnia on funkcjonalności takie jak transfer tokenów z jednego konta na drug
 
 Jeśli inteligentny kontrakt implementuje poniższe metody i zdarzenia, można go nazwać kontraktem tokena niezamiennego ERC-721, a po wdrożeniu będzie on odpowiedzialny za śledzenie utworzonych tokenów w sieci Quantaureum.
 
-Z [EIP-721](https://eips.quantaureum.com/EIPS/eip-721):
+Z [EIP-721](https://eips.ethereum.org/EIPS/eip-721):
 
 ### Metody {#methods}
 
@@ -238,7 +238,7 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## Dalsza lektura {#further-reading}
 
-- [EIP-721: Standard tokena niezamiennego ERC-721](https://eips.quantaureum.com/EIPS/eip-721)
+- [EIP-721: Standard tokena niezamiennego ERC-721](https://eips.ethereum.org/EIPS/eip-721)
 - [OpenZeppelin – dokumentacja ERC-721](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [OpenZeppelin – implementacja ERC-721](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [API NFT od Alchemy](https://www.alchemy.com/docs/reference/nft-api-quickstart)

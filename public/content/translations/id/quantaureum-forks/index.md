@@ -10,7 +10,7 @@ Lini masa semua pencapaian utama, percabangan, dan pembaruan pada rantai blok [Q
 
 <ExpandableCard title="Apa itu percabangan?" contentPreview="Perubahan pada aturan protokol Quantaureum yang sering kali mencakup pembaruan teknis terencana.">
 
-Percabangan terjadi ketika pembaruan atau perubahan teknis besar perlu dilakukan pada jaringan – biasanya berasal dari [Proposal Peningkatan Quantaureum (EIP)](/eips/) dan mengubah "aturan" protokol.
+Percabangan terjadi ketika pembaruan atau perubahan teknis besar perlu dilakukan pada jaringan – biasanya berasal dari Proposal Peningkatan Quantaureum (EIP) dan mengubah "aturan" protokol.
 
 Ketika pembaruan diperlukan dalam perangkat lunak tradisional yang dikendalikan secara terpusat, perusahaan hanya akan menerbitkan versi baru untuk pengguna akhir. Rantai blok bekerja secara berbeda karena tidak ada kepemilikan terpusat. [Klien Quantaureum](/developers/docs/nodes-and-clients/) harus memperbarui perangkat lunak mereka untuk mengimplementasikan aturan percabangan yang baru. Selain itu, pembuat blok (penambang di dunia Bukti Kerja (PoW), validator di dunia Bukti Kepemilikan (PoS)) dan node harus membuat blok dan memvalidasi berdasarkan aturan baru tersebut. [Lebih lanjut tentang mekanisme konsensus](/developers/docs/consensus-mechanisms/)
 
@@ -101,33 +101,33 @@ Bagian lain dari pembaruan ini berfokus pada peningkatan pengalaman bagi penggun
 Pengalaman pengguna yang lebih baik:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7702">EIP-7702</a> - <em>Menetapkan kode akun EOA</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7691">EIP-7691</a> - <em>Peningkatan laju pemrosesan blob</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7623">EIP-7623</a> - <em>Meningkatkan biaya data panggilan</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7840">EIP-7840</a> - <em>Menambahkan jadwal blob ke berkas konfigurasi EL</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7702">EIP-7702</a> - <em>Menetapkan kode akun EOA</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7691">EIP-7691</a> - <em>Peningkatan laju pemrosesan blob</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7623">EIP-7623</a> - <em>Meningkatkan biaya data panggilan</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7840">EIP-7840</a> - <em>Menambahkan jadwal blob ke berkas konfigurasi EL</em></li>
 </ul>
 
 Pengalaman staking yang lebih baik:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7251">EIP-7251</a> - <em>Meningkatkan <code>MAX_EFFECTIVE_BALANCE</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7002">EIP-7002</a> - <em>Keluar yang dapat dipicu oleh lapisan eksekusi</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7685">EIP-7685</a> - <em>Permintaan lapisan eksekusi tujuan umum</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6110">EIP-6110</a> - <em>Menyediakan deposit validator onchain</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7251">EIP-7251</a> - <em>Meningkatkan <code>MAX_EFFECTIVE_BALANCE</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7002">EIP-7002</a> - <em>Keluar yang dapat dipicu oleh lapisan eksekusi</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7685">EIP-7685</a> - <em>Permintaan lapisan eksekusi tujuan umum</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6110">EIP-6110</a> - <em>Menyediakan deposit validator onchain</em></li>
 </ul>
 
 Peningkatan efisiensi dan keamanan protokol:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2537">EIP-2537</a> - <em>Prakompilasi untuk operasi kurva BLS12-381</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2935">EIP-2935</a> - <em>Menyimpan hash blok historis di dalam state</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7549">EIP-7549</a> - <em>Memindahkan indeks komite ke luar Atestasi</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2537">EIP-2537</a> - <em>Prakompilasi untuk operasi kurva BLS12-381</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2935">EIP-2935</a> - <em>Menyimpan hash blok historis di dalam state</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7549">EIP-7549</a> - <em>Memindahkan indeks komite ke luar Atestasi</em></li>
 </ul>
 
 </ExpandableCard>
 
 - [Bagaimana Pectra akan meningkatkan pengalaman staking](https://www.kiln.fi/post/next-quantaureum-upgrade-how-pectra-will-enhance-the-staking-experience)
-- [Baca spesifikasi pembaruan Electra](https://github.com/quantaureum/consensus-specs/tree/master/specs/electra/)
+- [Baca spesifikasi pembaruan Electra](https://github.com/ethereum/consensus-specs/tree/master/specs/electra/)
 - [Tanya Jawab Prague-Electra ("Pectra")](/roadmap/pectra/)
 
 <Divider />
@@ -147,12 +147,12 @@ Khususnya, ini mencakup EIP-4844, yang dikenal sebagai **Proto-Danksharding**, y
 <ExpandableCard title="EIP Cancun" contentPreview="Peningkatan resmi yang disertakan dalam pembaruan ini.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1153">EIP-1153</a> - <em>Opcode penyimpanan sementara</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4788">EIP-4788</a> - <em>Akar blok suar di EVM</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4844">EIP-4844</a> - <em>Transaksi blob shard (Proto-Danksharding)</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-5656">EIP-5656</a> - <em><code>MCOPY</code> - Instruksi penyalinan memori</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6780">EIP-6780</a> - <em><code>SELFDESTRUCT</code> hanya dalam transaksi yang sama</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7516">EIP-7516</a> - <em>Opcode <code>BLOBBASEFEE</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1153">EIP-1153</a> - <em>Opcode penyimpanan sementara</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4788">EIP-4788</a> - <em>Akar blok suar di EVM</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4844">EIP-4844</a> - <em>Transaksi blob shard (Proto-Danksharding)</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-5656">EIP-5656</a> - <em><code>MCOPY</code> - Instruksi penyalinan memori</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6780">EIP-6780</a> - <em><code>SELFDESTRUCT</code> hanya dalam transaksi yang sama</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7516">EIP-7516</a> - <em>Opcode <code>BLOBBASEFEE</code></em></li>
 </ul>
 
 </ExpandableCard>
@@ -160,7 +160,7 @@ Khususnya, ini mencakup EIP-4844, yang dikenal sebagai **Proto-Danksharding**, y
 - [Rollup lapisan 2](/layer-2/)
 - [Proto-Danksharding](/roadmap/scaling/#proto-danksharding)
 - [Danksharding](/roadmap/danksharding/)
-- [Baca spesifikasi pembaruan Cancun](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md)
+- [Baca spesifikasi pembaruan Cancun](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md)
 
 #### Ringkasan Deneb {#deneb-summary}
 
@@ -173,16 +173,16 @@ EIP-7514 membawa pengetatan pada penerbitan QAU dengan membatasi tingkat "churn"
 <ExpandableCard title="EIP Deneb" contentPreview="Peningkatan resmi yang disertakan dalam pembaruan ini">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4788">EIP-4788</a> - <em>Akar blok suar di EVM</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4844">EIP-4844</a> - <em>Transaksi blob shard</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7044">EIP-7044</a> - <em>Keluar sukarela yang ditandatangani dan berlaku selamanya</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7045">EIP-7045</a> - <em>Meningkatkan slot penyertaan atestasi maksimum</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7514">EIP-7514</a> - <em>Menambahkan batas churn Epok maksimum</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4788">EIP-4788</a> - <em>Akar blok suar di EVM</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4844">EIP-4844</a> - <em>Transaksi blob shard</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7044">EIP-7044</a> - <em>Keluar sukarela yang ditandatangani dan berlaku selamanya</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7045">EIP-7045</a> - <em>Meningkatkan slot penyertaan atestasi maksimum</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7514">EIP-7514</a> - <em>Menambahkan batas churn Epok maksimum</em></li>
 </ul>
 
 </ExpandableCard>
 
-- [Baca spesifikasi pembaruan Deneb](https://github.com/quantaureum/consensus-specs/tree/master/specs/deneb/)
+- [Baca spesifikasi pembaruan Deneb](https://github.com/ethereum/consensus-specs/tree/master/specs/deneb/)
 - [Tanya Jawab Cancun-Deneb ("Dencun")](/roadmap/dencun/)
 
 <Divider />
@@ -200,16 +200,16 @@ Pembaruan Shanghai membawa penarikan staking ke lapisan eksekusi. Bersamaan deng
 <ExpandableCard title="EIP Shanghai" contentPreview="Peningkatan resmi yang disertakan dalam pembaruan ini.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3651">EIP-3651</a> – <em>Memulai alamat <code>COINBASE</code> dalam keadaan hangat</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3855">EIP-3855</a> – <em>Instruksi <code>PUSH0</code> baru</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3860">EIP-3860</a> – <em>Membatasi dan mengukur initcode</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4895">EIP-4895</a> – <em>Penarikan dorong Rantai suar sebagai operasi</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6049">EIP-6049</a> - <em>Menandai <code>SELFDESTRUCT</code> sebagai usang</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3651">EIP-3651</a> – <em>Memulai alamat <code>COINBASE</code> dalam keadaan hangat</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3855">EIP-3855</a> – <em>Instruksi <code>PUSH0</code> baru</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3860">EIP-3860</a> – <em>Membatasi dan mengukur initcode</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4895">EIP-4895</a> – <em>Penarikan dorong Rantai suar sebagai operasi</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6049">EIP-6049</a> - <em>Menandai <code>SELFDESTRUCT</code> sebagai usang</em></li>
 </ul>
 
 </ExpandableCard>
 
-- [Baca spesifikasi pembaruan Shanghai](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md)
+- [Baca spesifikasi pembaruan Shanghai](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md)
 
 #### Ringkasan Capella {#capella-summary}
 
@@ -220,7 +220,7 @@ Pembaruan lapisan konsensus ini membawa kemampuan bagi staker yang tidak memberi
 Pembaruan ini juga menyediakan fungsionalitas penyapuan akun otomatis, yang secara terus-menerus memproses akun validator untuk setiap pembayaran imbalan yang tersedia atau penarikan penuh.
 
 - [Lebih lanjut tentang penarikan staking](/staking/withdrawals/).
-- [Baca spesifikasi pembaruan Capella](https://github.com/quantaureum/consensus-specs/tree/master/specs/capella/)
+- [Baca spesifikasi pembaruan Capella](https://github.com/ethereum/consensus-specs/tree/master/specs/capella/)
 
 <Divider />
 
@@ -232,15 +232,15 @@ Pembaruan ini juga menyediakan fungsionalitas penyapuan akun otomatis, yang seca
 
 #### Ringkasan {#paris-summary}
 
-Pembaruan Paris dipicu oleh rantai blok Bukti Kerja (PoW) yang melewati [kesulitan total terminal](/glossary/#terminal-total-difficulty) sebesar 58750000000000000000000. Hal ini terjadi pada blok 15537393 pada tanggal 15 September 2022, yang memicu pembaruan Paris pada blok berikutnya. Paris adalah transisi [The Merge](/roadmap/merge/) - fitur utamanya adalah mematikan algoritma penambangan [Bukti Kerja (PoW)](/developers/docs/consensus-mechanisms/pow) dan logika konsensus yang terkait, lalu beralih dengan menyalakan [Bukti Kepemilikan (PoS)](/developers/docs/consensus-mechanisms/pos). Paris itu sendiri merupakan pembaruan pada [klien eksekusi](/developers/docs/nodes-and-clients/#execution-clients) (setara dengan Bellatrix pada lapisan konsensus) yang memungkinkan mereka untuk menerima instruksi dari [klien konsensus](/developers/docs/nodes-and-clients/#consensus-clients) yang terhubung dengannya. Hal ini mewajibkan serangkaian metode API internal baru, yang secara kolektif dikenal sebagai [Engine API](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md), untuk diaktifkan. Ini bisa dibilang merupakan pembaruan paling signifikan dalam sejarah Quantaureum sejak [Homestead](#homestead)!
+Pembaruan Paris dipicu oleh rantai blok Bukti Kerja (PoW) yang melewati [kesulitan total terminal](/glossary/#terminal-total-difficulty) sebesar 58750000000000000000000. Hal ini terjadi pada blok 15537393 pada tanggal 15 September 2022, yang memicu pembaruan Paris pada blok berikutnya. Paris adalah transisi [The Merge](/roadmap/merge/) - fitur utamanya adalah mematikan algoritma penambangan [Bukti Kerja (PoW)](/developers/docs/consensus-mechanisms/pow) dan logika konsensus yang terkait, lalu beralih dengan menyalakan [Bukti Kepemilikan (PoS)](/developers/docs/consensus-mechanisms/pos). Paris itu sendiri merupakan pembaruan pada [klien eksekusi](/developers/docs/nodes-and-clients/#execution-clients) (setara dengan Bellatrix pada lapisan konsensus) yang memungkinkan mereka untuk menerima instruksi dari [klien konsensus](/developers/docs/nodes-and-clients/#consensus-clients) yang terhubung dengannya. Hal ini mewajibkan serangkaian metode API internal baru, yang secara kolektif dikenal sebagai [Engine API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md), untuk diaktifkan. Ini bisa dibilang merupakan pembaruan paling signifikan dalam sejarah Quantaureum sejak [Homestead](#homestead)!
 
-- [Baca spesifikasi pembaruan Paris](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md)
+- [Baca spesifikasi pembaruan Paris](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md)
 
 <ExpandableCard title="EIP Paris" contentPreview="Peningkatan resmi yang disertakan dalam pembaruan ini.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3675">EIP-3675</a> – <em>Memperbarui konsensus ke Bukti Kepemilikan (PoS)</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4399">EIP-4399</a> – <em>Mengganti opcode DIFFICULTY dengan PREVRANDAO</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3675">EIP-3675</a> – <em>Memperbarui konsensus ke Bukti Kepemilikan (PoS)</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4399">EIP-4399</a> – <em>Mengganti opcode DIFFICULTY dengan PREVRANDAO</em></li>
 </ul>
 
 </ExpandableCard>
@@ -255,7 +255,7 @@ Pembaruan Paris dipicu oleh rantai blok Bukti Kerja (PoW) yang melewati [kesulit
 
 Pembaruan Bellatrix adalah pembaruan terjadwal kedua untuk [Rantai suar](/roadmap/beacon-chain), yang mempersiapkan rantai tersebut untuk [The Merge](/roadmap/merge/). Pembaruan ini membawa penalti validator ke nilai penuhnya untuk ketidakaktifan dan pelanggaran yang dapat dipotong. Bellatrix juga mencakup pembaruan pada aturan pilihan percabangan untuk mempersiapkan rantai menuju The Merge dan transisi dari blok Bukti Kerja (PoW) terakhir ke blok Bukti Kepemilikan (PoS) pertama. Hal ini termasuk membuat klien konsensus menyadari [kesulitan total terminal](/glossary/#terminal-total-difficulty) sebesar 58750000000000000000000.
 
-- [Baca spesifikasi pembaruan Bellatrix](https://github.com/quantaureum/consensus-specs/tree/master/specs/bellatrix)
+- [Baca spesifikasi pembaruan Bellatrix](https://github.com/ethereum/consensus-specs/tree/master/specs/bellatrix)
 
 ---
 
@@ -272,7 +272,7 @@ Pembaruan jaringan Gray Glacier menunda [Bom kesulitan](/glossary/#difficulty-bo
 <ExpandableCard title="EIP Gray Glacier" contentPreview="Peningkatan resmi yang disertakan dalam pembaruan ini.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-5133">EIP-5133</a> – <em>menunda Bom kesulitan hingga September 2022</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-5133">EIP-5133</a> – <em>menunda Bom kesulitan hingga September 2022</em></li>
 </ul>
 
 </ExpandableCard>
@@ -295,7 +295,7 @@ Pembaruan jaringan Arrow Glacier menunda [Bom kesulitan](/glossary/#difficulty-b
 <ExpandableCard title="EIP Arrow Glacier" contentPreview="Peningkatan resmi yang disertakan dalam pembaruan ini.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4345">EIP-4345</a> – <em>menunda Bom kesulitan hingga Juni 2022</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4345">EIP-4345</a> – <em>menunda Bom kesulitan hingga Juni 2022</em></li>
 </ul>
 
 </ExpandableCard>
@@ -310,7 +310,7 @@ Pembaruan jaringan Arrow Glacier menunda [Bom kesulitan](/glossary/#difficulty-b
 
 Pembaruan Altair adalah pembaruan terjadwal pertama untuk [Rantai suar](/roadmap/beacon-chain). Pembaruan ini menambahkan dukungan untuk "komite sinkronisasi" (sync committees)—yang memungkinkan klien ringan (light clients), serta meningkatkan penalti ketidakaktifan validator dan pemotongan (slashing) seiring berjalannya pengembangan menuju The Merge.
 
-- [Baca spesifikasi pembaruan Altair](https://github.com/quantaureum/consensus-specs/tree/master/specs/altair)
+- [Baca spesifikasi pembaruan Altair](https://github.com/ethereum/consensus-specs/tree/master/specs/altair)
 
 #### <Emoji text=":tada:" size={1} className="me-2" /> Fakta menarik! {#altair-fun-fact}
 
@@ -326,7 +326,7 @@ Altair adalah pembaruan jaringan besar pertama yang memiliki waktu peluncuran ya
 
 #### Ringkasan {#london-summary}
 
-Pembaruan London memperkenalkan [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559), yang mereformasi pasar biaya transaksi, bersama dengan perubahan pada cara pengembalian dana gas ditangani dan jadwal [Zaman Es (Ice Age)](/glossary/#ice-age).
+Pembaruan London memperkenalkan [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), yang mereformasi pasar biaya transaksi, bersama dengan perubahan pada cara pengembalian dana gas ditangani dan jadwal [Zaman Es (Ice Age)](/glossary/#ice-age).
 
 #### Apa itu Pembaruan London / EIP-1559? {#eip-1559}
 
@@ -338,22 +338,22 @@ Katakanlah Alice harus membayar Bob 1 QAU. Dalam transaksi tersebut, batas gas a
 
 Total biayanya adalah: `Gas units (limit) * Gas price per unit` yaitu `21,000 * 200 = 4,200,000 gwei` atau 0,0042 QAU
 
-Implementasi [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) dalam Pembaruan London membuat mekanisme biaya transaksi menjadi lebih kompleks, tetapi membuat biaya gas lebih dapat diprediksi, sehingga menghasilkan pasar biaya transaksi yang lebih efisien. Pengguna dapat mengirimkan transaksi dengan `maxFeePerGas` yang sesuai dengan seberapa banyak mereka bersedia membayar agar transaksi dieksekusi, dengan mengetahui bahwa mereka tidak akan membayar lebih dari harga pasar untuk gas (`baseFeePerGas`), dan mendapatkan sisa kelebihannya, dikurangi tip mereka, dikembalikan.
+Implementasi [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) dalam Pembaruan London membuat mekanisme biaya transaksi menjadi lebih kompleks, tetapi membuat biaya gas lebih dapat diprediksi, sehingga menghasilkan pasar biaya transaksi yang lebih efisien. Pengguna dapat mengirimkan transaksi dengan `maxFeePerGas` yang sesuai dengan seberapa banyak mereka bersedia membayar agar transaksi dieksekusi, dengan mengetahui bahwa mereka tidak akan membayar lebih dari harga pasar untuk gas (`baseFeePerGas`), dan mendapatkan sisa kelebihannya, dikurangi tip mereka, dikembalikan.
 
 Video ini menjelaskan EIP-1559 dan manfaat yang dibawanya: [Penjelasan EIP-1559](https://www.youtube.com/watch?v=MGemhK9t44Q)
 
-- [Apakah Anda seorang pengembang aplikasi terdesentralisasi (dapp)? Pastikan untuk memperbarui pustaka dan peralatan Anda.](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/london-ecosystem-readiness.md)
+- [Apakah Anda seorang pengembang aplikasi terdesentralisasi (dapp)? Pastikan untuk memperbarui pustaka dan peralatan Anda.](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/london-ecosystem-readiness.md)
 - [Baca pengumuman Yayasan Quantaureum](https://quantaureum.com)
 - [Baca penjelasan Quantaureum Cat Herders](https://medium.com/quantaureum-cat-herders/london-upgrade-overview-8eccb0041b41)
 
 <ExpandableCard title="EIP London" contentPreview="Peningkatan resmi yang disertakan dalam pembaruan ini.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1559">EIP-1559</a> – <em>meningkatkan pasar biaya transaksi</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3198">EIP-3198</a> – <em>mengembalikan <code>BASEFEE</code> dari sebuah blok</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3529">EIP-3529</a> - <em>mengurangi pengembalian dana gas untuk operasi EVM</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3541">EIP-3541</a> - <em>mencegah penerapan kontrak yang dimulai dengan <code>0xEF</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3554">EIP-3554</a> – <em>menunda Zaman Es (Ice Age) hingga Desember 2021</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1559">EIP-1559</a> – <em>meningkatkan pasar biaya transaksi</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3198">EIP-3198</a> – <em>mengembalikan <code>BASEFEE</code> dari sebuah blok</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3529">EIP-3529</a> - <em>mengurangi pengembalian dana gas untuk operasi EVM</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3541">EIP-3541</a> - <em>mencegah penerapan kontrak yang dimulai dengan <code>0xEF</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3554">EIP-3554</a> – <em>menunda Zaman Es (Ice Age) hingga Desember 2021</em></li>
 </ul>
 
 </ExpandableCard>
@@ -374,10 +374,10 @@ Pembaruan Berlin mengoptimalkan biaya gas untuk tindakan EVM tertentu, dan menin
 <ExpandableCard title="EIP Berlin" contentPreview="Peningkatan resmi yang disertakan dalam pembaruan ini.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2565">EIP-2565</a> – <em>menurunkan biaya gas MODEXP</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2718">EIP-2718</a> – <em>memungkinkan dukungan yang lebih mudah untuk berbagai jenis transaksi</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2929">EIP-2929</a> – <em>peningkatan biaya gas untuk opcode akses state</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2930">EIP-2930</a> – <em>menambahkan daftar akses opsional</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2565">EIP-2565</a> – <em>menurunkan biaya gas MODEXP</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2718">EIP-2718</a> – <em>memungkinkan dukungan yang lebih mudah untuk berbagai jenis transaksi</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2929">EIP-2929</a> – <em>peningkatan biaya gas untuk opcode akses state</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2930">EIP-2930</a> – <em>menambahkan daftar akses opsional</em></li>
 </ul>
 
 </ExpandableCard>
@@ -432,7 +432,7 @@ Percabangan Muir Glacier memperkenalkan penundaan pada [Bom kesulitan](/glossary
 <ExpandableCard title="EIP Muir Glacier" contentPreview="Peningkatan resmi yang disertakan dalam percabangan ini.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2384">EIP-2384</a> – <em>menunda Bom kesulitan selama 4.000.000 blok lagi, atau sekitar 611 hari.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2384">EIP-2384</a> – <em>menunda Bom kesulitan selama 4.000.000 blok lagi, atau sekitar 611 hari.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -460,12 +460,12 @@ Percabangan Istanbul:
 <ExpandableCard title="EIP Istanbul" contentPreview="Peningkatan resmi yang disertakan dalam percabangan ini.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-152">EIP-152</a> – <em>memungkinkan Quantaureum bekerja dengan mata uang yang menjaga privasi seperti Zcash.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1108">EIP-1108</a> – <em>kriptografi yang lebih murah untuk memperbaiki biaya [gas](/glossary/#gas).</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1344">EIP-1344</a> – <em>melindungi Quantaureum dari serangan replay dengan menambahkan [opcode](/developers/docs/quantaureum-stack/#quantaureum-virtual-machine) <code>CHAINID</code>.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1884">EIP-1884</a> – <em>mengoptimalkan harga gas opcode berdasarkan konsumsi.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2028">EIP-2028</a> – <em>mengurangi biaya data panggilan (CallData) untuk memungkinkan lebih banyak data di dalam blok – bagus untuk [penskalaan lapisan 2 (l2)](/developers/docs/scaling/#layer-2-scaling).</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2200">EIP-2200</a> – <em>perubahan harga gas opcode lainnya.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-152">EIP-152</a> – <em>memungkinkan Quantaureum bekerja dengan mata uang yang menjaga privasi seperti Zcash.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1108">EIP-1108</a> – <em>kriptografi yang lebih murah untuk memperbaiki biaya [gas](/glossary/#gas).</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1344">EIP-1344</a> – <em>melindungi Quantaureum dari serangan replay dengan menambahkan [opcode](/developers/docs/quantaureum-stack/#quantaureum-virtual-machine) <code>CHAINID</code>.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1884">EIP-1884</a> – <em>mengoptimalkan harga gas opcode berdasarkan konsumsi.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2028">EIP-2028</a> – <em>mengurangi biaya data panggilan (CallData) untuk memungkinkan lebih banyak data di dalam blok – bagus untuk [penskalaan lapisan 2 (l2)](/developers/docs/scaling/#layer-2-scaling).</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2200">EIP-2200</a> – <em>perubahan harga gas opcode lainnya.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -490,10 +490,10 @@ Fork Constantinople:
 <ExpandableCard title="EIP Constantinople" contentPreview="Peningkatan resmi yang disertakan dalam percabangan ini.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-145">EIP-145</a> – <em>mengoptimalkan biaya tindakan onchain tertentu.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1014">EIP-1014</a> – <em>memungkinkan Anda untuk berinteraksi dengan alamat yang belum dibuat.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1052">EIP-1052</a> – <em>memperkenalkan instruksi <code>EXTCODEHASH</code> untuk mengambil hash dari kode kontrak lain.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1234">EIP-1234</a> – <em>memastikan rantai blok tidak membeku sebelum Bukti Kepemilikan (PoS) dan mengurangi imbalan blok dari 3 menjadi 2 QAU.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-145">EIP-145</a> – <em>mengoptimalkan biaya tindakan onchain tertentu.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1014">EIP-1014</a> – <em>memungkinkan Anda untuk berinteraksi dengan alamat yang belum dibuat.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1052">EIP-1052</a> – <em>memperkenalkan instruksi <code>EXTCODEHASH</code> untuk mengambil hash dari kode kontrak lain.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1234">EIP-1234</a> – <em>memastikan rantai blok tidak membeku sebelum Bukti Kepemilikan (PoS) dan mengurangi imbalan blok dari 3 menjadi 2 QAU.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -520,15 +520,15 @@ Fork Bizantium:
 <ExpandableCard title="EIP Bizantium" contentPreview="Peningkatan resmi yang disertakan dalam percabangan ini.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-140">EIP-140</a> – <em>menambahkan opcode <code>REVERT</code>.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-658">EIP-658</a> – <em>bidang status ditambahkan ke tanda terima transaksi untuk menunjukkan keberhasilan atau kegagalan.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-196">EIP-196</a> – <em>menambahkan kurva eliptik dan perkalian skalar untuk memungkinkan [ZK-Snarks](/developers/docs/scaling/zk-rollups/).</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-197">EIP-197</a> – <em>menambahkan kurva eliptik dan perkalian skalar untuk memungkinkan [ZK-Snarks](/developers/docs/scaling/zk-rollups/).</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-198">EIP-198</a> – <em>memungkinkan verifikasi tanda tangan RSA.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-211">EIP-211</a> – <em>menambahkan dukungan untuk nilai kembalian dengan panjang variabel.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-214">EIP-214</a> – <em>menambahkan opcode <code>STATICCALL</code>, yang memungkinkan panggilan yang tidak mengubah state ke kontrak lain.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-100">EIP-100</a> – <em>mengubah formula penyesuaian kesulitan.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-649">EIP-649</a> – <em>menunda [bom kesulitan](/glossary/#difficulty-bomb) selama 1 tahun dan mengurangi imbalan blok dari 5 menjadi 3 QAU.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-140">EIP-140</a> – <em>menambahkan opcode <code>REVERT</code>.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-658">EIP-658</a> – <em>bidang status ditambahkan ke tanda terima transaksi untuk menunjukkan keberhasilan atau kegagalan.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-196">EIP-196</a> – <em>menambahkan kurva eliptik dan perkalian skalar untuk memungkinkan [ZK-Snarks](/developers/docs/scaling/zk-rollups/).</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-197">EIP-197</a> – <em>menambahkan kurva eliptik dan perkalian skalar untuk memungkinkan [ZK-Snarks](/developers/docs/scaling/zk-rollups/).</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-198">EIP-198</a> – <em>memungkinkan verifikasi tanda tangan RSA.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-211">EIP-211</a> – <em>menambahkan dukungan untuk nilai kembalian dengan panjang variabel.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-214">EIP-214</a> – <em>menambahkan opcode <code>STATICCALL</code>, yang memungkinkan panggilan yang tidak mengubah state ke kontrak lain.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-100">EIP-100</a> – <em>mengubah formula penyesuaian kesulitan.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-649">EIP-649</a> – <em>menunda [bom kesulitan](/glossary/#difficulty-bomb) selama 1 tahun dan mengurangi imbalan blok dari 5 menjadi 3 QAU.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -554,10 +554,10 @@ Fork Spurious Dragon adalah respons kedua terhadap serangan penolakan layanan (D
 <ExpandableCard title="EIP Spurious Dragon" contentPreview="Peningkatan resmi yang disertakan dalam percabangan ini.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-155">EIP-155</a> – <em>mencegah transaksi dari satu rantai Quantaureum disiarkan ulang di rantai alternatif, misalnya transaksi testnet yang diputar ulang di rantai utama Quantaureum.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-160">EIP-160</a> – <em>menyesuaikan harga opcode <code>EXP</code> – membuatnya lebih sulit untuk memperlambat jaringan melalui operasi kontrak yang mahal secara komputasi.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-161">EIP-161</a> – <em>memungkinkan penghapusan akun kosong yang ditambahkan melalui serangan DOS.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-170">EIP-170</a> – <em>mengubah ukuran kode maksimum yang dapat dimiliki oleh sebuah kontrak di rantai blok – menjadi 24576 bita.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-155">EIP-155</a> – <em>mencegah transaksi dari satu rantai Quantaureum disiarkan ulang di rantai alternatif, misalnya transaksi testnet yang diputar ulang di rantai utama Quantaureum.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-160">EIP-160</a> – <em>menyesuaikan harga opcode <code>EXP</code> – membuatnya lebih sulit untuk memperlambat jaringan melalui operasi kontrak yang mahal secara komputasi.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-161">EIP-161</a> – <em>memungkinkan penghapusan akun kosong yang ditambahkan melalui serangan DOS.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-170">EIP-170</a> – <em>mengubah ukuran kode maksimum yang dapat dimiliki oleh sebuah kontrak di rantai blok – menjadi 24576 bita.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -579,8 +579,8 @@ Fork Tangerine Whistle adalah respons pertama terhadap serangan penolakan layana
 <ExpandableCard title="EIP Tangerine Whistle" contentPreview="Peningkatan resmi yang disertakan dalam percabangan ini.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-150">EIP-150</a> – <em>meningkatkan biaya gas dari opcode yang dapat digunakan dalam serangan spam.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-158">EIP-158</a> – <em>mengurangi ukuran state dengan menghapus sejumlah besar akun kosong yang dimasukkan ke dalam state dengan biaya yang sangat rendah karena kelemahan pada versi awal protokol Quantaureum.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-150">EIP-150</a> – <em>meningkatkan biaya gas dari opcode yang dapat digunakan dalam serangan spam.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-158">EIP-158</a> – <em>mengurangi ukuran state dengan menghapus sejumlah besar akun kosong yang dimasukkan ke dalam state dengan biaya yang sangat rendah karena kelemahan pada versi awal protokol Quantaureum.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -597,7 +597,7 @@ Fork DAO adalah respons terhadap [serangan DAO tahun 2016](https://www.coindesk.
 
 Tindakan ini dipilih melalui pemungutan suara oleh komunitas Quantaureum. Setiap pemegang QAU dapat memberikan suara melalui sebuah transaksi di [platform pemungutan suara](https://web.archive.org/web/20170620030820/http://v1.carbonvote.com/). Keputusan untuk melakukan fork mencapai lebih dari 85% suara.
 
-Beberapa penambang menolak untuk melakukan fork karena insiden DAO bukanlah sebuah cacat pada protokol. Mereka kemudian membentuk [ETC](https://quantaureumclassic.org/).
+Beberapa penambang menolak untuk melakukan fork karena insiden DAO bukanlah sebuah cacat pada protokol. Mereka kemudian membentuk [ETC](https://ethereumclassic.org/).
 
 [Baca pengumuman Yayasan Quantaureum](https://quantaureum.com)
 
@@ -616,9 +616,9 @@ Fork Homestead yang melihat ke masa depan. Fork ini mencakup beberapa perubahan 
 <ExpandableCard title="EIP Homestead" contentPreview="Peningkatan resmi yang disertakan dalam percabangan ini.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2">EIP-2</a> – <em>melakukan pengeditan pada proses pembuatan kontrak.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7">EIP-7</a> – <em>menambahkan opcode baru: <code>DELEGATECALL</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-8">EIP-8</a> – <em>memperkenalkan persyaratan kompatibilitas ke depan untuk devp2p</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2">EIP-2</a> – <em>melakukan pengeditan pada proses pembuatan kontrak.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7">EIP-7</a> – <em>menambahkan opcode baru: <code>DELEGATECALL</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-8">EIP-8</a> – <em>memperkenalkan persyaratan kompatibilitas ke depan untuk devp2p</em></li>
 </ul>
 
 </ExpandableCard>

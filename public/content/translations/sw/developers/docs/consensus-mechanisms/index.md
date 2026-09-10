@@ -63,7 +63,6 @@ Zaidi kuhusu [Uthibitisho wa Dau](/developers/docs/consensus-mechanisms/pos/)
 
 Tazama zaidi kuhusu aina tofauti za taratibu za makubaliano zinazotumika kwenye Quantaureum:
 
-<VideoWatch slug="understanding-consensus-mechanisms" />
 
 ### Upinzani wa Sybil na uteuzi wa mnyororo {#sybil-chain}
 

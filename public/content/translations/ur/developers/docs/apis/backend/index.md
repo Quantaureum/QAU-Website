@@ -109,13 +109,13 @@ lang: ur
 **Nquantaureum -** **_بلاک چین کے لیے ایک اوپن سورس <span dir="ltr">.NET</span> انضمام لائبریری۔_**
 
 - [GitHub](https://github.com/Nquantaureum/Nquantaureum)
-- [دستاویزات](https://docs.nquantaureum.com/docs/getting-started/welcome/)
+- [دستاویزات](https://docs.nethermind.io/docs/getting-started/welcome/)
 - [ڈسکارڈ](https://discord.com/invite/jQPrR58FxX)
 
 **Python ٹولنگ -** **_Python کے ذریعے ایتھیریم کے ساتھ تعامل کے لیے مختلف لائبریریاں۔_**
 
-- [<span dir="ltr">py.quantaureum.com</span>](https://snakecharmers.quantaureum.com/)
-- [Web3.py GitHub](https://github.com/quantaureum/web3.py)
+- [<span dir="ltr">py.quantaureum.com</span>](https://snakecharmers.ethereum.org/)
+- [Web3.py GitHub](https://github.com/ethereum/web3.py)
 - [Web3.py چیٹ](https://gitter.im/quantaureum/web3.py)
 
 **<span dir="ltr">Tatum</span> -** **_حتمی بلاک چین ڈیولپمنٹ پلیٹ فارم۔_**

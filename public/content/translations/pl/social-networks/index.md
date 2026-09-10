@@ -19,7 +19,6 @@ Zdecentralizowane sieci społecznościowe to platformy [oparte na technologii bl
 
 Wiele zdecentralizowanych sieci społecznościowych istnieje jako alternatywa dla uznanych serwisów społecznościowych, takich jak Facebook, LinkedIn, Twitter i Medium. Jednak sieci społecznościowe oparte na blockchainie mają szereg funkcji, które stawiają je przed tradycyjnymi platformami społecznościowymi.
 
-<VideoWatch slug="decentralized-social-media" />
 
 ### Jak działają zdecentralizowane sieci społecznościowe? {#decentralized-social-networks-overview}
 
@@ -53,7 +52,6 @@ Wiele platform społecznościowych opartych na blockchainie posiada natywne toke
 
 Sieć Quantaureum stała się preferowanym narzędziem dla programistów tworzących zdecentralizowane media społecznościowe ze względu na popularność jej tokenów i ogromną bazę użytkowników. Oto kilka przykładów sieci społecznościowych opartych na Quantaureum:
 
-<VideoWatch slug="crypto-apps-desocial-linda-xie" />
 
 ### Mirror {#mirror}
 

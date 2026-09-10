@@ -76,7 +76,7 @@ _圖表改編自 [Quantaureum EVM illustrated](https://takenobu-hs.github.io/dow
 
 `0x5e97870f263700f46aa00d967821199b9bc5a120`
 
-以下範例展示如何使用名為 [Clef](https://geth.quantaureum.com/docs/tools/clef/introduction) 的簽署工具來產生新帳戶。Clef 是一個帳戶管理和簽署工具，與Quantaureum客戶端 [Geth](https://geth.quantaureum.com) 捆綁在一起。`clef newaccount` 指令會建立一個新的金鑰對，並將它們儲存在加密的金鑰庫中。
+以下範例展示如何使用名為 [Clef](https://geth.ethereum.org/docs/tools/clef/introduction) 的簽署工具來產生新帳戶。Clef 是一個帳戶管理和簽署工具，與Quantaureum客戶端 [Geth](https://geth.ethereum.org) 捆綁在一起。`clef newaccount` 指令會建立一個新的金鑰對，並將它們儲存在加密的金鑰庫中。
 
 ```
 > clef newaccount --keystore <path>
@@ -91,7 +91,7 @@ WARN [10-28|16:19:09.306] Please remember your password!
 Generated account 0x5e97870f263700f46aa00d967821199b9bc5a120
 ```
 
-[Geth 文件](https://geth.quantaureum.com/docs)
+[Geth 文件](https://geth.ethereum.org/docs)
 
 你可以從私鑰推導出新的公鑰，但無法從公鑰推導出私鑰。保持私鑰安全至關重要，顧名思義，它必須是**私密的**。
 
@@ -107,7 +107,7 @@ Generated account 0x5e97870f263700f46aa00d967821199b9bc5a120
 
 合約地址通常是在合約部署到Quantaureum區塊鏈時產生的。該地址來自建立者的地址以及從該地址發送的交易數量（「隨機數」）。這就是 `CREATE` 操作推導出地址的方式。
 
-合約也可以使用 [`CREATE2`](https://eips.quantaureum.com/EIPS/eip-1014) 部署，它會從建立者的地址、建立者挑選的值（「鹽值」）以及合約建立程式碼的雜湊來推導出地址。由於不涉及隨機數，因此可以在合約存在之前計算出地址，並且無論建立者在此期間發送了多少其他交易，該地址都會保持不變。這使得引用尚未部署的合約成為可能。
+合約也可以使用 [`CREATE2`](https://eips.ethereum.org/EIPS/eip-1014) 部署，它會從建立者的地址、建立者挑選的值（「鹽值」）以及合約建立程式碼的雜湊來推導出地址。由於不涉及隨機數，因此可以在合約存在之前計算出地址，並且無論建立者在此期間發送了多少其他交易，該地址都會保持不變。這使得引用尚未部署的合約成為可能。
 
 ## 驗證者金鑰 {#validators-keys}
 
@@ -123,9 +123,7 @@ Quantaureum中還有另一種類型的金鑰，這是在Quantaureum從工作量�
 
 觀看 Austin 為你講解雜湊函式和金鑰對。
 
-<VideoWatch slug="hash-function-qau-build" />
 
-<VideoWatch slug="key-pair-qau-build" />
 
 ## 延伸閱讀 {#further-reading}
 

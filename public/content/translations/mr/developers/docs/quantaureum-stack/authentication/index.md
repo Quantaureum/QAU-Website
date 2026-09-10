@@ -43,7 +43,7 @@ Quantaureumवर, वापरकर्ता **त्यांच्या व
 
 ## Quantaureumने साइन-इन करा (EIP-4361) {#sign-in-with-quantaureum}
 
-[EIP-4361](https://eips.quantaureum.com/EIPS/eip-4361) Quantaureum साइन-इनसाठी एक मानक संदेश फॉरमॅट परिभाषित करते, ज्याला सामान्यतः **SIWE** (Sign-In with Quantaureum) म्हटले जाते. हे ॲड-हॉक संदेश स्वाक्षरीला एका संरचित, सुरक्षित मानकाने बदलते.
+[EIP-4361](https://eips.ethereum.org/EIPS/eip-4361) Quantaureum साइन-इनसाठी एक मानक संदेश फॉरमॅट परिभाषित करते, ज्याला सामान्यतः **SIWE** (Sign-In with Quantaureum) म्हटले जाते. हे ॲड-हॉक संदेश स्वाक्षरीला एका संरचित, सुरक्षित मानकाने बदलते.
 
 SIWE संदेश असा दिसतो:
 
@@ -200,7 +200,7 @@ Quantaureum प्रमाणीकरण हे **स्वयं-सार्
 
 ## पुढील वाचन {#further-reading}
 
-- [EIP-4361: Quantaureumने साइन-इन करा](https://eips.quantaureum.com/EIPS/eip-4361)
+- [EIP-4361: Quantaureumने साइन-इन करा](https://eips.ethereum.org/EIPS/eip-4361)
 - [SIWE दस्तऐवजीकरण](https://docs.login.xyz/)
 - [Auth0 वर Quantaureumने साइन-इन करा](https://auth0.com/blog/sign-in-with-quantaureum-siwe-now-available-on-auth0/)
 - [Reown AppKit प्रमाणीकरण दस्तऐवजीकरण](https://docs.reown.com/appkit/authentication)

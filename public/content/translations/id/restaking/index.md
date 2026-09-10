@@ -25,7 +25,6 @@ Staking ulang adalah teknologi yang dibangun untuk [staker](/staking/) guna memp
 
 **Penjelasan staking ulang dalam 18 menit**
 
-<VideoWatch slug="restaking-explained" />
 
 ## Apa itu staking ulang? {#what-is-restaking}
 
@@ -172,7 +171,6 @@ Meskipun AVS menawarkan tingkat yang berbeda, Token Staking Ulang Likuid (LRT) s
 
 ## Tingkat Lanjut {#advanced}
 
-<VideoWatch slug="eigenlayer-permissionless-features" />
 
 ## Bacaan lebih lanjut {#further-reading}
 

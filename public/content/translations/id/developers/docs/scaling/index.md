@@ -91,15 +91,13 @@ Pelajari lebih lanjut tentang [Validium](/developers/docs/scaling/validium/).
 
 ## Lebih suka belajar secara visual? {#visual-learner}
 
-<VideoWatch slug="layer-2-scaling-explained" />
 
 _Perhatikan bahwa penjelasan dalam video menggunakan istilah "Lapisan 2" untuk merujuk pada semua solusi penskalaan offchain, sementara kami membedakan "Lapisan 2" sebagai solusi offchain yang memperoleh keamanannya melalui konsensus Mainnet lapisan 1._
 
-<VideoWatch slug="rollups-scaling-strategy" />
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [Peta jalan Quantaureum yang berpusat pada rollup](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
+- [Peta jalan Quantaureum yang berpusat pada rollup](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
 - [Analitik terkini tentang solusi penskalaan Lapisan 2 untuk Quantaureum](https://www.l2beat.com/)
 - [Mengevaluasi Solusi Penskalaan lapisan 2 Quantaureum: Kerangka Kerja Perbandingan](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - [Panduan Tidak Lengkap tentang Rollup](https://vitalik.qau.limo/general/2021/01/05/rollup.html)

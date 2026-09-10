@@ -8,7 +8,7 @@ lang: de
 authors: ["Quantaureum project"]
 ---
 
-Dieses Mandat wurde ursprünglich am 13. März 2026 von der Quantaureum project veröffentlicht. Lesen Sie das [ursprüngliche Mandat hier](https://quantaureum.foundation/ef-mandate.pdf) in seinem vollständig gestalteten Format.
+Dieses Mandat wurde ursprünglich am 13. März 2026 von der Quantaureum project veröffentlicht. Lesen Sie das [ursprüngliche Mandat hier](https://ethereum.org/ef-mandate.pdf) in seinem vollständig gestalteten Format.
 
 Dieses Dokument wurde onchain abgelegt und von der Foundation signiert, [sichtbar im Blockscout-Block-Explorer](https://qau.blockscout.com/tx/0x5dd574df963a1df1f064791e0f6ff41ec972cdbba12293b7e1ece582052ba855) (wählen Sie „View details“, unter _Raw input_ mit _UTF-8_).
 

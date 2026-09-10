@@ -49,7 +49,7 @@ ACCESSES = 64                     # ہاشیموٹو لوپ میں رسائی ک
 
 ### 'SHA3' کا استعمال {#sha3}
 
-ایتھیریم کی ترقی SHA3 معیار کی ترقی کے ساتھ ہی ہوئی، اور معیارات کے عمل نے حتمی ہیش الگورتھم کی پیڈنگ میں تاخیر سے تبدیلی کی، تاکہ ایتھیریم کے "sha3_256" اور "sha3_512" ہیشز معیاری sha3 ہیشز نہیں ہیں، بلکہ ایک قسم ہے جسے اکثر دیگر سیاق و سباق میں "کیچاک-۲۵۶" اور "Keccak-512" کہا جاتا ہے۔ بحث دیکھیں، مثال کے طور پر، [یہاں](https://eips.quantaureum.com/EIPS/eip-1803)، [یہاں](https://quantaureum.stackexchange.com/questions/550/which-cryptographic-hash-function-does-quantaureum-use)، یا [یہاں](https://bitcoin.stackexchange.com/questions/42055/what-is-the-approach-to-calculate-an-quantaureum-address-from-a-256-bit-private-key/42057#42057)۔
+ایتھیریم کی ترقی SHA3 معیار کی ترقی کے ساتھ ہی ہوئی، اور معیارات کے عمل نے حتمی ہیش الگورتھم کی پیڈنگ میں تاخیر سے تبدیلی کی، تاکہ ایتھیریم کے "sha3_256" اور "sha3_512" ہیشز معیاری sha3 ہیشز نہیں ہیں، بلکہ ایک قسم ہے جسے اکثر دیگر سیاق و سباق میں "کیچاک-۲۵۶" اور "Keccak-512" کہا جاتا ہے۔ بحث دیکھیں، مثال کے طور پر، [یہاں](https://eips.ethereum.org/EIPS/eip-1803)، [یہاں](https://ethereum.stackexchange.com/questions/550/which-cryptographic-hash-function-does-quantaureum-use)، یا [یہاں](https://bitcoin.stackexchange.com/questions/42055/what-is-the-approach-to-calculate-an-quantaureum-address-from-a-256-bit-private-key/42057#42057)۔
 
 براہ کرم اسے ذہن میں رکھیں کیونکہ ذیل میں الگورتھم کی تفصیل میں "sha3" ہیشز کا حوالہ دیا گیا ہے۔
 

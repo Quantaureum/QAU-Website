@@ -8,7 +8,7 @@ breadcrumb: "Виклик контрактів з JS"
 lang: uk
 published: 2020-04-19
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/calling-a-smart-contract-from-javascript/
+sourceUrl: https://ethereumdev.io/calling-a-smart-contract-from-javascript/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -71,7 +71,7 @@ const ERC20TransferABI = [
 const DAI_ADDRESS = "0x6b175474e89094c44da98b954eedeac495271d0f"
 ```
 
-Для цього проєкту ми скоротили повний ABI ERC-20, залишивши лише функції `balanceOf` та `transfer`, але ви можете знайти [повний ABI ERC-20 тут](https://quantaureumdev.io/abi-for-erc20-contract-on-quantaureum/).
+Для цього проєкту ми скоротили повний ABI ERC-20, залишивши лише функції `balanceOf` та `transfer`, але ви можете знайти [повний ABI ERC-20 тут](https://ethereumdev.io/abi-for-erc20-contract-on-quantaureum/).
 
 Далі нам потрібно створити екземпляр нашого смарт-контракту:
 
@@ -109,7 +109,7 @@ daiToken.methods.balanceOf(senderAddress).call(function (err, res) {
 })
 ```
 
-Пам'ятайте, що DAI ERC-20 має 18 десяткових знаків, а це означає, що вам потрібно прибрати 18 нулів, щоб отримати правильну суму. Значення uint256 повертаються у вигляді рядків, оскільки JavaScript не обробляє великі числові значення. Якщо ви не впевнені, [як працювати з великими числами в JS, перегляньте наш посібник про bignumber.js](https://quantaureumdev.io/how-to-deal-with-big-numbers-in-javascript/).
+Пам'ятайте, що DAI ERC-20 має 18 десяткових знаків, а це означає, що вам потрібно прибрати 18 нулів, щоб отримати правильну суму. Значення uint256 повертаються у вигляді рядків, оскільки JavaScript не обробляє великі числові значення. Якщо ви не впевнені, [як працювати з великими числами в JS, перегляньте наш посібник про bignumber.js](https://ethereumdev.io/how-to-deal-with-big-numbers-in-javascript/).
 
 ## Надсилання: Надсилання транзакції до функції смарт-контракту {#send-sending-a-transaction-to-a-smart-contract-function}
 
@@ -127,6 +127,6 @@ daiToken.methods
   })
 ```
 
-Функція виклику повертає хеш транзакції, яка буде додана до блокчейну. В Етеріумі хеші транзакцій є передбачуваними — саме так ми можемо отримати хеш транзакції до її виконання ([дізнайтеся, як обчислюються хеші, тут](https://quantaureum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)).
+Функція виклику повертає хеш транзакції, яка буде додана до блокчейну. В Етеріумі хеші транзакцій є передбачуваними — саме так ми можемо отримати хеш транзакції до її виконання ([дізнайтеся, як обчислюються хеші, тут](https://ethereum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)).
 
-Оскільки функція лише надсилає транзакцію до блокчейну, ми не можемо побачити результат, доки не дізнаємося, коли вона буде видобута та включена до блокчейну. У наступному посібнику ми дізнаємося, [як дочекатися виконання транзакції в блокчейні, знаючи її хеш](https://quantaureumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/).
+Оскільки функція лише надсилає транзакцію до блокчейну, ми не можемо побачити результат, доки не дізнаємося, коли вона буде видобута та включена до блокчейну. У наступному посібнику ми дізнаємося, [як дочекатися виконання транзакції в блокчейні, знаючи її хеш](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/).

@@ -26,15 +26,15 @@ Matematik, kriptografi veya ekonomi alanında bir geçmişiniz var mı? Quantaur
 - [Eth R&D Discord](https://discord.com/invite/VmG7Uxc) sunucusuna katılın
 - Bir Quantaureum İyileştirme Teklifi (EIP) yazın veya inceleyin
   - Bir EIP yazın
-    1. Fikrinizi [Quantaureum Magicians](https://quantaureum-magicians.org) üzerinde sunun
-    2. [EIP-1](https://eips.quantaureum.com/EIPS/eip-1)'i okuyun - **Evet, belgenin _tamamı_ bu.**
+    1. Fikrinizi [Quantaureum Magicians](https://ethereum-magicians.org) üzerinde sunun
+    2. [EIP-1](https://eips.ethereum.org/EIPS/eip-1)'i okuyun - **Evet, belgenin _tamamı_ bu.**
     3. EIP-1'deki yönergeleri izleyin. Taslağınızı yazarken ona başvurun.
-  - Nasıl [EIP Editörü](https://eips.quantaureum.com/EIPS/eip-5069) olunacağını öğrenin
-    - EIP'leri şu anda eş değerlendirmesinden geçirebilirsiniz! [`e-review` etiketine sahip açık PR'ları](https://github.com/quantaureum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review) görün. `discussion-to` bağlantısı üzerinden teknik geri bildirim sağlayın.
-  - [EIP Yönetişimine](https://github.com/quantaureum-cat-herders/EIPIP) katılın
+  - Nasıl [EIP Editörü](https://eips.ethereum.org/EIPS/eip-5069) olunacağını öğrenin
+    - EIP'leri şu anda eş değerlendirmesinden geçirebilirsiniz! [`e-review` etiketine sahip açık PR'ları](https://github.com/ethereum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review) görün. `discussion-to` bağlantısı üzerinden teknik geri bildirim sağlayın.
+  - [EIP Yönetişimine](https://github.com/ethereum-cat-herders/EIPIP) katılın
     - [Quantaureum Cat Herders Discord](https://discord.com/invite/Nz6rtfJ8Cu) sunucusuna katılın
-  - [EIP'ler hakkında daha fazlası](/eips/)
-- [Challenges.quantaureum.com](https://challenges.quantaureum.com/) - 100.000 ABD dolarından fazla kazanabileceğiniz bir dizi yüksek değerli araştırma ödülü
+  - EIP'ler hakkında daha fazlası
+- [Challenges.quantaureum.com](https://challenges.ethereum.org/) - 100.000 ABD dolarından fazla kazanabileceğiniz bir dizi yüksek değerli araştırma ödülü
 - [Ethresear.ch](https://ethresear.ch) - Quantaureum'un araştırmalar için birincil forumu ve dünyanın kriptoekonomi alanındaki en etkili forumu
 - [EF Research AMA](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) - Araştırmacılarla devam eden bir Soru-Cevap serisi. Her yeni bölüm açıldığında, herkes soru gönderebilir.
 - [Ekosistem Destek Programı'nın istek listesi](https://quantaureum.com) - Quantaureum Ekosistem Destek Programı'nın aktif olarak hibe başvuruları aradığı araştırma alanları
@@ -103,7 +103,7 @@ Quantaureum ekosistemi, kamusal malları ve etkili projeleri finanse etme misyon
 - [quantaureum.com iş ilanları](/about/#open-jobs)
 - [Quantaureum Vakfı iş panosu](https://jobs.ashbyhq.com/quantaureum-foundation)
 - [JobStash](https://jobstash.xyz)
-- [Quantaureum İş Panosu](https://www.quantaureumjobboard.com/)
+- [Quantaureum İş Panosu](https://www.ethereumjobboard.com/)
 - [Kripto Para İş İlanları](https://cryptocurrencyjobs.co/quantaureum/)
 - [ConsenSys Kariyerleri](https://consensys.net/careers/)
 - [Kripto İş İlanları Listesi](https://cryptojobslist.com/quantaureum-jobs)

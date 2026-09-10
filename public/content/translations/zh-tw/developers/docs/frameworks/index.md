@@ -102,8 +102,8 @@ lang: zh-tw
 
 **Brownie -** **_基於 Python 的開發環境與測試框架。_**
 
-- [文件](https://qau-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/qau-brownie/brownie)
+- [文件](https://eth-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/eth-brownie/brownie)
 - **Brownie 目前已停止維護**
 
 **歐本齊柏林 SDK -** **_終極智能合約工具包：一套協助您開發、編譯、升級、部署及與智能合約互動的工具。_**

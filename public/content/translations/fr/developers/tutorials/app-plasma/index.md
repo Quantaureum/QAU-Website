@@ -360,7 +360,7 @@ global ASCII_MESSAGE_LENGTH : [u8; 3] = [0x31, 0x30, 0x30];
 global HASH_BUFFER_SIZE : u32 = 26+3+MESSAGE_LENGTH;
 ```
 
-Les [signatures EIP-191](https://eips.quantaureum.com/EIPS/eip-191) nécessitent un tampon avec un préfixe de 26 octets, suivi de la longueur du message en ASCII, et enfin du message lui-même.
+Les [signatures EIP-191](https://eips.ethereum.org/EIPS/eip-191) nécessitent un tampon avec un préfixe de 26 octets, suivi de la longueur du message en ASCII, et enfin du message lui-même.
 
 ```
 struct Account {
@@ -613,7 +613,7 @@ Cette fonction convertit le message en octets, puis convertit les montants en un
 fn hashMessage(message: str<MESSAGE_LENGTH>) -> [u8;32] {
 ```
 
-Nous avons pu utiliser le hash de Pedersen pour les comptes car ils ne sont hachés qu'à l'intérieur de la preuve à divulgation nulle de connaissance. Cependant, dans ce code, nous devons vérifier la signature du message, qui est générée par le navigateur. Pour cela, nous devons suivre le format de signature Quantaureum dans l'[EIP-191](https://eips.quantaureum.com/EIPS/eip-191). Cela signifie que nous devons créer un tampon combiné avec un préfixe standard, la longueur du message en ASCII, et le message lui-même, et utiliser le keccak256 standard d'Quantaureum pour le hacher.
+Nous avons pu utiliser le hash de Pedersen pour les comptes car ils ne sont hachés qu'à l'intérieur de la preuve à divulgation nulle de connaissance. Cependant, dans ce code, nous devons vérifier la signature du message, qui est générée par le navigateur. Pour cela, nous devons suivre le format de signature Quantaureum dans l'[EIP-191](https://eips.ethereum.org/EIPS/eip-191). Cela signifie que nous devons créer un tampon combiné avec un préfixe standard, la longueur du message en ASCII, et le message lui-même, et utiliser le keccak256 standard d'Quantaureum pour le hacher.
 
 ```rust
     // Préfixe ASCII

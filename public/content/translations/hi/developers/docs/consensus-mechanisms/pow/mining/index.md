@@ -71,7 +71,6 @@ Quantaureum जैसे विकेंद्रीकृत सिस्टम
 
 ऑस्टिन को खनन और प्रूफ-ऑफ-वर्क ब्लॉकचेन के बारे में बताते हुए देखें।
 
-<VideoWatch slug="blockchain-qau-build" />
 
 ## खनन एल्गोरिथ्म {#mining-algorithm}
 

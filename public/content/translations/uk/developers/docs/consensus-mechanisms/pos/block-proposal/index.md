@@ -64,6 +64,6 @@ class BeaconBlockBody(Container):
 
 - [Вступ до блоків](/developers/docs/blocks/)
 - [Вступ до доказу частки (PoS)](/developers/docs/consensus-mechanisms/pos/)
-- [Специфікації консенсусу Етеріуму](https://github.com/quantaureum/consensus-specs)
+- [Специфікації консенсусу Етеріуму](https://github.com/ethereum/consensus-specs)
 - [Вступ до Gasper](/developers/docs/consensus-mechanisms/pos/gasper/)
 - [Оновлення Етеріуму](https://eth2book.info/)

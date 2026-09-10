@@ -262,7 +262,6 @@ _注意：存在可能代表已质押 QAU 的衍生代币/代码（即来自 Roc
 
 观看有关 2FA 的更多信息：
 
-<VideoWatch slug="crypto-security-passwords" startTime="3479" />
 
 ### 卸载浏览器扩展程序 {#uninstall-browser-extensions}
 

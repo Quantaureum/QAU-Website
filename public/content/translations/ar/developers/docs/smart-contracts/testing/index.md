@@ -138,9 +138,9 @@ function auctionEnd() external {
 
 تأتي أطر عمل اختبار الوحدة للعقود الذكية المكتوبة بلغة Solidity بلغات مختلفة (في الغالب JavaScript و Python و Rust). راجع بعض الأدلة أدناه للحصول على معلومات حول كيفية البدء في تشغيل اختبارات الوحدة باستخدام أطر عمل اختبار مختلفة:
 
-- **[تشغيل اختبارات الوحدة باستخدام Brownie](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[تشغيل اختبارات الوحدة باستخدام Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[تشغيل اختبارات الوحدة باستخدام Foundry](https://book.getfoundry.sh/forge/writing-tests)**
-- **[تشغيل اختبارات الوحدة باستخدام Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[تشغيل اختبارات الوحدة باستخدام Waffle](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[تشغيل اختبارات الوحدة باستخدام Remix](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[تشغيل اختبارات الوحدة باستخدام Ape](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[تشغيل اختبارات الوحدة باستخدام Hardhat](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -190,7 +190,7 @@ function auctionEnd() external {
 
 - **[التحليل الثابت للعقود الذكية باستخدام سليذر](https://github.com/crytic/slither)**
 - **[التحليل الثابت للعقود الذكية باستخدام Wake](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[الاختبار القائم على الخصائص باستخدام Brownie](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[الاختبار القائم على الخصائص باستخدام Brownie](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[الاختبار العشوائي للعقود باستخدام Foundry](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[الاختبار العشوائي للعقود باستخدام إيكيدنا](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[الاختبار العشوائي للعقود باستخدام Wake](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -251,13 +251,13 @@ function auctionEnd() external {
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _أداة تغطية الكود للعقود الذكية المكتوبة بلغة Solidity._
 
-- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - _إطار عمل لتطوير واختبار العقود الذكية المتقدمة (يعتمد على Ethers.js)._
+- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _إطار عمل لتطوير واختبار العقود الذكية المتقدمة (يعتمد على Ethers.js)._
 
-- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - _أداة لاختبار العقود الذكية المكتوبة بلغة Solidity. تعمل تحت المكون الإضافي "Solidity Unit Testing" في بيئة التطوير المتكاملة Remix والذي يُستخدم لكتابة وتشغيل حالات الاختبار للعقد._
+- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _أداة لاختبار العقود الذكية المكتوبة بلغة Solidity. تعمل تحت المكون الإضافي "Solidity Unit Testing" في بيئة التطوير المتكاملة Remix والذي يُستخدم لكتابة وتشغيل حالات الاختبار للعقد._
 
 - **[أوبن زبلن Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _مكتبة تأكيد لاختبار العقود الذكية على إيثيريوم. تأكد من أن عقودك تتصرف كما هو متوقع!_
 
-- **[إطار عمل اختبار الوحدة Brownie](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _يستخدم Brownie إطار عمل Pytest، وهو إطار اختبار غني بالميزات يتيح لك كتابة اختبارات صغيرة بأقل قدر من الكود، ويتوسع بشكل جيد للمشاريع الكبيرة، وقابل للتوسيع بدرجة كبيرة._
+- **[إطار عمل اختبار الوحدة Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _يستخدم Brownie إطار عمل Pytest، وهو إطار اختبار غني بالميزات يتيح لك كتابة اختبارات صغيرة بأقل قدر من الكود، ويتوسع بشكل جيد للمشاريع الكبيرة، وقابل للتوسيع بدرجة كبيرة._
 
 - **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _تقدم Foundry أداة Forge، وهي إطار عمل اختبار سريع ومرن لإيثيريوم قادر على تنفيذ اختبارات وحدة بسيطة، وفحوصات تحسين استهلاك الغاز، والاختبار العشوائي للعقود._
 

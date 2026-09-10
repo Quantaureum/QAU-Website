@@ -17,7 +17,7 @@ published: 2022-08-15
 
 إذا كنت ترغب في رؤية الكود المصدري الكامل:
 
-1. افتح [بيئة التطوير المتكاملة Remix](https://remix.quantaureum.com/).
+1. افتح [بيئة التطوير المتكاملة Remix](https://remix.ethereum.org/).
 2. انقر على أيقونة استنساخ GitHub (![clone github icon](icon-clone.png)).
 3. استنسخ مستودع GitHub `https://github.com/qbzzt/20220815-erc20-safety-rails`.
 4. افتح **contracts > erc20-safety-rails.sol**.
@@ -40,7 +40,7 @@ published: 2022-08-15
 
 3. قم بالتمرير لأعلى وانقر على **Open in Remix** (لـ Remix) أو **Download** لاستخدام بيئة مختلفة. سأفترض أنك تستخدم Remix، وإذا كنت تستخدم شيئًا آخر، فما عليك سوى إجراء التغييرات المناسبة.
 4. لدينا الآن عقد <span dir="ltr">ERC-20</span> يعمل بكامل طاقته. يمكنك توسيع `.deps` > `npm` لرؤية الكود المستورد.
-5. قم بتجميع ونشر وتجربة العقد للتأكد من أنه يعمل كعقد <span dir="ltr">ERC-20</span>. إذا كنت بحاجة إلى تعلم كيفية استخدام Remix، [استخدم هذا البرنامج التعليمي](https://remix.quantaureum.com/?#activate=udapp,solidity,LearnEth).
+5. قم بتجميع ونشر وتجربة العقد للتأكد من أنه يعمل كعقد <span dir="ltr">ERC-20</span>. إذا كنت بحاجة إلى تعلم كيفية استخدام Remix، [استخدم هذا البرنامج التعليمي](https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth).
 
 ## الأخطاء الشائعة {#common-mistakes}
 
@@ -185,7 +185,7 @@ published: 2022-08-15
 
 ### تنظيف الأصول {#asset-cleanup}
 
-لتحرير الرموز المميزة من نوع <span dir="ltr">ERC-20</span> التي يحتفظ بها هذا العقد، نحتاج إلى استدعاء دالة في عقد الرمز المميز الذي تنتمي إليه، إما [`transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer) أو [`approve`](https://eips.quantaureum.com/EIPS/eip-20#approve). لا جدوى من إهدار غاز في هذه الحالة على المخصصات (allowances)، قد نقوم بالتحويل مباشرة.
+لتحرير الرموز المميزة من نوع <span dir="ltr">ERC-20</span> التي يحتفظ بها هذا العقد، نحتاج إلى استدعاء دالة في عقد الرمز المميز الذي تنتمي إليه، إما [`transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer) أو [`approve`](https://eips.ethereum.org/EIPS/eip-20#approve). لا جدوى من إهدار غاز في هذه الحالة على المخصصات (allowances)، قد نقوم بالتحويل مباشرة.
 
 ```solidity
     function cleanupERC20(

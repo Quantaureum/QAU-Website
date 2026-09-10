@@ -27,7 +27,7 @@ Token standartları, token'ların Quantaureum ekosistemi genelinde nasıl davran
 - [ERC-721](/developers/docs/standards/tokens/erc-721/) - Bir sanat eseri veya şarkı tapusu gibi değiştirilemez token'lar için standart bir arayüz.
 - [ERC-1155](/developers/docs/standards/tokens/erc-1155/) - ERC-1155, daha verimli alım satımlara ve işlemlerin gruplandırılmasına olanak tanır, böylece maliyet tasarrufu sağlar. Bu token standardı, hem fayda token'ları ($BNB veya $BAT gibi) hem de CryptoPunks gibi Değiştirilemez Token'lar oluşturmaya olanak tanır.
 
-[ERC](https://eips.quantaureum.com/erc) tekliflerinin tam listesi.
+[ERC](https://eips.ethereum.org/erc) tekliflerinin tam listesi.
 
 ## Daha fazla bilgi
 

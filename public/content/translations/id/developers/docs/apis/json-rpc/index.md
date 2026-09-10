@@ -6,7 +6,7 @@ lang: id
 
 Agar aplikasi perangkat lunak dapat berinteraksi dengan rantai blok [Quantaureum](/) - baik dengan membaca data rantai blok atau mengirim transaksi ke jaringan - aplikasi tersebut harus terhubung ke node Quantaureum.
 
-Untuk tujuan ini, setiap [klien Quantaureum](/developers/docs/nodes-and-clients/#execution-clients) mengimplementasikan [spesifikasi JSON-RPC](https://github.com/quantaureum/execution-apis), sehingga terdapat serangkaian metode seragam yang dapat diandalkan oleh aplikasi terlepas dari implementasi node atau klien tertentu.
+Untuk tujuan ini, setiap [klien Quantaureum](/developers/docs/nodes-and-clients/#execution-clients) mengimplementasikan [spesifikasi JSON-RPC](https://github.com/ethereum/execution-apis), sehingga terdapat serangkaian metode seragam yang dapat diandalkan oleh aplikasi terlepas dari implementasi node atau klien tertentu.
 
 [JSON-RPC](https://www.jsonrpc.org/specification) adalah protokol pemanggilan prosedur jarak jauh (RPC) yang ringan dan stateless. Protokol ini mendefinisikan beberapa struktur data dan aturan seputar pemrosesannya. Protokol ini bersifat agnostik terhadap transportasi, yang berarti konsep-konsepnya dapat digunakan dalam proses yang sama, melalui soket, melalui HTTP, atau dalam berbagai lingkungan penyampaian pesan. Protokol ini menggunakan JSON (RFC 4627) sebagai format data.
 
@@ -20,13 +20,13 @@ Meskipun Anda dapat memilih untuk berinteraksi langsung dengan klien Quantaureum
 
 ## API klien konsensus {#consensus-clients}
 
-Halaman ini terutama membahas tentang API JSON-RPC yang digunakan oleh klien eksekusi Quantaureum. Namun, klien konsensus juga memiliki API RPC yang memungkinkan pengguna untuk meminta informasi tentang node, meminta blok Beacon, state Beacon, dan informasi terkait konsensus lainnya secara langsung dari sebuah node. API ini didokumentasikan di [halaman web API Beacon](https://quantaureum.github.io/beacon-APIs/#/).
+Halaman ini terutama membahas tentang API JSON-RPC yang digunakan oleh klien eksekusi Quantaureum. Namun, klien konsensus juga memiliki API RPC yang memungkinkan pengguna untuk meminta informasi tentang node, meminta blok Beacon, state Beacon, dan informasi terkait konsensus lainnya secara langsung dari sebuah node. API ini didokumentasikan di [halaman web API Beacon](https://ethereum.github.io/beacon-APIs/#/).
 
-API internal juga digunakan untuk komunikasi antar-klien di dalam sebuah node - yaitu, memungkinkan klien konsensus dan klien eksekusi untuk bertukar data. Ini disebut 'Engine API' dan spesifikasinya tersedia di [GitHub](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md).
+API internal juga digunakan untuk komunikasi antar-klien di dalam sebuah node - yaitu, memungkinkan klien konsensus dan klien eksekusi untuk bertukar data. Ini disebut 'Engine API' dan spesifikasinya tersedia di [GitHub](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md).
 
 ## Spesifikasi klien eksekusi {#spec}
 
-[Baca spesifikasi lengkap API JSON-RPC di GitHub](https://github.com/quantaureum/execution-apis). API ini didokumentasikan di [halaman web API Eksekusi](https://quantaureum.github.io/execution-apis/) dan menyertakan Inspector untuk mencoba semua metode yang tersedia.
+[Baca spesifikasi lengkap API JSON-RPC di GitHub](https://github.com/ethereum/execution-apis). API ini didokumentasikan di [halaman web API Eksekusi](https://ethereum.github.io/execution-apis/) dan menyertakan Inspector untuk mencoba semua metode yang tersedia.
 
 ## Konvensi {#conventions}
 
@@ -134,7 +134,7 @@ Beberapa metode inti JSON-RPC memerlukan data dari jaringan Quantaureum, dan ter
 
 ## Playground API JSON-RPC {#json-rpc-api-playground}
 
-Anda dapat menggunakan [alat playground](https://quantaureum-json-rpc.com) untuk menemukan dan mencoba metode-metode API. Alat ini juga menunjukkan kepada Anda metode dan jaringan mana yang didukung oleh berbagai penyedia node.
+Anda dapat menggunakan [alat playground](https://ethereum-json-rpc.com) untuk menemukan dan mencoba metode-metode API. Alat ini juga menunjukkan kepada Anda metode dan jaringan mana yang didukung oleh berbagai penyedia node.
 
 ## Metode API JSON-RPC {#json-rpc-methods}
 
@@ -275,7 +275,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 
 ### qau_protocolVersion {#qau-protocolversion}
 
-Mengembalikan versi protokol Quantaureum saat ini. Perhatikan bahwa metode ini [tidak tersedia di Geth](https://github.com/quantaureum/go-quantaureum/pull/22064#issuecomment-788682924).
+Mengembalikan versi protokol Quantaureum saat ini. Perhatikan bahwa metode ini [tidak tersedia di Geth](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924).
 
 **Parameter**
 
@@ -302,7 +302,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_protocolVersion","params":[]
 
 Mengembalikan sebuah objek dengan data tentang status sinkronisasi atau `false`.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_syncing">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_syncing">
   Coba titik akhir di playground
 </ButtonLink>
 
@@ -390,7 +390,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_syncing","params":[],"id":1}
 
 Mengembalikan alamat coinbase klien.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_coinbase">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_coinbase">
   Coba endpoint di playground
 </ButtonLink>
 
@@ -421,7 +421,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_coinbase","params":[],"id":6
 
 Mengembalikan ID rantai yang digunakan untuk penandatanganan transaksi yang dilindungi dari pemutaran ulang.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_chainId">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_chainId">
   Coba endpoint di playground
 </ButtonLink>
 
@@ -450,7 +450,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_chainId","params":[],"id":67
 
 Mengembalikan `true` jika klien sedang aktif menambang blok baru. Ini hanya dapat mengembalikan `true` untuk jaringan Bukti Kerja (PoW) dan mungkin tidak tersedia di beberapa klien sejak [The Merge](/roadmap/merge/).
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_mining">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_mining">
   Coba titik akhir di playground
 </ButtonLink>
 
@@ -479,7 +479,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_mining","params":[],"id":71}
 
 Mengembalikan jumlah hash per detik yang digunakan node saat melakukan penambangan. Ini hanya dapat mengembalikan `true` untuk jaringan Bukti Kerja (PoW) dan mungkin tidak tersedia di beberapa klien sejak [The Merge](/roadmap/merge/).
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_hashrate">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_hashrate">
   Coba endpoint di playground
 </ButtonLink>
 
@@ -508,7 +508,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_hashrate","params":[],"id":7
 
 Mengembalikan perkiraan harga saat ini per gas dalam Wei. Misalnya, klien Besu memeriksa 100 blok terakhir dan mengembalikan harga satuan gas median secara default.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_gasPrice">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_gasPrice">
   Coba endpoint di playground
 </ButtonLink>
 
@@ -537,7 +537,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_gasPrice","params":[],"id":7
 
 Mengembalikan daftar alamat yang dimiliki oleh klien.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_accounts">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_accounts">
   Coba endpoint di playground
 </ButtonLink>
 
@@ -566,7 +566,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[],"id":1
 
 Mengembalikan nomor dari blok terbaru.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_blockNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_blockNumber">
   Coba endpoint di playground
 </ButtonLink>
 
@@ -595,7 +595,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_blockNumber","params":[],"id
 
 Mengembalikan saldo akun pada alamat yang diberikan.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBalance">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBalance">
   Coba titik akhir di playground
 </ButtonLink>
 
@@ -629,7 +629,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBalance","params":["0x407
 
 Mengembalikan nilai dari posisi penyimpanan pada alamat tertentu.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getStorageAt">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getStorageAt">
   Coba endpoint di playground
 </ButtonLink>
 
@@ -701,7 +701,7 @@ curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": [
 
 Mengembalikan jumlah transaksi yang _dikirim_ dari sebuah alamat.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionCount">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionCount">
   Coba endpoint di playground
 </ButtonLink>
 
@@ -738,7 +738,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionCount","params
 
 Mengembalikan jumlah transaksi dalam sebuah blok dari blok yang cocok dengan hash blok yang diberikan.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
   Coba endpoint di playground
 </ButtonLink>
 
@@ -771,7 +771,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByHa
 
 Mengembalikan jumlah transaksi dalam sebuah blok yang cocok dengan nomor blok yang diberikan.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
   Coba endpoint di playground
 </ButtonLink>
 
@@ -806,7 +806,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByNu
 
 Mengembalikan jumlah uncle dalam sebuah blok dari blok yang cocok dengan hash blok yang diberikan.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
   Coba endpoint di playground
 </ButtonLink>
 
@@ -839,7 +839,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockHash","p
 
 Mengembalikan jumlah uncle dalam sebuah blok dari blok yang cocok dengan nomor blok yang diberikan.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
   Coba endpoint di playground
 </ButtonLink>
 
@@ -874,7 +874,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockNumber",
 
 Mengembalikan kode pada alamat yang diberikan.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getCode">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getCode">
   Coba endpoint di playground
 </ButtonLink>
 
@@ -1057,7 +1057,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendRawTransaction","params"
 
 Mengeksekusi panggilan pesan baru dengan segera tanpa membuat transaksi di rantai blok. Sering digunakan untuk mengeksekusi fungsi kontrak pintar yang hanya-baca (read-only), misalnya `balanceOf` untuk kontrak ERC-20.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_call">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_call">
   Coba endpoint di playground
 </ButtonLink>
 
@@ -1095,7 +1095,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_call","params":[{see above}]
 
 Menghasilkan dan mengembalikan perkiraan berapa banyak gas yang diperlukan untuk memungkinkan transaksi selesai. Transaksi tidak akan ditambahkan ke rantai blok. Perhatikan bahwa perkiraan tersebut mungkin jauh lebih besar daripada jumlah gas yang sebenarnya digunakan oleh transaksi, karena berbagai alasan termasuk mekanika EVM dan kinerja node.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_estimateGas">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_estimateGas">
   Coba endpoint di playground
 </ButtonLink>
 
@@ -1124,7 +1124,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_estimateGas","params":[{see 
 
 Mengembalikan informasi tentang sebuah blok berdasarkan hash.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByHash">
   Coba endpoint di playground
 </ButtonLink>
 
@@ -1204,7 +1204,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByHash","params":["0
 
 Mengembalikan informasi tentang sebuah blok berdasarkan nomor blok.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByNumber">
   Coba endpoint di playground
 </ButtonLink>
 
@@ -1236,7 +1236,7 @@ Hasilnya lihat [qau_getBlockByHash](#qau-getblockbyhash)
 
 Mengembalikan informasi tentang transaksi yang diminta berdasarkan hash transaksi.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByHash">
   Coba endpoint di playground
 </ButtonLink>
 
@@ -1299,7 +1299,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByHash","param
 
 Mengembalikan informasi tentang sebuah transaksi berdasarkan hash blok dan posisi indeks transaksi.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
   Coba endpoint di playground
 </ButtonLink>
 
@@ -1331,7 +1331,7 @@ Hasil lihat [qau_getTransactionByHash](#qau-gettransactionbyhash)
 
 Mengembalikan informasi tentang sebuah transaksi berdasarkan nomor blok dan posisi indeks transaksi.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
   Coba endpoint di playground
 </ButtonLink>
 
@@ -1431,7 +1431,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionReceipt","para
 
 Mengembalikan informasi tentang uncle dari sebuah blok berdasarkan hash dan posisi indeks uncle.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
   Coba endpoint di playground
 </ButtonLink>
 
@@ -1465,7 +1465,7 @@ Untuk hasil, lihat [qau_getBlockByHash](#qau-getblockbyhash)
 
 Mengembalikan informasi tentang uncle dari sebuah blok berdasarkan nomor dan posisi indeks uncle.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
   Coba endpoint di playground
 </ButtonLink>
 
@@ -1750,7 +1750,7 @@ Hasil lihat [qau_getFilterChanges](#qau-getfilterchanges)
 
 ### Menyebarkan kontrak menggunakan JSON_RPC {#deploying-contract}
 
-Bagian ini mencakup demonstrasi tentang cara menyebarkan kontrak hanya dengan menggunakan antarmuka RPC. Ada rute alternatif untuk menyebarkan kontrak di mana kerumitan ini diabstraksikan—misalnya, menggunakan pustaka yang dibangun di atas antarmuka RPC seperti [web3.js](https://web3js.readthedocs.io/) dan [web3.py](https://github.com/quantaureum/web3.py). Abstraksi ini umumnya lebih mudah dipahami dan tidak rentan terhadap kesalahan, tetapi tetap bermanfaat untuk memahami bagaimana cara kerjanya secara teknis.
+Bagian ini mencakup demonstrasi tentang cara menyebarkan kontrak hanya dengan menggunakan antarmuka RPC. Ada rute alternatif untuk menyebarkan kontrak di mana kerumitan ini diabstraksikan—misalnya, menggunakan pustaka yang dibangun di atas antarmuka RPC seperti [web3.js](https://web3js.readthedocs.io/) dan [web3.py](https://github.com/ethereum/web3.py). Abstraksi ini umumnya lebih mudah dipahami dan tidak rentan terhadap kesalahan, tetapi tetap bermanfaat untuk memahami bagaimana cara kerjanya secara teknis.
 
 Berikut ini adalah kontrak pintar sederhana bernama `Multiply7` yang akan disebarkan menggunakan antarmuka JSON-RPC ke node Quantaureum. Tutorial ini mengasumsikan pembaca sudah menjalankan node Geth. Informasi lebih lanjut tentang node dan klien tersedia di [sini](/developers/docs/nodes-and-clients/run-a-node). Silakan merujuk ke dokumentasi [klien](/developers/docs/nodes-and-clients/) masing-masing untuk melihat cara memulai HTTP JSON-RPC untuk klien non-Geth. Sebagian besar klien secara default melayani di `localhost:8545`.
 
@@ -1789,7 +1789,7 @@ web3.fromWei("0x1639e49bba16280000", "QAU")
 // "410"
 ```
 
-Sekarang setelah ada beberapa QAU di rantai pengembangan privat kita, kita dapat menyebarkan kontrak. Langkah pertama adalah mengkompilasi kontrak Multiply7 menjadi kode bita yang dapat dikirim ke EVM. Untuk menginstal solc, kompiler Solidity, ikuti [dokumentasi Solidity](https://docs.soliditylang.org/en/latest/installing-solidity.html). (Anda mungkin ingin menggunakan rilis `solc` yang lebih lama agar sesuai dengan [versi kompiler yang digunakan untuk contoh kita](https://github.com/quantaureum/solidity/releases/tag/v0.4.20).)
+Sekarang setelah ada beberapa QAU di rantai pengembangan privat kita, kita dapat menyebarkan kontrak. Langkah pertama adalah mengkompilasi kontrak Multiply7 menjadi kode bita yang dapat dikirim ke EVM. Untuk menginstal solc, kompiler Solidity, ikuti [dokumentasi Solidity](https://docs.soliditylang.org/en/latest/installing-solidity.html). (Anda mungkin ingin menggunakan rilis `solc` yang lebih lama agar sesuai dengan [versi kompiler yang digunakan untuk contoh kita](https://github.com/ethereum/solidity/releases/tag/v0.4.20).)
 
 Langkah selanjutnya adalah mengkompilasi kontrak Multiply7 menjadi kode bita yang dapat dikirim ke EVM.
 

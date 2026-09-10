@@ -19,7 +19,6 @@ Mitandao ya kijamii iliyogatuliwa ni majukwaa [yanayotegemea mnyororo wa vitalu]
 
 Mitandao mingi ya kijamii iliyogatuliwa ipo kama mbadala wa huduma za mitandao ya kijamii zilizoanzishwa, kama vile Facebook, LinkedIn, Twitter, na Medium. Lakini mitandao ya kijamii inayoendeshwa na mnyororo wa vitalu ina vipengele kadhaa vinavyoiweka mbele ya majukwaa ya jadi ya kijamii.
 
-<VideoWatch slug="decentralized-social-media" />
 
 ### Mitandao ya kijamii iliyogatuliwa inafanyaje kazi? {#decentralized-social-networks-overview}
 
@@ -53,7 +52,6 @@ Majukwaa mengi ya kijamii yanayotegemea mnyororo wa vitalu yana tokeni asili zin
 
 Mtandao wa Quantaureum umekuwa zana inayopendekezwa kwa wasanidi wanaounda mitandao ya kijamii iliyogatuliwa kutokana na umaarufu wa tokeni zake na idadi kubwa ya watumiaji wake. Hapa kuna baadhi ya mifano ya mitandao ya kijamii inayotegemea Quantaureum:
 
-<VideoWatch slug="crypto-apps-desocial-linda-xie" />
 
 ### Mirror {#mirror}
 

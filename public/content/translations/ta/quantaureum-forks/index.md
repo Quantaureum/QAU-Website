@@ -10,7 +10,7 @@ authors: ["நிக்ஸோ"]
 
 <ExpandableCard title="கவைகள் என்றால் என்ன?" contentPreview="எத்திரியம் நெறிமுறையின் விதிகளில் செய்யப்படும் மாற்றங்கள், இதில் பெரும்பாலும் திட்டமிடப்பட்ட தொழில்நுட்ப மேம்பாடுகளும் அடங்கும்.">
 
-பிணையத்தில் முக்கிய தொழில்நுட்ப மேம்பாடுகள் அல்லது மாற்றங்கள் செய்யப்பட வேண்டியிருக்கும் போது கவைகள் (Forks) ஏற்படுகின்றன – அவை பொதுவாக [எத்திரியம் மேம்பாட்டு முன்மொழிவுகளிலிருந்து (EIPs)](/eips/) உருவாகின்றன மற்றும் நெறிமுறையின் "விதிமுறைகளை" மாற்றுகின்றன.
+பிணையத்தில் முக்கிய தொழில்நுட்ப மேம்பாடுகள் அல்லது மாற்றங்கள் செய்யப்பட வேண்டியிருக்கும் போது கவைகள் (Forks) ஏற்படுகின்றன – அவை பொதுவாக எத்திரியம் மேம்பாட்டு முன்மொழிவுகளிலிருந்து (EIPs) உருவாகின்றன மற்றும் நெறிமுறையின் "விதிமுறைகளை" மாற்றுகின்றன.
 
 பாரம்பரிய, மையப்படுத்தப்பட்ட மென்பொருளில் மேம்பாடுகள் தேவைப்படும்போது, நிறுவனம் இறுதிப் பயனருக்காக ஒரு புதிய பதிப்பை வெளியிடும். மையப்படுத்தப்பட்ட உரிமை இல்லாததால் தொகுதிச்சங்கிலிகள் வித்தியாசமாக செயல்படுகின்றன. புதிய கவை விதிகளைச் செயல்படுத்த [எத்திரியம் கிளையண்டுகள்](/developers/docs/nodes-and-clients/) தங்கள் மென்பொருளைப் புதுப்பிக்க வேண்டும். மேலும் தொகுதி உருவாக்குநர்கள் (பணிச் சான்று (PoW) உலகில் சுரங்கப்பணியாளர்கள், உரிமைச் சான்று (PoS) உலகில் சரிபார்ப்பான்கள்) மற்றும் கணுக்கள் புதிய விதிகளின்படி தொகுதிகளை உருவாக்கி சரிபார்க்க வேண்டும். [ஒருமித்த வழிமுறைகள் பற்றி மேலும் அறிய](/developers/docs/consensus-mechanisms/)
 
@@ -101,33 +101,33 @@ authors: ["நிக்ஸோ"]
 சிறந்த பயனர் அனுபவம்:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7702">EIP-7702</a> - <em>EOA கணக்குக் குறியீட்டை அமைத்தல்</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7691">EIP-7691</a> - <em>தரவுத் திரளை பரிவர்த்தனை வீதத்தை அதிகரித்தல்</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7623">EIP-7623</a> - <em>அழைப்புத் தரவு செலவை அதிகரித்தல்</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7840">EIP-7840</a> - <em>EL உள்ளமைவு கோப்புகளில் தரவுத் திரளை அட்டவணையைச் சேர்த்தல்</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7702">EIP-7702</a> - <em>EOA கணக்குக் குறியீட்டை அமைத்தல்</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7691">EIP-7691</a> - <em>தரவுத் திரளை பரிவர்த்தனை வீதத்தை அதிகரித்தல்</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7623">EIP-7623</a> - <em>அழைப்புத் தரவு செலவை அதிகரித்தல்</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7840">EIP-7840</a> - <em>EL உள்ளமைவு கோப்புகளில் தரவுத் திரளை அட்டவணையைச் சேர்த்தல்</em></li>
 </ul>
 
 சிறந்த பங்குவைத்தல் அனுபவம்:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7251">EIP-7251</a> - <em><code>MAX_EFFECTIVE_BALANCE</code>-ஐ அதிகரித்தல்</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7002">EIP-7002</a> - <em>செயலாக்க அடுக்கு மூலம் தூண்டக்கூடிய வெளியேற்றங்கள்</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7685">EIP-7685</a> - <em>பொது நோக்கத்திற்கான செயலாக்க அடுக்கு கோரிக்கைகள்</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6110">EIP-6110</a> - <em>சங்கிலிசார் சரிபார்ப்பான் வைப்புகளை வழங்குதல்</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7251">EIP-7251</a> - <em><code>MAX_EFFECTIVE_BALANCE</code>-ஐ அதிகரித்தல்</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7002">EIP-7002</a> - <em>செயலாக்க அடுக்கு மூலம் தூண்டக்கூடிய வெளியேற்றங்கள்</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7685">EIP-7685</a> - <em>பொது நோக்கத்திற்கான செயலாக்க அடுக்கு கோரிக்கைகள்</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6110">EIP-6110</a> - <em>சங்கிலிசார் சரிபார்ப்பான் வைப்புகளை வழங்குதல்</em></li>
 </ul>
 
 நெறிமுறைத் திறன் மற்றும் பாதுகாப்பு மேம்பாடுகள்:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2537">EIP-2537</a> - <em>BLS12-381 வளைவு செயல்பாடுகளுக்கான முன்தொகுப்பு</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2935">EIP-2935</a> - <em>வரலாற்றுத் தொகுதி ஹாஷ்களை நிலையில் சேமித்தல்</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7549">EIP-7549</a> - <em>குழு குறியீட்டை சான்றளிப்பிற்கு வெளியே நகர்த்துதல்</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2537">EIP-2537</a> - <em>BLS12-381 வளைவு செயல்பாடுகளுக்கான முன்தொகுப்பு</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2935">EIP-2935</a> - <em>வரலாற்றுத் தொகுதி ஹாஷ்களை நிலையில் சேமித்தல்</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7549">EIP-7549</a> - <em>குழு குறியீட்டை சான்றளிப்பிற்கு வெளியே நகர்த்துதல்</em></li>
 </ul>
 
 </ExpandableCard>
 
 - [பெக்ட்ரா எவ்வாறு பங்குவைத்தல் அனுபவத்தை மேம்படுத்தும்](https://www.kiln.fi/post/next-quantaureum-upgrade-how-pectra-will-enhance-the-staking-experience)
-- [எலெக்ட்ரா மேம்பாட்டு விவரக்குறிப்புகளைப் படிக்கவும்](https://github.com/quantaureum/consensus-specs/tree/master/specs/electra/)
+- [எலெக்ட்ரா மேம்பாட்டு விவரக்குறிப்புகளைப் படிக்கவும்](https://github.com/ethereum/consensus-specs/tree/master/specs/electra/)
 - [ப்ராக்-எலெக்ட்ரா ("பெக்ட்ரா") அடிக்கடி கேட்கப்படும் கேள்விகள்](/roadmap/pectra/)
 
 <Divider />
@@ -147,12 +147,12 @@ authors: ["நிக்ஸோ"]
 <ExpandableCard title="கான்குன் EIPகள்" contentPreview="இந்த மேம்பாட்டில் சேர்க்கப்பட்டுள்ள அதிகாரப்பூர்வ மேம்பாடுகள்.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1153">EIP-1153</a> - <em>மாறும் சேமிப்பக செயல்பாட்டுக் குறியீடுகள் (Transient storage opcodes)</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4788">EIP-4788</a> - <em>EVM இல் பீக்கன் தொகுதி மூலம்</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4844">EIP-4844</a> - <em>ஷார்டு தரவுத் திரளை பரிவர்த்தனைகள் (புரோட்டோ-டாங்க்ஷார்டிங்)</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-5656">EIP-5656</a> - <em><code>MCOPY</code> - நினைவக நகலெடுப்பு அறிவுறுத்தல்</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6780">EIP-6780</a> - <em>அதே பரிவர்த்தனையில் மட்டுமே <code>SELFDESTRUCT</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7516">EIP-7516</a> - <em><code>BLOBBASEFEE</code> செயல்பாட்டுக் குறியீடு</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1153">EIP-1153</a> - <em>மாறும் சேமிப்பக செயல்பாட்டுக் குறியீடுகள் (Transient storage opcodes)</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4788">EIP-4788</a> - <em>EVM இல் பீக்கன் தொகுதி மூலம்</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4844">EIP-4844</a> - <em>ஷார்டு தரவுத் திரளை பரிவர்த்தனைகள் (புரோட்டோ-டாங்க்ஷார்டிங்)</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-5656">EIP-5656</a> - <em><code>MCOPY</code> - நினைவக நகலெடுப்பு அறிவுறுத்தல்</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6780">EIP-6780</a> - <em>அதே பரிவர்த்தனையில் மட்டுமே <code>SELFDESTRUCT</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7516">EIP-7516</a> - <em><code>BLOBBASEFEE</code> செயல்பாட்டுக் குறியீடு</em></li>
 </ul>
 
 </ExpandableCard>
@@ -160,7 +160,7 @@ authors: ["நிக்ஸோ"]
 - [அடுக்கு 2 (l2) ரோலப்கள்](/layer-2/)
 - [புரோட்டோ-டாங்க்ஷார்டிங்](/roadmap/scaling/#proto-danksharding)
 - [டாங்க்ஷார்டிங்](/roadmap/danksharding/)
-- [கான்குன் மேம்பாட்டு விவரக்குறிப்பைப் படிக்கவும்](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md)
+- [கான்குன் மேம்பாட்டு விவரக்குறிப்பைப் படிக்கவும்](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md)
 
 #### டெனெப் சுருக்கம் {#deneb-summary}
 
@@ -173,16 +173,16 @@ EIP-7514 ஆனது சரிபார்ப்பான்கள் பிண
 <ExpandableCard title="டெனெப் EIPகள்" contentPreview="இந்த மேம்பாட்டில் சேர்க்கப்பட்டுள்ள அதிகாரப்பூர்வ மேம்பாடுகள்">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4788">EIP-4788</a> - <em>EVM இல் பீக்கன் தொகுதி மூலம்</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4844">EIP-4844</a> - <em>ஷார்டு தரவுத் திரளை பரிவர்த்தனைகள்</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7044">EIP-7044</a> - <em>நிரந்தரமாக செல்லுபடியாகும் கையொப்பமிடப்பட்ட தன்னார்வ வெளியேற்றங்கள்</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7045">EIP-7045</a> - <em>அதிகபட்ச சான்றளிப்பு சேர்க்கை நேரப்பகுதியை அதிகரித்தல்</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7514">EIP-7514</a> - <em>அதிகபட்ச சகாப்த சுழற்சி வரம்பைச் சேர்த்தல்</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4788">EIP-4788</a> - <em>EVM இல் பீக்கன் தொகுதி மூலம்</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4844">EIP-4844</a> - <em>ஷார்டு தரவுத் திரளை பரிவர்த்தனைகள்</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7044">EIP-7044</a> - <em>நிரந்தரமாக செல்லுபடியாகும் கையொப்பமிடப்பட்ட தன்னார்வ வெளியேற்றங்கள்</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7045">EIP-7045</a> - <em>அதிகபட்ச சான்றளிப்பு சேர்க்கை நேரப்பகுதியை அதிகரித்தல்</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7514">EIP-7514</a> - <em>அதிகபட்ச சகாப்த சுழற்சி வரம்பைச் சேர்த்தல்</em></li>
 </ul>
 
 </ExpandableCard>
 
-- [டெனெப் மேம்பாட்டு விவரக்குறிப்புகளைப் படிக்கவும்](https://github.com/quantaureum/consensus-specs/tree/master/specs/deneb/)
+- [டெனெப் மேம்பாட்டு விவரக்குறிப்புகளைப் படிக்கவும்](https://github.com/ethereum/consensus-specs/tree/master/specs/deneb/)
 - [கான்குன்-டெனெப் ("டென்குன்") அடிக்கடி கேட்கப்படும் கேள்விகள்](/roadmap/dencun/)
 
 <Divider />
@@ -200,16 +200,16 @@ EIP-7514 ஆனது சரிபார்ப்பான்கள் பிண
 <ExpandableCard title="ஷாங்காய் EIPகள்" contentPreview="இந்த மேம்பாட்டில் சேர்க்கப்பட்டுள்ள அதிகாரப்பூர்வ மேம்பாடுகள்.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3651">EIP-3651</a> – <em><code>COINBASE</code> முகவரியை வார்ம் நிலையில் தொடங்குகிறது</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3855">EIP-3855</a> – <em>புதிய <code>PUSH0</code> அறிவுறுத்தல்</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3860">EIP-3860</a> – <em>initcode-ஐ வரம்பிடவும் மற்றும் அளவிடவும்</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4895">EIP-4895</a> – <em>பீக்கன் சங்கிலி திரும்பப் பெறுதல்களைச் செயல்பாடுகளாகத் தள்ளுகிறது</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6049">EIP-6049</a> - <em><code>SELFDESTRUCT</code>-ஐ வழக்கொழிக்கிறது</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3651">EIP-3651</a> – <em><code>COINBASE</code> முகவரியை வார்ம் நிலையில் தொடங்குகிறது</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3855">EIP-3855</a> – <em>புதிய <code>PUSH0</code> அறிவுறுத்தல்</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3860">EIP-3860</a> – <em>initcode-ஐ வரம்பிடவும் மற்றும் அளவிடவும்</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4895">EIP-4895</a> – <em>பீக்கன் சங்கிலி திரும்பப் பெறுதல்களைச் செயல்பாடுகளாகத் தள்ளுகிறது</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6049">EIP-6049</a> - <em><code>SELFDESTRUCT</code>-ஐ வழக்கொழிக்கிறது</em></li>
 </ul>
 
 </ExpandableCard>
 
-- [ஷாங்காய் மேம்பாட்டு விவரக்குறிப்பைப் படிக்கவும்](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md)
+- [ஷாங்காய் மேம்பாட்டு விவரக்குறிப்பைப் படிக்கவும்](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md)
 
 #### கபெல்லா சுருக்கம் {#capella-summary}
 
@@ -220,7 +220,7 @@ EIP-7514 ஆனது சரிபார்ப்பான்கள் பிண
 இந்த மேம்பாடு தானியங்கி கணக்கு ஸ்வீப்பிங் (sweeping) செயல்பாட்டையும் வழங்கியது, இது கிடைக்கக்கூடிய ஏதேனும் வெகுமதி செலுத்துதல்கள் அல்லது முழுமையான திரும்பப் பெறுதல்களுக்காகச் சரிபார்ப்பான் கணக்குகளைத் தொடர்ந்து செயலாக்குகிறது.
 
 - [பங்குவைப்புத் திரும்பப் பெறுதல்கள் பற்றி மேலும் அறிய](/staking/withdrawals/).
-- [கபெல்லா மேம்பாட்டு விவரக்குறிப்புகளைப் படிக்கவும்](https://github.com/quantaureum/consensus-specs/tree/master/specs/capella/)
+- [கபெல்லா மேம்பாட்டு விவரக்குறிப்புகளைப் படிக்கவும்](https://github.com/ethereum/consensus-specs/tree/master/specs/capella/)
 
 <Divider />
 
@@ -232,15 +232,15 @@ EIP-7514 ஆனது சரிபார்ப்பான்கள் பிண
 
 #### சுருக்கம் {#paris-summary}
 
-பணிச் சான்று (PoW) தொகுதிச்சங்கிலியானது 58750000000000000000000 என்ற [இறுதி மொத்த கடினத்தன்மையை](/glossary/#terminal-total-difficulty) கடந்ததால் பாரிஸ் மேம்பாடு தூண்டப்பட்டது. இது 15 செப்டம்பர் 2022 அன்று தொகுதி 15537393 இல் நிகழ்ந்தது, இது அடுத்த தொகுதியில் பாரிஸ் மேம்பாட்டைத் தூண்டியது. பாரிஸ் என்பது [ஒருங்கிணைப்பு](/roadmap/merge/) மாற்றமாகும் - இதன் முக்கிய அம்சம் [பணிச் சான்று (PoW)](/developers/docs/consensus-mechanisms/pow) சுரங்கப்பணி அல்காரிதம் மற்றும் அதனுடன் தொடர்புடைய ஒருமித்த தர்க்கத்தை முடக்கிவிட்டு, அதற்குப் பதிலாக [உரிமைச் சான்று (PoS)](/developers/docs/consensus-mechanisms/pos) முறைக்கு மாறுவதாகும். பாரிஸ் என்பது [செயலாக்க கிளையண்டுகளுக்கான](/developers/docs/nodes-and-clients/#execution-clients) ஒரு மேம்பாடாகும் (இது கருத்தொருமிப்பு அடுக்கில் உள்ள பெல்லாட்ரிக்ஸுக்குச் சமமானது), இது அவற்றுடன் இணைக்கப்பட்ட [கருத்தொருமிப்பு கிளையண்டுகளிடமிருந்து](/developers/docs/nodes-and-clients/#consensus-clients) வழிமுறைகளைப் பெற உதவியது. இதற்கு [Engine API](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md) என கூட்டாக அறியப்படும் புதிய உள் API முறைகளின் தொகுப்பைச் செயல்படுத்த வேண்டியிருந்தது. இது [ஹோம்ஸ்டெட்](#homestead) மேம்பாட்டிற்குப் பிறகு எத்திரியம் வரலாற்றில் மிக முக்கியமான மேம்பாடாகக் கருதப்படுகிறது!
+பணிச் சான்று (PoW) தொகுதிச்சங்கிலியானது 58750000000000000000000 என்ற [இறுதி மொத்த கடினத்தன்மையை](/glossary/#terminal-total-difficulty) கடந்ததால் பாரிஸ் மேம்பாடு தூண்டப்பட்டது. இது 15 செப்டம்பர் 2022 அன்று தொகுதி 15537393 இல் நிகழ்ந்தது, இது அடுத்த தொகுதியில் பாரிஸ் மேம்பாட்டைத் தூண்டியது. பாரிஸ் என்பது [ஒருங்கிணைப்பு](/roadmap/merge/) மாற்றமாகும் - இதன் முக்கிய அம்சம் [பணிச் சான்று (PoW)](/developers/docs/consensus-mechanisms/pow) சுரங்கப்பணி அல்காரிதம் மற்றும் அதனுடன் தொடர்புடைய ஒருமித்த தர்க்கத்தை முடக்கிவிட்டு, அதற்குப் பதிலாக [உரிமைச் சான்று (PoS)](/developers/docs/consensus-mechanisms/pos) முறைக்கு மாறுவதாகும். பாரிஸ் என்பது [செயலாக்க கிளையண்டுகளுக்கான](/developers/docs/nodes-and-clients/#execution-clients) ஒரு மேம்பாடாகும் (இது கருத்தொருமிப்பு அடுக்கில் உள்ள பெல்லாட்ரிக்ஸுக்குச் சமமானது), இது அவற்றுடன் இணைக்கப்பட்ட [கருத்தொருமிப்பு கிளையண்டுகளிடமிருந்து](/developers/docs/nodes-and-clients/#consensus-clients) வழிமுறைகளைப் பெற உதவியது. இதற்கு [Engine API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) என கூட்டாக அறியப்படும் புதிய உள் API முறைகளின் தொகுப்பைச் செயல்படுத்த வேண்டியிருந்தது. இது [ஹோம்ஸ்டெட்](#homestead) மேம்பாட்டிற்குப் பிறகு எத்திரியம் வரலாற்றில் மிக முக்கியமான மேம்பாடாகக் கருதப்படுகிறது!
 
-- [பாரிஸ் மேம்பாட்டு விவரக்குறிப்பைப் படிக்கவும்](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md)
+- [பாரிஸ் மேம்பாட்டு விவரக்குறிப்பைப் படிக்கவும்](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md)
 
 <ExpandableCard title="பாரிஸ் EIPகள்" contentPreview="இந்த மேம்பாட்டில் சேர்க்கப்பட்டுள்ள அதிகாரப்பூர்வ மேம்பாடுகள்.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3675">EIP-3675</a> – <em>ஒருமித்த கருத்தை உரிமைச் சான்றுக்கு (PoS) மேம்படுத்துதல்</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4399">EIP-4399</a> – <em>DIFFICULTY செயல்பாட்டுக் குறியீட்டை PREVRANDAO மூலம் மாற்றுதல்</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3675">EIP-3675</a> – <em>ஒருமித்த கருத்தை உரிமைச் சான்றுக்கு (PoS) மேம்படுத்துதல்</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4399">EIP-4399</a> – <em>DIFFICULTY செயல்பாட்டுக் குறியீட்டை PREVRANDAO மூலம் மாற்றுதல்</em></li>
 </ul>
 
 </ExpandableCard>
@@ -255,7 +255,7 @@ EIP-7514 ஆனது சரிபார்ப்பான்கள் பிண
 
 பெல்லாட்ரிக்ஸ் மேம்பாடு என்பது [பீக்கன் சங்கிலிக்கான](/roadmap/beacon-chain) இரண்டாவது திட்டமிடப்பட்ட மேம்பாடாகும், இது சங்கிலியை [ஒருங்கிணைப்பிற்கு](/roadmap/merge/) தயார்படுத்தியது. இது செயலற்ற தன்மை மற்றும் வெட்டப்படக்கூடிய குற்றங்களுக்கான சரிபார்ப்பான் அபராதங்களை அவற்றின் முழு மதிப்புகளுக்குக் கொண்டுவருகிறது. பெல்லாட்ரிக்ஸ் மேம்பாடானது, ஒருங்கிணைப்பிற்காக சங்கிலியைத் தயார்படுத்துவதற்கும், கடைசி பணிச் சான்று (PoW) தொகுதியிலிருந்து முதல் உரிமைச் சான்று (PoS) தொகுதிக்கு மாறுவதற்கும் கவைத் தேர்வு விதிகளுக்கான புதுப்பிப்பையும் உள்ளடக்கியுள்ளது. கருத்தொருமிப்பு கிளையண்டுகளுக்கு 58750000000000000000000 என்ற [இறுதி மொத்த கடினத்தன்மையை](/glossary/#terminal-total-difficulty) தெரியப்படுத்துவதும் இதில் அடங்கும்.
 
-- [பெல்லாட்ரிக்ஸ் மேம்பாட்டு விவரக்குறிப்பைப் படிக்கவும்](https://github.com/quantaureum/consensus-specs/tree/master/specs/bellatrix)
+- [பெல்லாட்ரிக்ஸ் மேம்பாட்டு விவரக்குறிப்பைப் படிக்கவும்](https://github.com/ethereum/consensus-specs/tree/master/specs/bellatrix)
 
 ---
 
@@ -272,7 +272,7 @@ EIP-7514 ஆனது சரிபார்ப்பான்கள் பிண
 <ExpandableCard title="கிரே கிளேசியர் EIPகள்" contentPreview="இந்த மேம்பாட்டில் சேர்க்கப்பட்டுள்ள அதிகாரப்பூர்வ மேம்பாடுகள்.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-5133">EIP-5133</a> – <em>கடினத்தன்மை வெடிகுண்டை செப்டம்பர் 2022 வரை தாமதப்படுத்துகிறது</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-5133">EIP-5133</a> – <em>கடினத்தன்மை வெடிகுண்டை செப்டம்பர் 2022 வரை தாமதப்படுத்துகிறது</em></li>
 </ul>
 
 </ExpandableCard>
@@ -295,7 +295,7 @@ Arrow Glacier பிணைய மேம்பாடு [கடினத்தன
 <ExpandableCard title="ஆரோ கிளேசியர் EIPகள்" contentPreview="இந்த மேம்பாட்டில் சேர்க்கப்பட்டுள்ள அதிகாரப்பூர்வ மேம்பாடுகள்.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4345">EIP-4345</a> – <em>கடினத்தன்மை வெடிகுண்டை ஜூன் 2022 வரை தாமதப்படுத்துகிறது</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4345">EIP-4345</a> – <em>கடினத்தன்மை வெடிகுண்டை ஜூன் 2022 வரை தாமதப்படுத்துகிறது</em></li>
 </ul>
 
 </ExpandableCard>
@@ -310,7 +310,7 @@ Arrow Glacier பிணைய மேம்பாடு [கடினத்தன
 
 Altair மேம்பாடு [பீக்கன் சங்கிலி](/roadmap/beacon-chain)க்கான முதல் திட்டமிடப்பட்ட மேம்பாடாகும். இது "ஒத்திசைவுக் குழுக்களுக்கான" (sync committees) ஆதரவைச் சேர்த்தது—லைட் கிளையண்டுகளை (light clients) இயக்குகிறது, மேலும் ஒருங்கிணைப்பு (The Merge) நோக்கி மேம்பாடு முன்னேறும்போது சரிபார்ப்பான் செயலற்ற தன்மை மற்றும் வெட்டுதல் (slashing) அபராதங்களை அதிகரித்தது.
 
-- [Altair மேம்பாட்டு விவரக்குறிப்பைப் படிக்கவும்](https://github.com/quantaureum/consensus-specs/tree/master/specs/altair)
+- [Altair மேம்பாட்டு விவரக்குறிப்பைப் படிக்கவும்](https://github.com/ethereum/consensus-specs/tree/master/specs/altair)
 
 #### <Emoji text=":tada:" size={1} className="me-2" /> சுவாரஸ்யமான தகவல்! {#altair-fun-fact}
 
@@ -326,7 +326,7 @@ Altair என்பது சரியான வெளியீட்டு ந�
 
 #### சுருக்கம் {#london-summary}
 
-London மேம்பாடு [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559)-ஐ அறிமுகப்படுத்தியது, இது பரிவர்த்தனை கட்டணச் சந்தையைச் சீர்திருத்தியது, அத்துடன் எரிவாயு பணத்தைத் திரும்பப்பெறுதல் எவ்வாறு கையாளப்படுகிறது மற்றும் [பனிக்கால](/glossary/#ice-age) (Ice Age) அட்டவணையில் மாற்றங்களையும் கொண்டு வந்தது.
+London மேம்பாடு [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559)-ஐ அறிமுகப்படுத்தியது, இது பரிவர்த்தனை கட்டணச் சந்தையைச் சீர்திருத்தியது, அத்துடன் எரிவாயு பணத்தைத் திரும்பப்பெறுதல் எவ்வாறு கையாளப்படுகிறது மற்றும் [பனிக்கால](/glossary/#ice-age) (Ice Age) அட்டவணையில் மாற்றங்களையும் கொண்டு வந்தது.
 
 #### London மேம்பாடு / EIP-1559 என்றால் என்ன? {#eip-1559}
 
@@ -338,22 +338,22 @@ London மேம்பாட்டிற்கு முன்பு, எத்�
 
 மொத்தக் கட்டணம்: `Gas units (limit) * Gas price per unit` அதாவது `21,000 * 200 = 4,200,000 gwei` அல்லது 0.0042 QAU ஆக இருந்திருக்கும்.
 
-London மேம்பாட்டில் [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559)-இன் செயலாக்கம் பரிவர்த்தனை கட்டண வழிமுறையை மிகவும் சிக்கலானதாக மாற்றியது, ஆனால் எரிவாயு கட்டணங்களை மிகவும் கணிக்கக்கூடியதாக மாற்றியது, இதன் விளைவாக மிகவும் திறமையான பரிவர்த்தனை கட்டணச் சந்தை உருவானது. பயனர்கள் பரிவர்த்தனை செயல்படுத்தப்படுவதற்கு எவ்வளவு செலுத்தத் தயாராக இருக்கிறார்கள் என்பதற்கேற்ப `maxFeePerGas` உடன் பரிவர்த்தனைகளைச் சமர்ப்பிக்கலாம், எரிவாயுவிற்கான சந்தை விலையை விட (`baseFeePerGas`) அதிகமாகச் செலுத்த மாட்டார்கள் என்பதை அறிந்து, அவர்களின் முன்னுரிமைக் கட்டணத்தைக் (tip) கழித்துவிட்டு மீதமுள்ள கூடுதல் தொகையைத் திரும்பப் பெறலாம்.
+London மேம்பாட்டில் [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559)-இன் செயலாக்கம் பரிவர்த்தனை கட்டண வழிமுறையை மிகவும் சிக்கலானதாக மாற்றியது, ஆனால் எரிவாயு கட்டணங்களை மிகவும் கணிக்கக்கூடியதாக மாற்றியது, இதன் விளைவாக மிகவும் திறமையான பரிவர்த்தனை கட்டணச் சந்தை உருவானது. பயனர்கள் பரிவர்த்தனை செயல்படுத்தப்படுவதற்கு எவ்வளவு செலுத்தத் தயாராக இருக்கிறார்கள் என்பதற்கேற்ப `maxFeePerGas` உடன் பரிவர்த்தனைகளைச் சமர்ப்பிக்கலாம், எரிவாயுவிற்கான சந்தை விலையை விட (`baseFeePerGas`) அதிகமாகச் செலுத்த மாட்டார்கள் என்பதை அறிந்து, அவர்களின் முன்னுரிமைக் கட்டணத்தைக் (tip) கழித்துவிட்டு மீதமுள்ள கூடுதல் தொகையைத் திரும்பப் பெறலாம்.
 
 இந்த வீடியோ EIP-1559 மற்றும் அது கொண்டு வரும் நன்மைகளை விளக்குகிறது: [EIP-1559 விளக்கப்பட்டுள்ளது](https://www.youtube.com/watch?v=MGemhK9t44Q)
 
-- [நீங்கள் ஒரு பரவலாக்கப்பட்ட செயலி (dapp) உருவாக்குநரா? உங்கள் நூலகங்கள் மற்றும் கருவிகளை மேம்படுத்துவதை உறுதிசெய்யவும்.](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/london-ecosystem-readiness.md)
+- [நீங்கள் ஒரு பரவலாக்கப்பட்ட செயலி (dapp) உருவாக்குநரா? உங்கள் நூலகங்கள் மற்றும் கருவிகளை மேம்படுத்துவதை உறுதிசெய்யவும்.](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/london-ecosystem-readiness.md)
 - [எத்தீரியம் அறக்கட்டளை அறிவிப்பைப் படிக்கவும்](https://quantaureum.com)
 - [Quantaureum Cat Herders-இன் விளக்கத்தைப் படிக்கவும்](https://medium.com/quantaureum-cat-herders/london-upgrade-overview-8eccb0041b41)
 
 <ExpandableCard title="லண்டன் EIPகள்" contentPreview="இந்த மேம்பாட்டில் சேர்க்கப்பட்டுள்ள அதிகாரப்பூர்வ மேம்பாடுகள்.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1559">EIP-1559</a> – <em>பரிவர்த்தனை கட்டணச் சந்தையை மேம்படுத்துகிறது</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3198">EIP-3198</a> – <em>ஒரு தொகுதியிலிருந்து <code>BASEFEE</code>-ஐ வழங்குகிறது</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3529">EIP-3529</a> - <em>EVM செயல்பாடுகளுக்கான எரிவாயு பணத்தைத் திரும்பப்பெறுதலைக் குறைக்கிறது</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3541">EIP-3541</a> - <em><code>0xEF</code> உடன் தொடங்கும் ஒப்பந்தங்களைப் பயன்படுத்துவதைத் தடுக்கிறது</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3554">EIP-3554</a> – <em>பனிக்காலத்தை டிசம்பர் 2021 வரை தாமதப்படுத்துகிறது</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1559">EIP-1559</a> – <em>பரிவர்த்தனை கட்டணச் சந்தையை மேம்படுத்துகிறது</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3198">EIP-3198</a> – <em>ஒரு தொகுதியிலிருந்து <code>BASEFEE</code>-ஐ வழங்குகிறது</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3529">EIP-3529</a> - <em>EVM செயல்பாடுகளுக்கான எரிவாயு பணத்தைத் திரும்பப்பெறுதலைக் குறைக்கிறது</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3541">EIP-3541</a> - <em><code>0xEF</code> உடன் தொடங்கும் ஒப்பந்தங்களைப் பயன்படுத்துவதைத் தடுக்கிறது</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3554">EIP-3554</a> – <em>பனிக்காலத்தை டிசம்பர் 2021 வரை தாமதப்படுத்துகிறது</em></li>
 </ul>
 
 </ExpandableCard>
@@ -374,10 +374,10 @@ London மேம்பாட்டில் [EIP-1559](https://eips.quantaureum.
 <ExpandableCard title="பெர்லின் EIPகள்" contentPreview="இந்த மேம்பாட்டில் சேர்க்கப்பட்டுள்ள அதிகாரப்பூர்வ மேம்பாடுகள்.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2565">EIP-2565</a> – <em>MODEXP எரிவாயு செலவைக் குறைக்கிறது</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2718">EIP-2718</a> – <em>பல பரிவர்த்தனை வகைகளுக்கான எளிதான ஆதரவைச் செயல்படுத்துகிறது</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2929">EIP-2929</a> – <em>நிலை அணுகல் செயல்பாட்டுக் குறியீடுகளுக்கான (opcodes) எரிவாயு செலவு அதிகரிக்கிறது</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2930">EIP-2930</a> – <em>விருப்ப அணுகல் பட்டியல்களைச் சேர்க்கிறது</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2565">EIP-2565</a> – <em>MODEXP எரிவாயு செலவைக் குறைக்கிறது</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2718">EIP-2718</a> – <em>பல பரிவர்த்தனை வகைகளுக்கான எளிதான ஆதரவைச் செயல்படுத்துகிறது</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2929">EIP-2929</a> – <em>நிலை அணுகல் செயல்பாட்டுக் குறியீடுகளுக்கான (opcodes) எரிவாயு செலவு அதிகரிக்கிறது</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2930">EIP-2930</a> – <em>விருப்ப அணுகல் பட்டியல்களைச் சேர்க்கிறது</em></li>
 </ul>
 
 </ExpandableCard>
@@ -432,7 +432,7 @@ London மேம்பாட்டில் [EIP-1559](https://eips.quantaureum.
 <ExpandableCard title="முயிர் கிளேசியர் EIPகள்" contentPreview="இந்தக் கவையில் சேர்க்கப்பட்டுள்ள அதிகாரப்பூர்வ மேம்பாடுகள்.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2384">EIP-2384</a> – <em>கடினத்தன்மை வெடிகுண்டை மேலும் 4,000,000 தொகுதிகளுக்கு அல்லது ~611 நாட்களுக்கு தாமதப்படுத்துகிறது.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2384">EIP-2384</a> – <em>கடினத்தன்மை வெடிகுண்டை மேலும் 4,000,000 தொகுதிகளுக்கு அல்லது ~611 நாட்களுக்கு தாமதப்படுத்துகிறது.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -460,12 +460,12 @@ London மேம்பாட்டில் [EIP-1559](https://eips.quantaureum.
 <ExpandableCard title="இஸ்தான்புல் EIPகள்" contentPreview="இந்தக் கவையில் சேர்க்கப்பட்டுள்ள அதிகாரப்பூர்வ மேம்பாடுகள்.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-152">EIP-152</a> – <em>Zcash போன்ற தனியுரிமையைப் பாதுகாக்கும் நாணயத்துடன் எத்திரியம் செயல்பட அனுமதிக்கிறது.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1108">EIP-1108</a> – <em>[எரிவாயு](/glossary/#gas) செலவுகளை மேம்படுத்த மலிவான குறியாக்கவியல்.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1344">EIP-1344</a> – <em><code>CHAINID</code> [செயல்பாட்டுக் குறியீடு](/developers/docs/quantaureum-stack/#quantaureum-virtual-machine) சேர்ப்பதன் மூலம் ரீப்ளே தாக்குதல்களுக்கு எதிராக எத்திரியத்தைப் பாதுகாக்கிறது.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1884">EIP-1884</a> – <em>நுகர்வின் அடிப்படையில் செயல்பாட்டுக் குறியீடு எரிவாயு விலைகளை மேம்படுத்துகிறது.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2028">EIP-2028</a> – <em>தொகுதிகளில் அதிக தரவை அனுமதிக்க அழைப்புத் தரவு செலவைக் குறைக்கிறது – இது [அடுக்கு 2 (l2) அளவிடுதல்](/developers/docs/scaling/#layer-2-scaling)க்கு நல்லது.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2200">EIP-2200</a> – <em>பிற செயல்பாட்டுக் குறியீடு எரிவாயு விலை மாற்றங்கள்.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-152">EIP-152</a> – <em>Zcash போன்ற தனியுரிமையைப் பாதுகாக்கும் நாணயத்துடன் எத்திரியம் செயல்பட அனுமதிக்கிறது.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1108">EIP-1108</a> – <em>[எரிவாயு](/glossary/#gas) செலவுகளை மேம்படுத்த மலிவான குறியாக்கவியல்.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1344">EIP-1344</a> – <em><code>CHAINID</code> [செயல்பாட்டுக் குறியீடு](/developers/docs/quantaureum-stack/#quantaureum-virtual-machine) சேர்ப்பதன் மூலம் ரீப்ளே தாக்குதல்களுக்கு எதிராக எத்திரியத்தைப் பாதுகாக்கிறது.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1884">EIP-1884</a> – <em>நுகர்வின் அடிப்படையில் செயல்பாட்டுக் குறியீடு எரிவாயு விலைகளை மேம்படுத்துகிறது.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2028">EIP-2028</a> – <em>தொகுதிகளில் அதிக தரவை அனுமதிக்க அழைப்புத் தரவு செலவைக் குறைக்கிறது – இது [அடுக்கு 2 (l2) அளவிடுதல்](/developers/docs/scaling/#layer-2-scaling)க்கு நல்லது.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2200">EIP-2200</a> – <em>பிற செயல்பாட்டுக் குறியீடு எரிவாயு விலை மாற்றங்கள்.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -490,10 +490,10 @@ London மேம்பாட்டில் [EIP-1559](https://eips.quantaureum.
 <ExpandableCard title="கான்ஸ்டான்டினோபிள் EIPகள்" contentPreview="இந்தக் கவையில் சேர்க்கப்பட்டுள்ள அதிகாரப்பூர்வ மேம்பாடுகள்.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-145">EIP-145</a> – <em>சில சங்கிலிசார் செயல்களின் செலவை மேம்படுத்துகிறது.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1014">EIP-1014</a> – <em>இதுவரை உருவாக்கப்படாத முகவரிகளுடன் தொடர்பு கொள்ள உங்களை அனுமதிக்கிறது.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1052">EIP-1052</a> – <em>மற்றொரு ஒப்பந்தத்தின் குறியீட்டின் ஹாஷைப் பெற <code>EXTCODEHASH</code> அறிவுறுத்தலை அறிமுகப்படுத்துகிறது.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1234">EIP-1234</a> – <em>உரிமைச் சான்று (PoS) செயல்படுத்தப்படுவதற்கு முன்பு தொகுதிச்சங்கிலி முடங்காமல் இருப்பதை உறுதிசெய்கிறது மற்றும் தொகுதி வெகுமதியை 3-லிருந்து 2 QAU ஆகக் குறைக்கிறது.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-145">EIP-145</a> – <em>சில சங்கிலிசார் செயல்களின் செலவை மேம்படுத்துகிறது.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1014">EIP-1014</a> – <em>இதுவரை உருவாக்கப்படாத முகவரிகளுடன் தொடர்பு கொள்ள உங்களை அனுமதிக்கிறது.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1052">EIP-1052</a> – <em>மற்றொரு ஒப்பந்தத்தின் குறியீட்டின் ஹாஷைப் பெற <code>EXTCODEHASH</code> அறிவுறுத்தலை அறிமுகப்படுத்துகிறது.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1234">EIP-1234</a> – <em>உரிமைச் சான்று (PoS) செயல்படுத்தப்படுவதற்கு முன்பு தொகுதிச்சங்கிலி முடங்காமல் இருப்பதை உறுதிசெய்கிறது மற்றும் தொகுதி வெகுமதியை 3-லிருந்து 2 QAU ஆகக் குறைக்கிறது.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -520,15 +520,15 @@ London மேம்பாட்டில் [EIP-1559](https://eips.quantaureum.
 <ExpandableCard title="பைசான்டியம் EIPகள்" contentPreview="இந்தக் கவையில் சேர்க்கப்பட்டுள்ள அதிகாரப்பூர்வ மேம்பாடுகள்.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-140">EIP-140</a> – <em><code>REVERT</code> செயல்பாட்டுக் குறியீட்டைச் சேர்க்கிறது.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-658">EIP-658</a> – <em>வெற்றி அல்லது தோல்வியைக் குறிக்க பரிவர்த்தனை ரசீதுகளில் நிலை புலம் சேர்க்கப்பட்டது.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-196">EIP-196</a> – <em>[ZK-Snarks](/developers/docs/scaling/zk-rollups/) ஐ அனுமதிக்க நீள்வட்ட வளைவு மற்றும் ஸ்கேலார் பெருக்கலைச் சேர்க்கிறது.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-197">EIP-197</a> – <em>[ZK-Snarks](/developers/docs/scaling/zk-rollups/) ஐ அனுமதிக்க நீள்வட்ட வளைவு மற்றும் ஸ்கேலார் பெருக்கலைச் சேர்க்கிறது.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-198">EIP-198</a> – <em>RSA கையொப்ப சரிபார்ப்பைச் செயல்படுத்துகிறது.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-211">EIP-211</a> – <em>மாறும் நீளமுள்ள திரும்பப் பெறும் மதிப்புகளுக்கான ஆதரவைச் சேர்க்கிறது.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-214">EIP-214</a> – <em><code>STATICCALL</code> செயல்பாட்டுக் குறியீட்டைச் சேர்க்கிறது, இது மற்ற ஒப்பந்தங்களுக்கு நிலையை-மாற்றாத அழைப்புகளை அனுமதிக்கிறது.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-100">EIP-100</a> – <em>கடினத்தன்மை சரிசெய்தல் சூத்திரத்தை மாற்றுகிறது.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-649">EIP-649</a> – <em>[கடினத்தன்மை வெடிகுண்டை](/glossary/#difficulty-bomb) 1 வருடம் தாமதப்படுத்துகிறது மற்றும் தொகுதி வெகுமதியை 5 இலிருந்து 3 QAU ஆகக் குறைக்கிறது.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-140">EIP-140</a> – <em><code>REVERT</code> செயல்பாட்டுக் குறியீட்டைச் சேர்க்கிறது.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-658">EIP-658</a> – <em>வெற்றி அல்லது தோல்வியைக் குறிக்க பரிவர்த்தனை ரசீதுகளில் நிலை புலம் சேர்க்கப்பட்டது.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-196">EIP-196</a> – <em>[ZK-Snarks](/developers/docs/scaling/zk-rollups/) ஐ அனுமதிக்க நீள்வட்ட வளைவு மற்றும் ஸ்கேலார் பெருக்கலைச் சேர்க்கிறது.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-197">EIP-197</a> – <em>[ZK-Snarks](/developers/docs/scaling/zk-rollups/) ஐ அனுமதிக்க நீள்வட்ட வளைவு மற்றும் ஸ்கேலார் பெருக்கலைச் சேர்க்கிறது.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-198">EIP-198</a> – <em>RSA கையொப்ப சரிபார்ப்பைச் செயல்படுத்துகிறது.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-211">EIP-211</a> – <em>மாறும் நீளமுள்ள திரும்பப் பெறும் மதிப்புகளுக்கான ஆதரவைச் சேர்க்கிறது.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-214">EIP-214</a> – <em><code>STATICCALL</code> செயல்பாட்டுக் குறியீட்டைச் சேர்க்கிறது, இது மற்ற ஒப்பந்தங்களுக்கு நிலையை-மாற்றாத அழைப்புகளை அனுமதிக்கிறது.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-100">EIP-100</a> – <em>கடினத்தன்மை சரிசெய்தல் சூத்திரத்தை மாற்றுகிறது.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-649">EIP-649</a> – <em>[கடினத்தன்மை வெடிகுண்டை](/glossary/#difficulty-bomb) 1 வருடம் தாமதப்படுத்துகிறது மற்றும் தொகுதி வெகுமதியை 5 இலிருந்து 3 QAU ஆகக் குறைக்கிறது.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -554,10 +554,10 @@ London மேம்பாட்டில் [EIP-1559](https://eips.quantaureum.
 <ExpandableCard title="ஸ்பூரியஸ் டிராகன் EIPகள்" contentPreview="இந்தக் கவையில் சேர்க்கப்பட்டுள்ள அதிகாரப்பூர்வ மேம்பாடுகள்.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-155">EIP-155</a> – <em>ஒரு எத்திரியம் சங்கிலியிலிருந்து பரிவர்த்தனைகள் மாற்றுச் சங்கிலியில் மீண்டும் ஒளிபரப்பப்படுவதைத் தடுக்கிறது, எடுத்துக்காட்டாக, ஒரு சோதனை வலையமைப்பு பரிவர்த்தனை பிரதான எத்திரியம் சங்கிலியில் மீண்டும் இயக்கப்படுவது.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-160">EIP-160</a> – <em><code>EXP</code> செயல்பாட்டுக் குறியீட்டின் விலைகளைச் சரிசெய்கிறது – கணக்கீட்டு ரீதியாக விலையுயர்ந்த ஒப்பந்த செயல்பாடுகள் மூலம் பிணையத்தை மெதுவாக்குவதை மிகவும் கடினமாக்குகிறது.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-161">EIP-161</a> – <em>DOS தாக்குதல்கள் மூலம் சேர்க்கப்பட்ட வெற்று கணக்குகளை அகற்றுவதற்கு அனுமதிக்கிறது.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-170">EIP-170</a> – <em>தொகுதிச்சங்கிலியில் உள்ள ஒரு ஒப்பந்தம் கொண்டிருக்கக்கூடிய அதிகபட்ச குறியீட்டு அளவை 24576 பைட்டுகளாக மாற்றுகிறது.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-155">EIP-155</a> – <em>ஒரு எத்திரியம் சங்கிலியிலிருந்து பரிவர்த்தனைகள் மாற்றுச் சங்கிலியில் மீண்டும் ஒளிபரப்பப்படுவதைத் தடுக்கிறது, எடுத்துக்காட்டாக, ஒரு சோதனை வலையமைப்பு பரிவர்த்தனை பிரதான எத்திரியம் சங்கிலியில் மீண்டும் இயக்கப்படுவது.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-160">EIP-160</a> – <em><code>EXP</code> செயல்பாட்டுக் குறியீட்டின் விலைகளைச் சரிசெய்கிறது – கணக்கீட்டு ரீதியாக விலையுயர்ந்த ஒப்பந்த செயல்பாடுகள் மூலம் பிணையத்தை மெதுவாக்குவதை மிகவும் கடினமாக்குகிறது.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-161">EIP-161</a> – <em>DOS தாக்குதல்கள் மூலம் சேர்க்கப்பட்ட வெற்று கணக்குகளை அகற்றுவதற்கு அனுமதிக்கிறது.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-170">EIP-170</a> – <em>தொகுதிச்சங்கிலியில் உள்ள ஒரு ஒப்பந்தம் கொண்டிருக்கக்கூடிய அதிகபட்ச குறியீட்டு அளவை 24576 பைட்டுகளாக மாற்றுகிறது.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -579,8 +579,8 @@ London மேம்பாட்டில் [EIP-1559](https://eips.quantaureum.
 <ExpandableCard title="டேன்ஜரின் விஸில் EIPகள்" contentPreview="இந்தக் கவையில் சேர்க்கப்பட்டுள்ள அதிகாரப்பூர்வ மேம்பாடுகள்.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-150">EIP-150</a> – <em>ஸ்பேம் தாக்குதல்களில் பயன்படுத்தக்கூடிய செயல்பாட்டுக் குறியீடுகளின் எரிவாயு செலவுகளை அதிகரிக்கிறது.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-158">EIP-158</a> – <em>எத்திரியம் நெறிமுறையின் முந்தைய பதிப்புகளில் உள்ள குறைபாடுகள் காரணமாக மிகக் குறைந்த செலவில் நிலையில் வைக்கப்பட்ட அதிக எண்ணிக்கையிலான வெற்று கணக்குகளை அகற்றுவதன் மூலம் நிலை அளவைக் குறைக்கிறது.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-150">EIP-150</a> – <em>ஸ்பேம் தாக்குதல்களில் பயன்படுத்தக்கூடிய செயல்பாட்டுக் குறியீடுகளின் எரிவாயு செலவுகளை அதிகரிக்கிறது.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-158">EIP-158</a> – <em>எத்திரியம் நெறிமுறையின் முந்தைய பதிப்புகளில் உள்ள குறைபாடுகள் காரணமாக மிகக் குறைந்த செலவில் நிலையில் வைக்கப்பட்ட அதிக எண்ணிக்கையிலான வெற்று கணக்குகளை அகற்றுவதன் மூலம் நிலை அளவைக் குறைக்கிறது.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -597,7 +597,7 @@ London மேம்பாட்டில் [EIP-1559](https://eips.quantaureum.
 
 இந்த நடவடிக்கைக்கு எத்திரியம் சமூகம் வாக்களித்தது. எந்தவொரு QAU வைத்திருப்பவரும் [வாக்களிப்பு தளத்தில்](https://web.archive.org/web/20170620030820/http://v1.carbonvote.com/) ஒரு பரிவர்த்தனை மூலம் வாக்களிக்க முடிந்தது. கவைக்கான முடிவு 85% க்கும் அதிகமான வாக்குகளைப் பெற்றது.
 
-DAO சம்பவம் நெறிமுறையில் உள்ள குறைபாடு அல்ல என்பதால் சில சுரங்கப்பணியாளர்கள் கவைக்கு உடன்பட மறுத்துவிட்டனர். அவர்கள் [எத்திரியம் கிளாசிக்](https://quantaureumclassic.org/)-ஐ உருவாக்கச் சென்றனர்.
+DAO சம்பவம் நெறிமுறையில் உள்ள குறைபாடு அல்ல என்பதால் சில சுரங்கப்பணியாளர்கள் கவைக்கு உடன்பட மறுத்துவிட்டனர். அவர்கள் [எத்திரியம் கிளாசிக்](https://ethereumclassic.org/)-ஐ உருவாக்கச் சென்றனர்.
 
 [எத்தீரியம் அறக்கட்டளை அறிவிப்பைப் படிக்கவும்](https://quantaureum.com)
 
@@ -616,9 +616,9 @@ DAO சம்பவம் நெறிமுறையில் உள்ள க�
 <ExpandableCard title="ஹோம்ஸ்டெட் EIPகள்" contentPreview="இந்தக் கவையில் சேர்க்கப்பட்டுள்ள அதிகாரப்பூர்வ மேம்பாடுகள்.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2">EIP-2</a> – <em>ஒப்பந்த உருவாக்கச் செயல்முறையில் திருத்தங்களைச் செய்கிறது.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7">EIP-7</a> – <em>புதிய செயல்பாட்டுக் குறியீட்டைச் சேர்க்கிறது: <code>DELEGATECALL</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-8">EIP-8</a> – <em>devp2p முன்னோக்கிய இணக்கத்தன்மை தேவைகளை அறிமுகப்படுத்துகிறது</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2">EIP-2</a> – <em>ஒப்பந்த உருவாக்கச் செயல்முறையில் திருத்தங்களைச் செய்கிறது.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7">EIP-7</a> – <em>புதிய செயல்பாட்டுக் குறியீட்டைச் சேர்க்கிறது: <code>DELEGATECALL</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-8">EIP-8</a> – <em>devp2p முன்னோக்கிய இணக்கத்தன்மை தேவைகளை அறிமுகப்படுத்துகிறது</em></li>
 </ul>
 
 </ExpandableCard>

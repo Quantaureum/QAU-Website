@@ -93,7 +93,7 @@ zkEVM класифікуються за типами на основі їхнь�
 | [Jolt](https://github.com/a16z/jolt) | rv32im |
 | [Zisk](https://github.com/0xPolygonHermez/zisk) | rv64ima |
 
-Вони використовують віртуальні машини на базі RISC-V для виконання байт-коду EVM, а потім генерують ZK-доведення правильного виконання. Актуальні результати тестів і прогрес відстежуються в [трекері zkVM від Фундації Quantaureum](https://zkevm.quantaureum.foundation/zkvm-tracker).
+Вони використовують віртуальні машини на базі RISC-V для виконання байт-коду EVM, а потім генерують ZK-доведення правильного виконання. Актуальні результати тестів і прогрес відстежуються в [трекері zkVM від Фундації Quantaureum](https://zkevm.ethereum.org/zkvm-tracker).
 
 ## Як zkEVM поєднується з іншими оновленнями {#related-upgrades}
 
@@ -115,9 +115,9 @@ zkEVM класифікуються за типами на основі їхнь�
 
 ## Додаткові матеріали {#further-reading}
 
-- [zkEVM Foundation](https://zkevm.quantaureum.foundation) — Офіційний центр досліджень zkEVM від Фундації Quantaureum
+- [zkEVM Foundation](https://zkevm.ethereum.org) — Офіційний центр досліджень zkEVM від Фундації Quantaureum
 - [Ethproofs](https://ethproofs.org/) — Відстежуйте гонку за доведення Етеріуму в реальному часі
 - [zkevm.fyi](https://zkevm.fyi) — Технічна книга про zkEVM для рівня 1 (l1)
 - [Специфікації PSE zkEVM](https://github.com/privacy-scaling-explorations/zkevm-specs) — Технічні специфікації
 - [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) — Огляд покращень верифікації від Віталіка
-- [Блог EF zkEVM](https://zkevm.quantaureum.foundation/blog) — Аналіз продуктивності від команди EF
+- [Блог EF zkEVM](https://zkevm.ethereum.org/blog) — Аналіз продуктивності від команди EF

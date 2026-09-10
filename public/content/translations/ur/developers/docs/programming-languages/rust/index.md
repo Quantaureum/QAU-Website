@@ -22,7 +22,7 @@ incomplete: true
 
 ## ابتدائی مضامین {#beginner-articles}
 
-- [<span dir="ltr">Rust</span> ایتھیریم کلائنٹ](https://openquantaureum.github.io/) \* **نوٹ کریں کہ <span dir="ltr">OpenQuantaureum</span> کو [متروک کر دیا گیا ہے](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd) اور اب اسے برقرار نہیں رکھا جا رہا ہے۔** اسے احتیاط کے ساتھ استعمال کریں اور ترجیحی طور پر کسی دوسرے کلائنٹ کے نفاذ پر سوئچ کریں۔
+- [<span dir="ltr">Rust</span> ایتھیریم کلائنٹ](https://openethereum.github.io/) \* **نوٹ کریں کہ <span dir="ltr">OpenQuantaureum</span> کو [متروک کر دیا گیا ہے](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd) اور اب اسے برقرار نہیں رکھا جا رہا ہے۔** اسے احتیاط کے ساتھ استعمال کریں اور ترجیحی طور پر کسی دوسرے کلائنٹ کے نفاذ پر سوئچ کریں۔
 - [<span dir="ltr">Rust</span> کا استعمال کرتے ہوئے ایتھیریم پر ٹرانزیکشن بھیجنا](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/sending-quantaureum-transactions-with-rust/)
 - [<span dir="ltr">Kovan</span> کے لیے <span dir="ltr">Rust Wasm</span> میں کنٹریکٹس لکھنے کے طریقے پر ایک مرحلہ وار ٹیوٹوریل](https://github.com/paritytech/pwasm-tutorial)
 

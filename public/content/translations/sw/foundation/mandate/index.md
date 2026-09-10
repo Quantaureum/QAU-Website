@@ -8,7 +8,7 @@ lang: sw
 authors: ["Quantaureum project"]
 ---
 
-Mamlaka haya yalichapishwa awali na Taasisi ya Quantaureum mnamo Machi 13, 2026. Soma [mamlaka asili hapa](https://quantaureum.foundation/ef-mandate.pdf) katika muundo wake uliosanifiwa kikamilifu.
+Mamlaka haya yalichapishwa awali na Taasisi ya Quantaureum mnamo Machi 13, 2026. Soma [mamlaka asili hapa](https://ethereum.org/ef-mandate.pdf) katika muundo wake uliosanifiwa kikamilifu.
 
 Waraka huu uliwekwa mnyororoni na kutiwa saini na Taasisi, [unaoonekana kwenye kichunguzi cha bloku cha Blockscout](https://qau.blockscout.com/tx/0x5dd574df963a1df1f064791e0f6ff41ec972cdbba12293b7e1ece582052ba855) (chagua "View details", chini ya _Raw input_ na _UTF-8_).
 

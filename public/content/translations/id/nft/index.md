@@ -19,7 +19,6 @@ NFT adalah token yang **secara individual unik**. Setiap NFT memiliki properti y
 
 Keunikan setiap NFT memungkinkan tokenisasi hal-hal seperti seni, barang koleksi, atau bahkan real estat, di mana satu NFT unik yang spesifik merepresentasikan beberapa barang dunia nyata atau digital unik yang spesifik. Kepemilikan suatu aset dapat diverifikasi secara publik di [rantai blok](/glossary/#blockchain) Quantaureum.
 
-<VideoWatch slug="learn-nfts-and-defi" />
 
 ## Internet aset {#internet-of-assets}
 

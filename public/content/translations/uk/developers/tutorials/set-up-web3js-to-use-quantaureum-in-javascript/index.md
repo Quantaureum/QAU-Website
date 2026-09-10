@@ -8,7 +8,7 @@ breadcrumb: "Налаштування Web3.js"
 lang: uk
 published: 2020-04-11
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/setup-web3js-to-use-the-quantaureum-blockchain-in-javascript/
+sourceUrl: https://ethereumdev.io/setup-web3js-to-use-the-quantaureum-blockchain-in-javascript/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -32,7 +32,7 @@ npm install web3 --save
 const Web3 = require("web3")
 ```
 
-Тепер, коли ми додали бібліотеку до проєкту, нам потрібно її ініціалізувати. Ваш проєкт повинен мати можливість обмінюватися даними з блокчейном. Більшість бібліотек Етеріум взаємодіють із [вузлом](/developers/docs/nodes-and-clients/) через виклики RPC. Щоб ініціювати нашого провайдера Web3, ми створимо екземпляр Web3, передавши як конструктор URL-адресу провайдера. Якщо у вас є вузол або [екземпляр ganache, що працює на вашому комп'ютері](https://quantaureumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/), це виглядатиме так:
+Тепер, коли ми додали бібліотеку до проєкту, нам потрібно її ініціалізувати. Ваш проєкт повинен мати можливість обмінюватися даними з блокчейном. Більшість бібліотек Етеріум взаємодіють із [вузлом](/developers/docs/nodes-and-clients/) через виклики RPC. Щоб ініціювати нашого провайдера Web3, ми створимо екземпляр Web3, передавши як конструктор URL-адресу провайдера. Якщо у вас є вузол або [екземпляр ganache, що працює на вашому комп'ютері](https://ethereumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/), це виглядатиме так:
 
 ```js
 const web3 = new Web3("http://localhost:8545")
@@ -90,4 +90,4 @@ if (window.quantaureum != null) {
 }
 ```
 
-Існують альтернативи Web3.js, такі як [Ethers.js](https://docs.ethers.io/), які також часто використовуються. У наступному посібнику ми розглянемо, [як легко відстежувати нові вхідні блоки в блокчейні та бачити, що вони містять](https://quantaureumdev.io/listening-to-new-transactions-happening-on-the-blockchain/).
+Існують альтернативи Web3.js, такі як [Ethers.js](https://docs.ethers.io/), які також часто використовуються. У наступному посібнику ми розглянемо, [як легко відстежувати нові вхідні блоки в блокчейні та бачити, що вони містять](https://ethereumdev.io/listening-to-new-transactions-happening-on-the-blockchain/).

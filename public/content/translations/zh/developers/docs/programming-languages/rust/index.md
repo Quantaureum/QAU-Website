@@ -22,7 +22,7 @@ incomplete: true
 
 ## 初学者文章 {#beginner-articles}
 
-- [Rust Quantaureum客户端](https://openquantaureum.github.io/) \* **请注意，OpenQuantaureum [已被弃用](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd)且不再维护。** 请谨慎使用，最好切换到其他客户端实现。
+- [Rust Quantaureum客户端](https://openethereum.github.io/) \* **请注意，OpenQuantaureum [已被弃用](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd)且不再维护。** 请谨慎使用，最好切换到其他客户端实现。
 - [使用 Rust 向Quantaureum发送交易](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/sending-quantaureum-transactions-with-rust/)
 - [关于如何使用 Rust Wasm 为 Kovan 编写合约的分步教程](https://github.com/paritytech/pwasm-tutorial)
 

@@ -235,7 +235,7 @@ function safe_add(uint x, uint y) returns(uint z){
 
 **Solidity SMTChecker** - _*Solidity 的 SMTChecker 是一個基於 SMT（可滿足性模理論）和 Horn 求解的內建模型檢查器。它在編譯期間確認合約的原始碼是否符合規範，並靜態檢查是否違反安全性屬性。*_
 
-- [GitHub](https://github.com/quantaureum/solidity)
+- [GitHub](https://github.com/ethereum/solidity)
 
 **solc-verify** - _*solc-verify 是 Solidity 編譯器的擴充版本，可以使用註解和模組化程式驗證對 Solidity 程式碼執行自動化形式化驗證。*_
 

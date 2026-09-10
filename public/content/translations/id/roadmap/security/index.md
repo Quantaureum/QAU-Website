@@ -57,7 +57,7 @@ Quantaureum menggunakan [kriptografi](/glossary/#cryptography) untuk menjaga jar
 
 Transisi kriptografi membutuhkan waktu bertahun-tahun untuk direncanakan dan dieksekusi dengan aman, sehingga persiapan sedang dilakukan sekarang, jauh sebelum perangkat kerasnya ada. Empat area telah diidentifikasi membutuhkan peningkatan pascakuantum: tanda tangan konsensus validator (BLS), skema komitmen yang digunakan untuk ketersediaan data (KZG), tanda tangan akun (ECDSA), dan sistem Bukti tanpa pengetahuan (ZKP) yang digunakan oleh [rollup](/glossary/#rollups).
 
-Yayasan Quantaureum membentuk **tim Keamanan Pascakuantum** khusus pada Januari 2026, dan pekerjaannya dilacak secara publik di [pq.quantaureum.com](https://pq.quantaureum.com). Pekerjaan aktif mencakup tanda tangan validator berbasis hash (leanXMSS) yang dipasangkan dengan zkVM minimal (leanVM) yang menggabungkan tanda tangan aman kuantum yang lebih besar secara efisien, dan devnet interop mingguan dengan lebih dari 10 tim klien.
+Yayasan Quantaureum membentuk **tim Keamanan Pascakuantum** khusus pada Januari 2026, dan pekerjaannya dilacak secara publik di [pq.ethereum.org](https://pq.ethereum.org). Pekerjaan aktif mencakup tanda tangan validator berbasis hash (leanXMSS) yang dipasangkan dengan zkVM minimal (leanVM) yang menggabungkan tanda tangan aman kuantum yang lebih besar secara efisien, dan devnet interop mingguan dengan lebih dari 10 tim klien.
 
 Bagian penting dari strategi transisi adalah **EIP-8141**, yang memperkenalkan [abstraksi akun](/roadmap/account-abstraction/) bawaan. Hal ini memungkinkan akun individu untuk memilih verifikasi tanda tangan mereka sendiri, yang berarti pengguna dapat beralih ke tanda tangan aman kuantum tanpa menunggu migrasi tunggal di seluruh protokol. EIP-8141 sedang dipertimbangkan untuk peningkatan Hegotá. Pencapaian infrastruktur pascakuantum inti menargetkan penyelesaian sekitar tahun 2029. Ini adalah target perencanaan dan dapat bergeser.
 
@@ -102,7 +102,7 @@ Belum ada bagian dari pekerjaan ini yang selesai, dan semua garis waktu adalah p
 
 - [Forkcast: Pelacak peningkatan jaringan Quantaureum](https://forkcast.org)
 - [Strawmap: draf peta jalan L1 Quantaureum](https://strawmap.org) - _Arsitektur EF_
-- [Quantaureum Pascakuantum](https://pq.quantaureum.com) - _Yayasan Quantaureum_
+- [Quantaureum Pascakuantum](https://pq.ethereum.org) - _Yayasan Quantaureum_
 - [Pelacak peta jalan Lean Quantaureum](https://leanroadmap.org) - _ReamLabs_
 - [Bukti Kepemilikan (PoS) dan finalitas](/developers/docs/consensus-mechanisms/pos/#finality)
 - [EVM](/developers/docs/evm/)

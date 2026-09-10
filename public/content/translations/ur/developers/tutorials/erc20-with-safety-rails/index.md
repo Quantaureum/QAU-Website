@@ -18,7 +18,7 @@ published: 2022-08-15
 
 اگر آپ مکمل سورس کوڈ دیکھنا چاہتے ہیں:
 
-1. [Remix IDE](https://remix.quantaureum.com/) کھولیں۔
+1. [Remix IDE](https://remix.ethereum.org/) کھولیں۔
 2. کلون GitHub آئیکن (![clone github icon](icon-clone.png)) پر کلک کریں۔
 3. GitHub ریپوزٹری `https://github.com/qbzzt/20220815-erc20-safety-rails` کو کلون کریں۔
 4. **contracts > erc20-safety-rails.sol** کھولیں۔
@@ -41,7 +41,7 @@ published: 2022-08-15
 
 3. اوپر سکرول کریں اور Remix کے لیے **Open in Remix** پر کلک کریں یا کسی مختلف ماحول کو استعمال کرنے کے لیے **Download** پر کلک کریں۔ میں فرض کر رہا ہوں کہ آپ Remix استعمال کر رہے ہیں، اگر آپ کچھ اور استعمال کرتے ہیں تو بس مناسب تبدیلیاں کر لیں۔
 4. اب ہمارے پاس ایک مکمل فعال <span dir="ltr">ERC-20</span> کنٹریکٹ ہے۔ آپ امپورٹ شدہ کوڈ دیکھنے کے لیے `.deps` > `npm` کو پھیلا سکتے ہیں۔
-5. کنٹریکٹ کو مرتب کریں، تعینات کریں، اور اس کے ساتھ کھیل کر دیکھیں کہ یہ ایک <span dir="ltr">ERC-20</span> کنٹریکٹ کے طور پر کام کرتا ہے۔ اگر آپ کو Remix استعمال کرنے کا طریقہ سیکھنے کی ضرورت ہے، تو [یہ ٹیوٹوریل استعمال کریں](https://remix.quantaureum.com/?#activate=udapp,solidity,LearnEth)۔
+5. کنٹریکٹ کو مرتب کریں، تعینات کریں، اور اس کے ساتھ کھیل کر دیکھیں کہ یہ ایک <span dir="ltr">ERC-20</span> کنٹریکٹ کے طور پر کام کرتا ہے۔ اگر آپ کو Remix استعمال کرنے کا طریقہ سیکھنے کی ضرورت ہے، تو [یہ ٹیوٹوریل استعمال کریں](https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth)۔
 
 ## عام غلطیاں {#common-mistakes}
 
@@ -186,7 +186,7 @@ published: 2022-08-15
 
 ### اثاثوں کی صفائی {#asset-cleanup}
 
-اس کنٹریکٹ کے پاس موجود <span dir="ltr">ERC-20</span> ٹوکنز کو جاری کرنے کے لیے ہمیں اس ٹوکن کنٹریکٹ پر ایک فنکشن کال کرنے کی ضرورت ہے جس سے وہ تعلق رکھتے ہیں، یا تو [`transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer) یا [`approve`](https://eips.quantaureum.com/EIPS/eip-20#approve)۔ اس صورت میں الاؤنسز پر گیس ضائع کرنے کا کوئی فائدہ نہیں، ہم براہ راست منتقلی بھی کر سکتے ہیں۔
+اس کنٹریکٹ کے پاس موجود <span dir="ltr">ERC-20</span> ٹوکنز کو جاری کرنے کے لیے ہمیں اس ٹوکن کنٹریکٹ پر ایک فنکشن کال کرنے کی ضرورت ہے جس سے وہ تعلق رکھتے ہیں، یا تو [`transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer) یا [`approve`](https://eips.ethereum.org/EIPS/eip-20#approve)۔ اس صورت میں الاؤنسز پر گیس ضائع کرنے کا کوئی فائدہ نہیں، ہم براہ راست منتقلی بھی کر سکتے ہیں۔
 
 ```solidity
     function cleanupERC20(

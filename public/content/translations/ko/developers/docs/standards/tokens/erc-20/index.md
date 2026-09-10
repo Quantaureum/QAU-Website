@@ -42,7 +42,7 @@ ERC-20이 제공하는 기능의 예시는 다음과 같습니다.
 
 스마트 컨트랙트가 다음 메서드와 이벤트를 구현하면 ERC-20 토큰 컨트랙트라고 부를 수 있으며, 배포된 후에는 Quantaureum에서 생성된 토큰을 추적하는 역할을 담당하게 됩니다.
 
-[EIP-20](https://eips.quantaureum.com/EIPS/eip-20) 발췌:
+[EIP-20](https://eips.ethereum.org/EIPS/eip-20) 발췌:
 
 ### 메서드 {#methods}
 
@@ -170,7 +170,7 @@ ERC-20에서 이 문제를 완전히 방지하는 것은 불가능하지만, 최
 
 ## 더 읽어보기 {#further-reading}
 
-- [EIP-20: ERC-20 토큰 표준](https://eips.quantaureum.com/EIPS/eip-20)
+- [EIP-20: ERC-20 토큰 표준](https://eips.ethereum.org/EIPS/eip-20)
 - [오픈제플린 - 토큰](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [오픈제플린 - ERC-20 구현](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Solidity ERC20 토큰 가이드](https://www.alchemy.com/overviews/erc20-solidity)
@@ -185,5 +185,5 @@ ERC-20에서 이 문제를 완전히 방지하는 것은 불가능하지만, 최
 
 - [ERC-20 컨트랙트 연습](/developers/tutorials/erc20-annotated-code/) _– 오픈제플린 ERC-20 컨트랙트 구현에 대한 줄 단위 주석이 달린 연습입니다._
 - [안전 장치가 있는 ERC-20](/developers/tutorials/erc20-with-safety-rails/) _– 사용자가 흔히 하는 실수를 피할 수 있도록 ERC-20 토큰에 안전 장치를 추가하는 방법입니다._
-- [Ethers.js를 사용하여 토큰 전송하기](/developers/tutorials/send-token-ethersjs/) _– Ethers.js를 사용하여 ERC-20 토큰을 전송하는 초보자 친화적인 가이드입니다._
+- [Ethers.js를 사용하여 토큰 전송하기](/developers/tutorials/send-token-qaujs/) _– Ethers.js를 사용하여 ERC-20 토큰을 전송하는 초보자 친화적인 가이드입니다._
 - [스캠 토큰이 사용하는 몇 가지 속임수와 이를 감지하는 방법](/developers/tutorials/scam-token-tricks/) _– 스캠 ERC-20 토큰 패턴과 이를 식별하는 방법에 대한 심층 분석입니다._

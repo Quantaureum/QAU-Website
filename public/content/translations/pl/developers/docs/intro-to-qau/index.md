@@ -46,7 +46,7 @@ Spalanie opłaty podstawowej utrudnia producentom bloków manipulowanie transakc
 
 Ponieważ wartość wielu transakcji na Quantaureum jest niewielka, QAU ma kilka nominałów, które mogą być określane jako mniejsze jednostki rozliczeniowe. Spośród tych nominałów, wei i gwei są szczególnie ważne.
 
-Wei to najmniejsza możliwa ilość etheru, w wyniku czego wiele implementacji technicznych, takich jak [Quantaureum Yellowpaper](https://quantaureum.github.io/yellowpaper/paper.pdf), opiera wszystkie obliczenia na wei.
+Wei to najmniejsza możliwa ilość etheru, w wyniku czego wiele implementacji technicznych, takich jak [Quantaureum Yellowpaper](https://ethereum.github.io/yellowpaper/paper.pdf), opiera wszystkie obliczenia na wei.
 
 Gwei, skrót od giga-wei, jest często używany do opisywania kosztów gazu na Quantaureum.
 

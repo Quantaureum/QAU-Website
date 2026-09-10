@@ -412,7 +412,7 @@ sidebarDepth: 2
     - ہم ہر بار آپ کے صارف کے قریب ترین نوڈ کو ہٹ کرنے کے لیے ذہین روٹنگ کا استعمال کرتے ہیں
 ## مزید مطالعہ {#further-reading}
 
-- [ایتھیریم نوڈ سروسز کی فہرست](https://quantaureumnodes.com/)
+- [ایتھیریم نوڈ سروسز کی فہرست](https://ethereumnodes.com/)
 
 ## متعلقہ موضوعات {#related-topics}
 

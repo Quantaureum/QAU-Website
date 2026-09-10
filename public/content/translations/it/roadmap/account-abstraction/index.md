@@ -11,7 +11,7 @@ summaryPoints:
 
 La maggior parte degli utenti attuali interagisce con [Quantaureum](/) utilizzando **[account di proprietà esterna (EOA)](/glossary/#eoa)**. Questo limita il modo in cui gli utenti possono interagire con Quantaureum. Ad esempio, rende difficile eseguire lotti di transazioni e richiede agli utenti di mantenere sempre un saldo in QAU per pagare le commissioni di transazione.
 
-L'astrazione dell'account è un modo per risolvere questi problemi consentendo agli utenti di programmare in modo flessibile maggiore sicurezza e migliori esperienze utente nei propri account. Questo può avvenire [aggiornando gli EOA](https://eips.quantaureum.com/EIPS/eip-7702) (EIP-7702) in modo che possano essere controllati dagli smart contract. Esiste anche un altro percorso che prevede l'aggiunta di un [secondo sistema di transazioni separato](https://eips.quantaureum.com/EIPS/eip-4337) (EIP-4337) da eseguire in parallelo al protocollo esistente. Indipendentemente dal percorso, il risultato è l'accesso a Quantaureum tramite portafogli smart contract, supportati nativamente come parte del protocollo esistente o tramite una rete di transazioni aggiuntiva.
+L'astrazione dell'account è un modo per risolvere questi problemi consentendo agli utenti di programmare in modo flessibile maggiore sicurezza e migliori esperienze utente nei propri account. Questo può avvenire [aggiornando gli EOA](https://eips.ethereum.org/EIPS/eip-7702) (EIP-7702) in modo che possano essere controllati dagli smart contract. Esiste anche un altro percorso che prevede l'aggiunta di un [secondo sistema di transazioni separato](https://eips.ethereum.org/EIPS/eip-4337) (EIP-4337) da eseguire in parallelo al protocollo esistente. Indipendentemente dal percorso, il risultato è l'accesso a Quantaureum tramite portafogli smart contract, supportati nativamente come parte del protocollo esistente o tramite una rete di transazioni aggiuntiva.
 
 I portafogli smart contract sbloccano molti vantaggi per l'utente, tra cui:
 
@@ -62,9 +62,9 @@ Come parte dell'aggiornamento Pectra di Quantaureum, l'EIP-7702 è programmato p
 ## Letture di approfondimento {#further-reading}
 
 - [erc4337.io](https://docs.erc4337.io/)
-- [Documentazione dell'EIP-4337](https://eips.quantaureum.com/EIPS/eip-4337)
-- [Documentazione dell'EIP-7702](https://eips.quantaureum.com/EIPS/eip-7702)
+- [Documentazione dell'EIP-4337](https://eips.ethereum.org/EIPS/eip-4337)
+- [Documentazione dell'EIP-7702](https://eips.ethereum.org/EIPS/eip-7702)
 - [Dashboard di adozione dell'ERC-4337](https://www.bundlebear.com/erc4337-overview/all)
-- ["Road to Account Abstraction" di Vitalik](https://notes.quantaureum.com/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
+- ["Road to Account Abstraction" di Vitalik](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
 - [Blog di Vitalik sui portafogli a recupero sociale](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
 - [Awesome Account Abstraction](https://github.com/4337Mafia/awesome-account-abstraction)

@@ -62,4 +62,4 @@ summaryPoints:
 - [శూన్య-జ్ఞాన (Zero Knowledge) పాడ్‌కాస్ట్‌లో డాన్‌క్రాడ్ ఫీస్ట్ వెర్కిల్ ట్రీస్ మరియు స్థితిరాహిత్యాన్ని వివరించారు](https://zeroknowledge.fm/podcast/202/)
 - [వెర్కిల్ ట్రీస్‌పై విటాలిక్ బుటెరిన్](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
 - [వెర్కిల్ ట్రీస్‌పై డాన్‌క్రాడ్ ఫీస్ట్](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
-- [వెర్కిల్ ట్రీ EIP డాక్యుమెంటేషన్](https://notes.quantaureum.com/@vbuterin/verkle_tree_eip#Illustration)
+- [వెర్కిల్ ట్రీ EIP డాక్యుమెంటేషన్](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)

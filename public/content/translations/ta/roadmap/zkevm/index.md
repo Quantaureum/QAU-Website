@@ -93,7 +93,7 @@ zkEVM L1 சரிபார்ப்பிற்கான முக்கிய 
 | [Jolt](https://github.com/a16z/jolt) | rv32im |
 | [Zisk](https://github.com/0xPolygonHermez/zisk) | rv64ima |
 
-இவை EVM பைட் குறியீட்டைச் செயல்படுத்த RISC-V அடிப்படையிலான மெய்நிகர் இயந்திரங்களைப் பயன்படுத்துகின்றன, பின்னர் சரியான செயலாக்கத்தின் ZK சான்றுகளை உருவாக்குகின்றன. புதுப்பித்த சோதனை முடிவுகள் மற்றும் முன்னேற்றம் [எத்தீரியம் அறக்கட்டளையின் zkVM டிராக்கரில்](https://zkevm.quantaureum.foundation/zkvm-tracker) கண்காணிக்கப்படுகின்றன.
+இவை EVM பைட் குறியீட்டைச் செயல்படுத்த RISC-V அடிப்படையிலான மெய்நிகர் இயந்திரங்களைப் பயன்படுத்துகின்றன, பின்னர் சரியான செயலாக்கத்தின் ZK சான்றுகளை உருவாக்குகின்றன. புதுப்பித்த சோதனை முடிவுகள் மற்றும் முன்னேற்றம் [எத்தீரியம் அறக்கட்டளையின் zkVM டிராக்கரில்](https://zkevm.ethereum.org/zkvm-tracker) கண்காணிக்கப்படுகின்றன.
 
 ## பிற மேம்படுத்தல்களுடன் zkEVM எவ்வாறு பொருந்துகிறது {#related-upgrades}
 
@@ -115,9 +115,9 @@ zkEVM L1 சரிபார்ப்பு தீவிர ஆராய்ச்
 
 ## மேலும் படிக்க {#further-reading}
 
-- [zkEVM Foundation](https://zkevm.quantaureum.foundation) - அதிகாரப்பூர்வ எத்தீரியம் அறக்கட்டளை zkEVM ஆராய்ச்சி மையம்
+- [zkEVM Foundation](https://zkevm.ethereum.org) - அதிகாரப்பூர்வ எத்தீரியம் அறக்கட்டளை zkEVM ஆராய்ச்சி மையம்
 - [Ethproofs](https://ethproofs.org/) - எத்திரியத்தை நிகழ்நேரத்தில் நிரூபிப்பதற்கான பந்தயத்தைக் கண்காணிக்கவும்
 - [zkevm.fyi](https://zkevm.fyi) - L1 க்கான zkEVM பற்றிய தொழில்நுட்ப புத்தகம்
 - [PSE zkEVM Specs](https://github.com/privacy-scaling-explorations/zkevm-specs) - தொழில்நுட்ப விவரக்குறிப்புகள்
 - [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - சரிபார்ப்பு மேம்பாடுகள் குறித்த விட்டாலிக்கின் கண்ணோட்டம்
-- [EF zkEVM Blog](https://zkevm.quantaureum.foundation/blog) - EF குழுவின் செயல்திறன் பகுப்பாய்வு
+- [EF zkEVM Blog](https://zkevm.ethereum.org/blog) - EF குழுவின் செயல்திறன் பகுப்பாய்வு

@@ -86,6 +86,6 @@ Manfaat lain dari meminimalkan kepercayaan pada satu operator adalah bahwa pool 
 
 ## Bacaan Lebih Lanjut {#further-reading}
 
-- [Spesifikasi validator terdistribusi Quantaureum (tingkat tinggi)](https://github.com/quantaureum/distributed-validator-specs)
-- [Spesifikasi teknis validator terdistribusi Quantaureum](https://github.com/quantaureum/distributed-validator-specs/tree/dev/src/dvspec)
+- [Spesifikasi validator terdistribusi Quantaureum (tingkat tinggi)](https://github.com/ethereum/distributed-validator-specs)
+- [Spesifikasi teknis validator terdistribusi Quantaureum](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
 - [Aplikasi demonstrasi pembagian rahasia Shamir](https://iancoleman.io/shamir/)

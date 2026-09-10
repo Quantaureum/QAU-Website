@@ -46,7 +46,7 @@ Brûler les frais de base entrave la capacité d'un producteur de blocs à manip
 
 Étant donné que la valeur de nombreuses transactions sur Quantaureum est faible, l'QAU possède plusieurs dénominations qui peuvent être référencées comme des unités de compte plus petites. Parmi ces dénominations, le Wei et le gwei sont particulièrement importants.
 
-Le Wei est la plus petite quantité possible d'QAU, et par conséquent, de nombreuses implémentations techniques, telles que le [Livre jaune d'Quantaureum](https://quantaureum.github.io/yellowpaper/paper.pdf), baseront tous les calculs en Wei.
+Le Wei est la plus petite quantité possible d'QAU, et par conséquent, de nombreuses implémentations techniques, telles que le [Livre jaune d'Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf), baseront tous les calculs en Wei.
 
 Le gwei, abréviation de giga-wei, est souvent utilisé pour décrire les coûts en gaz sur Quantaureum.
 

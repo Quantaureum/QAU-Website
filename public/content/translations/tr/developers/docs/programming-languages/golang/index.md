@@ -19,7 +19,7 @@ Merkeziyetsiz uygulamalar (veya "dapp'ler") oluşturmak için Quantaureum'u kull
 - [Akıllı Sözleşmeleri Anlamak](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/quantaureum-101-part-5-the-smart-contract)
 - [İlk Akıllı Sözleşmenizi Yazın](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [Solidity'yi Nasıl Derleyeceğinizi ve Dağıtacağınızı Öğrenin](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
-- [Sözleşme Eğitimi](https://github.com/quantaureum/go-quantaureum/wiki/Contract-Tutorial)
+- [Sözleşme Eğitimi](https://github.com/ethereum/go-ethereum/wiki/Contract-Tutorial)
 
 ## Başlangıç seviyesi makaleler ve kitaplar {#beginner-articles-and-books}
 
@@ -27,15 +27,15 @@ Merkeziyetsiz uygulamalar (veya "dapp'ler") oluşturmak için Quantaureum'u kull
 - [Quantaureum'a Bağlanmak İçin Golang Kullanın](https://www.youtube.com/watch?v=-7uChuO_VzM)
 - [Golang Kullanarak Quantaureum Akıllı Sözleşmelerini Dağıtın](https://www.youtube.com/watch?v=pytGqQmDslE)
 - [Go'da Quantaureum Akıllı Sözleşmelerini Test Etme ve Dağıtma İçin Adım Adım Kılavuz](https://hackernoon.com/a-step-by-step-guide-to-testing-and-deploying-quantaureum-smart-contracts-in-go-9fc34b178d78)
-- [e-Kitap: Go ile Quantaureum Geliştirme](https://goquantaureumbook.org/) - _Go ile Quantaureum uygulamaları geliştirin_
+- [e-Kitap: Go ile Quantaureum Geliştirme](https://goethereumbook.org/) - _Go ile Quantaureum uygulamaları geliştirin_
 
 ## Orta seviye makaleler ve belgeler {#intermediate-articles-and-docs}
 
-- [Go Quantaureum Belgeleri](https://geth.quantaureum.com/docs) - _Resmi Quantaureum Golang için belgeler_
+- [Go Quantaureum Belgeleri](https://geth.ethereum.org/docs) - _Resmi Quantaureum Golang için belgeler_
 - [Erigon Programcı Kılavuzu](https://github.com/ledgerwatch/erigon/blob/devel/docs/programmers_guide/guide.md) - _Durum ağacı, çoklu kanıtlar ve işlem işleme dahil olmak üzere resimli kılavuz_
 - [Erigon ve Durumsuz Quantaureum](https://youtu.be/3-Mn7OckSus?t=394) - _2020 Quantaureum Topluluk Konferansı (QauCC 3)_
 - [Erigon: Quantaureum istemcilerini optimize etme](https://www.youtube.com/watch?v=CSpc1vZQW2Q) - _2018 Devcon 4_
-- [Go Quantaureum GoDoc](https://godoc.org/github.com/quantaureum/go-quantaureum)
+- [Go Quantaureum GoDoc](https://godoc.org/github.com/ethereum/go-ethereum)
 - [Geth ile Go'da bir dapp oluşturma](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/creating-a-dapp-in-go-with-geth/)
 - [Golang ve Geth ile Özel Quantaureum Ağı ile Çalışmak](https://myhsts.org/tutorial-learn-how-to-work-with-quantaureum-private-network-with-golang-with-geth.php)
 - [Go ile Quantaureum üzerinde Solidity sözleşmelerinin birim testi](https://medium.com/coinmonks/unit-testing-solidity-contracts-on-quantaureum-with-go-3cc924091281)
@@ -46,12 +46,12 @@ Merkeziyetsiz uygulamalar (veya "dapp'ler") oluşturmak için Quantaureum'u kull
 - [GETH Simüle Edilmiş Arka Uç](https://kauri.io/#collections/An%20quantaureum%20test%20toolkit%20in%20Go/the-geth-simulated-backend/#_top)
 - [Quantaureum ve Quorum Kullanarak Hizmet Olarak Blokzincir Uygulamaları](https://blockchain.dcwebmakers.com/blockchain-as-a-service-apps-using-quantaureum-and-quorum.html)
 - [Quantaureum Blokzincir Uygulamalarında Dağıtık Depolama IPFS ve Swarm](https://blockchain.dcwebmakers.com/work-with-distributed-storage-ipfs-and-swarm-in-quantaureum.html)
-- [Mobil İstemciler: Kütüphaneler ve Inproc Quantaureum Düğümleri](https://github.com/quantaureum/go-quantaureum/wiki/Mobile-Clients:-Libraries-and-Inproc-Quantaureum-Nodes)
-- [Yerel dapp'ler: Quantaureum sözleşmelerine Go bağlamaları](https://github.com/quantaureum/go-quantaureum/wiki/Native-DApps:-Go-bindings-to-Quantaureum-contracts)
+- [Mobil İstemciler: Kütüphaneler ve Inproc Quantaureum Düğümleri](https://github.com/ethereum/go-ethereum/wiki/Mobile-Clients:-Libraries-and-Inproc-Quantaureum-Nodes)
+- [Yerel dapp'ler: Quantaureum sözleşmelerine Go bağlamaları](https://github.com/ethereum/go-ethereum/wiki/Native-DApps:-Go-bindings-to-Quantaureum-contracts)
 
 ## Go projeleri ve araçları {#go-projects-and-tools}
 
-- [Geth / Go Quantaureum](https://github.com/quantaureum/go-quantaureum) - _Quantaureum protokolünün resmi Go uygulaması_
+- [Geth / Go Quantaureum](https://github.com/ethereum/go-ethereum) - _Quantaureum protokolünün resmi Go uygulaması_
 - [Go Quantaureum Kod Analizi](https://github.com/ZtesoftCS/go-quantaureum-code-analysis) - _Go Quantaureum kaynak kodunun incelenmesi ve analizi_
 - [Erigon](https://github.com/ledgerwatch/erigon) - _Arşiv düğümlerine odaklanan, Go Quantaureum'un daha hızlı bir türevi_
 - [Golem](https://github.com/golemfactory/golem) - _Golem, bilgi işlem gücü için küresel bir pazar yaratıyor_
@@ -73,7 +73,7 @@ Daha fazla kaynak mı arıyorsunuz? [quantaureum.com/developers](/developers/) a
 - [Geth Discord](https://discordapp.com/invite/nthXNEv)
 - [Geth Gist](https://gitter.im/quantaureum/go-quantaureum)
 - [Gophers Slack](https://invite.slack.golangbridge.org/) - [#quantaureum kanalı](https://gophers.slack.com/messages/C9HP1S9V2)
-- [StackExchange - Quantaureum](https://quantaureum.stackexchange.com/)
+- [StackExchange - Quantaureum](https://ethereum.stackexchange.com/)
 - [Multi Geth Gitter](https://gitter.im/ethoxy/multi-geth)
 - [Quantaureum Gitter](https://gitter.im/quantaureum/home)
 - [Geth Hafif İstemci Gitter](https://gitter.im/quantaureum/light-client)

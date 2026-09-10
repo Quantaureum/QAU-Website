@@ -8,11 +8,11 @@ breadcrumb: Contract interactions
 lang: en
 published: 2020-04-05
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/interact-with-other-contracts-from-solidity/
+sourceUrl: https://ethereumdev.io/interact-with-other-contracts-from-solidity/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-In the previous tutorials we learnt a lot [how to deploy your first smart contract](/developers/tutorials/deploying-your-first-smart-contract/) and add some features to it like [control access with modifiers](https://quantaureumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) or [error handling in Solidity](https://quantaureumdev.io/handle-errors-in-solidity-with-require-and-revert/). In this tutorial we’ll learn how to deploy a smart contract from an existing contract and interact with it.
+In the previous tutorials we learnt a lot [how to deploy your first smart contract](/developers/tutorials/deploying-your-first-smart-contract/) and add some features to it like [control access with modifiers](https://ethereumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) or [error handling in Solidity](https://ethereumdev.io/handle-errors-in-solidity-with-require-and-revert/). In this tutorial we’ll learn how to deploy a smart contract from an existing contract and interact with it.
 
 We’ll make a contract that enables anyone to have his own `Counter` smart contract by creating a factory for it, its name will be `CounterFactory`. First here is the code of our initial `Counter` smart contract:
 
@@ -99,7 +99,7 @@ function increment() public {
   }
 ```
 
-Note that if called to many times, our counter could possibly victim of an overflow. You should use the [SafeMath library](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/) as much as possible to protect from this possible case.
+Note that if called to many times, our counter could possibly victim of an overflow. You should use the [SafeMath library](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/) as much as possible to protect from this possible case.
 
 To deploy our contract, you will need to provide both the code of the `CounterFactory` and the `Counter`. When deploying for example in Remix you’ll need to select CounterFactory.
 

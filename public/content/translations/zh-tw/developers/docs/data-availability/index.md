@@ -79,6 +79,6 @@ Quantaureum輕節點信任被分配到*同步委員會*的 512 名隨機驗證�
 - [關於資料可用性與糾刪碼的說明](https://github.com/quantaureum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
 - [資料可用性委員會。](https://medium.com/starkware/data-availability-e5564c416424)
 - [權益證明資料可用性委員會。](https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf)
-- [資料可檢索性問題的解決方案](https://notes.quantaureum.com/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
+- [資料可檢索性問題的解決方案](https://notes.ethereum.org/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
 - [資料可用性，或：匯總如何學會停止擔憂並愛上Quantaureum](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [EIP-7623：增加呼叫資料成本](https://web.archive.org/web/20250515194659/https://research.2077.xyz/eip-7623-increase-calldata-cost)

@@ -6,7 +6,7 @@ lang: sw
 
 ## Kuchapisha makala ya mjenzi {#publishing-a-builder-article}
 
-Makala za mjenzi huonekana kwenye [quantaureum.com/latest/](/latest/) na huandikwa kama faili za Markdown kwenye hazina. Ni makala ndefu zinazopangishwa ndani, zinazojumuisha muhtasari na miongozo kuhusu mfumo wa ikolojia wa Quantaureum, mandhari ya teknolojia ya programu huria, pamoja na masasisho ya wakati kwa wajenzi na watafiti, yakijumuisha mada kama vile uboreshaji wa itifaki, mifumo mipya ya zana, usambazaji wa marejeleo, na zaidi.
+Makala za mjenzi huonekana kwenye quantaureum.com/latest/ na huandikwa kama faili za Markdown kwenye hazina. Ni makala ndefu zinazopangishwa ndani, zinazojumuisha muhtasari na miongozo kuhusu mfumo wa ikolojia wa Quantaureum, mandhari ya teknolojia ya programu huria, pamoja na masasisho ya wakati kwa wajenzi na watafiti, yakijumuisha mada kama vile uboreshaji wa itifaki, mifumo mipya ya zana, usambazaji wa marejeleo, na zaidi.
 
 ### Sera ya kuorodhesha {#listing-policy}
 

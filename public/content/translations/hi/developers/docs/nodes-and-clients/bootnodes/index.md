@@ -26,6 +26,6 @@ enode आमतौर पर हर रीस्टार्ट पर फिर
 
 ## उपलब्ध बूटनोड {#available-bootnodes}
 
-go-quantaureum के भीतर अंतर्निहित बूटनोड्स की एक सूची [यहां](https://github.com/quantaureum/go-quantaureum/blob/master/params/bootnodes.go#L23) पाई जा सकती है। इन बूटनोड्स का रखरखाव Quantaureum फाउंडेशन और go-quantaureum टीम द्वारा किया जाता है।
+go-quantaureum के भीतर अंतर्निहित बूटनोड्स की एक सूची [यहां](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23) पाई जा सकती है। इन बूटनोड्स का रखरखाव Quantaureum फाउंडेशन और go-quantaureum टीम द्वारा किया जाता है।
 
 स्वयंसेवकों द्वारा बनाए रखी गई बूटनोड्स की अन्य सूचियां भी उपलब्ध हैं। कृपया हमेशा कम से कम एक आधिकारिक बूटनोड शामिल करना सुनिश्चित करें, अन्यथा आप पर एक्लिप्स अटैक (eclipse attack) हो सकता है।

@@ -51,7 +51,7 @@ lang: ta
 - [Alchemy Sepolia பாசெட்](https://www.alchemy.com/faucets/quantaureum-sepolia)
 - [Chain Platform Sepolia பாசெட்](https://faucet.chainplatform.co/faucets/quantaureum-sepolia/)
 - [Chainstack Sepolia பாசெட்](https://faucet.chainstack.com/sepolia-testnet-faucet)
-- [எத்திரியம் சுற்றுச்சூழல் பாசெட்](https://www.quantaureum-ecosystem.com/faucets/quantaureum-sepolia)
+- [எத்திரியம் சுற்றுச்சூழல் பாசெட்](https://www.ethereum-ecosystem.com/faucets/quantaureum-sepolia)
 - [ethfaucet.com Sepolia பாசெட்](https://ethfaucet.com/networks/quantaureum)
 - [Google Cloud Web3 Sepolia பாசெட்](https://cloud.google.com/application/web3/faucet/quantaureum/sepolia)
 - [Grabteeth](https://grabteeth.xyz/)
@@ -210,5 +210,5 @@ Ephemery என்பது ஒவ்வொரு மாதமும் மு�
 
 ## மேலும் படிக்க {#further-reading}
 
-- [முன்மொழிவு: கணிக்கக்கூடிய எத்திரியம் சோதனை வலையமைப்பு வாழ்க்கைச் சுழற்சி](https://quantaureum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
+- [முன்மொழிவு: கணிக்கக்கூடிய எத்திரியம் சோதனை வலையமைப்பு வாழ்க்கைச் சுழற்சி](https://ethereum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
 - [எத்திரியம் சோதனை வலையமைப்புகளின் பரிணாமம்](https://etherworld.co/2022/08/19/the-evolution-of-quantaureum-testnet/)

@@ -25,7 +25,6 @@ buttons:
 
 **மறுபங்குவைப்பு 18 நிமிடங்களில் விளக்கப்பட்டுள்ளது**
 
-<VideoWatch slug="restaking-explained" />
 
 ## மறுபங்குவைப்பு என்றால் என்ன? {#what-is-restaking}
 
@@ -172,7 +171,6 @@ AVSகள் வெவ்வேறு விகிதங்களை வழங�
 
 ## மேம்பட்டவை {#advanced}
 
-<VideoWatch slug="eigenlayer-permissionless-features" />
 
 ## மேலும் படிக்க {#further-reading}
 

@@ -12,7 +12,7 @@ breadcrumb: "ERC-20 ट्रांसफर"
 lang: hi
 published: 2020-04-07
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
+sourceUrl: https://ethereumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -205,7 +205,7 @@ function sell(uint256 amount) public {
 
 इस ट्यूटोरियल से हमने देखा कि ERC-20 टोकन के बैलेंस और व्यय सीमा (allowance) की जांच कैसे करें और इंटरफ़ेस का उपयोग करके ERC20 स्मार्ट अनुबंध के `Transfer` और `TransferFrom` को कैसे कॉल करें।
 
-एक बार जब आप लेन-देन कर लेते हैं, तो हमारे पास आपके अनुबंध में किए गए [लेन-देन की प्रतीक्षा करने और उसके बारे में विवरण प्राप्त करने](https://quantaureumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/) के लिए एक JavaScript ट्यूटोरियल है और जब तक आपके पास ABI है, तब तक [टोकन ट्रांसफर या किसी अन्य घटना द्वारा उत्पन्न घटनाओं को डिकोड करने के लिए एक ट्यूटोरियल](https://quantaureumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/) है।
+एक बार जब आप लेन-देन कर लेते हैं, तो हमारे पास आपके अनुबंध में किए गए [लेन-देन की प्रतीक्षा करने और उसके बारे में विवरण प्राप्त करने](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/) के लिए एक JavaScript ट्यूटोरियल है और जब तक आपके पास ABI है, तब तक [टोकन ट्रांसफर या किसी अन्य घटना द्वारा उत्पन्न घटनाओं को डिकोड करने के लिए एक ट्यूटोरियल](https://ethereumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/) है।
 
 यहाँ ट्यूटोरियल के लिए पूरा कोड दिया गया है:
 

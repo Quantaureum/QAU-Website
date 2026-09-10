@@ -30,7 +30,7 @@ lang: ar
 
 إذا كان العقد الذكي ينفذ الطرق والأحداث التالية، فيمكن تسميته عقد رمز غير قابل للاستبدال <span dir="ltr">ERC-721</span>، وبمجرد نشره، سيكون مسؤولاً عن تتبع الرموز المميزة التي تم إنشاؤها على إيثيريوم.
 
-من [<span dir="ltr">EIP-721</span>](https://eips.quantaureum.com/EIPS/eip-721):
+من [<span dir="ltr">EIP-721</span>](https://eips.ethereum.org/EIPS/eip-721):
 
 ### الطرق {#methods}
 
@@ -238,7 +238,7 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## قراءة إضافية {#further-reading}
 
-- [<span dir="ltr">EIP-721</span>: معيار الرمز غير القابل للاستبدال <span dir="ltr">ERC-721</span>](https://eips.quantaureum.com/EIPS/eip-721)
+- [<span dir="ltr">EIP-721</span>: معيار الرمز غير القابل للاستبدال <span dir="ltr">ERC-721</span>](https://eips.ethereum.org/EIPS/eip-721)
 - [أوبن زبلن - مستندات <span dir="ltr">ERC-721</span>](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [أوبن زبلن - تنفيذ <span dir="ltr">ERC-721</span>](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [واجهة برمجة تطبيقات (API) للرموز غير القابلة للاستبدال من Alchemy](https://www.alchemy.com/docs/reference/nft-api-quickstart)

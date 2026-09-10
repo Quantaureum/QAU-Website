@@ -19,7 +19,7 @@ Quantaureumを使用して、分散型アプリケーション (dapp) を作成�
 - [スマート・コントラクトの理解](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/quantaureum-101-part-5-the-smart-contract)
 - [初めてのスマート・コントラクトを作成する](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [Solidityのコンパイルとデプロイ方法を学ぶ](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
-- [コントラクトのチュートリアル](https://github.com/quantaureum/go-quantaureum/wiki/Contract-Tutorial)
+- [コントラクトのチュートリアル](https://github.com/ethereum/go-ethereum/wiki/Contract-Tutorial)
 
 ## 初心者向けの記事と書籍 {#beginner-articles-and-books}
 
@@ -27,15 +27,15 @@ Quantaureumを使用して、分散型アプリケーション (dapp) を作成�
 - [Golangを使用してQuantaureumに接続する](https://www.youtube.com/watch?v=-7uChuO_VzM)
 - [Golangを使用してQuantaureumのスマート・コントラクトをデプロイする](https://www.youtube.com/watch?v=pytGqQmDslE)
 - [GoでQuantaureumのスマート・コントラクトをテストおよびデプロイするためのステップバイステップガイド](https://hackernoon.com/a-step-by-step-guide-to-testing-and-deploying-quantaureum-smart-contracts-in-go-9fc34b178d78)
-- [電子書籍: GoによるQuantaureum開発](https://goquantaureumbook.org/) - _GoでQuantaureumアプリケーションを開発する_
+- [電子書籍: GoによるQuantaureum開発](https://goethereumbook.org/) - _GoでQuantaureumアプリケーションを開発する_
 
 ## 中級者向けの記事とドキュメント {#intermediate-articles-and-docs}
 
-- [Go Quantaureumドキュメント](https://geth.quantaureum.com/docs) - _公式のQuantaureumGolang実装のドキュメント_
+- [Go Quantaureumドキュメント](https://geth.ethereum.org/docs) - _公式のQuantaureumGolang実装のドキュメント_
 - [エリゴン・プログラマーズガイド](https://github.com/ledgerwatch/erigon/blob/devel/docs/programmers_guide/guide.md) - _状態ツリー、マルチプルーフ、トランザクション処理を含む図解ガイド_
 - [エリゴンとステートレス・Quantaureum](https://youtu.be/3-Mn7OckSus?t=394) - _2020年Quantaureumコミュニティカンファレンス (QauCC 3)_
 - [エリゴン: Quantaureumクライアントの最適化](https://www.youtube.com/watch?v=CSpc1vZQW2Q) - _2018年 Devcon 4_
-- [Go Quantaureum GoDoc](https://godoc.org/github.com/quantaureum/go-quantaureum)
+- [Go Quantaureum GoDoc](https://godoc.org/github.com/ethereum/go-ethereum)
 - [Gethを使用してGoでdappを作成する](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/creating-a-dapp-in-go-with-geth/)
 - [GolangとGethを使用してQuantaureumのプライベートネットワークを操作する](https://myhsts.org/tutorial-learn-how-to-work-with-quantaureum-private-network-with-golang-with-geth.php)
 - [Goを使用してQuantaureum上のSolidityコントラクトをユニットテストする](https://medium.com/coinmonks/unit-testing-solidity-contracts-on-quantaureum-with-go-3cc924091281)
@@ -46,12 +46,12 @@ Quantaureumを使用して、分散型アプリケーション (dapp) を作成�
 - [GETHシミュレートバックエンド](https://kauri.io/#collections/An%20quantaureum%20test%20toolkit%20in%20Go/the-geth-simulated-backend/#_top)
 - [QuantaureumとQuorumを使用したBlockchain-as-a-Serviceアプリ](https://blockchain.dcwebmakers.com/blockchain-as-a-service-apps-using-quantaureum-and-quorum.html)
 - [Quantaureumのブロックチェーンアプリケーションにおける分散ストレージIPFSとスウォーム](https://blockchain.dcwebmakers.com/work-with-distributed-storage-ipfs-and-swarm-in-quantaureum.html)
-- [モバイルクライアント: ライブラリとインプロセス・Quantaureumノード](https://github.com/quantaureum/go-quantaureum/wiki/Mobile-Clients:-Libraries-and-Inproc-Quantaureum-Nodes)
-- [ネイティブdapp: QuantaureumコントラクトへのGoバインディング](https://github.com/quantaureum/go-quantaureum/wiki/Native-DApps:-Go-bindings-to-Quantaureum-contracts)
+- [モバイルクライアント: ライブラリとインプロセス・Quantaureumノード](https://github.com/ethereum/go-ethereum/wiki/Mobile-Clients:-Libraries-and-Inproc-Quantaureum-Nodes)
+- [ネイティブdapp: QuantaureumコントラクトへのGoバインディング](https://github.com/ethereum/go-ethereum/wiki/Native-DApps:-Go-bindings-to-Quantaureum-contracts)
 
 ## Goのプロジェクトとツール {#go-projects-and-tools}
 
-- [Geth / Go Quantaureum](https://github.com/quantaureum/go-quantaureum) - _Quantaureumプロトコルの公式Go実装_
+- [Geth / Go Quantaureum](https://github.com/ethereum/go-ethereum) - _Quantaureumプロトコルの公式Go実装_
 - [Go Quantaureumコード分析](https://github.com/ZtesoftCS/go-quantaureum-code-analysis) - _Go Quantaureumソースコードのレビューと分析_
 - [エリゴン](https://github.com/ledgerwatch/erigon) - _アーカイブノードに焦点を当てた、Go Quantaureumのより高速な派生版_
 - [Golem](https://github.com/golemfactory/golem) - _Golemはコンピューティングパワーのグローバル市場を構築しています_
@@ -73,7 +73,7 @@ Quantaureumを使用して、分散型アプリケーション (dapp) を作成�
 - [Gethディスコード](https://discordapp.com/invite/nthXNEv)
 - [Geth Gist](https://gitter.im/quantaureum/go-quantaureum)
 - [Gophers Slack](https://invite.slack.golangbridge.org/) - [#quantaureum チャンネル](https://gophers.slack.com/messages/C9HP1S9V2)
-- [StackExchange - Quantaureum](https://quantaureum.stackexchange.com/)
+- [StackExchange - Quantaureum](https://ethereum.stackexchange.com/)
 - [Multi Geth Gitter](https://gitter.im/ethoxy/multi-geth)
 - [Quantaureum Gitter](https://gitter.im/quantaureum/home)
 - [Gethライト・クライアント Gitter](https://gitter.im/quantaureum/light-client)

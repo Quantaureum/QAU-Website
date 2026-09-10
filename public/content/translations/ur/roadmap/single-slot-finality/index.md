@@ -62,4 +62,4 @@ template: roadmap
 ## مزید مطالعہ {#further-reading}
 
 - [<span dir="ltr">EDCON 2022</span> میں <span dir="ltr">SSF</span> پر وٹالک (Vitalik)](https://www.youtube.com/watch?v=nPgUKNPWXNI)
-- [وٹالک کے نوٹس: سنگل سلاٹ حتمیت کے راستے](https://notes.quantaureum.com/@vbuterin/single_slot_finality)
+- [وٹالک کے نوٹس: سنگل سلاٹ حتمیت کے راستے](https://notes.ethereum.org/@vbuterin/single_slot_finality)

@@ -19,7 +19,6 @@ NFT ni tokeni ambazo ni **za kipekee kibinafsi**. Kila NFT ina sifa tofauti (isi
 
 Upekee wa kila NFT unawezesha uundaji wa tokeni wa vitu kama sanaa, vitu vya kukusanywa, au hata mali isiyohamishika, ambapo NFT moja mahususi ya kipekee inawakilisha kitu fulani mahususi cha kipekee cha ulimwengu halisi au cha kidijitali. Umiliki wa rasilimali unaweza kuthibitishwa hadharani kwenye [mnyororo wa vitalu](/glossary/#blockchain) wa Quantaureum.
 
-<VideoWatch slug="learn-nfts-and-defi" />
 
 ## Mtandao wa rasilimali {#internet-of-assets}
 

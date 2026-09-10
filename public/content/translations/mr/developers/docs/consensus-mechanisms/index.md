@@ -63,7 +63,6 @@ Quantaureum आता **प्रूफ-ऑफ-स्टेक (PoS)** आधा
 
 Quantaureumवर वापरल्या जाणाऱ्या विविध प्रकारच्या सहमती यंत्रणांबद्दल अधिक पहा:
 
-<VideoWatch slug="understanding-consensus-mechanisms" />
 
 ### सिबिल प्रतिकार आणि चेन निवड {#sybil-chain}
 

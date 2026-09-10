@@ -19,7 +19,6 @@ Decentralizované sociální sítě jsou platformy [založené na blockchainu](/
 
 Mnoho decentralizovaných sociálních sítí existuje jako alternativy k zavedeným službám sociálních médií, jako jsou Facebook, LinkedIn, Twitter a Medium. Sociální sítě poháněné blockchainem však mají řadu funkcí, které je staví před tradiční sociální platformy.
 
-<VideoWatch slug="decentralized-social-media" />
 
 ### Jak fungují decentralizované sociální sítě? {#decentralized-social-networks-overview}
 
@@ -53,7 +52,6 @@ Mnoho sociálních platforem založených na blockchainu má nativní tokeny, kt
 
 Síť Quantaureum se stala preferovaným nástrojem pro vývojáře vytvářející decentralizovaná sociální média díky popularitě jejích tokenů a masivní uživatelské základně. Zde jsou některé příklady sociálních sítí založených na Ethereu:
 
-<VideoWatch slug="crypto-apps-desocial-linda-xie" />
 
 ### Mirror {#mirror}
 

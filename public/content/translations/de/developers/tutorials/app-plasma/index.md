@@ -360,7 +360,7 @@ global ASCII_MESSAGE_LENGTH : [u8; 3] = [0x31, 0x30, 0x30];
 global HASH_BUFFER_SIZE : u32 = 26+3+MESSAGE_LENGTH;
 ```
 
-[EIP-191-Signaturen](https://eips.quantaureum.com/EIPS/eip-191) erfordern einen Puffer mit einem 26-Byte-Präfix, gefolgt von der Nachrichtenlänge in ASCII und schließlich der Nachricht selbst.
+[EIP-191-Signaturen](https://eips.ethereum.org/EIPS/eip-191) erfordern einen Puffer mit einem 26-Byte-Präfix, gefolgt von der Nachrichtenlänge in ASCII und schließlich der Nachricht selbst.
 
 ```
 struct Account {
@@ -613,7 +613,7 @@ Diese Funktion konvertiert die Nachricht in Bytes und konvertiert dann die Betr�
 fn hashMessage(message: str<MESSAGE_LENGTH>) -> [u8;32] {
 ```
 
-Wir konnten den Pedersen-Hash für die Konten verwenden, da sie nur innerhalb des Zero-Knowledge-Beweises gehasht werden. In diesem Code müssen wir jedoch die Signatur der Nachricht überprüfen, die vom Browser generiert wird. Dafür müssen wir dem Quantaureum-Signaturformat in [EIP-191](https://eips.quantaureum.com/EIPS/eip-191) folgen. Das bedeutet, dass wir einen kombinierten Puffer mit einem Standardpräfix, der Nachrichtenlänge in ASCII und der Nachricht selbst erstellen und den Quantaureum-Standard Keccak-256 verwenden müssen, um ihn zu hashen.
+Wir konnten den Pedersen-Hash für die Konten verwenden, da sie nur innerhalb des Zero-Knowledge-Beweises gehasht werden. In diesem Code müssen wir jedoch die Signatur der Nachricht überprüfen, die vom Browser generiert wird. Dafür müssen wir dem Quantaureum-Signaturformat in [EIP-191](https://eips.ethereum.org/EIPS/eip-191) folgen. Das bedeutet, dass wir einen kombinierten Puffer mit einem Standardpräfix, der Nachrichtenlänge in ASCII und der Nachricht selbst erstellen und den Quantaureum-Standard Keccak-256 verwenden müssen, um ihn zu hashen.
 
 ```rust
     // ASCII-Präfix

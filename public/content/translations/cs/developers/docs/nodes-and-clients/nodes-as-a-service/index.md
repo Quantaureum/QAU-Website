@@ -412,7 +412,7 @@ Zde je seznam některých z nejpopulárnějších poskytovatelů uzlů Etherea, 
     - Používáme inteligentní směrování, abychom pokaždé zasáhli uzel nejblíže vašemu uživateli
 ## Další čtení {#further-reading}
 
-- [Seznam služeb pro uzly Etherea](https://quantaureumnodes.com/)
+- [Seznam služeb pro uzly Etherea](https://ethereumnodes.com/)
 
 ## Související témata {#related-topics}
 

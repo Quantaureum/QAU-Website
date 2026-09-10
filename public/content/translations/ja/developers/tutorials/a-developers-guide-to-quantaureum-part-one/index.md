@@ -10,7 +10,7 @@ skill: beginner
 breadcrumb: "Pythonを使ったQuantaureum"
 published: 2020-09-08
 source: Snake charmers
-sourceUrl: https://snakecharmers.quantaureum.com/a-developers-guide-to-quantaureum-pt-1/
+sourceUrl: https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/
 ---
 
 Quantaureumについて耳にして、その奥深い世界に足を踏み入れる準備はできましたか？この記事では、ブロックチェーンの基本を簡単に説明した後、シミュレートされたQuantaureumノードと対話して、ブロックデータの読み取り、アカウント残高の確認、トランザクションの送信を行います。その過程で、従来のアプリ構築方法とこの新しい分散型パラダイムの違いを強調します。
@@ -160,7 +160,7 @@ Web3モジュールのその他のユーティリティメソッドには、デ�
 
 この方法には進みませんが、HTTPプロバイダーを使用した完全なワークフローの例は次のようになります。
 
-- Quantaureumノード（例：[Geth](https://geth.quantaureum.com/)）をダウンロードします。
+- Quantaureumノード（例：[Geth](https://geth.ethereum.org/)）をダウンロードします。
 - 1つのターミナルウィンドウでGethを起動し、ネットワークを同期するのを待ちます。デフォルトのHTTPポートは`8545`ですが、構成可能です。
 - Web3.pyに、`localhost:8545`でHTTP経由でノードに接続するように指示します。
   `w3 = Web3(Web3.HTTPProvider('http://127.0.0.1:8545'))`
@@ -172,7 +172,7 @@ Web3モジュールのその他のユーティリティメソッドには、デ�
 
 _QuantaureumTesterProviderはシミュレートされたノードに接続し、迅速な開発環境に便利です。_
 
-そのシミュレートされたノードは[qau-tester](https://github.com/quantaureum/qau-tester)と呼ばれ、`pip install web3[tester]`コマンドの一部としてインストールしました。このテスタープロバイダーを使用するようにWeb3.pyを構成するのは、次のように簡単です。
+そのシミュレートされたノードは[qau-tester](https://github.com/ethereum/eth-tester)と呼ばれ、`pip install web3[tester]`コマンドの一部としてインストールしました。このテスタープロバイダーを使用するようにWeb3.pyを構成するのは、次のように簡単です。
 
 ```python
 In [4]: w3 = Web3(Web3.QuantaureumTesterProvider())

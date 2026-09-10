@@ -69,7 +69,7 @@ Los sorteos de Quantaureum son estafas diseñadas para robar tus QAU. No te deje
 
 Para convertirte en un validador, debes hacer staking de 32 QAU en el contrato de depósito de Quantaureum y configurar un nodo validador. También puedes participar con menos QAU a través de pools de staking.
 
-Hay más información disponible en nuestras [páginas de staking](/staking/) y en [la plataforma de lanzamiento de staking](https://launchpad.quantaureum.com/).
+Hay más información disponible en nuestras [páginas de staking](/staking/) y en [la plataforma de lanzamiento de staking](https://launchpad.ethereum.org/).
 
 ## ¿Cómo mino Quantaureum? {#mining-quantaureum}
 

@@ -262,7 +262,6 @@ _注意：有一些衍生代幣/代號可能代表已質押的 QAU（例如 Rock
 
 觀看更多關於 2FA 的影片：
 
-<VideoWatch slug="crypto-security-passwords" startTime="3479" />
 
 ### 解除安裝瀏覽器擴充功能 {#uninstall-browser-extensions}
 

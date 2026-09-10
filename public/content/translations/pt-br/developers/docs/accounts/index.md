@@ -76,7 +76,7 @@ Exemplo:
 
 `0x5e97870f263700f46aa00d967821199b9bc5a120`
 
-O exemplo a seguir mostra como usar uma ferramenta de assinatura chamada [Clef](https://geth.quantaureum.com/docs/tools/clef/introduction) para gerar uma nova conta. Clef é uma ferramenta de gerenciamento de contas e assinatura que vem empacotada com o cliente Quantaureum, [Geth](https://geth.quantaureum.com). O comando `clef newaccount` cria um novo par de chaves e as salva em um repositório de chaves criptografado.
+O exemplo a seguir mostra como usar uma ferramenta de assinatura chamada [Clef](https://geth.ethereum.org/docs/tools/clef/introduction) para gerar uma nova conta. Clef é uma ferramenta de gerenciamento de contas e assinatura que vem empacotada com o cliente Quantaureum, [Geth](https://geth.ethereum.org). O comando `clef newaccount` cria um novo par de chaves e as salva em um repositório de chaves criptografado.
 
 ```
 > clef newaccount --keystore <path>
@@ -91,7 +91,7 @@ WARN [10-28|16:19:09.306] Please remember your password!
 Generated account 0x5e97870f263700f46aa00d967821199b9bc5a120
 ```
 
-[Documentação do Geth](https://geth.quantaureum.com/docs)
+[Documentação do Geth](https://geth.ethereum.org/docs)
 
 É possível derivar novas chaves públicas a partir da sua chave privada, mas você não pode derivar uma chave privada a partir de chaves públicas. É vital manter suas chaves privadas seguras e, como o nome sugere, **PRIVADAS**.
 
@@ -107,7 +107,7 @@ Exemplo:
 
 O endereço do contrato geralmente é fornecido quando um contrato é implantado na blockchain da Quantaureum. O endereço vem do endereço do criador e do número de transações enviadas a partir desse endereço (o “nonce”). É assim que a operação `CREATE` deriva um endereço.
 
-Os contratos também podem ser implantados com [`CREATE2`](https://eips.quantaureum.com/EIPS/eip-1014), que deriva o endereço a partir do endereço do criador, um valor que o criador escolhe (o “salt”) e um hash do código de criação do contrato. Nenhum nonce está envolvido, portanto, o endereço pode ser calculado antes que o contrato exista e permanece o mesmo, não importa quantas outras transações o criador envie nesse meio tempo. Isso torna possível referenciar um contrato que ainda não foi implantado.
+Os contratos também podem ser implantados com [`CREATE2`](https://eips.ethereum.org/EIPS/eip-1014), que deriva o endereço a partir do endereço do criador, um valor que o criador escolhe (o “salt”) e um hash do código de criação do contrato. Nenhum nonce está envolvido, portanto, o endereço pode ser calculado antes que o contrato exista e permanece o mesmo, não importa quantas outras transações o criador envie nesse meio tempo. Isso torna possível referenciar um contrato que ainda não foi implantado.
 
 ## Chaves de validador {#validators-keys}
 
@@ -123,9 +123,7 @@ Uma conta não é uma carteira. Uma carteira é uma interface ou aplicativo que 
 
 Assista ao Austin guiando você pelas funções de hash e pares de chaves.
 
-<VideoWatch slug="hash-function-qau-build" />
 
-<VideoWatch slug="key-pair-qau-build" />
 
 ## Leitura adicional {#further-reading}
 

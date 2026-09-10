@@ -8,11 +8,11 @@ breadcrumb: "合约交互"
 lang: zh
 published: 2020-04-05
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/interact-with-other-contracts-from-solidity/
+sourceUrl: https://ethereumdev.io/interact-with-other-contracts-from-solidity/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-在之前的教程中，我们学习了很多关于[如何部署你的第一个智能合约](/developers/tutorials/deploying-your-first-smart-contract/)的知识，并为其添加了一些功能，例如[使用修饰符控制访问](https://quantaureumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/)或[Solidity 中的错误处理](https://quantaureumdev.io/handle-errors-in-solidity-with-require-and-revert/)。在本教程中，我们将学习如何从现有合约部署智能合约并与之交互。
+在之前的教程中，我们学习了很多关于[如何部署你的第一个智能合约](/developers/tutorials/deploying-your-first-smart-contract/)的知识，并为其添加了一些功能，例如[使用修饰符控制访问](https://ethereumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/)或[Solidity 中的错误处理](https://ethereumdev.io/handle-errors-in-solidity-with-require-and-revert/)。在本教程中，我们将学习如何从现有合约部署智能合约并与之交互。
 
 我们将编写一个合约，通过为其创建一个工厂，使任何人都能拥有自己的 `Counter` 智能合约，其名称将是 `CounterFactory`。首先，这是我们最初的 `Counter` 智能合约的代码：
 
@@ -99,7 +99,7 @@ function increment() public {
   }
 ```
 
-请注意，如果调用次数过多，我们的 counter 可能会成为溢出的受害者。你应该尽可能多地使用 [SafeMath 库](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/) 来防止这种可能的情况。
+请注意，如果调用次数过多，我们的 counter 可能会成为溢出的受害者。你应该尽可能多地使用 [SafeMath 库](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/) 来防止这种可能的情况。
 
 要部署我们的合约，你需要同时提供 `CounterFactory` 和 `Counter` 的代码。例如，在 Remix 中部署时，你需要选择 CounterFactory。
 

@@ -13,7 +13,6 @@ Uthibitisho wa maarifa-sifuri ulionekana kwa mara ya kwanza katika chapisho la m
 
 Uthibitisho wa maarifa-sifuri umeboreshwa kwa miaka mingi na sasa unatumika katika matumizi kadhaa ya ulimwengu halisi.
 
-<VideoWatch slug="zero-knowledge-proofs-5-levels" />
 
 ## Kwa nini tunahitaji uthibitisho wa maarifa-sifuri? {#why-zero-knowledge-proofs-are-important}
 
@@ -35,7 +34,7 @@ Sarafu-fiche zilikusudiwa kutoa njia kwa watumiaji kufanya miamala ya faragha, y
 
 Kuna "sarafu za faragha" maalum zilizoundwa kwa ajili ya miamala isiyotambulika kabisa. Minyororo ya vitalu inayolenga faragha, kama vile Zcash na Monero, huficha maelezo ya muamala, ikiwa ni pamoja na anwani za mtumaji/mpokeaji, aina ya rasilimali, kiasi, na ratiba ya muamala.
 
-Kwa kuingiza teknolojia ya sifuri-maarifa kwenye itifaki, mitandao ya [mnyororo wa vitalu](/glossary/#blockchain) inayolenga faragha inaruhusu [nodi](/glossary/#node) kuhalalisha miamala bila kuhitaji kufikia data ya muamala. [EIP-7503](https://eips.quantaureum.com/EIPS/eip-7503) ni mfano wa muundo uliopendekezwa ambao utawezesha uhamishaji wa thamani wa faragha wa asili kwenye mnyororo wa vitalu wa [Quantaureum](/). Mapendekezo kama haya, hata hivyo, ni magumu kutekeleza kutokana na mchanganyiko wa masuala ya usalama, udhibiti, na uzoefu wa mtumiaji (UX).  
+Kwa kuingiza teknolojia ya sifuri-maarifa kwenye itifaki, mitandao ya [mnyororo wa vitalu](/glossary/#blockchain) inayolenga faragha inaruhusu [nodi](/glossary/#node) kuhalalisha miamala bila kuhitaji kufikia data ya muamala. [EIP-7503](https://eips.ethereum.org/EIPS/eip-7503) ni mfano wa muundo uliopendekezwa ambao utawezesha uhamishaji wa thamani wa faragha wa asili kwenye mnyororo wa vitalu wa [Quantaureum](/). Mapendekezo kama haya, hata hivyo, ni magumu kutekeleza kutokana na mchanganyiko wa masuala ya usalama, udhibiti, na uzoefu wa mtumiaji (UX).  
 
 **Uthibitisho wa maarifa-sifuri pia unatumika kufanya miamala isitambulike kwenye minyororo ya vitalu ya umma**. Mfano ni Tornado Cash, huduma iliyogatuliwa, isiyo ya udhamini ambayo inaruhusu watumiaji kufanya miamala ya faragha kwenye Quantaureum. Tornado Cash hutumia uthibitisho wa maarifa-sifuri kuficha maelezo ya muamala na kuhakikisha faragha ya kifedha. Kwa bahati mbaya, kwa sababu hizi ni zana za faragha za "kujitolea" zinahusishwa na shughuli haramu. Ili kuondokana na hili, faragha inapaswa hatimaye kuwa chaguo-msingi kwenye minyororo ya vitalu ya umma. Jifunze zaidi kuhusu [faragha kwenye Quantaureum](/privacy/).
 

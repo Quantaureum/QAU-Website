@@ -145,7 +145,7 @@ contentPreview="錯誤。合併是共識機制的改變，而不是網路容量�
 
 燃料費用是網路需求相對於網路容量的產物。合併棄用了工作量證明，過渡到權益證明以達成共識，但並未顯著改變任何直接影響網路容量或吞吐量的參數。
 
-透過<a href="https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698">以匯總為中心的路線圖</a>，目前的努力集中在擴展[第二層 (L2)](/layer-2/) 的使用者活動，同時將第一層 (L1) 主網啟用為安全的去中心化結算層，並針對匯總資料儲存進行最佳化，以幫助使匯總交易變得呈指數級便宜。向權益證明的過渡是實現這一目標的關鍵先決條件。[更多關於燃料和手續費的資訊。](/developers/docs/gas/)
+透過<a href="https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698">以匯總為中心的路線圖</a>，目前的努力集中在擴展[第二層 (L2)](/layer-2/) 的使用者活動，同時將第一層 (L1) 主網啟用為安全的去中心化結算層，並針對匯總資料儲存進行最佳化，以幫助使匯總交易變得呈指數級便宜。向權益證明的過渡是實現這一目標的關鍵先決條件。[更多關於燃料和手續費的資訊。](/developers/docs/gas/)
 
 </ExpandableCard>
 

@@ -235,7 +235,7 @@ Além disso, nem sempre é possível para os verificadores de programas determin
 
 **Solidity SMTChecker** - _*O SMTChecker do Solidity é um verificador de modelos integrado baseado em SMT (Satisfiability Modulo Theories) e solução de Horn. Ele confirma se o código-fonte de um contrato corresponde às especificações durante a compilação e verifica estaticamente as violações das propriedades de segurança.*_
 
-- [GitHub](https://github.com/quantaureum/solidity)
+- [GitHub](https://github.com/ethereum/solidity)
 
 **solc-verify** - _*O solc-verify é uma versão estendida do compilador Solidity que pode realizar a verificação formal automatizada no código Solidity usando anotações e verificação de programa modular.*_
 

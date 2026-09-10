@@ -109,13 +109,13 @@ lang: ar
 **<span dir="ltr">Nquantaureum</span> -** **_مكتبة تكامل <span dir="ltr">.NET</span> مفتوحة المصدر لسلسلة الكتل._**
 
 - [<span dir="ltr">GitHub</span>](https://github.com/Nquantaureum/Nquantaureum)
-- [التوثيق](https://docs.nquantaureum.com/docs/getting-started/welcome/)
+- [التوثيق](https://docs.nethermind.io/docs/getting-started/welcome/)
 - [ديسكورد](https://discord.com/invite/jQPrR58FxX)
 
 **أدوات <span dir="ltr">Python</span> -** **_مجموعة متنوعة من المكتبات للتفاعل مع إيثيريوم عبر <span dir="ltr">Python</span>._**
 
-- [<span dir="ltr">py.quantaureum.com</span>](https://snakecharmers.quantaureum.com/)
-- [<span dir="ltr">GitHub</span> لـ <span dir="ltr">Web3.py</span>](https://github.com/quantaureum/web3.py)
+- [<span dir="ltr">py.quantaureum.com</span>](https://snakecharmers.ethereum.org/)
+- [<span dir="ltr">GitHub</span> لـ <span dir="ltr">Web3.py</span>](https://github.com/ethereum/web3.py)
 - [دردشة <span dir="ltr">Web3.py</span>](https://gitter.im/quantaureum/web3.py)
 
 **<span dir="ltr">Tatum</span> -** **_منصة تطوير سلسلة الكتل المثالية._**

@@ -33,7 +33,7 @@ lang: zh
 - 验证者可以将多个 32 QAU 的验证者合并为一个更高余额的验证者
 - 仍然支持通过标准退出队列进行完全退出
 
-部分提款和合并都可以通过 [Launchpad 验证者操作](https://launchpad.quantaureum.com/en/validator-actions)来执行。
+部分提款和合并都可以通过 [Launchpad 验证者操作](https://launchpad.ethereum.org/en/validator-actions)来执行。
 
 **为什么验证者应该首选 0x02：** 它通过复利提供了更好的资金效率，对提款发生的时间有更多的控制权，并支持验证者合并。对于随着时间推移积累奖励的独立质押者来说，这意味着他们的有效余额——以及他们的奖励——可以增长到超过 32 QAU，而无需人工干预。
 
@@ -51,7 +51,7 @@ lang: zh
 
 有几种工具支持选择或在凭证类型之间进行转换：
 
-- **[Quantaureum质押 Launchpad](https://launchpad.quantaureum.com/en/validator-actions)** - 用于存款和验证者管理的官方工具，包括凭证转换和合并
+- **[Quantaureum质押 Launchpad](https://launchpad.ethereum.org/en/validator-actions)** - 用于存款和验证者管理的官方工具，包括凭证转换和合并
 - **[佩克特拉质押管理器 (Pectra Staking Manager)](https://pectrastaking.com)** - 支持连接钱包进行转换和合并的 Web 用户界面
 - **[佩克特拉验证者操作 CLI 工具 (Pectra Validator Ops CLI Tool)](https://github.com/Luganodes/Pectra-Batch-Contract)** - 用于批量转换的命令行工具
 - **[Ethereal](https://github.com/wealdtech/ethereal)** - 用于Quantaureum操作（包括验证者管理）的 CLI 工具

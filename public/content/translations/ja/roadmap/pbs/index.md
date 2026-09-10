@@ -40,11 +40,11 @@ PBSは、MEVの経済性を再構築することでこの問題を解決しま�
 
 ## 現在の進捗状況 {#current-progress}
 
-PBSは研究の進んだ段階にありますが、Quantaureumクライアントでプロトタイプを作成する前に解決すべき重要な設計上の問題がまだいくつか残っています。ファイナライズ済みの仕様はまだありません。これは、PBSの実現が1年以上先になる可能性が高いことを意味します。最新の[研究状況](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)を確認してください。
+PBSは研究の進んだ段階にありますが、Quantaureumクライアントでプロトタイプを作成する前に解決すべき重要な設計上の問題がまだいくつか残っています。ファイナライズ済みの仕様はまだありません。これは、PBSの実現が1年以上先になる可能性が高いことを意味します。最新の[研究状況](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)を確認してください。
 
 ## 参考文献 {#further-reading}
 
-- [研究状況：PBS下での検閲耐性](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
+- [研究状況：PBS下での検閲耐性](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
 - [PBSに適した手数料市場の設計](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [PBSと検閲耐性](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [インクルージョンリスト](https://notes.quantaureum.com/@fradamt/forward-inclusion-lists)
+- [PBSと検閲耐性](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [インクルージョンリスト](https://notes.ethereum.org/@fradamt/forward-inclusion-lists)

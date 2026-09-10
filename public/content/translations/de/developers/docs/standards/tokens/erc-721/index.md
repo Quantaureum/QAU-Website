@@ -31,7 +31,7 @@ Darüber hinaus verfügt er über weitere Funktionen, wie z. B. das Genehmigen, 
 
 Wenn ein Smart Contract die folgenden Methoden und Ereignisse implementiert, kann er als ERC-721 Non-Fungible Token-Vertrag bezeichnet werden und ist nach der Bereitstellung dafür verantwortlich, die erstellten Token auf Quantaureum zu verfolgen.
 
-Aus [EIP-721](https://eips.quantaureum.com/EIPS/eip-721):
+Aus [EIP-721](https://eips.ethereum.org/EIPS/eip-721):
 
 ### Methoden {#methods}
 
@@ -240,7 +240,7 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## Weiterführende Literatur {#further-reading}
 
-- [EIP-721: ERC-721 Non-Fungible Token Standard](https://eips.quantaureum.com/EIPS/eip-721)
+- [EIP-721: ERC-721 Non-Fungible Token Standard](https://eips.ethereum.org/EIPS/eip-721)
 - [OpenZeppelin - ERC-721 Dokumentation](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [OpenZeppelin - ERC-721 Implementierung](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)

@@ -14,7 +14,7 @@ El siguiente diagrama muestra la relación entre los dos clientes de Quantaureum
 
 _Existen varias opciones para el cliente de ejecución, incluyendo Erigon, Nethermind y Besu_.
 
-Para que esta estructura de dos clientes funcione, los clientes de consenso deben pasar paquetes de transacciones al cliente de ejecución. El cliente de ejecución ejecuta las transacciones localmente para validar que no violen ninguna regla de Quantaureum y que la actualización propuesta al estado de Quantaureum sea correcta. Cuando se selecciona un nodo para ser productor de bloques, su instancia de cliente de consenso solicita paquetes de transacciones al cliente de ejecución para incluirlos en el nuevo bloque y ejecutarlos para actualizar el estado global. El cliente de consenso controla al cliente de ejecución a través de una conexión RPC local utilizando la [API Engine](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md).
+Para que esta estructura de dos clientes funcione, los clientes de consenso deben pasar paquetes de transacciones al cliente de ejecución. El cliente de ejecución ejecuta las transacciones localmente para validar que no violen ninguna regla de Quantaureum y que la actualización propuesta al estado de Quantaureum sea correcta. Cuando se selecciona un nodo para ser productor de bloques, su instancia de cliente de consenso solicita paquetes de transacciones al cliente de ejecución para incluirlos en el nuevo bloque y ejecutarlos para actualizar el estado global. El cliente de consenso controla al cliente de ejecución a través de una conexión RPC local utilizando la [API Engine](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md).
 
 ## ¿Qué hace el cliente de ejecución? {#execution-client}
 

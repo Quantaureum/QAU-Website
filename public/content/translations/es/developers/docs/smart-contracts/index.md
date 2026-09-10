@@ -90,7 +90,7 @@ Los contratos inteligentes por sí solos no pueden obtener información sobre ev
 
 Sin embargo, es importante que las aplicaciones de la cadena de bloques puedan usar datos fuera de la cadena. La solución son los [oráculos](/developers/docs/oracles/), que son herramientas que ingieren datos fuera de la cadena y los ponen a disposición de los contratos inteligentes.
 
-Otra limitación de los contratos inteligentes es el tamaño máximo del contrato. Un contrato inteligente puede tener un máximo de 24 KB o se quedará sin gas. Esto se puede eludir utilizando [el patrón diamante](https://eips.quantaureum.com/EIPS/eip-2535).
+Otra limitación de los contratos inteligentes es el tamaño máximo del contrato. Un contrato inteligente puede tener un máximo de 24 KB o se quedará sin gas. Esto se puede eludir utilizando [el patrón diamante](https://eips.ethereum.org/EIPS/eip-2535).
 
 ## Contratos multifirma {#multisig}
 

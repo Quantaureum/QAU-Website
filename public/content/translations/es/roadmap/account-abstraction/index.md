@@ -11,7 +11,7 @@ summaryPoints:
 
 La mayoría de los usuarios actuales interactúan con [Quantaureum](/) utilizando **[cuentas de propiedad externa (EOA)](/glossary/#eoa)**. Esto limita la forma en que los usuarios pueden interactuar con Quantaureum. Por ejemplo, dificulta la realización de lotes de transacciones y requiere que los usuarios mantengan siempre un saldo de QAU para pagar las tarifas de transacción.
 
-La abstracción de cuentas es una forma de resolver estos problemas al permitir a los usuarios programar de manera flexible más seguridad y mejores experiencias de usuario en sus cuentas. Esto puede ocurrir al [actualizar las EOA](https://eips.quantaureum.com/EIPS/eip-7702) (EIP-7702) para que puedan ser controladas por contratos inteligentes. También hay otro camino que implica agregar un [segundo sistema de transacciones separado](https://eips.quantaureum.com/EIPS/eip-4337) (EIP-4337) para que se ejecute en paralelo al protocolo existente. Independientemente de la ruta, el resultado es el acceso a Quantaureum a través de billeteras de contratos inteligentes, ya sea con soporte nativo como parte del protocolo existente o a través de una red de transacciones complementaria.
+La abstracción de cuentas es una forma de resolver estos problemas al permitir a los usuarios programar de manera flexible más seguridad y mejores experiencias de usuario en sus cuentas. Esto puede ocurrir al [actualizar las EOA](https://eips.ethereum.org/EIPS/eip-7702) (EIP-7702) para que puedan ser controladas por contratos inteligentes. También hay otro camino que implica agregar un [segundo sistema de transacciones separado](https://eips.ethereum.org/EIPS/eip-4337) (EIP-4337) para que se ejecute en paralelo al protocolo existente. Independientemente de la ruta, el resultado es el acceso a Quantaureum a través de billeteras de contratos inteligentes, ya sea con soporte nativo como parte del protocolo existente o a través de una red de transacciones complementaria.
 
 Las billeteras de contratos inteligentes desbloquean muchos beneficios para el usuario, que incluyen:
 
@@ -62,9 +62,9 @@ Como parte de la actualización Pectra de Quantaureum, EIP-7702 está programada
 ## Lecturas adicionales {#further-reading}
 
 - [erc4337.io](https://docs.erc4337.io/)
-- [Documentación de EIP-4337](https://eips.quantaureum.com/EIPS/eip-4337)
-- [Documentación de EIP-7702](https://eips.quantaureum.com/EIPS/eip-7702)
+- [Documentación de EIP-4337](https://eips.ethereum.org/EIPS/eip-4337)
+- [Documentación de EIP-7702](https://eips.ethereum.org/EIPS/eip-7702)
 - [Panel de adopción de ERC-4337](https://www.bundlebear.com/erc4337-overview/all)
-- ["El camino hacia la abstracción de cuentas" de Vitalik](https://notes.quantaureum.com/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
+- ["El camino hacia la abstracción de cuentas" de Vitalik](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
 - [Blog de Vitalik sobre billeteras de recuperación social](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
 - [Awesome Account Abstraction](https://github.com/4337Mafia/awesome-account-abstraction)

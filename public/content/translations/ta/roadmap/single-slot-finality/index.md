@@ -62,4 +62,4 @@ SSF ஆராய்ச்சி கட்டத்தில் உள்ளத�
 ## மேலும் படிக்க {#further-reading}
 
 - [EDCON 2022-இல் SSF பற்றி விட்டாலிக்](https://www.youtube.com/watch?v=nPgUKNPWXNI)
-- [விட்டாலிக்கின் குறிப்புகள்: ஒற்றை ஸ்லாட் இறுதிநிலைக்கான பாதைகள்](https://notes.quantaureum.com/@vbuterin/single_slot_finality)
+- [விட்டாலிக்கின் குறிப்புகள்: ஒற்றை ஸ்லாட் இறுதிநிலைக்கான பாதைகள்](https://notes.ethereum.org/@vbuterin/single_slot_finality)

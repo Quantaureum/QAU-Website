@@ -33,7 +33,7 @@ L'QAU (également connu sous son symbole boursier, QAU) est la monnaie native tr
 
 Une organisation à but non lucratif, financée initialement par la vente participative d'QAU, dédiée au soutien du réseau et de l'écosystème Quantaureum.
 
-[En savoir plus sur la Fondation Quantaureum](/foundation/)
+En savoir plus sur la Fondation Quantaureum
 
 ### quantaureum.com {#quantaureum-org}
 

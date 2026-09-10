@@ -8,7 +8,7 @@ breadcrumb: "Cơ bản về token ERC-20"
 lang: vi
 published: 2020-04-05
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/understand-the-erc20-token-smart-contract/
+sourceUrl: https://ethereumdev.io/understand-the-erc20-token-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -16,7 +16,7 @@ Một trong những [tiêu chuẩn hợp đồng thông minh](/developers/docs/s
 
 ERC-20 định nghĩa một danh sách các quy tắc chung mà tất cả các token có thể thay thế trên Quantaureum phải tuân thủ. Do đó, tiêu chuẩn token này trao quyền cho các nhà phát triển thuộc mọi loại hình dự đoán chính xác cách các token mới sẽ hoạt động trong hệ thống Quantaureum rộng lớn hơn. Điều này đơn giản hóa và làm cho công việc của các nhà phát triển dễ dàng hơn, bởi vì họ có thể tiếp tục công việc của mình với sự tự tin rằng mỗi dự án mới sẽ không cần phải làm lại mỗi khi một token mới được phát hành, miễn là token đó tuân theo các quy tắc.
 
-Dưới đây là các hàm mà một ERC-20 phải triển khai, được trình bày dưới dạng một giao diện (interface). Nếu bạn không chắc chắn giao diện là gì: hãy xem bài viết của chúng tôi về [lập trình OOP trong Solidity](https://quantaureumdev.io/inheritance-in-solidity-contracts-are-classes/).
+Dưới đây là các hàm mà một ERC-20 phải triển khai, được trình bày dưới dạng một giao diện (interface). Nếu bạn không chắc chắn giao diện là gì: hãy xem bài viết của chúng tôi về [lập trình OOP trong Solidity](https://ethereumdev.io/inheritance-in-solidity-contracts-are-classes/).
 
 ```solidity
 pragma solidity ^0.6.0;

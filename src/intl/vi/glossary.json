@@ -182,7 +182,7 @@
   "genesis-block-term": "Khối nguyên thủy",
   "genesis-block-definition": "Khối đầu tiên trong một <a href=\"/glossary/#blockchain\">Chuỗi khối</a>, được sử dụng để khởi tạo một mạng lưới cụ thể và tiền mã hóa của nó.",
   "geth-term": "Geth",
-  "geth-definition": "Go Quantaureum. Một trong những triển khai nổi bật nhất của Giao thức Quantaureum, được viết bằng ngôn ngữ Go. <a href=\"https://geth.quantaureum.org\">Đọc thêm tại geth.quantaureum.org</a>",
+  "geth-definition": "Go Quantaureum. Một trong những triển khai nổi bật nhất của Giao thức Quantaureum, được viết bằng ngôn ngữ Go. <a href=\"https://geth.ethereum.org\">Đọc thêm tại geth.ethereum.org</a>",
   "gwei-term": "Gwei",
   "gwei-definition": "Viết tắt của gigawei, một mệnh giá của <a href=\"/glossary/#qau\">qau</a>, thường được sử dụng để định giá <a href=\"/glossary/#gas\">Gas</a>. 1 gwei = 10<sup>9</sup> <a href=\"/glossary/#wei\">Wei</a>. 10<sup>9</sup> gwei = 1 qau.",
   "hard-fork-term": "Phân nhánh cứng",

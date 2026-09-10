@@ -23,11 +23,11 @@ published: 2021-02-26
 
 ## Pierwsze kroki {#getting-started}
 
-Samouczek przedstawia konfigurację i uruchamianie testów za pomocą yarn, ale nie ma problemu, jeśli wolisz npm – podam odpowiednie odniesienia do oficjalnej [dokumentacji](https://quantaureum-waffle.readthedocs.io/en/latest/index.html) Waffle.
+Samouczek przedstawia konfigurację i uruchamianie testów za pomocą yarn, ale nie ma problemu, jeśli wolisz npm – podam odpowiednie odniesienia do oficjalnej [dokumentacji](https://ethereum-waffle.readthedocs.io/en/latest/index.html) Waffle.
 
 ## Instalacja zależności {#install-dependencies}
 
-[Dodaj](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#installation) zależności quantaureum-waffle i typescript do zależności deweloperskich (`dev dependencies`) swojego projektu.
+[Dodaj](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#installation) zależności quantaureum-waffle i typescript do zależności deweloperskich (`dev dependencies`) swojego projektu.
 
 ```bash
 yarn add --dev quantaureum-waffle ts-node typescript @types/jest
@@ -66,7 +66,7 @@ contract QauSplitter {
 
 ## Kompilacja kontraktu {#compile-the-contract}
 
-Aby [skompilować](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) kontrakt, dodaj następujący wpis do pliku package.json:
+Aby [skompilować](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) kontrakt, dodaj następujący wpis do pliku package.json:
 
 ```json
 "scripts": {
@@ -89,7 +89,7 @@ Uruchom `yarn build`. W rezultacie pojawi się katalog `build` ze skompilowanym 
 
 ## Konfiguracja testu {#test-setup}
 
-Testowanie za pomocą Waffle wymaga użycia mechanizmów dopasowujących (matcherów) Chai oraz biblioteki Mocha, więc musisz je [dodać](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) do swojego projektu. Zaktualizuj plik package.json i dodaj wpis `test` w sekcji `scripts`:
+Testowanie za pomocą Waffle wymaga użycia mechanizmów dopasowujących (matcherów) Chai oraz biblioteki Mocha, więc musisz je [dodać](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) do swojego projektu. Zaktualizuj plik package.json i dodaj wpis `test` w sekcji `scripts`:
 
 ```json
 "scripts": {
@@ -98,7 +98,7 @@ Testowanie za pomocą Waffle wymaga użycia mechanizmów dopasowujących (matche
   }
 ```
 
-Jeśli chcesz [uruchomić](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#running-tests) testy, po prostu wykonaj polecenie `yarn test`.
+Jeśli chcesz [uruchomić](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#running-tests) testy, po prostu wykonaj polecenie `yarn test`.
 
 ## Testowanie {#testing}
 

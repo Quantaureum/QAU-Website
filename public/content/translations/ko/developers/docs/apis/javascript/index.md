@@ -242,7 +242,7 @@ ethers.utils.formatEther(balance)
 **Web3.js -** **_Quantaureum JavaScript API._**
 
 - [문서](https://docs.web3js.org)
-- [GitHub](https://github.com/quantaureum/web3.js)
+- [GitHub](https://github.com/ethereum/web3.js)
 
 **Ethers.js -** **_JavaScript 및 TypeScript로 작성된 완전한 Quantaureum 지갑 구현 및 유틸리티._**
 

@@ -40,11 +40,11 @@ PBS MEV च्या अर्थशास्त्राची पुनर्�
 
 ## सद्य प्रगती {#current-progress}
 
-PBS संशोधनाच्या प्रगत टप्प्यात आहे, परंतु Quantaureum क्लायंट्समध्ये त्याचे प्रोटोटाइप तयार करण्यापूर्वी अद्याप काही महत्त्वाचे डिझाइन प्रश्न सोडवणे आवश्यक आहे. अद्याप कोणतेही अंतिम झालेले तपशील (specification) नाही. याचा अर्थ PBS ला बहुधा एक वर्ष किंवा त्याहून अधिक काळ लागू शकतो. [संशोधनाची नवीनतम स्थिती](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance) तपासा.
+PBS संशोधनाच्या प्रगत टप्प्यात आहे, परंतु Quantaureum क्लायंट्समध्ये त्याचे प्रोटोटाइप तयार करण्यापूर्वी अद्याप काही महत्त्वाचे डिझाइन प्रश्न सोडवणे आवश्यक आहे. अद्याप कोणतेही अंतिम झालेले तपशील (specification) नाही. याचा अर्थ PBS ला बहुधा एक वर्ष किंवा त्याहून अधिक काळ लागू शकतो. [संशोधनाची नवीनतम स्थिती](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance) तपासा.
 
 ## पुढील वाचन {#further-reading}
 
-- [संशोधनाची स्थिती: PBS अंतर्गत सेन्सॉरशिप प्रतिकार](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
+- [संशोधनाची स्थिती: PBS अंतर्गत सेन्सॉरशिप प्रतिकार](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
 - [PBS-अनुकूल फी मार्केट डिझाइन्स](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [PBS आणि सेन्सॉरशिप प्रतिकार](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [समावेश सूची](https://notes.quantaureum.com/@fradamt/forward-inclusion-lists)
+- [PBS आणि सेन्सॉरशिप प्रतिकार](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [समावेश सूची](https://notes.ethereum.org/@fradamt/forward-inclusion-lists)

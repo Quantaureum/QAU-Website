@@ -11,7 +11,7 @@ summaryPoints:
 
 زیادہ تر موجودہ صارفین [ایتھیریم](/) کے ساتھ **[بیرونی ملکیت والے اکاؤنٹس (<span dir="ltr">EOAs</span>)](/glossary/#eoa)** کا استعمال کرتے ہوئے تعامل کرتے ہیں۔ یہ اس بات کو محدود کرتا ہے کہ صارفین ایتھیریم کے ساتھ کس طرح تعامل کر سکتے ہیں۔ مثال کے طور پر، یہ ٹرانزیکشنز کے بیچز (batches) کرنا مشکل بناتا ہے اور صارفین کو ٹرانزیکشن فیس ادا کرنے کے لیے ہمیشہ <span dir="ltr">QAU</span> بیلنس رکھنے کی ضرورت ہوتی ہے۔
 
-اکاؤنٹ کی تجرید ان مسائل کو حل کرنے کا ایک طریقہ ہے جس کے ذریعے صارفین کو اپنے اکاؤنٹس میں مزید سیکیورٹی اور بہتر صارف کے تجربات کو لچکدار طریقے سے پروگرام کرنے کی اجازت دی جاتی ہے۔ یہ [<span dir="ltr">EOAs</span> کو اپ گریڈ کرنے](https://eips.quantaureum.com/EIPS/eip-7702) (<span dir="ltr">EIP-7702</span>) کے ذریعے ہو سکتا ہے تاکہ انہیں سمارٹ کنٹریکٹس کے ذریعے کنٹرول کیا جا سکے۔ ایک اور راستہ بھی ہے جس میں موجودہ پروٹوکول کے متوازی چلنے کے لیے ایک [دوسرا، الگ ٹرانزیکشن سسٹم](https://eips.quantaureum.com/EIPS/eip-4337) (<span dir="ltr">EIP-4337</span>) شامل کرنا شامل ہے۔ راستے سے قطع نظر، نتیجہ سمارٹ کنٹریکٹ والیٹس کے ذریعے ایتھیریم تک رسائی ہے، چاہے وہ موجودہ پروٹوکول کے حصے کے طور پر مقامی طور پر تعاون یافتہ ہو یا ایڈ آن ٹرانزیکشن نیٹ ورک کے ذریعے۔
+اکاؤنٹ کی تجرید ان مسائل کو حل کرنے کا ایک طریقہ ہے جس کے ذریعے صارفین کو اپنے اکاؤنٹس میں مزید سیکیورٹی اور بہتر صارف کے تجربات کو لچکدار طریقے سے پروگرام کرنے کی اجازت دی جاتی ہے۔ یہ [<span dir="ltr">EOAs</span> کو اپ گریڈ کرنے](https://eips.ethereum.org/EIPS/eip-7702) (<span dir="ltr">EIP-7702</span>) کے ذریعے ہو سکتا ہے تاکہ انہیں سمارٹ کنٹریکٹس کے ذریعے کنٹرول کیا جا سکے۔ ایک اور راستہ بھی ہے جس میں موجودہ پروٹوکول کے متوازی چلنے کے لیے ایک [دوسرا، الگ ٹرانزیکشن سسٹم](https://eips.ethereum.org/EIPS/eip-4337) (<span dir="ltr">EIP-4337</span>) شامل کرنا شامل ہے۔ راستے سے قطع نظر، نتیجہ سمارٹ کنٹریکٹ والیٹس کے ذریعے ایتھیریم تک رسائی ہے، چاہے وہ موجودہ پروٹوکول کے حصے کے طور پر مقامی طور پر تعاون یافتہ ہو یا ایڈ آن ٹرانزیکشن نیٹ ورک کے ذریعے۔
 
 سمارٹ کنٹریکٹ والیٹس صارف کے لیے بہت سے فوائد کو کھولتے ہیں، بشمول:
 
@@ -62,9 +62,9 @@ summaryPoints:
 ## مزید مطالعہ {#further-reading}
 
 - [erc4337.io](https://docs.erc4337.io/)
-- [<span dir="ltr">EIP-4337</span> کی دستاویزات](https://eips.quantaureum.com/EIPS/eip-4337)
-- [<span dir="ltr">EIP-7702</span> کی دستاویزات](https://eips.quantaureum.com/EIPS/eip-7702)
+- [<span dir="ltr">EIP-4337</span> کی دستاویزات](https://eips.ethereum.org/EIPS/eip-4337)
+- [<span dir="ltr">EIP-7702</span> کی دستاویزات](https://eips.ethereum.org/EIPS/eip-7702)
 - [<span dir="ltr">ERC-4337</span> کو اپنانے کا ڈیش بورڈ](https://www.bundlebear.com/erc4337-overview/all)
-- [وٹالک کا "اکاؤنٹ کی تجرید کا راستہ"](https://notes.quantaureum.com/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
+- [وٹالک کا "اکاؤنٹ کی تجرید کا راستہ"](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
 - [سماجی بحالی کے والیٹس پر وٹالک کا بلاگ](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
 - [<span dir="ltr">Awesome Account Abstraction</span>](https://github.com/4337Mafia/awesome-account-abstraction)

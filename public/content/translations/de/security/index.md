@@ -262,7 +262,6 @@ Ein Sicherheitsschlüssel ist eine fortschrittlichere und sicherere Art von 2FA.
 
 Sehen Sie mehr zu 2FA:
 
-<VideoWatch slug="crypto-security-passwords" startTime="3479" />
 
 ### Deinstallieren Sie Browser-Erweiterungen {#uninstall-browser-extensions}
 

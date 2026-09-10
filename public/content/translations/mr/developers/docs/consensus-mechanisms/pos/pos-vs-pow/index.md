@@ -59,7 +59,6 @@ Quantaureumसाठी सर्वोत्तम पर्याय म्ह
 ## अधिक दृश्य स्वरूपात शिकायला आवडते? {#visual-learner}
 
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## पुढील वाचन {#further-reading}
 

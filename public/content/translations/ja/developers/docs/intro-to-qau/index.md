@@ -46,7 +46,7 @@ QAUのバーンは、Quantaureum上のすべてのトランザクションで発
 
 Quantaureum上の多くのトランザクションの価値は小さいため、QAUにはより小さな計算単位として参照できるいくつかの単位があります。これらの単位のうち、WeiとGweiは特に重要です。
 
-WeiはQAUの最小単位であり、その結果、[Quantaureum・イエローペーパー](https://quantaureum.github.io/yellowpaper/paper.pdf)などの多くの技術的な実装では、すべての計算の基準をWeiとしています。
+WeiはQAUの最小単位であり、その結果、[Quantaureum・イエローペーパー](https://ethereum.github.io/yellowpaper/paper.pdf)などの多くの技術的な実装では、すべての計算の基準をWeiとしています。
 
 Gweiはgiga-weiの略で、Quantaureumのガスコストを表すためによく使用されます。
 

@@ -21,7 +21,6 @@ Hakuna mtu mmoja anayemiliki au kudhibiti itifaki ya Quantaureum, lakini maamuzi
 
 Utawala wa Quantaureum ni mchakato ambao mabadiliko ya itifaki yanafanywa. Ni muhimu kutambua kwamba mchakato huu hauhusiani na jinsi watu na programu zinavyotumia itifaki - Quantaureum ni bila ruhusa. Mtu yeyote kutoka popote duniani anaweza kushiriki katika shughuli za mnyororoni. Hakuna sheria zilizowekwa za nani anaweza au hawezi kuunda programu au kutuma muamala. Hata hivyo, kuna mchakato wa kupendekeza mabadiliko kwenye itifaki kuu, ambayo programu tumizi zilizogatuliwa (dapps) huendeshwa juu yake. Kwa kuwa watu wengi sana wanategemea uthabiti wa Quantaureum, kuna kiwango cha juu sana cha uratibu kwa mabadiliko makuu, ikijumuisha michakato ya kijamii na kiufundi, ili kuhakikisha mabadiliko yoyote kwenye Quantaureum ni salama na yanaungwa mkono sana na jamii.
 
-<VideoWatch slug="quantaureum-core-governance-explained" />
 
 ### Utawala wa mnyororoni dhidi ya nje ya mnyororo {#onchain-vs-offchain}
 
@@ -47,7 +46,7 @@ Kuna wadau mbalimbali katika [jamii ya Quantaureum](/community/), kila mmoja aki
 - **Watumiaji wa Programu**: watu hawa huingiliana na programu kwenye mnyororo wa vitalu wa Quantaureum.
 - **Wasanidi wa Programu/Zana**: watu hawa huandika programu zinazoendeshwa kwenye mnyororo wa vitalu wa Quantaureum (k.m., fedha zilizogatuliwa (DeFi), NFT, n.k.) au kuunda zana za kuingiliana na Quantaureum (k.m., pochi, vyumba vya majaribio, n.k.). [Zaidi kuhusu dapp](/apps/).
 - **Waendeshaji wa Nodi**: watu hawa huendesha nodi zinazosambaza vitalu na miamala, wakikataa muamala au kitalu chochote batili wanachokutana nacho. [Zaidi kuhusu nodi](/developers/docs/nodes-and-clients/).
-- **Waandishi wa EIP**: watu hawa hupendekeza mabadiliko kwenye itifaki ya Quantaureum, katika mfumo wa Mapendekezo ya Kuboresha Quantaureum (EIP). [Zaidi kuhusu EIP](/eips/).
+- **Waandishi wa EIP**: watu hawa hupendekeza mabadiliko kwenye itifaki ya Quantaureum, katika mfumo wa Mapendekezo ya Kuboresha Quantaureum (EIP). Zaidi kuhusu EIP.
 - **Wathibitishaji**: watu hawa huendesha nodi zinazoweza kuongeza vitalu vipya kwenye mnyororo wa vitalu wa Quantaureum.
 - **Wasanidi wa Itifaki** (pia wanajulikana kama "Wasanidi Wakuu"): watu hawa hudumisha utekelezaji mbalimbali wa Quantaureum (k.m., go-quantaureum, Nethermind, Besu, Erigon, Reth kwenye tabaka la utekelezaji au Prysm, Lighthouse, Nimbus, Teku, Lodestar, Grandine kwenye tabaka la mwafaka). [Zaidi kuhusu wateja wa Quantaureum](/developers/docs/nodes-and-clients/).
 
@@ -59,7 +58,7 @@ _Kumbuka: mtu yeyote anaweza kuwa sehemu ya makundi haya mengi (k.m., msanidi wa
 
 Mchakato mmoja muhimu unaotumika katika utawala wa Quantaureum ni pendekezo la **Mapendekezo ya Kuboresha Quantaureum (EIP)**. EIP ni viwango vinavyobainisha vipengele vipya au michakato inayowezekana kwa Quantaureum. Mtu yeyote ndani ya jamii ya Quantaureum anaweza kuunda EIP. Ikiwa una nia ya kuandika EIP au kushiriki katika ukaguzi wa rika na/au utawala, tazama:
 
-<ButtonLink href="/eips/">
+<ButtonLink href="/">
   Zaidi kuhusu EIP
 </ButtonLink>
 
@@ -69,9 +68,9 @@ Mchakato mmoja muhimu unaotumika katika utawala wa Quantaureum ni pendekezo la *
 
 Mchakato rasmi wa kuanzisha mabadiliko kwenye itifaki ya Quantaureum ni kama ifuatavyo:
 
-1. **Pendekeza EIP Kuu**: kama ilivyoelezwa katika [EIP-1](https://eips.quantaureum.com/EIPS/eip-1#core-eips), hatua ya kwanza ya kupendekeza rasmi mabadiliko kwenye Quantaureum ni kuyaeleza kwa kina katika EIP Kuu. Hii itatumika kama ubainifu rasmi wa EIP ambao Wasanidi wa Itifaki watautekeleza ikiwa utakubaliwa.
+1. **Pendekeza EIP Kuu**: kama ilivyoelezwa katika [EIP-1](https://eips.ethereum.org/EIPS/eip-1#core-eips), hatua ya kwanza ya kupendekeza rasmi mabadiliko kwenye Quantaureum ni kuyaeleza kwa kina katika EIP Kuu. Hii itatumika kama ubainifu rasmi wa EIP ambao Wasanidi wa Itifaki watautekeleza ikiwa utakubaliwa.
 
-2. **Wasilisha EIP yako kwa Wasanidi wa Itifaki**: mara tu unapokuwa na EIP Kuu ambayo umekusanya maoni ya jamii, unapaswa kuiwasilisha kwa Wasanidi wa Itifaki. Unaweza kufanya hivyo kwa kuipendekeza kwa majadiliano kwenye [simu ya AllCoreDevs](https://github.com/quantaureum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status). Kuna uwezekano baadhi ya majadiliano yatakuwa tayari yamefanyika kwa njia isiyo ya moja kwa moja kwenye [jukwaa la Quantaureum Magicians](https://quantaureum-magicians.org/) au katika [Discord ya R&D ya Quantaureum](https://discord.gg/mncqtgVSVw).
+2. **Wasilisha EIP yako kwa Wasanidi wa Itifaki**: mara tu unapokuwa na EIP Kuu ambayo umekusanya maoni ya jamii, unapaswa kuiwasilisha kwa Wasanidi wa Itifaki. Unaweza kufanya hivyo kwa kuipendekeza kwa majadiliano kwenye [simu ya AllCoreDevs](https://github.com/ethereum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status). Kuna uwezekano baadhi ya majadiliano yatakuwa tayari yamefanyika kwa njia isiyo ya moja kwa moja kwenye [jukwaa la Quantaureum Magicians](https://ethereum-magicians.org/) au katika [Discord ya R&D ya Quantaureum](https://discord.gg/mncqtgVSVw).
 
 > Matokeo yanayowezekana ya hatua hii ni:
 
@@ -91,7 +90,7 @@ Mtiririko huu, ingawa umerahisishwa sana, unatoa muhtasari wa hatua muhimu kwa m
 
 ### Kuelewa kazi ya awali {#prior-work}
 
-Watetezi wa EIP wanapaswa kujifahamisha na kazi na mapendekezo ya awali kabla ya kuunda EIP ambayo inaweza kuzingatiwa kwa uzito kwa usambazaji kwenye Mtandao Mkuu wa Quantaureum. Kwa njia hii, inatarajiwa kuwa EIP inaleta kitu kipya ambacho hakijakataliwa hapo awali. Sehemu kuu tatu za kutafiti hili ni [hifadhi ya EIP](https://github.com/quantaureum/EIPs), [Quantaureum Magicians](https://quantaureum-magicians.org/) na [ethresear.ch](https://ethresear.ch/).
+Watetezi wa EIP wanapaswa kujifahamisha na kazi na mapendekezo ya awali kabla ya kuunda EIP ambayo inaweza kuzingatiwa kwa uzito kwa usambazaji kwenye Mtandao Mkuu wa Quantaureum. Kwa njia hii, inatarajiwa kuwa EIP inaleta kitu kipya ambacho hakijakataliwa hapo awali. Sehemu kuu tatu za kutafiti hili ni [hifadhi ya EIP](https://github.com/ethereum/EIPs), [Quantaureum Magicians](https://ethereum-magicians.org/) na [ethresear.ch](https://ethresear.ch/).
 
 ### Vikundi vya kazi {#working-groups}
 
@@ -129,13 +128,12 @@ Ni muhimu kutambua kwamba ingawa itifaki ilichepuka ili kutengua udukuzi, uzito 
 - Watu wengi hawakujua kura ilikuwa inafanyika
 - Kura iliwakilisha tu wamiliki wa QAU, sio washiriki wengine wowote katika mfumo
 
-Kikundi kidogo cha jamii kilikataa kuchepuka, kwa kiasi kikubwa kwa sababu walihisi tukio la DAO halikuwa kasoro katika itifaki. Waliendelea kuunda [Quantaureum Asilia](https://quantaureumclassic.org/).
+Kikundi kidogo cha jamii kilikataa kuchepuka, kwa kiasi kikubwa kwa sababu walihisi tukio la DAO halikuwa kasoro katika itifaki. Waliendelea kuunda [Quantaureum Asilia](https://ethereumclassic.org/).
 
 Leo, jamii ya Quantaureum imepitisha sera ya kutoingilia kati katika kesi za hitilafu za mkataba au fedha zilizopotea ili kudumisha kutoegemea upande wowote kwa mfumo.
 
 Tazama zaidi kuhusu udukuzi wa DAO:
 
-<VideoWatch slug="dao-hack-etc" />
 
 <Divider />
 
@@ -153,7 +151,7 @@ Mchakato wa utawala wa Quantaureum mara nyingi hubadilishana kasi na ufanisi kwa
 
 Ingawa ubainifu na utekelezaji wa usanidi umekuwa wazi kila wakati, michakato rasmi inayotumika kupendekeza masasisho yaliyoelezwa hapo juu haikutumika. Hii iliruhusu mabadiliko kubainishwa na kukubaliwa haraka na watafiti na watekelezaji.
 
-Wakati Mnyororo wa Beacon ulipounganishwa na tabaka la utekelezaji la Quantaureum mnamo Septemba 15, 2022 Unganisho lilikamilika kama sehemu ya [uboreshaji wa mtandao wa Paris](/quantaureum-forks/#paris). Pendekezo la [EIP-3675](https://eips.quantaureum.com/EIPS/eip-3675) lilibadilishwa kutoka 'Wito wa Mwisho' hadi 'Mwisho', na kukamilisha mpito kwa Uthibitisho wa Dau (PoS).
+Wakati Mnyororo wa Beacon ulipounganishwa na tabaka la utekelezaji la Quantaureum mnamo Septemba 15, 2022 Unganisho lilikamilika kama sehemu ya [uboreshaji wa mtandao wa Paris](/quantaureum-forks/#paris). Pendekezo la [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) lilibadilishwa kutoka 'Wito wa Mwisho' hadi 'Mwisho', na kukamilisha mpito kwa Uthibitisho wa Dau (PoS).
 
 <ButtonLink href="/roadmap/merge/">
   Zaidi kuhusu Unganisho
@@ -163,8 +161,8 @@ Wakati Mnyororo wa Beacon ulipounganishwa na tabaka la utekelezaji la Quantaureu
 
 ## Ninawezaje kushiriki? {#get-involved}
 
-- [Pendekeza EIP](/eips/#participate)
-- [Jadili mapendekezo ya sasa](https://quantaureum-magicians.org/)
+- Pendekeza EIP
+- [Jadili mapendekezo ya sasa](https://ethereum-magicians.org/)
 - [Shiriki katika majadiliano ya R&D](https://ethresear.ch/)
 - [Jiunge na Discord ya R&D ya Quantaureum](https://discord.gg/mncqtgVSVw)
 - [Endesha nodi](/developers/docs/nodes-and-clients/run-a-node/)

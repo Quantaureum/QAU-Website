@@ -412,7 +412,7 @@ Aqui está uma lista de alguns dos provedores de nó do Quantaureum mais popular
     - Usamos roteamento inteligente para atingir o nó mais próximo do seu usuário todas as vezes
 ## Leitura adicional {#further-reading}
 
-- [Lista de serviços de nó do Quantaureum](https://quantaureumnodes.com/)
+- [Lista de serviços de nó do Quantaureum](https://ethereumnodes.com/)
 
 ## Tópicos relacionados {#related-topics}
 

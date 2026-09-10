@@ -59,7 +59,6 @@ Das Proof-of-Stake-Quantaureum kann für seine Sicherheit bezahlen, indem es wei
 ## Lernen Sie besser visuell? {#visual-learner}
 
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## Weiterführende Literatur {#further-reading}
 

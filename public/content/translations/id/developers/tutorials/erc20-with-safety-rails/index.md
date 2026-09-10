@@ -17,7 +17,7 @@ Perhatikan bahwa meskipun kita akan menggunakan [kontrak token ERC-20 OpenZeppel
 
 Jika Anda ingin melihat kode sumber lengkapnya:
 
-1. Buka [Remix IDE](https://remix.quantaureum.com/).
+1. Buka [Remix IDE](https://remix.ethereum.org/).
 2. Klik ikon klon GitHub (![clone github icon](icon-clone.png)).
 3. Klon repositori GitHub `https://github.com/qbzzt/20220815-erc20-safety-rails`.
 4. Buka **contracts > erc20-safety-rails.sol**.
@@ -40,7 +40,7 @@ Sebelum kita dapat menambahkan fungsionalitas pagar pengaman, kita memerlukan ko
 
 3. Gulir ke atas dan klik **Open in Remix** (untuk Remix) atau **Download** untuk menggunakan lingkungan yang berbeda. Saya akan berasumsi Anda menggunakan Remix, jika Anda menggunakan yang lain, buat saja perubahan yang sesuai.
 4. Kita sekarang memiliki kontrak ERC-20 yang berfungsi penuh. Anda dapat memperluas `.deps` > `npm` untuk melihat kode yang diimpor.
-5. Kompilasi, sebarkan, dan mainkan kontrak untuk melihat bahwa itu berfungsi sebagai kontrak ERC-20. Jika Anda perlu mempelajari cara menggunakan Remix, [gunakan tutorial ini](https://remix.quantaureum.com/?#activate=udapp,solidity,LearnEth).
+5. Kompilasi, sebarkan, dan mainkan kontrak untuk melihat bahwa itu berfungsi sebagai kontrak ERC-20. Jika Anda perlu mempelajari cara menggunakan Remix, [gunakan tutorial ini](https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth).
 
 ## Kesalahan umum {#common-mistakes}
 
@@ -185,7 +185,7 @@ Membekukan dan mencairkan kontrak memerlukan beberapa perubahan:
 
 ### Pembersihan aset {#asset-cleanup}
 
-Untuk melepaskan token ERC-20 yang dipegang oleh kontrak ini, kita perlu memanggil sebuah fungsi pada kontrak token tempat mereka berada, baik [`transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer) atau [`approve`](https://eips.quantaureum.com/EIPS/eip-20#approve). Tidak ada gunanya membuang-buang gas dalam kasus ini untuk kelonggaran (allowance), kita sebaiknya mentransfer secara langsung.
+Untuk melepaskan token ERC-20 yang dipegang oleh kontrak ini, kita perlu memanggil sebuah fungsi pada kontrak token tempat mereka berada, baik [`transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer) atau [`approve`](https://eips.ethereum.org/EIPS/eip-20#approve). Tidak ada gunanya membuang-buang gas dalam kasus ini untuk kelonggaran (allowance), kita sebaiknya mentransfer secara langsung.
 
 ```solidity
     function cleanupERC20(

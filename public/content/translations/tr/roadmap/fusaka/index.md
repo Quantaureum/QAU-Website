@@ -19,7 +19,6 @@ Fusaka güncellemesi, Quantaureum'un uzun vadeli geliştirme hedeflerinde yalnı
 </AlertContent>
 </Alert>
 
-<VideoWatch slug="fusaka-upgrade-explained" />
 
 ## Fusaka'daki İyileştirmeler {#improvements-in-fusaka}
 
@@ -29,7 +28,7 @@ Fusaka güncellemesi, Quantaureum'un uzun vadeli geliştirme hedeflerinde yalnı
 
 Bu, Fusaka çatallanmasının _başrol oyuncusu_, bu güncellemede eklenen ana özelliktir. Katman 2'ler (L2) şu anda verilerini Quantaureum'a, katman 2'ler için özel olarak oluşturulmuş geçici veri türü olan blob'lar halinde gönderir. Fusaka öncesinde, her tam düğüm verilerin var olduğundan emin olmak için her blob'u depolamak zorundadır. Blob işlem kapasitesi arttıkça, tüm bu verileri indirmek zorunda kalmak savunulamaz derecede kaynak yoğun hale gelir.
 
-[Veri kullanılabilirliği örneklemesi (DAS)](https://notes.quantaureum.com/@fradamt/das-fork-choice) ile, tüm blob verilerini depolamak zorunda kalmak yerine, her düğüm blob verilerinin bir alt kümesinden sorumlu olacaktır. Blob'lar ağdaki düğümler arasında tekdüze rastgele dağıtılır ve her tam düğüm verilerin yalnızca 1/8'ini tutar, böylece teorik olarak 8 kata kadar ölçeklendirme sağlanır. Verilerin kullanılabilirliğini sağlamak için, verilerin herhangi bir kısmı, yanlış veya eksik veri olasılığını kriptografik olarak ihmal edilebilir bir seviyeye (~10<sup>20</sup>'de bir ila 10<sup>24</sup>'te bir) düşüren yöntemlerle bütünün mevcut herhangi bir %50'sinden yeniden oluşturulabilir.
+[Veri kullanılabilirliği örneklemesi (DAS)](https://notes.ethereum.org/@fradamt/das-fork-choice) ile, tüm blob verilerini depolamak zorunda kalmak yerine, her düğüm blob verilerinin bir alt kümesinden sorumlu olacaktır. Blob'lar ağdaki düğümler arasında tekdüze rastgele dağıtılır ve her tam düğüm verilerin yalnızca 1/8'ini tutar, böylece teorik olarak 8 kata kadar ölçeklendirme sağlanır. Verilerin kullanılabilirliğini sağlamak için, verilerin herhangi bir kısmı, yanlış veya eksik veri olasılığını kriptografik olarak ihmal edilebilir bir seviyeye (~10<sup>20</sup>'de bir ila 10<sup>24</sup>'te bir) düşüren yöntemlerle bütünün mevcut herhangi bir %50'sinden yeniden oluşturulabilir.
 
 Bu, düğümler için donanım ve bant genişliği gereksinimlerini makul tutarken, katman 2'ler için daha küçük ücretlerle daha fazla ölçeklendirme sağlayan blob ölçeklendirmesini mümkün kılar.
 
@@ -37,7 +36,7 @@ Bu, düğümler için donanım ve bant genişliği gereksinimlerini makul tutark
 
 **Kaynaklar**:
 
-- [EIP-7594 teknik spesifikasyonu](https://eips.quantaureum.com/EIPS/eip-7594)
+- [EIP-7594 teknik spesifikasyonu](https://eips.ethereum.org/EIPS/eip-7594)
 - [PeerDAS Üzerine DappLion: Quantaureum'u Bugün Ölçeklendirmek | ETHSofia 2024](https://youtu.be/bONWd1x2TjQ?t=328)
 - [Akademik: Quantaureum'un PeerDAS Dokümantasyonu (PDF)](https://eprint.iacr.org/2024/1362.pdf)
 
@@ -57,7 +56,7 @@ Blob'lar Dencun güncellemesinde ağa ilk eklendiğinde hedef 3'tü. Bu, Pectra'
 
 Grafik kaynağı: [Quantaureum Blobs - @hildobby, Dune Analytics](https://dune.com/hildobby/blobs)
 
-**Kaynaklar**: [EIP-7892 teknik spesifikasyonu](https://eips.quantaureum.com/EIPS/eip-7892)
+**Kaynaklar**: [EIP-7892 teknik spesifikasyonu](https://eips.ethereum.org/EIPS/eip-7892)
 
 #### Yürütme maliyetleriyle sınırlandırılmış blob taban ücreti {#blob-base-fee-bounded-by-execution-costs}
 
@@ -71,8 +70,8 @@ EIP-7918, her blob'un altına orantılı bir rezerv fiyatı sabitler. Rezerv, no
 
 **Kaynaklar**:
 
-- [EIP-7918 teknik spesifikasyonu](https://eips.quantaureum.com/EIPS/eip-7918)
-- [Storybook açıklayıcısı](https://notes.quantaureum.com/@anderselowsson/AIG)
+- [EIP-7918 teknik spesifikasyonu](https://eips.ethereum.org/EIPS/eip-7918)
+- [Storybook açıklayıcısı](https://notes.ethereum.org/@anderselowsson/AIG)
 
 ### Katman 1'i (L1) Ölçeklendirme {#scale-l1}
 
@@ -82,21 +81,21 @@ Temmuz 2025'te, Quantaureum yürütme istemcileri [kısmi geçmiş sonlanmasın�
 
 Bu EIP, "Çekirdek EIP'ler"den ayrı bir bölümdedir çünkü çatallanma aslında herhangi bir değişiklik uygulamaz - bu, istemci ekiplerinin Fusaka güncellemesine kadar geçmiş sonlanmasını desteklemesi gerektiğine dair bir bildirimdir. Pratik olarak, istemciler bunu istedikleri zaman uygulayabilirler ancak bunu güncellemeye eklemek, somut olarak yapılacaklar listelerine koydu ve Fusaka değişikliklerini bu özellikle birlikte test etmelerini sağladı.
 
-**Kaynaklar**: [EIP-7642 teknik spesifikasyonu](https://eips.quantaureum.com/EIPS/eip-7642)
+**Kaynaklar**: [EIP-7642 teknik spesifikasyonu](https://eips.ethereum.org/EIPS/eip-7642)
 
 #### MODEXP için üst sınırlar belirleme {#set-upper-bounds-for-modexp}
 
 Şimdiye kadar, MODEXP ön derlemesi neredeyse her boyuttaki sayıları kabul ediyordu. Bu, test edilmesini zorlaştırdı, kötüye kullanılmasını kolaylaştırdı ve istemci kararlılığı için riskli hale getirdi. EIP-7823 net bir sınır koyar: her girdi numarası en fazla 8192 bit (1024 bayt) uzunluğunda olabilir. Daha büyük olan her şey reddedilir, işlemin gazı yakılır ve hiçbir durum değişikliği meydana gelmez. Gaz limiti planlamasını ve güvenlik incelemelerini karmaşıklaştıran aşırı durumları ortadan kaldırırken gerçek dünya ihtiyaçlarını çok rahat bir şekilde karşılar. Bu değişiklik, kullanıcı veya geliştirici deneyimini etkilemeden daha fazla güvenlik ve DoS koruması sağlar.
 
-**Kaynaklar**: [EIP-7823 teknik spesifikasyonu](https://eips.quantaureum.com/EIPS/eip-7823)
+**Kaynaklar**: [EIP-7823 teknik spesifikasyonu](https://eips.ethereum.org/EIPS/eip-7823)
 
 #### İşlem Gaz Limiti Sınırı {#transaction-gas-limit-cap}
 
-EIP-[7825](https://eips.quantaureum.com/EIPS/eip-7825), işlem başına 16.777.216 (2^24) gaz sınırı ekler. Blok gaz limitini yükseltirken herhangi bir tek işlemin en kötü durum maliyetini sınırlandırarak proaktif bir DoS güçlendirmesidir. Gaz limitini yükselterek ölçeklendirmeyle başa çıkmamıza olanak tanımak için doğrulama ve yayılımı modellemeyi kolaylaştırır.
+EIP-[7825](https://eips.ethereum.org/EIPS/eip-7825), işlem başına 16.777.216 (2^24) gaz sınırı ekler. Blok gaz limitini yükseltirken herhangi bir tek işlemin en kötü durum maliyetini sınırlandırarak proaktif bir DoS güçlendirmesidir. Gaz limitini yükselterek ölçeklendirmeyle başa çıkmamıza olanak tanımak için doğrulama ve yayılımı modellemeyi kolaylaştırır.
 
 Neden tam olarak 2^24 gaz? Günümüzün gaz limitinden rahatça daha küçüktür, gerçek sözleşme dağıtımları ve ağır ön derlemeler için yeterince büyüktür ve 2'nin bir kuvveti olması istemciler arasında uygulanmasını kolaylaştırır. Bu yeni maksimum işlem boyutu, Pectra öncesi ortalama blok boyutuna benzerdir ve bu da onu Quantaureum'daki herhangi bir işlem için makul bir sınır haline getirir.
 
-**Kaynaklar**: [EIP-7825 teknik spesifikasyonu](https://eips.quantaureum.com/EIPS/eip-7825)
+**Kaynaklar**: [EIP-7825 teknik spesifikasyonu](https://eips.ethereum.org/EIPS/eip-7825)
 
 #### `MODEXP` gaz maliyeti artışı {#modexp-gas-cost-increase}
 
@@ -112,7 +111,7 @@ Bu EIP, fiyatlandırmayı gerçek hesaplama maliyetleriyle eşleşecek şekilde 
 
 Maliyetleri gerçek işlem süresiyle daha iyi eşleştirerek, MODEXP artık bir bloğun doğrulanmasının çok uzun sürmesine neden olamaz. Bu değişiklik, gelecekte Quantaureum'un blok gaz limitini artırmayı güvenli hale getirmeyi amaçlayan birkaç değişiklikten biridir.
 
-**Kaynaklar**: [EIP-7883 teknik spesifikasyonu](https://eips.quantaureum.com/EIPS/eip-7883)
+**Kaynaklar**: [EIP-7883 teknik spesifikasyonu](https://eips.ethereum.org/EIPS/eip-7883)
 
 #### RLP Yürütme Blok Boyutu Limiti {#rlp-execution-block-size-limit}
 
@@ -131,7 +130,7 @@ ve RLP yükü aşağıdakini aşan herhangi bir yürütme bloğunu reddeder:
 
 Amaç, en kötü durum yayılım/doğrulama süresini sınırlandırmak ve mutabakat katmanı dedikodu davranışıyla hizalanmak, gaz muhasebesini değiştirmeden yeniden düzenleme (re-org)/DoS riskini azaltmaktır.
 
-**Kaynaklar**: [EIP-7934 teknik spesifikasyonu](https://eips.quantaureum.com/EIPS/eip-7934)
+**Kaynaklar**: [EIP-7934 teknik spesifikasyonu](https://eips.ethereum.org/EIPS/eip-7934)
 
 #### Varsayılan gaz limitini 60 milyona ayarlama {#set-default-gas-limit-to-60-million}
 
@@ -141,7 +140,7 @@ EIP-7935, yürütme katmanı (EL) istemci ekiplerini Fusaka için varsayılan ga
 
 Geliştirici ağı planlaması ~60 milyon stresi (sentetik yüklü tam bloklar) ve yinelemeli artışları hedefler; araştırmalar, en kötü durum blok boyutu patolojilerinin ~150 milyonun altında bağlanmaması gerektiğini söylüyor. Sunum, limitler yükseldikçe hiçbir tek işlemin baskın olamaması için işlem gaz limiti sınırı (EIP-7825) ile eşleştirilmelidir.
 
-**Kaynaklar**: [EIP-7935 teknik spesifikasyonu](https://eips.quantaureum.com/EIPS/eip-7935)
+**Kaynaklar**: [EIP-7935 teknik spesifikasyonu](https://eips.ethereum.org/EIPS/eip-7935)
 
 ### Kullanıcı Deneyimini (UX) İyileştirme {#improve-ux}
 
@@ -151,13 +150,13 @@ EIP-7917 ile İşaret zinciri, bir sonraki dönem için yaklaşan blok teklif ed
 
 Bu özellik, doğrulayıcıların teklif edici programını manipüle edebileceği uç durumları önlediği için istemci uygulamalarına ve ağın güvenliğine fayda sağlar. Öngörü ayrıca uygulamanın daha az karmaşık olmasına da olanak tanır.
 
-**Kaynaklar**: [EIP-7917 teknik spesifikasyonu](https://eips.quantaureum.com/EIPS/eip-7917)
+**Kaynaklar**: [EIP-7917 teknik spesifikasyonu](https://eips.ethereum.org/EIPS/eip-7917)
 
 #### Öndeki sıfırları sayma (CLZ) işlem kodu {#count-leading-zeros-opcode}
 
 Bu özellik, küçük bir EVM talimatı olan **öndeki sıfırları sayma (CLZ)** ekler. EVM'deki hemen hemen her şey 256 bitlik bir değer olarak temsil edilir—bu yeni işlem kodu önde kaç tane sıfır biti olduğunu döndürür. Bu, daha verimli aritmetik işlemlere olanak tanıdığı için birçok komut seti mimarisinde yaygın bir özelliktir. Pratikte bu, günümüzün elle yazılmış bit taramalarını tek bir adıma indirger, böylece ilk ayarlanan biti bulmak, baytları taramak veya bit alanlarını ayrıştırmak daha basit ve daha ucuz hale gelir. İşlem kodu düşük, sabit maliyetlidir ve temel bir toplama işlemiyle aynı seviyede olduğu kıyaslanmıştır, bu da baytkodu kırpar ve aynı iş için gaz tasarrufu sağlar.
 
-**Kaynaklar**: [EIP-7939 teknik spesifikasyonu](https://eips.quantaureum.com/EIPS/eip-7939)
+**Kaynaklar**: [EIP-7939 teknik spesifikasyonu](https://eips.ethereum.org/EIPS/eip-7939)
 
 #### secp256r1 Eğri Desteği için Ön Derleme {#secp256r1-precompile}
 
@@ -169,7 +168,7 @@ Geliştiriciler için, 160 baytlık bir girdi alır ve 32 baytlık bir çıktı 
 
 **Kaynaklar**:
 
-- [EIP-7951 teknik spesifikasyonu](https://eips.quantaureum.com/EIPS/eip-7951)
+- [EIP-7951 teknik spesifikasyonu](https://eips.ethereum.org/EIPS/eip-7951)
 - [RIP-7212 hakkında daha fazlası](https://www.alchemy.com/blog/what-is-rip-7212) _(EIP-7951'in RIP-7212'nin yerini aldığını unutmayın)_
 
 ### Meta {#meta}
@@ -184,7 +183,7 @@ Anlık görüntüler şunları içerir: `chainId`, `forkId`, planlanan çatallan
 
 Bu EIP, "Çekirdek EIP'ler"den ayrı bir bölümdedir çünkü çatallanma aslında herhangi bir değişiklik uygulamaz - bu, istemci ekiplerinin Fusaka güncellemesine kadar bu JSON-RPC yöntemini uygulaması gerektiğine dair bir bildirimdir.
 
-**Kaynaklar**: [EIP-7910 teknik spesifikasyonu](https://eips.quantaureum.com/EIPS/eip-7910)
+**Kaynaklar**: [EIP-7910 teknik spesifikasyonu](https://eips.ethereum.org/EIPS/eip-7910)
 
 ## SSS {#faq}
 
@@ -243,7 +242,7 @@ Bu değişiklik doğrulayıcı istemcinizin nasıl çalıştığını değiştir
 
 PeerDAS, düğümlerin blob verilerini nasıl ilettiği konusunda önemli bir değişiklik yapar. Tüm veriler, düğümlerin yalnızca bazılarına abone olduğu 128 alt ağ boyunca sütun adı verilen parçalara bölünür. Düğümlerin koruması gereken alt ağ sütunlarının miktarı, yapılandırmalarına ve bağlı doğrulayıcı sayısına bağlıdır. Gerçek bant genişliği gereksinimleri, ağda izin verilen blob miktarına ve düğümün türüne bağlı olacaktır. Fusaka etkinleştirildiği anda blob hedefi eskisi gibi kalır, ancak PeerDAS ile düğüm operatörleri blob disk kullanımlarında ve ağ trafiğinde bir azalma görebilirler. BPO'lar ağda daha yüksek sayıda blob yapılandırdıkça, gerekli bant genişliği her BPO ile artacaktır.
 
-Düğüm gereksinimleri, Fusaka BPO'larından sonra bile hala [önerilen marjlar](https://eips.quantaureum.com/EIPS/eip-7870) içindedir.
+Düğüm gereksinimleri, Fusaka BPO'larından sonra bile hala [önerilen marjlar](https://eips.ethereum.org/EIPS/eip-7870) içindedir.
 
 #### Tam düğümler {#full-nodes}
 
@@ -267,13 +266,13 @@ Abone olunan alt ağların sayısı, düğüme daha fazla bakiye ve doğrulayıc
 
 Fusaka, yeni küçük değişiklikler ve özelliklerle EVM'yi sağlamlaştırır.
 
-- Ölçeklendirme sırasında güvenlik için, tek bir işlemin maksimum boyutu 16,7 milyon gaz birimiyle [sınırlandırılacaktır](https://eips.quantaureum.com/EIPS/eip-7825).
-- [Yeni işlem kodu öndeki sıfırları sayma (CLZ)](https://eips.quantaureum.com/EIPS/eip-7939) EVM'ye eklenmiştir ve akıllı sözleşme dillerinin belirli işlemleri daha verimli bir şekilde gerçekleştirmesini sağlayacaktır.
-- [`ModExp` ön derlemesinin maliyeti artırılacaktır](https://eips.quantaureum.com/EIPS/eip-7883)—bunu kullanan sözleşmeler yürütme için daha fazla gaz talep edecektir.
+- Ölçeklendirme sırasında güvenlik için, tek bir işlemin maksimum boyutu 16,7 milyon gaz birimiyle [sınırlandırılacaktır](https://eips.ethereum.org/EIPS/eip-7825).
+- [Yeni işlem kodu öndeki sıfırları sayma (CLZ)](https://eips.ethereum.org/EIPS/eip-7939) EVM'ye eklenmiştir ve akıllı sözleşme dillerinin belirli işlemleri daha verimli bir şekilde gerçekleştirmesini sağlayacaktır.
+- [`ModExp` ön derlemesinin maliyeti artırılacaktır](https://eips.ethereum.org/EIPS/eip-7883)—bunu kullanan sözleşmeler yürütme için daha fazla gaz talep edecektir.
 
 ### Yeni 16 milyon gaz limiti sözleşme geliştiricilerini nasıl etkiler? {#how-does-new-16m-gas-limit-affects-contract-developers}
 
-Fusaka, [tek bir işlemin maksimum boyutuna 16,7 milyon](https://eips.quantaureum.com/EIPS/eip-7825) (2^24) gaz birimi sınırı getirir. Bu, kabaca ortalama bir bloğun önceki boyutudur ve bu da onu tüm bir bloğu tüketecek karmaşık işlemleri barındıracak kadar büyük yapar. Bu sınır, istemciler için koruma sağlayarak gelecekte daha yüksek blok gaz limitiyle olası DoS saldırılarını önler. Ölçeklendirmenin amacı, tek bir işlemin tüm bloğu tüketmeden daha fazla işlemin blokzincire girmesini sağlamaktır.
+Fusaka, [tek bir işlemin maksimum boyutuna 16,7 milyon](https://eips.ethereum.org/EIPS/eip-7825) (2^24) gaz birimi sınırı getirir. Bu, kabaca ortalama bir bloğun önceki boyutudur ve bu da onu tüm bir bloğu tüketecek karmaşık işlemleri barındıracak kadar büyük yapar. Bu sınır, istemciler için koruma sağlayarak gelecekte daha yüksek blok gaz limitiyle olası DoS saldırılarını önler. Ölçeklendirmenin amacı, tek bir işlemin tüm bloğu tüketmeden daha fazla işlemin blokzincire girmesini sağlamaktır.
 
 Normal kullanıcı işlemleri bu sınıra ulaşmaktan çok uzaktır. Büyük ve karmaşık DeFi operasyonları, büyük akıllı sözleşme dağıtımları veya birden fazla sözleşmeyi hedefleyen toplu işlemler gibi belirli uç durumlar bu değişiklikten etkilenebilir. Bu işlemlerin daha küçük işlemlere bölünmesi veya başka bir şekilde optimize edilmesi gerekecektir. Potansiyel olarak sınıra ulaşan işlemleri göndermeden önce simülasyon kullanın.
 
@@ -287,15 +286,15 @@ Solidity gibi EVM derleyicileri, arka planda sıfırları saymak için yeni işl
 
 Fusaka'nın mevcut sözleşmeleri bozacak veya davranışlarını değiştirecek doğrudan bir etkisi yoktur. Yürütme katmanına getirilen değişiklikler geriye dönük uyumlulukla yapılır, ancak her zaman uç durumlara ve olası etkilere dikkat edin.
 
-[`ModExp` ön derlemesinin artan maliyetiyle](https://eips.quantaureum.com/EIPS/eip-7883), buna bağlı olan sözleşmeler yürütme için daha fazla gaz tüketecektir. Sözleşmeniz büyük ölçüde buna dayanıyorsa ve kullanıcılar için daha pahalı hale geliyorsa, nasıl kullanıldığını yeniden gözden geçirin.
+[`ModExp` ön derlemesinin artan maliyetiyle](https://eips.ethereum.org/EIPS/eip-7883), buna bağlı olan sözleşmeler yürütme için daha fazla gaz tüketecektir. Sözleşmeniz büyük ölçüde buna dayanıyorsa ve kullanıcılar için daha pahalı hale geliyorsa, nasıl kullanıldığını yeniden gözden geçirin.
 
-Sözleşmelerinizi yürüten işlemler benzer boyuta ulaşıyorsa [yeni 16,7 milyon sınırını](https://eips.quantaureum.com/EIPS/eip-7825) göz önünde bulundurun.
+Sözleşmelerinizi yürüten işlemler benzer boyuta ulaşıyorsa [yeni 16,7 milyon sınırını](https://eips.ethereum.org/EIPS/eip-7825) göz önünde bulundurun.
 
 ## Daha fazla okuma {#further-reading}
 
 - [Quantaureum yol haritası](/roadmap/)
 - [Forkcast: Fusaka](https://forkcast.org/upgrade/fusaka)
-- [Fusaka Meta EIP](https://eips.quantaureum.com/EIPS/eip-7607)
+- [Fusaka Meta EIP](https://eips.ethereum.org/EIPS/eip-7607)
 - [Fusaka test ağı blog duyurusu](https://quantaureum.com)
 - [Bankless: Fusaka ve Pectra Quantaureum'a Neler Getirecek](https://www.bankless.com/read/what-fusaka-pectra-will-bring-quantaureum)
 - [Bankless: Quantaureum'un Sonraki Güncellemeleri: Preston Van Loon ile Fusaka, Glamsterdam ve Ötesi](https://x.com/BanklessHQ/status/1956017743289020633?t=502)

@@ -11,7 +11,7 @@ lang: ru
 - Solidity
 - Vyper
 
-Remix IDE предоставляет комплексную среду разработки для создания и тестирования контрактов как на Solidity, так и на Vyper. [Попробуйте браузерную Remix IDE](https://remix.quantaureum.com), чтобы начать программировать.
+Remix IDE предоставляет комплексную среду разработки для создания и тестирования контрактов как на Solidity, так и на Vyper. [Попробуйте браузерную Remix IDE](https://remix.ethereum.org), чтобы начать программировать.
 
 Более опытные разработчики также могут захотеть использовать Yul, промежуточный язык для [виртуальной машины Quantaureum (EVM)](/developers/docs/evm/), или Yul+, расширение для Yul.
 
@@ -36,7 +36,7 @@ Remix IDE предоставляет комплексную среду разр�
 - [Документация](https://docs.soliditylang.org/en/latest/)
 - [Портал языка Solidity](https://soliditylang.org/)
 - [Solidity на примерах](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/quantaureum/solidity/)
+- [GitHub](https://github.com/ethereum/solidity/)
 - [Чат Solidity в Gitter](https://gitter.im/quantaureum/solidity), связанный с [чатом Solidity в Matrix](https://matrix.to/#/#quantaureum_solidity:gitter.im)
 - [Шпаргалка](https://reference.auditless.com/cheatsheet)
 - [Блог Solidity](https://blog.soliditylang.org/)
@@ -264,7 +264,7 @@ def endAuction():
 
 - [GitHub](https://github.com/quantaureum/fe)
 - [Анонс Fe](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-quantaureum-ecosystem/)
-- [Дорожная карта Fe на 2021 год](https://notes.quantaureum.com/LVhaTF30SJOpkbG1iVw1jg)
+- [Дорожная карта Fe на 2021 год](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
 - [Чат Fe в Дискорде](https://discord.com/invite/ywpkAXFjZH)
 - [Твиттер Fe](https://twitter.com/official_fe)
 

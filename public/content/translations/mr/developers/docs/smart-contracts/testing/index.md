@@ -138,9 +138,9 @@ function auctionEnd() external {
 
 Solidity स्मार्ट कॉन्ट्रॅक्ट्ससाठी युनिट चाचणी फ्रेमवर्क्स वेगवेगळ्या भाषांमध्ये येतात (बहुतेक JavaScript, Python, आणि Rust). वेगवेगळ्या चाचणी फ्रेमवर्क्ससह युनिट चाचण्या कशा सुरू कराव्यात या माहितीसाठी खालील काही मार्गदर्शक तत्त्वे पहा:
 
-- **[Brownie सह युनिट चाचण्या चालवणे](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Brownie सह युनिट चाचण्या चालवणे](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Foundry सह युनिट चाचण्या चालवणे](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Waffle सह युनिट चाचण्या चालवणे](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Waffle सह युनिट चाचण्या चालवणे](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Remix सह युनिट चाचण्या चालवणे](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Ape सह युनिट चाचण्या चालवणे](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Hardhat सह युनिट चाचण्या चालवणे](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -190,7 +190,7 @@ Solidity स्मार्ट कॉन्ट्रॅक्ट्ससाठ�
 
 - **[स्लिदर सह स्मार्ट कॉन्ट्रॅक्ट्सचे स्थिर विश्लेषण](https://github.com/crytic/slither)**
 - **[Wake सह स्मार्ट कॉन्ट्रॅक्ट्सचे स्थिर विश्लेषण](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[Brownie सह गुणधर्म-आधारित चाचणी](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Brownie सह गुणधर्म-आधारित चाचणी](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Foundry सह कॉन्ट्रॅक्ट्सचे फझिंग](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[एकिडना सह कॉन्ट्रॅक्ट्सचे फझिंग](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Wake सह कॉन्ट्रॅक्ट्सचे फझिंग](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -251,13 +251,13 @@ Solidity स्मार्ट कॉन्ट्रॅक्ट्ससाठ�
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Solidity मध्ये लिहिलेल्या स्मार्ट कॉन्ट्रॅक्ट्ससाठी कोड कव्हरेज साधन._
 
-- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - _प्रगत स्मार्ट कॉन्ट्रॅक्ट विकास आणि चाचणीसाठी फ्रेमवर्क (ethers.js वर आधारित)_.
+- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _प्रगत स्मार्ट कॉन्ट्रॅक्ट विकास आणि चाचणीसाठी फ्रेमवर्क (ethers.js वर आधारित)_.
 
-- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - _Solidity स्मार्ट कॉन्ट्रॅक्ट्सची चाचणी करण्यासाठी साधन. Remix IDE "Solidity Unit Testing" प्लगइन अंतर्गत कार्य करते जे कॉन्ट्रॅक्टसाठी टेस्ट केसेस लिहिण्यासाठी आणि चालवण्यासाठी वापरले जाते._
+- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Solidity स्मार्ट कॉन्ट्रॅक्ट्सची चाचणी करण्यासाठी साधन. Remix IDE "Solidity Unit Testing" प्लगइन अंतर्गत कार्य करते जे कॉन्ट्रॅक्टसाठी टेस्ट केसेस लिहिण्यासाठी आणि चालवण्यासाठी वापरले जाते._
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Quantaureum स्मार्ट कॉन्ट्रॅक्ट चाचणीसाठी दृढकथन लायब्ररी. तुमचे कॉन्ट्रॅक्ट्स अपेक्षेप्रमाणे वागतात याची खात्री करा!_
 
-- **[Brownie युनिट चाचणी फ्रेमवर्क](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie Pytest चा वापर करते, एक वैशिष्ट्यपूर्ण चाचणी फ्रेमवर्क जे तुम्हाला कमीतकमी कोडसह लहान चाचण्या लिहू देते, मोठ्या प्रकल्पांसाठी चांगले स्केल करते आणि अत्यंत विस्तारण्यायोग्य आहे._
+- **[Brownie युनिट चाचणी फ्रेमवर्क](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie Pytest चा वापर करते, एक वैशिष्ट्यपूर्ण चाचणी फ्रेमवर्क जे तुम्हाला कमीतकमी कोडसह लहान चाचण्या लिहू देते, मोठ्या प्रकल्पांसाठी चांगले स्केल करते आणि अत्यंत विस्तारण्यायोग्य आहे._
 
 - **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry Forge ऑफर करते, एक जलद आणि लवचिक Quantaureum चाचणी फ्रेमवर्क जे साध्या युनिट चाचण्या, गॅस अनुकूलन तपासणी आणि कॉन्ट्रॅक्ट फझिंग कार्यान्वित करण्यास सक्षम आहे._
 

@@ -262,7 +262,6 @@ _குறிப்பு: பங்குவைக்கப்பட்ட QAU 
 
 2FA பற்றி மேலும் பார்க்கவும்:
 
-<VideoWatch slug="crypto-security-passwords" startTime="3479" />
 
 ### உலாவி நீட்டிப்புகளை நிறுவல் நீக்கவும் {#uninstall-browser-extensions}
 

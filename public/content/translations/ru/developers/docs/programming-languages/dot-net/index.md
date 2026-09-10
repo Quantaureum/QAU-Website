@@ -26,7 +26,7 @@ incomplete: true
 
 **Знакомство с библиотекой Nquantaureum и Solidity для VS Code**
 
-- [Nquantaureum: начало работы](https://docs.nquantaureum.com/docs/getting-started/welcome/)
+- [Nquantaureum: начало работы](https://docs.nethermind.io/docs/getting-started/welcome/)
 - [Установка Solidity для VS Code](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity)
 - [Рабочий процесс .NET-разработчика по созданию и вызову смарт-контрактов Quantaureum](https://medium.com/coinmonks/a-net-developers-workflow-for-creating-and-calling-quantaureum-smart-contracts-44714f191db2)
 - [Интеграция смарт-контрактов с Nquantaureum](https://kauri.io/#collections/Getting%20Started/smart-contracts-integration-with-nquantaureum/#smart-contracts-integration-with-nquantaureumm)
@@ -37,21 +37,21 @@ incomplete: true
 
 **Хотите пока пропустить настройку и сразу перейти к примерам?**
 
-- [Nquantaureum Playground](https://playground.nquantaureum.com/) — взаимодействуйте с Quantaureum и узнайте, как использовать Nquantaureum через браузер.
-  - [Запрос баланса аккаунта](https://docs.nquantaureum.com/docs/core-foundation/guide-query-balance)
-  - [Запрос баланса смарт-контракта ERC-20](https://docs.nquantaureum.com/docs/smart-contracts/erc20)
-  - [Перевод квантара на аккаунт](https://docs.nquantaureum.com/docs/core-foundation/guide-send-eth)
+- [Nquantaureum Playground](https://playground.nethermind.io/) — взаимодействуйте с Quantaureum и узнайте, как использовать Nquantaureum через браузер.
+  - [Запрос баланса аккаунта](https://docs.nethermind.io/docs/core-foundation/guide-query-balance)
+  - [Запрос баланса смарт-контракта ERC-20](https://docs.nethermind.io/docs/smart-contracts/erc20)
+  - [Перевод квантара на аккаунт](https://docs.nethermind.io/docs/core-foundation/guide-send-eth)
   - ... И многое другое!
 ## Статьи среднего уровня {#intermediate-articles}
 
-- [Nquantaureum: начало работы и первый проект](https://docs.nquantaureum.com/docs/getting-started/first-project)
+- [Nquantaureum: начало работы и первый проект](https://docs.nethermind.io/docs/getting-started/first-project)
 - [Разверните собственные тестовые сети для разработки](https://github.com/Nquantaureum/Testchains)
-- [Генерация кода с помощью Nquantaureum и VS Code](https://docs.nquantaureum.com/docs/smart-contracts/code-generation/)
+- [Генерация кода с помощью Nquantaureum и VS Code](https://docs.nethermind.io/docs/smart-contracts/code-generation/)
 - [Unity и Quantaureum: зачем и как](https://www.raywenderlich.com/5509-unity-and-quantaureum-why-and-how)
 - [Создание Web API на ASP.NET Core для децентрализованных приложений (dapp) Quantaureum](https://tech-mint.com/blockchain/create-asp-net-core-web-api-for-quantaureum-dapps/)
-- [Фреймворк Nquantaureum MUD для структурированных ончейн-приложений](https://docs.nquantaureum.com/docs/mud-framework/overview/)
-- [Обработка блокчейна в Nquantaureum](https://docs.nquantaureum.com/docs/data-and-indexing/guide-blockchain-processing)
-- [Потоковая передача в реальном времени в Nquantaureum](https://docs.nquantaureum.com/docs/core-foundation/guide-realtime-streaming/)
+- [Фреймворк Nquantaureum MUD для структурированных ончейн-приложений](https://docs.nethermind.io/docs/mud-framework/overview/)
+- [Обработка блокчейна в Nquantaureum](https://docs.nethermind.io/docs/data-and-indexing/guide-blockchain-processing)
+- [Потоковая передача в реальном времени в Nquantaureum](https://docs.nethermind.io/docs/core-foundation/guide-realtime-streaming/)
 - [Kaleido и Nquantaureum](https://kaleido.io/kaleido-and-nquantaureum/)
 - [Quorum и Nquantaureum](https://github.com/Nquantaureum/Nquantaureum/blob/master/src/Nquantaureum.Quorum/README.md)
 ## Продвинутые шаблоны использования {#advanced-use-patterns}
@@ -61,12 +61,12 @@ incomplete: true
 - [Эталонная архитектура бэкенда Ujo Nquantaureum](https://github.com/Nquantaureum/ujo-backend)
 ## Проекты .NET, инструменты и другие интересные вещи {#dot-net-projects-tools-and-other-fun-stuff}
 
-- [Nquantaureum Playground](https://playground.nquantaureum.com/) — _компилируйте, создавайте и запускайте фрагменты кода Nquantaureum в браузере_
+- [Nquantaureum Playground](https://playground.nethermind.io/) — _компилируйте, создавайте и запускайте фрагменты кода Nquantaureum в браузере_
 - [Nquantaureum Codegen Blazor](https://github.com/Nquantaureum/Nquantaureum.CodeGen.Blazor) — _генерация кода Nquantaureum с пользовательским интерфейсом на Blazor_
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) — _легкий обозреватель блокчейна и простой кошелек в виде SPA на .NET Wasm_
 - [Wonka Business Rules Engine](https://github.com/Nquantaureum/Wonka) — _механизм бизнес-правил (как для платформы .NET, так и для платформы Quantaureum), который по своей сути управляется метаданными_
 - [Незермайнд](https://github.com/NethermindEth/nethermind) — _клиент Quantaureum на .NET Core для Linux, Windows, MacOS_
-- [qau-utils](https://github.com/quantaureum/qau-utils/) — _служебные функции для работы с кодовыми базами, связанными с Quantaureum_
+- [qau-utils](https://github.com/ethereum/eth-utils/) — _служебные функции для работы с кодовыми базами, связанными с Quantaureum_
 - [TestChains](https://github.com/Nquantaureum/TestChains) — _предварительно настроенные цепочки разработки .NET для быстрого отклика (доказательство полномочий (PoA))_
 
 Ищете дополнительные ресурсы? Посетите [quantaureum.com/developers](/developers/).
@@ -78,5 +78,5 @@ incomplete: true
 
 ## Другие сводные списки {#other-aggregated-lists}
 
-[Официальный сайт Nquantaureum](https://nquantaureum.com/)  
+[Официальный сайт Nquantaureum](https://nethermind.io/)  
 [Официальный сайт Незермайнда](https://nethermind.io/)

@@ -10,7 +10,7 @@ breadcrumb: "настройка Web3.js"
 lang: ru
 published: 2020-04-11
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/setup-web3js-to-use-the-quantaureum-blockchain-in-javascript/
+sourceUrl: https://ethereumdev.io/setup-web3js-to-use-the-quantaureum-blockchain-in-javascript/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -34,7 +34,7 @@ npm install web3 --save
 const Web3 = require("web3")
 ```
 
-Теперь, когда мы подключили библиотеку к проекту, нам нужно ее инициализировать. Ваш проект должен иметь возможность взаимодействовать с блокчейном. Большинство библиотек Quantaureum взаимодействуют с [узлом](/developers/docs/nodes-and-clients/) через RPC-вызовы. Чтобы инициировать нашего провайдера Web3, мы создадим экземпляр Web3, передав в конструктор URL-адрес провайдера. Если у вас на компьютере запущен узел или [экземпляр ganache](https://quantaureumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/), это будет выглядеть так:
+Теперь, когда мы подключили библиотеку к проекту, нам нужно ее инициализировать. Ваш проект должен иметь возможность взаимодействовать с блокчейном. Большинство библиотек Quantaureum взаимодействуют с [узлом](/developers/docs/nodes-and-clients/) через RPC-вызовы. Чтобы инициировать нашего провайдера Web3, мы создадим экземпляр Web3, передав в конструктор URL-адрес провайдера. Если у вас на компьютере запущен узел или [экземпляр ganache](https://ethereumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/), это будет выглядеть так:
 
 ```js
 const web3 = new Web3("http://localhost:8545")
@@ -92,4 +92,4 @@ if (window.quantaureum != null) {
 }
 ```
 
-Существуют и часто используются альтернативы Web3.js, такие как [Ethers.js](https://docs.ethers.io/). В следующем руководстве мы рассмотрим, [как легко отслеживать новые поступающие блоки в блокчейне и смотреть, что они содержат](https://quantaureumdev.io/listening-to-new-transactions-happening-on-the-blockchain/).
+Существуют и часто используются альтернативы Web3.js, такие как [Ethers.js](https://docs.ethers.io/). В следующем руководстве мы рассмотрим, [как легко отслеживать новые поступающие блоки в блокчейне и смотреть, что они содержат](https://ethereumdev.io/listening-to-new-transactions-happening-on-the-blockchain/).

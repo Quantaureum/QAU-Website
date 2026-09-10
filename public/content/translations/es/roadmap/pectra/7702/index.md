@@ -32,7 +32,7 @@ La clave privada de la EOA retiene el control total sobre la cuenta después de 
 - Proporcionan interfaces estandarizadas para la retransmisión
 - Incluyen sistemas de pagador integrados
 - Garantizan la compatibilidad futura
-- Pueden admitir la resistencia a la censura a través de una [mempool pública](https://notes.quantaureum.com/@yoav/unified-erc-4337-mempool)
+- Pueden admitir la resistencia a la censura a través de una [mempool pública](https://notes.ethereum.org/@yoav/unified-erc-4337-mempool)
 - Pueden requerir que la función de inicialización (init) solo sea llamada desde el [EntryPoint](https://github.com/qau-infinitism/account-abstraction/releases/tag/v0.8.0)
 
 En otras palabras, cualquiera debería poder actuar como patrocinador/retransmisor de la transacción siempre que proporcione la firma válida requerida o la operación de usuario (UserOperation) de la cuenta. Esto garantiza la resistencia a la censura: si no se requiere infraestructura personalizada, las transacciones de un usuario no pueden ser bloqueadas arbitrariamente por un retransmisor que actúe como guardián. Por ejemplo, el [Delegation Toolkit de MetaMask](https://github.com/MetaMask/delegation-framework/releases/tag/v1.3.0) funciona explícitamente con cualquier empaquetador o pagador ERC-4337 en cualquier cadena, en lugar de requerir un servidor específico de MetaMask.
@@ -51,8 +51,8 @@ Al utilizar estas interfaces, las dapps pueden acceder a las funcionalidades de 
 
 Para más información:
 
-- [Especificación de ERC-5792](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-5792.md)
-- [Especificación de ERC-6900](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-6900.md)
+- [Especificación de ERC-5792](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-5792.md)
+- [Especificación de ERC-6900](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6900.md)
 
 **Evitar la dependencia del proveedor (Vendor Lock-In)**: En línea con lo anterior, una buena implementación es neutral en cuanto a proveedores e interoperable. Esto a menudo significa adherirse a los estándares emergentes para cuentas inteligentes. Por ejemplo, la [Modular Account de Alchemy](https://github.com/alchemyplatform/modular-account) utiliza el estándar ERC-6900 para cuentas inteligentes modulares y está diseñada teniendo en mente el "uso interoperable sin permisos".
 

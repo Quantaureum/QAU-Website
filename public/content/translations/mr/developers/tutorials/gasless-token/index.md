@@ -93,7 +93,7 @@ contract UserProxy {
     bytes32 immutable DOMAIN_SEPARATOR;
 ```
 
-[EIP-712 स्वाक्षऱ्या](https://eips.quantaureum.com/EIPS/eip-712) सत्यापित करण्यासाठी आवश्यक माहिती.
+[EIP-712 स्वाक्षऱ्या](https://eips.ethereum.org/EIPS/eip-712) सत्यापित करण्यासाठी आवश्यक माहिती.
 
 ```solidity
     constructor(address owner_) {
@@ -117,7 +117,7 @@ contract UserProxy {
     }
 ```
 
-[डोमेन सेपरेटर](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator). हे कंपाइल वेळेत मोजले जाऊ शकत नाही, कारण ते चेन आयडी आणि कॉन्ट्रॅक्ट पत्त्यावर अवलंबून असते. यामुळे UserProxy ला दुसऱ्यासाठी तयार केलेल्या संदेशाद्वारे फसवणे अशक्य होते.
+[डोमेन सेपरेटर](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator). हे कंपाइल वेळेत मोजले जाऊ शकत नाही, कारण ते चेन आयडी आणि कॉन्ट्रॅक्ट पत्त्यावर अवलंबून असते. यामुळे UserProxy ला दुसऱ्यासाठी तयार केलेल्या संदेशाद्वारे फसवणे अशक्य होते.
 
 ```solidity
     event CallResult(address target, bytes returnData);

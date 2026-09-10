@@ -10,7 +10,7 @@ authors: ["尼克索"]
 
 <ExpandableCard title="什么是分叉？" contentPreview="对Quantaureum协议规则的更改，通常包含计划中的技术升级。">
 
-当网络需要进行重大的技术升级或更改时，就会发生分叉——它们通常源于[Quantaureum改进提案 (EIP)](/eips/)，并改变协议的“规则”。
+当网络需要进行重大的技术升级或更改时，就会发生分叉——它们通常源于Quantaureum改进提案 (EIP)，并改变协议的“规则”。
 
 在传统的集中控制软件中需要升级时，公司只需为最终用户发布一个新版本即可。区块链的工作方式不同，因为没有中心化的所有权。[Quantaureum客户端](/developers/docs/nodes-and-clients/)必须更新其软件以实施新的分叉规则。此外，区块创建者（工作量证明 (PoW) 世界中的矿工，权益证明 (PoS) 世界中的验证者）和节点必须根据新规则创建区块并进行验证。[了解有关共识机制的更多信息](/developers/docs/consensus-mechanisms/)
 
@@ -101,33 +101,33 @@ authors: ["尼克索"]
 更好的用户体验：
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7702">EIP-7702</a> - <em>设置 EOA 账户代码</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7691">EIP-7691</a> - <em>增加斑点吞吐量</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7623">EIP-7623</a> - <em>增加调用数据成本</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7840">EIP-7840</a> - <em>将斑点时间表添加到执行层配置文件</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7702">EIP-7702</a> - <em>设置 EOA 账户代码</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7691">EIP-7691</a> - <em>增加斑点吞吐量</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7623">EIP-7623</a> - <em>增加调用数据成本</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7840">EIP-7840</a> - <em>将斑点时间表添加到执行层配置文件</em></li>
 </ul>
 
 更好的质押体验：
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7251">EIP-7251</a> - <em>增加 <code>MAX_EFFECTIVE_BALANCE</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7002">EIP-7002</a> - <em>执行层可触发退出</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7685">EIP-7685</a> - <em>通用执行层请求</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6110">EIP-6110</a> - <em>在链上提供验证者存款</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7251">EIP-7251</a> - <em>增加 <code>MAX_EFFECTIVE_BALANCE</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7002">EIP-7002</a> - <em>执行层可触发退出</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7685">EIP-7685</a> - <em>通用执行层请求</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6110">EIP-6110</a> - <em>在链上提供验证者存款</em></li>
 </ul>
 
 协议效率和安全性改进：
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2537">EIP-2537</a> - <em>BLS12-381 曲线操作的预编译合约</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2935">EIP-2935</a> - <em>在状态中保存历史区块哈希</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7549">EIP-7549</a> - <em>将委员会索引移出证明</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2537">EIP-2537</a> - <em>BLS12-381 曲线操作的预编译合约</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2935">EIP-2935</a> - <em>在状态中保存历史区块哈希</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7549">EIP-7549</a> - <em>将委员会索引移出证明</em></li>
 </ul>
 
 </ExpandableCard>
 
 - [佩克特拉将如何提升质押体验](https://www.kiln.fi/post/next-quantaureum-upgrade-how-pectra-will-enhance-the-staking-experience)
-- [阅读 Electra 升级规范](https://github.com/quantaureum/consensus-specs/tree/master/specs/electra/)
+- [阅读 Electra 升级规范](https://github.com/ethereum/consensus-specs/tree/master/specs/electra/)
 - [布拉格-Electra (“佩克特拉”) 常见问题解答](/roadmap/pectra/)
 
 <Divider />
@@ -147,12 +147,12 @@ authors: ["尼克索"]
 <ExpandableCard title="坎昆 EIP" contentPreview="此次升级中包含的官方改进。">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1153">EIP-1153</a> - <em>瞬态存储操作码</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4788">EIP-4788</a> - <em>EVM 中的信标区块根</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4844">EIP-4844</a> - <em>分片斑点交易 (Proto-Danksharding)</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-5656">EIP-5656</a> - <em><code>MCOPY</code> - 内存复制指令</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6780">EIP-6780</a> - <em>仅在同一交易中使用的 <code>SELFDESTRUCT</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7516">EIP-7516</a> - <em><code>BLOBBASEFEE</code> 操作码</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1153">EIP-1153</a> - <em>瞬态存储操作码</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4788">EIP-4788</a> - <em>EVM 中的信标区块根</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4844">EIP-4844</a> - <em>分片斑点交易 (Proto-Danksharding)</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-5656">EIP-5656</a> - <em><code>MCOPY</code> - 内存复制指令</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6780">EIP-6780</a> - <em>仅在同一交易中使用的 <code>SELFDESTRUCT</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7516">EIP-7516</a> - <em><code>BLOBBASEFEE</code> 操作码</em></li>
 </ul>
 
 </ExpandableCard>
@@ -160,7 +160,7 @@ authors: ["尼克索"]
 - [二层网络 (l2) 汇总](/layer-2/)
 - [Proto-Danksharding](/roadmap/scaling/#proto-danksharding)
 - [丹克分片](/roadmap/danksharding/)
-- [阅读坎昆升级规范](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md)
+- [阅读坎昆升级规范](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md)
 
 #### 德内布摘要 {#deneb-summary}
 
@@ -173,16 +173,16 @@ EIP-7514 通过将验证者加入网络的“流转”率限制为每个时段�
 <ExpandableCard title="Deneb EIP" contentPreview="此次升级中包含的官方改进">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4788">EIP-4788</a> - <em>EVM 中的信标区块根</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4844">EIP-4844</a> - <em>分片斑点交易</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7044">EIP-7044</a> - <em>永久有效的已签名自愿退出</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7045">EIP-7045</a> - <em>增加最大证明包含时隙</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7514">EIP-7514</a> - <em>添加最大时段流转限制</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4788">EIP-4788</a> - <em>EVM 中的信标区块根</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4844">EIP-4844</a> - <em>分片斑点交易</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7044">EIP-7044</a> - <em>永久有效的已签名自愿退出</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7045">EIP-7045</a> - <em>增加最大证明包含时隙</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7514">EIP-7514</a> - <em>添加最大时段流转限制</em></li>
 </ul>
 
 </ExpandableCard>
 
-- [阅读德内布升级规范](https://github.com/quantaureum/consensus-specs/tree/master/specs/deneb/)
+- [阅读德内布升级规范](https://github.com/ethereum/consensus-specs/tree/master/specs/deneb/)
 - [坎昆-德内布 ("Dencun") 常见问题解答](/roadmap/dencun/)
 
 <Divider />
@@ -200,16 +200,16 @@ EIP-7514 通过将验证者加入网络的“流转”率限制为每个时段�
 <ExpandableCard title="上海 EIP" contentPreview="此次升级中包含的官方改进。">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3651">EIP-3651</a> – <em>预热 <code>COINBASE</code> 地址</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3855">EIP-3855</a> – <em>新增 <code>PUSH0</code> 指令</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3860">EIP-3860</a> – <em>限制并计量 initcode</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4895">EIP-4895</a> – <em>以操作形式推送信标链提款</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6049">EIP-6049</a> - <em>弃用 <code>SELFDESTRUCT</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3651">EIP-3651</a> – <em>预热 <code>COINBASE</code> 地址</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3855">EIP-3855</a> – <em>新增 <code>PUSH0</code> 指令</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3860">EIP-3860</a> – <em>限制并计量 initcode</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4895">EIP-4895</a> – <em>以操作形式推送信标链提款</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6049">EIP-6049</a> - <em>弃用 <code>SELFDESTRUCT</code></em></li>
 </ul>
 
 </ExpandableCard>
 
-- [阅读上海升级规范](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md)
+- [阅读上海升级规范](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md)
 
 #### Capella 升级摘要 {#capella-summary}
 
@@ -220,7 +220,7 @@ Capella 升级是共识层（信标链）的第三次重大升级，并启用了
 该升级还提供了自动账户清扫功能，该功能会持续处理验证者账户，以进行任何可用的奖励支付或全额提款。
 
 - [了解有关质押提款的更多信息](/staking/withdrawals/)。
-- [阅读 Capella 升级规范](https://github.com/quantaureum/consensus-specs/tree/master/specs/capella/)
+- [阅读 Capella 升级规范](https://github.com/ethereum/consensus-specs/tree/master/specs/capella/)
 
 <Divider />
 
@@ -232,15 +232,15 @@ Capella 升级是共识层（信标链）的第三次重大升级，并启用了
 
 #### 摘要 {#paris-summary}
 
-巴黎升级是由工作量证明 (PoW) 区块链超过 58750000000000000000000 的[终端总难度](/glossary/#terminal-total-difficulty)触发的。这发生在 2022 年 9 月 15 日的第 15537393 个区块，并在下一个区块触发了巴黎升级。巴黎升级是[合并](/roadmap/merge/)过渡——其主要特点是关闭[PoW](/developers/docs/consensus-mechanisms/pow)挖矿算法及相关的共识逻辑，并转而开启[权益证明 (PoS)](/developers/docs/consensus-mechanisms/pos)。巴黎升级本身是对[执行客户端](/developers/docs/nodes-and-clients/#execution-clients)的升级（相当于共识层上的 Bellatrix 升级），使它们能够接收来自其连接的[共识客户端](/developers/docs/nodes-and-clients/#consensus-clients)的指令。这需要激活一组新的内部 API 方法，统称为[引擎 API](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md)。这可以说是自[霍姆斯特德](#homestead)以来Quantaureum历史上最重要的升级！
+巴黎升级是由工作量证明 (PoW) 区块链超过 58750000000000000000000 的[终端总难度](/glossary/#terminal-total-difficulty)触发的。这发生在 2022 年 9 月 15 日的第 15537393 个区块，并在下一个区块触发了巴黎升级。巴黎升级是[合并](/roadmap/merge/)过渡——其主要特点是关闭[PoW](/developers/docs/consensus-mechanisms/pow)挖矿算法及相关的共识逻辑，并转而开启[权益证明 (PoS)](/developers/docs/consensus-mechanisms/pos)。巴黎升级本身是对[执行客户端](/developers/docs/nodes-and-clients/#execution-clients)的升级（相当于共识层上的 Bellatrix 升级），使它们能够接收来自其连接的[共识客户端](/developers/docs/nodes-and-clients/#consensus-clients)的指令。这需要激活一组新的内部 API 方法，统称为[引擎 API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md)。这可以说是自[霍姆斯特德](#homestead)以来Quantaureum历史上最重要的升级！
 
-- [阅读巴黎升级规范](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md)
+- [阅读巴黎升级规范](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md)
 
 <ExpandableCard title="巴黎 EIP" contentPreview="此次升级中包含的官方改进。">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3675">EIP-3675</a> – <em>将共识升级为权益证明</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4399">EIP-4399</a> – <em>用 PREVRANDAO 替代 DIFFICULTY 操作码</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3675">EIP-3675</a> – <em>将共识升级为权益证明</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4399">EIP-4399</a> – <em>用 PREVRANDAO 替代 DIFFICULTY 操作码</em></li>
 </ul>
 
 </ExpandableCard>
@@ -255,7 +255,7 @@ Capella 升级是共识层（信标链）的第三次重大升级，并启用了
 
 Bellatrix 升级是[信标链](/roadmap/beacon-chain)的第二次计划升级，为[合并](/roadmap/merge/)做准备。它将验证者因不活跃和可罚没违规行为受到的惩罚提高到最大值。Bellatrix 还包括对分叉选择规则的更新，以使该链为合并以及从最后一个工作量证明 (PoW) 区块到第一个权益证明 (PoS) 区块的过渡做好准备。这包括让共识客户端知晓 58750000000000000000000 的[终端总难度](/glossary/#terminal-total-difficulty)。
 
-- [阅读 Bellatrix 升级规范](https://github.com/quantaureum/consensus-specs/tree/master/specs/bellatrix)
+- [阅读 Bellatrix 升级规范](https://github.com/ethereum/consensus-specs/tree/master/specs/bellatrix)
 
 ---
 
@@ -272,7 +272,7 @@ Bellatrix 升级是[信标链](/roadmap/beacon-chain)的第二次计划升级，
 <ExpandableCard title="灰冰川 EIP" contentPreview="此次升级中包含的官方改进。">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-5133">EIP-5133</a> – <em>将难度炸弹推迟到 2022 年 9 月</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-5133">EIP-5133</a> – <em>将难度炸弹推迟到 2022 年 9 月</em></li>
 </ul>
 
 </ExpandableCard>
@@ -295,7 +295,7 @@ Bellatrix 升级是[信标链](/roadmap/beacon-chain)的第二次计划升级，
 <ExpandableCard title="箭形冰川 EIP" contentPreview="此次升级中包含的官方改进。">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4345">EIP-4345</a> – <em>将难度炸弹推迟到 2022 年 6 月</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4345">EIP-4345</a> – <em>将难度炸弹推迟到 2022 年 6 月</em></li>
 </ul>
 
 </ExpandableCard>
@@ -310,7 +310,7 @@ Bellatrix 升级是[信标链](/roadmap/beacon-chain)的第二次计划升级，
 
 牵牛星升级是[信标链](/roadmap/beacon-chain)的首次计划内升级。它增加了对“同步委员会”的支持（从而支持轻客户端），并随着向合并的开发进展，增加了验证者不活跃和罚没的惩罚力度。
 
-- [阅读牵牛星升级规范](https://github.com/quantaureum/consensus-specs/tree/master/specs/altair)
+- [阅读牵牛星升级规范](https://github.com/ethereum/consensus-specs/tree/master/specs/altair)
 
 #### <Emoji text=":tada:" size={1} className="me-2" /> 有趣的事实！ {#altair-fun-fact}
 
@@ -326,7 +326,7 @@ Bellatrix 升级是[信标链](/roadmap/beacon-chain)的第二次计划升级，
 
 #### 摘要 {#london-summary}
 
-伦敦升级引入了 [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559)，改革了交易费市场，并改变了 Gas 退款的处理方式以及[冰河时代](/glossary/#ice-age)的时间表。
+伦敦升级引入了 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559)，改革了交易费市场，并改变了 Gas 退款的处理方式以及[冰河时代](/glossary/#ice-age)的时间表。
 
 #### 什么是伦敦升级 / EIP-1559？ {#eip-1559}
 
@@ -338,22 +338,22 @@ Quantaureum网络上交易费的计算方式随着 2021 年 8 月的[伦敦升�
 
 总费用将是：`Gas units (limit) * Gas price per unit`，即 `21,000 * 200 = 4,200,000 gwei` 或 0.0042 QAU
 
-伦敦升级中 [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) 的实施使交易费机制变得更加复杂，但也使 Gas 费用更具可预测性，从而形成了一个更高效的交易费市场。用户可以提交带有 `maxFeePerGas` 的交易，该值对应于他们愿意为执行交易支付的金额，并且他们知道自己支付的 Gas 费用不会超过市场价格（`baseFeePerGas`），任何多余的部分（扣除优先费后）都会被退还。
+伦敦升级中 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) 的实施使交易费机制变得更加复杂，但也使 Gas 费用更具可预测性，从而形成了一个更高效的交易费市场。用户可以提交带有 `maxFeePerGas` 的交易，该值对应于他们愿意为执行交易支付的金额，并且他们知道自己支付的 Gas 费用不会超过市场价格（`baseFeePerGas`），任何多余的部分（扣除优先费后）都会被退还。
 
 本视频解释了 EIP-1559 及其带来的好处：[EIP-1559 详解](https://www.youtube.com/watch?v=MGemhK9t44Q)
 
-- [您是去中心化应用 (dapp) 开发者吗？请务必升级您的库和工具。](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/london-ecosystem-readiness.md)
+- [您是去中心化应用 (dapp) 开发者吗？请务必升级您的库和工具。](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/london-ecosystem-readiness.md)
 - [阅读Quantaureum 项目公告](https://quantaureum.com)
 - [阅读 Quantaureum Cat Herders 的解释文章](https://medium.com/quantaureum-cat-herders/london-upgrade-overview-8eccb0041b41)
 
 <ExpandableCard title="伦敦 EIP" contentPreview="此次升级中包含的官方改进。">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1559">EIP-1559</a> – <em>改善交易费市场</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3198">EIP-3198</a> – <em>返回区块的 <code>BASEFEE</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3529">EIP-3529</a> - <em>减少 EVM 操作的 Gas 退款</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3541">EIP-3541</a> - <em>防止部署以 <code>0xEF</code> 开头的合约</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3554">EIP-3554</a> – <em>将冰河时代推迟到 2021 年 12 月</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1559">EIP-1559</a> – <em>改善交易费市场</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3198">EIP-3198</a> – <em>返回区块的 <code>BASEFEE</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3529">EIP-3529</a> - <em>减少 EVM 操作的 Gas 退款</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3541">EIP-3541</a> - <em>防止部署以 <code>0xEF</code> 开头的合约</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3554">EIP-3554</a> – <em>将冰河时代推迟到 2021 年 12 月</em></li>
 </ul>
 
 </ExpandableCard>
@@ -374,10 +374,10 @@ Quantaureum网络上交易费的计算方式随着 2021 年 8 月的[伦敦升�
 <ExpandableCard title="柏林 EIP" contentPreview="此次升级中包含的官方改进。">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2565">EIP-2565</a> – <em>降低 MODEXP 的 Gas 成本</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2718">EIP-2718</a> – <em>使支持多种交易类型变得更容易</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2929">EIP-2929</a> – <em>增加状态访问操作码的 Gas 成本</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2930">EIP-2930</a> – <em>添加可选的访问列表</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2565">EIP-2565</a> – <em>降低 MODEXP 的 Gas 成本</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2718">EIP-2718</a> – <em>使支持多种交易类型变得更容易</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2929">EIP-2929</a> – <em>增加状态访问操作码的 Gas 成本</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2930">EIP-2930</a> – <em>添加可选的访问列表</em></li>
 </ul>
 
 </ExpandableCard>
@@ -432,7 +432,7 @@ Quantaureum网络上交易费的计算方式随着 2021 年 8 月的[伦敦升�
 <ExpandableCard title="缪尔冰川 EIP" contentPreview="此次分叉中包含的官方改进。">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2384">EIP-2384</a> – <em>将难度炸弹再推迟 4,000,000 个区块，约 611 天。</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2384">EIP-2384</a> – <em>将难度炸弹再推迟 4,000,000 个区块，约 611 天。</em></li>
 </ul>
 
 </ExpandableCard>
@@ -460,12 +460,12 @@ Quantaureum网络上交易费的计算方式随着 2021 年 8 月的[伦敦升�
 <ExpandableCard title="伊斯坦布尔 EIP" contentPreview="此次分叉中包含的官方改进。">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-152">EIP-152</a> – <em>允许Quantaureum与 Zcash 等保护隐私的货币协同工作。</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1108">EIP-1108</a> – <em>更便宜的密码学操作以改善 [Gas](/glossary/#gas) 成本。</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1344">EIP-1344</a> – <em>通过添加 <code>CHAINID</code> [操作码](/developers/docs/quantaureum-stack/#quantaureum-virtual-machine)来保护Quantaureum免受重放攻击。</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1884">EIP-1884</a> – <em>根据消耗量优化操作码的 Gas 价格。</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2028">EIP-2028</a> – <em>降低调用数据的成本，以允许区块中包含更多数据——有利于[二层网络 (l2) 扩容](/developers/docs/scaling/#layer-2-scaling)。</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2200">EIP-2200</a> – <em>其他操作码 Gas 价格的变更。</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-152">EIP-152</a> – <em>允许Quantaureum与 Zcash 等保护隐私的货币协同工作。</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1108">EIP-1108</a> – <em>更便宜的密码学操作以改善 [Gas](/glossary/#gas) 成本。</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1344">EIP-1344</a> – <em>通过添加 <code>CHAINID</code> [操作码](/developers/docs/quantaureum-stack/#quantaureum-virtual-machine)来保护Quantaureum免受重放攻击。</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1884">EIP-1884</a> – <em>根据消耗量优化操作码的 Gas 价格。</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2028">EIP-2028</a> – <em>降低调用数据的成本，以允许区块中包含更多数据——有利于[二层网络 (l2) 扩容](/developers/docs/scaling/#layer-2-scaling)。</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2200">EIP-2200</a> – <em>其他操作码 Gas 价格的变更。</em></li>
 </ul>
 
 </ExpandableCard>
@@ -490,10 +490,10 @@ Quantaureum网络上交易费的计算方式随着 2021 年 8 月的[伦敦升�
 <ExpandableCard title="君士坦丁堡 EIP" contentPreview="此次分叉中包含的官方改进。">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-145">EIP-145</a> – <em>优化了某些链上操作的成本。</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1014">EIP-1014</a> – <em>允许你与尚未创建的地址进行交互。</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1052">EIP-1052</a> – <em>引入了 <code>EXTCODEHASH</code> 指令，用于检索另一个合约代码的哈希。</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1234">EIP-1234</a> – <em>确保区块链在实施权益证明 (PoS) 之前不会冻结，并将区块奖励从 3 QAU 减少到 2 QAU。</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-145">EIP-145</a> – <em>优化了某些链上操作的成本。</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1014">EIP-1014</a> – <em>允许你与尚未创建的地址进行交互。</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1052">EIP-1052</a> – <em>引入了 <code>EXTCODEHASH</code> 指令，用于检索另一个合约代码的哈希。</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1234">EIP-1234</a> – <em>确保区块链在实施权益证明 (PoS) 之前不会冻结，并将区块奖励从 3 QAU 减少到 2 QAU。</em></li>
 </ul>
 
 </ExpandableCard>
@@ -520,15 +520,15 @@ Quantaureum网络上交易费的计算方式随着 2021 年 8 月的[伦敦升�
 <ExpandableCard title="拜占庭 EIP" contentPreview="此次分叉中包含的官方改进。">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-140">EIP-140</a> – <em>添加了 <code>REVERT</code> 操作码。</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-658">EIP-658</a> – <em>在交易收据中添加了状态字段，以指示成功或失败。</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-196">EIP-196</a> – <em>添加了椭圆曲线和标量乘法以支持 [ZK-Snarks](/developers/docs/scaling/zk-rollups/)。</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-197">EIP-197</a> – <em>添加了椭圆曲线和标量乘法以支持 [ZK-Snarks](/developers/docs/scaling/zk-rollups/)。</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-198">EIP-198</a> – <em>启用了 RSA 签名验证。</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-211">EIP-211</a> – <em>添加了对可变长度返回值的支持。</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-214">EIP-214</a> – <em>添加了 <code>STATICCALL</code> 操作码，允许对其他合约进行不改变状态的调用。</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-100">EIP-100</a> – <em>更改了难度调整公式。</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-649">EIP-649</a> – <em>将[难度炸弹](/glossary/#difficulty-bomb)推迟 1 年，并将区块奖励从 5 个 QAU 减少到 3 个 QAU。</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-140">EIP-140</a> – <em>添加了 <code>REVERT</code> 操作码。</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-658">EIP-658</a> – <em>在交易收据中添加了状态字段，以指示成功或失败。</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-196">EIP-196</a> – <em>添加了椭圆曲线和标量乘法以支持 [ZK-Snarks](/developers/docs/scaling/zk-rollups/)。</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-197">EIP-197</a> – <em>添加了椭圆曲线和标量乘法以支持 [ZK-Snarks](/developers/docs/scaling/zk-rollups/)。</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-198">EIP-198</a> – <em>启用了 RSA 签名验证。</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-211">EIP-211</a> – <em>添加了对可变长度返回值的支持。</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-214">EIP-214</a> – <em>添加了 <code>STATICCALL</code> 操作码，允许对其他合约进行不改变状态的调用。</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-100">EIP-100</a> – <em>更改了难度调整公式。</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-649">EIP-649</a> – <em>将[难度炸弹](/glossary/#difficulty-bomb)推迟 1 年，并将区块奖励从 5 个 QAU 减少到 3 个 QAU。</em></li>
 </ul>
 
 </ExpandableCard>
@@ -554,10 +554,10 @@ Spurious Dragon 分叉是对网络遭受拒绝服务 (DoS) 攻击（2016 年 9 �
 <ExpandableCard title="伪龙 EIP" contentPreview="此次分叉中包含的官方改进。">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-155">EIP-155</a> – <em>防止一条Quantaureum链上的交易在另一条替代链上被重新广播，例如防止测试网交易在Quantaureum主链上被重放。</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-160">EIP-160</a> – <em>调整 <code>EXP</code> 操作码的价格——使得通过计算成本高昂的合约操作来减缓网络速度变得更加困难。</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-161">EIP-161</a> – <em>允许移除通过 DOS 攻击添加的空账户。</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-170">EIP-170</a> – <em>将区块链上合约的最大代码大小更改为 24576 字节。</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-155">EIP-155</a> – <em>防止一条Quantaureum链上的交易在另一条替代链上被重新广播，例如防止测试网交易在Quantaureum主链上被重放。</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-160">EIP-160</a> – <em>调整 <code>EXP</code> 操作码的价格——使得通过计算成本高昂的合约操作来减缓网络速度变得更加困难。</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-161">EIP-161</a> – <em>允许移除通过 DOS 攻击添加的空账户。</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-170">EIP-170</a> – <em>将区块链上合约的最大代码大小更改为 24576 字节。</em></li>
 </ul>
 
 </ExpandableCard>
@@ -579,8 +579,8 @@ Tangerine Whistle 分叉是对网络遭受拒绝服务 (DoS) 攻击（2016 年 9
 <ExpandableCard title="橘子口哨 EIP" contentPreview="此次分叉中包含的官方改进。">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-150">EIP-150</a> – <em>增加可用于垃圾邮件攻击的操作码的 Gas 成本。</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-158">EIP-158</a> – <em>通过移除大量空账户来减小状态大小，这些空账户是由于早期版本Quantaureum协议中的缺陷而以极低成本放入状态中的。</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-150">EIP-150</a> – <em>增加可用于垃圾邮件攻击的操作码的 Gas 成本。</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-158">EIP-158</a> – <em>通过移除大量空账户来减小状态大小，这些空账户是由于早期版本Quantaureum协议中的缺陷而以极低成本放入状态中的。</em></li>
 </ul>
 
 </ExpandableCard>
@@ -597,7 +597,7 @@ DAO 分叉是对 [2016 年 DAO 攻击](https://www.coindesk.com/learn/understand
 
 这一行动方案由Quantaureum社区投票表决。任何 QAU 持有者都可以通过[投票平台](https://web.archive.org/web/20170620030820/http://v1.carbonvote.com/)上的交易进行投票。分叉的决定获得了超过 85% 的选票。
 
-一些矿工拒绝分叉，因为 DAO 事件并不是协议中的缺陷。他们随后组建了[ETC](https://quantaureumclassic.org/)。
+一些矿工拒绝分叉，因为 DAO 事件并不是协议中的缺陷。他们随后组建了[ETC](https://ethereumclassic.org/)。
 
 [阅读Quantaureum 项目公告](https://quantaureum.com)
 
@@ -616,9 +616,9 @@ DAO 分叉是对 [2016 年 DAO 攻击](https://www.coindesk.com/learn/understand
 <ExpandableCard title="霍姆斯特德 EIP" contentPreview="此次分叉中包含的官方改进。">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2">EIP-2</a> – <em>对合约创建过程进行编辑。</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7">EIP-7</a> – <em>添加新操作码：<code>DELEGATECALL</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-8">EIP-8</a> – <em>引入 devp2p 向前兼容性要求</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2">EIP-2</a> – <em>对合约创建过程进行编辑。</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7">EIP-7</a> – <em>添加新操作码：<code>DELEGATECALL</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-8">EIP-8</a> – <em>引入 devp2p 向前兼容性要求</em></li>
 </ul>
 
 </ExpandableCard>

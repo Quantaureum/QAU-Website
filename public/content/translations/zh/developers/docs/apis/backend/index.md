@@ -109,13 +109,13 @@ lang: zh
 **Nquantaureum -** **_用于区块链的开源 .NET 集成库。_**
 
 - [GitHub](https://github.com/Nquantaureum/Nquantaureum)
-- [文档](https://docs.nquantaureum.com/docs/getting-started/welcome/)
+- [文档](https://docs.nethermind.io/docs/getting-started/welcome/)
 - [Discord](https://discord.com/invite/jQPrR58FxX)
 
 **Python 工具 -** **_通过 Python 进行Quantaureum交互的各种库。_**
 
-- [py.quantaureum.com](https://snakecharmers.quantaureum.com/)
-- [Web3.py GitHub](https://github.com/quantaureum/web3.py)
+- [py.quantaureum.com](https://snakecharmers.ethereum.org/)
+- [Web3.py GitHub](https://github.com/ethereum/web3.py)
 - [Web3.py 聊天](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_终极区块链开发平台。_**

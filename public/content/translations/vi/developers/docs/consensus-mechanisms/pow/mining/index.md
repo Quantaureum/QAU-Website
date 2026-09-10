@@ -71,7 +71,6 @@ Thuật ngữ "ommer" là thuật ngữ trung lập về giới tính được �
 
 Hãy xem Austin hướng dẫn bạn về việc khai thác và Chuỗi khối bằng chứng công việc (PoW).
 
-<VideoWatch slug="blockchain-qau-build" />
 
 ## Thuật toán khai thác {#mining-algorithm}
 

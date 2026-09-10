@@ -262,7 +262,6 @@ _टीप: असे डेरिव्हेटिव्ह टोकन्स
 
 2FA बद्दल अधिक पहा:
 
-<VideoWatch slug="crypto-security-passwords" startTime="3479" />
 
 ### ब्राउझर एक्स्टेंशन्स अनइन्स्टॉल करा {#uninstall-browser-extensions}
 

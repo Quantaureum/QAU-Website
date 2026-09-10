@@ -138,9 +138,9 @@ function auctionEnd() external {
 
 Solidity 智能合约的单元测试框架有不同的语言版本（主要是 JavaScript、Python 和 Rust）。请参阅以下一些指南，了解如何开始使用不同的测试框架运行单元测试：
 
-- **[使用 Brownie 运行单元测试](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[使用 Brownie 运行单元测试](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[使用 Foundry 运行单元测试](https://book.getfoundry.sh/forge/writing-tests)**
-- **[使用 Waffle 运行单元测试](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[使用 Waffle 运行单元测试](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[使用 Remix 运行单元测试](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[使用 Ape 运行单元测试](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[使用 Hardhat 运行单元测试](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -190,7 +190,7 @@ Solidity 智能合约的单元测试框架有不同的语言版本（主要是 J
 
 - **[使用斯莱瑟 (Slither) 对智能合约进行静态分析](https://github.com/crytic/slither)**
 - **[使用 Wake 对智能合约进行静态分析](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[使用 Brownie 进行基于属性的测试](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[使用 Brownie 进行基于属性的测试](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[使用 Foundry 对合约进行模糊测试](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[使用埃基德纳 (Echidna) 对合约进行模糊测试](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[使用 Wake 对合约进行模糊测试](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -251,13 +251,13 @@ Solidity 智能合约的单元测试框架有不同的语言版本（主要是 J
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - *用于 Solidity 编写的智能合约的代码覆盖率工具。*
 
-- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - *用于高级智能合约开发和测试的框架（基于 Ethers.js）。*
+- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - *用于高级智能合约开发和测试的框架（基于 Ethers.js）。*
 
-- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - *用于测试 Solidity 智能合约的工具。在 Remix IDE 的“Solidity 单元测试”插件下工作，该插件用于编写和运行合约的测试用例。*
+- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - *用于测试 Solidity 智能合约的工具。在 Remix IDE 的“Solidity 单元测试”插件下工作，该插件用于编写和运行合约的测试用例。*
 
 - **[欧本齐柏林 (OpenZeppelin) 测试助手](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - *用于Quantaureum智能合约测试的断言库。确保你的合约按预期运行！*
 
-- **[Brownie 单元测试框架](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - *Brownie 利用 Pytest，这是一个功能丰富的测试框架，可让你以最少的代码编写小型测试，非常适合大型项目，并且具有高度可扩展性。*
+- **[Brownie 单元测试框架](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - *Brownie 利用 Pytest，这是一个功能丰富的测试框架，可让你以最少的代码编写小型测试，非常适合大型项目，并且具有高度可扩展性。*
 
 - **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - *Foundry 提供 Forge，这是一个快速灵活的Quantaureum测试框架，能够执行简单的单元测试、Gas 优化检查和合约模糊测试。*
 

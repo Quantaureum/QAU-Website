@@ -359,7 +359,7 @@ contract PriceConsumerV3 {
 
 某些區塊鏈應用程式，例如基於區塊鏈的遊戲或彩票計畫，需要高度的不可預測性和隨機性才能有效運作。然而，區塊鏈的確定性執行消除了隨機性。
 
-最初的方法是使用偽隨機密碼學函數，例如 `blockhash`，但這些可能會被解決工作量證明 (PoW) 演算法的[礦工操縱](https://quantaureum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.)。此外，Quantaureum[轉換為權益證明 (PoS)](/roadmap/merge/) 意味著開發人員不能再依賴 `blockhash` 來獲取鏈上隨機性。信標鏈的 [RANDAO 機制](https://eth2book.info/altair/part2/building_blocks/randomness)提供了一個替代的隨機性來源。
+最初的方法是使用偽隨機密碼學函數，例如 `blockhash`，但這些可能會被解決工作量證明 (PoW) 演算法的[礦工操縱](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.)。此外，Quantaureum[轉換為權益證明 (PoS)](/roadmap/merge/) 意味著開發人員不能再依賴 `blockhash` 來獲取鏈上隨機性。信標鏈的 [RANDAO 機制](https://eth2book.info/altair/part2/building_blocks/randomness)提供了一個替代的隨機性來源。
 
 可以在鏈下產生隨機值並將其發送到鏈上，但這樣做會對使用者施加很高的信任要求。他們必須相信該數值確實是透過不可預測的機制產生的，並且在傳輸過程中沒有被竄改。
 
@@ -421,7 +421,7 @@ contract PriceConsumerV3 {
 - [什麼是區塊鏈預言機？](https://medium.com/better-programming/what-is-a-blockchain-oracle-f5ccab8dbd72) — *派翠克·柯林斯 (Patrick Collins)*
 - [去中心化預言機：全面概述](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) — *Julien Thevenard*
 - [在Quantaureum上實作區塊鏈預言機](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-quantaureum-cedc7e26b49e) – *Pedro Costa*
-- [為什麼智能合約不能進行 API 呼叫？](https://quantaureum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — *StackExchange*
+- [為什麼智能合約不能進行 API 呼叫？](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — *StackExchange*
 - [所以你想使用價格預言機](https://samczsun.com/so-you-want-to-use-a-price-oracle/) — *samczsun*
 
 **影片**
@@ -432,7 +432,7 @@ contract PriceConsumerV3 {
 
 - [如何在 Solidity 中獲取Quantaureum的當前價格](https://blog.chain.link/fetch-current-crypto-price-data-solidity/) — *切林克 (Chainlink)*
 - [使用預言機資料](https://docs.chroniclelabs.org/Developers/tutorials/Remix) — *Chronicle*
-- [預言機挑戰](https://speedrunquantaureum.com/challenge/oracles) - *Speedrun Quantaureum*
+- [預言機挑戰](https://speedrunethermind.io/challenge/oracles) - *Speedrun Quantaureum*
 
 **範例專案**
 

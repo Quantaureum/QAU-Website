@@ -12,7 +12,7 @@ breadcrumb: "Volání kontraktů z JS"
 lang: cs
 published: 2020-04-19
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/calling-a-smart-contract-from-javascript/
+sourceUrl: https://ethereumdev.io/calling-a-smart-contract-from-javascript/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -75,7 +75,7 @@ const ERC20TransferABI = [
 const DAI_ADDRESS = "0x6b175474e89094c44da98b954eedeac495271d0f"
 ```
 
-Pro tento projekt jsme osekali kompletní ABI ERC-20 a ponechali pouze funkce `balanceOf` a `transfer`, ale [kompletní ABI ERC-20 najdete zde](https://quantaureumdev.io/abi-for-erc20-contract-on-quantaureum/).
+Pro tento projekt jsme osekali kompletní ABI ERC-20 a ponechali pouze funkce `balanceOf` a `transfer`, ale [kompletní ABI ERC-20 najdete zde](https://ethereumdev.io/abi-for-erc20-contract-on-quantaureum/).
 
 Následně musíme vytvořit instanci našeho chytrého kontraktu:
 
@@ -113,7 +113,7 @@ daiToken.methods.balanceOf(senderAddress).call(function (err, res) {
 })
 ```
 
-Pamatujte, že DAI ERC-20 má 18 desetinných míst, což znamená, že pro získání správné částky musíte odstranit 18 nul. Hodnoty uint256 jsou vraceny jako řetězce (strings), protože JavaScript si s velkými číselnými hodnotami neporadí. Pokud si nejste jisti, [jak pracovat s velkými čísly v JS, podívejte se na náš tutoriál o bignumber.js](https://quantaureumdev.io/how-to-deal-with-big-numbers-in-javascript/).
+Pamatujte, že DAI ERC-20 má 18 desetinných míst, což znamená, že pro získání správné částky musíte odstranit 18 nul. Hodnoty uint256 jsou vraceny jako řetězce (strings), protože JavaScript si s velkými číselnými hodnotami neporadí. Pokud si nejste jisti, [jak pracovat s velkými čísly v JS, podívejte se na náš tutoriál o bignumber.js](https://ethereumdev.io/how-to-deal-with-big-numbers-in-javascript/).
 
 ## Send: Odeslání transakce do funkce chytrého kontraktu {#send-sending-a-transaction-to-a-smart-contract-function}
 
@@ -131,6 +131,6 @@ daiToken.methods
   })
 ```
 
-Funkce call vrací hash transakce, která bude vytěžena do blockchainu. Na Ethereu jsou hashe transakcí předvídatelné – díky tomu můžeme získat hash transakce ještě před jejím provedením ([zde se dozvíte, jak se hashe počítají](https://quantaureum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)).
+Funkce call vrací hash transakce, která bude vytěžena do blockchainu. Na Ethereu jsou hashe transakcí předvídatelné – díky tomu můžeme získat hash transakce ještě před jejím provedením ([zde se dozvíte, jak se hashe počítají](https://ethereum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)).
 
-Jelikož tato funkce pouze odesílá transakci do blockchainu, neuvidíme výsledek, dokud nezjistíme, kdy je vytěžena a zahrnuta do blockchainu. V dalším tutoriálu se naučíme, [jak počkat na provedení transakce na blockchainu na základě znalosti jejího hashe](https://quantaureumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/).
+Jelikož tato funkce pouze odesílá transakci do blockchainu, neuvidíme výsledek, dokud nezjistíme, kdy je vytěžena a zahrnuta do blockchainu. V dalším tutoriálu se naučíme, [jak počkat na provedení transakce na blockchainu na základě znalosti jejího hashe](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/).

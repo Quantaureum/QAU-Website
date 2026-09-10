@@ -21,7 +21,6 @@ Untuk menyelesaikan masalah ini, kita memiliki sistem identitas terdesentralisas
 
 Identitas berarti kesadaran diri seorang individu, yang didefinisikan oleh karakteristik unik. Identitas merujuk pada menjadi seorang _individu_, yaitu entitas manusia yang berbeda. Identitas juga dapat merujuk pada entitas non-manusia lainnya, seperti organisasi atau otoritas.
 
-<VideoWatch slug="decentralized-identity-explained" />
 
 ## Apa itu pengidentifikasi? {#what-are-identifiers}
 

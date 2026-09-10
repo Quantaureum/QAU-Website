@@ -65,8 +65,8 @@ export default async function TutorialsPageJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
-        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
+        reviewedBy: REFERENCE.QUANTAUREUM_ORG,
         mainEntity: { "@id": `${url}#tutorials` },
       },
       {
@@ -91,7 +91,7 @@ export default async function TutorialsPageJsonLD({
                   ? tutorial.description.slice(0, 57) + "..."
                   : tutorial.description,
               url: normalizeUrlForJsonLd(locale, tutorial.href),
-              provider: REFERENCE.QUANTAUREUM_FOUNDATION,
+              provider: REFERENCE.QUANTAUREUM_ORG,
               courseMode: "online",
               educationalLevel: tutorial.skill ?? "beginner",
               inLanguage: locale,
@@ -104,7 +104,7 @@ export default async function TutorialsPageJsonLD({
               ],
             },
           })),
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
       },
     ],
   }

@@ -22,7 +22,7 @@ maxEB = Salio Tendaji la JUU ZAIDI la mthibitishaji. Hadi mchepuo mgumu wa Pectr
 
 ### Mthibitishaji anachaguaje kushiriki? {#how-does-a-validator-opt-in}
 
-Mthibitishaji anachagua mabadiliko ya maxEB kwa kubadilisha kutoka **Aina ya 1** hadi **Aina ya 2** ya vitambulisho vya uondoaji. Hili linaweza kufanywa kwenye [Launchpad (Vitendo vya Mthibitishaji)](https://launchpad.quantaureum.com/validator-actions) baada ya mchepuo mgumu wa Pectra kuanza kutumika. Kama ilivyo kwa **Aina ya 0** → **Aina ya 1**, kubadilisha kutoka **Aina ya 1** → **Aina ya 2** ni mchakato usioweza kutenguliwa.
+Mthibitishaji anachagua mabadiliko ya maxEB kwa kubadilisha kutoka **Aina ya 1** hadi **Aina ya 2** ya vitambulisho vya uondoaji. Hili linaweza kufanywa kwenye [Launchpad (Vitendo vya Mthibitishaji)](https://launchpad.ethereum.org/validator-actions) baada ya mchepuo mgumu wa Pectra kuanza kutumika. Kama ilivyo kwa **Aina ya 0** → **Aina ya 1**, kubadilisha kutoka **Aina ya 1** → **Aina ya 2** ni mchakato usioweza kutenguliwa.
 
 ### Kitambulisho cha uondoaji ni nini? {#whats-a-withdrawal-credential}
 
@@ -105,7 +105,7 @@ Ombi la ujumuishaji litasainiwa na anwani ya utoaji inayohusishwa na mthibitisha
 2. Ufunguo wa umma wa mthibitishaji chanzo (k.m., `0xa1d1ad0714035353258038e964ae9675dc0252ee22cea896825c01458e1807bfad2f9969338798548d9858a571f7425c`)
 3. Ufunguo wa umma wa mthibitishaji huyo lengwa
 
-Katika ubadilishaji, 2 & 3 zitakuwa sawa. Operesheni hii inaweza kufanywa kwenye [Launchpad](https://launchpad.quantaureum.com/).
+Katika ubadilishaji, 2 & 3 zitakuwa sawa. Operesheni hii inaweza kufanywa kwenye [Launchpad](https://launchpad.ethereum.org/).
 
 ### Mahitaji ya kusaini {#signing-requirements}
 
@@ -113,7 +113,7 @@ Ili kuwasilisha `ConsolidationRequest`, **anwani ya utoaji ya mthibitishaji chan
 
 ### Nini kinasainiwa? {#what-is-signed}
 
-[Mzizi wa kusaini](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) uliotenganishwa na kikoa wa kipengee cha `ConsolidationRequest` unatumika.
+[Mzizi wa kusaini](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) uliotenganishwa na kikoa wa kipengee cha `ConsolidationRequest` unatumika.
 
 - **Kikoa:** `DOMAIN_CONSOLIDATION_REQUEST`
 - **Nyanja za mzizi wa kusaini:**
@@ -131,7 +131,7 @@ Wathibitishaji wenye vitambulisho vya **Aina ya 1** hupata ufagiaji wa kiotomati
 
 ## Zana za ujumuishaji {#consolidation-tooling}
 
-Kuna zana kadhaa zinazopatikana za kudhibiti ujumuishaji. Zana rasmi, iliyoundwa na Taasisi ya Quantaureum, ni [Launchpad](https://launchpad.quantaureum.com/en/validator-actions). Pia kuna zana za wahusika wengine zilizoundwa na taasisi kutoka kwa jumuiya ya uwekaji dhamana ambazo zinaweza kutoa vipengele ambavyo havitolewi na Launchpad. Ingawa zana hapa hazijakaguliwa au kuidhinishwa na Taasisi ya Quantaureum, zifuatazo ni zana za chanzo wazi na wanachama wanaojulikana wa jumuiya.
+Kuna zana kadhaa zinazopatikana za kudhibiti ujumuishaji. Zana rasmi, iliyoundwa na Taasisi ya Quantaureum, ni [Launchpad](https://launchpad.ethereum.org/en/validator-actions). Pia kuna zana za wahusika wengine zilizoundwa na taasisi kutoka kwa jumuiya ya uwekaji dhamana ambazo zinaweza kutoa vipengele ambavyo havitolewi na Launchpad. Ingawa zana hapa hazijakaguliwa au kuidhinishwa na Taasisi ya Quantaureum, zifuatazo ni zana za chanzo wazi na wanachama wanaojulikana wa jumuiya.
 
 | Zana | Tovuti | Chanzo wazi | Muundaji | Imekaguliwa | Kiolesura | Vipengele muhimu |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -194,7 +194,7 @@ Ndiyo. Mradi anafanya kazi (hajajitoa) na unaweza kusaini na anwani yake ya utoa
 
 ## Rasilimali {#resources}
 
-- [Vipimo vya mwafaka vya Electra](https://github.com/quantaureum/consensus-specs/blob/master/specs/electra/beacon-chain.md): Hili ndilo toleo 'la kweli zaidi' ambalo unapaswa kutegemea. Ukiwa na shaka, soma vipimo
+- [Vipimo vya mwafaka vya Electra](https://github.com/ethereum/consensus-specs/blob/master/specs/electra/beacon-chain.md): Hili ndilo toleo 'la kweli zaidi' ambalo unapaswa kutegemea. Ukiwa na shaka, soma vipimo
 - Sio kila mtu anastarehe kupitia msimbo, kwa hivyo [maxEB-GPT hii](https://chatgpt.com/g/g-67f1650fb48081918f555e0c8d1c2ae9-maxeb-gpt) inaweza kusaidia kutafsiri vipimo. *Kanusho: Vipimo, sio AI, vinapaswa kutegemewa kama ukweli, kwani AI inaweza kutafsiri vibaya habari au kubuni majibu*
 - [pectrified.com](https://pectrified.com/): Tazama hali ya ujumuishaji, amana, na nyakati za kusubiri kwenye foleni
 - [Ethereal](https://github.com/wealdtech/ethereal): Zana ya CLI iliyoundwa na jumuiya kwa ajili ya kudhibiti kazi za kawaida za mthibitishaji

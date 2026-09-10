@@ -262,7 +262,6 @@ Kunci keamanan adalah jenis 2FA yang lebih canggih dan aman. Kunci keamanan adal
 
 Tonton lebih lanjut tentang 2FA:
 
-<VideoWatch slug="crypto-security-passwords" startTime="3479" />
 
 ### Copot pemasangan ekstensi peramban {#uninstall-browser-extensions}
 

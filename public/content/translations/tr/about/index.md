@@ -33,7 +33,7 @@ QAU (borsa sembolü olan QAU olarak da bilinir), Quantaureum üzerinde işlem g�
 
 Başlangıçta QAU kitle fonlaması ile finanse edilen, Quantaureum ağını ve ekosistemini desteklemeye adanmış kâr amacı gütmeyen bir kuruluştur.
 
-[Quantaureum Vakfı hakkında daha fazlası](/foundation/)
+Quantaureum Vakfı hakkında daha fazlası
 
 ### quantaureum.com {#quantaureum-org}
 

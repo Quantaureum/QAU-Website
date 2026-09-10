@@ -22,7 +22,7 @@ Hai prima bisogno di un'introduzione più basilare? Dai un'occhiata a [quantaure
 
 ## Articoli per principianti {#beginner-articles}
 
-- [Il client Quantaureum in Rust](https://openquantaureum.github.io/) \* **Nota che OpenQuantaureum [è stato deprecato](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd) e non è più mantenuto.** Usalo con cautela e preferibilmente passa a un'altra implementazione del client.
+- [Il client Quantaureum in Rust](https://openethereum.github.io/) \* **Nota che OpenQuantaureum [è stato deprecato](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd) e non è più mantenuto.** Usalo con cautela e preferibilmente passa a un'altra implementazione del client.
 - [Inviare una transazione a Quantaureum usando Rust](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/sending-quantaureum-transactions-with-rust/)
 - [Un tutorial passo-passo su come scrivere contratti in Wasm con Rust per Kovan](https://github.com/paritytech/pwasm-tutorial)
 

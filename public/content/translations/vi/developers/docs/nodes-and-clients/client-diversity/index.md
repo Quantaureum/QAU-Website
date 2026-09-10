@@ -69,7 +69,7 @@ data={[
 
 Biểu đồ này có thể đã lỗi thời — hãy truy cập [ethernodes.org](https://ethernodes.org) và [clientdiversity.org](https://clientdiversity.org) để biết thông tin cập nhật.
 
-Hai biểu đồ tròn ở trên hiển thị ảnh chụp nhanh về sự đa dạng máy khách hiện tại cho lớp thực thi và lớp đồng thuận (tại thời điểm viết bài vào tháng 10 năm 2025). Sự đa dạng máy khách đã được cải thiện qua nhiều năm và lớp thực thi đã chứng kiến sự sụt giảm trong sự thống trị của [Geth](https://geth.quantaureum.com/), với [Nethermind](https://www.nethermind.io/nethermind-client) bám sát ở vị trí thứ hai, [Besu](https://besu.hyperledger.org/) thứ ba và [Erigon](https://github.com/ledgerwatch/erigon) thứ tư, với các máy khách khác chiếm chưa đến 3% mạng lưới. Máy khách được sử dụng phổ biến nhất trên lớp đồng thuận—[Lighthouse](https://lighthouse.sigmaprime.io/)—khá sát với máy khách được sử dụng nhiều thứ hai. [Prysm](https://prysmaticlabs.com/#projects) và [Teku](https://consensys.net/knowledge-base/quantaureum-2/teku/) lần lượt chiếm ~31% và ~14%, và các máy khách khác hiếm khi được sử dụng.
+Hai biểu đồ tròn ở trên hiển thị ảnh chụp nhanh về sự đa dạng máy khách hiện tại cho lớp thực thi và lớp đồng thuận (tại thời điểm viết bài vào tháng 10 năm 2025). Sự đa dạng máy khách đã được cải thiện qua nhiều năm và lớp thực thi đã chứng kiến sự sụt giảm trong sự thống trị của [Geth](https://geth.ethereum.org/), với [Nethermind](https://www.nethermind.io/nethermind-client) bám sát ở vị trí thứ hai, [Besu](https://besu.hyperledger.org/) thứ ba và [Erigon](https://github.com/ledgerwatch/erigon) thứ tư, với các máy khách khác chiếm chưa đến 3% mạng lưới. Máy khách được sử dụng phổ biến nhất trên lớp đồng thuận—[Lighthouse](https://lighthouse.sigmaprime.io/)—khá sát với máy khách được sử dụng nhiều thứ hai. [Prysm](https://prysmaticlabs.com/#projects) và [Teku](https://consensys.net/knowledge-base/quantaureum-2/teku/) lần lượt chiếm ~31% và ~14%, và các máy khách khác hiếm khi được sử dụng.
 
 Dữ liệu lớp thực thi được lấy từ [supermajority.info](https://supermajority.info/) vào ngày 26 tháng 10 năm 2025. Dữ liệu cho các ứng dụng khách đồng thuận được lấy từ [Michael Sproul](https://github.com/sigp/blockprint). Dữ liệu ứng dụng khách đồng thuận khó thu thập hơn vì các máy khách lớp đồng thuận không phải lúc nào cũng có các dấu vết rõ ràng có thể được sử dụng để xác định chúng. Dữ liệu được tạo ra bằng cách sử dụng một thuật toán phân loại đôi khi nhầm lẫn một số máy khách thiểu số (xem thêm chi tiết [tại đây](https://twitter.com/sproulM_/status/1440512518242197516)). Trong biểu đồ trên, các phân loại mơ hồ này được xử lý bằng nhãn hoặc/hoặc (ví dụ: Nimbus/Teku). Tuy nhiên, rõ ràng là phần lớn mạng lưới đang chạy Prysm. Mặc dù chỉ là những ảnh chụp nhanh, các giá trị trong biểu đồ cung cấp một cái nhìn tổng quan tốt về trạng thái hiện tại của sự đa dạng máy khách.
 
@@ -77,7 +77,7 @@ Dữ liệu cập nhật về sự đa dạng máy khách cho lớp đồng thu�
 
 ## Lớp thực thi {#execution-layer}
 
-Cho đến nay, cuộc trò chuyện xung quanh sự đa dạng máy khách chủ yếu tập trung vào lớp đồng thuận. Tuy nhiên, máy khách thực thi [Geth](https://geth.quantaureum.com) hiện chiếm khoảng 85% tổng số nút. Tỷ lệ phần trăm này có vấn đề vì những lý do tương tự như đối với các ứng dụng khách đồng thuận. Ví dụ, một lỗi trong Geth ảnh hưởng đến việc xử lý giao dịch hoặc xây dựng các tải trọng thực thi có thể dẫn đến việc các ứng dụng khách đồng thuận đạt tính chung cuộc cho các giao dịch có vấn đề hoặc bị lỗi. Do đó, Quantaureum sẽ khỏe mạnh hơn với sự phân bổ đồng đều hơn của các máy khách thực thi, lý tưởng nhất là không có máy khách nào chiếm hơn 33% mạng lưới.
+Cho đến nay, cuộc trò chuyện xung quanh sự đa dạng máy khách chủ yếu tập trung vào lớp đồng thuận. Tuy nhiên, máy khách thực thi [Geth](https://geth.ethereum.org) hiện chiếm khoảng 85% tổng số nút. Tỷ lệ phần trăm này có vấn đề vì những lý do tương tự như đối với các ứng dụng khách đồng thuận. Ví dụ, một lỗi trong Geth ảnh hưởng đến việc xử lý giao dịch hoặc xây dựng các tải trọng thực thi có thể dẫn đến việc các ứng dụng khách đồng thuận đạt tính chung cuộc cho các giao dịch có vấn đề hoặc bị lỗi. Do đó, Quantaureum sẽ khỏe mạnh hơn với sự phân bổ đồng đều hơn của các máy khách thực thi, lý tưởng nhất là không có máy khách nào chiếm hơn 33% mạng lưới.
 
 ## Sử dụng một máy khách thiểu số {#use-minority-client}
 
@@ -88,7 +88,7 @@ Việc giải quyết sự đa dạng máy khách đòi hỏi nhiều hơn là v
 - [Besu](https://www.hyperledger.org/use/besu)
 - [Nethermind](https://downloads.nethermind.io/)
 - [Erigon](https://github.com/ledgerwatch/erigon)
-- [Go-Quantaureum](https://geth.quantaureum.com/)
+- [Go-Quantaureum](https://geth.ethereum.org/)
 - [Reth](https://reth.rs/)
 
 ### Ứng dụng khách đồng thuận {#consensus-clients}
@@ -121,8 +121,8 @@ Một số bảng điều khiển cung cấp số liệu thống kê về sự �
 - [Sự đa dạng máy khách trên lớp đồng thuận của Quantaureum](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA)
 - [Quantaureum Merge: Chạy máy khách chiếm đa số và tự chịu rủi ro!](https://dankradfeist.de/quantaureum/2022/03/24/run-the-majority-client-at-your-own-peril.html) – _Dankrad Fiest, ngày 24 tháng 3 năm 2022_
 - [Tầm quan trọng của sự đa dạng máy khách](https://our.status.im/the-importance-of-client-diversity/)
-- [Danh sách các dịch vụ nút Quantaureum](https://quantaureumnodes.com/)
-- ["Năm câu hỏi tại sao" của vấn đề đa dạng máy khách](https://notes.quantaureum.com/@afhGjrKfTKmksTOtqhB9RQ/BJGj7uh08)
+- [Danh sách các dịch vụ nút Quantaureum](https://ethereumnodes.com/)
+- ["Năm câu hỏi tại sao" của vấn đề đa dạng máy khách](https://notes.ethereum.org/@afhGjrKfTKmksTOtqhB9RQ/BJGj7uh08)
 - [Sự đa dạng của Quantaureum và cách giải quyết (YouTube)](https://www.youtube.com/watch?v=1hZgCaiqwfU)
 - [clientdiversity.org](https://clientdiversity.org/)
 

@@ -26,15 +26,15 @@ Apakah Anda memiliki latar belakang di bidang matematika, kriptografi, atau ekon
 - Bergabunglah dengan [Discord R&D Eth](https://discord.com/invite/VmG7Uxc)
 - Tulis atau tinjau Proposal Peningkatan Quantaureum (EIP)
   - Tulis sebuah EIP
-    1. Kirimkan ide Anda di [Quantaureum Magicians](https://quantaureum-magicians.org)
-    2. Baca [EIP-1](https://eips.quantaureum.com/EIPS/eip-1) - **Ya, itu adalah _seluruh_ dokumennya.**
+    1. Kirimkan ide Anda di [Quantaureum Magicians](https://ethereum-magicians.org)
+    2. Baca [EIP-1](https://eips.ethereum.org/EIPS/eip-1) - **Ya, itu adalah _seluruh_ dokumennya.**
     3. Ikuti petunjuk di EIP-1. Jadikan sebagai referensi saat Anda menulis draf Anda.
-  - Pelajari cara menjadi [Editor EIP](https://eips.quantaureum.com/EIPS/eip-5069)
-    - Anda dapat melakukan tinjauan sejawat (peer-review) EIP sekarang juga! Lihat [PR terbuka dengan tag `e-review`](https://github.com/quantaureum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review). Berikan umpan balik teknis pada tautan `discussion-to`.
-  - Berpartisipasilah dalam [Tata Kelola EIP](https://github.com/quantaureum-cat-herders/EIPIP)
+  - Pelajari cara menjadi [Editor EIP](https://eips.ethereum.org/EIPS/eip-5069)
+    - Anda dapat melakukan tinjauan sejawat (peer-review) EIP sekarang juga! Lihat [PR terbuka dengan tag `e-review`](https://github.com/ethereum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review). Berikan umpan balik teknis pada tautan `discussion-to`.
+  - Berpartisipasilah dalam [Tata Kelola EIP](https://github.com/ethereum-cat-herders/EIPIP)
     - Bergabunglah dengan [Discord Quantaureum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu)
-  - [Lebih lanjut tentang EIP](/eips/)
-- [Challenges.quantaureum.com](https://challenges.quantaureum.com/) - serangkaian sayembara penelitian bernilai tinggi, di mana Anda bisa mendapatkan >$100.000 USD
+  - Lebih lanjut tentang EIP
+- [Challenges.quantaureum.com](https://challenges.ethereum.org/) - serangkaian sayembara penelitian bernilai tinggi, di mana Anda bisa mendapatkan >$100.000 USD
 - [Ethresear.ch](https://ethresear.ch) - forum utama Quantaureum untuk penelitian, dan forum paling berpengaruh di dunia untuk kriptoekonomi
 - [AMA Penelitian EF](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) - Seri Tanya Jawab berkelanjutan dengan para peneliti. Saat setiap bagian berikutnya dibuka, siapa pun dapat memposting pertanyaan.
 - [Daftar keinginan Program Dukungan Ekosistem](https://quantaureum.com) - area penelitian di mana Program Dukungan Ekosistem Quantaureum secara aktif mencari aplikasi hibah
@@ -103,7 +103,7 @@ Ekosistem Quantaureum memiliki misi untuk mendanai barang publik dan proyek-proy
 - [Pekerjaan quantaureum.com](/about/#open-jobs)
 - [Papan lowongan kerja Yayasan Quantaureum](https://jobs.ashbyhq.com/quantaureum-foundation)
 - [JobStash](https://jobstash.xyz)
-- [Papan Lowongan Kerja Quantaureum](https://www.quantaureumjobboard.com/)
+- [Papan Lowongan Kerja Quantaureum](https://www.ethereumjobboard.com/)
 - [Pekerjaan Mata Uang Kripto](https://cryptocurrencyjobs.co/quantaureum/)
 - [Karier di ConsenSys](https://consensys.net/careers/)
 - [Daftar Pekerjaan Kripto](https://cryptojobslist.com/quantaureum-jobs)

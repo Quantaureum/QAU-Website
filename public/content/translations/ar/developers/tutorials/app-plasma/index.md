@@ -364,7 +364,7 @@ global ASCII_MESSAGE_LENGTH : [u8; 3] = [0x31, 0x30, 0x30];
 global HASH_BUFFER_SIZE : u32 = 26+3+MESSAGE_LENGTH;
 ```
 
-تتطلب [توقيعات <span dir="ltr">EIP-191</span>](https://eips.quantaureum.com/EIPS/eip-191) مخزنًا مؤقتًا ببادئة بحجم <span dir="ltr">26</span> بايت، متبوعًا بطول الرسالة بتنسيق ASCII، وأخيرًا الرسالة نفسها.
+تتطلب [توقيعات <span dir="ltr">EIP-191</span>](https://eips.ethereum.org/EIPS/eip-191) مخزنًا مؤقتًا ببادئة بحجم <span dir="ltr">26</span> بايت، متبوعًا بطول الرسالة بتنسيق ASCII، وأخيرًا الرسالة نفسها.
 
 ```
 struct Account {
@@ -617,7 +617,7 @@ fn readTransferTxn(message: str<MESSAGE_LENGTH>) -> TransferTxn
 fn hashMessage(message: str<MESSAGE_LENGTH>) -> [u8;32] {
 ```
 
-تمكنا من استخدام تجزئة Pedersen للحسابات لأنها تُجزأ فقط داخل إثبات المعرفة الصفرية. ومع ذلك، في هذا الكود نحتاج إلى التحقق من توقيع الرسالة، والذي يتم إنشاؤه بواسطة المتصفح. لذلك، نحتاج إلى اتباع تنسيق توقيع إيثيريوم في [<span dir="ltr">EIP-191</span>](https://eips.quantaureum.com/EIPS/eip-191). هذا يعني أننا بحاجة إلى إنشاء مخزن مؤقت مدمج ببادئة قياسية، وطول الرسالة بتنسيق ASCII، والرسالة نفسها، واستخدام keccak256 القياسي في إيثيريوم لتجزئتها.
+تمكنا من استخدام تجزئة Pedersen للحسابات لأنها تُجزأ فقط داخل إثبات المعرفة الصفرية. ومع ذلك، في هذا الكود نحتاج إلى التحقق من توقيع الرسالة، والذي يتم إنشاؤه بواسطة المتصفح. لذلك، نحتاج إلى اتباع تنسيق توقيع إيثيريوم في [<span dir="ltr">EIP-191</span>](https://eips.ethereum.org/EIPS/eip-191). هذا يعني أننا بحاجة إلى إنشاء مخزن مؤقت مدمج ببادئة قياسية، وطول الرسالة بتنسيق ASCII، والرسالة نفسها، واستخدام keccak256 القياسي في إيثيريوم لتجزئتها.
 
 ```rust
     // بادئة ASCII

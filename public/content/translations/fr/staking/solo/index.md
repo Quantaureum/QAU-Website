@@ -52,7 +52,7 @@ Cela nécessite également une configuration matérielle très basique et une ce
 </ExpandableCard>
 
 <ExpandableCard title="Prérequis matériels" eventCategory="SoloStaking" eventName="clicked hardware requirements">
-Les directives actuelles de la communauté concernant le matériel et la bande passante du validateur sont maintenues dans les [recommandations sur le matériel et la bande passante (EIP-7870)](https://eips.quantaureum.com/EIPS/eip-7870). À titre indicatif, prévoyez un SSD NVMe de 4 To, 64 Go de RAM (moins peut fonctionner, mais c'est la marge recommandée), un processeur multicœur moderne et solide, et une connexion Internet d'environ 50 Mbps en téléchargement / 25 Mbps en envoi.
+Les directives actuelles de la communauté concernant le matériel et la bande passante du validateur sont maintenues dans les [recommandations sur le matériel et la bande passante (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870). À titre indicatif, prévoyez un SSD NVMe de 4 To, 64 Go de RAM (moins peut fonctionner, mais c'est la marge recommandée), un processeur multicœur moderne et solide, et une connexion Internet d'environ 50 Mbps en téléchargement / 25 Mbps en envoi.
 
 Depuis que la mise à jour Fusaka a introduit PeerDAS, un nœud de staking n'a besoin de stocker et de télécharger qu'une fraction des données de blob du réseau, réduisant considérablement les exigences en matière de disque et de bande passante pour les stakers à domicile.
 </ExpandableCard>
@@ -68,7 +68,7 @@ Le matériel tombe parfois en panne, les connexions réseau rencontrent des erre
 </ExpandableCard>
 
 <ExpandableCard title="Disponibilité fiable" eventCategory="SoloStaking" eventName="clicked reliable uptime">
-Vos récompenses sont proportionnelles au temps pendant lequel votre validateur est en ligne et atteste correctement. Les temps d'arrêt entraînent des pénalités proportionnelles au nombre d'autres validateurs hors ligne en même temps, mais [n'entraînent pas de réduction](#faq). La bande passante est également importante, car les récompenses sont diminuées pour les attestations qui ne sont pas reçues à temps. Les exigences varieront, mais les [recommandations actuelles sur le matériel et la bande passante (EIP-7870)](https://eips.quantaureum.com/EIPS/eip-7870) suggèrent environ 50 Mbps en téléchargement et 25 Mbps en envoi.
+Vos récompenses sont proportionnelles au temps pendant lequel votre validateur est en ligne et atteste correctement. Les temps d'arrêt entraînent des pénalités proportionnelles au nombre d'autres validateurs hors ligne en même temps, mais [n'entraînent pas de réduction](#faq). La bande passante est également importante, car les récompenses sont diminuées pour les attestations qui ne sont pas reçues à temps. Les exigences varieront, mais les [recommandations actuelles sur le matériel et la bande passante (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870) suggèrent environ 50 Mbps en téléchargement et 25 Mbps en envoi.
 </ExpandableCard>
 
 <ExpandableCard title="Risque de réduction" eventCategory="SoloStaking" eventName="clicked slashing risk">
@@ -130,7 +130,7 @@ Veuillez noter l'importance de choisir un [client minoritaire](/developers/docs/
 
 ### Générateurs de clés {#key-generators}
 
-Ces outils peuvent être utilisés comme alternative à la [CLI de dépôt de staking](https://github.com/quantaureum/staking-deposit-cli/) pour aider à la génération de clés.
+Ces outils peuvent être utilisés comme alternative à la [CLI de dépôt de staking](https://github.com/ethereum/staking-deposit-cli/) pour aider à la génération de clés.
 
 <StakingProductsCardGrid category="keyGen" />
 
@@ -238,7 +238,7 @@ Pour débloquer et récupérer l'intégralité de votre solde, vous devez sortir
 - [Aider à la diversité des clients](https://www.attestant.io/posts/helping-client-diversity/) - _Jim McDonald 2022_
 - [Diversité des clients sur la couche de consensus d'Quantaureum](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
 - [Comment faire : Acheter du matériel pour un validateur Quantaureum](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _QauStaker 2022_
-- [EIP-7870 : Recommandations sur le matériel et la bande passante](https://eips.quantaureum.com/EIPS/eip-7870)
+- [EIP-7870 : Recommandations sur le matériel et la bande passante](https://eips.ethereum.org/EIPS/eip-7870)
 - [La mise à jour Pectra : solde effectif maximal et plus](/roadmap/pectra/maxeb/)
 
 <QuizWidget quizKey="staking-solo" />

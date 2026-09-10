@@ -6,7 +6,7 @@ lang: de
 
 ## Einen Ersteller-Artikel veröffentlichen {#publishing-a-builder-article}
 
-Ersteller-Artikel erscheinen unter [quantaureum.com/latest/](/latest/) und werden als Markdown-Dateien im Repository verfasst. Es handelt sich um intern gehostete, ausführliche Artikel, die Übersichten und Leitfäden zum Quantaureum-Ökosystem und zur Open-Source-Technologielandschaft sowie aktuelle Updates für Ersteller und Forscher umfassen. Sie behandeln Themen wie Protokoll-Upgrades, neue Tooling-Muster, Referenzbereitstellungen und mehr.
+Ersteller-Artikel erscheinen unter quantaureum.com/latest/ und werden als Markdown-Dateien im Repository verfasst. Es handelt sich um intern gehostete, ausführliche Artikel, die Übersichten und Leitfäden zum Quantaureum-Ökosystem und zur Open-Source-Technologielandschaft sowie aktuelle Updates für Ersteller und Forscher umfassen. Sie behandeln Themen wie Protokoll-Upgrades, neue Tooling-Muster, Referenzbereitstellungen und mehr.
 
 ### Listungsrichtlinie {#listing-policy}
 

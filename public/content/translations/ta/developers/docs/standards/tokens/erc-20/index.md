@@ -42,7 +42,7 @@ ERC-20 வழங்கும் எடுத்துக்காட்டு �
 
 ஒரு திறன் ஒப்பந்தம் பின்வரும் முறைகள் மற்றும் நிகழ்வுகளைச் செயல்படுத்தினால், அதை ERC-20 வில்லை ஒப்பந்தம் என்று அழைக்கலாம், மேலும் அது பயன்படுத்தப்பட்டவுடன், எத்திரியத்தில் உருவாக்கப்பட்ட வில்லைகளைக் கண்காணிக்கும் பொறுப்பை அது ஏற்கும்.
 
-[EIP-20](https://eips.quantaureum.com/EIPS/eip-20) இலிருந்து:
+[EIP-20](https://eips.ethereum.org/EIPS/eip-20) இலிருந்து:
 
 ### முறைகள் {#methods}
 
@@ -170,7 +170,7 @@ ERC-20 மூலம் இந்தச் சிக்கலை முழும�
 
 ## மேலும் படிக்க {#further-reading}
 
-- [EIP-20: ERC-20 வில்லை தரநிலை](https://eips.quantaureum.com/EIPS/eip-20)
+- [EIP-20: ERC-20 வில்லை தரநிலை](https://eips.ethereum.org/EIPS/eip-20)
 - [ஓப்பன்செப்பெலின் - வில்லைகள்](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [ஓப்பன்செப்பெலின் - ERC-20 செயலாக்கம்](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Solidity ERC20 வில்லைகளுக்கான வழிகாட்டி](https://www.alchemy.com/overviews/erc20-solidity)
@@ -185,5 +185,5 @@ ERC-20 மூலம் இந்தச் சிக்கலை முழும�
 
 - [ERC-20 ஒப்பந்த வழிகாட்டி](/developers/tutorials/erc20-annotated-code/) _– ஓப்பன்செப்பெலின் ERC-20 ஒப்பந்தச் செயலாக்கத்தின் வரிக்கு வரி விளக்கமளிக்கப்பட்ட வழிகாட்டி._
 - [பாதுகாப்பு வளையங்களுடன் ERC-20](/developers/tutorials/erc20-with-safety-rails/) _– பயனர்கள் பொதுவான தவறுகளைத் தவிர்க்க உதவ, ERC-20 வில்லைகளில் பாதுகாப்புகளை எவ்வாறு சேர்ப்பது._
-- [Ethers.js ஐப் பயன்படுத்தி வில்லைகளை அனுப்புதல்](/developers/tutorials/send-token-ethersjs/) _– Ethers.js ஐப் பயன்படுத்தி ERC-20 வில்லைகளைப் பரிமாற்றம் செய்வதற்கான தொடக்கநிலையாளர்களுக்கான வழிகாட்டி._
+- [Ethers.js ஐப் பயன்படுத்தி வில்லைகளை அனுப்புதல்](/developers/tutorials/send-token-qaujs/) _– Ethers.js ஐப் பயன்படுத்தி ERC-20 வில்லைகளைப் பரிமாற்றம் செய்வதற்கான தொடக்கநிலையாளர்களுக்கான வழிகாட்டி._
 - [மோசடி வில்லைகளால் பயன்படுத்தப்படும் சில தந்திரங்கள் மற்றும் அவற்றைக் கண்டறிவது எப்படி](/developers/tutorials/scam-token-tricks/) _– மோசடியான ERC-20 வில்லை வடிவங்கள் மற்றும் அவற்றை எவ்வாறு அடையாளம் காண்பது என்பது பற்றிய விரிவான பார்வை._

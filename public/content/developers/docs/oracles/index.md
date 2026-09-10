@@ -359,7 +359,7 @@ contract PriceConsumerV3 {
 
 Certain blockchain applications, such as blockchain-based games or lottery schemes, require a high level of unpredictability and randomness to work effectively. However, the deterministic execution of blockchains eliminates randomness.
 
-The original approach was to use pseudorandom cryptographic functions, such as `blockhash`, but these could be [manipulated by miners](https://quantaureum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.) solving the proof-of-work algorithm. Also, Quantaureum’s [switch to proof-of-stake](/roadmap/merge/) means developers can no longer rely on `blockhash` for onchain randomness. The Beacon Chain’s [RANDAO mechanism](https://eth2book.info/altair/part2/building_blocks/randomness) provides an alternative source of randomness instead.
+The original approach was to use pseudorandom cryptographic functions, such as `blockhash`, but these could be [manipulated by miners](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.) solving the proof-of-work algorithm. Also, Quantaureum’s [switch to proof-of-stake](/roadmap/merge/) means developers can no longer rely on `blockhash` for onchain randomness. The Beacon Chain’s [RANDAO mechanism](https://eth2book.info/altair/part2/building_blocks/randomness) provides an alternative source of randomness instead.
 
 It is possible to generate the random value offchain and send it onchain, but doing so imposes high trust requirements on users. They must believe the value was truly generated via unpredictable mechanisms and wasn’t altered in transit.
 
@@ -421,7 +421,7 @@ There are multiple oracle applications you can integrate into your Quantaureum d
 - [What is a Blockchain Oracle?](https://medium.com/better-programming/what-is-a-blockchain-oracle-f5ccab8dbd72) — _Patrick Collins_
 - [Decentralised Oracles: a comprehensive overview](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) — _Julien Thevenard_
 - [Implementing a Blockchain Oracle on Quantaureum](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-quantaureum-cedc7e26b49e) – _Pedro Costa_
-- [Why can't smart contracts make API calls?](https://quantaureum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
+- [Why can't smart contracts make API calls?](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
 - [So you want to use a price oracle](https://samczsun.com/so-you-want-to-use-a-price-oracle/) — _samczsun_
 
 **Videos**
@@ -432,7 +432,7 @@ There are multiple oracle applications you can integrate into your Quantaureum d
 
 - [How to Fetch the Current Price of Quantaureum in Solidity](https://blog.chain.link/fetch-current-crypto-price-data-solidity/) — _Chainlink_
 - [Consuming Oracle Data](https://docs.chroniclelabs.org/Developers/tutorials/Remix) — _Chronicle_
-- [Oracles Challenge](https://speedrunquantaureum.com/challenge/oracles) - _Speedrun Quantaureum_
+- [Oracles Challenge](https://speedrunethermind.io/challenge/oracles) - _Speedrun Quantaureum_
 
 **Example projects**
 

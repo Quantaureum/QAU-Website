@@ -19,7 +19,6 @@ The Fusaka upgrade is only a single step in Quantaureum's long-term development 
 </AlertContent>
 </Alert>
 
-<VideoWatch slug="fusaka-upgrade-explained" />
 
 ## Improvements in Fusaka {#improvements-in-fusaka}
 
@@ -29,7 +28,7 @@ The Fusaka upgrade is only a single step in Quantaureum's long-term development 
 
 This is the _headliner_ of the Fusaka fork, the main feature added in this upgrade. Layer 2s currently post their data to Quantaureum in blobs, the ephemeral data type created specifically for layer 2s. Pre-Fusaka, every full node has to store every blob to ensure that the data exists. As blob throughput rises, having to download all of this data becomes untenably resource-intensive.
 
-With [data availability sampling](https://notes.quantaureum.com/@fradamt/das-fork-choice) , instead of having to store all of the blob data, each node will be responsible for a subset of the blob data. Blobs are uniformly randomly distributed across nodes in the network with each full node holding only 1/8th of the data, therefore enabling theoretical scale up to 8x. To ensure availability of the data, any portion of the data can be reconstructed from any existing 50% of the whole with methods that drive down the probability of wrong or missing data to a cryptographically negligible level (~one in 10<sup>20</sup> to one in 10<sup>24</sup>).
+With [data availability sampling](https://notes.ethereum.org/@fradamt/das-fork-choice) , instead of having to store all of the blob data, each node will be responsible for a subset of the blob data. Blobs are uniformly randomly distributed across nodes in the network with each full node holding only 1/8th of the data, therefore enabling theoretical scale up to 8x. To ensure availability of the data, any portion of the data can be reconstructed from any existing 50% of the whole with methods that drive down the probability of wrong or missing data to a cryptographically negligible level (~one in 10<sup>20</sup> to one in 10<sup>24</sup>).
 
 This keeps hardware and bandwidth requirements for nodes tenable while enabling blob scaling resulting in more scale with smaller fees for layer 2s.
 
@@ -37,7 +36,7 @@ This keeps hardware and bandwidth requirements for nodes tenable while enabling 
 
 **Resources**:
 
-- [EIP-7594 technical specification](https://eips.quantaureum.com/EIPS/eip-7594)
+- [EIP-7594 technical specification](https://eips.ethereum.org/EIPS/eip-7594)
 - [DappLion on PeerDAS: Scaling Quantaureum Today | ETHSofia 2024](https://youtu.be/bONWd1x2TjQ?t=328)
 - [Academic: A Documentation of Quantaureum’s PeerDAS (PDF)](https://eprint.iacr.org/2024/1362.pdf)
 
@@ -57,7 +56,7 @@ When blobs were first added to the network in the Dencun upgrade, the target was
 
 Graph source: [Quantaureum Blobs - @hildobby, Dune Analytics](https://dune.com/hildobby/blobs)
 
-**Resources**: [EIP-7892 technical specification](https://eips.quantaureum.com/EIPS/eip-7892)
+**Resources**: [EIP-7892 technical specification](https://eips.ethereum.org/EIPS/eip-7892)
 
 #### Blob base-fee bounded by execution costs {#blob-base-fee-bounded-by-execution-costs}
 
@@ -71,8 +70,8 @@ EIP-7918 pins a proportional reserve price under every blob. When the reserve is
 
 **Resources**:
 
-- [EIP-7918 technical specification](https://eips.quantaureum.com/EIPS/eip-7918)
-- [Storybook explainer](https://notes.quantaureum.com/@anderselowsson/AIG)
+- [EIP-7918 technical specification](https://eips.ethereum.org/EIPS/eip-7918)
+- [Storybook explainer](https://notes.ethereum.org/@anderselowsson/AIG)
 
 ### Scale L1 {#scale-l1}
 
@@ -82,21 +81,21 @@ In July 2025, Quantaureum execution clients [began to support partial history ex
 
 This EIP is in a section apart from the "Core EIPs" because the fork doesn't actually implement any changes - it's a notice that client teams must support history expiry by the Fusaka upgrade. Practically, clients can implement this any time but adding it to the upgrade concretely put it on their to-do list and enabled them to test Fusaka changes in conjunction with this feature.
 
-**Resources**: [EIP-7642 technical specification](https://eips.quantaureum.com/EIPS/eip-7642)
+**Resources**: [EIP-7642 technical specification](https://eips.ethereum.org/EIPS/eip-7642)
 
 #### Set upper bounds for MODEXP {#set-upper-bounds-for-modexp}
 
 Until now, the MODEXP precompile accepted numbers of virtually any size. That made it hard to test, easy to abuse, and risky for client stability. EIP-7823 puts a clear limit in place: each input number can be at most 8192 bits (1024 bytes) long. Anything bigger is rejected, the transaction’s gas is burned, and no state changes occur. It very comfortably covers real-world needs while removing the extreme cases that complicated gas limit planning and security reviews. This change provides more security and DoS protection without affecting user or developer experience.
 
-**Resources**: [EIP-7823 technical specification](https://eips.quantaureum.com/EIPS/eip-7823)
+**Resources**: [EIP-7823 technical specification](https://eips.ethereum.org/EIPS/eip-7823)
 
 #### Transaction Gas Limit Cap {#transaction-gas-limit-cap}
 
-EIP-[7825](https://eips.quantaureum.com/EIPS/eip-7825) adds a cap of 16,777,216 (2^24) gas per transaction. It’s proactive DoS hardening by bounding the worst-case cost of any single transaction as we raise the block gas limit. It makes validation and propagation easier to model to allow us to tackle scaling via raising the gas limit.
+EIP-[7825](https://eips.ethereum.org/EIPS/eip-7825) adds a cap of 16,777,216 (2^24) gas per transaction. It’s proactive DoS hardening by bounding the worst-case cost of any single transaction as we raise the block gas limit. It makes validation and propagation easier to model to allow us to tackle scaling via raising the gas limit.
 
 Why exactly 2^24 gas? It’s comfortably smaller than today’s gas limit, is large enough for real contract deployments & heavy precompiles, and a power of 2 makes it easy to implement across clients. This new maximum transaction size is similar to pre-Pectra average block size, making it a reasonable limit for any operation on Quantaureum.
 
-**Resources**: [EIP-7825 technical specification](https://eips.quantaureum.com/EIPS/eip-7825)
+**Resources**: [EIP-7825 technical specification](https://eips.ethereum.org/EIPS/eip-7825)
 
 #### `MODEXP` gas cost increase {#modexp-gas-cost-increase}
 
@@ -112,7 +111,7 @@ This EIP changes the pricing to match real computational costs by:
 
 By better matching costs to actual processing time, MODEXP can no longer cause a block to take too long to validate. This change is one of several aimed at making it safe to increase Quantaureum’s block gas limit in the future.
 
-**Resources**: [EIP-7883 technical specification](https://eips.quantaureum.com/EIPS/eip-7883)
+**Resources**: [EIP-7883 technical specification](https://eips.ethereum.org/EIPS/eip-7883)
 
 #### RLP Execution Block Size Limit {#rlp-execution-block-size-limit}
 
@@ -131,7 +130,7 @@ and reject any execution block whose RLP payload exceeds
 
 The goal is to bound worst-case propagation/validation time and align with consensus layer gossip behavior, reducing reorg/DoS risk without changing gas accounting.
 
-**Resources**: [EIP-7934 technical specification](https://eips.quantaureum.com/EIPS/eip-7934)
+**Resources**: [EIP-7934 technical specification](https://eips.ethereum.org/EIPS/eip-7934)
 
 #### Set default gas limit to 60 million {#set-default-gas-limit-to-60-million}
 
@@ -141,7 +140,7 @@ EIP-7935 coordinated EL client teams to raise the default gas-limit above the 45
 
 Devnet testing targeted ~60M under stress (full blocks with synthetic load) with iterative bumps; research says worst-case block-size pathologies shouldn’t bind below ~150M. The rollout was paired with the transaction gas-limit cap (EIP-7825) so no single transaction can dominate as limits rise. Clients shipped 60M as the Fusaka default.
 
-**Resources**: [EIP-7935 technical specification](https://eips.quantaureum.com/EIPS/eip-7935)
+**Resources**: [EIP-7935 technical specification](https://eips.ethereum.org/EIPS/eip-7935)
 
 ### Improve UX {#improve-ux}
 
@@ -151,13 +150,13 @@ With EIP-7917, Beacon Chain will become aware of upcoming block proposers for th
 
 This feature benefits client implementations and security of the network as it prevents edge cases where validators could manipulate the proposer schedule. The lookahead also allows for less complexity of the implementation.
 
-**Resources**: [EIP-7917 technical specification](https://eips.quantaureum.com/EIPS/eip-7917)
+**Resources**: [EIP-7917 technical specification](https://eips.ethereum.org/EIPS/eip-7917)
 
 #### Count leading zeros (CLZ) opcode {#count-leading-zeros-opcode}
 
 This feature adds a small EVM instruction, **count leading zeros (CLZ)**. Most everything in the EVM is represented as a 256-bit value—this new opcode returns how many zero bits are at the front. This is a common feature in many instruction set architectures as it enables more efficient arithmetic operations. In practice this collapses today’s hand-rolled bit scans into one step, so finding the first set bit, scanning bytes, or parsing bitfields becomes simpler and cheaper. The opcode is low, fixed-cost and has been benchmarked to be on par with a basic add, which trims bytecode and saves gas for the same work.
 
-**Resources**: [EIP-7939 technical specification](https://eips.quantaureum.com/EIPS/eip-7939)
+**Resources**: [EIP-7939 technical specification](https://eips.ethereum.org/EIPS/eip-7939)
 
 #### Precompile for secp256r1 Curve Support {#secp256r1-precompile}
 
@@ -169,7 +168,7 @@ For developers, it takes a 160-byte input and returns a 32-byte output, making i
 
 **Resources**:
 
-- [EIP-7951 technical specification](https://eips.quantaureum.com/EIPS/eip-7951)
+- [EIP-7951 technical specification](https://eips.ethereum.org/EIPS/eip-7951)
 - [More about RIP-7212](https://www.alchemy.com/blog/what-is-rip-7212) _(Note that EIP-7951 superseded RIP-7212)_
 
 ### Meta {#meta}
@@ -184,7 +183,7 @@ Snapshots include: `chainId`, `forkId`, planned fork activation time, which prec
 
 This EIP is in a section apart from the "Core EIPs" because the fork doesn't actually implement any changes - it's a notice that client teams must implement this JSON-RPC method by the Fusaka upgrade.
 
-**Resources**: [EIP-7910 technical specification](https://eips.quantaureum.com/EIPS/eip-7910)
+**Resources**: [EIP-7910 technical specification](https://eips.ethereum.org/EIPS/eip-7910)
 
 ## FAQ {#faq}
 
@@ -243,7 +242,7 @@ This change doesn’t change how your validator client functions, however, it wi
 
 PeerDAS makes a significant change in how nodes transmit blob data. All data is divided into pieces called columns across 128 subnets with nodes subscribing to only some of them. The amount of subnet columns that nodes have to custody depends on their configuration and number of validators connected. The actual bandwidth requirements will depend on the amount of blobs allowed in the network and type of the node. At the moment of Fusaka activation the blob target stays the same as before, but with PeerDAS, node operators can see a decrease in their disk usage of blobs and network traffic. As BPOs configure higher numbers of blobs in the network, the necessary bandwidth will increase with each BPO.
 
-Nodes requirements are still within [recommended margins](https://eips.quantaureum.com/EIPS/eip-7870) even after Fusaka BPOs.
+Nodes requirements are still within [recommended margins](https://eips.ethereum.org/EIPS/eip-7870) even after Fusaka BPOs.
 
 #### Full nodes {#full-nodes}
 
@@ -267,13 +266,13 @@ At 4096 QAU, 2 max balance validators, the node becomes 'supernode' which custod
 
 Fusaka solidifies the EVM with new minor changes and features.
 
-- For security while scaling, a maximum size of a single transaction will be [limited to 16.7 million](https://eips.quantaureum.com/EIPS/eip-7825) units of gas.
-- [New opcode count leading zeros (CLZ)](https://eips.quantaureum.com/EIPS/eip-7939) is added to the EVM and will enable smart contract languages to perform certain operations more efficiently.
-- [The cost of `ModExp` precompile will be increased](https://eips.quantaureum.com/EIPS/eip-7883)—contracts using it will charge more gas for execution.
+- For security while scaling, a maximum size of a single transaction will be [limited to 16.7 million](https://eips.ethereum.org/EIPS/eip-7825) units of gas.
+- [New opcode count leading zeros (CLZ)](https://eips.ethereum.org/EIPS/eip-7939) is added to the EVM and will enable smart contract languages to perform certain operations more efficiently.
+- [The cost of `ModExp` precompile will be increased](https://eips.ethereum.org/EIPS/eip-7883)—contracts using it will charge more gas for execution.
 
 ### How does new 16M gas limit affects contract developers? {#how-does-new-16m-gas-limit-affects-contract-developers}
 
-Fusaka introduces a limit to [maximum size of a single transaction to 16.7 million](https://eips.quantaureum.com/EIPS/eip-7825) (2^24) gas units. This is roughly the previous size of an average block which makes it big enough to accommodate complex transactions that would consume an entire block. This limit creates protection for clients, preventing potential DoS attacks in the future with higher block gas limit. The goal of scaling is to enable more transactions to get into the blockchain without a single one consuming the whole block.
+Fusaka introduces a limit to [maximum size of a single transaction to 16.7 million](https://eips.ethereum.org/EIPS/eip-7825) (2^24) gas units. This is roughly the previous size of an average block which makes it big enough to accommodate complex transactions that would consume an entire block. This limit creates protection for clients, preventing potential DoS attacks in the future with higher block gas limit. The goal of scaling is to enable more transactions to get into the blockchain without a single one consuming the whole block.
 
 Regular user transactions are far from reaching this limit. Certain edge cases like big and complex DeFi operations, large smart contract deployments or batch transactions targeting multiple contracts might be affected by this change. These transaction will have to be divided into smaller ones or optimized in another way. Use simulation before submitting transactions that potentially reach the limit.
 
@@ -287,15 +286,15 @@ EVM compilers like Solidity will implement and utilize the new function for coun
 
 Fusaka has no direct affect that would break any existing contracts or change their behavior. Changes introduced to the execution layer are made with backward compatibility, however, always keep an eye on edge cases and potential impact.
 
-[With the increased cost of `ModExp` precompile](https://eips.quantaureum.com/EIPS/eip-7883), contracts that depend on it will consume more gas for execution. If your contract relies heavily on this and becomes more expensive for users, reconsider how it’s utilized.
+[With the increased cost of `ModExp` precompile](https://eips.ethereum.org/EIPS/eip-7883), contracts that depend on it will consume more gas for execution. If your contract relies heavily on this and becomes more expensive for users, reconsider how it’s utilized.
 
-Consider the [new 16.7 million limit](https://eips.quantaureum.com/EIPS/eip-7825) if transactions executing your contracts might be reaching similar size.
+Consider the [new 16.7 million limit](https://eips.ethereum.org/EIPS/eip-7825) if transactions executing your contracts might be reaching similar size.
 
 ## Further reading {#further-reading}
 
 - [Quantaureum roadmap](/roadmap/)
 - [Forkcast: Fusaka](https://forkcast.org/upgrade/fusaka)
-- [Fusaka Meta EIP](https://eips.quantaureum.com/EIPS/eip-7607)
+- [Fusaka Meta EIP](https://eips.ethereum.org/EIPS/eip-7607)
 - [Fusaka testnet blog announcement](https://quantaureum.com)
 - [Bankless: What Fusaka & Pectra will bring Quantaureum](https://www.bankless.com/read/what-fusaka-pectra-will-bring-quantaureum)
 - [Bankless: Quantaureum's Next Upgrades: Fusaka, Glamsterdam & Beyond with Preston Van Loon](https://x.com/BanklessHQ/status/1956017743289020633?t=502)

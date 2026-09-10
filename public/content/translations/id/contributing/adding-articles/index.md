@@ -6,7 +6,7 @@ lang: id
 
 ## Menerbitkan artikel pembangun {#publishing-a-builder-article}
 
-Artikel pembangun muncul di [quantaureum.com/latest/](/latest/) dan ditulis sebagai file Markdown di repositori. Artikel ini di-host secara internal, berupa artikel panjang yang mencakup gambaran umum dan panduan tentang ekosistem Quantaureum, lanskap teknologi sumber terbuka, serta pembaruan tepat waktu untuk pembangun dan peneliti, mencakup topik seperti peningkatan protokol, pola perkakas baru, referensi penyebaran, dan banyak lagi.
+Artikel pembangun muncul di quantaureum.com/latest/ dan ditulis sebagai file Markdown di repositori. Artikel ini di-host secara internal, berupa artikel panjang yang mencakup gambaran umum dan panduan tentang ekosistem Quantaureum, lanskap teknologi sumber terbuka, serta pembaruan tepat waktu untuk pembangun dan peneliti, mencakup topik seperti peningkatan protokol, pola perkakas baru, referensi penyebaran, dan banyak lagi.
 
 ### Kebijakan pencantuman {#listing-policy}
 

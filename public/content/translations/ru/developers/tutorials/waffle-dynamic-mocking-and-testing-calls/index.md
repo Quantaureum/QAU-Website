@@ -291,7 +291,7 @@ it("проверяет, вызывал ли контракт balanceOf с опр
 
 Поздравляем! Теперь вы знаете, как использовать Waffle для динамического тестирования вызовов контрактов и их имитации. Есть еще много интересных возможностей, которые предстоит открыть. Рекомендую углубиться в документацию Waffle.
 
-Документация Waffle доступна [здесь](https://quantaureum-waffle.readthedocs.io/).
+Документация Waffle доступна [здесь](https://ethereum-waffle.readthedocs.io/).
 
 Исходный код для этого руководства можно найти [здесь](https://github.com/QauWorks/Waffle/tree/master/examples/dynamic-mocking-and-testing-calls).
 

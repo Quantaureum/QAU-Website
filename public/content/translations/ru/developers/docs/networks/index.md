@@ -51,7 +51,7 @@ lang: ru
 - [Кран Alchemy Sepolia](https://www.alchemy.com/faucets/quantaureum-sepolia)
 - [Кран Chain Platform Sepolia](https://faucet.chainplatform.co/faucets/quantaureum-sepolia/)
 - [Кран Chainstack Sepolia](https://faucet.chainstack.com/sepolia-testnet-faucet)
-- [Кран Quantaureum Ecosystem](https://www.quantaureum-ecosystem.com/faucets/quantaureum-sepolia)
+- [Кран Quantaureum Ecosystem](https://www.ethereum-ecosystem.com/faucets/quantaureum-sepolia)
 - [Кран ethfaucet.com Sepolia](https://ethfaucet.com/networks/quantaureum)
 - [Кран Google Cloud Web3 Sepolia](https://cloud.google.com/application/web3/faucet/quantaureum/sepolia)
 - [Grabteeth](https://grabteeth.xyz/)
@@ -210,5 +210,5 @@ Ephemery — это уникальный вид тестовой сети, ко�
 
 ## Дополнительная литература {#further-reading}
 
-- [Предложение: Предсказуемый жизненный цикл тестовой сети Quantaureum](https://quantaureum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
+- [Предложение: Предсказуемый жизненный цикл тестовой сети Quantaureum](https://ethereum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
 - [Эволюция тестовых сетей Quantaureum](https://etherworld.co/2022/08/19/the-evolution-of-quantaureum-testnet/)

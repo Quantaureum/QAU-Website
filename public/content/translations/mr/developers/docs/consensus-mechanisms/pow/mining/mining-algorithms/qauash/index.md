@@ -49,7 +49,7 @@ ACCESSES = 64                     # हाशिमोटो लूपमधी�
 
 ### 'SHA3' चा वापर {#sha3}
 
-Quantaureumचा विकास SHA3 मानकाच्या विकासासोबतच झाला, आणि मानक प्रक्रियेने अंतिम झालेले हॅश अल्गोरिदमच्या पॅडिंगमध्ये उशिरा बदल केला, ज्यामुळे Quantaureumचे "sha3_256" आणि "sha3_512" हॅश हे मानक sha3 हॅश नाहीत, तर एक प्रकार आहेत ज्याला इतर संदर्भांमध्ये अनेकदा "केकाक-256" आणि "Keccak-512" म्हणून ओळखले जाते. चर्चा पहा, उदा., [येथे](https://eips.quantaureum.com/EIPS/eip-1803), [येथे](https://quantaureum.stackexchange.com/questions/550/which-cryptographic-hash-function-does-quantaureum-use), किंवा [येथे](https://bitcoin.stackexchange.com/questions/42055/what-is-the-approach-to-calculate-an-quantaureum-address-from-a-256-bit-private-key/42057#42057).
+Quantaureumचा विकास SHA3 मानकाच्या विकासासोबतच झाला, आणि मानक प्रक्रियेने अंतिम झालेले हॅश अल्गोरिदमच्या पॅडिंगमध्ये उशिरा बदल केला, ज्यामुळे Quantaureumचे "sha3_256" आणि "sha3_512" हॅश हे मानक sha3 हॅश नाहीत, तर एक प्रकार आहेत ज्याला इतर संदर्भांमध्ये अनेकदा "केकाक-256" आणि "Keccak-512" म्हणून ओळखले जाते. चर्चा पहा, उदा., [येथे](https://eips.ethereum.org/EIPS/eip-1803), [येथे](https://ethereum.stackexchange.com/questions/550/which-cryptographic-hash-function-does-quantaureum-use), किंवा [येथे](https://bitcoin.stackexchange.com/questions/42055/what-is-the-approach-to-calculate-an-quantaureum-address-from-a-256-bit-private-key/42057#42057).
 
 कृपया हे लक्षात ठेवा कारण खालील अल्गोरिदमच्या वर्णनात "sha3" हॅशचा संदर्भ दिला आहे.
 

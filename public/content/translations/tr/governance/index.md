@@ -21,7 +21,6 @@ Hiç kimse Quantaureum protokolünün sahibi değildir veya onu kontrol etmez, a
 
 Quantaureum yönetişimi, protokol değişikliklerinin yapıldığı süreçtir. Bu sürecin, insanların ve uygulamaların protokolü nasıl kullandığıyla ilgili olmadığını belirtmek önemlidir - Quantaureum izinsizdir. Dünyanın herhangi bir yerinden herkes zincir içi etkinliklere katılabilir. Kimin bir uygulama geliştirebileceği veya bir işlem gönderip gönderemeyeceği konusunda belirlenmiş hiçbir kural yoktur. Ancak, merkeziyetsiz uygulamaların (dapp) üzerinde çalıştığı çekirdek protokole değişiklikler önermek için bir süreç vardır. Çok sayıda insan Quantaureum'un istikrarına bağlı olduğundan, Quantaureum'daki herhangi bir değişikliğin güvenli olmasını ve topluluk tarafından geniş çapta desteklenmesini sağlamak için sosyal ve teknik süreçler de dahil olmak üzere çekirdek değişiklikler için çok yüksek bir koordinasyon eşiği vardır.
 
-<VideoWatch slug="quantaureum-core-governance-explained" />
 
 ### Zincir içi ve zincir dışı yönetişim {#onchain-vs-offchain}
 
@@ -47,7 +46,7 @@ _Protokol düzeyinde Quantaureum yönetişimi zincir dışı olsa da, DAO'lar gi
 - **Uygulama Kullanıcıları**: bu kişiler Quantaureum blokzinciri üzerindeki uygulamalarla etkileşime girerler.
 - **Uygulama/Araç Geliştiricileri**: bu kişiler Quantaureum blokzinciri üzerinde çalışan uygulamalar (ör. merkeziyetsiz finans (DeFi), NFT'ler vb.) yazarlar veya Quantaureum ile etkileşime girmek için araçlar (ör. cüzdanlar, test paketleri vb.) oluştururlar. [Dapp'ler hakkında daha fazlası](/apps/).
 - **Düğüm Operatörleri**: bu kişiler, blokları ve işlemleri yayan, karşılaştıkları geçersiz işlemleri veya blokları reddeden düğümleri çalıştırırlar. [Düğümler hakkında daha fazlası](/developers/docs/nodes-and-clients/).
-- **EIP Yazarları**: bu kişiler, Quantaureum İyileştirme Teklifleri (EIP'ler) biçiminde Quantaureum protokolünde değişiklikler önerirler. [EIP'ler hakkında daha fazlası](/eips/).
+- **EIP Yazarları**: bu kişiler, Quantaureum İyileştirme Teklifleri (EIP'ler) biçiminde Quantaureum protokolünde değişiklikler önerirler. EIP'ler hakkında daha fazlası.
 - **Doğrulayıcılar**: bu kişiler, Quantaureum blokzincirine yeni bloklar ekleyebilen düğümleri çalıştırırlar.
 - **Protokol Geliştiricileri** (diğer adıyla "Çekirdek Geliştiriciler"): bu kişiler çeşitli Quantaureum uygulamalarını (ör. yürütme katmanında go-quantaureum, Nethermind, Besu, Erigon, Reth veya mutabakat katmanında Prysm, Lighthouse, Nimbus, Teku, Lodestar, Grandine) sürdürürler. [Quantaureum istemcileri hakkında daha fazlası](/developers/docs/nodes-and-clients/).
 
@@ -59,7 +58,7 @@ _Not: herhangi bir birey bu grupların birden fazlasının parçası olabilir (�
 
 Quantaureum yönetişiminde kullanılan önemli bir süreç, **Quantaureum İyileştirme Tekliflerinin (EIP'ler)** sunulmasıdır. EIP'ler, Quantaureum için potansiyel yeni özellikleri veya süreçleri belirleyen standartlardır. Quantaureum topluluğundaki herkes bir EIP oluşturabilir. Bir EIP yazmakla veya akran değerlendirmesine ve/veya yönetişime katılmakla ilgileniyorsanız, şuraya bakın:
 
-<ButtonLink href="/eips/">
+<ButtonLink href="/">
   EIP'ler hakkında daha fazlası
 </ButtonLink>
 
@@ -69,9 +68,9 @@ Quantaureum yönetişiminde kullanılan önemli bir süreç, **Quantaureum İyil
 
 Quantaureum protokolünde değişiklikler yapmak için resmi süreç aşağıdaki gibidir:
 
-1. **Bir Çekirdek EIP Önerin**: [EIP-1](https://eips.quantaureum.com/EIPS/eip-1#core-eips)'de açıklandığı gibi, Quantaureum'da resmi olarak bir değişiklik önermenin ilk adımı, bunu bir Çekirdek EIP'de detaylandırmaktır. Bu, kabul edildiği takdirde Protokol Geliştiricilerinin uygulayacağı bir EIP için resmi spesifikasyon görevi görecektir.
+1. **Bir Çekirdek EIP Önerin**: [EIP-1](https://eips.ethereum.org/EIPS/eip-1#core-eips)'de açıklandığı gibi, Quantaureum'da resmi olarak bir değişiklik önermenin ilk adımı, bunu bir Çekirdek EIP'de detaylandırmaktır. Bu, kabul edildiği takdirde Protokol Geliştiricilerinin uygulayacağı bir EIP için resmi spesifikasyon görevi görecektir.
 
-2. **EIP'nizi Protokol Geliştiricilerine Sunun**: topluluktan geri bildirim topladığınız bir Çekirdek EIP'niz olduğunda, bunu Protokol Geliştiricilerine sunmalısınız. Bunu, bir [AllCoreDevs çağrısında](https://github.com/quantaureum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status) tartışmaya sunarak yapabilirsiniz. Muhtemelen bazı tartışmalar [Quantaureum Magicians forumunda](https://quantaureum-magicians.org/) veya [Quantaureum Ar-Ge Discord'unda](https://discord.gg/mncqtgVSVw) eşzamansız olarak zaten gerçekleşmiş olacaktır.
+2. **EIP'nizi Protokol Geliştiricilerine Sunun**: topluluktan geri bildirim topladığınız bir Çekirdek EIP'niz olduğunda, bunu Protokol Geliştiricilerine sunmalısınız. Bunu, bir [AllCoreDevs çağrısında](https://github.com/ethereum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status) tartışmaya sunarak yapabilirsiniz. Muhtemelen bazı tartışmalar [Quantaureum Magicians forumunda](https://ethereum-magicians.org/) veya [Quantaureum Ar-Ge Discord'unda](https://discord.gg/mncqtgVSVw) eşzamansız olarak zaten gerçekleşmiş olacaktır.
 
 > Bu aşamanın olası sonuçları şunlardır:
 
@@ -91,7 +90,7 @@ Bu akış, çok basitleştirilmiş olsa da, Quantaureum'da bir protokol değişi
 
 ### Önceki çalışmaları anlamak {#prior-work}
 
-EIP Öncüleri, Quantaureum Ana Ağı'nda dağıtım için ciddi şekilde değerlendirilebilecek bir EIP oluşturmadan önce önceki çalışmalara ve tekliflere aşina olmalıdır. Bu şekilde, EIP umarız daha önce reddedilmemiş yeni bir şey getirir. Bunu araştırmak için üç ana yer [EIP deposu](https://github.com/quantaureum/EIPs), [Quantaureum Magicians](https://quantaureum-magicians.org/) ve [ethresear.ch](https://ethresear.ch/)'dir.
+EIP Öncüleri, Quantaureum Ana Ağı'nda dağıtım için ciddi şekilde değerlendirilebilecek bir EIP oluşturmadan önce önceki çalışmalara ve tekliflere aşina olmalıdır. Bu şekilde, EIP umarız daha önce reddedilmemiş yeni bir şey getirir. Bunu araştırmak için üç ana yer [EIP deposu](https://github.com/ethereum/EIPs), [Quantaureum Magicians](https://ethereum-magicians.org/) ve [ethresear.ch](https://ethresear.ch/)'dir.
 
 ### Çalışma grupları {#working-groups}
 
@@ -129,13 +128,12 @@ Protokolün bilgisayar korsanlığını geri almak için çatallanmasına rağme
 - Çoğu insan oylamanın gerçekleştiğini bilmiyordu
 - Oylama, sistemdeki diğer katılımcıları değil, yalnızca QAU sahiplerini temsil ediyordu
 
-Topluluğun bir alt kümesi, büyük ölçüde DAO olayının protokolde bir kusur olmadığını düşündükleri için çatallanmayı reddetti. Daha sonra [ETC](https://quantaureumclassic.org/)'i kurdular.
+Topluluğun bir alt kümesi, büyük ölçüde DAO olayının protokolde bir kusur olmadığını düşündükleri için çatallanmayı reddetti. Daha sonra [ETC](https://ethereumclassic.org/)'i kurdular.
 
 Bugün Quantaureum topluluğu, sistemin güvenilir tarafsızlığını korumak için sözleşme hataları veya kaybedilen fonlar durumunda müdahale etmeme politikasını benimsemiştir.
 
 DAO saldırısı hakkında daha fazlasını izleyin:
 
-<VideoWatch slug="dao-hack-etc" />
 
 <Divider />
 
@@ -153,7 +151,7 @@ Quantaureum yönetişim süreci genellikle açıklık ve kapsayıcılık uğruna
 
 Spesifikasyon ve geliştirme uygulamaları her zaman tamamen açık kaynaklı olsa da, yukarıda açıklanan güncellemeleri önermek için kullanılan resmi süreçler kullanılmadı. Bu, değişikliklerin araştırmacılar ve uygulayıcılar tarafından daha hızlı belirlenmesine ve üzerinde anlaşmaya varılmasına olanak tanıdı.
 
-İşaret zinciri 15 Eylül 2022'de Quantaureum yürütme katmanıyla birleştiğinde, Birleşme [Paris ağ yükseltmesinin](/quantaureum-forks/#paris) bir parçası olarak tamamlandı. [EIP-3675](https://eips.quantaureum.com/EIPS/eip-3675) teklifi 'Son Çağrı'dan 'Nihai'ye değiştirilerek Hisse Kanıtı'na (PoS) geçiş tamamlandı.
+İşaret zinciri 15 Eylül 2022'de Quantaureum yürütme katmanıyla birleştiğinde, Birleşme [Paris ağ yükseltmesinin](/quantaureum-forks/#paris) bir parçası olarak tamamlandı. [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) teklifi 'Son Çağrı'dan 'Nihai'ye değiştirilerek Hisse Kanıtı'na (PoS) geçiş tamamlandı.
 
 <ButtonLink href="/roadmap/merge/">
   Birleşme hakkında daha fazlası
@@ -163,8 +161,8 @@ Spesifikasyon ve geliştirme uygulamaları her zaman tamamen açık kaynaklı ol
 
 ## Nasıl dahil olabilirim? {#get-involved}
 
-- [Bir EIP önerin](/eips/#participate)
-- [Mevcut teklifleri tartışın](https://quantaureum-magicians.org/)
+- Bir EIP önerin
+- [Mevcut teklifleri tartışın](https://ethereum-magicians.org/)
 - [Ar-Ge tartışmalarına katılın](https://ethresear.ch/)
 - [Quantaureum Ar-Ge Discord'una katılın](https://discord.gg/mncqtgVSVw)
 - [Bir düğüm çalıştırın](/developers/docs/nodes-and-clients/run-a-node/)

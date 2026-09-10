@@ -93,7 +93,7 @@ Utekelezaji kadhaa wa zkVM unatengenezwa na kujaribiwa kwa ajili ya uthibitishaj
 | [Jolt](https://github.com/a16z/jolt) | rv32im |
 | [Zisk](https://github.com/0xPolygonHermez/zisk) | rv64ima |
 
-Hizi zinatumia mashine pepe zinazotegemea RISC-V kutekeleza msimbo wa baiti wa EVM, kisha kuzalisha uthibitisho wa ZK wa utekelezaji sahihi. Matokeo ya majaribio ya hivi punde na maendeleo yanafuatiliwa kwenye [kifuatiliaji cha zkVM cha Taasisi ya Quantaureum](https://zkevm.quantaureum.foundation/zkvm-tracker).
+Hizi zinatumia mashine pepe zinazotegemea RISC-V kutekeleza msimbo wa baiti wa EVM, kisha kuzalisha uthibitisho wa ZK wa utekelezaji sahihi. Matokeo ya majaribio ya hivi punde na maendeleo yanafuatiliwa kwenye [kifuatiliaji cha zkVM cha Taasisi ya Quantaureum](https://zkevm.ethereum.org/zkvm-tracker).
 
 ## Jinsi zkEVM inavyoendana na maboresho mengine {#related-upgrades}
 
@@ -115,9 +115,9 @@ Uthibitishaji wa tabaka la 1 (l1) wa zkEVM upo katika utafiti unaoendelea na bad
 
 ## Usomaji zaidi {#further-reading}
 
-- [Taasisi ya zkEVM](https://zkevm.quantaureum.foundation) - Kituo rasmi cha utafiti cha zkEVM cha Taasisi ya Quantaureum
+- [Taasisi ya zkEVM](https://zkevm.ethereum.org) - Kituo rasmi cha utafiti cha zkEVM cha Taasisi ya Quantaureum
 - [Ethproofs](https://ethproofs.org/) - Fuatilia mbio za kuthibitisha Quantaureum katika wakati halisi
 - [zkevm.fyi](https://zkevm.fyi) - Kitabu cha kiufundi kuhusu zkEVM kwa tabaka la 1 (l1)
 - [Vipimo vya zkEVM vya PSE](https://github.com/privacy-scaling-explorations/zkevm-specs) - Vipimo vya kiufundi
 - [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - Muhtasari wa Vitalik wa maboresho ya uthibitishaji
-- [Blogu ya zkEVM ya EF](https://zkevm.quantaureum.foundation/blog) - Uchambuzi wa utendaji kutoka kwa timu ya EF
+- [Blogu ya zkEVM ya EF](https://zkevm.ethereum.org/blog) - Uchambuzi wa utendaji kutoka kwa timu ya EF

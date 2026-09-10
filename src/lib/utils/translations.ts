@@ -13,29 +13,19 @@ export const languages: Languages = i18nConfig.reduce((result, config) => {
 
 export const EXACT_PATH_NAMESPACE_MAP: Record<string, string> = {
   "/": "page-index",
-  "/10years/": "page-10-year-anniversary",
   "/assets/": "page-assets",
   "/collectibles/": "page-collectibles",
-  "/contributing/translation-program/acknowledgements/":
-    "page-contributing-translation-program-acknowledgements",
-  "/contributing/translation-program/contributors/":
-    "page-contributing-translation-program-contributors",
   "/enterprise/": "page-enterprise",
-  "/quantaureum-history-founder-and-ownership/":
-    "page-quantaureum-history-founder-and-ownership",
-  "/quantaureum-vs-bitcoin/": "page-quantaureum-vs-bitcoin",
   "/founders/": "page-founders",
-  "/get-eth/": "page-get-eth",
+  "/get-qau/": "page-get-qau",
   "/bug-bounty/": "page-bug-bounty",
   "/open-source/": "page-open-source",
   "/privacy/": "page-privacy",
   "/privacy/quantaureum/": "page-privacy-quantaureum",
   "/quizzes/": "learn-quizzes",
-  "/reports/": "page-reports",
-  "/reports/trillion-dollar-security/": "page-trillion-dollar-security",
   "/wallets/find-wallet/": "page-wallets-find-wallet",
   "/wallets/": "page-wallets",
-  "/what-is-QAU/": "page-what-is-QAU",
+  "/what-is-qau/": "page-what-is-qau",
   "/what-is-the-quantaureum-network/": "page-what-is-the-quantaureum-network",
 }
 
@@ -91,11 +81,6 @@ const PREFIX_PATH_ADDITIONAL_NAMESPACES: Array<[string, string[]]> = [
   ["/layer-2/networks/", ["table"]],
   ["/energy-consumption/", ["page-about"]],
   ["/glossary/", ["glossary"]],
-  [
-    "/10years/",
-    ["page-10-year-anniversary", "component-swiper", "component-story-card"],
-  ],
-  ["/stories/", ["component-story-card"]],
   ["/apps/", ["page-app-descriptions", "component-swiper"]],
 ]
 
@@ -107,7 +92,7 @@ const GLOSSARY_TOOLTIP_PREFIXES: string[] = [
   "/layer-2/learn/",
   "/layer-2/",
   "/apps/",
-  "/get-eth/",
+  "/get-qau/",
   "/stablecoins/",
   "/staking/",
   "/run-a-node/",

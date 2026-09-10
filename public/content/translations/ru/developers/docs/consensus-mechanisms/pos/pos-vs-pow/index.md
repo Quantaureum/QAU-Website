@@ -59,7 +59,6 @@ Quantaureum на доказательстве доли владения (PoS) м
 ## Лучше воспринимаете визуальную информацию? {#visual-learner}
 
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## Дополнительная литература {#further-reading}
 

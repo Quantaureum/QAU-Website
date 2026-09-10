@@ -40,11 +40,11 @@ const DEPTH_PENALTY = 2
 const SUPPLEMENTAL_ROOTS = new Set(["glossary", "resources", "quantaureum-forks"])
 
 /**
- * Root slugs demoted below everything else. `/videos/` carries auto-generated
+ * Root slugs demoted below everything else.
  * transcripts, which match almost any phrasing; `/contributing/` documents the site's
  * own process and answers questions nobody searching the site is asking.
  */
-const LOWEST_ROOTS = new Set(["videos", "contributing"])
+const LOWEST_ROOTS = new Set(["contributing"])
 
 /** Root slugs whose pages are introductory even when nested. */
 const GUIDE_ROOTS = new Set(["guides", "learn"])
@@ -83,7 +83,6 @@ export const pageRankForSlug = (slug: string[]): number => {
  */
 export const categoryForSlug = (slug: string[]): string => {
   if (slug.filter(Boolean).length === 0) return "home"
-  if (slug[0] === "videos") return "videos"
   if (isDeveloperSection(slug, "docs")) return "docs"
   if (isTutorialSlug(slug)) return "tutorials"
   if (slug[0] === "developers") return "devs"

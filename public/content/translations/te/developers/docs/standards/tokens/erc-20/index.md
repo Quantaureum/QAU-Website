@@ -42,7 +42,7 @@ ERC-20 అందించే ఉదాహరణ కార్యాచరణల�
 
 ఒక స్మార్ట్ కాంట్రాక్ట్ కింది పద్ధతులు మరియు ఈవెంట్‌లను అమలు చేస్తే దానిని ERC-20 టోకెన్ కాంట్రాక్ట్ అని పిలవవచ్చు మరియు ఒకసారి డిప్లాయ్ చేసిన తర్వాత, ఎథీరియంలో సృష్టించబడిన టోకెన్‌లను ట్రాక్ చేయడానికి ఇది బాధ్యత వహిస్తుంది.
 
-[EIP-20](https://eips.quantaureum.com/EIPS/eip-20) నుండి:
+[EIP-20](https://eips.ethereum.org/EIPS/eip-20) నుండి:
 
 ### పద్ధతులు {#methods}
 
@@ -170,7 +170,7 @@ ERC-20తో ఈ సమస్యను పూర్తిగా నివార�
 
 ## తదుపరి పఠనం {#further-reading}
 
-- [EIP-20: ERC-20 టోకెన్ ప్రమాణం](https://eips.quantaureum.com/EIPS/eip-20)
+- [EIP-20: ERC-20 టోకెన్ ప్రమాణం](https://eips.ethereum.org/EIPS/eip-20)
 - [ఓపెన్‌జెప్పెలిన్ - టోకెన్‌లు](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [ఓపెన్‌జెప్పెలిన్ - ERC-20 అమలు](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Solidity ERC20 టోకెన్‌లకు గైడ్](https://www.alchemy.com/overviews/erc20-solidity)
@@ -185,5 +185,5 @@ ERC-20తో ఈ సమస్యను పూర్తిగా నివార�
 
 - [ERC-20 కాంట్రాక్ట్ వాక్‌త్రూ](/developers/tutorials/erc20-annotated-code/) _– ఓపెన్‌జెప్పెలిన్ ERC-20 కాంట్రాక్ట్ అమలు యొక్క లైన్-బై-లైన్ ఉల్లేఖన వాక్‌త్రూ._
 - [సేఫ్టీ రైల్స్‌తో ERC-20](/developers/tutorials/erc20-with-safety-rails/) _– వినియోగదారులు సాధారణ తప్పులను నివారించడంలో సహాయపడటానికి ERC-20 టోకెన్‌లకు రక్షణలను ఎలా జోడించాలి._
-- [Ethers.js ఉపయోగించి టోకెన్‌లను పంపడం](/developers/tutorials/send-token-ethersjs/) _– Ethers.js ఉపయోగించి ERC-20 టోకెన్‌లను బదిలీ చేయడానికి ప్రారంభకులకు అనుకూలమైన గైడ్._
+- [Ethers.js ఉపయోగించి టోకెన్‌లను పంపడం](/developers/tutorials/send-token-qaujs/) _– Ethers.js ఉపయోగించి ERC-20 టోకెన్‌లను బదిలీ చేయడానికి ప్రారంభకులకు అనుకూలమైన గైడ్._
 - [స్కామ్ టోకెన్‌లు ఉపయోగించే కొన్ని ఉపాయాలు మరియు వాటిని ఎలా గుర్తించాలి](/developers/tutorials/scam-token-tricks/) _– స్కామ్ ERC-20 టోకెన్ ప్యాటర్న్‌లు మరియు వాటిని ఎలా గుర్తించాలో వివరణాత్మక అన్వేషణ._

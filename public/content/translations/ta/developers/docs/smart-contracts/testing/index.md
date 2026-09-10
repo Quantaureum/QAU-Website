@@ -138,9 +138,9 @@ function auctionEnd() external {
 
 Solidity திறன் ஒப்பந்தங்களுக்கான அலகுச் சோதனைக் கட்டமைப்புகள் வெவ்வேறு மொழிகளில் (பெரும்பாலும் JavaScript, Python மற்றும் Rust) வருகின்றன. வெவ்வேறு சோதனைக் கட்டமைப்புகளுடன் அலகுச் சோதனைகளை எவ்வாறு தொடங்குவது என்பது பற்றிய தகவலுக்குக் கீழே உள்ள சில வழிகாட்டிகளைப் பார்க்கவும்:
 
-- **[Brownie உடன் அலகுச் சோதனைகளை இயக்குதல்](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Brownie உடன் அலகுச் சோதனைகளை இயக்குதல்](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Foundry உடன் அலகுச் சோதனைகளை இயக்குதல்](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Waffle உடன் அலகுச் சோதனைகளை இயக்குதல்](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Waffle உடன் அலகுச் சோதனைகளை இயக்குதல்](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Remix உடன் அலகுச் சோதனைகளை இயக்குதல்](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Ape உடன் அலகுச் சோதனைகளை இயக்குதல்](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Hardhat உடன் அலகுச் சோதனைகளை இயக்குதல்](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -190,7 +190,7 @@ Solidity திறன் ஒப்பந்தங்களுக்கான அ
 
 - **[ஸ்லித்தர் உடன் திறன் ஒப்பந்தங்களின் நிலையான பகுப்பாய்வு](https://github.com/crytic/slither)**
 - **[Wake உடன் திறன் ஒப்பந்தங்களின் நிலையான பகுப்பாய்வு](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[Brownie உடன் பண்பு அடிப்படையிலான சோதனை](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Brownie உடன் பண்பு அடிப்படையிலான சோதனை](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Foundry உடன் ஒப்பந்தங்களை ஃபஸ்ஸிங் செய்தல்](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[எக்கிட்னா உடன் ஒப்பந்தங்களை ஃபஸ்ஸிங் செய்தல்](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Wake உடன் ஒப்பந்தங்களை ஃபஸ்ஸிங் செய்தல்](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -251,13 +251,13 @@ Solidity திறன் ஒப்பந்தங்களுக்கான அ
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Solidity இல் எழுதப்பட்ட திறன் ஒப்பந்தங்களுக்கான குறியீட்டுத் தழுவல் கருவி._
 
-- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - _மேம்பட்ட திறன் ஒப்பந்த மேம்பாடு மற்றும் சோதனைக்கான கட்டமைப்பு (Ethers.js ஐ அடிப்படையாகக் கொண்டது)._
+- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _மேம்பட்ட திறன் ஒப்பந்த மேம்பாடு மற்றும் சோதனைக்கான கட்டமைப்பு (Ethers.js ஐ அடிப்படையாகக் கொண்டது)._
 
-- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - _Solidity திறன் ஒப்பந்தங்களைச் சோதிப்பதற்கான கருவி. ஒரு ஒப்பந்தத்திற்கான சோதனை நிகழ்வுகளை எழுதவும் இயக்கவும் பயன்படுத்தப்படும் Remix IDE "Solidity Unit Testing" செருகுநிரலின் கீழ் செயல்படுகிறது._
+- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Solidity திறன் ஒப்பந்தங்களைச் சோதிப்பதற்கான கருவி. ஒரு ஒப்பந்தத்திற்கான சோதனை நிகழ்வுகளை எழுதவும் இயக்கவும் பயன்படுத்தப்படும் Remix IDE "Solidity Unit Testing" செருகுநிரலின் கீழ் செயல்படுகிறது._
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _எத்திரியம் திறன் ஒப்பந்தச் சோதனைக்கான உறுதிமொழி நிரலகம். உங்கள் ஒப்பந்தங்கள் எதிர்பார்த்தபடி செயல்படுவதை உறுதிப்படுத்திக் கொள்ளுங்கள்!_
 
-- **[Brownie அலகுச் சோதனைக் கட்டமைப்பு](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie Pytest ஐப் பயன்படுத்துகிறது, இது குறைந்தபட்சக் குறியீட்டுடன் சிறிய சோதனைகளை எழுத உங்களை அனுமதிக்கும் அம்சம் நிறைந்த சோதனைக் கட்டமைப்பாகும், பெரிய திட்டங்களுக்கு நன்றாக அளவிடப்படுகிறது மற்றும் மிகவும் நீட்டிக்கக்கூடியது._
+- **[Brownie அலகுச் சோதனைக் கட்டமைப்பு](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie Pytest ஐப் பயன்படுத்துகிறது, இது குறைந்தபட்சக் குறியீட்டுடன் சிறிய சோதனைகளை எழுத உங்களை அனுமதிக்கும் அம்சம் நிறைந்த சோதனைக் கட்டமைப்பாகும், பெரிய திட்டங்களுக்கு நன்றாக அளவிடப்படுகிறது மற்றும் மிகவும் நீட்டிக்கக்கூடியது._
 
 - **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry Forge ஐ வழங்குகிறது, இது எளிய அலகுச் சோதனைகள், எரிவாயு உகப்பாக்கச் சரிபார்ப்புகள் மற்றும் ஒப்பந்த ஃபஸ்ஸிங் ஆகியவற்றைச் செயல்படுத்தக்கூடிய வேகமான மற்றும் நெகிழ்வான எத்திரியம் சோதனைக் கட்டமைப்பாகும்._
 

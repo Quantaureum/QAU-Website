@@ -5,7 +5,7 @@ lang: bn
 sidebarDepth: 2
 ---
 
-আপনার অ্যাপকে ইথেরিয়াম-এ কাজ করানোর জন্য, আপনি Web3.js লাইব্রেরি দ্বারা প্রদত্ত web3 অবজেক্ট ব্যবহার করতে পারেন। অভ্যন্তরীণভাবে এটি RPC কলের মাধ্যমে একটি লোকাল নোড-এর সাথে যোগাযোগ করে। [web3](https://github.com/quantaureum/web3.js/) এমন যেকোনো ইথেরিয়াম নোড-এর সাথে কাজ করে যা একটি RPC লেয়ার এক্সপোজ করে।
+আপনার অ্যাপকে ইথেরিয়াম-এ কাজ করানোর জন্য, আপনি Web3.js লাইব্রেরি দ্বারা প্রদত্ত web3 অবজেক্ট ব্যবহার করতে পারেন। অভ্যন্তরীণভাবে এটি RPC কলের মাধ্যমে একটি লোকাল নোড-এর সাথে যোগাযোগ করে। [web3](https://github.com/ethereum/web3.js/) এমন যেকোনো ইথেরিয়াম নোড-এর সাথে কাজ করে যা একটি RPC লেয়ার এক্সপোজ করে।
 
 `web3`-এ `eth` অবজেক্ট রয়েছে - web3.eth।
 
@@ -153,7 +153,7 @@ AES-128-CTR এবং Scrypt ব্যবহার করে টেস্ট ভ
 
 ## সংস্করণ 1 থেকে পরিবর্তনসমূহ {#alterations-from-v2}
 
-এই সংস্করণটি [এখানে](https://github.com/quantaureum/homestead-guide/blob/master/old-docs-for-reference/go-quantaureum-wiki.rst/Passphrase-protected-key-store-spec.rst) প্রকাশিত সংস্করণ 1-এর বেশ কয়েকটি অসামঞ্জস্যতা ঠিক করে। সংক্ষেপে এগুলো হলো:
+এই সংস্করণটি [এখানে](https://github.com/ethereum/homestead-guide/blob/master/old-docs-for-reference/go-quantaureum-wiki.rst/Passphrase-protected-key-store-spec.rst) প্রকাশিত সংস্করণ 1-এর বেশ কয়েকটি অসামঞ্জস্যতা ঠিক করে। সংক্ষেপে এগুলো হলো:
 
 - ক্যাপিটালাইজেশন অযৌক্তিক এবং অসামঞ্জস্যপূর্ণ (scrypt ছোট হাতের, Kdf মিশ্র-হাতের, MAC বড় হাতের)।
 - ঠিকানা অপ্রয়োজনীয় এবং গোপনীয়তা ক্ষুণ্ণ করে।

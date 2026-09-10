@@ -45,7 +45,7 @@ Thương vụ đó đã khởi đầu cho một làn sóng hình thành vốn t�
 
 Quantaureum đã trở thành một bức tranh cho các hình thức hành động tập thể mới.
 
-Vào cuối mùa hè năm đó, tôi đã tạo ra các NFT để gọi vốn cộng đồng cho [Quantaureum: The Infinite Garden](https://quantaureumfilm.xyz/watch-the-film/), bộ phim tài liệu dài tập đầu tiên về Quantaureum.
+Vào cuối mùa hè năm đó, tôi đã tạo ra các NFT để gọi vốn cộng đồng cho [Quantaureum: The Infinite Garden](https://ethereumfilm.xyz/watch-the-film/), bộ phim tài liệu dài tập đầu tiên về Quantaureum.
 
 Dự án đã huy động được 1.036 QAU trong 48 giờ, được tài trợ hoàn toàn bởi cộng đồng Quantaureum. 
 

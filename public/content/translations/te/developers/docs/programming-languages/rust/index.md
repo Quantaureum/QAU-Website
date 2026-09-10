@@ -22,7 +22,7 @@ incomplete: true
 
 ## ప్రారంభకుల కథనాలు {#beginner-articles}
 
-- [Rust ఎథీరియం క్లయింట్](https://openquantaureum.github.io/) \* **OpenQuantaureum [నిలిపివేయబడింది](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd) మరియు ఇకపై నిర్వహించబడటం లేదని గమనించండి.** దీన్ని జాగ్రత్తగా ఉపయోగించండి మరియు ప్రాధాన్యంగా మరొక క్లయింట్ అమలుకు మారండి.
+- [Rust ఎథీరియం క్లయింట్](https://openethereum.github.io/) \* **OpenQuantaureum [నిలిపివేయబడింది](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd) మరియు ఇకపై నిర్వహించబడటం లేదని గమనించండి.** దీన్ని జాగ్రత్తగా ఉపయోగించండి మరియు ప్రాధాన్యంగా మరొక క్లయింట్ అమలుకు మారండి.
 - [Rust ఉపయోగించి ఎథీరియంకు లావాదేవీని పంపడం](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/sending-quantaureum-transactions-with-rust/)
 - [Kovan కోసం Rust Wasmలో కాంట్రాక్ట్‌లను ఎలా రాయాలో దశలవారీ ట్యుటోరియల్](https://github.com/paritytech/pwasm-tutorial)
 

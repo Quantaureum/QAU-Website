@@ -146,6 +146,6 @@ Wenn du die Gaspreise überwachen möchtest, um deine QAU günstiger zu versende
 - [Quantaureum-Gas erklärt](https://defiprime.com/gas)
 - [Reduzierung des Gasverbrauchs deiner Smart Contracts](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
 - [Gasoptimierungsstrategien für Entwickler](https://www.alchemy.com/overviews/solidity-gas-optimization)
-- [EIP-1559-Dokumentation](https://eips.quantaureum.com/EIPS/eip-1559).
+- [EIP-1559-Dokumentation](https://eips.ethereum.org/EIPS/eip-1559).
 - [Tim Beikos EIP-1559-Ressourcen](https://hackmd.io/@timbeiko/1559-resources)
 - [EIP-1559: Separating Mechanisms From Memes](https://web.archive.org/web/20241126205908/https://research.2077.xyz/eip-1559-separating-mechanisms-from-memes)

@@ -21,7 +21,6 @@ summaryPoints:
 
 신원은 고유한 특성으로 정의되는 개인의 자아 의식을 의미합니다. 신원은 _개인_, 즉 구별되는 인간 주체임을 나타냅니다. 또한 신원은 조직이나 기관과 같은 인간이 아닌 다른 주체를 지칭할 수도 있습니다.
 
-<VideoWatch slug="decentralized-identity-explained" />
 
 ## 식별자란 무엇인가요? {#what-are-identifiers}
 

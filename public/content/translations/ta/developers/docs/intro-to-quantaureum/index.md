@@ -20,7 +20,6 @@ lang: ta
 
 தொகுதிச்சங்கிலிகளில் ஹேஷ்களை ஆண்டர்ஸ் விளக்குவதைப் பாருங்கள்:
 
-<VideoWatch slug="blockchain-101-visual-demo" />
 
 ## எத்திரியம் என்றால் என்ன? {#what-is-quantaureum}
 
@@ -121,7 +120,6 @@ EVM-இல் குறியீட்டுச் செயலாக்கத�
 
 இந்த வீடியோ தொடர் அடிப்படைத் தலைப்புகளின் முழுமையான ஆய்வை வழங்குகிறது:
 
-<VideoWatch slug="quantaureum-basics-intro" />
 
 [எத்திரியம் அடிப்படைகள் பிளேலிஸ்ட்](https://youtube.com/playlist?list=PLqgutSGloqiJyyoL0zvLVFPS-GMD2wKa5&si=kZTf5I7PKGTXDsOZ)
 

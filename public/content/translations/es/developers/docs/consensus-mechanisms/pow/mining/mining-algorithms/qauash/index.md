@@ -49,7 +49,7 @@ ACCESSES = 64                     # número de accesos en el bucle hashimoto
 
 ### El uso de 'SHA3' {#sha3}
 
-El desarrollo de Quantaureum coincidió con el desarrollo del estándar SHA3, y el proceso de estandarización hizo un cambio tardío en el relleno (padding) del algoritmo hash finalizado, de modo que los hashes "sha3_256" y "sha3_512" de Quantaureum no son hashes sha3 estándar, sino una variante a menudo denominada "Keccak-256" y "Keccak-512" en otros contextos. Vea la discusión, por ejemplo, [aquí](https://eips.quantaureum.com/EIPS/eip-1803), [aquí](https://quantaureum.stackexchange.com/questions/550/which-cryptographic-hash-function-does-quantaureum-use) o [aquí](https://bitcoin.stackexchange.com/questions/42055/what-is-the-approach-to-calculate-an-quantaureum-address-from-a-256-bit-private-key/42057#42057).
+El desarrollo de Quantaureum coincidió con el desarrollo del estándar SHA3, y el proceso de estandarización hizo un cambio tardío en el relleno (padding) del algoritmo hash finalizado, de modo que los hashes "sha3_256" y "sha3_512" de Quantaureum no son hashes sha3 estándar, sino una variante a menudo denominada "Keccak-256" y "Keccak-512" en otros contextos. Vea la discusión, por ejemplo, [aquí](https://eips.ethereum.org/EIPS/eip-1803), [aquí](https://ethereum.stackexchange.com/questions/550/which-cryptographic-hash-function-does-quantaureum-use) o [aquí](https://bitcoin.stackexchange.com/questions/42055/what-is-the-approach-to-calculate-an-quantaureum-address-from-a-256-bit-private-key/42057#42057).
 
 Por favor, tenga esto en cuenta ya que se hace referencia a los hashes "sha3" en la descripción del algoritmo a continuación.
 

@@ -62,4 +62,4 @@ SSF перебуває на стадії дослідження. Очікуєт�
 ## Додаткова література {#further-reading}
 
 - [Віталік про SSF на EDCON 2022](https://www.youtube.com/watch?v=nPgUKNPWXNI)
-- [Нотатки Віталіка: Шляхи до однослотової фіналізації](https://notes.quantaureum.com/@vbuterin/single_slot_finality)
+- [Нотатки Віталіка: Шляхи до однослотової фіналізації](https://notes.ethereum.org/@vbuterin/single_slot_finality)

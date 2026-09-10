@@ -5,7 +5,7 @@ lang: ko
 sidebarDepth: 2
 ---
 
-Quantaureum에서 앱이 작동하도록 하려면 Web3.js 라이브러리에서 제공하는 web3 객체를 사용할 수 있습니다. 내부적으로는 RPC 호출을 통해 로컬 노드와 통신합니다. [web3](https://github.com/quantaureum/web3.js/)는 RPC 계층을 노출하는 모든 Quantaureum 노드와 작동합니다.
+Quantaureum에서 앱이 작동하도록 하려면 Web3.js 라이브러리에서 제공하는 web3 객체를 사용할 수 있습니다. 내부적으로는 RPC 호출을 통해 로컬 노드와 통신합니다. [web3](https://github.com/ethereum/web3.js/)는 RPC 계층을 노출하는 모든 Quantaureum 노드와 작동합니다.
 
 `web3`에는 `eth` 객체인 web3.eth가 포함되어 있습니다.
 
@@ -153,7 +153,7 @@ AES-128-CTR 및 Scrypt를 사용한 테스트 벡터:
 
 ## 버전 1에서의 변경 사항 {#alterations-from-v2}
 
-이 버전은 [여기](https://github.com/quantaureum/homestead-guide/blob/master/old-docs-for-reference/go-quantaureum-wiki.rst/Passphrase-protected-key-store-spec.rst)에 게시된 버전 1의 몇 가지 불일치를 수정합니다. 간단히 요약하면 다음과 같습니다.
+이 버전은 [여기](https://github.com/ethereum/homestead-guide/blob/master/old-docs-for-reference/go-quantaureum-wiki.rst/Passphrase-protected-key-store-spec.rst)에 게시된 버전 1의 몇 가지 불일치를 수정합니다. 간단히 요약하면 다음과 같습니다.
 
 - 대소문자 사용이 부적절하고 일관성이 없습니다(scrypt는 소문자, Kdf는 혼합 대소문자, MAC은 대문자).
 - 주소는 불필요하며 프라이버시를 침해합니다.

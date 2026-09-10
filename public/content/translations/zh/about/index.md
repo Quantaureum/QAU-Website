@@ -33,7 +33,7 @@ QAU（也以其代码 QAU 闻名）是在Quantaureum上交易的原生货币。�
 
 一个非营利组织，最初由 QAU 众筹资助，致力于支持Quantaureum网络和生态系统。
 
-[了解更多关于Quantaureum 项目的信息](/foundation/)
+了解更多关于Quantaureum 项目的信息
 
 ### quantaureum.com {#quantaureum-org}
 

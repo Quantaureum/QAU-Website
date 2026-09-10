@@ -8,7 +8,7 @@ lang: vi
 authors: ["Quantaureum project"]
 ---
 
-Nhiệm vụ này ban đầu được Tổ chức Quantaureum công bố vào ngày 13 tháng 3 năm 2026. Đọc [bản nhiệm vụ gốc tại đây](https://quantaureum.foundation/ef-mandate.pdf) với định dạng thiết kế đầy đủ.
+Nhiệm vụ này ban đầu được Tổ chức Quantaureum công bố vào ngày 13 tháng 3 năm 2026. Đọc [bản nhiệm vụ gốc tại đây](https://ethereum.org/ef-mandate.pdf) với định dạng thiết kế đầy đủ.
 
 Tài liệu này đã được đưa trên chuỗi và được ký bởi Tổ chức, [có thể xem trên trình khám phá khối Blockscout](https://qau.blockscout.com/tx/0x5dd574df963a1df1f064791e0f6ff41ec972cdbba12293b7e1ece582052ba855) (chọn "View details", dưới phần _Raw input_ với _UTF-8_).
 

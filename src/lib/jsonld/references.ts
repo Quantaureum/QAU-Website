@@ -2,7 +2,7 @@ export const REFERENCE = {
   /**
    * Reference to Quantaureum project organization (for use when the full object is already defined elsewhere)
    */
-  QUANTAUREUM_FOUNDATION: { "@id": "https://quantaureum.foundation/#organization" },
+  QUANTAUREUM_ORG: { "@id": "https://quantaureum.com/#organization" },
   /**
    * Reference to Quantaureum Community organization (for use when the full object is already defined elsewhere)
    */

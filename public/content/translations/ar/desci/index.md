@@ -20,7 +20,6 @@ summaryPoints:
 
 يسمح العلم اللامركزي بمصادر تمويل أكثر تنوعًا (من [<span dir="ltr">DAOs</span>](/glossary/#dao)، و[التبرعات التربيعية](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531) إلى التمويل الجماعي والمزيد)، وبيانات وطرق يسهل الوصول إليها، ومن خلال توفير حوافز لقابلية إعادة الإنتاج.
 
-<VideoWatch slug="desci-movement-juan-benet" />
 
 ## كيف يحسن <span dir="ltr">DeSci</span> العلم {#desci-improves-science}
 

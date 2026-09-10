@@ -145,7 +145,7 @@ contentPreview="Yanlış. Birleşme, ağ kapasitesinin bir genişlemesi değil, 
 
 Gaz ücretleri, ağın kapasitesine göre ağ talebinin bir ürünüdür. Birleşme, mutabakat için Hisse Kanıtı'na (PoS) geçerek İş Kanıtı'nın (PoW) kullanımını kullanımdan kaldırdı, ancak ağ kapasitesini veya işlem kapasitesini doğrudan etkileyen hiçbir parametreyi önemli ölçüde değiştirmedi.
 
-<a href="https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698">Rollup merkezli bir yol haritası</a> ile çabalar, kullanıcı etkinliğini [katman 2 (L2)](/layer-2/)'de ölçeklendirmeye odaklanırken, katman 1 (L1) Ana Ağı'nı Rollup işlemlerini katlanarak daha ucuz hale getirmeye yardımcı olmak için Rollup veri depolaması için optimize edilmiş güvenli bir merkeziyetsiz uzlaşma katmanı olarak etkinleştiriyor. Hisse Kanıtı'na geçiş, bunu gerçekleştirmenin kritik bir öncüsüdür. [Gaz ve ücretler hakkında daha fazla bilgi.](/developers/docs/gas/)
+<a href="https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698">Rollup merkezli bir yol haritası</a> ile çabalar, kullanıcı etkinliğini [katman 2 (L2)](/layer-2/)'de ölçeklendirmeye odaklanırken, katman 1 (L1) Ana Ağı'nı Rollup işlemlerini katlanarak daha ucuz hale getirmeye yardımcı olmak için Rollup veri depolaması için optimize edilmiş güvenli bir merkeziyetsiz uzlaşma katmanı olarak etkinleştiriyor. Hisse Kanıtı'na geçiş, bunu gerçekleştirmenin kritik bir öncüsüdür. [Gaz ve ücretler hakkında daha fazla bilgi.](/developers/docs/gas/)
 
 </ExpandableCard>
 

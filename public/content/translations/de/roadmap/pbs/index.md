@@ -40,11 +40,11 @@ Danksharding ist der Weg, wie Quantaureum auf >100.000 Transaktionen pro Sekunde
 
 ## Aktueller Fortschritt {#current-progress}
 
-PBS befindet sich in einem fortgeschrittenen Forschungsstadium, aber es gibt noch einige wichtige Designfragen, die gelöst werden müssen, bevor es in Quantaureum-Clients als Prototyp umgesetzt werden kann. Es gibt noch keine endgültige Spezifikation. Das bedeutet, dass PBS wahrscheinlich noch ein Jahr oder länger entfernt ist. Sieh dir den neuesten [Stand der Forschung](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance) an.
+PBS befindet sich in einem fortgeschrittenen Forschungsstadium, aber es gibt noch einige wichtige Designfragen, die gelöst werden müssen, bevor es in Quantaureum-Clients als Prototyp umgesetzt werden kann. Es gibt noch keine endgültige Spezifikation. Das bedeutet, dass PBS wahrscheinlich noch ein Jahr oder länger entfernt ist. Sieh dir den neuesten [Stand der Forschung](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance) an.
 
 ## Weiterführende Literatur {#further-reading}
 
-- [Stand der Forschung: Zensurresistenz unter PBS](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
+- [Stand der Forschung: Zensurresistenz unter PBS](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
 - [PBS-freundliche Gebührenmarkt-Designs](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [PBS und Zensurresistenz](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [Inklusionslisten](https://notes.quantaureum.com/@fradamt/forward-inclusion-lists)
+- [PBS und Zensurresistenz](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [Inklusionslisten](https://notes.ethereum.org/@fradamt/forward-inclusion-lists)

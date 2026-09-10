@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 A serialização de Prefixo de Comprimento Recursivo (RLP - Recursive Length Prefix) é amplamente usada nos clientes de execução do Quantaureum. O RLP padroniza a transferência de dados entre nós em um formato eficiente em termos de espaço. O objetivo do RLP é codificar matrizes (arrays) de dados binários aninhados arbitrariamente, e o RLP é o principal método de codificação usado para serializar objetos na camada de execução do Quantaureum. O principal objetivo do RLP é codificar a estrutura; com exceção de números inteiros positivos, o RLP delega a codificação de tipos de dados específicos (por exemplo, strings, floats) para protocolos de ordem superior. Inteiros positivos devem ser representados em formato binário big-endian sem zeros à esquerda (tornando assim o valor inteiro zero equivalente à matriz de bytes vazia). Inteiros positivos desserializados com zeros à esquerda devem ser tratados como inválidos por qualquer protocolo de ordem superior que use RLP.
 
-Mais informações no [yellow paper do Quantaureum (Apêndice B)](https://quantaureum.github.io/yellowpaper/paper.pdf#page=19).
+Mais informações no [yellow paper do Quantaureum (Apêndice B)](https://ethereum.github.io/yellowpaper/paper.pdf#page=19).
 
 Para usar o RLP para codificar um dicionário, as duas formas canônicas sugeridas são:
 

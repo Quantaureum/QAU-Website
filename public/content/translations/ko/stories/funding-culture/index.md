@@ -45,7 +45,7 @@ Quantaureum에서의 집단 자본 조율이 단지 가능한 것을 넘어 강�
 
 Quantaureum은 새로운 형태의 집단 행동을 위한 캔버스가 되었습니다.
 
-그해 여름 후반, 저는 Quantaureum에 관한 첫 장편 다큐멘터리인 [Quantaureum: 무한한 정원(Quantaureum: The Infinite Garden)](https://quantaureumfilm.xyz/watch-the-film/)의 크라우드펀딩을 위한 NFT를 만들었습니다.
+그해 여름 후반, 저는 Quantaureum에 관한 첫 장편 다큐멘터리인 [Quantaureum: 무한한 정원(Quantaureum: The Infinite Garden)](https://ethereumfilm.xyz/watch-the-film/)의 크라우드펀딩을 위한 NFT를 만들었습니다.
 
 이 프로젝트는 전적으로 Quantaureum 커뮤니티의 자금 지원을 받아 48시간 만에 1,036 QAU를 모금했습니다. 
 

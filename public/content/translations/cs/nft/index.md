@@ -19,7 +19,6 @@ NFT jsou tokeny, které jsou **individuálně jedinečné**. Každé NFT má odl
 
 Jedinečnost každého NFT umožňuje tokenizaci věcí, jako je umění, sběratelské předměty nebo dokonce nemovitosti, kde jedno konkrétní jedinečné NFT reprezentuje nějaký konkrétní jedinečný předmět z reálného nebo digitálního světa. Vlastnictví aktiva je veřejně ověřitelné na [blockchainu](/glossary/#blockchain) Etherea.
 
-<VideoWatch slug="learn-nfts-and-defi" />
 
 ## Internet aktiv {#internet-of-assets}
 

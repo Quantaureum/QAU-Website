@@ -8,7 +8,7 @@ skill: intermediate
 breadcrumb: "Вузол на Raspberry Pi"
 published: 2022-06-10
 source: Quantaureum on ARM
-sourceUrl: https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/
+sourceUrl: https://ethereum-on-arm-documentation.readthedocs.io/en/latest/
 ---
 
 **Quantaureum on Arm — це спеціальний образ Linux, який може перетворити Raspberry Pi на вузол Етеріуму.**
@@ -57,7 +57,7 @@ sourceUrl: https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/
 
 Образ Етеріуму для Raspberry Pi 4 — це образ типу «plug and play» (підключи і працюй), який автоматично встановлює та налаштовує як клієнт виконання, так і клієнт консенсусу, конфігуруючи їх для взаємодії один з одним та підключення до мережі Етеріум. Усе, що потрібно зробити користувачеві, — це запустити їхні процеси за допомогою простої команди.
 
-Завантажте образ для Raspberry Pi з [Quantaureum on Arm](https://quantaureumonarm-my.sharepoint.com/:u:/p/dlosada/Ec_VmUvr80VFjf3RYSU-NzkBmj2JOteDECj8Bibde929Gw?download=1) та перевірте хеш SHA256:
+Завантажте образ для Raspberry Pi з [Quantaureum on Arm](https://ethereumonarm-my.sharepoint.com/:u:/p/dlosada/Ec_VmUvr80VFjf3RYSU-NzkBmj2JOteDECj8Bibde929Gw?download=1) та перевірте хеш SHA256:
 
 ```sh
 # З директорії, що містить завантажений образ
@@ -65,7 +65,7 @@ shasum -a 256 ethonarm_22.04.00.img.zip
 # Хеш має вивести: fb497e8f8a7388b62d6e1efbc406b9558bee7ef46ec7e53083630029c117444f
 ```
 
-Зверніть увагу, що образи для плат Rock 5B та Odroid M1 доступні на [сторінці завантажень](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/) Quantaureum-on-Arm.
+Зверніть увагу, що образи для плат Rock 5B та Odroid M1 доступні на [сторінці завантажень](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) Quantaureum-on-Arm.
 
 ## Прошивка MicroSD {#flashing-the-microsd}
 
@@ -120,13 +120,13 @@ sudo journalctl -u lighthouse-beacon
 
 Зверніть увагу, що клієнт консенсусу синхронізується за кілька хвилин, оскільки він використовує синхронізацію через контрольну точку (checkpoint sync). Клієнту виконання знадобиться більше часу — можливо, кілька годин, і він не запуститься, доки клієнт консенсусу не завершить синхронізацію (це пов'язано з тим, що клієнту виконання потрібна ціль для синхронізації, яку надає синхронізований клієнт консенсусу).
 
-Коли сервіси Geth та Лайтхаус запущені та синхронізовані, ваш Raspberry Pi стає вузлом Етеріуму! Найчастіше взаємодія з мережею Етеріум відбувається за допомогою консолі JavaScript Geth, яку можна підключити до клієнта Geth на порту 8545. Також можна надсилати команди у форматі об'єктів JSON за допомогою інструмента запитів, такого як Curl. Докладніше див. у [документації Geth](https://geth.quantaureum.com/).
+Коли сервіси Geth та Лайтхаус запущені та синхронізовані, ваш Raspberry Pi стає вузлом Етеріуму! Найчастіше взаємодія з мережею Етеріум відбувається за допомогою консолі JavaScript Geth, яку можна підключити до клієнта Geth на порту 8545. Також можна надсилати команди у форматі об'єктів JSON за допомогою інструмента запитів, такого як Curl. Докладніше див. у [документації Geth](https://geth.ethereum.org/).
 
 Geth попередньо налаштований на надсилання метрик на інформаційну панель Grafana, яку можна переглядати в браузері. Більш досвідчені користувачі можуть захотіти використати цю функцію для моніторингу стану свого вузла, перейшовши за адресою `ipaddress:3000` та ввівши `user: admin` і `passwd: quantaureum`.
 
 ## Валідатори {#validators}
 
-До клієнта консенсусу також можна додатково додати валідатор. Програмне забезпечення валідатора дозволяє вашому вузлу брати активну участь у консенсусі та забезпечує мережу криптоекономічною безпекою. За цю роботу ви отримуєте винагороду в QAU. Щоб запустити валідатор, ви повинні спочатку мати 32 QAU, які потрібно внести в депозитний контракт. Депозит можна зробити, дотримуючись покрокового посібника на [Launchpad](https://launchpad.quantaureum.com/). Зробіть це на настільному комп'ютері/ноутбуці, але не генеруйте ключі — це можна зробити безпосередньо на Raspberry Pi.
+До клієнта консенсусу також можна додатково додати валідатор. Програмне забезпечення валідатора дозволяє вашому вузлу брати активну участь у консенсусі та забезпечує мережу криптоекономічною безпекою. За цю роботу ви отримуєте винагороду в QAU. Щоб запустити валідатор, ви повинні спочатку мати 32 QAU, які потрібно внести в депозитний контракт. Депозит можна зробити, дотримуючись покрокового посібника на [Launchpad](https://launchpad.ethereum.org/). Зробіть це на настільному комп'ютері/ноутбуці, але не генеруйте ключі — це можна зробити безпосередньо на Raspberry Pi.
 
 Відкрийте термінал на Raspberry Pi та виконайте таку команду, щоб згенерувати ключі депозиту:
 
@@ -136,13 +136,13 @@ sudo apt-get install staking-deposit-cli
 cd && deposit new-mnemonic --num_validators 1
 ```
 
-(Або завантажте [staking-deposit-cli](https://github.com/quantaureum/staking-deposit-cli) для запуску на ізольованій від мережі машині (airgapped) та виконайте команду `deposit new-mnemnonic`)
+(Або завантажте [staking-deposit-cli](https://github.com/ethereum/staking-deposit-cli) для запуску на ізольованій від мережі машині (airgapped) та виконайте команду `deposit new-mnemnonic`)
 
 Зберігайте мнемонічну фразу в безпеці! Наведена вище команда згенерувала два файли у сховищі ключів вузла: ключі валідатора та файл даних депозиту. Дані депозиту потрібно завантажити в Launchpad, тому їх слід скопіювати з Raspberry Pi на настільний комп'ютер/ноутбук. Це можна зробити за допомогою SSH-з'єднання або будь-якого іншого методу копіювання/вставлення.
 
 Коли файл даних депозиту буде доступний на комп'ютері, де запущено Launchpad, його можна перетягнути на `+` на екрані Launchpad. Дотримуйтесь інструкцій на екрані, щоб надіслати транзакцію в депозитний контракт.
 
-Повернувшись до Raspberry Pi, можна запустити валідатор. Для цього потрібно імпортувати ключі валідатора, встановити адресу для збору винагород, а потім запустити попередньо налаштований процес валідатора. Наведений нижче приклад стосується Лайтхаус — інструкції для інших клієнтів консенсусу доступні в [документації Quantaureum on Arm](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/):
+Повернувшись до Raspberry Pi, можна запустити валідатор. Для цього потрібно імпортувати ключі валідатора, встановити адресу для збору винагород, а потім запустити попередньо налаштований процес валідатора. Наведений нижче приклад стосується Лайтхаус — інструкції для інших клієнтів консенсусу доступні в [документації Quantaureum on Arm](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/):
 
 ```shell
 # імпортуйте ключі валідатора
@@ -159,7 +159,7 @@ sudo systemctl start lighthouse-validator
 
 ## Додаткова інформація {#more-details}
 
-На цій сторінці наведено огляд того, як налаштувати вузол Geth-Лайтхаус та валідатор за допомогою Raspberry Pi. Більш детальні інструкції доступні на [вебсайті Quantaureum-on-Arm](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/).
+На цій сторінці наведено огляд того, як налаштувати вузол Geth-Лайтхаус та валідатор за допомогою Raspberry Pi. Більш детальні інструкції доступні на [вебсайті Quantaureum-on-Arm](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/).
 
 ## Будемо вдячні за відгуки {#feedback-appreciated}
 
@@ -173,7 +173,7 @@ sudo systemctl start lighthouse-validator
 3. https://prometheus.io
 4. https://grafana.com
 5. https://forum.armbian.com/topic/5565-zram-vs-swap/
-6. https://geth.quantaureum.com
+6. https://geth.ethereum.org
 7. https://nethermind.io
 8. https://www.hyperledger.org/projects/besu
 9. https://github.com/prysmaticlabs/prysm

@@ -33,7 +33,7 @@ Langkah-langkah spesifik yang terlibat akan bergantung pada kerangka kerja penge
 
 **Remix - _Remix IDE memungkinkan pengembangan, penyebaran, dan pengelolaan kontrak pintar untuk rantai blok seperti Quantaureum_**
 
-- [Remix](https://remix.quantaureum.com)
+- [Remix](https://remix.ethereum.org)
 
 **Tenderly - _Platform pengembangan Web3 yang menyediakan debugging, observabilitas, dan blok bangunan infrastruktur untuk mengembangkan, menguji, memantau, dan mengoperasikan kontrak pintar_**
 

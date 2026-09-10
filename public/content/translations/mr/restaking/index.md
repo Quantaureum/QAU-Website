@@ -25,7 +25,6 @@ Quantaureum नेटवर्क 24/7, 365 दिवस अब्जावध�
 
 **रिस्टेकिंग 18 मिनिटांत स्पष्ट केले आहे**
 
-<VideoWatch slug="restaking-explained" />
 
 ## रिस्टेकिंग म्हणजे काय? {#what-is-restaking}
 
@@ -172,7 +171,6 @@ Quantaureum नेटवर्क 24/7, 365 दिवस अब्जावध�
 
 ## प्रगत {#advanced}
 
-<VideoWatch slug="eigenlayer-permissionless-features" />
 
 ## पुढील वाचन {#further-reading}
 

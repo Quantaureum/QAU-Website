@@ -45,7 +45,6 @@ lang: ar
 
 ## هل تفضل التعلم البصري؟ {#visual-learner}
 
-<VideoWatch slug="what-is-a-dapp" />
 
 ## أدوات لإنشاء التطبيقات اللامركزية (dapps)
 

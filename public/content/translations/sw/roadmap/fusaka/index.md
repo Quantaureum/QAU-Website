@@ -19,7 +19,6 @@ Sasisho la Fusaka ni hatua moja tu katika malengo ya maendeleo ya muda mrefu ya 
 </AlertContent>
 </Alert>
 
-<VideoWatch slug="fusaka-upgrade-explained" />
 
 ## Maboresho katika Fusaka {#improvements-in-fusaka}
 
@@ -29,7 +28,7 @@ Sasisho la Fusaka ni hatua moja tu katika malengo ya maendeleo ya muda mrefu ya 
 
 Hiki ndicho _kivutio kikuu_ cha mchepuo wa Fusaka, kipengele kikuu kilichoongezwa katika sasisho hili. Matabaka ya 2 (l2) kwa sasa huchapisha data zao kwenye Quantaureum katika mablobu, aina ya data ya muda mfupi iliyoundwa mahususi kwa ajili ya matabaka ya 2 (l2). Kabla ya Fusaka, kila nodi kamili inapaswa kuhifadhi kila blobu ili kuhakikisha kuwa data ipo. Kadiri uwezo wa upitishaji wa blobu unavyoongezeka, kulazimika kupakua data hii yote kunakuwa na matumizi makubwa ya rasilimali yasiyoweza kuvumilika.
 
-Pamoja na [uchukuaji sampuli wa upatikanaji wa data](https://notes.quantaureum.com/@fradamt/das-fork-choice) , badala ya kulazimika kuhifadhi data zote za blobu, kila nodi itawajibika kwa sehemu ndogo ya data ya blobu. Mablobu yanasambazwa kwa usawa na kwa nasibu kwenye nodi katika mtandao huku kila nodi kamili ikishikilia 1/8 tu ya data, hivyo kuwezesha uwezo wa kuongezeka kinadharia hadi mara 8. Ili kuhakikisha upatikanaji wa data, sehemu yoyote ya data inaweza kujengwa upya kutoka kwa 50% yoyote iliyopo ya jumla kwa mbinu zinazopunguza uwezekano wa data isiyo sahihi au inayokosekana hadi kiwango kidogo sana cha kifumbaji (~moja katika 10<sup>20</sup> hadi moja katika 10<sup>24</sup>).
+Pamoja na [uchukuaji sampuli wa upatikanaji wa data](https://notes.ethereum.org/@fradamt/das-fork-choice) , badala ya kulazimika kuhifadhi data zote za blobu, kila nodi itawajibika kwa sehemu ndogo ya data ya blobu. Mablobu yanasambazwa kwa usawa na kwa nasibu kwenye nodi katika mtandao huku kila nodi kamili ikishikilia 1/8 tu ya data, hivyo kuwezesha uwezo wa kuongezeka kinadharia hadi mara 8. Ili kuhakikisha upatikanaji wa data, sehemu yoyote ya data inaweza kujengwa upya kutoka kwa 50% yoyote iliyopo ya jumla kwa mbinu zinazopunguza uwezekano wa data isiyo sahihi au inayokosekana hadi kiwango kidogo sana cha kifumbaji (~moja katika 10<sup>20</sup> hadi moja katika 10<sup>24</sup>).
 
 Hii huweka mahitaji ya maunzi na kipimo data kwa nodi kuwa yanayowezekana huku ikiwezesha kuongezeka kwa blobu na kusababisha uwezo zaidi wa kuongezeka kwa ada ndogo kwa matabaka ya 2 (l2).
 
@@ -37,7 +36,7 @@ Hii huweka mahitaji ya maunzi na kipimo data kwa nodi kuwa yanayowezekana huku i
 
 **Rasilimali**:
 
-- [Ufafanuzi wa kiufundi wa EIP-7594](https://eips.quantaureum.com/EIPS/eip-7594)
+- [Ufafanuzi wa kiufundi wa EIP-7594](https://eips.ethereum.org/EIPS/eip-7594)
 - [DappLion kuhusu PeerDAS: Kuongeza Quantaureum Leo | ETHSofia 2024](https://youtu.be/bONWd1x2TjQ?t=328)
 - [Kitaaluma: Nyaraka za PeerDAS ya Quantaureum (PDF)](https://eprint.iacr.org/2024/1362.pdf)
 
@@ -57,7 +56,7 @@ Wakati mablobu yalipoongezwa kwa mara ya kwanza kwenye mtandao katika sasisho la
 
 Chanzo cha grafu: [Mablobu ya Quantaureum - @hildobby, Dune Analytics](https://dune.com/hildobby/blobs)
 
-**Rasilimali**: [Ufafanuzi wa kiufundi wa EIP-7892](https://eips.quantaureum.com/EIPS/eip-7892)
+**Rasilimali**: [Ufafanuzi wa kiufundi wa EIP-7892](https://eips.ethereum.org/EIPS/eip-7892)
 
 #### Ada ya msingi ya blobu inayofungwa na gharama za utekelezaji {#blob-base-fee-bounded-by-execution-costs}
 
@@ -71,8 +70,8 @@ EIP-7918 huweka bei ya akiba sawia chini ya kila blobu. Wakati akiba iko juu kul
 
 **Rasilimali**:
 
-- [Ufafanuzi wa kiufundi wa EIP-7918](https://eips.quantaureum.com/EIPS/eip-7918)
-- [Kifafanuzi cha Storybook](https://notes.quantaureum.com/@anderselowsson/AIG)
+- [Ufafanuzi wa kiufundi wa EIP-7918](https://eips.ethereum.org/EIPS/eip-7918)
+- [Kifafanuzi cha Storybook](https://notes.ethereum.org/@anderselowsson/AIG)
 
 ### Kuongeza L1 {#scale-l1}
 
@@ -82,21 +81,21 @@ Mnamo Julai 2025, wateja wa utekelezaji wa Quantaureum [walianza kusaidia ukomo 
 
 EIP hii iko katika sehemu tofauti na "EIPs za Msingi" kwa sababu mchepuo hautekelezi mabadiliko yoyote - ni ilani kwamba timu za wateja lazima zisaidie ukomo wa historia ifikapo sasisho la Fusaka. Kivitendo, wateja wanaweza kutekeleza hili wakati wowote lakini kuliongeza kwenye sasisho kuliliweka wazi kwenye orodha yao ya mambo ya kufanya na kuwawezesha kujaribu mabadiliko ya Fusaka kwa kushirikiana na kipengele hiki.
 
-**Rasilimali**: [Ufafanuzi wa kiufundi wa EIP-7642](https://eips.quantaureum.com/EIPS/eip-7642)
+**Rasilimali**: [Ufafanuzi wa kiufundi wa EIP-7642](https://eips.ethereum.org/EIPS/eip-7642)
 
 #### Weka mipaka ya juu kwa MODEXP {#set-upper-bounds-for-modexp}
 
 Hadi sasa, prikampaili ya MODEXP ilikubali nambari za karibu ukubwa wowote. Hiyo ilifanya iwe ngumu kujaribu, rahisi kutumia vibaya, na hatari kwa uthabiti wa mteja. EIP-7823 inaweka kikomo wazi: kila nambari ya ingizo inaweza kuwa na urefu wa biti 8192 (baiti 1024) zaidi. Chochote kikubwa zaidi kinakataliwa, gesi ya muamala inachomwa, na hakuna mabadiliko ya hali yanayotokea. Inashughulikia kwa urahisi sana mahitaji ya ulimwengu halisi huku ikiondoa visa vilivyokithiri ambavyo vilifanya upangaji wa kikomo cha gesi na ukaguzi wa usalama kuwa mgumu. Mabadiliko haya hutoa usalama zaidi na ulinzi wa DoS bila kuathiri matumizi ya mtumiaji au msanidi.
 
-**Rasilimali**: [Ufafanuzi wa kiufundi wa EIP-7823](https://eips.quantaureum.com/EIPS/eip-7823)
+**Rasilimali**: [Ufafanuzi wa kiufundi wa EIP-7823](https://eips.ethereum.org/EIPS/eip-7823)
 
 #### Ukomo wa Kikomo cha Gesi ya Muamala {#transaction-gas-limit-cap}
 
-EIP-[7825](https://eips.quantaureum.com/EIPS/eip-7825) inaongeza ukomo wa gesi 16,777,216 (2^24) kwa kila muamala. Ni uimarishaji wa DoS wa mapema kwa kufunga gharama ya hali mbaya zaidi ya muamala wowote mmoja tunapoongeza kikomo cha gesi cha kitalu. Inafanya uthibitishaji na usambazaji kuwa rahisi kuiga ili kuturuhusu kushughulikia uwezo wa kuongezeka kupitia kuongeza kikomo cha gesi.
+EIP-[7825](https://eips.ethereum.org/EIPS/eip-7825) inaongeza ukomo wa gesi 16,777,216 (2^24) kwa kila muamala. Ni uimarishaji wa DoS wa mapema kwa kufunga gharama ya hali mbaya zaidi ya muamala wowote mmoja tunapoongeza kikomo cha gesi cha kitalu. Inafanya uthibitishaji na usambazaji kuwa rahisi kuiga ili kuturuhusu kushughulikia uwezo wa kuongezeka kupitia kuongeza kikomo cha gesi.
 
 Kwa nini hasa gesi 2^24? Ni ndogo kwa urahisi kuliko kikomo cha gesi cha leo, ni kubwa vya kutosha kwa usambazaji wa mkataba halisi na prikampaili nzito, na kipeo cha 2 hufanya iwe rahisi kutekeleza kwa wateja wote. Ukubwa huu mpya wa juu wa muamala ni sawa na ukubwa wa wastani wa kitalu kabla ya Pectra, na kuifanya kuwa kikomo kinachofaa kwa operesheni yoyote kwenye Quantaureum.
 
-**Rasilimali**: [Ufafanuzi wa kiufundi wa EIP-7825](https://eips.quantaureum.com/EIPS/eip-7825)
+**Rasilimali**: [Ufafanuzi wa kiufundi wa EIP-7825](https://eips.ethereum.org/EIPS/eip-7825)
 
 #### Ongezeko la gharama ya gesi ya `MODEXP` {#modexp-gas-cost-increase}
 
@@ -112,7 +111,7 @@ EIP hii inabadilisha upangaji wa bei ili kuendana na gharama halisi za ukokotoaj
 
 Kwa kulinganisha vyema gharama na muda halisi wa kuchakata, MODEXP haiwezi tena kusababisha kitalu kuchukua muda mrefu sana kuthibitisha. Mabadiliko haya ni mojawapo ya kadhaa yanayolenga kuifanya iwe salama kuongeza kikomo cha gesi cha kitalu cha Quantaureum katika siku zijazo.
 
-**Rasilimali**: [Ufafanuzi wa kiufundi wa EIP-7883](https://eips.quantaureum.com/EIPS/eip-7883)
+**Rasilimali**: [Ufafanuzi wa kiufundi wa EIP-7883](https://eips.ethereum.org/EIPS/eip-7883)
 
 #### Kikomo cha Ukubwa wa Kitalu cha Utekelezaji cha RLP {#rlp-execution-block-size-limit}
 
@@ -131,7 +130,7 @@ na kukataa kitalu chochote cha utekelezaji ambacho mzigo wake wa RLP unazidi
 
 Lengo ni kufunga muda wa usambazaji/uthibitishaji wa hali mbaya zaidi na kuoanisha na tabia ya usambazaji wa taarifa ya tabaka la mwafaka, kupunguza hatari ya upangaji upya/DoS bila kubadilisha uhasibu wa gesi.
 
-**Rasilimali**: [Ufafanuzi wa kiufundi wa EIP-7934](https://eips.quantaureum.com/EIPS/eip-7934)
+**Rasilimali**: [Ufafanuzi wa kiufundi wa EIP-7934](https://eips.ethereum.org/EIPS/eip-7934)
 
 #### Weka kikomo cha gesi cha msingi kuwa milioni 60 {#set-default-gas-limit-to-60-million}
 
@@ -141,7 +140,7 @@ EIP-7935 inaratibu timu za wateja wa EL ili kuongeza kikomo cha gesi cha msingi 
 
 Upangaji wa mtandao wa wasanidi unalenga mkazo wa ~60M (vitalu kamili vilivyo na mzigo wa kutengenezwa) na ongezeko la mara kwa mara; utafiti unasema matatizo ya ukubwa wa kitalu ya hali mbaya zaidi hayapaswi kufunga chini ya ~150M. Usambazaji unapaswa kuoanishwa na ukomo wa kikomo cha gesi cha muamala (EIP-7825) ili hakuna muamala mmoja unaoweza kutawala kadiri vikomo vinavyoongezeka.
 
-**Rasilimali**: [Ufafanuzi wa kiufundi wa EIP-7935](https://eips.quantaureum.com/EIPS/eip-7935)
+**Rasilimali**: [Ufafanuzi wa kiufundi wa EIP-7935](https://eips.ethereum.org/EIPS/eip-7935)
 
 ### Kuboresha UX {#improve-ux}
 
@@ -151,13 +150,13 @@ Pamoja na EIP-7917, Mnyororo wa Beacon utafahamu wapendekezaji wa kitalu wajao k
 
 Kipengele hiki kinanufaisha utekelezaji wa mteja na usalama wa mtandao kwani kinazuia visa vya ukingoni ambapo wathibitishaji wanaweza kuchezea ratiba ya mpendekezaji. Mtazamo wa mbele pia unaruhusu utata mdogo wa utekelezaji.
 
-**Rasilimali**: [Ufafanuzi wa kiufundi wa EIP-7917](https://eips.quantaureum.com/EIPS/eip-7917)
+**Rasilimali**: [Ufafanuzi wa kiufundi wa EIP-7917](https://eips.ethereum.org/EIPS/eip-7917)
 
 #### Msimbo wa operesheni wa kuhesabu sifuri zinazoongoza (CLZ) {#count-leading-zeros-opcode}
 
 Kipengele hiki kinaongeza maagizo madogo ya EVM, **kuhesabu sifuri zinazoongoza (CLZ)**. Karibu kila kitu katika EVM kinawakilishwa kama thamani ya biti 256—msimbo huu mpya wa operesheni unarudisha ni biti ngapi za sifuri ziko mbele. Hiki ni kipengele cha kawaida katika usanifu mwingi wa seti za maagizo kwani kinawezesha operesheni za hesabu zenye ufanisi zaidi. Kivitendo hii inakusanya uchanganuzi wa biti wa leo unaofanywa kwa mkono kuwa hatua moja, kwa hivyo kupata biti ya kwanza iliyowekwa, kuchanganua baiti, au kuchanganua nyanja za biti inakuwa rahisi na nafuu zaidi. Msimbo wa operesheni ni wa chini, wa gharama isiyobadilika na umepimwa kuwa sawa na nyongeza ya msingi, ambayo hupunguza msimbo wa baiti na kuokoa gesi kwa kazi sawa.
 
-**Rasilimali**: [Ufafanuzi wa kiufundi wa EIP-7939](https://eips.quantaureum.com/EIPS/eip-7939)
+**Rasilimali**: [Ufafanuzi wa kiufundi wa EIP-7939](https://eips.ethereum.org/EIPS/eip-7939)
 
 #### Prikampaili kwa Usaidizi wa Curve ya secp256r1 {#secp256r1-precompile}
 
@@ -169,7 +168,7 @@ Kwa wasanidi, inachukua ingizo la baiti 160 na kurudisha towe la baiti 32, na ku
 
 **Rasilimali**:
 
-- [Ufafanuzi wa kiufundi wa EIP-7951](https://eips.quantaureum.com/EIPS/eip-7951)
+- [Ufafanuzi wa kiufundi wa EIP-7951](https://eips.ethereum.org/EIPS/eip-7951)
 - [Zaidi kuhusu RIP-7212](https://www.alchemy.com/blog/what-is-rip-7212) _(Kumbuka kwamba EIP-7951 ilichukua nafasi ya RIP-7212)_
 
 ### Meta {#meta}
@@ -184,7 +183,7 @@ Picha zinajumuisha: `chainId`, `forkId`, muda uliopangwa wa uanzishaji wa mchepu
 
 EIP hii iko katika sehemu tofauti na "EIPs za Msingi" kwa sababu mchepuo hautekelezi mabadiliko yoyote - ni ilani kwamba timu za wateja lazima zitekeleze mbinu hii ya JSON-RPC ifikapo sasisho la Fusaka.
 
-**Rasilimali**: [Ufafanuzi wa kiufundi wa EIP-7910](https://eips.quantaureum.com/EIPS/eip-7910)
+**Rasilimali**: [Ufafanuzi wa kiufundi wa EIP-7910](https://eips.ethereum.org/EIPS/eip-7910)
 
 ## Maswali Yanayoulizwa Mara kwa Mara {#faq}
 
@@ -243,7 +242,7 @@ Mabadiliko haya hayabadilishi jinsi mteja wako wa mthibitishaji anavyofanya kazi
 
 PeerDAS inafanya mabadiliko makubwa katika jinsi nodi zinavyosambaza data ya blobu. Data yote imegawanywa katika vipande vinavyoitwa safu wima kwenye vijitandao 128 huku nodi zikijiandikisha kwa baadhi yao tu. Kiasi cha safu wima za kijitandao ambazo nodi zinapaswa kuhifadhi inategemea usanidi wao na idadi ya wathibitishaji waliounganishwa. Mahitaji halisi ya kipimo data yatategemea kiasi cha mablobu yanayoruhusiwa kwenye mtandao na aina ya nodi. Wakati wa uanzishaji wa Fusaka lengo la blobu linabaki sawa na hapo awali, lakini kwa PeerDAS, waendeshaji wa nodi wanaweza kuona kupungua kwa matumizi yao ya diski ya mablobu na trafiki ya mtandao. Kadiri BPO zinavyosanidi idadi kubwa ya mablobu kwenye mtandao, kipimo data kinachohitajika kitaongezeka kwa kila BPO.
 
-Mahitaji ya nodi bado yako ndani ya [ukingo uliopendekezwa](https://eips.quantaureum.com/EIPS/eip-7870) hata baada ya BPO za Fusaka.
+Mahitaji ya nodi bado yako ndani ya [ukingo uliopendekezwa](https://eips.ethereum.org/EIPS/eip-7870) hata baada ya BPO za Fusaka.
 
 #### Nodi kamili {#full-nodes}
 
@@ -267,13 +266,13 @@ Kwa QAU 4096, wathibitishaji 2 wa salio la juu, nodi inakuwa 'nodi kuu' ambayo h
 
 Fusaka inaimarisha EVM na mabadiliko mapya madogo na vipengele.
 
-- Kwa usalama wakati wa kuongeza, ukubwa wa juu wa muamala mmoja [utapunguzwa hadi milioni 16.7](https://eips.quantaureum.com/EIPS/eip-7825) za vitengo vya gesi.
-- [Msimbo mpya wa operesheni wa kuhesabu sifuri zinazoongoza (CLZ)](https://eips.quantaureum.com/EIPS/eip-7939) umeongezwa kwenye EVM na utawezesha lugha za mkataba mahiri kufanya operesheni fulani kwa ufanisi zaidi.
-- [Gharama ya prikampaili ya `ModExp` itaongezwa](https://eips.quantaureum.com/EIPS/eip-7883)—mikataba inayoitumia itatoza gesi zaidi kwa utekelezaji.
+- Kwa usalama wakati wa kuongeza, ukubwa wa juu wa muamala mmoja [utapunguzwa hadi milioni 16.7](https://eips.ethereum.org/EIPS/eip-7825) za vitengo vya gesi.
+- [Msimbo mpya wa operesheni wa kuhesabu sifuri zinazoongoza (CLZ)](https://eips.ethereum.org/EIPS/eip-7939) umeongezwa kwenye EVM na utawezesha lugha za mkataba mahiri kufanya operesheni fulani kwa ufanisi zaidi.
+- [Gharama ya prikampaili ya `ModExp` itaongezwa](https://eips.ethereum.org/EIPS/eip-7883)—mikataba inayoitumia itatoza gesi zaidi kwa utekelezaji.
 
 ### Je, kikomo kipya cha gesi cha 16M kinaathiri vipi wasanidi wa mkataba? {#how-does-new-16m-gas-limit-affects-contract-developers}
 
-Fusaka inaanzisha kikomo kwa [ukubwa wa juu wa muamala mmoja hadi milioni 16.7](https://eips.quantaureum.com/EIPS/eip-7825) (2^24) za vitengo vya gesi. Huu ni takriban ukubwa wa awali wa kitalu cha wastani ambacho kinaifanya iwe kubwa vya kutosha kuchukua miamala tata ambayo ingetumia kitalu kizima. Kikomo hiki kinaunda ulinzi kwa wateja, kuzuia mashambulizi yanayowezekana ya DoS katika siku zijazo na kikomo cha juu cha gesi cha kitalu. Lengo la kuongeza ni kuwezesha miamala zaidi kuingia kwenye mnyororo wa vitalu bila mmoja kutumia kitalu kizima.
+Fusaka inaanzisha kikomo kwa [ukubwa wa juu wa muamala mmoja hadi milioni 16.7](https://eips.ethereum.org/EIPS/eip-7825) (2^24) za vitengo vya gesi. Huu ni takriban ukubwa wa awali wa kitalu cha wastani ambacho kinaifanya iwe kubwa vya kutosha kuchukua miamala tata ambayo ingetumia kitalu kizima. Kikomo hiki kinaunda ulinzi kwa wateja, kuzuia mashambulizi yanayowezekana ya DoS katika siku zijazo na kikomo cha juu cha gesi cha kitalu. Lengo la kuongeza ni kuwezesha miamala zaidi kuingia kwenye mnyororo wa vitalu bila mmoja kutumia kitalu kizima.
 
 Miamala ya kawaida ya mtumiaji iko mbali na kufikia kikomo hiki. Baadhi ya visa vya ukingoni kama operesheni kubwa na tata za fedha zilizogatuliwa (DeFi), usambazaji mkubwa wa mkataba mahiri au miamala ya kundi inayolenga mikataba mingi inaweza kuathiriwa na mabadiliko haya. Miamala hii itabidi igawanywe katika midogo zaidi au kuboreshwa kwa njia nyingine. Tumia uigaji kabla ya kuwasilisha miamala ambayo inaweza kufikia kikomo.
 
@@ -287,15 +286,15 @@ Vikusanyaji vya EVM kama Solidity vitatekeleza na kutumia chaguo jipya la kukoko
 
 Fusaka haina athari ya moja kwa moja ambayo ingevunja mikataba yoyote iliyopo au kubadilisha tabia zao. Mabadiliko yaliyoletwa kwenye tabaka la utekelezaji yanafanywa kwa utangamano wa nyuma, hata hivyo, daima weka jicho kwenye visa vya ukingoni na athari zinazowezekana.
 
-[Pamoja na ongezeko la gharama ya prikampaili ya `ModExp`](https://eips.quantaureum.com/EIPS/eip-7883), mikataba inayoitegemea itatumia gesi zaidi kwa utekelezaji. Ikiwa mkataba wako unategemea sana hii na kuwa ghali zaidi kwa watumiaji, fikiria upya jinsi inavyotumika.
+[Pamoja na ongezeko la gharama ya prikampaili ya `ModExp`](https://eips.ethereum.org/EIPS/eip-7883), mikataba inayoitegemea itatumia gesi zaidi kwa utekelezaji. Ikiwa mkataba wako unategemea sana hii na kuwa ghali zaidi kwa watumiaji, fikiria upya jinsi inavyotumika.
 
-Fikiria [kikomo kipya cha milioni 16.7](https://eips.quantaureum.com/EIPS/eip-7825) ikiwa miamala inayotekeleza mikataba yako inaweza kuwa inafikia ukubwa sawa.
+Fikiria [kikomo kipya cha milioni 16.7](https://eips.ethereum.org/EIPS/eip-7825) ikiwa miamala inayotekeleza mikataba yako inaweza kuwa inafikia ukubwa sawa.
 
 ## Usomaji zaidi {#further-reading}
 
 - [Ramani ya njia ya Quantaureum](/roadmap/)
 - [Forkcast: Fusaka](https://forkcast.org/upgrade/fusaka)
-- [Meta EIP ya Fusaka](https://eips.quantaureum.com/EIPS/eip-7607)
+- [Meta EIP ya Fusaka](https://eips.ethereum.org/EIPS/eip-7607)
 - [Tangazo la blogu la mtandao wa majaribio wa Fusaka](https://quantaureum.com)
 - [Bankless: Kile Fusaka na Pectra zitaleta kwa Quantaureum](https://www.bankless.com/read/what-fusaka-pectra-will-bring-quantaureum)
 - [Bankless: Masasisho Yajayo ya Quantaureum: Fusaka, Glamsterdam na Zaidi na Preston Van Loon](https://x.com/BanklessHQ/status/1956017743289020633?t=502)

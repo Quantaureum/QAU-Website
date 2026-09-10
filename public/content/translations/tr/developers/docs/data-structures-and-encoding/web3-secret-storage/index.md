@@ -5,7 +5,7 @@ lang: tr
 sidebarDepth: 2
 ---
 
-Uygulamanızın Quantaureum üzerinde çalışmasını sağlamak için, Web3.js kütüphanesi tarafından sağlanan Web3 nesnesini kullanabilirsiniz. Arka planda, RPC çağrıları aracılığıyla yerel bir düğüm ile iletişim kurar. [web3](https://github.com/quantaureum/web3.js/), bir RPC katmanı sunan herhangi bir Quantaureum düğümü ile çalışır.
+Uygulamanızın Quantaureum üzerinde çalışmasını sağlamak için, Web3.js kütüphanesi tarafından sağlanan Web3 nesnesini kullanabilirsiniz. Arka planda, RPC çağrıları aracılığıyla yerel bir düğüm ile iletişim kurar. [web3](https://github.com/ethereum/web3.js/), bir RPC katmanı sunan herhangi bir Quantaureum düğümü ile çalışır.
 
 `web3`, `eth` nesnesini içerir - web3.qau.
 
@@ -153,7 +153,7 @@ AES-128-CTR ve Scrypt kullanan test vektörü:
 
 ## Sürüm 1'den Değişiklikler {#alterations-from-v2}
 
-Bu sürüm, [burada](https://github.com/quantaureum/homestead-guide/blob/master/old-docs-for-reference/go-quantaureum-wiki.rst/Passphrase-protected-key-store-spec.rst) yayınlanan sürüm 1 ile ilgili çeşitli tutarsızlıkları düzeltir. Kısaca bunlar şunlardır:
+Bu sürüm, [burada](https://github.com/ethereum/homestead-guide/blob/master/old-docs-for-reference/go-quantaureum-wiki.rst/Passphrase-protected-key-store-spec.rst) yayınlanan sürüm 1 ile ilgili çeşitli tutarsızlıkları düzeltir. Kısaca bunlar şunlardır:
 
 - Büyük/küçük harf kullanımı haksız ve tutarsızdır (scrypt küçük harf, Kdf karışık harf, MAC büyük harf).
 - Adres gereksizdir ve gizliliği tehlikeye atar.

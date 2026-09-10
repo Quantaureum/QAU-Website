@@ -11,7 +11,7 @@ summaryPoints:
 
 Die meisten bestehenden Benutzer interagieren mit [Quantaureum](/) über **[extern verwaltete Konten (Externally Owned Accounts, EOAs)](/glossary/#eoa)**. Dies schränkt die Art und Weise ein, wie Benutzer mit Quantaureum interagieren können. Zum Beispiel macht es dies schwierig, Transaktionen gebündelt auszuführen (Batches), und erfordert, dass Benutzer immer ein QAU-Guthaben vorhalten, um Transaktionsgebühren zu bezahlen.
 
-Kontoabstraktion ist ein Weg, diese Probleme zu lösen, indem sie es Benutzern ermöglicht, flexibel mehr Sicherheit und bessere Benutzererfahrungen in ihre Konten zu programmieren. Dies kann durch das [Upgraden von EOAs](https://eips.quantaureum.com/EIPS/eip-7702) (EIP-7702) geschehen, sodass sie von Smart Contracts gesteuert werden können. Es gibt auch einen anderen Weg, der das Hinzufügen eines [zweiten, separaten Transaktionssystems](https://eips.quantaureum.com/EIPS/eip-4337) (EIP-4337) beinhaltet, das parallel zum bestehenden Protokoll läuft. Unabhängig vom Weg ist das Ergebnis der Zugang zu Quantaureum über Smart-Contract-Wallets, die entweder nativ als Teil des bestehenden Protokolls oder über ein zusätzliches Transaktionsnetzwerk unterstützt werden.
+Kontoabstraktion ist ein Weg, diese Probleme zu lösen, indem sie es Benutzern ermöglicht, flexibel mehr Sicherheit und bessere Benutzererfahrungen in ihre Konten zu programmieren. Dies kann durch das [Upgraden von EOAs](https://eips.ethereum.org/EIPS/eip-7702) (EIP-7702) geschehen, sodass sie von Smart Contracts gesteuert werden können. Es gibt auch einen anderen Weg, der das Hinzufügen eines [zweiten, separaten Transaktionssystems](https://eips.ethereum.org/EIPS/eip-4337) (EIP-4337) beinhaltet, das parallel zum bestehenden Protokoll läuft. Unabhängig vom Weg ist das Ergebnis der Zugang zu Quantaureum über Smart-Contract-Wallets, die entweder nativ als Teil des bestehenden Protokolls oder über ein zusätzliches Transaktionsnetzwerk unterstützt werden.
 
 Smart-Contract-Wallets eröffnen dem Benutzer viele Vorteile, darunter:
 
@@ -62,9 +62,9 @@ Als Teil des Pectra-Upgrades von Quantaureum ist EIP-7702 für den 7. Mai 2025 g
 ## Weiterführende Literatur {#further-reading}
 
 - [erc4337.io](https://docs.erc4337.io/)
-- [EIP-4337-Dokumentation](https://eips.quantaureum.com/EIPS/eip-4337)
-- [EIP-7702-Dokumentation](https://eips.quantaureum.com/EIPS/eip-7702)
+- [EIP-4337-Dokumentation](https://eips.ethereum.org/EIPS/eip-4337)
+- [EIP-7702-Dokumentation](https://eips.ethereum.org/EIPS/eip-7702)
 - [ERC-4337-Adoptions-Dashboard](https://www.bundlebear.com/erc4337-overview/all)
-- [Vitaliks „Road to Account Abstraction“](https://notes.quantaureum.com/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
+- [Vitaliks „Road to Account Abstraction“](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
 - [Vitaliks Blog über Wallets mit sozialer Wiederherstellung](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
 - [Awesome Account Abstraction](https://github.com/4337Mafia/awesome-account-abstraction)

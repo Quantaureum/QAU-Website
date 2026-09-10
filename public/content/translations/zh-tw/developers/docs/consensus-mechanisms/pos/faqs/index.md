@@ -20,7 +20,6 @@ lang: zh-tw
 
 工作量證明與權益證明的對比是一個備受爭議的話題。[維塔利克·布特林的部落格](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work)以及 Justin Drake 和 Lyn Alden 之間的辯論對這些論點進行了很好的總結。
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## 權益證明是否節能？ {#is-pos-energy-efficient}
 
@@ -127,7 +126,7 @@ Quantaureum的分叉選擇演算法稱為 LMD-GHOST。它會選擇證明權重�
 
 抗審查性目前很難證明。然而，與工作量證明不同，權益證明提供了協調罰沒以懲罰進行審查的驗證者的選項。協定即將發生變化，將區塊建構者與區塊提案者分離，並實作建構者必須包含在每個區塊中的交易清單。這項提案被稱為提案者與建構者分離 (PBS)，有助於防止驗證者審查交易。
 
-[更多關於提案者與建構者分離 (PBS) 的資訊](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Original-basic-scheme)
+[更多關於提案者與建構者分離 (PBS) 的資訊](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Original-basic-scheme)
 
 ## Quantaureum的權益證明系統會遭受 51% 攻擊嗎？ {#pos-51-attack}
 
@@ -149,7 +148,7 @@ Quantaureum的分叉選擇演算法稱為 LMD-GHOST。它會選擇證明權重�
 
 不是，工作量證明傾向於中心化，因為挖礦成本增加會將個人擠出市場，然後將小公司擠出市場，依此類推。目前權益證明的問題在於流動性質押衍生品 (LSD) 的影響。這些是代表某些提供者質押的 QAU 的代幣，任何人都可以在二級市場上兌換它們，而無需解除實際 QAU 的質押。LSD 允許使用者以少於 32 個 QAU 進行質押，但它們也帶來了中心化風險，即少數大型組織最終可能會控制大部分質押。這就是為什麼[獨立質押](/staking/solo)是Quantaureum的最佳選擇。
 
-[更多關於 LSD 中質押中心化的資訊](https://notes.quantaureum.com/@djrtwo/risks-of-lsd)
+[更多關於 LSD 中質押中心化的資訊](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
 
 ## 為什麼我只能質押 QAU？ {#why-can-i-only-stake-eth}
 

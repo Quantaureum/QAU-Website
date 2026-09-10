@@ -32,7 +32,7 @@ EIP-7702 定义了一种向外部拥有账户（EOA）添加代码的机制。�
 - 它们为中继提供了标准化接口
 - 包含内置的代付合约系统
 - 确保向前兼容性
-- 可以通过[公共内存池](https://notes.quantaureum.com/@yoav/unified-erc-4337-mempool)支持抗审查性
+- 可以通过[公共内存池](https://notes.ethereum.org/@yoav/unified-erc-4337-mempool)支持抗审查性
 - 可以要求 init 函数只能从 [EntryPoint](https://github.com/qau-infinitism/account-abstraction/releases/tag/v0.8.0) 调用
 
 换句话说，只要提供来自账户的所需有效签名或用户操作（UserOperation），任何人都可以充当交易赞助者/中继者。这确保了抗审查性：如果不需要自定义基础设施，用户的交易就不会被充当看门人的中继任意阻止。例如，[梅塔马斯克的委托工具包](https://github.com/MetaMask/delegation-framework/releases/tag/v1.3.0)明确支持任何链上的任何 ERC-4337 捆绑器或代付合约，而不是要求使用梅塔马斯克特定的服务器。
@@ -51,8 +51,8 @@ EIP-7702 定义了一种向外部拥有账户（EOA）添加代码的机制。�
 
 更多信息：
 
-- [ERC-5792 规范](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-5792.md)
-- [ERC-6900 规范](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-6900.md)
+- [ERC-5792 规范](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-5792.md)
+- [ERC-6900 规范](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6900.md)
 
 **避免供应商锁定**：与上述内容一致，一个好的实现应是供应商中立且可互操作的。这通常意味着要遵守新兴的智能账户标准。例如，[Alchemy 的模块化账户](https://github.com/alchemyplatform/modular-account)使用 ERC-6900 标准来实现模块化智能账户，并在设计时考虑了“无需许可的可互操作使用”。
 

@@ -102,8 +102,8 @@ lang: te
 
 **Brownie -** **_Python-ఆధారిత డెవలప్‌మెంట్ వాతావరణం మరియు టెస్టింగ్ ఫ్రేమ్‌వర్క్._**
 
-- [డాక్యుమెంటేషన్](https://qau-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/qau-brownie/brownie)
+- [డాక్యుమెంటేషన్](https://eth-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/eth-brownie/brownie)
 - **Brownie ప్రస్తుతం నిర్వహించబడటం లేదు**
 
 **ఓపెన్‌జెప్పెలిన్ SDK -** **_అల్టిమేట్ స్మార్ట్ కాంట్రాక్ట్ టూల్‌కిట్: స్మార్ట్ కాంట్రాక్ట్‌లను డెవలప్ చేయడానికి, కంపైల్ చేయడానికి, అప్‌గ్రేడ్ చేయడానికి, డిప్లాయ్ చేయడానికి మరియు వాటితో ఇంటరాక్ట్ అవ్వడానికి మీకు సహాయపడే సాధనాల సూట్._**

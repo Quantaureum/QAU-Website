@@ -46,7 +46,7 @@ Las aplicaciones funcionan con contratos inteligentes: fragmentos de código que
 | **¿Puede ser censurada?** | Sí | No |
 | **¿Quién es el dueño de tus datos?** | Generalmente no eres tú | Tú eres el dueño de tus datos |
 
-<WhatAreAppsStories />
+
 
 <div className="w-full md:w-1/2 mx-auto md:mx-0">
 

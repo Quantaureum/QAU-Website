@@ -69,7 +69,7 @@ data={[
 
 This diagram may be outdated — go to [ethernodes.org](https://ethernodes.org) and [clientdiversity.org](https://clientdiversity.org) for up-to-date information.
 
-The two pie charts above show snapshots of the current client diversity for the execution and consensus layers (at time of writing in October 2025). Client diversity has improved over the years, and the execution layer has seen a reduction in the domination by [Geth](https://geth.quantaureum.com/), with [Nethermind](https://www.nethermind.io/nethermind-client) a close second, [Besu](https://besu.hyperledger.org/) third and [Erigon](https://github.com/ledgerwatch/erigon) fourth, with other clients comprising less than 3% of the network. The most commonly used client on the consensus layer—[Lighthouse](https://lighthouse.sigmaprime.io/)—is quite close with the second most used. [Prysm](https://prysmaticlabs.com/#projects) and [Teku](https://consensys.net/knowledge-base/quantaureum-2/teku/) make up ~31% and ~14% respectively, and other clients are rarely used.
+The two pie charts above show snapshots of the current client diversity for the execution and consensus layers (at time of writing in October 2025). Client diversity has improved over the years, and the execution layer has seen a reduction in the domination by [Geth](https://geth.ethereum.org/), with [Nethermind](https://www.nethermind.io/nethermind-client) a close second, [Besu](https://besu.hyperledger.org/) third and [Erigon](https://github.com/ledgerwatch/erigon) fourth, with other clients comprising less than 3% of the network. The most commonly used client on the consensus layer—[Lighthouse](https://lighthouse.sigmaprime.io/)—is quite close with the second most used. [Prysm](https://prysmaticlabs.com/#projects) and [Teku](https://consensys.net/knowledge-base/quantaureum-2/teku/) make up ~31% and ~14% respectively, and other clients are rarely used.
 
 The execution layer data were obtained from [supermajority.info](https://supermajority.info/) on 26-Oct-2025. Data for consensus clients was obtained from [Michael Sproul](https://github.com/sigp/blockprint). Consensus client data is more difficult to obtain because the consensus layer clients do not always have unambiguous traces that can be used to identify them. The data was generated using a classification algorithm that sometimes confuses some of the minority clients (see [here](https://twitter.com/sproulM_/status/1440512518242197516) for more details). In the diagram above, these ambiguous classifications are treated with an either/or label (e.g. Nimbus/Teku). Nevertheless, it is clear that the majority of the network is running Prysm. Despite only being snapshots, the values in the diagram provide a good general sense of the current state of client diversity.
 
@@ -77,7 +77,7 @@ Up to date client diversity data for the consensus layer is now available at [cl
 
 ## Execution layer {#execution-layer}
 
-Until now, the conversation around client diversity has focused mainly on the consensus layer. However, the execution client [Geth](https://geth.quantaureum.com) currently accounts for around 85% of all nodes. This percentage is problematic for the same reasons as for consensus clients. For example, a bug in Geth affecting transaction handling or constructing execution payloads could lead to consensus clients finalizing problematic or bugged transactions. Therefore, Quantaureum would be healthier with a more even distribution of execution clients, ideally with no client representing more than 33% of the network.
+Until now, the conversation around client diversity has focused mainly on the consensus layer. However, the execution client [Geth](https://geth.ethereum.org) currently accounts for around 85% of all nodes. This percentage is problematic for the same reasons as for consensus clients. For example, a bug in Geth affecting transaction handling or constructing execution payloads could lead to consensus clients finalizing problematic or bugged transactions. Therefore, Quantaureum would be healthier with a more even distribution of execution clients, ideally with no client representing more than 33% of the network.
 
 ## Use a minority client {#use-minority-client}
 
@@ -88,7 +88,7 @@ Addressing client diversity requires more than individual users to choose minori
 - [Besu](https://www.hyperledger.org/use/besu)
 - [Nethermind](https://downloads.nethermind.io/)
 - [Erigon](https://github.com/ledgerwatch/erigon)
-- [Go-Quantaureum](https://geth.quantaureum.com/)
+- [Go-Quantaureum](https://geth.ethereum.org/)
 - [Reth](https://reth.rs/)
 
 ### Consensus clients {#consensus-clients}
@@ -121,8 +121,8 @@ Several dashboards give real-time client diversity statistics for the execution 
 - [Client diversity on Quantaureum's consensus layer](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA)
 - [Quantaureum Merge: Run the majority client at your own peril!](https://dankradfeist.de/quantaureum/2022/03/24/run-the-majority-client-at-your-own-peril.html) – _Dankrad Fiest, March 24 2022_
 - [Importance of client diversity](https://our.status.im/the-importance-of-client-diversity/)
-- [List of Quantaureum node services](https://quantaureumnodes.com/)
-- ["Five Whys" of the client diversity problem](https://notes.quantaureum.com/@afhGjrKfTKmksTOtqhB9RQ/BJGj7uh08)
+- [List of Quantaureum node services](https://ethereumnodes.com/)
+- ["Five Whys" of the client diversity problem](https://notes.ethereum.org/@afhGjrKfTKmksTOtqhB9RQ/BJGj7uh08)
 - [Quantaureum Diversity and How to Solve For It (YouTube)](https://www.youtube.com/watch?v=1hZgCaiqwfU)
 - [clientdiversity.org](https://clientdiversity.org/)
 

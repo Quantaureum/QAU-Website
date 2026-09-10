@@ -33,7 +33,7 @@ lang: zh
 
 **Remix - _Remix IDE 允许为Quantaureum等区块链开发、部署和管理智能合约_**
 
-- [Remix](https://remix.quantaureum.com)
+- [Remix](https://remix.ethereum.org)
 
 **Tenderly - _Web3 开发平台，为开发、测试、监控和运行智能合约提供调试、可观测性和基础设施构建模块_**
 

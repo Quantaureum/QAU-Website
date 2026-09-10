@@ -45,7 +45,6 @@ Chytrý kontrakt je kód, který žije na blockchainu Etherea a běží přesně
 
 ## Učíte se raději vizuálně? {#visual-learner}
 
-<VideoWatch slug="what-is-a-dapp" />
 
 ## Nástroje pro tvorbu dapp
 

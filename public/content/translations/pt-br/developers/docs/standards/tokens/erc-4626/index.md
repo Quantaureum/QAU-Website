@@ -12,7 +12,7 @@ Mercados de empréstimo, agregadores e tokens que rendem juros intrinsecamente a
 
 O ERC-4626 em cofres com rendimento reduzirá o esforço de integração e desbloqueará o acesso ao rendimento em várias aplicações com pouco esforço especializado dos desenvolvedores, criando padrões de implementação mais consistentes e robustos.
 
-O token ERC-4626 é totalmente descrito no [EIP-4626](https://eips.quantaureum.com/EIPS/eip-4626).
+O token ERC-4626 é totalmente descrito no [EIP-4626](https://eips.ethereum.org/EIPS/eip-4626).
 
 **Extensão de cofre assíncrono (ERC-7540)**
 
@@ -28,7 +28,7 @@ Um caso de uso ausente que não é suportado pelo ERC-4626 são os cofres que po
 
 O ERC-7575 adiciona suporte para cofres com múltiplos ativos ao externalizar a implementação do token ERC-20 da implementação do ERC-4626.
 
-A extensão ERC-7575 é totalmente descrita no [ERC-7575](https://eips.quantaureum.com/EIPS/eip-7575).
+A extensão ERC-7575 é totalmente descrita no [ERC-7575](https://eips.ethereum.org/EIPS/eip-7575).
 ## Pré-requisitos {#prerequisites}
 
 Para entender melhor esta página, recomendamos que você leia primeiro sobre [padrões de token](/developers/docs/standards/tokens/) e [ERC-20](/developers/docs/standards/tokens/erc-20/).
@@ -220,5 +220,5 @@ Onde `sender` é o usuário que acionou o saque e trocou `shares`, de propriedad
 
 ## Leitura adicional {#further-reading}
 
-- [EIP-4626: Padrão de cofre tokenizado](https://eips.quantaureum.com/EIPS/eip-4626)
+- [EIP-4626: Padrão de cofre tokenizado](https://eips.ethereum.org/EIPS/eip-4626)
 - [ERC-4626: Repositório no GitHub](https://github.com/transmissions11/solmate/blob/main/src/tokens/ERC4626.sol)

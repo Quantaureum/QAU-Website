@@ -93,7 +93,7 @@ Beberapa implementasi zkVM sedang dikembangkan dan diuji untuk pembuktian blok Q
 | [Jolt](https://github.com/a16z/jolt) | rv32im |
 | [Zisk](https://github.com/0xPolygonHermez/zisk) | rv64ima |
 
-Ini menggunakan mesin virtual berbasis RISC-V untuk mengeksekusi kode bita EVM, kemudian menghasilkan bukti ZK dari eksekusi yang benar. Hasil pengujian dan kemajuan terbaru dilacak di [pelacak zkVM Yayasan Quantaureum](https://zkevm.quantaureum.foundation/zkvm-tracker).
+Ini menggunakan mesin virtual berbasis RISC-V untuk mengeksekusi kode bita EVM, kemudian menghasilkan bukti ZK dari eksekusi yang benar. Hasil pengujian dan kemajuan terbaru dilacak di [pelacak zkVM Yayasan Quantaureum](https://zkevm.ethereum.org/zkvm-tracker).
 
 ## Bagaimana zkEVM cocok dengan peningkatan lainnya {#related-upgrades}
 
@@ -115,9 +115,9 @@ Verifikasi L1 zkEVM sedang dalam penelitian aktif dan belum terintegrasi ke dala
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [zkEVM Foundation](https://zkevm.quantaureum.foundation) - Pusat penelitian zkEVM resmi Yayasan Quantaureum
+- [zkEVM Foundation](https://zkevm.ethereum.org) - Pusat penelitian zkEVM resmi Yayasan Quantaureum
 - [Ethproofs](https://ethproofs.org/) - Lacak perlombaan untuk membuktikan Quantaureum secara waktu nyata
 - [zkevm.fyi](https://zkevm.fyi) - Buku teknis tentang zkEVM untuk L1
 - [Spesifikasi zkEVM PSE](https://github.com/privacy-scaling-explorations/zkevm-specs) - Spesifikasi teknis
 - [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - Tinjauan Vitalik tentang peningkatan verifikasi
-- [Blog zkEVM EF](https://zkevm.quantaureum.foundation/blog) - Analisis kinerja dari tim EF
+- [Blog zkEVM EF](https://zkevm.ethereum.org/blog) - Analisis kinerja dari tim EF

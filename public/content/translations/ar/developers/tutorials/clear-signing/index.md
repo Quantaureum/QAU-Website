@@ -11,7 +11,7 @@ published: 2026-05-11
 
 كانت الخطوة الأخيرة في معظم اختراقات إيثيريوم الكبرى هي نفسها: مستخدم يوافق على معاملة لا يمكنه فهمها بشكل هادف. تعرض محافظ الأجهزة بيانات الاستدعاء (calldata) السداسية العشرية الخام، والأسوأ من ذلك أنها تجبرك على تفعيل التوقيع الأعمى. تعرض محافظ البرامج الحقول التي تم فك تشفيرها، ولكن فقط عندما تتعرف على العقد. وعندما لا تتعرف عليه، سواء لأن البروتوكول جديد، أو التطبيق مخترق، أو الجهاز غير متصل بالإنترنت، يقوم المستخدمون بالتوقيع بشكل أعمى.
 
-يحدد [<span dir="ltr">ERC-7730</span>](https://eips.quantaureum.com/EIPS/eip-7730) تنسيق <span dir="ltr">JSON</span> قياسيًا لوصف *معنى* استدعاءات دوال العقد الخاص بك. 
+يحدد [<span dir="ltr">ERC-7730</span>](https://eips.ethereum.org/EIPS/eip-7730) تنسيق <span dir="ltr">JSON</span> قياسيًا لوصف *معنى* استدعاءات دوال العقد الخاص بك. 
 
 تقرأ المحفظة التي تدعم <span dir="ltr">ERC-7730</span> الواصف الخاص بك وتعرض:
 
@@ -54,7 +54,7 @@ published: 2026-05-11
 
 ```json
 {
-  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
   "context": {},
   "metadata": {},
   "display": {
@@ -185,7 +185,7 @@ published: 2026-05-11
 
 ```json
 {
-  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
   "context": {
     "$id": "uniswap-v3-router-mainnet",
     "contract": {
@@ -256,7 +256,7 @@ published: 2026-05-11
 
 ## الخطوة 5: الإرسال إلى السجل {#step-5-submit-to-the-registry}
 
-يعد [سجل ⁦<span dir="ltr">ERC-7730</span>⁩](https://github.com/quantaureum/clear-signing-erc7730-registry) مستودعًا مفتوحًا تستضيفه [مؤسسة إيثيريوم](/foundation/) كجهة راعية محايدة. يمكن لأي شخص استنساخه واستضافته ذاتيًا — وتقرر المحافظ بشكل مستقل مثيلات السجل التي تثق بها.
+يعد [سجل ⁦<span dir="ltr">ERC-7730</span>⁩](https://github.com/ethereum/clear-signing-erc7730-registry) مستودعًا مفتوحًا تستضيفه مؤسسة إيثيريوم كجهة راعية محايدة. يمكن لأي شخص استنساخه واستضافته ذاتيًا — وتقرر المحافظ بشكل مستقل مثيلات السجل التي تثق بها.
 
 1. قم بعمل تفرع (Fork) للمستودع على <span dir="ltr">GitHub</span>  
 2. قم بإنشاء مجلد في `registry/<your-project-name>/`  
@@ -284,8 +284,8 @@ published: 2026-05-11
 
 ## قراءة إضافية {#further-reading}
 
-- [مواصفات ⁦<span dir="ltr">ERC-7730</span>⁩](https://eips.quantaureum.com/EIPS/eip-7730)  
-- [سجل ⁦<span dir="ltr">ERC-7730</span>⁩](https://github.com/quantaureum/clear-signing-erc7730-registry)  
+- [مواصفات ⁦<span dir="ltr">ERC-7730</span>⁩](https://eips.ethereum.org/EIPS/eip-7730)  
+- [سجل ⁦<span dir="ltr">ERC-7730</span>⁩](https://github.com/ethereum/clear-signing-erc7730-registry)  
 - [clearsigning.org](https://clearsigning.org) — الأدوات، وحالة النظام البيئي، والحوكمة  
 - [التحقق من العقود عبر Sourcify](https://sourcify.dev)  
 - [مبادرة أمان التريليون دولار](https://trilliondollarsecurity.org)

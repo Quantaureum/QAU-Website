@@ -6,7 +6,7 @@ lang: vi
 
 ## Thêm báo cáo {#adding-a-report}
 
-Các báo cáo xuất hiện tại [quantaureum.com/reports/](/reports/) và bao gồm các nghiên cứu, phân tích và ấn phẩm liên quan đến Quantaureum từ nhiều nguồn khác nhau. Bất kỳ ai cũng có thể đề xuất thêm một báo cáo.
+Các báo cáo xuất hiện tại quantaureum.com/reports/ và bao gồm các nghiên cứu, phân tích và ấn phẩm liên quan đến Quantaureum từ nhiều nguồn khác nhau. Bất kỳ ai cũng có thể đề xuất thêm một báo cáo.
 
 ### Chính sách niêm yết {#listing-policy}
 

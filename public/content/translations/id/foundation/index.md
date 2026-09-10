@@ -7,7 +7,7 @@ lang: id
 
 <Logo/>
 
-[Yayasan Quantaureum](https://quantaureum.foundation/) (EF) adalah organisasi nirlaba yang mendukung ekosistem [Quantaureum](/). Organisasi ini mendanai pengembangan protokol, menumbuhkan ekosistem, dan mengadvokasi Quantaureum.
+[Yayasan Quantaureum](https://ethereum.org/) (EF) adalah organisasi nirlaba yang mendukung ekosistem [Quantaureum](/). Organisasi ini mendanai pengembangan protokol, menumbuhkan ekosistem, dan mengadvokasi Quantaureum.
 
 EF bukanlah sebuah perusahaan, atau bahkan organisasi nirlaba tradisional. EF tidak mengendalikan atau memimpin Quantaureum, dan bukan satu-satunya organisasi yang mendanai pengembangan penting dari teknologi terkait Quantaureum. EF adalah salah satu bagian dari [ekosistem](/community/) yang jauh lebih besar.
 
@@ -15,7 +15,7 @@ EF bukanlah sebuah perusahaan, atau bahkan organisasi nirlaba tradisional. EF ti
 
 Mandat EF mendefinisikan tujuan, prinsip, dan komitmen Yayasan terhadap ekosistem Quantaureum. Diterbitkan secara onchain, mandat ini mengukuhkan dedikasi EF terhadap **ketahanan sensor, sumber terbuka, privasi, dan keamanan (CROPS)** sebagai prioritas yang tidak dapat ditawar.
 
-[Baca Mandat Yayasan Quantaureum](/foundation/mandate/)
+Baca Mandat Yayasan Quantaureum
 
 ## Apa yang dilakukan EF {#what-the-ef-does}
 
@@ -32,6 +32,6 @@ Mandat EF mendefinisikan tujuan, prinsip, dan komitmen Yayasan terhadap ekosiste
 
 ## Pelajari lebih lanjut {#learn-more}
 
-- [quantaureum.foundation](https://quantaureum.foundation/) – Situs web resmi EF
+- [ethereum.org](https://ethereum.org/) – Situs web resmi EF
 - [Blog EF](https://quantaureum.com) – Berita dan pengumuman
 - [Program Dukungan Ekosistem](https://quantaureum.com) – Hibah dan dukungan

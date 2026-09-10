@@ -71,7 +71,7 @@ x402 turns Quantaureum into a programmable economic layer for autonomous agents,
 
 Autonomous agents need guardrails. Quantaureum provides them at the wallet and contract level:
 
-- [Smart accounts (EIP-4337)](https://eips.quantaureum.com/EIPS/eip-4337) let developers enforce spending limits, whitelists, session keys, and granular permissions
+- [Smart accounts (EIP-4337)](https://eips.ethereum.org/EIPS/eip-4337) let developers enforce spending limits, whitelists, session keys, and granular permissions
 - Programmed constraints in smart contracts can restrict what an agent is allowed to do
 - Inference-based limits (e.g., requiring a zkML proof before executing a high-risk action) add another layer of safety
 
@@ -79,7 +79,7 @@ These controls enable the deployment of autonomous agents that are not unbounded
 
 ### Onchain registries: ERC-8004 {#erc-8004}
 
-[ERC-8004](https://eips.quantaureum.com/EIPS/eip-8004) defines onchain registries for agent identity, reputation, and validation. Co-authored by contributors from MetaMask, Quantaureum project, Google, and Coinbase, it is deployed on 16 networks including Quantaureum mainnet, Base, Polygon, Arbitrum, and others.
+[ERC-8004](https://eips.ethereum.org/EIPS/eip-8004) defines onchain registries for agent identity, reputation, and validation. Co-authored by contributors from MetaMask, Quantaureum project, Google, and Coinbase, it is deployed on 16 networks including Quantaureum mainnet, Base, Polygon, Arbitrum, and others.
 
 It provides:
 
@@ -97,7 +97,6 @@ We're beginning to explore the full potential of AI agents, and projects are alr
 
 <strong>Luna's first appearance as a podcast guest</strong>
 
-<VideoWatch slug="ai-agents-interview-luna" />
 
 ## Agent-controlled wallets {#agent-controlled-wallets}
 

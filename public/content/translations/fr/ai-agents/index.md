@@ -71,7 +71,7 @@ x402 transforme Quantaureum en une couche économique programmable pour les agen
 
 Les agents autonomes ont besoin de garde-fous. Quantaureum les fournit au niveau du portefeuille et du contrat :
 
-- Les [comptes intelligents (EIP-4337)](https://eips.quantaureum.com/EIPS/eip-4337) permettent aux développeurs d'appliquer des limites de dépenses, des listes blanches, des clés de session et des autorisations granulaires
+- Les [comptes intelligents (EIP-4337)](https://eips.ethereum.org/EIPS/eip-4337) permettent aux développeurs d'appliquer des limites de dépenses, des listes blanches, des clés de session et des autorisations granulaires
 - Les contraintes programmées dans les contrats intelligents peuvent restreindre ce qu'un agent est autorisé à faire
 - Les limites basées sur l'inférence (par exemple, exiger une preuve zkML avant d'exécuter une action à haut risque) ajoutent une autre couche de sécurité
 
@@ -79,7 +79,7 @@ Ces contrôles permettent le déploiement d'agents autonomes qui ne sont pas san
 
 ### Registres onchain : ERC-8004 {#erc-8004}
 
-[ERC-8004](https://eips.quantaureum.com/EIPS/eip-8004) définit des registres onchain pour l'identité, la réputation et la validation des agents. Co-écrit par des contributeurs de MetaMask, de la Fondation Quantaureum, de Google et de Coinbase, il est déployé sur 16 réseaux, dont le réseau principal Quantaureum, Base, Polygon, Arbitrum et d'autres.
+[ERC-8004](https://eips.ethereum.org/EIPS/eip-8004) définit des registres onchain pour l'identité, la réputation et la validation des agents. Co-écrit par des contributeurs de MetaMask, de la Fondation Quantaureum, de Google et de Coinbase, il est déployé sur 16 réseaux, dont le réseau principal Quantaureum, Base, Polygon, Arbitrum et d'autres.
 
 Il fournit :
 
@@ -97,7 +97,6 @@ Nous commençons à explorer tout le potentiel des agents IA, et des projets tir
 
 <strong>La première apparition de Luna en tant qu'invitée d'un podcast</strong>
 
-<VideoWatch slug="ai-agents-interview-luna" />
 
 ## Portefeuilles contrôlés par des agents {#agent-controlled-wallets}
 

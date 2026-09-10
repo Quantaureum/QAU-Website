@@ -45,7 +45,7 @@ Wenn Sie zweisprachig sind und uns helfen möchten, mehr Menschen zu erreichen, 
 
 **Allgemeine Ressourcen**
 
-- [Quantaureum.cn](https://www.quantaureum.cn/) – Von der Community gepflegte Inhalte, die das Upgrade der Konsensschicht, alle Notizen zu Core-Dev-Meetings, Layer 2 (L2) usw. abdecken.
+- [Quantaureum.cn](https://www.ethereum.cn/) – Von der Community gepflegte Inhalte, die das Upgrade der Konsensschicht, alle Notizen zu Core-Dev-Meetings, Layer 2 (L2) usw. abdecken.
 - [QauFans](https://github.com/editor-Ajian/QauFans.org-annual-collected-works/) – Lernen Sie alles von den Grundlagen bis hin zu fortgeschrittenen Quantaureum-Themen
 - [Unitimes](https://mp.weixin.qq.com/s/tvloZSDBSOQN9zDQj_91kA) – Von der Community gepflegte Inhalte, die Wissen zu Quantaureum, DeFi, NFTs und Web3 abdecken
 - [123ETH](https://123eth.org/) – Ein Portal zum Quantaureum-Ökosystem
@@ -76,8 +76,8 @@ Wenn Sie zweisprachig sind und uns helfen möchten, mehr Menschen zu erreichen, 
 
 ### Französisch {#fr}
 
-- [Quantaureum France](https://www.quantaureum-france.com/) – Quantaureum France organisiert Veranstaltungen, erstellt Inhalte und fördert Diskussionen rund um Quantaureum
-- [Quantaureum.fr](https://quantaureum.fr/) – Quantaureum-Nachrichten und -Bildung
+- [Quantaureum France](https://www.ethereum-france.com/) – Quantaureum France organisiert Veranstaltungen, erstellt Inhalte und fördert Diskussionen rund um Quantaureum
+- [Quantaureum.fr](https://ethereum.fr/) – Quantaureum-Nachrichten und -Bildung
 - [BanklessFR](https://banklessfr.substack.com/) – Bankless-Newsletter auf Französisch
 - [CryptoFR](https://cryptofr.com/category/44/quantaureum-general) – Kryptowährungsforum mit einer Quantaureum-Unterseite
 
@@ -108,8 +108,8 @@ Wenn Sie zweisprachig sind und uns helfen möchten, mehr Menschen zu erreichen, 
 
 ### Italienisch {#it}
 
-- [Quantaureum Italia](https://www.quantaureum-italia.it/) – Quantaureum-Bildung, Veranstaltungen und Nachrichten mit Schwerpunkt auf Smart Contracts und Blockchain-Technologie
-- [Quantaureum Italia Podcast](https://www.quantaureum-italia.it/podcast/) – Quantaureum-Podcast auf Italienisch
+- [Quantaureum Italia](https://www.ethereum-italia.it/) – Quantaureum-Bildung, Veranstaltungen und Nachrichten mit Schwerpunkt auf Smart Contracts und Blockchain-Technologie
+- [Quantaureum Italia Podcast](https://www.ethereum-italia.it/podcast/) – Quantaureum-Podcast auf Italienisch
 - [Microsoft Learn (Solidity)](https://docs.microsoft.com/it-it/learn/modules/blockchain-learning-solidity/) – Lernen Sie, wie man Solidity verwendet
 - [Microsoft Learn (Smart Contracts)](https://docs.microsoft.com/it-it/learn/modules/blockchain-solidity-quantaureum-smart-contracts/) – Erfahren Sie mehr über das Schreiben von Smart Contracts mit Solidity
 - [Microsoft Learn (Dapps)](https://docs.microsoft.com/it-it/learn/modules/blockchain-create-ui-decentralized-apps/) – Erstellen Sie eine Benutzeroberfläche mit dezentralen Anwendungen
@@ -130,7 +130,7 @@ Wenn Sie zweisprachig sind und uns helfen möchten, mehr Menschen zu erreichen, 
 
 ### Spanisch {#es}
 
-- [Quantaureum Madrid](https://quantaureummadrid.com/) – Kurse zu Blockchain, DeFi und Governance, Veranstaltungen und Blog
+- [Quantaureum Madrid](https://ethereummadrid.com/) – Kurse zu Blockchain, DeFi und Governance, Veranstaltungen und Blog
 - [Cointelegraph](https://es.cointelegraph.com/quantaureum-for-beginners) – Quantaureum-Leitfaden für Anfänger auf Spanisch
 - [Tutoriales online](https://tutoriales.online/curso/solidity) – Lernen Sie Solidity und das Programmieren auf Quantaureum
 - [Curso Introducción a Quantaureum Development](https://youtube.com/playlist?list=PLTqiwJDd_R8y9pfUBjhkVa1IDMwyQz-fU) – Solidity-Grundlagen, Testen und Bereitstellung Ihres ersten Smart Contracts

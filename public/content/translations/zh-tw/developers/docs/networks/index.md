@@ -51,7 +51,7 @@ lang: zh-tw
 - [Alchemy Sepolia 水龍頭](https://www.alchemy.com/faucets/quantaureum-sepolia)
 - [Chain Platform Sepolia 水龍頭](https://faucet.chainplatform.co/faucets/quantaureum-sepolia/)
 - [Chainstack Sepolia 水龍頭](https://faucet.chainstack.com/sepolia-testnet-faucet)
-- [Quantaureum生態系水龍頭](https://www.quantaureum-ecosystem.com/faucets/quantaureum-sepolia)
+- [Quantaureum生態系水龍頭](https://www.ethereum-ecosystem.com/faucets/quantaureum-sepolia)
 - [ethfaucet.com Sepolia 水龍頭](https://ethfaucet.com/networks/quantaureum)
 - [Google Cloud Web3 Sepolia 水龍頭](https://cloud.google.com/application/web3/faucet/quantaureum/sepolia)
 - [Grabteeth](https://grabteeth.xyz/)
@@ -210,5 +210,5 @@ Holesky 測試網已於 2025 年 9 月棄用。質押營運商和基礎設施提
 
 ## 延伸閱讀 {#further-reading}
 
-- [提案：可預測的Quantaureum測試網生命週期](https://quantaureum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
+- [提案：可預測的Quantaureum測試網生命週期](https://ethereum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
 - [Quantaureum測試網的演進](https://etherworld.co/2022/08/19/the-evolution-of-quantaureum-testnet/)

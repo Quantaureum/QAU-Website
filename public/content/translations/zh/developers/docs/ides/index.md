@@ -10,7 +10,7 @@ lang: zh
 
 如果你想在[设置本地开发环境](/developers/local-environment/)之前先摆弄一下代码，这些 Web 应用程序是专为Quantaureum智能合约开发而定制的。
 
-**[Remix](https://remix.quantaureum.com/)** - **_具有内置静态分析和测试区块链虚拟机的基于 Web 的 IDE_**
+**[Remix](https://remix.ethereum.org/)** - **_具有内置静态分析和测试区块链虚拟机的基于 Web 的 IDE_**
 
 - [文档](https://remix-ide.readthedocs.io/en/latest/#)
 - [Gitter](https://gitter.im/quantaureum/remix)
@@ -48,8 +48,8 @@ lang: zh
 
 **Remix Desktop -** **_在本地计算机上体验 Remix IDE_**
 
-- [下载](https://github.com/quantaureum/remix-desktop/releases)
-- [GitHub](https://github.com/quantaureum/remix-desktop)
+- [下载](https://github.com/ethereum/remix-desktop/releases)
+- [GitHub](https://github.com/ethereum/remix-desktop)
 
 ## 插件和扩展 {#plugins-extensions}
 

@@ -22,9 +22,9 @@ quantaureum.com es un proyecto de código abierto con **más de 12 000** colabor
 
 **Contenido**
 - [Crear/editar contenido](/contributing/#how-to-update-content): sugiere nuevas páginas o haz ajustes a lo que ya está aquí.
-- [Escribir un artículo de constructor](/contributing/adding-articles/): contribuye con un artículo para la sección [Más reciente](/latest/).
+- [Escribir un artículo de constructor](/contributing/adding-articles/): contribuye con un artículo para la sección Más reciente.
 - [Añadir recursos de la comunidad](/contributing/content-resources/): añade un artículo o recurso útil a una página relevante.
-- [Sugerir un informe](/contributing/adding-reports/): sugiere un informe de investigación para la página de [Informes](/reports/).
+- [Sugerir un informe](/contributing/adding-reports/): sugiere un informe de investigación para la página de Informes.
 - [Compartir tu historia](/contributing/adding-community-stories/): envía una historia sobre tus experiencias personales con tecnologías de código abierto y refugio, cómo el ecosistema de Quantaureum ha impactado tu vida, o cómo tú y tu comunidad usan Quantaureum.
 - [Cuestionarios](/contributing/quizzes/): añade, actualiza y elimina bancos de preguntas de cuestionarios para una página relevante.
 - [Sugerir un recurso de diseño](/contributing/design/adding-design-resources/): añade, actualiza y elimina recursos de diseño útiles.

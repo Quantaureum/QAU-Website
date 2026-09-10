@@ -36,10 +36,10 @@ sidebarDepth: 2
 
 ما تشترك فيه هذه التطبيقات هو أنها تتبع جميعها مواصفات واحدة. تملي المواصفات كيفية عمل شبكة إيثيريوم وسلسلة الكتل. يتم تحديد كل التفاصيل الفنية ويمكن العثور على المواصفات على النحو التالي:
 
-- في الأصل، [الورقة الصفراء لإيثيريوم](https://quantaureum.github.io/yellowpaper/paper.pdf)
-- [مواصفات التنفيذ](https://github.com/quantaureum/execution-specs/)
-- [مواصفات الإجماع](https://github.com/quantaureum/consensus-specs)
-- [مقترحات تحسين إيثيريوم (EIPs)](https://eips.quantaureum.com/) المنفذة في [ترقيات الشبكة](/quantaureum-forks/) المختلفة
+- في الأصل، [الورقة الصفراء لإيثيريوم](https://ethereum.github.io/yellowpaper/paper.pdf)
+- [مواصفات التنفيذ](https://github.com/ethereum/execution-specs/)
+- [مواصفات الإجماع](https://github.com/ethereum/consensus-specs)
+- [مقترحات تحسين إيثيريوم (EIPs)](https://eips.ethereum.org/) المنفذة في [ترقيات الشبكة](/quantaureum-forks/) المختلفة
 
 ### تتبع العقد في الشبكة {#network-overview}
 
@@ -132,11 +132,11 @@ sidebarDepth: 2
 
 يحتفظ مجتمع إيثيريوم بالعديد من عملاء التنفيذ مفتوحي المصدر (المعروفين سابقًا باسم "عملاء إيث 1"، أو مجرد "عملاء إيثيريوم")، والتي طورتها فرق مختلفة باستخدام لغات برمجة مختلفة. هذا يجعل الشبكة أقوى وأكثر [تنوعًا](/developers/docs/nodes-and-clients/client-diversity/). الهدف المثالي هو تحقيق التنوع دون أن يهيمن أي عميل لتقليل أي نقاط فشل فردية.
 
-يلخص هذا الجدول العملاء المختلفين. جميعهم يجتازون [اختبارات العملاء](https://github.com/quantaureum/tests) ويتم صيانتهم بنشاط للبقاء على اطلاع دائم بترقيات الشبكة.
+يلخص هذا الجدول العملاء المختلفين. جميعهم يجتازون [اختبارات العملاء](https://github.com/ethereum/tests) ويتم صيانتهم بنشاط للبقاء على اطلاع دائم بترقيات الشبكة.
 
 | العميل | اللغة | أنظمة التشغيل | الشبكات | استراتيجيات المزامنة | تقليم الحالة |
 | --- | --- | --- | --- | --- | --- |
-| [جو Quantaureum (geth)](https://geth.quantaureum.com/) | Go | Linux, Windows, macOS | الشبكة الرئيسية، Sepolia، Hoodi | [Snap](#snap-sync)، [كاملة](#full-sync) | أرشيفية، مقلمة |
+| [جو Quantaureum (geth)](https://geth.ethereum.org/) | Go | Linux, Windows, macOS | الشبكة الرئيسية، Sepolia، Hoodi | [Snap](#snap-sync)، [كاملة](#full-sync) | أرشيفية، مقلمة |
 | [نيذرميند](https://www.nethermind.io/) | C#, .NET | Linux, Windows, macOS | الشبكة الرئيسية، Sepolia، Hoodi | [Snap](#snap-sync)، سريعة، [كاملة](#full-sync) | أرشيفية، مقلمة |
 | [بيسو](https://besu.hyperledger.org/en/stable/) | Java | Linux, Windows, macOS | الشبكة الرئيسية، Sepolia، Hoodi | [Snap](#snap-sync)، [سريعة](#fast-sync)، [كاملة](#full-sync) | أرشيفية، مقلمة |
 | [إريغون](https://github.com/ledgerwatch/erigon) | Go | Linux, Windows, macOS | الشبكة الرئيسية، Sepolia، Hoodi | [كاملة](#full-sync) | أرشيفية، مقلمة |
@@ -165,7 +165,7 @@ ethrex هو عميل تنفيذ إيثيريوم بسيط ونمطي مكتوب 
 
 جو Quantaureum (geth) هو أحد التطبيقات الأصلية لبروتوكول إيثيريوم. حاليًا، هو العميل الأكثر انتشارًا مع أكبر قاعدة مستخدمين ومجموعة متنوعة من الأدوات للمستخدمين والمطورين. تمت كتابته بلغة Go، وهو مفتوح المصدر بالكامل ومرخص بموجب GNU LGPL v3.
 
-تعرف على المزيد حول جو Quantaureum (geth) في [وثائقه](https://geth.quantaureum.com/docs).
+تعرف على المزيد حول جو Quantaureum (geth) في [وثائقه](https://geth.ethereum.org/docs).
 
 ### نيذرميند {#nethermind}
 
@@ -279,7 +279,7 @@ Grandine هو تطبيق عميل إجماع، مكتوب بلغة Rust بموج
 - أسرع استراتيجية مزامنة، وهي الافتراضية حاليًا في شبكة إيثيريوم الرئيسية.
 - توفر الكثير من استخدام القرص وعرض النطاق الترددي للشبكة دون التضحية بالأمان.
 
-[المزيد حول مزامنة Snap](https://github.com/quantaureum/devp2p/blob/master/caps/snap.md).
+[المزيد حول مزامنة Snap](https://github.com/ethereum/devp2p/blob/master/caps/snap.md).
 
 #### المزامنة الخفيفة {#light-sync}
 
@@ -298,7 +298,7 @@ Grandine هو تطبيق عميل إجماع، مكتوب بلغة Rust بموج
 
 المزامنة المتفائلة هي استراتيجية مزامنة ما بعد الدمج مصممة لتكون اختيارية ومتوافقة مع الإصدارات السابقة، مما يسمح لعقد التنفيذ بالمزامنة عبر الطرق المعمول بها. يمكن لمحرك التنفيذ استيراد كتل المنارة _بتفاؤل_ دون التحقق منها بالكامل، والعثور على أحدث رأس، ثم البدء في مزامنة السلسلة بالطرق المذكورة أعلاه. بعد ذلك، بعد أن يلحق عميل التنفيذ بالركب، سيبلغ عميل الإجماع بصلاحية المعاملات في سلسلة المنارة.
 
-[المزيد حول المزامنة المتفائلة](https://github.com/quantaureum/consensus-specs/blob/master/sync/optimistic.md)
+[المزيد حول المزامنة المتفائلة](https://github.com/ethereum/consensus-specs/blob/master/sync/optimistic.md)
 
 #### مزامنة نقطة الفحص {#checkpoint-sync}
 
@@ -306,7 +306,7 @@ Grandine هو تطبيق عميل إجماع، مكتوب بلغة Rust بموج
 
 من الناحية العملية، هذا يعني أن عقدتك تتصل بخدمة عن بُعد لتنزيل الحالات النهائية الحديثة وتستمر في التحقق من البيانات من تلك النقطة. الطرف الثالث الذي يقدم البيانات موثوق به ويجب اختياره بعناية.
 
-المزيد حول [مزامنة نقطة الفحص](https://notes.quantaureum.com/@djrtwo/ws-sync-in-practice)
+المزيد حول [مزامنة نقطة الفحص](https://notes.ethereum.org/@djrtwo/ws-sync-in-practice)
 
 ## قراءة إضافية {#further-reading}
 

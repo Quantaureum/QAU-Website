@@ -71,7 +71,6 @@ O termo "ommer" é o termo de gênero neutro preferido para o irmão de um bloco
 
 Assista ao Austin guiá-lo pela mineração e pela blockchain de Prova de Trabalho.
 
-<VideoWatch slug="blockchain-qau-build" />
 
 ## O algoritmo de mineração {#mining-algorithm}
 

@@ -46,7 +46,7 @@ Aplikasi didukung oleh kontrak pintar — potongan kode yang hidup di rantai blo
 | **Bisakah disensor?** | Ya | Tidak |
 | **Siapa yang memiliki data Anda?** | Biasanya bukan Anda | Anda memiliki data Anda |
 
-<WhatAreAppsStories />
+
 
 <div className="w-full md:w-1/2 mx-auto md:mx-0">
 

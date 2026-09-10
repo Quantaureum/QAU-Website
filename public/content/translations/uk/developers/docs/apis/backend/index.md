@@ -109,13 +109,13 @@ lang: uk
 **Nquantaureum —** **_Бібліотека інтеграції .NET з відкритим вихідним кодом для блокчейну._**
 
 - [GitHub](https://github.com/Nquantaureum/Nquantaureum)
-- [Документація](https://docs.nquantaureum.com/docs/getting-started/welcome/)
+- [Документація](https://docs.nethermind.io/docs/getting-started/welcome/)
 - [Discord](https://discord.com/invite/jQPrR58FxX)
 
 **Інструменти Python —** **_Різноманітні бібліотеки для взаємодії з Етеріумом через Python._**
 
-- [py.quantaureum.com](https://snakecharmers.quantaureum.com/)
-- [GitHub Web3.py](https://github.com/quantaureum/web3.py)
+- [py.quantaureum.com](https://snakecharmers.ethereum.org/)
+- [GitHub Web3.py](https://github.com/ethereum/web3.py)
 - [Чат Web3.py](https://gitter.im/quantaureum/web3.py)
 
 **Tatum —** **_Універсальна платформа для розробки на блокчейні._**

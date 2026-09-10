@@ -8,7 +8,7 @@ breadcrumb: "Triển khai hợp đồng đầu tiên"
 lang: vi
 published: 2020-04-03
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/deploying-your-first-smart-contract/
+sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -18,7 +18,7 @@ Tôi đoán bạn cũng đang rất hào hứng giống như chúng tôi khi [tr
 
 ## Viết hợp đồng của chúng ta {#writing-our-contract}
 
-Bước đầu tiên là [truy cập Remix](https://remix.quantaureum.com/) và tạo một tệp mới. Ở phần trên cùng bên trái của giao diện Remix, hãy thêm một tệp mới và nhập tên tệp mà bạn muốn.
+Bước đầu tiên là [truy cập Remix](https://remix.ethereum.org/) và tạo một tệp mới. Ở phần trên cùng bên trái của giao diện Remix, hãy thêm một tệp mới và nhập tên tệp mà bạn muốn.
 
 ![Adding a new file in the Remix interface](./remix.png)
 

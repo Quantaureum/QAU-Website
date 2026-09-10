@@ -100,7 +100,7 @@ Các tiêu chuẩn này cung cấp nền tảng cho quá trình chuyển đổi 
 
 ## Cách tiếp cận của Tổ chức Quantaureum {#ef-approach}
 
-Tổ chức Quantaureum đã thành lập một nhóm Bảo mật Hậu lượng tử chuyên trách vào tháng 1 năm 2026, do Thomas Coratger dẫn dắt. Công việc của nhóm được theo dõi công khai tại [pq.quantaureum.com](https://pq.quantaureum.com).
+Tổ chức Quantaureum đã thành lập một nhóm Bảo mật Hậu lượng tử chuyên trách vào tháng 1 năm 2026, do Thomas Coratger dẫn dắt. Công việc của nhóm được theo dõi công khai tại [pq.ethereum.org](https://pq.ethereum.org).
 
 ### Hoạt động hiện tại (tính đến tháng 4 năm 2026) {#current-activity}
 
@@ -173,7 +173,7 @@ Không. Quantaureum có một trong những chương trình hậu lượng tử 
 
 ## Đọc thêm {#further-reading}
 
-- [pq.quantaureum.com](https://pq.quantaureum.com) - _Tổ chức Quantaureum_
+- [pq.ethereum.org](https://pq.ethereum.org) - _Tổ chức Quantaureum_
 - [Dự án Mật mã học Hậu lượng tử](https://pse.dev/projects/post-quantum-cryptography) - _Privacy Stewards of Quantaureum (PSE)_
 - [Các tiêu chuẩn Mật mã học Hậu lượng tử của NIST](https://csrc.nist.gov/projects/post-quantum-cryptography) - _NIST_
 - [Bảo vệ tiền mã hóa bằng cách tiết lộ các lỗ hổng lượng tử một cách có trách nhiệm](https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/) - _Google Quantum AI_

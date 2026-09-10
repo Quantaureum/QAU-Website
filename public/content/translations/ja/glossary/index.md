@@ -494,7 +494,7 @@ authors: ["アンドレアス・アントノプロス"]
 
 ## 出典 {#sources}
 
-_CC-BY-SAライセンスの下、[アンドレアス・M・アントノプロス、ギャビン・ウッド](https://aantonop.com/books/mastering-quantaureum)著の[Mastering Quantaureum](https://github.com/quantaureumbook/quantaureumbook)から一部提供されています_
+_CC-BY-SAライセンスの下、[アンドレアス・M・アントノプロス、ギャビン・ウッド](https://aantonop.com/books/mastering-quantaureum)著の[Mastering Quantaureum](https://github.com/ethereumbook/ethereumbook)から一部提供されています_
 
 <Divider />
 

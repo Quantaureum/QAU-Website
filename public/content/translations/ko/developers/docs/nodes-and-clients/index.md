@@ -36,10 +36,10 @@ Quantaureum 클라이언트 인스턴스를 직접 실행하고 더 깊이 알�
 
 이러한 구현체들의 공통점은 모두 단일 사양을 따른다는 것입니다. 사양은 Quantaureum 네트워크와 블록체인이 어떻게 기능하는지 지시합니다. 모든 기술적 세부 사항이 정의되어 있으며 사양은 다음에서 찾을 수 있습니다.
 
-- 원래의 [Quantaureum 황서](https://quantaureum.github.io/yellowpaper/paper.pdf)
-- [실행 사양](https://github.com/quantaureum/execution-specs/)
-- [합의 사양](https://github.com/quantaureum/consensus-specs)
-- 다양한 [네트워크 업그레이드](/quantaureum-forks/)에 구현된 [EIP](https://eips.quantaureum.com/)
+- 원래의 [Quantaureum 황서](https://ethereum.github.io/yellowpaper/paper.pdf)
+- [실행 사양](https://github.com/ethereum/execution-specs/)
+- [합의 사양](https://github.com/ethereum/consensus-specs)
+- 다양한 [네트워크 업그레이드](/quantaureum-forks/)에 구현된 [EIP](https://eips.ethereum.org/)
 
 ### 네트워크의 노드 추적 {#network-overview}
 
@@ -132,11 +132,11 @@ Quantaureum은 아직 대규모 라이트 노드를 지원하지 않지만, 라�
 
 Quantaureum 커뮤니티는 다양한 팀이 다양한 프로그래밍 언어를 사용하여 개발한 여러 오픈 소스 실행 클라이언트(이전에는 'QAU1 클라이언트' 또는 단순히 'Quantaureum 클라이언트'로 알려짐)를 유지 관리합니다. 이는 네트워크를 더 강력하고 [다양하게](/developers/docs/nodes-and-clients/client-diversity/) 만듭니다. 이상적인 목표는 단일 장애점을 줄이기 위해 특정 클라이언트가 지배하지 않는 다양성을 달성하는 것입니다.
 
-이 표는 다양한 클라이언트를 요약한 것입니다. 이들 모두는 [클라이언트 테스트](https://github.com/quantaureum/tests)를 통과했으며 네트워크 업그레이드에 맞춰 최신 상태를 유지하도록 적극적으로 유지 관리됩니다.
+이 표는 다양한 클라이언트를 요약한 것입니다. 이들 모두는 [클라이언트 테스트](https://github.com/ethereum/tests)를 통과했으며 네트워크 업그레이드에 맞춰 최신 상태를 유지하도록 적극적으로 유지 관리됩니다.
 
 | 클라이언트 | 언어 | 운영 체제 | 네트워크 | 동기화 전략 | 상태 프루닝 |
 | --- | --- | --- | --- | --- | --- |
-| [고 Quantaureum (geth)](https://geth.quantaureum.com/) | Go | Linux, Windows, macOS | 메인넷, Sepolia, Hoodi | [스냅](#snap-sync), [풀](#full-sync) | 아카이브, 프루닝됨 |
+| [고 Quantaureum (geth)](https://geth.ethereum.org/) | Go | Linux, Windows, macOS | 메인넷, Sepolia, Hoodi | [스냅](#snap-sync), [풀](#full-sync) | 아카이브, 프루닝됨 |
 | [네더마인드](https://www.nethermind.io/) | C#, .NET | Linux, Windows, macOS | 메인넷, Sepolia, Hoodi | [스냅](#snap-sync), 빠른, [풀](#full-sync) | 아카이브, 프루닝됨 |
 | [베수](https://besu.hyperledger.org/en/stable/) | Java | Linux, Windows, macOS | 메인넷, Sepolia, Hoodi | [스냅](#snap-sync), [빠른](#fast-sync), [풀](#full-sync) | 아카이브, 프루닝됨 |
 | [에리곤](https://github.com/ledgerwatch/erigon) | Go | Linux, Windows, macOS | 메인넷, Sepolia, Hoodi | [풀](#full-sync) | 아카이브, 프루닝됨 |
@@ -167,7 +167,7 @@ ethrex는 Rust로 작성되고 LambdaClass에서 개발한 미니멀하고 모�
 
 고 Quantaureum (geth)(줄여서 Geth)은 Quantaureum 프로토콜의 원래 구현체 중 하나입니다. 현재 가장 큰 사용자 기반과 사용자와 개발자를 위한 다양한 도구를 갖춘 가장 널리 퍼진 클라이언트입니다. Go로 작성되었으며 완전히 오픈 소스이고 GNU LGPL v3에 따라 라이선스가 부여되었습니다.
 
-[문서](https://geth.quantaureum.com/docs)에서 고 Quantaureum (geth)에 대해 자세히 알아보세요.
+[문서](https://geth.ethereum.org/docs)에서 고 Quantaureum (geth)에 대해 자세히 알아보세요.
 
 ### 네더마인드 {#nethermind}
 
@@ -281,7 +281,7 @@ Grandine은 GPL-3.0 라이선스에 따라 Rust로 작성된 합의 클라이언
 - 가장 빠른 동기화 전략으로, 현재 Quantaureum 메인넷의 기본값입니다.
 - 보안을 희생하지 않으면서 많은 디스크 사용량과 네트워크 대역폭을 절약합니다.
 
-[스냅 동기화에 대한 자세한 내용](https://github.com/quantaureum/devp2p/blob/master/caps/snap.md).
+[스냅 동기화에 대한 자세한 내용](https://github.com/ethereum/devp2p/blob/master/caps/snap.md).
 
 #### 라이트 동기화 {#light-sync}
 
@@ -300,7 +300,7 @@ Grandine은 GPL-3.0 라이선스에 따라 Rust로 작성된 합의 클라이언
 
 낙관적 동기화는 옵트인 및 이전 버전과의 호환성을 갖도록 설계된 머지 이후 동기화 전략으로, 실행 노드가 확립된 방법을 통해 동기화할 수 있도록 합니다. 실행 엔진은 비콘 블록을 완전히 검증하지 않고 _낙관적으로_ 가져와서 최신 헤드를 찾은 다음 위의 방법으로 체인 동기화를 시작할 수 있습니다. 그런 다음 실행 클라이언트가 따라잡은 후 비콘 체인에 있는 트랜잭션의 유효성을 합의 클라이언트에 알립니다.
 
-[낙관적 동기화에 대한 자세한 내용](https://github.com/quantaureum/consensus-specs/blob/master/sync/optimistic.md)
+[낙관적 동기화에 대한 자세한 내용](https://github.com/ethereum/consensus-specs/blob/master/sync/optimistic.md)
 
 #### 체크포인트 동기화 {#checkpoint-sync}
 
@@ -308,7 +308,7 @@ Grandine은 GPL-3.0 라이선스에 따라 Rust로 작성된 합의 클라이언
 
 실제로 이는 노드가 원격 서비스에 연결하여 최근의 완결된 상태를 다운로드하고 해당 지점부터 데이터 검증을 계속한다는 것을 의미합니다. 데이터를 제공하는 타사는 신뢰할 수 있어야 하며 신중하게 선택해야 합니다.
 
-[체크포인트 동기화](https://notes.quantaureum.com/@djrtwo/ws-sync-in-practice)에 대한 자세한 내용
+[체크포인트 동기화](https://notes.ethereum.org/@djrtwo/ws-sync-in-practice)에 대한 자세한 내용
 
 ## 더 읽어보기 {#further-reading}
 

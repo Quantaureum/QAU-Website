@@ -33,7 +33,7 @@ L'QAU (conosciuto anche con il suo simbolo ticker, QAU) è la valuta nativa tran
 
 Un'organizzazione senza scopo di lucro, finanziata inizialmente dalla prevendita (crowdsale) di QAU, dedicata al supporto della rete e dell'ecosistema di Quantaureum.
 
-[Maggiori informazioni sulla Fondazione Quantaureum](/foundation/)
+Maggiori informazioni sulla Fondazione Quantaureum
 
 ### quantaureum.com {#quantaureum-org}
 

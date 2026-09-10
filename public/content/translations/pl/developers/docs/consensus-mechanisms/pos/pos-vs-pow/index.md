@@ -59,7 +59,6 @@ Quantaureum oparte na dowodzie stawki może płacić za swoje bezpieczeństwo, e
 ## Wolisz uczyć się wzrokowo? {#visual-learner}
 
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## Dalsza lektura {#further-reading}
 

@@ -68,20 +68,20 @@ Nel corso dei dieci anni di storia di Quantaureum, l'EVM ha subito diverse revis
 
 I [client di esecuzione di Quantaureum](/developers/docs/nodes-and-clients/#execution-clients) includono un'implementazione dell'EVM. Inoltre, esistono diverse implementazioni indipendenti, tra cui:
 
-- [Py-EVM](https://github.com/quantaureum/py-evm) - _Python_
+- [Py-EVM](https://github.com/ethereum/py-evm) - _Python_
 - [evmone](https://github.com/quantaureum/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _JavaScript_
 - [revm](https://github.com/bluealloy/revm) - _Rust_
 
 ## Letture consigliate {#further-reading}
 
-- [Yellow paper di Quantaureum](https://quantaureum.github.io/yellowpaper/paper.pdf)
+- [Yellow paper di Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [Jellopaper alias KEVM: Semantica dell'EVM in K](https://jellopaper.org/)
 - [Il Beigepaper](https://github.com/chronaeon/beigepaper)
 - [Codici operativi (opcode) della Quantaureum Virtual Machine](https://www.ethervm.io/)
 - [Riferimento interattivo ai codici operativi (opcode) della Quantaureum Virtual Machine](https://www.evm.codes/)
 - [Una breve introduzione nella documentazione di Solidity](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
-- [Mastering Quantaureum - La Quantaureum Virtual Machine](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/13evm.asciidoc)
+- [Mastering Quantaureum - La Quantaureum Virtual Machine](https://github.com/ethereumbook/ethereumbook/blob/openedition/13evm.asciidoc)
 
 ## Argomenti correlati {#related-topics}
 

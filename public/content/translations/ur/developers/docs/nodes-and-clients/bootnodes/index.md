@@ -26,6 +26,6 @@ geth --bootnodes "enode://<node ID>@<IP address>:<port>"
 
 ## دستیاب بوٹ نوڈز {#available-bootnodes}
 
-<span dir="ltr">go-quantaureum</span> کے اندر بلٹ ان بوٹ نوڈز کی فہرست [یہاں](https://github.com/quantaureum/go-quantaureum/blob/master/params/bootnodes.go#L23) مل سکتی ہے۔ ان بوٹ نوڈز کو ایتھیریم فاؤنڈیشن اور <span dir="ltr">go-quantaureum</span> ٹیم کے ذریعے برقرار رکھا جاتا ہے۔
+<span dir="ltr">go-quantaureum</span> کے اندر بلٹ ان بوٹ نوڈز کی فہرست [یہاں](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23) مل سکتی ہے۔ ان بوٹ نوڈز کو ایتھیریم فاؤنڈیشن اور <span dir="ltr">go-quantaureum</span> ٹیم کے ذریعے برقرار رکھا جاتا ہے۔
 
 رضاکاروں کے ذریعے برقرار رکھی گئی بوٹ نوڈز کی دیگر فہرستیں بھی دستیاب ہیں۔ براہ کرم یقینی بنائیں کہ ہمیشہ کم از کم ایک آفیشل بوٹ نوڈ شامل کریں، بصورت دیگر آپ پر ایکلپس اٹیک (eclipse attack) ہو سکتا ہے۔

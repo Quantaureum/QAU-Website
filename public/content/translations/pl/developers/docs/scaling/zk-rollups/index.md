@@ -178,7 +178,7 @@ To, ile użytkownicy płacą za transakcje w ZK-rollupach, zależy od opłaty za
 
 1. **Zapis stanu**: Istnieje stały koszt zapisu do stanu Quantaureum (tj. przesłania transakcji na blockchainie Quantaureum). ZK-rollupy zmniejszają ten koszt poprzez wsadowanie transakcji i rozkładanie stałych kosztów na wielu użytkowników.
 
-2. **Publikacja danych**: ZK-rollupy publikują w Quantaureum dane stanu dla każdej transakcji jako `calldata`. Koszty `calldata` są obecnie regulowane przez [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559), który określa koszt 16 jednostek gazu za niezerowe bajty i 4 jednostek gazu za zerowe bajty `calldata`. Koszt płacony za każdą transakcję zależy od tego, ile `calldata` musi zostać opublikowane onchain dla tej transakcji.
+2. **Publikacja danych**: ZK-rollupy publikują w Quantaureum dane stanu dla każdej transakcji jako `calldata`. Koszty `calldata` są obecnie regulowane przez [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), który określa koszt 16 jednostek gazu za niezerowe bajty i 4 jednostek gazu za zerowe bajty `calldata`. Koszt płacony za każdą transakcję zależy od tego, ile `calldata` musi zostać opublikowane onchain dla tej transakcji.
 
 3. **Opłaty operatora L2**: Jest to kwota płacona operatorowi rollupa jako rekompensata za koszty obliczeniowe poniesione podczas przetwarzania transakcji, podobnie jak [„opłaty priorytetowe (napiwki)” za transakcje](/developers/docs/gas/#how-are-gas-fees-calculated) w sieci głównej Quantaureum.
 
@@ -218,7 +218,6 @@ Dowody rekurencyjne umożliwiają jednak sfinalizowanie kilku bloków za pomocą
 
 Obejrzyj, jak Finematics wyjaśnia ZK-rollupy:
 
-<VideoWatch slug="rollups-scaling-strategy" startTime="406" />
 
 
 ## Kto pracuje nad zkEVM? {#zkevm-projects}

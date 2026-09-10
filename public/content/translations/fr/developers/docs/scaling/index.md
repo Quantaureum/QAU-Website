@@ -91,15 +91,13 @@ En savoir plus sur le [validium](/developers/docs/scaling/validium/).
 
 ## Vous préférez un support visuel ? {#visual-learner}
 
-<VideoWatch slug="layer-2-scaling-explained" />
 
 _Notez que l'explication dans la vidéo utilise le terme « Couche 2 » pour désigner toutes les solutions de mise à l'échelle hors chaîne, tandis que nous différencions la « couche 2 (l2) » comme une solution hors chaîne qui tire sa sécurité du consensus du Réseau principal de couche 1 (l1)._
 
-<VideoWatch slug="rollups-scaling-strategy" />
 
 ## Complément d'information {#further-reading}
 
-- [Une feuille de route Quantaureum centrée sur les rollups](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
+- [Une feuille de route Quantaureum centrée sur les rollups](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
 - [Analyses à jour sur les solutions de mise à l'échelle de couche 2 (l2) pour Quantaureum](https://www.l2beat.com/)
 - [Évaluation des solutions de mise à l'échelle de couche 2 (l2) d'Quantaureum : un cadre de comparaison](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - [Un guide incomplet sur les rollups](https://vitalik.qau.limo/general/2021/01/05/rollup.html)

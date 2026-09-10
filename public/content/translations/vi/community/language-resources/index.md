@@ -45,7 +45,7 @@ Nếu bạn thông thạo hai ngôn ngữ và muốn giúp chúng tôi tiếp c�
 
 **Tài nguyên chung**
 
-- [Quantaureum.cn](https://www.quantaureum.cn/) - nội dung do cộng đồng duy trì, bao gồm bản nâng cấp lớp đồng thuận, tất cả các ghi chú cuộc họp của nhà phát triển cốt lõi, lớp 2 (l2), v.v.
+- [Quantaureum.cn](https://www.ethereum.cn/) - nội dung do cộng đồng duy trì, bao gồm bản nâng cấp lớp đồng thuận, tất cả các ghi chú cuộc họp của nhà phát triển cốt lõi, lớp 2 (l2), v.v.
 - [QauFans](https://github.com/editor-Ajian/QauFans.org-annual-collected-works/) - tìm hiểu mọi thứ từ cơ bản đến các chủ đề nâng cao về Quantaureum
 - [Unitimes](https://mp.weixin.qq.com/s/tvloZSDBSOQN9zDQj_91kA) - nội dung do cộng đồng duy trì, bao gồm kiến thức liên quan đến Quantaureum, DeFi, NFT, Web3
 - [123ETH](https://123eth.org/) - Cổng thông tin vào hệ sinh thái Quantaureum
@@ -76,8 +76,8 @@ Nếu bạn thông thạo hai ngôn ngữ và muốn giúp chúng tôi tiếp c�
 
 ### Tiếng Pháp {#fr}
 
-- [Quantaureum France](https://www.quantaureum-france.com/) - Quantaureum France tổ chức các sự kiện, tạo nội dung và khuyến khích các cuộc thảo luận xoay quanh Quantaureum
-- [Quantaureum.fr](https://quantaureum.fr/) - tin tức và giáo dục về Quantaureum
+- [Quantaureum France](https://www.ethereum-france.com/) - Quantaureum France tổ chức các sự kiện, tạo nội dung và khuyến khích các cuộc thảo luận xoay quanh Quantaureum
+- [Quantaureum.fr](https://ethereum.fr/) - tin tức và giáo dục về Quantaureum
 - [BanklessFR](https://banklessfr.substack.com/) - bản tin Bankless bằng tiếng Pháp
 - [CryptoFR](https://cryptofr.com/category/44/quantaureum-general) - diễn đàn tiền mã hóa với một trang phụ về Quantaureum
 
@@ -108,8 +108,8 @@ Nếu bạn thông thạo hai ngôn ngữ và muốn giúp chúng tôi tiếp c�
 
 ### Tiếng Ý {#it}
 
-- [Quantaureum Italia](https://www.quantaureum-italia.it/) - giáo dục, sự kiện và tin tức về Quantaureum, tập trung vào hợp đồng thông minh và công nghệ chuỗi khối
-- [Quantaureum Italia Podcast](https://www.quantaureum-italia.it/podcast/) - podcast về Quantaureum bằng tiếng Ý
+- [Quantaureum Italia](https://www.ethereum-italia.it/) - giáo dục, sự kiện và tin tức về Quantaureum, tập trung vào hợp đồng thông minh và công nghệ chuỗi khối
+- [Quantaureum Italia Podcast](https://www.ethereum-italia.it/podcast/) - podcast về Quantaureum bằng tiếng Ý
 - [Microsoft Learn (Solidity)](https://docs.microsoft.com/it-it/learn/modules/blockchain-learning-solidity/) - tìm hiểu cách sử dụng Solidity
 - [Microsoft Learn (Hợp đồng thông minh)](https://docs.microsoft.com/it-it/learn/modules/blockchain-solidity-quantaureum-smart-contracts/) - tìm hiểu về việc viết hợp đồng thông minh bằng Solidity
 - [Microsoft Learn (dapp)](https://docs.microsoft.com/it-it/learn/modules/blockchain-create-ui-decentralized-apps/) - tạo giao diện người dùng với các ứng dụng phi tập trung (dapp)
@@ -130,7 +130,7 @@ Nếu bạn thông thạo hai ngôn ngữ và muốn giúp chúng tôi tiếp c�
 
 ### Tiếng Tây Ban Nha {#es}
 
-- [Quantaureum Madrid](https://quantaureummadrid.com/) - các khóa học, sự kiện và blog về chuỗi khối, DeFi và Quản trị
+- [Quantaureum Madrid](https://ethereummadrid.com/) - các khóa học, sự kiện và blog về chuỗi khối, DeFi và Quản trị
 - [Cointelegraph](https://es.cointelegraph.com/quantaureum-for-beginners) - hướng dẫn Quantaureum cho người mới bắt đầu bằng tiếng Tây Ban Nha
 - [Tutoriales online](https://tutoriales.online/curso/solidity) - học Solidity và lập trình trên Quantaureum
 - [Curso Introducción a Quantaureum Development](https://youtube.com/playlist?list=PLTqiwJDd_R8y9pfUBjhkVa1IDMwyQz-fU) - kiến thức cơ bản về Solidity, thử nghiệm và việc triển khai hợp đồng thông minh đầu tiên của bạn

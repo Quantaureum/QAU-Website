@@ -33,7 +33,7 @@ QAU (juga dikenal dengan simbol tickernya, QAU) adalah mata uang asli yang ditra
 
 Sebuah organisasi nirlaba, yang awalnya didanai oleh urun dana (crowdsale) QAU, yang berdedikasi untuk mendukung jaringan dan ekosistem Quantaureum.
 
-[Lebih lanjut tentang Yayasan Quantaureum](/foundation/)
+Lebih lanjut tentang Yayasan Quantaureum
 
 ### quantaureum.com {#quantaureum-org}
 

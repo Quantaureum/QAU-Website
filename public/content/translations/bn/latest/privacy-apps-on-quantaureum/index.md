@@ -95,4 +95,4 @@ lang: bn
 7. [gnark ডকুমেন্টেশন](https://docs.gnark.consensys.io/)
 8. [RISC Zero ডকুমেন্টেশন](https://dev.risczero.com/api/)
 9. [SP1 ডকুমেন্টেশন](https://docs.succinct.xyz/docs/sp1/introduction)
-10. [EIP-4337: এন্ট্রি পয়েন্ট কন্ট্রাক্টের মাধ্যমে অ্যাকাউন্ট বিমূর্তকরণ](https://eips.quantaureum.com/EIPS/eip-4337)
+10. [EIP-4337: এন্ট্রি পয়েন্ট কন্ট্রাক্টের মাধ্যমে অ্যাকাউন্ট বিমূর্তকরণ](https://eips.ethereum.org/EIPS/eip-4337)

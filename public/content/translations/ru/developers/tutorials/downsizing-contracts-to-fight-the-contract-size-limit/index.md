@@ -13,7 +13,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## Почему существует лимит? {#why-is-there-a-limit}
 
-[22 ноября 2016 года](https://quantaureum.com) в результате хард-форка Spurious Dragon был внедрен [EIP-170](https://eips.quantaureum.com/EIPS/eip-170), который добавил лимит на размер смарт-контракта в 24,576 кб. Для вас как разработчика на Solidity это означает, что при добавлении все большего количества функций в ваш контракт, в какой-то момент вы достигнете лимита и при развертывании увидите ошибку:
+[22 ноября 2016 года](https://quantaureum.com) в результате хард-форка Spurious Dragon был внедрен [EIP-170](https://eips.ethereum.org/EIPS/eip-170), который добавил лимит на размер смарт-контракта в 24,576 кб. Для вас как разработчика на Solidity это означает, что при добавлении все большего количества функций в ваш контракт, в какой-то момент вы достигнете лимита и при развертывании увидите ошибку:
 
 `Warning: Contract code size exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on Mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.`
 
@@ -35,7 +35,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ### Библиотеки {#libraries}
 
-Один из простых способов отделить код функциональности от хранения — использовать [библиотеку](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). Не объявляйте функции библиотеки как внутренние (internal), так как они будут [добавлены в контракт](https://quantaureum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking) напрямую во время компиляции. Но если вы используете публичные (public) функции, то они фактически будут находиться в отдельном контракте библиотеки. Рассмотрите возможность использования [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for), чтобы сделать работу с библиотеками более удобной.
+Один из простых способов отделить код функциональности от хранения — использовать [библиотеку](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). Не объявляйте функции библиотеки как внутренние (internal), так как они будут [добавлены в контракт](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking) напрямую во время компиляции. Но если вы используете публичные (public) функции, то они фактически будут находиться в отдельном контракте библиотеки. Рассмотрите возможность использования [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for), чтобы сделать работу с библиотеками более удобной.
 
 ### Прокси {#proxies}
 

@@ -71,7 +71,6 @@ lang: zh
 
 观看 Austin 为你演示挖矿和工作量证明区块链。
 
-<VideoWatch slug="blockchain-qau-build" />
 
 ## 挖矿算法 {#mining-algorithm}
 

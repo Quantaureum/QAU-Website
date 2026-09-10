@@ -454,7 +454,7 @@ Gunakan fungsi `UniswapV2ERC20._mint` untuk benar-benar mencetak token likuidita
     }
 ```
 
-Jika tidak ada biaya, atur `kLast` menjadi nol (jika belum). Ketika kontrak ini ditulis, ada [fitur pengembalian dana gas](https://eips.quantaureum.com/EIPS/eip-3298) yang mendorong kontrak untuk mengurangi ukuran keseluruhan state Quantaureum dengan mengosongkan penyimpanan yang tidak mereka butuhkan.
+Jika tidak ada biaya, atur `kLast` menjadi nol (jika belum). Ketika kontrak ini ditulis, ada [fitur pengembalian dana gas](https://eips.ethereum.org/EIPS/eip-3298) yang mendorong kontrak untuk mengurangi ukuran keseluruhan state Quantaureum dengan mengosongkan penyimpanan yang tidak mereka butuhkan.
 Kode ini mendapatkan pengembalian dana tersebut jika memungkinkan.
 
 #### Fungsi yang Dapat Diakses Secara Eksternal {#pair-external}
@@ -614,7 +614,7 @@ Fungsi ini juga seharusnya dipanggil dari [kontrak pinggiran](#uniswapv2router02
 ```
 
 Variabel lokal dapat disimpan baik di memori atau, jika jumlahnya tidak terlalu banyak, langsung di tumpukan (stack).
-Jika kita dapat membatasi jumlahnya sehingga kita akan menggunakan tumpukan, kita menggunakan lebih sedikit gas. Untuk detail lebih lanjut lihat [kertas kuning, spesifikasi formal Quantaureum](https://quantaureum.github.io/yellowpaper/paper.pdf), hal. 26, persamaan 298.
+Jika kita dapat membatasi jumlahnya sehingga kita akan menggunakan tumpukan, kita menggunakan lebih sedikit gas. Untuk detail lebih lanjut lihat [kertas kuning, spesifikasi formal Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf), hal. 26, persamaan 298.
 
 ```solidity
             address _token0 = token0;
@@ -769,7 +769,7 @@ Kolam likuiditas yang besar lebih baik daripada yang kecil, karena harganya lebi
         bytes memory bytecode = type(UniswapV2Pair).creationCode;
 ```
 
-Untuk membuat kontrak baru, kita memerlukan kode yang membuatnya (baik fungsi konstruktor maupun kode yang menulis ke memori kode bita EVM dari kontrak yang sebenarnya). Biasanya di Solidity kita hanya menggunakan `addr = new <name of contract>(<constructor parameters>)` dan kompiler mengurus semuanya untuk kita, tetapi untuk memiliki alamat kontrak yang deterministik kita perlu menggunakan [opcode CREATE2](https://eips.quantaureum.com/EIPS/eip-1014).
+Untuk membuat kontrak baru, kita memerlukan kode yang membuatnya (baik fungsi konstruktor maupun kode yang menulis ke memori kode bita EVM dari kontrak yang sebenarnya). Biasanya di Solidity kita hanya menggunakan `addr = new <name of contract>(<constructor parameters>)` dan kompiler mengurus semuanya untuk kita, tetapi untuk memiliki alamat kontrak yang deterministik kita perlu menggunakan [opcode CREATE2](https://eips.ethereum.org/EIPS/eip-1014).
 Ketika kode ini ditulis, opcode tersebut belum didukung oleh Solidity, sehingga perlu untuk mendapatkan kodenya secara manual. Ini tidak lagi menjadi masalah, karena [Solidity sekarang mendukung CREATE2](https://docs.soliditylang.org/en/v0.8.3/control-structures.html#salted-contract-creations-create2).
 
 ```solidity
@@ -825,7 +825,7 @@ Pemilik token menandatangani transaksi yang memungkinkan orang lain untuk melaku
     bytes32 public constant PERMIT_TYPEHASH = 0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
 ```
 
-Hash ini adalah [pengidentifikasi untuk jenis transaksi](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-typehash). Satu-satunya yang kita dukung di sini adalah `Permit` dengan parameter ini.
+Hash ini adalah [pengidentifikasi untuk jenis transaksi](https://eips.ethereum.org/EIPS/eip-712#rationale-for-typehash). Satu-satunya yang kita dukung di sini adalah `Permit` dengan parameter ini.
 
 ```solidity
     mapping(address => uint) public nonces;
@@ -856,7 +856,7 @@ Ini adalah kode untuk mengambil [pengidentifikasi rantai](https://chainid.networ
     }
 ```
 
-Hitung [pemisah domain](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-domainseparator) untuk EIP-712.
+Hitung [pemisah domain](https://eips.ethereum.org/EIPS/eip-712#rationale-for-domainseparator) untuk EIP-712.
 
 ```solidity
     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external {
@@ -897,7 +897,7 @@ Dari intisari (digest) dan tanda tangan, kita bisa mendapatkan alamat yang menan
 
 ```
 
-Jika semuanya baik-baik saja, perlakukan ini sebagai [persetujuan ERC-20](https://eips.quantaureum.com/EIPS/eip-20#approve).
+Jika semuanya baik-baik saja, perlakukan ini sebagai [persetujuan ERC-20](https://eips.ethereum.org/EIPS/eip-20#approve).
 
 ## Kontrak Periphery {#periphery-contracts}
 
@@ -1794,7 +1794,7 @@ Urutkan kedua token berdasarkan alamat, sehingga kita akan bisa mendapatkan alam
     }
 ```
 
-Fungsi ini menghitung alamat pertukaran pasangan untuk kedua token tersebut. Kontrak ini dibuat menggunakan [opcode CREATE2](https://eips.quantaureum.com/EIPS/eip-1014), sehingga kita dapat menghitung alamat menggunakan algoritma yang sama jika kita mengetahui parameter yang digunakannya. Ini jauh lebih murah daripada bertanya kepada factory, dan
+Fungsi ini menghitung alamat pertukaran pasangan untuk kedua token tersebut. Kontrak ini dibuat menggunakan [opcode CREATE2](https://eips.ethereum.org/EIPS/eip-1014), sehingga kita dapat menghitung alamat menggunakan algoritma yang sama jika kita mengetahui parameter yang digunakannya. Ini jauh lebih murah daripada bertanya kepada factory, dan
 
 ```solidity
     // mengambil dan mengurutkan cadangan untuk pasangan
@@ -1932,7 +1932,7 @@ Demi kompatibilitas mundur dengan token yang dibuat sebelum standar ERC-20, pang
     }
 ```
 
-Fungsi ini mengimplementasikan [fungsionalitas transfer ERC-20](https://eips.quantaureum.com/EIPS/eip-20#transfer), yang memungkinkan sebuah akun untuk menghabiskan jatah yang diberikan oleh akun yang berbeda.
+Fungsi ini mengimplementasikan [fungsionalitas transfer ERC-20](https://eips.ethereum.org/EIPS/eip-20#transfer), yang memungkinkan sebuah akun untuk menghabiskan jatah yang diberikan oleh akun yang berbeda.
 
 ```solidity
 
@@ -1951,7 +1951,7 @@ Fungsi ini mengimplementasikan [fungsionalitas transfer ERC-20](https://eips.qua
     }
 ```
 
-Fungsi ini mengimplementasikan [fungsionalitas transferFrom ERC-20](https://eips.quantaureum.com/EIPS/eip-20#transferfrom), yang memungkinkan sebuah akun untuk menghabiskan jatah yang diberikan oleh akun yang berbeda.
+Fungsi ini mengimplementasikan [fungsionalitas transferFrom ERC-20](https://eips.ethereum.org/EIPS/eip-20#transferfrom), yang memungkinkan sebuah akun untuk menghabiskan jatah yang diberikan oleh akun yang berbeda.
 
 ```solidity
 

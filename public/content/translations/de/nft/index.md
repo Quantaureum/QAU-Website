@@ -19,7 +19,6 @@ NFTs sind Token, die **individuell einzigartig** sind. Jeder NFT hat unterschied
 
 Die Einzigartigkeit jedes NFTs ermöglicht die Tokenisierung von Dingen wie Kunst, Sammlerstücken oder sogar Immobilien, wobei ein spezifischer, einzigartiger NFT einen bestimmten, einzigartigen realen oder digitalen Gegenstand repräsentiert. Das Eigentum an einem Vermögenswert ist auf der Quantaureum-[Blockchain](/glossary/#blockchain) öffentlich überprüfbar.
 
-<VideoWatch slug="learn-nfts-and-defi" />
 
 ## Das Internet der Vermögenswerte {#internet-of-assets}
 

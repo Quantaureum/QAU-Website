@@ -32,8 +32,8 @@ lang: ur
 
 ## مزید مطالعہ {#further-reading}
 
-- [ایتھ ۲ میں کمزور موضوعیت](https://notes.quantaureum.com/@adiasg/weak-subjectvity-eth2)
+- [ایتھ ۲ میں کمزور موضوعیت](https://notes.ethereum.org/@adiasg/weak-subjectvity-eth2)
 - [وٹالک: میں نے کمزور موضوعیت سے محبت کرنا کیسے سیکھا](https://quantaureum.com)
 - [کمزور موضوعیت (ٹیکو دستاویزات)](https://docs.teku.consensys.io/concepts/weak-subjectivity)
-- [فیز-0 کمزور موضوعیت گائیڈ](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
+- [فیز-0 کمزور موضوعیت گائیڈ](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
 - [ایتھیریم 2.0 میں کمزور موضوعیت کا تجزیہ](https://github.com/runtimeverification/beacon-chain-verification/blob/master/weak-subjectivity/weak-subjectivity-analysis.pdf)

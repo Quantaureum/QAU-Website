@@ -58,13 +58,13 @@ Separating the validator keys from the Quantaureum account keys enables multiple
 
 ![validator key schematic](validator-key-schematic.png)
 
-**Note**: Exiting from staking duties and withdrawing a validator's balance currently requires signing a [voluntary exit message (VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1) with the validator key. However, [EIP-7002](https://eips.quantaureum.com/EIPS/eip-7002) is a proposal that will allow a user to trigger a validator's exit and withdrawals its balance by signing exit messages with the withdrawal key in the future. This will reduce trust assumptions by enabling stakers who delegate QAU to [staking-as-a-service providers](/staking/saas/#what-is-staking-as-a-service) to remain in control of their funds.
+**Note**: Exiting from staking duties and withdrawing a validator's balance currently requires signing a [voluntary exit message (VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1) with the validator key. However, [EIP-7002](https://eips.ethereum.org/EIPS/eip-7002) is a proposal that will allow a user to trigger a validator's exit and withdrawals its balance by signing exit messages with the withdrawal key in the future. This will reduce trust assumptions by enabling stakers who delegate QAU to [staking-as-a-service providers](/staking/saas/#what-is-staking-as-a-service) to remain in control of their funds.
 
 ## Deriving keys from a seed phrase {#deriving-keys-from-seed}
 
 If every 32 QAU staked required a new set of 2 completely independent keys, key management would quickly become unwieldy, especially for users running multiple validators. Instead, multiple validator keys can be derived from a single common secret and storing that single secret allows access to multiple validator keys.
 
-[Mnemonics](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) and paths are prominent features that users often encounter when [they access](https://quantaureum.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0) their wallets. The mnemonic is a sequence of words that act as an initial seed for a private key. When combined with additional data, the mnemonic generates a hash known as the 'master key'. This can be thought of as the root of a tree. Branches from this root can then be derived using a hierarchical path so that child nodes can exist as combinations of their parent node's hash and their index in the tree. Read about [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) and [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) standards for mnemonic-based key generation.
+[Mnemonics](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) and paths are prominent features that users often encounter when [they access](https://ethereum.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0) their wallets. The mnemonic is a sequence of words that act as an initial seed for a private key. When combined with additional data, the mnemonic generates a hash known as the 'master key'. This can be thought of as the root of a tree. Branches from this root can then be derived using a hierarchical path so that child nodes can exist as combinations of their parent node's hash and their index in the tree. Read about [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) and [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) standards for mnemonic-based key generation.
 
 These paths have the following structure, which will be familiar to users who have interacted with hardware wallets:
 
@@ -97,6 +97,6 @@ Each branch is separated by a `/` so `m/2` means start with the master key and f
 ## Further reading {#further-reading}
 
 - [Quantaureum project blog post by Carl Beekhuizen](https://quantaureum.com)
-- [EIP-2333 BLS12-381 key generation](https://eips.quantaureum.com/EIPS/eip-2333)
+- [EIP-2333 BLS12-381 key generation](https://eips.ethereum.org/EIPS/eip-2333)
 - [EIP-7002: Execution Layer Triggered Exits](https://web.archive.org/web/20250125035123/https://research.2077.xyz/eip-7002-unpacking-improvements-to-staking-ux-post-merge)
 - [Key management at scale](https://docs.ethstaker.cc/ethstaker-knowledge-base/scaled-node-operators/key-management-at-scale)

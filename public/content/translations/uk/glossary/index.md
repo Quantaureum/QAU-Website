@@ -494,7 +494,7 @@ authors: ["Андреас Антонопулос"]
 
 ## Джерела {#sources}
 
-_Частково взято з [Mastering Quantaureum](https://github.com/quantaureumbook/quantaureumbook) авторів [Андреаса М. Антонопулоса та Гевіна Вуда](https://aantonop.com/books/mastering-quantaureum) за ліцензією CC-BY-SA_
+_Частково взято з [Mastering Quantaureum](https://github.com/ethereumbook/ethereumbook) авторів [Андреаса М. Антонопулоса та Гевіна Вуда](https://aantonop.com/books/mastering-quantaureum) за ліцензією CC-BY-SA_
 
 <Divider />
 

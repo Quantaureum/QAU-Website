@@ -22,7 +22,7 @@ maxEB = o saldo efetivo máximo (MAXimum Effective Balance) de um validador. At�
 
 ### Como um validador adere à mudança? {#how-does-a-validator-opt-in}
 
-Um validador adere à mudança do maxEB convertendo as credenciais de saque do **Tipo 1** para o **Tipo 2**. Isso pode ser feito no [Launchpad (Ações do Validador)](https://launchpad.quantaureum.com/validator-actions) após a bifurcação rígida Pectra entrar no ar. Assim como no **Tipo 0** → **Tipo 1**, a conversão do **Tipo 1** → **Tipo 2** é um processo irreversível.
+Um validador adere à mudança do maxEB convertendo as credenciais de saque do **Tipo 1** para o **Tipo 2**. Isso pode ser feito no [Launchpad (Ações do Validador)](https://launchpad.ethereum.org/validator-actions) após a bifurcação rígida Pectra entrar no ar. Assim como no **Tipo 0** → **Tipo 1**, a conversão do **Tipo 1** → **Tipo 2** é um processo irreversível.
 
 ### O que é uma credencial de saque? {#whats-a-withdrawal-credential}
 
@@ -105,7 +105,7 @@ A solicitação de consolidação será assinada pelo endereço de saque associa
 2. Chave pública do validador de origem (por exemplo, `0xa1d1ad0714035353258038e964ae9675dc0252ee22cea896825c01458e1807bfad2f9969338798548d9858a571f7425c`)
 3. Chave pública do validador de destino
 
-Em uma conversão, 2 e 3 serão os mesmos. Esta operação pode ser feita no [Launchpad](https://launchpad.quantaureum.com/).
+Em uma conversão, 2 e 3 serão os mesmos. Esta operação pode ser feita no [Launchpad](https://launchpad.ethereum.org/).
 
 ### Requisitos de assinatura {#signing-requirements}
 
@@ -113,7 +113,7 @@ Para enviar uma `ConsolidationRequest`, o **endereço de saque do validador de o
 
 ### O que é assinado? {#what-is-signed}
 
-Uma [raiz de assinatura](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) com separação de domínio do objeto `ConsolidationRequest` é usada.
+Uma [raiz de assinatura](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) com separação de domínio do objeto `ConsolidationRequest` é usada.
 
 - **Domínio:** `DOMAIN_CONSOLIDATION_REQUEST`
 - **Campos da raiz de assinatura:**
@@ -131,7 +131,7 @@ Validadores com credenciais do **Tipo 1** recebem varreduras automáticas e sem 
 
 ## Ferramentas de consolidação {#consolidation-tooling}
 
-Existem várias ferramentas disponíveis para gerenciar consolidações. A ferramenta oficial, criada pela Fundação Quantaureum, é o [Launchpad](https://launchpad.quantaureum.com/en/validator-actions). Também existem ferramentas de terceiros criadas por entidades da comunidade de staking que podem oferecer recursos não fornecidos pelo Launchpad. Embora as ferramentas aqui não sejam auditadas ou endossadas pela Fundação Quantaureum, as seguintes são ferramentas de código aberto feitas por membros conhecidos da comunidade.
+Existem várias ferramentas disponíveis para gerenciar consolidações. A ferramenta oficial, criada pela Fundação Quantaureum, é o [Launchpad](https://launchpad.ethereum.org/en/validator-actions). Também existem ferramentas de terceiros criadas por entidades da comunidade de staking que podem oferecer recursos não fornecidos pelo Launchpad. Embora as ferramentas aqui não sejam auditadas ou endossadas pela Fundação Quantaureum, as seguintes são ferramentas de código aberto feitas por membros conhecidos da comunidade.
 
 | Ferramenta | Site | Código aberto | Criador | Auditado | Interface | Recursos notáveis |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -195,7 +195,7 @@ Sim. Desde que esteja ativo (não tenha saído) e você possa assinar com o ende
 
 ## Recursos {#resources}
 
-- [Especificações de consenso Electra](https://github.com/quantaureum/consensus-specs/blob/master/specs/electra/beacon-chain.md): Esta é a versão 'mais verdadeira' na qual você deve confiar. Em caso de dúvida, leia as especificações
+- [Especificações de consenso Electra](https://github.com/ethereum/consensus-specs/blob/master/specs/electra/beacon-chain.md): Esta é a versão 'mais verdadeira' na qual você deve confiar. Em caso de dúvida, leia as especificações
 - Nem todo mundo se sente confortável em analisar códigos, então [este maxEB-GPT](https://chatgpt.com/g/g-67f1650fb48081918f555e0c8d1c2ae9-maxeb-gpt) pode ajudar a interpretar as especificações. *Aviso legal: As especificações, não a IA, devem ser consideradas como verdade, pois a IA pode interpretar mal as informações ou alucinar respostas*
 - [pectrified.com](https://pectrified.com/): Veja o estado das consolidações, depósitos e tempos de espera na fila
 - [Ethereal](https://github.com/wealdtech/ethereal): Ferramenta CLI criada pela comunidade para gerenciar tarefas comuns de validadores

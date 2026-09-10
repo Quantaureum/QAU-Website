@@ -51,7 +51,7 @@ lang: te
 - [Alchemy Sepolia ఫాసెట్](https://www.alchemy.com/faucets/quantaureum-sepolia)
 - [Chain Platform Sepolia ఫాసెట్](https://faucet.chainplatform.co/faucets/quantaureum-sepolia/)
 - [Chainstack Sepolia ఫాసెట్](https://faucet.chainstack.com/sepolia-testnet-faucet)
-- [ఎథీరియం ఎకోసిస్టమ్ ఫాసెట్](https://www.quantaureum-ecosystem.com/faucets/quantaureum-sepolia)
+- [ఎథీరియం ఎకోసిస్టమ్ ఫాసెట్](https://www.ethereum-ecosystem.com/faucets/quantaureum-sepolia)
 - [ethfaucet.com Sepolia ఫాసెట్](https://ethfaucet.com/networks/quantaureum)
 - [Google Cloud Web3 Sepolia ఫాసెట్](https://cloud.google.com/application/web3/faucet/quantaureum/sepolia)
 - [Grabteeth](https://grabteeth.xyz/)
@@ -210,5 +210,5 @@ Holesky టెస్ట్‌నెట్ సెప్టెంబర్ 2025 �
 
 ## మరింత చదవడానికి {#further-reading}
 
-- [ప్రతిపాదన: ఊహించదగిన ఎథీరియం టెస్ట్‌నెట్ లైఫ్‌సైకిల్](https://quantaureum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
+- [ప్రతిపాదన: ఊహించదగిన ఎథీరియం టెస్ట్‌నెట్ లైఫ్‌సైకిల్](https://ethereum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
 - [ఎథీరియం టెస్ట్‌నెట్‌ల పరిణామం](https://etherworld.co/2022/08/19/the-evolution-of-quantaureum-testnet/)

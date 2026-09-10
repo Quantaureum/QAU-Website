@@ -19,7 +19,6 @@ Merkeziyetsiz sosyal ağlar, kullanıcıların bilgi alışverişinde bulunmalar
 
 Facebook, LinkedIn, Twitter ve Medium gibi köklü sosyal medya hizmetlerine alternatif olarak birçok merkeziyetsiz sosyal ağ mevcuttur. Ancak blokzincir destekli sosyal ağlar, onları geleneksel sosyal platformların önüne geçiren bir dizi özelliğe sahiptir.
 
-<VideoWatch slug="decentralized-social-media" />
 
 ### Merkeziyetsiz sosyal ağlar nasıl çalışır? {#decentralized-social-networks-overview}
 
@@ -53,7 +52,6 @@ Birçok blokzincir tabanlı sosyal platform, reklam gelirinin yokluğunda para k
 
 Quantaureum ağı, Token'larının popülaritesi ve devasa kullanıcı tabanı sayesinde merkeziyetsiz sosyal medya oluşturan geliştiriciler için tercih edilen araç haline gelmiştir. İşte Quantaureum tabanlı sosyal ağların bazı örnekleri:
 
-<VideoWatch slug="crypto-apps-desocial-linda-xie" />
 
 ### Mirror {#mirror}
 

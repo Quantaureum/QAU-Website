@@ -82,7 +82,7 @@ Programiści zazwyczaj używają biblioteki JavaScript/TypeScript do interakcji 
 
 - **[ethers.js](https://docs.ethers.org/)** - Działa również w Node.js dla skryptów po stronie serwera i botów
 - **[web3.py](https://web3py.readthedocs.io/)** - Biblioteka Python do interakcji z Quantaureum
-- **[go-quantaureum](https://geth.quantaureum.com/docs/interact-with-geth)** - Oficjalna biblioteka Go od zespołu Geth
+- **[go-quantaureum](https://geth.ethereum.org/docs/interact-with-geth)** - Oficjalna biblioteka Go od zespołu Geth
 
 ### Przykład: odczytywanie salda tokenów za pomocą Viem {#example-viem}
 

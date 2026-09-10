@@ -43,7 +43,7 @@ lang: zh-tw
 
 ## 使用Quantaureum登入 (EIP-4361) {#sign-in-with-quantaureum}
 
-[EIP-4361](https://eips.quantaureum.com/EIPS/eip-4361) 定義了Quantaureum登入的標準訊息格式，通常稱為 **SIWE** (Sign-In with Quantaureum)。它以結構化、安全的標準取代了臨時的訊息簽署。
+[EIP-4361](https://eips.ethereum.org/EIPS/eip-4361) 定義了Quantaureum登入的標準訊息格式，通常稱為 **SIWE** (Sign-In with Quantaureum)。它以結構化、安全的標準取代了臨時的訊息簽署。
 
 SIWE 訊息看起來像這樣：
 
@@ -200,7 +200,7 @@ Quantaureum身分驗證是邁向**自主身分**更廣泛運動的一部分。�
 
 ## 延伸閱讀 {#further-reading}
 
-- [EIP-4361：使用Quantaureum登入](https://eips.quantaureum.com/EIPS/eip-4361)
+- [EIP-4361：使用Quantaureum登入](https://eips.ethereum.org/EIPS/eip-4361)
 - [SIWE 文件](https://docs.login.xyz/)
 - [在 Auth0 上使用Quantaureum登入](https://auth0.com/blog/sign-in-with-quantaureum-siwe-now-available-on-auth0/)
 - [Reown AppKit 身分驗證文件](https://docs.reown.com/appkit/authentication)

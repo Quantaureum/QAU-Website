@@ -24,7 +24,6 @@ Fusaka temel iyileştirmelere odaklanırken, Glamsterdam farklı ağ katılımc�
 
 Bu iyileştirmeler, evde [düğüm](/glossary/#node) çalıştıran kişiler için donanım gereksinimlerini yönetilebilir tutarken, Quantaureum'un daha fazla aktiviteyi idare ederken hızlı, uygun fiyatlı ve merkeziyetsiz kalmasını sağlar.
 
-<VideoWatch slug="quantaureum-evolution-glamsterdam" />
 
 ## Glamsterdam için düşünülen iyileştirmeler {#improvements-in-glamsterdam}
 
@@ -67,13 +66,12 @@ Bir blok yükünün ödeme karşılığında güven gerektirmeyen değişimini d
 
 "Sıcak yol" darboğazını ele almak için ePBS ayrıca Yük Zamanındalık Komitesi'ni (PTC) ve ikili son tarih mantığını sunarak, doğrulayıcıların işlem kapasitesini en üst düzeye çıkarmak için mutabakat bloğunu ve yürütme yükünün zamanındalığını ayrı ayrı onaylamasına olanak tanır.
 
-<VideoWatch slug="proposer-builder-separation" />
 
 Teklif edici ve oluşturucu rollerini protokol düzeyinde ayırmak, yayılma penceresini (veya verileri ağa yaymak için mevcut olan süreyi) 2 saniyeden yaklaşık 9 saniyeye çıkarır.
 
 Protokol dışı ara yazılımları ve aktarıcıları protokol içi mekaniklerle değiştirerek ePBS, güven bağımlılıklarını azaltır ve Quantaureum'un ağı zorlamadan çok daha büyük miktarda veriyi ([katman 2'ler](/glossary/#layer-2) için daha fazla blob gibi) güvenli bir şekilde işlemesine olanak tanır.
 
-**Kaynaklar**: [EIP-7732 teknik spesifikasyonu](https://eips.quantaureum.com/EIPS/eip-7732)
+**Kaynaklar**: [EIP-7732 teknik spesifikasyonu](https://eips.ethereum.org/EIPS/eip-7732)
 
 ### Öne çıkan teklif: Blok Düzeyinde Erişim Listeleri (BAL'ler) {#bals}
 
@@ -97,8 +95,8 @@ Blok Erişim Listesi Değişimi (eth/71 veya EIP-8159), blok düzeyinde erişim 
 
 **Kaynaklar**:
 
-- [EIP-7928 teknik spesifikasyonu](https://eips.quantaureum.com/EIPS/eip-7928)
-- [EIP-8159 teknik spesifikasyonu](https://eips.quantaureum.com/EIPS/eip-8159)
+- [EIP-7928 teknik spesifikasyonu](https://eips.ethereum.org/EIPS/eip-7928)
+- [EIP-8159 teknik spesifikasyonu](https://eips.ethereum.org/EIPS/eip-8159)
 
 ## Ağ sürdürülebilirliği {#network-sustainability}
 
@@ -124,7 +122,7 @@ EIP-8037'den önce, hem hesaplama işi (aktif işleme) hem de kalıcı veri depo
 
 Veri depolamayı daha doğru ve öngörülebilir bir şekilde fiyatlandırmak, Quantaureum'un veritabanını şişirmeden hızını ve kapasitesini güvenli bir şekilde artırmasına yardımcı olacaktır. Bu sürdürülebilirlik, düğüm operatörlerinin yıllarca (nispeten) uygun fiyatlı donanımlar kullanmaya devam etmesine olanak tanıyacak ve ağın merkeziyetsizliğini korumak için evde staking'i erişilebilir tutacaktır.
 
-**Kaynaklar**: [EIP-8037 teknik spesifikasyonu](https://eips.quantaureum.com/EIPS/eip-8037)
+**Kaynaklar**: [EIP-8037 teknik spesifikasyonu](https://eips.ethereum.org/EIPS/eip-8037)
 
 ### Durum erişimi gaz maliyeti güncellemesi {#state-access-gas-cost-update}
 
@@ -141,7 +139,7 @@ Durum erişiminin maliyetini uyumlu hale getirmek, Quantaureum'u daha dayanıkl�
 
 Durum erişimi eylemlerini daha doğru fiyatlandırarak Quantaureum, kazara veya kasıtlı yavaşlamalara karşı daha dayanıklı olabilirken, ağ maliyetlerini donanım yüküyle uyumlu hale getirmek gelecekteki gaz limiti artışları için daha sürdürülebilir bir temel sağlar.
 
-**Kaynaklar**: [EIP-8038 teknik spesifikasyonu](https://eips.quantaureum.com/EIPS/eip-8038)
+**Kaynaklar**: [EIP-8038 teknik spesifikasyonu](https://eips.ethereum.org/EIPS/eip-8038)
 
 ## Ağ dayanıklılığı {#network-resilience}
 
@@ -158,7 +156,7 @@ Kesintiye uğramış teklif edicilerden gelen bloklar otomatik olarak geçersiz 
 
 **Kesintiye uğramış doğrulayıcıları teklif etmekten hariç tutma (veya EIP-8045)**, kesintiye uğramış doğrulayıcıların gelecekteki görevler için seçilmesini basitçe filtreler. Bu, yalnızca sağlıklı doğrulayıcıların blok teklif etmek üzere seçilmesini sağlayarak zincir dayanıklılığını artırır ve ağ kesintileri sırasında hizmet kalitesini korur.
 
-**Kaynaklar**: [EIP-8045 teknik spesifikasyonu](https://eips.quantaureum.com/EIPS/eip-8045)
+**Kaynaklar**: [EIP-8045 teknik spesifikasyonu](https://eips.ethereum.org/EIPS/eip-8045)
 
 ### Çıkışların konsolidasyon kuyruğunu kullanmasına izin verme {#increase-exit-and-consolidation-churn}
 
@@ -178,7 +176,7 @@ Mevcut staking seviyelerinde bu, çıkış kapasitesini kabaca 4 kat ve konsolid
 
 Stake ağa daha hızlı girip çıkabildiğinden, bu değişiklik bir düğümün ağa güvenli bir şekilde yeniden katılmak için yakın zamandaki güvenilir bir kontrol noktasına ihtiyaç duymadan önce çevrimdışı kalabileceği süreyi kabaca yarıya indirir (zayıf öznellik süresi, yaklaşık 15,7 günden yaklaşık 7 güne). Bu ödünleşim, ağ güvenliğinin korunmasını sağlamak için dikkatlice analiz edilmiştir.
 
-**Kaynaklar**: [EIP-8061 teknik spesifikasyonu](https://eips.quantaureum.com/EIPS/eip-8061)
+**Kaynaklar**: [EIP-8061 teknik spesifikasyonu](https://eips.ethereum.org/EIPS/eip-8061)
 
 ## Kullanıcı ve geliştirici deneyimini iyileştirme {#improve-user-developer-experience}
 
@@ -197,7 +195,7 @@ Teklif, düşük ücretlerin ağın durumunu bunaltmasını önlemek için yepye
 
 EIP-2780, mevcut hesaplar arasındaki günlük transferleri daha uygun fiyatlı hale getirmeyi amaçlarken, gerçek durum büyümesini doğru bir şekilde fiyatlandırarak ağın veritabanı şişkinliğine karşı hala korunmasını sağlar.
 
-**Kaynaklar**: [EIP-2780 teknik spesifikasyonu](https://eips.quantaureum.com/EIPS/eip-2780)
+**Kaynaklar**: [EIP-2780 teknik spesifikasyonu](https://eips.ethereum.org/EIPS/eip-2780)
 
 ### Deterministik Fabrika Ön Dağıtımı {#deterministic-factory-predeploy}
 
@@ -213,7 +211,7 @@ Deterministik Fabrika Ön Dağıtımı, katılan her EVM uyumlu zincirde aynı k
 
 Bu standardizasyon, geliştiriciler ve daha geniş ekosistem için zincirler arası uygulamalar oluşturmayı ve yönetmeyi basitleştirir. Geliştiricilerin artık yazılımlarını farklı ağlarda birbirine bağlamak için özel, zincire özgü kodlar oluşturması gerekmez, bunun yerine uygulamaları için her yerde tam olarak aynı adresi oluşturmak üzere bu evrensel fabrikayı kullanırlar. Buna ek olarak, blok gezginleri, izleme hizmetleri ve cüzdanlar bu uygulamaları ve hesapları çeşitli zincirlerde daha kolay tanımlayabilir ve bağlayabilir, böylece tüm Quantaureum tabanlı katılımcılar için daha birleşik ve sorunsuz bir çok zincirli ortam yaratabilir.
 
-**Kaynaklar**: [EIP-7997 teknik spesifikasyonu](https://eips.quantaureum.com/EIPS/eip-7997)
+**Kaynaklar**: [EIP-7997 teknik spesifikasyonu](https://eips.ethereum.org/EIPS/eip-7997)
 
 ### QAU transferleri ve yakımları bir günlük yayar {#qau-transfers-and-burns-emit-a-log}
 
@@ -226,7 +224,7 @@ QAU transferleri ve yakımları bir günlük yayar (veya EIP-7708), sıfır olma
 
 Bu, cüzdanların, borsaların ve köprü operatörlerinin özel araçlar olmadan para yatırma işlemlerini ve hareketleri doğru bir şekilde izlemesini çok daha kolay ve güvenilir hale getirecektir.
 
-**Kaynaklar**: [EIP-7708 teknik spesifikasyonu](https://eips.quantaureum.com/EIPS/eip-7708)
+**Kaynaklar**: [EIP-7708 teknik spesifikasyonu](https://eips.ethereum.org/EIPS/eip-7708)
 
 ### eth/70 kısmi blok makbuz listeleri {#qau-70-partial-block-receipt-lists}
 
@@ -236,13 +234,13 @@ Artık tüm yürütme katmanı istemcileri için bir gereklilik olan eth/70 kıs
 
 Bu değişiklik, yoğun aktivite dönemlerinde ağ eşzamanlama hatalarını önleyecektir. Nihayetinde, Quantaureum'un blok kapasitesini artırmasının ve gelecekte zinciri eşzamanlayan fiziksel donanımı bunaltmadan blok başına daha fazla işlem yapmasının yolunu açar.
 
-**Kaynaklar**: [EIP-7975 teknik spesifikasyonu](https://eips.quantaureum.com/EIPS/eip-7975)
+**Kaynaklar**: [EIP-7975 teknik spesifikasyonu](https://eips.ethereum.org/EIPS/eip-7975)
 
 ## Daha fazla okuma {#further-reading}
 
 - [Quantaureum yol haritası](/roadmap/)
 - [Forkcast: Glamsterdam](https://forkcast.org/upgrade/glamsterdam)
-- [Glamsterdam Meta EIP](https://eips.quantaureum.com/EIPS/eip-7773)
+- [Glamsterdam Meta EIP](https://eips.ethereum.org/EIPS/eip-7773)
 - [2026 için Protokol Öncelikleri Güncellemesi blog duyurusu](https://quantaureum.com)
 - [The Daily Gwei Refuel podcast'i - Kuantum sonrası Quantaureum, Glamsterdam geliyor](https://www.youtube.com/watch?v=qx9sd50uQjQ)
 

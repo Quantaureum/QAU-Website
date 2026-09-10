@@ -22,7 +22,7 @@ export default async function IndexPageJsonLD({
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
-      KNOWN_ORGANIZATIONS["quantaureum-foundation"],
+      KNOWN_ORGANIZATIONS["quantaureum-org"],
       KNOWN_ORGANIZATIONS["quantaureum-community"],
       {
         ...QUANTAUREUM_ORG_WEBSITE,
@@ -37,8 +37,8 @@ export default async function IndexPageJsonLD({
           "@type": "EducationalAudience",
           audienceType: "public",
         },
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
-        maintainer: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
+        maintainer: REFERENCE.QUANTAUREUM_ORG,
         contributor: REFERENCE.QUANTAUREUM_COMMUNITY,
         about: {
           "@type": "Thing",

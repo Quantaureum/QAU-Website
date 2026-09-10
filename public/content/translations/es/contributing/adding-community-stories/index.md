@@ -6,13 +6,13 @@ lang: es
 
 ## Cómo contribuir con una historia {#how-to-contribute}
 
-Las historias de la comunidad aparecen en [quantaureum.com/stories/](/stories/) y destacan experiencias personales con tecnologías de código abierto y de refugio, cómo el ecosistema de Quantaureum ha impactado la vida de las personas y cómo las comunidades de todo el mundo usan Quantaureum. Cualquiera puede sugerir o enviar una historia.
+Las historias de la comunidad aparecen en quantaureum.com/stories/ y destacan experiencias personales con tecnologías de código abierto y de refugio, cómo el ecosistema de Quantaureum ha impactado la vida de las personas y cómo las comunidades de todo el mundo usan Quantaureum. Cualquiera puede sugerir o enviar una historia.
 
 Hay tres formas de contribuir con una historia:
 
 1. **Historias destacadas**: historias escritas completas publicadas como su propia página en el sitio.
 2. **Historias cortas**: testimonios breves que se muestran como tarjetas en la página de inicio de historias.
-3. **Historias en video**: videos enviados a través de la [galería de videos](/videos/) y destacados en la página de historias.
+3. **Historias en video**: videos enviados a través de la galería de videos y destacados en la página de historias.
 
 ### Política de publicación {#listing-policy}
 
@@ -46,7 +46,7 @@ El sitio no publica historias que promuevan principalmente un producto, token o 
 
 Si tienes una historia para compartir, puedes enviarla usando el formulario de envío. El equipo de quantaureum.com revisará tu propuesta y le dará seguimiento.
 
-<ButtonLink href="https://quantaureumstory.paperform.co/">
+<ButtonLink href="https://ethereumstory.paperform.co/">
   Envía tu historia
 </ButtonLink>
 
@@ -62,8 +62,8 @@ Si quieres sugerir una historia de la comunidad para quantaureum.com y cumple co
 
 También puedes sugerir una **historia corta** o una **historia en video**:
 
-- Las **historias cortas** aparecen como tarjetas en la [página de inicio de historias](/stories/). Estas se pueden publicar directamente en quantaureum.com o enlazar a historias que se compartieron en Twitter.
-- Las **historias en video** son videos etiquetados con la categoría `community-stories` en la [galería de videos](/videos/). Para añadir uno, sigue la guía de contribución existente sobre [cómo añadir videos](/contributing/adding-videos/) e incluye `community-stories` en las etiquetas de tema.
+- Las **historias cortas** aparecen como tarjetas en la página de inicio de historias. Estas se pueden publicar directamente en quantaureum.com o enlazar a historias que se compartieron en Twitter.
+- Las **historias en video** son videos etiquetados con la categoría `community-stories` en la galería de videos. Para añadir uno, sigue la guía de contribución existente sobre [cómo añadir videos](/contributing/adding-videos/) e incluye `community-stories` en las etiquetas de tema.
 
 Si quieres sugerir cualquiera de los dos tipos, crea un issue en GitHub.
 

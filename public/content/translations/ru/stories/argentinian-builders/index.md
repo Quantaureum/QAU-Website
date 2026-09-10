@@ -104,7 +104,7 @@ _[Источник](https://medium.com/@AugurProject/serpent-compiler-vulnerabil
 
 ![Picture of Argentinian builders wearing Devcon BA 2020 t-shirts](./santiago9.jpeg)
 
-_[Источник](https://quantaureumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
+_[Источник](https://ethereumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
 
 Для меня и многих других разработчиков проведение Devconnect здесь — это сбывшаяся мечта.
 
@@ -131,4 +131,4 @@ _[Источник](https://www.forbes.com/sites/astanley/2025/09/30/devconnect-
 > 
 > Бесконечный сад — это воплощение духа Фонда Quantaureum как одного из садовников в огромной экосистеме: заботиться и выращивать, но не контролировать, и продолжать играть.
 
-_[Источник цитаты — Фонд Quantaureum](https://quantaureum.foundation/infinitegarden)._
+_[Источник цитаты — Фонд Quantaureum](https://ethereum.org/infinitegarden)._

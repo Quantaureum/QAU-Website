@@ -62,4 +62,4 @@ Quantaureum用戶端目前使用一種稱為帕特里夏默克爾樹 (Patricia M
 - [Dankrad Feist 在 Zero Knowledge podcast 上解釋沃克爾樹與無狀態性](https://zeroknowledge.fm/podcast/202/)
 - [維塔利克·布特林談論沃克爾樹](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
 - [Dankrad Feist 談論沃克爾樹](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
-- [沃克爾樹 EIP 文件](https://notes.quantaureum.com/@vbuterin/verkle_tree_eip#Illustration)
+- [沃克爾樹 EIP 文件](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)

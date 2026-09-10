@@ -137,8 +137,8 @@ DVT का लाभ उठाकर, प्रत्येक व्यक्�
 
 - [Quantaureum वितरित सत्यापनकर्ता तकनीक (dvt) - पूर्ण परिचय](https://www.cyfrin.io/blog/full-introduction-to-quantaureum-distributed-validator-technology-dvt) - Cyfrin
 - [DVT क्या है और यह Quantaureum पर स्टेकिंग को कैसे बेहतर बनाता है?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-quantaureum/) - Obol
-- [Quantaureum वितरित सत्यापक विनिर्देश (उच्च स्तर)](https://github.com/quantaureum/distributed-validator-specs)
-- [Quantaureum वितरित सत्यापक तकनीकी विनिर्देश](https://github.com/quantaureum/distributed-validator-specs/tree/dev/src/dvspec)
+- [Quantaureum वितरित सत्यापक विनिर्देश (उच्च स्तर)](https://github.com/ethereum/distributed-validator-specs)
+- [Quantaureum वितरित सत्यापक तकनीकी विनिर्देश](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
 - [Obol दस्तावेज़](https://docs.obol.org/)
 - [SSV Network दस्तावेज़](https://docs.ssv.network/)
 - [लिडो सिंपल DVT मॉड्यूल](https://operatorportal.lido.fi/modules/simple-dvt-module)

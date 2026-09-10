@@ -102,8 +102,8 @@ lang: hi
 
 **Brownie -** **_Python-आधारित विकास वातावरण और परीक्षण फ्रेमवर्क।_**
 
-- [दस्तावेज़ीकरण](https://qau-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/qau-brownie/brownie)
+- [दस्तावेज़ीकरण](https://eth-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/eth-brownie/brownie)
 - **Brownie का वर्तमान में रखरखाव नहीं किया जा रहा है**
 
 **ओपनजेपेलिन SDK -** **_अल्टीमेट स्मार्ट अनुबंध टूलकिट: स्मार्ट अनुबंधों को विकसित करने, संकलित करने, अपग्रेड करने, तैनात करने और उनके साथ इंटरैक्ट करने में आपकी सहायता करने के लिए टूल का एक सूट।_**

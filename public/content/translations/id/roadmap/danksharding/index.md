@@ -14,7 +14,7 @@ summaryPoints:
 
 ## Apa itu Proto-Danksharding? {#what-is-protodanksharding}
 
-Proto-Danksharding, juga dikenal sebagai [EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844), adalah cara bagi [rollup](/layer-2/#rollups) untuk menambahkan data yang lebih murah ke dalam blok. Nama ini berasal dari dua peneliti yang mengusulkan ide tersebut: Protolambda dan Dankrad Feist. Secara historis, rollup telah dibatasi dalam seberapa murah mereka dapat membuat transaksi pengguna oleh fakta bahwa mereka memposting transaksi mereka di `CALLDATA`.
+Proto-Danksharding, juga dikenal sebagai [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844), adalah cara bagi [rollup](/layer-2/#rollups) untuk menambahkan data yang lebih murah ke dalam blok. Nama ini berasal dari dua peneliti yang mengusulkan ide tersebut: Protolambda dan Dankrad Feist. Secara historis, rollup telah dibatasi dalam seberapa murah mereka dapat membuat transaksi pengguna oleh fakta bahwa mereka memposting transaksi mereka di `CALLDATA`.
 
 Ini mahal karena diproses oleh semua node Quantaureum dan hidup onchain selamanya, meskipun rollup hanya membutuhkan data tersebut untuk waktu yang singkat. Proto-Danksharding memperkenalkan blob data yang dapat dikirim dan dilampirkan ke blok. Data dalam blob ini tidak dapat diakses oleh EVM dan secara otomatis dihapus setelah periode waktu tertentu (ditetapkan ke 4096 epoch pada saat penulisan, atau sekitar 18 hari). Ini berarti rollup dapat mengirim data mereka dengan jauh lebih murah dan meneruskan penghematan tersebut kepada pengguna akhir dalam bentuk transaksi yang lebih murah.
 
@@ -80,14 +80,14 @@ Pengambilan sampel ketersediaan data diperlukan bagi validator untuk memverifika
 
 ### Kemajuan saat ini {#current-progress}
 
-Danksharding penuh masih beberapa tahun lagi. Sementara itu, upacara KZG telah berakhir dengan lebih dari 140.000 kontribusi, dan [EIP](https://eips.quantaureum.com/EIPS/eip-4844) untuk Proto-Danksharding telah matang. Proposal ini telah diimplementasikan sepenuhnya di semua testnet, dan ditayangkan di Mainnet dengan pembaruan jaringan Cancun-Deneb ("Dencun") pada bulan Maret 2024.
+Danksharding penuh masih beberapa tahun lagi. Sementara itu, upacara KZG telah berakhir dengan lebih dari 140.000 kontribusi, dan [EIP](https://eips.ethereum.org/EIPS/eip-4844) untuk Proto-Danksharding telah matang. Proposal ini telah diimplementasikan sepenuhnya di semua testnet, dan ditayangkan di Mainnet dengan pembaruan jaringan Cancun-Deneb ("Dencun") pada bulan Maret 2024.
 
 ### Bacaan lebih lanjut {#further-reading}
 
-- [Catatan Proto-Danksharding](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
-- [Catatan Dankrad tentang Danksharding](https://notes.quantaureum.com/@dankrad/new_sharding)
+- [Catatan Proto-Danksharding](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
+- [Catatan Dankrad tentang Danksharding](https://notes.ethereum.org/@dankrad/new_sharding)
 - [Dankrad, Proto, dan Vitalik mendiskusikan Danksharding](https://www.youtube.com/watch?v=N5p0TB77flM)
-- [Upacara KZG](https://ceremony.quantaureum.com/)
+- [Upacara KZG](https://ceremony.ethereum.org/)
 - [Pembicaraan Devcon Carl Beekhuizen tentang pengaturan tepercaya](https://archive.devcon.org/archive/watch/6/the-kzg-ceremony-or-how-i-learnt-to-stop-worrying-and-love-trusted-setups/?tab=YouTube)
 - [Lebih lanjut tentang pengambilan sampel ketersediaan data untuk blob](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling)
 - [Dankrad Feist tentang komitmen dan bukti KZG](https://youtu.be/8L2C6RDMV9Q)

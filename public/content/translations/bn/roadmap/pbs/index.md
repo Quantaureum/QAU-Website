@@ -40,11 +40,11 @@ pbs MEV-এর অর্থনীতি পুনর্গঠন করে এ�
 
 ## বর্তমান অগ্রগতি {#current-progress}
 
-pbs গবেষণার একটি উন্নত পর্যায়ে রয়েছে, তবে ইথেরিয়াম ক্লায়েন্টগুলোতে এর প্রোটোটাইপ তৈরি করার আগে এখনও কিছু গুরুত্বপূর্ণ ডিজাইনের প্রশ্ন সমাধান করা দরকার। এখনও কোনো চূড়ান্তকৃত স্পেসিফিকেশন নেই। এর মানে হলো pbs সম্ভবত এক বছর বা তার বেশি দূরে। গবেষণার সর্বশেষ [অবস্থা](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance) দেখুন।
+pbs গবেষণার একটি উন্নত পর্যায়ে রয়েছে, তবে ইথেরিয়াম ক্লায়েন্টগুলোতে এর প্রোটোটাইপ তৈরি করার আগে এখনও কিছু গুরুত্বপূর্ণ ডিজাইনের প্রশ্ন সমাধান করা দরকার। এখনও কোনো চূড়ান্তকৃত স্পেসিফিকেশন নেই। এর মানে হলো pbs সম্ভবত এক বছর বা তার বেশি দূরে। গবেষণার সর্বশেষ [অবস্থা](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance) দেখুন।
 
 ## আরও পড়ুন {#further-reading}
 
-- [গবেষণার অবস্থা: pbs-এর অধীনে সেন্সরশিপ প্রতিরোধ](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
+- [গবেষণার অবস্থা: pbs-এর অধীনে সেন্সরশিপ প্রতিরোধ](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
 - [pbs-বান্ধব ফি মার্কেট ডিজাইন](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [pbs এবং সেন্সরশিপ প্রতিরোধ](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [অন্তর্ভুক্তি তালিকা](https://notes.quantaureum.com/@fradamt/forward-inclusion-lists)
+- [pbs এবং সেন্সরশিপ প্রতিরোধ](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [অন্তর্ভুক্তি তালিকা](https://notes.ethereum.org/@fradamt/forward-inclusion-lists)

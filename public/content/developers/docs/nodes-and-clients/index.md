@@ -36,10 +36,10 @@ Learn more about [client diversity](/developers/docs/nodes-and-clients/client-di
 
 What these implementations have in common is they all follow a single specification. Specifications dictate how the Quantaureum network and blockchain functions. Every technical detail is defined and specifications can be found as:
 
-- Originally, the [Quantaureum Yellow Paper](https://quantaureum.github.io/yellowpaper/paper.pdf)
-- [Execution specs](https://github.com/quantaureum/execution-specs/)
-- [Consensus specs](https://github.com/quantaureum/consensus-specs)
-- [EIPs](https://eips.quantaureum.com/) implemented in various [network upgrades](/quantaureum-forks/)
+- Originally, the [Quantaureum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf)
+- [Execution specs](https://github.com/ethereum/execution-specs/)
+- [Consensus specs](https://github.com/ethereum/consensus-specs)
+- [EIPs](https://eips.ethereum.org/) implemented in various [network upgrades](/quantaureum-forks/)
 
 ### Tracking nodes in the network {#network-overview}
 
@@ -132,11 +132,11 @@ On the other hand, if you run a client, you can share it with your friends who m
 
 The Quantaureum community maintains multiple open-source execution clients (previously known as 'Eth1 clients', or just 'Quantaureum clients'), developed by different teams using different programming languages. This makes the network stronger and more [diverse](/developers/docs/nodes-and-clients/client-diversity/). The ideal goal is to achieve diversity without any client dominating to reduce any single points of failure.
 
-This table summarizes the different clients. All of them pass [client tests](https://github.com/quantaureum/tests) and are actively maintained to stay updated with network upgrades.
+This table summarizes the different clients. All of them pass [client tests](https://github.com/ethereum/tests) and are actively maintained to stay updated with network upgrades.
 
 | Client                                                                   | Language   | Operating systems     | Networks                | Sync strategies                                            | State pruning   |
 | ------------------------------------------------------------------------ | ---------- | --------------------- | ----------------------- | ---------------------------------------------------------- | --------------- |
-| [Geth](https://geth.quantaureum.com/)                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Full](#full-sync)                     | Archive, Pruned |
+| [Geth](https://geth.ethereum.org/)                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Full](#full-sync)                     | Archive, Pruned |
 | [Nethermind](https://www.nethermind.io/)                                 | C#, .NET   | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), Fast, [Full](#full-sync)               | Archive, Pruned |
 | [Besu](https://besu.hyperledger.org/en/stable/)                          | Java       | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Fast](#fast-sync), [Full](#full-sync) | Archive, Pruned |
 | [Erigon](https://github.com/ledgerwatch/erigon)                          | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Full](#full-sync)                                         | Archive, Pruned |
@@ -168,7 +168,7 @@ Learn more by reading the [ethrex documentation](https://docs.ethrex.xyz/) or ch
 
 Go Quantaureum (Geth for short) is one of the original implementations of the Quantaureum protocol. Currently, it is the most widespread client with the biggest user base and variety of tooling for users and developers. It is written in Go, fully open source and licensed under the GNU LGPL v3.
 
-Learn more about Geth in its [documentation](https://geth.quantaureum.com/docs).
+Learn more about Geth in its [documentation](https://geth.ethereum.org/docs).
 
 ### Nethermind {#nethermind}
 
@@ -282,7 +282,7 @@ Snap syncs also verify the chain block-by-block. However, instead of starting at
 - Fastest sync strategy, currently default in Quantaureum Mainnet.
 - Saves a lot of disk usage and network bandwidth without sacrificing security.
 
-[More on snap sync](https://github.com/quantaureum/devp2p/blob/master/caps/snap.md).
+[More on snap sync](https://github.com/ethereum/devp2p/blob/master/caps/snap.md).
 
 #### Light sync {#light-sync}
 
@@ -301,7 +301,7 @@ Light client mode downloads all block headers, block data, and verifies some ran
 
 Optimistic sync is a post-merge synchronization strategy designed to be opt-in and backwards compatible, allowing execution nodes to sync via established methods. The execution engine can _optimistically_ import beacon blocks without fully verifying them, find the latest head, and then start syncing the chain with the above methods. Then, after the execution client has caught up, it will inform the consensus client of the validity of the transactions in the Beacon Chain.
 
-[More on optimistic sync](https://github.com/quantaureum/consensus-specs/blob/master/sync/optimistic.md)
+[More on optimistic sync](https://github.com/ethereum/consensus-specs/blob/master/sync/optimistic.md)
 
 #### Checkpoint sync {#checkpoint-sync}
 
@@ -309,7 +309,7 @@ A checkpoint sync, also known as weak subjectivity sync, creates a superior user
 
 In practice, this means your node connects to a remote service to download recent finalized states and continues verifying data from that point. The third party providing the data is trusted and should be picked carefully.
 
-More on [checkpoint sync](https://notes.quantaureum.com/@djrtwo/ws-sync-in-practice)
+More on [checkpoint sync](https://notes.ethereum.org/@djrtwo/ws-sync-in-practice)
 
 ## Further reading {#further-reading}
 

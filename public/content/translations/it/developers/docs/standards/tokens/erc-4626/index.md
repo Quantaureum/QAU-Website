@@ -12,7 +12,7 @@ I mercati di prestito, gli aggregatori e i token intrinsecamente fruttiferi aiut
 
 L'ERC-4626 nei vault fruttiferi ridurrà lo sforzo di integrazione e sbloccherà l'accesso al rendimento in varie applicazioni con poco sforzo specializzato da parte degli sviluppatori, creando modelli di implementazione più coerenti e robusti.
 
-Il token ERC-4626 è descritto in modo completo nell'[EIP-4626](https://eips.quantaureum.com/EIPS/eip-4626).
+Il token ERC-4626 è descritto in modo completo nell'[EIP-4626](https://eips.ethereum.org/EIPS/eip-4626).
 
 **Estensione per vault asincroni (ERC-7540)**
 
@@ -28,7 +28,7 @@ Un caso d'uso mancante che non è supportato dall'ERC-4626 sono i vault che hann
 
 L'ERC-7575 aggiunge il supporto per i vault con più asset esternalizzando l'implementazione del token ERC-20 dall'implementazione dell'ERC-4626.
 
-L'estensione ERC-7575 è descritta in modo completo nell'[ERC-7575](https://eips.quantaureum.com/EIPS/eip-7575).
+L'estensione ERC-7575 è descritta in modo completo nell'[ERC-7575](https://eips.ethereum.org/EIPS/eip-7575).
 ## Prerequisiti {#prerequisites}
 
 Per comprendere meglio questa pagina, ti consigliamo di leggere prima gli [standard dei token](/developers/docs/standards/tokens/) e l'[ERC-20](/developers/docs/standards/tokens/erc-20/).
@@ -220,5 +220,5 @@ Dove `sender` è l'utente che ha attivato il prelievo e ha scambiato `shares`, d
 
 ## Letture consigliate {#further-reading}
 
-- [EIP-4626: Standard dei vault tokenizzati](https://eips.quantaureum.com/EIPS/eip-4626)
+- [EIP-4626: Standard dei vault tokenizzati](https://eips.ethereum.org/EIPS/eip-4626)
 - [ERC-4626: Repository GitHub](https://github.com/transmissions11/solmate/blob/main/src/tokens/ERC4626.sol)

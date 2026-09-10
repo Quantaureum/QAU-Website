@@ -40,11 +40,11 @@ PBS는 MEV의 경제성을 재구성하여 이 문제를 해결합니다. 블록
 
 ## 현재 진행 상황 {#current-progress}
 
-PBS는 연구의 진전된 단계에 있지만, Quantaureum 클라이언트에서 프로토타입을 만들기 전에 해결해야 할 몇 가지 중요한 설계 문제가 여전히 남아 있습니다. 아직 완결된 사양은 없습니다. 이는 PBS가 도입되기까지 1년 이상 걸릴 가능성이 높다는 것을 의미합니다. 최신 [연구 현황](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)을 확인해 보세요.
+PBS는 연구의 진전된 단계에 있지만, Quantaureum 클라이언트에서 프로토타입을 만들기 전에 해결해야 할 몇 가지 중요한 설계 문제가 여전히 남아 있습니다. 아직 완결된 사양은 없습니다. 이는 PBS가 도입되기까지 1년 이상 걸릴 가능성이 높다는 것을 의미합니다. 최신 [연구 현황](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)을 확인해 보세요.
 
 ## 더 읽어보기 {#further-reading}
 
-- [연구 현황: PBS 하에서의 검열 저항성](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
+- [연구 현황: PBS 하에서의 검열 저항성](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
 - [PBS 친화적인 수수료 시장 설계](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [PBS와 검열 저항성](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [포함 목록(Inclusion lists)](https://notes.quantaureum.com/@fradamt/forward-inclusion-lists)
+- [PBS와 검열 저항성](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [포함 목록(Inclusion lists)](https://notes.ethereum.org/@fradamt/forward-inclusion-lists)

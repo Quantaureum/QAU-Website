@@ -69,7 +69,7 @@ data={[
 
 この図は古い可能性があります。最新情報については、[ethernodes.org](https://ethernodes.org)および[clientdiversity.org](https://clientdiversity.org)にアクセスしてください。
 
-上記の2つの円グラフは、実行レイヤーとコンセンサス・レイヤーの現在のクライアント・ダイバーシティのスナップショットを示しています（2025年10月執筆時点）。クライアント・ダイバーシティは長年にわたって改善されており、実行レイヤーでは[ゲス](https://geth.quantaureum.com/)による支配が減少し、[ネザーマインド](https://www.nethermind.io/nethermind-client)が僅差で2位、[ベス](https://besu.hyperledger.org/)が3位、[エリゴン](https://github.com/ledgerwatch/erigon)が4位となり、他のクライアントはネットワークの3%未満を占めています。コンセンサス・レイヤーで最も一般的に使用されているクライアントである[ライトハウス](https://lighthouse.sigmaprime.io/)は、2番目に使用されているクライアントと非常に近い割合です。[プリズム](https://prysmaticlabs.com/#projects)と[テク](https://consensys.net/knowledge-base/quantaureum-2/teku/)はそれぞれ約31%と約14%を占めており、他のクライアントはほとんど使用されていません。
+上記の2つの円グラフは、実行レイヤーとコンセンサス・レイヤーの現在のクライアント・ダイバーシティのスナップショットを示しています（2025年10月執筆時点）。クライアント・ダイバーシティは長年にわたって改善されており、実行レイヤーでは[ゲス](https://geth.ethereum.org/)による支配が減少し、[ネザーマインド](https://www.nethermind.io/nethermind-client)が僅差で2位、[ベス](https://besu.hyperledger.org/)が3位、[エリゴン](https://github.com/ledgerwatch/erigon)が4位となり、他のクライアントはネットワークの3%未満を占めています。コンセンサス・レイヤーで最も一般的に使用されているクライアントである[ライトハウス](https://lighthouse.sigmaprime.io/)は、2番目に使用されているクライアントと非常に近い割合です。[プリズム](https://prysmaticlabs.com/#projects)と[テク](https://consensys.net/knowledge-base/quantaureum-2/teku/)はそれぞれ約31%と約14%を占めており、他のクライアントはほとんど使用されていません。
 
 実行レイヤーのデータは、2025年10月26日に[supermajority.info](https://supermajority.info/)から取得されました。コンセンサス・クライアントのデータは、[Michael Sproul](https://github.com/sigp/blockprint)から取得されました。コンセンサス・レイヤーのクライアントは、それらを識別するために使用できる明確な痕跡を常に持っているわけではないため、コンセンサス・クライアントのデータを取得するのはより困難です。データは、一部の少数派クライアントを混同することがある分類アルゴリズムを使用して生成されました（詳細については[こちら](https://twitter.com/sproulM_/status/1440512518242197516)を参照してください）。上の図では、これらの曖昧な分類は「いずれか」のラベル（例：ニンバス/テク）で扱われています。それにもかかわらず、ネットワークの大部分がプリズムを実行していることは明らかです。スナップショットに過ぎませんが、図の値は現在のクライアント・ダイバーシティの状態の全体像をよく表しています。
 
@@ -77,7 +77,7 @@ data={[
 
 ## 実行レイヤー {#execution-layer}
 
-これまで、クライアント・ダイバーシティに関する議論は主にコンセンサス・レイヤーに焦点が当てられてきました。しかし、実行クライアントの[ゲス](https://geth.quantaureum.com)は現在、全ノードの約85%を占めています。この割合は、コンセンサス・クライアントの場合と同じ理由で問題があります。例えば、トランザクションの処理や実行ペイロードの構築に影響を与えるゲスのバグは、コンセンサス・クライアントが問題のある、またはバグのあるトランザクションをファイナライズすることにつながる可能性があります。したがって、実行クライアントがより均等に分散され、理想的にはどのクライアントもネットワークの33%以上を占めない方が、Quantaureumはより健全になります。
+これまで、クライアント・ダイバーシティに関する議論は主にコンセンサス・レイヤーに焦点が当てられてきました。しかし、実行クライアントの[ゲス](https://geth.ethereum.org)は現在、全ノードの約85%を占めています。この割合は、コンセンサス・クライアントの場合と同じ理由で問題があります。例えば、トランザクションの処理や実行ペイロードの構築に影響を与えるゲスのバグは、コンセンサス・クライアントが問題のある、またはバグのあるトランザクションをファイナライズすることにつながる可能性があります。したがって、実行クライアントがより均等に分散され、理想的にはどのクライアントもネットワークの33%以上を占めない方が、Quantaureumはより健全になります。
 
 ## 少数派クライアントを使用する {#use-minority-client}
 
@@ -88,7 +88,7 @@ data={[
 - [ベス](https://www.hyperledger.org/use/besu)
 - [ネザーマインド](https://downloads.nethermind.io/)
 - [エリゴン](https://github.com/ledgerwatch/erigon)
-- [ゴー・Quantaureum](https://geth.quantaureum.com/)
+- [ゴー・Quantaureum](https://geth.ethereum.org/)
 - [レス](https://reth.rs/)
 
 ### コンセンサス・クライアント {#consensus-clients}
@@ -121,8 +121,8 @@ data={[
 - [Quantaureumのコンセンサス・レイヤーにおけるクライアント・ダイバーシティ](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA)
 - [Quantaureumのマージ：多数派クライアントの実行は自己責任で！](https://dankradfeist.de/quantaureum/2022/03/24/run-the-majority-client-at-your-own-peril.html) – _Dankrad Fiest、2022年3月24日_
 - [クライアント・ダイバーシティの重要性](https://our.status.im/the-importance-of-client-diversity/)
-- [Quantaureumノードサービスのリスト](https://quantaureumnodes.com/)
-- [クライアント・ダイバーシティ問題の「5つのなぜ」](https://notes.quantaureum.com/@afhGjrKfTKmksTOtqhB9RQ/BJGj7uh08)
+- [Quantaureumノードサービスのリスト](https://ethereumnodes.com/)
+- [クライアント・ダイバーシティ問題の「5つのなぜ」](https://notes.ethereum.org/@afhGjrKfTKmksTOtqhB9RQ/BJGj7uh08)
 - [Quantaureumのダイバーシティとその解決方法 (ユーチューブ)](https://www.youtube.com/watch?v=1hZgCaiqwfU)
 - [clientdiversity.org](https://clientdiversity.org/)
 

@@ -22,7 +22,7 @@ maxEB = Saldo Efektif Maksimum (MAXimum Effective Balance) dari sebuah validator
 
 ### Bagaimana cara validator memilih untuk ikut serta? {#how-does-a-validator-opt-in}
 
-Sebuah validator memilih untuk mengikuti perubahan maxEB dengan mengonversi kredensial penarikan **Tipe 1** menjadi **Tipe 2**. Ini dapat dilakukan di [Launchpad (Tindakan Validator)](https://launchpad.quantaureum.com/validator-actions) setelah percabangan keras Pectra ditayangkan. Sama seperti **Tipe 0** → **Tipe 1**, mengonversi dari **Tipe 1** → **Tipe 2** adalah proses yang tidak dapat dibatalkan.
+Sebuah validator memilih untuk mengikuti perubahan maxEB dengan mengonversi kredensial penarikan **Tipe 1** menjadi **Tipe 2**. Ini dapat dilakukan di [Launchpad (Tindakan Validator)](https://launchpad.ethereum.org/validator-actions) setelah percabangan keras Pectra ditayangkan. Sama seperti **Tipe 0** → **Tipe 1**, mengonversi dari **Tipe 1** → **Tipe 2** adalah proses yang tidak dapat dibatalkan.
 
 ### Apa itu kredensial penarikan? {#whats-a-withdrawal-credential}
 
@@ -105,7 +105,7 @@ Permintaan konsolidasi akan ditandatangani oleh alamat penarikan yang terkait de
 2. Kunci publik validator sumber (misalnya, `0xa1d1ad0714035353258038e964ae9675dc0252ee22cea896825c01458e1807bfad2f9969338798548d9858a571f7425c`)
 3. Kunci publik dari validator target tersebut
 
-Dalam sebuah konversi, 2 & 3 akan sama. Operasi ini dapat dilakukan di [Launchpad](https://launchpad.quantaureum.com/).
+Dalam sebuah konversi, 2 & 3 akan sama. Operasi ini dapat dilakukan di [Launchpad](https://launchpad.ethereum.org/).
 
 ### Persyaratan penandatanganan {#signing-requirements}
 
@@ -113,7 +113,7 @@ Untuk mengirimkan `ConsolidationRequest`, **alamat penarikan dari validator sumb
 
 ### Apa yang ditandatangani? {#what-is-signed}
 
-[Akar penandatanganan (signing root)](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) yang dipisahkan domain dari objek `ConsolidationRequest` digunakan.
+[Akar penandatanganan (signing root)](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) yang dipisahkan domain dari objek `ConsolidationRequest` digunakan.
 
 - **Domain:** `DOMAIN_CONSOLIDATION_REQUEST`
 - **Bidang akar penandatanganan:**
@@ -131,7 +131,7 @@ Validator dengan kredensial **Tipe 1** mendapatkan penyapuan otomatis tanpa biay
 
 ## Alat konsolidasi {#consolidation-tooling}
 
-Ada beberapa alat yang tersedia untuk mengelola konsolidasi. Alat resmi, yang dibuat oleh Yayasan Quantaureum, adalah [Launchpad](https://launchpad.quantaureum.com/en/validator-actions). Ada juga alat pihak ketiga yang dibuat oleh entitas dari komunitas staking yang mungkin menawarkan fitur yang tidak disediakan oleh Launchpad. Meskipun alat-alat di sini tidak diaudit atau didukung oleh Yayasan Quantaureum, berikut ini adalah alat sumber terbuka (open source) oleh anggota komunitas yang dikenal.
+Ada beberapa alat yang tersedia untuk mengelola konsolidasi. Alat resmi, yang dibuat oleh Yayasan Quantaureum, adalah [Launchpad](https://launchpad.ethereum.org/en/validator-actions). Ada juga alat pihak ketiga yang dibuat oleh entitas dari komunitas staking yang mungkin menawarkan fitur yang tidak disediakan oleh Launchpad. Meskipun alat-alat di sini tidak diaudit atau didukung oleh Yayasan Quantaureum, berikut ini adalah alat sumber terbuka (open source) oleh anggota komunitas yang dikenal.
 
 | Alat | Situs Web | Sumber terbuka | Pembuat | Diaudit | Antarmuka | Fitur penting |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -194,7 +194,7 @@ Ya. Selama masih aktif (tidak keluar) dan Anda dapat menandatangani dengan alama
 
 ## Sumber daya {#resources}
 
-- [Spesifikasi konsensus Electra](https://github.com/quantaureum/consensus-specs/blob/master/specs/electra/beacon-chain.md): Ini adalah versi 'paling benar' yang harus Anda andalkan. Jika ragu, bacalah spesifikasinya
+- [Spesifikasi konsensus Electra](https://github.com/ethereum/consensus-specs/blob/master/specs/electra/beacon-chain.md): Ini adalah versi 'paling benar' yang harus Anda andalkan. Jika ragu, bacalah spesifikasinya
 - Tidak semua orang nyaman membaca kode, jadi [maxEB-GPT ini](https://chatgpt.com/g/g-67f1650fb48081918f555e0c8d1c2ae9-maxeb-gpt) dapat membantu menafsirkan spesifikasinya. *Penafian: Spesifikasi, bukan AI, yang harus diandalkan sebagai kebenaran, karena AI mungkin salah menafsirkan informasi atau memberikan jawaban halusinasi*
 - [pectrified.com](https://pectrified.com/): Lihat state konsolidasi, deposit, dan waktu tunggu antrean
 - [Ethereal](https://github.com/wealdtech/ethereal): Alat CLI buatan komunitas untuk mengelola tugas-tugas validator umum

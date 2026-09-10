@@ -91,15 +91,13 @@ sidebarDepth: 3
 
 ## ভিজ্যুয়াল মাধ্যমে শিখতে বেশি পছন্দ করেন? {#visual-learner}
 
-<VideoWatch slug="layer-2-scaling-explained" />
 
 _লক্ষ্য করুন, ভিডিওর ব্যাখ্যায় সমস্ত অফচেইন স্কেলিং সমাধান বোঝাতে "লেয়ার ২ (l2)" শব্দটি ব্যবহার করা হয়েছে, যেখানে আমরা "লেয়ার ২ (l2)"-কে এমন একটি অফচেইন সমাধান হিসেবে আলাদা করি যা লেয়ার ১ (l1) মেইননেট ঐক্যমতের মাধ্যমে এর নিরাপত্তা গ্রহণ করে।_
 
-<VideoWatch slug="rollups-scaling-strategy" />
 
 ## আরও পড়ুন {#further-reading}
 
-- [একটি রোলআপ-কেন্দ্রিক ইথেরিয়াম রোডম্যাপ](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _ভিটালিক বুটেরিন_
+- [একটি রোলআপ-কেন্দ্রিক ইথেরিয়াম রোডম্যাপ](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _ভিটালিক বুটেরিন_
 - [ইথেরিয়ামের জন্য লেয়ার ২ (l2) স্কেলিং সমাধানের আপ-টু-ডেট অ্যানালিটিক্স](https://www.l2beat.com/)
 - [ইথেরিয়াম লেয়ার ২ (l2) স্কেলিং সমাধানের মূল্যায়ন: একটি তুলনামূলক ফ্রেমওয়ার্ক](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - [রোলআপের একটি অসম্পূর্ণ গাইড](https://vitalik.qau.limo/general/2021/01/05/rollup.html)

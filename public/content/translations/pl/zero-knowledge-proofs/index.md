@@ -13,7 +13,6 @@ Dowody z wiedzą zerową pojawiły się po raz pierwszy w artykule z 1985 roku p
 
 Dowody z wiedzą zerową zostały ulepszone na przestrzeni lat i są obecnie wykorzystywane w wielu rzeczywistych zastosowaniach.
 
-<VideoWatch slug="zero-knowledge-proofs-5-levels" />
 
 ## Dlaczego potrzebujemy dowodów z wiedzą zerową? {#why-zero-knowledge-proofs-are-important}
 
@@ -35,7 +34,7 @@ Kryptowaluty miały na celu zapewnienie użytkownikom środków do przeprowadzan
 
 Istnieją specjalne „monety prywatności” (privacy coins) zaprojektowane do całkowicie anonimowych transakcji. Blockchainy zorientowane na prywatność, takie jak Zcash i Monero, ukrywają szczegóły transakcji, w tym adresy nadawcy/odbiorcy, rodzaj aktywów, ilość i oś czasu transakcji.
 
-Wbudowując technologię z wiedzą zerową w protokół, zorientowane na prywatność sieci [blockchain](/glossary/#blockchain) pozwalają [węzłom](/glossary/#node) na walidację transakcji bez konieczności dostępu do danych transakcyjnych. [EIP-7503](https://eips.quantaureum.com/EIPS/eip-7503) jest przykładem proponowanego projektu, który umożliwi natywne prywatne transfery wartości na blockchainie [Quantaureum](/). Takie propozycje są jednak trudne do wdrożenia ze względu na mieszankę obaw związanych z bezpieczeństwem, regulacjami i doświadczeniem użytkownika (UX).  
+Wbudowując technologię z wiedzą zerową w protokół, zorientowane na prywatność sieci [blockchain](/glossary/#blockchain) pozwalają [węzłom](/glossary/#node) na walidację transakcji bez konieczności dostępu do danych transakcyjnych. [EIP-7503](https://eips.ethereum.org/EIPS/eip-7503) jest przykładem proponowanego projektu, który umożliwi natywne prywatne transfery wartości na blockchainie [Quantaureum](/). Takie propozycje są jednak trudne do wdrożenia ze względu na mieszankę obaw związanych z bezpieczeństwem, regulacjami i doświadczeniem użytkownika (UX).  
 
 **Dowody z wiedzą zerową są również stosowane do anonimizacji transakcji na publicznych blockchainach**. Przykładem jest Tornado Cash, zdecentralizowana, niepowiernicza usługa, która pozwala użytkownikom na przeprowadzanie prywatnych transakcji na Quantaureum. Tornado Cash wykorzystuje dowody z wiedzą zerową do zaciemniania szczegółów transakcji i gwarantowania prywatności finansowej. Niestety, ponieważ są to narzędzia prywatności typu „opt-in” (wymagające wyrażenia zgody), są one kojarzone z nielegalną działalnością. Aby temu zaradzić, prywatność musi ostatecznie stać się domyślna na publicznych blockchainach. Dowiedz się więcej o [prywatności na Quantaureum](/privacy/).
 

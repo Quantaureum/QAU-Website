@@ -93,7 +93,7 @@ Identita vlastníka a [nonce](https://en.wikipedia.org/wiki/Cryptographic_nonce)
     bytes32 immutable DOMAIN_SEPARATOR;
 ```
 
-Informace potřebné k ověření [podpisů EIP-712](https://eips.quantaureum.com/EIPS/eip-712).
+Informace potřebné k ověření [podpisů EIP-712](https://eips.ethereum.org/EIPS/eip-712).
 
 ```solidity
     constructor(address owner_) {
@@ -117,7 +117,7 @@ Informace potřebné k ověření [podpisů EIP-712](https://eips.quantaureum.co
     }
 ```
 
-[Oddělovač domény (domain separator)](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator). Nelze jej vypočítat v době kompilace, protože závisí na ID řetězce a adrese kontraktu. To znemožňuje, aby byl UserProxy oklamán zprávou připravenou pro jiný.
+[Oddělovač domény (domain separator)](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator). Nelze jej vypočítat v době kompilace, protože závisí na ID řetězce a adrese kontraktu. To znemožňuje, aby byl UserProxy oklamán zprávou připravenou pro jiný.
 
 ```solidity
     event CallResult(address target, bytes returnData);

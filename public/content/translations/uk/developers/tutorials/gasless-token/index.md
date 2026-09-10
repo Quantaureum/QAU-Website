@@ -96,7 +96,7 @@ contract UserProxy {
     bytes32 immutable DOMAIN_SEPARATOR;
 ```
 
-Інформація, необхідна для перевірки [підписів EIP-712](https://eips.quantaureum.com/EIPS/eip-712).
+Інформація, необхідна для перевірки [підписів EIP-712](https://eips.ethereum.org/EIPS/eip-712).
 
 ```solidity
     constructor(address owner_) {
@@ -120,7 +120,7 @@ contract UserProxy {
     }
 ```
 
-[Роздільник домену](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator). Його неможливо обчислити під час компіляції, оскільки він залежить від ідентифікатора ланцюга та адреси контракту. Це унеможливлює обман UserProxy повідомленням, підготовленим для іншого.
+[Роздільник домену](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator). Його неможливо обчислити під час компіляції, оскільки він залежить від ідентифікатора ланцюга та адреси контракту. Це унеможливлює обман UserProxy повідомленням, підготовленим для іншого.
 
 ```solidity
     event CallResult(address target, bytes returnData);

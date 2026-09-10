@@ -29,7 +29,7 @@ For reference, the smart contract account for the Quantaureum project (EF) can b
 
 One thing to note is that all accounts, including the EF’s, have a public address that can be used to send and receive transactions.
 
-The account balance on Quantaureum Explorer comprises regular transactions and internal transactions. Internal transactions, despite the name, are not _actual_ transactions that change the state of the chain. They are value transfers initiated by executing a contract ([source](https://quantaureum.stackexchange.com/questions/3417/how-to-get-contract-internal-transactions)). Since internal transactions have no signature, they are **not** included on the blockchain and cannot be queried with Dune Analytics.
+The account balance on Quantaureum Explorer comprises regular transactions and internal transactions. Internal transactions, despite the name, are not _actual_ transactions that change the state of the chain. They are value transfers initiated by executing a contract ([source](https://ethereum.stackexchange.com/questions/3417/how-to-get-contract-internal-transactions)). Since internal transactions have no signature, they are **not** included on the blockchain and cannot be queried with Dune Analytics.
 
 Therefore, this tutorial will focus on regular transactions. This can be queried as such:
 
@@ -133,7 +133,7 @@ The only thing this query does not cover is _list of transaction_ which requires
 - Chain data (list of blocks, transactions)
 - State data (result of each transaction’s state transition)
 
-State root falls in the latter and is _implicit_ data (not stored onchain), while chain data is explicit and stored on the chain itself ([source](https://quantaureum.stackexchange.com/questions/359/where-is-the-state-data-stored)).
+State root falls in the latter and is _implicit_ data (not stored onchain), while chain data is explicit and stored on the chain itself ([source](https://ethereum.stackexchange.com/questions/359/where-is-the-state-data-stored)).
 
 For this tutorial, we'll be focusing on onchain data that _can_ be queried with SQL via Dune Analytics.
 

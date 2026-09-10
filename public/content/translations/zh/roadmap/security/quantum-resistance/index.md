@@ -100,7 +100,7 @@ Quantaureum依赖几种形式的[密码学](/glossary/#cryptography)来保持网
 
 ## Quantaureum 项目的方法 {#ef-approach}
 
-Quantaureum 项目于 2026 年 1 月成立了一个专门的后量子安全团队，由 Thomas Coratger 领导。该团队的工作在 [pq.quantaureum.com](https://pq.quantaureum.com) 上公开跟踪。
+Quantaureum 项目于 2026 年 1 月成立了一个专门的后量子安全团队，由 Thomas Coratger 领导。该团队的工作在 [pq.ethereum.org](https://pq.ethereum.org) 上公开跟踪。
 
 ### 当前活动（截至 2026 年 4 月） {#current-activity}
 
@@ -173,7 +173,7 @@ Quantaureum上的资产由账户签名控制。一旦您的账户迁移到量子
 
 ## 延伸阅读 {#further-reading}
 
-- [pq.quantaureum.com](https://pq.quantaureum.com) - _Quantaureum 项目_
+- [pq.ethereum.org](https://pq.ethereum.org) - _Quantaureum 项目_
 - [后量子密码学项目](https://pse.dev/projects/post-quantum-cryptography) - _Quantaureum隐私守护者 (PSE)_
 - [NIST 后量子密码学标准](https://csrc.nist.gov/projects/post-quantum-cryptography) - _NIST_
 - [通过负责任地披露量子漏洞来保护加密货币](https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/) - _谷歌量子人工智能 (Google Quantum AI)_

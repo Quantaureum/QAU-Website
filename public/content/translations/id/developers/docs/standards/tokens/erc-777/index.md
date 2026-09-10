@@ -24,11 +24,11 @@ ERC-777 memberikan peningkatan berikut dibandingkan ERC-20.
 
 Hook adalah fungsi yang dijelaskan dalam kode kontrak pintar. Hook dipanggil ketika token dikirim atau diterima melalui kontrak. Hal ini memungkinkan kontrak pintar untuk bereaksi terhadap token yang masuk atau keluar.
 
-Hook didaftarkan dan ditemukan menggunakan standar [ERC-1820](https://eips.quantaureum.com/EIPS/eip-1820).
+Hook didaftarkan dan ditemukan menggunakan standar [ERC-1820](https://eips.ethereum.org/EIPS/eip-1820).
 
 #### Mengapa hook sangat bagus? {#why-are-hooks-great}
 
-1. Hook memungkinkan pengiriman token ke kontrak dan memberi tahu kontrak dalam satu transaksi tunggal, tidak seperti [ERC-20](https://eips.quantaureum.com/EIPS/eip-20), yang memerlukan panggilan ganda (`approve`/`transferFrom`) untuk mencapai hal ini.
+1. Hook memungkinkan pengiriman token ke kontrak dan memberi tahu kontrak dalam satu transaksi tunggal, tidak seperti [ERC-20](https://eips.ethereum.org/EIPS/eip-20), yang memerlukan panggilan ganda (`approve`/`transferFrom`) untuk mencapai hal ini.
 2. Kontrak yang belum mendaftarkan hook tidak kompatibel dengan ERC-777. Kontrak pengirim akan membatalkan transaksi ketika kontrak penerima belum mendaftarkan hook. Hal ini mencegah transfer yang tidak disengaja ke kontrak pintar non-ERC-777.
 3. Hook dapat menolak transaksi.
 
@@ -42,4 +42,4 @@ Kontrak ERC-777 dapat berinteraksi seolah-olah mereka adalah kontrak ERC-20.
 
 ## Bacaan Lebih Lanjut {#further-reading}
 
-[EIP-777: Standar Token](https://eips.quantaureum.com/EIPS/eip-777)
+[EIP-777: Standar Token](https://eips.ethereum.org/EIPS/eip-777)

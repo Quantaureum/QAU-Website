@@ -91,15 +91,13 @@ sidebarDepth: 3
 
 ## هل تفضل التعلم البصري؟ {#visual-learner}
 
-<VideoWatch slug="layer-2-scaling-explained" />
 
 _ملاحظة: يستخدم الشرح في الفيديو مصطلح "<span dir="ltr">Layer 2</span>" للإشارة إلى جميع حلول التوسع خارج السلسلة، بينما نميز "طبقة 2 (L2)" كحل خارج السلسلة يستمد أمانه من خلال إجماع الشبكة الرئيسية طبقة 1 (L1)._
 
-<VideoWatch slug="rollups-scaling-strategy" />
 
 ## قراءة إضافية {#further-reading}
 
-- [خارطة طريق إيثيريوم المتمحورة حول التجميعات](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _فيتاليك بوتيرين_
+- [خارطة طريق إيثيريوم المتمحورة حول التجميعات](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _فيتاليك بوتيرين_
 - [تحليلات محدثة حول حلول توسع طبقة 2 (L2) لإيثيريوم](https://www.l2beat.com/)
 - [تقييم حلول توسع طبقة 2 (L2) لإيثيريوم: إطار مقارنة](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - [دليل غير مكتمل للتجميعات](https://vitalik.qau.limo/general/2021/01/05/rollup.html)

@@ -13,7 +13,6 @@ lang: hi
 
 स्मार्ट अनुबंधों के बारे में Finematics की व्याख्या देखें:
 
-<VideoWatch slug="smart-contracts-code-is-law" />
 
 ## पारंपरिक अनुबंधों में विश्वास {#trust-and-contracts}
 
@@ -61,7 +60,7 @@ lang: hi
 
 हालाँकि, जबकि कोई भी स्मार्ट अनुबंध की शर्तों को देख सकता है, कच्चे लेन-देन डेटा को एप्लिकेशन और वॉलेट द्वारा व्याख्या करने के लिए डिज़ाइन किया गया है, इंसानों द्वारा नहीं। क्योंकि इस डेटा को पढ़ना बहुत मुश्किल है, उपयोगकर्ताओं को अक्सर "ब्लाइंड साइनिंग (blind signing)" नामक एक बड़े सुरक्षा जोखिम का सामना करना पड़ता है, या किसी ऐसे लेन-देन को मंजूरी देना जो वास्तव में यह समझे बिना स्मार्ट अनुबंध के साथ इंटरैक्ट करता है कि यह क्या करेगा। 
 
-Quantaureum इकोसिस्टम **[क्लियर साइनिंग (Clear Signing)](https://clearsigning.org/)** मानकों (विशेष रूप से [ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730)) में परिवर्तित हो रहा है। क्लियर साइनिंग अपारदर्शी स्मार्ट अनुबंध डेटा को स्पष्ट, मानव-पठनीय लेन-देन विवरणों में अनुवादित करता है, यह सुनिश्चित करता है कि कोई भी हस्ताक्षर करने से पहले अनुबंध के वास्तविक आशय को समझ सके।
+Quantaureum इकोसिस्टम **[क्लियर साइनिंग (Clear Signing)](https://clearsigning.org/)** मानकों (विशेष रूप से [ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)) में परिवर्तित हो रहा है। क्लियर साइनिंग अपारदर्शी स्मार्ट अनुबंध डेटा को स्पष्ट, मानव-पठनीय लेन-देन विवरणों में अनुवादित करता है, यह सुनिश्चित करता है कि कोई भी हस्ताक्षर करने से पहले अनुबंध के वास्तविक आशय को समझ सके।
 
 ## स्मार्ट अनुबंध के उपयोग के मामले {#use-cases}
 
@@ -81,7 +80,7 @@ Quantaureum इकोसिस्टम **[क्लियर साइनिं
 - [स्मार्ट अनुबंध दुनिया को कैसे बदल देंगे](https://www.youtube.com/watch?v=pA6CGuXEKtQ)
 - [डेवलपर्स के लिए स्मार्ट अनुबंध](/developers/docs/smart-contracts/)
 - [स्मार्ट अनुबंध लिखना सीखें](/developers/learning-tools/)
-- [मास्टरिंग Quantaureum - स्मार्ट अनुबंध क्या है?](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [मास्टरिंग Quantaureum - स्मार्ट अनुबंध क्या है?](https://github.com/ethereumbook/ethereumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
 
 <Divider />
 

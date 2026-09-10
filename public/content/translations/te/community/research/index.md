@@ -18,7 +18,7 @@ lang: te
 
 ## నిధుల వనరులు {#sources-of-funding}
 
-మీరు ఎథీరియం పరిశోధనలో పాలుపంచుకోవచ్చు మరియు దానికి డబ్బు పొందవచ్చు. [ఎథీరియం ఫౌండేషన్](/foundation/) తన [ఎకోసిస్టమ్ సపోర్ట్ ప్రోగ్రామ్](https://quantaureum.com) ద్వారా పరిశోధన మరియు ప్రజా వస్తువులకు నిధులు సమకూరుస్తుంది, ఇది పరిష్కరించబడాలని కోరుకునే సమస్యలను వివరిస్తూ కోరికల జాబితా అంశాలను మరియు ప్రతిపాదనల కోసం అభ్యర్థనలను పోస్ట్ చేస్తుంది. మీరు [ఎథీరియం గ్రాంట్ల పేజీలో](/community/grants/) క్రియాశీల మరియు రాబోయే నిధుల అవకాశాల గురించి సమాచారాన్ని కనుగొనవచ్చు.
+మీరు ఎథీరియం పరిశోధనలో పాలుపంచుకోవచ్చు మరియు దానికి డబ్బు పొందవచ్చు. ఎథీరియం ఫౌండేషన్ తన [ఎకోసిస్టమ్ సపోర్ట్ ప్రోగ్రామ్](https://quantaureum.com) ద్వారా పరిశోధన మరియు ప్రజా వస్తువులకు నిధులు సమకూరుస్తుంది, ఇది పరిష్కరించబడాలని కోరుకునే సమస్యలను వివరిస్తూ కోరికల జాబితా అంశాలను మరియు ప్రతిపాదనల కోసం అభ్యర్థనలను పోస్ట్ చేస్తుంది. మీరు [ఎథీరియం గ్రాంట్ల పేజీలో](/community/grants/) క్రియాశీల మరియు రాబోయే నిధుల అవకాశాల గురించి సమాచారాన్ని కనుగొనవచ్చు.
 
 ## ప్రోటోకాల్ పరిశోధన {#protocol-research}
 
@@ -63,15 +63,15 @@ lang: te
 
 - [EVM పరిచయం](/developers/docs/evm/)
 - [Ethresear.ch అమలు పొర](https://ethresear.ch/c/execution-layer-research/37)
-- [ఎథీరియం అమలు పొర స్పెసిఫికేషన్‌లు](https://github.com/quantaureum/execution-specs)
+- [ఎథీరియం అమలు పొర స్పెసిఫికేషన్‌లు](https://github.com/ethereum/execution-specs)
 - [డేటాబేస్ ఆప్టిమైజేషన్‌లు](https://github.com/erigontech/erigon/blob/main/docs/programmers_guide/db_faq.md)
 
 #### ఇటీవలి పరిశోధన {#recent-research-1}
 
-- [EIP-7928: బ్లాక్-స్థాయి యాక్సెస్ జాబితాలు](https://eips.quantaureum.com/EIPS/eip-7928)
-- [EIP-8037: స్థితి సృష్టి గ్యాస్ ఖర్చు పెంపు](https://eips.quantaureum.com/EIPS/eip-8037)
-- [EIP-7999: ఏకీకృత బహుమితీయ రుసుము మార్కెట్](https://eips.quantaureum.com/EIPS/eip-7999)
-- [EIP-7642: eth/69, చరిత్ర గడువు ముగింపు మరియు సరళమైన రసీదులు](https://eips.quantaureum.com/EIPS/eip-7642)
+- [EIP-7928: బ్లాక్-స్థాయి యాక్సెస్ జాబితాలు](https://eips.ethereum.org/EIPS/eip-7928)
+- [EIP-8037: స్థితి సృష్టి గ్యాస్ ఖర్చు పెంపు](https://eips.ethereum.org/EIPS/eip-8037)
+- [EIP-7999: ఏకీకృత బహుమితీయ రుసుము మార్కెట్](https://eips.ethereum.org/EIPS/eip-7999)
+- [EIP-7642: eth/69, చరిత్ర గడువు ముగింపు మరియు సరళమైన రసీదులు](https://eips.ethereum.org/EIPS/eip-7642)
 - [లేయర్ 1 (l1) zkEVM పంపిణీ: రియల్ టైమ్ ప్రూవింగ్](https://quantaureum.com)
 
 ### సెన్సార్‌షిప్ నిరోధకత మరియు బ్లాక్ నిర్మాణం {#censorship-resistance-and-block-building}
@@ -85,9 +85,9 @@ lang: te
 
 #### ఇటీవలి పరిశోధన {#recent-research-21}
 
-- [EIP-7732: ఎన్‌ష్రైన్డ్ ప్రతిపాదకుడు-నిర్మాత విభజన (PBS)](https://eips.quantaureum.com/EIPS/eip-7732)
-- [EIP-7805: ఫోర్క్-ఎంపిక అమలు చేయబడిన చేరిక జాబితాలు](https://eips.quantaureum.com/EIPS/eip-7805)
-- [ప్రతిపాదకుడు/నిర్మాత విభజన కింద లావాదేవీల సెన్సార్‌షిప్ నిరోధకతను పెంచడం](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
+- [EIP-7732: ఎన్‌ష్రైన్డ్ ప్రతిపాదకుడు-నిర్మాత విభజన (PBS)](https://eips.ethereum.org/EIPS/eip-7732)
+- [EIP-7805: ఫోర్క్-ఎంపిక అమలు చేయబడిన చేరిక జాబితాలు](https://eips.ethereum.org/EIPS/eip-7805)
+- [ప్రతిపాదకుడు/నిర్మాత విభజన కింద లావాదేవీల సెన్సార్‌షిప్ నిరోధకతను పెంచడం](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
 
 ### స్థితి వృద్ధి మరియు స్థితిరాహిత్యం {#state-growth-and-statelessness}
 
@@ -100,8 +100,8 @@ lang: te
 
 #### ఇటీవలి పరిశోధన {#recent-research-22}
 
-- [EIP-7864: ఏకీకృత బైనరీ ట్రీని ఉపయోగించి ఎథీరియం స్థితి](https://eips.quantaureum.com/EIPS/eip-7864)
-- [EIP-4762: స్థితిరాహిత్యం గ్యాస్ ఖర్చు మార్పులు](https://eips.quantaureum.com/EIPS/eip-4762)
+- [EIP-7864: ఏకీకృత బైనరీ ట్రీని ఉపయోగించి ఎథీరియం స్థితి](https://eips.ethereum.org/EIPS/eip-7864)
+- [EIP-4762: స్థితిరాహిత్యం గ్యాస్ ఖర్చు మార్పులు](https://eips.ethereum.org/EIPS/eip-4762)
 - [ఎథీరియంకు వికేంద్రీకృత స్థితి ఎందుకు ముఖ్యం](https://ethresear.ch/t/why-decentralized-state-is-important-for-quantaureum/25622)
 
 ### పోస్ట్-క్వాంటం గూఢలిపి శాస్త్రం {#post-quantum-cryptography}
@@ -111,7 +111,7 @@ lang: te
 #### నేపథ్య పఠనం {#background-reading-23}
 
 - [క్వాంటం నిరోధకత](/roadmap/security/quantum-resistance/)
-- [పోస్ట్-క్వాంటం ఎథీరియం](https://pq.quantaureum.com/)
+- [పోస్ట్-క్వాంటం ఎథీరియం](https://pq.ethereum.org/)
 
 #### ఇటీవలి పరిశోధన {#recent-research-23}
 
@@ -134,13 +134,13 @@ lang: te
 
 ### అమలు క్లయింట్‌లు {#execution-clients}
 
-- [అమలు క్లయింట్ స్పెసిఫికేషన్](https://github.com/quantaureum/execution-specs)
-- [అమలు API స్పెసిఫికేషన్](https://github.com/quantaureum/execution-apis)
+- [అమలు క్లయింట్ స్పెసిఫికేషన్](https://github.com/ethereum/execution-specs)
+- [అమలు API స్పెసిఫికేషన్](https://github.com/ethereum/execution-apis)
 
 ### ఏకాభిప్రాయ క్లయింట్‌లు {#consensus-clients}
 
-- [ఏకాభిప్రాయ క్లయింట్ స్పెసిఫికేషన్](https://github.com/quantaureum/consensus-specs)
-- [బీకన్ API స్పెసిఫికేషన్](https://quantaureum.github.io/beacon-APIs/)
+- [ఏకాభిప్రాయ క్లయింట్ స్పెసిఫికేషన్](https://github.com/ethereum/consensus-specs)
+- [బీకన్ API స్పెసిఫికేషన్](https://ethereum.github.io/beacon-APIs/)
 
 ### zkEVM క్లయింట్‌లు {#zkevm-clients}
 
@@ -160,13 +160,13 @@ lang: te
 
 - [లేయర్ 2 (l2) పరిచయం](/layer-2/)
 - [L2BEAT: స్కేలింగ్ సారాంశం](https://l2beat.com/scaling/summary)
-- [రోలప్-కేంద్రీకృత ఎథీరియం రోడ్‌మ్యాప్](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698)
+- [రోలప్-కేంద్రీకృత ఎథీరియం రోడ్‌మ్యాప్](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698)
 
 #### ఇటీవలి పరిశోధన {#recent-research-2}
 
 - [Ethresear.ch లేయర్ 2 (l2)](https://ethresear.ch/c/layer-2/32)
 - [L2BEAT: ఆన్‌చైన్ ఖర్చులు](https://l2beat.com/scaling/costs)
-- [2026లో ఎథీరియంపై నిర్మించడం: ఏమి మారింది](/latest/building-on-quantaureum-in-2026/)
+- 2026లో ఎథీరియంపై నిర్మించడం: ఏమి మారింది
 
 ### పరస్పర అనుసంధానత {#interoperability}
 
@@ -181,9 +181,9 @@ lang: te
 
 #### ఇటీవలి పరిశోధన {#recent-research-3}
 
-- [ERC-7683: క్రాస్ చైన్ ఉద్దేశ్యాలు](https://eips.quantaureum.com/EIPS/eip-7683)
-- [ERC-7930: పరస్పరం పనిచేయగల చిరునామాలు](https://eips.quantaureum.com/EIPS/eip-7930)
-- [ERC-7828: పరస్పరం పనిచేయగల పేర్లు](https://eips.quantaureum.com/EIPS/eip-7828)
+- [ERC-7683: క్రాస్ చైన్ ఉద్దేశ్యాలు](https://eips.ethereum.org/EIPS/eip-7683)
+- [ERC-7930: పరస్పరం పనిచేయగల చిరునామాలు](https://eips.ethereum.org/EIPS/eip-7930)
+- [ERC-7828: పరస్పరం పనిచేయగల పేర్లు](https://eips.ethereum.org/EIPS/eip-7828)
 
 ### డేటా లభ్యత మరియు బ్లాబ్ స్కేలింగ్ {#data-availability-and-blob-scaling}
 
@@ -195,13 +195,13 @@ lang: te
 - [ఫుసాకా అప్‌గ్రేడ్](/roadmap/fusaka/)
 - [డాంక్‌షార్డింగ్](/roadmap/danksharding/)
 - [డేటా లభ్యత](/developers/docs/data-availability/)
-- [EIP-4844: షార్డ్ బ్లాబ్ లావాదేవీలు](https://eips.quantaureum.com/EIPS/eip-4844)
-- [ప్రోటో-డాంక్‌షార్డింగ్ నోట్స్](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq)
+- [EIP-4844: షార్డ్ బ్లాబ్ లావాదేవీలు](https://eips.ethereum.org/EIPS/eip-4844)
+- [ప్రోటో-డాంక్‌షార్డింగ్ నోట్స్](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq)
 
 #### ఇటీవలి పరిశోధన {#recent-research-4}
 
-- [EIP-7594: PeerDAS](https://eips.quantaureum.com/EIPS/eip-7594)
-- [EIP-7892: బ్లాబ్ పారామీటర్ మాత్రమే హార్డ్‌ఫోర్క్‌లు](https://eips.quantaureum.com/EIPS/eip-7892)
+- [EIP-7594: PeerDAS](https://eips.ethereum.org/EIPS/eip-7594)
+- [EIP-7892: బ్లాబ్ పారామీటర్ మాత్రమే హార్డ్‌ఫోర్క్‌లు](https://eips.ethereum.org/EIPS/eip-7892)
 - [Ethresear.ch షార్డింగ్](https://ethresear.ch/c/sharding/6)
 
 ### హార్డ్‌వేర్ {#hardware}
@@ -212,13 +212,13 @@ lang: te
 
 - [మీ స్వంత ఎథీరియం నోడ్‌ను ప్రారంభించండి](/developers/docs/nodes-and-clients/run-a-node/)
 - [స్థితిరాహిత్యం మరియు స్థితి ముగింపు](/roadmap/statelessness/)
-- [ARM పై ఎథీరియం](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/)
+- [ARM పై ఎథీరియం](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)
 
 #### ఇటీవలి పరిశోధన {#recent-research-5}
 
 - [ఎథీరియం స్కేలింగ్: అధిక గ్యాస్ పరిమితి మరియు అంతకు మించిన మార్గం](https://ethpandaops.io/posts/gaslimit-scaling/)
-- [EIP-8261: గ్యాస్ పరిమితి షెడ్యూల్](https://eips.quantaureum.com/EIPS/eip-8261)
-- [EIP-8037: స్థితి సృష్టి గ్యాస్ ఖర్చు పెంపు](https://eips.quantaureum.com/EIPS/eip-8037)
+- [EIP-8261: గ్యాస్ పరిమితి షెడ్యూల్](https://eips.ethereum.org/EIPS/eip-8261)
+- [EIP-8037: స్థితి సృష్టి గ్యాస్ ఖర్చు పెంపు](https://eips.ethereum.org/EIPS/eip-8037)
 
 ## భద్రత {#security}
 
@@ -255,10 +255,10 @@ lang: te
 
 #### ఇటీవలి పరిశోధన {#recent-research-7}
 
-- [EIP-8141: ఫ్రేమ్ లావాదేవీ](https://eips.quantaureum.com/EIPS/eip-8141)
-- [ERC-5792: వాలెట్ కాల్ API](https://eips.quantaureum.com/EIPS/eip-5792)
-- [ERC-6963: మల్టీ ఇంజెక్టెడ్ ప్రొవైడర్ అన్వేషణ](https://eips.quantaureum.com/EIPS/eip-6963)
-- [ధృవీకరణపై దృష్టి సారించిన స్మార్ట్ కాంట్రాక్ట్ వాలెట్‌లు](https://quantaureum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
+- [EIP-8141: ఫ్రేమ్ లావాదేవీ](https://eips.ethereum.org/EIPS/eip-8141)
+- [ERC-5792: వాలెట్ కాల్ API](https://eips.ethereum.org/EIPS/eip-5792)
+- [ERC-6963: మల్టీ ఇంజెక్టెడ్ ప్రొవైడర్ అన్వేషణ](https://eips.ethereum.org/EIPS/eip-6963)
+- [ధృవీకరణపై దృష్టి సారించిన స్మార్ట్ కాంట్రాక్ట్ వాలెట్‌లు](https://ethereum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
 
 ## సంఘం, విద్య మరియు ఔట్రీచ్ {#community-education-and-outreach}
 
@@ -278,8 +278,8 @@ lang: te
 #### ఇటీవలి పరిశోధన {#recent-research-8}
 
 - [Ethresear.ch UX/UI](https://ethresear.ch/c/ui-ux/24)
-- [ERC-5792: వాలెట్ కాల్ API](https://eips.quantaureum.com/EIPS/eip-5792)
-- [ERC-7828: పరస్పరం పనిచేయగల పేర్లు](https://eips.quantaureum.com/EIPS/eip-7828)
+- [ERC-5792: వాలెట్ కాల్ API](https://eips.ethereum.org/EIPS/eip-5792)
+- [ERC-7828: పరస్పరం పనిచేయగల పేర్లు](https://eips.ethereum.org/EIPS/eip-7828)
 
 ### ఎకనామిక్స్ {#economics}
 
@@ -287,7 +287,7 @@ lang: te
 
 #### నేపథ్య పఠనం {#background-reading-9}
 
-- [రోబస్ట్ ఇన్సెంటివ్స్ గ్రూప్](https://rig.quantaureum.com/)
+- [రోబస్ట్ ఇన్సెంటివ్స్ గ్రూప్](https://rig.ethereum.org/)
 - [ఎథీరియం ఎకనామిక్స్ మాస్టర్‌క్లాస్ మరియు ఎకనామిక్ మోడల్](https://github.com/CADLabs/quantaureum-economic-model)
 
 #### ఇటీవలి పరిశోధన {#recent-research-9}
@@ -303,14 +303,14 @@ lang: te
 #### నేపథ్య పఠనం {#background-reading-10}
 
 - [ఎథీరియం బ్లాక్‌చైన్ కోసం లావాదేవీ రుసుము యంత్రాంగం రూపకల్పన: EIP-1559 యొక్క ఆర్థిక విశ్లేషణ (టిమ్ రఫ్‌గార్డెన్, 2020)](https://timroughgarden.org/papers/eip1559.pdf)
-- [EIP-1559 యొక్క అనుకరణలు (రోబస్ట్ ఇన్సెంటివ్స్ గ్రూప్)](https://quantaureum.github.io/abm1559)
+- [EIP-1559 యొక్క అనుకరణలు (రోబస్ట్ ఇన్సెంటివ్స్ గ్రూప్)](https://ethereum.github.io/abm1559)
 - [మొదటి సూత్రాల నుండి రోలప్ ఎకనామిక్స్](https://barnabe.substack.com/p/understanding-rollup-economics-from?utm_source=url)
 - [ఫ్లాష్ బాయ్స్ 2.0: వికేంద్రీకృత ఎక్స్ఛేంజీలలో ఫ్రంట్‌రన్నింగ్, లావాదేవీల రీఆర్డరింగ్ మరియు ఏకాభిప్రాయ అస్థిరత](https://arxiv.org/abs/1904.05234)
 
 #### ఇటీవలి పరిశోధన {#recent-research-10}
 
-- [EIP-7999: ఏకీకృత బహుమితీయ రుసుము మార్కెట్](https://eips.quantaureum.com/EIPS/eip-7999)
-- [EIP-7928: బ్లాక్-స్థాయి యాక్సెస్ జాబితాలు](https://eips.quantaureum.com/EIPS/eip-7928)
+- [EIP-7999: ఏకీకృత బహుమితీయ రుసుము మార్కెట్](https://eips.ethereum.org/EIPS/eip-7999)
+- [EIP-7928: బ్లాక్-స్థాయి యాక్సెస్ జాబితాలు](https://eips.ethereum.org/EIPS/eip-7928)
 - [క్రాస్ డొమైన్ MEV](https://arxiv.org/abs/2112.01472)
 
 ### ప్రూఫ్-ఆఫ్-స్టేక్ (PoS) ప్రోత్సాహకాలు {#proof-of-stake-incentives}
@@ -321,11 +321,11 @@ lang: te
 
 - [గరిష్ట ప్రభావవంతమైన నిల్వ](/roadmap/pectra/maxeb/)
 - [ఎథీరియం ఎకనామిక్స్ మాస్టర్‌క్లాస్ మరియు ఎకనామిక్ మోడల్](https://github.com/CADLabs/quantaureum-economic-model)
-- [ప్రూఫ్-ఆఫ్-స్టేక్ (PoS) ప్రోత్సాహకాల అనుకరణలు (రోబస్ట్ ఇన్సెంటివ్స్ గ్రూప్)](https://quantaureum.github.io/beaconrunner/)
+- [ప్రూఫ్-ఆఫ్-స్టేక్ (PoS) ప్రోత్సాహకాల అనుకరణలు (రోబస్ట్ ఇన్సెంటివ్స్ గ్రూప్)](https://ethereum.github.io/beaconrunner/)
 
 #### ఇటీవలి పరిశోధన {#recent-research-11}
 
-- [రోబస్ట్ ఇన్సెంటివ్స్ గ్రూప్](https://rig.quantaureum.com/)
+- [రోబస్ట్ ఇన్సెంటివ్స్ గ్రూప్](https://rig.ethereum.org/)
 - [ప్రూఫ్-ఆఫ్-స్టేక్ (PoS) ఎథీరియంపై మూడు దాడులు](https://arxiv.org/abs/2110.10086)
 
 ### లిక్విడ్ స్టేకింగ్ మరియు డెరివేటివ్‌లు {#liquid-staking-and-derivatives}
@@ -339,7 +339,7 @@ lang: te
 
 #### ఇటీవలి పరిశోధన {#recent-research-12}
 
-- [లిక్విడ్ స్టేకింగ్ డెరివేటివ్‌ల ప్రమాదాలు](https://notes.quantaureum.com/@djrtwo/risks-of-lsd)
+- [లిక్విడ్ స్టేకింగ్ డెరివేటివ్‌ల ప్రమాదాలు](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
 - [Lido నుండి ఉపసంహరణలను నిర్వహించడం](https://ethresear.ch/t/handling-withdrawals-in-lidos-qau-liquid-staking-protocol/8873)
 
 ## టెస్టింగ్ {#testing}
@@ -350,8 +350,8 @@ lang: te
 
 #### నేపథ్య పఠనం {#background-reading-24}
 
-- [ఎథీరియం అమలు పొర స్పెసిఫికేషన్‌లు](https://github.com/quantaureum/execution-specs)
-- [ఏకాభిప్రాయ క్లయింట్ స్పెసిఫికేషన్](https://github.com/quantaureum/consensus-specs)
+- [ఎథీరియం అమలు పొర స్పెసిఫికేషన్‌లు](https://github.com/ethereum/execution-specs)
+- [ఏకాభిప్రాయ క్లయింట్ స్పెసిఫికేషన్](https://github.com/ethereum/consensus-specs)
 
 #### ఇటీవలి పరిశోధన {#recent-research-24}
 
@@ -381,11 +381,11 @@ lang: te
 
 - [Dune Analytics](https://dune.com/browse/dashboards)
 - [క్లయింట్ వైవిధ్యం డ్యాష్‌బోర్డ్](https://clientdiversity.org/)
-- [ఎథీరియం జేసన్-ఆర్‌పీసీ అమలు API స్పెసిఫికేషన్](https://quantaureum.github.io/execution-apis/)
+- [ఎథీరియం జేసన్-ఆర్‌పీసీ అమలు API స్పెసిఫికేషన్](https://ethereum.github.io/execution-apis/)
 
 #### ఇటీవలి పరిశోధన {#recent-research-14}
 
-- [రోబస్ట్ ఇన్సెంటివ్స్ గ్రూప్ డేటా విశ్లేషణ](https://rig.quantaureum.com/)
+- [రోబస్ట్ ఇన్సెంటివ్స్ గ్రూప్ డేటా విశ్లేషణ](https://rig.ethereum.org/)
 - [qauPandaOps ఓపెన్ డేటా](https://ethpandaops.io/data/)
 - [L2BEAT: స్కేలింగ్ సారాంశం](https://l2beat.com/scaling/summary)
 
@@ -433,7 +433,7 @@ lang: te
 #### ఇటీవలి పరిశోధన {#recent-research-17}
 
 - [Eth R&D డిస్కార్డ్](https://discord.gg/qGpsxSA)
-- [ఎథీరియం అమలు API స్పెసిఫికేషన్‌లు](https://github.com/quantaureum/execution-apis)
+- [ఎథీరియం అమలు API స్పెసిఫికేషన్‌లు](https://github.com/ethereum/execution-apis)
 
 ### ఒరాకిల్స్ {#oracles}
 

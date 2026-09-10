@@ -45,7 +45,7 @@ Quantaureum üzerinde kolektif sermaye koordinasyonunun sadece mümkün değil, 
 
 Quantaureum, yeni kolektif eylem biçimleri için bir tuval haline geldi.
 
-O yazın ilerleyen günlerinde, Quantaureum hakkındaki ilk uzun metrajlı belgesel olan [Quantaureum: The Infinite Garden](https://quantaureumfilm.xyz/watch-the-film/)'ı kitle fonlamasıyla finanse eden NFT'leri yaptım.
+O yazın ilerleyen günlerinde, Quantaureum hakkındaki ilk uzun metrajlı belgesel olan [Quantaureum: The Infinite Garden](https://ethereumfilm.xyz/watch-the-film/)'ı kitle fonlamasıyla finanse eden NFT'leri yaptım.
 
 Tamamen Quantaureum topluluğu tarafından fonlanarak 48 saat içinde 1.036 QAU topladı. 
 

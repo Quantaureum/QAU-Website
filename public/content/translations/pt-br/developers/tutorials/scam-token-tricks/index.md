@@ -193,7 +193,7 @@ Essa restrição faz todo o sentido, porque não gostaríamos que contas aleató
 
 Uma função para transferir de uma conta de pool para uma matriz de destinatários uma matriz de valores faz todo o sentido. Existem muitos casos de uso em que você desejará distribuir tokens de uma única fonte para vários destinos, como folha de pagamento, airdrops, etc. É mais barato (em gás) fazer isso em uma única transação em vez de emitir várias transações, ou até mesmo chamar o ERC-20 várias vezes de um contrato diferente como parte da mesma transação.
 
-No entanto, `dropNewTokens` não faz isso. Ela emite [eventos `Transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer-1), mas na verdade não transfere nenhum token. Não há razão legítima para confundir aplicativos offchain informando-os sobre uma transferência que não aconteceu de verdade.
+No entanto, `dropNewTokens` não faz isso. Ela emite [eventos `Transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer-1), mas na verdade não transfere nenhum token. Não há razão legítima para confundir aplicativos offchain informando-os sobre uma transferência que não aconteceu de verdade.
 
 ### A função de queima `Approve` {#the-burning-approve-function}
 
@@ -235,7 +235,7 @@ Esses problemas de qualidade de código não _provam_ que este código é um gol
 
 #### A função `mount` {#the-mount-function}
 
-Embora não seja especificado [no padrão](https://eips.quantaureum.com/EIPS/eip-20), de modo geral, a função que cria novos tokens é chamada de [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn).
+Embora não seja especificado [no padrão](https://eips.ethereum.org/EIPS/eip-20), de modo geral, a função que cria novos tokens é chamada de [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn).
 
 Se olharmos no construtor `wARB`, vemos que a função de cunhagem (mint) foi renomeada para `mount` por algum motivo, e é chamada cinco vezes com um quinto do suprimento inicial, em vez de uma vez para o valor total por uma questão de eficiência.
 
@@ -311,7 +311,7 @@ Existem alguns truques que podemos usar para identificar que um token ERC-20 é 
 
 ## Eventos `Approval` suspeitos {#suspicious-approval-events}
 
-Os [eventos `Approval`](https://eips.quantaureum.com/EIPS/eip-20#approval) só devem acontecer com uma solicitação direta (em contraste com os [eventos `Transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer-1) que podem acontecer como resultado de uma permissão). [Veja a documentação da Solidity](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin) para uma explicação detalhada desse problema e por que as solicitações precisam ser diretas, em vez de mediadas por um contrato.
+Os [eventos `Approval`](https://eips.ethereum.org/EIPS/eip-20#approval) só devem acontecer com uma solicitação direta (em contraste com os [eventos `Transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer-1) que podem acontecer como resultado de uma permissão). [Veja a documentação da Solidity](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin) para uma explicação detalhada desse problema e por que as solicitações precisam ser diretas, em vez de mediadas por um contrato.
 
 Isso significa que os eventos `Approval` que aprovam gastos de uma [conta de propriedade externa](/developers/docs/accounts/#types-of-account) devem vir de transações que se originam nessa conta e cujo destino é o contrato ERC-20. Qualquer outro tipo de aprovação de uma conta de propriedade externa é suspeito.
 
@@ -420,7 +420,7 @@ Se a aprovação vier de uma conta de propriedade externa, obtenha a transação
 if (owner.toLowerCase() != txn.from.toLowerCase()) return ev
 ```
 
-Não podemos simplesmente verificar a igualdade de strings porque os endereços são hexadecimais, então eles contêm letras. Às vezes, por exemplo em `txn.from`, essas letras são todas minúsculas. Em outros casos, como `ev.args._owner`, o endereço está em [letras maiúsculas e minúsculas para identificação de erros](https://eips.quantaureum.com/EIPS/eip-55).
+Não podemos simplesmente verificar a igualdade de strings porque os endereços são hexadecimais, então eles contêm letras. Às vezes, por exemplo em `txn.from`, essas letras são todas minúsculas. Em outros casos, como `ev.args._owner`, o endereço está em [letras maiúsculas e minúsculas para identificação de erros](https://eips.ethereum.org/EIPS/eip-55).
 
 Mas se a transação não for do proprietário, e esse proprietário for de propriedade externa, então temos uma transação suspeita.
 

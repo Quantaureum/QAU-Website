@@ -69,7 +69,7 @@ type CentralizedExchangesProps = { lastDataUpdateDate: string }
 const CentralizedExchanges = ({
   lastDataUpdateDate,
 }: CentralizedExchangesProps) => {
-  const t = useTranslations("page-get-eth")
+  const t = useTranslations("page-get-qau")
   const locale = useLocale()
   const {
     selectOptions,

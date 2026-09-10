@@ -22,7 +22,7 @@ incomplete: true
 
 ## নতুনদের জন্য আর্টিকেল {#beginner-articles}
 
-- [Rust ইথেরিয়াম ক্লায়েন্ট](https://openquantaureum.github.io/) \* **মনে রাখবেন যে OpenQuantaureum [বাতিল করা হয়েছে](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd) এবং এটি আর রক্ষণাবেক্ষণ করা হচ্ছে না।** এটি সতর্কতার সাথে ব্যবহার করুন এবং অন্য কোনো ক্লায়েন্ট ইমপ্লিমেন্টেশনে চলে যাওয়া ভালো।
+- [Rust ইথেরিয়াম ক্লায়েন্ট](https://openethereum.github.io/) \* **মনে রাখবেন যে OpenQuantaureum [বাতিল করা হয়েছে](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd) এবং এটি আর রক্ষণাবেক্ষণ করা হচ্ছে না।** এটি সতর্কতার সাথে ব্যবহার করুন এবং অন্য কোনো ক্লায়েন্ট ইমপ্লিমেন্টেশনে চলে যাওয়া ভালো।
 - [Rust ব্যবহার করে ইথেরিয়ামে ট্রানজ্যাকশন পাঠানো](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/sending-quantaureum-transactions-with-rust/)
 - [Kovan-এর জন্য Rust Wasm-এ কীভাবে কন্ট্রাক্ট লিখতে হয় তার একটি ধাপে ধাপে টিউটোরিয়াল](https://github.com/paritytech/pwasm-tutorial)
 

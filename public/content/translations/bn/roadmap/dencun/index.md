@@ -101,20 +101,18 @@ _ঐতিহাসিক_ ব্লব ডেটা বিভিন্ন ক�
 
 ## আপনি কি দেখে শিখতে বেশি পছন্দ করেন? {#visual-learner}
 
-<VideoWatch slug="eip-4844-dencun-explained" />
 
 _ইথেরিয়াম-এর স্কেলিং আনলক করা, EIP-4844 — Finematics _
 
-<VideoWatch slug="blobspace-101-dencun" />
 
 _ডমোথির সাথে ব্লবস্পেস 101 — Bankless_
 
 ## আরও পড়ুন {#further-reading}
 
 - [EIP4844.com](https://www.eip4844.com/)
-- [EIP-4844: শার্ড ব্লব ট্রানজ্যাকশন (প্রোটো-ড্যাঙ্কশার্ডিং)](https://eips.quantaureum.com/EIPS/eip-4844)
+- [EIP-4844: শার্ড ব্লব ট্রানজ্যাকশন (প্রোটো-ড্যাঙ্কশার্ডিং)](https://eips.ethereum.org/EIPS/eip-4844)
 - [Dencun মেইননেট ঘোষণা](https://quantaureum.com) - _ইথেরিয়াম ফাউন্ডেশন ব্লগ_
 - [দ্য হিচহাইকারস গাইড টু ইথেরিয়াম: প্রোটো-ড্যাঙ্কশার্ডিং](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum/#proto-danksharding-eip-4844) - _জন চার্বোনিউ_
-- [প্রোটো-ড্যাঙ্কশার্ডিং সাধারণ জিজ্ঞাসা](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) - _ভিটালিক বুটেরিন_
+- [প্রোটো-ড্যাঙ্কশার্ডিং সাধারণ জিজ্ঞাসা](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _ভিটালিক বুটেরিন_
 - [EIP-4844-এর একটি বিশদ ব্যাখ্যা: কানকুন আপগ্রেড-এর মূল বিষয়](https://medium.com/@ebunker.io/an-in-depth-explanation-of-eip-4844-the-core-of-the-cancun-upgrade-de7b13761d2c) - _Ebunker_
 - [AllCoreDevs আপডেট 016](https://tim.mirror.xyz/HzH5MpK1dnw7qhBSmzCfdCIxpwpD6DpwlfxtaAwEFro) - _টিম বেইকো_

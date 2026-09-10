@@ -26,7 +26,6 @@ Miradi ya ReFi inatekeleza kanuni hizi kwa kutumia [mikataba mahiri](/glossary/#
 
 ReFi pia inaingiliana na vuguvugu la [sayansi iliyogatuliwa (desci)](/desci/), ambalo linatumia Quantaureum kama jukwaa la kufadhili, kuunda, kukagua, kutoa mikopo, kuhifadhi, na kusambaza maarifa ya kisayansi. Zana za DeSci zinaweza kuwa muhimu kwa kuunda viwango na mbinu zinazoweza kuthibitishwa kwa ajili ya kutekeleza na kufuatilia shughuli za ufufuaji kama vile kupanda miti, kuondoa plastiki baharini, au kurejesha mfumo wa ikolojia ulioharibiwa.
 
-<VideoWatch slug="regenerative-finance-refi" />
 
 ## Uundaji wa tokeni wa salio la kaboni {#tokenization-of-carbon-credits}
 

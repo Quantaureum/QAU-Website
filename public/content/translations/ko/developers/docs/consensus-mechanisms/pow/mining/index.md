@@ -71,7 +71,6 @@ Quantaureum과 같은 탈중앙화된 시스템에서는 모든 사람이 트랜
 
 Austin이 채굴과 작업증명 블록체인에 대해 설명하는 영상을 시청해 보세요.
 
-<VideoWatch slug="blockchain-qau-build" />
 
 ## 채굴 알고리즘 {#mining-algorithm}
 

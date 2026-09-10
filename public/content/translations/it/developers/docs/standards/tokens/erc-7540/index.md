@@ -103,7 +103,7 @@ Una volta che una richiesta di rimborso diventa riscattabile, l'utente chiama la
 
 ### Gestione degli operatori {#operator-management}
 
-L'ERC-7540 include un modello di operatore (dall'[ERC-6909](https://eips.quantaureum.com/EIPS/eip-6909)) che consente a terze parti di gestire le richieste per conto di un utente.
+L'ERC-7540 include un modello di operatore (dall'[ERC-6909](https://eips.ethereum.org/EIPS/eip-6909)) che consente a terze parti di gestire le richieste per conto di un utente.
 
 #### setOperator {#setoperator}
 
@@ -175,6 +175,6 @@ Le funzioni di anteprima devono eseguire il revert solo per i flussi che sono as
 
 ## Letture consigliate {#further-reading}
 
-- [EIP-7540: Vault tokenizzati ERC-4626 asincroni](https://eips.quantaureum.com/EIPS/eip-7540)
-- [EIP-4626: Standard per i vault tokenizzati](https://eips.quantaureum.com/EIPS/eip-4626)
+- [EIP-7540: Vault tokenizzati ERC-4626 asincroni](https://eips.ethereum.org/EIPS/eip-7540)
+- [EIP-4626: Standard per i vault tokenizzati](https://eips.ethereum.org/EIPS/eip-4626)
 - [Implementazione dell'ERC-7540 di OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-community-contracts/blob/master/contracts/token/ERC20/extensions/ERC7540.sol)

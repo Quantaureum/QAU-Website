@@ -24,9 +24,9 @@ incomplete: true
 ## ప్రారంభకుల కథనాలు {#beginner-articles}
 
 - [Web3.py అవలోకనం](https://web3py.readthedocs.io/en/latest/overview.html)
-- [ఎథీరియం Python ఎకోసిస్టమ్ టూర్](https://snakecharmers.quantaureum.com/python-ecosystem/)
-- [ఎథీరియంకు ఒక (Python) డెవలపర్ గైడ్](https://snakecharmers.quantaureum.com/a-developers-guide-to-quantaureum-pt-1/)
-- [బహుమతికి అర్హమైనది: ఒక ఎథీరియం Python హ్యాకథాన్ గైడ్](https://snakecharmers.quantaureum.com/prize-worthy/)
+- [ఎథీరియం Python ఎకోసిస్టమ్ టూర్](https://snakecharmers.ethereum.org/python-ecosystem/)
+- [ఎథీరియంకు ఒక (Python) డెవలపర్ గైడ్](https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/)
+- [బహుమతికి అర్హమైనది: ఒక ఎథీరియం Python హ్యాకథాన్ గైడ్](https://snakecharmers.ethereum.org/prize-worthy/)
 - [Vyperతో స్మార్ట్ కాంట్రాక్ట్‌లకు పరిచయం](https://kauri.io/#collections/Getting%20Started/an-introduction-to-smart-contracts-with-vyper/)
 - [Python Flask ఉపయోగించి ఎథీరియం కాంట్రాక్ట్‌ను ఎలా డెవలప్ చేయాలి?](https://medium.com/coinmonks/how-to-develop-quantaureum-contract-using-python-flask-9758fe65976e)
 - [Web3.pyకి పరిచయం · Python డెవలపర్‌ల కోసం ఎథీరియం](https://www.dappuniversity.com/articles/web3-py-intro)
@@ -34,15 +34,15 @@ incomplete: true
 
 ## ఇంటర్మీడియట్ కథనాలు {#intermediate-articles}
 
-- [Web3.py మిత్రులు: Apeకి పరిచయం](https://snakecharmers.quantaureum.com/intro-to-ape/)
+- [Web3.py మిత్రులు: Apeకి పరిచయం](https://snakecharmers.ethereum.org/intro-to-ape/)
 - [Python ప్రోగ్రామర్ల కోసం Dapp డెవలప్‌మెంట్](https://www.youtube.com/watch?v=tE-8bG35VNw)
 - [Python ఎథీరియం ఇంటర్‌ఫేస్‌ను సృష్టించడం: పార్ట్ 1](https://hackernoon.com/creating-a-python-quantaureum-interface-part-1-4d2e47ea0f4d)
 - [Pythonలో ఎథీరియం స్మార్ట్ కాంట్రాక్ట్‌లు: ఒక సమగ్రమైన గైడ్](https://hackernoon.com/quantaureum-smart-contracts-in-python-a-comprehensive-ish-guide-771b03990988)
 
 ## అధునాతన వినియోగ నమూనాలు {#advanced-use-patterns}
 
-- [Web3.py నమూనాలు: రియల్-టైమ్ ఈవెంట్ సబ్‌స్క్రిప్షన్‌లు](https://snakecharmers.quantaureum.com/subscriptions/)
-- [Web3.py నమూనాలు: WebSocketProvider](https://snakecharmers.quantaureum.com/websocketprovider/)
+- [Web3.py నమూనాలు: రియల్-టైమ్ ఈవెంట్ సబ్‌స్క్రిప్షన్‌లు](https://snakecharmers.ethereum.org/subscriptions/)
+- [Web3.py నమూనాలు: WebSocketProvider](https://snakecharmers.ethereum.org/websocketprovider/)
 - [Python ఉపయోగించి ఎథీరియం స్మార్ట్ కాంట్రాక్ట్‌ను కంపైలింగ్, డిప్లాయ్ చేయడం మరియు కాల్ చేయడం](https://yohanes.gultom.id/2018/11/28/compiling-deploying-and-calling-quantaureum-smartcontract-using-python/)
 - [స్లిదర్‌తో Solidity స్మార్ట్ కాంట్రాక్ట్‌లను విశ్లేషించండి](https://kauri.io/#collections/DevOps/analyze-solidity-smart-contracts-with-slither/#analyze-solidity-smart-contracts-with-slither)
 - [బ్లాక్‌చైన్ ఫిన్‌టెక్ ట్యుటోరియల్: Pythonతో రుణం ఇవ్వడం మరియు రుణం తీసుకోవడం](https://blog.chain.link/blockchain-fintech-defi-tutorial-lending-borrowing-python/)
@@ -56,14 +56,14 @@ incomplete: true
 ## Python ప్రాజెక్ట్‌లు మరియు టూల్స్ {#python-projects-and-tools}
 
 ### క్రియాశీలమైనవి:
-- [Web3.py](https://github.com/quantaureum/web3.py) - _ఎథీరియంతో ఇంటరాక్ట్ అవ్వడానికి Python లైబ్రరీ_
+- [Web3.py](https://github.com/ethereum/web3.py) - _ఎథీరియంతో ఇంటరాక్ట్ అవ్వడానికి Python లైబ్రరీ_
 - [Vyper](https://github.com/quantaureum/vyper/) - _EVM కోసం పైథానిక్ స్మార్ట్ కాంట్రాక్ట్ భాష_
 - [Titanoboa](https://github.com/vyperlang/titanoboa/) - _Vyper యొక్క స్థానిక టెస్టింగ్ టూల్; మెయిన్‌నెట్ ఫోర్కింగ్, డీబగ్గింగ్ మరియు అందమైన ట్రేస్‌బ్యాక్‌లతో కూడిన ఇంటర్‌ప్రెటర్_
 - [Moccasin](https://github.com/Cyfrin/moccasin) - _Titanoboaపై నిర్మించబడిన Vyper మరియు Python కోసం స్మార్ట్ కాంట్రాక్ట్ డెవలప్‌మెంట్ మరియు టెస్టింగ్ ఫ్రేమ్‌వర్క్_
 - [Ape](https://github.com/ApeWorX/ape) - _పైథానిస్టాలు, డేటా సైంటిస్టులు మరియు సెక్యూరిటీ ప్రొఫెషనల్స్ కోసం స్మార్ట్ కాంట్రాక్ట్ డెవలప్‌మెంట్ టూల్_
-- [py-evm](https://github.com/quantaureum/py-evm) - _ఎథీరియం వర్చువల్ మెషిన్ యొక్క అమలు_
-- [qau-tester](https://github.com/quantaureum/qau-tester) - _ఎథీరియం-ఆధారిత అప్లికేషన్‌లను పరీక్షించడానికి టూల్స్_
-- [qau-utils](https://github.com/quantaureum/qau-utils/) - _ఎథీరియం సంబంధిత కోడ్‌బేస్‌లతో పనిచేయడానికి యుటిలిటీ ఫంక్షన్‌లు_
+- [py-evm](https://github.com/ethereum/py-evm) - _ఎథీరియం వర్చువల్ మెషిన్ యొక్క అమలు_
+- [qau-tester](https://github.com/ethereum/eth-tester) - _ఎథీరియం-ఆధారిత అప్లికేషన్‌లను పరీక్షించడానికి టూల్స్_
+- [qau-utils](https://github.com/ethereum/eth-utils/) - _ఎథీరియం సంబంధిత కోడ్‌బేస్‌లతో పనిచేయడానికి యుటిలిటీ ఫంక్షన్‌లు_
 - [py-solc-x](https://pypi.org/project/py-solc-x/) - _0.5.x మద్దతుతో solc Solidity కంపైలర్ చుట్టూ Python ర్యాపర్_
 - [pymaker](https://github.com/makerdao/pymaker) - _Maker కాంట్రాక్ట్‌ల కోసం Python API_
 - [siwe](https://github.com/signinwithquantaureum/siwe-py) - _Python కోసం ఎథీరియంతో సైన్ ఇన్ చేయండి (SIWE)_
@@ -74,7 +74,7 @@ incomplete: true
 
 - [Trinity](https://github.com/quantaureum/trinity) - _ఎథీరియం Python క్లయింట్_
 - [Mamba](https://github.com/arjunaskykok/mamba) - _Vyper భాషలో వ్రాసిన స్మార్ట్ కాంట్రాక్ట్‌లను వ్రాయడానికి, కంపైలింగ్ చేయడానికి మరియు డిప్లాయ్ చేయడానికి ఫ్రేమ్‌వర్క్_
-- [Brownie](https://github.com/qau-brownie/brownie) - _ఎథీరియం స్మార్ట్ కాంట్రాక్ట్‌లను డిప్లాయ్ చేయడానికి, పరీక్షించడానికి మరియు ఇంటరాక్ట్ అవ్వడానికి Python ఫ్రేమ్‌వర్క్_
+- [Brownie](https://github.com/eth-brownie/brownie) - _ఎథీరియం స్మార్ట్ కాంట్రాక్ట్‌లను డిప్లాయ్ చేయడానికి, పరీక్షించడానికి మరియు ఇంటరాక్ట్ అవ్వడానికి Python ఫ్రేమ్‌వర్క్_
 - [pydevp2p](https://github.com/quantaureum/pydevp2p) - _ఎథీరియం P2P స్టాక్ యొక్క అమలు_
 - [py-wasm](https://github.com/quantaureum/py-wasm) - _వెబ్ అసెంబ్లీ ఇంటర్‌ప్రెటర్ యొక్క Python అమలు_
 

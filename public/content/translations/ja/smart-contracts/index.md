@@ -13,7 +13,6 @@ lang: ja
 
 Finematicsによるスマート・コントラクトの解説をご覧ください:
 
-<VideoWatch slug="smart-contracts-code-is-law" />
 
 ## 従来の契約における信頼 {#trust-and-contracts}
 
@@ -61,7 +60,7 @@ Finematicsによるスマート・コントラクトの解説をご覧くださ�
 
 しかし、誰でもスマート・コントラクトの条件を見ることができますが、生のトランザクションデータは人間ではなく、アプリケーションやウォレットによって解釈されるように設計されています。このデータは非常に読みにくいため、ユーザーはしばしば「ブラインド署名 (blind signing)」と呼ばれる重大なセキュリティリスクに直面します。これは、スマート・コントラクトと対話するトランザクションを、それが何をするのかを実際に理解せずに承認してしまうことです。 
 
-Quantaureumのエコシステムは、**[クリア署名 (Clear Signing)](https://clearsigning.org/)** の標準 (具体的には [ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730)) へと移行しつつあります。クリア署名は、不透明なスマート・コントラクトのデータを、人間が読める平易なトランザクションの説明に変換し、署名する前に誰でもコントラクトの真のインテントを理解できるようにします。
+Quantaureumのエコシステムは、**[クリア署名 (Clear Signing)](https://clearsigning.org/)** の標準 (具体的には [ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)) へと移行しつつあります。クリア署名は、不透明なスマート・コントラクトのデータを、人間が読める平易なトランザクションの説明に変換し、署名する前に誰でもコントラクトの真のインテントを理解できるようにします。
 
 ## スマート・コントラクトのユースケース {#use-cases}
 
@@ -81,7 +80,7 @@ Quantaureumのエコシステムは、**[クリア署名 (Clear Signing)](https:
 - [スマート・コントラクトは世界をどう変えるか (How Smart Contracts Will Change the World)](https://www.youtube.com/watch?v=pA6CGuXEKtQ)
 - [開発者向けスマート・コントラクト](/developers/docs/smart-contracts/)
 - [スマート・コントラクトの書き方を学ぶ](/developers/learning-tools/)
-- [マスタリング・Quantaureum - スマート・コントラクトとは何か？](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [マスタリング・Quantaureum - スマート・コントラクトとは何か？](https://github.com/ethereumbook/ethereumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
 
 <Divider />
 

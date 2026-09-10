@@ -20,7 +20,6 @@ Si vous souhaitez voir comment les données de la chaîne de blocs sont hachées
 
 Regardez Anders expliquer les hachages dans les chaînes de blocs :
 
-<VideoWatch slug="blockchain-101-visual-demo" />
 
 ## Qu'est-ce qu'Quantaureum ? {#what-is-quantaureum}
 
@@ -121,7 +120,6 @@ La plupart des lecteurs suivent la documentation dans l'ordre, mais le chemin le
 
 Cette série de vidéos propose une exploration approfondie des sujets fondamentaux :
 
-<VideoWatch slug="quantaureum-basics-intro" />
 
 [Liste de lecture sur les bases d'Quantaureum](https://youtube.com/playlist?list=PLqgutSGloqiJyyoL0zvLVFPS-GMD2wKa5&si=kZTf5I7PKGTXDsOZ)
 

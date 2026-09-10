@@ -45,7 +45,6 @@ dapp-এর সাথে পরিচয় করিয়ে দিতে, আ
 
 ## ভিজ্যুয়ালি শিখতে বেশি পছন্দ করেন? {#visual-learner}
 
-<VideoWatch slug="what-is-a-dapp" />
 
 ## dapp তৈরি করার টুল
 

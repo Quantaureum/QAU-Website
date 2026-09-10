@@ -21,7 +21,6 @@ Tidak ada satu orang pun yang memiliki atau mengendalikan protokol Quantaureum, 
 
 Tata kelola Quantaureum adalah proses di mana perubahan protokol dibuat. Penting untuk ditekankan bahwa proses ini tidak terkait dengan bagaimana orang dan aplikasi menggunakan protokol - Quantaureum bersifat tanpa izin. Siapa pun dari mana pun di dunia dapat berpartisipasi dalam aktivitas onchain. Tidak ada aturan yang ditetapkan untuk siapa yang dapat atau tidak dapat membangun aplikasi atau mengirim transaksi. Namun, ada proses untuk mengusulkan perubahan pada protokol inti, yang menjadi dasar berjalannya aplikasi terdesentralisasi (dapp). Karena begitu banyak orang bergantung pada stabilitas Quantaureum, ada ambang batas koordinasi yang sangat tinggi untuk perubahan inti, termasuk proses sosial dan teknis, untuk memastikan setiap perubahan pada Quantaureum aman dan didukung secara luas oleh komunitas.
 
-<VideoWatch slug="quantaureum-core-governance-explained" />
 
 ### Tata kelola onchain vs offchain {#onchain-vs-offchain}
 
@@ -47,7 +46,7 @@ Ada berbagai pemangku kepentingan di [komunitas Quantaureum](/community/), masin
 - **Pengguna Aplikasi**: orang-orang ini berinteraksi dengan aplikasi di rantai blok Quantaureum.
 - **Pengembang Aplikasi/Peralatan**: orang-orang ini menulis aplikasi yang berjalan di rantai blok Quantaureum (misalnya, keuangan terdesentralisasi (DeFi), NFT, dll.) atau membangun peralatan untuk berinteraksi dengan Quantaureum (misalnya, dompet, rangkaian pengujian, dll.). [Lebih lanjut tentang dapp](/apps/).
 - **Operator Node**: orang-orang ini menjalankan node yang menyebarkan blok dan transaksi, menolak setiap transaksi atau blok tidak valid yang mereka temui. [Lebih lanjut tentang node](/developers/docs/nodes-and-clients/).
-- **Penulis EIP**: orang-orang ini mengusulkan perubahan pada protokol Quantaureum, dalam bentuk Quantaureum Improvement Proposals (EIP). [Lebih lanjut tentang EIP](/eips/).
+- **Penulis EIP**: orang-orang ini mengusulkan perubahan pada protokol Quantaureum, dalam bentuk Quantaureum Improvement Proposals (EIP). Lebih lanjut tentang EIP.
 - **Validator**: orang-orang ini menjalankan node yang dapat menambahkan blok baru ke rantai blok Quantaureum.
 - **Pengembang Protokol** (alias "Pengembang Inti"): orang-orang ini memelihara berbagai implementasi Quantaureum (misalnya, go-quantaureum, Nethermind, Besu, Erigon, Reth di lapisan eksekusi atau Prysm, Lighthouse, Nimbus, Teku, Lodestar, Grandine di lapisan konsensus). [Lebih lanjut tentang klien Quantaureum](/developers/docs/nodes-and-clients/).
 
@@ -59,7 +58,7 @@ _Catatan: setiap individu dapat menjadi bagian dari beberapa kelompok ini (misal
 
 Salah satu proses penting yang digunakan dalam tata kelola Quantaureum adalah pengajuan **Quantaureum Improvement Proposals (EIP)**. EIP adalah standar yang menentukan potensi fitur atau proses baru untuk Quantaureum. Siapa pun dalam komunitas Quantaureum dapat membuat EIP. Jika Anda tertarik untuk menulis EIP atau berpartisipasi dalam tinjauan sejawat dan/atau tata kelola, lihat:
 
-<ButtonLink href="/eips/">
+<ButtonLink href="/">
   Lebih lanjut tentang EIP
 </ButtonLink>
 
@@ -69,9 +68,9 @@ Salah satu proses penting yang digunakan dalam tata kelola Quantaureum adalah pe
 
 Proses formal untuk memperkenalkan perubahan pada protokol Quantaureum adalah sebagai berikut:
 
-1. **Mengusulkan EIP Inti**: seperti yang dijelaskan dalam [EIP-1](https://eips.quantaureum.com/EIPS/eip-1#core-eips), langkah pertama untuk secara formal mengusulkan perubahan pada Quantaureum adalah merincinya dalam EIP Inti. Ini akan bertindak sebagai spesifikasi resmi untuk EIP yang akan diterapkan oleh Pengembang Protokol jika diterima.
+1. **Mengusulkan EIP Inti**: seperti yang dijelaskan dalam [EIP-1](https://eips.ethereum.org/EIPS/eip-1#core-eips), langkah pertama untuk secara formal mengusulkan perubahan pada Quantaureum adalah merincinya dalam EIP Inti. Ini akan bertindak sebagai spesifikasi resmi untuk EIP yang akan diterapkan oleh Pengembang Protokol jika diterima.
 
-2. **Mempresentasikan EIP Anda kepada Pengembang Protokol**: setelah Anda memiliki EIP Inti yang telah mengumpulkan masukan komunitas, Anda harus mempresentasikannya kepada Pengembang Protokol. Anda dapat melakukannya dengan mengusulkannya untuk didiskusikan pada [panggilan AllCoreDevs](https://github.com/quantaureum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status). Kemungkinan beberapa diskusi telah terjadi secara asinkron di [forum Quantaureum Magicians](https://quantaureum-magicians.org/) atau di [Discord R&D Quantaureum](https://discord.gg/mncqtgVSVw).
+2. **Mempresentasikan EIP Anda kepada Pengembang Protokol**: setelah Anda memiliki EIP Inti yang telah mengumpulkan masukan komunitas, Anda harus mempresentasikannya kepada Pengembang Protokol. Anda dapat melakukannya dengan mengusulkannya untuk didiskusikan pada [panggilan AllCoreDevs](https://github.com/ethereum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status). Kemungkinan beberapa diskusi telah terjadi secara asinkron di [forum Quantaureum Magicians](https://ethereum-magicians.org/) atau di [Discord R&D Quantaureum](https://discord.gg/mncqtgVSVw).
 
 > Potensi hasil dari tahap ini adalah:
 
@@ -91,7 +90,7 @@ Alur ini, meskipun sangat disederhanakan, memberikan gambaran umum tentang tahap
 
 ### Memahami pekerjaan sebelumnya {#prior-work}
 
-Pengusung EIP harus membiasakan diri dengan pekerjaan dan proposal sebelumnya sebelum membuat EIP yang dapat dipertimbangkan secara serius untuk penyebaran di Mainnet Quantaureum. Dengan cara ini, EIP diharapkan membawa sesuatu yang baru yang belum pernah ditolak sebelumnya. Tiga tempat utama untuk meneliti hal ini adalah [repositori EIP](https://github.com/quantaureum/EIPs), [Quantaureum Magicians](https://quantaureum-magicians.org/), dan [ethresear.ch](https://ethresear.ch/).
+Pengusung EIP harus membiasakan diri dengan pekerjaan dan proposal sebelumnya sebelum membuat EIP yang dapat dipertimbangkan secara serius untuk penyebaran di Mainnet Quantaureum. Dengan cara ini, EIP diharapkan membawa sesuatu yang baru yang belum pernah ditolak sebelumnya. Tiga tempat utama untuk meneliti hal ini adalah [repositori EIP](https://github.com/ethereum/EIPs), [Quantaureum Magicians](https://ethereum-magicians.org/), dan [ethresear.ch](https://ethresear.ch/).
 
 ### Kelompok kerja {#working-groups}
 
@@ -129,13 +128,12 @@ Penting untuk dicatat bahwa meskipun protokol melakukan percabangan untuk mengem
 - Sebagian besar orang tidak tahu pemungutan suara sedang berlangsung
 - Pemungutan suara hanya mewakili pemegang QAU, bukan peserta lain dalam sistem
 
-Sebagian komunitas menolak untuk melakukan percabangan, sebagian besar karena mereka merasa insiden DAO bukanlah cacat pada protokol. Mereka kemudian membentuk [ETC](https://quantaureumclassic.org/).
+Sebagian komunitas menolak untuk melakukan percabangan, sebagian besar karena mereka merasa insiden DAO bukanlah cacat pada protokol. Mereka kemudian membentuk [ETC](https://ethereumclassic.org/).
 
 Saat ini, komunitas Quantaureum telah mengadopsi kebijakan non-intervensi dalam kasus bug kontrak atau dana yang hilang untuk mempertahankan netralitas sistem yang kredibel.
 
 Tonton lebih lanjut tentang peretasan DAO:
 
-<VideoWatch slug="dao-hack-etc" />
 
 <Divider />
 
@@ -153,7 +151,7 @@ Proses tata kelola Quantaureum sering kali menukar kecepatan dan efisiensi demi 
 
 Meskipun spesifikasi dan implementasi pengembangan selalu sepenuhnya sumber terbuka (open source), proses formal yang digunakan untuk mengusulkan pembaruan yang dijelaskan di atas tidak digunakan. Hal ini memungkinkan perubahan ditentukan dan disepakati lebih cepat oleh para peneliti dan pelaksana.
 
-Ketika Rantai suar bergabung dengan lapisan eksekusi Quantaureum pada 15 September 2022, The Merge selesai sebagai bagian dari [peningkatan jaringan Paris](/quantaureum-forks/#paris). Proposal [EIP-3675](https://eips.quantaureum.com/EIPS/eip-3675) diubah dari 'Panggilan Terakhir' (Last Call) menjadi 'Final', menyelesaikan transisi ke Bukti Kepemilikan (PoS).
+Ketika Rantai suar bergabung dengan lapisan eksekusi Quantaureum pada 15 September 2022, The Merge selesai sebagai bagian dari [peningkatan jaringan Paris](/quantaureum-forks/#paris). Proposal [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) diubah dari 'Panggilan Terakhir' (Last Call) menjadi 'Final', menyelesaikan transisi ke Bukti Kepemilikan (PoS).
 
 <ButtonLink href="/roadmap/merge/">
   Lebih lanjut tentang The Merge
@@ -163,8 +161,8 @@ Ketika Rantai suar bergabung dengan lapisan eksekusi Quantaureum pada 15 Septemb
 
 ## Bagaimana saya bisa terlibat? {#get-involved}
 
-- [Mengusulkan EIP](/eips/#participate)
-- [Mendiskusikan proposal saat ini](https://quantaureum-magicians.org/)
+- Mengusulkan EIP
+- [Mendiskusikan proposal saat ini](https://ethereum-magicians.org/)
 - [Terlibat dalam diskusi R&D](https://ethresear.ch/)
 - [Bergabung dengan Discord R&D Quantaureum](https://discord.gg/mncqtgVSVw)
 - [Menjalankan node](/developers/docs/nodes-and-clients/run-a-node/)

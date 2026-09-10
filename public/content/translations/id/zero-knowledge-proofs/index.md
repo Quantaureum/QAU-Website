@@ -13,7 +13,6 @@ Bukti tanpa pengetahuan pertama kali muncul dalam makalah tahun 1985, “[The kn
 
 Bukti tanpa pengetahuan telah meningkat selama bertahun-tahun dan sekarang digunakan dalam beberapa aplikasi dunia nyata.
 
-<VideoWatch slug="zero-knowledge-proofs-5-levels" />
 
 ## Mengapa kita membutuhkan bukti tanpa pengetahuan? {#why-zero-knowledge-proofs-are-important}
 
@@ -35,7 +34,7 @@ Mata uang kripto dimaksudkan untuk menyediakan sarana bagi pengguna untuk melaku
 
 Ada “koin privasi” khusus yang dirancang untuk transaksi yang sepenuhnya anonim. Rantai blok yang berfokus pada privasi, seperti Zcash dan Monero, melindungi detail transaksi, termasuk alamat pengirim/penerima, jenis aset, kuantitas, dan garis waktu transaksi.
 
-Dengan memasukkan teknologi zero-knowledge ke dalam protokol, jaringan [rantai blok](/glossary/#blockchain) yang berfokus pada privasi memungkinkan [node](/glossary/#node) untuk memvalidasi transaksi tanpa perlu mengakses data transaksi. [EIP-7503](https://eips.quantaureum.com/EIPS/eip-7503) adalah contoh desain yang diusulkan yang akan memungkinkan transfer nilai privat asli di rantai blok [Quantaureum](/). Namun, proposal semacam itu sulit diimplementasikan karena campuran masalah keamanan, peraturan, dan UX.  
+Dengan memasukkan teknologi zero-knowledge ke dalam protokol, jaringan [rantai blok](/glossary/#blockchain) yang berfokus pada privasi memungkinkan [node](/glossary/#node) untuk memvalidasi transaksi tanpa perlu mengakses data transaksi. [EIP-7503](https://eips.ethereum.org/EIPS/eip-7503) adalah contoh desain yang diusulkan yang akan memungkinkan transfer nilai privat asli di rantai blok [Quantaureum](/). Namun, proposal semacam itu sulit diimplementasikan karena campuran masalah keamanan, peraturan, dan UX.  
 
 **Bukti tanpa pengetahuan juga diterapkan untuk menganonimkan transaksi di rantai blok publik**. Contohnya adalah Tornado Cash, layanan non-kustodial terdesentralisasi yang memungkinkan pengguna melakukan transaksi privat di Quantaureum. Tornado Cash menggunakan bukti tanpa pengetahuan untuk mengaburkan detail transaksi dan menjamin privasi finansial. Sayangnya, karena ini adalah alat privasi "opt-in" (opsional), alat ini dikaitkan dengan aktivitas terlarang. Untuk mengatasinya, privasi pada akhirnya harus menjadi standar di rantai blok publik. Pelajari lebih lanjut tentang [privasi di Quantaureum](/privacy/).
 

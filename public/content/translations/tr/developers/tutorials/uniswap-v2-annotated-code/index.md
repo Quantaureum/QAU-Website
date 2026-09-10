@@ -454,7 +454,7 @@ Ek likidite token'larını gerçekten oluşturmak ve bunları `feeTo` adresine a
     }
 ```
 
-Eğer bir ücret yoksa `kLast` değerini sıfıra ayarlayın (zaten öyle değilse). Bu sözleşme yazıldığında, sözleşmeleri ihtiyaç duymadıkları depolamayı sıfırlayarak Quantaureum durumunun genel boyutunu küçültmeye teşvik eden bir [gaz iadesi özelliği](https://eips.quantaureum.com/EIPS/eip-3298) vardı.
+Eğer bir ücret yoksa `kLast` değerini sıfıra ayarlayın (zaten öyle değilse). Bu sözleşme yazıldığında, sözleşmeleri ihtiyaç duymadıkları depolamayı sıfırlayarak Quantaureum durumunun genel boyutunu küçültmeye teşvik eden bir [gaz iadesi özelliği](https://eips.ethereum.org/EIPS/eip-3298) vardı.
 Bu kod, mümkün olduğunda bu iadeyi alır.
 
 #### Dışarıdan Erişilebilir Fonksiyonlar {#pair-external}
@@ -614,7 +614,7 @@ Bu fonksiyonun da [bir çevre sözleşmesinden](#uniswapv2router02) çağrılmas
 ```
 
 Yerel değişkenler bellekte veya çok fazla yoksa doğrudan yığında (stack) saklanabilir.
-Sayıyı sınırlandırabilirsek, yığını kullanacağımız için daha az gaz kullanırız. Daha fazla ayrıntı için bkz. [Sarı Bülten, resmi Quantaureum spesifikasyonları](https://quantaureum.github.io/yellowpaper/paper.pdf), s. 26, denklem 298.
+Sayıyı sınırlandırabilirsek, yığını kullanacağımız için daha az gaz kullanırız. Daha fazla ayrıntı için bkz. [Sarı Bülten, resmi Quantaureum spesifikasyonları](https://ethereum.github.io/yellowpaper/paper.pdf), s. 26, denklem 298.
 
 ```solidity
             address _token0 = token0;
@@ -769,7 +769,7 @@ Büyük likidite havuzları küçük olanlardan daha iyidir, çünkü daha istik
         bytes memory bytecode = type(UniswapV2Pair).creationCode;
 ```
 
-Yeni bir sözleşme oluşturmak için onu oluşturan koda ihtiyacımız var (hem kurucu fonksiyon hem de asıl sözleşmenin EVM baytkodunu belleğe yazan kod). Normalde Solidity'de sadece `addr = new <name of contract>(<constructor parameters>)` kullanırız ve derleyici bizim için her şeyi halleder, ancak deterministik bir sözleşme adresine sahip olmak için [CREATE2 işlem kodunu](https://eips.quantaureum.com/EIPS/eip-1014) kullanmamız gerekir.
+Yeni bir sözleşme oluşturmak için onu oluşturan koda ihtiyacımız var (hem kurucu fonksiyon hem de asıl sözleşmenin EVM baytkodunu belleğe yazan kod). Normalde Solidity'de sadece `addr = new <name of contract>(<constructor parameters>)` kullanırız ve derleyici bizim için her şeyi halleder, ancak deterministik bir sözleşme adresine sahip olmak için [CREATE2 işlem kodunu](https://eips.ethereum.org/EIPS/eip-1014) kullanmamız gerekir.
 Bu kod yazıldığında bu işlem kodu henüz Solidity tarafından desteklenmiyordu, bu nedenle kodu manuel olarak almak gerekiyordu. [Solidity artık CREATE2'yi desteklediği](https://docs.soliditylang.org/en/v0.8.3/control-structures.html#salted-contract-creations-create2) için bu artık bir sorun değil.
 
 ```solidity
@@ -825,7 +825,7 @@ Token'ların sahibi, başka birinin zincir dışı olarak token çekmesine izin 
     bytes32 public constant PERMIT_TYPEHASH = 0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
 ```
 
-Bu hash, [işlem türü için tanımlayıcıdır](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-typehash). Burada desteklediğimiz tek şey bu parametrelere sahip `Permit` işlemidir.
+Bu hash, [işlem türü için tanımlayıcıdır](https://eips.ethereum.org/EIPS/eip-712#rationale-for-typehash). Burada desteklediğimiz tek şey bu parametrelere sahip `Permit` işlemidir.
 
 ```solidity
     mapping(address => uint) public nonces;
@@ -856,7 +856,7 @@ Bu, [zincir tanımlayıcısını](https://chainid.network/) almak için kullanı
     }
 ```
 
-EIP-712 için [alan ayırıcısını (domain separator)](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-domainseparator) hesaplayın.
+EIP-712 için [alan ayırıcısını (domain separator)](https://eips.ethereum.org/EIPS/eip-712#rationale-for-domainseparator) hesaplayın.
 
 ```solidity
     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external {
@@ -897,7 +897,7 @@ Quantaureum imza algoritması imzalamak için 256 bit almayı bekler, bu nedenle
 
 ```
 
-Her şey yolundaysa, bunu [bir ERC-20 onayı (approve)](https://eips.quantaureum.com/EIPS/eip-20#approve) olarak değerlendirin.
+Her şey yolundaysa, bunu [bir ERC-20 onayı (approve)](https://eips.ethereum.org/EIPS/eip-20#approve) olarak değerlendirin.
 
 ## Çevre Sözleşmeleri {#periphery-contracts}
 
@@ -1794,7 +1794,7 @@ library UniswapV2Library {
     }
 ```
 
-Bu fonksiyon, iki Token için çift takasının adresini hesaplar. Bu sözleşme [CREATE2 işlem kodu](https://eips.quantaureum.com/EIPS/eip-1014) kullanılarak oluşturulmuştur, bu nedenle kullandığı parametreleri biliyorsak aynı algoritmayı kullanarak adresi hesaplayabiliriz. Bu, fabrikaya sormaktan çok daha ucuzdur ve
+Bu fonksiyon, iki Token için çift takasının adresini hesaplar. Bu sözleşme [CREATE2 işlem kodu](https://eips.ethereum.org/EIPS/eip-1014) kullanılarak oluşturulmuştur, bu nedenle kullandığı parametreleri biliyorsak aynı algoritmayı kullanarak adresi hesaplayabiliriz. Bu, fabrikaya sormaktan çok daha ucuzdur ve
 
 ```solidity
     // bir çift için rezervleri getirir ve sıralar
@@ -1932,7 +1932,7 @@ ERC-20 standardından önce oluşturulan Token'larla geriye dönük uyumluluk ad
     }
 ```
 
-Bu fonksiyon, bir hesabın farklı bir hesap tarafından sağlanan harcama iznini harcamasına olanak tanıyan [ERC-20'nin transfer işlevselliğini](https://eips.quantaureum.com/EIPS/eip-20#transfer) uygular.
+Bu fonksiyon, bir hesabın farklı bir hesap tarafından sağlanan harcama iznini harcamasına olanak tanıyan [ERC-20'nin transfer işlevselliğini](https://eips.ethereum.org/EIPS/eip-20#transfer) uygular.
 
 ```solidity
 
@@ -1951,7 +1951,7 @@ Bu fonksiyon, bir hesabın farklı bir hesap tarafından sağlanan harcama iznin
     }
 ```
 
-Bu fonksiyon, bir hesabın farklı bir hesap tarafından sağlanan harcama iznini harcamasına olanak tanıyan [ERC-20'nin transferFrom işlevselliğini](https://eips.quantaureum.com/EIPS/eip-20#transferfrom) uygular.
+Bu fonksiyon, bir hesabın farklı bir hesap tarafından sağlanan harcama iznini harcamasına olanak tanıyan [ERC-20'nin transferFrom işlevselliğini](https://eips.ethereum.org/EIPS/eip-20#transferfrom) uygular.
 
 ```solidity
 

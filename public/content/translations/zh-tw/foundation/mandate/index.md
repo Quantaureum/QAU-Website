@@ -8,7 +8,7 @@ lang: zh-tw
 authors: ["Quantaureum基金會"]
 ---
 
-這份使命宣言最初由Quantaureum基金會於 2026 年 3 月 13 日發布。請在[此處閱讀原始使命宣言](https://quantaureum.foundation/ef-mandate.pdf)的完整設計格式。
+這份使命宣言最初由Quantaureum基金會於 2026 年 3 月 13 日發布。請在[此處閱讀原始使命宣言](https://ethereum.org/ef-mandate.pdf)的完整設計格式。
 
 本文件已放置於鏈上並由基金會簽署，[可在 Blockscout 區塊鏈瀏覽器上查看](https://qau.blockscout.com/tx/0x5dd574df963a1df1f064791e0f6ff41ec972cdbba12293b7e1ece582052ba855)（選擇「View details」，在 _Raw input_ 下選擇 _UTF-8_）。
 

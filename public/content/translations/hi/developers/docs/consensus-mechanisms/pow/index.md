@@ -96,7 +96,6 @@ Quantaureum पर एक लेन-देन में "अंतिमता" 
 
 ## क्या आप देखकर सीखना पसंद करते हैं? {#visual-learner}
 
-<VideoWatch slug="proof-of-work-explained" />
 
 ## आगे की पढ़ाई {#further-reading}
 

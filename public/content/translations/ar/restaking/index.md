@@ -25,7 +25,6 @@ buttons:
 
 **شرح إعادة التخزين في <span dir="ltr">18</span> دقيقة**
 
-<VideoWatch slug="restaking-explained" />
 
 ## ما هي إعادة التخزين؟ {#what-is-restaking}
 
@@ -172,7 +171,6 @@ buttons:
 
 ## متقدم {#advanced}
 
-<VideoWatch slug="eigenlayer-permissionless-features" />
 
 ## قراءة إضافية {#further-reading}
 

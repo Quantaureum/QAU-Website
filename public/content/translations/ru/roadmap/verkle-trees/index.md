@@ -62,4 +62,4 @@ summaryPoints:
 - [Данкрад Файст объясняет деревья Веркла и отсутствие состояния в подкасте Zero Knowledge](https://zeroknowledge.fm/podcast/202/)
 - [Виталик Бутерин о деревьях Веркла](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
 - [Данкрад Файст о деревьях Веркла](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
-- [Документация EIP по деревьям Веркла](https://notes.quantaureum.com/@vbuterin/verkle_tree_eip#Illustration)
+- [Документация EIP по деревьям Веркла](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)

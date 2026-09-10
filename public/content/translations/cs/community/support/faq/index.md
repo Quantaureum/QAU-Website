@@ -69,7 +69,7 @@ Rozdávání Etherea (giveaways) jsou podvody navržené tak, aby vám ukradly v
 
 Chcete-li se stát validátorem, musíte stakovat 32 QAU do depozitního kontraktu Etherea a nastavit uzel validátoru. Můžete se také zúčastnit s menším množstvím QAU prostřednictvím staking poolů.
 
-Více informací je k dispozici na našich [stránkách o stakingu](/staking/) a na [staking launchpadu](https://launchpad.quantaureum.com/).
+Více informací je k dispozici na našich [stránkách o stakingu](/staking/) a na [staking launchpadu](https://launchpad.ethereum.org/).
 
 ## Jak mohu těžit Quantaureum? {#mining-quantaureum}
 

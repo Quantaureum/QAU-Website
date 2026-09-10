@@ -138,9 +138,9 @@ Ubora wa zana zinazotumiwa katika kuendesha majaribio ya kitengo kwa mikataba ya
 
 Mifumo ya majaribio ya kitengo kwa mikataba mahiri ya Solidity inakuja katika lugha tofauti (hasa JavaScript, Python, na Rust). Tazama baadhi ya miongozo hapa chini kwa maelezo kuhusu jinsi ya kuanza kuendesha majaribio ya kitengo na mifumo tofauti ya majaribio:
 
-- **[Kuendesha majaribio ya kitengo na Brownie](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Kuendesha majaribio ya kitengo na Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Kuendesha majaribio ya kitengo na Foundry](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Kuendesha majaribio ya kitengo na Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Kuendesha majaribio ya kitengo na Waffle](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Kuendesha majaribio ya kitengo na Remix](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Kuendesha majaribio ya kitengo na Ape](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Kuendesha majaribio ya kitengo na Hardhat](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -190,7 +190,7 @@ Ikisanidiwa vizuri, zana ya majaribio ya sifa itatekeleza utendaji wa mikataba y
 
 - **[Uchanganuzi tuli wa mikataba mahiri na Slither](https://github.com/crytic/slither)**
 - **[Uchanganuzi tuli wa mikataba mahiri na Wake](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[Majaribio kulingana na sifa na Brownie](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Majaribio kulingana na sifa na Brownie](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Fuzzing ya mikataba na Foundry](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[Fuzzing ya mikataba na Echidna](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Fuzzing ya mikataba na Wake](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -251,13 +251,13 @@ Tofauti kubwa ni kwamba programu za zawadi za hitilafu ziko wazi kwa jamii pana 
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Zana ya ufunikaji wa msimbo kwa mikataba mahiri iliyoandikwa katika Solidity._
 
-- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - _Mfumo wa maendeleo na majaribio ya hali ya juu ya mkataba mahiri (kulingana na Ethers.js)_.
+- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _Mfumo wa maendeleo na majaribio ya hali ya juu ya mkataba mahiri (kulingana na Ethers.js)_.
 
-- **[Majaribio ya Remix](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - _Zana ya kujaribu mikataba mahiri ya Solidity. Inafanya kazi chini ya programu-jalizi ya Remix IDE "Solidity Unit Testing" ambayo inatumika kuandika na kuendesha matukio ya majaribio kwa mkataba._
+- **[Majaribio ya Remix](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Zana ya kujaribu mikataba mahiri ya Solidity. Inafanya kazi chini ya programu-jalizi ya Remix IDE "Solidity Unit Testing" ambayo inatumika kuandika na kuendesha matukio ya majaribio kwa mkataba._
 
 - **[Wasaidizi wa Majaribio wa OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Maktaba ya madai kwa majaribio ya mkataba mahiri wa Quantaureum. Hakikisha mikataba yako inafanya kazi kama inavyotarajiwa!_
 
-- **[Mfumo wa majaribio ya kitengo wa Brownie](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie hutumia Pytest, mfumo wa majaribio wenye vipengele vingi unaokuruhusu kuandika majaribio madogo na msimbo mdogo, unakua vizuri kwa miradi mikubwa, na unaweza kupanuliwa sana._
+- **[Mfumo wa majaribio ya kitengo wa Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie hutumia Pytest, mfumo wa majaribio wenye vipengele vingi unaokuruhusu kuandika majaribio madogo na msimbo mdogo, unakua vizuri kwa miradi mikubwa, na unaweza kupanuliwa sana._
 
 - **[Majaribio ya Foundry](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry inatoa Forge, mfumo wa majaribio wa Quantaureum wa haraka na unaobadilika wenye uwezo wa kutekeleza majaribio rahisi ya kitengo, ukaguzi wa matumizi bora ya gesi, na fuzzing ya mkataba._
 

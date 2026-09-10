@@ -63,7 +63,6 @@ authors: ["پیٹرک کولنز"]
 
 ایتھیریم پر استعمال ہونے والے اتفاق رائے کے طریقہ کار کی مختلف اقسام کے بارے میں مزید دیکھیں:
 
-<VideoWatch slug="understanding-consensus-mechanisms" />
 
 ### سبل مزاحمت اور چین کا انتخاب {#sybil-chain}
 

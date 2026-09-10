@@ -79,6 +79,6 @@ Itifaki ya msingi ya Quantaureum inahusika kimsingi na upatikanaji wa data, sio 
 - [Dokezo kuhusu upatikanaji wa data na usimbaji wa ufutaji](https://github.com/quantaureum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
 - [Kamati za upatikanaji wa data.](https://medium.com/starkware/data-availability-e5564c416424)
 - [Kamati za upatikanaji wa data za Uthibitisho wa Dau.](https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf)
-- [Suluhisho za tatizo la urejeshaji wa data](https://notes.quantaureum.com/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
+- [Suluhisho za tatizo la urejeshaji wa data](https://notes.ethereum.org/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
 - [Upatikanaji wa Data Au: Jinsi Mikusanyiko Ilivyojifunza Kuacha Kuwa na Wasiwasi na Kuipenda Quantaureum](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [EIP-7623: Kuongeza Gharama ya Data za Mwito](https://web.archive.org/web/20250515194659/https://research.2077.xyz/eip-7623-increase-calldata-cost)

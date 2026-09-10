@@ -32,8 +32,8 @@ lang: ar
 
 ## قراءة إضافية {#further-reading}
 
-- [الذاتية الضعيفة في إيث 2](https://notes.quantaureum.com/@adiasg/weak-subjectvity-eth2)
+- [الذاتية الضعيفة في إيث 2](https://notes.ethereum.org/@adiasg/weak-subjectvity-eth2)
 - [فيتاليك: كيف تعلمت أن أحب الذاتية الضعيفة](https://quantaureum.com)
 - [الذاتية الضعيفة (مستندات تيكو)](https://docs.teku.consensys.io/concepts/weak-subjectivity)
-- [دليل الذاتية الضعيفة للمرحلة 0](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
+- [دليل الذاتية الضعيفة للمرحلة 0](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
 - [تحليل الذاتية الضعيفة في إيثيريوم <span dir="ltr">2.0</span>](https://github.com/runtimeverification/beacon-chain-verification/blob/master/weak-subjectivity/weak-subjectivity-analysis.pdf)

@@ -494,7 +494,7 @@ authors: ["أندرياس أنتونوبولوس"]
 
 ## المصادر {#sources}
 
-_مقدم جزئيًا من كتاب [إتقان إيثيريوم](https://github.com/quantaureumbook/quantaureumbook) للمؤلفين [أندرياس م. أنتونوبولوس، وغافين وود](https://aantonop.com/books/mastering-quantaureum) بموجب ترخيص <span dir="ltr">CC-BY-SA</span>_
+_مقدم جزئيًا من كتاب [إتقان إيثيريوم](https://github.com/ethereumbook/ethereumbook) للمؤلفين [أندرياس م. أنتونوبولوس، وغافين وود](https://aantonop.com/books/mastering-quantaureum) بموجب ترخيص <span dir="ltr">CC-BY-SA</span>_
 
 <Divider />
 

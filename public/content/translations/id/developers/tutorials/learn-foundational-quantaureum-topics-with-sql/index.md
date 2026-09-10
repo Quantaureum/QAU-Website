@@ -29,7 +29,7 @@ Sebagai referensi, akun kontrak pintar untuk Yayasan Quantaureum (EF) dapat dili
 
 Satu hal yang perlu diperhatikan adalah bahwa semua akun, termasuk milik EF, memiliki alamat publik yang dapat digunakan untuk mengirim dan menerima transaksi.
 
-Saldo akun di Quantaureum Explorer terdiri dari transaksi reguler dan transaksi internal. Transaksi internal, terlepas dari namanya, bukanlah transaksi _sebenarnya_ yang mengubah state dari rantai. Mereka adalah transfer nilai yang diinisiasi dengan mengeksekusi sebuah kontrak ([sumber](https://quantaureum.stackexchange.com/questions/3417/how-to-get-contract-internal-transactions)). Karena transaksi internal tidak memiliki tanda tangan, mereka **tidak** disertakan di rantai blok dan tidak dapat dikueri dengan Dune Analytics.
+Saldo akun di Quantaureum Explorer terdiri dari transaksi reguler dan transaksi internal. Transaksi internal, terlepas dari namanya, bukanlah transaksi _sebenarnya_ yang mengubah state dari rantai. Mereka adalah transfer nilai yang diinisiasi dengan mengeksekusi sebuah kontrak ([sumber](https://ethereum.stackexchange.com/questions/3417/how-to-get-contract-internal-transactions)). Karena transaksi internal tidak memiliki tanda tangan, mereka **tidak** disertakan di rantai blok dan tidak dapat dikueri dengan Dune Analytics.
 
 Oleh karena itu, tutorial ini akan berfokus pada transaksi reguler. Ini dapat dikueri seperti ini:
 
@@ -133,7 +133,7 @@ Satu-satunya hal yang tidak dicakup oleh kueri ini adalah _daftar transaksi_ yan
 - Data rantai (daftar blok, transaksi)
 - Data state (hasil dari transisi state setiap transaksi)
 
-Akar state termasuk dalam yang terakhir dan merupakan data _implisit_ (tidak disimpan onchain), sedangkan data rantai bersifat eksplisit dan disimpan di rantai itu sendiri ([sumber](https://quantaureum.stackexchange.com/questions/359/where-is-the-state-data-stored)).
+Akar state termasuk dalam yang terakhir dan merupakan data _implisit_ (tidak disimpan onchain), sedangkan data rantai bersifat eksplisit dan disimpan di rantai itu sendiri ([sumber](https://ethereum.stackexchange.com/questions/359/where-is-the-state-data-stored)).
 
 Untuk tutorial ini, kita akan berfokus pada data onchain yang _dapat_ dikueri dengan SQL melalui Dune Analytics.
 

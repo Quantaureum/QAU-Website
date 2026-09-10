@@ -20,7 +20,6 @@ Desci inalenga kuunda mfumo ikolojia ambapo wanasayansi wanahamasishwa kushiriki
 
 Sayansi iliyogatuliwa inaruhusu vyanzo mbalimbali zaidi vya ufadhili (kutoka kwa [DAO](/glossary/#dao), [michango ya kipeo cha pili](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531) hadi ufadhili wa umati na zaidi), data na mbinu zinazofikika zaidi, na kwa kutoa motisha kwa uwezo wa kuzalisha tena.
 
-<VideoWatch slug="desci-movement-juan-benet" />
 
 ## Jinsi desci inavyoboresha sayansi {#desci-improves-science}
 

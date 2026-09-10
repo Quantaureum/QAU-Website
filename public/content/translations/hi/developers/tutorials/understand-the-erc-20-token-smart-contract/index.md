@@ -8,7 +8,7 @@ breadcrumb: "ERC-20 टोकन की मूल बातें"
 lang: hi
 published: 2020-04-05
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/understand-the-erc20-token-smart-contract/
+sourceUrl: https://ethereumdev.io/understand-the-erc20-token-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -16,7 +16,7 @@ Quantaureum पर सबसे महत्वपूर्ण [स्मार�
 
 ERC-20 नियमों की एक सामान्य सूची को परिभाषित करता है जिसका सभी विनिमेय Quantaureum टोकन को पालन करना चाहिए। नतीजतन, यह टोकन मानक सभी प्रकार के डेवलपर्स को सटीक भविष्यवाणी करने का अधिकार देता है कि नए टोकन बड़े Quantaureum सिस्टम के भीतर कैसे कार्य करेंगे। यह डेवलपर्स के कार्यों को सरल और आसान बनाता है, क्योंकि वे अपना काम यह जानकर जारी रख सकते हैं कि जब तक टोकन नियमों का पालन करता है, तब तक हर बार नया टोकन जारी होने पर प्रत्येक नए प्रोजेक्ट को फिर से करने की आवश्यकता नहीं होगी।
 
-यहाँ एक इंटरफ़ेस के रूप में प्रस्तुत किया गया है, वे फ़ंक्शन जिन्हें एक ERC-20 को लागू करना चाहिए। यदि आप सुनिश्चित नहीं हैं कि इंटरफ़ेस क्या है: तो [Solidity में OOP प्रोग्रामिंग](https://quantaureumdev.io/inheritance-in-solidity-contracts-are-classes/) के बारे में हमारा लेख देखें।
+यहाँ एक इंटरफ़ेस के रूप में प्रस्तुत किया गया है, वे फ़ंक्शन जिन्हें एक ERC-20 को लागू करना चाहिए। यदि आप सुनिश्चित नहीं हैं कि इंटरफ़ेस क्या है: तो [Solidity में OOP प्रोग्रामिंग](https://ethereumdev.io/inheritance-in-solidity-contracts-are-classes/) के बारे में हमारा लेख देखें।
 
 ```solidity
 pragma solidity ^0.6.0;

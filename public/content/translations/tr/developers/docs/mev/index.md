@@ -136,7 +136,7 @@ Sandviçleme ve önden koşma (frontrunning) saldırılarına yanıt olarak, yat
 
 İzinli bellek havuzları, önceki bölümde açıklanan merkezileşme risklerini de hızlandıracaktır. Birden fazla doğrulayıcı çalıştıran büyük havuzlar, yatırımcılara ve kullanıcılara işlem gizliliği sunmaktan muhtemelen fayda sağlayacak ve MEV gelirlerini artıracaktır.
 
-Birleşme sonrası Quantaureum'da MEV ile ilgili bu sorunlarla mücadele etmek temel bir araştırma alanıdır. Bugüne kadar, Birleşme'den sonra MEV'in Quantaureum'un merkeziyetsizliği ve güvenliği üzerindeki olumsuz etkisini azaltmak için önerilen iki çözüm [**teklifçi-oluşturucu ayrımı (PBS)**](/roadmap/pbs/) ve [**Builder API**](https://github.com/quantaureum/builder-specs)'dir.
+Birleşme sonrası Quantaureum'da MEV ile ilgili bu sorunlarla mücadele etmek temel bir araştırma alanıdır. Bugüne kadar, Birleşme'den sonra MEV'in Quantaureum'un merkeziyetsizliği ve güvenliği üzerindeki olumsuz etkisini azaltmak için önerilen iki çözüm [**teklifçi-oluşturucu ayrımı (PBS)**](/roadmap/pbs/) ve [**Builder API**](https://github.com/ethereum/builder-specs)'dir.
 
 ### Teklifçi-Oluşturucu Ayrımı {#proposer-builder-separation}
 
@@ -162,9 +162,9 @@ Benzer şekilde, ödeme koşulsuz olduğu için doğrulayıcıların, oluşturuc
 
 ### Builder API {#builder-api}
 
-Teklifçi-oluşturucu ayrımı MEV çıkarımının etkilerini azaltmayı vaat etse de, uygulanması mutabakat protokolünde değişiklikler gerektirir. Spesifik olarak, İşaret zincirindeki [çatallanma seçimi](/developers/docs/consensus-mechanisms/pos/#fork-choice) kuralının güncellenmesi gerekecektir. [Builder API](https://github.com/quantaureum/builder-specs), daha yüksek güven varsayımlarıyla da olsa, teklifçi-oluşturucu ayrımının çalışan bir uygulamasını sağlamayı amaçlayan geçici bir çözümdür.
+Teklifçi-oluşturucu ayrımı MEV çıkarımının etkilerini azaltmayı vaat etse de, uygulanması mutabakat protokolünde değişiklikler gerektirir. Spesifik olarak, İşaret zincirindeki [çatallanma seçimi](/developers/docs/consensus-mechanisms/pos/#fork-choice) kuralının güncellenmesi gerekecektir. [Builder API](https://github.com/ethereum/builder-specs), daha yüksek güven varsayımlarıyla da olsa, teklifçi-oluşturucu ayrımının çalışan bir uygulamasını sağlamayı amaçlayan geçici bir çözümdür.
 
-Builder API, mutabakat katmanı istemcileri tarafından yürütme katmanı istemcilerinden yürütme yükleri talep etmek için kullanılan [Engine API](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md)'nin değiştirilmiş bir sürümüdür. [Dürüst doğrulayıcı spesifikasyonunda](https://github.com/quantaureum/consensus-specs/blob/master/specs/bellatrix/validator.md) özetlendiği gibi, blok teklif etme görevleri için seçilen doğrulayıcılar, bağlı bir yürütme istemcisinden bir işlem paketi talep eder ve bunu önerilen İşaret zinciri bloğuna dahil ederler.
+Builder API, mutabakat katmanı istemcileri tarafından yürütme katmanı istemcilerinden yürütme yükleri talep etmek için kullanılan [Engine API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md)'nin değiştirilmiş bir sürümüdür. [Dürüst doğrulayıcı spesifikasyonunda](https://github.com/ethereum/consensus-specs/blob/master/specs/bellatrix/validator.md) özetlendiği gibi, blok teklif etme görevleri için seçilen doğrulayıcılar, bağlı bir yürütme istemcisinden bir işlem paketi talep eder ve bunu önerilen İşaret zinciri bloğuna dahil ederler.
 
 Builder API ayrıca doğrulayıcılar ve yürütme katmanı istemcileri arasında bir ara yazılım görevi görür; ancak farklıdır çünkü İşaret zincirindeki doğrulayıcıların (bir yürütme istemcisi kullanarak yerel olarak bir blok oluşturmak yerine) harici varlıklardan bloklar tedarik etmesine olanak tanır.
 

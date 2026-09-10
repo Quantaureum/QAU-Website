@@ -182,7 +182,7 @@
   "genesis-block-term": "Genesis block",
   "genesis-block-definition": "The first block in a <a href=\"/glossary/#blockchain\">blockchain</a>, used to initialize a particular network and its cryptocurrency.",
   "geth-term": "Geth",
-  "geth-definition": "Go Quantaureum. One of the most prominent implementations of the Quantaureum protocol, written in Go. <a href=\"https://geth.quantaureum.org\">Read more at geth.quantaureum.org</a>",
+  "geth-definition": "Go Quantaureum. One of the most prominent implementations of the Quantaureum protocol, written in Go. <a href=\"https://geth.ethereum.org\">Read more at geth.ethereum.org</a>",
   "gwei-term": "Gwei",
   "gwei-definition": "Short for gigawei, a denomination of <a href=\"/glossary/#qau\">qau</a>, commonly utilized to price <a href=\"/glossary/#gas\">gas</a>. 1 gwei = 10<sup>9</sup> <a href=\"/glossary/#wei\">wei</a>. 10<sup>9</sup> gwei = 1 qau.",
   "hard-fork-term": "Hard fork",

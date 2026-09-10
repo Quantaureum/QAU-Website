@@ -46,7 +46,7 @@ Các ứng dụng được vận hành bởi các hợp đồng thông minh — 
 | **Có thể bị kiểm duyệt không?** | Có | Không |
 | **Ai sở hữu dữ liệu của bạn?** | Thường không phải là bạn | Bạn sở hữu dữ liệu của mình |
 
-<WhatAreAppsStories />
+
 
 <div className="w-full md:w-1/2 mx-auto md:mx-0">
 

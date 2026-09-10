@@ -34,7 +34,7 @@ Sekali lagi, jika salah satu dari asumsi ini tidak benar, atau Anda tidak berenc
 
 Berfungsi dengan [API JavaScript](/developers/docs/apis/javascript/) ethers-js.
 
-Anda dapat membaca detail selengkapnya di [dokumentasi Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/#waffle-documentation)!
+Anda dapat membaca detail selengkapnya di [dokumentasi Waffle](https://ethereum-waffle.readthedocs.io/en/latest/#waffle-documentation)!
 
 ## Tutorial cepat {#the-quick-tutorial}
 
@@ -647,7 +647,7 @@ Itu akan tampak seperti ini:
 
 </details>
 
-## Langkah #1: Instal waffle dalam proyek Anda [Tautkan ke dokumen](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#installation) {#step-1-install-waffle-in-your-project}
+## Langkah #1: Instal waffle dalam proyek Anda [Tautkan ke dokumen](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#installation) {#step-1-install-waffle-in-your-project}
 
 Untuk memulai, instal `quantaureum-waffle`. Dalam tutorial ini, saya akan menggunakan `yarn`, sehingga untuk menginstal `quantaureum-waffle` jalankan:
 
@@ -655,7 +655,7 @@ Untuk memulai, instal `quantaureum-waffle`. Dalam tutorial ini, saya akan menggu
  yarn add --dev quantaureum-waffle
 ```
 
-## Langkah #2: Tulis kontrak pintar [Tautkan ke dokumen](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-a-contract) {#step-2-write-a-smart-contract}
+## Langkah #2: Tulis kontrak pintar [Tautkan ke dokumen](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-a-contract) {#step-2-write-a-smart-contract}
 
 Dalam tutorial ini, saya akan menggunakan token [ERC20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/ded2b0a55c9c13731963ab7b85a70c8e73504bab/contracts/token/ERC20/ERC20.sol) dari [OpenZeppelin](https://openzeppelin.com).
 
@@ -681,7 +681,7 @@ contract BasicToken is ERC20 {
 
 ```
 
-## Langkah #3: Kompilasikan kontrak pintar Anda [Tautkan ke dokumen](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) {#step-3-compile-your-smart-contract}
+## Langkah #3: Kompilasikan kontrak pintar Anda [Tautkan ke dokumen](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) {#step-3-compile-your-smart-contract}
 
 Untuk mengompilasi kontrak pintar Anda, tambahkan entri berikut ke dalam `package.json` proyek Anda:
 
@@ -706,7 +706,7 @@ Contoh konfigurasi `waffle.json`:
 }
 ```
 
-Anda dapat membaca lebih banyak tentang konfigurasi Waffle [di sini](https://quantaureum-waffle.readthedocs.io/en/latest/configuration.html#configuration).
+Anda dapat membaca lebih banyak tentang konfigurasi Waffle [di sini](https://ethereum-waffle.readthedocs.io/en/latest/configuration.html#configuration).
 
 Lalu cukup jalankan `yarn build` untuk mengompilasi kontrak pintar Anda.
 
@@ -1014,9 +1014,9 @@ Anda akan melihat bahwa Waffle mengompilasi kontrak Anda dan menempatkan output 
 ```
 </details>
 
-## Langkah #4: Uji kontrak pintar Anda [Tautkan ke dokumen](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) {#step-4-test-your-smart-contract}
+## Langkah #4: Uji kontrak pintar Anda [Tautkan ke dokumen](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) {#step-4-test-your-smart-contract}
 
-### Langkah #4.1 Instal dependensi yang diperlukan [Tautkan ke dokumen](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) {#step-4-1}
+### Langkah #4.1 Instal dependensi yang diperlukan [Tautkan ke dokumen](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) {#step-4-1}
 
 Setelah kita telah berhasil menulis sebuah Kontrak Pintar, kita dapat mengujinya. Kita akan menggunakan `Waffle` untuk melakukannya.
 
@@ -1028,7 +1028,7 @@ Jadi, kita perlu menambahkan `Chai` ke dependensi kita:
  yarn add --dev mocha chai
 ```
 
-### Langkah #4.2 Buat file uji [Tautkan ke dokumen](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) {#step-4-2}
+### Langkah #4.2 Buat file uji [Tautkan ke dokumen](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) {#step-4-2}
 
 Untuk menulis tes, kita perlu membuat file `BasicToken.test.ts` dalam direktori tes kita.
 
@@ -1054,7 +1054,7 @@ Jadi, kita menggunakan metode `deployContract` dari `Waffle` untuk menyebarkan t
 
 `Waffle` juga memungkinkan kita membuat `dompet`, yang sangat memudahkan dalam menyebarkan kontrak.
 
-Anda dapat membaca selengkapnya tentang `dompet` [di sini](https://quantaureum-waffle.readthedocs.io/en/latest/basic-testing.html?highlight=wallet#getting-wallets) dan Anda dapat membaca selengkapnya tentang fungsi penggunaan [di sini](https://quantaureum-waffle.readthedocs.io/en/latest/basic-testing.html?highlight=wallet#deploying-contracts).
+Anda dapat membaca selengkapnya tentang `dompet` [di sini](https://ethereum-waffle.readthedocs.io/en/latest/basic-testing.html?highlight=wallet#getting-wallets) dan Anda dapat membaca selengkapnya tentang fungsi penggunaan [di sini](https://ethereum-waffle.readthedocs.io/en/latest/basic-testing.html?highlight=wallet#deploying-contracts).
 
 Mari menulis sebuah tes sederhana untuk memeriksa saldo dompet kita. Karena kita mengirimkan senilai 1000 pada saat penggunaan kontrak, saldo dompet kita harus bernilai 1000 token, yang dapat kita periksa pada tes pertama.
 
@@ -1066,7 +1066,7 @@ it("Assigns initial balance", async () => {
 
 Untuk menjalankan tes gunakan `yarn test`
 
-### Langkah #4.3 Memancarkan aksi [Tautkan ke dokumen](https://quantaureum-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#emitting-events) {#step-4-3}
+### Langkah #4.3 Memancarkan aksi [Tautkan ke dokumen](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#emitting-events) {#step-4-3}
 
 Dalam tutorial ini, saya ingin menunjukkan kepada Anda matcher yang paling berguna dari `Waffle`, jadi mari kita mulai dengan yang pertama.
 
@@ -1088,7 +1088,7 @@ Selain itu, keunggulan besar dari matcher ini adalah kita dapat memeriksa di arg
 
 Ini akan memungkinkan kita memastikan bahwa fungsi kita dipanggil dengan benar!
 
-### Langkah #4.4 Balikkan dengan message [Tautkan ke dokumen](https://quantaureum-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#revert-with-message) {#step-4-4}
+### Langkah #4.4 Balikkan dengan message [Tautkan ke dokumen](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#revert-with-message) {#step-4-4}
 
 `Waffle` memungkinkan kita menguji dengan message mana itu dibalikkan.
 
@@ -1104,7 +1104,7 @@ it("Can not transfer above the amount", async () => {
 })
 ```
 
-### Langkah #4.5 Ubah saldo token [Tautkan ke dokumen](https://quantaureum-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#change-balance) {#step-4-5}
+### Langkah #4.5 Ubah saldo token [Tautkan ke dokumen](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#change-balance) {#step-4-5}
 
 `Waffle` memungkinkan kita memeriksa perubahan dalam saldo dompet!
 

@@ -96,7 +96,6 @@ At a high level, proof-of-stake has the same end goal as proof-of-work: to help 
 
 ## More of a visual learner? {#visual-learner}
 
-<VideoWatch slug="proof-of-work-explained" />
 
 ## Further Reading {#further-reading}
 

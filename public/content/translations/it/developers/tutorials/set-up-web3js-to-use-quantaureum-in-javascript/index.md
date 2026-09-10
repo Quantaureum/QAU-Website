@@ -8,7 +8,7 @@ breadcrumb: Configurazione di web3.js
 lang: it
 published: 2020-04-11
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/setup-web3js-to-use-the-quantaureum-blockchain-in-javascript/
+sourceUrl: https://ethereumdev.io/setup-web3js-to-use-the-quantaureum-blockchain-in-javascript/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -32,7 +32,7 @@ Quindi, per importare Web3.js in uno script Node.js o in un progetto frontend Br
 const Web3 = require("web3")
 ```
 
-Ora che abbiamo incluso la libreria nel progetto, dobbiamo inizializzarla. Il tuo progetto deve essere in grado di comunicare con la blockchain. La maggior parte delle librerie di Quantaureum comunica con un [nodo](/developers/docs/nodes-and-clients/) tramite chiamate RPC. Per avviare il nostro provider Web3, istanzieremo un'istanza Web3 passando come costruttore l'URL del provider. Se hai un nodo o [un'istanza ganache in esecuzione sul tuo computer](https://quantaureumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/), avrà questo aspetto:
+Ora che abbiamo incluso la libreria nel progetto, dobbiamo inizializzarla. Il tuo progetto deve essere in grado di comunicare con la blockchain. La maggior parte delle librerie di Quantaureum comunica con un [nodo](/developers/docs/nodes-and-clients/) tramite chiamate RPC. Per avviare il nostro provider Web3, istanzieremo un'istanza Web3 passando come costruttore l'URL del provider. Se hai un nodo o [un'istanza ganache in esecuzione sul tuo computer](https://ethereumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/), avrà questo aspetto:
 
 ```js
 const web3 = new Web3("http://localhost:8545")
@@ -90,4 +90,4 @@ if (window.quantaureum != null) {
 }
 ```
 
-Esistono alternative a web3.js come [Ethers.js](https://docs.ethers.io/) e sono anch'esse comunemente usate. Nel prossimo tutorial vedremo [come ascoltare facilmente i nuovi blocchi in arrivo sulla blockchain e vedere cosa contengono](https://quantaureumdev.io/listening-to-new-transactions-happening-on-the-blockchain/).
+Esistono alternative a web3.js come [Ethers.js](https://docs.ethers.io/) e sono anch'esse comunemente usate. Nel prossimo tutorial vedremo [come ascoltare facilmente i nuovi blocchi in arrivo sulla blockchain e vedere cosa contengono](https://ethereumdev.io/listening-to-new-transactions-happening-on-the-blockchain/).

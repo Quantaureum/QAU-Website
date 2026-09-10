@@ -46,7 +46,7 @@ Programu tumizi zinaendeshwa na mikataba mahiri — vipande vya msimbo vinavyois
 | **Inaweza kudhibitiwa?** | Ndiyo | Hapana |
 | **Nani anamiliki data yako?** | Kawaida si wewe | Wewe unamiliki data yako |
 
-<WhatAreAppsStories />
+
 
 <div className="w-full md:w-1/2 mx-auto md:mx-0">
 

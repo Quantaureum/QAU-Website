@@ -65,9 +65,9 @@ Dữ liệu lệnh gọi được chia như sau:
 Giải thích:
 
 - **Bộ chọn hàm**: Hợp đồng có ít hơn 256 hàm, vì vậy chúng ta có thể phân biệt chúng bằng một byte duy nhất.
-  Các byte này thường khác 0 và do đó [có giá 16 Gas](https://eips.quantaureum.com/EIPS/eip-2028).
+  Các byte này thường khác 0 và do đó [có giá 16 Gas](https://eips.ethereum.org/EIPS/eip-2028).
 - **Các số 0**: Các byte này luôn bằng 0 vì một địa chỉ 20 byte không yêu cầu một từ 32 byte để chứa nó.
-  Các byte chứa số 0 có giá 4 Gas ([xem sách vàng](https://quantaureum.github.io/yellowpaper/paper.pdf), Phụ lục G,
+  Các byte chứa số 0 có giá 4 Gas ([xem sách vàng](https://ethereum.github.io/yellowpaper/paper.pdf), Phụ lục G,
   trang 27, giá trị cho `G`<sub>`txdatazero`</sub>).
 - **Số lượng**: Nếu chúng ta giả định rằng trong hợp đồng này `decimals` là mười tám (giá trị bình thường) và số lượng token tối đa mà chúng ta chuyển sẽ là 10<sup>18</sup>, chúng ta nhận được số lượng tối đa là 10<sup>36</sup>.
   256<sup>15</sup> &gt; 10<sup>36</sup>, vì vậy mười lăm byte là đủ.
@@ -201,7 +201,7 @@ Có hai lý do tại sao một hàm sẽ không khả dụng ở đây:
 2. Các hàm dựa vào [`msg.sender`](https://docs.soliditylang.org/en/v0.8.12/units-and-global-variables.html#block-and-transaction-properties).
    Giá trị của `msg.sender` sẽ là địa chỉ của `CalldataInterpreter`, không phải của người gọi.
 
-Thật không may, [khi xem xét các thông số kỹ thuật của ERC-20](https://eips.quantaureum.com/EIPS/eip-20), điều này chỉ để lại một hàm, `transfer`.
+Thật không may, [khi xem xét các thông số kỹ thuật của ERC-20](https://eips.ethereum.org/EIPS/eip-20), điều này chỉ để lại một hàm, `transfer`.
 Điều này khiến chúng ta chỉ còn lại hai hàm: `transfer` (vì chúng ta có thể gọi `transferFrom`) và `faucet` (vì chúng ta có thể chuyển token trở lại cho bất kỳ ai đã gọi chúng ta).
 
 ```solidity

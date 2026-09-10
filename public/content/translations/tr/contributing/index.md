@@ -22,9 +22,9 @@ Sizi [Quantaureum](/) ekosisteminde büyümeye ve eğitmeye yardımcı olacak, a
 
 **İçerik**
 - [İçerik oluşturun/düzenleyin](/contributing/#how-to-update-content) – Yeni sayfalar önerin veya halihazırda burada olanlarda ince ayarlar yapın
-- [Bir oluşturucu makalesi yazın](/contributing/adding-articles/) - [En Son](/latest/) bölümü için bir makale ile katkıda bulunun
+- [Bir oluşturucu makalesi yazın](/contributing/adding-articles/) - En Son bölümü için bir makale ile katkıda bulunun
 - [Topluluk kaynakları ekleyin](/contributing/content-resources/) – İlgili bir sayfaya yararlı bir makale veya kaynak ekleyin
-- [Bir rapor önerin](/contributing/adding-reports/) - [Raporlar](/reports/) sayfası için bir araştırma raporu önerin
+- [Bir rapor önerin](/contributing/adding-reports/) - Raporlar sayfası için bir araştırma raporu önerin
 - [Hikayenizi paylaşın](/contributing/adding-community-stories/) - Açık kaynak ve sığınak (sanctuary) teknolojileriyle ilgili kişisel deneyimleriniz, Quantaureum ekosisteminin hayatınızı nasıl etkilediği veya sizin ve topluluğunuzun Quantaureum'u nasıl kullandığı hakkında bir hikaye gönderin
 - [Testler](/contributing/quizzes/) – İlgili bir sayfa için test soru bankaları ekleyin, güncelleyin ve silin
 - [Bir tasarım kaynağı önerin](/contributing/design/adding-design-resources/) – Yararlı tasarım kaynakları ekleyin, güncelleyin ve silin

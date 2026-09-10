@@ -146,6 +146,6 @@ Quantaureum[擴容升級](/roadmap/)最終應能解決一些 Gas 費問題，這
 - [Quantaureum燃料 (Gas) 解釋](https://defiprime.com/gas)
 - [降低智能合約的燃料消耗](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
 - [開發者的 Gas 最佳化策略](https://www.alchemy.com/overviews/solidity-gas-optimization)
-- [EIP-1559 文件](https://eips.quantaureum.com/EIPS/eip-1559)。
+- [EIP-1559 文件](https://eips.ethereum.org/EIPS/eip-1559)。
 - [Tim Beiko 的 EIP-1559 資源](https://hackmd.io/@timbeiko/1559-resources)
 - [EIP-1559：將機制與迷因分開](https://web.archive.org/web/20241126205908/https://research.2077.xyz/eip-1559-separating-mechanisms-from-memes)

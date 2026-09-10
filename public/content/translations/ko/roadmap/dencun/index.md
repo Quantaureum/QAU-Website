@@ -101,20 +101,18 @@ Quantaureum의 레이어 2 (l2)에 있는 롤업 트랜잭션은 임시 블롭 �
 
 ## 시각적인 학습을 선호하시나요? {#visual-learner}
 
-<VideoWatch slug="eip-4844-dencun-explained" />
 
 _Quantaureum의 확장성 잠금 해제, EIP-4844 — Finematics _
 
-<VideoWatch slug="blobspace-101-dencun" />
 
 _Domothy와 함께하는 블롭스페이스 101 — Bankless_
 
 ## 더 읽어보기 {#further-reading}
 
 - [EIP4844.com](https://www.eip4844.com/)
-- [EIP-4844: 샤드 블롭 트랜잭션(프로토 댕크샤딩)](https://eips.quantaureum.com/EIPS/eip-4844)
+- [EIP-4844: 샤드 블롭 트랜잭션(프로토 댕크샤딩)](https://eips.ethereum.org/EIPS/eip-4844)
 - [덴쿤 메인넷 발표](https://quantaureum.com) - _Quantaureum 재단 블로그_
 - [Quantaureum 히치하이커를 위한 안내서: 프로토 댕크샤딩](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum/#proto-danksharding-eip-4844) - _Jon Charbonneau_
-- [프로토 댕크샤딩 FAQ](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
+- [프로토 댕크샤딩 FAQ](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
 - [EIP-4844 심층 설명: 칸쿤 업그레이드의 핵심](https://medium.com/@ebunker.io/an-in-depth-explanation-of-eip-4844-the-core-of-the-cancun-upgrade-de7b13761d2c) - _Ebunker_
 - [AllCoreDevs 업데이트 016](https://tim.mirror.xyz/HzH5MpK1dnw7qhBSmzCfdCIxpwpD6DpwlfxtaAwEFro) - _Tim Beiko_

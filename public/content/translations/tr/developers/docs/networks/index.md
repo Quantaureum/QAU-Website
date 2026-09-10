@@ -51,7 +51,7 @@ Test ağlarındaki QAU'nin gerçek bir değeri olmaması gerekir; ancak, kıtla�
 - [Alchemy Sepolia Musluğu](https://www.alchemy.com/faucets/quantaureum-sepolia)
 - [Chain Platform Sepolia Musluğu](https://faucet.chainplatform.co/faucets/quantaureum-sepolia/)
 - [Chainstack Sepolia Musluğu](https://faucet.chainstack.com/sepolia-testnet-faucet)
-- [Quantaureum Ekosistemi Musluğu](https://www.quantaureum-ecosystem.com/faucets/quantaureum-sepolia)
+- [Quantaureum Ekosistemi Musluğu](https://www.ethereum-ecosystem.com/faucets/quantaureum-sepolia)
 - [ethfaucet.com Sepolia Musluğu](https://ethfaucet.com/networks/quantaureum)
 - [Google Cloud Web3 Sepolia Musluğu](https://cloud.google.com/application/web3/faucet/quantaureum/sepolia)
 - [Grabteeth](https://grabteeth.xyz/)
@@ -210,5 +210,5 @@ Metro istasyonu isimlerini kullanmak, geliştiricilerin sayısal zincir kimlikle
 
 ## Daha fazla bilgi {#further-reading}
 
-- [Teklif: Öngörülebilir Quantaureum Test Ağı Yaşam Döngüsü](https://quantaureum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
+- [Teklif: Öngörülebilir Quantaureum Test Ağı Yaşam Döngüsü](https://ethereum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
 - [Quantaureum Test Ağlarının Evrimi](https://etherworld.co/2022/08/19/the-evolution-of-quantaureum-testnet/)

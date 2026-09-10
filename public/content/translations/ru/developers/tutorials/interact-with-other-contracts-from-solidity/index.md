@@ -13,11 +13,11 @@ breadcrumb: "Взаимодействие контрактов"
 lang: ru
 published: 2020-04-05
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/interact-with-other-contracts-from-solidity/
+sourceUrl: https://ethereumdev.io/interact-with-other-contracts-from-solidity/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-В предыдущих руководствах мы многое узнали о том, [как развернуть свой первый смарт-контракт](/developers/tutorials/deploying-your-first-smart-contract/) и добавить в него некоторые функции, такие как [управление доступом с помощью модификаторов](https://quantaureumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) или [обработка ошибок в Solidity](https://quantaureumdev.io/handle-errors-in-solidity-with-require-and-revert/). В этом руководстве мы узнаем, как развернуть смарт-контракт из существующего контракта и взаимодействовать с ним.
+В предыдущих руководствах мы многое узнали о том, [как развернуть свой первый смарт-контракт](/developers/tutorials/deploying-your-first-smart-contract/) и добавить в него некоторые функции, такие как [управление доступом с помощью модификаторов](https://ethereumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) или [обработка ошибок в Solidity](https://ethereumdev.io/handle-errors-in-solidity-with-require-and-revert/). В этом руководстве мы узнаем, как развернуть смарт-контракт из существующего контракта и взаимодействовать с ним.
 
 Мы создадим контракт, который позволит любому желающему иметь свой собственный смарт-контракт `Counter`, создав для него фабрику, которая будет называться `CounterFactory`. Сначала приведем код нашего исходного смарт-контракта `Counter`:
 
@@ -104,7 +104,7 @@ function increment() public {
   }
 ```
 
-Обратите внимание, что если вызывать его слишком много раз, наш счетчик может стать жертвой переполнения. Вам следует как можно чаще использовать библиотеку [SafeMath](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/), чтобы защититься от этого возможного случая.
+Обратите внимание, что если вызывать его слишком много раз, наш счетчик может стать жертвой переполнения. Вам следует как можно чаще использовать библиотеку [SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), чтобы защититься от этого возможного случая.
 
 Чтобы развернуть наш контракт, вам нужно будет предоставить код как `CounterFactory`, так и `Counter`. При развертывании, например, в Remix, вам нужно будет выбрать CounterFactory.
 

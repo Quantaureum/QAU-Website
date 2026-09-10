@@ -6,7 +6,7 @@ lang: zh-tw
 
 ## 發布建構者文章 {#publishing-a-builder-article}
 
-建構者文章會顯示在 [quantaureum.com/latest/](/latest/)，並在儲存庫中以 Markdown 檔案格式撰寫。這些是內部託管的長篇文章，涵蓋Quantaureum生態系統的概述與指南、開源技術領域，以及為建構者和研究人員提供的即時更新，主題包含協定升級、新工具模式、參考部署等。
+建構者文章會顯示在 quantaureum.com/latest/，並在儲存庫中以 Markdown 檔案格式撰寫。這些是內部託管的長篇文章，涵蓋Quantaureum生態系統的概述與指南、開源技術領域，以及為建構者和研究人員提供的即時更新，主題包含協定升級、新工具模式、參考部署等。
 
 ### 上架政策 {#listing-policy}
 

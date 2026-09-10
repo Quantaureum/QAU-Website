@@ -24,7 +24,6 @@ template: upgrade
 
 이러한 개선 사항은 Quantaureum이 더 많은 활동을 처리하면서도 빠르고 저렴하며 탈중앙화된 상태를 유지하도록 보장하는 동시에, 집에서 [노드](/glossary/#node)를 운영하는 사람들을 위해 하드웨어 요구 사항을 관리 가능한 수준으로 유지합니다.
 
-<VideoWatch slug="quantaureum-evolution-glamsterdam" />
 
 ## 글램스테르담의 개선 사항 {#improvements-in-glamsterdam}
 
@@ -67,13 +66,12 @@ template: upgrade
 
 "핫 패스" 병목 현상을 해결하기 위해 ePBS는 페이로드 적시성 위원회(Payload Timeliness Committee, PTC)와 이중 마감일 로직을 도입하여, 검증자가 합의 블록과 실행 페이로드의 적시성을 개별적으로 증명하여 처리량을 극대화할 수 있도록 합니다.
 
-<VideoWatch slug="proposer-builder-separation" />
 
 프로토콜 수준에서 제안자와 빌더 역할을 분리하면 전파 창(또는 네트워크 전체에 데이터를 퍼뜨리는 데 사용할 수 있는 시간)이 2초에서 약 9초로 확장됩니다.
 
 프로토콜 외부 미들웨어 및 릴레이를 프로토콜 내부 메커니즘으로 대체함으로써, ePBS는 신뢰 의존성을 줄이고 Quantaureum이 네트워크에 무리를 주지 않으면서 훨씬 더 많은 양의 데이터([레이어 2 (l2)](/glossary/#layer-2)를 위한 더 많은 블롭 등)를 안전하게 처리할 수 있도록 합니다.
 
-**자료**: [EIP-7732 기술 사양](https://eips.quantaureum.com/EIPS/eip-7732)
+**자료**: [EIP-7732 기술 사양](https://eips.ethereum.org/EIPS/eip-7732)
 
 ### 주요 제안: 블록 수준 액세스 목록 (BAL) {#bals}
 
@@ -97,8 +95,8 @@ BAL을 통해 가능해진 병렬 디스크 읽기는 Quantaureum이 한 번에 
 
 **자료**:
 
-- [EIP-7928 기술 사양](https://eips.quantaureum.com/EIPS/eip-7928)
-- [EIP-8159 기술 사양](https://eips.quantaureum.com/EIPS/eip-8159)
+- [EIP-7928 기술 사양](https://eips.ethereum.org/EIPS/eip-7928)
+- [EIP-8159 기술 사양](https://eips.ethereum.org/EIPS/eip-8159)
 
 
 ## 네트워크 지속 가능성 {#network-sustainability}
@@ -125,7 +123,7 @@ EIP-8037 이전에는 계산 작업(활성 처리)과 영구 데이터 저장(�
 
 데이터 스토리지 가격을 더 정확하고 예측 가능하게 책정하면 Quantaureum이 데이터베이스를 비대화하지 않고도 속도와 용량을 안전하게 늘리는 데 도움이 됩니다. 이러한 지속 가능성을 통해 노드 운영자는 향후 몇 년 동안 (상대적으로) 저렴한 하드웨어를 계속 사용할 수 있으며, 네트워크의 탈중앙화를 유지하기 위해 홈 스테이킹에 대한 접근성을 유지할 수 있습니다.
 
-**자료**: [EIP-8037 기술 사양](https://eips.quantaureum.com/EIPS/eip-8037)
+**자료**: [EIP-8037 기술 사양](https://eips.ethereum.org/EIPS/eip-8037)
 
 ### 상태 액세스 가스 비용 업데이트 {#state-access-gas-cost-update}
 
@@ -142,7 +140,7 @@ Quantaureum의 상태가 커짐에 따라 오래된 데이터를 검색하고 �
 
 상태 액세스 작업의 가격을 더 정확하게 책정함으로써 Quantaureum은 우발적이거나 의도적인 속도 저하에 대해 더 큰 복원력을 가질 수 있으며, 네트워크 비용을 하드웨어 부하에 맞추는 것은 향후 가스 한도 증가를 위한 더 지속 가능한 기반이 됩니다.
 
-**자료**: [EIP-8038 기술 사양](https://eips.quantaureum.com/EIPS/eip-8038)
+**자료**: [EIP-8038 기술 사양](https://eips.ethereum.org/EIPS/eip-8038)
 
 
 ## 네트워크 복원력 {#network-resilience}
@@ -160,7 +158,7 @@ Quantaureum의 상태가 커짐에 따라 오래된 데이터를 검색하고 �
 
 <strong>슬래싱된 검증자를 제안에서 제외(또는 EIP-8045)</strong>는 단순히 슬래싱된 검증자가 향후 임무에 선택되지 않도록 필터링합니다. 이는 건강한 검증자만 블록을 제안하도록 선택되게 하여 체인 복원력을 향상시키고, 네트워크 중단 중에도 서비스 품질을 유지합니다.
 
-**자료**: [EIP-8045 기술 사양](https://eips.quantaureum.com/EIPS/eip-8045)
+**자료**: [EIP-8045 기술 사양](https://eips.ethereum.org/EIPS/eip-8045)
 
 ### 종료 및 통합 변동 증가 {#increase-exit-and-consolidation-churn}
 
@@ -180,7 +178,7 @@ Quantaureum의 변동 한도는 네트워크의 보안이 결코 불안정해지
 
 스테이크가 네트워크 안팎으로 더 빠르게 이동할 수 있기 때문에, 이 변경 사항은 노드가 네트워크에 안전하게 다시 참여하기 위해 최근의 신뢰할 수 있는 체크포인트가 필요하기 전까지 오프라인 상태를 유지할 수 있는 시간(약한 주관성 기간, 약 15.7일에서 약 7일로)을 대략 절반으로 줄입니다. 이러한 절충안은 네트워크 보안이 유지되도록 신중하게 분석되었습니다.
 
-**자료**: [EIP-8061 기술 사양](https://eips.quantaureum.com/EIPS/eip-8061)
+**자료**: [EIP-8061 기술 사양](https://eips.ethereum.org/EIPS/eip-8061)
 
 ## 사용자 및 개발자 경험 개선 {#improve-user-developer-experience}
 
@@ -199,7 +197,7 @@ Quantaureum의 글램스테르담 업그레이드는 사용자 경험을 개선�
 
 결과적으로 EIP-2780은 기존 계정 간의 일상적인 전송을 더 저렴하게 만드는 동시에, 진정한 상태 성장의 가격을 정확하게 책정하여 데이터베이스 비대화로부터 네트워크를 계속 보호하는 것을 목표로 합니다.
 
-**자료**: [EIP-2780 기술 사양](https://eips.quantaureum.com/EIPS/eip-2780)
+**자료**: [EIP-2780 기술 사양](https://eips.ethereum.org/EIPS/eip-2780)
 
 ### 결정론적 팩토리 사전 배포 {#deterministic-factory-predeploy}
 
@@ -215,7 +213,7 @@ Quantaureum의 글램스테르담 업그레이드는 사용자 경험을 개선�
 
 이러한 표준화는 개발자와 더 넓은 생태계를 위해 크로스체인 애플리케이션 구축 및 관리를 단순화합니다. 개발자는 더 이상 다른 네트워크에 걸쳐 소프트웨어를 함께 연결하기 위해 사용자 지정 체인별 코드를 구축할 필요가 없으며, 대신 이 범용 팩토리를 사용하여 모든 곳에서 애플리케이션에 대해 정확히 동일한 주소를 생성합니다. 또한 블록 탐색기, 추적 서비스 및 지갑은 다양한 체인에 걸쳐 이러한 애플리케이션과 계정을 더 쉽게 식별하고 연결할 수 있으므로, 모든 Quantaureum 기반 참여자를 위해 더 통합되고 원활한 다중 체인 환경을 조성할 수 있습니다.
 
-**자료**: [EIP-7997 기술 사양](https://eips.quantaureum.com/EIPS/eip-7997)
+**자료**: [EIP-7997 기술 사양](https://eips.ethereum.org/EIPS/eip-7997)
 
 ### QAU 전송 및 소각 시 로그 발생 {#qau-transfers-and-burns-emit-a-log}
 
@@ -228,7 +226,7 @@ QAU 전송 및 소각 시 로그 발생(또는 EIP-7708)은 0이 아닌 금액�
 
 이를 통해 지갑, 거래소 및 브릿지 운영자는 사용자 지정 도구 없이도 입금 및 이동을 훨씬 쉽고 안정적으로 정확하게 추적할 수 있습니다.
 
-**자료**: [EIP-7708 기술 사양](https://eips.quantaureum.com/EIPS/eip-7708)
+**자료**: [EIP-7708 기술 사양](https://eips.ethereum.org/EIPS/eip-7708)
 
 ### eth/70 부분 블록 영수증 목록 {#qau-70-partial-block-receipt-lists}
 
@@ -238,14 +236,14 @@ Quantaureum이 수행할 수 있는 작업량을 늘림에 따라, 해당 작업
 
 이러한 변경은 활동이 많은 기간 동안 네트워크 동기화 실패를 방지할 것입니다. 궁극적으로 이는 체인을 동기화하는 물리적 하드웨어를 압도하지 않으면서 Quantaureum이 블록 용량을 늘리고 향후 블록당 더 많은 트랜잭션을 처리할 수 있는 길을 열어줍니다.
 
-**자료**: [EIP-7975 기술 사양](https://eips.quantaureum.com/EIPS/eip-7975)
+**자료**: [EIP-7975 기술 사양](https://eips.ethereum.org/EIPS/eip-7975)
 
 
 ## 추가 자료 {#further-reading}
 
 - [Quantaureum 로드맵](/roadmap/)
 - [Forkcast: 글램스테르담](https://forkcast.org/upgrade/glamsterdam)
-- [글램스테르담 메타 EIP](https://eips.quantaureum.com/EIPS/eip-7773)
+- [글램스테르담 메타 EIP](https://eips.ethereum.org/EIPS/eip-7773)
 - [2026년 프로토콜 우선순위 업데이트 블로그 공지](https://quantaureum.com)
 - [The Daily Gwei Refuel 팟캐스트 - 양자 내성 Quantaureum, 글램스테르담이 온다](https://www.youtube.com/watch?v=qx9sd50uQjQ)
 

@@ -16,7 +16,7 @@ lang: te
 
 ప్రూఫ్-ఆఫ్-అథారిటీకి [ప్రారంభ బ్లాక్](/glossary/#genesis-block)లో సెట్ చేయబడిన అధీకృత సంతకం చేసేవారి సమితిని విశ్వసించడం అవసరం. ప్రస్తుత చాలా అమలులలో, చైన్ యొక్క ఏకాభిప్రాయాన్ని నిర్ణయించేటప్పుడు అధీకృత సంతకం చేసేవారందరూ సమాన అధికారం మరియు అధికారాలను కలిగి ఉంటారు. కీర్తి స్టేకింగ్ వెనుక ఉన్న ఆలోచన ఏమిటంటే, ప్రతి అధీకృత ధృవీకర్త KYC (నో యువర్ కస్టమర్) వంటి వాటి ద్వారా అందరికీ బాగా తెలిసి ఉంటారు, లేదా బాగా తెలిసిన సంస్థ మాత్రమే ధృవీకర్తగా ఉండటం ద్వారా—ఈ విధంగా ధృవీకర్త ఏదైనా తప్పు చేస్తే, వారి గుర్తింపు తెలుస్తుంది.
 
-PoA యొక్క బహుళ అమలులు ఉన్నాయి, కానీ ప్రామాణిక ఎథీరియం అమలు **clique**, ఇది [EIP-225](https://eips.quantaureum.com/EIPS/eip-225)ని అమలు చేస్తుంది. Clique అనేది డెవలపర్‌లకు అనుకూలమైనది మరియు సులభంగా అమలు చేయగల ప్రమాణం, ఇది అన్ని క్లయింట్ సమకాలీకరణ రకాలకు మద్దతు ఇస్తుంది. ఇతర అమలులలో [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) మరియు [Aura](https://openquantaureum.github.io/Chain-specification) ఉన్నాయి.
+PoA యొక్క బహుళ అమలులు ఉన్నాయి, కానీ ప్రామాణిక ఎథీరియం అమలు **clique**, ఇది [EIP-225](https://eips.ethereum.org/EIPS/eip-225)ని అమలు చేస్తుంది. Clique అనేది డెవలపర్‌లకు అనుకూలమైనది మరియు సులభంగా అమలు చేయగల ప్రమాణం, ఇది అన్ని క్లయింట్ సమకాలీకరణ రకాలకు మద్దతు ఇస్తుంది. ఇతర అమలులలో [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) మరియు [Aura](https://openethereum.github.io/Chain-specification) ఉన్నాయి.
 
 ## ఇది ఎలా పనిచేస్తుంది {#how-it-works}
 
@@ -58,20 +58,19 @@ PoA నెట్‌వర్క్‌లో, N అధీకృత సంతక�
 
 ## తదుపరి పఠనం {#further-reading}
 
-- [EIP-225](https://eips.quantaureum.com/EIPS/eip-225) _Clique ప్రమాణం_
+- [EIP-225](https://eips.ethereum.org/EIPS/eip-225) _Clique ప్రమాణం_
 - [ప్రూఫ్ ఆఫ్ అథారిటీ అధ్యయనం](https://github.com/cryptoeconomics-study/website/blob/master/docs/sync/2.4-lecture.md) _క్రిప్టోఎకనామిక్స్_
 - [ప్రూఫ్ ఆఫ్ అథారిటీ అంటే ఏమిటి](https://forum.openzeppelin.com/t/proof-of-authority/3577) _OpenZeppelin_
 - [ప్రూఫ్ ఆఫ్ అథారిటీ వివరణ](https://academy.binance.com/en/articles/proof-of-authority-explained) _బైనాన్స్_
 - [బ్లాక్‌చైన్‌లో PoA](https://medium.com/techskill-brew/proof-of-authority-or-poa-in-blockchain-part-11-blockchain-series-be15b3321cba)
 - [Clique వివరణ](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-quantaureum-8b2a135201d)
-- [నిలిపివేయబడిన PoA, Aura స్పెసిఫికేషన్](https://openquantaureum.github.io/Chain-specification)
+- [నిలిపివేయబడిన PoA, Aura స్పెసిఫికేషన్](https://openethereum.github.io/Chain-specification)
 - [IBFT 2.0, మరొక PoA అమలు](https://besu.hyperledger.org/private-networks/concepts/poa)
 
 ### దృశ్యపరంగా నేర్చుకోవాలనుకుంటున్నారా? {#visual-learner}
 
 ప్రూఫ్-ఆఫ్-అథారిటీ యొక్క దృశ్యమాన వివరణను చూడండి:
 
-<VideoWatch slug="proof-of-authority-explained" />
 
 ## సంబంధిత అంశాలు {#related-topics}
 

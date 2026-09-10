@@ -145,7 +145,7 @@ contentPreview="Falso. The Merge foi uma mudança no mecanismo de consenso, não
 
 As taxas de gás são um produto da demanda da rede em relação à capacidade da rede. The Merge descontinuou o uso da Prova de Trabalho (PoW), fazendo a transição para a Prova de Participação (PoS) para o consenso, mas não alterou significativamente nenhum parâmetro que influencie diretamente a capacidade ou a vazão da rede.
 
-Com um <a href="https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698">roteiro centrado em rollup</a>, os esforços estão focados em escalar a atividade do usuário na [camada 2 (l2)](/layer-2/), enquanto habilita a Mainnet da camada 1 (l1) como uma camada de liquidação descentralizada segura otimizada para armazenamento de dados de rollup para ajudar a tornar as transações de rollup exponencialmente mais baratas. A transição para a Prova de Participação (PoS) é um precursor crítico para a realização disso. [Mais sobre gás e taxas.](/developers/docs/gas/)
+Com um <a href="https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698">roteiro centrado em rollup</a>, os esforços estão focados em escalar a atividade do usuário na [camada 2 (l2)](/layer-2/), enquanto habilita a Mainnet da camada 1 (l1) como uma camada de liquidação descentralizada segura otimizada para armazenamento de dados de rollup para ajudar a tornar as transações de rollup exponencialmente mais baratas. A transição para a Prova de Participação (PoS) é um precursor crítico para a realização disso. [Mais sobre gás e taxas.](/developers/docs/gas/)
 
 </ExpandableCard>
 

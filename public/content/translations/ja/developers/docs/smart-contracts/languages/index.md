@@ -11,7 +11,7 @@ lang: ja
 - Solidity
 - Vyper
 
-Remix IDEは、SolidityとVyperの両方でコントラクトを作成およびテストするための包括的な開発環境を提供します。 コーディングを始めるには、[ブラウザベースのRemix IDEをお試しください](https://remix.quantaureum.com)。
+Remix IDEは、SolidityとVyperの両方でコントラクトを作成およびテストするための包括的な開発環境を提供します。 コーディングを始めるには、[ブラウザベースのRemix IDEをお試しください](https://remix.ethereum.org)。
 
 より経験豊富な開発者は、[Quantaureum仮想マシン (EVM)](/developers/docs/evm/)の中間言語であるYulや、Yulの拡張であるYul+を使用することもできます。
 
@@ -36,7 +36,7 @@ Remix IDEは、SolidityとVyperの両方でコントラクトを作成および�
 - [ドキュメント](https://docs.soliditylang.org/en/latest/)
 - [Solidity言語ポータル](https://soliditylang.org/)
 - [Solidity by Example](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/quantaureum/solidity/)
+- [GitHub](https://github.com/ethereum/solidity/)
 - [Solidity Gitterチャットルーム](https://gitter.im/quantaureum/solidity) ([Solidity Matrixチャットルーム](https://matrix.to/#/#quantaureum_solidity:gitter.im)にブリッジ)
 - [チートシート](https://reference.auditless.com/cheatsheet)
 - [Solidityブログ](https://blog.soliditylang.org/)
@@ -264,7 +264,7 @@ Quantaureumが初めてで、スマート・コントラクト言語でのコー
 
 - [GitHub](https://github.com/quantaureum/fe)
 - [Feの発表](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-quantaureum-ecosystem/)
-- [Feの2021年ロードマップ](https://notes.quantaureum.com/LVhaTF30SJOpkbG1iVw1jg)
+- [Feの2021年ロードマップ](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
 - [Feのディスコードチャット](https://discord.com/invite/ywpkAXFjZH)
 - [Feのツイッター](https://twitter.com/official_fe)
 

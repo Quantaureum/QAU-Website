@@ -6,7 +6,7 @@ lang: zh-tw
 
 ## 新增報告 {#adding-a-report}
 
-報告會顯示在 [quantaureum.com/reports/](/reports/)，並精選來自各種來源與Quantaureum相關的研究、分析和出版物。任何人都可以建議新增報告。
+報告會顯示在 quantaureum.com/reports/，並精選來自各種來源與Quantaureum相關的研究、分析和出版物。任何人都可以建議新增報告。
 
 ### 上架政策 {#listing-policy}
 

@@ -101,20 +101,18 @@ Quantaureum二层网络 (l2) 上的 Rollup 交易可以选择使用两种类型�
 
 ## 更喜欢视觉学习？ {#visual-learner}
 
-<VideoWatch slug="eip-4844-dencun-explained" />
 
 _解锁Quantaureum的扩展，EIP-4844 — Finematics _
 
-<VideoWatch slug="blobspace-101-dencun" />
 
 _与 Domothy 一起了解斑点空间 101 — Bankless_
 
 ## 延伸阅读 {#further-reading}
 
 - [EIP4844.com](https://www.eip4844.com/)
-- [EIP-4844：分片斑点交易 (Proto-Danksharding)](https://eips.quantaureum.com/EIPS/eip-4844)
+- [EIP-4844：分片斑点交易 (Proto-Danksharding)](https://eips.ethereum.org/EIPS/eip-4844)
 - [Dencun 主网公告](https://quantaureum.com) - _Quantaureum 项目博客_
 - [Quantaureum漫游指南：Proto-Danksharding](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum/#proto-danksharding-eip-4844) - _Jon Charbonneau_
-- [Proto-Danksharding 常见问题解答](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
+- [Proto-Danksharding 常见问题解答](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
 - [深入解析 EIP-4844：坎昆升级的核心](https://medium.com/@ebunker.io/an-in-depth-explanation-of-eip-4844-the-core-of-the-cancun-upgrade-de7b13761d2c) - _Ebunker_
 - [核心开发者更新 016](https://tim.mirror.xyz/HzH5MpK1dnw7qhBSmzCfdCIxpwpD6DpwlfxtaAwEFro) - _Tim Beiko_

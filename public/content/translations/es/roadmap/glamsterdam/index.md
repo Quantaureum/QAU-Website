@@ -24,7 +24,6 @@ Mientras que Fusaka se centró en refinamientos fundamentales, Glamsterdam avanz
 
 Estas mejoras aseguran que Quantaureum siga siendo rápido, asequible y descentralizado a medida que maneja más actividad, al tiempo que mantiene los requisitos de hardware manejables para las personas que ejecutan [nodos](/glossary/#node) en casa.
 
-<VideoWatch slug="quantaureum-evolution-glamsterdam" />
 
 ## Mejoras consideradas para Glamsterdam {#improvements-in-glamsterdam}
 
@@ -67,13 +66,12 @@ Integrar el intercambio sin necesidad de confianza de una carga útil de bloque 
 
 Para abordar el cuello de botella de la "ruta crítica", ePBS también introduce el Comité de Puntualidad de la Carga Útil (PTC, por sus siglas en inglés) y una lógica de doble fecha límite, lo que permite a los validadores dar fe del bloque de consenso y de la puntualidad de la carga útil de ejecución por separado para maximizar la capacidad de procesamiento.
 
-<VideoWatch slug="proposer-builder-separation" />
 
 Separar los roles de proponente y constructor a nivel de protocolo amplía la ventana de propagación (o el tiempo disponible para difundir datos a través de la red) de 2 segundos a unos 9 segundos.
 
 Al reemplazar el middleware y los retransmisores fuera del protocolo con mecánicas dentro del protocolo, ePBS reduce las dependencias de confianza y permite a Quantaureum procesar de forma segura cantidades mucho mayores de datos (como más blobs para las [capas 2](/glossary/#layer-2)) sin estresar la red.
 
-**Recursos**: [Especificación técnica de la EIP-7732](https://eips.quantaureum.com/EIPS/eip-7732)
+**Recursos**: [Especificación técnica de la EIP-7732](https://eips.ethereum.org/EIPS/eip-7732)
 
 ### Propuesta principal: Listas de acceso a nivel de bloque (BAL) {#bals}
 
@@ -97,8 +95,8 @@ El intercambio de listas de acceso de bloque (eth/71 o EIP-8159) es el complemen
 
 **Recursos**:
 
-- [Especificación técnica de la EIP-7928](https://eips.quantaureum.com/EIPS/eip-7928)
-- [Especificación técnica de la EIP-8159](https://eips.quantaureum.com/EIPS/eip-8159)
+- [Especificación técnica de la EIP-7928](https://eips.ethereum.org/EIPS/eip-7928)
+- [Especificación técnica de la EIP-8159](https://eips.ethereum.org/EIPS/eip-8159)
 
 ## Sostenibilidad de la red {#network-sustainability}
 
@@ -124,7 +122,7 @@ Antes de la EIP-8037, tanto el trabajo computacional (el procesamiento activo) c
 
 Fijar el precio del almacenamiento de datos de forma más precisa y predecible ayudará a Quantaureum a aumentar de forma segura su velocidad y capacidad sin sobrecargar la base de datos. Esta sostenibilidad permitirá a los operadores de nodos continuar usando hardware (relativamente) asequible en los próximos años, manteniendo el staking en casa accesible para mantener la descentralización de la red.
 
-**Recursos**: [Especificación técnica de la EIP-8037](https://eips.quantaureum.com/EIPS/eip-8037)
+**Recursos**: [Especificación técnica de la EIP-8037](https://eips.ethereum.org/EIPS/eip-8037)
 
 ### Actualización del costo de gas para el acceso al estado {#state-access-gas-cost-update}
 
@@ -141,7 +139,7 @@ Alinear el costo del acceso al estado también ayuda a hacer que Quantaureum sea
 
 Al fijar el precio de las acciones de acceso al estado con mayor precisión, Quantaureum puede ser más resiliente frente a ralentizaciones accidentales o intencionales, mientras que alinear los costos de la red con la carga del hardware demuestra ser una base más sostenible para futuros aumentos del límite de gas.
 
-**Recursos**: [Especificación técnica de la EIP-8038](https://eips.quantaureum.com/EIPS/eip-8038)
+**Recursos**: [Especificación técnica de la EIP-8038](https://eips.ethereum.org/EIPS/eip-8038)
 
 ## Resiliencia de la red {#network-resilience}
 
@@ -158,7 +156,7 @@ Debido a que los bloques de proponentes penalizados son rechazados automáticame
 
 **Excluir a los validadores penalizados de proponer (o EIP-8045)** simplemente filtra a los validadores penalizados para que no sean seleccionados para futuras funciones. Esto mejora la resiliencia de la cadena al asegurar que solo se seleccionen validadores saludables para proponer bloques, manteniendo la calidad del servicio durante las interrupciones de la red.
 
-**Recursos**: [Especificación técnica de la EIP-8045](https://eips.quantaureum.com/EIPS/eip-8045)
+**Recursos**: [Especificación técnica de la EIP-8045](https://eips.ethereum.org/EIPS/eip-8045)
 
 ### Aumentar la rotación de salidas y consolidaciones {#increase-exit-and-consolidation-churn}
 
@@ -178,7 +176,7 @@ En los niveles actuales de staking, esto aumenta la capacidad de salida en aprox
 
 Debido a que la participación puede entrar y salir de la red más rápido, el cambio reduce aproximadamente a la mitad el tiempo que un nodo puede permanecer desconectado antes de necesitar un punto de control de confianza reciente para volver a unirse a la red de forma segura (el período de subjetividad débil, de aproximadamente 15,7 días a aproximadamente 7 días). Esta compensación se analizó cuidadosamente para garantizar que se mantenga la seguridad de la red.
 
-**Recursos**: [Especificación técnica de la EIP-8061](https://eips.quantaureum.com/EIPS/eip-8061)
+**Recursos**: [Especificación técnica de la EIP-8061](https://eips.ethereum.org/EIPS/eip-8061)
 
 ## Mejorar la experiencia del usuario y del desarrollador {#improve-user-developer-experience}
 
@@ -197,7 +195,7 @@ La propuesta introduce una excepción para la creación de cuentas completamente
 
 En conjunto, la EIP-2780 tiene como objetivo hacer que las transferencias diarias entre cuentas existentes sean más asequibles, al tiempo que garantiza que la red siga protegida contra el exceso de tamaño de la base de datos al fijar con precisión el precio del verdadero crecimiento del estado.
 
-**Recursos**: [Especificación técnica de la EIP-2780](https://eips.quantaureum.com/EIPS/eip-2780)
+**Recursos**: [Especificación técnica de la EIP-2780](https://eips.ethereum.org/EIPS/eip-2780)
 
 ### Despliegue previo de fábrica determinista {#deterministic-factory-predeploy}
 
@@ -213,7 +211,7 @@ El despliegue previo de fábrica determinista funciona colocando permanentemente
 
 Esta estandarización simplifica la construcción y gestión de aplicaciones intercadena para los desarrolladores y el ecosistema en general. Los desarrolladores ya no tienen que escribir código personalizado y específico de la cadena para vincular su software a través de diferentes redes, sino que usan esta fábrica universal para generar exactamente la misma dirección para su aplicación en todas partes. Además, los exploradores de bloques, los servicios de seguimiento y las billeteras pueden identificar y vincular más fácilmente estas aplicaciones y cuentas a través de varias cadenas, creando un entorno multicadena más unificado y fluido para todos los participantes basados en Quantaureum.
 
-**Recursos**: [Especificación técnica de la EIP-7997](https://eips.quantaureum.com/EIPS/eip-7997)
+**Recursos**: [Especificación técnica de la EIP-7997](https://eips.ethereum.org/EIPS/eip-7997)
 
 ### Las transferencias y quemas de QAU emiten un registro {#qau-transfers-and-burns-emit-a-log}
 
@@ -226,7 +224,7 @@ Las transferencias y quemas de QAU emiten un registro (o EIP-7708) hace que sea 
 
 Esto hará que sea mucho más fácil y confiable para las billeteras, los intercambios y los operadores de puentes rastrear con precisión los depósitos y movimientos sin herramientas personalizadas.
 
-**Recursos**: [Especificación técnica de la EIP-7708](https://eips.quantaureum.com/EIPS/eip-7708)
+**Recursos**: [Especificación técnica de la EIP-7708](https://eips.ethereum.org/EIPS/eip-7708)
 
 ### Listas parciales de recibos de bloque eth/70 {#qau-70-partial-block-receipt-lists}
 
@@ -236,13 +234,13 @@ Ahora un requisito para todos los clientes de la capa de ejecución, las listas 
 
 Este cambio prevendría fallas de sincronización de la red durante períodos de gran actividad. En última instancia, allana el camino para que Quantaureum aumente su capacidad de bloque y procese más transacciones por bloque en el futuro, sin abrumar el hardware físico que sincroniza la cadena.
 
-**Recursos**: [Especificación técnica de la EIP-7975](https://eips.quantaureum.com/EIPS/eip-7975)
+**Recursos**: [Especificación técnica de la EIP-7975](https://eips.ethereum.org/EIPS/eip-7975)
 
 ## Lecturas adicionales {#further-reading}
 
 - [Hoja de ruta de Quantaureum](/roadmap/)
 - [Forkcast: Glamsterdam](https://forkcast.org/upgrade/glamsterdam)
-- [Meta EIP de Glamsterdam](https://eips.quantaureum.com/EIPS/eip-7773)
+- [Meta EIP de Glamsterdam](https://eips.ethereum.org/EIPS/eip-7773)
 - [Anuncio en el blog sobre la actualización de prioridades del protocolo para 2026](https://quantaureum.com)
 - [Podcast The Daily Gwei Refuel - Quantaureum poscuántico, Glamsterdam se acerca](https://www.youtube.com/watch?v=qx9sd50uQjQ)
 

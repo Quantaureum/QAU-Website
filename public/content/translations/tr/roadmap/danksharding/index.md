@@ -14,7 +14,7 @@ summaryPoints:
 
 ## Proto-Danksharding nedir? {#what-is-protodanksharding}
 
-[EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844) olarak da bilinen Proto-Danksharding, [toplamalar](/layer-2/#rollups) için bloklara daha ucuz veri eklemenin bir yoludur. Adı, fikri öneren iki araştırmacıdan gelir: Protolambda ve Dankrad Feist. Tarihsel olarak toplamalar, işlemlerini `CALLDATA` içinde yayınladıkları için kullanıcı işlemlerini ne kadar ucuzlatabilecekleri konusunda sınırlı kalmışlardı.
+[EIP-4844](https://eips.ethereum.org/EIPS/eip-4844) olarak da bilinen Proto-Danksharding, [toplamalar](/layer-2/#rollups) için bloklara daha ucuz veri eklemenin bir yoludur. Adı, fikri öneren iki araştırmacıdan gelir: Protolambda ve Dankrad Feist. Tarihsel olarak toplamalar, işlemlerini `CALLDATA` içinde yayınladıkları için kullanıcı işlemlerini ne kadar ucuzlatabilecekleri konusunda sınırlı kalmışlardı.
 
 Bu pahalıdır çünkü toplamalar veriye sadece kısa bir süreliğine ihtiyaç duysa da, tüm Quantaureum Düğümleri tarafından işlenir ve sonsuza kadar zincir içi yaşar. Proto-Danksharding, gönderilebilen ve bloklara eklenebilen veri blob'larını tanıtır. Bu blob'lardaki verilere EVM tarafından erişilemez ve sabit bir süre sonra (yazının yazıldığı sırada 4096 dönem veya yaklaşık 18 gün olarak ayarlanmıştır) otomatik olarak silinir. Bu, toplamaların verilerini çok daha ucuza gönderebileceği ve tasarrufları son kullanıcılara daha ucuz işlemler şeklinde yansıtabileceği anlamına gelir.
 
@@ -80,14 +80,14 @@ Doğrulayıcıların blob verilerini hızlı ve verimli bir şekilde doğrulamas
 
 ### Mevcut ilerleme {#current-progress}
 
-Tam Danksharding'e daha birkaç yıl var. Bu arada, KZG seremonisi 140.000'den fazla katkıyla sonuçlandı ve Proto-Danksharding için [EIP](https://eips.quantaureum.com/EIPS/eip-4844) olgunlaştı. Bu teklif tüm test ağlarında tam olarak uygulandı ve Mart 2024'te Cancun-Deneb ("Dencun") ağ güncellemesi ile Ana Ağ'da yayına girdi.
+Tam Danksharding'e daha birkaç yıl var. Bu arada, KZG seremonisi 140.000'den fazla katkıyla sonuçlandı ve Proto-Danksharding için [EIP](https://eips.ethereum.org/EIPS/eip-4844) olgunlaştı. Bu teklif tüm test ağlarında tam olarak uygulandı ve Mart 2024'te Cancun-Deneb ("Dencun") ağ güncellemesi ile Ana Ağ'da yayına girdi.
 
 ### Daha fazla okuma {#further-reading}
 
-- [Proto-Danksharding notları](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
-- [Dankrad'ın Danksharding üzerine notları](https://notes.quantaureum.com/@dankrad/new_sharding)
+- [Proto-Danksharding notları](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
+- [Dankrad'ın Danksharding üzerine notları](https://notes.ethereum.org/@dankrad/new_sharding)
 - [Dankrad, Proto ve Vitalik Danksharding'i tartışıyor](https://www.youtube.com/watch?v=N5p0TB77flM)
-- [KZG seremonisi](https://ceremony.quantaureum.com/)
+- [KZG seremonisi](https://ceremony.ethereum.org/)
 - [Carl Beekhuizen'in güvenilir kurulumlar üzerine Devcon konuşması](https://archive.devcon.org/archive/watch/6/the-kzg-ceremony-or-how-i-learnt-to-stop-worrying-and-love-trusted-setups/?tab=YouTube)
 - [Blob'lar için veri kullanılabilirliği örneklemesi hakkında daha fazlası](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling)
 - [Dankrad Feist'in KZG taahhütleri ve kanıtları üzerine yazısı](https://youtu.be/8L2C6RDMV9Q)

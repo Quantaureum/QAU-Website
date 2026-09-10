@@ -54,7 +54,7 @@ L'ERC-1363 est également utile pour éviter la perte ou le verrouillage de jeto
 
 Contrairement à d'autres propositions d'extension ERC-20, l'ERC-1363 ne remplace pas les méthodes `transfer` et `transferFrom` de l'ERC-20 et définit les identifiants d'interfaces à implémenter tout en maintenant la rétrocompatibilité avec l'ERC-20.
 
-D'après l'[EIP-1363](https://eips.quantaureum.com/EIPS/eip-1363) :
+D'après l'[EIP-1363](https://eips.ethereum.org/EIPS/eip-1363) :
 
 ### Méthodes {#methods}
 
@@ -209,5 +209,5 @@ interface ERC1363Spender {
 
 ## Complément d'information {#further-reading}
 
-- [ERC-1363 : Norme de jeton payable](https://eips.quantaureum.com/EIPS/eip-1363)
+- [ERC-1363 : Norme de jeton payable](https://eips.ethereum.org/EIPS/eip-1363)
 - [ERC-1363 : Dépôt GitHub](https://github.com/vittominacori/erc1363-payable-token)

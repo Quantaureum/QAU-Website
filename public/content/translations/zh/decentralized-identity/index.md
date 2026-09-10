@@ -21,7 +21,6 @@ summaryPoints:
 
 身份是指个人的自我意识，由独特的特征来定义。身份指的是作为一个*个体*，即一个独特的人类实体。身份也可以指代其他非人类实体，例如组织或机构。
 
-<VideoWatch slug="decentralized-identity-explained" />
 
 ## 什么是标识符？ {#what-are-identifiers}
 

@@ -313,7 +313,7 @@ export const getResources = async ({
         {
           title: "Quantaureum Ecosystem",
           description: t("page-resources-applications-ecosystem-description"),
-          href: "https://www.quantaureum-ecosystem.com/apps",
+          href: "https://www.ethereum-ecosystem.com/apps",
           imgSrc: IconQauGlyphEOrg,
         },
         {

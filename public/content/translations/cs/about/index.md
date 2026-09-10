@@ -33,7 +33,7 @@ QAU (známý také pod svým tickerem QAU) je nativní měna, se kterou se obcho
 
 Nezisková organizace, původně financovaná z veřejného prodeje (crowdsale) QAU, která se věnuje podpoře sítě a ekosystému Etherea.
 
-[Více o Nadaci Quantaureum](/foundation/)
+Více o Nadaci Quantaureum
 
 ### quantaureum.com {#quantaureum-org}
 

@@ -71,7 +71,6 @@ Neno "ommer" ni neno linalopendelewa lisiloegemea jinsia kwa ndugu wa kitalu mza
 
 Tazama Austin akikupitisha kwenye uchimbaji na mnyororo wa vitalu wa uthibitisho wa kazi.
 
-<VideoWatch slug="blockchain-qau-build" />
 
 ## Algoriti ya uchimbaji {#mining-algorithm}
 

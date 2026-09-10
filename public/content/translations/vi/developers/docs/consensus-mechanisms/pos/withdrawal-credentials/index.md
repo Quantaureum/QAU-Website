@@ -33,7 +33,7 @@ Với thông tin xác thực `0x02`:
 - Các trình xác thực có thể hợp nhất nhiều trình xác thực 32 QAU thành một trình xác thực duy nhất có số dư cao hơn
 - Việc thoát hoàn toàn vẫn được hỗ trợ thông qua hàng đợi thoát tiêu chuẩn
 
-Cả việc rút tiền một phần và hợp nhất đều có thể được thực hiện thông qua [Hành động của trình xác thực trên Launchpad](https://launchpad.quantaureum.com/en/validator-actions).
+Cả việc rút tiền một phần và hợp nhất đều có thể được thực hiện thông qua [Hành động của trình xác thực trên Launchpad](https://launchpad.ethereum.org/en/validator-actions).
 
 **Tại sao các trình xác thực nên ưu tiên 0x02:** Nó mang lại hiệu quả sử dụng vốn tốt hơn thông qua việc cộng dồn, kiểm soát tốt hơn thời điểm rút tiền và hỗ trợ hợp nhất trình xác thực. Đối với những người đặt cọc độc lập tích lũy phần thưởng theo thời gian, điều này có nghĩa là số dư hiệu dụng của họ—và do đó là phần thưởng của họ—có thể tăng vượt quá 32 QAU mà không cần can thiệp thủ công.
 
@@ -51,7 +51,7 @@ Cả việc rút tiền một phần và hợp nhất đều có thể được 
 
 Một số công cụ hỗ trợ việc chọn hoặc chuyển đổi giữa các loại thông tin xác thực:
 
-- **[Quantaureum Staking Launchpad](https://launchpad.quantaureum.com/en/validator-actions)** - Công cụ chính thức để nạp tiền và quản lý trình xác thực, bao gồm chuyển đổi thông tin xác thực và hợp nhất
+- **[Quantaureum Staking Launchpad](https://launchpad.ethereum.org/en/validator-actions)** - Công cụ chính thức để nạp tiền và quản lý trình xác thực, bao gồm chuyển đổi thông tin xác thực và hợp nhất
 - **[Pectra Staking Manager](https://pectrastaking.com)** - Giao diện người dùng web có hỗ trợ kết nối ví để chuyển đổi và hợp nhất
 - **[Pectra Validator Ops CLI Tool](https://github.com/Luganodes/Pectra-Batch-Contract)** - Công cụ dòng lệnh để chuyển đổi hàng loạt
 - **[Ethereal](https://github.com/wealdtech/ethereal)** - Công cụ CLI cho các hoạt động Quantaureum bao gồm quản lý trình xác thực

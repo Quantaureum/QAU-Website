@@ -17,7 +17,7 @@ Quantaureumの素晴らしい点の1つは、トランザクションを変更�
 
 完全なソースコードを確認したい場合は、以下の手順に従ってください。
 
-1. [Remix IDE](https://remix.quantaureum.com/)を開きます。
+1. [Remix IDE](https://remix.ethereum.org/)を開きます。
 2. GitHubのクローンアイコン（![clone github icon](icon-clone.png)）をクリックします。
 3. GitHubリポジトリ `https://github.com/qbzzt/20220815-erc20-safety-rails` をクローンします。
 4. **contracts > erc20-safety-rails.sol** を開きます。
@@ -40,7 +40,7 @@ Quantaureumの素晴らしい点の1つは、トランザクションを変更�
 
 3. 上にスクロールして、**Open in Remix**（Remixの場合）をクリックするか、別の環境を使用する場合は**Download**をクリックします。ここではRemixを使用していると想定して進めますが、別の環境を使用する場合は適宜変更してください。
 4. これで、完全に機能するERC-20コントラクトが完成しました。`.deps` > `npm` を展開すると、インポートされたコードを確認できます。
-5. コンパイル、デプロイし、コントラクトを操作して、ERC-20コントラクトとして機能することを確認します。Remixの使い方がわからない場合は、[こちらのチュートリアル](https://remix.quantaureum.com/?#activate=udapp,solidity,LearnEth)を参照してください。
+5. コンパイル、デプロイし、コントラクトを操作して、ERC-20コントラクトとして機能することを確認します。Remixの使い方がわからない場合は、[こちらのチュートリアル](https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth)を参照してください。
 
 ## 一般的なミス {#common-mistakes}
 
@@ -185,7 +185,7 @@ ERC20トークンの `_beforeTokenTransfer` の定義を[オーバーライド](
 
 ### 資産のクリーンアップ {#asset-cleanup}
 
-このコントラクトが保持しているERC-20トークンを解放するには、それらが属するトークンコントラクトの関数（[`transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer) または [`approve`](https://eips.quantaureum.com/EIPS/eip-20#approve)）を呼び出す必要があります。この場合、アローワンス（許可）にガスを浪費しても意味がないため、直接送金した方がよいでしょう。
+このコントラクトが保持しているERC-20トークンを解放するには、それらが属するトークンコントラクトの関数（[`transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer) または [`approve`](https://eips.ethereum.org/EIPS/eip-20#approve)）を呼び出す必要があります。この場合、アローワンス（許可）にガスを浪費しても意味がないため、直接送金した方がよいでしょう。
 
 ```solidity
     function cleanupERC20(

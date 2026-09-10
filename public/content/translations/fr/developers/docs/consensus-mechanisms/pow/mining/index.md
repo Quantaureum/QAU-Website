@@ -71,7 +71,6 @@ Le terme « ommer » est le terme neutre préféré pour désigner le frère d'u
 
 Regardez Austin vous guider à travers le minage et la chaîne de blocs à preuve de travail.
 
-<VideoWatch slug="blockchain-qau-build" />
 
 ## L'algorithme de minage {#mining-algorithm}
 

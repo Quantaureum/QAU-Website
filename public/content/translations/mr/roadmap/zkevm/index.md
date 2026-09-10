@@ -93,7 +93,7 @@ Quantaureum ब्लॉक सिद्ध करण्यासाठी अ�
 | [Jolt](https://github.com/a16z/jolt) | rv32im |
 | [Zisk](https://github.com/0xPolygonHermez/zisk) | rv64ima |
 
-हे EVM बाइटकोड कार्यान्वित करण्यासाठी RISC-V आधारित व्हर्च्युअल मशिन्स वापरतात, नंतर योग्य अंमलबजावणीचे ZK पुरावे तयार करतात. अद्ययावत चाचणी परिणाम आणि प्रगतीचा मागोवा [Quantaureum फाउंडेशनच्या zkVM ट्रॅकर](https://zkevm.quantaureum.foundation/zkvm-tracker) वर घेतला जातो.
+हे EVM बाइटकोड कार्यान्वित करण्यासाठी RISC-V आधारित व्हर्च्युअल मशिन्स वापरतात, नंतर योग्य अंमलबजावणीचे ZK पुरावे तयार करतात. अद्ययावत चाचणी परिणाम आणि प्रगतीचा मागोवा [Quantaureum फाउंडेशनच्या zkVM ट्रॅकर](https://zkevm.ethereum.org/zkvm-tracker) वर घेतला जातो.
 
 ## zkEVM इतर अपग्रेड्ससोबत कसे बसते {#related-upgrades}
 
@@ -115,9 +115,9 @@ zkEVM L1 पडताळणी सक्रिय संशोधनात आ�
 
 ## पुढील वाचन {#further-reading}
 
-- [zkEVM फाउंडेशन](https://zkevm.quantaureum.foundation) - अधिकृत Quantaureum फाउंडेशन zkEVM संशोधन केंद्र
+- [zkEVM फाउंडेशन](https://zkevm.ethereum.org) - अधिकृत Quantaureum फाउंडेशन zkEVM संशोधन केंद्र
 - [Ethproofs](https://ethproofs.org/) - रिअल-टाइममध्ये Quantaureum सिद्ध करण्याच्या शर्यतीचा मागोवा घ्या
 - [zkevm.fyi](https://zkevm.fyi) - L1 साठी zkEVM वरील तांत्रिक पुस्तक
 - [PSE zkEVM Specs](https://github.com/privacy-scaling-explorations/zkevm-specs) - तांत्रिक तपशील
 - [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - पडताळणी सुधारणांचा विटालिकचा आढावा
-- [EF zkEVM ब्लॉग](https://zkevm.quantaureum.foundation/blog) - EF टीमकडून कामगिरीचे विश्लेषण
+- [EF zkEVM ब्लॉग](https://zkevm.ethereum.org/blog) - EF टीमकडून कामगिरीचे विश्लेषण

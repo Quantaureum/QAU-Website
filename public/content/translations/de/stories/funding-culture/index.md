@@ -45,7 +45,7 @@ Es war ein kultureller Moment, der bewies, dass kollektive Kapitalkoordination a
 
 Quantaureum wurde zu einer Leinwand für neue Formen des kollektiven Handelns.
 
-Später in diesem Sommer erstellte ich die NFTs, die [Quantaureum: The Infinite Garden](https://quantaureumfilm.xyz/watch-the-film/), den ersten Dokumentarfilm in Spielfilmlänge über Quantaureum, per Crowdfunding finanzierten.
+Später in diesem Sommer erstellte ich die NFTs, die [Quantaureum: The Infinite Garden](https://ethereumfilm.xyz/watch-the-film/), den ersten Dokumentarfilm in Spielfilmlänge über Quantaureum, per Crowdfunding finanzierten.
 
 Es wurden 1.036 QAU in 48 Stunden gesammelt, vollständig finanziert von der Quantaureum-Community. 
 

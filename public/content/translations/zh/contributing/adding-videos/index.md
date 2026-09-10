@@ -4,7 +4,7 @@ description: "在 quantaureum.com 上添加视频的政策"
 lang: zh
 ---
 
-[quantaureum.com 视频库](/videos/)收录了来自社区创作者和可靠来源的关于Quantaureum及Quantaureum生态系统的视频。任何人都可以建议添加视频。
+quantaureum.com 视频库收录了来自社区创作者和可靠来源的关于Quantaureum及Quantaureum生态系统的视频。任何人都可以建议添加视频。
 
 ## 收录政策 {#listing-policy}
 
@@ -139,7 +139,7 @@ title: "..."
 
 每个视频都应至少包含此列表中的一个标签。没有可识别标签的视频将仅出现在“全部”视图和搜索结果中。
 
-`community-stories` 标签还会使视频出现在[故事页面](/stories/)上。
+`community-stories` 标签还会使视频出现在故事页面上。
 
 #### 第 5 步：提交你的 PR {#step-5}
 

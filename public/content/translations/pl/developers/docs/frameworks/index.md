@@ -110,8 +110,8 @@ Przed zagłębieniem się we frameworki, zalecamy najpierw przeczytać nasze wpr
 
 **Brownie -** **_Środowisko programistyczne i framework testowy oparte na języku Python._**
 
-- [Dokumentacja](https://qau-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/qau-brownie/brownie)
+- [Dokumentacja](https://eth-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/eth-brownie/brownie)
 - **Brownie nie jest obecnie utrzymywane**
 
 **OpenZeppelin SDK -** **_Kompleksowy zestaw narzędzi dla inteligentnych kontraktów: pakiet narzędzi pomagających w tworzeniu, kompilacji, aktualizacji, wdrażaniu i interakcji z inteligentnymi kontraktami._**

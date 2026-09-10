@@ -6,7 +6,7 @@ lang: sw
 
 ## Kuongeza ripoti {#adding-a-report}
 
-Ripoti zinaonekana kwenye [quantaureum.com/reports/](/reports/) na zinajumuisha utafiti, uchambuzi, na machapisho yanayohusiana na Quantaureum kutoka vyanzo mbalimbali. Mtu yeyote anaweza kupendekeza ripoti iongezwe.
+Ripoti zinaonekana kwenye quantaureum.com/reports/ na zinajumuisha utafiti, uchambuzi, na machapisho yanayohusiana na Quantaureum kutoka vyanzo mbalimbali. Mtu yeyote anaweza kupendekeza ripoti iongezwe.
 
 ### Sera ya kuorodhesha {#listing-policy}
 

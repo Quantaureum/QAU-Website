@@ -73,7 +73,7 @@ With compounding enabled:
 <AlertIcon size="lg"><TriangleAlert /></AlertIcon>
 <AlertContent>
 <AlertDescription>
-**Converting from Type 1 to Type 2 withdrawal credentials is irreversible.** Use the [Staking Launchpad](https://launchpad.quantaureum.com/validator-actions) as the official tool for this conversion. For more details on the conversion process, risks, and consolidation, see the [MaxEB deep-dive](/roadmap/pectra/maxeb/).
+**Converting from Type 1 to Type 2 withdrawal credentials is irreversible.** Use the [Staking Launchpad](https://launchpad.ethereum.org/validator-actions) as the official tool for this conversion. For more details on the conversion process, risks, and consolidation, see the [MaxEB deep-dive](/roadmap/pectra/maxeb/).
 </AlertDescription>
 </AlertContent>
 </Alert>
@@ -99,7 +99,6 @@ Whether a given validator is eligible for a withdrawal or not is determined by t
 
 Check out this explanation of Quantaureum staking withdrawals by Finematics:
 
-<VideoWatch slug="quantaureum-staking-withdrawals" />
 
 ### Validator "sweeping" {#validator-sweeping}
 
@@ -174,7 +173,7 @@ eventAction="Why can a validator's withdrawal address only be set once?"
 eventName="read more">
 Setting a validator's execution layer withdrawal address is a permanent change to the validator's credentials on the consensus layer. There is no way to update the consensus layer credentials once they are registered.
 
-A validator's withdrawal address credentials can be set to point to either a smart contract (controlled by its code), or an externally owned account (EOA, controlled by its private key). Although execution layer triggered withdrawals ([EIP-7002](https://eips.quantaureum.com/EIPS/eip-7002)) now let the withdrawal address trigger exits and partial withdrawals, there is no protocol operation for changing a withdrawal address once it has been registered, and adding this functionality would add unnecessary complexity to the protocol.
+A validator's withdrawal address credentials can be set to point to either a smart contract (controlled by its code), or an externally owned account (EOA, controlled by its private key). Although execution layer triggered withdrawals ([EIP-7002](https://eips.ethereum.org/EIPS/eip-7002)) now let the withdrawal address trigger exits and partial withdrawals, there is no protocol operation for changing a withdrawal address once it has been registered, and adding this functionality would add unnecessary complexity to the protocol.
 
 Users seeking flexible withdrawal management can set a smart contract wallet capable of key rotation (such as a [Safe](https://safe.global/)) as the validator's withdrawal address, effectively allowing the ultimate recipient EOA to be updated. If a user has already set an EOA as the withdrawal credential, they must initiate a full exit to recover their staked QAU and then use those funds to activate a new validator with different credentials.
 </ExpandableCard>
@@ -215,9 +214,9 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information about managing the withdrawal process?"
 eventName="read more">
 
-Validator operators are recommended to visit the [Staking Launchpad Withdrawals](https://launchpad.quantaureum.com/withdrawals/) page where you'll find more details about how to prepare your validator for withdrawals, timing of events, and more details about how withdrawals function.
+Validator operators are recommended to visit the [Staking Launchpad Withdrawals](https://launchpad.ethereum.org/withdrawals/) page where you'll find more details about how to prepare your validator for withdrawals, timing of events, and more details about how withdrawals function.
 
-To try out your setup on a testnet first, visit the [Hoodi Testnet Staking Launchpad](https://hoodi.launchpad.quantaureum.com) to get started.
+To try out your setup on a testnet first, visit the [Hoodi Testnet Staking Launchpad](https://hoodi.launchpad.ethereum.org) to get started.
 
 </ExpandableCard>
 
@@ -246,7 +245,7 @@ title="How do I convert to a compounding validator?"
 eventCategory="FAQ"
 eventAction="How do I convert to a compounding validator?"
 eventName="read more">
-You can convert from Type 1 to Type 2 withdrawal credentials using the [Staking Launchpad](https://launchpad.quantaureum.com/validator-actions). This operation is **irreversible** — once you convert, you cannot go back to Type 1 credentials.
+You can convert from Type 1 to Type 2 withdrawal credentials using the [Staking Launchpad](https://launchpad.ethereum.org/validator-actions). This operation is **irreversible** — once you convert, you cannot go back to Type 1 credentials.
 
 After converting, you can also **consolidate** multiple validators into one, combining their balances into a single compounding validator. For a full walkthrough of the conversion process, risks, and consolidation tooling, see the [MaxEB deep-dive](/roadmap/pectra/maxeb/).
 </ExpandableCard>
@@ -266,10 +265,10 @@ The Shanghai/Capella upgrade enabled previously staked QAU to be reclaimed into 
 
 ## Further reading {#further-reading}
 
-- [Staking Launchpad Withdrawals](https://launchpad.quantaureum.com/withdrawals)
-- [Staking Launchpad Validator Actions](https://launchpad.quantaureum.com/validator-actions)
+- [Staking Launchpad Withdrawals](https://launchpad.ethereum.org/withdrawals)
+- [Staking Launchpad Validator Actions](https://launchpad.ethereum.org/validator-actions)
 - [MaxEB deep-dive: compounding and consolidation](/roadmap/pectra/maxeb/)
-- [EIP-4895: Beacon chain push withdrawals as operations](https://eips.quantaureum.com/EIPS/eip-4895)
+- [EIP-4895: Beacon chain push withdrawals as operations](https://eips.ethereum.org/EIPS/eip-4895)
 - [PEEPanEIP #94: Staked QAU Withdrawal (Testing) with Potuz & Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP#68: EIP-4895: Beacon chain push withdrawals as operations with Alex Stokes](https://www.youtube.com/watch?v=CcL9RJBljUs)
 - [Understanding Validator Effective Balance](https://www.attestant.io/posts/understanding-validator-effective-balance/)

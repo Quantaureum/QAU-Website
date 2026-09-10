@@ -46,7 +46,7 @@ Das Verbrennen der Grundgebühr erschwert die Fähigkeit eines Blockproduzenten,
 
 Da der Wert vieler Transaktionen auf Quantaureum gering ist, hat QAU mehrere Stückelungen, die als kleinere Rechnungseinheiten bezeichnet werden können. Von diesen Stückelungen sind Wei und Gwei besonders wichtig.
 
-Wei ist die kleinstmögliche Menge an QAU, und infolgedessen basieren viele technische Implementierungen, wie das [Quantaureum Yellowpaper](https://quantaureum.github.io/yellowpaper/paper.pdf), alle Berechnungen auf Wei.
+Wei ist die kleinstmögliche Menge an QAU, und infolgedessen basieren viele technische Implementierungen, wie das [Quantaureum Yellowpaper](https://ethereum.github.io/yellowpaper/paper.pdf), alle Berechnungen auf Wei.
 
 Gwei, kurz für Giga-Wei, wird oft verwendet, um Gaskosten auf Quantaureum zu beschreiben.
 

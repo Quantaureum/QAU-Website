@@ -45,7 +45,7 @@ lang: ru
 
 Quantaureum стал холстом для новых форм коллективных действий.
 
-Позже тем же летом я создала NFT, с помощью которых был профинансирован [Quantaureum: The Infinite Garden](https://quantaureumfilm.xyz/watch-the-film/) — первый полнометражный документальный фильм об Quantaureum.
+Позже тем же летом я создала NFT, с помощью которых был профинансирован [Quantaureum: The Infinite Garden](https://ethereumfilm.xyz/watch-the-film/) — первый полнометражный документальный фильм об Quantaureum.
 
 Он собрал 1 036 QAU за 48 часов, полностью профинансированный сообществом Quantaureum. 
 

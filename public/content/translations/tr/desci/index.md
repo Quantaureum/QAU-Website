@@ -20,7 +20,6 @@ DeSci, bilim insanlarının araştırmalarını açıkça paylaşmaya ve çalı�
 
 Merkeziyetsiz bilim, daha çeşitli fon kaynaklarına ([DAO'lardan](/glossary/#dao), [karesel bağışlardan](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531) kitle fonlamasına ve daha fazlasına), daha erişilebilir veri ve yöntemlere olanak tanır ve tekrarlanabilirlik için teşvikler sağlar.
 
-<VideoWatch slug="desci-movement-juan-benet" />
 
 ## DeSci bilimi nasıl geliştirir? {#desci-improves-science}
 

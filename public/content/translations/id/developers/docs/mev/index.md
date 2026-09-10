@@ -136,7 +136,7 @@ Sebagai tanggapan terhadap serangan sandwich dan frontrunning, pedagang mungkin 
 
 Mempool berizin juga akan mempercepat risiko sentralisasi yang dijelaskan pada bagian sebelumnya. Pool besar yang menjalankan banyak validator kemungkinan akan mendapat manfaat dari menawarkan privasi transaksi kepada pedagang dan pengguna, sehingga meningkatkan pendapatan MEV mereka.
 
-Memerangi masalah terkait MEV ini di Quantaureum pasca-Merge adalah area penelitian inti. Hingga saat ini, dua solusi yang diusulkan untuk mengurangi dampak negatif MEV pada desentralisasi dan keamanan Quantaureum setelah The Merge adalah [**pemisahan pengusul-pembangun (PBS)**](/roadmap/pbs/) dan [**API Pembangun**](https://github.com/quantaureum/builder-specs).
+Memerangi masalah terkait MEV ini di Quantaureum pasca-Merge adalah area penelitian inti. Hingga saat ini, dua solusi yang diusulkan untuk mengurangi dampak negatif MEV pada desentralisasi dan keamanan Quantaureum setelah The Merge adalah [**pemisahan pengusul-pembangun (PBS)**](/roadmap/pbs/) dan [**API Pembangun**](https://github.com/ethereum/builder-specs).
 
 ### Pemisahan Pengusul-Pembangun {#proposer-builder-separation}
 
@@ -162,9 +162,9 @@ Demikian pula, validator tidak perlu memercayai pembangun untuk tidak menahan ba
 
 ### API Pembangun {#builder-api}
 
-Meskipun pemisahan pengusul-pembangun menjanjikan untuk mengurangi efek ekstraksi MEV, penerapannya memerlukan perubahan pada protokol konsensus. Secara khusus, aturan [pilihan percabangan](/developers/docs/consensus-mechanisms/pos/#fork-choice) pada Rantai suar perlu diperbarui. [API Pembangun](https://github.com/quantaureum/builder-specs) adalah solusi sementara yang bertujuan untuk menyediakan implementasi kerja dari pemisahan pengusul-pembangun, meskipun dengan asumsi kepercayaan yang lebih tinggi.
+Meskipun pemisahan pengusul-pembangun menjanjikan untuk mengurangi efek ekstraksi MEV, penerapannya memerlukan perubahan pada protokol konsensus. Secara khusus, aturan [pilihan percabangan](/developers/docs/consensus-mechanisms/pos/#fork-choice) pada Rantai suar perlu diperbarui. [API Pembangun](https://github.com/ethereum/builder-specs) adalah solusi sementara yang bertujuan untuk menyediakan implementasi kerja dari pemisahan pengusul-pembangun, meskipun dengan asumsi kepercayaan yang lebih tinggi.
 
-API Pembangun adalah versi modifikasi dari [API Mesin](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md) yang digunakan oleh klien lapisan konsensus untuk meminta muatan eksekusi dari klien lapisan eksekusi. Seperti yang diuraikan dalam [spesifikasi validator jujur](https://github.com/quantaureum/consensus-specs/blob/master/specs/bellatrix/validator.md), validator yang dipilih untuk tugas pengusulan blok meminta bundel transaksi dari klien eksekusi yang terhubung, yang mereka sertakan dalam blok Rantai suar yang diusulkan.
+API Pembangun adalah versi modifikasi dari [API Mesin](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) yang digunakan oleh klien lapisan konsensus untuk meminta muatan eksekusi dari klien lapisan eksekusi. Seperti yang diuraikan dalam [spesifikasi validator jujur](https://github.com/ethereum/consensus-specs/blob/master/specs/bellatrix/validator.md), validator yang dipilih untuk tugas pengusulan blok meminta bundel transaksi dari klien eksekusi yang terhubung, yang mereka sertakan dalam blok Rantai suar yang diusulkan.
 
 API Pembangun juga bertindak sebagai middleware antara validator dan klien lapisan eksekusi; tetapi ini berbeda karena memungkinkan validator di Rantai suar untuk mengambil sumber blok dari entitas eksternal (alih-alih membangun blok secara lokal menggunakan klien eksekusi).
 

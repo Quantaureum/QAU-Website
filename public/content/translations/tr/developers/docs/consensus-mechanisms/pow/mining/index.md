@@ -71,7 +71,6 @@ Her işlem bir kez kazılır (yeni bir bloğa dahil edilir ve ilk kez yayılır)
 
 Austin'in size madencilik ve İş Kanıtı (PoW) Blokzincirini adım adım anlatmasını izleyin.
 
-<VideoWatch slug="blockchain-qau-build" />
 
 ## Madencilik algoritması {#mining-algorithm}
 

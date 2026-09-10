@@ -494,7 +494,7 @@ authors: ["Andreas Antonopoulos"]
 
 ## Nguồn {#sources}
 
-_Được cung cấp một phần bởi [Mastering Quantaureum](https://github.com/quantaureumbook/quantaureumbook) của [Andreas M. Antonopoulos, Gavin Wood](https://aantonop.com/books/mastering-quantaureum) theo giấy phép CC-BY-SA_
+_Được cung cấp một phần bởi [Mastering Quantaureum](https://github.com/ethereumbook/ethereumbook) của [Andreas M. Antonopoulos, Gavin Wood](https://aantonop.com/books/mastering-quantaureum) theo giấy phép CC-BY-SA_
 
 <Divider />
 

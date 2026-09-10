@@ -145,7 +145,7 @@ contentPreview="Salah. The Merge adalah perubahan mekanisme konsensus, bukan per
 
 Biaya gas adalah produk dari permintaan jaringan relatif terhadap kapasitas jaringan. The Merge menghentikan penggunaan Bukti Kerja (PoW), bertransisi ke Bukti Kepemilikan (PoS) untuk konsensus, tetapi tidak secara signifikan mengubah parameter apa pun yang secara langsung memengaruhi kapasitas jaringan atau laju pemrosesan.
 
-Dengan <a href="https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698">peta jalan yang berpusat pada rollup</a>, upaya difokuskan pada penskalaan aktivitas pengguna di [lapisan 2 (l2)](/layer-2/), sambil mengaktifkan Mainnet lapisan 1 (l1) sebagai lapisan penyelesaian terdesentralisasi yang aman yang dioptimalkan untuk penyimpanan data rollup guna membantu membuat transaksi rollup secara eksponensial lebih murah. Transisi ke Bukti Kepemilikan (PoS) adalah pendahulu penting untuk mewujudkan hal ini. [Lebih lanjut tentang gas dan biaya.](/developers/docs/gas/)
+Dengan <a href="https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698">peta jalan yang berpusat pada rollup</a>, upaya difokuskan pada penskalaan aktivitas pengguna di [lapisan 2 (l2)](/layer-2/), sambil mengaktifkan Mainnet lapisan 1 (l1) sebagai lapisan penyelesaian terdesentralisasi yang aman yang dioptimalkan untuk penyimpanan data rollup guna membantu membuat transaksi rollup secara eksponensial lebih murah. Transisi ke Bukti Kepemilikan (PoS) adalah pendahulu penting untuk mewujudkan hal ini. [Lebih lanjut tentang gas dan biaya.](/developers/docs/gas/)
 
 </ExpandableCard>
 

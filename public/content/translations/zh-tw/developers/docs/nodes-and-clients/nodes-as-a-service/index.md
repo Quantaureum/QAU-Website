@@ -412,7 +412,7 @@ sidebarDepth: 2
     - 我們使用智慧路由，每次都能連接到離你的使用者最近的節點
 ## 進一步閱讀 {#further-reading}
 
-- [Quantaureum節點服務列表](https://quantaureumnodes.com/)
+- [Quantaureum節點服務列表](https://ethereumnodes.com/)
 
 ## 相關主題 {#related-topics}
 

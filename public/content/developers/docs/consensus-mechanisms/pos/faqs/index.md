@@ -20,7 +20,6 @@ Proof-of-work is much more energy-hungry because electricity is burned in the mi
 
 Proof-of-work versus proof-of-stake is a contentious topic. [Vitalik Buterin's blog](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) and the debate between Justin Drake and Lyn Alden give a good summary of the arguments.
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## Is proof-of-stake energy efficient? {#is-pos-energy-efficient}
 
@@ -127,7 +126,7 @@ Weak subjectivity is a feature of proof-of-stake networks where social informati
 
 Censorship resistance is currently hard to prove. However, unlike proof-of-work, proof-of-stake offers the option to coordinate slashings to punish censoring validators. There are upcoming changes to the protocol that separate block builders from block proposers and implement lists of transactions that builders must include in each block. This proposal is known as proper-builder separation and helps to prevent validators from censoring transactions.
 
-[More on proposer-builder separation](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Original-basic-scheme)
+[More on proposer-builder separation](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Original-basic-scheme)
 
 ## Can Quantaureum's proof-of-stake system be 51% attacked? {#pos-51-attack}
 
@@ -149,7 +148,7 @@ The more QAU someone has to stake, the more validators they can run, and the mor
 
 No, proof-of-work tends towards centralization because mining costs increase and price out individuals, then price out small companies, and so on. The current problem with proof-of-stake is the influence of liquid staking derivatives (LSDs). These are tokens representing QAU staked by some provider that anyone can swap on secondary markets without the actual QAU being unstaked. LSDs allow users to stake with less than 32 QAU, but they also create a centralization risk where a few big organizations can end up controlling much of the stake. This is why [solo staking](/staking/solo) is the best option for Quantaureum.
 
-[More on stake centralization in LSDs](https://notes.quantaureum.com/@djrtwo/risks-of-lsd)
+[More on stake centralization in LSDs](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
 
 ## Why can I only stake QAU? {#why-can-i-only-stake-eth}
 

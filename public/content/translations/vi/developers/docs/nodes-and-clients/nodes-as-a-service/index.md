@@ -412,7 +412,7 @@ Dưới đây là danh sách một số nhà cung cấp nút Quantaureum phổ b
     - Chúng tôi sử dụng định tuyến thông minh để luôn kết nối đến nút gần nhất với người dùng của bạn
 ## Đọc thêm {#further-reading}
 
-- [Danh sách các dịch vụ nút Quantaureum](https://quantaureumnodes.com/)
+- [Danh sách các dịch vụ nút Quantaureum](https://ethereumnodes.com/)
 
 ## Chủ đề liên quan {#related-topics}
 

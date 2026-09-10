@@ -13,9 +13,9 @@ published: 2026-02-27
 
 Nếu chúng ta muốn Quantaureum phục vụ [thêm một tỷ người nữa](https://quantaureum.com), chúng ta cần loại bỏ các rào cản và làm cho nó dễ sử dụng nhất có thể. Một trong những rào cản này là việc cần có QAU để trả phí Gas.
 
-Nếu bạn có một ứng dụng phi tập trung (dapp) kiếm tiền từ người dùng, có thể hợp lý khi cho phép người dùng gửi các giao dịch thông qua máy chủ của bạn và tự bạn trả phí giao dịch. Bởi vì người dùng vẫn ký một [thông điệp ủy quyền EIP-712](https://eips.quantaureum.com/EIPS/eip-712) trong Ví của họ, họ vẫn giữ được các đảm bảo về tính toàn vẹn của Quantaureum. Tính khả dụng phụ thuộc vào máy chủ chuyển tiếp các giao dịch, do đó nó bị giới hạn hơn. Tuy nhiên, bạn có thể thiết lập để người dùng cũng có thể truy cập trực tiếp vào hợp đồng thông minh (nếu họ có QAU), và cho phép những người khác thiết lập máy chủ của riêng họ nếu họ muốn tài trợ cho các giao dịch.
+Nếu bạn có một ứng dụng phi tập trung (dapp) kiếm tiền từ người dùng, có thể hợp lý khi cho phép người dùng gửi các giao dịch thông qua máy chủ của bạn và tự bạn trả phí giao dịch. Bởi vì người dùng vẫn ký một [thông điệp ủy quyền EIP-712](https://eips.ethereum.org/EIPS/eip-712) trong Ví của họ, họ vẫn giữ được các đảm bảo về tính toàn vẹn của Quantaureum. Tính khả dụng phụ thuộc vào máy chủ chuyển tiếp các giao dịch, do đó nó bị giới hạn hơn. Tuy nhiên, bạn có thể thiết lập để người dùng cũng có thể truy cập trực tiếp vào hợp đồng thông minh (nếu họ có QAU), và cho phép những người khác thiết lập máy chủ của riêng họ nếu họ muốn tài trợ cho các giao dịch.
 
-Kỹ thuật trong hướng dẫn này chỉ hoạt động khi bạn kiểm soát hợp đồng thông minh. Có những kỹ thuật khác, bao gồm [trừu tượng hóa tài khoản](https://eips.quantaureum.com/EIPS/eip-4337) cho phép bạn tài trợ các giao dịch cho các hợp đồng thông minh khác, mà tôi hy vọng sẽ đề cập trong một bài hướng dẫn tương lai.
+Kỹ thuật trong hướng dẫn này chỉ hoạt động khi bạn kiểm soát hợp đồng thông minh. Có những kỹ thuật khác, bao gồm [trừu tượng hóa tài khoản](https://eips.ethereum.org/EIPS/eip-4337) cho phép bạn tài trợ các giao dịch cho các hợp đồng thông minh khác, mà tôi hy vọng sẽ đề cập trong một bài hướng dẫn tương lai.
 
 Lưu ý: Đây _không phải_ là mã cấp độ sản xuất (production-level). Nó dễ bị tấn công nghiêm trọng và thiếu các tính năng chính. Tìm hiểu thêm trong [phần lỗ hổng bảo mật của hướng dẫn này](#vulnerabilities).
 
@@ -91,7 +91,7 @@ Nếu không có Tài khoản, hãy đưa ra lỗi. Điều này không bao gi�
         }
 ```
 
-Các tham số cho [bộ phân tách miền (domain separator)](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator). Giá trị này là hằng số, vì vậy trong một triển khai được tối ưu hóa tốt hơn, chúng ta có thể tính toán nó một lần thay vì tính toán lại mỗi khi hàm được gọi.
+Các tham số cho [bộ phân tách miền (domain separator)](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator). Giá trị này là hằng số, vì vậy trong một triển khai được tối ưu hóa tốt hơn, chúng ta có thể tính toán nó một lần thay vì tính toán lại mỗi khi hàm được gọi.
 
 - `name` là một tên mà người dùng có thể đọc được, chẳng hạn như tên của dapp mà chúng ta đang tạo chữ ký cho nó.
 - `version` là phiên bản. Các phiên bản khác nhau không tương thích với nhau.
@@ -245,7 +245,7 @@ Cuối cùng, [`Greeter.sol`](https://github.com/qbzzt/260301-gasless/blob/main/
     }
 ```
 
-Hàm khởi tạo tạo ra [bộ phân tách miền](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator), tương tự như mã giao diện người dùng ở trên. Việc thực thi trên Chuỗi khối tốn kém hơn nhiều, vì vậy chúng ta chỉ tính toán nó một lần.
+Hàm khởi tạo tạo ra [bộ phân tách miền](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator), tương tự như mã giao diện người dùng ở trên. Việc thực thi trên Chuỗi khối tốn kém hơn nhiều, vì vậy chúng ta chỉ tính toán nó một lần.
 
 ```solidity
     struct GreetingRequest {
@@ -260,7 +260,7 @@ Hàm khởi tạo tạo ra [bộ phân tách miền](https://eips.quantaureum.co
         keccak256("GreetingRequest(string greeting)");
 ```
 
-Đây là [định danh cấu trúc](https://eips.quantaureum.com/EIPS/eip-712#definition-of-hashstruct). Nó được tính toán mỗi lần trong giao diện người dùng.
+Đây là [định danh cấu trúc](https://eips.ethereum.org/EIPS/eip-712#definition-of-hashstruct). Nó được tính toán mỗi lần trong giao diện người dùng.
 
 ```solidity
     function sponsoredSetGreeting(
@@ -289,7 +289,7 @@ Hàm này nhận một yêu cầu đã ký và cập nhật lời chào.
         );
 ```
 
-Tạo bản tóm tắt (digest) theo [EIP 712](https://eips.quantaureum.com/EIPS/eip-712).
+Tạo bản tóm tắt (digest) theo [EIP 712](https://eips.ethereum.org/EIPS/eip-712).
 
 ```solidity
         // Khôi phục người ký

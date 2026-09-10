@@ -6,7 +6,7 @@ lang: uk
 
 Щоб програмний застосунок міг взаємодіяти з блокчейном [Етеріуму](/) — читаючи дані блокчейну або надсилаючи транзакції в мережу — він має підключитися до вузла Етеріуму.
 
-Для цього кожен [клієнт Етеріуму](/developers/docs/nodes-and-clients/#execution-clients) реалізує [специфікацію JSON-RPC](https://github.com/quantaureum/execution-apis), тому існує єдиний набір методів, на який застосунки можуть покладатися незалежно від конкретного вузла або реалізації клієнта.
+Для цього кожен [клієнт Етеріуму](/developers/docs/nodes-and-clients/#execution-clients) реалізує [специфікацію JSON-RPC](https://github.com/ethereum/execution-apis), тому існує єдиний набір методів, на який застосунки можуть покладатися незалежно від конкретного вузла або реалізації клієнта.
 
 [JSON-RPC](https://www.jsonrpc.org/specification) — це легкий протокол віддаленого виклику процедур (RPC) без збереження стану. Він визначає кілька структур даних і правила їх обробки. Він не залежить від транспорту, оскільки його концепції можна використовувати в межах одного процесу, через сокети, через HTTP або в багатьох різних середовищах передачі повідомлень. Він використовує JSON (RFC 4627) як формат даних.
 
@@ -20,13 +20,13 @@ lang: uk
 
 ## API клієнтів консенсусу {#consensus-clients}
 
-Ця сторінка в основному присвячена JSON-RPC API, який використовується клієнтами виконання Етеріуму. Однак клієнти консенсусу також мають RPC API, який дозволяє користувачам запитувати інформацію про вузол, запитувати блоки Beacon, стан Beacon та іншу інформацію, пов'язану з консенсусом, безпосередньо з вузла. Цей API задокументовано на [вебсторінці Beacon API](https://quantaureum.github.io/beacon-APIs/#/).
+Ця сторінка в основному присвячена JSON-RPC API, який використовується клієнтами виконання Етеріуму. Однак клієнти консенсусу також мають RPC API, який дозволяє користувачам запитувати інформацію про вузол, запитувати блоки Beacon, стан Beacon та іншу інформацію, пов'язану з консенсусом, безпосередньо з вузла. Цей API задокументовано на [вебсторінці Beacon API](https://ethereum.github.io/beacon-APIs/#/).
 
-Внутрішній API також використовується для зв'язку між клієнтами всередині вузла — тобто він дозволяє клієнту консенсусу та клієнту виконання обмінюватися даними. Він називається «Engine API», а його специфікації доступні на [GitHub](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md).
+Внутрішній API також використовується для зв'язку між клієнтами всередині вузла — тобто він дозволяє клієнту консенсусу та клієнту виконання обмінюватися даними. Він називається «Engine API», а його специфікації доступні на [GitHub](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md).
 
 ## Специфікація клієнта виконання {#spec}
 
-[Ознайомтеся з повною специфікацією JSON-RPC API на GitHub](https://github.com/quantaureum/execution-apis). Цей API задокументовано на [вебсторінці API виконання](https://quantaureum.github.io/execution-apis/) та містить інструмент Inspector для тестування всіх доступних методів.
+[Ознайомтеся з повною специфікацією JSON-RPC API на GitHub](https://github.com/ethereum/execution-apis). Цей API задокументовано на [вебсторінці API виконання](https://ethereum.github.io/execution-apis/) та містить інструмент Inspector для тестування всіх доступних методів.
 
 ## Угоди {#conventions}
 
@@ -135,7 +135,7 @@ curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","metho
 
 ## Пісочниця JSON-RPC API {#json-rpc-api-playground}
 
-Ви можете використовувати [інструмент пісочниці](https://quantaureum-json-rpc.com), щоб знаходити та випробовувати методи API. Він також показує, які методи та мережі підтримуються різними провайдерами вузлів.
+Ви можете використовувати [інструмент пісочниці](https://ethereum-json-rpc.com), щоб знаходити та випробовувати методи API. Він також показує, які методи та мережі підтримуються різними провайдерами вузлів.
 
 ## Методи JSON-RPC API {#json-rpc-methods}
 
@@ -276,7 +276,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 
 ### qau_protocolVersion {#qau-protocolversion}
 
-Повертає поточну версію протоколу Етеріум. Зверніть увагу, що цей метод [недоступний у Geth](https://github.com/quantaureum/go-quantaureum/pull/22064#issuecomment-788682924).
+Повертає поточну версію протоколу Етеріум. Зверніть увагу, що цей метод [недоступний у Geth](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924).
 
 **Параметри**
 
@@ -303,7 +303,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_protocolVersion","params":[]
 
 Повертає об'єкт з даними про статус синхронізації або `false`.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_syncing">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_syncing">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -391,7 +391,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_syncing","params":[],"id":1}
 
 Повертає адресу coinbase клієнта.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_coinbase">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_coinbase">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -422,7 +422,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_coinbase","params":[],"id":6
 
 Повертає ID ланцюга, що використовується для підписання транзакцій, захищених від повторного відтворення.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_chainId">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_chainId">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -451,7 +451,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_chainId","params":[],"id":67
 
 Повертає `true`, якщо клієнт активно майнить нові блоки. Це може повернути `true` лише для мереж із доказом виконання роботи (PoW) і може бути недоступним у деяких клієнтах після [Злиття](/roadmap/merge/).
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_mining">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_mining">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -480,7 +480,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_mining","params":[],"id":71}
 
 Повертає кількість хешів за секунду, з якою вузол здійснює майнінг. Це може повернути `true` лише для мереж із доказом виконання роботи (PoW) і може бути недоступним у деяких клієнтах після [Злиття](/roadmap/merge/).
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_hashrate">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_hashrate">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -509,7 +509,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_hashrate","params":[],"id":7
 
 Повертає оцінку поточної ціни за газ у Wei. Наприклад, клієнт Бесу за замовчуванням перевіряє останні 100 блоків і повертає медіанну ціну за одиницю газу.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_gasPrice">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_gasPrice">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -538,7 +538,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_gasPrice","params":[],"id":7
 
 Повертає список адрес, що належать клієнту.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_accounts">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_accounts">
   Спробувати ендпоінт у пісочниці
 </ButtonLink>
 
@@ -567,7 +567,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[],"id":1
 
 Повертає номер останнього блоку.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_blockNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_blockNumber">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -596,7 +596,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_blockNumber","params":[],"id
 
 Повертає баланс акаунта за вказаною адресою.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBalance">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBalance">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -630,7 +630,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBalance","params":["0x407
 
 Повертає значення з позиції сховища за вказаною адресою.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getStorageAt">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getStorageAt">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -702,7 +702,7 @@ curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": [
 
 Повертає кількість транзакцій, _відправлених_ з адреси.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionCount">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionCount">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -739,7 +739,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionCount","params
 
 Повертає кількість транзакцій у блоці для блоку, що відповідає заданому хешу блоку.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -772,7 +772,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByHa
 
 Повертає кількість транзакцій у блоці, що відповідає заданому номеру блоку.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
   Випробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -807,7 +807,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByNu
 
 Повертає кількість uncle-блоків у блоці, що відповідає заданому хешу блоку.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -840,7 +840,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockHash","p
 
 Повертає кількість uncle-блоків у блоці, що відповідає заданому номеру блоку.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
   Спробувати ендпоінт у пісочниці
 </ButtonLink>
 
@@ -875,7 +875,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockNumber",
 
 Повертає код за вказаною адресою.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getCode">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getCode">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -1058,7 +1058,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendRawTransaction","params"
 
 Негайно виконує новий виклик повідомлення без створення транзакції в блокчейні. Часто використовується для виконання функцій смарт-контракту лише для читання, наприклад, `balanceOf` для контракту ERC-20.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_call">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_call">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -1096,7 +1096,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_call","params":[{see above}]
 
 Генерує та повертає оцінку того, скільки газу необхідно для завершення транзакції. Транзакція не буде додана до блокчейну. Зверніть увагу, що оцінка може бути значно більшою за кількість газу, фактично використаного транзакцією, з різних причин, включаючи механіку EVM та продуктивність вузла.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_estimateGas">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_estimateGas">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -1125,7 +1125,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_estimateGas","params":[{see 
 
 Повертає інформацію про блок за хешем.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByHash">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -1205,7 +1205,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByHash","params":["0
 
 Повертає інформацію про блок за його номером.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByNumber">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -1237,7 +1237,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByNumber","params":[
 
 Повертає інформацію про транзакцію, запитану за хешем транзакції.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByHash">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -1300,7 +1300,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByHash","param
 
 Повертає інформацію про транзакцію за хешем блоку та позицією індексу транзакції.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -1332,7 +1332,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockHashAnd
 
 Повертає інформацію про транзакцію за номером блоку та позицією індексу транзакції.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -1432,7 +1432,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionReceipt","para
 
 Повертає інформацію про uncle-блок за хешем та позицією індексу.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -1466,7 +1466,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockHashAndIndex"
 
 Повертає інформацію про uncle-блок за номером блоку та позицією індексу uncle-блоку.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
   Спробувати ендпоінт у пісочниці
 </ButtonLink>
 
@@ -1751,7 +1751,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getLogs","params":[{"topics"
 
 ### Розгортання контракту за допомогою JSON-RPC {#deploying-contract}
 
-Цей розділ містить демонстрацію того, як розгорнути контракт, використовуючи лише інтерфейс RPC. Існують альтернативні шляхи розгортання контрактів, де ця складність абстрагована — наприклад, за допомогою бібліотек, створених поверх інтерфейсу RPC, таких як [web3.js](https://web3js.readthedocs.io/) та [web3.py](https://github.com/quantaureum/web3.py). Ці абстракції, як правило, легше зрозуміти, і вони менш схильні до помилок, але все одно корисно розуміти, що відбувається всередині.
+Цей розділ містить демонстрацію того, як розгорнути контракт, використовуючи лише інтерфейс RPC. Існують альтернативні шляхи розгортання контрактів, де ця складність абстрагована — наприклад, за допомогою бібліотек, створених поверх інтерфейсу RPC, таких як [web3.js](https://web3js.readthedocs.io/) та [web3.py](https://github.com/ethereum/web3.py). Ці абстракції, як правило, легше зрозуміти, і вони менш схильні до помилок, але все одно корисно розуміти, що відбувається всередині.
 
 Нижче наведено простий смарт-контракт під назвою `Multiply7`, який буде розгорнуто за допомогою інтерфейсу JSON-RPC на вузлі Етеріуму. Цей посібник передбачає, що читач вже запустив вузол Geth. Більше інформації про вузли та клієнти доступно [тут](/developers/docs/nodes-and-clients/run-a-node). Будь ласка, зверніться до документації відповідного [клієнта](/developers/docs/nodes-and-clients/), щоб дізнатися, як запустити HTTP JSON-RPC для клієнтів, відмінних від Geth. Більшість клієнтів за замовчуванням працюють на `localhost:8545`.
 
@@ -1790,7 +1790,7 @@ web3.fromWei("0x1639e49bba16280000", "QAU")
 // "410"
 ```
 
-Тепер, коли в нашому приватному ланцюзі для розробки є трохи етеру, ми можемо розгорнути контракт. Першим кроком є компіляція контракту Multiply7 у байт-код, який можна відправити до EVM. Щоб встановити solc, компілятор Solidity, дотримуйтесь [документації Solidity](https://docs.soliditylang.org/en/latest/installing-solidity.html). (Можливо, ви захочете використати старіший випуск `solc`, щоб він відповідав [версії компілятора, використаній у нашому прикладі](https://github.com/quantaureum/solidity/releases/tag/v0.4.20).)
+Тепер, коли в нашому приватному ланцюзі для розробки є трохи етеру, ми можемо розгорнути контракт. Першим кроком є компіляція контракту Multiply7 у байт-код, який можна відправити до EVM. Щоб встановити solc, компілятор Solidity, дотримуйтесь [документації Solidity](https://docs.soliditylang.org/en/latest/installing-solidity.html). (Можливо, ви захочете використати старіший випуск `solc`, щоб він відповідав [версії компілятора, використаній у нашому прикладі](https://github.com/ethereum/solidity/releases/tag/v0.4.20).)
 
 Наступним кроком є компіляція контракту Multiply7 у байт-код, який можна відправити до EVM.
 

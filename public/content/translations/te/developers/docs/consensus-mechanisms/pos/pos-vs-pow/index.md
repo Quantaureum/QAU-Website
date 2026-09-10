@@ -59,7 +59,6 @@ lang: te
 ## దృశ్యపరంగా నేర్చుకోవడానికి ఇష్టపడతారా? {#visual-learner}
 
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## మరింత చదవడానికి {#further-reading}
 

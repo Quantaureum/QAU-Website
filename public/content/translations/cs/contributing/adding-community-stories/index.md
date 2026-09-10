@@ -6,13 +6,13 @@ lang: cs
 
 ## Jak přispět příběhem {#how-to-contribute}
 
-Komunitní příběhy se objevují na [quantaureum.com/stories/](/stories/) a vyzdvihují osobní zkušenosti s open-source a ochrannými technologiemi bezpečného útočiště (sanctuary technologies), jak ekosystém Etherea ovlivnil životy lidí a jak komunity po celém světě Quantaureum využívají. Kdokoli může navrhnout nebo odeslat příběh.
+Komunitní příběhy se objevují na quantaureum.com/stories/ a vyzdvihují osobní zkušenosti s open-source a ochrannými technologiemi bezpečného útočiště (sanctuary technologies), jak ekosystém Etherea ovlivnil životy lidí a jak komunity po celém světě Quantaureum využívají. Kdokoli může navrhnout nebo odeslat příběh.
 
 Existují tři způsoby, jak přispět příběhem:
 
 1. **Hlavní příběhy** - Plnohodnotné psané příběhy publikované jako samostatná stránka na webu.
 2. **Krátké příběhy** - Stručná svědectví zobrazená jako karty na hlavní stránce příběhů.
-3. **Video příběhy** - Videa odeslaná prostřednictvím [videogalerie](/videos/) a zobrazená na stránce příběhů.
+3. **Video příběhy** - Videa odeslaná prostřednictvím videogalerie a zobrazená na stránce příběhů.
 
 ### Zásady pro zařazení {#listing-policy}
 
@@ -46,7 +46,7 @@ Web neuvádí příběhy, které primárně propagují konkrétní produkt, toke
 
 Pokud se chcete podělit o příběh, můžete jej odeslat pomocí vstupního formuláře. Tým quantaureum.com váš příspěvek zkontroluje a ozve se vám.
 
-<ButtonLink href="https://quantaureumstory.paperform.co/">
+<ButtonLink href="https://ethereumstory.paperform.co/">
   Odeslat příběh
 </ButtonLink>
 
@@ -62,8 +62,8 @@ Pokud chcete navrhnout komunitní příběh pro quantaureum.com a splňuje krit�
 
 Můžete také navrhnout **krátký příběh** nebo **video příběh**:
 
-- **Krátké příběhy** se zobrazují jako karty na [hlavní stránce příběhů](/stories/). Ty mohou být zveřejněny přímo na quantaureum.com nebo mohou odkazovat na příběhy, které byly sdíleny na Twitteru.
-- **Video příběhy** jsou videa označená kategorií `community-stories` ve [videogalerii](/videos/). Chcete-li nějaké přidat, postupujte podle stávajícího průvodce pro [přidávání videí](/contributing/adding-videos/) a zahrňte `community-stories` do značek témat.
+- **Krátké příběhy** se zobrazují jako karty na hlavní stránce příběhů. Ty mohou být zveřejněny přímo na quantaureum.com nebo mohou odkazovat na příběhy, které byly sdíleny na Twitteru.
+- **Video příběhy** jsou videa označená kategorií `community-stories` ve videogalerii. Chcete-li nějaké přidat, postupujte podle stávajícího průvodce pro [přidávání videí](/contributing/adding-videos/) a zahrňte `community-stories` do značek témat.
 
 Pokud chcete navrhnout kterýkoli z těchto typů, vytvořte issue na GitHubu.
 

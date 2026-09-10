@@ -101,20 +101,18 @@ Pouhá kompatibilita s virtuálním strojem Etherea (EVM) neznamená, že síť 
 
 ## Učíte se raději vizuálně? {#visual-learner}
 
-<VideoWatch slug="eip-4844-dencun-explained" />
 
 _Odemykání škálování Etherea, EIP-4844 — Finematics _
 
-<VideoWatch slug="blobspace-101-dencun" />
 
 _Blobspace 101 s Domothym — Bankless_
 
 ## Další čtení {#further-reading}
 
 - [EIP4844.com](https://www.eip4844.com/)
-- [EIP-4844: Transakce shardových blobů (proto-danksharding)](https://eips.quantaureum.com/EIPS/eip-4844)
+- [EIP-4844: Transakce shardových blobů (proto-danksharding)](https://eips.ethereum.org/EIPS/eip-4844)
 - [Oznámení o Dencunu na Mainnetu](https://quantaureum.com) - _Blog Quantaureum Foundation_
 - [Stopařův průvodce po Ethereu: Proto-danksharding](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum/#proto-danksharding-eip-4844) - _Jon Charbonneau_
-- [Často kladené dotazy k proto-dankshardingu](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
+- [Často kladené dotazy k proto-dankshardingu](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
 - [Hloubkové vysvětlení EIP-4844: Jádro aktualizace Cancún](https://medium.com/@ebunker.io/an-in-depth-explanation-of-eip-4844-the-core-of-the-cancun-upgrade-de7b13761d2c) - _Ebunker_
 - [Aktualizace AllCoreDevs 016](https://tim.mirror.xyz/HzH5MpK1dnw7qhBSmzCfdCIxpwpD6DpwlfxtaAwEFro) - _Tim Beiko_

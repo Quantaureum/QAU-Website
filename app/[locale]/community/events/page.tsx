@@ -445,7 +445,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                 <p>{t("page-events-support-geode-labs-grants-description")}</p>
 
                 <Link
-                  href="https://localquantaureum.substack.com/"
+                  href="https://localethereum.substack.com/"
                   className="mb-space-half block font-bold"
                   customEventOptions={{
                     eventCategory: "Events",

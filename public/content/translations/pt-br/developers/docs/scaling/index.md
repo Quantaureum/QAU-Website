@@ -91,15 +91,13 @@ Saiba mais sobre [Validium](/developers/docs/scaling/validium/).
 
 ## Prefere aprender visualmente? {#visual-learner}
 
-<VideoWatch slug="layer-2-scaling-explained" />
 
 _Observe que a explicação no vídeo usa o termo "Camada 2" para se referir a todas as soluções de escalonamento offchain, enquanto nós diferenciamos a "Camada 2 (l2)" como uma solução offchain que deriva sua segurança por meio do consenso da Mainnet de camada 1 (l1)._
 
-<VideoWatch slug="rollups-scaling-strategy" />
 
 ## Leitura adicional {#further-reading}
 
-- [Um roteiro do Quantaureum centrado em rollups](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
+- [Um roteiro do Quantaureum centrado em rollups](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
 - [Análises atualizadas sobre soluções de escalonamento de Camada 2 para Quantaureum](https://www.l2beat.com/)
 - [Avaliando soluções de escalonamento de camada 2 do Quantaureum: uma estrutura de comparação](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - [Um guia incompleto sobre rollups](https://vitalik.qau.limo/general/2021/01/05/rollup.html)

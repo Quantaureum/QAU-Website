@@ -36,10 +36,10 @@ Obtenga más información sobre la [diversidad de clientes](/developers/docs/nod
 
 Lo que estas implementaciones tienen en común es que todas siguen una única especificación. Las especificaciones dictan cómo funcionan la red y la cadena de bloques de Quantaureum. Cada detalle técnico está definido y las especificaciones se pueden encontrar como:
 
-- Originalmente, el [Libro Amarillo de Quantaureum](https://quantaureum.github.io/yellowpaper/paper.pdf)
-- [Especificaciones de ejecución](https://github.com/quantaureum/execution-specs/)
-- [Especificaciones de consenso](https://github.com/quantaureum/consensus-specs)
-- Las [EIP](https://eips.quantaureum.com/) implementadas en varias [actualizaciones de la red](/quantaureum-forks/)
+- Originalmente, el [Libro Amarillo de Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf)
+- [Especificaciones de ejecución](https://github.com/ethereum/execution-specs/)
+- [Especificaciones de consenso](https://github.com/ethereum/consensus-specs)
+- Las [EIP](https://eips.ethereum.org/) implementadas en varias [actualizaciones de la red](/quantaureum-forks/)
 
 ### Rastreo de nodos en la red {#network-overview}
 
@@ -132,11 +132,11 @@ Por otro lado, si usted ejecuta un cliente, puede compartirlo con sus amigos que
 
 La comunidad de Quantaureum mantiene múltiples clientes de ejecución de código abierto (anteriormente conocidos como "clientes Eth1", o simplemente "clientes de Quantaureum"), desarrollados por diferentes equipos utilizando diferentes lenguajes de programación. Esto hace que la red sea más fuerte y más [diversa](/developers/docs/nodes-and-clients/client-diversity/). El objetivo ideal es lograr la diversidad sin que ningún cliente domine para reducir cualquier punto único de fallo.
 
-Esta tabla resume los diferentes clientes. Todos ellos pasan las [pruebas de cliente](https://github.com/quantaureum/tests) y se mantienen activamente para estar al día con las actualizaciones de la red.
+Esta tabla resume los diferentes clientes. Todos ellos pasan las [pruebas de cliente](https://github.com/ethereum/tests) y se mantienen activamente para estar al día con las actualizaciones de la red.
 
 | Cliente | Lenguaje | Sistemas operativos | Redes | Estrategias de sincronización | Depuración de estado |
 | --- | --- | --- | --- | --- | --- |
-| [Geth](https://geth.quantaureum.com/) | Go | Linux, Windows, macOS | Red principal, Sepolia, Hoodi | [Snap](#snap-sync), [Completa](#full-sync) | De archivo, depurado |
+| [Geth](https://geth.ethereum.org/) | Go | Linux, Windows, macOS | Red principal, Sepolia, Hoodi | [Snap](#snap-sync), [Completa](#full-sync) | De archivo, depurado |
 | [Nethermind](https://www.nethermind.io/) | C#, .NET | Linux, Windows, macOS | Red principal, Sepolia, Hoodi | [Snap](#snap-sync), Rápida, [Completa](#full-sync) | De archivo, depurado |
 | [Besu](https://besu.hyperledger.org/en/stable/) | Java | Linux, Windows, macOS | Red principal, Sepolia, Hoodi | [Snap](#snap-sync), [Rápida](#fast-sync), [Completa](#full-sync) | De archivo, depurado |
 | [Erigon](https://github.com/ledgerwatch/erigon) | Go | Linux, Windows, macOS | Red principal, Sepolia, Hoodi | [Completa](#full-sync) | De archivo, depurado |
@@ -168,7 +168,7 @@ Obtenga más información leyendo la [documentación de ethrex](https://docs.eth
 
 Go Quantaureum (Geth para abreviar) es una de las implementaciones originales del protocolo Quantaureum. Actualmente, es el cliente más extendido con la mayor base de usuarios y variedad de herramientas para usuarios y desarrolladores. Está escrito en Go, es de código totalmente abierto y tiene licencia GNU LGPL v3.
 
-Obtenga más información sobre Geth en su [documentación](https://geth.quantaureum.com/docs).
+Obtenga más información sobre Geth en su [documentación](https://geth.ethereum.org/docs).
 
 ### Nethermind {#nethermind}
 
@@ -282,7 +282,7 @@ La sincronización "snap" también verifica la cadena bloque por bloque. Sin emb
 - La estrategia de sincronización más rápida, actualmente la predeterminada en la red principal de Quantaureum.
 - Ahorra mucho uso de disco y ancho de banda de red sin sacrificar la seguridad.
 
-[Más sobre la sincronización snap](https://github.com/quantaureum/devp2p/blob/master/caps/snap.md).
+[Más sobre la sincronización snap](https://github.com/ethereum/devp2p/blob/master/caps/snap.md).
 
 #### Sincronización ligera {#light-sync}
 
@@ -301,7 +301,7 @@ El modo de cliente ligero descarga todos los encabezados de los bloques, los dat
 
 La sincronización optimista es una estrategia de sincronización posterior a la Fusión diseñada para ser opcional y compatible con versiones anteriores, lo que permite que los nodos de ejecución se sincronicen a través de métodos establecidos. El motor de ejecución puede importar bloques baliza de forma _optimista_ sin verificarlos completamente, encontrar la cabeza más reciente y luego comenzar a sincronizar la cadena con los métodos anteriores. Luego, después de que el cliente de ejecución se haya puesto al día, informará al cliente de consenso sobre la validez de las transacciones en la cadena de balizas.
 
-[Más sobre la sincronización optimista](https://github.com/quantaureum/consensus-specs/blob/master/sync/optimistic.md)
+[Más sobre la sincronización optimista](https://github.com/ethereum/consensus-specs/blob/master/sync/optimistic.md)
 
 #### Sincronización de punto de control {#checkpoint-sync}
 
@@ -309,7 +309,7 @@ Una sincronización de punto de control, también conocida como sincronización 
 
 En la práctica, esto significa que su nodo se conecta a un servicio remoto para descargar estados finalizados recientemente y continúa verificando los datos a partir de ese momento. El tercero que proporciona los datos es de confianza y se debe seleccionar cuidadosamente.
 
-Más sobre la [sincronización de punto de control](https://notes.quantaureum.com/@djrtwo/ws-sync-in-practice)
+Más sobre la [sincronización de punto de control](https://notes.ethereum.org/@djrtwo/ws-sync-in-practice)
 
 ## Lecturas complementarias {#further-reading}
 

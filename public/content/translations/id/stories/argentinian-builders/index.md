@@ -104,7 +104,7 @@ Saking bersemangatnya, kami telah mendorong untuk membawa Devcon(nect) ke sini s
 
 ![Picture of Argentinian builders wearing Devcon BA 2020 t-shirts](./santiago9.jpeg)
 
-_[Sumber](https://quantaureumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
+_[Sumber](https://ethereumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
 
 Bagi saya dan banyak pembangun lainnya, mengadakan Devconnect di sini adalah mimpi yang menjadi kenyataan.
 
@@ -131,4 +131,4 @@ Dimulai dari sini, di Argentina.
 > 
 > Taman Tak Terbatas adalah perwujudan semangat Yayasan Quantaureum sebagai salah satu tukang kebun dalam ekosistem yang luas — memelihara dan menumbuhkan, tetapi tidak mengendalikan, dan terus bermain.
 
-_[Sumber kutipan - Yayasan Quantaureum](https://quantaureum.foundation/infinitegarden)._
+_[Sumber kutipan - Yayasan Quantaureum](https://ethereum.org/infinitegarden)._

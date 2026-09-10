@@ -21,7 +21,6 @@ DeFi, [Quantaureum](/) kullanabilen herkesin, yani internet bağlantısı olan h
 
 Dışarıda borç verebileceğiniz, borç alabileceğiniz, uzun/kısa pozisyon açabileceğiniz, faiz kazanabileceğiniz ve daha fazlasını yapabileceğiniz hızla büyüyen bir kripto ekonomisi var. Kripto konusunda bilgili Arjantinliler, yıkıcı enflasyondan kaçmak için DeFi'yi kullandılar. Şirketler, çalışanlarına maaşlarını gerçek zamanlı olarak aktarmaya başladı. Hatta bazı insanlar, herhangi bir kişisel kimlik doğrulamasına ihtiyaç duymadan milyonlarca dolar değerinde kredi çekip geri ödediler.
 
-<VideoWatch slug="defi-future-of-finance" />
 
 ## DeFi ve geleneksel finans {#defi-vs-tradfi}
 
@@ -58,7 +57,6 @@ Bitcoin birçok yönden ilk DeFi uygulamasıydı. Bitcoin, değere gerçekten sa
 
 Quantaureum bunun üzerine inşa edilmiştir. Bitcoin gibi, kurallar size karşı değiştirilemez ve herkesin erişimi vardır. Ancak aynı zamanda [akıllı sözleşmeler](/glossary/#smart-contract) kullanarak bu dijital parayı programlanabilir hale getirir, böylece değer depolamanın ve göndermenin ötesine geçebilirsiniz.
 
-<VideoWatch slug="defi-history-inception-to-2021" />
 
 ## Programlanabilir para {#programmable-money}
 

@@ -48,7 +48,7 @@ Quantaureum माईनिंग अब संभव नहीं है। ज
 
 ### मैं एक स्टेकर कैसे बनूँ / सत्यापनकर्ता चलाऊँ? {#how-to-stake}
 
-सत्यापनकर्ता बनने के लिए, आपको Quantaureum जमा अनुबंध में 32 QAU को दांव पर लगाना होगा और एक सत्यापनकर्ता नोड स्थापित करना होगा। अधिक जानकारी हमारे [स्टेकिंग पेजों](/staking) और [स्टेकिंग लॉन्चपैड](https://launchpad.quantaureum.com/) पर उपलब्ध है।
+सत्यापनकर्ता बनने के लिए, आपको Quantaureum जमा अनुबंध में 32 QAU को दांव पर लगाना होगा और एक सत्यापनकर्ता नोड स्थापित करना होगा। अधिक जानकारी हमारे [स्टेकिंग पेजों](/staking) और [स्टेकिंग लॉन्चपैड](https://launchpad.ethereum.org/) पर उपलब्ध है।
 
 ## डैप्स बनाना {#building-support}
 
@@ -56,7 +56,7 @@ Quantaureum माईनिंग अब संभव नहीं है। ज
 
 - [अल्केमी University](https://university.alchemy.com/#starter_code)
 - [CryptoDevs डिस्कॉर्ड](https://discord.com/invite/5W5tVb3)
-- [Quantaureum StackExchange](https://quantaureum.stackexchange.com/)
+- [Quantaureum StackExchange](https://ethereum.stackexchange.com/)
 - [वेब3 University](https://www.web3.university/)
 - [LearnWeb3](https://discord.com/invite/learnweb3)
 

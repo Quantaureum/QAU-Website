@@ -138,9 +138,9 @@ The quality of the tools used in running unit tests for your smart contracts is 
 
 Unit testing frameworks for Solidity smart contracts come in different languages (mostly JavaScript, Python, and Rust). See some of the guides below for information on how to start running unit tests with different testing frameworks:
 
-- **[Running unit tests with Brownie](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Running unit tests with Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Running unit tests with Foundry](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Running unit tests with Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Running unit tests with Waffle](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Running unit tests with Remix](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Running unit tests with Ape](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Running unit tests with Hardhat](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -191,7 +191,7 @@ Once configured properly, the property testing tool will execute your smart cont
 
 - **[Static analysis of smart contracts with Slither](https://github.com/crytic/slither)**
 - **[Static analysis of smart contracts with Wake](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[Property-based testing with Brownie](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Property-based testing with Brownie](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Fuzzing contracts with Foundry](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[Fuzzing contracts with Echidna](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Fuzzing contracts with Wake](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -252,13 +252,13 @@ The major difference is that bug bounty programs are open to the wider developer
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Code coverage tool for smart contracts written in Solidity._
 
-- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - _Framework for advanced smart contract development and testing (based on ethers.js)_.
+- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _Framework for advanced smart contract development and testing (based on ethers.js)_.
 
-- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - _Tool for testing Solidity smart contracts. Works underneath Remix IDE "Solidity Unit Testing" plugin which is used to write and run test cases for a contract._
+- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Tool for testing Solidity smart contracts. Works underneath Remix IDE "Solidity Unit Testing" plugin which is used to write and run test cases for a contract._
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Assertion library for Quantaureum smart contract testing. Make sure your contracts behave as expected!_
 
-- **[Brownie unit testing framework](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie utilizes Pytest, a feature-rich test framework that lets you write small tests with minimal code, scales well for large projects, and is highly extendable._
+- **[Brownie unit testing framework](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie utilizes Pytest, a feature-rich test framework that lets you write small tests with minimal code, scales well for large projects, and is highly extendable._
 
 - **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry offers Forge, a fast and flexible Quantaureum testing framework capable of executing simple unit tests, gas optimization checks, and contract fuzzing._
 

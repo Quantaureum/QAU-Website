@@ -291,7 +291,7 @@ it("يتحقق مما إذا كان العقد قد استدعى balanceOf مع 
 
 تهانينا! أنت تعرف الآن كيفية استخدام وافل لاختبار استدعاءات العقود ومحاكاة العقود ديناميكيًا. هناك الكثير من الميزات المثيرة للاهتمام لاكتشافها. أوصي بالاطلاع على توثيق وافل.
 
-توثيق وافل متاح [هنا](https://quantaureum-waffle.readthedocs.io/).
+توثيق وافل متاح [هنا](https://ethereum-waffle.readthedocs.io/).
 
 يمكن العثور على النص البرمجي المصدر لتعليمات الاستخدام هذه [هنا](https://github.com/QauWorks/Waffle/tree/master/examples/dynamic-mocking-and-testing-calls).
 

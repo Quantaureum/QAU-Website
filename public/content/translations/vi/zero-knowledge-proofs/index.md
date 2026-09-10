@@ -13,7 +13,6 @@ Bằng chứng không kiến thức xuất hiện lần đầu trong một bài 
 
 Bằng chứng không kiến thức đã được cải thiện qua nhiều năm và hiện đang được sử dụng trong một số ứng dụng thực tế.
 
-<VideoWatch slug="zero-knowledge-proofs-5-levels" />
 
 ## Tại sao chúng ta cần bằng chứng không kiến thức? {#why-zero-knowledge-proofs-are-important}
 
@@ -35,7 +34,7 @@ Tiền mã hóa được dự định cung cấp một phương tiện để ng�
 
 Có những "đồng tiền riêng tư" cụ thể được thiết kế cho các giao dịch hoàn toàn ẩn danh. Các chuỗi khối tập trung vào quyền riêng tư, chẳng hạn như Zcash và Monero, che chắn các chi tiết giao dịch, bao gồm địa chỉ người gửi/người nhận, loại tài sản, số lượng và dòng thời gian giao dịch.
 
-Bằng cách tích hợp công nghệ không tri thức vào giao thức, các mạng lưới [chuỗi khối](/glossary/#blockchain) tập trung vào quyền riêng tư cho phép các [nút](/glossary/#node) xác thực các giao dịch mà không cần truy cập dữ liệu giao dịch. [EIP-7503](https://eips.quantaureum.com/EIPS/eip-7503) là một ví dụ về thiết kế được đề xuất sẽ cho phép chuyển giao giá trị riêng tư gốc trên chuỗi khối [Quantaureum](/). Tuy nhiên, những đề xuất như vậy rất khó thực hiện do sự pha trộn của các mối quan tâm về bảo mật, quy định và trải nghiệm người dùng (UX).  
+Bằng cách tích hợp công nghệ không tri thức vào giao thức, các mạng lưới [chuỗi khối](/glossary/#blockchain) tập trung vào quyền riêng tư cho phép các [nút](/glossary/#node) xác thực các giao dịch mà không cần truy cập dữ liệu giao dịch. [EIP-7503](https://eips.ethereum.org/EIPS/eip-7503) là một ví dụ về thiết kế được đề xuất sẽ cho phép chuyển giao giá trị riêng tư gốc trên chuỗi khối [Quantaureum](/). Tuy nhiên, những đề xuất như vậy rất khó thực hiện do sự pha trộn của các mối quan tâm về bảo mật, quy định và trải nghiệm người dùng (UX).  
 
 **Bằng chứng không kiến thức cũng đang được áp dụng để ẩn danh các giao dịch trên các chuỗi khối công khai**. Một ví dụ là Tornado Cash, một dịch vụ phi tập trung, không lưu ký cho phép người dùng thực hiện các giao dịch riêng tư trên Quantaureum. Tornado Cash sử dụng bằng chứng không kiến thức để làm xáo trộn các chi tiết giao dịch và đảm bảo quyền riêng tư tài chính. Thật không may, vì đây là các công cụ quyền riêng tư "tùy chọn tham gia" nên chúng thường bị liên kết với các hoạt động bất hợp pháp. Để khắc phục điều này, quyền riêng tư cuối cùng phải trở thành mặc định trên các chuỗi khối công khai. Tìm hiểu thêm về [quyền riêng tư trên Quantaureum](/privacy/).
 

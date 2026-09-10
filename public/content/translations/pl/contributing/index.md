@@ -22,9 +22,9 @@ Jesteśmy przyjazną społecznością, która pomoże Ci się rozwijać i edukow
 
 **Treść**
 - [Twórz/edytuj treść](/contributing/#how-to-update-content) – Zaproponuj nowe strony lub wprowadź poprawki do tego, co już tu jest
-- [Napisz artykuł dla budowniczych](/contributing/adding-articles/) - Prześlij artykuł do sekcji [Najnowsze](/latest/)
+- [Napisz artykuł dla budowniczych](/contributing/adding-articles/) - Prześlij artykuł do sekcji Najnowsze
 - [Dodaj zasoby społeczności](/contributing/content-resources/) – Dodaj pomocny artykuł lub zasób do odpowiedniej strony
-- [Zaproponuj raport](/contributing/adding-reports/) - Zaproponuj raport badawczy na stronę [Raporty](/reports/)
+- [Zaproponuj raport](/contributing/adding-reports/) - Zaproponuj raport badawczy na stronę Raporty
 - [Podziel się swoją historią](/contributing/adding-community-stories/) - Prześlij historię o swoich osobistych doświadczeniach z technologiami open-source i sanctuary, o tym, jak ekosystem Quantaureum wpłynął na Twoje życie, lub jak Ty i Twoja społeczność korzystacie z Quantaureum
 - [Quizy](/contributing/quizzes/) – Dodawaj, aktualizuj i usuwaj bazy pytań do quizów dla odpowiedniej strony
 - [Zaproponuj zasób projektowy](/contributing/design/adding-design-resources/) – Dodawaj, aktualizuj i usuwaj pomocne zasoby projektowe

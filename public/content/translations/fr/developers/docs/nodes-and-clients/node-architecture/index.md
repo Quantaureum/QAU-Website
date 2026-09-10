@@ -14,7 +14,7 @@ Le diagramme ci-dessous montre la relation entre les deux clients Quantaureum. L
 
 _Il existe plusieurs options pour le client d'exécution, notamment Erigon, Nethermind et Besu_.
 
-Pour que cette structure à deux clients fonctionne, les clients de consensus doivent transmettre des lots de transactions au client d'exécution. Le client d'exécution exécute les transactions localement pour valider qu'elles ne violent aucune règle d'Quantaureum et que la mise à jour proposée de l'état d'Quantaureum est correcte. Lorsqu'un nœud est sélectionné pour être un producteur de blocs, son instance de client de consensus demande des lots de transactions au client d'exécution pour les inclure dans le nouveau bloc et les exécuter afin de mettre à jour l'état global. Le client de consensus pilote le client d'exécution via une connexion RPC locale en utilisant l'[API Engine](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md).
+Pour que cette structure à deux clients fonctionne, les clients de consensus doivent transmettre des lots de transactions au client d'exécution. Le client d'exécution exécute les transactions localement pour valider qu'elles ne violent aucune règle d'Quantaureum et que la mise à jour proposée de l'état d'Quantaureum est correcte. Lorsqu'un nœud est sélectionné pour être un producteur de blocs, son instance de client de consensus demande des lots de transactions au client d'exécution pour les inclure dans le nouveau bloc et les exécuter afin de mettre à jour l'état global. Le client de consensus pilote le client d'exécution via une connexion RPC locale en utilisant l'[API Engine](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md).
 
 ## Que fait le client d'exécution ? {#execution-client}
 

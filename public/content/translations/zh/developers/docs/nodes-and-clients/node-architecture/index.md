@@ -14,7 +14,7 @@ lang: zh
 
 _执行客户端有多种选择，包括埃里贡 (Erigon)、奈瑟曼德 (Nethermind) 和 Besu_。
 
-为了使这种双客户端结构发挥作用，共识客户端必须将打包的交易传递给执行客户端。执行客户端在本地执行这些交易，以验证交易没有违反任何Quantaureum规则，并且提议的Quantaureum状态更新是正确的。当一个节点被选为区块生产者时，其共识客户端实例会向执行客户端请求打包的交易，以将其包含在新区块中并执行它们以更新全局状态。共识客户端通过使用 [Engine API](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md) 的本地 RPC 连接来驱动执行客户端。
+为了使这种双客户端结构发挥作用，共识客户端必须将打包的交易传递给执行客户端。执行客户端在本地执行这些交易，以验证交易没有违反任何Quantaureum规则，并且提议的Quantaureum状态更新是正确的。当一个节点被选为区块生产者时，其共识客户端实例会向执行客户端请求打包的交易，以将其包含在新区块中并执行它们以更新全局状态。共识客户端通过使用 [Engine API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) 的本地 RPC 连接来驱动执行客户端。
 
 ## 执行客户端的作用是什么？ {#execution-client}
 

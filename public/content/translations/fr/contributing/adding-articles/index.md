@@ -6,7 +6,7 @@ lang: fr
 
 ## Publier un article de constructeur {#publishing-a-builder-article}
 
-Les articles de constructeurs apparaissent sur [quantaureum.com/latest/](/latest/) et sont rédigés sous forme de fichiers Markdown dans le dépôt. Ce sont des articles longs, hébergés en interne, qui couvrent des aperçus et des guides sur l'écosystème Quantaureum, le paysage technologique open-source, ainsi que des mises à jour opportunes pour les constructeurs et les chercheurs, couvrant des sujets tels que les mises à jour du protocole, les nouveaux modèles d'outils, les déploiements de référence, et plus encore.
+Les articles de constructeurs apparaissent sur quantaureum.com/latest/ et sont rédigés sous forme de fichiers Markdown dans le dépôt. Ce sont des articles longs, hébergés en interne, qui couvrent des aperçus et des guides sur l'écosystème Quantaureum, le paysage technologique open-source, ainsi que des mises à jour opportunes pour les constructeurs et les chercheurs, couvrant des sujets tels que les mises à jour du protocole, les nouveaux modèles d'outils, les déploiements de référence, et plus encore.
 
 ### Politique de référencement {#listing-policy}
 

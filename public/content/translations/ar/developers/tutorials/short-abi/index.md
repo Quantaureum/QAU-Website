@@ -66,9 +66,9 @@ published: 2022-04-01
 الشرح:
 
 - **محدد الدالة**: يحتوي العقد على أقل من <span dir="ltr">256</span> دالة، لذا يمكننا التمييز بينها باستخدام بايت واحد.
-  عادةً ما تكون هذه البايتات غير صفرية وبالتالي [تكلف ستة عشر غازًا](https://eips.quantaureum.com/EIPS/eip-2028).
+  عادةً ما تكون هذه البايتات غير صفرية وبالتالي [تكلف ستة عشر غازًا](https://eips.ethereum.org/EIPS/eip-2028).
 - **الأصفار**: هذه البايتات دائمًا ما تكون صفرًا لأن العنوان المكون من عشرين بايت لا يتطلب كلمة مكونة من اثنين وثلاثين بايت لاحتوائه.
-  البايتات التي تحتوي على صفر تكلف أربعة غاز ([انظر الورقة الصفراء](https://quantaureum.github.io/yellowpaper/paper.pdf)، الملحق G، ص 27، قيمة `G`<sub>`txdatazero`</sub>).
+  البايتات التي تحتوي على صفر تكلف أربعة غاز ([انظر الورقة الصفراء](https://ethereum.github.io/yellowpaper/paper.pdf)، الملحق G، ص 27، قيمة `G`<sub>`txdatazero`</sub>).
 - **المبلغ**: إذا افترضنا أن `decimals` في هذا العقد هو ثمانية عشر (القيمة العادية) وأن الحد الأقصى لعدد الرموز المميزة التي نقوم بتحويلها سيكون <span dir="ltr">10<sup>18</sup></span>، فسنحصل على حد أقصى قدره <span dir="ltr">10<sup>36</sup></span>.
   <span dir="ltr">256<sup>15</sup> &gt; 10<sup>36</sup></span>، لذا فإن خمسة عشر بايتًا كافية.
 
@@ -201,7 +201,7 @@ contract CalldataInterpreter {
 2. الدوال التي تعتمد على [`msg.sender`](https://docs.soliditylang.org/en/v0.8.12/units-and-global-variables.html#block-and-transaction-properties).
    ستكون قيمة `msg.sender` هي عنوان `CalldataInterpreter`، وليس المستدعي.
 
-لسوء الحظ، [بالنظر إلى مواصفات <span dir="ltr">ERC-20</span>](https://eips.quantaureum.com/EIPS/eip-20)، يترك هذا دالة واحدة فقط، وهي `transfer`.
+لسوء الحظ، [بالنظر إلى مواصفات <span dir="ltr">ERC-20</span>](https://eips.ethereum.org/EIPS/eip-20)، يترك هذا دالة واحدة فقط، وهي `transfer`.
 هذا يترك لنا دالتين فقط: `transfer` (لأنه يمكننا استدعاء `transferFrom`) و `faucet` (لأنه يمكننا تحويل الرموز المميزة مرة أخرى إلى من استدعانا).
 
 ```solidity

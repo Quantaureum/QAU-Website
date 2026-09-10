@@ -30,7 +30,7 @@ EIP-7702 定義了一種將程式碼新增至外部擁有帳戶 (EOA) 的機制�
 - 它們為中繼提供標準化介面
 - 包含內建的代付合約系統
 - 確保向前相容性
-- 可以透過[公開記憶體池](https://notes.quantaureum.com/@yoav/unified-erc-4337-mempool)支援抗審查性
+- 可以透過[公開記憶體池](https://notes.ethereum.org/@yoav/unified-erc-4337-mempool)支援抗審查性
 - 可以要求 init 函式只能從 [EntryPoint](https://github.com/qau-infinitism/account-abstraction/releases/tag/v0.8.0) 呼叫
 
 換句話說，只要提供帳戶所需的有效簽章或用戶操作，任何人都可以充當交易贊助者/中繼者。這確保了抗審查性：如果不需要自訂基礎設施，使用者的交易就不會被守門的中繼者任意阻擋。例如，[梅塔馬斯克的 Delegation Toolkit](https://github.com/MetaMask/delegation-framework/releases/tag/v1.3.0) 明確地與任何鏈上的任何 ERC-4337 捆綁器或代付合約配合使用，而不是要求使用梅塔馬斯克特定的伺服器。
@@ -49,8 +49,8 @@ EIP-7702 定義了一種將程式碼新增至外部擁有帳戶 (EOA) 的機制�
 
 如需更多資訊：
 
-- [ERC-5792 規範](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-5792.md)
-- [ERC-6900 規範](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-6900.md)
+- [ERC-5792 規範](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-5792.md)
+- [ERC-6900 規範](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6900.md)
 
 **避免供應商鎖定**：與上述內容一致，良好的實作是供應商中立且可互操作的。這通常意味著遵守新興的智能帳戶標準。例如，[Alchemy 的 Modular Account](https://github.com/alchemyplatform/modular-account) 使用 ERC-6900 標準來建立模組化智能帳戶，並在設計時考慮了「無需許可的可互操作的使用」。
 

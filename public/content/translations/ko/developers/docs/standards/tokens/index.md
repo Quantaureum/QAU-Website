@@ -27,7 +27,7 @@ incomplete: true
 - [ERC-721](/developers/docs/standards/tokens/erc-721/) - 예술 작품이나 노래의 소유권 증명서와 같은 대체 불가능 토큰을 위한 표준 인터페이스입니다.
 - [ERC-1155](/developers/docs/standards/tokens/erc-1155/) - ERC-1155는 더 효율적인 거래와 트랜잭션 묶음을 가능하게 하여 비용을 절감합니다. 이 토큰 표준을 사용하면 유틸리티 토큰($BNB 또는 $BAT 등)과 CryptoPunks와 같은 대체 불가능 토큰을 모두 생성할 수 있습니다.
 
-[ERC](https://eips.quantaureum.com/erc) 제안의 전체 목록입니다.
+[ERC](https://eips.ethereum.org/erc) 제안의 전체 목록입니다.
 
 ## 더 읽어보기
 

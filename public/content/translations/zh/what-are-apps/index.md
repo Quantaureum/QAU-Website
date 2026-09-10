@@ -46,7 +46,7 @@ Quantaureum应用可以做传统应用根本无法做到的事情。比如把钱
 | **能否被审查？** | 能 | 不能 |
 | **谁拥有你的数据？** | 通常不是你 | 你拥有你的数据 |
 
-<WhatAreAppsStories />
+
 
 <div className="w-full md:w-1/2 mx-auto md:mx-0">
 

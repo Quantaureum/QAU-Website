@@ -26,7 +26,6 @@ summaryPoints:
 
 재생 금융은 또한 Quantaureum을 과학 지식의 자금 조달, 생성, 검토, 인정, 저장 및 보급을 위한 플랫폼으로 사용하는 [탈중앙화 과학(DeSci)](/desci/) 운동과도 겹칩니다. 탈중앙화 과학 도구는 나무 심기, 바다에서 플라스틱 제거, 훼손된 생태계 복원과 같은 재생 활동을 구현하고 모니터링하기 위한 검증 가능한 표준 및 관행을 개발하는 데 유용할 수 있습니다.
 
-<VideoWatch slug="regenerative-finance-refi" />
 
 ## 탄소 배출권의 토큰화 {#tokenization-of-carbon-credits}
 

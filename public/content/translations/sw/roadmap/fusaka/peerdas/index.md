@@ -41,7 +41,7 @@ DAS ni utaratibu unaojengwa juu ya hili na kuhakikisha data ni sahihi na inapati
 
 ## PeerDAS {#peer-das-2}
 
-[PeerDAS (EIP-7594)](https://eips.quantaureum.com/EIPS/eip-7594) ni pendekezo maalum linalotekeleza utaratibu wa DAS katika Quantaureum, likiashiria labda sasisho kubwa zaidi tangu Unganisho. PeerDAS imeundwa kupanua data ya blobu, kuigawanya katika safu wima na kusambaza sehemu ndogo kwa nodi.
+[PeerDAS (EIP-7594)](https://eips.ethereum.org/EIPS/eip-7594) ni pendekezo maalum linalotekeleza utaratibu wa DAS katika Quantaureum, likiashiria labda sasisho kubwa zaidi tangu Unganisho. PeerDAS imeundwa kupanua data ya blobu, kuigawanya katika safu wima na kusambaza sehemu ndogo kwa nodi.
 
 Quantaureum inaazima hisabati janja ili kufanikisha hili: inatumia usimbaji wa ufutaji wa mtindo wa Reed-Solomon kwenye data ya blobu. Data ya blobu inawakilishwa kama polinomiali ambayo migawo yake husimba data, kisha kutathmini polinomiali hiyo katika nukta za ziada ili kuunda blobu iliyopanuliwa, na kuongeza mara mbili idadi ya tathmini. Uziada huu ulioongezwa huwezesha urejeshaji wa ufutaji: hata kama baadhi ya tathmini hazipo, blobu asili inaweza kujengwa upya mradi tu angalau nusu ya data yote, ikijumuisha vipande vilivyopanuliwa, inapatikana.
 
@@ -71,7 +71,7 @@ Athari ya moja kwa moja kwa watumiaji (hasa watumiaji wa L2) ni ada za chini. Kw
 
 Mtandao kinadharia utaweza kuchakata mablobu mara 8 zaidi, lakini ongezeko la mablobu ni mabadiliko ambayo yanahitaji kujaribiwa ipasavyo na kutekelezwa kwa usalama kwa hatua. Mitandao ya majaribio (Testnets) hutoa ujasiri wa kutosha kusambaza vipengele kwenye Mtandao Mkuu lakini tunahitaji kuhakikisha uthabiti wa mtandao wa p2p kabla ya kuwezesha idadi kubwa zaidi ya mablobu. 
 
-Ili kuongeza hatua kwa hatua idadi lengwa ya mablobu kwa kila kitalu bila kulemea mtandao, Fusaka inaleta michepuo ya **[Kigezo-cha-Blobu-Pekee (BPO)](https://quantaureum-magicians.org/t/blob-parameter-only-bpo-forks/22623)**. Tofauti na michepuo ya kawaida inayohitaji uratibu mpana wa mfumo ikolojia, makubaliano, na sasisho za programu, [BPOs (EIP-7892)](https://eips.quantaureum.com/EIPS/eip-7892) ni sasisho zilizopangwa mapema ambazo huongeza idadi ya juu zaidi ya mablobu kadiri muda unavyosonga bila kuingiliwa.
+Ili kuongeza hatua kwa hatua idadi lengwa ya mablobu kwa kila kitalu bila kulemea mtandao, Fusaka inaleta michepuo ya **[Kigezo-cha-Blobu-Pekee (BPO)](https://ethereum-magicians.org/t/blob-parameter-only-bpo-forks/22623)**. Tofauti na michepuo ya kawaida inayohitaji uratibu mpana wa mfumo ikolojia, makubaliano, na sasisho za programu, [BPOs (EIP-7892)](https://eips.ethereum.org/EIPS/eip-7892) ni sasisho zilizopangwa mapema ambazo huongeza idadi ya juu zaidi ya mablobu kadiri muda unavyosonga bila kuingiliwa.
 
 Hii inamaanisha kwamba mara tu baada ya Fusaka kuwezeshwa na PeerDAS kuanza kufanya kazi, idadi ya mablobu itabaki bila kubadilika. Idadi ya mablobu itaanza kuongezeka mara mbili kila baada ya wiki chache hadi ifikie kiwango cha juu cha 48, huku wasanidi programu wakifuatilia ili kuhakikisha utaratibu unafanya kazi kama inavyotarajiwa na hauna athari mbaya kwa nodi zinazoendesha mtandao.
 

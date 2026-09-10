@@ -12,7 +12,7 @@ breadcrumb: "ERC-20トークンの基礎"
 lang: ja
 published: 2020-04-05
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/understand-the-erc20-token-smart-contract/
+sourceUrl: https://ethereumdev.io/understand-the-erc20-token-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -20,7 +20,7 @@ Quantaureum上で最も重要な[スマート・コントラクト標準](/devel
 
 ERC-20は、すべての代替可能なQuantaureumトークンが準拠すべき共通のルールリストを定義しています。その結果、このトークン標準により、あらゆるタイプの開発者が、新しいトークンがより広範なQuantaureumシステム内でどのように機能するかを正確に予測できるようになります。トークンがルールに従っている限り、新しいトークンがリリースされるたびに新しいプロジェクトを最初からやり直す必要がないことがわかっているため、開発者の作業が簡素化され、容易になります。
 
-以下は、ERC-20が実装しなければならない関数をインターフェースとして提示したものです。インターフェースとは何かわからない場合は、[Solidityでのオブジェクト指向プログラミング(OOP)](https://quantaureumdev.io/inheritance-in-solidity-contracts-are-classes/)に関する記事を確認してください。
+以下は、ERC-20が実装しなければならない関数をインターフェースとして提示したものです。インターフェースとは何かわからない場合は、[Solidityでのオブジェクト指向プログラミング(OOP)](https://ethereumdev.io/inheritance-in-solidity-contracts-are-classes/)に関する記事を確認してください。
 
 ```solidity
 pragma solidity ^0.6.0;

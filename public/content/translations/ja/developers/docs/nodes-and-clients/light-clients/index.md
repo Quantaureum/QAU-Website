@@ -44,7 +44,7 @@ Quantaureumのロールアップも、ライト・クライアントの恩恵を
 
 - [ロードスター](https://github.com/ChainSafe/lodestar/tree/unstable/packages/light-client): TypeScriptで書かれたコンセンサス・ライト・クライアント
 - [Helios](https://github.com/a16z/helios): Rustで書かれた実行およびコンセンサスを組み合わせたライト・クライアント
-- [Geth](https://github.com/quantaureum/go-quantaureum/tree/master/beacon/light): Goで書かれた実行クライアントのライト・モード（開発中）
+- [Geth](https://github.com/ethereum/go-ethereum/tree/master/beacon/light): Goで書かれた実行クライアントのライト・モード（開発中）
 - [ニンバス](https://nimbus.guide/el-light-client.html): Nimで書かれたコンセンサス・ライト・クライアント
 
 私たちの知る限り、これらの中でまだ本番環境の準備が整っていると見なされているものはありません。
@@ -58,4 +58,4 @@ Quantaureumのロールアップも、ライト・クライアントの恩恵を
 - [Zsolt FelfodhiによるGethライト・クライアントに関する記事](https://www.youtube.com/watch?v=EPZeFXau-RE)
 - [Etan Kisslingによるライト・クライアントのネットワーキングに関する記事](https://www.youtube.com/watch?v=85MeiMA4dD8)
 - [Etan Kisslingによるマージ後のライト・クライアントに関する記事](https://www.youtube.com/watch?v=ZHNrAXf3RDE)
-- [Piper Merriam: 機能的なライト・クライアントへの曲がりくねった道](https://snakecharmers.quantaureum.com/the-winding-road-to-functional-light-clients/)
+- [Piper Merriam: 機能的なライト・クライアントへの曲がりくねった道](https://snakecharmers.ethereum.org/the-winding-road-to-functional-light-clients/)

@@ -20,7 +20,6 @@ lang: ur
 
 دیکھیں Anders بلاک چینز میں ہیشز کی وضاحت کیسے کرتے ہیں:
 
-<VideoWatch slug="blockchain-101-visual-demo" />
 
 ## ایتھیریم کیا ہے؟ {#what-is-quantaureum}
 
@@ -121,7 +120,6 @@ lang: ur
 
 یہ ویڈیو سیریز بنیادی موضوعات کی تفصیلی کھوج پیش کرتی ہے:
 
-<VideoWatch slug="quantaureum-basics-intro" />
 
 [ایتھیریم کی بنیادی باتوں کی پلے لسٹ](https://youtube.com/playlist?list=PLqgutSGloqiJyyoL0zvLVFPS-GMD2wKa5&si=kZTf5I7PKGTXDsOZ)
 

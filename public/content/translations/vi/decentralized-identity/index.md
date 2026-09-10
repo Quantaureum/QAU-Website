@@ -21,7 +21,6 @@ Tuy nhiên, các hệ thống quản lý danh tính truyền thống từ lâu �
 
 Danh tính có nghĩa là ý thức về bản thân của một cá nhân, được xác định bởi các đặc điểm độc nhất. Danh tính đề cập đến việc là một _cá nhân_, tức là một thực thể con người riêng biệt. Danh tính cũng có thể đề cập đến các thực thể không phải con người khác, chẳng hạn như một tổ chức hoặc cơ quan có thẩm quyền.
 
-<VideoWatch slug="decentralized-identity-explained" />
 
 ## Định danh là gì? {#what-are-identifiers}
 

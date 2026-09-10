@@ -62,4 +62,4 @@ La SSF se encuentra en fase de investigación. No se espera que se lance durante
 ## Lecturas adicionales {#further-reading}
 
 - [Vitalik sobre la SSF en EDCON 2022](https://www.youtube.com/watch?v=nPgUKNPWXNI)
-- [Notas de Vitalik: Caminos hacia la finalidad de un solo slot](https://notes.quantaureum.com/@vbuterin/single_slot_finality)
+- [Notas de Vitalik: Caminos hacia la finalidad de un solo slot](https://notes.ethereum.org/@vbuterin/single_slot_finality)

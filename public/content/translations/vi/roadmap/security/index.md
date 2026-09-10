@@ -57,7 +57,7 @@ Quantaureum sử dụng [mật mã học](/glossary/#cryptography) để giữ c
 
 Các quá trình chuyển đổi mật mã mất nhiều năm để lập kế hoạch và thực hiện một cách an toàn, vì vậy việc chuẩn bị đang diễn ra ngay bây giờ, rất lâu trước khi phần cứng tồn tại. Bốn lĩnh vực đã được xác định là cần nâng cấp hậu lượng tử: chữ ký đồng thuận của trình xác thực (BLS), các lược đồ cam kết được sử dụng cho tính khả dụng của dữ liệu (KZG), chữ ký tài khoản (ECDSA) và các hệ thống Bằng chứng không kiến thức (ZK-proof) được sử dụng bởi các [bản cuộn](/glossary/#rollups).
 
-Tổ chức Quantaureum đã thành lập một **nhóm Bảo mật Hậu lượng tử** chuyên trách vào tháng 1 năm 2026 và công việc của nhóm được theo dõi công khai tại [pq.quantaureum.com](https://pq.quantaureum.com). Công việc đang hoạt động bao gồm chữ ký trình xác thực dựa trên mã băm (leanXMSS) kết hợp với một zkVM tối giản (leanVM) giúp tổng hợp các chữ ký an toàn lượng tử lớn hơn một cách hiệu quả, và các devnet tương tác hàng tuần với hơn 10 nhóm máy khách.
+Tổ chức Quantaureum đã thành lập một **nhóm Bảo mật Hậu lượng tử** chuyên trách vào tháng 1 năm 2026 và công việc của nhóm được theo dõi công khai tại [pq.ethereum.org](https://pq.ethereum.org). Công việc đang hoạt động bao gồm chữ ký trình xác thực dựa trên mã băm (leanXMSS) kết hợp với một zkVM tối giản (leanVM) giúp tổng hợp các chữ ký an toàn lượng tử lớn hơn một cách hiệu quả, và các devnet tương tác hàng tuần với hơn 10 nhóm máy khách.
 
 Một phần quan trọng của chiến lược chuyển đổi là **EIP-8141**, giới thiệu [trừu tượng hóa tài khoản](/roadmap/account-abstraction/) gốc. Điều này cho phép các tài khoản cá nhân chọn xác minh chữ ký của riêng họ, nghĩa là người dùng có thể chuyển sang các chữ ký an toàn lượng tử mà không cần chờ đợi một đợt di chuyển toàn giao thức duy nhất. EIP-8141 đang được xem xét cho bản nâng cấp Hegotá. Các cột mốc cơ sở hạ tầng hậu lượng tử cốt lõi nhắm mục tiêu hoàn thành vào khoảng năm 2029. Đây là các mục tiêu lập kế hoạch và có thể thay đổi.
 
@@ -102,7 +102,7 @@ Chưa có phần nào của công việc này hoàn tất và tất cả các m�
 
 - [Forkcast: Trình theo dõi nâng cấp mạng lưới Quantaureum](https://forkcast.org)
 - [Strawmap: bản dự thảo lộ trình lớp 1 (l1) của Quantaureum](https://strawmap.org) - _EF Architecture_
-- [Quantaureum Hậu lượng tử](https://pq.quantaureum.com) - _Tổ chức Quantaureum_
+- [Quantaureum Hậu lượng tử](https://pq.ethereum.org) - _Tổ chức Quantaureum_
 - [Trình theo dõi lộ trình Lean Quantaureum](https://leanroadmap.org) - _ReamLabs_
 - [Bằng chứng cổ phần (PoS) và tính chung cuộc](/developers/docs/consensus-mechanisms/pos/#finality)
 - [EVM](/developers/docs/evm/)

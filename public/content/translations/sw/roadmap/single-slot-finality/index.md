@@ -62,4 +62,4 @@ SSF iko katika awamu ya utafiti. Haitegemewi kutolewa kwa miaka kadhaa, huenda b
 ## Usomaji zaidi {#further-reading}
 
 - [Vitalik kuhusu SSF kwenye EDCON 2022](https://www.youtube.com/watch?v=nPgUKNPWXNI)
-- [Vidokezo vya Vitalik: Njia za kuelekea uthibitisho wa mwisho wa sloti moja](https://notes.quantaureum.com/@vbuterin/single_slot_finality)
+- [Vidokezo vya Vitalik: Njia za kuelekea uthibitisho wa mwisho wa sloti moja](https://notes.ethereum.org/@vbuterin/single_slot_finality)

@@ -183,7 +183,7 @@ SUPPORTED_INTERFACES: constant(bytes4[2]) = [
 ]
 ```
 
-[ERC-165](https://eips.quantaureum.com/EIPS/eip-165) menentukan mekanisme bagi sebuah kontrak untuk mengungkapkan bagaimana aplikasi
+[ERC-165](https://eips.ethereum.org/EIPS/eip-165) menentukan mekanisme bagi sebuah kontrak untuk mengungkapkan bagaimana aplikasi
 dapat berkomunikasi dengannya, ERC mana yang dipatuhinya. `SUPPORTED_INTERFACES` adalah daftar konstan dari dua ID antarmuka
 empat bita yang dipatuhi kontrak ini: ERC-165 itu sendiri dan ERC-721.
 ### Fungsi {#functions}

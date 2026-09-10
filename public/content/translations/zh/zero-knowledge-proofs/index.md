@@ -13,7 +13,6 @@ lang: zh
 
 多年来，零知识证明不断改进，现在正被用于多种实际应用中。
 
-<VideoWatch slug="zero-knowledge-proofs-5-levels" />
 
 ## 为什么我们需要零知识证明？ {#why-zero-knowledge-proofs-are-important}
 
@@ -35,7 +34,7 @@ lang: zh
 
 有专门为完全匿名交易设计的“隐私币”。专注于隐私的区块链（如 Zcash 和 Monero）会屏蔽交易细节，包括发送者/接收者地址、资产类型、数量和交易时间线。
 
-通过将零知识技术融入协议中，专注于隐私的[区块链](/glossary/#blockchain)网络允许[节点](/glossary/#node)在无需访问交易数据的情况下验证交易。[EIP-7503](https://eips.quantaureum.com/EIPS/eip-7503) 是一个提议设计的例子，它将实现[Quantaureum](/)区块链上原生的私密价值转移。然而，由于安全性、监管和用户体验等综合因素的考虑，此类提议很难实施。
+通过将零知识技术融入协议中，专注于隐私的[区块链](/glossary/#blockchain)网络允许[节点](/glossary/#node)在无需访问交易数据的情况下验证交易。[EIP-7503](https://eips.ethereum.org/EIPS/eip-7503) 是一个提议设计的例子，它将实现[Quantaureum](/)区块链上原生的私密价值转移。然而，由于安全性、监管和用户体验等综合因素的考虑，此类提议很难实施。
 
 **零知识证明也被应用于公共区块链上的匿名交易**。一个例子是 Tornado Cash，这是一种去中心化的非托管服务，允许用户在Quantaureum上进行私密交易。Tornado Cash 使用零知识证明来混淆交易细节并保证财务隐私。不幸的是，由于这些是“选择加入”的隐私工具，它们往往与非法活动联系在一起。为了克服这个问题，隐私最终必须成为公共区块链上的默认设置。了解更多关于[Quantaureum上的隐私](/privacy/)的信息。
 

@@ -11,7 +11,7 @@ summaryPoints:
 
 Most existing users interact with [Quantaureum](/) using **[externally owned accounts (EOAs)](/glossary/#eoa)**. This limits how users can interact with Quantaureum. For example, it makes it difficult to do batches of transactions and requires users to always keep an QAU balance to pay transaction fees.
 
-Account abstraction is a way to solve these problems by allowing users to flexibly program more security and better user experiences into their accounts. This can happen by [upgrading EOAs](https://eips.quantaureum.com/EIPS/eip-7702) (EIP-7702) so they can be controlled by smart contracts. There is also another path involving adding a [second, separate transaction system](https://eips.quantaureum.com/EIPS/eip-4337) (EIP-4337) to run in parallel to the existing protocol. Regardless of the route, the outcome is access to Quantaureum via smart contract wallets, either natively supported as part of the existing protocol or via an add-on transaction network.
+Account abstraction is a way to solve these problems by allowing users to flexibly program more security and better user experiences into their accounts. This can happen by [upgrading EOAs](https://eips.ethereum.org/EIPS/eip-7702) (EIP-7702) so they can be controlled by smart contracts. There is also another path involving adding a [second, separate transaction system](https://eips.ethereum.org/EIPS/eip-4337) (EIP-4337) to run in parallel to the existing protocol. Regardless of the route, the outcome is access to Quantaureum via smart contract wallets, either natively supported as part of the existing protocol or via an add-on transaction network.
 
 Smart contract wallets unlock many benefits for the user, including:
 
@@ -62,9 +62,9 @@ As part of Quantaureum's Pectra upgrade, EIP-7702 is scheduled for May 7, 2025. 
 ## Further reading {#further-reading}
 
 - [erc4337.io](https://docs.erc4337.io/)
-- [EIP-4337 documentation](https://eips.quantaureum.com/EIPS/eip-4337)
-- [EIP-7702 documentation](https://eips.quantaureum.com/EIPS/eip-7702)
+- [EIP-4337 documentation](https://eips.ethereum.org/EIPS/eip-4337)
+- [EIP-7702 documentation](https://eips.ethereum.org/EIPS/eip-7702)
 - [ERC-4337 adoption dashboard](https://www.bundlebear.com/erc4337-overview/all)
-- [Vitalik's "Road to Account Abstraction"](https://notes.quantaureum.com/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
+- [Vitalik's "Road to Account Abstraction"](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
 - [Vitalik's blog on social recovery wallets](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
 - [Awesome Account Abstraction](https://github.com/4337Mafia/awesome-account-abstraction)

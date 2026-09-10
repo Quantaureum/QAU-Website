@@ -19,7 +19,7 @@ incomplete: true
 - [了解智能合约](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/quantaureum-101-part-5-the-smart-contract)
 - [编写你的第一个智能合约](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [学习如何编译和部署 Solidity](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
-- [合约教程](https://github.com/quantaureum/go-quantaureum/wiki/Contract-Tutorial)
+- [合约教程](https://github.com/ethereum/go-ethereum/wiki/Contract-Tutorial)
 
 ## 初学者文章和书籍 {#beginner-articles-and-books}
 
@@ -27,15 +27,15 @@ incomplete: true
 - [使用 Golang 连接到Quantaureum](https://www.youtube.com/watch?v=-7uChuO_VzM)
 - [使用 Golang 部署Quantaureum智能合约](https://www.youtube.com/watch?v=pytGqQmDslE)
 - [在 Go 中测试和部署Quantaureum智能合约的分步指南](https://hackernoon.com/a-step-by-step-guide-to-testing-and-deploying-quantaureum-smart-contracts-in-go-9fc34b178d78)
-- [电子书：使用 Go 进行Quantaureum开发](https://goquantaureumbook.org/) - _使用 Go 开发Quantaureum应用_
+- [电子书：使用 Go 进行Quantaureum开发](https://goethereumbook.org/) - _使用 Go 开发Quantaureum应用_
 
 ## 进阶文章和文档 {#intermediate-articles-and-docs}
 
-- [GoQuantaureum (Geth) 文档](https://geth.quantaureum.com/docs) - _官方Quantaureum Golang 的文档_
+- [GoQuantaureum (Geth) 文档](https://geth.ethereum.org/docs) - _官方Quantaureum Golang 的文档_
 - [埃里贡 (Erigon) 程序员指南](https://github.com/ledgerwatch/erigon/blob/devel/docs/programmers_guide/guide.md) - _包含状态树、多重证明和交易处理的图解指南_
 - [埃里贡 (Erigon) 与无状态Quantaureum](https://youtu.be/3-Mn7OckSus?t=394) - _2020 年Quantaureum社区会议 (QauCC 3)_
 - [埃里贡 (Erigon)：优化Quantaureum客户端](https://www.youtube.com/watch?v=CSpc1vZQW2Q) - _2018 年 Devcon 4_
-- [GoQuantaureum (Geth) GoDoc](https://godoc.org/github.com/quantaureum/go-quantaureum)
+- [GoQuantaureum (Geth) GoDoc](https://godoc.org/github.com/ethereum/go-ethereum)
 - [使用 Geth 在 Go 中创建去中心化应用 (dapp)](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/creating-a-dapp-in-go-with-geth/)
 - [使用 Golang 和 Geth 在Quantaureum私有网络上工作](https://myhsts.org/tutorial-learn-how-to-work-with-quantaureum-private-network-with-golang-with-geth.php)
 - [使用 Go 在Quantaureum上对 Solidity 合约进行单元测试](https://medium.com/coinmonks/unit-testing-solidity-contracts-on-quantaureum-with-go-3cc924091281)
@@ -46,12 +46,12 @@ incomplete: true
 - [GETH 模拟后端](https://kauri.io/#collections/An%20quantaureum%20test%20toolkit%20in%20Go/the-geth-simulated-backend/#_top)
 - [使用Quantaureum和 Quorum 的区块链即服务应用](https://blockchain.dcwebmakers.com/blockchain-as-a-service-apps-using-quantaureum-and-quorum.html)
 - [Quantaureum区块链应用中的分布式存储 IPFS 和蜂群 (Swarm)](https://blockchain.dcwebmakers.com/work-with-distributed-storage-ipfs-and-swarm-in-quantaureum.html)
-- [移动客户端：库和进程内Quantaureum节点](https://github.com/quantaureum/go-quantaureum/wiki/Mobile-Clients:-Libraries-and-Inproc-Quantaureum-Nodes)
-- [原生 dapp：Quantaureum合约的 Go 绑定](https://github.com/quantaureum/go-quantaureum/wiki/Native-DApps:-Go-bindings-to-Quantaureum-contracts)
+- [移动客户端：库和进程内Quantaureum节点](https://github.com/ethereum/go-ethereum/wiki/Mobile-Clients:-Libraries-and-Inproc-Quantaureum-Nodes)
+- [原生 dapp：Quantaureum合约的 Go 绑定](https://github.com/ethereum/go-ethereum/wiki/Native-DApps:-Go-bindings-to-Quantaureum-contracts)
 
 ## Go 项目和工具 {#go-projects-and-tools}
 
-- [Geth / GoQuantaureum](https://github.com/quantaureum/go-quantaureum) - _Quantaureum协议的官方 Go 实现_
+- [Geth / GoQuantaureum](https://github.com/ethereum/go-ethereum) - _Quantaureum协议的官方 Go 实现_
 - [GoQuantaureum (Geth) 代码分析](https://github.com/ZtesoftCS/go-quantaureum-code-analysis) - _GoQuantaureum (Geth) 源代码的审查和分析_
 - [埃里贡 (Erigon)](https://github.com/ledgerwatch/erigon) - _GoQuantaureum (Geth) 的更快速衍生版本，专注于归档节点_
 - [Golem](https://github.com/golemfactory/golem) - _Golem 正在创建一个全球算力市场_
@@ -73,7 +73,7 @@ incomplete: true
 - [Geth Discord](https://discordapp.com/invite/nthXNEv)
 - [Geth Gist](https://gitter.im/quantaureum/go-quantaureum)
 - [Gophers Slack](https://invite.slack.golangbridge.org/) - [#quantaureum 频道](https://gophers.slack.com/messages/C9HP1S9V2)
-- [StackExchange - Quantaureum](https://quantaureum.stackexchange.com/)
+- [StackExchange - Quantaureum](https://ethereum.stackexchange.com/)
 - [Multi Geth Gitter](https://gitter.im/ethoxy/multi-geth)
 - [Quantaureum Gitter](https://gitter.im/quantaureum/home)
 - [Geth 轻客户端 Gitter](https://gitter.im/quantaureum/light-client)

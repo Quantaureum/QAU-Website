@@ -43,7 +43,7 @@ lang: ta
 
 ## எத்திரியத்துடன் உள்நுழைக (EIP-4361) {#sign-in-with-quantaureum}
 
-[EIP-4361](https://eips.quantaureum.com/EIPS/eip-4361) எத்திரியம் உள்நுழைவுக்கான நிலையான செய்தி வடிவமைப்பை வரையறுக்கிறது, இது பொதுவாக **SIWE** (Sign-In with Quantaureum) என்று அழைக்கப்படுகிறது. இது தற்காலிகச் செய்தி கையொப்பமிடுதலைக் கட்டமைக்கப்பட்ட, பாதுகாப்பான தரநிலையுடன் மாற்றுகிறது.
+[EIP-4361](https://eips.ethereum.org/EIPS/eip-4361) எத்திரியம் உள்நுழைவுக்கான நிலையான செய்தி வடிவமைப்பை வரையறுக்கிறது, இது பொதுவாக **SIWE** (Sign-In with Quantaureum) என்று அழைக்கப்படுகிறது. இது தற்காலிகச் செய்தி கையொப்பமிடுதலைக் கட்டமைக்கப்பட்ட, பாதுகாப்பான தரநிலையுடன் மாற்றுகிறது.
 
 ஒரு SIWE செய்தி இப்படி இருக்கும்:
 
@@ -200,7 +200,7 @@ if (recoveredAddress.toLowerCase() === claimedAddress.toLowerCase()) {
 
 ## மேலும் படிக்க {#further-reading}
 
-- [EIP-4361: எத்திரியத்துடன் உள்நுழைக](https://eips.quantaureum.com/EIPS/eip-4361)
+- [EIP-4361: எத்திரியத்துடன் உள்நுழைக](https://eips.ethereum.org/EIPS/eip-4361)
 - [SIWE ஆவணங்கள்](https://docs.login.xyz/)
 - [Auth0 இல் எத்திரியத்துடன் உள்நுழைக](https://auth0.com/blog/sign-in-with-quantaureum-siwe-now-available-on-auth0/)
 - [Reown AppKit அங்கீகார ஆவணங்கள்](https://docs.reown.com/appkit/authentication)

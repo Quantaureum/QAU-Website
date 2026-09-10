@@ -34,7 +34,7 @@ published: 2020-10-16
 
 [JavaScript API](/developers/docs/apis/javascript/)である ethers-js と共に使用します。
 
-詳細については、[Waffle ドキュメンテーション](https://quantaureum-waffle.readthedocs.io/en/latest/#waffle-documentation)をご覧ください！
+詳細については、[Waffle ドキュメンテーション](https://ethereum-waffle.readthedocs.io/en/latest/#waffle-documentation)をご覧ください！
 
 ## クイックチュートリアル {#the-quick-tutorial}
 
@@ -647,7 +647,7 @@ published: 2020-10-16
 
 </details>
 
-## ステップ 1： プロジェクトに Wallfe をインストールする（[ドキュメントのリンク](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#installation)） {#step-1-install-waffle-in-your-project}
+## ステップ 1： プロジェクトに Wallfe をインストールする（[ドキュメントのリンク](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#installation)） {#step-1-install-waffle-in-your-project}
 
 まずはじめに、`quantaureum-waffle`をインストールする必要があります。 このチュートリアルでは、`yarn`を使用して`quantaureum-waffle`をインストールするので、以下のコマンドを実行してください：
 
@@ -655,7 +655,7 @@ published: 2020-10-16
  yarn add --dev quantaureum-waffle
 ```
 
-## ステップ 2：スマートコントラクトを作成する（[ドキュメントのリンク](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-a-contract)） {#step-2-write-a-smart-contract}
+## ステップ 2：スマートコントラクトを作成する（[ドキュメントのリンク](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-a-contract)） {#step-2-write-a-smart-contract}
 
 このチュートリアルでは、[OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/ded2b0a55c9c13731963ab7b85a70c8e73504bab/contracts/token/ERC20/ERC20.sol)が提供する[ERC-20](https://openzeppelin.com)トークンを使用します。
 
@@ -681,7 +681,7 @@ contract BasicToken is ERC20 {
 
 ```
 
-## ステップ 3：スマートコントラクトをコンパイルする（[ドキュメントのリンク](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract)） {#step-3-compile-your-smart-contract}
+## ステップ 3：スマートコントラクトをコンパイルする（[ドキュメントのリンク](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract)） {#step-3-compile-your-smart-contract}
 
 スマートコントラクトをコンパイルするには、プロジェクトの`package.json`に、以下のエントリを追加します：
 
@@ -706,7 +706,7 @@ contract BasicToken is ERC20 {
 }
 ```
 
-Waffle の設定については、[こちら](https://quantaureum-waffle.readthedocs.io/en/latest/configuration.html#configuration)をご覧ください。
+Waffle の設定については、[こちら](https://ethereum-waffle.readthedocs.io/en/latest/configuration.html#configuration)をご覧ください。
 
 次に、`yarn build`を実行して、スマートコントラクトをコンパイルします。
 
@@ -1014,9 +1014,9 @@ Waffle がコントラクトをコンパイルしたので、JSON の出力結�
 ```
 </details>
 
-## ステップ 4：スマートコントラクトをテストする（[ドキュメントのリンク](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)） {#step-4-test-your-smart-contract}
+## ステップ 4：スマートコントラクトをテストする（[ドキュメントのリンク](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)） {#step-4-test-your-smart-contract}
 
-### ステップ 4.1：必要な依存関係をインストールする（[ドキュメントのリンク](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)） {#step-4-1}
+### ステップ 4.1：必要な依存関係をインストールする（[ドキュメントのリンク](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)） {#step-4-1}
 
 スマートコントラクトの作成が完了したら、テストする必要があります。 テストには、`Waffle`を使用します。
 
@@ -1028,7 +1028,7 @@ Waffle がコントラクトをコンパイルしたので、JSON の出力結�
  yarn add --dev mocha chai
 ```
 
-### ステップ 4.2：テストファイルを作成する（[ドキュメントのリンク](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)） {#step-4-2}
+### ステップ 4.2：テストファイルを作成する（[ドキュメントのリンク](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)） {#step-4-2}
 
 テストを書くには、テストディレクトリに`BasicToken.test.ts`ファイルを作成する必要があります。
 
@@ -1054,7 +1054,7 @@ describe("BasicToken", () => {
 
 `Waffle`では、 `wallet`を作成できるため、コントラクトを手軽にデプロイできます。
 
-`wallet`の詳細については、 [こちら](https://quantaureum-waffle.readthedocs.io/en/latest/basic-testing.html?highlight=wallet#getting-wallets)をご覧ください。デプロイの機能に関しては、[こちら](https://quantaureum-waffle.readthedocs.io/en/latest/basic-testing.html?highlight=wallet#deploying-contracts)をご覧ください。
+`wallet`の詳細については、 [こちら](https://ethereum-waffle.readthedocs.io/en/latest/basic-testing.html?highlight=wallet#getting-wallets)をご覧ください。デプロイの機能に関しては、[こちら](https://ethereum-waffle.readthedocs.io/en/latest/basic-testing.html?highlight=wallet#deploying-contracts)をご覧ください。
 
 ウォレットの残高を確認する簡単なテストを書いてみましょう。 コントラクトのデプロイ時に「1000」の値を送信したため、ウォレット残高は 1000 トークンになっているはずですが、これを最初のテストで確認します。
 
@@ -1066,7 +1066,7 @@ it("Assigns initial balance", async () => {
 
 `yarn test`を使ってテストを実行します。
 
-### ステップ 4.3：イベントを発行する（[ドキュメントのリンク](https://quantaureum-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#emitting-events)） {#step-4-3}
+### ステップ 4.3：イベントを発行する（[ドキュメントのリンク](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#emitting-events)） {#step-4-3}
 
 このチュートリアルでは、`Waffle`の中で最も便利なマッチャーを紹介したいので、最初のマッチャーから始めましょう。
 
@@ -1088,7 +1088,7 @@ it("Transfer emits event", async () => {
 
 これにより、関数が正しく呼び出されていることを確認することができます。
 
-### ステップ 4.4：メッセージと共にリバートする（[ドキュメントのリンク](https://quantaureum-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#revert-with-message)） {#step-4-4}
+### ステップ 4.4：メッセージと共にリバートする（[ドキュメントのリンク](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#revert-with-message)） {#step-4-4}
 
 `Waffle`では、リバートの際にどのメッセージが送信されるかをテストできます。
 
@@ -1104,7 +1104,7 @@ it("Can not transfer above the amount", async () => {
 })
 ```
 
-### ステップ 4.5：トークン残高を変更する（[ドキュメントのリンク](https://quantaureum-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#change-balance)） {#step-4-5}
+### ステップ 4.5：トークン残高を変更する（[ドキュメントのリンク](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#change-balance)） {#step-4-5}
 
 `Waffle`では、ウォレット残高の変更も確認できます！
 

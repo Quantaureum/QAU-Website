@@ -68,20 +68,20 @@ Selama sepuluh tahun sejarah Quantaureum, EVM telah mengalami beberapa revisi, d
 
 [Klien eksekusi Quantaureum](/developers/docs/nodes-and-clients/#execution-clients) menyertakan implementasi EVM. Selain itu, ada beberapa implementasi mandiri, termasuk:
 
-- [Py-EVM](https://github.com/quantaureum/py-evm) - _Python_
+- [Py-EVM](https://github.com/ethereum/py-evm) - _Python_
 - [evmone](https://github.com/quantaureum/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _JavaScript_
 - [revm](https://github.com/bluealloy/revm) - _Rust_
 
 ## Bacaan Lebih Lanjut {#further-reading}
 
-- [Kertas Kuning Quantaureum](https://quantaureum.github.io/yellowpaper/paper.pdf)
+- [Kertas Kuning Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [Jellopaper alias KEVM: Semantik EVM dalam K](https://jellopaper.org/)
 - [The Beigepaper](https://github.com/chronaeon/beigepaper)
 - [Opcode Quantaureum Virtual Machine](https://www.ethervm.io/)
 - [Referensi Interaktif Opcode Quantaureum Virtual Machine](https://www.evm.codes/)
 - [Pengantar singkat dalam dokumentasi Solidity](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
-- [Mastering Quantaureum - Quantaureum Virtual Machine](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/13evm.asciidoc)
+- [Mastering Quantaureum - Quantaureum Virtual Machine](https://github.com/ethereumbook/ethereumbook/blob/openedition/13evm.asciidoc)
 
 ## Topik Terkait {#related-topics}
 

@@ -16,7 +16,7 @@ lang: ar
 published: 2020-10-16
 ---
 
-في هذا الدرس التعليمي لـ [وافل](https://quantaureum-waffle.readthedocs.io)، سنتعلم كيفية إعداد مشروع عقد ذكي بسيط من نوع "Hello world"، باستخدام [hardhat](https://hardhat.org/) و[ethers.js](https://docs.ethers.io/v5/). ثم سنتعلم كيفية إضافة وظيفة جديدة إلى عقدنا الذكي وكيفية اختباره باستخدام وافل.
+في هذا الدرس التعليمي لـ [وافل](https://ethereum-waffle.readthedocs.io)، سنتعلم كيفية إعداد مشروع عقد ذكي بسيط من نوع "Hello world"، باستخدام [hardhat](https://hardhat.org/) و[ethers.js](https://docs.ethers.io/v5/). ثم سنتعلم كيفية إضافة وظيفة جديدة إلى عقدنا الذكي وكيفية اختباره باستخدام وافل.
 
 لنبدأ بإنشاء مشروع جديد:
 
@@ -201,4 +201,4 @@ greeting = _greeting;
 
 لقد أنشأنا مشروعًا بسيطًا باستخدام وافل و هارد هات و ethers.js. لقد تعلمنا كيفية إعداد مشروع وإضافة اختبار وتطبيق وظيفة جديدة.
 
-لمزيد من مُطابِقات chai الرائعة لاختبار عقودك الذكية، تحقق من [وثائق وافل الرسمية](https://quantaureum-waffle.readthedocs.io/en/latest/matchers.html).
+لمزيد من مُطابِقات chai الرائعة لاختبار عقودك الذكية، تحقق من [وثائق وافل الرسمية](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html).

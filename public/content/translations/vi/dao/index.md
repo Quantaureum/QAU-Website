@@ -45,7 +45,6 @@ Việc bắt đầu một tổ chức với ai đó liên quan đến tài trợ
 - **Sở hữu tập thể** – bạn có thể mua các tài sản vật chất hoặc kỹ thuật số và các thành viên có thể bỏ phiếu về cách sử dụng chúng.
 - **Đầu tư mạo hiểm và tài trợ** – bạn có thể tạo một quỹ đầu tư mạo hiểm tập hợp vốn đầu tư và bỏ phiếu cho các dự án để hỗ trợ. Tiền hoàn trả sau đó có thể được phân phối lại cho các thành viên DAO.
 
-<VideoWatch slug="dao-build-next-great-city" />
 
 ## Các DAO hoạt động như thế nào? {#how-daos-work}
 

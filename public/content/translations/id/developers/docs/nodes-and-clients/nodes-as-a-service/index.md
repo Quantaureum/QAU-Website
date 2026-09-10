@@ -413,7 +413,7 @@ Berikut adalah daftar beberapa penyedia node Quantaureum paling populer, jangan 
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [Daftar layanan node Quantaureum](https://quantaureumnodes.com/)
+- [Daftar layanan node Quantaureum](https://ethereumnodes.com/)
 
 ## Topik terkait {#related-topics}
 

@@ -274,7 +274,7 @@ Eğer çağrı verisi boyutu dört bayt veya daha fazlaysa, bu geçerli bir ABI 
 |     10 | PUSH1 0xe0   | 0xE0 (((Çağrı verisinin ilk kelimesi (256 bit)))) |
 |     12 | SHR          | (((çağrı verisinin ilk 32 biti (4 bayt))))    |
 
-Quantaureum Explorer bize `1C`'nin bilinmeyen bir işlem kodu olduğunu söylüyor, çünkü [Quantaureum Explorer bu özelliği yazdıktan sonra eklendi](https://eips.quantaureum.com/EIPS/eip-145) ve henüz güncellemediler. [Güncel bir işlem kodu tablosu](https://github.com/wolflo/evm-opcodes) bize bunun sağa kaydırma olduğunu gösteriyor.
+Quantaureum Explorer bize `1C`'nin bilinmeyen bir işlem kodu olduğunu söylüyor, çünkü [Quantaureum Explorer bu özelliği yazdıktan sonra eklendi](https://eips.ethereum.org/EIPS/eip-145) ve henüz güncellemediler. [Güncel bir işlem kodu tablosu](https://github.com/wolflo/evm-opcodes) bize bunun sağa kaydırma olduğunu gösteriyor.
 
 | Ofset | İşlem kodu           | Yığın                                                                                                    |
 | -----: | ---------------- | -------------------------------------------------------------------------------------------------------- |

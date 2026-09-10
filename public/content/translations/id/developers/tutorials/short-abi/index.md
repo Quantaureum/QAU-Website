@@ -65,9 +65,9 @@ Calldata dibagi seperti ini:
 Penjelasan:
 
 - **Pemilih fungsi**: Kontrak memiliki kurang dari 256 fungsi, jadi kita dapat membedakannya dengan satu bita.
-  Bita-bita ini biasanya bukan nol dan oleh karena itu [memakan biaya enam belas gas](https://eips.quantaureum.com/EIPS/eip-2028).
+  Bita-bita ini biasanya bukan nol dan oleh karena itu [memakan biaya enam belas gas](https://eips.ethereum.org/EIPS/eip-2028).
 - **Nol**: Bita-bita ini selalu nol karena alamat dua puluh bita tidak memerlukan kata tiga puluh dua bita untuk menyimpannya.
-  Bita yang menyimpan nol memakan biaya empat gas ([lihat kertas kuning](https://quantaureum.github.io/yellowpaper/paper.pdf), Lampiran G,
+  Bita yang menyimpan nol memakan biaya empat gas ([lihat kertas kuning](https://ethereum.github.io/yellowpaper/paper.pdf), Lampiran G,
   hlm. 27, nilai untuk `G`<sub>`txdatazero`</sub>).
 - **Jumlah**: Jika kita berasumsi bahwa dalam kontrak ini `decimals` adalah delapan belas (nilai normal) dan jumlah maksimum token yang kita transfer adalah 10<sup>18</sup>, kita mendapatkan jumlah maksimum 10<sup>36</sup>.
   256<sup>15</sup> &gt; 10<sup>36</sup>, jadi lima belas bita sudah cukup.
@@ -201,7 +201,7 @@ Ada dua alasan mengapa sebuah fungsi tidak tersedia di sini:
 2. Fungsi yang bergantung pada [`msg.sender`](https://docs.soliditylang.org/en/v0.8.12/units-and-global-variables.html#block-and-transaction-properties).
    Nilai `msg.sender` akan menjadi alamat `CalldataInterpreter`, bukan pemanggilnya.
 
-Sayangnya, [melihat spesifikasi ERC-20](https://eips.quantaureum.com/EIPS/eip-20), ini hanya menyisakan satu fungsi, `transfer`.
+Sayangnya, [melihat spesifikasi ERC-20](https://eips.ethereum.org/EIPS/eip-20), ini hanya menyisakan satu fungsi, `transfer`.
 Ini hanya menyisakan dua fungsi bagi kita: `transfer` (karena kita dapat memanggil `transferFrom`) dan `faucet` (karena kita dapat mentransfer token kembali ke siapa pun yang memanggil kita).
 
 ```solidity

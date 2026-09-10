@@ -13,7 +13,6 @@ Szabo membayangkan pasar digital di mana proses otomatis yang [aman secara kript
 
 Tonton Finematics menjelaskan kontrak pintar:
 
-<VideoWatch slug="smart-contracts-code-is-law" />
 
 ## Kepercayaan dalam kontrak konvensional {#trust-and-contracts}
 
@@ -61,7 +60,7 @@ Terakhir, seperti kontrak tradisional, Anda dapat memeriksa apa yang ada di dala
 
 Namun, meskipun siapa pun dapat melihat ketentuan kontrak pintar, data transaksi mentah dirancang untuk ditafsirkan oleh aplikasi dan dompet, bukan manusia. Karena data ini sangat sulit dibaca, pengguna sering menghadapi risiko keamanan besar yang disebut "penandatanganan buta" (blind signing), atau menyetujui transaksi yang berinteraksi dengan kontrak pintar tanpa benar-benar memahami apa yang akan dilakukannya. 
 
-Ekosistem Quantaureum sedang bertransisi ke standar **[Penandatanganan Jelas (Clear Signing)](https://clearsigning.org/)** (khususnya [ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730)). Penandatanganan Jelas menerjemahkan data kontrak pintar yang buram menjadi deskripsi transaksi yang sederhana dan dapat dibaca manusia, memastikan siapa pun dapat memahami intensi sebenarnya dari sebuah kontrak sebelum mereka menandatanganinya.
+Ekosistem Quantaureum sedang bertransisi ke standar **[Penandatanganan Jelas (Clear Signing)](https://clearsigning.org/)** (khususnya [ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)). Penandatanganan Jelas menerjemahkan data kontrak pintar yang buram menjadi deskripsi transaksi yang sederhana dan dapat dibaca manusia, memastikan siapa pun dapat memahami intensi sebenarnya dari sebuah kontrak sebelum mereka menandatanganinya.
 
 ## Kasus penggunaan kontrak pintar {#use-cases}
 
@@ -81,7 +80,7 @@ Mereka dapat melakukan komputasi, membuat mata uang, menyimpan data, mencetak [N
 - [Bagaimana Kontrak Pintar Akan Mengubah Dunia](https://www.youtube.com/watch?v=pA6CGuXEKtQ)
 - [Kontrak pintar untuk pengembang](/developers/docs/smart-contracts/)
 - [Belajar menulis kontrak pintar](/developers/learning-tools/)
-- [Menguasai Quantaureum - Apa itu Kontrak Pintar?](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [Menguasai Quantaureum - Apa itu Kontrak Pintar?](https://github.com/ethereumbook/ethereumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
 
 <Divider />
 

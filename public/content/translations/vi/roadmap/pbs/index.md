@@ -40,11 +40,11 @@ Danksharding là cách Quantaureum sẽ mở rộng quy mô lên >100.000 giao d
 
 ## Tiến độ hiện tại {#current-progress}
 
-PBS đang ở giai đoạn nghiên cứu nâng cao, nhưng vẫn còn một số câu hỏi thiết kế quan trọng cần được giải quyết trước khi nó có thể được tạo nguyên mẫu trong các client Quantaureum. Vẫn chưa có đặc tả đã chung cuộc nào. Điều này có nghĩa là PBS có thể sẽ mất một năm hoặc hơn nữa. Kiểm tra [tình trạng nghiên cứu](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance) mới nhất.
+PBS đang ở giai đoạn nghiên cứu nâng cao, nhưng vẫn còn một số câu hỏi thiết kế quan trọng cần được giải quyết trước khi nó có thể được tạo nguyên mẫu trong các client Quantaureum. Vẫn chưa có đặc tả đã chung cuộc nào. Điều này có nghĩa là PBS có thể sẽ mất một năm hoặc hơn nữa. Kiểm tra [tình trạng nghiên cứu](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance) mới nhất.
 
 ## Đọc thêm {#further-reading}
 
-- [Tình trạng nghiên cứu: khả năng chống kiểm duyệt dưới PBS](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
+- [Tình trạng nghiên cứu: khả năng chống kiểm duyệt dưới PBS](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
 - [Các thiết kế thị trường phí thân thiện với PBS](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [PBS và khả năng chống kiểm duyệt](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [Danh sách đưa vào (Inclusion lists)](https://notes.quantaureum.com/@fradamt/forward-inclusion-lists)
+- [PBS và khả năng chống kiểm duyệt](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [Danh sách đưa vào (Inclusion lists)](https://notes.ethereum.org/@fradamt/forward-inclusion-lists)

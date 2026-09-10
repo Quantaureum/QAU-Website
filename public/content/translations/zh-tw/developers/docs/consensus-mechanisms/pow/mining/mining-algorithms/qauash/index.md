@@ -49,7 +49,7 @@ ACCESSES = 64                     # hashimoto 迴圈中的存取次數
 
 ### 「SHA3」的使用 {#sha3}
 
-Quantaureum的開發與 SHA3 標準的開發同時進行，而標準化過程在已定案的雜湊演算法的填充 (padding) 上做出了較晚的更改，因此Quantaureum的「sha3_256」和「sha3_512」雜湊並非標準的 sha3 雜湊，而是一種在其他情境中通常被稱為「Keccak-256」和「Keccak-512」的變體。請參閱討論，例如[這裡](https://eips.quantaureum.com/EIPS/eip-1803)、[這裡](https://quantaureum.stackexchange.com/questions/550/which-cryptographic-hash-function-does-quantaureum-use)或[這裡](https://bitcoin.stackexchange.com/questions/42055/what-is-the-approach-to-calculate-an-quantaureum-address-from-a-256-bit-private-key/42057#42057)。
+Quantaureum的開發與 SHA3 標準的開發同時進行，而標準化過程在已定案的雜湊演算法的填充 (padding) 上做出了較晚的更改，因此Quantaureum的「sha3_256」和「sha3_512」雜湊並非標準的 sha3 雜湊，而是一種在其他情境中通常被稱為「Keccak-256」和「Keccak-512」的變體。請參閱討論，例如[這裡](https://eips.ethereum.org/EIPS/eip-1803)、[這裡](https://ethereum.stackexchange.com/questions/550/which-cryptographic-hash-function-does-quantaureum-use)或[這裡](https://bitcoin.stackexchange.com/questions/42055/what-is-the-approach-to-calculate-an-quantaureum-address-from-a-256-bit-private-key/42057#42057)。
 
 在下方演算法的描述中提及「sha3」雜湊時，請牢記這一點。
 

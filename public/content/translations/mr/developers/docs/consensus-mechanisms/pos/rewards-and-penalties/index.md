@@ -26,7 +26,7 @@ base_reward = effective_balance * (base_reward_factor / (base_rewards_per_epoch 
 
 जिथे `base_reward_factor` हे 64 आहे, `base_rewards_per_epoch` हे 4 आहे आणि `sum(active balance)` हे सर्व सक्रिय प्रमाणकांवरील एकूण स्टेक केलेले QAU आहे.
 
-याचा अर्थ मूळ बक्षीस प्रमाणकाच्या प्रभावी शिल्लकच्या समप्रमाणात आणि नेटवर्कवरील प्रमाणकांच्या संख्येच्या व्यस्त प्रमाणात असते. जेवढे जास्त प्रमाणक, तेवढे एकूण निर्गमन जास्त (कारण `sqrt(N)` परंतु प्रति प्रमाणक `base_reward` लहान (कारण `1/sqrt(N)`). हे घटक स्टेकिंग नोडसाठी APR वर प्रभाव टाकतात. यामागील तर्क [व्हिटालिकच्या नोट्स](https://notes.quantaureum.com/@vbuterin/serenity_design_rationale?type=view#Base-rewards) मध्ये वाचा.
+याचा अर्थ मूळ बक्षीस प्रमाणकाच्या प्रभावी शिल्लकच्या समप्रमाणात आणि नेटवर्कवरील प्रमाणकांच्या संख्येच्या व्यस्त प्रमाणात असते. जेवढे जास्त प्रमाणक, तेवढे एकूण निर्गमन जास्त (कारण `sqrt(N)` परंतु प्रति प्रमाणक `base_reward` लहान (कारण `1/sqrt(N)`). हे घटक स्टेकिंग नोडसाठी APR वर प्रभाव टाकतात. यामागील तर्क [व्हिटालिकच्या नोट्स](https://notes.ethereum.org/@vbuterin/serenity_design_rationale?type=view#Base-rewards) मध्ये वाचा.
 
 एकूण बक्षीस नंतर पाच घटकांची बेरीज म्हणून मोजले जाते ज्या प्रत्येकाचे एक वजन असते जे निर्धारित करते की प्रत्येक घटक एकूण बक्षीसात किती भर घालतो. हे घटक आहेत:
 
@@ -60,7 +60,7 @@ PROPOSER_WEIGHT	uint64(8)
 
 लक्ष्य आणि स्रोत मते चुकवल्याबद्दलचा दंड साक्षांकनकर्त्याने ती सबमिट केली असती तर त्यांना मिळालेल्या बक्षिसांइतकाच असतो. याचा अर्थ असा की त्यांच्या शिल्लकमध्ये बक्षीस जोडण्याऐवजी, त्यांच्या शिल्लकमधून समान मूल्य काढून टाकले जाते. हेड मत चुकवल्याबद्दल कोणताही दंड नाही (म्हणजेच, हेड मतांना फक्त बक्षीस दिले जाते, कधीही दंड आकारला जात नाही). `inclusion_delay` शी संबंधित कोणताही दंड नाही - बक्षीस फक्त प्रमाणकाच्या शिल्लकमध्ये जोडले जाणार नाही. ब्लॉकचा प्रस्ताव देण्यात अयशस्वी झाल्याबद्दल कोणताही दंड नाही.
 
-[सहमती स्पेसिफिकेशन्स](https://github.com/quantaureum/consensus-specs/blob/master/specs/altair/beacon-chain.md) मध्ये बक्षिसे आणि दंडांबद्दल अधिक वाचा. Bellatrix अपग्रेडमध्ये बक्षिसे आणि दंड समायोजित केले गेले - डॅनी रायन आणि व्हिटालिक यांना या [Peep an EIP व्हिडिओ](https://www.youtube.com/watch?v=iaAEGs1DMgQ) मध्ये यावर चर्चा करताना पहा.
+[सहमती स्पेसिफिकेशन्स](https://github.com/ethereum/consensus-specs/blob/master/specs/altair/beacon-chain.md) मध्ये बक्षिसे आणि दंडांबद्दल अधिक वाचा. Bellatrix अपग्रेडमध्ये बक्षिसे आणि दंड समायोजित केले गेले - डॅनी रायन आणि व्हिटालिक यांना या [Peep an EIP व्हिडिओ](https://www.youtube.com/watch?v=iaAEGs1DMgQ) मध्ये यावर चर्चा करताना पहा.
 
 ## स्लॅशिंग {#slashing}
 
@@ -82,7 +82,7 @@ PROPOSER_WEIGHT	uint64(8)
 
 - [Quantaureum अपग्रेड करणे: प्रोत्साहन स्तर](https://eth2book.info/altair/part2/incentives)
 - [Quantaureumच्या हायब्रिड Casper प्रोटोकॉलमधील प्रोत्साहने](https://arxiv.org/pdf/1903.04205.pdf)
-- [व्हिटालिकचे भाष्य केलेले स्पेसिफिकेशन](https://github.com/quantaureum/annotated-spec/blob/master/phase0/beacon-chain.md#rewards-and-penalties-1)
+- [व्हिटालिकचे भाष्य केलेले स्पेसिफिकेशन](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#rewards-and-penalties-1)
 - [ईथ२ स्लॅशिंग प्रतिबंधक टिपा](https://medium.com/prysmatic-labs/eth2-slashing-prevention-tips-f6faa5025f50)
 - [EIP-7251 अंतर्गत स्लॅशिंग दंडांचे विश्लेषण](https://ethresear.ch/t/slashing-penalty-analysis-eip-7251/16509)
 

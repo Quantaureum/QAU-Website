@@ -19,7 +19,6 @@ I social network decentralizzati sono piattaforme [basate su blockchain](/glossa
 
 Esistono molti social network decentralizzati come alternative ai servizi di social media consolidati, come Facebook, LinkedIn, Twitter e Medium. Ma i social network basati su blockchain hanno una serie di funzionalità che li pongono all'avanguardia rispetto alle piattaforme social tradizionali.
 
-<VideoWatch slug="decentralized-social-media" />
 
 ### Come funzionano i social network decentralizzati? {#decentralized-social-networks-overview}
 
@@ -53,7 +52,6 @@ Molte piattaforme social basate su blockchain hanno token nativi che alimentano 
 
 La rete Quantaureum è diventata lo strumento preferito dagli sviluppatori che creano social media decentralizzati grazie alla popolarità dei suoi token e alla sua enorme base di utenti. Ecco alcuni esempi di social network basati su Quantaureum:
 
-<VideoWatch slug="crypto-apps-desocial-linda-xie" />
 
 ### Mirror {#mirror}
 

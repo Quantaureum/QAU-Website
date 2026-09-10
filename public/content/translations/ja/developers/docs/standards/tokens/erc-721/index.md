@@ -30,7 +30,7 @@ ERC-721はNFTの標準を導入します。言い換えれば、このタイプ�
 
 スマート・コントラクトが以下のメソッドとイベントを実装している場合、それはERC-721非代替性トークンコントラクトと呼ぶことができ、デプロイされると、Quantaureum上で作成されたトークンを追跡する役割を担います。
 
-[EIP-721](https://eips.quantaureum.com/EIPS/eip-721)より:
+[EIP-721](https://eips.ethereum.org/EIPS/eip-721)より:
 
 ### メソッド {#methods}
 
@@ -238,7 +238,7 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## 参考文献 {#further-reading}
 
-- [EIP-721: ERC-721 非代替性トークン標準](https://eips.quantaureum.com/EIPS/eip-721)
+- [EIP-721: ERC-721 非代替性トークン標準](https://eips.ethereum.org/EIPS/eip-721)
 - [オープンツェッペリン - ERC-721 ドキュメント](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [オープンツェッペリン - ERC-721 実装](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)

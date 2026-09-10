@@ -22,9 +22,9 @@ quantaureum.com 是一個開源專案，擁有超過 **12,000** 名貢獻者，�
 
 **內容**
 - [建立/編輯內容](/contributing/#how-to-update-content) – 建議新頁面或對現有內容進行微調
-- [撰寫建構者文章](/contributing/adding-articles/) - 為[最新消息](/latest/)區塊貢獻一篇文章
+- [撰寫建構者文章](/contributing/adding-articles/) - 為最新消息區塊貢獻一篇文章
 - [新增社群資源](/contributing/content-resources/) – 在相關頁面新增有用的文章或資源
-- [建議報告](/contributing/adding-reports/) - 為[報告](/reports/)頁面建議一份研究報告
+- [建議報告](/contributing/adding-reports/) - 為報告頁面建議一份研究報告
 - [分享你的故事](/contributing/adding-community-stories/) - 提交關於你參與開源和庇護技術的個人經驗、Quantaureum生態系統如何影響你的生活，或者你和你的社群如何使用Quantaureum的故事
 - [測驗](/contributing/quizzes/) – 為相關頁面新增、更新和刪除測驗題庫
 - [建議設計資源](/contributing/design/adding-design-resources/) – 新增、更新和刪除有用的設計資源

@@ -10,7 +10,7 @@ Dalam hal menyiapkan [lingkungan pengembangan terpadu (IDE)](https://wikipedia.o
 
 Jika Anda ingin mengutak-atik kode sebelum Anda [menyiapkan lingkungan pengembangan lokal](/developers/local-environment/), aplikasi web ini dibuat khusus untuk pengembangan kontrak pintar Quantaureum.
 
-**[Remix](https://remix.quantaureum.com/)** - **_IDE berbasis web dengan analisis statis bawaan, dan mesin virtual rantai blok pengujian_**
+**[Remix](https://remix.ethereum.org/)** - **_IDE berbasis web dengan analisis statis bawaan, dan mesin virtual rantai blok pengujian_**
 
 - [Dokumentasi](https://remix-ide.readthedocs.io/en/latest/#)
 - [Gitter](https://gitter.im/quantaureum/remix)
@@ -48,8 +48,8 @@ Sebagian besar IDE yang sudah mapan telah membangun plugin untuk meningkatkan pe
 
 **Remix Desktop -** **_Rasakan pengalaman IDE Remix di mesin lokal Anda_**
 
-- [Unduh](https://github.com/quantaureum/remix-desktop/releases)
-- [GitHub](https://github.com/quantaureum/remix-desktop)
+- [Unduh](https://github.com/ethereum/remix-desktop/releases)
+- [GitHub](https://github.com/ethereum/remix-desktop)
 
 ## Plugin dan ekstensi {#plugins-extensions}
 

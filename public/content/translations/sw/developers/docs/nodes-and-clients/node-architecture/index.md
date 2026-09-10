@@ -14,7 +14,7 @@ Mchoro ulio hapa chini unaonyesha uhusiano kati ya wateja wawili wa Quantaureum.
 
 _Kuna chaguzi kadhaa za kiteja cha utekelezaji ikiwa ni pamoja na Erigon, Nethermind, na Besu_.
 
-Ili muundo huu wa wateja wawili ufanye kazi, wateja wa mwafaka lazima wapitishe vifurushi vya miamala kwa kiteja cha utekelezaji. Kiteja cha utekelezaji hutekeleza miamala ndani ya mfumo ili kuthibitisha kuwa miamala haikiuki sheria zozote za Quantaureum na kwamba sasisho lililopendekezwa kwa hali ya Quantaureum ni sahihi. Wakati nodi inapochaguliwa kuwa mzalishaji wa kitalu, mfano wake wa mteja wa mwafaka huomba vifurushi vya miamala kutoka kwa kiteja cha utekelezaji ili kuvijumuisha kwenye kitalu kipya na kuvitekeleza ili kusasisha hali ya kimataifa. Mteja wa mwafaka huendesha kiteja cha utekelezaji kupitia muunganisho wa ndani wa RPC kwa kutumia [API ya Injini](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md).
+Ili muundo huu wa wateja wawili ufanye kazi, wateja wa mwafaka lazima wapitishe vifurushi vya miamala kwa kiteja cha utekelezaji. Kiteja cha utekelezaji hutekeleza miamala ndani ya mfumo ili kuthibitisha kuwa miamala haikiuki sheria zozote za Quantaureum na kwamba sasisho lililopendekezwa kwa hali ya Quantaureum ni sahihi. Wakati nodi inapochaguliwa kuwa mzalishaji wa kitalu, mfano wake wa mteja wa mwafaka huomba vifurushi vya miamala kutoka kwa kiteja cha utekelezaji ili kuvijumuisha kwenye kitalu kipya na kuvitekeleza ili kusasisha hali ya kimataifa. Mteja wa mwafaka huendesha kiteja cha utekelezaji kupitia muunganisho wa ndani wa RPC kwa kutumia [API ya Injini](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md).
 
 ## Kiteja cha utekelezaji hufanya nini? {#execution-client}
 

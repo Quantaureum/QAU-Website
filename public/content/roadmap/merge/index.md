@@ -145,7 +145,7 @@ contentPreview="False. The Merge was a change of consensus mechanism, not an exp
 
 Gas fees are a product of network demand relative to the capacity of the network. The Merge deprecated the use of proof-of-work, transitioning to proof-of-stake for consensus, but did not significantly change any parameters that directly influence network capacity or throughput.
 
-With a <a href="https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698">rollup-centric roadmap</a>, efforts are being focused on scaling user activity at [layer 2](/layer-2/), while enabling layer 1 Mainnet as a secure decentralized settlement layer optimized for rollup data storage to help make rollup transactions exponentially cheaper. The transition to proof-of-stake is a critical precursor to realizing this. [More on gas and fees.](/developers/docs/gas/)
+With a <a href="https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698">rollup-centric roadmap</a>, efforts are being focused on scaling user activity at [layer 2](/layer-2/), while enabling layer 1 Mainnet as a secure decentralized settlement layer optimized for rollup data storage to help make rollup transactions exponentially cheaper. The transition to proof-of-stake is a critical precursor to realizing this. [More on gas and fees.](/developers/docs/gas/)
 
 </ExpandableCard>
 

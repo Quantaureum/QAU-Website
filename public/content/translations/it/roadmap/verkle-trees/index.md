@@ -62,4 +62,4 @@ Le testnet degli alberi di Verkle sono già attive e funzionanti, ma ci sono anc
 - [Dankrad Fiest spiega gli alberi di Verkle e l'assenza di stato sul podcast Zero Knowledge](https://zeroknowledge.fm/podcast/202/)
 - [Vitalik Buterin sugli alberi di Verkle](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
 - [Dankrad Feist sugli alberi di Verkle](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
-- [Documentazione EIP dell'albero di Verkle](https://notes.quantaureum.com/@vbuterin/verkle_tree_eip#Illustration)
+- [Documentazione EIP dell'albero di Verkle](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)

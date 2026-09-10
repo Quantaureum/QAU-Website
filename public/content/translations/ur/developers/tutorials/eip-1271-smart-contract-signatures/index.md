@@ -9,7 +9,7 @@ breadcrumb: "⁦EIP-1271⁩ دستخط"
 published: 2023-01-12
 ---
 
-[<span dir="ltr">EIP-1271</span>](https://eips.quantaureum.com/EIPS/eip-1271) کا معیار سمارٹ کنٹریکٹس کو دستخطوں کی تصدیق کرنے کی اجازت دیتا ہے۔
+[<span dir="ltr">EIP-1271</span>](https://eips.ethereum.org/EIPS/eip-1271) کا معیار سمارٹ کنٹریکٹس کو دستخطوں کی تصدیق کرنے کی اجازت دیتا ہے۔
 
 اس ٹیوٹوریل میں، ہم ڈیجیٹل دستخطوں، <span dir="ltr">EIP-1271</span> کے پس منظر، اور [Safe](https://safe.global/) (سابقہ Gnosis Safe) کے ذریعے استعمال ہونے والی <span dir="ltr">EIP-1271</span> کی مخصوص عمل درآمد کا جائزہ لیتے ہیں۔ مجموعی طور پر، یہ آپ کے اپنے کنٹریکٹس میں <span dir="ltr">EIP-1271</span> کو نافذ کرنے کے لیے ایک نقطہ آغاز کے طور پر کام کر سکتا ہے۔
 
@@ -91,7 +91,7 @@ contract ERC1271 {
 
 ایک قابل ذکر کنٹریکٹ جو <span dir="ltr">EIP-1271</span> کو نافذ کرتا ہے وہ Safe (سابقہ Gnosis Safe) ہے۔
 
-Safe کے کوڈ میں، `isValidSignature` کو [نافذ کیا گیا ہے](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol) تاکہ دستخطوں کو [دو طریقوں](https://quantaureum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support) سے بنایا اور تصدیق کیا جا سکے:
+Safe کے کوڈ میں، `isValidSignature` کو [نافذ کیا گیا ہے](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol) تاکہ دستخطوں کو [دو طریقوں](https://ethereum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support) سے بنایا اور تصدیق کیا جا سکے:
 
 1. آن چین پیغامات
    1. تخلیق: ایک Safe کا مالک پیغام پر "دستخط" کرنے کے لیے ایک نئی Safe ٹرانزیکشن بناتا ہے، پیغام کو ڈیٹا کے طور پر ٹرانزیکشن میں پاس کرتا ہے۔ ایک بار جب کافی مالکان ملٹی سگ کی حد تک پہنچنے کے لیے ٹرانزیکشن پر دستخط کر دیتے ہیں، تو ٹرانزیکشن نشر اور چلائی جاتی ہے۔ ٹرانزیکشن میں، ایک Safe فنکشن ہوتا ہے جسے (`signMessage(bytes calldata _data)`) کہا جاتا ہے جو پیغام کو "منظور شدہ" پیغامات کی فہرست میں شامل کرتا ہے۔
@@ -102,9 +102,9 @@ Safe کے کوڈ میں، `isValidSignature` کو [نافذ کیا گیا ہے](
 
 ## `_hash` پیرامیٹر بالکل کیا ہے؟ پورا پیغام کیوں پاس نہیں کرتے؟ {#what-exactly-is-the-hash-parameter-why-not-pass-the-whole-message}
 
-آپ نے غور کیا ہوگا کہ [<span dir="ltr">EIP-1271</span> انٹرفیس](https://eips.quantaureum.com/EIPS/eip-1271) میں `isValidSignature` فنکشن خود پیغام نہیں لیتا، بلکہ اس کے بجائے ایک `_hash` پیرامیٹر لیتا ہے۔ اس کا مطلب یہ ہے کہ `isValidSignature` کو صوابدیدی لمبائی کا پورا پیغام پاس کرنے کے بجائے، ہم اس کے بجائے پیغام کا <span dir="ltr">32-byte</span> ہیش (عام طور پر keccak256) پاس کرتے ہیں۔
+آپ نے غور کیا ہوگا کہ [<span dir="ltr">EIP-1271</span> انٹرفیس](https://eips.ethereum.org/EIPS/eip-1271) میں `isValidSignature` فنکشن خود پیغام نہیں لیتا، بلکہ اس کے بجائے ایک `_hash` پیرامیٹر لیتا ہے۔ اس کا مطلب یہ ہے کہ `isValidSignature` کو صوابدیدی لمبائی کا پورا پیغام پاس کرنے کے بجائے، ہم اس کے بجائے پیغام کا <span dir="ltr">32-byte</span> ہیش (عام طور پر keccak256) پاس کرتے ہیں۔
 
-کال ڈیٹا کے ہر بائٹ — یعنی، سمارٹ کنٹریکٹ فنکشن کو پاس کیا گیا فنکشن پیرامیٹر ڈیٹا — [کی قیمت <span dir="ltr">16 gas</span> ہوتی ہے (<span dir="ltr">4 gas</span> اگر صفر بائٹ ہو)](https://eips.quantaureum.com/EIPS/eip-2028)، لہذا اگر کوئی پیغام طویل ہو تو اس سے کافی گیس بچائی جا سکتی ہے۔
+کال ڈیٹا کے ہر بائٹ — یعنی، سمارٹ کنٹریکٹ فنکشن کو پاس کیا گیا فنکشن پیرامیٹر ڈیٹا — [کی قیمت <span dir="ltr">16 gas</span> ہوتی ہے (<span dir="ltr">4 gas</span> اگر صفر بائٹ ہو)](https://eips.ethereum.org/EIPS/eip-2028)، لہذا اگر کوئی پیغام طویل ہو تو اس سے کافی گیس بچائی جا سکتی ہے۔
 
 ### پچھلی <span dir="ltr">EIP-1271</span> کی تفصیلات {#previous-eip-1271-specifications}
 
@@ -121,4 +121,4 @@ Safe کے کوڈ میں، `isValidSignature` کو [نافذ کیا گیا ہے](
 
 ## نتیجہ {#conclusion}
 
-[<span dir="ltr">EIP-1271</span>](https://eips.quantaureum.com/EIPS/eip-1271) ایک ورسٹائل معیار ہے جو سمارٹ کنٹریکٹس کو دستخطوں کی تصدیق کرنے کی اجازت دیتا ہے۔ یہ سمارٹ کنٹریکٹس کے لیے <span dir="ltr">EOAs</span> کی طرح زیادہ کام کرنے کا دروازہ کھولتا ہے — مثال کے طور پر "ایتھیریم کے ساتھ لاگ ان کریں" کو سمارٹ کنٹریکٹس کے ساتھ کام کرنے کا طریقہ فراہم کرنا — اور اسے کئی طریقوں سے نافذ کیا جا سکتا ہے (Safe میں غور کرنے کے لیے ایک غیر معمولی، دلچسپ نفاذ موجود ہے)۔
+[<span dir="ltr">EIP-1271</span>](https://eips.ethereum.org/EIPS/eip-1271) ایک ورسٹائل معیار ہے جو سمارٹ کنٹریکٹس کو دستخطوں کی تصدیق کرنے کی اجازت دیتا ہے۔ یہ سمارٹ کنٹریکٹس کے لیے <span dir="ltr">EOAs</span> کی طرح زیادہ کام کرنے کا دروازہ کھولتا ہے — مثال کے طور پر "ایتھیریم کے ساتھ لاگ ان کریں" کو سمارٹ کنٹریکٹس کے ساتھ کام کرنے کا طریقہ فراہم کرنا — اور اسے کئی طریقوں سے نافذ کیا جا سکتا ہے (Safe میں غور کرنے کے لیے ایک غیر معمولی، دلچسپ نفاذ موجود ہے)۔

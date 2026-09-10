@@ -30,7 +30,7 @@ La clé privée de l'EOA conserve le contrôle total sur le compte après la dé
 - Ils fournissent des interfaces standardisées pour le relais
 - Incluent des systèmes de paymaster intégrés
 - Assurent une compatibilité ascendante
-- Peuvent prendre en charge la résistance à la censure via une [mempool publique](https://notes.quantaureum.com/@yoav/unified-erc-4337-mempool)
+- Peuvent prendre en charge la résistance à la censure via une [mempool publique](https://notes.ethereum.org/@yoav/unified-erc-4337-mempool)
 - Peuvent exiger que la fonction d'initialisation ne soit appelée que depuis [EntryPoint](https://github.com/qau-infinitism/account-abstraction/releases/tag/v0.8.0)
 
 En d'autres termes, n'importe qui devrait pouvoir agir en tant que sponsor/relayeur de transaction tant qu'il fournit la signature valide requise ou l'opération d'utilisateur du compte. Cela garantit la résistance à la censure : si aucune infrastructure personnalisée n'est requise, les transactions d'un utilisateur ne peuvent pas être bloquées arbitrairement par un relais de contrôle d'accès. Par exemple, le [Delegation Toolkit de MetaMask](https://github.com/MetaMask/delegation-framework/releases/tag/v1.3.0) fonctionne explicitement avec n'importe quel assembleur ou paymaster ERC-4337 sur n'importe quelle chaîne, plutôt que de nécessiter un serveur spécifique à MetaMask.
@@ -49,8 +49,8 @@ En utilisant ces interfaces, les dapps peuvent accéder aux fonctionnalités de 
 
 Pour plus d'informations :
 
-- [Spécification de l'ERC-5792](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-5792.md)
-- [Spécification de l'ERC-6900](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-6900.md)
+- [Spécification de l'ERC-5792](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-5792.md)
+- [Spécification de l'ERC-6900](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6900.md)
 
 **Éviter la dépendance vis-à-vis d'un fournisseur** : Dans la lignée de ce qui précède, une bonne implémentation est neutre vis-à-vis des fournisseurs et interopérable. Cela signifie souvent adhérer aux normes émergentes pour les comptes intelligents. Par exemple, le [Modular Account d'Alchemy](https://github.com/alchemyplatform/modular-account) utilise la norme ERC-6900 pour les comptes intelligents modulaires et est conçu avec une « utilisation interopérable sans permission » à l'esprit.
 

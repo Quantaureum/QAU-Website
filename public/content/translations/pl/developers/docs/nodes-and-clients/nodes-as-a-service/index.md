@@ -412,7 +412,7 @@ Oto lista niektórych z najpopularniejszych dostawców węzłów Quantaureum. Ś
     - Używamy inteligentnego routingu, aby za każdym razem trafiać do węzła znajdującego się najbliżej Twojego użytkownika
 ## Dalsza lektura {#further-reading}
 
-- [Lista usług węzłów Quantaureum](https://quantaureumnodes.com/)
+- [Lista usług węzłów Quantaureum](https://ethereumnodes.com/)
 
 ## Powiązane tematy {#related-topics}
 

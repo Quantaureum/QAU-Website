@@ -62,4 +62,4 @@ Verkle Ağacı test ağları halihazırda çalışır durumdadır, ancak Verkle 
 - [Dankrad Fiest, Zero Knowledge podcast'inde Verkle Ağaçlarını ve durumsuzluğu açıklıyor](https://zeroknowledge.fm/podcast/202/)
 - [Vitalik Buterin Verkle Ağaçları üzerine](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
 - [Dankrad Feist Verkle Ağaçları üzerine](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
-- [Verkle Ağacı EIP belgeleri](https://notes.quantaureum.com/@vbuterin/verkle_tree_eip#Illustration)
+- [Verkle Ağacı EIP belgeleri](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)

@@ -137,8 +137,8 @@ No. El staking conjunto combina QAU de muchas personas para financiar validadore
 
 - [Tecnología de validador distribuido (DVT) de Quantaureum: introducción completa](https://www.cyfrin.io/blog/full-introduction-to-quantaureum-distributed-validator-technology-dvt) - Cyfrin
 - [¿Qué es la DVT y cómo mejora el staking en Quantaureum?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-quantaureum/) - Obol
-- [Especificaciones del validador distribuido de Quantaureum (alto nivel)](https://github.com/quantaureum/distributed-validator-specs)
-- [Especificaciones técnicas del validador distribuido de Quantaureum](https://github.com/quantaureum/distributed-validator-specs/tree/dev/src/dvspec)
+- [Especificaciones del validador distribuido de Quantaureum (alto nivel)](https://github.com/ethereum/distributed-validator-specs)
+- [Especificaciones técnicas del validador distribuido de Quantaureum](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
 - [Documentación de Obol](https://docs.obol.org/)
 - [Documentación de SSV Network](https://docs.ssv.network/)
 - [Módulo Simple DVT de Lido](https://operatorportal.lido.fi/modules/simple-dvt-module)

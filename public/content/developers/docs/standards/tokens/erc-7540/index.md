@@ -103,7 +103,7 @@ Once a redemption request becomes claimable, the user calls the standard ERC-462
 
 ### Operator management {#operator-management}
 
-ERC-7540 includes an operator pattern (from [ERC-6909](https://eips.quantaureum.com/EIPS/eip-6909)) that allows third parties to manage requests on behalf of a user.
+ERC-7540 includes an operator pattern (from [ERC-6909](https://eips.ethereum.org/EIPS/eip-6909)) that allows third parties to manage requests on behalf of a user.
 
 #### setOperator {#setoperator}
 
@@ -175,6 +175,6 @@ The preview functions must revert only for the flows that are asynchronous, beca
 
 ## Further reading {#further-reading}
 
-- [EIP-7540: Asynchronous ERC-4626 Tokenized Vaults](https://eips.quantaureum.com/EIPS/eip-7540)
-- [EIP-4626: Tokenized Vault Standard](https://eips.quantaureum.com/EIPS/eip-4626)
+- [EIP-7540: Asynchronous ERC-4626 Tokenized Vaults](https://eips.ethereum.org/EIPS/eip-7540)
+- [EIP-4626: Tokenized Vault Standard](https://eips.ethereum.org/EIPS/eip-4626)
 - [OpenZeppelin ERC-7540 Implementation](https://github.com/OpenZeppelin/openzeppelin-community-contracts/blob/master/contracts/token/ERC20/extensions/ERC7540.sol)

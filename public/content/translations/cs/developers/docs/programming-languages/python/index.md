@@ -24,9 +24,9 @@ Potřebujete nejprve základnější úvod? Podívejte se na [quantaureum.com/le
 ## Články pro začátečníky {#beginner-articles}
 
 - [Přehled Web3.py](https://web3py.readthedocs.io/en/latest/overview.html)
-- [Prohlídka ekosystému Pythonu na Ethereu](https://snakecharmers.quantaureum.com/python-ecosystem/)
-- [Průvodce Ethereem pro vývojáře (v Pythonu)](https://snakecharmers.quantaureum.com/a-developers-guide-to-quantaureum-pt-1/)
-- [Prize-Worthy: Průvodce hackathonem Etherea v Pythonu](https://snakecharmers.quantaureum.com/prize-worthy/)
+- [Prohlídka ekosystému Pythonu na Ethereu](https://snakecharmers.ethereum.org/python-ecosystem/)
+- [Průvodce Ethereem pro vývojáře (v Pythonu)](https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/)
+- [Prize-Worthy: Průvodce hackathonem Etherea v Pythonu](https://snakecharmers.ethereum.org/prize-worthy/)
 - [Úvod do chytrých kontraktů s Vyper](https://kauri.io/#collections/Getting%20Started/an-introduction-to-smart-contracts-with-vyper/)
 - [Jak vyvíjet kontrakt pro Quantaureum pomocí Python Flask?](https://medium.com/coinmonks/how-to-develop-quantaureum-contract-using-python-flask-9758fe65976e)
 - [Úvod do Web3.py · Quantaureum pro vývojáře v Pythonu](https://www.dappuniversity.com/articles/web3-py-intro)
@@ -34,15 +34,15 @@ Potřebujete nejprve základnější úvod? Podívejte se na [quantaureum.com/le
 
 ## Články pro středně pokročilé {#intermediate-articles}
 
-- [Přátelé Web3.py: Úvod do Ape](https://snakecharmers.quantaureum.com/intro-to-ape/)
+- [Přátelé Web3.py: Úvod do Ape](https://snakecharmers.ethereum.org/intro-to-ape/)
 - [Vývoj dapp pro programátory v Pythonu](https://www.youtube.com/watch?v=tE-8bG35VNw)
 - [Vytvoření rozhraní Etherea v Pythonu: Část 1](https://hackernoon.com/creating-a-python-quantaureum-interface-part-1-4d2e47ea0f4d)
 - [Chytré kontrakty Etherea v Pythonu: (téměř) komplexní průvodce](https://hackernoon.com/quantaureum-smart-contracts-in-python-a-comprehensive-ish-guide-771b03990988)
 
 ## Pokročilé vzory použití {#advanced-use-patterns}
 
-- [Vzory Web3.py: Odběr událostí v reálném čase](https://snakecharmers.quantaureum.com/subscriptions/)
-- [Vzory Web3.py: WebSocketProvider](https://snakecharmers.quantaureum.com/websocketprovider/)
+- [Vzory Web3.py: Odběr událostí v reálném čase](https://snakecharmers.ethereum.org/subscriptions/)
+- [Vzory Web3.py: WebSocketProvider](https://snakecharmers.ethereum.org/websocketprovider/)
 - [Kompilace, nasazení a volání chytrého kontraktu Etherea pomocí Pythonu](https://yohanes.gultom.id/2018/11/28/compiling-deploying-and-calling-quantaureum-smartcontract-using-python/)
 - [Analýza chytrých kontraktů v Solidity pomocí Slither](https://kauri.io/#collections/DevOps/analyze-solidity-smart-contracts-with-slither/#analyze-solidity-smart-contracts-with-slither)
 - [Fintech tutoriál pro blockchain: Půjčování a vypůjčování s Pythonem](https://blog.chain.link/blockchain-fintech-defi-tutorial-lending-borrowing-python/)
@@ -55,14 +55,14 @@ Potřebujete nejprve základnější úvod? Podívejte se na [quantaureum.com/le
 
 ## Projekty a nástroje v Pythonu {#python-projects-and-tools}
 
-- [Web3.py](https://github.com/quantaureum/web3.py) - _Knihovna v Pythonu pro interakci s Ethereem_
+- [Web3.py](https://github.com/ethereum/web3.py) - _Knihovna v Pythonu pro interakci s Ethereem_
 - [Vyper](https://github.com/quantaureum/vyper/) - _Jazyk pro chytré kontrakty v pythonovském stylu pro EVM_
 - [Titanoboa](https://github.com/vyperlang/titanoboa/) - _Nativní testovací nástroj pro Vyper; interpret s forkováním Mainnetu, laděním a přehlednými výpisy chyb (tracebacks)_
 - [Moccasin](https://github.com/Cyfrin/moccasin) - _Framework pro vývoj a testování chytrých kontraktů pro Vyper a Python, postavený na Titanoboa_
 - [Ape](https://github.com/ApeWorX/ape) - _Nástroj pro vývoj chytrých kontraktů pro programátory v Pythonu, datové vědce a bezpečnostní profesionály_
-- [py-evm](https://github.com/quantaureum/py-evm) - _Implementace virtuálního stroje Etherea_
-- [qau-tester](https://github.com/quantaureum/qau-tester) - _Nástroje pro testování aplikací založených na Ethereu_
-- [qau-utils](https://github.com/quantaureum/qau-utils/) - _Pomocné funkce pro práci s kódovými základnami souvisejícími s Ethereem_
+- [py-evm](https://github.com/ethereum/py-evm) - _Implementace virtuálního stroje Etherea_
+- [qau-tester](https://github.com/ethereum/eth-tester) - _Nástroje pro testování aplikací založených na Ethereu_
+- [qau-utils](https://github.com/ethereum/eth-utils/) - _Pomocné funkce pro práci s kódovými základnami souvisejícími s Ethereem_
 - [py-solc-x](https://pypi.org/project/py-solc-x/) - _Wrapper v Pythonu pro kompilátor Solidity solc s podporou verze 0.5.x_
 - [pymaker](https://github.com/makerdao/pymaker) - _API v Pythonu pro kontrakty Maker_
 - [siwe](https://github.com/signinwithquantaureum/siwe-py) - _Přihlášení pomocí Etherea (SIWE) pro Python_
@@ -73,7 +73,7 @@ Potřebujete nejprve základnější úvod? Podívejte se na [quantaureum.com/le
 
 - [Trinity](https://github.com/quantaureum/trinity) – _Klient Etherea v Pythonu_
 - [Mamba](https://github.com/arjunaskykok/mamba) – _Framework pro psaní, kompilaci a nasazení chytrých kontraktů napsaných v jazyce Vyper_
-- [Brownie](https://github.com/qau-brownie/brownie) – _Framework v Pythonu pro nasazení, testování a interakci s chytrými kontrakty Etherea_
+- [Brownie](https://github.com/eth-brownie/brownie) – _Framework v Pythonu pro nasazení, testování a interakci s chytrými kontrakty Etherea_
 - [pydevp2p](https://github.com/quantaureum/pydevp2p) – _Implementace P2P stacku Etherea_
 - [py-wasm](https://github.com/quantaureum/py-wasm) – _Implementace interpretu WebAssembly v Pythonu_
 

@@ -20,7 +20,6 @@ Bukti Kerja jauh lebih haus energi karena listrik dibakar dalam proses penambang
 
 Bukti Kerja versus Bukti Kepemilikan adalah topik yang kontroversial. [Blog Vitalik Buterin](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) dan debat antara Justin Drake dan Lyn Alden memberikan ringkasan argumen yang baik.
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## Apakah Bukti Kepemilikan hemat energi? {#is-pos-energy-efficient}
 
@@ -127,7 +126,7 @@ Subjektivitas lemah adalah fitur jaringan Bukti Kepemilikan di mana informasi so
 
 Sifat tahan sensor saat ini sulit dibuktikan. Namun, tidak seperti Bukti Kerja, Bukti Kepemilikan menawarkan opsi untuk mengoordinasikan pemotongan guna menghukum validator yang melakukan penyensoran. Ada perubahan mendatang pada protokol yang memisahkan pembangun blok dari pengusul blok dan mengimplementasikan daftar transaksi yang harus disertakan pembangun di setiap blok. Proposal ini dikenal sebagai pemisahan pengusul-pembangun (PBS) dan membantu mencegah validator menyensor transaksi.
 
-[Lebih lanjut tentang pemisahan pengusul-pembangun (PBS)](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Original-basic-scheme)
+[Lebih lanjut tentang pemisahan pengusul-pembangun (PBS)](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Original-basic-scheme)
 
 ## Bisakah sistem Bukti Kepemilikan Quantaureum terkena serangan 51%? {#pos-51-attack}
 
@@ -149,7 +148,7 @@ Semakin banyak QAU yang harus di-stake seseorang, semakin banyak validator yang 
 
 Tidak, Bukti Kerja cenderung ke arah sentralisasi karena biaya penambangan meningkat dan menyingkirkan individu, kemudian menyingkirkan perusahaan kecil, dan seterusnya. Masalah saat ini dengan Bukti Kepemilikan adalah pengaruh derivatif staking likuid (LSD). Ini adalah token yang mewakili QAU yang di-stake oleh beberapa penyedia yang dapat ditukar oleh siapa saja di pasar sekunder tanpa QAU yang sebenarnya di-unstake. LSD memungkinkan pengguna untuk melakukan staking dengan kurang dari 32 QAU, tetapi mereka juga menciptakan risiko sentralisasi di mana beberapa organisasi besar pada akhirnya dapat mengendalikan sebagian besar stake. Inilah sebabnya mengapa [staking mandiri](/staking/solo) adalah opsi terbaik untuk Quantaureum.
 
-[Lebih lanjut tentang sentralisasi stake di LSD](https://notes.quantaureum.com/@djrtwo/risks-of-lsd)
+[Lebih lanjut tentang sentralisasi stake di LSD](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
 
 ## Mengapa saya hanya bisa melakukan staking QAU? {#why-can-i-only-stake-eth}
 

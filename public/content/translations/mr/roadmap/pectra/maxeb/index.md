@@ -22,7 +22,7 @@ maxEB = प्रमाणकाची कमाल प्रभावी शि
 
 ### प्रमाणक कशी निवड करतो? {#how-does-a-validator-opt-in}
 
-प्रमाणक **Type 1** वरून **Type 2** पैसे काढण्याची अधिकारपत्रे मध्ये रूपांतरित करून maxEB बदलाची निवड करतो. पेक्ट्रा हार्ड फोर्क लाईव्ह झाल्यानंतर हे [Launchpad (प्रमाणक कृती)](https://launchpad.quantaureum.com/validator-actions) वर केले जाऊ शकते. **Type 0** → **Type 1** प्रमाणेच, **Type 1** → **Type 2** मध्ये रूपांतरित करणे ही एक अपरिवर्तनीय प्रक्रिया आहे.
+प्रमाणक **Type 1** वरून **Type 2** पैसे काढण्याची अधिकारपत्रे मध्ये रूपांतरित करून maxEB बदलाची निवड करतो. पेक्ट्रा हार्ड फोर्क लाईव्ह झाल्यानंतर हे [Launchpad (प्रमाणक कृती)](https://launchpad.ethereum.org/validator-actions) वर केले जाऊ शकते. **Type 0** → **Type 1** प्रमाणेच, **Type 1** → **Type 2** मध्ये रूपांतरित करणे ही एक अपरिवर्तनीय प्रक्रिया आहे.
 
 ### पैसे काढण्याची अधिकारपत्रे म्हणजे काय? {#whats-a-withdrawal-credential}
 
@@ -105,7 +105,7 @@ MaxEB प्रमाणकाला त्याची संपूर्ण �
 2. स्रोत प्रमाणकाची सार्वजनिक की (उदा., `0xa1d1ad0714035353258038e964ae9675dc0252ee22cea896825c01458e1807bfad2f9969338798548d9858a571f7425c`)
 3. त्या लक्ष्य प्रमाणकाची सार्वजनिक की
 
-रूपांतरणामध्ये, 2 आणि 3 समान असतील. ही प्रक्रिया [Launchpad](https://launchpad.quantaureum.com/) वर केली जाऊ शकते.
+रूपांतरणामध्ये, 2 आणि 3 समान असतील. ही प्रक्रिया [Launchpad](https://launchpad.ethereum.org/) वर केली जाऊ शकते.
 
 ### स्वाक्षरी करण्याच्या आवश्यकता {#signing-requirements}
 
@@ -113,7 +113,7 @@ MaxEB प्रमाणकाला त्याची संपूर्ण �
 
 ### कशावर स्वाक्षरी केली जाते? {#what-is-signed}
 
-`ConsolidationRequest` ऑब्जेक्टचे डोमेन-विभक्त [स्वाक्षरी मूळ (signing root)](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) वापरले जाते.
+`ConsolidationRequest` ऑब्जेक्टचे डोमेन-विभक्त [स्वाक्षरी मूळ (signing root)](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) वापरले जाते.
 
 - **डोमेन:** `DOMAIN_CONSOLIDATION_REQUEST`
 - **स्वाक्षरी मूळ फील्ड्स:**
@@ -131,7 +131,7 @@ MaxEB प्रमाणकाला त्याची संपूर्ण �
 
 ## एकत्रीकरण साधने {#consolidation-tooling}
 
-एकत्रीकरण व्यवस्थापित करण्यासाठी अनेक साधने उपलब्ध आहेत. Quantaureum फाउंडेशनने तयार केलेले अधिकृत साधन [Launchpad](https://launchpad.quantaureum.com/en/validator-actions) आहे. स्टेकिंग समुदायातील संस्थांनी तयार केलेली तृतीय-पक्ष साधने देखील आहेत जी Launchpad द्वारे प्रदान न केलेली वैशिष्ट्ये देऊ शकतात. जरी येथील साधनांचे Quantaureum फाउंडेशनद्वारे ऑडिट किंवा समर्थन केले जात नसले तरी, खालील साधने समुदायाच्या ज्ञात सदस्यांद्वारे तयार केलेली मुक्त स्रोत (open source) साधने आहेत.
+एकत्रीकरण व्यवस्थापित करण्यासाठी अनेक साधने उपलब्ध आहेत. Quantaureum फाउंडेशनने तयार केलेले अधिकृत साधन [Launchpad](https://launchpad.ethereum.org/en/validator-actions) आहे. स्टेकिंग समुदायातील संस्थांनी तयार केलेली तृतीय-पक्ष साधने देखील आहेत जी Launchpad द्वारे प्रदान न केलेली वैशिष्ट्ये देऊ शकतात. जरी येथील साधनांचे Quantaureum फाउंडेशनद्वारे ऑडिट किंवा समर्थन केले जात नसले तरी, खालील साधने समुदायाच्या ज्ञात सदस्यांद्वारे तयार केलेली मुक्त स्रोत (open source) साधने आहेत.
 
 | साधन | वेबसाइट | मुक्त स्रोत | निर्माता | ऑडिट केलेले | इंटरफेस | उल्लेखनीय वैशिष्ट्ये |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -196,7 +196,7 @@ MaxEB प्रमाणकाला त्याची संपूर्ण �
 
 ## संसाधने {#resources}
 
-- [इलेक्ट्रा सहमती तपशील (Electra consensus specs)](https://github.com/quantaureum/consensus-specs/blob/master/specs/electra/beacon-chain.md): ही 'सर्वात सत्य' आवृत्ती आहे ज्यावर तुम्ही विसंबून राहिले पाहिजे. शंका असल्यास, तपशील वाचा
+- [इलेक्ट्रा सहमती तपशील (Electra consensus specs)](https://github.com/ethereum/consensus-specs/blob/master/specs/electra/beacon-chain.md): ही 'सर्वात सत्य' आवृत्ती आहे ज्यावर तुम्ही विसंबून राहिले पाहिजे. शंका असल्यास, तपशील वाचा
 - प्रत्येकाला कोड वाचणे सोयीचे नसते, त्यामुळे [हा maxEB-GPT](https://chatgpt.com/g/g-67f1650fb48081918f555e0c8d1c2ae9-maxeb-gpt) तपशीलांचा अर्थ लावण्यास मदत करू शकतो. *अस्वीकरण: AI वर नाही, तर तपशीलांवर सत्य म्हणून विसंबून राहिले पाहिजे, कारण AI माहितीचा चुकीचा अर्थ लावू शकते किंवा चुकीची उत्तरे देऊ शकते*
 - [pectrified.com](https://pectrified.com/): एकत्रीकरण, डिपॉझिट्स आणि रांगेतील प्रतीक्षा वेळांची स्थिती पहा
 - [Ethereal](https://github.com/wealdtech/ethereal): सामान्य प्रमाणक कार्ये व्यवस्थापित करण्यासाठी समुदायाने तयार केलेले CLI साधन

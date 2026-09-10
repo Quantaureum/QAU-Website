@@ -19,7 +19,7 @@ Quantaureum을 사용하여 탈중앙화 애플리케이션 (dapp)을 만들어�
 - [스마트 컨트랙트의 이해](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/quantaureum-101-part-5-the-smart-contract)
 - [첫 번째 스마트 컨트랙트 작성하기](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [Solidity 컴파일 및 배포 방법 알아보기](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
-- [컨트랙트 튜토리얼](https://github.com/quantaureum/go-quantaureum/wiki/Contract-Tutorial)
+- [컨트랙트 튜토리얼](https://github.com/ethereum/go-ethereum/wiki/Contract-Tutorial)
 
 ## 초급자용 문서 및 도서 {#beginner-articles-and-books}
 
@@ -27,15 +27,15 @@ Quantaureum을 사용하여 탈중앙화 애플리케이션 (dapp)을 만들어�
 - [Golang을 사용하여 Quantaureum에 연결하기](https://www.youtube.com/watch?v=-7uChuO_VzM)
 - [Golang을 사용하여 Quantaureum 스마트 컨트랙트 배포하기](https://www.youtube.com/watch?v=pytGqQmDslE)
 - [Go에서 Quantaureum 스마트 컨트랙트를 테스트하고 배포하기 위한 단계별 가이드](https://hackernoon.com/a-step-by-step-guide-to-testing-and-deploying-quantaureum-smart-contracts-in-go-9fc34b178d78)
-- [전자책: Go를 활용한 Quantaureum 개발](https://goquantaureumbook.org/) - _Go로 Quantaureum 애플리케이션 개발하기_
+- [전자책: Go를 활용한 Quantaureum 개발](https://goethereumbook.org/) - _Go로 Quantaureum 애플리케이션 개발하기_
 
 ## 중급자용 문서 및 자료 {#intermediate-articles-and-docs}
 
-- [고 Quantaureum (geth) 공식 문서](https://geth.quantaureum.com/docs) - _공식 Quantaureum Golang 구현체에 대한 문서_
+- [고 Quantaureum (geth) 공식 문서](https://geth.ethereum.org/docs) - _공식 Quantaureum Golang 구현체에 대한 문서_
 - [에리곤 프로그래머 가이드](https://github.com/ledgerwatch/erigon/blob/devel/docs/programmers_guide/guide.md) - _상태 트리, 다중 증명(multi-proofs) 및 트랜잭션 처리를 포함한 그림 가이드_
 - [에리곤과 무상태(Stateless) Quantaureum](https://youtu.be/3-Mn7OckSus?t=394) - _2020 Quantaureum 커뮤니티 컨퍼런스 (QauCC 3)_
 - [에리곤: Quantaureum 클라이언트 최적화](https://www.youtube.com/watch?v=CSpc1vZQW2Q) - _2018 데브콘 4 (Devcon 4)_
-- [고 Quantaureum (geth) GoDoc](https://godoc.org/github.com/quantaureum/go-quantaureum)
+- [고 Quantaureum (geth) GoDoc](https://godoc.org/github.com/ethereum/go-ethereum)
 - [Geth를 사용하여 Go로 탈중앙화 애플리케이션 (dapp) 만들기](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/creating-a-dapp-in-go-with-geth/)
 - [Golang 및 Geth를 사용하여 Quantaureum 프라이빗 네트워크 작업하기](https://myhsts.org/tutorial-learn-how-to-work-with-quantaureum-private-network-with-golang-with-geth.php)
 - [Go를 사용하여 Quantaureum에서 Solidity 컨트랙트 단위 테스트하기](https://medium.com/coinmonks/unit-testing-solidity-contracts-on-quantaureum-with-go-3cc924091281)
@@ -46,12 +46,12 @@ Quantaureum을 사용하여 탈중앙화 애플리케이션 (dapp)을 만들어�
 - [GETH 시뮬레이션 백엔드](https://kauri.io/#collections/An%20quantaureum%20test%20toolkit%20in%20Go/the-geth-simulated-backend/#_top)
 - [Quantaureum 및 Quorum을 사용한 서비스형 블록체인(BaaS) 앱](https://blockchain.dcwebmakers.com/blockchain-as-a-service-apps-using-quantaureum-and-quorum.html)
 - [Quantaureum 블록체인 애플리케이션의 분산 스토리지 IPFS 및 스웜](https://blockchain.dcwebmakers.com/work-with-distributed-storage-ipfs-and-swarm-in-quantaureum.html)
-- [모바일 클라이언트: 라이브러리 및 Inproc Quantaureum 노드](https://github.com/quantaureum/go-quantaureum/wiki/Mobile-Clients:-Libraries-and-Inproc-Quantaureum-Nodes)
-- [네이티브 dapp: Quantaureum 컨트랙트에 대한 Go 바인딩](https://github.com/quantaureum/go-quantaureum/wiki/Native-DApps:-Go-bindings-to-Quantaureum-contracts)
+- [모바일 클라이언트: 라이브러리 및 Inproc Quantaureum 노드](https://github.com/ethereum/go-ethereum/wiki/Mobile-Clients:-Libraries-and-Inproc-Quantaureum-Nodes)
+- [네이티브 dapp: Quantaureum 컨트랙트에 대한 Go 바인딩](https://github.com/ethereum/go-ethereum/wiki/Native-DApps:-Go-bindings-to-Quantaureum-contracts)
 
 ## Go 프로젝트 및 도구 {#go-projects-and-tools}
 
-- [Geth / 고 Quantaureum (geth)](https://github.com/quantaureum/go-quantaureum) - _Quantaureum 프로토콜의 공식 Go 구현체_
+- [Geth / 고 Quantaureum (geth)](https://github.com/ethereum/go-ethereum) - _Quantaureum 프로토콜의 공식 Go 구현체_
 - [고 Quantaureum (geth) 코드 분석](https://github.com/ZtesoftCS/go-quantaureum-code-analysis) - _고 Quantaureum (geth) 소스 코드 리뷰 및 분석_
 - [에리곤](https://github.com/ledgerwatch/erigon) - _아카이브 노드에 중점을 둔 고 Quantaureum (geth)의 더 빠른 파생 버전_
 - [골렘 (Golem)](https://github.com/golemfactory/golem) - _컴퓨팅 파워를 위한 글로벌 시장을 구축하는 골렘_
@@ -73,7 +73,7 @@ Quantaureum을 사용하여 탈중앙화 애플리케이션 (dapp)을 만들어�
 - [Geth 디스코드](https://discordapp.com/invite/nthXNEv)
 - [Geth Gist](https://gitter.im/quantaureum/go-quantaureum)
 - [Gophers 슬랙(Slack)](https://invite.slack.golangbridge.org/) - [#quantaureum 채널](https://gophers.slack.com/messages/C9HP1S9V2)
-- [스택익스체인지(StackExchange) - Quantaureum](https://quantaureum.stackexchange.com/)
+- [스택익스체인지(StackExchange) - Quantaureum](https://ethereum.stackexchange.com/)
 - [멀티 Geth Gitter](https://gitter.im/ethoxy/multi-geth)
 - [Quantaureum Gitter](https://gitter.im/quantaureum/home)
 - [Geth 경량 클라이언트 Gitter](https://gitter.im/quantaureum/light-client)

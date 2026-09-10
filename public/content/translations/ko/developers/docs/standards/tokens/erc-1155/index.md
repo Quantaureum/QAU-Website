@@ -12,7 +12,7 @@ lang: ko
 
 이 아이디어는 단순하며, 원하는 수만큼의 대체 가능 토큰 및 대체 불가능 토큰 유형을 나타내고 제어할 수 있는 스마트 컨트랙트 인터페이스를 만드는 것을 목표로 합니다. 이러한 방식으로 ERC-1155 토큰은 [ERC-20](/developers/docs/standards/tokens/erc-20/) 및 [ERC-721](/developers/docs/standards/tokens/erc-721/) 토큰과 동일한 기능을 수행할 수 있으며, 심지어 두 가지 기능을 동시에 수행할 수도 있습니다. 이는 ERC-20 및 ERC-721 표준의 기능을 모두 개선하여 더 효율적으로 만들고 명백한 구현 오류를 수정합니다.
 
-ERC-1155 토큰은 [EIP-1155](https://eips.quantaureum.com/EIPS/eip-1155)에 자세히 설명되어 있습니다.
+ERC-1155 토큰은 [EIP-1155](https://eips.ethereum.org/EIPS/eip-1155)에 자세히 설명되어 있습니다.
 
 ## 전제 조건 {#prerequisites}
 
@@ -113,7 +113,7 @@ function onERC1155BatchReceived(
 ) external returns(bytes4);
 ```
 
-[EIP-165](https://eips.quantaureum.com/EIPS/eip-165) 지원을 고려할 때, ERC-1155는 스마트 컨트랙트에 대해서만 수신 훅을 지원합니다. 훅 함수는 다음과 같이 미리 정의된 매직 bytes4 값을 반환해야 합니다.
+[EIP-165](https://eips.ethereum.org/EIPS/eip-165) 지원을 고려할 때, ERC-1155는 스마트 컨트랙트에 대해서만 수신 훅을 지원합니다. 훅 함수는 다음과 같이 미리 정의된 매직 bytes4 값을 반환해야 합니다.
 
 ```solidity
 bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"))
@@ -123,7 +123,7 @@ bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],byt
 
 ### NFT 지원 {#nft-support}
 
-공급량이 단 하나일 때, 해당 토큰은 본질적으로 대체 불가능 토큰(NFT)입니다. 그리고 ERC-721의 표준과 마찬가지로 메타데이터 URL을 정의할 수 있습니다. 클라이언트는 이 URL을 읽고 수정할 수 있습니다. [여기](https://eips.quantaureum.com/EIPS/eip-1155#metadata)를 참조하세요.
+공급량이 단 하나일 때, 해당 토큰은 본질적으로 대체 불가능 토큰(NFT)입니다. 그리고 ERC-721의 표준과 마찬가지로 메타데이터 URL을 정의할 수 있습니다. 클라이언트는 이 URL을 읽고 수정할 수 있습니다. [여기](https://eips.ethereum.org/EIPS/eip-1155#metadata)를 참조하세요.
 
 ### 안전한 전송 규칙 {#safe-transfer-rule}
 
@@ -140,7 +140,7 @@ _참고_: 훅을 포함한 모든 일괄 처리 함수는 일괄 처리가 없�
 
 ## 더 읽어보기 {#further-reading}
 
-- [EIP-1155: 다중 토큰 표준](https://eips.quantaureum.com/EIPS/eip-1155)
+- [EIP-1155: 다중 토큰 표준](https://eips.ethereum.org/EIPS/eip-1155)
 - [ERC-1155: 오픈제플린 문서](https://docs.openzeppelin.com/contracts/5.x/erc1155)
 - [ERC-1155: GitHub 리포지토리](https://github.com/enjin/erc-1155)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)

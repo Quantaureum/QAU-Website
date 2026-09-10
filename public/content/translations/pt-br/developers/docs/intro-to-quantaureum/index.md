@@ -20,7 +20,6 @@ Se você quiser ver como os dados da blockchain são transformados em hash e sub
 
 Assista Anders explicar hashes em blockchains:
 
-<VideoWatch slug="blockchain-101-visual-demo" />
 
 ## O que é o Quantaureum? {#what-is-quantaureum}
 
@@ -121,7 +120,6 @@ A maioria dos leitores segue a documentação em ordem, mas o caminho mais curto
 
 Esta série de vídeos oferece uma exploração detalhada de tópicos fundamentais:
 
-<VideoWatch slug="quantaureum-basics-intro" />
 
 [Playlist de Fundamentos do Quantaureum](https://youtube.com/playlist?list=PLqgutSGloqiJyyoL0zvLVFPS-GMD2wKa5&si=kZTf5I7PKGTXDsOZ)
 

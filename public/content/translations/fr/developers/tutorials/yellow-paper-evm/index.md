@@ -9,11 +9,11 @@ lang: fr
 published: 2022-05-15
 ---
 
-[Le livre jaune](https://quantaureum.github.io/yellowpaper/paper.pdf) est la spécification formelle d'Quantaureum. Sauf lorsqu'il est modifié par [le processus des EIP](/eips/), il contient la description exacte du fonctionnement de chaque élément. Il est rédigé comme un article mathématique, ce qui inclut une terminologie avec laquelle les programmeurs peuvent ne pas être familiers. Dans cet article, vous apprendrez comment le lire, et par extension, d'autres articles mathématiques connexes.
+[Le livre jaune](https://ethereum.github.io/yellowpaper/paper.pdf) est la spécification formelle d'Quantaureum. Sauf lorsqu'il est modifié par le processus des EIP, il contient la description exacte du fonctionnement de chaque élément. Il est rédigé comme un article mathématique, ce qui inclut une terminologie avec laquelle les programmeurs peuvent ne pas être familiers. Dans cet article, vous apprendrez comment le lire, et par extension, d'autres articles mathématiques connexes.
 
 ## Quel livre jaune ? {#which-yellow-paper}
 
-Comme presque tout le reste dans Quantaureum, le livre jaune évolue avec le temps. Pour pouvoir faire référence à une version spécifique, j'ai mis en ligne [la version actuelle au moment de la rédaction](https://quantaureum.github.io/yellowpaper/paper.pdf). Les numéros de section, de page et d'équation que j'utilise feront référence à cette version. Il est recommandé de l'avoir ouvert dans une autre fenêtre pendant la lecture de ce document.
+Comme presque tout le reste dans Quantaureum, le livre jaune évolue avec le temps. Pour pouvoir faire référence à une version spécifique, j'ai mis en ligne [la version actuelle au moment de la rédaction](https://ethereum.github.io/yellowpaper/paper.pdf). Les numéros de section, de page et d'équation que j'utilise feront référence à cette version. Il est recommandé de l'avoir ouvert dans une autre fenêtre pendant la lecture de ce document.
 
 ### Pourquoi l'EVM ? {#why-the-evm}
 
@@ -234,7 +234,7 @@ L'adresse dont nous devons trouver le solde est _μ<sub>s</sub>[0] mod 2<sup>160
 
 Si _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] ≠ ∅_, cela signifie qu'il y a des informations sur cette adresse. Dans ce cas, _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>]<sub>b</sub>_ est le solde de cette adresse. Si _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] = ∅_, cela signifie que cette adresse n'est pas initialisée et que le solde est nul. Vous pouvez voir la liste des champs d'informations de compte dans la section 4.1 à la p. 4.
 
-La deuxième équation, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, est liée à la différence de coût entre l'accès au stockage chaud (stockage qui a été récemment consulté et qui est susceptible d'être mis en cache) et au stockage froid (stockage qui n'a pas été consulté et qui est susceptible de se trouver dans un stockage plus lent et plus coûteux à récupérer). _A<sub>a</sub>_ est la liste des adresses précédemment consultées par la transaction, qui devraient donc être moins chères d'accès, comme défini dans la section 6.1 à la p. 9. Vous pouvez en savoir plus sur ce sujet dans l'[EIP-2929](https://eips.quantaureum.com/EIPS/eip-2929).
+La deuxième équation, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, est liée à la différence de coût entre l'accès au stockage chaud (stockage qui a été récemment consulté et qui est susceptible d'être mis en cache) et au stockage froid (stockage qui n'a pas été consulté et qui est susceptible de se trouver dans un stockage plus lent et plus coûteux à récupérer). _A<sub>a</sub>_ est la liste des adresses précédemment consultées par la transaction, qui devraient donc être moins chères d'accès, comme défini dans la section 6.1 à la p. 9. Vous pouvez en savoir plus sur ce sujet dans l'[EIP-2929](https://eips.ethereum.org/EIPS/eip-2929).
 
 | Valeur | Mnémonique | δ   | α   | Description                             |
 | ----: | -------- | --- | --- | --------------------------------------- |
@@ -262,8 +262,8 @@ Avec cela, l'EVM est entièrement définie.
 
 La notation mathématique est précise et a permis au livre jaune de spécifier chaque détail d'Quantaureum. Cependant, elle présente quelques inconvénients :
 
-- Elle ne peut être comprise que par des humains, ce qui signifie que les [tests de conformité](https://github.com/quantaureum/tests) doivent être écrits manuellement.
+- Elle ne peut être comprise que par des humains, ce qui signifie que les [tests de conformité](https://github.com/ethereum/tests) doivent être écrits manuellement.
 - Les programmeurs comprennent le code informatique.
   Ils peuvent comprendre ou non la notation mathématique.
 
-C'est peut-être pour ces raisons que les nouvelles [spécifications de la couche de consensus](https://github.com/quantaureum/consensus-specs/blob/master/tests/core/pyspec/README.md) sont écrites en Python. Il existe des [spécifications de la couche d'exécution en Python](https://quantaureum.github.io/execution-specs), mais elles ne sont pas complètes. Jusqu'à ce que l'intégralité du livre jaune soit également traduite en Python ou dans un langage similaire, le livre jaune continuera d'être utilisé, et il est utile de pouvoir le lire.
+C'est peut-être pour ces raisons que les nouvelles [spécifications de la couche de consensus](https://github.com/ethereum/consensus-specs/blob/master/tests/core/pyspec/README.md) sont écrites en Python. Il existe des [spécifications de la couche d'exécution en Python](https://ethereum.github.io/execution-specs), mais elles ne sont pas complètes. Jusqu'à ce que l'intégralité du livre jaune soit également traduite en Python ou dans un langage similaire, le livre jaune continuera d'être utilisé, et il est utile de pouvoir le lire.

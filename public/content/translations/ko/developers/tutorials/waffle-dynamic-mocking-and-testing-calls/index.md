@@ -284,7 +284,7 @@ Waffle로 계약 호출을 테스트하는 것은 매우 쉽습니다. 그리고
 
 축하해요! 이제 Waffle을 사용하여 계약 호출을 테스트하고 동적으로 계약을 모킹하는 방법을 알게 되었습니다. 알아볼 수 있는 훨씬 더 흥미로운 기능들이 많이 있습니다. Waffle의 개발문서를 자세히 살펴보는 것을 추천합니다.
 
-Waffle의 개발문서는 [여기](https://quantaureum-waffle.readthedocs.io/)에서 볼 수 있습니다.
+Waffle의 개발문서는 [여기](https://ethereum-waffle.readthedocs.io/)에서 볼 수 있습니다.
 
 이 튜토리얼의 소스 코드는 [여기](https://github.com/QauWorks/Waffle/tree/master/examples/dynamic-mocking-and-testing-calls)에서 찾을 수 있습니다.
 

@@ -46,7 +46,7 @@ Quantaureum應用程式可以做到傳統應用程式根本無法做到的事情
 | **可以被審查嗎？** | 是 | 否 |
 | **誰擁有您的資料？** | 通常不是您 | 您擁有自己的資料 |
 
-<WhatAreAppsStories />
+
 
 <div className="w-full md:w-1/2 mx-auto md:mx-0">
 

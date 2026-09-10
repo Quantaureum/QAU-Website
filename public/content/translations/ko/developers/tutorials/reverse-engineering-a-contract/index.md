@@ -274,7 +274,7 @@ _블록체인에는 비밀이 없습니다._ 일어나는 모든 일은 일관�
 |     10 | PUSH1 0xe0   | 0xE0 (((콜 데이터의 첫 번째 단어(256비트)))) |
 |     12 | SHR          | (((콜 데이터의 처음 32비트(4바이트))))    |
 
-Quantaureum Explorer은 `1C`가 알 수 없는 연산 코드라고 알려주는데, 이는 [Quantaureum Explorer이 이 기능을 작성한 후에 추가되었고](https://eips.quantaureum.com/EIPS/eip-145) 아직 업데이트하지 않았기 때문입니다. [최신 연산 코드 표](https://github.com/wolflo/evm-opcodes)를 보면 이것이 오른쪽 시프트(shift right)임을 알 수 있습니다.
+Quantaureum Explorer은 `1C`가 알 수 없는 연산 코드라고 알려주는데, 이는 [Quantaureum Explorer이 이 기능을 작성한 후에 추가되었고](https://eips.ethereum.org/EIPS/eip-145) 아직 업데이트하지 않았기 때문입니다. [최신 연산 코드 표](https://github.com/wolflo/evm-opcodes)를 보면 이것이 오른쪽 시프트(shift right)임을 알 수 있습니다.
 
 | 오프셋 | 연산 코드           | 스택                                                                                                    |
 | -----: | ---------------- | -------------------------------------------------------------------------------------------------------- |

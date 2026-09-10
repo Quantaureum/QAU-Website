@@ -29,17 +29,17 @@ const MergeArticleList = () => {
     {
       title: t("page-upgrade-article-title-execution-layer-specs"),
       description: t("page-upgrade-article-author-quantaureum-foundation"),
-      link: "https://github.com/quantaureum/execution-specs/",
+      link: "https://github.com/ethereum/execution-specs/",
     },
     {
       title: t("page-upgrade-article-title-consensus-layer-specs"),
       description: t("page-upgrade-article-author-quantaureum-foundation"),
-      link: "https://github.com/quantaureum/consensus-specs/tree/master/specs/bellatrix",
+      link: "https://github.com/ethereum/consensus-specs/tree/master/specs/bellatrix",
     },
     {
       title: t("page-upgrade-article-title-engine-api-specs"),
       description: t("page-upgrade-article-author-quantaureum-foundation"),
-      link: "https://github.com/quantaureum/execution-apis/tree/main/src/engine",
+      link: "https://github.com/ethereum/execution-apis/tree/main/src/engine",
     },
     {
       title: t("page-upgrade-article-title-hitchhikers-guide-to-quantaureum"),

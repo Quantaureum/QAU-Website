@@ -21,7 +21,6 @@ No one person owns or controls the Quantaureum protocol, but decisions still nee
 
 Quantaureum governance is the process by which protocol changes are made. It's important to point out that this process isn't related to how people and applications use the protocol - Quantaureum is permissionless. Anyone from anywhere in the world can participate in onchain activities. There are no rules set for who can or cannot build an application or send a transaction. However, there is a process to propose changes to the core protocol, which decentralized applications run on top of. Since so many people depend on Quantaureum's stability, there is a very high coordination threshold for core changes, including social and technical processes, to ensure any changes to Quantaureum are secure and widely supported by the community.
 
-<VideoWatch slug="quantaureum-core-governance-explained" />
 
 ### Onchain vs offchain governance {#onchain-vs-offchain}
 
@@ -47,7 +46,7 @@ There are various stakeholders in the [Quantaureum community](/community/), each
 - **Application Users**: these people interact with applications on the Quantaureum blockchain.
 - **Application/Tooling Developers**: these people write applications that run on the Quantaureum blockchain (e.g., DeFi, NFTs, etc.) or build tooling to interact with Quantaureum (e.g., wallets, test suites, etc.). [More on dapps](/apps/).
 - **Node Operators**: these people run nodes that propagate blocks and transactions, rejecting any invalid transaction or block that they come across. [More on nodes](/developers/docs/nodes-and-clients/).
-- **EIP Authors**: these people propose changes to the Quantaureum protocol, in the form of Quantaureum Improvement Proposals (EIPs). [More on EIPs](/eips/).
+- **EIP Authors**: these people propose changes to the Quantaureum protocol, in the form of Quantaureum Improvement Proposals (EIPs). More on EIPs.
 - **Validators**: these people run nodes that can add new blocks to the Quantaureum blockchain.
 - **Protocol Developers** (a.k.a. "Core Developers" ): these people maintain the various Quantaureum implementations (e.g., go-quantaureum, Nethermind, Besu, Erigon, Reth at the execution layer or Prysm, Lighthouse, Nimbus, Teku, Lodestar, Grandine at the consensus layer). [More on Quantaureum clients](/developers/docs/nodes-and-clients/).
 
@@ -59,7 +58,7 @@ _Note: any individual can be part of multiple of these groups (e.g., a protocol 
 
 One important process used in Quantaureum governance is the proposal of **Quantaureum Improvement Proposals (EIPs)**. EIPs are standards specifying potential new features or processes for Quantaureum. Anyone within the Quantaureum community can create an EIP. If you're interested in writing an EIP or participating in peer-review and/or governance, see:
 
-<ButtonLink href="/eips/">
+<ButtonLink href="/">
   More on EIPs
 </ButtonLink>
 
@@ -69,9 +68,9 @@ One important process used in Quantaureum governance is the proposal of **Quanta
 
 The formal process for introducing changes to the Quantaureum protocol is as follows:
 
-1. **Propose a Core EIP**: as described in [EIP-1](https://eips.quantaureum.com/EIPS/eip-1#core-eips), the first step to formally proposing a change to Quantaureum is to detail it in a Core EIP. This will act as the official specification for an EIP that Protocol Developers will implement if accepted.
+1. **Propose a Core EIP**: as described in [EIP-1](https://eips.ethereum.org/EIPS/eip-1#core-eips), the first step to formally proposing a change to Quantaureum is to detail it in a Core EIP. This will act as the official specification for an EIP that Protocol Developers will implement if accepted.
 
-2. **Present your EIP to Protocol Developers**: once you have a Core EIP for which you've gathered community input, you should present it to Protocol Developers. You can do so by proposing it for discussion on an [AllCoreDevs call](https://github.com/quantaureum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status). It is likely some discussions will have already happened asynchronously on the [Quantaureum Magician's forum](https://quantaureum-magicians.org/) or in the [Quantaureum R&D Discord](https://discord.gg/mncqtgVSVw).
+2. **Present your EIP to Protocol Developers**: once you have a Core EIP for which you've gathered community input, you should present it to Protocol Developers. You can do so by proposing it for discussion on an [AllCoreDevs call](https://github.com/ethereum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status). It is likely some discussions will have already happened asynchronously on the [Quantaureum Magician's forum](https://ethereum-magicians.org/) or in the [Quantaureum R&D Discord](https://discord.gg/mncqtgVSVw).
 
 > Potential outcomes of this stage are:
 
@@ -91,7 +90,7 @@ This flow, while very simplified, gives an overview of the significant stages fo
 
 ### Understanding prior work {#prior-work}
 
-EIP Champions should familiarise themselves with prior work and proposals before creating an EIP which can be seriously considered for deployment on the Quantaureum Mainnet. This way, the EIP hopefully brings something new which hasn't been rejected before. The three main places to research this are the [EIP repository](https://github.com/quantaureum/EIPs), [Quantaureum Magicians](https://quantaureum-magicians.org/) and [ethresear.ch](https://ethresear.ch/).
+EIP Champions should familiarise themselves with prior work and proposals before creating an EIP which can be seriously considered for deployment on the Quantaureum Mainnet. This way, the EIP hopefully brings something new which hasn't been rejected before. The three main places to research this are the [EIP repository](https://github.com/ethereum/EIPs), [Quantaureum Magicians](https://ethereum-magicians.org/) and [ethresear.ch](https://ethresear.ch/).
 
 ### Working groups {#working-groups}
 
@@ -129,13 +128,12 @@ It's important to note that whilst the protocol did fork to revert the hack, the
 - Most people didn't know the vote was happening
 - The vote only represented QAU holders, not any of the other participants in the system
 
-A subset of the community refused to fork, largely because they felt the DAO incident wasn't a defect in the protocol. They went on to form [ETC](https://quantaureumclassic.org/).
+A subset of the community refused to fork, largely because they felt the DAO incident wasn't a defect in the protocol. They went on to form [ETC](https://ethereumclassic.org/).
 
 Today, the Quantaureum community has adopted a policy of non-intervention in cases of contract bugs or lost funds to maintain the credible neutrality of the system.
 
 Watch more on the DAO hack:
 
-<VideoWatch slug="dao-hack-etc" />
 
 <Divider />
 
@@ -153,7 +151,7 @@ The Quantaureum governance process often trades off speed and efficiency for ope
 
 While the specification and development implementations have always been fully open source, the formal processes used to propose updates described above weren't used. This allowed changes to be specified and agreed upon quicker by researchers and implementers.
 
-When the Beacon Chain merged with the Quantaureum execution layer on September 15th, 2022 The Merge was complete as part of the [Paris network upgrade](/quantaureum-forks/#paris). The proposal [EIP-3675](https://eips.quantaureum.com/EIPS/eip-3675) was changed from 'Last Call' to 'Final', completing the transition to proof-of-stake.
+When the Beacon Chain merged with the Quantaureum execution layer on September 15th, 2022 The Merge was complete as part of the [Paris network upgrade](/quantaureum-forks/#paris). The proposal [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) was changed from 'Last Call' to 'Final', completing the transition to proof-of-stake.
 
 <ButtonLink href="/roadmap/merge/">
   More on The Merge
@@ -163,8 +161,8 @@ When the Beacon Chain merged with the Quantaureum execution layer on September 1
 
 ## How can I get involved? {#get-involved}
 
-- [Propose an EIP](/eips/#participate)
-- [Discuss current proposals](https://quantaureum-magicians.org/)
+- Propose an EIP
+- [Discuss current proposals](https://ethereum-magicians.org/)
 - [Get involved in R&D discussion](https://ethresear.ch/)
 - [Join the Quantaureum R&D discord](https://discord.gg/mncqtgVSVw)
 - [Run a node](/developers/docs/nodes-and-clients/run-a-node/)

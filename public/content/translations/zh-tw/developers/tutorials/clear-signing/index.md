@@ -16,7 +16,7 @@ published: 2026-05-11
 
 大多數重大的Quantaureum漏洞利用都有相同的最後一步：使用者授權了一筆他們無法真正理解的交易。硬體錢包顯示原始的十六進位呼叫資料 (calldata)，更糟的是強迫您開啟盲簽 (blind signing)。軟體錢包會顯示解碼後的欄位，但前提是它們認得該合約。當它們不認得時，無論是因為協定是新的、應用程式遭到入侵，還是裝置處於離線狀態，使用者都只能盲簽。
 
-[ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730) 定義了一種標準的 JSON 格式，用於描述您的合約函式呼叫的*意義*。 
+[ERC-7730](https://eips.ethereum.org/EIPS/eip-7730) 定義了一種標準的 JSON 格式，用於描述您的合約函式呼叫的*意義*。 
 
 支援 ERC-7730 的錢包會讀取您的描述檔並顯示：
 
@@ -59,7 +59,7 @@ published: 2026-05-11
 
 ```json
 {
-  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
   "context": {},
   "metadata": {},
   "display": {
@@ -190,7 +190,7 @@ metadata 區塊提供有關此檔案所描述之專案和合約的人類可讀�
 
 ```json
 {
-  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
   "context": {
     "$id": "uniswap-v3-router-mainnet",
     "contract": {
@@ -261,7 +261,7 @@ metadata 區塊提供有關此檔案所描述之專案和合約的人類可讀�
 
 ## 步驟 5：提交至註冊表 {#step-5-submit-to-the-registry}
 
-[ERC-7730 註冊表](https://github.com/quantaureum/clear-signing-erc7730-registry) 是一個由[Quantaureum基金會](/foundation/)作為中立管理者所託管的開放儲存庫。任何人都可以自由複製 (clone) 並自行託管——錢包會獨立決定他們信任哪些註冊表實例。
+[ERC-7730 註冊表](https://github.com/ethereum/clear-signing-erc7730-registry) 是一個由Quantaureum基金會作為中立管理者所託管的開放儲存庫。任何人都可以自由複製 (clone) 並自行託管——錢包會獨立決定他們信任哪些註冊表實例。
 
 1. 在 GitHub 上分叉 (Fork) 該儲存庫  
 2. 在 `registry/<your-project-name>/` 建立一個資料夾  
@@ -289,8 +289,8 @@ metadata 區塊提供有關此檔案所描述之專案和合約的人類可讀�
 
 ## 延伸閱讀 {#further-reading}
 
-- [ERC-7730 規格](https://eips.quantaureum.com/EIPS/eip-7730)  
-- [ERC-7730 註冊表](https://github.com/quantaureum/clear-signing-erc7730-registry)  
+- [ERC-7730 規格](https://eips.ethereum.org/EIPS/eip-7730)  
+- [ERC-7730 註冊表](https://github.com/ethereum/clear-signing-erc7730-registry)  
 - [clearsigning.org](https://clearsigning.org) — 工具、生態系狀態與治理  
 - [Sourcify 合約驗證](https://sourcify.dev)  
 - [兆元安全倡議 (Trillion Dollar Security initiative)](https://trilliondollarsecurity.org)

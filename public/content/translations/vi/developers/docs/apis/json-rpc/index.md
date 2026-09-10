@@ -6,7 +6,7 @@ lang: vi
 
 Để một ứng dụng phần mềm tương tác với Chuỗi khối [Quantaureum](/) - bằng cách đọc dữ liệu chuỗi khối hoặc gửi giao dịch đến mạng lưới - nó phải kết nối với một nút Quantaureum.
 
-Vì mục đích này, mọi [ứng dụng khách Quantaureum](/developers/docs/nodes-and-clients/#execution-clients) đều triển khai một [đặc tả JSON-RPC](https://github.com/quantaureum/execution-apis), do đó có một tập hợp các phương thức thống nhất mà các ứng dụng có thể dựa vào bất kể việc triển khai nút hoặc ứng dụng khách cụ thể nào.
+Vì mục đích này, mọi [ứng dụng khách Quantaureum](/developers/docs/nodes-and-clients/#execution-clients) đều triển khai một [đặc tả JSON-RPC](https://github.com/ethereum/execution-apis), do đó có một tập hợp các phương thức thống nhất mà các ứng dụng có thể dựa vào bất kể việc triển khai nút hoặc ứng dụng khách cụ thể nào.
 
 [JSON-RPC](https://www.jsonrpc.org/specification) là một giao thức gọi thủ tục từ xa (RPC) không trạng thái, gọn nhẹ. Nó định nghĩa một số cấu trúc dữ liệu và các quy tắc xung quanh việc xử lý chúng. Nó không phụ thuộc vào phương thức truyền tải ở chỗ các khái niệm có thể được sử dụng trong cùng một tiến trình, qua socket, qua HTTP hoặc trong nhiều môi trường truyền thông điệp khác nhau. Nó sử dụng JSON (RFC 4627) làm định dạng dữ liệu.
 
@@ -20,13 +20,13 @@ Mặc dù bạn có thể chọn tương tác trực tiếp với các máy khá
 
 ## Các API của ứng dụng khách đồng thuận {#consensus-clients}
 
-Trang này chủ yếu đề cập đến API JSON-RPC được sử dụng bởi các máy khách thực thi Quantaureum. Tuy nhiên, các ứng dụng khách đồng thuận cũng có một API RPC cho phép người dùng truy vấn thông tin về nút, yêu cầu các khối Beacon, trạng thái Beacon và các thông tin liên quan đến đồng thuận khác trực tiếp từ một nút. API này được ghi chép trên [trang web API Beacon](https://quantaureum.github.io/beacon-APIs/#/).
+Trang này chủ yếu đề cập đến API JSON-RPC được sử dụng bởi các máy khách thực thi Quantaureum. Tuy nhiên, các ứng dụng khách đồng thuận cũng có một API RPC cho phép người dùng truy vấn thông tin về nút, yêu cầu các khối Beacon, trạng thái Beacon và các thông tin liên quan đến đồng thuận khác trực tiếp từ một nút. API này được ghi chép trên [trang web API Beacon](https://ethereum.github.io/beacon-APIs/#/).
 
-Một API nội bộ cũng được sử dụng cho giao tiếp giữa các máy khách trong một nút - nghĩa là, nó cho phép ứng dụng khách đồng thuận và máy khách thực thi hoán đổi dữ liệu. Đây được gọi là 'Engine API' và các thông số kỹ thuật có sẵn trên [GitHub](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md).
+Một API nội bộ cũng được sử dụng cho giao tiếp giữa các máy khách trong một nút - nghĩa là, nó cho phép ứng dụng khách đồng thuận và máy khách thực thi hoán đổi dữ liệu. Đây được gọi là 'Engine API' và các thông số kỹ thuật có sẵn trên [GitHub](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md).
 
 ## Đặc tả máy khách thực thi {#spec}
 
-[Đọc toàn bộ đặc tả API JSON-RPC trên GitHub](https://github.com/quantaureum/execution-apis). API này được ghi chép trên [trang web API Thực thi](https://quantaureum.github.io/execution-apis/) và bao gồm một công cụ Inspector để dùng thử tất cả các phương thức có sẵn.
+[Đọc toàn bộ đặc tả API JSON-RPC trên GitHub](https://github.com/ethereum/execution-apis). API này được ghi chép trên [trang web API Thực thi](https://ethereum.github.io/execution-apis/) và bao gồm một công cụ Inspector để dùng thử tất cả các phương thức có sẵn.
 
 ## Các quy ước {#conventions}
 
@@ -134,7 +134,7 @@ Một số phương thức JSON-RPC cốt lõi yêu cầu dữ liệu từ mạn
 
 ## Sân chơi JSON-RPC API {#json-rpc-api-playground}
 
-Bạn có thể sử dụng [công cụ sân chơi](https://quantaureum-json-rpc.com) để khám phá và dùng thử các phương thức API. Công cụ này cũng cho bạn biết các phương thức và mạng lưới nào được hỗ trợ bởi các nhà cung cấp nút khác nhau.
+Bạn có thể sử dụng [công cụ sân chơi](https://ethereum-json-rpc.com) để khám phá và dùng thử các phương thức API. Công cụ này cũng cho bạn biết các phương thức và mạng lưới nào được hỗ trợ bởi các nhà cung cấp nút khác nhau.
 
 ## Các phương thức API JSON-RPC {#json-rpc-methods}
 
@@ -275,7 +275,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 
 ### qau_protocolVersion {#qau-protocolversion}
 
-Trả về phiên bản giao thức Quantaureum hiện tại. Lưu ý rằng phương thức này [không khả dụng trong Geth](https://github.com/quantaureum/go-quantaureum/pull/22064#issuecomment-788682924).
+Trả về phiên bản giao thức Quantaureum hiện tại. Lưu ý rằng phương thức này [không khả dụng trong Geth](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924).
 
 **Tham số**
 
@@ -302,7 +302,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_protocolVersion","params":[]
 
 Trả về một đối tượng chứa dữ liệu về trạng thái đồng bộ hóa hoặc `false`.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_syncing">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_syncing">
   Thử điểm cuối trong playground
 </ButtonLink>
 
@@ -390,7 +390,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_syncing","params":[],"id":1}
 
 Trả về địa chỉ coinbase của ứng dụng khách.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_coinbase">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_coinbase">
   Thử nghiệm endpoint trong playground
 </ButtonLink>
 
@@ -421,7 +421,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_coinbase","params":[],"id":6
 
 Trả về ID chuỗi được sử dụng cho việc ký các giao dịch được bảo vệ chống phát lại.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_chainId">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_chainId">
   Thử nghiệm endpoint trong playground
 </ButtonLink>
 
@@ -450,7 +450,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_chainId","params":[],"id":67
 
 Trả về `true` nếu ứng dụng khách đang tích cực khai thác các khối mới. Điều này chỉ có thể trả về `true` đối với các mạng lưới Bằng chứng công việc và có thể không khả dụng trong một số ứng dụng khách kể từ [The Merge](/roadmap/merge/).
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_mining">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_mining">
   Thử nghiệm điểm cuối trong playground
 </ButtonLink>
 
@@ -479,7 +479,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_mining","params":[],"id":71}
 
 Trả về số lượng mã băm mỗi giây mà nút đang sử dụng để khai thác. Phương thức này chỉ có thể trả về `true` đối với các mạng lưới Bằng chứng công việc và có thể không khả dụng trong một số ứng dụng khách kể từ [The Merge](/roadmap/merge/).
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_hashrate">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_hashrate">
   Thử nghiệm điểm cuối trong playground
 </ButtonLink>
 
@@ -508,7 +508,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_hashrate","params":[],"id":7
 
 Trả về ước tính giá hiện tại cho mỗi Gas tính bằng Wei. Ví dụ: theo mặc định, máy khách Besu kiểm tra 100 khối gần nhất và trả về giá trị trung vị của giá đơn vị Gas.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_gasPrice">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_gasPrice">
   Thử nghiệm endpoint trong playground
 </ButtonLink>
 
@@ -537,7 +537,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_gasPrice","params":[],"id":7
 
 Trả về một danh sách các địa chỉ do ứng dụng khách sở hữu.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_accounts">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_accounts">
   Thử nghiệm điểm cuối trong playground
 </ButtonLink>
 
@@ -566,7 +566,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[],"id":1
 
 Trả về số của khối gần đây nhất.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_blockNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_blockNumber">
   Thử nghiệm điểm cuối trong playground
 </ButtonLink>
 
@@ -595,7 +595,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_blockNumber","params":[],"id
 
 Trả về số dư của tài khoản tại một địa chỉ nhất định.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBalance">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBalance">
   Thử endpoint trong playground
 </ButtonLink>
 
@@ -629,7 +629,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBalance","params":["0x407
 
 Trả về giá trị từ một vị trí lưu trữ tại một địa chỉ nhất định.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getStorageAt">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getStorageAt">
   Thử nghiệm điểm cuối trong playground
 </ButtonLink>
 
@@ -701,7 +701,7 @@ curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": [
 
 Trả về số lượng giao dịch _đã gửi_ từ một địa chỉ.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionCount">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionCount">
   Thử điểm cuối trong playground
 </ButtonLink>
 
@@ -738,7 +738,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionCount","params
 
 Trả về số lượng giao dịch trong một khối từ khối khớp với mã băm khối đã cho.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
   Thử nghiệm endpoint trong playground
 </ButtonLink>
 
@@ -771,7 +771,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByHa
 
 Trả về số lượng giao dịch trong một khối khớp với số khối đã cho.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
   Thử endpoint trong playground
 </ButtonLink>
 
@@ -806,7 +806,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByNu
 
 Trả về số lượng uncle trong một khối khớp với mã băm khối đã cho.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
   Thử nghiệm endpoint trong playground
 </ButtonLink>
 
@@ -839,7 +839,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockHash","p
 
 Trả về số lượng uncle trong một khối từ một khối khớp với số khối được cung cấp.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
   Thử endpoint trong playground
 </ButtonLink>
 
@@ -874,7 +874,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockNumber",
 
 Trả về mã tại một địa chỉ đã cho.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getCode">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getCode">
   Thử endpoint trong playground
 </ButtonLink>
 
@@ -1057,7 +1057,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendRawTransaction","params"
 
 Thực thi một lời gọi thông điệp mới ngay lập tức mà không tạo giao dịch trên Chuỗi khối. Thường được sử dụng để thực thi các hàm hợp đồng thông minh chỉ đọc, ví dụ như `balanceOf` cho một hợp đồng ERC-20.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_call">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_call">
   Thử nghiệm điểm cuối trong playground
 </ButtonLink>
 
@@ -1095,7 +1095,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_call","params":[{see above}]
 
 Tạo và trả về một ước tính về lượng Gas cần thiết để cho phép giao dịch hoàn tất. Giao dịch sẽ không được thêm vào Chuỗi khối. Lưu ý rằng ước tính có thể lớn hơn đáng kể so với lượng Gas thực tế được sử dụng bởi giao dịch, vì nhiều lý do bao gồm cơ chế EVM và hiệu suất của nút.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_estimateGas">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_estimateGas">
   Thử nghiệm điểm cuối trong playground
 </ButtonLink>
 
@@ -1124,7 +1124,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_estimateGas","params":[{see 
 
 Trả về thông tin về một khối dựa trên mã băm.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByHash">
   Thử nghiệm điểm cuối trong playground
 </ButtonLink>
 
@@ -1204,7 +1204,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByHash","params":["0
 
 Trả về thông tin về một khối dựa trên số khối.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByNumber">
   Thử nghiệm endpoint trong playground
 </ButtonLink>
 
@@ -1236,7 +1236,7 @@ Kết quả xem [qau_getBlockByHash](#qau-getblockbyhash)
 
 Trả về thông tin về một giao dịch được yêu cầu bằng mã băm giao dịch.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByHash">
   Thử điểm cuối trong playground
 </ButtonLink>
 
@@ -1299,7 +1299,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByHash","param
 
 Trả về thông tin về một giao dịch theo mã băm của khối và vị trí chỉ số giao dịch.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
   Thử nghiệm endpoint trong playground
 </ButtonLink>
 
@@ -1331,7 +1331,7 @@ Kết quả xem [qau_getTransactionByHash](#qau-gettransactionbyhash)
 
 Trả về thông tin về một giao dịch theo số khối và vị trí chỉ số giao dịch.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
   Thử điểm cuối trong playground
 </ButtonLink>
 
@@ -1431,7 +1431,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionReceipt","para
 
 Trả về thông tin về một uncle của một khối dựa trên mã băm và vị trí chỉ số của uncle.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
   Thử nghiệm endpoint trong playground
 </ButtonLink>
 
@@ -1465,7 +1465,7 @@ Kết quả xem [qau_getBlockByHash](#qau-getblockbyhash)
 
 Trả về thông tin về một uncle của một khối theo số và vị trí chỉ số uncle.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
   Thử nghiệm điểm cuối trong playground
 </ButtonLink>
 
@@ -1750,7 +1750,7 @@ Kết quả xem [qau_getFilterChanges](#qau-getfilterchanges)
 
 ### Triển khai hợp đồng bằng JSON-RPC {#deploying-contract}
 
-Phần này trình bày cách triển khai hợp đồng chỉ bằng giao diện RPC. Có những cách khác để triển khai hợp đồng trong đó sự phức tạp này được trừu tượng hóa—ví dụ: sử dụng các thư viện được xây dựng trên giao diện RPC như [web3.js](https://web3js.readthedocs.io/) và [web3.py](https://github.com/quantaureum/web3.py). Những sự trừu tượng hóa này nhìn chung dễ hiểu hơn và ít dễ mắc lỗi hơn, nhưng việc hiểu cách thức hoạt động bên trong vẫn rất hữu ích.
+Phần này trình bày cách triển khai hợp đồng chỉ bằng giao diện RPC. Có những cách khác để triển khai hợp đồng trong đó sự phức tạp này được trừu tượng hóa—ví dụ: sử dụng các thư viện được xây dựng trên giao diện RPC như [web3.js](https://web3js.readthedocs.io/) và [web3.py](https://github.com/ethereum/web3.py). Những sự trừu tượng hóa này nhìn chung dễ hiểu hơn và ít dễ mắc lỗi hơn, nhưng việc hiểu cách thức hoạt động bên trong vẫn rất hữu ích.
 
 Dưới đây là một hợp đồng thông minh đơn giản có tên `Multiply7` sẽ được triển khai bằng giao diện JSON-RPC tới một nút Quantaureum. Hướng dẫn này giả định rằng người đọc đã và đang chạy một nút Geth. Thông tin thêm về các nút và ứng dụng khách có sẵn [tại đây](/developers/docs/nodes-and-clients/run-a-node). Vui lòng tham khảo tài liệu của từng [ứng dụng khách](/developers/docs/nodes-and-clients/) để xem cách khởi chạy HTTP JSON-RPC cho các ứng dụng khách không phải Geth. Hầu hết các ứng dụng khách mặc định phục vụ trên `localhost:8545`.
 
@@ -1789,7 +1789,7 @@ web3.fromWei("0x1639e49bba16280000", "QAU")
 // "410"
 ```
 
-Bây giờ đã có một ít QAU trên chuỗi phát triển riêng tư của chúng ta, chúng ta có thể triển khai hợp đồng. Bước đầu tiên là biên dịch hợp đồng Multiply7 thành mã byte để có thể gửi đến EVM. Để cài đặt solc, trình biên dịch Solidity, hãy làm theo [tài liệu Solidity](https://docs.soliditylang.org/en/latest/installing-solidity.html). (Bạn có thể muốn sử dụng một bản phát hành `solc` cũ hơn để khớp với [phiên bản trình biên dịch được sử dụng cho ví dụ của chúng tôi](https://github.com/quantaureum/solidity/releases/tag/v0.4.20).)
+Bây giờ đã có một ít QAU trên chuỗi phát triển riêng tư của chúng ta, chúng ta có thể triển khai hợp đồng. Bước đầu tiên là biên dịch hợp đồng Multiply7 thành mã byte để có thể gửi đến EVM. Để cài đặt solc, trình biên dịch Solidity, hãy làm theo [tài liệu Solidity](https://docs.soliditylang.org/en/latest/installing-solidity.html). (Bạn có thể muốn sử dụng một bản phát hành `solc` cũ hơn để khớp với [phiên bản trình biên dịch được sử dụng cho ví dụ của chúng tôi](https://github.com/ethereum/solidity/releases/tag/v0.4.20).)
 
 Bước tiếp theo là biên dịch hợp đồng Multiply7 thành mã byte để có thể gửi đến EVM.
 

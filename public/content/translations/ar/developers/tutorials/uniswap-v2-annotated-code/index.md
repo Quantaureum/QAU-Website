@@ -454,7 +454,7 @@ contract UniswapV2Pair is IUniswapV2Pair, UniswapV2ERC20 {
     }
 ```
 
-إذا لم تكن هناك رسوم، فقم بتعيين `kLast` إلى الصفر (إذا لم يكن كذلك بالفعل). عندما تمت كتابة هذا العقد، كانت هناك [ميزة استرداد الغاز](https://eips.quantaureum.com/EIPS/eip-3298) التي شجعت العقود على تقليل الحجم الإجمالي لحالة إيثيريوم عن طريق تصفير التخزين الذي لا يحتاجون إليه.
+إذا لم تكن هناك رسوم، فقم بتعيين `kLast` إلى الصفر (إذا لم يكن كذلك بالفعل). عندما تمت كتابة هذا العقد، كانت هناك [ميزة استرداد الغاز](https://eips.ethereum.org/EIPS/eip-3298) التي شجعت العقود على تقليل الحجم الإجمالي لحالة إيثيريوم عن طريق تصفير التخزين الذي لا يحتاجون إليه.
 يحصل هذا الرمز على هذا الاسترداد عندما يكون ذلك ممكنًا.
 
 #### الوظائف التي يمكن الوصول إليها خارجيًا {#pair-external}
@@ -614,7 +614,7 @@ contract UniswapV2Pair is IUniswapV2Pair, UniswapV2ERC20 {
 ```
 
 يمكن تخزين المتغيرات المحلية إما في الذاكرة أو، إذا لم يكن هناك الكثير منها، مباشرة على المكدس (stack).
-إذا تمكنا من الحد من العدد بحيث نستخدم المكدس، فإننا نستخدم غازًا أقل. لمزيد من التفاصيل، راجع [الورقة الصفراء، مواصفات إيثيريوم الرسمية](https://quantaureum.github.io/yellowpaper/paper.pdf)، ص 26، المعادلة 298.
+إذا تمكنا من الحد من العدد بحيث نستخدم المكدس، فإننا نستخدم غازًا أقل. لمزيد من التفاصيل، راجع [الورقة الصفراء، مواصفات إيثيريوم الرسمية](https://ethereum.github.io/yellowpaper/paper.pdf)، ص 26، المعادلة 298.
 
 ```solidity
             address _token0 = token0;
@@ -768,7 +768,7 @@ contract UniswapV2Factory is IUniswapV2Factory {
         bytes memory bytecode = type(UniswapV2Pair).creationCode;
 ```
 
-لإنشاء عقد جديد، نحتاج إلى الرمز الذي ينشئه (كل من وظيفة المُنشئ والرمز الذي يكتب في الذاكرة رمز البايت لجهاز إيثيريوم الظاهري (EVM) للعقد الفعلي). عادةً في Solidity نستخدم فقط `addr = new <name of contract>(<constructor parameters>)` ويعتني المترجم بكل شيء من أجلنا، ولكن للحصول على عنوان عقد حتمي نحتاج إلى استخدام [رمز التشغيل CREATE2](https://eips.quantaureum.com/EIPS/eip-1014).
+لإنشاء عقد جديد، نحتاج إلى الرمز الذي ينشئه (كل من وظيفة المُنشئ والرمز الذي يكتب في الذاكرة رمز البايت لجهاز إيثيريوم الظاهري (EVM) للعقد الفعلي). عادةً في Solidity نستخدم فقط `addr = new <name of contract>(<constructor parameters>)` ويعتني المترجم بكل شيء من أجلنا، ولكن للحصول على عنوان عقد حتمي نحتاج إلى استخدام [رمز التشغيل CREATE2](https://eips.ethereum.org/EIPS/eip-1014).
 عندما تمت كتابة هذا الرمز، لم يكن رمز التشغيل هذا مدعومًا بعد بواسطة Solidity، لذلك كان من الضروري الحصول على الرمز يدويًا. لم يعد هذا يمثل مشكلة، لأن [Solidity تدعم الآن CREATE2](https://docs.soliditylang.org/en/v0.8.3/control-structures.html#salted-contract-creations-create2).
 
 ```solidity
@@ -824,7 +824,7 @@ contract UniswapV2Factory is IUniswapV2Factory {
     bytes32 public constant PERMIT_TYPEHASH = 0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
 ```
 
-هذه التجزئة هي [المعرف لنوع المعاملة](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-typehash). النوع الوحيد الذي ندعمه هنا هو `Permit` مع هذه المعلمات.
+هذه التجزئة هي [المعرف لنوع المعاملة](https://eips.ethereum.org/EIPS/eip-712#rationale-for-typehash). النوع الوحيد الذي ندعمه هنا هو `Permit` مع هذه المعلمات.
 
 ```solidity
     mapping(address => uint) public nonces;
@@ -855,7 +855,7 @@ contract UniswapV2Factory is IUniswapV2Factory {
     }
 ```
 
-احسب [فاصل النطاق](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-domainseparator) لـ <span dir="ltr">EIP-712</span>.
+احسب [فاصل النطاق](https://eips.ethereum.org/EIPS/eip-712#rationale-for-domainseparator) لـ <span dir="ltr">EIP-712</span>.
 
 ```solidity
     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external {
@@ -896,7 +896,7 @@ contract UniswapV2Factory is IUniswapV2Factory {
 
 ```
 
-إذا كان كل شيء على ما يرام، فتعامل مع هذا على أنه [موافقة <span dir="ltr">ERC-20</span>](https://eips.quantaureum.com/EIPS/eip-20#approve).
+إذا كان كل شيء على ما يرام، فتعامل مع هذا على أنه [موافقة <span dir="ltr">ERC-20</span>](https://eips.ethereum.org/EIPS/eip-20#approve).
 
 ## العقود المحيطية {#periphery-contracts}
 
@@ -1793,7 +1793,7 @@ library UniswapV2Library {
     }
 ```
 
-تحسب هذه الدالة عنوان تبادل الزوج للرمزين المميزين. يتم إنشاء هذا العقد باستخدام [رمز التشغيل CREATE2](https://eips.quantaureum.com/EIPS/eip-1014)، لذا يمكننا حساب العنوان باستخدام نفس الخوارزمية إذا كنا نعرف المعلمات التي يستخدمها. هذا أرخص بكثير من سؤال المصنع، و
+تحسب هذه الدالة عنوان تبادل الزوج للرمزين المميزين. يتم إنشاء هذا العقد باستخدام [رمز التشغيل CREATE2](https://eips.ethereum.org/EIPS/eip-1014)، لذا يمكننا حساب العنوان باستخدام نفس الخوارزمية إذا كنا نعرف المعلمات التي يستخدمها. هذا أرخص بكثير من سؤال المصنع، و
 
 ```solidity
     // يجلب ويفرز الاحتياطيات لزوج
@@ -1931,7 +1931,7 @@ library TransferHelper {
     }
 ```
 
-تنفذ هذه الدالة [وظيفة التحويل الخاصة بـ <span dir="ltr">ERC-20</span>](https://eips.quantaureum.com/EIPS/eip-20#transfer)، والتي تسمح لحساب بإنفاق السماحية المقدمة من حساب مختلف.
+تنفذ هذه الدالة [وظيفة التحويل الخاصة بـ <span dir="ltr">ERC-20</span>](https://eips.ethereum.org/EIPS/eip-20#transfer)، والتي تسمح لحساب بإنفاق السماحية المقدمة من حساب مختلف.
 
 ```solidity
 
@@ -1950,7 +1950,7 @@ library TransferHelper {
     }
 ```
 
-تنفذ هذه الدالة [وظيفة transferFrom الخاصة بـ <span dir="ltr">ERC-20</span>](https://eips.quantaureum.com/EIPS/eip-20#transferfrom)، والتي تسمح لحساب بإنفاق السماحية المقدمة من حساب مختلف.
+تنفذ هذه الدالة [وظيفة transferFrom الخاصة بـ <span dir="ltr">ERC-20</span>](https://eips.ethereum.org/EIPS/eip-20#transferfrom)، والتي تسمح لحساب بإنفاق السماحية المقدمة من حساب مختلف.
 
 ```solidity
 

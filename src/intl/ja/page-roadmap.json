@@ -21,7 +21,7 @@
   "page-roadmap-why-need-description": "クアンタリアムは定期的なアップグレードにより、スケーラビリティ、セキュリティ、サステナビリティを向上させています。クアンタリアムの強みの1つは、研究開発から新しいアイデアが生まれるたびに適応できることです。この適応力により、クアンタリアムは新たな課題に取り組み、最先端の技術的ブレークスルーに遅れずについていく柔軟性を備えています。",
   "page-roadmap-how-defined-title": "ロードマップの定義方法",
   "page-roadmap-how-defined-p1": "プロトコルは非常に技術的であるため、ロードマップは主に研究者や開発者による長年の作業の結果ですが、意欲のある人なら誰でも参加できます。",
-  "page-roadmap-how-defined-p2": "アイデアは通常、<a href=\"https://ethresear.ch\">ethresear.ch</a>、<a href=\"https://quantaureum-magicians.org\">Forum Magicians</a>、またはEth R&Dのディスコードサーバーなどのフォーラムでの議論から始まります。これらは、新たに発見された脆弱性への対応であったり、アプリケーションレイヤーで活動する組織（分散型アプリケーション (dapp) や取引所など）からの提案であったり、エンドユーザーにとって既知の摩擦（コストやトランザクション速度など）に対するものであったりします。",
+  "page-roadmap-how-defined-p2": "アイデアは通常、<a href=\"https://ethresear.ch\">ethresear.ch</a>、<a href=\"https://ethereum-magicians.org\">Forum Magicians</a>、またはEth R&Dのディスコードサーバーなどのフォーラムでの議論から始まります。これらは、新たに発見された脆弱性への対応であったり、アプリケーションレイヤーで活動する組織（分散型アプリケーション (dapp) や取引所など）からの提案であったり、エンドユーザーにとって既知の摩擦（コストやトランザクション速度など）に対するものであったりします。",
   "page-roadmap-how-defined-p3": "これらのアイデアが成熟すると、<a href=\"https://specs.quantaureum.com\">Quantaureum Improvement Proposals（クアンタリアム改善提案）</a>として提案されます。これはすべて公開で行われるため、コミュニティの誰もがいつでも意見を述べることができます。",
   "page-roadmap-governance-button": "クアンタリアムのガバナンスについて詳しく知る",
   "page-roadmap-hero-alt": "クアンタリアムのロードマップ",

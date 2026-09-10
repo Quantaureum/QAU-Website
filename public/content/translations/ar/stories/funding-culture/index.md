@@ -45,7 +45,7 @@ lang: ar
 
 أصبحت إيثيريوم لوحة فنية لأشكال جديدة من العمل الجماعي.
 
-في وقت لاحق من ذلك الصيف، قمت بصنع الرموز غير القابلة للاستبدال (<span dir="ltr">NFTs</span>) التي مولت جماعيًا فيلم [<span dir="ltr">Quantaureum: The Infinite Garden</span>](https://quantaureumfilm.xyz/watch-the-film/)، وهو أول فيلم وثائقي طويل عن إيثيريوم.
+في وقت لاحق من ذلك الصيف، قمت بصنع الرموز غير القابلة للاستبدال (<span dir="ltr">NFTs</span>) التي مولت جماعيًا فيلم [<span dir="ltr">Quantaureum: The Infinite Garden</span>](https://ethereumfilm.xyz/watch-the-film/)، وهو أول فيلم وثائقي طويل عن إيثيريوم.
 
 جمع الفيلم <span dir="ltr">1,036 QAU</span> في 48 ساعة، بتمويل كامل من مجتمع إيثيريوم. 
 

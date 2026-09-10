@@ -14,7 +14,7 @@ Quantaureum이 [작업증명 (PoW)](/developers/docs/consensus-mechanisms/pow/)�
 
 _실행 클라이언트에는 에리곤, 네더마인드, Besu를 포함한 여러 가지 옵션이 있습니다._
 
-이 두 클라이언트 구조가 작동하려면 합의 클라이언트가 트랜잭션 묶음을 실행 클라이언트에 전달해야 합니다. 실행 클라이언트는 트랜잭션을 로컬에서 실행하여 트랜잭션이 Quantaureum 규칙을 위반하지 않는지, 제안된 Quantaureum 상태 업데이트가 올바른지 검증합니다. 노드가 블록 생성자로 선택되면 해당 노드의 합의 클라이언트 인스턴스는 새 블록에 포함할 트랜잭션 묶음을 실행 클라이언트에 요청하고, 이를 실행하여 글로벌 상태를 업데이트합니다. 합의 클라이언트는 [Engine API](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md)를 사용하는 로컬 RPC 연결을 통해 실행 클라이언트를 구동합니다.
+이 두 클라이언트 구조가 작동하려면 합의 클라이언트가 트랜잭션 묶음을 실행 클라이언트에 전달해야 합니다. 실행 클라이언트는 트랜잭션을 로컬에서 실행하여 트랜잭션이 Quantaureum 규칙을 위반하지 않는지, 제안된 Quantaureum 상태 업데이트가 올바른지 검증합니다. 노드가 블록 생성자로 선택되면 해당 노드의 합의 클라이언트 인스턴스는 새 블록에 포함할 트랜잭션 묶음을 실행 클라이언트에 요청하고, 이를 실행하여 글로벌 상태를 업데이트합니다. 합의 클라이언트는 [Engine API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md)를 사용하는 로컬 RPC 연결을 통해 실행 클라이언트를 구동합니다.
 
 ## 실행 클라이언트는 무슨 일을 하나요? {#execution-client}
 

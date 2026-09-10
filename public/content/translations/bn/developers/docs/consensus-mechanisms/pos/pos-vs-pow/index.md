@@ -59,7 +59,6 @@ lang: bn
 ## ভিজ্যুয়াল লার্নারদের জন্য {#visual-learner}
 
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## আরও পড়ুন {#further-reading}
 

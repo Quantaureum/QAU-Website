@@ -42,7 +42,7 @@ Beispielfunktionalitäten, die ERC-20 bietet:
 
 Wenn ein Smart Contract die folgenden Methoden und Ereignisse implementiert, kann er als ERC-20-Token-Vertrag bezeichnet werden und ist nach der Bereitstellung dafür verantwortlich, die erstellten Token auf Quantaureum zu verfolgen.
 
-Aus [EIP-20](https://eips.quantaureum.com/EIPS/eip-20):
+Aus [EIP-20](https://eips.ethereum.org/EIPS/eip-20):
 
 ### Methoden {#methods}
 
@@ -170,7 +170,7 @@ Einige alternative Standards sind aus diesem Problem hervorgegangen, wie z. B. [
 
 ## Weiterführende Literatur {#further-reading}
 
-- [EIP-20: ERC-20-Token-Standard](https://eips.quantaureum.com/EIPS/eip-20)
+- [EIP-20: ERC-20-Token-Standard](https://eips.ethereum.org/EIPS/eip-20)
 - [OpenZeppelin - Token](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [OpenZeppelin - ERC-20-Implementierung](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Leitfaden zu Solidity-ERC20-Token](https://www.alchemy.com/overviews/erc20-solidity)
@@ -185,5 +185,5 @@ Einige alternative Standards sind aus diesem Problem hervorgegangen, wie z. B. [
 
 - [ERC-20-Vertrag-Walkthrough](/developers/tutorials/erc20-annotated-code/) _– Ein zeilenweise kommentierter Durchgang durch die ERC-20-Vertragsimplementierung von OpenZeppelin._
 - [ERC-20 mit Sicherheitsvorkehrungen](/developers/tutorials/erc20-with-safety-rails/) _– Wie man ERC-20-Token mit Schutzmechanismen versieht, um Benutzern zu helfen, häufige Fehler zu vermeiden._
-- [Senden von Token mit Ethers.js](/developers/tutorials/send-token-ethersjs/) _– Ein anfängerfreundlicher Leitfaden zum Transferieren von ERC-20-Token mit Ethers.js._
+- [Senden von Token mit Ethers.js](/developers/tutorials/send-token-qaujs/) _– Ein anfängerfreundlicher Leitfaden zum Transferieren von ERC-20-Token mit Ethers.js._
 - [Einige Tricks von Betrugs-Token und wie man sie erkennt](/developers/tutorials/scam-token-tricks/) _– Ein tiefer Einblick in die Muster von betrügerischen ERC-20-Token und wie man sie identifiziert._

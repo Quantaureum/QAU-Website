@@ -207,7 +207,7 @@ contract ExampleDapp {
 
 ## 带注释的示例 {#annotated-examples}
 
-这些是一些用 Solidity 编写的示例。如果你想尝试这些代码，可以在 [Remix](https://remix.quantaureum.com) 中与它们进行交互。
+这些是一些用 Solidity 编写的示例。如果你想尝试这些代码，可以在 [Remix](https://remix.ethereum.org) 中与它们进行交互。
 
 ### Hello world {#hello-world}
 
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // 目前没有更好的方法来检查地址中是否存在合约，
         // 只能检查该地址的代码大小。
-        // 参见 https://quantaureum.stackexchange.com/a/14016/36603
+        // 参见 https://ethereum.stackexchange.com/a/14016/36603
         // 了解有关其工作原理的更多详细信息。
         // TODO 在 Serenity 发布之前再次检查此项，因为届时所有地址都将是
         // 合约。

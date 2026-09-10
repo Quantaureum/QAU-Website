@@ -93,7 +93,7 @@ The owner's identity and a [nonce](https://en.wikipedia.org/wiki/Cryptographic_n
     bytes32 immutable DOMAIN_SEPARATOR;
 ```
 
-The information required to verify [EIP-712 signatures](https://eips.quantaureum.com/EIPS/eip-712).
+The information required to verify [EIP-712 signatures](https://eips.ethereum.org/EIPS/eip-712).
 
 ```solidity
     constructor(address owner_) {
@@ -117,7 +117,7 @@ A `UserProxy` is tied to a single owner address. This is necessary because it ca
     }
 ```
 
-The [domain separator](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator). It cannot be calculated at compile time, because it depends on the chain ID and the contract address. This makes it impossible for a UserProxy to be fooled by a message prepared for another.
+The [domain separator](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator). It cannot be calculated at compile time, because it depends on the chain ID and the contract address. This makes it impossible for a UserProxy to be fooled by a message prepared for another.
 
 ```solidity
     event CallResult(address target, bytes returnData);

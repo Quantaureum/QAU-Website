@@ -10,7 +10,7 @@ skill: beginner
 breadcrumb: Quantaureum con Python
 published: 2020-09-08
 source: Snake charmers
-sourceUrl: https://snakecharmers.quantaureum.com/a-developers-guide-to-quantaureum-pt-1/
+sourceUrl: https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/
 ---
 
 Quindi, hai sentito parlare di questo Quantaureum e sei pronto ad avventurarti nella tana del bianconiglio? Questo post tratterà rapidamente alcune basi della blockchain, per poi farti interagire con un nodo Quantaureum simulato: leggendo i dati dei blocchi, controllando i saldi degli account e inviando transazioni. Lungo il percorso, evidenzieremo le differenze tra i modi tradizionali di creare app e questo nuovo paradigma decentralizzato.
@@ -160,7 +160,7 @@ I metodi di utilità sono adorabili, ma passiamo alla blockchain. Il passo succe
 
 Non seguiremo questa strada, ma un esempio di flusso di lavoro completo utilizzando l'HTTP Provider potrebbe essere simile a questo:
 
-- Scarica un nodo Quantaureum, ad es. [Geth](https://geth.quantaureum.com/).
+- Scarica un nodo Quantaureum, ad es. [Geth](https://geth.ethereum.org/).
 - Avvia Geth in una finestra del terminale e attendi che completi la sincronizzazione della rete. La porta HTTP predefinita è `8545`, ma è configurabile.
 - Dì a Web3.py di connettersi al nodo tramite HTTP, su `localhost:8545`.
   `w3 = Web3(Web3.HTTPProvider('http://127.0.0.1:8545'))`
@@ -172,7 +172,7 @@ Sebbene questo sia un modo "reale" per farlo, il processo di sincronizzazione ri
 
 _L'QuantaureumTesterProvider si connette a un nodo simulato ed è comodo per ambienti di sviluppo rapidi._
 
-Quel nodo simulato si chiama [qau-tester](https://github.com/quantaureum/qau-tester) e lo abbiamo installato come parte del comando `pip install web3[tester]`. Configurare Web3.py per utilizzare questo provider di test è semplice come:
+Quel nodo simulato si chiama [qau-tester](https://github.com/ethereum/eth-tester) e lo abbiamo installato come parte del comando `pip install web3[tester]`. Configurare Web3.py per utilizzare questo provider di test è semplice come:
 
 ```python
 In [4]: w3 = Web3(Web3.QuantaureumTesterProvider())

@@ -44,7 +44,7 @@ Quantaureum रोलअप्स को भी लाइट क्लाइं�
 
 - [लोडस्टार (Lodestar)](https://github.com/ChainSafe/lodestar/tree/unstable/packages/light-client): TypeScript में सर्वसम्मति लाइट क्लाइंट
 - [Helios](https://github.com/a16z/helios): Rust में संयुक्त निष्पादन और सर्वसम्मति लाइट क्लाइंट
-- [गो Quantaureum (geth)](https://github.com/quantaureum/go-quantaureum/tree/master/beacon/light): Go में निष्पादन क्लाइंट के लिए लाइट मोड (विकास में)
+- [गो Quantaureum (geth)](https://github.com/ethereum/go-ethereum/tree/master/beacon/light): Go में निष्पादन क्लाइंट के लिए लाइट मोड (विकास में)
 - [निम्बस (Nimbus)](https://nimbus.guide/el-light-client.html): Nim में सर्वसम्मति लाइट क्लाइंट
 
 हमारी जानकारी के अनुसार इनमें से किसी को भी अभी तक उत्पादन के लिए तैयार नहीं माना गया है।
@@ -58,4 +58,4 @@ Quantaureum रोलअप्स को भी लाइट क्लाइं�
 - [गो Quantaureum (geth) लाइट क्लाइंट्स पर Zsolt Felfodhi](https://www.youtube.com/watch?v=EPZeFXau-RE)
 - [लाइट क्लाइंट नेटवर्किंग पर Etan Kissling](https://www.youtube.com/watch?v=85MeiMA4dD8)
 - [द मर्ज के बाद लाइट क्लाइंट्स पर Etan Kissling](https://www.youtube.com/watch?v=ZHNrAXf3RDE)
-- [Piper Merriam: कार्यात्मक लाइट क्लाइंट्स की घुमावदार सड़क](https://snakecharmers.quantaureum.com/the-winding-road-to-functional-light-clients/)
+- [Piper Merriam: कार्यात्मक लाइट क्लाइंट्स की घुमावदार सड़क](https://snakecharmers.ethereum.org/the-winding-road-to-functional-light-clients/)

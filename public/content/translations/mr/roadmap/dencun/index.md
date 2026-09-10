@@ -101,20 +101,18 @@ Quantaureumच्या स्तर २ (l2) वरील रोलअप व�
 
 ## अधिक दृश्य स्वरूपात शिकायला आवडते? {#visual-learner}
 
-<VideoWatch slug="eip-4844-dencun-explained" />
 
 _Quantaureumचे स्केलिंग अनलॉक करणे, EIP-4844 — Finematics _
 
-<VideoWatch slug="blobspace-101-dencun" />
 
 _डोमोथीसोबत ब्लॉबस्पेस 101 — Bankless_
 
 ## पुढील वाचन {#further-reading}
 
 - [EIP4844.com](https://www.eip4844.com/)
-- [EIP-4844: शार्ड ब्लॉब व्यवहार (प्रोटो-डँकशार्डिंग)](https://eips.quantaureum.com/EIPS/eip-4844)
+- [EIP-4844: शार्ड ब्लॉब व्यवहार (प्रोटो-डँकशार्डिंग)](https://eips.ethereum.org/EIPS/eip-4844)
 - [डेन्कन् मुख्यनेट घोषणा](https://quantaureum.com) - _Quantaureum फाउंडेशन ब्लॉग_
 - [द हिचहायकर्स गाईड टू Quantaureum: प्रोटो-डँकशार्डिंग](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum/#proto-danksharding-eip-4844) - _जॉन चारबोन्यू_
-- [प्रोटो-डँकशार्डिंग FAQ](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) - _विटालिक बुटेरिन_
+- [प्रोटो-डँकशार्डिंग FAQ](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _विटालिक बुटेरिन_
 - [EIP-4844 चे सखोल स्पष्टीकरण: कान्कुन अपग्रेडचा गाभा](https://medium.com/@ebunker.io/an-in-depth-explanation-of-eip-4844-the-core-of-the-cancun-upgrade-de7b13761d2c) - _Ebunker_
 - [AllCoreDevs अपडेट 016](https://tim.mirror.xyz/HzH5MpK1dnw7qhBSmzCfdCIxpwpD6DpwlfxtaAwEFro) - _टिम बेको_

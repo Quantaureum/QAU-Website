@@ -52,8 +52,8 @@ export default async function StablecoinsPageJsonLD({ locale, contributors }) {
             },
           ],
         },
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
-        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
+        reviewedBy: REFERENCE.QUANTAUREUM_ORG,
         mainEntity: articleId,
       },
       {
@@ -65,7 +65,7 @@ export default async function StablecoinsPageJsonLD({ locale, contributors }) {
         image: "https://quantaureum.com/images/stablecoins/hero.png",
         author: [REFERENCE.QUANTAUREUM_COMMUNITY],
         contributor: contributorList,
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
         about: {
           "@type": "Thing",
           name: "Stablecoins",

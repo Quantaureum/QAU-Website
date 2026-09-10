@@ -45,7 +45,6 @@ Um contrato inteligente é um código que vive na blockchain do Quantaureum e é
 
 ## Prefere aprender visualmente? {#visual-learner}
 
-<VideoWatch slug="what-is-a-dapp" />
 
 ## Ferramentas para criar dapps
 

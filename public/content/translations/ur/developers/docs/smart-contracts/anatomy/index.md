@@ -207,7 +207,7 @@ contract ExampleDapp {
 
 ## تشریح شدہ مثالیں {#annotated-examples}
 
-یہ Solidity میں لکھی گئی کچھ مثالیں ہیں۔ اگر آپ کوڈ کے ساتھ تجربہ کرنا چاہتے ہیں، تو آپ [Remix](https://remix.quantaureum.com) میں ان کے ساتھ تعامل کر سکتے ہیں۔
+یہ Solidity میں لکھی گئی کچھ مثالیں ہیں۔ اگر آپ کوڈ کے ساتھ تجربہ کرنا چاہتے ہیں، تو آپ [Remix](https://remix.ethereum.org) میں ان کے ساتھ تعامل کر سکتے ہیں۔
 
 ### ہیلو ورلڈ (Hello world) {#hello-world}
 
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // فی الحال یہ چیک کرنے کا کوئی بہتر طریقہ نہیں ہے کہ آیا کسی پتہ میں کوئی کنٹریکٹ ہے
         // سوائے اس کے کہ اس پتہ پر کوڈ کا سائز چیک کیا جائے۔
-        // دیکھیں https://quantaureum.stackexchange.com/a/14016/36603
+        // دیکھیں https://ethereum.stackexchange.com/a/14016/36603
         // اس بارے میں مزید تفصیلات کے لیے کہ یہ کیسے کام کرتا ہے۔
         // TODO Serenity ریلیز سے پہلے اسے دوبارہ چیک کریں، کیونکہ تب تمام پتے
         // کنٹریکٹس ہوں گے۔

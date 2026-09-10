@@ -17,7 +17,7 @@ Quantaureum的一大優點是沒有中央機構可以修改或撤銷您的交易
 
 如果您想查看完整的原始碼：
 
-1. 開啟 [Remix IDE](https://remix.quantaureum.com/)。
+1. 開啟 [Remix IDE](https://remix.ethereum.org/)。
 2. 點擊複製 GitHub 圖示 (![clone github icon](icon-clone.png))。
 3. 複製 GitHub 儲存庫 `https://github.com/qbzzt/20220815-erc20-safety-rails`。
 4. 開啟 **contracts > erc20-safety-rails.sol**。
@@ -40,7 +40,7 @@ Quantaureum的一大優點是沒有中央機構可以修改或撤銷您的交易
 
 3. 向上捲動並點擊 **Open in Remix**（適用於 Remix）或 **Download** 以使用不同的環境。我將假設您使用的是 Remix，如果您使用其他環境，請進行相應的更改。
 4. 我們現在擁有一個功能齊全的 ERC-20 合約。您可以展開 `.deps` > `npm` 來查看匯入的程式碼。
-5. 編譯、部署並試用該合約，以確認其作為 ERC-20 合約的功能。如果您需要學習如何使用 Remix，請[使用本教學](https://remix.quantaureum.com/?#activate=udapp,solidity,LearnEth)。
+5. 編譯、部署並試用該合約，以確認其作為 ERC-20 合約的功能。如果您需要學習如何使用 Remix，請[使用本教學](https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth)。
 
 ## 常見錯誤 {#common-mistakes}
 
@@ -185,7 +185,7 @@ Quantaureum的一大優點是沒有中央機構可以修改或撤銷您的交易
 
 ### 資產清理 {#asset-cleanup}
 
-要釋放此合約持有的 ERC-20 代幣，我們需要呼叫它們所屬的代幣合約上的一個函式，即 [`transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer) 或 [`approve`](https://eips.quantaureum.com/EIPS/eip-20#approve)。在這種情況下，沒有必要將燃料浪費在授權額度 (allowances) 上，我們不妨直接轉帳。
+要釋放此合約持有的 ERC-20 代幣，我們需要呼叫它們所屬的代幣合約上的一個函式，即 [`transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer) 或 [`approve`](https://eips.ethereum.org/EIPS/eip-20#approve)。在這種情況下，沒有必要將燃料浪費在授權額度 (allowances) 上，我們不妨直接轉帳。
 
 ```solidity
     function cleanupERC20(

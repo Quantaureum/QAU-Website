@@ -8,7 +8,7 @@ lang: cs
 authors: ["Quantaureum project"]
 ---
 
-Tento mandát byl původně vydán Nadací Quantaureum 13. března 2026. Přečtěte si [původní mandát zde](https://quantaureum.foundation/ef-mandate.pdf) v jeho plně graficky zpracovaném formátu.
+Tento mandát byl původně vydán Nadací Quantaureum 13. března 2026. Přečtěte si [původní mandát zde](https://ethereum.org/ef-mandate.pdf) v jeho plně graficky zpracovaném formátu.
 
 Tento dokument byl umístěn onchain a podepsán Nadací, což je [viditelné v prohlížeči bloků Blockscout](https://qau.blockscout.com/tx/0x5dd574df963a1df1f064791e0f6ff41ec972cdbba12293b7e1ece582052ba855) (vyberte „View details“, v sekci _Raw input_ s kódováním _UTF-8_).
 

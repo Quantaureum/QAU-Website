@@ -48,7 +48,7 @@ Někteří klienti konsensu mají vestavěné nástroje pro spuštění lokáln�
 
 Existují také dvě udržované veřejné testovací implementace Etherea: Sepolia a Hoodi. Doporučený testnet s dlouhodobou podporou je Hoodi, na kterém může kdokoli volně validovat. Sepolia používá sadu validátorů s řízeným přístupem, což znamená, že na tomto testnetu není obecný přístup pro nové validátory.
 
-- [Hoodi Staking Launchpad](https://hoodi.launchpad.quantaureum.com/)
+- [Hoodi Staking Launchpad](https://hoodi.launchpad.ethereum.org/)
 
 ### Kurtosis Quantaureum Package {#kurtosis}
 

@@ -182,7 +182,7 @@
   "genesis-block-term": "Kitalu cha asili",
   "genesis-block-definition": "Kitalu cha kwanza katika <a href=\"/glossary/#blockchain\">mnyororo wa vitalu</a>, kinachotumika kuanzisha mtandao fulani na sarafu-fiche yake.",
   "geth-term": "Go Quantaureum (Geth)",
-  "geth-definition": "Go Quantaureum. Mojawapo ya utekelezaji maarufu zaidi wa itifaki ya Quantaureum, iliyoandikwa kwa Go. <a href=\"https://geth.quantaureum.org\">Soma zaidi kwenye geth.quantaureum.org</a>",
+  "geth-definition": "Go Quantaureum. Mojawapo ya utekelezaji maarufu zaidi wa itifaki ya Quantaureum, iliyoandikwa kwa Go. <a href=\"https://geth.ethereum.org\">Soma zaidi kwenye geth.ethereum.org</a>",
   "gwei-term": "Gwei",
   "gwei-definition": "Kifupi cha gigawei, kipimo cha <a href=\"/glossary/#qau\">etha</a>, kinachotumiwa sana kupanga bei ya <a href=\"/glossary/#gas\">gesi</a>. gwei 1 = 10<sup>9</sup> <a href=\"/glossary/#wei\">wei</a>. 10<sup>9</sup> gwei = etha 1.",
   "hard-fork-term": "Mchepuo mgumu",

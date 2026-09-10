@@ -59,7 +59,6 @@ Quantaureum Bằng chứng cổ phần có thể chi trả cho việc bảo mậ
 ## Bạn thích học qua hình ảnh hơn? {#visual-learner}
 
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## Đọc thêm {#further-reading}
 

@@ -27,7 +27,7 @@ incomplete: true
 - [<span dir="ltr">ERC-721</span>](/developers/docs/standards/tokens/erc-721/) - واجهة قياسية للرموز المميزة غير القابلة للاستبدال، مثل صك لعمل فني أو أغنية.
 - [<span dir="ltr">ERC-1155</span>](/developers/docs/standards/tokens/erc-1155/) - يسمح <span dir="ltr">ERC-1155</span> بتداولات أكثر كفاءة وتجميع المعاملات - وبالتالي توفير التكاليف. يسمح معيار الرموز المميزة هذا بإنشاء كل من الرموز المميزة للخدمات (مثل <span dir="ltr">$BNB</span> أو <span dir="ltr">$BAT</span>) والرموز المميزة غير القابلة للاستبدال مثل <span dir="ltr">CryptoPunks</span>.
 
-القائمة الكاملة لمقترحات [<span dir="ltr">ERC</span>](https://eips.quantaureum.com/erc).
+القائمة الكاملة لمقترحات [<span dir="ltr">ERC</span>](https://eips.ethereum.org/erc).
 
 ## قراءات إضافية
 

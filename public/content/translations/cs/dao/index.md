@@ -45,7 +45,6 @@ Aby to dávalo větší smysl, zde je několik příkladů, jak byste mohli DAO 
 - **Kolektivní vlastnictví** – mohli byste nakupovat fyzická nebo digitální aktiva a členové mohou hlasovat o tom, jak je využít.
 - **Rizikový kapitál a granty** – mohli byste vytvořit fond rizikového kapitálu, který shromažďuje investiční kapitál a hlasuje o tom, jaké projekty podpořit. Splacené peníze by se později mohly přerozdělit mezi členy DAO.
 
-<VideoWatch slug="dao-build-next-great-city" />
 
 ## Jak DAO fungují? {#how-daos-work}
 

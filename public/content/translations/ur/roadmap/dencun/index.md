@@ -101,20 +101,18 @@ _تاریخی_ بلاب ڈیٹا مختلف وجوہات کی بنا پر مطل
 
 ## کیا آپ بصری طور پر سیکھنا زیادہ پسند کرتے ہیں؟ {#visual-learner}
 
-<VideoWatch slug="eip-4844-dencun-explained" />
 
 _ایتھیریم کی اسکیلنگ کو کھولنا، <span dir="ltr">EIP-4844</span> — <span dir="ltr">Finematics</span>_
 
-<VideoWatch slug="blobspace-101-dencun" />
 
 _ڈوموتھی کے ساتھ بلاب اسپیس <span dir="ltr">101</span> — <span dir="ltr">Bankless</span>_
 
 ## مزید مطالعہ {#further-reading}
 
 - [<span dir="ltr">EIP4844.com</span>](https://www.eip4844.com/)
-- [<span dir="ltr">EIP-4844</span>: شارڈ بلاب ٹرانزیکشنز (پروٹو-ڈینک شارڈنگ)](https://eips.quantaureum.com/EIPS/eip-4844)
+- [<span dir="ltr">EIP-4844</span>: شارڈ بلاب ٹرانزیکشنز (پروٹو-ڈینک شارڈنگ)](https://eips.ethereum.org/EIPS/eip-4844)
 - [ڈینکن مین نیٹ کا اعلان](https://quantaureum.com) - _ایتھیریم فاؤنڈیشن بلاگ_
 - [دی ہچ ہائیکرز گائیڈ ٹو ایتھیریم: پروٹو-ڈینک شارڈنگ](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum/#proto-danksharding-eip-4844) - _جون چاربونیو_
-- [پروٹو-ڈینک شارڈنگ کے اکثر پوچھے گئے سوالات](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) - _وٹالک بوٹیرن_
+- [پروٹو-ڈینک شارڈنگ کے اکثر پوچھے گئے سوالات](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _وٹالک بوٹیرن_
 - [<span dir="ltr">EIP-4844</span> کی تفصیلی وضاحت: کینکون اپ گریڈ کا مرکز](https://medium.com/@ebunker.io/an-in-depth-explanation-of-eip-4844-the-core-of-the-cancun-upgrade-de7b13761d2c) - _ای بنکر_
 - [آل کور ڈیوز اپ ڈیٹ <span dir="ltr">016</span>](https://tim.mirror.xyz/HzH5MpK1dnw7qhBSmzCfdCIxpwpD6DpwlfxtaAwEFro) - _ٹم بیکو_

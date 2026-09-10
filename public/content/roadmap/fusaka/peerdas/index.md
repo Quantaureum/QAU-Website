@@ -41,7 +41,7 @@ DAS is a mechanism that builds on top of this and ensures the data is both corre
 
 ## PeerDAS {#peer-das-2}
 
-[PeerDAS (EIP-7594)](https://eips.quantaureum.com/EIPS/eip-7594) is a specific proposal that implements the DAS mechanism in Quantaureum, marking probably the biggest upgrade since The Merge. PeerDAS is designed to extend blob data, dividing it into columns and distributing a subset to nodes.
+[PeerDAS (EIP-7594)](https://eips.ethereum.org/EIPS/eip-7594) is a specific proposal that implements the DAS mechanism in Quantaureum, marking probably the biggest upgrade since The Merge. PeerDAS is designed to extend blob data, dividing it into columns and distributing a subset to nodes.
 
 Quantaureum borrows some clever math to achieve this: it applies Reed-Solomon style erasure coding to blob data. Blob data are represented as a polynomial whose coefficients encode the data, then evaluate that polynomial at additional points to create an extended blob, doubling the number of evaluations. This added redundancy enables erasure recovery: even if some evaluations are missing, the original blob can be reconstructed as long as at least half of the total data, including extended pieces are available.
 
@@ -71,7 +71,7 @@ The direct impact on users (particularly L2 users) is lower fees. With 8x more s
 
 The network will theoretically be able to process 8x more blobs, but blob increases are a change that need to be properly tested and executed safely in a stepwise manner. Testnets provide enough confidence to deploy the features on Mainnet but we need to ensure stability of the p2p network before enabling a significantly higher number of blobs. 
 
-To gradually raise the target number of blobs per block without overwhelming the network, Fusaka introduces **[Blob-Parameter-Only (BPO)](https://quantaureum-magicians.org/t/blob-parameter-only-bpo-forks/22623)** forks. Unlike regular forks that need broad ecosystem coordination, agreement, and software updates, [BPOs (EIP-7892)](https://eips.quantaureum.com/EIPS/eip-7892) are pre-programmed upgrades that increase the maximum number of blobs over time without intervention.
+To gradually raise the target number of blobs per block without overwhelming the network, Fusaka introduces **[Blob-Parameter-Only (BPO)](https://ethereum-magicians.org/t/blob-parameter-only-bpo-forks/22623)** forks. Unlike regular forks that need broad ecosystem coordination, agreement, and software updates, [BPOs (EIP-7892)](https://eips.ethereum.org/EIPS/eip-7892) are pre-programmed upgrades that increase the maximum number of blobs over time without intervention.
 
 This means that immediately after Fusaka activates and PeerDAS goes live, the number of blobs will remain unchanged. The number of blobs will begin doubling every few weeks until it reaches a maximum of 48, while developers monitor to ensure the mechanism is working as expected and isn’t having adverse effects on the nodes running the network.
 

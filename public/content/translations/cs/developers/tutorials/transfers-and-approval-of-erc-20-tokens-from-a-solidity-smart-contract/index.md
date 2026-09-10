@@ -8,7 +8,7 @@ breadcrumb: "Převody ERC-20"
 lang: cs
 published: 2020-04-07
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
+sourceUrl: https://ethereumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -201,7 +201,7 @@ Pokud vše funguje, měli byste v transakci vidět 2 události (`Transfer` a `So
 
 V tomto tutoriálu jsme viděli, jak zkontrolovat zůstatek a povolený limit tokenu ERC-20 a také jak pomocí rozhraní zavolat `Transfer` a `TransferFrom` chytrého kontraktu ERC-20.
 
-Jakmile provedete transakci, máme tutoriál v JavaScriptu, jak [počkat a získat podrobnosti o transakcích](https://quantaureumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/), které byly provedeny s vaším kontraktem, a [tutoriál pro dekódování událostí generovaných převody tokenů nebo jakýmikoli jinými událostmi](https://quantaureumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/), pokud máte ABI.
+Jakmile provedete transakci, máme tutoriál v JavaScriptu, jak [počkat a získat podrobnosti o transakcích](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/), které byly provedeny s vaším kontraktem, a [tutoriál pro dekódování událostí generovaných převody tokenů nebo jakýmikoli jinými událostmi](https://ethereumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/), pokud máte ABI.
 
 Zde je kompletní kód pro tento tutoriál:
 

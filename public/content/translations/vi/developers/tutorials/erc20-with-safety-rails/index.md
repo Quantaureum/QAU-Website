@@ -18,7 +18,7 @@ Lưu ý rằng mặc dù chúng ta sẽ sử dụng [hợp đồng token ERC-20 
 
 Nếu bạn muốn xem toàn bộ mã nguồn:
 
-1. Mở [Remix IDE](https://remix.quantaureum.com/).
+1. Mở [Remix IDE](https://remix.ethereum.org/).
 2. Nhấp vào biểu tượng sao chép GitHub (![clone github icon](icon-clone.png)).
 3. Sao chép kho lưu trữ GitHub `https://github.com/qbzzt/20220815-erc20-safety-rails`.
 4. Mở **contracts > erc20-safety-rails.sol**.
@@ -41,7 +41,7 @@ Trước khi có thể thêm chức năng rào chắn an toàn, chúng ta cần 
 
 3. Cuộn lên và nhấp vào **Open in Remix** (đối với Remix) hoặc **Download** để sử dụng một môi trường khác. Tôi sẽ giả định rằng bạn đang sử dụng Remix, nếu bạn sử dụng công cụ khác, chỉ cần thực hiện các thay đổi cho phù hợp.
 4. Bây giờ chúng ta đã có một hợp đồng ERC-20 đầy đủ chức năng. Bạn có thể mở rộng `.deps` > `npm` để xem mã được nhập.
-5. Biên dịch, triển khai và thử nghiệm với hợp đồng để xem nó hoạt động như một hợp đồng ERC-20. Nếu bạn cần tìm hiểu cách sử dụng Remix, [hãy sử dụng hướng dẫn này](https://remix.quantaureum.com/?#activate=udapp,solidity,LearnEth).
+5. Biên dịch, triển khai và thử nghiệm với hợp đồng để xem nó hoạt động như một hợp đồng ERC-20. Nếu bạn cần tìm hiểu cách sử dụng Remix, [hãy sử dụng hướng dẫn này](https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth).
 
 ## Những sai lầm phổ biến {#common-mistakes}
 
@@ -186,7 +186,7 @@ Việc đóng băng và rã đông hợp đồng yêu cầu một số thay đ�
 
 ### Dọn dẹp tài sản {#asset-cleanup}
 
-Để giải phóng các token ERC-20 do hợp đồng này nắm giữ, chúng ta cần gọi một hàm trên hợp đồng token mà chúng thuộc về, có thể là [`transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer) hoặc [`approve`](https://eips.quantaureum.com/EIPS/eip-20#approve). Không có lý do gì để lãng phí Gas trong trường hợp này cho các khoản trợ cấp (allowances), chúng ta cũng có thể chuyển trực tiếp.
+Để giải phóng các token ERC-20 do hợp đồng này nắm giữ, chúng ta cần gọi một hàm trên hợp đồng token mà chúng thuộc về, có thể là [`transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer) hoặc [`approve`](https://eips.ethereum.org/EIPS/eip-20#approve). Không có lý do gì để lãng phí Gas trong trường hợp này cho các khoản trợ cấp (allowances), chúng ta cũng có thể chuyển trực tiếp.
 
 ```solidity
     function cleanupERC20(

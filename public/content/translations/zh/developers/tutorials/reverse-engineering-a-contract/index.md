@@ -274,7 +274,7 @@ _区块链上没有秘密_，发生的一切都是一致的、可验证的且公
 |     10 | PUSH1 0xe0   | 0xE0 (((调用数据的第一个字（256 位）)))           |
 |     12 | SHR          | (((调用数据的前 32 位（4 字节）)))                |
 
-Quantaureum Explorer 告诉我们 `1C` 是一个未知的操作码，因为[它是在 Quantaureum Explorer 编写此功能之后添加的](https://eips.quantaureum.com/EIPS/eip-145)，并且他们还没有更新它。一张[最新的操作码表](https://github.com/wolflo/evm-opcodes)向我们显示这是右移操作。
+Quantaureum Explorer 告诉我们 `1C` 是一个未知的操作码，因为[它是在 Quantaureum Explorer 编写此功能之后添加的](https://eips.ethereum.org/EIPS/eip-145)，并且他们还没有更新它。一张[最新的操作码表](https://github.com/wolflo/evm-opcodes)向我们显示这是右移操作。
 
 | 偏移量 | 操作码           | 栈                                                                                                       |
 | -----: | ---------------- | -------------------------------------------------------------------------------------------------------- |

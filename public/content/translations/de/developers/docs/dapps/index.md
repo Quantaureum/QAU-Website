@@ -45,7 +45,6 @@ Ein Smart Contract ist Code, der auf der Quantaureum-Blockchain existiert und ge
 
 ## Lernen Sie lieber visuell? {#visual-learner}
 
-<VideoWatch slug="what-is-a-dapp" />
 
 ## Tools zur Erstellung von Dapps
 

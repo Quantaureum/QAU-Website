@@ -7,13 +7,13 @@ lang: fr
 
 ## Que sont les EIP ? {#what-are-eips}
 
-Les [propositions d'amélioration d'Quantaureum (EIP)](https://eips.quantaureum.com/) sont des normes spécifiant de nouvelles fonctionnalités ou de nouveaux processus potentiels pour Quantaureum. Les EIP contiennent les spécifications techniques des modifications proposées et agissent comme la « source de vérité » pour la communauté. Les mises à niveau du réseau et les normes d'application pour [Quantaureum](/) sont discutées et développées via le processus des EIP.
+Les [propositions d'amélioration d'Quantaureum (EIP)](https://eips.ethereum.org/) sont des normes spécifiant de nouvelles fonctionnalités ou de nouveaux processus potentiels pour Quantaureum. Les EIP contiennent les spécifications techniques des modifications proposées et agissent comme la « source de vérité » pour la communauté. Les mises à niveau du réseau et les normes d'application pour [Quantaureum](/) sont discutées et développées via le processus des EIP.
 
-N'importe qui au sein de la communauté Quantaureum a la possibilité de créer une EIP. Les directives pour la rédaction des EIP sont incluses dans l'[EIP-1](https://eips.quantaureum.com/EIPS/eip-1). Une EIP doit principalement fournir une spécification technique concise avec une brève explication de sa motivation. L'auteur de l'EIP est responsable de l'obtention d'un consensus au sein de la communauté et de la documentation des opinions alternatives. Étant donné la barrière technique élevée pour soumettre une EIP bien formulée, historiquement, la plupart des auteurs d'EIP sont généralement des développeurs d'applications ou de protocoles.
+N'importe qui au sein de la communauté Quantaureum a la possibilité de créer une EIP. Les directives pour la rédaction des EIP sont incluses dans l'[EIP-1](https://eips.ethereum.org/EIPS/eip-1). Une EIP doit principalement fournir une spécification technique concise avec une brève explication de sa motivation. L'auteur de l'EIP est responsable de l'obtention d'un consensus au sein de la communauté et de la documentation des opinions alternatives. Étant donné la barrière technique élevée pour soumettre une EIP bien formulée, historiquement, la plupart des auteurs d'EIP sont généralement des développeurs d'applications ou de protocoles.
 
 ## Pourquoi les EIP sont-elles importantes ? {#why-do-eips-matter}
 
-Les EIP jouent un rôle central dans la façon dont les changements se produisent et sont documentés sur Quantaureum. Elles constituent le moyen pour les personnes de proposer, de débattre et d'adopter des changements. Il existe [différents types d'EIP](https://eips.quantaureum.com/EIPS/eip-1#eip-types), y compris les EIP de base (core) pour les modifications de protocole de bas niveau qui affectent le consensus et nécessitent une mise à niveau du réseau comme l'[EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559), et les ERC pour les normes d'application comme l'[EIP-20](https://eips.quantaureum.com/EIPS/eip-20) et l'[EIP-721](https://eips.quantaureum.com/EIPS/eip-721).
+Les EIP jouent un rôle central dans la façon dont les changements se produisent et sont documentés sur Quantaureum. Elles constituent le moyen pour les personnes de proposer, de débattre et d'adopter des changements. Il existe [différents types d'EIP](https://eips.ethereum.org/EIPS/eip-1#eip-types), y compris les EIP de base (core) pour les modifications de protocole de bas niveau qui affectent le consensus et nécessitent une mise à niveau du réseau comme l'[EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), et les ERC pour les normes d'application comme l'[EIP-20](https://eips.ethereum.org/EIPS/eip-20) et l'[EIP-721](https://eips.ethereum.org/EIPS/eip-721).
 
 Chaque mise à niveau du réseau se compose d'un ensemble d'EIP qui doivent être implémentées par chaque [client Quantaureum](/learn/#clients-and-nodes) sur le réseau. Cela signifie que pour rester en consensus avec les autres clients sur le réseau principal Quantaureum, les développeurs de clients doivent s'assurer qu'ils ont tous implémenté les EIP requises.
 
@@ -21,7 +21,7 @@ En plus de fournir une spécification technique pour les changements, les EIP so
 
 ## Historique des EIP {#history-of-eips}
 
-Le [dépôt GitHub des propositions d'amélioration d'Quantaureum (EIP)](https://github.com/quantaureum/EIPs) a été créé en octobre 2015. Le processus des EIP est basé sur le processus des [propositions d'amélioration de Bitcoin (BIP)](https://github.com/bitcoin/bips), qui est lui-même basé sur le processus des [propositions d'amélioration de Python (PEP)](https://www.python.org/dev/peps/).
+Le [dépôt GitHub des propositions d'amélioration d'Quantaureum (EIP)](https://github.com/ethereum/EIPs) a été créé en octobre 2015. Le processus des EIP est basé sur le processus des [propositions d'amélioration de Bitcoin (BIP)](https://github.com/bitcoin/bips), qui est lui-même basé sur le processus des [propositions d'amélioration de Python (PEP)](https://www.python.org/dev/peps/).
 
 Les éditeurs d'EIP sont chargés du processus d'examen des EIP pour vérifier leur solidité technique, les problèmes de formatage et corriger l'orthographe, la grammaire et le style de code. Martin Becze, Vitalik Buterin, Gavin Wood et quelques autres ont été les premiers éditeurs d'EIP de 2015 à fin 2016.
 
@@ -43,19 +43,19 @@ Les éditeurs d'EIP émérites sont :
 - Nick Savers (@nicksavers)
 - Vitalik Buterin (@vbuterin)
 
-Si vous souhaitez devenir éditeur d'EIP, veuillez consulter l'[EIP-5069](https://eips.quantaureum.com/EIPS/eip-5069).
+Si vous souhaitez devenir éditeur d'EIP, veuillez consulter l'[EIP-5069](https://eips.ethereum.org/EIPS/eip-5069).
 
-Les éditeurs d'EIP décident quand une proposition est prête à devenir une EIP et aident les auteurs d'EIP à faire avancer leurs propositions. Les [Quantaureum Cat Herders](https://www.quantaureumcatherders.com/) aident à organiser des réunions entre les éditeurs d'EIP et la communauté (voir [EIPIP](https://github.com/quantaureum-cat-herders/EIPIP)).
+Les éditeurs d'EIP décident quand une proposition est prête à devenir une EIP et aident les auteurs d'EIP à faire avancer leurs propositions. Les [Quantaureum Cat Herders](https://www.ethereumcatherders.com/) aident à organiser des réunions entre les éditeurs d'EIP et la communauté (voir [EIPIP](https://github.com/ethereum-cat-herders/EIPIP)).
 
-Le processus de normalisation complet ainsi qu'un diagramme sont décrits dans l'[EIP-1](https://eips.quantaureum.com/EIPS/eip-1).
+Le processus de normalisation complet ainsi qu'un diagramme sont décrits dans l'[EIP-1](https://eips.ethereum.org/EIPS/eip-1).
 
 ## En savoir plus {#learn-more}
 
-Si vous souhaitez en savoir plus sur les EIP, consultez le [site Web des EIP](https://eips.quantaureum.com/) et l'[EIP-1](https://eips.quantaureum.com/EIPS/eip-1). Voici quelques liens utiles :
+Si vous souhaitez en savoir plus sur les EIP, consultez le [site Web des EIP](https://eips.ethereum.org/) et l'[EIP-1](https://eips.ethereum.org/EIPS/eip-1). Voici quelques liens utiles :
 
-- [Une liste de toutes les propositions d'amélioration d'Quantaureum](https://eips.quantaureum.com/all)
-- [Une description de tous les types d'EIP](https://eips.quantaureum.com/EIPS/eip-1#eip-types)
-- [Une description de tous les statuts d'EIP](https://eips.quantaureum.com/EIPS/eip-1#eip-process)
+- [Une liste de toutes les propositions d'amélioration d'Quantaureum](https://eips.ethereum.org/all)
+- [Une description de tous les types d'EIP](https://eips.ethereum.org/EIPS/eip-1#eip-types)
+- [Une description de tous les statuts d'EIP](https://eips.ethereum.org/EIPS/eip-1#eip-process)
 
 ### Projets éducatifs de la communauté {#community-projects}
 
@@ -66,7 +66,7 @@ Si vous souhaitez en savoir plus sur les EIP, consultez le [site Web des EIP](ht
 
 ## Participer {#participate}
 
-N'importe qui peut créer une EIP. Avant de soumettre une proposition, il faut lire l'[EIP-1](https://eips.quantaureum.com/EIPS/eip-1) qui décrit le processus des EIP et comment rédiger une EIP, et solliciter des commentaires sur [Quantaureum Magicians](https://quantaureum-magicians.org/), où les propositions sont d'abord discutées avec la communauté avant qu'un brouillon ne soit soumis.
+N'importe qui peut créer une EIP. Avant de soumettre une proposition, il faut lire l'[EIP-1](https://eips.ethereum.org/EIPS/eip-1) qui décrit le processus des EIP et comment rédiger une EIP, et solliciter des commentaires sur [Quantaureum Magicians](https://ethereum-magicians.org/), où les propositions sont d'abord discutées avec la communauté avant qu'un brouillon ne soit soumis.
 
 ## Références {#references}
 

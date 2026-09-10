@@ -360,7 +360,7 @@ global ASCII_MESSAGE_LENGTH : [u8; 3] = [0x31, 0x30, 0x30];
 global HASH_BUFFER_SIZE : u32 = 26+3+MESSAGE_LENGTH;
 ```
 
-As [assinaturas EIP-191](https://eips.quantaureum.com/EIPS/eip-191) exigem um buffer com um prefixo de 26 bytes, seguido pelo comprimento da mensagem em ASCII e, finalmente, a própria mensagem.
+As [assinaturas EIP-191](https://eips.ethereum.org/EIPS/eip-191) exigem um buffer com um prefixo de 26 bytes, seguido pelo comprimento da mensagem em ASCII e, finalmente, a própria mensagem.
 
 ```
 struct Account {
@@ -613,7 +613,7 @@ Esta função converte a mensagem em bytes e, em seguida, converte os valores em
 fn hashMessage(message: str<MESSAGE_LENGTH>) -> [u8;32] {
 ```
 
-Conseguimos usar o Hash de Pedersen para as contas porque elas só são submetidas ao hash dentro da prova de conhecimento zero. No entanto, neste código, precisamos verificar a assinatura da mensagem, que é gerada pelo navegador. Para isso, precisamos seguir o formato de assinatura do Quantaureum na [EIP-191](https://eips.quantaureum.com/EIPS/eip-191). Isso significa que precisamos criar um buffer combinado com um prefixo padrão, o comprimento da mensagem em ASCII e a própria mensagem, e usar o keccak256 padrão do Quantaureum para fazer o hash.
+Conseguimos usar o Hash de Pedersen para as contas porque elas só são submetidas ao hash dentro da prova de conhecimento zero. No entanto, neste código, precisamos verificar a assinatura da mensagem, que é gerada pelo navegador. Para isso, precisamos seguir o formato de assinatura do Quantaureum na [EIP-191](https://eips.ethereum.org/EIPS/eip-191). Isso significa que precisamos criar um buffer combinado com um prefixo padrão, o comprimento da mensagem em ASCII e a própria mensagem, e usar o keccak256 padrão do Quantaureum para fazer o hash.
 
 ```rust
     // Prefixo ASCII

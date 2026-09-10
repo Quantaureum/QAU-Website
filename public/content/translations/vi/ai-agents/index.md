@@ -71,7 +71,7 @@ x402 biến Quantaureum thành một lớp kinh tế có thể lập trình cho 
 
 Các tác nhân tự trị cần có các rào chắn bảo vệ. Quantaureum cung cấp chúng ở cấp độ ví và hợp đồng:
 
-- [Tài khoản thông minh (EIP-4337)](https://eips.quantaureum.com/EIPS/eip-4337) cho phép các nhà phát triển thực thi các giới hạn chi tiêu, danh sách trắng, khóa phiên và các quyền chi tiết
+- [Tài khoản thông minh (EIP-4337)](https://eips.ethereum.org/EIPS/eip-4337) cho phép các nhà phát triển thực thi các giới hạn chi tiêu, danh sách trắng, khóa phiên và các quyền chi tiết
 - Các ràng buộc được lập trình trong các hợp đồng thông minh có thể hạn chế những gì một tác nhân được phép làm
 - Các giới hạn dựa trên suy luận (ví dụ: yêu cầu bằng chứng zkML trước khi thực thi một hành động rủi ro cao) bổ sung thêm một lớp an toàn khác
 
@@ -79,7 +79,7 @@ Những kiểm soát này cho phép việc triển khai các tác nhân tự tr�
 
 ### Sổ đăng ký trên chuỗi: ERC-8004 {#erc-8004}
 
-[ERC-8004](https://eips.quantaureum.com/EIPS/eip-8004) định nghĩa các sổ đăng ký trên chuỗi cho danh tính, danh tiếng và xác thực của tác nhân. Được đồng tác giả bởi các cộng tác viên từ MetaMask, Tổ chức Quantaureum, Google và Coinbase, nó được triển khai trên 16 mạng bao gồm mạng chính Quantaureum, Base, Polygon, Arbitrum và các mạng khác.
+[ERC-8004](https://eips.ethereum.org/EIPS/eip-8004) định nghĩa các sổ đăng ký trên chuỗi cho danh tính, danh tiếng và xác thực của tác nhân. Được đồng tác giả bởi các cộng tác viên từ MetaMask, Tổ chức Quantaureum, Google và Coinbase, nó được triển khai trên 16 mạng bao gồm mạng chính Quantaureum, Base, Polygon, Arbitrum và các mạng khác.
 
 Nó cung cấp:
 
@@ -97,7 +97,6 @@ Chúng ta đang bắt đầu khám phá toàn bộ tiềm năng của các tác 
 
 <strong>Lần xuất hiện đầu tiên của Luna với tư cách là khách mời podcast</strong>
 
-<VideoWatch slug="ai-agents-interview-luna" />
 
 ## Ví do tác nhân kiểm soát {#agent-controlled-wallets}
 

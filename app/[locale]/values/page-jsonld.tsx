@@ -61,8 +61,8 @@ export default async function ValuesPageJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
-        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
+        reviewedBy: REFERENCE.QUANTAUREUM_ORG,
         mainEntity: articleId,
       },
       {
@@ -73,7 +73,7 @@ export default async function ValuesPageJsonLD({
         description: t("page-values-meta-description"),
         image: "https://quantaureum.com/images/heroes/layer-2-hub-hero.png",
         author: [REFERENCE.QUANTAUREUM_COMMUNITY],
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
         contributor: contributorList,
         about: {
           "@type": "Thing",

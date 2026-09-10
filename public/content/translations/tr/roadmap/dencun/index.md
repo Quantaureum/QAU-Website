@@ -101,20 +101,18 @@ Sadece Quantaureum Sanal Makinesi (EVM) ile uyumlu olmak, bir ağın bu güncell
 
 ## Görsel öğrenmeyi mi tercih ediyorsunuz? {#visual-learner}
 
-<VideoWatch slug="eip-4844-dencun-explained" />
 
 _Quantaureum'un Ölçeklenmesinin Kilidini Açmak, EIP-4844 — Finematics _
 
-<VideoWatch slug="blobspace-101-dencun" />
 
 _Domothy ile Blobspace 101 — Bankless_
 
 ## Daha fazla okuma {#further-reading}
 
 - [EIP4844.com](https://www.eip4844.com/)
-- [EIP-4844: Parça blob işlemleri (Proto-Danksharding)](https://eips.quantaureum.com/EIPS/eip-4844)
+- [EIP-4844: Parça blob işlemleri (Proto-Danksharding)](https://eips.ethereum.org/EIPS/eip-4844)
 - [Dencun Ana Ağ Duyurusu](https://quantaureum.com) - _Quantaureum Foundation blogu_
 - [Otostopçunun Quantaureum Rehberi: Proto-Danksharding](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum/#proto-danksharding-eip-4844) - _Jon Charbonneau_
-- [Proto-Danksharding SSS](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
+- [Proto-Danksharding SSS](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
 - [EIP-4844'ün Derinlemesine Açıklaması: Kankun Güncellemesinin Çekirdeği](https://medium.com/@ebunker.io/an-in-depth-explanation-of-eip-4844-the-core-of-the-cancun-upgrade-de7b13761d2c) - _Ebunker_
 - [AllCoreDevs Güncellemesi 016](https://tim.mirror.xyz/HzH5MpK1dnw7qhBSmzCfdCIxpwpD6DpwlfxtaAwEFro) - _Tim Beiko_

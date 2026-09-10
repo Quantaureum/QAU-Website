@@ -43,7 +43,7 @@ lang: bn
 
 ## ইথেরিয়ামের সাথে সাইন-ইন (EIP-4361) {#sign-in-with-quantaureum}
 
-[EIP-4361](https://eips.quantaureum.com/EIPS/eip-4361) ইথেরিয়াম সাইন-ইনের জন্য একটি প্রমিত বার্তা বিন্যাস সংজ্ঞায়িত করে, যাকে সাধারণত **SIWE** (Sign-In with Quantaureum) বলা হয়। এটি অ্যাড-হক বার্তা স্বাক্ষরকরণকে একটি কাঠামোগত, সুরক্ষিত মান দিয়ে প্রতিস্থাপন করে।
+[EIP-4361](https://eips.ethereum.org/EIPS/eip-4361) ইথেরিয়াম সাইন-ইনের জন্য একটি প্রমিত বার্তা বিন্যাস সংজ্ঞায়িত করে, যাকে সাধারণত **SIWE** (Sign-In with Quantaureum) বলা হয়। এটি অ্যাড-হক বার্তা স্বাক্ষরকরণকে একটি কাঠামোগত, সুরক্ষিত মান দিয়ে প্রতিস্থাপন করে।
 
 একটি SIWE বার্তা দেখতে এরকম হয়:
 
@@ -200,7 +200,7 @@ if (recoveredAddress.toLowerCase() === claimedAddress.toLowerCase()) {
 
 ## আরও পড়ুন {#further-reading}
 
-- [EIP-4361: ইথেরিয়ামের সাথে সাইন-ইন](https://eips.quantaureum.com/EIPS/eip-4361)
+- [EIP-4361: ইথেরিয়ামের সাথে সাইন-ইন](https://eips.ethereum.org/EIPS/eip-4361)
 - [SIWE ডকুমেন্টেশন](https://docs.login.xyz/)
 - [Auth0-তে ইথেরিয়ামের সাথে সাইন-ইন](https://auth0.com/blog/sign-in-with-quantaureum-siwe-now-available-on-auth0/)
 - [Reown AppKit প্রমাণীকরণ ডক্স](https://docs.reown.com/appkit/authentication)

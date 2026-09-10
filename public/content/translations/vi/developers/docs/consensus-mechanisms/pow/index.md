@@ -96,7 +96,6 @@ Một lời chỉ trích lớn đối với bằng chứng công việc là lư�
 
 ## Bạn thích học qua hình ảnh hơn? {#visual-learner}
 
-<VideoWatch slug="proof-of-work-explained" />
 
 ## Đọc thêm {#further-reading}
 

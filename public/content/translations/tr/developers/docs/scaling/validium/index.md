@@ -87,7 +87,7 @@ Validium'lar veri kullanılabilirliği yönetimine yaklaşımlarında farklılı
 
 Zincir dışı verilerin kullanılabilirliğini garanti etmek için bazı Validium çözümleri, durumun kopyalarını depolamak ve veri kullanılabilirliği kanıtı sağlamak üzere topluca veri kullanılabilirliği komitesi (DAC) olarak bilinen bir grup güvenilir varlık atar. DAC'lerin uygulanması daha kolaydır ve üye sayısı düşük olduğu için daha az koordinasyon gerektirir.
 
-Ancak kullanıcılar, gerektiğinde (örneğin Merkle kanıtları oluşturmak için) verileri kullanılabilir hale getirmesi konusunda DAC'ye güvenmelidir. Veri kullanılabilirliği komitelerinin üyelerinin, daha sonra zincir dışı verileri saklayabilecek [kötü niyetli bir aktör tarafından ele geçirilme](https://notes.quantaureum.com/DD7GyItYQ02d0ax_X-UbWg?view) olasılığı vardır.
+Ancak kullanıcılar, gerektiğinde (örneğin Merkle kanıtları oluşturmak için) verileri kullanılabilir hale getirmesi konusunda DAC'ye güvenmelidir. Veri kullanılabilirliği komitelerinin üyelerinin, daha sonra zincir dışı verileri saklayabilecek [kötü niyetli bir aktör tarafından ele geçirilme](https://notes.ethereum.org/DD7GyItYQ02d0ax_X-UbWg?view) olasılığı vardır.
 
 [Validium'lardaki veri kullanılabilirliği komiteleri hakkında daha fazla bilgi](https://medium.com/starkware/data-availability-e5564c416424).
 

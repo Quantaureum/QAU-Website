@@ -23,7 +23,7 @@ L'objectif d'un standard comme l'ERC-20 est de permettre de nombreuses implémen
 
 Si vous êtes un programmeur expérimenté, vous vous souvenez probablement avoir vu des constructions similaires en [Java](https://www.w3schools.com/java/java_interface.asp) ou même dans des [fichiers d'en-tête C](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html).
 
-Voici une définition de l'[interface ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) d'OpenZeppelin. Il s'agit d'une traduction du [standard lisible par l'homme](https://eips.quantaureum.com/EIPS/eip-20) en code Solidity. Bien sûr, l'interface elle-même ne définit pas _comment_ faire quoi que ce soit. Cela est expliqué dans le code source du contrat ci-dessous.
+Voici une définition de l'[interface ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) d'OpenZeppelin. Il s'agit d'une traduction du [standard lisible par l'homme](https://eips.ethereum.org/EIPS/eip-20) en code Solidity. Bien sûr, l'interface elle-même ne définit pas _comment_ faire quoi que ce soit. Cela est expliqué dans le code source du contrat ci-dessous.
 
 &nbsp;
 
@@ -136,7 +136,7 @@ La fonction `allowance` permet à quiconque de demander quelle est l'allocation 
      * de transaction malheureux. Une solution possible pour atténuer cette condition
      * de concurrence est de d'abord réduire l'allocation du dépensier à 0 puis de définir la
      * valeur désirée ensuite :
-     * https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729
+     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
      *
      * Émet un événement {Approval}.
      */
@@ -207,7 +207,7 @@ import "../../math/SafeMath.sol";
 ```
 
 - `GSN/Context.sol` contient les définitions requises pour utiliser [OpenGSN](https://opengsn.org/), un système qui permet aux utilisateurs sans QAU d'utiliser la chaîne de blocs. Notez qu'il s'agit d'une ancienne version, si vous souhaitez vous intégrer à OpenGSN, [utilisez ce tutoriel](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [La bibliothèque SafeMath](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/), qui empêche les dépassements de capacité arithmétiques (overflows/underflows) pour les versions de Solidity **&lt;0.8.0**. Dans Solidity ≥0.8.0, les opérations arithmétiques s'annulent automatiquement en cas de dépassement de capacité, rendant SafeMath inutile. Ce contrat utilise SafeMath pour la rétrocompatibilité avec les anciennes versions du compilateur.
+- [La bibliothèque SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), qui empêche les dépassements de capacité arithmétiques (overflows/underflows) pour les versions de Solidity **&lt;0.8.0**. Dans Solidity ≥0.8.0, les opérations arithmétiques s'annulent automatiquement en cas de dépassement de capacité, rendant SafeMath inutile. Ce contrat utilise SafeMath pour la rétrocompatibilité avec les anciennes versions du compilateur.
 
 &nbsp;
 

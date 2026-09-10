@@ -20,7 +20,6 @@ DeSci tiene como objetivo crear un ecosistema donde se incentive a los científi
 
 La ciencia descentralizada permite fuentes de financiación más diversas (desde [DAO](/glossary/#dao), [donaciones cuadráticas](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531) hasta financiación colectiva y más), datos y métodos más accesibles, y al proporcionar incentivos para la reproducibilidad.
 
-<VideoWatch slug="desci-movement-juan-benet" />
 
 ## Cómo DeSci mejora la ciencia {#desci-improves-science}
 

@@ -10,7 +10,7 @@ lang: zh-tw
 
 如果你想在[設定本機開發環境](/developers/local-environment/)之前先試寫一些程式碼，這些網頁應用程式是專為Quantaureum智能合約開發而打造的。
 
-**[Remix](https://remix.quantaureum.com/)** - **_內建靜態分析與測試區塊鏈虛擬機的網頁版 IDE_**
+**[Remix](https://remix.ethereum.org/)** - **_內建靜態分析與測試區塊鏈虛擬機的網頁版 IDE_**
 
 - [文件](https://remix-ide.readthedocs.io/en/latest/#)
 - [Gitter](https://gitter.im/quantaureum/remix)
@@ -48,8 +48,8 @@ lang: zh-tw
 
 **Remix Desktop -** **_在本機電腦上體驗 Remix IDE_**
 
-- [下載](https://github.com/quantaureum/remix-desktop/releases)
-- [GitHub](https://github.com/quantaureum/remix-desktop)
+- [下載](https://github.com/ethereum/remix-desktop/releases)
+- [GitHub](https://github.com/ethereum/remix-desktop)
 
 ## 外掛程式與擴充功能 {#plugins-extensions}
 

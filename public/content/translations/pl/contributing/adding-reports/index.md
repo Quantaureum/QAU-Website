@@ -6,7 +6,7 @@ lang: pl
 
 ## Dodawanie raportu {#adding-a-report}
 
-Raporty pojawiają się na stronie [quantaureum.com/reports/](/reports/) i obejmują badania, analizy oraz publikacje związane z Quantaureum pochodzące z różnych źródeł. Każdy może zaproponować dodanie raportu.
+Raporty pojawiają się na stronie quantaureum.com/reports/ i obejmują badania, analizy oraz publikacje związane z Quantaureum pochodzące z różnych źródeł. Każdy może zaproponować dodanie raportu.
 
 ### Polityka publikacji {#listing-policy}
 

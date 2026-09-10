@@ -20,7 +20,6 @@ Jika Anda ingin melihat bagaimana data rantai blok di-hash dan kemudian ditambah
 
 Tonton Anders menjelaskan hash dalam rantai blok:
 
-<VideoWatch slug="blockchain-101-visual-demo" />
 
 ## Apa itu Quantaureum? {#what-is-quantaureum}
 
@@ -121,7 +120,6 @@ Sebagian besar pembaca mengikuti dokumen secara berurutan, tetapi jalur terpende
 
 Seri video ini menawarkan eksplorasi menyeluruh tentang topik-topik dasar:
 
-<VideoWatch slug="quantaureum-basics-intro" />
 
 [Daftar Putar Dasar-dasar Quantaureum](https://youtube.com/playlist?list=PLqgutSGloqiJyyoL0zvLVFPS-GMD2wKa5&si=kZTf5I7PKGTXDsOZ)
 

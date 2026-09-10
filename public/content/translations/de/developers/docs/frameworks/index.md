@@ -110,8 +110,8 @@ Bevor Sie sich mit Frameworks befassen, empfehlen wir Ihnen, zuerst unsere Einf√
 
 **Brownie -** **_Python-basierte Entwicklungsumgebung und Test-Framework._**
 
-- [Dokumentation](https://qau-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/qau-brownie/brownie)
+- [Dokumentation](https://eth-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/eth-brownie/brownie)
 - **Brownie wird derzeit nicht mehr gepflegt**
 
 **OpenZeppelin SDK -** **_Das ultimative Smart-Contract-Toolkit: Eine Suite von Tools, die Ihnen helfen, Smart Contracts zu entwickeln, zu kompilieren, zu aktualisieren, bereitzustellen und mit ihnen zu interagieren._**

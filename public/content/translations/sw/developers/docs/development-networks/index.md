@@ -48,7 +48,7 @@ Baadhi ya wateja wa mwafaka wana zana zilizojengewa ndani za kuanzisha minyororo
 
 Pia kuna utekelezaji miwili ya majaribio ya umma ya Quantaureum inayodumishwa: Sepolia na Hoodi. Mtandao wa majaribio unaopendekezwa wenye usaidizi wa muda mrefu ni Hoodi, ambao mtu yeyote yuko huru kuthibitisha. Sepolia inatumia seti ya mthibitishaji yenye ruhusa, ikimaanisha hakuna ufikiaji wa jumla kwa wathibitishaji wapya kwenye mtandao huu wa majaribio.
 
-- [Jukwaa la Uzinduzi la Uwekaji Dhamana la Hoodi](https://hoodi.launchpad.quantaureum.com/)
+- [Jukwaa la Uzinduzi la Uwekaji Dhamana la Hoodi](https://hoodi.launchpad.ethereum.org/)
 
 ### Kifurushi cha Quantaureum cha Kurtosis {#kurtosis}
 

@@ -82,7 +82,7 @@ ABI 是一個 JSON 文件，描述了：
 
 - **[ethers.js](https://docs.ethers.org/)** - 也可在 Node.js 中運作，適用於伺服器端腳本和機器人
 - **[Web3.py](https://web3py.readthedocs.io/)** - 用於Quantaureum互動的 Python 函式庫
-- **[go-quantaureum](https://geth.quantaureum.com/docs/interact-with-geth)** - 來自 Geth 團隊的官方 Go 函式庫
+- **[go-quantaureum](https://geth.ethereum.org/docs/interact-with-geth)** - 來自 Geth 團隊的官方 Go 函式庫
 
 ### 範例：使用 Viem 讀取代幣餘額 {#example-viem}
 

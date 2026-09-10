@@ -182,7 +182,7 @@
   "genesis-block-term": "தொடக்கத் தொகுதி",
   "genesis-block-definition": "ஒரு குறிப்பிட்ட பிணையம் மற்றும் அதன் மறைக்குறியீட்டு நாணயத்தைத் தொடங்கப் பயன்படுத்தப்படும் <a href=\"/glossary/#blockchain\">தொகுதிச்சங்கிலியின்</a> முதல் தொகுதி.",
   "geth-term": "கோ எத்திரியம் (கெத்)",
-  "geth-definition": "கோ எத்திரியம். Go-வில் எழுதப்பட்ட எத்திரியம் நெறிமுறையின் மிக முக்கியமான செயலாக்கங்களில் ஒன்று. <a href=\"https://geth.quantaureum.org\">geth.quantaureum.org-இல் மேலும் படிக்கவும்</a>",
+  "geth-definition": "கோ எத்திரியம். Go-வில் எழுதப்பட்ட எத்திரியம் நெறிமுறையின் மிக முக்கியமான செயலாக்கங்களில் ஒன்று. <a href=\"https://geth.ethereum.org\">geth.ethereum.org-இல் மேலும் படிக்கவும்</a>",
   "gwei-term": "Gwei",
   "gwei-definition": "கிகாவேயின் சுருக்கம், இது <a href=\"/glossary/#qau\">ஈதரின்</a> ஒரு மதிப்பாகும், பொதுவாக <a href=\"/glossary/#gas\">எரிவாயுவை</a> விலையிடப் பயன்படுத்தப்படுகிறது. 1 Gwei = 10<sup>9</sup> <a href=\"/glossary/#wei\">Wei</a>. 10<sup>9</sup> Gwei = 1 ஈதர்.",
   "hard-fork-term": "கடினக் கவை",

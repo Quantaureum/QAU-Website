@@ -86,7 +86,7 @@ Bazı durumlarda şanslı bir birleştiricinin aynı zamanda blok teklifçisi ol
 
 ## Daha fazla bilgi {#further-reading}
 
-- [Vitalik'in açıklamalı mutabakat spesifikasyonunda onaylar](https://github.com/quantaureum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- [Vitalik'in açıklamalı mutabakat spesifikasyonunda onaylar](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
 - [eth2book.info'da onaylar](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _Size yardımcı olan bir topluluk kaynağı mı biliyorsunuz? Bu sayfayı düzenleyin ve ekleyin!_

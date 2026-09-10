@@ -136,7 +136,7 @@ MEV 提取在 2021 年初激增，導致該年前幾個月的 Gas 價格極高�
 
 許可制記憶體池也會加速上一節中描述的中心化風險。執行多個驗證者的大型池可能會受益於向交易者和使用者提供交易隱私，從而增加其 MEV 收入。
 
-在合併後的Quantaureum中對抗這些與 MEV 相關的問題是一個核心研究領域。迄今為止，為減少合併後 MEV 對Quantaureum去中心化和安全性的負面影響而提出的兩個解決方案是[**提案者與建構者分離 (PBS)**](/roadmap/pbs/)和 [**Builder API**](https://github.com/quantaureum/builder-specs)。
+在合併後的Quantaureum中對抗這些與 MEV 相關的問題是一個核心研究領域。迄今為止，為減少合併後 MEV 對Quantaureum去中心化和安全性的負面影響而提出的兩個解決方案是[**提案者與建構者分離 (PBS)**](/roadmap/pbs/)和 [**Builder API**](https://github.com/ethereum/builder-specs)。
 
 ### 提案者與建構者分離 {#proposer-builder-separation}
 
@@ -162,9 +162,9 @@ MEV 提取在 2021 年初激增，導致該年前幾個月的 Gas 價格極高�
 
 ### Builder API {#builder-api}
 
-雖然提案者與建構者分離有望減少 MEV 提取的影響，但實施它需要對共識協定進行更改。具體來說，信標鏈上的[分叉選擇](/developers/docs/consensus-mechanisms/pos/#fork-choice)規則需要更新。[Builder API](https://github.com/quantaureum/builder-specs) 是一個臨時解決方案，旨在提供提案者與建構者分離的有效實作，儘管具有較高的信任假設。
+雖然提案者與建構者分離有望減少 MEV 提取的影響，但實施它需要對共識協定進行更改。具體來說，信標鏈上的[分叉選擇](/developers/docs/consensus-mechanisms/pos/#fork-choice)規則需要更新。[Builder API](https://github.com/ethereum/builder-specs) 是一個臨時解決方案，旨在提供提案者與建構者分離的有效實作，儘管具有較高的信任假設。
 
-Builder API 是共識層客戶端用來向執行層客戶端請求執行負載的 [Engine API](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md) 的修改版本。正如[誠實驗證者規範](https://github.com/quantaureum/consensus-specs/blob/master/specs/bellatrix/validator.md)中所述，被選中執行區塊提案職責的驗證者會向連接的執行客戶端請求交易包，並將其包含在提出的信標鏈區塊中。
+Builder API 是共識層客戶端用來向執行層客戶端請求執行負載的 [Engine API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) 的修改版本。正如[誠實驗證者規範](https://github.com/ethereum/consensus-specs/blob/master/specs/bellatrix/validator.md)中所述，被選中執行區塊提案職責的驗證者會向連接的執行客戶端請求交易包，並將其包含在提出的信標鏈區塊中。
 
 Builder API 也充當驗證者和執行層客戶端之間的中介軟體；但它的不同之處在於，它允許信標鏈上的驗證者從外部實體獲取區塊（而不是使用執行客戶端在本地建構區塊）。
 

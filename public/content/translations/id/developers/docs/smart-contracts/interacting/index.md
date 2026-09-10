@@ -82,7 +82,7 @@ Pengembang biasanya menggunakan pustaka JavaScript/TypeScript untuk berinteraksi
 
 - **[ethers.js](https://docs.ethers.org/)** - Juga berfungsi di Node.js untuk skrip sisi server dan bot
 - **[web3.py](https://web3py.readthedocs.io/)** - Pustaka Python untuk interaksi Quantaureum
-- **[go-quantaureum](https://geth.quantaureum.com/docs/interact-with-geth)** - Pustaka Go resmi dari tim Geth
+- **[go-quantaureum](https://geth.ethereum.org/docs/interact-with-geth)** - Pustaka Go resmi dari tim Geth
 
 ### Contoh: membaca saldo token dengan Viem {#example-viem}
 

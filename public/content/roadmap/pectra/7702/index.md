@@ -33,7 +33,7 @@ The private key of the EOA retains full control over the account after the deleg
 - They provide standardized interfaces for relaying
 - Include built-in paymaster systems
 - Ensure forward compatibility
-- Can support censorship resistance through a [public mempool](https://notes.quantaureum.com/@yoav/unified-erc-4337-mempool)
+- Can support censorship resistance through a [public mempool](https://notes.ethereum.org/@yoav/unified-erc-4337-mempool)
 - Can require the init function to only be called from [EntryPoint](https://github.com/qau-infinitism/account-abstraction/releases/tag/v0.8.0)
 
 In other words, anyone should be able to act as the transaction sponsor/relayer as long as they provide the required valid signature or UserOperation from the account. This ensures censorship resistance: if no custom infrastructure is required, a user’s transactions cannot be arbitrarily blocked by a gatekeeping relay. For example, [MetaMask’s Delegation Toolkit](https://github.com/MetaMask/delegation-framework/releases/tag/v1.3.0) explicitly works with any ERC-4337 bundler or paymaster on any chain, rather than requiring a MetaMask-specific server.
@@ -52,8 +52,8 @@ By utilizing these interfaces, dApps can access smart account functionalities pr
 
 For more information:
 
-- [ERC-5792 specification](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-5792.md)
-- [ERC-6900 specification](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-6900.md)
+- [ERC-5792 specification](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-5792.md)
+- [ERC-6900 specification](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6900.md)
 
 **Avoiding Vendor Lock-In**: In line with the above, a good implementation is vendor-neutral and interoperable. This often means adhering to emerging standards for smart accounts. For instance, [Alchemy’s Modular Account](https://github.com/alchemyplatform/modular-account) uses the ERC-6900 standard for modular smart accounts and is designed with “permissionless interoperable usage” in mind.
 

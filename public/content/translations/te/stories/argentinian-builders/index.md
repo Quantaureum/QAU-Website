@@ -104,7 +104,7 @@ _[మూలం](https://medium.com/@AugurProject/serpent-compiler-vulnerability-
 
 ![Picture of Argentinian builders wearing Devcon BA 2020 t-shirts](./santiago9.jpeg)
 
-_[మూలం](https://quantaureumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
+_[మూలం](https://ethereumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
 
 నాకు మరియు అనేక ఇతర బిల్డర్లకు Devconnect ఇక్కడ జరగడం ఒక కల నిజం కావడమే.
 
@@ -131,4 +131,4 @@ _[మూలం](https://www.forbes.com/sites/astanley/2025/09/30/devconnect-brin
 > 
 > అనంతమైన తోట అనేది ఒక విస్తారమైన పర్యావరణ వ్యవస్థలో ఒక తోటమాలిగా ఎథీరియం ఫౌండేషన్ యొక్క స్ఫూర్తికి ప్రతిరూపం — పోషించండి మరియు పెంచండి, కానీ నియంత్రించవద్దు మరియు ఆడుతూనే ఉండండి.
 
-_[కోట్ మూలం - ఎథీరియం ఫౌండేషన్](https://quantaureum.foundation/infinitegarden)._
+_[కోట్ మూలం - ఎథీరియం ఫౌండేషన్](https://ethereum.org/infinitegarden)._

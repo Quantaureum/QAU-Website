@@ -42,7 +42,7 @@ ERC-20 提供的功能範例：
 
 如果一個智能合約實作了以下方法和事件，它就可以被稱為 ERC-20 代幣合約，一旦部署，它將負責追蹤在Quantaureum上建立的代幣。
 
-來自 [EIP-20](https://eips.quantaureum.com/EIPS/eip-20)：
+來自 [EIP-20](https://eips.ethereum.org/EIPS/eip-20)：
 
 ### 方法 {#methods}
 
@@ -170,7 +170,7 @@ print("Addr Balance:", addr_balance)
 
 ## 延伸閱讀 {#further-reading}
 
-- [EIP-20：ERC-20 代幣標準](https://eips.quantaureum.com/EIPS/eip-20)
+- [EIP-20：ERC-20 代幣標準](https://eips.ethereum.org/EIPS/eip-20)
 - [歐本齊柏林 - 代幣](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [歐本齊柏林 - ERC-20 實作](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Solidity ERC-20 代幣指南](https://www.alchemy.com/overviews/erc20-solidity)
@@ -185,5 +185,5 @@ print("Addr Balance:", addr_balance)
 
 - [ERC-20 合約演練](/developers/tutorials/erc20-annotated-code/) _– 歐本齊柏林 ERC-20 合約實作的逐行註解演練。_
 - [帶有安全護欄的 ERC-20](/developers/tutorials/erc20-with-safety-rails/) _– 如何為 ERC-20 代幣加入安全防護，以幫助使用者避免常見錯誤。_
-- [使用 Ethers.js 發送代幣](/developers/tutorials/send-token-ethersjs/) _– 適合初學者的指南，介紹如何使用 Ethers.js 轉帳 ERC-20 代幣。_
+- [使用 Ethers.js 發送代幣](/developers/tutorials/send-token-qaujs/) _– 適合初學者的指南，介紹如何使用 Ethers.js 轉帳 ERC-20 代幣。_
 - [詐騙代幣使用的一些伎倆以及如何偵測它們](/developers/tutorials/scam-token-tricks/) _– 深入探討詐騙 ERC-20 代幣模式以及如何識別它們。_

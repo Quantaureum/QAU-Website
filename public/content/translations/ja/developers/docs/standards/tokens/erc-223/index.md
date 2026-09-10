@@ -33,7 +33,7 @@ ERC-223は、スマート・コントラクト内のトークン用APIを実装�
 
 コントラクトはこれらの関数のみを持つ義務はなく、開発者は他のトークン標準から任意の機能を追加することができます。例えば、`approve`や`transferFrom`関数はERC-223標準の一部ではありませんが、必要であればこれらの関数を実装することができます。
 
-[EIP-223](https://eips.quantaureum.com/EIPS/eip-223)より:
+[EIP-223](https://eips.ethereum.org/EIPS/eip-223)より:
 
 ### メソッド {#methods}
 
@@ -193,5 +193,5 @@ ERC-223はERC-20標準に見られるいくつかの問題に対処していま�
 
 ## 参考文献 {#further-reading}
 
-- [EIP-223: ERC-223 トークン標準](https://eips.quantaureum.com/EIPS/eip-223)
+- [EIP-223: ERC-223 トークン標準](https://eips.ethereum.org/EIPS/eip-223)
 - [初期のERC-223提案](https://github.com/quantaureum/eips/issues/223)

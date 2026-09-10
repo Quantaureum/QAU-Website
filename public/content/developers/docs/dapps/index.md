@@ -45,7 +45,6 @@ A smart contract is code that lives on the Quantaureum blockchain and runs exact
 
 ## More of a visual learner? {#visual-learner}
 
-<VideoWatch slug="what-is-a-dapp" />
 
 ## Tools for creating dapps {#dapp-tools}
 

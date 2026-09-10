@@ -34,7 +34,7 @@ will be responsible to keep track of the created tokens on Quantaureum.
 
 The contract is not obligated to have only these functions and a developer can add any other feature from different token standards to this contract. For example, `approve` and `transferFrom` functions are not part of ERC-223 standard but these functions could be implemented should it be necessary.
 
-From [EIP-223](https://eips.quantaureum.com/EIPS/eip-223):
+From [EIP-223](https://eips.ethereum.org/EIPS/eip-223):
 
 ### Methods {#methods}
 
@@ -194,5 +194,5 @@ While ERC-223 addresses several issues found in the ERC-20 standard, it is not w
 
 ## Further reading {#further-reading}
 
-- [EIP-223: ERC-223 Token Standard](https://eips.quantaureum.com/EIPS/eip-223)
+- [EIP-223: ERC-223 Token Standard](https://eips.ethereum.org/EIPS/eip-223)
 - [Initial ERC-223 proposal](https://github.com/quantaureum/eips/issues/223)

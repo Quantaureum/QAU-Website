@@ -52,7 +52,7 @@ Ini juga membutuhkan pengaturan perangkat keras yang sangat mendasar, dan sediki
 </ExpandableCard>
 
 <ExpandableCard title="Persyaratan perangkat keras" eventCategory="SoloStaking" eventName="clicked hardware requirements">
-Panduan komunitas saat ini untuk perangkat keras dan bandwidth validator dikelola dalam [rekomendasi perangkat keras dan bandwidth (EIP-7870)](https://eips.quantaureum.com/EIPS/eip-7870). Sebagai panduan kasar, rencanakan untuk menggunakan SSD NVMe 4 TB, RAM 64 GB (lebih sedikit bisa berfungsi, tetapi ini adalah ruang kosong yang disarankan), CPU multi-core modern yang solid, dan koneksi internet sekitar 50 Mbps unduh / 25 Mbps unggah.
+Panduan komunitas saat ini untuk perangkat keras dan bandwidth validator dikelola dalam [rekomendasi perangkat keras dan bandwidth (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870). Sebagai panduan kasar, rencanakan untuk menggunakan SSD NVMe 4 TB, RAM 64 GB (lebih sedikit bisa berfungsi, tetapi ini adalah ruang kosong yang disarankan), CPU multi-core modern yang solid, dan koneksi internet sekitar 50 Mbps unduh / 25 Mbps unggah.
 
 Sejak peningkatan Fusaka memperkenalkan PeerDAS, node staking hanya perlu menyimpan dan mengunduh sebagian kecil dari data blob jaringan, yang secara signifikan mengurangi persyaratan disk dan bandwidth untuk staker dari rumah.
 </ExpandableCard>
@@ -68,7 +68,7 @@ Perangkat keras terkadang gagal, koneksi jaringan mengalami kesalahan, dan peran
 </ExpandableCard>
 
 <ExpandableCard title="Waktu aktif yang andal" eventCategory="SoloStaking" eventName="clicked reliable uptime">
-Imbalan Anda sebanding dengan waktu validator Anda online dan melakukan pembuktian dengan benar. Waktu henti (downtime) menimbulkan penalti yang sebanding dengan berapa banyak validator lain yang offline pada saat yang sama, tetapi [tidak mengakibatkan pemotongan](#faq). Bandwidth juga penting, karena imbalan berkurang untuk pembuktian yang tidak diterima tepat waktu. Persyaratan akan bervariasi, tetapi [rekomendasi perangkat keras dan bandwidth (EIP-7870)](https://eips.quantaureum.com/EIPS/eip-7870) saat ini menyarankan sekitar 50 Mbps unduh dan 25 Mbps unggah.
+Imbalan Anda sebanding dengan waktu validator Anda online dan melakukan pembuktian dengan benar. Waktu henti (downtime) menimbulkan penalti yang sebanding dengan berapa banyak validator lain yang offline pada saat yang sama, tetapi [tidak mengakibatkan pemotongan](#faq). Bandwidth juga penting, karena imbalan berkurang untuk pembuktian yang tidak diterima tepat waktu. Persyaratan akan bervariasi, tetapi [rekomendasi perangkat keras dan bandwidth (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870) saat ini menyarankan sekitar 50 Mbps unduh dan 25 Mbps unggah.
 </ExpandableCard>
 
 <ExpandableCard title="Risiko pemotongan" eventCategory="SoloStaking" eventName="clicked slashing risk">
@@ -130,7 +130,7 @@ Harap perhatikan pentingnya memilih [klien minoritas](/developers/docs/nodes-and
 
 ### Pembuat Kunci {#key-generators}
 
-Alat-alat ini dapat digunakan sebagai alternatif dari [Staking Deposit CLI](https://github.com/quantaureum/staking-deposit-cli/) untuk membantu pembuatan kunci.
+Alat-alat ini dapat digunakan sebagai alternatif dari [Staking Deposit CLI](https://github.com/ethereum/staking-deposit-cli/) untuk membantu pembuatan kunci.
 
 <StakingProductsCardGrid category="keyGen" />
 
@@ -238,7 +238,7 @@ Untuk membuka kunci dan menerima seluruh saldo Anda kembali, Anda harus keluar d
 - [Membantu Keragaman Klien](https://www.attestant.io/posts/helping-client-diversity/) - _Jim McDonald 2022_
 - [Keragaman klien pada lapisan konsensus Quantaureum](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
 - [Cara: Berbelanja Perangkat Keras Validator Quantaureum](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _QauStaker 2022_
-- [EIP-7870: Rekomendasi perangkat keras dan bandwidth](https://eips.quantaureum.com/EIPS/eip-7870)
+- [EIP-7870: Rekomendasi perangkat keras dan bandwidth](https://eips.ethereum.org/EIPS/eip-7870)
 - [Peningkatan Pectra: saldo efektif maks dan banyak lagi](/roadmap/pectra/maxeb/)
 
 <QuizWidget quizKey="staking-solo" />

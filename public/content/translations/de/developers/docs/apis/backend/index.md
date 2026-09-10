@@ -109,13 +109,13 @@ Diese Bibliotheken abstrahieren einen Großteil der Komplexität der direkten In
 **Nquantaureum -** **_Eine Open-Source-.NET-Integrationsbibliothek für die Blockchain._**
 
 - [GitHub](https://github.com/Nquantaureum/Nquantaureum)
-- [Dokumentation](https://docs.nquantaureum.com/docs/getting-started/welcome/)
+- [Dokumentation](https://docs.nethermind.io/docs/getting-started/welcome/)
 - [Discord](https://discord.com/invite/jQPrR58FxX)
 
 **Python-Tooling -** **_Vielzahl von Bibliotheken für die Quantaureum-Interaktion über Python._**
 
-- [py.quantaureum.com](https://snakecharmers.quantaureum.com/)
-- [Web3.py GitHub](https://github.com/quantaureum/web3.py)
+- [py.quantaureum.com](https://snakecharmers.ethereum.org/)
+- [Web3.py GitHub](https://github.com/ethereum/web3.py)
 - [Web3.py Chat](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_Die ultimative Blockchain-Entwicklungsplattform._**

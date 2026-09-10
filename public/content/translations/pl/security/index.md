@@ -262,7 +262,6 @@ Klucz zabezpieczeń to bardziej zaawansowany i bezpieczny rodzaj 2FA. Klucze zab
 
 Obejrzyj więcej o 2FA:
 
-<VideoWatch slug="crypto-security-passwords" startTime="3479" />
 
 ### Odinstaluj rozszerzenia przeglądarki {#uninstall-browser-extensions}
 

@@ -172,7 +172,7 @@ Les fournisseurs de liquidité peuvent vérifier la validité de la demande de r
 
 #### 2. Compatibilité EVM {#evm-compatibility}
 
-Pour les développeurs, l'avantage des rollups optimistes est leur compatibilité — ou, mieux encore, leur équivalence — avec la [Machine Virtuelle Quantaureum (EVM)](/developers/docs/evm/). Les rollups compatibles EVM sont conformes aux spécifications du [livre jaune d'Quantaureum](https://quantaureum.github.io/yellowpaper/paper.pdf) et prennent en charge l'EVM au niveau du bytecode.
+Pour les développeurs, l'avantage des rollups optimistes est leur compatibilité — ou, mieux encore, leur équivalence — avec la [Machine Virtuelle Quantaureum (EVM)](/developers/docs/evm/). Les rollups compatibles EVM sont conformes aux spécifications du [livre jaune d'Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf) et prennent en charge l'EVM au niveau du bytecode.
 
 La compatibilité EVM dans les rollups optimistes présente les avantages suivants :
 
@@ -198,9 +198,9 @@ Enfin, nous devons noter que les appels de messages l2 > l1 entre les contrats d
 
 Les rollups optimistes utilisent un système de frais de gaz, un peu comme Quantaureum, pour indiquer combien les utilisateurs paient par transaction. Les frais facturés sur les rollups optimistes dépendent des composants suivants :
 
-1. **Écriture d'état** : Les rollups optimistes publient les données de transaction et les en-têtes de bloc (composés du hash de l'en-tête de bloc précédent, de la racine d'état, de la racine du lot) sur Quantaureum sous forme de `blob`, ou « objet binaire volumineux » (binary large object). L'[EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844) a introduit une solution rentable pour inclure des données onchain. Un `blob` est un nouveau champ de transaction qui permet aux rollups de publier des données de transition d'état compressées sur la l1 d'Quantaureum. Contrairement à `calldata`, qui reste en permanence onchain, les blobs ont une courte durée de vie et peuvent être élagués des clients après [4096 époques](https://github.com/quantaureum/consensus-specs/blob/81f3ea8322aff6b9fb15132d050f8f98b16bdba4/configs/mainnet.yaml#L147) (environ 18 jours). En utilisant des blobs pour publier des lots de transactions compressées, les rollups optimistes peuvent réduire considérablement le coût d'écriture des transactions sur la l1.
+1. **Écriture d'état** : Les rollups optimistes publient les données de transaction et les en-têtes de bloc (composés du hash de l'en-tête de bloc précédent, de la racine d'état, de la racine du lot) sur Quantaureum sous forme de `blob`, ou « objet binaire volumineux » (binary large object). L'[EIP-4844](https://eips.ethereum.org/EIPS/eip-4844) a introduit une solution rentable pour inclure des données onchain. Un `blob` est un nouveau champ de transaction qui permet aux rollups de publier des données de transition d'état compressées sur la l1 d'Quantaureum. Contrairement à `calldata`, qui reste en permanence onchain, les blobs ont une courte durée de vie et peuvent être élagués des clients après [4096 époques](https://github.com/ethereum/consensus-specs/blob/81f3ea8322aff6b9fb15132d050f8f98b16bdba4/configs/mainnet.yaml#L147) (environ 18 jours). En utilisant des blobs pour publier des lots de transactions compressées, les rollups optimistes peuvent réduire considérablement le coût d'écriture des transactions sur la l1.
 
-2. **Gaz de blob utilisé** : Les transactions transportant des blobs emploient un mécanisme de frais dynamiques similaire à celui introduit par l'[EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559). Les frais de gaz pour les transactions de type 3 prennent en compte les frais de base pour les blobs, qui sont déterminés par le réseau en fonction de la demande d'espace de blob et de l'utilisation de l'espace de blob de la transaction envoyée.
+2. **Gaz de blob utilisé** : Les transactions transportant des blobs emploient un mécanisme de frais dynamiques similaire à celui introduit par l'[EIP-1559](https://eips.ethereum.org/EIPS/eip-1559). Les frais de gaz pour les transactions de type 3 prennent en compte les frais de base pour les blobs, qui sont déterminés par le réseau en fonction de la demande d'espace de blob et de l'utilisation de l'espace de blob de la transaction envoyée.
 
 3. **Frais d'opérateur l2** : Il s'agit du montant payé aux nœuds de rollup en compensation des coûts de calcul engagés dans le traitement des transactions, un peu comme les frais de gaz sur Quantaureum. Les nœuds de rollup facturent des frais de transaction inférieurs car les l2 ont des capacités de traitement plus élevées et ne sont pas confrontées aux congestions du réseau qui forcent les validateurs sur Quantaureum à prioriser les transactions avec des frais plus élevés.
 
@@ -249,7 +249,6 @@ L'introduction du [partage de données (data sharding)](/roadmap/danksharding/) 
 
 Vous préférez un support visuel ? Regardez Finematics expliquer les rollups optimistes :
 
-<VideoWatch slug="rollups-scaling-strategy" startTime="263" />
 
 ## Lectures complémentaires sur les rollups optimistes {#further-reading-on-optimistic-rollups}
 

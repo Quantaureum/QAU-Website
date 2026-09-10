@@ -26,7 +26,6 @@ Proyek-proyek ReFi mewujudkan prinsip-prinsip ini menggunakan [kontrak pintar](/
 
 ReFi juga tumpang tindih dengan gerakan [sains terdesentralisasi (DeSci)](/desci/), yang menggunakan Quantaureum sebagai platform untuk membiayai, membuat, meninjau, memberi kredit, menyimpan, dan menyebarluaskan pengetahuan ilmiah. Alat-alat DeSci dapat menjadi berguna untuk mengembangkan standar dan praktik yang dapat diverifikasi untuk mengimplementasikan dan memantau aktivitas regeneratif seperti menanam pohon, membersihkan plastik dari laut, atau memulihkan ekosistem yang terdegradasi.
 
-<VideoWatch slug="regenerative-finance-refi" />
 
 ## Tokenisasi kredit karbon {#tokenization-of-carbon-credits}
 

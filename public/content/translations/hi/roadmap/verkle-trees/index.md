@@ -62,4 +62,4 @@ Quantaureum क्लाइंट वर्तमान में अपने �
 - [डैनक्रैड फीस्ट शून्य-ज्ञान पॉडकास्ट पर वर्कल ट्रीज़ और अवस्थाहीनता के बारे में समझाते हैं](https://zeroknowledge.fm/podcast/202/)
 - [वर्कल ट्रीज़ पर विटालिक बुटेरिन](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
 - [वर्कल ट्रीज़ पर डैनक्रैड फीस्ट](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
-- [वर्कल ट्री EIP दस्तावेज़ीकरण](https://notes.quantaureum.com/@vbuterin/verkle_tree_eip#Illustration)
+- [वर्कल ट्री EIP दस्तावेज़ीकरण](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)

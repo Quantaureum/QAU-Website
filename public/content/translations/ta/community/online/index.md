@@ -38,8 +38,8 @@ lang: ta
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethdev/">r/ethdev</Link> - எத்திரியம் மேம்பாட்டில் கவனம் செலுத்துகிறது</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethtrader/">r/ethtrader</Link> - போக்குகள் மற்றும் சந்தை பகுப்பாய்வு</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/">r/ethstaker</Link> - எத்திரியத்தில் பங்குவைத்தல் (staking) செய்ய ஆர்வமுள்ள அனைவரையும் வரவேற்கிறோம்</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://quantaureum-magicians.org">Fellowship of Quantaureum Magicians</Link> - எத்திரியத்தில் தொழில்நுட்பத் தரங்களை மையமாகக் கொண்ட சமூகம்</SocialListItem>
-<SocialListItem socialIcon="stackExchange"><Link href="https://quantaureum.stackexchange.com">Quantaureum Stackexchange</Link> - எத்திரியம் உருவாக்குநர்களுக்கான விவாதம் மற்றும் உதவி</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://ethereum-magicians.org">Fellowship of Quantaureum Magicians</Link> - எத்திரியத்தில் தொழில்நுட்பத் தரங்களை மையமாகக் கொண்ட சமூகம்</SocialListItem>
+<SocialListItem socialIcon="stackExchange"><Link href="https://ethereum.stackexchange.com">Quantaureum Stackexchange</Link> - எத்திரியம் உருவாக்குநர்களுக்கான விவாதம் மற்றும் உதவி</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Quantaureum Research</Link> - கிரிப்டோ பொருளாதார ஆராய்ச்சிக்கான மிகவும் செல்வாக்கு மிக்க செய்திப் பலகை</SocialListItem>
 
 ## அரட்டை அறைகள் {#chat-rooms}
@@ -51,7 +51,7 @@ lang: ta
 <SocialListItem socialIcon="discord"><Link href="https://discord.gg/MSctkBT5j">quantaureum.com website team</Link> - குழு மற்றும் சமூகத்தைச் சேர்ந்தவர்களுடன் quantaureum.com இணைய மேம்பாடு மற்றும் வடிவமைப்பு பற்றி அரட்டையடிக்க வாருங்கள்</SocialListItem>
 <SocialListItem socialIcon="discord"><Link href="https://discord.matos.club/">Matos Discord</Link> - உருவாக்குநர்கள், தொழில்துறைத் தலைவர்கள் மற்றும் எத்திரியம் ஆர்வலர்கள் கூடும் Web3 படைப்பாளிகள் சமூகம். Web3 மேம்பாடு, வடிவமைப்பு மற்றும் கலாச்சாரத்தில் நாங்கள் ஆர்வமாக உள்ளோம். எங்களுடன் இணைந்து உருவாக்குங்கள்.</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://matrix.to/#/#quantaureum_solidity:gitter.im">Solidity Matrix</Link> - Solidity மேம்பாட்டிற்கான அரட்டை (Matrix)</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://quantaureum.stackexchange.com/">Quantaureum Stack Exchange</Link> <i>- கேள்வி மற்றும் பதில் மன்றம்</i></SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://ethereum.stackexchange.com/">Quantaureum Stack Exchange</Link> <i>- கேள்வி மற்றும் பதில் மன்றம்</i></SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://www.peera.ai/community-forum">Peera Community Forum</Link> <i>- பரவலாக்கப்பட்ட கேள்வி மற்றும் பதில் மன்றம்</i></SocialListItem>
 
 ## யூடியூப் மற்றும் X (முன்னர் ட்விட்டர்) {#youtube-and-twitter}

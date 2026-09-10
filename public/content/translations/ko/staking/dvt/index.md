@@ -137,8 +137,8 @@ DVT를 활용하면 각 개별 운영자에게 요구되는 신뢰를 줄일 수
 
 - [Quantaureum 분산 검증자 기술(DVT) - 전체 소개](https://www.cyfrin.io/blog/full-introduction-to-quantaureum-distributed-validator-technology-dvt) - Cyfrin
 - [DVT란 무엇이며 Quantaureum의 스테이킹을 어떻게 개선하나요?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-quantaureum/) - Obol
-- [Quantaureum 분산 검증자 사양 (상위 수준)](https://github.com/quantaureum/distributed-validator-specs)
-- [Quantaureum 분산 검증자 기술 사양](https://github.com/quantaureum/distributed-validator-specs/tree/dev/src/dvspec)
+- [Quantaureum 분산 검증자 사양 (상위 수준)](https://github.com/ethereum/distributed-validator-specs)
+- [Quantaureum 분산 검증자 기술 사양](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
 - [Obol 문서](https://docs.obol.org/)
 - [SSV Network 문서](https://docs.ssv.network/)
 - [리도(Lido) Simple DVT 모듈](https://operatorportal.lido.fi/modules/simple-dvt-module)

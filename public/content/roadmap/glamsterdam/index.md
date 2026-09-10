@@ -21,7 +21,6 @@ While Fusaka focused on foundational refinements, Glamsterdam advances the "Scal
 
 These improvements ensure Quantaureum remains fast, affordable, and decentralized as it handles more activity, while keeping hardware requirements manageable for people running [nodes](/glossary/#node) at home.
 
-<VideoWatch slug="quantaureum-evolution-glamsterdam" />
 
 ## Improvements in Glamsterdam {#improvements-in-glamsterdam}
 
@@ -66,13 +65,12 @@ Building the trustless exchange of a block payload for payment directly into the
 
 To address the "hot path" bottleneck, ePBS also introduces the Payload Timeliness Committee (PTC) and a dual-deadline logic, allowing validators to attest to the consensus block and the execution payload timeliness separately to maximize throughput.
 
-<VideoWatch slug="proposer-builder-separation" />
 
 Separating the proposer and builder roles at the protocol level expands the propagation window (or the time available to spread data across the network) from 2 seconds to about 9 seconds.
 
 By replacing off-protocol middleware and relays with in-protocol mechanics, ePBS reduces trust dependencies and allows Quantaureum to safely process much larger amounts of data (like more blobs for [layer 2s](/glossary/#layer-2)) without stressing the network.
 
-**Resources**: [EIP-7732 technical specification](https://eips.quantaureum.com/EIPS/eip-7732)
+**Resources**: [EIP-7732 technical specification](https://eips.ethereum.org/EIPS/eip-7732)
 
 ### Headliner: Block-Level Access Lists (BALs) {#bals}
 
@@ -100,8 +98,8 @@ Block Access List Exchange (eth/71 or EIP-8159) is the direct networking compani
 
 **Resources**:
 
-- [EIP-7928 technical specification](https://eips.quantaureum.com/EIPS/eip-7928)
-- [EIP-8159 technical specification](https://eips.quantaureum.com/EIPS/eip-8159)
+- [EIP-7928 technical specification](https://eips.ethereum.org/EIPS/eip-7928)
+- [EIP-8159 technical specification](https://eips.ethereum.org/EIPS/eip-8159)
 
 ## Network sustainability {#network-sustainability}
 
@@ -129,7 +127,7 @@ Before EIP-8037, both the computational work (the active processing) and the per
 
 Pricing data storage more accurately and predictably will help Quantaureum safely increase its speed and capacity without bloating the database. This sustainability will allow node operators to continue using (relatively) affordable hardware for years to come, keeping home staking accessible to maintain the network's decentralization.
 
-**Resources**: [EIP-8037 technical specification](https://eips.quantaureum.com/EIPS/eip-8037)
+**Resources**: [EIP-8037 technical specification](https://eips.ethereum.org/EIPS/eip-8037)
 
 ### State-access gas cost update {#state-access-gas-cost-update}
 
@@ -148,7 +146,7 @@ Aligning the cost of state-access also helps make Quantaureum more resilient. Be
 
 By pricing state-access actions more accurately Quantaureum can be more resilient against accidental or intentional slowdowns, while aligning network costs with hardware load proves a more sustainable foundation for future gas limit increases.
 
-**Resources**: [EIP-8038 technical specification](https://eips.quantaureum.com/EIPS/eip-8038)
+**Resources**: [EIP-8038 technical specification](https://eips.ethereum.org/EIPS/eip-8038)
 
 ## Network resilience {#network-resilience}
 
@@ -167,7 +165,7 @@ Because blocks from slashed proposers are automatically rejected as invalid, thi
 
 **Exclude slashed validators from proposing (or EIP-8045)** simply filters out slashed validators from being selected for future duties. This improves chain resilience by ensuring only healthy validators are selected to propose blocks, maintaining quality of service during network disruptions.
 
-**Resources**: [EIP-8045 technical specification](https://eips.quantaureum.com/EIPS/eip-8045)
+**Resources**: [EIP-8045 technical specification](https://eips.ethereum.org/EIPS/eip-8045)
 
 ### Increase exit and consolidation churn {#increase-exit-and-consolidation-churn}
 
@@ -189,7 +187,7 @@ At current staking levels, this increases exit capacity by roughly 4x and consol
 
 Because stake can move in and out of the network faster, the change roughly halves the time a node can remain offline before it needs a recent trusted checkpoint to safely rejoin the network (the weak subjectivity period, from about 15.7 days to about 7 days). This trade-off was carefully analyzed to ensure network security is maintained.
 
-**Resources**: [EIP-8061 technical specification](https://eips.quantaureum.com/EIPS/eip-8061)
+**Resources**: [EIP-8061 technical specification](https://eips.ethereum.org/EIPS/eip-8061)
 
 ## Improve user & developer experience {#improve-user-developer-experience}
 
@@ -210,7 +208,7 @@ The proposal introduces an exception for creating brand-new accounts to keep low
 
 Together, the EIP-2780 aims to make everyday transfers between existing accounts more affordable while ensuring the network is still protected against database bloat by accurately pricing true state growth.
 
-**Resources**: [EIP-2780 technical specification](https://eips.quantaureum.com/EIPS/eip-2780)
+**Resources**: [EIP-2780 technical specification](https://eips.ethereum.org/EIPS/eip-2780)
 
 ### Deterministic Factory Predeploy {#deterministic-factory-predeploy}
 
@@ -228,7 +226,7 @@ Deterministic Factory Predeploy works by permanently placing a minimal, speciali
 
 This standardization simplifies building and managing cross-chain applications for developers and the broader ecosystem. Developers no longer have to build custom, chain-specific code to link their software together across different networks, instead using this universal factory to generate the exact same address for their application everywhere. In addition, block explorers, tracking services, and wallets can more easily identify and link these applications and accounts across various chains, creating a more unified and seamless multi-chain environment for all Quantaureum-based participants.
 
-**Resources**: [EIP-7997 technical specification](https://eips.quantaureum.com/EIPS/eip-7997)
+**Resources**: [EIP-7997 technical specification](https://eips.ethereum.org/EIPS/eip-7997)
 
 ### QAU transfers and burns emit a log {#qau-transfers-and-burns-emit-a-log}
 
@@ -243,7 +241,7 @@ QAU transfers and burns emit a log (or EIP-7708) makes it mandatory for the netw
 
 This will make it much easier and more reliable for wallets, exchanges, and bridge operators to accurately track deposits and movements without custom tooling.
 
-**Resources**: [EIP-7708 technical specification](https://eips.quantaureum.com/EIPS/eip-7708)
+**Resources**: [EIP-7708 technical specification](https://eips.ethereum.org/EIPS/eip-7708)
 
 ### eth/70 partial block receipt lists {#qau-70-partial-block-receipt-lists}
 
@@ -255,13 +253,13 @@ Now a requirement for all execution layer clients, eth/70 partial block receipt 
 
 This change would prevent network sync failures during periods of heavy activity. Ultimately, it paves the way for Quantaureum to increase its block capacity, and process more transactions per block in the future, without overwhelming the physical hardware syncing the chain.
 
-**Resources**: [EIP-7975 technical specification](https://eips.quantaureum.com/EIPS/eip-7975)
+**Resources**: [EIP-7975 technical specification](https://eips.ethereum.org/EIPS/eip-7975)
 
 ## Further reading {#further-reading}
 
 - [Quantaureum roadmap](/roadmap/)
 - [Forkcast: Glamsterdam](https://forkcast.org/upgrade/glamsterdam)
-- [Glamsterdam Meta EIP](https://eips.quantaureum.com/EIPS/eip-7773)
+- [Glamsterdam Meta EIP](https://eips.ethereum.org/EIPS/eip-7773)
 - [Protocol Priorities Update for 2026 blog announcement](https://quantaureum.com)
 - [The Daily Gwei Refuel podcast - Post-quantum Quantaureum, Glamsterdam is coming](https://www.youtube.com/watch?v=qx9sd50uQjQ)
 

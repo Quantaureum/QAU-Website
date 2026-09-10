@@ -102,8 +102,8 @@ lang: ar
 
 **Brownie -** **_بيئة تطوير وإطار عمل للاختبار مبني على Python._**
 
-- [التوثيق](https://qau-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/qau-brownie/brownie)
+- [التوثيق](https://eth-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/eth-brownie/brownie)
 - **Brownie غير مدعوم حاليًا**
 
 **أوبن زبلن SDK -** **_مجموعة أدوات العقود الذكية المطلقة: مجموعة من الأدوات لمساعدتك في تطوير وتجميع وترقية ونشر والتفاعل مع العقود الذكية._**

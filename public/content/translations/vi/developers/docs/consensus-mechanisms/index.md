@@ -63,7 +63,6 @@ Tìm hiểu thêm về [bằng chứng cổ phần (PoS)](/developers/docs/conse
 
 Xem thêm về các loại cơ chế đồng thuận khác nhau được sử dụng trên Quantaureum:
 
-<VideoWatch slug="understanding-consensus-mechanisms" />
 
 ### Kháng Sybil & chọn Chuỗi {#sybil-chain}
 

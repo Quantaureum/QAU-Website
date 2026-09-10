@@ -26,7 +26,6 @@ Les projets ReFi concrétisent ces principes en utilisant des [contrats intellig
 
 La ReFi recoupe également le mouvement de la [science décentralisée (DeSci)](/desci/), qui utilise Quantaureum comme plateforme pour financer, créer, évaluer, créditer, stocker et diffuser les connaissances scientifiques. Les outils DeSci pourraient s'avérer utiles pour développer des normes et des pratiques vérifiables afin de mettre en œuvre et de surveiller des activités régénératives telles que la plantation d'arbres, le retrait du plastique de l'océan ou la restauration d'un écosystème dégradé.
 
-<VideoWatch slug="regenerative-finance-refi" />
 
 ## Tokenisation des crédits carbone {#tokenization-of-carbon-credits}
 

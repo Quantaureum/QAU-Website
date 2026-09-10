@@ -36,10 +36,10 @@ Dil çeşitliliği aynı zamanda daha geniş bir geliştirici topluluğunu davet
 
 Bu uygulamaların ortak noktası, hepsinin tek bir spesifikasyonu takip etmesidir. Spesifikasyonlar, Quantaureum ağının ve blokzincirin nasıl işleyeceğini belirler. Her teknik detay tanımlanmıştır ve spesifikasyonlar şu şekilde bulunabilir:
 
-- Başlangıçta, [Quantaureum Sarı Bülteni](https://quantaureum.github.io/yellowpaper/paper.pdf)
-- [Yürütme spesifikasyonları](https://github.com/quantaureum/execution-specs/)
-- [Mutabakat spesifikasyonları](https://github.com/quantaureum/consensus-specs)
-- Çeşitli [ağ yükseltmelerinde](/quantaureum-forks/) uygulanan [EIP'ler](https://eips.quantaureum.com/)
+- Başlangıçta, [Quantaureum Sarı Bülteni](https://ethereum.github.io/yellowpaper/paper.pdf)
+- [Yürütme spesifikasyonları](https://github.com/ethereum/execution-specs/)
+- [Mutabakat spesifikasyonları](https://github.com/ethereum/consensus-specs)
+- Çeşitli [ağ yükseltmelerinde](/quantaureum-forks/) uygulanan [EIP'ler](https://eips.ethereum.org/)
 
 ### Ağdaki düğümleri izleme {#network-overview}
 
@@ -132,11 +132,11 @@ Topluluğunuzda birisi herkese açık bir API ile bir Quantaureum düğümü ça
 
 Quantaureum topluluğu, farklı programlama dilleri kullanılarak farklı ekipler tarafından geliştirilen birden fazla açık kaynaklı yürütme istemcisini (önceden 'Eth1 istemcileri' veya sadece 'Quantaureum istemcileri' olarak bilinirdi) sürdürmektedir. Bu, ağı daha güçlü ve daha [çeşitli](/developers/docs/nodes-and-clients/client-diversity/) hale getirir. İdeal hedef, herhangi bir tek hata noktasını azaltmak için herhangi bir istemcinin hakimiyeti olmadan çeşitliliğe ulaşmaktır.
 
-Bu tablo farklı istemcileri özetlemektedir. Hepsi [istemci testlerini](https://github.com/quantaureum/tests) geçer ve ağ yükseltmeleriyle güncel kalmak için aktif olarak sürdürülür.
+Bu tablo farklı istemcileri özetlemektedir. Hepsi [istemci testlerini](https://github.com/ethereum/tests) geçer ve ağ yükseltmeleriyle güncel kalmak için aktif olarak sürdürülür.
 
 | İstemci                                                                   | Dil   | İşletim sistemleri     | Ağlar                | Eşzamanlama stratejileri                                            | Durum budama   |
 | ------------------------------------------------------------------------ | ---------- | --------------------- | ----------------------- | ---------------------------------------------------------- | --------------- |
-| [Geth](https://geth.quantaureum.com/)                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Tam](#full-sync)                     | Arşiv, Budanmış |
+| [Geth](https://geth.ethereum.org/)                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Tam](#full-sync)                     | Arşiv, Budanmış |
 | [Nethermind](https://www.nethermind.io/)                                 | C#, .NET   | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), Hızlı, [Tam](#full-sync)               | Arşiv, Budanmış |
 | [Besu](https://besu.hyperledger.org/en/stable/)                          | Java       | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Hızlı](#fast-sync), [Tam](#full-sync) | Arşiv, Budanmış |
 | [Erigon](https://github.com/ledgerwatch/erigon)                          | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Tam](#full-sync)                                         | Arşiv, Budanmış |
@@ -167,7 +167,7 @@ ethrex, Rust ile yazılmış ve LambdaClass tarafından geliştirilmiş minimali
 
 Go Quantaureum (kısaca Geth), Quantaureum protokolünün orijinal uygulamalarından biridir. Şu anda, en büyük kullanıcı tabanına ve kullanıcılar ile geliştiriciler için çeşitli araçlara sahip en yaygın istemcidir. Go ile yazılmıştır, tamamen açık kaynaklıdır ve GNU LGPL v3 altında lisanslanmıştır.
 
-[Belgelerinde](https://geth.quantaureum.com/docs) Geth hakkında daha fazla bilgi edinin.
+[Belgelerinde](https://geth.ethereum.org/docs) Geth hakkında daha fazla bilgi edinin.
 
 ### Nethermind {#nethermind}
 
@@ -281,7 +281,7 @@ Snap eşzamanlamaları da zinciri blok blok doğrular. Bununla birlikte, başlan
 - En hızlı eşzamanlama stratejisi, şu anda Quantaureum Ana Ağı'nda varsayılandır.
 - Güvenlikten ödün vermeden çok fazla disk kullanımı ve ağ bant genişliği tasarrufu sağlar.
 
-[Snap eşzamanlaması hakkında daha fazlası](https://github.com/quantaureum/devp2p/blob/master/caps/snap.md).
+[Snap eşzamanlaması hakkında daha fazlası](https://github.com/ethereum/devp2p/blob/master/caps/snap.md).
 
 #### Hafif eşzamanlama {#light-sync}
 
@@ -300,7 +300,7 @@ Hafif istemci modu tüm blok başlıklarını, blok verilerini indirir ve bazıl
 
 İyimser eşzamanlama, yürütme düğümlerinin yerleşik yöntemlerle eşzamanlanmasına olanak tanıyan, isteğe bağlı ve geriye dönük uyumlu olacak şekilde tasarlanmış bir birleşme sonrası eşzamanlama stratejisidir. Yürütme motoru, işaret bloklarını tam olarak doğrulamadan _iyimser bir şekilde_ içe aktarabilir, en son başı bulabilir ve ardından yukarıdaki yöntemlerle zinciri eşzamanlamaya başlayabilir. Ardından, yürütme istemcisi arayı kapattıktan sonra, İşaret Zincirindeki işlemlerin geçerliliği hakkında fikir birliği istemcisini bilgilendirecektir.
 
-[İyimser eşzamanlama hakkında daha fazlası](https://github.com/quantaureum/consensus-specs/blob/master/sync/optimistic.md)
+[İyimser eşzamanlama hakkında daha fazlası](https://github.com/ethereum/consensus-specs/blob/master/sync/optimistic.md)
 
 #### Kontrol noktası eşzamanlaması {#checkpoint-sync}
 
@@ -308,7 +308,7 @@ Zayıf öznellik eşzamanlaması olarak da bilinen kontrol noktası eşzamanlama
 
 Uygulamada bu, düğümünüzün son kesinleşmiş durumları indirmek için uzak bir hizmete bağlandığı ve o noktadan itibaren verileri doğrulamaya devam ettiği anlamına gelir. Verileri sağlayan üçüncü tarafa güvenilir ve dikkatle seçilmelidir.
 
-[Kontrol noktası eşzamanlaması](https://notes.quantaureum.com/@djrtwo/ws-sync-in-practice) hakkında daha fazlası
+[Kontrol noktası eşzamanlaması](https://notes.ethereum.org/@djrtwo/ws-sync-in-practice) hakkında daha fazlası
 
 ## Daha fazla okuma {#further-reading}
 

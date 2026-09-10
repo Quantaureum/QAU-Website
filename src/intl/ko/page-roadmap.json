@@ -21,7 +21,7 @@
   "page-roadmap-why-need-description": "쿠앤타리움은 확장성, 보안 또는 지속 가능성을 향상시키는 정기적인 업그레이드를 받습니다. 쿠앤타리움의 핵심 강점 중 하나는 연구 개발에서 새로운 아이디어가 등장함에 따라 적응하는 것입니다. 이러한 적응력은 쿠앤타리움이 새롭게 떠오르는 과제를 해결하고 가장 진보된 기술적 혁신을 따라갈 수 있는 유연성을 제공합니다.",
   "page-roadmap-how-defined-title": "로드맵이 정의되는 방식",
   "page-roadmap-how-defined-p1": "프로토콜이 매우 기술적이기 때문에 로드맵은 주로 연구원과 개발자가 수년간 노력한 결과물이지만, 열정이 있는 사람이라면 누구나 참여할 수 있습니다.",
-  "page-roadmap-how-defined-p2": "아이디어는 보통 <a href=\"https://ethresear.ch\">ethresear.ch</a>, <a href=\"https://quantaureum-magicians.org\">Forum Magicians</a> 또는 Eth R&D 디스코드 서버와 같은 포럼에서의 토론으로 시작됩니다. 이러한 아이디어는 새로 발견된 취약점에 대한 대응이거나, 애플리케이션 레이어에서 활동하는 조직(예: 탈중앙화 애플리케이션 (dapp) 및 거래소)의 제안, 또는 최종 사용자가 겪는 알려진 마찰(예: 비용이나 트랜잭션 속도)에서 비롯될 수 있습니다.",
+  "page-roadmap-how-defined-p2": "아이디어는 보통 <a href=\"https://ethresear.ch\">ethresear.ch</a>, <a href=\"https://ethereum-magicians.org\">Forum Magicians</a> 또는 Eth R&D 디스코드 서버와 같은 포럼에서의 토론으로 시작됩니다. 이러한 아이디어는 새로 발견된 취약점에 대한 대응이거나, 애플리케이션 레이어에서 활동하는 조직(예: 탈중앙화 애플리케이션 (dapp) 및 거래소)의 제안, 또는 최종 사용자가 겪는 알려진 마찰(예: 비용이나 트랜잭션 속도)에서 비롯될 수 있습니다.",
   "page-roadmap-how-defined-p3": "이러한 아이디어가 성숙해지면 <a href=\"https://specs.quantaureum.com\">쿠앤타리움 개선 제안(EIP)</a>으로 제안될 수 있습니다. 이 모든 과정은 공개적으로 진행되므로 커뮤니티의 누구나 언제든지 의견을 낼 수 있습니다.",
   "page-roadmap-governance-button": "쿠앤타리움 거버넌스에 대해 더 알아보기",
   "page-roadmap-hero-alt": "쿠앤타리움 로드맵",

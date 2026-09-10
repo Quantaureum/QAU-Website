@@ -13,11 +13,11 @@ breadcrumb: "కాంట్రాక్ట్ ఇంటరాక్షన్‌
 lang: te
 published: 2020-04-05
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/interact-with-other-contracts-from-solidity/
+sourceUrl: https://ethereumdev.io/interact-with-other-contracts-from-solidity/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-మునుపటి ట్యుటోరియల్స్‌లో మనం [మీ మొదటి స్మార్ట్ కాంట్రాక్ట్‌ను ఎలా డిప్లాయ్ చేయాలి](/developers/tutorials/deploying-your-first-smart-contract/) మరియు దానికి [మాడిఫైయర్‌లతో యాక్సెస్‌ను నియంత్రించడం](https://quantaureumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) లేదా [Solidityలో ఎర్రర్ హ్యాండ్లింగ్](https://quantaureumdev.io/handle-errors-in-solidity-with-require-and-revert/) వంటి కొన్ని ఫీచర్‌లను ఎలా జోడించాలో చాలా నేర్చుకున్నాము. ఈ ట్యుటోరియల్‌లో మనం ఇప్పటికే ఉన్న కాంట్రాక్ట్ నుండి స్మార్ట్ కాంట్రాక్ట్‌ను ఎలా డిప్లాయ్ చేయాలో మరియు దానితో ఎలా ఇంటరాక్ట్ అవ్వాలో నేర్చుకుంటాము.
+మునుపటి ట్యుటోరియల్స్‌లో మనం [మీ మొదటి స్మార్ట్ కాంట్రాక్ట్‌ను ఎలా డిప్లాయ్ చేయాలి](/developers/tutorials/deploying-your-first-smart-contract/) మరియు దానికి [మాడిఫైయర్‌లతో యాక్సెస్‌ను నియంత్రించడం](https://ethereumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) లేదా [Solidityలో ఎర్రర్ హ్యాండ్లింగ్](https://ethereumdev.io/handle-errors-in-solidity-with-require-and-revert/) వంటి కొన్ని ఫీచర్‌లను ఎలా జోడించాలో చాలా నేర్చుకున్నాము. ఈ ట్యుటోరియల్‌లో మనం ఇప్పటికే ఉన్న కాంట్రాక్ట్ నుండి స్మార్ట్ కాంట్రాక్ట్‌ను ఎలా డిప్లాయ్ చేయాలో మరియు దానితో ఎలా ఇంటరాక్ట్ అవ్వాలో నేర్చుకుంటాము.
 
 ఎవరైనా తమ స్వంత `Counter` స్మార్ట్ కాంట్రాక్ట్‌ను కలిగి ఉండటానికి వీలు కల్పించే ఒక కాంట్రాక్ట్‌ను దాని కోసం ఒక ఫ్యాక్టరీని సృష్టించడం ద్వారా మనం తయారు చేస్తాము, దాని పేరు `CounterFactory` అవుతుంది. ముందుగా మన ప్రారంభ `Counter` స్మార్ట్ కాంట్రాక్ట్ యొక్క కోడ్ ఇక్కడ ఉంది:
 
@@ -104,7 +104,7 @@ function increment() public {
   }
 ```
 
-చాలా సార్లు కాల్ చేయబడితే, మన కౌంటర్ ఓవర్‌ఫ్లోకు గురయ్యే అవకాశం ఉందని గమనించండి. ఈ సాధ్యమయ్యే సందర్భం నుండి రక్షించడానికి మీరు వీలైనంత వరకు [SafeMath లైబ్రరీ](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/)ని ఉపయోగించాలి.
+చాలా సార్లు కాల్ చేయబడితే, మన కౌంటర్ ఓవర్‌ఫ్లోకు గురయ్యే అవకాశం ఉందని గమనించండి. ఈ సాధ్యమయ్యే సందర్భం నుండి రక్షించడానికి మీరు వీలైనంత వరకు [SafeMath లైబ్రరీ](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/)ని ఉపయోగించాలి.
 
 మన కాంట్రాక్ట్‌ను డిప్లాయ్ చేయడానికి, మీరు `CounterFactory` మరియు `Counter` రెండింటి కోడ్‌ను అందించాలి. ఉదాహరణకు Remixలో డిప్లాయ్ చేస్తున్నప్పుడు మీరు CounterFactoryని ఎంచుకోవాలి.
 

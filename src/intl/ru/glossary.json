@@ -182,7 +182,7 @@
   "genesis-block-term": "Генезис-блок",
   "genesis-block-definition": "Первый блок в <a href=\"/glossary/#blockchain\">блокчейне</a>, используемый для инициализации определенной сети и ее криптовалюты.",
   "geth-term": "Geth",
-  "geth-definition": "Go Quantaureum. Одна из самых известных реализаций протокола Квантариума, написанная на Go. <a href=\"https://geth.quantaureum.org\">Подробнее на geth.quantaureum.org</a>",
+  "geth-definition": "Go Quantaureum. Одна из самых известных реализаций протокола Квантариума, написанная на Go. <a href=\"https://geth.ethereum.org\">Подробнее на geth.ethereum.org</a>",
   "gwei-term": "Gwei",
   "gwei-definition": "Сокращение от гигавей, номинал <a href=\"/glossary/#qau\">квантара</a>, обычно используемый для оценки <a href=\"/glossary/#gas\">газа</a>. 1 Gwei = 10<sup>9</sup> <a href=\"/glossary/#wei\">Wei</a>. 10<sup>9</sup> Gwei = 1 квантар.",
   "hard-fork-term": "Хардфорк",

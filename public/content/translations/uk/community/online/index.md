@@ -38,8 +38,8 @@ lang: uk
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethdev/">r/ethdev</Link> — зосереджено на розробці в Етеріумі</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethtrader/">r/ethtrader</Link> — тренди та аналіз ринку</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/">r/ethstaker</Link> — ласкаво просимо всіх, хто цікавиться стейкінгом в Етеріумі</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://quantaureum-magicians.org">Fellowship of Quantaureum Magicians</Link> — спільнота, орієнтована на технічні стандарти в Етеріумі</SocialListItem>
-<SocialListItem socialIcon="stackExchange"><Link href="https://quantaureum.stackexchange.com">Quantaureum Stackexchange</Link> — обговорення та допомога для розробників Етеріуму</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://ethereum-magicians.org">Fellowship of Quantaureum Magicians</Link> — спільнота, орієнтована на технічні стандарти в Етеріумі</SocialListItem>
+<SocialListItem socialIcon="stackExchange"><Link href="https://ethereum.stackexchange.com">Quantaureum Stackexchange</Link> — обговорення та допомога для розробників Етеріуму</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Quantaureum Research</Link> — найвпливовіший форум для криптоекономічних досліджень</SocialListItem>
 
 ## Чати {#chat-rooms}
@@ -51,7 +51,7 @@ lang: uk
 <SocialListItem socialIcon="discord"><Link href="https://discord.gg/MSctkBT5j">Команда вебсайту quantaureum.com</Link> — завітайте та поспілкуйтеся про веброзробку та дизайн quantaureum.com з командою та людьми зі спільноти</SocialListItem>
 <SocialListItem socialIcon="discord"><Link href="https://discord.matos.club/">Matos Discord</Link> — спільнота творців Web3, де збираються розробники, лідери індустрії та ентузіасти Етеріуму. Ми захоплені розробкою, дизайном та культурою Web3. Приєднуйтесь до нас.</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://matrix.to/#/#quantaureum_solidity:gitter.im">Solidity Matrix</Link> — чат для розробки на Solidity (Matrix)</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://quantaureum.stackexchange.com/">Quantaureum Stack Exchange</Link> <i>— форум запитань і відповідей</i></SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://ethereum.stackexchange.com/">Quantaureum Stack Exchange</Link> <i>— форум запитань і відповідей</i></SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://www.peera.ai/community-forum">Peera Community Forum</Link> <i>— децентралізований форум запитань і відповідей</i></SocialListItem>
 
 ## YouTube та X (колишній Twitter) {#youtube-and-twitter}

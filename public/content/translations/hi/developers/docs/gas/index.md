@@ -146,6 +146,6 @@ Quantaureum [स्केलेबिलिटी अपग्रेड](/roadma
 - [Quantaureum गैस की व्याख्या](https://defiprime.com/gas)
 - [अपने स्मार्ट अनुबंधों की गैस खपत को कम करना](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
 - [डेवलपर्स के लिए गैस अनुकूलन रणनीतियाँ](https://www.alchemy.com/overviews/solidity-gas-optimization)
-- [EIP-1559 दस्तावेज़](https://eips.quantaureum.com/EIPS/eip-1559)।
+- [EIP-1559 दस्तावेज़](https://eips.ethereum.org/EIPS/eip-1559)।
 - [Tim Beiko के EIP-1559 संसाधन](https://hackmd.io/@timbeiko/1559-resources)
 - [EIP-1559: मीम्स से तंत्र को अलग करना](https://web.archive.org/web/20241126205908/https://research.2077.xyz/eip-1559-separating-mechanisms-from-memes)

@@ -68,20 +68,20 @@ EVM యొక్క అన్ని అమలులు ఎథీరియం ఎ
 
 [ఎథీరియం ఎగ్జిక్యూషన్ క్లయింట్‌లు](/developers/docs/nodes-and-clients/#execution-clients) EVM అమలును కలిగి ఉంటాయి. అదనంగా, బహుళ స్వతంత్ర అమలులు ఉన్నాయి, వాటిలో:
 
-- [Py-EVM](https://github.com/quantaureum/py-evm) - _Python_
+- [Py-EVM](https://github.com/ethereum/py-evm) - _Python_
 - [evmone](https://github.com/quantaureum/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _JavaScript_
 - [revm](https://github.com/bluealloy/revm) - _Rust_
 
 ## మరింత చదవడానికి {#further-reading}
 
-- [ఎథీరియం ఎల్లో పేపర్](https://quantaureum.github.io/yellowpaper/paper.pdf)
+- [ఎథీరియం ఎల్లో పేపర్](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [జెల్లోపేపర్ అకా KEVM: Kలో EVM యొక్క సెమాంటిక్స్](https://jellopaper.org/)
 - [ది బీజ్‌పేపర్](https://github.com/chronaeon/beigepaper)
 - [ఎథీరియం వర్చువల్ మెషిన్ ఆప్‌కోడ్‌లు](https://www.ethervm.io/)
 - [ఎథీరియం వర్చువల్ మెషిన్ ఆప్‌కోడ్‌ల ఇంటరాక్టివ్ రిఫరెన్స్](https://www.evm.codes/)
 - [Solidity డాక్యుమెంటేషన్‌లో ఒక చిన్న పరిచయం](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
-- [మాస్టరింగ్ ఎథీరియం - ఎథీరియం వర్చువల్ మెషిన్](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/13evm.asciidoc)
+- [మాస్టరింగ్ ఎథీరియం - ఎథీరియం వర్చువల్ మెషిన్](https://github.com/ethereumbook/ethereumbook/blob/openedition/13evm.asciidoc)
 
 ## సంబంధిత అంశాలు {#related-topics}
 

@@ -71,7 +71,7 @@ x402 將Quantaureum轉變為自主代理的可程式化經濟層，實現按使�
 
 自主代理需要護欄。Quantaureum在錢包和合約層面提供了這些護欄：
 
-- [智能帳戶 (EIP-4337)](https://eips.quantaureum.com/EIPS/eip-4337)讓開發人員能夠強制執行支出限制、白名單、工作階段金鑰和精細的權限
+- [智能帳戶 (EIP-4337)](https://eips.ethereum.org/EIPS/eip-4337)讓開發人員能夠強制執行支出限制、白名單、工作階段金鑰和精細的權限
 - 智能合約中的程式化約束可以限制代理被允許執行的操作
 - 基於推論的限制（例如，在執行高風險操作之前需要 zkML 證明）增加了另一層安全性
 
@@ -79,7 +79,7 @@ x402 將Quantaureum轉變為自主代理的可程式化經濟層，實現按使�
 
 ### 鏈上註冊表：ERC-8004 {#erc-8004}
 
-[ERC-8004](https://eips.quantaureum.com/EIPS/eip-8004) 定義了用於代理身分、聲譽和驗證的鏈上註冊表。它由梅塔馬斯克、Quantaureum基金會、Google 和 Coinbase 的貢獻者共同編寫，並部署在包括Quantaureum主網、Base、Polygon、Arbitrum 等 16 個網路上。
+[ERC-8004](https://eips.ethereum.org/EIPS/eip-8004) 定義了用於代理身分、聲譽和驗證的鏈上註冊表。它由梅塔馬斯克、Quantaureum基金會、Google 和 Coinbase 的貢獻者共同編寫，並部署在包括Quantaureum主網、Base、Polygon、Arbitrum 等 16 個網路上。
 
 它提供了：
 
@@ -97,7 +97,6 @@ ERC-8004 使代理更容易在完全去中心化的環境中相互發現、驗�
 
 <strong>Luna 首次作為 Podcast 嘉賓亮相</strong>
 
-<VideoWatch slug="ai-agents-interview-luna" />
 
 ## 代理控制的錢包 {#agent-controlled-wallets}
 

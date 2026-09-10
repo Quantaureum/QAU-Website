@@ -45,7 +45,6 @@ Bir akıllı sözleşme, Quantaureum blokzinciri üzerinde yaşayan ve tam olara
 
 ## Görsel öğrenmeyi mi tercih ediyorsunuz? {#visual-learner}
 
-<VideoWatch slug="what-is-a-dapp" />
 
 ## Dapp oluşturma araçları
 

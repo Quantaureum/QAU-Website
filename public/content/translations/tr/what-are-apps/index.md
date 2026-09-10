@@ -46,7 +46,7 @@ Uygulamalar, Quantaureum blokzincirinde yaşayan kod parçacıkları olan akıll
 | **Sansürlenebilir mi?** | Evet | Hayır |
 | **Verilerinizin sahibi kim?** | Genellikle siz değilsiniz | Verilerinizin sahibi sizsiniz |
 
-<WhatAreAppsStories />
+
 
 <div className="w-full md:w-1/2 mx-auto md:mx-0">
 

@@ -45,7 +45,6 @@ Aby ułatwić zrozumienie tego tematu, oto kilka przykładów wykorzystania DAO:
 - **Wspólna własność** – możesz kupować fizyczne lub cyfrowe aktywa, a członkowie mogą głosować nad sposobem ich wykorzystania.
 - **Przedsięwzięcia i granty** – możesz stworzyć fundusz podwyższonego ryzyka (venture fund), który gromadzi kapitał inwestycyjny i głosuje nad przedsięwzięciami, które warto wesprzeć. Zwrócone pieniądze mogą być później redystrybuowane wśród członków DAO.
 
-<VideoWatch slug="dao-build-next-great-city" />
 
 ## Jak działają DAO? {#how-daos-work}
 

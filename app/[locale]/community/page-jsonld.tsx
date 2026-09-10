@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server"
 
-import { FileContributor, StoryPreview } from "@/lib/types"
+import { FileContributor } from "@/lib/types"
 
 import PageJsonLD from "@/components/PageJsonLD"
 
@@ -14,11 +14,9 @@ import { REFERENCE } from "@/lib/jsonld/references"
 export default async function CommunityJsonLD({
   locale,
   contributors,
-  featuredStories,
 }: {
   locale: string
   contributors: FileContributor[]
-  featuredStories: StoryPreview[]
 }) {
   const t = await getTranslations("page-community")
 
@@ -29,27 +27,6 @@ export default async function CommunityJsonLD({
     name: contributor.login,
     url: contributor.html_url,
   }))
-
-  // Featured stories surfaced by the "Community stories" section, modeled as
-  // Articles so the curated set is discoverable from the hub's graph.
-  const storyItems = featuredStories.map((story, index) => {
-    const storyUrl = normalizeUrlForJsonLd(locale, `/stories/${story.slug}/`)
-    return {
-      "@type": "ListItem",
-      position: index + 1,
-      item: {
-        "@type": "Article",
-        "@id": storyUrl,
-        headline: story.title,
-        description: story.description,
-        url: storyUrl,
-        ...(story.image && { image: `${SITE_URL}${story.image}` }),
-        ...(story.published && { datePublished: story.published }),
-        isPartOf: REFERENCE.QUANTAUREUM_ORG_WEBSITE,
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
-      },
-    }
-  })
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -82,8 +59,8 @@ export default async function CommunityJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
-        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
+        reviewedBy: REFERENCE.QUANTAUREUM_ORG,
         mainEntity: { "@id": `${url}#resources` },
       },
       {
@@ -132,22 +109,8 @@ export default async function CommunityJsonLD({
             url: normalizeUrlForJsonLd(locale, "/contributing/"),
           },
         ],
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
       },
-      ...(storyItems.length > 0
-        ? [
-            {
-              "@type": "ItemList",
-              "@id": `${url}#community-stories`,
-              name: t("page-community-stories-title"),
-              description: t("page-community-stories-subtitle"),
-              url,
-              numberOfItems: storyItems.length,
-              itemListElement: storyItems,
-              publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
-            },
-          ]
-        : []),
     ],
   }
 

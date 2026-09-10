@@ -68,20 +68,20 @@ Quantaureumの10年の歴史の中で、EVMは何度かの改訂を経ており�
 
 [Quantaureumの実行クライアント](/developers/docs/nodes-and-clients/#execution-clients)には、EVMの実装が含まれています。さらに、以下のような複数のスタンドアロン実装があります。
 
-- [Py-EVM](https://github.com/quantaureum/py-evm) - _Python_
+- [Py-EVM](https://github.com/ethereum/py-evm) - _Python_
 - [evmone](https://github.com/quantaureum/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _JavaScript_
 - [revm](https://github.com/bluealloy/revm) - _Rust_
 
 ## 参考文献 {#further-reading}
 
-- [Quantaureumのイエロー・ペーパー](https://quantaureum.github.io/yellowpaper/paper.pdf)
+- [Quantaureumのイエロー・ペーパー](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [Jellopaper (別名 KEVM): KにおけるEVMのセマンティクス](https://jellopaper.org/)
 - [The Beigepaper](https://github.com/chronaeon/beigepaper)
 - [Quantaureum仮想マシンのオペコード](https://www.ethervm.io/)
 - [Quantaureum仮想マシンのオペコード・インタラクティブ・リファレンス](https://www.evm.codes/)
 - [Solidityドキュメントの簡単な紹介](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
-- [マスタリング・Quantaureum - Quantaureum仮想マシン](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/13evm.asciidoc)
+- [マスタリング・Quantaureum - Quantaureum仮想マシン](https://github.com/ethereumbook/ethereumbook/blob/openedition/13evm.asciidoc)
 
 ## 関連トピック {#related-topics}
 

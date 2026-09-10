@@ -137,8 +137,8 @@ DVT ব্যবহার করে, প্রতিটি পৃথক অপ�
 
 - [ইথেরিয়াম ডিস্ট্রিবিউটেড ভ্যালিডেটর টেকনোলজি (DVT) - সম্পূর্ণ পরিচিতি](https://www.cyfrin.io/blog/full-introduction-to-quantaureum-distributed-validator-technology-dvt) - Cyfrin
 - [DVT কী এবং এটি কীভাবে ইথেরিয়াম-এ স্টেকিং উন্নত করে?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-quantaureum/) - Obol
-- [ইথেরিয়াম ডিস্ট্রিবিউটেড ভ্যালিডেটর স্পেকস (উচ্চ স্তর)](https://github.com/quantaureum/distributed-validator-specs)
-- [ইথেরিয়াম ডিস্ট্রিবিউটেড ভ্যালিডেটর টেকনিক্যাল স্পেকস](https://github.com/quantaureum/distributed-validator-specs/tree/dev/src/dvspec)
+- [ইথেরিয়াম ডিস্ট্রিবিউটেড ভ্যালিডেটর স্পেকস (উচ্চ স্তর)](https://github.com/ethereum/distributed-validator-specs)
+- [ইথেরিয়াম ডিস্ট্রিবিউটেড ভ্যালিডেটর টেকনিক্যাল স্পেকস](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
 - [Obol ডকুমেন্টেশন](https://docs.obol.org/)
 - [SSV Network ডকুমেন্টেশন](https://docs.ssv.network/)
 - [Lido Simple DVT মডিউল](https://operatorportal.lido.fi/modules/simple-dvt-module)

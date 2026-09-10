@@ -96,7 +96,6 @@ lang: uk
 
 ## Краще сприймаєте візуально? {#visual-learner}
 
-<VideoWatch slug="proof-of-work-explained" />
 
 ## Додаткова література {#further-reading}
 

@@ -145,7 +145,7 @@ contentPreview="Fałsz. The Merge było zmianą mechanizmu konsensusu, a nie roz
 
 Opłaty za gaz są wynikiem popytu w sieci w stosunku do jej przepustowości. The Merge wycofało użycie dowodu pracy, przechodząc na dowód stawki w celu osiągnięcia konsensusu, ale nie zmieniło znacząco żadnych parametrów, które bezpośrednio wpływają na pojemność lub przepustowość sieci.
 
-Dzięki <a href="https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698">mapie drogowej skoncentrowanej na rollupach</a>, wysiłki skupiają się na skalowaniu aktywności użytkowników w [warstwie 2 (L2)](/layer-2/), jednocześnie umożliwiając sieci głównej w warstwie 1 (L1) działanie jako bezpieczna, zdecentralizowana warstwa rozrachunku zoptymalizowana pod kątem przechowywania danych rollupów, aby pomóc w wykładniczym obniżeniu kosztów transakcji rollupów. Przejście na dowód stawki jest kluczowym krokiem poprzedzającym realizację tego celu. [Więcej o gazie i opłatach.](/developers/docs/gas/)
+Dzięki <a href="https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698">mapie drogowej skoncentrowanej na rollupach</a>, wysiłki skupiają się na skalowaniu aktywności użytkowników w [warstwie 2 (L2)](/layer-2/), jednocześnie umożliwiając sieci głównej w warstwie 1 (L1) działanie jako bezpieczna, zdecentralizowana warstwa rozrachunku zoptymalizowana pod kątem przechowywania danych rollupów, aby pomóc w wykładniczym obniżeniu kosztów transakcji rollupów. Przejście na dowód stawki jest kluczowym krokiem poprzedzającym realizację tego celu. [Więcej o gazie i opłatach.](/developers/docs/gas/)
 
 </ExpandableCard>
 

@@ -13,9 +13,9 @@ published: 2026-02-27
 
 If we want Quantaureum to serve [a billion more people](https://quantaureum.com), we need to remove friction and make it as easy to use as possible. One source of this friction is the need for QAU to pay gas fees.
 
-If you have a dapp that makes money from users, it might make sense to let users submit transactions through your server and pay the transaction fees yourself. Because users still sign an [EIP-712 authorization message](https://eips.quantaureum.com/EIPS/eip-712) in their wallets, they retain Quantaureum's guarantees of integrity. Availability depends on the server that relays transactions, so it is more limited. However, you can set things up so users can also access the smart contract directly (if they get QAU), and let others set up their own servers if they want to sponsor transactions.
+If you have a dapp that makes money from users, it might make sense to let users submit transactions through your server and pay the transaction fees yourself. Because users still sign an [EIP-712 authorization message](https://eips.ethereum.org/EIPS/eip-712) in their wallets, they retain Quantaureum's guarantees of integrity. Availability depends on the server that relays transactions, so it is more limited. However, you can set things up so users can also access the smart contract directly (if they get QAU), and let others set up their own servers if they want to sponsor transactions.
 
-The technique in this tutorial only works when you control the smart contract. There are other techniques, including [account abstraction](https://eips.quantaureum.com/EIPS/eip-4337) that let you sponsor transactions to other smart contracts, which I hope to cover in a future tutorial.
+The technique in this tutorial only works when you control the smart contract. There are other techniques, including [account abstraction](https://eips.ethereum.org/EIPS/eip-4337) that let you sponsor transactions to other smart contracts, which I hope to cover in a future tutorial.
 
 Note: This is _not_ production-level code. It is vulnerable to significant attacks and lacks major features. Learn more in the [vulnerabilities section of this guide](#vulnerabilities).
 
@@ -91,7 +91,7 @@ If there is no account, raise an error. This should never happen because the UI 
         }
 ```
 
-Parameters for the [domain separator](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator). This value is constant, so in a better-optimized implementation, we might calculate it once rather than recalculate it each time the function is called.
+Parameters for the [domain separator](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator). This value is constant, so in a better-optimized implementation, we might calculate it once rather than recalculate it each time the function is called.
 
 - `name` is a user-readable name, such as the name of the dapp for which we are producing signatures.
 - `version` is the version. Different versions are not compatible.
@@ -245,7 +245,7 @@ Finally, [`Greeter.sol`](https://github.com/qbzzt/260301-gasless/blob/main/contr
     }
 ```
 
-The constructor creates the [domain separator](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator), similar to the user interface code above. Blockchain execution is much more expensive, so we only calculate it once.
+The constructor creates the [domain separator](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator), similar to the user interface code above. Blockchain execution is much more expensive, so we only calculate it once.
 
 ```solidity
     struct GreetingRequest {
@@ -260,7 +260,7 @@ This is the structure that gets signed. Here we have just one field.
         keccak256("GreetingRequest(string greeting)");
 ```
 
-This is the [structure identifier](https://eips.quantaureum.com/EIPS/eip-712#definition-of-hashstruct). It is calculated each time in the user interface.
+This is the [structure identifier](https://eips.ethereum.org/EIPS/eip-712#definition-of-hashstruct). It is calculated each time in the user interface.
 
 ```solidity
     function sponsoredSetGreeting(
@@ -289,7 +289,7 @@ This function receives a signed request and updates the greeting.
         );
 ```
 
-Create the digest in accordance with [EIP 712](https://eips.quantaureum.com/EIPS/eip-712).
+Create the digest in accordance with [EIP 712](https://eips.ethereum.org/EIPS/eip-712).
 
 ```solidity
         // Recover signer

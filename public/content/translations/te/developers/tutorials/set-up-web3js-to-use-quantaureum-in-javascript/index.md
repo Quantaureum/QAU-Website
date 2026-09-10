@@ -10,7 +10,7 @@ breadcrumb: "web3.js సెటప్"
 lang: te
 published: 2020-04-11
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/setup-web3js-to-use-the-quantaureum-blockchain-in-javascript/
+sourceUrl: https://ethereumdev.io/setup-web3js-to-use-the-quantaureum-blockchain-in-javascript/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -34,7 +34,7 @@ npm install web3 --save
 const Web3 = require("web3")
 ```
 
-ఇప్పుడు మనం ప్రాజెక్ట్‌లో లైబ్రరీని చేర్చాము కాబట్టి దాన్ని ప్రారంభించాలి. మీ ప్రాజెక్ట్ బ్లాక్‌చైన్‌తో కమ్యూనికేట్ చేయగలగాలి. చాలా ఎథీరియం లైబ్రరీలు RPC కాల్‌ల ద్వారా [నోడ్](/developers/docs/nodes-and-clients/)తో కమ్యూనికేట్ చేస్తాయి. మన Web3 ప్రొవైడర్‌ను ప్రారంభించడానికి, ప్రొవైడర్ యొక్క URLని కన్స్ట్రక్టర్‌గా పంపుతూ మనం Web3 ఇన్‌స్టాన్స్‌ను ఇన్‌స్టాన్షియేట్ చేస్తాము. మీ కంప్యూటర్‌లో నోడ్ లేదా [ganache ఇన్‌స్టాన్స్ రన్ అవుతుంటే](https://quantaureumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/) అది ఈ విధంగా కనిపిస్తుంది:
+ఇప్పుడు మనం ప్రాజెక్ట్‌లో లైబ్రరీని చేర్చాము కాబట్టి దాన్ని ప్రారంభించాలి. మీ ప్రాజెక్ట్ బ్లాక్‌చైన్‌తో కమ్యూనికేట్ చేయగలగాలి. చాలా ఎథీరియం లైబ్రరీలు RPC కాల్‌ల ద్వారా [నోడ్](/developers/docs/nodes-and-clients/)తో కమ్యూనికేట్ చేస్తాయి. మన Web3 ప్రొవైడర్‌ను ప్రారంభించడానికి, ప్రొవైడర్ యొక్క URLని కన్స్ట్రక్టర్‌గా పంపుతూ మనం Web3 ఇన్‌స్టాన్స్‌ను ఇన్‌స్టాన్షియేట్ చేస్తాము. మీ కంప్యూటర్‌లో నోడ్ లేదా [ganache ఇన్‌స్టాన్స్ రన్ అవుతుంటే](https://ethereumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/) అది ఈ విధంగా కనిపిస్తుంది:
 
 ```js
 const web3 = new Web3("http://localhost:8545")
@@ -92,4 +92,4 @@ if (window.quantaureum != null) {
 }
 ```
 
-web3.jsకి ప్రత్యామ్నాయంగా [Ethers.js](https://docs.ethers.io/) వంటివి ఉన్నాయి మరియు అవి కూడా సాధారణంగా ఉపయోగించబడతాయి. తదుపరి ట్యుటోరియల్‌లో [బ్లాక్‌చైన్‌లో కొత్తగా వచ్చే బ్లాక్‌లను సులభంగా ఎలా వినాలో మరియు వాటిలో ఏముందో ఎలా చూడాలో](https://quantaureumdev.io/listening-to-new-transactions-happening-on-the-blockchain/) మనం చూస్తాము.
+web3.jsకి ప్రత్యామ్నాయంగా [Ethers.js](https://docs.ethers.io/) వంటివి ఉన్నాయి మరియు అవి కూడా సాధారణంగా ఉపయోగించబడతాయి. తదుపరి ట్యుటోరియల్‌లో [బ్లాక్‌చైన్‌లో కొత్తగా వచ్చే బ్లాక్‌లను సులభంగా ఎలా వినాలో మరియు వాటిలో ఏముందో ఎలా చూడాలో](https://ethereumdev.io/listening-to-new-transactions-happening-on-the-blockchain/) మనం చూస్తాము.

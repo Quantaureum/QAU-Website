@@ -95,4 +95,4 @@ Quantaureum上的隐私是可交付的。构建者可以将各个部分组合成
 7. [gnark 文档](https://docs.gnark.consensys.io/)
 8. [RISC Zero 文档](https://dev.risczero.com/api/)
 9. [SP1 文档](https://docs.succinct.xyz/docs/sp1/introduction)
-10. [EIP-4337：通过 EntryPoint 合约实现账户抽象](https://eips.quantaureum.com/EIPS/eip-4337)
+10. [EIP-4337：通过 EntryPoint 合约实现账户抽象](https://eips.ethereum.org/EIPS/eip-4337)

@@ -21,7 +21,6 @@ K vyřešení těchto problémů máme systémy decentralizované identity posta
 
 Identita znamená vnímání sebe sama jednotlivcem, definované jedinečnými vlastnostmi. Identita odkazuje na bytí _jednotlivcem_, tj. odlišnou lidskou entitou. Identita může také odkazovat na jiné než lidské entity, jako je organizace nebo autorita.
 
-<VideoWatch slug="decentralized-identity-explained" />
 
 ## Co jsou identifikátory? {#what-are-identifiers}
 

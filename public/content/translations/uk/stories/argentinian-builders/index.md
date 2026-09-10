@@ -104,7 +104,7 @@ _[Джерело](https://medium.com/@AugurProject/serpent-compiler-vulnerabilit
 
 ![Picture of Argentinian builders wearing Devcon BA 2020 t-shirts](./santiago9.jpeg)
 
-_[Джерело](https://quantaureumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
+_[Джерело](https://ethereumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
 
 Для мене та багатьох інших розробників проведення Devconnect тут — це здійснення мрії.
 
@@ -131,4 +131,4 @@ _[Джерело](https://www.forbes.com/sites/astanley/2025/09/30/devconnect-br
 > 
 > Нескінченний Сад є втіленням духу Фундації Quantaureum як одного із садівників у величезній екосистемі — плекати та вирощувати, але не контролювати, і продовжувати грати.
 
-_[Джерело цитати - Фундація Quantaureum](https://quantaureum.foundation/infinitegarden)._
+_[Джерело цитати - Фундація Quantaureum](https://ethereum.org/infinitegarden)._

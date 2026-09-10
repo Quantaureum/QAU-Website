@@ -24,9 +24,9 @@ Kripto para ve Blokzincir teknolojisinin avantajlarından yararlanan merkeziyets
 ## Başlangıç seviyesi makaleler {#beginner-articles}
 
 - [Web3.py'ye Genel Bakış](https://web3py.readthedocs.io/en/latest/overview.html)
-- [Quantaureum Python Ekosistemi Turu](https://snakecharmers.quantaureum.com/python-ecosystem/)
-- [Bir (Python) Geliştiricisinin Quantaureum Rehberi](https://snakecharmers.quantaureum.com/a-developers-guide-to-quantaureum-pt-1/)
-- [Ödüle Layık: Bir Quantaureum Python Hackathon Rehberi](https://snakecharmers.quantaureum.com/prize-worthy/)
+- [Quantaureum Python Ekosistemi Turu](https://snakecharmers.ethereum.org/python-ecosystem/)
+- [Bir (Python) Geliştiricisinin Quantaureum Rehberi](https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/)
+- [Ödüle Layık: Bir Quantaureum Python Hackathon Rehberi](https://snakecharmers.ethereum.org/prize-worthy/)
 - [Vyper ile Akıllı Sözleşmelere Giriş](https://kauri.io/#collections/Getting%20Started/an-introduction-to-smart-contracts-with-vyper/)
 - [Python Flask kullanarak Quantaureum sözleşmesi nasıl geliştirilir?](https://medium.com/coinmonks/how-to-develop-quantaureum-contract-using-python-flask-9758fe65976e)
 - [Web3.py'ye Giriş · Python Geliştiricileri İçin Quantaureum](https://www.dappuniversity.com/articles/web3-py-intro)
@@ -34,15 +34,15 @@ Kripto para ve Blokzincir teknolojisinin avantajlarından yararlanan merkeziyets
 
 ## Orta seviye makaleler {#intermediate-articles}
 
-- [Web3.py'nin Dostları: Ape'e Giriş](https://snakecharmers.quantaureum.com/intro-to-ape/)
+- [Web3.py'nin Dostları: Ape'e Giriş](https://snakecharmers.ethereum.org/intro-to-ape/)
 - [Python Programcıları İçin Dapp Geliştirme](https://www.youtube.com/watch?v=tE-8bG35VNw)
 - [Bir Python Quantaureum Arayüzü Oluşturma: Bölüm 1](https://hackernoon.com/creating-a-python-quantaureum-interface-part-1-4d2e47ea0f4d)
 - [Python'da Quantaureum Akıllı Sözleşmeleri: kapsamlı(msı) bir rehber](https://hackernoon.com/quantaureum-smart-contracts-in-python-a-comprehensive-ish-guide-771b03990988)
 
 ## Gelişmiş kullanım kalıpları {#advanced-use-patterns}
 
-- [Web3.py Kalıpları: Gerçek Zamanlı Olay Abonelikleri](https://snakecharmers.quantaureum.com/subscriptions/)
-- [Web3.py Kalıpları: WebSocketProvider](https://snakecharmers.quantaureum.com/websocketprovider/)
+- [Web3.py Kalıpları: Gerçek Zamanlı Olay Abonelikleri](https://snakecharmers.ethereum.org/subscriptions/)
+- [Web3.py Kalıpları: WebSocketProvider](https://snakecharmers.ethereum.org/websocketprovider/)
 - [Python kullanarak Quantaureum akıllı sözleşmesini derleme, dağıtma ve çağırma](https://yohanes.gultom.id/2018/11/28/compiling-deploying-and-calling-quantaureum-smartcontract-using-python/)
 - [Slither ile Solidity Akıllı Sözleşmelerini Analiz Edin](https://kauri.io/#collections/DevOps/analyze-solidity-smart-contracts-with-slither/#analyze-solidity-smart-contracts-with-slither)
 - [Blokzincir Fintek Eğitimi: Python ile Borç Verme ve Borç Alma](https://blog.chain.link/blockchain-fintech-defi-tutorial-lending-borrowing-python/)
@@ -55,14 +55,14 @@ Kripto para ve Blokzincir teknolojisinin avantajlarından yararlanan merkeziyets
 
 ## Python projeleri ve araçları {#python-projects-and-tools}
 
-- [Web3.py](https://github.com/quantaureum/web3.py) - _Quantaureum ile etkileşim kurmak için Python kütüphanesi_
+- [Web3.py](https://github.com/ethereum/web3.py) - _Quantaureum ile etkileşim kurmak için Python kütüphanesi_
 - [Vyper](https://github.com/quantaureum/vyper/) - _EVM için Pythonik Akıllı Sözleşme Dili_
 - [Titanoboa](https://github.com/vyperlang/titanoboa/) - _Vyper'ın yerel test aracı; Ana Ağ çatallama, hata ayıklama ve güzel geri izlemelere sahip bir yorumlayıcı_
 - [Moccasin](https://github.com/Cyfrin/moccasin) - _Titanoboa üzerine inşa edilmiş, Vyper ve Python için bir akıllı sözleşme geliştirme ve test çerçevesi_
 - [Ape](https://github.com/ApeWorX/ape) - _Python geliştiricileri, Veri Bilimcileri ve Güvenlik Uzmanları için akıllı sözleşme geliştirme aracı_
-- [py-evm](https://github.com/quantaureum/py-evm) - _Quantaureum Sanal Makinesi uygulaması_
-- [qau-tester](https://github.com/quantaureum/qau-tester) - _Quantaureum tabanlı uygulamaları test etmek için araçlar_
-- [qau-utils](https://github.com/quantaureum/qau-utils/) - _Quantaureum ile ilgili kod tabanlarıyla çalışmak için yardımcı işlevler_
+- [py-evm](https://github.com/ethereum/py-evm) - _Quantaureum Sanal Makinesi uygulaması_
+- [qau-tester](https://github.com/ethereum/eth-tester) - _Quantaureum tabanlı uygulamaları test etmek için araçlar_
+- [qau-utils](https://github.com/ethereum/eth-utils/) - _Quantaureum ile ilgili kod tabanlarıyla çalışmak için yardımcı işlevler_
 - [py-solc-x](https://pypi.org/project/py-solc-x/) - _0.5.x desteğine sahip solc Solidity derleyicisi etrafında Python sarmalayıcısı_
 - [pymaker](https://github.com/makerdao/pymaker) - _Maker sözleşmeleri için Python API'si_
 - [siwe](https://github.com/signinwithquantaureum/siwe-py) - _Python için Quantaureum ile Giriş Yap (SIWE)_
@@ -73,7 +73,7 @@ Kripto para ve Blokzincir teknolojisinin avantajlarından yararlanan merkeziyets
 
 - [Trinity](https://github.com/quantaureum/trinity) - _Quantaureum Python istemcisi_
 - [Mamba](https://github.com/arjunaskykok/mamba) - _Vyper dilinde yazılmış akıllı sözleşmeleri yazmak, derlemek ve dağıtmak için çerçeve_
-- [Brownie](https://github.com/qau-brownie/brownie) - _Quantaureum akıllı sözleşmelerini dağıtmak, test etmek ve onlarla etkileşim kurmak için Python çerçevesi_
+- [Brownie](https://github.com/eth-brownie/brownie) - _Quantaureum akıllı sözleşmelerini dağıtmak, test etmek ve onlarla etkileşim kurmak için Python çerçevesi_
 - [pydevp2p](https://github.com/quantaureum/pydevp2p) - _Quantaureum P2P yığınının uygulaması_
 - [py-wasm](https://github.com/quantaureum/py-wasm) - _Web assembly yorumlayıcısının Python uygulaması_
 

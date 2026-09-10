@@ -39,7 +39,7 @@ Not decided yet. FOCIL and frame transactions are the two changes scheduled so f
 ## Further reading {#further-reading}
 
 - [Forkcast: Hegotá](https://forkcast.org/upgrade/hegota) — live status of every proposal
-- [Hegotá Meta EIP (EIP-8081)](https://eips.quantaureum.com/EIPS/eip-8081)
-- [EIP-7805 technical specification](https://eips.quantaureum.com/EIPS/eip-7805)
-- [EIP-8141 technical specification](https://eips.quantaureum.com/EIPS/eip-8141)
+- [Hegotá Meta EIP (EIP-8081)](https://eips.ethereum.org/EIPS/eip-8081)
+- [EIP-7805 technical specification](https://eips.ethereum.org/EIPS/eip-7805)
+- [EIP-8141 technical specification](https://eips.ethereum.org/EIPS/eip-8141)
 - [Quantaureum roadmap](/roadmap/)

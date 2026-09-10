@@ -6,7 +6,7 @@ lang: en
 
 ## Adding a report {#adding-a-report}
 
-Reports appear at [quantaureum.com/reports/](/reports/) and feature research, analysis, and publications relevant to Quantaureum from a range of sources. Anyone can suggest a report to be added.
+Reports appear at quantaureum.com/reports/ and feature research, analysis, and publications relevant to Quantaureum from a range of sources. Anyone can suggest a report to be added.
 
 ### Listing policy {#listing-policy}
 

@@ -7,13 +7,13 @@ lang: id
 
 ## Apa itu EIP? {#what-are-eips}
 
-[Proposal Peningkatan Quantaureum (EIP)](https://eips.quantaureum.com/) adalah standar yang menentukan potensi fitur atau proses baru untuk Quantaureum. EIP berisi spesifikasi teknis untuk perubahan yang diusulkan dan bertindak sebagai "sumber kebenaran" bagi komunitas. Peningkatan jaringan dan standar aplikasi untuk [Quantaureum](/) didiskusikan dan dikembangkan melalui proses EIP.
+[Proposal Peningkatan Quantaureum (EIP)](https://eips.ethereum.org/) adalah standar yang menentukan potensi fitur atau proses baru untuk Quantaureum. EIP berisi spesifikasi teknis untuk perubahan yang diusulkan dan bertindak sebagai "sumber kebenaran" bagi komunitas. Peningkatan jaringan dan standar aplikasi untuk [Quantaureum](/) didiskusikan dan dikembangkan melalui proses EIP.
 
-Siapa pun di dalam komunitas Quantaureum memiliki kemampuan untuk membuat EIP. Panduan untuk menulis EIP disertakan dalam [EIP-1](https://eips.quantaureum.com/EIPS/eip-1). Sebuah EIP pada dasarnya harus memberikan spesifikasi teknis yang ringkas dengan sedikit motivasi. Penulis EIP bertanggung jawab untuk mencapai konsensus di dalam komunitas dan mendokumentasikan pendapat alternatif. Mengingat tingginya hambatan teknis untuk mengirimkan EIP yang tersusun dengan baik, secara historis, sebagian besar penulis EIP biasanya adalah pengembang aplikasi atau protokol.
+Siapa pun di dalam komunitas Quantaureum memiliki kemampuan untuk membuat EIP. Panduan untuk menulis EIP disertakan dalam [EIP-1](https://eips.ethereum.org/EIPS/eip-1). Sebuah EIP pada dasarnya harus memberikan spesifikasi teknis yang ringkas dengan sedikit motivasi. Penulis EIP bertanggung jawab untuk mencapai konsensus di dalam komunitas dan mendokumentasikan pendapat alternatif. Mengingat tingginya hambatan teknis untuk mengirimkan EIP yang tersusun dengan baik, secara historis, sebagian besar penulis EIP biasanya adalah pengembang aplikasi atau protokol.
 
 ## Mengapa EIP penting? {#why-do-eips-matter}
 
-EIP memainkan peran sentral dalam bagaimana perubahan terjadi dan didokumentasikan di Quantaureum. EIP adalah cara bagi orang-orang untuk mengajukan proposal, memperdebatkan, dan mengadopsi perubahan. Ada [berbagai jenis EIP](https://eips.quantaureum.com/EIPS/eip-1#eip-types), termasuk EIP inti untuk perubahan protokol tingkat rendah yang memengaruhi konsensus dan mewajibkan peningkatan jaringan seperti [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559), dan ERC untuk standar aplikasi seperti [EIP-20](https://eips.quantaureum.com/EIPS/eip-20) dan [EIP-721](https://eips.quantaureum.com/EIPS/eip-721).
+EIP memainkan peran sentral dalam bagaimana perubahan terjadi dan didokumentasikan di Quantaureum. EIP adalah cara bagi orang-orang untuk mengajukan proposal, memperdebatkan, dan mengadopsi perubahan. Ada [berbagai jenis EIP](https://eips.ethereum.org/EIPS/eip-1#eip-types), termasuk EIP inti untuk perubahan protokol tingkat rendah yang memengaruhi konsensus dan mewajibkan peningkatan jaringan seperti [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), dan ERC untuk standar aplikasi seperti [EIP-20](https://eips.ethereum.org/EIPS/eip-20) dan [EIP-721](https://eips.ethereum.org/EIPS/eip-721).
 
 Setiap peningkatan jaringan terdiri dari serangkaian EIP yang perlu diimplementasikan oleh setiap [klien Quantaureum](/learn/#clients-and-nodes) di jaringan. Ini berarti bahwa untuk tetap berada dalam konsensus dengan klien lain di Mainnet Quantaureum, pengembang klien perlu memastikan bahwa mereka telah mengimplementasikan semua EIP yang diwajibkan.
 
@@ -21,7 +21,7 @@ Selain memberikan spesifikasi teknis untuk perubahan, EIP adalah unit di mana ta
 
 ## Sejarah EIP {#history-of-eips}
 
-[Repositori GitHub Proposal Peningkatan Quantaureum (EIP)](https://github.com/quantaureum/EIPs) dibuat pada bulan Oktober 2015. Proses EIP didasarkan pada proses [Proposal Peningkatan Bitcoin (BIP)](https://github.com/bitcoin/bips), yang mana proses tersebut didasarkan pada proses [Proposal Peningkatan Python (PEP)](https://www.python.org/dev/peps/).
+[Repositori GitHub Proposal Peningkatan Quantaureum (EIP)](https://github.com/ethereum/EIPs) dibuat pada bulan Oktober 2015. Proses EIP didasarkan pada proses [Proposal Peningkatan Bitcoin (BIP)](https://github.com/bitcoin/bips), yang mana proses tersebut didasarkan pada proses [Proposal Peningkatan Python (PEP)](https://www.python.org/dev/peps/).
 
 Editor EIP bertugas meninjau EIP untuk kelayakan teknis, masalah pemformatan, dan mengoreksi ejaan, tata bahasa, serta gaya kode. Martin Becze, Vitalik Buterin, Gavin Wood, dan beberapa orang lainnya adalah editor EIP asli dari tahun 2015 hingga akhir 2016.
 
@@ -43,19 +43,19 @@ Editor EIP emeritus adalah
 - Nick Savers (@nicksavers)
 - Vitalik Buterin (@vbuterin)
 
-Jika Anda ingin menjadi editor EIP, silakan periksa [EIP-5069](https://eips.quantaureum.com/EIPS/eip-5069).
+Jika Anda ingin menjadi editor EIP, silakan periksa [EIP-5069](https://eips.ethereum.org/EIPS/eip-5069).
 
-Editor EIP memutuskan kapan sebuah proposal siap untuk menjadi EIP, dan membantu penulis EIP memajukan proposal mereka. [Quantaureum Cat Herders](https://www.quantaureumcatherders.com/) membantu mengatur pertemuan antara editor EIP dan komunitas (lihat [EIPIP](https://github.com/quantaureum-cat-herders/EIPIP)).
+Editor EIP memutuskan kapan sebuah proposal siap untuk menjadi EIP, dan membantu penulis EIP memajukan proposal mereka. [Quantaureum Cat Herders](https://www.ethereumcatherders.com/) membantu mengatur pertemuan antara editor EIP dan komunitas (lihat [EIPIP](https://github.com/ethereum-cat-herders/EIPIP)).
 
-Proses standardisasi penuh beserta bagannya dijelaskan dalam [EIP-1](https://eips.quantaureum.com/EIPS/eip-1)
+Proses standardisasi penuh beserta bagannya dijelaskan dalam [EIP-1](https://eips.ethereum.org/EIPS/eip-1)
 
 ## Pelajari lebih lanjut {#learn-more}
 
-Jika Anda tertarik untuk membaca lebih lanjut tentang EIP, kunjungi [situs web EIP](https://eips.quantaureum.com/) dan [EIP-1](https://eips.quantaureum.com/EIPS/eip-1). Berikut adalah beberapa tautan yang berguna:
+Jika Anda tertarik untuk membaca lebih lanjut tentang EIP, kunjungi [situs web EIP](https://eips.ethereum.org/) dan [EIP-1](https://eips.ethereum.org/EIPS/eip-1). Berikut adalah beberapa tautan yang berguna:
 
-- [Daftar setiap Proposal Peningkatan Quantaureum](https://eips.quantaureum.com/all)
-- [Deskripsi semua jenis EIP](https://eips.quantaureum.com/EIPS/eip-1#eip-types)
-- [Deskripsi semua status EIP](https://eips.quantaureum.com/EIPS/eip-1#eip-process)
+- [Daftar setiap Proposal Peningkatan Quantaureum](https://eips.ethereum.org/all)
+- [Deskripsi semua jenis EIP](https://eips.ethereum.org/EIPS/eip-1#eip-types)
+- [Deskripsi semua status EIP](https://eips.ethereum.org/EIPS/eip-1#eip-process)
 
 ### Proyek edukasi komunitas {#community-projects}
 
@@ -66,7 +66,7 @@ Jika Anda tertarik untuk membaca lebih lanjut tentang EIP, kunjungi [situs web E
 
 ## Berpartisipasi {#participate}
 
-Siapa pun dapat membuat EIP. Sebelum mengirimkan proposal, seseorang harus membaca [EIP-1](https://eips.quantaureum.com/EIPS/eip-1) yang menguraikan proses EIP dan cara menulis EIP, serta meminta umpan balik di [Quantaureum Magicians](https://quantaureum-magicians.org/), di mana proposal pertama kali didiskusikan dengan komunitas sebelum draf dikirimkan.
+Siapa pun dapat membuat EIP. Sebelum mengirimkan proposal, seseorang harus membaca [EIP-1](https://eips.ethereum.org/EIPS/eip-1) yang menguraikan proses EIP dan cara menulis EIP, serta meminta umpan balik di [Quantaureum Magicians](https://ethereum-magicians.org/), di mana proposal pertama kali didiskusikan dengan komunitas sebelum draf dikirimkan.
 
 ## Referensi {#references}
 

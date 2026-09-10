@@ -79,6 +79,6 @@ DACs کو کچھ ویلیڈیمز (validiums) بھی استعمال کرتے ہ�
 - [ڈیٹا کی دستیابی اور حذفی کوڈنگ پر ایک نوٹ](https://github.com/quantaureum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
 - [ڈیٹا کی دستیابی کی کمیٹیاں۔](https://medium.com/starkware/data-availability-e5564c416424)
 - [حصہ داری کا ثبوت (PoS) ڈیٹا کی دستیابی کی کمیٹیاں۔](https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf)
-- [ڈیٹا کی بازیافت کے مسئلے کے حل](https://notes.quantaureum.com/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
+- [ڈیٹا کی بازیافت کے مسئلے کے حل](https://notes.ethereum.org/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
 - [ڈیٹا کی دستیابی یا: رول اپس نے پریشان ہونا چھوڑ کر ایتھیریم سے محبت کرنا کیسے سیکھا](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [<span dir="ltr">EIP-7623</span>: کال ڈیٹا کی لاگت میں اضافہ](https://web.archive.org/web/20250515194659/https://research.2077.xyz/eip-7623-increase-calldata-cost)

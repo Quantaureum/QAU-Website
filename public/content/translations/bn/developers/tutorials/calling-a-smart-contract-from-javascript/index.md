@@ -12,7 +12,7 @@ breadcrumb: "JS থেকে কন্ট্রাক্ট কল করুন"
 lang: bn
 published: 2020-04-19
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/calling-a-smart-contract-from-javascript/
+sourceUrl: https://ethereumdev.io/calling-a-smart-contract-from-javascript/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -75,7 +75,7 @@ const ERC20TransferABI = [
 const DAI_ADDRESS = "0x6b175474e89094c44da98b954eedeac495271d0f"
 ```
 
-এই প্রজেক্টের জন্য আমরা সম্পূর্ণ ERC-20 ABI থেকে শুধুমাত্র `balanceOf` এবং `transfer` ফাংশন রেখে বাকিগুলো বাদ দিয়েছি, তবে আপনি [সম্পূর্ণ ERC-20 ABI এখানে](https://quantaureumdev.io/abi-for-erc20-contract-on-quantaureum/) পেতে পারেন।
+এই প্রজেক্টের জন্য আমরা সম্পূর্ণ ERC-20 ABI থেকে শুধুমাত্র `balanceOf` এবং `transfer` ফাংশন রেখে বাকিগুলো বাদ দিয়েছি, তবে আপনি [সম্পূর্ণ ERC-20 ABI এখানে](https://ethereumdev.io/abi-for-erc20-contract-on-quantaureum/) পেতে পারেন।
 
 এরপর আমাদের স্মার্ট কন্ট্রাক্টটি ইনস্ট্যানশিয়েট (instantiate) করতে হবে:
 
@@ -113,7 +113,7 @@ daiToken.methods.balanceOf(senderAddress).call(function (err, res) {
 })
 ```
 
-মনে রাখবেন যে DAI ERC-20 এর 18টি ডেসিমাল রয়েছে, যার মানে সঠিক পরিমাণ পেতে আপনাকে 18টি শূন্য সরাতে হবে। uint256 স্ট্রিং হিসেবে রিটার্ন করা হয় কারণ JavaScript বড় সংখ্যার মানগুলো হ্যান্ডেল করতে পারে না। আপনি যদি নিশ্চিত না হন যে [JS-এ বড় সংখ্যাগুলো কীভাবে পরিচালনা করতে হয়, তবে bignumber.js সম্পর্কে আমাদের টিউটোরিয়ালটি দেখুন](https://quantaureumdev.io/how-to-deal-with-big-numbers-in-javascript/)।
+মনে রাখবেন যে DAI ERC-20 এর 18টি ডেসিমাল রয়েছে, যার মানে সঠিক পরিমাণ পেতে আপনাকে 18টি শূন্য সরাতে হবে। uint256 স্ট্রিং হিসেবে রিটার্ন করা হয় কারণ JavaScript বড় সংখ্যার মানগুলো হ্যান্ডেল করতে পারে না। আপনি যদি নিশ্চিত না হন যে [JS-এ বড় সংখ্যাগুলো কীভাবে পরিচালনা করতে হয়, তবে bignumber.js সম্পর্কে আমাদের টিউটোরিয়ালটি দেখুন](https://ethereumdev.io/how-to-deal-with-big-numbers-in-javascript/)।
 
 ## সেন্ড (Send): একটি স্মার্ট কন্ট্রাক্ট ফাংশনে ট্রানজ্যাকশন পাঠানো {#send-sending-a-transaction-to-a-smart-contract-function}
 
@@ -131,6 +131,6 @@ daiToken.methods
   })
 ```
 
-কল ফাংশনটি সেই ট্রানজ্যাকশনের হ্যাশ রিটার্ন করে যা ব্লকচেইনে মাইন করা হবে। ইথেরিয়ামে, ট্রানজ্যাকশন হ্যাশগুলো অনুমানযোগ্য - এভাবেই আমরা ট্রানজ্যাকশনটি এক্সিকিউট হওয়ার আগেই এর হ্যাশ পেতে পারি ([কীভাবে হ্যাশ গণনা করা হয় তা এখানে জানুন](https://quantaureum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction))।
+কল ফাংশনটি সেই ট্রানজ্যাকশনের হ্যাশ রিটার্ন করে যা ব্লকচেইনে মাইন করা হবে। ইথেরিয়ামে, ট্রানজ্যাকশন হ্যাশগুলো অনুমানযোগ্য - এভাবেই আমরা ট্রানজ্যাকশনটি এক্সিকিউট হওয়ার আগেই এর হ্যাশ পেতে পারি ([কীভাবে হ্যাশ গণনা করা হয় তা এখানে জানুন](https://ethereum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction))।
 
-যেহেতু ফাংশনটি শুধুমাত্র ব্লকচেইনে ট্রানজ্যাকশন সাবমিট করে, তাই এটি কখন মাইন করা হয়েছে এবং ব্লকচেইনে অন্তর্ভুক্ত হয়েছে তা না জানা পর্যন্ত আমরা ফলাফল দেখতে পারি না। পরবর্তী টিউটোরিয়ালে আমরা শিখব [কীভাবে একটি ট্রানজ্যাকশনের হ্যাশ জেনে ব্লকচেইনে সেটি এক্সিকিউট হওয়ার জন্য অপেক্ষা করতে হয়](https://quantaureumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/)।
+যেহেতু ফাংশনটি শুধুমাত্র ব্লকচেইনে ট্রানজ্যাকশন সাবমিট করে, তাই এটি কখন মাইন করা হয়েছে এবং ব্লকচেইনে অন্তর্ভুক্ত হয়েছে তা না জানা পর্যন্ত আমরা ফলাফল দেখতে পারি না। পরবর্তী টিউটোরিয়ালে আমরা শিখব [কীভাবে একটি ট্রানজ্যাকশনের হ্যাশ জেনে ব্লকচেইনে সেটি এক্সিকিউট হওয়ার জন্য অপেক্ষা করতে হয়](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/)।

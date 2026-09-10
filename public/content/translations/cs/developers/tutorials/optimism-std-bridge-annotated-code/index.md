@@ -46,7 +46,7 @@ Most má dva hlavní toky:
    - Původně pocházelo z mostu na l1.
 6. Most na l2 zkontroluje, zda je kontrakt ERC-20 tokenu na l2 ten správný:
    - Kontrakt na l2 hlásí, že jeho protějšek na l1 je stejný jako ten, ze kterého tokeny přišly na l1.
-   - Kontrakt na l2 hlásí, že podporuje správné rozhraní ([pomocí ERC-165](https://eips.quantaureum.com/EIPS/eip-165)).
+   - Kontrakt na l2 hlásí, že podporuje správné rozhraní ([pomocí ERC-165](https://eips.ethereum.org/EIPS/eip-165)).
 7. Pokud je kontrakt na l2 správný, zavolá jej, aby vyrazil příslušný počet tokenů na příslušnou adresu. Pokud ne, zahájí proces výběru, aby uživateli umožnil uplatnit nárok na tokeny na l1.
 
 ### Tok výběru {#withdrawal-flow}
@@ -70,7 +70,7 @@ Toto je kód, který běží na l1, Quantaureum Mainnetu.
 
 ### IL1ERC20Bridge {#il1erc20bridge}
 
-[Toto rozhraní je definováno zde](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol).
+[Toto rozhraní je definováno zde](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol).
 Obsahuje funkce a definice potřebné pro přemostění ERC-20 tokenů.
 
 ```solidity
@@ -236,7 +236,7 @@ Výběry (a další zprávy z l2 na l1) v Optimism jsou dvoukrokový proces:
 
 ### IL1StandardBridge {#il1standardbridge}
 
-[Toto rozhraní je definováno zde](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol).
+[Toto rozhraní je definováno zde](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol).
 Tento soubor obsahuje definice událostí a funkcí pro QAU.
 Tyto definice jsou velmi podobné těm, které jsou definovány v `IL1ERC20Bridge` výše pro ERC-20.
 
@@ -321,7 +321,7 @@ Totéž platí pro ostatní události a funkce.
 
 ### CrossDomainEnabled {#crossdomainenabled}
 
-[Tento kontrakt](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) dědí oba mosty ([l1](#the-l1-bridge-contract) a [l2](#l2-bridge-code)) pro odesílání zpráv do druhé vrstvy.
+[Tento kontrakt](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) dědí oba mosty ([l1](#the-l1-bridge-contract) a [l2](#l2-bridge-code)) pro odesílání zpráv do druhé vrstvy.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -331,7 +331,7 @@ pragma solidity >0.5.0 <0.9.0;
 import { ICrossDomainMessenger } from "./ICrossDomainMessenger.sol";
 ```
 
-[Toto rozhraní](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) říká kontraktu, jak odesílat zprávy do druhé vrstvy pomocí cross domain messengeru (nástroje pro zprávy napříč doménami).
+[Toto rozhraní](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) říká kontraktu, jak odesílat zprávy do druhé vrstvy pomocí cross domain messengeru (nástroje pro zprávy napříč doménami).
 Tento cross domain messenger je zcela jiný systém a zaslouží si vlastní článek, který snad v budoucnu napíšu.
 
 ```solidity
@@ -398,7 +398,7 @@ Důvěřovat lze pouze zprávám z příslušného cross domain messengeru (`mes
         );
 ```
 
-Způsob, jakým cross domain messenger poskytuje adresu, která odeslala zprávu do druhé vrstvy, je [funkce `.xDomainMessageSender()`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128).
+Způsob, jakým cross domain messenger poskytuje adresu, která odeslala zprávu do druhé vrstvy, je [funkce `.xDomainMessageSender()`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128).
 Dokud je volána v transakci, která byla iniciována zprávou, může tuto informaci poskytnout.
 
 Musíme se ujistit, že zpráva, kterou jsme obdrželi, přišla z druhého mostu.
@@ -463,7 +463,7 @@ V tomto případě se reentrance neobáváme, víme, že `getCrossDomainMessenge
 
 ### Kontrakt mostu na l1 {#the-l1-bridge-contract}
 
-[Zdrojový kód tohoto kontraktu je zde](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol).
+[Zdrojový kód tohoto kontraktu je zde](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol).
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -485,7 +485,7 @@ import { IL1ERC20Bridge } from "./IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "../../L2/messaging/IL2ERC20Bridge.sol";
 ```
 
-[Toto rozhraní](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) nám umožňuje vytvářet zprávy pro ovládání standardního mostu na l2.
+[Toto rozhraní](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) nám umožňuje vytvářet zprávy pro ovládání standardního mostu na l2.
 
 ```solidity
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -505,7 +505,7 @@ import { CrossDomainEnabled } from "../../libraries/bridge/CrossDomainEnabled.so
 import { Lib_PredeployAddresses } from "../../libraries/constants/Lib_PredeployAddresses.sol";
 ```
 
-[`Lib_PredeployAddresses`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) obsahuje adresy pro kontrakty na l2, které mají vždy stejnou adresu. To zahrnuje standardní most na l2.
+[`Lib_PredeployAddresses`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) obsahuje adresy pro kontrakty na l2, které mají vždy stejnou adresu. To zahrnuje standardní most na l2.
 
 ```solidity
 import { Address } from "@openzeppelin/contracts/utils/Address.sol";
@@ -519,7 +519,7 @@ Vezměte na vědomí, že to není dokonalé řešení, protože neexistuje způ
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[Standard ERC-20](https://eips.quantaureum.com/EIPS/eip-20) podporuje dva způsoby, jak může kontrakt nahlásit selhání:
+[Standard ERC-20](https://eips.ethereum.org/EIPS/eip-20) podporuje dva způsoby, jak může kontrakt nahlásit selhání:
 
 1. Zvrátit (revert)
 2. Vrátit `false`
@@ -713,7 +713,7 @@ Funkce Solidity [`abi.encodeWithSelector`](https://docs.soliditylang.org/en/v0.8
         );
 ```
 
-Zpráva zde znamená zavolat [funkci `finalizeDeposit`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) s těmito parametry:
+Zpráva zde znamená zavolat [funkci `finalizeDeposit`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) s těmito parametry:
 
 | Parametr | Hodnota | Význam |
 | --------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -945,7 +945,7 @@ Pokud by bylo na l1 příliš mnoho tokenů, některé z těchto tokenů by zůs
 
 ### IL2StandardERC20 {#il2standarderc20}
 
-Každý ERC-20 token na l2, který používá standardní most, musí poskytovat [toto rozhraní](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol), které obsahuje funkce a události, jež standardní most potřebuje.
+Každý ERC-20 token na l2, který používá standardní most, musí poskytovat [toto rozhraní](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol), které obsahuje funkce a události, jež standardní most potřebuje.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -955,14 +955,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [Standardní rozhraní ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) nezahrnuje funkce `mint` a `burn`.
-Tyto metody nejsou vyžadovány [standardem ERC-20](https://eips.quantaureum.com/EIPS/eip-20), který ponechává mechanismy pro vytváření a ničení tokenů nespecifikované.
+Tyto metody nejsou vyžadovány [standardem ERC-20](https://eips.ethereum.org/EIPS/eip-20), který ponechává mechanismy pro vytváření a ničení tokenů nespecifikované.
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 [Rozhraní ERC-165](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol) se používá k určení, jaké funkce kontrakt poskytuje.
-[Standard si můžete přečíst zde](https://eips.quantaureum.com/EIPS/eip-165).
+[Standard si můžete přečíst zde](https://eips.ethereum.org/EIPS/eip-165).
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -989,7 +989,7 @@ Most by měl být jedinou entitou, která může tyto funkce spouštět, aby se 
 
 ### L2StandardERC20 {#l2standarderc20}
 
-[Toto je naše implementace rozhraní `IL2StandardERC20`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol).
+[Toto je naše implementace rozhraní `IL2StandardERC20`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol).
 Pokud nepotřebujete nějakou vlastní logiku, měli byste použít tuto.
 
 ```solidity
@@ -1051,7 +1051,7 @@ Nejprve zavoláme konstruktor pro kontrakt, ze kterého dědíme (`ERC20(_name, 
     }
 ```
 
-Tímto způsobem funguje [ERC-165](https://eips.quantaureum.com/EIPS/eip-165).
+Tímto způsobem funguje [ERC-165](https://eips.ethereum.org/EIPS/eip-165).
 Každé rozhraní je množinou podporovaných funkcí a je identifikováno jako [exkluzivní disjunkce (XOR)](https://en.wikipedia.org/wiki/Exclusive_or) [selektorů funkcí ABI](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector) těchto funkcí.
 
 Most na l2 používá ERC-165 jako kontrolu správnosti (sanity check), aby se ujistil, že kontrakt ERC-20, do kterého odesílá aktiva, je `IL2StandardERC20`.
@@ -1083,7 +1083,7 @@ Tento kontrakt je pouze nevystavuje externě, protože podmínky pro ražení a 
 ## Kód mostu na l2 {#l2-bridge-code}
 
 Toto je kód, který provozuje most na Optimism.
-[Zdrojový kód tohoto kontraktu je zde](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol).
+[Zdrojový kód tohoto kontraktu je zde](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol).
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -1095,7 +1095,7 @@ import { IL1ERC20Bridge } from "../../L1/messaging/IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "./IL2ERC20Bridge.sol";
 ```
 
-Rozhraní [IL2ERC20Bridge](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) je velmi podobné [ekvivalentu na l1](#il1erc20bridge), který jsme viděli výše.
+Rozhraní [IL2ERC20Bridge](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) je velmi podobné [ekvivalentu na l1](#il1erc20bridge), který jsme viděli výše.
 Jsou zde dva významné rozdíly:
 
 1. Na l1 inicializujete vklady a finalizujete výběry.

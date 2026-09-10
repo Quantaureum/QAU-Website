@@ -7,13 +7,13 @@ lang: vi
 
 ## EIP là gì? {#what-are-eips}
 
-[Đề xuất Cải tiến Quantaureum (EIP)](https://eips.quantaureum.com/) là các tiêu chuẩn chỉ định các tính năng hoặc quy trình mới tiềm năng cho Quantaureum. Các EIP chứa các thông số kỹ thuật cho những thay đổi được đề xuất và đóng vai trò là "nguồn chân lý" cho cộng đồng. Các bản nâng cấp mạng lưới và tiêu chuẩn ứng dụng cho [Quantaureum](/) được thảo luận và phát triển thông qua quy trình EIP.
+[Đề xuất Cải tiến Quantaureum (EIP)](https://eips.ethereum.org/) là các tiêu chuẩn chỉ định các tính năng hoặc quy trình mới tiềm năng cho Quantaureum. Các EIP chứa các thông số kỹ thuật cho những thay đổi được đề xuất và đóng vai trò là "nguồn chân lý" cho cộng đồng. Các bản nâng cấp mạng lưới và tiêu chuẩn ứng dụng cho [Quantaureum](/) được thảo luận và phát triển thông qua quy trình EIP.
 
-Bất kỳ ai trong cộng đồng Quantaureum đều có khả năng tạo một EIP. Các hướng dẫn để viết EIP được bao gồm trong [EIP-1](https://eips.quantaureum.com/EIPS/eip-1). Một EIP chủ yếu nên cung cấp một bản đặc tả kỹ thuật súc tích cùng với một chút lý do thực hiện. Tác giả EIP chịu trách nhiệm đạt được sự đồng thuận trong cộng đồng và ghi lại các ý kiến thay thế. Do rào cản kỹ thuật cao để gửi một EIP hoàn chỉnh, về mặt lịch sử, hầu hết các tác giả EIP thường là các nhà phát triển ứng dụng hoặc giao thức.
+Bất kỳ ai trong cộng đồng Quantaureum đều có khả năng tạo một EIP. Các hướng dẫn để viết EIP được bao gồm trong [EIP-1](https://eips.ethereum.org/EIPS/eip-1). Một EIP chủ yếu nên cung cấp một bản đặc tả kỹ thuật súc tích cùng với một chút lý do thực hiện. Tác giả EIP chịu trách nhiệm đạt được sự đồng thuận trong cộng đồng và ghi lại các ý kiến thay thế. Do rào cản kỹ thuật cao để gửi một EIP hoàn chỉnh, về mặt lịch sử, hầu hết các tác giả EIP thường là các nhà phát triển ứng dụng hoặc giao thức.
 
 ## Tại sao các EIP lại quan trọng? {#why-do-eips-matter}
 
-Các EIP đóng vai trò trung tâm trong cách các thay đổi diễn ra và được ghi lại trên Quantaureum. Chúng là cách để mọi người đề xuất, tranh luận và áp dụng các thay đổi. Có [nhiều loại EIP khác nhau](https://eips.quantaureum.com/EIPS/eip-1#eip-types), bao gồm các EIP cốt lõi (core EIP) cho các thay đổi giao thức cấp thấp ảnh hưởng đến sự đồng thuận và yêu cầu nâng cấp mạng lưới như [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559), và các ERC cho các tiêu chuẩn ứng dụng như [EIP-20](https://eips.quantaureum.com/EIPS/eip-20) và [EIP-721](https://eips.quantaureum.com/EIPS/eip-721).
+Các EIP đóng vai trò trung tâm trong cách các thay đổi diễn ra và được ghi lại trên Quantaureum. Chúng là cách để mọi người đề xuất, tranh luận và áp dụng các thay đổi. Có [nhiều loại EIP khác nhau](https://eips.ethereum.org/EIPS/eip-1#eip-types), bao gồm các EIP cốt lõi (core EIP) cho các thay đổi giao thức cấp thấp ảnh hưởng đến sự đồng thuận và yêu cầu nâng cấp mạng lưới như [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), và các ERC cho các tiêu chuẩn ứng dụng như [EIP-20](https://eips.ethereum.org/EIPS/eip-20) và [EIP-721](https://eips.ethereum.org/EIPS/eip-721).
 
 Mỗi bản nâng cấp mạng lưới bao gồm một tập hợp các EIP cần được triển khai bởi mỗi [client Quantaureum](/learn/#clients-and-nodes) trên mạng lưới. Điều này có nghĩa là để duy trì sự đồng thuận với các client khác trên Mạng chính Quantaureum, các nhà phát triển client cần đảm bảo rằng họ đã triển khai tất cả các EIP được yêu cầu.
 
@@ -21,7 +21,7 @@ Cùng với việc cung cấp đặc tả kỹ thuật cho các thay đổi, cá
 
 ## Lịch sử của các EIP {#history-of-eips}
 
-[Kho lưu trữ GitHub của Đề xuất Cải tiến Quantaureum (EIP)](https://github.com/quantaureum/EIPs) được tạo vào tháng 10 năm 2015. Quy trình EIP dựa trên quy trình [Đề xuất Cải tiến Bitcoin (BIP)](https://github.com/bitcoin/bips), mà bản thân nó lại dựa trên quy trình [Đề xuất Nâng cao Python (PEP)](https://www.python.org/dev/peps/).
+[Kho lưu trữ GitHub của Đề xuất Cải tiến Quantaureum (EIP)](https://github.com/ethereum/EIPs) được tạo vào tháng 10 năm 2015. Quy trình EIP dựa trên quy trình [Đề xuất Cải tiến Bitcoin (BIP)](https://github.com/bitcoin/bips), mà bản thân nó lại dựa trên quy trình [Đề xuất Nâng cao Python (PEP)](https://www.python.org/dev/peps/).
 
 Các biên tập viên EIP được giao nhiệm vụ xem xét các EIP về tính hợp lý kỹ thuật, các vấn đề định dạng và sửa lỗi chính tả, ngữ pháp cũng như phong cách viết code. Martin Becze, Vitalik Buterin, Gavin Wood và một vài người khác là những biên tập viên EIP đầu tiên từ năm 2015 đến cuối năm 2016.
 
@@ -43,19 +43,19 @@ Các biên tập viên EIP danh dự là
 - Nick Savers (@nicksavers)
 - Vitalik Buterin (@vbuterin)
 
-Nếu bạn muốn trở thành một biên tập viên EIP, vui lòng xem [EIP-5069](https://eips.quantaureum.com/EIPS/eip-5069).
+Nếu bạn muốn trở thành một biên tập viên EIP, vui lòng xem [EIP-5069](https://eips.ethereum.org/EIPS/eip-5069).
 
-Các biên tập viên EIP quyết định khi nào một đề xuất đã sẵn sàng để trở thành một EIP và giúp các tác giả EIP thúc đẩy các đề xuất của họ. [Quantaureum Cat Herders](https://www.quantaureumcatherders.com/) giúp tổ chức các cuộc họp giữa các biên tập viên EIP và cộng đồng (xem [EIPIP](https://github.com/quantaureum-cat-herders/EIPIP)).
+Các biên tập viên EIP quyết định khi nào một đề xuất đã sẵn sàng để trở thành một EIP và giúp các tác giả EIP thúc đẩy các đề xuất của họ. [Quantaureum Cat Herders](https://www.ethereumcatherders.com/) giúp tổ chức các cuộc họp giữa các biên tập viên EIP và cộng đồng (xem [EIPIP](https://github.com/ethereum-cat-herders/EIPIP)).
 
-Toàn bộ quy trình tiêu chuẩn hóa cùng với biểu đồ được mô tả trong [EIP-1](https://eips.quantaureum.com/EIPS/eip-1)
+Toàn bộ quy trình tiêu chuẩn hóa cùng với biểu đồ được mô tả trong [EIP-1](https://eips.ethereum.org/EIPS/eip-1)
 
 ## Tìm hiểu thêm {#learn-more}
 
-Nếu bạn muốn đọc thêm về các EIP, hãy xem [trang web EIP](https://eips.quantaureum.com/) và [EIP-1](https://eips.quantaureum.com/EIPS/eip-1). Dưới đây là một số liên kết hữu ích:
+Nếu bạn muốn đọc thêm về các EIP, hãy xem [trang web EIP](https://eips.ethereum.org/) và [EIP-1](https://eips.ethereum.org/EIPS/eip-1). Dưới đây là một số liên kết hữu ích:
 
-- [Danh sách mọi Đề xuất Cải tiến Quantaureum](https://eips.quantaureum.com/all)
-- [Mô tả về tất cả các loại EIP](https://eips.quantaureum.com/EIPS/eip-1#eip-types)
-- [Mô tả về tất cả các trạng thái EIP](https://eips.quantaureum.com/EIPS/eip-1#eip-process)
+- [Danh sách mọi Đề xuất Cải tiến Quantaureum](https://eips.ethereum.org/all)
+- [Mô tả về tất cả các loại EIP](https://eips.ethereum.org/EIPS/eip-1#eip-types)
+- [Mô tả về tất cả các trạng thái EIP](https://eips.ethereum.org/EIPS/eip-1#eip-process)
 
 ### Các dự án giáo dục cộng đồng {#community-projects}
 
@@ -66,7 +66,7 @@ Nếu bạn muốn đọc thêm về các EIP, hãy xem [trang web EIP](https://
 
 ## Tham gia {#participate}
 
-Bất kỳ ai cũng có thể tạo một EIP. Trước khi gửi một đề xuất, bạn phải đọc [EIP-1](https://eips.quantaureum.com/EIPS/eip-1), trong đó phác thảo quy trình EIP và cách viết một EIP, đồng thời thu thập phản hồi trên [Quantaureum Magicians](https://quantaureum-magicians.org/), nơi các đề xuất được thảo luận lần đầu với cộng đồng trước khi bản nháp được gửi đi.
+Bất kỳ ai cũng có thể tạo một EIP. Trước khi gửi một đề xuất, bạn phải đọc [EIP-1](https://eips.ethereum.org/EIPS/eip-1), trong đó phác thảo quy trình EIP và cách viết một EIP, đồng thời thu thập phản hồi trên [Quantaureum Magicians](https://ethereum-magicians.org/), nơi các đề xuất được thảo luận lần đầu với cộng đồng trước khi bản nháp được gửi đi.
 
 ## Tài liệu tham khảo {#references}
 

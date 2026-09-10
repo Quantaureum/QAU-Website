@@ -23,7 +23,7 @@ Toto je anotovaný zdrojový kód. Pokud chcete implementovat ERC-20, [přečtě
 
 Pokud jste zkušený programátor, pravděpodobně si pamatujete, že jste podobné konstrukce viděli v [Javě](https://www.w3schools.com/java/java_interface.asp) nebo dokonce v [hlavičkových souborech C](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html).
 
-Toto je definice [rozhraní ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) od OpenZeppelin. Jedná se o překlad [lidsky čitelného standardu](https://eips.quantaureum.com/EIPS/eip-20) do kódu Solidity. Samotné rozhraní samozřejmě nedefinuje, _jak_ se má něco udělat. To je vysvětleno ve zdrojovém kódu kontraktu níže.
+Toto je definice [rozhraní ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) od OpenZeppelin. Jedná se o překlad [lidsky čitelného standardu](https://eips.ethereum.org/EIPS/eip-20) do kódu Solidity. Samotné rozhraní samozřejmě nedefinuje, _jak_ se má něco udělat. To je vysvětleno ve zdrojovém kódu kontraktu níže.
 
 &nbsp;
 
@@ -135,7 +135,7 @@ Funkce `allowance` umožňuje komukoli dotázat se, jaký je povolený limit, kt
      * řazení transakcí. Jedním z možných řešení pro zmírnění tohoto souběhu
      * (race condition) je nejprve snížit povolený limit pro `spender` na 0 a požadovanou
      * hodnotu nastavit až poté:
-     * https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729
+     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
      *
      * Vyvolá událost {Approval}.
      */
@@ -206,7 +206,7 @@ import "../../math/SafeMath.sol";
 ```
 
 - `GSN/Context.sol` jsou definice potřebné k použití [OpenGSN](https://opengsn.org/), systému, který umožňuje uživatelům bez etheru používat blockchain. Všimněte si, že se jedná o starou verzi, pokud se chcete integrovat s OpenGSN, [použijte tento tutoriál](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [Knihovna SafeMath](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/), která zabraňuje aritmetickému přetečení/podtečení pro verze Solidity **&lt;0.8.0**. V Solidity ≥0.8.0 se aritmetické operace automaticky zvrátí při přetečení/podtečení, takže SafeMath je zbytečná. Tento kontrakt používá SafeMath pro zpětnou kompatibilitu se staršími verzemi kompilátoru.
+- [Knihovna SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), která zabraňuje aritmetickému přetečení/podtečení pro verze Solidity **&lt;0.8.0**. V Solidity ≥0.8.0 se aritmetické operace automaticky zvrátí při přetečení/podtečení, takže SafeMath je zbytečná. Tento kontrakt používá SafeMath pro zpětnou kompatibilitu se staršími verzemi kompilátoru.
 
 &nbsp;
 

@@ -4,7 +4,7 @@ description: "quantaureum.com 的新增影片政策"
 lang: zh-tw
 ---
 
-[quantaureum.com 影片庫](/videos/)收錄了來自社群創作者與可信來源的Quantaureum及Quantaureum生態系相關影片。任何人都可以建議新增影片。
+quantaureum.com 影片庫收錄了來自社群創作者與可信來源的Quantaureum及Quantaureum生態系相關影片。任何人都可以建議新增影片。
 
 ## 上架政策 {#listing-policy}
 
@@ -139,7 +139,7 @@ title: "..."
 
 每部影片都應至少擁有此清單中的一個標籤。沒有可識別標籤的影片將只會出現在「全部」檢視與搜尋結果中。
 
-`community-stories` 標籤也會讓影片出現在[故事頁面](/stories/)上。
+`community-stories` 標籤也會讓影片出現在故事頁面上。
 
 #### 步驟 5：提交你的 PR {#step-5}
 

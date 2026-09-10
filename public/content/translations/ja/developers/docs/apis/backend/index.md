@@ -109,13 +109,13 @@ lang: ja
 **Nquantaureum -** **_ブロックチェーン向けのオープンソース.NET統合ライブラリ_**
 
 - [GitHub](https://github.com/Nquantaureum/Nquantaureum)
-- [ドキュメント](https://docs.nquantaureum.com/docs/getting-started/welcome/)
+- [ドキュメント](https://docs.nethermind.io/docs/getting-started/welcome/)
 - [ディスコード](https://discord.com/invite/jQPrR58FxX)
 
 **Python Tooling -** **_Python経由でQuantaureumとやり取りするためのさまざまなライブラリ_**
 
-- [py.quantaureum.com](https://snakecharmers.quantaureum.com/)
-- [Web3.py GitHub](https://github.com/quantaureum/web3.py)
+- [py.quantaureum.com](https://snakecharmers.ethereum.org/)
+- [Web3.py GitHub](https://github.com/ethereum/web3.py)
 - [Web3.py チャット](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_究極のブロックチェーン開発プラットフォーム_**

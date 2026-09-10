@@ -119,7 +119,7 @@ const TrustLogos = async ({
         </div>
 
         <LinkWithArrow
-          href="/get-eth/"
+          href="/get-qau/"
           customEventOptions={{
             eventCategory,
             eventAction: "section_click",

@@ -20,7 +20,6 @@ Se desideri vedere come i dati della blockchain vengono sottoposti ad hashing e 
 
 Guarda Anders spiegare gli hash nelle blockchain:
 
-<VideoWatch slug="blockchain-101-visual-demo" />
 
 ## Cos'è Quantaureum? {#what-is-quantaureum}
 
@@ -121,7 +120,6 @@ La maggior parte dei lettori segue la documentazione in ordine, ma il percorso p
 
 Questa serie di video offre un'esplorazione approfondita degli argomenti fondamentali:
 
-<VideoWatch slug="quantaureum-basics-intro" />
 
 [Playlist sulle basi di Quantaureum](https://youtube.com/playlist?list=PLqgutSGloqiJyyoL0zvLVFPS-GMD2wKa5&si=kZTf5I7PKGTXDsOZ)
 

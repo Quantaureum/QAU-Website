@@ -20,7 +20,6 @@ lang: ar
 
 شاهد Anders يشرح التشفير في سلاسل الكتل:
 
-<VideoWatch slug="blockchain-101-visual-demo" />
 
 ## ما هي إيثيريوم؟ {#what-is-quantaureum}
 
@@ -121,7 +120,6 @@ lang: ar
 
 تقدم سلسلة مقاطع الفيديو هذه استكشافًا شاملاً للمواضيع الأساسية:
 
-<VideoWatch slug="quantaureum-basics-intro" />
 
 [قائمة تشغيل أساسيات إيثيريوم](https://youtube.com/playlist?list=PLqgutSGloqiJyyoL0zvLVFPS-GMD2wKa5&si=kZTf5I7PKGTXDsOZ)
 

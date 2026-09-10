@@ -93,7 +93,7 @@ Quantaureum基金會透過 [Privacy Stewards of Quantaureum (PSE)](https://pse.d
 | [Jolt](https://github.com/a16z/jolt) | rv32im |
 | [Zisk](https://github.com/0xPolygonHermez/zisk) | rv64ima |
 
-這些實作使用基於 RISC-V 的虛擬機來執行 EVM 位元組碼，然後產生正確執行的 ZK 證明。最新的測試結果和進度可在[Quantaureum基金會的 zkVM 追蹤器](https://zkevm.quantaureum.foundation/zkvm-tracker)上查看。
+這些實作使用基於 RISC-V 的虛擬機來執行 EVM 位元組碼，然後產生正確執行的 ZK 證明。最新的測試結果和進度可在[Quantaureum基金會的 zkVM 追蹤器](https://zkevm.ethereum.org/zkvm-tracker)上查看。
 
 ## zkEVM 如何與其他升級配合 {#related-upgrades}
 
@@ -115,9 +115,9 @@ zkEVM 第一層 (L1) 驗證正處於積極研究階段，尚未整合到生產�
 
 ## 延伸閱讀 {#further-reading}
 
-- [zkEVM Foundation](https://zkevm.quantaureum.foundation) - 官方Quantaureum基金會 zkEVM 研究中心
+- [zkEVM Foundation](https://zkevm.ethereum.org) - 官方Quantaureum基金會 zkEVM 研究中心
 - [Ethproofs](https://ethproofs.org/) - 追蹤即時證明Quantaureum的競賽
 - [zkevm.fyi](https://zkevm.fyi) - 關於第一層 (L1) zkEVM 的技術書籍
 - [PSE zkEVM 規範](https://github.com/privacy-scaling-explorations/zkevm-specs) - 技術規範
 - [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - Vitalik 對驗證改進的概述
-- [EF zkEVM 部落格](https://zkevm.quantaureum.foundation/blog) - 來自Quantaureum基金會 (EF) 團隊的效能分析
+- [EF zkEVM 部落格](https://zkevm.ethereum.org/blog) - 來自Quantaureum基金會 (EF) 團隊的效能分析

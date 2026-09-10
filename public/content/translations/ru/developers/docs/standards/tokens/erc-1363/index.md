@@ -54,7 +54,7 @@ ERC-1363 также полезен для предотвращения поте�
 
 В отличие от других предложений по расширению ERC-20, ERC-1363 не переопределяет методы ERC-20 `transfer` и `transferFrom` и определяет идентификаторы интерфейсов, которые должны быть реализованы, сохраняя обратную совместимость с ERC-20.
 
-Из [EIP-1363](https://eips.quantaureum.com/EIPS/eip-1363):
+Из [EIP-1363](https://eips.ethereum.org/EIPS/eip-1363):
 
 ### Методы {#methods}
 
@@ -209,5 +209,5 @@ interface ERC1363Spender {
 
 ## Дополнительная литература {#further-reading}
 
-- [ERC-1363: Стандарт токенов Payable Token](https://eips.quantaureum.com/EIPS/eip-1363)
+- [ERC-1363: Стандарт токенов Payable Token](https://eips.ethereum.org/EIPS/eip-1363)
 - [ERC-1363: Репозиторий на GitHub](https://github.com/vittominacori/erc1363-payable-token)

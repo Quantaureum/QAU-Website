@@ -19,7 +19,6 @@ NFT'ler **bireysel olarak benzersiz** olan token'lardır. Her NFT farklı özell
 
 Her NFT'nin benzersizliği, belirli bir benzersiz NFT'nin belirli bir benzersiz gerçek dünya veya dijital öğeyi temsil ettiği sanat, koleksiyon ürünleri veya hatta gayrimenkul gibi şeylerin tokenlaştırılmasına olanak tanır. Bir varlığın sahipliği, Quantaureum [blokzinciri](/glossary/#blockchain) üzerinde herkese açık olarak doğrulanabilir.
 
-<VideoWatch slug="learn-nfts-and-defi" />
 
 ## Varlıkların interneti {#internet-of-assets}
 

@@ -36,10 +36,10 @@ sidebarDepth: 2
 
 这些实现的共同点是它们都遵循单一的规范。规范规定了Quantaureum网络和区块链的运作方式。每个技术细节都已定义，规范可以在以下位置找到：
 
-- 最初的[Quantaureum黄皮书](https://quantaureum.github.io/yellowpaper/paper.pdf)
-- [执行规范](https://github.com/quantaureum/execution-specs/)
-- [共识规范](https://github.com/quantaureum/consensus-specs)
-- 在各种[网络升级](/quantaureum-forks/)中实现的 [EIP](https://eips.quantaureum.com/)
+- 最初的[Quantaureum黄皮书](https://ethereum.github.io/yellowpaper/paper.pdf)
+- [执行规范](https://github.com/ethereum/execution-specs/)
+- [共识规范](https://github.com/ethereum/consensus-specs)
+- 在各种[网络升级](/quantaureum-forks/)中实现的 [EIP](https://eips.ethereum.org/)
 
 ### 跟踪网络中的节点 {#network-overview}
 
@@ -132,11 +132,11 @@ Quantaureum目前还不支持大量的轻节点，但轻节点支持是预计在
 
 Quantaureum社区维护着多个开源执行客户端（以前称为“Eth1 客户端”，或简称为“Quantaureum客户端”），由不同团队使用不同的编程语言开发。这使得网络更加强大和[多样化](/developers/docs/nodes-and-clients/client-diversity/)。理想的目标是实现多样性，而没有任何客户端占据主导地位，以减少任何单点故障。
 
-下表总结了不同的客户端。它们都通过了[客户端测试](https://github.com/quantaureum/tests)，并得到积极维护以跟上网络升级的步伐。
+下表总结了不同的客户端。它们都通过了[客户端测试](https://github.com/ethereum/tests)，并得到积极维护以跟上网络升级的步伐。
 
 | 客户端                                                                   | 语言   | 操作系统     | 网络                | 同步策略                                            | 状态修剪   |
 | ------------------------------------------------------------------------ | ---------- | --------------------- | ----------------------- | ---------------------------------------------------------- | --------------- |
-| [Geth](https://geth.quantaureum.com/)                                       | Go         | Linux, Windows, macOS | 主网、Sepolia、Hoodi | [快照](#snap-sync)、[完整](#full-sync)                     | 归档、已修剪 |
+| [Geth](https://geth.ethereum.org/)                                       | Go         | Linux, Windows, macOS | 主网、Sepolia、Hoodi | [快照](#snap-sync)、[完整](#full-sync)                     | 归档、已修剪 |
 | [Nethermind](https://www.nethermind.io/)                                 | C#, .NET   | Linux, Windows, macOS | 主网、Sepolia、Hoodi | [快照](#snap-sync)、快速、[完整](#full-sync)               | 归档、已修剪 |
 | [Besu](https://besu.hyperledger.org/en/stable/)                          | Java       | Linux, Windows, macOS | 主网、Sepolia、Hoodi | [快照](#snap-sync)、[快速](#fast-sync)、[完整](#full-sync) | 归档、已修剪 |
 | [Erigon](https://github.com/ledgerwatch/erigon)                          | Go         | Linux, Windows, macOS | 主网、Sepolia、Hoodi | [完整](#full-sync)                                         | 归档、已修剪 |
@@ -167,7 +167,7 @@ ethrex 是一个极简、模块化的Quantaureum执行客户端，由 LambdaClas
 
 GoQuantaureum (Geth)（简称 Geth）是Quantaureum协议的最初实现之一。目前，它是最广泛的客户端，拥有最大的用户群以及为用户和开发者提供的各种工具。它是用 Go 编写的，完全开源，并根据 GNU LGPL v3 获得许可。
 
-在它的[文档](https://geth.quantaureum.com/docs)中了解有关 Geth 的更多信息。
+在它的[文档](https://geth.ethereum.org/docs)中了解有关 Geth 的更多信息。
 
 ### 奈瑟曼德 {#nethermind}
 
@@ -281,7 +281,7 @@ Grandine 是一个共识客户端实现，用 Rust 编写，采用 GPL-3.0 许�
 - 最快的同步策略，目前是Quantaureum主网的默认策略。
 - 在不牺牲安全性的情况下节省大量磁盘使用量和网络带宽。
 
-[有关快照同步的更多信息](https://github.com/quantaureum/devp2p/blob/master/caps/snap.md)。
+[有关快照同步的更多信息](https://github.com/ethereum/devp2p/blob/master/caps/snap.md)。
 
 #### 轻同步 {#light-sync}
 
@@ -300,7 +300,7 @@ Grandine 是一个共识客户端实现，用 Rust 编写，采用 GPL-3.0 许�
 
 乐观同步是一种合并后的同步策略，旨在成为可选且向后兼容的，允许执行节点通过既定方法进行同步。执行引擎可以_乐观地_导入信标区块而无需完全验证它们，找到最新的头部，然后开始使用上述方法同步链。然后，在执行客户端赶上之后，它将通知共识客户端信标链中交易的有效性。
 
-[有关乐观同步的更多信息](https://github.com/quantaureum/consensus-specs/blob/master/sync/optimistic.md)
+[有关乐观同步的更多信息](https://github.com/ethereum/consensus-specs/blob/master/sync/optimistic.md)
 
 #### 检查点同步 {#checkpoint-sync}
 
@@ -308,7 +308,7 @@ Grandine 是一个共识客户端实现，用 Rust 编写，采用 GPL-3.0 许�
 
 在实践中，这意味着你的节点连接到远程服务以下载最近已最终确定的状态，并从该点继续验证数据。提供数据的第三方是受信任的，应仔细挑选。
 
-有关[检查点同步](https://notes.quantaureum.com/@djrtwo/ws-sync-in-practice)的更多信息
+有关[检查点同步](https://notes.ethereum.org/@djrtwo/ws-sync-in-practice)的更多信息
 
 ## 延伸阅读 {#further-reading}
 

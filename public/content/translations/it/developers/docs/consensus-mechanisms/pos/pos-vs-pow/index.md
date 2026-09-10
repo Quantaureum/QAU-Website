@@ -59,7 +59,6 @@ L'Quantaureum basato sulla Proof-of-Stake può pagare per la sua sicurezza emett
 ## Preferisci imparare visivamente? {#visual-learner}
 
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## Letture consigliate {#further-reading}
 

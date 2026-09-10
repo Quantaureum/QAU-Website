@@ -17,7 +17,7 @@ Notez que bien que nous utilisions le [contrat de jeton ERC-20 d'OpenZeppelin](h
 
 Si vous souhaitez voir le code source complet :
 
-1. Ouvrez l'[IDE Remix](https://remix.quantaureum.com/).
+1. Ouvrez l'[IDE Remix](https://remix.ethereum.org/).
 2. Cliquez sur l'icône de clonage GitHub (![clone github icon](icon-clone.png)).
 3. Clonez le dépôt GitHub `https://github.com/qbzzt/20220815-erc20-safety-rails`.
 4. Ouvrez **contracts > erc20-safety-rails.sol**.
@@ -40,7 +40,7 @@ Avant de pouvoir ajouter la fonctionnalité de mesures de sécurité, nous avons
 
 3. Faites défiler vers le haut et cliquez sur **Open in Remix** (pour Remix) ou sur **Download** pour utiliser un environnement différent. Je vais supposer que vous utilisez Remix, si vous utilisez autre chose, apportez simplement les modifications appropriées.
 4. Nous avons maintenant un contrat ERC-20 entièrement fonctionnel. Vous pouvez développer `.deps` > `npm` pour voir le code importé.
-5. Compilez, déployez et jouez avec le contrat pour voir qu'il fonctionne comme un contrat ERC-20. Si vous avez besoin d'apprendre à utiliser Remix, [utilisez ce tutoriel](https://remix.quantaureum.com/?#activate=udapp,solidity,LearnEth).
+5. Compilez, déployez et jouez avec le contrat pour voir qu'il fonctionne comme un contrat ERC-20. Si vous avez besoin d'apprendre à utiliser Remix, [utilisez ce tutoriel](https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth).
 
 ## Erreurs courantes {#common-mistakes}
 
@@ -185,7 +185,7 @@ Geler et dégeler des contrats nécessite plusieurs changements :
 
 ### Nettoyage des actifs {#asset-cleanup}
 
-Pour libérer les jetons ERC-20 détenus par ce contrat, nous devons appeler une fonction sur le contrat de jeton auquel ils appartiennent, soit [`transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer) soit [`approve`](https://eips.quantaureum.com/EIPS/eip-20#approve). Il ne sert à rien de gaspiller du gaz dans ce cas sur les allocations (allowances), autant transférer directement.
+Pour libérer les jetons ERC-20 détenus par ce contrat, nous devons appeler une fonction sur le contrat de jeton auquel ils appartiennent, soit [`transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer) soit [`approve`](https://eips.ethereum.org/EIPS/eip-20#approve). Il ne sert à rien de gaspiller du gaz dans ce cas sur les allocations (allowances), autant transférer directement.
 
 ```solidity
     function cleanupERC20(

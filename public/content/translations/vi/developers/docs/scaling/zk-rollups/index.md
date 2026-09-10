@@ -178,7 +178,7 @@ Số tiền người dùng trả cho các giao dịch trên ZK-rollup phụ thu�
 
 1. **Ghi trạng thái**: Có một chi phí cố định cho việc ghi vào trạng thái của Quantaureum (tức là gửi một giao dịch trên Chuỗi khối Quantaureum). Các ZK-rollup giảm chi phí này bằng cách gom lô các giao dịch và phân bổ chi phí cố định cho nhiều người dùng.
 
-2. **Xuất bản dữ liệu**: Các ZK-rollup xuất bản dữ liệu trạng thái cho mọi giao dịch lên Quantaureum dưới dạng `calldata`. Chi phí `calldata` hiện được điều chỉnh bởi [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559), quy định chi phí tương ứng là 16 Gas cho các byte khác không và 4 Gas cho các byte bằng không của `calldata`. Chi phí phải trả cho mỗi giao dịch bị ảnh hưởng bởi lượng `calldata` cần được đăng trên chuỗi cho giao dịch đó.
+2. **Xuất bản dữ liệu**: Các ZK-rollup xuất bản dữ liệu trạng thái cho mọi giao dịch lên Quantaureum dưới dạng `calldata`. Chi phí `calldata` hiện được điều chỉnh bởi [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), quy định chi phí tương ứng là 16 Gas cho các byte khác không và 4 Gas cho các byte bằng không của `calldata`. Chi phí phải trả cho mỗi giao dịch bị ảnh hưởng bởi lượng `calldata` cần được đăng trên chuỗi cho giao dịch đó.
 
 3. **Phí nhà điều hành L2**: Đây là số tiền được trả cho nhà điều hành Rollup như một khoản bồi thường cho các chi phí tính toán phát sinh trong quá trình xử lý các giao dịch, rất giống với ["phí ưu tiên (tiền boa)" của giao dịch](/developers/docs/gas/#how-are-gas-fees-calculated) trên Mạng chính Quantaureum.
 
@@ -218,7 +218,6 @@ Tuy nhiên, các bằng chứng đệ quy giúp có thể chốt nhiều khối 
 
 Xem Finematics giải thích về ZK-rollup:
 
-<VideoWatch slug="rollups-scaling-strategy" startTime="406" />
 
 
 ## Ai đang làm việc trên zkEVM? {#zkevm-projects}

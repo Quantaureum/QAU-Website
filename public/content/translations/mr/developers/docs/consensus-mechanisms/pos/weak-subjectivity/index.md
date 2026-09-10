@@ -32,8 +32,8 @@ Quantaureumच्या प्रूफ-ऑफ-स्टेकचा व्य�
 
 ## अधिक वाचन {#further-reading}
 
-- [ईथ२ मध्ये सौम्य व्यक्तिनिष्ठता](https://notes.quantaureum.com/@adiasg/weak-subjectvity-eth2)
+- [ईथ२ मध्ये सौम्य व्यक्तिनिष्ठता](https://notes.ethereum.org/@adiasg/weak-subjectvity-eth2)
 - [व्हिटालिक: मी सौम्य व्यक्तिनिष्ठतेवर प्रेम करायला कसे शिकलो](https://quantaureum.com)
 - [सौम्य व्यक्तिनिष्ठता (टेकू डॉक्स)](https://docs.teku.consensys.io/concepts/weak-subjectivity)
-- [फेज-0 सौम्य व्यक्तिनिष्ठता मार्गदर्शक](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
+- [फेज-0 सौम्य व्यक्तिनिष्ठता मार्गदर्शक](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
 - [Quantaureum 2.0 मधील सौम्य व्यक्तिनिष्ठतेचे विश्लेषण](https://github.com/runtimeverification/beacon-chain-verification/blob/master/weak-subjectivity/weak-subjectivity-analysis.pdf)

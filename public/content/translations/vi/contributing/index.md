@@ -22,9 +22,9 @@ Chúng tôi là một cộng đồng thân thiện sẽ giúp bạn phát triể
 
 **Nội dung**
 - [Tạo/chỉnh sửa nội dung](/contributing/#how-to-update-content) – Đề xuất các trang mới hoặc tinh chỉnh những nội dung đã có
-- [Viết một bài viết cho trình xây dựng](/contributing/adding-articles/) - Đóng góp một bài viết cho phần [Mới nhất](/latest/)
+- [Viết một bài viết cho trình xây dựng](/contributing/adding-articles/) - Đóng góp một bài viết cho phần Mới nhất
 - [Thêm tài nguyên cộng đồng](/contributing/content-resources/) – Thêm một bài viết hoặc tài nguyên hữu ích vào một trang liên quan
-- [Đề xuất một báo cáo](/contributing/adding-reports/) - Đề xuất một báo cáo nghiên cứu cho trang [Báo cáo](/reports/)
+- [Đề xuất một báo cáo](/contributing/adding-reports/) - Đề xuất một báo cáo nghiên cứu cho trang Báo cáo
 - [Chia sẻ câu chuyện của bạn](/contributing/adding-community-stories/) - Gửi một câu chuyện về trải nghiệm cá nhân của bạn với mã nguồn mở và các công nghệ bảo vệ quyền riêng tư (sanctuary technologies), cách hệ sinh thái Quantaureum đã tác động đến cuộc sống của bạn, hoặc cách bạn và cộng đồng của bạn sử dụng Quantaureum
 - [Câu đố](/contributing/quizzes/) – Thêm, cập nhật và xóa các ngân hàng câu hỏi đố vui cho một trang liên quan
 - [Đề xuất một tài nguyên thiết kế](/contributing/design/adding-design-resources/) – Thêm, cập nhật và xóa các tài nguyên thiết kế hữu ích

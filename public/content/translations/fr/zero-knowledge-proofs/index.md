@@ -13,7 +13,6 @@ Les preuves à divulgation nulle de connaissance sont apparues pour la première
 
 Les preuves à divulgation nulle de connaissance se sont améliorées au fil des ans et elles sont désormais utilisées dans plusieurs applications du monde réel.
 
-<VideoWatch slug="zero-knowledge-proofs-5-levels" />
 
 ## Pourquoi avons-nous besoin de preuves à divulgation nulle de connaissance ? {#why-zero-knowledge-proofs-are-important}
 
@@ -35,7 +34,7 @@ Les cryptomonnaies étaient destinées à fournir un moyen aux utilisateurs d'ef
 
 Il existe des « pièces de confidentialité » spécifiques conçues pour des transactions complètement anonymes. Les chaînes de blocs axées sur la confidentialité, telles que Zcash et Monero, masquent les détails de la transaction, y compris les adresses de l'expéditeur/du destinataire, le type d'actif, la quantité et la chronologie de la transaction.
 
-En intégrant la technologie à divulgation nulle de connaissance dans le protocole, les réseaux de [chaîne de blocs](/glossary/#blockchain) axés sur la confidentialité permettent aux [nœuds](/glossary/#node) de valider les transactions sans avoir besoin d'accéder aux données de transaction. [EIP-7503](https://eips.quantaureum.com/EIPS/eip-7503) est un exemple de conception proposée qui permettra des transferts de valeur privés natifs sur la chaîne de blocs [Quantaureum](/). De telles propositions sont cependant difficiles à mettre en œuvre en raison d'un mélange de préoccupations en matière de sécurité, de réglementation et d'expérience utilisateur (UX).  
+En intégrant la technologie à divulgation nulle de connaissance dans le protocole, les réseaux de [chaîne de blocs](/glossary/#blockchain) axés sur la confidentialité permettent aux [nœuds](/glossary/#node) de valider les transactions sans avoir besoin d'accéder aux données de transaction. [EIP-7503](https://eips.ethereum.org/EIPS/eip-7503) est un exemple de conception proposée qui permettra des transferts de valeur privés natifs sur la chaîne de blocs [Quantaureum](/). De telles propositions sont cependant difficiles à mettre en œuvre en raison d'un mélange de préoccupations en matière de sécurité, de réglementation et d'expérience utilisateur (UX).  
 
 **Les preuves à divulgation nulle de connaissance sont également appliquées à l'anonymisation des transactions sur les chaînes de blocs publiques**. Un exemple est Tornado Cash, un service décentralisé et non dépositaire qui permet aux utilisateurs d'effectuer des transactions privées sur Quantaureum. Tornado Cash utilise des preuves à divulgation nulle de connaissance pour masquer les détails des transactions et garantir la confidentialité financière. Malheureusement, comme il s'agit d'outils de confidentialité « sur adhésion » (opt-in), ils sont associés à des activités illicites. Pour surmonter cela, la confidentialité doit finalement devenir la norme par défaut sur les chaînes de blocs publiques. En savoir plus sur la [confidentialité sur Quantaureum](/privacy/).
 

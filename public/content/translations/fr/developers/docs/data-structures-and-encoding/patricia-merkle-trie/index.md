@@ -251,13 +251,13 @@ else:
   value = TxType | encode(tx)
 ```
 
-Plus d'informations à ce sujet peuvent être trouvées dans la documentation de l'[EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718).
+Plus d'informations à ce sujet peuvent être trouvées dans la documentation de l'[EIP-2718](https://eips.ethereum.org/EIPS/eip-2718).
 
 ### Trie des reçus {#receipts-trie}
 
 Chaque bloc a son propre trie des reçus. Un `path` ici est : `rlp(transactionIndex)`. `transactionIndex` est son indice dans le bloc dans lequel il a été inclus. Le trie des reçus n'est jamais mis à jour. De manière similaire au trie des transactions, il existe des reçus actuels et hérités. Pour interroger un reçu spécifique dans le trie des reçus, l'indice de la transaction dans son bloc, la charge utile du reçu et le type de transaction sont requis. Le reçu retourné peut être de type `Receipt` qui est défini comme la concaténation de `TransactionType` et `ReceiptPayload` ou il peut être de type `LegacyReceipt` qui est défini comme `rlp([status, cumulativeGasUsed, logsBloom, logs])`.
 
-Plus d'informations à ce sujet peuvent être trouvées dans la documentation de l'[EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718).
+Plus d'informations à ce sujet peuvent être trouvées dans la documentation de l'[EIP-2718](https://eips.ethereum.org/EIPS/eip-2718).
 
 ## Lectures complémentaires {#further-reading}
 

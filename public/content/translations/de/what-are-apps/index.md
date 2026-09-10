@@ -46,7 +46,7 @@ Apps werden durch Smart Contracts angetrieben – Code-Schnipsel, die auf der Qu
 | **Kann sie zensiert werden?** | Ja | Nein |
 | **Wem gehören deine Daten?** | Meistens nicht dir | Dir gehören deine Daten |
 
-<WhatAreAppsStories />
+
 
 <div className="w-full md:w-1/2 mx-auto md:mx-0">
 

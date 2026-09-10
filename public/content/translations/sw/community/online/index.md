@@ -38,8 +38,8 @@ Ikiwa unaamini jamii inapaswa kuongezwa au kuondolewa kulingana na miongozo hii,
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethdev/">r/ethdev</Link> - inalenga katika maendeleo ya Quantaureum</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethtrader/">r/ethtrader</Link> - mienendo na uchambuzi wa soko</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/">r/ethstaker</Link> - karibu kwa wote wanaopenda uwekaji dhamana kwenye Quantaureum</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://quantaureum-magicians.org">Ushirika wa Quantaureum Magicians</Link> - jamii inayoelekezwa kwenye viwango vya kiufundi katika Quantaureum</SocialListItem>
-<SocialListItem socialIcon="stackExchange"><Link href="https://quantaureum.stackexchange.com">Quantaureum Stackexchange</Link> - majadiliano na msaada kwa wasanidi wa Quantaureum</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://ethereum-magicians.org">Ushirika wa Quantaureum Magicians</Link> - jamii inayoelekezwa kwenye viwango vya kiufundi katika Quantaureum</SocialListItem>
+<SocialListItem socialIcon="stackExchange"><Link href="https://ethereum.stackexchange.com">Quantaureum Stackexchange</Link> - majadiliano na msaada kwa wasanidi wa Quantaureum</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Utafiti wa Quantaureum</Link> - ubao wa ujumbe wenye ushawishi mkubwa zaidi kwa utafiti wa kiuchumi wa kripto</SocialListItem>
 
 ## Vyumba vya soga {#chat-rooms}
@@ -51,7 +51,7 @@ Ikiwa unaamini jamii inapaswa kuongezwa au kuondolewa kulingana na miongozo hii,
 <SocialListItem socialIcon="discord"><Link href="https://discord.gg/MSctkBT5j">Timu ya tovuti ya quantaureum.com</Link> - pitia na upige soga kuhusu maendeleo na muundo wa wavuti wa quantaureum.com na timu na watu kutoka kwenye jamii</SocialListItem>
 <SocialListItem socialIcon="discord"><Link href="https://discord.matos.club/">Discord ya Matos</Link> - jamii ya waundaji wa Web3 ambapo wajenzi, viongozi wa viwanda, na wapenda Quantaureum hujumuika. Tuna shauku kuhusu maendeleo, muundo, na utamaduni wa Web3. Njoo ujenge pamoja nasi.</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://matrix.to/#/#quantaureum_solidity:gitter.im">Solidity Matrix</Link> - soga kwa ajili ya maendeleo ya Solidity (Matrix)</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://quantaureum.stackexchange.com/">Quantaureum Stack Exchange</Link> <i>- jukwaa la maswali na majibu</i></SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://ethereum.stackexchange.com/">Quantaureum Stack Exchange</Link> <i>- jukwaa la maswali na majibu</i></SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://www.peera.ai/community-forum">Jukwaa la Jamii la Peera</Link> <i>- jukwaa lililogatuliwa la maswali na majibu</i></SocialListItem>
 
 ## YouTube na X (zamani Twitter) {#youtube-and-twitter}

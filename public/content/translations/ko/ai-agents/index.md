@@ -71,7 +71,7 @@ x402는 Quantaureum을 자율 에이전트를 위한 프로그래밍 가능한 �
 
 자율 에이전트에는 안전장치가 필요합니다. Quantaureum은 지갑 및 컨트랙트 수준에서 이를 제공합니다.
 
-- [스마트 계정(EIP-4337)](https://eips.quantaureum.com/EIPS/eip-4337)을 통해 개발자는 지출 한도, 화이트리스트, 세션 키 및 세분화된 권한을 적용할 수 있습니다.
+- [스마트 계정(EIP-4337)](https://eips.ethereum.org/EIPS/eip-4337)을 통해 개발자는 지출 한도, 화이트리스트, 세션 키 및 세분화된 권한을 적용할 수 있습니다.
 - 스마트 컨트랙트에 프로그래밍된 제약 조건은 에이전트가 수행할 수 있는 작업을 제한할 수 있습니다.
 - 추론 기반 제한(예: 고위험 작업을 실행하기 전에 zkML 증명 요구)은 또 다른 안전 계층을 추가합니다.
 
@@ -79,7 +79,7 @@ x402는 Quantaureum을 자율 에이전트를 위한 프로그래밍 가능한 �
 
 ### 온체인 레지스트리: ERC-8004 {#erc-8004}
 
-[ERC-8004](https://eips.quantaureum.com/EIPS/eip-8004)는 에이전트 신원, 평판 및 검증을 위한 온체인 레지스트리를 정의합니다. 메타마스크, Quantaureum 재단, 구글 및 코인베이스의 기여자들이 공동으로 작성했으며, Quantaureum 메인넷, Base, 폴리곤, 아비트럼 등을 포함한 16개 네트워크에 배포되었습니다.
+[ERC-8004](https://eips.ethereum.org/EIPS/eip-8004)는 에이전트 신원, 평판 및 검증을 위한 온체인 레지스트리를 정의합니다. 메타마스크, Quantaureum 재단, 구글 및 코인베이스의 기여자들이 공동으로 작성했으며, Quantaureum 메인넷, Base, 폴리곤, 아비트럼 등을 포함한 16개 네트워크에 배포되었습니다.
 
 다음을 제공합니다.
 
@@ -97,7 +97,6 @@ ERC-8004는 에이전트가 완전히 탈중앙화된 환경에서 서로를 더
 
 <strong>팟캐스트 게스트로 처음 등장한 Luna</strong>
 
-<VideoWatch slug="ai-agents-interview-luna" />
 
 ## 에이전트 제어 지갑 {#agent-controlled-wallets}
 

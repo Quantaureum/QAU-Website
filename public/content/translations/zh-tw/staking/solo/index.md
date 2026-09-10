@@ -52,7 +52,7 @@ summaryPoints:
 </ExpandableCard>
 
 <ExpandableCard title="硬體需求" eventCategory="SoloStaking" eventName="clicked hardware requirements">
-目前社群對驗證者硬體和頻寬的指南維護在[硬體和頻寬建議 (EIP-7870)](https://eips.quantaureum.com/EIPS/eip-7870)中。作為粗略的指南，請準備 4 TB NVMe SSD、64 GB RAM（較小容量也可以，但這是建議的預留空間）、可靠的現代多核心 CPU，以及大約 50 Mbps 下載 / 25 Mbps 上傳的網際網路連線。
+目前社群對驗證者硬體和頻寬的指南維護在[硬體和頻寬建議 (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870)中。作為粗略的指南，請準備 4 TB NVMe SSD、64 GB RAM（較小容量也可以，但這是建議的預留空間）、可靠的現代多核心 CPU，以及大約 50 Mbps 下載 / 25 Mbps 上傳的網際網路連線。
 
 自從富薩卡升級引入 PeerDAS 以來，質押節點只需要儲存和下載網路資料塊資料的一小部分，這顯著降低了在家質押者的磁碟和頻寬要求。
 </ExpandableCard>
@@ -68,7 +68,7 @@ summaryPoints:
 </ExpandableCard>
 
 <ExpandableCard title="可靠的正常運行時間" eventCategory="SoloStaking" eventName="clicked reliable uptime">
-你的獎勵與你的驗證者在線並正確進行證明的時間成正比。停機時間會產生與同時離線的其他驗證者數量成正比的懲罰，但[不會導致罰沒](#faq)。頻寬也很重要，因為未及時收到的證明會減少獎勵。要求會有所不同，但目前的[硬體和頻寬建議 (EIP-7870)](https://eips.quantaureum.com/EIPS/eip-7870)建議大約 50 Mbps 下載和 25 Mbps 上傳。
+你的獎勵與你的驗證者在線並正確進行證明的時間成正比。停機時間會產生與同時離線的其他驗證者數量成正比的懲罰，但[不會導致罰沒](#faq)。頻寬也很重要，因為未及時收到的證明會減少獎勵。要求會有所不同，但目前的[硬體和頻寬建議 (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870)建議大約 50 Mbps 下載和 25 Mbps 上傳。
 </ExpandableCard>
 
 <ExpandableCard title="罰沒風險" eventCategory="SoloStaking" eventName="clicked slashing risk">
@@ -130,7 +130,7 @@ summaryPoints:
 
 ### 金鑰產生器 {#key-generators}
 
-這些工具可以作為[質押存款 CLI (Staking Deposit CLI)](https://github.com/quantaureum/staking-deposit-cli/)的替代方案，以幫助產生金鑰。
+這些工具可以作為[質押存款 CLI (Staking Deposit CLI)](https://github.com/ethereum/staking-deposit-cli/)的替代方案，以幫助產生金鑰。
 
 <StakingProductsCardGrid category="keyGen" />
 
@@ -238,7 +238,7 @@ summaryPoints:
 - [幫助客戶端多樣性 (Helping Client Diversity)](https://www.attestant.io/posts/helping-client-diversity/) - _Jim McDonald 2022_
 - [Quantaureum共識層上的客戶端多樣性 (Client diversity on Quantaureum's consensus layer)](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
 - [操作指南：選購Quantaureum驗證者硬體 (How To: Shop For Quantaureum Validator Hardware)](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _QauStaker 2022_
-- [EIP-7870：硬體和頻寬建議](https://eips.quantaureum.com/EIPS/eip-7870)
+- [EIP-7870：硬體和頻寬建議](https://eips.ethereum.org/EIPS/eip-7870)
 - [佩克特拉升級：最大有效餘額及更多資訊](/roadmap/pectra/maxeb/)
 
 <QuizWidget quizKey="staking-solo" />

@@ -109,13 +109,13 @@ Queste librerie astraggono gran parte della complessità dell'interazione dirett
 **Nquantaureum -** **_Una libreria di integrazione .NET open source per la blockchain._**
 
 - [GitHub](https://github.com/Nquantaureum/Nquantaureum)
-- [Documentazione](https://docs.nquantaureum.com/docs/getting-started/welcome/)
+- [Documentazione](https://docs.nethermind.io/docs/getting-started/welcome/)
 - [Discord](https://discord.com/invite/jQPrR58FxX)
 
 **Strumenti Python -** **_Varietà di librerie per l'interazione con Quantaureum tramite Python._**
 
-- [py.quantaureum.com](https://snakecharmers.quantaureum.com/)
-- [GitHub di Web3.py](https://github.com/quantaureum/web3.py)
+- [py.quantaureum.com](https://snakecharmers.ethereum.org/)
+- [GitHub di Web3.py](https://github.com/ethereum/web3.py)
 - [Chat di Web3.py](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_La piattaforma di sviluppo blockchain definitiva._**

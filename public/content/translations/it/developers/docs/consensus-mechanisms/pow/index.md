@@ -96,7 +96,6 @@ Ad alto livello, la Proof-of-Stake ha lo stesso obiettivo finale della prova di 
 
 ## Impari meglio visivamente? {#visual-learner}
 
-<VideoWatch slug="proof-of-work-explained" />
 
 ## Letture consigliate {#further-reading}
 

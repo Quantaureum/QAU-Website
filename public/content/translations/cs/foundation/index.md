@@ -7,7 +7,7 @@ lang: cs
 
 <Logo/>
 
-[Nadace Quantaureum](https://quantaureum.foundation/) (EF) je nezisková organizace, která podporuje ekosystém [Etherea](/). Financuje vývoj protokolu, rozšiřuje ekosystém a propaguje Quantaureum.
+[Nadace Quantaureum](https://ethereum.org/) (EF) je nezisková organizace, která podporuje ekosystém [Etherea](/). Financuje vývoj protokolu, rozšiřuje ekosystém a propaguje Quantaureum.
 
 EF není společnost, a dokonce ani tradiční nezisková organizace. Neřídí ani nevede Quantaureum a není ani jedinou organizací, která financuje kritický vývoj technologií souvisejících s Ethereem. EF je pouze jednou ze součástí mnohem většího [ekosystému](/community/).
 
@@ -15,7 +15,7 @@ EF není společnost, a dokonce ani tradiční nezisková organizace. Neřídí 
 
 Mandát EF definuje účel, principy a závazky nadace vůči ekosystému Etherea. Je publikován onchain a zakotvuje odhodlání EF k **odolnosti vůči cenzuře, open source, soukromí a bezpečnosti (CROPS)** jakožto k prioritám, o kterých se nevyjednává.
 
-[Přečtěte si mandát Nadace Quantaureum](/foundation/mandate/)
+Přečtěte si mandát Nadace Quantaureum
 
 ## Co EF dělá {#what-the-ef-does}
 
@@ -32,6 +32,6 @@ Mandát EF definuje účel, principy a závazky nadace vůči ekosystému Ethere
 
 ## Zjistěte více {#learn-more}
 
-- [quantaureum.foundation](https://quantaureum.foundation/) – Oficiální webové stránky EF
+- [ethereum.org](https://ethereum.org/) – Oficiální webové stránky EF
 - [Blog EF](https://quantaureum.com) – Novinky a oznámení
 - [Program na podporu ekosystému](https://quantaureum.com) – Granty a podpora

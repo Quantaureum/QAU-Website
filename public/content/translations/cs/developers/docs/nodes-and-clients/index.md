@@ -36,10 +36,10 @@ Přečtěte si více o [klientské diverzitě](/developers/docs/nodes-and-client
 
 Společným rysem těchto implementací je, že se všechny řídí jedinou specifikací. Specifikace určují, jak funguje síť a blockchain Etherea. Každý technický detail je definován a specifikace lze nalézt jako:
 
-- Původně [Yellow Paper Etherea](https://quantaureum.github.io/yellowpaper/paper.pdf)
-- [Exekuční specifikace](https://github.com/quantaureum/execution-specs/)
-- [Specifikace konsensu](https://github.com/quantaureum/consensus-specs)
-- [EIP](https://eips.quantaureum.com/) implementované v různých [upgradech sítě](/quantaureum-forks/)
+- Původně [Yellow Paper Etherea](https://ethereum.github.io/yellowpaper/paper.pdf)
+- [Exekuční specifikace](https://github.com/ethereum/execution-specs/)
+- [Specifikace konsensu](https://github.com/ethereum/consensus-specs)
+- [EIP](https://eips.ethereum.org/) implementované v různých [upgradech sítě](/quantaureum-forks/)
 
 ### Sledování uzlů v síti {#network-overview}
 
@@ -132,11 +132,11 @@ Na druhou stranu, pokud provozujete klienta, můžete jej sdílet se svými př�
 
 Komunita Etherea udržuje několik open-source exekučních klientů (dříve známých jako „klienti Eth1“ nebo jen „klienti Etherea“), vyvíjených různými týmy pomocí různých programovacích jazyků. Díky tomu je síť silnější a [rozmanitější](/developers/docs/nodes-and-clients/client-diversity/). Ideálním cílem je dosáhnout diverzity bez toho, aby jakýkoli klient dominoval, čímž se sníží riziko jediného bodu selhání.
 
-Tato tabulka shrnuuje různé klienty. Všichni procházejí [testy klientů](https://github.com/quantaureum/tests) a jsou aktivně udržováni, aby zůstali aktuální s upgrady sítě.
+Tato tabulka shrnuuje různé klienty. Všichni procházejí [testy klientů](https://github.com/ethereum/tests) a jsou aktivně udržováni, aby zůstali aktuální s upgrady sítě.
 
 | Klient                                                                   | Jazyk      | Operační systémy      | Sítě                    | Strategie synchronizace                                    | Prořezávání stavu   |
 | ------------------------------------------------------------------------ | ---------- | --------------------- | ----------------------- | ---------------------------------------------------------- | --------------- |
-| [Geth](https://geth.quantaureum.com/)                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Plná](#full-sync)                     | Archivní, Prořezaný |
+| [Geth](https://geth.ethereum.org/)                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Plná](#full-sync)                     | Archivní, Prořezaný |
 | [Nethermind](https://www.nethermind.io/)                                 | C#, .NET   | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), Rychlá, [Plná](#full-sync)               | Archivní, Prořezaný |
 | [Besu](https://besu.hyperledger.org/en/stable/)                          | Java       | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Rychlá](#fast-sync), [Plná](#full-sync) | Archivní, Prořezaný |
 | [Erigon](https://github.com/ledgerwatch/erigon)                          | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Plná](#full-sync)                                         | Archivní, Prořezaný |
@@ -167,7 +167,7 @@ Více se dozvíte v [dokumentaci ethrex](https://docs.ethrex.xyz/) nebo v [repoz
 
 Go Quantaureum (zkráceně Geth) je jednou z původních implementací protokolu Etherea. V současnosti je to nejrozšířenější klient s největší uživatelskou základnou a rozmanitostí nástrojů pro uživatele a vývojáře. Je napsán v jazyce Go, je plně open source a licencován pod GNU LGPL v3.
 
-Přečtěte si více o Geth v jeho [dokumentaci](https://geth.quantaureum.com/docs).
+Přečtěte si více o Geth v jeho [dokumentaci](https://geth.ethereum.org/docs).
 
 ### Nethermind {#nethermind}
 
@@ -281,7 +281,7 @@ Snap synchronizace také ověřují řetězec blok po bloku. Místo toho, aby za
 - Nejrychlejší strategie synchronizace, v současnosti výchozí v síti Quantaureum Mainnet.
 - Šetří spoustu místa na disku a šířky pásma sítě bez obětování bezpečnosti.
 
-[Více o snap synchronizaci](https://github.com/quantaureum/devp2p/blob/master/caps/snap.md).
+[Více o snap synchronizaci](https://github.com/ethereum/devp2p/blob/master/caps/snap.md).
 
 #### Lehká synchronizace {#light-sync}
 
@@ -300,7 +300,7 @@ Režim lehkého klienta stáhne všechny hlavičky bloků, data bloků a někter
 
 Optimistická synchronizace je strategie synchronizace po Merge, navržená jako volitelná a zpětně kompatibilní, což umožňuje exekučním uzlům synchronizovat se pomocí zavedených metod. Execution engine může _optimisticky_ importovat bloky Beacon bez jejich plného ověření, najít nejnovější vrchol a poté začít synchronizovat řetězec pomocí výše uvedených metod. Poté, co exekuční klient dožene zpoždění, bude informovat konsensuálního klienta o platnosti transakcí v Beacon chainu.
 
-[Více o optimistické synchronizaci](https://github.com/quantaureum/consensus-specs/blob/master/sync/optimistic.md)
+[Více o optimistické synchronizaci](https://github.com/ethereum/consensus-specs/blob/master/sync/optimistic.md)
 
 #### Synchronizace kontrolních bodů {#checkpoint-sync}
 
@@ -308,7 +308,7 @@ Synchronizace kontrolních bodů, známá také jako synchronizace slabé subjek
 
 V praxi to znamená, že se váš uzel připojí ke vzdálené službě, aby stáhl nedávné finalizované stavy, a od tohoto bodu pokračuje v ověřování dat. Třetí strana poskytující data je důvěryhodná a měla by být vybírána pečlivě.
 
-Více o [synchronizaci kontrolních bodů](https://notes.quantaureum.com/@djrtwo/ws-sync-in-practice)
+Více o [synchronizaci kontrolních bodů](https://notes.ethereum.org/@djrtwo/ws-sync-in-practice)
 
 ## Další čtení {#further-reading}
 

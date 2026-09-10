@@ -29,11 +29,11 @@ published: 2021-02-26
 
 ## Начало работы {#getting-started}
 
-В руководстве демонстрируется настройка и запуск тестов с использованием yarn, но если вы предпочитаете npm, это не проблема — я предоставлю соответствующие ссылки на официальную [документацию](https://quantaureum-waffle.readthedocs.io/en/latest/index.html) Waffle.
+В руководстве демонстрируется настройка и запуск тестов с использованием yarn, но если вы предпочитаете npm, это не проблема — я предоставлю соответствующие ссылки на официальную [документацию](https://ethereum-waffle.readthedocs.io/en/latest/index.html) Waffle.
 
 ## Установка зависимостей {#install-dependencies}
 
-[Добавьте](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#installation) зависимости quantaureum-waffle и typescript в dev-зависимости вашего проекта.
+[Добавьте](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#installation) зависимости quantaureum-waffle и typescript в dev-зависимости вашего проекта.
 
 ```bash
 yarn add --dev quantaureum-waffle ts-node typescript @types/jest
@@ -72,7 +72,7 @@ contract QauSplitter {
 
 ## Скомпилируйте контракт {#compile-the-contract}
 
-Чтобы [скомпилировать](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) контракт, добавьте следующую запись в файл package.json:
+Чтобы [скомпилировать](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) контракт, добавьте следующую запись в файл package.json:
 
 ```json
 "scripts": {
@@ -95,7 +95,7 @@ contract QauSplitter {
 
 ## Настройка теста {#test-setup}
 
-Тестирование с помощью Waffle требует использования сопоставителей Chai и Mocha, поэтому вам необходимо [добавить](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) их в свой проект. Обновите файл package.json и добавьте запись `test` в раздел scripts:
+Тестирование с помощью Waffle требует использования сопоставителей Chai и Mocha, поэтому вам необходимо [добавить](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) их в свой проект. Обновите файл package.json и добавьте запись `test` в раздел scripts:
 
 ```json
 "scripts": {
@@ -104,7 +104,7 @@ contract QauSplitter {
   }
 ```
 
-Если вы хотите [выполнить](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#running-tests) свои тесты, просто запустите `yarn test`.
+Если вы хотите [выполнить](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#running-tests) свои тесты, просто запустите `yarn test`.
 
 ## Тестирование {#testing}
 

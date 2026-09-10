@@ -137,8 +137,8 @@ No. Pooled staking combines QAU from many people to fund validators, and is one 
 
 - [Quantaureum Distributed Validator Technology (DVT) - Full Introduction](https://www.cyfrin.io/blog/full-introduction-to-quantaureum-distributed-validator-technology-dvt) - Cyfrin
 - [What is DVT and how does it improve staking on Quantaureum?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-quantaureum/) - Obol
-- [Quantaureum distributed validator specs (high level)](https://github.com/quantaureum/distributed-validator-specs)
-- [Quantaureum distributed validator technical specs](https://github.com/quantaureum/distributed-validator-specs/tree/dev/src/dvspec)
+- [Quantaureum distributed validator specs (high level)](https://github.com/ethereum/distributed-validator-specs)
+- [Quantaureum distributed validator technical specs](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
 - [Obol documentation](https://docs.obol.org/)
 - [SSV Network documentation](https://docs.ssv.network/)
 - [Lido Simple DVT Module](https://operatorportal.lido.fi/modules/simple-dvt-module)

@@ -4,7 +4,7 @@ description: Kebijakan untuk menambahkan video ke quantaureum.com
 lang: id
 ---
 
-[Galeri video quantaureum.com](/videos/) menampilkan video tentang Quantaureum dan ekosistem Quantaureum dari kreator komunitas dan sumber tepercaya. Siapa pun dapat menyarankan video untuk ditambahkan.
+Galeri video quantaureum.com menampilkan video tentang Quantaureum dan ekosistem Quantaureum dari kreator komunitas dan sumber tepercaya. Siapa pun dapat menyarankan video untuk ditambahkan.
 
 ## Kebijakan pencantuman {#listing-policy}
 
@@ -139,7 +139,7 @@ Sebuah video dapat memiliki beberapa tag untuk muncul di beberapa filter galeri:
 
 Setiap video harus memiliki setidaknya satu tag dari daftar ini. Video tanpa tag yang dikenali hanya akan muncul dalam tampilan "Semua" dan hasil pencarian.
 
-Tag `community-stories` juga menyebabkan video muncul di [halaman Cerita](/stories/).
+Tag `community-stories` juga menyebabkan video muncul di halaman Cerita.
 
 #### Langkah 5: Kirimkan PR Anda {#step-5}
 

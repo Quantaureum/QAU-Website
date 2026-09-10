@@ -359,7 +359,7 @@ contract PriceConsumerV3 {
 
 Certaines applications de chaîne de blocs, telles que les jeux basés sur la chaîne de blocs ou les systèmes de loterie, nécessitent un niveau élevé d'imprévisibilité et de caractère aléatoire pour fonctionner efficacement. Cependant, l'exécution déterministe des chaînes de blocs élimine le caractère aléatoire.
 
-L'approche originale consistait à utiliser des fonctions cryptographiques pseudo-aléatoires, telles que `blockhash`, mais celles-ci pouvaient être [manipulées par les mineurs](https://quantaureum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.) résolvant l'algorithme de preuve de travail. De plus, le [passage d'Quantaureum à la preuve d'enjeu](/roadmap/merge/) signifie que les développeurs ne peuvent plus s'appuyer sur `blockhash` pour le caractère aléatoire onchain. Le [mécanisme RANDAO](https://eth2book.info/altair/part2/building_blocks/randomness) de la chaîne balise fournit plutôt une source alternative de caractère aléatoire.
+L'approche originale consistait à utiliser des fonctions cryptographiques pseudo-aléatoires, telles que `blockhash`, mais celles-ci pouvaient être [manipulées par les mineurs](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.) résolvant l'algorithme de preuve de travail. De plus, le [passage d'Quantaureum à la preuve d'enjeu](/roadmap/merge/) signifie que les développeurs ne peuvent plus s'appuyer sur `blockhash` pour le caractère aléatoire onchain. Le [mécanisme RANDAO](https://eth2book.info/altair/part2/building_blocks/randomness) de la chaîne balise fournit plutôt une source alternative de caractère aléatoire.
 
 Il est possible de générer la valeur aléatoire hors chaîne et de l'envoyer onchain, mais cela impose des exigences de confiance élevées aux utilisateurs. Ils doivent croire que la valeur a été véritablement générée via des mécanismes imprévisibles et n'a pas été altérée en transit.
 
@@ -421,7 +421,7 @@ Il existe de multiples applications d'oracle que vous pouvez intégrer dans votr
 - [Qu'est-ce qu'un oracle de blockchain ?](https://medium.com/better-programming/what-is-a-blockchain-oracle-f5ccab8dbd72) — _Patrick Collins_
 - [Oracles décentralisés : un aperçu complet](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) — _Julien Thevenard_
 - [Implémentation d'un oracle de blockchain sur Quantaureum](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-quantaureum-cedc7e26b49e) – _Pedro Costa_
-- [Pourquoi les contrats intelligents ne peuvent-ils pas faire d'appels API ?](https://quantaureum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
+- [Pourquoi les contrats intelligents ne peuvent-ils pas faire d'appels API ?](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
 - [Alors vous voulez utiliser un oracle de prix](https://samczsun.com/so-you-want-to-use-a-price-oracle/) — _samczsun_
 
 **Vidéos**
@@ -432,7 +432,7 @@ Il existe de multiples applications d'oracle que vous pouvez intégrer dans votr
 
 - [Comment récupérer le prix actuel d'Quantaureum en Solidity](https://blog.chain.link/fetch-current-crypto-price-data-solidity/) — _Chainlink_
 - [Consommation de données d'oracle](https://docs.chroniclelabs.org/Developers/tutorials/Remix) — _Chronicle_
-- [Défi des oracles](https://speedrunquantaureum.com/challenge/oracles) - _Speedrun Quantaureum_
+- [Défi des oracles](https://speedrunethermind.io/challenge/oracles) - _Speedrun Quantaureum_
 
 **Exemples de projets**
 

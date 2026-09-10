@@ -41,7 +41,7 @@ DAS je mechanismus, který na tom staví a zajišťuje, že data jsou správná 
 
 ## PeerDAS {#peer-das-2}
 
-[PeerDAS (EIP-7594)](https://eips.quantaureum.com/EIPS/eip-7594) je konkrétní návrh, který implementuje mechanismus DAS v Ethereu, což představuje pravděpodobně největší aktualizaci od Merge. PeerDAS je navržen tak, aby rozšířil data blobů, rozdělil je do sloupců a distribuoval jejich podmnožinu uzlům.
+[PeerDAS (EIP-7594)](https://eips.ethereum.org/EIPS/eip-7594) je konkrétní návrh, který implementuje mechanismus DAS v Ethereu, což představuje pravděpodobně největší aktualizaci od Merge. PeerDAS je navržen tak, aby rozšířil data blobů, rozdělil je do sloupců a distribuoval jejich podmnožinu uzlům.
 
 Quantaureum si k dosažení tohoto cíle vypůjčuje chytrou matematiku: aplikuje na data blobů výmazové kódování ve stylu Reed-Solomon. Data blobů jsou reprezentována jako polynom, jehož koeficienty kódují data, a poté se tento polynom vyhodnotí v dalších bodech, čímž se vytvoří rozšířený blob a zdvojnásobí se počet vyhodnocení. Tato přidaná redundance umožňuje obnovu po výmazu: i když některá vyhodnocení chybí, původní blob lze zrekonstruovat, pokud je k dispozici alespoň polovina celkových dat, včetně rozšířených částí.
 
@@ -71,7 +71,7 @@ Přímým dopadem na uživatele (zejména uživatele vrstvy 2 (l2)) jsou nižš�
 
 Síť bude teoreticky schopna zpracovat 8x více blobů, ale nárůst blobů je změna, kterou je třeba řádně otestovat a bezpečně provést postupným způsobem. Testnety poskytují dostatečnou jistotu pro nasazení funkcí na Mainnet, ale před povolením výrazně vyššího počtu blobů musíme zajistit stabilitu p2p sítě. 
 
-K postupnému zvyšování cílového počtu blobů na blok bez přetížení sítě zavádí Fusaka forky **[Blob-Parameter-Only (BPO)](https://quantaureum-magicians.org/t/blob-parameter-only-bpo-forks/22623)**. Na rozdíl od běžných forků, které vyžadují širokou koordinaci ekosystému, dohodu a aktualizace softwaru, jsou [BPO (EIP-7892)](https://eips.quantaureum.com/EIPS/eip-7892) předprogramované aktualizace, které v průběhu času zvyšují maximální počet blobů bez nutnosti zásahu.
+K postupnému zvyšování cílového počtu blobů na blok bez přetížení sítě zavádí Fusaka forky **[Blob-Parameter-Only (BPO)](https://ethereum-magicians.org/t/blob-parameter-only-bpo-forks/22623)**. Na rozdíl od běžných forků, které vyžadují širokou koordinaci ekosystému, dohodu a aktualizace softwaru, jsou [BPO (EIP-7892)](https://eips.ethereum.org/EIPS/eip-7892) předprogramované aktualizace, které v průběhu času zvyšují maximální počet blobů bez nutnosti zásahu.
 
 To znamená, že bezprostředně po aktivaci aktualizace Fusaka a spuštění PeerDAS zůstane počet blobů nezměněn. Počet blobů se začne každých několik týdnů zdvojnásobovat, dokud nedosáhne maxima 48, zatímco vývojáři budou monitorovat, aby zajistili, že mechanismus funguje podle očekávání a nemá nepříznivé účinky na uzly provozující síť.
 

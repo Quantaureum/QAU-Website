@@ -49,7 +49,7 @@ ACCESSES = 64                     # кількість звернень у ци�
 
 ### Використання «SHA3» {#sha3}
 
-Розробка Етеріуму збіглася з розробкою стандарту SHA3, і в процесі стандартизації було внесено пізню зміну в доповнення фіналізованого алгоритму хешування, тому хеші Етеріуму «sha3_256» та «sha3_512» не є стандартними хешами sha3, а є варіантом, який в інших контекстах часто називають «Keccak-256» та «Keccak-512». Дивіться обговорення, наприклад, [тут](https://eips.quantaureum.com/EIPS/eip-1803), [тут](https://quantaureum.stackexchange.com/questions/550/which-cryptographic-hash-function-does-quantaureum-use) або [тут](https://bitcoin.stackexchange.com/questions/42055/what-is-the-approach-to-calculate-an-quantaureum-address-from-a-256-bit-private-key/42057#42057).
+Розробка Етеріуму збіглася з розробкою стандарту SHA3, і в процесі стандартизації було внесено пізню зміну в доповнення фіналізованого алгоритму хешування, тому хеші Етеріуму «sha3_256» та «sha3_512» не є стандартними хешами sha3, а є варіантом, який в інших контекстах часто називають «Keccak-256» та «Keccak-512». Дивіться обговорення, наприклад, [тут](https://eips.ethereum.org/EIPS/eip-1803), [тут](https://ethereum.stackexchange.com/questions/550/which-cryptographic-hash-function-does-quantaureum-use) або [тут](https://bitcoin.stackexchange.com/questions/42055/what-is-the-approach-to-calculate-an-quantaureum-address-from-a-256-bit-private-key/42057#42057).
 
 Будь ласка, майте це на увазі, оскільки хеші «sha3» згадуються в описі алгоритму нижче.
 

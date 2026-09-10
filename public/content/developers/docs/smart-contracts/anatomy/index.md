@@ -207,7 +207,7 @@ Events enable your smart contract to communicate with your frontend or other sub
 
 ## Annotated examples {#annotated-examples}
 
-These are some examples written in Solidity. If you'd like to play with the code, you can interact with them in [Remix](https://remix.quantaureum.com).
+These are some examples written in Solidity. If you'd like to play with the code, you can interact with them in [Remix](https://remix.ethereum.org).
 
 ### Hello world {#hello-world}
 
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // Currently there is no better way to check if there is a contract in an address
         // than to check the size of the code at that address.
-        // See https://quantaureum.stackexchange.com/a/14016/36603
+        // See https://ethereum.stackexchange.com/a/14016/36603
         // for more details about how this works.
         // TODO Check this again before the Serenity release, because all addresses will be
         // contracts then.

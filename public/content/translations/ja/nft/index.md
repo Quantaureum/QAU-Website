@@ -19,7 +19,6 @@ NFTは、**それぞれが固有**のトークンです。各NFTは異なる特�
 
 各NFTの独自性により、アート、収集品、さらには不動産などのトークン化が可能になります。ここでは、1つの特定の固有のNFTが、特定の固有の現実世界またはデジタルのアイテムを表します。資産の所有権は、Quantaureumの[ブロックチェーン](/glossary/#blockchain)上で公的に検証可能です。
 
-<VideoWatch slug="learn-nfts-and-defi" />
 
 ## 資産のインターネット {#internet-of-assets}
 

@@ -65,9 +65,9 @@ Ancak ABI, bir baytlık çağrı verisinin binden fazla aritmetik işleme mal ol
 Açıklama:
 
 - **İşlev seçici**: Sözleşmenin 256'dan az işlevi vardır, bu nedenle onları tek bir bayt ile ayırt edebiliriz.
-  Bu baytlar tipik olarak sıfır değildir ve bu nedenle [on altı Gaz'a mal olur](https://eips.quantaureum.com/EIPS/eip-2028).
+  Bu baytlar tipik olarak sıfır değildir ve bu nedenle [on altı Gaz'a mal olur](https://eips.ethereum.org/EIPS/eip-2028).
 - **Sıfırlar**: Bu baytlar her zaman sıfırdır çünkü yirmi baytlık bir adresin tutulması için otuz iki baytlık bir kelime gerekmez.
-  Sıfır tutan baytlar dört Gaz'a mal olur ([Sarı Bülten'e bakın](https://quantaureum.github.io/yellowpaper/paper.pdf), Ek G,
+  Sıfır tutan baytlar dört Gaz'a mal olur ([Sarı Bülten'e bakın](https://ethereum.github.io/yellowpaper/paper.pdf), Ek G,
   s. 27, `G`<sub>`txdatazero`</sub> değeri).
 - **Miktar**: Bu sözleşmede `decimals` değerinin on sekiz (normal değer) olduğunu ve transfer ettiğimiz maksimum Token miktarının 10<sup>18</sup> olacağını varsayarsak, maksimum 10<sup>36</sup> miktarı elde ederiz.
   256<sup>15</sup> &gt; 10<sup>36</sup>, yani on beş bayt yeterlidir.
@@ -201,7 +201,7 @@ Bir işlevin burada bulunmamasının iki nedeni vardır:
 2. [`msg.sender`](https://docs.soliditylang.org/en/v0.8.12/units-and-global-variables.html#block-and-transaction-properties)'a dayanan işlevler.
    `msg.sender` değeri, çağıranın değil, `CalldataInterpreter`'nin adresi olacaktır.
 
-Ne yazık ki, [ERC-20 spesifikasyonlarına bakıldığında](https://eips.quantaureum.com/EIPS/eip-20), bu geriye yalnızca bir işlev bırakır: `transfer`.
+Ne yazık ki, [ERC-20 spesifikasyonlarına bakıldığında](https://eips.ethereum.org/EIPS/eip-20), bu geriye yalnızca bir işlev bırakır: `transfer`.
 Bu bizi yalnızca iki işlevle baş başa bırakır: `transfer` (`transferFrom` çağırabildiğimiz için) ve `faucet` (Token'ları bizi çağıran kişiye geri transfer edebildiğimiz için).
 
 ```solidity

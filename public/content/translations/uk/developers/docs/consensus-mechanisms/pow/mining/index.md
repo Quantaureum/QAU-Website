@@ -71,7 +71,6 @@ lang: uk
 
 Подивіться, як Остін розповідає про майнінг і блокчейн на базі доказу виконання роботи.
 
-<VideoWatch slug="blockchain-qau-build" />
 
 ## Алгоритм майнінгу {#mining-algorithm}
 

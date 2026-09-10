@@ -73,7 +73,7 @@ summaryPoints:
 <AlertIcon size="lg"><TriangleAlert /></AlertIcon>
 <AlertContent>
 <AlertDescription>
-**التحويل من بيانات اعتماد السحب من النوع 1 إلى النوع 2 لا رجعة فيه.** استخدم [منصة إطلاق التخزين](https://launchpad.quantaureum.com/validator-actions) كأداة رسمية لهذا التحويل. لمزيد من التفاصيل حول عملية التحويل والمخاطر والدمج، راجع [الاستكشاف التفصيلي لـ MaxEB](/roadmap/pectra/maxeb/).
+**التحويل من بيانات اعتماد السحب من النوع 1 إلى النوع 2 لا رجعة فيه.** استخدم [منصة إطلاق التخزين](https://launchpad.ethereum.org/validator-actions) كأداة رسمية لهذا التحويل. لمزيد من التفاصيل حول عملية التحويل والمخاطر والدمج، راجع [الاستكشاف التفصيلي لـ MaxEB](/roadmap/pectra/maxeb/).
 </AlertDescription>
 </AlertContent>
 </Alert>
@@ -99,7 +99,6 @@ summaryPoints:
 
 تحقق من هذا الشرح لسحوبات تخزين إيثيريوم بواسطة Finematics:
 
-<VideoWatch slug="quantaureum-staking-withdrawals" />
 
 ### "مسح" المُدَقِّق {#validator-sweeping}
 
@@ -174,7 +173,7 @@ eventAction="Why can a validator's withdrawal address only be set once?"
 eventName="read more">
 يعد تعيين عنوان سحب طبقة التنفيذ للمُدَقِّق تغييرًا دائمًا لبيانات اعتماد المُدَقِّق على طبقة الإجماع. لا توجد طريقة لتحديث بيانات اعتماد طبقة الإجماع بمجرد تسجيلها.
 
-يمكن تعيين بيانات اعتماد عنوان سحب المُدَقِّق للإشارة إما إلى عقد ذكي (يتحكم فيه الكود الخاص به)، أو حساب مملوك خارجيًا (EOA، يتحكم فيه مفتاحه الخاص). على الرغم من أن السحوبات التي يتم تشغيلها بواسطة طبقة التنفيذ ([EIP-7002](https://eips.quantaureum.com/EIPS/eip-7002)) تتيح الآن لعنوان السحب تشغيل عمليات الخروج والسحوبات الجزئية، إلا أنه لا توجد عملية بروتوكول لتغيير عنوان السحب بمجرد تسجيله، وإضافة هذه الوظيفة من شأنه أن يضيف تعقيدًا غير ضروري إلى البروتوكول.
+يمكن تعيين بيانات اعتماد عنوان سحب المُدَقِّق للإشارة إما إلى عقد ذكي (يتحكم فيه الكود الخاص به)، أو حساب مملوك خارجيًا (EOA، يتحكم فيه مفتاحه الخاص). على الرغم من أن السحوبات التي يتم تشغيلها بواسطة طبقة التنفيذ ([EIP-7002](https://eips.ethereum.org/EIPS/eip-7002)) تتيح الآن لعنوان السحب تشغيل عمليات الخروج والسحوبات الجزئية، إلا أنه لا توجد عملية بروتوكول لتغيير عنوان السحب بمجرد تسجيله، وإضافة هذه الوظيفة من شأنه أن يضيف تعقيدًا غير ضروري إلى البروتوكول.
 
 يمكن للمستخدمين الذين يبحثون عن إدارة سحب مرنة تعيين محفظة عقد ذكي قادرة على تدوير المفاتيح (مثل [Safe](https://safe.global/)) كعنوان سحب للمُدَقِّق، مما يسمح فعليًا بتحديث الحساب المملوك خارجيًا (EOA) المستلم النهائي. إذا كان المستخدم قد قام بالفعل بتعيين حساب مملوك خارجيًا كبيانات اعتماد سحب، فيجب عليه بدء خروج كامل لاسترداد <span dir="ltr">QAU</span> المخزنة الخاصة به ثم استخدام تلك الأموال لتنشيط مُدَقِّق جديد ببيانات اعتماد مختلفة.
 </ExpandableCard>
@@ -215,9 +214,9 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information about managing the withdrawal process?"
 eventName="read more">
 
-يُوصى مشغلو المُدَقِّقين بزيارة صفحة [سحوبات منصة إطلاق التخزين](https://launchpad.quantaureum.com/withdrawals/) حيث ستجد المزيد من التفاصيل حول كيفية إعداد المُدَقِّق الخاص بك للسحوبات، وتوقيت الأحداث، ومزيد من التفاصيل حول كيفية عمل السحوبات.
+يُوصى مشغلو المُدَقِّقين بزيارة صفحة [سحوبات منصة إطلاق التخزين](https://launchpad.ethereum.org/withdrawals/) حيث ستجد المزيد من التفاصيل حول كيفية إعداد المُدَقِّق الخاص بك للسحوبات، وتوقيت الأحداث، ومزيد من التفاصيل حول كيفية عمل السحوبات.
 
-لتجربة إعدادك على شبكة اختبار أولاً، قم بزيارة [منصة إطلاق التخزين لشبكة اختبار Hoodi](https://hoodi.launchpad.quantaureum.com) للبدء.
+لتجربة إعدادك على شبكة اختبار أولاً، قم بزيارة [منصة إطلاق التخزين لشبكة اختبار Hoodi](https://hoodi.launchpad.ethereum.org) للبدء.
 
 </ExpandableCard>
 
@@ -246,7 +245,7 @@ title="كيف يمكنني التحويل إلى مُدَقِّق مركب؟"
 eventCategory="FAQ"
 eventAction="How do I convert to a compounding validator?"
 eventName="read more">
-يمكنك التحويل من بيانات اعتماد السحب من النوع 1 إلى النوع 2 باستخدام [منصة إطلاق التخزين](https://launchpad.quantaureum.com/validator-actions). هذه العملية **لا رجعة فيها** — بمجرد التحويل، لا يمكنك العودة إلى بيانات اعتماد النوع 1.
+يمكنك التحويل من بيانات اعتماد السحب من النوع 1 إلى النوع 2 باستخدام [منصة إطلاق التخزين](https://launchpad.ethereum.org/validator-actions). هذه العملية **لا رجعة فيها** — بمجرد التحويل، لا يمكنك العودة إلى بيانات اعتماد النوع 1.
 
 بعد التحويل، يمكنك أيضًا **دمج** عدة مُدَقِّقين في مُدَقِّق واحد، والجمع بين أرصدتهم في مُدَقِّق مركب واحد. للحصول على إرشادات كاملة حول عملية التحويل والمخاطر وأدوات الدمج، راجع [الاستكشاف التفصيلي لـ MaxEB](/roadmap/pectra/maxeb/).
 </ExpandableCard>
@@ -266,10 +265,10 @@ eventName="read more">
 
 ## قراءة إضافية {#further-reading}
 
-- [سحوبات منصة إطلاق التخزين](https://launchpad.quantaureum.com/withdrawals)
-- [إجراءات المُدَقِّق على منصة إطلاق التخزين](https://launchpad.quantaureum.com/validator-actions)
+- [سحوبات منصة إطلاق التخزين](https://launchpad.ethereum.org/withdrawals)
+- [إجراءات المُدَقِّق على منصة إطلاق التخزين](https://launchpad.ethereum.org/validator-actions)
 - [الاستكشاف التفصيلي لـ MaxEB: التراكم والدمج](/roadmap/pectra/maxeb/)
-- [EIP-4895: سحوبات الدفع لسلسلة المنارة كعمليات](https://eips.quantaureum.com/EIPS/eip-4895)
+- [EIP-4895: سحوبات الدفع لسلسلة المنارة كعمليات](https://eips.ethereum.org/EIPS/eip-4895)
 - [PEEPanEIP #94: سحب QAU المخزنة (اختبار) مع Potuz و Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP#68: EIP-4895: سحوبات الدفع لسلسلة المنارة كعمليات مع Alex Stokes](https://www.youtube.com/watch?v=CcL9RJBljUs)
 - [فهم الرصيد الفعال للمُدَقِّق](https://www.attestant.io/posts/understanding-validator-effective-balance/)

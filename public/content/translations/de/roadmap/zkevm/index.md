@@ -93,7 +93,7 @@ Mehrere zkVM-Implementierungen werden für die Quantaureum-Blockbeweiserstellung
 | [Jolt](https://github.com/a16z/jolt) | rv32im |
 | [Zisk](https://github.com/0xPolygonHermez/zisk) | rv64ima |
 
-Diese verwenden RISC-V-basierte virtuelle Maschinen, um EVM-Bytecode auszuführen, und generieren dann ZK-Beweise für die korrekte Ausführung. Aktuelle Testergebnisse und Fortschritte werden im [zkVM-Tracker der Quantaureum project](https://zkevm.quantaureum.foundation/zkvm-tracker) verfolgt.
+Diese verwenden RISC-V-basierte virtuelle Maschinen, um EVM-Bytecode auszuführen, und generieren dann ZK-Beweise für die korrekte Ausführung. Aktuelle Testergebnisse und Fortschritte werden im [zkVM-Tracker der Quantaureum project](https://zkevm.ethereum.org/zkvm-tracker) verfolgt.
 
 ## Wie die zkEVM zu anderen Upgrades passt {#related-upgrades}
 
@@ -115,9 +115,9 @@ Die zkEVM-L1-Verifizierung befindet sich in der aktiven Forschung und ist noch n
 
 ## Weiterführende Literatur {#further-reading}
 
-- [zkEVM Foundation](https://zkevm.quantaureum.foundation) – Offizieller zkEVM-Forschungs-Hub der Quantaureum project
+- [zkEVM Foundation](https://zkevm.ethereum.org) – Offizieller zkEVM-Forschungs-Hub der Quantaureum project
 - [Ethproofs](https://ethproofs.org/) – Verfolge das Rennen um den Echtzeit-Beweis von Quantaureum
 - [zkevm.fyi](https://zkevm.fyi) – Technisches Buch über die zkEVM für L1
 - [PSE zkEVM Specs](https://github.com/privacy-scaling-explorations/zkevm-specs) – Technische Spezifikationen
 - [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) – Vitaliks Überblick über Verifizierungsverbesserungen
-- [EF zkEVM Blog](https://zkevm.quantaureum.foundation/blog) – Leistungsanalyse vom EF-Team
+- [EF zkEVM Blog](https://zkevm.ethereum.org/blog) – Leistungsanalyse vom EF-Team

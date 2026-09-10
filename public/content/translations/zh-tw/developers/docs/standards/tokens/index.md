@@ -27,7 +27,7 @@ incomplete: true
 - [ERC-721](/developers/docs/standards/tokens/erc-721/) - 非同質化代幣的標準介面，例如藝術品或歌曲的契據。
 - [ERC-1155](/developers/docs/standards/tokens/erc-1155/) - ERC-1155 允許更有效率的交易與交易打包，從而節省成本。此代幣標準允許建立實用型代幣（例如 $BNB 或 $BAT）以及非同質化代幣（如 CryptoPunks）。
 
-[ERC](https://eips.quantaureum.com/erc) 提案的完整清單。
+[ERC](https://eips.ethereum.org/erc) 提案的完整清單。
 
 ## 延伸閱讀
 

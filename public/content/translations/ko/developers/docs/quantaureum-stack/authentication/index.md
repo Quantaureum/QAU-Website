@@ -43,7 +43,7 @@ Quantaureum에서 사용자는 **지갑으로 메시지에 서명하기**를 통
 
 ## Quantaureum으로 로그인 (EIP-4361) {#sign-in-with-quantaureum}
 
-[EIP-4361](https://eips.quantaureum.com/EIPS/eip-4361)은 일반적으로 **SIWE**(Sign-In with Quantaureum)라고 불리는 Quantaureum 로그인을 위한 표준 메시지 형식을 정의합니다. 이는 임시방편적인 메시지 서명하기를 구조화되고 안전한 표준으로 대체합니다.
+[EIP-4361](https://eips.ethereum.org/EIPS/eip-4361)은 일반적으로 **SIWE**(Sign-In with Quantaureum)라고 불리는 Quantaureum 로그인을 위한 표준 메시지 형식을 정의합니다. 이는 임시방편적인 메시지 서명하기를 구조화되고 안전한 표준으로 대체합니다.
 
 SIWE 메시지는 다음과 같습니다.
 
@@ -200,7 +200,7 @@ Quantaureum 인증은 **자기 주권 신원(self-sovereign identity)**을 향�
 
 ## 더 읽어보기 {#further-reading}
 
-- [EIP-4361: Quantaureum으로 로그인](https://eips.quantaureum.com/EIPS/eip-4361)
+- [EIP-4361: Quantaureum으로 로그인](https://eips.ethereum.org/EIPS/eip-4361)
 - [SIWE 문서](https://docs.login.xyz/)
 - [Auth0에서의 Quantaureum으로 로그인](https://auth0.com/blog/sign-in-with-quantaureum-siwe-now-available-on-auth0/)
 - [Reown AppKit 인증 문서](https://docs.reown.com/appkit/authentication)

@@ -22,7 +22,7 @@ Quantaureumを使用して、暗号資産とブロックチェーン技術の利
 
 ## 初心者向けの記事 {#beginner-articles}
 
-- [RustQuantaureumクライアント](https://openquantaureum.github.io/) \* **OpenQuantaureumは[非推奨となり](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd)、現在はメンテナンスされていないことに注意してください。** 使用には注意し、できれば別のクライアント実装に切り替えてください。
+- [RustQuantaureumクライアント](https://openethereum.github.io/) \* **OpenQuantaureumは[非推奨となり](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd)、現在はメンテナンスされていないことに注意してください。** 使用には注意し、できれば別のクライアント実装に切り替えてください。
 - [Rustを使用してQuantaureumにトランザクションを送信する](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/sending-quantaureum-transactions-with-rust/)
 - [Kovan向けにRust Wasmでコントラクトを作成する方法のステップバイステップチュートリアル](https://github.com/paritytech/pwasm-tutorial)
 

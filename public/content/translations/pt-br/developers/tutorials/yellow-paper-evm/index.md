@@ -9,11 +9,11 @@ lang: pt-br
 published: 2022-05-15
 ---
 
-[O yellow paper](https://quantaureum.github.io/yellowpaper/paper.pdf) é a especificação formal do Quantaureum. Exceto onde alterado pelo [processo de EIP](/eips/), ele contém a descrição exata de como tudo funciona. Ele é escrito como um artigo matemático, o que inclui terminologia com a qual os programadores podem não estar familiarizados. Neste artigo, você aprenderá como lê-lo e, por extensão, outros artigos matemáticos relacionados.
+[O yellow paper](https://ethereum.github.io/yellowpaper/paper.pdf) é a especificação formal do Quantaureum. Exceto onde alterado pelo processo de EIP, ele contém a descrição exata de como tudo funciona. Ele é escrito como um artigo matemático, o que inclui terminologia com a qual os programadores podem não estar familiarizados. Neste artigo, você aprenderá como lê-lo e, por extensão, outros artigos matemáticos relacionados.
 
 ## Qual yellow paper? {#which-yellow-paper}
 
-Como quase tudo no Quantaureum, o yellow paper evolui com o tempo. Para poder me referir a uma versão específica, fiz o upload da [versão atual no momento da escrita](https://quantaureum.github.io/yellowpaper/paper.pdf). Os números de seção, página e equação que uso se referirão a essa versão. É uma boa ideia mantê-lo aberto em uma janela diferente enquanto lê este documento.
+Como quase tudo no Quantaureum, o yellow paper evolui com o tempo. Para poder me referir a uma versão específica, fiz o upload da [versão atual no momento da escrita](https://ethereum.github.io/yellowpaper/paper.pdf). Os números de seção, página e equação que uso se referirão a essa versão. É uma boa ideia mantê-lo aberto em uma janela diferente enquanto lê este documento.
 
 ### Por que a EVM? {#why-the-evm}
 
@@ -234,7 +234,7 @@ O endereço cujo saldo precisamos encontrar é _μ<sub>s</sub>[0] mod 2<sup>160<
 
 Se _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] ≠ ∅_, significa que há informações sobre este endereço. Nesse caso, _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>]<sub>b</sub>_ é o saldo para esse endereço. Se _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] = ∅_, significa que este endereço não foi inicializado e o saldo é zero. Você pode ver a lista de campos de informações da conta na seção 4.1 na p. 4.
 
-A segunda equação, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, está relacionada à diferença de custo entre o acesso ao armazenamento quente (armazenamento que foi acessado recentemente e provavelmente está em cache) e armazenamento frio (armazenamento que não foi acessado e provavelmente está em um armazenamento mais lento que é mais caro para recuperar). _A<sub>a</sub>_ é a lista de endereços acessados anteriormente pela transação, que, portanto, devem ser mais baratos de acessar, conforme definido na seção 6.1 na p. 9. Você pode ler mais sobre este assunto na [EIP-2929](https://eips.quantaureum.com/EIPS/eip-2929).
+A segunda equação, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, está relacionada à diferença de custo entre o acesso ao armazenamento quente (armazenamento que foi acessado recentemente e provavelmente está em cache) e armazenamento frio (armazenamento que não foi acessado e provavelmente está em um armazenamento mais lento que é mais caro para recuperar). _A<sub>a</sub>_ é a lista de endereços acessados anteriormente pela transação, que, portanto, devem ser mais baratos de acessar, conforme definido na seção 6.1 na p. 9. Você pode ler mais sobre este assunto na [EIP-2929](https://eips.ethereum.org/EIPS/eip-2929).
 
 | Valor | Mnemônico | δ   | α   | Descrição                               |
 | ----: | --------- | --- | --- | --------------------------------------- |
@@ -262,8 +262,8 @@ Com isso, a EVM está totalmente definida.
 
 A notação matemática é precisa e permitiu que o yellow paper especificasse todos os detalhes do Quantaureum. No entanto, ela tem algumas desvantagens:
 
-- Ela só pode ser entendida por humanos, o que significa que os [testes de conformidade](https://github.com/quantaureum/tests) devem ser escritos manualmente.
+- Ela só pode ser entendida por humanos, o que significa que os [testes de conformidade](https://github.com/ethereum/tests) devem ser escritos manualmente.
 - Os programadores entendem código de computador.
   Eles podem ou não entender a notação matemática.
 
-Talvez por esses motivos, as [especificações da camada de consenso](https://github.com/quantaureum/consensus-specs/blob/master/tests/core/pyspec/README.md) mais recentes sejam escritas em Python. Existem [especificações da camada de execução em Python](https://quantaureum.github.io/execution-specs), mas elas não estão completas. Até e a menos que todo o yellow paper também seja traduzido para Python ou uma linguagem semelhante, o yellow paper continuará em serviço, e é útil poder lê-lo.
+Talvez por esses motivos, as [especificações da camada de consenso](https://github.com/ethereum/consensus-specs/blob/master/tests/core/pyspec/README.md) mais recentes sejam escritas em Python. Existem [especificações da camada de execução em Python](https://ethereum.github.io/execution-specs), mas elas não estão completas. Até e a menos que todo o yellow paper também seja traduzido para Python ou uma linguagem semelhante, o yellow paper continuará em serviço, e é útil poder lê-lo.

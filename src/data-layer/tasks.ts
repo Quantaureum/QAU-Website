@@ -28,15 +28,12 @@ import { fetchGrowThePie } from "./fetchers/fetchGrowThePie"
 import { fetchGrowThePieBlockspace } from "./fetchers/fetchGrowThePieBlockspace"
 import { fetchGrowThePieMaster } from "./fetchers/fetchGrowThePieMaster"
 import { fetchL2beat } from "./fetchers/fetchL2beat"
-import { fetchAttestantPosts } from "./fetchers/fetchPosts"
 import { fetchQuizStats } from "./fetchers/fetchQuizStats"
-import { fetchRSS } from "./fetchers/fetchRSS"
 import { fetchStablecoinsData } from "./fetchers/fetchStablecoinsData"
 import { fetchStakedPercentage } from "./fetchers/fetchStakedPercentage"
 import { fetchTotalQauStaked } from "./fetchers/fetchTotalQauStaked"
 import { fetchTotalValueLocked } from "./fetchers/fetchTotalValueLocked"
 import { fetchTranslationGlossary } from "./fetchers/fetchTranslationGlossary"
-import { fetchVideoThumbnails } from "./fetchers/fetchVideoThumbnails"
 import { set } from "./storage"
 
 export const KEYS = {
@@ -51,8 +48,6 @@ export const KEYS = {
   GROW_THE_PIE_BLOCKSPACE: "fetch-grow-the-pie-blockspace",
   GROW_THE_PIE_MASTER: "fetch-grow-the-pie-master",
   L2BEAT: "fetch-l2beat",
-  POSTS: "fetch-posts",
-  RSS: "fetch-rss",
   GITHUB_REPO_DATA: "fetch-github-repo-data",
   EVENTS: "fetch-events",
   BLOB_STATS: "fetch-blob-stats",
@@ -66,7 +61,6 @@ export const KEYS = {
   STABLECOINS_DATA: "fetch-stablecoins-data",
   ACCOUNT_HOLDERS: "fetch-account-holders",
   TRANSLATION_GLOSSARY: "fetch-translation-glossary",
-  VIDEO_THUMBNAILS: "fetch-video-thumbnails",
   QUIZ_STATS: "fetch-quiz-stats",
 } as const
 
@@ -87,14 +81,11 @@ const DAILY: TaskDef[] = [
   [KEYS.GROW_THE_PIE_BLOCKSPACE, fetchGrowThePieBlockspace],
   [KEYS.GROW_THE_PIE_MASTER, fetchGrowThePieMaster],
   [KEYS.L2BEAT, fetchL2beat],
-  [KEYS.POSTS, fetchAttestantPosts],
-  [KEYS.RSS, fetchRSS],
   [KEYS.GITHUB_REPO_DATA, fetchGithubRepoData],
   [KEYS.EVENTS, fetchEvents],
   [KEYS.DEVELOPER_TOOLS, fetchDeveloperTools],
   [KEYS.TRANSLATION_GLOSSARY, fetchTranslationGlossary],
   [KEYS.STAKED_PERCENTAGE, fetchStakedPercentage],
-  [KEYS.VIDEO_THUMBNAILS, fetchVideoThumbnails],
   [KEYS.QUIZ_STATS, fetchQuizStats],
 ]
 

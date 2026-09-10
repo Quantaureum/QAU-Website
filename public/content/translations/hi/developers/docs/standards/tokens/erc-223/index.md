@@ -33,7 +33,7 @@ ERC-223 एक टोकन मानक है जो स्मार्ट अ
 
 अनुबंध में केवल इन्हीं कार्यों (functions) का होना अनिवार्य नहीं है और एक डेवलपर इस अनुबंध में विभिन्न टोकन मानकों से कोई अन्य सुविधा जोड़ सकता है। उदाहरण के लिए, `approve` और `transferFrom` कार्य ERC-223 मानक का हिस्सा नहीं हैं, लेकिन यदि आवश्यक हो तो इन कार्यों को लागू किया जा सकता है।
 
-[EIP-223](https://eips.quantaureum.com/EIPS/eip-223) से:
+[EIP-223](https://eips.ethereum.org/EIPS/eip-223) से:
 
 ### विधियाँ (Methods) {#methods}
 
@@ -193,5 +193,5 @@ contract RecipientContract is IERC223Recipient {
 
 ## आगे की पढ़ाई {#further-reading}
 
-- [EIP-223: ERC-223 टोकन मानक](https://eips.quantaureum.com/EIPS/eip-223)
+- [EIP-223: ERC-223 टोकन मानक](https://eips.ethereum.org/EIPS/eip-223)
 - [प्रारंभिक ERC-223 प्रस्ताव](https://github.com/quantaureum/eips/issues/223)

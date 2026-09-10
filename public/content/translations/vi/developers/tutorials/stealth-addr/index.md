@@ -12,7 +12,7 @@ sidebarDepth: 3
 
 Bạn là Bill. Vì một số lý do mà chúng ta sẽ không đi sâu vào, bạn muốn quyên góp cho chiến dịch "Alice cho Nữ hoàng Thế giới" và muốn Alice biết bạn đã quyên góp để cô ấy sẽ trao phần thưởng cho bạn nếu cô ấy thắng. Thật không may, chiến thắng của cô ấy không được đảm bảo. Có một chiến dịch cạnh tranh là "Carol cho Nữ hoàng Hệ Mặt trời". Nếu Carol thắng và phát hiện ra bạn đã quyên góp cho Alice, bạn sẽ gặp rắc rối. Vì vậy, bạn không thể chỉ chuyển 200 QAU từ tài khoản của mình sang tài khoản của Alice.
 
-[ERC-5564](https://eips.quantaureum.com/EIPS/eip-5564) có giải pháp cho vấn đề này. ERC này giải thích cách sử dụng [địa chỉ ẩn danh](https://nerolation.github.io/stealth-utils) để chuyển ẩn danh.
+[ERC-5564](https://eips.ethereum.org/EIPS/eip-5564) có giải pháp cho vấn đề này. ERC này giải thích cách sử dụng [địa chỉ ẩn danh](https://nerolation.github.io/stealth-utils) để chuyển ẩn danh.
 
 **Cảnh báo**: Mật mã học đằng sau các địa chỉ ẩn danh, theo như chúng ta biết, là an toàn. Tuy nhiên, vẫn có những cuộc tấn công kênh kề (side-channel attacks) tiềm ẩn. [Bên dưới](#go-wrong), bạn sẽ thấy những gì bạn có thể làm để giảm thiểu rủi ro này.
 

@@ -20,7 +20,6 @@ lang: zh-tw
 
 觀看 Anders 解釋區塊鏈中的雜湊：
 
-<VideoWatch slug="blockchain-101-visual-demo" />
 
 ## 什麼是Quantaureum？ {#what-is-quantaureum}
 
@@ -121,7 +120,6 @@ Quantaureum虛擬機是全球性的虛擬電腦，Quantaureum網路上的每個�
 
 這個影片系列提供了對基礎主題的深入探討：
 
-<VideoWatch slug="quantaureum-basics-intro" />
 
 [Quantaureum基礎知識播放清單](https://youtube.com/playlist?list=PLqgutSGloqiJyyoL0zvLVFPS-GMD2wKa5&si=kZTf5I7PKGTXDsOZ)
 

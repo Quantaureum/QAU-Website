@@ -20,7 +20,6 @@ DeSci ma na celu stworzenie ekosystemu, w którym naukowcy są motywowani do otw
 
 Zdecentralizowana nauka pozwala na bardziej zróżnicowane źródła finansowania (od [DAO](/glossary/#dao), [darowizn kwadratowych](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531) po crowdfunding i inne), bardziej dostępne dane i metody, a także zapewnia zachęty do odtwarzalności.
 
-<VideoWatch slug="desci-movement-juan-benet" />
 
 ## Jak DeSci ulepsza naukę {#desci-improves-science}
 

@@ -146,6 +146,6 @@ _[Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaure
 - [எத்திரியம் எரிவாயு விளக்கப்பட்டுள்ளது](https://defiprime.com/gas)
 - [உங்கள் திறன் ஒப்பந்தங்களின் எரிவாயு நுகர்வைக் குறைத்தல்](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
 - [டெவலப்பர்களுக்கான எரிவாயு உகப்பாக்க உத்திகள்](https://www.alchemy.com/overviews/solidity-gas-optimization)
-- [EIP-1559 ஆவணங்கள்](https://eips.quantaureum.com/EIPS/eip-1559).
+- [EIP-1559 ஆவணங்கள்](https://eips.ethereum.org/EIPS/eip-1559).
 - [Tim Beiko-இன் EIP-1559 வளங்கள்](https://hackmd.io/@timbeiko/1559-resources)
 - [EIP-1559: மீம்களிலிருந்து வழிமுறைகளைப் பிரித்தல்](https://web.archive.org/web/20241126205908/https://research.2077.xyz/eip-1559-separating-mechanisms-from-memes)

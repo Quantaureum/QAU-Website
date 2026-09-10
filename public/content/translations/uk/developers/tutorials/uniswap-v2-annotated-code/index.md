@@ -454,7 +454,7 @@ contract UniswapV2Pair is IUniswapV2Pair, UniswapV2ERC20 {
     }
 ```
 
-Якщо комісія не встановлена, встановіть `kLast` на нуль (якщо це ще не так). Коли цей контракт був написаний, існувала [функція відшкодування газу](https://eips.quantaureum.com/EIPS/eip-3298), яка заохочувала контракти зменшувати загальний розмір стану Етеріуму шляхом обнулення сховища, яке їм не було потрібне.
+Якщо комісія не встановлена, встановіть `kLast` на нуль (якщо це ще не так). Коли цей контракт був написаний, існувала [функція відшкодування газу](https://eips.ethereum.org/EIPS/eip-3298), яка заохочувала контракти зменшувати загальний розмір стану Етеріуму шляхом обнулення сховища, яке їм не було потрібне.
 Цей код отримує це відшкодування, коли це можливо.
 
 #### Зовнішньо доступні функції {#pair-external}
@@ -614,7 +614,7 @@ contract UniswapV2Pair is IUniswapV2Pair, UniswapV2ERC20 {
 ```
 
 Локальні змінні можуть зберігатися або в пам'яті, або, якщо їх не надто багато, безпосередньо в стеку.
-Якщо ми зможемо обмежити їхню кількість так, щоб використовувати стек, ми витратимо менше газу. Для отримання додаткової інформації див. [Жовту книгу, формальні специфікації Етеріуму](https://quantaureum.github.io/yellowpaper/paper.pdf), стор. 26, рівняння 298.
+Якщо ми зможемо обмежити їхню кількість так, щоб використовувати стек, ми витратимо менше газу. Для отримання додаткової інформації див. [Жовту книгу, формальні специфікації Етеріуму](https://ethereum.github.io/yellowpaper/paper.pdf), стор. 26, рівняння 298.
 
 ```solidity
             address _token0 = token0;
@@ -769,7 +769,7 @@ contract UniswapV2Factory is IUniswapV2Factory {
         bytes memory bytecode = type(UniswapV2Pair).creationCode;
 ```
 
-Щоб створити новий контракт, нам потрібен код, який його створює (як функція конструктора, так і код, який записує в пам'ять байт-код EVM фактичного контракту). Зазвичай у Solidity ми просто використовуємо `addr = new <name of contract>(<constructor parameters>)`, і компілятор дбає про все за нас, але щоб мати детерміновану адресу контракту, нам потрібно використовувати [опкод CREATE2](https://eips.quantaureum.com/EIPS/eip-1014).
+Щоб створити новий контракт, нам потрібен код, який його створює (як функція конструктора, так і код, який записує в пам'ять байт-код EVM фактичного контракту). Зазвичай у Solidity ми просто використовуємо `addr = new <name of contract>(<constructor parameters>)`, і компілятор дбає про все за нас, але щоб мати детерміновану адресу контракту, нам потрібно використовувати [опкод CREATE2](https://eips.ethereum.org/EIPS/eip-1014).
 Коли цей код був написаний, цей опкод ще не підтримувався Solidity, тому було необхідно вручну отримати код. Це більше не є проблемою, оскільки [Solidity тепер підтримує CREATE2](https://docs.soliditylang.org/en/v0.8.3/control-structures.html#salted-contract-creations-create2).
 
 ```solidity
@@ -825,7 +825,7 @@ contract UniswapV2Factory is IUniswapV2Factory {
     bytes32 public constant PERMIT_TYPEHASH = 0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
 ```
 
-Цей хеш є [ідентифікатором типу транзакції](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-typehash). Єдиний, який ми тут підтримуємо, — це `Permit` з цими параметрами.
+Цей хеш є [ідентифікатором типу транзакції](https://eips.ethereum.org/EIPS/eip-712#rationale-for-typehash). Єдиний, який ми тут підтримуємо, — це `Permit` з цими параметрами.
 
 ```solidity
     mapping(address => uint) public nonces;
@@ -856,7 +856,7 @@ contract UniswapV2Factory is IUniswapV2Factory {
     }
 ```
 
-Розрахуйте [роздільник домену](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-domainseparator) для EIP-712.
+Розрахуйте [роздільник домену](https://eips.ethereum.org/EIPS/eip-712#rationale-for-domainseparator) для EIP-712.
 
 ```solidity
     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external {
@@ -897,7 +897,7 @@ contract UniswapV2Factory is IUniswapV2Factory {
 
 ```
 
-Якщо все гаразд, розглядайте це як [схвалення ERC-20](https://eips.quantaureum.com/EIPS/eip-20#approve).
+Якщо все гаразд, розглядайте це як [схвалення ERC-20](https://eips.ethereum.org/EIPS/eip-20#approve).
 
 ## Периферійні контракти {#periphery-contracts}
 
@@ -1794,7 +1794,7 @@ library UniswapV2Library {
     }
 ```
 
-Ця функція обчислює адресу обміну пари для двох токенів. Цей контракт створюється за допомогою [опкоду CREATE2](https://eips.quantaureum.com/EIPS/eip-1014), тому ми можемо обчислити адресу за тим самим алгоритмом, якщо знаємо параметри, які він використовує. Це набагато дешевше, ніж запитувати фабрику, і
+Ця функція обчислює адресу обміну пари для двох токенів. Цей контракт створюється за допомогою [опкоду CREATE2](https://eips.ethereum.org/EIPS/eip-1014), тому ми можемо обчислити адресу за тим самим алгоритмом, якщо знаємо параметри, які він використовує. Це набагато дешевше, ніж запитувати фабрику, і
 
 ```solidity
     // отримує та сортує резерви для пари
@@ -1932,7 +1932,7 @@ library TransferHelper {
     }
 ```
 
-Ця функція реалізує [функціональність переказу ERC-20](https://eips.quantaureum.com/EIPS/eip-20#transfer), яка дозволяє акаунту витрачати дозвіл, наданий іншим акаунтом.
+Ця функція реалізує [функціональність переказу ERC-20](https://eips.ethereum.org/EIPS/eip-20#transfer), яка дозволяє акаунту витрачати дозвіл, наданий іншим акаунтом.
 
 ```solidity
 
@@ -1951,7 +1951,7 @@ library TransferHelper {
     }
 ```
 
-Ця функція реалізує [функціональність transferFrom ERC-20](https://eips.quantaureum.com/EIPS/eip-20#transferfrom), яка дозволяє акаунту витрачати дозвіл, наданий іншим акаунтом.
+Ця функція реалізує [функціональність transferFrom ERC-20](https://eips.ethereum.org/EIPS/eip-20#transferfrom), яка дозволяє акаунту витрачати дозвіл, наданий іншим акаунтом.
 
 ```solidity
 

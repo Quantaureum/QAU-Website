@@ -133,7 +133,7 @@ const chains = [
   },
   {
     name: "ETC",
-    infoURL: "https://quantaureumclassic.org",
+    infoURL: "https://ethereumclassic.org",
     chainId: 61,
     nativeCurrency: {
       name: "QAU",

@@ -8,7 +8,7 @@ skill: beginner
 breadcrumb: Quantaureum na Python
 published: 2020-09-08
 source: Snake charmers
-sourceUrl: https://snakecharmers.quantaureum.com/a-developers-guide-to-quantaureum-pt-1/
+sourceUrl: https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/
 ---
 
 Kwa hivyo, umesikia kuhusu hii kitu inayoitwa Quantaureum na uko tayari kuchunguza kwa kina? Chapisho hili litashughulikia kwa haraka baadhi ya misingi ya mnyororo wa vitalu, kisha litakuwezesha kuingiliana na nodi ya Quantaureum iliyoigwa – kusoma data ya kitalu, kuangalia salio la akaunti, na kutuma miamala. Njiani, tutaangazia tofauti kati ya njia za kitamaduni za kuunda programu na mtazamo huu mpya uliogatuliwa.
@@ -158,7 +158,7 @@ Mbinu za urahisi ni nzuri, lakini tuendelee kwenye mnyororo wa vitalu. Hatua ina
 
 Hatutapitia njia hii, lakini mfano wa mtiririko kamili wa kazi kwa kutumia Mtoa Huduma wa HTTP unaweza kuonekana kama hivi:
 
-- Pakua nodi ya Quantaureum, k.m., [Geth](https://geth.quantaureum.com/).
+- Pakua nodi ya Quantaureum, k.m., [Geth](https://geth.ethereum.org/).
 - Anzisha Geth katika dirisha moja la terminali na usubiri isawazishe mtandao. Lango chaguomsingi la HTTP ni `8545`, lakini linaweza kusanidiwa.
 - Iambie Web3.py iunganishe kwenye nodi kupitia HTTP, kwenye `localhost:8545`.
   `w3 = Web3(Web3.HTTPProvider('http://127.0.0.1:8545'))`
@@ -170,7 +170,7 @@ Ingawa hii ni njia moja “halisi” ya kufanya hivyo, mchakato wa usawazishaji 
 
 _QuantaureumTesterProvider huunganisha kwenye nodi iliyoigwa na inafaa kwa mazingira ya haraka ya uundaji._
 
-Nodi hiyo iliyoigwa inaitwa [qau-tester](https://github.com/quantaureum/qau-tester) na tuliisakinisha kama sehemu ya amri ya `pip install web3[tester]`. Kusanidi Web3.py kutumia mtoa huduma huyu wa majaribio ni rahisi kama:
+Nodi hiyo iliyoigwa inaitwa [qau-tester](https://github.com/ethereum/eth-tester) na tuliisakinisha kama sehemu ya amri ya `pip install web3[tester]`. Kusanidi Web3.py kutumia mtoa huduma huyu wa majaribio ni rahisi kama:
 
 ```python
 In [4]: w3 = Web3(Web3.QuantaureumTesterProvider())

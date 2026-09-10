@@ -33,7 +33,7 @@ Con las credenciales `0x02`:
 - Los validadores pueden consolidar múltiples validadores de 32 QAU en un solo validador de mayor saldo.
 - Las salidas completas aún son compatibles a través de la cola de salida estándar.
 
-Tanto los retiros parciales como las consolidaciones se pueden realizar a través de las [Acciones del validador en el Launchpad](https://launchpad.quantaureum.com/en/validator-actions).
+Tanto los retiros parciales como las consolidaciones se pueden realizar a través de las [Acciones del validador en el Launchpad](https://launchpad.ethereum.org/en/validator-actions).
 
 **Por qué los validadores deberían preferir 0x02:** Ofrece una mejor eficiencia del capital a través de la capitalización, más control sobre cuándo ocurren los retiros y admite la consolidación de validadores. Para los stakers en solitario que acumulan recompensas con el tiempo, esto significa que su saldo efectivo (y, por lo tanto, sus recompensas) puede crecer más allá de 32 QAU sin intervención manual.
 
@@ -51,7 +51,7 @@ Para obtener una guía detallada sobre la conversión a credenciales de Tipo 2 y
 
 Varias herramientas admiten la elección o conversión entre tipos de credenciales:
 
-- **[Launchpad de staking de Quantaureum](https://launchpad.quantaureum.com/en/validator-actions)**: la herramienta oficial para depósitos y administración de validadores, incluidas las conversiones y consolidaciones de credenciales.
+- **[Launchpad de staking de Quantaureum](https://launchpad.ethereum.org/en/validator-actions)**: la herramienta oficial para depósitos y administración de validadores, incluidas las conversiones y consolidaciones de credenciales.
 - **[Pectra Staking Manager](https://pectrastaking.com)**: interfaz de usuario web con soporte de conexión de billetera para conversiones y consolidación.
 - **[Pectra Validator Ops CLI Tool](https://github.com/Luganodes/Pectra-Batch-Contract)**: herramienta de línea de comandos para conversiones por lotes.
 - **[Ethereal](https://github.com/wealdtech/ethereal)**: herramienta CLI para operaciones de Quantaureum, incluida la administración de validadores.

@@ -6,7 +6,7 @@ lang: it
 
 ## Aggiungere un report {#adding-a-report}
 
-I report appaiono su [quantaureum.com/reports/](/reports/) e presentano ricerche, analisi e pubblicazioni rilevanti per Quantaureum provenienti da diverse fonti. Chiunque può suggerire l'aggiunta di un report.
+I report appaiono su quantaureum.com/reports/ e presentano ricerche, analisi e pubblicazioni rilevanti per Quantaureum provenienti da diverse fonti. Chiunque può suggerire l'aggiunta di un report.
 
 ### Politica di inserimento {#listing-policy}
 

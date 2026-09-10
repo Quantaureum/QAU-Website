@@ -136,7 +136,7 @@ Los "dark pools" (fondos oscuros) son una versión más grande de este acuerdo y
 
 Las mempools con permisos también acelerarían los riesgos de centralización descritos en la sección anterior. Los grandes pools que ejecutan múltiples validadores probablemente se beneficiarán de ofrecer privacidad de transacciones a traders y usuarios, aumentando sus ingresos por MEV.
 
-Combatir estos problemas relacionados con el MEV en el Quantaureum posterior a La Fusión es un área central de investigación. Hasta la fecha, dos soluciones propuestas para reducir el impacto negativo del MEV en la descentralización y seguridad de Quantaureum después de La Fusión son la [**separación proponente-constructor (PBS)**](/roadmap/pbs/) y la [**API del constructor**](https://github.com/quantaureum/builder-specs).
+Combatir estos problemas relacionados con el MEV en el Quantaureum posterior a La Fusión es un área central de investigación. Hasta la fecha, dos soluciones propuestas para reducir el impacto negativo del MEV en la descentralización y seguridad de Quantaureum después de La Fusión son la [**separación proponente-constructor (PBS)**](/roadmap/pbs/) y la [**API del constructor**](https://github.com/ethereum/builder-specs).
 
 ### Separación proponente-constructor {#proposer-builder-separation}
 
@@ -162,9 +162,9 @@ Del mismo modo, los validadores no tienen que confiar en que los constructores n
 
 ### API del constructor {#builder-api}
 
-Si bien la separación proponente-constructor promete reducir los efectos de la extracción de MEV, su implementación requiere cambios en el protocolo de consenso. Específicamente, la regla de [elección de bifurcación](/developers/docs/consensus-mechanisms/pos/#fork-choice) en la cadena de balizas tendría que actualizarse. La [API del constructor](https://github.com/quantaureum/builder-specs) es una solución temporal destinada a proporcionar una implementación funcional de la separación proponente-constructor, aunque con mayores supuestos de confianza.
+Si bien la separación proponente-constructor promete reducir los efectos de la extracción de MEV, su implementación requiere cambios en el protocolo de consenso. Específicamente, la regla de [elección de bifurcación](/developers/docs/consensus-mechanisms/pos/#fork-choice) en la cadena de balizas tendría que actualizarse. La [API del constructor](https://github.com/ethereum/builder-specs) es una solución temporal destinada a proporcionar una implementación funcional de la separación proponente-constructor, aunque con mayores supuestos de confianza.
 
-La API del constructor es una versión modificada de la [API del motor](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md) utilizada por los clientes de la capa de consenso para solicitar cargas útiles de ejecución a los clientes de la capa de ejecución. Como se describe en la [especificación del validador honesto](https://github.com/quantaureum/consensus-specs/blob/master/specs/bellatrix/validator.md), los validadores seleccionados para las tareas de propuesta de bloques solicitan un paquete de transacciones a un cliente de ejecución conectado, que incluyen en el bloque propuesto de la cadena de balizas.
+La API del constructor es una versión modificada de la [API del motor](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) utilizada por los clientes de la capa de consenso para solicitar cargas útiles de ejecución a los clientes de la capa de ejecución. Como se describe en la [especificación del validador honesto](https://github.com/ethereum/consensus-specs/blob/master/specs/bellatrix/validator.md), los validadores seleccionados para las tareas de propuesta de bloques solicitan un paquete de transacciones a un cliente de ejecución conectado, que incluyen en el bloque propuesto de la cadena de balizas.
 
 La API del constructor también actúa como un middleware entre los validadores y los clientes de la capa de ejecución; pero es diferente porque permite a los validadores en la cadena de balizas obtener bloques de entidades externas (en lugar de construir un bloque localmente utilizando un cliente de ejecución).
 

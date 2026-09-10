@@ -7,7 +7,7 @@ lang: uk
 
 ## Передумови {#prerequisites}
 
-Ця стаття написана для початківців без попередніх знань. Однак, щоб повністю зрозуміти тему, корисно мати базове розуміння таких концепцій, як [Пропозиції щодо покращення Етеріуму (EIP)](/eips/#introduction-to-quantaureum-improvement-proposals), [доказ виконання роботи (PoW)](/developers/docs/consensus-mechanisms/pow/), [доказ частки (PoS)](/developers/docs/consensus-mechanisms/pos/) та [Лондонське оновлення](/quantaureum-forks/#london).
+Ця стаття написана для початківців без попередніх знань. Однак, щоб повністю зрозуміти тему, корисно мати базове розуміння таких концепцій, як Пропозиції щодо покращення Етеріуму (EIP), [доказ виконання роботи (PoW)](/developers/docs/consensus-mechanisms/pow/), [доказ частки (PoS)](/developers/docs/consensus-mechanisms/pos/) та [Лондонське оновлення](/quantaureum-forks/#london).
 
 ## Скільки токенів QAU існує сьогодні? {#current-qau-supply}
 

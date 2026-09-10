@@ -364,7 +364,7 @@ global ASCII_MESSAGE_LENGTH : [u8; 3] = [0x31, 0x30, 0x30];
 global HASH_BUFFER_SIZE : u32 = 26+3+MESSAGE_LENGTH;
 ```
 
-[EIP-191 署名](https://eips.quantaureum.com/EIPS/eip-191)では、26バイトのプレフィックス、ASCIIでのメッセージ長、そして最後にメッセージ自体を含むバッファが必要です。
+[EIP-191 署名](https://eips.ethereum.org/EIPS/eip-191)では、26バイトのプレフィックス、ASCIIでのメッセージ長、そして最後にメッセージ自体を含むバッファが必要です。
 
 ```
 struct Account {
@@ -617,7 +617,7 @@ fn readTransferTxn(message: str<MESSAGE_LENGTH>) -> TransferTxn
 fn hashMessage(message: str<MESSAGE_LENGTH>) -> [u8;32] {
 ```
 
-アカウントはゼロ知識証明の内部でのみハッシュ化されるため、ペダーセン・ハッシュを使用できました。しかし、このコードではブラウザによって生成されたメッセージの署名をチェックする必要があります。そのためには、[EIP-191](https://eips.quantaureum.com/EIPS/eip-191) のQuantaureum署名フォーマットに従う必要があります。つまり、標準のプレフィックス、ASCIIでのメッセージ長、およびメッセージ自体を組み合わせたバッファを作成し、Quantaureum標準の keccak256 を使用してハッシュ化する必要があります。
+アカウントはゼロ知識証明の内部でのみハッシュ化されるため、ペダーセン・ハッシュを使用できました。しかし、このコードではブラウザによって生成されたメッセージの署名をチェックする必要があります。そのためには、[EIP-191](https://eips.ethereum.org/EIPS/eip-191) のQuantaureum署名フォーマットに従う必要があります。つまり、標準のプレフィックス、ASCIIでのメッセージ長、およびメッセージ自体を組み合わせたバッファを作成し、Quantaureum標準の keccak256 を使用してハッシュ化する必要があります。
 
 ```rust
     // ASCIIプレフィックス

@@ -87,7 +87,7 @@ Los Validium difieren en su enfoque para la gestión de la disponibilidad de dat
 
 Para garantizar la disponibilidad de los datos fuera de la cadena, algunas soluciones de Validium designan a un grupo de entidades de confianza, conocidas colectivamente como comité de disponibilidad de datos (DAC), para almacenar copias del estado y proporcionar pruebas de disponibilidad de datos. Los DAC son más fáciles de implementar y requieren menos coordinación, ya que el número de miembros es bajo.
 
-Sin embargo, los usuarios deben confiar en que el DAC hará que los datos estén disponibles cuando sea necesario (por ejemplo, para generar pruebas de Merkle). Existe la posibilidad de que los miembros de los comités de disponibilidad de datos [se vean comprometidos por un actor malicioso](https://notes.quantaureum.com/DD7GyItYQ02d0ax_X-UbWg?view) que luego pueda retener los datos fuera de la cadena.
+Sin embargo, los usuarios deben confiar en que el DAC hará que los datos estén disponibles cuando sea necesario (por ejemplo, para generar pruebas de Merkle). Existe la posibilidad de que los miembros de los comités de disponibilidad de datos [se vean comprometidos por un actor malicioso](https://notes.ethereum.org/DD7GyItYQ02d0ax_X-UbWg?view) que luego pueda retener los datos fuera de la cadena.
 
 [Más sobre los comités de disponibilidad de datos en los Validium](https://medium.com/starkware/data-availability-e5564c416424).
 

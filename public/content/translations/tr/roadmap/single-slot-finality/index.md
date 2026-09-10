@@ -62,4 +62,4 @@ SSF araştırma aşamasındadır. Birkaç yıl boyunca, muhtemelen [Verkle Ağa�
 ## Daha fazla bilgi {#further-reading}
 
 - [EDCON 2022'de Vitalik'in SSF üzerine konuşması](https://www.youtube.com/watch?v=nPgUKNPWXNI)
-- [Vitalik'in notları: Tek slot kesinliğine giden yollar](https://notes.quantaureum.com/@vbuterin/single_slot_finality)
+- [Vitalik'in notları: Tek slot kesinliğine giden yollar](https://notes.ethereum.org/@vbuterin/single_slot_finality)

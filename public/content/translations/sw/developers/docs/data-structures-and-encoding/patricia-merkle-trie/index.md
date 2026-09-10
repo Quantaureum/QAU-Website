@@ -251,13 +251,13 @@ else:
   value = TxType | encode(tx)
 ```
 
-Maelezo zaidi kuhusu hili yanaweza kupatikana katika nyaraka za [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718).
+Maelezo zaidi kuhusu hili yanaweza kupatikana katika nyaraka za [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718).
 
 ### Trie ya Stakabadhi {#receipts-trie}
 
 Kila kitalu kina trie yake ya Stakabadhi. `path` hapa ni: `rlp(transactionIndex)`. `transactionIndex` ni faharisi yake ndani ya kitalu ilimojumuishwa. Trie ya stakabadhi haisasishwi kamwe. Sawa na trie ya Miamala, kuna stakabadhi za sasa na za zamani. Ili kuuliza stakabadhi maalum katika trie ya Stakabadhi, faharisi ya muamala katika kitalu chake, mzigo wa stakabadhi na aina ya muamala vinahitajika. Stakabadhi iliyorejeshwa inaweza kuwa ya aina ya `Receipt` ambayo inafafanuliwa kama muunganisho wa `TransactionType` na `ReceiptPayload` au inaweza kuwa ya aina ya `LegacyReceipt` ambayo inafafanuliwa kama `rlp([status, cumulativeGasUsed, logsBloom, logs])`.
 
-Maelezo zaidi kuhusu hili yanaweza kupatikana katika nyaraka za [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718).
+Maelezo zaidi kuhusu hili yanaweza kupatikana katika nyaraka za [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718).
 
 ## Usomaji Zaidi {#further-reading}
 

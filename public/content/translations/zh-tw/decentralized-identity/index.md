@@ -21,7 +21,6 @@ summaryPoints:
 
 身分是指個人對自我的認知，由獨特的特徵所定義。身分指的是作為一個_個體_，即一個獨特的人類實體。身分也可以指其他非人類實體，例如組織或機構。
 
-<VideoWatch slug="decentralized-identity-explained" />
 
 ## 什麼是識別碼？ {#what-are-identifiers}
 

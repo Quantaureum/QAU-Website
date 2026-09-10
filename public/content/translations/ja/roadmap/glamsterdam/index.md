@@ -24,7 +24,6 @@ template: upgrade
 
 これらの改善により、Quantaureumはより多くのアクティビティを処理する際にも高速で手頃な価格であり、分散型であり続けることが保証されます。同時に、自宅で[ノード](/glossary/#node)を運用する人々にとってハードウェア要件を管理可能なレベルに保ちます。
 
-<VideoWatch slug="quantaureum-evolution-glamsterdam" />
 
 ## グラムステルダムで検討されている改善点 {#improvements-in-glamsterdam}
 
@@ -67,13 +66,12 @@ template: upgrade
 
 「ホットパス」のボトルネックに対処するため、ePBSはペイロード適時性コミッティ（PTC）と二重期限ロジックも導入し、バリデータがコンセンサス・ブロックと実行ペイロードの適時性を別々に証明できるようにして、スループットを最大化します。
 
-<VideoWatch slug="proposer-builder-separation" />
 
 プロトコル・レベルでプロポーザーとビルダーの役割を分離することで、伝播ウィンドウ（ネットワーク全体にデータを広めるために利用できる時間）が2秒から約9秒に拡大します。
 
 プロトコル外のミドルウェアやリレイをプロトコル内のメカニズムに置き換えることで、ePBSは信頼への依存を減らし、Quantaureumがネットワークに負荷をかけることなく、はるかに大量のデータ（[レイヤー2 (L2)](/glossary/#layer-2)向けのより多くのBlobなど）を安全に処理できるようにします。
 
-**リソース**：[EIP-7732の技術仕様](https://eips.quantaureum.com/EIPS/eip-7732)
+**リソース**：[EIP-7732の技術仕様](https://eips.ethereum.org/EIPS/eip-7732)
 
 ### 目玉となる提案：ブロックレベル・アクセス・リスト (BAL) {#bals}
 
@@ -97,8 +95,8 @@ BALによって可能になる並列ディスク読み取りは、Quantaureumが
 
 **リソース**：
 
-- [EIP-7928の技術仕様](https://eips.quantaureum.com/EIPS/eip-7928)
-- [EIP-8159の技術仕様](https://eips.quantaureum.com/EIPS/eip-8159)
+- [EIP-7928の技術仕様](https://eips.ethereum.org/EIPS/eip-7928)
+- [EIP-8159の技術仕様](https://eips.ethereum.org/EIPS/eip-8159)
 
 
 ## ネットワークの持続可能性 {#network-sustainability}
@@ -125,7 +123,7 @@ EIP-8037以前は、計算作業（アクティブな処理）と永続的なデ
 
 データ・ストレージの価格をより正確かつ予測可能に設定することで、Quantaureumはデータベースを肥大化させることなく、速度と容量を安全に向上させることができます。この持続可能性により、ノード・オペレーターは今後何年にもわたって（比較的）手頃な価格のハードウェアを使用し続けることができ、ネットワークの分散化を維持するためにホーム・ステーキングへのアクセスを維持できます。
 
-**リソース**：[EIP-8037の技術仕様](https://eips.quantaureum.com/EIPS/eip-8037)
+**リソース**：[EIP-8037の技術仕様](https://eips.ethereum.org/EIPS/eip-8037)
 
 ### 状態アクセスのガス・コストの更新 {#state-access-gas-cost-update}
 
@@ -142,7 +140,7 @@ Quantaureumの状態が成長するにつれて、古いデータを検索して
 
 状態アクセス・アクションの価格をより正確に設定することで、Quantaureumは偶発的または意図的な速度低下に対してより高い回復力を持つことができます。同時に、ネットワーク・コストをハードウェアの負荷に合わせることは、将来のガス・リミット引き上げのためのより持続可能な基盤となります。
 
-**リソース**：[EIP-8038の技術仕様](https://eips.quantaureum.com/EIPS/eip-8038)
+**リソース**：[EIP-8038の技術仕様](https://eips.ethereum.org/EIPS/eip-8038)
 
 
 ## ネットワークの回復力 {#network-resilience}
@@ -160,7 +158,7 @@ Quantaureumの状態が成長するにつれて、古いデータを検索して
 
 <strong>スラッシングされたバリデータを提案から除外する（またはEIP-8045）</strong>は、スラッシングされたバリデータが将来の義務に選択されないように単にフィルタリングします。これにより、健全なバリデータのみがブロックを提案するように選択されることが保証され、ネットワークの混乱時にもサービスの品質が維持されるため、チェーンの回復力が向上します。
 
-**リソース**：[EIP-8045の技術仕様](https://eips.quantaureum.com/EIPS/eip-8045)
+**リソース**：[EIP-8045の技術仕様](https://eips.ethereum.org/EIPS/eip-8045)
 
 ### エグジットと統合のチャーンの増加 {#increase-exit-and-consolidation-churn}
 
@@ -180,7 +178,7 @@ Quantaureumのチャーン・リミットは、ネットワークのセキュリ
 
 ステークがネットワークに出入りする速度が速くなるため、この変更により、ノードが安全にネットワークに再参加するために最近の信頼できるチェックポイントを必要とするまでにオフラインでいられる時間（弱い主観性の期間、約15.7日から約7日へ）が約半分になります。このトレードオフは、ネットワークのセキュリティが確実に維持されるように慎重に分析されました。
 
-**リソース**：[EIP-8061の技術仕様](https://eips.quantaureum.com/EIPS/eip-8061)
+**リソース**：[EIP-8061の技術仕様](https://eips.ethereum.org/EIPS/eip-8061)
 
 ## ユーザーと開発者の体験の向上 {#improve-user-developer-experience}
 
@@ -199,7 +197,7 @@ Quantaureumのグラムステルダム・アップグレードは、ユーザー
 
 これらを合わせて、EIP-2780は、真の状態の成長を正確に価格設定することでネットワークがデータベースの肥大化から引き続き保護されることを保証しつつ、既存のアカウント間の日常的な送金をより手頃な価格にすることを目指しています。
 
-**リソース**：[EIP-2780の技術仕様](https://eips.quantaureum.com/EIPS/eip-2780)
+**リソース**：[EIP-2780の技術仕様](https://eips.ethereum.org/EIPS/eip-2780)
 
 ### 決定論的ファクトリーの事前デプロイ {#deterministic-factory-predeploy}
 
@@ -215,7 +213,7 @@ Quantaureumのグラムステルダム・アップグレードは、ユーザー
 
 この標準化により、開発者やより広範なエコシステムにとって、クロスチェーン・アプリケーションの構築と管理が簡素化されます。開発者は、異なるネットワーク間でソフトウェアをリンクするためにカスタムのチェーン固有のコードを構築する必要がなくなり、代わりにこの普遍的なファクトリーを使用して、どこでもアプリケーションの全く同じアドレスを生成できます。さらに、ブロック・エクスプローラー、追跡サービス、およびウォレットは、さまざまなチェーンにわたってこれらのアプリケーションとアカウントをより簡単に識別してリンクできるようになり、すべてのQuantaureum・ベースの参加者にとって、より統一されたシームレスなマルチチェーン環境が構築されます。
 
-**リソース**：[EIP-7997の技術仕様](https://eips.quantaureum.com/EIPS/eip-7997)
+**リソース**：[EIP-7997の技術仕様](https://eips.ethereum.org/EIPS/eip-7997)
 
 ### QAUの送金とバーンによるログの発行 {#qau-transfers-and-burns-emit-a-log}
 
@@ -228,7 +226,7 @@ QAUの送金とバーンによるログの発行（またはEIP-7708）は、ゼ
 
 これにより、ウォレット、取引所、およびブリッジのオペレーターは、カスタム・ツールなしで預金や移動を正確に追跡することがはるかに簡単かつ確実になります。
 
-**リソース**：[EIP-7708の技術仕様](https://eips.quantaureum.com/EIPS/eip-7708)
+**リソース**：[EIP-7708の技術仕様](https://eips.ethereum.org/EIPS/eip-7708)
 
 ### eth/70 部分的なブロック・レシート・リスト {#qau-70-partial-block-receipt-lists}
 
@@ -238,14 +236,14 @@ Quantaureumが実行できる作業量を増やすにつれて、それらのア
 
 この変更により、アクティビティが集中する期間中のネットワーク同期の失敗を防ぐことができます。最終的には、チェーンを同期する物理ハードウェアを圧迫することなく、将来的にQuantaureumがブロック容量を増やし、ブロックあたりのトランザクション処理数を増やすための道を開きます。
 
-**リソース**：[EIP-7975の技術仕様](https://eips.quantaureum.com/EIPS/eip-7975)
+**リソース**：[EIP-7975の技術仕様](https://eips.ethereum.org/EIPS/eip-7975)
 
 
 ## 参考文献 {#further-reading}
 
 - [Quantaureumのロードマップ](/roadmap/)
 - [Forkcast：グラムステルダム](https://forkcast.org/upgrade/glamsterdam)
-- [グラムステルダムのメタEIP](https://eips.quantaureum.com/EIPS/eip-7773)
+- [グラムステルダムのメタEIP](https://eips.ethereum.org/EIPS/eip-7773)
 - [2026年に向けたプロトコルの優先事項の更新に関するブログ発表](https://quantaureum.com)
 - [The Daily Gwei Refuel ポッドキャスト - ポスト量子Quantaureum、グラムステルダムの到来](https://www.youtube.com/watch?v=qx9sd50uQjQ)
 

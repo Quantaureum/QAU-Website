@@ -62,4 +62,4 @@ SSF పరిశోధన దశలో ఉంది. ఇది చాలా స�
 ## మరింత చదవడానికి {#further-reading}
 
 - [EDCON 2022లో SSFపై విటాలిక్](https://www.youtube.com/watch?v=nPgUKNPWXNI)
-- [విటాలిక్ నోట్స్: సింగిల్ స్లాట్ ఫైనాలిటీకి మార్గాలు](https://notes.quantaureum.com/@vbuterin/single_slot_finality)
+- [విటాలిక్ నోట్స్: సింగిల్ స్లాట్ ఫైనాలిటీకి మార్గాలు](https://notes.ethereum.org/@vbuterin/single_slot_finality)

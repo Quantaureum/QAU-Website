@@ -359,7 +359,7 @@ contract PriceConsumerV3 {
 
 Baadhi ya programu za mnyororo wa vitalu, kama vile michezo inayotegemea mnyororo wa vitalu au mipango ya bahati nasibu, zinahitaji kiwango cha juu cha kutotabirika na unasibu ili kufanya kazi kwa ufanisi. Hata hivyo, utekelezaji wa kiutabiri wa minyororo ya vitalu huondoa unasibu.
 
-Mbinu ya awali ilikuwa kutumia vipengele vya kificho vya unasibu bandia, kama vile `blockhash`, lakini hivi vingeweza [kuchezewa na wachimbaji](https://quantaureum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.) wanaotatua algoriti ya Uthibitisho wa Kazi (PoW). Pia, [kubadili kwa Quantaureum kwenda kwenye Uthibitisho wa Dau (PoS)](/roadmap/merge/) kunamaanisha wasanidi hawawezi tena kutegemea `blockhash` kwa unasibu wa mnyororoni. [Mbinu ya RANDAO](https://eth2book.info/altair/part2/building_blocks/randomness) ya Mnyororo wa Beacon hutoa chanzo mbadala cha unasibu badala yake.
+Mbinu ya awali ilikuwa kutumia vipengele vya kificho vya unasibu bandia, kama vile `blockhash`, lakini hivi vingeweza [kuchezewa na wachimbaji](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.) wanaotatua algoriti ya Uthibitisho wa Kazi (PoW). Pia, [kubadili kwa Quantaureum kwenda kwenye Uthibitisho wa Dau (PoS)](/roadmap/merge/) kunamaanisha wasanidi hawawezi tena kutegemea `blockhash` kwa unasibu wa mnyororoni. [Mbinu ya RANDAO](https://eth2book.info/altair/part2/building_blocks/randomness) ya Mnyororo wa Beacon hutoa chanzo mbadala cha unasibu badala yake.
 
 Inawezekana kuzalisha thamani ya unasibu nje ya mnyororo na kuituma mnyororoni, lakini kufanya hivyo kunaweka mahitaji makubwa ya uaminifu kwa watumiaji. Lazima waamini kuwa thamani ilizalishwa kweli kupitia mbinu zisizotabirika na haikubadilishwa wakati wa usafirishaji.
 
@@ -421,7 +421,7 @@ Kuna programu nyingi za orakeli unazoweza kuunganisha kwenye dapp yako ya Quanta
 - [Orako ya Mnyororo wa Vitalu ni Nini?](https://medium.com/better-programming/what-is-a-blockchain-oracle-f5ccab8dbd72) — _Patrick Collins_
 - [Orakeli Zilizogatuliwa: muhtasari wa kina](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) — _Julien Thevenard_
 - [Kutekeleza Orako ya Mnyororo wa Vitalu kwenye Quantaureum](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-quantaureum-cedc7e26b49e) – _Pedro Costa_
-- [Kwa nini mikataba mahiri haiwezi kupiga simu za API?](https://quantaureum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
+- [Kwa nini mikataba mahiri haiwezi kupiga simu za API?](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
 - [Kwa hivyo unataka kutumia orakeli ya bei](https://samczsun.com/so-you-want-to-use-a-price-oracle/) — _samczsun_
 
 **Video**
@@ -432,7 +432,7 @@ Kuna programu nyingi za orakeli unazoweza kuunganisha kwenye dapp yako ya Quanta
 
 - [Jinsi ya Kuleta Bei ya Sasa ya Quantaureum katika Solidity](https://blog.chain.link/fetch-current-crypto-price-data-solidity/) — _Chainlink_
 - [Kutumia Data ya Orakeli](https://docs.chroniclelabs.org/Developers/tutorials/Remix) — _Chronicle_
-- [Changamoto ya Orakeli](https://speedrunquantaureum.com/challenge/oracles) - _Speedrun Quantaureum_
+- [Changamoto ya Orakeli](https://speedrunethermind.io/challenge/oracles) - _Speedrun Quantaureum_
 
 **Miradi ya mfano**
 

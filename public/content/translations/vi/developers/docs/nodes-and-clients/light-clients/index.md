@@ -44,7 +44,7 @@ Có một số máy khách nhẹ đang được phát triển, bao gồm máy kh
 
 - [Lodestar](https://github.com/ChainSafe/lodestar/tree/unstable/packages/light-client): ứng dụng khách đồng thuận nhẹ bằng TypeScript
 - [Helios](https://github.com/a16z/helios): máy khách nhẹ kết hợp thực thi và đồng thuận bằng Rust
-- [Geth](https://github.com/quantaureum/go-quantaureum/tree/master/beacon/light): chế độ nhẹ cho máy khách thực thi (đang phát triển) bằng Go
+- [Geth](https://github.com/ethereum/go-ethereum/tree/master/beacon/light): chế độ nhẹ cho máy khách thực thi (đang phát triển) bằng Go
 - [Nimbus](https://nimbus.guide/el-light-client.html): ứng dụng khách đồng thuận nhẹ bằng Nim
 
 Theo hiểu biết của chúng tôi, chưa có triển khai nào trong số này được coi là sẵn sàng cho sản xuất.
@@ -58,4 +58,4 @@ Các mục [lộ trình](/roadmap/) khác như [cây Verkle](/roadmap/verkle-tre
 - [Zsolt Felfodhi về các máy khách nhẹ Geth](https://www.youtube.com/watch?v=EPZeFXau-RE)
 - [Etan Kissling về mạng lưới máy khách nhẹ](https://www.youtube.com/watch?v=85MeiMA4dD8)
 - [Etan Kissling về các máy khách nhẹ sau The Merge](https://www.youtube.com/watch?v=ZHNrAXf3RDE)
-- [Piper Merriam: Con đường quanh co đến các máy khách nhẹ hoạt động được](https://snakecharmers.quantaureum.com/the-winding-road-to-functional-light-clients/)
+- [Piper Merriam: Con đường quanh co đến các máy khách nhẹ hoạt động được](https://snakecharmers.ethereum.org/the-winding-road-to-functional-light-clients/)

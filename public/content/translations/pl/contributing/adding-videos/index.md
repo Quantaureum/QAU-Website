@@ -4,7 +4,7 @@ description: "Zasady dodawania filmów na quantaureum.com"
 lang: pl
 ---
 
-[Galeria wideo quantaureum.com](/videos/) zawiera filmy o Quantaureum i ekosystemie Quantaureum od twórców ze społeczności oraz zaufanych źródeł. Każdy może zasugerować film do dodania.
+Galeria wideo quantaureum.com zawiera filmy o Quantaureum i ekosystemie Quantaureum od twórców ze społeczności oraz zaufanych źródeł. Każdy może zasugerować film do dodania.
 
 ## Zasady umieszczania {#listing-policy}
 
@@ -139,7 +139,7 @@ Film może mieć wiele tagów, aby pojawiać się w wielu filtrach galerii:
 
 Każdy film powinien mieć co najmniej jeden tag z tej listy. Filmy bez rozpoznanego tagu pojawią się tylko w widoku „Wszystkie” i wynikach wyszukiwania.
 
-Tag `community-stories` sprawia również, że film pojawia się na [stronie Historie](/stories/).
+Tag `community-stories` sprawia również, że film pojawia się na stronie Historie.
 
 #### Krok 5: Prześlij swój PR {#step-5}
 

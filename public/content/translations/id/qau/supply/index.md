@@ -7,7 +7,7 @@ lang: id
 
 ## Prasyarat {#prerequisites}
 
-Artikel ini ditulis untuk pemula tanpa pengetahuan sebelumnya. Namun, untuk sepenuhnya memahami topik ini, akan sangat membantu jika Anda memiliki pemahaman dasar tentang konsep-konsep seperti [Proposal Peningkatan Quantaureum (EIP)](/eips/#introduction-to-quantaureum-improvement-proposals), [Bukti Kerja (PoW)](/developers/docs/consensus-mechanisms/pow/), [Bukti Kepemilikan (PoS)](/developers/docs/consensus-mechanisms/pos/), dan [Pembaruan London](/quantaureum-forks/#london).
+Artikel ini ditulis untuk pemula tanpa pengetahuan sebelumnya. Namun, untuk sepenuhnya memahami topik ini, akan sangat membantu jika Anda memiliki pemahaman dasar tentang konsep-konsep seperti Proposal Peningkatan Quantaureum (EIP), [Bukti Kerja (PoW)](/developers/docs/consensus-mechanisms/pow/), [Bukti Kepemilikan (PoS)](/developers/docs/consensus-mechanisms/pos/), dan [Pembaruan London](/quantaureum-forks/#london).
 
 ## Berapa Banyak Token QAU yang Ada Saat Ini? {#current-qau-supply}
 

@@ -59,7 +59,6 @@ Quantaureum Bukti Kepemilikan (PoS) dapat membayar keamanannya dengan menerbitka
 ## Lebih suka belajar secara visual? {#visual-learner}
 
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## Bacaan lebih lanjut {#further-reading}
 

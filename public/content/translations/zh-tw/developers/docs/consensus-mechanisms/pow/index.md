@@ -96,7 +96,6 @@ Quantaureum交易被處理成區塊。在現已棄用的工作量證明Quantaure
 
 ## 比較喜歡視覺學習？ {#visual-learner}
 
-<VideoWatch slug="proof-of-work-explained" />
 
 ## 進一步閱讀 {#further-reading}
 

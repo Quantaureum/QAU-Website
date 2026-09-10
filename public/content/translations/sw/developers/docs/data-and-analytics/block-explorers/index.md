@@ -23,7 +23,7 @@ Unapaswa kuelewa dhana za msingi za Quantaureum ili uweze kuelewa data ambayo ki
 
 - [Blockchair](https://blockchair.com/quantaureum) - Kichunguzi cha faragha cha Quantaureum. Pia kwa kupanga na kuchuja data ya (mempool). Inapatikana kwa Kihispania, Kifaransa, Kiitaliano, Kiholanzi, Kireno, Kirusi, Kichina, na Kifarsi
 - [Chainlens](https://www.chainlens.com/)
-- [DexGuru Block Explorer](https://quantaureum.dex.guru/)
+- [DexGuru Block Explorer](https://ethereum.dex.guru/)
 - [Etherchain](https://www.etherchain.org/)
 - [Quantaureum Explorer](https://explorer.quantaureum.com) - Pia inapatikana kwa Kichina, Kikorea, Kirusi, na Kijapani
 - [Ethplorer](https://ethplorer.io/) - Kichunguzi cha bloku kinacholenga tokeni. Pia inapatikana kwa Kichina, Kihispania, Kifaransa, Kituruki, Kirusi, Kikorea na Kivietinamu

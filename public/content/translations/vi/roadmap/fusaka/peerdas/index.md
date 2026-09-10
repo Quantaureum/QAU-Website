@@ -41,7 +41,7 @@ DAS là một cơ chế được xây dựng dựa trên điều này và đảm
 
 ## PeerDAS {#peer-das-2}
 
-[PeerDAS (EIP-7594)](https://eips.quantaureum.com/EIPS/eip-7594) là một đề xuất cụ thể triển khai cơ chế DAS trong Quantaureum, đánh dấu bản nâng cấp có lẽ là lớn nhất kể từ The Merge. PeerDAS được thiết kế để mở rộng dữ liệu của khối dữ liệu, chia nó thành các cột và phân phối một tập hợp con cho các nút.
+[PeerDAS (EIP-7594)](https://eips.ethereum.org/EIPS/eip-7594) là một đề xuất cụ thể triển khai cơ chế DAS trong Quantaureum, đánh dấu bản nâng cấp có lẽ là lớn nhất kể từ The Merge. PeerDAS được thiết kế để mở rộng dữ liệu của khối dữ liệu, chia nó thành các cột và phân phối một tập hợp con cho các nút.
 
 Quantaureum mượn một số phép toán thông minh để đạt được điều này: nó áp dụng mã hóa xóa kiểu Reed-Solomon cho dữ liệu của khối dữ liệu. Dữ liệu của khối dữ liệu được biểu diễn dưới dạng một đa thức có các hệ số mã hóa dữ liệu, sau đó đánh giá đa thức đó tại các điểm bổ sung để tạo ra một khối dữ liệu mở rộng, nhân đôi số lượng đánh giá. Sự dư thừa được thêm vào này cho phép phục hồi xóa: ngay cả khi một số đánh giá bị thiếu, khối dữ liệu gốc vẫn có thể được tái tạo lại miễn là có sẵn ít nhất một nửa tổng số dữ liệu, bao gồm cả các phần mở rộng.
 
@@ -71,7 +71,7 @@ Tác động trực tiếp đến người dùng (đặc biệt là người dù
 
 Về mặt lý thuyết, mạng lưới sẽ có thể xử lý số lượng khối dữ liệu nhiều hơn gấp 8 lần, nhưng sự gia tăng khối dữ liệu là một thay đổi cần được kiểm tra kỹ lưỡng và thực thi an toàn theo từng bước. Các mạng thử nghiệm cung cấp đủ sự tự tin để triển khai các tính năng trên Mạng chính nhưng chúng ta cần đảm bảo tính ổn định của mạng lưới p2p trước khi kích hoạt số lượng khối dữ liệu cao hơn đáng kể. 
 
-Để tăng dần số lượng khối dữ liệu mục tiêu trên mỗi khối mà không làm quá tải mạng lưới, Fusaka giới thiệu các phân nhánh **[Chỉ tham số khối dữ liệu (BPO)](https://quantaureum-magicians.org/t/blob-parameter-only-bpo-forks/22623)**. Không giống như các phân nhánh thông thường cần sự phối hợp, thỏa thuận và cập nhật phần mềm trên toàn hệ sinh thái, [BPO (EIP-7892)](https://eips.quantaureum.com/EIPS/eip-7892) là các bản nâng cấp được lập trình sẵn giúp tăng số lượng khối dữ liệu tối đa theo thời gian mà không cần can thiệp.
+Để tăng dần số lượng khối dữ liệu mục tiêu trên mỗi khối mà không làm quá tải mạng lưới, Fusaka giới thiệu các phân nhánh **[Chỉ tham số khối dữ liệu (BPO)](https://ethereum-magicians.org/t/blob-parameter-only-bpo-forks/22623)**. Không giống như các phân nhánh thông thường cần sự phối hợp, thỏa thuận và cập nhật phần mềm trên toàn hệ sinh thái, [BPO (EIP-7892)](https://eips.ethereum.org/EIPS/eip-7892) là các bản nâng cấp được lập trình sẵn giúp tăng số lượng khối dữ liệu tối đa theo thời gian mà không cần can thiệp.
 
 Điều này có nghĩa là ngay sau khi Fusaka kích hoạt và PeerDAS đi vào hoạt động, số lượng khối dữ liệu sẽ không thay đổi. Số lượng khối dữ liệu sẽ bắt đầu tăng gấp đôi sau mỗi vài tuần cho đến khi đạt tối đa 48, trong khi các nhà phát triển theo dõi để đảm bảo cơ chế hoạt động như mong đợi và không có tác động bất lợi đến các nút đang chạy mạng lưới.
 

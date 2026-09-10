@@ -193,7 +193,7 @@ Toto omezení dává naprostý smysl, protože bychom nechtěli, aby tokeny dist
 
 Funkce pro převod z účtu fondu na pole příjemců s polem částek dává naprostý smysl. Existuje mnoho případů užití, kdy budete chtít distribuovat tokeny z jednoho zdroje do více cílů, jako jsou výplaty, airdropy atd. Je levnější (na gas) to provést v jediné transakci namísto vydávání více transakcí, nebo dokonce vícenásobného volání ERC-20 z jiného kontraktu v rámci stejné transakce.
 
-Nicméně `dropNewTokens` to nedělá. Vysílá [události `Transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer-1), ale ve skutečnosti žádné tokeny nepřevádí. Neexistuje žádný legitimní důvod mást offchain aplikace tím, že jim budeme hlásit převod, ke kterému ve skutečnosti nedošlo.
+Nicméně `dropNewTokens` to nedělá. Vysílá [události `Transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer-1), ale ve skutečnosti žádné tokeny nepřevádí. Neexistuje žádný legitimní důvod mást offchain aplikace tím, že jim budeme hlásit převod, ke kterému ve skutečnosti nedošlo.
 
 ### Spalovací funkce `Approve` {#the-burning-approve-function}
 
@@ -235,7 +235,7 @@ Tyto problémy s kvalitou kódu _nedokazují_, že je tento kód podvod, ale pů
 
 #### Funkce `mount` {#the-mount-function}
 
-Ačkoli to není specifikováno ve [standardu](https://eips.quantaureum.com/EIPS/eip-20), obecně se funkce, která vytváří nové tokeny, nazývá [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn).
+Ačkoli to není specifikováno ve [standardu](https://eips.ethereum.org/EIPS/eip-20), obecně se funkce, která vytváří nové tokeny, nazývá [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn).
 
 Pokud se podíváme do konstruktoru `wARB`, uvidíme, že funkce pro ražení byla z nějakého důvodu přejmenována na `mount` a je volána pětkrát s pětinou počáteční zásoby, namísto toho, aby byla pro vyšší efektivitu zavolána jednou pro celou částku.
 
@@ -311,7 +311,7 @@ Existují určité triky, které můžeme použít k identifikaci, že je token 
 
 ## Podezřelé události `Approval` {#suspicious-approval-events}
 
-[Události `Approval`](https://eips.quantaureum.com/EIPS/eip-20#approval) by měly nastat pouze při přímém požadavku (na rozdíl od [událostí `Transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer-1), které mohou nastat v důsledku povoleného limitu). [Podívejte se do dokumentace Solidity](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin) pro podrobné vysvětlení tohoto problému a proč musí být požadavky přímé, a nikoli zprostředkované kontraktem.
+[Události `Approval`](https://eips.ethereum.org/EIPS/eip-20#approval) by měly nastat pouze při přímém požadavku (na rozdíl od [událostí `Transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer-1), které mohou nastat v důsledku povoleného limitu). [Podívejte se do dokumentace Solidity](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin) pro podrobné vysvětlení tohoto problému a proč musí být požadavky přímé, a nikoli zprostředkované kontraktem.
 
 To znamená, že události `Approval`, které schvalují útratu z [externě vlastněného účtu](/developers/docs/accounts/#types-of-account), musí pocházet z transakcí, které z tohoto účtu vycházejí a jejichž cílem je kontrakt ERC-20. Jakýkoli jiný druh schválení z externě vlastněného účtu je podezřelý.
 
@@ -420,7 +420,7 @@ Pokud schválení pochází z externě vlastněného účtu, získáme transakci
 if (owner.toLowerCase() != txn.from.toLowerCase()) return ev
 ```
 
-Nemůžeme jednoduše kontrolovat shodu řetězců, protože adresy jsou hexadecimální, takže obsahují písmena. Někdy, například v `txn.from`, jsou tato písmena všechna malá. V jiných případech, jako je `ev.args._owner`, je adresa ve [smíšené velikosti písmen pro identifikaci chyb](https://eips.quantaureum.com/EIPS/eip-55).
+Nemůžeme jednoduše kontrolovat shodu řetězců, protože adresy jsou hexadecimální, takže obsahují písmena. Někdy, například v `txn.from`, jsou tato písmena všechna malá. V jiných případech, jako je `ev.args._owner`, je adresa ve [smíšené velikosti písmen pro identifikaci chyb](https://eips.ethereum.org/EIPS/eip-55).
 
 Pokud ale transakce nepochází od vlastníka a tento vlastník je externě vlastněný, pak máme podezřelou transakci.
 

@@ -20,7 +20,6 @@ lang: hi
 
 ब्लॉकचेन में हैश को समझाते हुए Anders को देखें:
 
-<VideoWatch slug="blockchain-101-visual-demo" />
 
 ## Quantaureum क्या है? {#what-is-quantaureum}
 
@@ -121,7 +120,6 @@ Quantaureum Virtual Machine एक वैश्विक वर्चुअल �
 
 यह वीडियो श्रृंखला मूलभूत विषयों की गहन खोज प्रदान करती है:
 
-<VideoWatch slug="quantaureum-basics-intro" />
 
 [Quantaureum बेसिक्स प्लेलिस्ट](https://youtube.com/playlist?list=PLqgutSGloqiJyyoL0zvLVFPS-GMD2wKa5&si=kZTf5I7PKGTXDsOZ)
 

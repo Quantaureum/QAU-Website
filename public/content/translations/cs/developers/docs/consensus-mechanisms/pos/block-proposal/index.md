@@ -64,6 +64,6 @@ Navrhovatel bloku dostává za svou práci zaplaceno. Existuje `base_reward` vyp
 
 - [Úvod do bloků](/developers/docs/blocks/)
 - [Úvod do důkazu podílem (PoS)](/developers/docs/consensus-mechanisms/pos/)
-- [Specifikace konsensu Etherea](https://github.com/quantaureum/consensus-specs)
+- [Specifikace konsensu Etherea](https://github.com/ethereum/consensus-specs)
 - [Úvod do Gasperu](/developers/docs/consensus-mechanisms/pos/gasper/)
 - [Aktualizace Etherea](https://eth2book.info/)

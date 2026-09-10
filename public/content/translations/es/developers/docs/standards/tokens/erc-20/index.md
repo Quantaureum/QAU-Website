@@ -42,7 +42,7 @@ Ejemplos de funcionalidades que proporciona el ERC-20:
 
 Si un contrato inteligente implementa los siguientes métodos y eventos, se le puede llamar contrato de token ERC-20 y, una vez implementado, será responsable de realizar un seguimiento de los tokens creados en Quantaureum.
 
-De [EIP-20](https://eips.quantaureum.com/EIPS/eip-20):
+De [EIP-20](https://eips.ethereum.org/EIPS/eip-20):
 
 ### Métodos {#methods}
 
@@ -170,7 +170,7 @@ Algunos estándares alternativos han surgido de este problema, como [ERC-223](/d
 
 ## Lecturas adicionales {#further-reading}
 
-- [EIP-20: Estándar de token ERC-20](https://eips.quantaureum.com/EIPS/eip-20)
+- [EIP-20: Estándar de token ERC-20](https://eips.ethereum.org/EIPS/eip-20)
 - [OpenZeppelin - Tokens](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [OpenZeppelin - Implementación de ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Guía de tokens ERC-20 en Solidity](https://www.alchemy.com/overviews/erc20-solidity)
@@ -185,5 +185,5 @@ Algunos estándares alternativos han surgido de este problema, como [ERC-223](/d
 
 - [Tutorial del contrato ERC-20](/developers/tutorials/erc20-annotated-code/) _– Un tutorial anotado línea por línea de la implementación del contrato ERC-20 de OpenZeppelin._
 - [ERC-20 con barandillas de seguridad](/developers/tutorials/erc20-with-safety-rails/) _– Cómo agregar salvaguardas a los tokens ERC-20 para ayudar a los usuarios a evitar errores comunes._
-- [Envío de tokens usando Ethers.js](/developers/tutorials/send-token-ethersjs/) _– Una guía para principiantes sobre la transferencia de tokens ERC-20 usando Ethers.js._
+- [Envío de tokens usando Ethers.js](/developers/tutorials/send-token-qaujs/) _– Una guía para principiantes sobre la transferencia de tokens ERC-20 usando Ethers.js._
 - [Algunos trucos utilizados por tokens fraudulentos y cómo detectarlos](/developers/tutorials/scam-token-tricks/) _– Una exploración detallada de los patrones de tokens ERC-20 fraudulentos y cómo identificarlos._

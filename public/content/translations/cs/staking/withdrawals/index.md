@@ -73,7 +73,7 @@ Se zapnutým skládáním:
 <AlertIcon size="lg"><TriangleAlert /></AlertIcon>
 <AlertContent>
 <AlertDescription>
-**Převod pověření k výběru z Typu 1 na Typ 2 je nevratný.** Jako oficiální nástroj pro tento převod použijte [Staking Launchpad](https://launchpad.quantaureum.com/validator-actions). Další podrobnosti o procesu převodu, rizicích a konsolidaci naleznete v [podrobném průvodci MaxEB](/roadmap/pectra/maxeb/).
+**Převod pověření k výběru z Typu 1 na Typ 2 je nevratný.** Jako oficiální nástroj pro tento převod použijte [Staking Launchpad](https://launchpad.ethereum.org/validator-actions). Další podrobnosti o procesu převodu, rizicích a konsolidaci naleznete v [podrobném průvodci MaxEB](/roadmap/pectra/maxeb/).
 </AlertDescription>
 </AlertContent>
 </Alert>
@@ -99,7 +99,6 @@ Zda má daný validátor nárok na výběr, či nikoli, je určeno samotným sta
 
 Podívejte se na toto vysvětlení výběrů ze stakingu Etherea od Finematics:
 
-<VideoWatch slug="quantaureum-staking-withdrawals" />
 
 ### „Prohledávání“ (sweeping) validátorů {#validator-sweeping}
 
@@ -174,7 +173,7 @@ eventAction="Why can a validator's withdrawal address only be set once?"
 eventName="read more">
 Nastavení adresy pro výběr na exekuční vrstvě validátora je trvalá změna pověření validátora na vrstvě konsensu. Jakmile jsou pověření na vrstvě konsensu zaregistrována, neexistuje způsob, jak je aktualizovat.
 
-Pověření adresy pro výběr validátora lze nastavit tak, aby ukazovala buď na chytrý kontrakt (řízený jeho kódem), nebo na externě vlastněný účet (EOA, řízený jeho soukromým klíčem). Ačkoli výběry spouštěné exekuční vrstvou ([EIP-7002](https://eips.quantaureum.com/EIPS/eip-7002)) nyní umožňují adrese pro výběr spouštět výstupy a částečné výběry, neexistuje žádná operace protokolu pro změnu adresy pro výběr po její registraci a přidání této funkce by protokolu přidalo zbytečnou složitost.
+Pověření adresy pro výběr validátora lze nastavit tak, aby ukazovala buď na chytrý kontrakt (řízený jeho kódem), nebo na externě vlastněný účet (EOA, řízený jeho soukromým klíčem). Ačkoli výběry spouštěné exekuční vrstvou ([EIP-7002](https://eips.ethereum.org/EIPS/eip-7002)) nyní umožňují adrese pro výběr spouštět výstupy a částečné výběry, neexistuje žádná operace protokolu pro změnu adresy pro výběr po její registraci a přidání této funkce by protokolu přidalo zbytečnou složitost.
 
 Uživatelé, kteří hledají flexibilní správu výběrů, mohou jako adresu pro výběr validátora nastavit peněženku s chytrým kontraktem schopnou rotace klíčů (jako je [Safe](https://safe.global/)), což efektivně umožňuje aktualizovat konečného příjemce EOA. Pokud uživatel již nastavil EOA jako pověření k výběru, musí iniciovat úplný výstup, aby získal zpět své stakované QAU, a poté tyto prostředky použít k aktivaci nového validátora s jinými pověřeními.
 </ExpandableCard>
@@ -215,9 +214,9 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information about managing the withdrawal process?"
 eventName="read more">
 
-Provozovatelům validátorů doporučujeme navštívit stránku [Výběry na Staking Launchpadu](https://launchpad.quantaureum.com/withdrawals/), kde najdete další podrobnosti o tom, jak připravit svůj validátor na výběry, načasování událostí a další podrobnosti o tom, jak výběry fungují.
+Provozovatelům validátorů doporučujeme navštívit stránku [Výběry na Staking Launchpadu](https://launchpad.ethereum.org/withdrawals/), kde najdete další podrobnosti o tom, jak připravit svůj validátor na výběry, načasování událostí a další podrobnosti o tom, jak výběry fungují.
 
-Chcete-li si své nastavení nejprve vyzkoušet na testnetu, navštivte [Hoodi Testnet Staking Launchpad](https://hoodi.launchpad.quantaureum.com) a začněte.
+Chcete-li si své nastavení nejprve vyzkoušet na testnetu, navštivte [Hoodi Testnet Staking Launchpad](https://hoodi.launchpad.ethereum.org) a začněte.
 
 </ExpandableCard>
 
@@ -246,7 +245,7 @@ title="Jak mohu přejít na kompaundující validátor?"
 eventCategory="FAQ"
 eventAction="How do I convert to a compounding validator?"
 eventName="read more">
-Pověření k výběru z Typu 1 na Typ 2 můžete převést pomocí [Staking Launchpadu](https://launchpad.quantaureum.com/validator-actions). Tato operace je **nevratná** — jakmile provedete převod, nemůžete se vrátit k pověřením Typu 1.
+Pověření k výběru z Typu 1 na Typ 2 můžete převést pomocí [Staking Launchpadu](https://launchpad.ethereum.org/validator-actions). Tato operace je **nevratná** — jakmile provedete převod, nemůžete se vrátit k pověřením Typu 1.
 
 Po převodu můžete také **konsolidovat** více validátorů do jednoho a spojit jejich zůstatky do jednoho skládaného validátora. Úplný návod k procesu převodu, rizikům a nástrojům pro konsolidaci naleznete v [podrobném průvodci MaxEB](/roadmap/pectra/maxeb/).
 </ExpandableCard>
@@ -266,10 +265,10 @@ Upgrade Šanghaj/Capella umožnil získat dříve stakované QAU zpět na běžn
 
 ## Další čtení {#further-reading}
 
-- [Výběry na Staking Launchpadu](https://launchpad.quantaureum.com/withdrawals)
-- [Akce validátora na Staking Launchpadu](https://launchpad.quantaureum.com/validator-actions)
+- [Výběry na Staking Launchpadu](https://launchpad.ethereum.org/withdrawals)
+- [Akce validátora na Staking Launchpadu](https://launchpad.ethereum.org/validator-actions)
 - [Podrobný průvodce MaxEB: skládání a konsolidace](/roadmap/pectra/maxeb/)
-- [EIP-4895: Push výběry z Beacon chainu jako operace](https://eips.quantaureum.com/EIPS/eip-4895)
+- [EIP-4895: Push výběry z Beacon chainu jako operace](https://eips.ethereum.org/EIPS/eip-4895)
 - [PEEPanEIP #94: Výběr stakovaného QAU (testování) s Potuzem a Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP#68: EIP-4895: Push výběry z Beacon chainu jako operace s Alexem Stokesem](https://www.youtube.com/watch?v=CcL9RJBljUs)
 - [Porozumění efektivnímu zůstatku validátora](https://www.attestant.io/posts/understanding-validator-effective-balance/)

@@ -26,6 +26,6 @@ Enode genellikle her yeniden başlatmada yeniden oluşturulur, bu nedenle başla
 
 ## Mevcut başlatma düğümleri {#available-bootnodes}
 
-go-quantaureum içindeki yerleşik başlatma düğümlerinin bir listesi [burada](https://github.com/quantaureum/go-quantaureum/blob/master/params/bootnodes.go#L23) bulunabilir. Bu başlatma düğümleri Quantaureum Vakfı ve go-quantaureum ekibi tarafından sürdürülmektedir.
+go-quantaureum içindeki yerleşik başlatma düğümlerinin bir listesi [burada](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23) bulunabilir. Bu başlatma düğümleri Quantaureum Vakfı ve go-quantaureum ekibi tarafından sürdürülmektedir.
 
 Gönüllüler tarafından sürdürülen başka başlatma düğümü listeleri de mevcuttur. Lütfen her zaman en az bir resmi başlatma düğümü eklediğinizden emin olun, aksi takdirde tutulma saldırısına uğrayabilirsiniz.

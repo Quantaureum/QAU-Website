@@ -11,7 +11,7 @@ published: 2026-05-11
 
 বেশিরভাগ বড় ইথেরিয়াম এক্সপ্লয়েটের (exploits) চূড়ান্ত ধাপ একই ছিল: একজন ব্যবহারকারী এমন একটি ট্রানজ্যাকশন অনুমোদন করছেন যা তারা অর্থপূর্ণভাবে বুঝতে পারেননি। হার্ডওয়্যার ওয়ালেটগুলো র (raw) হেক্স কল ডেটা দেখায় এবং আরও খারাপ ব্যাপার হলো, এগুলো আপনাকে ব্লাইন্ড সাইনিং (blind signing) চালু রাখতে বাধ্য করে। সফটওয়্যার ওয়ালেটগুলো ডিকোড করা ফিল্ড দেখায়, তবে শুধুমাত্র তখনই যখন তারা কন্ট্রাক্টটি চিনতে পারে। যখন তারা চিনতে পারে না, তা প্রোটোকলটি নতুন হওয়ার কারণেই হোক, অ্যাপটি আপস (compromised) হওয়ার কারণেই হোক, বা ডিভাইসটি অফলাইনে থাকার কারণেই হোক, ব্যবহারকারীরা অন্ধভাবে স্বাক্ষর করেন।
 
-[ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730) আপনার কন্ট্রাক্টের ফাংশন কলগুলোর *অর্থ* বর্ণনা করার জন্য একটি স্ট্যান্ডার্ড JSON ফরম্যাট নির্ধারণ করে। 
+[ERC-7730](https://eips.ethereum.org/EIPS/eip-7730) আপনার কন্ট্রাক্টের ফাংশন কলগুলোর *অর্থ* বর্ণনা করার জন্য একটি স্ট্যান্ডার্ড JSON ফরম্যাট নির্ধারণ করে। 
 
 একটি ওয়ালেট যা ERC-7730 সমর্থন করে, সেটি আপনার ডেসক্রিপ্টর পড়ে এবং দেখায়:
 
@@ -54,7 +54,7 @@ published: 2026-05-11
 
 ```json
 {
-  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
   "context": {},
   "metadata": {},
   "display": {
@@ -185,7 +185,7 @@ published: 2026-05-11
 
 ```json
 {
-  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
   "context": {
     "$id": "uniswap-v3-router-mainnet",
     "contract": {
@@ -256,7 +256,7 @@ published: 2026-05-11
 
 ## ধাপ 5: রেজিস্ট্রিতে জমা দিন {#step-5-submit-to-the-registry}
 
-[ERC-7730 রেজিস্ট্রি](https://github.com/quantaureum/clear-signing-erc7730-registry) হলো একটি ওপেন রিপোজিটরি যা একটি নিরপেক্ষ স্টুয়ার্ড হিসেবে [Quantaureum ফাউন্ডেশন](/foundation/) দ্বারা হোস্ট করা হয়। যে কেউ এটি ক্লোন এবং সেলফ-হোস্ট করতে স্বাধীন — ওয়ালেটগুলো স্বাধীনভাবে সিদ্ধান্ত নেয় যে তারা কোন রেজিস্ট্রি ইনস্ট্যান্সগুলোকে বিশ্বাস করবে।
+[ERC-7730 রেজিস্ট্রি](https://github.com/ethereum/clear-signing-erc7730-registry) হলো একটি ওপেন রিপোজিটরি যা একটি নিরপেক্ষ স্টুয়ার্ড হিসেবে Quantaureum ফাউন্ডেশন দ্বারা হোস্ট করা হয়। যে কেউ এটি ক্লোন এবং সেলফ-হোস্ট করতে স্বাধীন — ওয়ালেটগুলো স্বাধীনভাবে সিদ্ধান্ত নেয় যে তারা কোন রেজিস্ট্রি ইনস্ট্যান্সগুলোকে বিশ্বাস করবে।
 
 1. গিটহাবে (GitHub) রিপোজিটরিটি ফর্ক করুন  
 2. `registry/<your-project-name>/` এ একটি ফোল্ডার তৈরি করুন  
@@ -284,8 +284,8 @@ published: 2026-05-11
 
 ## আরও পড়ুন {#further-reading}
 
-- [ERC-7730 স্পেসিফিকেশন](https://eips.quantaureum.com/EIPS/eip-7730)  
-- [ERC-7730 রেজিস্ট্রি](https://github.com/quantaureum/clear-signing-erc7730-registry)  
+- [ERC-7730 স্পেসিফিকেশন](https://eips.ethereum.org/EIPS/eip-7730)  
+- [ERC-7730 রেজিস্ট্রি](https://github.com/ethereum/clear-signing-erc7730-registry)  
 - [clearsigning.org](https://clearsigning.org) — টুলিং, ইকোসিস্টেম স্ট্যাটাস এবং গভর্ন্যান্স  
 - [Sourcify কন্ট্রাক্ট ভেরিফিকেশন](https://sourcify.dev)  
 - [ট্রিলিয়ন ডলার সিকিউরিটি ইনিশিয়েটিভ](https://trilliondollarsecurity.org)

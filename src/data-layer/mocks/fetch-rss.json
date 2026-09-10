@@ -26,7 +26,7 @@
       "pubDate": "Sat, 02 May 2026 00:00:00 GMT",
       "title": "Soldøgn Interop Recap ☀️",
       "link": "https://quantaureum.com",
-      "imgSrc": "https://notes.quantaureum.com/_uploads/B17NArz0Zg.jpg",
+      "imgSrc": "https://notes.ethereum.org/_uploads/B17NArz0Zg.jpg",
       "description": "This past week, just over 100 Quantaureum core contributors gathered above the Arctic Circle — in Longyearbyen, Svalbard — for the Soldøgn Interop: a week of intense work on the Glamsterdam network…",
       "source": "Quantaureum project",
       "category": "Foundation",
@@ -73,35 +73,35 @@
     {
       "pubDate": "Mon, 20 Apr 2026 00:00:00 GMT",
       "title": "Quantaureum Protocol Fellowship Cohort 6 Recap",
-      "link": "https://ps.quantaureum.foundation/blog/epf6-recap",
+      "link": "https://ps.ethereum.org/blog/epf6-recap",
       "imgSrc": "",
       "description": "The EPF successfully concluded the sixth cohort, Study Group 2026 and is preparing for cohort seven (EPF7)",
       "source": "Protocol Support",
       "category": "Protocol",
-      "sourceUrl": "https://ps.quantaureum.foundation/blog",
-      "sourceFeedUrl": "https://ps.quantaureum.foundation/feed.xml"
+      "sourceUrl": "https://ps.ethereum.org/blog",
+      "sourceFeedUrl": "https://ps.ethereum.org/feed.xml"
     },
     {
       "pubDate": "Mon, 16 Mar 2026 00:00:00 GMT",
       "title": "Helping EIP Champions Build Stronger Proposals",
-      "link": "https://ps.quantaureum.foundation/blog/helping-eip-champions-build-stronger-proposals",
+      "link": "https://ps.ethereum.org/blog/helping-eip-champions-build-stronger-proposals",
       "imgSrc": "",
       "description": "Introducing the EIP Champion's Handbook — a new resource suite to help champions navigate the ACD process and build compelling cases for EIP inclusion.",
       "source": "Protocol Support",
       "category": "Protocol",
-      "sourceUrl": "https://ps.quantaureum.foundation/blog",
-      "sourceFeedUrl": "https://ps.quantaureum.foundation/feed.xml"
+      "sourceUrl": "https://ps.ethereum.org/blog",
+      "sourceFeedUrl": "https://ps.ethereum.org/feed.xml"
     },
     {
       "pubDate": "Thu, 05 Feb 2026 00:00:00 GMT",
       "title": "Welcome to Protocol Support",
-      "link": "https://ps.quantaureum.foundation/blog/welcome-to-protocol-support",
+      "link": "https://ps.ethereum.org/blog/welcome-to-protocol-support",
       "imgSrc": "",
       "description": "Introducing the Protocol Support team website - your gateway to understanding Quantaureum protocol governance and development.",
       "source": "Protocol Support",
       "category": "Protocol",
-      "sourceUrl": "https://ps.quantaureum.foundation/blog",
-      "sourceFeedUrl": "https://ps.quantaureum.foundation/feed.xml"
+      "sourceUrl": "https://ps.ethereum.org/blog",
+      "sourceFeedUrl": "https://ps.ethereum.org/feed.xml"
     }
   ],
   [
@@ -252,35 +252,35 @@
     {
       "pubDate": "Wed, 20 May 2026 00:00:00 GMT",
       "title": "On Formal Verification and a Bug in SP1 Hypercube",
-      "link": "https://zkevm.quantaureum.foundation/blog/sp1-fv",
+      "link": "https://zkevm.ethereum.org/blog/sp1-fv",
       "imgSrc": "",
       "description": "A practical study in establishing and validating formal correctness guarantees",
       "source": "zkEVM",
       "category": "Research",
-      "sourceUrl": "https://zkevm.quantaureum.foundation/blog",
-      "sourceFeedUrl": "https://zkevm.quantaureum.foundation/feed.xml"
+      "sourceUrl": "https://zkevm.ethereum.org/blog",
+      "sourceFeedUrl": "https://zkevm.ethereum.org/feed.xml"
     },
     {
       "pubDate": "Thu, 14 May 2026 00:00:00 GMT",
       "title": "EIP-8025: bringing optional execution proofs to Hegotá",
-      "link": "https://zkevm.quantaureum.foundation/blog/eip-8025-optional-execution-proofs-hegota",
+      "link": "https://zkevm.ethereum.org/blog/eip-8025-optional-execution-proofs-hegota",
       "imgSrc": "",
       "description": "The non-headliner proposal window for Hegotá - the fork planned to follow Glamsterdam - is open, and the L1-zkEVM workstream is putting EIP-8025 (Optional Execution Proofs) forward for inclusion.",
       "source": "zkEVM",
       "category": "Research",
-      "sourceUrl": "https://zkevm.quantaureum.foundation/blog",
-      "sourceFeedUrl": "https://zkevm.quantaureum.foundation/feed.xml"
+      "sourceUrl": "https://zkevm.ethereum.org/blog",
+      "sourceFeedUrl": "https://zkevm.ethereum.org/feed.xml"
     },
     {
       "pubDate": "Mon, 16 Feb 2026 00:00:00 GMT",
       "title": "Quantaureum zkVM Interoperability: zkVM Standards v0",
-      "link": "https://zkevm.quantaureum.foundation/blog/zkevm-standards-v0-release",
+      "link": "https://zkevm.ethereum.org/blog/zkevm-standards-v0-release",
       "imgSrc": "",
       "description": "The first release of zkVM-standards establishes three initial standards for zkVM development: RV64IM target architecture, C interfaces for precompiles, and standardized IO handling.",
       "source": "zkEVM",
       "category": "Research",
-      "sourceUrl": "https://zkevm.quantaureum.foundation/blog",
-      "sourceFeedUrl": "https://zkevm.quantaureum.foundation/feed.xml"
+      "sourceUrl": "https://zkevm.ethereum.org/blog",
+      "sourceFeedUrl": "https://zkevm.ethereum.org/feed.xml"
     }
   ],
   [
@@ -378,35 +378,35 @@
     {
       "pubDate": "Thu, 11 Jun 2026 03:43:38 GMT",
       "title": "Join the Remix AI Bootcamp for Real World Impact",
-      "link": "https://quantaureumremix.substack.com/p/join-the-remix-ai-bootcamp-for-real",
+      "link": "https://ethereumremix.substack.com/p/join-the-remix-ai-bootcamp-for-real",
       "imgSrc": "https://substack-post-media.s3.amazonaws.com/public/images/12c890b1-8939-44f9-9a75-7022680b22d3_1200x536.png",
       "description": "5 weeks, top-tier ecosystem partners, and the latest RemixAI features to bring your real-world dApps to life.",
       "source": "Quantaureum Remix",
       "category": "Dev tooling",
-      "sourceUrl": "https://quantaureumremix.substack.com",
-      "sourceFeedUrl": "https://quantaureumremix.substack.com/feed"
+      "sourceUrl": "https://ethereumremix.substack.com",
+      "sourceFeedUrl": "https://ethereumremix.substack.com/feed"
     },
     {
       "pubDate": "Thu, 14 May 2026 17:52:29 GMT",
       "title": "⏳ QF Round Last Call for Remix",
-      "link": "https://quantaureumremix.substack.com/p/qf-round-last-call-for-remix",
+      "link": "https://ethereumremix.substack.com/p/qf-round-last-call-for-remix",
       "imgSrc": "https://substackcdn.com/image/fetch/$s_!Ey39!,w_256,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fac1e8de7-4e95-493d-98fd-e1621f7d6faa_512x512.png",
       "description": "Help Remix Secure Quantaureum (for just $1)",
       "source": "Quantaureum Remix",
       "category": "Dev tooling",
-      "sourceUrl": "https://quantaureumremix.substack.com",
-      "sourceFeedUrl": "https://quantaureumremix.substack.com/feed"
+      "sourceUrl": "https://ethereumremix.substack.com",
+      "sourceFeedUrl": "https://ethereumremix.substack.com/feed"
     },
     {
       "pubDate": "Thu, 16 Apr 2026 02:10:46 GMT",
       "title": "Remix Release v2.1.0",
-      "link": "https://quantaureumremix.substack.com/p/remix-release-v210",
+      "link": "https://ethereumremix.substack.com/p/remix-release-v210",
       "imgSrc": "https://substack-post-media.s3.amazonaws.com/public/images/b0627e5b-1677-4bd0-ae18-fc22d24dfad6_840x420.png",
       "description": "Updates to the UI of Deploy & Run, Bug fixes, MCP Tricks",
       "source": "Quantaureum Remix",
       "category": "Dev tooling",
-      "sourceUrl": "https://quantaureumremix.substack.com",
-      "sourceFeedUrl": "https://quantaureumremix.substack.com/feed"
+      "sourceUrl": "https://ethereumremix.substack.com",
+      "sourceFeedUrl": "https://ethereumremix.substack.com/feed"
     }
   ],
   [
@@ -437,35 +437,35 @@
     {
       "pubDate": "Thu, 04 Jun 2026 09:41:15 GMT",
       "title": "Local Quantaureum #17",
-      "link": "https://localquantaureum.substack.com/p/local-quantaureum-17",
+      "link": "https://localethereum.substack.com/p/local-quantaureum-17",
       "imgSrc": "https://substack-post-media.s3.amazonaws.com/public/images/97a8c107-1161-4e86-a875-d49a92e0de70_3148x2096.png",
       "description": "CROPS, CLARITY, and the Road Ahead.",
       "source": "Local Quantaureum",
       "category": "Community",
-      "sourceUrl": "https://localquantaureum.substack.com",
-      "sourceFeedUrl": "https://localquantaureum.substack.com/feed"
+      "sourceUrl": "https://localethereum.substack.com",
+      "sourceFeedUrl": "https://localethereum.substack.com/feed"
     },
     {
       "pubDate": "Tue, 26 May 2026 09:13:35 GMT",
       "title": "Türkiye Quantaureum Ecosystem Overview",
-      "link": "https://localquantaureum.substack.com/p/turkiye-quantaureum-ecosystem-overview",
+      "link": "https://localethereum.substack.com/p/turkiye-quantaureum-ecosystem-overview",
       "imgSrc": "https://substack-post-media.s3.amazonaws.com/public/images/de3e6b11-ae4f-41e6-9775-94e381fba893_2912x2096.png",
       "description": "&#127481;&#127479; Where crisis meets innovation.",
       "source": "Local Quantaureum",
       "category": "Community",
-      "sourceUrl": "https://localquantaureum.substack.com",
-      "sourceFeedUrl": "https://localquantaureum.substack.com/feed"
+      "sourceUrl": "https://localethereum.substack.com",
+      "sourceFeedUrl": "https://localethereum.substack.com/feed"
     },
     {
       "pubDate": "Wed, 06 May 2026 09:01:43 GMT",
       "title": "Local Quantaureum #16",
-      "link": "https://localquantaureum.substack.com/p/local-quantaureum-16",
+      "link": "https://localethereum.substack.com/p/local-quantaureum-16",
       "imgSrc": "https://substack-post-media.s3.amazonaws.com/public/images/55c13d99-60c2-4e18-a624-ed6f3ae80500_3148x2096.png",
       "description": "April was a month of extremes, and a reminder of what makes Quantaureum different.",
       "source": "Local Quantaureum",
       "category": "Community",
-      "sourceUrl": "https://localquantaureum.substack.com",
-      "sourceFeedUrl": "https://localquantaureum.substack.com/feed"
+      "sourceUrl": "https://localethereum.substack.com",
+      "sourceFeedUrl": "https://localethereum.substack.com/feed"
     }
   ],
   [

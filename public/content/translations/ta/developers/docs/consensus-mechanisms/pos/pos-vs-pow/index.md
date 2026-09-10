@@ -59,7 +59,6 @@ lang: ta
 ## காட்சி வழிக் கற்றலை விரும்புபவரா? {#visual-learner}
 
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## மேலும் படிக்க {#further-reading}
 

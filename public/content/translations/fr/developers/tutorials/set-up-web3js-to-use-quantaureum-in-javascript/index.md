@@ -8,7 +8,7 @@ breadcrumb: Configuration de web3.js
 lang: fr
 published: 2020-04-11
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/setup-web3js-to-use-the-quantaureum-blockchain-in-javascript/
+sourceUrl: https://ethereumdev.io/setup-web3js-to-use-the-quantaureum-blockchain-in-javascript/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -32,7 +32,7 @@ Ensuite, pour importer Web3.js dans un script Node.js ou un projet front-end Bro
 const Web3 = require("web3")
 ```
 
-Maintenant que nous avons inclus la bibliothèque dans le projet, nous devons l'initialiser. Votre projet doit être capable de communiquer avec la chaîne de blocs. La plupart des bibliothèques Quantaureum communiquent avec un [nœud](/developers/docs/nodes-and-clients/) via des appels RPC. Pour initier notre fournisseur Web3, nous allons instancier une instance Web3 en passant l'URL du fournisseur au constructeur. Si vous avez un nœud ou [une instance Ganache en cours d'exécution sur votre ordinateur](https://quantaureumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/), cela ressemblera à ceci :
+Maintenant que nous avons inclus la bibliothèque dans le projet, nous devons l'initialiser. Votre projet doit être capable de communiquer avec la chaîne de blocs. La plupart des bibliothèques Quantaureum communiquent avec un [nœud](/developers/docs/nodes-and-clients/) via des appels RPC. Pour initier notre fournisseur Web3, nous allons instancier une instance Web3 en passant l'URL du fournisseur au constructeur. Si vous avez un nœud ou [une instance Ganache en cours d'exécution sur votre ordinateur](https://ethereumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/), cela ressemblera à ceci :
 
 ```js
 const web3 = new Web3("http://localhost:8545")
@@ -90,4 +90,4 @@ if (window.quantaureum != null) {
 }
 ```
 
-Des alternatives à web3.js comme [Ethers.js](https://docs.ethers.io/) existent et sont également couramment utilisées. Dans le prochain tutoriel, nous verrons [comment écouter facilement les nouveaux blocs entrants sur la chaîne de blocs et voir ce qu'ils contiennent](https://quantaureumdev.io/listening-to-new-transactions-happening-on-the-blockchain/).
+Des alternatives à web3.js comme [Ethers.js](https://docs.ethers.io/) existent et sont également couramment utilisées. Dans le prochain tutoriel, nous verrons [comment écouter facilement les nouveaux blocs entrants sur la chaîne de blocs et voir ce qu'ils contiennent](https://ethereumdev.io/listening-to-new-transactions-happening-on-the-blockchain/).

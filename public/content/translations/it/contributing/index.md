@@ -22,9 +22,9 @@ Siamo una community accogliente che ti aiuterà a crescere e a formarti nell'eco
 
 **Contenuti**
 - [Crea/modifica contenuti](/contributing/#how-to-update-content) – Suggerisci nuove pagine o apporta modifiche a quelle già presenti
-- [Scrivi un articolo per costruttori](/contributing/adding-articles/) - Contribuisci con un articolo per la sezione [Novità](/latest/)
+- [Scrivi un articolo per costruttori](/contributing/adding-articles/) - Contribuisci con un articolo per la sezione Novità
 - [Aggiungi risorse della community](/contributing/content-resources/) – Aggiungi un articolo o una risorsa utile a una pagina pertinente
-- [Suggerisci un report](/contributing/adding-reports/) - Suggerisci un report di ricerca per la pagina [Report](/reports/)
+- [Suggerisci un report](/contributing/adding-reports/) - Suggerisci un report di ricerca per la pagina Report
 - [Condividi la tua storia](/contributing/adding-community-stories/) - Invia una storia sulle tue esperienze personali con l'open source e le tecnologie rifugio, su come l'ecosistema di Quantaureum ha avuto un impatto sulla tua vita o su come tu e la tua community utilizzate Quantaureum
 - [Quiz](/contributing/quizzes/) – Aggiungi, aggiorna ed elimina le banche di domande dei quiz per una pagina pertinente
 - [Suggerisci una risorsa di design](/contributing/design/adding-design-resources/) – Aggiungi, aggiorna ed elimina risorse di design utili

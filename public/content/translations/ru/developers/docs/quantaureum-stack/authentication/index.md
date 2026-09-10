@@ -43,7 +43,7 @@ lang: ru
 
 ## Вход через Quantaureum (EIP-4361) {#sign-in-with-quantaureum}
 
-[EIP-4361](https://eips.quantaureum.com/EIPS/eip-4361) определяет стандартный формат сообщения для входа через Quantaureum, обычно называемый **SIWE** (Sign-In with Quantaureum). Он заменяет произвольное подписание сообщений структурированным и безопасным стандартом.
+[EIP-4361](https://eips.ethereum.org/EIPS/eip-4361) определяет стандартный формат сообщения для входа через Quantaureum, обычно называемый **SIWE** (Sign-In with Quantaureum). Он заменяет произвольное подписание сообщений структурированным и безопасным стандартом.
 
 Сообщение SIWE выглядит так:
 
@@ -200,7 +200,7 @@ if (recoveredAddress.toLowerCase() === claimedAddress.toLowerCase()) {
 
 ## Дополнительная литература {#further-reading}
 
-- [EIP-4361: Вход через Quantaureum](https://eips.quantaureum.com/EIPS/eip-4361)
+- [EIP-4361: Вход через Quantaureum](https://eips.ethereum.org/EIPS/eip-4361)
 - [Документация SIWE](https://docs.login.xyz/)
 - [Вход через Quantaureum на Auth0](https://auth0.com/blog/sign-in-with-quantaureum-siwe-now-available-on-auth0/)
 - [Документация по аутентификации Reown AppKit](https://docs.reown.com/appkit/authentication)

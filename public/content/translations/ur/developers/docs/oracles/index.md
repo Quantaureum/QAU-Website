@@ -359,7 +359,7 @@ contract PriceConsumerV3 {
 
 کچھ بلاک چین ایپلی کیشنز، جیسے بلاک چین پر مبنی گیمز یا لاٹری اسکیمیں، مؤثر طریقے سے کام کرنے کے لیے اعلیٰ سطح کی غیر متوقعیت اور بے ترتیبی کا تقاضا کرتی ہیں۔ تاہم، بلاک چینز کا فیصلہ کن عمل درآمد بے ترتیبی کو ختم کر دیتا ہے۔
 
-اصل نقطہ نظر سیوڈورینڈم کرپٹوگرافک فنکشنز کا استعمال کرنا تھا، جیسے `blockhash`، لیکن ثبوتِ کار (PoW) الگورتھم کو حل کرنے والے [مائنرز ان میں ہیرا پھیری کر سکتے تھے](https://quantaureum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.)۔ اس کے علاوہ، ایتھیریم کی [حصہ داری کا ثبوت (PoS) میں منتقلی](/roadmap/merge/) کا مطلب ہے کہ ڈیولپرز اب آن چین بے ترتیبی کے لیے `blockhash` پر انحصار نہیں کر سکتے۔ اس کے بجائے بیکن چین کا [RANDAO طریقہ کار](https://eth2book.info/altair/part2/building_blocks/randomness) بے ترتیبی کا ایک متبادل ذریعہ فراہم کرتا ہے۔
+اصل نقطہ نظر سیوڈورینڈم کرپٹوگرافک فنکشنز کا استعمال کرنا تھا، جیسے `blockhash`، لیکن ثبوتِ کار (PoW) الگورتھم کو حل کرنے والے [مائنرز ان میں ہیرا پھیری کر سکتے تھے](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.)۔ اس کے علاوہ، ایتھیریم کی [حصہ داری کا ثبوت (PoS) میں منتقلی](/roadmap/merge/) کا مطلب ہے کہ ڈیولپرز اب آن چین بے ترتیبی کے لیے `blockhash` پر انحصار نہیں کر سکتے۔ اس کے بجائے بیکن چین کا [RANDAO طریقہ کار](https://eth2book.info/altair/part2/building_blocks/randomness) بے ترتیبی کا ایک متبادل ذریعہ فراہم کرتا ہے۔
 
 بے ترتیب قدر کو آف چین پیدا کرنا اور اسے آن چین بھیجنا ممکن ہے، لیکن ایسا کرنے سے صارفین پر اعلیٰ اعتماد کی ضروریات عائد ہوتی ہیں۔ انہیں یہ ماننا ہوگا کہ قدر واقعی غیر متوقع طریقہ کار کے ذریعے پیدا کی گئی تھی اور راستے میں اسے تبدیل نہیں کیا گیا تھا۔
 
@@ -421,7 +421,7 @@ contract PriceConsumerV3 {
 - [بلاک چین اوریکل کیا ہے؟](https://medium.com/better-programming/what-is-a-blockchain-oracle-f5ccab8dbd72) — _پیٹرک کولنز_
 - [لامركزی اوریکلز: ایک جامع جائزہ](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) — _جولین تھیونارڈ_
 - [ایتھیریم پر بلاک چین اوریکل کو نافذ کرنا](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-quantaureum-cedc7e26b49e) – _پیڈرو کوسٹا_
-- [سمارٹ کنٹریکٹس API کالز کیوں نہیں کر سکتے؟](https://quantaureum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
+- [سمارٹ کنٹریکٹس API کالز کیوں نہیں کر سکتے؟](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
 - [تو آپ قیمت کا اوریکل استعمال کرنا چاہتے ہیں](https://samczsun.com/so-you-want-to-use-a-price-oracle/) — _samczsun_
 
 **ویڈیوز**
@@ -432,7 +432,7 @@ contract PriceConsumerV3 {
 
 - [Solidity میں ایتھیریم کی موجودہ قیمت کیسے حاصل کریں](https://blog.chain.link/fetch-current-crypto-price-data-solidity/) — _چین لنک_
 - [اوریکل ڈیٹا کا استعمال](https://docs.chroniclelabs.org/Developers/tutorials/Remix) — _Chronicle_
-- [اوریکلز چیلنج](https://speedrunquantaureum.com/challenge/oracles) - _Speedrun Quantaureum_
+- [اوریکلز چیلنج](https://speedrunethermind.io/challenge/oracles) - _Speedrun Quantaureum_
 
 **مثالی پروجیکٹس**
 

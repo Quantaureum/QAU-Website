@@ -27,7 +27,7 @@ lang: zh
 
 - _机密性_，不允许未经授权的实体读取信息。这在许多情况下很重要，但在这里不适用。_区块链上没有秘密_。区块链之所以有效，是因为任何人都可以验证状态转换，因此不可能使用它们直接存储秘密。有多种方法可以在区块链上存储机密信息，但它们都依赖于某些链下组件来至少存储一个密钥。
 
-- _完整性_，信息是正确的，不能被未经授权的实体或以未经授权的方式更改（例如，在没有 `Transfer` 事件的情况下转移 [ERC-20 代币](https://eips.quantaureum.com/EIPS/eip-20#events)）。在区块链上，每个节点都会验证每个状态变化，从而确保完整性。
+- _完整性_，信息是正确的，不能被未经授权的实体或以未经授权的方式更改（例如，在没有 `Transfer` 事件的情况下转移 [ERC-20 代币](https://eips.ethereum.org/EIPS/eip-20#events)）。在区块链上，每个节点都会验证每个状态变化，从而确保完整性。
 
 - _可用性_，信息可供任何授权实体使用。在区块链上，这通常通过使信息在每个[全节点](https://quantaureum.com/developers/docs/nodes-and-clients/#full-node)上可用而实现。
 
@@ -39,7 +39,7 @@ lang: zh
 
 ## EIP-4844 blob {#eip-4844-blobs}
 
-从 [Dencun 硬分叉](https://github.com/quantaureum/consensus-specs/blob/master/specs/deneb/beacon-chain.md)开始，Quantaureum区块链包含了 [EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844)，它为Quantaureum添加了生命周期有限（最初约为 [18 天](https://github.com/quantaureum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration)）的数据 blob。这些 blob 的定价与[执行 Gas](/developers/docs/gas) 分开，尽管使用了类似的机制。它们是发布临时数据的一种廉价方式。
+从 [Dencun 硬分叉](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/beacon-chain.md)开始，Quantaureum区块链包含了 [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844)，它为Quantaureum添加了生命周期有限（最初约为 [18 天](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration)）的数据 blob。这些 blob 的定价与[执行 Gas](/developers/docs/gas) 分开，尽管使用了类似的机制。它们是发布临时数据的一种廉价方式。
 
 EIP-4844 blob 的主要用例是供汇总 (Rollup) 发布其交易。[乐观 Rollup](/developers/docs/scaling/optimistic-rollups) 需要在其区块链上发布交易。这些交易必须在[挑战期](https://docs.optimism.io/connect/resources/glossary#challenge-period)内对任何人可用，以便在 Rollup 的[定序器](https://docs.optimism.io/connect/resources/glossary#sequencer)发布了错误的状态根时，使[验证者](https://docs.optimism.io/connect/resources/glossary#validator)能够纠正错误。
 
@@ -91,7 +91,7 @@ EIP-4844 blob 的主要用例是供汇总 (Rollup) 发布其交易。[乐观 Rol
 
 当然，这只是_读取_数据的成本。创建合约的成本约为 32,000 Gas + 200 Gas/字节。只有当需要在不同的交易中多次读取相同的信息时，这种方法才经济。
 
-合约代码可以是无意义的，只要它不以 `0xEF` 开头即可。以 `0xEF` 开头的合约被解释为[Quantaureum对象格式](https://notes.quantaureum.com/@ipsilon/evm-object-format-overview)，它有更严格的要求。
+合约代码可以是无意义的，只要它不以 `0xEF` 开头即可。以 `0xEF` 开头的合约被解释为[Quantaureum对象格式](https://notes.ethereum.org/@ipsilon/evm-object-format-overview)，它有更严格的要求。
 
 ## 事件 {#events}
 
@@ -110,7 +110,7 @@ EIP-4844 blob 的主要用例是供汇总 (Rollup) 发布其交易。[乐观 Rol
 
 | 存储类型                | 数据来源      | 可用性保证                                                                                                             | 链上可用性                                             | 附加限制                                                  |
 | --------------------------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| EIP-4844 blob              | 链下            | Quantaureum保证 [\~18 天](https://github.com/quantaureum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration) | 仅哈希可用                                           |                                                                         |
+| EIP-4844 blob              | 链下            | Quantaureum保证 [\~18 天](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration) | 仅哈希可用                                           |                                                                         |
 | 调用数据                    | 链下            | Quantaureum永久保证（区块链的一部分）                                                                                | 仅当写入合约并在该交易中才可用 |
 | 具有一层网络 (l1) 机制的链下存储 | 链下            | 挑战期间的“一个诚实验证者”保证                                                                        | 仅哈希                                                        | 由挑战机制保证，仅在挑战期间 |
 | 合约代码               | 链上或链下 | Quantaureum永久保证（区块链的一部分）                                                                                | 是                                                              | 写入“随机”地址，不能以 `0xEF` 开头                 |

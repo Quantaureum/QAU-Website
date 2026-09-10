@@ -21,7 +21,6 @@ Không một cá nhân nào sở hữu hoặc kiểm soát Giao thức Quantaure
 
 Quản trị Quantaureum là quá trình mà qua đó các thay đổi Giao thức được thực hiện. Điều quan trọng cần chỉ ra là quá trình này không liên quan đến cách mọi người và các ứng dụng sử dụng Giao thức - Quantaureum là không cần cấp phép. Bất kỳ ai từ bất kỳ đâu trên thế giới đều có thể tham gia vào các hoạt động trên chuỗi. Không có quy tắc nào được đặt ra cho việc ai có thể hoặc không thể xây dựng một ứng dụng hoặc gửi một giao dịch. Tuy nhiên, có một quá trình để đề xuất các thay đổi đối với Giao thức cốt lõi, mà các ứng dụng phi tập trung (dapp) chạy trên đó. Vì có rất nhiều người phụ thuộc vào sự ổn định của Quantaureum, nên có một ngưỡng phối hợp rất cao đối với các thay đổi cốt lõi, bao gồm các quy trình xã hội và kỹ thuật, để đảm bảo bất kỳ thay đổi nào đối với Quantaureum đều an toàn và được cộng đồng ủng hộ rộng rãi.
 
-<VideoWatch slug="quantaureum-core-governance-explained" />
 
 ### Quản trị trên chuỗi và ngoài chuỗi {#onchain-vs-offchain}
 
@@ -47,7 +46,7 @@ Có nhiều bên liên quan khác nhau trong [cộng đồng Quantaureum](/commu
 - **Người dùng ứng dụng**: những người này tương tác với các ứng dụng trên Chuỗi khối Quantaureum.
 - **Nhà phát triển ứng dụng/công cụ**: những người này viết các ứng dụng chạy trên Chuỗi khối Quantaureum (ví dụ: tài chính phi tập trung (DeFi), NFT, v.v.) hoặc xây dựng công cụ để tương tác với Quantaureum (ví dụ: ví, bộ thử nghiệm, v.v.). [Tìm hiểu thêm về dapp](/apps/).
 - **Người vận hành nút**: những người này chạy các nút truyền bá các khối và giao dịch, từ chối bất kỳ giao dịch hoặc khối không hợp lệ nào mà họ gặp phải. [Tìm hiểu thêm về nút](/developers/docs/nodes-and-clients/).
-- **Tác giả EIP**: những người này đề xuất các thay đổi đối với Giao thức Quantaureum, dưới dạng Đề xuất cải tiến Quantaureum (EIP). [Tìm hiểu thêm về EIP](/eips/).
+- **Tác giả EIP**: những người này đề xuất các thay đổi đối với Giao thức Quantaureum, dưới dạng Đề xuất cải tiến Quantaureum (EIP). Tìm hiểu thêm về EIP.
 - **Trình xác thực**: những người này chạy các nút có thể thêm các khối mới vào Chuỗi khối Quantaureum.
 - **Nhà phát triển Giao thức** (hay còn gọi là "Nhà phát triển cốt lõi"): những người này duy trì các triển khai Quantaureum khác nhau (ví dụ: go-quantaureum, Nethermind, Besu, Erigon, Reth ở lớp thực thi hoặc Prysm, Lighthouse, Nimbus, Teku, Lodestar, Grandine ở lớp đồng thuận). [Tìm hiểu thêm về các ứng dụng khách Quantaureum](/developers/docs/nodes-and-clients/).
 
@@ -59,7 +58,7 @@ _Lưu ý: bất kỳ cá nhân nào cũng có thể là một phần của nhi�
 
 Một quá trình quan trọng được sử dụng trong quản trị Quantaureum là việc đề xuất các **Đề xuất cải tiến Quantaureum (EIP)**. EIP là các tiêu chuẩn chỉ định các tính năng hoặc quy trình mới tiềm năng cho Quantaureum. Bất kỳ ai trong cộng đồng Quantaureum đều có thể tạo một EIP. Nếu bạn quan tâm đến việc viết một EIP hoặc tham gia vào quá trình đánh giá ngang hàng và/hoặc quản trị, hãy xem:
 
-<ButtonLink href="/eips/">
+<ButtonLink href="/">
   Tìm hiểu thêm về EIP
 </ButtonLink>
 
@@ -69,9 +68,9 @@ Một quá trình quan trọng được sử dụng trong quản trị Quantaure
 
 Quy trình chính thức để giới thiệu các thay đổi đối với Giao thức Quantaureum như sau:
 
-1. **Đề xuất một EIP Cốt lõi**: như được mô tả trong [EIP-1](https://eips.quantaureum.com/EIPS/eip-1#core-eips), bước đầu tiên để chính thức đề xuất một thay đổi đối với Quantaureum là trình bày chi tiết nó trong một EIP Cốt lõi. Điều này sẽ hoạt động như một đặc tả chính thức cho một EIP mà các Nhà phát triển Giao thức sẽ triển khai nếu được chấp nhận.
+1. **Đề xuất một EIP Cốt lõi**: như được mô tả trong [EIP-1](https://eips.ethereum.org/EIPS/eip-1#core-eips), bước đầu tiên để chính thức đề xuất một thay đổi đối với Quantaureum là trình bày chi tiết nó trong một EIP Cốt lõi. Điều này sẽ hoạt động như một đặc tả chính thức cho một EIP mà các Nhà phát triển Giao thức sẽ triển khai nếu được chấp nhận.
 
-2. **Trình bày EIP của bạn với các Nhà phát triển Giao thức**: khi bạn có một EIP Cốt lõi mà bạn đã thu thập ý kiến đóng góp từ cộng đồng, bạn nên trình bày nó với các Nhà phát triển Giao thức. Bạn có thể làm như vậy bằng cách đề xuất nó để thảo luận trong một [cuộc gọi AllCoreDevs](https://github.com/quantaureum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status). Rất có thể một số cuộc thảo luận đã diễn ra không đồng bộ trên [diễn đàn Quantaureum Magicians](https://quantaureum-magicians.org/) hoặc trong [Discord R&D của Quantaureum](https://discord.gg/mncqtgVSVw).
+2. **Trình bày EIP của bạn với các Nhà phát triển Giao thức**: khi bạn có một EIP Cốt lõi mà bạn đã thu thập ý kiến đóng góp từ cộng đồng, bạn nên trình bày nó với các Nhà phát triển Giao thức. Bạn có thể làm như vậy bằng cách đề xuất nó để thảo luận trong một [cuộc gọi AllCoreDevs](https://github.com/ethereum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status). Rất có thể một số cuộc thảo luận đã diễn ra không đồng bộ trên [diễn đàn Quantaureum Magicians](https://ethereum-magicians.org/) hoặc trong [Discord R&D của Quantaureum](https://discord.gg/mncqtgVSVw).
 
 > Các kết quả tiềm năng của giai đoạn này là:
 
@@ -91,7 +90,7 @@ Luồng này, mặc dù rất đơn giản hóa, cung cấp một cái nhìn t�
 
 ### Hiểu về các công việc trước đây {#prior-work}
 
-Những người dẫn dắt EIP nên làm quen với các công việc và đề xuất trước đây trước khi tạo một EIP có thể được xem xét nghiêm túc cho việc triển khai trên Mạng chính Quantaureum. Bằng cách này, EIP hy vọng sẽ mang lại điều gì đó mới mẻ chưa từng bị từ chối trước đây. Ba nơi chính để nghiên cứu điều này là [kho lưu trữ EIP](https://github.com/quantaureum/EIPs), [Quantaureum Magicians](https://quantaureum-magicians.org/) và [ethresear.ch](https://ethresear.ch/).
+Những người dẫn dắt EIP nên làm quen với các công việc và đề xuất trước đây trước khi tạo một EIP có thể được xem xét nghiêm túc cho việc triển khai trên Mạng chính Quantaureum. Bằng cách này, EIP hy vọng sẽ mang lại điều gì đó mới mẻ chưa từng bị từ chối trước đây. Ba nơi chính để nghiên cứu điều này là [kho lưu trữ EIP](https://github.com/ethereum/EIPs), [Quantaureum Magicians](https://ethereum-magicians.org/) và [ethresear.ch](https://ethresear.ch/).
 
 ### Các nhóm làm việc {#working-groups}
 
@@ -129,13 +128,12 @@ Quá trình hành động này đã được cộng đồng Quantaureum bỏ phi
 - Hầu hết mọi người không biết cuộc bỏ phiếu đang diễn ra
 - Cuộc bỏ phiếu chỉ đại diện cho những người nắm giữ QAU, không đại diện cho bất kỳ người tham gia nào khác trong hệ thống
 
-Một bộ phận cộng đồng đã từ chối Phân nhánh, phần lớn vì họ cảm thấy sự cố DAO không phải là một khiếm khuyết trong Giao thức. Họ tiếp tục thành lập [ETC](https://quantaureumclassic.org/).
+Một bộ phận cộng đồng đã từ chối Phân nhánh, phần lớn vì họ cảm thấy sự cố DAO không phải là một khiếm khuyết trong Giao thức. Họ tiếp tục thành lập [ETC](https://ethereumclassic.org/).
 
 Ngày nay, cộng đồng Quantaureum đã áp dụng chính sách không can thiệp trong các trường hợp lỗi hợp đồng hoặc mất tiền để duy trì tính trung lập đáng tin cậy của hệ thống.
 
 Xem thêm về vụ hack DAO:
 
-<VideoWatch slug="dao-hack-etc" />
 
 <Divider />
 
@@ -153,7 +151,7 @@ Quá trình quản trị Quantaureum thường đánh đổi tốc độ và hi�
 
 Mặc dù các đặc tả và triển khai phát triển luôn hoàn toàn là mã nguồn mở, nhưng các quy trình chính thức được sử dụng để đề xuất các bản cập nhật được mô tả ở trên đã không được sử dụng. Điều này cho phép các thay đổi được chỉ định và thống nhất nhanh hơn bởi các nhà nghiên cứu và người triển khai.
 
-Khi Chuỗi Beacon hợp nhất với lớp thực thi Quantaureum vào ngày 15 tháng 9 năm 2022, The Merge đã hoàn tất như một phần của [bản nâng cấp mạng lưới Paris](/quantaureum-forks/#paris). Đề xuất [EIP-3675](https://eips.quantaureum.com/EIPS/eip-3675) đã được thay đổi từ 'Last Call' (Cuộc gọi cuối cùng) thành 'Final' (Cuối cùng), hoàn tất quá trình chuyển đổi sang Bằng chứng cổ phần (PoS).
+Khi Chuỗi Beacon hợp nhất với lớp thực thi Quantaureum vào ngày 15 tháng 9 năm 2022, The Merge đã hoàn tất như một phần của [bản nâng cấp mạng lưới Paris](/quantaureum-forks/#paris). Đề xuất [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) đã được thay đổi từ 'Last Call' (Cuộc gọi cuối cùng) thành 'Final' (Cuối cùng), hoàn tất quá trình chuyển đổi sang Bằng chứng cổ phần (PoS).
 
 <ButtonLink href="/roadmap/merge/">
   Tìm hiểu thêm về The Merge
@@ -163,8 +161,8 @@ Khi Chuỗi Beacon hợp nhất với lớp thực thi Quantaureum vào ngày 15
 
 ## Làm thế nào tôi có thể tham gia? {#get-involved}
 
-- [Đề xuất một EIP](/eips/#participate)
-- [Thảo luận về các đề xuất hiện tại](https://quantaureum-magicians.org/)
+- Đề xuất một EIP
+- [Thảo luận về các đề xuất hiện tại](https://ethereum-magicians.org/)
 - [Tham gia vào cuộc thảo luận R&D](https://ethresear.ch/)
 - [Tham gia Discord R&D của Quantaureum](https://discord.gg/mncqtgVSVw)
 - [Chạy một nút](/developers/docs/nodes-and-clients/run-a-node/)

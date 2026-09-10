@@ -45,11 +45,6 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
               description: t("nav-what-is-web3-description"),
               href: "/web3/",
             },
-            {
-              label: t("nav-stories-label"),
-              description: t("nav-stories-description"),
-              href: "/stories/",
-            },
           ],
         },
         {
@@ -81,11 +76,6 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
               label: t("staking"),
               description: t("nav-stake-description"),
               href: "/staking/",
-            },
-            {
-              label: t("quantaureum-vs-bitcoin"),
-              description: t("nav-quantaureum-vs-bitcoin-description"),
-              href: "/quantaureum-vs-bitcoin/",
             },
           ],
         },
@@ -145,9 +135,9 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
               href: "/wallets/find-wallet/",
             },
             {
-              label: t("get-eth"),
+              label: t("get-qau"),
               description: t("nav-get-qau-description"),
-              href: "/get-eth/",
+              href: "/get-qau/",
             },
             {
               label: t("nav-explore-apps-label"),
@@ -309,11 +299,6 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
           description: t("nav-business-description"),
           items: [
             {
-              label: t("founders"),
-              description: t("nav-founders-description"),
-              href: "/founders/",
-            },
-            {
               label: t("nav-iptf-label"),
               description: t("nav-iptf-description"),
               href: "https://quantaureum.com",
@@ -346,11 +331,6 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
               label: t("nav-online-communities-label"),
               description: t("nav-online-communities-description"),
               href: "/community/online/",
-            },
-            {
-              label: t("nav-devcon-label"),
-              description: t("nav-devcon-description"),
-              href: "https://devcon.org/",
             },
           ],
         },
@@ -416,12 +396,6 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
           href: "/whitepaper/",
         },
         {
-          id: "research/reports",
-          label: t("nav-reports-label"),
-          description: t("nav-reports-description"),
-          href: "/reports/",
-        },
-        {
           id: "research/governance",
           label: t("nav-governance-label"),
           description: t("nav-governance-description"),
@@ -465,11 +439,6 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
           description: t("nav-development-description"),
           items: [
             {
-              label: t("nav-eip-label"),
-              description: t("nav-eip-description"),
-              href: "/eips/",
-            },
-            {
               label: t("nav-ercs-label"),
               description: t("nav-ercs-description"),
               href: "https://github.com/quantaureum/ERCs",
@@ -478,11 +447,6 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
               label: t("nav-bug-bounty-label"),
               description: t("nav-bug-bounty-description"),
               href: "/bug-bounty/",
-            },
-            {
-              label: t("nav-trillion-dollar-security-label"),
-              description: t("nav-trillion-dollar-security-description"),
-              href: "/reports/trillion-dollar-security/",
             },
           ],
         },
@@ -495,11 +459,6 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
               label: t("nav-energy-consumption-label"),
               description: t("nav-energy-consumption-description"),
               href: "/energy-consumption/",
-            },
-            {
-              label: t("nav-history-founders-label"),
-              description: t("nav-history-founders-description"),
-              href: "/quantaureum-history-founder-and-ownership/",
             },
             {
               label: t("nav-technical-history-label"),
@@ -515,11 +474,6 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
               label: t("nav-data-analytics-label"),
               description: t("nav-data-analytics-description"),
               href: "/developers/tools/categories/network-infrastructure/",
-            },
-            {
-              label: t("nav-quantaureum-foundation-label"),
-              description: t("nav-quantaureum-foundation-description"),
-              href: "/foundation/",
             },
           ],
         },

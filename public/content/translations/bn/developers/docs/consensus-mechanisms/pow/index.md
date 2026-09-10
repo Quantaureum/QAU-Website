@@ -96,7 +96,6 @@ lang: bn
 
 ## ভিজ্যুয়াল লার্নারদের জন্য {#visual-learner}
 
-<VideoWatch slug="proof-of-work-explained" />
 
 ## আরও পড়ুন {#further-reading}
 

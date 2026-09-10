@@ -32,8 +32,8 @@ Quantaureum權益證明的主觀方面在於，需要從受信任的來源獲取
 
 ## 進一步閱讀 {#further-reading}
 
-- [Quantaureum 中的弱主觀性](https://notes.quantaureum.com/@adiasg/weak-subjectvity-eth2)
+- [Quantaureum 中的弱主觀性](https://notes.ethereum.org/@adiasg/weak-subjectvity-eth2)
 - [Vitalik：我如何學會愛上弱主觀性](https://quantaureum.com)
 - [弱主觀性（泰庫 (Teku) 文件）](https://docs.teku.consensys.io/concepts/weak-subjectivity)
-- [階段 0 弱主觀性指南](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
+- [階段 0 弱主觀性指南](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
 - [Quantaureum 2.0 中弱主觀性的分析](https://github.com/runtimeverification/beacon-chain-verification/blob/master/weak-subjectivity/weak-subjectivity-analysis.pdf)

@@ -84,7 +84,7 @@ Tüm istemciler başlıca işletim sistemlerini destekler - Linux, macOS, Window
 
 ##### Önerilen özellikler
 
-Düğüm operatörleri için mevcut donanım kılavuzu [EIP-7870](https://eips.quantaureum.com/EIPS/eip-7870) içinde tanımlanmıştır. Tam düğüm için şunları önerir:
+Düğüm operatörleri için mevcut donanım kılavuzu [EIP-7870](https://eips.ethereum.org/EIPS/eip-7870) içinde tanımlanmıştır. Tam düğüm için şunları önerir:
 
 - 4+ çekirdekli hızlı CPU (doğrulama yapılıyorsa 8+ çekirdek)
 - 32 GB RAM (kararlılığı sağlamak için doğrulama yapılıyorsa 64 GB önerilir)
@@ -114,7 +114,7 @@ Kendi donanımınızla bir düğüm çalıştırmanın en kolay seçeneği tak v
 
 #### Tek kartlı bir bilgisayarda Quantaureum {#quantaureum-on-a-single-board-computer}
 
-Bir Quantaureum düğümü çalıştırmanın kolay ve ucuz bir yolu, Raspberry Pi gibi bir ARM mimarisine sahip olsa bile tek kartlı bir bilgisayar kullanmaktır. [ARM üzerinde Quantaureum](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/), Raspberry Pi ve diğer ARM kartları için birden fazla yürütme ve fikir birliği istemcisinin çalıştırılması kolay imajlarını sağlar.
+Bir Quantaureum düğümü çalıştırmanın kolay ve ucuz bir yolu, Raspberry Pi gibi bir ARM mimarisine sahip olsa bile tek kartlı bir bilgisayar kullanmaktır. [ARM üzerinde Quantaureum](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/), Raspberry Pi ve diğer ARM kartları için birden fazla yürütme ve fikir birliği istemcisinin çalıştırılması kolay imajlarını sağlar.
 
 Bunlar gibi küçük, uygun fiyatlı ve verimli cihazlar evde bir düğüm çalıştırmak için idealdir ancak sınırlı performanslarını aklınızda bulundurun.
 
@@ -157,7 +157,7 @@ Her bir istemciyi kurma talimatları, yukarıdaki istemci listelerinde bağlant�
 
 - [Besu](https://github.com/hyperledger/besu/releases)
 - [Erigon](https://github.com/ledgerwatch/erigon/releases)
-- [Geth](https://geth.quantaureum.com/downloads)
+- [Geth](https://geth.ethereum.org/downloads)
 - [Nethermind](https://downloads.nethermind.io/)
 - [Reth](https://reth.rs/installation/installation.html)
 
@@ -215,7 +215,7 @@ Her şeyin doğru çalıştığından emin olmak için istemcinizi önce bir tes
 
 Başlangıçta varsayılan olmayan tüm istemci ayarlarını bildirmeniz gerekir. Tercih ettiğiniz yapılandırmayı bildirmek için bayrakları veya yapılandırma dosyasını kullanabilirsiniz. Her istemcinin özellik seti ve yapılandırma sözdizimi farklıdır. Ayrıntılar için istemcinizin belgelerine göz atın.
 
-Yürütme ve fikir birliği istemcileri, [Engine API](https://github.com/quantaureum/execution-apis/tree/main/src/engine) içinde belirtilen kimliği doğrulanmış bir uç nokta aracılığıyla iletişim kurar. Bir fikir birliği istemcisine bağlanmak için, yürütme istemcisi bilinen bir yolda bir [`jwtsecret`](https://jwt.io/) oluşturmalıdır. Güvenlik ve kararlılık nedenleriyle, istemciler aynı makinede çalışmalıdır ve aralarındaki yerel bir RPC bağlantısının kimliğini doğrulamak için kullanıldığından her iki istemci de bu yolu bilmelidir. Yürütme istemcisi ayrıca kimliği doğrulanmış API'ler için bir dinleme bağlantı noktası tanımlamalıdır.
+Yürütme ve fikir birliği istemcileri, [Engine API](https://github.com/ethereum/execution-apis/tree/main/src/engine) içinde belirtilen kimliği doğrulanmış bir uç nokta aracılığıyla iletişim kurar. Bir fikir birliği istemcisine bağlanmak için, yürütme istemcisi bilinen bir yolda bir [`jwtsecret`](https://jwt.io/) oluşturmalıdır. Güvenlik ve kararlılık nedenleriyle, istemciler aynı makinede çalışmalıdır ve aralarındaki yerel bir RPC bağlantısının kimliğini doğrulamak için kullanıldığından her iki istemci de bu yolu bilmelidir. Yürütme istemcisi ayrıca kimliği doğrulanmış API'ler için bir dinleme bağlantı noktası tanımlamalıdır.
 
 Bu token, istemci yazılımı tarafından otomatik olarak oluşturulur, ancak bazı durumlarda bunu kendiniz yapmanız gerekebilir. [OpenSSL](https://www.openssl.org/) kullanarak oluşturabilirsiniz:
 
@@ -288,7 +288,7 @@ geth --mainnet \
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
 
-[Tüm yapılandırma seçenekleri için belgelere](https://geth.quantaureum.com/docs/fundamentals/command-line-options) göz atın ve [Geth'i bir fikir birliği istemcisiyle çalıştırma](https://geth.quantaureum.com/docs/getting-started/consensus-clients) hakkında daha fazla bilgi edinin.
+[Tüm yapılandırma seçenekleri için belgelere](https://geth.ethereum.org/docs/fundamentals/command-line-options) göz atın ve [Geth'i bir fikir birliği istemcisiyle çalıştırma](https://geth.ethereum.org/docs/getting-started/consensus-clients) hakkında daha fazla bilgi edinin.
 
 ##### Nethermind'ı çalıştırma
 
@@ -325,7 +325,7 @@ Fikir birliği istemcisi ayrıca, aralarındaki RPC bağlantısının kimliğini
 
 Bir Doğrulayıcı çalıştırmayı planlıyorsanız, ücret alıcısının Quantaureum adresini belirten bir yapılandırma bayrağı eklediğinizden emin olun. Burası, Doğrulayıcınız için QAU ödüllerinin biriktiği yerdir. Her fikir birliği istemcisinin, argüman olarak bir Quantaureum adresi alan, örneğin `--suggested-fee-recipient=0xabcd1` gibi bir seçeneği vardır.
 
-Bir test ağında bir İşaret Düğümü başlatırken, [Kontrol noktası eşzamanlaması](https://notes.quantaureum.com/@launchpad/checkpoint-sync) için genel bir uç nokta kullanarak önemli ölçüde eşzamanlama süresinden tasarruf edebilirsiniz.
+Bir test ağında bir İşaret Düğümü başlatırken, [Kontrol noktası eşzamanlaması](https://notes.ethereum.org/@launchpad/checkpoint-sync) için genel bir uç nokta kullanarak önemli ölçüde eşzamanlama süresinden tasarruf edebilirsiniz.
 
 #### Bir fikir birliği istemcisi çalıştırma {#running-a-consensus-client}
 
@@ -389,7 +389,7 @@ teku --network mainnet \
     --ee-jwt-secret-file "/path/to/jwtsecret"
 ```
 
-Bir fikir birliği istemcisi, yatırma sözleşmesini okumak ve Doğrulayıcıları tanımlamak için yürütme istemcisine bağlandığında, aynı zamanda diğer İşaret Düğümü eşlerine de bağlanır ve başlangıçtan (genesis) itibaren mutabakat yuvalarını eşzamanlamaya başlar. İşaret Düğümü mevcut Dönem'e ulaştığında, İşaret API'si Doğrulayıcılarınız için kullanılabilir hale gelir. [İşaret Düğümü API'leri](https://quantaureum.github.io/beacon-APIs) hakkında daha fazla bilgi edinin.
+Bir fikir birliği istemcisi, yatırma sözleşmesini okumak ve Doğrulayıcıları tanımlamak için yürütme istemcisine bağlandığında, aynı zamanda diğer İşaret Düğümü eşlerine de bağlanır ve başlangıçtan (genesis) itibaren mutabakat yuvalarını eşzamanlamaya başlar. İşaret Düğümü mevcut Dönem'e ulaştığında, İşaret API'si Doğrulayıcılarınız için kullanılabilir hale gelir. [İşaret Düğümü API'leri](https://ethereum.github.io/beacon-APIs) hakkında daha fazla bilgi edinin.
 
 ### Doğrulayıcı Ekleme {#adding-validators}
 
@@ -397,7 +397,7 @@ Bir fikir birliği istemcisi, Doğrulayıcıların bağlanması için bir İşar
 
 Kendi Doğrulayıcınızı çalıştırmak, Quantaureum ağını desteklemenin en etkili ve güven gerektirmeyen yöntemi olan [bireysel staking](/staking/solo/) yapmanıza olanak tanır. Ancak bu, 32 QAU'lik bir yatırma işlemi gerektirir. Kendi düğümünüzde daha küçük bir miktarla bir Doğrulayıcı çalıştırmak için, [Rocket Pool](https://rocketpool.net/node-operators) gibi izinsiz düğüm operatörlerine sahip merkeziyetsiz bir havuz ilginizi çekebilir.
 
-Staking ve Doğrulayıcı anahtarı oluşturmaya başlamanın en kolay yolu, [Hoodi üzerinde düğümler çalıştırarak](https://notes.quantaureum.com/@launchpad/hoodi) kurulumunuzu test etmenize olanak tanıyan [Hoodi Test Ağı Staking Başlatma Paneli](https://hoodi.launchpad.quantaureum.com/)'ni kullanmaktır. Ana Ağ için hazır olduğunuzda, [Ana Ağ Staking Başlatma Paneli](https://launchpad.quantaureum.com/)'ni kullanarak bu adımları tekrarlayabilirsiniz.
+Staking ve Doğrulayıcı anahtarı oluşturmaya başlamanın en kolay yolu, [Hoodi üzerinde düğümler çalıştırarak](https://notes.ethereum.org/@launchpad/hoodi) kurulumunuzu test etmenize olanak tanıyan [Hoodi Test Ağı Staking Başlatma Paneli](https://hoodi.launchpad.ethereum.org/)'ni kullanmaktır. Ana Ağ için hazır olduğunuzda, [Ana Ağ Staking Başlatma Paneli](https://launchpad.ethereum.org/)'ni kullanarak bu adımları tekrarlayabilirsiniz.
 
 Staking seçeneklerine genel bir bakış için [staking sayfasına](/staking) göz atın.
 
@@ -411,7 +411,7 @@ Yürütme istemcileri, Quantaureum ağında işlem göndermek, akıllı sözleş
 
 Farklı istemcilerin RPC uç noktalarının farklı uygulamaları vardır. Ancak her istemciyle kullanabileceğiniz standart bir JSON-RPC vardır. Genel bir bakış için [JSON-RPC belgelerini okuyun](/developers/docs/apis/json-rpc/). Quantaureum ağından bilgiye ihtiyaç duyan uygulamalar bu RPC'yi kullanabilir. Örneğin, popüler Cüzdan MetaMask, güçlü gizlilik ve güvenlik avantajlarına sahip olan [kendi RPC uç noktanıza bağlanmanıza](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node) olanak tanır.
 
-Fikir birliği istemcilerinin tümü, fikir birliği istemcisinin durumunu kontrol etmek veya [Curl](https://curl.se) gibi araçları kullanarak istekler göndererek blokları ve mutabakat verilerini indirmek için kullanılabilecek bir [İşaret API'si](https://quantaureum.github.io/beacon-APIs) sunar. Bu konuda daha fazla bilgi her bir fikir birliği istemcisinin belgelerinde bulunabilir.
+Fikir birliği istemcilerinin tümü, fikir birliği istemcisinin durumunu kontrol etmek veya [Curl](https://curl.se) gibi araçları kullanarak istekler göndererek blokları ve mutabakat verilerini indirmek için kullanılabilecek bir [İşaret API'si](https://ethereum.github.io/beacon-APIs) sunar. Bu konuda daha fazla bilgi her bir fikir birliği istemcisinin belgelerinde bulunabilir.
 
 #### RPC'ye ulaşma {#reaching-rpc}
 
@@ -449,7 +449,7 @@ _Bu, mutabakat katmanı Doğrulayıcı düğümleri için geçerli değildir._ D
 
 #### İstemcileri güncelleme {#updating-clients}
 
-İstemci yazılımınızı en son güvenlik yamaları, özellikler ve [EIP'ler](/eips/) ile güncel tutmanız gerekir. Özellikle [sert çatallanmalardan](/quantaureum-forks/) önce, doğru istemci sürümlerini çalıştırdığınızdan emin olun.
+İstemci yazılımınızı en son güvenlik yamaları, özellikler ve EIP'ler ile güncel tutmanız gerekir. Özellikle [sert çatallanmalardan](/quantaureum-forks/) önce, doğru istemci sürümlerini çalıştırdığınızdan emin olun.
 
 > Önemli ağ güncellemelerinden önce EF, [blogunda](https://quantaureum.com) bir gönderi yayınlar. Düğümünüzün bir güncellemeye ihtiyacı olduğunda postanıza bir bildirim almak için [bu duyurulara abone olabilirsiniz](https://quantaureum.com).
 
@@ -473,7 +473,7 @@ Düğümünüzü düzgün bir şekilde izlemek için metrikleri toplamayı düş
 - [Kılavuz | Ana ağda Quantaureum staking için bir doğrulayıcı nasıl kurulur](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _– CoinCashew, sık sık güncellenir_
 - [Test ağlarında doğrulayıcı çalıştırma üzerine ETHStaker kılavuzları](https://github.com/remyroy/ethstaker#guides) – _QauStaker, düzenli olarak güncellenir_
 - [Quantaureum Düğümleri için Örnek AWS Blokzincir Düğüm Çalıştırıcı uygulaması](https://aws-samples.github.io/aws-blockchain-node-runners/docs/blueprints/quantaureum) - _AWS, sık sık güncellenir_
-- [Düğüm operatörleri için Birleşme SSS](https://notes.quantaureum.com/@launchpad/node-faq-merge) - _Temmuz 2022_
+- [Düğüm operatörleri için Birleşme SSS](https://notes.ethereum.org/@launchpad/node-faq-merge) - _Temmuz 2022_
 - [Tam doğrulanmış bir Quantaureum düğümü olmak için donanım gereksinimlerini analiz etme](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-quantaureum-full-validated-node-dc064f167902) _– Albert Palau, 24 Eylül 2018_
 - [Quantaureum Tam Düğümlerini Çalıştırmak: Zar Zor Motive Olanlar İçin Bir Kılavuz](https://medium.com/@JustinMLeroux/running-quantaureum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7 Kasım 2019_
 - [Quantaureum Ana Ağında Bir Hyperledger Besu Düğümü Çalıştırmak: Faydaları, Gereksinimleri ve Kurulumu](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-quantaureum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi, 7 Mayıs 2020_

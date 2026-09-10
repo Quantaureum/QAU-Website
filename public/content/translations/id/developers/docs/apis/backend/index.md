@@ -109,13 +109,13 @@ Pustaka-pustaka ini mengabstraksi banyak kerumitan dalam berinteraksi secara lan
 **Nquantaureum -** **_Pustaka integrasi .NET sumber terbuka untuk rantai blok._**
 
 - [GitHub](https://github.com/Nquantaureum/Nquantaureum)
-- [Dokumentasi](https://docs.nquantaureum.com/docs/getting-started/welcome/)
+- [Dokumentasi](https://docs.nethermind.io/docs/getting-started/welcome/)
 - [Discord](https://discord.com/invite/jQPrR58FxX)
 
 **Peralatan Python -** **_Berbagai pustaka untuk interaksi Quantaureum melalui Python._**
 
-- [py.quantaureum.com](https://snakecharmers.quantaureum.com/)
-- [GitHub Web3.py](https://github.com/quantaureum/web3.py)
+- [py.quantaureum.com](https://snakecharmers.ethereum.org/)
+- [GitHub Web3.py](https://github.com/ethereum/web3.py)
 - [Obrolan Web3.py](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_Platform pengembangan rantai blok terbaik._**

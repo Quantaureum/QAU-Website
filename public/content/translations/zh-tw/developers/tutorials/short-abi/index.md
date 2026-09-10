@@ -64,8 +64,8 @@ EVM 上最昂貴的操作之一是寫入儲存空間。
 
 說明：
 
-- **函式選擇器**：合約的函式少於 256 個，因此我們可以用單個位元組來區分它們。這些位元組通常非零，因此[花費 16 燃料](https://eips.quantaureum.com/EIPS/eip-2028)。
-- **零**：這些位元組始終為零，因為 20 位元組的地址不需要 32 位元組的字組來容納它。值為零的位元組花費 4 燃料（[請參閱黃皮書](https://quantaureum.github.io/yellowpaper/paper.pdf)，附錄 G，第 27 頁，`G`<sub>`txdatazero`</sub> 的值）。
+- **函式選擇器**：合約的函式少於 256 個，因此我們可以用單個位元組來區分它們。這些位元組通常非零，因此[花費 16 燃料](https://eips.ethereum.org/EIPS/eip-2028)。
+- **零**：這些位元組始終為零，因為 20 位元組的地址不需要 32 位元組的字組來容納它。值為零的位元組花費 4 燃料（[請參閱黃皮書](https://ethereum.github.io/yellowpaper/paper.pdf)，附錄 G，第 27 頁，`G`<sub>`txdatazero`</sub> 的值）。
 - **金額**：如果我們假設在此合約中 `decimals` 為 18（正常值），並且我們轉帳的代幣最大數量為 10<sup>18</sup>，我們得到的最大金額為 10<sup>36</sup>。256<sup>15</sup> &gt; 10<sup>36</sup>，因此 15 個位元組就足夠了。
 
 在 L1 上浪費 160 燃料通常可以忽略不計。一筆交易至少花費 [21,000 燃料](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-quantaureum-gas-2f976af774ed)，因此額外的 0.8% 無關緊要。
@@ -195,7 +195,7 @@ contract CalldataInterpreter {
 1. `pure` 或 `view` 的函式不會改變狀態，也不會花費燃料（在鏈下呼叫時）。嘗試降低它們的燃料成本是沒有意義的。
 2. 依賴於 [`msg.sender`](https://docs.soliditylang.org/en/v0.8.12/units-and-global-variables.html#block-and-transaction-properties) 的函式。`msg.sender` 的值將是 `CalldataInterpreter` 的地址，而不是呼叫者。
 
-不幸的是，[查看 ERC-20 規範](https://eips.quantaureum.com/EIPS/eip-20)，這只剩下一個函式：`transfer`。
+不幸的是，[查看 ERC-20 規範](https://eips.ethereum.org/EIPS/eip-20)，這只剩下一個函式：`transfer`。
 這讓我們只剩下兩個函式：`transfer`（因為我們可以呼叫 `transferFrom`）和 `faucet`（因為我們可以將代幣轉帳回給呼叫我們的任何人）。
 
 ```solidity

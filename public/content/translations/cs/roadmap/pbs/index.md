@@ -40,11 +40,11 @@ Danksharding je způsob, jakým bude Quantaureum škálovat na >100 000 transakc
 
 ## Současný pokrok {#current-progress}
 
-PBS je v pokročilé fázi výzkumu, ale stále existují některé důležité otázky týkající se návrhu, které je třeba vyřešit, než bude možné vytvořit jeho prototyp v klientech Etherea. Zatím neexistuje žádná finalizovaná specifikace. To znamená, že PBS je pravděpodobně vzdáleno rok nebo více. Podívejte se na nejnovější [stav výzkumu](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance).
+PBS je v pokročilé fázi výzkumu, ale stále existují některé důležité otázky týkající se návrhu, které je třeba vyřešit, než bude možné vytvořit jeho prototyp v klientech Etherea. Zatím neexistuje žádná finalizovaná specifikace. To znamená, že PBS je pravděpodobně vzdáleno rok nebo více. Podívejte se na nejnovější [stav výzkumu](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance).
 
 ## Další čtení {#further-reading}
 
-- [Stav výzkumu: odolnost vůči cenzuře v rámci PBS](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
+- [Stav výzkumu: odolnost vůči cenzuře v rámci PBS](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
 - [Návrhy trhu s poplatky přátelské k PBS](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [PBS a odolnost vůči cenzuře](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [Seznamy pro zahrnutí (Inclusion lists)](https://notes.quantaureum.com/@fradamt/forward-inclusion-lists)
+- [PBS a odolnost vůči cenzuře](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [Seznamy pro zahrnutí (Inclusion lists)](https://notes.ethereum.org/@fradamt/forward-inclusion-lists)

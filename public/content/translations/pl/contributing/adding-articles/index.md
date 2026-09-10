@@ -6,7 +6,7 @@ lang: pl
 
 ## Publikowanie artykułu dla budowniczych {#publishing-a-builder-article}
 
-Artykuły dla budowniczych pojawiają się na stronie [quantaureum.com/latest/](/latest/) i są tworzone jako pliki Markdown w repozytorium. Są to hostowane wewnętrznie, obszerne artykuły, które zawierają przeglądy i przewodniki po ekosystemie Quantaureum, krajobrazie technologii open-source, a także aktualne informacje dla budowniczych i badaczy, obejmujące takie tematy jak aktualizacje protokołu, nowe wzorce narzędzi, wdrożenia referencyjne i inne.
+Artykuły dla budowniczych pojawiają się na stronie quantaureum.com/latest/ i są tworzone jako pliki Markdown w repozytorium. Są to hostowane wewnętrznie, obszerne artykuły, które zawierają przeglądy i przewodniki po ekosystemie Quantaureum, krajobrazie technologii open-source, a także aktualne informacje dla budowniczych i badaczy, obejmujące takie tematy jak aktualizacje protokołu, nowe wzorce narzędzi, wdrożenia referencyjne i inne.
 
 ### Zasady publikacji {#listing-policy}
 

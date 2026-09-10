@@ -62,4 +62,4 @@ template: roadmap
 ## قراءة إضافية {#further-reading}
 
 - [فيتاليك يتحدث عن نهائية الخانة الواحدة (SSF) في مؤتمر EDCON لعام 2022](https://www.youtube.com/watch?v=nPgUKNPWXNI)
-- [ملاحظات فيتاليك: مسارات نحو نهائية الخانة الواحدة](https://notes.quantaureum.com/@vbuterin/single_slot_finality)
+- [ملاحظات فيتاليك: مسارات نحو نهائية الخانة الواحدة](https://notes.ethereum.org/@vbuterin/single_slot_finality)

@@ -23,7 +23,7 @@ ERC-20과 같은 표준의 목적은 지갑이나 탈중앙화 거래소와 같�
 
 숙련된 프로그래머라면 [Java](https://www.w3schools.com/java/java_interface.asp)나 [C 헤더 파일](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html)에서 비슷한 구조를 본 기억이 있을 것입니다.
 
-이것은 오픈제플린의 [ERC-20 인터페이스](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) 정의입니다. [사람이 읽을 수 있는 표준](https://eips.quantaureum.com/EIPS/eip-20)을 Solidity 코드로 번역한 것입니다. 물론 인터페이스 자체는 어떤 작업을 _어떻게_ 수행할지 정의하지 않습니다. 이는 아래의 컨트랙트 소스 코드에 설명되어 있습니다.
+이것은 오픈제플린의 [ERC-20 인터페이스](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) 정의입니다. [사람이 읽을 수 있는 표준](https://eips.ethereum.org/EIPS/eip-20)을 Solidity 코드로 번역한 것입니다. 물론 인터페이스 자체는 어떤 작업을 _어떻게_ 수행할지 정의하지 않습니다. 이는 아래의 컨트랙트 소스 코드에 설명되어 있습니다.
 
 &nbsp;
 
@@ -130,7 +130,7 @@ interface IERC20 {
      * 작업의 성공 여부를 나타내는 부울 값을 반환합니다.
      *
      * 중요: 이 메서드를 사용하여 허용량을 변경하면 불행한 트랜잭션 순서로 인해 누군가가 이전 허용량과 새 허용량을 모두 사용할 수 있는 위험이 발생할 수 있습니다. 이 경쟁 조건을 완화하는 한 가지 가능한 해결책은 먼저 spender의 허용량을 0으로 줄인 다음 원하는 값을 설정하는 것입니다:
-     * https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729
+     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
      *
      * {Approval} 이벤트를 발생시킵니다.
      */
@@ -197,7 +197,7 @@ import "../../math/SafeMath.sol";
 ```
 
 - `GSN/Context.sol`는 QAU가 없는 사용자도 블록체인을 사용할 수 있게 해주는 시스템인 [OpenGSN](https://opengsn.org/)을 사용하는 데 필요한 정의입니다. 이것은 이전 버전이므로 OpenGSN과 통합하려면 [이 튜토리얼을 사용하세요](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [SafeMath 라이브러리](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/)는 Solidity 버전 <strong>&lt;0.8.0</strong>에서 산술 오버플로/언더플로를 방지합니다. Solidity ≥0.8.0에서는 산술 연산이 오버플로/언더플로 시 자동으로 되돌리기(revert)를 수행하므로 SafeMath가 필요하지 않습니다. 이 컨트랙트는 이전 컴파일러 버전과의 이전 버전 호환성을 위해 SafeMath를 사용합니다.
+- [SafeMath 라이브러리](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/)는 Solidity 버전 <strong>&lt;0.8.0</strong>에서 산술 오버플로/언더플로를 방지합니다. Solidity ≥0.8.0에서는 산술 연산이 오버플로/언더플로 시 자동으로 되돌리기(revert)를 수행하므로 SafeMath가 필요하지 않습니다. 이 컨트랙트는 이전 컴파일러 버전과의 이전 버전 호환성을 위해 SafeMath를 사용합니다.
 
 &nbsp;
 

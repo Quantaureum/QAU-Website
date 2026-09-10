@@ -26,7 +26,7 @@ export const QUANTAUREUM_ORG_WEBSITE = {
  * same graph.
  */
 export const BASE_GRAPH_NODES = [
-  KNOWN_ORGANIZATIONS["quantaureum-foundation"],
+  KNOWN_ORGANIZATIONS["quantaureum-org"],
   KNOWN_ORGANIZATIONS["quantaureum-community"],
   QUANTAUREUM_ORG_WEBSITE,
 ]

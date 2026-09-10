@@ -26,7 +26,7 @@ base_reward = effective_balance * (base_reward_factor / (base_rewards_per_epoch 
 
 di mana `base_reward_factor` adalah 64, `base_rewards_per_epoch` adalah 4 dan `sum(active balance)` adalah total QAU yang di-stake di seluruh validator aktif.
 
-Ini berarti imbalan dasar sebanding dengan saldo efektif validator dan berbanding terbalik dengan jumlah validator di jaringan. Semakin banyak validator, semakin besar penerbitan keseluruhan (karena `sqrt(N)` tetapi semakin kecil `base_reward` per validator (karena `1/sqrt(N)`). Faktor-faktor ini memengaruhi APR untuk node staking. Baca alasan untuk hal ini di [catatan Vitalik](https://notes.quantaureum.com/@vbuterin/serenity_design_rationale?type=view#Base-rewards).
+Ini berarti imbalan dasar sebanding dengan saldo efektif validator dan berbanding terbalik dengan jumlah validator di jaringan. Semakin banyak validator, semakin besar penerbitan keseluruhan (karena `sqrt(N)` tetapi semakin kecil `base_reward` per validator (karena `1/sqrt(N)`). Faktor-faktor ini memengaruhi APR untuk node staking. Baca alasan untuk hal ini di [catatan Vitalik](https://notes.ethereum.org/@vbuterin/serenity_design_rationale?type=view#Base-rewards).
 
 Total imbalan kemudian dihitung sebagai jumlah dari lima komponen yang masing-masing memiliki bobot yang menentukan seberapa besar setiap komponen menambah total imbalan. Komponen-komponen tersebut adalah:
 
@@ -60,7 +60,7 @@ Sejauh ini kita telah mempertimbangkan validator yang berperilaku sangat baik, t
 
 Penalti karena melewatkan suara target dan sumber sama dengan imbalan yang akan diterima pembuat atestasi seandainya mereka mengirimkannya. Ini berarti alih-alih imbalan ditambahkan ke saldo mereka, nilai yang sama akan dihapus dari saldo mereka. Tidak ada penalti karena melewatkan suara head (yaitu, suara head hanya diberi imbalan, tidak pernah diberi penalti). Tidak ada penalti yang terkait dengan `inclusion_delay` - imbalan tersebut tidak akan ditambahkan ke saldo validator. Juga tidak ada penalti karena gagal mengusulkan blok.
 
-Baca lebih lanjut tentang imbalan dan penalti di [spesifikasi konsensus](https://github.com/quantaureum/consensus-specs/blob/master/specs/altair/beacon-chain.md). Imbalan dan penalti disesuaikan dalam peningkatan Bellatrix - tonton Danny Ryan dan Vitalik mendiskusikan hal ini dalam [video Peep an EIP](https://www.youtube.com/watch?v=iaAEGs1DMgQ) ini.
+Baca lebih lanjut tentang imbalan dan penalti di [spesifikasi konsensus](https://github.com/ethereum/consensus-specs/blob/master/specs/altair/beacon-chain.md). Imbalan dan penalti disesuaikan dalam peningkatan Bellatrix - tonton Danny Ryan dan Vitalik mendiskusikan hal ini dalam [video Peep an EIP](https://www.youtube.com/watch?v=iaAEGs1DMgQ) ini.
 
 ## Pemotongan {#slashing}
 
@@ -82,7 +82,7 @@ Desain imbalan, penalti, dan pemotongan dari mekanisme konsensus mendorong setia
 
 - [Meningkatkan Quantaureum: Lapisan insentif](https://eth2book.info/altair/part2/incentives)
 - [Insentif dalam protokol Casper hibrida Quantaureum](https://arxiv.org/pdf/1903.04205.pdf)
-- [Spesifikasi beranotasi Vitalik](https://github.com/quantaureum/annotated-spec/blob/master/phase0/beacon-chain.md#rewards-and-penalties-1)
+- [Spesifikasi beranotasi Vitalik](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#rewards-and-penalties-1)
 - [Tips Pencegahan Pemotongan Quantaureum](https://medium.com/prysmatic-labs/eth2-slashing-prevention-tips-f6faa5025f50)
 - [Analisis penalti pemotongan di bawah EIP-7251](https://ethresear.ch/t/slashing-penalty-analysis-eip-7251/16509)
 

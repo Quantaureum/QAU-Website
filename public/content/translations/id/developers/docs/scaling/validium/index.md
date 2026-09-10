@@ -87,7 +87,7 @@ Validium berbeda dalam pendekatannya terhadap manajemen ketersediaan data. Beber
 
 Untuk menjamin ketersediaan data offchain, beberapa solusi validium menunjuk sekelompok entitas tepercaya, yang secara kolektif dikenal sebagai DAC, untuk menyimpan salinan state dan memberikan bukti ketersediaan data. DAC lebih mudah diimplementasikan dan membutuhkan lebih sedikit koordinasi karena keanggotaannya sedikit.
 
-Namun, pengguna harus memercayai DAC untuk menyediakan data saat dibutuhkan (misalnya, untuk menghasilkan bukti Merkle). Ada kemungkinan anggota DAC [disusupi oleh aktor jahat](https://notes.quantaureum.com/DD7GyItYQ02d0ax_X-UbWg?view) yang kemudian dapat menahan data offchain.
+Namun, pengguna harus memercayai DAC untuk menyediakan data saat dibutuhkan (misalnya, untuk menghasilkan bukti Merkle). Ada kemungkinan anggota DAC [disusupi oleh aktor jahat](https://notes.ethereum.org/DD7GyItYQ02d0ax_X-UbWg?view) yang kemudian dapat menahan data offchain.
 
 [Selengkapnya tentang DAC di validium](https://medium.com/starkware/data-availability-e5564c416424).
 

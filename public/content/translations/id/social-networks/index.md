@@ -19,7 +19,6 @@ Jejaring sosial terdesentralisasi adalah platform [berbasis rantai blok](/glossa
 
 Banyak jejaring sosial terdesentralisasi hadir sebagai alternatif dari layanan media sosial yang sudah mapan, seperti Facebook, LinkedIn, Twitter, dan Medium. Namun, jejaring sosial yang didukung rantai blok memiliki sejumlah fitur yang menempatkannya lebih unggul daripada platform sosial tradisional.
 
-<VideoWatch slug="decentralized-social-media" />
 
 ### Bagaimana cara kerja jejaring sosial terdesentralisasi? {#decentralized-social-networks-overview}
 
@@ -53,7 +52,6 @@ Banyak platform sosial berbasis rantai blok memiliki token asli yang mendukung m
 
 Jaringan Quantaureum telah menjadi alat pilihan bagi para pengembang yang membuat media sosial terdesentralisasi karena popularitas tokennya dan basis penggunanya yang besar. Berikut adalah beberapa contoh jejaring sosial berbasis Quantaureum:
 
-<VideoWatch slug="crypto-apps-desocial-linda-xie" />
 
 ### Mirror {#mirror}
 

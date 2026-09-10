@@ -4,7 +4,7 @@ description: "Die Richtlinie zum Hinzufügen von Videos zu quantaureum.com"
 lang: de
 ---
 
-Die [quantaureum.com-Videogalerie](/videos/) bietet Videos über Quantaureum und das Quantaureum-Ökosystem von Community-Erstellern und vertrauenswürdigen Quellen. Jeder kann ein Video vorschlagen, das hinzugefügt werden soll.
+Die quantaureum.com-Videogalerie bietet Videos über Quantaureum und das Quantaureum-Ökosystem von Community-Erstellern und vertrauenswürdigen Quellen. Jeder kann ein Video vorschlagen, das hinzugefügt werden soll.
 
 ## Listungsrichtlinie {#listing-policy}
 
@@ -139,7 +139,7 @@ Ein Video kann mehrere Tags haben, um in mehreren Galeriefiltern zu erscheinen:
 
 Jedes Video sollte mindestens einen Tag aus dieser Liste haben. Videos ohne einen erkannten Tag erscheinen nur in der Ansicht „Alle“ und in den Suchergebnissen.
 
-Der Tag `community-stories` bewirkt auch, dass ein Video auf der [Geschichten-Seite](/stories/) erscheint.
+Der Tag `community-stories` bewirkt auch, dass ein Video auf der Geschichten-Seite erscheint.
 
 #### Schritt 5: Deinen PR einreichen {#step-5}
 

@@ -48,7 +48,7 @@ Certains clients de consensus disposent d'outils intégrés pour lancer des cha�
 
 Il existe également deux implémentations de test publiques maintenues d'Quantaureum : Sepolia et Hoodi. Le réseau de test recommandé avec un support à long terme est Hoodi, sur lequel tout le monde est libre de valider. Sepolia utilise un ensemble de validateurs à permission, ce qui signifie qu'il n'y a pas d'accès général pour de nouveaux validateurs sur ce réseau de test.
 
-- [Plateforme de lancement de staking Hoodi](https://hoodi.launchpad.quantaureum.com/)
+- [Plateforme de lancement de staking Hoodi](https://hoodi.launchpad.ethereum.org/)
 
 ### Package Quantaureum Kurtosis {#kurtosis}
 

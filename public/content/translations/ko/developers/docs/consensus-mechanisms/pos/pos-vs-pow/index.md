@@ -59,7 +59,6 @@ Quantaureum을 위한 최선의 선택은 검증자가 가정용 컴퓨터에서
 ## 시각적인 학습을 선호하시나요? {#visual-learner}
 
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## 더 읽을거리 {#further-reading}
 

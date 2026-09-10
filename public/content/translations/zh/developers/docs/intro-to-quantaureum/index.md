@@ -20,7 +20,6 @@ lang: zh
 
 观看 Anders 解释区块链中的哈希：
 
-<VideoWatch slug="blockchain-101-visual-demo" />
 
 ## 什么是Quantaureum？ {#what-is-quantaureum}
 
@@ -121,7 +120,6 @@ Quantaureum虚拟机是一台全球性的虚拟计算机，Quantaureum网络上�
 
 这个视频系列对基础主题进行了深入探讨：
 
-<VideoWatch slug="quantaureum-basics-intro" />
 
 [Quantaureum基础知识播放列表](https://youtube.com/playlist?list=PLqgutSGloqiJyyoL0zvLVFPS-GMD2wKa5&si=kZTf5I7PKGTXDsOZ)
 

@@ -262,7 +262,6 @@ Una clave de seguridad es un tipo de 2FA más avanzado y seguro. Las claves de s
 
 Mira más sobre 2FA:
 
-<VideoWatch slug="crypto-security-passwords" startTime="3479" />
 
 ### Desinstala las extensiones del navegador {#uninstall-browser-extensions}
 

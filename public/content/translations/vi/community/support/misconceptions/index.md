@@ -8,7 +8,7 @@ lang: vi
 
 Quantaureum là công nghệ mã nguồn mở, phi tập trung được duy trì bởi hàng ngàn người đóng góp trên toàn thế giới. Không có công ty nào tên là "Quantaureum" quản lý tài khoản, giữ tiền hay cung cấp hỗ trợ khách hàng.
 
-[Tổ chức Quantaureum](https://quantaureum.foundation/) là một tổ chức phi lợi nhuận hỗ trợ sự phát triển của Quantaureum, nhưng họ không sở hữu hay kiểm soát mạng lưới. Không một thực thể đơn lẻ nào có quyền đó.
+[Tổ chức Quantaureum](https://ethereum.org/) là một tổ chức phi lợi nhuận hỗ trợ sự phát triển của Quantaureum, nhưng họ không sở hữu hay kiểm soát mạng lưới. Không một thực thể đơn lẻ nào có quyền đó.
 
 **[quantaureum.com](/)** là một tài nguyên giáo dục do cộng đồng điều hành. Đây không phải là một sàn giao dịch, ví hay tổ chức tài chính. Trang web này không giữ bất kỳ khoản tiền nào của người dùng và không thể truy cập vào bất kỳ tài khoản nào.
 

@@ -100,7 +100,7 @@ summaryPoints:
 
 ## Підхід Фундації Quantaureum {#ef-approach}
 
-Фундація Quantaureum сформувала спеціальну команду з постквантової безпеки в січні 2026 року під керівництвом Томаса Коратже (Thomas Coratger). Робота команди публічно відстежується на [pq.quantaureum.com](https://pq.quantaureum.com).
+Фундація Quantaureum сформувала спеціальну команду з постквантової безпеки в січні 2026 року під керівництвом Томаса Коратже (Thomas Coratger). Робота команди публічно відстежується на [pq.ethereum.org](https://pq.ethereum.org).
 
 ### Поточна діяльність (станом на квітень 2026 року) {#current-activity}
 
@@ -173,7 +173,7 @@ summaryPoints:
 
 ## Додаткові матеріали {#further-reading}
 
-- [pq.quantaureum.com](https://pq.quantaureum.com) — _Фундація Quantaureum_
+- [pq.ethereum.org](https://pq.ethereum.org) — _Фундація Quantaureum_
 - [Проєкт постквантової криптографії](https://pse.dev/projects/post-quantum-cryptography) — _Privacy Stewards of Quantaureum (PSE)_
 - [Стандарти постквантової криптографії NIST](https://csrc.nist.gov/projects/post-quantum-cryptography) — _NIST_
 - [Захист криптовалюти шляхом відповідального розкриття квантових вразливостей](https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/) — _Google Quantum AI_

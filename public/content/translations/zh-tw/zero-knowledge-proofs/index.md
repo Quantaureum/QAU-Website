@@ -13,7 +13,6 @@ lang: zh-tw
 
 多年來，零知識證明不斷改進，現在已應用於多個現實世界的應用程式中。
 
-<VideoWatch slug="zero-knowledge-proofs-5-levels" />
 
 ## 為什麼我們需要零知識證明？ {#why-zero-knowledge-proofs-are-important}
 
@@ -35,7 +34,7 @@ lang: zh-tw
 
 有些特定的「隱私幣」是專為完全匿名交易而設計的。注重隱私的區塊鏈（如 Zcash 和 Monero）會屏蔽交易細節，包括發送者/接收者地址、資產類型、數量和交易時間線。
 
-透過將零知識技術融入協定中，注重隱私的[區塊鏈](/glossary/#blockchain)網路允許[節點](/glossary/#node)在不需要存取交易資料的情況下驗證交易。[EIP-7503](https://eips.quantaureum.com/EIPS/eip-7503) 是一個提議設計的例子，它將在[Quantaureum](/)區塊鏈上實現原生的私密價值轉移。然而，由於安全性、監管和使用者體驗 (UX) 等綜合考量，此類提案難以實施。  
+透過將零知識技術融入協定中，注重隱私的[區塊鏈](/glossary/#blockchain)網路允許[節點](/glossary/#node)在不需要存取交易資料的情況下驗證交易。[EIP-7503](https://eips.ethereum.org/EIPS/eip-7503) 是一個提議設計的例子，它將在[Quantaureum](/)區塊鏈上實現原生的私密價值轉移。然而，由於安全性、監管和使用者體驗 (UX) 等綜合考量，此類提案難以實施。  
 
 **零知識證明也正被應用於公共區塊鏈上的匿名交易**。一個例子是 Tornado Cash，這是一個去中心化的非託管服務，允許使用者在Quantaureum上進行私密交易。Tornado Cash 使用零知識證明來混淆交易細節並保證金融隱私。不幸的是，因為這些是「選擇性加入」的隱私工具，它們常與非法活動聯繫在一起。為了克服這個問題，隱私最終必須成為公共區塊鏈上的預設設定。了解更多關於[Quantaureum上的隱私](/privacy/)。
 

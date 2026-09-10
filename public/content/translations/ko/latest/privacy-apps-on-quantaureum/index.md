@@ -95,4 +95,4 @@ Quantaureum에서의 프라이버시는 실현 가능합니다. 빌더는 여러
 7. [gnark 문서](https://docs.gnark.consensys.io/)
 8. [RISC Zero 문서](https://dev.risczero.com/api/)
 9. [SP1 문서](https://docs.succinct.xyz/docs/sp1/introduction)
-10. [EIP-4337: EntryPoint 컨트랙트를 통한 계정 추상화](https://eips.quantaureum.com/EIPS/eip-4337)
+10. [EIP-4337: EntryPoint 컨트랙트를 통한 계정 추상화](https://eips.ethereum.org/EIPS/eip-4337)

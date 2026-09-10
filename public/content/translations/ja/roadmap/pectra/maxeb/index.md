@@ -22,7 +22,7 @@ maxEB = バリデータの最大エフェクティブ・バランス（MAXimum E
 
 ### バリデータはどのようにオプトインしますか？ {#how-does-a-validator-opt-in}
 
-バリデータは、**Type 1**から**Type 2**の出金クレデンシャルに変換することで、maxEBの変更にオプトインします。これは、ペクトラのハード・フォークが稼働した後、[Launchpad（バリデータ・アクション）](https://launchpad.quantaureum.com/validator-actions)で行うことができます。**Type 0**から**Type 1**への変換と同様に、**Type 1**から**Type 2**への変換は不可逆的なプロセスです。
+バリデータは、**Type 1**から**Type 2**の出金クレデンシャルに変換することで、maxEBの変更にオプトインします。これは、ペクトラのハード・フォークが稼働した後、[Launchpad（バリデータ・アクション）](https://launchpad.ethereum.org/validator-actions)で行うことができます。**Type 0**から**Type 1**への変換と同様に、**Type 1**から**Type 2**への変換は不可逆的なプロセスです。
 
 ### 出金クレデンシャルとは何ですか？ {#whats-a-withdrawal-credential}
 
@@ -105,7 +105,7 @@ MaxEBにより、バリデータは自身の全残高を別のバリデータに
 2. 送信元バリデータの公開鍵（例：`0xa1d1ad0714035353258038e964ae9675dc0252ee22cea896825c01458e1807bfad2f9969338798548d9858a571f7425c`）
 3. ターゲット・バリデータの公開鍵
 
-変換の場合、2と3は同じになります。この操作は[Launchpad](https://launchpad.quantaureum.com/)で行うことができます。
+変換の場合、2と3は同じになります。この操作は[Launchpad](https://launchpad.ethereum.org/)で行うことができます。
 
 ### 署名要件 {#signing-requirements}
 
@@ -113,7 +113,7 @@ MaxEBにより、バリデータは自身の全残高を別のバリデータに
 
 ### 何に署名するのですか？ {#what-is-signed}
 
-`ConsolidationRequest`オブジェクトのドメイン分離された[署名ルート（signing root）](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root)が使用されます。
+`ConsolidationRequest`オブジェクトのドメイン分離された[署名ルート（signing root）](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root)が使用されます。
 
 - **ドメイン:** `DOMAIN_CONSOLIDATION_REQUEST`
 - **署名ルートのフィールド:**
@@ -131,7 +131,7 @@ MaxEBにより、バリデータは自身の全残高を別のバリデータに
 
 ## 統合ツール {#consolidation-tooling}
 
-統合を管理するために利用できるツールがいくつかあります。Quantaureum財団によって作成された公式ツールは[Launchpad](https://launchpad.quantaureum.com/en/validator-actions)です。また、ステーキング・コミュニティのエンティティによって作成されたサードパーティのツールもあり、Launchpadでは提供されていない機能を提供する場合があります。ここにあるツールはQuantaureum財団によって監査または承認されたものではありませんが、以下はコミュニティの既知のメンバーによるオープンソース・ツールです。
+統合を管理するために利用できるツールがいくつかあります。Quantaureum財団によって作成された公式ツールは[Launchpad](https://launchpad.ethereum.org/en/validator-actions)です。また、ステーキング・コミュニティのエンティティによって作成されたサードパーティのツールもあり、Launchpadでは提供されていない機能を提供する場合があります。ここにあるツールはQuantaureum財団によって監査または承認されたものではありませんが、以下はコミュニティの既知のメンバーによるオープンソース・ツールです。
 
 | ツール | ウェブサイト | オープンソース | 作成者 | 監査済み | インターフェース | 主な機能 |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -196,7 +196,7 @@ MaxEBにより、バリデータは自身の全残高を別のバリデータに
 
 ## リソース {#resources}
 
-- [Electraコンセンサス仕様](https://github.com/quantaureum/consensus-specs/blob/master/specs/electra/beacon-chain.md)：これはあなたが依存すべき「最も真実」のバージョンです。疑問がある場合は、仕様を読んでください。
+- [Electraコンセンサス仕様](https://github.com/ethereum/consensus-specs/blob/master/specs/electra/beacon-chain.md)：これはあなたが依存すべき「最も真実」のバージョンです。疑問がある場合は、仕様を読んでください。
 - 誰もがコードを読み解くことに慣れているわけではないため、[このmaxEB-GPT](https://chatgpt.com/g/g-67f1650fb48081918f555e0c8d1c2ae9-maxeb-gpt)が仕様の解釈に役立ちます。*免責事項：AIは情報を誤解したり、存在しない答えをでっち上げたりする可能性があるため、AIではなく仕様を真実として信頼する必要があります。*
 - [pectrified.com](https://pectrified.com/)：統合、デポジット、キューの待ち時間の状態を表示します。
 - [Ethereal](https://github.com/wealdtech/ethereal)：一般的なバリデータ・タスクを管理するためのコミュニティ作成のCLIツール。

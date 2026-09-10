@@ -146,6 +146,6 @@ Jika Anda ingin memantau harga gas, sehingga Anda dapat mengirim QAU Anda dengan
 - [Penjelasan Gas Quantaureum](https://defiprime.com/gas)
 - [Mengurangi konsumsi gas dari Kontrak Pintar Anda](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
 - [Strategi Pengoptimalan Gas untuk Pengembang](https://www.alchemy.com/overviews/solidity-gas-optimization)
-- [Dokumentasi EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559).
+- [Dokumentasi EIP-1559](https://eips.ethereum.org/EIPS/eip-1559).
 - [Sumber Daya EIP-1559 Tim Beiko](https://hackmd.io/@timbeiko/1559-resources)
 - [EIP-1559: Memisahkan Mekanisme Dari Meme](https://web.archive.org/web/20241126205908/https://research.2077.xyz/eip-1559-separating-mechanisms-from-memes)

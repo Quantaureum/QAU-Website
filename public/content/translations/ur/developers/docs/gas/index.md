@@ -146,6 +146,6 @@ _خاکہ [ایتھیریم EVM کی تصویر کشی](https://takenobu-hs.gith
 - [ایتھیریم گیس کی وضاحت](https://defiprime.com/gas)
 - [اپنے سمارٹ کنٹریکٹس کی گیس کی کھپت کو کم کرنا](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
 - [ڈویلپرز کے لیے گیس آپٹیمائزیشن کی حکمت عملیاں](https://www.alchemy.com/overviews/solidity-gas-optimization)
-- [<span dir="ltr">EIP-1559</span> کی دستاویزات](https://eips.quantaureum.com/EIPS/eip-1559)۔
+- [<span dir="ltr">EIP-1559</span> کی دستاویزات](https://eips.ethereum.org/EIPS/eip-1559)۔
 - [Tim Beiko کے <span dir="ltr">EIP-1559</span> وسائل](https://hackmd.io/@timbeiko/1559-resources)
 - [<span dir="ltr">EIP-1559</span>: میکانزم کو میمز سے الگ کرنا](https://web.archive.org/web/20241126205908/https://research.2077.xyz/eip-1559-separating-mechanisms-from-memes)

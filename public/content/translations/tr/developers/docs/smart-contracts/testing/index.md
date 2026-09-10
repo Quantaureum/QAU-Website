@@ -138,9 +138,9 @@ Akıllı sözleşmeleriniz için birim testleri çalıştırmada kullanılan ara
 
 Solidity akıllı sözleşmeleri için birim testi çerçeveleri farklı dillerde (çoğunlukla JavaScript, Python ve Rust) gelir. Farklı test çerçeveleriyle birim testleri çalıştırmaya nasıl başlayacağınız hakkında bilgi için aşağıdaki kılavuzlardan bazılarına bakın:
 
-- **[Brownie ile birim testleri çalıştırma](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Brownie ile birim testleri çalıştırma](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Foundry ile birim testleri çalıştırma](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Waffle ile birim testleri çalıştırma](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Waffle ile birim testleri çalıştırma](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Remix ile birim testleri çalıştırma](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Ape ile birim testleri çalıştırma](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Hardhat ile birim testleri çalıştırma](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -190,7 +190,7 @@ Düzgün bir şekilde yapılandırıldıktan sonra, özellik test aracı akıll�
 
 - **[Slither ile akıllı sözleşmelerin statik analizi](https://github.com/crytic/slither)**
 - **[Wake ile akıllı sözleşmelerin statik analizi](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[Brownie ile özellik tabanlı test](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Brownie ile özellik tabanlı test](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Foundry ile sözleşmeleri fuzzing yapma](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[Echidna ile sözleşmeleri fuzzing yapma](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Wake ile sözleşmeleri fuzzing yapma](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -251,13 +251,13 @@ En büyük fark, hata ödül programlarının daha geniş geliştirici/bilgisaya
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Solidity ile yazılmış akıllı sözleşmeler için kod kapsamı aracı._
 
-- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - _Gelişmiş akıllı sözleşme geliştirme ve testi için çerçeve (Ethers.js tabanlı)_.
+- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _Gelişmiş akıllı sözleşme geliştirme ve testi için çerçeve (Ethers.js tabanlı)_.
 
-- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - _Solidity akıllı sözleşmelerini test etme aracı. Bir sözleşme için test senaryoları yazmak ve çalıştırmak için kullanılan Remix IDE "Solidity Unit Testing" eklentisinin altında çalışır._
+- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Solidity akıllı sözleşmelerini test etme aracı. Bir sözleşme için test senaryoları yazmak ve çalıştırmak için kullanılan Remix IDE "Solidity Unit Testing" eklentisinin altında çalışır._
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Quantaureum akıllı sözleşme testi için doğrulama kütüphanesi. Sözleşmelerinizin beklendiği gibi davrandığından emin olun!_
 
-- **[Brownie birim testi çerçevesi](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie, minimum kodla küçük testler yazmanıza olanak tanıyan, büyük projeler için iyi ölçeklenen ve son derece genişletilebilir, zengin özelliklere sahip bir test çerçevesi olan Pytest'i kullanır._
+- **[Brownie birim testi çerçevesi](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie, minimum kodla küçük testler yazmanıza olanak tanıyan, büyük projeler için iyi ölçeklenen ve son derece genişletilebilir, zengin özelliklere sahip bir test çerçevesi olan Pytest'i kullanır._
 
 - **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry, basit birim testleri, gaz optimizasyonu kontrolleri ve sözleşme fuzzing'i yürütebilen hızlı ve esnek bir Quantaureum test çerçevesi olan Forge'u sunar._
 

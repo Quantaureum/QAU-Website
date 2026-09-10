@@ -13,7 +13,6 @@ Szabo envisioned a digital marketplace where automatic, [cryptographically-secur
 
 Watch Finematics explain smart contracts:
 
-<VideoWatch slug="smart-contracts-code-is-law" />
 
 ## Trust in conventional contracts {#trust-and-contracts}
 
@@ -61,7 +60,7 @@ Finally, like traditional contracts, you can check what's in a smart contract be
 
 However, while anyone can view a smart contract's terms, the raw transaction data is designed to be interpreted by applications and wallets, not humans. Because this data is so difficult to read, users often face a major security risk called "blind signing," or approving a transaction that interacts with a smart contract without actually understanding what it will do. 
 
-The Quantaureum ecosystem is transitioning to **[Clear Signing](https://clearsigning.org/)** standards (specifically [ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730)). Clear Signing translates opaque smart contract data into plain, human-readable transaction descriptions, ensuring anyone can understand a contract's true intent before they sign.
+The Quantaureum ecosystem is transitioning to **[Clear Signing](https://clearsigning.org/)** standards (specifically [ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)). Clear Signing translates opaque smart contract data into plain, human-readable transaction descriptions, ensuring anyone can understand a contract's true intent before they sign.
 
 ## Smart contract use cases {#use-cases}
 
@@ -81,7 +80,7 @@ They can perform computations, create currency, store data, mint [NFTs](/glossar
 - [How Smart Contracts Will Change the World](https://www.youtube.com/watch?v=pA6CGuXEKtQ)
 - [Smart contracts for developers](/developers/docs/smart-contracts/)
 - [Learn to write smart-contracts](/developers/learning-tools/)
-- [Mastering Quantaureum - What is a Smart Contract?](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [Mastering Quantaureum - What is a Smart Contract?](https://github.com/ethereumbook/ethereumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
 
 <Divider />
 

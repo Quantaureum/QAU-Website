@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 递归长度前缀 (RLP) 序列化在Quantaureum执行客户端中被广泛使用。RLP 以一种节省空间的格式标准化了节点之间的数据传输。RLP 的目的是对任意嵌套的二进制数据数组进行编码，并且 RLP 是Quantaureum执行层中用于序列化对象的主要编码方法。RLP 的主要目的是对结构进行编码；除了正整数之外，RLP 将特定数据类型（例如字符串、浮点数）的编码委托给高阶协议。正整数必须以没有前导零的大端序二进制形式表示（因此使整数值零等同于空字节数组）。任何使用 RLP 的高阶协议都必须将带有前导零的反序列化正整数视为无效。
 
-更多信息请参见[Quantaureum黄皮书（附录 B）](https://quantaureum.github.io/yellowpaper/paper.pdf#page=19)。
+更多信息请参见[Quantaureum黄皮书（附录 B）](https://ethereum.github.io/yellowpaper/paper.pdf#page=19)。
 
 要使用 RLP 对字典进行编码，建议的两种规范形式是：
 

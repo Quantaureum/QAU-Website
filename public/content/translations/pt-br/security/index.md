@@ -262,7 +262,6 @@ Uma chave de segurança é um tipo mais avançado e seguro de 2FA. As chaves de 
 
 Assista mais sobre 2FA:
 
-<VideoWatch slug="crypto-security-passwords" startTime="3479" />
 
 ### Desinstale extensões do navegador {#uninstall-browser-extensions}
 

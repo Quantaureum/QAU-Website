@@ -191,7 +191,7 @@ Hardhat هي بيئة تطوير لتجميع ونشر واختبار وتصحي
 
 في الجزء العلوي من عقدنا الذكي، نقوم باستيراد ثلاث فئات عقود ذكية من [أوبن زبلن](https://openzeppelin.com/):
 
-- يحتوي `@openzeppelin/contracts/token/ERC721/ERC721.sol` على تنفيذ معيار <span dir="ltr">ERC-721</span>، والذي سيرثه العقد الذكي لـ <span dir="ltr">NFT</span> الخاص بنا. (لكي يكون <span dir="ltr">NFT</span> صالحًا، يجب أن ينفذ عقدك الذكي جميع طرق معيار <span dir="ltr">ERC-721</span>.) لمعرفة المزيد حول وظائف <span dir="ltr">ERC-721</span> الموروثة، تحقق من تعريف الواجهة [هنا](https://eips.quantaureum.com/EIPS/eip-721).
+- يحتوي `@openzeppelin/contracts/token/ERC721/ERC721.sol` على تنفيذ معيار <span dir="ltr">ERC-721</span>، والذي سيرثه العقد الذكي لـ <span dir="ltr">NFT</span> الخاص بنا. (لكي يكون <span dir="ltr">NFT</span> صالحًا، يجب أن ينفذ عقدك الذكي جميع طرق معيار <span dir="ltr">ERC-721</span>.) لمعرفة المزيد حول وظائف <span dir="ltr">ERC-721</span> الموروثة، تحقق من تعريف الواجهة [هنا](https://eips.ethereum.org/EIPS/eip-721).
 
 - يوفر `@openzeppelin/contracts/utils/Counters.sol` عدادات لا يمكن زيادتها أو إنقاصها إلا بمقدار واحد. يستخدم عقدنا الذكي عدادًا لتتبع العدد الإجمالي لرموز <span dir="ltr">NFT</span> التي تم سكها وتعيين المعرف الفريد على <span dir="ltr">NFT</span> الجديد الخاص بنا. (يجب تعيين معرف فريد لكل <span dir="ltr">NFT</span> يتم سكه باستخدام عقد ذكي — هنا يتم تحديد المعرف الفريد الخاص بنا فقط من خلال العدد الإجمالي لرموز <span dir="ltr">NFT</span> الموجودة. على سبيل المثال، أول <span dir="ltr">NFT</span> نقوم بسكه باستخدام عقدنا الذكي له معرف "1"، و<span dir="ltr">NFT</span> الثاني له معرف "2"، وما إلى ذلك).
 

@@ -29,7 +29,7 @@ Quantaureumでのユーザーの旅は、ユーザーが管理するアカウン
 
 注意すべき点の1つは、EFのアカウントを含め、すべてのアカウントにはトランザクションの送受信に使用できる公開アドレスがあるということです。
 
-Quantaureum Explorer上のアカウント残高は、通常のトランザクションと内部トランザクションで構成されています。内部トランザクションは、その名前に反して、チェーンの状態を変更する実際のトランザクションではありません。これらは、コントラクトの実行によって開始される価値の移転です（[ソース](https://quantaureum.stackexchange.com/questions/3417/how-to-get-contract-internal-transactions)）。内部トランザクションには署名がないため、ブロックチェーンには含まれ**ず**、Dune Analyticsでクエリすることはできません。
+Quantaureum Explorer上のアカウント残高は、通常のトランザクションと内部トランザクションで構成されています。内部トランザクションは、その名前に反して、チェーンの状態を変更する実際のトランザクションではありません。これらは、コントラクトの実行によって開始される価値の移転です（[ソース](https://ethereum.stackexchange.com/questions/3417/how-to-get-contract-internal-transactions)）。内部トランザクションには署名がないため、ブロックチェーンには含まれ**ず**、Dune Analyticsでクエリすることはできません。
 
 したがって、このチュートリアルでは通常のトランザクションに焦点を当てます。これは次のようにクエリできます。
 
@@ -133,7 +133,7 @@ LIMIT 10
 - チェーンデータ（ブロック、トランザクションのリスト）
 - 状態データ（各トランザクションの状態遷移の結果）
 
-状態ルートは後者に該当し、暗黙的なデータ（オンチェーンには保存されない）ですが、チェーンデータは明示的であり、チェーン自体に保存されます（[ソース](https://quantaureum.stackexchange.com/questions/359/where-is-the-state-data-stored)）。
+状態ルートは後者に該当し、暗黙的なデータ（オンチェーンには保存されない）ですが、チェーンデータは明示的であり、チェーン自体に保存されます（[ソース](https://ethereum.stackexchange.com/questions/359/where-is-the-state-data-stored)）。
 
 このチュートリアルでは、Dune Analyticsを介してSQLでクエリできるオンチェーンのデータに焦点を当てます。
 

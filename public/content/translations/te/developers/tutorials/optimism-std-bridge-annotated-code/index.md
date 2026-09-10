@@ -46,7 +46,7 @@ Optimism (లేదా ఏదైనా ఇతర l2)లో l1 ఆస్తుల
    - వాస్తవానికి l1లోని వారధి నుండి వచ్చింది
 6. l2లోని ERC-20 టోకెన్ కాంట్రాక్ట్ సరైనదో కాదో l2 వారధి తనిఖీ చేస్తుంది:
    - l2 కాంట్రాక్ట్ దాని l1 కౌంటర్‌పార్ట్ l1లో టోకెన్‌లు వచ్చిన దానితో సమానంగా ఉందని నివేదిస్తుంది
-   - l2 కాంట్రాక్ట్ సరైన ఇంటర్‌ఫేస్‌కు మద్దతు ఇస్తుందని నివేదిస్తుంది ([ERC-165ని ఉపయోగించి](https://eips.quantaureum.com/EIPS/eip-165)).
+   - l2 కాంట్రాక్ట్ సరైన ఇంటర్‌ఫేస్‌కు మద్దతు ఇస్తుందని నివేదిస్తుంది ([ERC-165ని ఉపయోగించి](https://eips.ethereum.org/EIPS/eip-165)).
 7. l2 కాంట్రాక్ట్ సరైనదైతే, తగిన చిరునామాకు తగిన సంఖ్యలో టోకెన్‌లను ముద్రించడానికి దాన్ని పిలవండి. కాకపోతే, l1లో టోకెన్‌లను క్లెయిమ్ చేయడానికి వినియోగదారుని అనుమతించడానికి ఉపసంహరణ ప్రక్రియను ప్రారంభించండి.
 
 ### ఉపసంహరణ ప్రవాహం {#withdrawal-flow}
@@ -70,7 +70,7 @@ Optimism (లేదా ఏదైనా ఇతర l2)లో l1 ఆస్తుల
 
 ### IL1ERC20Bridge {#il1erc20bridge}
 
-[ఈ ఇంటర్‌ఫేస్ ఇక్కడ నిర్వచించబడింది](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol).
+[ఈ ఇంటర్‌ఫేస్ ఇక్కడ నిర్వచించబడింది](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol).
 ఇది ERC-20 టోకెన్‌లను వారధి చేయడానికి అవసరమైన ఫంక్షన్‌లు మరియు నిర్వచనాలను కలిగి ఉంటుంది.
 
 ```solidity
@@ -236,7 +236,7 @@ Optimismలో ఉపసంహరణలు (మరియు l2 నుండి l
 
 ### IL1StandardBridge {#il1standardbridge}
 
-[ఈ ఇంటర్‌ఫేస్ ఇక్కడ నిర్వచించబడింది](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol).
+[ఈ ఇంటర్‌ఫేస్ ఇక్కడ నిర్వచించబడింది](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol).
 ఈ ఫైల్ QAU కోసం ఈవెంట్ మరియు ఫంక్షన్ నిర్వచనాలను కలిగి ఉంది.
 ఈ నిర్వచనాలు ERC-20 కోసం పైన `IL1ERC20Bridge`లో నిర్వచించిన వాటికి చాలా పోలి ఉంటాయి.
 
@@ -320,7 +320,7 @@ interface IL1StandardBridge is IL1ERC20Bridge {
 
 ### CrossDomainEnabled {#crossdomainenabled}
 
-ఇతర లేయర్‌కు సందేశాలను పంపడానికి [ఈ కాంట్రాక్ట్](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) రెండు వారధుల ([l1](#the-l1-bridge-contract) మరియు [l2](#l2-bridge-code)) ద్వారా వారసత్వంగా పొందబడుతుంది.
+ఇతర లేయర్‌కు సందేశాలను పంపడానికి [ఈ కాంట్రాక్ట్](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) రెండు వారధుల ([l1](#the-l1-bridge-contract) మరియు [l2](#l2-bridge-code)) ద్వారా వారసత్వంగా పొందబడుతుంది.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -330,7 +330,7 @@ pragma solidity >0.5.0 <0.9.0;
 import { ICrossDomainMessenger } from "./ICrossDomainMessenger.sol";
 ```
 
-[ఈ ఇంటర్‌ఫేస్](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) క్రాస్ డొమైన్ మెసెంజర్‌ని ఉపయోగించి ఇతర లేయర్‌కు సందేశాలను ఎలా పంపాలో కాంట్రాక్ట్‌కు చెబుతుంది.
+[ఈ ఇంటర్‌ఫేస్](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) క్రాస్ డొమైన్ మెసెంజర్‌ని ఉపయోగించి ఇతర లేయర్‌కు సందేశాలను ఎలా పంపాలో కాంట్రాక్ట్‌కు చెబుతుంది.
 ఈ క్రాస్ డొమైన్ మెసెంజర్ అనేది పూర్తిగా మరొక సిస్టమ్, మరియు దీనికి దాని స్వంత కథనం అవసరం, భవిష్యత్తులో నేను దానిని వ్రాయాలని ఆశిస్తున్నాను.
 
 ```solidity
@@ -397,7 +397,7 @@ contract CrossDomainEnabled {
         );
 ```
 
-క్రాస్ డొమైన్ మెసెంజర్ ఇతర లేయర్‌తో సందేశాన్ని పంపిన చిరునామాను అందించే విధానం [`.xDomainMessageSender()` ఫంక్షన్](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128).
+క్రాస్ డొమైన్ మెసెంజర్ ఇతర లేయర్‌తో సందేశాన్ని పంపిన చిరునామాను అందించే విధానం [`.xDomainMessageSender()` ఫంక్షన్](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128).
 సందేశం ద్వారా ప్రారంభించబడిన లావాదేవీలో దీనిని పిలిచినంత కాలం ఇది ఈ సమాచారాన్ని అందించగలదు.
 
 మనం స్వీకరించిన సందేశం ఇతర వారధి నుండి వచ్చిందని మనం నిర్ధారించుకోవాలి.
@@ -460,7 +460,7 @@ contract CrossDomainEnabled {
 
 ### l1 వారధి కాంట్రాక్ట్ {#the-l1-bridge-contract}
 
-[ఈ కాంట్రాక్ట్ కోసం సోర్స్ కోడ్ ఇక్కడ ఉంది](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol).
+[ఈ కాంట్రాక్ట్ కోసం సోర్స్ కోడ్ ఇక్కడ ఉంది](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol).
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -482,7 +482,7 @@ import { IL1ERC20Bridge } from "./IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "../../L2/messaging/IL2ERC20Bridge.sol";
 ```
 
-[ఈ ఇంటర్‌ఫేస్](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) l2లో ప్రామాణిక వారధిని నియంత్రించడానికి సందేశాలను సృష్టించడానికి మమ్మల్ని అనుమతిస్తుంది.
+[ఈ ఇంటర్‌ఫేస్](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) l2లో ప్రామాణిక వారధిని నియంత్రించడానికి సందేశాలను సృష్టించడానికి మమ్మల్ని అనుమతిస్తుంది.
 
 ```solidity
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -502,7 +502,7 @@ import { CrossDomainEnabled } from "../../libraries/bridge/CrossDomainEnabled.so
 import { Lib_PredeployAddresses } from "../../libraries/constants/Lib_PredeployAddresses.sol";
 ```
 
-[`Lib_PredeployAddresses`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) ఎల్లప్పుడూ ఒకే చిరునామాను కలిగి ఉండే l2 కాంట్రాక్ట్‌ల చిరునామాలను కలిగి ఉంటుంది. ఇందులో l2లోని ప్రామాణిక వారధి ఉంటుంది.
+[`Lib_PredeployAddresses`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) ఎల్లప్పుడూ ఒకే చిరునామాను కలిగి ఉండే l2 కాంట్రాక్ట్‌ల చిరునామాలను కలిగి ఉంటుంది. ఇందులో l2లోని ప్రామాణిక వారధి ఉంటుంది.
 
 ```solidity
 import { Address } from "@openzeppelin/contracts/utils/Address.sol";
@@ -516,7 +516,7 @@ import { Address } from "@openzeppelin/contracts/utils/Address.sol";
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[ERC-20 ప్రమాణం](https://eips.quantaureum.com/EIPS/eip-20) వైఫల్యాన్ని నివేదించడానికి కాంట్రాక్ట్ కోసం రెండు మార్గాలకు మద్దతు ఇస్తుంది:
+[ERC-20 ప్రమాణం](https://eips.ethereum.org/EIPS/eip-20) వైఫల్యాన్ని నివేదించడానికి కాంట్రాక్ట్ కోసం రెండు మార్గాలకు మద్దతు ఇస్తుంది:
 
 1. రివర్ట్
 2. `false`ని తిరిగి ఇవ్వడం
@@ -709,7 +709,7 @@ Solidity ఫంక్షన్ [`abi.encodeWithSelector`](https://docs.solidityl
         );
 ```
 
-ఇక్కడ సందేశం ఏమిటంటే, ఈ పారామితులతో [`finalizeDeposit` ఫంక్షన్‌ను](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) పిలవడం:
+ఇక్కడ సందేశం ఏమిటంటే, ఈ పారామితులతో [`finalizeDeposit` ఫంక్షన్‌ను](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) పిలవడం:
 
 | పరామితి | విలువ                          | అర్థం                                                                                                                                      |
 | --------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -940,7 +940,7 @@ l1లో చాలా టోకెన్‌లు ఉంటే, ఆ టోకె
 
 ### IL2StandardERC20 {#il2standarderc20}
 
-ప్రామాణిక వారధిని ఉపయోగించే l2లోని ప్రతి ERC-20 టోకెన్ [ఈ ఇంటర్‌ఫేస్‌ను](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol) అందించాలి, ఇది ప్రామాణిక వారధికి అవసరమైన ఫంక్షన్‌లు మరియు ఈవెంట్‌లను కలిగి ఉంటుంది.
+ప్రామాణిక వారధిని ఉపయోగించే l2లోని ప్రతి ERC-20 టోకెన్ [ఈ ఇంటర్‌ఫేస్‌ను](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol) అందించాలి, ఇది ప్రామాణిక వారధికి అవసరమైన ఫంక్షన్‌లు మరియు ఈవెంట్‌లను కలిగి ఉంటుంది.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -950,14 +950,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [ప్రామాణిక ERC-20 ఇంటర్‌ఫేస్](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) `mint` మరియు `burn` ఫంక్షన్‌లను కలిగి ఉండదు.
-ఆ పద్ధతులు [ERC-20 ప్రమాణం](https://eips.quantaureum.com/EIPS/eip-20) ద్వారా అవసరం లేదు, ఇది టోకెన్‌లను సృష్టించడానికి మరియు నాశనం చేయడానికి యంత్రాంగాలను పేర్కొనకుండా వదిలివేస్తుంది.
+ఆ పద్ధతులు [ERC-20 ప్రమాణం](https://eips.ethereum.org/EIPS/eip-20) ద్వారా అవసరం లేదు, ఇది టోకెన్‌లను సృష్టించడానికి మరియు నాశనం చేయడానికి యంత్రాంగాలను పేర్కొనకుండా వదిలివేస్తుంది.
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 కాంట్రాక్ట్ ఏ ఫంక్షన్‌లను అందిస్తుందో పేర్కొనడానికి [ERC-165 ఇంటర్‌ఫేస్](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol) ఉపయోగించబడుతుంది.
-[మీరు ప్రమాణాన్ని ఇక్కడ చదవవచ్చు](https://eips.quantaureum.com/EIPS/eip-165).
+[మీరు ప్రమాణాన్ని ఇక్కడ చదవవచ్చు](https://eips.ethereum.org/EIPS/eip-165).
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -984,7 +984,7 @@ interface IL2StandardERC20 is IERC20, IERC165 {
 
 ### L2StandardERC20 {#l2standarderc20}
 
-[ఇది `IL2StandardERC20` ఇంటర్‌ఫేస్ యొక్క మన అమలు](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol).
+[ఇది `IL2StandardERC20` ఇంటర్‌ఫేస్ యొక్క మన అమలు](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol).
 మీకు ఏదైనా అనుకూల లాజిక్ అవసరమైతే తప్ప, మీరు దీన్ని ఉపయోగించాలి.
 
 ```solidity
@@ -1046,7 +1046,7 @@ contract L2StandardERC20 is IL2StandardERC20, ERC20 {
     }
 ```
 
-[ERC-165](https://eips.quantaureum.com/EIPS/eip-165) పనిచేసే విధానం ఇది.
+[ERC-165](https://eips.ethereum.org/EIPS/eip-165) పనిచేసే విధానం ఇది.
 ప్రతి ఇంటర్‌ఫేస్ అనేది మద్దతు ఉన్న ఫంక్షన్‌ల సంఖ్య, మరియు ఆ ఫంక్షన్‌ల యొక్క [ABI ఫంక్షన్ సెలెక్టర్ల](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector) [ఎక్స్‌క్లూజివ్ ఆర్](https://en.wikipedia.org/wiki/Exclusive_or)గా గుర్తించబడుతుంది.
 
 l2 వారధి ఆస్తులను పంపే ERC-20 కాంట్రాక్ట్ `IL2StandardERC20` అని నిర్ధారించుకోవడానికి ERC-165ని శానిటీ చెక్‌గా ఉపయోగిస్తుంది.
@@ -1078,7 +1078,7 @@ l2 వారధి మాత్రమే ఆస్తులను ముద్�
 ## లేయర్ 2 (l2) వారధి కోడ్ {#l2-bridge-code}
 
 ఇది Optimismలో వారధిని రన్ చేసే కోడ్.
-[ఈ కాంట్రాక్ట్ కోసం సోర్స్ ఇక్కడ ఉంది](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol).
+[ఈ కాంట్రాక్ట్ కోసం సోర్స్ ఇక్కడ ఉంది](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol).
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -1090,7 +1090,7 @@ import { IL1ERC20Bridge } from "../../L1/messaging/IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "./IL2ERC20Bridge.sol";
 ```
 
-[IL2ERC20Bridge](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) ఇంటర్‌ఫేస్ మనం పైన చూసిన [l1 సమానమైన దానికి](#il1erc20bridge) చాలా పోలి ఉంటుంది.
+[IL2ERC20Bridge](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) ఇంటర్‌ఫేస్ మనం పైన చూసిన [l1 సమానమైన దానికి](#il1erc20bridge) చాలా పోలి ఉంటుంది.
 రెండు ముఖ్యమైన తేడాలు ఉన్నాయి:
 
 1. l1లో మీరు డిపాజిట్లను ప్రారంభిస్తారు మరియు ఉపసంహరణలను ముగిస్తారు.

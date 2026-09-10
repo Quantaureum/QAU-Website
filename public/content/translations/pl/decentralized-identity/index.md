@@ -21,7 +21,6 @@ Aby rozwiązać te problemy, mamy systemy zdecentralizowanej tożsamości zbudow
 
 Tożsamość oznacza poczucie własnego ja jednostki, zdefiniowane przez unikalne cechy. Tożsamość odnosi się do bycia _jednostką_, tj. odrębnym bytem ludzkim. Tożsamość może również odnosić się do innych podmiotów nieludzkich, takich jak organizacja lub organ władzy.
 
-<VideoWatch slug="decentralized-identity-explained" />
 
 ## Czym są identyfikatory? {#what-are-identifiers}
 

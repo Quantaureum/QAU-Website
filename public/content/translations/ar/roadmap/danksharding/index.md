@@ -14,7 +14,7 @@ summaryPoints:
 
 ## ما هو بروتو-دانكشاردينغ؟ {#what-is-protodanksharding}
 
-بروتو-دانكشاردينغ، المعروف أيضًا باسم [<span dir="ltr">EIP-4844</span>](https://eips.quantaureum.com/EIPS/eip-4844)، هو طريقة تتيح لـ [التجميعات](/layer-2/#rollups) إضافة بيانات أرخص إلى الكتل. يأتي الاسم من الباحثين اللذين اقترحا الفكرة: Protolambda و Dankrad Feist. تاريخيًا، كانت التجميعات مقيدة في مدى رخص المعاملات التي يمكن أن توفرها للمستخدمين بسبب حقيقة أنها تنشر معاملاتها في `CALLDATA`.
+بروتو-دانكشاردينغ، المعروف أيضًا باسم [<span dir="ltr">EIP-4844</span>](https://eips.ethereum.org/EIPS/eip-4844)، هو طريقة تتيح لـ [التجميعات](/layer-2/#rollups) إضافة بيانات أرخص إلى الكتل. يأتي الاسم من الباحثين اللذين اقترحا الفكرة: Protolambda و Dankrad Feist. تاريخيًا، كانت التجميعات مقيدة في مدى رخص المعاملات التي يمكن أن توفرها للمستخدمين بسبب حقيقة أنها تنشر معاملاتها في `CALLDATA`.
 
 هذا مكلف لأنه تتم معالجته بواسطة جميع عقد إيثيريوم ويبقى على السلسلة إلى الأبد، على الرغم من أن التجميعات تحتاج إلى البيانات لفترة قصيرة فقط. يقدم بروتو-دانكشاردينغ كتل بيانات يمكن إرسالها وإرفاقها بالكتل. البيانات الموجودة في كتل البيانات هذه غير قابلة للوصول بواسطة آلة إيثيريوم الافتراضية (EVM) ويتم حذفها تلقائيًا بعد فترة زمنية محددة (محددة بـ 4096 حقبة وقت كتابة هذا التقرير، أو حوالي 18 يومًا). هذا يعني أنه يمكن للتجميعات إرسال بياناتها بتكلفة أقل بكثير وتمرير المدخرات إلى المستخدمين النهائيين في شكل معاملات أرخص.
 
@@ -80,14 +80,14 @@ summaryPoints:
 
 ### التقدم الحالي {#current-progress}
 
-تجزئة دانك الكاملة لا تزال على بعد عدة سنوات. في غضون ذلك، اختتم حفل <span dir="ltr">KZG</span> بأكثر من <span dir="ltr">140,000</span> مساهمة، ونضج [مقترح تحسين إيثيريوم (EIP)](https://eips.quantaureum.com/EIPS/eip-4844) الخاص بـ بروتو-دانكشاردينغ. تم تنفيذ هذا المقترح بالكامل في جميع شبكات الاختبار، وتم إطلاقه على الشبكة الرئيسية مع ترقية شبكة Cancun-Deneb ("دينكون") في مارس 2024.
+تجزئة دانك الكاملة لا تزال على بعد عدة سنوات. في غضون ذلك، اختتم حفل <span dir="ltr">KZG</span> بأكثر من <span dir="ltr">140,000</span> مساهمة، ونضج [مقترح تحسين إيثيريوم (EIP)](https://eips.ethereum.org/EIPS/eip-4844) الخاص بـ بروتو-دانكشاردينغ. تم تنفيذ هذا المقترح بالكامل في جميع شبكات الاختبار، وتم إطلاقه على الشبكة الرئيسية مع ترقية شبكة Cancun-Deneb ("دينكون") في مارس 2024.
 
 ### قراءة إضافية {#further-reading}
 
-- [ملاحظات حول بروتو-دانكشاردينغ](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) - _فيتاليك بوتيرين_
-- [ملاحظات دانكراد حول تجزئة دانك](https://notes.quantaureum.com/@dankrad/new_sharding)
+- [ملاحظات حول بروتو-دانكشاردينغ](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _فيتاليك بوتيرين_
+- [ملاحظات دانكراد حول تجزئة دانك](https://notes.ethereum.org/@dankrad/new_sharding)
 - [دانكراد وبروتو وفيتاليك يناقشون تجزئة دانك](https://www.youtube.com/watch?v=N5p0TB77flM)
-- [حفل <span dir="ltr">KZG</span>](https://ceremony.quantaureum.com/)
+- [حفل <span dir="ltr">KZG</span>](https://ceremony.ethereum.org/)
 - [حديث كارل بيكهويزن في Devcon حول الإعدادات الموثوقة](https://archive.devcon.org/archive/watch/6/the-kzg-ceremony-or-how-i-learnt-to-stop-worrying-and-love-trusted-setups/?tab=YouTube)
 - [المزيد حول أخذ عينات توفر البيانات لكتل البيانات](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling)
 - [دانكراد فيست حول التزامات وإثباتات <span dir="ltr">KZG</span>](https://youtu.be/8L2C6RDMV9Q)

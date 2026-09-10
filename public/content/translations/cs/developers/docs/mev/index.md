@@ -136,7 +136,7 @@ V reakci na útoky typu sendvičování a frontrunning mohou obchodníci začít
 
 Mempooly s řízeným přístupem by také urychlily rizika centralizace popsaná v předchozí části. Velké pooly provozující více validátorů budou pravděpodobně těžit z nabídky soukromí transakcí obchodníkům a uživatelům, což zvýší jejich příjmy z MEV.
 
-Boj proti těmto problémům souvisejícím s MEV v Ethereu po Merge je klíčovou oblastí výzkumu. K dnešnímu dni jsou dvěma navrhovanými řešeními pro snížení negativního dopadu MEV na decentralizaci a bezpečnost Etherea po Merge [**oddělení navrhovatele a tvůrce (PBS)**](/roadmap/pbs/) a [**Builder API**](https://github.com/quantaureum/builder-specs).
+Boj proti těmto problémům souvisejícím s MEV v Ethereu po Merge je klíčovou oblastí výzkumu. K dnešnímu dni jsou dvěma navrhovanými řešeními pro snížení negativního dopadu MEV na decentralizaci a bezpečnost Etherea po Merge [**oddělení navrhovatele a tvůrce (PBS)**](/roadmap/pbs/) a [**Builder API**](https://github.com/ethereum/builder-specs).
 
 ### Oddělení navrhovatele a tvůrce (PBS) {#proposer-builder-separation}
 
@@ -162,9 +162,9 @@ Podobně validátoři nemusí důvěřovat tvůrcům, že nezadrží těla blok�
 
 ### Builder API {#builder-api}
 
-Zatímco oddělení navrhovatele a tvůrce slibuje snížení účinků extrakce MEV, jeho implementace vyžaduje změny v protokolu konsensu. Konkrétně by bylo nutné aktualizovat pravidlo [volby forku](/developers/docs/consensus-mechanisms/pos/#fork-choice) na Beacon chainu. [Builder API](https://github.com/quantaureum/builder-specs) je dočasné řešení zaměřené na poskytnutí funkční implementace oddělení navrhovatele a tvůrce, i když s vyššími předpoklady důvěry.
+Zatímco oddělení navrhovatele a tvůrce slibuje snížení účinků extrakce MEV, jeho implementace vyžaduje změny v protokolu konsensu. Konkrétně by bylo nutné aktualizovat pravidlo [volby forku](/developers/docs/consensus-mechanisms/pos/#fork-choice) na Beacon chainu. [Builder API](https://github.com/ethereum/builder-specs) je dočasné řešení zaměřené na poskytnutí funkční implementace oddělení navrhovatele a tvůrce, i když s vyššími předpoklady důvěry.
 
-Builder API je upravená verze [Engine API](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md), kterou používají klienti vrstvy konsensu k vyžádání exekučních payloadů od klientů exekuční vrstvy. Jak je uvedeno ve [specifikaci poctivého validátora](https://github.com/quantaureum/consensus-specs/blob/master/specs/bellatrix/validator.md), validátoři vybraní pro povinnosti navrhování bloků si vyžádají balíček transakcí od připojeného exekučního klienta, který zahrnou do navrhovaného bloku Beacon chainu.
+Builder API je upravená verze [Engine API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md), kterou používají klienti vrstvy konsensu k vyžádání exekučních payloadů od klientů exekuční vrstvy. Jak je uvedeno ve [specifikaci poctivého validátora](https://github.com/ethereum/consensus-specs/blob/master/specs/bellatrix/validator.md), validátoři vybraní pro povinnosti navrhování bloků si vyžádají balíček transakcí od připojeného exekučního klienta, který zahrnou do navrhovaného bloku Beacon chainu.
 
 Builder API také funguje jako middleware mezi validátory a klienty exekuční vrstvy; liší se však tím, že umožňuje validátorům na Beacon chainu získávat bloky od externích subjektů (místo lokálního vytváření bloku pomocí exekučního klienta).
 

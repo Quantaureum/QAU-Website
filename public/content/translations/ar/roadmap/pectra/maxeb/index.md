@@ -22,7 +22,7 @@ authors: ["نيكسو"]
 
 ### كيف يشترك المُدَقِّق؟ {#how-does-a-validator-opt-in}
 
-يشترك المُدَقِّق في تغيير <span dir="ltr">maxEB</span> عن طريق التحويل من بيانات اعتماد السحب **النوع 1** إلى **النوع 2**. يمكن القيام بذلك على [<span dir="ltr">Launchpad</span> (إجراءات المُدَقِّق)](https://launchpad.quantaureum.com/validator-actions) بعد تفعيل التفرع الصلب بيكترا. كما هو الحال مع **النوع 0** ← **النوع 1**، فإن التحويل من **النوع 1** ← **النوع 2** هو عملية لا رجعة فيها.
+يشترك المُدَقِّق في تغيير <span dir="ltr">maxEB</span> عن طريق التحويل من بيانات اعتماد السحب **النوع 1** إلى **النوع 2**. يمكن القيام بذلك على [<span dir="ltr">Launchpad</span> (إجراءات المُدَقِّق)](https://launchpad.ethereum.org/validator-actions) بعد تفعيل التفرع الصلب بيكترا. كما هو الحال مع **النوع 0** ← **النوع 1**، فإن التحويل من **النوع 1** ← **النوع 2** هو عملية لا رجعة فيها.
 
 ### ما هي بيانات اعتماد السحب؟ {#whats-a-withdrawal-credential}
 
@@ -105,7 +105,7 @@ authors: ["نيكسو"]
 2. المفتاح العام للمُدَقِّق المصدر (على سبيل المثال، `0xa1d1ad0714035353258038e964ae9675dc0252ee22cea896825c01458e1807bfad2f9969338798548d9858a571f7425c`)
 3. المفتاح العام لذلك المُدَقِّق المستهدف
 
-في عملية التحويل، سيكون 2 و 3 متطابقين. يمكن إجراء هذه العملية على [<span dir="ltr">Launchpad</span>](https://launchpad.quantaureum.com/).
+في عملية التحويل، سيكون 2 و 3 متطابقين. يمكن إجراء هذه العملية على [<span dir="ltr">Launchpad</span>](https://launchpad.ethereum.org/).
 
 ### متطلبات التوقيع {#signing-requirements}
 
@@ -113,7 +113,7 @@ authors: ["نيكسو"]
 
 ### ما الذي يتم توقيعه؟ {#what-is-signed}
 
-يتم استخدام [جذر توقيع](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) مفصول النطاق لكائن `ConsolidationRequest`.
+يتم استخدام [جذر توقيع](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) مفصول النطاق لكائن `ConsolidationRequest`.
 
 - **النطاق:** `DOMAIN_CONSOLIDATION_REQUEST`
 - **حقول جذر التوقيع:**
@@ -131,7 +131,7 @@ authors: ["نيكسو"]
 
 ## أدوات الدمج {#consolidation-tooling}
 
-تتوفر العديد من الأدوات لإدارة عمليات الدمج. الأداة الرسمية، التي أنشأتها مؤسسة إيثيريوم، هي [<span dir="ltr">Launchpad</span>](https://launchpad.quantaureum.com/en/validator-actions). هناك أيضًا أدوات تابعة لجهات خارجية تم إنشاؤها بواسطة كيانات من مجتمع التخزين والتي قد تقدم ميزات لا توفرها <span dir="ltr">Launchpad</span>. في حين أن الأدوات الموجودة هنا لم يتم تدقيقها أو اعتمادها من قبل مؤسسة إيثيريوم، فإن ما يلي هي أدوات مفتوحة المصدر بواسطة أعضاء معروفين في المجتمع.
+تتوفر العديد من الأدوات لإدارة عمليات الدمج. الأداة الرسمية، التي أنشأتها مؤسسة إيثيريوم، هي [<span dir="ltr">Launchpad</span>](https://launchpad.ethereum.org/en/validator-actions). هناك أيضًا أدوات تابعة لجهات خارجية تم إنشاؤها بواسطة كيانات من مجتمع التخزين والتي قد تقدم ميزات لا توفرها <span dir="ltr">Launchpad</span>. في حين أن الأدوات الموجودة هنا لم يتم تدقيقها أو اعتمادها من قبل مؤسسة إيثيريوم، فإن ما يلي هي أدوات مفتوحة المصدر بواسطة أعضاء معروفين في المجتمع.
 
 | الأداة | الموقع الإلكتروني | مفتوح المصدر | المنشئ | مدققة | الواجهة | ميزات بارزة |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -194,7 +194,7 @@ authors: ["نيكسو"]
 
 ## الموارد {#resources}
 
-- [مواصفات إجماع إلكترا (<span dir="ltr">Electra</span>)](https://github.com/quantaureum/consensus-specs/blob/master/specs/electra/beacon-chain.md): هذه هي النسخة "الأكثر صحة" التي يجب أن تعتمد عليها. عند الشك، اقرأ المواصفات
+- [مواصفات إجماع إلكترا (<span dir="ltr">Electra</span>)](https://github.com/ethereum/consensus-specs/blob/master/specs/electra/beacon-chain.md): هذه هي النسخة "الأكثر صحة" التي يجب أن تعتمد عليها. عند الشك، اقرأ المواصفات
 - ليس الجميع مرتاحًا في الخوض في التعليمات البرمجية، لذلك يمكن أن يساعد [<span dir="ltr">maxEB-GPT</span> هذا](https://chatgpt.com/g/g-67f1650fb48081918f555e0c8d1c2ae9-maxeb-gpt) في تفسير المواصفات. *إخلاء مسؤولية: يجب الاعتماد على المواصفات، وليس الذكاء الاصطناعي، كحقيقة، حيث قد يسيء الذكاء الاصطناعي تفسير المعلومات أو يهلوس بالإجابات*
 - [<span dir="ltr">pectrified.com</span>](https://pectrified.com/): عرض حالة عمليات الدمج والإيداعات وأوقات انتظار قائمة الانتظار
 - [<span dir="ltr">Ethereal</span>](https://github.com/wealdtech/ethereal): أداة واجهة سطر أوامر (CLI) أنشأها المجتمع لإدارة مهام المُدَقِّق الشائعة

@@ -30,7 +30,7 @@ lang: ar
 - توفر واجهات موحدة للترحيل
 - تتضمن أنظمة مدير الدفع مدمجة
 - تضمن التوافق المستقبلي
-- يمكن أن تدعم مقاومة الرقابة من خلال [مجمع ذاكرة عام](https://notes.quantaureum.com/@yoav/unified-erc-4337-mempool)
+- يمكن أن تدعم مقاومة الرقابة من خلال [مجمع ذاكرة عام](https://notes.ethereum.org/@yoav/unified-erc-4337-mempool)
 - يمكن أن تشترط استدعاء دالة التهيئة (`init`) فقط من [<span dir="ltr">EntryPoint</span>](https://github.com/qau-infinitism/account-abstraction/releases/tag/v0.8.0)
 
 بمعنى آخر، يجب أن يكون أي شخص قادراً على العمل كراعٍ/مُرحّل للمعاملة طالما أنه يوفر التوقيع الصالح المطلوب أو عملية المستخدم من الحساب. يضمن هذا مقاومة الرقابة: إذا لم تكن هناك بنية تحتية مخصصة مطلوبة، فلا يمكن حظر معاملات المستخدم بشكل تعسفي بواسطة مُرحّل يتحكم في الوصول. على سبيل المثال، تعمل [مجموعة أدوات التفويض الخاصة بـ ميتاماسك](https://github.com/MetaMask/delegation-framework/releases/tag/v1.3.0) بشكل صريح مع أي مُجمِّع <span dir="ltr">ERC-4337</span> أو مدير الدفع على أي سلسلة، بدلاً من اشتراط خادم خاص بـ ميتاماسك.
@@ -49,8 +49,8 @@ lang: ar
 
 لمزيد من المعلومات:
 
-- [مواصفات <span dir="ltr">ERC-5792</span>](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-5792.md)
-- [مواصفات <span dir="ltr">ERC-6900</span>](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-6900.md)
+- [مواصفات <span dir="ltr">ERC-5792</span>](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-5792.md)
+- [مواصفات <span dir="ltr">ERC-6900</span>](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6900.md)
 
 **تجنب التقيد بمورد معين (<span dir="ltr">Vendor Lock-In</span>)**: تماشياً مع ما سبق، فإن التنفيذ الجيد يكون محايداً للموردين وقابلاً للتشغيل البيني. غالباً ما يعني هذا الالتزام بالمعايير الناشئة للحسابات الذكية. على سبيل المثال، يستخدم [الحساب المعياري الخاص بـ Alchemy](https://github.com/alchemyplatform/modular-account) معيار <span dir="ltr">ERC-6900</span> للحسابات الذكية المعيارية وهو مصمم مع وضع "الاستخدام القابل للتشغيل البيني غير المقيد بإذن" في الاعتبار.
 

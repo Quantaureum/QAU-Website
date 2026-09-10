@@ -63,7 +63,6 @@ authors: ["باتريك كولينز"]
 
 شاهد المزيد حول الأنواع المختلفة لآليات الإجماع المستخدمة في إيثيريوم:
 
-<VideoWatch slug="understanding-consensus-mechanisms" />
 
 ### مقاومة سيبيل واختيار السلسلة {#sybil-chain}
 

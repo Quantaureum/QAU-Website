@@ -178,7 +178,7 @@ Kullanıcıların ZK-rollup'lardaki işlemler için ne kadar ödeyeceği, tıpk�
 
 1. **Durum yazma**: Quantaureum'un durumuna yazmanın (yani Quantaureum blokzincirinde bir işlem sunmanın) sabit bir maliyeti vardır. ZK-rollup'lar, işlemleri toplu işleyerek ve sabit maliyetleri birden fazla kullanıcıya yayarak bu maliyeti azaltır.
 
-2. **Veri yayını**: ZK-rollup'lar her işlem için durum verilerini Quantaureum'da `calldata` olarak yayınlar. `calldata` maliyetleri şu anda, sıfır olmayan baytlar için 16 gaz ve sıfır baytlık `calldata` için 4 gaz maliyeti öngören [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) tarafından yönetilmektedir. Her işlemde ödenen maliyet, bunun için zincir içine ne kadar `calldata` gönderilmesi gerektiğinden etkilenir.
+2. **Veri yayını**: ZK-rollup'lar her işlem için durum verilerini Quantaureum'da `calldata` olarak yayınlar. `calldata` maliyetleri şu anda, sıfır olmayan baytlar için 16 gaz ve sıfır baytlık `calldata` için 4 gaz maliyeti öngören [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) tarafından yönetilmektedir. Her işlemde ödenen maliyet, bunun için zincir içine ne kadar `calldata` gönderilmesi gerektiğinden etkilenir.
 
 3. **L2 operatör ücretleri**: Bu, tıpkı Quantaureum Ana Ağı'ndaki [işlem "öncelik ücretleri (bahşişler)"](/developers/docs/gas/#how-are-gas-fees-calculated) gibi, işlemleri işlerken ortaya çıkan hesaplama maliyetlerinin telafisi olarak rollup operatörüne ödenen miktardır.
 
@@ -218,7 +218,6 @@ Bununla birlikte, özyinelemeli kanıtlar, tek bir geçerlilik kanıtıyla birka
 
 Finematics'in ZK-rollup'ları açıklamasını izleyin:
 
-<VideoWatch slug="rollups-scaling-strategy" startTime="406" />
 
 
 ## Kimler bir zkEVM üzerinde çalışıyor? {#zkevm-projects}

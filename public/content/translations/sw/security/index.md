@@ -262,7 +262,6 @@ Ufunguo wa usalama ni aina ya 2FA iliyoboreshwa zaidi na salama. Funguo za usala
 
 Tazama zaidi kuhusu 2FA:
 
-<VideoWatch slug="crypto-security-passwords" startTime="3479" />
 
 ### Sanidua viendelezi vya kivinjari {#uninstall-browser-extensions}
 

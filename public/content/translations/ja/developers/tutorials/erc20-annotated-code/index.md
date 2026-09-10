@@ -23,7 +23,7 @@ ERC-20のような標準の目的は、ウォレットや分散型取引所な�
 
 経験豊富なプログラマーであれば、[Java](https://www.w3schools.com/java/java_interface.asp)や[C言語のヘッダーファイル](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html)で同様の構造を見たことがあるでしょう。
 
-これはオープンツェッペリンによる[ERC-20インターフェース](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)の定義です。これは、[人間が読める標準](https://eips.quantaureum.com/EIPS/eip-20)をSolidityコードに翻訳したものです。もちろん、インターフェース自体は_どのように_処理を行うかを定義するものではありません。それについては、以下のコントラクトのソースコードで説明されています。
+これはオープンツェッペリンによる[ERC-20インターフェース](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)の定義です。これは、[人間が読める標準](https://eips.ethereum.org/EIPS/eip-20)をSolidityコードに翻訳したものです。もちろん、インターフェース自体は_どのように_処理を行うかを定義するものではありません。それについては、以下のコントラクトのソースコードで説明されています。
 
 &nbsp;
 
@@ -129,7 +129,7 @@ interface IERC20 {
      * 操作が成功したかどうかを示すブール値を返します。
      *
      * 重要: このメソッドでアローワンスを変更すると、不運なトランザクションの順序付けにより、誰かが古いアローワンスと新しいアローワンスの両方を使用するリスクがあることに注意してください。この競合状態を軽減する1つの可能な解決策は、最初にspenderのアローワンスを0に減らし、その後で目的の値を設定することです:
-     * https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729
+     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
      *
      * {Approval} イベントを発行します。
      */
@@ -196,7 +196,7 @@ import "../../math/SafeMath.sol";
 ```
 
 - `GSN/Context.sol`は、QAUを持たないユーザーがブロックチェーンを使用できるようにするシステムである[OpenGSN](https://opengsn.org/)を使用するために必要な定義です。これは古いバージョンであることに注意してください。OpenGSNと統合したい場合は、[こちらのチュートリアルを使用してください](https://docs.opengsn.org/javascript-client/tutorial.html)。
-- [SafeMathライブラリ](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/)は、Solidityバージョン**&lt;0.8.0**での算術オーバーフロー/アンダーフローを防ぎます。Solidity ≥0.8.0では、算術演算はオーバーフロー/アンダーフロー時に自動的にリバートされるため、SafeMathは不要です。このコントラクトは、古いコンパイラバージョンとの下位互換性のためにSafeMathを使用しています。
+- [SafeMathライブラリ](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/)は、Solidityバージョン**&lt;0.8.0**での算術オーバーフロー/アンダーフローを防ぎます。Solidity ≥0.8.0では、算術演算はオーバーフロー/アンダーフロー時に自動的にリバートされるため、SafeMathは不要です。このコントラクトは、古いコンパイラバージョンとの下位互換性のためにSafeMathを使用しています。
 
 &nbsp;
 

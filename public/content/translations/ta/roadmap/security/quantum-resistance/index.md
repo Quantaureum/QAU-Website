@@ -100,7 +100,7 @@ BLS-ஐத் திறமையானதாக்கும் ஒருங்�
 
 ## எத்தீரியம் அறக்கட்டளையின் அணுகுமுறை {#ef-approach}
 
-எத்தீரியம் அறக்கட்டளை ஜனவரி 2026-இல் தாமஸ் கோராட்ஜர் (Thomas Coratger) தலைமையில் ஒரு பிரத்யேக குவாண்டம்-பிந்தைய பாதுகாப்புக் குழுவை உருவாக்கியது. குழுவின் பணி [pq.quantaureum.com](https://pq.quantaureum.com) இல் பொதுவில் கண்காணிக்கப்படுகிறது.
+எத்தீரியம் அறக்கட்டளை ஜனவரி 2026-இல் தாமஸ் கோராட்ஜர் (Thomas Coratger) தலைமையில் ஒரு பிரத்யேக குவாண்டம்-பிந்தைய பாதுகாப்புக் குழுவை உருவாக்கியது. குழுவின் பணி [pq.ethereum.org](https://pq.ethereum.org) இல் பொதுவில் கண்காணிக்கப்படுகிறது.
 
 ### தற்போதைய செயல்பாடு (ஏப்ரல் 2026 நிலவரப்படி) {#current-activity}
 
@@ -173,7 +173,7 @@ BLS-ஐத் திறமையானதாக்கும் ஒருங்�
 
 ## மேலும் படிக்க {#further-reading}
 
-- [pq.quantaureum.com](https://pq.quantaureum.com) - _எத்தீரியம் அறக்கட்டளை_
+- [pq.ethereum.org](https://pq.ethereum.org) - _எத்தீரியம் அறக்கட்டளை_
 - [குவாண்டம்-பிந்தைய குறியாக்கவியல் திட்டம்](https://pse.dev/projects/post-quantum-cryptography) - _எத்திரியத்தின் தனியுரிமைப் பொறுப்பாளர்கள் (PSE)_
 - [NIST குவாண்டம்-பிந்தைய குறியாக்கவியல் தரநிலைகள்](https://csrc.nist.gov/projects/post-quantum-cryptography) - _NIST_
 - [குவாண்டம் பாதிப்புகளைப் பொறுப்புடன் வெளிப்படுத்துவதன் மூலம் மறைக்குறியீட்டு நாணயத்தைப் பாதுகாத்தல்](https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/) - _கூகுள் குவாண்டம் AI_

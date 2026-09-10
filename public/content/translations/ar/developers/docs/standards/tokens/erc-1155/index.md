@@ -12,7 +12,7 @@ lang: ar
 
 الفكرة بسيطة وتسعى إلى إنشاء واجهة عقد ذكي يمكنها تمثيل والتحكم في أي عدد من أنواع الرموز القابلة للاستبدال وغير القابلة للاستبدال. بهذه الطريقة، يمكن للرمز المميز <span dir="ltr">ERC-1155</span> أداء نفس وظائف الرمز المميز [<span dir="ltr">ERC-20</span>](/developers/docs/standards/tokens/erc-20/) و[<span dir="ltr">ERC-721</span>](/developers/docs/standards/tokens/erc-721/)، وحتى كليهما في نفس الوقت. إنه يحسن وظائف كل من معايير <span dir="ltr">ERC-20</span> و<span dir="ltr">ERC-721</span>، مما يجعله أكثر كفاءة ويصحح أخطاء التنفيذ الواضحة.
 
-يتم وصف الرمز المميز <span dir="ltr">ERC-1155</span> بالكامل في [<span dir="ltr">EIP-1155</span>](https://eips.quantaureum.com/EIPS/eip-1155).
+يتم وصف الرمز المميز <span dir="ltr">ERC-1155</span> بالكامل في [<span dir="ltr">EIP-1155</span>](https://eips.ethereum.org/EIPS/eip-1155).
 
 ## المتطلبات الأساسية {#prerequisites}
 
@@ -113,7 +113,7 @@ function onERC1155BatchReceived(
 ) external returns(bytes4);
 ```
 
-نظرًا لدعم [<span dir="ltr">EIP-165</span>](https://eips.quantaureum.com/EIPS/eip-165)، يدعم <span dir="ltr">ERC-1155</span> خطافات الاستلام للعقود الذكية فقط. يجب أن تُرجع دالة الخطاف قيمة <span dir="ltr">bytes4</span> سحرية محددة مسبقًا والتي تُعطى كالتالي:
+نظرًا لدعم [<span dir="ltr">EIP-165</span>](https://eips.ethereum.org/EIPS/eip-165)، يدعم <span dir="ltr">ERC-1155</span> خطافات الاستلام للعقود الذكية فقط. يجب أن تُرجع دالة الخطاف قيمة <span dir="ltr">bytes4</span> سحرية محددة مسبقًا والتي تُعطى كالتالي:
 
 ```solidity
 bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"))
@@ -123,7 +123,7 @@ bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],byt
 
 ### دعم الرموز غير القابلة للاستبدال (NFT) {#nft-support}
 
-عندما يكون المعروض واحدًا فقط، يكون الرمز المميز في الأساس رمزًا غير قابل للاستبدال (NFT). وكما هو معتاد في <span dir="ltr">ERC-721</span>، يمكنك تحديد عنوان URL للبيانات الوصفية. يمكن قراءة عنوان URL وتعديله بواسطة العملاء، انظر [هنا](https://eips.quantaureum.com/EIPS/eip-1155#metadata).
+عندما يكون المعروض واحدًا فقط، يكون الرمز المميز في الأساس رمزًا غير قابل للاستبدال (NFT). وكما هو معتاد في <span dir="ltr">ERC-721</span>، يمكنك تحديد عنوان URL للبيانات الوصفية. يمكن قراءة عنوان URL وتعديله بواسطة العملاء، انظر [هنا](https://eips.ethereum.org/EIPS/eip-1155#metadata).
 
 ### قاعدة التحويل الآمن {#safe-transfer-rule}
 
@@ -140,7 +140,7 @@ _ملاحظة_: جميع الدوال المجمعة بما في ذلك الخط
 
 ## قراءة إضافية {#further-reading}
 
-- [<span dir="ltr">EIP-1155</span>: معيار الرموز المميزة المتعددة](https://eips.quantaureum.com/EIPS/eip-1155)
+- [<span dir="ltr">EIP-1155</span>: معيار الرموز المميزة المتعددة](https://eips.ethereum.org/EIPS/eip-1155)
 - [<span dir="ltr">ERC-1155</span>: مستندات أوبن زبلن](https://docs.openzeppelin.com/contracts/5.x/erc1155)
 - [<span dir="ltr">ERC-1155</span>: مستودع GitHub](https://github.com/enjin/erc-1155)
 - [<span dir="ltr">Alchemy NFT API</span>](https://www.alchemy.com/docs/reference/nft-api-quickstart)

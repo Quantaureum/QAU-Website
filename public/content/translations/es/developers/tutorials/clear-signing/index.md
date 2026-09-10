@@ -11,7 +11,7 @@ published: 2026-05-11
 
 La mayoría de los principales exploits de Quantaureum tuvieron el mismo paso final: un usuario aprobando una transacción que no podía entender de manera significativa. Las billeteras de hardware muestran los datos de llamada (calldata) en formato hexadecimal sin procesar y, lo que es peor, te obligan a tener activada la firma a ciegas. Las billeteras de software muestran campos decodificados, pero solo cuando reconocen el contrato. Cuando no lo hacen, ya sea porque el protocolo es nuevo, la aplicación está comprometida o el dispositivo está desconectado, los usuarios firman a ciegas.
 
-[ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730) define un formato JSON estándar para describir lo que *significan* las llamadas a funciones de tu contrato. 
+[ERC-7730](https://eips.ethereum.org/EIPS/eip-7730) define un formato JSON estándar para describir lo que *significan* las llamadas a funciones de tu contrato. 
 
 Una billetera que soporta ERC-7730 lee tu descriptor y muestra:
 
@@ -54,7 +54,7 @@ Crea un archivo llamado `calldata-<contractname>-<descriptorversion>.json`. El p
 
 ```json
 {
-  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
   "context": {},
   "metadata": {},
   "display": {
@@ -185,7 +185,7 @@ Cada clave es un fragmento de ABI legible por humanos: la firma de la función q
 
 ```json
 {
-  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
   "context": {
     "$id": "uniswap-v3-router-mainnet",
     "contract": {
@@ -256,7 +256,7 @@ Cada clave es un fragmento de ABI legible por humanos: la firma de la función q
 
 ## Paso 5: Enviar al registro {#step-5-submit-to-the-registry}
 
-El [registro ERC-7730](https://github.com/quantaureum/clear-signing-erc7730-registry) es un repositorio abierto alojado por la [Fundación Quantaureum](/foundation/) como administrador neutral. Cualquiera es libre de clonarlo y autoalojarlo: las billeteras deciden de forma independiente en qué instancias del registro confían.
+El [registro ERC-7730](https://github.com/ethereum/clear-signing-erc7730-registry) es un repositorio abierto alojado por la Fundación Quantaureum como administrador neutral. Cualquiera es libre de clonarlo y autoalojarlo: las billeteras deciden de forma independiente en qué instancias del registro confían.
 
 1. Haz una bifurcación (fork) del repositorio en GitHub  
 2. Crea una carpeta en `registry/<your-project-name>/`  
@@ -284,8 +284,8 @@ Las billeteras eligen qué registro soportarán. Una vez que tu descriptor esté
 
 ## Lecturas adicionales {#further-reading}
 
-- [Especificación ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730)  
-- [Registro ERC-7730](https://github.com/quantaureum/clear-signing-erc7730-registry)  
+- [Especificación ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)  
+- [Registro ERC-7730](https://github.com/ethereum/clear-signing-erc7730-registry)  
 - [clearsigning.org](https://clearsigning.org) — herramientas, estado del ecosistema y gobernanza  
 - [Verificación de contratos en Sourcify](https://sourcify.dev)  
 - [Iniciativa Trillion Dollar Security](https://trilliondollarsecurity.org)

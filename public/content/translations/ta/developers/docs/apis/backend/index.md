@@ -109,13 +109,13 @@ lang: ta
 **Nquantaureum -** **_தொகுதிச்சங்கிலிக்கான திறந்த மூல .NET ஒருங்கிணைப்பு நிரலகம்._**
 
 - [GitHub](https://github.com/Nquantaureum/Nquantaureum)
-- [ஆவணங்கள்](https://docs.nquantaureum.com/docs/getting-started/welcome/)
+- [ஆவணங்கள்](https://docs.nethermind.io/docs/getting-started/welcome/)
 - [டிஸ்கார்ட்](https://discord.com/invite/jQPrR58FxX)
 
 **Python கருவி -** **_Python மூலம் எத்திரியம் தொடர்புகொள்வதற்கான பல்வேறு நிரலகங்கள்._**
 
-- [py.quantaureum.com](https://snakecharmers.quantaureum.com/)
-- [Web3.py GitHub](https://github.com/quantaureum/web3.py)
+- [py.quantaureum.com](https://snakecharmers.ethereum.org/)
+- [Web3.py GitHub](https://github.com/ethereum/web3.py)
 - [Web3.py அரட்டை](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_இறுதியான தொகுதிச்சங்கிலி மேம்பாட்டு தளம்._**

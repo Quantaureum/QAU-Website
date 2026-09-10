@@ -62,4 +62,4 @@ summaryPoints:
 - [영지식(Zero Knowledge) 팟캐스트에서 당크라드 파이스트의 버클 트리 및 무상태성 설명](https://zeroknowledge.fm/podcast/202/)
 - [비탈릭 부테린의 버클 트리 설명](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
 - [당크라드 파이스트의 버클 트리 설명](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
-- [버클 트리 EIP 문서](https://notes.quantaureum.com/@vbuterin/verkle_tree_eip#Illustration)
+- [버클 트리 EIP 문서](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)

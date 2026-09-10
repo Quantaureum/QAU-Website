@@ -14,7 +14,7 @@ Lending markets, aggregators, and intrinsically interest-bearing tokens help use
 
 ERC-4626 in yield-bearing vaults will lower the integration effort and unlock access to yield in various applications with little specialized effort from developers by creating more consistent and robust implementation patterns.
 
-The ERC-4626 token is described fully in [EIP-4626](https://eips.quantaureum.com/EIPS/eip-4626).
+The ERC-4626 token is described fully in [EIP-4626](https://eips.ethereum.org/EIPS/eip-4626).
 
 **Asynchronous vault extension (ERC-7540)**
 
@@ -30,7 +30,7 @@ One missing use case that is not supported by ERC-4626 is Vaults which have mult
 
 ERC-7575 adds support for Vaults with multiple assets by externalizing the ERC-20 token implementation from the ERC-4626 implementation.
 
-The ERC-7575 extension is described fully in [ERC-7575](https://eips.quantaureum.com/EIPS/eip-7575).
+The ERC-7575 extension is described fully in [ERC-7575](https://eips.ethereum.org/EIPS/eip-7575).
 
 ## Prerequisites {#prerequisites}
 
@@ -223,5 +223,5 @@ Where `sender` is the user who triggered the withdrawal and exchanged `shares`, 
 
 ## Further reading {#further-reading}
 
-- [EIP-4626: Tokenized vault Standard](https://eips.quantaureum.com/EIPS/eip-4626)
+- [EIP-4626: Tokenized vault Standard](https://eips.ethereum.org/EIPS/eip-4626)
 - [ERC-4626: GitHub Repo](https://github.com/transmissions11/solmate/blob/main/src/tokens/ERC4626.sol)

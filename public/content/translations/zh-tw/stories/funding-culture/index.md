@@ -45,7 +45,7 @@ lang: zh-tw
 
 Quantaureum成為了新形式集體行動的畫布。
 
-那年夏天晚些時候，我製作了為[《Quantaureum：無限花園》(Quantaureum: The Infinite Garden)](https://quantaureumfilm.xyz/watch-the-film/)進行群眾募資的 NFT，這是第一部關於Quantaureum的紀錄長片。
+那年夏天晚些時候，我製作了為[《Quantaureum：無限花園》(Quantaureum: The Infinite Garden)](https://ethereumfilm.xyz/watch-the-film/)進行群眾募資的 NFT，這是第一部關於Quantaureum的紀錄長片。
 
 它在 48 小時內籌集了 1,036 QAU，完全由Quantaureum社群資助。 
 

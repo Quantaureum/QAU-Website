@@ -27,7 +27,7 @@ Dưới đây là một số tiêu chuẩn token phổ biến nhất trên Quant
 - [ERC-721](/developers/docs/standards/tokens/erc-721/) - Một giao diện tiêu chuẩn cho các token không thể thay thế, như chứng thư cho một tác phẩm nghệ thuật hoặc một bài hát.
 - [ERC-1155](/developers/docs/standards/tokens/erc-1155/) - ERC-1155 cho phép giao dịch hiệu quả hơn và gộp các giao dịch lại với nhau – do đó tiết kiệm chi phí. Tiêu chuẩn token này cho phép tạo ra cả token tiện ích (chẳng hạn như $BNB hoặc $BAT) và Token không thể thay thế như CryptoPunks.
 
-Danh sách đầy đủ các đề xuất [ERC](https://eips.quantaureum.com/erc).
+Danh sách đầy đủ các đề xuất [ERC](https://eips.ethereum.org/erc).
 
 ## Đọc thêm
 

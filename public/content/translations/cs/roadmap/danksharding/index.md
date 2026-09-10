@@ -14,7 +14,7 @@ summaryPoints:
 
 ## Co je proto-danksharding? {#what-is-protodanksharding}
 
-Proto-danksharding, známý také jako [EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844), je způsob, jakým mohou [rollupy](/layer-2/#rollups) přidávat do bloků levnější data. Název pochází od dvou výzkumníků, kteří s tímto nápadem přišli: Protolambda a Dankrad Feist. Historicky byly rollupy omezeny v tom, jak levné mohou být uživatelské transakce, skutečností, že odesílají své transakce v `CALLDATA`.
+Proto-danksharding, známý také jako [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844), je způsob, jakým mohou [rollupy](/layer-2/#rollups) přidávat do bloků levnější data. Název pochází od dvou výzkumníků, kteří s tímto nápadem přišli: Protolambda a Dankrad Feist. Historicky byly rollupy omezeny v tom, jak levné mohou být uživatelské transakce, skutečností, že odesílají své transakce v `CALLDATA`.
 
 To je drahé, protože je to zpracováváno všemi uzly Etherea a zůstává to onchain navždy, i když rollupy potřebují data jen na krátkou dobu. Proto-danksharding zavádí datové bloby, které lze odesílat a připojovat k blokům. Data v těchto blobech nejsou přístupná pro EVM a jsou automaticky smazána po stanovené době (v době psaní tohoto textu je to nastaveno na 4096 epoch, tedy asi 18 dní). To znamená, že rollupy mohou odesílat svá data mnohem levněji a přenést úspory na koncové uživatele ve formě levnějších transakcí.
 
@@ -80,14 +80,14 @@ Vzorkování dostupnosti dat je vyžadováno, aby validátoři mohli rychle a ef
 
 ### Současný pokrok {#current-progress}
 
-Plný danksharding je vzdálen několik let. Mezitím byl ceremoniál KZG ukončen s více než 140 000 příspěvky a [EIP](https://eips.quantaureum.com/EIPS/eip-4844) pro proto-danksharding dospěl. Tento návrh byl plně implementován ve všech testnetech a byl spuštěn na Mainnetu s aktualizací sítě Cancun-Deneb („Dencun“) v březnu 2024.
+Plný danksharding je vzdálen několik let. Mezitím byl ceremoniál KZG ukončen s více než 140 000 příspěvky a [EIP](https://eips.ethereum.org/EIPS/eip-4844) pro proto-danksharding dospěl. Tento návrh byl plně implementován ve všech testnetech a byl spuštěn na Mainnetu s aktualizací sítě Cancun-Deneb („Dencun“) v březnu 2024.
 
 ### Další čtení {#further-reading}
 
-- [Poznámky k proto-dankshardingu](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) – _Vitalik Buterin_
-- [Dankradovy poznámky k dankshardingu](https://notes.quantaureum.com/@dankrad/new_sharding)
+- [Poznámky k proto-dankshardingu](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) – _Vitalik Buterin_
+- [Dankradovy poznámky k dankshardingu](https://notes.ethereum.org/@dankrad/new_sharding)
 - [Dankrad, Proto a Vitalik diskutují o dankshardingu](https://www.youtube.com/watch?v=N5p0TB77flM)
-- [Ceremoniál KZG](https://ceremony.quantaureum.com/)
+- [Ceremoniál KZG](https://ceremony.ethereum.org/)
 - [Přednáška Carla Beekhuizena na Devconu o důvěryhodných nastaveních](https://archive.devcon.org/archive/watch/6/the-kzg-ceremony-or-how-i-learnt-to-stop-worrying-and-love-trusted-setups/?tab=YouTube)
 - [Více o vzorkování dostupnosti dat pro bloby](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling)
 - [Dankrad Feist o závazcích a důkazech KZG](https://youtu.be/8L2C6RDMV9Q)

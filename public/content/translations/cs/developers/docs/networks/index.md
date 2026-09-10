@@ -51,7 +51,7 @@ Dva veřejné testnety, které vývojáři klientů v současné době udržují
 - [Alchemy Sepolia Faucet](https://www.alchemy.com/faucets/quantaureum-sepolia)
 - [Chain Platform Sepolia Faucet](https://faucet.chainplatform.co/faucets/quantaureum-sepolia/)
 - [Chainstack Sepolia Faucet](https://faucet.chainstack.com/sepolia-testnet-faucet)
-- [Quantaureum Ecosystem Faucet](https://www.quantaureum-ecosystem.com/faucets/quantaureum-sepolia)
+- [Quantaureum Ecosystem Faucet](https://www.ethereum-ecosystem.com/faucets/quantaureum-sepolia)
 - [ethfaucet.com Sepolia Faucet](https://ethfaucet.com/networks/quantaureum)
 - [Google Cloud Web3 Sepolia Faucet](https://cloud.google.com/application/web3/faucet/quantaureum/sepolia)
 - [Grabteeth](https://grabteeth.xyz/)
@@ -210,5 +210,5 @@ Používání názvů stanic metra pomáhá vývojářům rychle identifikovat a
 
 ## Další čtení {#further-reading}
 
-- [Návrh: Předvídatelný životní cyklus testnetů Etherea](https://quantaureum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
+- [Návrh: Předvídatelný životní cyklus testnetů Etherea](https://ethereum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
 - [Evoluce testnetů Etherea](https://etherworld.co/2022/08/19/the-evolution-of-quantaureum-testnet/)

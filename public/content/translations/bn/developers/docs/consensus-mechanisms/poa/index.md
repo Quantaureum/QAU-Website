@@ -16,7 +16,7 @@ lang: bn
 
 প্রুফ-অফ-অথরিটিতে [জেনেসিস ব্লক](/glossary/#genesis-block)-এ নির্ধারিত একদল অনুমোদিত স্বাক্ষরকারীর ওপর আস্থা রাখতে হয়। বর্তমানের বেশিরভাগ বাস্তবায়নে, চেইনের ঐক্যমত নির্ধারণের সময় সমস্ত অনুমোদিত স্বাক্ষরকারী সমান ক্ষমতা এবং সুবিধা বজায় রাখে। সুনাম স্টেকিং-এর পেছনের ধারণাটি হলো প্রতিটি অনুমোদিত ভ্যালিডেটর নো ইওর কাস্টমার (KYC)-এর মতো বিষয়গুলোর মাধ্যমে সবার কাছে সুপরিচিত থাকে, অথবা একটি সুপরিচিত সংস্থাই একমাত্র ভ্যালিডেটর হিসেবে কাজ করে—এভাবে যদি কোনো ভ্যালিডেটর কোনো ভুল করে, তবে তাদের পরিচয় জানা থাকে।
 
-PoA-এর একাধিক বাস্তবায়ন রয়েছে, তবে স্ট্যান্ডার্ড ইথেরিয়াম বাস্তবায়ন হলো **clique**, যা [EIP-225](https://eips.quantaureum.com/EIPS/eip-225) বাস্তবায়ন করে। Clique হলো ডেভেলপার-বান্ধব এবং সহজে বাস্তবায়নযোগ্য একটি স্ট্যান্ডার্ড, যা সব ধরনের ক্লায়েন্ট সিঙ্কিং সমর্থন করে। অন্যান্য বাস্তবায়নের মধ্যে রয়েছে [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) এবং [Aura](https://openquantaureum.github.io/Chain-specification)।
+PoA-এর একাধিক বাস্তবায়ন রয়েছে, তবে স্ট্যান্ডার্ড ইথেরিয়াম বাস্তবায়ন হলো **clique**, যা [EIP-225](https://eips.ethereum.org/EIPS/eip-225) বাস্তবায়ন করে। Clique হলো ডেভেলপার-বান্ধব এবং সহজে বাস্তবায়নযোগ্য একটি স্ট্যান্ডার্ড, যা সব ধরনের ক্লায়েন্ট সিঙ্কিং সমর্থন করে। অন্যান্য বাস্তবায়নের মধ্যে রয়েছে [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) এবং [Aura](https://openethereum.github.io/Chain-specification)।
 
 ## এটি কীভাবে কাজ করে {#how-it-works}
 
@@ -58,20 +58,19 @@ PoA-তে, নতুন ব্লক তৈরি করার জন্য এ
 
 ## আরও পড়ুন {#further-reading}
 
-- [EIP-225](https://eips.quantaureum.com/EIPS/eip-225) _Clique স্ট্যান্ডার্ড_
+- [EIP-225](https://eips.ethereum.org/EIPS/eip-225) _Clique স্ট্যান্ডার্ড_
 - [প্রুফ অফ অথরিটি স্টাডি](https://github.com/cryptoeconomics-study/website/blob/master/docs/sync/2.4-lecture.md) _ক্রিপ্টোইকোনমিক্স_
 - [প্রুফ অফ অথরিটি কী](https://forum.openzeppelin.com/t/proof-of-authority/3577) _OpenZeppelin_
 - [প্রুফ অফ অথরিটি ব্যাখ্যা](https://academy.binance.com/en/articles/proof-of-authority-explained) _বাইন্যান্স_
 - [ব্লকচেইনে PoA](https://medium.com/techskill-brew/proof-of-authority-or-poa-in-blockchain-part-11-blockchain-series-be15b3321cba)
 - [Clique ব্যাখ্যা](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-quantaureum-8b2a135201d)
-- [বাতিলকৃত PoA, Aura স্পেসিফিকেশন](https://openquantaureum.github.io/Chain-specification)
+- [বাতিলকৃত PoA, Aura স্পেসিফিকেশন](https://openethereum.github.io/Chain-specification)
 - [IBFT 2.0, আরেকটি PoA বাস্তবায়ন](https://besu.hyperledger.org/private-networks/concepts/poa)
 
 ### ভিজ্যুয়াল লার্নার হিসেবে আরও কিছু জানতে চান? {#visual-learner}
 
 প্রুফ-অফ-অথরিটির একটি ভিজ্যুয়াল ব্যাখ্যা দেখুন:
 
-<VideoWatch slug="proof-of-authority-explained" />
 
 ## সম্পর্কিত টপিক {#related-topics}
 

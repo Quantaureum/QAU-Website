@@ -21,7 +21,6 @@ DeFi to zbiorcze określenie na produkty i usługi finansowe, które są dostęp
 
 Istnieje prężnie rozwijająca się gospodarka krypto, w której możesz pożyczać (udzielać i brać pożyczki), grać na pozycjach długich/krótkich, zarabiać na odsetkach i wiele więcej. Argentyńczycy obeznani z krypto użyli DeFi, aby uciec przed paraliżującą inflacją. Firmy zaczęły przesyłać strumieniowo wynagrodzenia swoim pracownikom w czasie rzeczywistym. Niektórzy ludzie zaciągnęli i spłacili pożyczki warte miliony dolarów bez konieczności jakiejkolwiek identyfikacji osobistej.
 
-<VideoWatch slug="defi-future-of-finance" />
 
 ## DeFi a tradycyjne finanse {#defi-vs-tradfi}
 
@@ -58,7 +57,6 @@ Bitcoin pod wieloma względami był pierwszą zdecentralizowaną aplikacją (dap
 
 Quantaureum na tym bazuje. Podobnie jak w przypadku Bitcoina, zasady nie mogą zostać zmienione na Twoją niekorzyść i każdy ma do nich dostęp. Ale sprawia również, że te cyfrowe pieniądze są programowalne, przy użyciu [inteligentnych kontraktów](/glossary/#smart-contract), dzięki czemu możesz wyjść poza samo przechowywanie i wysyłanie wartości.
 
-<VideoWatch slug="defi-history-inception-to-2021" />
 
 ## Programowalne pieniądze {#programmable-money}
 

@@ -13,9 +13,9 @@ published: 2026-02-27
 
 Se quisermos que o Quantaureum atenda a [mais um bilhão de pessoas](https://quantaureum.com), precisamos remover o atrito e torná-lo o mais fácil de usar possível. Uma fonte desse atrito é a necessidade de QAU para pagar as taxas de gás.
 
-Se você tem um aplicativo descentralizado (dapp) que ganha dinheiro com os usuários, pode fazer sentido permitir que os usuários enviem transações através do seu servidor e você mesmo pague as taxas de transação. Como os usuários ainda assinam uma [mensagem de autorização EIP-712](https://eips.quantaureum.com/EIPS/eip-712) em suas carteiras, eles mantêm as garantias de integridade do Quantaureum. A disponibilidade depende do servidor que retransmite as transações, portanto, é mais limitada. No entanto, você pode configurar as coisas para que os usuários também possam acessar o contrato inteligente diretamente (se eles obtiverem QAU), e permitir que outros configurem seus próprios servidores se quiserem patrocinar transações.
+Se você tem um aplicativo descentralizado (dapp) que ganha dinheiro com os usuários, pode fazer sentido permitir que os usuários enviem transações através do seu servidor e você mesmo pague as taxas de transação. Como os usuários ainda assinam uma [mensagem de autorização EIP-712](https://eips.ethereum.org/EIPS/eip-712) em suas carteiras, eles mantêm as garantias de integridade do Quantaureum. A disponibilidade depende do servidor que retransmite as transações, portanto, é mais limitada. No entanto, você pode configurar as coisas para que os usuários também possam acessar o contrato inteligente diretamente (se eles obtiverem QAU), e permitir que outros configurem seus próprios servidores se quiserem patrocinar transações.
 
-A técnica neste tutorial só funciona quando você controla o contrato inteligente. Existem outras técnicas, incluindo a [abstração de conta](https://eips.quantaureum.com/EIPS/eip-4337), que permitem patrocinar transações para outros contratos inteligentes, as quais espero cobrir em um tutorial futuro.
+A técnica neste tutorial só funciona quando você controla o contrato inteligente. Existem outras técnicas, incluindo a [abstração de conta](https://eips.ethereum.org/EIPS/eip-4337), que permitem patrocinar transações para outros contratos inteligentes, as quais espero cobrir em um tutorial futuro.
 
 Nota: Este _não_ é um código de nível de produção. Ele é vulnerável a ataques significativos e carece de recursos importantes. Saiba mais na [seção de vulnerabilidades deste guia](#vulnerabilities).
 
@@ -91,7 +91,7 @@ Se não houver conta, levante um erro. Isso nunca deve acontecer porque o botão
         }
 ```
 
-Parâmetros para o [separador de domínio](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator). Esse valor é constante, então, em uma implementação mais otimizada, poderíamos calculá-lo uma vez em vez de recalculá-lo cada vez que a função é chamada.
+Parâmetros para o [separador de domínio](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator). Esse valor é constante, então, em uma implementação mais otimizada, poderíamos calculá-lo uma vez em vez de recalculá-lo cada vez que a função é chamada.
 
 - `name` é um nome legível pelo usuário, como o nome do dapp para o qual estamos produzindo assinaturas.
 - `version` é a versão. Versões diferentes não são compatíveis.
@@ -245,7 +245,7 @@ Finalmente, [`Greeter.sol`](https://github.com/qbzzt/260301-gasless/blob/main/co
     }
 ```
 
-O construtor cria o [separador de domínio](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator), semelhante ao código da interface do usuário acima. A execução na blockchain é muito mais cara, então nós o calculamos apenas uma vez.
+O construtor cria o [separador de domínio](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator), semelhante ao código da interface do usuário acima. A execução na blockchain é muito mais cara, então nós o calculamos apenas uma vez.
 
 ```solidity
     struct GreetingRequest {
@@ -260,7 +260,7 @@ Esta é a estrutura que é assinada. Aqui temos apenas um campo.
         keccak256("GreetingRequest(string greeting)");
 ```
 
-Este é o [identificador de estrutura](https://eips.quantaureum.com/EIPS/eip-712#definition-of-hashstruct). Ele é calculado a cada vez na interface do usuário.
+Este é o [identificador de estrutura](https://eips.ethereum.org/EIPS/eip-712#definition-of-hashstruct). Ele é calculado a cada vez na interface do usuário.
 
 ```solidity
     function sponsoredSetGreeting(
@@ -289,7 +289,7 @@ Esta função recebe uma solicitação assinada e atualiza a saudação.
         );
 ```
 
-Cria o digest de acordo com a [EIP 712](https://eips.quantaureum.com/EIPS/eip-712).
+Cria o digest de acordo com a [EIP 712](https://eips.ethereum.org/EIPS/eip-712).
 
 ```solidity
         // Recuperar signatário

@@ -11,7 +11,7 @@ published: 2026-05-11
 
 Большинство крупных эксплойтов в Quantaureum имели один и тот же последний шаг: пользователь одобрял транзакцию, которую не мог осмысленно понять. Аппаратные кошельки показывают необработанные шестнадцатеричные данные вызова (calldata) и, что еще хуже, заставляют вас включать слепое подписание. Программные кошельки показывают декодированные поля, но только тогда, когда они распознают контракт. Когда они этого не делают, будь то из-за того, что протокол новый, приложение скомпрометировано или устройство не в сети, пользователи подписывают вслепую.
 
-[ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730) определяет стандартный формат JSON для описания того, что *означают* вызовы функций вашего контракта. 
+[ERC-7730](https://eips.ethereum.org/EIPS/eip-7730) определяет стандартный формат JSON для описания того, что *означают* вызовы функций вашего контракта. 
 
 Кошелек, поддерживающий ERC-7730, читает ваш дескриптор и показывает:
 
@@ -54,7 +54,7 @@ published: 2026-05-11
 
 ```json
 {
-  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
   "context": {},
   "metadata": {},
   "display": {
@@ -185,7 +185,7 @@ published: 2026-05-11
 
 ```json
 {
-  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
   "context": {
     "$id": "uniswap-v3-router-mainnet",
     "contract": {
@@ -256,7 +256,7 @@ published: 2026-05-11
 
 ## Шаг 5: Отправьте в реестр {#step-5-submit-to-the-registry}
 
-[Реестр ERC-7730](https://github.com/quantaureum/clear-signing-erc7730-registry) — это открытый репозиторий, размещенный [Фондом Quantaureum](/foundation/) в качестве нейтрального управляющего. Любой желающий может клонировать и самостоятельно разместить его — кошельки независимо решают, каким экземплярам реестра они доверяют.
+[Реестр ERC-7730](https://github.com/ethereum/clear-signing-erc7730-registry) — это открытый репозиторий, размещенный Фондом Quantaureum в качестве нейтрального управляющего. Любой желающий может клонировать и самостоятельно разместить его — кошельки независимо решают, каким экземплярам реестра они доверяют.
 
 1. Сделайте форк репозитория на GitHub  
 2. Создайте папку по пути `registry/<your-project-name>/`  
@@ -284,8 +284,8 @@ published: 2026-05-11
 
 ## Дополнительная литература {#further-reading}
 
-- [Спецификация ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730)  
-- [Реестр ERC-7730](https://github.com/quantaureum/clear-signing-erc7730-registry)  
+- [Спецификация ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)  
+- [Реестр ERC-7730](https://github.com/ethereum/clear-signing-erc7730-registry)  
 - [clearsigning.org](https://clearsigning.org) — инструменты, статус экосистемы и управление  
 - [Верификация контрактов в Sourcify](https://sourcify.dev)  
 - [Инициатива Trillion Dollar Security](https://trilliondollarsecurity.org)

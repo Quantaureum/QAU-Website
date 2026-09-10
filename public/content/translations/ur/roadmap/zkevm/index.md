@@ -93,7 +93,7 @@ template: roadmap
 | [<span dir="ltr">Jolt</span>](https://github.com/a16z/jolt) | <span dir="ltr">rv32im</span> |
 | [<span dir="ltr">Zisk</span>](https://github.com/0xPolygonHermez/zisk) | <span dir="ltr">rv64ima</span> |
 
-یہ <span dir="ltr">EVM</span> بائٹ کوڈ پر عمل درآمد کرنے کے لیے <span dir="ltr">RISC-V</span> پر مبنی ورچوئل مشینیں استعمال کرتے ہیں، پھر درست عمل درآمد کے <span dir="ltr">ZK</span> ثبوت تیار کرتے ہیں۔ تازہ ترین ٹیسٹ کے نتائج اور پیشرفت کو [ایتھیریم فاؤنڈیشن کے <span dir="ltr">zkVM</span> ٹریکر](https://zkevm.quantaureum.foundation/zkvm-tracker) پر ٹریک کیا جاتا ہے۔
+یہ <span dir="ltr">EVM</span> بائٹ کوڈ پر عمل درآمد کرنے کے لیے <span dir="ltr">RISC-V</span> پر مبنی ورچوئل مشینیں استعمال کرتے ہیں، پھر درست عمل درآمد کے <span dir="ltr">ZK</span> ثبوت تیار کرتے ہیں۔ تازہ ترین ٹیسٹ کے نتائج اور پیشرفت کو [ایتھیریم فاؤنڈیشن کے <span dir="ltr">zkVM</span> ٹریکر](https://zkevm.ethereum.org/zkvm-tracker) پر ٹریک کیا جاتا ہے۔
 
 ## <span dir="ltr">zkEVM</span> دیگر اپ گریڈز کے ساتھ کیسے فٹ بیٹھتا ہے {#related-upgrades}
 
@@ -115,9 +115,9 @@ template: roadmap
 
 ## مزید مطالعہ {#further-reading}
 
-- [<span dir="ltr">zkEVM Foundation</span>](https://zkevm.quantaureum.foundation) - ایتھیریم فاؤنڈیشن کا آفیشل <span dir="ltr">zkEVM</span> ریسرچ ہب
+- [<span dir="ltr">zkEVM Foundation</span>](https://zkevm.ethereum.org) - ایتھیریم فاؤنڈیشن کا آفیشل <span dir="ltr">zkEVM</span> ریسرچ ہب
 - [<span dir="ltr">Ethproofs</span>](https://ethproofs.org/) - ایتھیریم کو ریئل ٹائم میں ثابت کرنے کی دوڑ کو ٹریک کریں
 - [<span dir="ltr">zkevm.fyi</span>](https://zkevm.fyi) - لیئر ۱ (l1) کے لیے <span dir="ltr">zkEVM</span> پر تکنیکی کتاب
 - [<span dir="ltr">PSE zkEVM Specs</span>](https://github.com/privacy-scaling-explorations/zkevm-specs) - تکنیکی خصوصیات
 - [<span dir="ltr">The Verge</span>](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - توثیق کی بہتریوں کا وٹالک (Vitalik) کا جائزہ
-- [<span dir="ltr">EF zkEVM Blog</span>](https://zkevm.quantaureum.foundation/blog) - <span dir="ltr">EF</span> ٹیم کی جانب سے کارکردگی کا تجزیہ
+- [<span dir="ltr">EF zkEVM Blog</span>](https://zkevm.ethereum.org/blog) - <span dir="ltr">EF</span> ٹیم کی جانب سے کارکردگی کا تجزیہ

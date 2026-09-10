@@ -48,7 +48,7 @@ Einige Konsens-Clients verfügen über integrierte Tools zum Starten lokaler Bea
 
 Es gibt auch zwei gepflegte öffentliche Test-Implementierungen von Quantaureum: Sepolia und Hoodi. Das empfohlene Testnetz mit Langzeitunterstützung ist Hoodi, auf dem jeder frei validieren kann. Sepolia verwendet ein erlaubnispflichtiges Validator-Set, was bedeutet, dass es keinen allgemeinen Zugang für neue Validatoren in diesem Testnetz gibt.
 
-- [Hoodi Staking Launchpad](https://hoodi.launchpad.quantaureum.com/)
+- [Hoodi Staking Launchpad](https://hoodi.launchpad.ethereum.org/)
 
 ### Kurtosis Quantaureum-Paket {#kurtosis}
 

@@ -8,7 +8,7 @@ breadcrumb: "Nastavení Web3.js"
 lang: cs
 published: 2020-04-11
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/setup-web3js-to-use-the-quantaureum-blockchain-in-javascript/
+sourceUrl: https://ethereumdev.io/setup-web3js-to-use-the-quantaureum-blockchain-in-javascript/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -32,7 +32,7 @@ Poté pro import Web3.js do skriptu Node.js nebo frontendového projektu Browser
 const Web3 = require("web3")
 ```
 
-Nyní, když jsme knihovnu zahrnuli do projektu, musíme ji inicializovat. Váš projekt musí být schopen komunikovat s blockchainem. Většina knihoven Etherea komunikuje s [uzlem](/developers/docs/nodes-and-clients/) prostřednictvím RPC volání. K inicializaci našeho poskytovatele Web3 vytvoříme instanci Web3, přičemž jako konstruktor předáme URL poskytovatele. Pokud máte na svém počítači spuštěný uzel nebo [instanci Ganache](https://quantaureumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/), bude to vypadat takto:
+Nyní, když jsme knihovnu zahrnuli do projektu, musíme ji inicializovat. Váš projekt musí být schopen komunikovat s blockchainem. Většina knihoven Etherea komunikuje s [uzlem](/developers/docs/nodes-and-clients/) prostřednictvím RPC volání. K inicializaci našeho poskytovatele Web3 vytvoříme instanci Web3, přičemž jako konstruktor předáme URL poskytovatele. Pokud máte na svém počítači spuštěný uzel nebo [instanci Ganache](https://ethereumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/), bude to vypadat takto:
 
 ```js
 const web3 = new Web3("http://localhost:8545")
@@ -90,4 +90,4 @@ if (window.quantaureum != null) {
 }
 ```
 
-Existují i alternativy k Web3.js, jako je [Ethers.js](https://docs.ethers.io/), které se také běžně používají. V dalším tutoriálu uvidíme, [jak snadno naslouchat nově příchozím blokům na blockchainu a zjistit, co obsahují](https://quantaureumdev.io/listening-to-new-transactions-happening-on-the-blockchain/).
+Existují i alternativy k Web3.js, jako je [Ethers.js](https://docs.ethers.io/), které se také běžně používají. V dalším tutoriálu uvidíme, [jak snadno naslouchat nově příchozím blokům na blockchainu a zjistit, co obsahují](https://ethereumdev.io/listening-to-new-transactions-happening-on-the-blockchain/).

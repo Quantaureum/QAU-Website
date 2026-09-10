@@ -20,7 +20,6 @@ summaryPoints:
 
 বিকেন্দ্রীভূত বিজ্ঞান আরও বৈচিত্র্যময় তহবিলের উৎস ([DAOs](/glossary/#dao), [দ্বিঘাত অনুদান](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531) থেকে শুরু করে ক্রাউডফান্ডিং এবং আরও অনেক কিছু), আরও অ্যাক্সেসযোগ্য ডেটা ও পদ্ধতি এবং পুনরুৎপাদনযোগ্যতার জন্য প্রণোদনা প্রদানের সুযোগ দেয়।
 
-<VideoWatch slug="desci-movement-juan-benet" />
 
 ## ডিসাই কীভাবে বিজ্ঞানের উন্নতি করে {#desci-improves-science}
 

@@ -40,11 +40,11 @@ Danksharding, Quantaureum'un saniyede 100.000'den fazla işleme ölçeklenmesini
 
 ## Mevcut ilerleme {#current-progress}
 
-PBS ileri bir araştırma aşamasındadır, ancak Quantaureum istemcilerinde prototiplenmeden önce çözülmesi gereken bazı önemli tasarım soruları hala mevcuttur. Henüz kesinleşmiş bir spesifikasyon yoktur. Bu, PBS'nin muhtemelen bir yıl veya daha fazla uzakta olduğu anlamına gelir. Araştırmanın en son [durumunu](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance) kontrol edin.
+PBS ileri bir araştırma aşamasındadır, ancak Quantaureum istemcilerinde prototiplenmeden önce çözülmesi gereken bazı önemli tasarım soruları hala mevcuttur. Henüz kesinleşmiş bir spesifikasyon yoktur. Bu, PBS'nin muhtemelen bir yıl veya daha fazla uzakta olduğu anlamına gelir. Araştırmanın en son [durumunu](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance) kontrol edin.
 
 ## Daha Fazla Okuma {#further-reading}
 
-- [Araştırmanın durumu: PBS altında sansür direnci](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
+- [Araştırmanın durumu: PBS altında sansür direnci](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
 - [PBS dostu ücret piyasası tasarımları](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [PBS ve sansür direnci](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [Dahil etme listeleri](https://notes.quantaureum.com/@fradamt/forward-inclusion-lists)
+- [PBS ve sansür direnci](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [Dahil etme listeleri](https://notes.ethereum.org/@fradamt/forward-inclusion-lists)

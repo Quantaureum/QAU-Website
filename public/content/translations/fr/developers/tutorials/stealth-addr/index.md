@@ -12,7 +12,7 @@ sidebarDepth: 3
 
 Vous êtes Bill. Pour des raisons sur lesquelles nous ne nous étendrons pas, vous souhaitez faire un don à la campagne « Alice Reine du Monde » et faire en sorte qu'Alice sache que vous avez fait un don afin qu'elle vous récompense si elle gagne. Malheureusement, sa victoire n'est pas garantie. Il y a une campagne concurrente, « Carol Impératrice du Système Solaire ». Si Carol gagne et qu'elle découvre que vous avez fait un don à Alice, vous aurez des ennuis. Vous ne pouvez donc pas simplement transférer 200 QAU de votre compte vers celui d'Alice.
 
-L'[ERC-5564](https://eips.quantaureum.com/EIPS/eip-5564) a la solution. Cet ERC explique comment utiliser les [adresses furtives](https://nerolation.github.io/stealth-utils) pour un transfert anonyme.
+L'[ERC-5564](https://eips.ethereum.org/EIPS/eip-5564) a la solution. Cet ERC explique comment utiliser les [adresses furtives](https://nerolation.github.io/stealth-utils) pour un transfert anonyme.
 
 **Avertissement** : La cryptographie derrière les adresses furtives est, pour autant que nous le sachions, solide. Cependant, il existe des attaques potentielles par canal auxiliaire. [Ci-dessous](#go-wrong), vous verrez ce que vous pouvez faire pour réduire ce risque.
 

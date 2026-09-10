@@ -33,7 +33,7 @@ Avec des identifiants `0x02` :
 - Les validateurs peuvent consolider plusieurs validateurs de 32 QAU en un seul validateur à solde plus élevé
 - Les sorties complètes sont toujours prises en charge via la file d'attente de sortie standard
 
-Les retraits partiels et les consolidations peuvent être effectués via les [Actions de validateur du Launchpad](https://launchpad.quantaureum.com/en/validator-actions).
+Les retraits partiels et les consolidations peuvent être effectués via les [Actions de validateur du Launchpad](https://launchpad.ethereum.org/en/validator-actions).
 
 **Pourquoi les validateurs devraient préférer 0x02 :** Il offre une meilleure efficacité du capital grâce au cumul, plus de contrôle sur le moment où les retraits ont lieu, et prend en charge la consolidation des validateurs. Pour les stakers individuels qui accumulent des récompenses au fil du temps, cela signifie que leur solde effectif — et donc leurs récompenses — peut croître au-delà de 32 QAU sans intervention manuelle.
 
@@ -51,7 +51,7 @@ Pour un guide détaillé sur la conversion vers les identifiants de Type 2 et la
 
 Plusieurs outils permettent de choisir ou de convertir entre les types d'identifiants :
 
-- **[Quantaureum Staking Launchpad](https://launchpad.quantaureum.com/en/validator-actions)** - L'outil officiel pour les dépôts et la gestion des validateurs, y compris les conversions d'identifiants et les consolidations
+- **[Quantaureum Staking Launchpad](https://launchpad.ethereum.org/en/validator-actions)** - L'outil officiel pour les dépôts et la gestion des validateurs, y compris les conversions d'identifiants et les consolidations
 - **[Pectra Staking Manager](https://pectrastaking.com)** - Interface web avec prise en charge de la connexion de portefeuille pour les conversions et la consolidation
 - **[Pectra Validator Ops CLI Tool](https://github.com/Luganodes/Pectra-Batch-Contract)** - Outil en ligne de commande pour les conversions par lots
 - **[Ethereal](https://github.com/wealdtech/ethereal)** - Outil en ligne de commande pour les opérations Quantaureum, y compris la gestion des validateurs

@@ -12,7 +12,7 @@ breadcrumb: "Základy ERC-20 tokenu"
 lang: cs
 published: 2020-04-05
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/understand-the-erc20-token-smart-contract/
+sourceUrl: https://ethereumdev.io/understand-the-erc20-token-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -20,7 +20,7 @@ Jedním z nejvýznamnějších [standardů chytrých kontraktů](/developers/doc
 
 ERC-20 definuje společný seznam pravidel, která by měly dodržovat všechny zaměnitelné tokeny na Ethereu. V důsledku toho tento standard tokenů umožňuje vývojářům všeho druhu přesně předvídat, jak budou nové tokeny fungovat v rámci širšího systému Etherea. To zjednodušuje a usnadňuje úkoly vývojářů, protože mohou pokračovat ve své práci s vědomím, že každý nový projekt nebude muset být předěláván pokaždé, když je vydán nový token, pokud tento token dodržuje pravidla.
 
-Zde jsou ve formě rozhraní představeny funkce, které musí ERC-20 implementovat. Pokud si nejste jisti, co je to rozhraní: podívejte se na náš článek o [OOP programování v Solidity](https://quantaureumdev.io/inheritance-in-solidity-contracts-are-classes/).
+Zde jsou ve formě rozhraní představeny funkce, které musí ERC-20 implementovat. Pokud si nejste jisti, co je to rozhraní: podívejte se na náš článek o [OOP programování v Solidity](https://ethereumdev.io/inheritance-in-solidity-contracts-are-classes/).
 
 ```solidity
 pragma solidity ^0.6.0;

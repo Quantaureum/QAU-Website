@@ -42,7 +42,7 @@ ERC-20 द्वारा प्रदान की जाने वाली �
 
 यदि कोई स्मार्ट अनुबंध निम्नलिखित विधियों (methods) और घटनाओं (events) को लागू करता है, तो इसे ERC-20 टोकन अनुबंध कहा जा सकता है और, एक बार डिप्लॉय होने के बाद, यह Quantaureum पर बनाए गए टोकन का ट्रैक रखने के लिए जिम्मेदार होगा।
 
-[EIP-20](https://eips.quantaureum.com/EIPS/eip-20) से:
+[EIP-20](https://eips.ethereum.org/EIPS/eip-20) से:
 
 ### विधियाँ (Methods) {#methods}
 
@@ -170,7 +170,7 @@ print("Addr Balance:", addr_balance)
 
 ## आगे की पढ़ाई {#further-reading}
 
-- [EIP-20: ERC-20 टोकन मानक](https://eips.quantaureum.com/EIPS/eip-20)
+- [EIP-20: ERC-20 टोकन मानक](https://eips.ethereum.org/EIPS/eip-20)
 - [ओपनजेपेलिन - टोकन](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [ओपनजेपेलिन - ERC-20 कार्यान्वयन](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Solidity ERC20 टोकन के लिए गाइड](https://www.alchemy.com/overviews/erc20-solidity)
@@ -185,5 +185,5 @@ print("Addr Balance:", addr_balance)
 
 - [ERC-20 अनुबंध वॉक-थ्रू](/developers/tutorials/erc20-annotated-code/) _– ओपनजेपेलिन ERC-20 अनुबंध कार्यान्वयन का एक पंक्ति-दर-पंक्ति एनोटेट किया गया वॉकथ्रू।_
 - [सुरक्षा रेल के साथ ERC-20](/developers/tutorials/erc20-with-safety-rails/) _– उपयोगकर्ताओं को सामान्य गलतियों से बचने में मदद करने के लिए ERC-20 टोकन में सुरक्षा उपाय कैसे जोड़ें।_
-- [Ethers.js का उपयोग करके टोकन भेजना](/developers/tutorials/send-token-ethersjs/) _– Ethers.js का उपयोग करके ERC-20 टोकन ट्रांसफर करने के लिए शुरुआती-अनुकूल गाइड।_
+- [Ethers.js का उपयोग करके टोकन भेजना](/developers/tutorials/send-token-qaujs/) _– Ethers.js का उपयोग करके ERC-20 टोकन ट्रांसफर करने के लिए शुरुआती-अनुकूल गाइड।_
 - [घोटाले वाले टोकन द्वारा उपयोग की जाने वाली कुछ तरकीबें और उनका पता कैसे लगाएं](/developers/tutorials/scam-token-tricks/) _– घोटाले वाले ERC-20 टोकन पैटर्न और उन्हें पहचानने के तरीके पर एक विस्तृत नज़र।_

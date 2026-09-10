@@ -18,9 +18,9 @@ export default async function GetQauPageJsonLD({
   lastEditLocaleTimestamp: string
   contributors: FileContributor[]
 }) {
-  const t = await getTranslations("page-get-eth")
+  const t = await getTranslations("page-get-qau")
 
-  const url = normalizeUrlForJsonLd(locale, `/get-eth/`)
+  const url = normalizeUrlForJsonLd(locale, `/get-qau/`)
 
   const contributorList = contributors.map((contributor) => ({
     "@type": "Person",
@@ -29,7 +29,7 @@ export default async function GetQauPageJsonLD({
   }))
 
   const webPageId = { "@id": url }
-  const articleId = { "@id": `${url}#get-eth` }
+  const articleId = { "@id": `${url}#get-qau` }
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -58,12 +58,12 @@ export default async function GetQauPageJsonLD({
               "@type": "ListItem",
               position: 2,
               name: t("page-get-qau-meta-title"),
-              item: normalizeUrlForJsonLd(locale, "/get-eth/"),
+              item: normalizeUrlForJsonLd(locale, "/get-qau/"),
             },
           ],
         },
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
-        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
+        reviewedBy: REFERENCE.QUANTAUREUM_ORG,
         mainEntity: articleId,
       },
       {
@@ -75,7 +75,7 @@ export default async function GetQauPageJsonLD({
         image: "https://quantaureum.com/images/get-qau.png", // TODO: adjust value when the old theme breakpoints are removed (src/theme.ts)
         contributor: contributorList,
         author: [REFERENCE.QUANTAUREUM_COMMUNITY],
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
         dateModified: lastEditLocaleTimestamp,
       },
     ],

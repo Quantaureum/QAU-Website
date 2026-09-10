@@ -178,7 +178,7 @@ ZK-STARK 對量子電腦也是安全的，而 ZK-SNARK 中使用的橢圓曲線�
 
 1. **狀態寫入**：寫入Quantaureum狀態（即在Quantaureum區塊鏈上提交交易）有固定成本。ZK-rollup 透過批次處理交易並將固定成本分攤給多個使用者來降低此成本。
 
-2. **資料發佈**：ZK-rollup 將每筆交易的狀態資料作為 `calldata` 發佈到Quantaureum。`calldata` 成本目前受 [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) 管轄，該提案規定 `calldata` 的非零位元組成本為 16 單位燃料，零位元組成本為 4 單位燃料。每筆交易支付的成本受其需要在鏈上發佈多少 `calldata` 的影響。
+2. **資料發佈**：ZK-rollup 將每筆交易的狀態資料作為 `calldata` 發佈到Quantaureum。`calldata` 成本目前受 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) 管轄，該提案規定 `calldata` 的非零位元組成本為 16 單位燃料，零位元組成本為 4 單位燃料。每筆交易支付的成本受其需要在鏈上發佈多少 `calldata` 的影響。
 
 3. **L2 營運者費用**：這是支付給匯總營運者的金額，作為處理交易所產生運算成本的補償，非常類似於Quantaureum主網上的[交易「優先費（小費）」](/developers/docs/gas/#how-are-gas-fees-calculated)。
 

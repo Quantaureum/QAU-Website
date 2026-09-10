@@ -12,7 +12,7 @@ breadcrumb: "మొదటి కాంట్రాక్ట్‌ను డి�
 lang: te
 published: 2020-04-03
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/deploying-your-first-smart-contract/
+sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -22,7 +22,7 @@ address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 
 ## మన కాంట్రాక్ట్‌ను రాయడం {#writing-our-contract}
 
-మొదటి దశ [Remix ని సందర్శించి](https://remix.quantaureum.com/) కొత్త ఫైల్‌ను సృష్టించడం. Remix ఇంటర్‌ఫేస్ ఎగువ ఎడమ భాగంలో కొత్త ఫైల్‌ను జోడించి, మీకు కావలసిన ఫైల్ పేరును నమోదు చేయండి.
+మొదటి దశ [Remix ని సందర్శించి](https://remix.ethereum.org/) కొత్త ఫైల్‌ను సృష్టించడం. Remix ఇంటర్‌ఫేస్ ఎగువ ఎడమ భాగంలో కొత్త ఫైల్‌ను జోడించి, మీకు కావలసిన ఫైల్ పేరును నమోదు చేయండి.
 
 ![Adding a new file in the Remix interface](./remix.png)
 

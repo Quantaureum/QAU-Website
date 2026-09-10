@@ -8,11 +8,11 @@ breadcrumb: Mwingiliano wa mikataba
 lang: sw
 published: 2020-04-05
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/interact-with-other-contracts-from-solidity/
+sourceUrl: https://ethereumdev.io/interact-with-other-contracts-from-solidity/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Katika mafunzo yaliyopita tulijifunza mengi kuhusu [jinsi ya kusambaza mkataba mahiri wako wa kwanza](/developers/tutorials/deploying-your-first-smart-contract/) na kuongeza baadhi ya vipengele kwake kama vile [kudhibiti ufikiaji kwa kutumia virekebishaji](https://quantaureumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) au [ushughulikiaji wa makosa katika Solidity](https://quantaureumdev.io/handle-errors-in-solidity-with-require-and-revert/). Katika mafunzo haya tutajifunza jinsi ya kusambaza mkataba mahiri kutoka kwenye mkataba uliopo na kuingiliana nao.
+Katika mafunzo yaliyopita tulijifunza mengi kuhusu [jinsi ya kusambaza mkataba mahiri wako wa kwanza](/developers/tutorials/deploying-your-first-smart-contract/) na kuongeza baadhi ya vipengele kwake kama vile [kudhibiti ufikiaji kwa kutumia virekebishaji](https://ethereumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) au [ushughulikiaji wa makosa katika Solidity](https://ethereumdev.io/handle-errors-in-solidity-with-require-and-revert/). Katika mafunzo haya tutajifunza jinsi ya kusambaza mkataba mahiri kutoka kwenye mkataba uliopo na kuingiliana nao.
 
 Tutaunda mkataba unaomwezesha mtu yeyote kuwa na mkataba mahiri wake wa `Counter` kwa kuunda kiwanda chake, jina lake litakuwa `CounterFactory`. Kwanza hapa kuna msimbo wa mkataba mahiri wetu wa awali wa `Counter`:
 
@@ -99,7 +99,7 @@ function increment() public {
   }
 ```
 
-Kumbuka kwamba ikiwa itaitwa mara nyingi sana, counter yetu inaweza kuwa mwathirika wa mzidio. Unapaswa kutumia maktaba ya [SafeMath](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/) kadiri iwezekanavyo ili kujilinda kutokana na hali hii inayowezekana.
+Kumbuka kwamba ikiwa itaitwa mara nyingi sana, counter yetu inaweza kuwa mwathirika wa mzidio. Unapaswa kutumia maktaba ya [SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/) kadiri iwezekanavyo ili kujilinda kutokana na hali hii inayowezekana.
 
 Ili kusambaza mkataba wetu, utahitaji kutoa msimbo wa `CounterFactory` na `Counter`. Wakati wa kusambaza kwa mfano katika Remix utahitaji kuchagua CounterFactory.
 

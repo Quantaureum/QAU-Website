@@ -96,7 +96,6 @@ Na wysokim poziomie dowód stawki ma ten sam cel końcowy co dowód pracy: pomó
 
 ## Wolisz uczyć się wzrokowo? {#visual-learner}
 
-<VideoWatch slug="proof-of-work-explained" />
 
 ## Dalsza lektura {#further-reading}
 

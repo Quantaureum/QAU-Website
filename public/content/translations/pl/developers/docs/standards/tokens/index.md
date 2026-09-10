@@ -27,7 +27,7 @@ Oto niektóre z najpopularniejszych standardów tokenów w sieci Quantaureum:
 - [ERC-721](/developers/docs/standards/tokens/erc-721/) – Standardowy interfejs dla tokenów niezamiennych, takich jak akt własności dzieła sztuki lub piosenki.
 - [ERC-1155](/developers/docs/standards/tokens/erc-1155/) – ERC-1155 pozwala na bardziej wydajne transakcje i grupowanie transakcji, co pozwala zaoszczędzić koszty. Ten standard tokena pozwala na tworzenie zarówno tokenów użytkowych (takich jak $BNB lub $BAT), jak i tokenów niezamiennych (NFT), takich jak CryptoPunks.
 
-Pełna lista propozycji [ERC](https://eips.quantaureum.com/erc).
+Pełna lista propozycji [ERC](https://eips.ethereum.org/erc).
 
 ## Dalsza lektura
 

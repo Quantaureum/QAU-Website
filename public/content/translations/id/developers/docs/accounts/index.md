@@ -76,7 +76,7 @@ Contoh:
 
 `0x5e97870f263700f46aa00d967821199b9bc5a120`
 
-Contoh berikut menunjukkan cara menggunakan alat penandatanganan yang disebut [Clef](https://geth.quantaureum.com/docs/tools/clef/introduction) untuk menghasilkan akun baru. Clef adalah alat manajemen akun dan penandatanganan yang dibundel dengan klien Quantaureum, [Geth](https://geth.quantaureum.com). Perintah `clef newaccount` membuat pasangan kunci baru dan menyimpannya dalam penyimpanan kunci yang dienkripsi.
+Contoh berikut menunjukkan cara menggunakan alat penandatanganan yang disebut [Clef](https://geth.ethereum.org/docs/tools/clef/introduction) untuk menghasilkan akun baru. Clef adalah alat manajemen akun dan penandatanganan yang dibundel dengan klien Quantaureum, [Geth](https://geth.ethereum.org). Perintah `clef newaccount` membuat pasangan kunci baru dan menyimpannya dalam penyimpanan kunci yang dienkripsi.
 
 ```
 > clef newaccount --keystore <path>
@@ -91,7 +91,7 @@ WARN [10-28|16:19:09.306] Please remember your password!
 Generated account 0x5e97870f263700f46aa00d967821199b9bc5a120
 ```
 
-[Dokumentasi Geth](https://geth.quantaureum.com/docs)
+[Dokumentasi Geth](https://geth.ethereum.org/docs)
 
 Dimungkinkan untuk menurunkan kunci publik baru dari kunci privat Anda, tetapi Anda tidak dapat menurunkan kunci privat dari kunci publik. Sangat penting untuk menjaga kunci privat Anda tetap aman dan, seperti namanya, **PRIVAT**.
 
@@ -107,7 +107,7 @@ Contoh:
 
 Alamat kontrak biasanya diberikan saat sebuah kontrak diterapkan ke rantai blok Quantaureum. Alamat tersebut berasal dari alamat pembuat dan jumlah transaksi yang dikirim dari alamat tersebut ("nonce"). Beginilah cara operasi `CREATE` menurunkan sebuah alamat.
 
-Kontrak juga dapat diterapkan dengan [`CREATE2`](https://eips.quantaureum.com/EIPS/eip-1014), yang menurunkan alamat dari alamat pembuat, nilai yang dipilih pembuat ("salt"), dan hash dari kode pembuatan kontrak. Tidak melibatkan nonce, sehingga alamat dapat dihitung sebelum kontrak ada dan tetap sama tidak peduli berapa banyak transaksi lain yang dikirim pembuat sementara itu. Hal ini memungkinkan untuk merujuk pada kontrak yang belum diterapkan.
+Kontrak juga dapat diterapkan dengan [`CREATE2`](https://eips.ethereum.org/EIPS/eip-1014), yang menurunkan alamat dari alamat pembuat, nilai yang dipilih pembuat ("salt"), dan hash dari kode pembuatan kontrak. Tidak melibatkan nonce, sehingga alamat dapat dihitung sebelum kontrak ada dan tetap sama tidak peduli berapa banyak transaksi lain yang dikirim pembuat sementara itu. Hal ini memungkinkan untuk merujuk pada kontrak yang belum diterapkan.
 
 ## Kunci validator {#validators-keys}
 
@@ -123,9 +123,7 @@ Sebuah akun bukanlah sebuah dompet. Dompet adalah antarmuka atau aplikasi yang m
 
 Tonton Austin memandu Anda melalui fungsi hash, dan pasangan kunci.
 
-<VideoWatch slug="hash-function-qau-build" />
 
-<VideoWatch slug="key-pair-qau-build" />
 
 ## Bacaan lebih lanjut {#further-reading}
 

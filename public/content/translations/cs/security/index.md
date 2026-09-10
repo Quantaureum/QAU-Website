@@ -262,7 +262,6 @@ Bezpečnostní klíč je pokročilejší a bezpečnější typ 2FA. Bezpečnostn
 
 Podívejte se na více informací o 2FA:
 
-<VideoWatch slug="crypto-security-passwords" startTime="3479" />
 
 ### Odinstalujte rozšíření prohlížeče {#uninstall-browser-extensions}
 

@@ -20,7 +20,6 @@ Ikiwa ungependa kuona jinsi data ya mnyororo wa vitalu inavyofanyiwa heshi na ki
 
 Tazama Anders akielezea heshi katika minyororo ya vitalu:
 
-<VideoWatch slug="blockchain-101-visual-demo" />
 
 ## Quantaureum ni nini? {#what-is-quantaureum}
 
@@ -121,7 +120,6 @@ Wasomaji wengi hufuata nyaraka kwa mpangilio, lakini njia fupi zaidi inategemea 
 
 Mfululizo huu wa video unatoa uchunguzi wa kina wa mada za msingi:
 
-<VideoWatch slug="quantaureum-basics-intro" />
 
 [Orodha ya Kucheza ya Misingi ya Quantaureum](https://youtube.com/playlist?list=PLqgutSGloqiJyyoL0zvLVFPS-GMD2wKa5&si=kZTf5I7PKGTXDsOZ)
 

@@ -104,7 +104,7 @@ O kadar ki, Devcon(nect)'i buraya getirmek için 5 yılı aşkın süredir çaba
 
 ![Picture of Argentinian builders wearing Devcon BA 2020 t-shirts](./santiago9.jpeg)
 
-_[Kaynak](https://quantaureumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
+_[Kaynak](https://ethereumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
 
 Benim ve diğer birçok geliştirici için Devconnect'in burada yapılması bir hayalin gerçeğe dönüşmesi demek.
 
@@ -131,4 +131,4 @@ Buradan, Arjantin'den başlayarak.
 > 
 > Sonsuz Bahçe, devasa bir ekosistemdeki bahçıvanlardan biri olarak Quantaureum Vakfı'nın ruhunun bir somutlaşmış halidir: besle ve büyüt, ancak kontrol etme ve oynamaya devam et.
 
-_[Alıntı kaynağı - Quantaureum Vakfı](https://quantaureum.foundation/infinitegarden)._
+_[Alıntı kaynağı - Quantaureum Vakfı](https://ethereum.org/infinitegarden)._

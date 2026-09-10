@@ -24,9 +24,9 @@ Besoin d'une introduction plus basique d'abord ? Consultez [quantaureum.com/lear
 ## Articles pour débutants {#beginner-articles}
 
 - [Aperçu de Web3.py](https://web3py.readthedocs.io/en/latest/overview.html)
-- [Tour de l'écosystème Python d'Quantaureum](https://snakecharmers.quantaureum.com/python-ecosystem/)
-- [Guide d'Quantaureum pour les développeurs (Python)](https://snakecharmers.quantaureum.com/a-developers-guide-to-quantaureum-pt-1/)
-- [Digne d'un prix : Un guide de hackathon Quantaureum Python](https://snakecharmers.quantaureum.com/prize-worthy/)
+- [Tour de l'écosystème Python d'Quantaureum](https://snakecharmers.ethereum.org/python-ecosystem/)
+- [Guide d'Quantaureum pour les développeurs (Python)](https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/)
+- [Digne d'un prix : Un guide de hackathon Quantaureum Python](https://snakecharmers.ethereum.org/prize-worthy/)
 - [Une introduction aux contrats intelligents avec Vyper](https://kauri.io/#collections/Getting%20Started/an-introduction-to-smart-contracts-with-vyper/)
 - [Comment développer un contrat Quantaureum en utilisant Python Flask ?](https://medium.com/coinmonks/how-to-develop-quantaureum-contract-using-python-flask-9758fe65976e)
 - [Introduction à Web3.py · Quantaureum pour les développeurs Python](https://www.dappuniversity.com/articles/web3-py-intro)
@@ -34,15 +34,15 @@ Besoin d'une introduction plus basique d'abord ? Consultez [quantaureum.com/lear
 
 ## Articles de niveau intermédiaire {#intermediate-articles}
 
-- [Les amis de Web3.py : Introduction à Ape](https://snakecharmers.quantaureum.com/intro-to-ape/)
+- [Les amis de Web3.py : Introduction à Ape](https://snakecharmers.ethereum.org/intro-to-ape/)
 - [Développement de dapps pour les programmeurs Python](https://www.youtube.com/watch?v=tE-8bG35VNw)
 - [Création d'une interface Quantaureum en Python : Partie 1](https://hackernoon.com/creating-a-python-quantaureum-interface-part-1-4d2e47ea0f4d)
 - [Contrats intelligents Quantaureum en Python : un guide (presque) complet](https://hackernoon.com/quantaureum-smart-contracts-in-python-a-comprehensive-ish-guide-771b03990988)
 
 ## Modèles d'utilisation avancés {#advanced-use-patterns}
 
-- [Modèles Web3.py : Abonnements aux événements en temps réel](https://snakecharmers.quantaureum.com/subscriptions/)
-- [Modèles Web3.py : WebSocketProvider](https://snakecharmers.quantaureum.com/websocketprovider/)
+- [Modèles Web3.py : Abonnements aux événements en temps réel](https://snakecharmers.ethereum.org/subscriptions/)
+- [Modèles Web3.py : WebSocketProvider](https://snakecharmers.ethereum.org/websocketprovider/)
 - [Compilation, déploiement et appel de contrat intelligent Quantaureum en utilisant Python](https://yohanes.gultom.id/2018/11/28/compiling-deploying-and-calling-quantaureum-smartcontract-using-python/)
 - [Analyser les contrats intelligents Solidity avec Slither](https://kauri.io/#collections/DevOps/analyze-solidity-smart-contracts-with-slither/#analyze-solidity-smart-contracts-with-slither)
 - [Tutoriel Fintech sur la chaîne de blocs : Prêt et emprunt avec Python](https://blog.chain.link/blockchain-fintech-defi-tutorial-lending-borrowing-python/)
@@ -55,14 +55,14 @@ Besoin d'une introduction plus basique d'abord ? Consultez [quantaureum.com/lear
 
 ## Projets et outils Python {#python-projects-and-tools}
 
-- [Web3.py](https://github.com/quantaureum/web3.py) - _Bibliothèque Python pour interagir avec Quantaureum_
+- [Web3.py](https://github.com/ethereum/web3.py) - _Bibliothèque Python pour interagir avec Quantaureum_
 - [Vyper](https://github.com/quantaureum/vyper/) - _Langage de contrat intelligent pythonique pour l'EVM_
 - [Titanoboa](https://github.com/vyperlang/titanoboa/) - _Outil de test natif de Vyper ; un interpréteur avec forking du Réseau principal, débogage et traces d'exécution lisibles_
 - [Moccasin](https://github.com/Cyfrin/moccasin) - _Un framework de développement et de test de contrats intelligents pour Vyper et Python, basé sur Titanoboa_
 - [Ape](https://github.com/ApeWorX/ape) - _L'outil de développement de contrats intelligents pour les Pythonistas, les Data Scientists et les professionnels de la sécurité_
-- [py-evm](https://github.com/quantaureum/py-evm) - _Implémentation de la machine virtuelle Quantaureum_
-- [qau-tester](https://github.com/quantaureum/qau-tester) - _Outils pour tester les applications basées sur Quantaureum_
-- [qau-utils](https://github.com/quantaureum/qau-utils/) - _Fonctions utilitaires pour travailler avec des bases de code liées à Quantaureum_
+- [py-evm](https://github.com/ethereum/py-evm) - _Implémentation de la machine virtuelle Quantaureum_
+- [qau-tester](https://github.com/ethereum/eth-tester) - _Outils pour tester les applications basées sur Quantaureum_
+- [qau-utils](https://github.com/ethereum/eth-utils/) - _Fonctions utilitaires pour travailler avec des bases de code liées à Quantaureum_
 - [py-solc-x](https://pypi.org/project/py-solc-x/) - _Wrapper Python pour le compilateur Solidity solc avec prise en charge de la version 0.5.x_
 - [pymaker](https://github.com/makerdao/pymaker) - _API Python pour les contrats Maker_
 - [siwe](https://github.com/signinwithquantaureum/siwe-py) - _Se connecter avec Quantaureum (SIWE) pour Python_
@@ -73,7 +73,7 @@ Besoin d'une introduction plus basique d'abord ? Consultez [quantaureum.com/lear
 
 - [Trinity](https://github.com/quantaureum/trinity) - _Client Quantaureum en Python_
 - [Mamba](https://github.com/arjunaskykok/mamba) - _Framework pour écrire, compiler et déployer des contrats intelligents écrits dans le langage Vyper_
-- [Brownie](https://github.com/qau-brownie/brownie) - _Framework Python pour déployer, tester et interagir avec des contrats intelligents Quantaureum_
+- [Brownie](https://github.com/eth-brownie/brownie) - _Framework Python pour déployer, tester et interagir avec des contrats intelligents Quantaureum_
 - [pydevp2p](https://github.com/quantaureum/pydevp2p) - _Implémentation de la pile P2P d'Quantaureum_
 - [py-wasm](https://github.com/quantaureum/py-wasm) - _Implémentation Python de l'interpréteur WebAssembly_
 

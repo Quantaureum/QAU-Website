@@ -138,9 +138,9 @@ A qualidade das ferramentas usadas na execução de testes de unidade para seus 
 
 As estruturas de teste de unidade para contratos inteligentes em Solidity vêm em diferentes linguagens (principalmente JavaScript, Python e Rust). Veja alguns dos guias abaixo para obter informações sobre como começar a executar testes de unidade com diferentes estruturas de teste:
 
-- **[Executando testes de unidade com Brownie](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Executando testes de unidade com Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Executando testes de unidade com Foundry](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Executando testes de unidade com Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Executando testes de unidade com Waffle](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Executando testes de unidade com Remix](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Executando testes de unidade com Ape](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Executando testes de unidade com Hardhat](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -190,7 +190,7 @@ Uma vez configurada corretamente, a ferramenta de teste de propriedade executar�
 
 - **[Análise estática de contratos inteligentes com Slither](https://github.com/crytic/slither)**
 - **[Análise estática de contratos inteligentes com Wake](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[Teste baseado em propriedades com Brownie](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Teste baseado em propriedades com Brownie](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Fuzzing de contratos com Foundry](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[Fuzzing de contratos com Echidna](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Fuzzing de contratos com Wake](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -251,13 +251,13 @@ A principal diferença é que os programas de recompensa por bugs são abertos �
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Ferramenta de cobertura de código para contratos inteligentes escritos em Solidity._
 
-- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - _Estrutura para desenvolvimento e teste avançados de contratos inteligentes (baseada em Ethers.js)._
+- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _Estrutura para desenvolvimento e teste avançados de contratos inteligentes (baseada em Ethers.js)._
 
-- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - _Ferramenta para testar contratos inteligentes em Solidity. Funciona sob o plugin "Solidity Unit Testing" do Remix IDE, que é usado para escrever e executar casos de teste para um contrato._
+- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Ferramenta para testar contratos inteligentes em Solidity. Funciona sob o plugin "Solidity Unit Testing" do Remix IDE, que é usado para escrever e executar casos de teste para um contrato._
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Biblioteca de asserção para testes de contratos inteligentes no Quantaureum. Certifique-se de que seus contratos se comportem conforme o esperado!_
 
-- **[Estrutura de teste de unidade Brownie](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _O Brownie utiliza o Pytest, uma estrutura de teste rica em recursos que permite escrever pequenos testes com o mínimo de código, é bem dimensionável para grandes projetos e é altamente extensível._
+- **[Estrutura de teste de unidade Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _O Brownie utiliza o Pytest, uma estrutura de teste rica em recursos que permite escrever pequenos testes com o mínimo de código, é bem dimensionável para grandes projetos e é altamente extensível._
 
 - **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _O Foundry oferece o Forge, uma estrutura de teste do Quantaureum rápida e flexível, capaz de executar testes de unidade simples, verificações de otimização de gas e fuzzing de contratos._
 

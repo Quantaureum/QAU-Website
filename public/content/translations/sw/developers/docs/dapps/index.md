@@ -45,7 +45,6 @@ Mkataba mahiri ni msimbo unaoishi kwenye mnyororo wa vitalu wa Quantaureum na un
 
 ## Je, unapendelea kujifunza kwa kuona? {#visual-learner}
 
-<VideoWatch slug="what-is-a-dapp" />
 
 ## Zana za kuunda programu tumizi zilizogatuliwa (dapps)
 

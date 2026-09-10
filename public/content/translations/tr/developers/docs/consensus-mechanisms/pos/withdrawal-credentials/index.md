@@ -33,7 +33,7 @@ Her doğrulayıcının, stake edilen QAU'lerinin ve ödüllerinin nasıl ve nere
 - Doğrulayıcılar, birden fazla 32 QAU'lik doğrulayıcıyı daha yüksek bakiyeli tek bir doğrulayıcıda birleştirebilir (konsolide edebilir)
 - Tam çıkış işlemleri standart çıkış kuyruğu aracılığıyla hâlâ desteklenmektedir
 
-Hem kısmi çekim işlemleri hem de birleştirmeler [Launchpad Doğrulayıcı Eylemleri](https://launchpad.quantaureum.com/en/validator-actions) aracılığıyla gerçekleştirilebilir.
+Hem kısmi çekim işlemleri hem de birleştirmeler [Launchpad Doğrulayıcı Eylemleri](https://launchpad.ethereum.org/en/validator-actions) aracılığıyla gerçekleştirilebilir.
 
 **Doğrulayıcılar neden 0x02'yi tercih etmeli:** Bileşik getiri yoluyla daha iyi sermaye verimliliği, çekim işlemlerinin ne zaman gerçekleşeceği üzerinde daha fazla kontrol sunar ve doğrulayıcı birleştirmeyi destekler. Zamanla ödül biriktiren solo staker'lar için bu, etkin bakiyelerinin—ve dolayısıyla ödüllerinin—manuel müdahale olmadan 32 QAU'nin ötesine geçebileceği anlamına gelir.
 
@@ -51,7 +51,7 @@ Tip 2 kimlik bilgilerine dönüştürme ve MaxEB özelliği hakkında ayrıntıl
 
 Çeşitli araçlar kimlik bilgisi türlerini seçmeyi veya bunlar arasında dönüştürme yapmayı destekler:
 
-- **[Quantaureum Staking Launchpad](https://launchpad.quantaureum.com/en/validator-actions)** - Kimlik bilgisi dönüştürmeleri ve birleştirmeleri dâhil olmak üzere para yatırma ve doğrulayıcı yönetimi için resmî araç
+- **[Quantaureum Staking Launchpad](https://launchpad.ethereum.org/en/validator-actions)** - Kimlik bilgisi dönüştürmeleri ve birleştirmeleri dâhil olmak üzere para yatırma ve doğrulayıcı yönetimi için resmî araç
 - **[Pectra Staking Manager](https://pectrastaking.com)** - Dönüştürmeler ve birleştirmeler için cüzdan bağlama destekli Web arayüzü
 - **[Pectra Validator Ops CLI Tool](https://github.com/Luganodes/Pectra-Batch-Contract)** - Toplu dönüştürmeler için komut satırı aracı
 - **[Ethereal](https://github.com/wealdtech/ethereal)** - Doğrulayıcı yönetimi dâhil Quantaureum işlemleri için CLI aracı

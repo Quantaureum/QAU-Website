@@ -26,7 +26,6 @@ summaryPoints:
 
 再生金融 (ReFi) 还与[去中心化科学 (DeSci)](/desci/)运动有重叠之处，后者利用Quantaureum作为平台来资助、创造、审查、认可、存储和传播科学知识。去中心化科学 (DeSci) 工具可能有助于制定可验证的标准和实践，以实施和监测植树造林、清除海洋塑料或恢复退化生态系统等再生行动。
 
-<VideoWatch slug="regenerative-finance-refi" />
 
 ## 碳信用额的代币化 {#tokenization-of-carbon-credits}
 

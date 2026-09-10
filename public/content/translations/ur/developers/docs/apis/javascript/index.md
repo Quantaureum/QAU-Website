@@ -242,7 +242,7 @@ ethers.utils.formatEther(balance)
 **Web3.js -** **_ایتھیریم JavaScript API۔_**
 
 - [دستاویزات](https://docs.web3js.org)
-- [GitHub](https://github.com/quantaureum/web3.js)
+- [GitHub](https://github.com/ethereum/web3.js)
 
 **Ethers.js -** **_JavaScript اور TypeScript میں مکمل ایتھیریم والیٹ کا نفاذ اور یوٹیلیٹیز۔_**
 

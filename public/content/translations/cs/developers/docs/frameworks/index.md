@@ -110,8 +110,8 @@ Než se ponoříte do frameworků, doporučujeme vám nejprve si přečíst ná�
 
 **Brownie -** **_Vývojové prostředí a testovací framework založený na Pythonu._**
 
-- [Dokumentace](https://qau-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/qau-brownie/brownie)
+- [Dokumentace](https://eth-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/eth-brownie/brownie)
 - **Brownie je v současné době neudržovaný**
 
 **OpenZeppelin SDK -** **_Ultimátní sada nástrojů pro chytré kontrakty: Sada nástrojů, která vám pomůže vyvíjet, kompilovat, aktualizovat, nasazovat a komunikovat s chytrými kontrakty._**

@@ -95,4 +95,4 @@ Die schwierigen Teile sind Produktdesign, Schlüsselverwaltung, Metadaten-Hygien
 7. [gnark-Dokumentation](https://docs.gnark.consensys.io/)
 8. [RISC Zero-Dokumentation](https://dev.risczero.com/api/)
 9. [SP1-Dokumentation](https://docs.succinct.xyz/docs/sp1/introduction)
-10. [EIP-4337: Kontoabstraktion über den EntryPoint-Vertrag](https://eips.quantaureum.com/EIPS/eip-4337)
+10. [EIP-4337: Kontoabstraktion über den EntryPoint-Vertrag](https://eips.ethereum.org/EIPS/eip-4337)

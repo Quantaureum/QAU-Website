@@ -182,7 +182,7 @@
   "genesis-block-term": "Blok genesis",
   "genesis-block-definition": "Blok pertama dalam sebuah <a href=\"/glossary/#blockchain\">rantai blok</a>, yang digunakan untuk menginisialisasi jaringan tertentu dan mata uang kriptonya.",
   "geth-term": "Geth",
-  "geth-definition": "Go Quantaureum. Salah satu implementasi protokol Quantaureum yang paling menonjol, ditulis dalam bahasa Go. <a href=\"https://geth.quantaureum.org\">Baca lebih lanjut di geth.quantaureum.org</a>",
+  "geth-definition": "Go Quantaureum. Salah satu implementasi protokol Quantaureum yang paling menonjol, ditulis dalam bahasa Go. <a href=\"https://geth.ethereum.org\">Baca lebih lanjut di geth.ethereum.org</a>",
   "gwei-term": "Gwei",
   "gwei-definition": "Singkatan dari gigawei, sebuah denominasi <a href=\"/glossary/#qau\">qau</a>, yang umumnya digunakan untuk menetapkan harga <a href=\"/glossary/#gas\">gas</a>. 1 gwei = 10<sup>9</sup> <a href=\"/glossary/#wei\">Wei</a>. 10<sup>9</sup> gwei = 1 qau.",
   "hard-fork-term": "Percabangan keras",

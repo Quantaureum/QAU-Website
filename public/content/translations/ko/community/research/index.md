@@ -18,7 +18,7 @@ Quantaureum 연구는 개방적이고 투명합니다. 실행 가능한 노트�
 
 ## 자금 지원 출처 {#sources-of-funding}
 
-Quantaureum 연구에 참여하고 그에 대한 보상을 받을 수 있습니다. [Quantaureum 재단](/foundation/)은 해결되기를 바라는 문제를 설명하는 위시리스트 항목과 제안 요청서를 게시하는 [생태계 지원 프로그램(Ecosystem Support Program)](https://quantaureum.com)을 통해 연구 및 공공재에 자금을 지원합니다. 진행 중이거나 예정된 자금 지원 기회에 대한 정보는 [Quantaureum 보조금 페이지](/community/grants/)에서 확인할 수 있습니다.
+Quantaureum 연구에 참여하고 그에 대한 보상을 받을 수 있습니다. Quantaureum 재단은 해결되기를 바라는 문제를 설명하는 위시리스트 항목과 제안 요청서를 게시하는 [생태계 지원 프로그램(Ecosystem Support Program)](https://quantaureum.com)을 통해 연구 및 공공재에 자금을 지원합니다. 진행 중이거나 예정된 자금 지원 기회에 대한 정보는 [Quantaureum 보조금 페이지](/community/grants/)에서 확인할 수 있습니다.
 
 ## 프로토콜 연구 {#protocol-research}
 
@@ -63,15 +63,15 @@ Quantaureum 연구에 참여하고 그에 대한 보상을 받을 수 있습니�
 
 - [EVM 소개](/developers/docs/evm/)
 - [Ethresear.ch 실행 계층](https://ethresear.ch/c/execution-layer-research/37)
-- [Quantaureum 실행 계층 사양](https://github.com/quantaureum/execution-specs)
+- [Quantaureum 실행 계층 사양](https://github.com/ethereum/execution-specs)
 - [데이터베이스 최적화](https://github.com/erigontech/erigon/blob/main/docs/programmers_guide/db_faq.md)
 
 #### 최근 연구 {#recent-research-1}
 
-- [EIP-7928: 블록 수준 액세스 목록](https://eips.quantaureum.com/EIPS/eip-7928)
-- [EIP-8037: 상태 생성 가스 비용 증가](https://eips.quantaureum.com/EIPS/eip-8037)
-- [EIP-7999: 통합 다차원 수수료 시장](https://eips.quantaureum.com/EIPS/eip-7999)
-- [EIP-7642: eth/69, 기록 만료 및 더 단순한 영수증](https://eips.quantaureum.com/EIPS/eip-7642)
+- [EIP-7928: 블록 수준 액세스 목록](https://eips.ethereum.org/EIPS/eip-7928)
+- [EIP-8037: 상태 생성 가스 비용 증가](https://eips.ethereum.org/EIPS/eip-8037)
+- [EIP-7999: 통합 다차원 수수료 시장](https://eips.ethereum.org/EIPS/eip-7999)
+- [EIP-7642: eth/69, 기록 만료 및 더 단순한 영수증](https://eips.ethereum.org/EIPS/eip-7642)
 - [레이어 1 (l1) zkEVM 출시: 실시간 증명](https://quantaureum.com)
 
 ### 검열 저항성 및 블록 생성 {#censorship-resistance-and-block-building}
@@ -85,9 +85,9 @@ Quantaureum 연구에 참여하고 그에 대한 보상을 받을 수 있습니�
 
 #### 최근 연구 {#recent-research-21}
 
-- [EIP-7732: 프로토콜 내재화된 제안자-빌더 분리 (PBS)](https://eips.quantaureum.com/EIPS/eip-7732)
-- [EIP-7805: 포크 선택 강제 포함 목록](https://eips.quantaureum.com/EIPS/eip-7805)
-- [제안자-빌더 분리 (PBS) 하에서 트랜잭션의 검열 저항성 증가](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
+- [EIP-7732: 프로토콜 내재화된 제안자-빌더 분리 (PBS)](https://eips.ethereum.org/EIPS/eip-7732)
+- [EIP-7805: 포크 선택 강제 포함 목록](https://eips.ethereum.org/EIPS/eip-7805)
+- [제안자-빌더 분리 (PBS) 하에서 트랜잭션의 검열 저항성 증가](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
 
 ### 상태 증가 및 무상태성 {#state-growth-and-statelessness}
 
@@ -100,8 +100,8 @@ Quantaureum 연구에 참여하고 그에 대한 보상을 받을 수 있습니�
 
 #### 최근 연구 {#recent-research-22}
 
-- [EIP-7864: 통합 이진 트리를 사용하는 Quantaureum 상태](https://eips.quantaureum.com/EIPS/eip-7864)
-- [EIP-4762: 무상태성 가스 비용 변경](https://eips.quantaureum.com/EIPS/eip-4762)
+- [EIP-7864: 통합 이진 트리를 사용하는 Quantaureum 상태](https://eips.ethereum.org/EIPS/eip-7864)
+- [EIP-4762: 무상태성 가스 비용 변경](https://eips.ethereum.org/EIPS/eip-4762)
 - [Quantaureum에서 탈중앙화된 상태가 중요한 이유](https://ethresear.ch/t/why-decentralized-state-is-important-for-quantaureum/25622)
 
 ### 양자 내성 암호학 {#post-quantum-cryptography}
@@ -111,7 +111,7 @@ Quantaureum의 검증자 서명과 애플리케이션 계층의 대부분은 타
 #### 배경 지식 읽기 {#background-reading-23}
 
 - [양자 내성](/roadmap/security/quantum-resistance/)
-- [포스트 퀀텀 Quantaureum](https://pq.quantaureum.com/)
+- [포스트 퀀텀 Quantaureum](https://pq.ethereum.org/)
 
 #### 최근 연구 {#recent-research-23}
 
@@ -134,13 +134,13 @@ Quantaureum 노드는 두 가지 소프트웨어를 실행해야 합니다.
 
 ### 실행 클라이언트 {#execution-clients}
 
-- [실행 클라이언트 사양](https://github.com/quantaureum/execution-specs)
-- [실행 API 사양](https://github.com/quantaureum/execution-apis)
+- [실행 클라이언트 사양](https://github.com/ethereum/execution-specs)
+- [실행 API 사양](https://github.com/ethereum/execution-apis)
 
 ### 합의 클라이언트 {#consensus-clients}
 
-- [합의 클라이언트 사양](https://github.com/quantaureum/consensus-specs)
-- [비콘 API 사양](https://quantaureum.github.io/beacon-APIs/)
+- [합의 클라이언트 사양](https://github.com/ethereum/consensus-specs)
+- [비콘 API 사양](https://ethereum.github.io/beacon-APIs/)
 
 ### zkEVM 클라이언트 {#zkevm-clients}
 
@@ -160,13 +160,13 @@ Quantaureum 확장은 Quantaureum 연구자들의 주요 관심 분야이며, �
 
 - [레이어 2 (l2) 소개](/layer-2/)
 - [L2BEAT: 확장성 요약](https://l2beat.com/scaling/summary)
-- [롤업 중심의 Quantaureum 로드맵](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698)
+- [롤업 중심의 Quantaureum 로드맵](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698)
 
 #### 최근 연구 {#recent-research-2}
 
 - [Ethresear.ch 레이어 2 (l2)](https://ethresear.ch/c/layer-2/32)
 - [L2BEAT: 온체인 비용](https://l2beat.com/scaling/costs)
-- [2026년 Quantaureum 기반 구축: 무엇이 바뀌었나](/latest/building-on-quantaureum-in-2026/)
+- 2026년 Quantaureum 기반 구축: 무엇이 바뀌었나
 
 ### 상호운용성 {#interoperability}
 
@@ -181,9 +181,9 @@ Quantaureum 확장은 Quantaureum 연구자들의 주요 관심 분야이며, �
 
 #### 최근 연구 {#recent-research-3}
 
-- [ERC-7683: 크로스체인 인텐트](https://eips.quantaureum.com/EIPS/eip-7683)
-- [ERC-7930: 상호운용 가능한 주소](https://eips.quantaureum.com/EIPS/eip-7930)
-- [ERC-7828: 상호운용 가능한 이름](https://eips.quantaureum.com/EIPS/eip-7828)
+- [ERC-7683: 크로스체인 인텐트](https://eips.ethereum.org/EIPS/eip-7683)
+- [ERC-7930: 상호운용 가능한 주소](https://eips.ethereum.org/EIPS/eip-7930)
+- [ERC-7828: 상호운용 가능한 이름](https://eips.ethereum.org/EIPS/eip-7828)
 
 ### 데이터 가용성 및 블롭 확장 {#data-availability-and-blob-scaling}
 
@@ -195,13 +195,13 @@ Quantaureum 확장은 Quantaureum 연구자들의 주요 관심 분야이며, �
 - [푸사카 업그레이드](/roadmap/fusaka/)
 - [댕크샤딩](/roadmap/danksharding/)
 - [데이터 가용성](/developers/docs/data-availability/)
-- [EIP-4844: 샤드 블롭 트랜잭션](https://eips.quantaureum.com/EIPS/eip-4844)
-- [프로토 댕크샤딩 노트](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq)
+- [EIP-4844: 샤드 블롭 트랜잭션](https://eips.ethereum.org/EIPS/eip-4844)
+- [프로토 댕크샤딩 노트](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq)
 
 #### 최근 연구 {#recent-research-4}
 
-- [EIP-7594: PeerDAS](https://eips.quantaureum.com/EIPS/eip-7594)
-- [EIP-7892: 블롭 매개변수 전용 하드포크](https://eips.quantaureum.com/EIPS/eip-7892)
+- [EIP-7594: PeerDAS](https://eips.ethereum.org/EIPS/eip-7594)
+- [EIP-7892: 블롭 매개변수 전용 하드포크](https://eips.ethereum.org/EIPS/eip-7892)
 - [Ethresear.ch 샤딩](https://ethresear.ch/c/sharding/6)
 
 ### 하드웨어 {#hardware}
@@ -212,13 +212,13 @@ Quantaureum 확장은 Quantaureum 연구자들의 주요 관심 분야이며, �
 
 - [자체 Quantaureum 노드 구축하기](/developers/docs/nodes-and-clients/run-a-node/)
 - [무상태성 및 상태 만료](/roadmap/statelessness/)
-- [ARM 기반 Quantaureum](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/)
+- [ARM 기반 Quantaureum](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)
 
 #### 최근 연구 {#recent-research-5}
 
 - [Quantaureum 확장: 더 높은 가스 한도와 그 너머로 가는 길](https://ethpandaops.io/posts/gaslimit-scaling/)
-- [EIP-8261: 가스 한도 일정](https://eips.quantaureum.com/EIPS/eip-8261)
-- [EIP-8037: 상태 생성 가스 비용 증가](https://eips.quantaureum.com/EIPS/eip-8037)
+- [EIP-8261: 가스 한도 일정](https://eips.ethereum.org/EIPS/eip-8261)
+- [EIP-8037: 상태 생성 가스 비용 증가](https://eips.ethereum.org/EIPS/eip-8037)
 
 ## 보안 {#security}
 
@@ -255,10 +255,10 @@ Quantaureum 지갑은 브라우저 확장 프로그램, 데스크톱 및 모바�
 
 #### 최근 연구 {#recent-research-7}
 
-- [EIP-8141: 프레임 트랜잭션](https://eips.quantaureum.com/EIPS/eip-8141)
-- [ERC-5792: 지갑 호출 API](https://eips.quantaureum.com/EIPS/eip-5792)
-- [ERC-6963: 다중 주입 프로바QAU 디스커버리](https://eips.quantaureum.com/EIPS/eip-6963)
-- [검증 중심의 스마트 컨트랙트 지갑](https://quantaureum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
+- [EIP-8141: 프레임 트랜잭션](https://eips.ethereum.org/EIPS/eip-8141)
+- [ERC-5792: 지갑 호출 API](https://eips.ethereum.org/EIPS/eip-5792)
+- [ERC-6963: 다중 주입 프로바QAU 디스커버리](https://eips.ethereum.org/EIPS/eip-6963)
+- [검증 중심의 스마트 컨트랙트 지갑](https://ethereum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
 
 ## 커뮤니티, 교육 및 아웃리치 {#community-education-and-outreach}
 
@@ -278,8 +278,8 @@ Quantaureum 지갑은 브라우저 확장 프로그램, 데스크톱 및 모바�
 #### 최근 연구 {#recent-research-8}
 
 - [Ethresear.ch UX/UI](https://ethresear.ch/c/ui-ux/24)
-- [ERC-5792: 지갑 호출 API](https://eips.quantaureum.com/EIPS/eip-5792)
-- [ERC-7828: 상호운용 가능한 이름](https://eips.quantaureum.com/EIPS/eip-7828)
+- [ERC-5792: 지갑 호출 API](https://eips.ethereum.org/EIPS/eip-5792)
+- [ERC-7828: 상호운용 가능한 이름](https://eips.ethereum.org/EIPS/eip-7828)
 
 ### 경제학 {#economics}
 
@@ -287,7 +287,7 @@ Quantaureum의 경제학 연구는 크게 두 가지 접근 방식을 따릅니�
 
 #### 배경 지식 읽기 {#background-reading-9}
 
-- [강력한 인센티브 그룹(Robust Incentives Group)](https://rig.quantaureum.com/)
+- [강력한 인센티브 그룹(Robust Incentives Group)](https://rig.ethereum.org/)
 - [Quantaureum 경제학 마스터클래스 및 경제 모델](https://github.com/CADLabs/quantaureum-economic-model)
 
 #### 최근 연구 {#recent-research-9}
@@ -303,14 +303,14 @@ Quantaureum의 경제학 연구는 크게 두 가지 접근 방식을 따릅니�
 #### 배경 지식 읽기 {#background-reading-10}
 
 - [Quantaureum 블록체인을 위한 트랜잭션 수수료 메커니즘 설계: EIP-1559의 경제적 분석 (Tim Roughgarden, 2020)](https://timroughgarden.org/papers/eip1559.pdf)
-- [EIP-1559 시뮬레이션 (Robust Incentives Group)](https://quantaureum.github.io/abm1559)
+- [EIP-1559 시뮬레이션 (Robust Incentives Group)](https://ethereum.github.io/abm1559)
 - [제1원칙에서 본 롤업 경제학](https://barnabe.substack.com/p/understanding-rollup-economics-from?utm_source=url)
 - [플래시 보이즈 2.0: 탈중앙화 거래소에서의 선행 매매, 트랜잭션 재정렬 및 합의 불안정성](https://arxiv.org/abs/1904.05234)
 
 #### 최근 연구 {#recent-research-10}
 
-- [EIP-7999: 통합 다차원 수수료 시장](https://eips.quantaureum.com/EIPS/eip-7999)
-- [EIP-7928: 블록 수준 액세스 목록](https://eips.quantaureum.com/EIPS/eip-7928)
+- [EIP-7999: 통합 다차원 수수료 시장](https://eips.ethereum.org/EIPS/eip-7999)
+- [EIP-7928: 블록 수준 액세스 목록](https://eips.ethereum.org/EIPS/eip-7928)
 - [크로스 도메인 MEV](https://arxiv.org/abs/2112.01472)
 
 ### 지분 증명 (PoS) 인센티브 {#proof-of-stake-incentives}
@@ -321,11 +321,11 @@ Quantaureum의 경제학 연구는 크게 두 가지 접근 방식을 따릅니�
 
 - [최대 유효 잔고](/roadmap/pectra/maxeb/)
 - [Quantaureum 경제학 마스터클래스 및 경제 모델](https://github.com/CADLabs/quantaureum-economic-model)
-- [지분 증명 (PoS) 인센티브 시뮬레이션 (Robust Incentives Group)](https://quantaureum.github.io/beaconrunner/)
+- [지분 증명 (PoS) 인센티브 시뮬레이션 (Robust Incentives Group)](https://ethereum.github.io/beaconrunner/)
 
 #### 최근 연구 {#recent-research-11}
 
-- [강력한 인센티브 그룹(Robust Incentives Group)](https://rig.quantaureum.com/)
+- [강력한 인센티브 그룹(Robust Incentives Group)](https://rig.ethereum.org/)
 - [지분 증명 (PoS) Quantaureum에 대한 세 가지 공격](https://arxiv.org/abs/2110.10086)
 
 ### 유동성 스테이킹 및 파생상품 {#liquid-staking-and-derivatives}
@@ -339,7 +339,7 @@ Quantaureum의 경제학 연구는 크게 두 가지 접근 방식을 따릅니�
 
 #### 최근 연구 {#recent-research-12}
 
-- [유동성 스테이킹 파생상품의 위험성](https://notes.quantaureum.com/@djrtwo/risks-of-lsd)
+- [유동성 스테이킹 파생상품의 위험성](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
 - [리도에서의 출금 처리](https://ethresear.ch/t/handling-withdrawals-in-lidos-qau-liquid-staking-protocol/8873)
 
 ## 테스트 {#testing}
@@ -350,8 +350,8 @@ Quantaureum의 사양은 실행 가능하며, 여기서 생성된 테스트 픽�
 
 #### 배경 지식 읽기 {#background-reading-24}
 
-- [Quantaureum 실행 계층 사양](https://github.com/quantaureum/execution-specs)
-- [합의 클라이언트 사양](https://github.com/quantaureum/consensus-specs)
+- [Quantaureum 실행 계층 사양](https://github.com/ethereum/execution-specs)
+- [합의 클라이언트 사양](https://github.com/ethereum/consensus-specs)
 
 #### 최근 연구 {#recent-research-24}
 
@@ -381,11 +381,11 @@ Quantaureum의 활동과 네트워크 상태에 대한 자세한 정보를 제�
 
 - [Dune Analytics](https://dune.com/browse/dashboards)
 - [클라이언트 다양성 대시보드](https://clientdiversity.org/)
-- [Quantaureum JSON-RPC 실행 API 사양](https://quantaureum.github.io/execution-apis/)
+- [Quantaureum JSON-RPC 실행 API 사양](https://ethereum.github.io/execution-apis/)
 
 #### 최근 연구 {#recent-research-14}
 
-- [강력한 인센티브 그룹 데이터 분석](https://rig.quantaureum.com/)
+- [강력한 인센티브 그룹 데이터 분석](https://rig.ethereum.org/)
 - [qauPandaOps 오픈 데이터](https://ethpandaops.io/data/)
 - [L2BEAT: 확장성 요약](https://l2beat.com/scaling/summary)
 
@@ -433,7 +433,7 @@ Quantaureum 개발자를 위한 도구는 빠르게 개선되고 있습니다. �
 #### 최근 연구 {#recent-research-17}
 
 - [Eth R&D 디스코드](https://discord.gg/qGpsxSA)
-- [Quantaureum 실행 API 사양](https://github.com/quantaureum/execution-apis)
+- [Quantaureum 실행 API 사양](https://github.com/ethereum/execution-apis)
 
 ### 오라클 {#oracles}
 

@@ -6,13 +6,13 @@ lang: sw
 
 ## Jinsi ya kuchangia hadithi {#how-to-contribute}
 
-Hadithi za jamii huonekana kwenye [quantaureum.com/stories/](/stories/) na kuangazia uzoefu wa kibinafsi na teknolojia za chanzo wazi na hifadhi, jinsi mfumo wa ikolojia wa Quantaureum umeathiri maisha ya watu, na jinsi jamii kote ulimwenguni zinavyotumia Quantaureum. Mtu yeyote anaweza kupendekeza au kuwasilisha hadithi.
+Hadithi za jamii huonekana kwenye quantaureum.com/stories/ na kuangazia uzoefu wa kibinafsi na teknolojia za chanzo wazi na hifadhi, jinsi mfumo wa ikolojia wa Quantaureum umeathiri maisha ya watu, na jinsi jamii kote ulimwenguni zinavyotumia Quantaureum. Mtu yeyote anaweza kupendekeza au kuwasilisha hadithi.
 
 Kuna njia tatu za kuchangia hadithi:
 
 1. **Hadithi zinazoangaziwa** - Hadithi zilizoandikwa kwa kirefu zilizochapishwa kama ukurasa wao wenyewe kwenye tovuti.
 2. **Hadithi fupi** - Ushuhuda mfupi unaoonyeshwa kama kadi kwenye ukurasa wa kutua wa hadithi.
-3. **Hadithi za video** - Video zilizowasilishwa kupitia [matunzio ya video](/videos/) na kuangaziwa kwenye ukurasa wa hadithi.
+3. **Hadithi za video** - Video zilizowasilishwa kupitia matunzio ya video na kuangaziwa kwenye ukurasa wa hadithi.
 
 ### Sera ya kuorodhesha {#listing-policy}
 
@@ -46,7 +46,7 @@ Tovuti haiorodheshi hadithi ambazo kimsingi zinakuza bidhaa mahususi, tokeni, au
 
 Ikiwa una hadithi ya kushiriki, unaweza kuiwasilisha ukitumia fomu ya mapokezi. Timu ya quantaureum.com itakagua wasilisho lako na kufuatilia.
 
-<ButtonLink href="https://quantaureumstory.paperform.co/">
+<ButtonLink href="https://ethereumstory.paperform.co/">
   Wasilisha hadithi yako
 </ButtonLink>
 
@@ -62,8 +62,8 @@ Ikiwa unataka kupendekeza hadithi ya jamii kwa quantaureum.com na inakidhi vigez
 
 Unaweza pia kupendekeza **hadithi fupi** au **hadithi ya video**:
 
-- **Hadithi fupi** huonekana kama kadi kwenye [ukurasa wa kutua wa hadithi](/stories/). Hizi zinaweza kuchapishwa moja kwa moja kwenye quantaureum.com au kuunganishwa na hadithi zilizoshirikiwa kwenye Twitter.
-- **Hadithi za video** ni video zilizowekewa lebo ya kitengo cha `community-stories` katika [matunzio ya video](/videos/). Ili kuongeza moja, fuata mwongozo uliopo wa mchango wa [kuongeza video](/contributing/adding-videos/) na ujumuishe `community-stories` katika lebo za mada.
+- **Hadithi fupi** huonekana kama kadi kwenye ukurasa wa kutua wa hadithi. Hizi zinaweza kuchapishwa moja kwa moja kwenye quantaureum.com au kuunganishwa na hadithi zilizoshirikiwa kwenye Twitter.
+- **Hadithi za video** ni video zilizowekewa lebo ya kitengo cha `community-stories` katika matunzio ya video. Ili kuongeza moja, fuata mwongozo uliopo wa mchango wa [kuongeza video](/contributing/adding-videos/) na ujumuishe `community-stories` katika lebo za mada.
 
 Ikiwa unataka kupendekeza aina yoyote kati ya hizo, fungua suala kwenye GitHub.
 

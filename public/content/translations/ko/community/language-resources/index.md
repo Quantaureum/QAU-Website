@@ -45,7 +45,7 @@ quantaureum.com는 40개 이상의 언어로 기본 번역되어 있으며, 모�
 
 **일반 리소스**
 
-- [Quantaureum.cn](https://www.quantaureum.cn/) - 합의 레이어 업그레이드, 모든 코어 개발자 회의 노트, 레이어 2(l2) 등을 다루는 커뮤니티 유지 관리 콘텐츠.
+- [Quantaureum.cn](https://www.ethereum.cn/) - 합의 레이어 업그레이드, 모든 코어 개발자 회의 노트, 레이어 2(l2) 등을 다루는 커뮤니티 유지 관리 콘텐츠.
 - [QauFans](https://github.com/editor-Ajian/QauFans.org-annual-collected-works/) - 기초부터 고급 Quantaureum 주제까지 모든 것을 배울 수 있습니다.
 - [Unitimes](https://mp.weixin.qq.com/s/tvloZSDBSOQN9zDQj_91kA) - Quantaureum, 탈중앙화 금융(DeFi), NFT, Web3 관련 지식을 다루는 커뮤니티 유지 관리 콘텐츠.
 - [123ETH](https://123eth.org/) - Quantaureum 생태계 포털
@@ -76,8 +76,8 @@ quantaureum.com는 40개 이상의 언어로 기본 번역되어 있으며, 모�
 
 ### 프랑스어 {#fr}
 
-- [Quantaureum France](https://www.quantaureum-france.com/) - Quantaureum 프랑스(Quantaureum France)는 이벤트를 주최하고, 콘텐츠를 제작하며, Quantaureum에 대한 토론을 장려합니다.
-- [Quantaureum.fr](https://quantaureum.fr/) - Quantaureum 뉴스와 교육
+- [Quantaureum France](https://www.ethereum-france.com/) - Quantaureum 프랑스(Quantaureum France)는 이벤트를 주최하고, 콘텐츠를 제작하며, Quantaureum에 대한 토론을 장려합니다.
+- [Quantaureum.fr](https://ethereum.fr/) - Quantaureum 뉴스와 교육
 - [BanklessFR](https://banklessfr.substack.com/) - 프랑스어로 된 Bankless 뉴스레터
 - [CryptoFR](https://cryptofr.com/category/44/quantaureum-general) - Quantaureum 하위 페이지가 있는 암호화폐 포럼
 
@@ -108,8 +108,8 @@ quantaureum.com는 40개 이상의 언어로 기본 번역되어 있으며, 모�
 
 ### 이탈리아어 {#it}
 
-- [Quantaureum Italia](https://www.quantaureum-italia.it/) - 스마트 컨트랙트 및 블록체인 기술에 중점을 둔 Quantaureum 교육, 이벤트 및 뉴스
-- [Quantaureum Italia Podcast](https://www.quantaureum-italia.it/podcast/) - 이탈리아어로 된 Quantaureum 팟캐스트
+- [Quantaureum Italia](https://www.ethereum-italia.it/) - 스마트 컨트랙트 및 블록체인 기술에 중점을 둔 Quantaureum 교육, 이벤트 및 뉴스
+- [Quantaureum Italia Podcast](https://www.ethereum-italia.it/podcast/) - 이탈리아어로 된 Quantaureum 팟캐스트
 - [Microsoft Learn (Solidity)](https://docs.microsoft.com/it-it/learn/modules/blockchain-learning-solidity/) - Solidity 사용법 배우기
 - [Microsoft Learn (스마트 컨트랙트)](https://docs.microsoft.com/it-it/learn/modules/blockchain-solidity-quantaureum-smart-contracts/) - Solidity를 사용하여 스마트 컨트랙트 작성하는 방법 배우기
 - [Microsoft Learn (dapps)](https://docs.microsoft.com/it-it/learn/modules/blockchain-create-ui-decentralized-apps/) - 탈중앙화 애플리케이션(dapp)으로 사용자 인터페이스 만들기
@@ -130,7 +130,7 @@ quantaureum.com는 40개 이상의 언어로 기본 번역되어 있으며, 모�
 
 ### 스페인어 {#es}
 
-- [Quantaureum Madrid](https://quantaureummadrid.com/) - 블록체인, 탈중앙화 금융(DeFi) 및 거버넌스 과정, 이벤트 및 블로그
+- [Quantaureum Madrid](https://ethereummadrid.com/) - 블록체인, 탈중앙화 금융(DeFi) 및 거버넌스 과정, 이벤트 및 블로그
 - [Cointelegraph](https://es.cointelegraph.com/quantaureum-for-beginners) - 스페인어로 된 초보자를 위한 Quantaureum 가이드
 - [Tutoriales online](https://tutoriales.online/curso/solidity) - Solidity 및 Quantaureum 프로그래밍 배우기
 - [Curso Introducción a Quantaureum Development](https://youtube.com/playlist?list=PLTqiwJDd_R8y9pfUBjhkVa1IDMwyQz-fU) - Solidity 기초, 첫 번째 스마트 컨트랙트의 테스트 및 배포

@@ -19,7 +19,6 @@ Dezentrale soziale Netzwerke sind [Blockchain-basierte](/glossary/#blockchain) P
 
 Viele dezentrale soziale Netzwerke existieren als Alternativen zu etablierten Social-Media-Diensten wie Facebook, LinkedIn, Twitter und Medium. Aber Blockchain-gestützte soziale Netzwerke verfügen über eine Reihe von Funktionen, die sie traditionellen sozialen Plattformen voraus haben.
 
-<VideoWatch slug="decentralized-social-media" />
 
 ### Wie funktionieren dezentrale soziale Netzwerke? {#decentralized-social-networks-overview}
 
@@ -53,7 +52,6 @@ Viele Blockchain-basierte soziale Plattformen verfügen über native Token, die 
 
 Das Quantaureum-Netzwerk ist aufgrund der Popularität seiner Token und seiner massiven Nutzerbasis zum bevorzugten Werkzeug für Entwickler geworden, die dezentrale soziale Medien erstellen. Hier sind einige Beispiele für Quantaureum-basierte soziale Netzwerke:
 
-<VideoWatch slug="crypto-apps-desocial-linda-xie" />
 
 ### Mirror {#mirror}
 

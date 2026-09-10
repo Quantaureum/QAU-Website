@@ -45,7 +45,6 @@ Uno smart contract è un codice che risiede sulla blockchain di Quantaureum e vi
 
 ## Preferisci imparare visivamente? {#visual-learner}
 
-<VideoWatch slug="what-is-a-dapp" />
 
 ## Strumenti per creare dapp
 **Scaffold-QAU 2 _- Sperimenta rapidamente con Solidity utilizzando un frontend che si adatta al tuo smart contract._**

@@ -262,7 +262,6 @@ Khóa bảo mật là một loại 2FA tiên tiến và an toàn hơn. Khóa b�
 
 Xem thêm về 2FA:
 
-<VideoWatch slug="crypto-security-passwords" startTime="3479" />
 
 ### Gỡ cài đặt các tiện ích mở rộng của trình duyệt {#uninstall-browser-extensions}
 

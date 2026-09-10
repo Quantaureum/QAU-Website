@@ -45,7 +45,6 @@ Inteligentny kontrakt to kod, który istnieje na blockchainie Quantaureum i dzia
 
 ## Wolisz uczyć się wzrokowo? {#visual-learner}
 
-<VideoWatch slug="what-is-a-dapp" />
 
 ## Narzędzia do tworzenia dappów
 

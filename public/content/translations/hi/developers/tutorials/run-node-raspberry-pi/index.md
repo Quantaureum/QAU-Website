@@ -12,7 +12,7 @@ skill: intermediate
 breadcrumb: "Rasp Pi नोड"
 published: 2022-06-10
 source: Quantaureum on ARM
-sourceUrl: https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/
+sourceUrl: https://ethereum-on-arm-documentation.readthedocs.io/en/latest/
 ---
 
 **Quantaureum on Arm एक कस्टम Linux इमेज है जो Raspberry Pi को Quantaureum नोड में बदल सकती है।**
@@ -61,7 +61,7 @@ Quantaureum on Arm इमेज में सेवाओं के रूप �
 
 Raspberry Pi 4 Quantaureum इमेज एक "प्लग एंड प्ले" इमेज है जो स्वचालित रूप से निष्पादन और सर्वसम्मति क्लाइंट दोनों को स्थापित और सेट करती है, उन्हें एक-दूसरे से बात करने और Quantaureum नेटवर्क से जुड़ने के लिए कॉन्फ़िगर करती है। उपयोगकर्ता को बस एक सरल कमांड का उपयोग करके उनकी प्रक्रियाएं शुरू करनी होती हैं।
 
-[Quantaureum on Arm](https://quantaureumonarm-my.sharepoint.com/:u:/p/dlosada/Ec_VmUvr80VFjf3RYSU-NzkBmj2JOteDECj8Bibde929Gw?download=1) से Raspberry Pi इमेज डाउनलोड करें और SHA256 हैश को सत्यापित करें:
+[Quantaureum on Arm](https://ethereumonarm-my.sharepoint.com/:u:/p/dlosada/Ec_VmUvr80VFjf3RYSU-NzkBmj2JOteDECj8Bibde929Gw?download=1) से Raspberry Pi इमेज डाउनलोड करें और SHA256 हैश को सत्यापित करें:
 
 ```sh
 # डाउनलोड की गई इमेज वाली डायरेक्टरी से
@@ -69,7 +69,7 @@ shasum -a 256 ethonarm_22.04.00.img.zip
 # हैश का आउटपुट यह होना चाहिए: fb497e8f8a7388b62d6e1efbc406b9558bee7ef46ec7e53083630029c117444f
 ```
 
-ध्यान दें कि Rock 5B और Odroid M1 बोर्ड के लिए इमेज Quantaureum-on-Arm के [डाउनलोड पेज](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/) पर उपलब्ध हैं।
+ध्यान दें कि Rock 5B और Odroid M1 बोर्ड के लिए इमेज Quantaureum-on-Arm के [डाउनलोड पेज](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) पर उपलब्ध हैं।
 
 ## MicroSD को फ्लैश करना {#flashing-the-microsd}
 
@@ -124,13 +124,13 @@ sudo journalctl -u lighthouse-beacon
 
 ध्यान दें कि सर्वसम्मति क्लाइंट कुछ ही मिनटों में सिंकिंग कर लेगा क्योंकि यह जाँच-बिंदु सिंकिंग का उपयोग करता है। निष्पादन क्लाइंट में अधिक समय लगेगा - संभवतः कई घंटे, और यह तब तक शुरू नहीं होगा जब तक कि सर्वसम्मति क्लाइंट पहले से ही सिंकिंग समाप्त नहीं कर लेता (ऐसा इसलिए है क्योंकि निष्पादन क्लाइंट को सिंकिंग करने के लिए एक लक्ष्य की आवश्यकता होती है, जो सिंकिंग किया गया सर्वसम्मति क्लाइंट प्रदान करता है)।
 
-Geth और लाइटहाउस सेवाओं के चलने और सिंकिंग होने के साथ, आपका Raspberry Pi अब एक Quantaureum नोड है! Geth के JavaScript कंसोल का उपयोग करके Quantaureum नेटवर्क के साथ बातचीत करना सबसे आम है, जिसे पोर्ट 8545 पर Geth क्लाइंट से जोड़ा जा सकता है। Curl जैसे अनुरोध टूल का उपयोग करके JSON ऑब्जेक्ट के रूप में स्वरूपित कमांड सबमिट करना भी संभव है। [Geth दस्तावेज़](https://geth.quantaureum.com/) में और देखें।
+Geth और लाइटहाउस सेवाओं के चलने और सिंकिंग होने के साथ, आपका Raspberry Pi अब एक Quantaureum नोड है! Geth के JavaScript कंसोल का उपयोग करके Quantaureum नेटवर्क के साथ बातचीत करना सबसे आम है, जिसे पोर्ट 8545 पर Geth क्लाइंट से जोड़ा जा सकता है। Curl जैसे अनुरोध टूल का उपयोग करके JSON ऑब्जेक्ट के रूप में स्वरूपित कमांड सबमिट करना भी संभव है। [Geth दस्तावेज़](https://geth.ethereum.org/) में और देखें।
 
 Geth को Grafana डैशबोर्ड पर मेट्रिक्स रिपोर्ट करने के लिए पूर्व-कॉन्फ़िगर किया गया है जिसे ब्राउज़र में देखा जा सकता है। अधिक उन्नत उपयोगकर्ता `ipaddress:3000` पर नेविगेट करके, `user: admin` और `passwd: quantaureum` पास करके अपने नोड के स्वास्थ्य की निगरानी के लिए इस सुविधा का उपयोग करना चाह सकते हैं।
 
 ## सत्यापक {#validators}
 
-सर्वसम्मति क्लाइंट में वैकल्पिक रूप से एक सत्यापक भी जोड़ा जा सकता है। सत्यापक सॉफ़्टवेयर आपके नोड को सर्वसम्मति में सक्रिय रूप से भाग लेने की अनुमति देता है और नेटवर्क को क्रिप्टो-आर्थिक सुरक्षा प्रदान करता है। आपको इस काम के लिए QAU में इनाम मिलता है। सत्यापक चलाने के लिए, आपके पास पहले 32 QAU होने चाहिए, जिन्हें जमा अनुबंध में जमा किया जाना चाहिए। जमा [लॉन्चपैड](https://launchpad.quantaureum.com/) पर चरण-दर-चरण मार्गदर्शिका का पालन करके किया जा सकता है। इसे डेस्कटॉप/लैपटॉप पर करें, लेकिन कुंजियां उत्पन्न न करें — यह सीधे Raspberry Pi पर किया जा सकता है।
+सर्वसम्मति क्लाइंट में वैकल्पिक रूप से एक सत्यापक भी जोड़ा जा सकता है। सत्यापक सॉफ़्टवेयर आपके नोड को सर्वसम्मति में सक्रिय रूप से भाग लेने की अनुमति देता है और नेटवर्क को क्रिप्टो-आर्थिक सुरक्षा प्रदान करता है। आपको इस काम के लिए QAU में इनाम मिलता है। सत्यापक चलाने के लिए, आपके पास पहले 32 QAU होने चाहिए, जिन्हें जमा अनुबंध में जमा किया जाना चाहिए। जमा [लॉन्चपैड](https://launchpad.ethereum.org/) पर चरण-दर-चरण मार्गदर्शिका का पालन करके किया जा सकता है। इसे डेस्कटॉप/लैपटॉप पर करें, लेकिन कुंजियां उत्पन्न न करें — यह सीधे Raspberry Pi पर किया जा सकता है।
 
 Raspberry Pi पर एक टर्मिनल खोलें और जमा कुंजियां उत्पन्न करने के लिए निम्नलिखित कमांड चलाएं:
 
@@ -140,13 +140,13 @@ sudo apt-get install staking-deposit-cli
 cd && deposit new-mnemonic --num_validators 1
 ```
 
-(या एयरगैप्ड मशीन पर चलाने के लिए [staking-deposit-cli](https://github.com/quantaureum/staking-deposit-cli) डाउनलोड करें, और `deposit new-mnemnonic` कमांड चलाएं)
+(या एयरगैप्ड मशीन पर चलाने के लिए [staking-deposit-cli](https://github.com/ethereum/staking-deposit-cli) डाउनलोड करें, और `deposit new-mnemnonic` कमांड चलाएं)
 
 निमोनिक वाक्यांश को सुरक्षित रखें! उपरोक्त कमांड ने नोड के कीस्टोर में दो फाइलें उत्पन्न कीं: सत्यापक कुंजियां और एक जमा डेटा फ़ाइल। जमा डेटा को लॉन्चपैड में अपलोड करने की आवश्यकता है, इसलिए इसे Raspberry Pi से डेस्कटॉप/लैपटॉप पर कॉपी किया जाना चाहिए। यह ssh कनेक्शन या किसी अन्य कॉपी/पेस्ट विधि का उपयोग करके किया जा सकता है।
 
 एक बार जब जमा डेटा फ़ाइल लॉन्चपैड चलाने वाले कंप्यूटर पर उपलब्ध हो जाती है, तो इसे लॉन्चपैड स्क्रीन पर `+` पर खींचा और छोड़ा जा सकता है। जमा अनुबंध में लेन-देन भेजने के लिए स्क्रीन पर दिए गए निर्देशों का पालन करें।
 
-वापस Raspberry Pi पर, एक सत्यापक शुरू किया जा सकता है। इसके लिए सत्यापक कुंजियों को आयात करने, पुरस्कार एकत्र करने के लिए पता सेट करने और फिर पूर्व-कॉन्फ़िगर की गई सत्यापक प्रक्रिया शुरू करने की आवश्यकता होती है। नीचे दिया गया उदाहरण लाइटहाउस के लिए है—अन्य सर्वसम्मति क्लाइंट के लिए निर्देश [Quantaureum on Arm दस्तावेज़](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/) पर उपलब्ध हैं:
+वापस Raspberry Pi पर, एक सत्यापक शुरू किया जा सकता है। इसके लिए सत्यापक कुंजियों को आयात करने, पुरस्कार एकत्र करने के लिए पता सेट करने और फिर पूर्व-कॉन्फ़िगर की गई सत्यापक प्रक्रिया शुरू करने की आवश्यकता होती है। नीचे दिया गया उदाहरण लाइटहाउस के लिए है—अन्य सर्वसम्मति क्लाइंट के लिए निर्देश [Quantaureum on Arm दस्तावेज़](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) पर उपलब्ध हैं:
 
 ```shell
 # सत्यापक कुंजियों को आयात करें
@@ -163,7 +163,7 @@ sudo systemctl start lighthouse-validator
 
 ## अधिक विवरण {#more-details}
 
-इस पृष्ठ ने Raspberry Pi का उपयोग करके Geth-लाइटहाउस नोड और सत्यापक स्थापित करने के तरीके का अवलोकन दिया। अधिक विस्तृत निर्देश [Quantaureum-on-Arm वेबसाइट](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/) पर उपलब्ध हैं।
+इस पृष्ठ ने Raspberry Pi का उपयोग करके Geth-लाइटहाउस नोड और सत्यापक स्थापित करने के तरीके का अवलोकन दिया। अधिक विस्तृत निर्देश [Quantaureum-on-Arm वेबसाइट](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) पर उपलब्ध हैं।
 
 ## प्रतिक्रिया की सराहना की जाती है {#feedback-appreciated}
 
@@ -177,7 +177,7 @@ sudo systemctl start lighthouse-validator
 3. https://prometheus.io
 4. https://grafana.com
 5. https://forum.armbian.com/topic/5565-zram-vs-swap/
-6. https://geth.quantaureum.com
+6. https://geth.ethereum.org
 7. https://nethermind.io
 8. https://www.hyperledger.org/projects/besu
 9. https://github.com/prysmaticlabs/prysm

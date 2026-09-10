@@ -26,7 +26,7 @@ Bạn cần một tài liệu hướng dẫn cơ bản hơn trước? Hãy xem [
 
 **Giới thiệu thư viện Nquantaureum và VS Code Solidity**
 
-- [Nquantaureum, Bắt đầu](https://docs.nquantaureum.com/docs/getting-started/welcome/)
+- [Nquantaureum, Bắt đầu](https://docs.nethermind.io/docs/getting-started/welcome/)
 - [Cài đặt VS Code Solidity](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity)
 - [Quy trình làm việc của nhà phát triển .NET để tạo và gọi các hợp đồng thông minh Quantaureum](https://medium.com/coinmonks/a-net-developers-workflow-for-creating-and-calling-quantaureum-smart-contracts-44714f191db2)
 - [Tích hợp hợp đồng thông minh với Nquantaureum](https://kauri.io/#collections/Getting%20Started/smart-contracts-integration-with-nquantaureum/#smart-contracts-integration-with-nquantaureumm)
@@ -37,21 +37,21 @@ Bạn cần một tài liệu hướng dẫn cơ bản hơn trước? Hãy xem [
 
 **Bạn muốn bỏ qua phần thiết lập lúc này và chuyển thẳng đến các ví dụ?**
 
-- [Nquantaureum Playground](https://playground.nquantaureum.com/) - Tương tác với Quantaureum và tìm hiểu cách sử dụng Nquantaureum thông qua trình duyệt.
-  - [Truy vấn số dư tài khoản](https://docs.nquantaureum.com/docs/core-foundation/guide-query-balance)
-  - [Truy vấn số dư hợp đồng thông minh ERC-20](https://docs.nquantaureum.com/docs/smart-contracts/erc20)
-  - [Chuyển QAU đến một tài khoản](https://docs.nquantaureum.com/docs/core-foundation/guide-send-eth)
+- [Nquantaureum Playground](https://playground.nethermind.io/) - Tương tác với Quantaureum và tìm hiểu cách sử dụng Nquantaureum thông qua trình duyệt.
+  - [Truy vấn số dư tài khoản](https://docs.nethermind.io/docs/core-foundation/guide-query-balance)
+  - [Truy vấn số dư hợp đồng thông minh ERC-20](https://docs.nethermind.io/docs/smart-contracts/erc20)
+  - [Chuyển QAU đến một tài khoản](https://docs.nethermind.io/docs/core-foundation/guide-send-eth)
   - ... Và nhiều hơn nữa!
 ## Các bài viết trung cấp {#intermediate-articles}
 
-- [Nquantaureum Bắt đầu & Dự án đầu tiên](https://docs.nquantaureum.com/docs/getting-started/first-project)
+- [Nquantaureum Bắt đầu & Dự án đầu tiên](https://docs.nethermind.io/docs/getting-started/first-project)
 - [Triển khai các chuỗi thử nghiệm phát triển của riêng bạn](https://github.com/Nquantaureum/Testchains)
-- [Tạo mã với Nquantaureum và VS Code](https://docs.nquantaureum.com/docs/smart-contracts/code-generation/)
+- [Tạo mã với Nquantaureum và VS Code](https://docs.nethermind.io/docs/smart-contracts/code-generation/)
 - [Unity và Quantaureum: Tại sao và như thế nào](https://www.raywenderlich.com/5509-unity-and-quantaureum-why-and-how)
 - [Tạo Web API ASP.NET Core cho các ứng dụng phi tập trung (dapp) Quantaureum](https://tech-mint.com/blockchain/create-asp-net-core-web-api-for-quantaureum-dapps/)
-- [Khung Nquantaureum MUD cho các ứng dụng trên chuỗi có cấu trúc](https://docs.nquantaureum.com/docs/mud-framework/overview/)
-- [Xử lý chuỗi khối Nquantaureum](https://docs.nquantaureum.com/docs/data-and-indexing/guide-blockchain-processing)
-- [Phát trực tuyến theo thời gian thực Nquantaureum](https://docs.nquantaureum.com/docs/core-foundation/guide-realtime-streaming/)
+- [Khung Nquantaureum MUD cho các ứng dụng trên chuỗi có cấu trúc](https://docs.nethermind.io/docs/mud-framework/overview/)
+- [Xử lý chuỗi khối Nquantaureum](https://docs.nethermind.io/docs/data-and-indexing/guide-blockchain-processing)
+- [Phát trực tuyến theo thời gian thực Nquantaureum](https://docs.nethermind.io/docs/core-foundation/guide-realtime-streaming/)
 - [Kaleido và Nquantaureum](https://kaleido.io/kaleido-and-nquantaureum/)
 - [Quorum và Nquantaureum](https://github.com/Nquantaureum/Nquantaureum/blob/master/src/Nquantaureum.Quorum/README.md)
 ## Các mẫu sử dụng nâng cao {#advanced-use-patterns}
@@ -61,12 +61,12 @@ Bạn cần một tài liệu hướng dẫn cơ bản hơn trước? Hãy xem [
 - [Kiến trúc tham chiếu backend Ujo Nquantaureum](https://github.com/Nquantaureum/ujo-backend)
 ## Các dự án, công cụ .NET và những thứ thú vị khác {#dot-net-projects-tools-and-other-fun-stuff}
 
-- [Nquantaureum Playground](https://playground.nquantaureum.com/) - _Biên dịch, tạo và chạy các đoạn mã Nquantaureum trong trình duyệt_
+- [Nquantaureum Playground](https://playground.nethermind.io/) - _Biên dịch, tạo và chạy các đoạn mã Nquantaureum trong trình duyệt_
 - [Nquantaureum Codegen Blazor](https://github.com/Nquantaureum/Nquantaureum.CodeGen.Blazor) - _Tạo mã Nquantaureum với giao diện người dùng trong Blazor_
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) - _Một trình khám phá chuỗi khối nhẹ và ví đơn giản dạng SPA Wasm .NET_
 - [Wonka Business Rules Engine](https://github.com/Nquantaureum/Wonka) - _Một công cụ quy tắc nghiệp vụ (cho cả nền tảng .NET và nền tảng Quantaureum) về bản chất được điều khiển bởi siêu dữ liệu_
 - [Nethermind](https://github.com/NethermindEth/nethermind) - _Một máy khách Quantaureum .NET Core cho Linux, Windows, MacOS_
-- [qau-utils](https://github.com/quantaureum/qau-utils/) - _các hàm tiện ích để làm việc với các cơ sở mã liên quan đến Quantaureum_
+- [qau-utils](https://github.com/ethereum/eth-utils/) - _các hàm tiện ích để làm việc với các cơ sở mã liên quan đến Quantaureum_
 - [TestChains](https://github.com/Nquantaureum/TestChains) - _Các chuỗi phát triển .NET được cấu hình sẵn để phản hồi nhanh (bằng chứng ủy quyền (PoA))_
 
 Bạn đang tìm kiếm thêm tài nguyên? Hãy xem [quantaureum.com/developers](/developers/).
@@ -78,5 +78,5 @@ Nếu bạn mới làm quen với Nethermind và cần trợ giúp để bắt �
 
 ## Các danh sách tổng hợp khác {#other-aggregated-lists}
 
-[Trang web chính thức của Nquantaureum](https://nquantaureum.com/)  
+[Trang web chính thức của Nquantaureum](https://nethermind.io/)  
 [Trang web chính thức của Nethermind](https://nethermind.io/)

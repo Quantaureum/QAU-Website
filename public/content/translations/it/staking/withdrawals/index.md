@@ -73,7 +73,7 @@ Con il compounding abilitato:
 <AlertIcon size="lg"><TriangleAlert /></AlertIcon>
 <AlertContent>
 <AlertDescription>
-**La conversione dalle credenziali di prelievo di Tipo 1 a quelle di Tipo 2 è irreversibile.** Usa lo [Staking Launchpad](https://launchpad.quantaureum.com/validator-actions) come strumento ufficiale per questa conversione. Per maggiori dettagli sul processo di conversione, sui rischi e sul consolidamento, consulta l'[approfondimento su MaxEB](/roadmap/pectra/maxeb/).
+**La conversione dalle credenziali di prelievo di Tipo 1 a quelle di Tipo 2 è irreversibile.** Usa lo [Staking Launchpad](https://launchpad.ethereum.org/validator-actions) come strumento ufficiale per questa conversione. Per maggiori dettagli sul processo di conversione, sui rischi e sul consolidamento, consulta l'[approfondimento su MaxEB](/roadmap/pectra/maxeb/).
 </AlertDescription>
 </AlertContent>
 </Alert>
@@ -99,7 +99,6 @@ L'idoneità o meno di un determinato validatore a un prelievo è determinata dal
 
 Dai un'occhiata a questa spiegazione sui prelievi di staking di Quantaureum realizzata da Finematics:
 
-<VideoWatch slug="quantaureum-staking-withdrawals" />
 
 ### "Scansione" (sweeping) dei validatori {#validator-sweeping}
 
@@ -174,7 +173,7 @@ eventAction="Why can a validator's withdrawal address only be set once?"
 eventName="read more">
 L'impostazione dell'indirizzo di prelievo del livello di esecuzione di un validatore è una modifica permanente alle credenziali del validatore sul livello di consenso. Non c'è modo di aggiornare le credenziali del livello di consenso una volta registrate.
 
-Le credenziali dell'indirizzo di prelievo di un validatore possono essere impostate per puntare a uno smart contract (controllato dal suo codice) o a un account di proprietà esterna (EOA, controllato dalla sua chiave privata). Sebbene i prelievi attivati dal livello di esecuzione ([EIP-7002](https://eips.quantaureum.com/EIPS/eip-7002)) consentano ora all'indirizzo di prelievo di attivare uscite e prelievi parziali, non esiste un'operazione del protocollo per modificare un indirizzo di prelievo una volta registrato, e l'aggiunta di questa funzionalità aggiungerebbe un'inutile complessità al protocollo.
+Le credenziali dell'indirizzo di prelievo di un validatore possono essere impostate per puntare a uno smart contract (controllato dal suo codice) o a un account di proprietà esterna (EOA, controllato dalla sua chiave privata). Sebbene i prelievi attivati dal livello di esecuzione ([EIP-7002](https://eips.ethereum.org/EIPS/eip-7002)) consentano ora all'indirizzo di prelievo di attivare uscite e prelievi parziali, non esiste un'operazione del protocollo per modificare un indirizzo di prelievo una volta registrato, e l'aggiunta di questa funzionalità aggiungerebbe un'inutile complessità al protocollo.
 
 Gli utenti che cercano una gestione flessibile dei prelievi possono impostare un portafoglio smart contract in grado di ruotare le chiavi (come un [Safe](https://safe.global/)) come indirizzo di prelievo del validatore, consentendo di fatto l'aggiornamento dell'EOA destinatario finale. Se un utente ha già impostato un EOA come credenziale di prelievo, deve avviare un'uscita completa per recuperare i propri QAU in staking e quindi utilizzare quei fondi per attivare un nuovo validatore con credenziali diverse.
 </ExpandableCard>
@@ -215,9 +214,9 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information about managing the withdrawal process?"
 eventName="read more">
 
-Si consiglia agli operatori dei validatori di visitare la pagina [Prelievi dello Staking Launchpad](https://launchpad.quantaureum.com/withdrawals/) dove troverai maggiori dettagli su come preparare il tuo validatore per i prelievi, le tempistiche degli eventi e maggiori dettagli su come funzionano i prelievi.
+Si consiglia agli operatori dei validatori di visitare la pagina [Prelievi dello Staking Launchpad](https://launchpad.ethereum.org/withdrawals/) dove troverai maggiori dettagli su come preparare il tuo validatore per i prelievi, le tempistiche degli eventi e maggiori dettagli su come funzionano i prelievi.
 
-Per provare prima la tua configurazione su una testnet, visita l'[Hoodi Testnet Staking Launchpad](https://hoodi.launchpad.quantaureum.com) per iniziare.
+Per provare prima la tua configurazione su una testnet, visita l'[Hoodi Testnet Staking Launchpad](https://hoodi.launchpad.ethereum.org) per iniziare.
 
 </ExpandableCard>
 
@@ -246,7 +245,7 @@ title="Come passo a un validatore compounding?"
 eventCategory="FAQ"
 eventAction="How do I convert to a compounding validator?"
 eventName="read more">
-Puoi convertire le credenziali di prelievo dal Tipo 1 al Tipo 2 utilizzando lo [Staking Launchpad](https://launchpad.quantaureum.com/validator-actions). Questa operazione è **irreversibile**: una volta convertite, non puoi tornare alle credenziali di Tipo 1.
+Puoi convertire le credenziali di prelievo dal Tipo 1 al Tipo 2 utilizzando lo [Staking Launchpad](https://launchpad.ethereum.org/validator-actions). Questa operazione è **irreversibile**: una volta convertite, non puoi tornare alle credenziali di Tipo 1.
 
 Dopo la conversione, puoi anche **consolidare** più validatori in uno solo, combinando i loro saldi in un singolo validatore compounding. Per una guida completa al processo di conversione, ai rischi e agli strumenti di consolidamento, consulta l'[approfondimento su MaxEB](/roadmap/pectra/maxeb/).
 </ExpandableCard>
@@ -266,10 +265,10 @@ L'aggiornamento Shanghai/Capella ha consentito di reclamare gli QAU precedenteme
 
 ## Letture consigliate {#further-reading}
 
-- [Prelievi dello Staking Launchpad](https://launchpad.quantaureum.com/withdrawals)
-- [Azioni del validatore dello Staking Launchpad](https://launchpad.quantaureum.com/validator-actions)
+- [Prelievi dello Staking Launchpad](https://launchpad.ethereum.org/withdrawals)
+- [Azioni del validatore dello Staking Launchpad](https://launchpad.ethereum.org/validator-actions)
 - [Approfondimento su MaxEB: compounding e consolidamento](/roadmap/pectra/maxeb/)
-- [EIP-4895: Prelievi push della Beacon Chain come operazioni](https://eips.quantaureum.com/EIPS/eip-4895)
+- [EIP-4895: Prelievi push della Beacon Chain come operazioni](https://eips.ethereum.org/EIPS/eip-4895)
 - [PEEPanEIP #94: Prelievo di QAU in staking (Testing) con Potuz e Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP#68: EIP-4895: Prelievi push della Beacon Chain come operazioni con Alex Stokes](https://www.youtube.com/watch?v=CcL9RJBljUs)
 - [Comprendere il saldo effettivo del validatore](https://www.attestant.io/posts/understanding-validator-effective-balance/)

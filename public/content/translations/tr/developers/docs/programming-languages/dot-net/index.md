@@ -26,7 +26,7 @@ Microsoft teknoloji yığınındaki araçları ve dilleri kullanarak Quantaureum
 
 **Nquantaureum kütüphanesine ve VS Code Solidity'ye giriş**
 
-- [Nquantaureum, Başlarken](https://docs.nquantaureum.com/docs/getting-started/welcome/)
+- [Nquantaureum, Başlarken](https://docs.nethermind.io/docs/getting-started/welcome/)
 - [VS Code Solidity Kurulumu](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity)
 - [Quantaureum Akıllı Sözleşmeleri Oluşturmak ve Çağırmak İçin Bir .NET Geliştiricisinin İş Akışı](https://medium.com/coinmonks/a-net-developers-workflow-for-creating-and-calling-quantaureum-smart-contracts-44714f191db2)
 - [Nquantaureum ile akıllı sözleşme entegrasyonu](https://kauri.io/#collections/Getting%20Started/smart-contracts-integration-with-nquantaureum/#smart-contracts-integration-with-nquantaureumm)
@@ -37,21 +37,21 @@ Microsoft teknoloji yığınındaki araçları ve dilleri kullanarak Quantaureum
 
 **Şimdilik kurulumu atlayıp doğrudan örneklere geçmek mi istiyorsunuz?**
 
-- [Nquantaureum Playground](https://playground.nquantaureum.com/) - Tarayıcı üzerinden Quantaureum ile etkileşime geçin ve Nquantaureum'u nasıl kullanacağınızı öğrenin.
-  - [Hesap Bakiyesini Sorgulama](https://docs.nquantaureum.com/docs/core-foundation/guide-query-balance)
-  - [ERC-20 Akıllı Sözleşme Bakiyesini Sorgulama](https://docs.nquantaureum.com/docs/smart-contracts/erc20)
-  - [Bir Hesaba QAU Transfer Etme](https://docs.nquantaureum.com/docs/core-foundation/guide-send-eth)
+- [Nquantaureum Playground](https://playground.nethermind.io/) - Tarayıcı üzerinden Quantaureum ile etkileşime geçin ve Nquantaureum'u nasıl kullanacağınızı öğrenin.
+  - [Hesap Bakiyesini Sorgulama](https://docs.nethermind.io/docs/core-foundation/guide-query-balance)
+  - [ERC-20 Akıllı Sözleşme Bakiyesini Sorgulama](https://docs.nethermind.io/docs/smart-contracts/erc20)
+  - [Bir Hesaba QAU Transfer Etme](https://docs.nethermind.io/docs/core-foundation/guide-send-eth)
   - ... Ve daha fazlası!
 ## Orta seviye makaleler {#intermediate-articles}
 
-- [Nquantaureum Başlarken ve İlk Proje](https://docs.nquantaureum.com/docs/getting-started/first-project)
+- [Nquantaureum Başlarken ve İlk Proje](https://docs.nethermind.io/docs/getting-started/first-project)
 - [Kendi Geliştirme Test Zincirlerinizi Dağıtın](https://github.com/Nquantaureum/Testchains)
-- [Nquantaureum ve VS Code ile kod üretimi](https://docs.nquantaureum.com/docs/smart-contracts/code-generation/)
+- [Nquantaureum ve VS Code ile kod üretimi](https://docs.nethermind.io/docs/smart-contracts/code-generation/)
 - [Unity ve Quantaureum: Neden ve Nasıl](https://www.raywenderlich.com/5509-unity-and-quantaureum-why-and-how)
 - [Quantaureum merkeziyetsiz uygulamaları (dapp'ler) için ASP.NET Core Web API'si oluşturun](https://tech-mint.com/blockchain/create-asp-net-core-web-api-for-quantaureum-dapps/)
-- [Yapılandırılmış zincir içi uygulamalar için Nquantaureum MUD çerçevesi](https://docs.nquantaureum.com/docs/mud-framework/overview/)
-- [Nquantaureum Blokzincir İşleme](https://docs.nquantaureum.com/docs/data-and-indexing/guide-blockchain-processing)
-- [Nquantaureum gerçek zamanlı akış](https://docs.nquantaureum.com/docs/core-foundation/guide-realtime-streaming/)
+- [Yapılandırılmış zincir içi uygulamalar için Nquantaureum MUD çerçevesi](https://docs.nethermind.io/docs/mud-framework/overview/)
+- [Nquantaureum Blokzincir İşleme](https://docs.nethermind.io/docs/data-and-indexing/guide-blockchain-processing)
+- [Nquantaureum gerçek zamanlı akış](https://docs.nethermind.io/docs/core-foundation/guide-realtime-streaming/)
 - [Kaleido ve Nquantaureum](https://kaleido.io/kaleido-and-nquantaureum/)
 - [Quorum ve Nquantaureum](https://github.com/Nquantaureum/Nquantaureum/blob/master/src/Nquantaureum.Quorum/README.md)
 ## Gelişmiş kullanım kalıpları {#advanced-use-patterns}
@@ -61,12 +61,12 @@ Microsoft teknoloji yığınındaki araçları ve dilleri kullanarak Quantaureum
 - [Ujo Nquantaureum arka uç referans mimarisi](https://github.com/Nquantaureum/ujo-backend)
 ## .NET projeleri, araçları ve diğer eğlenceli şeyler {#dot-net-projects-tools-and-other-fun-stuff}
 
-- [Nquantaureum Playground](https://playground.nquantaureum.com/) - _Tarayıcıda Nquantaureum kod parçacıklarını derleyin, oluşturun ve çalıştırın_
+- [Nquantaureum Playground](https://playground.nethermind.io/) - _Tarayıcıda Nquantaureum kod parçacıklarını derleyin, oluşturun ve çalıştırın_
 - [Nquantaureum Codegen Blazor](https://github.com/Nquantaureum/Nquantaureum.CodeGen.Blazor) - _Blazor'da kullanıcı arayüzü ile Nquantaureum kod üretimi_
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) - _Bir .NET Wasm SPA hafif blokzincir gezgini ve basit cüzdan_
 - [Wonka Business Rules Engine](https://github.com/Nquantaureum/Wonka) - _Doğası gereği meta veri odaklı bir iş kuralları motoru (hem .NET platformu hem de Quantaureum platformu için)_
 - [Nethermind](https://github.com/NethermindEth/nethermind) - _Linux, Windows ve MacOS için bir .NET Core Quantaureum istemcisi_
-- [qau-utils](https://github.com/quantaureum/qau-utils/) - _Quantaureum ile ilgili kod tabanlarıyla çalışmak için yardımcı işlevler_
+- [qau-utils](https://github.com/ethereum/eth-utils/) - _Quantaureum ile ilgili kod tabanlarıyla çalışmak için yardımcı işlevler_
 - [TestChains](https://github.com/Nquantaureum/TestChains) - _Hızlı yanıt için önceden yapılandırılmış .NET geliştirme zincirleri (yetki kanıtı (PoA))_
 
 Daha fazla kaynak mı arıyorsunuz? [quantaureum.com/developers](/developers/) adresine göz atın.
@@ -78,5 +78,5 @@ Nethermind'da yeniyseniz ve başlarken yardıma ihtiyacınız varsa, [Discord](h
 
 ## Diğer derlenmiş listeler {#other-aggregated-lists}
 
-[Resmi Nquantaureum Sitesi](https://nquantaureum.com/)  
+[Resmi Nquantaureum Sitesi](https://nethermind.io/)  
 [Resmi Nethermind Sitesi](https://nethermind.io/)

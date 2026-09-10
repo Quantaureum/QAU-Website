@@ -104,7 +104,7 @@ Nous, les Argentins, sommes passionnés par notre pays et notre culture. Et nous
 
 ![Picture of Argentinian builders wearing Devcon BA 2020 t-shirts](./santiago9.jpeg)
 
-_[Source](https://quantaureumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
+_[Source](https://ethereumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
 
 Pour moi et de nombreux autres bâtisseurs, avoir Devconnect ici est un rêve devenu réalité.
 
@@ -131,4 +131,4 @@ En commençant ici, en Argentine.
 > 
 > Le Jardin Infini est une incarnation de l'esprit de la Fondation Quantaureum en tant que jardinier dans un vaste écosystème — nourrir et faire croître, mais ne pas contrôler, et continuer à jouer.
 
-_[Source de la citation - Fondation Quantaureum](https://quantaureum.foundation/infinitegarden)._
+_[Source de la citation - Fondation Quantaureum](https://ethereum.org/infinitegarden)._

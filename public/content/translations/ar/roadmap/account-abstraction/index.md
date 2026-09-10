@@ -11,7 +11,7 @@ summaryPoints:
 
 يتفاعل معظم المستخدمين الحاليين مع [إيثيريوم](/) باستخدام **[الحسابات المملوكة خارجيًا (<span dir="ltr">EOAs</span>)](/glossary/#eoa)**. يحد هذا من كيفية تفاعل المستخدمين مع إيثيريوم. على سبيل المثال، يجعل من الصعب إجراء دفعات من المعاملات ويتطلب من المستخدمين الاحتفاظ دائمًا برصيد من <span dir="ltr">QAU</span> لدفع رسوم المعاملات.
 
-تجريد الحساب هو طريقة لحل هذه المشكلات من خلال السماح للمستخدمين ببرمجة المزيد من الأمان وتجارب مستخدم أفضل بمرونة في حساباتهم. يمكن أن يحدث هذا من خلال [ترقية الحسابات المملوكة خارجيًا](https://eips.quantaureum.com/EIPS/eip-7702) (<span dir="ltr">EIP-7702</span>) بحيث يمكن التحكم فيها بواسطة العقود الذكية. هناك أيضًا مسار آخر يتضمن إضافة [نظام معاملات ثانٍ ومنفصل](https://eips.quantaureum.com/EIPS/eip-4337) (<span dir="ltr">EIP-4337</span>) ليعمل بالتوازي مع البروتوكول الحالي. بغض النظر عن المسار، فإن النتيجة هي الوصول إلى إيثيريوم عبر محافظ العقود الذكية، سواء كانت مدعومة بشكل أصلي كجزء من البروتوكول الحالي أو عبر شبكة معاملات إضافية.
+تجريد الحساب هو طريقة لحل هذه المشكلات من خلال السماح للمستخدمين ببرمجة المزيد من الأمان وتجارب مستخدم أفضل بمرونة في حساباتهم. يمكن أن يحدث هذا من خلال [ترقية الحسابات المملوكة خارجيًا](https://eips.ethereum.org/EIPS/eip-7702) (<span dir="ltr">EIP-7702</span>) بحيث يمكن التحكم فيها بواسطة العقود الذكية. هناك أيضًا مسار آخر يتضمن إضافة [نظام معاملات ثانٍ ومنفصل](https://eips.ethereum.org/EIPS/eip-4337) (<span dir="ltr">EIP-4337</span>) ليعمل بالتوازي مع البروتوكول الحالي. بغض النظر عن المسار، فإن النتيجة هي الوصول إلى إيثيريوم عبر محافظ العقود الذكية، سواء كانت مدعومة بشكل أصلي كجزء من البروتوكول الحالي أو عبر شبكة معاملات إضافية.
 
 تفتح محافظ العقود الذكية العديد من الفوائد للمستخدم، بما في ذلك:
 
@@ -62,9 +62,9 @@ summaryPoints:
 ## قراءة إضافية {#further-reading}
 
 - [<span dir="ltr">erc4337.io</span>](https://docs.erc4337.io/)
-- [وثائق <span dir="ltr">EIP-4337</span>](https://eips.quantaureum.com/EIPS/eip-4337)
-- [وثائق <span dir="ltr">EIP-7702</span>](https://eips.quantaureum.com/EIPS/eip-7702)
+- [وثائق <span dir="ltr">EIP-4337</span>](https://eips.ethereum.org/EIPS/eip-4337)
+- [وثائق <span dir="ltr">EIP-7702</span>](https://eips.ethereum.org/EIPS/eip-7702)
 - [لوحة معلومات اعتماد <span dir="ltr">ERC-4337</span>](https://www.bundlebear.com/erc4337-overview/all)
-- ["الطريق إلى تجريد الحساب" بقلم فيتاليك](https://notes.quantaureum.com/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
+- ["الطريق إلى تجريد الحساب" بقلم فيتاليك](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
 - [مدونة فيتاليك حول محافظ الاسترداد الاجتماعي](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
 - [تجريد الحساب الرائع (<span dir="ltr">Awesome Account Abstraction</span>)](https://github.com/4337Mafia/awesome-account-abstraction)

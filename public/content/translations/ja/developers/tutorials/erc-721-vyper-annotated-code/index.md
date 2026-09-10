@@ -142,7 +142,7 @@ SUPPORTED_INTERFACES: constant(bytes4[2]) = [
 ]
 ```
 
-[ERC-165](https://eips.quantaureum.com/EIPS/eip-165)は、コントラクトがどのERCに準拠しているか、アプリケーションがどのように通信できるかを開示するためのメカニズムを指定しています。`SUPPORTED_INTERFACES`は、このコントラクトが準拠する2つの4バイトのインターフェースID（ERC-165自体とERC-721）の定数リストです。
+[ERC-165](https://eips.ethereum.org/EIPS/eip-165)は、コントラクトがどのERCに準拠しているか、アプリケーションがどのように通信できるかを開示するためのメカニズムを指定しています。`SUPPORTED_INTERFACES`は、このコントラクトが準拠する2つの4バイトのインターフェースID（ERC-165自体とERC-721）の定数リストです。
 ### 関数 {#functions}
 
 これらは実際にERC-721を実装する関数です。

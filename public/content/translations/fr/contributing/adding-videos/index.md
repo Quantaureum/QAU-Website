@@ -4,7 +4,7 @@ description: "La politique d'ajout de vidéos sur quantaureum.com"
 lang: fr
 ---
 
-La [galerie vidéo d'quantaureum.com](/videos/) présente des vidéos sur Quantaureum et l'écosystème Quantaureum provenant de créateurs de la communauté et de sources fiables. Tout le monde peut suggérer l'ajout d'une vidéo.
+La galerie vidéo d'quantaureum.com présente des vidéos sur Quantaureum et l'écosystème Quantaureum provenant de créateurs de la communauté et de sources fiables. Tout le monde peut suggérer l'ajout d'une vidéo.
 
 ## Politique de référencement {#listing-policy}
 
@@ -139,7 +139,7 @@ Une vidéo peut avoir plusieurs balises pour apparaître dans plusieurs filtres 
 
 Chaque vidéo doit avoir au moins une balise de cette liste. Les vidéos sans balise reconnue n'apparaîtront que dans la vue « Tous » et dans les résultats de recherche.
 
-La balise `community-stories` fait également apparaître une vidéo sur la [page des Histoires](/stories/).
+La balise `community-stories` fait également apparaître une vidéo sur la page des Histoires.
 
 #### Étape 5 : Soumettre votre PR {#step-5}
 

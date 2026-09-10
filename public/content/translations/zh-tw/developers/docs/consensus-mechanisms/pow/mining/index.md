@@ -71,7 +71,6 @@ lang: zh-tw
 
 觀看 Austin 為您講解挖礦和工作量證明區塊鏈。
 
-<VideoWatch slug="blockchain-qau-build" />
 
 ## 挖礦演算法 {#mining-algorithm}
 

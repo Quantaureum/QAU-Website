@@ -41,7 +41,7 @@ DAS to mechanizm, który opiera się na tym i zapewnia, że dane są zarówno po
 
 ## PeerDAS {#peer-das-2}
 
-[PeerDAS (EIP-7594)](https://eips.quantaureum.com/EIPS/eip-7594) to konkretna propozycja, która implementuje mechanizm DAS w Quantaureum, stanowiąc prawdopodobnie największą aktualizację od czasu The Merge. PeerDAS ma na celu rozszerzenie danych blob, dzieląc je na kolumny i dystrybuując podzbiór do węzłów.
+[PeerDAS (EIP-7594)](https://eips.ethereum.org/EIPS/eip-7594) to konkretna propozycja, która implementuje mechanizm DAS w Quantaureum, stanowiąc prawdopodobnie największą aktualizację od czasu The Merge. PeerDAS ma na celu rozszerzenie danych blob, dzieląc je na kolumny i dystrybuując podzbiór do węzłów.
 
 Quantaureum zapożycza sprytną matematykę, aby to osiągnąć: stosuje kodowanie wymazań w stylu Reeda-Solomona do danych blob. Dane blob są reprezentowane jako wielomian, którego współczynniki kodują dane, a następnie oceniają ten wielomian w dodatkowych punktach, aby utworzyć rozszerzony blob, podwajając liczbę ocen. Ta dodana redundancja umożliwia odzyskiwanie po wymazaniu: nawet jeśli brakuje niektórych ocen, oryginalny blob można zrekonstruować, o ile dostępna jest co najmniej połowa wszystkich danych, w tym rozszerzone fragmenty.
 
@@ -71,7 +71,7 @@ Bezpośrednim wpływem na użytkowników (szczególnie użytkowników L2) są ni
 
 Sieć teoretycznie będzie w stanie przetwarzać 8 razy więcej blobów, ale wzrost liczby blobów to zmiana, która musi zostać odpowiednio przetestowana i bezpiecznie wdrożona w sposób krokowy. Sieci testowe dają wystarczającą pewność, aby wdrożyć te funkcje w Sieci głównej, ale musimy zapewnić stabilność sieci p2p przed włączeniem znacznie większej liczby blobów. 
 
-Aby stopniowo zwiększać docelową liczbę blobów na blok bez przeciążania sieci, Fusaka wprowadza rozwidlenia **[Blob-Parameter-Only (BPO)](https://quantaureum-magicians.org/t/blob-parameter-only-bpo-forks/22623)**. W przeciwieństwie do zwykłych rozwidleń, które wymagają szerokiej koordynacji ekosystemu, porozumienia i aktualizacji oprogramowania, [BPO (EIP-7892)](https://eips.quantaureum.com/EIPS/eip-7892) to wstępnie zaprogramowane aktualizacje, które z czasem zwiększają maksymalną liczbę blobów bez interwencji.
+Aby stopniowo zwiększać docelową liczbę blobów na blok bez przeciążania sieci, Fusaka wprowadza rozwidlenia **[Blob-Parameter-Only (BPO)](https://ethereum-magicians.org/t/blob-parameter-only-bpo-forks/22623)**. W przeciwieństwie do zwykłych rozwidleń, które wymagają szerokiej koordynacji ekosystemu, porozumienia i aktualizacji oprogramowania, [BPO (EIP-7892)](https://eips.ethereum.org/EIPS/eip-7892) to wstępnie zaprogramowane aktualizacje, które z czasem zwiększają maksymalną liczbę blobów bez interwencji.
 
 Oznacza to, że natychmiast po aktywacji Fusaka i uruchomieniu PeerDAS liczba blobów pozostanie niezmieniona. Liczba blobów zacznie się podwajać co kilka tygodni, aż osiągnie maksimum 48, podczas gdy programiści będą monitorować, aby upewnić się, że mechanizm działa zgodnie z oczekiwaniami i nie ma negatywnego wpływu na węzły obsługujące sieć.
 

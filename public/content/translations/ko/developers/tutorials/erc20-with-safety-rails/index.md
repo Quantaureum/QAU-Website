@@ -17,7 +17,7 @@ Quantaureum의 훌륭한 점 중 하나는 트랜잭션을 수정하거나 취�
 
 전체 소스 코드를 보려면 다음을 수행하세요.
 
-1. [Remix IDE](https://remix.quantaureum.com/)를 엽니다.
+1. [Remix IDE](https://remix.ethereum.org/)를 엽니다.
 2. GitHub 클론 아이콘(![clone github icon](icon-clone.png))을 클릭합니다.
 3. GitHub 리포지토리 `https://github.com/qbzzt/20220815-erc20-safety-rails`를 클론합니다.
 4. <strong>contracts > erc20-safety-rails.sol</strong>을 엽니다.
@@ -40,7 +40,7 @@ Quantaureum의 훌륭한 점 중 하나는 트랜잭션을 수정하거나 취�
 
 3. 위로 스크롤하여 **Open in Remix**(Remix용)를 클릭하거나 다른 환경을 사용하려면 <strong>Download</strong>를 클릭합니다. 여기서는 Remix를 사용한다고 가정하며, 다른 환경을 사용하는 경우 적절히 변경하세요.
 4. 이제 완전히 작동하는 ERC-20 컨트랙트가 준비되었습니다. `.deps` > `npm`를 확장하여 가져온 코드를 볼 수 있습니다.
-5. 컨트랙트를 컴파일하고 배포하여 ERC-20 컨트랙트로 작동하는지 확인해 보세요. Remix 사용법을 배워야 한다면 [이 튜토리얼을 사용하세요](https://remix.quantaureum.com/?#activate=udapp,solidity,LearnEth).
+5. 컨트랙트를 컴파일하고 배포하여 ERC-20 컨트랙트로 작동하는지 확인해 보세요. Remix 사용법을 배워야 한다면 [이 튜토리얼을 사용하세요](https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth).
 
 ## 일반적인 실수 {#common-mistakes}
 
@@ -185,7 +185,7 @@ Solidity에 익숙하지 않다면 이 함수의 일부가 생소할 수 있습�
 
 ### 자산 정리 {#asset-cleanup}
 
-이 컨트랙트가 보유한 ERC-20 토큰을 해제하려면 해당 토큰이 속한 토큰 컨트랙트에서 [`transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer) 또는 [`approve`](https://eips.quantaureum.com/EIPS/eip-20#approve) 함수를 호출해야 합니다. 이 경우 허용량(allowance)에 가스를 낭비할 필요가 없으므로 직접 전송하는 것이 좋습니다.
+이 컨트랙트가 보유한 ERC-20 토큰을 해제하려면 해당 토큰이 속한 토큰 컨트랙트에서 [`transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer) 또는 [`approve`](https://eips.ethereum.org/EIPS/eip-20#approve) 함수를 호출해야 합니다. 이 경우 허용량(allowance)에 가스를 낭비할 필요가 없으므로 직접 전송하는 것이 좋습니다.
 
 ```solidity
     function cleanupERC20(

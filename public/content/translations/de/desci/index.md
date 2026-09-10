@@ -20,7 +20,6 @@ DeSci zielt darauf ab, ein Ökosystem zu schaffen, in dem Wissenschaftler Anreiz
 
 Dezentralisierte Wissenschaft ermöglicht vielfältigere Finanzierungsquellen (von [DAOs](/glossary/#dao) über [quadratische Spenden](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531) bis hin zu Crowdfunding und mehr), zugänglichere Daten und Methoden sowie die Bereitstellung von Anreizen für Reproduzierbarkeit.
 
-<VideoWatch slug="desci-movement-juan-benet" />
 
 ## Wie DeSci die Wissenschaft verbessert {#desci-improves-science}
 

@@ -93,7 +93,7 @@ Quantaureum blok kanıtlaması için çeşitli zkVM uygulamaları geliştirilmek
 | [Jolt](https://github.com/a16z/jolt) | rv32im |
 | [Zisk](https://github.com/0xPolygonHermez/zisk) | rv64ima |
 
-Bunlar, EVM baytkodunu yürütmek için RISC-V tabanlı sanal makineler kullanır ve ardından doğru yürütmenin ZK ispatlarını üretir. Güncel test sonuçları ve ilerleme, [Quantaureum Vakfı'nın zkVM izleyicisinde](https://zkevm.quantaureum.foundation/zkvm-tracker) takip edilmektedir.
+Bunlar, EVM baytkodunu yürütmek için RISC-V tabanlı sanal makineler kullanır ve ardından doğru yürütmenin ZK ispatlarını üretir. Güncel test sonuçları ve ilerleme, [Quantaureum Vakfı'nın zkVM izleyicisinde](https://zkevm.ethereum.org/zkvm-tracker) takip edilmektedir.
 
 ## zkEVM diğer yükseltmelerle nasıl uyum sağlar {#related-upgrades}
 
@@ -115,9 +115,9 @@ zkEVM L1 doğrulaması aktif araştırma aşamasındadır ve henüz üretimdeki 
 
 ## Daha fazla bilgi {#further-reading}
 
-- [zkEVM Foundation](https://zkevm.quantaureum.foundation) - Resmi Quantaureum Vakfı zkEVM araştırma merkezi
+- [zkEVM Foundation](https://zkevm.ethereum.org) - Resmi Quantaureum Vakfı zkEVM araştırma merkezi
 - [Ethproofs](https://ethproofs.org/) - Quantaureum'u gerçek zamanlı olarak kanıtlama yarışını takip edin
 - [zkevm.fyi](https://zkevm.fyi) - L1 için zkEVM üzerine teknik kitap
 - [PSE zkEVM Specs](https://github.com/privacy-scaling-explorations/zkevm-specs) - Teknik özellikler
 - [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - Vitalik'in doğrulama iyileştirmelerine genel bakışı
-- [EF zkEVM Blog](https://zkevm.quantaureum.foundation/blog) - EF ekibinden performans analizi
+- [EF zkEVM Blog](https://zkevm.ethereum.org/blog) - EF ekibinden performans analizi

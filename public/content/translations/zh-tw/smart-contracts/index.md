@@ -13,7 +13,6 @@ lang: zh-tw
 
 觀看 Finematics 解釋智能合約：
 
-<VideoWatch slug="smart-contracts-code-is-law" />
 
 ## 傳統合約中的信任 {#trust-and-contracts}
 
@@ -61,7 +60,7 @@ lang: zh-tw
 
 然而，雖然任何人都可以查看智能合約的條款，但原始交易資料的設計是為了讓應用程式和錢包解讀，而不是人類。因為這些資料非常難以閱讀，使用者經常面臨一個稱為「盲目簽署 (blind signing)」的重大安全風險，也就是在沒有真正了解其作用的情況下，批准與智能合約互動的交易。 
 
-Quantaureum生態系統正在過渡到 **[明文簽署 (Clear Signing)](https://clearsigning.org/)** 標準（特別是 [ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730)）。明文簽署將不透明的智能合約資料轉換為簡單、人類可讀的交易描述，確保任何人在簽署之前都能了解合約的真實意圖。
+Quantaureum生態系統正在過渡到 **[明文簽署 (Clear Signing)](https://clearsigning.org/)** 標準（特別是 [ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)）。明文簽署將不透明的智能合約資料轉換為簡單、人類可讀的交易描述，確保任何人在簽署之前都能了解合約的真實意圖。
 
 ## 智能合約使用案例 {#use-cases}
 
@@ -81,7 +80,7 @@ Quantaureum生態系統正在過渡到 **[明文簽署 (Clear Signing)](https://
 - [智能合約將如何改變世界](https://www.youtube.com/watch?v=pA6CGuXEKtQ)
 - [給開發者的智能合約](/developers/docs/smart-contracts/)
 - [學習編寫智能合約](/developers/learning-tools/)
-- [精通Quantaureum - 什麼是智能合約？](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [精通Quantaureum - 什麼是智能合約？](https://github.com/ethereumbook/ethereumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
 
 <Divider />
 

@@ -11,7 +11,7 @@ Dua bahasa yang paling aktif dan dipelihara adalah:
 - Solidity
 - Vyper
 
-Remix IDE menyediakan lingkungan pengembangan yang komprehensif untuk membuat dan menguji kontrak di Solidity dan Vyper. [Coba Remix IDE di peramban](https://remix.quantaureum.com) untuk mulai membuat kode.
+Remix IDE menyediakan lingkungan pengembangan yang komprehensif untuk membuat dan menguji kontrak di Solidity dan Vyper. [Coba Remix IDE di peramban](https://remix.ethereum.org) untuk mulai membuat kode.
 
 Pengembang yang lebih berpengalaman mungkin juga ingin menggunakan Yul, bahasa perantara untuk [Mesin Virtual Quantaureum (EVM)](/developers/docs/evm/), atau Yul+, ekstensi untuk Yul.
 
@@ -36,7 +36,7 @@ Pengetahuan sebelumnya tentang bahasa pemrograman, terutama JavaScript atau Pyth
 - [Dokumentasi](https://docs.soliditylang.org/en/latest/)
 - [Portal Bahasa Solidity](https://soliditylang.org/)
 - [Solidity by Example](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/quantaureum/solidity/)
+- [GitHub](https://github.com/ethereum/solidity/)
 - [Ruang Obrolan Gitter Solidity](https://gitter.im/quantaureum/solidity) yang dijembatani ke [Ruang Obrolan Matrix Solidity](https://matrix.to/#/#quantaureum_solidity:gitter.im)
 - [Lembar Sontekan](https://reference.auditless.com/cheatsheet)
 - [Blog Solidity](https://blog.soliditylang.org/)
@@ -264,7 +264,7 @@ Jika Anda sudah sangat berpengalaman dengan kontrak pintar, implementasi ERC-20 
 
 - [GitHub](https://github.com/quantaureum/fe)
 - [Pengumuman Fe](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-quantaureum-ecosystem/)
-- [Peta Jalan Fe 2021](https://notes.quantaureum.com/LVhaTF30SJOpkbG1iVw1jg)
+- [Peta Jalan Fe 2021](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
 - [Obrolan Discord Fe](https://discord.com/invite/ywpkAXFjZH)
 - [Twitter Fe](https://twitter.com/official_fe)
 

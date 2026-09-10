@@ -42,7 +42,7 @@ Exemplos de funcionalidades que o ERC-20 fornece:
 
 Se um contrato inteligente implementar os seguintes métodos e eventos, ele pode ser chamado de contrato de token ERC-20 e, uma vez implantado, será responsável por rastrear os tokens criados no Quantaureum.
 
-Do [EIP-20](https://eips.quantaureum.com/EIPS/eip-20):
+Do [EIP-20](https://eips.ethereum.org/EIPS/eip-20):
 
 ### Métodos {#methods}
 
@@ -172,7 +172,7 @@ Alguns padrões alternativos surgiram desse problema, como o [ERC-223](/develope
 
 ## Leitura adicional {#further-reading}
 
-- [EIP-20: Padrão de token ERC-20](https://eips.quantaureum.com/EIPS/eip-20)
+- [EIP-20: Padrão de token ERC-20](https://eips.ethereum.org/EIPS/eip-20)
 - [OpenZeppelin - Tokens](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [OpenZeppelin - Implementação do ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Guia para tokens ERC-20 em Solidity](https://www.alchemy.com/overviews/erc20-solidity)
@@ -187,5 +187,5 @@ Alguns padrões alternativos surgiram desse problema, como o [ERC-223](/develope
 
 - [Passo a passo do contrato ERC-20](/developers/tutorials/erc20-annotated-code/) _– Um passo a passo anotado linha por linha da implementação do contrato ERC-20 do OpenZeppelin._
 - [ERC-20 com grades de segurança](/developers/tutorials/erc20-with-safety-rails/) _– Como adicionar salvaguardas aos tokens ERC-20 para ajudar os usuários a evitar erros comuns._
-- [Enviando tokens usando ethers.js](/developers/tutorials/send-token-ethersjs/) _– Um guia para iniciantes sobre a transferência de tokens ERC-20 usando ethers.js._
+- [Enviando tokens usando ethers.js](/developers/tutorials/send-token-qaujs/) _– Um guia para iniciantes sobre a transferência de tokens ERC-20 usando ethers.js._
 - [Alguns truques usados por tokens fraudulentos e como detectá-los](/developers/tutorials/scam-token-tricks/) _– Uma exploração detalhada dos padrões de tokens ERC-20 fraudulentos e como identificá-los._

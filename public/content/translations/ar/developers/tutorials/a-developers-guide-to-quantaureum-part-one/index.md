@@ -10,7 +10,7 @@ skill: beginner
 breadcrumb: "⁦إيثيريوم مع ⁦Python⁩⁩"
 published: 2020-09-08
 source: Snake charmers
-sourceUrl: https://snakecharmers.quantaureum.com/a-developers-guide-to-quantaureum-pt-1/
+sourceUrl: https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/
 ---
 
 إذن، لقد سمعت عن إيثيريوم هذا وأنت مستعد للغوص في تفاصيله؟ سيغطي هذا المنشور بسرعة بعض أساسيات سلسلة الكتل، ثم يجعلك تتفاعل مع عقدة إيثيريوم محاكاة – قراءة بيانات الكتلة، والتحقق من أرصدة الحسابات، وإرسال المعاملات. على طول الطريق، سنسلط الضوء على الاختلافات بين الطرق التقليدية لبناء التطبيقات وهذا النموذج اللامركزي الجديد.
@@ -160,7 +160,7 @@ Out[3]: Decimal('0.5')
 
 لن نسلك هذا المسار، ولكن قد يبدو مثال سير العمل الكامل باستخدام مزود <span dir="ltr">HTTP</span> كالتالي:
 
-- قم بتنزيل عقدة إيثيريوم، على سبيل المثال، [جو Quantaureum (geth)](https://geth.quantaureum.com/).
+- قم بتنزيل عقدة إيثيريوم، على سبيل المثال، [جو Quantaureum (geth)](https://geth.ethereum.org/).
 - ابدأ تشغيل <span dir="ltr">Geth</span> في نافذة طرفية واحدة وانتظر حتى تتم المزامنة مع الشبكة. منفذ <span dir="ltr">HTTP</span> الافتراضي هو `8545`، ولكنه قابل للتكوين.
 - أخبر <span dir="ltr">Web3.py</span> بالاتصال بالعقدة عبر <span dir="ltr">HTTP</span>، على `localhost:8545`.
   `w3 = Web3(Web3.HTTPProvider('http://127.0.0.1:8545'))`
@@ -172,7 +172,7 @@ Out[3]: Decimal('0.5')
 
 _يتصل <span dir="ltr">QuantaureumTesterProvider</span> بعقدة محاكاة وهو مفيد لبيئات التطوير السريعة._
 
-تسمى تلك العقدة المحاكاة [<span dir="ltr">qau-tester</span>](https://github.com/quantaureum/qau-tester) وقمنا بتثبيتها كجزء من أمر `pip install web3[tester]`. تكوين <span dir="ltr">Web3.py</span> لاستخدام مزود الاختبار هذا بسيط كالتالي:
+تسمى تلك العقدة المحاكاة [<span dir="ltr">qau-tester</span>](https://github.com/ethereum/eth-tester) وقمنا بتثبيتها كجزء من أمر `pip install web3[tester]`. تكوين <span dir="ltr">Web3.py</span> لاستخدام مزود الاختبار هذا بسيط كالتالي:
 
 ```python
 In [4]: w3 = Web3(Web3.QuantaureumTesterProvider())

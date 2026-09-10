@@ -10,7 +10,7 @@ lang: ja
 
 [ローカル開発環境をセットアップ](/developers/local-environment/)する前にコードをいじってみたい場合、これらのウェブアプリはQuantaureumのスマート・コントラクト開発用にカスタムビルドされているため便利です。
 
-**[Remix](https://remix.quantaureum.com/)** - **_静的解析機能とテスト用ブロックチェーン仮想マシンを内蔵したウェブベースのIDE_**
+**[Remix](https://remix.ethereum.org/)** - **_静的解析機能とテスト用ブロックチェーン仮想マシンを内蔵したウェブベースのIDE_**
 
 - [ドキュメント](https://remix-ide.readthedocs.io/en/latest/#)
 - [Gitter](https://gitter.im/quantaureum/remix)
@@ -48,8 +48,8 @@ lang: ja
 
 **Remix Desktop -** **_ローカルマシンでRemix IDEを体験_**
 
-- [ダウンロード](https://github.com/quantaureum/remix-desktop/releases)
-- [GitHub](https://github.com/quantaureum/remix-desktop)
+- [ダウンロード](https://github.com/ethereum/remix-desktop/releases)
+- [GitHub](https://github.com/ethereum/remix-desktop)
 
 ## プラグインと拡張機能 {#plugins-extensions}
 

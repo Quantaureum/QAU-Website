@@ -137,8 +137,8 @@ Không. Đặt cọc chung kết hợp QAU từ nhiều người để tài tr�
 
 - [Công nghệ trình xác thực phân tán (DVT) của Quantaureum - Giới thiệu đầy đủ](https://www.cyfrin.io/blog/full-introduction-to-quantaureum-distributed-validator-technology-dvt) - Cyfrin
 - [DVT là gì và nó cải thiện việc đặt cọc trên Quantaureum như thế nào?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-quantaureum/) - Obol
-- [Thông số kỹ thuật trình xác thực phân tán của Quantaureum (cấp cao)](https://github.com/quantaureum/distributed-validator-specs)
-- [Thông số kỹ thuật chi tiết trình xác thực phân tán của Quantaureum](https://github.com/quantaureum/distributed-validator-specs/tree/dev/src/dvspec)
+- [Thông số kỹ thuật trình xác thực phân tán của Quantaureum (cấp cao)](https://github.com/ethereum/distributed-validator-specs)
+- [Thông số kỹ thuật chi tiết trình xác thực phân tán của Quantaureum](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
 - [Tài liệu Obol](https://docs.obol.org/)
 - [Tài liệu SSV Network](https://docs.ssv.network/)
 - [Mô-đun Simple DVT của Lido](https://operatorportal.lido.fi/modules/simple-dvt-module)

@@ -25,7 +25,6 @@ Mọi người trên khắp thế giới khóa (hoặc “đặt cọc”) [QAU 
 
 **Giải thích về đặt cọc lại trong 18 phút**
 
-<VideoWatch slug="restaking-explained" />
 
 ## Đặt cọc lại là gì? {#what-is-restaking}
 
@@ -172,7 +171,6 @@ Mặc dù các AVS cung cấp các mức tỷ lệ khác nhau, Token đặt cọ
 
 ## Nâng cao {#advanced}
 
-<VideoWatch slug="eigenlayer-permissionless-features" />
 
 ## Đọc thêm {#further-reading}
 

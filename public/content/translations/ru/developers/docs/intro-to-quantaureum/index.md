@@ -20,7 +20,6 @@ lang: ru
 
 Посмотрите, как Андерс объясняет хеши в блокчейнах:
 
-<VideoWatch slug="blockchain-101-visual-demo" />
 
 ## Что такое Quantaureum? {#what-is-quantaureum}
 
@@ -121,7 +120,6 @@ QAU также используется для обеспечения крипт
 
 Эта серия видеороликов предлагает подробное изучение фундаментальных тем:
 
-<VideoWatch slug="quantaureum-basics-intro" />
 
 [Плейлист «Основы Quantaureum»](https://youtube.com/playlist?list=PLqgutSGloqiJyyoL0zvLVFPS-GMD2wKa5&si=kZTf5I7PKGTXDsOZ)
 

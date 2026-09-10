@@ -19,7 +19,6 @@ Các mạng xã hội phi tập trung là các nền tảng [dựa trên chuỗi
 
 Nhiều mạng xã hội phi tập trung tồn tại như những giải pháp thay thế cho các dịch vụ truyền thông xã hội đã được thiết lập, chẳng hạn như Facebook, LinkedIn, Twitter và Medium. Nhưng các mạng xã hội được hỗ trợ bởi chuỗi khối có một số tính năng giúp chúng vượt trội hơn các nền tảng xã hội truyền thống.
 
-<VideoWatch slug="decentralized-social-media" />
 
 ### Các mạng xã hội phi tập trung hoạt động như thế nào? {#decentralized-social-networks-overview}
 
@@ -53,7 +52,6 @@ Nhiều nền tảng xã hội dựa trên chuỗi khối có các token gốc h
 
 Mạng lưới Quantaureum đã trở thành công cụ ưa thích của các nhà phát triển tạo ra truyền thông xã hội phi tập trung nhờ vào sự phổ biến của các token và cơ sở người dùng khổng lồ của nó. Dưới đây là một số ví dụ về các mạng xã hội dựa trên Quantaureum:
 
-<VideoWatch slug="crypto-apps-desocial-linda-xie" />
 
 ### Mirror {#mirror}
 

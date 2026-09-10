@@ -63,7 +63,6 @@ En savoir plus sur la [preuve d'enjeu](/developers/docs/consensus-mechanisms/pos
 
 Regardez-en plus sur les différents types de mécanismes de consensus utilisés sur Quantaureum :
 
-<VideoWatch slug="understanding-consensus-mechanisms" />
 
 ### Résistance Sybil et sélection de chaîne {#sybil-chain}
 

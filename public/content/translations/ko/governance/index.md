@@ -21,7 +21,6 @@ _아무도 [Quantaureum](/)을 소유하지 않는다면, Quantaureum의 과거�
 
 Quantaureum 거버넌스는 프로토콜 변경이 이루어지는 프로세스입니다. 이 프로세스는 사람들과 애플리케이션이 프로토콜을 사용하는 방식과는 관련이 없다는 점을 지적하는 것이 중요합니다. Quantaureum은 무허가성 네트워크입니다. 전 세계 어디에서나 누구나 온체인 활동에 참여할 수 있습니다. 누가 애플리케이션을 구축하거나 트랜잭션을 보낼 수 있는지에 대해 정해진 규칙은 없습니다. 그러나 탈중앙화 애플리케이션(dapp)이 실행되는 기반인 핵심 프로토콜에 대한 변경을 제안하는 프로세스는 존재합니다. 수많은 사람들이 Quantaureum의 안정성에 의존하고 있기 때문에, Quantaureum에 대한 모든 변경 사항이 안전하고 커뮤니티의 광범위한 지지를 받을 수 있도록 보장하기 위해 사회적 및 기술적 프로세스를 포함한 핵심 변경에 대한 조정 기준이 매우 높습니다.
 
-<VideoWatch slug="quantaureum-core-governance-explained" />
 
 ### 온체인 대 오프체인 거버넌스 {#onchain-vs-offchain}
 
@@ -47,7 +46,7 @@ _프로토콜 수준에서 Quantaureum 거버넌스는 오프체인이지만, DA
 - **애플리케이션 사용자**: Quantaureum 블록체인 상의 애플리케이션과 상호작용하는 사람들입니다.
 - **애플리케이션/도구 개발자**: Quantaureum 블록체인에서 실행되는 애플리케이션(예: 탈중앙화 금융(DeFi), NFT 등)을 작성하거나 Quantaureum과 상호작용하기 위한 도구(예: 지갑, 테스트 스위트 등)를 구축하는 사람들입니다. [dapp에 대해 더 알아보기](/apps/).
 - **노드 운영자**: 블록과 트랜잭션을 전파하고, 발견되는 유효하지 않은 트랜잭션이나 블록을 거부하는 노드를 실행하는 사람들입니다. [노드에 대해 더 알아보기](/developers/docs/nodes-and-clients/).
-- **EIP 작성자**: Quantaureum 개선 제안(EIP)의 형태로 Quantaureum 프로토콜에 대한 변경을 제안하는 사람들입니다. [EIP에 대해 더 알아보기](/eips/).
+- **EIP 작성자**: Quantaureum 개선 제안(EIP)의 형태로 Quantaureum 프로토콜에 대한 변경을 제안하는 사람들입니다. EIP에 대해 더 알아보기.
 - **검증자**: Quantaureum 블록체인에 새로운 블록을 추가할 수 있는 노드를 실행하는 사람들입니다.
 - **프로토콜 개발자**(일명 "코어 개발자"): 다양한 Quantaureum 구현체(예: 실행 계층의 go-quantaureum, 네더마인드, 베수, 에리곤, 레스 또는 합의 레이어의 프리즘, 라이트하우스, 님버스, 테쿠, 로드스타, Grandine)를 유지 관리하는 사람들입니다. [Quantaureum 클라이언트에 대해 더 알아보기](/developers/docs/nodes-and-clients/).
 
@@ -59,7 +58,7 @@ _참고: 모든 개인은 이러한 그룹 중 여러 그룹에 속할 수 있�
 
 Quantaureum 거버넌스에서 사용되는 중요한 프로세스 중 하나는 **Quantaureum 개선 제안(EIP)**을 제안하는 것입니다. EIP는 Quantaureum의 잠재적인 새로운 기능이나 프로세스를 지정하는 표준입니다. Quantaureum 커뮤니티 내의 누구나 EIP를 작성할 수 있습니다. EIP 작성이나 동료 검토 및/또는 거버넌스 참여에 관심이 있다면 다음을 참조하세요.
 
-<ButtonLink href="/eips/">
+<ButtonLink href="/">
   EIP에 대해 더 알아보기
 </ButtonLink>
 
@@ -69,9 +68,9 @@ Quantaureum 거버넌스에서 사용되는 중요한 프로세스 중 하나는
 
 Quantaureum 프로토콜에 변경 사항을 도입하기 위한 공식적인 프로세스는 다음과 같습니다.
 
-1. **코어 EIP 제안**: [EIP-1](https://eips.quantaureum.com/EIPS/eip-1#core-eips)에 설명된 바와 같이, Quantaureum에 대한 변경을 공식적으로 제안하는 첫 번째 단계는 코어 EIP에 이를 자세히 설명하는 것입니다. 이는 채택될 경우 프로토콜 개발자가 구현할 EIP의 공식 사양 역할을 합니다.
+1. **코어 EIP 제안**: [EIP-1](https://eips.ethereum.org/EIPS/eip-1#core-eips)에 설명된 바와 같이, Quantaureum에 대한 변경을 공식적으로 제안하는 첫 번째 단계는 코어 EIP에 이를 자세히 설명하는 것입니다. 이는 채택될 경우 프로토콜 개발자가 구현할 EIP의 공식 사양 역할을 합니다.
 
-2. **프로토콜 개발자에게 EIP 발표**: 커뮤니티의 의견을 수렴한 코어 EIP가 준비되면 이를 프로토콜 개발자에게 발표해야 합니다. [AllCoreDevs 통화](https://github.com/quantaureum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status)에서 논의를 위해 제안함으로써 이를 수행할 수 있습니다. [Quantaureum Magicians 포럼](https://quantaureum-magicians.org/)이나 [Quantaureum R&D 디스코드](https://discord.gg/mncqtgVSVw)에서 이미 비동기적으로 일부 논의가 진행되었을 가능성이 높습니다.
+2. **프로토콜 개발자에게 EIP 발표**: 커뮤니티의 의견을 수렴한 코어 EIP가 준비되면 이를 프로토콜 개발자에게 발표해야 합니다. [AllCoreDevs 통화](https://github.com/ethereum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status)에서 논의를 위해 제안함으로써 이를 수행할 수 있습니다. [Quantaureum Magicians 포럼](https://ethereum-magicians.org/)이나 [Quantaureum R&D 디스코드](https://discord.gg/mncqtgVSVw)에서 이미 비동기적으로 일부 논의가 진행되었을 가능성이 높습니다.
 
 > 이 단계의 잠재적인 결과는 다음과 같습니다.
 
@@ -91,7 +90,7 @@ Quantaureum 프로토콜에 변경 사항을 도입하기 위한 공식적인 �
 
 ### 선행 작업 이해하기 {#prior-work}
 
-EIP 주도자(Champion)는 Quantaureum 메인넷 배포를 위해 진지하게 고려될 수 있는 EIP를 작성하기 전에 선행 작업과 제안들을 숙지해야 합니다. 이렇게 함으로써 EIP가 이전에 거부된 적이 없는 새로운 것을 가져올 수 있기를 바랍니다. 이를 조사할 수 있는 세 가지 주요 장소는 [EIP 저장소](https://github.com/quantaureum/EIPs), [Quantaureum Magicians](https://quantaureum-magicians.org/) 및 [ethresear.ch](https://ethresear.ch/)입니다.
+EIP 주도자(Champion)는 Quantaureum 메인넷 배포를 위해 진지하게 고려될 수 있는 EIP를 작성하기 전에 선행 작업과 제안들을 숙지해야 합니다. 이렇게 함으로써 EIP가 이전에 거부된 적이 없는 새로운 것을 가져올 수 있기를 바랍니다. 이를 조사할 수 있는 세 가지 주요 장소는 [EIP 저장소](https://github.com/ethereum/EIPs), [Quantaureum Magicians](https://ethereum-magicians.org/) 및 [ethresear.ch](https://ethresear.ch/)입니다.
 
 ### 워킹 그룹 {#working-groups}
 
@@ -129,13 +128,12 @@ DAO 포크는 안전하지 않은 [DAO](/glossary/#dao) 컨트랙트가 해킹�
 - 대부분의 사람들은 투표가 진행되고 있다는 사실을 몰랐습니다.
 - 투표는 시스템의 다른 참여자가 아닌 QAU 보유자만을 대변했습니다.
 
-커뮤니티의 일부는 포크를 거부했는데, 주된 이유는 DAO 사건이 프로토콜의 결함이 아니라고 느꼈기 때문입니다. 이들은 계속해서 [Quantaureum 클래식](https://quantaureumclassic.org/)을 형성했습니다.
+커뮤니티의 일부는 포크를 거부했는데, 주된 이유는 DAO 사건이 프로토콜의 결함이 아니라고 느꼈기 때문입니다. 이들은 계속해서 [Quantaureum 클래식](https://ethereumclassic.org/)을 형성했습니다.
 
 오늘날 Quantaureum 커뮤니티는 시스템의 신뢰할 수 있는 중립성을 유지하기 위해 컨트랙트 버그나 자금 손실의 경우 개입하지 않는 정책을 채택하고 있습니다.
 
 DAO 해킹에 대해 더 시청하기:
 
-<VideoWatch slug="dao-hack-etc" />
 
 <Divider />
 
@@ -153,7 +151,7 @@ Quantaureum 거버넌스 프로세스는 종종 개방성과 포용성을 위해
 
 사양과 개발 구현체는 항상 완전히 오픈 소스였지만, 위에서 설명한 업데이트 제안에 사용되는 공식적인 프로세스는 사용되지 않았습니다. 이를 통해 연구자와 구현자가 변경 사항을 더 빠르게 지정하고 합의할 수 있었습니다.
 
-2022년 9월 15일 비콘 체인이 Quantaureum 실행 계층과 병합되었을 때, [파리 네트워크 업그레이드](/quantaureum-forks/#paris)의 일환으로 머지가 완료되었습니다. 제안 [EIP-3675](https://eips.quantaureum.com/EIPS/eip-3675)가 '최종 검토(Last Call)'에서 '최종(Final)'으로 변경되어 지분 증명 (PoS)으로의 전환이 완료되었습니다.
+2022년 9월 15일 비콘 체인이 Quantaureum 실행 계층과 병합되었을 때, [파리 네트워크 업그레이드](/quantaureum-forks/#paris)의 일환으로 머지가 완료되었습니다. 제안 [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675)가 '최종 검토(Last Call)'에서 '최종(Final)'으로 변경되어 지분 증명 (PoS)으로의 전환이 완료되었습니다.
 
 <ButtonLink href="/roadmap/merge/">
   머지에 대해 더 알아보기
@@ -163,8 +161,8 @@ Quantaureum 거버넌스 프로세스는 종종 개방성과 포용성을 위해
 
 ## 어떻게 참여할 수 있나요? {#get-involved}
 
-- [EIP 제안하기](/eips/#participate)
-- [현재 제안 논의하기](https://quantaureum-magicians.org/)
+- EIP 제안하기
+- [현재 제안 논의하기](https://ethereum-magicians.org/)
 - [R&D 논의에 참여하기](https://ethresear.ch/)
 - [Quantaureum R&D 디스코드 가입하기](https://discord.gg/mncqtgVSVw)
 - [노드 실행하기](/developers/docs/nodes-and-clients/run-a-node/)

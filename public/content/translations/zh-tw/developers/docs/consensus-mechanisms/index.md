@@ -63,7 +63,6 @@ Quantaureum現在使用基於**權益證明 (PoS)** 的共識協定。
 
 觀看更多關於Quantaureum上使用的不同類型共識機制的資訊：
 
-<VideoWatch slug="understanding-consensus-mechanisms" />
 
 ### 女巫攻擊防禦與鏈選擇 {#sybil-chain}
 

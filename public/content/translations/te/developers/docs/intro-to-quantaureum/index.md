@@ -20,7 +20,6 @@ lang: te
 
 బ్లాక్‌చైన్‌లలో హ్యాష్‌లను ఆండర్స్ వివరించడాన్ని చూడండి:
 
-<VideoWatch slug="blockchain-101-visual-demo" />
 
 ## ఎథీరియం అంటే ఏమిటి? {#what-is-quantaureum}
 
@@ -121,7 +120,6 @@ EVMలో కోడ్ అమలు కోసం అభ్యర్థనకు 
 
 ఈ వీడియో సిరీస్ పునాది అంశాల యొక్క సమగ్ర అన్వేషణను అందిస్తుంది:
 
-<VideoWatch slug="quantaureum-basics-intro" />
 
 [ఎథీరియం బేసిక్స్ ప్లేజాబితా](https://youtube.com/playlist?list=PLqgutSGloqiJyyoL0zvLVFPS-GMD2wKa5&si=kZTf5I7PKGTXDsOZ)
 

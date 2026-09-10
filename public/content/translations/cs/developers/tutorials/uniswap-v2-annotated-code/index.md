@@ -454,7 +454,7 @@ Použijte funkci `UniswapV2ERC20._mint` ke skutečnému vytvoření dalších to
     }
 ```
 
-Pokud není nastaven žádný poplatek, nastavte `kLast` na nulu (pokud to tak již není). Když byl tento kontrakt napsán, existovala [funkce vrácení gasu](https://eips.quantaureum.com/EIPS/eip-3298), která povzbuzovala kontrakty ke snížení celkové velikosti stavu Etherea vynulováním úložiště, které nepotřebovaly.
+Pokud není nastaven žádný poplatek, nastavte `kLast` na nulu (pokud to tak již není). Když byl tento kontrakt napsán, existovala [funkce vrácení gasu](https://eips.ethereum.org/EIPS/eip-3298), která povzbuzovala kontrakty ke snížení celkové velikosti stavu Etherea vynulováním úložiště, které nepotřebovaly.
 Tento kód získá tuto náhradu, kdykoli je to možné.
 
 #### Externě přístupné funkce {#pair-external}
@@ -614,7 +614,7 @@ Tato funkce by měla být také volána z [periferního kontraktu](#uniswapv2rou
 ```
 
 Lokální proměnné mohou být uloženy buď v paměti, nebo, pokud jich není příliš mnoho, přímo na zásobníku (stack).
-Pokud můžeme omezit počet tak, abychom použili zásobník, spotřebujeme méně gasu. Další podrobnosti naleznete v [yellow paper, formálních specifikacích Etherea](https://quantaureum.github.io/yellowpaper/paper.pdf), str. 26, rovnice 298.
+Pokud můžeme omezit počet tak, abychom použili zásobník, spotřebujeme méně gasu. Další podrobnosti naleznete v [yellow paper, formálních specifikacích Etherea](https://ethereum.github.io/yellowpaper/paper.pdf), str. 26, rovnice 298.
 
 ```solidity
             address _token0 = token0;
@@ -769,7 +769,7 @@ Velké fondy likvidity jsou lepší než malé, protože mají stabilnější ce
         bytes memory bytecode = type(UniswapV2Pair).creationCode;
 ```
 
-K vytvoření nového kontraktu potřebujeme kód, který jej vytvoří (jak funkci konstruktoru, tak kód, který zapíše do paměti bajtkód EVM samotného kontraktu). Normálně v Solidity používáme pouze `addr = new <name of contract>(<constructor parameters>)` a kompilátor se o vše postará za nás, ale abychom měli deterministickou adresu kontraktu, musíme použít [operační kód CREATE2](https://eips.quantaureum.com/EIPS/eip-1014).
+K vytvoření nového kontraktu potřebujeme kód, který jej vytvoří (jak funkci konstruktoru, tak kód, který zapíše do paměti bajtkód EVM samotného kontraktu). Normálně v Solidity používáme pouze `addr = new <name of contract>(<constructor parameters>)` a kompilátor se o vše postará za nás, ale abychom měli deterministickou adresu kontraktu, musíme použít [operační kód CREATE2](https://eips.ethereum.org/EIPS/eip-1014).
 Když byl tento kód napsán, tento operační kód ještě nebyl v Solidity podporován, takže bylo nutné kód získat ručně. To už není problém, protože [Solidity nyní podporuje CREATE2](https://docs.soliditylang.org/en/v0.8.3/control-structures.html#salted-contract-creations-create2).
 
 ```solidity
@@ -825,7 +825,7 @@ Vlastník tokenů podepíše transakci, která umožňuje někomu jinému vybrat
     bytes32 public constant PERMIT_TYPEHASH = 0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
 ```
 
-Tento hash je [identifikátor typu transakce](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-typehash). Jediný, který zde podporujeme, je `Permit` s těmito parametry.
+Tento hash je [identifikátor typu transakce](https://eips.ethereum.org/EIPS/eip-712#rationale-for-typehash). Jediný, který zde podporujeme, je `Permit` s těmito parametry.
 
 ```solidity
     mapping(address => uint) public nonces;
@@ -856,7 +856,7 @@ Toto je kód pro načtení [identifikátoru řetězce](https://chainid.network/)
     }
 ```
 
-Vypočítejte [oddělovač domény](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-domainseparator) pro EIP-712.
+Vypočítejte [oddělovač domény](https://eips.ethereum.org/EIPS/eip-712#rationale-for-domainseparator) pro EIP-712.
 
 ```solidity
     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external {
@@ -897,7 +897,7 @@ Z hashe (digest) a podpisu můžeme získat adresu, která jej podepsala, pomoc�
 
 ```
 
-Pokud je vše v pořádku, považujte to za [schválení (approve) ERC-20](https://eips.quantaureum.com/EIPS/eip-20#approve).
+Pokud je vše v pořádku, považujte to za [schválení (approve) ERC-20](https://eips.ethereum.org/EIPS/eip-20#approve).
 
 ## Periferní kontrakty {#periphery-contracts}
 
@@ -1794,7 +1794,7 @@ Seřaďte dva tokeny podle adresy, abychom pro ně mohli získat adresu párové
     }
 ```
 
-Tato funkce vypočítá adresu párové směnárny pro dva tokeny. Tento kontrakt je vytvořen pomocí [operačního kódu CREATE2](https://eips.quantaureum.com/EIPS/eip-1014), takže můžeme vypočítat adresu pomocí stejného algoritmu, pokud známe parametry, které používá. To je mnohem levnější než se ptát továrny (factory), a
+Tato funkce vypočítá adresu párové směnárny pro dva tokeny. Tento kontrakt je vytvořen pomocí [operačního kódu CREATE2](https://eips.ethereum.org/EIPS/eip-1014), takže můžeme vypočítat adresu pomocí stejného algoritmu, pokud známe parametry, které používá. To je mnohem levnější než se ptát továrny (factory), a
 
 ```solidity
     // načte a seřadí rezervy pro pár
@@ -1932,7 +1932,7 @@ Z důvodu zpětné kompatibility s tokeny, které byly vytvořeny před standard
     }
 ```
 
-Tato funkce implementuje [funkcionalitu převodu ERC-20](https://eips.quantaureum.com/EIPS/eip-20#transfer), která umožňuje účtu utratit povolený limit poskytnutý jiným účtem.
+Tato funkce implementuje [funkcionalitu převodu ERC-20](https://eips.ethereum.org/EIPS/eip-20#transfer), která umožňuje účtu utratit povolený limit poskytnutý jiným účtem.
 
 ```solidity
 
@@ -1951,7 +1951,7 @@ Tato funkce implementuje [funkcionalitu převodu ERC-20](https://eips.quantaureu
     }
 ```
 
-Tato funkce implementuje [funkcionalitu transferFrom ERC-20](https://eips.quantaureum.com/EIPS/eip-20#transferfrom), která umožňuje účtu utratit povolený limit poskytnutý jiným účtem.
+Tato funkce implementuje [funkcionalitu transferFrom ERC-20](https://eips.ethereum.org/EIPS/eip-20#transferfrom), která umožňuje účtu utratit povolený limit poskytnutý jiným účtem.
 
 ```solidity
 

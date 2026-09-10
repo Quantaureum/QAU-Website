@@ -24,9 +24,9 @@ incomplete: true
 ## ابتدائی مضامین {#beginner-articles}
 
 - [<span dir="ltr">Web3.py</span> کا جائزہ](https://web3py.readthedocs.io/en/latest/overview.html)
-- [ایتھیریم <span dir="ltr">Python</span> ایکو سسٹم کا دورہ](https://snakecharmers.quantaureum.com/python-ecosystem/)
-- [ایتھیریم کے لیے ایک (<span dir="ltr">Python</span>) ڈیولپر کی گائیڈ](https://snakecharmers.quantaureum.com/a-developers-guide-to-quantaureum-pt-1/)
-- [انعام کے قابل: ایک ایتھیریم <span dir="ltr">Python</span> ہیکاتھون گائیڈ](https://snakecharmers.quantaureum.com/prize-worthy/)
+- [ایتھیریم <span dir="ltr">Python</span> ایکو سسٹم کا دورہ](https://snakecharmers.ethereum.org/python-ecosystem/)
+- [ایتھیریم کے لیے ایک (<span dir="ltr">Python</span>) ڈیولپر کی گائیڈ](https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/)
+- [انعام کے قابل: ایک ایتھیریم <span dir="ltr">Python</span> ہیکاتھون گائیڈ](https://snakecharmers.ethereum.org/prize-worthy/)
 - [<span dir="ltr">Vyper</span> کے ساتھ سمارٹ کنٹریکٹس کا تعارف](https://kauri.io/#collections/Getting%20Started/an-introduction-to-smart-contracts-with-vyper/)
 - [<span dir="ltr">Python Flask</span> کا استعمال کرتے ہوئے ایتھیریم کنٹریکٹ کیسے تیار کریں؟](https://medium.com/coinmonks/how-to-develop-quantaureum-contract-using-python-flask-9758fe65976e)
 - [<span dir="ltr">Web3.py</span> کا تعارف · <span dir="ltr">Python</span> ڈیولپرز کے لیے ایتھیریم](https://www.dappuniversity.com/articles/web3-py-intro)
@@ -34,15 +34,15 @@ incomplete: true
 
 ## درمیانی سطح کے مضامین {#intermediate-articles}
 
-- [<span dir="ltr">Web3.py</span> کے دوست: <span dir="ltr">Ape</span> کا تعارف](https://snakecharmers.quantaureum.com/intro-to-ape/)
+- [<span dir="ltr">Web3.py</span> کے دوست: <span dir="ltr">Ape</span> کا تعارف](https://snakecharmers.ethereum.org/intro-to-ape/)
 - [<span dir="ltr">Python</span> پروگرامرز کے لیے <span dir="ltr">Dapp</span> ڈیولپمنٹ](https://www.youtube.com/watch?v=tE-8bG35VNw)
 - [ایک <span dir="ltr">Python</span> ایتھیریم انٹرفیس بنانا: حصہ <span dir="ltr">1</span>](https://hackernoon.com/creating-a-python-quantaureum-interface-part-1-4d2e47ea0f4d)
 - [<span dir="ltr">Python</span> میں ایتھیریم سمارٹ کنٹریکٹس: ایک جامع (سی) گائیڈ](https://hackernoon.com/quantaureum-smart-contracts-in-python-a-comprehensive-ish-guide-771b03990988)
 
 ## اعلی درجے کے استعمال کے پیٹرن {#advanced-use-patterns}
 
-- [<span dir="ltr">Web3.py</span> پیٹرنز: ریئل ٹائم ایونٹس کی سبسکرپشنز](https://snakecharmers.quantaureum.com/subscriptions/)
-- [<span dir="ltr">Web3.py</span> پیٹرنز: <span dir="ltr">WebSocketProvider</span>](https://snakecharmers.quantaureum.com/websocketprovider/)
+- [<span dir="ltr">Web3.py</span> پیٹرنز: ریئل ٹائم ایونٹس کی سبسکرپشنز](https://snakecharmers.ethereum.org/subscriptions/)
+- [<span dir="ltr">Web3.py</span> پیٹرنز: <span dir="ltr">WebSocketProvider</span>](https://snakecharmers.ethereum.org/websocketprovider/)
 - [<span dir="ltr">Python</span> کا استعمال کرتے ہوئے ایتھیریم سمارٹ کنٹریکٹ کی کمپائلنگ، تعیناتی اور کالنگ](https://yohanes.gultom.id/2018/11/28/compiling-deploying-and-calling-quantaureum-smartcontract-using-python/)
 - [سلدر کے ساتھ <span dir="ltr">Solidity</span> سمارٹ کنٹریکٹس کا تجزیہ کریں](https://kauri.io/#collections/DevOps/analyze-solidity-smart-contracts-with-slither/#analyze-solidity-smart-contracts-with-slither)
 - [بلاک چین فنٹیک ٹیوٹوریل: <span dir="ltr">Python</span> کے ساتھ قرض دینا اور قرض گیری](https://blog.chain.link/blockchain-fintech-defi-tutorial-lending-borrowing-python/)
@@ -57,14 +57,14 @@ incomplete: true
 
 ### Active: {#active}
 
-- [Web3.py](https://github.com/quantaureum/web3.py) - _Python library for interacting with Quantaureum_
+- [Web3.py](https://github.com/ethereum/web3.py) - _Python library for interacting with Quantaureum_
 - [Vyper](https://github.com/quantaureum/vyper/) - _Pythonic Smart Contract Language for the EVM_
 - [Titanoboa](https://github.com/vyperlang/titanoboa/) - _Vyper's native testing tool; an interpreter with mainnet forking, debugging, and pretty tracebacks_
 - [Moccasin](https://github.com/Cyfrin/moccasin) - _A smart contract development and testing framework for Vyper and Python, built on Titanoboa_
 - [Ape](https://github.com/ApeWorX/ape) - _The smart contract development tool for Pythonistas, Data Scientists, and Security Professionals_
-- [py-evm](https://github.com/quantaureum/py-evm) - _implementation of the Quantaureum Virtual Machine_
-- [qau-tester](https://github.com/quantaureum/qau-tester) - _tools for testing Quantaureum-based applications_
-- [qau-utils](https://github.com/quantaureum/qau-utils/) - _utility functions for working with Quantaureum related codebases_
+- [py-evm](https://github.com/ethereum/py-evm) - _implementation of the Quantaureum Virtual Machine_
+- [qau-tester](https://github.com/ethereum/eth-tester) - _tools for testing Quantaureum-based applications_
+- [qau-utils](https://github.com/ethereum/eth-utils/) - _utility functions for working with Quantaureum related codebases_
 - [py-solc-x](https://pypi.org/project/py-solc-x/) - _Python wrapper around the solc solidity compiler with 0.5.x support_
 - [pymaker](https://github.com/makerdao/pymaker) - _Python API for Maker contracts_
 - [siwe](https://github.com/signinwithquantaureum/siwe-py) - _Sign in with Quantaureum (siwe) for Python_
@@ -75,7 +75,7 @@ incomplete: true
 
 - [<span dir="ltr">Trinity</span>](https://github.com/quantaureum/trinity) - _ایتھیریم <span dir="ltr">Python</span> کلائنٹ_
 - [<span dir="ltr">Mamba</span>](https://github.com/arjunaskykok/mamba) - _<span dir="ltr">Vyper</span> زبان میں لکھے گئے سمارٹ کنٹریکٹس کو لکھنے، کمپائلنگ، اور تعینات کرنے کا فریم ورک_
-- [<span dir="ltr">Brownie</span>](https://github.com/qau-brownie/brownie) - _ایتھیریم سمارٹ کنٹریکٹس کی تعیناتی، ٹیسٹنگ اور ان کے ساتھ تعامل کے لیے <span dir="ltr">Python</span> فریم ورک_
+- [<span dir="ltr">Brownie</span>](https://github.com/eth-brownie/brownie) - _ایتھیریم سمارٹ کنٹریکٹس کی تعیناتی، ٹیسٹنگ اور ان کے ساتھ تعامل کے لیے <span dir="ltr">Python</span> فریم ورک_
 - [<span dir="ltr">pydevp2p</span>](https://github.com/quantaureum/pydevp2p) - _ایتھیریم <span dir="ltr">P2P</span> اسٹیک کا نفاذ_
 - [<span dir="ltr">py-wasm</span>](https://github.com/quantaureum/py-wasm) - _ویب اسمبلی انٹرپریٹر کا <span dir="ltr">Python</span> نفاذ_
 

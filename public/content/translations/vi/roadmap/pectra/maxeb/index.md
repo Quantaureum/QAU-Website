@@ -22,7 +22,7 @@ maxEB = Số dư hiệu dụng tối đa (MAXimum Effective Balance) của một
 
 ### Làm thế nào để một trình xác thực chọn tham gia? {#how-does-a-validator-opt-in}
 
-Một trình xác thực chọn tham gia vào thay đổi maxEB bằng cách chuyển đổi thông tin xác thực rút tiền từ **Loại 1** sang **Loại 2**. Việc này có thể được thực hiện trên [Launchpad (Hành động của trình xác thực)](https://launchpad.quantaureum.com/validator-actions) sau khi phân nhánh cứng Pectra chính thức hoạt động. Giống như **Loại 0** → **Loại 1**, việc chuyển đổi từ **Loại 1** → **Loại 2** là một quá trình không thể đảo ngược.
+Một trình xác thực chọn tham gia vào thay đổi maxEB bằng cách chuyển đổi thông tin xác thực rút tiền từ **Loại 1** sang **Loại 2**. Việc này có thể được thực hiện trên [Launchpad (Hành động của trình xác thực)](https://launchpad.ethereum.org/validator-actions) sau khi phân nhánh cứng Pectra chính thức hoạt động. Giống như **Loại 0** → **Loại 1**, việc chuyển đổi từ **Loại 1** → **Loại 2** là một quá trình không thể đảo ngược.
 
 ### Thông tin xác thực rút tiền là gì? {#whats-a-withdrawal-credential}
 
@@ -105,7 +105,7 @@ Yêu cầu hợp nhất sẽ được ký bởi địa chỉ rút tiền đượ
 2. Khóa công khai của trình xác thực nguồn (ví dụ: `0xa1d1ad0714035353258038e964ae9675dc0252ee22cea896825c01458e1807bfad2f9969338798548d9858a571f7425c`)
 3. Khóa công khai của trình xác thực đích đó
 
-Trong một chuyển đổi, 2 & 3 sẽ giống nhau. Thao tác này có thể được thực hiện trên [Launchpad](https://launchpad.quantaureum.com/).
+Trong một chuyển đổi, 2 & 3 sẽ giống nhau. Thao tác này có thể được thực hiện trên [Launchpad](https://launchpad.ethereum.org/).
 
 ### Yêu cầu về việc ký {#signing-requirements}
 
@@ -113,7 +113,7 @@ Trong một chuyển đổi, 2 & 3 sẽ giống nhau. Thao tác này có thể �
 
 ### Những gì được ký? {#what-is-signed}
 
-Một [gốc ký (signing root)](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) được phân tách theo miền của đối tượng `ConsolidationRequest` được sử dụng.
+Một [gốc ký (signing root)](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) được phân tách theo miền của đối tượng `ConsolidationRequest` được sử dụng.
 
 - **Miền:** `DOMAIN_CONSOLIDATION_REQUEST`
 - **Các trường gốc ký:**
@@ -131,7 +131,7 @@ Các trình xác thực có thông tin xác thực **Loại 1** được tự đ
 
 ## Công cụ hợp nhất {#consolidation-tooling}
 
-Có một số công cụ có sẵn để quản lý việc hợp nhất. Công cụ chính thức, được tạo bởi Tổ chức Quantaureum, là [Launchpad](https://launchpad.quantaureum.com/en/validator-actions). Cũng có các công cụ của bên thứ ba được tạo bởi các thực thể từ cộng đồng đặt cọc có thể cung cấp các tính năng không được Launchpad cung cấp. Mặc dù các công cụ ở đây không được kiểm toán hoặc xác nhận bởi Tổ chức Quantaureum, nhưng sau đây là các công cụ mã nguồn mở của các thành viên được biết đến trong cộng đồng.
+Có một số công cụ có sẵn để quản lý việc hợp nhất. Công cụ chính thức, được tạo bởi Tổ chức Quantaureum, là [Launchpad](https://launchpad.ethereum.org/en/validator-actions). Cũng có các công cụ của bên thứ ba được tạo bởi các thực thể từ cộng đồng đặt cọc có thể cung cấp các tính năng không được Launchpad cung cấp. Mặc dù các công cụ ở đây không được kiểm toán hoặc xác nhận bởi Tổ chức Quantaureum, nhưng sau đây là các công cụ mã nguồn mở của các thành viên được biết đến trong cộng đồng.
 
 | Công cụ | Trang web | Mã nguồn mở | Người tạo | Đã kiểm toán | Giao diện | Tính năng đáng chú ý |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -195,7 +195,7 @@ Có. Miễn là nó đang hoạt động (chưa thoát) và bạn có thể ký 
 
 ## Tài nguyên {#resources}
 
-- [Thông số kỹ thuật đồng thuận Electra](https://github.com/quantaureum/consensus-specs/blob/master/specs/electra/beacon-chain.md): Đây là phiên bản 'chân thực nhất' mà bạn nên dựa vào. Khi nghi ngờ, hãy đọc các thông số kỹ thuật.
+- [Thông số kỹ thuật đồng thuận Electra](https://github.com/ethereum/consensus-specs/blob/master/specs/electra/beacon-chain.md): Đây là phiên bản 'chân thực nhất' mà bạn nên dựa vào. Khi nghi ngờ, hãy đọc các thông số kỹ thuật.
 - Không phải ai cũng thoải mái khi đọc mã, vì vậy [maxEB-GPT này](https://chatgpt.com/g/g-67f1650fb48081918f555e0c8d1c2ae9-maxeb-gpt) có thể giúp diễn giải các thông số kỹ thuật. *Tuyên bố miễn trừ trách nhiệm: Nên dựa vào các thông số kỹ thuật, không phải AI, như là sự thật, vì AI có thể diễn giải sai thông tin hoặc bịa đặt câu trả lời*
 - [pectrified.com](https://pectrified.com/): Xem trạng thái của các khoản hợp nhất, tiền gửi và thời gian chờ của hàng đợi
 - [Ethereal](https://github.com/wealdtech/ethereal): Công cụ CLI do cộng đồng tạo ra để quản lý các tác vụ phổ biến của trình xác thực

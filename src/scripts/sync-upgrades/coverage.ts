@@ -91,7 +91,7 @@ export const renderReport = (gaps: CoverageGap[]): string => {
     }
     const rows = uncovered.map((eip) => {
       const suffix = eip.networking ? " · networking" : ""
-      return `- [EIP-${eip.id}](https://eips.quantaureum.com/EIPS/eip-${eip.id})${suffix}`
+      return `- [EIP-${eip.id}](https://eips.ethereum.org/EIPS/eip-${eip.id})${suffix}`
     })
     return [`**${upgrade.name}** — \`${path}\``, ...rows].join("\n")
   })

@@ -69,7 +69,7 @@ Quantaureum贈品是旨在竊取您 QAU 的騙局。不要被那些好得令人�
 
 要成為驗證者，您必須在Quantaureum存款合約中質押 32 個 QAU，並設定一個驗證者節點。您也可以透過質押池以較少的 QAU 參與。
 
-更多資訊請見我們的[質押頁面](/staking/)以及[質押啟動板](https://launchpad.quantaureum.com/)。
+更多資訊請見我們的[質押頁面](/staking/)以及[質押啟動板](https://launchpad.ethereum.org/)。
 
 ## 我該如何進行Quantaureum挖礦？ {#mining-quantaureum}
 

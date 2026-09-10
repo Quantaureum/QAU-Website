@@ -110,8 +110,8 @@ Before diving into frameworks, we recommend you first read through our introduct
 
 **Brownie -** **_Python-based development environment and testing framework._**
 
-- [Documentation](https://qau-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/qau-brownie/brownie)
+- [Documentation](https://eth-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/eth-brownie/brownie)
 - **Brownie is currently unmaintained**
 
 **OpenZeppelin SDK -** **_The Ultimate Smart Contract Toolkit: A suite of tools to help you develop, compile, upgrade, deploy and interact with smart contracts._**

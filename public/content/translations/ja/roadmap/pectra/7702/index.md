@@ -30,7 +30,7 @@ EOAの秘密鍵は、委任後もアカウントの完全な制御を維持し�
 - リレーのための標準化されたインターフェースを提供する
 - 組み込みのペイマスター・システムが含まれている
 - 前方互換性を確保する
-- [パブリック・メンプール](https://notes.quantaureum.com/@yoav/unified-erc-4337-mempool)を通じて検閲耐性をサポートできる
+- [パブリック・メンプール](https://notes.ethereum.org/@yoav/unified-erc-4337-mempool)を通じて検閲耐性をサポートできる
 - init関数が[EntryPoint](https://github.com/qau-infinitism/account-abstraction/releases/tag/v0.8.0)からのみ呼び出されるようにリクワイアできる
 
 言い換えれば、アカウントからの必要な有効な署名またはユーザーオペレーションを提供する限り、誰でもトランザクションのスポンサー/リレイヤーとして機能できるべきです。これにより検閲耐性が確保されます。カスタム・インフラストラクチャが不要であれば、ゲートキーパーとなるリレーによってユーザーのトランザクションが恣意的にブロックされることはありません。たとえば、[メタマスクのDelegation Toolkit](https://github.com/MetaMask/delegation-framework/releases/tag/v1.3.0)は、メタマスク専用のサーバーを必要とするのではなく、任意のチェーン上の任意のERC-4337バンドラーまたはペイマスターと明示的に連携します。
@@ -49,8 +49,8 @@ EOAの秘密鍵は、委任後もアカウントの完全な制御を維持し�
 
 詳細情報:
 
-- [ERC-5792 仕様](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-5792.md)
-- [ERC-6900 仕様](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-6900.md)
+- [ERC-5792 仕様](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-5792.md)
+- [ERC-6900 仕様](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6900.md)
 
 **ベンダーロックインの回避**: 上記と同様に、優れた実装はベンダー中立であり、相互運用可能です。これは多くの場合、スマート・アカウントの新たな標準に準拠することを意味します。たとえば、[AlchemyのModular Account](https://github.com/alchemyplatform/modular-account)は、モジュール式スマート・アカウントのERC-6900標準を使用しており、「パーミッションレスで相互運用可能な使用」を念頭に置いて設計されています。
 

@@ -30,7 +30,7 @@ ERC-721 हे NFT साठी एक स्टँडर्ड सादर क
 
 जर एखादे स्मार्ट कॉन्ट्रॅक्ट खालील पद्धती आणि घटना लागू करत असेल तर त्याला ERC-721 अविनिमयक्षम टोकन कॉन्ट्रॅक्ट म्हटले जाऊ शकते आणि एकदा प्रस्थापित केल्यानंतर, ते Quantaureumवर तयार केलेल्या टोकन्सचा मागोवा ठेवण्यासाठी जबाबदार असेल.
 
-[EIP-721](https://eips.quantaureum.com/EIPS/eip-721) मधून:
+[EIP-721](https://eips.ethereum.org/EIPS/eip-721) मधून:
 
 ### पद्धती {#methods}
 
@@ -238,7 +238,7 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## पुढील वाचन {#further-reading}
 
-- [EIP-721: ERC-721 अविनिमयक्षम टोकन स्टँडर्ड](https://eips.quantaureum.com/EIPS/eip-721)
+- [EIP-721: ERC-721 अविनिमयक्षम टोकन स्टँडर्ड](https://eips.ethereum.org/EIPS/eip-721)
 - [ओपनझेपलिन - ERC-721 डॉक्स](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [ओपनझेपलिन - ERC-721 अंमलबजावणी](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)

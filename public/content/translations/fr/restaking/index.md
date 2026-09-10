@@ -25,7 +25,6 @@ Le restaking est une technologie conçue pour permettre aux [stakers](/staking/)
 
 **Le restaking expliqué en 18 minutes**
 
-<VideoWatch slug="restaking-explained" />
 
 ## Qu'est-ce que le restaking ? {#what-is-restaking}
 
@@ -172,7 +171,6 @@ Bien que les AVS offrent des taux différents, les jetons de restaking liquide (
 
 ## Avancé {#advanced}
 
-<VideoWatch slug="eigenlayer-permissionless-features" />
 
 ## Lectures complémentaires {#further-reading}
 

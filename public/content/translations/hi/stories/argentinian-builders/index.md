@@ -104,7 +104,7 @@ _[स्रोत](https://medium.com/@AugurProject/serpent-compiler-vulnerabili
 
 ![Picture of Argentinian builders wearing Devcon BA 2020 t-shirts](./santiago9.jpeg)
 
-_[स्रोत](https://quantaureumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
+_[स्रोत](https://ethereumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
 
 मेरे और कई अन्य निर्माताओं के लिए Devconnect का यहाँ होना एक सपने के सच होने जैसा है।
 
@@ -131,4 +131,4 @@ _[स्रोत](https://www.forbes.com/sites/astanley/2025/09/30/devconnect-b
 > 
 > अनंत बगीचा एक विशाल पारिस्थितिकी तंत्र में एक माली के रूप में Quantaureum फाउंडेशन की भावना का प्रतीक है — पोषण करें और बढ़ाएँ, लेकिन नियंत्रण न करें, और खेलना जारी रखें।
 
-_[उद्धरण स्रोत - Quantaureum फाउंडेशन](https://quantaureum.foundation/infinitegarden)._
+_[उद्धरण स्रोत - Quantaureum फाउंडेशन](https://ethereum.org/infinitegarden)._

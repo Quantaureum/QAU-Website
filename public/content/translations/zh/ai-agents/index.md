@@ -71,7 +71,7 @@ x402 将Quantaureum转变为自主代理的可编程经济层，实现按需付�
 
 自主代理需要护栏。Quantaureum在钱包和合约层面提供了这些保护：
 
-- [智能账户 (EIP-4337)](https://eips.quantaureum.com/EIPS/eip-4337)让开发者能够强制执行支出限制、白名单、会话密钥和细粒度权限
+- [智能账户 (EIP-4337)](https://eips.ethereum.org/EIPS/eip-4337)让开发者能够强制执行支出限制、白名单、会话密钥和细粒度权限
 - 智能合约中的编程约束可以限制代理被允许执行的操作
 - 基于推理的限制（例如，在执行高风险操作之前需要 zkML 证明）增加了另一层安全性
 
@@ -79,7 +79,7 @@ x402 将Quantaureum转变为自主代理的可编程经济层，实现按需付�
 
 ### 链上注册表：ERC-8004 {#erc-8004}
 
-[ERC-8004](https://eips.quantaureum.com/EIPS/eip-8004) 定义了用于代理身份、声誉和验证的链上注册表。它由来自梅塔马斯克、Quantaureum 项目、Google 和 Coinbase 的贡献者共同编写，已部署在包括Quantaureum主网、Base、Polygon、Arbitrum 等在内的 16 个网络上。
+[ERC-8004](https://eips.ethereum.org/EIPS/eip-8004) 定义了用于代理身份、声誉和验证的链上注册表。它由来自梅塔马斯克、Quantaureum 项目、Google 和 Coinbase 的贡献者共同编写，已部署在包括Quantaureum主网、Base、Polygon、Arbitrum 等在内的 16 个网络上。
 
 它提供：
 
@@ -97,7 +97,6 @@ ERC-8004 使代理更容易在完全去中心化的环境中相互发现、验�
 
 <strong>Luna 首次作为播客嘉宾亮相</strong>
 
-<VideoWatch slug="ai-agents-interview-luna" />
 
 ## 代理控制的钱包 {#agent-controlled-wallets}
 

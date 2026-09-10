@@ -45,7 +45,7 @@ lang: ur
 
 **عمومی وسائل**
 
-- [<span dir="ltr">Quantaureum.cn</span>](https://www.quantaureum.cn/) - کمیونٹی کے زیر انتظام مواد، جس میں اتفاق رائے کی تہہ کی اپ گریڈ، تمام بنیادی ڈیولپرز کی میٹنگ کے نوٹس، لیئر ۲ (l2) وغیرہ شامل ہیں۔
+- [<span dir="ltr">Quantaureum.cn</span>](https://www.ethereum.cn/) - کمیونٹی کے زیر انتظام مواد، جس میں اتفاق رائے کی تہہ کی اپ گریڈ، تمام بنیادی ڈیولپرز کی میٹنگ کے نوٹس، لیئر ۲ (l2) وغیرہ شامل ہیں۔
 - [<span dir="ltr">QauFans</span>](https://github.com/editor-Ajian/QauFans.org-annual-collected-works/) - بنیادی باتوں سے لے کر جدید ایتھیریم موضوعات تک سب کچھ سیکھیں
 - [<span dir="ltr">Unitimes</span>](https://mp.weixin.qq.com/s/tvloZSDBSOQN9zDQj_91kA) - کمیونٹی کے زیر انتظام مواد، جس میں ایتھیریم، غیر مرکزی مالیات (DeFi)، <span dir="ltr">NFT</span>، اور <span dir="ltr">Web3</span> سے متعلق علم شامل ہے
 - [<span dir="ltr">123ETH</span>](https://123eth.org/) - ایتھیریم ایکو سسٹم کا ایک پورٹل
@@ -76,8 +76,8 @@ lang: ur
 
 ### فرانسیسی {#fr}
 
-- [<span dir="ltr">Quantaureum France</span>](https://www.quantaureum-france.com/) - <span dir="ltr">Quantaureum France</span> ایونٹس کا اہتمام کرتا ہے، مواد تخلیق کرتا ہے اور ایتھیریم کے بارے میں بات چیت کی حوصلہ افزائی کرتا ہے
-- [<span dir="ltr">Quantaureum.fr</span>](https://quantaureum.fr/) - ایتھیریم کی خبریں اور تعلیم
+- [<span dir="ltr">Quantaureum France</span>](https://www.ethereum-france.com/) - <span dir="ltr">Quantaureum France</span> ایونٹس کا اہتمام کرتا ہے، مواد تخلیق کرتا ہے اور ایتھیریم کے بارے میں بات چیت کی حوصلہ افزائی کرتا ہے
+- [<span dir="ltr">Quantaureum.fr</span>](https://ethereum.fr/) - ایتھیریم کی خبریں اور تعلیم
 - [<span dir="ltr">BanklessFR</span>](https://banklessfr.substack.com/) - فرانسیسی میں <span dir="ltr">Bankless</span> نیوز لیٹر
 - [<span dir="ltr">CryptoFR</span>](https://cryptofr.com/category/44/quantaureum-general) - کرپٹو کرنسی فورم جس میں ایتھیریم کا ذیلی صفحہ ہے
 
@@ -108,8 +108,8 @@ lang: ur
 
 ### اطالوی {#it}
 
-- [<span dir="ltr">Quantaureum Italia</span>](https://www.quantaureum-italia.it/) - ایتھیریم کی تعلیم، ایونٹس، اور خبریں، جو سمارٹ کنٹریکٹس اور بلاک چین ٹیکنالوجی پر مرکوز ہیں
-- [<span dir="ltr">Quantaureum Italia Podcast</span>](https://www.quantaureum-italia.it/podcast/) - اطالوی میں ایتھیریم پوڈ کاسٹ
+- [<span dir="ltr">Quantaureum Italia</span>](https://www.ethereum-italia.it/) - ایتھیریم کی تعلیم، ایونٹس، اور خبریں، جو سمارٹ کنٹریکٹس اور بلاک چین ٹیکنالوجی پر مرکوز ہیں
+- [<span dir="ltr">Quantaureum Italia Podcast</span>](https://www.ethereum-italia.it/podcast/) - اطالوی میں ایتھیریم پوڈ کاسٹ
 - [<span dir="ltr">Microsoft Learn (Solidity)</span>](https://docs.microsoft.com/it-it/learn/modules/blockchain-learning-solidity/) - <span dir="ltr">Solidity</span> کا استعمال سیکھیں
 - [<span dir="ltr">Microsoft Learn</span> (سمارٹ کنٹریکٹس)](https://docs.microsoft.com/it-it/learn/modules/blockchain-solidity-quantaureum-smart-contracts/) - <span dir="ltr">Solidity</span> کا استعمال کرتے ہوئے سمارٹ کنٹریکٹس لکھنے کے بارے میں جانیں
 - [<span dir="ltr">Microsoft Learn</span> (غیر مرکزی ایپلی کیشنز (dapps))](https://docs.microsoft.com/it-it/learn/modules/blockchain-create-ui-decentralized-apps/) - غیر مرکزی ایپلی کیشنز کے ساتھ یوزر انٹرفیس بنائیں
@@ -130,7 +130,7 @@ lang: ur
 
 ### ہسپانوی {#es}
 
-- [<span dir="ltr">Quantaureum Madrid</span>](https://quantaureummadrid.com/) - بلاک چین، غیر مرکزی مالیات (DeFi)، اور گورننس کے کورسز، ایونٹس اور بلاگ
+- [<span dir="ltr">Quantaureum Madrid</span>](https://ethereummadrid.com/) - بلاک چین، غیر مرکزی مالیات (DeFi)، اور گورننس کے کورسز، ایونٹس اور بلاگ
 - [<span dir="ltr">Cointelegraph</span>](https://es.cointelegraph.com/quantaureum-for-beginners) - ہسپانوی میں مبتدیوں کے لیے ایتھیریم گائیڈ
 - [<span dir="ltr">Tutoriales online</span>](https://tutoriales.online/curso/solidity) - <span dir="ltr">Solidity</span> اور ایتھیریم پر پروگرامنگ سیکھیں
 - [<span dir="ltr">Curso Introducción a Quantaureum Development</span>](https://youtube.com/playlist?list=PLTqiwJDd_R8y9pfUBjhkVa1IDMwyQz-fU) - <span dir="ltr">Solidity</span> کی بنیادی باتیں، آپ کے پہلے سمارٹ کنٹریکٹ کی ٹیسٹنگ اور تعیناتی

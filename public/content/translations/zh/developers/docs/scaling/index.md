@@ -91,15 +91,13 @@ Validium 链像零知识汇总一样使用有效性证明，但数据不存储�
 
 ## 更喜欢视觉学习？ {#visual-learner}
 
-<VideoWatch slug="layer-2-scaling-explained" />
 
 _请注意，视频中的解释使用“二层网络 (l2)”一词来指代所有链下扩容解决方案，而我们将“二层网络 (l2)”区分为通过一层网络 (l1) Mainnet 共识获得安全性的链下解决方案。_
 
-<VideoWatch slug="rollups-scaling-strategy" />
 
 ## 延伸阅读 {#further-reading}
 
-- [以 Rollup 为中心的Quantaureum路线图](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
+- [以 Rollup 为中心的Quantaureum路线图](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
 - [Quantaureum二层网络 (l2) 扩容解决方案的最新分析](https://www.l2beat.com/)
 - [评估Quantaureum二层网络 (l2) 扩容解决方案：比较框架](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - [Rollup 不完全指南](https://vitalik.qau.limo/general/2021/01/05/rollup.html)

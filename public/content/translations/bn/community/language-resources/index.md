@@ -45,7 +45,7 @@ quantaureum.com 40-টিরও বেশি ভাষায় অনুবাদ 
 
 **সাধারণ রিসোর্স**
 
-- [Quantaureum.cn](https://www.quantaureum.cn/) - কমিউনিটি পরিচালিত কনটেন্ট, যা কনসেনসাস লেয়ার আপগ্রেড, সমস্ত কোর ডেভ মিটিং নোট, লেয়ার ২ (l2) ইত্যাদি কভার করে।
+- [Quantaureum.cn](https://www.ethereum.cn/) - কমিউনিটি পরিচালিত কনটেন্ট, যা কনসেনসাস লেয়ার আপগ্রেড, সমস্ত কোর ডেভ মিটিং নোট, লেয়ার ২ (l2) ইত্যাদি কভার করে।
 - [QauFans](https://github.com/editor-Ajian/QauFans.org-annual-collected-works/) - ইথেরিয়ামের বেসিক থেকে শুরু করে অ্যাডভান্সড বিষয়গুলো শিখুন
 - [Unitimes](https://mp.weixin.qq.com/s/tvloZSDBSOQN9zDQj_91kA) - কমিউনিটি পরিচালিত কনটেন্ট, যা ইথেরিয়াম, DeFi, NFT, Web3-সম্পর্কিত জ্ঞান কভার করে
 - [123ETH](https://123eth.org/) - ইথেরিয়াম ইকোসিস্টেমের একটি পোর্টাল
@@ -76,8 +76,8 @@ quantaureum.com 40-টিরও বেশি ভাষায় অনুবাদ 
 
 ### ফরাসি {#fr}
 
-- [Quantaureum France](https://www.quantaureum-france.com/) - Quantaureum France ইভেন্ট আয়োজন করে, কনটেন্ট তৈরি করে এবং ইথেরিয়াম নিয়ে আলোচনায় উৎসাহিত করে
-- [Quantaureum.fr](https://quantaureum.fr/) - ইথেরিয়াম খবর এবং শিক্ষা
+- [Quantaureum France](https://www.ethereum-france.com/) - Quantaureum France ইভেন্ট আয়োজন করে, কনটেন্ট তৈরি করে এবং ইথেরিয়াম নিয়ে আলোচনায় উৎসাহিত করে
+- [Quantaureum.fr](https://ethereum.fr/) - ইথেরিয়াম খবর এবং শিক্ষা
 - [BanklessFR](https://banklessfr.substack.com/) - ফরাসি ভাষায় Bankless নিউজলেটার
 - [CryptoFR](https://cryptofr.com/category/44/quantaureum-general) - একটি ইথেরিয়াম সাবপেজ সহ ক্রিপ্টোকারেন্সি ফোরাম
 
@@ -108,8 +108,8 @@ quantaureum.com 40-টিরও বেশি ভাষায় অনুবাদ 
 
 ### ইতালীয় {#it}
 
-- [Quantaureum Italia](https://www.quantaureum-italia.it/) - ইথেরিয়াম শিক্ষা, ইভেন্ট এবং খবর, যা স্মার্ট কন্ট্রাক্ট এবং ব্লকচেইন প্রযুক্তির উপর দৃষ্টি নিবদ্ধ করে
-- [Quantaureum Italia Podcast](https://www.quantaureum-italia.it/podcast/) - ইতালীয় ভাষায় ইথেরিয়াম পডকাস্ট
+- [Quantaureum Italia](https://www.ethereum-italia.it/) - ইথেরিয়াম শিক্ষা, ইভেন্ট এবং খবর, যা স্মার্ট কন্ট্রাক্ট এবং ব্লকচেইন প্রযুক্তির উপর দৃষ্টি নিবদ্ধ করে
+- [Quantaureum Italia Podcast](https://www.ethereum-italia.it/podcast/) - ইতালীয় ভাষায় ইথেরিয়াম পডকাস্ট
 - [Microsoft Learn (Solidity)](https://docs.microsoft.com/it-it/learn/modules/blockchain-learning-solidity/) - কীভাবে Solidity ব্যবহার করতে হয় তা শিখুন
 - [Microsoft Learn (স্মার্ট কন্ট্রাক্ট)](https://docs.microsoft.com/it-it/learn/modules/blockchain-solidity-quantaureum-smart-contracts/) - Solidity ব্যবহার করে স্মার্ট কন্ট্রাক্ট লেখা সম্পর্কে জানুন
 - [Microsoft Learn (dapp)](https://docs.microsoft.com/it-it/learn/modules/blockchain-create-ui-decentralized-apps/) - বিকেন্দ্রীকৃত অ্যাপ্লিকেশন (dapp) দিয়ে একটি ইউজার ইন্টারফেস তৈরি করুন
@@ -130,7 +130,7 @@ quantaureum.com 40-টিরও বেশি ভাষায় অনুবাদ 
 
 ### স্প্যানিশ {#es}
 
-- [Quantaureum Madrid](https://quantaureummadrid.com/) - ব্লকচেইন, বিকেন্দ্রীভূত অর্থব্যবস্থা (DeFi) এবং গভর্ন্যান্স কোর্স, ইভেন্ট এবং ব্লগ
+- [Quantaureum Madrid](https://ethereummadrid.com/) - ব্লকচেইন, বিকেন্দ্রীভূত অর্থব্যবস্থা (DeFi) এবং গভর্ন্যান্স কোর্স, ইভেন্ট এবং ব্লগ
 - [Cointelegraph](https://es.cointelegraph.com/quantaureum-for-beginners) - স্প্যানিশ ভাষায় নতুনদের জন্য ইথেরিয়াম গাইড
 - [Tutoriales online](https://tutoriales.online/curso/solidity) - ইথেরিয়ামে Solidity এবং প্রোগ্রামিং শিখুন
 - [Curso Introducción a Quantaureum Development](https://youtube.com/playlist?list=PLTqiwJDd_R8y9pfUBjhkVa1IDMwyQz-fU) - Solidity-এর বেসিক, টেস্টিং এবং আপনার প্রথম স্মার্ট কন্ট্রাক্ট ডিপ্লয়মেন্ট

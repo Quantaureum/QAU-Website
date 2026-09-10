@@ -138,9 +138,9 @@ Kualitas alat yang digunakan dalam menjalankan pengujian unit untuk kontrak pint
 
 Kerangka kerja pengujian unit untuk kontrak pintar Solidity hadir dalam berbagai bahasa (sebagian besar JavaScript, Python, dan Rust). Lihat beberapa panduan di bawah ini untuk informasi tentang cara mulai menjalankan pengujian unit dengan berbagai kerangka kerja pengujian:
 
-- **[Menjalankan pengujian unit dengan Brownie](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Menjalankan pengujian unit dengan Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Menjalankan pengujian unit dengan Foundry](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Menjalankan pengujian unit dengan Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Menjalankan pengujian unit dengan Waffle](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Menjalankan pengujian unit dengan Remix](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Menjalankan pengujian unit dengan Ape](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Menjalankan pengujian unit dengan Hardhat](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -190,7 +190,7 @@ Setelah dikonfigurasi dengan benar, alat pengujian properti akan mengeksekusi fu
 
 - **[Analisis statis kontrak pintar dengan Slither](https://github.com/crytic/slither)**
 - **[Analisis statis kontrak pintar dengan Wake](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[Pengujian berbasis properti dengan Brownie](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Pengujian berbasis properti dengan Brownie](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Fuzzing kontrak dengan Foundry](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[Fuzzing kontrak dengan Echidna](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Fuzzing kontrak dengan Wake](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -251,13 +251,13 @@ Perbedaan utamanya adalah bahwa program bug bounty terbuka untuk komunitas penge
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Alat cakupan kode untuk kontrak pintar yang ditulis dalam Solidity._
 
-- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - _Kerangka kerja untuk pengembangan dan pengujian kontrak pintar tingkat lanjut (berbasis Ethers.js)_.
+- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _Kerangka kerja untuk pengembangan dan pengujian kontrak pintar tingkat lanjut (berbasis Ethers.js)_.
 
-- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - _Alat untuk menguji kontrak pintar Solidity. Bekerja di bawah plugin "Solidity Unit Testing" Remix IDE yang digunakan untuk menulis dan menjalankan kasus uji untuk sebuah kontrak._
+- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Alat untuk menguji kontrak pintar Solidity. Bekerja di bawah plugin "Solidity Unit Testing" Remix IDE yang digunakan untuk menulis dan menjalankan kasus uji untuk sebuah kontrak._
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Pustaka asersi untuk pengujian kontrak pintar Quantaureum. Pastikan kontrak Anda berperilaku seperti yang diharapkan!_
 
-- **[Kerangka kerja pengujian unit Brownie](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie memanfaatkan Pytest, kerangka kerja pengujian kaya fitur yang memungkinkan Anda menulis pengujian kecil dengan kode minimal, berskala baik untuk proyek besar, dan sangat dapat diperluas._
+- **[Kerangka kerja pengujian unit Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie memanfaatkan Pytest, kerangka kerja pengujian kaya fitur yang memungkinkan Anda menulis pengujian kecil dengan kode minimal, berskala baik untuk proyek besar, dan sangat dapat diperluas._
 
 - **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry menawarkan Forge, kerangka kerja pengujian Quantaureum yang cepat dan fleksibel yang mampu mengeksekusi pengujian unit sederhana, pemeriksaan pengoptimalan gas, dan fuzzing kontrak._
 

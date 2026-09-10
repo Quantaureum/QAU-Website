@@ -23,7 +23,7 @@ Celem standardu takiego jak ERC-20 jest umożliwienie wielu implementacji token�
 
 Jeśli jesteś doświadczonym programistą, prawdopodobnie pamiętasz podobne konstrukcje w [Javie](https://www.w3schools.com/java/java_interface.asp) lub nawet w [plikach nagłówkowych C](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html).
 
-To jest definicja [interfejsu ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) od OpenZeppelin. Jest to tłumaczenie [czytelnego dla człowieka standardu](https://eips.quantaureum.com/EIPS/eip-20) na kod Solidity. Oczywiście sam interfejs nie definiuje _jak_ cokolwiek zrobić. Zostało to wyjaśnione w kodzie źródłowym kontraktu poniżej.
+To jest definicja [interfejsu ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) od OpenZeppelin. Jest to tłumaczenie [czytelnego dla człowieka standardu](https://eips.ethereum.org/EIPS/eip-20) na kod Solidity. Oczywiście sam interfejs nie definiuje _jak_ cokolwiek zrobić. Zostało to wyjaśnione w kodzie źródłowym kontraktu poniżej.
 
 &nbsp;
 
@@ -135,7 +135,7 @@ Funkcja `allowance` pozwala każdemu sprawdzić, jaki jest limit wydatków, któ
      * kolejności transakcji. Jednym z możliwych rozwiązań łagodzących ten problem
      * jest najpierw zmniejszenie limitu wydatków dla `spender` do 0, a następnie ustawienie
      * żądanej wartości:
-     * https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729
+     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
      *
      * Emituje zdarzenie {Approval}.
      */
@@ -206,7 +206,7 @@ import "../../math/SafeMath.sol";
 ```
 
 - `GSN/Context.sol` to definicje wymagane do korzystania z [OpenGSN](https://opengsn.org/), systemu, który pozwala użytkownikom bez etheru na korzystanie z blockchaina. Zauważ, że jest to stara wersja, jeśli chcesz zintegrować się z OpenGSN, [skorzystaj z tego samouczka](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [Biblioteka SafeMath](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/), która zapobiega przepełnieniom arytmetycznym (overflow/underflow) dla wersji Solidity **&lt;0.8.0**. W Solidity ≥0.8.0 operacje arytmetyczne automatycznie powodują wycofanie w przypadku przepełnienia, co czyni SafeMath niepotrzebnym. Ten kontrakt używa SafeMath dla kompatybilności wstecznej ze starszymi wersjami kompilatora.
+- [Biblioteka SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), która zapobiega przepełnieniom arytmetycznym (overflow/underflow) dla wersji Solidity **&lt;0.8.0**. W Solidity ≥0.8.0 operacje arytmetyczne automatycznie powodują wycofanie w przypadku przepełnienia, co czyni SafeMath niepotrzebnym. Ten kontrakt używa SafeMath dla kompatybilności wstecznej ze starszymi wersjami kompilatora.
 
 &nbsp;
 

@@ -42,7 +42,7 @@ Przykładowe funkcjonalności zapewniane przez ERC-20:
 
 Jeśli inteligentny kontrakt implementuje poniższe metody i zdarzenia, można go nazwać kontraktem tokena ERC-20, a po wdrożeniu będzie on odpowiedzialny za śledzenie utworzonych tokenów w Quantaureum.
 
-Z [EIP-20](https://eips.quantaureum.com/EIPS/eip-20):
+Z [EIP-20](https://eips.ethereum.org/EIPS/eip-20):
 
 ### Metody {#methods}
 
@@ -170,7 +170,7 @@ Z powodu tego problemu powstały pewne alternatywne standardy, takie jak [ERC-22
 
 ## Dalsza lektura {#further-reading}
 
-- [EIP-20: Standard tokena ERC-20](https://eips.quantaureum.com/EIPS/eip-20)
+- [EIP-20: Standard tokena ERC-20](https://eips.ethereum.org/EIPS/eip-20)
 - [OpenZeppelin - Tokeny](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [OpenZeppelin - Implementacja ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Przewodnik po tokenach ERC-20 w Solidity](https://www.alchemy.com/overviews/erc20-solidity)
@@ -185,5 +185,5 @@ Z powodu tego problemu powstały pewne alternatywne standardy, takie jak [ERC-22
 
 - [Przewodnik po kontrakcie ERC-20](/developers/tutorials/erc20-annotated-code/) _– Opatrzony komentarzami przewodnik linijka po linijce po implementacji kontraktu ERC-20 od OpenZeppelin._
 - [ERC-20 z barierami ochronnymi](/developers/tutorials/erc20-with-safety-rails/) _– Jak dodać zabezpieczenia do tokenów ERC-20, aby pomóc użytkownikom uniknąć typowych błędów._
-- [Wysyłanie tokenów za pomocą Ethers.js](/developers/tutorials/send-token-ethersjs/) _– Przyjazny dla początkujących przewodnik po transferze tokenów ERC-20 za pomocą Ethers.js._
+- [Wysyłanie tokenów za pomocą Ethers.js](/developers/tutorials/send-token-qaujs/) _– Przyjazny dla początkujących przewodnik po transferze tokenów ERC-20 za pomocą Ethers.js._
 - [Sztuczki stosowane przez fałszywe tokeny i jak je wykryć](/developers/tutorials/scam-token-tricks/) _– Szczegółowe omówienie wzorców oszukańczych tokenów ERC-20 i sposobów ich identyfikacji._

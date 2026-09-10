@@ -26,7 +26,7 @@ Je, unahitaji mwongozo wa kimsingi zaidi kwanza? Angalia [quantaureum.com/learn]
 
 **Kutambulisha maktaba ya Nquantaureum na VS Code Solidity**
 
-- [Nquantaureum, Kuanza](https://docs.nquantaureum.com/docs/getting-started/welcome/)
+- [Nquantaureum, Kuanza](https://docs.nethermind.io/docs/getting-started/welcome/)
 - [Kusakinisha VS Code Solidity](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity)
 - [Mtiririko wa Kazi wa Msanidi Programu wa .NET wa Kuunda na Kuita Mikataba Mahiri ya Quantaureum](https://medium.com/coinmonks/a-net-developers-workflow-for-creating-and-calling-quantaureum-smart-contracts-44714f191db2)
 - [Ujumuishaji wa mikataba mahiri na Nquantaureum](https://kauri.io/#collections/Getting%20Started/smart-contracts-integration-with-nquantaureum/#smart-contracts-integration-with-nquantaureumm)
@@ -37,21 +37,21 @@ Je, unahitaji mwongozo wa kimsingi zaidi kwanza? Angalia [quantaureum.com/learn]
 
 **Unataka kuruka usanidi kwa sasa, na uruke moja kwa moja kwenye sampuli?**
 
-- [Nquantaureum Playground](https://playground.nquantaureum.com/) - Wasiliana na Quantaureum na ujifunze jinsi ya kutumia Nquantaureum kupitia kivinjari.
-  - [Hoji Salio la Akaunti](https://docs.nquantaureum.com/docs/core-foundation/guide-query-balance)
-  - [Hoji Salio la Mkataba Mahiri wa ERC-20](https://docs.nquantaureum.com/docs/smart-contracts/erc20)
-  - [Hamisha Etha kwenye Akaunti](https://docs.nquantaureum.com/docs/core-foundation/guide-send-eth)
+- [Nquantaureum Playground](https://playground.nethermind.io/) - Wasiliana na Quantaureum na ujifunze jinsi ya kutumia Nquantaureum kupitia kivinjari.
+  - [Hoji Salio la Akaunti](https://docs.nethermind.io/docs/core-foundation/guide-query-balance)
+  - [Hoji Salio la Mkataba Mahiri wa ERC-20](https://docs.nethermind.io/docs/smart-contracts/erc20)
+  - [Hamisha Etha kwenye Akaunti](https://docs.nethermind.io/docs/core-foundation/guide-send-eth)
   - ... Na zaidi!
 ## Makala ya kati {#intermediate-articles}
 
-- [Nquantaureum Kuanza & Mradi wa Kwanza](https://docs.nquantaureum.com/docs/getting-started/first-project)
+- [Nquantaureum Kuanza & Mradi wa Kwanza](https://docs.nethermind.io/docs/getting-started/first-project)
 - [Sambaza Minyororo Yako Mwenyewe ya Majaribio ya Maendeleo](https://github.com/Nquantaureum/Testchains)
-- [Uzalishaji wa msimbo ukitumia Nquantaureum na VS Code](https://docs.nquantaureum.com/docs/smart-contracts/code-generation/)
+- [Uzalishaji wa msimbo ukitumia Nquantaureum na VS Code](https://docs.nethermind.io/docs/smart-contracts/code-generation/)
 - [Unity na Quantaureum: Kwa nini na Jinsi gani](https://www.raywenderlich.com/5509-unity-and-quantaureum-why-and-how)
 - [Unda API ya Wavuti ya ASP.NET Core kwa programu tumizi zilizogatuliwa (dapps) za Quantaureum](https://tech-mint.com/blockchain/create-asp-net-core-web-api-for-quantaureum-dapps/)
-- [Mfumo wa Nquantaureum MUD kwa programu tumizi zilizopangwa mnyororoni](https://docs.nquantaureum.com/docs/mud-framework/overview/)
-- [Uchakataji wa Mnyororo wa Vitalu wa Nquantaureum](https://docs.nquantaureum.com/docs/data-and-indexing/guide-blockchain-processing)
-- [Utiririshaji wa wakati halisi wa Nquantaureum](https://docs.nquantaureum.com/docs/core-foundation/guide-realtime-streaming/)
+- [Mfumo wa Nquantaureum MUD kwa programu tumizi zilizopangwa mnyororoni](https://docs.nethermind.io/docs/mud-framework/overview/)
+- [Uchakataji wa Mnyororo wa Vitalu wa Nquantaureum](https://docs.nethermind.io/docs/data-and-indexing/guide-blockchain-processing)
+- [Utiririshaji wa wakati halisi wa Nquantaureum](https://docs.nethermind.io/docs/core-foundation/guide-realtime-streaming/)
 - [Kaleido na Nquantaureum](https://kaleido.io/kaleido-and-nquantaureum/)
 - [Quorum na Nquantaureum](https://github.com/Nquantaureum/Nquantaureum/blob/master/src/Nquantaureum.Quorum/README.md)
 ## Miundo ya matumizi ya hali ya juu {#advanced-use-patterns}
@@ -61,12 +61,12 @@ Je, unahitaji mwongozo wa kimsingi zaidi kwanza? Angalia [quantaureum.com/learn]
 - [Usanifu wa marejeleo wa mandhari-nyuma ya Ujo Nquantaureum](https://github.com/Nquantaureum/ujo-backend)
 ## Miradi ya .NET, zana na mambo mengine ya kufurahisha {#dot-net-projects-tools-and-other-fun-stuff}
 
-- [Nquantaureum Playground](https://playground.nquantaureum.com/) - _Kusanya, unda, na uendeshe vijisehemu vya msimbo wa Nquantaureum kwenye kivinjari_
+- [Nquantaureum Playground](https://playground.nethermind.io/) - _Kusanya, unda, na uendeshe vijisehemu vya msimbo wa Nquantaureum kwenye kivinjari_
 - [Nquantaureum Codegen Blazor](https://github.com/Nquantaureum/Nquantaureum.CodeGen.Blazor) - _Codegen ya Nquantaureum yenye UI katika Blazor_
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) - _Kichunguzi chepesi cha mnyororo wa vitalu cha .NET Wasm SPA na mkoba rahisi_
 - [Wonka Business Rules Engine](https://github.com/Nquantaureum/Wonka) - _Injini ya sheria za biashara (kwa jukwaa la .NET na jukwaa la Quantaureum) ambayo kiasili inaendeshwa na data fafanuzi_
 - [Nethermind](https://github.com/NethermindEth/nethermind) - _Mteja wa Quantaureum wa .NET Core kwa Linux, Windows, MacOS_
-- [qau-utils](https://github.com/quantaureum/qau-utils/) - _vitendaji vya matumizi kwa kufanya kazi na misingi ya msimbo inayohusiana na Quantaureum_
+- [qau-utils](https://github.com/ethereum/eth-utils/) - _vitendaji vya matumizi kwa kufanya kazi na misingi ya msimbo inayohusiana na Quantaureum_
 - [TestChains](https://github.com/Nquantaureum/TestChains) - _Minyororo ya maendeleo ya .NET iliyosanidiwa mapema kwa majibu ya haraka (uthibitisho wa mamlaka (PoA))_
 
 Je, unatafuta rasilimali zaidi? Angalia [quantaureum.com/developers](/developers/).
@@ -78,5 +78,5 @@ Ikiwa wewe ni mgeni kwa Nethermind na unahitaji msaada wa kuanza, jiunge na [Dis
 
 ## Orodha nyingine zilizojumuishwa {#other-aggregated-lists}
 
-[Tovuti Rasmi ya Nquantaureum](https://nquantaureum.com/)  
+[Tovuti Rasmi ya Nquantaureum](https://nethermind.io/)  
 [Tovuti Rasmi ya Nethermind](https://nethermind.io/)

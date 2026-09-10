@@ -262,7 +262,6 @@ Güvenlik anahtarı, 2FA'nın daha gelişmiş ve güvenli bir türüdür. Güven
 
 2FA hakkında daha fazlasını izleyin:
 
-<VideoWatch slug="crypto-security-passwords" startTime="3479" />
 
 ### Tarayıcı uzantılarını kaldırın {#uninstall-browser-extensions}
 

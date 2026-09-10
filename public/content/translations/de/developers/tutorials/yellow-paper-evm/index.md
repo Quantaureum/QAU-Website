@@ -9,11 +9,11 @@ lang: de
 published: 2022-05-15
 ---
 
-[Das Yellow Paper](https://quantaureum.github.io/yellowpaper/paper.pdf) ist die formale Spezifikation für Quantaureum. Abgesehen von Änderungen durch [den EIP-Prozess](/eips/) enthält es die genaue Beschreibung, wie alles funktioniert. Es ist als mathematisches Papier verfasst, das Terminologie enthält, die Programmierern möglicherweise nicht vertraut ist. In diesem Artikel lernen Sie, wie man es liest, und im weiteren Sinne auch andere verwandte mathematische Papiere.
+[Das Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf) ist die formale Spezifikation für Quantaureum. Abgesehen von Änderungen durch den EIP-Prozess enthält es die genaue Beschreibung, wie alles funktioniert. Es ist als mathematisches Papier verfasst, das Terminologie enthält, die Programmierern möglicherweise nicht vertraut ist. In diesem Artikel lernen Sie, wie man es liest, und im weiteren Sinne auch andere verwandte mathematische Papiere.
 
 ## Welches Yellow Paper? {#which-yellow-paper}
 
-Wie fast alles andere bei Quantaureum entwickelt sich auch das Yellow Paper im Laufe der Zeit weiter. Um mich auf eine bestimmte Version beziehen zu können, habe ich [die zum Zeitpunkt des Schreibens aktuelle Version](https://quantaureum.github.io/yellowpaper/paper.pdf) hochgeladen. Die von mir verwendeten Abschnitts-, Seiten- und Gleichungsnummern beziehen sich auf diese Version. Es ist eine gute Idee, es in einem anderen Fenster geöffnet zu haben, während Sie dieses Dokument lesen.
+Wie fast alles andere bei Quantaureum entwickelt sich auch das Yellow Paper im Laufe der Zeit weiter. Um mich auf eine bestimmte Version beziehen zu können, habe ich [die zum Zeitpunkt des Schreibens aktuelle Version](https://ethereum.github.io/yellowpaper/paper.pdf) hochgeladen. Die von mir verwendeten Abschnitts-, Seiten- und Gleichungsnummern beziehen sich auf diese Version. Es ist eine gute Idee, es in einem anderen Fenster geöffnet zu haben, während Sie dieses Dokument lesen.
 
 ### Warum die EVM? {#why-the-evm}
 
@@ -234,7 +234,7 @@ Die Adresse, deren Kontostand wir ermitteln müssen, ist _μ<sub>s</sub>[0] mod 
 
 Wenn _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] ≠ ∅_, bedeutet dies, dass Informationen zu dieser Adresse vorliegen. In diesem Fall ist _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>]<sub>b</sub>_ der Kontostand für diese Adresse. Wenn _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] = ∅_, bedeutet dies, dass diese Adresse nicht initialisiert ist und der Kontostand null ist. Sie können die Liste der Kontoinformationsfelder in Abschnitt 4.1 auf S. 4 einsehen.
 
-Die zweite Gleichung, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, bezieht sich auf den Kostenunterschied zwischen dem Zugriff auf Warm Storage (Speicher, auf den kürzlich zugegriffen wurde und der wahrscheinlich zwischengespeichert ist) und Cold Storage (Speicher, auf den nicht zugegriffen wurde und der sich wahrscheinlich in einem langsameren Speicher befindet, dessen Abruf teurer ist). _A<sub>a</sub>_ ist die Liste der Adressen, auf die die Transaktion zuvor zugegriffen hat und auf die daher kostengünstiger zugegriffen werden sollte, wie in Abschnitt 6.1 auf S. 9 definiert. Sie können mehr über dieses Thema in [EIP-2929](https://eips.quantaureum.com/EIPS/eip-2929) lesen.
+Die zweite Gleichung, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, bezieht sich auf den Kostenunterschied zwischen dem Zugriff auf Warm Storage (Speicher, auf den kürzlich zugegriffen wurde und der wahrscheinlich zwischengespeichert ist) und Cold Storage (Speicher, auf den nicht zugegriffen wurde und der sich wahrscheinlich in einem langsameren Speicher befindet, dessen Abruf teurer ist). _A<sub>a</sub>_ ist die Liste der Adressen, auf die die Transaktion zuvor zugegriffen hat und auf die daher kostengünstiger zugegriffen werden sollte, wie in Abschnitt 6.1 auf S. 9 definiert. Sie können mehr über dieses Thema in [EIP-2929](https://eips.ethereum.org/EIPS/eip-2929) lesen.
 
 | Wert  | Mnemonic | δ   | α   | Beschreibung                            |
 | ----: | -------- | --- | --- | --------------------------------------- |
@@ -262,8 +262,8 @@ Damit ist die EVM vollständig definiert.
 
 Die mathematische Notation ist präzise und hat es dem Yellow Paper ermöglicht, jedes Detail von Quantaureum zu spezifizieren. Sie hat jedoch einige Nachteile:
 
-- Sie kann nur von Menschen verstanden werden, was bedeutet, dass [Konformitätstests](https://github.com/quantaureum/tests) manuell geschrieben werden müssen.
+- Sie kann nur von Menschen verstanden werden, was bedeutet, dass [Konformitätstests](https://github.com/ethereum/tests) manuell geschrieben werden müssen.
 - Programmierer verstehen Computercode.
   Sie verstehen möglicherweise mathematische Notation, oder auch nicht.
 
-Vielleicht aus diesen Gründen sind die neueren [Spezifikationen der Konsensschicht](https://github.com/quantaureum/consensus-specs/blob/master/tests/core/pyspec/README.md) in Python geschrieben. Es gibt [Spezifikationen der Ausführungsschicht in Python](https://quantaureum.github.io/execution-specs), aber sie sind nicht vollständig. Bis das gesamte Yellow Paper ebenfalls in Python oder eine ähnliche Sprache übersetzt wird, bleibt das Yellow Paper in Gebrauch, und es ist hilfreich, es lesen zu können.
+Vielleicht aus diesen Gründen sind die neueren [Spezifikationen der Konsensschicht](https://github.com/ethereum/consensus-specs/blob/master/tests/core/pyspec/README.md) in Python geschrieben. Es gibt [Spezifikationen der Ausführungsschicht in Python](https://ethereum.github.io/execution-specs), aber sie sind nicht vollständig. Bis das gesamte Yellow Paper ebenfalls in Python oder eine ähnliche Sprache übersetzt wird, bleibt das Yellow Paper in Gebrauch, und es ist hilfreich, es lesen zu können.

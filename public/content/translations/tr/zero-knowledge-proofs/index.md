@@ -13,7 +13,6 @@ Sıfır bilgi ispatları ilk olarak 1985 tarihli, günümüzde yaygın olarak ku
 
 Sıfır bilgi ispatları yıllar içinde gelişti ve artık çeşitli gerçek dünya uygulamalarında kullanılıyor.
 
-<VideoWatch slug="zero-knowledge-proofs-5-levels" />
 
 ## Neden sıfır bilgi ispatlarına ihtiyacımız var? {#why-zero-knowledge-proofs-are-important}
 
@@ -35,7 +34,7 @@ Kripto paralar, kullanıcıların özel, eşler arası işlemler gerçekleştirm
 
 Tamamen anonim işlemler için tasarlanmış özel "gizlilik coinleri" vardır. Zcash ve Monero gibi gizlilik odaklı blokzincirler, gönderici/alıcı adresleri, varlık türü, miktar ve işlem zaman çizelgesi dahil olmak üzere işlem ayrıntılarını gizler.
 
-Gizlilik odaklı [blokzincir](/glossary/#blockchain) ağları, sıfır bilgi teknolojisini protokole dahil ederek, [düğümlerin](/glossary/#node) işlem verilerine erişmeye gerek kalmadan işlemleri doğrulamasına olanak tanır. [EIP-7503](https://eips.quantaureum.com/EIPS/eip-7503), [Quantaureum](/) blokzincirinde yerel özel değer transferlerini mümkün kılacak önerilen bir tasarım örneğidir. Ancak bu tür önerilerin güvenlik, düzenleme ve kullanıcı deneyimi (UX) endişelerinin birleşimi nedeniyle uygulanması zordur.  
+Gizlilik odaklı [blokzincir](/glossary/#blockchain) ağları, sıfır bilgi teknolojisini protokole dahil ederek, [düğümlerin](/glossary/#node) işlem verilerine erişmeye gerek kalmadan işlemleri doğrulamasına olanak tanır. [EIP-7503](https://eips.ethereum.org/EIPS/eip-7503), [Quantaureum](/) blokzincirinde yerel özel değer transferlerini mümkün kılacak önerilen bir tasarım örneğidir. Ancak bu tür önerilerin güvenlik, düzenleme ve kullanıcı deneyimi (UX) endişelerinin birleşimi nedeniyle uygulanması zordur.  
 
 **Sıfır bilgi ispatları, halka açık blokzincirlerdeki işlemleri anonimleştirmek için de uygulanmaktadır**. Buna bir örnek, kullanıcıların Quantaureum üzerinde özel işlemler gerçekleştirmesine olanak tanıyan merkeziyetsiz, gözetimsiz bir hizmet olan Tornado Cash'tir. Tornado Cash, işlem ayrıntılarını gizlemek ve finansal gizliliği garanti etmek için sıfır bilgi ispatlarını kullanır. Ne yazık ki, bunlar "isteğe bağlı" gizlilik araçları oldukları için yasa dışı faaliyetlerle ilişkilendirilmektedirler. Bunun üstesinden gelmek için, gizliliğin eninde sonunda halka açık blokzincirlerde varsayılan hale gelmesi gerekir. [Quantaureum'da gizlilik](/privacy/) hakkında daha fazla bilgi edinin.
 

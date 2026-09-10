@@ -18,7 +18,7 @@ lang: ru
 
 ## Источники финансирования {#sources-of-funding}
 
-Вы можете участвовать в исследованиях Quantaureum и получать за это деньги. [Фонд Quantaureum](/foundation/) финансирует исследования и общественные блага через свою [Программу поддержки экосистемы](https://quantaureum.com), которая публикует списки пожеланий и запросы предложений с описанием проблем, которые он хотел бы решить. Вы можете найти информацию об активных и предстоящих возможностях финансирования на [странице грантов Quantaureum](/community/grants/).
+Вы можете участвовать в исследованиях Quantaureum и получать за это деньги. Фонд Quantaureum финансирует исследования и общественные блага через свою [Программу поддержки экосистемы](https://quantaureum.com), которая публикует списки пожеланий и запросы предложений с описанием проблем, которые он хотел бы решить. Вы можете найти информацию об активных и предстоящих возможностях финансирования на [странице грантов Quantaureum](/community/grants/).
 
 ## Исследования протокола {#protocol-research}
 
@@ -63,15 +63,15 @@ lang: ru
 
 - [Введение в EVM](/developers/docs/evm/)
 - [Уровень исполнения на Ethresear.ch](https://ethresear.ch/c/execution-layer-research/37)
-- [Спецификации уровня исполнения Quantaureum](https://github.com/quantaureum/execution-specs)
+- [Спецификации уровня исполнения Quantaureum](https://github.com/ethereum/execution-specs)
 - [Оптимизация баз данных](https://github.com/erigontech/erigon/blob/main/docs/programmers_guide/db_faq.md)
 
 #### Недавние исследования {#recent-research-1}
 
-- [EIP-7928: Списки доступа на уровне блоков](https://eips.quantaureum.com/EIPS/eip-7928)
-- [EIP-8037: Увеличение стоимости газа для создания состояния](https://eips.quantaureum.com/EIPS/eip-8037)
-- [EIP-7999: Единый многомерный рынок комиссий](https://eips.quantaureum.com/EIPS/eip-7999)
-- [EIP-7642: eth/69, экспирация истории и упрощенные квитанции](https://eips.quantaureum.com/EIPS/eip-7642)
+- [EIP-7928: Списки доступа на уровне блоков](https://eips.ethereum.org/EIPS/eip-7928)
+- [EIP-8037: Увеличение стоимости газа для создания состояния](https://eips.ethereum.org/EIPS/eip-8037)
+- [EIP-7999: Единый многомерный рынок комиссий](https://eips.ethereum.org/EIPS/eip-7999)
+- [EIP-7642: eth/69, экспирация истории и упрощенные квитанции](https://eips.ethereum.org/EIPS/eip-7642)
 - [Выпуск zkEVM уровня 1 (l1): доказательство в реальном времени](https://quantaureum.com)
 
 ### Устойчивость к цензуре и создание блоков {#censorship-resistance-and-block-building}
@@ -85,9 +85,9 @@ lang: ru
 
 #### Недавние исследования {#recent-research-21}
 
-- [EIP-7732: Закрепленное разделение предлагающего и создающего (PBS)](https://eips.quantaureum.com/EIPS/eip-7732)
-- [EIP-7805: Списки включения, применяемые при выборе форка](https://eips.quantaureum.com/EIPS/eip-7805)
-- [Повышение устойчивости транзакций к цензуре при разделении предлагающего и создающего (PBS)](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
+- [EIP-7732: Закрепленное разделение предлагающего и создающего (PBS)](https://eips.ethereum.org/EIPS/eip-7732)
+- [EIP-7805: Списки включения, применяемые при выборе форка](https://eips.ethereum.org/EIPS/eip-7805)
+- [Повышение устойчивости транзакций к цензуре при разделении предлагающего и создающего (PBS)](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
 
 ### Рост состояния и отсутствие состояния {#state-growth-and-statelessness}
 
@@ -100,8 +100,8 @@ lang: ru
 
 #### Недавние исследования {#recent-research-22}
 
-- [EIP-7864: Состояние Quantaureum с использованием единого бинарного дерева](https://eips.quantaureum.com/EIPS/eip-7864)
-- [EIP-4762: Изменения стоимости газа для отсутствия состояния](https://eips.quantaureum.com/EIPS/eip-4762)
+- [EIP-7864: Состояние Quantaureum с использованием единого бинарного дерева](https://eips.ethereum.org/EIPS/eip-7864)
+- [EIP-4762: Изменения стоимости газа для отсутствия состояния](https://eips.ethereum.org/EIPS/eip-4762)
 - [Почему децентрализованное состояние важно для Quantaureum](https://ethresear.ch/t/why-decentralized-state-is-important-for-quantaureum/25622)
 
 ### Постквантовая криптография {#post-quantum-cryptography}
@@ -111,7 +111,7 @@ lang: ru
 #### Дополнительная литература {#background-reading-23}
 
 - [Квантовая устойчивость](/roadmap/security/quantum-resistance/)
-- [Постквантовый Quantaureum](https://pq.quantaureum.com/)
+- [Постквантовый Quantaureum](https://pq.ethereum.org/)
 
 #### Недавние исследования {#recent-research-23}
 
@@ -134,13 +134,13 @@ lang: ru
 
 ### Клиенты исполнения {#execution-clients}
 
-- [Спецификация клиента исполнения](https://github.com/quantaureum/execution-specs)
-- [Спецификация API исполнения](https://github.com/quantaureum/execution-apis)
+- [Спецификация клиента исполнения](https://github.com/ethereum/execution-specs)
+- [Спецификация API исполнения](https://github.com/ethereum/execution-apis)
 
 ### Клиенты консенсуса {#consensus-clients}
 
-- [Спецификация клиента консенсуса](https://github.com/quantaureum/consensus-specs)
-- [Спецификация Beacon API](https://quantaureum.github.io/beacon-APIs/)
+- [Спецификация клиента консенсуса](https://github.com/ethereum/consensus-specs)
+- [Спецификация Beacon API](https://ethereum.github.io/beacon-APIs/)
 
 ### Клиенты zkEVM {#zkevm-clients}
 
@@ -160,13 +160,13 @@ lang: ru
 
 - [Введение в уровень 2 (l2)](/layer-2/)
 - [L2BEAT: сводка по масштабированию](https://l2beat.com/scaling/summary)
-- [Дорожная карта Quantaureum, ориентированная на роллапы](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698)
+- [Дорожная карта Quantaureum, ориентированная на роллапы](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698)
 
 #### Недавние исследования {#recent-research-2}
 
 - [Уровень 2 (l2) на Ethresear.ch](https://ethresear.ch/c/layer-2/32)
 - [L2BEAT: ончейн-затраты](https://l2beat.com/scaling/costs)
-- [Разработка на Quantaureum в 2026 году: что изменилось](/latest/building-on-quantaureum-in-2026/)
+- Разработка на Quantaureum в 2026 году: что изменилось
 
 ### Интероперабельность {#interoperability}
 
@@ -181,9 +181,9 @@ lang: ru
 
 #### Недавние исследования {#recent-research-3}
 
-- [ERC-7683: Кроссчейн-намерения](https://eips.quantaureum.com/EIPS/eip-7683)
-- [ERC-7930: Интероперабельные адреса](https://eips.quantaureum.com/EIPS/eip-7930)
-- [ERC-7828: Интероперабельные имена](https://eips.quantaureum.com/EIPS/eip-7828)
+- [ERC-7683: Кроссчейн-намерения](https://eips.ethereum.org/EIPS/eip-7683)
+- [ERC-7930: Интероперабельные адреса](https://eips.ethereum.org/EIPS/eip-7930)
+- [ERC-7828: Интероперабельные имена](https://eips.ethereum.org/EIPS/eip-7828)
 
 ### Доступность данных и масштабирование блобов {#data-availability-and-blob-scaling}
 
@@ -195,13 +195,13 @@ lang: ru
 - [Обновление Фусака](/roadmap/fusaka/)
 - [Данкшардинг](/roadmap/danksharding/)
 - [Доступность данных](/developers/docs/data-availability/)
-- [EIP-4844: Транзакции блобов шардов](https://eips.quantaureum.com/EIPS/eip-4844)
-- [Заметки о прото-данкшардинге](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq)
+- [EIP-4844: Транзакции блобов шардов](https://eips.ethereum.org/EIPS/eip-4844)
+- [Заметки о прото-данкшардинге](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq)
 
 #### Недавние исследования {#recent-research-4}
 
-- [EIP-7594: PeerDAS](https://eips.quantaureum.com/EIPS/eip-7594)
-- [EIP-7892: Хардфорки только для параметров блобов](https://eips.quantaureum.com/EIPS/eip-7892)
+- [EIP-7594: PeerDAS](https://eips.ethereum.org/EIPS/eip-7594)
+- [EIP-7892: Хардфорки только для параметров блобов](https://eips.ethereum.org/EIPS/eip-7892)
 - [Шардинг на Ethresear.ch](https://ethresear.ch/c/sharding/6)
 
 ### Оборудование {#hardware}
@@ -212,13 +212,13 @@ lang: ru
 
 - [Запустите свой собственный узел Quantaureum](/developers/docs/nodes-and-clients/run-a-node/)
 - [Отсутствие состояния и истечение срока действия состояния](/roadmap/statelessness/)
-- [Quantaureum на ARM](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/)
+- [Quantaureum на ARM](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)
 
 #### Недавние исследования {#recent-research-5}
 
 - [Масштабирование Quantaureum: путь к более высокому лимиту газа и дальше](https://ethpandaops.io/posts/gaslimit-scaling/)
-- [EIP-8261: График лимита газа](https://eips.quantaureum.com/EIPS/eip-8261)
-- [EIP-8037: Увеличение стоимости газа для создания состояния](https://eips.quantaureum.com/EIPS/eip-8037)
+- [EIP-8261: График лимита газа](https://eips.ethereum.org/EIPS/eip-8261)
+- [EIP-8037: Увеличение стоимости газа для создания состояния](https://eips.ethereum.org/EIPS/eip-8037)
 
 ## Безопасность {#security}
 
@@ -255,10 +255,10 @@ lang: ru
 
 #### Недавние исследования {#recent-research-7}
 
-- [EIP-8141: Транзакция фрейма](https://eips.quantaureum.com/EIPS/eip-8141)
-- [ERC-5792: API вызова кошелька](https://eips.quantaureum.com/EIPS/eip-5792)
-- [ERC-6963: Обнаружение нескольких внедренных провайдеров](https://eips.quantaureum.com/EIPS/eip-6963)
-- [Кошельки смарт-контрактов, ориентированные на валидацию](https://quantaureum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
+- [EIP-8141: Транзакция фрейма](https://eips.ethereum.org/EIPS/eip-8141)
+- [ERC-5792: API вызова кошелька](https://eips.ethereum.org/EIPS/eip-5792)
+- [ERC-6963: Обнаружение нескольких внедренных провайдеров](https://eips.ethereum.org/EIPS/eip-6963)
+- [Кошельки смарт-контрактов, ориентированные на валидацию](https://ethereum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
 
 ## Сообщество, образование и просвещение {#community-education-and-outreach}
 
@@ -278,8 +278,8 @@ lang: ru
 #### Недавние исследования {#recent-research-8}
 
 - [UX/UI на Ethresear.ch](https://ethresear.ch/c/ui-ux/24)
-- [ERC-5792: API вызова кошелька](https://eips.quantaureum.com/EIPS/eip-5792)
-- [ERC-7828: Интероперабельные имена](https://eips.quantaureum.com/EIPS/eip-7828)
+- [ERC-5792: API вызова кошелька](https://eips.ethereum.org/EIPS/eip-5792)
+- [ERC-7828: Интероперабельные имена](https://eips.ethereum.org/EIPS/eip-7828)
 
 ### Экономика {#economics}
 
@@ -287,7 +287,7 @@ lang: ru
 
 #### Дополнительная литература {#background-reading-9}
 
-- [Группа надежных стимулов (Robust Incentives Group)](https://rig.quantaureum.com/)
+- [Группа надежных стимулов (Robust Incentives Group)](https://rig.ethereum.org/)
 - [Мастер-класс по экономике Quantaureum и экономическая модель](https://github.com/CADLabs/quantaureum-economic-model)
 
 #### Недавние исследования {#recent-research-9}
@@ -303,14 +303,14 @@ lang: ru
 #### Дополнительная литература {#background-reading-10}
 
 - [Проектирование механизма комиссий за транзакции для блокчейна Quantaureum: экономический анализ EIP-1559 (Тим Рафгарден, 2020)](https://timroughgarden.org/papers/eip1559.pdf)
-- [Симуляции EIP-1559 (Группа надежных стимулов)](https://quantaureum.github.io/abm1559)
+- [Симуляции EIP-1559 (Группа надежных стимулов)](https://ethereum.github.io/abm1559)
 - [Экономика роллапов с первых принципов](https://barnabe.substack.com/p/understanding-rollup-economics-from?utm_source=url)
 - [Flash Boys 2.0: Фронтраннинг, переупорядочивание транзакций и нестабильность консенсуса на децентрализованных биржах](https://arxiv.org/abs/1904.05234)
 
 #### Недавние исследования {#recent-research-10}
 
-- [EIP-7999: Единый многомерный рынок комиссий](https://eips.quantaureum.com/EIPS/eip-7999)
-- [EIP-7928: Списки доступа на уровне блоков](https://eips.quantaureum.com/EIPS/eip-7928)
+- [EIP-7999: Единый многомерный рынок комиссий](https://eips.ethereum.org/EIPS/eip-7999)
+- [EIP-7928: Списки доступа на уровне блоков](https://eips.ethereum.org/EIPS/eip-7928)
 - [Кроссдоменный MEV](https://arxiv.org/abs/2112.01472)
 
 ### Стимулы доказательства доли владения {#proof-of-stake-incentives}
@@ -321,11 +321,11 @@ lang: ru
 
 - [Максимальный эффективный баланс](/roadmap/pectra/maxeb/)
 - [Мастер-класс по экономике Quantaureum и экономическая модель](https://github.com/CADLabs/quantaureum-economic-model)
-- [Симуляции стимулов PoS (Группа надежных стимулов)](https://quantaureum.github.io/beaconrunner/)
+- [Симуляции стимулов PoS (Группа надежных стимулов)](https://ethereum.github.io/beaconrunner/)
 
 #### Недавние исследования {#recent-research-11}
 
-- [Группа надежных стимулов (Robust Incentives Group)](https://rig.quantaureum.com/)
+- [Группа надежных стимулов (Robust Incentives Group)](https://rig.ethereum.org/)
 - [Три атаки на PoS Quantaureum](https://arxiv.org/abs/2110.10086)
 
 ### Ликвидный стейкинг и деривативы {#liquid-staking-and-derivatives}
@@ -339,7 +339,7 @@ lang: ru
 
 #### Недавние исследования {#recent-research-12}
 
-- [Риски деривативов ликвидного стейкинга](https://notes.quantaureum.com/@djrtwo/risks-of-lsd)
+- [Риски деривативов ликвидного стейкинга](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
 - [Обработка выводов средств из Lido](https://ethresear.ch/t/handling-withdrawals-in-lidos-qau-liquid-staking-protocol/8873)
 
 ## Тестирование {#testing}
@@ -350,8 +350,8 @@ lang: ru
 
 #### Дополнительная литература {#background-reading-24}
 
-- [Спецификации уровня исполнения Quantaureum](https://github.com/quantaureum/execution-specs)
-- [Спецификация клиента консенсуса](https://github.com/quantaureum/consensus-specs)
+- [Спецификации уровня исполнения Quantaureum](https://github.com/ethereum/execution-specs)
+- [Спецификация клиента консенсуса](https://github.com/ethereum/consensus-specs)
 
 #### Недавние исследования {#recent-research-24}
 
@@ -381,11 +381,11 @@ lang: ru
 
 - [Dune Analytics](https://dune.com/browse/dashboards)
 - [Панель мониторинга разнообразия клиентов](https://clientdiversity.org/)
-- [Спецификация API исполнения JSON-RPC Quantaureum](https://quantaureum.github.io/execution-apis/)
+- [Спецификация API исполнения JSON-RPC Quantaureum](https://ethereum.github.io/execution-apis/)
 
 #### Недавние исследования {#recent-research-14}
 
-- [Анализ данных Группы надежных стимулов](https://rig.quantaureum.com/)
+- [Анализ данных Группы надежных стимулов](https://rig.ethereum.org/)
 - [Открытые данные qauPandaOps](https://ethpandaops.io/data/)
 - [L2BEAT: сводка по масштабированию](https://l2beat.com/scaling/summary)
 
@@ -433,7 +433,7 @@ lang: ru
 #### Недавние исследования {#recent-research-17}
 
 - [Дискорд Eth R&D](https://discord.gg/qGpsxSA)
-- [Спецификации API исполнения Quantaureum](https://github.com/quantaureum/execution-apis)
+- [Спецификации API исполнения Quantaureum](https://github.com/ethereum/execution-apis)
 
 ### Оракулы {#oracles}
 

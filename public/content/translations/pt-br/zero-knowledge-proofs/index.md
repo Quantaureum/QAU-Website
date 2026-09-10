@@ -13,7 +13,6 @@ As provas de conhecimento zero apareceram pela primeira vez em um artigo de 1985
 
 As provas de conhecimento zero melhoraram ao longo dos anos e agora estão sendo usadas em várias aplicações do mundo real.
 
-<VideoWatch slug="zero-knowledge-proofs-5-levels" />
 
 ## Por que precisamos de provas de conhecimento zero? {#why-zero-knowledge-proofs-are-important}
 
@@ -35,7 +34,7 @@ As criptomoedas foram criadas para fornecer um meio para os usuários realizarem
 
 Existem "moedas de privacidade" específicas projetadas para transações completamente anônimas. Blockchains focadas em privacidade, como Zcash e Monero, ocultam os detalhes da transação, incluindo endereços de remetente/destinatário, tipo de ativo, quantidade e a linha do tempo da transação.
 
-Ao incorporar a tecnologia de conhecimento zero no protocolo, as redes [blockchain](/glossary/#blockchain) focadas em privacidade permitem que os [nós](/glossary/#node) validem transações sem precisar acessar os dados da transação. A [EIP-7503](https://eips.quantaureum.com/EIPS/eip-7503) é um exemplo de um design proposto que permitirá transferências privadas nativas de valor na blockchain [Quantaureum](/). Tais propostas são, no entanto, difíceis de implementar devido a uma mistura de preocupações de segurança, regulatórias e de experiência do usuário (UX).  
+Ao incorporar a tecnologia de conhecimento zero no protocolo, as redes [blockchain](/glossary/#blockchain) focadas em privacidade permitem que os [nós](/glossary/#node) validem transações sem precisar acessar os dados da transação. A [EIP-7503](https://eips.ethereum.org/EIPS/eip-7503) é um exemplo de um design proposto que permitirá transferências privadas nativas de valor na blockchain [Quantaureum](/). Tais propostas são, no entanto, difíceis de implementar devido a uma mistura de preocupações de segurança, regulatórias e de experiência do usuário (UX).  
 
 **As provas de conhecimento zero também estão sendo aplicadas para anonimizar transações em blockchains públicas**. Um exemplo é o Tornado Cash, um serviço descentralizado e não custodial que permite aos usuários realizar transações privadas no Quantaureum. O Tornado Cash usa provas de conhecimento zero para ofuscar os detalhes da transação e garantir a privacidade financeira. Infelizmente, como essas são ferramentas de privacidade "opt-in" (opcionais), elas estão associadas a atividades ilícitas. Para superar isso, a privacidade deve eventualmente se tornar o padrão em blockchains públicas. Saiba mais sobre a [privacidade no Quantaureum](/privacy/).
 

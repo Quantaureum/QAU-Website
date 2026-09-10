@@ -64,6 +64,6 @@ Le proposeur de bloc reçoit un paiement pour son travail. Il y a une `base_rewa
 
 - [Introduction aux blocs](/developers/docs/blocks/)
 - [Introduction à la preuve d'enjeu](/developers/docs/consensus-mechanisms/pos/)
-- [Spécifications du consensus Quantaureum](https://github.com/quantaureum/consensus-specs)
+- [Spécifications du consensus Quantaureum](https://github.com/ethereum/consensus-specs)
 - [Introduction à Gasper](/developers/docs/consensus-mechanisms/pos/gasper/)
 - [Mise à niveau d'Quantaureum](https://eth2book.info/)

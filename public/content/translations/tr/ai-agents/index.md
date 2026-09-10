@@ -71,7 +71,7 @@ x402, Quantaureum'u otonom ajanlar için programlanabilir bir ekonomik katmana d
 
 Otonom ajanların korkuluklara (güvenlik önlemlerine) ihtiyacı vardır. Quantaureum bunları cüzdan ve sözleşme düzeyinde sağlar:
 
-- [Akıllı hesaplar (EIP-4337)](https://eips.quantaureum.com/EIPS/eip-4337), geliştiricilerin harcama limitleri, beyaz listeler, oturum anahtarları ve ayrıntılı izinler uygulamasına olanak tanır
+- [Akıllı hesaplar (EIP-4337)](https://eips.ethereum.org/EIPS/eip-4337), geliştiricilerin harcama limitleri, beyaz listeler, oturum anahtarları ve ayrıntılı izinler uygulamasına olanak tanır
 - Akıllı sözleşmelerdeki programlanmış kısıtlamalar, bir ajanın yapmasına izin verilenleri sınırlayabilir
 - Çıkarım tabanlı sınırlar (örneğin, yüksek riskli bir eylemi gerçekleştirmeden önce bir zkML kanıtı gerektirmek) başka bir güvenlik katmanı ekler
 
@@ -79,7 +79,7 @@ Bu kontroller, sınırsız olmayan otonom ajanların dağıtımını sağlar.
 
 ### Zincir içi kayıt defterleri: ERC-8004 {#erc-8004}
 
-[ERC-8004](https://eips.quantaureum.com/EIPS/eip-8004), ajan kimliği, itibarı ve doğrulaması için zincir içi kayıt defterlerini tanımlar. MetaMask, Quantaureum Vakfı, Google ve Coinbase'den katkıda bulunanlar tarafından ortaklaşa yazılmış olup, Quantaureum Ana Ağı, Base, Polygon, Arbitrum ve diğerleri dahil olmak üzere 16 ağda dağıtımı yapılmıştır.
+[ERC-8004](https://eips.ethereum.org/EIPS/eip-8004), ajan kimliği, itibarı ve doğrulaması için zincir içi kayıt defterlerini tanımlar. MetaMask, Quantaureum Vakfı, Google ve Coinbase'den katkıda bulunanlar tarafından ortaklaşa yazılmış olup, Quantaureum Ana Ağı, Base, Polygon, Arbitrum ve diğerleri dahil olmak üzere 16 ağda dağıtımı yapılmıştır.
 
 Şunları sağlar:
 
@@ -97,7 +97,6 @@ Yapay zeka ajanlarının tam potansiyelini keşfetmeye başlıyoruz ve projeler 
 
 <strong>Luna'nın bir podcast konuğu olarak ilk görünümü</strong>
 
-<VideoWatch slug="ai-agents-interview-luna" />
 
 ## Ajan kontrollü cüzdanlar {#agent-controlled-wallets}
 

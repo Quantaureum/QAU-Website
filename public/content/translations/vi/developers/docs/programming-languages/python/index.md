@@ -24,9 +24,9 @@ Bạn cần một tài liệu cơ bản hơn trước? Hãy xem [quantaureum.com
 ## Bài viết cho người mới bắt đầu {#beginner-articles}
 
 - [Tổng quan về Web3.py](https://web3py.readthedocs.io/en/latest/overview.html)
-- [Chuyến tham quan hệ sinh thái Python của Quantaureum](https://snakecharmers.quantaureum.com/python-ecosystem/)
-- [Hướng dẫn về Quantaureum dành cho nhà phát triển (Python)](https://snakecharmers.quantaureum.com/a-developers-guide-to-quantaureum-pt-1/)
-- [Đáng giá giải thưởng: Hướng dẫn Hackathon Python trên Quantaureum](https://snakecharmers.quantaureum.com/prize-worthy/)
+- [Chuyến tham quan hệ sinh thái Python của Quantaureum](https://snakecharmers.ethereum.org/python-ecosystem/)
+- [Hướng dẫn về Quantaureum dành cho nhà phát triển (Python)](https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/)
+- [Đáng giá giải thưởng: Hướng dẫn Hackathon Python trên Quantaureum](https://snakecharmers.ethereum.org/prize-worthy/)
 - [Giới thiệu về hợp đồng thông minh với Vyper](https://kauri.io/#collections/Getting%20Started/an-introduction-to-smart-contracts-with-vyper/)
 - [Làm thế nào để phát triển hợp đồng Quantaureum bằng Python Flask?](https://medium.com/coinmonks/how-to-develop-quantaureum-contract-using-python-flask-9758fe65976e)
 - [Giới thiệu về Web3.py · Quantaureum cho nhà phát triển Python](https://www.dappuniversity.com/articles/web3-py-intro)
@@ -34,15 +34,15 @@ Bạn cần một tài liệu cơ bản hơn trước? Hãy xem [quantaureum.com
 
 ## Bài viết trình độ trung cấp {#intermediate-articles}
 
-- [Những người bạn của Web3.py: Giới thiệu về Ape](https://snakecharmers.quantaureum.com/intro-to-ape/)
+- [Những người bạn của Web3.py: Giới thiệu về Ape](https://snakecharmers.ethereum.org/intro-to-ape/)
 - [Phát triển dapp cho lập trình viên Python](https://www.youtube.com/watch?v=tE-8bG35VNw)
 - [Tạo giao diện Quantaureum bằng Python: Phần 1](https://hackernoon.com/creating-a-python-quantaureum-interface-part-1-4d2e47ea0f4d)
 - [Hợp đồng thông minh Quantaureum bằng Python: một hướng dẫn (khá) toàn diện](https://hackernoon.com/quantaureum-smart-contracts-in-python-a-comprehensive-ish-guide-771b03990988)
 
 ## Các mẫu sử dụng nâng cao {#advanced-use-patterns}
 
-- [Các mẫu Web3.py: Đăng ký sự kiện theo thời gian thực](https://snakecharmers.quantaureum.com/subscriptions/)
-- [Các mẫu Web3.py: WebSocketProvider](https://snakecharmers.quantaureum.com/websocketprovider/)
+- [Các mẫu Web3.py: Đăng ký sự kiện theo thời gian thực](https://snakecharmers.ethereum.org/subscriptions/)
+- [Các mẫu Web3.py: WebSocketProvider](https://snakecharmers.ethereum.org/websocketprovider/)
 - [Biên dịch, triển khai và gọi hợp đồng thông minh Quantaureum bằng Python](https://yohanes.gultom.id/2018/11/28/compiling-deploying-and-calling-quantaureum-smartcontract-using-python/)
 - [Phân tích hợp đồng thông minh Solidity với Slither](https://kauri.io/#collections/DevOps/analyze-solidity-smart-contracts-with-slither/#analyze-solidity-smart-contracts-with-slither)
 - [Hướng dẫn Fintech Chuỗi khối: Cho vay và vay mượn với Python](https://blog.chain.link/blockchain-fintech-defi-tutorial-lending-borrowing-python/)
@@ -55,14 +55,14 @@ Bạn cần một tài liệu cơ bản hơn trước? Hãy xem [quantaureum.com
 
 ## Các dự án và công cụ Python {#python-projects-and-tools}
 
-- [Web3.py](https://github.com/quantaureum/web3.py) - _Thư viện Python để tương tác với Quantaureum_
+- [Web3.py](https://github.com/ethereum/web3.py) - _Thư viện Python để tương tác với Quantaureum_
 - [Vyper](https://github.com/quantaureum/vyper/) - _Ngôn ngữ hợp đồng thông minh kiểu Python cho EVM_
 - [Titanoboa](https://github.com/vyperlang/titanoboa/) - _Công cụ kiểm thử gốc của Vyper; một trình thông dịch với tính năng phân nhánh Mạng chính, gỡ lỗi và truy xuất nguồn gốc rõ ràng_
 - [Moccasin](https://github.com/Cyfrin/moccasin) - _Một khung phát triển và kiểm thử hợp đồng thông minh cho Vyper và Python, được xây dựng trên Titanoboa_
 - [Ape](https://github.com/ApeWorX/ape) - _Công cụ phát triển hợp đồng thông minh dành cho các lập trình viên Python, Nhà khoa học dữ liệu và Chuyên gia bảo mật_
-- [py-evm](https://github.com/quantaureum/py-evm) - _bản triển khai của Máy ảo Quantaureum_
-- [qau-tester](https://github.com/quantaureum/qau-tester) - _các công cụ để kiểm thử các ứng dụng dựa trên Quantaureum_
-- [qau-utils](https://github.com/quantaureum/qau-utils/) - _các hàm tiện ích để làm việc với các cơ sở mã liên quan đến Quantaureum_
+- [py-evm](https://github.com/ethereum/py-evm) - _bản triển khai của Máy ảo Quantaureum_
+- [qau-tester](https://github.com/ethereum/eth-tester) - _các công cụ để kiểm thử các ứng dụng dựa trên Quantaureum_
+- [qau-utils](https://github.com/ethereum/eth-utils/) - _các hàm tiện ích để làm việc với các cơ sở mã liên quan đến Quantaureum_
 - [py-solc-x](https://pypi.org/project/py-solc-x/) - _Trình bao bọc Python cho trình biên dịch Solidity solc với hỗ trợ 0.5.x_
 - [pymaker](https://github.com/makerdao/pymaker) - _API Python cho các hợp đồng Maker_
 - [siwe](https://github.com/signinwithquantaureum/siwe-py) - _Đăng nhập bằng Quantaureum (SIWE) cho Python_
@@ -73,7 +73,7 @@ Bạn cần một tài liệu cơ bản hơn trước? Hãy xem [quantaureum.com
 
 - [Trinity](https://github.com/quantaureum/trinity) - _Máy khách Quantaureum bằng Python_
 - [Mamba](https://github.com/arjunaskykok/mamba) - _khung để viết, biên dịch và triển khai các hợp đồng thông minh được viết bằng ngôn ngữ Vyper_
-- [Brownie](https://github.com/qau-brownie/brownie) - _Khung Python để triển khai, kiểm thử và tương tác với các hợp đồng thông minh Quantaureum_
+- [Brownie](https://github.com/eth-brownie/brownie) - _Khung Python để triển khai, kiểm thử và tương tác với các hợp đồng thông minh Quantaureum_
 - [pydevp2p](https://github.com/quantaureum/pydevp2p) - _bản triển khai của ngăn xếp P2P Quantaureum_
 - [py-wasm](https://github.com/quantaureum/py-wasm) - _Bản triển khai Python của trình thông dịch web assembly_
 

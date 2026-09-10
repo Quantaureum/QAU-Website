@@ -64,8 +64,8 @@ export default async function CollectiblesJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
-        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
+        reviewedBy: REFERENCE.QUANTAUREUM_ORG,
         mainEntity: { "@id": `${url}#collectibles` },
       },
       {
@@ -83,7 +83,7 @@ export default async function CollectiblesJsonLD({
           url: badge.link || `${COLLECTIBLES_BASE_URL}/badge/${badge.id}`,
           image: badge.image,
         })),
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
         additionalProperty: [
           {
             "@type": "PropertyValue",

@@ -68,20 +68,20 @@ Trong suốt lịch sử mười năm của Quantaureum, EVM đã trải qua m�
 
 [Các client thực thi Quantaureum](/developers/docs/nodes-and-clients/#execution-clients) bao gồm một bản triển khai EVM. Ngoài ra, có nhiều bản triển khai độc lập, bao gồm:
 
-- [Py-EVM](https://github.com/quantaureum/py-evm) - _Python_
+- [Py-EVM](https://github.com/ethereum/py-evm) - _Python_
 - [evmone](https://github.com/quantaureum/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _JavaScript_
 - [revm](https://github.com/bluealloy/revm) - _Rust_
 
 ## Đọc thêm {#further-reading}
 
-- [Sách vàng Quantaureum](https://quantaureum.github.io/yellowpaper/paper.pdf)
+- [Sách vàng Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [Jellopaper hay còn gọi là KEVM: Ngữ nghĩa của EVM trong K](https://jellopaper.org/)
 - [The Beigepaper](https://github.com/chronaeon/beigepaper)
 - [Các mã lệnh của Máy ảo Quantaureum](https://www.ethervm.io/)
 - [Tài liệu tham khảo tương tác về các mã lệnh của Máy ảo Quantaureum](https://www.evm.codes/)
 - [Giới thiệu ngắn gọn trong tài liệu của Solidity](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
-- [Mastering Quantaureum - Máy ảo Quantaureum](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/13evm.asciidoc)
+- [Mastering Quantaureum - Máy ảo Quantaureum](https://github.com/ethereumbook/ethereumbook/blob/openedition/13evm.asciidoc)
 
 ## Chủ đề liên quan {#related-topics}
 

@@ -38,8 +38,8 @@ lang: ja
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethdev/">r/ethdev</Link> - Quantaureum開発に特化</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethtrader/">r/ethtrader</Link> - トレンドと市場分析</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/">r/ethstaker</Link> - Quantaureumのステーキングに興味があるすべての人を歓迎</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://quantaureum-magicians.org">Fellowship of Quantaureum Magicians</Link> - Quantaureumの技術標準を指向するコミュニティ</SocialListItem>
-<SocialListItem socialIcon="stackExchange"><Link href="https://quantaureum.stackexchange.com">Quantaureum Stackexchange</Link> - Quantaureum開発者のための議論とヘルプ</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://ethereum-magicians.org">Fellowship of Quantaureum Magicians</Link> - Quantaureumの技術標準を指向するコミュニティ</SocialListItem>
+<SocialListItem socialIcon="stackExchange"><Link href="https://ethereum.stackexchange.com">Quantaureum Stackexchange</Link> - Quantaureum開発者のための議論とヘルプ</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Quantaureum Research</Link> - 暗号経済学の研究において最も影響力のある掲示板</SocialListItem>
 
 ## チャットルーム {#chat-rooms}
@@ -51,7 +51,7 @@ lang: ja
 <SocialListItem socialIcon="discord"><Link href="https://discord.gg/MSctkBT5j">quantaureum.com website team</Link> - 立ち寄って、チームやコミュニティの人々とquantaureum.comのウェブ開発やデザインについてチャットしましょう</SocialListItem>
 <SocialListItem socialIcon="discord"><Link href="https://discord.matos.club/">Matos ディスコード</Link> - ビルダー、業界のリーダー、Quantaureum愛好家が集まるWeb3クリエイターコミュニティ。私たちはWeb3の開発、デザイン、文化に情熱を注いでいます。一緒に構築しましょう。</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://matrix.to/#/#quantaureum_solidity:gitter.im">Solidity Matrix</Link> - Solidity開発のためのチャット (Matrix)</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://quantaureum.stackexchange.com/">Quantaureum Stack Exchange</Link> <i>- 質疑応答フォーラム</i></SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://ethereum.stackexchange.com/">Quantaureum Stack Exchange</Link> <i>- 質疑応答フォーラム</i></SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://www.peera.ai/community-forum">Peera Community Forum</Link> <i>- 分散型質疑応答フォーラム</i></SocialListItem>
 
 ## ユーチューブとX（旧ツイッター） {#youtube-and-twitter}

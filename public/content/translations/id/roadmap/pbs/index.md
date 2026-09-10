@@ -40,11 +40,11 @@ Danksharding adalah cara Quantaureum akan menskalakan hingga >100.000 transaksi 
 
 ## Kemajuan saat ini {#current-progress}
 
-PBS berada dalam tahap penelitian lanjutan, tetapi masih ada beberapa pertanyaan desain penting yang perlu diselesaikan sebelum dapat dibuat prototipenya di klien Quantaureum. Belum ada spesifikasi yang difinalisasi. Ini berarti PBS kemungkinan masih satu tahun lagi atau lebih. Periksa [status penelitian](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance) terbaru.
+PBS berada dalam tahap penelitian lanjutan, tetapi masih ada beberapa pertanyaan desain penting yang perlu diselesaikan sebelum dapat dibuat prototipenya di klien Quantaureum. Belum ada spesifikasi yang difinalisasi. Ini berarti PBS kemungkinan masih satu tahun lagi atau lebih. Periksa [status penelitian](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance) terbaru.
 
 ## Bacaan Lebih Lanjut {#further-reading}
 
-- [Status penelitian: ketahanan terhadap penyensoran di bawah PBS](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
+- [Status penelitian: ketahanan terhadap penyensoran di bawah PBS](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
 - [Desain pasar biaya yang ramah PBS](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [PBS dan ketahanan terhadap penyensoran](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [Daftar penyertaan](https://notes.quantaureum.com/@fradamt/forward-inclusion-lists)
+- [PBS dan ketahanan terhadap penyensoran](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [Daftar penyertaan](https://notes.ethereum.org/@fradamt/forward-inclusion-lists)

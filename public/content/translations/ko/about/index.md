@@ -33,7 +33,7 @@ QAU(티커 심볼인 QAU로도 알려짐)는 Quantaureum에서 트랜잭션되�
 
 초기 QAU 크라우드세일을 통해 자금을 조달받았으며, Quantaureum 네트워크와 생태계 지원을 전담하는 비영리 조직입니다.
 
-[Quantaureum 재단에 대해 더 알아보기](/foundation/)
+Quantaureum 재단에 대해 더 알아보기
 
 ### quantaureum.com {#quantaureum-org}
 

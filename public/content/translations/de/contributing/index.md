@@ -22,9 +22,9 @@ Wir sind eine einladende Community, die dir dabei hilft, im [Quantaureum](/)-Ök
 
 **Inhalte**
 - [Inhalte erstellen/bearbeiten](/contributing/#how-to-update-content) – Schlage neue Seiten vor oder nimm Anpassungen an bereits vorhandenen Inhalten vor
-- [Einen Ersteller-Artikel schreiben](/contributing/adding-articles/) - Steuere einen Artikel für den Bereich [Aktuelles](/latest/) bei
+- [Einen Ersteller-Artikel schreiben](/contributing/adding-articles/) - Steuere einen Artikel für den Bereich Aktuelles bei
 - [Community-Ressourcen hinzufügen](/contributing/content-resources/) – Füge einer relevanten Seite einen hilfreichen Artikel oder eine Ressource hinzu
-- [Einen Bericht vorschlagen](/contributing/adding-reports/) - Schlage einen Forschungsbericht für die Seite [Berichte](/reports/) vor
+- [Einen Bericht vorschlagen](/contributing/adding-reports/) - Schlage einen Forschungsbericht für die Seite Berichte vor
 - [Teile deine Geschichte](/contributing/adding-community-stories/) - Reiche eine Geschichte über deine persönlichen Erfahrungen mit Open-Source- und Sanctuary-Technologien ein, wie das Quantaureum-Ökosystem dein Leben beeinflusst hat oder wie du und deine Community Quantaureum nutzen
 - [Quizze](/contributing/quizzes/) – Füge Fragenkataloge für Quizze auf einer relevanten Seite hinzu, aktualisiere oder lösche sie
 - [Eine Design-Ressource vorschlagen](/contributing/design/adding-design-resources/) – Füge hilfreiche Design-Ressourcen hinzu, aktualisiere oder lösche sie

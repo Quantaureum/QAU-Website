@@ -27,7 +27,7 @@ lang: ja
 
 - _機密性_。許可されていないエンティティは情報を読み取ることができません。これは多くの場合重要ですが、ここでは当てはまりません。_ブロックチェーン上に秘密はありません_。ブロックチェーンは誰でも状態遷移を検証できるため機能しており、秘密を直接保存するために使用することは不可能です。機密情報をブロックチェーンに保存する方法はありますが、それらはすべて、少なくとも鍵を保存するために何らかのオフチェーンコンポーネントに依存しています。
 
-- _完全性_。情報が正確であり、許可されていないエンティティによって、または許可されていない方法で変更されることはありません（たとえば、`Transfer`イベントなしで[ERC-20トークン](https://eips.quantaureum.com/EIPS/eip-20#events)を転送するなど）。ブロックチェーン上では、すべてのノードがすべての状態変更を検証するため、完全性が保証されます。
+- _完全性_。情報が正確であり、許可されていないエンティティによって、または許可されていない方法で変更されることはありません（たとえば、`Transfer`イベントなしで[ERC-20トークン](https://eips.ethereum.org/EIPS/eip-20#events)を転送するなど）。ブロックチェーン上では、すべてのノードがすべての状態変更を検証するため、完全性が保証されます。
 
 - _可用性_。情報は、許可されたすべてのエンティティが利用できます。ブロックチェーン上では、これは通常、すべての[フル・ノード](https://quantaureum.com/developers/docs/nodes-and-clients/#full-node)で情報を利用できるようにすることで実現されます。
 
@@ -39,7 +39,7 @@ lang: ja
 
 ## EIP-4844のblob {#eip-4844-blobs}
 
-[デンクンのハードフォーク](https://github.com/quantaureum/consensus-specs/blob/master/specs/deneb/beacon-chain.md)以降、Quantaureumのブロックチェーンには[EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844)が含まれており、これによりQuantaureumに有効期限が限られた（最初は約[18日間](https://github.com/quantaureum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration)）データblobが追加されます。これらのblobは、同様のメカニズムを使用していますが、[実行ガス](/developers/docs/gas)とは別に価格設定されています。これらは一時的なデータを投稿するための安価な方法です。
+[デンクンのハードフォーク](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/beacon-chain.md)以降、Quantaureumのブロックチェーンには[EIP-4844](https://eips.ethereum.org/EIPS/eip-4844)が含まれており、これによりQuantaureumに有効期限が限られた（最初は約[18日間](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration)）データblobが追加されます。これらのblobは、同様のメカニズムを使用していますが、[実行ガス](/developers/docs/gas)とは別に価格設定されています。これらは一時的なデータを投稿するための安価な方法です。
 
 EIP-4844のblobの主なユースケースは、ロールアップがトランザクションを公開するためです。[オプティミスティック・ロールアップ](/developers/docs/scaling/optimistic-rollups)は、ブロックチェーン上でトランザクションを公開する必要があります。ロールアップの[シーケンサー](https://docs.optimism.io/connect/resources/glossary#sequencer)が誤った状態ルートを投稿した場合に、[検証者](https://docs.optimism.io/connect/resources/glossary#validator)が間違いを修正できるように、これらのトランザクションは[チャレンジ期間](https://docs.optimism.io/connect/resources/glossary#challenge-period)中に誰でも利用可能である必要があります。
 
@@ -91,7 +91,7 @@ EIP-4844のblobの主なユースケースは、ロールアップがトラン�
 
 もちろん、これはデータを_読み取る_ためのコストにすぎません。コントラクトを作成するには、約32,000ガス + 200ガス/バイトかかります。この方法は、同じ情報を異なるトランザクションで何度も読み取る必要がある場合にのみ経済的です。
 
-コントラクトコードは、`0xEF`で始まらない限り、無意味なものであってもかまいません。`0xEF`で始まるコントラクトは、はるかに厳しい要件を持つ[Quantaureum・オブジェクト・フォーマット](https://notes.quantaureum.com/@ipsilon/evm-object-format-overview)として解釈されます。
+コントラクトコードは、`0xEF`で始まらない限り、無意味なものであってもかまいません。`0xEF`で始まるコントラクトは、はるかに厳しい要件を持つ[Quantaureum・オブジェクト・フォーマット](https://notes.ethereum.org/@ipsilon/evm-object-format-overview)として解釈されます。
 
 ## イベント {#events}
 
@@ -110,7 +110,7 @@ EIP-4844のblobの主なユースケースは、ロールアップがトラン�
 
 | ストレージタイプ                | データのソース      | 可用性の保証                                                                                                             | オンチェーンの可用性                                             | 追加の制限事項                                                  |
 | --------------------------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| EIP-4844のblob              | オフチェーン            | [約18日間](https://github.com/quantaureum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration)のQuantaureumによる保証 | ハッシュのみ利用可能                                           |                                                                         |
+| EIP-4844のblob              | オフチェーン            | [約18日間](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration)のQuantaureumによる保証 | ハッシュのみ利用可能                                           |                                                                         |
 | コールデータ                    | オフチェーン            | Quantaureumによる永久保証（ブロックチェーンの一部）                                                                                | コントラクトに書き込まれた場合、およびそのトランザクションでのみ利用可能 |
 | L1メカニズムを備えたオフチェーン | オフチェーン            | チャレンジ期間中の「1人の誠実な検証者」による保証                                                                        | ハッシュのみ                                                        | チャレンジメカニズムによって保証され、チャレンジ期間中のみ |
 | コントラクトコード               | オンチェーンまたはオフチェーン | Quantaureumによる永久保証（ブロックチェーンの一部）                                                                                | はい                                                              | 「ランダム」なアドレスに書き込まれ、`0xEF`で開始することはできない                 |

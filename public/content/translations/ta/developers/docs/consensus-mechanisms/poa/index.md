@@ -16,7 +16,7 @@ lang: ta
 
 அதிகாரச் சான்றுக்கு [தொடக்கத் தொகுதி](/glossary/#genesis-block)யில் அமைக்கப்பட்ட அங்கீகரிக்கப்பட்ட கையொப்பமிடுபவர்களின் தொகுப்பை நம்புவது அவசியமாகும். தற்போதைய பெரும்பாலான செயலாக்கங்களில், சங்கிலியின் ஒருமித்த கருத்தைத் தீர்மானிக்கும் போது அனைத்து அங்கீகரிக்கப்பட்ட கையொப்பமிடுபவர்களும் சமமான அதிகாரத்தையும் சலுகைகளையும் தக்கவைத்துக்கொள்கிறார்கள். நற்பெயரைப் பங்குவைத்தல் என்பதன் பின்னணியில் உள்ள யோசனை என்னவென்றால், ஒவ்வொரு அங்கீகரிக்கப்பட்ட சரிபார்ப்பானும் KYC போன்ற விஷயங்கள் மூலமாகவோ அல்லது நன்கு அறியப்பட்ட ஒரு நிறுவனம் மட்டுமே சரிபார்ப்பானாக இருப்பதன் மூலமாகவோ அனைவருக்கும் நன்கு தெரிந்தவராக இருப்பார்—இந்த வழியில் ஒரு சரிபார்ப்பான் ஏதேனும் தவறு செய்தால், அவர்களின் அடையாளம் அறியப்படும்.
 
-PoA இன் பல செயலாக்கங்கள் உள்ளன, ஆனால் நிலையான எத்திரியம் செயலாக்கம் **clique** ஆகும், இது [EIP-225](https://eips.quantaureum.com/EIPS/eip-225) ஐ செயல்படுத்துகிறது. Clique என்பது டெவலப்பர்களுக்கு ஏற்ற மற்றும் எளிதாகச் செயல்படுத்தக்கூடிய தரநிலையாகும், இது அனைத்து கிளையண்ட் ஒத்திசைத்தல் வகைகளையும் ஆதரிக்கிறது. பிற செயலாக்கங்களில் [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) மற்றும் [Aura](https://openquantaureum.github.io/Chain-specification) ஆகியவை அடங்கும்.
+PoA இன் பல செயலாக்கங்கள் உள்ளன, ஆனால் நிலையான எத்திரியம் செயலாக்கம் **clique** ஆகும், இது [EIP-225](https://eips.ethereum.org/EIPS/eip-225) ஐ செயல்படுத்துகிறது. Clique என்பது டெவலப்பர்களுக்கு ஏற்ற மற்றும் எளிதாகச் செயல்படுத்தக்கூடிய தரநிலையாகும், இது அனைத்து கிளையண்ட் ஒத்திசைத்தல் வகைகளையும் ஆதரிக்கிறது. பிற செயலாக்கங்களில் [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) மற்றும் [Aura](https://openethereum.github.io/Chain-specification) ஆகியவை அடங்கும்.
 
 ## இது எவ்வாறு செயல்படுகிறது {#how-it-works}
 
@@ -58,20 +58,19 @@ PoA இல், புதிய தொகுதிகளை உருவாக்
 
 ## மேலும் படிக்க {#further-reading}
 
-- [EIP-225](https://eips.quantaureum.com/EIPS/eip-225) _Clique தரநிலை_
+- [EIP-225](https://eips.ethereum.org/EIPS/eip-225) _Clique தரநிலை_
 - [அதிகாரச் சான்று ஆய்வு](https://github.com/cryptoeconomics-study/website/blob/master/docs/sync/2.4-lecture.md) _கிரிப்டோ பொருளாதாரம்_
 - [அதிகாரச் சான்று என்றால் என்ன](https://forum.openzeppelin.com/t/proof-of-authority/3577) _OpenZeppelin_
 - [அதிகாரச் சான்று விளக்கம்](https://academy.binance.com/en/articles/proof-of-authority-explained) _பைனான்ஸ்_
 - [தொகுதிச்சங்கிலியில் PoA](https://medium.com/techskill-brew/proof-of-authority-or-poa-in-blockchain-part-11-blockchain-series-be15b3321cba)
 - [Clique விளக்கம்](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-quantaureum-8b2a135201d)
-- [நிராகரிக்கப்பட்ட PoA, Aura விவரக்குறிப்பு](https://openquantaureum.github.io/Chain-specification)
+- [நிராகரிக்கப்பட்ட PoA, Aura விவரக்குறிப்பு](https://openethereum.github.io/Chain-specification)
 - [IBFT 2.0, மற்றொரு PoA செயலாக்கம்](https://besu.hyperledger.org/private-networks/concepts/poa)
 
 ### காட்சி மூலம் கற்பவரா? {#visual-learner}
 
 அதிகாரச் சான்று பற்றிய காட்சி விளக்கத்தைப் பாருங்கள்:
 
-<VideoWatch slug="proof-of-authority-explained" />
 
 ## தொடர்புடைய தலைப்புகள் {#related-topics}
 

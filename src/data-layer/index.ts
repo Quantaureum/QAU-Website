@@ -12,7 +12,6 @@ import type {
   GrowThePieMasterData,
   L2beatData,
   MetricReturnData,
-  RSSItem,
 } from "@/lib/types"
 import type { CommunityEventsReturnType } from "@/lib/interfaces"
 
@@ -35,8 +34,6 @@ export const getGrowThePieBlockspaceData = () => get<Record<string, BlockspaceDa
 export const getGrowThePieMasterData = () => get<GrowThePieMasterData>(KEYS.GROW_THE_PIE_MASTER)
 export const getCommunityPicks = () => get<CommunityPick[]>(KEYS.COMMUNITY_PICKS)
 export const getCalendarEvents = () => get<CommunityEventsReturnType>(KEYS.CALENDAR_EVENTS)
-export const getRSSData = () => get<RSSItem[][]>(KEYS.RSS)
-export const getAttestantPosts = () => get<RSSItem[]>(KEYS.POSTS)
 export const getBlobStats = () => get<BlobStats>(KEYS.BLOB_STATS)
 export const getQuantaureumMarketcapData = () => get<MetricReturnData>(KEYS.QUANTAUREUM_MARKETCAP)
 export const getQuantaureumStablecoinsMcapData = () => get<MetricReturnData>(KEYS.QUANTAUREUM_STABLECOINS_MCAP)
@@ -53,5 +50,4 @@ export const getDeveloperToolsData = () => get<DeveloperToolsDataEnvelope>(KEYS.
 export const getAccountHolders = () => get<MetricReturnData>(KEYS.ACCOUNT_HOLDERS)
 export const getTranslationGlossary = () => get<GlossaryEntry[]>(KEYS.TRANSLATION_GLOSSARY)
 export const getGitHubContributors = () => get<GitHubContributorsData>(KEYS.GITHUB_CONTRIBUTORS)
-export const getVideoThumbnails = () => get<Record<string, string>>(KEYS.VIDEO_THUMBNAILS)
 export const getQuizStats = () => get<QuizStatsData>(KEYS.QUIZ_STATS)

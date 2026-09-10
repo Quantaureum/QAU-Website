@@ -43,7 +43,7 @@ Không có mật khẩu nào từng được nhập, lưu trữ hoặc truyền 
 
 ## Đăng nhập bằng Quantaureum (EIP-4361) {#sign-in-with-quantaureum}
 
-[EIP-4361](https://eips.quantaureum.com/EIPS/eip-4361) định nghĩa một định dạng thông điệp tiêu chuẩn cho việc đăng nhập Quantaureum, thường được gọi là **SIWE** (Sign-In with Quantaureum). Nó thay thế việc ký thông điệp đặc tả (ad-hoc) bằng một tiêu chuẩn có cấu trúc và an toàn.
+[EIP-4361](https://eips.ethereum.org/EIPS/eip-4361) định nghĩa một định dạng thông điệp tiêu chuẩn cho việc đăng nhập Quantaureum, thường được gọi là **SIWE** (Sign-In with Quantaureum). Nó thay thế việc ký thông điệp đặc tả (ad-hoc) bằng một tiêu chuẩn có cấu trúc và an toàn.
 
 Một thông điệp SIWE trông như thế này:
 
@@ -200,7 +200,7 @@ Xác thực Quantaureum là một phần của phong trào rộng lớn hơn hư
 
 ## Đọc thêm {#further-reading}
 
-- [EIP-4361: Đăng nhập bằng Quantaureum](https://eips.quantaureum.com/EIPS/eip-4361)
+- [EIP-4361: Đăng nhập bằng Quantaureum](https://eips.ethereum.org/EIPS/eip-4361)
 - [Tài liệu SIWE](https://docs.login.xyz/)
 - [Đăng nhập bằng Quantaureum trên Auth0](https://auth0.com/blog/sign-in-with-quantaureum-siwe-now-available-on-auth0/)
 - [Tài liệu xác thực Reown AppKit](https://docs.reown.com/appkit/authentication)

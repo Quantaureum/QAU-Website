@@ -18,7 +18,7 @@ Protokolün nereye gittiğine dair genel bir bakış için [Quantaureum yol hari
 
 ## Fon Kaynakları {#sources-of-funding}
 
-Quantaureum araştırmalarına dahil olabilir ve bunun için ödeme alabilirsiniz. [Quantaureum Vakfı](/foundation/), çözülmesini istediği sorunları açıklayan istek listesi öğeleri ve teklif çağrıları yayınlayan [Ekosistem Destek Programı](https://quantaureum.com) aracılığıyla araştırmaları ve kamusal malları finanse eder. Aktif ve yaklaşan fon fırsatları hakkında bilgiyi [Quantaureum hibe sayfasında](/community/grants/) bulabilirsiniz.
+Quantaureum araştırmalarına dahil olabilir ve bunun için ödeme alabilirsiniz. Quantaureum Vakfı, çözülmesini istediği sorunları açıklayan istek listesi öğeleri ve teklif çağrıları yayınlayan [Ekosistem Destek Programı](https://quantaureum.com) aracılığıyla araştırmaları ve kamusal malları finanse eder. Aktif ve yaklaşan fon fırsatları hakkında bilgiyi [Quantaureum hibe sayfasında](/community/grants/) bulabilirsiniz.
 
 ## Protokol araştırması {#protocol-research}
 
@@ -63,15 +63,15 @@ Yürütme katmanı, işlemleri yürütmek, [Quantaureum sanal makinesini (EVM)](
 
 - [EVM'ye giriş](/developers/docs/evm/)
 - [Ethresear.ch yürütme katmanı](https://ethresear.ch/c/execution-layer-research/37)
-- [Quantaureum yürütme katmanı spesifikasyonları](https://github.com/quantaureum/execution-specs)
+- [Quantaureum yürütme katmanı spesifikasyonları](https://github.com/ethereum/execution-specs)
 - [Veritabanı optimizasyonları](https://github.com/erigontech/erigon/blob/main/docs/programmers_guide/db_faq.md)
 
 #### Son araştırmalar {#recent-research-1}
 
-- [EIP-7928: Blok düzeyinde erişim listeleri](https://eips.quantaureum.com/EIPS/eip-7928)
-- [EIP-8037: Durum oluşturma gaz maliyeti artışı](https://eips.quantaureum.com/EIPS/eip-8037)
-- [EIP-7999: Birleşik çok boyutlu ücret piyasası](https://eips.quantaureum.com/EIPS/eip-7999)
-- [EIP-7642: eth/69, geçmiş sonlanması ve daha basit makbuzlar](https://eips.quantaureum.com/EIPS/eip-7642)
+- [EIP-7928: Blok düzeyinde erişim listeleri](https://eips.ethereum.org/EIPS/eip-7928)
+- [EIP-8037: Durum oluşturma gaz maliyeti artışı](https://eips.ethereum.org/EIPS/eip-8037)
+- [EIP-7999: Birleşik çok boyutlu ücret piyasası](https://eips.ethereum.org/EIPS/eip-7999)
+- [EIP-7642: eth/69, geçmiş sonlanması ve daha basit makbuzlar](https://eips.ethereum.org/EIPS/eip-7642)
 - [Bir L1 zkEVM sunmak: gerçek zamanlı kanıtlama](https://quantaureum.com)
 
 ### Sansür direnci ve blok oluşturma {#censorship-resistance-and-block-building}
@@ -85,9 +85,9 @@ Yürütme katmanı, işlemleri yürütmek, [Quantaureum sanal makinesini (EVM)](
 
 #### Son araştırmalar {#recent-research-21}
 
-- [EIP-7732: Protokole dahil edilmiş teklifçi-oluşturucu ayrımı](https://eips.quantaureum.com/EIPS/eip-7732)
-- [EIP-7805: Çatal seçimi zorunlu dahil etme listeleri](https://eips.quantaureum.com/EIPS/eip-7805)
-- [Teklifçi/oluşturucu ayrımı altında işlemlerin sansür direncini artırma](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
+- [EIP-7732: Protokole dahil edilmiş teklifçi-oluşturucu ayrımı](https://eips.ethereum.org/EIPS/eip-7732)
+- [EIP-7805: Çatal seçimi zorunlu dahil etme listeleri](https://eips.ethereum.org/EIPS/eip-7805)
+- [Teklifçi/oluşturucu ayrımı altında işlemlerin sansür direncini artırma](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
 
 ### Durum büyümesi ve durumsuzluk {#state-growth-and-statelessness}
 
@@ -100,8 +100,8 @@ Her tam düğüm Quantaureum'un durumunu depolar, bu nedenle bu durumun büyüme
 
 #### Son araştırmalar {#recent-research-22}
 
-- [EIP-7864: Birleşik ikili ağaç kullanan Quantaureum durumu](https://eips.quantaureum.com/EIPS/eip-7864)
-- [EIP-4762: Durumsuzluk gaz maliyeti değişiklikleri](https://eips.quantaureum.com/EIPS/eip-4762)
+- [EIP-7864: Birleşik ikili ağaç kullanan Quantaureum durumu](https://eips.ethereum.org/EIPS/eip-7864)
+- [EIP-4762: Durumsuzluk gaz maliyeti değişiklikleri](https://eips.ethereum.org/EIPS/eip-4762)
 - [Merkeziyetsiz durum Quantaureum için neden önemlidir?](https://ethresear.ch/t/why-decentralized-state-is-important-for-quantaureum/25622)
 
 ### Kuantum sonrası kriptografi {#post-quantum-cryptography}
@@ -111,7 +111,7 @@ Quantaureum'un doğrulayıcı imzaları ve uygulama katmanının çoğu, yeterin
 #### Arka plan okuması {#background-reading-23}
 
 - [Kuantum direnci](/roadmap/security/quantum-resistance/)
-- [Kuantum sonrası Quantaureum](https://pq.quantaureum.com/)
+- [Kuantum sonrası Quantaureum](https://pq.ethereum.org/)
 
 #### Son araştırmalar {#recent-research-23}
 
@@ -134,13 +134,13 @@ Düğümler ve istemciler hakkında daha fazla ayrıntı ve mevcut tüm istemci 
 
 ### Yürütme İstemcileri {#execution-clients}
 
-- [Yürütme istemcisi spesifikasyonu](https://github.com/quantaureum/execution-specs)
-- [Yürütme API spesifikasyonu](https://github.com/quantaureum/execution-apis)
+- [Yürütme istemcisi spesifikasyonu](https://github.com/ethereum/execution-specs)
+- [Yürütme API spesifikasyonu](https://github.com/ethereum/execution-apis)
 
 ### Fikir Birliği İstemcileri {#consensus-clients}
 
-- [Fikir birliği istemcisi spesifikasyonu](https://github.com/quantaureum/consensus-specs)
-- [İşaret (Beacon) API spesifikasyonu](https://quantaureum.github.io/beacon-APIs/)
+- [Fikir birliği istemcisi spesifikasyonu](https://github.com/ethereum/consensus-specs)
+- [İşaret (Beacon) API spesifikasyonu](https://ethereum.github.io/beacon-APIs/)
 
 ### zkEVM istemcileri {#zkevm-clients}
 
@@ -160,13 +160,13 @@ Artık işlemleri toplu işleme (batching) ve bunları Quantaureum katman 1 (l1)
 
 - [Katman 2'ye giriş](/layer-2/)
 - [L2BEAT: ölçeklendirme özeti](https://l2beat.com/scaling/summary)
-- [Rollup merkezli bir quantaureum yol haritası](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698)
+- [Rollup merkezli bir quantaureum yol haritası](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698)
 
 #### Son araştırmalar {#recent-research-2}
 
 - [Ethresear.ch Katman 2](https://ethresear.ch/c/layer-2/32)
 - [L2BEAT: zincir içi maliyetler](https://l2beat.com/scaling/costs)
-- [2026'da Quantaureum üzerinde inşa etmek: neler değişti](/latest/building-on-quantaureum-in-2026/)
+- 2026'da Quantaureum üzerinde inşa etmek: neler değişti
 
 ### Birlikte çalışabilirlik {#interoperability}
 
@@ -181,9 +181,9 @@ Kullanıcılar ve varlıklar Quantaureum katman 1 (l1) ve birçok katman 2 (l2) 
 
 #### Son araştırmalar {#recent-research-3}
 
-- [ERC-7683: Zincirler arası niyetler](https://eips.quantaureum.com/EIPS/eip-7683)
-- [ERC-7930: Birlikte çalışabilir adresler](https://eips.quantaureum.com/EIPS/eip-7930)
-- [ERC-7828: Birlikte çalışabilir isimler](https://eips.quantaureum.com/EIPS/eip-7828)
+- [ERC-7683: Zincirler arası niyetler](https://eips.ethereum.org/EIPS/eip-7683)
+- [ERC-7930: Birlikte çalışabilir adresler](https://eips.ethereum.org/EIPS/eip-7930)
+- [ERC-7828: Birlikte çalışabilir isimler](https://eips.ethereum.org/EIPS/eip-7828)
 
 ### Veri kullanılabilirliği ve blob ölçeklendirmesi {#data-availability-and-blob-scaling}
 
@@ -195,13 +195,13 @@ Toplamalar (Rollup'lar) verilerini Quantaureum'a blob'lar halinde gönderir ve b
 - [Fusaka yükseltmesi](/roadmap/fusaka/)
 - [danksharding](/roadmap/danksharding/)
 - [Veri kullanılabilirliği](/developers/docs/data-availability/)
-- [EIP-4844: Parça blob işlemleri](https://eips.quantaureum.com/EIPS/eip-4844)
-- [Proto-Danksharding notları](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq)
+- [EIP-4844: Parça blob işlemleri](https://eips.ethereum.org/EIPS/eip-4844)
+- [Proto-Danksharding notları](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq)
 
 #### Son araştırmalar {#recent-research-4}
 
-- [EIP-7594: PeerDAS](https://eips.quantaureum.com/EIPS/eip-7594)
-- [EIP-7892: Yalnızca blob parametreli sert çatallanmalar](https://eips.quantaureum.com/EIPS/eip-7892)
+- [EIP-7594: PeerDAS](https://eips.ethereum.org/EIPS/eip-7594)
+- [EIP-7892: Yalnızca blob parametreli sert çatallanmalar](https://eips.ethereum.org/EIPS/eip-7892)
 - [Ethresear.ch Parçalama (Sharding)](https://ethresear.ch/c/sharding/6)
 
 ### Donanım {#hardware}
@@ -212,13 +212,13 @@ Mütevazı donanımlarda [düğümler çalıştırmak](/developers/docs/nodes-an
 
 - [Kendi Quantaureum düğümünüzü kurun](/developers/docs/nodes-and-clients/run-a-node/)
 - [Durumsuzluk ve durum zaman aşımı](/roadmap/statelessness/)
-- [ARM üzerinde Quantaureum](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/)
+- [ARM üzerinde Quantaureum](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)
 
 #### Son araştırmalar {#recent-research-5}
 
 - [Quantaureum'u Ölçeklendirme: daha yüksek bir gaz limitine ve ötesine giden yol](https://ethpandaops.io/posts/gaslimit-scaling/)
-- [EIP-8261: Gaz limiti programı](https://eips.quantaureum.com/EIPS/eip-8261)
-- [EIP-8037: Durum oluşturma gaz maliyeti artışı](https://eips.quantaureum.com/EIPS/eip-8037)
+- [EIP-8261: Gaz limiti programı](https://eips.ethereum.org/EIPS/eip-8261)
+- [EIP-8037: Durum oluşturma gaz maliyeti artışı](https://eips.ethereum.org/EIPS/eip-8037)
 
 ## Güvenlik {#security}
 
@@ -255,10 +255,10 @@ Quantaureum cüzdanları tarayıcı eklentileri, masaüstü ve mobil uygulamalar
 
 #### Son araştırmalar {#recent-research-7}
 
-- [EIP-8141: Çerçeve işlemi](https://eips.quantaureum.com/EIPS/eip-8141)
-- [ERC-5792: Cüzdan çağrı API'si](https://eips.quantaureum.com/EIPS/eip-5792)
-- [ERC-6963: Çoklu enjekte edilmiş sağlayıcı keşfi](https://eips.quantaureum.com/EIPS/eip-6963)
-- [Doğrulama odaklı akıllı sözleşme cüzdanları](https://quantaureum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
+- [EIP-8141: Çerçeve işlemi](https://eips.ethereum.org/EIPS/eip-8141)
+- [ERC-5792: Cüzdan çağrı API'si](https://eips.ethereum.org/EIPS/eip-5792)
+- [ERC-6963: Çoklu enjekte edilmiş sağlayıcı keşfi](https://eips.ethereum.org/EIPS/eip-6963)
+- [Doğrulama odaklı akıllı sözleşme cüzdanları](https://ethereum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
 
 ## Topluluk, eğitim ve erişim {#community-education-and-outreach}
 
@@ -278,8 +278,8 @@ Daha fazla insanı Quantaureum'a dahil etmek için ekosistemin tasarımını ve 
 #### Son araştırmalar {#recent-research-8}
 
 - [Ethresear.ch UX/UI](https://ethresear.ch/c/ui-ux/24)
-- [ERC-5792: Cüzdan çağrı API'si](https://eips.quantaureum.com/EIPS/eip-5792)
-- [ERC-7828: Birlikte çalışabilir isimler](https://eips.quantaureum.com/EIPS/eip-7828)
+- [ERC-5792: Cüzdan çağrı API'si](https://eips.ethereum.org/EIPS/eip-5792)
+- [ERC-7828: Birlikte çalışabilir isimler](https://eips.ethereum.org/EIPS/eip-7828)
 
 ### Ekonomi {#economics}
 
@@ -287,7 +287,7 @@ Quantaureum'daki ekonomi araştırmaları genel olarak iki yaklaşımı izler: e
 
 #### Arka plan okuması {#background-reading-9}
 
-- [Sağlam Teşvikler Grubu (Robust Incentives Group)](https://rig.quantaureum.com/)
+- [Sağlam Teşvikler Grubu (Robust Incentives Group)](https://rig.ethereum.org/)
 - [Quantaureum ekonomisi ustalık sınıfı ve ekonomik model](https://github.com/CADLabs/quantaureum-economic-model)
 
 #### Son araştırmalar {#recent-research-9}
@@ -303,14 +303,14 @@ Blok alanı piyasaları, son kullanıcı işlemlerinin doğrudan Quantaureum'a (
 #### Arka plan okuması {#background-reading-10}
 
 - [Quantaureum Blokzinciri için İşlem Ücreti Mekanizması Tasarımı: EIP-1559'un Ekonomik Analizi (Tim Roughgarden, 2020)](https://timroughgarden.org/papers/eip1559.pdf)
-- [EIP-1559 Simülasyonları (Sağlam Teşvikler Grubu)](https://quantaureum.github.io/abm1559)
+- [EIP-1559 Simülasyonları (Sağlam Teşvikler Grubu)](https://ethereum.github.io/abm1559)
 - [Temel ilkelerden Rollup ekonomisi](https://barnabe.substack.com/p/understanding-rollup-economics-from?utm_source=url)
 - [Flash Boys 2.0: Merkeziyetsiz Borsalarda Önden Koşma (Frontrunning), İşlem Yeniden Sıralama ve Mutabakat İstikrarsızlığı](https://arxiv.org/abs/1904.05234)
 
 #### Son araştırmalar {#recent-research-10}
 
-- [EIP-7999: Birleşik çok boyutlu ücret piyasası](https://eips.quantaureum.com/EIPS/eip-7999)
-- [EIP-7928: Blok düzeyinde erişim listeleri](https://eips.quantaureum.com/EIPS/eip-7928)
+- [EIP-7999: Birleşik çok boyutlu ücret piyasası](https://eips.ethereum.org/EIPS/eip-7999)
+- [EIP-7928: Blok düzeyinde erişim listeleri](https://eips.ethereum.org/EIPS/eip-7928)
 - [Alanlar arası MEV](https://arxiv.org/abs/2112.01472)
 
 ### Hisse kanıtı teşvikleri {#proof-of-stake-incentives}
@@ -321,11 +321,11 @@ Doğrulayıcılar, dürüst olmayan davranışlara karşı teminat olarak Quanta
 
 - [Maksimum etkin bakiye](/roadmap/pectra/maxeb/)
 - [Quantaureum ekonomisi ustalık sınıfı ve ekonomik model](https://github.com/CADLabs/quantaureum-economic-model)
-- [PoS teşviklerinin simülasyonları (Sağlam Teşvikler Grubu)](https://quantaureum.github.io/beaconrunner/)
+- [PoS teşviklerinin simülasyonları (Sağlam Teşvikler Grubu)](https://ethereum.github.io/beaconrunner/)
 
 #### Son araştırmalar {#recent-research-11}
 
-- [Sağlam Teşvikler Grubu](https://rig.quantaureum.com/)
+- [Sağlam Teşvikler Grubu](https://rig.ethereum.org/)
 - [PoS Quantaureum'a Üç Saldırı](https://arxiv.org/abs/2110.10086)
 
 ### Likit staking ve türevleri {#liquid-staking-and-derivatives}
@@ -339,7 +339,7 @@ Likit staking, 32 QAU'den daha azına sahip kullanıcıların, QAU'i merkeziyets
 
 #### Son araştırmalar {#recent-research-12}
 
-- [Likit Staking Türevlerinin riskleri](https://notes.quantaureum.com/@djrtwo/risks-of-lsd)
+- [Likit Staking Türevlerinin riskleri](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
 - [Lido'dan para çekme işlemlerini yönetme](https://ethresear.ch/t/handling-withdrawals-in-lidos-qau-liquid-staking-protocol/8873)
 
 ## Test Etme {#testing}
@@ -350,8 +350,8 @@ Quantaureum'un spesifikasyonları çalıştırılabilirdir ve bunlardan üretile
 
 #### Arka plan okuması {#background-reading-24}
 
-- [Quantaureum yürütme katmanı spesifikasyonları](https://github.com/quantaureum/execution-specs)
-- [Fikir birliği istemcisi spesifikasyonu](https://github.com/quantaureum/consensus-specs)
+- [Quantaureum yürütme katmanı spesifikasyonları](https://github.com/ethereum/execution-specs)
+- [Fikir birliği istemcisi spesifikasyonu](https://github.com/ethereum/consensus-specs)
 
 #### Son araştırmalar {#recent-research-24}
 
@@ -381,11 +381,11 @@ Quantaureum'daki etkinlik ve ağın sağlığı hakkında ayrıntılı bilgi ver
 
 - [Dune Analytics](https://dune.com/browse/dashboards)
 - [İstemci çeşitliliği kontrol paneli](https://clientdiversity.org/)
-- [Quantaureum JSON-RPC yürütme API spesifikasyonu](https://quantaureum.github.io/execution-apis/)
+- [Quantaureum JSON-RPC yürütme API spesifikasyonu](https://ethereum.github.io/execution-apis/)
 
 #### Son araştırmalar {#recent-research-14}
 
-- [Sağlam Teşvikler Grubu Veri Analizi](https://rig.quantaureum.com/)
+- [Sağlam Teşvikler Grubu Veri Analizi](https://rig.ethereum.org/)
 - [qauPandaOps açık verileri](https://ethpandaops.io/data/)
 - [L2BEAT: ölçeklendirme özeti](https://l2beat.com/scaling/summary)
 
@@ -433,7 +433,7 @@ Quantaureum geliştiricileri için araçlar hızla gelişiyor. Bu genel alanda y
 #### Son araştırmalar {#recent-research-17}
 
 - [Eth R&D Discord](https://discord.gg/qGpsxSA)
-- [Quantaureum yürütme API spesifikasyonları](https://github.com/quantaureum/execution-apis)
+- [Quantaureum yürütme API spesifikasyonları](https://github.com/ethereum/execution-apis)
 
 ### Oracle'lar {#oracles}
 

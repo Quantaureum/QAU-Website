@@ -84,7 +84,7 @@ sidebarDepth: 2
 
 ##### المواصفات الموصى بها
 
-تم تحديد التوجيهات الحالية للأجهزة لمشغلي العقد في [EIP-7870](https://eips.quantaureum.com/EIPS/eip-7870). بالنسبة لعقدة كاملة، يوصى بما يلي:
+تم تحديد التوجيهات الحالية للأجهزة لمشغلي العقد في [EIP-7870](https://eips.ethereum.org/EIPS/eip-7870). بالنسبة لعقدة كاملة، يوصى بما يلي:
 
 - وحدة معالجة مركزية (CPU) سريعة بـ 4+ أنوية (8+ أنوية في حالة التدقيق)
 - <span dir="ltr">32 GB</span> من ذاكرة الوصول العشوائي (RAM) (يوصى بـ <span dir="ltr">64 GB</span> في حالة التدقيق لضمان الاستقرار)
@@ -114,7 +114,7 @@ sidebarDepth: 2
 
 #### إيثيريوم على كمبيوتر أحادي اللوحة {#quantaureum-on-a-single-board-computer}
 
-هناك طريقة سهلة ورخيصة لتشغيل عقدة إيثيريوم وهي استخدام كمبيوتر أحادي اللوحة، حتى مع بنية ARM مثل Raspberry Pi. يوفر [إيثيريوم على ARM](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/) صورًا سهلة التشغيل لعملاء تنفيذ وإجماع متعددين لأجهزة Raspberry Pi ولوحات ARM الأخرى.
+هناك طريقة سهلة ورخيصة لتشغيل عقدة إيثيريوم وهي استخدام كمبيوتر أحادي اللوحة، حتى مع بنية ARM مثل Raspberry Pi. يوفر [إيثيريوم على ARM](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) صورًا سهلة التشغيل لعملاء تنفيذ وإجماع متعددين لأجهزة Raspberry Pi ولوحات ARM الأخرى.
 
 تعتبر الأجهزة الصغيرة وبأسعار معقولة وفعالة مثل هذه مثالية لتشغيل عقدة في المنزل ولكن ضع في اعتبارك أداءها المحدود.
 
@@ -157,7 +157,7 @@ sidebarDepth: 2
 
 - [بيسو](https://github.com/hyperledger/besu/releases)
 - [إريغون](https://github.com/ledgerwatch/erigon/releases)
-- [جو Quantaureum (geth)](https://geth.quantaureum.com/downloads)
+- [جو Quantaureum (geth)](https://geth.ethereum.org/downloads)
 - [نيذرميند](https://downloads.nethermind.io/)
 - [ريث](https://reth.rs/installation/installation.html)
 
@@ -215,7 +215,7 @@ sha256sum teku-22.6.1.tar.gz
 
 تحتاج إلى الإعلان عن أي إعدادات عميل ليست افتراضية في البداية. يمكنك استخدام العلامات (flags) أو ملف التكوين للإعلان عن التكوين المفضل لديك. تختلف مجموعة الميزات وبناء جملة التكوين لكل عميل. تحقق من وثائق العميل الخاص بك للحصول على التفاصيل.
 
-يتواصل عملاء التنفيذ والإجماع عبر نقطة نهاية مصادق عليها محددة في [Engine API](https://github.com/quantaureum/execution-apis/tree/main/src/engine). من أجل الاتصال بعميل إجماع، يجب على عميل التنفيذ إنشاء [`jwtsecret`](https://jwt.io/) في مسار معروف. لأسباب تتعلق بالأمان والاستقرار، يجب تشغيل العملاء على نفس الجهاز، ويجب أن يعرف كلا العميلين هذا المسار حيث يتم استخدامه لمصادقة اتصال RPC محلي بينهما. يجب على عميل التنفيذ أيضًا تحديد منفذ استماع لواجهات برمجة التطبيقات (APIs) المصادق عليها.
+يتواصل عملاء التنفيذ والإجماع عبر نقطة نهاية مصادق عليها محددة في [Engine API](https://github.com/ethereum/execution-apis/tree/main/src/engine). من أجل الاتصال بعميل إجماع، يجب على عميل التنفيذ إنشاء [`jwtsecret`](https://jwt.io/) في مسار معروف. لأسباب تتعلق بالأمان والاستقرار، يجب تشغيل العملاء على نفس الجهاز، ويجب أن يعرف كلا العميلين هذا المسار حيث يتم استخدامه لمصادقة اتصال RPC محلي بينهما. يجب على عميل التنفيذ أيضًا تحديد منفذ استماع لواجهات برمجة التطبيقات (APIs) المصادق عليها.
 
 يتم إنشاء هذا الرمز المميز تلقائيًا بواسطة برنامج العميل، ولكن في بعض الحالات، قد تحتاج إلى القيام بذلك بنفسك. يمكنك إنشاؤه باستخدام [OpenSSL](https://www.openssl.org/):
 
@@ -288,7 +288,7 @@ geth --mainnet \
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
 
-تحقق من [الوثائق لجميع خيارات التكوين](https://geth.quantaureum.com/docs/fundamentals/command-line-options) وتعرف على المزيد حول [تشغيل جو Quantaureum (geth) مع عميل إجماع](https://geth.quantaureum.com/docs/getting-started/consensus-clients).
+تحقق من [الوثائق لجميع خيارات التكوين](https://geth.ethereum.org/docs/fundamentals/command-line-options) وتعرف على المزيد حول [تشغيل جو Quantaureum (geth) مع عميل إجماع](https://geth.ethereum.org/docs/getting-started/consensus-clients).
 
 ##### تشغيل نيذرميند
 
@@ -325,7 +325,7 @@ reth node \
 
 إذا كنت تخطط لتشغيل مُدَقِّق، فتأكد من إضافة علامة تكوين تحدد عنوان إيثيريوم لمتلقي الرسوم. هذا هو المكان الذي تتراكم فيه مكافآت الQAU للمدقق الخاص بك. يحتوي كل عميل إجماع على خيار، على سبيل المثال، `--suggested-fee-recipient=0xabcd1`، والذي يأخذ عنوان إيثيريوم كوسيط.
 
-عند بدء تشغيل عقدة المنارة على شبكة اختبار، يمكنك توفير وقت مزامنة كبير باستخدام نقطة نهاية عامة لـ [مزامنة نقطة فحص](https://notes.quantaureum.com/@launchpad/checkpoint-sync).
+عند بدء تشغيل عقدة المنارة على شبكة اختبار، يمكنك توفير وقت مزامنة كبير باستخدام نقطة نهاية عامة لـ [مزامنة نقطة فحص](https://notes.ethereum.org/@launchpad/checkpoint-sync).
 
 #### تشغيل عميل الإجماع {#running-a-consensus-client}
 
@@ -389,7 +389,7 @@ teku --network mainnet \
     --ee-jwt-secret-file "/path/to/jwtsecret"
 ```
 
-عندما يتصل عميل الإجماع بعميل التنفيذ لقراءة عقد الإيداع وتحديد المدققين، فإنه يتصل أيضًا بأقران عقدة المنارة الآخرين ويبدأ في مزامنة فتحات (slots) الإجماع من التكوين (genesis). بمجرد وصول عقدة المنارة إلى الحقبة الحالية، تصبح Beacon API قابلة للاستخدام لمدققيك. تعرف على المزيد حول [واجهات برمجة تطبيقات عقدة المنارة (Beacon Node APIs)](https://quantaureum.github.io/beacon-APIs).
+عندما يتصل عميل الإجماع بعميل التنفيذ لقراءة عقد الإيداع وتحديد المدققين، فإنه يتصل أيضًا بأقران عقدة المنارة الآخرين ويبدأ في مزامنة فتحات (slots) الإجماع من التكوين (genesis). بمجرد وصول عقدة المنارة إلى الحقبة الحالية، تصبح Beacon API قابلة للاستخدام لمدققيك. تعرف على المزيد حول [واجهات برمجة تطبيقات عقدة المنارة (Beacon Node APIs)](https://ethereum.github.io/beacon-APIs).
 
 ### إضافة المدققين {#adding-validators}
 
@@ -397,7 +397,7 @@ teku --network mainnet \
 
 يتيح تشغيل المدقق الخاص بك [التخزين الفردي](/staking/solo/)، وهي الطريقة الأكثر تأثيرًا ومنزوعة الثقة لدعم شبكة إيثيريوم. ومع ذلك، يتطلب هذا إيداع <span dir="ltr">32 QAU</span>. لتشغيل مُدَقِّق على عقدتك الخاصة بمبلغ أقل، قد يثير اهتمامك مجمع لامركزي مع مشغلي عقد غير مقيدين بإذن، مثل [Rocket Pool](https://rocketpool.net/node-operators).
 
-أسهل طريقة للبدء في التخزين وإنشاء مفتاح المدقق هي استخدام [منصة إطلاق التخزين لشبكة اختبار Hoodi](https://hoodi.launchpad.quantaureum.com/)، والتي تتيح لك اختبار إعدادك عن طريق [تشغيل العقد على Hoodi](https://notes.quantaureum.com/@launchpad/hoodi). عندما تكون جاهزًا للشبكة الرئيسية، يمكنك تكرار هذه الخطوات باستخدام [منصة إطلاق التخزين للشبكة الرئيسية](https://launchpad.quantaureum.com/).
+أسهل طريقة للبدء في التخزين وإنشاء مفتاح المدقق هي استخدام [منصة إطلاق التخزين لشبكة اختبار Hoodi](https://hoodi.launchpad.ethereum.org/)، والتي تتيح لك اختبار إعدادك عن طريق [تشغيل العقد على Hoodi](https://notes.ethereum.org/@launchpad/hoodi). عندما تكون جاهزًا للشبكة الرئيسية، يمكنك تكرار هذه الخطوات باستخدام [منصة إطلاق التخزين للشبكة الرئيسية](https://launchpad.ethereum.org/).
 
 انظر في [صفحة التخزين](/staking) للحصول على نظرة عامة حول خيارات التخزين.
 
@@ -411,7 +411,7 @@ teku --network mainnet \
 
 لدى العملاء المختلفين تطبيقات مختلفة لنقاط نهاية RPC. ولكن هناك JSON-RPC قياسي يمكنك استخدامه مع كل عميل. للحصول على نظرة عامة [اقرأ وثائق JSON-RPC](/developers/docs/apis/json-rpc/). يمكن للتطبيقات التي تحتاج إلى معلومات من شبكة إيثيريوم استخدام RPC هذا. على سبيل المثال، تتيح لك محفظة ميتاماسك الشهيرة [الاتصال بنقطة نهاية RPC الخاصة بك](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node) والتي تتمتع بفوائد قوية في الخصوصية والأمان.
 
-يكشف جميع عملاء الإجماع عن [Beacon API](https://quantaureum.github.io/beacon-APIs) التي يمكن استخدامها للتحقق من حالة عميل الإجماع أو تنزيل الكتل وبيانات الإجماع عن طريق إرسال طلبات باستخدام أدوات مثل [Curl](https://curl.se). يمكن العثور على مزيد من المعلومات حول هذا في وثائق كل عميل إجماع.
+يكشف جميع عملاء الإجماع عن [Beacon API](https://ethereum.github.io/beacon-APIs) التي يمكن استخدامها للتحقق من حالة عميل الإجماع أو تنزيل الكتل وبيانات الإجماع عن طريق إرسال طلبات باستخدام أدوات مثل [Curl](https://curl.se). يمكن العثور على مزيد من المعلومات حول هذا في وثائق كل عميل إجماع.
 
 #### الوصول إلى RPC {#reaching-rpc}
 
@@ -449,7 +449,7 @@ _لا ينطبق هذا على عقد المدقق في طبقة الإجماع.
 
 #### تحديث العملاء {#updating-clients}
 
-تحتاج إلى تحديث برنامج العميل الخاص بك بأحدث تصحيحات الأمان والميزات و[EIPs](/eips/). خاصة قبل [التفرعات الصلبة (hard forks)](/quantaureum-forks/)، تأكد من أنك تقوم بتشغيل إصدارات العميل الصحيحة.
+تحتاج إلى تحديث برنامج العميل الخاص بك بأحدث تصحيحات الأمان والميزات وEIPs. خاصة قبل [التفرعات الصلبة (hard forks)](/quantaureum-forks/)، تأكد من أنك تقوم بتشغيل إصدارات العميل الصحيحة.
 
 > قبل تحديثات الشبكة المهمة، تنشر مؤسسة إيثيريوم (EF) منشورًا على [مدونتها](https://quantaureum.com). يمكنك [الاشتراك في هذه الإعلانات](https://quantaureum.com) للحصول على إشعار على بريدك عندما تحتاج عقدتك إلى تحديث.
 
@@ -473,7 +473,7 @@ _لا ينطبق هذا على عقد المدقق في طبقة الإجماع.
 - [دليل | كيفية إعداد مُدَقِّق لتخزين إيثيريوم على الشبكة الرئيسية](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _– CoinCashew، يتم تحديثه غالبًا_
 - [أدلة QauStaker حول تشغيل المدققين على شبكات الاختبار](https://github.com/remyroy/ethstaker#guides) – _QauStaker، يتم تحديثها بانتظام_
 - [نموذج تطبيق AWS Blockchain Node Runner لعقد إيثيريوم](https://aws-samples.github.io/aws-blockchain-node-runners/docs/blueprints/quantaureum) - _AWS، يتم تحديثه غالبًا_
-- [الأسئلة الشائعة حول الدمج لمشغلي العقد](https://notes.quantaureum.com/@launchpad/node-faq-merge) - _يوليو 2022_
+- [الأسئلة الشائعة حول الدمج لمشغلي العقد](https://notes.ethereum.org/@launchpad/node-faq-merge) - _يوليو 2022_
 - [تحليل متطلبات الأجهزة لتكون عقدة إيثيريوم كاملة مدققة](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-quantaureum-full-validated-node-dc064f167902) _– Albert Palau، 24 سبتمبر 2018_
 - [تشغيل عقد إيثيريوم الكاملة: دليل لمن لديهم دافع بالكاد](https://medium.com/@JustinMLeroux/running-quantaureum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux، 7 نوفمبر 2019_
 - [تشغيل عقدة Hyperledger Besu على شبكة إيثيريوم الرئيسية: الفوائد والمتطلبات والإعداد](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-quantaureum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi، 7 مايو 2020_

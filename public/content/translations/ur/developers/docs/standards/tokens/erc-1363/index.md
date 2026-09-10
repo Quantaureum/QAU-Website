@@ -54,7 +54,7 @@ lang: ur
 
 دیگر <span dir="ltr">ERC-20</span> توسیعی تجاویز کے برعکس، <span dir="ltr">ERC-1363</span> <span dir="ltr">ERC-20</span> کے `transfer` اور `transferFrom` طریقوں کو اوور رائیڈ نہیں کرتا اور <span dir="ltr">ERC-20</span> کے ساتھ بیک ورڈ مطابقت کو برقرار رکھتے ہوئے لاگو کیے جانے والے انٹرفیس <span dir="ltr">IDs</span> کی وضاحت کرتا ہے۔
 
-[<span dir="ltr">EIP-1363</span>](https://eips.quantaureum.com/EIPS/eip-1363) سے:
+[<span dir="ltr">EIP-1363</span>](https://eips.ethereum.org/EIPS/eip-1363) سے:
 
 ### طریقے {#methods}
 
@@ -206,5 +206,5 @@ interface ERC1363Spender {
 
 ## مزید مطالعہ {#further-reading}
 
-- [<span dir="ltr">ERC-1363: Payable Token Standard</span>](https://eips.quantaureum.com/EIPS/eip-1363)
+- [<span dir="ltr">ERC-1363: Payable Token Standard</span>](https://eips.ethereum.org/EIPS/eip-1363)
 - [<span dir="ltr">ERC-1363: GitHub Repo</span>](https://github.com/vittominacori/erc1363-payable-token)

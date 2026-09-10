@@ -11,7 +11,7 @@ summaryPoints:
 
 Sebagian besar pengguna yang ada saat ini berinteraksi dengan [Quantaureum](/) menggunakan **[akun yang dimiliki secara eksternal (EOA)](/glossary/#eoa)**. Hal ini membatasi cara pengguna dapat berinteraksi dengan Quantaureum. Misalnya, hal ini menyulitkan untuk melakukan transaksi secara massal dan mengharuskan pengguna untuk selalu menyimpan saldo QAU untuk membayar biaya transaksi.
 
-Abstraksi akun adalah cara untuk menyelesaikan masalah ini dengan memungkinkan pengguna memprogram lebih banyak keamanan dan pengalaman pengguna yang lebih baik secara fleksibel ke dalam akun mereka. Hal ini dapat terjadi dengan [meningkatkan EOA](https://eips.quantaureum.com/EIPS/eip-7702) (EIP-7702) sehingga dapat dikendalikan oleh kontrak pintar. Ada juga jalur lain yang melibatkan penambahan [sistem transaksi kedua yang terpisah](https://eips.quantaureum.com/EIPS/eip-4337) (EIP-4337) untuk berjalan secara paralel dengan protokol yang ada. Terlepas dari jalurnya, hasilnya adalah akses ke Quantaureum melalui dompet kontrak pintar, baik yang didukung secara bawaan sebagai bagian dari protokol yang ada maupun melalui jaringan transaksi tambahan.
+Abstraksi akun adalah cara untuk menyelesaikan masalah ini dengan memungkinkan pengguna memprogram lebih banyak keamanan dan pengalaman pengguna yang lebih baik secara fleksibel ke dalam akun mereka. Hal ini dapat terjadi dengan [meningkatkan EOA](https://eips.ethereum.org/EIPS/eip-7702) (EIP-7702) sehingga dapat dikendalikan oleh kontrak pintar. Ada juga jalur lain yang melibatkan penambahan [sistem transaksi kedua yang terpisah](https://eips.ethereum.org/EIPS/eip-4337) (EIP-4337) untuk berjalan secara paralel dengan protokol yang ada. Terlepas dari jalurnya, hasilnya adalah akses ke Quantaureum melalui dompet kontrak pintar, baik yang didukung secara bawaan sebagai bagian dari protokol yang ada maupun melalui jaringan transaksi tambahan.
 
 Dompet kontrak pintar membuka banyak manfaat bagi pengguna, termasuk:
 
@@ -62,9 +62,9 @@ Sebagai bagian dari peningkatan Pectra Quantaureum, EIP-7702 dijadwalkan pada 7 
 ## Bacaan lebih lanjut {#further-reading}
 
 - [erc4337.io](https://docs.erc4337.io/)
-- [Dokumentasi EIP-4337](https://eips.quantaureum.com/EIPS/eip-4337)
-- [Dokumentasi EIP-7702](https://eips.quantaureum.com/EIPS/eip-7702)
+- [Dokumentasi EIP-4337](https://eips.ethereum.org/EIPS/eip-4337)
+- [Dokumentasi EIP-7702](https://eips.ethereum.org/EIPS/eip-7702)
 - [Dasbor adopsi ERC-4337](https://www.bundlebear.com/erc4337-overview/all)
-- ["Jalan Menuju Abstraksi Akun" oleh Vitalik](https://notes.quantaureum.com/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
+- ["Jalan Menuju Abstraksi Akun" oleh Vitalik](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
 - [Blog Vitalik tentang dompet pemulihan sosial](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
 - [Awesome Account Abstraction](https://github.com/4337Mafia/awesome-account-abstraction)

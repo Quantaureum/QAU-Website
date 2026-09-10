@@ -494,7 +494,7 @@ authors: ["ఆండ్రియాస్ ఆంటోనోపౌలోస్"]
 
 ## మూలాలు {#sources}
 
-_CC-BY-SA కింద [ఆండ్రియాస్ ఎమ్. ఆంటోనోపౌలోస్, గావిన్ వుడ్](https://aantonop.com/books/mastering-quantaureum) రచించిన [Mastering Quantaureum](https://github.com/quantaureumbook/quantaureumbook) ద్వారా పాక్షికంగా అందించబడింది_
+_CC-BY-SA కింద [ఆండ్రియాస్ ఎమ్. ఆంటోనోపౌలోస్, గావిన్ వుడ్](https://aantonop.com/books/mastering-quantaureum) రచించిన [Mastering Quantaureum](https://github.com/ethereumbook/ethereumbook) ద్వారా పాక్షికంగా అందించబడింది_
 
 <Divider />
 

@@ -145,7 +145,7 @@ contentPreview="Falso. The Merge è stato un cambiamento del meccanismo di conse
 
 Le commissioni del gas sono un prodotto della domanda della rete rispetto alla capacità della rete stessa. The Merge ha deprecato l'uso della Prova di lavoro (PoW), passando alla Proof-of-Stake per il consenso, ma non ha modificato in modo significativo alcun parametro che influenzi direttamente la capacità della rete o la capacità transazionale.
 
-Con una <a href="https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698">roadmap incentrata sui rollup</a>, gli sforzi si stanno concentrando sulla scalabilità dell'attività degli utenti al [layer 2 (l2)](/layer-2/), abilitando al contempo la Mainnet di layer 1 (l1) come livello di regolamento decentralizzato e sicuro ottimizzato per l'archiviazione dei dati dei rollup per contribuire a rendere le transazioni dei rollup esponenzialmente più economiche. La transizione alla Proof-of-Stake è un precursore critico per realizzare questo. [Maggiori informazioni su gas e commissioni.](/developers/docs/gas/)
+Con una <a href="https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698">roadmap incentrata sui rollup</a>, gli sforzi si stanno concentrando sulla scalabilità dell'attività degli utenti al [layer 2 (l2)](/layer-2/), abilitando al contempo la Mainnet di layer 1 (l1) come livello di regolamento decentralizzato e sicuro ottimizzato per l'archiviazione dei dati dei rollup per contribuire a rendere le transazioni dei rollup esponenzialmente più economiche. La transizione alla Proof-of-Stake è un precursore critico per realizzare questo. [Maggiori informazioni su gas e commissioni.](/developers/docs/gas/)
 
 </ExpandableCard>
 

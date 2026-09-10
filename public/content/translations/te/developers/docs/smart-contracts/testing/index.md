@@ -138,9 +138,9 @@ function auctionEnd() external {
 
 Solidity స్మార్ట్ కాంట్రాక్ట్‌ల కోసం యూనిట్ టెస్టింగ్ ఫ్రేమ్‌వర్క్‌లు విభిన్న భాషలలో (ఎక్కువగా JavaScript, Python మరియు Rust) వస్తాయి. విభిన్న టెస్టింగ్ ఫ్రేమ్‌వర్క్‌లతో యూనిట్ టెస్ట్‌లను అమలు చేయడం ఎలా ప్రారంభించాలో సమాచారం కోసం దిగువన ఉన్న కొన్ని మార్గదర్శకాలను చూడండి:
 
-- **[Brownie తో యూనిట్ టెస్ట్‌లను అమలు చేయడం](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Brownie తో యూనిట్ టెస్ట్‌లను అమలు చేయడం](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Foundry తో యూనిట్ టెస్ట్‌లను అమలు చేయడం](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Waffle తో యూనిట్ టెస్ట్‌లను అమలు చేయడం](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Waffle తో యూనిట్ టెస్ట్‌లను అమలు చేయడం](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Remix తో యూనిట్ టెస్ట్‌లను అమలు చేయడం](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Ape తో యూనిట్ టెస్ట్‌లను అమలు చేయడం](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Hardhat తో యూనిట్ టెస్ట్‌లను అమలు చేయడం](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -190,7 +190,7 @@ Solidity స్మార్ట్ కాంట్రాక్ట్‌ల కో
 
 - **[స్లిదర్ తో స్మార్ట్ కాంట్రాక్ట్‌ల స్టాటిక్ అనాలిసిస్](https://github.com/crytic/slither)**
 - **[Wake తో స్మార్ట్ కాంట్రాక్ట్‌ల స్టాటిక్ అనాలిసిస్](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[Brownie తో ప్రాపర్టీ-ఆధారిత టెస్టింగ్](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Brownie తో ప్రాపర్టీ-ఆధారిత టెస్టింగ్](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Foundry తో కాంట్రాక్ట్‌ల ఫజ్జింగ్](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[ఎకిడ్నా తో కాంట్రాక్ట్‌ల ఫజ్జింగ్](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Wake తో కాంట్రాక్ట్‌ల ఫజ్జింగ్](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -251,13 +251,13 @@ Solidity స్మార్ట్ కాంట్రాక్ట్‌ల కో
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Solidity లో వ్రాయబడిన స్మార్ట్ కాంట్రాక్ట్‌ల కోసం కోడ్ కవరేజ్ సాధనం._
 
-- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - _అధునాతన స్మార్ట్ కాంట్రాక్ట్ అభివృద్ధి మరియు టెస్టింగ్ కోసం ఫ్రేమ్‌వర్క్ (ethers.js ఆధారంగా)_.
+- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _అధునాతన స్మార్ట్ కాంట్రాక్ట్ అభివృద్ధి మరియు టెస్టింగ్ కోసం ఫ్రేమ్‌వర్క్ (ethers.js ఆధారంగా)_.
 
-- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - _Solidity స్మార్ట్ కాంట్రాక్ట్‌లను టెస్ట్ చేయడానికి సాధనం. కాంట్రాక్ట్ కోసం టెస్ట్ కేసులను రాయడానికి మరియు అమలు చేయడానికి ఉపయోగించే Remix IDE "Solidity Unit Testing" ప్లగిన్ క్రింద పనిచేస్తుంది._
+- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Solidity స్మార్ట్ కాంట్రాక్ట్‌లను టెస్ట్ చేయడానికి సాధనం. కాంట్రాక్ట్ కోసం టెస్ట్ కేసులను రాయడానికి మరియు అమలు చేయడానికి ఉపయోగించే Remix IDE "Solidity Unit Testing" ప్లగిన్ క్రింద పనిచేస్తుంది._
 
 - **[ఓపెన్‌జెప్పెలిన్ టెస్ట్ హెల్పర్స్](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _ఎథీరియం స్మార్ట్ కాంట్రాక్ట్ టెస్టింగ్ కోసం అసెర్షన్ లైబ్రరీ. మీ కాంట్రాక్ట్‌లు ఆశించిన విధంగా ప్రవర్తిస్తున్నాయని నిర్ధారించుకోండి!_
 
-- **[Brownie యూనిట్ టెస్టింగ్ ఫ్రేమ్‌వర్క్](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie Pytest ను ఉపయోగిస్తుంది, ఇది కనీస కోడ్‌తో చిన్న టెస్ట్‌లను రాయడానికి మిమ్మల్ని అనుమతించే ఫీచర్-రిచ్ టెస్ట్ ఫ్రేమ్‌వర్క్, పెద్ద ప్రాజెక్ట్‌ల కోసం బాగా స్కేల్ అవుతుంది మరియు అత్యంత విస్తరించదగినది._
+- **[Brownie యూనిట్ టెస్టింగ్ ఫ్రేమ్‌వర్క్](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie Pytest ను ఉపయోగిస్తుంది, ఇది కనీస కోడ్‌తో చిన్న టెస్ట్‌లను రాయడానికి మిమ్మల్ని అనుమతించే ఫీచర్-రిచ్ టెస్ట్ ఫ్రేమ్‌వర్క్, పెద్ద ప్రాజెక్ట్‌ల కోసం బాగా స్కేల్ అవుతుంది మరియు అత్యంత విస్తరించదగినది._
 
 - **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry Forge ను అందిస్తుంది, ఇది సాధారణ యూనిట్ టెస్ట్‌లు, గ్యాస్ ఆప్టిమైజేషన్ తనిఖీలు మరియు కాంట్రాక్ట్ ఫజ్జింగ్‌ను అమలు చేయగల వేగవంతమైన మరియు సౌకర్యవంతమైన ఎథీరియం టెస్టింగ్ ఫ్రేమ్‌వర్క్._
 

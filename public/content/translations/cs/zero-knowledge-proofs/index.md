@@ -13,7 +13,6 @@ Důkazy s nulovou znalostí se poprvé objevily v článku z roku 1985 „[The k
 
 Důkazy s nulovou znalostí se v průběhu let zdokonalily a nyní se používají v několika aplikacích v reálném světě.
 
-<VideoWatch slug="zero-knowledge-proofs-5-levels" />
 
 ## Proč potřebujeme důkazy s nulovou znalostí? {#why-zero-knowledge-proofs-are-important}
 
@@ -35,7 +34,7 @@ Kryptoměny měly uživatelům poskytnout prostředek k provádění soukromých
 
 Existují specifické „mince zaměřené na soukromí“ (privacy coins) navržené pro zcela anonymní transakce. Blockchainy zaměřené na soukromí, jako jsou Zcash a Monero, skrývají podrobnosti o transakcích, včetně adres odesílatele/příjemce, typu aktiva, množství a časové osy transakce.
 
-Zabudováním technologie s nulovým vědomím do protokolu umožňují [blockchainové](/glossary/#blockchain) sítě zaměřené na soukromí [uzlům](/glossary/#node) validovat transakce bez nutnosti přístupu k transakčním datům. [EIP-7503](https://eips.quantaureum.com/EIPS/eip-7503) je příkladem navrhovaného designu, který umožní nativní soukromé převody hodnoty na blockchainu [Quantaureum](/). Takové návrhy je však obtížné implementovat kvůli kombinaci obav o bezpečnost, regulaci a uživatelskou zkušenost (UX).  
+Zabudováním technologie s nulovým vědomím do protokolu umožňují [blockchainové](/glossary/#blockchain) sítě zaměřené na soukromí [uzlům](/glossary/#node) validovat transakce bez nutnosti přístupu k transakčním datům. [EIP-7503](https://eips.ethereum.org/EIPS/eip-7503) je příkladem navrhovaného designu, který umožní nativní soukromé převody hodnoty na blockchainu [Quantaureum](/). Takové návrhy je však obtížné implementovat kvůli kombinaci obav o bezpečnost, regulaci a uživatelskou zkušenost (UX).  
 
 **Důkazy s nulovou znalostí se také používají k anonymizaci transakcí na veřejných blockchainech**. Příkladem je Tornado Cash, decentralizovaná, nekustodiální služba, která uživatelům umožňuje provádět soukromé transakce na Ethereu. Tornado Cash používá důkazy s nulovou znalostí k zamlžení podrobností o transakcích a zaručení finančního soukromí. Bohužel, protože se jedná o nástroje pro soukromí typu „opt-in“ (na vyžádání), jsou spojovány s nezákonnou činností. Aby se to překonalo, soukromí se nakonec musí stát výchozím nastavením na veřejných blockchainech. Zjistěte více o [soukromí na Ethereu](/privacy/).
 

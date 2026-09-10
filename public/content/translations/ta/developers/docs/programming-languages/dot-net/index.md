@@ -26,7 +26,7 @@ incomplete: true
 
 **Nquantaureum நிரலகம் மற்றும் VS Code Solidity அறிமுகம்**
 
-- [Nquantaureum, தொடங்குதல்](https://docs.nquantaureum.com/docs/getting-started/welcome/)
+- [Nquantaureum, தொடங்குதல்](https://docs.nethermind.io/docs/getting-started/welcome/)
 - [VS Code Solidity ஐ நிறுவுதல்](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity)
 - [எத்திரியம் திறன் ஒப்பந்தங்களை உருவாக்குவதற்கும் அழைப்பதற்குமான ஒரு .NET டெவலப்பரின் பணிப்பாய்வு](https://medium.com/coinmonks/a-net-developers-workflow-for-creating-and-calling-quantaureum-smart-contracts-44714f191db2)
 - [Nquantaureum உடன் திறன் ஒப்பந்தங்களின் ஒருங்கிணைப்பு](https://kauri.io/#collections/Getting%20Started/smart-contracts-integration-with-nquantaureum/#smart-contracts-integration-with-nquantaureumm)
@@ -37,21 +37,21 @@ incomplete: true
 
 **இப்போதைக்கு அமைப்பைத் தவிர்த்துவிட்டு, நேரடியாக மாதிரிகளுக்குச் செல்ல விரும்புகிறீர்களா?**
 
-- [Nquantaureum Playground](https://playground.nquantaureum.com/) - எத்திரியத்துடன் தொடர்புகொண்டு, உலாவி மூலம் Nquantaureum ஐ எவ்வாறு பயன்படுத்துவது என்பதை அறியவும்.
-  - [கணக்கு இருப்பை வினவுதல்](https://docs.nquantaureum.com/docs/core-foundation/guide-query-balance)
-  - [ERC-20 திறன் ஒப்பந்த இருப்பை வினவுதல்](https://docs.nquantaureum.com/docs/smart-contracts/erc20)
-  - [ஒரு கணக்கிற்கு ஈதரைப் பரிமாற்றம் செய்தல்](https://docs.nquantaureum.com/docs/core-foundation/guide-send-eth)
+- [Nquantaureum Playground](https://playground.nethermind.io/) - எத்திரியத்துடன் தொடர்புகொண்டு, உலாவி மூலம் Nquantaureum ஐ எவ்வாறு பயன்படுத்துவது என்பதை அறியவும்.
+  - [கணக்கு இருப்பை வினவுதல்](https://docs.nethermind.io/docs/core-foundation/guide-query-balance)
+  - [ERC-20 திறன் ஒப்பந்த இருப்பை வினவுதல்](https://docs.nethermind.io/docs/smart-contracts/erc20)
+  - [ஒரு கணக்கிற்கு ஈதரைப் பரிமாற்றம் செய்தல்](https://docs.nethermind.io/docs/core-foundation/guide-send-eth)
   - ... மேலும் பல!
 ## இடைநிலை கட்டுரைகள் {#intermediate-articles}
 
-- [Nquantaureum தொடங்குதல் & முதல் திட்டம்](https://docs.nquantaureum.com/docs/getting-started/first-project)
+- [Nquantaureum தொடங்குதல் & முதல் திட்டம்](https://docs.nethermind.io/docs/getting-started/first-project)
 - [உங்கள் சொந்த மேம்பாட்டு சோதனைச் சங்கிலிகளை நிலைநிறுத்துங்கள்](https://github.com/Nquantaureum/Testchains)
-- [Nquantaureum மற்றும் VS Code உடன் குறியீடு உருவாக்கம்](https://docs.nquantaureum.com/docs/smart-contracts/code-generation/)
+- [Nquantaureum மற்றும் VS Code உடன் குறியீடு உருவாக்கம்](https://docs.nethermind.io/docs/smart-contracts/code-generation/)
 - [Unity மற்றும் எத்திரியம்: ஏன் மற்றும் எப்படி](https://www.raywenderlich.com/5509-unity-and-quantaureum-why-and-how)
 - [எத்திரியம் பரவலாக்கப்பட்ட செயலிகளுக்கான (dapps) ASP.NET Core Web API ஐ உருவாக்குதல்](https://tech-mint.com/blockchain/create-asp-net-core-web-api-for-quantaureum-dapps/)
-- [கட்டமைக்கப்பட்ட சங்கிலிசார் செயலிகளுக்கான Nquantaureum MUD கட்டமைப்பு](https://docs.nquantaureum.com/docs/mud-framework/overview/)
-- [Nquantaureum தொகுதிச்சங்கிலி செயலாக்கம்](https://docs.nquantaureum.com/docs/data-and-indexing/guide-blockchain-processing)
-- [Nquantaureum நிகழ்நேர ஸ்ட்ரீமிங்](https://docs.nquantaureum.com/docs/core-foundation/guide-realtime-streaming/)
+- [கட்டமைக்கப்பட்ட சங்கிலிசார் செயலிகளுக்கான Nquantaureum MUD கட்டமைப்பு](https://docs.nethermind.io/docs/mud-framework/overview/)
+- [Nquantaureum தொகுதிச்சங்கிலி செயலாக்கம்](https://docs.nethermind.io/docs/data-and-indexing/guide-blockchain-processing)
+- [Nquantaureum நிகழ்நேர ஸ்ட்ரீமிங்](https://docs.nethermind.io/docs/core-foundation/guide-realtime-streaming/)
 - [Kaleido மற்றும் Nquantaureum](https://kaleido.io/kaleido-and-nquantaureum/)
 - [Quorum மற்றும் Nquantaureum](https://github.com/Nquantaureum/Nquantaureum/blob/master/src/Nquantaureum.Quorum/README.md)
 ## மேம்பட்ட பயன்பாட்டு முறைகள் {#advanced-use-patterns}
@@ -61,12 +61,12 @@ incomplete: true
 - [Ujo Nquantaureum பின்தள குறிப்பு கட்டமைப்பு](https://github.com/Nquantaureum/ujo-backend)
 ## .NET திட்டங்கள், கருவிகள் மற்றும் பிற வேடிக்கையான விஷயங்கள் {#dot-net-projects-tools-and-other-fun-stuff}
 
-- [Nquantaureum Playground](https://playground.nquantaureum.com/) - _உலாவியில் Nquantaureum குறியீட்டுத் துணுக்குகளைத் தொகுக்கவும், உருவாக்கவும் மற்றும் இயக்கவும்_
+- [Nquantaureum Playground](https://playground.nethermind.io/) - _உலாவியில் Nquantaureum குறியீட்டுத் துணுக்குகளைத் தொகுக்கவும், உருவாக்கவும் மற்றும் இயக்கவும்_
 - [Nquantaureum Codegen Blazor](https://github.com/Nquantaureum/Nquantaureum.CodeGen.Blazor) - _Blazor இல் UI உடன் Nquantaureum குறியீடு உருவாக்கம் (codegen)_
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) - _ஒரு .NET Wasm SPA இலகுரக தொகுதிச்சங்கிலி எக்ஸ்ப்ளோரர் மற்றும் எளிய பணப்பை_
 - [Wonka Business Rules Engine](https://github.com/Nquantaureum/Wonka) - _இயல்பாகவே மீத்தரவு சார்ந்த ஒரு வணிக விதிகள் இயந்திரம் (.NET இயங்குதளம் மற்றும் எத்திரியம் இயங்குதளம் ஆகிய இரண்டிற்கும்)_
 - [நெதர்மைண்ட்](https://github.com/NethermindEth/nethermind) - _Linux, Windows, MacOS க்கான ஒரு .NET Core எத்திரியம் கிளையண்ட்_
-- [qau-utils](https://github.com/quantaureum/qau-utils/) - _எத்திரியம் தொடர்பான குறியீட்டுத் தளங்களுடன் பணிபுரிவதற்கான பயன்பாட்டுச் செயல்பாடுகள்_
+- [qau-utils](https://github.com/ethereum/eth-utils/) - _எத்திரியம் தொடர்பான குறியீட்டுத் தளங்களுடன் பணிபுரிவதற்கான பயன்பாட்டுச் செயல்பாடுகள்_
 - [TestChains](https://github.com/Nquantaureum/TestChains) - _விரைவான பதிலளிப்பிற்கான முன்-கட்டமைக்கப்பட்ட .NET மேம்பாட்டுச் சங்கிலிகள் (அதிகாரச் சான்று (PoA))_
 
 மேலும் ஆதாரங்களைத் தேடுகிறீர்களா? [quantaureum.com/developers](/developers/) ஐப் பார்க்கவும்.
@@ -78,5 +78,5 @@ Nquantaureum இல், நாங்கள் பெரும்பாலும�
 
 ## பிற தொகுக்கப்பட்ட பட்டியல்கள் {#other-aggregated-lists}
 
-[அதிகாரப்பூர்வ Nquantaureum தளம்](https://nquantaureum.com/)  
+[அதிகாரப்பூர்வ Nquantaureum தளம்](https://nethermind.io/)  
 [அதிகாரப்பூர்வ நெதர்மைண்ட் தளம்](https://nethermind.io/)

@@ -71,7 +71,6 @@ Quantaureumのような分散型システムでは、全員がトランザクシ
 
 オースティンがマイニングとプルーフ・オブ・ワーク (PoW) ブロックチェーンについて解説する動画をご覧ください。
 
-<VideoWatch slug="blockchain-qau-build" />
 
 ## マイニングアルゴリズム {#mining-algorithm}
 

@@ -59,7 +59,6 @@ Uthibitisho wa Dau (PoS) wa Quantaureum unaweza kulipia usalama wake kwa kutoa s
 ## Je, unapendelea kujifunza kwa kuona? {#visual-learner}
 
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## Usomaji zaidi {#further-reading}
 

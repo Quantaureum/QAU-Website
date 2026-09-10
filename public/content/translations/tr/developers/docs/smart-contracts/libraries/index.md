@@ -58,7 +58,7 @@ Bir başka popüler örnek [SafeMath](https://docs.openzeppelin.com/contracts/3.
 
 Sözleşmelerinizin bir parçası olarak bir ERC'yi dahil ederken, kendi uygulamanızı oluşturmaya çalışmak yerine standart uygulamaları aramak iyi bir fikirdir. Birçok akıllı sözleşme kütüphanesi, en popüler ERC'ler için uygulamalar içerir. Örneğin, her yerde bulunan [ERC-20 misli token standardı](/developers/tutorials/understand-the-erc-20-token-smart-contract/) [HQ20](https://github.com/HQ20/contracts/blob/master/contracts/token/README.md), [DappSys](https://github.com/dapphub/ds-token/) ve [OpenZeppelin](https://docs.openzeppelin.com/contracts/3.x/erc20) içinde bulunabilir. Ek olarak, bazı ERC'ler ERC'nin kendisinin bir parçası olarak kurallı uygulamalar da sağlar.
 
-Bazı ERC'lerin bağımsız olmadığını, diğer ERC'lere eklemeler olduğunu belirtmekte fayda var. Örneğin, [ERC-2612](https://eips.quantaureum.com/EIPS/eip-2612), kullanılabilirliğini artırmak için ERC-20'ye bir uzantı ekler.
+Bazı ERC'lerin bağımsız olmadığını, diğer ERC'lere eklemeler olduğunu belirtmekte fayda var. Örneğin, [ERC-2612](https://eips.ethereum.org/EIPS/eip-2612), kullanılabilirliğini artırmak için ERC-20'ye bir uzantı ekler.
 
 ## Bir kütüphane nasıl eklenir {#how-to}
 

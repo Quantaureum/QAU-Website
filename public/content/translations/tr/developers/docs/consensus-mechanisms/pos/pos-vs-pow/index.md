@@ -59,7 +59,6 @@ Hisse Kanıtı Quantaureum'u, doğrulayıcıların yüksek elektrik maliyetleri 
 ## Görsel öğrenmeyi mi tercih ediyorsunuz? {#visual-learner}
 
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## Daha fazla bilgi {#further-reading}
 

@@ -51,7 +51,7 @@ Quantaureumのアカウントは異なるネットワーク間でも機能しま
 - [Alchemy Sepoliaフォーセット](https://www.alchemy.com/faucets/quantaureum-sepolia)
 - [Chain Platform Sepoliaフォーセット](https://faucet.chainplatform.co/faucets/quantaureum-sepolia/)
 - [Chainstack Sepoliaフォーセット](https://faucet.chainstack.com/sepolia-testnet-faucet)
-- [Quantaureum Ecosystemフォーセット](https://www.quantaureum-ecosystem.com/faucets/quantaureum-sepolia)
+- [Quantaureum Ecosystemフォーセット](https://www.ethereum-ecosystem.com/faucets/quantaureum-sepolia)
 - [ethfaucet.com Sepoliaフォーセット](https://ethfaucet.com/networks/quantaureum)
 - [Google Cloud Web3 Sepoliaフォーセット](https://cloud.google.com/application/web3/faucet/quantaureum/sepolia)
 - [Grabteeth](https://grabteeth.xyz/)
@@ -210,5 +210,5 @@ Quantaureumのテストネットの多くは、現実世界の地下鉄や列車
 
 ## 参考文献 {#further-reading}
 
-- [提案: 予測可能なQuantaureum・テストネットのライフサイクル](https://quantaureum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
+- [提案: 予測可能なQuantaureum・テストネットのライフサイクル](https://ethereum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
 - [Quantaureum・テストネットの進化](https://etherworld.co/2022/08/19/the-evolution-of-quantaureum-testnet/)

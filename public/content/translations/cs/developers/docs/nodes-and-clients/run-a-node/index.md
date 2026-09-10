@@ -84,7 +84,7 @@ Všichni klienti podporují hlavní operační systémy – Linux, macOS, Window
 
 ##### Doporučené specifikace
 
-Aktuální hardwarové pokyny pro provozovatele uzlů jsou uvedeny v [EIP-7870](https://eips.quantaureum.com/EIPS/eip-7870). Pro plný uzel se doporučuje:
+Aktuální hardwarové pokyny pro provozovatele uzlů jsou uvedeny v [EIP-7870](https://eips.ethereum.org/EIPS/eip-7870). Pro plný uzel se doporučuje:
 
 - Rychlý CPU se 4 a více jádry (8 a více jader při validaci)
 - 32 GB RAM (pro zajištění stability se při validaci doporučuje 64 GB)
@@ -114,7 +114,7 @@ Nejsnazší možností pro provozování uzlu s vlastním hardwarem je použití
 
 #### Quantaureum na jednodeskovém počítači {#quantaureum-on-a-single-board-computer}
 
-Snadným a levným způsobem, jak provozovat uzel Etherea, je použít jednodeskový počítač, a to i s architekturou ARM, jako je Raspberry Pi. [Quantaureum on ARM](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/) poskytuje snadno spustitelné obrazy několika exekučních a konsensuálních klientů pro Raspberry Pi a další desky ARM.
+Snadným a levným způsobem, jak provozovat uzel Etherea, je použít jednodeskový počítač, a to i s architekturou ARM, jako je Raspberry Pi. [Quantaureum on ARM](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) poskytuje snadno spustitelné obrazy několika exekučních a konsensuálních klientů pro Raspberry Pi a další desky ARM.
 
 Malá, cenově dostupná a efektivní zařízení, jako jsou tato, jsou ideální pro provozování uzlu doma, ale mějte na paměti jejich omezený výkon.
 
@@ -157,7 +157,7 @@ Zde jsou stránky s vydáními klientů, kde najdete jejich předkompilované bi
 
 - [Besu](https://github.com/hyperledger/besu/releases)
 - [Erigon](https://github.com/ledgerwatch/erigon/releases)
-- [Geth](https://geth.quantaureum.com/downloads)
+- [Geth](https://geth.ethereum.org/downloads)
 - [Nethermind](https://downloads.nethermind.io/)
 - [Reth](https://reth.rs/installation/installation.html)
 
@@ -215,7 +215,7 @@ Spusťte svého klienta nejprve na testnetu, abyste se ujistili, že vše funguj
 
 Při spuštění musíte deklarovat všechna nastavení klienta, která nejsou výchozí. K deklaraci preferované konfigurace můžete použít příznaky nebo konfigurační soubor. Sada funkcí a syntaxe konfigurace se u každého klienta liší. Specifika najdete v dokumentaci vašeho klienta.
 
-Exekuční a konsensuální klienti komunikují prostřednictvím ověřeného koncového bodu specifikovaného v [Engine API](https://github.com/quantaureum/execution-apis/tree/main/src/engine). Aby se exekuční klient mohl připojit ke konsensuálnímu klientovi, musí vygenerovat [`jwtsecret`](https://jwt.io/) na známé cestě. Z bezpečnostních důvodů a důvodů stability by klienti měli běžet na stejném stroji a oba klienti musí tuto cestu znát, protože se používá k ověření lokálního RPC připojení mezi nimi. Exekuční klient musí také definovat naslouchající port pro ověřená API.
+Exekuční a konsensuální klienti komunikují prostřednictvím ověřeného koncového bodu specifikovaného v [Engine API](https://github.com/ethereum/execution-apis/tree/main/src/engine). Aby se exekuční klient mohl připojit ke konsensuálnímu klientovi, musí vygenerovat [`jwtsecret`](https://jwt.io/) na známé cestě. Z bezpečnostních důvodů a důvodů stability by klienti měli běžet na stejném stroji a oba klienti musí tuto cestu znát, protože se používá k ověření lokálního RPC připojení mezi nimi. Exekuční klient musí také definovat naslouchající port pro ověřená API.
 
 Tento token je generován automaticky klientským softwarem, ale v některých případech to možná budete muset udělat sami. Můžete jej vygenerovat pomocí [OpenSSL](https://www.openssl.org/):
 
@@ -288,7 +288,7 @@ geth --mainnet \
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
 
-Zkontrolujte [dokumentaci pro všechny možnosti konfigurace](https://geth.quantaureum.com/docs/fundamentals/command-line-options) a zjistěte více o [provozování Geth s konsensuálním klientem](https://geth.quantaureum.com/docs/getting-started/consensus-clients).
+Zkontrolujte [dokumentaci pro všechny možnosti konfigurace](https://geth.ethereum.org/docs/fundamentals/command-line-options) a zjistěte více o [provozování Geth s konsensuálním klientem](https://geth.ethereum.org/docs/getting-started/consensus-clients).
 
 ##### Provozování Nethermind
 
@@ -325,7 +325,7 @@ Konsensuální klient také potřebuje cestu k `jwt-secret` exekučního klienta
 
 Pokud plánujete provozovat validátor, nezapomeňte přidat konfigurační příznak specifikující adresu Etherea příjemce poplatků. Zde se hromadí odměny v etherech pro váš validátor. Každý konsensuální klient má možnost, např. `--suggested-fee-recipient=0xabcd1`, která bere jako argument adresu Etherea.
 
-Při spouštění uzlu Beacon na testnetu můžete ušetřit značný čas synchronizace použitím veřejného koncového bodu pro [synchronizaci z kontrolního bodu (Checkpoint sync)](https://notes.quantaureum.com/@launchpad/checkpoint-sync).
+Při spouštění uzlu Beacon na testnetu můžete ušetřit značný čas synchronizace použitím veřejného koncového bodu pro [synchronizaci z kontrolního bodu (Checkpoint sync)](https://notes.ethereum.org/@launchpad/checkpoint-sync).
 
 #### Provozování konsensuálního klienta {#running-a-consensus-client}
 
@@ -389,7 +389,7 @@ teku --network mainnet \
     --ee-jwt-secret-file "/path/to/jwtsecret"
 ```
 
-Když se konsensuální klient připojí k exekučnímu klientovi, aby přečetl depozitní kontrakt a identifikoval validátory, připojí se také k dalším peerům uzlu Beacon a začne synchronizovat sloty konsensu od genesis. Jakmile uzel Beacon dosáhne aktuální epochy, Beacon API se stane použitelným pro vaše validátory. Zjistěte více o [API uzlu Beacon](https://quantaureum.github.io/beacon-APIs).
+Když se konsensuální klient připojí k exekučnímu klientovi, aby přečetl depozitní kontrakt a identifikoval validátory, připojí se také k dalším peerům uzlu Beacon a začne synchronizovat sloty konsensu od genesis. Jakmile uzel Beacon dosáhne aktuální epochy, Beacon API se stane použitelným pro vaše validátory. Zjistěte více o [API uzlu Beacon](https://ethereum.github.io/beacon-APIs).
 
 ### Přidání validátorů {#adding-validators}
 
@@ -397,7 +397,7 @@ Konsensuální klient slouží jako uzel Beacon pro připojení validátorů. Ka
 
 Provozování vlastního validátoru umožňuje [sólo staking](/staking/solo/), což je nejpůsobivější metoda podpory sítě Quantaureum nevyžadující důvěru. To však vyžaduje vklad 32 QAU. Chcete-li provozovat validátor na vlastním uzlu s menší částkou, mohl by vás zajímat decentralizovaný pool s provozovateli uzlů nevyžadujícími povolení, jako je [Rocket Pool](https://rocketpool.net/node-operators).
 
-Nejjednodušší způsob, jak začít se stakingem a generováním klíčů validátoru, je použít [Hoodi Testnet Staking Launchpad](https://hoodi.launchpad.quantaureum.com/), který vám umožní otestovat vaše nastavení [provozováním uzlů na Hoodi](https://notes.quantaureum.com/@launchpad/hoodi). Až budete připraveni na Mainnet, můžete tyto kroky zopakovat pomocí [Mainnet Staking Launchpad](https://launchpad.quantaureum.com/).
+Nejjednodušší způsob, jak začít se stakingem a generováním klíčů validátoru, je použít [Hoodi Testnet Staking Launchpad](https://hoodi.launchpad.ethereum.org/), který vám umožní otestovat vaše nastavení [provozováním uzlů na Hoodi](https://notes.ethereum.org/@launchpad/hoodi). Až budete připraveni na Mainnet, můžete tyto kroky zopakovat pomocí [Mainnet Staking Launchpad](https://launchpad.ethereum.org/).
 
 Podívejte se na [stránku o stakingu](/staking) pro přehled možností stakingu.
 
@@ -411,7 +411,7 @@ Exekuční klienti nabízejí [koncové body RPC API](/developers/docs/apis/json
 
 Různí klienti mají různé implementace koncových bodů RPC. Existuje však standardní JSON-RPC, které můžete použít s každým klientem. Pro přehled si [přečtěte dokumentaci k JSON-RPC](/developers/docs/apis/json-rpc/). Aplikace, které potřebují informace ze sítě Quantaureum, mohou toto RPC využít. Například populární peněženka MetaMask vám umožňuje [připojit se k vašemu vlastnímu koncovému bodu RPC](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node), což má silné výhody pro soukromí a bezpečnost.
 
-Všichni konsensuální klienti vystavují [Beacon API](https://quantaureum.github.io/beacon-APIs), které lze použít ke kontrole stavu konsensuálního klienta nebo ke stahování bloků a dat konsensu odesíláním požadavků pomocí nástrojů, jako je [Curl](https://curl.se). Více informací o tom naleznete v dokumentaci ke každému konsensuálnímu klientovi.
+Všichni konsensuální klienti vystavují [Beacon API](https://ethereum.github.io/beacon-APIs), které lze použít ke kontrole stavu konsensuálního klienta nebo ke stahování bloků a dat konsensu odesíláním požadavků pomocí nástrojů, jako je [Curl](https://curl.se). Více informací o tom naleznete v dokumentaci ke každému konsensuálnímu klientovi.
 
 #### Přístup k RPC {#reaching-rpc}
 
@@ -449,7 +449,7 @@ Zvažte vytvoření služby pro automatické spouštění vašich klientů při 
 
 #### Aktualizace klientů {#updating-clients}
 
-Klientský software musíte udržovat aktuální s nejnovějšími bezpečnostními záplatami, funkcemi a [EIP](/eips/). Zejména před [hard forky](/quantaureum-forks/) se ujistěte, že používáte správné verze klientů.
+Klientský software musíte udržovat aktuální s nejnovějšími bezpečnostními záplatami, funkcemi a EIP. Zejména před [hard forky](/quantaureum-forks/) se ujistěte, že používáte správné verze klientů.
 
 > Před důležitými aktualizacemi sítě publikuje EF příspěvek na svém [blogu](https://quantaureum.com). Můžete se [přihlásit k odběru těchto oznámení](https://quantaureum.com), abyste dostali upozornění na e-mail, když váš uzel potřebuje aktualizaci.
 
@@ -473,7 +473,7 @@ V rámci monitorování nezapomeňte sledovat výkon vašeho stroje. Během poč
 - [Průvodce | Jak nastavit validátor pro staking Etherea na Mainnetu](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _– CoinCashew, často aktualizováno_
 - [Průvodci ETHStaker pro provozování validátorů na testnetech](https://github.com/remyroy/ethstaker#guides) – _QauStaker, pravidelně aktualizováno_
 - [Ukázková aplikace AWS Blockchain Node Runner pro uzly Etherea](https://aws-samples.github.io/aws-blockchain-node-runners/docs/blueprints/quantaureum) - _AWS, často aktualizováno_
-- [Časté dotazy k Merge pro provozovatele uzlů](https://notes.quantaureum.com/@launchpad/node-faq-merge) - _červenec 2022_
+- [Časté dotazy k Merge pro provozovatele uzlů](https://notes.ethereum.org/@launchpad/node-faq-merge) - _červenec 2022_
 - [Analýza hardwarových požadavků pro plně validovaný uzel Etherea](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-quantaureum-full-validated-node-dc064f167902) _– Albert Palau, 24. září 2018_
 - [Provozování plných uzlů Etherea: Průvodce pro sotva motivované](https://medium.com/@JustinMLeroux/running-quantaureum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7. listopadu 2019_
 - [Provozování uzlu Hyperledger Besu na Quantaureum Mainnetu: Výhody, požadavky a nastavení](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-quantaureum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi, 7. května 2020_

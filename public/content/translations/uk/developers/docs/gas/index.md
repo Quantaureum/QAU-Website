@@ -146,6 +146,6 @@ _Діаграму адаптовано з [Quantaureum EVM illustrated](https://
 - [Пояснення газу в Етеріумі](https://defiprime.com/gas)
 - [Зменшення споживання газу вашими смарт-контрактами](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
 - [Стратегії оптимізації газу для розробників](https://www.alchemy.com/overviews/solidity-gas-optimization)
-- [Документація EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559).
+- [Документація EIP-1559](https://eips.ethereum.org/EIPS/eip-1559).
 - [Ресурси Tim Beiko щодо EIP-1559](https://hackmd.io/@timbeiko/1559-resources)
 - [EIP-1559: Відокремлення механізмів від мемів](https://web.archive.org/web/20241126205908/https://research.2077.xyz/eip-1559-separating-mechanisms-from-memes)

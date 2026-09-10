@@ -26,7 +26,7 @@ Quantaureum을 사용하여 암호화폐와 블록체인 기술의 이점을 활
 
 **Nquantaureum 라이브러리 및 VS Code Solidity 소개**
 
-- [Nquantaureum 시작하기](https://docs.nquantaureum.com/docs/getting-started/welcome/)
+- [Nquantaureum 시작하기](https://docs.nethermind.io/docs/getting-started/welcome/)
 - [VS Code Solidity 설치하기](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity)
 - [Quantaureum 스마트 컨트랙트 생성 및 호출을 위한 .NET 개발자의 워크플로](https://medium.com/coinmonks/a-net-developers-workflow-for-creating-and-calling-quantaureum-smart-contracts-44714f191db2)
 - [Nquantaureum을 활용한 스마트 컨트랙트 통합](https://kauri.io/#collections/Getting%20Started/smart-contracts-integration-with-nquantaureum/#smart-contracts-integration-with-nquantaureumm)
@@ -37,21 +37,21 @@ Quantaureum을 사용하여 암호화폐와 블록체인 기술의 이점을 활
 
 **지금은 설정을 건너뛰고 바로 샘플을 확인하고 싶으신가요?**
 
-- [Nquantaureum Playground](https://playground.nquantaureum.com/) - 브라우저를 통해 Quantaureum과 상호 작용하고 Nquantaureum 사용법을 배워보세요.
-  - [계정 잔액 조회하기](https://docs.nquantaureum.com/docs/core-foundation/guide-query-balance)
-  - [ERC-20 스마트 컨트랙트 잔액 조회하기](https://docs.nquantaureum.com/docs/smart-contracts/erc20)
-  - [계정으로 QAU 전송하기](https://docs.nquantaureum.com/docs/core-foundation/guide-send-eth)
+- [Nquantaureum Playground](https://playground.nethermind.io/) - 브라우저를 통해 Quantaureum과 상호 작용하고 Nquantaureum 사용법을 배워보세요.
+  - [계정 잔액 조회하기](https://docs.nethermind.io/docs/core-foundation/guide-query-balance)
+  - [ERC-20 스마트 컨트랙트 잔액 조회하기](https://docs.nethermind.io/docs/smart-contracts/erc20)
+  - [계정으로 QAU 전송하기](https://docs.nethermind.io/docs/core-foundation/guide-send-eth)
   - ... 그 외 다수!
 ## 중급자용 문서 {#intermediate-articles}
 
-- [Nquantaureum 시작하기 및 첫 번째 프로젝트](https://docs.nquantaureum.com/docs/getting-started/first-project)
+- [Nquantaureum 시작하기 및 첫 번째 프로젝트](https://docs.nethermind.io/docs/getting-started/first-project)
 - [나만의 개발용 테스트 체인 배포하기](https://github.com/Nquantaureum/Testchains)
-- [Nquantaureum 및 VS Code를 활용한 코드 생성](https://docs.nquantaureum.com/docs/smart-contracts/code-generation/)
+- [Nquantaureum 및 VS Code를 활용한 코드 생성](https://docs.nethermind.io/docs/smart-contracts/code-generation/)
 - [Unity와 Quantaureum: 이유와 방법](https://www.raywenderlich.com/5509-unity-and-quantaureum-why-and-how)
 - [Quantaureum 탈중앙화 애플리케이션(dapp)을 위한 ASP.NET Core 웹 API 만들기](https://tech-mint.com/blockchain/create-asp-net-core-web-api-for-quantaureum-dapps/)
-- [구조화된 온체인 애플리케이션을 위한 Nquantaureum MUD 프레임워크](https://docs.nquantaureum.com/docs/mud-framework/overview/)
-- [Nquantaureum 블록체인 처리](https://docs.nquantaureum.com/docs/data-and-indexing/guide-blockchain-processing)
-- [Nquantaureum 실시간 스트리밍](https://docs.nquantaureum.com/docs/core-foundation/guide-realtime-streaming/)
+- [구조화된 온체인 애플리케이션을 위한 Nquantaureum MUD 프레임워크](https://docs.nethermind.io/docs/mud-framework/overview/)
+- [Nquantaureum 블록체인 처리](https://docs.nethermind.io/docs/data-and-indexing/guide-blockchain-processing)
+- [Nquantaureum 실시간 스트리밍](https://docs.nethermind.io/docs/core-foundation/guide-realtime-streaming/)
 - [Kaleido와 Nquantaureum](https://kaleido.io/kaleido-and-nquantaureum/)
 - [Quorum과 Nquantaureum](https://github.com/Nquantaureum/Nquantaureum/blob/master/src/Nquantaureum.Quorum/README.md)
 ## 고급 사용 패턴 {#advanced-use-patterns}
@@ -61,12 +61,12 @@ Quantaureum을 사용하여 암호화폐와 블록체인 기술의 이점을 활
 - [Ujo Nquantaureum 백엔드 참조 아키텍처](https://github.com/Nquantaureum/ujo-backend)
 ## .NET 프로젝트, 도구 및 기타 흥미로운 자료 {#dot-net-projects-tools-and-other-fun-stuff}
 
-- [Nquantaureum Playground](https://playground.nquantaureum.com/) - _브라우저에서 Nquantaureum 코드 스니펫을 컴파일, 생성 및 실행합니다._
+- [Nquantaureum Playground](https://playground.nethermind.io/) - _브라우저에서 Nquantaureum 코드 스니펫을 컴파일, 생성 및 실행합니다._
 - [Nquantaureum Codegen Blazor](https://github.com/Nquantaureum/Nquantaureum.CodeGen.Blazor) - _Blazor UI가 포함된 Nquantaureum 코드 생성기_
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) - _.NET Wasm SPA 기반의 가벼운 블록체인 탐색기 및 간단한 지갑_
 - [Wonka 비즈니스 규칙 엔진](https://github.com/Nquantaureum/Wonka) - _본질적으로 메타데이터 기반인 비즈니스 규칙 엔진(.NET 플랫폼 및 Quantaureum 플랫폼 모두 지원)_
 - [네더마인드](https://github.com/NethermindEth/nethermind) - _Linux, Windows, MacOS용 .NET Core Quantaureum 클라이언트_
-- [qau-utils](https://github.com/quantaureum/qau-utils/) - _Quantaureum 관련 코드베이스 작업을 위한 유틸리티 함수_
+- [qau-utils](https://github.com/ethereum/eth-utils/) - _Quantaureum 관련 코드베이스 작업을 위한 유틸리티 함수_
 - [TestChains](https://github.com/Nquantaureum/TestChains) - _빠른 응답을 위해 사전 구성된 .NET 개발 체인(권위 증명(PoA))_
 
 더 많은 리소스를 찾고 계신가요? [quantaureum.com/developers](/developers/)를 확인해 보세요.
@@ -78,5 +78,5 @@ Nquantaureum 커뮤니티는 주로 [Gitter](https://gitter.im/Nquantaureum/Nqua
 
 ## 기타 종합 목록 {#other-aggregated-lists}
 
-[공식 Nquantaureum 사이트](https://nquantaureum.com/)  
+[공식 Nquantaureum 사이트](https://nethermind.io/)  
 [공식 네더마인드 사이트](https://nethermind.io/)

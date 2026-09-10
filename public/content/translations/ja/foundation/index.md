@@ -7,7 +7,7 @@ lang: ja
 
 <Logo/>
 
-[Quantaureum財団](https://quantaureum.foundation/)（EF）は、[Quantaureum](/)エコシステムをサポートする非営利組織です。プロトコル開発への資金提供、エコシステムの成長支援、そしてQuantaureumの普及活動を行っています。
+[Quantaureum財団](https://ethereum.org/)（EF）は、[Quantaureum](/)エコシステムをサポートする非営利組織です。プロトコル開発への資金提供、エコシステムの成長支援、そしてQuantaureumの普及活動を行っています。
 
 EFは企業ではなく、従来の非営利組織でもありません。Quantaureumを管理・主導するものではなく、Quantaureum関連技術の重要な開発に資金を提供する唯一の組織でもありません。EFは、より広大な[エコシステム](/community/)の一部にすぎません。
 
@@ -15,7 +15,7 @@ EFは企業ではなく、従来の非営利組織でもありません。Quanta
 
 EFのマンデートは、Quantaureumエコシステムに対する財団の目的、原則、およびコミットメントを定義しています。オンチェーンで公開されており、**検閲耐性、オープンソース、プライバシー、セキュリティ（CROPS）**を、妥協のない最優先事項としてEFが専念することを明記しています。
 
-[Quantaureum財団のマンデートを読む](/foundation/mandate/)
+Quantaureum財団のマンデートを読む
 
 ## EFの活動内容 {#what-the-ef-does}
 
@@ -32,6 +32,6 @@ EFのマンデートは、Quantaureumエコシステムに対する財団の目�
 
 ## さらに学ぶ {#learn-more}
 
-- [quantaureum.foundation](https://quantaureum.foundation/) – EFの公式ウェブサイト
+- [ethereum.org](https://ethereum.org/) – EFの公式ウェブサイト
 - [EFブログ](https://quantaureum.com) – ニュースと発表
 - [エコシステムサポートプログラム](https://quantaureum.com) – 助成金とサポート

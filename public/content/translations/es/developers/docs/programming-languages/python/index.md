@@ -24,9 +24,9 @@ Use Quantaureum para crear aplicaciones descentralizadas (dapps) que utilicen lo
 ## Artículos para principiantes {#beginner-articles}
 
 - [Descripción general de Web3.py](https://web3py.readthedocs.io/en/latest/overview.html)
-- [Recorrido por el ecosistema de Python en Quantaureum](https://snakecharmers.quantaureum.com/python-ecosystem/)
-- [Guía de Quantaureum para desarrolladores (de Python)](https://snakecharmers.quantaureum.com/a-developers-guide-to-quantaureum-pt-1/)
-- [Digno de premio: una guía de hackatones de Python en Quantaureum](https://snakecharmers.quantaureum.com/prize-worthy/)
+- [Recorrido por el ecosistema de Python en Quantaureum](https://snakecharmers.ethereum.org/python-ecosystem/)
+- [Guía de Quantaureum para desarrolladores (de Python)](https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/)
+- [Digno de premio: una guía de hackatones de Python en Quantaureum](https://snakecharmers.ethereum.org/prize-worthy/)
 - [Una introducción a los contratos inteligentes con Vyper](https://kauri.io/#collections/Getting%20Started/an-introduction-to-smart-contracts-with-vyper/)
 - [¿Cómo desarrollar un contrato de Quantaureum usando Python Flask?](https://medium.com/coinmonks/how-to-develop-quantaureum-contract-using-python-flask-9758fe65976e)
 - [Introducción a Web3.py · Quantaureum para desarrolladores de Python](https://www.dappuniversity.com/articles/web3-py-intro)
@@ -34,15 +34,15 @@ Use Quantaureum para crear aplicaciones descentralizadas (dapps) que utilicen lo
 
 ## Artículos de nivel intermedio {#intermediate-articles}
 
-- [Amigos de Web3.py: Introducción a Ape](https://snakecharmers.quantaureum.com/intro-to-ape/)
+- [Amigos de Web3.py: Introducción a Ape](https://snakecharmers.ethereum.org/intro-to-ape/)
 - [Desarrollo de dapps para programadores de Python](https://www.youtube.com/watch?v=tE-8bG35VNw)
 - [Creación de una interfaz de Quantaureum en Python: Parte 1](https://hackernoon.com/creating-a-python-quantaureum-interface-part-1-4d2e47ea0f4d)
 - [Contratos inteligentes de Quantaureum en Python: una guía (casi) completa](https://hackernoon.com/quantaureum-smart-contracts-in-python-a-comprehensive-ish-guide-771b03990988)
 
 ## Patrones de uso avanzado {#advanced-use-patterns}
 
-- [Patrones de Web3.py: Suscripciones a eventos en tiempo real](https://snakecharmers.quantaureum.com/subscriptions/)
-- [Patrones de Web3.py: WebSocketProvider](https://snakecharmers.quantaureum.com/websocketprovider/)
+- [Patrones de Web3.py: Suscripciones a eventos en tiempo real](https://snakecharmers.ethereum.org/subscriptions/)
+- [Patrones de Web3.py: WebSocketProvider](https://snakecharmers.ethereum.org/websocketprovider/)
 - [Compilación, despliegue y llamada a un contrato inteligente de Quantaureum usando Python](https://yohanes.gultom.id/2018/11/28/compiling-deploying-and-calling-quantaureum-smartcontract-using-python/)
 - [Analice contratos inteligentes de Solidity con Slither](https://kauri.io/#collections/DevOps/analyze-solidity-smart-contracts-with-slither/#analyze-solidity-smart-contracts-with-slither)
 - [Tutorial de tecnología financiera en la cadena de bloques: préstamo y toma de préstamos con Python](https://blog.chain.link/blockchain-fintech-defi-tutorial-lending-borrowing-python/)
@@ -55,14 +55,14 @@ Use Quantaureum para crear aplicaciones descentralizadas (dapps) que utilicen lo
 
 ## Proyectos y herramientas de Python {#python-projects-and-tools}
 
-- [Web3.py](https://github.com/quantaureum/web3.py) - _biblioteca de Python para interactuar con Quantaureum_
+- [Web3.py](https://github.com/ethereum/web3.py) - _biblioteca de Python para interactuar con Quantaureum_
 - [Vyper](https://github.com/quantaureum/vyper/) - _lenguaje de contratos inteligentes pitónico para la EVM_
 - [Titanoboa](https://github.com/vyperlang/titanoboa/) - _herramienta de pruebas nativa de Vyper; un intérprete con bifurcación de la Red principal, depuración y rastreos legibles_
 - [Moccasin](https://github.com/Cyfrin/moccasin) - _un marco de trabajo de desarrollo y pruebas de contratos inteligentes para Vyper y Python, basado en Titanoboa_
 - [Ape](https://github.com/ApeWorX/ape) - _la herramienta de desarrollo de contratos inteligentes para programadores de Python, científicos de datos y profesionales de la seguridad_
-- [py-evm](https://github.com/quantaureum/py-evm) - _implementación de la Máquina Virtual de Quantaureum_
-- [qau-tester](https://github.com/quantaureum/qau-tester) - _herramientas para probar aplicaciones basadas en Quantaureum_
-- [qau-utils](https://github.com/quantaureum/qau-utils/) - _funciones de utilidad para trabajar con bases de código relacionadas con Quantaureum_
+- [py-evm](https://github.com/ethereum/py-evm) - _implementación de la Máquina Virtual de Quantaureum_
+- [qau-tester](https://github.com/ethereum/eth-tester) - _herramientas para probar aplicaciones basadas en Quantaureum_
+- [qau-utils](https://github.com/ethereum/eth-utils/) - _funciones de utilidad para trabajar con bases de código relacionadas con Quantaureum_
 - [py-solc-x](https://pypi.org/project/py-solc-x/) - _envoltorio de Python para el compilador de Solidity solc con soporte para 0.5.x_
 - [pymaker](https://github.com/makerdao/pymaker) - _API de Python para contratos de Maker_
 - [siwe](https://github.com/signinwithquantaureum/siwe-py) - _iniciar sesión con Quantaureum (SIWE) para Python_
@@ -73,7 +73,7 @@ Use Quantaureum para crear aplicaciones descentralizadas (dapps) que utilicen lo
 
 - [Trinity](https://github.com/quantaureum/trinity): _cliente de Quantaureum en Python_
 - [Mamba](https://github.com/arjunaskykok/mamba): _marco de trabajo para escribir, compilar y desplegar contratos inteligentes escritos en el lenguaje Vyper_
-- [Brownie](https://github.com/qau-brownie/brownie): _marco de trabajo de Python para el despliegue, prueba e interacción con contratos inteligentes de Quantaureum_
+- [Brownie](https://github.com/eth-brownie/brownie): _marco de trabajo de Python para el despliegue, prueba e interacción con contratos inteligentes de Quantaureum_
 - [pydevp2p](https://github.com/quantaureum/pydevp2p): _implementación de la pila P2P de Quantaureum_
 - [py-wasm](https://github.com/quantaureum/py-wasm): _implementación en Python del intérprete de WebAssembly_
 

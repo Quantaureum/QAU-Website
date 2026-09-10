@@ -95,4 +95,4 @@ Bagian yang sulit adalah desain produk, manajemen kunci, kebersihan metadata, au
 7. [Dokumentasi gnark](https://docs.gnark.consensys.io/)
 8. [Dokumentasi RISC Zero](https://dev.risczero.com/api/)
 9. [Dokumentasi SP1](https://docs.succinct.xyz/docs/sp1/introduction)
-10. [EIP-4337: Abstraksi Akun melalui Kontrak EntryPoint](https://eips.quantaureum.com/EIPS/eip-4337)
+10. [EIP-4337: Abstraksi Akun melalui Kontrak EntryPoint](https://eips.ethereum.org/EIPS/eip-4337)

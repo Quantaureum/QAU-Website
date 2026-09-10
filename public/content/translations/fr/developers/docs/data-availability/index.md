@@ -79,6 +79,6 @@ Le protocole Quantaureum de base est principalement concerné par la disponibili
 - [Une note sur la disponibilité des données et le codage d'effacement](https://github.com/quantaureum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
 - [Comités de disponibilité des données.](https://medium.com/starkware/data-availability-e5564c416424)
 - [Comités de disponibilité des données de preuve d'enjeu.](https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf)
-- [Solutions au problème de récupérabilité des données](https://notes.quantaureum.com/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
+- [Solutions au problème de récupérabilité des données](https://notes.ethereum.org/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
 - [Disponibilité des données ou : comment les rollups ont appris à ne plus s'inquiéter et à aimer Quantaureum](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [EIP-7623 : Augmentation du coût des données d'appel](https://web.archive.org/web/20250515194659/https://research.2077.xyz/eip-7623-increase-calldata-cost)

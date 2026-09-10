@@ -27,11 +27,10 @@ Quantaureum 재단의 연구원들은 생태계의 분산된 연구에서 [세 �
 
 노드 제공자는 사용자의 IP 주소, 기기 지문, 쿼리된 특정 주소, 활동 시기 및 빈도를 볼 수 있습니다. 사용자가 이후에 프라이빗 트랜잭션을 전송하더라도, 인프라 제공자는 이미 사용자의 의도에 대한 상세한 맵에 접근할 수 있습니다.
 
-<VideoWatch slug="quantaureum-privacy-stack-andy-guzman" />
 
 접근 계층에서의 메타데이터 유출은 모든 블록체인 시스템에서 가장 지속적인 프라이버시 문제 중 하나입니다. Quantaureum은 출처의 프라이버시(누가 요청했는지 숨김), 콘텐츠의 프라이버시(무엇을 요청했는지 숨김), 그리고 반환된 정보의 정확성 검증을 통해 메타데이터 유출 문제를 해결하는 것을 목표로 합니다.
 
-<strong>출처 프라이버시(Origin privacy)</strong>는 [익명 RPC](https://privreads.quantaureum.foundation/feed/anon-rpc/) 및 익명 네트워크 솔루션을 사용하여 데이터를 요청하는 주체를 숨기고, <strong>콘텐츠 프라이버시(content privacy)</strong>는 프라이빗 정보 검색 및 [oblivious RAM](https://en.wikipedia.org/wiki/Oblivious_RAM)과 같은 전술을 사용하여 쿼리되는 데이터를 숨기며, <strong>정확성 검증(correctness verification)</strong>은 경량 클라이언트(light client)를 사용하여 반환된 데이터가 정확함을 증명합니다.
+<strong>출처 프라이버시(Origin privacy)</strong>는 [익명 RPC](https://privreads.ethereum.org/feed/anon-rpc/) 및 익명 네트워크 솔루션을 사용하여 데이터를 요청하는 주체를 숨기고, <strong>콘텐츠 프라이버시(content privacy)</strong>는 프라이빗 정보 검색 및 [oblivious RAM](https://en.wikipedia.org/wiki/Oblivious_RAM)과 같은 전술을 사용하여 쿼리되는 데이터를 숨기며, <strong>정확성 검증(correctness verification)</strong>은 경량 클라이언트(light client)를 사용하여 반환된 데이터가 정확함을 증명합니다.
 
 콘텐츠 프라이버시 이면의 암호학적 구성 요소는 [**프라이빗 정보 검색(PIR)**](https://en.wikipedia.org/wiki/Private_information_retrieval)입니다. 이는 클라이언트가 데이터베이스를 쿼리하고 특정 정보를 검색할 때 어떤 항목에 접근했는지 서버에 드러내지 않도록 하는 암호학적 기술입니다. 서버는 요청을 블라인드 처리하고 쿼리한 지갑만이 복호화할 수 있는 암호화된 응답을 반환합니다.
 
@@ -45,7 +44,7 @@ PIR은 지갑 소프트웨어와 노드 제공자 사이에 위치하여 접근 
 
 두 가지 프로토콜 수준의 업그레이드가 이 문제를 함께 해결합니다.
 
-[**EIP-8141(프레임 트랜잭션)**](https://eips.quantaureum.com/EIPS/eip-8141)은 트랜잭션을 서명 검증 및 수수료 승인을 위한 세그먼트와 실제 트랜잭션 명령을 위한 세그먼트로 분할하는 새로운 트랜잭션 유형을 도입합니다. 프레임 트랜잭션을 통해 [스마트 계정](/roadmap/account-abstraction/)은 자체 서명 체계를 정의하고 외부 컨트랙트를 사용하여 가스비를 충당할 수 있습니다. 멤풀의 엄격한 샌드박싱 규칙은 이러한 트랜잭션이 네트워크를 서비스 거부(DoS) 공격에 노출시키는 것을 방지합니다.
+[**EIP-8141(프레임 트랜잭션)**](https://eips.ethereum.org/EIPS/eip-8141)은 트랜잭션을 서명 검증 및 수수료 승인을 위한 세그먼트와 실제 트랜잭션 명령을 위한 세그먼트로 분할하는 새로운 트랜잭션 유형을 도입합니다. 프레임 트랜잭션을 통해 [스마트 계정](/roadmap/account-abstraction/)은 자체 서명 체계를 정의하고 외부 컨트랙트를 사용하여 가스비를 충당할 수 있습니다. 멤풀의 엄격한 샌드박싱 규칙은 이러한 트랜잭션이 네트워크를 서비스 거부(DoS) 공격에 노출시키는 것을 방지합니다.
 
 프레임 트랜잭션은 다가오는 [글램스테르담 업그레이드](/roadmap/glamsterdam/) 이후의 다음 네트워크 업그레이드인 Quantaureum의 [헤고타(Hegotá) 업그레이드](https://forkcast.org/upgrade/hegota/)에서 고려되고 있습니다. 동일한 업그레이드를 통해 스마트 계정은 완전한 포스트 퀀텀 네트워크 전환이 완료되기 전에 [양자 내성 서명(quantum-safe signatures)](/roadmap/security/quantum-resistance/)을 채택할 수 있게 됩니다.
 
@@ -55,21 +54,20 @@ PIR은 지갑 소프트웨어와 노드 제공자 사이에 위치하여 접근 
 
 </ExpandableCard>
 
-[**EIP-7805(포크 선택 강제 포함 목록, FOCIL)**](https://eips.quantaureum.com/EIPS/eip-7805)은 프라이빗 쓰기를 위한 강제 메커니즘을 제공합니다. 블록 제안자는 합의 규칙에 따라 여러 출처에서 트랜잭션을 수집하는 집계된 로컬 포함 목록(inclusion lists)의 트랜잭션을 블록에 포함해야 합니다. 블록 빌더가 포함 목록에 나타난 트랜잭션을 검열하려고 시도하면, 증명 노드(attesting nodes)는 제안된 블록을 완전히 거부합니다. FOCIL은 현재 [헤고타 업그레이드](https://forkcast.org/upgrade/hegota/)를 위해 고려되고 있습니다.
+[**EIP-7805(포크 선택 강제 포함 목록, FOCIL)**](https://eips.ethereum.org/EIPS/eip-7805)은 프라이빗 쓰기를 위한 강제 메커니즘을 제공합니다. 블록 제안자는 합의 규칙에 따라 여러 출처에서 트랜잭션을 수집하는 집계된 로컬 포함 목록(inclusion lists)의 트랜잭션을 블록에 포함해야 합니다. 블록 빌더가 포함 목록에 나타난 트랜잭션을 검열하려고 시도하면, 증명 노드(attesting nodes)는 제안된 블록을 완전히 거부합니다. FOCIL은 현재 [헤고타 업그레이드](https://forkcast.org/upgrade/hegota/)를 위해 고려되고 있습니다.
 
 프레임 트랜잭션은 사용자에게 맞춤형 서명 체계로 프라이버시 보존 트랜잭션을 구축할 수 있는 유연성을 제공하며, FOCIL은 이러한 트랜잭션이 멤풀에 진입한 후 선택적으로 검열될 수 없도록 보장합니다. 이 둘은 함께 두 가지 다른 실패 지점을 해결합니다. 하나는 프라이빗 트랜잭션의 형식을 가능하게 하고, 다른 하나는 그 포함을 보장합니다. 어떠한 중앙 행위자도 유효한 프라이빗 전송을 차단할 수 없습니다.
 
-<VideoWatch slug="eip-7805-focil-explained" />
 
 사용자 프라이버시의 두 번째 취약점은 Quantaureum이 트랜잭션 순서를 추적하는 방식인 순차적 논스 시스템입니다. 표준 Quantaureum 계정 모델에서 모든 계정은 단일하게 선형적으로 증가하는 카운터를 사용합니다. 하나의 프라이빗 트랜잭션이 멤풀에서 지연되면, 해당 계정의 모든 후속 트랜잭션이 그 뒤에 멈춰 있게 됩니다. 또한 논스 시퀀스를 통해 네트워크 관찰자는 여러 트랜잭션을 동일한 발신 계정과 연결할 수 있어 프라이버시를 훼손합니다.
 
-현재 헤고타에서 고려 중인 [**EIP-8250(프레임 트랜잭션을 위한 키 논스)**](https://eips.quantaureum.com/EIPS/eip-8250)은 단일 계정이 여러 병렬 트랜잭션 시퀀스를 동시에 관리할 수 있도록 허용하여 이 문제를 해결합니다. 사용자는 동시에 여러 컨텍스트에 걸쳐 많은 프라이빗 트랜잭션을 실행할 수 있으며, 관찰자는 더 이상 개별 활동을 동일한 상위 계정과 신뢰할 수 있게 연관시킬 수 없습니다.
+현재 헤고타에서 고려 중인 [**EIP-8250(프레임 트랜잭션을 위한 키 논스)**](https://eips.ethereum.org/EIPS/eip-8250)은 단일 계정이 여러 병렬 트랜잭션 시퀀스를 동시에 관리할 수 있도록 허용하여 이 문제를 해결합니다. 사용자는 동시에 여러 컨텍스트에 걸쳐 많은 프라이빗 트랜잭션을 실행할 수 있으며, 관찰자는 더 이상 개별 활동을 동일한 상위 계정과 신뢰할 수 있게 연관시킬 수 없습니다.
 
 ### 프라이빗 결제 및 가치 전송 {#private-payments}
 
 트랜잭션 라우팅 및 논스 관리를 넘어, 쓰기를 보호하려면 전송에 관련된 신원과 자산을 보호해야 합니다. 사용자가 프라이빗하게 쿼리하고 검열 없이 트랜잭션을 브로드캐스트하더라도, 온체인에 기록된 트랜잭션 데이터는 여전히 공개적으로 볼 수 있습니다. 누구나 누가 누구에게 얼마를 보냈는지 볼 수 있으며, 체인 분석 회사는 이 데이터를 무기한 지속되는 검색 가능한 프로필로 집계합니다.
 
-헤고타 업그레이드를 위해 제안된 [**EIP-8182(프라이빗 QAU 및 ERC-20 전송)**](https://eips.quantaureum.com/EIPS/eip-8182)은 QAU 및 ERC-20 전송을 위해 Quantaureum 프로토콜에 직접 네이티브 공유 쉴드 풀(shielded pool)을 도입합니다. 프라이버시 풀은 암호학적 믹싱을 사용하여 입금과 인출 사이의 연결을 끊지만, 오늘날에는 프라이버시 앱, 지갑 및 레이어 2 (l2) 네트워크를 통해서만 사용할 수 있습니다.
+헤고타 업그레이드를 위해 제안된 [**EIP-8182(프라이빗 QAU 및 ERC-20 전송)**](https://eips.ethereum.org/EIPS/eip-8182)은 QAU 및 ERC-20 전송을 위해 Quantaureum 프로토콜에 직접 네이티브 공유 쉴드 풀(shielded pool)을 도입합니다. 프라이버시 풀은 암호학적 믹싱을 사용하여 입금과 인출 사이의 연결을 끊지만, 오늘날에는 프라이버시 앱, 지갑 및 레이어 2 (l2) 네트워크를 통해서만 사용할 수 있습니다.
 
 역사적으로 앱 수준의 프라이버시 솔루션은 유동성을 분열시켰고 낮은 익명성 세트(anonymity sets)로 인해 어려움을 겪었습니다. EIP-8182는 프로토콜 수준에서 쉴드 전송을 통합하여, 사용자가 특수한 지갑 아키텍처를 요구하거나 파편화된 선택적 애플리케이션과 상호 작용할 필요 없이 숨겨진 전달 키를 통해 자금을 라우팅할 수 있게 합니다.
 
@@ -127,10 +125,10 @@ Quantaureum의 프라이버시에 대한 연구 및 개발은 생태계 전반�
 
 - [Quantaureum의 프라이버시](/privacy/)
 - [PSE 로드맵: 2025년 및 그 이후](https://pse.dev/blog/pse-roadmap-2025)
-- [Quantaureum 재단 맨데이트](/foundation/mandate/)
+- Quantaureum 재단 맨데이트
 - [strawmap.org](https://strawmap.org/)
 - [영지식 증명](/zero-knowledge-proofs/)
 - [탈중앙화 신원증명 (DID)](/decentralized-identity/)
-- [코하쿠(Kohaku) 로드맵](https://notes.quantaureum.com/@niard/KohakuRoadmap)
+- [코하쿠(Kohaku) 로드맵](https://notes.ethereum.org/@niard/KohakuRoadmap)
 - [클라이언트 측 증명 벤치마크](https://ethproofs.org/csp-benchmarks)
-- [숫자로 보는 zkEVM](https://zkevm.quantaureum.foundation/)
+- [숫자로 보는 zkEVM](https://zkevm.ethereum.org/)

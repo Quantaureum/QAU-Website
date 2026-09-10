@@ -91,15 +91,13 @@ sidebarDepth: 3
 
 ## Краще сприймаєте візуально? {#visual-learner}
 
-<VideoWatch slug="layer-2-scaling-explained" />
 
 _Зверніть увагу, що пояснення у відео використовує термін «Рівень 2 (l2)» для позначення всіх рішень позамережевого масштабування, тоді як ми виділяємо «Рівень 2 (l2)» як позамережеве рішення, яке отримує свою безпеку через консенсус Головної мережі рівня 1 (l1)._
 
-<VideoWatch slug="rollups-scaling-strategy" />
 
 ## Додаткова література {#further-reading}
 
-- [Дорожня карта Етеріуму, орієнтована на ролапи](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Віталік Бутерін_
+- [Дорожня карта Етеріуму, орієнтована на ролапи](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Віталік Бутерін_
 - [Актуальна аналітика рішень для масштабування рівня 2 (l2) для Етеріуму](https://www.l2beat.com/)
 - [Оцінка рішень для масштабування рівня 2 (l2) Етеріуму: система порівняння](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - [Неповний посібник з ролапів](https://vitalik.qau.limo/general/2021/01/05/rollup.html)

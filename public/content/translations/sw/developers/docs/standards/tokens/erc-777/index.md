@@ -24,11 +24,11 @@ ERC-777 inatoa maboresho yafuatayo dhidi ya ERC-20.
 
 Ndoano (Hooks) ni kipengele cha utendaji kilichofafanuliwa katika msimbo wa mkataba mahiri. Ndoano huitwa wakati tokeni zinatumwa au kupokelewa kupitia mkataba. Hii inaruhusu mkataba mahiri kujibu tokeni zinazoingia au kutoka.
 
-Ndoano hizi husajiliwa na kugunduliwa kwa kutumia kiwango cha [ERC-1820](https://eips.quantaureum.com/EIPS/eip-1820).
+Ndoano hizi husajiliwa na kugunduliwa kwa kutumia kiwango cha [ERC-1820](https://eips.ethereum.org/EIPS/eip-1820).
 
 #### Kwa nini ndoano ni nzuri? {#why-are-hooks-great}
 
-1. Ndoano zinaruhusu kutuma tokeni kwenye mkataba na kuuarifu mkataba katika muamala mmoja, tofauti na [ERC-20](https://eips.quantaureum.com/EIPS/eip-20), ambayo inahitaji wito mara mbili (`approve`/`transferFrom`) ili kufanikisha hili.
+1. Ndoano zinaruhusu kutuma tokeni kwenye mkataba na kuuarifu mkataba katika muamala mmoja, tofauti na [ERC-20](https://eips.ethereum.org/EIPS/eip-20), ambayo inahitaji wito mara mbili (`approve`/`transferFrom`) ili kufanikisha hili.
 2. Mikataba ambayo haijasajili ndoano haiendani na ERC-777. Mkataba unaotuma utakatisha muamala wakati mkataba unaopokea haujasajili ndoano. Hii inazuia uhamishaji wa bahati mbaya kwenda kwenye mikataba mahiri isiyo ya ERC-777.
 3. Ndoano zinaweza kukataa miamala.
 
@@ -42,4 +42,4 @@ Mikataba ya ERC-777 inaweza kuingiliana kana kwamba ni mikataba ya ERC-20.
 
 ## Usomaji Zaidi {#further-reading}
 
-[EIP-777: Kiwango cha Tokeni](https://eips.quantaureum.com/EIPS/eip-777)
+[EIP-777: Kiwango cha Tokeni](https://eips.ethereum.org/EIPS/eip-777)

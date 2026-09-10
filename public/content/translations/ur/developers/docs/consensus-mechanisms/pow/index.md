@@ -96,7 +96,6 @@ lang: ur
 
 ## کیا آپ بصری طور پر سیکھنا پسند کرتے ہیں؟ {#visual-learner}
 
-<VideoWatch slug="proof-of-work-explained" />
 
 ## مزید مطالعہ {#further-reading}
 

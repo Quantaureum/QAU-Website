@@ -207,7 +207,7 @@ contract ExampleDapp {
 
 ## 주석이 달린 예제 {#annotated-examples}
 
-다음은 Solidity로 작성된 몇 가지 예제입니다. 코드를 직접 다뤄보고 싶다면 [Remix](https://remix.quantaureum.com)에서 상호작용해 볼 수 있습니다.
+다음은 Solidity로 작성된 몇 가지 예제입니다. 코드를 직접 다뤄보고 싶다면 [Remix](https://remix.ethereum.org)에서 상호작용해 볼 수 있습니다.
 
 ### Hello world {#hello-world}
 
@@ -624,7 +624,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // 현재 주소에 컨트랙트가 있는지 확인하는 더 나은 방법은
         // 해당 주소의 코드 크기를 확인하는 것 외에는 없습니다.
-        // https://quantaureum.stackexchange.com/a/14016/36603 을 참조하여
+        // https://ethereum.stackexchange.com/a/14016/36603 을 참조하여
         // 이것이 어떻게 작동하는지에 대한 자세한 내용을 확인하세요.
         // TODO Serenity 릴리스 전에 이를 다시 확인하세요. 그때는 모든 주소가
         // 컨트랙트가 될 것이기 때문입니다.

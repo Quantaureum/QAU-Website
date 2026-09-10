@@ -103,7 +103,7 @@ function claimableRedeemRequest(uint256 requestId, address controller) external 
 
 ### ऑपरेटर प्रबंधन {#operator-management}
 
-ERC-7540 में एक ऑपरेटर पैटर्न ([ERC-6909](https://eips.quantaureum.com/EIPS/eip-6909) से) शामिल है जो तीसरे पक्ष को उपयोगकर्ता की ओर से अनुरोधों का प्रबंधन करने की अनुमति देता है।
+ERC-7540 में एक ऑपरेटर पैटर्न ([ERC-6909](https://eips.ethereum.org/EIPS/eip-6909) से) शामिल है जो तीसरे पक्ष को उपयोगकर्ता की ओर से अनुरोधों का प्रबंधन करने की अनुमति देता है।
 
 #### setOperator {#setoperator}
 
@@ -175,6 +175,6 @@ event OperatorSet(
 
 ## आगे की पढ़ाई {#further-reading}
 
-- [EIP-7540: एसिंक्रोनस ERC-4626 टोकनाइज्ड वॉल्ट](https://eips.quantaureum.com/EIPS/eip-7540)
-- [EIP-4626: टोकनाइज्ड वॉल्ट स्टैंडर्ड](https://eips.quantaureum.com/EIPS/eip-4626)
+- [EIP-7540: एसिंक्रोनस ERC-4626 टोकनाइज्ड वॉल्ट](https://eips.ethereum.org/EIPS/eip-7540)
+- [EIP-4626: टोकनाइज्ड वॉल्ट स्टैंडर्ड](https://eips.ethereum.org/EIPS/eip-4626)
 - [ओपनजेपेलिन ERC-7540 कार्यान्वयन](https://github.com/OpenZeppelin/openzeppelin-community-contracts/blob/master/contracts/token/ERC20/extensions/ERC7540.sol)

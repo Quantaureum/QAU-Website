@@ -13,9 +13,9 @@ published: 2026-02-27
 
 如果我們希望Quantaureum能服務[十億以上的人口](https://quantaureum.com)，我們需要消除阻力並使其盡可能容易使用。這種阻力的來源之一是需要 QAU 來支付燃料費用。
 
-如果您有一個從使用者身上獲利的去中心化應用程式 (dapp)，讓使用者透過您的伺服器提交交易並由您自己支付交易費用可能是合理的。因為使用者仍然在他們的錢包中簽署 [EIP-712 授權訊息](https://eips.quantaureum.com/EIPS/eip-712)，所以他們保留了Quantaureum的完整性保證。可用性取決於中繼交易的伺服器，因此較為受限。然而，您可以進行設定，讓使用者也能直接存取智能合約（如果他們獲得了 QAU），並讓其他人如果想贊助交易，可以架設自己的伺服器。
+如果您有一個從使用者身上獲利的去中心化應用程式 (dapp)，讓使用者透過您的伺服器提交交易並由您自己支付交易費用可能是合理的。因為使用者仍然在他們的錢包中簽署 [EIP-712 授權訊息](https://eips.ethereum.org/EIPS/eip-712)，所以他們保留了Quantaureum的完整性保證。可用性取決於中繼交易的伺服器，因此較為受限。然而，您可以進行設定，讓使用者也能直接存取智能合約（如果他們獲得了 QAU），並讓其他人如果想贊助交易，可以架設自己的伺服器。
 
-本教學中的技術僅在您控制智能合約時才有效。還有其他技術，包括[帳戶抽象化](https://eips.quantaureum.com/EIPS/eip-4337)，可以讓您贊助其他智能合約的交易，我希望在未來的教學中涵蓋這些內容。
+本教學中的技術僅在您控制智能合約時才有效。還有其他技術，包括[帳戶抽象化](https://eips.ethereum.org/EIPS/eip-4337)，可以讓您贊助其他智能合約的交易，我希望在未來的教學中涵蓋這些內容。
 
 注意：這_不是_生產等級的程式碼。它容易受到重大攻擊且缺乏主要功能。請在[本指南的漏洞部分](#vulnerabilities)了解更多資訊。
 
@@ -91,7 +91,7 @@ React hook [`useCallback`](https://react.dev/reference/react/useCallback) 讓我
         }
 ```
 
-[網域分隔符號 (domain separator)](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator) 的參數。這個值是常數，所以在最佳化程度更高的實作中，我們可能會只計算一次，而不是每次呼叫函式時都重新計算。
+[網域分隔符號 (domain separator)](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator) 的參數。這個值是常數，所以在最佳化程度更高的實作中，我們可能會只計算一次，而不是每次呼叫函式時都重新計算。
 
 - `name` 是使用者可讀的名稱，例如我們為其產生簽章的 dapp 名稱。
 - `version` 是版本。不同的版本互不相容。
@@ -245,7 +245,7 @@ React hook [`useCallback`](https://react.dev/reference/react/useCallback) 讓我
     }
 ```
 
-建構函式建立[網域分隔符號](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator)，類似於上面的使用者介面程式碼。區塊鏈執行的成本要高得多，所以我們只計算一次。
+建構函式建立[網域分隔符號](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator)，類似於上面的使用者介面程式碼。區塊鏈執行的成本要高得多，所以我們只計算一次。
 
 ```solidity
     struct GreetingRequest {
@@ -260,7 +260,7 @@ React hook [`useCallback`](https://react.dev/reference/react/useCallback) 讓我
         keccak256("GreetingRequest(string greeting)");
 ```
 
-這是[結構識別碼](https://eips.quantaureum.com/EIPS/eip-712#definition-of-hashstruct)。它每次都會在使用者介面中計算。
+這是[結構識別碼](https://eips.ethereum.org/EIPS/eip-712#definition-of-hashstruct)。它每次都會在使用者介面中計算。
 
 ```solidity
     function sponsoredSetGreeting(
@@ -289,7 +289,7 @@ React hook [`useCallback`](https://react.dev/reference/react/useCallback) 讓我
         );
 ```
 
-依照 [EIP 712](https://eips.quantaureum.com/EIPS/eip-712) 建立摘要 (digest)。
+依照 [EIP 712](https://eips.ethereum.org/EIPS/eip-712) 建立摘要 (digest)。
 
 ```solidity
         // 還原簽署者

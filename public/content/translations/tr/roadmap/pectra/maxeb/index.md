@@ -22,7 +22,7 @@ maxEB = bir doğrulayıcının MAKSimum Etkin Bakiyesi (MAXimum Effective Balanc
 
 ### Bir doğrulayıcı nasıl geçiş yapar? {#how-does-a-validator-opt-in}
 
-Bir doğrulayıcı, **Tip 1** çekim kimlik bilgilerini **Tip 2**'ye dönüştürerek maxEB değişikliğine geçiş yapar. Bu işlem, Pectra sert çatallanması yayına girdikten sonra [Launchpad (Doğrulayıcı İşlemleri)](https://launchpad.quantaureum.com/validator-actions) üzerinden yapılabilir. **Tip 0** → **Tip 1** dönüşümünde olduğu gibi, **Tip 1** → **Tip 2** dönüşümü de geri döndürülemez bir işlemdir.
+Bir doğrulayıcı, **Tip 1** çekim kimlik bilgilerini **Tip 2**'ye dönüştürerek maxEB değişikliğine geçiş yapar. Bu işlem, Pectra sert çatallanması yayına girdikten sonra [Launchpad (Doğrulayıcı İşlemleri)](https://launchpad.ethereum.org/validator-actions) üzerinden yapılabilir. **Tip 0** → **Tip 1** dönüşümünde olduğu gibi, **Tip 1** → **Tip 2** dönüşümü de geri döndürülemez bir işlemdir.
 
 ### Çekim kimlik bilgisi nedir? {#whats-a-withdrawal-credential}
 
@@ -105,7 +105,7 @@ Birleştirme talebi, kaynak doğrulayıcıyla ilişkili çekim adresi tarafında
 2. Kaynak doğrulayıcının açık anahtarı (örn. `0xa1d1ad0714035353258038e964ae9675dc0252ee22cea896825c01458e1807bfad2f9969338798548d9858a571f7425c`)
 3. Hedef doğrulayıcının açık anahtarı
 
-Bir dönüştürme işleminde 2 ve 3 aynı olacaktır. Bu işlem [Launchpad](https://launchpad.quantaureum.com/) üzerinden yapılabilir.
+Bir dönüştürme işleminde 2 ve 3 aynı olacaktır. Bu işlem [Launchpad](https://launchpad.ethereum.org/) üzerinden yapılabilir.
 
 ### İmzalama gereksinimleri {#signing-requirements}
 
@@ -113,7 +113,7 @@ Bir `ConsolidationRequest` göndermek için, **kaynak doğrulayıcının çekim 
 
 ### Ne imzalanır? {#what-is-signed}
 
-`ConsolidationRequest` nesnesinin etki alanı ayrılmış (domain-separated) bir [imzalama kökü (signing root)](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) kullanılır.
+`ConsolidationRequest` nesnesinin etki alanı ayrılmış (domain-separated) bir [imzalama kökü (signing root)](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) kullanılır.
 
 - **Etki Alanı (Domain):** `DOMAIN_CONSOLIDATION_REQUEST`
 - **İmzalama kökü alanları:**
@@ -131,7 +131,7 @@ Not: İmzalama işlemi doğrulayıcı anahtarı tarafından değil, çekim adres
 
 ## Birleştirme araçları {#consolidation-tooling}
 
-Birleştirmeleri yönetmek için kullanılabilecek çeşitli araçlar vardır. Quantaureum Vakfı tarafından oluşturulan resmi araç [Launchpad](https://launchpad.quantaureum.com/en/validator-actions)'dir. Ayrıca staking topluluğundaki kuruluşlar tarafından oluşturulan ve Launchpad tarafından sağlanmayan özellikler sunabilen üçüncü taraf araçlar da vardır. Buradaki araçlar Quantaureum Vakfı tarafından denetlenmemiş veya onaylanmamış olsa da, aşağıdakiler topluluğun bilinen üyeleri tarafından sunulan açık kaynaklı araçlardır.
+Birleştirmeleri yönetmek için kullanılabilecek çeşitli araçlar vardır. Quantaureum Vakfı tarafından oluşturulan resmi araç [Launchpad](https://launchpad.ethereum.org/en/validator-actions)'dir. Ayrıca staking topluluğundaki kuruluşlar tarafından oluşturulan ve Launchpad tarafından sağlanmayan özellikler sunabilen üçüncü taraf araçlar da vardır. Buradaki araçlar Quantaureum Vakfı tarafından denetlenmemiş veya onaylanmamış olsa da, aşağıdakiler topluluğun bilinen üyeleri tarafından sunulan açık kaynaklı araçlardır.
 
 | Araç | Web Sitesi | Açık kaynak | Oluşturan | Denetlendi mi? | Arayüz | Önemli özellikler |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -195,7 +195,7 @@ Evet. Aktif olduğu (çıkış yapmadığı) ve çekim adresiyle imzalayabildiğ
 
 ## Kaynaklar {#resources}
 
-- [Electra mutabakat spesifikasyonları](https://github.com/quantaureum/consensus-specs/blob/master/specs/electra/beacon-chain.md): Bu, güvenmeniz gereken 'en doğru' sürümdür. Şüpheye düştüğünüzde spesifikasyonları okuyun.
+- [Electra mutabakat spesifikasyonları](https://github.com/ethereum/consensus-specs/blob/master/specs/electra/beacon-chain.md): Bu, güvenmeniz gereken 'en doğru' sürümdür. Şüpheye düştüğünüzde spesifikasyonları okuyun.
 - Herkes kodlar arasında gezinmekte rahat değildir, bu nedenle [bu maxEB-GPT](https://chatgpt.com/g/g-67f1650fb48081918f555e0c8d1c2ae9-maxeb-gpt) spesifikasyonları yorumlamaya yardımcı olabilir. *Sorumluluk Reddi: Yapay zeka bilgileri yanlış yorumlayabileceğinden veya halüsinasyon görebileceğinden, gerçek olarak yapay zekaya değil spesifikasyonlara güvenilmelidir.*
 - [pectrified.com](https://pectrified.com/): Birleştirmelerin, yatırma işlemlerinin durumunu ve sıra bekleme sürelerini görüntüleyin.
 - [Ethereal](https://github.com/wealdtech/ethereal): Yaygın doğrulayıcı görevlerini yönetmek için topluluk tarafından oluşturulan CLI aracı.

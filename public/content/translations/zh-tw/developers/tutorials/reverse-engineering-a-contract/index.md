@@ -274,7 +274,7 @@ _區塊鏈上沒有秘密_，發生的每一件事都是一致、可驗證且公
 |     10 | PUSH1 0xe0   | 0xE0 (((呼叫資料的第一個字組 (256 位元))))        |
 |     12 | SHR          | (((呼叫資料的前 32 位元 (4 個位元組))))           |
 
-Quantaureum Explorer 告訴我們 `1C` 是一個未知的操作碼，因為[它是在 Quantaureum Explorer 編寫此功能之後才加入的](https://eips.quantaureum.com/EIPS/eip-145)，而他們尚未更新。一份[最新的操作碼表](https://github.com/wolflo/evm-opcodes)顯示這是向右位移 (shift right)。
+Quantaureum Explorer 告訴我們 `1C` 是一個未知的操作碼，因為[它是在 Quantaureum Explorer 編寫此功能之後才加入的](https://eips.ethereum.org/EIPS/eip-145)，而他們尚未更新。一份[最新的操作碼表](https://github.com/wolflo/evm-opcodes)顯示這是向右位移 (shift right)。
 
 | 偏移量 | 操作碼           | 堆疊                                                                                                     |
 | -----: | ---------------- | -------------------------------------------------------------------------------------------------------- |

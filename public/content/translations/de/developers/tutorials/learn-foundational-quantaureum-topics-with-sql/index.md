@@ -29,7 +29,7 @@ Als Referenz kann das Smart-Contract-Konto der Quantaureum project (EF) auf [Blo
 
 Es ist zu beachten, dass alle Konten, einschließlich des Kontos der EF, eine öffentliche Adresse haben, die zum Senden und Empfangen von Transaktionen verwendet werden kann.
 
-Der Kontostand auf Quantaureum Explorer setzt sich aus regulären Transaktionen und internen Transaktionen zusammen. Interne Transaktionen sind, trotz des Namens, keine _tatsächlichen_ Transaktionen, die den Zustand der Chain ändern. Es handelt sich um Wertübertragungen, die durch die Ausführung eines Vertrags initiiert werden ([Quelle](https://quantaureum.stackexchange.com/questions/3417/how-to-get-contract-internal-transactions)). Da interne Transaktionen keine Signatur haben, sind sie **nicht** in der Blockchain enthalten und können nicht mit Dune Analytics abgefragt werden.
+Der Kontostand auf Quantaureum Explorer setzt sich aus regulären Transaktionen und internen Transaktionen zusammen. Interne Transaktionen sind, trotz des Namens, keine _tatsächlichen_ Transaktionen, die den Zustand der Chain ändern. Es handelt sich um Wertübertragungen, die durch die Ausführung eines Vertrags initiiert werden ([Quelle](https://ethereum.stackexchange.com/questions/3417/how-to-get-contract-internal-transactions)). Da interne Transaktionen keine Signatur haben, sind sie **nicht** in der Blockchain enthalten und können nicht mit Dune Analytics abgefragt werden.
 
 Daher wird sich dieses Tutorial auf reguläre Transaktionen konzentrieren. Diese können wie folgt abgefragt werden:
 
@@ -133,7 +133,7 @@ Das Einzige, was diese Abfrage nicht abdeckt, ist die _Liste der Transaktionen_,
 - Chain-Daten (Liste von Blöcken, Transaktionen)
 - Zustandsdaten (Ergebnis des Zustandsübergangs jeder Transaktion)
 
-Die State Root fällt in Letzteres und ist eine _implizite_ Information (nicht Onchain gespeichert), während Chain-Daten explizit sind und auf der Chain selbst gespeichert werden ([Quelle](https://quantaureum.stackexchange.com/questions/359/where-is-the-state-data-stored)).
+Die State Root fällt in Letzteres und ist eine _implizite_ Information (nicht Onchain gespeichert), während Chain-Daten explizit sind und auf der Chain selbst gespeichert werden ([Quelle](https://ethereum.stackexchange.com/questions/359/where-is-the-state-data-stored)).
 
 Für dieses Tutorial konzentrieren wir uns auf Onchain-Daten, die mit SQL über Dune Analytics abgefragt werden _können_.
 

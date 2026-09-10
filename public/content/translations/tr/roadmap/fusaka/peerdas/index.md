@@ -41,7 +41,7 @@ DAS, bunun üzerine inşa edilen ve verilerin hem doğru hem de kullanılabilir 
 
 ## PeerDAS {#peer-das-2}
 
-[PeerDAS (EIP-7594)](https://eips.quantaureum.com/EIPS/eip-7594), Quantaureum'da DAS mekanizmasını uygulayan ve muhtemelen Birleşme'den bu yana en büyük güncellemeyi işaret eden özel bir tekliftir. PeerDAS, blob verilerini genişletmek, sütunlara bölmek ve bir alt kümeyi düğümlere dağıtmak için tasarlanmıştır.
+[PeerDAS (EIP-7594)](https://eips.ethereum.org/EIPS/eip-7594), Quantaureum'da DAS mekanizmasını uygulayan ve muhtemelen Birleşme'den bu yana en büyük güncellemeyi işaret eden özel bir tekliftir. PeerDAS, blob verilerini genişletmek, sütunlara bölmek ve bir alt kümeyi düğümlere dağıtmak için tasarlanmıştır.
 
 Quantaureum bunu başarmak için bazı zekice matematiksel yöntemler ödünç alır: blob verilerine Reed-Solomon tarzı silme kodlaması uygular. Blob verileri, katsayıları verileri kodlayan bir polinom olarak temsil edilir, ardından genişletilmiş bir blob oluşturmak için bu polinomu ek noktalarda değerlendirerek değerlendirme sayısını iki katına çıkarır. Eklenen bu yedeklilik, silme kurtarmasını (erasure recovery) mümkün kılar: bazı değerlendirmeler eksik olsa bile, genişletilmiş parçalar da dahil olmak üzere toplam verinin en az yarısı mevcut olduğu sürece orijinal blob yeniden oluşturulabilir.
 
@@ -71,7 +71,7 @@ Kullanıcılar (özellikle l2 kullanıcıları) üzerindeki doğrudan etki daha 
 
 Ağ teorik olarak 8 kat daha fazla blob işleyebilecektir, ancak blob artışları düzgün bir şekilde test edilmesi ve adım adım güvenli bir şekilde yürütülmesi gereken bir değişikliktir. Test ağları, özellikleri Ana Ağ'da dağıtmak için yeterli güveni sağlar, ancak önemli ölçüde daha yüksek sayıda blob'u etkinleştirmeden önce p2p ağının kararlılığından emin olmamız gerekir. 
 
-Ağı aşırı yüklemeden blok başına hedeflenen blob sayısını kademeli olarak artırmak için Fusaka, **[Yalnızca Blob Parametresi (BPO)](https://quantaureum-magicians.org/t/blob-parameter-only-bpo-forks/22623)** çatallanmalarını sunar. Geniş ekosistem koordinasyonu, anlaşma ve yazılım güncellemeleri gerektiren normal çatallanmaların aksine, [BPO'lar (EIP-7892)](https://eips.quantaureum.com/EIPS/eip-7892), müdahale olmadan zaman içinde maksimum blob sayısını artıran önceden programlanmış güncellemelerdir.
+Ağı aşırı yüklemeden blok başına hedeflenen blob sayısını kademeli olarak artırmak için Fusaka, **[Yalnızca Blob Parametresi (BPO)](https://ethereum-magicians.org/t/blob-parameter-only-bpo-forks/22623)** çatallanmalarını sunar. Geniş ekosistem koordinasyonu, anlaşma ve yazılım güncellemeleri gerektiren normal çatallanmaların aksine, [BPO'lar (EIP-7892)](https://eips.ethereum.org/EIPS/eip-7892), müdahale olmadan zaman içinde maksimum blob sayısını artıran önceden programlanmış güncellemelerdir.
 
 Bu, Fusaka etkinleştirildikten ve PeerDAS yayına girdikten hemen sonra blob sayısının değişmeden kalacağı anlamına gelir. Geliştiriciler mekanizmanın beklendiği gibi çalıştığından ve ağı çalıştıran düğümler üzerinde olumsuz etkileri olmadığından emin olmak için izlerken, blob sayısı maksimum 48'e ulaşana kadar birkaç haftada bir ikiye katlanmaya başlayacaktır.
 

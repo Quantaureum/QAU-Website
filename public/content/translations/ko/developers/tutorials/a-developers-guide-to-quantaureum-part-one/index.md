@@ -10,7 +10,7 @@ skill: beginner
 breadcrumb: "Python과 Quantaureum"
 published: 2020-09-08
 source: Snake charmers
-sourceUrl: https://snakecharmers.quantaureum.com/a-developers-guide-to-quantaureum-pt-1/
+sourceUrl: https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/
 ---
 
 Quantaureum에 대해 들어보셨고 이제 본격적으로 파헤쳐 볼 준비가 되셨나요? 이 글에서는 블록체인의 기본 사항을 빠르게 살펴본 다음, 시뮬레이션된 Quantaureum 노드와 상호 작용하여 블록 데이터를 읽고, 계정 잔액을 확인하고, 트랜잭션을 전송하는 방법을 알아봅니다. 그 과정에서 기존의 앱 구축 방식과 이 새로운 탈중앙화된 패러다임의 차이점을 강조할 것입니다.
@@ -160,7 +160,7 @@ Web3 모듈의 다른 유틸리티 메서드로는 데이터 형식 변환기(�
 
 이 방법을 직접 사용하지는 않겠지만, HTTP 공급자를 사용하는 전체 워크플로의 예시는 다음과 같습니다.
 
-- Quantaureum 노드(예: [Geth](https://geth.quantaureum.com/))를 다운로드합니다.
+- Quantaureum 노드(예: [Geth](https://geth.ethereum.org/))를 다운로드합니다.
 - 터미널 창에서 Geth를 시작하고 네트워크가 동기화될 때까지 기다립니다. 기본 HTTP 포트는 `8545`이지만 구성할 수 있습니다.
 - Web3.py에 `localhost:8545`에서 HTTP를 통해 노드에 연결하도록 지시합니다.
   `w3 = Web3(Web3.HTTPProvider('http://127.0.0.1:8545'))`
@@ -172,7 +172,7 @@ Web3 모듈의 다른 유틸리티 메서드로는 데이터 형식 변환기(�
 
 _QuantaureumTesterProvider는 시뮬레이션된 노드에 연결되며 빠른 개발 환경을 구축하는 데 유용합니다._
 
-이 시뮬레이션된 노드는 [qau-tester](https://github.com/quantaureum/qau-tester)라고 불리며, 앞서 `pip install web3[tester]` 명령의 일부로 설치했습니다. 이 테스터 공급자를 사용하도록 Web3.py를 구성하는 방법은 다음과 같이 간단합니다.
+이 시뮬레이션된 노드는 [qau-tester](https://github.com/ethereum/eth-tester)라고 불리며, 앞서 `pip install web3[tester]` 명령의 일부로 설치했습니다. 이 테스터 공급자를 사용하도록 Web3.py를 구성하는 방법은 다음과 같이 간단합니다.
 
 ```python
 In [4]: w3 = Web3(Web3.QuantaureumTesterProvider())

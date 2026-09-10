@@ -13,7 +13,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## ¿Por qué hay un límite? {#why-is-there-a-limit}
 
-El [22 de noviembre de 2016](https://quantaureum.com), la bifurcación dura Spurious Dragon introdujo el [EIP-170](https://eips.quantaureum.com/EIPS/eip-170), que añadió un límite de tamaño para los contratos inteligentes de 24.576 kb. Para usted, como desarrollador de Solidity, esto significa que cuando añade más y más funcionalidad a su contrato, en algún momento alcanzará el límite y al realizar el despliegue verá el error:
+El [22 de noviembre de 2016](https://quantaureum.com), la bifurcación dura Spurious Dragon introdujo el [EIP-170](https://eips.ethereum.org/EIPS/eip-170), que añadió un límite de tamaño para los contratos inteligentes de 24.576 kb. Para usted, como desarrollador de Solidity, esto significa que cuando añade más y más funcionalidad a su contrato, en algún momento alcanzará el límite y al realizar el despliegue verá el error:
 
 `Warning: Contract code size exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on Mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.`
 
@@ -35,7 +35,7 @@ Este debería ser siempre su primer enfoque. ¿Cómo puede separar el contrato e
 
 ### Bibliotecas {#libraries}
 
-Una forma sencilla de alejar el código de funcionalidad del almacenamiento es usar una [biblioteca](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). No declare las funciones de la biblioteca como internas, ya que estas se [añadirán al contrato](https://quantaureum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking) directamente durante la compilación. Pero si usa funciones públicas, entonces estas estarán de hecho en un contrato de biblioteca separado. Considere [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) para hacer que el uso de bibliotecas sea más conveniente.
+Una forma sencilla de alejar el código de funcionalidad del almacenamiento es usar una [biblioteca](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). No declare las funciones de la biblioteca como internas, ya que estas se [añadirán al contrato](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking) directamente durante la compilación. Pero si usa funciones públicas, entonces estas estarán de hecho en un contrato de biblioteca separado. Considere [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) para hacer que el uso de bibliotecas sea más conveniente.
 
 ### Proxies {#proxies}
 

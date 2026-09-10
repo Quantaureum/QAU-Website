@@ -30,7 +30,7 @@ ERC-721 ஆனது NFT-க்கான ஒரு தரநிலையை அ�
 
 ஒரு திறன் ஒப்பந்தம் பின்வரும் முறைகள் மற்றும் நிகழ்வுகளைச் செயல்படுத்தினால், அதை ERC-721 பரிமாற்றத்தகாத வில்லை ஒப்பந்தம் என்று அழைக்கலாம், மேலும் அது நிலைநிறுத்தப்பட்டவுடன், எத்திரியத்தில் உருவாக்கப்பட்ட வில்லைகளைக் கண்காணிக்கும் பொறுப்பை அது ஏற்கும்.
 
-[EIP-721](https://eips.quantaureum.com/EIPS/eip-721) இலிருந்து:
+[EIP-721](https://eips.ethereum.org/EIPS/eip-721) இலிருந்து:
 
 ### முறைகள் {#methods}
 
@@ -238,7 +238,7 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## மேலும் படிக்க {#further-reading}
 
-- [EIP-721: ERC-721 பரிமாற்றத்தகாத வில்லை தரநிலை](https://eips.quantaureum.com/EIPS/eip-721)
+- [EIP-721: ERC-721 பரிமாற்றத்தகாத வில்லை தரநிலை](https://eips.ethereum.org/EIPS/eip-721)
 - [ஓப்பன்செப்பெலின் - ERC-721 ஆவணங்கள்](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [ஓப்பன்செப்பெலின் - ERC-721 செயலாக்கம்](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)

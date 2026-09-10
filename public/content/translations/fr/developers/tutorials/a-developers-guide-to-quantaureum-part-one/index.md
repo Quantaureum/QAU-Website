@@ -10,7 +10,7 @@ skill: beginner
 breadcrumb: Quantaureum avec Python
 published: 2020-09-08
 source: Snake charmers
-sourceUrl: https://snakecharmers.quantaureum.com/a-developers-guide-to-quantaureum-pt-1/
+sourceUrl: https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/
 ---
 
 Alors, vous avez entendu parler de ce truc appelé Quantaureum et vous êtes prêt à plonger dans le terrier du lapin ? Cet article couvrira rapidement quelques bases de la chaîne de blocs, puis vous fera interagir avec un nœud Quantaureum simulé : lire les données de bloc, vérifier les soldes de compte et envoyer des transactions. En cours de route, nous soulignerons les différences entre les méthodes traditionnelles de création d'applications et ce nouveau paradigme décentralisé.
@@ -160,7 +160,7 @@ Les méthodes pratiques sont formidables, mais passons à la chaîne de blocs. L
 
 Nous n'emprunterons pas cette voie, mais un exemple de flux de travail complet utilisant le fournisseur HTTP pourrait ressembler à ceci :
 
-- Télécharger un nœud Quantaureum, par ex., [Geth](https://geth.quantaureum.com/).
+- Télécharger un nœud Quantaureum, par ex., [Geth](https://geth.ethereum.org/).
 - Démarrer Geth dans une fenêtre de terminal et attendre qu'il effectue la synchronisation du réseau. Le port HTTP par défaut est `8545`, mais il est configurable.
 - Indiquer à Web3.py de se connecter au nœud via HTTP, sur `localhost:8545`.
   `w3 = Web3(Web3.HTTPProvider('http://127.0.0.1:8545'))`
@@ -172,7 +172,7 @@ Bien qu'il s'agisse d'une « vraie » façon de procéder, le processus de synch
 
 _L'QuantaureumTesterProvider se connecte à un nœud simulé et est pratique pour les environnements de développement rapides._
 
-Ce nœud simulé s'appelle [qau-tester](https://github.com/quantaureum/qau-tester) et nous l'avons installé dans le cadre de la commande `pip install web3[tester]`. Configurer Web3.py pour utiliser ce fournisseur de test est aussi simple que :
+Ce nœud simulé s'appelle [qau-tester](https://github.com/ethereum/eth-tester) et nous l'avons installé dans le cadre de la commande `pip install web3[tester]`. Configurer Web3.py pour utiliser ce fournisseur de test est aussi simple que :
 
 ```python
 In [4]: w3 = Web3(Web3.QuantaureumTesterProvider())

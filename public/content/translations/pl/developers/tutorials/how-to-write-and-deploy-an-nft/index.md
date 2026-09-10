@@ -191,7 +191,7 @@ Więc co dokładnie _robi_ ten kod? Przeanalizujmy go linijka po linijce.
 
 Na samej górze naszego inteligentnego kontraktu importujemy trzy klasy inteligentnych kontraktów [OpenZeppelin](https://openzeppelin.com/):
 
-- @openzeppelin/contracts/token/ERC721/ERC721.sol zawiera implementację standardu ERC-721, którą odziedziczy nasz inteligentny kontrakt NFT. (Aby być prawidłowym NFT, Twój inteligentny kontrakt musi implementować wszystkie metody standardu ERC-721). Aby dowiedzieć się więcej o odziedziczonych funkcjach ERC-721, sprawdź definicję interfejsu [tutaj](https://eips.quantaureum.com/EIPS/eip-721).
+- @openzeppelin/contracts/token/ERC721/ERC721.sol zawiera implementację standardu ERC-721, którą odziedziczy nasz inteligentny kontrakt NFT. (Aby być prawidłowym NFT, Twój inteligentny kontrakt musi implementować wszystkie metody standardu ERC-721). Aby dowiedzieć się więcej o odziedziczonych funkcjach ERC-721, sprawdź definicję interfejsu [tutaj](https://eips.ethereum.org/EIPS/eip-721).
 
 - @openzeppelin/contracts/utils/Counters.sol dostarcza liczniki, które mogą być tylko inkrementowane lub dekrementowane o jeden. Nasz inteligentny kontrakt używa licznika do śledzenia całkowitej liczby wybitych NFT i ustawienia unikalnego identyfikatora (ID) dla naszego nowego NFT. (Każde NFT wybite przy użyciu inteligentnego kontraktu musi mieć przypisany unikalny identyfikator — tutaj nasz unikalny identyfikator jest po prostu określany przez całkowitą liczbę istniejących NFT. Na przykład pierwsze NFT, które wybijamy za pomocą naszego inteligentnego kontraktu, ma ID „1”, nasze drugie NFT ma ID „2” itd.).
 

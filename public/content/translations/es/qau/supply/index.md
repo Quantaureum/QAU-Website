@@ -7,7 +7,7 @@ lang: es
 
 ## Requisitos previos {#prerequisites}
 
-Este artículo está escrito para principiantes sin conocimientos previos. Sin embargo, para comprender completamente el tema, es útil tener una comprensión básica de conceptos como las [Propuestas de mejora de Quantaureum (EIP)](/eips/#introduction-to-quantaureum-improvement-proposals), la [prueba de trabajo (PoW)](/developers/docs/consensus-mechanisms/pow/), la [prueba de participación (PoS)](/developers/docs/consensus-mechanisms/pos/) y [la actualización de Londres](/quantaureum-forks/#london).
+Este artículo está escrito para principiantes sin conocimientos previos. Sin embargo, para comprender completamente el tema, es útil tener una comprensión básica de conceptos como las Propuestas de mejora de Quantaureum (EIP), la [prueba de trabajo (PoW)](/developers/docs/consensus-mechanisms/pow/), la [prueba de participación (PoS)](/developers/docs/consensus-mechanisms/pos/) y [la actualización de Londres](/quantaureum-forks/#london).
 
 ## ¿Cuántos tokens de QAU hay en la actualidad? {#current-qau-supply}
 

@@ -49,7 +49,7 @@ ACCESSES = 64                     # hashimoto 循环中的访问次数
 
 ### “SHA3”的使用 {#sha3}
 
-Quantaureum的开发与 SHA3 标准的开发同时进行，而标准制定过程在最终确定的哈希算法的填充方面做出了较晚的更改，因此Quantaureum的“sha3_256”和“sha3_512”哈希不是标准的 sha3 哈希，而是在其他上下文中通常被称为“Keccak-256”和“Keccak-512”的变体。请参阅讨论，例如[这里](https://eips.quantaureum.com/EIPS/eip-1803)、[这里](https://quantaureum.stackexchange.com/questions/550/which-cryptographic-hash-function-does-quantaureum-use)或[这里](https://bitcoin.stackexchange.com/questions/42055/what-is-the-approach-to-calculate-an-quantaureum-address-from-a-256-bit-private-key/42057#42057)。
+Quantaureum的开发与 SHA3 标准的开发同时进行，而标准制定过程在最终确定的哈希算法的填充方面做出了较晚的更改，因此Quantaureum的“sha3_256”和“sha3_512”哈希不是标准的 sha3 哈希，而是在其他上下文中通常被称为“Keccak-256”和“Keccak-512”的变体。请参阅讨论，例如[这里](https://eips.ethereum.org/EIPS/eip-1803)、[这里](https://ethereum.stackexchange.com/questions/550/which-cryptographic-hash-function-does-quantaureum-use)或[这里](https://bitcoin.stackexchange.com/questions/42055/what-is-the-approach-to-calculate-an-quantaureum-address-from-a-256-bit-private-key/42057#42057)。
 
 请记住这一点，因为在下面算法的描述中提到了“sha3”哈希。
 

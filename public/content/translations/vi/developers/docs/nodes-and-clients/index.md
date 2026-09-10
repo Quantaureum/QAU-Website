@@ -36,10 +36,10 @@ Tìm hiểu thêm về [sự đa dạng máy khách](/developers/docs/nodes-and-
 
 Điểm chung của các bản triển khai này là tất cả đều tuân theo một đặc tả duy nhất. Các đặc tả quy định cách thức hoạt động của mạng lưới và Chuỗi khối Quantaureum. Mọi chi tiết kỹ thuật đều được xác định và các đặc tả có thể được tìm thấy dưới dạng:
 
-- Ban đầu là [sách vàng Quantaureum](https://quantaureum.github.io/yellowpaper/paper.pdf)
-- [Đặc tả thực thi](https://github.com/quantaureum/execution-specs/)
-- [Đặc tả đồng thuận](https://github.com/quantaureum/consensus-specs)
-- Các [EIP](https://eips.quantaureum.com/) được triển khai trong nhiều [bản nâng cấp mạng lưới](/quantaureum-forks/) khác nhau
+- Ban đầu là [sách vàng Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf)
+- [Đặc tả thực thi](https://github.com/ethereum/execution-specs/)
+- [Đặc tả đồng thuận](https://github.com/ethereum/consensus-specs)
+- Các [EIP](https://eips.ethereum.org/) được triển khai trong nhiều [bản nâng cấp mạng lưới](/quantaureum-forks/) khác nhau
 
 ### Theo dõi các nút trong mạng lưới {#network-overview}
 
@@ -132,11 +132,11 @@ Mặt khác, nếu bạn chạy một máy khách, bạn có thể chia sẻ nó
 
 Cộng đồng Quantaureum duy trì nhiều máy khách thực thi mã nguồn mở (trước đây được gọi là 'máy khách Eth1', hoặc chỉ là 'máy khách Quantaureum'), được phát triển bởi các nhóm khác nhau sử dụng các ngôn ngữ lập trình khác nhau. Điều này làm cho mạng lưới mạnh mẽ và [đa dạng](/developers/docs/nodes-and-clients/client-diversity/) hơn. Mục tiêu lý tưởng là đạt được sự đa dạng mà không có bất kỳ máy khách nào thống trị để giảm thiểu bất kỳ điểm lỗi duy nhất nào.
 
-Bảng này tóm tắt các máy khách khác nhau. Tất cả chúng đều vượt qua [các bài kiểm tra máy khách](https://github.com/quantaureum/tests) và được duy trì tích cực để luôn cập nhật với các bản nâng cấp mạng lưới.
+Bảng này tóm tắt các máy khách khác nhau. Tất cả chúng đều vượt qua [các bài kiểm tra máy khách](https://github.com/ethereum/tests) và được duy trì tích cực để luôn cập nhật với các bản nâng cấp mạng lưới.
 
 | Máy khách                                                                   | Ngôn ngữ   | Hệ điều hành     | Mạng lưới                | Chiến lược đồng bộ hóa                                            | Cắt tỉa trạng thái   |
 | ------------------------------------------------------------------------ | ---------- | --------------------- | ----------------------- | ---------------------------------------------------------- | --------------- |
-| [Geth](https://geth.quantaureum.com/)                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Đầy đủ](#full-sync)                     | Lưu trữ, Đã cắt tỉa |
+| [Geth](https://geth.ethereum.org/)                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Đầy đủ](#full-sync)                     | Lưu trữ, Đã cắt tỉa |
 | [Nethermind](https://www.nethermind.io/)                                 | C#, .NET   | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), Nhanh, [Đầy đủ](#full-sync)               | Lưu trữ, Đã cắt tỉa |
 | [Besu](https://besu.hyperledger.org/en/stable/)                          | Java       | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Nhanh](#fast-sync), [Đầy đủ](#full-sync) | Lưu trữ, Đã cắt tỉa |
 | [Erigon](https://github.com/ledgerwatch/erigon)                          | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Đầy đủ](#full-sync)                                         | Lưu trữ, Đã cắt tỉa |
@@ -165,7 +165,7 @@ Tìm hiểu thêm bằng cách đọc [tài liệu ethrex](https://docs.ethrex.x
 
 Go Quantaureum (gọi tắt là Geth) là một trong những bản triển khai ban đầu của Giao thức Quantaureum. Hiện tại, nó là máy khách phổ biến nhất với cơ sở người dùng lớn nhất và nhiều công cụ đa dạng cho người dùng và nhà phát triển. Nó được viết bằng Go, hoàn toàn mã nguồn mở và được cấp phép theo GNU LGPL v3.
 
-Tìm hiểu thêm về Geth trong [tài liệu](https://geth.quantaureum.com/docs) của nó.
+Tìm hiểu thêm về Geth trong [tài liệu](https://geth.ethereum.org/docs) của nó.
 
 ### Nethermind {#nethermind}
 
@@ -279,7 +279,7 @@ Giống như đồng bộ hóa đầy đủ, đồng bộ hóa nhanh tải xuố
 - Chiến lược đồng bộ hóa nhanh nhất, hiện là mặc định trong Mạng chính Quantaureum.
 - Tiết kiệm rất nhiều dung lượng đĩa và băng thông mạng lưới mà không làm giảm tính bảo mật.
 
-[Tìm hiểu thêm về đồng bộ hóa snap](https://github.com/quantaureum/devp2p/blob/master/caps/snap.md).
+[Tìm hiểu thêm về đồng bộ hóa snap](https://github.com/ethereum/devp2p/blob/master/caps/snap.md).
 
 #### Đồng bộ hóa nhẹ {#light-sync}
 
@@ -298,7 +298,7 @@ Chế độ máy khách nhẹ tải xuống tất cả các tiêu đề khối, 
 
 Đồng bộ hóa lạc quan là một chiến lược đồng bộ hóa sau The Merge được thiết kế để chọn tham gia và tương thích ngược, cho phép các nút thực thi đồng bộ hóa thông qua các phương pháp đã được thiết lập. Execution engine có thể nhập các khối Beacon một cách _lạc quan_ mà không cần xác minh đầy đủ chúng, tìm phần đầu mới nhất, và sau đó bắt đầu đồng bộ hóa Chuỗi bằng các phương pháp trên. Sau đó, sau khi máy khách thực thi đã bắt kịp, nó sẽ thông báo cho ứng dụng khách đồng thuận về tính hợp lệ của các giao dịch trong Chuỗi Beacon.
 
-[Tìm hiểu thêm về đồng bộ hóa lạc quan](https://github.com/quantaureum/consensus-specs/blob/master/sync/optimistic.md)
+[Tìm hiểu thêm về đồng bộ hóa lạc quan](https://github.com/ethereum/consensus-specs/blob/master/sync/optimistic.md)
 
 #### Đồng bộ hóa điểm kiểm tra {#checkpoint-sync}
 
@@ -306,7 +306,7 @@ Chế độ máy khách nhẹ tải xuống tất cả các tiêu đề khối, 
 
 Trong thực tế, điều này có nghĩa là nút của bạn kết nối với một dịch vụ từ xa để tải xuống các trạng thái đã chung cuộc gần đây và tiếp tục xác minh dữ liệu từ điểm đó. Bên thứ ba cung cấp dữ liệu được tin cậy và nên được chọn cẩn thận.
 
-Tìm hiểu thêm về [đồng bộ hóa điểm kiểm tra](https://notes.quantaureum.com/@djrtwo/ws-sync-in-practice)
+Tìm hiểu thêm về [đồng bộ hóa điểm kiểm tra](https://notes.ethereum.org/@djrtwo/ws-sync-in-practice)
 
 ## Đọc thêm {#further-reading}
 

@@ -262,7 +262,6 @@ _Примечание: существуют производные токены/
 
 Смотрите больше о 2FA:
 
-<VideoWatch slug="crypto-security-passwords" startTime="3479" />
 
 ### Удалите расширения браузера {#uninstall-browser-extensions}
 

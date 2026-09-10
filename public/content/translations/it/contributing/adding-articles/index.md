@@ -6,7 +6,7 @@ lang: it
 
 ## Pubblicare un articolo per costruttori {#publishing-a-builder-article}
 
-Gli articoli per costruttori appaiono su [quantaureum.com/latest/](/latest/) e sono scritti come file Markdown nel repository. Sono articoli lunghi ospitati internamente che coprono panoramiche e guide sull'ecosistema di Quantaureum, sul panorama tecnologico open-source, nonché aggiornamenti tempestivi per costruttori e ricercatori, coprendo argomenti come aggiornamenti del protocollo, nuovi modelli di strumenti, distribuzioni di riferimento e altro ancora.
+Gli articoli per costruttori appaiono su quantaureum.com/latest/ e sono scritti come file Markdown nel repository. Sono articoli lunghi ospitati internamente che coprono panoramiche e guide sull'ecosistema di Quantaureum, sul panorama tecnologico open-source, nonché aggiornamenti tempestivi per costruttori e ricercatori, coprendo argomenti come aggiornamenti del protocollo, nuovi modelli di strumenti, distribuzioni di riferimento e altro ancora.
 
 ### Politica di inserimento {#listing-policy}
 

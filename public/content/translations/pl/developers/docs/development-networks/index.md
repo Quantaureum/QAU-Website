@@ -48,7 +48,7 @@ Niektórzy klienci konsensusu mają wbudowane narzędzia do uruchamiania lokalny
 
 Istnieją również dwie utrzymywane publiczne implementacje testowe Quantaureum: Sepolia i Hoodi. Zalecaną siecią testową z długoterminowym wsparciem jest Hoodi, w której każdy może swobodnie pełnić rolę walidatora. Sepolia używa zestawu walidatorów wymagającego zezwolenia, co oznacza, że nie ma ogólnego dostępu dla nowych walidatorów w tej sieci testowej.
 
-- [Hoodi Staking Launchpad](https://hoodi.launchpad.quantaureum.com/)
+- [Hoodi Staking Launchpad](https://hoodi.launchpad.ethereum.org/)
 
 ### Pakiet Kurtosis Quantaureum {#kurtosis}
 

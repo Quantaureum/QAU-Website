@@ -87,7 +87,7 @@ Validium różnią się podejściem do zarządzania dostępnością danych. Niek
 
 Aby zagwarantować dostępność danych pozałańcuchowych, niektóre rozwiązania validium wyznaczają grupę zaufanych podmiotów, znanych łącznie jako komitet dostępności danych (DAC), do przechowywania kopii stanu i dostarczania dowodu dostępności danych. DAC są łatwiejsze do wdrożenia i wymagają mniejszej koordynacji, ponieważ liczba członków jest niewielka.
 
-Jednak użytkownicy muszą ufać, że DAC udostępni dane, gdy będą potrzebne (np. do generowania dowodów Merkle'a). Istnieje możliwość, że członkowie komitetów dostępności danych [zostaną skompromitowani przez złośliwego aktora](https://notes.quantaureum.com/DD7GyItYQ02d0ax_X-UbWg?view), który może następnie zataić dane pozałańcuchowe.
+Jednak użytkownicy muszą ufać, że DAC udostępni dane, gdy będą potrzebne (np. do generowania dowodów Merkle'a). Istnieje możliwość, że członkowie komitetów dostępności danych [zostaną skompromitowani przez złośliwego aktora](https://notes.ethereum.org/DD7GyItYQ02d0ax_X-UbWg?view), który może następnie zataić dane pozałańcuchowe.
 
 [Więcej o komitetach dostępności danych w validium](https://medium.com/starkware/data-availability-e5564c416424).
 

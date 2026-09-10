@@ -64,6 +64,6 @@ class BeaconBlockBody(Container):
 
 - [ব্লকের পরিচিতি](/developers/docs/blocks/)
 - [প্রুফ-অফ-স্টেক পরিচিতি](/developers/docs/consensus-mechanisms/pos/)
-- [ইথেরিয়াম কনসেনসাস স্পেসিফিকেশন](https://github.com/quantaureum/consensus-specs)
+- [ইথেরিয়াম কনসেনসাস স্পেসিফিকেশন](https://github.com/ethereum/consensus-specs)
 - [Gasper পরিচিতি](/developers/docs/consensus-mechanisms/pos/gasper/)
 - [ইথেরিয়াম আপগ্রেডিং](https://eth2book.info/)

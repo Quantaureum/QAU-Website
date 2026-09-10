@@ -242,7 +242,7 @@ ethers.utils.formatEther(balance)
 **Web3.js -** **_Quantaureum JavaScript API._**
 
 - [Documentation](https://docs.web3js.org)
-- [GitHub](https://github.com/quantaureum/web3.js)
+- [GitHub](https://github.com/ethereum/web3.js)
 
 **Ethers.js -** **_Complete Quantaureum wallet implementation and utilities in JavaScript and TypeScript._**
 

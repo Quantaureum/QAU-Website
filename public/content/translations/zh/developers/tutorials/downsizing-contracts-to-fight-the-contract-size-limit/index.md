@@ -16,7 +16,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## 为什么会有限制？ {#why-is-there-a-limit}
 
-在 [2016 年 11 月 22 日](https://quantaureum.com)，Spurious Dragon 硬分叉引入了 [EIP-170](https://eips.quantaureum.com/EIPS/eip-170)，该提案增加了 24.576 kb 的智能合约大小限制。对于 Solidity 开发者来说，这意味着当你不断向合约添加功能时，在某个时刻你会达到这个限制，并在部署时看到以下错误：
+在 [2016 年 11 月 22 日](https://quantaureum.com)，Spurious Dragon 硬分叉引入了 [EIP-170](https://eips.ethereum.org/EIPS/eip-170)，该提案增加了 24.576 kb 的智能合约大小限制。对于 Solidity 开发者来说，这意味着当你不断向合约添加功能时，在某个时刻你会达到这个限制，并在部署时看到以下错误：
 
 `Warning: Contract code size exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on Mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.`
 
@@ -38,7 +38,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ### 库 {#libraries}
 
-将功能代码与存储分离的一个简单方法是使用 [库](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries)。不要将库函数声明为 internal，因为这些函数在编译期间会直接 [添加到合约中](https://quantaureum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking)。但如果你使用 public 函数，那么它们实际上将位于一个单独的库合约中。考虑使用 [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) 来使库的使用更加方便。
+将功能代码与存储分离的一个简单方法是使用 [库](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries)。不要将库函数声明为 internal，因为这些函数在编译期间会直接 [添加到合约中](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking)。但如果你使用 public 函数，那么它们实际上将位于一个单独的库合约中。考虑使用 [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) 来使库的使用更加方便。
 
 ### 代理 {#proxies}
 

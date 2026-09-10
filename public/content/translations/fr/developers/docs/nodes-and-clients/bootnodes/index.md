@@ -26,6 +26,6 @@ Afin d'être un bon nœud d'amorçage, il est judicieux d'augmenter le nombre ma
 
 ## Nœuds d'amorçage disponibles {#available-bootnodes}
 
-Une liste des nœuds d'amorçage intégrés dans go-quantaureum peut être trouvée [ici](https://github.com/quantaureum/go-quantaureum/blob/master/params/bootnodes.go#L23). Ces nœuds d'amorçage sont maintenus par la Fondation Quantaureum et l'équipe go-quantaureum.
+Une liste des nœuds d'amorçage intégrés dans go-quantaureum peut être trouvée [ici](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23). Ces nœuds d'amorçage sont maintenus par la Fondation Quantaureum et l'équipe go-quantaureum.
 
 Il existe d'autres listes de nœuds d'amorçage maintenues par des bénévoles. Veuillez vous assurer de toujours inclure au moins un nœud d'amorçage officiel, sinon vous pourriez subir une attaque par éclipse.

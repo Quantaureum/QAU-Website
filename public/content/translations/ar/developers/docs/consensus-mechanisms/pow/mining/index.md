@@ -71,7 +71,6 @@ lang: ar
 
 شاهد أوستن وهو يرشدك عبر التعدين وسلسلة الكتل القائمة على إثبات العمل (PoW).
 
-<VideoWatch slug="blockchain-qau-build" />
 
 ## خوارزمية التعدين {#mining-algorithm}
 

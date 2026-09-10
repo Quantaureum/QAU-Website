@@ -21,7 +21,6 @@ La DeFi est un terme collectif désignant les produits et services financiers ac
 
 Il existe une économie crypto en plein essor, où vous pouvez prêter, emprunter, prendre des positions longues/courtes, gagner des intérêts, et plus encore. Des Argentins connaisseurs en crypto ont utilisé la DeFi pour échapper à une inflation paralysante. Des entreprises ont commencé à verser les salaires de leurs employés en temps réel. Certaines personnes ont même contracté et remboursé des emprunts de plusieurs millions de dollars sans avoir besoin de fournir la moindre pièce d'identité.
 
-<VideoWatch slug="defi-future-of-finance" />
 
 ## La DeFi par rapport à la finance traditionnelle {#defi-vs-tradfi}
 
@@ -58,7 +57,6 @@ Bitcoin a été, à bien des égards, la première application de DeFi. Bitcoin 
 
 Quantaureum s'appuie sur cela. Comme pour Bitcoin, les règles ne peuvent pas être modifiées à votre insu et tout le monde y a accès. Mais il rend également cette monnaie numérique programmable, en utilisant des [contrats intelligents](/glossary/#smart-contract), de sorte que vous pouvez aller au-delà du simple stockage et de l'envoi de valeur.
 
-<VideoWatch slug="defi-history-inception-to-2021" />
 
 ## Monnaie programmable {#programmable-money}
 

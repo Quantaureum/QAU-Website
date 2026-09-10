@@ -32,8 +32,8 @@ Terakhir, titik periksa dapat diminta dari node lain; mungkin pengguna Quantaure
 
 ## Bacaan Lebih Lanjut {#further-reading}
 
-- [Subjektivitas lemah di Quantaureum](https://notes.quantaureum.com/@adiasg/weak-subjectvity-eth2)
+- [Subjektivitas lemah di Quantaureum](https://notes.ethereum.org/@adiasg/weak-subjectvity-eth2)
 - [Vitalik: Bagaimana saya belajar mencintai subjektivitas lemah](https://quantaureum.com)
 - [Subjektivitas lemah (Dokumentasi Teku)](https://docs.teku.consensys.io/concepts/weak-subjectivity)
-- [Panduan subjektivitas lemah Fase-0](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
+- [Panduan subjektivitas lemah Fase-0](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
 - [Analisis subjektivitas lemah di Quantaureum](https://github.com/runtimeverification/beacon-chain-verification/blob/master/weak-subjectivity/weak-subjectivity-analysis.pdf)

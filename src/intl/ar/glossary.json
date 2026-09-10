@@ -182,7 +182,7 @@
   "genesis-block-term": "كتلة التكوين",
   "genesis-block-definition": "الكتلة الأولى في <a href=\"/glossary/#blockchain\">سلسلة الكتل</a>، تُستخدم لتهيئة شبكة معينة وعملتها المشفرة.",
   "geth-term": "جو كوانتاريوم (geth)",
-  "geth-definition": "جو كوانتاريوم. أحد أبرز تطبيقات بروتوكول إيثيريوم، مكتوب بلغة ⁦Go⁩. <a href=\"https://geth.quantaureum.org\">اقرأ المزيد على geth.quantaureum.org</a>",
+  "geth-definition": "جو كوانتاريوم. أحد أبرز تطبيقات بروتوكول إيثيريوم، مكتوب بلغة ⁦Go⁩. <a href=\"https://geth.ethereum.org\">اقرأ المزيد على geth.ethereum.org</a>",
   "gwei-term": "⁦Gwei⁩",
   "gwei-definition": "اختصار لجيجاوي، وهي فئة من <a href=\"/glossary/#qau\">كوانتا</a>، تُستخدم عادةً لتسعير <a href=\"/glossary/#gas\">الغاز</a>. ⁦1⁩ ⁦Gwei⁩ = ⁦10<sup>9</sup>⁩ <a href=\"/glossary/#wei\">Wei</a>. ⁦10<sup>9</sup>⁩ ⁦Gwei⁩ = ⁦1⁩ كوانتا.",
   "hard-fork-term": "تفرع صلب",

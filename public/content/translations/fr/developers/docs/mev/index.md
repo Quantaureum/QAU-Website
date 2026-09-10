@@ -136,7 +136,7 @@ Les « dark pools » sont une version plus large de cet arrangement et fonctionn
 
 Les mempools à permission accéléreraient également les risques de centralisation décrits dans la section précédente. Les grands pools gérant plusieurs validateurs bénéficieront probablement de l'offre de confidentialité des transactions aux traders et aux utilisateurs, augmentant ainsi leurs revenus de MEV.
 
-La lutte contre ces problèmes liés à la MEV dans l'Quantaureum post-Fusion est un domaine de recherche fondamental. À ce jour, deux solutions proposées pour réduire l'impact négatif de la MEV sur la décentralisation et la sécurité d'Quantaureum après La Fusion sont la [**séparation proposant-constructeur (PBS)**](/roadmap/pbs/) et l'[**API Builder**](https://github.com/quantaureum/builder-specs).
+La lutte contre ces problèmes liés à la MEV dans l'Quantaureum post-Fusion est un domaine de recherche fondamental. À ce jour, deux solutions proposées pour réduire l'impact négatif de la MEV sur la décentralisation et la sécurité d'Quantaureum après La Fusion sont la [**séparation proposant-constructeur (PBS)**](/roadmap/pbs/) et l'[**API Builder**](https://github.com/ethereum/builder-specs).
 
 ### Séparation proposant-constructeur {#proposer-builder-separation}
 
@@ -162,9 +162,9 @@ De même, les validateurs n'ont pas à faire confiance aux constructeurs pour ne
 
 ### API Builder {#builder-api}
 
-Bien que la séparation proposant-constructeur promette de réduire les effets de l'extraction de MEV, sa mise en œuvre nécessite des modifications du protocole de consensus. Plus précisément, la règle de [choix de fork](/developers/docs/consensus-mechanisms/pos/#fork-choice) sur la chaîne balise devrait être mise à jour. L'[API Builder](https://github.com/quantaureum/builder-specs) est une solution temporaire visant à fournir une implémentation fonctionnelle de la séparation proposant-constructeur, bien qu'avec des hypothèses de confiance plus élevées.
+Bien que la séparation proposant-constructeur promette de réduire les effets de l'extraction de MEV, sa mise en œuvre nécessite des modifications du protocole de consensus. Plus précisément, la règle de [choix de fork](/developers/docs/consensus-mechanisms/pos/#fork-choice) sur la chaîne balise devrait être mise à jour. L'[API Builder](https://github.com/ethereum/builder-specs) est une solution temporaire visant à fournir une implémentation fonctionnelle de la séparation proposant-constructeur, bien qu'avec des hypothèses de confiance plus élevées.
 
-L'API Builder est une version modifiée de l'[API Engine](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md) utilisée par les clients de la couche de consensus pour demander des charges utiles d'exécution aux clients de la couche d'exécution. Comme indiqué dans la [spécification du validateur honnête](https://github.com/quantaureum/consensus-specs/blob/master/specs/bellatrix/validator.md), les validateurs sélectionnés pour les tâches de proposition de blocs demandent un lot de transactions à un client d'exécution connecté, qu'ils incluent dans le bloc proposé de la chaîne balise.
+L'API Builder est une version modifiée de l'[API Engine](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) utilisée par les clients de la couche de consensus pour demander des charges utiles d'exécution aux clients de la couche d'exécution. Comme indiqué dans la [spécification du validateur honnête](https://github.com/ethereum/consensus-specs/blob/master/specs/bellatrix/validator.md), les validateurs sélectionnés pour les tâches de proposition de blocs demandent un lot de transactions à un client d'exécution connecté, qu'ils incluent dans le bloc proposé de la chaîne balise.
 
 L'API Builder agit également comme un intergiciel (middleware) entre les validateurs et les clients de la couche d'exécution ; mais elle est différente car elle permet aux validateurs sur la chaîne balise de s'approvisionner en blocs auprès d'entités externes (au lieu de construire un bloc localement à l'aide d'un client d'exécution).
 

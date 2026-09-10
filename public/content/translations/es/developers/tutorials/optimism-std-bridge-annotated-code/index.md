@@ -46,7 +46,7 @@ El puente tiene dos flujos principales:
    - Era originalmente del puente en la l1
 6. El puente de la l2 comprueba si el contrato del token ERC-20 en la l2 es el correcto:
    - El contrato de la l2 informa que su contraparte de la l1 es la misma de la que provinieron los tokens en la l1
-   - El contrato de la l2 informa que es compatible con la interfaz correcta ([usando ERC-165](https://eips.quantaureum.com/EIPS/eip-165)).
+   - El contrato de la l2 informa que es compatible con la interfaz correcta ([usando ERC-165](https://eips.ethereum.org/EIPS/eip-165)).
 7. Si el contrato de la l2 es el correcto, lo llama para acuñar el número apropiado de tokens a la dirección apropiada. Si no, inicia un proceso de retiro para permitir al usuario reclamar los tokens en la l1.
 
 ### Flujo de retiro {#withdrawal-flow}
@@ -70,7 +70,7 @@ Este es el código que se ejecuta en la l1, la red principal de Quantaureum.
 
 ### IL1ERC20Bridge {#il1erc20bridge}
 
-[Esta interfaz se define aquí](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol).
+[Esta interfaz se define aquí](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol).
 Incluye funciones y definiciones requeridas para puentear tokens ERC-20.
 
 ```solidity
@@ -236,7 +236,7 @@ Los retiros (y otros mensajes de la l2 a la l1) en Optimism son un proceso de do
 
 ### IL1StandardBridge {#il1standardbridge}
 
-[Esta interfaz se define aquí](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol).
+[Esta interfaz se define aquí](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol).
 Este archivo contiene definiciones de eventos y funciones para QAU.
 Estas definiciones son muy similares a las definidas en `IL1ERC20Bridge` anteriormente para ERC-20.
 
@@ -321,7 +321,7 @@ Lo mismo ocurre con los otros eventos y las funciones.
 
 ### CrossDomainEnabled {#crossdomainenabled}
 
-[Este contrato](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) es heredado por ambos puentes ([l1](#the-l1-bridge-contract) y [l2](#l2-bridge-code)) para enviar mensajes a la otra capa.
+[Este contrato](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) es heredado por ambos puentes ([l1](#the-l1-bridge-contract) y [l2](#l2-bridge-code)) para enviar mensajes a la otra capa.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -331,7 +331,7 @@ pragma solidity >0.5.0 <0.9.0;
 import { ICrossDomainMessenger } from "./ICrossDomainMessenger.sol";
 ```
 
-[Esta interfaz](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) le dice al contrato cómo enviar mensajes a la otra capa, utilizando el mensajero entre dominios.
+[Esta interfaz](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) le dice al contrato cómo enviar mensajes a la otra capa, utilizando el mensajero entre dominios.
 Este mensajero entre dominios es un sistema completamente diferente, y merece su propio artículo, que espero escribir en el futuro.
 
 ```solidity
@@ -398,7 +398,7 @@ Solo se puede confiar en los mensajes del mensajero entre dominios apropiado (`m
         );
 ```
 
-La forma en que el mensajero entre dominios proporciona la dirección que envió un mensaje con la otra capa es [la función `.xDomainMessageSender()`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128).
+La forma en que el mensajero entre dominios proporciona la dirección que envió un mensaje con la otra capa es [la función `.xDomainMessageSender()`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128).
 Siempre que se llame en la transacción que fue iniciada por el mensaje, puede proporcionar esta información.
 
 Necesitamos asegurarnos de que el mensaje que recibimos provino del otro puente.
@@ -463,7 +463,7 @@ En este caso no nos preocupa la reentrada, sabemos que `getCrossDomainMessenger(
 
 ### El contrato del puente de la l1 {#the-l1-bridge-contract}
 
-[El código fuente de este contrato está aquí](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol).
+[El código fuente de este contrato está aquí](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol).
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -485,7 +485,7 @@ import { IL1ERC20Bridge } from "./IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "../../L2/messaging/IL2ERC20Bridge.sol";
 ```
 
-[Esta interfaz](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) nos permite crear mensajes para controlar el puente estándar en la l2.
+[Esta interfaz](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) nos permite crear mensajes para controlar el puente estándar en la l2.
 
 ```solidity
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -505,7 +505,7 @@ import { CrossDomainEnabled } from "../../libraries/bridge/CrossDomainEnabled.so
 import { Lib_PredeployAddresses } from "../../libraries/constants/Lib_PredeployAddresses.sol";
 ```
 
-[`Lib_PredeployAddresses`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) tiene las direcciones para los contratos de la l2 que siempre tienen la misma dirección. Esto incluye el puente estándar en la l2.
+[`Lib_PredeployAddresses`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) tiene las direcciones para los contratos de la l2 que siempre tienen la misma dirección. Esto incluye el puente estándar en la l2.
 
 ```solidity
 import { Address } from "@openzeppelin/contracts/utils/Address.sol";
@@ -519,7 +519,7 @@ Tenga en cuenta que esta no es una solución perfecta, porque no hay forma de di
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[El estándar ERC-20](https://eips.quantaureum.com/EIPS/eip-20) admite dos formas para que un contrato informe de un fallo:
+[El estándar ERC-20](https://eips.ethereum.org/EIPS/eip-20) admite dos formas para que un contrato informe de un fallo:
 
 1. Revertir
 2. Devolver `false`
@@ -714,7 +714,7 @@ La función de Solidity [`abi.encodeWithSelector`](https://docs.soliditylang.org
         );
 ```
 
-El mensaje aquí es llamar a [la función `finalizeDeposit`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) con estos parámetros:
+El mensaje aquí es llamar a [la función `finalizeDeposit`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) con estos parámetros:
 
 | Parámetro | Valor                          | Significado                                                                                                                                      |
 | --------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -946,7 +946,7 @@ Si hay demasiados tokens en la l1, algunos de esos tokens se quedarían bloquead
 
 ### IL2StandardERC20 {#il2standarderc20}
 
-Cada token ERC-20 en la l2 que utiliza el puente estándar necesita proporcionar [esta interfaz](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol), que tiene las funciones y eventos que el puente estándar necesita.
+Cada token ERC-20 en la l2 que utiliza el puente estándar necesita proporcionar [esta interfaz](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol), que tiene las funciones y eventos que el puente estándar necesita.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -956,14 +956,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [La interfaz estándar ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) no incluye las funciones `mint` y `burn`.
-Esos métodos no son requeridos por [el estándar ERC-20](https://eips.quantaureum.com/EIPS/eip-20), que deja sin especificar los mecanismos para crear y destruir tokens.
+Esos métodos no son requeridos por [el estándar ERC-20](https://eips.ethereum.org/EIPS/eip-20), que deja sin especificar los mecanismos para crear y destruir tokens.
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 [La interfaz ERC-165](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol) se utiliza para especificar qué funciones proporciona un contrato.
-[Puede leer el estándar aquí](https://eips.quantaureum.com/EIPS/eip-165).
+[Puede leer el estándar aquí](https://eips.ethereum.org/EIPS/eip-165).
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -990,7 +990,7 @@ El puente debería ser la única entidad que pueda ejecutar estas funciones para
 
 ### L2StandardERC20 {#l2standarderc20}
 
-[Esta es nuestra implementación de la interfaz `IL2StandardERC20`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol).
+[Esta es nuestra implementación de la interfaz `IL2StandardERC20`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol).
 A menos que necesite algún tipo de lógica personalizada, debería usar esta.
 
 ```solidity
@@ -1052,7 +1052,7 @@ Primero llama al constructor del contrato del que heredamos (`ERC20(_name, _symb
     }
 ```
 
-Esta es la forma en que funciona [ERC-165](https://eips.quantaureum.com/EIPS/eip-165).
+Esta es la forma en que funciona [ERC-165](https://eips.ethereum.org/EIPS/eip-165).
 Cada interfaz es un número de funciones compatibles, y se identifica como el [o exclusivo](https://en.wikipedia.org/wiki/Exclusive_or) de los [selectores de funciones de la ABI](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector) de esas funciones.
 
 El puente de la l2 utiliza ERC-165 como una comprobación de cordura para asegurarse de que el contrato ERC-20 al que envía activos es un `IL2StandardERC20`.
@@ -1084,7 +1084,7 @@ Ese contrato simplemente no los expone externamente, porque las condiciones para
 ## Código del puente de la l2 {#l2-bridge-code}
 
 Este es el código que ejecuta el puente en Optimism.
-[El código fuente de este contrato está aquí](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol).
+[El código fuente de este contrato está aquí](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol).
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -1096,7 +1096,7 @@ import { IL1ERC20Bridge } from "../../L1/messaging/IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "./IL2ERC20Bridge.sol";
 ```
 
-La interfaz [IL2ERC20Bridge](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) es muy similar al [equivalente de la l1](#il1erc20bridge) que vimos anteriormente.
+La interfaz [IL2ERC20Bridge](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) es muy similar al [equivalente de la l1](#il1erc20bridge) que vimos anteriormente.
 Hay dos diferencias significativas:
 
 1. En la l1 se inician depósitos y se finalizan retiros.

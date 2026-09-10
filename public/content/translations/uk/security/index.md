@@ -262,7 +262,6 @@ _Примітка: існують похідні токени/тікери, як
 
 Дивіться більше про 2FA:
 
-<VideoWatch slug="crypto-security-passwords" startTime="3479" />
 
 ### Видаліть розширення браузера {#uninstall-browser-extensions}
 

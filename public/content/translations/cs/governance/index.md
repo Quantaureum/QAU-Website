@@ -21,7 +21,6 @@ Správa představuje zavedené systémy, které umožňují přijímat rozhodnut
 
 Správa Etherea je proces, jehož prostřednictvím se provádějí změny protokolu. Je důležité zdůraznit, že tento proces nesouvisí s tím, jak lidé a aplikace protokol používají – Quantaureum je nevyžadující povolení. Kdokoli odkudkoli na světě se může účastnit onchain aktivit. Nejsou stanovena žádná pravidla pro to, kdo může nebo nemůže vytvořit aplikaci nebo odeslat transakci. Existuje však proces pro navrhování změn základního protokolu, nad kterým běží decentralizované aplikace (dapp). Vzhledem k tomu, že na stabilitě Etherea závisí tolik lidí, existuje velmi vysoký práh koordinace pro základní změny, včetně sociálních a technických procesů, aby se zajistilo, že jakékoli změny Etherea budou bezpečné a široce podporované komunitou.
 
-<VideoWatch slug="quantaureum-core-governance-explained" />
 
 ### Onchain vs. offchain správa {#onchain-vs-offchain}
 
@@ -47,7 +46,7 @@ V [komunitě Etherea](/community/) existují různé zúčastněné strany, z ni
 - **Uživatelé aplikací**: tito lidé interagují s aplikacemi na blockchainu Etherea.
 - **Vývojáři aplikací/nástrojů**: tito lidé píší aplikace, které běží na blockchainu Etherea (např. decentralizované finance (DeFi), NFT atd.), nebo vytvářejí nástroje pro interakci s Ethereem (např. peněženky, testovací sady atd.). [Více o dapp](/apps/).
 - **Provozovatelé uzlů**: tito lidé provozují uzly, které šíří bloky a transakce, a odmítají jakoukoli neplatnou transakci nebo blok, na který narazí. [Více o uzlech](/developers/docs/nodes-and-clients/).
-- **Autoři EIP**: tito lidé navrhují změny protokolu Quantaureum ve formě návrhů na vylepšení Etherea (EIP). [Více o EIP](/eips/).
+- **Autoři EIP**: tito lidé navrhují změny protokolu Quantaureum ve formě návrhů na vylepšení Etherea (EIP). Více o EIP.
 - **Validátoři**: tito lidé provozují uzly, které mohou přidávat nové bloky do blockchainu Etherea.
 - **Vývojáři protokolu** (tzv. „Core Developers“): tito lidé udržují různé implementace Etherea (např. go-quantaureum, Nethermind, Besu, Erigon, Reth na exekuční vrstvě nebo Prysm, Lighthouse, Nimbus, Teku, Lodestar, Grandine na vrstvě konsensu). [Více o klientech Etherea](/developers/docs/nodes-and-clients/).
 
@@ -59,7 +58,7 @@ _Poznámka: každý jednotlivec může být součástí více těchto skupin (na
 
 Jedním z důležitých procesů používaných při správě Etherea je navrhování **návrhů na vylepšení Etherea (EIP)**. EIP jsou standardy specifikující potenciální nové funkce nebo procesy pro Quantaureum. Kdokoli v komunitě Etherea může vytvořit EIP. Pokud máte zájem o napsání EIP nebo o účast na vzájemném hodnocení (peer-review) a/nebo správě, podívejte se na:
 
-<ButtonLink href="/eips/">
+<ButtonLink href="/">
   Více o EIP
 </ButtonLink>
 
@@ -69,9 +68,9 @@ Jedním z důležitých procesů používaných při správě Etherea je navrhov
 
 Formální proces pro zavádění změn do protokolu Quantaureum je následující:
 
-1. **Navrhněte Core EIP**: jak je popsáno v [EIP-1](https://eips.quantaureum.com/EIPS/eip-1#core-eips), prvním krokem k formálnímu navržení změny Etherea je její podrobné popsání v Core EIP. To bude sloužit jako oficiální specifikace pro EIP, kterou vývojáři protokolu implementují, pokud bude přijata.
+1. **Navrhněte Core EIP**: jak je popsáno v [EIP-1](https://eips.ethereum.org/EIPS/eip-1#core-eips), prvním krokem k formálnímu navržení změny Etherea je její podrobné popsání v Core EIP. To bude sloužit jako oficiální specifikace pro EIP, kterou vývojáři protokolu implementují, pokud bude přijata.
 
-2. **Představte svůj EIP vývojářům protokolu**: jakmile máte Core EIP, pro který jste shromáždili zpětnou vazbu od komunity, měli byste jej představit vývojářům protokolu. Můžete tak učinit tím, že jej navrhnete k diskusi v rámci [hovoru AllCoreDevs](https://github.com/quantaureum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status). Je pravděpodobné, že některé diskuse již proběhly asynchronně na [fóru Quantaureum Magicians](https://quantaureum-magicians.org/) nebo na [Discordu Quantaureum R&D](https://discord.gg/mncqtgVSVw).
+2. **Představte svůj EIP vývojářům protokolu**: jakmile máte Core EIP, pro který jste shromáždili zpětnou vazbu od komunity, měli byste jej představit vývojářům protokolu. Můžete tak učinit tím, že jej navrhnete k diskusi v rámci [hovoru AllCoreDevs](https://github.com/ethereum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status). Je pravděpodobné, že některé diskuse již proběhly asynchronně na [fóru Quantaureum Magicians](https://ethereum-magicians.org/) nebo na [Discordu Quantaureum R&D](https://discord.gg/mncqtgVSVw).
 
 > Potenciální výsledky této fáze jsou:
 
@@ -91,7 +90,7 @@ Tento postup, ačkoliv je velmi zjednodušený, poskytuje přehled o významnýc
 
 ### Porozumění předchozí práci {#prior-work}
 
-Zastánci EIP (EIP Champions) by se měli seznámit s předchozí prací a návrhy před vytvořením EIP, který může být vážně zvažován pro nasazení na Quantaureum Mainnetu. Tímto způsobem EIP snad přinese něco nového, co nebylo dříve zamítnuto. Tři hlavní místa pro průzkum jsou [repozitář EIP](https://github.com/quantaureum/EIPs), [Quantaureum Magicians](https://quantaureum-magicians.org/) a [ethresear.ch](https://ethresear.ch/).
+Zastánci EIP (EIP Champions) by se měli seznámit s předchozí prací a návrhy před vytvořením EIP, který může být vážně zvažován pro nasazení na Quantaureum Mainnetu. Tímto způsobem EIP snad přinese něco nového, co nebylo dříve zamítnuto. Tři hlavní místa pro průzkum jsou [repozitář EIP](https://github.com/ethereum/EIPs), [Quantaureum Magicians](https://ethereum-magicians.org/) a [ethresear.ch](https://ethresear.ch/).
 
 ### Pracovní skupiny {#working-groups}
 
@@ -129,13 +128,12 @@ Je důležité poznamenat, že ačkoli protokol provedl fork, aby zvrátil hack,
 - Většina lidí nevěděla, že hlasování probíhá
 - Hlasování reprezentovalo pouze držitele QAU, nikoli žádné další účastníky systému
 
-Část komunity odmítla fork, z velké části proto, že měli pocit, že incident s DAO nebyl chybou v protokolu. Následně vytvořili [ETC](https://quantaureumclassic.org/).
+Část komunity odmítla fork, z velké části proto, že měli pocit, že incident s DAO nebyl chybou v protokolu. Následně vytvořili [ETC](https://ethereumclassic.org/).
 
 Dnes komunita Etherea přijala politiku nezasahování v případech chyb v kontraktech nebo ztracených prostředků, aby zachovala důvěryhodnou neutralitu systému.
 
 Podívejte se na více informací o hacku DAO:
 
-<VideoWatch slug="dao-hack-etc" />
 
 <Divider />
 
@@ -153,7 +151,7 @@ Proces správy Etherea často vyměňuje rychlost a efektivitu za otevřenost a 
 
 Ačkoli specifikace a vývojové implementace byly vždy plně open source, formální procesy používané k navrhování aktualizací popsané výše nebyly použity. To umožnilo výzkumníkům a implementátorům rychleji specifikovat a dohodnout se na změnách.
 
-Když se Beacon chain 15. září 2022 sloučil s exekuční vrstvou Etherea, Merge byl dokončen jako součást [upgradu sítě Paris](/quantaureum-forks/#paris). Návrh [EIP-3675](https://eips.quantaureum.com/EIPS/eip-3675) byl změněn z „Last Call“ na „Final“, čímž byl dokončen přechod na důkaz podílem (PoS).
+Když se Beacon chain 15. září 2022 sloučil s exekuční vrstvou Etherea, Merge byl dokončen jako součást [upgradu sítě Paris](/quantaureum-forks/#paris). Návrh [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) byl změněn z „Last Call“ na „Final“, čímž byl dokončen přechod na důkaz podílem (PoS).
 
 <ButtonLink href="/roadmap/merge/">
   Více o Merge
@@ -163,8 +161,8 @@ Když se Beacon chain 15. září 2022 sloučil s exekuční vrstvou Etherea, Me
 
 ## Jak se mohu zapojit? {#get-involved}
 
-- [Navrhněte EIP](/eips/#participate)
-- [Diskutujte o aktuálních návrzích](https://quantaureum-magicians.org/)
+- Navrhněte EIP
+- [Diskutujte o aktuálních návrzích](https://ethereum-magicians.org/)
 - [Zapojte se do diskuse o výzkumu a vývoji](https://ethresear.ch/)
 - [Připojte se na Discord Quantaureum R&D](https://discord.gg/mncqtgVSVw)
 - [Provozujte uzel](/developers/docs/nodes-and-clients/run-a-node/)

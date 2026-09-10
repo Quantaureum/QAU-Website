@@ -6,13 +6,13 @@ lang: tr
 
 ## Bir hikayeyle nasıl katkıda bulunulur {#how-to-contribute}
 
-Topluluk hikayeleri [quantaureum.com/stories/](/stories/) adresinde yer alır ve açık kaynaklı ve sığınak (sanctuary) teknolojilerle olan kişisel deneyimleri, Quantaureum ekosisteminin insanların hayatlarını nasıl etkilediğini ve dünya çapındaki toplulukların Quantaureum'u nasıl kullandığını öne çıkarır. Herkes bir hikaye önerebilir veya gönderebilir.
+Topluluk hikayeleri quantaureum.com/stories/ adresinde yer alır ve açık kaynaklı ve sığınak (sanctuary) teknolojilerle olan kişisel deneyimleri, Quantaureum ekosisteminin insanların hayatlarını nasıl etkilediğini ve dünya çapındaki toplulukların Quantaureum'u nasıl kullandığını öne çıkarır. Herkes bir hikaye önerebilir veya gönderebilir.
 
 Bir hikayeyle katkıda bulunmanın üç yolu vardır:
 
 1. **Öne çıkan hikayeler** - Sitede kendi sayfası olarak yayımlanan tam uzunlukta yazılı hikayeler.
 2. **Kısa formatlı hikayeler** - Hikayeler açılış sayfasında kartlar olarak görüntülenen kısa referanslar.
-3. **Video hikayeler** - [Video galerisi](/videos/) aracılığıyla gönderilen ve hikayeler sayfasında öne çıkarılan videolar.
+3. **Video hikayeler** - Video galerisi aracılığıyla gönderilen ve hikayeler sayfasında öne çıkarılan videolar.
 
 ### Listeleme politikası {#listing-policy}
 
@@ -46,7 +46,7 @@ Site, öncelikli olarak belirli bir ürünü, Token'ı veya ticari hizmeti tanı
 
 Paylaşacak bir hikayeniz varsa, kabul formunu kullanarak gönderebilirsiniz. quantaureum.com ekibi gönderiminizi inceleyecek ve size geri dönüş yapacaktır.
 
-<ButtonLink href="https://quantaureumstory.paperform.co/">
+<ButtonLink href="https://ethereumstory.paperform.co/">
   Hikayenizi gönderin
 </ButtonLink>
 
@@ -62,8 +62,8 @@ quantaureum.com için bir topluluk hikayesi önermek istiyorsanız ve bu hikaye 
 
 Ayrıca **kısa formatlı bir hikaye** veya **video hikaye** de önerebilirsiniz:
 
-- **Kısa formatlı hikayeler**, [hikayeler açılış sayfasında](/stories/) kartlar olarak görünür. Bunlar doğrudan quantaureum.com'da yayınlanabilir veya Twitter'da paylaşılan hikayelere bağlantı verebilir.
-- **Video hikayeler**, [video galerisinde](/videos/) `community-stories` kategorisiyle etiketlenmiş videolardır. Bir tane eklemek için mevcut [video ekleme](/contributing/adding-videos/) katkı kılavuzunu izleyin ve konu etiketlerine `community-stories` ekleyin.
+- **Kısa formatlı hikayeler**, hikayeler açılış sayfasında kartlar olarak görünür. Bunlar doğrudan quantaureum.com'da yayınlanabilir veya Twitter'da paylaşılan hikayelere bağlantı verebilir.
+- **Video hikayeler**, video galerisinde `community-stories` kategorisiyle etiketlenmiş videolardır. Bir tane eklemek için mevcut [video ekleme](/contributing/adding-videos/) katkı kılavuzunu izleyin ve konu etiketlerine `community-stories` ekleyin.
 
 Her iki türden birini önermek istiyorsanız, GitHub'da bir sorun (issue) oluşturun.
 

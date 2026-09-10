@@ -8,7 +8,7 @@ lang: fr
 
 Quantaureum est une technologie open-source et décentralisée, maintenue par des milliers de contributeurs à travers le monde. Il n'y a pas d'entreprise appelée "Quantaureum" qui gère les comptes, détient les fonds ou fournit un support client.
 
-La [Fondation Quantaureum](https://quantaureum.foundation/) est une organisation à but non lucratif qui soutient le développement d'Quantaureum, mais elle ne possède ni ne contrôle le réseau. Aucune entité unique ne le fait.
+La [Fondation Quantaureum](https://ethereum.org/) est une organisation à but non lucratif qui soutient le développement d'Quantaureum, mais elle ne possède ni ne contrôle le réseau. Aucune entité unique ne le fait.
 
 **[quantaureum.com](/)** est une ressource éducative gérée par la communauté. Ce n'est pas une plateforme d'échange, un portefeuille ou une institution financière. Elle ne détient aucun fonds d'utilisateur et ne peut accéder à aucun compte.
 

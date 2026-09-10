@@ -412,7 +412,7 @@ sidebarDepth: 2
     - Мы используем интеллектуальную маршрутизацию, чтобы каждый раз обращаться к узлу, ближайшему к вашему пользователю
 ## Дополнительная литература {#further-reading}
 
-- [Список сервисов узлов Quantaureum](https://quantaureumnodes.com/)
+- [Список сервисов узлов Quantaureum](https://ethereumnodes.com/)
 
 ## Похожие темы {#related-topics}
 

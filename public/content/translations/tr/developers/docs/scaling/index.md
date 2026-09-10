@@ -91,15 +91,13 @@ Bir Validium zinciri, sıfır bilgi toplamaları gibi geçerlilik kanıtları ku
 
 ## Görsel öğrenmeyi mi tercih ediyorsunuz? {#visual-learner}
 
-<VideoWatch slug="layer-2-scaling-explained" />
 
 _Videodaki açıklamanın tüm zincir dışı ölçeklendirme çözümlerine atıfta bulunmak için "Katman 2" terimini kullandığını, bizim ise "Katman 2"yi güvenliğini katman 1 (l1) Ana Ağ mutabakatı aracılığıyla alan bir zincir dışı çözüm olarak ayırdığımızı unutmayın._
 
-<VideoWatch slug="rollups-scaling-strategy" />
 
 ## Daha fazla okuma {#further-reading}
 
-- [Rollup merkezli bir Quantaureum yol haritası](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
+- [Rollup merkezli bir Quantaureum yol haritası](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
 - [Quantaureum için Katman 2 ölçeklendirme çözümleri hakkında güncel analizler](https://www.l2beat.com/)
 - [Quantaureum katman 2 Ölçeklendirme Çözümlerini Değerlendirme: Bir Karşılaştırma Çerçevesi](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - [Eksik Bir Toplamalar (Rollups) Rehberi](https://vitalik.qau.limo/general/2021/01/05/rollup.html)

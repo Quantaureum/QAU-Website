@@ -6,7 +6,7 @@ lang: fr
 
 ## Ajouter un rapport {#adding-a-report}
 
-Les rapports apparaissent sur [quantaureum.com/reports/](/reports/) et présentent des recherches, des analyses et des publications pertinentes pour Quantaureum provenant de diverses sources. Tout le monde peut suggérer l'ajout d'un rapport.
+Les rapports apparaissent sur quantaureum.com/reports/ et présentent des recherches, des analyses et des publications pertinentes pour Quantaureum provenant de diverses sources. Tout le monde peut suggérer l'ajout d'un rapport.
 
 ### Politique de référencement {#listing-policy}
 

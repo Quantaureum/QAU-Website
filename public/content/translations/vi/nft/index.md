@@ -19,7 +19,6 @@ NFT là các token **độc nhất vô nhị**. Mỗi NFT có các thuộc tính
 
 Tính độc nhất của mỗi NFT cho phép token hóa những thứ như nghệ thuật, đồ sưu tầm hoặc thậm chí là bất động sản, trong đó một NFT độc nhất cụ thể đại diện cho một mặt hàng kỹ thuật số hoặc thế giới thực độc nhất cụ thể. Quyền sở hữu một tài sản có thể được xác minh công khai trên [chuỗi khối](/glossary/#blockchain) Quantaureum.
 
-<VideoWatch slug="learn-nfts-and-defi" />
 
 ## Internet của tài sản {#internet-of-assets}
 

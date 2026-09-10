@@ -235,7 +235,7 @@ Ngoài ra, không phải lúc nào các trình xác minh chương trình cũng c
 
 **Solidity SMTChecker** - _*SMTChecker của Solidity là một trình kiểm tra mô hình tích hợp dựa trên SMT (Các lý thuyết Modulo thỏa mãn) và giải quyết Horn. Nó xác nhận xem mã nguồn của một hợp đồng có khớp với các đặc tả trong quá trình biên dịch hay không và kiểm tra tĩnh các vi phạm thuộc tính an toàn.*_
 
-- [GitHub](https://github.com/quantaureum/solidity)
+- [GitHub](https://github.com/ethereum/solidity)
 
 **solc-verify** - _*solc-verify là một phiên bản mở rộng của trình biên dịch Solidity có thể thực hiện xác minh hình thức tự động trên mã Solidity bằng cách sử dụng các chú thích và xác minh chương trình mô-đun.*_
 

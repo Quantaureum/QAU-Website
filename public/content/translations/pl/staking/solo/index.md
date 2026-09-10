@@ -52,7 +52,7 @@ Wymaga to również bardzo podstawowej konfiguracji sprzętowej i pewnego zrozum
 </ExpandableCard>
 
 <ExpandableCard title="Wymagania sprzętowe" eventCategory="SoloStaking" eventName="clicked hardware requirements">
-Obecne wytyczne społeczności dotyczące sprzętu i przepustowości dla walidatorów są utrzymywane w [rekomendacjach dotyczących sprzętu i przepustowości (EIP-7870)](https://eips.quantaureum.com/EIPS/eip-7870). Jako ogólną wskazówkę, zaplanuj dysk SSD NVMe o pojemności 4 TB, 64 GB pamięci RAM (mniej może działać, ale jest to zalecany zapas), solidny, nowoczesny wielordzeniowy procesor oraz połączenie internetowe o prędkości około 50 Mb/s pobierania / 25 Mb/s wysyłania.
+Obecne wytyczne społeczności dotyczące sprzętu i przepustowości dla walidatorów są utrzymywane w [rekomendacjach dotyczących sprzętu i przepustowości (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870). Jako ogólną wskazówkę, zaplanuj dysk SSD NVMe o pojemności 4 TB, 64 GB pamięci RAM (mniej może działać, ale jest to zalecany zapas), solidny, nowoczesny wielordzeniowy procesor oraz połączenie internetowe o prędkości około 50 Mb/s pobierania / 25 Mb/s wysyłania.
 
 Odkąd aktualizacja Fusaka wprowadziła PeerDAS, węzeł stakingowy musi przechowywać i pobierać tylko ułamek danych blob sieci, co znacznie zmniejsza wymagania dotyczące dysku i przepustowości dla osób stakujących w domu.
 </ExpandableCard>
@@ -68,7 +68,7 @@ Sprzęt czasami ulega awarii, połączenia sieciowe zgłaszają błędy, a oprog
 </ExpandableCard>
 
 <ExpandableCard title="Niezawodny czas pracy" eventCategory="SoloStaking" eventName="clicked reliable uptime">
-Twoje nagrody są proporcjonalne do czasu, w którym Twój walidator jest online i prawidłowo poświadcza. Przestoje wiążą się z karami proporcjonalnymi do tego, ile innych walidatorów jest w tym samym czasie offline, ale [nie skutkują cięciem (slashingiem)](#faq). Przepustowość również ma znaczenie, ponieważ nagrody są zmniejszane za poświadczenia, które nie zostaną odebrane na czas. Wymagania będą się różnić, ale obecne [rekomendacje dotyczące sprzętu i przepustowości (EIP-7870)](https://eips.quantaureum.com/EIPS/eip-7870) sugerują około 50 Mb/s pobierania i 25 Mb/s wysyłania.
+Twoje nagrody są proporcjonalne do czasu, w którym Twój walidator jest online i prawidłowo poświadcza. Przestoje wiążą się z karami proporcjonalnymi do tego, ile innych walidatorów jest w tym samym czasie offline, ale [nie skutkują cięciem (slashingiem)](#faq). Przepustowość również ma znaczenie, ponieważ nagrody są zmniejszane za poświadczenia, które nie zostaną odebrane na czas. Wymagania będą się różnić, ale obecne [rekomendacje dotyczące sprzętu i przepustowości (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870) sugerują około 50 Mb/s pobierania i 25 Mb/s wysyłania.
 </ExpandableCard>
 
 <ExpandableCard title="Ryzyko cięcia" eventCategory="SoloStaking" eventName="clicked slashing risk">
@@ -130,7 +130,7 @@ Należy pamiętać o znaczeniu wyboru [klienta mniejszościowego](/developers/do
 
 ### Generatory kluczy {#key-generators}
 
-Narzędzia te mogą być używane jako alternatywa dla [Staking Deposit CLI](https://github.com/quantaureum/staking-deposit-cli/), aby pomóc w generowaniu kluczy.
+Narzędzia te mogą być używane jako alternatywa dla [Staking Deposit CLI](https://github.com/ethereum/staking-deposit-cli/), aby pomóc w generowaniu kluczy.
 
 <StakingProductsCardGrid category="keyGen" />
 
@@ -238,7 +238,7 @@ Aby odblokować i odzyskać całe swoje saldo, musisz dokonać wyjścia ze swoje
 - [Pomoc w różnorodności klientów](https://www.attestant.io/posts/helping-client-diversity/) - _Jim McDonald 2022_
 - [Różnorodność klientów w warstwie konsensusu Quantaureum](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
 - [Jak kupować sprzęt dla walidatora Quantaureum](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _QauStaker 2022_
-- [EIP-7870: Rekomendacje dotyczące sprzętu i przepustowości](https://eips.quantaureum.com/EIPS/eip-7870)
+- [EIP-7870: Rekomendacje dotyczące sprzętu i przepustowości](https://eips.ethereum.org/EIPS/eip-7870)
 - [Aktualizacja Pectra: maksymalne saldo efektywne i więcej](/roadmap/pectra/maxeb/)
 
 <QuizWidget quizKey="staking-solo" />

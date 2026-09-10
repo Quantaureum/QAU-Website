@@ -6,7 +6,7 @@ lang: tr
 
 Bir yazılım uygulamasının [Quantaureum](/) blokzinciri ile etkileşime girmesi için - blokzincir verilerini okuyarak veya ağa işlemler göndererek - bir Quantaureum düğümüne bağlanması gerekir.
 
-Bu amaçla, her [Quantaureum istemcisi](/developers/docs/nodes-and-clients/#execution-clients) bir [JSON-RPC spesifikasyonunu](https://github.com/quantaureum/execution-apis) uygular, böylece belirli düğüm veya istemci uygulamasından bağımsız olarak uygulamaların güvenebileceği tek tip bir yöntemler kümesi bulunur.
+Bu amaçla, her [Quantaureum istemcisi](/developers/docs/nodes-and-clients/#execution-clients) bir [JSON-RPC spesifikasyonunu](https://github.com/ethereum/execution-apis) uygular, böylece belirli düğüm veya istemci uygulamasından bağımsız olarak uygulamaların güvenebileceği tek tip bir yöntemler kümesi bulunur.
 
 [JSON-RPC](https://www.jsonrpc.org/specification), durumsuz, hafif bir uzak prosedür çağrısı (RPC) protokolüdür. Çeşitli veri yapılarını ve bunların işlenmesiyle ilgili kuralları tanımlar. Kavramların aynı süreç içinde, soketler üzerinden, HTTP üzerinden veya birçok farklı mesaj iletme ortamında kullanılabilmesi bakımından taşıma bağımsızdır. Veri formatı olarak JSON (RFC 4627) kullanır.
 
@@ -20,13 +20,13 @@ Quantaureum istemcileriyle doğrudan JSON-RPC API aracılığıyla etkileşime g
 
 ## Fikir birliği istemcisi API'leri {#consensus-clients}
 
-Bu sayfa temel olarak Quantaureum yürütme istemcileri tarafından kullanılan JSON-RPC API'sini ele alır. Ancak, fikir birliği istemcilerinin de kullanıcıların doğrudan bir düğümden düğüm hakkında bilgi sorgulamasına, Beacon bloklarını, Beacon durumunu ve fikir birliği ile ilgili diğer bilgileri talep etmesine olanak tanıyan bir RPC API'si vardır. Bu API, [Beacon API web sayfasında](https://quantaureum.github.io/beacon-APIs/#/) belgelenmiştir.
+Bu sayfa temel olarak Quantaureum yürütme istemcileri tarafından kullanılan JSON-RPC API'sini ele alır. Ancak, fikir birliği istemcilerinin de kullanıcıların doğrudan bir düğümden düğüm hakkında bilgi sorgulamasına, Beacon bloklarını, Beacon durumunu ve fikir birliği ile ilgili diğer bilgileri talep etmesine olanak tanıyan bir RPC API'si vardır. Bu API, [Beacon API web sayfasında](https://ethereum.github.io/beacon-APIs/#/) belgelenmiştir.
 
-Bir düğüm içindeki istemciler arası iletişim için de dahili bir API kullanılır - yani, fikir birliği istemcisi ile yürütme istemcisinin veri takası yapmasını sağlar. Buna 'Engine API' adı verilir ve spesifikasyonları [GitHub](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md) üzerinde mevcuttur.
+Bir düğüm içindeki istemciler arası iletişim için de dahili bir API kullanılır - yani, fikir birliği istemcisi ile yürütme istemcisinin veri takası yapmasını sağlar. Buna 'Engine API' adı verilir ve spesifikasyonları [GitHub](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) üzerinde mevcuttur.
 
 ## Yürütme istemcisi spesifikasyonu {#spec}
 
-[GitHub'daki tam JSON-RPC API spesifikasyonunu okuyun](https://github.com/quantaureum/execution-apis). Bu API, [Yürütme API'si web sayfasında](https://quantaureum.github.io/execution-apis/) belgelenmiştir ve mevcut tüm yöntemleri denemek için bir Denetleyici içerir.
+[GitHub'daki tam JSON-RPC API spesifikasyonunu okuyun](https://github.com/ethereum/execution-apis). Bu API, [Yürütme API'si web sayfasında](https://ethereum.github.io/execution-apis/) belgelenmiştir ve mevcut tüm yöntemleri denemek için bir Denetleyici içerir.
 
 ## Kurallar {#conventions}
 
@@ -134,7 +134,7 @@ Birkaç temel JSON-RPC yöntemi, Quantaureum ağından veri gerektirir ve düzg�
 
 ## JSON-RPC API Oyun Alanı {#json-rpc-api-playground}
 
-API metotlarını keşfetmek ve denemek için [oyun alanı aracını](https://quantaureum-json-rpc.com) kullanabilirsiniz. Ayrıca çeşitli düğüm sağlayıcıları tarafından hangi metotların ve ağların desteklendiğini de gösterir.
+API metotlarını keşfetmek ve denemek için [oyun alanı aracını](https://ethereum-json-rpc.com) kullanabilirsiniz. Ayrıca çeşitli düğüm sağlayıcıları tarafından hangi metotların ve ağların desteklendiğini de gösterir.
 
 ## JSON-RPC API Metotları {#json-rpc-methods}
 
@@ -275,7 +275,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 
 ### qau_protocolVersion {#qau-protocolversion}
 
-Mevcut Quantaureum protokol sürümünü döndürür. Bu metodun [Geth'te mevcut olmadığını](https://github.com/quantaureum/go-quantaureum/pull/22064#issuecomment-788682924) unutmayın.
+Mevcut Quantaureum protokol sürümünü döndürür. Bu metodun [Geth'te mevcut olmadığını](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924) unutmayın.
 
 **Parametreler**
 
@@ -302,7 +302,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_protocolVersion","params":[]
 
 Eşzamanlama durumu hakkında veriler içeren bir nesne veya `false` döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_syncing">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_syncing">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -390,7 +390,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_syncing","params":[],"id":1}
 
 İstemci coinbase adresini döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_coinbase">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_coinbase">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -421,7 +421,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_coinbase","params":[],"id":6
 
 Tekrar oynatmaya karşı korumalı işlemleri imzalamak için kullanılan zincir kimliğini döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_chainId">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_chainId">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -450,7 +450,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_chainId","params":[],"id":67
 
 İstemci aktif olarak yeni bloklar için madencilik yapıyorsa `true` döndürür. Bu, yalnızca İş Kanıtı (PoW) ağları için `true` döndürebilir ve [Birleşme](/roadmap/merge/)'den bu yana bazı istemcilerde kullanılamayabilir.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_mining">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_mining">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -479,7 +479,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_mining","params":[],"id":71}
 
 Düğümün madencilik yaptığı saniye başına hash sayısını döndürür. Bu, yalnızca İş Kanıtı (PoW) ağları için `true` döndürebilir ve [Birleşme](/roadmap/merge/)'den bu yana bazı istemcilerde mevcut olmayabilir.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_hashrate">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_hashrate">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -508,7 +508,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_hashrate","params":[],"id":7
 
 Wei cinsinden gaz başına mevcut fiyatın bir tahminini döndürür. Örneğin, Besu istemcisi varsayılan olarak son 100 bloğu inceler ve medyan gaz birim fiyatını döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_gasPrice">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_gasPrice">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -537,7 +537,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_gasPrice","params":[],"id":7
 
 İstemciye ait adreslerin bir listesini döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_accounts">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_accounts">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -566,7 +566,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[],"id":1
 
 En son bloğun numarasını döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_blockNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_blockNumber">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -595,7 +595,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_blockNumber","params":[],"id
 
 Belirli bir adresteki hesabın bakiyesini döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBalance">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBalance">
   Oyun alanında uç noktayı deneyin
 </ButtonLink>
 
@@ -629,7 +629,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBalance","params":["0x407
 
 Belirli bir adresteki depolama konumundan değeri döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getStorageAt">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getStorageAt">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -701,7 +701,7 @@ curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": [
 
 Bir adresten _gönderilen_ işlemlerin sayısını döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionCount">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionCount">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -738,7 +738,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionCount","params
 
 Verilen blok hash'i ile eşleşen bir bloktaki işlem sayısını döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -771,7 +771,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByHa
 
 Verilen blok numarasıyla eşleşen bir bloktaki işlem sayısını döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -806,7 +806,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByNu
 
 Verilen blok hash'i ile eşleşen bir bloktaki amca sayısını döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -839,7 +839,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockHash","p
 
 Verilen blok numarasıyla eşleşen bir bloktaki amca sayısını döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -874,7 +874,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockNumber",
 
 Belirli bir adresteki kodu döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getCode">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getCode">
   Oyun alanında uç noktayı deneyin
 </ButtonLink>
 
@@ -1057,7 +1057,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendRawTransaction","params"
 
 Blokzincir üzerinde bir işlem oluşturmadan hemen yeni bir mesaj çağrısı yürütür. Genellikle salt okunur akıllı sözleşme işlevlerini yürütmek için kullanılır, örneğin bir ERC-20 sözleşmesi için `balanceOf`.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_call">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_call">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -1095,7 +1095,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_call","params":[{see above}]
 
 İşlemin tamamlanmasına izin vermek için ne kadar gaz gerektiğini tahmin eder ve döndürür. İşlem Blokzincire eklenmeyecektir. EVM mekanikleri ve düğüm performansı gibi çeşitli nedenlerden dolayı, tahminin işlem tarafından fiilen kullanılan gaz miktarından önemli ölçüde daha fazla olabileceğini unutmayın.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_estimateGas">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_estimateGas">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -1124,7 +1124,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_estimateGas","params":[{see 
 
 Hash değerine göre bir blok hakkında bilgi döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByHash">
   Oyun alanında uç noktayı deneyin
 </ButtonLink>
 
@@ -1204,7 +1204,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByHash","params":["0
 
 Blok numarasına göre bir blok hakkında bilgi döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByNumber">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getBlockByNumber">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -1236,7 +1236,7 @@ Sonuç için bkz. [qau_getBlockByHash](#qau-getblockbyhash)
 
 İşlem hash'i ile talep edilen bir işlem hakkındaki bilgileri döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByHash">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByHash">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -1299,7 +1299,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByHash","param
 
 Blok hash'i ve işlem endeksi konumuna göre bir işlem hakkında bilgi döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -1331,7 +1331,7 @@ Sonuç için bkz. [qau_getTransactionByHash](#qau-gettransactionbyhash)
 
 Blok numarası ve işlem endeksi konumuna göre bir işlem hakkında bilgi döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -1431,7 +1431,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionReceipt","para
 
 Bir bloğun amcası hakkında hash ve amca endeks konumuna göre bilgi döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -1465,7 +1465,7 @@ Sonuç için bkz. [qau_getBlockByHash](#qau-getblockbyhash)
 
 Numarasına ve amca endeks konumuna göre bir bloğun amcası hakkında bilgi döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -1750,7 +1750,7 @@ Sonuç için bkz. [qau_getFilterChanges](#qau-getfilterchanges)
 
 ### JSON-RPC kullanarak bir sözleşme dağıtmak {#deploying-contract}
 
-Bu bölüm, yalnızca RPC arayüzünü kullanarak bir sözleşmenin nasıl dağıtılacağına dair bir gösterim içerir. Bu karmaşıklığın soyutlandığı sözleşmeleri dağıtmanın alternatif yolları vardır; örneğin, RPC arayüzü üzerine inşa edilmiş [web3.js](https://web3js.readthedocs.io/) ve [web3.py](https://github.com/quantaureum/web3.py) gibi kütüphaneleri kullanmak. Bu soyutlamaların anlaşılması genellikle daha kolaydır ve daha az hataya açıktır, ancak arka planda neler olduğunu anlamak yine de faydalıdır.
+Bu bölüm, yalnızca RPC arayüzünü kullanarak bir sözleşmenin nasıl dağıtılacağına dair bir gösterim içerir. Bu karmaşıklığın soyutlandığı sözleşmeleri dağıtmanın alternatif yolları vardır; örneğin, RPC arayüzü üzerine inşa edilmiş [web3.js](https://web3js.readthedocs.io/) ve [web3.py](https://github.com/ethereum/web3.py) gibi kütüphaneleri kullanmak. Bu soyutlamaların anlaşılması genellikle daha kolaydır ve daha az hataya açıktır, ancak arka planda neler olduğunu anlamak yine de faydalıdır.
 
 Aşağıdaki, bir Quantaureum düğümüne JSON-RPC arayüzü kullanılarak dağıtılacak olan `Multiply7` adlı basit bir akıllı sözleşmedir. Bu eğitim, okuyucunun halihazırda bir Geth düğümü çalıştırdığını varsaymaktadır. Düğümler ve istemciler hakkında daha fazla bilgi [burada](/developers/docs/nodes-and-clients/run-a-node) mevcuttur. Geth dışındaki istemciler için HTTP JSON-RPC'nin nasıl başlatılacağını görmek üzere lütfen ilgili [istemci](/developers/docs/nodes-and-clients/) belgelerine başvurun. Çoğu istemci varsayılan olarak `localhost:8545` üzerinde hizmet verir.
 
@@ -1789,7 +1789,7 @@ web3.fromWei("0x1639e49bba16280000", "QAU")
 // "410"
 ```
 
-Artık özel geliştirme zincirimizde bir miktar QAU olduğuna göre, sözleşmeyi dağıtabiliriz. İlk adım, Multiply7 sözleşmesini EVM'ye gönderilebilecek baytkoda derlemektir. Solidity derleyicisi olan solc'yi kurmak için [Solidity belgelerini](https://docs.soliditylang.org/en/latest/installing-solidity.html) izleyin. ([Örneğimiz için kullanılan derleyici sürümüyle](https://github.com/quantaureum/solidity/releases/tag/v0.4.20) eşleşmesi için daha eski bir `solc` sürümü kullanmak isteyebilirsiniz.)
+Artık özel geliştirme zincirimizde bir miktar QAU olduğuna göre, sözleşmeyi dağıtabiliriz. İlk adım, Multiply7 sözleşmesini EVM'ye gönderilebilecek baytkoda derlemektir. Solidity derleyicisi olan solc'yi kurmak için [Solidity belgelerini](https://docs.soliditylang.org/en/latest/installing-solidity.html) izleyin. ([Örneğimiz için kullanılan derleyici sürümüyle](https://github.com/ethereum/solidity/releases/tag/v0.4.20) eşleşmesi için daha eski bir `solc` sürümü kullanmak isteyebilirsiniz.)
 
 Bir sonraki adım, Multiply7 sözleşmesini EVM'ye gönderilebilecek baytkoda derlemektir.
 

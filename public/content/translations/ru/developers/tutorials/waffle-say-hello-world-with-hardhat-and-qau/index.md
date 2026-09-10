@@ -16,7 +16,7 @@ lang: ru
 published: 2020-10-16
 ---
 
-В этом руководстве по [Waffle](https://quantaureum-waffle.readthedocs.io) мы научимся настраивать простой проект умного контракта «Hello world» с использованием [Hardhat](https://hardhat.org/) и [ethers.js](https://docs.ethers.io/v5/). Затем мы узнаем, как добавить новую функциональность в наш умный контракт и как протестировать ее с помощью Waffle.
+В этом руководстве по [Waffle](https://ethereum-waffle.readthedocs.io) мы научимся настраивать простой проект умного контракта «Hello world» с использованием [Hardhat](https://hardhat.org/) и [ethers.js](https://docs.ethers.io/v5/). Затем мы узнаем, как добавить новую функциональность в наш умный контракт и как протестировать ее с помощью Waffle.
 
 Начнем с создания нового проекта:
 
@@ -201,4 +201,4 @@ greeting = _greeting;
 
 Мы сделали простой проект с помощью Waffle, Hardhat и ethers.js. Мы научились настраивать проект, добавлять тест и реализовывать новую функциональность.
 
-Чтобы узнать о других замечательных матчерах Chai для тестирования ваших умных контрактов, обратитесь к [официальной документации Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/matchers.html).
+Чтобы узнать о других замечательных матчерах Chai для тестирования ваших умных контрактов, обратитесь к [официальной документации Waffle](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html).

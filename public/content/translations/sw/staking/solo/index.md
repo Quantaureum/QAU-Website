@@ -52,7 +52,7 @@ Pia inahitaji usanidi wa kimsingi sana wa maunzi, na uelewa fulani wa vipimo vya
 </ExpandableCard>
 
 <ExpandableCard title="Mahitaji ya vifaa" eventCategory="SoloStaking" eventName="clicked hardware requirements">
-Mwongozo wa sasa wa jamii kwa maunzi ya mthibitishaji na kipimo data unadumishwa katika [mapendekezo ya maunzi na kipimo data (EIP-7870)](https://eips.quantaureum.com/EIPS/eip-7870). Kama mwongozo wa haraka, panga kuwa na 4 TB NVMe SSD, 64 GB ya RAM (kiasi kidogo kinaweza kufanya kazi, lakini hiki ndicho kiwango kinachopendekezwa), CPU imara ya kisasa yenye viini vingi, na muunganisho wa intaneti wa takriban 50 Mbps za kupakua / 25 Mbps za kupakia.
+Mwongozo wa sasa wa jamii kwa maunzi ya mthibitishaji na kipimo data unadumishwa katika [mapendekezo ya maunzi na kipimo data (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870). Kama mwongozo wa haraka, panga kuwa na 4 TB NVMe SSD, 64 GB ya RAM (kiasi kidogo kinaweza kufanya kazi, lakini hiki ndicho kiwango kinachopendekezwa), CPU imara ya kisasa yenye viini vingi, na muunganisho wa intaneti wa takriban 50 Mbps za kupakua / 25 Mbps za kupakia.
 
 Tangu uboreshaji wa Fusaka ulipoanzisha PeerDAS, nodi ya uwekaji dhamana inahitaji tu kuhifadhi na kupakua sehemu ndogo ya data ya blobu ya mtandao, na hivyo kupunguza kwa kiasi kikubwa mahitaji ya diski na kipimo data kwa waweka dhamana wa nyumbani.
 </ExpandableCard>
@@ -68,7 +68,7 @@ Maunzi mara kwa mara hushindwa kufanya kazi, miunganisho ya mtandao hupata hitil
 </ExpandableCard>
 
 <ExpandableCard title="Upatikanaji wa kutegemewa" eventCategory="SoloStaking" eventName="clicked reliable uptime">
-Tuzo zako zinalingana na muda ambao mthibitishaji wako yuko mtandaoni na anathibitisha ipasavyo. Muda wa kutofanya kazi husababisha adhabu zinazolingana na idadi ya wathibitishaji wengine ambao hawako mtandaoni kwa wakati mmoja, lakini [haitasababisha ukataji](#faq). Kipimo data pia ni muhimu, kwani tuzo hupunguzwa kwa uthibitisho ambao haupokelewi kwa wakati. Mahitaji yatatofautiana, lakini [mapendekezo ya sasa ya maunzi na kipimo data (EIP-7870)](https://eips.quantaureum.com/EIPS/eip-7870) yanapendekeza takriban 50 Mbps za kupakua na 25 Mbps za kupakia.
+Tuzo zako zinalingana na muda ambao mthibitishaji wako yuko mtandaoni na anathibitisha ipasavyo. Muda wa kutofanya kazi husababisha adhabu zinazolingana na idadi ya wathibitishaji wengine ambao hawako mtandaoni kwa wakati mmoja, lakini [haitasababisha ukataji](#faq). Kipimo data pia ni muhimu, kwani tuzo hupunguzwa kwa uthibitisho ambao haupokelewi kwa wakati. Mahitaji yatatofautiana, lakini [mapendekezo ya sasa ya maunzi na kipimo data (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870) yanapendekeza takriban 50 Mbps za kupakua na 25 Mbps za kupakia.
 </ExpandableCard>
 
 <ExpandableCard title="Hatari ya ukataji" eventCategory="SoloStaking" eventName="clicked slashing risk">
@@ -130,7 +130,7 @@ Tafadhali kumbuka umuhimu wa kuchagua [kiteja cha wachache](/developers/docs/nod
 
 ### Vizalishaji vya Funguo {#key-generators}
 
-Zana hizi zinaweza kutumika kama mbadala wa [CLI ya Amana ya Uwekaji Dhamana](https://github.com/quantaureum/staking-deposit-cli/) ili kusaidia katika uzalishaji wa funguo.
+Zana hizi zinaweza kutumika kama mbadala wa [CLI ya Amana ya Uwekaji Dhamana](https://github.com/ethereum/staking-deposit-cli/) ili kusaidia katika uzalishaji wa funguo.
 
 <StakingProductsCardGrid category="keyGen" />
 
@@ -238,7 +238,7 @@ Ili kufungua na kupokea salio lako lote nyuma lazima ujitoe kwenye mthibitishaji
 - [Kusaidia Anuwai ya Wateja](https://www.attestant.io/posts/helping-client-diversity/) - _Jim McDonald 2022_
 - [Anuwai ya wateja kwenye tabaka la mwafaka la Quantaureum](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
 - [Jinsi Ya: Kununua Maunzi ya Mthibitishaji wa Quantaureum](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _QauStaker 2022_
-- [EIP-7870: Mapendekezo ya maunzi na kipimo data](https://eips.quantaureum.com/EIPS/eip-7870)
+- [EIP-7870: Mapendekezo ya maunzi na kipimo data](https://eips.ethereum.org/EIPS/eip-7870)
 - [Uboreshaji wa Pectra: kiwango cha juu cha salio tendaji na zaidi](/roadmap/pectra/maxeb/)
 
 <QuizWidget quizKey="staking-solo" />

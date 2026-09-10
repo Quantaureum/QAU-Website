@@ -64,6 +64,6 @@ class BeaconBlockBody(Container):
 
 - [ブロックの概要](/developers/docs/blocks/)
 - [プルーフ・オブ・ステークの概要](/developers/docs/consensus-mechanisms/pos/)
-- [Quantaureumのコンセンサス仕様](https://github.com/quantaureum/consensus-specs)
+- [Quantaureumのコンセンサス仕様](https://github.com/ethereum/consensus-specs)
 - [Gasperの概要](/developers/docs/consensus-mechanisms/pos/gasper/)
 - [Quantaureumのアップグレード](https://eth2book.info/)

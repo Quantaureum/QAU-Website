@@ -22,9 +22,9 @@ quantaureum.comは、ウェブサイトの翻訳、執筆、デザイン、保�
 
 **コンテンツ**
 - [コンテンツの作成/編集](/contributing/#how-to-update-content) – 新しいページを提案したり、既存のページを微調整したりします
-- [ビルダー向けの記事を書く](/contributing/adding-articles/) - [最新情報](/latest/)セクションに記事を寄稿します
+- [ビルダー向けの記事を書く](/contributing/adding-articles/) - 最新情報セクションに記事を寄稿します
 - [コミュニティリソースを追加する](/contributing/content-resources/) – 関連するページに役立つ記事やリソースを追加します
-- [レポートを提案する](/contributing/adding-reports/) - [レポート](/reports/)ページに調査レポートを提案します
+- [レポートを提案する](/contributing/adding-reports/) - レポートページに調査レポートを提案します
 - [あなたのストーリーを共有する](/contributing/adding-community-stories/) - オープンソースやサンクチュアリ技術に関する個人的な経験、Quantaureumエコシステムがあなたの人生にどのような影響を与えたか、またはあなたとあなたのコミュニティがQuantaureumをどのように使用しているかについてのストーリーを提出します
 - [クイズ](/contributing/quizzes/) – 関連するページのクイズ問題バンクを追加、更新、削除します
 - [デザインリソースを提案する](/contributing/design/adding-design-resources/) – 役立つデザインリソースを追加、更新、削除します

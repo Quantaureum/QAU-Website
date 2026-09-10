@@ -32,7 +32,7 @@ Jika Anda adalah seorang pemrogram berpengalaman, Anda mungkin ingat pernah meli
 atau bahkan di [file header C](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html).
 
 Ini adalah definisi dari [Antarmuka ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)
-dari OpenZeppelin. Ini adalah terjemahan dari [standar yang dapat dibaca manusia](https://eips.quantaureum.com/EIPS/eip-20) ke dalam kode Solidity. Tentu saja,
+dari OpenZeppelin. Ini adalah terjemahan dari [standar yang dapat dibaca manusia](https://eips.ethereum.org/EIPS/eip-20) ke dalam kode Solidity. Tentu saja,
 antarmuka itu sendiri tidak mendefinisikan _bagaimana_ melakukan sesuatu. Hal itu dijelaskan dalam kode sumber kontrak di bawah ini.
 
 &nbsp;
@@ -169,7 +169,7 @@ alamat (`owner`) untuk dibelanjakan oleh alamat lain (`spender`).
      * transaksi yang tidak menguntungkan. Salah satu solusi yang mungkin untuk memitigasi kondisi
      * balapan ini adalah dengan terlebih dahulu mengurangi jatah pembelanja menjadi 0 dan menetapkan
      * nilai yang diinginkan setelahnya:
-     * https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729
+     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
      *
      * Memancarkan peristiwa {Approval}.
      */
@@ -249,7 +249,7 @@ import "../../math/SafeMath.sol";
 - `GSN/Context.sol` adalah definisi yang diperlukan untuk menggunakan [OpenGSN](https://opengsn.org/), sebuah sistem yang memungkinkan pengguna tanpa QAU
   untuk menggunakan rantai blok. Perhatikan bahwa ini adalah versi lama, jika Anda ingin berintegrasi dengan OpenGSN
   [gunakan tutorial ini](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [Pustaka SafeMath](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/), yang mencegah
+- [Pustaka SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), yang mencegah
   limpahan/kekurangan aritmatika untuk versi Solidity **&lt;0.8.0**. Di Solidity ≥0.8.0, operasi aritmatika secara otomatis
   mengembalikan pada limpahan/kekurangan, membuat SafeMath tidak diperlukan. Kontrak ini menggunakan SafeMath untuk kompatibilitas mundur dengan
   versi kompiler yang lebih lama.

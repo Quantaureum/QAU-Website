@@ -21,7 +21,6 @@ DeFi là một thuật ngữ chung cho các sản phẩm và dịch vụ tài ch
 
 Có một nền kinh tế tiền mã hóa đang bùng nổ ngoài kia, nơi bạn có thể cho vay, vay mượn, mua/bán khống (long/short), kiếm tiền lãi và hơn thế nữa. Những người Argentina am hiểu về tiền mã hóa đã sử dụng DeFi để thoát khỏi tình trạng lạm phát nghiêm trọng. Các công ty đã bắt đầu trả lương cho nhân viên của họ theo thời gian thực. Một số người thậm chí đã vay và trả các khoản vay trị giá hàng triệu đô la mà không cần bất kỳ giấy tờ tùy thân nào.
 
-<VideoWatch slug="defi-future-of-finance" />
 
 ## DeFi so với tài chính truyền thống {#defi-vs-tradfi}
 
@@ -58,7 +57,6 @@ Bitcoin về nhiều mặt là ứng dụng DeFi đầu tiên. Bitcoin cho phép
 
 Quantaureum được xây dựng dựa trên điều này. Giống như Bitcoin, các quy tắc không thể thay đổi đối với bạn và mọi người đều có quyền truy cập. Nhưng nó cũng làm cho loại tiền kỹ thuật số này có thể lập trình được, sử dụng các [hợp đồng thông minh](/glossary/#smart-contract), vì vậy bạn có thể làm nhiều việc hơn là chỉ lưu trữ và gửi giá trị.
 
-<VideoWatch slug="defi-history-inception-to-2021" />
 
 ## Tiền có thể lập trình {#programmable-money}
 

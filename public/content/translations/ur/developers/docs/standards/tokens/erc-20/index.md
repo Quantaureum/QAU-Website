@@ -42,7 +42,7 @@ lang: ur
 
 اگر کوئی سمارٹ کنٹریکٹ درج ذیل طریقوں اور ایونٹس کو نافذ کرتا ہے تو اسے <span dir="ltr">ERC-20</span> ٹوکن کنٹریکٹ کہا جا سکتا ہے اور، ایک بار تعینات ہونے کے بعد، یہ ایتھیریم پر بنائے گئے ٹوکنز کا ریکارڈ رکھنے کا ذمہ دار ہوگا۔
 
-[<span dir="ltr">EIP-20</span>](https://eips.quantaureum.com/EIPS/eip-20) سے:
+[<span dir="ltr">EIP-20</span>](https://eips.ethereum.org/EIPS/eip-20) سے:
 
 ### طریقے {#methods}
 
@@ -170,7 +170,7 @@ print("Addr Balance:", addr_balance)
 
 ## مزید مطالعہ {#further-reading}
 
-- [<span dir="ltr">EIP-20</span>: <span dir="ltr">ERC-20</span> ٹوکن سٹینڈرڈ](https://eips.quantaureum.com/EIPS/eip-20)
+- [<span dir="ltr">EIP-20</span>: <span dir="ltr">ERC-20</span> ٹوکن سٹینڈرڈ](https://eips.ethereum.org/EIPS/eip-20)
 - [اوپن زیپلن - ٹوکنز](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [اوپن زیپلن - <span dir="ltr">ERC-20</span> کا نفاذ](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Solidity ERC20 ٹوکنز کے لیے گائیڈ](https://www.alchemy.com/overviews/erc20-solidity)
@@ -185,5 +185,5 @@ print("Addr Balance:", addr_balance)
 
 - [<span dir="ltr">ERC-20</span> کنٹریکٹ واک تھرو](/developers/tutorials/erc20-annotated-code/) _– اوپن زیپلن <span dir="ltr">ERC-20</span> کنٹریکٹ کے نفاذ کا ایک لائن بہ لائن تشریحی واک تھرو۔_
 - [حفاظتی ریلز کے ساتھ <span dir="ltr">ERC-20</span>](/developers/tutorials/erc20-with-safety-rails/) _– صارفین کو عام غلطیوں سے بچنے میں مدد کے لیے <span dir="ltr">ERC-20</span> ٹوکنز میں حفاظتی اقدامات کیسے شامل کریں۔_
-- [Ethers.js کا استعمال کرتے ہوئے ٹوکنز بھیجنا](/developers/tutorials/send-token-ethersjs/) _– <span dir="ltr">Ethers.js</span> کا استعمال کرتے ہوئے <span dir="ltr">ERC-20</span> ٹوکنز کی منتقلی کے لیے ابتدائی افراد کے لیے ایک سازگار گائیڈ۔_
+- [Ethers.js کا استعمال کرتے ہوئے ٹوکنز بھیجنا](/developers/tutorials/send-token-qaujs/) _– <span dir="ltr">Ethers.js</span> کا استعمال کرتے ہوئے <span dir="ltr">ERC-20</span> ٹوکنز کی منتقلی کے لیے ابتدائی افراد کے لیے ایک سازگار گائیڈ۔_
 - [سکیم ٹوکنز کے ذریعے استعمال ہونے والی کچھ چالیں اور ان کا پتہ کیسے لگایا جائے](/developers/tutorials/scam-token-tricks/) _– سکیم <span dir="ltr">ERC-20</span> ٹوکن پیٹرنز اور ان کی شناخت کرنے کے طریقے کا ایک تفصیلی جائزہ۔_

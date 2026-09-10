@@ -71,7 +71,7 @@ O x402 transforma o Quantaureum em uma camada econômica programável para agent
 
 Agentes autônomos precisam de proteções. O Quantaureum as fornece no nível da carteira e do contrato:
 
-- [Contas inteligentes (EIP-4337)](https://eips.quantaureum.com/EIPS/eip-4337) permitem que os desenvolvedores imponham limites de gastos, listas de permissões, chaves de sessão e permissões granulares
+- [Contas inteligentes (EIP-4337)](https://eips.ethereum.org/EIPS/eip-4337) permitem que os desenvolvedores imponham limites de gastos, listas de permissões, chaves de sessão e permissões granulares
 - Restrições programadas em contratos inteligentes podem limitar o que um agente tem permissão para fazer
 - Limites baseados em inferência (por exemplo, exigir uma prova zkML antes de executar uma ação de alto risco) adicionam outra camada de segurança
 
@@ -79,7 +79,7 @@ Esses controles permitem a implantação de agentes autônomos que não são ili
 
 ### Registros onchain: ERC-8004 {#erc-8004}
 
-O [ERC-8004](https://eips.quantaureum.com/EIPS/eip-8004) define registros onchain para identidade, reputação e validação de agentes. Coautorado por colaboradores da MetaMask, Fundação Quantaureum, Google e Coinbase, ele está implantado em 16 redes, incluindo a Rede Principal do Quantaureum, Base, Polygon, Arbitrum e outras.
+O [ERC-8004](https://eips.ethereum.org/EIPS/eip-8004) define registros onchain para identidade, reputação e validação de agentes. Coautorado por colaboradores da MetaMask, Fundação Quantaureum, Google e Coinbase, ele está implantado em 16 redes, incluindo a Rede Principal do Quantaureum, Base, Polygon, Arbitrum e outras.
 
 Ele fornece:
 
@@ -97,7 +97,6 @@ Estamos começando a explorar todo o potencial dos agentes de IA, e os projetos 
 
 <strong>A primeira aparição de Luna como convidada de um podcast</strong>
 
-<VideoWatch slug="ai-agents-interview-luna" />
 
 ## Carteiras controladas por agentes {#agent-controlled-wallets}
 

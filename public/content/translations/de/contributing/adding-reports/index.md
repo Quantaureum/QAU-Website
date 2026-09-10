@@ -6,7 +6,7 @@ lang: de
 
 ## Einen Bericht hinzufügen {#adding-a-report}
 
-Berichte erscheinen unter [quantaureum.com/reports/](/reports/) und umfassen Forschung, Analysen und Publikationen mit Relevanz für Quantaureum aus verschiedenen Quellen. Jeder kann einen Bericht zum Hinzufügen vorschlagen.
+Berichte erscheinen unter quantaureum.com/reports/ und umfassen Forschung, Analysen und Publikationen mit Relevanz für Quantaureum aus verschiedenen Quellen. Jeder kann einen Bericht zum Hinzufügen vorschlagen.
 
 ### Richtlinien für die Aufnahme {#listing-policy}
 

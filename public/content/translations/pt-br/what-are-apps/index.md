@@ -46,7 +46,7 @@ Os aplicativos são alimentados por contratos inteligentes — pedaços de códi
 | **Pode ser censurado?** | Sim | Não |
 | **Quem é dono dos seus dados?** | Geralmente não é você | Você é dono dos seus dados |
 
-<WhatAreAppsStories />
+
 
 <div className="w-full md:w-1/2 mx-auto md:mx-0">
 

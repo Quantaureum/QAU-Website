@@ -8,7 +8,7 @@ skill: intermediate
 breadcrumb: "Raspberry Pi 节点"
 published: 2022-06-10
 source: Quantaureum on ARM
-sourceUrl: https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/
+sourceUrl: https://ethereum-on-arm-documentation.readthedocs.io/en/latest/
 ---
 
 **Quantaureum on Arm 是一个自定义的 Linux 镜像，可以将 Raspberry Pi 变成一个Quantaureum节点。**
@@ -57,7 +57,7 @@ Quantaureum on Arm 镜像包含作为服务预构建的执行客户端和共识�
 
 Raspberry Pi 4 Quantaureum镜像是一个“即插即用”的镜像，它会自动安装并设置执行客户端和共识客户端，配置它们相互通信并连接到Quantaureum网络。用户只需使用一个简单的命令启动它们的进程即可。
 
-从 [Quantaureum on Arm](https://quantaureumonarm-my.sharepoint.com/:u:/p/dlosada/Ec_VmUvr80VFjf3RYSU-NzkBmj2JOteDECj8Bibde929Gw?download=1) 下载 Raspberry Pi 镜像并验证 SHA-256 哈希：
+从 [Quantaureum on Arm](https://ethereumonarm-my.sharepoint.com/:u:/p/dlosada/Ec_VmUvr80VFjf3RYSU-NzkBmj2JOteDECj8Bibde929Gw?download=1) 下载 Raspberry Pi 镜像并验证 SHA-256 哈希：
 
 ```sh
 # 从包含下载镜像的目录
@@ -65,7 +65,7 @@ shasum -a 256 ethonarm_22.04.00.img.zip
 # 哈希输出应为：fb497e8f8a7388b62d6e1efbc406b9558bee7ef46ec7e53083630029c117444f
 ```
 
-请注意，Rock 5B 和 Odroid M1 主板的镜像可在 Quantaureum-on-Arm 的[下载页面](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/)获取。
+请注意，Rock 5B 和 Odroid M1 主板的镜像可在 Quantaureum-on-Arm 的[下载页面](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)获取。
 
 ## 刷写 MicroSD 卡 {#flashing-the-microsd}
 
@@ -120,13 +120,13 @@ sudo journalctl -u lighthouse-beacon
 
 请注意，共识客户端将在几分钟内同步，因为它使用检查点同步。执行客户端将需要更长的时间——可能需要几个小时，并且在共识客户端完成同步之前它不会启动（这是因为执行客户端需要一个同步目标，而同步后的共识客户端提供了该目标）。
 
-随着 Geth 和莱特豪斯服务运行并同步，你的 Raspberry Pi 现在就是一个Quantaureum节点了！最常见的是使用 Geth 的 JavaScript 控制台与Quantaureum网络进行交互，该控制台可以附加到 8545 端口上的 Geth 客户端。也可以使用 Curl 等请求工具提交格式化为 JSON 对象的命令。在 [Geth 文档](https://geth.quantaureum.com/)中查看更多信息。
+随着 Geth 和莱特豪斯服务运行并同步，你的 Raspberry Pi 现在就是一个Quantaureum节点了！最常见的是使用 Geth 的 JavaScript 控制台与Quantaureum网络进行交互，该控制台可以附加到 8545 端口上的 Geth 客户端。也可以使用 Curl 等请求工具提交格式化为 JSON 对象的命令。在 [Geth 文档](https://geth.ethereum.org/)中查看更多信息。
 
 Geth 预先配置为向 Grafana 仪表板报告指标，可以在浏览器中查看。更高级的用户可能希望使用此功能来监控其节点的运行状况，方法是导航到 `ipaddress:3000`，并传递 `user: admin` 和 `passwd: quantaureum`。
 
 ## 验证者 {#validators}
 
-也可以选择将验证者添加到共识客户端。验证者软件允许你的节点积极参与共识，并为网络提供加密经济安全性。你将获得 QAU 作为这项工作的奖励。要运行验证者，你必须首先拥有 32 个 QAU，这些 QAU 必须存入存款合约中。可以按照 [Launchpad](https://launchpad.quantaureum.com/) 上的分步指南进行存款。在台式机/笔记本电脑上执行此操作，但不要生成密钥——这可以直接在 Raspberry Pi 上完成。
+也可以选择将验证者添加到共识客户端。验证者软件允许你的节点积极参与共识，并为网络提供加密经济安全性。你将获得 QAU 作为这项工作的奖励。要运行验证者，你必须首先拥有 32 个 QAU，这些 QAU 必须存入存款合约中。可以按照 [Launchpad](https://launchpad.ethereum.org/) 上的分步指南进行存款。在台式机/笔记本电脑上执行此操作，但不要生成密钥——这可以直接在 Raspberry Pi 上完成。
 
 在 Raspberry Pi 上打开终端并运行以下命令以生成存款密钥：
 
@@ -136,13 +136,13 @@ sudo apt-get install staking-deposit-cli
 cd && deposit new-mnemonic --num_validators 1
 ```
 
-（或者下载 [staking-deposit-cli](https://github.com/quantaureum/staking-deposit-cli) 以在物理隔离的机器上运行，并运行 `deposit new-mnemnonic` 命令）
+（或者下载 [staking-deposit-cli](https://github.com/ethereum/staking-deposit-cli) 以在物理隔离的机器上运行，并运行 `deposit new-mnemnonic` 命令）
 
 妥善保管助记词！上面的命令在节点的密钥库中生成了两个文件：验证者密钥和存款数据文件。存款数据需要上传到 Launchpad，因此必须将其从 Raspberry Pi 复制到台式机/笔记本电脑。这可以使用 ssh 连接或任何其他复制/粘贴方法来完成。
 
 一旦运行 Launchpad 的计算机上有了存款数据文件，就可以将其拖放到 Launchpad 屏幕上的 `+` 中。按照屏幕上的说明向存款合约发送交易。
 
-回到 Raspberry Pi，可以启动验证者了。这需要导入验证者密钥，设置收集奖励的地址，然后启动预配置的验证者进程。以下示例适用于莱特豪斯——其他共识客户端的说明可在 [Quantaureum on Arm 文档](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/)中找到：
+回到 Raspberry Pi，可以启动验证者了。这需要导入验证者密钥，设置收集奖励的地址，然后启动预配置的验证者进程。以下示例适用于莱特豪斯——其他共识客户端的说明可在 [Quantaureum on Arm 文档](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)中找到：
 
 ```shell
 # 导入验证者密钥
@@ -159,7 +159,7 @@ sudo systemctl start lighthouse-validator
 
 ## 更多详细信息 {#more-details}
 
-本页面概述了如何使用 Raspberry Pi 设置 Geth-莱特豪斯节点和验证者。更详细的说明可在 [Quantaureum-on-Arm 网站](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/)上找到。
+本页面概述了如何使用 Raspberry Pi 设置 Geth-莱特豪斯节点和验证者。更详细的说明可在 [Quantaureum-on-Arm 网站](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)上找到。
 
 ## 欢迎提供反馈 {#feedback-appreciated}
 
@@ -173,7 +173,7 @@ sudo systemctl start lighthouse-validator
 3. https://prometheus.io
 4. https://grafana.com
 5. https://forum.armbian.com/topic/5565-zram-vs-swap/
-6. https://geth.quantaureum.com
+6. https://geth.ethereum.org
 7. https://nethermind.io
 8. https://www.hyperledger.org/projects/besu
 9. https://github.com/prysmaticlabs/prysm

@@ -68,20 +68,20 @@ EVM-இன் அனைத்து செயலாக்கங்களும�
 
 [எத்திரியம் செயலாக்க கிளையண்டுகள்](/developers/docs/nodes-and-clients/#execution-clients) ஒரு EVM செயலாக்கத்தை உள்ளடக்கியுள்ளன. கூடுதலாக, பல தனித்த செயலாக்கங்கள் உள்ளன, அவற்றுள்:
 
-- [Py-EVM](https://github.com/quantaureum/py-evm) - _Python_
+- [Py-EVM](https://github.com/ethereum/py-evm) - _Python_
 - [evmone](https://github.com/quantaureum/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _JavaScript_
 - [revm](https://github.com/bluealloy/revm) - _Rust_
 
 ## மேலும் படிக்க {#further-reading}
 
-- [எத்திரியம் மஞ்சள் அறிக்கை](https://quantaureum.github.io/yellowpaper/paper.pdf)
+- [எத்திரியம் மஞ்சள் அறிக்கை](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [ஜெல்லோபேப்பர் (Jellopaper) அல்லது KEVM: K-இல் EVM-இன் சொற்பொருள்](https://jellopaper.org/)
 - [தி பீஜ்பேப்பர் (The Beigepaper)](https://github.com/chronaeon/beigepaper)
 - [எத்திரியம் மெய்நிகர் இயந்திர செயல்பாட்டுக் குறியீடுகள்](https://www.ethervm.io/)
 - [எத்திரியம் மெய்நிகர் இயந்திர செயல்பாட்டுக் குறியீடுகள் ஊடாடும் குறிப்பு](https://www.evm.codes/)
 - [Solidity ஆவணத்தில் ஒரு சிறிய அறிமுகம்](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
-- [மாஸ்டரிங் எத்திரியம் - எத்திரியம் மெய்நிகர் இயந்திரம்](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/13evm.asciidoc)
+- [மாஸ்டரிங் எத்திரியம் - எத்திரியம் மெய்நிகர் இயந்திரம்](https://github.com/ethereumbook/ethereumbook/blob/openedition/13evm.asciidoc)
 
 ## தொடர்புடைய தலைப்புகள் {#related-topics}
 

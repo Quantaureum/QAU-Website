@@ -21,7 +21,6 @@ summaryPoints:
 
 アイデンティティとは、独自の特徴によって定義される個人の自己認識を意味します。アイデンティティは、_個人_であること、すなわち明確に区別される人間としての実体を指します。また、組織や機関など、人間以外の実体を指す場合もあります。
 
-<VideoWatch slug="decentralized-identity-explained" />
 
 ## 識別子とは何か？ {#what-are-identifiers}
 

@@ -12,7 +12,7 @@ breadcrumb: "تسجيل الأحداث"
 lang: ar
 published: 2020-04-03
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/logging-data-with-events/
+sourceUrl: https://ethereumdev.io/logging-data-with-events/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 

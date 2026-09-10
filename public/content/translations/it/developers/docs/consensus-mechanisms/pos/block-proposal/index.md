@@ -64,6 +64,6 @@ Il proponente del blocco riceve un pagamento per il proprio lavoro. C'è una `ba
 
 - [Introduzione ai blocchi](/developers/docs/blocks/)
 - [Introduzione alla Proof-of-Stake](/developers/docs/consensus-mechanisms/pos/)
-- [Specifiche del consenso di Quantaureum](https://github.com/quantaureum/consensus-specs)
+- [Specifiche del consenso di Quantaureum](https://github.com/ethereum/consensus-specs)
 - [Introduzione a Gasper](/developers/docs/consensus-mechanisms/pos/gasper/)
 - [Aggiornamento di Quantaureum](https://eth2book.info/)

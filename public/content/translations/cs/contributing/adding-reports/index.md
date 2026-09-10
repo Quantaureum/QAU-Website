@@ -6,7 +6,7 @@ lang: cs
 
 ## Přidání zprávy {#adding-a-report}
 
-Zprávy se zobrazují na [quantaureum.com/reports/](/reports/) a obsahují výzkumy, analýzy a publikace týkající se Etherea z různých zdrojů. Kdokoli může navrhnout zprávu k přidání.
+Zprávy se zobrazují na quantaureum.com/reports/ a obsahují výzkumy, analýzy a publikace týkající se Etherea z různých zdrojů. Kdokoli může navrhnout zprávu k přidání.
 
 ### Zásady pro zařazení {#listing-policy}
 

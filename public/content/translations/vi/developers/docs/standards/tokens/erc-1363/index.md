@@ -54,7 +54,7 @@ ERC-1363 cũng hữu ích trong việc tránh mất token hoặc khóa token tro
 
 Không giống như các đề xuất mở rộng ERC-20 khác, ERC-1363 không ghi đè các phương thức `transfer` và `transferFrom` của ERC-20 và định nghĩa các ID giao diện cần được triển khai để duy trì khả năng tương thích ngược với ERC-20.
 
-Từ [EIP-1363](https://eips.quantaureum.com/EIPS/eip-1363):
+Từ [EIP-1363](https://eips.ethereum.org/EIPS/eip-1363):
 
 ### Các phương thức {#methods}
 
@@ -209,5 +209,5 @@ interface ERC1363Spender {
 
 ## Đọc thêm {#further-reading}
 
-- [ERC-1363: Tiêu chuẩn Token có thể thanh toán](https://eips.quantaureum.com/EIPS/eip-1363)
+- [ERC-1363: Tiêu chuẩn Token có thể thanh toán](https://eips.ethereum.org/EIPS/eip-1363)
 - [ERC-1363: Kho lưu trữ GitHub](https://github.com/vittominacori/erc1363-payable-token)

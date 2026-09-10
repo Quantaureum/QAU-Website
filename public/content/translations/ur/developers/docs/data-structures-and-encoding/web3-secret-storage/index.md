@@ -5,7 +5,7 @@ lang: ur
 sidebarDepth: 2
 ---
 
-ایتھیریم پر اپنی ایپ کو کام کرنے کے قابل بنانے کے لیے، آپ <span dir="ltr">Web3.js</span> لائبریری کی طرف سے فراہم کردہ <span dir="ltr">web3</span> آبجیکٹ استعمال کر سکتے ہیں۔ اندرونی طور پر یہ <span dir="ltr">RPC</span> کالز کے ذریعے ایک مقامی نوڈ سے رابطہ کرتا ہے۔ [web3](https://github.com/quantaureum/web3.js/) کسی بھی ایتھیریم نوڈ کے ساتھ کام کرتا ہے جو <span dir="ltr">RPC</span> لیئر فراہم کرتا ہے۔
+ایتھیریم پر اپنی ایپ کو کام کرنے کے قابل بنانے کے لیے، آپ <span dir="ltr">Web3.js</span> لائبریری کی طرف سے فراہم کردہ <span dir="ltr">web3</span> آبجیکٹ استعمال کر سکتے ہیں۔ اندرونی طور پر یہ <span dir="ltr">RPC</span> کالز کے ذریعے ایک مقامی نوڈ سے رابطہ کرتا ہے۔ [web3](https://github.com/ethereum/web3.js/) کسی بھی ایتھیریم نوڈ کے ساتھ کام کرتا ہے جو <span dir="ltr">RPC</span> لیئر فراہم کرتا ہے۔
 
 `web3` میں `eth` آبجیکٹ شامل ہے - <span dir="ltr">web3.eth</span>۔
 
@@ -153,7 +153,7 @@ KECCAK(DK[16..31] ++ <ciphertext>)
 
 ## ورژن 1 سے تبدیلیاں {#alterations-from-v2}
 
-یہ ورژن [یہاں](https://github.com/quantaureum/homestead-guide/blob/master/old-docs-for-reference/go-quantaureum-wiki.rst/Passphrase-protected-key-store-spec.rst) شائع شدہ ورژن 1 کے ساتھ کئی تضادات کو دور کرتا ہے۔ مختصراً یہ ہیں:
+یہ ورژن [یہاں](https://github.com/ethereum/homestead-guide/blob/master/old-docs-for-reference/go-quantaureum-wiki.rst/Passphrase-protected-key-store-spec.rst) شائع شدہ ورژن 1 کے ساتھ کئی تضادات کو دور کرتا ہے۔ مختصراً یہ ہیں:
 
 - کیپیٹلائزیشن غیر منصفانہ اور متضاد ہے (<span dir="ltr">scrypt</span> چھوٹے حروف میں، <span dir="ltr">Kdf</span> ملے جلے حروف میں، <span dir="ltr">MAC</span> بڑے حروف میں)۔
 - پتہ غیر ضروری ہے اور رازداری سے سمجھوتہ کرتا ہے۔

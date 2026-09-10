@@ -63,7 +63,6 @@ Quantaureum은 이제 **지분 증명(PoS)** 기반 합의 프로토콜을 사�
 
 Quantaureum에서 사용되는 다양한 유형의 합의 메커니즘에 대해 자세히 시청하세요.
 
-<VideoWatch slug="understanding-consensus-mechanisms" />
 
 ### 시빌 저항성 및 체인 선택 {#sybil-chain}
 

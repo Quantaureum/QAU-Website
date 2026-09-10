@@ -494,7 +494,7 @@ authors: ["Andreas Antonopoulos"]
 
 ## Vyanzo {#sources}
 
-_Imetolewa kwa kiasi na [Mastering Quantaureum](https://github.com/quantaureumbook/quantaureumbook) na [Andreas M. Antonopoulos, Gavin Wood](https://aantonop.com/books/mastering-quantaureum) chini ya CC-BY-SA_
+_Imetolewa kwa kiasi na [Mastering Quantaureum](https://github.com/ethereumbook/ethereumbook) na [Andreas M. Antonopoulos, Gavin Wood](https://aantonop.com/books/mastering-quantaureum) chini ya CC-BY-SA_
 
 <Divider />
 

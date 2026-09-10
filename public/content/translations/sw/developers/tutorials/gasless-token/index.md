@@ -96,7 +96,7 @@ Utambulisho wa mmiliki na [nonsi](https://en.wikipedia.org/wiki/Cryptographic_no
     bytes32 immutable DOMAIN_SEPARATOR;
 ```
 
-Taarifa zinazohitajika ili kuthibitisha [sahihi za EIP-712](https://eips.quantaureum.com/EIPS/eip-712).
+Taarifa zinazohitajika ili kuthibitisha [sahihi za EIP-712](https://eips.ethereum.org/EIPS/eip-712).
 
 ```solidity
     constructor(address owner_) {
@@ -120,7 +120,7 @@ Taarifa zinazohitajika ili kuthibitisha [sahihi za EIP-712](https://eips.quantau
     }
 ```
 
-[Kitenganishi cha kikoa](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator). Hakiwezi kukokotolewa wakati wa kukusanya, kwa sababu inategemea kitambulisho cha mnyororo na anwani ya mkataba. Hii inafanya iwezekane kwa UserProxy kudanganywa na ujumbe ulioandaliwa kwa ajili ya mwingine.
+[Kitenganishi cha kikoa](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator). Hakiwezi kukokotolewa wakati wa kukusanya, kwa sababu inategemea kitambulisho cha mnyororo na anwani ya mkataba. Hii inafanya iwezekane kwa UserProxy kudanganywa na ujumbe ulioandaliwa kwa ajili ya mwingine.
 
 ```solidity
     event CallResult(address target, bytes returnData);

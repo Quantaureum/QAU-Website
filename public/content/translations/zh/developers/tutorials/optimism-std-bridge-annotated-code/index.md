@@ -46,7 +46,7 @@ lang: zh
    - 最初来自一层网络 (l1) 上的跨链桥
 6. 二层网络 (l2) 跨链桥检查二层网络 (l2) 上的 ERC-20 代币合约是否正确：
    - 二层网络 (l2) 合约报告其一层网络 (l1) 对应合约与一层网络 (l1) 上代币来源的合约相同
-   - 二层网络 (l2) 合约报告它支持正确的接口（[使用 ERC-165](https://eips.quantaureum.com/EIPS/eip-165)）。
+   - 二层网络 (l2) 合约报告它支持正确的接口（[使用 ERC-165](https://eips.ethereum.org/EIPS/eip-165)）。
 7. 如果二层网络 (l2) 合约正确，则调用它以向适当的地址铸造适当数量的代币。如果不正确，则启动提款流程，以允许用户在一层网络 (l1) 上申领代币。
 
 ### 提款流程 {#withdrawal-flow}
@@ -70,7 +70,7 @@ lang: zh
 
 ### IL1ERC20Bridge {#il1erc20bridge}
 
-[此接口在此处定义](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol)。
+[此接口在此处定义](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol)。
 它包含跨链 ERC-20 代币所需的函数和定义。
 
 ```solidity
@@ -235,7 +235,7 @@ Optimism 中的提款（以及从二层网络 (l2) 到一层网络 (l1) 的其�
 
 ### IL1StandardBridge {#il1standardbridge}
 
-[此接口在此处定义](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol)。
+[此接口在此处定义](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol)。
 此文件包含 QAU 的事件和函数定义。
 这些定义与上面在 `IL1ERC20Bridge` 中为 ERC-20 定义的非常相似。
 
@@ -318,7 +318,7 @@ interface IL1StandardBridge is IL1ERC20Bridge {
 
 ### CrossDomainEnabled {#crossdomainenabled}
 
-[此合约](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol)由两个跨链桥（[一层网络 (l1)](#the-l1-bridge-contract) 和 [二层网络 (l2)](#l2-bridge-code)）继承，以向另一层发送消息。
+[此合约](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol)由两个跨链桥（[一层网络 (l1)](#the-l1-bridge-contract) 和 [二层网络 (l2)](#l2-bridge-code)）继承，以向另一层发送消息。
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -328,7 +328,7 @@ pragma solidity >0.5.0 <0.9.0;
 import { ICrossDomainMessenger } from "./ICrossDomainMessenger.sol";
 ```
 
-[此接口](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol)告诉合约如何使用跨域信使向另一层发送消息。
+[此接口](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol)告诉合约如何使用跨域信使向另一层发送消息。
 这个跨域信使是另一个完整的系统，值得单独写一篇文章，我希望将来能写。
 
 ```solidity
@@ -395,7 +395,7 @@ contract CrossDomainEnabled {
         );
 ```
 
-跨域信使提供向另一层发送消息的地址的方式是 [`.xDomainMessageSender()` 函数](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128)。
+跨域信使提供向另一层发送消息的地址的方式是 [`.xDomainMessageSender()` 函数](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128)。
 只要在由消息发起的交易中调用它，它就可以提供此信息。
 
 我们需要确保收到的消息来自另一个跨链桥。
@@ -460,7 +460,7 @@ contract CrossDomainEnabled {
 
 ### 一层网络 (l1) 跨链桥合约 {#the-l1-bridge-contract}
 
-[此合约的源代码在此处](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol)。
+[此合约的源代码在此处](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol)。
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -482,7 +482,7 @@ import { IL1ERC20Bridge } from "./IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "../../L2/messaging/IL2ERC20Bridge.sol";
 ```
 
-[此接口](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol)允许我们创建消息来控制二层网络 (l2) 上的标准跨链桥。
+[此接口](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol)允许我们创建消息来控制二层网络 (l2) 上的标准跨链桥。
 
 ```solidity
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -502,7 +502,7 @@ import { CrossDomainEnabled } from "../../libraries/bridge/CrossDomainEnabled.so
 import { Lib_PredeployAddresses } from "../../libraries/constants/Lib_PredeployAddresses.sol";
 ```
 
-[`Lib_PredeployAddresses`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) 包含始终具有相同地址的二层网络 (l2) 合约的地址。这包括二层网络 (l2) 上的标准跨链桥。
+[`Lib_PredeployAddresses`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) 包含始终具有相同地址的二层网络 (l2) 合约的地址。这包括二层网络 (l2) 上的标准跨链桥。
 
 ```solidity
 import { Address } from "@openzeppelin/contracts/utils/Address.sol";
@@ -516,7 +516,7 @@ import { Address } from "@openzeppelin/contracts/utils/Address.sol";
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[ERC-20 标准](https://eips.quantaureum.com/EIPS/eip-20) 支持合约报告失败的两种方式：
+[ERC-20 标准](https://eips.ethereum.org/EIPS/eip-20) 支持合约报告失败的两种方式：
 
 1. 回退
 2. 返回 `false`
@@ -710,7 +710,7 @@ Solidity 函数 [`abi.encodeWithSelector`](https://docs.soliditylang.org/en/v0.8
         );
 ```
 
-这里的消息是使用以下参数调用 [`finalizeDeposit` 函数](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148)：
+这里的消息是使用以下参数调用 [`finalizeDeposit` 函数](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148)：
 
 | 参数 | 值 | 含义 |
 | --------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -942,7 +942,7 @@ ERC-20 代币可以直接转移。
 
 ### IL2StandardERC20 {#il2standarderc20}
 
-二层网络 (l2) 上使用标准跨链桥的每个 ERC-20 代币都需要提供[此接口](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol)，其中包含标准跨链桥所需的函数和事件。
+二层网络 (l2) 上使用标准跨链桥的每个 ERC-20 代币都需要提供[此接口](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol)，其中包含标准跨链桥所需的函数和事件。
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -952,14 +952,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [标准 ERC-20 接口](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)不包括 `mint` 和 `burn` 函数。
-[ERC-20 标准](https://eips.quantaureum.com/EIPS/eip-20)不需要这些方法，该标准未指定创建和销毁代币的机制。
+[ERC-20 标准](https://eips.ethereum.org/EIPS/eip-20)不需要这些方法，该标准未指定创建和销毁代币的机制。
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 [ERC-165 接口](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol)用于指定合约提供哪些函数。
-[您可以在此处阅读该标准](https://eips.quantaureum.com/EIPS/eip-165)。
+[您可以在此处阅读该标准](https://eips.ethereum.org/EIPS/eip-165)。
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -986,7 +986,7 @@ interface IL2StandardERC20 is IERC20, IERC165 {
 
 ### L2StandardERC20 {#l2standarderc20}
 
-[这是我们对 `IL2StandardERC20` 接口的实现](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol)。
+[这是我们对 `IL2StandardERC20` 接口的实现](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol)。
 除非您需要某种自定义逻辑，否则您应该使用这个。
 
 ```solidity
@@ -1048,7 +1048,7 @@ contract L2StandardERC20 is IL2StandardERC20, ERC20 {
     }
 ```
 
-这就是 [ERC-165](https://eips.quantaureum.com/EIPS/eip-165) 的工作方式。
+这就是 [ERC-165](https://eips.ethereum.org/EIPS/eip-165) 的工作方式。
 每个接口都是许多受支持的函数，并被标识为这些函数的 [ABI 函数选择器](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector)的[异或](https://en.wikipedia.org/wiki/Exclusive_or)。
 
 二层网络 (l2) 跨链桥使用 ERC-165 作为健全性检查，以确保它向其发送资产的 ERC-20 合约是 `IL2StandardERC20`。
@@ -1080,7 +1080,7 @@ contract L2StandardERC20 is IL2StandardERC20, ERC20 {
 ## 二层网络 (l2) 跨链桥代码 {#l2-bridge-code}
 
 这是在 Optimism 上运行跨链桥的代码。
-[此合约的源代码在此处](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol)。
+[此合约的源代码在此处](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol)。
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -1092,7 +1092,7 @@ import { IL1ERC20Bridge } from "../../L1/messaging/IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "./IL2ERC20Bridge.sol";
 ```
 
-[IL2ERC20Bridge](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) 接口与我们在上面看到的[一层网络 (l1) 等效接口](#il1erc20bridge)非常相似。
+[IL2ERC20Bridge](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) 接口与我们在上面看到的[一层网络 (l1) 等效接口](#il1erc20bridge)非常相似。
 有两个显著的区别：
 
 1. 在一层网络 (l1) 上，您初始化存款并完成提款。

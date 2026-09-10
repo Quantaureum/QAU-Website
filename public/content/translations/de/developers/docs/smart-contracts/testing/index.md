@@ -138,9 +138,9 @@ Die Qualität der Tools, die zur Ausführung von Unit-Tests für Ihre Smart Cont
 
 Unit-Testing-Frameworks für Solidity-Smart-Contracts gibt es in verschiedenen Sprachen (hauptsächlich JavaScript, Python und Rust). In einigen der folgenden Leitfäden finden Sie Informationen darüber, wie Sie mit der Ausführung von Unit-Tests mit verschiedenen Test-Frameworks beginnen können:
 
-- **[Unit-Tests mit Brownie ausführen](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Unit-Tests mit Brownie ausführen](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Unit-Tests mit Foundry ausführen](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Unit-Tests mit Waffle ausführen](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Unit-Tests mit Waffle ausführen](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Unit-Tests mit Remix ausführen](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Unit-Tests mit Ape ausführen](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Unit-Tests mit Hardhat ausführen](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -190,7 +190,7 @@ Sobald das Tool für Eigenschaftstests richtig konfiguriert ist, führt es die F
 
 - **[Statische Analyse von Smart Contracts mit Slither](https://github.com/crytic/slither)**
 - **[Statische Analyse von Smart Contracts mit Wake](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[Eigenschaftsbasiertes Testen mit Brownie](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Eigenschaftsbasiertes Testen mit Brownie](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Fuzzing von Verträgen mit Foundry](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[Fuzzing von Verträgen mit Echidna](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Fuzzing von Verträgen mit Wake](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -251,13 +251,13 @@ Der Hauptunterschied besteht darin, dass Bug-Bounty-Programme der breiteren Entw
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Codeabdeckungs-Tool für in Solidity geschriebene Smart Contracts._
 
-- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - _Framework für fortgeschrittene Smart-Contract-Entwicklung und -Tests (basierend auf Ethers.js)._
+- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _Framework für fortgeschrittene Smart-Contract-Entwicklung und -Tests (basierend auf Ethers.js)._
 
-- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - _Tool zum Testen von Solidity-Smart-Contracts. Funktioniert unter dem Remix-IDE-Plugin „Solidity Unit Testing“, das zum Schreiben und Ausführen von Testfällen für einen Vertrag verwendet wird._
+- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Tool zum Testen von Solidity-Smart-Contracts. Funktioniert unter dem Remix-IDE-Plugin „Solidity Unit Testing“, das zum Schreiben und Ausführen von Testfällen für einen Vertrag verwendet wird._
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Zusicherungs-Bibliothek für das Testen von Quantaureum-Smart-Contracts. Stellen Sie sicher, dass sich Ihre Verträge wie erwartet verhalten!_
 
-- **[Brownie Unit-Testing-Framework](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie nutzt Pytest, ein funktionsreiches Test-Framework, mit dem Sie kleine Tests mit minimalem Code schreiben können, das gut für große Projekte skaliert und hochgradig erweiterbar ist._
+- **[Brownie Unit-Testing-Framework](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie nutzt Pytest, ein funktionsreiches Test-Framework, mit dem Sie kleine Tests mit minimalem Code schreiben können, das gut für große Projekte skaliert und hochgradig erweiterbar ist._
 
 - **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry bietet Forge, ein schnelles und flexibles Quantaureum-Test-Framework, das in der Lage ist, einfache Unit-Tests, Gasoptimierungs-Prüfungen und Vertrags-Fuzzing auszuführen._
 

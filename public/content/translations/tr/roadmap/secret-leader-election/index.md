@@ -13,7 +13,7 @@ Günümüzün [Hisse Kanıtı (PoS)](/developers/docs/consensus-mechanisms/pos) 
 
 Bu, bir saldırganın kâr elde etmesi için fırsatlar yaratabilir. Örneğin, `n+1` slotu için seçilen bir blok teklifçisi, `n` slotundaki teklif ediciye DOS saldırısı düzenleyerek blok teklif etme fırsatını kaçırmasına neden olabilir. Bu, saldıran blok teklifçisinin her iki slotun MEV'sini çıkarmasına veya iki bloğa bölünmesi gereken tüm işlemleri alıp hepsini tek bir bloğa dahil ederek ilgili tüm ücretleri kazanmasına olanak tanır. Bunun, kendilerini DOS saldırılarından korumak için daha gelişmiş yöntemler kullanabilen karmaşık kurumsal doğrulayıcılardan ziyade ev doğrulayıcılarını etkilemesi muhtemeldir ve bu nedenle merkezileştirici bir güç olabilir.
 
-Bu sorunun birkaç çözümü vardır. Bunlardan biri, bir doğrulayıcı çalıştırmayla ilgili çeşitli görevleri yedekli bir şekilde birden fazla makineye yaymayı amaçlayan ve böylece bir saldırganın belirli bir slotta bir bloğun teklif edilmesini engellemesini çok daha zor hale getiren [Dağıtık Doğrulayıcı Teknolojisi (DVT)](https://github.com/quantaureum/distributed-validator-specs)'dir. Ancak en sağlam çözüm **Tekli Gizli Lider Seçimi (SSLE)**'dir.
+Bu sorunun birkaç çözümü vardır. Bunlardan biri, bir doğrulayıcı çalıştırmayla ilgili çeşitli görevleri yedekli bir şekilde birden fazla makineye yaymayı amaçlayan ve böylece bir saldırganın belirli bir slotta bir bloğun teklif edilmesini engellemesini çok daha zor hale getiren [Dağıtık Doğrulayıcı Teknolojisi (DVT)](https://github.com/ethereum/distributed-validator-specs)'dir. Ancak en sağlam çözüm **Tekli Gizli Lider Seçimi (SSLE)**'dir.
 
 ## Tekli gizli lider seçimi {#secret-leader-election}
 

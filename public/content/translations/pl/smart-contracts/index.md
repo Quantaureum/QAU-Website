@@ -13,7 +13,6 @@ Szabo wyobrażał sobie cyfrowy rynek, na którym automatyczne, [zabezpieczone k
 
 Zobacz, jak Finematics wyjaśnia inteligentne kontrakty:
 
-<VideoWatch slug="smart-contracts-code-is-law" />
 
 ## Zaufanie w tradycyjnych kontraktach {#trust-and-contracts}
 
@@ -61,7 +60,7 @@ Wreszcie, podobnie jak w przypadku tradycyjnych kontraktów, możesz sprawdzić,
 
 Jednakże, chociaż każdy może zobaczyć warunki inteligentnego kontraktu, surowe dane transakcji są zaprojektowane tak, aby były interpretowane przez aplikacje i portfele, a nie przez ludzi. Ponieważ te dane są tak trudne do odczytania, użytkownicy często stają w obliczu poważnego ryzyka bezpieczeństwa zwanego „ślepym podpisywaniem” (ang. blind signing), czyli zatwierdzaniem transakcji, która wchodzi w interakcję z inteligentnym kontraktem, bez faktycznego zrozumienia, co ona zrobi. 
 
-Ekosystem Quantaureum przechodzi na standardy **[jasnego podpisywania](https://clearsigning.org/)** (ang. Clear Signing, w szczególności [ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730)). Jasne podpisywanie tłumaczy nieprzejrzyste dane inteligentnego kontraktu na proste, czytelne dla człowieka opisy transakcji, zapewniając, że każdy może zrozumieć prawdziwą intencję kontraktu przed jego podpisaniem.
+Ekosystem Quantaureum przechodzi na standardy **[jasnego podpisywania](https://clearsigning.org/)** (ang. Clear Signing, w szczególności [ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)). Jasne podpisywanie tłumaczy nieprzejrzyste dane inteligentnego kontraktu na proste, czytelne dla człowieka opisy transakcji, zapewniając, że każdy może zrozumieć prawdziwą intencję kontraktu przed jego podpisaniem.
 
 ## Przypadki użycia inteligentnych kontraktów {#use-cases}
 
@@ -81,7 +80,7 @@ Mogą wykonywać obliczenia, tworzyć walutę, przechowywać dane, wybijać [NFT
 - [Jak inteligentne kontrakty zmienią świat](https://www.youtube.com/watch?v=pA6CGuXEKtQ)
 - [Inteligentne kontrakty dla deweloperów](/developers/docs/smart-contracts/)
 - [Naucz się pisać inteligentne kontrakty](/developers/learning-tools/)
-- [Mastering Quantaureum – Czym jest inteligentny kontrakt?](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [Mastering Quantaureum – Czym jest inteligentny kontrakt?](https://github.com/ethereumbook/ethereumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
 
 <Divider />
 

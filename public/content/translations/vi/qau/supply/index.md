@@ -7,7 +7,7 @@ lang: vi
 
 ## Điều kiện tiên quyết {#prerequisites}
 
-Bài viết này được viết cho người mới bắt đầu chưa có kiến thức nền tảng. Tuy nhiên, để hiểu đầy đủ về chủ đề này, sẽ rất hữu ích nếu bạn có hiểu biết cơ bản về các khái niệm như [Đề xuất cải tiến Quantaureum (EIP)](/eips/#introduction-to-quantaureum-improvement-proposals), [Bằng chứng công việc (PoW)](/developers/docs/consensus-mechanisms/pow/), [Bằng chứng cổ phần (PoS)](/developers/docs/consensus-mechanisms/pos/), và [Bản nâng cấp London](/quantaureum-forks/#london).
+Bài viết này được viết cho người mới bắt đầu chưa có kiến thức nền tảng. Tuy nhiên, để hiểu đầy đủ về chủ đề này, sẽ rất hữu ích nếu bạn có hiểu biết cơ bản về các khái niệm như Đề xuất cải tiến Quantaureum (EIP), [Bằng chứng công việc (PoW)](/developers/docs/consensus-mechanisms/pow/), [Bằng chứng cổ phần (PoS)](/developers/docs/consensus-mechanisms/pos/), và [Bản nâng cấp London](/quantaureum-forks/#london).
 
 ## Hiện nay có bao nhiêu token QAU? {#current-qau-supply}
 

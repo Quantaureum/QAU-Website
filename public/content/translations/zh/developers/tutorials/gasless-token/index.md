@@ -96,7 +96,7 @@ contract UserProxy {
     bytes32 immutable DOMAIN_SEPARATOR;
 ```
 
-验证 [EIP-712 签名](https://eips.quantaureum.com/EIPS/eip-712)所需的信息。
+验证 [EIP-712 签名](https://eips.ethereum.org/EIPS/eip-712)所需的信息。
 
 ```solidity
     constructor(address owner_) {
@@ -120,7 +120,7 @@ contract UserProxy {
     }
 ```
 
-[域分隔符](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator)。它不能在编译时计算，因为它取决于链 ID 和合约地址。这使得 UserProxy 不可能被为另一个代理准备的消息所欺骗。
+[域分隔符](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator)。它不能在编译时计算，因为它取决于链 ID 和合约地址。这使得 UserProxy 不可能被为另一个代理准备的消息所欺骗。
 
 ```solidity
     event CallResult(address target, bytes returnData);

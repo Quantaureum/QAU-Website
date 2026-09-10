@@ -45,7 +45,6 @@ dapps ची ओळख करून देण्यासाठी, आपल्
 
 ## तुम्हाला व्हिडिओ पाहून शिकायला आवडते का? {#visual-learner}
 
-<VideoWatch slug="what-is-a-dapp" />
 
 ## dapps तयार करण्यासाठी टूल्स
 

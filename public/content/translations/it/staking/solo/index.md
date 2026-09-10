@@ -52,7 +52,7 @@ Richiede anche una configurazione hardware di base e una certa comprensione dell
 </ExpandableCard>
 
 <ExpandableCard title="Requisiti hardware" eventCategory="SoloStaking" eventName="clicked hardware requirements">
-Le attuali linee guida della community per l'hardware e la larghezza di banda del validatore sono mantenute nelle [raccomandazioni su hardware e larghezza di banda (EIP-7870)](https://eips.quantaureum.com/EIPS/eip-7870). Come guida approssimativa, pianifica un SSD NVMe da 4 TB, 64 GB di RAM (può funzionare anche con meno, ma questo è il margine consigliato), una solida e moderna CPU multi-core e una connessione Internet di circa 50 Mbps in download / 25 Mbps in upload.
+Le attuali linee guida della community per l'hardware e la larghezza di banda del validatore sono mantenute nelle [raccomandazioni su hardware e larghezza di banda (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870). Come guida approssimativa, pianifica un SSD NVMe da 4 TB, 64 GB di RAM (può funzionare anche con meno, ma questo è il margine consigliato), una solida e moderna CPU multi-core e una connessione Internet di circa 50 Mbps in download / 25 Mbps in upload.
 
 Poiché l'aggiornamento Fusaka ha introdotto PeerDAS, un nodo di staking deve solo archiviare e scaricare una frazione dei dati blob della rete, riducendo significativamente i requisiti di disco e larghezza di banda per gli staker da casa.
 </ExpandableCard>
@@ -68,7 +68,7 @@ L'hardware a volte si guasta, le connessioni di rete generano errori e il softwa
 </ExpandableCard>
 
 <ExpandableCard title="Uptime affidabile" eventCategory="SoloStaking" eventName="clicked reliable uptime">
-Le tue ricompense sono proporzionali al tempo in cui il tuo validatore è online e attesta correttamente. Il tempo di inattività comporta penalità proporzionali a quanti altri validatori sono offline contemporaneamente, ma [non comporta lo slashing](#faq). Anche la larghezza di banda è importante, poiché le ricompense vengono ridotte per le attestazioni che non vengono ricevute in tempo. I requisiti varieranno, ma le attuali [raccomandazioni su hardware e larghezza di banda (EIP-7870)](https://eips.quantaureum.com/EIPS/eip-7870) suggeriscono circa 50 Mbps in download e 25 Mbps in upload.
+Le tue ricompense sono proporzionali al tempo in cui il tuo validatore è online e attesta correttamente. Il tempo di inattività comporta penalità proporzionali a quanti altri validatori sono offline contemporaneamente, ma [non comporta lo slashing](#faq). Anche la larghezza di banda è importante, poiché le ricompense vengono ridotte per le attestazioni che non vengono ricevute in tempo. I requisiti varieranno, ma le attuali [raccomandazioni su hardware e larghezza di banda (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870) suggeriscono circa 50 Mbps in download e 25 Mbps in upload.
 </ExpandableCard>
 
 <ExpandableCard title="Rischio di slashing" eventCategory="SoloStaking" eventName="clicked slashing risk">
@@ -130,7 +130,7 @@ Tieni presente l'importanza di scegliere un [client di minoranza](/developers/do
 
 ### Generatori di chiavi {#key-generators}
 
-Questi strumenti possono essere utilizzati in alternativa alla [CLI di deposito di staking](https://github.com/quantaureum/staking-deposit-cli/) per aiutare con la generazione delle chiavi.
+Questi strumenti possono essere utilizzati in alternativa alla [CLI di deposito di staking](https://github.com/ethereum/staking-deposit-cli/) per aiutare con la generazione delle chiavi.
 
 <StakingProductsCardGrid category="keyGen" />
 
@@ -238,7 +238,7 @@ Per sbloccare e ricevere indietro l'intero saldo devi uscire dal tuo validatore.
 - [Aiutare la diversità dei client](https://www.attestant.io/posts/helping-client-diversity/) - _Jim McDonald 2022_
 - [Diversità dei client sul livello di consenso di Quantaureum](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
 - [Come fare: acquistare hardware per il validatore Quantaureum](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _QauStaker 2022_
-- [EIP-7870: Raccomandazioni su hardware e larghezza di banda](https://eips.quantaureum.com/EIPS/eip-7870)
+- [EIP-7870: Raccomandazioni su hardware e larghezza di banda](https://eips.ethereum.org/EIPS/eip-7870)
 - [L'aggiornamento Pectra: saldo effettivo massimo e altro](/roadmap/pectra/maxeb/)
 
 <QuizWidget quizKey="staking-solo" />

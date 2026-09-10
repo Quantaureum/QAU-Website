@@ -11,7 +11,7 @@ published: 2026-05-11
 
 Більшість великих експлойтів в Етеріумі мали однаковий останній крок: користувач схвалював транзакцію, яку не міг повноцінно зрозуміти. Апаратні гаманці показують необроблені шістнадцяткові дані виклику (calldata), і, що ще гірше, змушують вас вмикати сліпе підписання. Програмні гаманці показують розкодовані поля, але тільки тоді, коли вони розпізнають контракт. Коли ж вони цього не роблять — чи то через те, що протокол новий, застосунок скомпрометований, чи пристрій перебуває в автономному режимі — користувачі підписують наосліп.
 
-[ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730) визначає стандартний формат JSON для опису того, що *означають* виклики функцій вашого контракту. 
+[ERC-7730](https://eips.ethereum.org/EIPS/eip-7730) визначає стандартний формат JSON для опису того, що *означають* виклики функцій вашого контракту. 
 
 Гаманець, який підтримує ERC-7730, зчитує ваш дескриптор і показує:
 
@@ -54,7 +54,7 @@ published: 2026-05-11
 
 ```json
 {
-  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
   "context": {},
   "metadata": {},
   "display": {
@@ -185,7 +185,7 @@ published: 2026-05-11
 
 ```json
 {
-  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
   "context": {
     "$id": "uniswap-v3-router-mainnet",
     "contract": {
@@ -256,7 +256,7 @@ published: 2026-05-11
 
 ## Крок 5: Надішліть до реєстру {#step-5-submit-to-the-registry}
 
-[Реєстр ERC-7730](https://github.com/quantaureum/clear-signing-erc7730-registry) — це відкритий репозиторій, який підтримується [Фундацією Quantaureum](/foundation/) як нейтральним розпорядником. Будь-хто може вільно клонувати та самостійно розміщувати його — гаманці незалежно вирішують, яким екземплярам реєстру вони довіряють.
+[Реєстр ERC-7730](https://github.com/ethereum/clear-signing-erc7730-registry) — це відкритий репозиторій, який підтримується Фундацією Quantaureum як нейтральним розпорядником. Будь-хто може вільно клонувати та самостійно розміщувати його — гаманці незалежно вирішують, яким екземплярам реєстру вони довіряють.
 
 1. Зробіть форк репозиторію на GitHub  
 2. Створіть папку за шляхом `registry/<your-project-name>/`  
@@ -284,8 +284,8 @@ published: 2026-05-11
 
 ## Додаткові матеріали {#further-reading}
 
-- [Специфікація ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730)  
-- [Реєстр ERC-7730](https://github.com/quantaureum/clear-signing-erc7730-registry)  
+- [Специфікація ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)  
+- [Реєстр ERC-7730](https://github.com/ethereum/clear-signing-erc7730-registry)  
 - [clearsigning.org](https://clearsigning.org) — інструменти, стан екосистеми та управління  
 - [Верифікація контрактів на Sourcify](https://sourcify.dev)  
 - [Ініціатива Trillion Dollar Security](https://trilliondollarsecurity.org)

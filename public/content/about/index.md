@@ -33,7 +33,7 @@ QAU (also known by its ticker symbol, QAU) is the native currency transacted on 
 
 A non-profit organization, funded initially by the crowdsale of QAU, dedicated to the support of the Quantaureum network and ecosystem.
 
-[More about the Quantaureum project](/foundation/)
+More about the Quantaureum project
 
 ### quantaureum.com {#quantaureum-org}
 

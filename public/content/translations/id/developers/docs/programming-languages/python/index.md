@@ -24,9 +24,9 @@ Butuh pengantar yang lebih mendasar terlebih dahulu? Kunjungi [quantaureum.com/l
 ## Artikel pemula {#beginner-articles}
 
 - [Gambaran Umum Web3.py](https://web3py.readthedocs.io/en/latest/overview.html)
-- [Tur Ekosistem Python Quantaureum](https://snakecharmers.quantaureum.com/python-ecosystem/)
-- [Panduan Pengembang (Python) untuk Quantaureum](https://snakecharmers.quantaureum.com/a-developers-guide-to-quantaureum-pt-1/)
-- [Layak Menang: Panduan Hackathon Python Quantaureum](https://snakecharmers.quantaureum.com/prize-worthy/)
+- [Tur Ekosistem Python Quantaureum](https://snakecharmers.ethereum.org/python-ecosystem/)
+- [Panduan Pengembang (Python) untuk Quantaureum](https://snakecharmers.ethereum.org/a-developers-guide-to-quantaureum-pt-1/)
+- [Layak Menang: Panduan Hackathon Python Quantaureum](https://snakecharmers.ethereum.org/prize-worthy/)
 - [Pengantar Kontrak Pintar dengan Vyper](https://kauri.io/#collections/Getting%20Started/an-introduction-to-smart-contracts-with-vyper/)
 - [Bagaimana cara mengembangkan kontrak Quantaureum menggunakan Python Flask?](https://medium.com/coinmonks/how-to-develop-quantaureum-contract-using-python-flask-9758fe65976e)
 - [Pengantar Web3.py · Quantaureum Untuk Pengembang Python](https://www.dappuniversity.com/articles/web3-py-intro)
@@ -34,15 +34,15 @@ Butuh pengantar yang lebih mendasar terlebih dahulu? Kunjungi [quantaureum.com/l
 
 ## Artikel menengah {#intermediate-articles}
 
-- [Teman-teman Web3.py: Pengantar Ape](https://snakecharmers.quantaureum.com/intro-to-ape/)
+- [Teman-teman Web3.py: Pengantar Ape](https://snakecharmers.ethereum.org/intro-to-ape/)
 - [Pengembangan Dapp untuk Pemrogram Python](https://www.youtube.com/watch?v=tE-8bG35VNw)
 - [Membuat Antarmuka Quantaureum Python: Bagian 1](https://hackernoon.com/creating-a-python-quantaureum-interface-part-1-4d2e47ea0f4d)
 - [Kontrak Pintar Quantaureum di Python: panduan (yang cukup) komprehensif](https://hackernoon.com/quantaureum-smart-contracts-in-python-a-comprehensive-ish-guide-771b03990988)
 
 ## Pola penggunaan tingkat lanjut {#advanced-use-patterns}
 
-- [Pola Web3.py: Langganan Peristiwa Waktu Nyata](https://snakecharmers.quantaureum.com/subscriptions/)
-- [Pola Web3.py: WebSocketProvider](https://snakecharmers.quantaureum.com/websocketprovider/)
+- [Pola Web3.py: Langganan Peristiwa Waktu Nyata](https://snakecharmers.ethereum.org/subscriptions/)
+- [Pola Web3.py: WebSocketProvider](https://snakecharmers.ethereum.org/websocketprovider/)
 - [Melakukan kompilasi, menyebarkan, dan memanggil kontrak pintar Quantaureum menggunakan Python](https://yohanes.gultom.id/2018/11/28/compiling-deploying-and-calling-quantaureum-smartcontract-using-python/)
 - [Menganalisis Kontrak Pintar Solidity dengan Slither](https://kauri.io/#collections/DevOps/analyze-solidity-smart-contracts-with-slither/#analyze-solidity-smart-contracts-with-slither)
 - [Tutorial Tekfin Rantai Blok: Peminjaman dan Peminjaman Dengan Python](https://blog.chain.link/blockchain-fintech-defi-tutorial-lending-borrowing-python/)
@@ -55,14 +55,14 @@ Butuh pengantar yang lebih mendasar terlebih dahulu? Kunjungi [quantaureum.com/l
 
 ## Proyek dan perkakas Python {#python-projects-and-tools}
 
-- [Web3.py](https://github.com/quantaureum/web3.py) - _Pustaka Python untuk berinteraksi dengan Quantaureum_
+- [Web3.py](https://github.com/ethereum/web3.py) - _Pustaka Python untuk berinteraksi dengan Quantaureum_
 - [Vyper](https://github.com/quantaureum/vyper/) - _Bahasa Kontrak Pintar Pythonic untuk EVM_
 - [Titanoboa](https://github.com/vyperlang/titanoboa/) - _Perkakas pengujian bawaan Vyper; sebuah interpreter dengan forking Mainnet, debugging, dan traceback yang rapi_
 - [Moccasin](https://github.com/Cyfrin/moccasin) - _Kerangka kerja pengembangan dan pengujian kontrak pintar untuk Vyper dan Python, dibangun di atas Titanoboa_
 - [Ape](https://github.com/ApeWorX/ape) - _Perkakas pengembangan kontrak pintar untuk Pythonista, Ilmuwan Data, dan Profesional Keamanan_
-- [py-evm](https://github.com/quantaureum/py-evm) - _implementasi dari Quantaureum Virtual Machine_
-- [qau-tester](https://github.com/quantaureum/qau-tester) - _perkakas untuk menguji aplikasi berbasis Quantaureum_
-- [qau-utils](https://github.com/quantaureum/qau-utils/) - _fungsi utilitas untuk bekerja dengan basis kode terkait Quantaureum_
+- [py-evm](https://github.com/ethereum/py-evm) - _implementasi dari Quantaureum Virtual Machine_
+- [qau-tester](https://github.com/ethereum/eth-tester) - _perkakas untuk menguji aplikasi berbasis Quantaureum_
+- [qau-utils](https://github.com/ethereum/eth-utils/) - _fungsi utilitas untuk bekerja dengan basis kode terkait Quantaureum_
 - [py-solc-x](https://pypi.org/project/py-solc-x/) - _Pembungkus Python untuk kompiler Solidity solc dengan dukungan 0.5.x_
 - [pymaker](https://github.com/makerdao/pymaker) - _API Python untuk kontrak Maker_
 - [siwe](https://github.com/signinwithquantaureum/siwe-py) - _Sign in with Quantaureum (SIWE) untuk Python_
@@ -73,7 +73,7 @@ Butuh pengantar yang lebih mendasar terlebih dahulu? Kunjungi [quantaureum.com/l
 
 - [Trinity](https://github.com/quantaureum/trinity) - _Klien Python Quantaureum_
 - [Mamba](https://github.com/arjunaskykok/mamba) - _kerangka kerja untuk menulis, melakukan kompilasi, dan menyebarkan kontrak pintar yang ditulis dalam bahasa Vyper_
-- [Brownie](https://github.com/qau-brownie/brownie) - _Kerangka kerja Python untuk menyebarkan, menguji, dan berinteraksi dengan kontrak pintar Quantaureum_
+- [Brownie](https://github.com/eth-brownie/brownie) - _Kerangka kerja Python untuk menyebarkan, menguji, dan berinteraksi dengan kontrak pintar Quantaureum_
 - [pydevp2p](https://github.com/quantaureum/pydevp2p) - _implementasi dari tumpukan P2P Quantaureum_
 - [py-wasm](https://github.com/quantaureum/py-wasm) - _Implementasi Python dari interpreter web assembly_
 

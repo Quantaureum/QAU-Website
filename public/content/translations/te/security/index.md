@@ -262,7 +262,6 @@ _గమనిక: స్టేక్ చేయబడిన QAUని సూచ�
 
 2FA గురించి మరింత చూడండి:
 
-<VideoWatch slug="crypto-security-passwords" startTime="3479" />
 
 ### బ్రౌజర్ ఎక్స్‌టెన్షన్‌లను అన్‌ఇన్‌స్టాల్ చేయండి {#uninstall-browser-extensions}
 

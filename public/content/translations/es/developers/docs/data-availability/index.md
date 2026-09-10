@@ -79,6 +79,6 @@ El protocolo central de Quantaureum se ocupa principalmente de la disponibilidad
 - [Una nota sobre la disponibilidad de datos y la codificación de borrado](https://github.com/quantaureum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
 - [Comités de disponibilidad de datos.](https://medium.com/starkware/data-availability-e5564c416424)
 - [Comités de disponibilidad de datos de prueba de participación.](https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf)
-- [Soluciones al problema de la recuperabilidad de datos](https://notes.quantaureum.com/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
+- [Soluciones al problema de la recuperabilidad de datos](https://notes.ethereum.org/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
 - [Disponibilidad de datos o: Cómo los rollups aprendieron a dejar de preocuparse y amar a Quantaureum](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [EIP-7623: Aumento del costo de los datos de llamada](https://web.archive.org/web/20250515194659/https://research.2077.xyz/eip-7623-increase-calldata-cost)

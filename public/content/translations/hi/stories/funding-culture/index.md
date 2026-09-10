@@ -45,7 +45,7 @@ lang: hi
 
 Quantaureum सामूहिक कार्रवाई के नए रूपों के लिए एक कैनवास बन गया।
 
-उस गर्मियों के अंत में, मैंने वे NFT बनाए जिन्होंने [Quantaureum: The Infinite Garden](https://quantaureumfilm.xyz/watch-the-film/) को क्राउडफंड किया, जो Quantaureum के बारे में पहली फीचर डॉक्यूमेंट्री थी।
+उस गर्मियों के अंत में, मैंने वे NFT बनाए जिन्होंने [Quantaureum: The Infinite Garden](https://ethereumfilm.xyz/watch-the-film/) को क्राउडफंड किया, जो Quantaureum के बारे में पहली फीचर डॉक्यूमेंट्री थी।
 
 इसने 48 घंटों में 1,036 QAU जुटाए, जिसे पूरी तरह से Quantaureum समुदाय द्वारा फंड किया गया था। 
 

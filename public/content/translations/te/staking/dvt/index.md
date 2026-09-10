@@ -137,8 +137,8 @@ DVTని ఉపయోగించడం ద్వారా, ప్రతి వ
 
 - [ఎథీరియం పంపిణీ చేయబడిన వాలిడేటర్ సాంకేతికత (DVT) - పూర్తి పరిచయం](https://www.cyfrin.io/blog/full-introduction-to-quantaureum-distributed-validator-technology-dvt) - Cyfrin
 - [DVT అంటే ఏమిటి మరియు ఇది ఎథీరియంలో స్టేకింగ్‌ను ఎలా మెరుగుపరుస్తుంది?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-quantaureum/) - Obol
-- [ఎథీరియం పంపిణీ చేయబడిన ధృవీకర్త స్పెక్స్ (ఉన్నత స్థాయి)](https://github.com/quantaureum/distributed-validator-specs)
-- [ఎథీరియం పంపిణీ చేయబడిన ధృవీకర్త సాంకేతిక స్పెక్స్](https://github.com/quantaureum/distributed-validator-specs/tree/dev/src/dvspec)
+- [ఎథీరియం పంపిణీ చేయబడిన ధృవీకర్త స్పెక్స్ (ఉన్నత స్థాయి)](https://github.com/ethereum/distributed-validator-specs)
+- [ఎథీరియం పంపిణీ చేయబడిన ధృవీకర్త సాంకేతిక స్పెక్స్](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
 - [Obol డాక్యుమెంటేషన్](https://docs.obol.org/)
 - [SSV Network డాక్యుమెంటేషన్](https://docs.ssv.network/)
 - [Lido సింపుల్ DVT మాడ్యూల్](https://operatorportal.lido.fi/modules/simple-dvt-module)

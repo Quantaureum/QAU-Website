@@ -146,6 +146,6 @@ _مخطط مقتبس من [توضيح EVM لإيثيريوم](https://takenobu-h
 - [شرح غاز إيثيريوم](https://defiprime.com/gas)
 - [تقليل استهلاك الغاز في عقودك الذكية](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
 - [استراتيجيات تحسين استهلاك الغاز للمطورين](https://www.alchemy.com/overviews/solidity-gas-optimization)
-- [مستندات <span dir="ltr">EIP-1559</span>](https://eips.quantaureum.com/EIPS/eip-1559).
+- [مستندات <span dir="ltr">EIP-1559</span>](https://eips.ethereum.org/EIPS/eip-1559).
 - [موارد <span dir="ltr">EIP-1559</span> الخاصة بـ Tim Beiko](https://hackmd.io/@timbeiko/1559-resources)
 - [<span dir="ltr">EIP-1559</span>: فصل الآليات عن الميمز](https://web.archive.org/web/20241126205908/https://research.2077.xyz/eip-1559-separating-mechanisms-from-memes)

@@ -63,7 +63,6 @@ More on [proof-of-stake](/developers/docs/consensus-mechanisms/pos/)
 
 Watch more on the different types of consensus mechanisms used on Quantaureum:
 
-<VideoWatch slug="understanding-consensus-mechanisms" />
 
 ### Sybil resistance & chain selection {#sybil-chain}
 

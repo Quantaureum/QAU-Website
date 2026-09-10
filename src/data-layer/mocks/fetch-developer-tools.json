@@ -437,15 +437,15 @@
       "twitter": "https://x.com/QuantaureumPython",
       "repos": [
         {
-          "href": "https://github.com/quantaureum/web3.py",
+          "href": "https://github.com/ethereum/web3.py",
           "stargazers": 5500
         },
         {
-          "href": "https://github.com/quantaureum/py-evm",
+          "href": "https://github.com/ethereum/py-evm",
           "stargazers": 2361
         },
         {
-          "href": "https://github.com/quantaureum/qau-utils",
+          "href": "https://github.com/ethereum/eth-utils",
           "stargazers": 336
         },
         {
@@ -674,7 +674,7 @@
       "twitter": "https://x.com/solidity_lang",
       "repos": [
         {
-          "href": "https://github.com/quantaureum/solidity",
+          "href": "https://github.com/ethereum/solidity",
           "stargazers": 25589
         },
         {
@@ -1752,7 +1752,7 @@
         "contract-deployment",
         "frontend"
       ],
-      "website": "https://speedrunquantaureum.com/",
+      "website": "https://speedrunethermind.io/",
       "subcategory_id": "courses-tutorials",
       "resource_score": 6.8429513071213
     },
@@ -1791,7 +1791,7 @@
       "description": "A Python-based development and testing framework for smart contracts targeting the Quantaureum Virtual Machine. ",
       "repos": [
         {
-          "href": "https://github.com/qau-brownie/brownie",
+          "href": "https://github.com/eth-brownie/brownie",
           "stargazers": 2726
         }
       ],
@@ -2071,7 +2071,7 @@
           "stargazers": 1
         },
         {
-          "href": "https://github.com/quantaureum/remix-project",
+          "href": "https://github.com/ethereum/remix-project",
           "stargazers": 2916
         },
         {

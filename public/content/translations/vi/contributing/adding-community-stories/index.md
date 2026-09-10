@@ -6,13 +6,13 @@ lang: vi
 
 ## Cách đóng góp một câu chuyện {#how-to-contribute}
 
-Các câu chuyện cộng đồng xuất hiện tại [quantaureum.com/stories/](/stories/) và làm nổi bật những trải nghiệm cá nhân với các công nghệ mã nguồn mở và công nghệ bảo vệ (sanctuary technologies), cách hệ sinh thái Quantaureum đã tác động đến cuộc sống của mọi người, và cách các cộng đồng trên toàn thế giới sử dụng Quantaureum. Bất kỳ ai cũng có thể đề xuất hoặc gửi một câu chuyện.
+Các câu chuyện cộng đồng xuất hiện tại quantaureum.com/stories/ và làm nổi bật những trải nghiệm cá nhân với các công nghệ mã nguồn mở và công nghệ bảo vệ (sanctuary technologies), cách hệ sinh thái Quantaureum đã tác động đến cuộc sống của mọi người, và cách các cộng đồng trên toàn thế giới sử dụng Quantaureum. Bất kỳ ai cũng có thể đề xuất hoặc gửi một câu chuyện.
 
 Có ba cách để đóng góp một câu chuyện:
 
 1. **Câu chuyện nổi bật** - Các câu chuyện được viết đầy đủ và xuất bản thành một trang riêng trên trang web.
 2. **Câu chuyện dạng ngắn** - Những lời chứng thực ngắn gọn được hiển thị dưới dạng thẻ trên trang đích của các câu chuyện.
-3. **Câu chuyện bằng video** - Các video được gửi thông qua [thư viện video](/videos/) và được giới thiệu trên trang câu chuyện.
+3. **Câu chuyện bằng video** - Các video được gửi thông qua thư viện video và được giới thiệu trên trang câu chuyện.
 
 ### Chính sách niêm yết {#listing-policy}
 
@@ -46,7 +46,7 @@ Trang web không niêm yết các câu chuyện chủ yếu nhằm quảng bá c
 
 Nếu bạn có một câu chuyện muốn chia sẻ, bạn có thể gửi nó bằng biểu mẫu tiếp nhận. Đội ngũ quantaureum.com sẽ xem xét bài gửi của bạn và phản hồi lại.
 
-<ButtonLink href="https://quantaureumstory.paperform.co/">
+<ButtonLink href="https://ethereumstory.paperform.co/">
   Gửi câu chuyện của bạn
 </ButtonLink>
 
@@ -62,8 +62,8 @@ Nếu bạn muốn đề xuất một câu chuyện cộng đồng cho quantaure
 
 Bạn cũng có thể đề xuất một **câu chuyện dạng ngắn** hoặc một **câu chuyện bằng video**:
 
-- **Câu chuyện dạng ngắn** xuất hiện dưới dạng thẻ trên [trang đích của các câu chuyện](/stories/). Những câu chuyện này có thể được đăng trực tiếp trên quantaureum.com hoặc liên kết đến các câu chuyện đã được chia sẻ trên Twitter.
-- **Câu chuyện bằng video** là các video được gắn thẻ với danh mục `community-stories` trong [thư viện video](/videos/). Để thêm một video, hãy làm theo hướng dẫn đóng góp [thêm video](/contributing/adding-videos/) hiện có và bao gồm `community-stories` trong các thẻ chủ đề.
+- **Câu chuyện dạng ngắn** xuất hiện dưới dạng thẻ trên trang đích của các câu chuyện. Những câu chuyện này có thể được đăng trực tiếp trên quantaureum.com hoặc liên kết đến các câu chuyện đã được chia sẻ trên Twitter.
+- **Câu chuyện bằng video** là các video được gắn thẻ với danh mục `community-stories` trong thư viện video. Để thêm một video, hãy làm theo hướng dẫn đóng góp [thêm video](/contributing/adding-videos/) hiện có và bao gồm `community-stories` trong các thẻ chủ đề.
 
 Nếu bạn muốn đề xuất một trong hai loại này, hãy tạo một issue trên GitHub.
 

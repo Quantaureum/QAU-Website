@@ -13,11 +13,11 @@ breadcrumb: "কন্ট্রাক্ট ইন্টারঅ্যাকশ
 lang: bn
 published: 2020-04-05
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/interact-with-other-contracts-from-solidity/
+sourceUrl: https://ethereumdev.io/interact-with-other-contracts-from-solidity/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-পূর্ববর্তী টিউটোরিয়ালগুলোতে আমরা [কীভাবে আপনার প্রথম স্মার্ট কন্ট্রাক্ট ডিপ্লয় করবেন](/developers/tutorials/deploying-your-first-smart-contract/) এবং এতে কিছু বৈশিষ্ট্য যোগ করবেন যেমন [মডিফায়ার দিয়ে অ্যাক্সেস নিয়ন্ত্রণ করা](https://quantaureumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) বা [Solidity-তে এরর হ্যান্ডলিং](https://quantaureumdev.io/handle-errors-in-solidity-with-require-and-revert/) সম্পর্কে অনেক কিছু শিখেছি। এই টিউটোরিয়ালে আমরা শিখব কীভাবে একটি বিদ্যমান কন্ট্রাক্ট থেকে একটি স্মার্ট কন্ট্রাক্ট ডিপ্লয় করা যায় এবং এর সাথে ইন্টারঅ্যাক্ট করা যায়।
+পূর্ববর্তী টিউটোরিয়ালগুলোতে আমরা [কীভাবে আপনার প্রথম স্মার্ট কন্ট্রাক্ট ডিপ্লয় করবেন](/developers/tutorials/deploying-your-first-smart-contract/) এবং এতে কিছু বৈশিষ্ট্য যোগ করবেন যেমন [মডিফায়ার দিয়ে অ্যাক্সেস নিয়ন্ত্রণ করা](https://ethereumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) বা [Solidity-তে এরর হ্যান্ডলিং](https://ethereumdev.io/handle-errors-in-solidity-with-require-and-revert/) সম্পর্কে অনেক কিছু শিখেছি। এই টিউটোরিয়ালে আমরা শিখব কীভাবে একটি বিদ্যমান কন্ট্রাক্ট থেকে একটি স্মার্ট কন্ট্রাক্ট ডিপ্লয় করা যায় এবং এর সাথে ইন্টারঅ্যাক্ট করা যায়।
 
 আমরা এমন একটি কন্ট্রাক্ট তৈরি করব যা যে কাউকে তার নিজস্ব `Counter` স্মার্ট কন্ট্রাক্ট রাখার সুযোগ দেবে এর জন্য একটি ফ্যাক্টরি তৈরি করে, এর নাম হবে `CounterFactory`। প্রথমে এখানে আমাদের প্রাথমিক `Counter` স্মার্ট কন্ট্রাক্টের কোড দেওয়া হলো:
 
@@ -104,7 +104,7 @@ function increment() public {
   }
 ```
 
-লক্ষ্য করুন যে যদি অনেকবার কল করা হয়, তবে আমাদের counter সম্ভবত একটি ওভারফ্লো-এর শিকার হতে পারে। এই সম্ভাব্য পরিস্থিতি থেকে রক্ষা পেতে আপনার যতটা সম্ভব [SafeMath লাইব্রেরি](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/) ব্যবহার করা উচিত।
+লক্ষ্য করুন যে যদি অনেকবার কল করা হয়, তবে আমাদের counter সম্ভবত একটি ওভারফ্লো-এর শিকার হতে পারে। এই সম্ভাব্য পরিস্থিতি থেকে রক্ষা পেতে আপনার যতটা সম্ভব [SafeMath লাইব্রেরি](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/) ব্যবহার করা উচিত।
 
 আমাদের কন্ট্রাক্ট ডিপ্লয় করার জন্য, আপনাকে `CounterFactory` এবং `Counter` উভয়ের কোড প্রদান করতে হবে। উদাহরণস্বরূপ Remix-এ ডিপ্লয় করার সময় আপনাকে CounterFactory নির্বাচন করতে হবে।
 

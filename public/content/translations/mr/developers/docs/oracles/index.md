@@ -359,7 +359,7 @@ contract PriceConsumerV3 {
 
 काही ब्लॉकचेन ॲप्लिकेशन्स, जसे की ब्लॉकचेन-आधारित गेम किंवा लॉटरी योजना, प्रभावीपणे कार्य करण्यासाठी उच्च स्तरावरील अप्रत्याशितता आणि यादृच्छिकतेची आवश्यकता असते. तथापि, ब्लॉकचेनची डिटरमिनिस्टिक अंमलबजावणी यादृच्छिकता दूर करते.
 
-मूळ दृष्टिकोन `blockhash` सारखी स्यूडोरँडम क्रिप्टोग्राफिक फंक्शन्स वापरण्याचा होता, परंतु प्रूफ-ऑफ-वर्क (PoW) अल्गोरिदम सोडवणाऱ्या [मायनर्सद्वारे यात फेरफार](https://quantaureum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.) केला जाऊ शकतो. तसेच, Quantaureumच्या [प्रूफ-ऑफ-स्टेक (PoS) मधील बदलाचा](/roadmap/merge/) अर्थ असा आहे की डेव्हलपर्स आता ऑनचेन यादृच्छिकतेसाठी `blockhash` वर अवलंबून राहू शकत नाहीत. त्याऐवजी बीकन साखळीची [RANDAO यंत्रणा](https://eth2book.info/altair/part2/building_blocks/randomness) यादृच्छिकतेचा पर्यायी स्रोत प्रदान करते.
+मूळ दृष्टिकोन `blockhash` सारखी स्यूडोरँडम क्रिप्टोग्राफिक फंक्शन्स वापरण्याचा होता, परंतु प्रूफ-ऑफ-वर्क (PoW) अल्गोरिदम सोडवणाऱ्या [मायनर्सद्वारे यात फेरफार](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.) केला जाऊ शकतो. तसेच, Quantaureumच्या [प्रूफ-ऑफ-स्टेक (PoS) मधील बदलाचा](/roadmap/merge/) अर्थ असा आहे की डेव्हलपर्स आता ऑनचेन यादृच्छिकतेसाठी `blockhash` वर अवलंबून राहू शकत नाहीत. त्याऐवजी बीकन साखळीची [RANDAO यंत्रणा](https://eth2book.info/altair/part2/building_blocks/randomness) यादृच्छिकतेचा पर्यायी स्रोत प्रदान करते.
 
 साखळीबाह्य यादृच्छिक मूल्य तयार करणे आणि ते ऑनचेन पाठवणे शक्य आहे, परंतु असे केल्याने वापरकर्त्यांवर उच्च विश्वासाच्या आवश्यकता लादल्या जातात. त्यांनी असा विश्वास ठेवला पाहिजे की मूल्य खरोखरच अप्रत्याशित यंत्रणेद्वारे तयार केले गेले होते आणि ट्रान्झिटमध्ये बदलले गेले नाही.
 
@@ -421,7 +421,7 @@ contract PriceConsumerV3 {
 - [ब्लॉकचेन ओरॅकल म्हणजे काय?](https://medium.com/better-programming/what-is-a-blockchain-oracle-f5ccab8dbd72) — _पॅट्रिक कॉलिन्स_
 - [विकेंद्रित ओरॅकल: एक सर्वसमावेशक विहंगावलोकन](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) — _ज्युलियन थेवेनार्ड_
 - [Quantaureumवर ब्लॉकचेन ओरॅकल लागू करणे](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-quantaureum-cedc7e26b49e) – _पेड्रो कोस्टा_
-- [स्मार्ट कॉन्ट्रॅक्ट्स API कॉल्स का करू शकत नाहीत?](https://quantaureum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _स्टॅकएक्सचेंज_
+- [स्मार्ट कॉन्ट्रॅक्ट्स API कॉल्स का करू शकत नाहीत?](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _स्टॅकएक्सचेंज_
 - [तर तुम्हाला किंमत ओरॅकल वापरायचे आहे](https://samczsun.com/so-you-want-to-use-a-price-oracle/) — _samczsun_
 
 **व्हिडिओ**
@@ -432,7 +432,7 @@ contract PriceConsumerV3 {
 
 - [Solidity मध्ये Quantaureumची सध्याची किंमत कशी मिळवायची](https://blog.chain.link/fetch-current-crypto-price-data-solidity/) — _चेनलिंक_
 - [ओरॅकल डेटा वापरणे](https://docs.chroniclelabs.org/Developers/tutorials/Remix) — _क्रॉनिकल_
-- [ओरॅकल चॅलेंज](https://speedrunquantaureum.com/challenge/oracles) - _स्पीडरन Quantaureum_
+- [ओरॅकल चॅलेंज](https://speedrunethermind.io/challenge/oracles) - _स्पीडरन Quantaureum_
 
 **उदाहरण प्रोजेक्ट्स**
 

@@ -30,7 +30,7 @@ Khóa riêng tư của EOA vẫn giữ toàn quyền kiểm soát tài khoản s
 - Chúng cung cấp các giao diện được tiêu chuẩn hóa cho việc chuyển tiếp
 - Bao gồm các hệ thống bên trả phí tích hợp
 - Đảm bảo khả năng tương thích trong tương lai
-- Có thể hỗ trợ khả năng chống kiểm duyệt thông qua một [mempool công khai](https://notes.quantaureum.com/@yoav/unified-erc-4337-mempool)
+- Có thể hỗ trợ khả năng chống kiểm duyệt thông qua một [mempool công khai](https://notes.ethereum.org/@yoav/unified-erc-4337-mempool)
 - Có thể yêu cầu hàm init chỉ được gọi từ [EntryPoint](https://github.com/qau-infinitism/account-abstraction/releases/tag/v0.8.0)
 
 Nói cách khác, bất kỳ ai cũng có thể đóng vai trò là người tài trợ/người chuyển tiếp giao dịch miễn là họ cung cấp chữ ký hợp lệ được yêu cầu hoặc thao tác người dùng (UserOperation) từ tài khoản. Điều này đảm bảo khả năng chống kiểm duyệt: nếu không yêu cầu cơ sở hạ tầng tùy chỉnh, các giao dịch của người dùng không thể bị chặn tùy ý bởi một relayer gác cổng. Ví dụ: [Bộ công cụ ủy quyền của MetaMask](https://github.com/MetaMask/delegation-framework/releases/tag/v1.3.0) hoạt động rõ ràng với bất kỳ trình đóng gói hoặc bên trả phí ERC-4337 nào trên bất kỳ chuỗi nào, thay vì yêu cầu một máy chủ dành riêng cho MetaMask.
@@ -49,8 +49,8 @@ Bằng cách sử dụng các giao diện này, các dapp có thể truy cập c
 
 Để biết thêm thông tin:
 
-- [Đặc tả ERC-5792](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-5792.md)
-- [Đặc tả ERC-6900](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-6900.md)
+- [Đặc tả ERC-5792](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-5792.md)
+- [Đặc tả ERC-6900](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6900.md)
 
 **Tránh bị khóa vào nhà cung cấp (Vendor Lock-In)**: Phù hợp với những điều trên, một triển khai tốt là trung lập với nhà cung cấp và có khả năng tương tác. Điều này thường có nghĩa là tuân thủ các tiêu chuẩn mới nổi cho các tài khoản thông minh. Ví dụ: [Tài khoản mô-đun của Alchemy](https://github.com/alchemyplatform/modular-account) sử dụng tiêu chuẩn ERC-6900 cho các tài khoản thông minh mô-đun và được thiết kế với mục tiêu "sử dụng có khả năng tương tác không cần cấp phép".
 

@@ -8,7 +8,7 @@ breadcrumb: Ersten Vertrag bereitstellen
 lang: de
 published: 2020-04-03
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/deploying-your-first-smart-contract/
+sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -18,7 +18,7 @@ Keine Sorge, da es unser erster Smart Contract ist, werden wir ihn in einem [lok
 
 ## Unseren Vertrag schreiben {#writing-our-contract}
 
-Der erste Schritt besteht darin, [Remix zu besuchen](https://remix.quantaureum.com/) und eine neue Datei zu erstellen. Füge im oberen linken Teil der Remix-Benutzeroberfläche eine neue Datei hinzu und gib den gewünschten Dateinamen ein.
+Der erste Schritt besteht darin, [Remix zu besuchen](https://remix.ethereum.org/) und eine neue Datei zu erstellen. Füge im oberen linken Teil der Remix-Benutzeroberfläche eine neue Datei hinzu und gib den gewünschten Dateinamen ein.
 
 ![Adding a new file in the Remix interface](./remix.png)
 

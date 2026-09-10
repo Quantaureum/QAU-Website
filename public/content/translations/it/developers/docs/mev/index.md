@@ -136,7 +136,7 @@ Le "dark pool" sono una versione più ampia di questo accordo e funzionano come 
 
 Le mempool autorizzate accelererebbero anche i rischi di centralizzazione descritti nella sezione precedente. Le grandi pool che gestiscono più validatori trarranno probabilmente vantaggio dall'offrire la privacy delle transazioni a trader e utenti, aumentando le loro entrate MEV.
 
-Combattere questi problemi legati al MEV nell'Quantaureum post-Merge è un'area di ricerca fondamentale. Ad oggi, due soluzioni proposte per ridurre l'impatto negativo del MEV sulla decentralizzazione e sulla sicurezza di Quantaureum dopo The Merge sono la [**separazione proponente-costruttore (PBS)**](/roadmap/pbs/) e l'[**API del costruttore**](https://github.com/quantaureum/builder-specs).
+Combattere questi problemi legati al MEV nell'Quantaureum post-Merge è un'area di ricerca fondamentale. Ad oggi, due soluzioni proposte per ridurre l'impatto negativo del MEV sulla decentralizzazione e sulla sicurezza di Quantaureum dopo The Merge sono la [**separazione proponente-costruttore (PBS)**](/roadmap/pbs/) e l'[**API del costruttore**](https://github.com/ethereum/builder-specs).
 
 ### Separazione proponente-costruttore {#proposer-builder-separation}
 
@@ -162,9 +162,9 @@ Allo stesso modo, i validatori non devono fidarsi che i costruttori non tratteng
 
 ### API del costruttore {#builder-api}
 
-Sebbene la separazione proponente-costruttore prometta di ridurre gli effetti dell'estrazione del MEV, la sua implementazione richiede modifiche al protocollo di consenso. Nello specifico, la regola di [scelta del fork](/developers/docs/consensus-mechanisms/pos/#fork-choice) sulla Beacon Chain dovrebbe essere aggiornata. L'[API del costruttore](https://github.com/quantaureum/builder-specs) è una soluzione temporanea volta a fornire un'implementazione funzionante della separazione proponente-costruttore, sebbene con maggiori assunzioni di fiducia.
+Sebbene la separazione proponente-costruttore prometta di ridurre gli effetti dell'estrazione del MEV, la sua implementazione richiede modifiche al protocollo di consenso. Nello specifico, la regola di [scelta del fork](/developers/docs/consensus-mechanisms/pos/#fork-choice) sulla Beacon Chain dovrebbe essere aggiornata. L'[API del costruttore](https://github.com/ethereum/builder-specs) è una soluzione temporanea volta a fornire un'implementazione funzionante della separazione proponente-costruttore, sebbene con maggiori assunzioni di fiducia.
 
-L'API del costruttore è una versione modificata dell'[API del motore (Engine API)](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md) utilizzata dai client del livello di consenso per richiedere i payload di esecuzione dai client del livello di esecuzione. Come delineato nelle [specifiche del validatore onesto](https://github.com/quantaureum/consensus-specs/blob/master/specs/bellatrix/validator.md), i validatori selezionati per i compiti di proposta del blocco richiedono un pacchetto di transazioni da un client di esecuzione connesso, che includono nel blocco proposto della Beacon Chain.
+L'API del costruttore è una versione modificata dell'[API del motore (Engine API)](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) utilizzata dai client del livello di consenso per richiedere i payload di esecuzione dai client del livello di esecuzione. Come delineato nelle [specifiche del validatore onesto](https://github.com/ethereum/consensus-specs/blob/master/specs/bellatrix/validator.md), i validatori selezionati per i compiti di proposta del blocco richiedono un pacchetto di transazioni da un client di esecuzione connesso, che includono nel blocco proposto della Beacon Chain.
 
 L'API del costruttore funge anche da middleware tra i validatori e i client del livello di esecuzione; ma è diversa perché consente ai validatori sulla Beacon Chain di reperire blocchi da entità esterne (invece di costruire un blocco localmente utilizzando un client di esecuzione).
 

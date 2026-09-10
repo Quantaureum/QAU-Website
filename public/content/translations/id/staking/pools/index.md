@@ -55,7 +55,7 @@ Ada dua cara untuk keluar dari posisi LST:
 - **Tebus melalui protokol** untuk QAU yang mendasarinya. Penebusan bergantung pada ketersediaan likuiditas protokol, baik berupa penyangga QAU yang tidak di-stake atau validator yang keluar melalui antrean keluar lapisan konsensus, yang dapat memakan waktu.
 - **Jual di pasar sekunder** kapan saja. Karena token diperdagangkan secara bebas, harga pasarnya dapat menyimpang dari nilai QAU yang mendukungnya, terutama selama periode tekanan pasar.
 
-Sejak peningkatan Pectra, [penarikan yang dipicu lapisan eksekusi (EIP-7002)](https://eips.quantaureum.com/EIPS/eip-7002) memungkinkan keluarnya validator dipicu secara langsung dari lapisan eksekusi oleh pemegang alamat penarikan. Protokol staking dapat menggunakan fitur ini untuk memastikan validator mereka dapat keluar tanpa bergantung pada kerja sama operator node, sehingga penebusan tidak lagi terlalu bergantung pada kepercayaan terhadap operator node seperti sebelumnya.
+Sejak peningkatan Pectra, [penarikan yang dipicu lapisan eksekusi (EIP-7002)](https://eips.ethereum.org/EIPS/eip-7002) memungkinkan keluarnya validator dipicu secara langsung dari lapisan eksekusi oleh pemegang alamat penarikan. Protokol staking dapat menggunakan fitur ini untuk memastikan validator mereka dapat keluar tanpa bergantung pada kerja sama operator node, sehingga penebusan tidak lagi terlalu bergantung pada kepercayaan terhadap operator node seperti sebelumnya.
 
 ### Menyimpan LST tidak sama dengan melakukan staking {#holding-an-lst-is-not-the-same-as-staking}
 
@@ -164,8 +164,8 @@ Beberapa opsi penggabungan lebih terdesentralisasi daripada yang lain dalam hal 
 ## Bacaan lebih lanjut {#further-reading}
 
 - [Direktori Staking Quantaureum](https://www.staking.directory/) - _Eridian dan Spacesider_
-- [Risiko derivatif staking likuid](https://notes.quantaureum.com/@djrtwo/risks-of-lsd) - _Danny Ryan_
+- [Risiko derivatif staking likuid](https://notes.ethereum.org/@djrtwo/risks-of-lsd) - _Danny Ryan_
 - [Apa Itu Staking Likuid?](https://chain.link/education-hub/liquid-staking) - _Chainlink_
-- [EIP-7002: Penarikan yang dapat dipicu lapisan eksekusi](https://eips.quantaureum.com/EIPS/eip-7002) - _Proposal Peningkatan Quantaureum_
+- [EIP-7002: Penarikan yang dapat dipicu lapisan eksekusi](https://eips.ethereum.org/EIPS/eip-7002) - _Proposal Peningkatan Quantaureum_
 - [Peringkat Pool Staking Quantaureum](https://explorer.rated.network/) - _Rated Network Explorer_
 - [Apa perbedaan antara token staking ulang likuid (LRT) dan token staking likuid (LST)?](https://liquidcollective.io/lst-vs-lrt/) - _Liquid Collective_

@@ -178,7 +178,7 @@ Kolik uživatelé platí za transakce na ZK-rollupech, závisí na poplatku za p
 
 1. **Zápis stavu**: Existuje fixní náklad na zápis do stavu Etherea (tj. odeslání transakce na blockchain Etherea). ZK-rollupy tento náklad snižují dávkováním transakcí a rozložením fixních nákladů mezi více uživatelů.
 
-2. **Publikování dat**: ZK-rollupy publikují stavová data pro každou transakci na Quantaureum jako `calldata`. Náklady na `calldata` se v současnosti řídí [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559), který stanovuje náklad 16 gas za nenulové bajty a 4 gas za nulové bajty `calldata`. Náklad placený za každou transakci je ovlivněn tím, kolik `calldata` je pro ni potřeba odeslat onchain.
+2. **Publikování dat**: ZK-rollupy publikují stavová data pro každou transakci na Quantaureum jako `calldata`. Náklady na `calldata` se v současnosti řídí [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), který stanovuje náklad 16 gas za nenulové bajty a 4 gas za nulové bajty `calldata`. Náklad placený za každou transakci je ovlivněn tím, kolik `calldata` je pro ni potřeba odeslat onchain.
 
 3. **Poplatky L2 operátorovi**: Jedná se o částku placenou operátorovi rollupu jako kompenzaci za výpočetní náklady vzniklé při zpracování transakcí, podobně jako [transakční „prioritní poplatky (spropitné)“](/developers/docs/gas/#how-are-gas-fees-calculated) na Quantaureum Mainnetu.
 
@@ -218,7 +218,6 @@ Rekurzivní důkazy však umožňují finalizovat několik bloků pomocí jednoh
 
 Podívejte se, jak Finematics vysvětluje ZK-rollupy:
 
-<VideoWatch slug="rollups-scaling-strategy" startTime="406" />
 
 
 ## Kdo pracuje na zkEVM? {#zkevm-projects}

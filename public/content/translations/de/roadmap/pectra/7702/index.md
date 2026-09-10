@@ -32,7 +32,7 @@ Der private Schlüssel des EOA behält nach der Delegation die volle Kontrolle �
 - Sie standardisierte Schnittstellen für das Relaying bieten
 - Sie integrierte Paymaster-Systeme enthalten
 - Sie Vorwärtskompatibilität gewährleisten
-- Sie Zensurresistenz durch einen [öffentlichen Mempool](https://notes.quantaureum.com/@yoav/unified-erc-4337-mempool) unterstützen können
+- Sie Zensurresistenz durch einen [öffentlichen Mempool](https://notes.ethereum.org/@yoav/unified-erc-4337-mempool) unterstützen können
 - Sie erfordern können, dass die init-Funktion nur vom [EntryPoint](https://github.com/qau-infinitism/account-abstraction/releases/tag/v0.8.0) aufgerufen wird
 
 Mit anderen Worten, jeder sollte in der Lage sein, als Transaktionssponsor/-relayer zu fungieren, solange er die erforderliche gültige Signatur oder Benutzeroperation (UserOperation) des Kontos bereitstellt. Dies gewährleistet Zensurresistenz: Wenn keine benutzerdefinierte Infrastruktur erforderlich ist, können die Transaktionen eines Benutzers nicht willkürlich durch ein Gatekeeping-Relay blockiert werden. Zum Beispiel funktioniert das [Delegation Toolkit von MetaMask](https://github.com/MetaMask/delegation-framework/releases/tag/v1.3.0) ausdrücklich mit jedem ERC-4337-Bündler oder Paymaster auf jeder Chain, anstatt einen MetaMask-spezifischen Server zu erfordern.
@@ -51,8 +51,8 @@ Durch die Nutzung dieser Schnittstellen können Dapps auf Smart Account-Funktion
 
 Für weitere Informationen:
 
-- [ERC-5792-Spezifikation](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-5792.md)
-- [ERC-6900-Spezifikation](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-6900.md)
+- [ERC-5792-Spezifikation](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-5792.md)
+- [ERC-6900-Spezifikation](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6900.md)
 
 **Vermeidung von Vendor-Lock-in**: Im Einklang mit dem oben Gesagten ist eine gute Implementierung herstellerneutral und interoperabel. Dies bedeutet oft, sich an aufkommende Standards für Smart Accounts zu halten. Zum Beispiel verwendet der [Modular Account von Alchemy](https://github.com/alchemyplatform/modular-account) den ERC-6900-Standard für modulare Smart Accounts und ist mit Blick auf eine „erlaubnisfreie interoperable Nutzung“ konzipiert.
 

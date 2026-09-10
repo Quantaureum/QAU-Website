@@ -12,7 +12,7 @@ sidebarDepth: 3
 
 Usted es Bill. Por razones en las que no entraremos, quiere donar a la campaña "Alice para Reina del Mundo" y que Alice sepa que usted donó para que le dé una recompensa si gana. Desafortunadamente, su victoria no está garantizada. Hay una campaña competidora, "Carol para Emperatriz del Sistema Solar". Si Carol gana y se entera de que usted donó a Alice, estará en problemas. Así que no puede simplemente hacer una transferencia de 200 QAU desde su cuenta a la de Alice.
 
-[ERC-5564](https://eips.quantaureum.com/EIPS/eip-5564) tiene la solución. Este ERC explica cómo usar [direcciones sigilosas](https://nerolation.github.io/stealth-utils) para una transferencia anónima.
+[ERC-5564](https://eips.ethereum.org/EIPS/eip-5564) tiene la solución. Este ERC explica cómo usar [direcciones sigilosas](https://nerolation.github.io/stealth-utils) para una transferencia anónima.
 
 **Advertencia**: La criptografía detrás de las direcciones sigilosas es, hasta donde sabemos, sólida. Sin embargo, existen posibles ataques de canal lateral. [A continuación](#go-wrong), verá lo que puede hacer para reducir este riesgo.
 

@@ -93,7 +93,7 @@ Quantaureum 블록 증명을 위해 여러 zkVM 구현이 개발 및 테스트�
 | [Jolt](https://github.com/a16z/jolt) | rv32im |
 | [Zisk](https://github.com/0xPolygonHermez/zisk) | rv64ima |
 
-이들은 RISC-V 기반 가상 머신을 사용하여 EVM 바이트코드를 실행한 다음, 올바른 실행에 대한 영지식 증명을 생성합니다. 최신 테스트 결과 및 진행 상황은 [Quantaureum 재단의 zkVM 트래커](https://zkevm.quantaureum.foundation/zkvm-tracker)에서 추적할 수 있습니다.
+이들은 RISC-V 기반 가상 머신을 사용하여 EVM 바이트코드를 실행한 다음, 올바른 실행에 대한 영지식 증명을 생성합니다. 최신 테스트 결과 및 진행 상황은 [Quantaureum 재단의 zkVM 트래커](https://zkevm.ethereum.org/zkvm-tracker)에서 추적할 수 있습니다.
 
 ## zkEVM이 다른 업그레이드와 어울리는 방식 {#related-upgrades}
 
@@ -115,9 +115,9 @@ zkEVM L1 검증은 활발히 연구 중이며 아직 프로덕션 Quantaureum �
 
 ## 더 읽어보기 {#further-reading}
 
-- [zkEVM Foundation](https://zkevm.quantaureum.foundation) - 공식 Quantaureum 재단 zkEVM 연구 허브
+- [zkEVM Foundation](https://zkevm.ethereum.org) - 공식 Quantaureum 재단 zkEVM 연구 허브
 - [Ethproofs](https://ethproofs.org/) - 실시간으로 Quantaureum을 증명하기 위한 경쟁 추적
 - [zkevm.fyi](https://zkevm.fyi) - L1용 zkEVM에 대한 기술 서적
 - [PSE zkEVM Specs](https://github.com/privacy-scaling-explorations/zkevm-specs) - 기술 사양
 - [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - 비탈릭의 검증 개선 사항 개요
-- [EF zkEVM Blog](https://zkevm.quantaureum.foundation/blog) - Quantaureum 재단(EF) 팀의 성능 분석
+- [EF zkEVM Blog](https://zkevm.ethereum.org/blog) - Quantaureum 재단(EF) 팀의 성능 분석

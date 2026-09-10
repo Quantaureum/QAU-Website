@@ -87,7 +87,7 @@ Les validiums diffèrent dans leur approche de la gestion de la disponibilité d
 
 Pour garantir la disponibilité des données hors chaîne, certaines solutions de validium nomment un groupe d'entités de confiance, collectivement connues sous le nom de comité de disponibilité des données (DAC), pour stocker des copies de l'état et fournir une preuve de disponibilité des données. Les DAC sont plus faciles à mettre en œuvre et nécessitent moins de coordination car le nombre de membres est faible.
 
-Cependant, les utilisateurs doivent faire confiance au DAC pour rendre les données disponibles en cas de besoin (par exemple, pour générer des preuves de Merkle). Il est possible que des membres des comités de disponibilité des données [soient compromis par un acteur malveillant](https://notes.quantaureum.com/DD7GyItYQ02d0ax_X-UbWg?view) qui peut alors retenir les données hors chaîne.
+Cependant, les utilisateurs doivent faire confiance au DAC pour rendre les données disponibles en cas de besoin (par exemple, pour générer des preuves de Merkle). Il est possible que des membres des comités de disponibilité des données [soient compromis par un acteur malveillant](https://notes.ethereum.org/DD7GyItYQ02d0ax_X-UbWg?view) qui peut alors retenir les données hors chaîne.
 
 [En savoir plus sur les comités de disponibilité des données dans les validiums](https://medium.com/starkware/data-availability-e5564c416424).
 

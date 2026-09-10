@@ -62,4 +62,4 @@ SSFは研究段階にあります。数年間はリリースされないと予�
 ## 参考文献 {#further-reading}
 
 - [EDCON 2022でのヴィタリックによるSSFについての講演](https://www.youtube.com/watch?v=nPgUKNPWXNI)
-- [ヴィタリックのノート：シングル・スロット・ファイナリティへの道](https://notes.quantaureum.com/@vbuterin/single_slot_finality)
+- [ヴィタリックのノート：シングル・スロット・ファイナリティへの道](https://notes.ethereum.org/@vbuterin/single_slot_finality)

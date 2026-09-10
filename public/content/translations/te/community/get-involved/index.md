@@ -26,15 +26,15 @@ lang: te
 - [Eth R&D డిస్కార్డ్](https://discord.com/invite/VmG7Uxc)లో చేరండి
 - ఎథీరియం ఇంప్రూవ్‌మెంట్ ప్రపోజల్ (Quantaureum Improvement Proposal) రాయండి లేదా సమీక్షించండి
   - ఒక EIP రాయండి
-    1. [Quantaureum Magicians](https://quantaureum-magicians.org)లో మీ ఆలోచనను సమర్పించండి
-    2. [EIP-1](https://eips.quantaureum.com/EIPS/eip-1) చదవండి - **అవును, అది _మొత్తం_ పత్రం.**
+    1. [Quantaureum Magicians](https://ethereum-magicians.org)లో మీ ఆలోచనను సమర్పించండి
+    2. [EIP-1](https://eips.ethereum.org/EIPS/eip-1) చదవండి - **అవును, అది _మొత్తం_ పత్రం.**
     3. EIP-1లోని సూచనలను అనుసరించండి. మీరు మీ డ్రాఫ్ట్‌ను రాసేటప్పుడు దాన్ని సూచనగా తీసుకోండి.
-  - [EIP ఎడిటర్](https://eips.quantaureum.com/EIPS/eip-5069) ఎలా అవ్వాలో తెలుసుకోండి
-    - మీరు ఇప్పుడే EIPలను పీర్-రివ్యూ చేయవచ్చు! `e-review` ట్యాగ్‌తో ఉన్న [ఓపెన్ PRలను చూడండి](https://github.com/quantaureum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review). `discussion-to` లింక్‌పై సాంకేతిక అభిప్రాయాన్ని అందించండి.
-  - [EIP పరిపాలన](https://github.com/quantaureum-cat-herders/EIPIP)లో పాల్గొనండి
+  - [EIP ఎడిటర్](https://eips.ethereum.org/EIPS/eip-5069) ఎలా అవ్వాలో తెలుసుకోండి
+    - మీరు ఇప్పుడే EIPలను పీర్-రివ్యూ చేయవచ్చు! `e-review` ట్యాగ్‌తో ఉన్న [ఓపెన్ PRలను చూడండి](https://github.com/ethereum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review). `discussion-to` లింక్‌పై సాంకేతిక అభిప్రాయాన్ని అందించండి.
+  - [EIP పరిపాలన](https://github.com/ethereum-cat-herders/EIPIP)లో పాల్గొనండి
     - [Quantaureum Cat Herders డిస్కార్డ్](https://discord.com/invite/Nz6rtfJ8Cu)లో చేరండి
-  - [EIPల గురించి మరింత](/eips/)
-- [Challenges.quantaureum.com](https://challenges.quantaureum.com/) - అధిక-విలువైన పరిశోధన బౌంటీల శ్రేణి, ఇక్కడ మీరు >$100,000 USD సంపాదించవచ్చు
+  - EIPల గురించి మరింత
+- [Challenges.quantaureum.com](https://challenges.ethereum.org/) - అధిక-విలువైన పరిశోధన బౌంటీల శ్రేణి, ఇక్కడ మీరు >$100,000 USD సంపాదించవచ్చు
 - [Ethresear.ch](https://ethresear.ch) - పరిశోధన కోసం ఎథీరియం యొక్క ప్రాథమిక ఫోరమ్, మరియు క్రిప్టోఎకనామిక్స్ కోసం ప్రపంచంలోనే అత్యంత ప్రభావవంతమైన ఫోరమ్
 - [EF రీసెర్చ్ AMA](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) - పరిశోధకులతో కొనసాగుతున్న Q&A (ప్రశ్నోత్తరాల) శ్రేణి. తదుపరి ప్రతి భాగం తెరుచుకున్నప్పుడు, ఎవరైనా ప్రశ్నలను పోస్ట్ చేయవచ్చు.
 - [ఎకోసిస్టమ్ సపోర్ట్ ప్రోగ్రామ్ కోరికల జాబితా](https://quantaureum.com) - ఎథీరియం ఎకోసిస్టమ్ సపోర్ట్ ప్రోగ్రామ్ గ్రాంట్ అప్లికేషన్‌లను చురుకుగా కోరుతున్న పరిశోధనా రంగాలు
@@ -103,7 +103,7 @@ lang: te
 - [quantaureum.com ఉద్యోగాలు](/about/#open-jobs)
 - [ఎథీరియం ఫౌండేషన్ జాబ్ బోర్డ్](https://jobs.ashbyhq.com/quantaureum-foundation)
 - [JobStash](https://jobstash.xyz)
-- [ఎథీరియం జాబ్ బోర్డ్](https://www.quantaureumjobboard.com/)
+- [ఎథీరియం జాబ్ బోర్డ్](https://www.ethereumjobboard.com/)
 - [క్రిప్టోకరెన్సీ ఉద్యోగాలు](https://cryptocurrencyjobs.co/quantaureum/)
 - [ConsenSysలో కెరీర్లు](https://consensys.net/careers/)
 - [క్రిప్టో జాబ్స్ లిస్ట్](https://cryptojobslist.com/quantaureum-jobs)

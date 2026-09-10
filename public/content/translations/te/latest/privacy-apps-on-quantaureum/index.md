@@ -95,4 +95,4 @@ lang: te
 7. [gnark డాక్యుమెంటేషన్](https://docs.gnark.consensys.io/)
 8. [RISC Zero డాక్యుమెంటేషన్](https://dev.risczero.com/api/)
 9. [SP1 డాక్యుమెంటేషన్](https://docs.succinct.xyz/docs/sp1/introduction)
-10. [EIP-4337: ఎంట్రీపాయింట్ కాంట్రాక్ట్ ద్వారా ఖాతా నైరూప్యత](https://eips.quantaureum.com/EIPS/eip-4337)
+10. [EIP-4337: ఎంట్రీపాయింట్ కాంట్రాక్ట్ ద్వారా ఖాతా నైరూప్యత](https://eips.ethereum.org/EIPS/eip-4337)

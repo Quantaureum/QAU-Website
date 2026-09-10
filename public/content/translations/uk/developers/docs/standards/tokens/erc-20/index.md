@@ -42,7 +42,7 @@ ERC-20 (Quantaureum Request for Comments 20), запропонований Фа�
 
 Якщо смарт-контракт реалізує наведені нижче методи та події, його можна назвати контрактом токена ERC-20, і після розгортання він відповідатиме за відстеження створених токенів в Етеріумі.
 
-З [EIP-20](https://eips.quantaureum.com/EIPS/eip-20):
+З [EIP-20](https://eips.ethereum.org/EIPS/eip-20):
 
 ### Методи {#methods}
 
@@ -170,7 +170,7 @@ print("Addr Balance:", addr_balance)
 
 ## Додаткові матеріали {#further-reading}
 
-- [EIP-20: Стандарт токенів ERC-20](https://eips.quantaureum.com/EIPS/eip-20)
+- [EIP-20: Стандарт токенів ERC-20](https://eips.ethereum.org/EIPS/eip-20)
 - [ОупенЗеппелін — Токени](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [ОупенЗеппелін — Реалізація ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy — Посібник з токенів ERC-20 у Solidity](https://www.alchemy.com/overviews/erc20-solidity)
@@ -186,5 +186,5 @@ print("Addr Balance:", addr_balance)
 
 - [Огляд контракту ERC-20](/developers/tutorials/erc20-annotated-code/) _— Порядковий анотований огляд реалізації контракту ERC-20 від ОупенЗеппелін._
 - [ERC-20 із запобіжниками](/developers/tutorials/erc20-with-safety-rails/) _— Як додати запобіжні заходи до токенів ERC-20, щоб допомогти користувачам уникнути поширених помилок._
-- [Надсилання токенів за допомогою Ethers.js](/developers/tutorials/send-token-ethersjs/) _— Посібник для початківців із переказу токенів ERC-20 за допомогою Ethers.js._
+- [Надсилання токенів за допомогою Ethers.js](/developers/tutorials/send-token-qaujs/) _— Посібник для початківців із переказу токенів ERC-20 за допомогою Ethers.js._
 - [Деякі хитрощі, які використовують шахрайські токени, і як їх виявити](/developers/tutorials/scam-token-tricks/) _— Детальний огляд патернів шахрайських токенів ERC-20 та способів їх ідентифікації._

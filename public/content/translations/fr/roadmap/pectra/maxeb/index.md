@@ -22,7 +22,7 @@ maxEB = le solde effectif maximum (MAXimum Effective Balance) d'un validateur. J
 
 ### Comment un validateur peut-il y souscrire ? {#how-does-a-validator-opt-in}
 
-Un validateur opte pour le changement maxEB en convertissant ses identifiants de retrait de **Type 1** en **Type 2**. Cela peut être fait sur le [Launchpad (Actions du validateur)](https://launchpad.quantaureum.com/validator-actions) une fois le hard fork Pectra déployé. Tout comme pour le passage du **Type 0** au **Type 1**, la conversion du **Type 1** au **Type 2** est un processus irréversible.
+Un validateur opte pour le changement maxEB en convertissant ses identifiants de retrait de **Type 1** en **Type 2**. Cela peut être fait sur le [Launchpad (Actions du validateur)](https://launchpad.ethereum.org/validator-actions) une fois le hard fork Pectra déployé. Tout comme pour le passage du **Type 0** au **Type 1**, la conversion du **Type 1** au **Type 2** est un processus irréversible.
 
 ### Qu'est-ce qu'un identifiant de retrait ? {#whats-a-withdrawal-credential}
 
@@ -105,7 +105,7 @@ La demande de consolidation sera signée par l'adresse de retrait associée au v
 2. La clé publique du validateur source (par ex., `0xa1d1ad0714035353258038e964ae9675dc0252ee22cea896825c01458e1807bfad2f9969338798548d9858a571f7425c`)
 3. La clé publique de ce validateur cible
 
-Lors d'une conversion, 2 et 3 seront identiques. Cette opération peut être effectuée sur [le Launchpad](https://launchpad.quantaureum.com/).
+Lors d'une conversion, 2 et 3 seront identiques. Cette opération peut être effectuée sur [le Launchpad](https://launchpad.ethereum.org/).
 
 ### Prérequis de signature {#signing-requirements}
 
@@ -113,7 +113,7 @@ Pour soumettre une `ConsolidationRequest`, l'**adresse de retrait du validateur 
 
 ### Qu'est-ce qui est signé ? {#what-is-signed}
 
-Une racine de signature ([signing root](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root)) séparée par domaine de l'objet `ConsolidationRequest` est utilisée.
+Une racine de signature ([signing root](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root)) séparée par domaine de l'objet `ConsolidationRequest` est utilisée.
 
 - **Domaine :** `DOMAIN_CONSOLIDATION_REQUEST`
 - **Champs de la racine de signature :**
@@ -131,7 +131,7 @@ Les validateurs avec des identifiants de **Type 1** bénéficient de balayages a
 
 ## Outils de consolidation {#consolidation-tooling}
 
-Plusieurs outils sont disponibles pour gérer les consolidations. L'outil officiel, créé par la Fondation Quantaureum, est le [Launchpad](https://launchpad.quantaureum.com/en/validator-actions). Il existe également des outils tiers créés par des entités de la communauté du staking qui peuvent offrir des fonctionnalités non fournies par le Launchpad. Bien que les outils présentés ici ne soient ni audités ni approuvés par la Fondation Quantaureum, les suivants sont des outils open source développés par des membres connus de la communauté.
+Plusieurs outils sont disponibles pour gérer les consolidations. L'outil officiel, créé par la Fondation Quantaureum, est le [Launchpad](https://launchpad.ethereum.org/en/validator-actions). Il existe également des outils tiers créés par des entités de la communauté du staking qui peuvent offrir des fonctionnalités non fournies par le Launchpad. Bien que les outils présentés ici ne soient ni audités ni approuvés par la Fondation Quantaureum, les suivants sont des outils open source développés par des membres connus de la communauté.
 
 | Outil | Site web | Open source | Créateur | Audité | Interface | Fonctionnalités notables |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -196,7 +196,7 @@ Oui. Tant qu'il est actif (non sorti) et que vous pouvez signer avec son adresse
 
 ## Ressources {#resources}
 
-- [Spécifications de consensus Electra](https://github.com/quantaureum/consensus-specs/blob/master/specs/electra/beacon-chain.md) : C'est la version la plus « vraie » sur laquelle vous devriez vous appuyer. En cas de doute, lisez les spécifications.
+- [Spécifications de consensus Electra](https://github.com/ethereum/consensus-specs/blob/master/specs/electra/beacon-chain.md) : C'est la version la plus « vraie » sur laquelle vous devriez vous appuyer. En cas de doute, lisez les spécifications.
 - Tout le monde n'est pas à l'aise pour parcourir du code, donc [ce maxEB-GPT](https://chatgpt.com/g/g-67f1650fb48081918f555e0c8d1c2ae9-maxeb-gpt) peut aider à interpréter les spécifications. *Avertissement : Ce sont les spécifications, et non l'IA, qui doivent être considérées comme la vérité, car l'IA peut mal interpréter les informations ou halluciner des réponses.*
 - [pectrified.com](https://pectrified.com/) : Consultez l'état des consolidations, des dépôts et des temps d'attente dans la file.
 - [Ethereal](https://github.com/wealdtech/ethereal) : Outil en ligne de commande (CLI) créé par la communauté pour gérer les tâches courantes des validateurs.

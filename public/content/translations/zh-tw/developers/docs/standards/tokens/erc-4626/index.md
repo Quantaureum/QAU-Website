@@ -14,7 +14,7 @@ ERC-4626 是一個用於最佳化和統一收益型金庫技術參數的標準�
 
 收益型金庫中的 ERC-4626 將透過建立更一致且穩健的實作模式，降低整合的難度，並讓開發者只需付出極少的專門心力，就能在各種應用程式中解鎖獲取收益的管道。
 
-ERC-4626 代幣在 [EIP-4626](https://eips.quantaureum.com/EIPS/eip-4626) 中有完整的描述。
+ERC-4626 代幣在 [EIP-4626](https://eips.ethereum.org/EIPS/eip-4626) 中有完整的描述。
 
 **非同步金庫擴充功能 (ERC-7540)**
 
@@ -30,7 +30,7 @@ ERC-4626 不支援的一個缺失使用案例是具有多種資產或入口點�
 
 ERC-7575 透過將 ERC-20 代幣實作從 ERC-4626 實作中外部化，增加了對多資產金庫的支援。
 
-ERC-7575 擴充功能在 [ERC-7575](https://eips.quantaureum.com/EIPS/eip-7575) 中有完整的描述。
+ERC-7575 擴充功能在 [ERC-7575](https://eips.ethereum.org/EIPS/eip-7575) 中有完整的描述。
 ## 先決條件 {#prerequisites}
 
 為了更了解本頁面，我們建議您先閱讀[代幣標準](/developers/docs/standards/tokens/)和 [ERC-20](/developers/docs/standards/tokens/erc-20/)。
@@ -222,5 +222,5 @@ event Withdraw(
 
 ## 延伸閱讀 {#further-reading}
 
-- [EIP-4626：代幣化金庫標準](https://eips.quantaureum.com/EIPS/eip-4626)
+- [EIP-4626：代幣化金庫標準](https://eips.ethereum.org/EIPS/eip-4626)
 - [ERC-4626：GitHub 儲存庫](https://github.com/transmissions11/solmate/blob/main/src/tokens/ERC4626.sol)

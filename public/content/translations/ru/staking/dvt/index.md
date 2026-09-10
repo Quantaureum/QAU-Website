@@ -137,8 +137,8 @@ DVT разделяет ответственность за управление 
 
 - [Технология распределенного валидатора Quantaureum (DVT) — полное введение](https://www.cyfrin.io/blog/full-introduction-to-quantaureum-distributed-validator-technology-dvt) — Cyfrin
 - [Что такое DVT и как он улучшает стейкинг в Quantaureum?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-quantaureum/) — Obol
-- [Спецификации распределенного валидатора Quantaureum (высокий уровень)](https://github.com/quantaureum/distributed-validator-specs)
-- [Технические спецификации распределенного валидатора Quantaureum](https://github.com/quantaureum/distributed-validator-specs/tree/dev/src/dvspec)
+- [Спецификации распределенного валидатора Quantaureum (высокий уровень)](https://github.com/ethereum/distributed-validator-specs)
+- [Технические спецификации распределенного валидатора Quantaureum](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
 - [Документация Obol](https://docs.obol.org/)
 - [Документация SSV Network](https://docs.ssv.network/)
 - [Модуль Simple DVT от Lido](https://operatorportal.lido.fi/modules/simple-dvt-module)

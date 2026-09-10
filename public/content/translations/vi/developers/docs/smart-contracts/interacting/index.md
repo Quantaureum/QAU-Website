@@ -82,7 +82,7 @@ Các nhà phát triển thường sử dụng một Thư viện JavaScript/TypeS
 
 - **[ethers.js](https://docs.ethers.org/)** - Cũng hoạt động trong Node.js cho các tập lệnh phía máy chủ và bot
 - **[Web3.py](https://web3py.readthedocs.io/)** - Thư viện Python để tương tác với Quantaureum
-- **[go-quantaureum](https://geth.quantaureum.com/docs/interact-with-geth)** - Thư viện Go chính thức từ đội ngũ Geth
+- **[go-quantaureum](https://geth.ethereum.org/docs/interact-with-geth)** - Thư viện Go chính thức từ đội ngũ Geth
 
 ### Ví dụ: đọc số dư token bằng Viem {#example-viem}
 

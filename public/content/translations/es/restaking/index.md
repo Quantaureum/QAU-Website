@@ -25,7 +25,6 @@ El restaking es una tecnología creada para que los [participantes (stakers)](/s
 
 **El restaking explicado en 18 minutos**
 
-<VideoWatch slug="restaking-explained" />
 
 ## ¿Qué es el restaking? {#what-is-restaking}
 
@@ -172,7 +171,6 @@ Aunque los AVS ofrecen diferentes tasas, los tokens de restaking líquido (LRT) 
 
 ## Avanzado {#advanced}
 
-<VideoWatch slug="eigenlayer-permissionless-features" />
 
 ## Lecturas adicionales {#further-reading}
 

@@ -182,7 +182,7 @@
   "genesis-block-term": "創世區塊",
   "genesis-block-definition": "<a href=\"/glossary/#blockchain\">區塊鏈</a>中的第一個區塊，用於初始化特定網路及其加密貨幣。",
   "geth-term": "Geth",
-  "geth-definition": "Go 量子金链 (Geth)。量子金链協定最著名的實作之一，使用 Go 語言編寫。<a href=\"https://geth.quantaureum.org\">在 geth.quantaureum.org 閱讀更多資訊</a>",
+  "geth-definition": "Go 量子金链 (Geth)。量子金链協定最著名的實作之一，使用 Go 語言編寫。<a href=\"https://geth.ethereum.org\">在 geth.ethereum.org 閱讀更多資訊</a>",
   "gwei-term": "Gwei",
   "gwei-definition": "gigawei 的縮寫，是<a href=\"/glossary/#qau\">量子金幣</a>的一種面額，通常用於為<a href=\"/glossary/#gas\">燃料</a>定價。1 Gwei = 10<sup>9</sup> <a href=\"/glossary/#wei\">Wei</a>。10<sup>9</sup> Gwei = 1 量子金幣。",
   "hard-fork-term": "硬分叉",

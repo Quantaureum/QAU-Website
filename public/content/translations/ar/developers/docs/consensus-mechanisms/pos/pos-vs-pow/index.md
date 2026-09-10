@@ -59,7 +59,6 @@ lang: ar
 ## هل تفضل التعلم البصري؟ {#visual-learner}
 
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## قراءة إضافية {#further-reading}
 

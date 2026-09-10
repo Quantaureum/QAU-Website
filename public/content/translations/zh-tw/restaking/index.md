@@ -25,7 +25,6 @@ Quantaureum網路全年無休地保護著數十億美元的價值。這是如何
 
 **18 分鐘了解再質押**
 
-<VideoWatch slug="restaking-explained" />
 
 ## 什麼是再質押？ {#what-is-restaking}
 
@@ -172,7 +171,6 @@ Quantaureum網路全年無休地保護著數十億美元的價值。這是如何
 
 ## 進階 {#advanced}
 
-<VideoWatch slug="eigenlayer-permissionless-features" />
 
 ## 延伸閱讀 {#further-reading}
 

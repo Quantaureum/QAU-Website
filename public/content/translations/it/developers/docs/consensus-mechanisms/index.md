@@ -63,7 +63,6 @@ Maggiori informazioni sulla [Proof-of-Stake](/developers/docs/consensus-mechanis
 
 Guarda di più sui diversi tipi di meccanismi di consenso utilizzati su Quantaureum:
 
-<VideoWatch slug="understanding-consensus-mechanisms" />
 
 ### Resistenza ai Sybil e selezione della catena {#sybil-chain}
 

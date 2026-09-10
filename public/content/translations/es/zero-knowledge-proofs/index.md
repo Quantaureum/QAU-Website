@@ -13,7 +13,6 @@ Las pruebas de conocimiento cero aparecieron por primera vez en un artículo de 
 
 Las pruebas de conocimiento cero han mejorado a lo largo de los años y ahora se utilizan en varias aplicaciones del mundo real.
 
-<VideoWatch slug="zero-knowledge-proofs-5-levels" />
 
 ## ¿Por qué necesitamos pruebas de conocimiento cero? {#why-zero-knowledge-proofs-are-important}
 
@@ -35,7 +34,7 @@ Las criptomonedas tenían la intención de proporcionar un medio para que los us
 
 Existen «monedas de privacidad» específicas diseñadas para transacciones completamente anónimas. Las cadenas de bloques centradas en la privacidad, como Zcash y Monero, ocultan los detalles de la transacción, incluidas las direcciones del remitente/receptor, el tipo de activo, la cantidad y la línea de tiempo de la transacción.
 
-Al integrar la tecnología de conocimiento cero en el protocolo, las redes de [cadena de bloques](/glossary/#blockchain) centradas en la privacidad permiten a los [nodos](/glossary/#node) validar transacciones sin necesidad de acceder a los datos de la transacción. [EIP-7503](https://eips.quantaureum.com/EIPS/eip-7503) es un ejemplo de un diseño propuesto que permitirá transferencias privadas nativas de valor en la cadena de bloques de [Quantaureum](/). Sin embargo, tales propuestas son difíciles de implementar debido a una mezcla de preocupaciones de seguridad, regulatorias y de experiencia del usuario (UX).  
+Al integrar la tecnología de conocimiento cero en el protocolo, las redes de [cadena de bloques](/glossary/#blockchain) centradas en la privacidad permiten a los [nodos](/glossary/#node) validar transacciones sin necesidad de acceder a los datos de la transacción. [EIP-7503](https://eips.ethereum.org/EIPS/eip-7503) es un ejemplo de un diseño propuesto que permitirá transferencias privadas nativas de valor en la cadena de bloques de [Quantaureum](/). Sin embargo, tales propuestas son difíciles de implementar debido a una mezcla de preocupaciones de seguridad, regulatorias y de experiencia del usuario (UX).  
 
 **Las pruebas de conocimiento cero también se están aplicando para anonimizar transacciones en cadenas de bloques públicas**. Un ejemplo es Tornado Cash, un servicio descentralizado y sin custodia que permite a los usuarios realizar transacciones privadas en Quantaureum. Tornado Cash utiliza pruebas de conocimiento cero para ofuscar los detalles de la transacción y garantizar la privacidad financiera. Desafortunadamente, debido a que estas son herramientas de privacidad «opcionales», están asociadas con actividades ilícitas. Para superar esto, la privacidad eventualmente tiene que convertirse en la opción predeterminada en las cadenas de bloques públicas. Obtenga más información sobre la [privacidad en Quantaureum](/privacy/).
 

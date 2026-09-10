@@ -73,7 +73,7 @@ summaryPoints:
 <AlertIcon size="lg"><TriangleAlert /></AlertIcon>
 <AlertContent>
 <AlertDescription>
-**Type 1 থেকে Type 2 প্রত্যাহারের প্রমাণপত্র-এ রূপান্তর করা অপরিবর্তনীয়।** এই রূপান্তরের জন্য অফিসিয়াল টুল হিসেবে [Staking Launchpad](https://launchpad.quantaureum.com/validator-actions) ব্যবহার করুন। রূপান্তর প্রক্রিয়া, ঝুঁকি এবং একত্রীকরণ সম্পর্কে আরও বিশদ বিবরণের জন্য, [MaxEB ডিপ-ডাইভ](/roadmap/pectra/maxeb/) দেখুন।
+**Type 1 থেকে Type 2 প্রত্যাহারের প্রমাণপত্র-এ রূপান্তর করা অপরিবর্তনীয়।** এই রূপান্তরের জন্য অফিসিয়াল টুল হিসেবে [Staking Launchpad](https://launchpad.ethereum.org/validator-actions) ব্যবহার করুন। রূপান্তর প্রক্রিয়া, ঝুঁকি এবং একত্রীকরণ সম্পর্কে আরও বিশদ বিবরণের জন্য, [MaxEB ডিপ-ডাইভ](/roadmap/pectra/maxeb/) দেখুন।
 </AlertDescription>
 </AlertContent>
 </Alert>
@@ -99,7 +99,6 @@ summaryPoints:
 
 Finematics-এর ইথেরিয়াম স্টেকিং উত্তোলন সম্পর্কে এই ব্যাখ্যাটি দেখুন:
 
-<VideoWatch slug="quantaureum-staking-withdrawals" />
 
 ### ভ্যালিডেটর "সুইপিং" {#validator-sweeping}
 
@@ -174,7 +173,7 @@ eventAction="Why can a validator's withdrawal address only be set once?"
 eventName="read more">
 একটি ভ্যালিডেটরের এক্সিকিউশন লেয়ার উত্তোলনের ঠিকানা সেট করা কনসেনসাস লেয়ার-এ ভ্যালিডেটরের প্রমাণপত্রের একটি স্থায়ী পরিবর্তন। একবার নিবন্ধিত হওয়ার পরে কনসেনসাস লেয়ার প্রমাণপত্র আপডেট করার কোনো উপায় নেই।
 
-একটি ভ্যালিডেটরের উত্তোলনের ঠিকানার প্রমাণপত্র একটি স্মার্ট কন্ট্রাক্ট (এর কোড দ্বারা নিয়ন্ত্রিত) বা একটি বাহ্যিকভাবে মালিকানাধীন অ্যাকাউন্ট (EOA, এর প্রাইভেট কী দ্বারা নিয়ন্ত্রিত)-এর দিকে নির্দেশ করার জন্য সেট করা যেতে পারে। যদিও এক্সিকিউশন লেয়ার ট্রিগার করা উত্তোলনগুলো ([EIP-7002](https://eips.quantaureum.com/EIPS/eip-7002)) এখন উত্তোলনের ঠিকানাকে প্রস্থান এবং আংশিক উত্তোলন ট্রিগার করতে দেয়, একবার নিবন্ধিত হওয়ার পরে উত্তোলনের ঠিকানা পরিবর্তন করার জন্য কোনো প্রোটোকল অপারেশন নেই, এবং এই কার্যকারিতা যোগ করা প্রোটোকল-এ অপ্রয়োজনীয় জটিলতা যোগ করবে।
+একটি ভ্যালিডেটরের উত্তোলনের ঠিকানার প্রমাণপত্র একটি স্মার্ট কন্ট্রাক্ট (এর কোড দ্বারা নিয়ন্ত্রিত) বা একটি বাহ্যিকভাবে মালিকানাধীন অ্যাকাউন্ট (EOA, এর প্রাইভেট কী দ্বারা নিয়ন্ত্রিত)-এর দিকে নির্দেশ করার জন্য সেট করা যেতে পারে। যদিও এক্সিকিউশন লেয়ার ট্রিগার করা উত্তোলনগুলো ([EIP-7002](https://eips.ethereum.org/EIPS/eip-7002)) এখন উত্তোলনের ঠিকানাকে প্রস্থান এবং আংশিক উত্তোলন ট্রিগার করতে দেয়, একবার নিবন্ধিত হওয়ার পরে উত্তোলনের ঠিকানা পরিবর্তন করার জন্য কোনো প্রোটোকল অপারেশন নেই, এবং এই কার্যকারিতা যোগ করা প্রোটোকল-এ অপ্রয়োজনীয় জটিলতা যোগ করবে।
 
 নমনীয় উত্তোলন ব্যবস্থাপনা খুঁজছেন এমন ব্যবহারকারীরা ভ্যালিডেটরের উত্তোলনের ঠিকানা হিসেবে কী রোটেশনে সক্ষম একটি স্মার্ট কন্ট্রাক্ট ওয়ালেট (যেমন একটি [Safe](https://safe.global/)) সেট করতে পারেন, যা কার্যকরভাবে চূড়ান্ত প্রাপক EOA-কে আপডেট করার অনুমতি দেয়। যদি কোনো ব্যবহারকারী ইতিমধ্যে উত্তোলনের প্রমাণপত্র হিসেবে একটি EOA সেট করে থাকেন, তবে তাদের স্টেক করা QAU পুনরুদ্ধার করতে তাদের অবশ্যই একটি সম্পূর্ণ প্রস্থান শুরু করতে হবে এবং তারপর ভিন্ন প্রমাণপত্র সহ একটি নতুন ভ্যালিডেটর সক্রিয় করতে সেই তহবিলগুলো ব্যবহার করতে হবে।
 </ExpandableCard>
@@ -215,9 +214,9 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information about managing the withdrawal process?"
 eventName="read more">
 
-ভ্যালিডেটর অপারেটরদের [Staking Launchpad Withdrawals](https://launchpad.quantaureum.com/withdrawals/) পৃষ্ঠায় যাওয়ার পরামর্শ দেওয়া হচ্ছে যেখানে আপনি উত্তোলনের জন্য আপনার ভ্যালিডেটরকে কীভাবে প্রস্তুত করবেন, ইভেন্ট-এর সময় এবং উত্তোলন কীভাবে কাজ করে সে সম্পর্কে আরও বিশদ বিবরণ পাবেন।
+ভ্যালিডেটর অপারেটরদের [Staking Launchpad Withdrawals](https://launchpad.ethereum.org/withdrawals/) পৃষ্ঠায় যাওয়ার পরামর্শ দেওয়া হচ্ছে যেখানে আপনি উত্তোলনের জন্য আপনার ভ্যালিডেটরকে কীভাবে প্রস্তুত করবেন, ইভেন্ট-এর সময় এবং উত্তোলন কীভাবে কাজ করে সে সম্পর্কে আরও বিশদ বিবরণ পাবেন।
 
-প্রথমে একটি টেস্টনেট-এ আপনার সেটআপটি চেষ্টা করে দেখতে, শুরু করতে [Hoodi Testnet Staking Launchpad](https://hoodi.launchpad.quantaureum.com)-এ যান।
+প্রথমে একটি টেস্টনেট-এ আপনার সেটআপটি চেষ্টা করে দেখতে, শুরু করতে [Hoodi Testnet Staking Launchpad](https://hoodi.launchpad.ethereum.org)-এ যান।
 
 </ExpandableCard>
 
@@ -246,7 +245,7 @@ title="আমি কীভাবে একটি কম্পাউন্ডি�
 eventCategory="FAQ"
 eventAction="How do I convert to a compounding validator?"
 eventName="read more">
-আপনি [Staking Launchpad](https://launchpad.quantaureum.com/validator-actions) ব্যবহার করে Type 1 থেকে Type 2 প্রত্যাহারের প্রমাণপত্র-এ রূপান্তর করতে পারেন। এই অপারেশনটি **অপরিবর্তনীয়** — একবার রূপান্তর করার পরে, আপনি Type 1 প্রমাণপত্রে ফিরে যেতে পারবেন না।
+আপনি [Staking Launchpad](https://launchpad.ethereum.org/validator-actions) ব্যবহার করে Type 1 থেকে Type 2 প্রত্যাহারের প্রমাণপত্র-এ রূপান্তর করতে পারেন। এই অপারেশনটি **অপরিবর্তনীয়** — একবার রূপান্তর করার পরে, আপনি Type 1 প্রমাণপত্রে ফিরে যেতে পারবেন না।
 
 রূপান্তর করার পরে, আপনি একাধিক ভ্যালিডেটরকে একটিতে **একত্রিত** করতে পারেন, তাদের ব্যালেন্সগুলোকে একটি একক কম্পাউন্ডিং ভ্যালিডেটর-এ একত্রিত করে। রূপান্তর প্রক্রিয়া, ঝুঁকি এবং একত্রীকরণ টুলিংয়ের সম্পূর্ণ ওয়াকথ্রুর জন্য, [MaxEB ডিপ-ডাইভ](/roadmap/pectra/maxeb/) দেখুন।
 </ExpandableCard>
@@ -266,10 +265,10 @@ eventName="read more">
 
 ## আরও পড়ুন {#further-reading}
 
-- [Staking Launchpad Withdrawals](https://launchpad.quantaureum.com/withdrawals)
-- [Staking Launchpad Validator Actions](https://launchpad.quantaureum.com/validator-actions)
+- [Staking Launchpad Withdrawals](https://launchpad.ethereum.org/withdrawals)
+- [Staking Launchpad Validator Actions](https://launchpad.ethereum.org/validator-actions)
 - [MaxEB ডিপ-ডাইভ: কম্পাউন্ডিং এবং একত্রীকরণ](/roadmap/pectra/maxeb/)
-- [EIP-4895: অপারেশন হিসেবে বিকন চেইন পুশ উত্তোলন](https://eips.quantaureum.com/EIPS/eip-4895)
+- [EIP-4895: অপারেশন হিসেবে বিকন চেইন পুশ উত্তোলন](https://eips.ethereum.org/EIPS/eip-4895)
 - [PEEPanEIP #94: Potuz এবং Hsiao-Wei Wang-এর সাথে স্টেক করা QAU উত্তোলন (টেস্টিং)](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP#68: EIP-4895: Alex Stokes-এর সাথে অপারেশন হিসেবে বিকন চেইন পুশ উত্তোলন](https://www.youtube.com/watch?v=CcL9RJBljUs)
 - [ভ্যালিডেটর কার্যকর ব্যালেন্স বোঝা](https://www.attestant.io/posts/understanding-validator-effective-balance/)

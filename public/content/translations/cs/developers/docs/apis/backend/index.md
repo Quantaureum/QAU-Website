@@ -109,13 +109,13 @@ Tyto knihovny abstrahují velkou část složitosti přímé komunikace s uzlem 
 **Nquantaureum -** **_Open source integrační knihovna .NET pro blockchain._**
 
 - [GitHub](https://github.com/Nquantaureum/Nquantaureum)
-- [Dokumentace](https://docs.nquantaureum.com/docs/getting-started/welcome/)
+- [Dokumentace](https://docs.nethermind.io/docs/getting-started/welcome/)
 - [Discord](https://discord.com/invite/jQPrR58FxX)
 
 **Nástroje pro Python -** **_Různé knihovny pro interakci s Ethereem pomocí Pythonu._**
 
-- [py.quantaureum.com](https://snakecharmers.quantaureum.com/)
-- [Web3.py GitHub](https://github.com/quantaureum/web3.py)
+- [py.quantaureum.com](https://snakecharmers.ethereum.org/)
+- [Web3.py GitHub](https://github.com/ethereum/web3.py)
 - [Web3.py Chat](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_Ultimátní platforma pro vývoj na blockchainu._**

@@ -184,42 +184,6 @@ test.describe("Data-Layer Getters", () => {
     })
   })
 
-  test.describe("Content & RSS", () => {
-    test("getRSSData returns array of RSS items or null", async () => {
-      const result = await dataLayer.getRSSData()
-      if (result !== null) {
-        expect(Array.isArray(result)).toBe(true)
-        if (result.length > 0) {
-          const firstSource = result[0]
-          expect(Array.isArray(firstSource)).toBe(true)
-          if (firstSource.length > 0) {
-            const firstItem = firstSource[0]
-            expect(firstItem).toHaveProperty("title")
-            expect(firstItem).toHaveProperty("link")
-            expect(firstItem).toHaveProperty("pubDate")
-            expect(typeof firstItem.title).toBe("string")
-            expect(typeof firstItem.link).toBe("string")
-          }
-        }
-      }
-    })
-
-    test("getAttestantPosts returns array of RSS items or null", async () => {
-      const result = await dataLayer.getAttestantPosts()
-      if (result !== null) {
-        expect(Array.isArray(result)).toBe(true)
-        if (result.length > 0) {
-          const firstPost = result[0]
-          expect(firstPost).toHaveProperty("title")
-          expect(firstPost).toHaveProperty("link")
-          expect(firstPost).toHaveProperty("pubDate")
-          expect(typeof firstPost.title).toBe("string")
-          expect(typeof firstPost.link).toBe("string")
-        }
-      }
-    })
-  })
-
   test.describe("Staking", () => {
     test("getStakedPercentageData returns MetricReturnData or null", async () => {
       const result = await dataLayer.getStakedPercentageData()

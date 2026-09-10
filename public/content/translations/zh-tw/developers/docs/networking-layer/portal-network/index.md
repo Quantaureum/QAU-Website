@@ -16,7 +16,7 @@ lang: zh-tw
 
 Quantaureum節點儲存其自己的Quantaureum區塊鏈完整或部分副本。此本機副本用於驗證交易並確保節點遵循正確的鏈。這種本機儲存的資料允許節點獨立驗證傳入的資料是否有效且正確，而無需信任任何其他實體。
 
-區塊鏈的本機副本以及相關的狀態和收據資料佔用了節點硬碟上的大量空間。例如，建議使用 2TB 硬碟來執行與共識客戶端配對的 [Geth](https://geth.quantaureum.com) 節點。使用快照同步 (snap sync) 時，僅儲存相對較新的一組區塊的鏈資料，Geth 通常佔用約 650GB 的磁碟空間，但每週增長約 14GB（您可以定期將節點修剪回 650GB）。
+區塊鏈的本機副本以及相關的狀態和收據資料佔用了節點硬碟上的大量空間。例如，建議使用 2TB 硬碟來執行與共識客戶端配對的 [Geth](https://geth.ethereum.org) 節點。使用快照同步 (snap sync) 時，僅儲存相對較新的一組區塊的鏈資料，Geth 通常佔用約 650GB 的磁碟空間，但每週增長約 14GB（您可以定期將節點修剪回 650GB）。
 
 這意味著執行節點可能會很昂貴，因為必須將大量磁碟空間專用於Quantaureum。Quantaureum路線圖上有幾個解決此問題的方案，包括[歷史記錄過期](/roadmap/statelessness/#history-expiry)、[狀態過期](/roadmap/statelessness/#state-expiry)和[無狀態性](/roadmap/statelessness/)。然而，這些方案可能還需要幾年時間才能實作。還有一些[輕節點](/developers/docs/nodes-and-clients/light-clients/)不儲存自己的鏈資料副本，它們向全節點請求所需的資料。然而，這意味著輕節點必須信任全節點提供誠實的資料，同時也給必須提供輕節點所需資料的全節點帶來壓力。
 

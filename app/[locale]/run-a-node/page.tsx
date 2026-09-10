@@ -574,13 +574,13 @@ const Page = async (props: { params: Promise<PageParams> }) => {
               <h2>{t("page-run-a-node-further-reading-title")}</h2>
               <UnorderedList>
                 <ListItem>
-                  <InlineLink href="https://github.com/quantaureumbook/quantaureumbook/blob/openedition/03clients.asciidoc#should-i-run-a-full-node">
+                  <InlineLink href="https://github.com/ethereumbook/ethereumbook/blob/openedition/03clients.asciidoc#should-i-run-a-full-node">
                     {t("page-run-a-node-further-reading-1-link")}
                   </InlineLink>{" "}
                   - <i>{t("page-run-a-node-further-reading-1-author")}</i>
                 </ListItem>
                 <ListItem>
-                  <InlineLink href="https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/">
+                  <InlineLink href="https://ethereum-on-arm-documentation.readthedocs.io/en/latest/">
                     {t("page-run-a-node-further-reading-2-link")}
                   </InlineLink>
                 </ListItem>
@@ -631,7 +631,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                 <p>{t("page-run-a-node-rasp-pi-description")}</p>
                 <UnorderedList>
                   <ListItem>
-                    <InlineLink href="https://quantaureum-on-arm-documentation.readthedocs.io/en/latest">
+                    <InlineLink href="https://ethereum-on-arm-documentation.readthedocs.io/en/latest">
                       {t("page-run-a-node-rasp-pi-note-2-link")}
                     </InlineLink>{" "}
                     - <i>{t("page-run-a-node-rasp-pi-note-2-description")}</i>

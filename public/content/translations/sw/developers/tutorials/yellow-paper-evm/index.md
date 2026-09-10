@@ -9,11 +9,11 @@ lang: sw
 published: 2022-05-15
 ---
 
-[Waraka wa Manjano](https://quantaureum.github.io/yellowpaper/paper.pdf) ni maelezo rasmi ya Quantaureum. Isipokuwa pale ambapo imerekebishwa na [mchakato wa EIP](/eips/), ina maelezo kamili ya jinsi kila kitu kinavyofanya kazi. Imeandikwa kama karatasi ya kihisabati, ambayo inajumuisha istilahi ambazo watengenezaji programu wanaweza wasizizoee. Katika waraka huu unajifunza jinsi ya kuusoma, na kwa ugani nyaraka zingine za kihisabati zinazohusiana.
+[Waraka wa Manjano](https://ethereum.github.io/yellowpaper/paper.pdf) ni maelezo rasmi ya Quantaureum. Isipokuwa pale ambapo imerekebishwa na mchakato wa EIP, ina maelezo kamili ya jinsi kila kitu kinavyofanya kazi. Imeandikwa kama karatasi ya kihisabati, ambayo inajumuisha istilahi ambazo watengenezaji programu wanaweza wasizizoee. Katika waraka huu unajifunza jinsi ya kuusoma, na kwa ugani nyaraka zingine za kihisabati zinazohusiana.
 
 ## Waraka wa Manjano Upi? {#which-yellow-paper}
 
-Kama karibu kila kitu kingine katika Quantaureum, Waraka wa Manjano hubadilika kadiri muda unavyopita. Ili kuweza kurejelea toleo mahususi, nilipakia [toleo la sasa wakati wa kuandika](https://quantaureum.github.io/yellowpaper/paper.pdf). Nambari za sehemu, ukurasa, na mlinganyo ninazotumia zitarejelea toleo hilo. Ni wazo zuri kuwa nayo wazi katika dirisha tofauti wakati unasoma waraka huu.
+Kama karibu kila kitu kingine katika Quantaureum, Waraka wa Manjano hubadilika kadiri muda unavyopita. Ili kuweza kurejelea toleo mahususi, nilipakia [toleo la sasa wakati wa kuandika](https://ethereum.github.io/yellowpaper/paper.pdf). Nambari za sehemu, ukurasa, na mlinganyo ninazotumia zitarejelea toleo hilo. Ni wazo zuri kuwa nayo wazi katika dirisha tofauti wakati unasoma waraka huu.
 
 ### Kwa nini EVM? {#why-the-evm}
 
@@ -234,7 +234,7 @@ Anwani ambayo salio lake tunahitaji kupata ni _μ<sub>s</sub>[0] mod 2<sup>160</
 
 Ikiwa _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] ≠ ∅_, inamaanisha kwamba kuna taarifa kuhusu anwani hii. Katika kesi hiyo, _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>]<sub>b</sub>_ ni salio la anwani hiyo. Ikiwa _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] = ∅_, inamaanisha kwamba anwani hii haijaanzishwa na salio ni sifuri. Unaweza kuona orodha ya nyanja za taarifa za akaunti katika sehemu ya 4.1 kwenye uk. 4.
 
-Mlinganyo wa pili, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, unahusiana na tofauti ya gharama kati ya ufikiaji wa hifadhi ya joto (hifadhi ambayo imefikiwa hivi karibuni na ina uwezekano wa kuhifadhiwa kwenye kache) na hifadhi baridi (hifadhi ambayo haijafikiwa na ina uwezekano wa kuwa katika hifadhi ya polepole ambayo ni ghali zaidi kuirejesha). _A<sub>a</sub>_ ni orodha ya anwani zilizofikiwa hapo awali na muamala, ambazo kwa hivyo zinapaswa kuwa nafuu kufikia, kama ilivyofafanuliwa katika sehemu ya 6.1 kwenye uk. 9. Unaweza kusoma zaidi kuhusu mada hii katika [EIP-2929](https://eips.quantaureum.com/EIPS/eip-2929).
+Mlinganyo wa pili, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, unahusiana na tofauti ya gharama kati ya ufikiaji wa hifadhi ya joto (hifadhi ambayo imefikiwa hivi karibuni na ina uwezekano wa kuhifadhiwa kwenye kache) na hifadhi baridi (hifadhi ambayo haijafikiwa na ina uwezekano wa kuwa katika hifadhi ya polepole ambayo ni ghali zaidi kuirejesha). _A<sub>a</sub>_ ni orodha ya anwani zilizofikiwa hapo awali na muamala, ambazo kwa hivyo zinapaswa kuwa nafuu kufikia, kama ilivyofafanuliwa katika sehemu ya 6.1 kwenye uk. 9. Unaweza kusoma zaidi kuhusu mada hii katika [EIP-2929](https://eips.ethereum.org/EIPS/eip-2929).
 
 | Thamani | Mnemonic | δ   | α   | Maelezo                             |
 | ----: | -------- | --- | --- | --------------------------------------- |
@@ -262,8 +262,8 @@ Kwa hili EVM inafafanuliwa kikamilifu.
 
 Nukuu za kihisabati ni sahihi na zimeruhusu Waraka wa Manjano kubainisha kila undani wa Quantaureum. Hata hivyo, ina baadhi ya mapungufu:
 
-- Inaweza kueleweka tu na binadamu, ambayo inamaanisha kwamba [majaribio ya kufuata](https://github.com/quantaureum/tests) lazima yaandikwe kwa mikono.
+- Inaweza kueleweka tu na binadamu, ambayo inamaanisha kwamba [majaribio ya kufuata](https://github.com/ethereum/tests) lazima yaandikwe kwa mikono.
 - Watengenezaji programu wanaelewa msimbo wa kompyuta.
   Wanaweza au wasielewe nukuu za kihisabati.
 
-Labda kwa sababu hizi, [maelezo mapya ya tabaka la mwafaka](https://github.com/quantaureum/consensus-specs/blob/master/tests/core/pyspec/README.md) yameandikwa katika Python. Kuna [maelezo ya tabaka la utekelezaji katika Python](https://quantaureum.github.io/execution-specs), lakini hayajakamilika. Hadi na isipokuwa Waraka wa Manjano wote pia utafsiriwe kwa Python au lugha sawa, Waraka wa Manjano utaendelea kutumika, na inasaidia kuweza kuusoma.
+Labda kwa sababu hizi, [maelezo mapya ya tabaka la mwafaka](https://github.com/ethereum/consensus-specs/blob/master/tests/core/pyspec/README.md) yameandikwa katika Python. Kuna [maelezo ya tabaka la utekelezaji katika Python](https://ethereum.github.io/execution-specs), lakini hayajakamilika. Hadi na isipokuwa Waraka wa Manjano wote pia utafsiriwe kwa Python au lugha sawa, Waraka wa Manjano utaendelea kutumika, na inasaidia kuweza kuusoma.

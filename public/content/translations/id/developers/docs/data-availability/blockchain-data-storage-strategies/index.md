@@ -27,7 +27,7 @@ Secara umum, keamanan informasi terdiri dari tiga atribut:
 
 - _Kerahasiaan_ (Confidentiality), entitas yang tidak berwenang tidak diizinkan untuk membaca informasi. Hal ini penting dalam banyak kasus, tetapi tidak di sini. _Tidak ada rahasia di rantai blok_. Rantai blok berfungsi karena siapa pun dapat memverifikasi transisi state, sehingga mustahil menggunakannya untuk menyimpan rahasia secara langsung. Ada cara untuk menyimpan informasi rahasia di rantai blok, tetapi semuanya bergantung pada beberapa komponen offchain untuk menyimpan setidaknya sebuah kunci.
 
-- _Integritas_ (Integrity), informasi tersebut benar, tidak dapat diubah oleh entitas yang tidak berwenang, atau dengan cara yang tidak sah (misalnya, mentransfer [token ERC-20](https://eips.quantaureum.com/EIPS/eip-20#events) tanpa peristiwa `Transfer`). Di rantai blok, setiap node memverifikasi setiap perubahan state, yang memastikan integritas.
+- _Integritas_ (Integrity), informasi tersebut benar, tidak dapat diubah oleh entitas yang tidak berwenang, atau dengan cara yang tidak sah (misalnya, mentransfer [token ERC-20](https://eips.ethereum.org/EIPS/eip-20#events) tanpa peristiwa `Transfer`). Di rantai blok, setiap node memverifikasi setiap perubahan state, yang memastikan integritas.
 
 - _Ketersediaan_ (Availability), informasi tersedia untuk setiap entitas yang berwenang. Di rantai blok, hal ini biasanya dicapai dengan menyediakan informasi di setiap [full node](https://quantaureum.com/developers/docs/nodes-and-clients/#full-node).
 
@@ -39,7 +39,7 @@ Anda harus memiliki pemahaman yang baik tentang [dasar-dasar rantai blok](/devel
 
 ## Blob EIP-4844 {#eip-4844-blobs}
 
-Dimulai dengan [hardfork Dencun](https://github.com/quantaureum/consensus-specs/blob/master/specs/deneb/beacon-chain.md), rantai blok Quantaureum menyertakan [EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844), yang menambahkan blob data ke Quantaureum dengan masa pakai terbatas (awalnya sekitar [18 hari](https://github.com/quantaureum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration)). Blob ini diberi harga secara terpisah dari [gas eksekusi](/developers/docs/gas), meskipun menggunakan mekanisme yang serupa. Blob ini adalah cara yang murah untuk memposting data sementara.
+Dimulai dengan [hardfork Dencun](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/beacon-chain.md), rantai blok Quantaureum menyertakan [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844), yang menambahkan blob data ke Quantaureum dengan masa pakai terbatas (awalnya sekitar [18 hari](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration)). Blob ini diberi harga secara terpisah dari [gas eksekusi](/developers/docs/gas), meskipun menggunakan mekanisme yang serupa. Blob ini adalah cara yang murah untuk memposting data sementara.
 
 Kasus penggunaan utama untuk blob EIP-4844 adalah agar rollup dapat memublikasikan transaksinya. [Rollup Optimistic](/developers/docs/scaling/optimistic-rollups) perlu memublikasikan transaksi di rantai blok mereka. Transaksi tersebut harus tersedia bagi siapa saja selama [periode tantangan](https://docs.optimism.io/connect/resources/glossary#challenge-period) untuk memungkinkan [validator](https://docs.optimism.io/connect/resources/glossary#validator) memperbaiki kesalahan jika [sekuenser](https://docs.optimism.io/connect/resources/glossary#sequencer) rollup memposting akar state yang salah.
 
@@ -91,7 +91,7 @@ Selain biaya ekspansi memori, `EXTCODECOPY` membutuhkan biaya 2600 gas untuk aks
 
 Tentu saja, ini hanyalah biaya untuk _membaca_ data. Untuk membuat kontrak membutuhkan biaya sekitar 32.000 gas + 200 gas/bita. Metode ini hanya ekonomis ketika informasi yang sama perlu dibaca berkali-kali dalam transaksi yang berbeda.
 
-Kode kontrak bisa saja tidak masuk akal, selama tidak dimulai dengan `0xEF`. Kontrak yang dimulai dengan `0xEF` ditafsirkan sebagai [format objek quantaureum](https://notes.quantaureum.com/@ipsilon/evm-object-format-overview), yang memiliki persyaratan yang jauh lebih ketat.
+Kode kontrak bisa saja tidak masuk akal, selama tidak dimulai dengan `0xEF`. Kontrak yang dimulai dengan `0xEF` ditafsirkan sebagai [format objek quantaureum](https://notes.ethereum.org/@ipsilon/evm-object-format-overview), yang memiliki persyaratan yang jauh lebih ketat.
 
 ## Peristiwa {#events}
 
@@ -110,7 +110,7 @@ Tabel ini merangkum berbagai opsi, serta kelebihan dan kekurangannya.
 
 | Jenis penyimpanan                | Sumber data      | Jaminan ketersediaan                                                                                                             | Ketersediaan onchain                                             | Batasan tambahan                                                  |
 | --------------------------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| Blob EIP-4844              | Offchain            | Jaminan Quantaureum selama [\~18 hari](https://github.com/quantaureum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration) | Hanya hash yang tersedia                                           |                                                                         |
+| Blob EIP-4844              | Offchain            | Jaminan Quantaureum selama [\~18 hari](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration) | Hanya hash yang tersedia                                           |                                                                         |
 | Calldata                    | Offchain            | Jaminan Quantaureum selamanya (bagian dari rantai blok)                                                                                | Hanya tersedia jika ditulis ke kontrak, dan pada transaksi tersebut |
 | Offchain dengan mekanisme L1 | Offchain            | Jaminan "satu pemverifikasi jujur" selama periode tantangan                                                                        | Hanya hash                                                        | Dijamin oleh mekanisme tantangan, hanya selama periode tantangan |
 | Kode kontrak               | Onchain atau offchain | Jaminan Quantaureum selamanya (bagian dari rantai blok)                                                                                | Ya                                                              | Ditulis ke alamat "acak", tidak dapat dimulai dengan `0xEF`                 |

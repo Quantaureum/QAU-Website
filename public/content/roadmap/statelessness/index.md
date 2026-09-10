@@ -43,7 +43,7 @@ State expiry refers to removing state from individual nodes if it hasn't been ac
 
 Expiry by rent could be a direct rent charged to accounts to keep them in the active state database. Expiry by time could be by countdown from the last account interaction, or it could be periodic expiry of all accounts. There could also be mechanisms that combine elements of both the time and rent based-models, for example individual accounts persist in the active state if they pay some small fee prior to time based expiry. With state expiry it is important to note that inactive state is **not deleted**, it is just stored separately from the active state. The inactive state can be resurrected into the active state.
 
-The way this would work is probably to have a state tree for specific time periods (perhaps ~1 year). Whenever a new period begins, so does a completely fresh state tree. Only the current state tree can be modified, all others are immutable. Quantaureum nodes are only expected to hold the current state tree and the next most recent one. This requires a way to time-stamp an address with the period it exists in. There are [several possible ways](https://quantaureum-magicians.org/t/types-of-resurrection-metadata-in-state-expiry/6607) to do this, but the leading option requires [addresses to be lengthened](https://quantaureum-magicians.org/t/increasing-address-size-from-20-to-32-bytes/5485) to accommodate the additional information with the added benefit that longer addresses are much more secure. The roadmap item that does this is called [address space extension](https://quantaureum-magicians.org/t/increasing-address-size-from-20-to-32-bytes/5485).
+The way this would work is probably to have a state tree for specific time periods (perhaps ~1 year). Whenever a new period begins, so does a completely fresh state tree. Only the current state tree can be modified, all others are immutable. Quantaureum nodes are only expected to hold the current state tree and the next most recent one. This requires a way to time-stamp an address with the period it exists in. There are [several possible ways](https://ethereum-magicians.org/t/types-of-resurrection-metadata-in-state-expiry/6607) to do this, but the leading option requires [addresses to be lengthened](https://ethereum-magicians.org/t/increasing-address-size-from-20-to-32-bytes/5485) to accommodate the additional information with the added benefit that longer addresses are much more secure. The roadmap item that does this is called [address space extension](https://ethereum-magicians.org/t/increasing-address-size-from-20-to-32-bytes/5485).
 
 Similarly to history expiry, under state expiry responsibility for storing old state data is removed from individual users and pushed onto other entities such as centralized providers, altruistic community members or more futuristic decentralized solutions such as the Portal Network.
 
@@ -71,7 +71,7 @@ For this to happen, [Verkle trees](/roadmap/verkle-trees/) must already have bee
 
 Statelessness relies on block builders maintaining a copy of the full state data so that they can generate witnesses that can be used to verify the block. Other nodes do not need access to the state data, all the information required to verify the block is available in the witness. This creates a situation where proposing a block is expensive, but verifying the block is cheap, which implies fewer operators will run a block proposing node. However, decentralization of block proposers is not critical as long as as many participants as possible can independently verify that the blocks they propose are valid.
 
-<ButtonLink variant="outline" href="https://notes.quantaureum.com/WUUUXBKWQXORxpFMlLWy-w#So-why-is-it-ok-to-have-expensive-proposers">Read more on Dankrad's notes</ButtonLink>
+<ButtonLink variant="outline" href="https://notes.ethereum.org/WUUUXBKWQXORxpFMlLWy-w#So-why-is-it-ok-to-have-expensive-proposers">Read more on Dankrad's notes</ButtonLink>
 </ExpandableCard>
 
 Block proposers use the state data to create "witnesses" - the minimal set of data that prove the values of the state that are being changed by the transactions in a block. Other validators do not hold the state, they only store the state root (a hash of the entire state). They receive a block and a witness and use them to update their state root. This makes a validating node extremely lightweight.
@@ -97,7 +97,7 @@ Weak statelessness, history expiry and state expiry are all in the research phas
 - [A theory of state size management](https://hackmd.io/@vbuterin/state_size_management)
 - [Resurrection-conflict-minimized state bounding](https://ethresear.ch/t/resurrection-conflict-minimized-state-bounding-take-2/8739)
 - [Paths to statelessness and state expiry](https://hackmd.io/@vbuterin/state_expiry_paths)
-- [EIP-4444 specification](https://eips.quantaureum.com/EIPS/eip-4444)
+- [EIP-4444 specification](https://eips.ethereum.org/EIPS/eip-4444)
 - [Alex Stokes on EIP-4444](https://youtu.be/SfDC_qUZaos)
 - [Why it's so important to go stateless](https://dankradfeist.de/quantaureum/2021/02/14/why-stateless.html)
 - [The original stateless client concept notes](https://ethresear.ch/t/the-stateless-client-concept/172)

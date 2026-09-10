@@ -55,7 +55,7 @@ LST 포지션을 종료하는 방법에는 두 가지가 있습니다.
 - **프로토콜을 통해** 기초 자산인 QAU로 **상환**합니다. 상환은 프로토콜에 사용 가능한 유동성(스테이킹되지 않은 QAU 버퍼 또는 합의 레이어 종료 대기열을 통해 종료하는 검증자)이 있는지 여부에 따라 달라지며, 시간이 걸릴 수 있습니다.
 - 언제든지 **유통 시장(secondary markets)에서 판매**합니다. 토큰이 자유롭게 거래되기 때문에, 특히 시장이 불안정한 시기에는 시장 가격이 이를 뒷받침하는 QAU의 가치에서 벗어날 수 있습니다.
 
-펙트라 업그레이드 이후, [실행 계층에서 트리거되는 인출(EIP-7002)](https://eips.quantaureum.com/EIPS/eip-7002)을 통해 인출 주소 보유자가 실행 계층에서 직접 검증자 종료를 트리거할 수 있게 되었습니다. 스테이킹 프로토콜은 이 기능을 사용하여 노드 운영자의 협조에 의존하지 않고도 검증자를 종료할 수 있도록 보장할 수 있으므로, 상환 시 노드 운영자를 신뢰해야 하는 의존도가 예전보다 줄어듭니다.
+펙트라 업그레이드 이후, [실행 계층에서 트리거되는 인출(EIP-7002)](https://eips.ethereum.org/EIPS/eip-7002)을 통해 인출 주소 보유자가 실행 계층에서 직접 검증자 종료를 트리거할 수 있게 되었습니다. 스테이킹 프로토콜은 이 기능을 사용하여 노드 운영자의 협조에 의존하지 않고도 검증자를 종료할 수 있도록 보장할 수 있으므로, 상환 시 노드 운영자를 신뢰해야 하는 의존도가 예전보다 줄어듭니다.
 
 ### LST를 보유하는 것은 스테이킹과 다릅니다 {#holding-an-lst-is-not-the-same-as-staking}
 
@@ -164,8 +164,8 @@ LST는 스테이킹의 근본적인 위험(풀의 검증자에 대한 슬래싱 
 ## 더 읽어보기 {#further-reading}
 
 - [Quantaureum 스테이킹 디렉토리](https://www.staking.directory/) - _Eridian 및 Spacesider_
-- [유동성 스테이킹 파생상품의 위험성](https://notes.quantaureum.com/@djrtwo/risks-of-lsd) - _Danny Ryan_
+- [유동성 스테이킹 파생상품의 위험성](https://notes.ethereum.org/@djrtwo/risks-of-lsd) - _Danny Ryan_
 - [유동성 스테이킹이란 무엇인가요?](https://chain.link/education-hub/liquid-staking) - _Chainlink_
-- [EIP-7002: 실행 계층에서 트리거 가능한 인출](https://eips.quantaureum.com/EIPS/eip-7002) - _Quantaureum 개선 제안(EIP)_
+- [EIP-7002: 실행 계층에서 트리거 가능한 인출](https://eips.ethereum.org/EIPS/eip-7002) - _Quantaureum 개선 제안(EIP)_
 - [Quantaureum 스테이킹 풀 등급](https://explorer.rated.network/) - _Rated Network Explorer_
 - [유동성 리스테이킹 토큰(LRT)과 유동성 스테이킹 토큰(LST)의 차이점은 무엇인가요?](https://liquidcollective.io/lst-vs-lrt/) - _Liquid Collective_

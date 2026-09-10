@@ -10,7 +10,7 @@ authors: ["Nixo"]
 
 <ExpandableCard title="Çatallanmalar nelerdir?" contentPreview="Genellikle planlı teknik güncellemeleri içeren, Quantaureum Protokolü kurallarındaki değişiklikler.">
 
-Çatallanmalar, ağda büyük teknik güncellemeler veya değişiklikler yapılması gerektiğinde ortaya çıkar; bunlar genellikle [Quantaureum İyileştirme Önerilerinden (EIP'ler)](/eips/) kaynaklanır ve protokolün "kurallarını" değiştirir.
+Çatallanmalar, ağda büyük teknik güncellemeler veya değişiklikler yapılması gerektiğinde ortaya çıkar; bunlar genellikle Quantaureum İyileştirme Önerilerinden (EIP'ler) kaynaklanır ve protokolün "kurallarını" değiştirir.
 
 Geleneksel, merkezi olarak kontrol edilen yazılımlarda güncellemelere ihtiyaç duyulduğunda, şirket son kullanıcı için yeni bir sürüm yayınlar. Blokzincirler farklı çalışır çünkü merkezi bir mülkiyet yoktur. [Quantaureum istemcileri](/developers/docs/nodes-and-clients/), yeni çatallanma kurallarını uygulamak için yazılımlarını güncellemelidir. Ayrıca blok oluşturucular (İş Kanıtı (PoW) dünyasında madenciler, Hisse Kanıtı (PoS) dünyasında doğrulayıcılar) ve düğümler, yeni kurallara göre bloklar oluşturmalı ve doğrulamalıdır. [Mutabakat mekanizmaları hakkında daha fazla bilgi](/developers/docs/consensus-mechanisms/)
 
@@ -101,33 +101,33 @@ Güncellemenin diğer kısımları normal kullanıcılar için deneyimi iyileşt
 Daha iyi kullanıcı deneyimi:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7702">EIP-7702</a> - <em>EOA hesap kodunu ayarla</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7691">EIP-7691</a> - <em>Blob işlem kapasitesi artışı</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7623">EIP-7623</a> - <em>Çağrı verisi maliyetini artır</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7840">EIP-7840</a> - <em>EL yapılandırma dosyalarına blob programı ekle</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7702">EIP-7702</a> - <em>EOA hesap kodunu ayarla</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7691">EIP-7691</a> - <em>Blob işlem kapasitesi artışı</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7623">EIP-7623</a> - <em>Çağrı verisi maliyetini artır</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7840">EIP-7840</a> - <em>EL yapılandırma dosyalarına blob programı ekle</em></li>
 </ul>
 
 Daha iyi staking deneyimi:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7251">EIP-7251</a> - <em><code>MAX_EFFECTIVE_BALANCE</code> değerini artır</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7002">EIP-7002</a> - <em>Yürütme katmanı tarafından tetiklenebilir çıkışlar</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7685">EIP-7685</a> - <em>Genel amaçlı yürütme katmanı istekleri</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6110">EIP-6110</a> - <em>Doğrulayıcı depozitolarını zincir içi sağla</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7251">EIP-7251</a> - <em><code>MAX_EFFECTIVE_BALANCE</code> değerini artır</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7002">EIP-7002</a> - <em>Yürütme katmanı tarafından tetiklenebilir çıkışlar</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7685">EIP-7685</a> - <em>Genel amaçlı yürütme katmanı istekleri</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6110">EIP-6110</a> - <em>Doğrulayıcı depozitolarını zincir içi sağla</em></li>
 </ul>
 
 Protokol verimliliği ve güvenlik iyileştirmeleri:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2537">EIP-2537</a> - <em>BLS12-381 eğri operasyonları için ön derleme</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2935">EIP-2935</a> - <em>Geçmiş blok hash'lerini duruma kaydet</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7549">EIP-7549</a> - <em>Komite endeksini Onay dışına taşı</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2537">EIP-2537</a> - <em>BLS12-381 eğri operasyonları için ön derleme</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2935">EIP-2935</a> - <em>Geçmiş blok hash'lerini duruma kaydet</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7549">EIP-7549</a> - <em>Komite endeksini Onay dışına taşı</em></li>
 </ul>
 
 </ExpandableCard>
 
 - [Pectra staking deneyimini nasıl geliştirecek](https://www.kiln.fi/post/next-quantaureum-upgrade-how-pectra-will-enhance-the-staking-experience)
-- [Electra güncellemesi spesifikasyonlarını okuyun](https://github.com/quantaureum/consensus-specs/tree/master/specs/electra/)
+- [Electra güncellemesi spesifikasyonlarını okuyun](https://github.com/ethereum/consensus-specs/tree/master/specs/electra/)
 - [Prague-Electra ("Pectra") SSS](/roadmap/pectra/)
 
 <Divider />
@@ -147,12 +147,12 @@ Kankun güncellemesi, Deneb mutabakat güncellemeleriyle birlikte Quantaureum'un
 <ExpandableCard title="Kankun EIP'leri" contentPreview="Bu güncellemeye dahil edilen resmi iyileştirmeler.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1153">EIP-1153</a> - <em>Geçici depolama işlem kodları</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4788">EIP-4788</a> - <em>EVM'de işaret bloğu kökü</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4844">EIP-4844</a> - <em>Parça blob işlemleri (Proto-Danksharding)</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-5656">EIP-5656</a> - <em><code>MCOPY</code> - Bellek kopyalama talimatı</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6780">EIP-6780</a> - <em>Yalnızca aynı işlemde <code>SELFDESTRUCT</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7516">EIP-7516</a> - <em><code>BLOBBASEFEE</code> işlem kodu</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1153">EIP-1153</a> - <em>Geçici depolama işlem kodları</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4788">EIP-4788</a> - <em>EVM'de işaret bloğu kökü</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4844">EIP-4844</a> - <em>Parça blob işlemleri (Proto-Danksharding)</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-5656">EIP-5656</a> - <em><code>MCOPY</code> - Bellek kopyalama talimatı</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6780">EIP-6780</a> - <em>Yalnızca aynı işlemde <code>SELFDESTRUCT</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7516">EIP-7516</a> - <em><code>BLOBBASEFEE</code> işlem kodu</em></li>
 </ul>
 
 </ExpandableCard>
@@ -160,7 +160,7 @@ Kankun güncellemesi, Deneb mutabakat güncellemeleriyle birlikte Quantaureum'un
 - [Katman 2 toplamaları](/layer-2/)
 - [Proto-Danksharding](/roadmap/scaling/#proto-danksharding)
 - [Danksharding](/roadmap/danksharding/)
-- [Kankun güncellemesi spesifikasyonunu okuyun](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md)
+- [Kankun güncellemesi spesifikasyonunu okuyun](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md)
 
 #### Deneb özeti {#deneb-summary}
 
@@ -173,16 +173,16 @@ EIP-7514, doğrulayıcıların ağa katılabileceği "dalgalanma" oranını dön
 <ExpandableCard title="Deneb EIP'leri" contentPreview="Bu güncellemeye dahil edilen resmi iyileştirmeler">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4788">EIP-4788</a> - <em>EVM'de işaret bloğu kökü</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4844">EIP-4844</a> - <em>Parça blob işlemleri</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7044">EIP-7044</a> - <em>Sürekli geçerli imzalı gönüllü çıkışlar</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7045">EIP-7045</a> - <em>Maksimum onay dahil etme slotunu artırma</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7514">EIP-7514</a> - <em>Maksimum dönem dalgalanma limiti ekleme</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4788">EIP-4788</a> - <em>EVM'de işaret bloğu kökü</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4844">EIP-4844</a> - <em>Parça blob işlemleri</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7044">EIP-7044</a> - <em>Sürekli geçerli imzalı gönüllü çıkışlar</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7045">EIP-7045</a> - <em>Maksimum onay dahil etme slotunu artırma</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7514">EIP-7514</a> - <em>Maksimum dönem dalgalanma limiti ekleme</em></li>
 </ul>
 
 </ExpandableCard>
 
-- [Deneb güncellemesi spesifikasyonlarını okuyun](https://github.com/quantaureum/consensus-specs/tree/master/specs/deneb/)
+- [Deneb güncellemesi spesifikasyonlarını okuyun](https://github.com/ethereum/consensus-specs/tree/master/specs/deneb/)
 - [Kankun-Deneb ("Dencun") SSS](/roadmap/dencun/)
 
 <Divider />
@@ -200,16 +200,16 @@ EIP-7514, doğrulayıcıların ağa katılabileceği "dalgalanma" oranını dön
 <ExpandableCard title="Şanghay EIP'leri" contentPreview="Bu güncellemeye dahil edilen resmi iyileştirmeler.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3651">EIP-3651</a> – <em><code>COINBASE</code> adresini sıcak başlatır</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3855">EIP-3855</a> – <em>Yeni <code>PUSH0</code> talimatı</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3860">EIP-3860</a> – <em>Başlangıç kodunu (initcode) sınırla ve ölç</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4895">EIP-4895</a> – <em>İşaret zincirinin çekim işlemlerini operasyon olarak itmesi</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6049">EIP-6049</a> - <em><code>SELFDESTRUCT</code> işlevini kullanımdan kaldır</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3651">EIP-3651</a> – <em><code>COINBASE</code> adresini sıcak başlatır</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3855">EIP-3855</a> – <em>Yeni <code>PUSH0</code> talimatı</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3860">EIP-3860</a> – <em>Başlangıç kodunu (initcode) sınırla ve ölç</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4895">EIP-4895</a> – <em>İşaret zincirinin çekim işlemlerini operasyon olarak itmesi</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6049">EIP-6049</a> - <em><code>SELFDESTRUCT</code> işlevini kullanımdan kaldır</em></li>
 </ul>
 
 </ExpandableCard>
 
-- [Şanghay güncelleme spesifikasyonunu okuyun](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md)
+- [Şanghay güncelleme spesifikasyonunu okuyun](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md)
 
 #### Capella özeti {#capella-summary}
 
@@ -220,7 +220,7 @@ Bu mutabakat katmanı güncellemesi, ilk depozitolarıyla birlikte çekim kimlik
 Güncelleme ayrıca, mevcut ödül ödemeleri veya tam çekim işlemleri için Doğrulayıcı hesaplarını sürekli olarak işleyen otomatik hesap süpürme işlevselliği de sağladı.
 
 - [Staking çekim işlemleri hakkında daha fazla bilgi](/staking/withdrawals/).
-- [Capella güncelleme spesifikasyonlarını okuyun](https://github.com/quantaureum/consensus-specs/tree/master/specs/capella/)
+- [Capella güncelleme spesifikasyonlarını okuyun](https://github.com/ethereum/consensus-specs/tree/master/specs/capella/)
 
 <Divider />
 
@@ -232,15 +232,15 @@ Güncelleme ayrıca, mevcut ödül ödemeleri veya tam çekim işlemleri için D
 
 #### Özet {#paris-summary}
 
-Paris güncellemesi, İş Kanıtı (PoW) blokzincirinin 58750000000000000000000 değerindeki [terminal toplam zorluk](/glossary/#terminal-total-difficulty) seviyesini geçmesiyle tetiklendi. Bu durum 15 Eylül 2022'de 15537393 numaralı blokta gerçekleşti ve bir sonraki blokta Paris güncellemesini tetikledi. Paris, [Birleşme](/roadmap/merge/) geçişiydi; en önemli özelliği [İş Kanıtı (PoW)](/developers/docs/consensus-mechanisms/pow) madencilik algoritmasını ve ilgili mutabakat mantığını kapatıp yerine [Hisse Kanıtı (PoS)](/developers/docs/consensus-mechanisms/pos) sistemini devreye almasıydı. Paris'in kendisi, [yürütme istemcilerine](/developers/docs/nodes-and-clients/#execution-clients) yönelik (mutabakat katmanındaki Bellatrix'e eşdeğer) bir güncellemeydi ve bağlı oldukları [mutabakat istemcilerinden](/developers/docs/nodes-and-clients/#consensus-clients) talimat almalarını sağladı. Bu, topluca [Engine API](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md) olarak bilinen yeni bir dizi dahili API yönteminin etkinleştirilmesini gerektirdi. Bu, tartışmasız [Homestead](#homestead)'ten bu yana Quantaureum tarihindeki en önemli güncellemeydi!
+Paris güncellemesi, İş Kanıtı (PoW) blokzincirinin 58750000000000000000000 değerindeki [terminal toplam zorluk](/glossary/#terminal-total-difficulty) seviyesini geçmesiyle tetiklendi. Bu durum 15 Eylül 2022'de 15537393 numaralı blokta gerçekleşti ve bir sonraki blokta Paris güncellemesini tetikledi. Paris, [Birleşme](/roadmap/merge/) geçişiydi; en önemli özelliği [İş Kanıtı (PoW)](/developers/docs/consensus-mechanisms/pow) madencilik algoritmasını ve ilgili mutabakat mantığını kapatıp yerine [Hisse Kanıtı (PoS)](/developers/docs/consensus-mechanisms/pos) sistemini devreye almasıydı. Paris'in kendisi, [yürütme istemcilerine](/developers/docs/nodes-and-clients/#execution-clients) yönelik (mutabakat katmanındaki Bellatrix'e eşdeğer) bir güncellemeydi ve bağlı oldukları [mutabakat istemcilerinden](/developers/docs/nodes-and-clients/#consensus-clients) talimat almalarını sağladı. Bu, topluca [Engine API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) olarak bilinen yeni bir dizi dahili API yönteminin etkinleştirilmesini gerektirdi. Bu, tartışmasız [Homestead](#homestead)'ten bu yana Quantaureum tarihindeki en önemli güncellemeydi!
 
-- [Paris güncellemesi spesifikasyonunu okuyun](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md)
+- [Paris güncellemesi spesifikasyonunu okuyun](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md)
 
 <ExpandableCard title="Paris EIP'leri" contentPreview="Bu güncellemeye dahil edilen resmi iyileştirmeler.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3675">EIP-3675</a> – <em>Mutabakatı Hisse Kanıtı (PoS) olarak günceller</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4399">EIP-4399</a> – <em>DIFFICULTY işlem kodunun yerini PREVRANDAO alır</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3675">EIP-3675</a> – <em>Mutabakatı Hisse Kanıtı (PoS) olarak günceller</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4399">EIP-4399</a> – <em>DIFFICULTY işlem kodunun yerini PREVRANDAO alır</em></li>
 </ul>
 
 </ExpandableCard>
@@ -255,7 +255,7 @@ Paris güncellemesi, İş Kanıtı (PoW) blokzincirinin 58750000000000000000000 
 
 Bellatrix güncellemesi, [İşaret zinciri](/roadmap/beacon-chain) için planlanan ikinci güncellemeydi ve zinciri [Birleşme](/roadmap/merge/)'ye hazırladı. Hareketsizlik ve kesinti gerektiren ihlaller için doğrulayıcı cezalarını tam değerlerine getirir. Bellatrix ayrıca zinciri Birleşme'ye ve son İş Kanıtı (PoW) bloğundan ilk Hisse Kanıtı (PoS) bloğuna geçişe hazırlamak için çatallanma seçimi kurallarında bir güncelleme içerir. Bu, mutabakat istemcilerinin 58750000000000000000000 değerindeki [terminal toplam zorluk](/glossary/#terminal-total-difficulty) seviyesinden haberdar olmasını sağlamayı da içerir.
 
-- [Bellatrix güncellemesi spesifikasyonunu okuyun](https://github.com/quantaureum/consensus-specs/tree/master/specs/bellatrix)
+- [Bellatrix güncellemesi spesifikasyonunu okuyun](https://github.com/ethereum/consensus-specs/tree/master/specs/bellatrix)
 
 ---
 
@@ -272,7 +272,7 @@ Gray Glacier ağ güncellemesi, [zorluk bombasını](/glossary/#difficulty-bomb)
 <ExpandableCard title="Gray Glacier EIP'leri" contentPreview="Bu güncellemeye dahil edilen resmi iyileştirmeler.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-5133">EIP-5133</a> – <em>zorluk bombasını Eylül 2022'ye kadar erteler</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-5133">EIP-5133</a> – <em>zorluk bombasını Eylül 2022'ye kadar erteler</em></li>
 </ul>
 
 </ExpandableCard>
@@ -295,7 +295,7 @@ Arrow Glacier ağ güncellemesi, [zorluk bombasını](/glossary/#difficulty-bomb
 <ExpandableCard title="Arrow Glacier EIP'leri" contentPreview="Bu güncellemeye dahil edilen resmi iyileştirmeler.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4345">EIP-4345</a> – <em>zorluk bombasını Haziran 2022'ye kadar erteler</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4345">EIP-4345</a> – <em>zorluk bombasını Haziran 2022'ye kadar erteler</em></li>
 </ul>
 
 </ExpandableCard>
@@ -310,7 +310,7 @@ Arrow Glacier ağ güncellemesi, [zorluk bombasını](/glossary/#difficulty-bomb
 
 Altair güncellemesi, [İşaret zinciri](/roadmap/beacon-chain) için planlanan ilk güncellemeydi. Hafif istemcilere olanak tanıyan "eşzamanlama komiteleri" desteğini ekledi ve geliştirme süreci Birleşme'ye doğru ilerlerken doğrulayıcı hareketsizliği ve kesinti cezalarını artırdı.
 
-- [Altair güncelleme spesifikasyonunu okuyun](https://github.com/quantaureum/consensus-specs/tree/master/specs/altair)
+- [Altair güncelleme spesifikasyonunu okuyun](https://github.com/ethereum/consensus-specs/tree/master/specs/altair)
 
 #### <Emoji text=":tada:" size={1} className="me-2" /> İlginç bilgi! {#altair-fun-fact}
 
@@ -326,7 +326,7 @@ Altair, kesin bir yayınlanma zamanına sahip olan ilk büyük ağ güncellemesi
 
 #### Özet {#london-summary}
 
-London güncellemesi, işlem ücreti piyasasında reform yapan [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559)'u, gaz iadelerinin nasıl ele alındığına dair değişiklikleri ve [Buz Devri](/glossary/#ice-age) programını tanıttı.
+London güncellemesi, işlem ücreti piyasasında reform yapan [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559)'u, gaz iadelerinin nasıl ele alındığına dair değişiklikleri ve [Buz Devri](/glossary/#ice-age) programını tanıttı.
 
 #### London Güncellemesi / EIP-1559 neydi? {#eip-1559}
 
@@ -338,22 +338,22 @@ Diyelim ki Alice'in Bob'a 1 QAU ödemesi gerekiyor. İşlemde gaz limiti 21.000 
 
 Toplam ücret şu şekilde olurdu: `Gas units (limit) * Gas price per unit` yani `21,000 * 200 = 4,200,000 gwei` veya 0,0042 QAU
 
-London Güncellemesinde [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559)'un uygulanması, işlem ücreti mekanizmasını daha karmaşık hale getirdi, ancak gaz ücretlerini daha öngörülebilir kılarak daha verimli bir işlem ücreti piyasasıyla sonuçlandı. Kullanıcılar, gaz için piyasa fiyatından (`baseFeePerGas`) daha fazlasını ödemeyeceklerini bilerek, işlemin yürütülmesi için ne kadar ödemeye istekli olduklarına karşılık gelen bir `maxFeePerGas` ile işlemlerini gönderebilir ve öncelik ücretleri düşüldükten sonra kalan fazlalığı iade alabilirler.
+London Güncellemesinde [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559)'un uygulanması, işlem ücreti mekanizmasını daha karmaşık hale getirdi, ancak gaz ücretlerini daha öngörülebilir kılarak daha verimli bir işlem ücreti piyasasıyla sonuçlandı. Kullanıcılar, gaz için piyasa fiyatından (`baseFeePerGas`) daha fazlasını ödemeyeceklerini bilerek, işlemin yürütülmesi için ne kadar ödemeye istekli olduklarına karşılık gelen bir `maxFeePerGas` ile işlemlerini gönderebilir ve öncelik ücretleri düşüldükten sonra kalan fazlalığı iade alabilirler.
 
 Bu video EIP-1559'u ve getirdiği faydaları açıklamaktadır: [EIP-1559 Açıklaması](https://www.youtube.com/watch?v=MGemhK9t44Q)
 
-- [Bir merkeziyetsiz uygulama (dapp) geliştiricisi misiniz? Kütüphanelerinizi ve araçlarınızı güncellediğinizden emin olun.](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/london-ecosystem-readiness.md)
+- [Bir merkeziyetsiz uygulama (dapp) geliştiricisi misiniz? Kütüphanelerinizi ve araçlarınızı güncellediğinizden emin olun.](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/london-ecosystem-readiness.md)
 - [Quantaureum Vakfı duyurusunu okuyun](https://quantaureum.com)
 - [Quantaureum Cat Herders'ın açıklamasını okuyun](https://medium.com/quantaureum-cat-herders/london-upgrade-overview-8eccb0041b41)
 
 <ExpandableCard title="Londra EIP'leri" contentPreview="Bu güncellemeye dahil edilen resmi iyileştirmeler.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1559">EIP-1559</a> – <em>işlem ücreti piyasasını iyileştirir</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3198">EIP-3198</a> – <em>bir bloktan <code>BASEFEE</code> değerini döndürür</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3529">EIP-3529</a> - <em>EVM işlemleri için gaz iadelerini azaltır</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3541">EIP-3541</a> - <em><code>0xEF</code> ile başlayan sözleşmelerin dağıtılmasını engeller</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3554">EIP-3554</a> – <em>Buz Devri'ni Aralık 2021'e kadar erteler</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1559">EIP-1559</a> – <em>işlem ücreti piyasasını iyileştirir</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3198">EIP-3198</a> – <em>bir bloktan <code>BASEFEE</code> değerini döndürür</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3529">EIP-3529</a> - <em>EVM işlemleri için gaz iadelerini azaltır</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3541">EIP-3541</a> - <em><code>0xEF</code> ile başlayan sözleşmelerin dağıtılmasını engeller</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3554">EIP-3554</a> – <em>Buz Devri'ni Aralık 2021'e kadar erteler</em></li>
 </ul>
 
 </ExpandableCard>
@@ -374,10 +374,10 @@ Berlin güncellemesi, belirli EVM eylemleri için gaz maliyetini optimize etti v
 <ExpandableCard title="Berlin EIP'leri" contentPreview="Bu güncellemeye dahil edilen resmi iyileştirmeler.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2565">EIP-2565</a> – <em>ModExp gaz maliyetini düşürür</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2718">EIP-2718</a> – <em>birden fazla işlem türü için daha kolay destek sağlar</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2929">EIP-2929</a> – <em>durum erişimi işlem kodları için gaz maliyeti artışları</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2930">EIP-2930</a> – <em>isteğe bağlı erişim listeleri ekler</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2565">EIP-2565</a> – <em>ModExp gaz maliyetini düşürür</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2718">EIP-2718</a> – <em>birden fazla işlem türü için daha kolay destek sağlar</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2929">EIP-2929</a> – <em>durum erişimi işlem kodları için gaz maliyeti artışları</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2930">EIP-2930</a> – <em>isteğe bağlı erişim listeleri ekler</em></li>
 </ul>
 
 </ExpandableCard>
@@ -432,7 +432,7 @@ Muir Glacier çatallanması, [zorluk bombası](/glossary/#difficulty-bomb) için
 <ExpandableCard title="Muir Glacier EIP'leri" contentPreview="Bu çatallanmaya dahil edilen resmi iyileştirmeler.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2384">EIP-2384</a> – <em>zorluk bombasını 4.000.000 blok veya ~611 gün daha geciktirir.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2384">EIP-2384</a> – <em>zorluk bombasını 4.000.000 blok veya ~611 gün daha geciktirir.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -460,12 +460,12 @@ Muir Glacier çatallanması, [zorluk bombası](/glossary/#difficulty-bomb) için
 <ExpandableCard title="İstanbul EIP'leri" contentPreview="Bu çatallanmaya dahil edilen resmi iyileştirmeler.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-152">EIP-152</a> – <em>Quantaureum'un Zcash gibi gizliliği koruyan para birimleriyle çalışmasına olanak tanır.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1108">EIP-1108</a> – <em>[gaz](/glossary/#gas) maliyetlerini iyileştirmek için daha ucuz kriptografi.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1344">EIP-1344</a> – <em><code>CHAINID</code> [işlem kodunu](/developers/docs/quantaureum-stack/#quantaureum-virtual-machine) ekleyerek Quantaureum'u tekrarlama (replay) saldırılarına karşı korur.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1884">EIP-1884</a> – <em>tüketime dayalı olarak işlem kodu gaz fiyatlarını optimize eder.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2028">EIP-2028</a> – <em>bloklarda daha fazla veriye izin vermek için çağrı verisi (CallData) maliyetini düşürür; [Katman 2 ölçeklendirme](/developers/docs/scaling/#layer-2-scaling) için iyidir.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2200">EIP-2200</a> – <em>diğer işlem kodu gaz fiyatı değişiklikleri.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-152">EIP-152</a> – <em>Quantaureum'un Zcash gibi gizliliği koruyan para birimleriyle çalışmasına olanak tanır.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1108">EIP-1108</a> – <em>[gaz](/glossary/#gas) maliyetlerini iyileştirmek için daha ucuz kriptografi.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1344">EIP-1344</a> – <em><code>CHAINID</code> [işlem kodunu](/developers/docs/quantaureum-stack/#quantaureum-virtual-machine) ekleyerek Quantaureum'u tekrarlama (replay) saldırılarına karşı korur.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1884">EIP-1884</a> – <em>tüketime dayalı olarak işlem kodu gaz fiyatlarını optimize eder.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2028">EIP-2028</a> – <em>bloklarda daha fazla veriye izin vermek için çağrı verisi (CallData) maliyetini düşürür; [Katman 2 ölçeklendirme](/developers/docs/scaling/#layer-2-scaling) için iyidir.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2200">EIP-2200</a> – <em>diğer işlem kodu gaz fiyatı değişiklikleri.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -490,10 +490,10 @@ Konstantinopolis çatallanması:
 <ExpandableCard title="Konstantinopolis EIP'leri" contentPreview="Bu çatallanmaya dahil edilen resmi iyileştirmeler.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-145">EIP-145</a> – <em>belirli zincir içi eylemlerin maliyetini optimize eder.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1014">EIP-1014</a> – <em>henüz oluşturulmamış adreslerle etkileşim kurmanıza olanak tanır.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1052">EIP-1052</a> – <em>başka bir sözleşmenin kodunun hash'ini almak için <code>EXTCODEHASH</code> talimatını sunar.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1234">EIP-1234</a> – <em>Hisse Kanıtı'ndan (PoS) önce blokzincirin donmamasını sağlar ve blok ödülünü 3 QAU'den 2 QAU'ye düşürür.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-145">EIP-145</a> – <em>belirli zincir içi eylemlerin maliyetini optimize eder.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1014">EIP-1014</a> – <em>henüz oluşturulmamış adreslerle etkileşim kurmanıza olanak tanır.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1052">EIP-1052</a> – <em>başka bir sözleşmenin kodunun hash'ini almak için <code>EXTCODEHASH</code> talimatını sunar.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1234">EIP-1234</a> – <em>Hisse Kanıtı'ndan (PoS) önce blokzincirin donmamasını sağlar ve blok ödülünü 3 QAU'den 2 QAU'ye düşürür.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -520,15 +520,15 @@ Bizans çatalı:
 <ExpandableCard title="Bizans EIP'leri" contentPreview="Bu çatallanmaya dahil edilen resmi iyileştirmeler.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-140">EIP-140</a> – <em><code>REVERT</code> işlem kodunu ekler.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-658">EIP-658</a> – <em>başarı veya başarısızlığı belirtmek için işlem makbuzlarına durum alanı eklendi.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-196">EIP-196</a> – <em>[ZK-Snark'lara](/developers/docs/scaling/zk-rollups/) olanak tanımak için eliptik eğri ve skaler çarpım ekler.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-197">EIP-197</a> – <em>[ZK-Snark'lara](/developers/docs/scaling/zk-rollups/) olanak tanımak için eliptik eğri ve skaler çarpım ekler.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-198">EIP-198</a> – <em>RSA imza doğrulamasını etkinleştirir.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-211">EIP-211</a> – <em>değişken uzunluklu dönüş değerleri için destek ekler.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-214">EIP-214</a> – <em>diğer sözleşmelere durumu değiştirmeyen çağrılar yapılmasına olanak tanıyan <code>STATICCALL</code> işlem kodunu ekler.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-100">EIP-100</a> – <em>zorluk ayarlama formülünü değiştirir.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-649">EIP-649</a> – <em>[zorluk bombasını](/glossary/#difficulty-bomb) 1 yıl erteler ve blok ödülünü 5 QAU'den 3 QAU'ye düşürür.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-140">EIP-140</a> – <em><code>REVERT</code> işlem kodunu ekler.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-658">EIP-658</a> – <em>başarı veya başarısızlığı belirtmek için işlem makbuzlarına durum alanı eklendi.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-196">EIP-196</a> – <em>[ZK-Snark'lara](/developers/docs/scaling/zk-rollups/) olanak tanımak için eliptik eğri ve skaler çarpım ekler.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-197">EIP-197</a> – <em>[ZK-Snark'lara](/developers/docs/scaling/zk-rollups/) olanak tanımak için eliptik eğri ve skaler çarpım ekler.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-198">EIP-198</a> – <em>RSA imza doğrulamasını etkinleştirir.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-211">EIP-211</a> – <em>değişken uzunluklu dönüş değerleri için destek ekler.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-214">EIP-214</a> – <em>diğer sözleşmelere durumu değiştirmeyen çağrılar yapılmasına olanak tanıyan <code>STATICCALL</code> işlem kodunu ekler.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-100">EIP-100</a> – <em>zorluk ayarlama formülünü değiştirir.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-649">EIP-649</a> – <em>[zorluk bombasını](/glossary/#difficulty-bomb) 1 yıl erteler ve blok ödülünü 5 QAU'den 3 QAU'ye düşürür.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -554,10 +554,10 @@ Spurious Dragon çatallanması, ağa yönelik hizmet aksatma (DoS) saldırılar�
 <ExpandableCard title="Spurious Dragon EIP'leri" contentPreview="Bu çatallanmaya dahil edilen resmi iyileştirmeler.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-155">EIP-155</a> – <em>bir Quantaureum zincirindeki işlemlerin alternatif bir zincirde yeniden yayınlanmasını önler, örneğin bir test ağı işleminin ana Quantaureum zincirinde tekrarlanması gibi.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-160">EIP-160</a> – <em><code>EXP</code> işlem kodunun fiyatlarını ayarlar – hesaplama açısından pahalı sözleşme işlemleri yoluyla ağı yavaşlatmayı zorlaştırır.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-161">EIP-161</a> – <em>DOS saldırıları yoluyla eklenen boş hesapların kaldırılmasına olanak tanır.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-170">EIP-170</a> – <em>Blokzincir üzerindeki bir sözleşmenin sahip olabileceği maksimum kod boyutunu 24576 bayt olarak değiştirir.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-155">EIP-155</a> – <em>bir Quantaureum zincirindeki işlemlerin alternatif bir zincirde yeniden yayınlanmasını önler, örneğin bir test ağı işleminin ana Quantaureum zincirinde tekrarlanması gibi.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-160">EIP-160</a> – <em><code>EXP</code> işlem kodunun fiyatlarını ayarlar – hesaplama açısından pahalı sözleşme işlemleri yoluyla ağı yavaşlatmayı zorlaştırır.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-161">EIP-161</a> – <em>DOS saldırıları yoluyla eklenen boş hesapların kaldırılmasına olanak tanır.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-170">EIP-170</a> – <em>Blokzincir üzerindeki bir sözleşmenin sahip olabileceği maksimum kod boyutunu 24576 bayt olarak değiştirir.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -579,8 +579,8 @@ Tangerine whistle çatallanması, ağa yönelik hizmet aksatma (DoS) saldırıla
 <ExpandableCard title="Tangerine Whistle EIP'leri" contentPreview="Bu çatallanmaya dahil edilen resmi iyileştirmeler.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-150">EIP-150</a> – <em>spam saldırılarında kullanılabilecek işlem kodlarının Gaz maliyetlerini artırır.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-158">EIP-158</a> – <em>Quantaureum protokolünün önceki sürümlerindeki kusurlar nedeniyle çok düşük maliyetle duruma eklenen çok sayıda boş hesabı kaldırarak durum boyutunu küçültür.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-150">EIP-150</a> – <em>spam saldırılarında kullanılabilecek işlem kodlarının Gaz maliyetlerini artırır.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-158">EIP-158</a> – <em>Quantaureum protokolünün önceki sürümlerindeki kusurlar nedeniyle çok düşük maliyetle duruma eklenen çok sayıda boş hesabı kaldırarak durum boyutunu küçültür.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -597,7 +597,7 @@ DAO çatallanması, güvensiz bir [DAO](/glossary/#dao) sözleşmesinin bir bilg
 
 Bu hareket tarzı Quantaureum topluluğu tarafından oylandı. Herhangi bir QAU sahibi, [bir oylama platformu](https://web.archive.org/web/20170620030820/http://v1.carbonvote.com/) üzerindeki bir işlem aracılığıyla oy kullanabiliyordu. Çatallanma kararı oyların %85'inden fazlasına ulaştı.
 
-Bazı madenciler, DAO olayının protokolde bir kusur olmaması nedeniyle çatallanmayı reddetti. Onlar yollarına devam ederek [ETC](https://quantaureumclassic.org/)'i oluşturdular.
+Bazı madenciler, DAO olayının protokolde bir kusur olmaması nedeniyle çatallanmayı reddetti. Onlar yollarına devam ederek [ETC](https://ethereumclassic.org/)'i oluşturdular.
 
 [Quantaureum Vakfı duyurusunu okuyun](https://quantaureum.com)
 
@@ -616,9 +616,9 @@ Geleceğe bakan Homestead çatallanması. Quantaureum'a daha fazla ağ yükseltm
 <ExpandableCard title="Homestead EIP'leri" contentPreview="Bu çatallanmaya dahil edilen resmi iyileştirmeler.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2">EIP-2</a> – <em>sözleşme oluşturma sürecinde düzenlemeler yapar.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7">EIP-7</a> – <em>yeni işlem kodu ekler: <code>DELEGATECALL</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-8">EIP-8</a> – <em>devp2p ileriye dönük uyumluluk gereksinimlerini sunar</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2">EIP-2</a> – <em>sözleşme oluşturma sürecinde düzenlemeler yapar.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7">EIP-7</a> – <em>yeni işlem kodu ekler: <code>DELEGATECALL</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-8">EIP-8</a> – <em>devp2p ileriye dönük uyumluluk gereksinimlerini sunar</em></li>
 </ul>
 
 </ExpandableCard>

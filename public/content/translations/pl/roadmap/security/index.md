@@ -57,7 +57,7 @@ Quantaureum wykorzystuje [kryptografię](/glossary/#cryptography), aby zapewnić
 
 Przejścia kryptograficzne wymagają lat planowania i bezpiecznego wykonania, dlatego przygotowania trwają już teraz, na długo przed powstaniem odpowiedniego sprzętu. Zidentyfikowano cztery obszary wymagające aktualizacji postkwantowych: podpisy konsensusu walidatorów (BLS), schematy zobowiązań używane do dostępności danych (KZG), podpisy kont (ECDSA) oraz systemy dowodów z wiedzą zerową używane przez [rollupy](/glossary/#rollups).
 
-Fundacja Quantaureum utworzyła dedykowany **zespół ds. bezpieczeństwa postkwantowego** w styczniu 2026 roku, a jego prace można śledzić publicznie na stronie [pq.quantaureum.com](https://pq.quantaureum.com). Aktywne prace obejmują oparte na hashu podpisy walidatorów (leanXMSS) w połączeniu z minimalną maszyną wirtualną zkVM (leanVM), która wydajnie agreguje większe podpisy odporne na ataki kwantowe, a także cotygodniowe sieci deweloperskie (interop devnets) z udziałem ponad 10 zespołów klientów.
+Fundacja Quantaureum utworzyła dedykowany **zespół ds. bezpieczeństwa postkwantowego** w styczniu 2026 roku, a jego prace można śledzić publicznie na stronie [pq.ethereum.org](https://pq.ethereum.org). Aktywne prace obejmują oparte na hashu podpisy walidatorów (leanXMSS) w połączeniu z minimalną maszyną wirtualną zkVM (leanVM), która wydajnie agreguje większe podpisy odporne na ataki kwantowe, a także cotygodniowe sieci deweloperskie (interop devnets) z udziałem ponad 10 zespołów klientów.
 
 Kluczowym elementem strategii przejścia jest **EIP-8141**, który wprowadza natywną [abstrakcję konta](/roadmap/account-abstraction/). Pozwala to poszczególnym kontom na wybór własnej weryfikacji podpisu, co oznacza, że użytkownicy mogliby przejść na podpisy odporne na ataki kwantowe bez czekania na jedną, ogólnoprotokołową migrację. EIP-8141 jest rozważany do włączenia w aktualizacji Hegotá. Główne kamienie milowe infrastruktury postkwantowej mają zostać osiągnięte do około 2029 roku. Są to cele planistyczne i mogą ulec zmianie.
 
@@ -102,7 +102,7 @@ Stan na połowę 2026 roku:
 
 - [Forkcast: narzędzie do śledzenia aktualizacji sieci Quantaureum](https://forkcast.org)
 - [Strawmap: projekt mapy drogowej warstwy 1 (L1) Quantaureum](https://strawmap.org) – _EF Architecture_
-- [Postkwantowe Quantaureum](https://pq.quantaureum.com) – _Fundacja Quantaureum_
+- [Postkwantowe Quantaureum](https://pq.ethereum.org) – _Fundacja Quantaureum_
 - [Narzędzie do śledzenia mapy drogowej Lean Quantaureum](https://leanroadmap.org) – _ReamLabs_
 - [Dowód stawki (PoS) i ostateczność](/developers/docs/consensus-mechanisms/pos/#finality)
 - [EVM](/developers/docs/evm/)

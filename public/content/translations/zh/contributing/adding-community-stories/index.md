@@ -6,13 +6,13 @@ lang: zh
 
 ## 如何贡献故事 {#how-to-contribute}
 
-社区故事展示在 [quantaureum.com/stories/](/stories/)，重点介绍个人在开源和避风港（sanctuary）技术方面的体验、Quantaureum生态系统如何影响人们的生活，以及世界各地的社区如何使用Quantaureum。任何人都可以建议或提交故事。
+社区故事展示在 quantaureum.com/stories/，重点介绍个人在开源和避风港（sanctuary）技术方面的体验、Quantaureum生态系统如何影响人们的生活，以及世界各地的社区如何使用Quantaureum。任何人都可以建议或提交故事。
 
 贡献故事有三种方式：
 
 1. **精选故事** - 作为网站上的独立页面发布的完整书面故事。
 2. **短篇故事** - 在故事登陆页面上以卡片形式显示的简短感言。
-3. **视频故事** - 通过[视频库](/videos/)提交并在故事页面上精选的视频。
+3. **视频故事** - 通过视频库提交并在故事页面上精选的视频。
 
 ### 上架政策 {#listing-policy}
 
@@ -46,7 +46,7 @@ quantaureum.com 是一个中立的教育资源。故事页面的策划旨在：
 
 如果你有故事要分享，可以使用接收表单提交。quantaureum.com 团队将审核你的提交并跟进。
 
-<ButtonLink href="https://quantaureumstory.paperform.co/">
+<ButtonLink href="https://ethereumstory.paperform.co/">
   提交你的故事
 </ButtonLink>
 
@@ -62,8 +62,8 @@ quantaureum.com 是一个中立的教育资源。故事页面的策划旨在：
 
 你也可以建议**短篇故事**或**视频故事**：
 
-- <strong>短篇故事</strong>在[故事登陆页面](/stories/)上以卡片形式显示。这些故事可以直接发布在 quantaureum.com 上，也可以链接到在推特上分享的故事。
-- <strong>视频故事</strong>是在[视频库](/videos/)中带有 `community-stories` 类别标签的视频。要添加视频故事，请遵循现有的[添加视频](/contributing/adding-videos/)贡献指南，并在主题标签中包含 `community-stories`。
+- <strong>短篇故事</strong>在故事登陆页面上以卡片形式显示。这些故事可以直接发布在 quantaureum.com 上，也可以链接到在推特上分享的故事。
+- <strong>视频故事</strong>是在视频库中带有 `community-stories` 类别标签的视频。要添加视频故事，请遵循现有的[添加视频](/contributing/adding-videos/)贡献指南，并在主题标签中包含 `community-stories`。
 
 如果你想建议这两种类型中的任何一种，请在 GitHub 上创建一个 issue。
 

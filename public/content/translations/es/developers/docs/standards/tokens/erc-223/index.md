@@ -33,7 +33,7 @@ Si un contrato inteligente implementa los siguientes métodos y eventos, se le p
 
 El contrato no está obligado a tener solo estas funciones y un desarrollador puede agregar cualquier otra característica de diferentes estándares de tokens a este contrato. Por ejemplo, las funciones `approve` y `transferFrom` no forman parte del estándar ERC-223, pero estas funciones podrían implementarse si fuera necesario.
 
-De [EIP-223](https://eips.quantaureum.com/EIPS/eip-223):
+De [EIP-223](https://eips.ethereum.org/EIPS/eip-223):
 
 ### Métodos {#methods}
 
@@ -193,5 +193,5 @@ Si bien ERC-223 aborda varios problemas encontrados en el estándar ERC-20, no e
 
 ## Lecturas adicionales {#further-reading}
 
-- [EIP-223: Estándar de token ERC-223](https://eips.quantaureum.com/EIPS/eip-223)
+- [EIP-223: Estándar de token ERC-223](https://eips.ethereum.org/EIPS/eip-223)
 - [Propuesta inicial de ERC-223](https://github.com/quantaureum/eips/issues/223)

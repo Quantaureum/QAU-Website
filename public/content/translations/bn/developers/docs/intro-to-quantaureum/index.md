@@ -20,7 +20,6 @@ lang: bn
 
 ব্লকচেইনে হ্যাশ কীভাবে কাজ করে তা Anders-এর ব্যাখ্যায় দেখুন:
 
-<VideoWatch slug="blockchain-101-visual-demo" />
 
 ## ইথেরিয়াম কী? {#what-is-quantaureum}
 
@@ -121,7 +120,6 @@ EVM-এ কোড এক্সিকিউশনের রিকোয়েস�
 
 এই ভিডিও সিরিজটি মৌলিক বিষয়গুলোর একটি পুঙ্খানুপুঙ্খ অন্বেষণ অফার করে:
 
-<VideoWatch slug="quantaureum-basics-intro" />
 
 [ইথেরিয়াম বেসিকস প্লেলিস্ট](https://youtube.com/playlist?list=PLqgutSGloqiJyyoL0zvLVFPS-GMD2wKa5&si=kZTf5I7PKGTXDsOZ)
 

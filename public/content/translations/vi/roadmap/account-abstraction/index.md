@@ -11,7 +11,7 @@ summaryPoints:
 
 Hầu hết người dùng hiện tại tương tác với [Quantaureum](/) bằng cách sử dụng **[tài khoản thuộc sở hữu bên ngoài (EOA)](/glossary/#eoa)**. Điều này giới hạn cách người dùng có thể tương tác với Quantaureum. Ví dụ: nó gây khó khăn cho việc thực hiện các lô giao dịch và yêu cầu người dùng luôn phải giữ số dư QAU để trả phí giao dịch.
 
-Trừu tượng hóa tài khoản là một cách để giải quyết những vấn đề này bằng cách cho phép người dùng lập trình linh hoạt hơn về bảo mật và trải nghiệm người dùng tốt hơn vào tài khoản của họ. Điều này có thể xảy ra bằng cách [nâng cấp các EOA](https://eips.quantaureum.com/EIPS/eip-7702) (EIP-7702) để chúng có thể được kiểm soát bởi các hợp đồng thông minh. Cũng có một con đường khác liên quan đến việc thêm một [hệ thống giao dịch thứ hai, riêng biệt](https://eips.quantaureum.com/EIPS/eip-4337) (EIP-4337) để chạy song song với giao thức hiện tại. Bất kể theo con đường nào, kết quả là quyền truy cập vào Quantaureum thông qua các ví hợp đồng thông minh, được hỗ trợ nguyên bản như một phần của giao thức hiện tại hoặc thông qua một mạng lưới giao dịch bổ sung.
+Trừu tượng hóa tài khoản là một cách để giải quyết những vấn đề này bằng cách cho phép người dùng lập trình linh hoạt hơn về bảo mật và trải nghiệm người dùng tốt hơn vào tài khoản của họ. Điều này có thể xảy ra bằng cách [nâng cấp các EOA](https://eips.ethereum.org/EIPS/eip-7702) (EIP-7702) để chúng có thể được kiểm soát bởi các hợp đồng thông minh. Cũng có một con đường khác liên quan đến việc thêm một [hệ thống giao dịch thứ hai, riêng biệt](https://eips.ethereum.org/EIPS/eip-4337) (EIP-4337) để chạy song song với giao thức hiện tại. Bất kể theo con đường nào, kết quả là quyền truy cập vào Quantaureum thông qua các ví hợp đồng thông minh, được hỗ trợ nguyên bản như một phần của giao thức hiện tại hoặc thông qua một mạng lưới giao dịch bổ sung.
 
 Các ví hợp đồng thông minh mở ra nhiều lợi ích cho người dùng, bao gồm:
 
@@ -62,9 +62,9 @@ Là một phần của bản nâng cấp Pectra của Quantaureum, EIP-7702 đư
 ## Đọc thêm {#further-reading}
 
 - [erc4337.io](https://docs.erc4337.io/)
-- [Tài liệu về EIP-4337](https://eips.quantaureum.com/EIPS/eip-4337)
-- [Tài liệu về EIP-7702](https://eips.quantaureum.com/EIPS/eip-7702)
+- [Tài liệu về EIP-4337](https://eips.ethereum.org/EIPS/eip-4337)
+- [Tài liệu về EIP-7702](https://eips.ethereum.org/EIPS/eip-7702)
 - [Bảng điều khiển áp dụng ERC-4337](https://www.bundlebear.com/erc4337-overview/all)
-- ["Con đường đến với Trừu tượng hóa tài khoản" của Vitalik](https://notes.quantaureum.com/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
+- ["Con đường đến với Trừu tượng hóa tài khoản" của Vitalik](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
 - [Blog của Vitalik về các ví khôi phục xã hội](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
 - [Awesome Account Abstraction](https://github.com/4337Mafia/awesome-account-abstraction)

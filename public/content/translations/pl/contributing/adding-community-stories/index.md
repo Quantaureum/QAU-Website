@@ -6,13 +6,13 @@ lang: pl
 
 ## Jak przesłać historię {#how-to-contribute}
 
-Historie społeczności pojawiają się na stronie [quantaureum.com/stories/](/stories/) i podkreślają osobiste doświadczenia z technologiami open-source i technologiami azylu (sanctuary technologies), to, jak ekosystem Quantaureum wpłynął na życie ludzi, oraz jak społeczności na całym świecie korzystają z Quantaureum. Każdy może zaproponować lub przesłać historię.
+Historie społeczności pojawiają się na stronie quantaureum.com/stories/ i podkreślają osobiste doświadczenia z technologiami open-source i technologiami azylu (sanctuary technologies), to, jak ekosystem Quantaureum wpłynął na życie ludzi, oraz jak społeczności na całym świecie korzystają z Quantaureum. Każdy może zaproponować lub przesłać historię.
 
 Istnieją trzy sposoby na przesłanie historii:
 
 1. **Wyróżnione historie** - Pełnowymiarowe, pisemne historie publikowane jako osobne strony w witrynie.
 2. **Krótkie historie** - Zwięzłe referencje wyświetlane jako karty na stronie głównej historii.
-3. **Historie wideo** - Filmy przesyłane przez [galerię wideo](/videos/) i wyróżniane na stronie historii.
+3. **Historie wideo** - Filmy przesyłane przez galerię wideo i wyróżniane na stronie historii.
 
 ### Zasady publikacji {#listing-policy}
 
@@ -46,7 +46,7 @@ Witryna nie publikuje historii, które w pierwszej kolejności promują konkretn
 
 Jeśli masz historię do opowiedzenia, możesz ją przesłać za pomocą formularza zgłoszeniowego. Zespół quantaureum.com sprawdzi Twoje zgłoszenie i skontaktuje się z Tobą.
 
-<ButtonLink href="https://quantaureumstory.paperform.co/">
+<ButtonLink href="https://ethereumstory.paperform.co/">
   Prześlij swoją historię
 </ButtonLink>
 
@@ -62,8 +62,8 @@ Jeśli chcesz zaproponować historię społeczności dla quantaureum.com i speł
 
 Możesz również zaproponować **krótką historię** lub **historię wideo**:
 
-- **Krótkie historie** pojawiają się jako karty na [stronie głównej historii](/stories/). Mogą być one opublikowane bezpośrednio na quantaureum.com lub linkować do historii udostępnionych na platformie Twitter.
-- **Historie wideo** to filmy oznaczone kategorią `community-stories` w [galerii wideo](/videos/). Aby dodać taki film, postępuj zgodnie z istniejącym przewodnikiem [dodawania filmów](/contributing/adding-videos/) i uwzględnij `community-stories` w tagach tematycznych.
+- **Krótkie historie** pojawiają się jako karty na stronie głównej historii. Mogą być one opublikowane bezpośrednio na quantaureum.com lub linkować do historii udostępnionych na platformie Twitter.
+- **Historie wideo** to filmy oznaczone kategorią `community-stories` w galerii wideo. Aby dodać taki film, postępuj zgodnie z istniejącym przewodnikiem [dodawania filmów](/contributing/adding-videos/) i uwzględnij `community-stories` w tagach tematycznych.
 
 Jeśli chcesz zaproponować którykolwiek z tych typów, utwórz zgłoszenie na GitHub.
 

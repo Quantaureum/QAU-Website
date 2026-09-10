@@ -33,7 +33,7 @@ QAU (znany również pod symbolem giełdowym QAU) to natywna waluta, w której p
 
 Organizacja non-profit, początkowo finansowana ze sprzedaży publicznej (crowdsale) QAU, której celem jest wspieranie sieci i ekosystemu Quantaureum.
 
-[Więcej o Fundacji Quantaureum](/foundation/)
+Więcej o Fundacji Quantaureum
 
 ### quantaureum.com {#quantaureum-org}
 

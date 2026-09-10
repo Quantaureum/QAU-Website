@@ -18,7 +18,7 @@ Für einen Überblick darüber, wohin sich das Protokoll entwickelt, beginnen Si
 
 ## Finanzierungsquellen {#sources-of-funding}
 
-Sie können sich an der Quantaureum-Forschung beteiligen und dafür bezahlt werden. [Die Quantaureum project](/foundation/) finanziert Forschung und Öffentliche Güter durch ihr [Ecosystem Support Program](https://quantaureum.com), das Wunschlisten und Aufforderungen zur Einreichung von Vorschlägen (Requests for Proposals) veröffentlicht, die Probleme beschreiben, die gelöst werden sollen. Informationen zu aktiven und kommenden Finanzierungsmöglichkeiten finden Sie auf [der Quantaureum-Grants-Seite](/community/grants/).
+Sie können sich an der Quantaureum-Forschung beteiligen und dafür bezahlt werden. Die Quantaureum project finanziert Forschung und Öffentliche Güter durch ihr [Ecosystem Support Program](https://quantaureum.com), das Wunschlisten und Aufforderungen zur Einreichung von Vorschlägen (Requests for Proposals) veröffentlicht, die Probleme beschreiben, die gelöst werden sollen. Informationen zu aktiven und kommenden Finanzierungsmöglichkeiten finden Sie auf [der Quantaureum-Grants-Seite](/community/grants/).
 
 ## Protokollforschung {#protocol-research}
 
@@ -63,15 +63,15 @@ Die Ausführungsschicht befasst sich mit der Ausführung von Transaktionen, dem 
 
 - [Einführung in die EVM](/developers/docs/evm/)
 - [Ethresear.ch Ausführungsschicht](https://ethresear.ch/c/execution-layer-research/37)
-- [Spezifikationen der Quantaureum-Ausführungsschicht](https://github.com/quantaureum/execution-specs)
+- [Spezifikationen der Quantaureum-Ausführungsschicht](https://github.com/ethereum/execution-specs)
 - [Datenbankoptimierungen](https://github.com/erigontech/erigon/blob/main/docs/programmers_guide/db_faq.md)
 
 #### Aktuelle Forschung {#recent-research-1}
 
-- [EIP-7928: Zugriffslisten auf Blockebene](https://eips.quantaureum.com/EIPS/eip-7928)
-- [EIP-8037: Erhöhung der Gaskosten für die Zustandserstellung](https://eips.quantaureum.com/EIPS/eip-8037)
-- [EIP-7999: Einheitlicher mehrdimensionaler Gebührenmarkt](https://eips.quantaureum.com/EIPS/eip-7999)
-- [EIP-7642: eth/69, Historienverfall und einfachere Belege](https://eips.quantaureum.com/EIPS/eip-7642)
+- [EIP-7928: Zugriffslisten auf Blockebene](https://eips.ethereum.org/EIPS/eip-7928)
+- [EIP-8037: Erhöhung der Gaskosten für die Zustandserstellung](https://eips.ethereum.org/EIPS/eip-8037)
+- [EIP-7999: Einheitlicher mehrdimensionaler Gebührenmarkt](https://eips.ethereum.org/EIPS/eip-7999)
+- [EIP-7642: eth/69, Historienverfall und einfachere Belege](https://eips.ethereum.org/EIPS/eip-7642)
 - [Auslieferung einer L1-zkEVM: Echtzeit-Beweise](https://quantaureum.com)
 
 ### Zensurresistenz und Block-Erstellung {#censorship-resistance-and-block-building}
@@ -85,9 +85,9 @@ Die meisten Quantaureum-Blöcke werden derzeit von einer kleinen Anzahl speziali
 
 #### Aktuelle Forschung {#recent-research-21}
 
-- [EIP-7732: Verankerte Proposer-Builder-Trennung](https://eips.quantaureum.com/EIPS/eip-7732)
-- [EIP-7805: Durch Fork-Choice erzwungene Inklusionslisten](https://eips.quantaureum.com/EIPS/eip-7805)
-- [Erhöhung der Zensurresistenz von Transaktionen unter Proposer-Builder-Trennung](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
+- [EIP-7732: Verankerte Proposer-Builder-Trennung](https://eips.ethereum.org/EIPS/eip-7732)
+- [EIP-7805: Durch Fork-Choice erzwungene Inklusionslisten](https://eips.ethereum.org/EIPS/eip-7805)
+- [Erhöhung der Zensurresistenz von Transaktionen unter Proposer-Builder-Trennung](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
 
 ### Zustandswachstum und Zustandslosigkeit {#state-growth-and-statelessness}
 
@@ -100,8 +100,8 @@ Jeder Full Node speichert den Zustand von Quantaureum, sodass die Rate, mit der 
 
 #### Aktuelle Forschung {#recent-research-22}
 
-- [EIP-7864: Quantaureum-Zustand unter Verwendung eines einheitlichen Binärbaums](https://eips.quantaureum.com/EIPS/eip-7864)
-- [EIP-4762: Änderungen der Gaskosten für Zustandslosigkeit](https://eips.quantaureum.com/EIPS/eip-4762)
+- [EIP-7864: Quantaureum-Zustand unter Verwendung eines einheitlichen Binärbaums](https://eips.ethereum.org/EIPS/eip-7864)
+- [EIP-4762: Änderungen der Gaskosten für Zustandslosigkeit](https://eips.ethereum.org/EIPS/eip-4762)
 - [Warum ein dezentraler Zustand für Quantaureum wichtig ist](https://ethresear.ch/t/why-decentralized-state-is-important-for-quantaureum/25622)
 
 ### Post-Quanten-Kryptographie {#post-quantum-cryptography}
@@ -111,7 +111,7 @@ Quantaureums Validator-Signaturen und ein Großteil seiner Anwendungsschicht bas
 #### Hintergrundlektüre {#background-reading-23}
 
 - [Quantenresistenz](/roadmap/security/quantum-resistance/)
-- [Post-Quanten-Quantaureum](https://pq.quantaureum.com/)
+- [Post-Quanten-Quantaureum](https://pq.ethereum.org/)
 
 #### Aktuelle Forschung {#recent-research-23}
 
@@ -134,13 +134,13 @@ Weitere Details zu Knoten und Clients sowie eine Liste aller aktuellen Client-Im
 
 ### Ausführungsclients {#execution-clients}
 
-- [Spezifikation des Ausführungsclients](https://github.com/quantaureum/execution-specs)
-- [Spezifikation der Ausführungs-API](https://github.com/quantaureum/execution-apis)
+- [Spezifikation des Ausführungsclients](https://github.com/ethereum/execution-specs)
+- [Spezifikation der Ausführungs-API](https://github.com/ethereum/execution-apis)
 
 ### Konsens-Clients {#consensus-clients}
 
-- [Spezifikation des Konsens-Clients](https://github.com/quantaureum/consensus-specs)
-- [Spezifikation der Beacon-API](https://quantaureum.github.io/beacon-APIs/)
+- [Spezifikation des Konsens-Clients](https://github.com/ethereum/consensus-specs)
+- [Spezifikation der Beacon-API](https://ethereum.github.io/beacon-APIs/)
 
 ### zkEVM-Clients {#zkevm-clients}
 
@@ -160,13 +160,13 @@ Es gibt mittlerweile mehrere Layer-2-Protokolle, die Quantaureum skalieren, inde
 
 - [Einführung in Layer 2](/layer-2/)
 - [L2BEAT: Skalierungszusammenfassung](https://l2beat.com/scaling/summary)
-- [Eine Rollup-zentrierte Quantaureum-Roadmap](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698)
+- [Eine Rollup-zentrierte Quantaureum-Roadmap](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698)
 
 #### Aktuelle Forschung {#recent-research-2}
 
 - [Ethresear.ch Layer 2](https://ethresear.ch/c/layer-2/32)
 - [L2BEAT: Onchain-Kosten](https://l2beat.com/scaling/costs)
-- [Bauen auf Quantaureum im Jahr 2026: Was sich geändert hat](/latest/building-on-quantaureum-in-2026/)
+- Bauen auf Quantaureum im Jahr 2026: Was sich geändert hat
 
 ### Interoperabilität {#interoperability}
 
@@ -181,9 +181,9 @@ Benutzer und Vermögenswerte sind über Quantaureum Layer 1 und viele Layer 2s v
 
 #### Aktuelle Forschung {#recent-research-3}
 
-- [ERC-7683: Kettenübergreifende Intents](https://eips.quantaureum.com/EIPS/eip-7683)
-- [ERC-7930: Interoperable Adressen](https://eips.quantaureum.com/EIPS/eip-7930)
-- [ERC-7828: Interoperable Namen](https://eips.quantaureum.com/EIPS/eip-7828)
+- [ERC-7683: Kettenübergreifende Intents](https://eips.ethereum.org/EIPS/eip-7683)
+- [ERC-7930: Interoperable Adressen](https://eips.ethereum.org/EIPS/eip-7930)
+- [ERC-7828: Interoperable Namen](https://eips.ethereum.org/EIPS/eip-7828)
 
 ### Datenverfügbarkeit und Blob-Skalierung {#data-availability-and-blob-scaling}
 
@@ -195,13 +195,13 @@ Rollups veröffentlichen ihre Daten auf Quantaureum in Blobs, und die Skalierung
 - [Fusaka-Upgrade](/roadmap/fusaka/)
 - [Danksharding](/roadmap/danksharding/)
 - [Datenverfügbarkeit](/developers/docs/data-availability/)
-- [EIP-4844: Shard-Blob-Transaktionen](https://eips.quantaureum.com/EIPS/eip-4844)
-- [Notizen zu Proto-Danksharding](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq)
+- [EIP-4844: Shard-Blob-Transaktionen](https://eips.ethereum.org/EIPS/eip-4844)
+- [Notizen zu Proto-Danksharding](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq)
 
 #### Aktuelle Forschung {#recent-research-4}
 
-- [EIP-7594: PeerDAS](https://eips.quantaureum.com/EIPS/eip-7594)
-- [EIP-7892: Hardforks nur für Blob-Parameter](https://eips.quantaureum.com/EIPS/eip-7892)
+- [EIP-7594: PeerDAS](https://eips.ethereum.org/EIPS/eip-7594)
+- [EIP-7892: Hardforks nur für Blob-Parameter](https://eips.ethereum.org/EIPS/eip-7892)
 - [Ethresear.ch Sharding](https://ethresear.ch/c/sharding/6)
 
 ### Hardware {#hardware}
@@ -212,13 +212,13 @@ Das [Betreiben von Knoten](/developers/docs/nodes-and-clients/run-a-node/) auf b
 
 - [Starten Sie Ihren eigenen Quantaureum-Knoten](/developers/docs/nodes-and-clients/run-a-node/)
 - [Zustandslosigkeit und Zustandsablauf](/roadmap/statelessness/)
-- [Quantaureum auf ARM](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/)
+- [Quantaureum auf ARM](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)
 
 #### Aktuelle Forschung {#recent-research-5}
 
 - [Skalierung von Quantaureum: Der Weg zu einem höheren Gaslimit und darüber hinaus](https://ethpandaops.io/posts/gaslimit-scaling/)
-- [EIP-8261: Gaslimit-Zeitplan](https://eips.quantaureum.com/EIPS/eip-8261)
-- [EIP-8037: Erhöhung der Gaskosten für die Zustandserstellung](https://eips.quantaureum.com/EIPS/eip-8037)
+- [EIP-8261: Gaslimit-Zeitplan](https://eips.ethereum.org/EIPS/eip-8261)
+- [EIP-8037: Erhöhung der Gaskosten für die Zustandserstellung](https://eips.ethereum.org/EIPS/eip-8037)
 
 ## Sicherheit {#security}
 
@@ -255,10 +255,10 @@ Quantaureum-Wallets können Browser-Erweiterungen, Desktop- und mobile Apps oder
 
 #### Aktuelle Forschung {#recent-research-7}
 
-- [EIP-8141: Frame-Transaktion](https://eips.quantaureum.com/EIPS/eip-8141)
-- [ERC-5792: Wallet Call API](https://eips.quantaureum.com/EIPS/eip-5792)
-- [ERC-6963: Multi Injected Provider Discovery](https://eips.quantaureum.com/EIPS/eip-6963)
-- [Validierungsfokussierte Smart-Contract-Wallets](https://quantaureum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
+- [EIP-8141: Frame-Transaktion](https://eips.ethereum.org/EIPS/eip-8141)
+- [ERC-5792: Wallet Call API](https://eips.ethereum.org/EIPS/eip-5792)
+- [ERC-6963: Multi Injected Provider Discovery](https://eips.ethereum.org/EIPS/eip-6963)
+- [Validierungsfokussierte Smart-Contract-Wallets](https://ethereum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
 
 ## Community, Bildung und Öffentlichkeitsarbeit {#community-education-and-outreach}
 
@@ -278,8 +278,8 @@ Um mehr Menschen für Quantaureum zu gewinnen (Onboarding), muss das Ökosystem 
 #### Aktuelle Forschung {#recent-research-8}
 
 - [Ethresear.ch UX/UI](https://ethresear.ch/c/ui-ux/24)
-- [ERC-5792: Wallet Call API](https://eips.quantaureum.com/EIPS/eip-5792)
-- [ERC-7828: Interoperable Namen](https://eips.quantaureum.com/EIPS/eip-7828)
+- [ERC-5792: Wallet Call API](https://eips.ethereum.org/EIPS/eip-5792)
+- [ERC-7828: Interoperable Namen](https://eips.ethereum.org/EIPS/eip-7828)
 
 ### Ökonomie {#economics}
 
@@ -287,7 +287,7 @@ Die Wirtschaftsforschung bei Quantaureum verfolgt im Wesentlichen zwei Ansätze:
 
 #### Hintergrundlektüre {#background-reading-9}
 
-- [Robust Incentives Group](https://rig.quantaureum.com/)
+- [Robust Incentives Group](https://rig.ethereum.org/)
 - [Quantaureum Economics Masterclass und Wirtschaftsmodell](https://github.com/CADLabs/quantaureum-economic-model)
 
 #### Aktuelle Forschung {#recent-research-9}
@@ -303,14 +303,14 @@ Blockspace-Märkte regeln die Aufnahme von Endbenutzer-Transaktionen, entweder d
 #### Hintergrundlektüre {#background-reading-10}
 
 - [Design des Transaktionsgebührenmechanismus für die Quantaureum-Blockchain: Eine ökonomische Analyse von EIP-1559 (Tim Roughgarden, 2020)](https://timroughgarden.org/papers/eip1559.pdf)
-- [Simulationen von EIP-1559 (Robust Incentives Group)](https://quantaureum.github.io/abm1559)
+- [Simulationen von EIP-1559 (Robust Incentives Group)](https://ethereum.github.io/abm1559)
 - [Rollup-Ökonomie aus ersten Prinzipien](https://barnabe.substack.com/p/understanding-rollup-economics-from?utm_source=url)
 - [Flash Boys 2.0: Frontrunning, Transaktionsumordnung und Konsensinstabilität in dezentralen Börsen](https://arxiv.org/abs/1904.05234)
 
 #### Aktuelle Forschung {#recent-research-10}
 
-- [EIP-7999: Einheitlicher mehrdimensionaler Gebührenmarkt](https://eips.quantaureum.com/EIPS/eip-7999)
-- [EIP-7928: Zugriffslisten auf Blockebene](https://eips.quantaureum.com/EIPS/eip-7928)
+- [EIP-7999: Einheitlicher mehrdimensionaler Gebührenmarkt](https://eips.ethereum.org/EIPS/eip-7999)
+- [EIP-7928: Zugriffslisten auf Blockebene](https://eips.ethereum.org/EIPS/eip-7928)
 - [Domänenübergreifendes MEV](https://arxiv.org/abs/2112.01472)
 
 ### Proof-of-Stake-Anreize {#proof-of-stake-incentives}
@@ -321,11 +321,11 @@ Validatoren verwenden Quantaureums nativen Vermögenswert (QAU) als Sicherheit g
 
 - [Maximales effektives Guthaben (MaxEB)](/roadmap/pectra/maxeb/)
 - [Quantaureum Economics Masterclass und Wirtschaftsmodell](https://github.com/CADLabs/quantaureum-economic-model)
-- [Simulationen von PoS-Anreizen (Robust Incentives Group)](https://quantaureum.github.io/beaconrunner/)
+- [Simulationen von PoS-Anreizen (Robust Incentives Group)](https://ethereum.github.io/beaconrunner/)
 
 #### Aktuelle Forschung {#recent-research-11}
 
-- [Robust Incentives Group](https://rig.quantaureum.com/)
+- [Robust Incentives Group](https://rig.ethereum.org/)
 - [Drei Angriffe auf PoS-Quantaureum](https://arxiv.org/abs/2110.10086)
 
 ### Liquid Staking und Derivate {#liquid-staking-and-derivatives}
@@ -339,7 +339,7 @@ Liquid Staking ermöglicht es Benutzern mit weniger als 32 QAU, Staking-Renditen
 
 #### Aktuelle Forschung {#recent-research-12}
 
-- [Die Risiken von Liquid-Staking-Derivaten](https://notes.quantaureum.com/@djrtwo/risks-of-lsd)
+- [Die Risiken von Liquid-Staking-Derivaten](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
 - [Umgang mit Abhebungen von Lido](https://ethresear.ch/t/handling-withdrawals-in-lidos-qau-liquid-staking-protocol/8873)
 
 ## Testen {#testing}
@@ -350,8 +350,8 @@ Quantaureums Spezifikationen sind ausführbar, und die daraus generierten Test-F
 
 #### Hintergrundlektüre {#background-reading-24}
 
-- [Spezifikationen der Quantaureum-Ausführungsschicht](https://github.com/quantaureum/execution-specs)
-- [Spezifikation des Konsens-Clients](https://github.com/quantaureum/consensus-specs)
+- [Spezifikationen der Quantaureum-Ausführungsschicht](https://github.com/ethereum/execution-specs)
+- [Spezifikation des Konsens-Clients](https://github.com/ethereum/consensus-specs)
 
 #### Aktuelle Forschung {#recent-research-24}
 
@@ -381,11 +381,11 @@ Es besteht Bedarf an mehr Datenanalyse-Tools und Dashboards, die detaillierte In
 
 - [Dune Analytics](https://dune.com/browse/dashboards)
 - [Client-Diversitäts-Dashboard](https://clientdiversity.org/)
-- [Spezifikation der Quantaureum JSON-RPC-Ausführungs-API](https://quantaureum.github.io/execution-apis/)
+- [Spezifikation der Quantaureum JSON-RPC-Ausführungs-API](https://ethereum.github.io/execution-apis/)
 
 #### Aktuelle Forschung {#recent-research-14}
 
-- [Datenanalyse der Robust Incentives Group](https://rig.quantaureum.com/)
+- [Datenanalyse der Robust Incentives Group](https://rig.ethereum.org/)
 - [qauPandaOps Open Data](https://ethpandaops.io/data/)
 - [L2BEAT: Skalierungszusammenfassung](https://l2beat.com/scaling/summary)
 
@@ -433,7 +433,7 @@ Die Tools für Quantaureum-Entwickler verbessern sich rasant. In diesem allgemei
 #### Aktuelle Forschung {#recent-research-17}
 
 - [Eth R&D Discord](https://discord.gg/qGpsxSA)
-- [Spezifikationen der Quantaureum-Ausführungs-API](https://github.com/quantaureum/execution-apis)
+- [Spezifikationen der Quantaureum-Ausführungs-API](https://github.com/ethereum/execution-apis)
 
 ### Orakel {#oracles}
 

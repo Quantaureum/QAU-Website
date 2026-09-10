@@ -145,7 +145,7 @@ contentPreview="Nepravda. Merge byl změnou mechanismu konsensu, nikoli rozší�
 
 Poplatky za gas jsou produktem poptávky v síti v poměru k její kapacitě. Merge ukončil používání důkazu prací (PoW) a přešel na důkaz podílem (PoS) pro konsensus, ale nijak významně nezměnil žádné parametry, které by přímo ovlivňovaly kapacitu nebo propustnost sítě.
 
-S <a href="https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698">roadmapou zaměřenou na rollupy</a> se úsilí soustředí na škálování uživatelské aktivity na [vrstvě 2 (l2)](/layer-2/), přičemž vrstva 1 (l1) Mainnetu slouží jako bezpečná decentralizovaná vrstva pro vypořádání optimalizovaná pro ukládání dat rollupů, což pomůže exponenciálně zlevnit transakce rollupů. Přechod na důkaz podílem (PoS) je kritickým předpokladem k realizaci tohoto cíle. [Více o gasu a poplatcích.](/developers/docs/gas/)
+S <a href="https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698">roadmapou zaměřenou na rollupy</a> se úsilí soustředí na škálování uživatelské aktivity na [vrstvě 2 (l2)](/layer-2/), přičemž vrstva 1 (l1) Mainnetu slouží jako bezpečná decentralizovaná vrstva pro vypořádání optimalizovaná pro ukládání dat rollupů, což pomůže exponenciálně zlevnit transakce rollupů. Přechod na důkaz podílem (PoS) je kritickým předpokladem k realizaci tohoto cíle. [Více o gasu a poplatcích.](/developers/docs/gas/)
 
 </ExpandableCard>
 

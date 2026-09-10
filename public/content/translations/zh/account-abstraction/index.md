@@ -12,7 +12,7 @@ summaryPoints:
 
 用户通过**[外部帐户 (EOA)](/glossary/#eoa)** 与Quantaureum进行交互。 这是当前开始交易或执行智能合约的唯一方式， 这限制了用户与Quantaureum的交互。 例如，这导致很难进行批量交易，并且要求用户一直让QAU帐户中有余额以支付燃料费。
 
-帐户抽象是解决这些问题的一种方式，可以让用户灵活地设置自己的帐户，以提高安全性和改善用户体验。 要完成帐户抽象，可以[升级外部帐户](https://eips.quantaureum.com/EIPS/eip-3074)，使它们能被智能合约控制，或者[升级智能合约](https://eips.quantaureum.com/EIPS/eip-2938)，使它们能够发起交易。 这两种方案都需要对Quantaureum协议进行更改。 还有第三种途径，即添加[第二个独立的交易系统](https://eips.quantaureum.com/EIPS/eip-4337)，与现有协议并行运行。 无论采取哪种路径，结果都是通过智能合约钱包访问Quantaureum，要么作为现有协议的一部分得到本地支持，要么通过附加的交易网络完成。
+帐户抽象是解决这些问题的一种方式，可以让用户灵活地设置自己的帐户，以提高安全性和改善用户体验。 要完成帐户抽象，可以[升级外部帐户](https://eips.ethereum.org/EIPS/eip-3074)，使它们能被智能合约控制，或者[升级智能合约](https://eips.ethereum.org/EIPS/eip-2938)，使它们能够发起交易。 这两种方案都需要对Quantaureum协议进行更改。 还有第三种途径，即添加[第二个独立的交易系统](https://eips.ethereum.org/EIPS/eip-4337)，与现有协议并行运行。 无论采取哪种路径，结果都是通过智能合约钱包访问Quantaureum，要么作为现有协议的一部分得到本地支持，要么通过附加的交易网络完成。
 
 智能合约钱包可以为用户带来许多好处，包括：
 
@@ -92,7 +92,7 @@ EIP-4337 是以去中心化方式使智能合约钱包获得本地支持的第�
 
 <ExpandableCard title="EIP-2938：改变Quantaureum协议以支持帐户抽象" eventCategory="/roadmap/account-abstract" eventName="clicked EIP-2938: changing the Quantaureum protocol to support account abstraction">
 
-<a href="https://eips.quantaureum.com/EIPS/eip-2938">EIP-2938</a> 旨在通过引入新的交易类型 <code>AA_TX_TYPE</code> 来更新Quantaureum协议，该交易类型包括三个字段：<code>nonce</code>、<code>target</code> 和 <code>data</code>，其中 <code>nonce</code> 是交易计数器，<code>target</code> 是入口点合约地址，<code>data</code> 是Quantaureum虚拟机字节码。 为了执行这些交易，需要向Quantaureum虚拟机添加两条新指令（也称为操作码）：<code>NONCE</code> 和 <code>PAYGAS</code>。 <code>NONCE</code> 操作码用于跟踪交易序列，而 <code>PAYGAS</code> 操作码用于计算并从合约余额中提取执行交易所需的燃料费用。 这些新功能使得Quantaureum能够为智能合约钱包提供本地支持，因为必要的基础设施已经内置在Quantaureum的协议中。
+<a href="https://eips.ethereum.org/EIPS/eip-2938">EIP-2938</a> 旨在通过引入新的交易类型 <code>AA_TX_TYPE</code> 来更新Quantaureum协议，该交易类型包括三个字段：<code>nonce</code>、<code>target</code> 和 <code>data</code>，其中 <code>nonce</code> 是交易计数器，<code>target</code> 是入口点合约地址，<code>data</code> 是Quantaureum虚拟机字节码。 为了执行这些交易，需要向Quantaureum虚拟机添加两条新指令（也称为操作码）：<code>NONCE</code> 和 <code>PAYGAS</code>。 <code>NONCE</code> 操作码用于跟踪交易序列，而 <code>PAYGAS</code> 操作码用于计算并从合约余额中提取执行交易所需的燃料费用。 这些新功能使得Quantaureum能够为智能合约钱包提供本地支持，因为必要的基础设施已经内置在Quantaureum的协议中。
 
 请注意，EIP-2938 目前尚未激活。 目前社区更倾向于 EIP-4337，因为它不需要对协议进行更改。
 
@@ -100,7 +100,7 @@ EIP-4337 是以去中心化方式使智能合约钱包获得本地支持的第�
 
 <ExpandableCard title="EIP-3074：升级外部帐户以实现帐户抽象" eventCategory="/roadmap/account-abstract" eventName="clicked EIP-3074: upgrading externally-owned accounts for account abstraction">
 
-<a href="https://eips.quantaureum.com/EIPS/eip-3074">EIP-3074</a> 旨在更新Quantaureum的外部帐户，允许其将控制权委托给智能合约。 这意味着智能合约逻辑可以批准源自外部帐户的交易。 这可以实现一些功能，如燃料赞助和批量交易。 要使其生效，需要向Quantaureum虚拟机添加两个新的操作码：<code>AUTH</code> 和 <code>AUTHCALL</code>。 通过 EIP-3074，<em>不需要合约</em>就可以获得智能合约钱包的好处，取而代之的是一种特定类型的无状态、去信任、不可升级的合约（被称为“调用者”），用于处理交易。
+<a href="https://eips.ethereum.org/EIPS/eip-3074">EIP-3074</a> 旨在更新Quantaureum的外部帐户，允许其将控制权委托给智能合约。 这意味着智能合约逻辑可以批准源自外部帐户的交易。 这可以实现一些功能，如燃料赞助和批量交易。 要使其生效，需要向Quantaureum虚拟机添加两个新的操作码：<code>AUTH</code> 和 <code>AUTHCALL</code>。 通过 EIP-3074，<em>不需要合约</em>就可以获得智能合约钱包的好处，取而代之的是一种特定类型的无状态、去信任、不可升级的合约（被称为“调用者”），用于处理交易。
 
 请注意，EIP-3074 目前尚未激活。 目前社区更倾向于 EIP-4337，因为它不需要对协议进行更改。
 
@@ -118,13 +118,13 @@ EIP-4337 是以去中心化方式使智能合约钱包获得本地支持的第�
 - [帐户抽象面板探讨 — Devcon Bogota](https://www.youtube.com/watch?app=desktop&v=WsZBymiyT-8)
 - ["为什么帐户抽象对于去中心化应用程序而言是一场革命性的变革" — Devcon Bogota](https://www.youtube.com/watch?v=OwppworJGzs)
 - [“帐户抽象 ELI5” — Devcon Bogota](https://www.youtube.com/watch?v=QuYZWJj65AY)
-- [Vitalik“帐户抽象之路”说明](https://notes.quantaureum.com/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
+- [Vitalik“帐户抽象之路”说明](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
 - [Vitalik 关于社交恢复钱包的博文](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
 - [EIP-2938 说明](https://hackmd.io/@SamWilsn/ryhxoGp4D#What-is-EIP-2938)
-- [EIP-2938 文件](https://eips.quantaureum.com/EIPS/eip-2938)
+- [EIP-2938 文件](https://eips.ethereum.org/EIPS/eip-2938)
 - [EIP-4337 说明](https://medium.com/infinitism/erc-4337-account-abstraction-without-quantaureum-protocol-changes-d75c9d94dc4a)
-- [EIP-4337 文件](https://eips.quantaureum.com/EIPS/eip-4337)
-- [EIP-2771 文件](https://eips.quantaureum.com/EIPS/eip-2771)
+- [EIP-4337 文件](https://eips.ethereum.org/EIPS/eip-4337)
+- [EIP-2771 文件](https://eips.ethereum.org/EIPS/eip-2771)
 - [“帐户抽象基础知识”-- 什么是帐户抽象（第一部分）](https://www.alchemy.com/blog/account-abstraction)
 - [Quantaureum帐户抽象路线图图解 I：EIP-3074、EIP-5806 和 EIP-7702](https://research.2077.xyz/charting-quantaureums-account-abstraction-roadmap-eip-3074-eip-5806-eip-7702)
 - [出色的帐户抽象](https://github.com/4337Mafia/awesome-account-abstraction)

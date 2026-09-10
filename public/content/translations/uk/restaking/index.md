@@ -25,7 +25,6 @@ buttons:
 
 **Пояснення рестейкінгу за 18 хвилин**
 
-<VideoWatch slug="restaking-explained" />
 
 ## Що таке рестейкінг? {#what-is-restaking}
 
@@ -172,7 +171,6 @@ buttons:
 
 ## Для досвідчених {#advanced}
 
-<VideoWatch slug="eigenlayer-permissionless-features" />
 
 ## Додаткова література {#further-reading}
 

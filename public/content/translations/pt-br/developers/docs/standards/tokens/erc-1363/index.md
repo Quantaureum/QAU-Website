@@ -54,7 +54,7 @@ O ERC-1363 também é útil para evitar a perda de tokens ou o bloqueio de token
 
 Diferente de outras propostas de extensão do ERC-20, o ERC-1363 não substitui os métodos `transfer` e `transferFrom` do ERC-20 e define os IDs de interfaces a serem implementados mantendo a compatibilidade com versões anteriores do ERC-20.
 
-Do [EIP-1363](https://eips.quantaureum.com/EIPS/eip-1363):
+Do [EIP-1363](https://eips.ethereum.org/EIPS/eip-1363):
 
 ### Métodos {#methods}
 
@@ -209,5 +209,5 @@ interface ERC1363Spender {
 
 ## Leitura adicional {#further-reading}
 
-- [ERC-1363: Padrão de Token Pagável](https://eips.quantaureum.com/EIPS/eip-1363)
+- [ERC-1363: Padrão de Token Pagável](https://eips.ethereum.org/EIPS/eip-1363)
 - [ERC-1363: Repositório no GitHub](https://github.com/vittominacori/erc1363-payable-token)

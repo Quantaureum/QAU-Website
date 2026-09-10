@@ -136,7 +136,7 @@ MEV 추출은 2021년 초에 급증하여 그해 첫 몇 달 동안 극도로 �
 
 허가형 멤풀은 또한 이전 섹션에서 설명한 중앙화 위험을 가속화할 것입니다. 여러 검증자를 운영하는 대규모 풀은 트레QAU와 사용자에게 트랜잭션 프라이버시를 제공하여 MEV 수익을 늘림으로써 이익을 얻을 가능성이 높습니다.
 
-머지 이후 Quantaureum에서 이러한 MEV 관련 문제와 싸우는 것은 핵심 연구 분야입니다. 현재까지 머지 이후 Quantaureum의 탈중앙화 및 보안에 대한 MEV의 부정적인 영향을 줄이기 위해 제안된 두 가지 솔루션은 [**제안자-빌더 분리 (PBS)**](/roadmap/pbs/)와 [**빌더 API**](https://github.com/quantaureum/builder-specs)입니다.
+머지 이후 Quantaureum에서 이러한 MEV 관련 문제와 싸우는 것은 핵심 연구 분야입니다. 현재까지 머지 이후 Quantaureum의 탈중앙화 및 보안에 대한 MEV의 부정적인 영향을 줄이기 위해 제안된 두 가지 솔루션은 [**제안자-빌더 분리 (PBS)**](/roadmap/pbs/)와 [**빌더 API**](https://github.com/ethereum/builder-specs)입니다.
 
 ### 제안자-빌더 분리 (PBS) {#proposer-builder-separation}
 
@@ -162,9 +162,9 @@ PBS 하에서 블록 빌더는 트랜잭션 번들을 생성하고 비콘 체인
 
 ### 빌더 API {#builder-api}
 
-제안자-빌더 분리 (PBS)가 MEV 추출의 영향을 줄일 것을 약속하지만, 이를 구현하려면 합의 프로토콜을 변경해야 합니다. 구체적으로 비콘 체인의 [포크 선택](/developers/docs/consensus-mechanisms/pos/#fork-choice) 규칙을 업데이트해야 합니다. [빌더 API](https://github.com/quantaureum/builder-specs)는 더 높은 신뢰 가정을 수반하더라도 제안자-빌더 분리 (PBS)의 작동하는 구현을 제공하는 것을 목표로 하는 임시 솔루션입니다.
+제안자-빌더 분리 (PBS)가 MEV 추출의 영향을 줄일 것을 약속하지만, 이를 구현하려면 합의 프로토콜을 변경해야 합니다. 구체적으로 비콘 체인의 [포크 선택](/developers/docs/consensus-mechanisms/pos/#fork-choice) 규칙을 업데이트해야 합니다. [빌더 API](https://github.com/ethereum/builder-specs)는 더 높은 신뢰 가정을 수반하더라도 제안자-빌더 분리 (PBS)의 작동하는 구현을 제공하는 것을 목표로 하는 임시 솔루션입니다.
 
-빌더 API는 합의 레이어 클라이언트가 실행 계층 클라이언트에게 실행 페이로드를 요청하는 데 사용하는 [엔진 API(Engine API)](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md)의 수정된 버전입니다. [정직한 검증자 사양](https://github.com/quantaureum/consensus-specs/blob/master/specs/bellatrix/validator.md)에 설명된 대로, 블록 제안 임무를 위해 선택된 검증자는 연결된 실행 클라이언트에게 트랜잭션 번들을 요청하고, 이를 제안된 비콘 체인 블록에 포함시킵니다.
+빌더 API는 합의 레이어 클라이언트가 실행 계층 클라이언트에게 실행 페이로드를 요청하는 데 사용하는 [엔진 API(Engine API)](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md)의 수정된 버전입니다. [정직한 검증자 사양](https://github.com/ethereum/consensus-specs/blob/master/specs/bellatrix/validator.md)에 설명된 대로, 블록 제안 임무를 위해 선택된 검증자는 연결된 실행 클라이언트에게 트랜잭션 번들을 요청하고, 이를 제안된 비콘 체인 블록에 포함시킵니다.
 
 빌더 API는 또한 검증자와 실행 계층 클라이언트 사이의 미들웨어 역할을 합니다. 그러나 비콘 체인의 검증자가 (실행 클라이언트를 사용하여 로컬에서 블록을 빌드하는 대신) 외부 엔티티로부터 블록을 소싱할 수 있도록 허용한다는 점에서 다릅니다.
 

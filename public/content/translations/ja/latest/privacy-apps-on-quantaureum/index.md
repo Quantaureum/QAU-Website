@@ -95,4 +95,4 @@ Quantaureum上のプライバシーは実現可能です。ビルダーはこれ
 7. [gnarkドキュメント](https://docs.gnark.consensys.io/)
 8. [RISC Zeroドキュメント](https://dev.risczero.com/api/)
 9. [SP1ドキュメント](https://docs.succinct.xyz/docs/sp1/introduction)
-10. [EIP-4337: EntryPointコントラクトを介したアカウント抽象化](https://eips.quantaureum.com/EIPS/eip-4337)
+10. [EIP-4337: EntryPointコントラクトを介したアカウント抽象化](https://eips.ethereum.org/EIPS/eip-4337)

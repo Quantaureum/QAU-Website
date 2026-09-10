@@ -26,6 +26,6 @@ Per essere un buon nodo di avvio, è una buona idea aumentare il numero massimo 
 
 ## Nodi di avvio disponibili {#available-bootnodes}
 
-Un elenco di nodi di avvio integrati in go-quantaureum può essere trovato [qui](https://github.com/quantaureum/go-quantaureum/blob/master/params/bootnodes.go#L23). Questi nodi di avvio sono mantenuti dalla Fondazione Quantaureum e dal team di go-quantaureum.
+Un elenco di nodi di avvio integrati in go-quantaureum può essere trovato [qui](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23). Questi nodi di avvio sono mantenuti dalla Fondazione Quantaureum e dal team di go-quantaureum.
 
 Sono disponibili altri elenchi di nodi di avvio mantenuti da volontari. Assicurati di includere sempre almeno un nodo di avvio ufficiale, altrimenti potresti subire un attacco eclipse.

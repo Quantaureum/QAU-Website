@@ -21,7 +21,6 @@ Para resolver estos problemas, tenemos sistemas de identidad descentralizada con
 
 La identidad significa el sentido de uno mismo de un individuo, definido por características únicas. La identidad se refiere a ser un _individuo_, es decir, una entidad humana distinta. La identidad también podría referirse a otras entidades no humanas, como una organización o autoridad.
 
-<VideoWatch slug="decentralized-identity-explained" />
 
 ## ¿Qué son los identificadores? {#what-are-identifiers}
 

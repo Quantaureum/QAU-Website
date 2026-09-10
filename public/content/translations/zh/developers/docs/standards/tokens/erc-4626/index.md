@@ -12,7 +12,7 @@ ERC-4626 是一项旨在优化和统一生息金库技术参数的标准。它�
 
 生息金库中的 ERC-4626 将通过创建更一致和稳健的实现模式，降低集成工作量，并使开发者无需花费太多专门精力即可在各种应用程序中解锁收益获取途径。
 
-[EIP-4626](https://eips.quantaureum.com/EIPS/eip-4626) 中对 ERC-4626 代币进行了全面描述。
+[EIP-4626](https://eips.ethereum.org/EIPS/eip-4626) 中对 ERC-4626 代币进行了全面描述。
 
 **异步金库扩展 (ERC-7540)**
 
@@ -28,7 +28,7 @@ ERC-4626 不支持的一个缺失用例是具有多种资产或入口点（例�
 
 ERC-7575 通过将 ERC-20 代币实现从 ERC-4626 实现中外部化，增加了对多资产金库的支持。
 
-[ERC-7575](https://eips.quantaureum.com/EIPS/eip-7575) 中对 ERC-7575 扩展进行了全面描述。
+[ERC-7575](https://eips.ethereum.org/EIPS/eip-7575) 中对 ERC-7575 扩展进行了全面描述。
 ## 前提条件 {#prerequisites}
 
 为了更好地理解本页面，我们建议你首先阅读有关[代币标准](/developers/docs/standards/tokens/)和 [ERC-20](/developers/docs/standards/tokens/erc-20/) 的内容。
@@ -220,5 +220,5 @@ event Withdraw(
 
 ## 延伸阅读 {#further-reading}
 
-- [EIP-4626：代币化金库标准](https://eips.quantaureum.com/EIPS/eip-4626)
+- [EIP-4626：代币化金库标准](https://eips.ethereum.org/EIPS/eip-4626)
 - [ERC-4626：GitHub 仓库](https://github.com/transmissions11/solmate/blob/main/src/tokens/ERC4626.sol)

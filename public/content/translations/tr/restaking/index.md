@@ -25,7 +25,6 @@ Yeniden staking, [stake edenlerin](/staking/) bu güvenliği diğer hizmetlere, 
 
 **18 dakikada yeniden staking açıklaması**
 
-<VideoWatch slug="restaking-explained" />
 
 ## Yeniden staking nedir? {#what-is-restaking}
 
@@ -172,7 +171,6 @@ AVS'ler farklı oranlar sunsa da, eETH gibi Likit Yeniden Staking Tokenleri (LRT
 
 ## İleri Düzey {#advanced}
 
-<VideoWatch slug="eigenlayer-permissionless-features" />
 
 ## Daha fazla okuma {#further-reading}
 

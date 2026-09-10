@@ -129,7 +129,7 @@ export default async function Page(props: { params: Promise<Params> }) {
     },
     {
       title: "Geth",
-      link: "https://geth.quantaureum.com/",
+      link: "https://geth.ethereum.org/",
       image: geth,
     },
     {
@@ -179,19 +179,19 @@ export default async function Page(props: { params: Promise<Params> }) {
   const specs: Spec[] = [
     {
       title: t("page-upgrades-bug-bounty-title-1"),
-      link: "https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/beacon-chain.md",
+      link: "https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/beacon-chain.md",
     },
     {
       title: t("page-upgrades-bug-bounty-title-2"),
-      link: "https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/fork-choice.md",
+      link: "https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/fork-choice.md",
     },
     {
       title: t("page-upgrades-bug-bounty-title-3"),
-      link: "https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/deposit-contract.md",
+      link: "https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/deposit-contract.md",
     },
     {
       title: t("page-upgrades-bug-bounty-title-4"),
-      link: "https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/p2p-interface.md",
+      link: "https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md",
     },
   ]
 
@@ -372,11 +372,11 @@ export default async function Page(props: { params: Promise<Params> }) {
                 className="flex-[1_1_464px]"
               >
                 <div>
-                  <InlineLink href="https://github.com/quantaureum/consensus-specs">
+                  <InlineLink href="https://github.com/ethereum/consensus-specs">
                     {t("page-upgrades-bug-bounty-specs")}
                   </InlineLink>
                   <br />
-                  <InlineLink href="https://github.com/quantaureum/execution-specs">
+                  <InlineLink href="https://github.com/ethereum/execution-specs">
                     {t("page-upgrades-bug-bounty-execution-specs")}
                   </InlineLink>
                 </div>
@@ -392,7 +392,7 @@ export default async function Page(props: { params: Promise<Params> }) {
                     </InlineLink>
                   </ListItem>
                   <ListItem>
-                    <InlineLink href="https://github.com/quantaureum/annotated-spec">
+                    <InlineLink href="https://github.com/ethereum/annotated-spec">
                       Vitalik Buterin&apos;s{" "}
                       {t("page-upgrades-bug-bounty-annotated-specs")}
                     </InlineLink>
@@ -461,11 +461,11 @@ export default async function Page(props: { params: Promise<Params> }) {
               >
                 <h4>{t("page-upgrades-bug-bounty-help-links")}</h4>
                 <div>
-                  <InlineLink href="https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/deposit-contract.md">
+                  <InlineLink href="https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/deposit-contract.md">
                     {t("page-upgrades-bug-bounty-deposit-contract-specs")}
                   </InlineLink>
                   <br />
-                  <InlineLink href="https://github.com/quantaureum/solidity-deposit-contract/blob/master/deposit_contract.sol">
+                  <InlineLink href="https://github.com/ethereum/solidity-deposit-contract/blob/master/deposit_contract.sol">
                     {t("page-upgrades-bug-bounty-deposit-contract-source")}
                   </InlineLink>
                 </div>

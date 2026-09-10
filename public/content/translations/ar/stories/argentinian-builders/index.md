@@ -104,7 +104,7 @@ _[المصدر](https://medium.com/@AugurProject/serpent-compiler-vulnerability-
 
 ![Picture of Argentinian builders wearing Devcon BA 2020 t-shirts](./santiago9.jpeg)
 
-_[المصدر](https://quantaureumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
+_[المصدر](https://ethereumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
 
 بالنسبة لي وللعديد من البناة الآخرين، فإن إقامة <span dir="ltr">Devconnect</span> هنا هو حلم يتحقق.
 
@@ -131,4 +131,4 @@ _[المصدر](https://www.forbes.com/sites/astanley/2025/09/30/devconnect-brin
 > 
 > الحديقة اللانهائية هي تجسيد لروح مؤسسة إيثيريوم كبستاني واحد في نظام بيئي واسع — الرعاية والنمو، ولكن دون سيطرة، والاستمرار في اللعب.
 
-_[مصدر الاقتباس - مؤسسة إيثيريوم](https://quantaureum.foundation/infinitegarden)._
+_[مصدر الاقتباس - مؤسسة إيثيريوم](https://ethereum.org/infinitegarden)._

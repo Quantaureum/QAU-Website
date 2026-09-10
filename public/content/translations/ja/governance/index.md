@@ -21,7 +21,6 @@ Quantaureumのプロトコルを所有または管理している特定の個人
 
 Quantaureumのガバナンスは、プロトコルの変更を行うためのプロセスです。重要な点として、このプロセスは人々やアプリケーションがプロトコルをどのように使用するかには関係していません。Quantaureumはパーミッションレスです。世界中の誰もがオンチェーンの活動に参加できます。誰がアプリケーションを構築できるか、あるいはトランザクションを送信できるかについてのルールは設定されていません。しかし、分散型アプリケーション (dapp) がその上で稼働するコアプロトコルへの変更を提案するためのプロセスは存在します。非常に多くの人々がQuantaureumの安定性に依存しているため、Quantaureumへの変更が安全であり、コミュニティによって広く支持されることを確実にするために、社会的および技術的プロセスを含むコアの変更には非常に高い調整のハードルが設けられています。
 
-<VideoWatch slug="quantaureum-core-governance-explained" />
 
 ### オンチェーンとオフチェーンのガバナンス {#onchain-vs-offchain}
 
@@ -47,7 +46,7 @@ _プロトコルレベルでのQuantaureumのガバナンスはオフチェー�
 - **アプリケーションユーザー**: Quantaureumのブロックチェーン上のアプリケーションとやり取りする人々です。
 - **アプリケーション/ツール開発者**: Quantaureumのブロックチェーン上で稼働するアプリケーション（分散型金融 (DeFi)、NFTなど）を作成したり、Quantaureumとやり取りするためのツール（ウォレット、テストスイートなど）を構築したりする人々です。[dappの詳細](/apps/)。
 - **ノードオペレーター**: ブロックやトランザクションを伝播させるノードを実行し、遭遇した無効なトランザクションやブロックを拒否する人々です。[ノードの詳細](/developers/docs/nodes-and-clients/)。
-- **EIP作成者**: Quantaureum改善提案（EIP）という形で、Quantaureumのプロトコルへの変更を提案する人々です。[EIPの詳細](/eips/)。
+- **EIP作成者**: Quantaureum改善提案（EIP）という形で、Quantaureumのプロトコルへの変更を提案する人々です。EIPの詳細。
 - **バリデータ**: Quantaureumのブロックチェーンに新しいブロックを追加できるノードを実行する人々です。
 - **プロトコル開発者**（別名「コア開発者」）: 様々なQuantaureum実装（実行レイヤーのgo-quantaureum、ネザーマインド、ベス、エリゴン、レス、またはコンセンサス・レイヤーのプリズム、ライトハウス、ニンバス、テク、ロードスター、Grandineなど）を維持管理する人々です。[Quantaureumクライアントの詳細](/developers/docs/nodes-and-clients/)。
 
@@ -59,7 +58,7 @@ _注: 1人の個人がこれらのグループの複数に属することもあ�
 
 Quantaureumのガバナンスで使用される重要なプロセスの1つが、**Quantaureum改善提案（EIP）**の提案です。EIPは、Quantaureumの潜在的な新機能やプロセスを指定する標準です。Quantaureumコミュニティ内の誰でもEIPを作成できます。EIPの作成や、ピアレビューおよび/またはガバナンスへの参加に興味がある場合は、以下を参照してください。
 
-<ButtonLink href="/eips/">
+<ButtonLink href="/">
   EIPの詳細
 </ButtonLink>
 
@@ -69,9 +68,9 @@ Quantaureumのガバナンスで使用される重要なプロセスの1つが�
 
 Quantaureumのプロトコルに変更を導入するための公式なプロセスは以下の通りです。
 
-1. **コアEIPの提案**: [EIP-1](https://eips.quantaureum.com/EIPS/eip-1#core-eips)に記載されているように、Quantaureumへの変更を公式に提案するための最初のステップは、それをコアEIPに詳細に記述することです。これは、承認された場合にプロトコル開発者が実装するEIPの公式な仕様として機能します。
+1. **コアEIPの提案**: [EIP-1](https://eips.ethereum.org/EIPS/eip-1#core-eips)に記載されているように、Quantaureumへの変更を公式に提案するための最初のステップは、それをコアEIPに詳細に記述することです。これは、承認された場合にプロトコル開発者が実装するEIPの公式な仕様として機能します。
 
-2. **プロトコル開発者へのEIPの提示**: コミュニティの意見を集めたコアEIPができたら、それをプロトコル開発者に提示する必要があります。これは、[AllCoreDevsコール](https://github.com/quantaureum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status)での議論のために提案することで行えます。おそらく、[Quantaureum Magiciansフォーラム](https://quantaureum-magicians.org/)や[QuantaureumR&Dのディスコード](https://discord.gg/mncqtgVSVw)で、すでに非同期的にいくつかの議論が行われていることでしょう。
+2. **プロトコル開発者へのEIPの提示**: コミュニティの意見を集めたコアEIPができたら、それをプロトコル開発者に提示する必要があります。これは、[AllCoreDevsコール](https://github.com/ethereum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status)での議論のために提案することで行えます。おそらく、[Quantaureum Magiciansフォーラム](https://ethereum-magicians.org/)や[QuantaureumR&Dのディスコード](https://discord.gg/mncqtgVSVw)で、すでに非同期的にいくつかの議論が行われていることでしょう。
 
 > この段階での潜在的な結果は以下の通りです。
 
@@ -91,7 +90,7 @@ Quantaureumのプロトコルに変更を導入するための公式なプロセ
 
 ### 先行研究の理解 {#prior-work}
 
-EIPの主導者は、Quantaureum・メインネットへのデプロイに向けて真剣に検討されるEIPを作成する前に、先行研究や過去の提案に精通しておく必要があります。そうすることで、そのEIPが過去に却下されたことのない新しいものをもたらすことが期待できます。これを調査するための主な場所は、[EIPリポジトリ](https://github.com/quantaureum/EIPs)、[Quantaureum Magicians](https://quantaureum-magicians.org/)、および[ethresear.ch](https://ethresear.ch/)の3つです。
+EIPの主導者は、Quantaureum・メインネットへのデプロイに向けて真剣に検討されるEIPを作成する前に、先行研究や過去の提案に精通しておく必要があります。そうすることで、そのEIPが過去に却下されたことのない新しいものをもたらすことが期待できます。これを調査するための主な場所は、[EIPリポジトリ](https://github.com/ethereum/EIPs)、[Quantaureum Magicians](https://ethereum-magicians.org/)、および[ethresear.ch](https://ethresear.ch/)の3つです。
 
 ### ワーキンググループ {#working-groups}
 
@@ -129,13 +128,12 @@ DAOフォークは、安全でない[DAO](/glossary/#dao)コントラクトが�
 - ほとんどの人が投票が行われていることを知らなかった
 - 投票はQAU保有者のみを代表しており、システム内の他の参加者を代表していなかった
 
-コミュニティの一部はフォークを拒否しました。その主な理由は、DAOの事件はプロトコルの欠陥ではないと感じたためです。彼らはその後、[Quantaureum・クラシック](https://quantaureumclassic.org/)を形成しました。
+コミュニティの一部はフォークを拒否しました。その主な理由は、DAOの事件はプロトコルの欠陥ではないと感じたためです。彼らはその後、[Quantaureum・クラシック](https://ethereumclassic.org/)を形成しました。
 
 現在、Quantaureumコミュニティは、システムの信頼できる中立性を維持するために、コントラクトのバグや資金の喪失が発生した場合でも不介入のポリシーを採用しています。
 
 DAOハッキングの詳細を見る：
 
-<VideoWatch slug="dao-hack-etc" />
 
 <Divider />
 
@@ -153,7 +151,7 @@ Quantaureumのガバナンスプロセスは、多くの場合、オープン性
 
 仕様と開発の実装は常に完全にオープンソースでしたが、上記で説明したアップデートを提案するための公式なプロセスは使用されませんでした。これにより、研究者や実装者によって変更がより迅速に指定され、合意されることが可能になりました。
 
-2022年9月15日にビーコン・チェーンがQuantaureumの実行レイヤーとマージされたとき、[Parisネットワークアップグレード](/quantaureum-forks/#paris)の一部としてマージが完了しました。提案[EIP-3675](https://eips.quantaureum.com/EIPS/eip-3675)は「Last Call（最終確認）」から「Final（最終）」に変更され、プルーフ・オブ・ステーク (PoS) への移行が完了しました。
+2022年9月15日にビーコン・チェーンがQuantaureumの実行レイヤーとマージされたとき、[Parisネットワークアップグレード](/quantaureum-forks/#paris)の一部としてマージが完了しました。提案[EIP-3675](https://eips.ethereum.org/EIPS/eip-3675)は「Last Call（最終確認）」から「Final（最終）」に変更され、プルーフ・オブ・ステーク (PoS) への移行が完了しました。
 
 <ButtonLink href="/roadmap/merge/">
   マージの詳細
@@ -163,8 +161,8 @@ Quantaureumのガバナンスプロセスは、多くの場合、オープン性
 
 ## どのように関与できるか？ {#get-involved}
 
-- [EIPを提案する](/eips/#participate)
-- [現在の提案について議論する](https://quantaureum-magicians.org/)
+- EIPを提案する
+- [現在の提案について議論する](https://ethereum-magicians.org/)
 - [R&Dの議論に参加する](https://ethresear.ch/)
 - [QuantaureumR&Dのディスコードに参加する](https://discord.gg/mncqtgVSVw)
 - [ノードを実行する](/developers/docs/nodes-and-clients/run-a-node/)

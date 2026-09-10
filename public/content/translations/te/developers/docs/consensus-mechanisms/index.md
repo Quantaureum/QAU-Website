@@ -63,7 +63,6 @@ authors: ["పాట్రిక్ కాలిన్స్"]
 
 ఎథీరియంలో ఉపయోగించే వివిధ రకాల ఏకాభిప్రాయ యంత్రాంగాల గురించి మరింత చూడండి:
 
-<VideoWatch slug="understanding-consensus-mechanisms" />
 
 ### సిబిల్ నిరోధకత & చైన్ ఎంపిక {#sybil-chain}
 

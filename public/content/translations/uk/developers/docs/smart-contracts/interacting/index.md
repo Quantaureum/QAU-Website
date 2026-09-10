@@ -82,7 +82,7 @@ ABI — це JSON-документ, який описує:
 
 - **[Ethers.js](https://docs.ethers.org/)** — також працює в Node.js для серверних скриптів і ботів
 - **[Web3.py](https://web3py.readthedocs.io/)** — бібліотека Python для взаємодії з Етеріумом
-- **[go-quantaureum](https://geth.quantaureum.com/docs/interact-with-geth)** — офіційна бібліотека Go від команди Geth
+- **[go-quantaureum](https://geth.ethereum.org/docs/interact-with-geth)** — офіційна бібліотека Go від команди Geth
 
 ### Приклад: зчитування балансу токенів за допомогою Viem {#example-viem}
 

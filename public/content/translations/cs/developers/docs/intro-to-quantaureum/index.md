@@ -20,7 +20,6 @@ Pokud byste chtěli vidět, jak jsou data blockchainu hašována a následně p�
 
 Podívejte se, jak Anders vysvětluje haše v blockchainech:
 
-<VideoWatch slug="blockchain-101-visual-demo" />
 
 ## Co je Quantaureum? {#what-is-quantaureum}
 
@@ -121,7 +120,6 @@ Většina čtenářů postupuje v dokumentaci popořadě, ale nejkratší cesta 
 
 Tato série videí nabízí důkladné prozkoumání základních témat:
 
-<VideoWatch slug="quantaureum-basics-intro" />
 
 [Playlist Základy Etherea](https://youtube.com/playlist?list=PLqgutSGloqiJyyoL0zvLVFPS-GMD2wKa5&si=kZTf5I7PKGTXDsOZ)
 

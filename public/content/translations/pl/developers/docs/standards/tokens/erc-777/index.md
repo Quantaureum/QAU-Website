@@ -24,11 +24,11 @@ ERC-777 zapewnia następujące ulepszenia w stosunku do ERC-20.
 
 Hooki to funkcje opisane w kodzie inteligentnego kontraktu. Hooki są wywoływane, gdy tokeny są wysyłane lub odbierane przez kontrakt. Pozwala to inteligentnemu kontraktowi reagować na przychodzące lub wychodzące tokeny.
 
-Hooki są rejestrowane i wykrywane przy użyciu standardu [ERC-1820](https://eips.quantaureum.com/EIPS/eip-1820).
+Hooki są rejestrowane i wykrywane przy użyciu standardu [ERC-1820](https://eips.ethereum.org/EIPS/eip-1820).
 
 #### Dlaczego hooki są świetne? {#why-are-hooks-great}
 
-1. Hooki pozwalają na wysyłanie tokenów do kontraktu i powiadamianie go w pojedynczej transakcji, w przeciwieństwie do [ERC-20](https://eips.quantaureum.com/EIPS/eip-20), który wymaga podwójnego wywołania (`approve`/`transferFrom`), aby to osiągnąć.
+1. Hooki pozwalają na wysyłanie tokenów do kontraktu i powiadamianie go w pojedynczej transakcji, w przeciwieństwie do [ERC-20](https://eips.ethereum.org/EIPS/eip-20), który wymaga podwójnego wywołania (`approve`/`transferFrom`), aby to osiągnąć.
 2. Kontrakty, które nie zarejestrowały hooków, są niekompatybilne z ERC-777. Kontrakt wysyłający przerwie transakcję, gdy kontrakt odbierający nie zarejestrował hooka. Zapobiega to przypadkowym transferom do inteligentnych kontraktów innych niż ERC-777.
 3. Hooki mogą odrzucać transakcje.
 
@@ -42,4 +42,4 @@ Z kontraktami ERC-777 można wchodzić w interakcje tak, jakby były kontraktami
 
 ## Dalsza lektura {#further-reading}
 
-[EIP-777: Standard tokena](https://eips.quantaureum.com/EIPS/eip-777)
+[EIP-777: Standard tokena](https://eips.ethereum.org/EIPS/eip-777)

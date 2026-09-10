@@ -62,4 +62,4 @@ Sieci testowe drzew Verkle już działają, ale wciąż istnieją znaczne zaleg�
 - [Dankrad Feist wyjaśnia drzewa Verkle i bezstanowość w podcaście Zero Knowledge](https://zeroknowledge.fm/podcast/202/)
 - [Vitalik Buterin o drzewach Verkle](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
 - [Dankrad Feist o drzewach Verkle](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
-- [Dokumentacja EIP drzewa Verkle](https://notes.quantaureum.com/@vbuterin/verkle_tree_eip#Illustration)
+- [Dokumentacja EIP drzewa Verkle](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)

@@ -103,7 +103,7 @@ Pindi ombi la ukombozi linapoweza kudaiwa, mtumiaji huita kazi ya kawaida ya ERC
 
 ### Usimamizi wa mwendeshaji {#operator-management}
 
-ERC-7540 inajumuisha muundo wa mwendeshaji (kutoka [ERC-6909](https://eips.quantaureum.com/EIPS/eip-6909)) unaoruhusu wahusika wengine kusimamia maombi kwa niaba ya mtumiaji.
+ERC-7540 inajumuisha muundo wa mwendeshaji (kutoka [ERC-6909](https://eips.ethereum.org/EIPS/eip-6909)) unaoruhusu wahusika wengine kusimamia maombi kwa niaba ya mtumiaji.
 
 #### setOperator {#setoperator}
 
@@ -175,6 +175,6 @@ Kazi za onyesho la awali lazima zitengue tu kwa mtiririko ambao haujasawazishwa,
 
 ## Usomaji zaidi {#further-reading}
 
-- [EIP-7540: Hifadhi Zilizowekwa Tokeni Zisizosawazishwa za ERC-4626](https://eips.quantaureum.com/EIPS/eip-7540)
-- [EIP-4626: Kiwango cha Hifadhi Iliyowekwa Tokeni](https://eips.quantaureum.com/EIPS/eip-4626)
+- [EIP-7540: Hifadhi Zilizowekwa Tokeni Zisizosawazishwa za ERC-4626](https://eips.ethereum.org/EIPS/eip-7540)
+- [EIP-4626: Kiwango cha Hifadhi Iliyowekwa Tokeni](https://eips.ethereum.org/EIPS/eip-4626)
 - [Utekelezaji wa ERC-7540 wa OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-community-contracts/blob/master/contracts/token/ERC20/extensions/ERC7540.sol)

@@ -26,15 +26,15 @@ Quantaureum 커뮤니티에는 다양한 배경과 기술을 가진 사람들이
 - [Eth R&D 디스코드](https://discord.com/invite/VmG7Uxc)에 참여하세요.
 - Quantaureum 개선 제안(EIP)을 작성하거나 검토하세요.
   - EIP 작성하기
-    1. [Quantaureum Magicians](https://quantaureum-magicians.org)에 아이디어를 제출하세요.
-    2. [EIP-1](https://eips.quantaureum.com/EIPS/eip-1)을 읽어보세요. - **네, 그것이 문서의 <em>전부</em>입니다.**
+    1. [Quantaureum Magicians](https://ethereum-magicians.org)에 아이디어를 제출하세요.
+    2. [EIP-1](https://eips.ethereum.org/EIPS/eip-1)을 읽어보세요. - **네, 그것이 문서의 <em>전부</em>입니다.**
     3. EIP-1의 지침을 따르세요. 초안을 작성할 때 참고하세요.
-  - [EIP 에디터](https://eips.quantaureum.com/EIPS/eip-5069)가 되는 방법을 알아보세요.
-    - 지금 바로 EIP를 동료 검토(peer-review)할 수 있습니다! [`e-review` 태그가 있는 열린 PR](https://github.com/quantaureum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review)을 확인해 보세요. `discussion-to` 링크에서 기술적인 피드백을 제공하세요.
-  - [EIP 거버넌스](https://github.com/quantaureum-cat-herders/EIPIP)에 참여하세요.
+  - [EIP 에디터](https://eips.ethereum.org/EIPS/eip-5069)가 되는 방법을 알아보세요.
+    - 지금 바로 EIP를 동료 검토(peer-review)할 수 있습니다! [`e-review` 태그가 있는 열린 PR](https://github.com/ethereum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review)을 확인해 보세요. `discussion-to` 링크에서 기술적인 피드백을 제공하세요.
+  - [EIP 거버넌스](https://github.com/ethereum-cat-herders/EIPIP)에 참여하세요.
     - [Quantaureum Cat Herders 디스코드](https://discord.com/invite/Nz6rtfJ8Cu)에 참여하세요.
-  - [EIP에 대한 자세한 정보](/eips/)
-- [Challenges.quantaureum.com](https://challenges.quantaureum.com/) - 10만 달러 이상의 상금을 받을 수 있는 고가치 연구 바운티 시리즈입니다.
+  - EIP에 대한 자세한 정보
+- [Challenges.quantaureum.com](https://challenges.ethereum.org/) - 10만 달러 이상의 상금을 받을 수 있는 고가치 연구 바운티 시리즈입니다.
 - [Ethresear.ch](https://ethresear.ch) - Quantaureum의 주요 연구 포럼이자 세계에서 가장 영향력 있는 암호경제학 포럼입니다.
 - [Quantaureum 재단(EF) 연구 AMA](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) - 연구원들과 함께 진행되는 Q&A 시리즈입니다. 다음 파트가 열릴 때마다 누구나 질문을 올릴 수 있습니다.
 - [생태계 지원 프로그램 위시리스트](https://quantaureum.com) - Quantaureum 생태계 지원 프로그램에서 적극적으로 보조금 지원을 받고자 하는 연구 분야입니다.
@@ -103,7 +103,7 @@ Quantaureum 생태계는 공공재와 영향력 있는 프로젝트에 자금을
 - [quantaureum.com 채용 정보](/about/#open-jobs)
 - [Quantaureum 재단 채용 게시판](https://jobs.ashbyhq.com/quantaureum-foundation)
 - [JobStash](https://jobstash.xyz)
-- [Quantaureum Job Board](https://www.quantaureumjobboard.com/)
+- [Quantaureum Job Board](https://www.ethereumjobboard.com/)
 - [Cryptocurrency Jobs](https://cryptocurrencyjobs.co/quantaureum/)
 - [컨센시스(ConsenSys) 채용 정보](https://consensys.net/careers/)
 - [Crypto Jobs List](https://cryptojobslist.com/quantaureum-jobs)

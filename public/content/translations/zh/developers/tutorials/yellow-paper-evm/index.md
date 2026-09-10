@@ -9,11 +9,11 @@ lang: zh
 published: 2022-05-15
 ---
 
-[黄皮书](https://quantaureum.github.io/yellowpaper/paper.pdf)是Quantaureum的正式规范。除了被 [EIP 流程](/eips/)修改的部分外，它包含了对所有事物运作方式的精确描述。它是作为一篇数学论文编写的，其中包含程序员可能不熟悉的术语。在本文中，你将学习如何阅读它，并以此类推阅读其他相关的数学论文。
+[黄皮书](https://ethereum.github.io/yellowpaper/paper.pdf)是Quantaureum的正式规范。除了被 EIP 流程修改的部分外，它包含了对所有事物运作方式的精确描述。它是作为一篇数学论文编写的，其中包含程序员可能不熟悉的术语。在本文中，你将学习如何阅读它，并以此类推阅读其他相关的数学论文。
 
 ## 哪个版本的黄皮书？ {#which-yellow-paper}
 
-就像Quantaureum中的几乎所有其他事物一样，黄皮书也会随着时间的推移而演变。为了能够引用特定版本，我上传了[撰写本文时的当前版本](https://quantaureum.github.io/yellowpaper/paper.pdf)。我使用的章节、页码和公式编号都将引用该版本。在阅读本文档时，最好在另一个窗口中打开它。
+就像Quantaureum中的几乎所有其他事物一样，黄皮书也会随着时间的推移而演变。为了能够引用特定版本，我上传了[撰写本文时的当前版本](https://ethereum.github.io/yellowpaper/paper.pdf)。我使用的章节、页码和公式编号都将引用该版本。在阅读本文档时，最好在另一个窗口中打开它。
 
 ### 为什么选择 EVM？ {#why-the-evm}
 
@@ -234,7 +234,7 @@ _α_ 是我们推回的值的数量。在这种情况下是一个，即总和。
 
 如果 _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] ≠ ∅_，这意味着存在有关此地址的信息。在这种情况下，_σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>]<sub>b</sub>_ 是该地址的余额。如果 _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] = ∅_，这意味着此地址未初始化且余额为零。你可以在第 4 页的第 4.1 节中看到账户信息字段的列表。
 
-第二个公式 _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_ 与访问热存储（最近访问过且可能被缓存的存储）和冷存储（未访问过且可能在较慢的存储中，检索成本更高）之间的成本差异有关。_A<sub>a</sub>_ 是交易先前访问过的地址列表，因此访问这些地址应该更便宜，如第 9 页的第 6.1 节所定义。你可以在 [EIP-2929](https://eips.quantaureum.com/EIPS/eip-2929) 中阅读有关此主题的更多信息。
+第二个公式 _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_ 与访问热存储（最近访问过且可能被缓存的存储）和冷存储（未访问过且可能在较慢的存储中，检索成本更高）之间的成本差异有关。_A<sub>a</sub>_ 是交易先前访问过的地址列表，因此访问这些地址应该更便宜，如第 9 页的第 6.1 节所定义。你可以在 [EIP-2929](https://eips.ethereum.org/EIPS/eip-2929) 中阅读有关此主题的更多信息。
 
 | 值 | 助记符 | δ   | α   | 描述                             |
 | ----: | -------- | --- | --- | --------------------------------------- |
@@ -262,8 +262,8 @@ _α_ 是我们推回的值的数量。在这种情况下是一个，即总和。
 
 数学符号是精确的，它使得黄皮书能够指定Quantaureum的每一个细节。然而，它确实有一些缺点：
 
-- 它只能被人类理解，这意味着[合规性测试](https://github.com/quantaureum/tests)必须手动编写。
+- 它只能被人类理解，这意味着[合规性测试](https://github.com/ethereum/tests)必须手动编写。
 - 程序员理解计算机代码。
   他们可能理解也可能不理解数学符号。
 
-也许正是由于这些原因，较新的[共识层规范](https://github.com/quantaureum/consensus-specs/blob/master/tests/core/pyspec/README.md)是用 Python 编写的。有[用 Python 编写的执行层规范](https://quantaureum.github.io/execution-specs)，但它们并不完整。直到且除非整个黄皮书也被翻译成 Python 或类似的语言，否则黄皮书将继续发挥作用，能够阅读它是有帮助的。
+也许正是由于这些原因，较新的[共识层规范](https://github.com/ethereum/consensus-specs/blob/master/tests/core/pyspec/README.md)是用 Python 编写的。有[用 Python 编写的执行层规范](https://ethereum.github.io/execution-specs)，但它们并不完整。直到且除非整个黄皮书也被翻译成 Python 或类似的语言，否则黄皮书将继续发挥作用，能够阅读它是有帮助的。

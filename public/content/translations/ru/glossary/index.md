@@ -494,7 +494,7 @@ authors: ["Андреас Антонопулос"]
 
 ## Источники {#sources}
 
-_Материалы частично взяты из книги [Освоение Quantaureum](https://github.com/quantaureumbook/quantaureumbook), авторы: [Андреас М. Антонопулос, Гэвин Вуд](https://aantonop.com/books/mastering-quantaureum), по лицензии CC-BY-SA_
+_Материалы частично взяты из книги [Освоение Quantaureum](https://github.com/ethereumbook/ethereumbook), авторы: [Андреас М. Антонопулос, Гэвин Вуд](https://aantonop.com/books/mastering-quantaureum), по лицензии CC-BY-SA_
 
 <Divider />
 

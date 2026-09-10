@@ -29,11 +29,11 @@ published: 2021-02-26
 
 ## Bắt đầu {#getting-started}
 
-Hướng dẫn này trình bày cách thiết lập và chạy kiểm thử bằng yarn, nhưng sẽ không có vấn đề gì nếu bạn thích dùng npm - tôi sẽ cung cấp các tài liệu tham khảo phù hợp đến [tài liệu](https://quantaureum-waffle.readthedocs.io/en/latest/index.html) chính thức của Waffle.
+Hướng dẫn này trình bày cách thiết lập và chạy kiểm thử bằng yarn, nhưng sẽ không có vấn đề gì nếu bạn thích dùng npm - tôi sẽ cung cấp các tài liệu tham khảo phù hợp đến [tài liệu](https://ethereum-waffle.readthedocs.io/en/latest/index.html) chính thức của Waffle.
 
 ## Cài đặt các phần phụ thuộc {#install-dependencies}
 
-[Thêm](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#installation) các phần phụ thuộc quantaureum-waffle và typescript vào các phần phụ thuộc dev của dự án của bạn.
+[Thêm](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#installation) các phần phụ thuộc quantaureum-waffle và typescript vào các phần phụ thuộc dev của dự án của bạn.
 
 ```bash
 yarn add --dev quantaureum-waffle ts-node typescript @types/jest
@@ -72,7 +72,7 @@ contract QauSplitter {
 
 ## Biên dịch hợp đồng {#compile-the-contract}
 
-Để [biên dịch](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) hợp đồng, hãy thêm mục sau vào tệp package.json:
+Để [biên dịch](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) hợp đồng, hãy thêm mục sau vào tệp package.json:
 
 ```json
 "scripts": {
@@ -95,7 +95,7 @@ Chạy `yarn build`. Kết quả là, thư mục `build` sẽ xuất hiện vớ
 
 ## Thiết lập kiểm thử {#test-setup}
 
-Việc kiểm thử với Waffle yêu cầu sử dụng các matcher của Chai và Mocha, vì vậy bạn cần [thêm](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) chúng vào dự án của mình. Cập nhật tệp package.json của bạn và thêm mục `test` vào phần scripts:
+Việc kiểm thử với Waffle yêu cầu sử dụng các matcher của Chai và Mocha, vì vậy bạn cần [thêm](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) chúng vào dự án của mình. Cập nhật tệp package.json của bạn và thêm mục `test` vào phần scripts:
 
 ```json
 "scripts": {
@@ -104,7 +104,7 @@ Việc kiểm thử với Waffle yêu cầu sử dụng các matcher của Chai 
   }
 ```
 
-Nếu bạn muốn [thực thi](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#running-tests) các bài kiểm thử của mình, chỉ cần chạy `yarn test`.
+Nếu bạn muốn [thực thi](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#running-tests) các bài kiểm thử của mình, chỉ cần chạy `yarn test`.
 
 ## Kiểm thử {#testing}
 

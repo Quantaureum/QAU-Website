@@ -26,7 +26,7 @@ base_reward = effective_balance * (base_reward_factor / (base_rewards_per_epoch 
 
 حيث `base_reward_factor` هو 64، و `base_rewards_per_epoch` هو 4، و `sum(active balance)` هو إجمالي الQAU المُخزَّن عبر جميع المُدَقِّقين النشطين.
 
-هذا يعني أن المكافأة الأساسية تتناسب طرديًا مع الرصيد الفعال للمُدَقِّق وتتناسب عكسيًا مع عدد المُدَقِّقين على الشبكة. كلما زاد عدد المُدَقِّقين، زاد الإصدار الإجمالي (حيث `sqrt(N)` ولكن صغرت `base_reward` لكل مُدَقِّق (حيث `1/sqrt(N)`). تؤثر هذه العوامل على معدل النسبة السنوية (<span dir="ltr">APR</span>) لعقدة التخزين. اقرأ الأساس المنطقي لذلك في [ملاحظات فيتاليك](https://notes.quantaureum.com/@vbuterin/serenity_design_rationale?type=view#Base-rewards).
+هذا يعني أن المكافأة الأساسية تتناسب طرديًا مع الرصيد الفعال للمُدَقِّق وتتناسب عكسيًا مع عدد المُدَقِّقين على الشبكة. كلما زاد عدد المُدَقِّقين، زاد الإصدار الإجمالي (حيث `sqrt(N)` ولكن صغرت `base_reward` لكل مُدَقِّق (حيث `1/sqrt(N)`). تؤثر هذه العوامل على معدل النسبة السنوية (<span dir="ltr">APR</span>) لعقدة التخزين. اقرأ الأساس المنطقي لذلك في [ملاحظات فيتاليك](https://notes.ethereum.org/@vbuterin/serenity_design_rationale?type=view#Base-rewards).
 
 ثم يتم حساب إجمالي المكافأة كمجموع خمسة مكونات لكل منها وزن يحدد مقدار ما يضيفه كل مكون إلى إجمالي المكافأة. المكونات هي:
 
@@ -60,7 +60,7 @@ PROPOSER_WEIGHT	uint64(8)
 
 العقوبات المفروضة على تفويت أصوات الهدف والمصدر تساوي المكافآت التي كان المُصَدِّق سيتلقاها لو قدمها. هذا يعني أنه بدلاً من إضافة المكافأة إلى رصيدهم، يتم خصم قيمة مساوية من رصيدهم. لا توجد عقوبة على تفويت تصويت الرأس (أي أن أصوات الرأس تُكافأ فقط، ولا يُعاقب عليها أبدًا). لا توجد عقوبة مرتبطة بـ `inclusion_delay` - ببساطة لن تتم إضافة المكافأة إلى رصيد المُدَقِّق. كما لا توجد عقوبة على الفشل في اقتراح كتلة.
 
-اقرأ المزيد عن المكافآت والعقوبات في [مواصفات الإجماع](https://github.com/quantaureum/consensus-specs/blob/master/specs/altair/beacon-chain.md). تم تعديل المكافآت والعقوبات في ترقية بيلاتريكس (Bellatrix) - شاهد داني رايان وفيتاليك يناقشان هذا في [فيديو Peep an EIP](https://www.youtube.com/watch?v=iaAEGs1DMgQ).
+اقرأ المزيد عن المكافآت والعقوبات في [مواصفات الإجماع](https://github.com/ethereum/consensus-specs/blob/master/specs/altair/beacon-chain.md). تم تعديل المكافآت والعقوبات في ترقية بيلاتريكس (Bellatrix) - شاهد داني رايان وفيتاليك يناقشان هذا في [فيديو Peep an EIP](https://www.youtube.com/watch?v=iaAEGs1DMgQ).
 
 ## الاقتطاع {#slashing}
 
@@ -82,7 +82,7 @@ PROPOSER_WEIGHT	uint64(8)
 
 - [ترقية إيثيريوم: طبقة الحوافز](https://eth2book.info/altair/part2/incentives)
 - [الحوافز في بروتوكول Casper الهجين لإيثيريوم](https://arxiv.org/pdf/1903.04205.pdf)
-- [مواصفات فيتاليك المشروحة](https://github.com/quantaureum/annotated-spec/blob/master/phase0/beacon-chain.md#rewards-and-penalties-1)
+- [مواصفات فيتاليك المشروحة](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#rewards-and-penalties-1)
 - [نصائح لمنع الاقتطاع في إيث 2](https://medium.com/prysmatic-labs/eth2-slashing-prevention-tips-f6faa5025f50)
 - [تحليل عقوبات الاقتطاع بموجب <span dir="ltr">EIP-7251</span>](https://ethresear.ch/t/slashing-penalty-analysis-eip-7251/16509)
 

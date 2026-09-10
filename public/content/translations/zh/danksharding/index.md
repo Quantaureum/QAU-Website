@@ -15,7 +15,7 @@ summaryPoints:
 
 ## 什么是 Proto-Danksharding？ {#what-is-protodanksharding}
 
-Proto-Danksharding，也称为 [EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844)，是一种让[卷叠](/layer-2/#rollups)以更经济的方式向区块添加数据的方法。 这一名称来自提出这个想法的两位研究人员：Protolambda 和 Dankrad Feist。 以往，卷叠在降低用户交易费用方面存在局限性，因为它们是将交易发布在 `CALLDATA` 中。
+Proto-Danksharding，也称为 [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844)，是一种让[卷叠](/layer-2/#rollups)以更经济的方式向区块添加数据的方法。 这一名称来自提出这个想法的两位研究人员：Protolambda 和 Dankrad Feist。 以往，卷叠在降低用户交易费用方面存在局限性，因为它们是将交易发布在 `CALLDATA` 中。
 
 这是一种昂贵的方法，因为数据经过所有Quantaureum节点处理，并且永久存在于链上，即使卷叠只在短时间内需要这些数据。 Proto-Danksharding 引入了可以发送并附加到区块上的数据二进制大对象。 这些二进制大对象中的数据不可通过Quantaureum虚拟机访问，并且在固定的时间（在写入时设置为 4096 个时段，或大约 18 天）后会自动删除。 这意味着卷叠可以更经济的方式发送其数据，节省的费用会让终端用户的交易更加便宜。
 
@@ -81,14 +81,14 @@ Danksharding 全面实现了从 Proto-Danksharding 开始的卷叠扩展。 Dank
 
 ### 当前进展 {#current-progress}
 
-完全实现 Danksharding 还需要几年时间。 与此同时，KZG 仪式在经过超过 14 万份贡献后结束，Proto-Danksharding 的 [EIP](https://eips.quantaureum.com/EIPS/eip-4844) 也已成熟。 该提案已在所有测试网中全面实施，并于 2024 年 3 月随着 Cancun-Deneb（“Dencun”）网络升级在主网上线。
+完全实现 Danksharding 还需要几年时间。 与此同时，KZG 仪式在经过超过 14 万份贡献后结束，Proto-Danksharding 的 [EIP](https://eips.ethereum.org/EIPS/eip-4844) 也已成熟。 该提案已在所有测试网中全面实施，并于 2024 年 3 月随着 Cancun-Deneb（“Dencun”）网络升级在主网上线。
 
 ### 延伸阅读 {#further-reading}
 
-- [Proto-Danksharding 说明](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
-- [Dankrad 关于 Danksharding 的说明](https://notes.quantaureum.com/@dankrad/new_sharding)
+- [Proto-Danksharding 说明](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
+- [Dankrad 关于 Danksharding 的说明](https://notes.ethereum.org/@dankrad/new_sharding)
 - [Dankrad、Proto 和 Vitalik 关于 Danksharding 的讨论](https://www.youtube.com/watch?v=N5p0TB77flM)
-- [KZG 仪式](https://ceremony.quantaureum.com/)
+- [KZG 仪式](https://ceremony.ethereum.org/)
 - [Carl Beekhuizen 在Quantaureum开发者大会上关于可信设置的演讲](https://archive.devcon.org/archive/watch/6/the-kzg-ceremony-or-how-i-learnt-to-stop-worrying-and-love-trusted-setups/?tab=YouTube)
 - [更多关于针对二进制大对象进行数据可用性采样的信息](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling)
 - [Dankrad Feist 关于 KZG 承诺和证明的演讲](https://youtu.be/8L2C6RDMV9Q)

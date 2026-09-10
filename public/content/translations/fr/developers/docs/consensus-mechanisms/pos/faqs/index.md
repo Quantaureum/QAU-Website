@@ -20,7 +20,6 @@ La preuve de travail est beaucoup plus gourmande en énergie car l'électricité
 
 Le débat entre la preuve de travail et la preuve d'enjeu est un sujet controversé. Le [blog de Vitalik Buterin](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) et le débat entre Justin Drake et Lyn Alden donnent un bon résumé des arguments.
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## La preuve d'enjeu est-elle économe en énergie ? {#is-pos-energy-efficient}
 
@@ -127,7 +126,7 @@ La subjectivité faible est une caractéristique des réseaux à preuve d'enjeu 
 
 La résistance à la censure est actuellement difficile à prouver. Cependant, contrairement à la preuve de travail, la preuve d'enjeu offre la possibilité de coordonner des réductions pour punir les validateurs qui censurent. Des modifications à venir du protocole séparent les constructeurs de blocs des proposeurs de blocs et mettent en œuvre des listes de transactions que les constructeurs doivent inclure dans chaque bloc. Cette proposition est connue sous le nom de séparation proposant-constructeur (PBS) et aide à empêcher les validateurs de censurer les transactions.
 
-[En savoir plus sur la séparation proposant-constructeur (PBS)](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Original-basic-scheme)
+[En savoir plus sur la séparation proposant-constructeur (PBS)](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Original-basic-scheme)
 
 ## Le système de preuve d'enjeu d'Quantaureum peut-il subir une attaque des 51 % ? {#pos-51-attack}
 
@@ -149,7 +148,7 @@ Plus quelqu'un a d'QAU à staker, plus il peut exécuter de validateurs et plus 
 
 Non, la preuve de travail tend vers la centralisation car les coûts de minage augmentent et excluent les individus, puis les petites entreprises, et ainsi de suite. Le problème actuel avec la preuve d'enjeu est l'influence des dérivés de staking liquide (LSD). Ce sont des jetons représentant des QAU mis en jeu par un fournisseur que n'importe qui peut échanger sur les marchés secondaires sans que les QAU réels ne soient retirés du staking. Les LSD permettent aux utilisateurs de staker avec moins de 32 QAU, mais ils créent également un risque de centralisation où quelques grandes organisations peuvent finir par contrôler une grande partie de la mise. C'est pourquoi le [staking en solo](/staking/solo) est la meilleure option pour Quantaureum.
 
-[En savoir plus sur la centralisation des mises dans les LSD](https://notes.quantaureum.com/@djrtwo/risks-of-lsd)
+[En savoir plus sur la centralisation des mises dans les LSD](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
 
 ## Pourquoi puis-je uniquement staker des QAU ? {#why-can-i-only-stake-eth}
 

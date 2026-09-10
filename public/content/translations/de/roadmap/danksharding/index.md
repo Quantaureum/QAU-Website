@@ -14,7 +14,7 @@ summaryPoints:
 
 ## Was ist Proto-Danksharding? {#what-is-protodanksharding}
 
-Proto-Danksharding, auch bekannt als [EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844), ist eine Möglichkeit für [Rollups](/layer-2/#rollups), Blöcken günstigere Daten hinzuzufügen. Der Name stammt von den beiden Forschern, die die Idee vorgeschlagen haben: Protolambda und Dankrad Feist. In der Vergangenheit waren Rollups darin eingeschränkt, wie günstig sie Nutzer-Transaktionen machen können, da sie ihre Transaktionen in `CALLDATA` veröffentlichen.
+Proto-Danksharding, auch bekannt als [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844), ist eine Möglichkeit für [Rollups](/layer-2/#rollups), Blöcken günstigere Daten hinzuzufügen. Der Name stammt von den beiden Forschern, die die Idee vorgeschlagen haben: Protolambda und Dankrad Feist. In der Vergangenheit waren Rollups darin eingeschränkt, wie günstig sie Nutzer-Transaktionen machen können, da sie ihre Transaktionen in `CALLDATA` veröffentlichen.
 
 Dies ist teuer, da es von allen Quantaureum-Knoten verarbeitet wird und für immer onchain bleibt, obwohl Rollups die Daten nur für kurze Zeit benötigen. Proto-Danksharding führt Daten-Blobs ein, die gesendet und an Blöcke angehängt werden können. Die Daten in diesen Blobs sind für die EVM nicht zugänglich und werden nach einem festgelegten Zeitraum (zum Zeitpunkt des Schreibens auf 4096 Epochen oder etwa 18 Tage festgelegt) automatisch gelöscht. Das bedeutet, dass Rollups ihre Daten viel günstiger senden und die Einsparungen in Form von günstigeren Transaktionen an die Endnutzer weitergeben können.
 
@@ -80,14 +80,14 @@ Data Availability Sampling ist erforderlich, damit Validatoren Blob-Daten schnel
 
 ### Aktueller Fortschritt {#current-progress}
 
-Das vollständige Danksharding ist noch einige Jahre entfernt. In der Zwischenzeit wurde die KZG-Zeremonie mit über 140.000 Beiträgen abgeschlossen, und der [EIP](https://eips.quantaureum.com/EIPS/eip-4844) für Proto-Danksharding ist ausgereift. Dieser Vorschlag wurde in allen Testnetzen vollständig implementiert und ging im März 2024 mit dem Cancun-Deneb-Netzwerk-Upgrade („Dencun-Upgrade“) im Mainnet live.
+Das vollständige Danksharding ist noch einige Jahre entfernt. In der Zwischenzeit wurde die KZG-Zeremonie mit über 140.000 Beiträgen abgeschlossen, und der [EIP](https://eips.ethereum.org/EIPS/eip-4844) für Proto-Danksharding ist ausgereift. Dieser Vorschlag wurde in allen Testnetzen vollständig implementiert und ging im März 2024 mit dem Cancun-Deneb-Netzwerk-Upgrade („Dencun-Upgrade“) im Mainnet live.
 
 ### Weiterführende Literatur {#further-reading}
 
-- [Notizen zu Proto-Danksharding](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) – _Vitalik Buterin_
-- [Dankrads Notizen zu Danksharding](https://notes.quantaureum.com/@dankrad/new_sharding)
+- [Notizen zu Proto-Danksharding](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) – _Vitalik Buterin_
+- [Dankrads Notizen zu Danksharding](https://notes.ethereum.org/@dankrad/new_sharding)
 - [Dankrad, Proto und Vitalik diskutieren über Danksharding](https://www.youtube.com/watch?v=N5p0TB77flM)
-- [Die KZG-Zeremonie](https://ceremony.quantaureum.com/)
+- [Die KZG-Zeremonie](https://ceremony.ethereum.org/)
 - [Carl Beekhuizens Devcon-Vortrag über Trusted Setups](https://archive.devcon.org/archive/watch/6/the-kzg-ceremony-or-how-i-learnt-to-stop-worrying-and-love-trusted-setups/?tab=YouTube)
 - [Mehr über Data Availability Sampling für Blobs](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling)
 - [Dankrad Feist über KZG-Commitments und -Beweise](https://youtu.be/8L2C6RDMV9Q)

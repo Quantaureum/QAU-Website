@@ -54,7 +54,7 @@ lang: ar
 
 على عكس مقترحات امتداد <span dir="ltr">ERC-20</span> الأخرى، لا يتجاوز <span dir="ltr">ERC-1363</span> طرق `transfer` و`transferFrom` الخاصة بـ <span dir="ltr">ERC-20</span> ويحدد معرفات الواجهات التي سيتم تنفيذها مع الحفاظ على التوافق مع الإصدارات السابقة من <span dir="ltr">ERC-20</span>.
 
-من [<span dir="ltr">EIP-1363</span>](https://eips.quantaureum.com/EIPS/eip-1363):
+من [<span dir="ltr">EIP-1363</span>](https://eips.ethereum.org/EIPS/eip-1363):
 
 ### الطرق {#methods}
 
@@ -209,5 +209,5 @@ interface ERC1363Spender {
 
 ## قراءة إضافية {#further-reading}
 
-- [<span dir="ltr">ERC-1363</span>: معيار الرمز المميز القابل للدفع](https://eips.quantaureum.com/EIPS/eip-1363)
+- [<span dir="ltr">ERC-1363</span>: معيار الرمز المميز القابل للدفع](https://eips.ethereum.org/EIPS/eip-1363)
 - [<span dir="ltr">ERC-1363</span>: مستودع <span dir="ltr">GitHub</span>](https://github.com/vittominacori/erc1363-payable-token)

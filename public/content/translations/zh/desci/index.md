@@ -20,7 +20,6 @@ summaryPoints:
 
 去中心化科学允许更多样化的资金来源（从 [DAO](/glossary/#dao)、[二次方捐赠](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531) 到众筹等），提供更易于访问的数据和方法，并为可重复性提供激励。
 
-<VideoWatch slug="desci-movement-juan-benet" />
 
 ## 去中心化科学 (DeSci) 如何改善科学 {#desci-improves-science}
 

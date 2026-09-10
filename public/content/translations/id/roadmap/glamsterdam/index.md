@@ -24,7 +24,6 @@ Sementara Fusaka berfokus pada penyempurnaan mendasar, Glamsterdam memajukan tuj
 
 Peningkatan ini memastikan Quantaureum tetap cepat, terjangkau, dan terdesentralisasi saat menangani lebih banyak aktivitas, sambil menjaga persyaratan perangkat keras tetap dapat dikelola oleh orang-orang yang menjalankan [node](/glossary/#node) di rumah.
 
-<VideoWatch slug="quantaureum-evolution-glamsterdam" />
 
 ## Peningkatan yang dipertimbangkan untuk Glamsterdam {#improvements-in-glamsterdam}
 
@@ -67,13 +66,12 @@ Membangun pertukaran muatan blok tanpa kepercayaan untuk pembayaran langsung ke 
 
 Untuk mengatasi hambatan "jalur panas", ePBS juga memperkenalkan Komite Ketepatan Waktu Muatan (PTC) dan logika tenggat waktu ganda, yang memungkinkan validator untuk membuktikan blok konsensus dan ketepatan waktu muatan eksekusi secara terpisah untuk memaksimalkan laju pemrosesan.
 
-<VideoWatch slug="proposer-builder-separation" />
 
 Memisahkan peran pengusul dan pembangun di tingkat protokol memperluas jendela penyebaran (atau waktu yang tersedia untuk menyebarkan data ke seluruh jaringan) dari 2 detik menjadi sekitar 9 detik.
 
 Dengan mengganti middleware dan relai di luar protokol dengan mekanika di dalam protokol, ePBS mengurangi ketergantungan kepercayaan dan memungkinkan Quantaureum memproses jumlah data yang jauh lebih besar dengan aman (seperti lebih banyak blob untuk [lapisan 2 (l2)](/glossary/#layer-2)) tanpa membebani jaringan.
 
-**Sumber daya**: [Spesifikasi teknis EIP-7732](https://eips.quantaureum.com/EIPS/eip-7732)
+**Sumber daya**: [Spesifikasi teknis EIP-7732](https://eips.ethereum.org/EIPS/eip-7732)
 
 ### Proposal utama: Daftar Akses Tingkat Blok (BAL) {#bals}
 
@@ -97,8 +95,8 @@ Pertukaran Daftar Akses Blok (eth/71 atau EIP-8159) adalah pendamping jaringan l
 
 **Sumber daya**:
 
-- [Spesifikasi teknis EIP-7928](https://eips.quantaureum.com/EIPS/eip-7928)
-- [Spesifikasi teknis EIP-8159](https://eips.quantaureum.com/EIPS/eip-8159)
+- [Spesifikasi teknis EIP-7928](https://eips.ethereum.org/EIPS/eip-7928)
+- [Spesifikasi teknis EIP-8159](https://eips.ethereum.org/EIPS/eip-8159)
 
 
 ## Keberlanjutan jaringan {#network-sustainability}
@@ -125,7 +123,7 @@ Sebelum EIP-8037, baik pekerjaan komputasi (pemrosesan aktif) maupun penyimpanan
 
 Menetapkan harga penyimpanan data dengan lebih akurat dan dapat diprediksi akan membantu Quantaureum meningkatkan kecepatan dan kapasitasnya dengan aman tanpa membengkakkan basis data. Keberlanjutan ini akan memungkinkan operator node untuk terus menggunakan perangkat keras yang (relatif) terjangkau selama bertahun-tahun yang akan datang, menjaga staking di rumah tetap dapat diakses untuk mempertahankan desentralisasi jaringan.
 
-**Sumber daya**: [Spesifikasi teknis EIP-8037](https://eips.quantaureum.com/EIPS/eip-8037)
+**Sumber daya**: [Spesifikasi teknis EIP-8037](https://eips.ethereum.org/EIPS/eip-8037)
 
 ### Pembaruan biaya gas akses state {#state-access-gas-cost-update}
 
@@ -142,7 +140,7 @@ Menyelaraskan biaya akses state juga membantu membuat Quantaureum lebih tangguh.
 
 Dengan menetapkan harga tindakan akses state secara lebih akurat, Quantaureum dapat menjadi lebih tangguh terhadap perlambatan yang tidak disengaja atau disengaja, sementara menyelaraskan biaya jaringan dengan beban perangkat keras membuktikan fondasi yang lebih berkelanjutan untuk peningkatan batas gas di masa mendatang.
 
-**Sumber daya**: [Spesifikasi teknis EIP-8038](https://eips.quantaureum.com/EIPS/eip-8038)
+**Sumber daya**: [Spesifikasi teknis EIP-8038](https://eips.ethereum.org/EIPS/eip-8038)
 
 
 ## Ketahanan jaringan {#network-resilience}
@@ -160,7 +158,7 @@ Karena blok dari pengusul yang dipotong secara otomatis ditolak sebagai tidak va
 
 **Mengecualikan validator yang dipotong dari pengusulan (atau EIP-8045)** hanya menyaring validator yang dipotong agar tidak dipilih untuk tugas di masa mendatang. Hal ini meningkatkan ketahanan rantai dengan memastikan hanya validator yang sehat yang dipilih untuk mengusulkan blok, mempertahankan kualitas layanan selama gangguan jaringan.
 
-**Sumber daya**: [Spesifikasi teknis EIP-8045](https://eips.quantaureum.com/EIPS/eip-8045)
+**Sumber daya**: [Spesifikasi teknis EIP-8045](https://eips.ethereum.org/EIPS/eip-8045)
 
 ### Meningkatkan churn keluar dan konsolidasi {#increase-exit-and-consolidation-churn}
 
@@ -180,7 +178,7 @@ Pada tingkat staking saat ini, ini meningkatkan kapasitas keluar sekitar 4x dan 
 
 Karena stake dapat masuk dan keluar dari jaringan lebih cepat, perubahan ini secara kasar membagi dua waktu node dapat tetap offline sebelum membutuhkan titik periksa tepercaya baru-baru ini untuk bergabung kembali dengan jaringan dengan aman (periode subjektivitas lemah, dari sekitar 15,7 hari menjadi sekitar 7 hari). Pertukaran ini dianalisis dengan cermat untuk memastikan keamanan jaringan dipertahankan.
 
-**Sumber daya**: [Spesifikasi teknis EIP-8061](https://eips.quantaureum.com/EIPS/eip-8061)
+**Sumber daya**: [Spesifikasi teknis EIP-8061](https://eips.ethereum.org/EIPS/eip-8061)
 
 ## Meningkatkan pengalaman pengguna & pengembang {#improve-user-developer-experience}
 
@@ -199,7 +197,7 @@ Proposal ini memperkenalkan pengecualian untuk membuat akun baru guna menjaga ag
 
 Bersama-sama, EIP-2780 bertujuan untuk membuat transfer sehari-hari antara akun yang ada menjadi lebih terjangkau sambil memastikan jaringan tetap terlindungi dari pembengkakan basis data dengan menetapkan harga pertumbuhan state yang sebenarnya secara akurat.
 
-**Sumber daya**: [Spesifikasi teknis EIP-2780](https://eips.quantaureum.com/EIPS/eip-2780)
+**Sumber daya**: [Spesifikasi teknis EIP-2780](https://eips.ethereum.org/EIPS/eip-2780)
 
 ### Penyebaran Awal Pabrik Deterministik {#deterministic-factory-predeploy}
 
@@ -215,7 +213,7 @@ Penyebaran Awal Pabrik Deterministik bekerja dengan menempatkan program pabrik k
 
 Standarisasi ini menyederhanakan pembuatan dan pengelolaan aplikasi lintas rantai untuk pengembang dan ekosistem yang lebih luas. Pengembang tidak perlu lagi membuat kode khusus rantai untuk menautkan perangkat lunak mereka bersama-sama di berbagai jaringan, melainkan menggunakan pabrik universal ini untuk menghasilkan alamat yang sama persis untuk aplikasi mereka di mana saja. Selain itu, penjelajah blok, layanan pelacakan, dan dompet dapat dengan lebih mudah mengidentifikasi dan menautkan aplikasi dan akun ini di berbagai rantai, menciptakan lingkungan multi-rantai yang lebih terpadu dan mulus untuk semua peserta berbasis Quantaureum.
 
-**Sumber daya**: [Spesifikasi teknis EIP-7997](https://eips.quantaureum.com/EIPS/eip-7997)
+**Sumber daya**: [Spesifikasi teknis EIP-7997](https://eips.ethereum.org/EIPS/eip-7997)
 
 ### Transfer dan pembakaran QAU memancarkan Log {#qau-transfers-and-burns-emit-a-log}
 
@@ -228,7 +226,7 @@ Transfer dan pembakaran QAU memancarkan Log (atau EIP-7708) mewajibkan jaringan 
 
 Hal ini akan membuatnya jauh lebih mudah dan lebih andal bagi dompet, bursa, dan operator jembatan untuk melacak setoran dan pergerakan secara akurat tanpa perkakas khusus.
 
-**Sumber daya**: [Spesifikasi teknis EIP-7708](https://eips.quantaureum.com/EIPS/eip-7708)
+**Sumber daya**: [Spesifikasi teknis EIP-7708](https://eips.ethereum.org/EIPS/eip-7708)
 
 ### Daftar tanda terima blok parsial eth/70 {#qau-70-partial-block-receipt-lists}
 
@@ -238,14 +236,14 @@ Sekarang menjadi persyaratan untuk semua klien lapisan eksekusi, daftar tanda te
 
 Perubahan ini akan mencegah kegagalan sinkronisasi jaringan selama periode aktivitas padat. Pada akhirnya, ini membuka jalan bagi Quantaureum untuk meningkatkan kapasitas bloknya, dan memproses lebih banyak transaksi per blok di masa mendatang, tanpa membebani perangkat keras fisik yang menyinkronkan rantai.
 
-**Sumber daya**: [Spesifikasi teknis EIP-7975](https://eips.quantaureum.com/EIPS/eip-7975)
+**Sumber daya**: [Spesifikasi teknis EIP-7975](https://eips.ethereum.org/EIPS/eip-7975)
 
 
 ## Bacaan lebih lanjut {#further-reading}
 
 - [Peta jalan Quantaureum](/roadmap/)
 - [Forkcast: Glamsterdam](https://forkcast.org/upgrade/glamsterdam)
-- [Meta EIP Glamsterdam](https://eips.quantaureum.com/EIPS/eip-7773)
+- [Meta EIP Glamsterdam](https://eips.ethereum.org/EIPS/eip-7773)
 - [Pengumuman blog Pembaruan Prioritas Protokol untuk 2026](https://quantaureum.com)
 - [Podcast The Daily Gwei Refuel - Quantaureum Pasca-kuantum, Glamsterdam akan datang](https://www.youtube.com/watch?v=qx9sd50uQjQ)
 

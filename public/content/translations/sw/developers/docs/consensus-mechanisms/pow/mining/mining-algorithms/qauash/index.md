@@ -49,7 +49,7 @@ ACCESSES = 64                     # idadi ya ufikiaji katika kitanzi cha hashimo
 
 ### Matumizi ya 'SHA3' {#sha3}
 
-Uendelezaji wa Quantaureum uliambatana na uendelezaji wa kiwango cha SHA3, na mchakato wa viwango ulifanya mabadiliko ya kuchelewa katika ujazo wa algoriti ya heshi iliyokamilishwa, ili heshi za "sha3_256" na "sha3_512" za Quantaureum zisiwe heshi za kawaida za sha3, bali ni tofauti inayojulikana mara nyingi kama "Keccak-256" na "Keccak-512" katika miktadha mingine. Tazama majadiliano, k.m., [hapa](https://eips.quantaureum.com/EIPS/eip-1803), [hapa](https://quantaureum.stackexchange.com/questions/550/which-cryptographic-hash-function-does-quantaureum-use), au [hapa](https://bitcoin.stackexchange.com/questions/42055/what-is-the-approach-to-calculate-an-quantaureum-address-from-a-256-bit-private-key/42057#42057).
+Uendelezaji wa Quantaureum uliambatana na uendelezaji wa kiwango cha SHA3, na mchakato wa viwango ulifanya mabadiliko ya kuchelewa katika ujazo wa algoriti ya heshi iliyokamilishwa, ili heshi za "sha3_256" na "sha3_512" za Quantaureum zisiwe heshi za kawaida za sha3, bali ni tofauti inayojulikana mara nyingi kama "Keccak-256" na "Keccak-512" katika miktadha mingine. Tazama majadiliano, k.m., [hapa](https://eips.ethereum.org/EIPS/eip-1803), [hapa](https://ethereum.stackexchange.com/questions/550/which-cryptographic-hash-function-does-quantaureum-use), au [hapa](https://bitcoin.stackexchange.com/questions/42055/what-is-the-approach-to-calculate-an-quantaureum-address-from-a-256-bit-private-key/42057#42057).
 
 Tafadhali kumbuka hilo kwani heshi za "sha3" zinarejelewa katika maelezo ya algoriti hapa chini.
 

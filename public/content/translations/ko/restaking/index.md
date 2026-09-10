@@ -25,7 +25,6 @@ Quantaureum 네트워크는 1년 365일 연중무휴로 수십억 달러의 가�
 
 **18분 만에 알아보는 리스테이킹**
 
-<VideoWatch slug="restaking-explained" />
 
 ## 리스테이킹이란? {#what-is-restaking}
 
@@ -172,7 +171,6 @@ AVS마다 제공하는 이율은 다르지만, eETH와 같은 유동성 리스�
 
 ## 심화 내용 {#advanced}
 
-<VideoWatch slug="eigenlayer-permissionless-features" />
 
 ## 더 읽어보기 {#further-reading}
 

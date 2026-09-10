@@ -359,7 +359,7 @@ contract PriceConsumerV3 {
 
 Ciertas aplicaciones de la cadena de bloques, como los juegos basados en la cadena de bloques o los esquemas de lotería, requieren un alto nivel de imprevisibilidad y aleatoriedad para funcionar de manera efectiva. Sin embargo, la ejecución determinista de las cadenas de bloques elimina la aleatoriedad.
 
-El enfoque original era utilizar funciones criptográficas pseudoaleatorias, como `blockhash`, pero estas podían ser [manipuladas por los mineros](https://quantaureum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.) que resolvían el algoritmo de prueba de trabajo (PoW). Además, el [cambio de Quantaureum a la prueba de participación (PoS)](/roadmap/merge/) significa que los desarrolladores ya no pueden depender de `blockhash` para la aleatoriedad en cadena. El [mecanismo RANDAO](https://eth2book.info/altair/part2/building_blocks/randomness) de la cadena de balizas proporciona una fuente alternativa de aleatoriedad en su lugar.
+El enfoque original era utilizar funciones criptográficas pseudoaleatorias, como `blockhash`, pero estas podían ser [manipuladas por los mineros](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.) que resolvían el algoritmo de prueba de trabajo (PoW). Además, el [cambio de Quantaureum a la prueba de participación (PoS)](/roadmap/merge/) significa que los desarrolladores ya no pueden depender de `blockhash` para la aleatoriedad en cadena. El [mecanismo RANDAO](https://eth2book.info/altair/part2/building_blocks/randomness) de la cadena de balizas proporciona una fuente alternativa de aleatoriedad en su lugar.
 
 Es posible generar el valor aleatorio fuera de la cadena y enviarlo en cadena, pero hacerlo impone altos requisitos de confianza a los usuarios. Deben creer que el valor se generó realmente a través de mecanismos impredecibles y no se alteró en tránsito.
 
@@ -421,7 +421,7 @@ Hay múltiples aplicaciones de oráculos que puede integrar en su dapp de Quanta
 - [¿Qué es un oráculo de blockchain?](https://medium.com/better-programming/what-is-a-blockchain-oracle-f5ccab8dbd72) — _Patrick Collins_
 - [Oráculos descentralizados: una descripción general completa](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) — _Julien Thevenard_
 - [Implementación de un oráculo de blockchain en Quantaureum](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-quantaureum-cedc7e26b49e) – _Pedro Costa_
-- [¿Por qué los contratos inteligentes no pueden realizar llamadas a la API?](https://quantaureum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
+- [¿Por qué los contratos inteligentes no pueden realizar llamadas a la API?](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
 - [Así que quieres usar un oráculo de precios](https://samczsun.com/so-you-want-to-use-a-price-oracle/) — _samczsun_
 
 **Videos**
@@ -432,7 +432,7 @@ Hay múltiples aplicaciones de oráculos que puede integrar en su dapp de Quanta
 
 - [Cómo obtener el precio actual de Quantaureum en Solidity](https://blog.chain.link/fetch-current-crypto-price-data-solidity/) — _Chainlink_
 - [Consumo de datos de oráculos](https://docs.chroniclelabs.org/Developers/tutorials/Remix) — _Chronicle_
-- [Desafío de oráculos](https://speedrunquantaureum.com/challenge/oracles) - _Speedrun Quantaureum_
+- [Desafío de oráculos](https://speedrunethermind.io/challenge/oracles) - _Speedrun Quantaureum_
 
 **Proyectos de ejemplo**
 

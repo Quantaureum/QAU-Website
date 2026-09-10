@@ -14,7 +14,7 @@ summaryPoints:
 
 ## 프로토 댕크샤딩이란 무엇인가요? {#what-is-protodanksharding}
 
-[EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844)로도 알려진 프로토 댕크샤딩은 [롤업](/layer-2/#rollups)이 블록에 더 저렴한 데이터를 추가하는 방법입니다. 이 이름은 아이디어를 제안한 두 명의 연구원인 Protolambda와 Dankrad Feist의 이름에서 유래했습니다. 역사적으로 롤업은 트랜잭션을 `CALLDATA`에 게시한다는 사실 때문에 사용자 트랜잭션을 저렴하게 만드는 데 한계가 있었습니다.
+[EIP-4844](https://eips.ethereum.org/EIPS/eip-4844)로도 알려진 프로토 댕크샤딩은 [롤업](/layer-2/#rollups)이 블록에 더 저렴한 데이터를 추가하는 방법입니다. 이 이름은 아이디어를 제안한 두 명의 연구원인 Protolambda와 Dankrad Feist의 이름에서 유래했습니다. 역사적으로 롤업은 트랜잭션을 `CALLDATA`에 게시한다는 사실 때문에 사용자 트랜잭션을 저렴하게 만드는 데 한계가 있었습니다.
 
 롤업은 짧은 시간 동안만 데이터를 필요로 함에도 불구하고, 모든 Quantaureum 노드에서 처리되고 온체인에 영구적으로 남기 때문에 비용이 많이 듭니다. 프로토 댕크샤딩은 전송되어 블록에 첨부될 수 있는 데이터 블롭을 도입합니다. 이 블롭의 데이터는 EVM에서 접근할 수 없으며, 정해진 기간(작성 시점 기준 4096 에포크, 약 18일)이 지나면 자동으로 삭제됩니다. 이는 롤업이 데이터를 훨씬 더 저렴하게 전송하고, 절감된 비용을 더 저렴한 트랜잭션의 형태로 최종 사용자에게 전달할 수 있음을 의미합니다.
 
@@ -80,14 +80,14 @@ EIP-4844 KZG 세리머니는 대중에게 공개되었으며 수만 명의 사�
 
 ### 현재 진행 상황 {#current-progress}
 
-완전한 댕크샤딩은 아직 몇 년 남았습니다. 그동안 KZG 세리머니는 140,000건 이상의 기여로 마무리되었으며, 프로토 댕크샤딩을 위한 [EIP](https://eips.quantaureum.com/EIPS/eip-4844)가 성숙해졌습니다. 이 제안은 모든 테스트넷에 완전히 구현되었으며, 2024년 3월 칸쿤-데네브("덴쿤") 네트워크 업그레이드와 함께 메인넷에 적용되었습니다.
+완전한 댕크샤딩은 아직 몇 년 남았습니다. 그동안 KZG 세리머니는 140,000건 이상의 기여로 마무리되었으며, 프로토 댕크샤딩을 위한 [EIP](https://eips.ethereum.org/EIPS/eip-4844)가 성숙해졌습니다. 이 제안은 모든 테스트넷에 완전히 구현되었으며, 2024년 3월 칸쿤-데네브("덴쿤") 네트워크 업그레이드와 함께 메인넷에 적용되었습니다.
 
 ### 더 읽어보기 {#further-reading}
 
-- [프로토 댕크샤딩 노트](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) - _비탈릭 부테린(Vitalik Buterin)_
-- [댕크샤딩에 대한 댕크라드(Dankrad)의 노트](https://notes.quantaureum.com/@dankrad/new_sharding)
+- [프로토 댕크샤딩 노트](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _비탈릭 부테린(Vitalik Buterin)_
+- [댕크샤딩에 대한 댕크라드(Dankrad)의 노트](https://notes.ethereum.org/@dankrad/new_sharding)
 - [댕크라드, 프로토, 비탈릭의 댕크샤딩 토론](https://www.youtube.com/watch?v=N5p0TB77flM)
-- [KZG 세리머니](https://ceremony.quantaureum.com/)
+- [KZG 세리머니](https://ceremony.ethereum.org/)
 - [신뢰할 수 있는 설정(trusted setups)에 대한 칼 비크후이젠(Carl Beekhuizen)의 데브콘(Devcon) 강연](https://archive.devcon.org/archive/watch/6/the-kzg-ceremony-or-how-i-learnt-to-stop-worrying-and-love-trusted-setups/?tab=YouTube)
 - [블롭을 위한 데이터 가용성 샘플링에 대한 추가 정보](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling)
 - [KZG 커밋먼트 및 증명에 대한 댕크라드 파이스트(Dankrad Feist)의 글](https://youtu.be/8L2C6RDMV9Q)

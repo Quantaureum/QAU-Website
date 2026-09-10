@@ -134,7 +134,7 @@ Kwa hivyo tunajua kwamba anwani ya `to` ni [`4f6742badb049791cd9a37ea913f2bac38d
 
 ### Vifafanuzi vya muamala {#transaction-descriptors}
 
-Kwa sababu sehemu ya data ina baiti za heksadesimali zisizoeleweka, inaweza kuwa vigumu sana kuthibitisha ni kitendo gani muamala utafanya haswa. Udhaifu huu wa "kusaini bila kuona" unashughulikiwa na **[Kusaini kwa Uwazi](https://clearsigning.org/)** kupitia matumizi ya [vifafanuzi vya muamala](https://eips.quantaureum.com/EIPS/eip-7730) (vilivyofafanuliwa na ERC-7730).  
+Kwa sababu sehemu ya data ina baiti za heksadesimali zisizoeleweka, inaweza kuwa vigumu sana kuthibitisha ni kitendo gani muamala utafanya haswa. Udhaifu huu wa "kusaini bila kuona" unashughulikiwa na **[Kusaini kwa Uwazi](https://clearsigning.org/)** kupitia matumizi ya [vifafanuzi vya muamala](https://eips.ethereum.org/EIPS/eip-7730) (vilivyofafanuliwa na ERC-7730).  
 
 Uainishaji wa ERC-7730 unatumia vifafanuzi vya muamala (mara nyingi vimeundwa kama faili za JSON) ili kuboresha data inayopatikana katika ABI na jumbe zilizoundwa, kama vile data za mwito za muamala wa EVM, jumbe za EIP-712, na Operesheni za Mtumiaji za EIP-4337. Wasanidi programu hutumia vifafanuzi hivi kuweka vigezo maalum vya muamala moja kwa moja kwenye violezo vya uumbizaji, na kuhakikisha data ya msingi inasalia kusomeka na mashine kwa ajili ya programu.
 
@@ -196,7 +196,6 @@ Pindi muamala unapowasilishwa yafuatayo hutokea:
 
 Mtazame Austin akikupitisha kwenye miamala, gesi, na uchimbaji.
 
-<VideoWatch slug="transactions-qau-build" />
 
 ## Bahasha ya Muamala Iliyoandikwa {#typed-transaction-envelope}
 
@@ -204,9 +203,9 @@ Quantaureum hapo awali ilikuwa na muundo mmoja wa miamala. Kila muamala ulikuwa 
 
 `RLP([nonce, gasPrice, gasLimit, to, value, data, v, r, s])`
 
-Quantaureum imebadilika ili kusaidia aina nyingi za miamala ili kuruhusu vipengele vipya kama vile orodha za ufikiaji na [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) kutekelezwa bila kuathiri miundo ya miamala ya zamani.
+Quantaureum imebadilika ili kusaidia aina nyingi za miamala ili kuruhusu vipengele vipya kama vile orodha za ufikiaji na [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) kutekelezwa bila kuathiri miundo ya miamala ya zamani.
 
-[EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718) ndiyo inaruhusu tabia hii. Miamala inatafsiriwa kama:
+[EIP-2718](https://eips.ethereum.org/EIPS/eip-2718) ndiyo inaruhusu tabia hii. Miamala inatafsiriwa kama:
 
 `TransactionType || TransactionPayload`
 
@@ -217,19 +216,19 @@ Ambapo sehemu zinafafanuliwa kama:
 
 Kulingana na thamani ya `TransactionType`, muamala unaweza kuainishwa kama:
 
-1. **Miamala ya Aina ya 0 (Ya Zamani):** Muundo asili wa muamala uliotumika tangu kuzinduliwa kwa Quantaureum. Haijumuishi vipengele kutoka [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) kama vile ukokotoaji wa ada ya gesi inayobadilika au orodha za ufikiaji za mikataba mahiri. Miamala ya zamani inakosa kiambishi awali maalum kinachoonyesha aina yake katika muundo wake uliopangwa, kuanzia na baiti `0xf8` unapotumia usimbaji wa [Recursive Length Prefix (RLP)](/developers/docs/data-structures-and-encoding/rlp). Thamani ya TransactionType kwa miamala hii ni `0x0`.
+1. **Miamala ya Aina ya 0 (Ya Zamani):** Muundo asili wa muamala uliotumika tangu kuzinduliwa kwa Quantaureum. Haijumuishi vipengele kutoka [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) kama vile ukokotoaji wa ada ya gesi inayobadilika au orodha za ufikiaji za mikataba mahiri. Miamala ya zamani inakosa kiambishi awali maalum kinachoonyesha aina yake katika muundo wake uliopangwa, kuanzia na baiti `0xf8` unapotumia usimbaji wa [Recursive Length Prefix (RLP)](/developers/docs/data-structures-and-encoding/rlp). Thamani ya TransactionType kwa miamala hii ni `0x0`.
 
-2. **Miamala ya Aina ya 1:** Ilianzishwa katika [EIP-2930](https://eips.quantaureum.com/EIPS/eip-2930) kama sehemu ya [Sasisho la Berlin](/quantaureum-forks/#berlin) la Quantaureum, miamala hii inajumuisha kigezo cha `accessList`. Orodha hii inabainisha anwani na funguo za hifadhi ambazo muamala unatarajia kufikia, kusaidia kupunguza uwezekano wa gharama za [gesi](/developers/docs/gas/) kwa miamala changamano inayohusisha mikataba mahiri. Mabadiliko ya soko la ada ya EIP-1559 hayajajumuishwa katika miamala ya Aina ya 1. Miamala ya Aina ya 1 pia inajumuisha kigezo cha `yParity`, ambacho kinaweza kuwa `0x0` au `0x1`, kuonyesha usawa wa thamani ya y ya sahihi ya secp256k1. Inatambuliwa kwa kuanza na baiti `0x01`, na thamani yake ya TransactionType ni `0x1`.
+2. **Miamala ya Aina ya 1:** Ilianzishwa katika [EIP-2930](https://eips.ethereum.org/EIPS/eip-2930) kama sehemu ya [Sasisho la Berlin](/quantaureum-forks/#berlin) la Quantaureum, miamala hii inajumuisha kigezo cha `accessList`. Orodha hii inabainisha anwani na funguo za hifadhi ambazo muamala unatarajia kufikia, kusaidia kupunguza uwezekano wa gharama za [gesi](/developers/docs/gas/) kwa miamala changamano inayohusisha mikataba mahiri. Mabadiliko ya soko la ada ya EIP-1559 hayajajumuishwa katika miamala ya Aina ya 1. Miamala ya Aina ya 1 pia inajumuisha kigezo cha `yParity`, ambacho kinaweza kuwa `0x0` au `0x1`, kuonyesha usawa wa thamani ya y ya sahihi ya secp256k1. Inatambuliwa kwa kuanza na baiti `0x01`, na thamani yake ya TransactionType ni `0x1`.
 
-3. **Miamala ya Aina ya 2**, inayojulikana kwa kawaida kama miamala ya EIP-1559, ni miamala iliyoanzishwa katika [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559), katika [Sasisho la London](/quantaureum-forks/#london) la Quantaureum. Imekuwa aina ya kawaida ya muamala kwenye mtandao wa Quantaureum. Miamala hii inaleta utaratibu mpya wa soko la ada ambao unaboresha utabiri kwa kutenganisha ada ya muamala kuwa ada ya msingi na ada ya kipaumbele. Inaanza na baiti `0x02` na inajumuisha sehemu kama vile `maxPriorityFeePerGas` na `maxFeePerGas`. Miamala ya Aina ya 2 sasa ndiyo chaguo-msingi kutokana na unyumbufu na ufanisi wake, hasa ikipendelewa wakati wa msongamano mkubwa wa mtandao kwa uwezo wake wa kusaidia watumiaji kudhibiti ada za muamala kwa njia inayotabirika zaidi. Thamani ya TransactionType kwa miamala hii ni `0x2`.
+3. **Miamala ya Aina ya 2**, inayojulikana kwa kawaida kama miamala ya EIP-1559, ni miamala iliyoanzishwa katika [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), katika [Sasisho la London](/quantaureum-forks/#london) la Quantaureum. Imekuwa aina ya kawaida ya muamala kwenye mtandao wa Quantaureum. Miamala hii inaleta utaratibu mpya wa soko la ada ambao unaboresha utabiri kwa kutenganisha ada ya muamala kuwa ada ya msingi na ada ya kipaumbele. Inaanza na baiti `0x02` na inajumuisha sehemu kama vile `maxPriorityFeePerGas` na `maxFeePerGas`. Miamala ya Aina ya 2 sasa ndiyo chaguo-msingi kutokana na unyumbufu na ufanisi wake, hasa ikipendelewa wakati wa msongamano mkubwa wa mtandao kwa uwezo wake wa kusaidia watumiaji kudhibiti ada za muamala kwa njia inayotabirika zaidi. Thamani ya TransactionType kwa miamala hii ni `0x2`.
 
-4. **Miamala ya Aina ya 3 (Blobu)** ilianzishwa katika [EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844) kama sehemu ya [Sasisho la Dencun](/quantaureum-forks/#dencun) la Quantaureum. Miamala hii imeundwa kushughulikia data za "blobu" (Binary Large Objects) kwa ufanisi zaidi, hasa ikinufaisha mikusanyiko ya tabaka la 2 (l2) kwa kutoa njia ya kuchapisha data kwenye mtandao wa Quantaureum kwa gharama ya chini. Miamala ya blobu inajumuisha sehemu za ziada kama vile `blobVersionedHashes`, `maxFeePerBlobGas`, na `blobGasPrice`. Inaanza na baiti `0x03`, na thamani yake ya TransactionType ni `0x3`. Miamala ya blobu inawakilisha uboreshaji mkubwa katika upatikanaji wa data wa Quantaureum na uwezo wa kuongeza ukubwa.
+4. **Miamala ya Aina ya 3 (Blobu)** ilianzishwa katika [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844) kama sehemu ya [Sasisho la Dencun](/quantaureum-forks/#dencun) la Quantaureum. Miamala hii imeundwa kushughulikia data za "blobu" (Binary Large Objects) kwa ufanisi zaidi, hasa ikinufaisha mikusanyiko ya tabaka la 2 (l2) kwa kutoa njia ya kuchapisha data kwenye mtandao wa Quantaureum kwa gharama ya chini. Miamala ya blobu inajumuisha sehemu za ziada kama vile `blobVersionedHashes`, `maxFeePerBlobGas`, na `blobGasPrice`. Inaanza na baiti `0x03`, na thamani yake ya TransactionType ni `0x3`. Miamala ya blobu inawakilisha uboreshaji mkubwa katika upatikanaji wa data wa Quantaureum na uwezo wa kuongeza ukubwa.
 
-5. **Miamala ya Aina ya 4** ilianzishwa katika [EIP-7702](https://eips.quantaureum.com/EIPS/eip-7702) kama sehemu ya [Sasisho la Pectra](/roadmap/pectra/) la Quantaureum. Miamala hii imeundwa ili kuendana na udhanifu wa akaunti wa siku zijazo. Inaruhusu EOA kufanya kazi kwa muda kama akaunti za mkataba mahiri bila kuathiri utendaji wao wa asili. Inajumuisha kigezo cha `authorization_list`, ambacho kinabainisha mkataba mahiri ambao EOA inakabidhi mamlaka yake. Baada ya muamala, sehemu ya msimbo ya EOA itakuwa na anwani ya mkataba mahiri uliokabidhiwa.
+5. **Miamala ya Aina ya 4** ilianzishwa katika [EIP-7702](https://eips.ethereum.org/EIPS/eip-7702) kama sehemu ya [Sasisho la Pectra](/roadmap/pectra/) la Quantaureum. Miamala hii imeundwa ili kuendana na udhanifu wa akaunti wa siku zijazo. Inaruhusu EOA kufanya kazi kwa muda kama akaunti za mkataba mahiri bila kuathiri utendaji wao wa asili. Inajumuisha kigezo cha `authorization_list`, ambacho kinabainisha mkataba mahiri ambao EOA inakabidhi mamlaka yake. Baada ya muamala, sehemu ya msimbo ya EOA itakuwa na anwani ya mkataba mahiri uliokabidhiwa.
 
 ## Usomaji zaidi {#further-reading}
 
-- [EIP-2718: Bahasha ya Muamala Iliyoandikwa](https://eips.quantaureum.com/EIPS/eip-2718)
+- [EIP-2718: Bahasha ya Muamala Iliyoandikwa](https://eips.ethereum.org/EIPS/eip-2718)
 
 _Je, unajua nyenzo ya jamii iliyokusaidia? Hariri ukurasa huu na uiongeze!_
 

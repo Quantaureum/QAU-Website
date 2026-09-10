@@ -21,7 +21,6 @@ Bu sorunları çözmek için [Quantaureum](/) gibi herkese açık blokzincirler 
 
 Kimlik, bir bireyin benzersiz özelliklerle tanımlanan benlik duygusu anlamına gelir. Kimlik, bir _birey_ olmayı, yani farklı bir insan varlığını ifade eder. Kimlik ayrıca bir kuruluş veya otorite gibi insan dışı diğer varlıklara da atıfta bulunabilir.
 
-<VideoWatch slug="decentralized-identity-explained" />
 
 ## Tanımlayıcılar nelerdir? {#what-are-identifiers}
 

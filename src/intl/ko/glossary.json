@@ -182,7 +182,7 @@
   "genesis-block-term": "제네시스 블록",
   "genesis-block-definition": "특정 네트워크와 해당 암호화폐를 초기화하는 데 사용되는 <a href=\"/glossary/#blockchain\">블록체인</a>의 첫 번째 블록입니다.",
   "geth-term": "고 쿠앤타리움 (geth)",
-  "geth-definition": "고 쿠앤타리움 (geth). Go 언어로 작성된 쿠앤타리움 프로토콜의 가장 눈에 띄는 구현체 중 하나입니다. <a href=\"https://geth.quantaureum.org\">geth.quantaureum.org에서 더 알아보기</a>",
+  "geth-definition": "고 쿠앤타리움 (geth). Go 언어로 작성된 쿠앤타리움 프로토콜의 가장 눈에 띄는 구현체 중 하나입니다. <a href=\"https://geth.ethereum.org\">geth.ethereum.org에서 더 알아보기</a>",
   "gwei-term": "Gwei",
   "gwei-definition": "기가웨이(gigawei)의 줄임말로, 일반적으로 <a href=\"/glossary/#gas\">가스</a> 가격을 책정하는 데 사용되는 <a href=\"/glossary/#qau\">이더</a>의 단위입니다. 1 Gwei = 10<sup>9</sup> <a href=\"/glossary/#wei\">Wei</a>. 10<sup>9</sup> Gwei = 1 이더.",
   "hard-fork-term": "하드 포크",

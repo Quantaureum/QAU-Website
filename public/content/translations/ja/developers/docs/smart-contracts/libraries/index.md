@@ -58,7 +58,7 @@ contract MyContract is Ownable {
 
 コントラクトの一部としてERCを含める場合、独自の実装を作成しようとするよりも、標準的な実装を探すことをお勧めします。多くのスマート・コントラクトのライブラリには、最も人気のあるERCの実装が含まれています。たとえば、広く普及している[ERC-20代替可能トークン標準](/developers/tutorials/understand-the-erc-20-token-smart-contract/)は、[HQ20](https://github.com/HQ20/contracts/blob/master/contracts/token/README.md)、[DappSys](https://github.com/dapphub/ds-token/)、および[オープンツェッペリン](https://docs.openzeppelin.com/contracts/3.x/erc20)にあります。さらに、一部のERCは、ERC自体の一部として標準的な実装を提供しています。
 
-一部のERCは独立したものではなく、他のERCへの追加機能であることにも言及しておく価値があります。たとえば、[ERC-2612](https://eips.quantaureum.com/EIPS/eip-2612)は、使いやすさを向上させるための拡張機能をERC-20に追加します。
+一部のERCは独立したものではなく、他のERCへの追加機能であることにも言及しておく価値があります。たとえば、[ERC-2612](https://eips.ethereum.org/EIPS/eip-2612)は、使いやすさを向上させるための拡張機能をERC-20に追加します。
 
 ## ライブラリの追加方法 {#how-to}
 

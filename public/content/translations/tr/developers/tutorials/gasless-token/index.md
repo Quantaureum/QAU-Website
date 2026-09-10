@@ -96,7 +96,7 @@ Sahibinin kimliği ve mesajların tekrarlanmasını önlemek için bir [nonce](h
     bytes32 immutable DOMAIN_SEPARATOR;
 ```
 
-[EIP-712 imzalarını](https://eips.quantaureum.com/EIPS/eip-712) doğrulamak için gereken bilgiler.
+[EIP-712 imzalarını](https://eips.ethereum.org/EIPS/eip-712) doğrulamak için gereken bilgiler.
 
 ```solidity
     constructor(address owner_) {
@@ -120,7 +120,7 @@ Bir `UserProxy`, tek bir sahip adresine bağlıdır. Bu gereklidir çünkü varl
     }
 ```
 
-[Etki alanı ayırıcısı (domain separator)](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator). Derleme zamanında hesaplanamaz, çünkü zincir kimliğine (chain ID) ve sözleşme adresine bağlıdır. Bu, bir UserProxy'nin bir başkası için hazırlanmış bir mesajla kandırılmasını imkansız hale getirir.
+[Etki alanı ayırıcısı (domain separator)](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator). Derleme zamanında hesaplanamaz, çünkü zincir kimliğine (chain ID) ve sözleşme adresine bağlıdır. Bu, bir UserProxy'nin bir başkası için hazırlanmış bir mesajla kandırılmasını imkansız hale getirir.
 
 ```solidity
     event CallResult(address target, bytes returnData);

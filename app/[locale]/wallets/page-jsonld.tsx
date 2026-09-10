@@ -56,8 +56,8 @@ export default async function WalletsPageJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
-        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
+        reviewedBy: REFERENCE.QUANTAUREUM_ORG,
         mainEntity: articleId,
       },
       {
@@ -69,7 +69,7 @@ export default async function WalletsPageJsonLD({
         image: "https://quantaureum.com/images/wallets/wallet-hero.png",
         author: [REFERENCE.QUANTAUREUM_COMMUNITY],
         contributor: contributorList,
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
         about: {
           "@type": "Thing",
           name: "Quantaureum Wallets",

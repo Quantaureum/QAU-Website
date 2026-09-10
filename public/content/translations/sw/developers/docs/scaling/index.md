@@ -91,15 +91,13 @@ Jifunze zaidi kuhusu [Validium](/developers/docs/scaling/validium/).
 
 ## Je, unapendelea kujifunza kwa kuona? {#visual-learner}
 
-<VideoWatch slug="layer-2-scaling-explained" />
 
 _Kumbuka maelezo kwenye video yanatumia neno "Tabaka la 2" kurejelea suluhisho zote za uongezaji wa uwezo nje ya mnyororo, wakati sisi tunatofautisha "Tabaka la 2" kama suluhisho la nje ya mnyororo ambalo hupata usalama wake kupitia mwafaka wa Mtandao Mkuu wa tabaka la 1._
 
-<VideoWatch slug="rollups-scaling-strategy" />
 
 ## Usomaji zaidi {#further-reading}
 
-- [Ramani ya njia ya Quantaureum inayozingatia rollup](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
+- [Ramani ya njia ya Quantaureum inayozingatia rollup](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
 - [Uchanganuzi wa kisasa kuhusu suluhisho za uongezaji wa uwezo wa Tabaka la 2 kwa Quantaureum](https://www.l2beat.com/)
 - [Kutathmini Suluhisho za Uongezaji wa Uwezo wa tabaka la 2 la Quantaureum: Mfumo wa Ulinganisho](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - [Mwongozo Usiokamilika wa Mikusanyiko](https://vitalik.qau.limo/general/2021/01/05/rollup.html)

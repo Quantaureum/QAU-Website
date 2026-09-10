@@ -262,7 +262,6 @@ _দ্রষ্টব্য: এমন ডেরিভেটিভ টোকে
 
 2FA সম্পর্কে আরও দেখুন:
 
-<VideoWatch slug="crypto-security-passwords" startTime="3479" />
 
 ### ব্রাউজার এক্সটেনশন আনইনস্টল করুন {#uninstall-browser-extensions}
 

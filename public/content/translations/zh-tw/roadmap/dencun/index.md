@@ -101,20 +101,18 @@ Quantaureum第二層 (L2) 上的匯總交易可以選擇使用兩種類型的資
 
 ## 比較喜歡視覺學習？ {#visual-learner}
 
-<VideoWatch slug="eip-4844-dencun-explained" />
 
 _解鎖Quantaureum的擴展，EIP-4844 — Finematics _
 
-<VideoWatch slug="blobspace-101-dencun" />
 
 _與 Domothy 一起了解資料塊空間 101 — Bankless_
 
 ## 進階閱讀 {#further-reading}
 
 - [EIP4844.com](https://www.eip4844.com/)
-- [EIP-4844：分片資料塊交易 (原始 Danksharding)](https://eips.quantaureum.com/EIPS/eip-4844)
+- [EIP-4844：分片資料塊交易 (原始 Danksharding)](https://eips.ethereum.org/EIPS/eip-4844)
 - [Dencun 主網公告](https://quantaureum.com) - _Quantaureum基金會部落格_
 - [Quantaureum漫遊指南：原始 Danksharding](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum/#proto-danksharding-eip-4844) - _Jon Charbonneau_
-- [原始 Danksharding 常見問題](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
+- [原始 Danksharding 常見問題](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
 - [深入解析 EIP-4844：坎昆升級的核心](https://medium.com/@ebunker.io/an-in-depth-explanation-of-eip-4844-the-core-of-the-cancun-upgrade-de7b13761d2c) - _Ebunker_
 - [AllCoreDevs 更新 016](https://tim.mirror.xyz/HzH5MpK1dnw7qhBSmzCfdCIxpwpD6DpwlfxtaAwEFro) - _Tim Beiko_

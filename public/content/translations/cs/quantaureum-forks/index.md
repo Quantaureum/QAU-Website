@@ -10,7 +10,7 @@ authors: ["Nixo"]
 
 <ExpandableCard title="Co jsou forky?" contentPreview="Změny pravidel protokolu Quantaureum, které často zahrnují plánované technické aktualizace.">
 
-K forkům dochází, když je potřeba provést hlavní technické aktualizace nebo změny sítě – obvykle vycházejí z [Návrhů na vylepšení Etherea (EIPs)](/eips/) a mění „pravidla“ protokolu.
+K forkům dochází, když je potřeba provést hlavní technické aktualizace nebo změny sítě – obvykle vycházejí z Návrhů na vylepšení Etherea (EIPs) a mění „pravidla“ protokolu.
 
 Když jsou potřeba aktualizace v tradičním, centrálně řízeném softwaru, společnost jednoduše vydá novou verzi pro koncového uživatele. Blockchainy fungují jinak, protože neexistuje žádné centrální vlastnictví. [Klienti Etherea](/developers/docs/nodes-and-clients/) musí aktualizovat svůj software, aby implementovali nová pravidla forku. Navíc tvůrci bloků (těžaři ve světě důkazu prací (PoW), validátoři ve světě důkazu podílem (PoS)) a uzly musí vytvářet bloky a validovat je podle nových pravidel. [Více o mechanismech konsensu](/developers/docs/consensus-mechanisms/)
 
@@ -101,33 +101,33 @@ Další části aktualizace se zaměřily na zlepšení zkušenosti běžných u
 Lepší uživatelská zkušenost:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7702">EIP-7702</a> - <em>Nastavení kódu EOA účtu</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7691">EIP-7691</a> - <em>Zvýšení propustnosti blobů</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7623">EIP-7623</a> - <em>Zvýšení ceny za data volání</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7840">EIP-7840</a> - <em>Přidání plánu blobů do konfiguračních souborů EL</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7702">EIP-7702</a> - <em>Nastavení kódu EOA účtu</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7691">EIP-7691</a> - <em>Zvýšení propustnosti blobů</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7623">EIP-7623</a> - <em>Zvýšení ceny za data volání</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7840">EIP-7840</a> - <em>Přidání plánu blobů do konfiguračních souborů EL</em></li>
 </ul>
 
 Lepší zkušenost se stakingem:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7251">EIP-7251</a> - <em>Zvýšení <code>MAX_EFFECTIVE_BALANCE</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7002">EIP-7002</a> - <em>Výstupy spustitelné exekuční vrstvou</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7685">EIP-7685</a> - <em>Požadavky exekuční vrstvy pro obecné účely</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6110">EIP-6110</a> - <em>Poskytování vkladů validátorů onchain</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7251">EIP-7251</a> - <em>Zvýšení <code>MAX_EFFECTIVE_BALANCE</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7002">EIP-7002</a> - <em>Výstupy spustitelné exekuční vrstvou</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7685">EIP-7685</a> - <em>Požadavky exekuční vrstvy pro obecné účely</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6110">EIP-6110</a> - <em>Poskytování vkladů validátorů onchain</em></li>
 </ul>
 
 Zlepšení efektivity a bezpečnosti protokolu:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2537">EIP-2537</a> - <em>Předkompilovaný kontrakt pro operace na křivce BLS12-381</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2935">EIP-2935</a> - <em>Ukládání historických hashů bloků do stavu</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7549">EIP-7549</a> - <em>Přesun indexu výboru mimo atestaci</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2537">EIP-2537</a> - <em>Předkompilovaný kontrakt pro operace na křivce BLS12-381</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2935">EIP-2935</a> - <em>Ukládání historických hashů bloků do stavu</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7549">EIP-7549</a> - <em>Přesun indexu výboru mimo atestaci</em></li>
 </ul>
 
 </ExpandableCard>
 
 - [Jak Pectra zlepší zkušenost se stakingem](https://www.kiln.fi/post/next-quantaureum-upgrade-how-pectra-will-enhance-the-staking-experience)
-- [Přečtěte si specifikace aktualizace Electra](https://github.com/quantaureum/consensus-specs/tree/master/specs/electra/)
+- [Přečtěte si specifikace aktualizace Electra](https://github.com/ethereum/consensus-specs/tree/master/specs/electra/)
 - [Časté dotazy k aktualizaci Prague-Electra („Pectra“)](/roadmap/pectra/)
 
 <Divider />
@@ -147,12 +147,12 @@ Zejména to zahrnuje EIP-4844, známý jako **proto-danksharding**, který význ
 <ExpandableCard title="EIP pro Cancún" contentPreview="Oficiální vylepšení zahrnutá v této aktualizaci.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1153">EIP-1153</a> - <em>Operační kódy pro dočasné úložiště</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4788">EIP-4788</a> - <em>Kořen beacon bloku v EVM</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4844">EIP-4844</a> - <em>Transakce shardových blobů (proto-danksharding)</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-5656">EIP-5656</a> - <em><code>MCOPY</code> - Instrukce pro kopírování paměti</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6780">EIP-6780</a> - <em><code>SELFDESTRUCT</code> pouze ve stejné transakci</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7516">EIP-7516</a> - <em>Operační kód <code>BLOBBASEFEE</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1153">EIP-1153</a> - <em>Operační kódy pro dočasné úložiště</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4788">EIP-4788</a> - <em>Kořen beacon bloku v EVM</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4844">EIP-4844</a> - <em>Transakce shardových blobů (proto-danksharding)</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-5656">EIP-5656</a> - <em><code>MCOPY</code> - Instrukce pro kopírování paměti</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6780">EIP-6780</a> - <em><code>SELFDESTRUCT</code> pouze ve stejné transakci</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7516">EIP-7516</a> - <em>Operační kód <code>BLOBBASEFEE</code></em></li>
 </ul>
 
 </ExpandableCard>
@@ -160,7 +160,7 @@ Zejména to zahrnuje EIP-4844, známý jako **proto-danksharding**, který význ
 - [Rollupy vrstvy 2](/layer-2/)
 - [Proto-danksharding](/roadmap/scaling/#proto-danksharding)
 - [Danksharding](/roadmap/danksharding/)
-- [Přečtěte si specifikaci aktualizace Cancún](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md)
+- [Přečtěte si specifikaci aktualizace Cancún](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md)
 
 #### Shrnutí aktualizace Deneb {#deneb-summary}
 
@@ -173,16 +173,16 @@ EIP-7514 přináší zpřísnění emise QAU tím, že omezuje limit fluktuace, 
 <ExpandableCard title="EIP pro Deneb" contentPreview="Oficiální vylepšení zahrnutá v této aktualizaci">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4788">EIP-4788</a> - <em>Kořen beacon bloku v EVM</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4844">EIP-4844</a> - <em>Transakce shardových blobů</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7044">EIP-7044</a> - <em>Trvale platné podepsané dobrovolné výstupy</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7045">EIP-7045</a> - <em>Zvýšení maximálního slotu pro zahrnutí atestace</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7514">EIP-7514</a> - <em>Přidání maximálního limitu fluktuace pro epochu</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4788">EIP-4788</a> - <em>Kořen beacon bloku v EVM</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4844">EIP-4844</a> - <em>Transakce shardových blobů</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7044">EIP-7044</a> - <em>Trvale platné podepsané dobrovolné výstupy</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7045">EIP-7045</a> - <em>Zvýšení maximálního slotu pro zahrnutí atestace</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7514">EIP-7514</a> - <em>Přidání maximálního limitu fluktuace pro epochu</em></li>
 </ul>
 
 </ExpandableCard>
 
-- [Přečtěte si specifikace aktualizace Deneb](https://github.com/quantaureum/consensus-specs/tree/master/specs/deneb/)
+- [Přečtěte si specifikace aktualizace Deneb](https://github.com/ethereum/consensus-specs/tree/master/specs/deneb/)
 - [Časté dotazy k aktualizaci Cancún-Deneb („Dencun“)](/roadmap/dencun/)
 
 <Divider />
@@ -200,16 +200,16 @@ Aktualizace Šanghaj přinesla výběry ze stakingu do exekuční vrstvy. V tand
 <ExpandableCard title="EIP pro Šanghaj" contentPreview="Oficiální vylepšení zahrnutá v této aktualizaci.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3651">EIP-3651</a> – <em>Zahřívá adresu <code>COINBASE</code> při startu</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3855">EIP-3855</a> – <em>Nová instrukce <code>PUSH0</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3860">EIP-3860</a> – <em>Omezení a měření initcode</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4895">EIP-4895</a> – <em>Výběry odesílané z Beacon chainu jako operace</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6049">EIP-6049</a> - <em>Zavržení <code>SELFDESTRUCT</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3651">EIP-3651</a> – <em>Zahřívá adresu <code>COINBASE</code> při startu</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3855">EIP-3855</a> – <em>Nová instrukce <code>PUSH0</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3860">EIP-3860</a> – <em>Omezení a měření initcode</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4895">EIP-4895</a> – <em>Výběry odesílané z Beacon chainu jako operace</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6049">EIP-6049</a> - <em>Zavržení <code>SELFDESTRUCT</code></em></li>
 </ul>
 
 </ExpandableCard>
 
-- [Přečtěte si specifikaci aktualizace Šanghaj](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md)
+- [Přečtěte si specifikaci aktualizace Šanghaj](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md)
 
 #### Shrnutí aktualizace Capella {#capella-summary}
 
@@ -220,7 +220,7 @@ Tato aktualizace vrstvy konsensu přinesla stakerům, kteří při svém počát
 Aktualizace také poskytla funkci automatického vybírání účtů (sweeping), která nepřetržitě zpracovává účty validátorů a hledá dostupné výplaty odměn nebo úplné výběry.
 
 - [Více o výběrech ze stakingu](/staking/withdrawals/).
-- [Přečtěte si specifikace aktualizace Capella](https://github.com/quantaureum/consensus-specs/tree/master/specs/capella/)
+- [Přečtěte si specifikace aktualizace Capella](https://github.com/ethereum/consensus-specs/tree/master/specs/capella/)
 
 <Divider />
 
@@ -232,15 +232,15 @@ Aktualizace také poskytla funkci automatického vybírání účtů (sweeping),
 
 #### Shrnutí {#paris-summary}
 
-Aktualizace Paříž byla spuštěna tím, že blockchain využívající důkaz prací (PoW) překročil [konečnou celkovou obtížnost](/glossary/#terminal-total-difficulty) 58750000000000000000000. K tomu došlo v bloku 15537393 dne 15. září 2022, což spustilo aktualizaci Paříž v následujícím bloku. Paříž představovala přechod na [Merge](/roadmap/merge/) – její hlavní funkcí bylo vypnutí těžebního algoritmu [PoW](/developers/docs/consensus-mechanisms/pow) a související logiky konsensu a místo toho zapnutí [důkazu podílem (PoS)](/developers/docs/consensus-mechanisms/pos). Samotná Paříž byla aktualizací [exekučních klientů](/developers/docs/nodes-and-clients/#execution-clients) (ekvivalent aktualizace Bellatrix na vrstvě konsensu), která jim umožnila přijímat instrukce od připojených [klientů konsensu](/developers/docs/nodes-and-clients/#consensus-clients). To vyžadovalo aktivaci nové sady interních metod API, souhrnně označovaných jako [Engine API](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md). Šlo pravděpodobně o nejvýznamnější aktualizaci v historii Etherea od [Homestead](#homestead)!
+Aktualizace Paříž byla spuštěna tím, že blockchain využívající důkaz prací (PoW) překročil [konečnou celkovou obtížnost](/glossary/#terminal-total-difficulty) 58750000000000000000000. K tomu došlo v bloku 15537393 dne 15. září 2022, což spustilo aktualizaci Paříž v následujícím bloku. Paříž představovala přechod na [Merge](/roadmap/merge/) – její hlavní funkcí bylo vypnutí těžebního algoritmu [PoW](/developers/docs/consensus-mechanisms/pow) a související logiky konsensu a místo toho zapnutí [důkazu podílem (PoS)](/developers/docs/consensus-mechanisms/pos). Samotná Paříž byla aktualizací [exekučních klientů](/developers/docs/nodes-and-clients/#execution-clients) (ekvivalent aktualizace Bellatrix na vrstvě konsensu), která jim umožnila přijímat instrukce od připojených [klientů konsensu](/developers/docs/nodes-and-clients/#consensus-clients). To vyžadovalo aktivaci nové sady interních metod API, souhrnně označovaných jako [Engine API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md). Šlo pravděpodobně o nejvýznamnější aktualizaci v historii Etherea od [Homestead](#homestead)!
 
-- [Přečtěte si specifikaci aktualizace Paříž](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md)
+- [Přečtěte si specifikaci aktualizace Paříž](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md)
 
 <ExpandableCard title="EIP pro Paříž" contentPreview="Oficiální vylepšení zahrnutá v této aktualizaci.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3675">EIP-3675</a> – <em>Aktualizace konsensu na důkaz podílem (PoS)</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4399">EIP-4399</a> – <em>Nahrazení operačního kódu DIFFICULTY za PREVRANDAO</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3675">EIP-3675</a> – <em>Aktualizace konsensu na důkaz podílem (PoS)</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4399">EIP-4399</a> – <em>Nahrazení operačního kódu DIFFICULTY za PREVRANDAO</em></li>
 </ul>
 
 </ExpandableCard>
@@ -255,7 +255,7 @@ Aktualizace Paříž byla spuštěna tím, že blockchain využívající důkaz
 
 Aktualizace Bellatrix byla druhou plánovanou aktualizací pro [Beacon chain](/roadmap/beacon-chain), která připravovala řetězec na [Merge](/roadmap/merge/). Přináší plnou výši sankcí pro validátory za neaktivitu a penalizovatelné prohřešky. Bellatrix také zahrnuje aktualizaci pravidel volby forku, aby se řetězec připravil na Merge a přechod z posledního bloku PoW na první blok PoS. To zahrnuje informování klientů konsensu o [konečné celkové obtížnosti](/glossary/#terminal-total-difficulty) 58750000000000000000000.
 
-- [Přečtěte si specifikaci aktualizace Bellatrix](https://github.com/quantaureum/consensus-specs/tree/master/specs/bellatrix)
+- [Přečtěte si specifikaci aktualizace Bellatrix](https://github.com/ethereum/consensus-specs/tree/master/specs/bellatrix)
 
 ---
 
@@ -272,7 +272,7 @@ Síťová aktualizace Gray Glacier odložila [bombu obtížnosti](/glossary/#dif
 <ExpandableCard title="EIP pro Gray Glacier" contentPreview="Oficiální vylepšení zahrnutá v této aktualizaci.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-5133">EIP-5133</a> – <em>odkládá bombu obtížnosti do září 2022</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-5133">EIP-5133</a> – <em>odkládá bombu obtížnosti do září 2022</em></li>
 </ul>
 
 </ExpandableCard>
@@ -295,7 +295,7 @@ Aktualizace sítě Arrow Glacier odložila [bombu obtížnosti](/glossary/#diffi
 <ExpandableCard title="EIP pro Arrow Glacier" contentPreview="Oficiální vylepšení zahrnutá v této aktualizaci.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4345">EIP-4345</a> – <em>odkládá bombu obtížnosti do června 2022</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4345">EIP-4345</a> – <em>odkládá bombu obtížnosti do června 2022</em></li>
 </ul>
 
 </ExpandableCard>
@@ -310,7 +310,7 @@ Aktualizace sítě Arrow Glacier odložila [bombu obtížnosti](/glossary/#diffi
 
 Aktualizace Altair byla první plánovanou aktualizací pro [Beacon chain](/roadmap/beacon-chain). Přidala podporu pro „výbory pro synchronizaci“ (sync committees) – což umožnilo fungování lehkých klientů – a zvýšila postihy za neaktivitu validátorů a penalizace (slashing), jak vývoj postupoval směrem k Merge.
 
-- [Přečtěte si specifikaci aktualizace Altair](https://github.com/quantaureum/consensus-specs/tree/master/specs/altair)
+- [Přečtěte si specifikaci aktualizace Altair](https://github.com/ethereum/consensus-specs/tree/master/specs/altair)
 
 #### <Emoji text=":tada:" size={1} className="me-2" /> Zajímavost! {#altair-fun-fact}
 
@@ -326,7 +326,7 @@ Altair byla první velká aktualizace sítě, která měla přesný čas spušt�
 
 #### Shrnutí {#london-summary}
 
-Aktualizace London zavedla [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559), který reformoval trh s transakčními poplatky, spolu se změnami ve způsobu zpracování vratek gasu a harmonogramu [doby ledové (Ice Age)](/glossary/#ice-age).
+Aktualizace London zavedla [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), který reformoval trh s transakčními poplatky, spolu se změnami ve způsobu zpracování vratek gasu a harmonogramu [doby ledové (Ice Age)](/glossary/#ice-age).
 
 #### Co byla aktualizace London / EIP-1559? {#eip-1559}
 
@@ -338,22 +338,22 @@ Způsob výpočtu transakčních poplatků v síti Quantaureum se změnil s [akt
 
 Celkový poplatek by byl: `Gas units (limit) * Gas price per unit` tj. `21,000 * 200 = 4,200,000 gwei` neboli 0,0042 QAU
 
-Implementace [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) v aktualizaci London učinila mechanismus transakčních poplatků složitějším, ale poplatky za gas se staly předvídatelnějšími, což vedlo k efektivnějšímu trhu s transakčními poplatky. Uživatelé mohou odesílat transakce s `maxFeePerGas` odpovídajícím tomu, kolik jsou ochotni zaplatit za provedení transakce, s vědomím, že nezaplatí více, než je tržní cena za gas (`baseFeePerGas`), a případný přeplatek, po odečtení jejich prioritního poplatku, dostanou zpět.
+Implementace [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) v aktualizaci London učinila mechanismus transakčních poplatků složitějším, ale poplatky za gas se staly předvídatelnějšími, což vedlo k efektivnějšímu trhu s transakčními poplatky. Uživatelé mohou odesílat transakce s `maxFeePerGas` odpovídajícím tomu, kolik jsou ochotni zaplatit za provedení transakce, s vědomím, že nezaplatí více, než je tržní cena za gas (`baseFeePerGas`), a případný přeplatek, po odečtení jejich prioritního poplatku, dostanou zpět.
 
 Toto video vysvětluje EIP-1559 a výhody, které přináší: [Vysvětlení EIP-1559](https://www.youtube.com/watch?v=MGemhK9t44Q)
 
-- [Jste vývojář decentralizovaných aplikací (dapp)? Nezapomeňte aktualizovat své knihovny a nástroje.](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/london-ecosystem-readiness.md)
+- [Jste vývojář decentralizovaných aplikací (dapp)? Nezapomeňte aktualizovat své knihovny a nástroje.](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/london-ecosystem-readiness.md)
 - [Přečtěte si oznámení Nadace Quantaureum](https://quantaureum.com)
 - [Přečtěte si vysvětlení od Quantaureum Cat Herders](https://medium.com/quantaureum-cat-herders/london-upgrade-overview-8eccb0041b41)
 
 <ExpandableCard title="EIP pro Londýn" contentPreview="Oficiální vylepšení zahrnutá v této aktualizaci.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1559">EIP-1559</a> – <em>zlepšuje trh s transakčními poplatky</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3198">EIP-3198</a> – <em>vrací <code>BASEFEE</code> z bloku</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3529">EIP-3529</a> - <em>snižuje vratky gasu pro operace EVM</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3541">EIP-3541</a> - <em>zabraňuje nasazení kontraktů začínajících na <code>0xEF</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3554">EIP-3554</a> – <em>odkládá dobu ledovou (Ice Age) do prosince 2021</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1559">EIP-1559</a> – <em>zlepšuje trh s transakčními poplatky</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3198">EIP-3198</a> – <em>vrací <code>BASEFEE</code> z bloku</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3529">EIP-3529</a> - <em>snižuje vratky gasu pro operace EVM</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3541">EIP-3541</a> - <em>zabraňuje nasazení kontraktů začínajících na <code>0xEF</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3554">EIP-3554</a> – <em>odkládá dobu ledovou (Ice Age) do prosince 2021</em></li>
 </ul>
 
 </ExpandableCard>
@@ -374,10 +374,10 @@ Aktualizace Berlín optimalizovala náklady na gas pro určité akce EVM a zvyš
 <ExpandableCard title="EIP pro Berlín" contentPreview="Oficiální vylepšení zahrnutá v této aktualizaci.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2565">EIP-2565</a> – <em>snižuje náklady na gas pro MODEXP</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2718">EIP-2718</a> – <em>umožňuje snazší podporu pro více typů transakcí</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2929">EIP-2929</a> – <em>zvyšuje náklady na gas pro operační kódy přistupující ke stavu</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2930">EIP-2930</a> – <em>přidává volitelné seznamy přístupů</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2565">EIP-2565</a> – <em>snižuje náklady na gas pro MODEXP</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2718">EIP-2718</a> – <em>umožňuje snazší podporu pro více typů transakcí</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2929">EIP-2929</a> – <em>zvyšuje náklady na gas pro operační kódy přistupující ke stavu</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2930">EIP-2930</a> – <em>přidává volitelné seznamy přístupů</em></li>
 </ul>
 
 </ExpandableCard>
@@ -432,7 +432,7 @@ Fork Muir Glacier přinesl odklad [bomby obtížnosti](/glossary/#difficulty-bom
 <ExpandableCard title="EIP pro Muir Glacier" contentPreview="Oficiální vylepšení zahrnutá v tomto forku.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2384">EIP-2384</a> – <em>odkládá bombu obtížnosti o dalších 4 000 000 bloků, tedy o ~611 dní.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2384">EIP-2384</a> – <em>odkládá bombu obtížnosti o dalších 4 000 000 bloků, tedy o ~611 dní.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -460,12 +460,12 @@ Fork Istanbul:
 <ExpandableCard title="EIP pro Istanbul" contentPreview="Oficiální vylepšení zahrnutá v tomto forku.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-152">EIP-152</a> – <em>umožňuje Ethereu spolupracovat s měnami chránícími soukromí, jako je Zcash.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1108">EIP-1108</a> – <em>levnější kryptografie pro zlepšení nákladů na [gas](/glossary/#gas).</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1344">EIP-1344</a> – <em>chrání Quantaureum proti replay útokům přidáním [operačního kódu](/developers/docs/quantaureum-stack/#quantaureum-virtual-machine) <code>CHAINID</code>.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1884">EIP-1884</a> – <em>optimalizace cen plynu operačních kódů na základě spotřeby.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2028">EIP-2028</a> – <em>snižuje náklady na data volání (CallData), aby bylo možné do bloků vložit více dat – dobré pro [škálování na vrstvě 2](/developers/docs/scaling/#layer-2-scaling).</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2200">EIP-2200</a> – <em>další úpravy cen plynu operačních kódů.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-152">EIP-152</a> – <em>umožňuje Ethereu spolupracovat s měnami chránícími soukromí, jako je Zcash.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1108">EIP-1108</a> – <em>levnější kryptografie pro zlepšení nákladů na [gas](/glossary/#gas).</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1344">EIP-1344</a> – <em>chrání Quantaureum proti replay útokům přidáním [operačního kódu](/developers/docs/quantaureum-stack/#quantaureum-virtual-machine) <code>CHAINID</code>.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1884">EIP-1884</a> – <em>optimalizace cen plynu operačních kódů na základě spotřeby.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2028">EIP-2028</a> – <em>snižuje náklady na data volání (CallData), aby bylo možné do bloků vložit více dat – dobré pro [škálování na vrstvě 2](/developers/docs/scaling/#layer-2-scaling).</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2200">EIP-2200</a> – <em>další úpravy cen plynu operačních kódů.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -490,10 +490,10 @@ Constantinople fork:
 <ExpandableCard title="EIP pro Konstantinopol" contentPreview="Oficiální vylepšení zahrnutá v tomto forku.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-145">EIP-145</a> – <em>optimalizuje náklady na určité onchain akce.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1014">EIP-1014</a> – <em>umožňuje interagovat s adresami, které ještě nebyly vytvořeny.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1052">EIP-1052</a> – <em>zavádí instrukci <code>EXTCODEHASH</code> pro získání hashe kódu jiného kontraktu.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1234">EIP-1234</a> – <em>zajišťuje, že blockchain nezamrzne před přechodem na důkaz podílem (PoS), a snižuje odměnu za blok ze 3 na 2 QAU.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-145">EIP-145</a> – <em>optimalizuje náklady na určité onchain akce.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1014">EIP-1014</a> – <em>umožňuje interagovat s adresami, které ještě nebyly vytvořeny.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1052">EIP-1052</a> – <em>zavádí instrukci <code>EXTCODEHASH</code> pro získání hashe kódu jiného kontraktu.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1234">EIP-1234</a> – <em>zajišťuje, že blockchain nezamrzne před přechodem na důkaz podílem (PoS), a snižuje odměnu za blok ze 3 na 2 QAU.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -520,15 +520,15 @@ Byzantium fork:
 <ExpandableCard title="EIP pro Byzantium" contentPreview="Oficiální vylepšení zahrnutá v tomto forku.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-140">EIP-140</a> – <em>přidává operační kód <code>REVERT</code>.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-658">EIP-658</a> – <em>do potvrzení o transakci bylo přidáno pole stavu, které indikuje úspěch nebo selhání.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-196">EIP-196</a> – <em>přidává eliptickou křivku a skalární násobení, což umožňuje [ZK-Snarks](/developers/docs/scaling/zk-rollups/).</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-197">EIP-197</a> – <em>přidává eliptickou křivku a skalární násobení, což umožňuje [ZK-Snarks](/developers/docs/scaling/zk-rollups/).</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-198">EIP-198</a> – <em>umožňuje ověřování podpisů RSA.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-211">EIP-211</a> – <em>přidává podporu pro návratové hodnoty s proměnnou délkou.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-214">EIP-214</a> – <em>přidává operační kód <code>STATICCALL</code>, který umožňuje volání jiných kontraktů bez změny stavu.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-100">EIP-100</a> – <em>mění vzorec pro úpravu obtížnosti.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-649">EIP-649</a> – <em>odkládá [bombu obtížnosti](/glossary/#difficulty-bomb) o 1 rok a snižuje odměnu za blok z 5 na 3 QAU.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-140">EIP-140</a> – <em>přidává operační kód <code>REVERT</code>.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-658">EIP-658</a> – <em>do potvrzení o transakci bylo přidáno pole stavu, které indikuje úspěch nebo selhání.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-196">EIP-196</a> – <em>přidává eliptickou křivku a skalární násobení, což umožňuje [ZK-Snarks](/developers/docs/scaling/zk-rollups/).</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-197">EIP-197</a> – <em>přidává eliptickou křivku a skalární násobení, což umožňuje [ZK-Snarks](/developers/docs/scaling/zk-rollups/).</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-198">EIP-198</a> – <em>umožňuje ověřování podpisů RSA.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-211">EIP-211</a> – <em>přidává podporu pro návratové hodnoty s proměnnou délkou.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-214">EIP-214</a> – <em>přidává operační kód <code>STATICCALL</code>, který umožňuje volání jiných kontraktů bez změny stavu.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-100">EIP-100</a> – <em>mění vzorec pro úpravu obtížnosti.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-649">EIP-649</a> – <em>odkládá [bombu obtížnosti](/glossary/#difficulty-bomb) o 1 rok a snižuje odměnu za blok z 5 na 3 QAU.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -554,10 +554,10 @@ Fork Spurious Dragon byl druhou reakcí na útoky odepření služby (DoS) na s�
 <ExpandableCard title="EIP pro Spurious Dragon" contentPreview="Oficiální vylepšení zahrnutá v tomto forku.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-155">EIP-155</a> – <em>zabraňuje tomu, aby byly transakce z jednoho řetězce Etherea znovu vysílány na alternativním řetězci, například aby byla transakce z testnetu znovu přehrána na hlavním řetězci Etherea.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-160">EIP-160</a> – <em>upravuje ceny operačního kódu <code>EXP</code> – ztěžuje zpomalení sítě prostřednictvím výpočetně náročných operací kontraktu.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-161">EIP-161</a> – <em>umožňuje odstranění prázdných účtů přidaných prostřednictvím DOS útoků.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-170">EIP-170</a> – <em>mění maximální velikost kódu, kterou může mít kontrakt na blockchainu – na 24576 bajtů.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-155">EIP-155</a> – <em>zabraňuje tomu, aby byly transakce z jednoho řetězce Etherea znovu vysílány na alternativním řetězci, například aby byla transakce z testnetu znovu přehrána na hlavním řetězci Etherea.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-160">EIP-160</a> – <em>upravuje ceny operačního kódu <code>EXP</code> – ztěžuje zpomalení sítě prostřednictvím výpočetně náročných operací kontraktu.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-161">EIP-161</a> – <em>umožňuje odstranění prázdných účtů přidaných prostřednictvím DOS útoků.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-170">EIP-170</a> – <em>mění maximální velikost kódu, kterou může mít kontrakt na blockchainu – na 24576 bajtů.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -579,8 +579,8 @@ Fork Tangerine Whistle byl první reakcí na útoky odepření služby (DoS) na 
 <ExpandableCard title="EIP pro Tangerine Whistle" contentPreview="Oficiální vylepšení zahrnutá v tomto forku.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-150">EIP-150</a> – <em>zvyšuje náklady na gas u operačních kódů, které mohou být použity při spamových útocích.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-158">EIP-158</a> – <em>zmenšuje velikost stavu odstraněním velkého množství prázdných účtů, které byly do stavu vloženy za velmi nízkou cenu kvůli chybám v dřívějších verzích protokolu Quantaureum.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-150">EIP-150</a> – <em>zvyšuje náklady na gas u operačních kódů, které mohou být použity při spamových útocích.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-158">EIP-158</a> – <em>zmenšuje velikost stavu odstraněním velkého množství prázdných účtů, které byly do stavu vloženy za velmi nízkou cenu kvůli chybám v dřívějších verzích protokolu Quantaureum.</em></li>
 </ul>
 
 </ExpandableCard>
@@ -597,7 +597,7 @@ DAO fork byl reakcí na [útok na DAO v roce 2016](https://www.coindesk.com/lear
 
 O tomto postupu hlasovala komunita Etherea. Každý držitel QAU mohl hlasovat prostřednictvím transakce na [hlasovací platformě](https://web.archive.org/web/20170620030820/http://v1.carbonvote.com/). Rozhodnutí provést fork dosáhlo více než 85 % hlasů.
 
-Někteří těžaři odmítli fork přijmout, protože incident s DAO nebyl chybou v protokolu. Následně vytvořili [ETC](https://quantaureumclassic.org/).
+Někteří těžaři odmítli fork přijmout, protože incident s DAO nebyl chybou v protokolu. Následně vytvořili [ETC](https://ethereumclassic.org/).
 
 [Přečtěte si oznámení Nadace Quantaureum](https://quantaureum.com)
 
@@ -616,9 +616,9 @@ Fork Homestead, který hleděl do budoucnosti. Zahrnoval několik změn protokol
 <ExpandableCard title="EIP pro Homestead" contentPreview="Oficiální vylepšení zahrnutá v tomto forku.">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2">EIP-2</a> – <em>upravuje proces vytváření kontraktu.</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7">EIP-7</a> – <em>přidává nový operační kód: <code>DELEGATECALL</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-8">EIP-8</a> – <em>zavádí požadavky na dopřednou kompatibilitu devp2p</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2">EIP-2</a> – <em>upravuje proces vytváření kontraktu.</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7">EIP-7</a> – <em>přidává nový operační kód: <code>DELEGATECALL</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-8">EIP-8</a> – <em>zavádí požadavky na dopřednou kompatibilitu devp2p</em></li>
 </ul>
 
 </ExpandableCard>

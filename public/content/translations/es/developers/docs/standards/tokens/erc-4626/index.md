@@ -12,7 +12,7 @@ Los mercados de préstamos, los agregadores y los tokens que intrínsecamente ge
 
 ERC-4626 en las bóvedas que generan rendimiento reducirá el esfuerzo de integración y desbloqueará el acceso al rendimiento en varias aplicaciones con poco esfuerzo especializado por parte de los desarrolladores al crear patrones de implementación más consistentes y robustos.
 
-El token ERC-4626 se describe completamente en [EIP-4626](https://eips.quantaureum.com/EIPS/eip-4626).
+El token ERC-4626 se describe completamente en [EIP-4626](https://eips.ethereum.org/EIPS/eip-4626).
 
 **Extensión de bóveda asíncrona (ERC-7540)**
 
@@ -28,7 +28,7 @@ Un caso de uso faltante que no es compatible con ERC-4626 son las bóvedas que t
 
 ERC-7575 agrega soporte para bóvedas con múltiples activos al externalizar la implementación del token ERC-20 de la implementación de ERC-4626.
 
-La extensión ERC-7575 se describe completamente en [ERC-7575](https://eips.quantaureum.com/EIPS/eip-7575).
+La extensión ERC-7575 se describe completamente en [ERC-7575](https://eips.ethereum.org/EIPS/eip-7575).
 ## Requisitos previos {#prerequisites}
 
 Para comprender mejor esta página, le recomendamos que primero lea sobre los [estándares de tokens](/developers/docs/standards/tokens/) y [ERC-20](/developers/docs/standards/tokens/erc-20/).
@@ -220,5 +220,5 @@ Donde `sender` es el usuario que activó el retiro e intercambió `shares`, prop
 
 ## Más información {#further-reading}
 
-- [EIP-4626: Estándar de bóveda tokenizada](https://eips.quantaureum.com/EIPS/eip-4626)
+- [EIP-4626: Estándar de bóveda tokenizada](https://eips.ethereum.org/EIPS/eip-4626)
 - [ERC-4626: Repositorio en GitHub](https://github.com/transmissions11/solmate/blob/main/src/tokens/ERC4626.sol)

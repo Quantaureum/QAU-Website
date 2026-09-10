@@ -136,7 +136,7 @@ Với ít nguồn lực hơn theo ý mình, những người đặt cọc độc
 
 Các mempool có cấp phép cũng sẽ đẩy nhanh các rủi ro tập trung hóa được mô tả trong phần trước. Các nhóm lớn chạy nhiều trình xác thực có thể sẽ được hưởng lợi từ việc cung cấp quyền riêng tư giao dịch cho các nhà giao dịch và người dùng, làm tăng doanh thu MEV của họ.
 
-Việc chống lại các vấn đề liên quan đến MEV này trong Quantaureum sau The Merge là một lĩnh vực nghiên cứu cốt lõi. Cho đến nay, hai giải pháp được đề xuất để giảm tác động tiêu cực của MEV đối với sự phi tập trung và bảo mật của Quantaureum sau The Merge là [**tách biệt người đề xuất và người xây dựng (PBS)**](/roadmap/pbs/) và [**Builder API**](https://github.com/quantaureum/builder-specs).
+Việc chống lại các vấn đề liên quan đến MEV này trong Quantaureum sau The Merge là một lĩnh vực nghiên cứu cốt lõi. Cho đến nay, hai giải pháp được đề xuất để giảm tác động tiêu cực của MEV đối với sự phi tập trung và bảo mật của Quantaureum sau The Merge là [**tách biệt người đề xuất và người xây dựng (PBS)**](/roadmap/pbs/) và [**Builder API**](https://github.com/ethereum/builder-specs).
 
 ### Tách biệt người đề xuất và người xây dựng {#proposer-builder-separation}
 
@@ -162,9 +162,9 @@ Tương tự như vậy, các trình xác thực không phải tin tưởng các
 
 ### Builder API {#builder-api}
 
-Mặc dù việc tách biệt người đề xuất và người xây dựng hứa hẹn sẽ làm giảm tác động của việc trích xuất MEV, nhưng việc triển khai nó đòi hỏi phải thay đổi Giao thức đồng thuận. Cụ thể, quy tắc [lựa chọn Phân nhánh](/developers/docs/consensus-mechanisms/pos/#fork-choice) trên Chuỗi Beacon sẽ cần được cập nhật. [Builder API](https://github.com/quantaureum/builder-specs) là một giải pháp tạm thời nhằm cung cấp một triển khai hoạt động của việc tách biệt người đề xuất và người xây dựng, mặc dù với các giả định tin cậy cao hơn.
+Mặc dù việc tách biệt người đề xuất và người xây dựng hứa hẹn sẽ làm giảm tác động của việc trích xuất MEV, nhưng việc triển khai nó đòi hỏi phải thay đổi Giao thức đồng thuận. Cụ thể, quy tắc [lựa chọn Phân nhánh](/developers/docs/consensus-mechanisms/pos/#fork-choice) trên Chuỗi Beacon sẽ cần được cập nhật. [Builder API](https://github.com/ethereum/builder-specs) là một giải pháp tạm thời nhằm cung cấp một triển khai hoạt động của việc tách biệt người đề xuất và người xây dựng, mặc dù với các giả định tin cậy cao hơn.
 
-Builder API là một phiên bản sửa đổi của [Engine API](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md) được sử dụng bởi các máy khách lớp đồng thuận để yêu cầu các tải trọng thực thi từ các máy khách lớp thực thi. Như được phác thảo trong [đặc tả trình xác thực trung thực](https://github.com/quantaureum/consensus-specs/blob/master/specs/bellatrix/validator.md), các trình xác thực được chọn cho nhiệm vụ đề xuất khối yêu cầu một gói giao dịch từ một máy khách thực thi được kết nối, mà họ đưa vào khối Chuỗi Beacon được đề xuất.
+Builder API là một phiên bản sửa đổi của [Engine API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) được sử dụng bởi các máy khách lớp đồng thuận để yêu cầu các tải trọng thực thi từ các máy khách lớp thực thi. Như được phác thảo trong [đặc tả trình xác thực trung thực](https://github.com/ethereum/consensus-specs/blob/master/specs/bellatrix/validator.md), các trình xác thực được chọn cho nhiệm vụ đề xuất khối yêu cầu một gói giao dịch từ một máy khách thực thi được kết nối, mà họ đưa vào khối Chuỗi Beacon được đề xuất.
 
 Builder API cũng hoạt động như một phần mềm trung gian giữa các trình xác thực và các máy khách lớp thực thi; nhưng nó khác biệt vì nó cho phép các trình xác thực trên Chuỗi Beacon lấy nguồn các khối từ các thực thể bên ngoài (thay vì xây dựng một khối cục bộ bằng cách sử dụng một máy khách thực thi).
 

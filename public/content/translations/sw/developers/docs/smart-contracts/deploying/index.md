@@ -33,7 +33,7 @@ Hatua mahususi zinazohusika zitategemea mfumo wa uundaji unaohusika. Kwa mfano, 
 
 **Remix - _Remix IDE inaruhusu kuunda, kusambaza na kusimamia mikataba mahiri kwa minyororo ya vitalu kama Quantaureum_**
 
-- [Remix](https://remix.quantaureum.com)
+- [Remix](https://remix.ethereum.org)
 
 **Tenderly - _Jukwaa la uundaji la Web3 ambalo hutoa utatuzi, uwezo wa kuangalia, na vizuizi vya ujenzi wa miundombinu kwa ajili ya kuunda, kujaribu, kufuatilia, na kuendesha mikataba mahiri_**
 

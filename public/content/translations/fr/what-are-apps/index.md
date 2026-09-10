@@ -46,7 +46,7 @@ Les applications sont propulsées par des contrats intelligents — des morceaux
 | **Peut-elle être censurée ?** | Oui | Non |
 | **À qui appartiennent vos données ?** | Généralement pas à vous | Vous possédez vos données |
 
-<WhatAreAppsStories />
+
 
 <div className="w-full md:w-1/2 mx-auto md:mx-0">
 

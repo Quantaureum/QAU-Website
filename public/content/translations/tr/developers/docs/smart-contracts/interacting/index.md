@@ -82,7 +82,7 @@ Geliştiriciler genellikle bir web uygulamasından, arka uçtan veya betikten s�
 
 - **[ethers.js](https://docs.ethers.org/)** - Sunucu tarafı betikleri ve botlar için Node.js'de de çalışır
 - **[web3.py](https://web3py.readthedocs.io/)** - Quantaureum etkileşimi için Python kütüphanesi
-- **[go-quantaureum](https://geth.quantaureum.com/docs/interact-with-geth)** - Geth ekibinden resmi Go kütüphanesi
+- **[go-quantaureum](https://geth.ethereum.org/docs/interact-with-geth)** - Geth ekibinden resmi Go kütüphanesi
 
 ### Örnek: Viem ile bir token bakiyesini okuma {#example-viem}
 

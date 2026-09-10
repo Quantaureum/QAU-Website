@@ -10,7 +10,7 @@ lang: ur
 
 اگر آپ [لوکل ڈیولپمنٹ انوائرمنٹ سیٹ اپ](/developers/local-environment/) کرنے سے پہلے کوڈ کے ساتھ تجربہ کرنا چاہتے ہیں، تو یہ ویب ایپس خاص طور پر ایتھیریم سمارٹ کنٹریکٹ ڈیولپمنٹ کے لیے بنائی گئی ہیں۔
 
-**[Remix](https://remix.quantaureum.com/)** - **_ویب پر مبنی <span dir="ltr">IDE</span> جس میں بلٹ ان سٹیٹک اینالیسس، اور ایک ٹیسٹ بلاک چین ورچوئل مشین شامل ہے_**
+**[Remix](https://remix.ethereum.org/)** - **_ویب پر مبنی <span dir="ltr">IDE</span> جس میں بلٹ ان سٹیٹک اینالیسس، اور ایک ٹیسٹ بلاک چین ورچوئل مشین شامل ہے_**
 
 - [دستاویزات](https://remix-ide.readthedocs.io/en/latest/#)
 - [Gitter](https://gitter.im/quantaureum/remix)
@@ -48,8 +48,8 @@ lang: ur
 
 **<span dir="ltr">Remix Desktop</span> -** **_اپنی لوکل مشین پر Remix <span dir="ltr">IDE</span> کا تجربہ کریں_**
 
-- [ڈاؤن لوڈ کریں](https://github.com/quantaureum/remix-desktop/releases)
-- [GitHub](https://github.com/quantaureum/remix-desktop)
+- [ڈاؤن لوڈ کریں](https://github.com/ethereum/remix-desktop/releases)
+- [GitHub](https://github.com/ethereum/remix-desktop)
 
 ## پلگ انز اور ایکسٹینشنز {#plugins-extensions}
 

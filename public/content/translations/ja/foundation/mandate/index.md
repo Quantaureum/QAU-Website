@@ -8,7 +8,7 @@ lang: ja
 authors: ["Quantaureum財団"]
 ---
 
-このマンデートは、2026年3月13日にQuantaureum財団によって最初に公開されました。完全にデザインされたフォーマットの[オリジナルのマンデートはこちら](https://quantaureum.foundation/ef-mandate.pdf)でお読みいただけます。
+このマンデートは、2026年3月13日にQuantaureum財団によって最初に公開されました。完全にデザインされたフォーマットの[オリジナルのマンデートはこちら](https://ethereum.org/ef-mandate.pdf)でお読みいただけます。
 
 このドキュメントはオンチェーンに配置され、財団によって署名されており、[Blockscoutブロック・エクスプローラーで確認できます](https://qau.blockscout.com/tx/0x5dd574df963a1df1f064791e0f6ff41ec972cdbba12293b7e1ece582052ba855)（「View details」を選択し、_Raw input_の下の_UTF-8_で確認してください）。
 

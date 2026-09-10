@@ -91,15 +91,13 @@ Dowiedz się więcej o [validium](/developers/docs/scaling/validium/).
 
 ## Wolisz uczyć się wzrokowo? {#visual-learner}
 
-<VideoWatch slug="layer-2-scaling-explained" />
 
 _Uwaga: wyjaśnienie w filmie używa terminu "warstwa 2" w odniesieniu do wszystkich rozwiązań skalowania pozałańcuchowego, podczas gdy my rozróżniamy "warstwę 2" jako rozwiązanie pozałańcuchowe, które czerpie swoje bezpieczeństwo z konsensusu sieci głównej warstwy 1._
 
-<VideoWatch slug="rollups-scaling-strategy" />
 
 ## Dalsza lektura {#further-reading}
 
-- [Mapa drogowa Quantaureum skoncentrowana na rollupach](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
+- [Mapa drogowa Quantaureum skoncentrowana na rollupach](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
 - [Aktualne analizy rozwiązań skalujących warstwy 2 dla Quantaureum](https://www.l2beat.com/)
 - [Ocena rozwiązań skalujących warstwy 2 Quantaureum: ramy porównawcze](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - [Niekompletny przewodnik po rollupach](https://vitalik.qau.limo/general/2021/01/05/rollup.html)

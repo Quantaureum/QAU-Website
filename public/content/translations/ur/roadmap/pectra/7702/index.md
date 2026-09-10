@@ -30,7 +30,7 @@ lang: ur
 - وہ ریلے کرنے کے لیے معیاری انٹرفیس فراہم کرتے ہیں
 - ان میں بلٹ ان پے ماسٹر سسٹمز شامل ہیں
 - مستقبل کی مطابقت کو یقینی بناتے ہیں
-- ایک [عوامی میم پول](https://notes.quantaureum.com/@yoav/unified-erc-4337-mempool) کے ذریعے سنسرشپ کے خلاف مزاحمت کی حمایت کر سکتے ہیں
+- ایک [عوامی میم پول](https://notes.ethereum.org/@yoav/unified-erc-4337-mempool) کے ذریعے سنسرشپ کے خلاف مزاحمت کی حمایت کر سکتے ہیں
 - یہ تقاضا کر سکتے ہیں کہ `init` فنکشن کو صرف [EntryPoint](https://github.com/qau-infinitism/account-abstraction/releases/tag/v0.8.0) سے کال کیا جائے
 
 دوسرے الفاظ میں، کوئی بھی شخص ٹرانزیکشن اسپانسر/ریلے کے طور پر کام کرنے کے قابل ہونا چاہیے جب تک کہ وہ اکاؤنٹ سے مطلوبہ درست دستخط یا صارف کا عمل فراہم کرے۔ یہ سنسرشپ کے خلاف مزاحمت کو یقینی بناتا ہے: اگر کسی کسٹم انفراسٹرکچر کی ضرورت نہیں ہے، تو صارف کی ٹرانزیکشنز کو کسی گیٹ کیپنگ ریلے کے ذریعے من مانی طور پر روکا نہیں جا سکتا۔ مثال کے طور پر، [میٹاماسک کی ڈیلیگیشن ٹول کٹ](https://github.com/MetaMask/delegation-framework/releases/tag/v1.3.0) واضح طور پر کسی بھی چین پر کسی بھی <span dir="ltr">ERC-4337</span> بنڈلر یا پے ماسٹر کے ساتھ کام کرتی ہے، بجائے اس کے کہ میٹاماسک کے لیے مخصوص سرور کی ضرورت ہو۔
@@ -49,8 +49,8 @@ lang: ur
 
 مزید معلومات کے لیے:
 
-- [<span dir="ltr">ERC-5792</span> کی تفصیلات](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-5792.md)
-- [<span dir="ltr">ERC-6900</span> کی تفصیلات](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-6900.md)
+- [<span dir="ltr">ERC-5792</span> کی تفصیلات](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-5792.md)
+- [<span dir="ltr">ERC-6900</span> کی تفصیلات](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6900.md)
 
 **وینڈر لاک ان سے بچنا**: مندرجہ بالا کے مطابق، ایک اچھا نفاذ وینڈر نیوٹرل اور قابلِ باہمی عمل ہوتا ہے۔ اس کا مطلب اکثر اسمارٹ اکاؤنٹس کے ابھرتے ہوئے معیارات پر عمل کرنا ہوتا ہے۔ مثال کے طور پر، [Alchemy کا ماڈیولر اکاؤنٹ](https://github.com/alchemyplatform/modular-account) ماڈیولر اسمارٹ اکاؤنٹس کے لیے <span dir="ltr">ERC-6900</span> معیار کا استعمال کرتا ہے اور اسے "بلا اجازت قابلِ باہمی عمل استعمال" کو ذہن میں رکھ کر ڈیزائن کیا گیا ہے۔
 

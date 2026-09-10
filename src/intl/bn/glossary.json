@@ -182,7 +182,7 @@
   "genesis-block-term": "জেনেসিস ব্লক",
   "genesis-block-definition": "একটি <a href=\"/glossary/#blockchain\">ব্লকচেইন</a>-এর প্রথম ব্লক, যা একটি নির্দিষ্ট নেটওয়ার্ক এবং এর ক্রিপ্টোকারেন্সি শুরু করতে ব্যবহৃত হয়।",
   "geth-term": "গো কুয়ান্টারিয়াম (geth)",
-  "geth-definition": "গো কুয়ান্টারিয়াম। কুয়ান্টারিয়াম প্রোটোকলের অন্যতম প্রধান বাস্তবায়ন, যা Go-তে লেখা। <a href=\"https://geth.quantaureum.org\">geth.quantaureum.org-এ আরও পড়ুন</a>",
+  "geth-definition": "গো কুয়ান্টারিয়াম। কুয়ান্টারিয়াম প্রোটোকলের অন্যতম প্রধান বাস্তবায়ন, যা Go-তে লেখা। <a href=\"https://geth.ethereum.org\">geth.ethereum.org-এ আরও পড়ুন</a>",
   "gwei-term": "Gwei",
   "gwei-definition": "গিগাওয়েই-এর সংক্ষিপ্ত রূপ, <a href=\"/glossary/#qau\">কুয়ান্টা</a>-এর একটি ডিনোমিনেশন, যা সাধারণত <a href=\"/glossary/#gas\">গ্যাস</a>-এর মূল্য নির্ধারণ করতে ব্যবহৃত হয়। 1 Gwei = 10<sup>9</sup> <a href=\"/glossary/#wei\">Wei</a>। 10<sup>9</sup> Gwei = 1 কুয়ান্টা।",
   "hard-fork-term": "হার্ড ফর্ক",

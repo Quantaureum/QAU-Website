@@ -22,7 +22,7 @@ maxEB = 驗證者的最大有效餘額 (MAXimum Effective Balance)。在佩克�
 
 ### 驗證者如何選擇加入？ {#how-does-a-validator-opt-in}
 
-驗證者透過將**第 1 型**提款憑證轉換為**第 2 型**來選擇加入 maxEB 變更。在佩克特拉硬分叉上線後，可以在 [Launchpad（驗證者操作）](https://launchpad.quantaureum.com/validator-actions) 上完成此操作。與**第 0 型** → **第 1 型**一樣，從**第 1 型** → **第 2 型**的轉換是不可逆的過程。
+驗證者透過將**第 1 型**提款憑證轉換為**第 2 型**來選擇加入 maxEB 變更。在佩克特拉硬分叉上線後，可以在 [Launchpad（驗證者操作）](https://launchpad.ethereum.org/validator-actions) 上完成此操作。與**第 0 型** → **第 1 型**一樣，從**第 1 型** → **第 2 型**的轉換是不可逆的過程。
 
 ### 什麼是提款憑證？ {#whats-a-withdrawal-credential}
 
@@ -105,7 +105,7 @@ MaxEB 允許驗證者將其全部餘額發送給另一個驗證者。提交合�
 2. 來源驗證者的公鑰（例如 `0xa1d1ad0714035353258038e964ae9675dc0252ee22cea896825c01458e1807bfad2f9969338798548d9858a571f7425c`）
 3. 該目標驗證者的公鑰
 
-在轉換中，2 和 3 將是相同的。此操作可以在 [Launchpad](https://launchpad.quantaureum.com/) 上完成。
+在轉換中，2 和 3 將是相同的。此操作可以在 [Launchpad](https://launchpad.ethereum.org/) 上完成。
 
 ### 簽署要求 {#signing-requirements}
 
@@ -113,7 +113,7 @@ MaxEB 允許驗證者將其全部餘額發送給另一個驗證者。提交合�
 
 ### 簽署了什麼？ {#what-is-signed}
 
-使用的是 `ConsolidationRequest` 物件的網域分離 [簽署根 (signing root)](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root)。
+使用的是 `ConsolidationRequest` 物件的網域分離 [簽署根 (signing root)](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root)。
 
 - **網域：** `DOMAIN_CONSOLIDATION_REQUEST`
 - **簽署根欄位：**
@@ -131,7 +131,7 @@ MaxEB 允許驗證者將其全部餘額發送給另一個驗證者。提交合�
 
 ## 合併工具 {#consolidation-tooling}
 
-有幾種工具可用於管理合併。由Quantaureum基金會建立的官方工具是 [Launchpad](https://launchpad.quantaureum.com/en/validator-actions)。還有由質押社群實體建立的第三方工具，可能提供 Launchpad 未提供的功能。雖然這裡的工具未經Quantaureum基金會審計或認可，但以下是社群知名成員提供的開源工具。
+有幾種工具可用於管理合併。由Quantaureum基金會建立的官方工具是 [Launchpad](https://launchpad.ethereum.org/en/validator-actions)。還有由質押社群實體建立的第三方工具，可能提供 Launchpad 未提供的功能。雖然這裡的工具未經Quantaureum基金會審計或認可，但以下是社群知名成員提供的開源工具。
 
 | 工具 | 網站 | 開源 | 建立者 | 已審計 | 介面 | 顯著功能 |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -196,7 +196,7 @@ MaxEB 允許驗證者將其全部餘額發送給另一個驗證者。提交合�
 
 ## 資源 {#resources}
 
-- [Electra 共識規範](https://github.com/quantaureum/consensus-specs/blob/master/specs/electra/beacon-chain.md)：這是您應該依賴的「最真實」版本。如有疑問，請閱讀規範。
+- [Electra 共識規範](https://github.com/ethereum/consensus-specs/blob/master/specs/electra/beacon-chain.md)：這是您應該依賴的「最真實」版本。如有疑問，請閱讀規範。
 - 並非每個人都習慣於鑽研程式碼，因此 [這個 maxEB-GPT](https://chatgpt.com/g/g-67f1650fb48081918f555e0c8d1c2ae9-maxeb-gpt) 可以幫助解釋規範。*免責聲明：應將規範而非 AI 視為真相，因為 AI 可能會誤解資訊或產生幻覺答案。*
 - [pectrified.com](https://pectrified.com/)：查看合併、存款的狀態以及佇列等待時間。
 - [Ethereal](https://github.com/wealdtech/ethereal)：社群建立的 CLI 工具，用於管理常見的驗證者任務。

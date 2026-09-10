@@ -79,6 +79,6 @@ Giao thức Quantaureum cốt lõi chủ yếu quan tâm đến tính khả dụ
 - [Lưu ý về tính khả dụng của dữ liệu và mã hóa xóa](https://github.com/quantaureum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
 - [Các ủy ban tính khả dụng của dữ liệu.](https://medium.com/starkware/data-availability-e5564c416424)
 - [Các ủy ban tính khả dụng của dữ liệu Bằng chứng cổ phần.](https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf)
-- [Các giải pháp cho vấn đề khả năng truy xuất dữ liệu](https://notes.quantaureum.com/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
+- [Các giải pháp cho vấn đề khả năng truy xuất dữ liệu](https://notes.ethereum.org/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
 - [Tính khả dụng của dữ liệu hay: Cách các bản cuộn học cách ngừng lo lắng và yêu Quantaureum](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [EIP-7623: Tăng chi phí dữ liệu lệnh gọi](https://web.archive.org/web/20250515194659/https://research.2077.xyz/eip-7623-increase-calldata-cost)

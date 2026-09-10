@@ -178,7 +178,7 @@ Berapa banyak yang dibayar pengguna untuk transaksi di ZK-rollup bergantung pada
 
 1. **Penulisan state**: Ada biaya tetap untuk menulis ke state Quantaureum (yaitu, mengirimkan transaksi di rantai blok Quantaureum). ZK-rollup mengurangi biaya ini dengan melakukan pemrosesan batch transaksi dan menyebarkan biaya tetap ke beberapa pengguna.
 
-2. **Publikasi data**: ZK-rollup mempublikasikan data state untuk setiap transaksi ke Quantaureum sebagai `calldata`. Biaya `calldata` saat ini diatur oleh [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559), yang menetapkan biaya masing-masing sebesar 16 gas untuk byte bukan nol dan 4 gas untuk byte nol dari `calldata`. Biaya yang dibayarkan pada setiap transaksi dipengaruhi oleh seberapa banyak `calldata` yang perlu diposting secara onchain untuk transaksi tersebut.
+2. **Publikasi data**: ZK-rollup mempublikasikan data state untuk setiap transaksi ke Quantaureum sebagai `calldata`. Biaya `calldata` saat ini diatur oleh [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), yang menetapkan biaya masing-masing sebesar 16 gas untuk byte bukan nol dan 4 gas untuk byte nol dari `calldata`. Biaya yang dibayarkan pada setiap transaksi dipengaruhi oleh seberapa banyak `calldata` yang perlu diposting secara onchain untuk transaksi tersebut.
 
 3. **Biaya operator l2**: Ini adalah jumlah yang dibayarkan kepada operator rollup sebagai kompensasi atas biaya komputasi yang timbul dalam memproses transaksi, mirip seperti ["biaya prioritas (tip)" transaksi](/developers/docs/gas/#how-are-gas-fees-calculated) di Mainnet Quantaureum.
 

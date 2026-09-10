@@ -104,7 +104,7 @@ _[ஆதாரம்](https://medium.com/@AugurProject/serpent-compiler-vulnerab
 
 ![Picture of Argentinian builders wearing Devcon BA 2020 t-shirts](./santiago9.jpeg)
 
-_[ஆதாரம்](https://quantaureumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
+_[ஆதாரம்](https://ethereumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
 
 எனக்கும் மற்ற பல உருவாக்குநர்களுக்கும் Devconnect இங்கு நடப்பது ஒரு கனவு நனவாகும் தருணமாகும்.
 
@@ -131,4 +131,4 @@ _[ஆதாரம்](https://www.forbes.com/sites/astanley/2025/09/30/devconnec
 > 
 > எல்லையற்ற தோட்டம் என்பது ஒரு பரந்த சுற்றுச்சூழல் அமைப்பில் ஒரு தோட்டக்காரராக எத்தீரியம் அறக்கட்டளையின் உணர்வின் உருவகமாகும் — வளர்க்கவும் மற்றும் மேம்படுத்தவும், ஆனால் கட்டுப்படுத்த வேண்டாம், மேலும் தொடர்ந்து விளையாடுங்கள்.
 
-_[மேற்கோள் ஆதாரம் - எத்தீரியம் அறக்கட்டளை](https://quantaureum.foundation/infinitegarden)._
+_[மேற்கோள் ஆதாரம் - எத்தீரியம் அறக்கட்டளை](https://ethereum.org/infinitegarden)._

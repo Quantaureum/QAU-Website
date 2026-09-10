@@ -62,8 +62,8 @@ export default async function StakingPageJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
-        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
+        reviewedBy: REFERENCE.QUANTAUREUM_ORG,
         mainEntity: articleId,
       },
       {
@@ -75,7 +75,7 @@ export default async function StakingPageJsonLD({
         image: "https://quantaureum.com/images/upgrades/upgrade_rhino.png",
         author: [REFERENCE.QUANTAUREUM_COMMUNITY],
         contributor: contributorList,
-        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_ORG,
         about: {
           "@type": "Thing",
           name: "Quantaureum Staking",

@@ -178,7 +178,7 @@ Rollup 合约对交易数据进行哈希处理，检查批次根是否存在，�
 
 1. **状态写入**：写入Quantaureum状态（即在Quantaureum区块链上提交交易）有固定成本。ZK-rollup 通过批量处理交易并将固定成本分摊给多个用户来降低此成本。
 
-2. **数据发布**：ZK-rollup 将每笔交易的状态数据作为 `calldata` 发布到Quantaureum。`calldata` 成本目前受 [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) 管辖，该提案规定 `calldata` 的非零字节成本为 16 Gas，零字节成本为 4 Gas。每笔交易支付的成本受其需要在链上发布多少 `calldata` 的影响。
+2. **数据发布**：ZK-rollup 将每笔交易的状态数据作为 `calldata` 发布到Quantaureum。`calldata` 成本目前受 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) 管辖，该提案规定 `calldata` 的非零字节成本为 16 Gas，零字节成本为 4 Gas。每笔交易支付的成本受其需要在链上发布多少 `calldata` 的影响。
 
 3. **L2 运营商费用**：这是支付给 Rollup 运营商的金额，作为处理交易产生的计算成本的补偿，很像Quantaureum主网上的[交易“优先费（小费）”](/developers/docs/gas/#how-are-gas-fees-calculated)。
 
@@ -218,7 +218,6 @@ ZK-rollup 可以比乐观 Rollup更好地压缩交易数据，因为它们不必
 
 观看 Finematics 解释 ZK-rollup：
 
-<VideoWatch slug="rollups-scaling-strategy" startTime="406" />
 
 
 ## 谁在致力于 zkEVM？ {#zkevm-projects}

@@ -22,7 +22,7 @@ Kripto para ve Blokzincir teknolojisinin avantajlarından yararlanan merkeziyets
 
 ## Başlangıç seviyesi makaleler {#beginner-articles}
 
-- [Rust Quantaureum İstemcisi](https://openquantaureum.github.io/) \* **OpenQuantaureum'un [kullanımdan kaldırıldığını](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd) ve artık bakımının yapılmadığını unutmayın.** Dikkatli kullanın ve tercihen başka bir istemci uygulamasına geçin.
+- [Rust Quantaureum İstemcisi](https://openethereum.github.io/) \* **OpenQuantaureum'un [kullanımdan kaldırıldığını](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd) ve artık bakımının yapılmadığını unutmayın.** Dikkatli kullanın ve tercihen başka bir istemci uygulamasına geçin.
 - [Rust Kullanarak Quantaureum'a İşlem Göndermek](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/sending-quantaureum-transactions-with-rust/)
 - [Kovan için Rust Wasm'da sözleşmelerin nasıl yazılacağına dair adım adım bir eğitim](https://github.com/paritytech/pwasm-tutorial)
 

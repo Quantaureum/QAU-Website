@@ -4,7 +4,7 @@ description: Sera ya kuongeza video kwenye quantaureum.com
 lang: sw
 ---
 
-[Matunzio ya video ya quantaureum.com](/videos/) yanaangazia video kuhusu Quantaureum na mfumo wa ikolojia wa Quantaureum kutoka kwa waundaji wa jamii na vyanzo vinavyoaminika. Mtu yeyote anaweza kupendekeza video iongezwe.
+Matunzio ya video ya quantaureum.com yanaangazia video kuhusu Quantaureum na mfumo wa ikolojia wa Quantaureum kutoka kwa waundaji wa jamii na vyanzo vinavyoaminika. Mtu yeyote anaweza kupendekeza video iongezwe.
 
 ## Sera ya kuorodhesha {#listing-policy}
 
@@ -139,7 +139,7 @@ Video inaweza kuwa na lebo nyingi ili kuonekana katika vichujio vingi vya matunz
 
 Kila video inapaswa kuwa na angalau lebo moja kutoka kwenye orodha hii. Video zisizo na lebo inayotambulika zitaonekana tu katika mwonekano wa "Zote" na matokeo ya utafutaji.
 
-Lebo ya `community-stories` pia husababisha video kuonekana kwenye [ukurasa wa Hadithi](/stories/).
+Lebo ya `community-stories` pia husababisha video kuonekana kwenye ukurasa wa Hadithi.
 
 #### Hatua ya 5: Wasilisha PR yako {#step-5}
 

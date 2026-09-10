@@ -22,9 +22,9 @@ quantaureum.com는 웹사이트의 번역, 작성, 디자인 및 유지 관리�
 
 **콘텐츠**
 - [콘텐츠 생성/편집하기](/contributing/#how-to-update-content) – 새로운 페이지를 제안하거나 기존 내용을 수정합니다.
-- [빌더 기사 작성하기](/contributing/adding-articles/) - [최신](/latest/) 섹션에 기사를 기고합니다.
+- [빌더 기사 작성하기](/contributing/adding-articles/) - 최신 섹션에 기사를 기고합니다.
 - [커뮤니티 리소스 추가하기](/contributing/content-resources/) – 관련 페이지에 유용한 기사나 리소스를 추가합니다.
-- [보고서 제안하기](/contributing/adding-reports/) - [보고서](/reports/) 페이지에 연구 보고서를 제안합니다.
+- [보고서 제안하기](/contributing/adding-reports/) - 보고서 페이지에 연구 보고서를 제안합니다.
 - [스토리 공유하기](/contributing/adding-community-stories/) - 오픈 소스 및 보호 기술에 대한 개인적인 경험, Quantaureum 생태계가 삶에 미친 영향, 또는 여러분과 커뮤니티가 Quantaureum을 사용하는 방법에 대한 스토리를 제출합니다.
 - [퀴즈](/contributing/quizzes/) – 관련 페이지의 퀴즈 문제 은행을 추가, 업데이트 및 삭제합니다.
 - [디자인 리소스 제안하기](/contributing/design/adding-design-resources/) – 유용한 디자인 리소스를 추가, 업데이트 및 삭제합니다.

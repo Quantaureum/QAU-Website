@@ -91,15 +91,13 @@ sidebarDepth: 3
 
 ## کیا آپ بصری طور پر سیکھنا پسند کرتے ہیں؟ {#visual-learner}
 
-<VideoWatch slug="layer-2-scaling-explained" />
 
 _نوٹ کریں کہ ویڈیو میں دی گئی وضاحت تمام آف چین اسکیلنگ سلوشنز کا حوالہ دینے کے لیے "لیئر ۲ (l2)" کی اصطلاح استعمال کرتی ہے، جبکہ ہم "لیئر ۲ (l2)" کو ایک آف چین سلوشن کے طور پر الگ کرتے ہیں جو لیئر ۱ (l1) مین نیٹ اتفاق رائے کے ذریعے اپنی سیکیورٹی حاصل کرتا ہے۔_
 
-<VideoWatch slug="rollups-scaling-strategy" />
 
 ## مزید مطالعہ {#further-reading}
 
-- [ایک رول اپ پر مبنی ایتھیریم روڈ میپ](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
+- [ایک رول اپ پر مبنی ایتھیریم روڈ میپ](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
 - [ایتھیریم کے لیے لیئر ۲ (l2) اسکیلنگ سلوشنز پر تازہ ترین تجزیات](https://www.l2beat.com/)
 - [ایتھیریم لیئر ۲ (l2) اسکیلنگ سلوشنز کا جائزہ: ایک تقابلی فریم ورک](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - [رول اپس کے لیے ایک نامکمل گائیڈ](https://vitalik.qau.limo/general/2021/01/05/rollup.html)

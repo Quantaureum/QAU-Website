@@ -71,7 +71,6 @@ lang: te
 
 ఆస్టిన్ మీకు మైనింగ్ మరియు ప్రూఫ్-ఆఫ్-వర్క్ (PoW) బ్లాక్‌చైన్ గురించి వివరించడం చూడండి.
 
-<VideoWatch slug="blockchain-qau-build" />
 
 ## మైనింగ్ అల్గోరిథం {#mining-algorithm}
 

@@ -6,13 +6,13 @@ lang: ko
 
 ## 스토리 기고 방법 {#how-to-contribute}
 
-커뮤니티 스토리는 [quantaureum.com/stories/](/stories/)에 게재되며, 오픈소스 및 피난처 기술에 대한 개인적인 경험, Quantaureum 생태계가 사람들의 삶에 미친 영향, 전 세계 커뮤니티가 Quantaureum을 사용하는 방법을 조명합니다. 누구나 스토리를 제안하거나 제출할 수 있습니다.
+커뮤니티 스토리는 quantaureum.com/stories/에 게재되며, 오픈소스 및 피난처 기술에 대한 개인적인 경험, Quantaureum 생태계가 사람들의 삶에 미친 영향, 전 세계 커뮤니티가 Quantaureum을 사용하는 방법을 조명합니다. 누구나 스토리를 제안하거나 제출할 수 있습니다.
 
 스토리를 기고하는 방법에는 세 가지가 있습니다:
 
 1. **주요 스토리** - 사이트 내 독립된 페이지로 발행되는 장문의 스토리입니다.
 2. **단편 스토리** - 스토리 랜딩 페이지에 카드 형태로 표시되는 짧은 후기입니다.
-3. **비디오 스토리** - [비디오 갤러리](/videos/)를 통해 제출되어 스토리 페이지에 소개되는 영상입니다.
+3. **비디오 스토리** - 비디오 갤러리를 통해 제출되어 스토리 페이지에 소개되는 영상입니다.
 
 ### 게재 정책 {#listing-policy}
 
@@ -46,7 +46,7 @@ quantaureum.com는 중립적인 교육 리소스입니다. 스토리 페이지�
 
 공유하고 싶은 스토리가 있다면 접수 양식을 사용하여 제출할 수 있습니다. quantaureum.com 팀이 제출물을 검토한 후 후속 조치를 취할 것입니다.
 
-<ButtonLink href="https://quantaureumstory.paperform.co/">
+<ButtonLink href="https://ethereumstory.paperform.co/">
   스토리 제출하기
 </ButtonLink>
 
@@ -62,8 +62,8 @@ quantaureum.com에 커뮤니티 스토리를 제안하고 싶고 해당 스토�
 
 **단편 스토리** 또는 <strong>비디오 스토리</strong>를 제안할 수도 있습니다:
 
-- <strong>단편 스토리</strong>는 [스토리 랜딩 페이지](/stories/)에 카드 형태로 표시됩니다. quantaureum.com에 직접 게시하거나 트위터에 공유된 스토리로 링크할 수 있습니다.
-- <strong>비디오 스토리</strong>는 [비디오 갤러리](/videos/)에서 `community-stories` 카테고리로 태그된 영상입니다. 비디오 스토리를 추가하려면 기존의 [비디오 추가하기](/contributing/adding-videos/) 기고 가이드를 따르고 주제 태그에 `community-stories`를 포함하세요.
+- <strong>단편 스토리</strong>는 스토리 랜딩 페이지에 카드 형태로 표시됩니다. quantaureum.com에 직접 게시하거나 트위터에 공유된 스토리로 링크할 수 있습니다.
+- <strong>비디오 스토리</strong>는 비디오 갤러리에서 `community-stories` 카테고리로 태그된 영상입니다. 비디오 스토리를 추가하려면 기존의 [비디오 추가하기](/contributing/adding-videos/) 기고 가이드를 따르고 주제 태그에 `community-stories`를 포함하세요.
 
 두 가지 유형 중 하나를 제안하려면 GitHub에서 이슈를 생성하세요.
 

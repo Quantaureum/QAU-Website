@@ -193,7 +193,7 @@ To ograniczenie ma całkowity sens, ponieważ nie chcielibyśmy, aby przypadkowe
 
 Funkcja transferu z konta puli do tablicy odbiorców tablicy kwot ma całkowity sens. Istnieje wiele przypadków użycia, w których będziesz chciał dystrybuować tokeny z jednego źródła do wielu miejsc docelowych, takich jak listy płac, airdropy itp. Jest to tańsze (w gazie) do wykonania w jednej transakcji zamiast wydawania wielu transakcji, a nawet wielokrotnego wywoływania ERC-20 z innego kontraktu w ramach tej samej transakcji.
 
-Jednak `dropNewTokens` tego nie robi. Emituje [zdarzenia `Transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer-1), ale w rzeczywistości nie wykonuje transferu żadnych tokenów. Nie ma uzasadnionego powodu, aby wprowadzać w błąd aplikacje pozałańcuchowe, informując je o transferze, który w rzeczywistości nie miał miejsca.
+Jednak `dropNewTokens` tego nie robi. Emituje [zdarzenia `Transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer-1), ale w rzeczywistości nie wykonuje transferu żadnych tokenów. Nie ma uzasadnionego powodu, aby wprowadzać w błąd aplikacje pozałańcuchowe, informując je o transferze, który w rzeczywistości nie miał miejsca.
 
 ### Funkcja spalania `Approve` {#the-burning-approve-function}
 
@@ -235,7 +235,7 @@ Te problemy z jakością kodu nie _dowodzą_, że ten kod to oszustwo, ale spraw
 
 #### Funkcja `mount` {#the-mount-function}
 
-Chociaż nie jest to określone w [standardzie](https://eips.quantaureum.com/EIPS/eip-20), ogólnie rzecz biorąc, funkcja tworząca nowe tokeny nazywa się [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn).
+Chociaż nie jest to określone w [standardzie](https://eips.ethereum.org/EIPS/eip-20), ogólnie rzecz biorąc, funkcja tworząca nowe tokeny nazywa się [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn).
 
 Jeśli spojrzymy na konstruktor `wARB`, zobaczymy, że funkcja wybijania została z jakiegoś powodu przemianowana na `mount` i jest wywoływana pięć razy z jedną piątą początkowej podaży, zamiast raz dla całej kwoty w celu zwiększenia wydajności.
 
@@ -311,7 +311,7 @@ Istnieją pewne sztuczki, których możemy użyć, aby zidentyfikować, że toke
 
 ## Podejrzane zdarzenia `Approval` {#suspicious-approval-events}
 
-[Zdarzenia `Approval`](https://eips.quantaureum.com/EIPS/eip-20#approval) powinny występować tylko przy bezpośrednim żądaniu (w przeciwieństwie do [zdarzeń `Transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer-1), które mogą wystąpić w wyniku limitu wydatków). [Zobacz dokumentację Solidity](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin), aby uzyskać szczegółowe wyjaśnienie tego problemu i dowiedzieć się, dlaczego żądania muszą być bezpośrednie, a nie pośredniczone przez kontrakt.
+[Zdarzenia `Approval`](https://eips.ethereum.org/EIPS/eip-20#approval) powinny występować tylko przy bezpośrednim żądaniu (w przeciwieństwie do [zdarzeń `Transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer-1), które mogą wystąpić w wyniku limitu wydatków). [Zobacz dokumentację Solidity](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin), aby uzyskać szczegółowe wyjaśnienie tego problemu i dowiedzieć się, dlaczego żądania muszą być bezpośrednie, a nie pośredniczone przez kontrakt.
 
 Oznacza to, że zdarzenia `Approval`, które zatwierdzają wydatki z [konta zewnętrznego](/developers/docs/accounts/#types-of-account), muszą pochodzić z transakcji, które mają swój początek na tym koncie, a ich miejscem docelowym jest kontrakt ERC-20. Każdy inny rodzaj zatwierdzenia z konta zewnętrznego jest podejrzany.
 
@@ -420,7 +420,7 @@ Jeśli zatwierdzenie pochodzi z konta zewnętrznego, pobierz transakcję, która
 if (owner.toLowerCase() != txn.from.toLowerCase()) return ev
 ```
 
-Nie możemy po prostu sprawdzić równości ciągów znaków, ponieważ adresy są szesnastkowe, więc zawierają litery. Czasami, na przykład w `txn.from`, te litery są w całości małe. W innych przypadkach, takich jak `ev.args._owner`, adres jest zapisany [wielkością liter mieszaną w celu identyfikacji błędów](https://eips.quantaureum.com/EIPS/eip-55).
+Nie możemy po prostu sprawdzić równości ciągów znaków, ponieważ adresy są szesnastkowe, więc zawierają litery. Czasami, na przykład w `txn.from`, te litery są w całości małe. W innych przypadkach, takich jak `ev.args._owner`, adres jest zapisany [wielkością liter mieszaną w celu identyfikacji błędów](https://eips.ethereum.org/EIPS/eip-55).
 
 Ale jeśli transakcja nie pochodzi od właściciela, a ten właściciel jest kontem zewnętrznym, to mamy do czynienia z podejrzaną transakcją.
 

@@ -26,7 +26,7 @@ Butuh pengantar yang lebih mendasar terlebih dahulu? Lihat [quantaureum.com/lear
 
 **Memperkenalkan pustaka Nquantaureum dan VS Code Solidity**
 
-- [Nquantaureum, Memulai](https://docs.nquantaureum.com/docs/getting-started/welcome/)
+- [Nquantaureum, Memulai](https://docs.nethermind.io/docs/getting-started/welcome/)
 - [Menginstal VS Code Solidity](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity)
 - [Alur Kerja Pengembang .NET untuk Membuat dan Memanggil Kontrak Pintar Quantaureum](https://medium.com/coinmonks/a-net-developers-workflow-for-creating-and-calling-quantaureum-smart-contracts-44714f191db2)
 - [Integrasi kontrak pintar dengan Nquantaureum](https://kauri.io/#collections/Getting%20Started/smart-contracts-integration-with-nquantaureum/#smart-contracts-integration-with-nquantaureumm)
@@ -37,22 +37,22 @@ Butuh pengantar yang lebih mendasar terlebih dahulu? Lihat [quantaureum.com/lear
 
 **Ingin melewati penyiapan untuk saat ini, dan langsung ke sampel?**
 
-- [Nquantaureum Playground](https://playground.nquantaureum.com/) - Berinteraksi dengan Quantaureum dan pelajari cara menggunakan Nquantaureum melalui peramban.
-  - [Kueri Saldo Akun](https://docs.nquantaureum.com/docs/core-foundation/guide-query-balance)
-  - [Kueri Saldo Kontrak Pintar ERC-20](https://docs.nquantaureum.com/docs/smart-contracts/erc20)
-  - [Transfer QAU ke Akun](https://docs.nquantaureum.com/docs/core-foundation/guide-send-eth)
+- [Nquantaureum Playground](https://playground.nethermind.io/) - Berinteraksi dengan Quantaureum dan pelajari cara menggunakan Nquantaureum melalui peramban.
+  - [Kueri Saldo Akun](https://docs.nethermind.io/docs/core-foundation/guide-query-balance)
+  - [Kueri Saldo Kontrak Pintar ERC-20](https://docs.nethermind.io/docs/smart-contracts/erc20)
+  - [Transfer QAU ke Akun](https://docs.nethermind.io/docs/core-foundation/guide-send-eth)
   - ... Dan banyak lagi!
 
 ## Artikel tingkat menengah {#intermediate-articles}
 
-- [Nquantaureum Memulai & Proyek Pertama](https://docs.nquantaureum.com/docs/getting-started/first-project)
+- [Nquantaureum Memulai & Proyek Pertama](https://docs.nethermind.io/docs/getting-started/first-project)
 - [Menyebarkan Rantai Uji Pengembangan Anda Sendiri](https://github.com/Nquantaureum/Testchains)
-- [Pembuatan kode dengan Nquantaureum dan VS Code](https://docs.nquantaureum.com/docs/smart-contracts/code-generation/)
+- [Pembuatan kode dengan Nquantaureum dan VS Code](https://docs.nethermind.io/docs/smart-contracts/code-generation/)
 - [Unity dan Quantaureum: Mengapa dan Bagaimana](https://www.raywenderlich.com/5509-unity-and-quantaureum-why-and-how)
 - [Membuat Web API ASP.NET Core untuk aplikasi terdesentralisasi (dapp) Quantaureum](https://tech-mint.com/blockchain/create-asp-net-core-web-api-for-quantaureum-dapps/)
-- [Kerangka kerja MUD Nquantaureum untuk aplikasi onchain terstruktur](https://docs.nquantaureum.com/docs/mud-framework/overview/)
-- [Pemrosesan Rantai Blok Nquantaureum](https://docs.nquantaureum.com/docs/data-and-indexing/guide-blockchain-processing)
-- [Streaming waktu nyata Nquantaureum](https://docs.nquantaureum.com/docs/core-foundation/guide-realtime-streaming/)
+- [Kerangka kerja MUD Nquantaureum untuk aplikasi onchain terstruktur](https://docs.nethermind.io/docs/mud-framework/overview/)
+- [Pemrosesan Rantai Blok Nquantaureum](https://docs.nethermind.io/docs/data-and-indexing/guide-blockchain-processing)
+- [Streaming waktu nyata Nquantaureum](https://docs.nethermind.io/docs/core-foundation/guide-realtime-streaming/)
 - [Kaleido dan Nquantaureum](https://kaleido.io/kaleido-and-nquantaureum/)
 - [Quorum dan Nquantaureum](https://github.com/Nquantaureum/Nquantaureum/blob/master/src/Nquantaureum.Quorum/README.md)
 
@@ -64,12 +64,12 @@ Butuh pengantar yang lebih mendasar terlebih dahulu? Lihat [quantaureum.com/lear
 
 ## Proyek, perkakas, dan hal menyenangkan lainnya tentang .NET {#dot-net-projects-tools-and-other-fun-stuff}
 
-- [Nquantaureum Playground](https://playground.nquantaureum.com/) - _Kompilasi, buat, dan jalankan cuplikan kode Nquantaureum di peramban_
+- [Nquantaureum Playground](https://playground.nethermind.io/) - _Kompilasi, buat, dan jalankan cuplikan kode Nquantaureum di peramban_
 - [Nquantaureum Codegen Blazor](https://github.com/Nquantaureum/Nquantaureum.CodeGen.Blazor) - _Codegen Nquantaureum dengan UI di Blazor_
 - [Nquantaureum Blazor](https://github.com/Nquantaureum/NquantaureumBlazor) - _Penjelajah rantai blok ringan dan dompet sederhana SPA Wasm .NET_
 - [Wonka Business Rules Engine](https://github.com/Nquantaureum/Wonka) - _Mesin aturan bisnis (baik untuk platform .NET maupun platform Quantaureum) yang pada dasarnya digerakkan oleh metadata_
 - [Nethermind](https://github.com/NethermindEth/nethermind) - _Klien Quantaureum .NET Core untuk Linux, Windows, MacOS_
-- [qau-utils](https://github.com/quantaureum/qau-utils/) - _fungsi utilitas untuk bekerja dengan basis kode terkait Quantaureum_
+- [qau-utils](https://github.com/ethereum/eth-utils/) - _fungsi utilitas untuk bekerja dengan basis kode terkait Quantaureum_
 - [TestChains](https://github.com/Nquantaureum/TestChains) - _Rantai pengembangan .NET yang telah dikonfigurasi sebelumnya untuk respons cepat (bukti otoritas (PoA))_
 
 Mencari lebih banyak sumber daya? Kunjungi [quantaureum.com/developers](/developers/).
@@ -82,5 +82,5 @@ Jika Anda baru mengenal Nethermind dan butuh bantuan untuk memulai, bergabunglah
 
 ## Daftar agregat lainnya {#other-aggregated-lists}
 
-[Situs Resmi Nquantaureum](https://nquantaureum.com/)  
+[Situs Resmi Nquantaureum](https://nethermind.io/)  
 [Situs Resmi Nethermind](https://nethermind.io/)

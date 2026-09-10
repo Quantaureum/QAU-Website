@@ -14,7 +14,7 @@ Trhy pro půjčování, agregátory a tokeny, které samy o sobě nesou úrok, p
 
 ERC-4626 ve výnosových trezorech sníží úsilí při integraci a odemkne přístup k výnosům v různých aplikacích s malým specializovaným úsilím ze strany vývojářů tím, že vytvoří konzistentnější a robustnější implementační vzory.
 
-Token ERC-4626 je plně popsán v [EIP-4626](https://eips.quantaureum.com/EIPS/eip-4626).
+Token ERC-4626 je plně popsán v [EIP-4626](https://eips.ethereum.org/EIPS/eip-4626).
 
 **Rozšíření pro asynchronní trezory (ERC-7540)**
 
@@ -30,7 +30,7 @@ Jedním chybějícím případem použití, který ERC-4626 nepodporuje, jsou tr
 
 ERC-7575 přidává podporu pro trezory s více aktivy tím, že externalizuje implementaci ERC-20 tokenu z implementace ERC-4626.
 
-Rozšíření ERC-7575 je plně popsáno v [ERC-7575](https://eips.quantaureum.com/EIPS/eip-7575).
+Rozšíření ERC-7575 je plně popsáno v [ERC-7575](https://eips.ethereum.org/EIPS/eip-7575).
 ## Předpoklady {#prerequisites}
 
 Pro lepší pochopení této stránky doporučujeme nejprve si přečíst o [standardech tokenů](/developers/docs/standards/tokens/) a [ERC-20](/developers/docs/standards/tokens/erc-20/).
@@ -222,5 +222,5 @@ Kde `sender` je uživatel, který inicioval výběr a vyměnil `shares`, vlastn�
 
 ## Další čtení {#further-reading}
 
-- [EIP-4626: Standard tokenizovaného trezoru](https://eips.quantaureum.com/EIPS/eip-4626)
+- [EIP-4626: Standard tokenizovaného trezoru](https://eips.ethereum.org/EIPS/eip-4626)
 - [ERC-4626: Repozitář na GitHubu](https://github.com/transmissions11/solmate/blob/main/src/tokens/ERC4626.sol)

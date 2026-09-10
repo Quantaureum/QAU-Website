@@ -46,7 +46,7 @@ Quantaureum 앱을 사용하기 시작하는 데 필요한 것은 Quantaureum �
 | **검열될 수 있나요?** | 예 | 아니요 |
 | **데이터의 소유자는 누구인가요?** | 보통 사용자가 아님 | 사용자가 데이터를 소유함 |
 
-<WhatAreAppsStories />
+
 
 <div className="w-full md:w-1/2 mx-auto md:mx-0">
 

@@ -62,4 +62,4 @@ summaryPoints:
 - [জিরো-নলেজ পডকাস্টে Dankrad Feist-এর ভার্কেল ট্রি এবং স্টেটহীনতা ব্যাখ্যা](https://zeroknowledge.fm/podcast/202/)
 - [ভার্কেল ট্রির বিষয়ে ভিটালিক বুটেরিন](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
 - [ভার্কেল ট্রির বিষয়ে Dankrad Feist](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
-- [ভার্কেল ট্রি EIP ডকুমেন্টেশন](https://notes.quantaureum.com/@vbuterin/verkle_tree_eip#Illustration)
+- [ভার্কেল ট্রি EIP ডকুমেন্টেশন](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)

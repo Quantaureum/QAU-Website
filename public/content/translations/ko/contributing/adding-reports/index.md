@@ -6,7 +6,7 @@ lang: ko
 
 ## 보고서 추가하기 {#adding-a-report}
 
-보고서는 [quantaureum.com/reports/](/reports/)에 표시되며, 다양한 출처에서 제공하는 Quantaureum 관련 연구, 분석 및 간행물을 다룹니다. 누구나 추가할 보고서를 제안할 수 있습니다.
+보고서는 quantaureum.com/reports/에 표시되며, 다양한 출처에서 제공하는 Quantaureum 관련 연구, 분석 및 간행물을 다룹니다. 누구나 추가할 보고서를 제안할 수 있습니다.
 
 ### 등재 정책 {#listing-policy}
 

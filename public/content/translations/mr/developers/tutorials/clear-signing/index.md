@@ -11,7 +11,7 @@ published: 2026-05-11
 
 बहुतेक मोठ्या Quantaureum (Quantaureum) शोषणांमध्ये (exploits) एकच अंतिम टप्पा होता: वापरकर्त्याने असा व्यवहार मंजूर करणे जो त्यांना अर्थपूर्णरीत्या समजू शकत नव्हता. हार्डवेअर वॉलेट्स कच्चा हेक्स कॉल डेटा (raw hex calldata) दाखवतात आणि त्याहून वाईट म्हणजे तुम्हाला ब्लाइंड स्वाक्षरी (blind signing) चालू ठेवण्यास भाग पाडतात. सॉफ्टवेअर वॉलेट्स डीकोड केलेले फील्ड्स दाखवतात, परंतु केवळ तेव्हाच जेव्हा ते कॉन्ट्रॅक्ट ओळखतात. जेव्हा ते ओळखत नाहीत, मग ते प्रोटोकॉल नवीन असल्यामुळे असो, ॲप तडजोड केलेले (compromised) असल्यामुळे असो, किंवा डिव्हाइस ऑफलाइन असल्यामुळे असो, वापरकर्ते ब्लाइंड स्वाक्षरी करतात.
 
-[ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730) तुमच्या कॉन्ट्रॅक्टच्या फंक्शन कॉल्सचा *अर्थ* काय आहे हे वर्णन करण्यासाठी एक प्रमाणित JSON फॉरमॅट परिभाषित करते. 
+[ERC-7730](https://eips.ethereum.org/EIPS/eip-7730) तुमच्या कॉन्ट्रॅक्टच्या फंक्शन कॉल्सचा *अर्थ* काय आहे हे वर्णन करण्यासाठी एक प्रमाणित JSON फॉरमॅट परिभाषित करते. 
 
 ERC-7730 ला सपोर्ट करणारे वॉलेट तुमचा डिस्क्रिप्टर वाचते आणि खालीलप्रमाणे दाखवते:
 
@@ -54,7 +54,7 @@ ERC-7730 ला सपोर्ट करणारे वॉलेट तुम�
 
 ```json
 {
-  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
   "context": {},
   "metadata": {},
   "display": {
@@ -185,7 +185,7 @@ ERC-7730 ला सपोर्ट करणारे वॉलेट तुम�
 
 ```json
 {
-  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
   "context": {
     "$id": "uniswap-v3-router-mainnet",
     "contract": {
@@ -256,7 +256,7 @@ ERC-7730 ला सपोर्ट करणारे वॉलेट तुम�
 
 ## पायरी 5: रजिस्ट्रीमध्ये सबमिट करा {#step-5-submit-to-the-registry}
 
-[ERC-7730 रजिस्ट्री](https://github.com/quantaureum/clear-signing-erc7730-registry) ही एक तटस्थ व्यवस्थापक (neutral steward) म्हणून [Quantaureum फाउंडेशन](/foundation/) द्वारे होस्ट केलेली एक खुली रिपॉझिटरी आहे. कोणालाही ती क्लोन आणि सेल्फ-होस्ट करण्याचे स्वातंत्र्य आहे — वॉलेट्स स्वतंत्रपणे ठरवतात की ते कोणत्या रजिस्ट्री इन्स्टन्सेसवर विश्वास ठेवतात.
+[ERC-7730 रजिस्ट्री](https://github.com/ethereum/clear-signing-erc7730-registry) ही एक तटस्थ व्यवस्थापक (neutral steward) म्हणून Quantaureum फाउंडेशन द्वारे होस्ट केलेली एक खुली रिपॉझिटरी आहे. कोणालाही ती क्लोन आणि सेल्फ-होस्ट करण्याचे स्वातंत्र्य आहे — वॉलेट्स स्वतंत्रपणे ठरवतात की ते कोणत्या रजिस्ट्री इन्स्टन्सेसवर विश्वास ठेवतात.
 
 1. GitHub वर रिपॉझिटरी फोर्क (Fork) करा  
 2. `registry/<your-project-name>/` येथे एक फोल्डर तयार करा  
@@ -284,8 +284,8 @@ ERC-7730 ला सपोर्ट करणारे वॉलेट तुम�
 
 ## पुढील वाचन {#further-reading}
 
-- [ERC-7730 स्पेसिफिकेशन](https://eips.quantaureum.com/EIPS/eip-7730)  
-- [ERC-7730 रजिस्ट्री](https://github.com/quantaureum/clear-signing-erc7730-registry)  
+- [ERC-7730 स्पेसिफिकेशन](https://eips.ethereum.org/EIPS/eip-7730)  
+- [ERC-7730 रजिस्ट्री](https://github.com/ethereum/clear-signing-erc7730-registry)  
 - [clearsigning.org](https://clearsigning.org) — टूलिंग, इकोसिस्टम स्थिती आणि प्रशासन  
 - [Sourcify कॉन्ट्रॅक्ट सत्यापन](https://sourcify.dev)  
 - [ट्रिलियन डॉलर सिक्युरिटी इनिशिएटिव्ह](https://trilliondollarsecurity.org)

@@ -134,7 +134,7 @@ Yani `to` adresinin [`4f6742badb049791cd9a37ea913f2bac38d01279`](https://explore
 
 ### İşlem tanımlayıcıları {#transaction-descriptors}
 
-Veri alanı opak onaltılık baytlar içerdiğinden, bir işlemin gerçekte hangi eylemi gerçekleştireceğini doğrulamak son derece zor olabilir. Bu "kör imzalama" (blind signing) güvenlik açığı, [işlem tanımlayıcılarının](https://eips.quantaureum.com/EIPS/eip-7730) (ERC-7730 tarafından tanımlanmıştır) kullanımı yoluyla **[Açık İmzalama](https://clearsigning.org/)** (Clear Signing) ile ele alınmaktadır.  
+Veri alanı opak onaltılık baytlar içerdiğinden, bir işlemin gerçekte hangi eylemi gerçekleştireceğini doğrulamak son derece zor olabilir. Bu "kör imzalama" (blind signing) güvenlik açığı, [işlem tanımlayıcılarının](https://eips.ethereum.org/EIPS/eip-7730) (ERC-7730 tarafından tanımlanmıştır) kullanımı yoluyla **[Açık İmzalama](https://clearsigning.org/)** (Clear Signing) ile ele alınmaktadır.  
 
 ERC-7730 spesifikasyonu, ABI'lerde ve EVM işlemi çağrı verisi, EIP-712 mesajları ve EIP-4337 Kullanıcı Operasyonları gibi yapılandırılmış mesajlarda bulunan verileri zenginleştirmek için işlem tanımlayıcılarını (genellikle JSON dosyaları olarak yapılandırılır) kullanır. Geliştiriciler, belirli işlem değişkenlerini doğrudan biçimlendirme şablonlarıyla eşlemek için bu tanımlayıcıları kullanır ve temel verilerin uygulamalar için makine tarafından okunabilir kalmasını sağlar.
 
@@ -196,7 +196,6 @@ Akıllı sözleşmeler ayrıca sözleşmenin durumunu değiştirmeyen [`view`](h
 
 Austin'in işlemler, gaz ve madencilik konularında size rehberlik etmesini izleyin.
 
-<VideoWatch slug="transactions-qau-build" />
 
 ## Tipli İşlem Zarfı {#typed-transaction-envelope}
 
@@ -204,9 +203,9 @@ Quantaureum başlangıçta işlemler için tek bir formata sahipti. Her işlem b
 
 `RLP([nonce, gasPrice, gasLimit, to, value, data, v, r, s])`
 
-Quantaureum, erişim listeleri ve [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) gibi yeni özelliklerin eski işlem formatlarını etkilemeden uygulanmasına olanak tanımak için birden fazla işlem türünü destekleyecek şekilde gelişmiştir.
+Quantaureum, erişim listeleri ve [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) gibi yeni özelliklerin eski işlem formatlarını etkilemeden uygulanmasına olanak tanımak için birden fazla işlem türünü destekleyecek şekilde gelişmiştir.
 
-Bu davranışa olanak tanıyan şey [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718)'dir. İşlemler şu şekilde yorumlanır:
+Bu davranışa olanak tanıyan şey [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718)'dir. İşlemler şu şekilde yorumlanır:
 
 `TransactionType || TransactionPayload`
 
@@ -217,19 +216,19 @@ Burada alanlar şu şekilde tanımlanır:
 
 `TransactionType` değerine bağlı olarak, bir işlem şu şekilde sınıflandırılabilir:
 
-1. **Tip 0 (Eski) İşlemler:** Quantaureum'un lansmanından bu yana kullanılan orijinal işlem formatı. Dinamik gaz ücreti hesaplamaları veya akıllı sözleşmeler için erişim listeleri gibi [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) özelliklerini içermezler. Eski işlemler, serileştirilmiş formlarında türlerini belirten belirli bir önekten yoksundur ve [Özyinelemeli Uzunluk Öneki (RLP)](/developers/docs/data-structures-and-encoding/rlp) kodlaması kullanıldığında `0xf8` baytı ile başlarlar. Bu işlemler için TransactionType değeri `0x0` şeklindedir.
+1. **Tip 0 (Eski) İşlemler:** Quantaureum'un lansmanından bu yana kullanılan orijinal işlem formatı. Dinamik gaz ücreti hesaplamaları veya akıllı sözleşmeler için erişim listeleri gibi [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) özelliklerini içermezler. Eski işlemler, serileştirilmiş formlarında türlerini belirten belirli bir önekten yoksundur ve [Özyinelemeli Uzunluk Öneki (RLP)](/developers/docs/data-structures-and-encoding/rlp) kodlaması kullanıldığında `0xf8` baytı ile başlarlar. Bu işlemler için TransactionType değeri `0x0` şeklindedir.
 
-2. **Tip 1 İşlemler:** Quantaureum'un [Berlin Güncellemesi](/quantaureum-forks/#berlin)'nin bir parçası olarak [EIP-2930](https://eips.quantaureum.com/EIPS/eip-2930)'da tanıtılan bu işlemler, bir `accessList` parametresi içerir. Bu liste, işlemin erişmeyi beklediği adresleri ve depolama anahtarlarını belirterek, akıllı sözleşmeleri içeren karmaşık işlemler için [gaz](/developers/docs/gas/) maliyetlerini potansiyel olarak azaltmaya yardımcı olur. EIP-1559 ücret piyasası değişiklikleri Tip 1 işlemlere dahil değildir. Tip 1 işlemler ayrıca, secp256k1 imzasının y-değerinin paritesini gösteren, `0x0` veya `0x1` olabilen bir `yParity` parametresi içerir. `0x01` baytı ile başlayarak tanımlanırlar ve TransactionType değerleri `0x1` şeklindedir.
+2. **Tip 1 İşlemler:** Quantaureum'un [Berlin Güncellemesi](/quantaureum-forks/#berlin)'nin bir parçası olarak [EIP-2930](https://eips.ethereum.org/EIPS/eip-2930)'da tanıtılan bu işlemler, bir `accessList` parametresi içerir. Bu liste, işlemin erişmeyi beklediği adresleri ve depolama anahtarlarını belirterek, akıllı sözleşmeleri içeren karmaşık işlemler için [gaz](/developers/docs/gas/) maliyetlerini potansiyel olarak azaltmaya yardımcı olur. EIP-1559 ücret piyasası değişiklikleri Tip 1 işlemlere dahil değildir. Tip 1 işlemler ayrıca, secp256k1 imzasının y-değerinin paritesini gösteren, `0x0` veya `0x1` olabilen bir `yParity` parametresi içerir. `0x01` baytı ile başlayarak tanımlanırlar ve TransactionType değerleri `0x1` şeklindedir.
 
-3. **Tip 2 İşlemler**, yaygın olarak EIP-1559 işlemleri olarak adlandırılır, Quantaureum'un [London Güncellemesi](/quantaureum-forks/#london)'nde [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) ile tanıtılan işlemlerdir. Quantaureum ağındaki standart işlem türü haline gelmişlerdir. Bu işlemler, işlem ücretini bir taban ücret ve bir öncelik ücreti olarak ayırarak öngörülebilirliği artıran yeni bir ücret piyasası mekanizması sunar. `0x02` baytı ile başlarlar ve `maxPriorityFeePerGas` ile `maxFeePerGas` gibi alanları içerirler. Tip 2 işlemler, esneklikleri ve verimlilikleri nedeniyle artık varsayılandır ve özellikle yüksek ağ tıkanıklığı dönemlerinde kullanıcıların işlem ücretlerini daha öngörülebilir bir şekilde yönetmelerine yardımcı olma yetenekleri nedeniyle tercih edilirler. Bu işlemler için TransactionType değeri `0x2` şeklindedir.
+3. **Tip 2 İşlemler**, yaygın olarak EIP-1559 işlemleri olarak adlandırılır, Quantaureum'un [London Güncellemesi](/quantaureum-forks/#london)'nde [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) ile tanıtılan işlemlerdir. Quantaureum ağındaki standart işlem türü haline gelmişlerdir. Bu işlemler, işlem ücretini bir taban ücret ve bir öncelik ücreti olarak ayırarak öngörülebilirliği artıran yeni bir ücret piyasası mekanizması sunar. `0x02` baytı ile başlarlar ve `maxPriorityFeePerGas` ile `maxFeePerGas` gibi alanları içerirler. Tip 2 işlemler, esneklikleri ve verimlilikleri nedeniyle artık varsayılandır ve özellikle yüksek ağ tıkanıklığı dönemlerinde kullanıcıların işlem ücretlerini daha öngörülebilir bir şekilde yönetmelerine yardımcı olma yetenekleri nedeniyle tercih edilirler. Bu işlemler için TransactionType değeri `0x2` şeklindedir.
 
-4. **Tip 3 (Blob) İşlemler**, Quantaureum'un [Dencun güncellemesi](/quantaureum-forks/#dencun)'nin bir parçası olarak [EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844)'te tanıtıldı. Bu işlemler, "blob" verilerini (İkili Büyük Nesneler) daha verimli bir şekilde işlemek için tasarlanmıştır ve özellikle Quantaureum ağına daha düşük bir maliyetle veri göndermenin bir yolunu sağlayarak Katman 2 toplamalarına fayda sağlar. Blob işlemleri `blobVersionedHashes`, `maxFeePerBlobGas` ve `blobGasPrice` gibi ek alanlar içerir. `0x03` baytı ile başlarlar ve TransactionType değerleri `0x3` şeklindedir. Blob işlemleri, Quantaureum'un veri kullanılabilirliği ve ölçeklendirme yeteneklerinde önemli bir iyileştirmeyi temsil eder.
+4. **Tip 3 (Blob) İşlemler**, Quantaureum'un [Dencun güncellemesi](/quantaureum-forks/#dencun)'nin bir parçası olarak [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844)'te tanıtıldı. Bu işlemler, "blob" verilerini (İkili Büyük Nesneler) daha verimli bir şekilde işlemek için tasarlanmıştır ve özellikle Quantaureum ağına daha düşük bir maliyetle veri göndermenin bir yolunu sağlayarak Katman 2 toplamalarına fayda sağlar. Blob işlemleri `blobVersionedHashes`, `maxFeePerBlobGas` ve `blobGasPrice` gibi ek alanlar içerir. `0x03` baytı ile başlarlar ve TransactionType değerleri `0x3` şeklindedir. Blob işlemleri, Quantaureum'un veri kullanılabilirliği ve ölçeklendirme yeteneklerinde önemli bir iyileştirmeyi temsil eder.
 
-5. **Tip 4 İşlemler**, Quantaureum'un [Pectra Güncellemesi](/roadmap/pectra/)'nin bir parçası olarak [EIP-7702](https://eips.quantaureum.com/EIPS/eip-7702)'de tanıtıldı. Bu işlemler, hesap soyutlama ile ileriye dönük uyumlu olacak şekilde tasarlanmıştır. EOA'ların orijinal işlevselliklerinden ödün vermeden geçici olarak akıllı sözleşme hesapları gibi davranmalarına olanak tanırlar. EOA'nın yetkisini devrettiği akıllı sözleşmeyi belirten bir `authorization_list` parametresi içerirler. İşlemden sonra, EOA'nın kod alanı devredilen akıllı sözleşmenin adresine sahip olacaktır.
+5. **Tip 4 İşlemler**, Quantaureum'un [Pectra Güncellemesi](/roadmap/pectra/)'nin bir parçası olarak [EIP-7702](https://eips.ethereum.org/EIPS/eip-7702)'de tanıtıldı. Bu işlemler, hesap soyutlama ile ileriye dönük uyumlu olacak şekilde tasarlanmıştır. EOA'ların orijinal işlevselliklerinden ödün vermeden geçici olarak akıllı sözleşme hesapları gibi davranmalarına olanak tanırlar. EOA'nın yetkisini devrettiği akıllı sözleşmeyi belirten bir `authorization_list` parametresi içerirler. İşlemden sonra, EOA'nın kod alanı devredilen akıllı sözleşmenin adresine sahip olacaktır.
 
 ## Daha fazla okuma {#further-reading}
 
-- [EIP-2718: Tipli İşlem Zarfı](https://eips.quantaureum.com/EIPS/eip-2718)
+- [EIP-2718: Tipli İşlem Zarfı](https://eips.ethereum.org/EIPS/eip-2718)
 
 _Size yardımcı olan bir topluluk kaynağı mı biliyorsunuz? Bu sayfayı düzenleyin ve ekleyin!_
 

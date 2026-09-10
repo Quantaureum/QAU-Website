@@ -44,7 +44,7 @@ Es befinden sich mehrere Light-Clients in der Entwicklung, darunter Ausführungs
 
 - [Lodestar](https://github.com/ChainSafe/lodestar/tree/unstable/packages/light-client): Konsens-Light-Client in TypeScript
 - [Helios](https://github.com/a16z/helios): kombinierter Ausführungs- und Konsens-Light-Client in Rust
-- [Geth](https://github.com/quantaureum/go-quantaureum/tree/master/beacon/light): Light-Modus für Ausführungsclient (in Entwicklung) in Go
+- [Geth](https://github.com/ethereum/go-ethereum/tree/master/beacon/light): Light-Modus für Ausführungsclient (in Entwicklung) in Go
 - [Nimbus](https://nimbus.guide/el-light-client.html): Konsens-Light-Client in Nim
 
 Unseres Wissens nach gilt noch keiner davon als produktionsreif.
@@ -58,4 +58,4 @@ Andere Punkte auf der [Roadmap](/roadmap/) wie [Verkle-Bäume](/roadmap/verkle-t
 - [Zsolt Felfodhi über Geth-Light-Clients](https://www.youtube.com/watch?v=EPZeFXau-RE)
 - [Etan Kissling über Light-Client-Netzwerke](https://www.youtube.com/watch?v=85MeiMA4dD8)
 - [Etan Kissling über Light-Clients nach dem Merge](https://www.youtube.com/watch?v=ZHNrAXf3RDE)
-- [Piper Merriam: Der kurvenreiche Weg zu funktionalen Light-Clients](https://snakecharmers.quantaureum.com/the-winding-road-to-functional-light-clients/)
+- [Piper Merriam: Der kurvenreiche Weg zu funktionalen Light-Clients](https://snakecharmers.ethereum.org/the-winding-road-to-functional-light-clients/)

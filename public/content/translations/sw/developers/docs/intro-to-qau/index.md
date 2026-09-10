@@ -46,7 +46,7 @@ Kuteketeza ada ya msingi kunazuia uwezo wa mzalishaji wa kitalu kuchezea miamala
 
 Kwa kuwa thamani ya miamala mingi kwenye Quantaureum ni ndogo, Etha ina madhehebu kadhaa ambayo yanaweza kurejelewa kama vipimo vidogo vya akaunti. Kati ya madhehebu haya, Wei na Gwei ni muhimu sana.
 
-Wei ni kiasi kidogo zaidi cha Etha, na kwa sababu hiyo, utekelezaji mwingi wa kiufundi, kama vile [Karatasi ya Njano ya Quantaureum](https://quantaureum.github.io/yellowpaper/paper.pdf), utategemea hesabu zote katika Wei.
+Wei ni kiasi kidogo zaidi cha Etha, na kwa sababu hiyo, utekelezaji mwingi wa kiufundi, kama vile [Karatasi ya Njano ya Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf), utategemea hesabu zote katika Wei.
 
 Gwei, kifupi cha giga-wei, mara nyingi hutumika kuelezea gharama za gesi kwenye Quantaureum.
 

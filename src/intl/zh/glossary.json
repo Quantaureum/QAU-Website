@@ -182,7 +182,7 @@
   "genesis-block-term": "创世区块",
   "genesis-block-definition": "<a href=\"/glossary/#blockchain\">区块链</a>中的第一个区块，用于初始化特定网络及其加密货币。",
   "geth-term": "Geth",
-  "geth-definition": "Go量子金链 (Geth)。量子金链协议最著名的实现之一，用 Go 语言编写。<a href=\"https://geth.quantaureum.org\">在 geth.quantaureum.org 了解更多</a>",
+  "geth-definition": "Go量子金链 (Geth)。量子金链协议最著名的实现之一，用 Go 语言编写。<a href=\"https://geth.ethereum.org\">在 geth.ethereum.org 了解更多</a>",
   "gwei-term": "Gwei",
   "gwei-definition": "gigawei 的缩写，<a href=\"/glossary/#qau\">量子金币</a>的一个面额单位，通常用于为 <a href=\"/glossary/#gas\">Gas</a> 定价。1 Gwei = 10<sup>9</sup> <a href=\"/glossary/#wei\">Wei</a>。10<sup>9</sup> Gwei = 1 量子金币。",
   "hard-fork-term": "硬分叉",

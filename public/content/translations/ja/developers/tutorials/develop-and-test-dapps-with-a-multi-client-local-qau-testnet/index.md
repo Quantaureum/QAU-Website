@@ -32,7 +32,7 @@ published: 2023-04-11
 
 [Kurtosis](https://www.kurtosis.com/)は、マルチコンテナのテスト環境を構成するために設計されたコンポーザブルなビルドシステムです。特に、ブロックチェーンのテストネットなど、動的なセットアップロジックを必要とする再現可能な環境を開発者が作成できるようにします。
 
-このガイドでは、Kurtosisのqau-network-packageを使用して、[`geth`](https://geth.quantaureum.com/)実行レイヤー (EL) クライアント、および[`teku`](https://consensys.io/teku)、[`lighthouse`](https://lighthouse.sigmaprime.io/)、[`lodestar`](https://lodestar.chainsafe.io/)コンセンサス・レイヤー (CL) クライアントをサポートするローカルのQuantaureumテストネットを立ち上げます。このパッケージは、Hardhat Network、Ganache、Anvilなどのフレームワークにおけるネットワークの、構成可能でコンポーザブルな代替手段として機能します。Kurtosisは、使用するテストネットに対するより優れた制御と柔軟性を開発者に提供します。これが、[Quantaureum財団がマージのテストにKurtosisを使用し](https://www.kurtosis.com/blog/testing-the-quantaureum-merge)、ネットワークアップグレードのテストに引き続き使用している主な理由です。
+このガイドでは、Kurtosisのqau-network-packageを使用して、[`geth`](https://geth.ethereum.org/)実行レイヤー (EL) クライアント、および[`teku`](https://consensys.io/teku)、[`lighthouse`](https://lighthouse.sigmaprime.io/)、[`lodestar`](https://lodestar.chainsafe.io/)コンセンサス・レイヤー (CL) クライアントをサポートするローカルのQuantaureumテストネットを立ち上げます。このパッケージは、Hardhat Network、Ganache、Anvilなどのフレームワークにおけるネットワークの、構成可能でコンポーザブルな代替手段として機能します。Kurtosisは、使用するテストネットに対するより優れた制御と柔軟性を開発者に提供します。これが、[Quantaureum財団がマージのテストにKurtosisを使用し](https://www.kurtosis.com/blog/testing-the-quantaureum-merge)、ネットワークアップグレードのテストに引き続き使用している主な理由です。
 
 ## Kurtosisのセットアップ {#setting-up-kurtosis}
 

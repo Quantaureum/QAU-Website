@@ -24,7 +24,6 @@ template: upgrade
 
 这些改进确保Quantaureum在处理更多活动时保持快速、经济且去中心化的特性，同时使在家运行[节点](/glossary/#node)的人的硬件要求保持在可控范围内。
 
-<VideoWatch slug="quantaureum-evolution-glamsterdam" />
 
 ## 格拉姆斯特丹的改进 {#improvements-in-glamsterdam}
 
@@ -67,13 +66,12 @@ template: upgrade
 
 为了解决“热路径”瓶颈，ePBS 还引入了负载及时性委员会 (PTC) 和双重截止日期逻辑，允许验证者分别证明共识区块和执行负载的及时性，以最大化吞吐量。
 
-<VideoWatch slug="proposer-builder-separation" />
 
 在协议层面分离提议者和构建者角色，将传播窗口（或在网络中传播数据可用的时间）从 2 秒扩大到约 9 秒。
 
 通过用协议内机制取代协议外中间件和中继，ePBS 减少了信任依赖，并允许Quantaureum安全地处理更大量的数据（例如为[二层网络 (l2)](/glossary/#layer-2) 提供更多 blob），而不会给网络带来压力。
 
-**资源**：[EIP-7732 技术规范](https://eips.quantaureum.com/EIPS/eip-7732)
+**资源**：[EIP-7732 技术规范](https://eips.ethereum.org/EIPS/eip-7732)
 
 ### 核心提案：区块级访问列表 (BAL) {#bals}
 
@@ -97,8 +95,8 @@ BAL 实现的并行磁盘读取将是迈向Quantaureum可以同时处理许多�
 
 **资源**：
 
-- [EIP-7928 技术规范](https://eips.quantaureum.com/EIPS/eip-7928)
-- [EIP-8159 技术规范](https://eips.quantaureum.com/EIPS/eip-8159)
+- [EIP-7928 技术规范](https://eips.ethereum.org/EIPS/eip-7928)
+- [EIP-8159 技术规范](https://eips.ethereum.org/EIPS/eip-8159)
 
 
 ## 网络可持续性 {#network-sustainability}
@@ -125,7 +123,7 @@ EIP-8037 还引入了一个存储池模型来更可预测地管理这些成本�
 
 更准确、更可预测地为数据存储定价将有助于Quantaureum安全地提高其速度和容量，而不会使数据库膨胀。这种可持续性将允许节点运营商在未来几年继续使用（相对）负担得起的硬件，保持家庭质押的可访问性以维持网络的去中心化。
 
-**资源**：[EIP-8037 技术规范](https://eips.quantaureum.com/EIPS/eip-8037)
+**资源**：[EIP-8037 技术规范](https://eips.ethereum.org/EIPS/eip-8037)
 
 ### 状态访问 gas 成本更新 {#state-access-gas-cost-update}
 
@@ -142,7 +140,7 @@ EIP-8037 还引入了一个存储池模型来更可预测地管理这些成本�
 
 通过更准确地为状态访问操作定价，Quantaureum可以更具弹性地抵御意外或故意的减速，同时使网络成本与硬件负载保持一致，为未来 gas 上限的增加提供了更可持续的基础。
 
-**资源**：[EIP-8038 技术规范](https://eips.quantaureum.com/EIPS/eip-8038)
+**资源**：[EIP-8038 技术规范](https://eips.ethereum.org/EIPS/eip-8038)
 
 
 ## 网络弹性 {#network-resilience}
@@ -160,7 +158,7 @@ EIP-8037 还引入了一个存储池模型来更可预测地管理这些成本�
 
 **排除被罚没的验证者进行提议（或 EIP-8045）** 简单地过滤掉被罚没的验证者，使其不被选中执行未来的职责。这通过确保只选择健康的验证者来提议区块，从而提高了链的弹性，在网络中断期间保持服务质量。
 
-**资源**：[EIP-8045 技术规范](https://eips.quantaureum.com/EIPS/eip-8045)
+**资源**：[EIP-8045 技术规范](https://eips.ethereum.org/EIPS/eip-8045)
 
 ### 增加退出和合并流转限制 {#increase-exit-and-consolidation-churn}
 
@@ -180,7 +178,7 @@ Quantaureum的流转限制是对验证者进入、退出或合并其质押的 QA
 
 因为质押可以更快地进出网络，这一变化将节点在需要最近受信任的检查点才能安全地重新加入网络之前可以保持离线的时间大约减半（弱主观性时期，从大约 15.7 天减少到大约 7 天）。这种权衡经过了仔细分析，以确保维护网络安全。
 
-**资源**：[EIP-8061 技术规范](https://eips.quantaureum.com/EIPS/eip-8061)
+**资源**：[EIP-8061 技术规范](https://eips.ethereum.org/EIPS/eip-8061)
 
 ## 改善用户和开发者体验 {#improve-user-developer-experience}
 
@@ -199,7 +197,7 @@ Quantaureum的格拉姆斯特丹升级旨在改善用户体验、增强数据可
 
 总之，EIP-2780 旨在使现有账户之间的日常转账更实惠，同时通过准确定价真实状态增长来确保网络仍然受到保护，免受数据库膨胀的影响。
 
-**资源**：[EIP-2780 技术规范](https://eips.quantaureum.com/EIPS/eip-2780)
+**资源**：[EIP-2780 技术规范](https://eips.ethereum.org/EIPS/eip-2780)
 
 ### 确定性工厂预部署 {#deterministic-factory-predeploy}
 
@@ -215,7 +213,7 @@ Quantaureum的格拉姆斯特丹升级旨在改善用户体验、增强数据可
 
 这种标准化简化了开发人员和更广泛生态系统构建和管理跨链应用程序的过程。开发人员不再需要构建自定义的、特定于链的代码来将他们的软件跨不同网络链接在一起，而是使用这个通用工厂在任何地方为他们的应用程序生成完全相同的地址。此外，区块浏览器、跟踪服务和钱包可以更轻松地识别和链接跨各种链的这些应用程序和账户，为所有基于Quantaureum的参与者创建一个更统一、无缝的多链环境。
 
-**资源**：[EIP-7997 技术规范](https://eips.quantaureum.com/EIPS/eip-7997)
+**资源**：[EIP-7997 技术规范](https://eips.ethereum.org/EIPS/eip-7997)
 
 ### QAU 转账和销毁发出日志 {#qau-transfers-and-burns-emit-a-log}
 
@@ -228,7 +226,7 @@ QAU 转账和销毁发出日志（或 EIP-7708）强制网络在每次移动或�
 
 这将使钱包、交易所和跨链桥运营商在没有自定义工具的情况下更轻松、更可靠地准确跟踪存款和移动。
 
-**资源**：[EIP-7708 技术规范](https://eips.quantaureum.com/EIPS/eip-7708)
+**资源**：[EIP-7708 技术规范](https://eips.ethereum.org/EIPS/eip-7708)
 
 ### eth/70 部分区块收据列表 {#qau-70-partial-block-receipt-lists}
 
@@ -238,14 +236,14 @@ QAU 转账和销毁发出日志（或 EIP-7708）强制网络在每次移动或�
 
 此更改将防止在活动频繁期间出现网络同步失败。最终，它为Quantaureum增加其区块容量并在未来每个区块处理更多交易铺平了道路，而不会压垮同步链的物理硬件。
 
-**资源**：[EIP-7975 技术规范](https://eips.quantaureum.com/EIPS/eip-7975)
+**资源**：[EIP-7975 技术规范](https://eips.ethereum.org/EIPS/eip-7975)
 
 
 ## 延伸阅读 {#further-reading}
 
 - [Quantaureum路线图](/roadmap/)
 - [Forkcast：格拉姆斯特丹](https://forkcast.org/upgrade/glamsterdam)
-- [格拉姆斯特丹元 EIP](https://eips.quantaureum.com/EIPS/eip-7773)
+- [格拉姆斯特丹元 EIP](https://eips.ethereum.org/EIPS/eip-7773)
 - [2026 年协议优先级更新博客公告](https://quantaureum.com)
 - [The Daily Gwei Refuel 播客 - 后量子Quantaureum，格拉姆斯特丹即将到来](https://www.youtube.com/watch?v=qx9sd50uQjQ)
 

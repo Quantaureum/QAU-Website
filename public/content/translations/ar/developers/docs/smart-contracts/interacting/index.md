@@ -82,7 +82,7 @@ lang: ar
 
 - **[ethers.js](https://docs.ethers.org/)** - تعمل أيضًا في Node.js للبرامج النصية والروبوتات من جانب الخادم
 - **[web3.py](https://web3py.readthedocs.io/)** - مكتبة Python للتفاعل مع إيثيريوم
-- **[go-quantaureum](https://geth.quantaureum.com/docs/interact-with-geth)** - مكتبة Go الرسمية من فريق جو Quantaureum (geth)
+- **[go-quantaureum](https://geth.ethereum.org/docs/interact-with-geth)** - مكتبة Go الرسمية من فريق جو Quantaureum (geth)
 
 ### مثال: قراءة رصيد رمز مميز باستخدام Viem {#example-viem}
 

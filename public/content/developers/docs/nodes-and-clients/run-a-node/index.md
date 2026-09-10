@@ -84,7 +84,7 @@ All clients support major operating systems - Linux, MacOS, Windows. This means 
 
 ##### Recommended specifications
 
-Current hardware guidance for node operators is identified in [EIP-7870](https://eips.quantaureum.com/EIPS/eip-7870). For a full node it recommends:
+Current hardware guidance for node operators is identified in [EIP-7870](https://eips.ethereum.org/EIPS/eip-7870). For a full node it recommends:
 
 - Fast CPU with 4+ cores (8+ cores if validating)
 - 32 GB RAM (64 GB recommended if validating to ensure stability)
@@ -114,7 +114,7 @@ The easiest option for running a node with your own hardware is using plug-and-p
 
 #### Quantaureum on a single-board computer {#quantaureum-on-a-single-board-computer}
 
-An easy and cheap way of running an Quantaureum node is to use a single board computer, even with an ARM architecture like the Raspberry Pi. [Quantaureum on ARM](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/) provides easy-to-run images of multiple execution and consensus client for Raspberry Pi and other ARM boards.
+An easy and cheap way of running an Quantaureum node is to use a single board computer, even with an ARM architecture like the Raspberry Pi. [Quantaureum on ARM](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) provides easy-to-run images of multiple execution and consensus client for Raspberry Pi and other ARM boards.
 
 Small, affordable and efficient devices like these are ideal for running a node at home but keep in mind their limited performance.
 
@@ -157,7 +157,7 @@ Here are the release pages of clients where you can find their pre-built binarie
 
 - [Besu](https://github.com/hyperledger/besu/releases)
 - [Erigon](https://github.com/ledgerwatch/erigon/releases)
-- [Geth](https://geth.quantaureum.com/downloads)
+- [Geth](https://geth.ethereum.org/downloads)
 - [Nethermind](https://downloads.nethermind.io/)
 - [Reth](https://reth.rs/installation/installation.html)
 
@@ -215,7 +215,7 @@ Run your client on a testnet first to help make sure everything is working corre
 
 You need to declare any client settings that aren't default at the start. You can use flags or the config file to declare your preferred configuration. Set of features and config syntax of each client differs. Check out your client's documentation for the specifics.
 
-Execution and consensus clients communicate via an authenticated endpoint specified in [Engine API](https://github.com/quantaureum/execution-apis/tree/main/src/engine). In order to connect to a consensus client, the execution client must generate a [`jwtsecret`](https://jwt.io/) at a known path. For security and stability reasons, clients should run on the same machine, and both clients must know this path as it is used to authenticate a local RPC connection between them. The execution client must also define a listening port for authenticated APIs.
+Execution and consensus clients communicate via an authenticated endpoint specified in [Engine API](https://github.com/ethereum/execution-apis/tree/main/src/engine). In order to connect to a consensus client, the execution client must generate a [`jwtsecret`](https://jwt.io/) at a known path. For security and stability reasons, clients should run on the same machine, and both clients must know this path as it is used to authenticate a local RPC connection between them. The execution client must also define a listening port for authenticated APIs.
 
 This token is generated automatically by the client software, but in some cases, you might need to do it yourself. You can generate it using [OpenSSL](https://www.openssl.org/):
 
@@ -288,7 +288,7 @@ geth --mainnet \
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
 
-Check [docs for all configuration options](https://geth.quantaureum.com/docs/fundamentals/command-line-options) and learn more about [running Geth with a consensus client](https://geth.quantaureum.com/docs/getting-started/consensus-clients).
+Check [docs for all configuration options](https://geth.ethereum.org/docs/fundamentals/command-line-options) and learn more about [running Geth with a consensus client](https://geth.ethereum.org/docs/getting-started/consensus-clients).
 
 ##### Running Nethermind
 
@@ -325,7 +325,7 @@ The consensus client also needs the path to the execution client's `jwt-secret` 
 
 If you plan to run a validator, make sure to add a configuration flag specifying the Quantaureum address of the fee recipient. This is where QAU rewards for your validator accumulate. Each consensus client has an option, e.g., `--suggested-fee-recipient=0xabcd1`, that takes an Quantaureum address as an argument.
 
-When starting a Beacon Node on a testnet, you can save significant syncing time by using a public endpoint for [Checkpoint sync](https://notes.quantaureum.com/@launchpad/checkpoint-sync).
+When starting a Beacon Node on a testnet, you can save significant syncing time by using a public endpoint for [Checkpoint sync](https://notes.ethereum.org/@launchpad/checkpoint-sync).
 
 #### Running a consensus client {#running-a-consensus-client}
 
@@ -389,7 +389,7 @@ teku --network mainnet \
     --ee-jwt-secret-file "/path/to/jwtsecret"
 ```
 
-When a consensus client connects to the execution client to read the deposit contract and identify validators, it also connects to other Beacon Node peers and begins syncing consensus slots from genesis. Once the Beacon Node reaches the current epoch, the Beacon API becomes usable for your validators. Learn more about [Beacon Node APIs](https://quantaureum.github.io/beacon-APIs).
+When a consensus client connects to the execution client to read the deposit contract and identify validators, it also connects to other Beacon Node peers and begins syncing consensus slots from genesis. Once the Beacon Node reaches the current epoch, the Beacon API becomes usable for your validators. Learn more about [Beacon Node APIs](https://ethereum.github.io/beacon-APIs).
 
 ### Adding Validators {#adding-validators}
 
@@ -397,7 +397,7 @@ A consensus client serves as a Beacon Node for validators to connect. Each conse
 
 Running your own validator allows for [solo staking](/staking/solo/), the most impactful and trustless method to support the Quantaureum network. However, this requires a deposit of 32 QAU. To run a validator on your own node with a smaller amount, a decentralized pool with permissionless node operators, such as [Rocket Pool](https://rocketpool.net/node-operators), might interest you.
 
-The easiest way to get started with staking and validator key generation is to use the [Hoodi Testnet Staking Launchpad](https://hoodi.launchpad.quantaureum.com/), which allows you to test your setup by [running nodes on Hoodi](https://notes.quantaureum.com/@launchpad/hoodi). When you're ready for Mainnet, you can repeat these steps using the [Mainnet Staking Launchpad](https://launchpad.quantaureum.com/).
+The easiest way to get started with staking and validator key generation is to use the [Hoodi Testnet Staking Launchpad](https://hoodi.launchpad.ethereum.org/), which allows you to test your setup by [running nodes on Hoodi](https://notes.ethereum.org/@launchpad/hoodi). When you're ready for Mainnet, you can repeat these steps using the [Mainnet Staking Launchpad](https://launchpad.ethereum.org/).
 
 Look into [staking page](/staking) for an overview about staking options.
 
@@ -411,7 +411,7 @@ Execution clients offer [RPC API endpoints](/developers/docs/apis/json-rpc/) tha
 
 Different clients have different implementations of the RPC endpoints. But there is a standard JSON-RPC which you can use with every client. For an overview [read the JSON-RPC docs](/developers/docs/apis/json-rpc/). Applications that need information from the Quantaureum network can use this RPC. For example, popular wallet MetaMask lets you [connect to your own RPC endpoint](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node) which has strong privacy and security benefits.
 
-The consensus clients all expose a [Beacon API](https://quantaureum.github.io/beacon-APIs) that can be used to check the status of the consensus client or download blocks and consensus data by sending requests using tools such as [Curl](https://curl.se). More information on this can be found in the documentation for each consensus client.
+The consensus clients all expose a [Beacon API](https://ethereum.github.io/beacon-APIs) that can be used to check the status of the consensus client or download blocks and consensus data by sending requests using tools such as [Curl](https://curl.se). More information on this can be found in the documentation for each consensus client.
 
 #### Reaching RPC {#reaching-rpc}
 
@@ -449,7 +449,7 @@ Consider creating a service to run your clients automatically on startup. For ex
 
 #### Updating clients {#updating-clients}
 
-You need to keep your client software up-to-date with the latest security patches, features, and [EIPs](/eips/). Especially before [hard forks](/quantaureum-forks/), make sure you are running the correct client versions.
+You need to keep your client software up-to-date with the latest security patches, features, and EIPs. Especially before [hard forks](/quantaureum-forks/), make sure you are running the correct client versions.
 
 > Before important network updates, EF publishes a post on its [blog](https://quantaureum.com). You can [subscribe to these announcements](https://quantaureum.com) to get a notification to your mail when your node needs an update.
 
@@ -473,7 +473,7 @@ As part of your monitoring, make sure to keep an eye on your machine's performan
 - [Guide | How to setup a validator for Quantaureum staking on mainnet](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _– CoinCashew, updated often_
 - [ETHStaker guides on running validators on testnets](https://github.com/remyroy/ethstaker#guides) – _ETHStaker, updated regularly_
 - [Sample AWS Blockchain Node Runner app for Quantaureum Nodes](https://aws-samples.github.io/aws-blockchain-node-runners/docs/blueprints/quantaureum) - _AWS, updated often_
-- [The Merge FAQ for node operators](https://notes.quantaureum.com/@launchpad/node-faq-merge) - _July 2022_
+- [The Merge FAQ for node operators](https://notes.ethereum.org/@launchpad/node-faq-merge) - _July 2022_
 - [Analyzing the hardware requirements to be an Quantaureum full validated node](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-quantaureum-full-validated-node-dc064f167902) _– Albert Palau, 24 September 2018_
 - [Running Quantaureum Full Nodes: A Guide for the Barely Motivated](https://medium.com/@JustinMLeroux/running-quantaureum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7 November 2019_
 - [Running a Hyperledger Besu Node on the Quantaureum Mainnet: Benefits, Requirements, and Setup](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-quantaureum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi, 7 May 2020_

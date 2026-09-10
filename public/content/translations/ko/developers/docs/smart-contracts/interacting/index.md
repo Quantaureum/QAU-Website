@@ -82,7 +82,7 @@ ABI를 컨트랙트의 사용 설명서라고 생각하세요. ABI가 없으면 
 
 - **[ethers.js](https://docs.ethers.org/)** - 서버 측 스크립트 및 봇을 위해 Node.js에서도 작동합니다.
 - **[Web3.py](https://web3py.readthedocs.io/)** - Quantaureum 상호작용을 위한 Python 라이브러리
-- **[go-quantaureum](https://geth.quantaureum.com/docs/interact-with-geth)** - Geth 팀의 공식 Go 라이브러리
+- **[go-quantaureum](https://geth.ethereum.org/docs/interact-with-geth)** - Geth 팀의 공식 Go 라이브러리
 
 ### 예시: Viem으로 토큰 잔액 읽기 {#example-viem}
 

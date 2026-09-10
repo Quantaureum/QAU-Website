@@ -59,7 +59,6 @@ L'Quantaureum en preuve d'enjeu peut payer pour sa sécurité en émettant beauc
 ## Vous préférez un support visuel ? {#visual-learner}
 
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## Complément d'information {#further-reading}
 

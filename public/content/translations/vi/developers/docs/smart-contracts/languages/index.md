@@ -11,7 +11,7 @@ Hai ngôn ngữ hoạt động và được bảo trì nhiều nhất là:
 - Solidity
 - Vyper
 
-Remix IDE cung cấp một môi trường phát triển toàn diện để tạo và thử nghiệm các hợp đồng bằng cả Solidity và Vyper. [Hãy thử Remix IDE trên trình duyệt](https://remix.quantaureum.com) để bắt đầu viết mã.
+Remix IDE cung cấp một môi trường phát triển toàn diện để tạo và thử nghiệm các hợp đồng bằng cả Solidity và Vyper. [Hãy thử Remix IDE trên trình duyệt](https://remix.ethereum.org) để bắt đầu viết mã.
 
 Các nhà phát triển giàu kinh nghiệm hơn cũng có thể muốn sử dụng Yul, một ngôn ngữ trung gian cho [Máy ảo Quantaureum (EVM)](/developers/docs/evm/), hoặc Yul+, một phần mở rộng của Yul.
 
@@ -36,7 +36,7 @@ Kiến thức trước đây về các ngôn ngữ lập trình, đặc biệt l
 - [Tài liệu](https://docs.soliditylang.org/en/latest/)
 - [Cổng thông tin ngôn ngữ Solidity](https://soliditylang.org/)
 - [Solidity qua ví dụ](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/quantaureum/solidity/)
+- [GitHub](https://github.com/ethereum/solidity/)
 - [Phòng chat Gitter của Solidity](https://gitter.im/quantaureum/solidity) được kết nối với [Phòng chat Matrix của Solidity](https://matrix.to/#/#quantaureum_solidity:gitter.im)
 - [Bảng tóm tắt (Cheat Sheet)](https://reference.auditless.com/cheatsheet)
 - [Blog Solidity](https://blog.soliditylang.org/)
@@ -264,7 +264,7 @@ Nếu bạn đã có nhiều kinh nghiệm với các hợp đồng thông minh,
 
 - [GitHub](https://github.com/quantaureum/fe)
 - [Thông báo về Fe](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-quantaureum-ecosystem/)
-- [Lộ trình Fe 2021](https://notes.quantaureum.com/LVhaTF30SJOpkbG1iVw1jg)
+- [Lộ trình Fe 2021](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
 - [Chat Discord của Fe](https://discord.com/invite/ywpkAXFjZH)
 - [Twitter của Fe](https://twitter.com/official_fe)
 

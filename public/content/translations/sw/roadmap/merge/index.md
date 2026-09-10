@@ -145,7 +145,7 @@ contentPreview="Si kweli. Unganisho lilikuwa mabadiliko ya utaratibu wa makubali
 
 Ada za gesi ni zao la mahitaji ya mtandao kulingana na uwezo wa mtandao. Unganisho uliondoa matumizi ya Uthibitisho wa Kazi, ukihamia kwenye Uthibitisho wa Dau kwa mwafaka, lakini haukubadilisha kwa kiasi kikubwa vigezo vyovyote vinavyoathiri moja kwa moja uwezo wa mtandao au uwezo wa upitishaji.
 
-Pamoja na <a href="https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698">ramani ya njia inayozingatia rollup</a>, juhudi zinaelekezwa katika kuongeza shughuli za watumiaji kwenye [tabaka la 2 (l2)](/layer-2/), huku ikiwezesha Mtandao Mkuu wa tabaka la 1 (l1) kama tabaka salama la ukamilishaji lililogatuliwa lililoboreshwa kwa hifadhi ya data ya rollup ili kusaidia kufanya miamala ya rollup kuwa nafuu zaidi. Mpito kwenda kwenye Uthibitisho wa Dau ni mtangulizi muhimu katika kutambua hili. [Zaidi kuhusu gesi na ada.](/developers/docs/gas/)
+Pamoja na <a href="https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698">ramani ya njia inayozingatia rollup</a>, juhudi zinaelekezwa katika kuongeza shughuli za watumiaji kwenye [tabaka la 2 (l2)](/layer-2/), huku ikiwezesha Mtandao Mkuu wa tabaka la 1 (l1) kama tabaka salama la ukamilishaji lililogatuliwa lililoboreshwa kwa hifadhi ya data ya rollup ili kusaidia kufanya miamala ya rollup kuwa nafuu zaidi. Mpito kwenda kwenye Uthibitisho wa Dau ni mtangulizi muhimu katika kutambua hili. [Zaidi kuhusu gesi na ada.](/developers/docs/gas/)
 
 </ExpandableCard>
 

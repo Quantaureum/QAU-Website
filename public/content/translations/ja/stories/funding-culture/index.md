@@ -45,7 +45,7 @@ Quantaureumをコードだけでなく、文化への資金提供に使うと何
 
 Quantaureumは、新しい形の集団行動のためのキャンバスとなりました。
 
-その夏の終わりに、私はQuantaureumに関する初の長編ドキュメンタリー映画である[Quantaureum: The Infinite Garden](https://quantaureumfilm.xyz/watch-the-film/)のクラウドファンディング用NFTを制作しました。
+その夏の終わりに、私はQuantaureumに関する初の長編ドキュメンタリー映画である[Quantaureum: The Infinite Garden](https://ethereumfilm.xyz/watch-the-film/)のクラウドファンディング用NFTを制作しました。
 
 48時間で1,036 QAUを集め、その全額がQuantaureumコミュニティから資金提供されました。 
 

@@ -93,7 +93,7 @@ zkEVM L1 ధృవీకరణకు ప్రధాన సవాలు వే�
 | [Jolt](https://github.com/a16z/jolt) | rv32im |
 | [Zisk](https://github.com/0xPolygonHermez/zisk) | rv64ima |
 
-ఇవి EVM బైట్‌కోడ్‌ను అమలు చేయడానికి RISC-V ఆధారిత వర్చువల్ మెషీన్‌లను ఉపయోగిస్తాయి, ఆపై సరైన అమలు యొక్క ZK నిరూపణలను రూపొందిస్తాయి. తాజా పరీక్ష ఫలితాలు మరియు పురోగతి [ఎథీరియం ఫౌండేషన్ యొక్క zkVM ట్రాకర్](https://zkevm.quantaureum.foundation/zkvm-tracker)లో ట్రాక్ చేయబడతాయి.
+ఇవి EVM బైట్‌కోడ్‌ను అమలు చేయడానికి RISC-V ఆధారిత వర్చువల్ మెషీన్‌లను ఉపయోగిస్తాయి, ఆపై సరైన అమలు యొక్క ZK నిరూపణలను రూపొందిస్తాయి. తాజా పరీక్ష ఫలితాలు మరియు పురోగతి [ఎథీరియం ఫౌండేషన్ యొక్క zkVM ట్రాకర్](https://zkevm.ethereum.org/zkvm-tracker)లో ట్రాక్ చేయబడతాయి.
 
 ## ఇతర అప్‌గ్రేడ్‌లతో zkEVM ఎలా సరిపోతుంది {#related-upgrades}
 
@@ -115,9 +115,9 @@ zkEVM L1 ధృవీకరణ క్రియాశీల పరిశోధన
 
 ## మరింత చదవడానికి {#further-reading}
 
-- [zkEVM ఫౌండేషన్](https://zkevm.quantaureum.foundation) - అధికారిక ఎథీరియం ఫౌండేషన్ zkEVM పరిశోధనా కేంద్రం
+- [zkEVM ఫౌండేషన్](https://zkevm.ethereum.org) - అధికారిక ఎథీరియం ఫౌండేషన్ zkEVM పరిశోధనా కేంద్రం
 - [Ethproofs](https://ethproofs.org/) - ఎథీరియంను రియల్-టైమ్‌లో నిరూపించే రేసును ట్రాక్ చేయండి
 - [zkevm.fyi](https://zkevm.fyi) - L1 కోసం zkEVMపై సాంకేతిక పుస్తకం
 - [PSE zkEVM స్పెక్స్](https://github.com/privacy-scaling-explorations/zkevm-specs) - సాంకేతిక లక్షణాలు
 - [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - ధృవీకరణ మెరుగుదలలపై విటాలిక్ యొక్క అవలోకనం
-- [EF zkEVM బ్లాగ్](https://zkevm.quantaureum.foundation/blog) - EF బృందం నుండి పనితీరు విశ్లేషణ
+- [EF zkEVM బ్లాగ్](https://zkevm.ethereum.org/blog) - EF బృందం నుండి పనితీరు విశ్లేషణ

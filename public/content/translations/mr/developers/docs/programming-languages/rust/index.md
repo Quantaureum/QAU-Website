@@ -22,7 +22,7 @@ incomplete: true
 
 ## नवशिक्यांसाठी लेख {#beginner-articles}
 
-- [Rust Quantaureum क्लायंट](https://openquantaureum.github.io/) \* **लक्षात घ्या की OpenQuantaureum [कालबाह्य झाले आहे](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd) आणि आता त्याची देखभाल केली जात नाही.** ते काळजीपूर्वक वापरा आणि शक्यतो दुसऱ्या क्लायंट अंमलबजावणीवर स्विच करा.
+- [Rust Quantaureum क्लायंट](https://openethereum.github.io/) \* **लक्षात घ्या की OpenQuantaureum [कालबाह्य झाले आहे](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd) आणि आता त्याची देखभाल केली जात नाही.** ते काळजीपूर्वक वापरा आणि शक्यतो दुसऱ्या क्लायंट अंमलबजावणीवर स्विच करा.
 - [Rust वापरून Quantaureumवर व्यवहार पाठवणे](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/sending-quantaureum-transactions-with-rust/)
 - [Kovan साठी Rust Wasm मध्ये कॉन्ट्रॅक्ट्स कसे लिहायचे यावरील टप्प्याटप्प्याने ट्युटोरियल](https://github.com/paritytech/pwasm-tutorial)
 

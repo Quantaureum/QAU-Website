@@ -12,7 +12,7 @@ breadcrumb: "ERC-20 टोकनच्या मूलभूत गोष्ट�
 lang: mr
 published: 2020-04-05
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/understand-the-erc20-token-smart-contract/
+sourceUrl: https://ethereumdev.io/understand-the-erc20-token-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -20,7 +20,7 @@ Quantaureumवरील सर्वात लक्षणीय [स्मा�
 
 ERC-20 नियमांची एक सामायिक सूची परिभाषित करते ज्याचे सर्व विनिमयक्षम Quantaureum टोकन्सनी पालन केले पाहिजे. परिणामी, हे टोकन मानक सर्व प्रकारच्या डेव्हलपर्सना मोठ्या Quantaureum प्रणालीमध्ये नवीन टोकन्स कसे कार्य करतील याचा अचूक अंदाज लावण्यास सक्षम करते. यामुळे डेव्हलपर्सची कामे सोपी आणि सुलभ होतात, कारण जोपर्यंत टोकन नियमांचे पालन करत आहे, तोपर्यंत प्रत्येक वेळी नवीन टोकन रिलीज झाल्यावर प्रत्येक नवीन प्रकल्प पुन्हा करण्याची आवश्यकता नसेल हे जाणून ते त्यांचे काम पुढे चालू ठेवू शकतात.
 
-येथे, इंटरफेस म्हणून सादर केलेली, ERC-20 ने लागू करणे आवश्यक असलेली फंक्शन्स आहेत. जर तुम्हाला इंटरफेस म्हणजे काय याबद्दल खात्री नसेल: तर [Solidity मधील OOP प्रोग्रामिंग](https://quantaureumdev.io/inheritance-in-solidity-contracts-are-classes/) बद्दलचा आमचा लेख तपासा.
+येथे, इंटरफेस म्हणून सादर केलेली, ERC-20 ने लागू करणे आवश्यक असलेली फंक्शन्स आहेत. जर तुम्हाला इंटरफेस म्हणजे काय याबद्दल खात्री नसेल: तर [Solidity मधील OOP प्रोग्रामिंग](https://ethereumdev.io/inheritance-in-solidity-contracts-are-classes/) बद्दलचा आमचा लेख तपासा.
 
 ```solidity
 pragma solidity ^0.6.0;

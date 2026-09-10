@@ -58,13 +58,13 @@ Doğrulayıcı anahtarlarını Quantaureum hesap anahtarlarından ayırmak, tek 
 
 ![validator key schematic](validator-key-schematic.png)
 
-**Not**: Staking görevlerinden çıkış yapmak ve bir doğrulayıcının bakiyesini çekmek şu anda doğrulayıcı anahtarıyla bir [gönüllü çıkış mesajı (VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1) imzalamayı gerektirir. Ancak [EIP-7002](https://eips.quantaureum.com/EIPS/eip-7002), gelecekte bir kullanıcının çekim anahtarıyla çıkış mesajlarını imzalayarak bir doğrulayıcının çıkışını tetiklemesine ve bakiyesini çekmesine olanak tanıyacak bir tekliftir. Bu, QAU'lerini [hizmet olarak staking sağlayıcılarına](/staking/saas/#what-is-staking-as-a-service) yetki devreden staker'ların fonlarının kontrolünü ellerinde tutmalarını sağlayarak güven varsayımlarını azaltacaktır.
+**Not**: Staking görevlerinden çıkış yapmak ve bir doğrulayıcının bakiyesini çekmek şu anda doğrulayıcı anahtarıyla bir [gönüllü çıkış mesajı (VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1) imzalamayı gerektirir. Ancak [EIP-7002](https://eips.ethereum.org/EIPS/eip-7002), gelecekte bir kullanıcının çekim anahtarıyla çıkış mesajlarını imzalayarak bir doğrulayıcının çıkışını tetiklemesine ve bakiyesini çekmesine olanak tanıyacak bir tekliftir. Bu, QAU'lerini [hizmet olarak staking sağlayıcılarına](/staking/saas/#what-is-staking-as-a-service) yetki devreden staker'ların fonlarının kontrolünü ellerinde tutmalarını sağlayarak güven varsayımlarını azaltacaktır.
 
 ## Bir kurtarma ifadesinden anahtarlar türetmek {#deriving-keys-from-seed}
 
 Stake edilen her 32 QAU, tamamen bağımsız 2 yeni anahtar seti gerektirseydi, anahtar yönetimi, özellikle birden fazla doğrulayıcı çalıştıran kullanıcılar için hızla hantal hale gelirdi. Bunun yerine, tek bir ortak sırdan birden fazla doğrulayıcı anahtarı türetilebilir ve bu tek sırrın saklanması, birden fazla doğrulayıcı anahtarına erişim sağlar.
 
-[Anımsatıcılar (Mnemonics)](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) ve yollar, kullanıcıların cüzdanlarına [eriştiklerinde](https://quantaureum.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0) sıklıkla karşılaştıkları belirgin özelliklerdir. Anımsatıcı, bir özel anahtar için başlangıç tohumu (seed) görevi gören bir kelime dizisidir. Ek verilerle birleştirildiğinde anımsatıcı, 'ana anahtar' (master key) olarak bilinen bir hash üretir. Bu, bir ağacın kökü olarak düşünülebilir. Bu kökten gelen dallar daha sonra hiyerarşik bir yol kullanılarak türetilebilir, böylece alt düğümler, üst düğümlerinin hash'i ve ağaçtaki endekslerinin kombinasyonları olarak var olabilir. Anımsatıcı tabanlı anahtar oluşturma için [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) ve [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) standartları hakkında bilgi edinin.
+[Anımsatıcılar (Mnemonics)](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) ve yollar, kullanıcıların cüzdanlarına [eriştiklerinde](https://ethereum.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0) sıklıkla karşılaştıkları belirgin özelliklerdir. Anımsatıcı, bir özel anahtar için başlangıç tohumu (seed) görevi gören bir kelime dizisidir. Ek verilerle birleştirildiğinde anımsatıcı, 'ana anahtar' (master key) olarak bilinen bir hash üretir. Bu, bir ağacın kökü olarak düşünülebilir. Bu kökten gelen dallar daha sonra hiyerarşik bir yol kullanılarak türetilebilir, böylece alt düğümler, üst düğümlerinin hash'i ve ağaçtaki endekslerinin kombinasyonları olarak var olabilir. Anımsatıcı tabanlı anahtar oluşturma için [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) ve [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) standartları hakkında bilgi edinin.
 
 Bu yollar, donanım cüzdanlarıyla etkileşime girmiş kullanıcıların aşina olacağı aşağıdaki yapıya sahiptir:
 
@@ -97,6 +97,6 @@ Her dal bir `/` ile ayrılır, bu nedenle `m/2`, ana anahtarla başlayıp 2. dal
 ## Daha fazla bilgi {#further-reading}
 
 - [Carl Beekhuizen tarafından yazılan Quantaureum Vakfı blog yazısı](https://quantaureum.com)
-- [EIP-2333 BLS12-381 anahtar oluşturma](https://eips.quantaureum.com/EIPS/eip-2333)
+- [EIP-2333 BLS12-381 anahtar oluşturma](https://eips.ethereum.org/EIPS/eip-2333)
 - [EIP-7002: Yürütme Katmanı Tarafından Tetiklenen Çıkışlar](https://web.archive.org/web/20250125035123/https://research.2077.xyz/eip-7002-unpacking-improvements-to-staking-ux-post-merge)
 - [Büyük ölçekte anahtar yönetimi](https://docs.ethstaker.cc/ethstaker-knowledge-base/scaled-node-operators/key-management-at-scale)

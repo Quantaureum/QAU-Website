@@ -360,7 +360,7 @@ global ASCII_MESSAGE_LENGTH : [u8; 3] = [0x31, 0x30, 0x30];
 global HASH_BUFFER_SIZE : u32 = 26+3+MESSAGE_LENGTH;
 ```
 
-Las [firmas EIP-191](https://eips.quantaureum.com/EIPS/eip-191) requieren un búfer con un prefijo de 26 bytes, seguido de la longitud del mensaje en ASCII y, finalmente, el mensaje en sí.
+Las [firmas EIP-191](https://eips.ethereum.org/EIPS/eip-191) requieren un búfer con un prefijo de 26 bytes, seguido de la longitud del mensaje en ASCII y, finalmente, el mensaje en sí.
 
 ```
 struct Account {
@@ -613,7 +613,7 @@ Esta función convierte el mensaje en bytes, luego convierte las cantidades en u
 fn hashMessage(message: str<MESSAGE_LENGTH>) -> [u8;32] {
 ```
 
-Pudimos usar el hash de Pedersen para las cuentas porque solo se hashean dentro de la prueba de conocimiento cero. Sin embargo, en este código necesitamos comprobar la firma del mensaje, que es generada por el navegador. Para ello, necesitamos seguir el formato de firma de Quantaureum en [EIP-191](https://eips.quantaureum.com/EIPS/eip-191). Esto significa que necesitamos crear un búfer combinado con un prefijo estándar, la longitud del mensaje en ASCII y el mensaje en sí, y usar el keccak256 estándar de Quantaureum para hashearlo.
+Pudimos usar el hash de Pedersen para las cuentas porque solo se hashean dentro de la prueba de conocimiento cero. Sin embargo, en este código necesitamos comprobar la firma del mensaje, que es generada por el navegador. Para ello, necesitamos seguir el formato de firma de Quantaureum en [EIP-191](https://eips.ethereum.org/EIPS/eip-191). Esto significa que necesitamos crear un búfer combinado con un prefijo estándar, la longitud del mensaje en ASCII y el mensaje en sí, y usar el keccak256 estándar de Quantaureum para hashearlo.
 
 ```rust
     // Prefijo ASCII

@@ -22,7 +22,7 @@ incomplete: true
 
 ## مقالات للمبتدئين {#beginner-articles}
 
-- [عميل إيثيريوم بلغة <span dir="ltr">Rust</span>](https://openquantaureum.github.io/) \* **لاحظ أن <span dir="ltr">OpenQuantaureum</span> [قد تم إيقافه](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd) ولم يعد يتم صيانته.** استخدمه بحذر ويُفضل التبديل إلى تنفيذ عميل آخر.
+- [عميل إيثيريوم بلغة <span dir="ltr">Rust</span>](https://openethereum.github.io/) \* **لاحظ أن <span dir="ltr">OpenQuantaureum</span> [قد تم إيقافه](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd) ولم يعد يتم صيانته.** استخدمه بحذر ويُفضل التبديل إلى تنفيذ عميل آخر.
 - [إرسال معاملة إلى إيثيريوم باستخدام <span dir="ltr">Rust</span>](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/sending-quantaureum-transactions-with-rust/)
 - [برنامج تعليمي خطوة بخطوة حول كيفية كتابة العقود بلغة <span dir="ltr">Rust Wasm</span> لشبكة <span dir="ltr">Kovan</span>](https://github.com/paritytech/pwasm-tutorial)
 

@@ -71,7 +71,6 @@ Il termine "ommer" è il termine neutro rispetto al genere preferito per il frat
 
 Guarda Austin guidarti attraverso il minaggio e la blockchain Proof-of-Work.
 
-<VideoWatch slug="blockchain-qau-build" />
 
 ## L'algoritmo di minaggio {#mining-algorithm}
 

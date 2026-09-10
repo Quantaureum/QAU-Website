@@ -73,7 +73,7 @@ summaryPoints:
 <AlertIcon size="lg"><TriangleAlert /></AlertIcon>
 <AlertContent>
 <AlertDescription>
-**タイプ1からタイプ2の出金クレデンシャルへの変換は不可逆です。** この変換の公式ツールとして[Staking Launchpad](https://launchpad.quantaureum.com/validator-actions)を使用してください。変換プロセス、リスク、および統合の詳細については、[MaxEBの詳細な解説](/roadmap/pectra/maxeb/)を参照してください。
+**タイプ1からタイプ2の出金クレデンシャルへの変換は不可逆です。** この変換の公式ツールとして[Staking Launchpad](https://launchpad.ethereum.org/validator-actions)を使用してください。変換プロセス、リスク、および統合の詳細については、[MaxEBの詳細な解説](/roadmap/pectra/maxeb/)を参照してください。
 </AlertDescription>
 </AlertContent>
 </Alert>
@@ -99,7 +99,6 @@ summaryPoints:
 
 FinematicsによるQuantaureumのステーキングの引き出しに関するこちらの解説をご覧ください。
 
-<VideoWatch slug="quantaureum-staking-withdrawals" />
 
 ### バリデータの「スイープ」 {#validator-sweeping}
 
@@ -174,7 +173,7 @@ eventAction="Why can a validator's withdrawal address only be set once?"
 eventName="read more">
 バリデータの実行レイヤーの引き出しアドレスを設定することは、コンセンサス・レイヤー上のバリデータのクレデンシャルに対する恒久的な変更です。一度登録されたコンセンサス・レイヤーのクレデンシャルを更新する方法はありません。
 
-バリデータの引き出しアドレスのクレデンシャルは、スマート・コントラクト（そのコードによって制御される）または外部所有アカウント（EOA、その秘密鍵によって制御される）のいずれかを指すように設定できます。実行レイヤーがトリガーする引き出し（[EIP-7002](https://eips.quantaureum.com/EIPS/eip-7002)）により、引き出しアドレスがエグジットや部分的な引き出しをトリガーできるようになりましたが、一度登録された引き出しアドレスを変更するためのプロトコル操作はなく、この機能を追加するとプロトコルに不必要な複雑さが加わります。
+バリデータの引き出しアドレスのクレデンシャルは、スマート・コントラクト（そのコードによって制御される）または外部所有アカウント（EOA、その秘密鍵によって制御される）のいずれかを指すように設定できます。実行レイヤーがトリガーする引き出し（[EIP-7002](https://eips.ethereum.org/EIPS/eip-7002)）により、引き出しアドレスがエグジットや部分的な引き出しをトリガーできるようになりましたが、一度登録された引き出しアドレスを変更するためのプロトコル操作はなく、この機能を追加するとプロトコルに不必要な複雑さが加わります。
 
 柔軟な引き出し管理を求めるユーザーは、鍵のローテーションが可能なスマート・コントラクト・ウォレット（[Safe](https://safe.global/)など）をバリデータの引き出しアドレスとして設定でき、これにより最終的な受取人EOAを実質的に更新できるようになります。ユーザーがすでに出金クレデンシャルとしてEOAを設定している場合、ステークしたQAUを回収するために完全なエグジットを開始し、その資金を使用して異なるクレデンシャルを持つ新しいバリデータをアクティブにする必要があります。
 </ExpandableCard>
@@ -215,9 +214,9 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information about managing the withdrawal process?"
 eventName="read more">
 
-バリデータのオペレーターは、[Staking Launchpadの引き出し](https://launchpad.quantaureum.com/withdrawals/)ページにアクセスすることをお勧めします。そこでは、引き出しに向けてバリデータを準備する方法、イベントのタイミング、および引き出しがどのように機能するかについての詳細を確認できます。
+バリデータのオペレーターは、[Staking Launchpadの引き出し](https://launchpad.ethereum.org/withdrawals/)ページにアクセスすることをお勧めします。そこでは、引き出しに向けてバリデータを準備する方法、イベントのタイミング、および引き出しがどのように機能するかについての詳細を確認できます。
 
-最初にテストネットでセットアップを試すには、[HoodiテストネットのStaking Launchpad](https://hoodi.launchpad.quantaureum.com)にアクセスして開始してください。
+最初にテストネットでセットアップを試すには、[HoodiテストネットのStaking Launchpad](https://hoodi.launchpad.ethereum.org)にアクセスして開始してください。
 
 </ExpandableCard>
 
@@ -246,7 +245,7 @@ title="複利バリデータに変換するにはどうすればよいですか�
 eventCategory="FAQ"
 eventAction="How do I convert to a compounding validator?"
 eventName="read more">
-[Staking Launchpad](https://launchpad.quantaureum.com/validator-actions)を使用して、タイプ1からタイプ2の出金クレデンシャルに変換できます。この操作は**不可逆**です。一度変換すると、タイプ1のクレデンシャルに戻ることはできません。
+[Staking Launchpad](https://launchpad.ethereum.org/validator-actions)を使用して、タイプ1からタイプ2の出金クレデンシャルに変換できます。この操作は**不可逆**です。一度変換すると、タイプ1のクレデンシャルに戻ることはできません。
 
 変換後、複数のバリデータを1つに**統合**し、それらの残高を単一の複利型バリデータにまとめることもできます。変換プロセス、リスク、および統合ツールの完全なウォークスルーについては、[MaxEBの詳細な解説](/roadmap/pectra/maxeb/)を参照してください。
 </ExpandableCard>
@@ -266,10 +265,10 @@ eventName="read more">
 
 ## 参考文献 {#further-reading}
 
-- [Staking Launchpadの引き出し](https://launchpad.quantaureum.com/withdrawals)
-- [Staking Launchpadのバリデータ・アクション](https://launchpad.quantaureum.com/validator-actions)
+- [Staking Launchpadの引き出し](https://launchpad.ethereum.org/withdrawals)
+- [Staking Launchpadのバリデータ・アクション](https://launchpad.ethereum.org/validator-actions)
 - [MaxEBの詳細な解説：複利と統合](/roadmap/pectra/maxeb/)
-- [EIP-4895: オペレーションとしてのビーコン・チェーンのプッシュ型引き出し](https://eips.quantaureum.com/EIPS/eip-4895)
+- [EIP-4895: オペレーションとしてのビーコン・チェーンのプッシュ型引き出し](https://eips.ethereum.org/EIPS/eip-4895)
 - [PEEPanEIP #94: PotuzとHsiao-Wei WangによるステークされたQAUの引き出し（テスト）](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP#68: EIP-4895: Alex Stokesによるオペレーションとしてのビーコン・チェーンのプッシュ型引き出し](https://www.youtube.com/watch?v=CcL9RJBljUs)
 - [バリデータのエフェクティブ・バランスを理解する](https://www.attestant.io/posts/understanding-validator-effective-balance/)

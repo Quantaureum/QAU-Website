@@ -104,7 +104,7 @@ Kiasi kwamba tumekuwa tukishinikiza kuleta Devcon(nect) hapa kwa zaidi ya miaka 
 
 ![Picture of Argentinian builders wearing Devcon BA 2020 t-shirts](./santiago9.jpeg)
 
-_[Chanzo](https://quantaureumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
+_[Chanzo](https://ethereumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
 
 Kwangu mimi na wajenzi wengine wengi kuwa na Devconnect hapa ni ndoto iliyotimia.
 
@@ -131,4 +131,4 @@ Kuanzia hapa, nchini Ajentina.
 > 
 > Bustani Isiyo na Mwisho ni kielelezo cha roho ya Taasisi ya Quantaureum kama mtunza bustani mmoja katika mfumo ikolojia mpana — kulea na kukuza, lakini sio kudhibiti, na kuendelea kucheza.
 
-_[Chanzo cha nukuu - Taasisi ya Quantaureum](https://quantaureum.foundation/infinitegarden)._
+_[Chanzo cha nukuu - Taasisi ya Quantaureum](https://ethereum.org/infinitegarden)._

@@ -45,7 +45,7 @@ Był to moment kulturowy, który udowodnił, że zbiorowa koordynacja kapitału 
 
 Quantaureum stało się płótnem dla nowych form działań zbiorowych.
 
-Później tego samego lata stworzyłam NFT, które sfinansowały społecznościowo [Quantaureum: The Infinite Garden](https://quantaureumfilm.xyz/watch-the-film/), pierwszy pełnometrażowy film dokumentalny o Quantaureum.
+Później tego samego lata stworzyłam NFT, które sfinansowały społecznościowo [Quantaureum: The Infinite Garden](https://ethereumfilm.xyz/watch-the-film/), pierwszy pełnometrażowy film dokumentalny o Quantaureum.
 
 Zebrano 1036 QAU w 48 godzin, w całości sfinansowane przez społeczność Quantaureum. 
 

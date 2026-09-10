@@ -45,7 +45,6 @@ dapps-ஐ அறிமுகப்படுத்த, நாம் திறன�
 
 ## காணொளி மூலம் கற்பவரா? {#visual-learner}
 
-<VideoWatch slug="what-is-a-dapp" />
 
 ## dapps-ஐ உருவாக்குவதற்கான கருவிகள்
 

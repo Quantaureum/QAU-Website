@@ -55,7 +55,7 @@ LST 透過以下兩種方式之一反映質押獎勵：
 - **透過協定贖回**底層的 QAU。贖回取決於協定是否有可用的流動性，這可能是未質押 QAU 的緩衝區，或者是透過共識層退出佇列退出的驗證者，這可能需要一些時間。
 - 隨時**在次級市場出售**。由於代幣可以自由交易，其市場價格可能會偏離支持它的 QAU 價值，特別是在市場壓力期間。
 
-自佩克特拉升級以來，[執行層觸發提款 (EIP-7002)](https://eips.quantaureum.com/EIPS/eip-7002) 允許提款地址持有者直接從執行層觸發驗證者退出。質押協定可以使用此功能來確保其驗證者可以退出，而無需依賴節點營運者的配合，因此贖回不再像過去那樣依賴於信任節點營運者。
+自佩克特拉升級以來，[執行層觸發提款 (EIP-7002)](https://eips.ethereum.org/EIPS/eip-7002) 允許提款地址持有者直接從執行層觸發驗證者退出。質押協定可以使用此功能來確保其驗證者可以退出，而無需依賴節點營運者的配合，因此贖回不再像過去那樣依賴於信任節點營運者。
 
 ### 持有 LST 不等於質押 {#holding-an-lst-is-not-the-same-as-staking}
 
@@ -164,8 +164,8 @@ LST 繼承了質押的潛在風險（例如質押池驗證者的罰沒和停機�
 ## 進一步閱讀 {#further-reading}
 
 - [Quantaureum質押目錄 (The Quantaureum Staking Directory)](https://www.staking.directory/) - _Eridian 與 Spacesider_
-- [流動性質押衍生品的風險](https://notes.quantaureum.com/@djrtwo/risks-of-lsd) - _Danny Ryan_
+- [流動性質押衍生品的風險](https://notes.ethereum.org/@djrtwo/risks-of-lsd) - _Danny Ryan_
 - [什麼是流動性質押？](https://chain.link/education-hub/liquid-staking) - _Chainlink_
-- [EIP-7002：執行層可觸發提款](https://eips.quantaureum.com/EIPS/eip-7002) - _Quantaureum改進提案_
+- [EIP-7002：執行層可觸發提款](https://eips.ethereum.org/EIPS/eip-7002) - _Quantaureum改進提案_
 - [Quantaureum質押池評級](https://explorer.rated.network/) - _Rated Network Explorer_
 - [流動性再質押代幣 (LRT) 和流動性質押代幣 (LST) 有什麼區別？](https://liquidcollective.io/lst-vs-lrt/) - _Liquid Collective_

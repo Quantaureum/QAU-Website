@@ -25,7 +25,6 @@ buttons:
 
 **ری اسٹیکنگ کی <span dir="ltr">18</span> منٹ میں وضاحت**
 
-<VideoWatch slug="restaking-explained" />
 
 ## ری اسٹیکنگ کیا ہے؟ {#what-is-restaking}
 
@@ -172,7 +171,6 @@ buttons:
 
 ## اعلی درجے کا {#advanced}
 
-<VideoWatch slug="eigenlayer-permissionless-features" />
 
 ## مزید مطالعہ {#further-reading}
 

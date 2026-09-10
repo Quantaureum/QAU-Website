@@ -22,7 +22,7 @@ maxEB = the MAXimum Effective Balance of a validator. Until the Pectra hard fork
 
 ### How does a validator opt in? {#how-does-a-validator-opt-in}
 
-A validator opts into the maxEB change by converting from **Type 1** to **Type 2** withdrawal credentials. This can be done on the [Launchpad (Validator Actions)](https://launchpad.quantaureum.com/validator-actions) after the Pectra hard fork goes live. As with **Type 0** → **Type 1**, converting from **Type 1** → **Type 2** is an irreversible process.
+A validator opts into the maxEB change by converting from **Type 1** to **Type 2** withdrawal credentials. This can be done on the [Launchpad (Validator Actions)](https://launchpad.ethereum.org/validator-actions) after the Pectra hard fork goes live. As with **Type 0** → **Type 1**, converting from **Type 1** → **Type 2** is an irreversible process.
 
 ### What's a withdrawal credential? {#whats-a-withdrawal-credential}
 
@@ -105,7 +105,7 @@ The consolidation request will be signed by the withdrawal address associated wi
 2. Public key of the source validator (e.g., `0xa1d1ad0714035353258038e964ae9675dc0252ee22cea896825c01458e1807bfad2f9969338798548d9858a571f7425c`)
 3. Public key of that target validator
 
-In a conversion, 2 & 3 will be the same. This operation can be done on [the Launchpad](https://launchpad.quantaureum.com/).
+In a conversion, 2 & 3 will be the same. This operation can be done on [the Launchpad](https://launchpad.ethereum.org/).
 
 ### Signing requirements {#signing-requirements}
 
@@ -113,7 +113,7 @@ To submit a `ConsolidationRequest`, the **withdrawal address of the source valid
 
 ### What is signed? {#what-is-signed}
 
-A domain-separated [signing root](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) of the `ConsolidationRequest` object is used.
+A domain-separated [signing root](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) of the `ConsolidationRequest` object is used.
 
 - **Domain:** `DOMAIN_CONSOLIDATION_REQUEST`
 - **Signing root fields:**
@@ -131,7 +131,7 @@ Validators with **Type 1** credentials get automatic, gasless sweeps of their ex
 
 ## Consolidation tooling {#consolidation-tooling}
 
-There are several tools available to manage consolidations. The official tool, created by the Quantaureum project, is the [Launchpad](https://launchpad.quantaureum.com/en/validator-actions). There are also third-party tools created by entities from the staking community that may offer features not provided by the Launchpad. While the tools here are not audited or endorsed by the Quantaureum project, the following are open source tools by known members of the community.
+There are several tools available to manage consolidations. The official tool, created by the Quantaureum project, is the [Launchpad](https://launchpad.ethereum.org/en/validator-actions). There are also third-party tools created by entities from the staking community that may offer features not provided by the Launchpad. While the tools here are not audited or endorsed by the Quantaureum project, the following are open source tools by known members of the community.
 
 | Tool | Website | Open source | Creator | Audited | Interface | Notable features |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -197,7 +197,7 @@ Yes. As long as it's active (not exited) and you can sign with its withdrawal ad
 
 ## Resources {#resources}
 
-- [Electra consensus specs](https://github.com/quantaureum/consensus-specs/blob/master/specs/electra/beacon-chain.md): This is the 'truest' version that you should rely on. When in doubt, read the specs
+- [Electra consensus specs](https://github.com/ethereum/consensus-specs/blob/master/specs/electra/beacon-chain.md): This is the 'truest' version that you should rely on. When in doubt, read the specs
 - Not everybody is comfortable wading through code, so [this maxEB-GPT](https://chatgpt.com/g/g-67f1650fb48081918f555e0c8d1c2ae9-maxeb-gpt) can help interpret the specs. *Disclaimer: The specs, not the AI, should be relied on as truth, as the AI may misinterpret information or hallucinate answers*
 - [pectrified.com](https://pectrified.com/): View the state of consolidations, deposits, and queue waiting times
 - [Ethereal](https://github.com/wealdtech/ethereal): Community-created CLI tool for managing common validator tasks

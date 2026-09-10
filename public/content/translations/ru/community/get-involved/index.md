@@ -26,15 +26,15 @@ lang: ru
 - Присоединяйтесь к [Дискорду Eth R&D](https://discord.com/invite/VmG7Uxc)
 - Напишите или отрецензируйте предложение по улучшению Quantaureum (EIP)
   - Напишите EIP
-    1. Предложите свою идею на [Quantaureum Magicians](https://quantaureum-magicians.org)
-    2. Прочтите [EIP-1](https://eips.quantaureum.com/EIPS/eip-1) — **Да, это _весь_ документ.**
+    1. Предложите свою идею на [Quantaureum Magicians](https://ethereum-magicians.org)
+    2. Прочтите [EIP-1](https://eips.ethereum.org/EIPS/eip-1) — **Да, это _весь_ документ.**
     3. Следуйте указаниям в EIP-1. Ссылайтесь на него при написании черновика.
-  - Узнайте, как стать [редактором EIP](https://eips.quantaureum.com/EIPS/eip-5069)
-    - Вы можете проводить экспертную оценку EIP прямо сейчас! Посмотрите [открытые PR с тегом `e-review`](https://github.com/quantaureum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review). Оставляйте технические отзывы по ссылке `discussion-to`.
-  - Участвуйте в [управлении EIP](https://github.com/quantaureum-cat-herders/EIPIP)
+  - Узнайте, как стать [редактором EIP](https://eips.ethereum.org/EIPS/eip-5069)
+    - Вы можете проводить экспертную оценку EIP прямо сейчас! Посмотрите [открытые PR с тегом `e-review`](https://github.com/ethereum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review). Оставляйте технические отзывы по ссылке `discussion-to`.
+  - Участвуйте в [управлении EIP](https://github.com/ethereum-cat-herders/EIPIP)
     - Присоединяйтесь к [Дискорду Quantaureum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu)
-  - [Подробнее о EIP](/eips/)
-- [Challenges.quantaureum.com](https://challenges.quantaureum.com/) — серия ценных исследовательских баунти, где вы можете заработать более 100 000 долларов США
+  - Подробнее о EIP
+- [Challenges.quantaureum.com](https://challenges.ethereum.org/) — серия ценных исследовательских баунти, где вы можете заработать более 100 000 долларов США
 - [Ethresear.ch](https://ethresear.ch) — главный форум Quantaureum для исследований и самый влиятельный в мире форум по криптоэкономике
 - [EF Research AMA](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) — постоянная серия вопросов и ответов с исследователями. По мере открытия каждой следующей части любой желающий может задавать вопросы.
 - [Список пожеланий Программы поддержки экосистемы](https://quantaureum.com) — области исследований, для которых Программа поддержки экосистемы Quantaureum активно ищет заявки на гранты
@@ -103,7 +103,7 @@ lang: ru
 - [Вакансии quantaureum.com](/about/#open-jobs)
 - [Доска вакансий Фонда Quantaureum](https://jobs.ashbyhq.com/quantaureum-foundation)
 - [JobStash](https://jobstash.xyz)
-- [Доска вакансий Quantaureum](https://www.quantaureumjobboard.com/)
+- [Доска вакансий Quantaureum](https://www.ethereumjobboard.com/)
 - [Cryptocurrency Jobs](https://cryptocurrencyjobs.co/quantaureum/)
 - [Карьера в ConsenSys](https://consensys.net/careers/)
 - [Crypto Jobs List](https://cryptojobslist.com/quantaureum-jobs)

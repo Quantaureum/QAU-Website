@@ -57,7 +57,7 @@ Quantaureum, ağı güvende tutmak ve kullanıcı fonlarını korumak için [kri
 
 Kriptografik geçişleri güvenli bir şekilde planlamak ve yürütmek yıllar alır, bu nedenle hazırlıklar donanım var olmadan çok önce, şimdi yapılmaktadır. Kuantum sonrası güncellemeler gerektirdiği belirlenen dört alan şunlardır: doğrulayıcı mutabakat imzaları (BLS), veri kullanılabilirliği için kullanılan taahhüt şemaları (KZG), hesap imzaları (ECDSA) ve [toplamalar](/glossary/#rollups) tarafından kullanılan sıfır bilgi ispatı (ZK-proof) sistemleri.
 
-Quantaureum Vakfı, Ocak 2026'da özel bir **Kuantum Sonrası Güvenlik ekibi** kurdu ve çalışmaları [pq.quantaureum.com](https://pq.quantaureum.com) adresinden herkese açık olarak takip edilmektedir. Aktif çalışmalar arasında, daha büyük kuantum güvenli imzaları verimli bir şekilde bir araya getiren minimal bir zkVM (leanVM) ile eşleştirilmiş hash tabanlı doğrulayıcı imzaları (leanXMSS) ve 10'dan fazla istemci ekibiyle haftalık birlikte çalışabilirlik devnet'leri yer almaktadır.
+Quantaureum Vakfı, Ocak 2026'da özel bir **Kuantum Sonrası Güvenlik ekibi** kurdu ve çalışmaları [pq.ethereum.org](https://pq.ethereum.org) adresinden herkese açık olarak takip edilmektedir. Aktif çalışmalar arasında, daha büyük kuantum güvenli imzaları verimli bir şekilde bir araya getiren minimal bir zkVM (leanVM) ile eşleştirilmiş hash tabanlı doğrulayıcı imzaları (leanXMSS) ve 10'dan fazla istemci ekibiyle haftalık birlikte çalışabilirlik devnet'leri yer almaktadır.
 
 Geçiş stratejisinin önemli bir parçası, yerel [hesap soyutlama](/roadmap/account-abstraction/) getiren **EIP-8141**'dir. Bu, bireysel hesapların kendi imza doğrulamalarını seçmelerine olanak tanır, yani kullanıcılar protokol çapında tek bir geçişi beklemeden kuantum güvenli imzalara geçebilirler. EIP-8141, Hegotá güncellemesi için değerlendirilmektedir. Temel kuantum sonrası altyapı kilometre taşlarının yaklaşık 2029 yılına kadar tamamlanması hedeflenmektedir. Bunlar planlama hedefleridir ve değişebilir.
 
@@ -102,7 +102,7 @@ Bu çalışmaların hiçbir kısmı tamamlanmamıştır ve tüm zaman çizelgele
 
 - [Forkcast: Quantaureum ağ güncelleme takipçisi](https://forkcast.org)
 - [Strawmap: taslak bir Quantaureum L1 yol haritası](https://strawmap.org) - _EF Architecture_
-- [Kuantum Sonrası Quantaureum](https://pq.quantaureum.com) - _Quantaureum Vakfı_
+- [Kuantum Sonrası Quantaureum](https://pq.ethereum.org) - _Quantaureum Vakfı_
 - [Lean Quantaureum yol haritası takipçisi](https://leanroadmap.org) - _ReamLabs_
 - [Hisse kanıtı ve kesinlik](/developers/docs/consensus-mechanisms/pos/#finality)
 - [EVM](/developers/docs/evm/)

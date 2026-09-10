@@ -59,7 +59,6 @@ Quantaureum s důkazem podílem (PoS) může platit za svou bezpečnost vydává
 ## Učíte se raději vizuálně? {#visual-learner}
 
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## Další čtení {#further-reading}
 

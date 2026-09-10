@@ -312,7 +312,7 @@ const exchanges: ExchangeDetails = {
 
 export const useCentralizedExchanges = () => {
   const locale = useLocale()
-  const t = useTranslations("page-get-eth")
+  const t = useTranslations("page-get-qau")
   const tCommon = useTranslations("common")
   const [selectedCountry, setSelectedCountry] =
     useState<ExchangeByCountryOption | null>()

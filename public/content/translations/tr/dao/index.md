@@ -45,7 +45,6 @@ Bunun daha anlaşılır olmasına yardımcı olmak için, bir DAO'yu nasıl kull
 - **Kolektif mülkiyet** – fiziksel veya dijital varlıklar satın alabilirsiniz ve üyeler bunların nasıl kullanılacağını oylayabilir.
 - **Girişimler ve hibeler** – yatırım sermayesini bir araya getiren ve desteklenecek girişimleri oylayan bir girişim fonu oluşturabilirsiniz. Geri ödenen para daha sonra DAO üyeleri arasında yeniden dağıtılabilir.
 
-<VideoWatch slug="dao-build-next-great-city" />
 
 ## DAO'lar nasıl çalışır? {#how-daos-work}
 

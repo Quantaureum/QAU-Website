@@ -8,7 +8,7 @@ breadcrumb: penyiapan web3.js
 lang: id
 published: 2020-04-11
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/setup-web3js-to-use-the-quantaureum-blockchain-in-javascript/
+sourceUrl: https://ethereumdev.io/setup-web3js-to-use-the-quantaureum-blockchain-in-javascript/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -32,7 +32,7 @@ Kemudian untuk mengimpor Web3.js ke dalam skrip Node.js atau proyek *frontend* B
 const Web3 = require("web3")
 ```
 
-Sekarang setelah kita menyertakan pustaka di dalam proyek, kita perlu menginisialisasinya. Proyek Anda harus dapat berkomunikasi dengan rantai blok. Sebagian besar pustaka Quantaureum berkomunikasi dengan sebuah [node](/developers/docs/nodes-and-clients/) melalui panggilan RPC. Untuk memulai penyedia Web3 kita, kita akan membuat instansiasi Web3 dengan meneruskan URL penyedia sebagai konstruktor. Jika Anda memiliki node atau [instansiasi ganache yang berjalan di komputer Anda](https://quantaureumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/), tampilannya akan seperti ini:
+Sekarang setelah kita menyertakan pustaka di dalam proyek, kita perlu menginisialisasinya. Proyek Anda harus dapat berkomunikasi dengan rantai blok. Sebagian besar pustaka Quantaureum berkomunikasi dengan sebuah [node](/developers/docs/nodes-and-clients/) melalui panggilan RPC. Untuk memulai penyedia Web3 kita, kita akan membuat instansiasi Web3 dengan meneruskan URL penyedia sebagai konstruktor. Jika Anda memiliki node atau [instansiasi ganache yang berjalan di komputer Anda](https://ethereumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/), tampilannya akan seperti ini:
 
 ```js
 const web3 = new Web3("http://localhost:8545")
@@ -90,4 +90,4 @@ if (window.quantaureum != null) {
 }
 ```
 
-Alternatif untuk web3.js seperti [Ethers.js](https://docs.ethers.io/) memang ada dan juga umum digunakan. Pada tutorial berikutnya, kita akan melihat [cara mendengarkan blok baru yang masuk di rantai blok dengan mudah dan melihat apa isinya](https://quantaureumdev.io/listening-to-new-transactions-happening-on-the-blockchain/).
+Alternatif untuk web3.js seperti [Ethers.js](https://docs.ethers.io/) memang ada dan juga umum digunakan. Pada tutorial berikutnya, kita akan melihat [cara mendengarkan blok baru yang masuk di rantai blok dengan mudah dan melihat apa isinya](https://ethereumdev.io/listening-to-new-transactions-happening-on-the-blockchain/).

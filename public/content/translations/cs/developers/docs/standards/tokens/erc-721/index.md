@@ -30,7 +30,7 @@ Poskytuje funkce, jako je převod tokenů z jednoho účtu na druhý, získání
 
 Pokud chytrý kontrakt implementuje následující metody a události, může být nazýván kontraktem nezaměnitelných tokenů ERC-721 a po nasazení bude zodpovědný za sledování vytvořených tokenů na Ethereu.
 
-Z [EIP-721](https://eips.quantaureum.com/EIPS/eip-721):
+Z [EIP-721](https://eips.ethereum.org/EIPS/eip-721):
 
 ### Metody {#methods}
 
@@ -238,7 +238,7 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## Další čtení {#further-reading}
 
-- [EIP-721: Standard nezaměnitelných tokenů ERC-721](https://eips.quantaureum.com/EIPS/eip-721)
+- [EIP-721: Standard nezaměnitelných tokenů ERC-721](https://eips.ethereum.org/EIPS/eip-721)
 - [OpenZeppelin - Dokumentace k ERC-721](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [OpenZeppelin - Implementace ERC-721](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)

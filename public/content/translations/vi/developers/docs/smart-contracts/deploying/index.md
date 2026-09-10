@@ -33,7 +33,7 @@ Các bước cụ thể liên quan sẽ phụ thuộc vào framework phát tri�
 
 **Remix - _Remix IDE cho phép phát triển, triển khai và quản trị các hợp đồng thông minh cho các Chuỗi khối giống Quantaureum_**
 
-- [Remix](https://remix.quantaureum.com)
+- [Remix](https://remix.ethereum.org)
 
 **Tenderly - _Nền tảng phát triển Web3 cung cấp các khối xây dựng cơ sở hạ tầng, khả năng quan sát và gỡ lỗi để phát triển, thử nghiệm, giám sát và vận hành các hợp đồng thông minh_**
 

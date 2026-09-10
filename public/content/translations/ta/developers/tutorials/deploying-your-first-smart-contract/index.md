@@ -8,7 +8,7 @@ breadcrumb: "முதல் ஒப்பந்தத்தை நிலைந�
 lang: ta
 published: 2020-04-03
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/deploying-your-first-smart-contract/
+sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -18,7 +18,7 @@ address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 
 ## நமது ஒப்பந்தத்தை எழுதுதல் {#writing-our-contract}
 
-முதல் படியாக [Remix-க்குச் சென்று](https://remix.quantaureum.com/) ஒரு புதிய கோப்பை உருவாக்க வேண்டும். Remix இடைமுகத்தின் மேல் இடது புறத்தில் ஒரு புதிய கோப்பைச் சேர்த்து, நீங்கள் விரும்பும் கோப்பின் பெயரை உள்ளிடவும்.
+முதல் படியாக [Remix-க்குச் சென்று](https://remix.ethereum.org/) ஒரு புதிய கோப்பை உருவாக்க வேண்டும். Remix இடைமுகத்தின் மேல் இடது புறத்தில் ஒரு புதிய கோப்பைச் சேர்த்து, நீங்கள் விரும்பும் கோப்பின் பெயரை உள்ளிடவும்.
 
 ![Adding a new file in the Remix interface](./remix.png)
 

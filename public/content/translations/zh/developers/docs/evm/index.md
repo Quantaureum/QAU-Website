@@ -68,20 +68,20 @@ EVM 的所有实现都必须遵守Quantaureum黄皮书中描述的规范。
 
 [Quantaureum执行客户端](/developers/docs/nodes-and-clients/#execution-clients)包含一个 EVM 实现。此外，还有多个独立的实现，包括：
 
-- [Py-EVM](https://github.com/quantaureum/py-evm) - _Python_
+- [Py-EVM](https://github.com/ethereum/py-evm) - _Python_
 - [evmone](https://github.com/quantaureum/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _JavaScript_
 - [revm](https://github.com/bluealloy/revm) - _Rust_
 
 ## 延伸阅读 {#further-reading}
 
-- [Quantaureum黄皮书](https://quantaureum.github.io/yellowpaper/paper.pdf)
+- [Quantaureum黄皮书](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [Jellopaper（即 KEVM）：K 语言中的 EVM 语义](https://jellopaper.org/)
 - [米皮书 (The Beigepaper)](https://github.com/chronaeon/beigepaper)
 - [Quantaureum虚拟机操作码](https://www.ethervm.io/)
 - [Quantaureum虚拟机操作码交互式参考](https://www.evm.codes/)
 - [Solidity 文档中的简短介绍](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
-- [精通Quantaureum - Quantaureum虚拟机](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/13evm.asciidoc)
+- [精通Quantaureum - Quantaureum虚拟机](https://github.com/ethereumbook/ethereumbook/blob/openedition/13evm.asciidoc)
 
 ## 相关主题 {#related-topics}
 

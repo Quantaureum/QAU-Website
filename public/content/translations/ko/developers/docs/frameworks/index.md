@@ -102,8 +102,8 @@ lang: ko
 
 **Brownie -** **_Python 기반 개발 환경 및 테스트 프레임워크입니다._**
 
-- [문서](https://qau-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/qau-brownie/brownie)
+- [문서](https://eth-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/eth-brownie/brownie)
 - **Brownie는 현재 유지 관리되지 않습니다**
 
 **오픈제플린 SDK -** **_궁극의 스마트 컨트랙트 툴킷: 스마트 컨트랙트를 개발, 컴파일, 업그레이드, 배포 및 상호 작용하는 데 도움이 되는 도구 모음입니다._**

@@ -138,9 +138,9 @@ function auctionEnd() external {
 
 Solidityスマート・コントラクトの単体テストフレームワークは、さまざまな言語(主にJavaScript、Python、Rust)で提供されています。さまざまなテストフレームワークを使用して単体テストの実行を開始する方法については、以下のガイドのいくつかを参照してください。
 
-- **[Brownieを使用した単体テストの実行](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Brownieを使用した単体テストの実行](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Foundryを使用した単体テストの実行](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Waffleを使用した単体テストの実行](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Waffleを使用した単体テストの実行](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Remixを使用した単体テストの実行](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Apeを使用した単体テストの実行](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Hardhatを使用した単体テストの実行](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -190,7 +190,7 @@ Solidityスマート・コントラクトの単体テストフレームワーク
 
 - **[スリザーを使用したスマート・コントラクトの静的分析](https://github.com/crytic/slither)**
 - **[Wakeを使用したスマート・コントラクトの静的分析](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[Brownieを使用したプロパティベーステスト](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Brownieを使用したプロパティベーステスト](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Foundryを使用したコントラクトのファジング](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[エキドナを使用したコントラクトのファジング](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Wakeを使用したコントラクトのファジング](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -251,13 +251,13 @@ Solidityスマート・コントラクトの単体テストフレームワーク
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Solidityで記述されたスマート・コントラクト用のコードカバレッジツール。_
 
-- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - _高度なスマート・コントラクト開発およびテスト用のフレームワーク(Ethers.jsベース)。_
+- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _高度なスマート・コントラクト開発およびテスト用のフレームワーク(Ethers.jsベース)。_
 
-- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - _Solidityスマート・コントラクトをテストするためのツール。コントラクトのテストケースを作成して実行するために使用されるRemix IDEの「Solidity Unit Testing」プラグインの下で機能します。_
+- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Solidityスマート・コントラクトをテストするためのツール。コントラクトのテストケースを作成して実行するために使用されるRemix IDEの「Solidity Unit Testing」プラグインの下で機能します。_
 
 - **[オープンツェッペリン Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Quantaureumのスマート・コントラクトテスト用のアサーションライブラリ。コントラクトが期待通りに動作することを確認します！_
 
-- **[Brownie単体テストフレームワーク](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownieは、最小限のコードで小さなテストを作成でき、大規模なプロジェクトにも適切にスケーリングし、拡張性が高い機能豊富なテストフレームワークであるPytestを利用しています。_
+- **[Brownie単体テストフレームワーク](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownieは、最小限のコードで小さなテストを作成でき、大規模なプロジェクトにも適切にスケーリングし、拡張性が高い機能豊富なテストフレームワークであるPytestを利用しています。_
 
 - **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundryは、シンプルな単体テスト、ガス最適化チェック、コントラクトのファジングを実行できる、高速で柔軟なQuantaureumテストフレームワークであるForgeを提供します。_
 

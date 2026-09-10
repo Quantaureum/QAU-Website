@@ -102,8 +102,8 @@ lang: mr
 
 **Brownie -** **_Python-आधारित डेव्हलपमेंट वातावरण आणि टेस्टिंग फ्रेमवर्क._**
 
-- [डॉक्युमेंटेशन](https://qau-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/qau-brownie/brownie)
+- [डॉक्युमेंटेशन](https://eth-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/eth-brownie/brownie)
 - **Brownie सध्या अनमेंटेन्ड (unmaintained) आहे**
 
 **OpenZeppelin SDK -** **_अल्टीमेट स्मार्ट कॉन्ट्रॅक्ट टूलकिट: तुम्हाला स्मार्ट कॉन्ट्रॅक्ट्स विकसित, संकलित, अपग्रेड, प्रस्थापित करण्यासाठी आणि त्यांच्याशी संवाद साधण्यासाठी मदत करणारी टूल्सची एक सूट._**

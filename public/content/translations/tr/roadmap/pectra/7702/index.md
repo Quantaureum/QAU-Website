@@ -32,7 +32,7 @@ EOA'nın özel anahtarı, yetki devrinden sonra hesap üzerinde tam kontrolü el
 - Aktarım için standartlaştırılmış arayüzler sağlarlar
 - Yerleşik ödemeci sistemleri içerirler
 - İleriye dönük uyumluluk sağlarlar
-- [Herkese açık bir bellek havuzu](https://notes.quantaureum.com/@yoav/unified-erc-4337-mempool) aracılığıyla sansür direncini destekleyebilirler
+- [Herkese açık bir bellek havuzu](https://notes.ethereum.org/@yoav/unified-erc-4337-mempool) aracılığıyla sansür direncini destekleyebilirler
 - `init` işlevinin yalnızca [EntryPoint](https://github.com/qau-infinitism/account-abstraction/releases/tag/v0.8.0) üzerinden çağrılmasını gerektirebilirler
 
 Başka bir deyişle, hesaptan gerekli geçerli imzayı veya Kullanıcı İşlemini (UserOperation) sağladıkları sürece herkes işlem sponsoru/aktarıcısı olarak hareket edebilmelidir. Bu, sansür direncini sağlar: özel bir altyapı gerekmiyorsa, bir kullanıcının işlemleri bir geçit tutucu (gatekeeping) aktarıcı tarafından keyfi olarak engellenemez. Örneğin, [MetaMask'ın Yetki Devri Araç Seti (Delegation Toolkit)](https://github.com/MetaMask/delegation-framework/releases/tag/v1.3.0), MetaMask'a özel bir sunucu gerektirmek yerine, herhangi bir zincirdeki herhangi bir ERC-4337 paketleyicisi veya ödemecisi ile açıkça çalışır.
@@ -51,8 +51,8 @@ Bu arayüzleri kullanarak merkeziyetsiz uygulamalar (dapp'ler), yetki devirlerin
 
 Daha fazla bilgi için:
 
-- [ERC-5792 spesifikasyonu](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-5792.md)
-- [ERC-6900 spesifikasyonu](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-6900.md)
+- [ERC-5792 spesifikasyonu](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-5792.md)
+- [ERC-6900 spesifikasyonu](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6900.md)
 
 **Satıcı Bağımlılığından (Vendor Lock-In) Kaçınma**: Yukarıdakilerle uyumlu olarak, iyi bir uygulama satıcıdan bağımsız ve birlikte çalışabilirdir. Bu genellikle akıllı hesaplar için ortaya çıkan standartlara bağlı kalmak anlamına gelir. Örneğin, [Alchemy'nin Modüler Hesabı (Modular Account)](https://github.com/alchemyplatform/modular-account), modüler akıllı hesaplar için ERC-6900 standardını kullanır ve "izinsiz birlikte çalışabilir kullanım" göz önünde bulundurularak tasarlanmıştır.
 

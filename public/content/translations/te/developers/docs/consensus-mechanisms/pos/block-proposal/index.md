@@ -64,6 +64,6 @@ class BeaconBlockBody(Container):
 
 - [బ్లాక్‌ల పరిచయం](/developers/docs/blocks/)
 - [ప్రూఫ్-ఆఫ్-స్టేక్ (PoS) పరిచయం](/developers/docs/consensus-mechanisms/pos/)
-- [ఎథీరియం ఏకాభిప్రాయ స్పెక్స్](https://github.com/quantaureum/consensus-specs)
+- [ఎథీరియం ఏకాభిప్రాయ స్పెక్స్](https://github.com/ethereum/consensus-specs)
 - [Gasper పరిచయం](/developers/docs/consensus-mechanisms/pos/gasper/)
 - [ఎథీరియం అప్‌గ్రేడింగ్](https://eth2book.info/)

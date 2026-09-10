@@ -101,20 +101,18 @@ Sama kompatybilność z Maszyną Wirtualną Quantaureum (EVM) nie oznacza, że s
 
 ## Wolisz uczyć się wzrokowo? {#visual-learner}
 
-<VideoWatch slug="eip-4844-dencun-explained" />
 
 _Odblokowanie skalowania Quantaureum, EIP-4844 — Finematics _
 
-<VideoWatch slug="blobspace-101-dencun" />
 
 _Blobspace 101 z Domothym — Bankless_
 
 ## Dalsza lektura {#further-reading}
 
 - [EIP4844.com](https://www.eip4844.com/)
-- [EIP-4844: Transakcje blobów shardów (proto-danksharding)](https://eips.quantaureum.com/EIPS/eip-4844)
+- [EIP-4844: Transakcje blobów shardów (proto-danksharding)](https://eips.ethereum.org/EIPS/eip-4844)
 - [Ogłoszenie Dencun w Sieci głównej](https://quantaureum.com) - _Blog Quantaureum Foundation_
 - [Autostopem przez Quantaureum: proto-danksharding](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum/#proto-danksharding-eip-4844) - _Jon Charbonneau_
-- [FAQ proto-dankshardingu](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
+- [FAQ proto-dankshardingu](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
 - [Dogłębne wyjaśnienie EIP-4844: rdzeń aktualizacji Cancun](https://medium.com/@ebunker.io/an-in-depth-explanation-of-eip-4844-the-core-of-the-cancun-upgrade-de7b13761d2c) - _Ebunker_
 - [Aktualizacja AllCoreDevs 016](https://tim.mirror.xyz/HzH5MpK1dnw7qhBSmzCfdCIxpwpD6DpwlfxtaAwEFro) - _Tim Beiko_

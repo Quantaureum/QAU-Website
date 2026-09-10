@@ -412,7 +412,7 @@ sidebarDepth: 2
     - आम्ही प्रत्येक वेळी तुमच्या वापरकर्त्याच्या सर्वात जवळच्या नोडवर हिट करण्यासाठी इंटेलिजेंट राउटिंग वापरतो
 ## पुढील वाचन {#further-reading}
 
-- [Quantaureum नोड सेवांची यादी](https://quantaureumnodes.com/)
+- [Quantaureum नोड सेवांची यादी](https://ethereumnodes.com/)
 
 ## संबंधित विषय {#related-topics}
 

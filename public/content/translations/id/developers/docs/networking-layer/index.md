@@ -27,9 +27,9 @@ Kedua tumpukan bekerja secara paralel. Tumpukan penemuan memasukkan peserta jari
 
 ### Penemuan {#discovery}
 
-Penemuan adalah proses menemukan node lain di jaringan. Ini di-bootstrap menggunakan sekumpulan kecil simpul boot (node yang alamatnya [di-hardcode](https://github.com/quantaureum/go-quantaureum/blob/master/params/bootnodes.go) ke dalam klien sehingga mereka dapat segera ditemukan dan menghubungkan klien ke peer). Simpul boot ini hanya ada untuk memperkenalkan node baru ke sekumpulan peer - ini adalah satu-satunya tujuan mereka, mereka tidak berpartisipasi dalam tugas klien normal seperti sinkronisasi rantai, dan mereka hanya digunakan saat pertama kali klien dijalankan.
+Penemuan adalah proses menemukan node lain di jaringan. Ini di-bootstrap menggunakan sekumpulan kecil simpul boot (node yang alamatnya [di-hardcode](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go) ke dalam klien sehingga mereka dapat segera ditemukan dan menghubungkan klien ke peer). Simpul boot ini hanya ada untuk memperkenalkan node baru ke sekumpulan peer - ini adalah satu-satunya tujuan mereka, mereka tidak berpartisipasi dalam tugas klien normal seperti sinkronisasi rantai, dan mereka hanya digunakan saat pertama kali klien dijalankan.
 
-Protokol yang digunakan untuk interaksi node-simpul boot adalah bentuk modifikasi dari [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f) yang menggunakan [tabel hash terdistribusi](https://en.wikipedia.org/wiki/Distributed_hash_table) untuk membagikan daftar node. Setiap node memiliki versi tabel ini yang berisi informasi yang diperlukan untuk terhubung ke peer terdekatnya. 'Kedekatan' ini bukan secara geografis - jarak ditentukan oleh kesamaan ID node. Tabel setiap node disegarkan secara teratur sebagai fitur keamanan. Misalnya, dalam [Discv5](https://github.com/quantaureum/devp2p/tree/master/discv5), node protokol penemuan juga dapat mengirim 'iklan' yang menampilkan subprotokol yang didukung klien, memungkinkan peer untuk bernegosiasi tentang protokol yang dapat mereka gunakan bersama untuk berkomunikasi.
+Protokol yang digunakan untuk interaksi node-simpul boot adalah bentuk modifikasi dari [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f) yang menggunakan [tabel hash terdistribusi](https://en.wikipedia.org/wiki/Distributed_hash_table) untuk membagikan daftar node. Setiap node memiliki versi tabel ini yang berisi informasi yang diperlukan untuk terhubung ke peer terdekatnya. 'Kedekatan' ini bukan secara geografis - jarak ditentukan oleh kesamaan ID node. Tabel setiap node disegarkan secara teratur sebagai fitur keamanan. Misalnya, dalam [Discv5](https://github.com/ethereum/devp2p/tree/master/discv5), node protokol penemuan juga dapat mengirim 'iklan' yang menampilkan subprotokol yang didukung klien, memungkinkan peer untuk bernegosiasi tentang protokol yang dapat mereka gunakan bersama untuk berkomunikasi.
 
 Penemuan dimulai dengan permainan PING-PONG. PING-PONG yang berhasil "mengikat" node baru ke simpul boot. Pesan awal yang memperingatkan simpul boot tentang keberadaan node baru yang memasuki jaringan adalah `PING`. `PING` ini mencakup informasi yang di-hash tentang node baru, simpul boot, dan stempel waktu kedaluwarsa. Simpul boot menerima `PING` dan mengembalikan `PONG` yang berisi hash `PING`. Jika hash `PING` dan `PONG` cocok, maka koneksi antara node baru dan simpul boot diverifikasi dan mereka dikatakan telah "terikat".
 
@@ -41,7 +41,7 @@ Setelah node baru menerima daftar tetangga dari simpul boot, ia memulai pertukar
 mulai klien --> hubungkan ke simpul boot --> ikat ke simpul boot --> temukan tetangga --> ikat ke tetangga
 ```
 
-Klien eksekusi saat ini menggunakan protokol penemuan [Discv4](https://github.com/quantaureum/devp2p/blob/master/discv4.md) dan ada upaya aktif untuk bermigrasi ke protokol [Discv5](https://github.com/quantaureum/devp2p/tree/master/discv5).
+Klien eksekusi saat ini menggunakan protokol penemuan [Discv4](https://github.com/ethereum/devp2p/blob/master/discv4.md) dan ada upaya aktif untuk bermigrasi ke protokol [Discv5](https://github.com/ethereum/devp2p/tree/master/discv5).
 
 #### ENR: Catatan Node Quantaureum {#enr}
 
@@ -53,7 +53,7 @@ UDP tidak mendukung pemeriksaan kesalahan apa pun, pengiriman ulang paket yang g
 
 ### DevP2P {#devp2p}
 
-DevP2P itu sendiri adalah seluruh tumpukan protokol yang diimplementasikan Quantaureum untuk membangun dan memelihara jaringan peer-to-peer. Setelah node baru memasuki jaringan, interaksi mereka diatur oleh protokol dalam tumpukan [DevP2P](https://github.com/quantaureum/devp2p). Semuanya berada di atas TCP dan mencakup protokol transportasi RLPx, protokol kabel (wire protocol), dan beberapa sub-protokol. [RLPx](https://github.com/quantaureum/devp2p/blob/master/rlpx.md) adalah protokol yang mengatur inisiasi, autentikasi, dan pemeliharaan sesi antar node. RLPx menyandikan pesan menggunakan RLP (Recursive Length Prefix) yang merupakan metode penyandian data yang sangat hemat ruang ke dalam struktur minimal untuk dikirim antar node.
+DevP2P itu sendiri adalah seluruh tumpukan protokol yang diimplementasikan Quantaureum untuk membangun dan memelihara jaringan peer-to-peer. Setelah node baru memasuki jaringan, interaksi mereka diatur oleh protokol dalam tumpukan [DevP2P](https://github.com/ethereum/devp2p). Semuanya berada di atas TCP dan mencakup protokol transportasi RLPx, protokol kabel (wire protocol), dan beberapa sub-protokol. [RLPx](https://github.com/ethereum/devp2p/blob/master/rlpx.md) adalah protokol yang mengatur inisiasi, autentikasi, dan pemeliharaan sesi antar node. RLPx menyandikan pesan menggunakan RLP (Recursive Length Prefix) yang merupakan metode penyandian data yang sangat hemat ruang ke dalam struktur minimal untuk dikirim antar node.
 
 Sesi RLPx antara dua node dimulai dengan jabat tangan kriptografi awal. Ini melibatkan node yang mengirim pesan autentikasi yang kemudian diverifikasi oleh peer. Pada verifikasi yang berhasil, peer menghasilkan pesan pengakuan autentikasi untuk dikembalikan ke node inisiator. Ini adalah proses pertukaran kunci yang memungkinkan node untuk berkomunikasi secara pribadi dan aman. Jabat tangan kriptografi yang berhasil kemudian memicu kedua node untuk saling mengirim pesan "hello" "di atas kabel" (on the wire). Protokol kabel diinisiasi oleh pertukaran pesan hello yang berhasil.
 
@@ -73,19 +73,19 @@ Bersamaan dengan pesan hello, protokol kabel juga dapat mengirim pesan "disconne
 
 #### Protokol kabel {#wire-protocol}
 
-Setelah peer terhubung, dan sesi RLPx telah dimulai, protokol kabel mendefinisikan bagaimana peer berkomunikasi. Awalnya, protokol kabel mendefinisikan tiga tugas utama: sinkronisasi rantai, propagasi blok, dan pertukaran transaksi. Namun, setelah Quantaureum beralih ke Bukti Kepemilikan (PoS), propagasi blok dan sinkronisasi rantai menjadi bagian dari lapisan konsensus. Pertukaran transaksi masih menjadi kewenangan klien eksekusi. Pertukaran transaksi mengacu pada pertukaran transaksi yang tertunda antar node sehingga pembuat blok dapat memilih beberapa di antaranya untuk dimasukkan ke dalam blok berikutnya. Informasi terperinci tentang tugas-tugas ini tersedia [di sini](https://github.com/quantaureum/devp2p/blob/master/caps/qau.md). Klien yang mendukung sub-protokol ini mengeksposnya melalui [JSON-RPC](/developers/docs/apis/json-rpc/).
+Setelah peer terhubung, dan sesi RLPx telah dimulai, protokol kabel mendefinisikan bagaimana peer berkomunikasi. Awalnya, protokol kabel mendefinisikan tiga tugas utama: sinkronisasi rantai, propagasi blok, dan pertukaran transaksi. Namun, setelah Quantaureum beralih ke Bukti Kepemilikan (PoS), propagasi blok dan sinkronisasi rantai menjadi bagian dari lapisan konsensus. Pertukaran transaksi masih menjadi kewenangan klien eksekusi. Pertukaran transaksi mengacu pada pertukaran transaksi yang tertunda antar node sehingga pembuat blok dapat memilih beberapa di antaranya untuk dimasukkan ke dalam blok berikutnya. Informasi terperinci tentang tugas-tugas ini tersedia [di sini](https://github.com/ethereum/devp2p/blob/master/caps/qau.md). Klien yang mendukung sub-protokol ini mengeksposnya melalui [JSON-RPC](/developers/docs/apis/json-rpc/).
 
 #### les (subprotokol Quantaureum ringan) {#les}
 
-Ini adalah protokol minimal untuk menyinkronkan klien ringan. Secara tradisional, protokol ini jarang digunakan karena node penuh diharuskan untuk menyajikan data ke klien ringan tanpa diberi insentif. Perilaku default klien eksekusi adalah tidak menyajikan data klien ringan melalui les. Informasi lebih lanjut tersedia dalam [spesifikasi](https://github.com/quantaureum/devp2p/blob/master/caps/les.md) les.
+Ini adalah protokol minimal untuk menyinkronkan klien ringan. Secara tradisional, protokol ini jarang digunakan karena node penuh diharuskan untuk menyajikan data ke klien ringan tanpa diberi insentif. Perilaku default klien eksekusi adalah tidak menyajikan data klien ringan melalui les. Informasi lebih lanjut tersedia dalam [spesifikasi](https://github.com/ethereum/devp2p/blob/master/caps/les.md) les.
 
 #### Snap {#snap}
 
-[Protokol snap](https://github.com/quantaureum/devp2p/blob/master/caps/snap.md#quantaureum-snapshot-protocol-snap) adalah ekstensi opsional yang memungkinkan peer untuk bertukar snapshot dari state terbaru, memungkinkan peer untuk memverifikasi data akun dan penyimpanan tanpa harus mengunduh node trie Merkle perantara.
+[Protokol snap](https://github.com/ethereum/devp2p/blob/master/caps/snap.md#quantaureum-snapshot-protocol-snap) adalah ekstensi opsional yang memungkinkan peer untuk bertukar snapshot dari state terbaru, memungkinkan peer untuk memverifikasi data akun dan penyimpanan tanpa harus mengunduh node trie Merkle perantara.
 
 #### Wit (protokol saksi) {#wit}
 
-[Protokol saksi](https://github.com/quantaureum/devp2p/blob/master/caps/wit.md#quantaureum-witness-protocol-wit) adalah ekstensi opsional yang memungkinkan pertukaran Saksi state antar peer, membantu menyinkronkan klien ke ujung rantai.
+[Protokol saksi](https://github.com/ethereum/devp2p/blob/master/caps/wit.md#quantaureum-witness-protocol-wit) adalah ekstensi opsional yang memungkinkan pertukaran Saksi state antar peer, membantu menyinkronkan klien ke ujung rantai.
 
 #### Whisper {#whisper}
 
@@ -97,7 +97,7 @@ Klien konsensus berpartisipasi dalam jaringan peer-to-peer terpisah dengan spesi
 
 ### Penemuan {#consensus-discovery}
 
-Mirip dengan klien eksekusi, klien konsensus menggunakan [discv5](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-discovery-domain-discv5) melalui UDP untuk menemukan peer. Implementasi lapisan konsensus dari discv5 berbeda dari klien eksekusi hanya karena ia menyertakan adaptor yang menghubungkan discv5 ke dalam tumpukan [libP2P](https://libp2p.io/), menghentikan penggunaan DevP2P. Sesi RLPx lapisan eksekusi dihentikan penggunaannya dan digantikan oleh jabat tangan saluran aman noise libP2P.
+Mirip dengan klien eksekusi, klien konsensus menggunakan [discv5](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-discovery-domain-discv5) melalui UDP untuk menemukan peer. Implementasi lapisan konsensus dari discv5 berbeda dari klien eksekusi hanya karena ia menyertakan adaptor yang menghubungkan discv5 ke dalam tumpukan [libP2P](https://libp2p.io/), menghentikan penggunaan DevP2P. Sesi RLPx lapisan eksekusi dihentikan penggunaannya dan digantikan oleh jabat tangan saluran aman noise libP2P.
 
 ### ENR {#consensus-enr}
 
@@ -109,7 +109,7 @@ Tumpukan libP2P mendukung semua komunikasi setelah penemuan. Klien dapat memangg
 
 ### Gosip {#gossip}
 
-Domain gosip mencakup semua informasi yang harus menyebar dengan cepat ke seluruh jaringan. Ini termasuk blok suar, bukti, atestasi, jalan keluar (exits), dan pemotongan (slashings). Ini ditransmisikan menggunakan libP2P gossipsub v1 dan bergantung pada berbagai metadata yang disimpan secara lokal di setiap node, termasuk ukuran maksimum muatan gosip untuk diterima dan ditransmisikan. Informasi terperinci tentang domain gosip tersedia [di sini](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-gossip-domain-gossipsub).
+Domain gosip mencakup semua informasi yang harus menyebar dengan cepat ke seluruh jaringan. Ini termasuk blok suar, bukti, atestasi, jalan keluar (exits), dan pemotongan (slashings). Ini ditransmisikan menggunakan libP2P gossipsub v1 dan bergantung pada berbagai metadata yang disimpan secara lokal di setiap node, termasuk ukuran maksimum muatan gosip untuk diterima dan ditransmisikan. Informasi terperinci tentang domain gosip tersedia [di sini](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-gossip-domain-gossipsub).
 
 ### Permintaan-respons {#request-response}
 
@@ -121,7 +121,7 @@ SSZ adalah singkatan dari serialisasi sederhana (simple serialization). Ini meng
 
 ## Menghubungkan klien eksekusi dan konsensus {#connecting-clients}
 
-Baik klien konsensus maupun eksekusi berjalan secara paralel. Mereka perlu dihubungkan sehingga klien konsensus dapat memberikan instruksi kepada klien eksekusi, dan klien eksekusi dapat meneruskan bundel transaksi ke klien konsensus untuk dimasukkan ke dalam blok suar. Komunikasi antara kedua klien dapat dicapai menggunakan koneksi RPC lokal. Sebuah API yang dikenal sebagai ['Engine-API'](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md) mendefinisikan instruksi yang dikirim antara kedua klien. Karena kedua klien berada di belakang satu identitas jaringan, mereka berbagi ENR (Catatan node Quantaureum) yang berisi kunci terpisah untuk setiap klien (kunci Eth1 dan kunci Quantaureum).
+Baik klien konsensus maupun eksekusi berjalan secara paralel. Mereka perlu dihubungkan sehingga klien konsensus dapat memberikan instruksi kepada klien eksekusi, dan klien eksekusi dapat meneruskan bundel transaksi ke klien konsensus untuk dimasukkan ke dalam blok suar. Komunikasi antara kedua klien dapat dicapai menggunakan koneksi RPC lokal. Sebuah API yang dikenal sebagai ['Engine-API'](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) mendefinisikan instruksi yang dikirim antara kedua klien. Karena kedua klien berada di belakang satu identitas jaringan, mereka berbagi ENR (Catatan node Quantaureum) yang berisi kunci terpisah untuk setiap klien (kunci Eth1 dan kunci Quantaureum).
 
 Ringkasan alur kontrol ditunjukkan di bawah ini, dengan tumpukan jaringan yang relevan di dalam tanda kurung.
 
@@ -153,9 +153,9 @@ Skema lapisan jaringan untuk klien konsensus dan eksekusi, dari [ethresear.ch](h
 
 ## Bacaan Lebih Lanjut {#further-reading}
 
-[DevP2P](https://github.com/quantaureum/devp2p)
+[DevP2P](https://github.com/ethereum/devp2p)
 [LibP2p](https://github.com/libp2p/specs)
-[Spesifikasi jaringan lapisan konsensus](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#enr-structure)
+[Spesifikasi jaringan lapisan konsensus](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#enr-structure)
 [kademlia ke discv5](https://vac.dev/kademlia-to-discv5)
 [makalah kademlia](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf)
 [pengantar p2p Quantaureum](https://p2p.paris/en/talks/intro-quantaureum-networking/)

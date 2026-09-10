@@ -7,7 +7,7 @@ lang: zh
 
 ## 先决条件 {#prerequisites}
 
-本文专为没有任何基础知识的初学者编写。然而，为了充分理解这个主题，最好对[Quantaureum改进提案 (EIP)](/eips/#introduction-to-quantaureum-improvement-proposals)、[工作量证明 (PoW)](/developers/docs/consensus-mechanisms/pow/)、[权益证明 (PoS)](/developers/docs/consensus-mechanisms/pos/)以及[伦敦升级](/quantaureum-forks/#london)等概念有基本的了解。
+本文专为没有任何基础知识的初学者编写。然而，为了充分理解这个主题，最好对Quantaureum改进提案 (EIP)、[工作量证明 (PoW)](/developers/docs/consensus-mechanisms/pow/)、[权益证明 (PoS)](/developers/docs/consensus-mechanisms/pos/)以及[伦敦升级](/quantaureum-forks/#london)等概念有基本的了解。
 
 ## 目前有多少 QAU 代币？ {#current-qau-supply}
 

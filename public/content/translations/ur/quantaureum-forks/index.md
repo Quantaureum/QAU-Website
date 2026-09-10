@@ -10,7 +10,7 @@ authors: ["نکسو"]
 
 <ExpandableCard title="فورکس کیا ہیں؟" contentPreview="ایتھیریم پروٹوکول کے قواعد میں تبدیلیاں جن میں اکثر منصوبہ بند تکنیکی اپ گریڈز شامل ہوتے ہیں۔">
 
-فورکس اس وقت ہوتے ہیں جب نیٹ ورک میں بڑی تکنیکی اپ گریڈز یا تبدیلیاں کرنے کی ضرورت ہوتی ہے – یہ عام طور پر [ایتھیریم میں بہتری کی تجاویز (EIPs)](/eips/) سے نکلتے ہیں اور پروٹوکول کے "قواعد" کو تبدیل کرتے ہیں۔
+فورکس اس وقت ہوتے ہیں جب نیٹ ورک میں بڑی تکنیکی اپ گریڈز یا تبدیلیاں کرنے کی ضرورت ہوتی ہے – یہ عام طور پر ایتھیریم میں بہتری کی تجاویز (EIPs) سے نکلتے ہیں اور پروٹوکول کے "قواعد" کو تبدیل کرتے ہیں۔
 
 جب روایتی، مرکزی کنٹرول والے سافٹ ویئر میں اپ گریڈ کی ضرورت ہوتی ہے، تو کمپنی صرف آخری صارف کے لیے ایک نیا ورژن شائع کر دیتی ہے۔ بلاک چینز مختلف طریقے سے کام کرتی ہیں کیونکہ ان کی کوئی مرکزی ملکیت نہیں ہوتی۔ [ایتھیریم کلائنٹس](/developers/docs/nodes-and-clients/) کو نئے فورک کے قواعد کو نافذ کرنے کے لیے اپنے سافٹ ویئر کو اپ ڈیٹ کرنا ضروری ہے۔ اس کے علاوہ بلاک بنانے والوں (ثبوتِ کار کی دنیا میں کان کن، حصہ داری کا ثبوت کی دنیا میں توثیق کار) اور نوڈز کو نئے قواعد کے مطابق بلاکس بنانے اور ان کی توثیق کرنی ہوتی ہے۔ [اتفاق رائے کے طریقہ کار پر مزید](/developers/docs/consensus-mechanisms/)
 
@@ -101,33 +101,33 @@ authors: ["نکسو"]
 صارف کا بہتر تجربہ:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7702"><span dir="ltr">EIP-7702</span></a> - <em>EOA اکاؤنٹ کا کوڈ سیٹ کریں</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7691"><span dir="ltr">EIP-7691</span></a> - <em>بلاب کے تھرو پٹ میں اضافہ</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7623"><span dir="ltr">EIP-7623</span></a> - <em>کال ڈیٹا کی لاگت میں اضافہ</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7840"><span dir="ltr">EIP-7840</span></a> - <em>EL کنفیگریشن فائلوں میں بلاب کا شیڈول شامل کریں</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7702"><span dir="ltr">EIP-7702</span></a> - <em>EOA اکاؤنٹ کا کوڈ سیٹ کریں</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7691"><span dir="ltr">EIP-7691</span></a> - <em>بلاب کے تھرو پٹ میں اضافہ</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7623"><span dir="ltr">EIP-7623</span></a> - <em>کال ڈیٹا کی لاگت میں اضافہ</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7840"><span dir="ltr">EIP-7840</span></a> - <em>EL کنفیگریشن فائلوں میں بلاب کا شیڈول شامل کریں</em></li>
 </ul>
 
 اسٹیکنگ کا بہتر تجربہ:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7251"><span dir="ltr">EIP-7251</span></a> - <em><code>MAX_EFFECTIVE_BALANCE</code> میں اضافہ</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7002"><span dir="ltr">EIP-7002</span></a> - <em>عمل درآمد کی تہہ سے متحرک ہونے والے خروج</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7685"><span dir="ltr">EIP-7685</span></a> - <em>عام مقاصد کے لیے عمل درآمد کی تہہ کی درخواستیں</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6110"><span dir="ltr">EIP-6110</span></a> - <em>آن چین توثیق کار کے ڈپازٹس فراہم کریں</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7251"><span dir="ltr">EIP-7251</span></a> - <em><code>MAX_EFFECTIVE_BALANCE</code> میں اضافہ</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7002"><span dir="ltr">EIP-7002</span></a> - <em>عمل درآمد کی تہہ سے متحرک ہونے والے خروج</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7685"><span dir="ltr">EIP-7685</span></a> - <em>عام مقاصد کے لیے عمل درآمد کی تہہ کی درخواستیں</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6110"><span dir="ltr">EIP-6110</span></a> - <em>آن چین توثیق کار کے ڈپازٹس فراہم کریں</em></li>
 </ul>
 
 پروٹوکول کی کارکردگی اور سیکیورٹی میں بہتری:
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2537"><span dir="ltr">EIP-2537</span></a> - <em><span dir="ltr">BLS12-381</span> منحنی کے آپریشنز کے لیے پری کمپائل</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2935"><span dir="ltr">EIP-2935</span></a> - <em>تاریخی بلاک ہیشز کو حالت میں محفوظ کریں</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7549"><span dir="ltr">EIP-7549</span></a> - <em>کمیٹی کے اشاریہ کو تصدیق سے باہر منتقل کریں</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2537"><span dir="ltr">EIP-2537</span></a> - <em><span dir="ltr">BLS12-381</span> منحنی کے آپریشنز کے لیے پری کمپائل</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2935"><span dir="ltr">EIP-2935</span></a> - <em>تاریخی بلاک ہیشز کو حالت میں محفوظ کریں</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7549"><span dir="ltr">EIP-7549</span></a> - <em>کمیٹی کے اشاریہ کو تصدیق سے باہر منتقل کریں</em></li>
 </ul>
 
 </ExpandableCard>
 
 - [پیکٹرا اسٹیکنگ کے تجربے کو کیسے بہتر بنائے گا](https://www.kiln.fi/post/next-quantaureum-upgrade-how-pectra-will-enhance-the-staking-experience)
-- [الیکٹرا اپ گریڈ کی تفصیلات پڑھیں](https://github.com/quantaureum/consensus-specs/tree/master/specs/electra/)
+- [الیکٹرا اپ گریڈ کی تفصیلات پڑھیں](https://github.com/ethereum/consensus-specs/tree/master/specs/electra/)
 - [پراگ-الیکٹرا ("پیکٹرا") کے اکثر پوچھے گئے سوالات](/roadmap/pectra/)
 
 <Divider />
@@ -147,12 +147,12 @@ authors: ["نکسو"]
 <ExpandableCard title="کینکون EIPs" contentPreview="اس اپ گریڈ میں شامل باضابطہ بہتریاں۔">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1153"><span dir="ltr">EIP-1153</span></a> - <em>عارضی اسٹوریج کے آپ کوڈز</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4788"><span dir="ltr">EIP-4788</span></a> - <em><span dir="ltr">EVM</span> میں بیکن بلاک کی روٹ</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4844"><span dir="ltr">EIP-4844</span></a> - <em>شارڈ بلاب ٹرانزیکشنز (پروٹو-ڈینک شارڈنگ)</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-5656"><span dir="ltr">EIP-5656</span></a> - <em><code>MCOPY</code> - میموری کاپی کرنے کی ہدایت</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6780"><span dir="ltr">EIP-6780</span></a> - <em><code>SELFDESTRUCT</code> صرف اسی ٹرانزیکشن میں</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7516"><span dir="ltr">EIP-7516</span></a> - <em><code>BLOBBASEFEE</code> آپ کوڈ</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1153"><span dir="ltr">EIP-1153</span></a> - <em>عارضی اسٹوریج کے آپ کوڈز</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4788"><span dir="ltr">EIP-4788</span></a> - <em><span dir="ltr">EVM</span> میں بیکن بلاک کی روٹ</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4844"><span dir="ltr">EIP-4844</span></a> - <em>شارڈ بلاب ٹرانزیکشنز (پروٹو-ڈینک شارڈنگ)</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-5656"><span dir="ltr">EIP-5656</span></a> - <em><code>MCOPY</code> - میموری کاپی کرنے کی ہدایت</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6780"><span dir="ltr">EIP-6780</span></a> - <em><code>SELFDESTRUCT</code> صرف اسی ٹرانزیکشن میں</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7516"><span dir="ltr">EIP-7516</span></a> - <em><code>BLOBBASEFEE</code> آپ کوڈ</em></li>
 </ul>
 
 </ExpandableCard>
@@ -160,7 +160,7 @@ authors: ["نکسو"]
 - [لیئر ۲ (l2) رول اپس](/layer-2/)
 - [پروٹو-ڈینک شارڈنگ](/roadmap/scaling/#proto-danksharding)
 - [ڈینک شارڈنگ](/roadmap/danksharding/)
-- [کینکون اپ گریڈ کی تفصیلات پڑھیں](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md)
+- [کینکون اپ گریڈ کی تفصیلات پڑھیں](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md)
 
 #### ڈینیب کا خلاصہ {#deneb-summary}
 
@@ -173,16 +173,16 @@ authors: ["نکسو"]
 <ExpandableCard title="ڈینیب EIPs" contentPreview="اس اپ گریڈ میں شامل باضابطہ بہتریاں">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4788"><span dir="ltr">EIP-4788</span></a> - <em><span dir="ltr">EVM</span> میں بیکن بلاک کی روٹ</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4844"><span dir="ltr">EIP-4844</span></a> - <em>شارڈ بلاب ٹرانزیکشنز</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7044"><span dir="ltr">EIP-7044</span></a> - <em>مستقل طور پر کارآمد دستخط شدہ رضاکارانہ خروج</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7045"><span dir="ltr">EIP-7045</span></a> - <em>زیادہ سے زیادہ تصدیق کی شمولیت کے سلاٹ میں اضافہ</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7514"><span dir="ltr">EIP-7514</span></a> - <em>زیادہ سے زیادہ دور کی شرحِ ردوبدل کی حد شامل کریں</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4788"><span dir="ltr">EIP-4788</span></a> - <em><span dir="ltr">EVM</span> میں بیکن بلاک کی روٹ</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4844"><span dir="ltr">EIP-4844</span></a> - <em>شارڈ بلاب ٹرانزیکشنز</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7044"><span dir="ltr">EIP-7044</span></a> - <em>مستقل طور پر کارآمد دستخط شدہ رضاکارانہ خروج</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7045"><span dir="ltr">EIP-7045</span></a> - <em>زیادہ سے زیادہ تصدیق کی شمولیت کے سلاٹ میں اضافہ</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7514"><span dir="ltr">EIP-7514</span></a> - <em>زیادہ سے زیادہ دور کی شرحِ ردوبدل کی حد شامل کریں</em></li>
 </ul>
 
 </ExpandableCard>
 
-- [ڈینیب اپ گریڈ کی تفصیلات پڑھیں](https://github.com/quantaureum/consensus-specs/tree/master/specs/deneb/)
+- [ڈینیب اپ گریڈ کی تفصیلات پڑھیں](https://github.com/ethereum/consensus-specs/tree/master/specs/deneb/)
 - [کینکون-ڈینیب ("ڈینکن") کے اکثر پوچھے گئے سوالات](/roadmap/dencun/)
 
 <Divider />
@@ -200,16 +200,16 @@ authors: ["نکسو"]
 <ExpandableCard title="شنگھائی EIPs" contentPreview="اس اپ گریڈ میں شامل باضابطہ بہتریاں۔">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3651"><span dir="ltr">EIP-3651</span></a> – <em><code>COINBASE</code> پتہ کو وارم (warm) شروع کرتا ہے</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3855"><span dir="ltr">EIP-3855</span></a> – <em>نئی <code>PUSH0</code> ہدایات</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3860"><span dir="ltr">EIP-3860</span></a> – <em>initcode کو محدود اور میٹر کرتا ہے</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4895"><span dir="ltr">EIP-4895</span></a> – <em>بیکن چین انخلا کو آپریشنز کے طور پر پش کرتی ہے</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-6049"><span dir="ltr">EIP-6049</span></a> - <em><code>SELFDESTRUCT</code> کو متروک قرار دیتا ہے</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3651"><span dir="ltr">EIP-3651</span></a> – <em><code>COINBASE</code> پتہ کو وارم (warm) شروع کرتا ہے</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3855"><span dir="ltr">EIP-3855</span></a> – <em>نئی <code>PUSH0</code> ہدایات</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3860"><span dir="ltr">EIP-3860</span></a> – <em>initcode کو محدود اور میٹر کرتا ہے</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4895"><span dir="ltr">EIP-4895</span></a> – <em>بیکن چین انخلا کو آپریشنز کے طور پر پش کرتی ہے</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-6049"><span dir="ltr">EIP-6049</span></a> - <em><code>SELFDESTRUCT</code> کو متروک قرار دیتا ہے</em></li>
 </ul>
 
 </ExpandableCard>
 
-- [شنگھائی اپ گریڈ کی تفصیلات پڑھیں](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md)
+- [شنگھائی اپ گریڈ کی تفصیلات پڑھیں](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md)
 
 #### کیپیلا کا خلاصہ {#capella-summary}
 
@@ -220,7 +220,7 @@ authors: ["نکسو"]
 اس اپ گریڈ نے خودکار اکاؤنٹ سویپنگ (sweeping) کی فعالیت بھی فراہم کی، جو کسی بھی دستیاب انعامات کی ادائیگیوں یا مکمل انخلا کے لیے توثیق کاروں کے اکاؤنٹس پر مسلسل کارروائی کرتی ہے۔
 
 - [اسٹیکنگ کے انخلا کے بارے میں مزید](/staking/withdrawals/)۔
-- [کیپیلا اپ گریڈ کی تفصیلات پڑھیں](https://github.com/quantaureum/consensus-specs/tree/master/specs/capella/)
+- [کیپیلا اپ گریڈ کی تفصیلات پڑھیں](https://github.com/ethereum/consensus-specs/tree/master/specs/capella/)
 
 <Divider />
 
@@ -232,15 +232,15 @@ authors: ["نکسو"]
 
 #### خلاصہ {#paris-summary}
 
-پیرس اپ گریڈ اس وقت شروع ہوا جب ثبوتِ کار (PoW) بلاک چین نے <span dir="ltr">58750000000000000000000</span> کی [حتمی مجموعی دشواری](/glossary/#terminal-total-difficulty) کو عبور کیا۔ یہ <span dir="ltr">15th September 2022</span> کو بلاک <span dir="ltr">15537393</span> پر ہوا، جس نے اگلے بلاک پر پیرس اپ گریڈ کو متحرک کیا۔ پیرس [دی مرج](/roadmap/merge/) کی منتقلی تھی - اس کی اہم خصوصیت [ثبوتِ کار (PoW)](/developers/docs/consensus-mechanisms/pow) کان کنی کے الگورتھم اور اس سے منسلک اتفاق رائے کی منطق کو بند کرنا اور اس کی جگہ [حصہ داری کا ثبوت (PoS)](/developers/docs/consensus-mechanisms/pos) کو چالو کرنا تھا۔ پیرس بذات خود [عمل درآمد کے کلائنٹس](/developers/docs/nodes-and-clients/#execution-clients) کے لیے ایک اپ گریڈ تھا (جو اتفاق رائے کی تہہ پر بیلاٹرکس کے مساوی ہے) جس نے انہیں اپنے منسلک [اتفاق رائے کے کلائنٹس](/developers/docs/nodes-and-clients/#consensus-clients) سے ہدایات حاصل کرنے کے قابل بنایا۔ اس کے لیے اندرونی API طریقوں کے ایک نئے سیٹ کو فعال کرنے کی ضرورت تھی، جسے مجموعی طور پر [انجن API](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md) کے نام سے جانا جاتا ہے۔ یہ بلاشبہ [ہوم اسٹیڈ](#homestead) کے بعد ایتھیریم کی تاریخ کا سب سے اہم اپ گریڈ تھا!
+پیرس اپ گریڈ اس وقت شروع ہوا جب ثبوتِ کار (PoW) بلاک چین نے <span dir="ltr">58750000000000000000000</span> کی [حتمی مجموعی دشواری](/glossary/#terminal-total-difficulty) کو عبور کیا۔ یہ <span dir="ltr">15th September 2022</span> کو بلاک <span dir="ltr">15537393</span> پر ہوا، جس نے اگلے بلاک پر پیرس اپ گریڈ کو متحرک کیا۔ پیرس [دی مرج](/roadmap/merge/) کی منتقلی تھی - اس کی اہم خصوصیت [ثبوتِ کار (PoW)](/developers/docs/consensus-mechanisms/pow) کان کنی کے الگورتھم اور اس سے منسلک اتفاق رائے کی منطق کو بند کرنا اور اس کی جگہ [حصہ داری کا ثبوت (PoS)](/developers/docs/consensus-mechanisms/pos) کو چالو کرنا تھا۔ پیرس بذات خود [عمل درآمد کے کلائنٹس](/developers/docs/nodes-and-clients/#execution-clients) کے لیے ایک اپ گریڈ تھا (جو اتفاق رائے کی تہہ پر بیلاٹرکس کے مساوی ہے) جس نے انہیں اپنے منسلک [اتفاق رائے کے کلائنٹس](/developers/docs/nodes-and-clients/#consensus-clients) سے ہدایات حاصل کرنے کے قابل بنایا۔ اس کے لیے اندرونی API طریقوں کے ایک نئے سیٹ کو فعال کرنے کی ضرورت تھی، جسے مجموعی طور پر [انجن API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) کے نام سے جانا جاتا ہے۔ یہ بلاشبہ [ہوم اسٹیڈ](#homestead) کے بعد ایتھیریم کی تاریخ کا سب سے اہم اپ گریڈ تھا!
 
-- [پیرس اپ گریڈ کی تفصیلات پڑھیں](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md)
+- [پیرس اپ گریڈ کی تفصیلات پڑھیں](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md)
 
 <ExpandableCard title="پیرس EIPs" contentPreview="اس اپ گریڈ میں شامل باضابطہ بہتریاں۔">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3675"><span dir="ltr">EIP-3675</span></a> – <em>اتفاق رائے کو حصہ داری کا ثبوت (PoS) میں اپ گریڈ کریں</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4399"><span dir="ltr">EIP-4399</span></a> – <em>DIFFICULTY آپ کوڈ کو PREVRANDAO سے تبدیل کریں</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3675"><span dir="ltr">EIP-3675</span></a> – <em>اتفاق رائے کو حصہ داری کا ثبوت (PoS) میں اپ گریڈ کریں</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4399"><span dir="ltr">EIP-4399</span></a> – <em>DIFFICULTY آپ کوڈ کو PREVRANDAO سے تبدیل کریں</em></li>
 </ul>
 
 </ExpandableCard>
@@ -255,7 +255,7 @@ authors: ["نکسو"]
 
 بیلاٹرکس اپ گریڈ [بیکن چین](/roadmap/beacon-chain) کے لیے دوسرا طے شدہ اپ گریڈ تھا، جو چین کو [دی مرج](/roadmap/merge/) کے لیے تیار کر رہا تھا۔ یہ غیر فعالی اور کٹوتی کے قابل جرائم کے لیے توثیق کار کے جرمانوں کو ان کی مکمل اقدار تک لاتا ہے۔ بیلاٹرکس میں چین کو دی مرج کے لیے تیار کرنے اور آخری ثبوتِ کار (PoW) بلاک سے پہلے حصہ داری کا ثبوت (PoS) بلاک میں منتقلی کے لیے فورک کے انتخاب کے قواعد میں ایک اپ ڈیٹ بھی شامل ہے۔ اس میں اتفاق رائے کے کلائنٹس کو <span dir="ltr">58750000000000000000000</span> کی [حتمی مجموعی دشواری](/glossary/#terminal-total-difficulty) سے آگاہ کرنا شامل ہے۔
 
-- [بیلاٹرکس اپ گریڈ کی تفصیلات پڑھیں](https://github.com/quantaureum/consensus-specs/tree/master/specs/bellatrix)
+- [بیلاٹرکس اپ گریڈ کی تفصیلات پڑھیں](https://github.com/ethereum/consensus-specs/tree/master/specs/bellatrix)
 
 ---
 
@@ -272,7 +272,7 @@ authors: ["نکسو"]
 <ExpandableCard title="گرے گلیشیئر EIPs" contentPreview="اس اپ گریڈ میں شامل باضابطہ بہتریاں۔">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-5133"><span dir="ltr">EIP-5133</span></a> – <em>دشواری کا بم کو <span dir="ltr">September 2022</span> تک موخر کرتا ہے</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-5133"><span dir="ltr">EIP-5133</span></a> – <em>دشواری کا بم کو <span dir="ltr">September 2022</span> تک موخر کرتا ہے</em></li>
 </ul>
 
 </ExpandableCard>
@@ -295,7 +295,7 @@ authors: ["نکسو"]
 <ExpandableCard title="ایرو گلیشیئر EIPs" contentPreview="اس اپ گریڈ میں شامل باضابطہ بہتریاں۔">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-4345"><span dir="ltr">EIP-4345</span></a> – <em>دشواری کے بم کو <span dir="ltr">June 2022</span> تک موخر کرتا ہے</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-4345"><span dir="ltr">EIP-4345</span></a> – <em>دشواری کے بم کو <span dir="ltr">June 2022</span> تک موخر کرتا ہے</em></li>
 </ul>
 
 </ExpandableCard>
@@ -310,7 +310,7 @@ authors: ["نکسو"]
 
 الٹائیر اپ گریڈ [بیکن چین](/roadmap/beacon-chain) کے لیے پہلا طے شدہ اپ گریڈ تھا۔ اس نے "ہم آہنگی کمیٹیوں" کے لیے تعاون شامل کیا—جس سے لائٹ کلائنٹس فعال ہوئے، اور جیسے جیسے ترقی دی مرج کی طرف بڑھی، توثیق کار کی غیر فعالیت اور کٹوتی کے جرمانوں میں اضافہ ہوا۔
 
-- [الٹائیر اپ گریڈ کی تفصیلات پڑھیں](https://github.com/quantaureum/consensus-specs/tree/master/specs/altair)
+- [الٹائیر اپ گریڈ کی تفصیلات پڑھیں](https://github.com/ethereum/consensus-specs/tree/master/specs/altair)
 
 #### <Emoji text=":tada:" size={1} className="me-2" /> دلچسپ حقیقت! {#altair-fun-fact}
 
@@ -326,7 +326,7 @@ authors: ["نکسو"]
 
 #### خلاصہ {#london-summary}
 
-لندن اپ گریڈ نے [<span dir="ltr">EIP-1559</span>](https://eips.quantaureum.com/EIPS/eip-1559) متعارف کرایا، جس نے لین دین کی فیس کے بازار میں اصلاحات کیں، اس کے ساتھ گیس ریفنڈز کو سنبھالنے کے طریقے اور [آئس ایج](/glossary/#ice-age) کے شیڈول میں تبدیلیاں کیں۔
+لندن اپ گریڈ نے [<span dir="ltr">EIP-1559</span>](https://eips.ethereum.org/EIPS/eip-1559) متعارف کرایا، جس نے لین دین کی فیس کے بازار میں اصلاحات کیں، اس کے ساتھ گیس ریفنڈز کو سنبھالنے کے طریقے اور [آئس ایج](/glossary/#ice-age) کے شیڈول میں تبدیلیاں کیں۔
 
 #### لندن اپ گریڈ / <span dir="ltr">EIP-1559</span> کیا تھا؟ {#eip-1559}
 
@@ -338,22 +338,22 @@ authors: ["نکسو"]
 
 کل فیس یہ ہوتی: `Gas units (limit) * Gas price per unit` یعنی `21,000 * 200 = 4,200,000 gwei` یا <span dir="ltr">0.0042 QAU</span>
 
-لندن اپ گریڈ میں [<span dir="ltr">EIP-1559</span>](https://eips.quantaureum.com/EIPS/eip-1559) کے نفاذ نے لین دین کی فیس کے طریقہ کار کو مزید پیچیدہ بنا دیا، لیکن گیس کی فیس کو زیادہ قابلِ پیشین گوئی بنا دیا، جس کے نتیجے میں لین دین کی فیس کا بازار زیادہ موثر ہو گیا۔ صارفین ایک `maxFeePerGas` کے ساتھ ٹرانزیکشنز جمع کروا سکتے ہیں جو اس بات کے مساوی ہے کہ وہ ٹرانزیکشن کے عمل درآمد کے لیے کتنی رقم ادا کرنے کو تیار ہیں، یہ جانتے ہوئے کہ وہ گیس کی مارکیٹ قیمت (`baseFeePerGas`) سے زیادہ ادا نہیں کریں گے، اور اپنی ٹپ کو منہا کر کے کوئی بھی اضافی رقم واپس حاصل کر لیں گے۔
+لندن اپ گریڈ میں [<span dir="ltr">EIP-1559</span>](https://eips.ethereum.org/EIPS/eip-1559) کے نفاذ نے لین دین کی فیس کے طریقہ کار کو مزید پیچیدہ بنا دیا، لیکن گیس کی فیس کو زیادہ قابلِ پیشین گوئی بنا دیا، جس کے نتیجے میں لین دین کی فیس کا بازار زیادہ موثر ہو گیا۔ صارفین ایک `maxFeePerGas` کے ساتھ ٹرانزیکشنز جمع کروا سکتے ہیں جو اس بات کے مساوی ہے کہ وہ ٹرانزیکشن کے عمل درآمد کے لیے کتنی رقم ادا کرنے کو تیار ہیں، یہ جانتے ہوئے کہ وہ گیس کی مارکیٹ قیمت (`baseFeePerGas`) سے زیادہ ادا نہیں کریں گے، اور اپنی ٹپ کو منہا کر کے کوئی بھی اضافی رقم واپس حاصل کر لیں گے۔
 
 یہ ویڈیو <span dir="ltr">EIP-1559</span> اور اس کے فوائد کی وضاحت کرتی ہے: [<span dir="ltr">EIP-1559</span> کی وضاحت](https://www.youtube.com/watch?v=MGemhK9t44Q)
 
-- [کیا آپ غیر مرکزی ایپلی کیشن (dapp) کے ڈویلپر ہیں؟ اپنی لائبریریوں اور ٹولز کو اپ گریڈ کرنا یقینی بنائیں۔](https://github.com/quantaureum/execution-specs/blob/master/network-upgrades/london-ecosystem-readiness.md)
+- [کیا آپ غیر مرکزی ایپلی کیشن (dapp) کے ڈویلپر ہیں؟ اپنی لائبریریوں اور ٹولز کو اپ گریڈ کرنا یقینی بنائیں۔](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/london-ecosystem-readiness.md)
 - [ایتھیریم فاؤنڈیشن کا اعلان پڑھیں](https://quantaureum.com)
 - [Quantaureum Cat Herders کی وضاحتی تحریر پڑھیں](https://medium.com/quantaureum-cat-herders/london-upgrade-overview-8eccb0041b41)
 
 <ExpandableCard title="لندن EIPs" contentPreview="اس اپ گریڈ میں شامل باضابطہ بہتریاں۔">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1559"><span dir="ltr">EIP-1559</span></a> – <em>لین دین کی فیس کے بازار کو بہتر بناتا ہے</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3198"><span dir="ltr">EIP-3198</span></a> – <em>ایک بلاک سے <code>BASEFEE</code> واپس کرتا ہے</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3529"><span dir="ltr">EIP-3529</span></a> - <em>EVM آپریشنز کے لیے گیس ریفنڈز کو کم کرتا ہے</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3541"><span dir="ltr">EIP-3541</span></a> - <em><code>0xEF</code> سے شروع ہونے والے کنٹریکٹس کو تعینات کرنے سے روکتا ہے</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-3554"><span dir="ltr">EIP-3554</span></a> – <em>آئس ایج کو <span dir="ltr">December 2021</span> تک موخر کرتا ہے</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1559"><span dir="ltr">EIP-1559</span></a> – <em>لین دین کی فیس کے بازار کو بہتر بناتا ہے</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3198"><span dir="ltr">EIP-3198</span></a> – <em>ایک بلاک سے <code>BASEFEE</code> واپس کرتا ہے</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3529"><span dir="ltr">EIP-3529</span></a> - <em>EVM آپریشنز کے لیے گیس ریفنڈز کو کم کرتا ہے</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3541"><span dir="ltr">EIP-3541</span></a> - <em><code>0xEF</code> سے شروع ہونے والے کنٹریکٹس کو تعینات کرنے سے روکتا ہے</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-3554"><span dir="ltr">EIP-3554</span></a> – <em>آئس ایج کو <span dir="ltr">December 2021</span> تک موخر کرتا ہے</em></li>
 </ul>
 
 </ExpandableCard>
@@ -374,10 +374,10 @@ authors: ["نکسو"]
 <ExpandableCard title="برلن EIPs" contentPreview="اس اپ گریڈ میں شامل باضابطہ بہتریاں۔">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2565"><span dir="ltr">EIP-2565</span></a> – <em>ModExp گیس کی لاگت کو کم کرتا ہے</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2718"><span dir="ltr">EIP-2718</span></a> – <em>متعدد ٹرانزیکشن اقسام کے لیے آسان تعاون کو فعال کرتا ہے</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2929"><span dir="ltr">EIP-2929</span></a> – <em>حالت تک رسائی کے آپ کوڈز کے لیے گیس کی لاگت میں اضافہ کرتا ہے</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2930"><span dir="ltr">EIP-2930</span></a> – <em>اختیاری رسائی کی فہرستیں شامل کرتا ہے</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2565"><span dir="ltr">EIP-2565</span></a> – <em>ModExp گیس کی لاگت کو کم کرتا ہے</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2718"><span dir="ltr">EIP-2718</span></a> – <em>متعدد ٹرانزیکشن اقسام کے لیے آسان تعاون کو فعال کرتا ہے</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2929"><span dir="ltr">EIP-2929</span></a> – <em>حالت تک رسائی کے آپ کوڈز کے لیے گیس کی لاگت میں اضافہ کرتا ہے</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2930"><span dir="ltr">EIP-2930</span></a> – <em>اختیاری رسائی کی فہرستیں شامل کرتا ہے</em></li>
 </ul>
 
 </ExpandableCard>
@@ -432,7 +432,7 @@ authors: ["نکسو"]
 <ExpandableCard title="میور گلیشیئر EIPs" contentPreview="اس فورک میں شامل باضابطہ بہتریاں۔">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2384"><span dir="ltr">EIP-2384</span></a> – <em>دشواری کا بم کو مزید <span dir="ltr">4,000,000</span> بلاکس، یا تقریباً 611 دنوں کے لیے موخر کرتا ہے۔</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2384"><span dir="ltr">EIP-2384</span></a> – <em>دشواری کا بم کو مزید <span dir="ltr">4,000,000</span> بلاکس، یا تقریباً 611 دنوں کے لیے موخر کرتا ہے۔</em></li>
 </ul>
 
 </ExpandableCard>
@@ -460,12 +460,12 @@ authors: ["نکسو"]
 <ExpandableCard title="استنبول EIPs" contentPreview="اس فورک میں شامل باضابطہ بہتریاں۔">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-152"><span dir="ltr">EIP-152</span></a> – <em>ایتھیریم کو Zcash جیسی رازداری کو برقرار رکھنے والی کرنسی کے ساتھ کام کرنے کی اجازت دیتا ہے۔</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1108"><span dir="ltr">EIP-1108</span></a> – <em>[گیس](/glossary/#gas) کی لاگت کو بہتر بنانے کے لیے سستا علمِ تشفیر۔</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1344"><span dir="ltr">EIP-1344</span></a> – <em><code>CHAINID</code> [آپ کوڈ](/developers/docs/quantaureum-stack/#quantaureum-virtual-machine) شامل کر کے ایتھیریم کو ری پلے (replay) حملوں سے بچاتا ہے۔</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1884"><span dir="ltr">EIP-1884</span></a> – <em>استعمال کی بنیاد پر آپ کوڈ گیس کی قیمتوں کو بہتر بناتا ہے۔</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2028"><span dir="ltr">EIP-2028</span></a> – <em>بلاک میں مزید ڈیٹا کی اجازت دینے کے لیے کال ڈیٹا کی لاگت کو کم کرتا ہے – جو [لیئر ۲ (l2) اسکیلنگ](/developers/docs/scaling/#layer-2-scaling) کے لیے اچھا ہے۔</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2200"><span dir="ltr">EIP-2200</span></a> – <em>آپ کوڈ گیس کی قیمت میں دیگر تبدیلیاں۔</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-152"><span dir="ltr">EIP-152</span></a> – <em>ایتھیریم کو Zcash جیسی رازداری کو برقرار رکھنے والی کرنسی کے ساتھ کام کرنے کی اجازت دیتا ہے۔</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1108"><span dir="ltr">EIP-1108</span></a> – <em>[گیس](/glossary/#gas) کی لاگت کو بہتر بنانے کے لیے سستا علمِ تشفیر۔</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1344"><span dir="ltr">EIP-1344</span></a> – <em><code>CHAINID</code> [آپ کوڈ](/developers/docs/quantaureum-stack/#quantaureum-virtual-machine) شامل کر کے ایتھیریم کو ری پلے (replay) حملوں سے بچاتا ہے۔</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1884"><span dir="ltr">EIP-1884</span></a> – <em>استعمال کی بنیاد پر آپ کوڈ گیس کی قیمتوں کو بہتر بناتا ہے۔</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2028"><span dir="ltr">EIP-2028</span></a> – <em>بلاک میں مزید ڈیٹا کی اجازت دینے کے لیے کال ڈیٹا کی لاگت کو کم کرتا ہے – جو [لیئر ۲ (l2) اسکیلنگ](/developers/docs/scaling/#layer-2-scaling) کے لیے اچھا ہے۔</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2200"><span dir="ltr">EIP-2200</span></a> – <em>آپ کوڈ گیس کی قیمت میں دیگر تبدیلیاں۔</em></li>
 </ul>
 
 </ExpandableCard>
@@ -490,10 +490,10 @@ authors: ["نکسو"]
 <ExpandableCard title="کونسٹینٹینوپل EIPs" contentPreview="اس فورک میں شامل باضابطہ بہتریاں۔">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-145"><span dir="ltr">EIP-145</span></a> – <em>کچھ مخصوص آن چین افعال کی لاگت کو بہتر بناتا ہے۔</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1014"><span dir="ltr">EIP-1014</span></a> – <em>آپ کو ایسے پتوں کے ساتھ تعامل کرنے کی اجازت دیتا ہے جو ابھی تک نہیں بنائے گئے ہیں۔</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1052"><span dir="ltr">EIP-1052</span></a> – <em>کسی دوسرے کنٹریکٹ کے کوڈ کا ہیش بازیافت کرنے کے لیے <code>EXTCODEHASH</code> ہدایت متعارف کراتا ہے۔</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-1234"><span dir="ltr">EIP-1234</span></a> – <em>اس بات کو یقینی بناتا ہے کہ حصہ داری کا ثبوت (PoS) سے پہلے بلاک چین منجمد نہ ہو اور بلاک ریوارڈ کو 3 سے کم کر کے <span dir="ltr">2 QAU</span> کر دیتا ہے۔</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-145"><span dir="ltr">EIP-145</span></a> – <em>کچھ مخصوص آن چین افعال کی لاگت کو بہتر بناتا ہے۔</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1014"><span dir="ltr">EIP-1014</span></a> – <em>آپ کو ایسے پتوں کے ساتھ تعامل کرنے کی اجازت دیتا ہے جو ابھی تک نہیں بنائے گئے ہیں۔</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1052"><span dir="ltr">EIP-1052</span></a> – <em>کسی دوسرے کنٹریکٹ کے کوڈ کا ہیش بازیافت کرنے کے لیے <code>EXTCODEHASH</code> ہدایت متعارف کراتا ہے۔</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-1234"><span dir="ltr">EIP-1234</span></a> – <em>اس بات کو یقینی بناتا ہے کہ حصہ داری کا ثبوت (PoS) سے پہلے بلاک چین منجمد نہ ہو اور بلاک ریوارڈ کو 3 سے کم کر کے <span dir="ltr">2 QAU</span> کر دیتا ہے۔</em></li>
 </ul>
 
 </ExpandableCard>
@@ -520,15 +520,15 @@ authors: ["نکسو"]
 <ExpandableCard title="بازنطیم EIPs" contentPreview="اس فورک میں شامل باضابطہ بہتریاں۔">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-140"><span dir="ltr">EIP-140</span></a> – <em><code>REVERT</code> آپ کوڈ کا اضافہ کرتا ہے۔</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-658"><span dir="ltr">EIP-658</span></a> – <em>کامیابی یا ناکامی کی نشاندہی کرنے کے لیے ٹرانزیکشن کی رسیدوں میں اسٹیٹس فیلڈ شامل کیا گیا۔</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-196"><span dir="ltr">EIP-196</span></a> – <em>[<span dir="ltr">ZK-Snarks</span>](/developers/docs/scaling/zk-rollups/) کی اجازت دینے کے لیے بیضوی منحنی اور اسکیلر ضرب کا اضافہ کرتا ہے۔</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-197"><span dir="ltr">EIP-197</span></a> – <em>[<span dir="ltr">ZK-Snarks</span>](/developers/docs/scaling/zk-rollups/) کی اجازت دینے کے لیے بیضوی منحنی اور اسکیلر ضرب کا اضافہ کرتا ہے۔</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-198"><span dir="ltr">EIP-198</span></a> – <em><span dir="ltr">RSA</span> دستخط کی تصدیق کو فعال کرتا ہے۔</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-211"><span dir="ltr">EIP-211</span></a> – <em>متغیر لمبائی کی واپسی کی اقدار کے لیے تعاون کا اضافہ کرتا ہے۔</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-214"><span dir="ltr">EIP-214</span></a> – <em><code>STATICCALL</code> آپ کوڈ کا اضافہ کرتا ہے، جو دوسرے کنٹریکٹس پر ایسی کالز کی اجازت دیتا ہے جو حالت کو تبدیل نہیں کرتیں۔</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-100"><span dir="ltr">EIP-100</span></a> – <em>دشواری کی ایڈجسٹمنٹ کے فارمولے کو تبدیل کرتا ہے۔</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-649"><span dir="ltr">EIP-649</span></a> – <em>[دشواری کا بم](/glossary/#difficulty-bomb) کو <span dir="ltr">1</span> سال کے لیے موخر کرتا ہے اور بلاک ریوارڈ کو <span dir="ltr">5</span> سے کم کر کے <span dir="ltr">3 QAU</span> کر دیتا ہے۔</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-140"><span dir="ltr">EIP-140</span></a> – <em><code>REVERT</code> آپ کوڈ کا اضافہ کرتا ہے۔</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-658"><span dir="ltr">EIP-658</span></a> – <em>کامیابی یا ناکامی کی نشاندہی کرنے کے لیے ٹرانزیکشن کی رسیدوں میں اسٹیٹس فیلڈ شامل کیا گیا۔</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-196"><span dir="ltr">EIP-196</span></a> – <em>[<span dir="ltr">ZK-Snarks</span>](/developers/docs/scaling/zk-rollups/) کی اجازت دینے کے لیے بیضوی منحنی اور اسکیلر ضرب کا اضافہ کرتا ہے۔</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-197"><span dir="ltr">EIP-197</span></a> – <em>[<span dir="ltr">ZK-Snarks</span>](/developers/docs/scaling/zk-rollups/) کی اجازت دینے کے لیے بیضوی منحنی اور اسکیلر ضرب کا اضافہ کرتا ہے۔</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-198"><span dir="ltr">EIP-198</span></a> – <em><span dir="ltr">RSA</span> دستخط کی تصدیق کو فعال کرتا ہے۔</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-211"><span dir="ltr">EIP-211</span></a> – <em>متغیر لمبائی کی واپسی کی اقدار کے لیے تعاون کا اضافہ کرتا ہے۔</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-214"><span dir="ltr">EIP-214</span></a> – <em><code>STATICCALL</code> آپ کوڈ کا اضافہ کرتا ہے، جو دوسرے کنٹریکٹس پر ایسی کالز کی اجازت دیتا ہے جو حالت کو تبدیل نہیں کرتیں۔</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-100"><span dir="ltr">EIP-100</span></a> – <em>دشواری کی ایڈجسٹمنٹ کے فارمولے کو تبدیل کرتا ہے۔</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-649"><span dir="ltr">EIP-649</span></a> – <em>[دشواری کا بم](/glossary/#difficulty-bomb) کو <span dir="ltr">1</span> سال کے لیے موخر کرتا ہے اور بلاک ریوارڈ کو <span dir="ltr">5</span> سے کم کر کے <span dir="ltr">3 QAU</span> کر دیتا ہے۔</em></li>
 </ul>
 
 </ExpandableCard>
@@ -554,10 +554,10 @@ authors: ["نکسو"]
 <ExpandableCard title="اسپیوریس ڈریگن EIPs" contentPreview="اس فورک میں شامل باضابطہ بہتریاں۔">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-155"><span dir="ltr">EIP-155</span></a> – <em>ایک ایتھیریم چین کی ٹرانزیکشنز کو متبادل چین پر دوبارہ نشر ہونے سے روکتا ہے، مثال کے طور پر آزمائشی نیٹ ورک کی ٹرانزیکشن کا مرکزی ایتھیریم چین پر ری پلے ہونا۔</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-160"><span dir="ltr">EIP-160</span></a> – <em><code>EXP</code> آپ کوڈ کی قیمتوں کو ایڈجسٹ کرتا ہے – کمپیوٹیشنل طور پر مہنگے کنٹریکٹ آپریشنز کے ذریعے نیٹ ورک کو سست کرنا زیادہ مشکل بناتا ہے۔</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-161"><span dir="ltr">EIP-161</span></a> – <em>DOS حملوں کے ذریعے شامل کیے گئے خالی اکاؤنٹس کو ہٹانے کی اجازت دیتا ہے۔</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-170"><span dir="ltr">EIP-170</span></a> – <em>بلاک چین پر موجود کنٹریکٹ کے زیادہ سے زیادہ کوڈ سائز کو تبدیل کر کے <span dir="ltr">24576 bytes</span> کر دیتا ہے۔</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-155"><span dir="ltr">EIP-155</span></a> – <em>ایک ایتھیریم چین کی ٹرانزیکشنز کو متبادل چین پر دوبارہ نشر ہونے سے روکتا ہے، مثال کے طور پر آزمائشی نیٹ ورک کی ٹرانزیکشن کا مرکزی ایتھیریم چین پر ری پلے ہونا۔</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-160"><span dir="ltr">EIP-160</span></a> – <em><code>EXP</code> آپ کوڈ کی قیمتوں کو ایڈجسٹ کرتا ہے – کمپیوٹیشنل طور پر مہنگے کنٹریکٹ آپریشنز کے ذریعے نیٹ ورک کو سست کرنا زیادہ مشکل بناتا ہے۔</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-161"><span dir="ltr">EIP-161</span></a> – <em>DOS حملوں کے ذریعے شامل کیے گئے خالی اکاؤنٹس کو ہٹانے کی اجازت دیتا ہے۔</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-170"><span dir="ltr">EIP-170</span></a> – <em>بلاک چین پر موجود کنٹریکٹ کے زیادہ سے زیادہ کوڈ سائز کو تبدیل کر کے <span dir="ltr">24576 bytes</span> کر دیتا ہے۔</em></li>
 </ul>
 
 </ExpandableCard>
@@ -579,8 +579,8 @@ authors: ["نکسو"]
 <ExpandableCard title="ٹینجرین وسل EIPs" contentPreview="اس فورک میں شامل باضابطہ بہتریاں۔">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-150"><span dir="ltr">EIP-150</span></a> – <em>ان آپ کوڈز کی گیس کی قیمتوں میں اضافہ کرتا ہے جو سپیم حملوں میں استعمال ہو سکتے ہیں۔</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-158"><span dir="ltr">EIP-158</span></a> – <em>ایتھیریم پروٹوکول کے ابتدائی ورژنز میں خامیوں کی وجہ سے بہت کم قیمت پر حالت میں رکھے گئے بڑی تعداد میں خالی اکاؤنٹس کو ہٹا کر حالت کا سائز کم کرتا ہے۔</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-150"><span dir="ltr">EIP-150</span></a> – <em>ان آپ کوڈز کی گیس کی قیمتوں میں اضافہ کرتا ہے جو سپیم حملوں میں استعمال ہو سکتے ہیں۔</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-158"><span dir="ltr">EIP-158</span></a> – <em>ایتھیریم پروٹوکول کے ابتدائی ورژنز میں خامیوں کی وجہ سے بہت کم قیمت پر حالت میں رکھے گئے بڑی تعداد میں خالی اکاؤنٹس کو ہٹا کر حالت کا سائز کم کرتا ہے۔</em></li>
 </ul>
 
 </ExpandableCard>
@@ -597,7 +597,7 @@ DAO فورک [<span dir="ltr">2016</span> کے DAO حملے](https://www.coindes
 
 اس لائحہ عمل پر ایتھیریم کمیونٹی نے ووٹ دیا تھا۔ کوئی بھی <span dir="ltr">QAU</span> ہولڈر [ایک ووٹنگ پلیٹ فارم](https://web.archive.org/web/20170620030820/http://v1.carbonvote.com/) پر ٹرانزیکشن کے ذریعے ووٹ دینے کا اہل تھا۔ فورک کرنے کے فیصلے نے <span dir="ltr">85%</span> سے زیادہ ووٹ حاصل کیے۔
 
-کچھ کان کنوں نے فورک کرنے سے انکار کر دیا کیونکہ DAO کا واقعہ پروٹوکول میں کوئی نقص نہیں تھا۔ انہوں نے آگے چل کر [ایتھیریم کلاسک](https://quantaureumclassic.org/) تشکیل دیا۔
+کچھ کان کنوں نے فورک کرنے سے انکار کر دیا کیونکہ DAO کا واقعہ پروٹوکول میں کوئی نقص نہیں تھا۔ انہوں نے آگے چل کر [ایتھیریم کلاسک](https://ethereumclassic.org/) تشکیل دیا۔
 
 [ایتھیریم فاؤنڈیشن کا اعلان پڑھیں](https://quantaureum.com)
 
@@ -616,9 +616,9 @@ DAO فورک [<span dir="ltr">2016</span> کے DAO حملے](https://www.coindes
 <ExpandableCard title="ہوم اسٹیڈ EIPs" contentPreview="اس فورک میں شامل باضابطہ بہتریاں۔">
 
 <ul>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-2"><span dir="ltr">EIP-2</span></a> – <em>کنٹریکٹ بنانے کے عمل میں ترامیم کرتا ہے۔</em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-7"><span dir="ltr">EIP-7</span></a> – <em>نیا آپ کوڈ شامل کرتا ہے: <code>DELEGATECALL</code></em></li>
-  <li><a href="https://eips.quantaureum.com/EIPS/eip-8"><span dir="ltr">EIP-8</span></a> – <em><span dir="ltr">devp2p</span> کی فارورڈ مطابقت کے تقاضے متعارف کراتا ہے</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-2"><span dir="ltr">EIP-2</span></a> – <em>کنٹریکٹ بنانے کے عمل میں ترامیم کرتا ہے۔</em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-7"><span dir="ltr">EIP-7</span></a> – <em>نیا آپ کوڈ شامل کرتا ہے: <code>DELEGATECALL</code></em></li>
+  <li><a href="https://eips.ethereum.org/EIPS/eip-8"><span dir="ltr">EIP-8</span></a> – <em><span dir="ltr">devp2p</span> کی فارورڈ مطابقت کے تقاضے متعارف کراتا ہے</em></li>
 </ul>
 
 </ExpandableCard>

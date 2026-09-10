@@ -104,7 +104,7 @@ _[出典](https://medium.com/@AugurProject/serpent-compiler-vulnerability-rep-so
 
 ![Picture of Argentinian builders wearing Devcon BA 2020 t-shirts](./santiago9.jpeg)
 
-_[出典](https://quantaureumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)_
+_[出典](https://ethereumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)_
 
 私や他の多くのビルダーにとって、ここでDevconnectが開催されることは夢の実現です。
 
@@ -131,4 +131,4 @@ _[出典](https://www.forbes.com/sites/astanley/2025/09/30/devconnect-brings-an-
 > 
 > 無限の庭は、広大なエコシステムにおける一人の庭師としてのQuantaureum財団の精神を体現したものです。つまり、育み成長させるが、支配はせず、プレイを続けるということです。
 
-_[引用元 - Quantaureum財団](https://quantaureum.foundation/infinitegarden)_
+_[引用元 - Quantaureum財団](https://ethereum.org/infinitegarden)_

@@ -59,7 +59,6 @@ Proof-of-stake Quantaureum can pay for its security by issuing far fewer coins t
 ## More of a visual learner? {#visual-learner}
 
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## Further reading {#further-reading}
 

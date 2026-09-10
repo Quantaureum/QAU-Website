@@ -10,7 +10,6 @@ import type {
   ITutorial,
   Skill,
   SlugPageParams,
-  StoryPreview,
 } from "@/lib/types"
 
 import { dateToString } from "@/lib/utils/date"
@@ -238,56 +237,3 @@ export const getBlogPostsData = async (locale: string): Promise<BlogPost[]> => {
   )
 }
 
-/**
- * Lists the story slugs under public/content/stories/, skipping the
- * `translations` directory the intl pipeline writes into. Returns an empty
- * array when the directory doesn't exist yet.
- */
-export const getStorySlugs = async (): Promise<string[]> => {
-  const storiesRoot = join(getContentRoot(), "stories")
-
-  try {
-    const entries = await fsp.readdir(storiesRoot, { withFileTypes: true })
-    return entries
-      .filter((entry) => entry.isDirectory() && entry.name !== "translations")
-      .map((entry) => entry.name)
-  } catch (error) {
-    if (error instanceof Error && "code" in error && error.code === "ENOENT") {
-      console.warn(
-        `Content directory ${storiesRoot} not found, returning empty story list`
-      )
-      return []
-    }
-    throw error
-  }
-}
-
-/**
- * Reads every story under public/content/stories/{slug}/index.md and returns
- * its card preview (title, description, cover image) straight from frontmatter,
- * newest first. The /stories Discover section is rendered from this -- no
- * hardcoded copy or image imports.
- */
-export const getStoriesData = async (
-  locale: string
-): Promise<StoryPreview[]> => {
-  const slugs = await getStorySlugs()
-
-  const stories = await getContentListData(
-    locale,
-    slugs,
-    "stories",
-    (frontmatter, _, slug) => ({
-      slug,
-      title: frontmatter.title,
-      description: frontmatter.description,
-      image: frontmatter.image ?? "",
-      published: dateToString(frontmatter.published),
-    }),
-    "story"
-  )
-
-  return stories.sort(
-    (a, b) => new Date(b.published).getTime() - new Date(a.published).getTime()
-  )
-}

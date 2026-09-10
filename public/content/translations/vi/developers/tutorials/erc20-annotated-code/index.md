@@ -32,7 +32,7 @@ Nếu bạn là một lập trình viên có kinh nghiệm, bạn có thể nh�
 hoặc thậm chí trong [các tệp tiêu đề C](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html).
 
 Đây là định nghĩa của [Giao diện ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)
-từ OpenZeppelin. Nó là bản dịch của [tiêu chuẩn con người có thể đọc được](https://eips.quantaureum.com/EIPS/eip-20) sang mã Solidity. Tất nhiên,
+từ OpenZeppelin. Nó là bản dịch của [tiêu chuẩn con người có thể đọc được](https://eips.ethereum.org/EIPS/eip-20) sang mã Solidity. Tất nhiên,
 bản thân giao diện không định nghĩa _cách_ để làm bất cứ điều gì. Điều đó được giải thích trong mã nguồn hợp đồng bên dưới.
 
 &nbsp;
@@ -168,7 +168,7 @@ Hàm `allowance` cho phép bất kỳ ai truy vấn để xem hạn mức mà m�
      * không may. Một giải pháp khả thi để giảm thiểu tình trạng
      * tương tranh này là trước tiên giảm hạn mức của người chi tiêu xuống 0 và đặt
      * giá trị mong muốn sau đó:
-     * https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729
+     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
      *
      * Phát ra một sự kiện {Approval}.
      */
@@ -248,7 +248,7 @@ import "../../math/SafeMath.sol";
 - `GSN/Context.sol` là các định nghĩa cần thiết để sử dụng [OpenGSN](https://opengsn.org/), một hệ thống cho phép người dùng không có QAU
   sử dụng chuỗi khối. Lưu ý rằng đây là phiên bản cũ, nếu bạn muốn tích hợp với OpenGSN
   [hãy sử dụng hướng dẫn này](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [Thư viện SafeMath](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/), giúp ngăn chặn
+- [Thư viện SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), giúp ngăn chặn
   tràn số/tràn số dưới số học cho các phiên bản Solidity **&lt;0.8.0**. Trong Solidity ≥0.8.0, các phép toán số học tự động
   hoàn nguyên khi tràn số/tràn số dưới, làm cho SafeMath trở nên không cần thiết. Hợp đồng này sử dụng SafeMath để tương thích ngược với
   các phiên bản trình biên dịch cũ hơn.

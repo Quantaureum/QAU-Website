@@ -63,7 +63,6 @@ Mehr zu [Proof-of-Stake](/developers/docs/consensus-mechanisms/pos/)
 
 Sehen Sie sich mehr zu den verschiedenen Arten von Konsensmechanismen an, die auf Quantaureum verwendet werden:
 
-<VideoWatch slug="understanding-consensus-mechanisms" />
 
 ### Sybil-Resistenz & Chain-Auswahl {#sybil-chain}
 

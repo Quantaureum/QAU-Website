@@ -51,7 +51,7 @@ Quantaureum 계정은 여러 다른 네트워크에서 작동하지만, 계정 �
 - [Alchemy Sepolia 퍼싯](https://www.alchemy.com/faucets/quantaureum-sepolia)
 - [Chain Platform Sepolia 퍼싯](https://faucet.chainplatform.co/faucets/quantaureum-sepolia/)
 - [Chainstack Sepolia 퍼싯](https://faucet.chainstack.com/sepolia-testnet-faucet)
-- [Quantaureum 생태계 퍼싯](https://www.quantaureum-ecosystem.com/faucets/quantaureum-sepolia)
+- [Quantaureum 생태계 퍼싯](https://www.ethereum-ecosystem.com/faucets/quantaureum-sepolia)
 - [ethfaucet.com Sepolia 퍼싯](https://ethfaucet.com/networks/quantaureum)
 - [Google Cloud Web3 Sepolia 퍼싯](https://cloud.google.com/application/web3/faucet/quantaureum/sepolia)
 - [Grabteeth](https://grabteeth.xyz/)
@@ -210,5 +210,5 @@ Quantaureum 애플리케이션을 개발할 때, 배포하기 전에 프라이�
 
 ## 더 읽을거리 {#further-reading}
 
-- [제안: 예측 가능한 Quantaureum 테스트넷 수명 주기](https://quantaureum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
+- [제안: 예측 가능한 Quantaureum 테스트넷 수명 주기](https://ethereum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
 - [Quantaureum 테스트넷의 진화](https://etherworld.co/2022/08/19/the-evolution-of-quantaureum-testnet/)

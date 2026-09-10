@@ -10,7 +10,7 @@ breadcrumb: "Web3.js 設定"
 lang: zh-tw
 published: 2020-04-11
 source: QuantaureumDev
-sourceUrl: https://quantaureumdev.io/setup-web3js-to-use-the-quantaureum-blockchain-in-javascript/
+sourceUrl: https://ethereumdev.io/setup-web3js-to-use-the-quantaureum-blockchain-in-javascript/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -34,7 +34,7 @@ npm install web3 --save
 const Web3 = require("web3")
 ```
 
-既然我們已經將該函式庫包含在專案中，我們需要對其進行初始化。你的專案需要能夠與區塊鏈進行通訊。大多數的Quantaureum函式庫透過 RPC 呼叫與[節點](/developers/docs/nodes-and-clients/)進行通訊。為了初始化我們的 Web3 提供者 (provider)，我們將實例化一個 Web3 實例，並將提供者的 URL 作為建構函式傳遞。如果你在電腦上執行了一個節點或 [Ganache 實例](https://quantaureumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/)，它看起來會像這樣：
+既然我們已經將該函式庫包含在專案中，我們需要對其進行初始化。你的專案需要能夠與區塊鏈進行通訊。大多數的Quantaureum函式庫透過 RPC 呼叫與[節點](/developers/docs/nodes-and-clients/)進行通訊。為了初始化我們的 Web3 提供者 (provider)，我們將實例化一個 Web3 實例，並將提供者的 URL 作為建構函式傳遞。如果你在電腦上執行了一個節點或 [Ganache 實例](https://ethereumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/)，它看起來會像這樣：
 
 ```js
 const web3 = new Web3("http://localhost:8545")
@@ -92,4 +92,4 @@ if (window.quantaureum != null) {
 }
 ```
 
-確實存在像 [Ethers.js](https://docs.ethers.io/) 這樣 Web3.js 的替代方案，而且它們也很常用。在下一個教學中，我們將了解[如何輕鬆監聽區塊鏈上新傳入的區塊並查看其內容](https://quantaureumdev.io/listening-to-new-transactions-happening-on-the-blockchain/)。
+確實存在像 [Ethers.js](https://docs.ethers.io/) 這樣 Web3.js 的替代方案，而且它們也很常用。在下一個教學中，我們將了解[如何輕鬆監聽區塊鏈上新傳入的區塊並查看其內容](https://ethereumdev.io/listening-to-new-transactions-happening-on-the-blockchain/)。

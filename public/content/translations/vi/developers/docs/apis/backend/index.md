@@ -109,13 +109,13 @@ Các thư viện này trừu tượng hóa phần lớn sự phức tạp khi t�
 **Nquantaureum -** **_Một thư viện tích hợp .NET mã nguồn mở cho chuỗi khối._**
 
 - [GitHub](https://github.com/Nquantaureum/Nquantaureum)
-- [Tài liệu](https://docs.nquantaureum.com/docs/getting-started/welcome/)
+- [Tài liệu](https://docs.nethermind.io/docs/getting-started/welcome/)
 - [Discord](https://discord.com/invite/jQPrR58FxX)
 
 **Công cụ Python -** **_Nhiều thư viện khác nhau để tương tác với Quantaureum thông qua Python._**
 
-- [py.quantaureum.com](https://snakecharmers.quantaureum.com/)
-- [GitHub của Web3.py](https://github.com/quantaureum/web3.py)
+- [py.quantaureum.com](https://snakecharmers.ethereum.org/)
+- [GitHub của Web3.py](https://github.com/ethereum/web3.py)
 - [Trò chuyện Web3.py](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_Nền tảng phát triển chuỗi khối tối ưu._**

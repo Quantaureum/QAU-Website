@@ -251,13 +251,13 @@ else:
   value = TxType | encode(tx)
 ```
 
-اس بارے میں مزید معلومات [<span dir="ltr">EIP-2718</span>](https://eips.quantaureum.com/EIPS/eip-2718) دستاویزات میں مل سکتی ہیں۔
+اس بارے میں مزید معلومات [<span dir="ltr">EIP-2718</span>](https://eips.ethereum.org/EIPS/eip-2718) دستاویزات میں مل سکتی ہیں۔
 
 ### رسیدوں کی ٹرائی {#receipts-trie}
 
 ہر بلاک کی اپنی رسیدوں کی ٹرائی ہوتی ہے۔ یہاں ایک `path` یہ ہے: `rlp(transactionIndex)`۔ `transactionIndex` اس بلاک کے اندر اس کا اشاریہ ہے جس میں اسے شامل کیا گیا تھا۔ رسیدوں کی ٹرائی کو کبھی اپ ڈیٹ نہیں کیا جاتا ہے۔ ٹرانزیکشنز ٹرائی کی طرح، موجودہ اور پرانی (legacy) رسیدیں ہوتی ہیں۔ رسیدوں کی ٹرائی میں کسی مخصوص رسید کو تلاش کرنے کے لیے، اس کے بلاک میں ٹرانزیکشن کا اشاریہ، رسید کا پے لوڈ اور ٹرانزیکشن کی قسم درکار ہوتی ہے۔ واپس کی گئی رسید `Receipt` قسم کی ہو سکتی ہے جسے `TransactionType` اور `ReceiptPayload` کے ملاپ کے طور پر بیان کیا گیا ہے یا یہ `LegacyReceipt` قسم کی ہو سکتی ہے جسے `rlp([status, cumulativeGasUsed, logsBloom, logs])` کے طور پر بیان کیا گیا ہے۔
 
-اس بارے میں مزید معلومات [<span dir="ltr">EIP-2718</span>](https://eips.quantaureum.com/EIPS/eip-2718) دستاویزات میں مل سکتی ہیں۔
+اس بارے میں مزید معلومات [<span dir="ltr">EIP-2718</span>](https://eips.ethereum.org/EIPS/eip-2718) دستاویزات میں مل سکتی ہیں۔
 
 ## مزید مطالعہ {#further-reading}
 

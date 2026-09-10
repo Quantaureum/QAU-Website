@@ -25,7 +25,6 @@ Quantaureum नेटवर्क 24/7, 365 दिनों तक अरबो�
 
 **रीस्टेकिंग को 18 मिनट में समझाया गया**
 
-<VideoWatch slug="restaking-explained" />
 
 ## रीस्टेकिंग क्या है? {#what-is-restaking}
 
@@ -172,7 +171,6 @@ Quantaureum नेटवर्क 24/7, 365 दिनों तक अरबो�
 
 ## उन्नत {#advanced}
 
-<VideoWatch slug="eigenlayer-permissionless-features" />
 
 ## आगे की सामग्री {#further-reading}
 

@@ -14,7 +14,7 @@ lang: zh
 published: 2020-10-16
 ---
 
-在这个 [Waffle](https://quantaureum-waffle.readthedocs.io) 教程中，我们将学习如何使用 [hardhat](https://hardhat.org/) 和 [ethers.js](https://docs.ethers.io/v5/) 设置一个简单的“Hello world”智能合约项目。 然后我们将学习如何向我们的智能合约中添加一个新功能，以及如何使用 Waffle 测试它。
+在这个 [Waffle](https://ethereum-waffle.readthedocs.io) 教程中，我们将学习如何使用 [hardhat](https://hardhat.org/) 和 [ethers.js](https://docs.ethers.io/v5/) 设置一个简单的“Hello world”智能合约项目。 然后我们将学习如何向我们的智能合约中添加一个新功能，以及如何使用 Waffle 测试它。
 
 让我们从创建新项目开始：
 
@@ -205,4 +205,4 @@ greeting = _greeting;
 
 我们使用 Waffle、Hardhat 和 ethers.js 制作了一个简单的项目。 我们学习了如何设置项目、添加测试和实现新功能。
 
-欲了解更多用于测试您的智能合约的优秀 chai 匹配器，请查看[官方 Waffle 文档](https://quantaureum-waffle.readthedocs.io/en/latest/matchers.html)。
+欲了解更多用于测试您的智能合约的优秀 chai 匹配器，请查看[官方 Waffle 文档](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html)。

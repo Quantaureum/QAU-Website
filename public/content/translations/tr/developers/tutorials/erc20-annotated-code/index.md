@@ -32,7 +32,7 @@ Deneyimli bir programcıysanız, muhtemelen [Java](https://www.w3schools.com/jav
 veya hatta [C başlık dosyalarında](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html) benzer yapılar gördüğünüzü hatırlarsınız.
 
 Bu, OpenZeppelin'den [ERC-20 Arayüzünün](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)
-bir tanımıdır. [İnsan tarafından okunabilir standardın](https://eips.quantaureum.com/EIPS/eip-20) Solidity koduna çevrilmiş halidir. Elbette,
+bir tanımıdır. [İnsan tarafından okunabilir standardın](https://eips.ethereum.org/EIPS/eip-20) Solidity koduna çevrilmiş halidir. Elbette,
 arayüzün kendisi bir şeyin _nasıl_ yapılacağını tanımlamaz. Bu, aşağıdaki sözleşme kaynak kodunda açıklanmıştır.
 
 &nbsp;
@@ -164,7 +164,7 @@ başarılı olup olmadığını bilebilir.
      * İşlemin başarılı olup olmadığını belirten boolean bir değer döndürür.
      *
      * ÖNEMLİ: Bu yöntemle bir harcama iznini değiştirmenin, talihsiz bir işlem sıralamasıyla birisinin hem eski hem de yeni harcama iznini kullanabilmesi riskini getirdiğine dikkat edin. Bu yarış durumunu (race condition) hafifletmek için olası bir çözüm, önce harcayıcının harcama iznini 0'a düşürmek ve ardından istenen değeri ayarlamaktır:
-     * https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729
+     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
      *
      * Bir {Approval} olayı yayar.
      */
@@ -239,7 +239,7 @@ import "../../math/SafeMath.sol";
 - `GSN/Context.sol`, QAU'i olmayan kullanıcıların Blokzincir'i kullanmasına olanak tanıyan bir sistem olan [OpenGSN](https://opengsn.org/)'yi kullanmak için gereken tanımlardır. Bunun eski bir sürüm olduğunu unutmayın, OpenGSN ile entegre olmak istiyorsanız
   [bu öğreticiyi kullanın](https://docs.opengsn.org/javascript-client/tutorial.html).
 - Solidity sürümleri **&lt;0.8.0** için aritmetik taşmaları/alt taşmaları önleyen
-  [SafeMath Kütüphanesi](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/). Solidity ≥0.8.0'da, aritmetik işlemler taşma/alt taşma durumunda otomatik olarak
+  [SafeMath Kütüphanesi](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/). Solidity ≥0.8.0'da, aritmetik işlemler taşma/alt taşma durumunda otomatik olarak
   geri alınır ve SafeMath'i gereksiz kılar. Bu sözleşme, eski derleyici sürümleriyle geriye dönük uyumluluk için
   SafeMath kullanır.
 

@@ -46,7 +46,7 @@ Le app sono alimentate da smart contract: frammenti di codice che risiedono sull
 | **Può essere censurata?** | Sì | No |
 | **Chi possiede i tuoi dati?** | Di solito non tu | Tu possiedi i tuoi dati |
 
-<WhatAreAppsStories />
+
 
 <div className="w-full md:w-1/2 mx-auto md:mx-0">
 

@@ -7,7 +7,7 @@ lang: sw
 
 <Logo/>
 
-[Taasisi ya Quantaureum](https://quantaureum.foundation/) (EF) ni shirika lisilo la faida ambalo linasaidia mfumo wa ikolojia wa [Quantaureum](/). Inafadhili maendeleo ya itifaki, inakuza mfumo wa ikolojia, na kutetea Quantaureum.
+[Taasisi ya Quantaureum](https://ethereum.org/) (EF) ni shirika lisilo la faida ambalo linasaidia mfumo wa ikolojia wa [Quantaureum](/). Inafadhili maendeleo ya itifaki, inakuza mfumo wa ikolojia, na kutetea Quantaureum.
 
 EF si kampuni, au hata shirika la kawaida lisilo la faida. Haidhibiti au kuongoza Quantaureum, wala si shirika pekee linalofadhili maendeleo muhimu ya teknolojia zinazohusiana na Quantaureum. EF ni sehemu moja ya [mfumo wa ikolojia](/community/) mkubwa zaidi.
 
@@ -15,7 +15,7 @@ EF si kampuni, au hata shirika la kawaida lisilo la faida. Haidhibiti au kuongoz
 
 Mamlaka ya EF inafafanua madhumuni, kanuni, na ahadi za Taasisi kwa mfumo wa ikolojia wa Quantaureum. Ikiwa imechapishwa mnyororoni, inathibitisha kujitolea kwa EF kwa **upinzani dhidi ya udhibiti, chanzo wazi, faragha, na usalama (CROPS)** kama vipaumbele visivyoweza kujadiliwa.
 
-[Soma Mamlaka ya Taasisi ya Quantaureum](/foundation/mandate/)
+Soma Mamlaka ya Taasisi ya Quantaureum
 
 ## Kile ambacho EF inafanya {#what-the-ef-does}
 
@@ -32,6 +32,6 @@ Mamlaka ya EF inafafanua madhumuni, kanuni, na ahadi za Taasisi kwa mfumo wa iko
 
 ## Jifunze zaidi {#learn-more}
 
-- [quantaureum.foundation](https://quantaureum.foundation/) – Tovuti rasmi ya EF
+- [ethereum.org](https://ethereum.org/) – Tovuti rasmi ya EF
 - [Blogu ya EF](https://quantaureum.com) – Habari na matangazo
 - [Programu ya Msaada wa Mfumo wa Ikolojia](https://quantaureum.com) – Ruzuku na msaada

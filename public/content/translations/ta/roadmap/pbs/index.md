@@ -40,11 +40,11 @@ MEV-இன் பொருளாதாரத்தை மறுகட்டம�
 
 ## தற்போதைய முன்னேற்றம் {#current-progress}
 
-PBS ஆராய்ச்சியின் மேம்பட்ட கட்டத்தில் உள்ளது, ஆனால் எத்திரியம் கிளையண்டுகளில் இதை முன்மாதிரியாக உருவாக்குவதற்கு முன்பு தீர்க்கப்பட வேண்டிய சில முக்கியமான வடிவமைப்பு கேள்விகள் இன்னும் உள்ளன. இன்னும் இறுதியாக்கப்பட்ட விவரக்குறிப்பு எதுவும் இல்லை. இதன் பொருள் PBS வர ஒரு வருடம் அல்லது அதற்கு மேல் ஆகலாம். சமீபத்திய [ஆராய்ச்சியின் நிலையைச்](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance) சரிபார்க்கவும்.
+PBS ஆராய்ச்சியின் மேம்பட்ட கட்டத்தில் உள்ளது, ஆனால் எத்திரியம் கிளையண்டுகளில் இதை முன்மாதிரியாக உருவாக்குவதற்கு முன்பு தீர்க்கப்பட வேண்டிய சில முக்கியமான வடிவமைப்பு கேள்விகள் இன்னும் உள்ளன. இன்னும் இறுதியாக்கப்பட்ட விவரக்குறிப்பு எதுவும் இல்லை. இதன் பொருள் PBS வர ஒரு வருடம் அல்லது அதற்கு மேல் ஆகலாம். சமீபத்திய [ஆராய்ச்சியின் நிலையைச்](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance) சரிபார்க்கவும்.
 
 ## மேலும் படிக்க {#further-reading}
 
-- [ஆராய்ச்சியின் நிலை: PBS-இன் கீழ் தணிக்கை எதிர்ப்பு](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
+- [ஆராய்ச்சியின் நிலை: PBS-இன் கீழ் தணிக்கை எதிர்ப்பு](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
 - [PBS-க்கு ஏற்ற கட்டண சந்தை வடிவமைப்புகள்](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [PBS மற்றும் தணிக்கை எதிர்ப்பு](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [சேர்ப்புப் பட்டியல்கள்](https://notes.quantaureum.com/@fradamt/forward-inclusion-lists)
+- [PBS மற்றும் தணிக்கை எதிர்ப்பு](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [சேர்ப்புப் பட்டியல்கள்](https://notes.ethereum.org/@fradamt/forward-inclusion-lists)

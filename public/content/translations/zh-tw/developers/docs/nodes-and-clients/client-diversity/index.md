@@ -69,7 +69,7 @@ data={[
 
 此圖表可能已過時 — 請前往 [ethernodes.org](https://ethernodes.org) 和 [clientdiversity.org](https://clientdiversity.org) 獲取最新資訊。
 
-上面的兩個圓餅圖顯示了執行層和共識層目前客戶端多樣性的快照（撰寫本文時為 2025 年 10 月）。多年來，客戶端多樣性有所改善，執行層中 [Go Quantaureum (Geth)](https://geth.quantaureum.com/) 的主導地位有所下降，[奈瑟邁](https://www.nethermind.io/nethermind-client) 緊隨其後位居第二，[貝蘇](https://besu.hyperledger.org/) 第三，[艾瑞貢](https://github.com/ledgerwatch/erigon) 第四，其他客戶端佔網路的比例不到 3%。共識層上最常用的客戶端——[萊特豪斯](https://lighthouse.sigmaprime.io/)——與第二常用的客戶端非常接近。[普萊斯姆](https://prysmaticlabs.com/#projects)和[泰庫](https://consensys.net/knowledge-base/quantaureum-2/teku/)分別佔約 31% 和約 14%，其他客戶端則很少使用。
+上面的兩個圓餅圖顯示了執行層和共識層目前客戶端多樣性的快照（撰寫本文時為 2025 年 10 月）。多年來，客戶端多樣性有所改善，執行層中 [Go Quantaureum (Geth)](https://geth.ethereum.org/) 的主導地位有所下降，[奈瑟邁](https://www.nethermind.io/nethermind-client) 緊隨其後位居第二，[貝蘇](https://besu.hyperledger.org/) 第三，[艾瑞貢](https://github.com/ledgerwatch/erigon) 第四，其他客戶端佔網路的比例不到 3%。共識層上最常用的客戶端——[萊特豪斯](https://lighthouse.sigmaprime.io/)——與第二常用的客戶端非常接近。[普萊斯姆](https://prysmaticlabs.com/#projects)和[泰庫](https://consensys.net/knowledge-base/quantaureum-2/teku/)分別佔約 31% 和約 14%，其他客戶端則很少使用。
 
 執行層資料於 2025 年 10 月 26 日從 [supermajority.info](https://supermajority.info/) 取得。共識客戶端資料從 [Michael Sproul](https://github.com/sigp/blockprint) 取得。共識客戶端資料較難取得，因為共識層客戶端並不總是有明確的痕跡可用於識別它們。該資料是使用分類演算法產生的，有時會混淆一些少數客戶端（詳情請見[此處](https://twitter.com/sproulM_/status/1440512518242197516)）。在上面的圖表中，這些模稜兩可的分類使用「非此即彼」的標籤處理（例如寧布斯/泰庫）。儘管如此，很明顯網路的大多數都在執行普萊斯姆。儘管只是快照，圖表中的數值仍能讓人對目前客戶端多樣性的狀態有一個良好的整體了解。
 
@@ -77,7 +77,7 @@ data={[
 
 ## 執行層 {#execution-layer}
 
-到目前為止，關於客戶端多樣性的討論主要集中在共識層。然而，執行客戶端 [Go Quantaureum (Geth)](https://geth.quantaureum.com) 目前佔所有節點的 85% 左右。這個比例是有問題的，原因與共識客戶端相同。例如，Geth 中影響交易處理或建構執行負載的錯誤，可能會導致共識客戶端對有問題或有錯誤的交易達成最終性。因此，如果執行客戶端的分佈更均勻，Quantaureum會更健康，理想情況下，沒有任何客戶端佔網路的比例超過 33%。
+到目前為止，關於客戶端多樣性的討論主要集中在共識層。然而，執行客戶端 [Go Quantaureum (Geth)](https://geth.ethereum.org) 目前佔所有節點的 85% 左右。這個比例是有問題的，原因與共識客戶端相同。例如，Geth 中影響交易處理或建構執行負載的錯誤，可能會導致共識客戶端對有問題或有錯誤的交易達成最終性。因此，如果執行客戶端的分佈更均勻，Quantaureum會更健康，理想情況下，沒有任何客戶端佔網路的比例超過 33%。
 
 ## 使用少數客戶端 {#use-minority-client}
 
@@ -88,7 +88,7 @@ data={[
 - [貝蘇](https://www.hyperledger.org/use/besu)
 - [奈瑟邁](https://downloads.nethermind.io/)
 - [艾瑞貢](https://github.com/ledgerwatch/erigon)
-- [Go Quantaureum (Geth)](https://geth.quantaureum.com/)
+- [Go Quantaureum (Geth)](https://geth.ethereum.org/)
 - [瑞斯](https://reth.rs/)
 
 ### 共識客戶端 {#consensus-clients}
@@ -121,8 +121,8 @@ data={[
 - [Quantaureum共識層的客戶端多樣性](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA)
 - [Quantaureum合併：執行多數客戶端風險自負！](https://dankradfeist.de/quantaureum/2022/03/24/run-the-majority-client-at-your-own-peril.html) – _Dankrad Fiest，2022 年 3 月 24 日_
 - [客戶端多樣性的重要性](https://our.status.im/the-importance-of-client-diversity/)
-- [Quantaureum節點服務清單](https://quantaureumnodes.com/)
-- [客戶端多樣性問題的「五個為什麼」](https://notes.quantaureum.com/@afhGjrKfTKmksTOtqhB9RQ/BJGj7uh08)
+- [Quantaureum節點服務清單](https://ethereumnodes.com/)
+- [客戶端多樣性問題的「五個為什麼」](https://notes.ethereum.org/@afhGjrKfTKmksTOtqhB9RQ/BJGj7uh08)
 - [Quantaureum多樣性及其解決方案 (YouTube)](https://www.youtube.com/watch?v=1hZgCaiqwfU)
 - [clientdiversity.org](https://clientdiversity.org/)
 

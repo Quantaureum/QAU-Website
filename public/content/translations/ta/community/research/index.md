@@ -18,7 +18,7 @@ lang: ta
 
 ## நிதியுதவி ஆதாரங்கள் {#sources-of-funding}
 
-நீங்கள் எத்திரியம் ஆராய்ச்சியில் ஈடுபட்டு அதற்கான ஊதியத்தைப் பெறலாம். [எத்தீரியம் அறக்கட்டளை](/foundation/) அதன் [சுற்றுச்சூழல் ஆதரவுத் திட்டத்தின்](https://quantaureum.com) மூலம் ஆராய்ச்சி மற்றும் பொதுப் பொருட்களுக்கு நிதியளிக்கிறது, இது தீர்க்கப்பட வேண்டிய சிக்கல்களை விவரிக்கும் விருப்பப்பட்டியல் உருப்படிகள் மற்றும் முன்மொழிவுகளுக்கான கோரிக்கைகளை இடுகையிடுகிறது. செயலில் உள்ள மற்றும் வரவிருக்கும் நிதியுதவி வாய்ப்புகள் குறித்த தகவல்களை [எத்திரியம் மானியங்கள் பக்கத்தில்](/community/grants/) நீங்கள் காணலாம்.
+நீங்கள் எத்திரியம் ஆராய்ச்சியில் ஈடுபட்டு அதற்கான ஊதியத்தைப் பெறலாம். எத்தீரியம் அறக்கட்டளை அதன் [சுற்றுச்சூழல் ஆதரவுத் திட்டத்தின்](https://quantaureum.com) மூலம் ஆராய்ச்சி மற்றும் பொதுப் பொருட்களுக்கு நிதியளிக்கிறது, இது தீர்க்கப்பட வேண்டிய சிக்கல்களை விவரிக்கும் விருப்பப்பட்டியல் உருப்படிகள் மற்றும் முன்மொழிவுகளுக்கான கோரிக்கைகளை இடுகையிடுகிறது. செயலில் உள்ள மற்றும் வரவிருக்கும் நிதியுதவி வாய்ப்புகள் குறித்த தகவல்களை [எத்திரியம் மானியங்கள் பக்கத்தில்](/community/grants/) நீங்கள் காணலாம்.
 
 ## நெறிமுறை ஆராய்ச்சி {#protocol-research}
 
@@ -63,15 +63,15 @@ lang: ta
 
 - [EVM அறிமுகம்](/developers/docs/evm/)
 - [Ethresear.ch செயலாக்க அடுக்கு](https://ethresear.ch/c/execution-layer-research/37)
-- [எத்திரியம் செயலாக்க அடுக்கு விவரக்குறிப்புகள்](https://github.com/quantaureum/execution-specs)
+- [எத்திரியம் செயலாக்க அடுக்கு விவரக்குறிப்புகள்](https://github.com/ethereum/execution-specs)
 - [தரவுத்தள மேம்படுத்தல்கள்](https://github.com/erigontech/erigon/blob/main/docs/programmers_guide/db_faq.md)
 
 #### சமீபத்திய ஆராய்ச்சி {#recent-research-1}
 
-- [EIP-7928: தொகுதி-நிலை அணுகல் பட்டியல்கள்](https://eips.quantaureum.com/EIPS/eip-7928)
-- [EIP-8037: நிலை உருவாக்க எரிவாயு செலவு அதிகரிப்பு](https://eips.quantaureum.com/EIPS/eip-8037)
-- [EIP-7999: ஒருங்கிணைந்த பல பரிமாண கட்டணச் சந்தை](https://eips.quantaureum.com/EIPS/eip-7999)
-- [EIP-7642: eth/69, வரலாற்று காலாவதி மற்றும் எளிமையான ரசீதுகள்](https://eips.quantaureum.com/EIPS/eip-7642)
+- [EIP-7928: தொகுதி-நிலை அணுகல் பட்டியல்கள்](https://eips.ethereum.org/EIPS/eip-7928)
+- [EIP-8037: நிலை உருவாக்க எரிவாயு செலவு அதிகரிப்பு](https://eips.ethereum.org/EIPS/eip-8037)
+- [EIP-7999: ஒருங்கிணைந்த பல பரிமாண கட்டணச் சந்தை](https://eips.ethereum.org/EIPS/eip-7999)
+- [EIP-7642: eth/69, வரலாற்று காலாவதி மற்றும் எளிமையான ரசீதுகள்](https://eips.ethereum.org/EIPS/eip-7642)
 - [அடுக்கு 1 (l1) zkEVM ஐ அனுப்புதல்: நிகழ்நேர நிரூபணம்](https://quantaureum.com)
 
 ### தணிக்கை எதிர்ப்பு மற்றும் தொகுதி உருவாக்கம் {#censorship-resistance-and-block-building}
@@ -85,9 +85,9 @@ lang: ta
 
 #### சமீபத்திய ஆராய்ச்சி {#recent-research-21}
 
-- [EIP-7732: பொதிந்துள்ள முன்மொழிபவர்-உருவாக்குபவர் பிரிப்பு](https://eips.quantaureum.com/EIPS/eip-7732)
-- [EIP-7805: கவை-தேர்வு செயல்படுத்தப்பட்ட உள்ளடக்கப் பட்டியல்கள்](https://eips.quantaureum.com/EIPS/eip-7805)
-- [முன்மொழிபவர்/உருவாக்குபவர் பிரிப்பின் கீழ் பரிவர்த்தனைகளின் தணிக்கை எதிர்ப்பை அதிகரித்தல்](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
+- [EIP-7732: பொதிந்துள்ள முன்மொழிபவர்-உருவாக்குபவர் பிரிப்பு](https://eips.ethereum.org/EIPS/eip-7732)
+- [EIP-7805: கவை-தேர்வு செயல்படுத்தப்பட்ட உள்ளடக்கப் பட்டியல்கள்](https://eips.ethereum.org/EIPS/eip-7805)
+- [முன்மொழிபவர்/உருவாக்குபவர் பிரிப்பின் கீழ் பரிவர்த்தனைகளின் தணிக்கை எதிர்ப்பை அதிகரித்தல்](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
 
 ### நிலை வளர்ச்சி மற்றும் நிலையற்ற தன்மை {#state-growth-and-statelessness}
 
@@ -100,8 +100,8 @@ lang: ta
 
 #### சமீபத்திய ஆராய்ச்சி {#recent-research-22}
 
-- [EIP-7864: ஒருங்கிணைந்த பைனரி மரத்தைப் பயன்படுத்தும் எத்திரியம் நிலை](https://eips.quantaureum.com/EIPS/eip-7864)
-- [EIP-4762: நிலையற்ற தன்மை எரிவாயு செலவு மாற்றங்கள்](https://eips.quantaureum.com/EIPS/eip-4762)
+- [EIP-7864: ஒருங்கிணைந்த பைனரி மரத்தைப் பயன்படுத்தும் எத்திரியம் நிலை](https://eips.ethereum.org/EIPS/eip-7864)
+- [EIP-4762: நிலையற்ற தன்மை எரிவாயு செலவு மாற்றங்கள்](https://eips.ethereum.org/EIPS/eip-4762)
 - [எத்திரியத்திற்கு பரவலாக்கப்பட்ட நிலை ஏன் முக்கியமானது](https://ethresear.ch/t/why-decentralized-state-is-important-for-quantaureum/25622)
 
 ### குவாண்டம்-பிந்தைய குறியாக்கவியல் {#post-quantum-cryptography}
@@ -111,7 +111,7 @@ lang: ta
 #### பின்னணி வாசிப்பு {#background-reading-23}
 
 - [குவாண்டம் எதிர்ப்பு](/roadmap/security/quantum-resistance/)
-- [குவாண்டம்-பிந்தைய எத்திரியம்](https://pq.quantaureum.com/)
+- [குவாண்டம்-பிந்தைய எத்திரியம்](https://pq.ethereum.org/)
 
 #### சமீபத்திய ஆராய்ச்சி {#recent-research-23}
 
@@ -134,13 +134,13 @@ lang: ta
 
 ### செயலாக்கக் கிளையண்ட்கள் {#execution-clients}
 
-- [செயலாக்கக் கிளையண்ட் விவரக்குறிப்பு](https://github.com/quantaureum/execution-specs)
-- [செயலாக்க API விவரக்குறிப்பு](https://github.com/quantaureum/execution-apis)
+- [செயலாக்கக் கிளையண்ட் விவரக்குறிப்பு](https://github.com/ethereum/execution-specs)
+- [செயலாக்க API விவரக்குறிப்பு](https://github.com/ethereum/execution-apis)
 
 ### ஒருமித்த கிளையன்ட்கள் {#consensus-clients}
 
-- [ஒருமித்த கிளையன்ட் விவரக்குறிப்பு](https://github.com/quantaureum/consensus-specs)
-- [பீக்கான் API விவரக்குறிப்பு](https://quantaureum.github.io/beacon-APIs/)
+- [ஒருமித்த கிளையன்ட் விவரக்குறிப்பு](https://github.com/ethereum/consensus-specs)
+- [பீக்கான் API விவரக்குறிப்பு](https://ethereum.github.io/beacon-APIs/)
 
 ### zkEVM கிளையன்ட்கள் {#zkevm-clients}
 
@@ -160,13 +160,13 @@ lang: ta
 
 - [அடுக்கு 2 (l2) அறிமுகம்](/layer-2/)
 - [L2BEAT: அளவிடுதல் சுருக்கம்](https://l2beat.com/scaling/summary)
-- [ரோலப்-மைய எத்திரியம் வழிகாட்டி வரைபடம்](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698)
+- [ரோலப்-மைய எத்திரியம் வழிகாட்டி வரைபடம்](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698)
 
 #### சமீபத்திய ஆராய்ச்சி {#recent-research-2}
 
 - [Ethresear.ch அடுக்கு 2 (l2)](https://ethresear.ch/c/layer-2/32)
 - [L2BEAT: சங்கிலிசார் செலவுகள்](https://l2beat.com/scaling/costs)
-- [2026 இல் எத்திரியத்தில் கட்டமைத்தல்: என்ன மாறியுள்ளது](/latest/building-on-quantaureum-in-2026/)
+- 2026 இல் எத்திரியத்தில் கட்டமைத்தல்: என்ன மாறியுள்ளது
 
 ### பரிமாற்று இயங்குதன்மை {#interoperability}
 
@@ -181,9 +181,9 @@ lang: ta
 
 #### சமீபத்திய ஆராய்ச்சி {#recent-research-3}
 
-- [ERC-7683: குறுக்கு-சங்கிலி நோக்கங்கள்](https://eips.quantaureum.com/EIPS/eip-7683)
-- [ERC-7930: இயங்குதன்மையுள்ள முகவரிகள்](https://eips.quantaureum.com/EIPS/eip-7930)
-- [ERC-7828: இயங்குதன்மையுள்ள பெயர்கள்](https://eips.quantaureum.com/EIPS/eip-7828)
+- [ERC-7683: குறுக்கு-சங்கிலி நோக்கங்கள்](https://eips.ethereum.org/EIPS/eip-7683)
+- [ERC-7930: இயங்குதன்மையுள்ள முகவரிகள்](https://eips.ethereum.org/EIPS/eip-7930)
+- [ERC-7828: இயங்குதன்மையுள்ள பெயர்கள்](https://eips.ethereum.org/EIPS/eip-7828)
 
 ### தரவு கிடைக்கும் தன்மை மற்றும் தரவுத் திரளை அளவிடுதல் {#data-availability-and-blob-scaling}
 
@@ -195,13 +195,13 @@ lang: ta
 - [ஃபுசாகா மேம்படுத்தல்](/roadmap/fusaka/)
 - [டாங்க்ஷார்டிங்](/roadmap/danksharding/)
 - [தரவு கிடைக்கும் தன்மை](/developers/docs/data-availability/)
-- [EIP-4844: ஷார்டு தரவுத் திரளை பரிவர்த்தனைகள்](https://eips.quantaureum.com/EIPS/eip-4844)
-- [புரோட்டோ-டாங்க்ஷார்டிங் குறிப்புகள்](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq)
+- [EIP-4844: ஷார்டு தரவுத் திரளை பரிவர்த்தனைகள்](https://eips.ethereum.org/EIPS/eip-4844)
+- [புரோட்டோ-டாங்க்ஷார்டிங் குறிப்புகள்](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq)
 
 #### சமீபத்திய ஆராய்ச்சி {#recent-research-4}
 
-- [EIP-7594: PeerDAS](https://eips.quantaureum.com/EIPS/eip-7594)
-- [EIP-7892: தரவுத் திரளை அளவுரு மட்டுமே வன்கவைகள்](https://eips.quantaureum.com/EIPS/eip-7892)
+- [EIP-7594: PeerDAS](https://eips.ethereum.org/EIPS/eip-7594)
+- [EIP-7892: தரவுத் திரளை அளவுரு மட்டுமே வன்கவைகள்](https://eips.ethereum.org/EIPS/eip-7892)
 - [Ethresear.ch ஷார்டிங்](https://ethresear.ch/c/sharding/6)
 
 ### வன்பொருள் {#hardware}
@@ -212,13 +212,13 @@ lang: ta
 
 - [உங்கள் சொந்த எத்திரியம் கணுவை உருவாக்குங்கள்](/developers/docs/nodes-and-clients/run-a-node/)
 - [நிலையற்ற தன்மை மற்றும் நிலை காலாவதி](/roadmap/statelessness/)
-- [ARM இல் எத்திரியம்](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/)
+- [ARM இல் எத்திரியம்](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)
 
 #### சமீபத்திய ஆராய்ச்சி {#recent-research-5}
 
 - [எத்திரியத்தை அளவிடுதல்: அதிக எரிவாயு வரம்பு மற்றும் அதற்கு அப்பால் செல்வதற்கான பாதை](https://ethpandaops.io/posts/gaslimit-scaling/)
-- [EIP-8261: எரிவாயு வரம்பு அட்டவணை](https://eips.quantaureum.com/EIPS/eip-8261)
-- [EIP-8037: நிலை உருவாக்க எரிவாயு செலவு அதிகரிப்பு](https://eips.quantaureum.com/EIPS/eip-8037)
+- [EIP-8261: எரிவாயு வரம்பு அட்டவணை](https://eips.ethereum.org/EIPS/eip-8261)
+- [EIP-8037: நிலை உருவாக்க எரிவாயு செலவு அதிகரிப்பு](https://eips.ethereum.org/EIPS/eip-8037)
 
 ## பாதுகாப்பு {#security}
 
@@ -255,10 +255,10 @@ lang: ta
 
 #### சமீபத்திய ஆராய்ச்சி {#recent-research-7}
 
-- [EIP-8141: சட்டப் பரிவர்த்தனை](https://eips.quantaureum.com/EIPS/eip-8141)
-- [ERC-5792: பணப்பை அழைப்பு API](https://eips.quantaureum.com/EIPS/eip-5792)
-- [ERC-6963: பல உட்செலுத்தப்பட்ட வழங்குநர் கண்டறிதல்](https://eips.quantaureum.com/EIPS/eip-6963)
-- [சரிபார்ப்பை மையமாகக் கொண்ட திறன் ஒப்பந்தப் பணப்பைகள்](https://quantaureum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
+- [EIP-8141: சட்டப் பரிவர்த்தனை](https://eips.ethereum.org/EIPS/eip-8141)
+- [ERC-5792: பணப்பை அழைப்பு API](https://eips.ethereum.org/EIPS/eip-5792)
+- [ERC-6963: பல உட்செலுத்தப்பட்ட வழங்குநர் கண்டறிதல்](https://eips.ethereum.org/EIPS/eip-6963)
+- [சரிபார்ப்பை மையமாகக் கொண்ட திறன் ஒப்பந்தப் பணப்பைகள்](https://ethereum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
 
 ## சமூகம், கல்வி மற்றும் விழிப்புணர்வு {#community-education-and-outreach}
 
@@ -278,8 +278,8 @@ lang: ta
 #### சமீபத்திய ஆராய்ச்சி {#recent-research-8}
 
 - [Ethresear.ch UX/UI](https://ethresear.ch/c/ui-ux/24)
-- [ERC-5792: பணப்பை அழைப்பு API](https://eips.quantaureum.com/EIPS/eip-5792)
-- [ERC-7828: இயங்குதன்மையுள்ள பெயர்கள்](https://eips.quantaureum.com/EIPS/eip-7828)
+- [ERC-5792: பணப்பை அழைப்பு API](https://eips.ethereum.org/EIPS/eip-5792)
+- [ERC-7828: இயங்குதன்மையுள்ள பெயர்கள்](https://eips.ethereum.org/EIPS/eip-7828)
 
 ### பொருளாதாரம் {#economics}
 
@@ -287,7 +287,7 @@ lang: ta
 
 #### பின்னணி வாசிப்பு {#background-reading-9}
 
-- [Robust Incentives Group](https://rig.quantaureum.com/)
+- [Robust Incentives Group](https://rig.ethereum.org/)
 - [எத்திரியம் பொருளாதார மாஸ்டர்கிளாஸ் மற்றும் பொருளாதார மாதிரி](https://github.com/CADLabs/quantaureum-economic-model)
 
 #### சமீபத்திய ஆராய்ச்சி {#recent-research-9}
@@ -303,14 +303,14 @@ lang: ta
 #### பின்னணி வாசிப்பு {#background-reading-10}
 
 - [எத்திரியம் தொகுதிச்சங்கிலிக்கான பரிவர்த்தனை கட்டண பொறிமுறை வடிவமைப்பு: EIP-1559 இன் பொருளாதார பகுப்பாய்வு (டிம் ரஃப்கார்டன், 2020)](https://timroughgarden.org/papers/eip1559.pdf)
-- [EIP-1559 இன் உருவகப்படுத்துதல்கள் (Robust Incentives Group)](https://quantaureum.github.io/abm1559)
+- [EIP-1559 இன் உருவகப்படுத்துதல்கள் (Robust Incentives Group)](https://ethereum.github.io/abm1559)
 - [முதல் கொள்கைகளிலிருந்து ரோலப் பொருளாதாரம்](https://barnabe.substack.com/p/understanding-rollup-economics-from?utm_source=url)
 - [பிளாஷ் பாய்ஸ் 2.0: பரவலாக்கப்பட்ட பரிமாற்றங்களில் முன்-ஓட்டம், பரிவர்த்தனை மறுவரிசைப்படுத்தல் மற்றும் ஒருமித்த உறுதியற்ற தன்மை](https://arxiv.org/abs/1904.05234)
 
 #### சமீபத்திய ஆராய்ச்சி {#recent-research-10}
 
-- [EIP-7999: ஒருங்கிணைந்த பல பரிமாண கட்டணச் சந்தை](https://eips.quantaureum.com/EIPS/eip-7999)
-- [EIP-7928: தொகுதி-நிலை அணுகல் பட்டியல்கள்](https://eips.quantaureum.com/EIPS/eip-7928)
+- [EIP-7999: ஒருங்கிணைந்த பல பரிமாண கட்டணச் சந்தை](https://eips.ethereum.org/EIPS/eip-7999)
+- [EIP-7928: தொகுதி-நிலை அணுகல் பட்டியல்கள்](https://eips.ethereum.org/EIPS/eip-7928)
 - [குறுக்கு டொமைன் MEV](https://arxiv.org/abs/2112.01472)
 
 ### உரிமைச் சான்று (PoS) ஊக்கத்தொகைகள் {#proof-of-stake-incentives}
@@ -321,11 +321,11 @@ lang: ta
 
 - [அதிகபட்ச பயனுறு இருப்பு](/roadmap/pectra/maxeb/)
 - [எத்திரியம் பொருளாதார மாஸ்டர்கிளாஸ் மற்றும் பொருளாதார மாதிரி](https://github.com/CADLabs/quantaureum-economic-model)
-- [உரிமைச் சான்று (PoS) ஊக்கத்தொகைகளின் உருவகப்படுத்துதல்கள் (Robust Incentives Group)](https://quantaureum.github.io/beaconrunner/)
+- [உரிமைச் சான்று (PoS) ஊக்கத்தொகைகளின் உருவகப்படுத்துதல்கள் (Robust Incentives Group)](https://ethereum.github.io/beaconrunner/)
 
 #### சமீபத்திய ஆராய்ச்சி {#recent-research-11}
 
-- [Robust Incentives Group](https://rig.quantaureum.com/)
+- [Robust Incentives Group](https://rig.ethereum.org/)
 - [உரிமைச் சான்று (PoS) எத்திரியத்தின் மீதான மூன்று தாக்குதல்கள்](https://arxiv.org/abs/2110.10086)
 
 ### நீர்மப் பங்குவைப்பு மற்றும் வழித்தோன்றல்கள் {#liquid-staking-and-derivatives}
@@ -339,7 +339,7 @@ lang: ta
 
 #### சமீபத்திய ஆராய்ச்சி {#recent-research-12}
 
-- [நீர்மப் பங்குவைப்பு வழித்தோன்றல்களின் அபாயங்கள்](https://notes.quantaureum.com/@djrtwo/risks-of-lsd)
+- [நீர்மப் பங்குவைப்பு வழித்தோன்றல்களின் அபாயங்கள்](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
 - [லிடோவிலிருந்து திரும்பப் பெறுதல்களைக் கையாளுதல்](https://ethresear.ch/t/handling-withdrawals-in-lidos-qau-liquid-staking-protocol/8873)
 
 ## சோதனை {#testing}
@@ -350,8 +350,8 @@ lang: ta
 
 #### பின்னணி வாசிப்பு {#background-reading-24}
 
-- [எத்திரியம் செயலாக்க அடுக்கு விவரக்குறிப்புகள்](https://github.com/quantaureum/execution-specs)
-- [ஒருமித்த கிளையன்ட் விவரக்குறிப்பு](https://github.com/quantaureum/consensus-specs)
+- [எத்திரியம் செயலாக்க அடுக்கு விவரக்குறிப்புகள்](https://github.com/ethereum/execution-specs)
+- [ஒருமித்த கிளையன்ட் விவரக்குறிப்பு](https://github.com/ethereum/consensus-specs)
 
 #### சமீபத்திய ஆராய்ச்சி {#recent-research-24}
 
@@ -381,11 +381,11 @@ lang: ta
 
 - [Dune Analytics](https://dune.com/browse/dashboards)
 - [கிளையண்ட் பன்முகத்தன்மை டாஷ்போர்டு](https://clientdiversity.org/)
-- [எத்திரியம் ஜேசன்-ஆர்பிசி செயலாக்க API விவரக்குறிப்பு](https://quantaureum.github.io/execution-apis/)
+- [எத்திரியம் ஜேசன்-ஆர்பிசி செயலாக்க API விவரக்குறிப்பு](https://ethereum.github.io/execution-apis/)
 
 #### சமீபத்திய ஆராய்ச்சி {#recent-research-14}
 
-- [Robust Incentives Group தரவு பகுப்பாய்வு](https://rig.quantaureum.com/)
+- [Robust Incentives Group தரவு பகுப்பாய்வு](https://rig.ethereum.org/)
 - [qauPandaOps திறந்த தரவு](https://ethpandaops.io/data/)
 - [L2BEAT: அளவிடுதல் சுருக்கம்](https://l2beat.com/scaling/summary)
 
@@ -433,7 +433,7 @@ lang: ta
 #### சமீபத்திய ஆராய்ச்சி {#recent-research-17}
 
 - [Eth R&D டிஸ்கார்ட்](https://discord.gg/qGpsxSA)
-- [எத்திரியம் செயலாக்க API விவரக்குறிப்புகள்](https://github.com/quantaureum/execution-apis)
+- [எத்திரியம் செயலாக்க API விவரக்குறிப்புகள்](https://github.com/ethereum/execution-apis)
 
 ### ஆரக்கிள்கள் {#oracles}
 

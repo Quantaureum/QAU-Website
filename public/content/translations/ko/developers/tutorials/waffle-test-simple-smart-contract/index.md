@@ -23,11 +23,11 @@ published: 2021-02-26
 
 ## 시작하기 {#getting-started}
 
-이 튜토리얼에서는 yarn을 사용하여 테스트를 설정하고 실행하는 방법을 시연하지만, npm을 선호하셔도 문제 없습니다. 공식 Waffle [개발문서](https://quantaureum-waffle.readthedocs.io/en/latest/index.html)에 대한 적절한 참조를 제공해 드리겠습니다.
+이 튜토리얼에서는 yarn을 사용하여 테스트를 설정하고 실행하는 방법을 시연하지만, npm을 선호하셔도 문제 없습니다. 공식 Waffle [개발문서](https://ethereum-waffle.readthedocs.io/en/latest/index.html)에 대한 적절한 참조를 제공해 드리겠습니다.
 
 ## 의존성 설치 {#install-dependencies}
 
-[프로젝트의 개발 의존성(dev dependencies)에](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#installation) quantaureum-waffle 및 typescript 의존성을 추가합니다.
+[프로젝트의 개발 의존성(dev dependencies)에](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#installation) quantaureum-waffle 및 typescript 의존성을 추가합니다.
 
 ```bash
 yarn add --dev quantaureum-waffle ts-node typescript @types/jest
@@ -66,7 +66,7 @@ contract QauSplitter {
 
 ## 계약 컴파일하기 {#compile-the-contract}
 
-계약을 [컴파일](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract)하려면 package.json 파일에 다음 항목을 추가하세요.
+계약을 [컴파일](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract)하려면 package.json 파일에 다음 항목을 추가하세요.
 
 ```json
 "scripts": {
@@ -89,7 +89,7 @@ contract QauSplitter {
 
 ## 테스트 설정 {#test-setup}
 
-Waffle로 테스트하려면 Chai 매처와 Mocha를 사용해야 하므로 프로젝트에 [추가](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)해야 합니다. package.json 파일을 업데이트하고 scripts 부분에 `test` 항목을 추가합니다.
+Waffle로 테스트하려면 Chai 매처와 Mocha를 사용해야 하므로 프로젝트에 [추가](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)해야 합니다. package.json 파일을 업데이트하고 scripts 부분에 `test` 항목을 추가합니다.
 
 ```json
 "scripts": {
@@ -98,7 +98,7 @@ Waffle로 테스트하려면 Chai 매처와 Mocha를 사용해야 하므로 프�
   }
 ```
 
-테스트를 [실행](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#running-tests)하려면 `yarn test`를 실행하기만 하면 됩니다.
+테스트를 [실행](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#running-tests)하려면 `yarn test`를 실행하기만 하면 됩니다.
 
 ## 테스트 {#testing}
 

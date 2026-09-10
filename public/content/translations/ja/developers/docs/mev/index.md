@@ -136,7 +136,7 @@ MEVの抽出は2021年初頭に急増し、その年の最初の数か月間は�
 
 パーミッションドメンプールは、前のセクションで説明した集中化のリスクも加速させます。複数のバリデータを実行する大規模なプールは、トレーダーやユーザーにトランザクションのプライバシーを提供することで利益を得る可能性が高く、MEV収益を増加させます。
 
-マージ後のQuantaureumにおけるこれらのMEV関連の問題と戦うことは、研究の核心分野です。現在までに、マージ後のQuantaureumの分散化とセキュリティに対するMEVの悪影響を軽減するために提案されている2つの解決策は、[**プロポーザー・ビルダー分離 (PBS)**](/roadmap/pbs/)と[**Builder API**](https://github.com/quantaureum/builder-specs)です。
+マージ後のQuantaureumにおけるこれらのMEV関連の問題と戦うことは、研究の核心分野です。現在までに、マージ後のQuantaureumの分散化とセキュリティに対するMEVの悪影響を軽減するために提案されている2つの解決策は、[**プロポーザー・ビルダー分離 (PBS)**](/roadmap/pbs/)と[**Builder API**](https://github.com/ethereum/builder-specs)です。
 
 ### プロポーザー・ビルダー分離 (PBS) {#proposer-builder-separation}
 
@@ -162,9 +162,9 @@ PBSの下では、ブロック・ビルダーはトランザクションバン�
 
 ### Builder API {#builder-api}
 
-プロポーザー・ビルダー分離はMEV抽出の影響を軽減することを約束しますが、その実装にはコンセンサスプロトコルの変更が必要です。具体的には、ビーコン・チェーンの[フォーク選択](/developers/docs/consensus-mechanisms/pos/#fork-choice)ルールを更新する必要があります。[Builder API](https://github.com/quantaureum/builder-specs)は、より高いトラスト前提を伴うものの、プロポーザー・ビルダー分離の機能する実装を提供することを目的とした一時的な解決策です。
+プロポーザー・ビルダー分離はMEV抽出の影響を軽減することを約束しますが、その実装にはコンセンサスプロトコルの変更が必要です。具体的には、ビーコン・チェーンの[フォーク選択](/developers/docs/consensus-mechanisms/pos/#fork-choice)ルールを更新する必要があります。[Builder API](https://github.com/ethereum/builder-specs)は、より高いトラスト前提を伴うものの、プロポーザー・ビルダー分離の機能する実装を提供することを目的とした一時的な解決策です。
 
-Builder APIは、コンセンサス・レイヤークライアントが実行レイヤークライアントに実行ペイロードを要求するために使用する[Engine API](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md)の変更バージョンです。[誠実なバリデータ仕様](https://github.com/quantaureum/consensus-specs/blob/master/specs/bellatrix/validator.md)で概説されているように、ブロック提案の任務に選択されたバリデータは、接続された実行クライアントにトランザクションバンドルを要求し、それを提案されたビーコン・チェーンブロックに含めます。
+Builder APIは、コンセンサス・レイヤークライアントが実行レイヤークライアントに実行ペイロードを要求するために使用する[Engine API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md)の変更バージョンです。[誠実なバリデータ仕様](https://github.com/ethereum/consensus-specs/blob/master/specs/bellatrix/validator.md)で概説されているように、ブロック提案の任務に選択されたバリデータは、接続された実行クライアントにトランザクションバンドルを要求し、それを提案されたビーコン・チェーンブロックに含めます。
 
 Builder APIは、バリデータと実行レイヤークライアント間のミドルウェアとしても機能します。しかし、（実行クライアントを使用してローカルでブロックを構築するのではなく）ビーコン・チェーン上のバリデータが外部エンティティからブロックを調達できるようにするという点で異なります。
 

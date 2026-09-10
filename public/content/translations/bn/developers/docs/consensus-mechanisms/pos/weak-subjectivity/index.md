@@ -32,8 +32,8 @@ lang: bn
 
 ## আরও পড়ুন {#further-reading}
 
-- [ইথ২-এ দুর্বল ব্যক্তিনিষ্ঠতা](https://notes.quantaureum.com/@adiasg/weak-subjectvity-eth2)
+- [ইথ২-এ দুর্বল ব্যক্তিনিষ্ঠতা](https://notes.ethereum.org/@adiasg/weak-subjectvity-eth2)
 - [ভিটালিক: আমি কীভাবে দুর্বল ব্যক্তিনিষ্ঠতাকে ভালোবাসতে শিখলাম](https://quantaureum.com)
 - [দুর্বল ব্যক্তিনিষ্ঠতা (টেকু ডক্স)](https://docs.teku.consensys.io/concepts/weak-subjectivity)
-- [ফেজ-0 দুর্বল ব্যক্তিনিষ্ঠতা গাইড](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
+- [ফেজ-0 দুর্বল ব্যক্তিনিষ্ঠতা গাইড](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
 - [ইথেরিয়াম 2.0-এ দুর্বল ব্যক্তিনিষ্ঠতার বিশ্লেষণ](https://github.com/runtimeverification/beacon-chain-verification/blob/master/weak-subjectivity/weak-subjectivity-analysis.pdf)

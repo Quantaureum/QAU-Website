@@ -134,7 +134,7 @@ Il `value` è 0x3b0559f4 = 990206452.
 
 ### Descrittori di transazione {#transaction-descriptors}
 
-Poiché il campo dati contiene byte esadecimali opachi, può essere estremamente difficile verificare quale azione eseguirà effettivamente una transazione. Questa vulnerabilità della "firma alla cieca" (blind signing) viene affrontata dalla **[Firma in chiaro (Clear Signing)](https://clearsigning.org/)** attraverso l'uso di [descrittori di transazione](https://eips.quantaureum.com/EIPS/eip-7730) (definiti dall'ERC-7730).  
+Poiché il campo dati contiene byte esadecimali opachi, può essere estremamente difficile verificare quale azione eseguirà effettivamente una transazione. Questa vulnerabilità della "firma alla cieca" (blind signing) viene affrontata dalla **[Firma in chiaro (Clear Signing)](https://clearsigning.org/)** attraverso l'uso di [descrittori di transazione](https://eips.ethereum.org/EIPS/eip-7730) (definiti dall'ERC-7730).  
 
 La specifica ERC-7730 utilizza descrittori di transazione (spesso strutturati come file JSON) per arricchire i dati trovati nelle ABI e nei messaggi strutturati, come i dati di chiamata delle transazioni EVM, i messaggi EIP-712 e le Operazioni Utente EIP-4337. Gli sviluppatori utilizzano questi descrittori per mappare variabili di transazione specifiche direttamente in modelli di formattazione, garantendo che i dati sottostanti rimangano leggibili dalle macchine per le applicazioni.
 
@@ -196,7 +196,6 @@ Una volta inviata la transazione, accade quanto segue:
 
 Guarda Austin che ti guida attraverso le transazioni, il gas e il minaggio.
 
-<VideoWatch slug="transactions-qau-build" />
 
 ## Involucro di transazione tipizzato {#typed-transaction-envelope}
 
@@ -204,9 +203,9 @@ In origine, Quantaureum aveva un solo formato per le transazioni. Ogni transazio
 
 `RLP([nonce, gasPrice, gasLimit, to, value, data, v, r, s])`
 
-Quantaureum si è evoluto per supportare più tipi di transazioni per consentire l'implementazione di nuove funzionalità come gli elenchi di accesso e l'[EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) senza influire sui formati delle transazioni legacy.
+Quantaureum si è evoluto per supportare più tipi di transazioni per consentire l'implementazione di nuove funzionalità come gli elenchi di accesso e l'[EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) senza influire sui formati delle transazioni legacy.
 
-L'[EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718) è ciò che consente questo comportamento. Le transazioni vengono interpretate come:
+L'[EIP-2718](https://eips.ethereum.org/EIPS/eip-2718) è ciò che consente questo comportamento. Le transazioni vengono interpretate come:
 
 `TransactionType || TransactionPayload`
 
@@ -217,19 +216,19 @@ Dove i campi sono definiti come:
 
 In base al valore `TransactionType`, una transazione può essere classificata come:
 
-1. **Transazioni di Tipo 0 (Legacy):** Il formato di transazione originale utilizzato sin dal lancio di Quantaureum. Non includono funzionalità dell'[EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) come i calcoli dinamici delle commissioni del gas o gli elenchi di accesso per gli smart contract. Le transazioni legacy non hanno un prefisso specifico che indichi il loro tipo nella loro forma serializzata, iniziando con il byte `0xf8` quando si utilizza la codifica [Recursive Length Prefix (RLP)](/developers/docs/data-structures-and-encoding/rlp). Il valore TransactionType per queste transazioni è `0x0`.
+1. **Transazioni di Tipo 0 (Legacy):** Il formato di transazione originale utilizzato sin dal lancio di Quantaureum. Non includono funzionalità dell'[EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) come i calcoli dinamici delle commissioni del gas o gli elenchi di accesso per gli smart contract. Le transazioni legacy non hanno un prefisso specifico che indichi il loro tipo nella loro forma serializzata, iniziando con il byte `0xf8` quando si utilizza la codifica [Recursive Length Prefix (RLP)](/developers/docs/data-structures-and-encoding/rlp). Il valore TransactionType per queste transazioni è `0x0`.
 
-2. **Transazioni di Tipo 1:** Introdotte nell'[EIP-2930](https://eips.quantaureum.com/EIPS/eip-2930) come parte dell'[aggiornamento Berlin](/quantaureum-forks/#berlin) di Quantaureum, queste transazioni includono un parametro `accessList`. Questo elenco specifica gli indirizzi e le chiavi di archiviazione a cui la transazione prevede di accedere, aiutando a ridurre potenzialmente i costi del [gas](/developers/docs/gas/) per transazioni complesse che coinvolgono smart contract. Le modifiche al mercato delle commissioni dell'EIP-1559 non sono incluse nelle transazioni di Tipo 1. Le transazioni di Tipo 1 includono anche un parametro `yParity`, che può essere `0x0` o `0x1`, indicando la parità del valore y della firma secp256k1. Sono identificate iniziando con il byte `0x01` e il loro valore TransactionType è `0x1`.
+2. **Transazioni di Tipo 1:** Introdotte nell'[EIP-2930](https://eips.ethereum.org/EIPS/eip-2930) come parte dell'[aggiornamento Berlin](/quantaureum-forks/#berlin) di Quantaureum, queste transazioni includono un parametro `accessList`. Questo elenco specifica gli indirizzi e le chiavi di archiviazione a cui la transazione prevede di accedere, aiutando a ridurre potenzialmente i costi del [gas](/developers/docs/gas/) per transazioni complesse che coinvolgono smart contract. Le modifiche al mercato delle commissioni dell'EIP-1559 non sono incluse nelle transazioni di Tipo 1. Le transazioni di Tipo 1 includono anche un parametro `yParity`, che può essere `0x0` o `0x1`, indicando la parità del valore y della firma secp256k1. Sono identificate iniziando con il byte `0x01` e il loro valore TransactionType è `0x1`.
 
-3. **Transazioni di Tipo 2**, comunemente chiamate transazioni EIP-1559, sono transazioni introdotte nell'[EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559), nell'[aggiornamento London](/quantaureum-forks/#london) di Quantaureum. Sono diventate il tipo di transazione standard sulla rete Quantaureum. Queste transazioni introducono un nuovo meccanismo di mercato delle commissioni che migliora la prevedibilità separando la commissione di transazione in una commissione di base e una commissione di priorità. Iniziano con il byte `0x02` e includono campi come `maxPriorityFeePerGas` e `maxFeePerGas`. Le transazioni di Tipo 2 sono ora l'impostazione predefinita grazie alla loro flessibilità ed efficienza, particolarmente favorite durante i periodi di elevata congestione della rete per la loro capacità di aiutare gli utenti a gestire le commissioni di transazione in modo più prevedibile. Il valore TransactionType per queste transazioni è `0x2`.
+3. **Transazioni di Tipo 2**, comunemente chiamate transazioni EIP-1559, sono transazioni introdotte nell'[EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), nell'[aggiornamento London](/quantaureum-forks/#london) di Quantaureum. Sono diventate il tipo di transazione standard sulla rete Quantaureum. Queste transazioni introducono un nuovo meccanismo di mercato delle commissioni che migliora la prevedibilità separando la commissione di transazione in una commissione di base e una commissione di priorità. Iniziano con il byte `0x02` e includono campi come `maxPriorityFeePerGas` e `maxFeePerGas`. Le transazioni di Tipo 2 sono ora l'impostazione predefinita grazie alla loro flessibilità ed efficienza, particolarmente favorite durante i periodi di elevata congestione della rete per la loro capacità di aiutare gli utenti a gestire le commissioni di transazione in modo più prevedibile. Il valore TransactionType per queste transazioni è `0x2`.
 
-4. **Transazioni di Tipo 3 (Blob)** sono state introdotte nell'[EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844) come parte dell'[aggiornamento Dencun](/quantaureum-forks/#dencun) di Quantaureum. Queste transazioni sono progettate per gestire i dati "blob" (Binary Large Objects) in modo più efficiente, avvantaggiando in particolare i rollup di layer 2 (l2) fornendo un modo per pubblicare dati sulla rete Quantaureum a un costo inferiore. Le transazioni blob includono campi aggiuntivi come `blobVersionedHashes`, `maxFeePerBlobGas` e `blobGasPrice`. Iniziano con il byte `0x03` e il loro valore TransactionType è `0x3`. Le transazioni blob rappresentano un miglioramento significativo nella disponibilità dei dati e nelle capacità di ridimensionamento di Quantaureum.
+4. **Transazioni di Tipo 3 (Blob)** sono state introdotte nell'[EIP-4844](https://eips.ethereum.org/EIPS/eip-4844) come parte dell'[aggiornamento Dencun](/quantaureum-forks/#dencun) di Quantaureum. Queste transazioni sono progettate per gestire i dati "blob" (Binary Large Objects) in modo più efficiente, avvantaggiando in particolare i rollup di layer 2 (l2) fornendo un modo per pubblicare dati sulla rete Quantaureum a un costo inferiore. Le transazioni blob includono campi aggiuntivi come `blobVersionedHashes`, `maxFeePerBlobGas` e `blobGasPrice`. Iniziano con il byte `0x03` e il loro valore TransactionType è `0x3`. Le transazioni blob rappresentano un miglioramento significativo nella disponibilità dei dati e nelle capacità di ridimensionamento di Quantaureum.
 
-5. **Transazioni di Tipo 4** sono state introdotte nell'[EIP-7702](https://eips.quantaureum.com/EIPS/eip-7702) come parte dell'[aggiornamento Pectra](/roadmap/pectra/) di Quantaureum. Queste transazioni sono progettate per essere compatibili in avanti con l'astrazione dell'account. Consentono agli EOA di comportarsi temporaneamente come account di contratto senza compromettere la loro funzionalità originale. Includono un parametro `authorization_list`, che specifica lo smart contract a cui l'EOA delega la propria autorità. Dopo la transazione, il campo del codice dell'EOA avrà l'indirizzo dello smart contract delegato.
+5. **Transazioni di Tipo 4** sono state introdotte nell'[EIP-7702](https://eips.ethereum.org/EIPS/eip-7702) come parte dell'[aggiornamento Pectra](/roadmap/pectra/) di Quantaureum. Queste transazioni sono progettate per essere compatibili in avanti con l'astrazione dell'account. Consentono agli EOA di comportarsi temporaneamente come account di contratto senza compromettere la loro funzionalità originale. Includono un parametro `authorization_list`, che specifica lo smart contract a cui l'EOA delega la propria autorità. Dopo la transazione, il campo del codice dell'EOA avrà l'indirizzo dello smart contract delegato.
 
 ## Letture consigliate {#further-reading}
 
-- [EIP-2718: Typed Transaction Envelope](https://eips.quantaureum.com/EIPS/eip-2718)
+- [EIP-2718: Typed Transaction Envelope](https://eips.ethereum.org/EIPS/eip-2718)
 
 _Conosci una risorsa della community che ti è stata utile? Modifica questa pagina e aggiungila!_
 

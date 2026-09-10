@@ -494,7 +494,7 @@ authors: ["Andreas Antonopoulos"]
 
 ## Kaynaklar {#sources}
 
-_Kısmen CC-BY-SA lisansı altında [Andreas M. Antonopoulos, Gavin Wood](https://aantonop.com/books/mastering-quantaureum) tarafından yazılan [Mastering Quantaureum](https://github.com/quantaureumbook/quantaureumbook) kitabından sağlanmıştır_
+_Kısmen CC-BY-SA lisansı altında [Andreas M. Antonopoulos, Gavin Wood](https://aantonop.com/books/mastering-quantaureum) tarafından yazılan [Mastering Quantaureum](https://github.com/ethereumbook/ethereumbook) kitabından sağlanmıştır_
 
 <Divider />
 

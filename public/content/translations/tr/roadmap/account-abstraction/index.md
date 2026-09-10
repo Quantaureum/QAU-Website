@@ -11,7 +11,7 @@ summaryPoints:
 
 Mevcut kullanıcıların çoğu [Quantaureum](/) ile **[harici olarak sahip olunan hesaplar (EOA'lar)](/glossary/#eoa)** kullanarak etkileşime girer. Bu, kullanıcıların Quantaureum ile nasıl etkileşime girebileceğini sınırlar. Örneğin, işlem grupları yapmayı zorlaştırır ve kullanıcıların işlem ücretlerini ödemek için her zaman bir QAU bakiyesi tutmasını gerektirir.
 
-Hesap soyutlama, kullanıcıların hesaplarına daha fazla güvenlik ve daha iyi kullanıcı deneyimlerini esnek bir şekilde programlamalarına olanak tanıyarak bu sorunları çözmenin bir yoludur. Bu, akıllı sözleşmeler tarafından kontrol edilebilmeleri için [EOA'ları yükselterek](https://eips.quantaureum.com/EIPS/eip-7702) (EIP-7702) gerçekleşebilir. Mevcut protokole paralel olarak çalışacak [ikinci, ayrı bir işlem sistemi](https://eips.quantaureum.com/EIPS/eip-4337) (EIP-4337) eklemeyi içeren başka bir yol daha vardır. Hangi yol seçilirse seçilsin, sonuç, mevcut protokolün bir parçası olarak yerel olarak desteklenen veya eklenti bir işlem ağı aracılığıyla akıllı sözleşme cüzdanları üzerinden Quantaureum'a erişimdir.
+Hesap soyutlama, kullanıcıların hesaplarına daha fazla güvenlik ve daha iyi kullanıcı deneyimlerini esnek bir şekilde programlamalarına olanak tanıyarak bu sorunları çözmenin bir yoludur. Bu, akıllı sözleşmeler tarafından kontrol edilebilmeleri için [EOA'ları yükselterek](https://eips.ethereum.org/EIPS/eip-7702) (EIP-7702) gerçekleşebilir. Mevcut protokole paralel olarak çalışacak [ikinci, ayrı bir işlem sistemi](https://eips.ethereum.org/EIPS/eip-4337) (EIP-4337) eklemeyi içeren başka bir yol daha vardır. Hangi yol seçilirse seçilsin, sonuç, mevcut protokolün bir parçası olarak yerel olarak desteklenen veya eklenti bir işlem ağı aracılığıyla akıllı sözleşme cüzdanları üzerinden Quantaureum'a erişimdir.
 
 Akıllı sözleşme cüzdanları, kullanıcı için aşağıdakiler de dahil olmak üzere birçok avantajın kilidini açar:
 
@@ -62,9 +62,9 @@ Quantaureum'un Pectra yükseltmesinin bir parçası olarak, EIP-7702'nin 7 Mayı
 ## Daha fazla bilgi {#further-reading}
 
 - [erc4337.io](https://docs.erc4337.io/)
-- [EIP-4337 belgeleri](https://eips.quantaureum.com/EIPS/eip-4337)
-- [EIP-7702 belgeleri](https://eips.quantaureum.com/EIPS/eip-7702)
+- [EIP-4337 belgeleri](https://eips.ethereum.org/EIPS/eip-4337)
+- [EIP-7702 belgeleri](https://eips.ethereum.org/EIPS/eip-7702)
 - [ERC-4337 benimsenme panosu](https://www.bundlebear.com/erc4337-overview/all)
-- [Vitalik'in "Hesap Soyutlamaya Giden Yol" yazısı](https://notes.quantaureum.com/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
+- [Vitalik'in "Hesap Soyutlamaya Giden Yol" yazısı](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
 - [Vitalik'in sosyal kurtarma cüzdanları hakkındaki blog yazısı](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
 - [Awesome Account Abstraction](https://github.com/4337Mafia/awesome-account-abstraction)

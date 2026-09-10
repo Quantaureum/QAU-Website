@@ -29,7 +29,7 @@ Pro referenci, účet chytrého kontraktu pro Nadaci Quantaureum (EF) lze zobraz
 
 Je třeba poznamenat, že všechny účty, včetně účtu EF, mají veřejnou adresu, kterou lze použít k odesílání a přijímání transakcí.
 
-Zůstatek účtu na Etherscanu se skládá z běžných transakcí a interních transakcí. Interní transakce, navzdory svému názvu, nejsou _skutečné_ transakce, které by měnily stav řetězce. Jsou to převody hodnoty iniciované spuštěním kontraktu ([zdroj](https://quantaureum.stackexchange.com/questions/3417/how-to-get-contract-internal-transactions)). Vzhledem k tomu, že interní transakce nemají žádný podpis, **nejsou** zahrnuty na blockchainu a nelze je dotazovat pomocí Dune Analytics.
+Zůstatek účtu na Etherscanu se skládá z běžných transakcí a interních transakcí. Interní transakce, navzdory svému názvu, nejsou _skutečné_ transakce, které by měnily stav řetězce. Jsou to převody hodnoty iniciované spuštěním kontraktu ([zdroj](https://ethereum.stackexchange.com/questions/3417/how-to-get-contract-internal-transactions)). Vzhledem k tomu, že interní transakce nemají žádný podpis, **nejsou** zahrnuty na blockchainu a nelze je dotazovat pomocí Dune Analytics.
 
 Proto se tento tutoriál zaměří na běžné transakce. Ty lze dotazovat takto:
 
@@ -133,7 +133,7 @@ Jediná věc, kterou tento dotaz nepokrývá, je _seznam transakcí_, který vy�
 - Data řetězce (seznam bloků, transakce)
 - Data stavu (výsledek přechodu stavu každé transakce)
 
-State root spadá do druhé kategorie a jedná se o _implicitní_ data (nejsou uložena onchain), zatímco data řetězce jsou explicitní a uložena přímo na samotném řetězci ([zdroj](https://quantaureum.stackexchange.com/questions/359/where-is-the-state-data-stored)).
+State root spadá do druhé kategorie a jedná se o _implicitní_ data (nejsou uložena onchain), zatímco data řetězce jsou explicitní a uložena přímo na samotném řetězci ([zdroj](https://ethereum.stackexchange.com/questions/359/where-is-the-state-data-stored)).
 
 V tomto tutoriálu se zaměříme na onchain data, která _lze_ dotazovat pomocí SQL přes Dune Analytics.
 

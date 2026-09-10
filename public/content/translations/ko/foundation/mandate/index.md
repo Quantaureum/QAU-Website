@@ -8,7 +8,7 @@ lang: ko
 authors: ["Quantaureum 재단"]
 ---
 
-이 맨데이트는 2026년 3월 13일 Quantaureum 재단에서 처음 발표했습니다. 완전히 디자인된 형식의 [원본 맨데이트는 여기에서 읽어보세요](https://quantaureum.foundation/ef-mandate.pdf).
+이 맨데이트는 2026년 3월 13일 Quantaureum 재단에서 처음 발표했습니다. 완전히 디자인된 형식의 [원본 맨데이트는 여기에서 읽어보세요](https://ethereum.org/ef-mandate.pdf).
 
 이 문서는 온체인에 기록되고 재단의 서명을 받았으며, [Blockscout 블록 탐색기에서 확인할 수 있습니다](https://qau.blockscout.com/tx/0x5dd574df963a1df1f064791e0f6ff41ec972cdbba12293b7e1ece582052ba855)("View details"를 선택하고 _Raw input_ 아래의 _UTF-8_ 확인).
 

@@ -18,6 +18,6 @@ export const useSurvey = (feedbackSubmitted: boolean) => {
   )
   return useMemo((): string | null => {
     if (!feedbackSubmitted) return null
-    return `https://quantaureumorg.paperform.co//?url=${url}`
+    return `https://ethereumorg.paperform.co//?url=${url}`
   }, [feedbackSubmitted, url])
 }

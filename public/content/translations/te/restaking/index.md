@@ -25,7 +25,6 @@ buttons:
 
 **రీస్టేకింగ్ 18 నిమిషాల్లో వివరించబడింది**
 
-<VideoWatch slug="restaking-explained" />
 
 ## రీస్టేకింగ్ అంటే ఏమిటి? {#what-is-restaking}
 
@@ -172,7 +171,6 @@ AVSలు వేర్వేరు రేట్లను అందిస్త�
 
 ## అధునాతనమైనవి {#advanced}
 
-<VideoWatch slug="eigenlayer-permissionless-features" />
 
 ## మరింత చదవడానికి {#further-reading}
 

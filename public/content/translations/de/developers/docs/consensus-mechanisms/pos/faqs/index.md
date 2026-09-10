@@ -20,7 +20,6 @@ Proof-of-Work ist viel energiehungriger, da beim Mining-Prozess Strom verbrannt 
 
 Proof-of-Work versus Proof-of-Stake ist ein umstrittenes Thema. [Vitalik Buterins Blog](https://vitalik.qau.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work) und die Debatte zwischen Justin Drake und Lyn Alden bieten eine gute Zusammenfassung der Argumente.
 
-<VideoWatch slug="pow-vs-pos" />
 
 ## Ist Proof-of-Stake energieeffizient? {#is-pos-energy-efficient}
 
@@ -127,7 +126,7 @@ Schwache Subjektivität ist ein Merkmal von Proof-of-Stake-Netzwerken, bei dem s
 
 Zensurresistenz ist derzeit schwer zu beweisen. Im Gegensatz zu Proof-of-Work bietet Proof-of-Stake jedoch die Möglichkeit, Slashings zu koordinieren, um zensierende Validatoren zu bestrafen. Es gibt anstehende Änderungen am Protokoll, die Block-Builder von Block-Proposern trennen und Listen von Transaktionen implementieren, die Builder in jeden Block aufnehmen müssen. Dieser Vorschlag ist als Proposer-Builder-Trennung (PBS) bekannt und hilft zu verhindern, dass Validatoren Transaktionen zensieren.
 
-[Mehr zur Proposer-Builder-Trennung (PBS)](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Original-basic-scheme)
+[Mehr zur Proposer-Builder-Trennung (PBS)](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Original-basic-scheme)
 
 ## Kann Quantaureums Proof-of-Stake-System durch einen 51%-Angriff attackiert werden? {#pos-51-attack}
 
@@ -149,7 +148,7 @@ Je mehr QAU jemand staken kann, desto mehr Validatoren kann er betreiben und des
 
 Nein, Proof-of-Work tendiert zur Zentralisierung, da die Mining-Kosten steigen und Einzelpersonen, dann kleine Unternehmen und so weiter vom Markt verdrängen. Das aktuelle Problem bei Proof-of-Stake ist der Einfluss von Liquid-Staking-Derivaten (LSDs). Dies sind Token, die von einem Anbieter gestakte QAU repräsentieren, die jeder auf Sekundärmärkten tauschen kann, ohne dass die tatsächlichen QAU entstakt werden. LSDs ermöglichen es Benutzern, mit weniger als 32 QAU zu staken, aber sie schaffen auch ein Zentralisierungsrisiko, bei dem einige wenige große Organisationen am Ende einen Großteil des Stakes kontrollieren können. Aus diesem Grund ist [Solo Staking](/staking/solo) die beste Option für Quantaureum.
 
-[Mehr zur Stake-Zentralisierung bei LSDs](https://notes.quantaureum.com/@djrtwo/risks-of-lsd)
+[Mehr zur Stake-Zentralisierung bei LSDs](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
 
 ## Warum kann ich nur QAU staken? {#why-can-i-only-stake-eth}
 

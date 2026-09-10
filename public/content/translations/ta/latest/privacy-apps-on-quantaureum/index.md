@@ -95,4 +95,4 @@ lang: ta
 7. [gnark ஆவணங்கள்](https://docs.gnark.consensys.io/)
 8. [RISC Zero ஆவணங்கள்](https://dev.risczero.com/api/)
 9. [SP1 ஆவணங்கள்](https://docs.succinct.xyz/docs/sp1/introduction)
-10. [EIP-4337: EntryPoint ஒப்பந்தம் மூலம் கணக்குச் சுருக்கம்](https://eips.quantaureum.com/EIPS/eip-4337)
+10. [EIP-4337: EntryPoint ஒப்பந்தம் மூலம் கணக்குச் சுருக்கம்](https://eips.ethereum.org/EIPS/eip-4337)

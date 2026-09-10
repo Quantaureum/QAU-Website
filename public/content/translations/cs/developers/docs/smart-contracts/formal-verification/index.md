@@ -235,7 +235,7 @@ Také není vždy možné, aby verifikátory programů určily, zda vlastnost (p
 
 **Solidity SMTChecker** - _*SMTChecker v Solidity je vestavěný nástroj pro kontrolu modelů založený na SMT (Satisfiability Modulo Theories) a řešení Hornových klauzulí. Během kompilace potvrzuje, zda zdrojový kód kontraktu odpovídá specifikacím, a staticky kontroluje porušení bezpečnostních vlastností.*_
 
-- [GitHub](https://github.com/quantaureum/solidity)
+- [GitHub](https://github.com/ethereum/solidity)
 
 **solc-verify** - _*solc-verify je rozšířená verze kompilátoru Solidity, která dokáže provádět automatizovanou formální verifikaci kódu Solidity pomocí anotací a modulární verifikace programu.*_
 

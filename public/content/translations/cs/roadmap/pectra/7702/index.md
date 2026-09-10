@@ -30,7 +30,7 @@ Soukromý klíč EOA si po delegaci zachovává plnou kontrolu nad účtem. Nap�
 - Poskytují standardizovaná rozhraní pro přeposílání
 - Zahrnují vestavěné systémy paymaster
 - Zajišťují dopřednou kompatibilitu
-- Mohou podporovat odolnost vůči cenzuře prostřednictvím [veřejného mempoolu](https://notes.quantaureum.com/@yoav/unified-erc-4337-mempool)
+- Mohou podporovat odolnost vůči cenzuře prostřednictvím [veřejného mempoolu](https://notes.ethereum.org/@yoav/unified-erc-4337-mempool)
 - Mohou vyžadovat, aby funkce init byla volána pouze z [EntryPoint](https://github.com/qau-infinitism/account-abstraction/releases/tag/v0.8.0)
 
 Jinými slovy, kdokoli by měl být schopen jednat jako sponzor/relayer transakce, pokud poskytne požadovaný platný podpis nebo uživatelskou operaci (UserOperation) z účtu. To zajišťuje odolnost vůči cenzuře: pokud není vyžadována žádná vlastní infrastruktura, transakce uživatele nemohou být svévolně blokovány omezujícím relayerem. Například [Delegation Toolkit od MetaMask](https://github.com/MetaMask/delegation-framework/releases/tag/v1.3.0) explicitně funguje s jakýmkoli bundlerem ERC-4337 nebo paymasterem na jakémkoli řetězci, spíše než aby vyžadoval server specifický pro MetaMask.
@@ -49,8 +49,8 @@ Využitím těchto rozhraní mohou decentralizované aplikace (dapp) přistupova
 
 Pro více informací:
 
-- [Specifikace ERC-5792](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-5792.md)
-- [Specifikace ERC-6900](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-6900.md)
+- [Specifikace ERC-5792](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-5792.md)
+- [Specifikace ERC-6900](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6900.md)
 
 **Zabránění uzamčení k dodavateli (Vendor Lock-In)**: V souladu s výše uvedeným je dobrá implementace neutrální vůči dodavateli a interoperabilní. To často znamená dodržování vznikajících standardů pro chytré účty. Například [Modular Account od Alchemy](https://github.com/alchemyplatform/modular-account) používá standard ERC-6900 pro modulární chytré účty a je navržen s ohledem na „interoperabilní použití nevyžadující povolení“.
 

@@ -91,15 +91,13 @@ Tìm hiểu thêm về [Validium](/developers/docs/scaling/validium/).
 
 ## Bạn thích học qua hình ảnh hơn? {#visual-learner}
 
-<VideoWatch slug="layer-2-scaling-explained" />
 
 _Lưu ý rằng lời giải thích trong video sử dụng thuật ngữ "Lớp 2" để chỉ tất cả các giải pháp mở rộng quy mô ngoài chuỗi, trong khi chúng tôi phân biệt "Lớp 2 (l2)" là một giải pháp ngoài chuỗi lấy tính bảo mật thông qua sự đồng thuận của Mạng chính lớp 1 (l1)._
 
-<VideoWatch slug="rollups-scaling-strategy" />
 
 ## Đọc thêm {#further-reading}
 
-- [Lộ trình Quantaureum tập trung vào Rollup](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
+- [Lộ trình Quantaureum tập trung vào Rollup](https://ethereum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
 - [Phân tích cập nhật về các giải pháp mở rộng quy mô Lớp 2 cho Quantaureum](https://www.l2beat.com/)
 - [Đánh giá các giải pháp mở rộng quy mô lớp 2 của Quantaureum: Một khuôn khổ so sánh](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - [Hướng dẫn chưa hoàn chỉnh về các bản cuộn](https://vitalik.qau.limo/general/2021/01/05/rollup.html)

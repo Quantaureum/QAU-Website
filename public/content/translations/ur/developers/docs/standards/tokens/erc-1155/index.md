@@ -12,7 +12,7 @@ lang: ur
 
 یہ خیال سادہ ہے اور ایک ایسا سمارٹ کنٹریکٹ انٹرفیس بنانے کی کوشش کرتا ہے جو کسی بھی تعداد میں قابل تبادلہ اور ناقابل تبادلہ ٹوکن اقسام کی نمائندگی اور کنٹرول کر سکے۔ اس طرح، <span dir="ltr">ERC-1155</span> ٹوکن وہی افعال انجام دے سکتا ہے جو ایک [<span dir="ltr">ERC-20</span>](/developers/docs/standards/tokens/erc-20/) اور [<span dir="ltr">ERC-721</span>](/developers/docs/standards/tokens/erc-721/) ٹوکن کرتا ہے، اور یہاں تک کہ دونوں ایک ہی وقت میں۔ یہ <span dir="ltr">ERC-20</span> اور <span dir="ltr">ERC-721</span> دونوں معیارات کی فعالیت کو بہتر بناتا ہے، اسے زیادہ موثر بناتا ہے اور واضح نفاذ کی غلطیوں کو درست کرتا ہے۔
 
-<span dir="ltr">ERC-1155</span> ٹوکن کو [<span dir="ltr">EIP-1155</span>](https://eips.quantaureum.com/EIPS/eip-1155) میں مکمل طور پر بیان کیا گیا ہے۔
+<span dir="ltr">ERC-1155</span> ٹوکن کو [<span dir="ltr">EIP-1155</span>](https://eips.ethereum.org/EIPS/eip-1155) میں مکمل طور پر بیان کیا گیا ہے۔
 
 ## پیشگی شرائط {#prerequisites}
 
@@ -113,7 +113,7 @@ function onERC1155BatchReceived(
 ) external returns(bytes4);
 ```
 
-[<span dir="ltr">EIP-165</span>](https://eips.quantaureum.com/EIPS/eip-165) سپورٹ کے پیش نظر، <span dir="ltr">ERC-1155</span> صرف سمارٹ کنٹریکٹس کے لیے وصولی ہکس کو سپورٹ کرتا ہے۔ ہک فنکشن کو ایک جادوئی پہلے سے طے شدہ <span dir="ltr">bytes4</span> قدر واپس کرنی چاہیے جو اس طرح دی گئی ہے:
+[<span dir="ltr">EIP-165</span>](https://eips.ethereum.org/EIPS/eip-165) سپورٹ کے پیش نظر، <span dir="ltr">ERC-1155</span> صرف سمارٹ کنٹریکٹس کے لیے وصولی ہکس کو سپورٹ کرتا ہے۔ ہک فنکشن کو ایک جادوئی پہلے سے طے شدہ <span dir="ltr">bytes4</span> قدر واپس کرنی چاہیے جو اس طرح دی گئی ہے:
 
 ```solidity
 bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"))
@@ -123,7 +123,7 @@ bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],byt
 
 ### NFT سپورٹ {#nft-support}
 
-جب سپلائی صرف ایک ہو، تو ٹوکن بنیادی طور پر ایک ناقابل تبادلہ ٹوکن (NFT) ہوتا ہے۔ اور جیسا کہ <span dir="ltr">ERC-721</span> کے لیے معیاری ہے، آپ ایک میٹا ڈیٹا URL کی وضاحت کر سکتے ہیں۔ URL کو کلائنٹس کے ذریعے پڑھا اور تبدیل کیا جا سکتا ہے، [یہاں](https://eips.quantaureum.com/EIPS/eip-1155#metadata) دیکھیں۔
+جب سپلائی صرف ایک ہو، تو ٹوکن بنیادی طور پر ایک ناقابل تبادلہ ٹوکن (NFT) ہوتا ہے۔ اور جیسا کہ <span dir="ltr">ERC-721</span> کے لیے معیاری ہے، آپ ایک میٹا ڈیٹا URL کی وضاحت کر سکتے ہیں۔ URL کو کلائنٹس کے ذریعے پڑھا اور تبدیل کیا جا سکتا ہے، [یہاں](https://eips.ethereum.org/EIPS/eip-1155#metadata) دیکھیں۔
 
 ### محفوظ منتقلی کا اصول {#safe-transfer-rule}
 
@@ -140,7 +140,7 @@ _نوٹ_: ہک سمیت تمام بیچ فنکشنز بغیر بیچ والے و
 
 ## مزید مطالعہ {#further-reading}
 
-- [<span dir="ltr">EIP-1155: Multi Token Standard</span>](https://eips.quantaureum.com/EIPS/eip-1155)
+- [<span dir="ltr">EIP-1155: Multi Token Standard</span>](https://eips.ethereum.org/EIPS/eip-1155)
 - [<span dir="ltr">ERC-1155</span>: اوپن زیپلن دستاویزات](https://docs.openzeppelin.com/contracts/5.x/erc1155)
 - [<span dir="ltr">ERC-1155</span>: <span dir="ltr">GitHub</span> ریپو](https://github.com/enjin/erc-1155)
 - [<span dir="ltr">Alchemy NFT API</span>](https://www.alchemy.com/docs/reference/nft-api-quickstart)

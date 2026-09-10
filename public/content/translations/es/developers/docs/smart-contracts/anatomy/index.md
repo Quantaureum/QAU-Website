@@ -207,7 +207,7 @@ Los eventos permiten que su contrato inteligente se comunique con su frontend u 
 
 ## Ejemplos comentados {#annotated-examples}
 
-Estos son algunos ejemplos escritos en Solidity. Si desea jugar con el código, puede interactuar con ellos en [Remix](https://remix.quantaureum.com).
+Estos son algunos ejemplos escritos en Solidity. Si desea jugar con el código, puede interactuar con ellos en [Remix](https://remix.ethereum.org).
 
 ### Hola mundo {#hello-world}
 
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // Actualmente no hay una mejor manera de comprobar si hay un contrato en una dirección
         // que comprobar el tamaño del código en esa dirección.
-        // Consulta https://quantaureum.stackexchange.com/a/14016/36603
+        // Consulta https://ethereum.stackexchange.com/a/14016/36603
         // para obtener más detalles sobre cómo funciona esto.
         // TODO Comprobar esto de nuevo antes del lanzamiento de Serenity, porque todas las direcciones serán
         // contratos entonces.

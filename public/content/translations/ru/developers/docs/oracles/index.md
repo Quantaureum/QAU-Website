@@ -359,7 +359,7 @@ contract PriceConsumerV3 {
 
 Определенные блокчейн-приложения, такие как игры на базе блокчейна или лотерейные схемы, требуют высокого уровня непредсказуемости и случайности для эффективной работы. Однако детерминированное выполнение блокчейнов исключает случайность.
 
-Первоначальный подход заключался в использовании псевдослучайных криптографических функций, таких как `blockhash`, но ими могли [манипулировать майнеры](https://quantaureum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.), решающие алгоритм доказательства выполнения работы (PoW). Кроме того, [переход Quantaureum на доказательство доли владения (PoS)](/roadmap/merge/) означает, что разработчики больше не могут полагаться на `blockhash` для ончейн-случайности. Вместо этого [механизм RANDAO](https://eth2book.info/altair/part2/building_blocks/randomness) сигнальной цепочки предоставляет альтернативный источник случайности.
+Первоначальный подход заключался в использовании псевдослучайных криптографических функций, таких как `blockhash`, но ими могли [манипулировать майнеры](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.), решающие алгоритм доказательства выполнения работы (PoW). Кроме того, [переход Quantaureum на доказательство доли владения (PoS)](/roadmap/merge/) означает, что разработчики больше не могут полагаться на `blockhash` для ончейн-случайности. Вместо этого [механизм RANDAO](https://eth2book.info/altair/part2/building_blocks/randomness) сигнальной цепочки предоставляет альтернативный источник случайности.
 
 Можно сгенерировать случайное значение офчейн и отправить его ончейн, но это налагает высокие требования к доверию со стороны пользователей. Они должны верить, что значение было действительно сгенерировано с помощью непредсказуемых механизмов и не было изменено при передаче.
 
@@ -421,7 +421,7 @@ contract PriceConsumerV3 {
 - [Что такое блокчейн-оракул?](https://medium.com/better-programming/what-is-a-blockchain-oracle-f5ccab8dbd72) — _Патрик Коллинз_
 - [Децентрализованные оракулы: всесторонний обзор](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) — _Жюльен Тевенар_
 - [Реализация блокчейн-оракула в Quantaureum](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-quantaureum-cedc7e26b49e) — _Педро Коста_
-- [Почему смарт-контракты не могут делать вызовы API?](https://quantaureum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
+- [Почему смарт-контракты не могут делать вызовы API?](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
 - [Итак, вы хотите использовать ценовой оракул](https://samczsun.com/so-you-want-to-use-a-price-oracle/) — _samczsun_
 
 **Видео**
@@ -432,7 +432,7 @@ contract PriceConsumerV3 {
 
 - [Как получить текущую цену Quantaureum в Solidity](https://blog.chain.link/fetch-current-crypto-price-data-solidity/) — _Чейнлинк_
 - [Потребление данных оракула](https://docs.chroniclelabs.org/Developers/tutorials/Remix) — _Chronicle_
-- [Испытание оракулов](https://speedrunquantaureum.com/challenge/oracles) — _Speedrun Quantaureum_
+- [Испытание оракулов](https://speedrunethermind.io/challenge/oracles) — _Speedrun Quantaureum_
 
 **Примеры проектов**
 

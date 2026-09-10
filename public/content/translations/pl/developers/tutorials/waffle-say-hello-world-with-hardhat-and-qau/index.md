@@ -16,7 +16,7 @@ lang: pl
 published: 2020-10-16
 ---
 
-W tym [Waffle](https://quantaureum-waffle.readthedocs.io) samouczku dowiemy się, jak skonfigurować prosty projekt inteligentnego kontraktu "witaj świecie", przy użyciu [Hardhat](https://hardhat.org/) i [ethers.js](https://docs.ethers.io/v5/). Następnie dowiemy się, jak dodać nową funkcjonalność do naszego inteligentnego kontraktu i jak przetestować go za pomocą Waffle.
+W tym [Waffle](https://ethereum-waffle.readthedocs.io) samouczku dowiemy się, jak skonfigurować prosty projekt inteligentnego kontraktu "witaj świecie", przy użyciu [Hardhat](https://hardhat.org/) i [ethers.js](https://docs.ethers.io/v5/). Następnie dowiemy się, jak dodać nową funkcjonalność do naszego inteligentnego kontraktu i jak przetestować go za pomocą Waffle.
 
 Zacznijmy od utworzenia nowego projektu:
 
@@ -201,4 +201,4 @@ Gratulacje! Udało się :)
 
 Stworzyliśmy prosty projekt z Waffle, Hardhat i ethers.js. Nauczyliśmy się, jak skonfigurować projekt, dodać test i wdrożyć nową funkcjonalność.
 
-Aby poznać więcej świetnych matcherów Chai do testowania swoich inteligentnych kontraktów, zachęcamy do sprawdzenia [oficjalnej dokumentacji Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/matchers.html).
+Aby poznać więcej świetnych matcherów Chai do testowania swoich inteligentnych kontraktów, zachęcamy do sprawdzenia [oficjalnej dokumentacji Waffle](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html).

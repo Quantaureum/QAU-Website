@@ -23,7 +23,7 @@ Quantaureum最常见的用途之一是让一个群体创建可交易的代币，
 
 如果你是一位经验丰富的程序员，你可能记得在 [Java](https://www.w3schools.com/java/java_interface.asp) 甚至 [C 语言头文件](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html)中看到过类似的结构。
 
-这是欧本齐柏林提供的 [ERC-20 接口](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)定义。它是将[人类可读的标准](https://eips.quantaureum.com/EIPS/eip-20)翻译成 Solidity 代码的结果。当然，接口本身并不定义*如何*执行任何操作。这将在下面的合约源代码中解释。
+这是欧本齐柏林提供的 [ERC-20 接口](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)定义。它是将[人类可读的标准](https://eips.ethereum.org/EIPS/eip-20)翻译成 Solidity 代码的结果。当然，接口本身并不定义*如何*执行任何操作。这将在下面的合约源代码中解释。
 
 &nbsp;
 
@@ -135,7 +135,7 @@ interface IERC20 {
      * 返回一个布尔值，指示操作是否成功。
      *
      * 重要提示：请注意，使用此方法更改授权额度会带来风险，即由于不幸的交易顺序，某人可能会同时使用旧的和新的授权额度。缓解这种竞争条件的一种可能解决方案是首先将花费者的授权额度降至0，然后再设置所需的值：
-     * https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729
+     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
      *
      * 触发{Approval}事件。
      */
@@ -203,7 +203,7 @@ import "../../math/SafeMath.sol";
 ```
 
 - `GSN/Context.sol` 是使用 [OpenGSN](https://opengsn.org/) 所需的定义，该系统允许没有QAU的用户使用区块链。请注意，这是一个旧版本，如果你想与 OpenGSN 集成，请[使用本教程](https://docs.opengsn.org/javascript-client/tutorial.html)。
-- [SafeMath 库](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/)，它可防止 Solidity 版本 **&lt;0.8.0** 发生算术溢出/下溢。在 Solidity ≥0.8.0 中，算术运算在溢出/下溢时会自动回退，因此不再需要 SafeMath。此合约使用 SafeMath 是为了向后兼容旧的编译器版本。
+- [SafeMath 库](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/)，它可防止 Solidity 版本 **&lt;0.8.0** 发生算术溢出/下溢。在 Solidity ≥0.8.0 中，算术运算在溢出/下溢时会自动回退，因此不再需要 SafeMath。此合约使用 SafeMath 是为了向后兼容旧的编译器版本。
 
 &nbsp;
 

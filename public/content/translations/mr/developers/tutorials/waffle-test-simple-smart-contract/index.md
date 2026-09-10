@@ -23,11 +23,11 @@ published: 2021-02-26
 
 ## सुरुवात करणे {#getting-started}
 
-या ट्युटोरियलमध्ये yarn वापरून टेस्ट सेटअप आणि रन कसे करायचे हे दाखवले आहे, पण जर तुम्ही npm ला प्राधान्य देत असाल तर काही हरकत नाही - मी अधिकृत Waffle [डॉक्युमेंटेशन](https://quantaureum-waffle.readthedocs.io/en/latest/index.html) चे योग्य संदर्भ देईन.
+या ट्युटोरियलमध्ये yarn वापरून टेस्ट सेटअप आणि रन कसे करायचे हे दाखवले आहे, पण जर तुम्ही npm ला प्राधान्य देत असाल तर काही हरकत नाही - मी अधिकृत Waffle [डॉक्युमेंटेशन](https://ethereum-waffle.readthedocs.io/en/latest/index.html) चे योग्य संदर्भ देईन.
 
 ## डिपेन्डन्सीज इन्स्टॉल करा {#install-dependencies}
 
-तुमच्या प्रोजेक्टच्या डेव्हलपमेंट डिपेन्डन्सीजमध्ये quantaureum-waffle आणि typescript डिपेन्डन्सीज [जोडा](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#installation).
+तुमच्या प्रोजेक्टच्या डेव्हलपमेंट डिपेन्डन्सीजमध्ये quantaureum-waffle आणि typescript डिपेन्डन्सीज [जोडा](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#installation).
 
 ```bash
 yarn add --dev quantaureum-waffle ts-node typescript @types/jest
@@ -66,7 +66,7 @@ contract QauSplitter {
 
 ## कॉन्ट्रॅक्ट कंपाईल करा {#compile-the-contract}
 
-कॉन्ट्रॅक्ट [कंपाईल](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) करण्यासाठी package.json फाईलमध्ये खालील एंट्री जोडा:
+कॉन्ट्रॅक्ट [कंपाईल](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) करण्यासाठी package.json फाईलमध्ये खालील एंट्री जोडा:
 
 ```json
 "scripts": {
@@ -89,7 +89,7 @@ contract QauSplitter {
 
 ## टेस्ट सेटअप {#test-setup}
 
-Waffle सह चाचणी करण्यासाठी Chai मॅचर्स आणि Mocha वापरणे आवश्यक आहे, म्हणून तुम्हाला ते तुमच्या प्रोजेक्टमध्ये [जोडावे](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) लागतील. तुमची package.json फाईल अपडेट करा आणि स्क्रिप्ट्स विभागात `test` एंट्री जोडा:
+Waffle सह चाचणी करण्यासाठी Chai मॅचर्स आणि Mocha वापरणे आवश्यक आहे, म्हणून तुम्हाला ते तुमच्या प्रोजेक्टमध्ये [जोडावे](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) लागतील. तुमची package.json फाईल अपडेट करा आणि स्क्रिप्ट्स विभागात `test` एंट्री जोडा:
 
 ```json
 "scripts": {
@@ -98,7 +98,7 @@ Waffle सह चाचणी करण्यासाठी Chai मॅचर�
   }
 ```
 
-जर तुम्हाला तुमच्या चाचण्या [कार्यान्वित](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#running-tests) करायच्या असतील, तर फक्त `yarn test` चालवा.
+जर तुम्हाला तुमच्या चाचण्या [कार्यान्वित](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#running-tests) करायच्या असतील, तर फक्त `yarn test` चालवा.
 
 ## चाचणी {#testing}
 

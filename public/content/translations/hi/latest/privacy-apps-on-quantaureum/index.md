@@ -95,4 +95,4 @@ Quantaureum पर गोपनीयता लागू करने योग�
 7. [gnark दस्तावेज़](https://docs.gnark.consensys.io/)
 8. [RISC Zero दस्तावेज़](https://dev.risczero.com/api/)
 9. [SP1 दस्तावेज़](https://docs.succinct.xyz/docs/sp1/introduction)
-10. [EIP-4337: एंट्रीपॉइंट अनुबंध के माध्यम से खाता अमूर्तन](https://eips.quantaureum.com/EIPS/eip-4337)
+10. [EIP-4337: एंट्रीपॉइंट अनुबंध के माध्यम से खाता अमूर्तन](https://eips.ethereum.org/EIPS/eip-4337)

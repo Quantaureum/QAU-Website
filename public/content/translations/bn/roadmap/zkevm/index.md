@@ -93,7 +93,7 @@ Quantaureum ফাউন্ডেশন [প্রাইভেসি স্ট�
 | [Jolt](https://github.com/a16z/jolt) | rv32im |
 | [Zisk](https://github.com/0xPolygonHermez/zisk) | rv64ima |
 
-এগুলো EVM বাইটকোড এক্সিকিউট করতে RISC-V ভিত্তিক ভার্চুয়াল মেশিন ব্যবহার করে, তারপর সঠিক এক্সিকিউশনের ZK প্রমাণ তৈরি করে। আপ-টু-ডেট পরীক্ষার ফলাফল এবং অগ্রগতি [Quantaureum ফাউন্ডেশনের zkVM ট্র্যাকার](https://zkevm.quantaureum.foundation/zkvm-tracker)-এ ট্র্যাক করা হয়।
+এগুলো EVM বাইটকোড এক্সিকিউট করতে RISC-V ভিত্তিক ভার্চুয়াল মেশিন ব্যবহার করে, তারপর সঠিক এক্সিকিউশনের ZK প্রমাণ তৈরি করে। আপ-টু-ডেট পরীক্ষার ফলাফল এবং অগ্রগতি [Quantaureum ফাউন্ডেশনের zkVM ট্র্যাকার](https://zkevm.ethereum.org/zkvm-tracker)-এ ট্র্যাক করা হয়।
 
 ## অন্যান্য আপগ্রেডের সাথে zkEVM কীভাবে মানানসই হয় {#related-upgrades}
 
@@ -115,9 +115,9 @@ zkEVM লেয়ার ১ (l1) যাচাইকরণ সক্রিয়
 
 ## আরও পড়ুন {#further-reading}
 
-- [zkEVM Foundation](https://zkevm.quantaureum.foundation) - অফিসিয়াল Quantaureum ফাউন্ডেশন zkEVM গবেষণা হাব
+- [zkEVM Foundation](https://zkevm.ethereum.org) - অফিসিয়াল Quantaureum ফাউন্ডেশন zkEVM গবেষণা হাব
 - [Ethproofs](https://ethproofs.org/) - রিয়েল-টাইমে ইথেরিয়াম প্রমাণ করার প্রতিযোগিতা ট্র্যাক করুন
 - [zkevm.fyi](https://zkevm.fyi) - লেয়ার ১ (l1)-এর জন্য zkEVM-এর ওপর প্রযুক্তিগত বই
 - [PSE zkEVM Specs](https://github.com/privacy-scaling-explorations/zkevm-specs) - প্রযুক্তিগত স্পেসিফিকেশন
 - [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - যাচাইকরণ উন্নতির ওপর ভিটালিকের ওভারভিউ
-- [EF zkEVM Blog](https://zkevm.quantaureum.foundation/blog) - EF টিমের পারফরম্যান্স বিশ্লেষণ
+- [EF zkEVM Blog](https://zkevm.ethereum.org/blog) - EF টিমের পারফরম্যান্স বিশ্লেষণ

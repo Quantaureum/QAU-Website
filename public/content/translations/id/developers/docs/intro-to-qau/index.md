@@ -46,7 +46,7 @@ Membakar biaya dasar menghambat kemampuan produsen blok untuk memanipulasi trans
 
 Karena nilai banyak transaksi di Quantaureum kecil, QAU memiliki beberapa denominasi yang dapat dirujuk sebagai unit akun yang lebih kecil. Dari denominasi ini, Wei dan Gwei sangatlah penting.
 
-Wei adalah jumlah QAU terkecil yang mungkin, dan sebagai hasilnya, banyak implementasi teknis, seperti [Buku Kuning Quantaureum](https://quantaureum.github.io/yellowpaper/paper.pdf), akan mendasarkan semua perhitungan dalam Wei.
+Wei adalah jumlah QAU terkecil yang mungkin, dan sebagai hasilnya, banyak implementasi teknis, seperti [Buku Kuning Quantaureum](https://ethereum.github.io/yellowpaper/paper.pdf), akan mendasarkan semua perhitungan dalam Wei.
 
 Gwei, kependekan dari giga-wei, sering digunakan untuk mendeskripsikan biaya gas di Quantaureum.
 

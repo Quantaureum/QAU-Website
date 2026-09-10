@@ -64,6 +64,6 @@ class BeaconBlockBody(Container):
 
 - [தொகுதிகள் அறிமுகம்](/developers/docs/blocks/)
 - [உரிமைச் சான்று (PoS) அறிமுகம்](/developers/docs/consensus-mechanisms/pos/)
-- [எத்திரியம் கருத்தொருமிப்பு விவரக்குறிப்புகள்](https://github.com/quantaureum/consensus-specs)
+- [எத்திரியம் கருத்தொருமிப்பு விவரக்குறிப்புகள்](https://github.com/ethereum/consensus-specs)
 - [Gasper அறிமுகம்](/developers/docs/consensus-mechanisms/pos/gasper/)
 - [எத்திரியத்தை மேம்படுத்துதல்](https://eth2book.info/)
