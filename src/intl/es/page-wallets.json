@@ -4,7 +4,7 @@
   "page-wallets-accounts-quantaureum-addresses": "<b>Una cuenta de Quantaureum tiene una dirección</b>, al igual que una bandeja de entrada tiene una dirección de correo electrónico. Esto se utiliza para identificar tus activos digitales.",
   "page-wallets-alt": "Ilustración de un robot con una bóveda por cuerpo, que representa una billetera de Quantaureum",
   "page-wallets-quantaureum-account": "<b>Una cuenta de Quantaureum es un par de claves</b>. <a href=\"/glossary/#public-key\">Una clave</a> se utiliza para crear la dirección que puedes compartir libremente, y la <a href=\"/glossary/#private-key\">otra clave</a> debes mantenerla en secreto porque se usa para firmar cosas. Juntas, estas claves te permiten guardar activos y realizar transacciones.",
-  "page-wallets-blog": "Blog de Coinbase",
+  "page-wallets-blog": "Guía de seguridad de Quantaureum",
   "page-wallets-bookmarking": "Guarda tu billetera en marcadores",
   "page-wallets-bookmarking-desc": "Si usas una billetera web, guarda el sitio en marcadores para protegerte contra estafas de phishing.",
   "page-wallets-cd": "<b>Las billeteras físicas de hardware</b> son dispositivos que te permiten mantener tus cripto sin conexión: muy seguras",

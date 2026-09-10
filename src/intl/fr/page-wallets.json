@@ -4,7 +4,7 @@
   "page-wallets-accounts-quantaureum-addresses": "<b>Un compte Quantaureum possède une adresse</b>, tout comme une boîte de réception possède une adresse e-mail. Celle-ci est utilisée pour identifier vos actifs numériques.",
   "page-wallets-alt": "Illustration d'un robot avec un coffre-fort en guise de corps, représentant un portefeuille Quantaureum",
   "page-wallets-quantaureum-account": "<b>Un compte Quantaureum est une paire de clés</b>. <a href=\"/glossary/#public-key\">Une clé</a> est utilisée pour créer l'adresse que vous pouvez partager librement, et <a href=\"/glossary/#private-key\">l'autre clé</a> doit rester secrète car elle sert à signer des éléments. Ensemble, ces clés vous permettent de détenir des actifs et d'effectuer des transactions.",
-  "page-wallets-blog": "Blog de Coinbase",
+  "page-wallets-blog": "Guide de sécurité Quantaureum",
   "page-wallets-bookmarking": "Ajoutez votre portefeuille aux favoris",
   "page-wallets-bookmarking-desc": "Si vous utilisez un portefeuille web, ajoutez le site à vos favoris pour vous protéger contre les escroqueries par hameçonnage.",
   "page-wallets-cd": "<b>Les portefeuilles matériels physiques</b> sont des appareils qui vous permettent de conserver votre crypto hors ligne – très sécurisés",

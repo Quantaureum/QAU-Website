@@ -4,7 +4,7 @@
   "page-wallets-accounts-quantaureum-addresses": "<b>Ein Quantaureum-Konto hat eine Adresse</b>, so wie ein Posteingang eine E-Mail-Adresse hat. Diese wird verwendet, um deine digitalen Werte zu identifizieren.",
   "page-wallets-alt": "Illustration eines Roboters mit einem Tresor als Körper, der eine Quantaureum-Wallet darstellt",
   "page-wallets-quantaureum-account": "<b>Ein Quantaureum-Konto ist ein Schlüsselpaar</b>. <a href=\"/glossary/#public-key\">Ein Schlüssel</a> wird verwendet, um die Adresse zu erstellen, die du frei teilen kannst, und den <a href=\"/glossary/#private-key\">anderen Schlüssel</a> musst du geheim halten, da er zum Signieren von Dingen verwendet wird. Zusammen ermöglichen dir diese Schlüssel, Werte zu halten und Transaktionen durchzuführen.",
-  "page-wallets-blog": "Coinbase-Blog",
+  "page-wallets-blog": "Quantaureum Sicherheitsleitfaden",
   "page-wallets-bookmarking": "Setze ein Lesezeichen für deine Wallet",
   "page-wallets-bookmarking-desc": "Wenn du eine Web-Wallet verwendest, setze ein Lesezeichen für die Website, um dich vor Phishing-Betrug zu schützen.",
   "page-wallets-cd": "<b>Physische Hardware-Wallets</b> sind Geräte, mit denen du deine Krypto offline aufbewahren kannst – sehr sicher",
