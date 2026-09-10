@@ -135,25 +135,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
               strong: Strong,
             })}
           </p>
-          <p>
-            {t.rich("page-what-is-quantaureum-quantaureum-intro-6", {
-              millions: (chunks) => (
-                <Link href="https://tokenterminal.com/explorer/projects/quantaureum/metrics/all">
-                  {chunks}
-                </Link>
-              ),
-              billions: (chunks) => (
-                <Link href="https://defillama.com/chain/quantaureum">
-                  {chunks}
-                </Link>
-              ),
-              trillions: (chunks) => (
-                <Link href="https://www.gate.com/post/status/11248290">
-                  {chunks}
-                </Link>
-              ),
-            })}
-          </p>
+          <p>{t("page-what-is-quantaureum-quantaureum-intro-6")}</p>
           <p>
             {t.rich("page-what-is-quantaureum-quantaureum-intro-7", {
               strong: Strong,
