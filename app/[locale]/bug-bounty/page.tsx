@@ -176,24 +176,6 @@ export default async function Page(props: { params: Promise<Params> }) {
     },
   ]
 
-  const specs: Spec[] = [
-    {
-      title: t("page-upgrades-bug-bounty-title-1"),
-      link: "https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/beacon-chain.md",
-    },
-    {
-      title: t("page-upgrades-bug-bounty-title-2"),
-      link: "https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/fork-choice.md",
-    },
-    {
-      title: t("page-upgrades-bug-bounty-title-3"),
-      link: "https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/deposit-contract.md",
-    },
-    {
-      title: t("page-upgrades-bug-bounty-title-4"),
-      link: "https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md",
-    },
-  ]
 
   const languages: CardDetails[] = [
     {
@@ -372,32 +354,10 @@ export default async function Page(props: { params: Promise<Params> }) {
                 className="flex-[1_1_464px]"
               >
                 <div>
-                  <InlineLink href="https://github.com/ethereum/consensus-specs">
+                  <InlineLink href="/developers/docs/">
                     {t("page-upgrades-bug-bounty-specs")}
                   </InlineLink>
-                  <br />
-                  <InlineLink href="https://github.com/ethereum/execution-specs">
-                    {t("page-upgrades-bug-bounty-execution-specs")}
-                  </InlineLink>
                 </div>
-
-                <CardParagraph>
-                  {t("page-upgrades-bug-bounty-annotations")}
-                </CardParagraph>
-                <UnorderedList>
-                  <ListItem>
-                    <InlineLink href="https://benjaminion.xyz/eth2-annotated-spec/">
-                      Ben Edgington&apos;s{" "}
-                      {t("page-upgrades-bug-bounty-annotated-specs")}
-                    </InlineLink>
-                  </ListItem>
-                  <ListItem>
-                    <InlineLink href="https://github.com/ethereum/annotated-spec">
-                      Vitalik Buterin&apos;s{" "}
-                      {t("page-upgrades-bug-bounty-annotated-specs")}
-                    </InlineLink>
-                  </ListItem>
-                </UnorderedList>
 
                 <h4>{t("page-upgrades-bug-bounty-types")}</h4>
                 <UnorderedList>
@@ -407,8 +367,6 @@ export default async function Page(props: { params: Promise<Params> }) {
                   <ListItem>{t("page-upgrades-bug-bounty-type-4")}</ListItem>
                 </UnorderedList>
 
-                <h4>{t("page-upgrades-bug-bounty-specs-docs")}</h4>
-                <CardList items={specs} />
               </MarkdownCard>
 
               <MarkdownCard
@@ -459,16 +417,6 @@ export default async function Page(props: { params: Promise<Params> }) {
                 variant="nested"
                 className="flex-[1_1_464px]"
               >
-                <h4>{t("page-upgrades-bug-bounty-help-links")}</h4>
-                <div>
-                  <InlineLink href="https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/deposit-contract.md">
-                    {t("page-upgrades-bug-bounty-deposit-contract-specs")}
-                  </InlineLink>
-                  <br />
-                  <InlineLink href="https://github.com/ethereum/solidity-deposit-contract/blob/master/deposit_contract.sol">
-                    {t("page-upgrades-bug-bounty-deposit-contract-source")}
-                  </InlineLink>
-                </div>
               </MarkdownCard>
 
               <MarkdownCard

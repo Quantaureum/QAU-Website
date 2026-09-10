@@ -58,11 +58,8 @@ import quizzesHub from "@/public/images/heroes/quizzes-hub-hero.png"
 import roadmapHero from "@/public/images/heroes/roadmap-hub-hero.jpg"
 import hero from "@/public/images/home/hero.png"
 import heroPanda from "@/public/images/home/hero-panda.png"
-import mergePanda from "@/public/images/home/merge-panda.png"
 import impact from "@/public/images/impact_transparent.png"
 import infrastructure from "@/public/images/infrastructure_transparent.png"
-import beaconChain from "@/public/images/upgrades/core.png"
-import merge from "@/public/images/upgrades/merge.png"
 import newRings from "@/public/images/upgrades/newrings.png"
 import oldShip from "@/public/images/upgrades/oldship.png"
 import dao from "@/public/images/use-cases/dao-2.png"
@@ -172,10 +169,6 @@ export default async function Page(props: { params: Promise<PageParams> }) {
     ],
     [
       { title: t("page-assets-mainnet"), image: oldShip, ...hachmang },
-      { title: t("page-assets-merge"), image: merge, ...hachmang },
-    ],
-    [
-      { title: t("page-assets-beacon-chain"), image: beaconChain, ...hachmang },
       { title: t("page-assets-sharding"), image: newRings, ...hachmang },
     ],
     [
@@ -185,14 +178,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
   ]
 
   const historicalRows: AssetItem[][] = [
-    [
-      { title: t("page-assets-hero-panda"), image: heroPanda },
-      {
-        title: t("page-assets-merge-panda"),
-        image: mergePanda,
-        svgUrl: `${svgPath}/merge-panda.svg`,
-      },
-    ],
+    [{ title: t("page-assets-hero-panda"), image: heroPanda }],
   ]
 
   const brandTransparentRows: AssetItem[][] = [
