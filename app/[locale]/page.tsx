@@ -1,5 +1,4 @@
 import { pick } from "lodash"
-import Image from "next/image"
 import { notFound } from "next/navigation"
 import {
   getMessages,
@@ -10,29 +9,20 @@ import {
 import type { PageParams } from "@/lib/types"
 
 import HomeHero from "@/components/Hero/HomeHero"
+import ArchitectureSection from "@/components/Homepage/ArchitectureSection"
+import EcosystemSection from "@/components/Homepage/EcosystemSection"
 import FeatureCards from "@/components/Homepage/FeatureCards"
 import GetStartedGrid from "@/components/Homepage/GetStartedGrid"
-import TrustLogos from "@/components/Homepage/TrustLogos"
+import RoadmapSection from "@/components/Homepage/RoadmapSection"
 import I18nProvider from "@/components/I18nProvider"
 import MainArticle from "@/components/MainArticle"
-import { Alert } from "@/components/ui/alert"
-import { ButtonLink } from "@/components/ui/buttons/Button"
-import { LinkWithArrow } from "@/components/ui/Link"
-import { SectionHeader, SectionTag } from "@/components/ui/section"
 
 import { getDirection } from "@/lib/utils/direction"
 import { getMetadata } from "@/lib/utils/metadata"
 
 import { DEFAULT_LOCALE, LOCALES_CODES } from "@/lib/constants"
 
-import {
-  KPISection,
-  SavingsCarousel,
-  SimulatorSection,
-} from "./_components/HomepageLazy"
 import IndexPageJsonLD from "./page-jsonld"
-
-import { getAccountHolders, getGrowThePieData } from "@/lib/data"
 
 const Page = async (props: { params: Promise<PageParams> }) => {
   const params = await props.params
@@ -42,35 +32,11 @@ const Page = async (props: { params: Promise<PageParams> }) => {
 
   setRequestLocale(locale)
 
-  const [accountHoldersData, growThePieData] = await Promise.all([
-    getAccountHolders(),
-    getGrowThePieData(),
-  ])
-
-  if (!accountHoldersData) {
-    throw new Error("Failed to fetch account holders data")
-  }
-  if (!growThePieData) {
-    throw new Error("Failed to fetch GrowThePie data")
-  }
-
-  const accountHolders =
-    "value" in accountHoldersData ? accountHoldersData.value : null
-
-  const transactionsToday =
-    "value" in growThePieData.txCount ? growThePieData.txCount.value : null
-
   const { direction: dir } = getDirection(locale)
-  const t = await getTranslations("page-index")
   const allMessages = await getMessages()
   const glossary = allMessages["glossary-tooltip"] as Record<string, string>
   const messages = {
-    ...pick(
-      allMessages,
-      "page-index",
-      "component-swiper",
-      "component-wallet-simulator"
-    ),
+    ...pick(allMessages, "page-index"),
     "glossary-tooltip": pick(glossary, [
       "nft-term",
       "nft-definition",
@@ -88,50 +54,16 @@ const Page = async (props: { params: Promise<PageParams> }) => {
         <MainArticle className="flex w-full flex-col items-center" dir={dir}>
           <HomeHero eventCategory={eventCategory} />
 
-          <div className="my-24 w-full space-y-24 px-4 md:mx-6 lg:my-32 lg:space-y-32">
-            <KPISection
-              accountHolders={accountHolders}
-              transactionsToday={transactionsToday}
-              className="py-12"
-            />
-
-            <SavingsCarousel className="py-12" eventCategory={eventCategory} />
-
-            <TrustLogos className="py-12" eventCategory={eventCategory} />
-
-            <SimulatorSection
-              className="py-12"
-              header={
-                <div className="flex flex-col items-center gap-4 text-center">
-                  <SectionTag variant="plain">
-                    {t("page-index-simulator-tag")}
-                  </SectionTag>
-                  <SectionHeader className="mt-0 mb-0 leading-tight lg:text-6xl">
-                    {t("page-index-simulator-title")}
-                  </SectionHeader>
-                  <p className="text-lg text-body-medium md:text-xl">
-                    {t("page-index-simulator-subtitle")}
-                  </p>
-                </div>
-              }
-              footer={
-                <LinkWithArrow
-                  href="/guides/"
-                  customEventOptions={{
-                    eventCategory,
-                    eventAction: "section_click",
-                    eventName: "simulator/explore_guides",
-                  }}
-                >
-                  {t("page-index-simulator-cta")}
-                </LinkWithArrow>
-              }
-            />
-
+          <div className="my-24 w-full space-y-24 lg:my-32 lg:space-y-32">
             <FeatureCards eventCategory={eventCategory} />
 
+            <ArchitectureSection />
 
             <GetStartedGrid eventCategory={eventCategory} />
+
+            <EcosystemSection eventCategory={eventCategory} />
+
+            <RoadmapSection eventCategory={eventCategory} />
           </div>
         </MainArticle>
       </I18nProvider>

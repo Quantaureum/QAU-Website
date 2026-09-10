@@ -1,5 +1,5 @@
-import { Book, Code } from "lucide-react"
-import { getLocale, getTranslations } from "next-intl/server"
+import { Code, HardDrive } from "lucide-react"
+import { getTranslations } from "next-intl/server"
 
 import { Image } from "@/components/Image"
 import {
@@ -16,7 +16,6 @@ import { Grid } from "@/components/ui/grid"
 import { Section, SectionHeader } from "@/components/ui/section"
 
 import { cn } from "@/lib/utils/cn"
-import { numberFormat } from "@/lib/utils/numbers"
 
 import learnImage from "@/public/images/heroes/guides-hub-hero.jpg"
 import developersImage from "@/public/images/homepage/get-started/developers.png"
@@ -31,28 +30,8 @@ const GetStartedGrid = async ({
   eventCategory = "Homepage",
 }: GetStartedGridProps) => {
   const t = await getTranslations("page-index")
-  const locale = await getLocale()
-
-  const minutes = numberFormat(locale).format(2)
 
   const cards = [
-    {
-      id: "learn",
-      icon: Book,
-      iconBg: "bg-purple-50 dark:bg-purple-900",
-      iconColor: "text-primary",
-      title: t("page-index-get-started-learn-title"),
-      description: t("page-index-get-started-learn-description"),
-      bullets: [
-        t("page-index-get-started-learn-bullet-1"),
-        t("page-index-get-started-learn-bullet-2"),
-        t("page-index-get-started-learn-bullet-3"),
-      ],
-      bulletColor: "bg-primary",
-      cta: t("page-index-get-started-learn-cta"),
-      href: "/learn/",
-      image: learnImage,
-    },
     {
       id: "developers",
       icon: Code,
@@ -70,6 +49,23 @@ const GetStartedGrid = async ({
       href: "/developers/",
       image: developersImage,
     },
+    {
+      id: "node",
+      icon: HardDrive,
+      iconBg: "bg-purple-50 dark:bg-purple-900",
+      iconColor: "text-primary",
+      title: t("page-index-get-started-node-title"),
+      description: t("page-index-get-started-node-description"),
+      bullets: [
+        t("page-index-get-started-node-bullet-1"),
+        t("page-index-get-started-node-bullet-2"),
+        t("page-index-get-started-node-bullet-3"),
+      ],
+      bulletColor: "bg-primary",
+      cta: t("page-index-get-started-node-cta"),
+      href: "/run-a-node/",
+      image: learnImage,
+    },
   ]
 
   return (
@@ -80,7 +76,7 @@ const GetStartedGrid = async ({
             {t("page-index-get-started-title")}
           </SectionHeader>
           <p className="max-w-[42rem] text-lg text-body-medium lg:text-2xl">
-            {t("page-index-get-started-subtitle", { minutes })}
+            {t("page-index-get-started-subtitle")}
           </p>
         </div>
 
