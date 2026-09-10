@@ -173,7 +173,6 @@ sudo systemctl start lighthouse-validator
 3. <span dir="ltr">https://prometheus.io</span>
 4. <span dir="ltr">https://grafana.com</span>
 5. <span dir="ltr">https://forum.armbian.com/topic/5565-zram-vs-swap/</span>
-6. <span dir="ltr">
 7. <span dir="ltr">https://nethermind.io</span>
 8. <span dir="ltr">https://www.hyperledger.org/projects/besu</span>
 9. <span dir="ltr">https://github.com/prysmaticlabs/prysm</span>

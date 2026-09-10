@@ -18,5 +18,13 @@
   "\\content\\translations\\es\\developers\\docs\\smart-contracts\\verifying\\source-code-verification.png": {
     "hash": "9e1984a6",
     "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAGCAYAAADKfB7nAAAACXBIWXMAAAsTAAALEwEAmpwYAAABAklEQVR4nF2O0UrDQBREV/oX0t/zH8SPKD4rPrZ/IPjuQ2JjWgiRKhXNS4siTdtNc2PcmxnZlSh44cDcWe7MGpJdj6r+6p7u375ar7ssy4J2qp2p5ZOVfLFtHQHSVg2dc/RjbcXV+oNluaXPVgUPdcOy3AftVGmsN3Z1OL69n/Pk9IzT2TwE5HnOOI6YzlI2IiQ6ijSs5a/EbHcHbPcCp8DbZoPJ9Q3eNyWgwGLxiDiOkT3kkJdXlE/PuEsSRFGE5XIJkjC+2Y9PHI8nHI3OeXlxRVUNeL9vq6xlkqacJgmLovj5AQAhKXVVyXB4LMYYGRwNpG3b4PeAFKcq1tqAf/e33xJjYb3BFImhAAAAAElFTkSuQmCC"
+  },
+  "\\content\\translations\\tr\\developers\\docs\\smart-contracts\\verifying\\source-code-verification.png": {
+    "hash": "1faaf96c",
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAGCAYAAADKfB7nAAAACXBIWXMAAAsTAAALEwEAmpwYAAABA0lEQVR4nG1OMU7DQBA8lGeQ7/EGCv6QggekDTwAiZrGJsYpLKOAjMANEUHESc7xGnPrGXQXWaJgtSPNzmpn1pDsB/S+/8z/4X216rMsC9yp9qaRb9byw65z1J7cWwncV13XXH9+0VpLVQ37Q9OyqvZUBZ0qjfXCriFA3s0XPDu/YPSwCAZ5njOOI6ZpylaE0J4iLRtp6dwxxGx3B2z3AqfAx2aD2c0t1psKUGC5fEIcx8gec8jrG6rnF9wnCaIoQlEUIAnjk315x+urGSeTS06n0+PLqkEf0mprmaQp50nCsiyPHwAQkiL1QcbjUzHGyOhkJF3XBX0ASHGqYq0N8Ht/+wsm4mHZz6UpYwAAAABJRU5ErkJggg=="
+  },
+  "\\content\\translations\\it\\developers\\docs\\smart-contracts\\verifying\\source-code-verification.png": {
+    "hash": "ffbba644",
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAGCAYAAADKfB7nAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA/ElEQVR4nE2QTUrEQBCFO9dwDucdXHgAXbiZhUvRtTcQDyAJGTIIMsMIEgJujCLj9Iwx3Sbp5JOq+FdQULwqvvcoMwDSUn3fa/8pMHyPow5lWbJYLHQOIWBq56g+PM53hNDzXjldSFVVxVP5irVWtS70eruxW527rsOIYHdOPW+yOfsHh6TzWwWIU5IkZFmGd44hBLwXs0/attUbY3c1ducJYeB5veby6pqXt41GX63uSdOUu+WSunhk85Azm2UKzfN8BEhscfe+4fzsguOjE6bTU40sLuLYNI0+Y2utAuM4piiKEfDzHOdqJpM9jDFEUfQb8X8JVP4irVDgC5+9YUlfk2M8AAAAAElFTkSuQmCC"
   }
 }
