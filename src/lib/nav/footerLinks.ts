@@ -1,90 +1,61 @@
 import type { FooterLink, FooterLinkSection } from "@/lib/types"
 
-
 type TranslateFn = (key: string) => string
 
+/**
+ * Quantaureum footer link structure.
+ * Only real, existing routes and official external destinations.
+ */
 export const buildFooterLinkSections = (
   t: TranslateFn
 ): FooterLinkSection[] => [
   {
-    title: t("learn"),
+    title: t("nav2-learn"),
     links: [
-      { href: "/learn/", text: t("learn-hub") },
-      { href: "/what-is-quantaureum/", text: t("what-is-quantaureum") },
-      { href: "/what-is-QAU/", text: t("what-is-QAU") },
-      { href: "/wallets/", text: t("quantaureum-wallets") },
-      { href: "/web3/", text: t("web3") },
-      { href: "/smart-contracts/", text: t("smart-contracts") },
-      { href: "/gas/", text: "Gas fees" },
-      { href: "/run-a-node/", text: t("run-a-node") },
-      { href: "/security/", text: t("quantaureum-security") },
-      { href: "/quizzes/", text: t("quizzes-title") },
-      { href: "/glossary/", text: t("quantaureum-glossary") },
+      { href: "/what-is-quantaureum/", text: t("nav2-what-is-quantaureum") },
+      {
+        href: "/what-is-the-quantaureum-network/",
+        text: t("nav2-the-network"),
+      },
+      { href: "/what-is-qau/", text: t("nav2-what-is-qau") },
+      { href: "/security/", text: t("nav2-quantum-security") },
+      { href: "/wallets/", text: t("nav2-wallets") },
+      { href: "/glossary/", text: t("nav2-glossary") },
     ],
   },
   {
-    title: t("use"),
-    links: [
-      { href: "/guides/", text: t("guides") },
-      { href: "/wallets/find-wallet/", text: t("nav-find-wallet-label") },
-      { href: "/get-qau/", text: t("get-qau") },
-      { href: "/apps/", text: t("application-explorer") },
-      { href: "/stablecoins/", text: t("stablecoins") },
-      { href: "/nft/", text: t("nft-page") },
-      { href: "/defi/", text: t("defi-page") },
-      { href: "/dao/", text: t("dao-page") },
-      { href: "/decentralized-identity/", text: t("decentralized-identity") },
-      { href: "/staking/", text: t("stake-eth") },
-      { href: "/layer-2/", text: t("layer-2") },
-    ],
-  },
-  {
-    title: t("build"),
+    title: t("nav2-build"),
     links: [
       {
         href: "/developers/",
-        text: t("nav-builders-home-label"),
+        text: t("nav2-developers-hub"),
         isPartiallyActive: false,
       },
-      { href: "/developers/tutorials/", text: t("tutorials") },
-      { href: "/developers/docs/", text: t("documentation") },
-      { href: "/developers/tools/", text: t("start-building") },
-      {
-        href: "/developers/tools/categories/education-standards/",
-        text: t("learn-quantaureum-development"),
-      },
-      { href: "/community/grants/", text: t("grants") },
-      {
-        href: "/developers/docs/intro-to-quantaureum/",
-        text: t("nav-docs-foundation-label"),
-      },
-      {
-        href: "/developers/docs/design-and-ux/",
-        text: t("nav-docs-design-label"),
-      },
+      { href: "/developers/docs/", text: t("nav2-docs") },
+      { href: "/developers/tutorials/", text: t("nav2-tutorials") },
+      { href: "/bug-bounty/", text: t("nav2-bug-bounty") },
     ],
   },
   {
-    title: t("participate"),
+    title: t("nav2-network"),
     links: [
-      { href: "/community/", text: t("community-hub") },
-      { href: "/community/online/", text: t("quantaureum-online") },
-      { href: "/community/events/", text: t("quantaureum-events") },
-      { href: "/contributing/", text: t("nav-contribute-label") },
-      {
-        href: "/contributing/translation-program/",
-        text: t("translation-program"),
-      },
-      { href: "/bug-bounty/", text: t("quantaureum-bug-bounty") },
+      { href: "https://explorer.quantaureum.com", text: t("nav2-explorer") },
+      { href: "/staking/", text: t("nav2-staking") },
+      { href: "/run-a-node/", text: t("nav2-run-a-node") },
+      { href: "/get-qau/", text: t("nav2-get-qau") },
+      { href: "/gas/", text: t("nav2-gas") },
+      { href: "/roadmap/", text: t("nav2-roadmap") },
     ],
   },
   {
-    title: t("research"),
+    title: t("nav2-community"),
     links: [
-      { href: "/roadmap/", text: t("quantaureum-roadmap") },
-      { href: "/roadmap/security/", text: t("nav-roadmap-security-label") },
-      { href: "/community/research/", text: t("nav-open-research-label") },
-      { href: "/governance/", text: t("quantaureum-governance") },
+      { href: "/community/", text: t("nav2-community-hub") },
+      { href: "/community/get-involved/", text: t("nav2-get-involved") },
+      { href: "https://x.com/ldf1570073", text: t("nav2-x") },
+      { href: "https://discord.gg/MSctkBT5j", text: t("nav2-discord") },
+      { href: "https://github.com/Quantaureum", text: t("nav2-github") },
+      { href: "https://t.me/quantaureum", text: t("nav2-telegram") },
     ],
   },
 ]
@@ -93,9 +64,8 @@ export const buildFooterDipperLinks = (t: TranslateFn): FooterLink[] => [
   { href: "/about/", text: t("about-us") },
   { href: "/assets/", text: t("quantaureum-brand-assets") },
   { href: "/community/code-of-conduct/", text: t("nav-code-of-conduct") },
-  { href: "/about/#open-jobs", text: t("jobs") },
   { href: "/privacy-policy/", text: t("privacy-policy") },
   { href: "/terms-of-use/", text: t("terms-of-use") },
   { href: "/cookie-policy/", text: t("cookie-policy") },
-  { href: "mailto:press@quantaureum.com", text: t("contact") },
+  { href: "mailto:hello@quantaureum.com", text: t("contact") },
 ]

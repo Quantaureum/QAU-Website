@@ -35,10 +35,10 @@ export const GET = async () => {
   const body = [
     INTRO,
     renderNavSection(nav.learn, findFooter(nav.learn.label)),
-    renderNavSection(nav.use, findFooter(nav.use.label)),
     renderNavSection(nav.build, findFooter(nav.build.label)),
-    renderNavSection(nav.participate, findFooter(nav.participate.label)),
-    renderNavSection(nav.research, findFooter(nav.research.label)),
+    renderNavSection(nav.network, findFooter(nav.network.label)),
+    renderNavSection(nav.roadmap, findFooter(nav.roadmap.label)),
+    renderNavSection(nav.community, findFooter(nav.community.label)),
     SECURITY,
     renderLegalSection(dipperLinks),
     "",

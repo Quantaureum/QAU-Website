@@ -13,11 +13,7 @@ export type NavItem = {
 } & LinkXorItems
 
 export type NavSectionKey =
-  | "learn"
-  | "use"
-  | "build"
-  | "participate"
-  | "research"
+  "learn" | "build" | "network" | "roadmap" | "community"
 
 export type NavSectionDetail = {
   label: string

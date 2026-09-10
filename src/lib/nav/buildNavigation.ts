@@ -1,470 +1,202 @@
 import type { NavSections } from "@/components/Nav/types"
 
-
 type TranslateFn = (key: string) => string
 
+/**
+ * Quantaureum navigation structure.
+ * Structure of record: .local-only/specs/nav-structure.md
+ */
 export const buildNavigation = (t: TranslateFn): NavSections => {
   return {
     learn: {
-      label: t("learn"),
-      ariaLabel: t("learn-menu"),
+      label: t("nav2-learn"),
+      ariaLabel: t("nav2-learn-aria"),
       items: [
         {
-          id: "learn/overview",
-          label: t("nav-overview-label"),
-          description: t("nav-overview-description"),
-          href: "/learn/",
+          id: "learn/what-is",
+          label: t("nav2-what-is-quantaureum"),
+          description: t("nav2-what-is-quantaureum-desc"),
+          href: "/what-is-quantaureum/",
         },
         {
-          id: "learn/quantaureum-explained",
-          label: t("nav-quantaureum-explained-label"),
-          description: t("nav-quantaureum-explained-description"),
-          items: [
-            {
-              label: t("what-is-quantaureum"),
-              description: t("nav-what-is-quantaureum-description"),
-              href: "/what-is-quantaureum/",
-            },
-            {
-              label: t("what-is-the-quantaureum-network"),
-              description: t("nav-what-is-quantaureum-network-description"),
-              href: "/what-is-the-quantaureum-network/",
-            },
-            {
-              label: t("what-is-QAU"),
-              description: t("nav-what-is-QAU-description"),
-              href: "/what-is-QAU/",
-            },
-            {
-              label: t("nav-values-label"),
-              description: t("nav-values-description"),
-              href: "/values/",
-            },
-            {
-              label: t("nav-what-is-web3-label"),
-              description: t("nav-what-is-web3-description"),
-              href: "/web3/",
-            },
-          ],
+          id: "learn/network",
+          label: t("nav2-the-network"),
+          description: t("nav2-the-network-desc"),
+          href: "/what-is-the-quantaureum-network/",
         },
         {
-          id: "learn/how-quantaureum-works",
-          label: t("nav-how-quantaureum-works-label"),
-          description: t("nav-how-quantaureum-works-description"),
-          items: [
-            {
-              label: t("smart-contracts"),
-              description: t("nav-smart-contracts-description"),
-              href: "/smart-contracts/",
-            },
-            {
-              label: t("quantaureum-wallets"),
-              description: t("nav-quantaureum-wallets-description"),
-              href: "/wallets/",
-            },
-            {
-              label: t("nav-gas-fees-label"),
-              description: t("nav-gas-fees-description"),
-              href: "/gas/",
-            },
-            {
-              label: t("nav-networks-learn-label"),
-              description: t("nav-networks-learn-description"),
-              href: "/layer-2/learn/",
-            },
-            {
-              label: t("staking"),
-              description: t("nav-stake-description"),
-              href: "/staking/",
-            },
-          ],
+          id: "learn/qau",
+          label: t("nav2-what-is-qau"),
+          description: t("nav2-what-is-qau-desc"),
+          href: "/what-is-qau/",
         },
         {
-          id: "learn/staying-safe",
-          label: t("nav-staying-safe-label"),
-          description: t("nav-staying-safe-description"),
-          items: [
-            {
-              label: t("quantaureum-privacy"),
-              description: t("nav-privacy-description"),
-              href: "/privacy/",
-            },
-            {
-              label: t("quantaureum-security"),
-              description: t("nav-security-description"),
-              href: "/security/",
-            },
-            {
-              label: t("support"),
-              description: t("nav-support-description"),
-              href: "/community/support/",
-            },
-          ],
+          id: "learn/security",
+          label: t("nav2-quantum-security"),
+          description: t("nav2-quantum-security-desc"),
+          href: "/security/",
         },
         {
-          id: "learn/quizzes",
-          label: t("nav-quizzes-label"),
-          description: t("nav-quizzes-description"),
-          href: "/quizzes/",
+          id: "learn/wallets",
+          label: t("nav2-wallets"),
+          description: t("nav2-wallets-desc"),
+          href: "/wallets/",
         },
         {
-          id: "learn/videos",
-          label: t("nav-videos-label"),
-          description: t("nav-videos-description"),
-          href: "/videos/",
-        },
-      ],
-    },
-    use: {
-      label: t("use"),
-      ariaLabel: t("use-menu"),
-      items: [
-        {
-          id: "use/start-with-quantaureum",
-          label: t("nav-start-with-quantaureum-label"),
-          description: t("nav-start-with-quantaureum-description"),
-          items: [
-            {
-              label: t("nav-start-with-crypto-title"),
-              description: t("nav-start-with-crypto-description"),
-              href: "/start/",
-            },
-            {
-              label: t("nav-find-wallet-label"),
-              description: t("nav-find-wallet-description"),
-              href: "/wallets/find-wallet/",
-            },
-            {
-              label: t("get-qau"),
-              description: t("nav-get-qau-description"),
-              href: "/get-qau/",
-            },
-            {
-              label: t("nav-explore-apps-label"),
-              description: t("nav-explore-apps-description"),
-              href: "/apps/",
-            },
-            {
-              label: t("nav-see-all-guides-label"),
-              description: t("nav-see-all-guides-description"),
-              href: "/guides/",
-            },
-          ],
-        },
-        {
-          id: "use/use-cases",
-          label: t("nav-use-cases-label"),
-          description: t("nav-use-cases-description"),
-          items: [
-            {
-              label: t("payments-page"),
-              description: t("nav-payments-description"),
-              href: "/payments/",
-            },
-            {
-              label: t("stablecoins"),
-              description: t("nav-stablecoins-description"),
-              href: "/stablecoins/",
-            },
-            {
-              label: t("prediction-markets"),
-              description: t("nav-prediction-markets-description"),
-              href: "/prediction-markets/",
-            },
-            {
-              label: t("nav-see-all-use-cases-label"),
-              description: t("nav-see-all-use-cases-description"),
-              href: "/use-cases/",
-            },
-          ],
-        },
-        {
-          id: "use/staking-nodes",
-          label: t("nav-staking-nodes-label"),
-          description: t("nav-staking-nodes-description"),
-          items: [
-            {
-              label: t("nav-staking-solo-label"),
-              description: t("nav-staking-solo-description"),
-              href: "/staking/solo/",
-            },
-            {
-              label: t("run-a-node"),
-              description: t("nav-run-a-node-description"),
-              href: "/run-a-node/",
-            },
-            {
-              label: t("nav-staking-pool-label"),
-              description: t("nav-staking-pool-description"),
-              href: "/staking/pools/",
-            },
-            {
-              label: t("nav-staking-saas-label"),
-              description: t("nav-staking-saas-description"),
-              href: "/staking/saas/",
-            },
-          ],
-        },
-        {
-          id: "use/explore-networks",
-          label: t("nav-explore-networks-label"),
-          description: t("nav-explore-networks-description"),
-          items: [
-            {
-              label: t("nav-l2-networks-label"),
-              description: t("nav-l2-networks-description"),
-              href: "/layer-2/",
-            },
-            {
-              label: t("nav-find-l2-label"),
-              description: t("nav-find-l2-description"),
-              href: "/layer-2/networks/",
-            },
-            {
-              label: t("bridges"),
-              description: t("nav-bridges-description"),
-              href: "/bridges/",
-            },
-          ],
+          id: "learn/glossary",
+          label: t("nav2-glossary"),
+          description: t("nav2-glossary-desc"),
+          href: "/glossary/",
         },
       ],
     },
     build: {
-      label: t("build"),
-      ariaLabel: t("build-menu"),
+      label: t("nav2-build"),
+      ariaLabel: t("nav2-build-aria"),
       items: [
         {
-          id: "build/home",
-          label: t("nav-builders-home-label"),
-          description: t("nav-builders-home-description"),
+          id: "build/hub",
+          label: t("nav2-developers-hub"),
+          description: t("nav2-developers-hub-desc"),
           href: "/developers/",
         },
         {
-          id: "build/start-building",
-          label: t("start-building"),
-          description: t("nav-start-building-description"),
-          items: [
-            {
-              label: t("nav-builder-tools-label"),
-              description: t("nav-builder-tools-description"),
-              href: "/developers/tools/",
-            },
-            {
-              label: t("learn-quantaureum-development"),
-              description: t("nav-learn-quantaureum-development-description"),
-              href: "/developers/tools/categories/education-standards/",
-            },
-            {
-              label: t("tutorials"),
-              description: t("nav-tutorials-description"),
-              href: "/developers/tutorials/",
-            },
-            {
-              label: t("nav-learn-by-coding-label"),
-              description: t("nav-learn-by-coding-description"),
-              href: "/developers/tools/categories/education-standards/",
-            },
-          ],
-        },
-        {
           id: "build/docs",
-          label: t("documentation"),
-          description: t("nav-docs-description"),
-          items: [
-            {
-              label: t("nav-overview-label"),
-              description: t("nav-docs-overview-description"),
-              href: "/developers/docs/",
-            },
-            {
-              label: t("nav-docs-foundation-label"),
-              description: t("nav-docs-foundation-description"),
-              href: "/developers/docs/intro-to-quantaureum/",
-            },
-            {
-              label: t("nav-docs-stack-label"),
-              description: t("nav-docs-stack-description"),
-              href: "/developers/docs/quantaureum-stack/",
-            },
-            {
-              label: t("nav-docs-design-label"),
-              description: t("nav-docs-design-description"),
-              href: "/developers/docs/design-and-ux/",
-            },
-          ],
+          label: t("nav2-docs"),
+          description: t("nav2-docs-desc"),
+          href: "/developers/docs/",
         },
         {
-          id: "build/business",
-          label: t("business"),
-          description: t("nav-business-description"),
-          items: [
-            {
-              label: t("nav-iptf-label"),
-              description: t("nav-iptf-description"),
-              href: "https://quantaureum.com",
-            },
-          ],
+          id: "build/tutorials",
+          label: t("nav2-tutorials"),
+          description: t("nav2-tutorials-desc"),
+          href: "/developers/tutorials/",
+        },
+        {
+          id: "build/bounty",
+          label: t("nav2-bug-bounty"),
+          description: t("nav2-bug-bounty-desc"),
+          href: "/bug-bounty/",
         },
       ],
     },
-    participate: {
-      label: t("participate"),
-      ariaLabel: t("participate-menu"),
+    network: {
+      label: t("nav2-network"),
+      ariaLabel: t("nav2-network-aria"),
       items: [
         {
-          id: "participate/community-hub",
-          label: t("community-hub"),
-          description: t("nav-participate-overview-description"),
+          id: "network/explorer",
+          label: t("nav2-explorer"),
+          description: t("nav2-explorer-desc"),
+          href: "https://explorer.quantaureum.com",
+        },
+        {
+          id: "network/staking",
+          label: t("nav2-staking"),
+          description: t("nav2-staking-desc"),
+          href: "/staking/",
+        },
+        {
+          id: "network/run-a-node",
+          label: t("nav2-run-a-node"),
+          description: t("nav2-run-a-node-desc"),
+          href: "/run-a-node/",
+        },
+        {
+          id: "network/get-qau",
+          label: t("nav2-get-qau"),
+          description: t("nav2-get-qau-desc"),
+          href: "/get-qau/",
+        },
+        {
+          id: "network/gas",
+          label: t("nav2-gas"),
+          description: t("nav2-gas-desc"),
+          href: "/gas/",
+        },
+      ],
+    },
+    roadmap: {
+      label: t("nav2-roadmap"),
+      ariaLabel: t("nav2-roadmap-aria"),
+      items: [
+        {
+          id: "roadmap/overview",
+          label: t("nav2-roadmap-overview"),
+          description: t("nav2-roadmap-overview-desc"),
+          href: "/roadmap/",
+        },
+        {
+          id: "roadmap/security",
+          label: t("nav2-roadmap-security"),
+          description: t("nav2-roadmap-security-desc"),
+          href: "/roadmap/security/",
+        },
+        {
+          id: "roadmap/scaling",
+          label: t("nav2-roadmap-scaling"),
+          description: t("nav2-roadmap-scaling-desc"),
+          href: "/roadmap/scaling/",
+        },
+        {
+          id: "roadmap/privacy",
+          label: t("nav2-roadmap-privacy"),
+          description: t("nav2-roadmap-privacy-desc"),
+          href: "/roadmap/privacy/",
+        },
+        {
+          id: "roadmap/ux",
+          label: t("nav2-roadmap-ux"),
+          description: t("nav2-roadmap-ux-desc"),
+          href: "/roadmap/user-experience/",
+        },
+        {
+          id: "roadmap/verkle",
+          label: t("nav2-roadmap-verkle"),
+          description: t("nav2-roadmap-verkle-desc"),
+          href: "/roadmap/verkle-trees/",
+        },
+      ],
+    },
+    community: {
+      label: t("nav2-community"),
+      ariaLabel: t("nav2-community-aria"),
+      items: [
+        {
+          id: "community/hub",
+          label: t("nav2-community-hub"),
+          description: t("nav2-community-hub-desc"),
           href: "/community/",
         },
         {
-          id: "participate/connect",
-          label: t("nav-connect-label"),
-          description: t("nav-connect-description"),
-          items: [
-            {
-              label: t("nav-events-calendar-label"),
-              description: t("nav-events-calendar-description"),
-              href: "/community/events/",
-            },
-            {
-              label: t("nav-online-communities-label"),
-              description: t("nav-online-communities-description"),
-              href: "/community/online/",
-            },
-          ],
+          id: "community/get-involved",
+          label: t("nav2-get-involved"),
+          description: t("nav2-get-involved-desc"),
+          href: "/community/get-involved/",
         },
         {
-          id: "participate/get-involved",
-          label: t("nav-get-involved-label"),
-          description: t("nav-get-involved-description"),
-          items: [
-            {
-              label: t("nav-where-to-start-label"),
-              description: t("nav-where-to-start-description"),
-              href: "/community/get-involved/",
-            },
-            {
-              label: t("grants"),
-              description: t("nav-grants-description"),
-              href: "/community/grants/",
-            },
-          ],
+          id: "community/x",
+          label: t("nav2-x"),
+          description: t("nav2-x-desc"),
+          href: "https://x.com/ldf1570073",
         },
         {
-          id: "participate/join-quantaureum-org",
-          label: t("nav-join-quantaureum-org-label"),
-          description: t("nav-join-quantaureum-org-description"),
-          items: [
-            {
-              label: t("about-quantaureum-org"),
-              description: t("nav-about-description"),
-              href: "/about/",
-            },
-            {
-              label: t("nav-contribute-label"),
-              description: t("nav-contribute-description"),
-              href: "/contributing/",
-            },
-            {
-              label: t("translation-program"),
-              description: t("nav-translation-program-description"),
-              href: "/contributing/translation-program/",
-            },
-            {
-              label: t("nav-collectibles-label"),
-              description: t("nav-collectibles-description"),
-              href: "/collectibles/",
-            },
-            {
-              label: t("nav-brand-assets-label"),
-              description: t("nav-brand-assets-description"),
-              href: "/assets/",
-            },
-          ],
-        },
-      ],
-    },
-    research: {
-      label: t("research"),
-      ariaLabel: t("research-menu"),
-      items: [
-        {
-          id: "research/governance",
-          label: t("nav-governance-label"),
-          description: t("nav-governance-description"),
-          href: "/governance/",
+          id: "community/discord",
+          label: t("nav2-discord"),
+          description: t("nav2-discord-desc"),
+          href: "https://discord.gg/MSctkBT5j",
         },
         {
-          id: "research/roadmap",
-          label: t("nav-roadmap-label"),
-          description: t("nav-roadmap-description"),
-          items: [
-            {
-              label: t("nav-overview-label"),
-              description: t("nav-roadmap-overview-description"),
-              href: "/roadmap/",
-            },
-            {
-              label: t("nav-roadmap-security-label"),
-              description: t("nav-roadmap-security-description"),
-              href: "/roadmap/security/",
-            },
-            {
-              label: t("nav-roadmap-scaling-label"),
-              description: t("nav-roadmap-scaling-description"),
-              href: "/roadmap/scaling/",
-            },
-            {
-              label: t("nav-roadmap-ux-label"),
-              description: t("nav-roadmap-ux-description"),
-              href: "/roadmap/user-experience/",
-            },
-            {
-              label: t("nav-roadmap-privacy-label"),
-              description: t("nav-roadmap-privacy-description"),
-              href: "/roadmap/privacy/",
-            },
-          ],
+          id: "community/github",
+          label: t("nav2-github"),
+          description: t("nav2-github-desc"),
+          href: "https://github.com/Quantaureum",
         },
         {
-          id: "research/development",
-          label: t("nav-development-label"),
-          description: t("nav-development-description"),
-          items: [
-            {
-              label: t("nav-bug-bounty-label"),
-              description: t("nav-bug-bounty-description"),
-              href: "/bug-bounty/",
-            },
-          ],
-        },
-        {
-          id: "research/context",
-          label: t("nav-context-label"),
-          description: t("nav-context-description"),
-          items: [
-            {
-              label: t("nav-energy-consumption-label"),
-              description: t("nav-energy-consumption-description"),
-              href: "/energy-consumption/",
-            },
-            {
-              label: t("nav-technical-history-label"),
-              description: t("nav-technical-history-description"),
-              href: "/roadmap/",
-            },
-            {
-              label: t("nav-open-research-label"),
-              description: t("nav-open-research-description"),
-              href: "/community/research/",
-            },
-            {
-              label: t("nav-data-analytics-label"),
-              description: t("nav-data-analytics-description"),
-              href: "/developers/tools/categories/network-infrastructure/",
-            },
-          ],
+          id: "community/telegram",
+          label: t("nav2-telegram"),
+          description: t("nav2-telegram-desc"),
+          href: "https://t.me/quantaureum",
         },
       ],
     },

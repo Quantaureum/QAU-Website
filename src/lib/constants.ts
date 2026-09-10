@@ -146,10 +146,10 @@ export const NAV_PY = 4
 // Determines the order of sections in the menu
 export const SECTION_LABELS: NavSectionKey[] = [
   "learn",
-  "use",
   "build",
-  "participate",
-  "research",
+  "network",
+  "roadmap",
+  "community",
 ]
 
 // Glossary Definition Component
@@ -192,5 +192,3 @@ export const LINE_CLAMP_CLASS_MAPPING = {
   3: "line-clamp-3",
   4: "line-clamp-4",
 } as const
-
-

@@ -3,8 +3,8 @@ import { getTranslations } from "next-intl/server"
 import type { FooterLinkSection } from "@/lib/types"
 
 import Discord from "@/components/icons/discord.svg"
-import Farcaster from "@/components/icons/farcaster.svg"
 import Github from "@/components/icons/github.svg"
+import Telegram from "@/components/icons/telegram.svg"
 import Twitter from "@/components/icons/twitter.svg"
 import { BaseLink } from "@/components/ui/Link"
 import { List, ListItem } from "@/components/ui/list"
@@ -21,13 +21,8 @@ import {
 const socialLinks = [
   {
     icon: Github,
-    href: "https://github.com/Quantaureum/quantaureum-website",
+    href: "https://github.com/Quantaureum",
     ariaLabel: "GitHub",
-  },
-  {
-    icon: Farcaster,
-    href: "https://farcaster.xyz/ethdotorg",
-    ariaLabel: "Farcaster",
   },
   {
     icon: Twitter,
@@ -38,6 +33,11 @@ const socialLinks = [
     icon: Discord,
     href: "https://discord.gg/MSctkBT5j",
     ariaLabel: "Discord",
+  },
+  {
+    icon: Telegram,
+    href: "https://t.me/quantaureum",
+    ariaLabel: "Telegram",
   },
 ]
 
