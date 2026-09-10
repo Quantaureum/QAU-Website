@@ -2,70 +2,60 @@
 
 ## Mission
 
-To develop and maintain the most comprehensive and accessible knowledge hub for Ethereum.
+To develop and maintain the most comprehensive and accessible knowledge hub for Quantaureum.
 
 ## Values
 
-The ethereum.org community strives to be:
+The quantaureum.com community strives to be:
 
-- educational, intended to help everyone to understand Ethereum
+- educational, intended to help everyone to understand Quantaureum
 - inclusive
 - accessible
 - community-driven
-- focused on Ethereum’s underlying technology and use-cases
-- focused on Ethereum concepts and design principles
+- focused on Quantaureum's underlying technology and use-cases
+- focused on Quantaureum concepts and design principles
 
 ## What we are not
 
-- The Ethereum Foundation website
 - A platform for promoting investments or profiteering of any kind
 - A platform for elevating or endorsing individual projects or organizations
 - A DEX, CEX or any other form of financial platform
 - A platform that gives financial or legal advice of any kind
 
-## Code of conduct
+## Conduct
 
 ### Pledge
 
-Open participation is core to the ethereum.org ethos. We are a website and community maintained by thousands of contributors, and this is only possible if we maintain a welcoming, participatory environment. To this end, contributors to this site pledge to maintain a harassment-free environment for all participants across all ethereum.org platforms and community spaces. The ethereum.org community welcomes and values anyone who wants to participate in a constructive and friendly way, regardless of age, disability, ethnicity, sex characteristics, gender identity, level of experience, area of expertise, education, socio-economic status, nationality, personal appearance, race, religion or any other dimension of diversity.
+Open participation is core to the quantaureum.com ethos. We pledge to maintain a harassment-free environment for all participants across all quantaureum.com platforms and community spaces. We welcome and value anyone who wants to participate in a constructive and friendly way, regardless of age, disability, ethnicity, sex characteristics, gender identity, level of experience, area of expertise, education, socio-economic status, nationality, personal appearance, race, religion or any other dimension of diversity.
 
 ### Scope
 
-This Code of Conduct applies to all ethereum.org spaces (such as GitHub, Discord, Figma, Crowdin, Twitter and other online platforms), and it also applies when the community is represented in real-world public spaces such as at meetups, conferences and events.
+This code of conduct applies to all quantaureum.com community spaces, including the GitHub repository, issue trackers, review discussions, and comments on quantaureum.com, plus any public interactions between community members outside these spaces that may impact the safety and inclusion of community members.
 
-### Our standards
+### Expected conduct
 
-Examples of behavior that contributes to creating a positive environment include:
+All protocol community members are expected to:
 
-- Using welcoming and inclusive language
-- Being respectful of differing viewpoints and experiences
-- Gracefully accepting and/or empathetically providing constructive criticism
-- Acting calmly and professionally when resolving conflicts or disagreements
-- Showing empathy and tolerance towards other community members
-- Encouraging and amplifying new voices in the community
+- Be welcoming, friendly, and patient
+- Be respectful of differing viewpoints and experiences
+- Gracefully accept constructive feedback
+- Focus on what is best for the community
+- Show empathy towards other community members
 
-Examples of unacceptable behavior by participants include:
+### Unacceptable conduct
 
-- Physical violence, threatening physical violence or encouraging of physical violence of any kind
-- Using sexualized language or imagery or imposing unwelcome sexual attention
-- Impersonating another individual or otherwise dishonestly claiming affiliation with some individual or organization
+Unacceptable behaviors include, but are not limited to:
+
 - Trolling, insulting/derogatory comments, and personal or political attacks
-- Harassing other community members in public or private channels
-- Publishing others’ private information, such as a physical or electronic address, without explicit permission
-- Social engineering, scamming or otherwise manipulating other community members
-- Promoting investments, tokens, projects or anything else for personal monetary or non-monetary gain
-- Spamming servers with off-topic content
-- Disregarding requests or warnings from community moderators
-- Engaging in other conduct which could reasonably be considered inappropriate in a professional setting
-
-### Reporting
-
-Violations of the code of conduct will normally be visible to the community as we try to do everything in open, public channels, allowing community members to self-police.
-
-However, if something happens that you feel needs attention, you can raise it with someone who has a moderation role (e.g., discord guide) so that they can help investigate and execute the appropriate response.
-
-When reporting, please include as much detail as possible, including specific examples and timestamps. This will help to ensure a fair outcome.
+- Public or private harassment
+- Publishing others' private information without explicit permission
+- The use of sexualized language or imagery and unwelcome sexual attention or advances
+- Deliberate intimidation, stalking, or sustained disruption of discussions
+- Spamming, phishing, or posting of misleading links, including ones under the guise of help desk or support
+- Other conduct which could reasonably be considered inappropriate in a professional setting
 
 ### Enforcement
 
-Depending on the severity, people who violate the code of conduct can receive warnings, temporary bans or permanent bans from ethereum.org communities.
+Instances of unacceptable behavior may be reported to the project team at hello@quantaureum.com. The project team will review and investigate all complaints, and will respond in a way that it deems appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident.
+
+Community members who do not follow this code of conduct may face repercussions suggested by community moderation, which include warnings, temporary bans, or permanent bans from community spaces.

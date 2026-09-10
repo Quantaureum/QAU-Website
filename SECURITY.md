@@ -1,9 +1,10 @@
 # Security Policy
 
-## Supported Versions
-
-Generally only the latest version of this software is in production, and risks are more related to the potential for users to be directed to scams.
-
 ## Reporting a Vulnerability
 
-It is recommended that any potential critical vulnerabilities be reported through the security@ethereum.org email address using the PGP outlined in https://ethereum.org/.well-known/security.txt
+If you discover a security vulnerability in the quantaureum.com website, please report it responsibly:
+
+- **Email**: security@quantaureum.com
+- **Security policy details**: https://quantaureum.com/.well-known/security.txt
+
+Please do not open public issues for security vulnerabilities. We aim to acknowledge reports within 48 hours.
