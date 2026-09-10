@@ -1,0 +1,111 @@
+"use client"
+import React, { type ReactNode, useState } from "react"
+import { useTranslations } from "next-intl"
+import type { AccordionContentProps } from "@radix-ui/react-accordion"
+
+import { HStack } from "@/components/ui/flex"
+
+import { cn } from "@/lib/utils/cn"
+import { trackCustomEvent } from "@/lib/utils/matomo"
+
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "./ui/accordion"
+
+export type ExpandableCardProps = {
+  children?: ReactNode
+  contentPreview?: ReactNode
+  title: ReactNode
+  svg?: ReactNode
+  eventAction?: string
+  eventCategory?: string
+  eventName?: string
+  visible?: boolean
+  className?: string
+} & Pick<AccordionContentProps, "forceMount">
+
+const ExpandableCard = ({
+  children,
+  contentPreview,
+  title,
+  svg,
+  eventAction = "Clicked",
+  eventCategory = "",
+  eventName = "",
+  visible = false,
+  className,
+  forceMount = true,
+}: ExpandableCardProps) => {
+  const [isVisible, setIsVisible] = useState(visible)
+  const t = useTranslations("common")
+  const matomo = {
+    eventAction,
+    eventCategory: `ExpandableCard${eventCategory}`,
+    eventName,
+  }
+  const onClick = (e: React.MouseEvent<HTMLElement>) => {
+    // Card will not collapse if clicking on a link or selecting text
+    if (
+      window.getSelection()?.toString().length === 0 &&
+      !(
+        (e.target as Element).closest(".ExternalLink") as HTMLDivElement
+      )?.className.includes("ExternalLink")
+    ) {
+      !isVisible && trackCustomEvent(matomo)
+      setIsVisible(!isVisible)
+    }
+  }
+
+  return (
+    <>
+      <Accordion
+        type="single"
+        collapsible
+        className={className}
+        defaultValue={visible ? "item-1" : undefined}
+      >
+        <AccordionItem
+          value="item-1"
+          className="rounded-base border hover:bg-background-highlight"
+        >
+          <AccordionTrigger
+            hideIcon
+            onClick={onClick}
+            className={cn(
+              "w-full gap-4 p-6 text-start max-sm:flex-col max-sm:items-start max-sm:space-y-4 md:p-6",
+              "transition-color hover:transition-color cursor-pointer bg-transparent! text-body! data-[state=open]:text-body!"
+            )}
+          >
+            <div className="flex-1 space-y-4">
+              <HStack className="gap-6">
+                {svg}
+                <h3 className="text-xl font-semibold">{title}</h3>
+              </HStack>
+              {contentPreview && (
+                <p className="w-fit text-sm text-pretty text-body-medium">
+                  {contentPreview}
+                </p>
+              )}
+            </div>
+            <span className="my-auto text-primary">
+              {t(isVisible ? "less" : "more")}
+            </span>
+          </AccordionTrigger>
+          <AccordionContent
+            forceMount={forceMount}
+            className="p-6! pt-0! text-md"
+          >
+            <div className="space-y-[1lh] border-t pt-6 [&>p]:first:mt-0 [&>p]:last:mb-0">
+              {children}
+            </div>
+          </AccordionContent>
+        </AccordionItem>
+      </Accordion>
+    </>
+  )
+}
+
+export default ExpandableCard

@@ -1,0 +1,78 @@
+import { Suspense } from "react"
+import { pick } from "lodash"
+import { notFound } from "next/navigation"
+import { getMessages, setRequestLocale } from "next-intl/server"
+
+import { Lang } from "@/lib/types"
+
+import Matomo from "@/components/Matomo"
+
+import { getLastDeployDate } from "@/lib/utils/getLastDeployDate"
+import { getLocaleTimestamp } from "@/lib/utils/time"
+import { toLanguageTag } from "@/lib/utils/url"
+
+import { ibmPlexMono, inter } from "../fonts"
+
+import Providers from "./providers"
+
+import "@rainbow-me/rainbowkit/styles.css"
+import "@/styles/global.css"
+
+import { routing } from "@/i18n/routing"
+import { BaseLayout } from "@/layouts/BaseLayout"
+
+// Generate static params for all supported locales
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }))
+}
+
+export default async function LocaleLayout(props: {
+  children: React.ReactNode
+  params: Promise<{ locale: string }>
+}) {
+  const params = await props.params
+
+  const { locale } = params
+
+  const { children } = props
+
+  // Safety net only - pages must still call this themselves. Runs before the
+  // notFound() bail so invalid-locale probes can't fall back to headers().
+  setRequestLocale(locale)
+
+  if (!routing.locales.includes(locale)) {
+    notFound()
+  }
+
+  const allMessages = await getMessages()
+  const messages = pick(allMessages, "common")
+
+  const lastDeployDate = getLastDeployDate()
+  const lastDeployLocaleTimestamp = getLocaleTimestamp(
+    locale as Lang,
+    lastDeployDate
+  )
+
+  return (
+    <html
+      lang={toLanguageTag(locale)}
+      className={`${inter.variable} ${ibmPlexMono.variable}`}
+      // Lets Next disable smooth scroll during route transitions so it lands
+      // at the true top instead of short (behind the sticky nav).
+      data-scroll-behavior="smooth"
+      suppressHydrationWarning
+    >
+      <body>
+        <Providers locale={locale} messages={messages}>
+          <Suspense>
+            <Matomo />
+          </Suspense>
+
+          <BaseLayout lastDeployLocaleTimestamp={lastDeployLocaleTimestamp}>
+            {children}
+          </BaseLayout>
+        </Providers>
+      </body>
+    </html>
+  )
+}

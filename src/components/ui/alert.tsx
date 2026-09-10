@@ -1,0 +1,182 @@
+import * as React from "react"
+import { cva, type VariantProps } from "class-variance-authority"
+import { X } from "lucide-react"
+import {
+  tv,
+  type VariantProps as TailwindVariantProps,
+} from "tailwind-variants"
+import { Slot } from "@radix-ui/react-slot"
+
+import { cn } from "@/lib/utils/cn"
+
+import Emoji, { type EmojiProps } from "../Emoji"
+
+import { Button } from "./buttons/Button"
+
+const alertVariants = cva(
+  "flex gap-4 items-center rounded-base border p-4 text-body/80 **:[:is(h2,h3,h4,h5,h6,strong)]:text-body",
+  {
+    variants: {
+      variant: {
+        info: "bg-background-highlight",
+        error:
+          "dark:border-error/70 border-error dark:bg-error-dark bg-error-light **:[svg:not(.lucide-external-link)]:text-error",
+        success:
+          "dark:border-success/70 border-success dark:bg-success-dark bg-success-light **:[svg:not(.lucide-external-link)]:text-success",
+        warning:
+          "dark:border-warning/70 border-warning dark:bg-warning-dark bg-warning-light **:[svg:not(.lucide-external-link)]:text-warning",
+        update:
+          "border-primary-high-contrast/70 bg-primary-low-contrast **:[svg:not(.lucide-external-link)]:text-primary-high-contrast",
+        banner: cn(
+          "rounded-none text-balance border-none w-full text-center justify-center bg-primary-action px-8",
+          "text-white **:[a]:text-white **:[a]:hover:text-white/80 **:[a]:visited:text-white"
+        ),
+      },
+    },
+    defaultVariants: {
+      variant: "info",
+    },
+  }
+)
+
+/**
+ * Visual notice component. Renders an `aside` for `variant="banner"`,
+ * otherwise a `div`. No ARIA role by default -- pass `role="status"` for
+ * polite dynamic announcements (e.g. filter result counts) or
+ * `role="alert"` for assertive runtime errors.
+ */
+const Alert = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement> & VariantProps<typeof alertVariants>
+>(({ className, variant, ...props }, ref) => {
+  const Comp = variant === "banner" ? "aside" : "div"
+  return (
+    <Comp
+      ref={ref}
+      className={cn(alertVariants({ variant }), className)}
+      {...props}
+    />
+  )
+})
+Alert.displayName = "Alert"
+
+const AlertContent = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => (
+  <div ref={ref} className={cn("flex flex-1 flex-col", className)} {...props} />
+))
+AlertContent.displayName = "AlertContent"
+
+const alertTitleVariants = tv({
+  base: "text-body",
+  variants: {
+    size: {
+      base: "font-bold",
+      lg: "mb-2 text-2xl font-black",
+    },
+  },
+  defaultVariants: {
+    size: "base",
+  },
+})
+
+export interface AlertTitleProps
+  extends React.HTMLAttributes<HTMLParagraphElement>,
+    TailwindVariantProps<typeof alertTitleVariants> {
+  asChild?: boolean
+}
+
+const AlertTitle = React.forwardRef<HTMLParagraphElement, AlertTitleProps>(
+  ({ className, asChild, size, ...props }, ref) => {
+    const Comp = asChild ? Slot : "p"
+    return (
+      <Comp
+        ref={ref}
+        className={cn(alertTitleVariants({ size }), className)}
+        {...props}
+      />
+    )
+  }
+)
+AlertTitle.displayName = "AlertTitle"
+
+const AlertDescription = React.forwardRef<
+  HTMLParagraphElement,
+  React.HTMLAttributes<HTMLParagraphElement>
+>(({ className, ...props }, ref) => (
+  <div
+    ref={ref}
+    className={cn(
+      "[&_p]:mt-0 [&_p]:mb-4 [&_p]:leading-relaxed [&_p:last-child]:mb-0",
+      className
+    )}
+    {...props}
+  />
+))
+AlertDescription.displayName = "AlertDescription"
+
+/**
+ * Dismiss control for an `Alert`. Env-agnostic: the caller owns the
+ * (required) `aria-label` and any dismissal behaviour (`onClick`), so it
+ * composes into server or client trees alike.
+ */
+const AlertCloseButton = React.forwardRef<
+  HTMLButtonElement,
+  React.ButtonHTMLAttributes<HTMLButtonElement> & { "aria-label": string }
+>(({ className, ...props }, ref) => (
+  <Button
+    ref={ref}
+    variant="ghost"
+    className={cn("-me-4 rounded-full text-body", className)}
+    {...props}
+  >
+    <X className="h-6 w-6" />
+  </Button>
+))
+AlertCloseButton.displayName = "AlertCloseButton"
+
+/**
+ * @deprecated Use `AlertIcon` with a Lucide icon instead. Alert glyphs are
+ * moving from emoji to icons; `AlertEmoji` is retained only for content that
+ * has not been migrated yet.
+ */
+const AlertEmoji = ({ className, ...props }: EmojiProps) => (
+  <Emoji
+    className={cn(
+      "shrink-0 grow-0 self-start text-4xl sm:self-auto",
+      className
+    )}
+    {...props}
+  />
+)
+
+const alertIconVariants = tv({
+  base: "mt-0.5 shrink-0 self-start [&>svg]:size-6",
+  variants: {
+    size: {
+      lg: "[&>svg]:size-10",
+      xl: "[&>svg]:size-12",
+    },
+  },
+})
+
+export interface AlertIconProps
+  extends React.HTMLAttributes<HTMLDivElement>,
+    TailwindVariantProps<typeof alertIconVariants> {}
+
+const AlertIcon = ({ className, children, size, ...props }: AlertIconProps) => (
+  <div className={cn(alertIconVariants({ size }), className)} {...props}>
+    {children}
+  </div>
+)
+
+export {
+  Alert,
+  AlertCloseButton,
+  AlertContent,
+  AlertDescription,
+  AlertEmoji,
+  AlertIcon,
+  AlertTitle,
+}

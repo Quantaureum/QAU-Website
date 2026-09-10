@@ -1,0 +1,65 @@
+---
+title: Single-Slot-Finalität
+description: Erklärung der Single-Slot-Finalität
+lang: de
+template: roadmap
+---
+
+Es dauert etwa 15 Minuten, bis ein [Ethereum](/)-Block endgültig wird. Wir können jedoch den Konsensmechanismus von Ethereum dazu bringen, Blöcke effizienter zu validieren und die Zeit bis zur Endgültigkeit drastisch zu verkürzen. Anstatt 15 Minuten zu warten, könnten Blöcke im selben Slot vorgeschlagen und endgültig gemacht werden. Dieses Konzept ist als **Single-Slot-Finalität (SSF)** bekannt.
+
+## Was ist Endgültigkeit? {#what-is-finality}
+
+Im auf Proof-of-Stake (PoS) basierenden Konsensmechanismus von Ethereum bezieht sich Endgültigkeit auf die Garantie, dass ein Block nicht geändert oder aus der Blockchain entfernt werden kann, ohne mindestens 33 % der gesamten gestakten ETH zu verbrennen. Dies ist „kryptoökonomische“ Sicherheit, da das Vertrauen aus den extrem hohen Kosten resultiert, die mit der Änderung der Reihenfolge oder des Inhalts der Chain verbunden sind, was jeden rationalen wirtschaftlichen Akteur davon abhalten würde, es zu versuchen.
+
+## Warum eine schnellere Endgültigkeit anstreben? {#why-aim-for-quicker-finality}
+
+Die aktuelle Zeit bis zur Endgültigkeit hat sich als zu lang erwiesen. Die meisten Nutzer möchten nicht 15 Minuten auf die Endgültigkeit warten, und es ist unpraktisch für Apps und Börsen, die möglicherweise einen hohen Transaktionsdurchsatz wünschen, so lange warten zu müssen, um sicher zu sein, dass ihre Transaktionen dauerhaft sind. Eine Verzögerung zwischen dem Vorschlag eines Blocks und seiner Endgültigkeit schafft auch eine Gelegenheit für kurze Reorgs, die ein Angreifer nutzen könnte, um bestimmte Blöcke zu zensieren oder MEV zu extrahieren. Der Mechanismus, der sich mit der stufenweisen Aufwertung von Blöcken befasst, ist ebenfalls recht komplex und wurde mehrmals gepatcht, um Sicherheitslücken zu schließen, was ihn zu einem der Teile der Ethereum-Codebasis macht, in denen subtile Fehler wahrscheinlicher auftreten. All diese Probleme könnten beseitigt werden, indem die Zeit bis zur Endgültigkeit auf einen einzigen Slot reduziert wird.
+
+## Der Kompromiss zwischen Dezentralisierung, Zeit und Overhead {#the-decentralization-time-overhead-tradeoff}
+
+Die Garantie der Endgültigkeit ist keine sofortige Eigenschaft eines neuen Blocks; es dauert seine Zeit, bis ein neuer Block endgültig wird. Der Grund dafür ist, dass Validatoren, die mindestens 2/3 der gesamten gestakten ETH im Netzwerk repräsentieren, für den Block abstimmen („attestieren“) müssen, damit er als endgültig betrachtet wird. Jeder validierende Knoten im Netzwerk muss Attestierungen von anderen Knoten verarbeiten, um zu wissen, ob ein Block diese 2/3-Schwelle erreicht hat oder nicht.
+
+Je kürzer die Zeit ist, die zur Erreichung der Endgültigkeit zur Verfügung steht, desto mehr Rechenleistung wird an jedem Knoten benötigt, da die Verarbeitung der Attestierungen schneller erfolgen muss. Je mehr validierende Knoten im Netzwerk existieren, desto mehr Attestierungen müssen für jeden Block verarbeitet werden, was ebenfalls die benötigte Rechenleistung erhöht. Je mehr Rechenleistung benötigt wird, desto weniger Menschen können teilnehmen, da teurere Hardware erforderlich ist, um jeden validierenden Knoten zu betreiben. Eine Erhöhung der Zeit zwischen den Blöcken verringert die an jedem Knoten benötigte Rechenleistung, verlängert aber auch die Zeit bis zur Endgültigkeit, da Attestierungen langsamer verarbeitet werden.
+
+Daher gibt es einen Kompromiss zwischen dem Overhead (Rechenleistung), der Dezentralisierung (Anzahl der Knoten, die an der Validierung der Chain teilnehmen können) und der Zeit bis zur Endgültigkeit. Das ideale System balanciert minimale Rechenleistung, maximale Dezentralisierung und minimale Zeit bis zur Endgültigkeit aus.
+
+Der aktuelle Konsensmechanismus von Ethereum hat diese drei Parameter wie folgt ausbalanciert:
+
+- **Festlegung des Mindest-Stakes auf 32 ETH**. Dies setzt eine Obergrenze für die Anzahl der Attestierungen von Validatoren, die von einzelnen Knoten verarbeitet werden müssen, und somit eine Obergrenze für die Rechenanforderungen jedes Knotens.
+- **Festlegung der Zeit bis zur Endgültigkeit auf ~15 Minuten**. Dies gibt Validatoren, die auf normalen Heimcomputern laufen, ausreichend Zeit, um Attestierungen für jeden Block sicher zu verarbeiten.
+
+Mit dem aktuellen Design des Mechanismus ist es zur Reduzierung der Zeit bis zur Endgültigkeit notwendig, die Anzahl der Validatoren im Netzwerk zu verringern oder die Hardwareanforderungen für jeden Knoten zu erhöhen. Es gibt jedoch Verbesserungen, die an der Art und Weise vorgenommen werden können, wie Attestierungen verarbeitet werden, wodurch mehr Attestierungen gezählt werden können, ohne den Overhead an jedem Knoten zu erhöhen. Die effizientere Verarbeitung wird es ermöglichen, die Endgültigkeit innerhalb eines einzigen Slots anstatt über zwei Epochen hinweg zu bestimmen.
+
+## Wege zur SSF {#routes-to-ssf}
+
+<ExpandableCard title="Warum können wir SSF nicht schon heute haben?" eventCategory="/roadmap/single-slot-finality" eventName="clicked Why can't we hear SSF today?">
+
+Der aktuelle Konsensmechanismus kombiniert Attestierungen von mehreren Validatoren, bekannt als Komitees, um die Anzahl der Nachrichten zu reduzieren, die jeder Validator verarbeiten muss, um einen Block zu validieren. Jeder Validator hat die Möglichkeit, in jeder Epoche (32 Slots) zu attestieren, aber in jedem Slot attestiert nur eine Teilmenge von Validatoren, die als „Komitee“ bezeichnet wird. Sie tun dies, indem sie sich in Subnetze aufteilen, in denen einige wenige Validatoren als „Aggregatoren“ ausgewählt werden. Diese Aggregatoren kombinieren jeweils alle Signaturen, die sie von anderen Validatoren in ihrem Subnetz sehen, zu einer einzigen aggregierten Signatur. Der Aggregator, der die größte Anzahl an individuellen Beiträgen enthält, gibt seine aggregierte Signatur an den Block-Proposer weiter, der sie zusammen mit der aggregierten Signatur der anderen Komitees in den Block aufnimmt.
+
+Dieser Prozess bietet ausreichend Kapazität, damit jeder Validator in jeder Epoche abstimmen kann, da `32 slots * 64 committees * 256 validators per committee = 524,288 validators per epoch`. Zum Zeitpunkt des Schreibens (Februar 2023) gibt es ~513.000 aktive Validatoren.
+
+In diesem Schema ist es für jeden Validator nur möglich, über einen Block abzustimmen, indem er seine Attestierungen über die gesamte Epoche verteilt. Es gibt jedoch potenziell Möglichkeiten, den Mechanismus so zu verbessern, dass _jeder Validator die Chance hat, in jedem Slot zu attestieren_.
+</ExpandableCard>
+
+Seit dem Entwurf des Ethereum-Konsensmechanismus hat sich herausgestellt, dass das Signatur-Aggregationsschema (BLS) weitaus skalierbarer ist als ursprünglich angenommen, während sich auch die Fähigkeit der Clients zur Verarbeitung und Verifizierung von Signaturen verbessert hat. Es stellt sich heraus, dass die Verarbeitung von Attestierungen einer riesigen Anzahl von Validatoren tatsächlich innerhalb eines einzigen Slots möglich ist. Wenn beispielsweise eine Million Validatoren jeweils zweimal in jedem Slot abstimmen und die Slot-Zeiten auf 16 Sekunden angepasst werden, müssten Knoten Signaturen mit einer Mindestrate von 125.000 Aggregationen pro Sekunde verifizieren, um alle 1 Million Attestierungen innerhalb des Slots zu verarbeiten. In der Realität benötigt ein normaler Computer etwa 500 Nanosekunden für eine Signaturverifizierung, was bedeutet, dass 125.000 in ~62,5 ms durchgeführt werden können – weit unter der Ein-Sekunden-Grenze.
+
+Weitere Effizienzgewinne könnten durch die Schaffung von Superkomitees mit z. B. 125.000 zufällig ausgewählten Validatoren pro Slot erzielt werden. Nur diese Validatoren dürfen über einen Block abstimmen, und daher entscheidet nur diese Teilmenge von Validatoren, ob ein Block endgültig wird. Ob dies eine gute Idee ist oder nicht, hängt davon ab, wie teuer ein erfolgreicher Angriff auf Ethereum nach Ansicht der Community sein sollte. Das liegt daran, dass ein Angreifer anstelle von 2/3 der gesamten gestakten Ether einen unehrlichen Block mit 2/3 der gestakten Ether _in diesem Superkomitee_ endgültig machen könnte. Dies ist noch ein aktives Forschungsgebiet, aber es erscheint plausibel, dass bei einem Validator-Set, das groß genug ist, um überhaupt Superkomitees zu erfordern, die Kosten für den Angriff auf eines dieser Subkomitees extrem hoch sein werden (z. B. würden die in ETH denominierten Angriffskosten `2/3 * 125,000 * 32 = ~2.6 million ETH` betragen). Die Angriffskosten können durch Erhöhung der Größe des Validator-Sets angepasst werden (z. B. die Validator-Größe so abstimmen, dass die Angriffskosten 1 Million Ether, 4 Millionen Ether, 10 Millionen Ether usw. entsprechen). [Vorläufige Umfragen](https://youtu.be/ojBgyFl6-v4?t=755) in der Community deuten darauf hin, dass 1–2 Millionen Ether akzeptable Angriffskosten sind, was ~65.536 – 97.152 Validatoren pro Superkomitee impliziert.
+
+Die Verifizierung ist jedoch nicht der wahre Engpass – es ist die Signatur-Aggregation, die Validator-Knoten wirklich herausfordert. Um die Signatur-Aggregation zu skalieren, wird es wahrscheinlich erforderlich sein, die Anzahl der Validatoren in jedem Subnetz zu erhöhen, die Anzahl der Subnetze zu erhöhen oder zusätzliche Aggregationsschichten hinzuzufügen (d. h. Komitees von Komitees zu implementieren). Ein Teil der Lösung könnte darin bestehen, spezialisierte Aggregatoren zuzulassen – ähnlich wie die Block-Erstellung und die Generierung von Commitments für Rollup-Daten im Rahmen der Proposer-Builder-Trennung (PBS) und Danksharding an spezialisierte Block-Builder ausgelagert werden.
+
+## Welche Rolle spielt die Fork-Choice-Regel bei SSF? {#role-of-the-fork-choice-rule}
+
+Der heutige Konsensmechanismus beruht auf einer engen Kopplung zwischen dem Finality-Gadget (dem Algorithmus, der bestimmt, ob 2/3 der Validatoren eine bestimmte Chain attestiert haben) und der Fork-Choice-Regel (dem Algorithmus, der entscheidet, welche Chain die richtige ist, wenn es mehrere Optionen gibt). Der Fork-Choice-Algorithmus berücksichtigt nur Blöcke _seit_ dem letzten endgültigen Block. Unter SSF gäbe es keine Blöcke, die die Fork-Choice-Regel berücksichtigen müsste, da die Endgültigkeit im selben Slot eintritt, in dem der Block vorgeschlagen wird. Das bedeutet, dass unter SSF zu jedem Zeitpunkt _entweder_ der Fork-Choice-Algorithmus _oder_ das Finality-Gadget aktiv wäre. Das Finality-Gadget würde Blöcke endgültig machen, bei denen 2/3 der Validatoren online waren und ehrlich attestiert haben. Wenn ein Block die 2/3-Schwelle nicht überschreiten kann, würde die Fork-Choice-Regel eingreifen, um zu bestimmen, welcher Chain gefolgt werden soll. Dies schafft auch die Möglichkeit, den Inaktivitätsleck-Mechanismus beizubehalten, der eine Chain wiederherstellt, bei der >1/3 der Validatoren offline gehen, wenn auch mit einigen zusätzlichen Nuancen.
+
+## Offene Probleme {#outstanding-issues}
+
+Das Problem bei der Skalierung der Aggregation durch Erhöhung der Anzahl der Validatoren pro Subnetz besteht darin, dass dies zu einer größeren Belastung des Peer-to-Peer-Netzwerks führt. Das Problem beim Hinzufügen von Aggregationsschichten ist, dass es technisch recht komplex ist und Latenz hinzufügt (d. h. es könnte länger dauern, bis der Block-Proposer von allen Subnetz-Aggregatoren hört). Es ist auch unklar, wie mit dem Szenario umgegangen werden soll, dass es mehr aktive Validatoren im Netzwerk gibt, als in jedem Slot machbar verarbeitet werden können, selbst mit BLS-Signatur-Aggregation. Eine mögliche Lösung besteht darin, dass, da alle Validatoren in jedem Slot attestieren und es unter SSF keine Komitees gibt, die Obergrenze von 32 ETH für das effektive Guthaben vollständig aufgehoben werden könnte. Das bedeutet, dass Betreiber, die mehrere Validatoren verwalten, ihren Stake konsolidieren und weniger Validatoren betreiben könnten, was die Anzahl der Nachrichten reduziert, die validierende Knoten verarbeiten müssen, um das gesamte Validator-Set abzudecken. Dies setzt voraus, dass große Staker zustimmen, ihre Validatoren zu konsolidieren. Es ist auch möglich, jederzeit eine feste Obergrenze für die Anzahl der Validatoren oder die Menge der gestakten ETH festzulegen. Dies erfordert jedoch einen Mechanismus zur Entscheidung, welche Validatoren teilnehmen dürfen und welche nicht, was wahrscheinlich unerwünschte Nebeneffekte hervorruft.
+
+## Aktueller Fortschritt {#current-progress}
+
+SSF befindet sich in der Forschungsphase. Es wird nicht erwartet, dass es in den nächsten Jahren veröffentlicht wird, wahrscheinlich erst nach anderen wesentlichen Upgrades wie [Verkle-Bäumen](/roadmap/verkle-trees/) und [Danksharding](/roadmap/danksharding/).
+
+## Weiterführende Literatur {#further-reading}
+
+- [Vitalik über SSF auf der EDCON 2022](https://www.youtube.com/watch?v=nPgUKNPWXNI)
+- [Vitaliks Notizen: Wege zur Single-Slot-Finalität](https://notes.ethereum.org/@vbuterin/single_slot_finality)

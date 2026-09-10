@@ -1,0 +1,23 @@
+{
+  "page-upgrades-merge-infographic-el": "Estado de Ethereum: transacciones, aplicaciones, contratos, saldos",
+  "page-upgrades-merge-infographic-alt-text": "Infografía que ilustra cómo la cadena de balizas se fusiona con la capa de ejecución de Ethereum durante la transición de prueba de trabajo (PoW) a prueba de participación (PoS).",
+  "page-upgrades-beacon-date": "¡Implementado!",
+  "page-upgrades-merge-date": "Septiembre de 2022",
+  "page-upgrades-shards-date": "~2023",
+  "page-upgrades-pbs": "No es inminente - se espera para 2024/25",
+  "page-upgrades-post-merge-banner-tutorial-ood": "Este tutorial está desactualizado después de La Fusión y puede que no funcione. Por favor, abre un PR si deseas contribuir.",
+  "page-upgrades-upgrades-guide": "Guía de las actualizaciones de Ethereum",
+  "page-upgrades-upgrades-docking": "La Fusión",
+  "page-upgrades-shard-title": "Fragmentación",
+  "page-upgrades-upgrades-beacon-chain": "La cadena de balizas",
+  "consensus-beaconscan-title": "beaconscan",
+  "consensus-beaconscan-in-title": "beaconcha.in",
+  "consensus-beaconcha-in-desc": "Explorador de código abierto de la cadena de balizas",
+  "consensus-beaconscan-desc": "Explorador de la cadena de balizas: Etherscan para la capa de consenso",
+  "consensus-become-staker": "Conviértete en staker",
+  "consensus-become-staker-desc": "¡El staking está activo! Si quieres hacer staking con tus ETH para ayudar a proteger la red, asegúrate de conocer los riesgos.",
+  "consensus-explore": "Explorar los datos",
+  "consensus-run-beacon-chain": "Ejecutar un cliente de consenso",
+  "consensus-run-beacon-chain-desc": "Ethereum necesita la mayor cantidad posible de clientes en ejecución. ¡Ayuda con este bien público de Ethereum!",
+  "read-more": "Leer más"
+}

@@ -1,0 +1,189 @@
+"use client"
+
+import * as React from "react"
+import { cva, type VariantProps } from "class-variance-authority"
+import { Slot } from "@radix-ui/react-slot"
+
+import type { MatomoEventOptions } from "@/lib/types"
+
+import { cn } from "@/lib/utils/cn"
+import { trackCustomEvent } from "@/lib/utils/matomo"
+import { scrollIntoView } from "@/lib/utils/scrollIntoView"
+
+import { BaseLink, type LinkProps } from "../Link"
+
+const buttonVariants = cva(
+  cn(
+    // Sizing and positioning classes:
+    "inline-flex gap-2 items-center justify-center rounded border border-solid transition [&>svg]:shrink-0",
+    // Base default styling is "outline" pattern, primary color for text, border matches, no bg
+    "text-primary border-current",
+    "shadow-none transition-[box-shadow,transform] duration-200",
+    // Hover: text/border to --primary-hover for ALL buttons. The hover box-shadow is
+    // applied per-variant (solid/outline) below -- NOT on the base -- because ghost/link
+    // must stay flat, and shadow-primary-no-blur-* is a custom utility tailwind-merge
+    // won't dedupe against a variant-level `shadow-none` reset (it would leak through).
+    // `hover-link` also fires when an ancestor `group/link` (e.g. a clickable Card) is
+    // hovered, so a Button rendered as a non-interactive child mirrors the card's hover.
+    "hover-link:!text-primary-hover hover-link:duration-200 hover-link:transition-[box-shadow,transform]",
+    // Focus: Add 4px outline to all buttons, --primary-hover
+    "focus-visible:outline focus-visible:outline-primary-hover focus-visible:outline-4 focus-visible:-outline-offset-1",
+    // Active: text (border) to --primary-hover instead of primary, hide shadow
+    "active:text-primary-hover active:shadow-none",
+    // Disabled: Pointer events none, text (border) to --disabled
+    "disabled:pointer-events-none disabled:text-disabled",
+    // isSecondary: Switch text (border) to --body instead of --primary
+    "[&[data-secondary='true']]:text-body"
+  ),
+  {
+    variants: {
+      variant: {
+        solid: cn(
+          "text-white bg-primary-action border-transparent",
+          "hover-link:!text-white hover-link:bg-primary-action-hover hover-link:shadow-primary-no-blur-1", // Hover
+          "active:bg-primary-action-hover", // Active
+          "disabled:bg-disabled disabled:text-background" // Disabled
+        ),
+        outline: "hover-link:shadow-primary-no-blur-1", // Base styling + hover shadow
+        ghost: "border-transparent",
+        link: "border-transparent underline !min-h-0 !py-0 !px-1 active:text-primary",
+      },
+      size: {
+        lg: "text-lg py-3 px-8 [&>svg]:size-6 rounded-lg focus-visible:rounded-lg",
+        md: "min-h-10.5 px-4 py-2 [&>svg]:size-6",
+        sm: "text-xs min-h-[31px] py-1.5 px-2 [&>svg]:size-4",
+      },
+    },
+    defaultVariants: {
+      variant: "solid",
+      size: "md",
+    },
+  }
+)
+
+export const checkIsSecondary = ({
+  variant,
+  isSecondary,
+}: {
+  variant: ButtonVariantProps["variant"]
+  isSecondary: boolean
+}) => {
+  // These two variants do not have secondary styling, so prevent overrides
+  return {
+    "data-secondary":
+      !["solid", "link"].includes(variant || "solid") && isSecondary,
+  }
+}
+
+type ButtonVariantProps = VariantProps<typeof buttonVariants>
+
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+    ButtonVariantProps {
+  asChild?: boolean
+  /**
+   * Set string value that matches the `id` attribute value used
+   * on another element in a given page. Selecting the button will then
+   * trigger a scroll to that element.
+   */
+  toId?: string
+  /**
+   * Custom theme prop. If true, `body` color is used instead of
+   * `primary` color in the theming.
+   *
+   * `NOTE`: Does not apply to the `Solid` or `Link` variants
+   */
+  isSecondary?: boolean
+  customEventOptions?: MatomoEventOptions
+}
+
+const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+  (
+    {
+      className,
+      variant,
+      size,
+      asChild = false,
+      isSecondary = false,
+      onClick,
+      toId,
+      customEventOptions,
+      ...props
+    },
+    ref
+  ) => {
+    const handleOnClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+      toId && scrollIntoView("#" + toId)
+      customEventOptions && trackCustomEvent(customEventOptions)
+
+      onClick?.(e)
+    }
+
+    const Comp = asChild ? Slot : "button"
+    return (
+      <Comp
+        className={cn(buttonVariants({ variant, size, className }))}
+        ref={ref}
+        onClick={handleOnClick}
+        {...checkIsSecondary({
+          variant,
+          isSecondary,
+        })}
+        {...props}
+      />
+    )
+  }
+)
+Button.displayName = "Button"
+
+export type ButtonLinkProps = Omit<LinkProps, "href"> &
+  Pick<ButtonProps, "size" | "variant" | "isSecondary"> & {
+    href: string
+    buttonProps?: Omit<ButtonProps, "size" | "variant">
+    customEventOptions?: MatomoEventOptions
+  }
+
+const ButtonLink = React.forwardRef<HTMLAnchorElement, ButtonLinkProps>(
+  (
+    {
+      size,
+      variant,
+      isSecondary,
+      buttonProps,
+      onClick,
+      customEventOptions,
+      children,
+      className,
+      ...linkProps
+    },
+    ref
+  ) => {
+    return (
+      <Button
+        asChild
+        size={size}
+        variant={variant}
+        isSecondary={isSecondary}
+        {...buttonProps}
+      >
+        <BaseLink
+          data-label="button-link"
+          ref={ref}
+          className={cn(
+            "no-underline hover:no-underline [&_[data-label='arrow']]:ms-0",
+            className
+          )}
+          activeClassName=""
+          customEventOptions={customEventOptions}
+          onClick={onClick}
+          {...linkProps}
+        >
+          {children}
+        </BaseLink>
+      </Button>
+    )
+  }
+)
+ButtonLink.displayName = "ButtonLink"
+
+export { Button, ButtonLink, type ButtonVariantProps, buttonVariants }

@@ -1,0 +1,25 @@
+/* Vendor CSS → layer(components). Our overrides → unlayered. */
+@import "@docsearch/css/dist/style.css" layer(components);
+@import "swiper/css" layer(components);
+@import "swiper/css/navigation" layer(components);
+@import "swiper/css/pagination" layer(components);
+@import "swiper/css/effect-cards" layer(components);
+@import "swiper/css/grid" layer(components);
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@import "./colors.css";
+@import "./semantic-tokens.css";
+@import "./theme.css";
+@import "./base.css";
+@import "./utilities.css";
+@import "./docsearch.css";
+@import "./codeblock.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Fires on the element's own hover OR when an ancestor marked `group/link` is hovered.
+   Lets a Button rendered as a non-interactive child (e.g. CardButtonFake inside a
+   clickable Card) mirror its hover state from the surrounding card anchor, so hovering
+   anywhere on the card is visually identical to hovering the button itself. */
+@custom-variant hover-link (&:hover, &:where(.group\/link:hover *));

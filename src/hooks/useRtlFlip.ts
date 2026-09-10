@@ -1,0 +1,26 @@
+import { useLocale } from "next-intl"
+
+import type { Lang } from "@/lib/types"
+
+import { isLangRightToLeft } from "@/lib/utils/translations"
+
+type UseDirection = {
+  twFlipForRtl: "rtl:-scale-x-100" // className
+  isRtl: boolean
+  direction: "ltr" | "rtl"
+}
+
+/**
+ * Custom hook that determines the direction and transformation for right-to-left (RTL) languages.
+ * @example const { twFlipForRtl } = useRtlFlip()
+ * @returns An object containing the Tailwind className, RTL flag, and direction.
+ */
+export const useRtlFlip = (): UseDirection => {
+  const locale = useLocale()
+  const isRtl = isLangRightToLeft(locale as Lang)
+  return {
+    twFlipForRtl: "rtl:-scale-x-100", // className (preferred)
+    isRtl,
+    direction: isRtl ? "rtl" : "ltr",
+  }
+}

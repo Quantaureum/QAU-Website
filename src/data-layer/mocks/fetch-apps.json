@@ -1,0 +1,1124 @@
+{
+  "DeFi": [
+    {
+      "name": "Aave",
+      "url": "https://aave.com",
+      "description": "Aave is a decentralised non-custodial liquidity protocol where users can participate as suppliers or borrowers. Suppliers provide liquidity to the market while earning interest, and borrowers can access liquidity by providing collateral that exceeds the borrowed amount.",
+      "image": "https://i.imgur.com/iaxZ9N8.png",
+      "category": "DeFi",
+      "subCategory": [
+        "Lending and borrowing"
+      ],
+      "networks": [
+        "Base",
+        "Scroll",
+        "Ethereum Mainnet",
+        "Arbitrum One",
+        "OP Mainnet",
+        "zkSync Mainnet"
+      ],
+      "screenshots": [
+        "https://i.imgur.com/gfy4ae2.png",
+        "https://i.imgur.com/RRyZ9HN.png"
+      ],
+      "bannerImage": "https://i.imgur.com/lCDltCK.png",
+      "platforms": [
+        "Browser"
+      ],
+      "twitter": "https://x.com/aave",
+      "github": "https://github.com/aave",
+      "discord": "https://discord.com/invite/aave",
+      "kpiUrl": "",
+      "sortingWeight": 1,
+      "discover": true,
+      "highlight": true,
+      "languages": [
+        "English"
+      ],
+      "parentCompany": "Avara",
+      "parentCompanyURL": "https://avara.xyz",
+      "openSource": true,
+      "contractAddress": "https://aave.com/docs/resources/addresses",
+      "dateOfLaunch": "9/18/2018",
+      "lastUpdated": "7/4/2025",
+      "ready": "true",
+      "devconnect": "true",
+      "appOfTheWeekStartDate": "2025-12-15T07:00:00.000Z",
+      "appOfTheWeekEndDate": "2025-12-21T07:00:00.000Z"
+    }
+  ],
+  "Social": [
+    {
+      "name": "Zora",
+      "url": "https://zora.co/",
+      "description": "Zora is an onchain social network revealing new opportunities to create, connect, and earn from your life online.",
+      "image": "https://i.imgur.com/3ti964X.png",
+      "category": "Social",
+      "subCategory": [
+        "Social network"
+      ],
+      "networks": [
+        "Base",
+        "Ethereum Mainnet"
+      ],
+      "screenshots": [
+        "https://i.imgur.com/6OxNqMF.jpeg"
+      ],
+      "bannerImage": "https://i.imgur.com/GBBRB59.png",
+      "platforms": [
+        "Browser",
+        "iOS",
+        "Android"
+      ],
+      "twitter": "https://twitter.com/zora",
+      "github": "https://github.com/ourzora",
+      "discord": "",
+      "kpiUrl": "",
+      "sortingWeight": 0,
+      "discover": false,
+      "highlight": true,
+      "languages": [
+        "English"
+      ],
+      "parentCompany": "Zora Labs",
+      "parentCompanyURL": "https://zora.co",
+      "openSource": true,
+      "contractAddress": "0xaD031EeE55f595dF6Dbd61e9ef3B908FaD1B3671",
+      "dateOfLaunch": "1/1/2021",
+      "lastUpdated": "7/3/2025",
+      "ready": "true",
+      "devconnect": "true",
+      "appOfTheWeekStartDate": "2025-12-15T07:00:00.000Z",
+      "appOfTheWeekEndDate": "2025-12-21T07:00:00.000Z"
+    }
+  ],
+  "Privacy": [
+    {
+      "name": "Proof of Humanity",
+      "url": "https://proofofhumanity.id/",
+      "description": "A social identity system combining webs of trust with reverse Turing tests to verify unique humans.",
+      "image": "https://i.imgur.com/lkEMfCo.png",
+      "category": "Privacy",
+      "subCategory": [
+        "Identity"
+      ],
+      "networks": [
+        "Ethereum Mainnet"
+      ],
+      "screenshots": [],
+      "bannerImage": "https://i.imgur.com/CnsW57W.png",
+      "platforms": [
+        "Browser"
+      ],
+      "twitter": "",
+      "github": "",
+      "discord": "",
+      "kpiUrl": "",
+      "sortingWeight": 0,
+      "discover": true,
+      "highlight": true,
+      "languages": [
+        "English"
+      ],
+      "parentCompany": "",
+      "parentCompanyURL": "",
+      "openSource": true,
+      "contractAddress": "",
+      "dateOfLaunch": "1/1/2024",
+      "lastUpdated": "1/1/2025",
+      "ready": "true",
+      "devconnect": "false"
+    },
+    {
+      "name": "QuarkID",
+      "url": "https://quarkid.org/",
+      "description": "Open-source, ZK-powered decentralized identity system developed with the Government of the City of Buenos Aires.",
+      "image": "https://i.imgur.com/lkEMfCo.png",
+      "category": "Privacy",
+      "subCategory": [
+        "Identity"
+      ],
+      "networks": [
+        "Ethereum Mainnet"
+      ],
+      "screenshots": [],
+      "bannerImage": "https://i.imgur.com/CnsW57W.png",
+      "platforms": [
+        "Browser"
+      ],
+      "twitter": "",
+      "github": "",
+      "discord": "",
+      "kpiUrl": "",
+      "sortingWeight": 0,
+      "discover": true,
+      "highlight": false,
+      "languages": [
+        "English"
+      ],
+      "parentCompany": "",
+      "parentCompanyURL": "",
+      "openSource": true,
+      "contractAddress": "",
+      "dateOfLaunch": "1/1/2024",
+      "lastUpdated": "1/1/2025",
+      "ready": "true",
+      "devconnect": "false"
+    },
+    {
+      "name": "Self",
+      "url": "https://self.xyz/",
+      "description": "Privately prove who you are using biometric chip IDs and passports while keeping control of your data.",
+      "image": "https://i.imgur.com/lkEMfCo.png",
+      "category": "Privacy",
+      "subCategory": [
+        "Identity"
+      ],
+      "networks": [
+        "Ethereum Mainnet"
+      ],
+      "screenshots": [],
+      "bannerImage": "https://i.imgur.com/CnsW57W.png",
+      "platforms": [
+        "Browser"
+      ],
+      "twitter": "",
+      "github": "",
+      "discord": "",
+      "kpiUrl": "",
+      "sortingWeight": 0,
+      "discover": true,
+      "highlight": false,
+      "languages": [
+        "English"
+      ],
+      "parentCompany": "",
+      "parentCompanyURL": "",
+      "openSource": true,
+      "contractAddress": "",
+      "dateOfLaunch": "1/1/2024",
+      "lastUpdated": "1/1/2025",
+      "ready": "true",
+      "devconnect": "false"
+    },
+    {
+      "name": "zkPassport",
+      "url": "https://zkpassport.id/",
+      "description": "Prove passport attributes like nationality or age with zero-knowledge proofs, without revealing the document.",
+      "image": "https://i.imgur.com/lkEMfCo.png",
+      "category": "Privacy",
+      "subCategory": [
+        "Identity"
+      ],
+      "networks": [
+        "Ethereum Mainnet"
+      ],
+      "screenshots": [],
+      "bannerImage": "https://i.imgur.com/CnsW57W.png",
+      "platforms": [
+        "Browser"
+      ],
+      "twitter": "",
+      "github": "",
+      "discord": "",
+      "kpiUrl": "",
+      "sortingWeight": 0,
+      "discover": true,
+      "highlight": false,
+      "languages": [
+        "English"
+      ],
+      "parentCompany": "",
+      "parentCompanyURL": "",
+      "openSource": true,
+      "contractAddress": "",
+      "dateOfLaunch": "1/1/2024",
+      "lastUpdated": "1/1/2025",
+      "ready": "true",
+      "devconnect": "false"
+    },
+    {
+      "name": "zkPass",
+      "url": "https://zkpass.org/",
+      "description": "A protocol for privacy-preserving verification of attributes like legal identity, financial, and health records.",
+      "image": "https://i.imgur.com/lkEMfCo.png",
+      "category": "Privacy",
+      "subCategory": [
+        "Identity"
+      ],
+      "networks": [
+        "Ethereum Mainnet"
+      ],
+      "screenshots": [],
+      "bannerImage": "https://i.imgur.com/CnsW57W.png",
+      "platforms": [
+        "Browser"
+      ],
+      "twitter": "",
+      "github": "",
+      "discord": "",
+      "kpiUrl": "",
+      "sortingWeight": 0,
+      "discover": true,
+      "highlight": false,
+      "languages": [
+        "English"
+      ],
+      "parentCompany": "",
+      "parentCompanyURL": "",
+      "openSource": true,
+      "contractAddress": "",
+      "dateOfLaunch": "1/1/2024",
+      "lastUpdated": "1/1/2025",
+      "ready": "true",
+      "devconnect": "false"
+    },
+    {
+      "name": "DAVINCI",
+      "url": "https://davinci.vote/",
+      "description": "A voting network combining ZKPs and threshold homomorphic encryption for verifiable end-to-end elections.",
+      "image": "https://i.imgur.com/lkEMfCo.png",
+      "category": "Privacy",
+      "subCategory": [
+        "Governance"
+      ],
+      "networks": [
+        "Ethereum Mainnet"
+      ],
+      "screenshots": [],
+      "bannerImage": "https://i.imgur.com/CnsW57W.png",
+      "platforms": [
+        "Browser"
+      ],
+      "twitter": "",
+      "github": "",
+      "discord": "",
+      "kpiUrl": "",
+      "sortingWeight": 0,
+      "discover": true,
+      "highlight": true,
+      "languages": [
+        "English"
+      ],
+      "parentCompany": "",
+      "parentCompanyURL": "",
+      "openSource": true,
+      "contractAddress": "",
+      "dateOfLaunch": "1/1/2024",
+      "lastUpdated": "1/1/2025",
+      "ready": "true",
+      "devconnect": "false"
+    },
+    {
+      "name": "Democracy Earth Foundation",
+      "url": "https://democracy.earth/",
+      "description": "An open-source toolkit for democratic elections with anonymous voting and private identity verification.",
+      "image": "https://i.imgur.com/lkEMfCo.png",
+      "category": "Privacy",
+      "subCategory": [
+        "Governance"
+      ],
+      "networks": [
+        "Ethereum Mainnet"
+      ],
+      "screenshots": [],
+      "bannerImage": "https://i.imgur.com/CnsW57W.png",
+      "platforms": [
+        "Browser"
+      ],
+      "twitter": "",
+      "github": "",
+      "discord": "",
+      "kpiUrl": "",
+      "sortingWeight": 0,
+      "discover": true,
+      "highlight": false,
+      "languages": [
+        "English"
+      ],
+      "parentCompany": "",
+      "parentCompanyURL": "",
+      "openSource": true,
+      "contractAddress": "",
+      "dateOfLaunch": "1/1/2024",
+      "lastUpdated": "1/1/2025",
+      "ready": "true",
+      "devconnect": "false"
+    },
+    {
+      "name": "Freedom Tool",
+      "url": "https://freedomtool.org/",
+      "description": "A private voting protocol using ZKPs and biometric passports for secure political elections.",
+      "image": "https://i.imgur.com/lkEMfCo.png",
+      "category": "Privacy",
+      "subCategory": [
+        "Governance"
+      ],
+      "networks": [
+        "Ethereum Mainnet"
+      ],
+      "screenshots": [],
+      "bannerImage": "https://i.imgur.com/CnsW57W.png",
+      "platforms": [
+        "Browser"
+      ],
+      "twitter": "",
+      "github": "",
+      "discord": "",
+      "kpiUrl": "",
+      "sortingWeight": 0,
+      "discover": true,
+      "highlight": false,
+      "languages": [
+        "English"
+      ],
+      "parentCompany": "",
+      "parentCompanyURL": "",
+      "openSource": true,
+      "contractAddress": "",
+      "dateOfLaunch": "1/1/2024",
+      "lastUpdated": "1/1/2025",
+      "ready": "true",
+      "devconnect": "false"
+    },
+    {
+      "name": "The Interfold",
+      "url": "https://interfold.org/",
+      "description": "Privacy-preserving governance infrastructure for internet-native organizations.",
+      "image": "https://i.imgur.com/lkEMfCo.png",
+      "category": "Privacy",
+      "subCategory": [
+        "Governance"
+      ],
+      "networks": [
+        "Ethereum Mainnet"
+      ],
+      "screenshots": [],
+      "bannerImage": "https://i.imgur.com/CnsW57W.png",
+      "platforms": [
+        "Browser"
+      ],
+      "twitter": "",
+      "github": "",
+      "discord": "",
+      "kpiUrl": "",
+      "sortingWeight": 0,
+      "discover": true,
+      "highlight": false,
+      "languages": [
+        "English"
+      ],
+      "parentCompany": "",
+      "parentCompanyURL": "",
+      "openSource": true,
+      "contractAddress": "",
+      "dateOfLaunch": "1/1/2024",
+      "lastUpdated": "1/1/2025",
+      "ready": "true",
+      "devconnect": "false"
+    },
+    {
+      "name": "Semaphore",
+      "url": "https://semaphore.pse.dev/",
+      "description": "A ZK protocol to prove group membership and signal (e.g. vote) without revealing identity.",
+      "image": "https://i.imgur.com/lkEMfCo.png",
+      "category": "Privacy",
+      "subCategory": [
+        "Governance",
+        "Communication"
+      ],
+      "networks": [
+        "Ethereum Mainnet"
+      ],
+      "screenshots": [],
+      "bannerImage": "https://i.imgur.com/CnsW57W.png",
+      "platforms": [
+        "Browser"
+      ],
+      "twitter": "",
+      "github": "",
+      "discord": "",
+      "kpiUrl": "",
+      "sortingWeight": 0,
+      "discover": true,
+      "highlight": false,
+      "languages": [
+        "English"
+      ],
+      "parentCompany": "",
+      "parentCompanyURL": "",
+      "openSource": true,
+      "contractAddress": "",
+      "dateOfLaunch": "1/1/2024",
+      "lastUpdated": "1/1/2025",
+      "ready": "true",
+      "devconnect": "false"
+    },
+    {
+      "name": "Okkult Vote",
+      "url": "https://okkult.io/",
+      "description": "Private, verifiable voting infrastructure for DAOs and communities on Ethereum.",
+      "image": "https://i.imgur.com/lkEMfCo.png",
+      "category": "Privacy",
+      "subCategory": [
+        "Governance"
+      ],
+      "networks": [
+        "Ethereum Mainnet"
+      ],
+      "screenshots": [],
+      "bannerImage": "https://i.imgur.com/CnsW57W.png",
+      "platforms": [
+        "Browser"
+      ],
+      "twitter": "",
+      "github": "",
+      "discord": "",
+      "kpiUrl": "",
+      "sortingWeight": 0,
+      "discover": true,
+      "highlight": false,
+      "languages": [
+        "English"
+      ],
+      "parentCompany": "",
+      "parentCompanyURL": "",
+      "openSource": true,
+      "contractAddress": "",
+      "dateOfLaunch": "1/1/2024",
+      "lastUpdated": "1/1/2025",
+      "ready": "true",
+      "devconnect": "false"
+    },
+    {
+      "name": "Agora",
+      "url": "https://agora.xyz/",
+      "description": "Onchain governance and coordination tooling for permissionless communities.",
+      "image": "https://i.imgur.com/lkEMfCo.png",
+      "category": "Privacy",
+      "subCategory": [
+        "Communication"
+      ],
+      "networks": [
+        "Ethereum Mainnet"
+      ],
+      "screenshots": [],
+      "bannerImage": "https://i.imgur.com/CnsW57W.png",
+      "platforms": [
+        "Browser"
+      ],
+      "twitter": "",
+      "github": "",
+      "discord": "",
+      "kpiUrl": "",
+      "sortingWeight": 0,
+      "discover": true,
+      "highlight": true,
+      "languages": [
+        "English"
+      ],
+      "parentCompany": "",
+      "parentCompanyURL": "",
+      "openSource": true,
+      "contractAddress": "",
+      "dateOfLaunch": "1/1/2024",
+      "lastUpdated": "1/1/2025",
+      "ready": "true",
+      "devconnect": "false"
+    },
+    {
+      "name": "Fileverse",
+      "url": "https://fileverse.io/",
+      "description": "Decentralized, end-to-end encrypted collaboration and document sharing without intermediaries.",
+      "image": "https://i.imgur.com/lkEMfCo.png",
+      "category": "Privacy",
+      "subCategory": [
+        "Communication"
+      ],
+      "networks": [
+        "Ethereum Mainnet"
+      ],
+      "screenshots": [],
+      "bannerImage": "https://i.imgur.com/CnsW57W.png",
+      "platforms": [
+        "Browser"
+      ],
+      "twitter": "",
+      "github": "",
+      "discord": "",
+      "kpiUrl": "",
+      "sortingWeight": 0,
+      "discover": true,
+      "highlight": false,
+      "languages": [
+        "English"
+      ],
+      "parentCompany": "",
+      "parentCompanyURL": "",
+      "openSource": true,
+      "contractAddress": "",
+      "dateOfLaunch": "1/1/2024",
+      "lastUpdated": "1/1/2025",
+      "ready": "true",
+      "devconnect": "false"
+    },
+    {
+      "name": "Status",
+      "url": "https://status.app/",
+      "description": "A secure messenger, crypto wallet, and Web3 browser with end-to-end encryption and metadata protection.",
+      "image": "https://i.imgur.com/lkEMfCo.png",
+      "category": "Privacy",
+      "subCategory": [
+        "Communication"
+      ],
+      "networks": [
+        "Ethereum Mainnet"
+      ],
+      "screenshots": [],
+      "bannerImage": "https://i.imgur.com/CnsW57W.png",
+      "platforms": [
+        "Browser"
+      ],
+      "twitter": "",
+      "github": "",
+      "discord": "",
+      "kpiUrl": "",
+      "sortingWeight": 0,
+      "discover": true,
+      "highlight": false,
+      "languages": [
+        "English"
+      ],
+      "parentCompany": "",
+      "parentCompanyURL": "",
+      "openSource": true,
+      "contractAddress": "",
+      "dateOfLaunch": "1/1/2024",
+      "lastUpdated": "1/1/2025",
+      "ready": "true",
+      "devconnect": "false"
+    },
+    {
+      "name": "zkPDF",
+      "url": "https://pse.dev/",
+      "description": "Prove facts contained in a PDF document using zero-knowledge proofs without revealing the file.",
+      "image": "https://i.imgur.com/lkEMfCo.png",
+      "category": "Privacy",
+      "subCategory": [
+        "Communication"
+      ],
+      "networks": [
+        "Ethereum Mainnet"
+      ],
+      "screenshots": [],
+      "bannerImage": "https://i.imgur.com/CnsW57W.png",
+      "platforms": [
+        "Browser"
+      ],
+      "twitter": "",
+      "github": "",
+      "discord": "",
+      "kpiUrl": "",
+      "sortingWeight": 0,
+      "discover": true,
+      "highlight": false,
+      "languages": [
+        "English"
+      ],
+      "parentCompany": "",
+      "parentCompanyURL": "",
+      "openSource": true,
+      "contractAddress": "",
+      "dateOfLaunch": "1/1/2024",
+      "lastUpdated": "1/1/2025",
+      "ready": "true",
+      "devconnect": "false"
+    },
+    {
+      "name": "Zupass",
+      "url": "https://zupass.org/",
+      "description": "A privacy-preserving identity and proof system for holding and selectively disclosing credentials.",
+      "image": "https://i.imgur.com/lkEMfCo.png",
+      "category": "Privacy",
+      "subCategory": [
+        "Communication"
+      ],
+      "networks": [
+        "Ethereum Mainnet"
+      ],
+      "screenshots": [],
+      "bannerImage": "https://i.imgur.com/CnsW57W.png",
+      "platforms": [
+        "Browser"
+      ],
+      "twitter": "",
+      "github": "",
+      "discord": "",
+      "kpiUrl": "",
+      "sortingWeight": 0,
+      "discover": true,
+      "highlight": false,
+      "languages": [
+        "English"
+      ],
+      "parentCompany": "",
+      "parentCompanyURL": "",
+      "openSource": true,
+      "contractAddress": "",
+      "dateOfLaunch": "1/1/2024",
+      "lastUpdated": "1/1/2025",
+      "ready": "true",
+      "devconnect": "false"
+    },
+    {
+      "name": "Umbra",
+      "url": "https://app.umbra.cash/",
+      "description": "A protocol for stealth payments on Ethereum, sending funds to a fresh, unlinkable address each time.",
+      "image": "https://i.imgur.com/lkEMfCo.png",
+      "category": "Privacy",
+      "subCategory": [
+        "Stealth address"
+      ],
+      "networks": [
+        "Ethereum Mainnet"
+      ],
+      "screenshots": [],
+      "bannerImage": "https://i.imgur.com/CnsW57W.png",
+      "platforms": [
+        "Browser"
+      ],
+      "twitter": "",
+      "github": "",
+      "discord": "",
+      "kpiUrl": "",
+      "sortingWeight": 0,
+      "discover": true,
+      "highlight": true,
+      "languages": [
+        "English"
+      ],
+      "parentCompany": "",
+      "parentCompanyURL": "",
+      "openSource": true,
+      "contractAddress": "",
+      "dateOfLaunch": "1/1/2024",
+      "lastUpdated": "1/1/2025",
+      "ready": "true",
+      "devconnect": "false"
+    },
+    {
+      "name": "Fluidkey",
+      "url": "https://fluidkey.com/",
+      "description": "Seamlessly manage, receive, and send onchain assets while protecting your privacy with stealth addresses.",
+      "image": "https://i.imgur.com/lkEMfCo.png",
+      "category": "Privacy",
+      "subCategory": [
+        "Stealth address"
+      ],
+      "networks": [
+        "Ethereum Mainnet"
+      ],
+      "screenshots": [],
+      "bannerImage": "https://i.imgur.com/CnsW57W.png",
+      "platforms": [
+        "Browser"
+      ],
+      "twitter": "",
+      "github": "",
+      "discord": "",
+      "kpiUrl": "",
+      "sortingWeight": 0,
+      "discover": true,
+      "highlight": false,
+      "languages": [
+        "English"
+      ],
+      "parentCompany": "",
+      "parentCompanyURL": "",
+      "openSource": true,
+      "contractAddress": "",
+      "dateOfLaunch": "1/1/2024",
+      "lastUpdated": "1/1/2025",
+      "ready": "true",
+      "devconnect": "false"
+    },
+    {
+      "name": "Nachtara",
+      "url": "https://nachtara.com/",
+      "description": "Stealth-address wallet infrastructure for private, unlinkable transfers on Ethereum.",
+      "image": "https://i.imgur.com/lkEMfCo.png",
+      "category": "Privacy",
+      "subCategory": [
+        "Stealth address"
+      ],
+      "networks": [
+        "Ethereum Mainnet"
+      ],
+      "screenshots": [],
+      "bannerImage": "https://i.imgur.com/CnsW57W.png",
+      "platforms": [
+        "Browser"
+      ],
+      "twitter": "",
+      "github": "",
+      "discord": "",
+      "kpiUrl": "",
+      "sortingWeight": 0,
+      "discover": true,
+      "highlight": false,
+      "languages": [
+        "English"
+      ],
+      "parentCompany": "",
+      "parentCompanyURL": "",
+      "openSource": true,
+      "contractAddress": "",
+      "dateOfLaunch": "1/1/2024",
+      "lastUpdated": "1/1/2025",
+      "ready": "true",
+      "devconnect": "false"
+    },
+    {
+      "name": "Tornado Cash",
+      "url": "https://tornado.cash/",
+      "description": "A decentralized, non-custodial mixing protocol for private transactions on Ethereum.",
+      "image": "https://i.imgur.com/lkEMfCo.png",
+      "category": "Privacy",
+      "subCategory": [
+        "Payments"
+      ],
+      "networks": [
+        "Ethereum Mainnet"
+      ],
+      "screenshots": [],
+      "bannerImage": "https://i.imgur.com/CnsW57W.png",
+      "platforms": [
+        "Browser"
+      ],
+      "twitter": "",
+      "github": "",
+      "discord": "",
+      "kpiUrl": "",
+      "sortingWeight": 0,
+      "discover": true,
+      "highlight": true,
+      "languages": [
+        "English"
+      ],
+      "parentCompany": "",
+      "parentCompanyURL": "",
+      "openSource": true,
+      "contractAddress": "",
+      "dateOfLaunch": "1/1/2024",
+      "lastUpdated": "1/1/2025",
+      "ready": "true",
+      "devconnect": "false"
+    },
+    {
+      "name": "Railgun",
+      "url": "https://railgun.org/",
+      "description": "An onchain privacy system to send, receive, and use DeFi privately, with proofs of innocence.",
+      "image": "https://i.imgur.com/lkEMfCo.png",
+      "category": "Privacy",
+      "subCategory": [
+        "Payments"
+      ],
+      "networks": [
+        "Ethereum Mainnet"
+      ],
+      "screenshots": [],
+      "bannerImage": "https://i.imgur.com/CnsW57W.png",
+      "platforms": [
+        "Browser"
+      ],
+      "twitter": "",
+      "github": "",
+      "discord": "",
+      "kpiUrl": "",
+      "sortingWeight": 0,
+      "discover": true,
+      "highlight": false,
+      "languages": [
+        "English"
+      ],
+      "parentCompany": "",
+      "parentCompanyURL": "",
+      "openSource": true,
+      "contractAddress": "",
+      "dateOfLaunch": "1/1/2024",
+      "lastUpdated": "1/1/2025",
+      "ready": "true",
+      "devconnect": "false"
+    },
+    {
+      "name": "Privacy Pools",
+      "url": "https://privacypools.com/",
+      "description": "Private withdrawals via ZK proofs and association sets, enabling compliance without compromising privacy.",
+      "image": "https://i.imgur.com/lkEMfCo.png",
+      "category": "Privacy",
+      "subCategory": [
+        "Payments"
+      ],
+      "networks": [
+        "Ethereum Mainnet"
+      ],
+      "screenshots": [],
+      "bannerImage": "https://i.imgur.com/CnsW57W.png",
+      "platforms": [
+        "Browser"
+      ],
+      "twitter": "",
+      "github": "",
+      "discord": "",
+      "kpiUrl": "",
+      "sortingWeight": 0,
+      "discover": true,
+      "highlight": false,
+      "languages": [
+        "English"
+      ],
+      "parentCompany": "",
+      "parentCompanyURL": "",
+      "openSource": true,
+      "contractAddress": "",
+      "dateOfLaunch": "1/1/2024",
+      "lastUpdated": "1/1/2025",
+      "ready": "true",
+      "devconnect": "false"
+    }
+  ],
+  "Collectibles": [
+    {
+      "name": "OpenSea",
+      "url": "https://opensea.io/",
+      "description": "OpenSea is an online marketplace for non-fungible tokens (NFTs), enabling users to buy, sell, and create NFTs. It functions as a decentralized platform where users can trade various digital assets, including art, music, gaming items, and more, across multiple blockchains. ",
+      "image": "https://i.imgur.com/J4vZUTN.png",
+      "category": "Collectibles",
+      "subCategory": [
+        "Market"
+      ],
+      "networks": [
+        "Base",
+        "Blast",
+        "Ethereum Mainnet",
+        "Arbitrum One",
+        "OP Mainnet"
+      ],
+      "screenshots": [],
+      "bannerImage": "https://i.imgur.com/bxhdZRK.png",
+      "platforms": [
+        "Browser",
+        "iOS",
+        "Android"
+      ],
+      "twitter": "https://twitter.com/opensea",
+      "github": "https://github.com/projectopensea",
+      "discord": "https://discord.gg/opensea",
+      "kpiUrl": "",
+      "sortingWeight": 0,
+      "discover": true,
+      "highlight": true,
+      "languages": [
+        "English",
+        "Chinese Traditional",
+        "Chinese",
+        "German",
+        "French",
+        "Japanese",
+        "Korean",
+        "Spanish"
+      ],
+      "parentCompany": "OpenSea",
+      "parentCompanyURL": "https://opensea.io",
+      "openSource": true,
+      "contractAddress": "0xA5409eC958C83C3f309868bABaCA7c86DCB077c1 ",
+      "dateOfLaunch": "12/20/2017",
+      "lastUpdated": "7/4/2025",
+      "ready": "true",
+      "devconnect": "false",
+      "appOfTheWeekStartDate": "2025-10-26T06:00:00.000Z",
+      "appOfTheWeekEndDate": "2025-11-22T07:00:00.000Z"
+    }
+  ],
+  "Gaming": [
+    {
+      "name": "Remix",
+      "url": "https://remix.gg/",
+      "description": "Remix is a platform combining AI and mobile gaming, designed to offer on-chain, AI-powered games.",
+      "image": "https://i.imgur.com/KBHOee9.png",
+      "category": "Gaming",
+      "subCategory": [
+        "retro gaming",
+        "Casual",
+        "AI gaming"
+      ],
+      "networks": [
+        "Base",
+        "world"
+      ],
+      "screenshots": [
+        "https://i.imgur.com/RHH5ukf.jpeg"
+      ],
+      "bannerImage": "https://i.imgur.com/ILekHLM.png",
+      "platforms": [
+        "Browser"
+      ],
+      "twitter": "https://x.com/RemixGG_",
+      "github": "",
+      "discord": "https://discord.gg/a3bgdr4RC6",
+      "kpiUrl": "",
+      "sortingWeight": 0,
+      "discover": false,
+      "highlight": false,
+      "languages": [
+        "English"
+      ],
+      "parentCompany": "Remix (formerly Farcade)",
+      "parentCompanyURL": "https://remix.gg/",
+      "openSource": false,
+      "contractAddress": "",
+      "dateOfLaunch": "4/4/2021",
+      "lastUpdated": "2025",
+      "ready": "true",
+      "devconnect": "false",
+      "appOfTheWeekStartDate": null,
+      "appOfTheWeekEndDate": null
+    }
+  ],
+  "DAO": [
+    {
+      "name": "Snapshot",
+      "url": "https://snapshot.box/",
+      "description": "Snapshot is a voting platform that allows DAOs, DeFi protocols, or NFT communities to vote easily and without gas fees.The tool allows high customization of the voting process to cater to the diverse needs of the users and organizations.",
+      "image": "https://i.imgur.com/B2nGDiy.png",
+      "category": "DAO",
+      "subCategory": [
+        "Governance",
+        "Organization",
+        "Offchain voting"
+      ],
+      "networks": [
+        "Starknet",
+        "Ethereum Mainnet"
+      ],
+      "screenshots": [],
+      "bannerImage": "https://i.imgur.com/lyAL0O7.png",
+      "platforms": [
+        "Browser"
+      ],
+      "twitter": "https://x.com/SnapshotLabs",
+      "github": "https://github.com/snapshot-labs",
+      "discord": "https://discord.snapshot.org",
+      "kpiUrl": "",
+      "sortingWeight": 0,
+      "discover": false,
+      "highlight": true,
+      "languages": [
+        "English"
+      ],
+      "parentCompany": "Snapshot",
+      "parentCompanyURL": "https://snapshot.box",
+      "openSource": true,
+      "contractAddress": "",
+      "dateOfLaunch": "1/8/2020",
+      "lastUpdated": "7/14/2025",
+      "ready": "true",
+      "devconnect": "false",
+      "appOfTheWeekStartDate": "2025-12-08T07:00:00.000Z",
+      "appOfTheWeekEndDate": "2025-12-14T07:00:00.000Z"
+    }
+  ],
+  "Productivity": [
+    {
+      "name": "ENS",
+      "url": "https://ens.domains/",
+      "description": "The Ethereum Name Service or ENS is the decentralized naming protocol that is built on the Ethereum blockchain. It adheres to open-source standards and is based on a set of decentralized smart contracts that translate blockchain addresses into human-readable names.",
+      "image": "https://i.imgur.com/Ocl9okb.png",
+      "category": "Productivity",
+      "subCategory": [
+        "DNS",
+        "Identity"
+      ],
+      "networks": [
+        "Ethereum Mainnet"
+      ],
+      "screenshots": [
+        "https://i.imgur.com/YZGOPFM.png"
+      ],
+      "bannerImage": "https://i.imgur.com/Oq3MDGp.png",
+      "platforms": [
+        "Browser"
+      ],
+      "twitter": "https://x.com/ensdomains",
+      "github": "https://github.com/ensdomains",
+      "discord": "https://discord.com/invite/faTEB36",
+      "kpiUrl": "",
+      "sortingWeight": 0,
+      "discover": true,
+      "highlight": true,
+      "languages": [
+        "English"
+      ],
+      "parentCompany": "ENS Labs",
+      "parentCompanyURL": "https://www.enslabs.org/",
+      "openSource": true,
+      "contractAddress": "https://docs.ens.domains/learn/deployments",
+      "dateOfLaunch": "5/4/2017",
+      "lastUpdated": "7/11/2025",
+      "ready": "true",
+      "devconnect": "true",
+      "appOfTheWeekStartDate": "2025-11-23T07:00:00.000Z",
+      "appOfTheWeekEndDate": "2025-11-30T07:00:00.000Z"
+    }
+  ],
+  "Bridge": [
+    {
+      "name": "Particle Network",
+      "url": "https://particle.network/",
+      "description": "Pay with any asset. Transact across chains effortlessly. Never bridge again.",
+      "image": "https://i.imgur.com/IX6ESQ7.png",
+      "category": "Bridge",
+      "subCategory": [
+        "Chain abstraction"
+      ],
+      "networks": [
+        "Base",
+        "Scroll",
+        "Starknet",
+        "Linea",
+        "Blast",
+        "Mode",
+        "Ethereum Mainnet",
+        "Arbitrum One",
+        "OP Mainnet",
+        "Taiko",
+        "zkSync Mainnet"
+      ],
+      "screenshots": [],
+      "bannerImage": "https://i.imgur.com/gYm3FIR.png",
+      "platforms": [
+        "Browser"
+      ],
+      "twitter": "https://twitter.com/ParticleNtwrk",
+      "github": "",
+      "discord": "https://discord.com/invite/2y44qr6CR2",
+      "kpiUrl": "",
+      "sortingWeight": 0,
+      "discover": false,
+      "highlight": false,
+      "languages": [
+        "English"
+      ],
+      "parentCompany": "Particle Network",
+      "parentCompanyURL": "https://particle.network/",
+      "openSource": false,
+      "contractAddress": "",
+      "dateOfLaunch": "9/9/2024",
+      "lastUpdated": "7/3/2025",
+      "ready": "true",
+      "devconnect": "false",
+      "appOfTheWeekStartDate": null,
+      "appOfTheWeekEndDate": null
+    }
+  ]
+}

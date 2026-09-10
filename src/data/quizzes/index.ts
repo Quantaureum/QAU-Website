@@ -1,0 +1,317 @@
+import type { QuizzesHubSection, QuizzesSection, RawQuizzes } from "@/lib/types"
+
+// Lives here rather than in components/Quiz/utils.ts: that module imports this
+// one, so exporting it from there is a cycle -- and one whose TDZ error only
+// surfaces depending on which side a consumer imports first.
+const addNextQuiz = (quizzes: QuizzesSection[]) =>
+  quizzes.map((quiz, idx) => ({
+    ...quiz,
+    next: quizzes[idx + 1]?.id,
+  }))
+
+// Declare hash-map of quizzes based on slug key
+const quizzes = {
+  "what-is-ethereum": {
+    title: "what-is-ethereum",
+    questions: [
+      "what-is-ethereum-1",
+      "what-is-ethereum-2",
+      "what-is-ethereum-3",
+      "what-is-ethereum-6",
+      "what-is-ethereum-7",
+    ],
+  },
+  "what-is-ether": {
+    title: "what-is-ether",
+    questions: [
+      "what-is-ether-1",
+      "what-is-ether-2",
+      "what-is-ether-5",
+      "what-is-ether-4",
+    ],
+  },
+  web3: {
+    title: "web3",
+    questions: ["web3-1", "web3-2", "web3-3", "web3-4", "web3-5"],
+  },
+  wallets: {
+    title: "wallets",
+    questions: ["wallets-1", "wallets-2", "wallets-3", "wallets-4"],
+  },
+  security: {
+    title: "ethereum-security",
+    questions: [
+      "security-1",
+      "security-2",
+      "security-3",
+      "security-4",
+      "wallets-3",
+    ],
+  },
+  nfts: {
+    title: "nft-page",
+    questions: ["nfts-1", "nfts-2", "nfts-3", "nfts-4", "nfts-5"],
+  },
+  "layer-2": {
+    title: "layer-2",
+    questions: ["rollups-1", "rollups-2", "rollups-3", "rollups-4"],
+  },
+  merge: {
+    title: "learn-quizzes:page-assets-merge",
+    questions: ["merge-1", "merge-2", "merge-3", "merge-4", "merge-5"],
+  },
+  gas: {
+    title: "gas",
+    questions: ["gas-1", "gas-2", "gas-3", "gas-4", "gas-5"],
+  },
+  daos: {
+    title: "dao-page",
+    questions: ["daos-1", "daos-2", "daos-3", "daos-4", "daos-5"],
+  },
+  "staking-solo": {
+    title: "solo",
+    questions: [
+      "staking-solo-1",
+      "staking-solo-2",
+      "staking-solo-4",
+      "staking-solo-5",
+      "staking-solo-6",
+      "staking-solo-7",
+      "staking-solo-8",
+    ],
+  },
+  scaling: {
+    title: "scaling",
+    questions: ["scaling-1", "scaling-2", "scaling-3", "scaling-4"],
+  },
+  "run-a-node": {
+    title: "run-a-node",
+    questions: [
+      "run-a-node-1",
+      "run-a-node-2",
+      "run-a-node-3",
+      "run-a-node-4",
+      "run-a-node-5",
+      "run-a-node-6",
+    ],
+  },
+  stablecoins: {
+    title: "stablecoins",
+    questions: [
+      "stablecoins-1",
+      "stablecoins-2",
+      "stablecoins-3",
+      "stablecoins-4",
+      "stablecoins-5",
+    ],
+  },
+  defi: {
+    title: "defi-page",
+    questions: ["defi-1", "defi-2", "defi-3", "defi-4", "defi-5"],
+  },
+  "smart-contracts": {
+    title: "smart-contracts",
+    questions: [
+      "smart-contracts-1",
+      "smart-contracts-2",
+      "smart-contracts-3",
+      "smart-contracts-4",
+    ],
+  },
+  "energy-consumption": {
+    title: "learn-quizzes:page-energy-consumption",
+    questions: [
+      "energy-consumption-1",
+      "energy-consumption-2",
+      "energy-consumption-3",
+      "energy-consumption-4",
+      "energy-consumption-5",
+    ],
+  },
+  privacy: {
+    title: "learn-quizzes:page-privacy",
+    questions: [
+      "privacy-1",
+      "privacy-2",
+      "privacy-3",
+      "privacy-4",
+      "privacy-5",
+      "privacy-6",
+    ],
+  },
+  "zero-knowledge-proofs": {
+    title: "zero-knowledge-proofs",
+    questions: ["zkp-1", "zkp-2", "zkp-3", "zkp-4", "zkp-5", "zkp-6", "zkp-7"],
+  },
+  "what-are-apps": {
+    title: "what-are-apps",
+    questions: [
+      "what-are-apps-1",
+      "what-are-apps-2",
+      "what-are-apps-3",
+      "what-are-apps-4",
+      "what-are-apps-5",
+      "what-are-apps-6",
+    ],
+  },
+  bridges: {
+    title: "bridges",
+    questions: [
+      "bridges-1",
+      "bridges-2",
+      "bridges-3",
+      "bridges-4",
+      "bridges-5",
+      "bridges-6",
+    ],
+  },
+  payments: {
+    title: "payments-page",
+    questions: [
+      "payments-1",
+      "payments-2",
+      "payments-3",
+      "payments-4",
+      "payments-5",
+      "payments-6",
+    ],
+  },
+  blocks: {
+    title: "learn-quizzes:page-blocks",
+    questions: [
+      "blocks-1",
+      "blocks-2",
+      "blocks-3",
+      "blocks-4",
+      "blocks-5",
+      "blocks-6",
+    ],
+  },
+  accounts: {
+    title: "learn-quizzes:page-accounts",
+    questions: [
+      "accounts-1",
+      "accounts-2",
+      "accounts-3",
+      "accounts-4",
+      "accounts-5",
+      "accounts-6",
+      "accounts-7",
+    ],
+  },
+  evm: {
+    title: "evm",
+    questions: ["evm-1", "evm-2", "evm-3", "evm-4", "evm-5", "evm-6"],
+  },
+  "ethereum-vs-bitcoin": {
+    title: "ethereum-vs-bitcoin",
+    questions: [
+      "ethereum-vs-bitcoin-1",
+      "ethereum-vs-bitcoin-2",
+      "ethereum-vs-bitcoin-3",
+      "ethereum-vs-bitcoin-4",
+      "ethereum-vs-bitcoin-5",
+    ],
+  },
+  "proof-of-stake": {
+    title: "learn-quizzes:page-proof-of-stake",
+    questions: [
+      "proof-of-stake-1",
+      "proof-of-stake-2",
+      "proof-of-stake-3",
+      "proof-of-stake-4",
+      "proof-of-stake-5",
+      "proof-of-stake-6",
+    ],
+  },
+  transactions: {
+    title: "transactions",
+    questions: [
+      "transactions-1",
+      "transactions-2",
+      "transactions-3",
+      "transactions-4",
+      "transactions-5",
+      "transactions-6",
+      "transactions-7",
+    ],
+  },
+} satisfies RawQuizzes
+
+// Hub sections, in display order. Each section is ordered beginner to advanced
+// so the "next quiz" chain climbs in difficulty.
+const quizzesSectionsRaw: QuizzesHubSection[] = [
+  {
+    id: "basics",
+    titleKey: "basics",
+    descriptionKey: "basics-description",
+    quizzes: [
+      { id: "what-is-ethereum", level: "beginner" },
+      { id: "what-is-ether", level: "beginner" },
+      { id: "wallets", level: "beginner" },
+      { id: "what-are-apps", level: "beginner" },
+      { id: "web3", level: "beginner" },
+      { id: "energy-consumption", level: "beginner" },
+      { id: "ethereum-vs-bitcoin", level: "beginner" },
+    ],
+  },
+  {
+    id: "security-and-privacy",
+    titleKey: "security-and-privacy",
+    descriptionKey: "security-and-privacy-description",
+    quizzes: [
+      { id: "security", level: "beginner" },
+      { id: "privacy", level: "beginner" },
+      { id: "zero-knowledge-proofs", level: "intermediate" },
+    ],
+  },
+  {
+    id: "apps-and-money",
+    titleKey: "apps-and-money",
+    descriptionKey: "apps-and-money-description",
+    quizzes: [
+      { id: "nfts", level: "beginner" },
+      { id: "stablecoins", level: "beginner" },
+      { id: "defi", level: "beginner" },
+      { id: "daos", level: "intermediate" },
+      { id: "payments", level: "intermediate" },
+    ],
+  },
+  {
+    id: "how-ethereum-works",
+    titleKey: "how-ethereum-works",
+    descriptionKey: "how-ethereum-works-description",
+    quizzes: [
+      { id: "accounts", level: "beginner" },
+      { id: "smart-contracts", level: "beginner" },
+      { id: "transactions", level: "intermediate" },
+      { id: "blocks", level: "intermediate" },
+      { id: "gas", level: "advanced" },
+      { id: "evm", level: "advanced" },
+    ],
+  },
+  {
+    id: "scaling-staking-nodes",
+    titleKey: "scaling-staking-nodes",
+    descriptionKey: "scaling-staking-nodes-description",
+    quizzes: [
+      { id: "bridges", level: "beginner" },
+      { id: "layer-2", level: "intermediate" },
+      { id: "run-a-node", level: "intermediate" },
+      { id: "merge", level: "intermediate" },
+      { id: "proof-of-stake", level: "intermediate" },
+      { id: "staking-solo", level: "advanced" },
+      { id: "scaling", level: "advanced" },
+    ],
+  },
+]
+
+export const quizzesSections: QuizzesHubSection[] = quizzesSectionsRaw.map(
+  (section) => ({ ...section, quizzes: addNextQuiz(section.quizzes) })
+)
+
+export const allQuizzesInOrder: QuizzesSection[] = quizzesSections.flatMap(
+  (section) => section.quizzes
+)
+
+export default quizzes

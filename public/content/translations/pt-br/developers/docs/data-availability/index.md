@@ -1,0 +1,84 @@
+---
+title: Disponibilidade de dados
+description: "Uma visão geral dos problemas e soluções relacionados à disponibilidade de dados no Ethereum"
+lang: pt-br
+---
+
+"Não confie, verifique" é uma máxima comum no Ethereum. A ideia é que o seu nó possa verificar de forma independente se as informações que recebe estão corretas, executando todas as transações nos blocos que recebem dos pares para garantir que as alterações propostas correspondam exatamente àquelas computadas de forma independente pelo nó. Isso significa que os nós não precisam confiar que os remetentes do bloco são honestos. Isso não é possível se houver dados ausentes.
+
+A **disponibilidade de dados** refere-se à confiança que um usuário pode ter de que os dados necessários para verificar um bloco estão realmente disponíveis para todos os participantes da rede. Para nós completos na camada 1 (l1) do [Ethereum](/), isso é relativamente simples; o nó completo baixa uma cópia de todos os dados em cada bloco - os dados _têm_ que estar disponíveis para que o download seja possível. Um bloco com dados ausentes seria descartado em vez de ser adicionado à blockchain. Isso é "disponibilidade de dados onchain" e é uma característica de blockchains monolíticas. Nós completos não podem ser enganados para aceitar transações inválidas porque eles baixam e executam cada transação por si mesmos. No entanto, para blockchains modulares, rollups de camada 2 (l2) e clientes leves, o cenário de disponibilidade de dados é mais complexo, exigindo alguns procedimentos de verificação mais sofisticados.
+
+## Pré-requisitos {#prerequisites}
+
+Você deve ter um bom entendimento dos [fundamentos de blockchain](/developers/docs/intro-to-ethereum/), especialmente dos [mecanismos de consenso](/developers/docs/consensus-mechanisms/). Esta página também pressupõe que o leitor esteja familiarizado com [blocos](/developers/docs/blocks/), [transações](/developers/docs/transactions/), [nós](/developers/docs/nodes-and-clients/), [soluções de escalabilidade](/developers/docs/scaling/) e outros tópicos relevantes.
+
+## O problema da disponibilidade de dados {#the-data-availability-problem}
+
+O problema da disponibilidade de dados é a necessidade de provar a toda a rede que a forma resumida de alguns dados de transação que estão sendo adicionados à blockchain realmente representa um conjunto de transações válidas, mas fazendo isso sem exigir que todos os nós baixem todos os dados. Os dados completos da transação são necessários para verificar blocos de forma independente, mas exigir que todos os nós baixem todos os dados da transação é uma barreira para a escalabilidade. As soluções para o problema da disponibilidade de dados visam fornecer garantias suficientes de que os dados completos da transação foram disponibilizados para verificação aos participantes da rede que não baixam e armazenam os dados por si mesmos.
+
+[Nós leves](/developers/docs/nodes-and-clients/light-clients) e [rollups de camada 2 (l2)](/developers/docs/scaling) são exemplos importantes de participantes da rede que exigem fortes garantias de disponibilidade de dados, mas não podem baixar e processar dados de transação por si mesmos. Evitar o download de dados de transação é o que torna os nós leves realmente leves e permite que os rollups sejam soluções de escalabilidade eficazes.
+
+A disponibilidade de dados também é uma preocupação crítica para futuros clientes Ethereum ["sem estado" (stateless)](/roadmap/statelessness) que não precisam baixar e armazenar dados de estado para verificar blocos. Os clientes sem estado ainda precisam ter certeza de que os dados estão disponíveis _em algum lugar_ e que foram processados corretamente.
+
+## Soluções de disponibilidade de dados {#data-availability-solutions}
+
+### Amostragem de disponibilidade de dados (DAS) {#data-availability-sampling}
+
+A Amostragem de Disponibilidade de Dados (DAS) é uma maneira de a rede verificar se os dados estão disponíveis sem sobrecarregar muito nenhum nó individual. Cada nó (incluindo nós que não fazem staking) baixa um pequeno subconjunto selecionado aleatoriamente do total de dados. O download bem-sucedido das amostras confirma com alta confiança que todos os dados estão disponíveis. Isso depende da codificação de apagamento de dados, que expande um determinado conjunto de dados com informações redundantes (a maneira como isso é feito é ajustando uma função conhecida como _polinômio_ sobre os dados e avaliando esse polinômio em pontos adicionais). Isso permite que os dados originais sejam recuperados a partir dos dados redundantes quando necessário. Uma consequência dessa criação de dados é que, se _qualquer_ parte dos dados originais estiver indisponível, _metade_ dos dados expandidos estará ausente! A quantidade de amostras de dados baixadas por cada nó pode ser ajustada para que seja _extremamente_ provável que pelo menos um dos fragmentos de dados amostrados por cada cliente esteja ausente _se_ menos da metade dos dados estiver realmente disponível.
+
+O DAS será usado para garantir que os operadores de rollup disponibilizem seus dados de transação após a implementação do [danksharding completo](/roadmap/danksharding/#what-is-danksharding). Os nós do Ethereum farão uma amostragem aleatória dos dados de transação fornecidos em blobs usando o esquema de redundância explicado acima para garantir que todos os dados existam. A mesma técnica também poderia ser empregada para garantir que os produtores de blocos estejam disponibilizando todos os seus dados para proteger clientes leves. Da mesma forma, sob a [separação propositor-construtor (PBS)](/roadmap/pbs), apenas o construtor de blocos seria obrigado a processar um bloco inteiro - outros validadores verificariam usando a amostragem de disponibilidade de dados.
+
+### Comitês de disponibilidade de dados {#data-availability-committees}
+
+Os Comitês de Disponibilidade de Dados (DACs) são partes confiáveis que fornecem ou atestam a disponibilidade de dados. Os DACs podem ser usados em vez de, [ou em combinação com](https://hackmd.io/@vbuterin/sharding_proposal#Why-not-use-just-committees-and-not-DAS) o DAS. As garantias de segurança que vêm com os comitês dependem da configuração específica. O Ethereum usa subconjuntos de validadores amostrados aleatoriamente para atestar a disponibilidade de dados para nós leves, por exemplo.
+
+Os DACs também são usados por alguns validiums. O DAC é um conjunto confiável de nós que armazena cópias de dados offline. O DAC é obrigado a disponibilizar os dados em caso de disputa. Os membros do DAC também publicam atestados onchain para provar que os referidos dados estão de fato disponíveis. Alguns validiums substituem os DACs por um sistema de validador de Prova de Participação (PoS). Aqui, qualquer pessoa pode se tornar um validador e armazenar dados offchain. No entanto, eles devem fornecer um "título" (bond), que é depositado em um contrato inteligente. No caso de comportamento malicioso, como o validador retendo dados, o título pode sofrer penalização (slashing). Os comitês de disponibilidade de dados de Prova de Participação são consideravelmente mais seguros do que os DACs regulares porque incentivam diretamente o comportamento honesto.
+
+## Disponibilidade de dados e nós leves {#data-availability-and-light-nodes}
+
+[Nós leves](/developers/docs/nodes-and-clients/light-clients) precisam validar a exatidão dos cabeçalhos do bloco que recebem sem baixar os dados do bloco. O custo dessa leveza é a incapacidade de verificar de forma independente os cabeçalhos do bloco reexecutando transações localmente da maneira que os nós completos fazem.
+
+Os nós leves do Ethereum confiam em conjuntos aleatórios de 512 validadores que foram designados a um _comitê de sincronização_. O comitê de sincronização atua como um DAC que sinaliza aos clientes leves que os dados no cabeçalho estão corretos usando uma assinatura criptográfica. Todos os dias, o comitê de sincronização é atualizado. Cada cabeçalho do bloco alerta os nós leves sobre quais validadores esperar que assinem o _próximo_ bloco, para que não possam ser enganados a confiar em um grupo malicioso fingindo ser o verdadeiro comitê de sincronização.
+
+No entanto, o que acontece se um invasor de alguma forma _conseguir_ passar um cabeçalho de bloco malicioso para clientes leves e convencê-los de que foi assinado por um comitê de sincronização honesto? Nesse caso, o invasor poderia incluir transações inválidas e o cliente leve as aceitaria cegamente, pois eles não verificam de forma independente todas as mudanças de estado resumidas no cabeçalho do bloco. Para se proteger contra isso, o cliente leve poderia usar provas de fraude.
+
+A maneira como essas provas de fraude funcionam é que um nó completo, vendo uma transição de estado inválida sendo propagada pela rede, poderia gerar rapidamente um pequeno pedaço de dados demonstrando que uma transição de estado proposta não poderia surgir de um determinado conjunto de transações e transmitir esses dados aos pares. Nós leves poderiam pegar essas provas de fraude e usá-las para descartar cabeçalhos de blocos ruins, garantindo que permaneçam na mesma cadeia honesta que os nós completos.
+
+Isso depende de os nós completos terem acesso aos dados completos da transação. Um invasor que transmite um cabeçalho de bloco ruim e também falha em disponibilizar os dados da transação seria capaz de impedir que os nós completos gerassem provas de fraude. Os nós completos podem ser capazes de sinalizar um aviso sobre um bloco ruim, mas não poderiam apoiar seu aviso com provas, porque os dados não foram disponibilizados para gerar a prova!
+
+A solução para esse problema de disponibilidade de dados é o DAS. Nós leves baixam pedaços aleatórios muito pequenos dos dados de estado completos e usam as amostras para verificar se o conjunto de dados completo está disponível. A probabilidade real de assumir incorretamente a disponibilidade total de dados após baixar N pedaços aleatórios pode ser calculada ([para 100 pedaços, a chance é de 10^-30](https://dankradfeist.de/ethereum/2019/12/20/data-availability-checks.html), ou seja, incrivelmente improvável).
+
+Mesmo neste cenário, ataques que retêm apenas alguns bytes poderiam passar despercebidos por clientes que fazem solicitações de dados aleatórias. A codificação de apagamento corrige isso reconstruindo pequenos pedaços de dados ausentes que podem ser usados para verificar as mudanças de estado propostas. Uma prova de fraude poderia então ser construída usando os dados reconstruídos, impedindo que os nós leves aceitem cabeçalhos ruins.
+
+**Nota:** O DAS e as provas de fraude ainda não foram implementados para clientes leves do Ethereum de Prova de Participação, mas estão no roteiro, muito provavelmente assumindo a forma de provas baseadas em ZK-SNARK. Os clientes leves de hoje dependem de uma forma de DAC: eles verificam as identidades do comitê de sincronização e, em seguida, confiam nos cabeçalhos de bloco assinados que recebem.
+
+## Disponibilidade de dados e rollups de camada 2 {#data-availability-and-layer-2-rollups}
+
+[Soluções de escalabilidade de camada 2 (l2)](/layer-2/), como [rollups](/glossary/#rollups), reduzem os custos de transação e aumentam a vazão do Ethereum processando transações offchain. As transações de rollup são compactadas e postadas no Ethereum em lotes. Os lotes representam milhares de transações offchain individuais em uma única transação no Ethereum. Isso reduz o congestionamento na camada base e reduz as taxas para os usuários.
+
+No entanto, só é possível confiar nas transações de 'resumo' postadas no Ethereum se a mudança de estado proposta puder ser verificada de forma independente e confirmada como o resultado da aplicação de todas as transações offchain individuais. Se os operadores de rollup não disponibilizarem os dados da transação para essa verificação, eles poderão enviar dados incorretos para o Ethereum.
+
+[Rollups otimistas](/developers/docs/scaling/optimistic-rollups/) postam dados de transação compactados no Ethereum e esperam por um certo período de tempo (normalmente 7 dias) para permitir que verificadores independentes verifiquem os dados. Se alguém identificar um problema, poderá gerar uma prova de fraude e usá-la para contestar o rollup. Isso faria com que a cadeia retrocedesse e omitisse o bloco inválido. Isso só é possível se os dados estiverem disponíveis. Atualmente, existem duas maneiras pelas quais os rollups otimistas postam dados de transação na camada 1 (l1). Alguns rollups disponibilizam dados permanentemente como `CALLDATA` que vivem permanentemente onchain. Com a implementação da EIP-4844, alguns rollups postam seus dados de transação em um armazenamento de blob mais barato. Este não é um armazenamento permanente. Verificadores independentes precisam consultar os blobs e levantar suas contestações dentro de ~18 dias antes que os dados sejam excluídos da camada 1 (l1) do Ethereum. A disponibilidade de dados é garantida pelo protocolo Ethereum apenas para essa curta janela fixa. Depois disso, torna-se responsabilidade de outras entidades no ecossistema Ethereum. Qualquer nó pode verificar a disponibilidade de dados usando o DAS, ou seja, baixando amostras pequenas e aleatórias dos dados do blob.
+
+[Rollups de conhecimento zero (ZK)](/developers/docs/scaling/zk-rollups) não precisam postar dados de transação, pois as [provas de validade de conhecimento zero](/glossary/#zk-proof) garantem a exatidão das transições de estado. No entanto, a disponibilidade de dados ainda é um problema porque não podemos garantir a funcionalidade do ZK-rollup (ou interagir com ele) sem acesso aos seus dados de estado. Por exemplo, os usuários não podem saber seus saldos se um operador retiver detalhes sobre o estado do rollup. Além disso, eles não podem realizar atualizações de estado usando informações contidas em um bloco recém-adicionado.
+
+## Disponibilidade de dados vs. recuperabilidade de dados {#data-availability-vs-data-retrievability}
+
+A disponibilidade de dados é diferente da recuperabilidade de dados. A disponibilidade de dados é a garantia de que os nós completos conseguiram acessar e verificar o conjunto completo de transações associadas a um bloco específico. Isso não significa necessariamente que os dados estarão acessíveis para sempre.
+
+A recuperabilidade de dados é a capacidade dos nós de recuperar _informações históricas_ da blockchain. Esses dados históricos não são necessários para verificar novos blocos, eles são necessários apenas para a sincronização de nós completos a partir do bloco gênesis ou para atender a solicitações históricas específicas.
+
+O protocolo principal do Ethereum está preocupado principalmente com a disponibilidade de dados, não com a recuperabilidade de dados. A recuperabilidade de dados pode ser fornecida por uma pequena população de nós de arquivo executados por terceiros, ou pode ser distribuída pela rede usando armazenamento de arquivos descentralizado, como a [Portal Network](https://www.ethportal.net/).
+
+## Leitura adicional {#further-reading}
+
+- [O que é Disponibilidade de Dados?](https://medium.com/blockchain-capital-blog/wtf-is-data-availability-80c2c95ded0f)
+- [O que é Disponibilidade de Dados?](https://coinmarketcap.com/academy/article/what-is-data-availability)
+- [Uma introdução às verificações de disponibilidade de dados](https://dankradfeist.de/ethereum/2019/12/20/data-availability-checks.html)
+- [Uma explicação da proposta de sharding + DAS](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling)
+- [Uma nota sobre disponibilidade de dados e codificação de apagamento](https://github.com/ethereum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
+- [Comitês de disponibilidade de dados.](https://medium.com/starkware/data-availability-e5564c416424)
+- [Comitês de disponibilidade de dados de Prova de Participação.](https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf)
+- [Soluções para o problema de recuperabilidade de dados](https://notes.ethereum.org/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
+- [Disponibilidade de Dados Ou: Como os Rollups Aprenderam a Parar de se Preocupar e Amar o Ethereum](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-ethereum)
+- [EIP-7623: Aumentando o Custo dos Dados de Chamada](https://web.archive.org/web/20250515194659/https://research.2077.xyz/eip-7623-increase-calldata-cost)

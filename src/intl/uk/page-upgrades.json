@@ -1,0 +1,23 @@
+{
+  "page-upgrades-merge-infographic-el": "Стан Етеріуму: транзакції, застосунки, контракти, баланси",
+  "page-upgrades-merge-infographic-alt-text": "Інфографіка, що ілюструє, як сигнальний ланцюг зливається з рівнем виконання Етеріуму під час переходу від доказу виконання роботи (PoW) до доказу частки (PoS).",
+  "page-upgrades-beacon-date": "Запущено!",
+  "page-upgrades-merge-date": "Вересень 2022",
+  "page-upgrades-shards-date": "~2023",
+  "page-upgrades-pbs": "Не найближчим часом — очікується у 2024/25",
+  "page-upgrades-post-merge-banner-tutorial-ood": "Цей посібник застарів після Злиття і може не працювати. Будь ласка, створіть PR, якщо ви хочете зробити свій внесок.",
+  "page-upgrades-upgrades-guide": "Посібник з оновлень Етеріуму",
+  "page-upgrades-upgrades-docking": "Злиття",
+  "page-upgrades-shard-title": "Шардинг",
+  "page-upgrades-upgrades-beacon-chain": "Сигнальний ланцюг",
+  "consensus-beaconscan-title": "beaconscan",
+  "consensus-beaconscan-in-title": "beaconcha.in",
+  "consensus-beaconcha-in-desc": "Оглядач сигнального ланцюга з відкритим вихідним кодом",
+  "consensus-beaconscan-desc": "Оглядач сигнального ланцюга — Etherscan для рівня консенсусу",
+  "consensus-become-staker": "Стати стейкером",
+  "consensus-become-staker-desc": "Стейкінг запущено! Якщо ви хочете стейкати свої ETH, щоб допомогти захистити мережу, переконайтеся, що ви усвідомлюєте ризики.",
+  "consensus-explore": "Дослідити дані",
+  "consensus-run-beacon-chain": "Запустити клієнт консенсусу",
+  "consensus-run-beacon-chain-desc": "Етеріум потребує якомога більшої кількості запущених клієнтів. Допоможіть із цим суспільним благом Етеріуму!",
+  "read-more": "Читати далі"
+}

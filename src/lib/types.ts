@@ -1,0 +1,1599 @@
+import type { Options } from "mdast-util-toc"
+import type { NextPage } from "next"
+import type { AppProps } from "next/app"
+import type { StaticImageData } from "next/image"
+import type { ReactElement, ReactNode } from "react"
+import type { ColumnDef } from "@tanstack/react-table"
+
+import type {
+  BlogFrontmatter,
+  DocsFrontmatter,
+  StaticFrontmatter,
+  TopicFrontmatter,
+  TutorialFrontmatter,
+  VideoFrontmatter,
+} from "@/lib/interfaces"
+
+import type { BreadcrumbsProps } from "@/components/Breadcrumbs"
+import type { CallToActionProps } from "@/components/Hero/CallToAction"
+import type { SimulatorNav } from "@/components/Simulator/interfaces"
+
+import chains from "@/data/chains"
+import { Rollup, Rollups } from "@/data/networks/networks"
+import allQuizData from "@/data/quizzes"
+import allQuestionData from "@/data/quizzes/questionBank"
+
+import { screens } from "./utils/screen"
+import { WALLETS_FILTERS_DEFAULT } from "./constants"
+
+import { layoutMapping } from "@/layouts"
+
+// Credit: https://stackoverflow.com/a/52331580
+export type Unpacked<T> = T extends (infer U)[] ? U : T
+
+export type ChildOnlyProp = { children?: ReactNode }
+
+export type ClassNameProp = { className?: string }
+
+export type NextPageWithLayout<P = Record<string, unknown>, IP = P> = NextPage<
+  P,
+  IP
+> & {
+  getLayout?: (page: ReactElement<P>) => ReactNode
+}
+
+export type AppPropsWithLayout = AppProps & {
+  Component: NextPageWithLayout
+}
+
+export type Root = {
+  children: ReactNode
+  lastDeployLocaleTimestamp: string
+}
+
+export type BasePageProps = Pick<Root, "lastDeployLocaleTimestamp">
+
+export type Params = {
+  locale: string
+}
+
+export type Frontmatter = TopicFrontmatter &
+  StaticFrontmatter &
+  DocsFrontmatter &
+  TutorialFrontmatter &
+  BlogFrontmatter &
+  VideoFrontmatter
+
+export type LayoutMappingType = typeof layoutMapping
+export type Layout = keyof LayoutMappingType | "docs" | "tutorial"
+
+export type Lang =
+  | "en"
+  | "ar"
+  | "bn"
+  | "cs"
+  | "de"
+  | "es"
+  | "fr"
+  | "hi"
+  | "id"
+  | "it"
+  | "ja"
+  | "ko"
+  | "mr"
+  | "pl"
+  | "pt-br"
+  | "ru"
+  | "sw"
+  | "ta"
+  | "te"
+  | "tr"
+  | "uk"
+  | "ur"
+  | "vi"
+  | "zh-tw"
+  | "zh"
+
+// Languages supported by wallet apps (superset of Lang, includes languages
+// that wallets support even if ethereum.org doesn't have translations for them)
+export type WalletLanguage =
+  | "am"
+  | "ar"
+  | "bg"
+  | "bn"
+  | "bs"
+  | "ca"
+  | "cs"
+  | "da"
+  | "de"
+  | "el"
+  | "en"
+  | "es"
+  | "fa"
+  | "fi"
+  | "fr"
+  | "gu"
+  | "ha"
+  | "he"
+  | "hi"
+  | "hr"
+  | "hu"
+  | "id"
+  | "ig"
+  | "it"
+  | "ja"
+  | "km"
+  | "kn"
+  | "ko"
+  | "lt"
+  | "ml"
+  | "mr"
+  | "ms"
+  | "nb"
+  | "nl"
+  | "pl"
+  | "pt"
+  | "pt-br"
+  | "ro"
+  | "ru"
+  | "sk"
+  | "sl"
+  | "sr"
+  | "sw"
+  | "ta"
+  | "te"
+  | "th"
+  | "tr"
+  | "uk"
+  | "ur"
+  | "vi"
+  | "yo"
+  | "zh"
+  | "zh-tw"
+
+export type Direction = "rtl" | "ltr" | "auto"
+
+export type I18nLocale = {
+  code: Lang
+  crowdinCode: string
+  name: string
+  localName: string
+  langDir: Direction
+  /**
+   * @property forceLocalName - Optional flag to indicate that the local name should be used instead of the fallback from `Intl.DisplayName`.
+   *   Fallback used when locale language name matches English name.
+   *   Set to `true` in cases where the result from `Intl.DisplayName` not desired.
+   *   When enabled, ensure that the `"language-{code}"` string is available in both `en/common.json` and `{code}/common.json` files.
+   * @example Tagalog (tl) results in "Filipino", which is not desired
+   */
+  forceLocalName?: boolean
+}
+
+export type Languages = {
+  [lang in Lang]: I18nLocale
+}
+
+export type TranslationKey = string
+
+export type LoadingState<T> =
+  | { loading: true }
+  | { loading: false; data: T }
+  | { loading: false; error: unknown }
+
+// Quiz data types
+
+export type ChoiceLetter = "a" | "b" | "c" | "d"
+
+type ChoiceNumber = 1 | 2 | 3 | 4
+type TotalAnswers = 2 | 3 | 4
+
+type QuestionTemplate = {
+  totalAnswers: TotalAnswers
+  correctAnswer: ChoiceNumber
+  explanationOverrides?: (ChoiceNumber | null)[] // Tuple<ChoiceNumber, QuestionTemplate["totalAnswers"]>
+}
+
+export type QuestionBankConfig = Record<string, QuestionTemplate[]>
+
+export type Answer = {
+  id: string
+  label: TranslationKey
+  explanation: TranslationKey
+  moreInfoLabel?: string
+  moreInfoUrl?: string
+}
+
+export type RawQuestion = {
+  prompt: TranslationKey
+  answers: Answer[]
+  correctAnswerId: string
+}
+
+export type QuestionBank = Record<string, RawQuestion>
+export type QuestionKey = keyof typeof allQuestionData
+export type AnswerKey =
+  (typeof allQuestionData)[QuestionKey]["answers"][number]["id"]
+
+export type Question = RawQuestion & {
+  id: QuestionKey
+}
+
+export type Quiz = {
+  title: TranslationKey
+  questions: Question[]
+}
+
+export type AnswerChoice = {
+  answerId: AnswerKey
+  isCorrect: boolean
+}
+
+export type RawQuiz = {
+  title: TranslationKey
+  questions: QuestionKey[]
+}
+
+export type QuizStatus = "neutral" | "success" | "error"
+
+export type QuizLevel = "beginner" | "intermediate" | "advanced"
+
+export type QuizzesSection = {
+  id: QuizKey
+  level: QuizLevel
+  next?: QuizKey
+}
+
+/** A hub section. Adding one here is enough: the hub and getNextQuiz both derive from it. */
+export type QuizzesHubSection = {
+  id: string
+  titleKey: string
+  descriptionKey: string
+  quizzes: QuizzesSection[]
+}
+
+export type RawQuizzes = Record<string, RawQuiz>
+export type QuizKey = keyof typeof allQuizData
+
+type HasScoredPerfect = boolean
+type QuestionsCorrect = number
+
+export type CompletedQuizzes = Record<
+  QuizKey,
+  [HasScoredPerfect, QuestionsCorrect]
+>
+
+export type UserStats = {
+  score: number
+  average: number[]
+  completed: CompletedQuizzes
+}
+
+export type QuizShareStats = { score: number; total: number }
+
+/**
+ * Staking
+ */
+export type StakingPage = "solo" | "saas" | "pools"
+
+/**
+ * File contributors
+ */
+export type FileContributorsState = LoadingState<Author[]>
+
+export type LastUpdatedState = LoadingState<string>
+
+// Crowdin contributors
+export type CrowdinFileId = {
+  id: number
+  path: string
+}
+
+export type CrowdinContributor = {
+  id: number
+  username: string
+  avatarUrl: string
+  totalCosts: number
+}
+
+type FileContributorData = {
+  fileId: string
+  contributors: CrowdinContributor[]
+}
+
+export type LocaleContributions = {
+  lang: string
+  data: FileContributorData[]
+}
+
+export type LocaleDisplayInfo = {
+  localeOption: Lang
+  sourceName: string
+  targetName: string
+  englishName: string
+  isBrowserDefault?: boolean
+}
+
+/**
+ * Translation cost report
+ */
+type DateRange = { from: string; to: string }
+type Total = { total: number }
+type Cost = {
+  tmMatch: { "100": number; perfect: number }
+  mtMatch: { "100": string }
+  suggestionMatch: { "100": number }
+  total: number
+  default: { noMatch: number }
+}
+
+type CrowdinUser = {
+  id: number
+  username: string
+  fullName: string
+  avatarUrl: string
+  roleTitle: string
+}
+
+type CostItem = {
+  approvalCosts: Total
+  preTranslated: Cost
+  savings: Omit<Cost, "default">
+  totalCosts: number
+  translationCosts: Cost
+}
+
+type ReportLanguageItem = {
+  id: string
+  name: string
+  roleTitle: string
+}
+
+type ReportLanguage = CostItem & {
+  approvalRate: number
+  approved: Total
+  language: ReportLanguageItem
+  targetTranslated: Cost
+  translated: Cost
+  translatedByMt: Cost
+  translationRates: Omit<Cost, "total">
+}
+
+type DataItem = CostItem & {
+  user: CrowdinUser
+  languages: ReportLanguage[]
+}
+
+export type TranslationCostReport = CostItem & {
+  name: string
+  url: string
+  unit: string
+  dateRange: DateRange
+  currency: string
+  data: DataItem[]
+}
+
+export type CostLeaderboardData = Pick<
+  CrowdinUser,
+  "username" | "fullName" | "avatarUrl"
+> &
+  Pick<CostItem, "totalCosts"> & {
+    langs: string[]
+  }
+
+// GitHub contributors
+
+export type Commit = {
+  commit: {
+    author: {
+      name: string
+      email: string
+      date: string
+    }
+    message: string
+  }
+  author: {
+    avatar_url: string
+    login: string
+    html_url: string
+  }
+}
+
+export type Author = {
+  name: string
+  email: string
+  avatarUrl: string
+  user: {
+    login: string
+    url: string
+  }
+}
+
+export type FileContributor = {
+  login: string
+  avatar_url: string
+  html_url: string
+  date: string
+}
+
+/**
+ * GitHub contributors data stored in the data-layer.
+ * Keyed by file path, contains list of contributors for each file.
+ */
+export type GitHubContributorsData = {
+  /** Content files: slug (e.g., "eth", "wallets/find-wallet") → contributors */
+  content: Record<string, FileContributor[]>
+  /** App pages: pagePath (e.g., "staking", "developers") → contributors */
+  appPages: Record<string, FileContributor[]>
+  /** ISO timestamp when data was generated */
+  generatedAt: string
+}
+
+/**
+ * Table of contents
+ */
+export type SourceHeadingItem = { depth: number; id: string; label: string }
+
+export type ToCNodeEntry = {
+  url?: string
+  title?: string
+}
+
+export type TocNodeType =
+  | ToCNodeEntry
+  | {
+      items: TocNodeType[]
+    }
+
+export type ToCItem = {
+  title: string
+  url: string
+  items?: ToCItem[]
+}
+
+export type IRemarkTocOptions = {
+  maxDepth?: Options["maxDepth"]
+  callback: (toc: TocNodeType) => void
+}
+
+type HeroButtonProps = Omit<CallToActionProps, "index">
+
+/**
+ * General props to be picked or omitted for any of the hero components
+ *
+ * The generic prop type `HeroImg` is assigned to the `heroImg` prop
+ * to be able to declare either defining the prop as a static image object
+ * or a string. (defaults to `StaticImageData`)
+ */
+export type CommonHeroProps<
+  HeroImg extends StaticImageData | string = StaticImageData,
+> = {
+  /**
+   * Decorative image displayed as the full background or an aside to
+   * the text content
+   *
+   * Note: It is either required as a static image data object or the
+   * relative path of the image file, depending on the setup of the image component
+   * for the given hero component.
+   */
+  heroImg: HeroImg
+  /**
+   * File path for the image to show on prerender.
+   */
+  blurDataURL: string
+  /**
+   * Object of props to render the `Breadcrumbs` component.
+   */
+  breadcrumbs: BreadcrumbsProps
+  /**
+   * An array of content to render call-to-action buttons that leads the user to a section or sections of the
+   * given page from the hero.
+   *
+   * The hero can render no buttons or up to and no more than two.
+   * Can accept either button prop objects or React elements directly.
+   */
+  buttons?: [
+    HeroButtonProps | ReactElement<unknown>,
+    (HeroButtonProps | ReactElement<unknown>)?,
+  ]
+  /**
+   * The primary title of the page
+   */
+  title?: ReactNode
+  /**
+   * A tag name for the page
+   */
+  header: string
+  /**
+   * Preface text about the content in the given page
+   */
+  description?: ReactNode
+  /**
+   * Optional CSS class name(s) to apply to the hero component root for styling and layout customization.
+   */
+  className?: string
+}
+
+// Staking stats data fetching
+export type DuneResultResponse = {
+  result: {
+    rows?: Record<string, number | string | null>[]
+  }
+}
+
+export type StakingStatsData = {
+  totalEthStaked: number
+  stakedPercentage: number
+  apr: number
+}
+
+export type ValueOrError<T> =
+  | { value: T; timestamp?: number }
+  | { error: string }
+
+export type EtherscanNodeResponse = {
+  result: {
+    UTCDate: number
+    TotalNodeCount: number
+  }[]
+}
+
+type EtherscanTxCountItem = {
+  unixTimeStamp: string
+  transactionCount: number
+}
+
+export type EtherscanTxCountResponse = {
+  status: string
+  message: string
+  result: EtherscanTxCountItem[]
+}
+
+export type DefiLlamaTVLResponse = {
+  date: number
+  tvl: number
+}[]
+
+export type MetricReturnData = ValueOrError<number>
+
+export type EthPriceData =
+  | { value: number; timestamp?: number; percentChange24h?: number }
+  | { error: string }
+
+export type GrowThePieMetricKey = "txCount" | "txCostsMedianUsd"
+
+/**
+ * Full video data parsed from a video's index.md file.
+ * Includes frontmatter metadata and the markdown body (transcript).
+ */
+export type VideoData = {
+  slug: string
+  content: string
+  frontmatter: VideoFrontmatter
+}
+
+export type VideoFormat =
+  | "presentation"
+  | "explainer"
+  | "interview"
+  | "tutorial"
+  | "panel"
+/**
+ * Flat, serializable video data for client components (e.g. VideoGalleryFilter).
+ * thumbnailUrl is pre-resolved server-side from customThumbnailUrl or youtubeId.
+ */
+export type VideoCardData = {
+  slug: string
+  title: string
+  description: string
+  uploadDate: string
+  duration: string
+  topic: string[]
+  thumbnailUrl: string
+}
+
+/**
+ * Blog post data for listing pages and carousels.
+ * Parsed from frontmatter of blog post markdown files.
+ */
+export type BlogPost = {
+  href: string
+  title: string
+  description: string
+  author: string
+  team?: string
+  tags?: string[]
+  timeToRead: number
+  published: string
+  lang: string
+  image?: string
+}
+
+/** Card preview for a long-form story, sourced from its markdown frontmatter. */
+export type StoryPreview = {
+  slug: string
+  title: string
+  description: string
+  image: string
+  published: string
+}
+
+export type GrowThePieData = Record<GrowThePieMetricKey, MetricReturnData> & {
+  dailyTxCosts: Record<string, number | undefined>
+  activeAddresses: Record<string, number | undefined>
+}
+
+export type BlockspaceData = {
+  nft: number
+  defi: number
+  social: number
+  token_transfers: number
+  unlabeled: number
+}
+
+export type GrowThePieMasterData = {
+  launchDates: Record<string, string>
+}
+
+export type GithubRepoData = {
+  starCount: number
+  languages: string[]
+}
+
+export type L2beatData = {
+  projects: Record<
+    string,
+    {
+      stage: string
+      tvl: { total: number }
+      tvs: { breakdown: { total: number } }
+      risks: Array<{ name: string; sentiment: string }>
+    }
+  >
+  chart?: {
+    types: string[]
+    data: number[][]
+  }
+}
+
+export type EnterpriseActivityMetric =
+  | "txCount"
+  | "txCostsMedianUsd"
+  | "stablecoinMarketCap"
+  | "ethPrice" // Use with `totalEthStaked` to convert ETH to USD
+  | "totalEthStaked"
+
+export type AllEnterpriseActivityData = Record<
+  EnterpriseActivityMetric,
+  MetricReturnData
+>
+
+export type SimulatorNavProps = {
+  nav: SimulatorNav
+}
+
+export type PhoneScreenProps = SimulatorNavProps & {
+  ctaLabel: string
+}
+
+// Events (Geode Labs Supabase API)
+export interface GeodeApiEventItem {
+  title: string
+  logoImage: string
+  bannerImage: string
+  startTime: string
+  endTime: string | null
+  location: string
+  link: string
+  tags: string[]
+  highlight?: boolean
+  discord?: string | null
+  telegram?: string | null
+  twitter?: string | null
+  farcaster?: string | null
+}
+
+export type EventType =
+  | "conference"
+  | "hackathon"
+  | "meetup"
+  | "popup"
+  | "group"
+  | "other"
+
+export interface EventItem extends GeodeApiEventItem {
+  id: string // slugified title
+  eventTypes: EventType[]
+  eventTypesLabels?: string[]
+  isOnline: boolean
+  continent: Continent | null
+}
+
+export type Continent =
+  | "africa"
+  | "asia"
+  | "europe"
+  | "north-america"
+  | "south-america"
+  | "oceania"
+  | "middle-east"
+
+// Chains
+export type ChainIdNetworkResponse = {
+  name: string
+  chain: string
+  title?: string
+  icon?: string
+  rpc: string[]
+  features?: { name: string }[]
+  faucets?: string[]
+  nativeCurrency: {
+    name: string
+    symbol: string
+    decimals: number
+  }
+  infoURL: string
+  shortName: string
+  chainId: number
+  networkId: number
+  redFlags?: string[]
+  slip44?: number
+  ens?: { registry: string }
+  explorers?: {
+    name: string
+    url: string
+    icon?: string
+    standard: string
+  }[]
+  status?: "deprecated" | "active" | "incubating"
+  parent?: {
+    type: "L2" | "shard"
+    chain: string
+    bridges?: { url: string }[]
+  }
+}
+
+export type Chain = Pick<
+  ChainIdNetworkResponse,
+  "name" | "infoURL" | "chainId" | "nativeCurrency" | "chain"
+>
+
+export type ChainName = (typeof chains)[number]["name"]
+
+export type NonEVMChainName = "Starknet"
+
+export type AppOnlyChainName = "Immutable zkEVM" | "Ronin"
+
+export type ExtendedRollup = Rollup & {
+  networkMaturity: MaturityLevel
+  txCosts: number | undefined
+  tvl: number
+  walletsSupported: string[]
+  activeAddresses: number | undefined
+  launchDate: string | null
+  walletsSupportedCount: string
+  blockspaceData: {
+    nft: number
+    defi: number
+    social: number
+    token_transfers: number
+    unlabeled: number
+  } | null
+}
+
+// Wallets
+/** Fee category; maps to the `page-find-wallet-fee-label-*` intl strings */
+export type WalletFeeType =
+  | "swap"
+  | "swap-bridge"
+  | "buy"
+  | "buy-sell"
+  | "staking"
+  | "shield-unshield"
+  | "device"
+  /** One-off: renders the whole "Free tier, paid plans from {usd}/month" template */
+  | "free-tier-plans"
+
+/** Non-numeric fee values; maps to the `page-find-wallet-fee-value-*` intl strings */
+export type WalletFeeText = "variable" | "undisclosed" | "set-by-provider"
+
+/** Wraps the formatted value; maps to the `page-find-wallet-fee-qualifier-*` intl strings */
+export type WalletFeeQualifier =
+  | "of-rewards"
+  | "per-card"
+  | "lower-with-premium"
+  | "tpt-holder-discounts"
+  /** Requires `qualifierPercent` */
+  | "stablecoins"
+  /** Requires `qualifierPercent` */
+  | "stablecoins-lower-l2"
+  /** Requires `qualifierUsd` */
+  | "free-under-fox-discounts"
+
+/** Exact amount, or [min, max] range */
+export type WalletFeeAmount = number | [min: number, max: number]
+
+export type WalletFee = (
+  | {
+      /** Human-readable percent: 0.875 renders as "0.875%" */
+      percent: WalletFeeAmount
+      /** Renders as "from {value}" */
+      from?: boolean
+      usd?: never
+      text?: never
+    }
+  | {
+      usd: WalletFeeAmount
+      /** Renders as "from {value}" */
+      from?: boolean
+      percent?: never
+      text?: never
+    }
+  | { text: WalletFeeText; percent?: never; usd?: never; from?: never }
+) & {
+  type: WalletFeeType
+  qualifier?: WalletFeeQualifier
+  /** Human-readable percent interpolated into the qualifier string */
+  qualifierPercent?: number
+  /** USD amount interpolated into the qualifier string */
+  qualifierUsd?: number
+}
+
+export type WalletData = {
+  last_updated: string
+  name: string
+  /** Set only to keep a URL stable across a rename; defaults to slugified name. */
+  slug?: string
+  /** Optional forever — cards and search degrade gracefully without it. */
+  description?: string
+  image: StaticImageData
+  twBackgroundColor: string
+  twGradiantBrandColor: string
+  url: string
+  active_development_team: boolean
+  languages_supported: WalletLanguage[]
+  twitter: string
+  discord: string
+  reddit: string
+  telegram: string
+  ios: boolean
+  android: boolean
+  linux: boolean
+  windows: boolean
+  macOS: boolean
+  firefox: boolean
+  chromium: boolean
+  hardware: boolean
+  open_source: boolean
+  repo_url: string
+  non_custodial: boolean
+  security_audit: string[]
+  scam_protection: boolean
+  hardware_support: boolean
+  rpc_importing: boolean
+  nft_support: boolean
+  connect_to_dapps: boolean
+  staking: boolean
+  swaps: boolean
+  multichain?: boolean
+  layer_2: boolean
+  supported_chains: (ChainName | NonEVMChainName)[]
+  gas_fee_customization: boolean
+  ens_support: boolean
+  erc_20_support: boolean
+  buy_crypto: boolean
+  withdraw_crypto: boolean
+  multisig: boolean
+  social_recovery: boolean
+  eip_4337_support?: boolean
+  eip_7702_support?: boolean
+  onboard_documentation: string
+  documentation: string
+  mpc?: boolean
+  new_to_crypto?: boolean
+  privacy?: boolean
+  /**
+   * Fees shown on the wallet card, e.g. "Swap fee: 0.85%" or "Device: $149".
+   * Rendered by formatWalletFees; omitted when the wallet has no fee to surface.
+   */
+  fees?: WalletFee[]
+}
+
+export type Wallet = WalletData & {
+  supportedLanguages: string[]
+}
+
+export type WalletFilter = typeof WALLETS_FILTERS_DEFAULT
+
+export interface WalletFilterData {
+  title: TranslationKey
+  filterKey?: string
+  description: TranslationKey | ""
+}
+
+export type FilterInputState = boolean | Lang | string | string[] | null
+
+export type FilterOption = {
+  title: string
+  showFilterOption: boolean
+  items: Array<FilterItem>
+}
+
+type FilterItem = {
+  filterKey: string
+  filterLabel: string
+  description: string
+  inputState: FilterInputState
+  ignoreFilterReset?: boolean
+  input: FilterInput
+  options: Array<FilterOptionItem>
+  optionsLegend?: string // sr-only legend for the nested fieldset wrapping `options` (when present)
+}
+
+type FilterInput = (
+  filterIndex: number,
+  itemIndex: number,
+  state: FilterInputState,
+  updateFilterState: UpdateFilterState
+) => ReactElement<unknown>
+
+type FilterOptionItem = {
+  filterKey: string
+  filterLabel: string
+  description: string
+  ignoreFilterReset?: boolean
+  inputState: FilterInputState
+  input: FilterOptionInput
+}
+
+type FilterOptionInput = (
+  filterIndex: number,
+  itemIndex: number,
+  optionIndex: number,
+  state: FilterInputState,
+  updateFilterState: UpdateFilterState
+) => ReactElement<unknown>
+
+type UpdateFilterState = (
+  filterIndex: number,
+  itemIndex: number,
+  inputState: FilterInputState,
+  optionIndex?: number
+) => void
+
+export interface WalletPersonas {
+  title: string
+  description: string
+  presetFilters: {
+    android: boolean
+    ios: boolean
+    linux: boolean
+    windows: boolean
+    macOS: boolean
+    firefox: boolean
+    chromium: boolean
+    hardware: boolean
+    open_source: boolean
+    non_custodial: boolean
+    hardware_support: boolean
+    rpc_importing: boolean
+    nft_support: boolean
+    connect_to_dapps: boolean
+    staking: boolean
+    swaps: boolean
+    layer_2: boolean
+    gas_fee_customization: boolean
+    ens_support: boolean
+    erc_20_support: boolean
+    buy_crypto: boolean
+    withdraw_crypto: boolean
+    multisig: boolean
+    social_recovery: boolean
+    new_to_crypto?: boolean
+  }
+}
+
+export type TPresetFilters = WalletPersonas[]
+
+export type ProductTablePresetFilters = WalletPersonas[]
+
+export type ProductTableColumnDefs = ColumnDef<Wallet | Rollups>
+
+export type ProductTableRow = Wallet | Rollup
+
+export interface DropdownOption {
+  label: string
+  value: string
+  filterKey: string
+  category: string
+}
+
+export type WalletSupportedLanguageContextType = {
+  supportedLanguage: string
+  setSupportedLanguage: (language: string) => void
+}
+
+export type FeedbackWidgetContextType = {
+  showFeedbackWidget: boolean
+  setShowFeedbackWidget: (showFeedbackWidget: boolean) => void
+}
+
+// Historical upgrades
+export type NetworkUpgradeDetails = {
+  blockNumber?: number
+  epochNumber?: number
+  slotNumber?: number
+} & (
+  | {
+      isPending: true
+      dateTimeAsString?: string
+      ethPriceInUSD?: never
+      waybackLink?: never
+    }
+  | {
+      ethPriceInUSD: number
+      waybackLink: string
+      dateTimeAsString: string
+      isPending?: never
+    }
+)
+
+export type NetworkUpgradeData = Record<string, NetworkUpgradeDetails>
+
+// Footer
+export type FooterLink = {
+  href: string
+  text: TranslationKey
+  isPartiallyActive?: boolean
+}
+
+export type FooterLinkSection = {
+  title: TranslationKey
+  links: FooterLink[]
+}
+
+// GitHub API
+export type GHIssue = {
+  title: string
+  html_url: string
+  created_at: string
+  /**
+   * The issue author. GitHub's REST API returns `null` for issues authored by
+   * deleted ("ghost") accounts, so consumers must guard against it.
+   */
+  user: {
+    login: string
+    html_url: string
+    avatar_url: string
+  } | null
+  labels: GHLabel[]
+}
+
+export type GHLabel = {
+  id: number
+  name: string
+  color: string
+}
+
+/**
+ * RSS Feed handling
+ */
+export type RSSItem = {
+  pubDate: string
+  title: string
+  source: string
+  link: string
+  sourceFeedUrl: string
+  sourceUrl: string
+  imgSrc?: string
+  /** Plain-text excerpt extracted from the feed item, truncated for cards. */
+  description?: string
+  /** Publication-wide category assigned via the source config. */
+  category?: string
+}
+
+/**
+ * A single content source for the /latest page. Drives both RSS ingestion
+ * (every entry has a `feed`) and the "Read more on these websites" directory.
+ */
+export type LatestSource = {
+  /** Display name, also used as the per-item `source` label. */
+  name: string
+  /** Public website URL (directory link). */
+  link: string
+  /** RSS/Atom feed URL. Required — feedless sources are not listed. */
+  feed: string
+  /** Publication-wide category applied to every item from this feed. */
+  category: string
+  /**
+   * Path into /public for the directory icon. Optional for now — the
+   * directory falls back to a generic icon when absent (icons are mocked).
+   */
+  icon?: string
+  /**
+   * Optional RSS `<category>` allow-list for sources whose feed mixes unrelated
+   * posts (e.g. Besu inside the wider LF Decentralized Trust feed) — only items
+   * tagged with one of these categories are kept.
+   */
+  categoryFilter?: string[]
+  /**
+   * Optional item-link host rewrite. Some feeds publish links to a dead/old
+   * domain while the live articles sit elsewhere (e.g. Vitalik's feed, served
+   * via the eth.limo ENS gateway, still links to the now-defunct vitalik.ca).
+   * Item links beginning with `from` have that prefix swapped for `to`.
+   */
+  linkReplace?: { from: string; to: string }
+}
+
+/** A hardcoded editorial highlight card. `href` may be internal or external. */
+export type LatestHighlight = {
+  /**
+   * Article href. When it matches an article in the merged /latest stream, the
+   * card's metadata (title, image, date, etc.) is resolved from that article —
+   * so an internal builder highlight needs nothing but its href.
+   */
+  href: string
+  /**
+   * Optional overrides applied on top of the resolved article. They also act as
+   * a standalone fallback for an href that isn't in the stream (e.g. an external
+   * post that has aged out of the RSS window) — a `title` is the minimum needed
+   * to render in that case.
+   */
+  title?: string
+  description?: string
+  image?: string
+  source?: string
+  /** Publication date (ISO `YYYY-MM-DD`), shown in the card footer. */
+  date?: string
+}
+
+/**
+ * Unified article shape for the /latest grid, merged from first-party builder
+ * posts and external RSS items. Optional fields degrade gracefully for RSS.
+ */
+export type LatestArticle = {
+  title: string
+  href: string
+  /** ISO-ish date string used for chronological sorting. */
+  date: string
+  /** "Ethereum.org" for builder posts; the feed name for RSS items. */
+  source: string
+  /** Curated category facet (drives the filter chips). */
+  category: string
+  /** All filterable tags: `[category, ...topicTags]`. */
+  tags: string[]
+  isExternal: boolean
+  image?: string
+  author?: string
+  /** Authoring team/org behind a builder post; paired with `author` in the byline. */
+  team?: string
+  description?: string
+  timeToRead?: number
+}
+
+export type RSSChannel = {
+  title: string[]
+  link: string[]
+  description: string[]
+  lastBuildDate: string[]
+  docs: string[]
+  generator: string[]
+  image: {
+    url: string[]
+    title: string[]
+    link: string[]
+  }[]
+  copyright: string[]
+  item: {
+    title: string[]
+    link: string[]
+    guid: string[]
+    pubDate: string[]
+    description?: string[]
+    category?: string[]
+    "content:encoded"?: string[]
+    enclosure?: {
+      $: {
+        url: string
+        length: string
+        type: string
+      }
+    }[]
+    "media:content"?: { $: { url: string } }[]
+  }[]
+}
+
+export type RSSResult = {
+  rss: {
+    channel: RSSChannel[]
+  }
+}
+
+export type AtomElement =
+  | string
+  | {
+      _?: string // children
+      $: {
+        href?: string
+      }
+    }
+export type AtomEntry = {
+  id: string[]
+  title: AtomElement[]
+  updated: string[]
+  content?: AtomElement[]
+  link?: Array<{
+    $: {
+      href: string
+    }
+  }>
+  summary?: AtomElement[]
+}
+
+export type AtomResult = {
+  feed: {
+    id: string[]
+    title: string[]
+    updated: string[]
+    generator: string[]
+    link: string[]
+    subtitle: string[]
+    icon?: string[]
+    entry: AtomEntry[]
+  }
+}
+
+export type CommunityBlog = {
+  href: string
+} & ({ name: string; feed?: string } | { name?: string; feed: string })
+
+type NestedDivs = {
+  div: NestedDivs[]
+}
+
+export type HTMLResult = {
+  html: {
+    body: Record<string, NestedDivs>[]
+  }
+}
+
+export type EventCardProps = {
+  title: string
+  href: string
+  startDate: string
+  endDate: string
+  description: string
+  className?: string
+  location: string
+  imageUrl?: string
+}
+
+export type PageWithContributorsProps = {
+  contributors: FileContributor[]
+  lastEditLocaleTimestamp?: string
+  locale?: Lang
+}
+
+export type BreakpointKey = keyof typeof screens
+
+export type MaturityLevel =
+  | "N/A"
+  | "robust"
+  | "maturing"
+  | "developing"
+  | "emerging"
+
+// Tutorials
+export enum Skill {
+  BEGINNER = "beginner",
+  INTERMEDIATE = "intermediate",
+  ADVANCED = "advanced",
+}
+
+export interface IExternalTutorial {
+  url: string
+  title: string
+  description: string
+  author: string
+  authorGithub: string
+  tags: Array<string>
+  skillLevel: string
+  timeToRead?: string
+  lang: string
+  publishDate: string
+}
+
+export interface ITutorial {
+  href: string
+  title: string
+  description: string
+  author: string
+  tags?: Array<string>
+  skill?: Skill
+  timeToRead?: number | null
+  published?: string | null
+  lang: string
+  isExternal: boolean
+  isTranslated?: boolean
+}
+
+export enum AppCategoryEnum {
+  DEFI = "DeFi",
+  COLLECTIBLE = "Collectibles",
+  SOCIAL = "Social",
+  GAMING = "Gaming",
+  BRIDGE = "Bridge",
+  PRODUCTIVITY = "Productivity",
+  PRIVACY = "Privacy",
+  GOVERNANCE_DAO = "DAO",
+}
+
+export type AppCategory = `${AppCategoryEnum}`
+
+export type AppCategoryData = {
+  name: string
+  slug: string
+  description: string
+  icon: React.ComponentType<{ className?: string }>
+  metaTitle: string
+  metaDescription: string
+}
+
+export type AppCategories = Record<AppCategoryEnum, AppCategoryData>
+
+export type App = {
+  name: string
+  url: string
+  description: string
+  image: string
+  category: AppCategoryEnum
+  subCategory: string[]
+  networks: (ChainName | NonEVMChainName | AppOnlyChainName)[]
+  screenshots: string[]
+  bannerImage: string
+  platforms: string[]
+  twitter: string
+  github: string
+  discord: string
+  kpiUrl: string
+  sortingWeight: number
+  discover: boolean
+  highlight: boolean
+  languages: Lang[]
+  parentCompany: string
+  parentCompanyURL: string
+  openSource: boolean
+  contractAddress: string
+  dateOfLaunch: string
+  lastUpdated: string
+  ready: string
+  devconnect: string
+  appOfTheWeekStartDate: Date | null
+  appOfTheWeekEndDate: Date | null
+}
+
+export type DefiApp = App & {
+  category: AppCategoryEnum.DEFI
+  subCategory: Array<
+    "Lending" | "Liquid staking" | "DEX" | "Insurance" | "Prediction" | "RWA"
+  >
+}
+
+export type CollectibleApp = App & {
+  category: AppCategoryEnum.COLLECTIBLE
+  subCategory: Array<
+    "IP" | "Art" | "Gaming" | "Media" | "Membership" | "Market"
+  >
+}
+
+export type SocialApp = App & {
+  category: AppCategoryEnum.SOCIAL
+  subCategory: Array<
+    "Social network" | "Video" | "Messaging" | "Identity" | "Metaverse"
+  >
+}
+
+export type GamingApp = App & {
+  category: AppCategoryEnum.GAMING
+  subCategory: Array<
+    | "RPG"
+    | "Strategy"
+    | "Card & deck building"
+    | "MMORPG"
+    | "Metaverse"
+    | "Simulation and management"
+    | "Sports and fantasy"
+  >
+}
+
+export type BridgeApp = App & {
+  category: AppCategoryEnum.BRIDGE
+  subCategory: Array<
+    | "Native"
+    | "Validator or oracle"
+    | "Generalized message passing"
+    | "Liquidity network"
+  >
+}
+
+export type ProductivityApp = App & {
+  category: AppCategoryEnum.PRODUCTIVITY
+  subCategory: Array<"Lending"> // Placeholder - update when you have the actual subcategories
+}
+
+export type PrivacyApp = App & {
+  category: AppCategoryEnum.PRIVACY
+  subCategory: Array<"Pools" | "Payments" | "RPC">
+}
+
+export type GovernanceDaoApp = App & {
+  category: AppCategoryEnum.GOVERNANCE_DAO
+  subCategory: Array<"Governance" | "Delegation">
+}
+
+export type AppData =
+  | DefiApp
+  | CollectibleApp
+  | SocialApp
+  | GamingApp
+  | BridgeApp
+  | ProductivityApp
+  | PrivacyApp
+  | GovernanceDaoApp
+
+export type CommunityPick = {
+  name: string
+  twitterURL: string
+  twitterHandle: string
+  app1Name: string | null
+  app2Name: string | null
+  app3Name: string | null
+}
+
+type ValuesItem = {
+  label: string
+  content: string[]
+}
+
+export type ValuesPairing = {
+  legacy: ValuesItem
+  ethereum: ValuesItem
+}
+
+export type StablecoinType = "FIAT" | "CRYPTO" | "ASSET" | "ALGORITHMIC"
+
+export type PageParams = {
+  locale: Lang
+}
+
+export type SlugPageParams = PageParams & {
+  slug: string[]
+}
+
+export type TimeLeftLabel = { singular: string; plural: string }
+
+export type TimeLeftLabels = Record<
+  "days" | "hours" | "minutes" | "seconds",
+  TimeLeftLabel
+>
+
+/** Community story as authored in src/data/tenYearStories.ts */
+export type StoryData = {
+  /** Key in the "community-stories" namespace holding the translatable story copy */
+  storyKey: string
+  /** Story text verbatim as submitted (English for English submissions) */
+  storyOriginal: string
+  /** BCP-47 language code of the original submission (not necessarily a site locale) */
+  originalLocale: string
+  category: string
+  name: string
+  date: string
+  country: string
+  twitter: string
+  region: string
+}
+
+/** Community story resolved for rendering; see getCommunityStories */
+export type Story = {
+  storyKey: string
+  name: string
+  /** Story copy resolved to the viewer's locale (falls back to English) */
+  story: string
+  storyOriginal: string | null
+  twitter: string | null
+  country: string | null
+  date: string
+  /** Comma-separated category labels used by the /stories community filter. */
+  category?: string
+}
+
+export type SectionNavDetails = {
+  key: string
+  label: string
+  href?: string
+  icon?: React.ReactNode
+}
+
+export interface MatomoEventOptions {
+  eventCategory: string
+  eventAction: string
+  eventName: string
+  eventValue?: string
+}
+
+export type DeveloperToolsRepoLink = {
+  href: string
+  stargazers?: number
+  forks?: number
+  watchers?: number
+  subscribers?: number
+  openIssues?: number
+  isArchived?: boolean
+  isFork?: boolean
+  daysSincePush?: number
+  officialScore?: number
+  inferredScore?: number
+  finalScore?: number
+  scoreSource?: "official-weight" | "github-inferred" | "unscored"
+  lastUpdated?: string | null
+}
+
+export type DeveloperToolsPackageLink = {
+  href: string
+  downloads?: number
+}
+
+export type BuilderResourcesCatalogResource = {
+  name: string
+  description: string
+  thumbnail_url?: string | null
+  banner_url?: string | null
+  twitter?: string | null
+  repos: Array<string | DeveloperToolsRepoLink>
+  packages?: Array<string | DeveloperToolsPackageLink>
+  tags: string[]
+  website?: string | null
+  llmstext?: string | null
+  subcategory_id: string
+  resource_raw_score?: number
+  resource_score?: number
+  resource_rank?: number
+  resource_score_source?: "official-weight" | "github-inferred" | "unscored"
+}
+
+export type DeveloperToolsRankingCoverage = {
+  totalResources: number
+  scoredResources: number
+  usedMedianFallbackCount: number
+  matchedOfficialRepoCount: number
+  inferredRepoCount: number
+  unscoredRepoCount: number
+  trainingSampleCount: number
+}
+
+export type DeveloperToolsRankingMetadata = {
+  rankingAlgorithmVersion: string
+  damping: number
+  maxIterations: number
+  rules: Record<string, number>
+  coverage: DeveloperToolsRankingCoverage
+}
+
+export interface BuilderResourcesTaxonomySubcategory {
+  id: string
+  name: string
+  description: string
+}
+
+export interface BuilderResourcesTaxonomyCategory {
+  id: string
+  name: string
+  description: string
+  subcategories: BuilderResourcesTaxonomySubcategory[]
+}
+
+export interface BuilderResourcesTaxonomy {
+  categories: {
+    definitions: BuilderResourcesTaxonomyCategory[]
+  }
+  tags: string[]
+}

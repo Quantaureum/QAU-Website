@@ -1,0 +1,99 @@
+---
+title: "Ethereum pour les développeurs Python"
+description: "Apprenez à développer pour Ethereum en utilisant des projets et des outils basés sur Python"
+lang: fr
+incomplete: true
+---
+
+<FeaturedText>Apprenez à développer pour Ethereum en utilisant des projets et des outils basés sur Python</FeaturedText>
+
+Utilisez Ethereum pour créer des applications décentralisées (dapps) qui tirent parti des avantages de la cryptomonnaie et de la technologie de la chaîne de blocs. Ces dapps peuvent être dignes de confiance, ce qui signifie qu'une fois déployées sur Ethereum, elles s'exécuteront toujours comme programmé. Elles peuvent contrôler des actifs numériques afin de créer de nouveaux types d'applications financières. Elles peuvent être décentralisées, ce qui signifie qu'aucune entité ou personne unique ne les contrôle et qu'elles sont presque impossibles à censurer.
+
+## Premiers pas avec les contrats intelligents et le langage Solidity {#getting-started-with-smart-contracts-and-solidity}
+
+**Faites vos premiers pas pour intégrer Python à Ethereum**
+
+Besoin d'une introduction plus basique d'abord ? Consultez [ethereum.org/learn](/learn/) ou [ethereum.org/developers](/developers/).
+
+- [La chaîne de blocs expliquée](https://kauri.io/article/d55684513211466da7f8cc03987607d5/blockchain-explained)
+- [Comprendre les contrats intelligents](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/ethereum-101-part-5-the-smart-contract)
+- [Écrire votre premier contrat intelligent](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
+- [Apprendre à compiler et déployer Solidity](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
+- [Rapport 2023 sur l'état de Python dans la chaîne de blocs](https://tradingstrategy.ai/blog/the-state-of-python-in-blockchain-in-2023)
+
+## Articles pour débutants {#beginner-articles}
+
+- [Aperçu de Web3.py](https://web3py.readthedocs.io/en/latest/overview.html)
+- [Tour de l'écosystème Python d'Ethereum](https://snakecharmers.ethereum.org/python-ecosystem/)
+- [Guide d'Ethereum pour les développeurs (Python)](https://snakecharmers.ethereum.org/a-developers-guide-to-ethereum-pt-1/)
+- [Digne d'un prix : Un guide de hackathon Ethereum Python](https://snakecharmers.ethereum.org/prize-worthy/)
+- [Une introduction aux contrats intelligents avec Vyper](https://kauri.io/#collections/Getting%20Started/an-introduction-to-smart-contracts-with-vyper/)
+- [Comment développer un contrat Ethereum en utilisant Python Flask ?](https://medium.com/coinmonks/how-to-develop-ethereum-contract-using-python-flask-9758fe65976e)
+- [Introduction à Web3.py · Ethereum pour les développeurs Python](https://www.dappuniversity.com/articles/web3-py-intro)
+- [Comment appeler une fonction de contrat intelligent en utilisant Python et Web3.py](https://stackoverflow.com/questions/57580702/how-to-call-a-smart-contract-function-using-python-and-web3-py)
+
+## Articles de niveau intermédiaire {#intermediate-articles}
+
+- [Les amis de Web3.py : Introduction à Ape](https://snakecharmers.ethereum.org/intro-to-ape/)
+- [Développement de dapps pour les programmeurs Python](https://www.youtube.com/watch?v=tE-8bG35VNw)
+- [Création d'une interface Ethereum en Python : Partie 1](https://hackernoon.com/creating-a-python-ethereum-interface-part-1-4d2e47ea0f4d)
+- [Contrats intelligents Ethereum en Python : un guide (presque) complet](https://hackernoon.com/ethereum-smart-contracts-in-python-a-comprehensive-ish-guide-771b03990988)
+
+## Modèles d'utilisation avancés {#advanced-use-patterns}
+
+- [Modèles Web3.py : Abonnements aux événements en temps réel](https://snakecharmers.ethereum.org/subscriptions/)
+- [Modèles Web3.py : WebSocketProvider](https://snakecharmers.ethereum.org/websocketprovider/)
+- [Compilation, déploiement et appel de contrat intelligent Ethereum en utilisant Python](https://yohanes.gultom.id/2018/11/28/compiling-deploying-and-calling-ethereum-smartcontract-using-python/)
+- [Analyser les contrats intelligents Solidity avec Slither](https://kauri.io/#collections/DevOps/analyze-solidity-smart-contracts-with-slither/#analyze-solidity-smart-contracts-with-slither)
+- [Tutoriel Fintech sur la chaîne de blocs : Prêt et emprunt avec Python](https://blog.chain.link/blockchain-fintech-defi-tutorial-lending-borrowing-python/)
+
+## Articles archivés {#archived-articles}
+
+- [Déployer votre propre jeton ERC-20 avec Python et Brownie](https://betterprogramming.pub/python-blockchain-token-deployment-tutorial-create-an-erc20-77a5fd2e1a58)
+- [Utiliser Brownie et Python pour déployer des contrats intelligents](https://dev.to/patrickalphac/using-brownie-for-to-deploy-smart-contracts-1kkp)
+- [Créer des NFT sur OpenSea avec Brownie](https://www.freecodecamp.org/news/how-to-make-an-nft-and-render-on-opensea-marketplace/)
+
+## Projets et outils Python {#python-projects-and-tools}
+
+- [Web3.py](https://github.com/ethereum/web3.py) - _Bibliothèque Python pour interagir avec Ethereum_
+- [Vyper](https://github.com/ethereum/vyper/) - _Langage de contrat intelligent pythonique pour l'EVM_
+- [Titanoboa](https://github.com/vyperlang/titanoboa/) - _Outil de test natif de Vyper ; un interpréteur avec forking du Réseau principal, débogage et traces d'exécution lisibles_
+- [Moccasin](https://github.com/Cyfrin/moccasin) - _Un framework de développement et de test de contrats intelligents pour Vyper et Python, basé sur Titanoboa_
+- [Ape](https://github.com/ApeWorX/ape) - _L'outil de développement de contrats intelligents pour les Pythonistas, les Data Scientists et les professionnels de la sécurité_
+- [py-evm](https://github.com/ethereum/py-evm) - _Implémentation de la machine virtuelle Ethereum_
+- [eth-tester](https://github.com/ethereum/eth-tester) - _Outils pour tester les applications basées sur Ethereum_
+- [eth-utils](https://github.com/ethereum/eth-utils/) - _Fonctions utilitaires pour travailler avec des bases de code liées à Ethereum_
+- [py-solc-x](https://pypi.org/project/py-solc-x/) - _Wrapper Python pour le compilateur Solidity solc avec prise en charge de la version 0.5.x_
+- [pymaker](https://github.com/makerdao/pymaker) - _API Python pour les contrats Maker_
+- [siwe](https://github.com/signinwithethereum/siwe-py) - _Se connecter avec Ethereum (SIWE) pour Python_
+- [Web3 DeFi for Ethereum integrations](https://github.com/tradingstrategy-ai/web3-ethereum-defi) - _Un paquet Python avec des intégrations prêtes à l'emploi pour ERC-20, Uniswap et d'autres projets populaires_
+- [Wake](https://getwake.io) - _Framework Python tout-en-un pour les tests de contrats, le fuzzing, le déploiement, l'analyse de vulnérabilités et la navigation dans le code (serveur de langage - [Tools for Solidity](https://marketplace.visualstudio.com/items?itemName=AckeeBlockchain.tools-for-solidity))_
+- [DeFiPy](https://github.com/defipy-devs/defipy) - _SDK Python pour l'analyse de la finance décentralisée (DeFi) et la simulation de teneur de marché automatisé (AMM) sur Uniswap V2/V3, Balancer et Curve_
+### Archivés / Plus maintenus : {#archived--no-longer-maintained}
+
+- [Trinity](https://github.com/ethereum/trinity) - _Client Ethereum en Python_
+- [Mamba](https://github.com/arjunaskykok/mamba) - _Framework pour écrire, compiler et déployer des contrats intelligents écrits dans le langage Vyper_
+- [Brownie](https://github.com/eth-brownie/brownie) - _Framework Python pour déployer, tester et interagir avec des contrats intelligents Ethereum_
+- [pydevp2p](https://github.com/ethereum/pydevp2p) - _Implémentation de la pile P2P d'Ethereum_
+- [py-wasm](https://github.com/ethereum/py-wasm) - _Implémentation Python de l'interpréteur WebAssembly_
+
+Vous cherchez plus de ressources ? Consultez [ethereum.org/developers](/developers/).
+
+## Projets utilisant des outils Python {#projects-using-python-tooling}
+
+Les projets basés sur Ethereum suivants utilisent les outils mentionnés sur cette page. Les dépôts open source associés constituent une bonne référence pour des exemples de code et de bonnes pratiques.
+
+- [Yearn Finance](https://yearn.finance/) et [le dépôt des contrats de coffre-fort Yearn](https://github.com/yearn/yearn-vaults)
+- [Curve](https://www.curve.finance/) et [le dépôt des contrats intelligents Curve](https://github.com/curvefi/curve-contract)
+- [BadgerDAO](https://badger.com/) et [les contrats intelligents utilisant la chaîne d'outils Brownie](https://github.com/Badger-Finance/badger-system)
+- [Sushi](https://sushi.com/) utilise [Python pour gérer et déployer ses contrats d'acquisition](https://github.com/sushiswap/sushi-vesting-protocols)
+- [Alpha Finance](https://alphaventuredao.io/), célèbre pour Alpha Homora, utilise [Brownie pour tester et déployer des contrats intelligents](https://github.com/AlphaFinanceLab/alpha-staking-contract)
+
+## Discussion de la communauté Python {#python-community-contributors}
+
+- [Discord de la communauté Ethereum Python](https://discord.gg/9zk7snTfWe) pour les discussions sur Web3.py et d'autres frameworks Python
+- [Discord Vyper](https://discord.gg/SdvKC79cJk) pour les discussions sur la programmation de contrats intelligents Vyper
+
+## Autres listes agrégées {#other-aggregated-lists}
+
+Le wiki Vyper propose une [incroyable liste de ressources pour Vyper](https://github.com/vyperlang/vyper/wiki/Vyper-tools-and-resources)
